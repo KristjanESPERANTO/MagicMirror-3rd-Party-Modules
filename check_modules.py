@@ -2,7 +2,7 @@
 
 import subprocess
 
-with open("MagicMirror.wiki/3rd-Party-Modules.md") as f:
+with open("MagicMirror.wiki/3rd-Party-Modules.md", encoding="utf-8") as f:
     lines = f.readlines()
 
 module_counter = 0
@@ -26,4 +26,5 @@ for line in lines:
                
             )
             result = subprocess.run(["git","clone",f"{module_url}",f"modules/{module_counter:0>4}_{module_name}","--depth","1"])
-            result
+
+            print(result)

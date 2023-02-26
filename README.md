@@ -24,6 +24,7 @@ This module reads the module list and clones all modules so that they can then b
     - do they use prettier and linter?
     - do they use electron-rebuild -> PR @electron/rebuild
     - is "stylelint-config-prettier" in use? <https://github.com/KristjanESPERANTO/MMM-PublicTransportHafas/commit/2a6c26e42b71b3a34eb6acff48fd2b9de6ae6572>
+    - node-fetch in use?
   - is depandabot there
     - monthly?
     - only production?
