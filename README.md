@@ -30,4 +30,5 @@ This module reads the module list and clones all modules so that they can then b
     - monthly?
     - only production?
   - Is there a LICENCE file?
-  - Is XMLHttpRequest in use? (search every js file)
+  - Is XMLHttpRequest in use?
+  - Is 'https' in use (`require("https")` or `require('https')`)
