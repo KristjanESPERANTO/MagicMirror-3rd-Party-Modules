@@ -24,7 +24,7 @@ def check_modules():
         "require('request')", # to replace by built-in fetch
         "require(\"https\")", # to replace by built-in fetch
         "require('https')", # to replace by built-in fetch
-        "electron-rebuild", # to replace by built-in fetch
+        "electron-rebuild", # to replace by @electron/rebuild
         "node-fetch", # to replace by built-in fetch
         "XMLHttpRequest" # to replace by built-in fetch
         ]
