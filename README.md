@@ -35,6 +35,7 @@ This module goes through all cloned modules and performs various checks.
 ## To do
 
 - Create test result overview (possibly Markdown).
+- Also check MagicMirror² core.
 - Tests
   - check whether cloning is successful or not
   - is the module set to archived on Github? Is this visible during or after cloning?
@@ -48,4 +49,5 @@ This module goes through all cloned modules and performs various checks.
   - is depandabot there
     - monthly?
     - only production?
+  - Is moment in use? <https://momentjs.com/docs/#/-project-status/>
   - Is there a LICENCE file?
