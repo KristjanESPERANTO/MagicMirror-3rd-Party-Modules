@@ -34,19 +34,17 @@ This module goes through all cloned modules and performs various checks.
 
 ## To do
 
-- List the checks already implemented.
-- Create tests that are then displayed in an overview page (possibly Markdown).
+- Create test result overview (possibly Markdown).
+- Tests
   - check whether cloning is successful or not
   - is the module set to archived on Github? Is this visible during or after cloning?
     - if so, is it in the wiki?
   - When was the last commit
   - is there a package.json
     - is there a package-lock.json
-    - `npm i` ok?
+    - `npm i` ok? _dangerous_ -> should be done in a container
     - follow the recommended name: MMM-ModuleName ?
     - do they use prettier and linter?
-    - do they use electron-rebuild -> PR @electron/rebuild
-    - Is node-fetch or an alternatives in use?
   - is depandabot there
     - monthly?
     - only production?
