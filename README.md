@@ -1,10 +1,12 @@
 # MagicMirror Modules Checks
 
-The aim is to check all MagicMirror modules listed on the website. This project is still in a very early stage. Feedback is very welcome.
+The aim is to check all [MagicMirror²](https://magicmirror.builders/) modules listed on [the official list in the wiki](https://github.com/MichMich/MagicMirror/wiki/3rd-party-modules).
+
+This project is still in a very early stage. Feedback is very welcome.
 
 ## get_wiki.sh
 
-This script fetches the wiki that contains the list of modules.
+This script fetches the wiki that contains the list of the modules.
 
 ## get_modules.py
 
