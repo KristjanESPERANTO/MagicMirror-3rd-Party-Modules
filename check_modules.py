@@ -26,7 +26,8 @@ def check_modules():
         "require('https')", # to replace by built-in fetch
         "electron-rebuild", # to replace by @electron/rebuild
         "node-fetch", # to replace by built-in fetch
-        "XMLHttpRequest" # to replace by built-in fetch
+        "XMLHttpRequest", # to replace by built-in fetch
+        "github/super-linter@" # to replace by github/super-linter/slim@
         ]
 
     all_modules_path = Path("./modules")
@@ -38,10 +39,6 @@ def check_modules():
             dir_content = sorted(Path(subfolder).iterdir())
             for file_path in dir_content:
                 if not file_path.is_dir() and not file_path.is_symlink() and ".min.js" not in str(file_path):
-                    #print("****************************")
-                    #print("####" + file_path.suffix + "####")
-                    #print("\n ####  " + file_path.name + " ###### " + file_path.suffix)
-                    # print("  " + str(dir(pathx)))
                     for searchstring in search_strings:
                         found_string = search_in_file(file_path, searchstring)
                         if found_string:
