@@ -51,3 +51,4 @@ This module goes through all cloned modules and performs various checks.
     - only production?
   - Is moment in use? <https://momentjs.com/docs/#/-project-status/>
   - Is there a LICENCE file?
+  - Is branch name master? -> Info -> Description why and how switch to main.
