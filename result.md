@@ -1,6 +1,6 @@
 # Result of the module analysis
 
-Timestamp: 2023-10-16 01:11:49
+Timestamp: 2023-10-16 01:49:33
 
 Number of analyzed modules: 1015
 
@@ -237,8 +237,6 @@ Number of analyzed modules: 1015
 ## [MMM-Autobahn by JockeyDoe](https://github.com/JockeyDoe/MMM-Autobahn)
 
 1. Found directory `node_modules`. This shouldn't be uploaded. Add `node_modules/`to `.gitignore`.
-2. Found 'require('https')' in file `Request.js`: Replace it with built-in fetch.
-3. Found 'node-fetch' in file `package.json`: Replace it with built-in fetch.
 
 ## [MMM-AvfallshentingOslo by blixhavn](https://github.com/blixhavn/MMM-AvfallshentingOslo)
 
@@ -911,9 +909,6 @@ Number of analyzed modules: 1015
 3. Found 'Magic Mirror' in file `node_helper.js`: Replace it with `MagicMirror²`.
 4. Found 'require("request")' in file `node_helper.js`: Replace it with built-in fetch.
 5. Found directory `node_modules`. This shouldn't be uploaded. Add `node_modules/`to `.gitignore`.
-6. Found 'XMLHttpRequest' in file `lib.dom.d.ts`: Replace it with built-in fetch.
-7. Found 'XMLHttpRequest' in file `lib.webworker.d.ts`: Replace it with built-in fetch.
-8. Found 'node-fetch' in file `package.json`: Replace it with built-in fetch.
 
 ## [MMM-EARTH by mykle1](https://github.com/mykle1/MMM-EARTH)
 
@@ -1059,60 +1054,8 @@ Number of analyzed modules: 1015
 3. Found 'Magic Mirror' in file `lyricsFetcher.js`: Replace it with `MagicMirror²`.
 4. Found 'Magic Mirror' in file `node_helper.js`: Replace it with `MagicMirror²`.
 5. Found directory `node_modules`. This shouldn't be uploaded. Add `node_modules/`to `.gitignore`.
-6. `.travis.yml`: Change file extention from `.yml` to `.yaml`: <https://yaml.org/faq.html>.
-7. `.eslintrc.yml`: Change file extention from `.yml` to `.yaml`: <https://yaml.org/faq.html>.
-8. `FUNDING.yml`: Change file extention from `.yml` to `.yaml`: <https://yaml.org/faq.html>.
-9. `.travis.yml`: Change file extention from `.yml` to `.yaml`: <https://yaml.org/faq.html>.
-10. Found 'require('https')' in file `README.md`: Replace it with built-in fetch.
-11. Found 'XMLHttpRequest' in file `README.md`: Replace it with built-in fetch.
-12. Found 'XMLHttpRequest' in file `axios.js`: Replace it with built-in fetch.
-13. Found 'XMLHttpRequest' in file `axios.map`: Replace it with built-in fetch.
-14. Found 'XMLHttpRequest' in file `axios.min.map`: Replace it with built-in fetch.
-15. Found 'require('https')' in file `http.js`: Replace it with built-in fetch.
-16. Found 'XMLHttpRequest' in file `xhr.js`: Replace it with built-in fetch.
-17. Found 'XMLHttpRequest' in file `defaults.js`: Replace it with built-in fetch.
-18. Found 'XMLHttpRequest' in file `utils.js`: Replace it with built-in fetch.
-19. `.travis.yml`: Change file extention from `.yml` to `.yaml`: <https://yaml.org/faq.html>.
-20. `.travis.yml`: Change file extention from `.yml` to `.yaml`: <https://yaml.org/faq.html>.
-21. `.travis.yml`: Change file extention from `.yml` to `.yaml`: <https://yaml.org/faq.html>.
-22. `.travis.yml`: Change file extention from `.yml` to `.yaml`: <https://yaml.org/faq.html>.
-23. `.eslintrc.yml`: Change file extention from `.yml` to `.yaml`: <https://yaml.org/faq.html>.
-24. `FUNDING.yml`: Change file extention from `.yml` to `.yaml`: <https://yaml.org/faq.html>.
-25. `.travis.yml`: Change file extention from `.yml` to `.yaml`: <https://yaml.org/faq.html>.
-26. Found 'require("https")' in file `index.js`: Replace it with built-in fetch.
-27. Found 'require('https')' in file `index.js`: Replace it with built-in fetch.
-28. Found 'require('request')' in file `README.md`: Replace it with built-in fetch.
-29. Found 'node-fetch' in file `README.md`: Replace it with built-in fetch.
-30. Found 'XMLHttpRequest' in file `README.md`: Replace it with built-in fetch.
-31. Found 'require('request')' in file `README.md.bak`: Replace it with built-in fetch.
-32. Found 'node-fetch' in file `README.md.bak`: Replace it with built-in fetch.
-33. Found 'XMLHttpRequest' in file `README.md.bak`: Replace it with built-in fetch.
-34. Found 'require('https')' in file `form_data.js`: Replace it with built-in fetch.
-35. `.travis.yml`: Change file extention from `.yml` to `.yaml`: <https://yaml.org/faq.html>.
-36. Found 'require('https')' in file `README.md`: Replace it with built-in fetch.
-37. `.travis.yml`: Change file extention from `.yml` to `.yaml`: <https://yaml.org/faq.html>.
-38. `.travis.yml`: Change file extention from `.yml` to `.yaml`: <https://yaml.org/faq.html>.
-39. Found 'XMLHttpRequest' in file `Window.js`: Replace it with built-in fetch.
-40. Found 'require("request")' in file `resource-loader.js`: Replace it with built-in fetch.
-41. Found 'XMLHttpRequest' in file `xhr-sync-worker.js`: Replace it with built-in fetch.
-42. Found 'require("request")' in file `xhr-utils.js`: Replace it with built-in fetch.
-43. Found 'XMLHttpRequest' in file `xmlhttprequest-event-target.js`: Replace it with built-in fetch.
-44. Found 'XMLHttpRequest' in file `xmlhttprequest-upload.js`: Replace it with built-in fetch.
-45. Found 'XMLHttpRequest' in file `xmlhttprequest.js`: Replace it with built-in fetch.
-46. `.eslintrc.yml`: Change file extention from `.yml` to `.yaml`: <https://yaml.org/faq.html>.
-47. `.travis.yml`: Change file extention from `.yml` to `.yaml`: <https://yaml.org/faq.html>.
-48. `.eslintrc.yml`: Change file extention from `.yml` to `.yaml`: <https://yaml.org/faq.html>.
-49. `.travis.yml`: Change file extention from `.yml` to `.yaml`: <https://yaml.org/faq.html>.
-50. `FUNDING.yml`: Change file extention from `.yml` to `.yaml`: <https://yaml.org/faq.html>.
-51. `.travis.yml`: Change file extention from `.yml` to `.yaml`: <https://yaml.org/faq.html>.
-52. Found 'require('request')' in file `README.md`: Replace it with built-in fetch.
-53. Found 'require('https')' in file `request.js`: Replace it with built-in fetch.
-54. `.travis.yml`: Change file extention from `.yml` to `.yaml`: <https://yaml.org/faq.html>.
-55. `.travis.yml`: Change file extention from `.yml` to `.yaml`: <https://yaml.org/faq.html>.
-56. Found 'require('https')' in file `index.js`: Replace it with built-in fetch.
-57. Found directory `node_modules`. This shouldn't be uploaded. Add `node_modules/`to `.gitignore`.
-58. Found 'Magic Mirror' in file `MMM-FF-Genius-Lyrics.css`: Replace it with `MagicMirror²`.
-59. Found 'Magic Mirror' in file `MMM-FF-Genius-Lyrics.scss`: Replace it with `MagicMirror²`.
+6. Found 'Magic Mirror' in file `MMM-FF-Genius-Lyrics.css`: Replace it with `MagicMirror²`.
+7. Found 'Magic Mirror' in file `MMM-FF-Genius-Lyrics.scss`: Replace it with `MagicMirror²`.
 
 ## [MMM-FF-StatsJS by shin10](https://github.com/shin10/MMM-FF-StatsJS)
 
@@ -2361,44 +2304,7 @@ Number of analyzed modules: 1015
 2. Found 'MagicMirror2' in file `README.md`: Replace it with `MagicMirror²`.
 3. Found 'require('request')' in file `node_helper.js`: Replace it with built-in fetch.
 4. Found directory `node_modules`. This shouldn't be uploaded. Add `node_modules/`to `.gitignore`.
-5. Found 'require('request')' in file `README.md`: Replace it with built-in fetch.
-6. Found directory `node_modules`. This shouldn't be uploaded. Add `node_modules/`to `.gitignore`.
-7. `.travis.yml`: Change file extention from `.yml` to `.yaml`: <https://yaml.org/faq.html>.
-8. Found 'require('https')' in file `README.md`: Replace it with built-in fetch.
-9. Found directory `node_modules`. This shouldn't be uploaded. Add `node_modules/`to `.gitignore`.
-10. `.travis.yml`: Change file extention from `.yml` to `.yaml`: <https://yaml.org/faq.html>.
-11. Found 'require('https')' in file `index.js`: Replace it with built-in fetch.
-12. Found 'require('request')' in file `README.md`: Replace it with built-in fetch.
-13. Found 'node-fetch' in file `README.md`: Replace it with built-in fetch.
-14. Found 'XMLHttpRequest' in file `README.md`: Replace it with built-in fetch.
-15. Found 'require('request')' in file `README.md.bak`: Replace it with built-in fetch.
-16. Found 'node-fetch' in file `README.md.bak`: Replace it with built-in fetch.
-17. Found 'XMLHttpRequest' in file `README.md.bak`: Replace it with built-in fetch.
-18. Found 'require('https')' in file `form_data.js`: Replace it with built-in fetch.
-19. Found directory `node_modules`. This shouldn't be uploaded. Add `node_modules/`to `.gitignore`.
-20. Found directory `node_modules`. This shouldn't be uploaded. Add `node_modules/`to `.gitignore`.
-21. Found directory `node_modules`. This shouldn't be uploaded. Add `node_modules/`to `.gitignore`.
-22. `.eslintrc.yml`: Change file extention from `.yml` to `.yaml`: <https://yaml.org/faq.html>.
-23. `.travis.yml`: Change file extention from `.yml` to `.yaml`: <https://yaml.org/faq.html>.
-24. `.eslintrc.yml`: Change file extention from `.yml` to `.yaml`: <https://yaml.org/faq.html>.
-25. `.travis.yml`: Change file extention from `.yml` to `.yaml`: <https://yaml.org/faq.html>.
-26. `.eslintrc.yml`: Change file extention from `.yml` to `.yaml`: <https://yaml.org/faq.html>.
-27. Found directory `node_modules`. This shouldn't be uploaded. Add `node_modules/`to `.gitignore`.
-28. `.eslintrc.yml`: Change file extention from `.yml` to `.yaml`: <https://yaml.org/faq.html>.
-29. Found 'require('https')' in file `README.md`: Replace it with built-in fetch.
-30. Found directory `node_modules`. This shouldn't be uploaded. Add `node_modules/`to `.gitignore`.
-31. Found directory `node_modules`. This shouldn't be uploaded. Add `node_modules/`to `.gitignore`.
-32. Found directory `node_modules`. This shouldn't be uploaded. Add `node_modules/`to `.gitignore`.
-33. `.travis.yml`: Change file extention from `.yml` to `.yaml`: <https://yaml.org/faq.html>.
-34. Found directory `node_modules`. This shouldn't be uploaded. Add `node_modules/`to `.gitignore`.
-35. `.travis.yml`: Change file extention from `.yml` to `.yaml`: <https://yaml.org/faq.html>.
-36. `.travis.yml`: Change file extention from `.yml` to `.yaml`: <https://yaml.org/faq.html>.
-37. Found directory `node_modules`. This shouldn't be uploaded. Add `node_modules/`to `.gitignore`.
-38. `.travis.yml`: Change file extention from `.yml` to `.yaml`: <https://yaml.org/faq.html>.
-39. Found directory `node_modules`. This shouldn't be uploaded. Add `node_modules/`to `.gitignore`.
-40. Found 'require('https')' in file `index.js`: Replace it with built-in fetch.
-41. Found 'require('https')' in file `request.js`: Replace it with built-in fetch.
-42. Found 'Magic Mirror' in file `package.json`: Replace it with `MagicMirror²`.
+5. Found 'Magic Mirror' in file `package.json`: Replace it with `MagicMirror²`.
 
 ## [MMM-MyTTC by jclarke0000](https://github.com/jclarke0000/MMM-MyTTC)
 
@@ -2406,11 +2312,6 @@ Number of analyzed modules: 1015
 2. Found 'Magic Mirror' in file `node_helper.js`: Replace it with `MagicMirror²`.
 3. Found 'XMLHttpRequest' in file `node_helper.js`: Replace it with built-in fetch.
 4. Found directory `node_modules`. This shouldn't be uploaded. Add `node_modules/`to `.gitignore`.
-5. Found 'XMLHttpRequest' in file `README.md`: Replace it with built-in fetch.
-6. Found 'require("https")' in file `XMLHttpRequest.js`: Replace it with built-in fetch.
-7. Found 'require('https')' in file `XMLHttpRequest.js`: Replace it with built-in fetch.
-8. Found 'XMLHttpRequest' in file `XMLHttpRequest.js`: Replace it with built-in fetch.
-9. Found 'XMLHttpRequest' in file `package.json`: Replace it with built-in fetch.
 
 ## [MMM-MyTraffic by htilburgs](https://github.com/htilburgs/MMM-MyTraffic)
 
@@ -2433,283 +2334,6 @@ Number of analyzed modules: 1015
 
 1. Found 'Magic Mirror' in file `README.md`: Replace it with `MagicMirror²`.
 2. Found directory `node_modules`. This shouldn't be uploaded. Add `node_modules/`to `.gitignore`.
-3. `.travis.yml`: Change file extention from `.yml` to `.yaml`: <https://yaml.org/faq.html>.
-4. `.travis.yml`: Change file extention from `.yml` to `.yaml`: <https://yaml.org/faq.html>.
-5. Found 'node-fetch' in file `TODO.org`: Replace it with built-in fetch.
-6. `appveyor.yml`: Change file extention from `.yml` to `.yaml`: <https://yaml.org/faq.html>.
-7. Found 'require('request')' in file `get-latest-nodejs-version.js`: Replace it with built-in fetch.
-8. Found directory `node_modules`. This shouldn't be uploaded. Add `node_modules/`to `.gitignore`.
-9. `.travis.yml`: Change file extention from `.yml` to `.yaml`: <https://yaml.org/faq.html>.
-10. Found 'require('request')' in file `all_docs.js`: Replace it with built-in fetch.
-11. Found directory `node_modules`. This shouldn't be uploaded. Add `node_modules/`to `.gitignore`.
-12. `.travis.yml`: Change file extention from `.yml` to `.yaml`: <https://yaml.org/faq.html>.
-13. Found 'require('request')' in file `package.json`: Replace it with built-in fetch.
-14. Found 'require('request')' in file `readme.markdown`: Replace it with built-in fetch.
-15. `.travis.yml`: Change file extention from `.yml` to `.yaml`: <https://yaml.org/faq.html>.
-16. Found directory `node_modules`. This shouldn't be uploaded. Add `node_modules/`to `.gitignore`.
-17. `.travis.yml`: Change file extention from `.yml` to `.yaml`: <https://yaml.org/faq.html>.
-18. Found directory `node_modules`. This shouldn't be uploaded. Add `node_modules/`to `.gitignore`.
-19. Found directory `node_modules`. This shouldn't be uploaded. Add `node_modules/`to `.gitignore`.
-20. Found directory `node_modules`. This shouldn't be uploaded. Add `node_modules/`to `.gitignore`.
-21. `.travis.yml`: Change file extention from `.yml` to `.yaml`: <https://yaml.org/faq.html>.
-22. Found directory `node_modules`. This shouldn't be uploaded. Add `node_modules/`to `.gitignore`.
-23. `.travis.yml`: Change file extention from `.yml` to `.yaml`: <https://yaml.org/faq.html>.
-24. Found directory `node_modules`. This shouldn't be uploaded. Add `node_modules/`to `.gitignore`.
-25. `.travis.yml`: Change file extention from `.yml` to `.yaml`: <https://yaml.org/faq.html>.
-26. `.travis.yml`: Change file extention from `.yml` to `.yaml`: <https://yaml.org/faq.html>.
-27. `.travis.yml`: Change file extention from `.yml` to `.yaml`: <https://yaml.org/faq.html>.
-28. `.travis.yml`: Change file extention from `.yml` to `.yaml`: <https://yaml.org/faq.html>.
-29. Found directory `node_modules`. This shouldn't be uploaded. Add `node_modules/`to `.gitignore`.
-30. Found directory `node_modules`. This shouldn't be uploaded. Add `node_modules/`to `.gitignore`.
-31. Found directory `node_modules`. This shouldn't be uploaded. Add `node_modules/`to `.gitignore`.
-32. Found directory `node_modules`. This shouldn't be uploaded. Add `node_modules/`to `.gitignore`.
-33. `.travis.yml`: Change file extention from `.yml` to `.yaml`: <https://yaml.org/faq.html>.
-34. Found directory `node_modules`. This shouldn't be uploaded. Add `node_modules/`to `.gitignore`.
-35. Found directory `node_modules`. This shouldn't be uploaded. Add `node_modules/`to `.gitignore`.
-36. Found directory `node_modules`. This shouldn't be uploaded. Add `node_modules/`to `.gitignore`.
-37. `.travis.yml`: Change file extention from `.yml` to `.yaml`: <https://yaml.org/faq.html>.
-38. Found directory `node_modules`. This shouldn't be uploaded. Add `node_modules/`to `.gitignore`.
-39. `.travis.yml`: Change file extention from `.yml` to `.yaml`: <https://yaml.org/faq.html>.
-40. Found directory `node_modules`. This shouldn't be uploaded. Add `node_modules/`to `.gitignore`.
-41. Found directory `node_modules`. This shouldn't be uploaded. Add `node_modules/`to `.gitignore`.
-42. Found directory `node_modules`. This shouldn't be uploaded. Add `node_modules/`to `.gitignore`.
-43. Found directory `node_modules`. This shouldn't be uploaded. Add `node_modules/`to `.gitignore`.
-44. `.travis.yml`: Change file extention from `.yml` to `.yaml`: <https://yaml.org/faq.html>.
-45. `.travis.yml`: Change file extention from `.yml` to `.yaml`: <https://yaml.org/faq.html>.
-46. Found directory `node_modules`. This shouldn't be uploaded. Add `node_modules/`to `.gitignore`.
-47. Found directory `node_modules`. This shouldn't be uploaded. Add `node_modules/`to `.gitignore`.
-48. `.travis.yml`: Change file extention from `.yml` to `.yaml`: <https://yaml.org/faq.html>.
-49. `.travis.yml`: Change file extention from `.yml` to `.yaml`: <https://yaml.org/faq.html>.
-50. `.travis.yml`: Change file extention from `.yml` to `.yaml`: <https://yaml.org/faq.html>.
-51. Found directory `node_modules`. This shouldn't be uploaded. Add `node_modules/`to `.gitignore`.
-52. `.travis.yml`: Change file extention from `.yml` to `.yaml`: <https://yaml.org/faq.html>.
-53. `.travis.yml`: Change file extention from `.yml` to `.yaml`: <https://yaml.org/faq.html>.
-54. `.travis.yml`: Change file extention from `.yml` to `.yaml`: <https://yaml.org/faq.html>.
-55. Found directory `node_modules`. This shouldn't be uploaded. Add `node_modules/`to `.gitignore`.
-56. `.travis.yml`: Change file extention from `.yml` to `.yaml`: <https://yaml.org/faq.html>.
-57. Found directory `node_modules`. This shouldn't be uploaded. Add `node_modules/`to `.gitignore`.
-58. `.travis.yml`: Change file extention from `.yml` to `.yaml`: <https://yaml.org/faq.html>.
-59. Found directory `node_modules`. This shouldn't be uploaded. Add `node_modules/`to `.gitignore`.
-60. `.travis.yml`: Change file extention from `.yml` to `.yaml`: <https://yaml.org/faq.html>.
-61. Found directory `node_modules`. This shouldn't be uploaded. Add `node_modules/`to `.gitignore`.
-62. Found 'require('request')' in file `install.js`: Replace it with built-in fetch.
-63. Found directory `node_modules`. This shouldn't be uploaded. Add `node_modules/`to `.gitignore`.
-64. Found directory `node_modules`. This shouldn't be uploaded. Add `node_modules/`to `.gitignore`.
-65. Found directory `node_modules`. This shouldn't be uploaded. Add `node_modules/`to `.gitignore`.
-66. `.travis.yml`: Change file extention from `.yml` to `.yaml`: <https://yaml.org/faq.html>.
-67. `.travis.yml`: Change file extention from `.yml` to `.yaml`: <https://yaml.org/faq.html>.
-68. Found 'require('https')' in file `simple-proxy.js`: Replace it with built-in fetch.
-69. Found 'require('https')' in file `test-download.js`: Replace it with built-in fetch.
-70. `.travis.yml`: Change file extention from `.yml` to `.yaml`: <https://yaml.org/faq.html>.
-71. Found directory `node_modules`. This shouldn't be uploaded. Add `node_modules/`to `.gitignore`.
-72. Found directory `node_modules`. This shouldn't be uploaded. Add `node_modules/`to `.gitignore`.
-73. Found 'require('request')' in file `fetch.js`: Replace it with built-in fetch.
-74. Found 'require('https')' in file `initialize.js`: Replace it with built-in fetch.
-75. Found 'require('request')' in file `request.js`: Replace it with built-in fetch.
-76. Found directory `node_modules`. This shouldn't be uploaded. Add `node_modules/`to `.gitignore`.
-77. Found directory `node_modules`. This shouldn't be uploaded. Add `node_modules/`to `.gitignore`.
-78. `.travis.yml`: Change file extention from `.yml` to `.yaml`: <https://yaml.org/faq.html>.
-79. Found directory `node_modules`. This shouldn't be uploaded. Add `node_modules/`to `.gitignore`.
-80. Found directory `node_modules`. This shouldn't be uploaded. Add `node_modules/`to `.gitignore`.
-81. Found directory `node_modules`. This shouldn't be uploaded. Add `node_modules/`to `.gitignore`.
-82. Found directory `node_modules`. This shouldn't be uploaded. Add `node_modules/`to `.gitignore`.
-83. Found directory `node_modules`. This shouldn't be uploaded. Add `node_modules/`to `.gitignore`.
-84. `.travis.yml`: Change file extention from `.yml` to `.yaml`: <https://yaml.org/faq.html>.
-85. Found directory `node_modules`. This shouldn't be uploaded. Add `node_modules/`to `.gitignore`.
-86. Found directory `node_modules`. This shouldn't be uploaded. Add `node_modules/`to `.gitignore`.
-87. Found 'node-fetch' in file `README.md`: Replace it with built-in fetch.
-88. Found 'node-fetch' in file `cache.js`: Replace it with built-in fetch.
-89. Found 'node-fetch' in file `index.js`: Replace it with built-in fetch.
-90. Found directory `node_modules`. This shouldn't be uploaded. Add `node_modules/`to `.gitignore`.
-91. Found 'require('https')' in file `README.md`: Replace it with built-in fetch.
-92. Found 'require('https')' in file `https_agent.js`: Replace it with built-in fetch.
-93. Found directory `node_modules`. This shouldn't be uploaded. Add `node_modules/`to `.gitignore`.
-94. Found directory `node_modules`. This shouldn't be uploaded. Add `node_modules/`to `.gitignore`.
-95. Found 'require('https')' in file `package.json`: Replace it with built-in fetch.
-96. `.travis.yml`: Change file extention from `.yml` to `.yaml`: <https://yaml.org/faq.html>.
-97. Found directory `node_modules`. This shouldn't be uploaded. Add `node_modules/`to `.gitignore`.
-98. `.travis.yml`: Change file extention from `.yml` to `.yaml`: <https://yaml.org/faq.html>.
-99. Found directory `node_modules`. This shouldn't be uploaded. Add `node_modules/`to `.gitignore`.
-100. `.travis.yml`: Change file extention from `.yml` to `.yaml`: <https://yaml.org/faq.html>.
-101. Found 'require('https')' in file `patch-core.js`: Replace it with built-in fetch.
-102. Found 'require('https')' in file `test.js`: Replace it with built-in fetch.
-103. `.coveralls.yml`: Change file extention from `.yml` to `.yaml`: <https://yaml.org/faq.html>.
-104. `.travis.yml`: Change file extention from `.yml` to `.yaml`: <https://yaml.org/faq.html>.
-105. Found directory `node_modules`. This shouldn't be uploaded. Add `node_modules/`to `.gitignore`.
-106. `.travis.yml`: Change file extention from `.yml` to `.yaml`: <https://yaml.org/faq.html>.
-107. Found 'require('https')' in file `test.js`: Replace it with built-in fetch.
-108. `.travis.yml`: Change file extention from `.yml` to `.yaml`: <https://yaml.org/faq.html>.
-109. Found 'require('https')' in file `README.md`: Replace it with built-in fetch.
-110. Found directory `node_modules`. This shouldn't be uploaded. Add `node_modules/`to `.gitignore`.
-111. `.travis.yml`: Change file extention from `.yml` to `.yaml`: <https://yaml.org/faq.html>.
-112. Found directory `node_modules`. This shouldn't be uploaded. Add `node_modules/`to `.gitignore`.
-113. `.travis.yml`: Change file extention from `.yml` to `.yaml`: <https://yaml.org/faq.html>.
-114. Found 'require('https')' in file `patch-core.js`: Replace it with built-in fetch.
-115. Found 'require('https')' in file `test.js`: Replace it with built-in fetch.
-116. `.coveralls.yml`: Change file extention from `.yml` to `.yaml`: <https://yaml.org/faq.html>.
-117. `.travis.yml`: Change file extention from `.yml` to `.yaml`: <https://yaml.org/faq.html>.
-118. Found directory `node_modules`. This shouldn't be uploaded. Add `node_modules/`to `.gitignore`.
-119. `.travis.yml`: Change file extention from `.yml` to `.yaml`: <https://yaml.org/faq.html>.
-120. Found 'require('https')' in file `package.json`: Replace it with built-in fetch.
-121. Found 'require('https')' in file `test.js`: Replace it with built-in fetch.
-122. Found 'node-fetch' in file `README.md`: Replace it with built-in fetch.
-123. Found 'XMLHttpRequest' in file `README.md`: Replace it with built-in fetch.
-124. Found directory `node_modules`. This shouldn't be uploaded. Add `node_modules/`to `.gitignore`.
-125. `.travis.yml`: Change file extention from `.yml` to `.yaml`: <https://yaml.org/faq.html>.
-126. Found directory `node_modules`. This shouldn't be uploaded. Add `node_modules/`to `.gitignore`.
-127. `.travis.yml`: Change file extention from `.yml` to `.yaml`: <https://yaml.org/faq.html>.
-128. Found 'require('request')' in file `README.md`: Replace it with built-in fetch.
-129. Found 'require('request')' in file `package.json`: Replace it with built-in fetch.
-130. Found 'node-fetch' in file `package.json`: Replace it with built-in fetch.
-131. Found 'node-fetch' in file `package.json`: Replace it with built-in fetch.
-132. Found directory `node_modules`. This shouldn't be uploaded. Add `node_modules/`to `.gitignore`.
-133. Found 'node-fetch' in file `package.json`: Replace it with built-in fetch.
-134. Found 'node-fetch' in file `package.json`: Replace it with built-in fetch.
-135. Found 'node-fetch' in file `package.json`: Replace it with built-in fetch.
-136. Found 'XMLHttpRequest' in file `package.json`: Replace it with built-in fetch.
-137. Found 'require('https')' in file `index.js`: Replace it with built-in fetch.
-138. Found 'node-fetch' in file `request.js`: Replace it with built-in fetch.
-139. `.travis.yml`: Change file extention from `.yml` to `.yaml`: <https://yaml.org/faq.html>.
-140. Found 'require('https')' in file `README.md`: Replace it with built-in fetch.
-141. Found directory `node_modules`. This shouldn't be uploaded. Add `node_modules/`to `.gitignore`.
-142. `.travis.yml`: Change file extention from `.yml` to `.yaml`: <https://yaml.org/faq.html>.
-143. Found directory `node_modules`. This shouldn't be uploaded. Add `node_modules/`to `.gitignore`.
-144. `.travis.yml`: Change file extention from `.yml` to `.yaml`: <https://yaml.org/faq.html>.
-145. Found 'require('https')' in file `patch-core.js`: Replace it with built-in fetch.
-146. Found 'require('https')' in file `test.js`: Replace it with built-in fetch.
-147. `.travis.yml`: Change file extention from `.yml` to `.yaml`: <https://yaml.org/faq.html>.
-148. Found directory `node_modules`. This shouldn't be uploaded. Add `node_modules/`to `.gitignore`.
-149. `.travis.yml`: Change file extention from `.yml` to `.yaml`: <https://yaml.org/faq.html>.
-150. `.travis.yml`: Change file extention from `.yml` to `.yaml`: <https://yaml.org/faq.html>.
-151. Found 'require('https')' in file `package.json`: Replace it with built-in fetch.
-152. Found 'require('https')' in file `test.js`: Replace it with built-in fetch.
-153. Found 'node-fetch' in file `package.json`: Replace it with built-in fetch.
-154. Found directory `node_modules`. This shouldn't be uploaded. Add `node_modules/`to `.gitignore`.
-155. Found directory `node_modules`. This shouldn't be uploaded. Add `node_modules/`to `.gitignore`.
-156. `.travis.yml`: Change file extention from `.yml` to `.yaml`: <https://yaml.org/faq.html>.
-157. `.travis.yml`: Change file extention from `.yml` to `.yaml`: <https://yaml.org/faq.html>.
-158. Found directory `node_modules`. This shouldn't be uploaded. Add `node_modules/`to `.gitignore`.
-159. `.travis.yml`: Change file extention from `.yml` to `.yaml`: <https://yaml.org/faq.html>.
-160. Found directory `node_modules`. This shouldn't be uploaded. Add `node_modules/`to `.gitignore`.
-161. `.travis.yml`: Change file extention from `.yml` to `.yaml`: <https://yaml.org/faq.html>.
-162. Found directory `node_modules`. This shouldn't be uploaded. Add `node_modules/`to `.gitignore`.
-163. `.travis.yml`: Change file extention from `.yml` to `.yaml`: <https://yaml.org/faq.html>.
-164. Found directory `node_modules`. This shouldn't be uploaded. Add `node_modules/`to `.gitignore`.
-165. Found directory `node_modules`. This shouldn't be uploaded. Add `node_modules/`to `.gitignore`.
-166. `.travis.yml`: Change file extention from `.yml` to `.yaml`: <https://yaml.org/faq.html>.
-167. Found directory `node_modules`. This shouldn't be uploaded. Add `node_modules/`to `.gitignore`.
-168. `.travis.yml`: Change file extention from `.yml` to `.yaml`: <https://yaml.org/faq.html>.
-169. `.travis.yml`: Change file extention from `.yml` to `.yaml`: <https://yaml.org/faq.html>.
-170. Found directory `node_modules`. This shouldn't be uploaded. Add `node_modules/`to `.gitignore`.
-171. `.travis.yml`: Change file extention from `.yml` to `.yaml`: <https://yaml.org/faq.html>.
-172. Found directory `node_modules`. This shouldn't be uploaded. Add `node_modules/`to `.gitignore`.
-173. Found directory `node_modules`. This shouldn't be uploaded. Add `node_modules/`to `.gitignore`.
-174. `.travis.yml`: Change file extention from `.yml` to `.yaml`: <https://yaml.org/faq.html>.
-175. Found directory `node_modules`. This shouldn't be uploaded. Add `node_modules/`to `.gitignore`.
-176. `.travis.yml`: Change file extention from `.yml` to `.yaml`: <https://yaml.org/faq.html>.
-177. `.travis.yml`: Change file extention from `.yml` to `.yaml`: <https://yaml.org/faq.html>.
-178. `.travis.yml`: Change file extention from `.yml` to `.yaml`: <https://yaml.org/faq.html>.
-179. Found 'require('request')' in file `README.md`: Replace it with built-in fetch.
-180. Found directory `node_modules`. This shouldn't be uploaded. Add `node_modules/`to `.gitignore`.
-181. `.travis.yml`: Change file extention from `.yml` to `.yaml`: <https://yaml.org/faq.html>.
-182. Found 'require('https')' in file `README.md`: Replace it with built-in fetch.
-183. Found 'require('https')' in file `package.json`: Replace it with built-in fetch.
-184. Found directory `node_modules`. This shouldn't be uploaded. Add `node_modules/`to `.gitignore`.
-185. `.travis.yml`: Change file extention from `.yml` to `.yaml`: <https://yaml.org/faq.html>.
-186. Found 'require('https')' in file `index.js`: Replace it with built-in fetch.
-187. Found 'require('request')' in file `README.md`: Replace it with built-in fetch.
-188. Found 'node-fetch' in file `README.md`: Replace it with built-in fetch.
-189. Found 'XMLHttpRequest' in file `README.md`: Replace it with built-in fetch.
-190. Found 'require('https')' in file `form_data.js`: Replace it with built-in fetch.
-191. Found directory `node_modules`. This shouldn't be uploaded. Add `node_modules/`to `.gitignore`.
-192. Found 'require('request')' in file `package.json`: Replace it with built-in fetch.
-193. Found 'node-fetch' in file `package.json`: Replace it with built-in fetch.
-194. Found 'XMLHttpRequest' in file `package.json`: Replace it with built-in fetch.
-195. Found directory `node_modules`. This shouldn't be uploaded. Add `node_modules/`to `.gitignore`.
-196. Found directory `node_modules`. This shouldn't be uploaded. Add `node_modules/`to `.gitignore`.
-197. `.travis.yml`: Change file extention from `.yml` to `.yaml`: <https://yaml.org/faq.html>.
-198. Found directory `node_modules`. This shouldn't be uploaded. Add `node_modules/`to `.gitignore`.
-199. `.eslintrc.yml`: Change file extention from `.yml` to `.yaml`: <https://yaml.org/faq.html>.
-200. `.travis.yml`: Change file extention from `.yml` to `.yaml`: <https://yaml.org/faq.html>.
-201. Found 'require('request')' in file `README.md`: Replace it with built-in fetch.
-202. Found 'require('request')' in file `usage.js`: Replace it with built-in fetch.
-203. Found 'XMLHttpRequest' in file `browser.js`: Replace it with built-in fetch.
-204. Found directory `node_modules`. This shouldn't be uploaded. Add `node_modules/`to `.gitignore`.
-205. `.travis.yml`: Change file extention from `.yml` to `.yaml`: <https://yaml.org/faq.html>.
-206. `.travis.yml`: Change file extention from `.yml` to `.yaml`: <https://yaml.org/faq.html>.
-207. `.travis.yml`: Change file extention from `.yml` to `.yaml`: <https://yaml.org/faq.html>.
-208. `.travis.yml`: Change file extention from `.yml` to `.yaml`: <https://yaml.org/faq.html>.
-209. Found 'require('request')' in file `package.json`: Replace it with built-in fetch.
-210. Found 'require('https')' in file `README.md`: Replace it with built-in fetch.
-211. Found directory `node_modules`. This shouldn't be uploaded. Add `node_modules/`to `.gitignore`.
-212. Found directory `node_modules`. This shouldn't be uploaded. Add `node_modules/`to `.gitignore`.
-213. `.travis.yml`: Change file extention from `.yml` to `.yaml`: <https://yaml.org/faq.html>.
-214. Found directory `node_modules`. This shouldn't be uploaded. Add `node_modules/`to `.gitignore`.
-215. `.travis.yml`: Change file extention from `.yml` to `.yaml`: <https://yaml.org/faq.html>.
-216. `.travis.yml`: Change file extention from `.yml` to `.yaml`: <https://yaml.org/faq.html>.
-217. `.travis.yml`: Change file extention from `.yml` to `.yaml`: <https://yaml.org/faq.html>.
-218. Found 'require('https')' in file `package.json`: Replace it with built-in fetch.
-219. `.travis.yml`: Change file extention from `.yml` to `.yaml`: <https://yaml.org/faq.html>.
-220. Found directory `node_modules`. This shouldn't be uploaded. Add `node_modules/`to `.gitignore`.
-221. `.travis.yml`: Change file extention from `.yml` to `.yaml`: <https://yaml.org/faq.html>.
-222. `.travis.yml`: Change file extention from `.yml` to `.yaml`: <https://yaml.org/faq.html>.
-223. `.travis.yml`: Change file extention from `.yml` to `.yaml`: <https://yaml.org/faq.html>.
-224. Found directory `node_modules`. This shouldn't be uploaded. Add `node_modules/`to `.gitignore`.
-225. Found 'require('https')' in file `index.js`: Replace it with built-in fetch.
-226. Found 'require('request')' in file `package.json`: Replace it with built-in fetch.
-227. Found 'require('https')' in file `request.js`: Replace it with built-in fetch.
-228. `.travis.yml`: Change file extention from `.yml` to `.yaml`: <https://yaml.org/faq.html>.
-229. Found 'node-fetch' in file `package.json`: Replace it with built-in fetch.
-230. `.travis.yml`: Change file extention from `.yml` to `.yaml`: <https://yaml.org/faq.html>.
-231. Found directory `node_modules`. This shouldn't be uploaded. Add `node_modules/`to `.gitignore`.
-232. Found directory `node_modules`. This shouldn't be uploaded. Add `node_modules/`to `.gitignore`.
-233. Found directory `node_modules`. This shouldn't be uploaded. Add `node_modules/`to `.gitignore`.
-234. `.travis.yml`: Change file extention from `.yml` to `.yaml`: <https://yaml.org/faq.html>.
-235. Found directory `node_modules`. This shouldn't be uploaded. Add `node_modules/`to `.gitignore`.
-236. `.travis.yml`: Change file extention from `.yml` to `.yaml`: <https://yaml.org/faq.html>.
-237. `.travis.yml`: Change file extention from `.yml` to `.yaml`: <https://yaml.org/faq.html>.
-238. Found directory `node_modules`. This shouldn't be uploaded. Add `node_modules/`to `.gitignore`.
-239. `.travis.yml`: Change file extention from `.yml` to `.yaml`: <https://yaml.org/faq.html>.
-240. Found directory `node_modules`. This shouldn't be uploaded. Add `node_modules/`to `.gitignore`.
-241. `.travis.yml`: Change file extention from `.yml` to `.yaml`: <https://yaml.org/faq.html>.
-242. Found directory `node_modules`. This shouldn't be uploaded. Add `node_modules/`to `.gitignore`.
-243. Found directory `node_modules`. This shouldn't be uploaded. Add `node_modules/`to `.gitignore`.
-244. Found directory `node_modules`. This shouldn't be uploaded. Add `node_modules/`to `.gitignore`.
-245. Found directory `node_modules`. This shouldn't be uploaded. Add `node_modules/`to `.gitignore`.
-246. Found directory `node_modules`. This shouldn't be uploaded. Add `node_modules/`to `.gitignore`.
-247. Found directory `node_modules`. This shouldn't be uploaded. Add `node_modules/`to `.gitignore`.
-248. Found directory `node_modules`. This shouldn't be uploaded. Add `node_modules/`to `.gitignore`.
-249. Found directory `node_modules`. This shouldn't be uploaded. Add `node_modules/`to `.gitignore`.
-250. `.travis.yml`: Change file extention from `.yml` to `.yaml`: <https://yaml.org/faq.html>.
-251. `appveyor.yml`: Change file extention from `.yml` to `.yaml`: <https://yaml.org/faq.html>.
-252. Found directory `node_modules`. This shouldn't be uploaded. Add `node_modules/`to `.gitignore`.
-253. Found directory `node_modules`. This shouldn't be uploaded. Add `node_modules/`to `.gitignore`.
-254. Found directory `node_modules`. This shouldn't be uploaded. Add `node_modules/`to `.gitignore`.
-255. Found directory `node_modules`. This shouldn't be uploaded. Add `node_modules/`to `.gitignore`.
-256. Found directory `node_modules`. This shouldn't be uploaded. Add `node_modules/`to `.gitignore`.
-257. Found directory `node_modules`. This shouldn't be uploaded. Add `node_modules/`to `.gitignore`.
-258. Found directory `node_modules`. This shouldn't be uploaded. Add `node_modules/`to `.gitignore`.
-259. Found directory `node_modules`. This shouldn't be uploaded. Add `node_modules/`to `.gitignore`.
-260. Found directory `node_modules`. This shouldn't be uploaded. Add `node_modules/`to `.gitignore`.
-261. Found 'require('https')' in file `index.js`: Replace it with built-in fetch.
-262. Found directory `node_modules`. This shouldn't be uploaded. Add `node_modules/`to `.gitignore`.
-263. Found directory `node_modules`. This shouldn't be uploaded. Add `node_modules/`to `.gitignore`.
-264. `.travis.yml`: Change file extention from `.yml` to `.yaml`: <https://yaml.org/faq.html>.
-265. Found directory `node_modules`. This shouldn't be uploaded. Add `node_modules/`to `.gitignore`.
-266. Found directory `node_modules`. This shouldn't be uploaded. Add `node_modules/`to `.gitignore`.
-267. Found directory `node_modules`. This shouldn't be uploaded. Add `node_modules/`to `.gitignore`.
-268. `.travis.yml`: Change file extention from `.yml` to `.yaml`: <https://yaml.org/faq.html>.
-269. `.travis.yml`: Change file extention from `.yml` to `.yaml`: <https://yaml.org/faq.html>.
-270. Found directory `node_modules`. This shouldn't be uploaded. Add `node_modules/`to `.gitignore`.
-271. Found directory `node_modules`. This shouldn't be uploaded. Add `node_modules/`to `.gitignore`.
-272. `.travis.yml`: Change file extention from `.yml` to `.yaml`: <https://yaml.org/faq.html>.
-273. `.travis.yml`: Change file extention from `.yml` to `.yaml`: <https://yaml.org/faq.html>.
-274. Found directory `node_modules`. This shouldn't be uploaded. Add `node_modules/`to `.gitignore`.
-275. Found directory `node_modules`. This shouldn't be uploaded. Add `node_modules/`to `.gitignore`.
-276. `.travis.yml`: Change file extention from `.yml` to `.yaml`: <https://yaml.org/faq.html>.
-277. Found directory `node_modules`. This shouldn't be uploaded. Add `node_modules/`to `.gitignore`.
-278. `.travis.yml`: Change file extention from `.yml` to `.yaml`: <https://yaml.org/faq.html>.
-279. Found directory `node_modules`. This shouldn't be uploaded. Add `node_modules/`to `.gitignore`.
 
 ## [MMM-MyWeather by martinkooij](https://github.com/martinkooij/MMM-MyWeather)
 
@@ -4769,7 +4393,6 @@ Number of analyzed modules: 1015
 ## [MMM-Zmanim by shmulyeng](https://github.com/shmulyeng/MMM-Zmanim)
 
 1. Found directory `node_modules`. This shouldn't be uploaded. Add `node_modules/`to `.gitignore`.
-2. `.travis.yml`: Change file extention from `.yml` to `.yaml`: <https://yaml.org/faq.html>.
 
 ## [MMM-air-raid-monitor-ua by PavlenkoM](https://github.com/PavlenkoM/MMM-air-raid-monitor-ua)
 
@@ -5470,8 +5093,6 @@ Number of analyzed modules: 1015
 1. Module name doesn't follow the recommended pattern (it doesn't start with `MMM-`). Consider renaming your module.
 2. Found 'XMLHttpRequest' in file `jquery.js`: Replace it with built-in fetch.
 3. Found directory `node_modules`. This shouldn't be uploaded. Add `node_modules/`to `.gitignore`.
-4. `.travis.yml`: Change file extention from `.yml` to `.yaml`: <https://yaml.org/faq.html>.
-5. Found 'require('https')' in file `index.js`: Replace it with built-in fetch.
 
 ## [magic-mirror-voice by whyjustin](https://github.com/whyjustin/magic-mirror-voice)
 

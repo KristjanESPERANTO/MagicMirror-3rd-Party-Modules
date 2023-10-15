@@ -61,10 +61,10 @@ def check_modules():
 
         for file_path in sorted(module_directory.rglob("*")):
             if file_path.is_dir():
-                if file_path.name == "node_modules":
-                    issues.append(
+                # .count == 1: If there is a node_modules directory, there are probably others in it with that name. There does not have to be an additional message for this.
+                if file_path.name == "node_modules" and str(file_path).count("node_modules") == 1:                    issues.append(
                         "Found directory `node_modules`. This shouldn't be uploaded. Add `node_modules/`to `.gitignore`.")
-            elif not file_path.is_symlink() and ".min.js" not in str(file_path):
+            elif not file_path.is_symlink() and ".min.js" not in str(file_path.name) and "node_modules" not in str(file_path):
                 if "changelog" not in str(file_path).lower() and "package-lock.json" not in str(file_path).lower():
                     for search_string, value in search_strings.items():
                         found_string = search_in_file(file_path, search_string)
