@@ -1,6 +1,6 @@
 # Result of the module analysis
 
-Timestamp: 2023-10-15 22:17:12
+Timestamp: 2023-10-15 22:57:57
 
 Number of analyzed modules: 1015
 
@@ -494,10 +494,6 @@ Number of analyzed modules: 1015
 1. found 'Magic Mirror' in file `MMM-CanadianPublicWeatherAlerts.js`: Replace it with `MagicMirror²`
 2. found 'Magic Mirror' in file `node_helper.js`: Replace it with `MagicMirror²`
 3. found 'require('https')' in file `node_helper.js`: Replace it with built-in fetch.
-
-## MMM-Canteen by KristjanESPERANTO
-
-1. found 'node-fetch' in file `CHANGELOG.md`: Replace it with built-in fetch.
 
 ## MMM-Canvas by chase-cromwell
 
@@ -1026,20 +1022,19 @@ Number of analyzed modules: 1015
 22. found 'XMLHttpRequest' in file `README.md.bak`: Replace it with built-in fetch.
 23. found 'require('https')' in file `form_data.js`: Replace it with built-in fetch.
 24. found 'require('https')' in file `README.md`: Replace it with built-in fetch.
-25. found 'XMLHttpRequest' in file `Changelog.md`: Replace it with built-in fetch.
-26. found 'XMLHttpRequest' in file `Window.js`: Replace it with built-in fetch.
-27. found 'require("request")' in file `resource-loader.js`: Replace it with built-in fetch.
-28. found 'XMLHttpRequest' in file `xhr-sync-worker.js`: Replace it with built-in fetch.
-29. found 'require("request")' in file `xhr-utils.js`: Replace it with built-in fetch.
-30. found 'XMLHttpRequest' in file `xmlhttprequest-event-target.js`: Replace it with built-in fetch.
-31. found 'XMLHttpRequest' in file `xmlhttprequest-upload.js`: Replace it with built-in fetch.
-32. found 'XMLHttpRequest' in file `xmlhttprequest.js`: Replace it with built-in fetch.
-33. found 'require('request')' in file `README.md`: Replace it with built-in fetch.
-34. found 'require('https')' in file `request.js`: Replace it with built-in fetch.
-35. found 'require('https')' in file `index.js`: Replace it with built-in fetch.
-36. Found directory `node_modules`. This shouldn't be uploaded. Add `node_modules/`to `.gitignore`.
-37. found 'Magic Mirror' in file `MMM-FF-Genius-Lyrics.css`: Replace it with `MagicMirror²`
-38. found 'Magic Mirror' in file `MMM-FF-Genius-Lyrics.scss`: Replace it with `MagicMirror²`
+25. found 'XMLHttpRequest' in file `Window.js`: Replace it with built-in fetch.
+26. found 'require("request")' in file `resource-loader.js`: Replace it with built-in fetch.
+27. found 'XMLHttpRequest' in file `xhr-sync-worker.js`: Replace it with built-in fetch.
+28. found 'require("request")' in file `xhr-utils.js`: Replace it with built-in fetch.
+29. found 'XMLHttpRequest' in file `xmlhttprequest-event-target.js`: Replace it with built-in fetch.
+30. found 'XMLHttpRequest' in file `xmlhttprequest-upload.js`: Replace it with built-in fetch.
+31. found 'XMLHttpRequest' in file `xmlhttprequest.js`: Replace it with built-in fetch.
+32. found 'require('request')' in file `README.md`: Replace it with built-in fetch.
+33. found 'require('https')' in file `request.js`: Replace it with built-in fetch.
+34. found 'require('https')' in file `index.js`: Replace it with built-in fetch.
+35. Found directory `node_modules`. This shouldn't be uploaded. Add `node_modules/`to `.gitignore`.
+36. found 'Magic Mirror' in file `MMM-FF-Genius-Lyrics.css`: Replace it with `MagicMirror²`
+37. found 'Magic Mirror' in file `MMM-FF-Genius-Lyrics.scss`: Replace it with `MagicMirror²`
 
 ## MMM-FF-StatsJS by shin10
 
@@ -1288,16 +1283,15 @@ Number of analyzed modules: 1015
 ## MMM-Fuel by fewieden
 
 1. found 'node-version: 16' in file `build.yml`: Deprecated: Update to current version.
-2. found 'node-fetch' in file `CHANGELOG.md`: Replace it with built-in fetch.
-3. found 'node-fetch' in file `README.md`: Replace it with built-in fetch.
-4. found 'node-fetch' in file `autoblog.js`: Replace it with built-in fetch.
-5. found 'node-fetch' in file `gasbuddy.js`: Replace it with built-in fetch.
-6. found 'node-fetch' in file `nsw.js`: Replace it with built-in fetch.
-7. found 'node-fetch' in file `spritpreisrechner.js`: Replace it with built-in fetch.
-8. found 'node-fetch' in file `tankerkoenig.js`: Replace it with built-in fetch.
-9. found 'node-fetch' in file `package-lock.json`: Replace it with built-in fetch.
-10. found 'MagicMirror2' in file `package.json`: Replace it with `MagicMirror²`
-11. found 'node-fetch' in file `package.json`: Replace it with built-in fetch.
+2. found 'node-fetch' in file `README.md`: Replace it with built-in fetch.
+3. found 'node-fetch' in file `autoblog.js`: Replace it with built-in fetch.
+4. found 'node-fetch' in file `gasbuddy.js`: Replace it with built-in fetch.
+5. found 'node-fetch' in file `nsw.js`: Replace it with built-in fetch.
+6. found 'node-fetch' in file `spritpreisrechner.js`: Replace it with built-in fetch.
+7. found 'node-fetch' in file `tankerkoenig.js`: Replace it with built-in fetch.
+8. found 'node-fetch' in file `package-lock.json`: Replace it with built-in fetch.
+9. found 'MagicMirror2' in file `package.json`: Replace it with `MagicMirror²`
+10. found 'node-fetch' in file `package.json`: Replace it with built-in fetch.
 
 ## MMM-FunnyHolidays by mattileh
 
@@ -2338,55 +2332,55 @@ Number of analyzed modules: 1015
 52. Found directory `node_modules`. This shouldn't be uploaded. Add `node_modules/`to `.gitignore`.
 53. Found directory `node_modules`. This shouldn't be uploaded. Add `node_modules/`to `.gitignore`.
 54. Found directory `node_modules`. This shouldn't be uploaded. Add `node_modules/`to `.gitignore`.
-55. found 'node-fetch' in file `CHANGELOG.md`: Replace it with built-in fetch.
-56. found 'node-fetch' in file `README.md`: Replace it with built-in fetch.
-57. found 'node-fetch' in file `cache.js`: Replace it with built-in fetch.
-58. found 'node-fetch' in file `index.js`: Replace it with built-in fetch.
-59. Found directory `node_modules`. This shouldn't be uploaded. Add `node_modules/`to `.gitignore`.
-60. found 'require('https')' in file `README.md`: Replace it with built-in fetch.
-61. found 'require('https')' in file `https_agent.js`: Replace it with built-in fetch.
+55. found 'node-fetch' in file `README.md`: Replace it with built-in fetch.
+56. found 'node-fetch' in file `cache.js`: Replace it with built-in fetch.
+57. found 'node-fetch' in file `index.js`: Replace it with built-in fetch.
+58. Found directory `node_modules`. This shouldn't be uploaded. Add `node_modules/`to `.gitignore`.
+59. found 'require('https')' in file `README.md`: Replace it with built-in fetch.
+60. found 'require('https')' in file `https_agent.js`: Replace it with built-in fetch.
+61. Found directory `node_modules`. This shouldn't be uploaded. Add `node_modules/`to `.gitignore`.
 62. Found directory `node_modules`. This shouldn't be uploaded. Add `node_modules/`to `.gitignore`.
-63. Found directory `node_modules`. This shouldn't be uploaded. Add `node_modules/`to `.gitignore`.
-64. found 'require('https')' in file `package.json`: Replace it with built-in fetch.
+63. found 'require('https')' in file `package.json`: Replace it with built-in fetch.
+64. Found directory `node_modules`. This shouldn't be uploaded. Add `node_modules/`to `.gitignore`.
 65. Found directory `node_modules`. This shouldn't be uploaded. Add `node_modules/`to `.gitignore`.
-66. Found directory `node_modules`. This shouldn't be uploaded. Add `node_modules/`to `.gitignore`.
-67. found 'require('https')' in file `patch-core.js`: Replace it with built-in fetch.
-68. found 'require('https')' in file `test.js`: Replace it with built-in fetch.
-69. Found directory `node_modules`. This shouldn't be uploaded. Add `node_modules/`to `.gitignore`.
-70. found 'require('https')' in file `test.js`: Replace it with built-in fetch.
-71. found 'require('https')' in file `README.md`: Replace it with built-in fetch.
+66. found 'require('https')' in file `patch-core.js`: Replace it with built-in fetch.
+67. found 'require('https')' in file `test.js`: Replace it with built-in fetch.
+68. Found directory `node_modules`. This shouldn't be uploaded. Add `node_modules/`to `.gitignore`.
+69. found 'require('https')' in file `test.js`: Replace it with built-in fetch.
+70. found 'require('https')' in file `README.md`: Replace it with built-in fetch.
+71. Found directory `node_modules`. This shouldn't be uploaded. Add `node_modules/`to `.gitignore`.
 72. Found directory `node_modules`. This shouldn't be uploaded. Add `node_modules/`to `.gitignore`.
-73. Found directory `node_modules`. This shouldn't be uploaded. Add `node_modules/`to `.gitignore`.
-74. found 'require('https')' in file `patch-core.js`: Replace it with built-in fetch.
-75. found 'require('https')' in file `test.js`: Replace it with built-in fetch.
-76. Found directory `node_modules`. This shouldn't be uploaded. Add `node_modules/`to `.gitignore`.
-77. found 'require('https')' in file `package.json`: Replace it with built-in fetch.
-78. found 'require('https')' in file `test.js`: Replace it with built-in fetch.
-79. found 'node-fetch' in file `CHANGELOG.md`: Replace it with built-in fetch.
-80. found 'node-fetch' in file `README.md`: Replace it with built-in fetch.
-81. found 'XMLHttpRequest' in file `README.md`: Replace it with built-in fetch.
-82. Found directory `node_modules`. This shouldn't be uploaded. Add `node_modules/`to `.gitignore`.
-83. Found directory `node_modules`. This shouldn't be uploaded. Add `node_modules/`to `.gitignore`.
-84. found 'require('request')' in file `README.md`: Replace it with built-in fetch.
-85. found 'require('request')' in file `package.json`: Replace it with built-in fetch.
-86. found 'node-fetch' in file `package.json`: Replace it with built-in fetch.
+73. found 'require('https')' in file `patch-core.js`: Replace it with built-in fetch.
+74. found 'require('https')' in file `test.js`: Replace it with built-in fetch.
+75. Found directory `node_modules`. This shouldn't be uploaded. Add `node_modules/`to `.gitignore`.
+76. found 'require('https')' in file `package.json`: Replace it with built-in fetch.
+77. found 'require('https')' in file `test.js`: Replace it with built-in fetch.
+78. found 'node-fetch' in file `README.md`: Replace it with built-in fetch.
+79. found 'XMLHttpRequest' in file `README.md`: Replace it with built-in fetch.
+80. Found directory `node_modules`. This shouldn't be uploaded. Add `node_modules/`to `.gitignore`.
+81. Found directory `node_modules`. This shouldn't be uploaded. Add `node_modules/`to `.gitignore`.
+82. found 'require('request')' in file `README.md`: Replace it with built-in fetch.
+83. found 'require('request')' in file `package.json`: Replace it with built-in fetch.
+84. found 'node-fetch' in file `package.json`: Replace it with built-in fetch.
+85. found 'node-fetch' in file `package.json`: Replace it with built-in fetch.
+86. Found directory `node_modules`. This shouldn't be uploaded. Add `node_modules/`to `.gitignore`.
 87. found 'node-fetch' in file `package.json`: Replace it with built-in fetch.
-88. Found directory `node_modules`. This shouldn't be uploaded. Add `node_modules/`to `.gitignore`.
+88. found 'node-fetch' in file `package.json`: Replace it with built-in fetch.
 89. found 'node-fetch' in file `package.json`: Replace it with built-in fetch.
-90. found 'node-fetch' in file `package.json`: Replace it with built-in fetch.
-91. found 'node-fetch' in file `package.json`: Replace it with built-in fetch.
-92. found 'XMLHttpRequest' in file `package.json`: Replace it with built-in fetch.
-93. found 'require('https')' in file `index.js`: Replace it with built-in fetch.
-94. found 'node-fetch' in file `request.js`: Replace it with built-in fetch.
-95. found 'require('https')' in file `README.md`: Replace it with built-in fetch.
-96. Found directory `node_modules`. This shouldn't be uploaded. Add `node_modules/`to `.gitignore`.
-97. Found directory `node_modules`. This shouldn't be uploaded. Add `node_modules/`to `.gitignore`.
-98. found 'require('https')' in file `patch-core.js`: Replace it with built-in fetch.
-99. found 'require('https')' in file `test.js`: Replace it with built-in fetch.
-100. Found directory `node_modules`. This shouldn't be uploaded. Add `node_modules/`to `.gitignore`.
-101. found 'require('https')' in file `package.json`: Replace it with built-in fetch.
-102. found 'require('https')' in file `test.js`: Replace it with built-in fetch.
-103. found 'node-fetch' in file `package.json`: Replace it with built-in fetch.
+90. found 'XMLHttpRequest' in file `package.json`: Replace it with built-in fetch.
+91. found 'require('https')' in file `index.js`: Replace it with built-in fetch.
+92. found 'node-fetch' in file `request.js`: Replace it with built-in fetch.
+93. found 'require('https')' in file `README.md`: Replace it with built-in fetch.
+94. Found directory `node_modules`. This shouldn't be uploaded. Add `node_modules/`to `.gitignore`.
+95. Found directory `node_modules`. This shouldn't be uploaded. Add `node_modules/`to `.gitignore`.
+96. found 'require('https')' in file `patch-core.js`: Replace it with built-in fetch.
+97. found 'require('https')' in file `test.js`: Replace it with built-in fetch.
+98. Found directory `node_modules`. This shouldn't be uploaded. Add `node_modules/`to `.gitignore`.
+99. found 'require('https')' in file `package.json`: Replace it with built-in fetch.
+100. found 'require('https')' in file `test.js`: Replace it with built-in fetch.
+101. found 'node-fetch' in file `package.json`: Replace it with built-in fetch.
+102. Found directory `node_modules`. This shouldn't be uploaded. Add `node_modules/`to `.gitignore`.
+103. Found directory `node_modules`. This shouldn't be uploaded. Add `node_modules/`to `.gitignore`.
 104. Found directory `node_modules`. This shouldn't be uploaded. Add `node_modules/`to `.gitignore`.
 105. Found directory `node_modules`. This shouldn't be uploaded. Add `node_modules/`to `.gitignore`.
 106. Found directory `node_modules`. This shouldn't be uploaded. Add `node_modules/`to `.gitignore`.
@@ -2397,41 +2391,41 @@ Number of analyzed modules: 1015
 111. Found directory `node_modules`. This shouldn't be uploaded. Add `node_modules/`to `.gitignore`.
 112. Found directory `node_modules`. This shouldn't be uploaded. Add `node_modules/`to `.gitignore`.
 113. Found directory `node_modules`. This shouldn't be uploaded. Add `node_modules/`to `.gitignore`.
-114. Found directory `node_modules`. This shouldn't be uploaded. Add `node_modules/`to `.gitignore`.
+114. found 'require('request')' in file `README.md`: Replace it with built-in fetch.
 115. Found directory `node_modules`. This shouldn't be uploaded. Add `node_modules/`to `.gitignore`.
-116. found 'require('request')' in file `README.md`: Replace it with built-in fetch.
-117. Found directory `node_modules`. This shouldn't be uploaded. Add `node_modules/`to `.gitignore`.
-118. found 'require('https')' in file `README.md`: Replace it with built-in fetch.
-119. found 'require('https')' in file `package.json`: Replace it with built-in fetch.
-120. Found directory `node_modules`. This shouldn't be uploaded. Add `node_modules/`to `.gitignore`.
-121. found 'require('https')' in file `index.js`: Replace it with built-in fetch.
-122. found 'require('request')' in file `README.md`: Replace it with built-in fetch.
-123. found 'node-fetch' in file `README.md`: Replace it with built-in fetch.
-124. found 'XMLHttpRequest' in file `README.md`: Replace it with built-in fetch.
-125. found 'require('https')' in file `form_data.js`: Replace it with built-in fetch.
-126. Found directory `node_modules`. This shouldn't be uploaded. Add `node_modules/`to `.gitignore`.
-127. found 'require('request')' in file `package.json`: Replace it with built-in fetch.
-128. found 'node-fetch' in file `package.json`: Replace it with built-in fetch.
-129. found 'XMLHttpRequest' in file `package.json`: Replace it with built-in fetch.
+116. found 'require('https')' in file `README.md`: Replace it with built-in fetch.
+117. found 'require('https')' in file `package.json`: Replace it with built-in fetch.
+118. Found directory `node_modules`. This shouldn't be uploaded. Add `node_modules/`to `.gitignore`.
+119. found 'require('https')' in file `index.js`: Replace it with built-in fetch.
+120. found 'require('request')' in file `README.md`: Replace it with built-in fetch.
+121. found 'node-fetch' in file `README.md`: Replace it with built-in fetch.
+122. found 'XMLHttpRequest' in file `README.md`: Replace it with built-in fetch.
+123. found 'require('https')' in file `form_data.js`: Replace it with built-in fetch.
+124. Found directory `node_modules`. This shouldn't be uploaded. Add `node_modules/`to `.gitignore`.
+125. found 'require('request')' in file `package.json`: Replace it with built-in fetch.
+126. found 'node-fetch' in file `package.json`: Replace it with built-in fetch.
+127. found 'XMLHttpRequest' in file `package.json`: Replace it with built-in fetch.
+128. Found directory `node_modules`. This shouldn't be uploaded. Add `node_modules/`to `.gitignore`.
+129. Found directory `node_modules`. This shouldn't be uploaded. Add `node_modules/`to `.gitignore`.
 130. Found directory `node_modules`. This shouldn't be uploaded. Add `node_modules/`to `.gitignore`.
-131. Found directory `node_modules`. This shouldn't be uploaded. Add `node_modules/`to `.gitignore`.
-132. Found directory `node_modules`. This shouldn't be uploaded. Add `node_modules/`to `.gitignore`.
-133. found 'require('request')' in file `README.md`: Replace it with built-in fetch.
-134. found 'require('request')' in file `usage.js`: Replace it with built-in fetch.
-135. found 'XMLHttpRequest' in file `browser.js`: Replace it with built-in fetch.
-136. Found directory `node_modules`. This shouldn't be uploaded. Add `node_modules/`to `.gitignore`.
-137. found 'require('request')' in file `package.json`: Replace it with built-in fetch.
-138. found 'require('https')' in file `README.md`: Replace it with built-in fetch.
+131. found 'require('request')' in file `README.md`: Replace it with built-in fetch.
+132. found 'require('request')' in file `usage.js`: Replace it with built-in fetch.
+133. found 'XMLHttpRequest' in file `browser.js`: Replace it with built-in fetch.
+134. Found directory `node_modules`. This shouldn't be uploaded. Add `node_modules/`to `.gitignore`.
+135. found 'require('request')' in file `package.json`: Replace it with built-in fetch.
+136. found 'require('https')' in file `README.md`: Replace it with built-in fetch.
+137. Found directory `node_modules`. This shouldn't be uploaded. Add `node_modules/`to `.gitignore`.
+138. Found directory `node_modules`. This shouldn't be uploaded. Add `node_modules/`to `.gitignore`.
 139. Found directory `node_modules`. This shouldn't be uploaded. Add `node_modules/`to `.gitignore`.
-140. Found directory `node_modules`. This shouldn't be uploaded. Add `node_modules/`to `.gitignore`.
+140. found 'require('https')' in file `package.json`: Replace it with built-in fetch.
 141. Found directory `node_modules`. This shouldn't be uploaded. Add `node_modules/`to `.gitignore`.
-142. found 'require('https')' in file `package.json`: Replace it with built-in fetch.
-143. Found directory `node_modules`. This shouldn't be uploaded. Add `node_modules/`to `.gitignore`.
-144. Found directory `node_modules`. This shouldn't be uploaded. Add `node_modules/`to `.gitignore`.
-145. found 'require('https')' in file `index.js`: Replace it with built-in fetch.
-146. found 'require('request')' in file `package.json`: Replace it with built-in fetch.
-147. found 'require('https')' in file `request.js`: Replace it with built-in fetch.
-148. found 'node-fetch' in file `package.json`: Replace it with built-in fetch.
+142. Found directory `node_modules`. This shouldn't be uploaded. Add `node_modules/`to `.gitignore`.
+143. found 'require('https')' in file `index.js`: Replace it with built-in fetch.
+144. found 'require('request')' in file `package.json`: Replace it with built-in fetch.
+145. found 'require('https')' in file `request.js`: Replace it with built-in fetch.
+146. found 'node-fetch' in file `package.json`: Replace it with built-in fetch.
+147. Found directory `node_modules`. This shouldn't be uploaded. Add `node_modules/`to `.gitignore`.
+148. Found directory `node_modules`. This shouldn't be uploaded. Add `node_modules/`to `.gitignore`.
 149. Found directory `node_modules`. This shouldn't be uploaded. Add `node_modules/`to `.gitignore`.
 150. Found directory `node_modules`. This shouldn't be uploaded. Add `node_modules/`to `.gitignore`.
 151. Found directory `node_modules`. This shouldn't be uploaded. Add `node_modules/`to `.gitignore`.
@@ -2453,9 +2447,9 @@ Number of analyzed modules: 1015
 167. Found directory `node_modules`. This shouldn't be uploaded. Add `node_modules/`to `.gitignore`.
 168. Found directory `node_modules`. This shouldn't be uploaded. Add `node_modules/`to `.gitignore`.
 169. Found directory `node_modules`. This shouldn't be uploaded. Add `node_modules/`to `.gitignore`.
-170. Found directory `node_modules`. This shouldn't be uploaded. Add `node_modules/`to `.gitignore`.
+170. found 'require('https')' in file `index.js`: Replace it with built-in fetch.
 171. Found directory `node_modules`. This shouldn't be uploaded. Add `node_modules/`to `.gitignore`.
-172. found 'require('https')' in file `index.js`: Replace it with built-in fetch.
+172. Found directory `node_modules`. This shouldn't be uploaded. Add `node_modules/`to `.gitignore`.
 173. Found directory `node_modules`. This shouldn't be uploaded. Add `node_modules/`to `.gitignore`.
 174. Found directory `node_modules`. This shouldn't be uploaded. Add `node_modules/`to `.gitignore`.
 175. Found directory `node_modules`. This shouldn't be uploaded. Add `node_modules/`to `.gitignore`.
@@ -2465,9 +2459,7 @@ Number of analyzed modules: 1015
 179. Found directory `node_modules`. This shouldn't be uploaded. Add `node_modules/`to `.gitignore`.
 180. Found directory `node_modules`. This shouldn't be uploaded. Add `node_modules/`to `.gitignore`.
 181. Found directory `node_modules`. This shouldn't be uploaded. Add `node_modules/`to `.gitignore`.
-182. Found directory `node_modules`. This shouldn't be uploaded. Add `node_modules/`to `.gitignore`.
-183. Found directory `node_modules`. This shouldn't be uploaded. Add `node_modules/`to `.gitignore`.
-184. found 'node-fetch' in file `package-lock.json`: Replace it with built-in fetch.
+182. found 'node-fetch' in file `package-lock.json`: Replace it with built-in fetch.
 
 ## MMM-MyWeather by martinkooij
 
@@ -2532,11 +2524,10 @@ Number of analyzed modules: 1015
 ## MMM-NHL by fewieden
 
 1. found 'node-version: 16' in file `build.yml`: Deprecated: Update to current version.
-2. found 'node-fetch' in file `CHANGELOG.md`: Replace it with built-in fetch.
-3. found 'node-fetch' in file `README.md`: Replace it with built-in fetch.
-4. found 'node-fetch' in file `node_helper.js`: Replace it with built-in fetch.
-5. found 'node-fetch' in file `package-lock.json`: Replace it with built-in fetch.
-6. found 'node-fetch' in file `package.json`: Replace it with built-in fetch.
+2. found 'node-fetch' in file `README.md`: Replace it with built-in fetch.
+3. found 'node-fetch' in file `node_helper.js`: Replace it with built-in fetch.
+4. found 'node-fetch' in file `package-lock.json`: Replace it with built-in fetch.
+5. found 'node-fetch' in file `package.json`: Replace it with built-in fetch.
 
 ## MMM-NINA by jalibu
 
@@ -2794,13 +2785,12 @@ Number of analyzed modules: 1015
 
 ## MMM-OlympicGames by fewieden
 
-1. found 'node-fetch' in file `CHANGELOG.md`: Replace it with built-in fetch.
-2. found 'node-fetch' in file `README.md`: Replace it with built-in fetch.
-3. found 'node-fetch' in file `package-lock.json`: Replace it with built-in fetch.
-4. found 'node-fetch' in file `package.json`: Replace it with built-in fetch.
-5. found 'node-fetch' in file `bloomberg.js`: Replace it with built-in fetch.
-6. found 'node-fetch' in file `nbc.js`: Replace it with built-in fetch.
-7. found 'node-fetch' in file `paralympic.js`: Replace it with built-in fetch.
+1. found 'node-fetch' in file `README.md`: Replace it with built-in fetch.
+2. found 'node-fetch' in file `package-lock.json`: Replace it with built-in fetch.
+3. found 'node-fetch' in file `package.json`: Replace it with built-in fetch.
+4. found 'node-fetch' in file `bloomberg.js`: Replace it with built-in fetch.
+5. found 'node-fetch' in file `nbc.js`: Replace it with built-in fetch.
+6. found 'node-fetch' in file `paralympic.js`: Replace it with built-in fetch.
 
 ## MMM-OnScreenMenu by shbatm
 
@@ -3243,17 +3233,16 @@ Number of analyzed modules: 1015
 
 ## MMM-RBB-Weather by nkl-kst
 
-1. found 'Magic Mirror' in file `CHANGELOG.md`: Replace it with `MagicMirror²`
-2. found 'Magic Mirror' in file `IconMapper.js`: Replace it with `MagicMirror²`
-3. found 'Magic Mirror' in file `Logger.js`: Replace it with `MagicMirror²`
-4. found 'Magic Mirror' in file `MMM-RBB-Weather.css`: Replace it with `MagicMirror²`
-5. found 'Magic Mirror' in file `MMM-RBB-Weather.js`: Replace it with `MagicMirror²`
-6. found 'Magic Mirror' in file `node_helper.js`: Replace it with `MagicMirror²`
-7. found 'require('https')' in file `node_helper.js`: Replace it with built-in fetch.
-8. found 'Magic Mirror' in file `MagicMirrorTestEnv.js`: Replace it with `MagicMirror²`
-9. found 'Magic Mirror' in file `ModuleTest.js`: Replace it with `MagicMirror²`
-10. found 'Magic Mirror' in file `TestConfig.js`: Replace it with `MagicMirror²`
-11. found 'require('https')' in file `EndpointTest.js`: Replace it with built-in fetch.
+1. found 'Magic Mirror' in file `IconMapper.js`: Replace it with `MagicMirror²`
+2. found 'Magic Mirror' in file `Logger.js`: Replace it with `MagicMirror²`
+3. found 'Magic Mirror' in file `MMM-RBB-Weather.css`: Replace it with `MagicMirror²`
+4. found 'Magic Mirror' in file `MMM-RBB-Weather.js`: Replace it with `MagicMirror²`
+5. found 'Magic Mirror' in file `node_helper.js`: Replace it with `MagicMirror²`
+6. found 'require('https')' in file `node_helper.js`: Replace it with built-in fetch.
+7. found 'Magic Mirror' in file `MagicMirrorTestEnv.js`: Replace it with `MagicMirror²`
+8. found 'Magic Mirror' in file `ModuleTest.js`: Replace it with `MagicMirror²`
+9. found 'Magic Mirror' in file `TestConfig.js`: Replace it with `MagicMirror²`
+10. found 'require('https')' in file `EndpointTest.js`: Replace it with built-in fetch.
 
 ## MMM-RKI-Covid19 by fhinder
 
@@ -3395,11 +3384,10 @@ Number of analyzed modules: 1015
 
 ## MMM-Remote-Control by Jopyth
 
-1. found 'node-fetch' in file `CHANGELOG.md`: Replace it with built-in fetch.
-2. found 'Magic Mirror' in file `package.json`: Replace it with `MagicMirror²`
-3. found 'node-fetch' in file `package.json`: Replace it with built-in fetch.
-4. found 'XMLHttpRequest' in file `remote.js`: Replace it with built-in fetch.
-5. found 'node-fetch' in file `download_modules.js`: Replace it with built-in fetch.
+1. found 'Magic Mirror' in file `package.json`: Replace it with `MagicMirror²`
+2. found 'node-fetch' in file `package.json`: Replace it with built-in fetch.
+3. found 'XMLHttpRequest' in file `remote.js`: Replace it with built-in fetch.
+4. found 'node-fetch' in file `download_modules.js`: Replace it with built-in fetch.
 
 ## MMM-Remote-Control-Repository by eouia
 
@@ -3534,7 +3522,6 @@ Number of analyzed modules: 1015
 ## MMM-ScreenLogic by parnic
 
 1. found 'uses: actions/setup-node@v3' in file `nodejs.yml`: Replace it with v4.
-2. found 'Magic Mirror' in file `CHANGELOG.md`: Replace it with `MagicMirror²`
 
 ## MMM-Screencast by kevinatown
 
@@ -4342,11 +4329,10 @@ Number of analyzed modules: 1015
 
 ## MMM-WienerLinien by fewieden
 
-1. found 'node-fetch' in file `CHANGELOG.md`: Replace it with built-in fetch.
-2. found 'node-fetch' in file `README.md`: Replace it with built-in fetch.
-3. found 'node-fetch' in file `node_helper.js`: Replace it with built-in fetch.
-4. found 'MagicMirror2' in file `package.json`: Replace it with `MagicMirror²`
-5. found 'node-fetch' in file `package.json`: Replace it with built-in fetch.
+1. found 'node-fetch' in file `README.md`: Replace it with built-in fetch.
+2. found 'node-fetch' in file `node_helper.js`: Replace it with built-in fetch.
+3. found 'MagicMirror2' in file `package.json`: Replace it with `MagicMirror²`
+4. found 'node-fetch' in file `package.json`: Replace it with built-in fetch.
 
 ## MMM-WordGenius by drventure
 
@@ -4694,12 +4680,11 @@ Number of analyzed modules: 1015
 ## MMM-json by DanielHabenicht
 
 1. found 'Magic Mirror' in file `MMM-json.js`: Replace it with `MagicMirror²`
-2. found 'node-fetch' in file `changelog.md`: Replace it with built-in fetch.
-3. found 'Magic Mirror' in file `configuration.md`: Replace it with `MagicMirror²`
-4. found 'node-fetch' in file `configuration.md`: Replace it with built-in fetch.
-5. found 'node-fetch' in file `node_helper.js`: Replace it with built-in fetch.
-6. found 'node-fetch' in file `package-lock.json`: Replace it with built-in fetch.
-7. found 'node-fetch' in file `package.json`: Replace it with built-in fetch.
+2. found 'Magic Mirror' in file `configuration.md`: Replace it with `MagicMirror²`
+3. found 'node-fetch' in file `configuration.md`: Replace it with built-in fetch.
+4. found 'node-fetch' in file `node_helper.js`: Replace it with built-in fetch.
+5. found 'node-fetch' in file `package-lock.json`: Replace it with built-in fetch.
+6. found 'node-fetch' in file `package.json`: Replace it with built-in fetch.
 
 ## MMM-json-feed by amcolash
 
@@ -4882,12 +4867,11 @@ Number of analyzed modules: 1015
 
 ## MMM-soccer by fewieden
 
-1. found 'node-fetch' in file `CHANGELOG.md`: Replace it with built-in fetch.
-2. found 'node-fetch' in file `README.md`: Replace it with built-in fetch.
-3. found 'node-fetch' in file `node_helper.js`: Replace it with built-in fetch.
-4. found 'node-fetch' in file `package-lock.json`: Replace it with built-in fetch.
-5. found 'MagicMirror2' in file `package.json`: Replace it with `MagicMirror²`
-6. found 'node-fetch' in file `package.json`: Replace it with built-in fetch.
+1. found 'node-fetch' in file `README.md`: Replace it with built-in fetch.
+2. found 'node-fetch' in file `node_helper.js`: Replace it with built-in fetch.
+3. found 'node-fetch' in file `package-lock.json`: Replace it with built-in fetch.
+4. found 'MagicMirror2' in file `package.json`: Replace it with `MagicMirror²`
+5. found 'node-fetch' in file `package.json`: Replace it with built-in fetch.
 
 ## MMM-social-counter by ngnijland
 

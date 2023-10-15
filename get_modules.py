@@ -39,4 +39,5 @@ def get_modules():
                     print("- I - path doesn't exists: run `git clone`")
                     subprocess.run(f"git clone {module_url} {path} --depth 1", shell=True, check=False)
     print("\n- I - Modules found and downloaded: " + str(module_counter))
+
 get_modules()
