@@ -10,7 +10,7 @@ def search_in_file(path, searchstring):
             if searchstring in file.read():
                 return True
     except UnicodeDecodeError:
-        pass  # Fond non-text data
+        pass
 
 
 def check_modules():
@@ -41,14 +41,14 @@ def check_modules():
 
     output = open("result.md", "w", encoding="utf-8")
     output.write("# Result of the module analysis\n\n")
-    output.write(f"Timestamp: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}\n")
+    output.write(f"Timestamp: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}\n\n")
     output.write(f"Number of analyzed modules: {len(all_modules_folders)}\n")
 
     for i, module_folder in enumerate(all_modules_folders):
 
-        # Progressbar
-        strbarwidth = f"[{'#' * i}{'-' * (len(all_modules_folders) - i)}] - {int(i * (100 / len(all_modules_folders)))}%\r"
-        print(strbarwidth ,end = '')
+        # Print progress
+        progress = f"{i:4}/{len(all_modules_folders)}\r"
+        print(progress, end = '')
 
         module_name = module_folder.name.split("-----")[0]
         module_owner = module_folder.name.split("-----")[1]
@@ -69,7 +69,6 @@ def check_modules():
             output.write(f"\n## {module_name} by {module_owner}\n\n")
             for idx, issue in enumerate(issues):
                 output.write(f"{idx+1}. {issue}\n")
-                #print(f"  {idx+1}: {issue}")
     print(f"{len(all_modules_folders)} modules analyzed. For results see file result.md.           ")
     output.close()
 
