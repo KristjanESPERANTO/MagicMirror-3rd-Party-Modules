@@ -62,7 +62,7 @@ def check_modules():
                     issues.append(
                         "Found directory `node_modules`. This shouldn't be uploaded. Add `node_modules/`to `.gitignore`.")
             elif not file_path.is_symlink() and ".min.js" not in str(file_path):
-                if "changelog" not in str(file_path).lower():
+                if "changelog" not in str(file_path).lower() and "package-lock.json" not in str(file_path).lower() :
                     for search_string, value in search_strings.items():
                         found_string = search_in_file(file_path, search_string)
                         if found_string:

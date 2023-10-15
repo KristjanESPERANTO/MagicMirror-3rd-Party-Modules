@@ -1,6 +1,6 @@
 # Result of the module analysis
 
-Timestamp: 2023-10-15 23:29:45
+Timestamp: 2023-10-15 23:40:00
 
 Number of analyzed modules: 1015
 
@@ -42,8 +42,7 @@ Number of analyzed modules: 1015
 ## [MMM-1-Second-A-Day by GaryLChew](https://github.com/GaryLChew/MMM-1-Second-A-Day)
 
 1. found 'Magic Mirror' in file `MMM-1-Second-A-Day.js`: Replace it with `MagicMirror²`
-2. found 'node-fetch' in file `package-lock.json`: Replace it with built-in fetch.
-3. found 'Magic Mirror' in file `package.json`: Replace it with `MagicMirror²`
+2. found 'Magic Mirror' in file `package.json`: Replace it with `MagicMirror²`
 
 ## [MMM-3Day-Forecast by nigel-daniels](https://github.com/nigel-daniels/MMM-3Day-Forecast)
 
@@ -135,7 +134,6 @@ Number of analyzed modules: 1015
 
 1. found 'Magic Mirror' in file `MMM-AirbarHelper.js`: Replace it with `MagicMirror²`
 2. found 'Magic Mirror' in file `node_helper.js`: Replace it with `MagicMirror²`
-3. found 'node-fetch' in file `package-lock.json`: Replace it with built-in fetch.
 
 ## [MMM-Airly by mstarzec386](https://github.com/mstarzec386/MMM-Airly)
 
@@ -323,8 +321,7 @@ Number of analyzed modules: 1015
 
 1. found 'Magic Mirror' in file `README.md`: Replace it with `MagicMirror²`
 2. found 'node-fetch' in file `BIXIFetcher.js`: Replace it with built-in fetch.
-3. found 'node-fetch' in file `package-lock.json`: Replace it with built-in fetch.
-4. found 'node-fetch' in file `package.json`: Replace it with built-in fetch.
+3. found 'node-fetch' in file `package.json`: Replace it with built-in fetch.
 
 ## [MMM-Block by BKeyport](https://github.com/BKeyport/MMM-Block)
 
@@ -419,8 +416,7 @@ Number of analyzed modules: 1015
 
 1. found 'Magic Mirror' in file `node_helper.js`: Replace it with `MagicMirror²`
 2. found 'node-fetch' in file `node_helper.js`: Replace it with built-in fetch.
-3. found 'node-fetch' in file `package-lock.json`: Replace it with built-in fetch.
-4. found 'node-fetch' in file `package.json`: Replace it with built-in fetch.
+3. found 'node-fetch' in file `package.json`: Replace it with built-in fetch.
 
 ## [MMM-COVID19 by bibaldo](https://github.com/bibaldo/MMM-COVID19)
 
@@ -762,8 +758,7 @@ Number of analyzed modules: 1015
 1. found 'node-fetch' in file `README.md`: Replace it with built-in fetch.
 2. found 'Magic Mirror' in file `node_helper.js`: Replace it with `MagicMirror²`
 3. found 'node-fetch' in file `node_helper.js`: Replace it with built-in fetch.
-4. found 'node-fetch' in file `package-lock.json`: Replace it with built-in fetch.
-5. found 'node-fetch' in file `package.json`: Replace it with built-in fetch.
+4. found 'node-fetch' in file `package.json`: Replace it with built-in fetch.
 
 ## [MMM-DarkSky24Hours by thobach](https://github.com/thobach/MMM-DarkSky24Hours)
 
@@ -774,8 +769,7 @@ Number of analyzed modules: 1015
 1. found 'Magic Mirror' in file `MMM-DarkSkyForecast.js`: Replace it with `MagicMirror²`
 2. found 'Magic Mirror' in file `README.md`: Replace it with `MagicMirror²`
 3. found 'require("request")' in file `node_helper.js`: Replace it with built-in fetch.
-4. found 'node-fetch' in file `package-lock.json`: Replace it with built-in fetch.
-5. found 'Magic Mirror' in file `package.json`: Replace it with `MagicMirror²`
+4. found 'Magic Mirror' in file `package.json`: Replace it with `MagicMirror²`
 
 ## [MMM-DarkSkyRadar by vincep5](https://github.com/vincep5/MMM-DarkSkyRadar)
 
@@ -809,14 +803,12 @@ Number of analyzed modules: 1015
 
 ## [MMM-DiscordWatch by Smiche](https://github.com/Smiche/MMM-DiscordWatch)
 
-1. found 'node-fetch' in file `package-lock.json`: Replace it with built-in fetch.
-2. found 'MagicMirror2' in file `package.json`: Replace it with `MagicMirror²`
+1. found 'MagicMirror2' in file `package.json`: Replace it with `MagicMirror²`
 
 ## [MMM-Discourse-notifications by jordy-u](https://github.com/jordy-u/MMM-Discourse-notifications)
 
 1. found 'node-fetch' in file `DiscourseRequestHandler.js`: Replace it with built-in fetch.
-2. found 'node-fetch' in file `package-lock.json`: Replace it with built-in fetch.
-3. found 'node-fetch' in file `package.json`: Replace it with built-in fetch.
+2. found 'node-fetch' in file `package.json`: Replace it with built-in fetch.
 
 ## [MMM-DisneyWaitTimes by gberg927](https://github.com/gberg927/MMM-DisneyWaitTimes)
 
@@ -1277,8 +1269,7 @@ Number of analyzed modules: 1015
 2. found 'Magic Mirror' in file `MMM-Fronius2.js`: Replace it with `MagicMirror²`
 3. found 'Magic Mirror' in file `README.md`: Replace it with `MagicMirror²`
 4. found 'Magic Mirror' in file `node_helper.js`: Replace it with `MagicMirror²`
-5. found 'node-fetch' in file `package-lock.json`: Replace it with built-in fetch.
-6. found 'node-fetch' in file `package.json`: Replace it with built-in fetch.
+5. found 'node-fetch' in file `package.json`: Replace it with built-in fetch.
 
 ## [MMM-Fuel by fewieden](https://github.com/fewieden/MMM-Fuel)
 
@@ -1289,9 +1280,8 @@ Number of analyzed modules: 1015
 5. found 'node-fetch' in file `nsw.js`: Replace it with built-in fetch.
 6. found 'node-fetch' in file `spritpreisrechner.js`: Replace it with built-in fetch.
 7. found 'node-fetch' in file `tankerkoenig.js`: Replace it with built-in fetch.
-8. found 'node-fetch' in file `package-lock.json`: Replace it with built-in fetch.
-9. found 'MagicMirror2' in file `package.json`: Replace it with `MagicMirror²`
-10. found 'node-fetch' in file `package.json`: Replace it with built-in fetch.
+8. found 'MagicMirror2' in file `package.json`: Replace it with `MagicMirror²`
+9. found 'node-fetch' in file `package.json`: Replace it with built-in fetch.
 
 ## [MMM-FunnyHolidays by mattileh](https://github.com/mattileh/MMM-FunnyHolidays)
 
@@ -1363,10 +1353,6 @@ Number of analyzed modules: 1015
 
 1. found 'require("request")' in file `node_helper.js`: Replace it with built-in fetch.
 
-## [MMM-GoogleAssistant by bugsounet](https://github.com/bugsounet/MMM-GoogleAssistant)
-
-1. found 'node-fetch' in file `package-lock.json`: Replace it with built-in fetch.
-
 ## [MMM-GoogleAssistant by gauravsacc](https://github.com/gauravsacc/MMM-GoogleAssistant)
 
 1. found 'Magic Mirror' in file `MMM-GoogleAssistant.js`: Replace it with `MagicMirror²`
@@ -1375,13 +1361,11 @@ Number of analyzed modules: 1015
 
 ## [MMM-GoogleBirthdaysProvider by PalatinCoder](https://github.com/PalatinCoder/MMM-GoogleBirthdaysProvider)
 
-1. found 'node-fetch' in file `package-lock.json`: Replace it with built-in fetch.
-2. found 'Magic Mirror' in file `node_helper.js`: Replace it with `MagicMirror²`
+1. found 'Magic Mirror' in file `node_helper.js`: Replace it with `MagicMirror²`
 
 ## [MMM-GoogleCalendar by randomBrainstormer](https://github.com/randomBrainstormer/MMM-GoogleCalendar)
 
 1. found 'Magic Mirror' in file `MMM-GoogleCalendar.js`: Replace it with `MagicMirror²`
-2. found 'node-fetch' in file `package-lock.json`: Replace it with built-in fetch.
 
 ## [MMM-GoogleDocs-Notes by No3x](https://github.com/No3x/MMM-GoogleDocs-Notes)
 
@@ -1390,8 +1374,7 @@ Number of analyzed modules: 1015
 3. found 'Magic Mirror' in file `README.md`: Replace it with `MagicMirror²`
 4. found 'Magic Mirror' in file `authorize.mjs`: Replace it with `MagicMirror²`
 5. found 'Magic Mirror' in file `node_helper.js`: Replace it with `MagicMirror²`
-6. found 'node-fetch' in file `package-lock.json`: Replace it with built-in fetch.
-7. found 'Magic Mirror' in file `package.json`: Replace it with `MagicMirror²`
+6. found 'Magic Mirror' in file `package.json`: Replace it with `MagicMirror²`
 
 ## [MMM-GoogleDriveSlideShow by clegallic](https://github.com/clegallic/MMM-GoogleDriveSlideShow)
 
@@ -1413,9 +1396,7 @@ Number of analyzed modules: 1015
 
 1. found 'electron-rebuild' in file `README.md`: Replace it with `@electron/rebuild`
 2. found 'require("https")' in file `node_helper.js`: Replace it with built-in fetch.
-3. found 'electron-rebuild' in file `package-lock.json`: Replace it with `@electron/rebuild`
-4. found 'node-fetch' in file `package-lock.json`: Replace it with built-in fetch.
-5. found 'electron-rebuild' in file `package.json`: Replace it with `@electron/rebuild`
+3. found 'electron-rebuild' in file `package.json`: Replace it with `@electron/rebuild`
 
 ## [MMM-GoogleSheets by ryan-d-williams](https://github.com/ryan-d-williams/MMM-GoogleSheets)
 
@@ -1759,9 +1740,8 @@ Number of analyzed modules: 1015
 2. found 'Magic Mirror' in file `README.md`: Replace it with `MagicMirror²`
 3. found 'Magic Mirror' in file `node_helper.js`: Replace it with `MagicMirror²`
 4. found 'node-fetch' in file `node_helper.js`: Replace it with built-in fetch.
-5. found 'node-fetch' in file `package-lock.json`: Replace it with built-in fetch.
-6. found 'Magic Mirror' in file `package.json`: Replace it with `MagicMirror²`
-7. found 'node-fetch' in file `package.json`: Replace it with built-in fetch.
+5. found 'Magic Mirror' in file `package.json`: Replace it with `MagicMirror²`
+6. found 'node-fetch' in file `package.json`: Replace it with built-in fetch.
 
 ## [MMM-JustForTodayMeditation by LeftBrainCreated](https://github.com/LeftBrainCreated/MMM-JustForTodayMeditation)
 
@@ -1824,13 +1804,12 @@ Number of analyzed modules: 1015
 
 1. found 'uses: actions/setup-node@v3' in file `ci.yml`: Replace it with v4.
 2. found 'MagicMirror2' in file `README.md`: Replace it with `MagicMirror²`
-3. found 'electron-rebuild' in file `package-lock.json`: Replace it with `@electron/rebuild`
-4. found 'MagicMirror2' in file `package.json`: Replace it with `MagicMirror²`
-5. found 'electron-rebuild' in file `package.json`: Replace it with `@electron/rebuild`
-6. found 'Magic Mirror' in file `module.ts`: Replace it with `MagicMirror²`
-7. found 'Magic Mirror' in file `helper.ts`: Replace it with `MagicMirror²`
-8. found 'Magic Mirror' in file `helper_impl.ts`: Replace it with `MagicMirror²`
-9. found 'MagicMirror2' in file `init-mmm.ts`: Replace it with `MagicMirror²`
+3. found 'MagicMirror2' in file `package.json`: Replace it with `MagicMirror²`
+4. found 'electron-rebuild' in file `package.json`: Replace it with `@electron/rebuild`
+5. found 'Magic Mirror' in file `module.ts`: Replace it with `MagicMirror²`
+6. found 'Magic Mirror' in file `helper.ts`: Replace it with `MagicMirror²`
+7. found 'Magic Mirror' in file `helper_impl.ts`: Replace it with `MagicMirror²`
+8. found 'MagicMirror2' in file `init-mmm.ts`: Replace it with `MagicMirror²`
 
 ## [MMM-LOLESPORTS-SCHEDULES by xadamxk](https://github.com/xadamxk/MMM-LOLESPORTS-SCHEDULES)
 
@@ -1872,9 +1851,8 @@ Number of analyzed modules: 1015
 1. found 'Magic Mirror' in file `README.md`: Replace it with `MagicMirror²`
 2. found 'node-fetch' in file `fetch_logos.js`: Replace it with built-in fetch.
 3. found 'node-fetch' in file `node_helper.js`: Replace it with built-in fetch.
-4. found 'node-fetch' in file `package-lock.json`: Replace it with built-in fetch.
-5. found 'Magic Mirror' in file `package.json`: Replace it with `MagicMirror²`
-6. found 'node-fetch' in file `package.json`: Replace it with built-in fetch.
+4. found 'Magic Mirror' in file `package.json`: Replace it with `MagicMirror²`
+5. found 'node-fetch' in file `package.json`: Replace it with built-in fetch.
 
 ## [MMM-LocalEvents by dwoolridge](https://github.com/dwoolridge/MMM-LocalEvents)
 
@@ -2056,8 +2034,7 @@ Number of analyzed modules: 1015
 ## [MMM-MensaMax by fuerst](https://github.com/fuerst/MMM-MensaMax)
 
 1. found 'node-fetch' in file `node_helper.js`: Replace it with built-in fetch.
-2. found 'node-fetch' in file `package-lock.json`: Replace it with built-in fetch.
-3. found 'node-fetch' in file `package.json`: Replace it with built-in fetch.
+2. found 'node-fetch' in file `package.json`: Replace it with built-in fetch.
 
 ## [MMM-Mensamuc by wiesty](https://github.com/wiesty/MMM-Mensamuc)
 
@@ -2091,9 +2068,7 @@ Number of analyzed modules: 1015
 
 1. found 'Magic Mirror' in file `MMM-MinecraftStatus.js`: Replace it with `MagicMirror²`
 2. found 'Magic Mirror' in file `node_helper.js`: Replace it with `MagicMirror²`
-3. found 'electron-rebuild' in file `package-lock.json`: Replace it with `@electron/rebuild`
-4. found 'node-fetch' in file `package-lock.json`: Replace it with built-in fetch.
-5. found 'electron-rebuild' in file `package.json`: Replace it with `@electron/rebuild`
+3. found 'electron-rebuild' in file `package.json`: Replace it with `@electron/rebuild`
 
 ## [MMM-MirrorMirrorOnTheWall by joanaz](https://github.com/joanaz/MMM-MirrorMirrorOnTheWall)
 
@@ -2192,9 +2167,8 @@ Number of analyzed modules: 1015
 1. found 'Magic Mirror' in file `MMM-MyMinecraft.js`: Replace it with `MagicMirror²`
 2. found 'Magic Mirror' in file `README.md`: Replace it with `MagicMirror²`
 3. found 'Magic Mirror' in file `node_helper.js`: Replace it with `MagicMirror²`
-4. found 'electron-rebuild' in file `package-lock.json`: Replace it with `@electron/rebuild`
-5. found 'MagicMirror2' in file `package.json`: Replace it with `MagicMirror²`
-6. found 'electron-rebuild' in file `package.json`: Replace it with `@electron/rebuild`
+4. found 'MagicMirror2' in file `package.json`: Replace it with `MagicMirror²`
+5. found 'electron-rebuild' in file `package.json`: Replace it with `@electron/rebuild`
 
 ## [MMM-MyPrayerTimes by htilburgs](https://github.com/htilburgs/MMM-MyPrayerTimes)
 
@@ -2214,9 +2188,8 @@ Number of analyzed modules: 1015
 2. found 'Magic Mirror' in file `README.md`: Replace it with `MagicMirror²`
 3. found 'Magic Mirror' in file `node_helper.js`: Replace it with `MagicMirror²`
 4. found 'require('request')' in file `node_helper.js`: Replace it with built-in fetch.
-5. found 'electron-rebuild' in file `package-lock.json`: Replace it with `@electron/rebuild`
-6. found 'MagicMirror2' in file `package.json`: Replace it with `MagicMirror²`
-7. found 'electron-rebuild' in file `package.json`: Replace it with `@electron/rebuild`
+5. found 'MagicMirror2' in file `package.json`: Replace it with `MagicMirror²`
+6. found 'electron-rebuild' in file `package.json`: Replace it with `@electron/rebuild`
 
 ## [MMM-MyStudyLife by ethanpartida](https://github.com/ethanpartida/MMM-MyStudyLife)
 
@@ -2459,7 +2432,6 @@ Number of analyzed modules: 1015
 179. Found directory `node_modules`. This shouldn't be uploaded. Add `node_modules/`to `.gitignore`.
 180. Found directory `node_modules`. This shouldn't be uploaded. Add `node_modules/`to `.gitignore`.
 181. Found directory `node_modules`. This shouldn't be uploaded. Add `node_modules/`to `.gitignore`.
-182. found 'node-fetch' in file `package-lock.json`: Replace it with built-in fetch.
 
 ## [MMM-MyWeather by martinkooij](https://github.com/martinkooij/MMM-MyWeather)
 
@@ -2478,9 +2450,7 @@ Number of analyzed modules: 1015
 
 1. found 'Magic Mirror' in file `MMM-MysqlQuery.js`: Replace it with `MagicMirror²`
 2. found 'Magic Mirror' in file `node_helper.js`: Replace it with `MagicMirror²`
-3. found 'electron-rebuild' in file `package-lock.json`: Replace it with `@electron/rebuild`
-4. found 'node-fetch' in file `package-lock.json`: Replace it with built-in fetch.
-5. found 'electron-rebuild' in file `package.json`: Replace it with `@electron/rebuild`
+3. found 'electron-rebuild' in file `package.json`: Replace it with `@electron/rebuild`
 
 ## [MMM-NASA by mykle1](https://github.com/mykle1/MMM-NASA)
 
@@ -2512,9 +2482,8 @@ Number of analyzed modules: 1015
 2. found 'node-fetch' in file `README.md`: Replace it with built-in fetch.
 3. found 'node-fetch' in file `espn.js`: Replace it with built-in fetch.
 4. found 'Magic Mirror' in file `node_helper.js`: Replace it with `MagicMirror²`
-5. found 'node-fetch' in file `package-lock.json`: Replace it with built-in fetch.
-6. found 'MagicMirror2' in file `package.json`: Replace it with `MagicMirror²`
-7. found 'node-fetch' in file `package.json`: Replace it with built-in fetch.
+5. found 'MagicMirror2' in file `package.json`: Replace it with `MagicMirror²`
+6. found 'node-fetch' in file `package.json`: Replace it with built-in fetch.
 
 ## [MMM-NFTcollections by TemianMihai](https://github.com/TemianMihai/MMM-NFTcollections.git)
 
@@ -2526,17 +2495,15 @@ Number of analyzed modules: 1015
 1. found 'node-version: 16' in file `build.yml`: Deprecated: Update to current version.
 2. found 'node-fetch' in file `README.md`: Replace it with built-in fetch.
 3. found 'node-fetch' in file `node_helper.js`: Replace it with built-in fetch.
-4. found 'node-fetch' in file `package-lock.json`: Replace it with built-in fetch.
-5. found 'node-fetch' in file `package.json`: Replace it with built-in fetch.
+4. found 'node-fetch' in file `package.json`: Replace it with built-in fetch.
 
 ## [MMM-NINA by jalibu](https://github.com/jalibu/MMM-NINA)
 
 1. found 'Magic Mirror' in file `README.md`: Replace it with `MagicMirror²`
 2. found 'node-fetch' in file `node_helper.js`: Replace it with built-in fetch.
-3. found 'node-fetch' in file `package-lock.json`: Replace it with built-in fetch.
-4. found 'node-fetch' in file `package.json`: Replace it with built-in fetch.
-5. found 'node-fetch' in file `rollup.config.js`: Replace it with built-in fetch.
-6. found 'node-fetch' in file `Backend.ts`: Replace it with built-in fetch.
+3. found 'node-fetch' in file `package.json`: Replace it with built-in fetch.
+4. found 'node-fetch' in file `rollup.config.js`: Replace it with built-in fetch.
+5. found 'node-fetch' in file `Backend.ts`: Replace it with built-in fetch.
 
 ## [MMM-NL-rain-intensity by thekampany](https://github.com/thekampany/MMM-NL-rain-intensity)
 
@@ -2590,9 +2557,8 @@ Number of analyzed modules: 1015
 
 1. found 'Magic Mirror' in file `README.md`: Replace it with `MagicMirror²`
 2. found 'node-fetch' in file `node_helper.js`: Replace it with built-in fetch.
-3. found 'node-fetch' in file `package-lock.json`: Replace it with built-in fetch.
-4. found 'node-fetch' in file `package.json`: Replace it with built-in fetch.
-5. found 'node-fetch' in file `yarn.lock`: Replace it with built-in fetch.
+3. found 'node-fetch' in file `package.json`: Replace it with built-in fetch.
+4. found 'node-fetch' in file `yarn.lock`: Replace it with built-in fetch.
 
 ## [MMM-Nantes-TAN by normyx](https://github.com/normyx/MMM-Nantes-TAN)
 
@@ -2649,7 +2615,6 @@ Number of analyzed modules: 1015
 11. found '<sub>2</sub>' in file `ru.json`: Replace it with `²`
 12. found 'Magic Mirror' in file `netatmo.js`: Replace it with `MagicMirror²`
 13. found 'Magic Mirror' in file `node_helper.js`: Replace it with `MagicMirror²`
-14. found 'node-fetch' in file `package-lock.json`: Replace it with built-in fetch.
 
 ## [MMM-Netatmo by RaymondMolenaar](https://github.com/RaymondMolenaar/MMM-Netatmo)
 
@@ -2708,7 +2673,6 @@ Number of analyzed modules: 1015
 
 1. found 'Magic Mirror' in file `NextTrains.js`: Replace it with `MagicMirror²`
 2. found 'require('https')' in file `node_helper.js`: Replace it with built-in fetch.
-3. found 'node-fetch' in file `package-lock.json`: Replace it with built-in fetch.
 
 ## [MMM-NiceHash by mlbonniec](https://github.com/mlbonniec/MMM-NiceHash)
 
@@ -2740,11 +2704,10 @@ Number of analyzed modules: 1015
 
 1. found 'Magic Mirror' in file `MMM-Notion.js`: Replace it with `MagicMirror²`
 2. found 'Magic Mirror' in file `node_helper.js`: Replace it with `MagicMirror²`
-3. found 'node-fetch' in file `package-lock.json`: Replace it with built-in fetch.
-4. found 'Magic Mirror' in file `DateFormat.js`: Replace it with `MagicMirror²`
-5. found 'Magic Mirror' in file `PropertiesView.js`: Replace it with `MagicMirror²`
-6. found 'Magic Mirror' in file `ListView.js`: Replace it with `MagicMirror²`
-7. found 'Magic Mirror' in file `ListViewElement.js`: Replace it with `MagicMirror²`
+3. found 'Magic Mirror' in file `DateFormat.js`: Replace it with `MagicMirror²`
+4. found 'Magic Mirror' in file `PropertiesView.js`: Replace it with `MagicMirror²`
+5. found 'Magic Mirror' in file `ListView.js`: Replace it with `MagicMirror²`
+6. found 'Magic Mirror' in file `ListViewElement.js`: Replace it with `MagicMirror²`
 
 ## [MMM-NowPlayingOnAIMP by jesmak](https://github.com/jesmak/MMM-NowPlayingOnAIMP)
 
@@ -2786,11 +2749,10 @@ Number of analyzed modules: 1015
 ## [MMM-OlympicGames by fewieden](https://github.com/fewieden/MMM-OlympicGames)
 
 1. found 'node-fetch' in file `README.md`: Replace it with built-in fetch.
-2. found 'node-fetch' in file `package-lock.json`: Replace it with built-in fetch.
-3. found 'node-fetch' in file `package.json`: Replace it with built-in fetch.
-4. found 'node-fetch' in file `bloomberg.js`: Replace it with built-in fetch.
-5. found 'node-fetch' in file `nbc.js`: Replace it with built-in fetch.
-6. found 'node-fetch' in file `paralympic.js`: Replace it with built-in fetch.
+2. found 'node-fetch' in file `package.json`: Replace it with built-in fetch.
+3. found 'node-fetch' in file `bloomberg.js`: Replace it with built-in fetch.
+4. found 'node-fetch' in file `nbc.js`: Replace it with built-in fetch.
+5. found 'node-fetch' in file `paralympic.js`: Replace it with built-in fetch.
 
 ## [MMM-OnScreenMenu by shbatm](https://github.com/shbatm/MMM-OnScreenMenu)
 
@@ -2954,10 +2916,6 @@ Number of analyzed modules: 1015
 
 1. found 'Magic Mirror' in file `README.md`: Replace it with `MagicMirror²`
 
-## [MMM-PaprikaMenu by kaelspencer](https://github.com/kaelspencer/MMM-PaprikaMenu)
-
-1. found 'node-fetch' in file `package-lock.json`: Replace it with built-in fetch.
-
 ## [MMM-Parcel by martinkooij](https://github.com/martinkooij/MMM-Parcel)
 
 1. found 'Magic Mirror' in file `MMM-Parcel.js`: Replace it with `MagicMirror²`
@@ -3047,16 +3005,14 @@ Number of analyzed modules: 1015
 
 1. found 'Magic Mirror' in file `MMM-Pins.js`: Replace it with `MagicMirror²`
 2. found 'Magic Mirror' in file `node_helper.js`: Replace it with `MagicMirror²`
-3. found 'electron-rebuild' in file `package-lock.json`: Replace it with `@electron/rebuild`
-4. found 'electron-rebuild' in file `package.json`: Replace it with `@electron/rebuild`
+3. found 'electron-rebuild' in file `package.json`: Replace it with `@electron/rebuild`
 
 ## [MMM-PirateSkyForecast by dankerthrone](https://github.com/dankerthrone/MMM-PirateSkyForecast)
 
 1. found 'Magic Mirror' in file `MMM-DarkSkyForecast.js`: Replace it with `MagicMirror²`
 2. found 'Magic Mirror' in file `README.md`: Replace it with `MagicMirror²`
 3. found 'require("request")' in file `node_helper.js`: Replace it with built-in fetch.
-4. found 'node-fetch' in file `package-lock.json`: Replace it with built-in fetch.
-5. found 'Magic Mirror' in file `package.json`: Replace it with `MagicMirror²`
+4. found 'Magic Mirror' in file `package.json`: Replace it with `MagicMirror²`
 
 ## [MMM-PlaceInfo by njwilliams](https://github.com/njwilliams/MMM-PlaceInfo)
 
@@ -3139,9 +3095,8 @@ Number of analyzed modules: 1015
 2. found 'Magic Mirror' in file `README.md`: Replace it with `MagicMirror²`
 3. found 'Magic Mirror' in file `node_helper.js`: Replace it with `MagicMirror²`
 4. found 'node-fetch' in file `node_helper.js`: Replace it with built-in fetch.
-5. found 'node-fetch' in file `package-lock.json`: Replace it with built-in fetch.
-6. found 'node-fetch' in file `package.json`: Replace it with built-in fetch.
-7. found 'require("https")' in file `powerwall.js`: Replace it with built-in fetch.
+5. found 'node-fetch' in file `package.json`: Replace it with built-in fetch.
+6. found 'require("https")' in file `powerwall.js`: Replace it with built-in fetch.
 
 ## [MMM-PrayerTime by slametps](https://github.com/slametps/MMM-PrayerTime)
 
@@ -3185,12 +3140,10 @@ Number of analyzed modules: 1015
 ## [MMM-PublicTransportBerlin by deg0nz](https://github.com/deg0nz/MMM-PublicTransportBerlin)
 
 1. found 'uses: actions/setup-node@v3' in file `automated-tests.yaml`: Replace it with v4.
-2. found 'node-fetch' in file `package-lock.json`: Replace it with built-in fetch.
 
 ## [MMM-PublicTransportHafas by KristjanESPERANTO](https://github.com/KristjanESPERANTO/MMM-PublicTransportHafas)
 
 1. found 'uses: actions/setup-node@v3' in file `automated-tests.yaml`: Replace it with v4.
-2. found 'node-fetch' in file `package-lock.json`: Replace it with built-in fetch.
 
 ## [MMM-PublicTransportVVO by ChristianGeie](https://github.com/ChristianGeie/MMM-PublicTransportVVO)
 
@@ -3259,10 +3212,9 @@ Number of analyzed modules: 1015
 
 1. found 'Magic Mirror' in file `MMM-RNV.css`: Replace it with `MagicMirror²`
 2. found 'node-fetch' in file `node_helper.js`: Replace it with built-in fetch.
-3. found 'node-fetch' in file `package-lock.json`: Replace it with built-in fetch.
-4. found 'node-fetch' in file `package.json`: Replace it with built-in fetch.
-5. found 'node-fetch' in file `rollup.config.js`: Replace it with built-in fetch.
-6. found 'node-fetch' in file `Backend.ts`: Replace it with built-in fetch.
+3. found 'node-fetch' in file `package.json`: Replace it with built-in fetch.
+4. found 'node-fetch' in file `rollup.config.js`: Replace it with built-in fetch.
+5. found 'node-fetch' in file `Backend.ts`: Replace it with built-in fetch.
 
 ## [MMM-RNV by jupadin](https://github.com/jupadin/MMM-RNV)
 
@@ -3271,8 +3223,7 @@ Number of analyzed modules: 1015
 3. found 'Magic Mirror' in file `node_helper.js`: Replace it with `MagicMirror²`
 4. found 'require('request')' in file `node_helper.js`: Replace it with built-in fetch.
 5. found 'node-fetch' in file `node_helper.js`: Replace it with built-in fetch.
-6. found 'node-fetch' in file `package-lock.json`: Replace it with built-in fetch.
-7. found 'node-fetch' in file `package.json`: Replace it with built-in fetch.
+6. found 'node-fetch' in file `package.json`: Replace it with built-in fetch.
 
 ## [MMM-RNV by yawnsde](https://github.com/yawnsde/MMM-RNV)
 
@@ -3359,7 +3310,6 @@ Number of analyzed modules: 1015
 ## [MMM-RecyclingCalendar by FatTony404](https://gitlab.com/FatTony404/MMM-RecyclingCalendar)
 
 1. found 'Magic Mirror' in file `README.md`: Replace it with `MagicMirror²`
-2. found 'node-fetch' in file `package-lock.json`: Replace it with built-in fetch.
 
 ## [MMM-Reddit by kjb085](https://github.com/kjb085/MMM-Reddit)
 
@@ -3432,7 +3382,6 @@ Number of analyzed modules: 1015
 
 1. found 'uses: actions/setup-node@v3' in file `nodejs.yml`: Replace it with v4.
 2. found 'Magic Mirror' in file `MMM-RingAlarm.js`: Replace it with `MagicMirror²`
-3. found 'node-fetch' in file `package-lock.json`: Replace it with built-in fetch.
 
 ## [MMM-RocketLeagueZ by Zeprakadebra](https://github.com/Zeprakadebra/MMM-RocketLeagueZ)
 
@@ -3471,8 +3420,7 @@ Number of analyzed modules: 1015
 ## [MMM-SFMuniBusTimes by vikramraja1995](https://github.com/vikramraja1995/MMM-SFMuniBusTimes)
 
 1. found 'node-fetch' in file `node_helper.js`: Replace it with built-in fetch.
-2. found 'node-fetch' in file `package-lock.json`: Replace it with built-in fetch.
-3. found 'node-fetch' in file `package.json`: Replace it with built-in fetch.
+2. found 'node-fetch' in file `package.json`: Replace it with built-in fetch.
 
 ## [MMM-SG-Transport-V2 by mosesyong](https://github.com/mosesyong/MMM-SG-Transport-V2)
 
@@ -3705,8 +3653,7 @@ Number of analyzed modules: 1015
 2. found 'MagicMirror2' in file `README.md`: Replace it with `MagicMirror²`
 3. found 'Magic Mirror' in file `node_helper.js`: Replace it with `MagicMirror²`
 4. found 'node-fetch' in file `node_helper.js`: Replace it with built-in fetch.
-5. found 'node-fetch' in file `package-lock.json`: Replace it with built-in fetch.
-6. found 'node-fetch' in file `package.json`: Replace it with built-in fetch.
+5. found 'node-fetch' in file `package.json`: Replace it with built-in fetch.
 
 ## [MMM-Solar by tkrywit](https://github.com/tkrywit/MMM-Solar)
 
@@ -3793,18 +3740,16 @@ Number of analyzed modules: 1015
 
 1. found 'node-version: [16' in file `node.js.yml`: Deprecated: Update to current version.
 2. found 'Magic Mirror' in file `CONTRIBUTING.md`: Replace it with `MagicMirror²`
-3. found 'node-fetch' in file `package-lock.json`: Replace it with built-in fetch.
-4. found 'node-fetch' in file `package.json`: Replace it with built-in fetch.
-5. found 'node-fetch' in file `StatusPageService.test.ts`: Replace it with built-in fetch.
-6. found 'node-fetch' in file `StatusPageService.ts`: Replace it with built-in fetch.
+3. found 'node-fetch' in file `package.json`: Replace it with built-in fetch.
+4. found 'node-fetch' in file `StatusPageService.test.ts`: Replace it with built-in fetch.
+5. found 'node-fetch' in file `StatusPageService.ts`: Replace it with built-in fetch.
 
 ## [MMM-SteamPlaytime by buxxi](https://github.com/buxxi/MMM-SteamPlaytime)
 
 1. found 'Magic Mirror' in file `README.md`: Replace it with `MagicMirror²`
 2. found 'node-fetch' in file `node_helper.js`: Replace it with built-in fetch.
-3. found 'node-fetch' in file `package-lock.json`: Replace it with built-in fetch.
-4. found 'Magic Mirror' in file `package.json`: Replace it with `MagicMirror²`
-5. found 'node-fetch' in file `package.json`: Replace it with built-in fetch.
+3. found 'Magic Mirror' in file `package.json`: Replace it with `MagicMirror²`
+4. found 'node-fetch' in file `package.json`: Replace it with built-in fetch.
 
 ## [MMM-Stock by hakanmhmd](https://github.com/hakanmhmd/MMM-Stock)
 
@@ -3819,9 +3764,8 @@ Number of analyzed modules: 1015
 ## [MMM-Strava by ianperrin](https://github.com/ianperrin/MMM-Strava)
 
 1. found 'Magic Mirror' in file `README.md`: Replace it with `MagicMirror²`
-2. found 'stylelint-config-prettier' in file `package-lock.json`: Deprecated since `stylelint` v15. Update `stylelint` and remove `stylelint-config-prettier`.
-3. found 'stylelint-config-prettier' in file `package.json`: Deprecated since `stylelint` v15. Update `stylelint` and remove `stylelint-config-prettier`.
-4. found 'XMLHttpRequest' in file `index.html`: Replace it with built-in fetch.
+2. found 'stylelint-config-prettier' in file `package.json`: Deprecated since `stylelint` v15. Update `stylelint` and remove `stylelint-config-prettier`.
+3. found 'XMLHttpRequest' in file `index.html`: Replace it with built-in fetch.
 
 ## [MMM-SugarValue by balharrie](https://github.com/balharrie/MMM-SugarValue)
 
@@ -3980,9 +3924,8 @@ Number of analyzed modules: 1015
 ## [MMM-Tibber by ottopaulsen](https://github.com/ottopaulsen/MMM-Tibber)
 
 1. found 'node-fetch' in file `consumptions.js`: Replace it with built-in fetch.
-2. found 'node-fetch' in file `package-lock.json`: Replace it with built-in fetch.
-3. found 'node-fetch' in file `package.json`: Replace it with built-in fetch.
-4. found 'node-fetch' in file `tibber.js`: Replace it with built-in fetch.
+2. found 'node-fetch' in file `package.json`: Replace it with built-in fetch.
+3. found 'node-fetch' in file `tibber.js`: Replace it with built-in fetch.
 
 ## [MMM-TimeTreeEvent by sabo10o29](https://github.com/sabo10o29/MMM-TimeTreeEvent)
 
@@ -4152,7 +4095,6 @@ Number of analyzed modules: 1015
 ## [MMM-VUB-Resto by OscarVsp](https://github.com/OscarVsp/MMM-VUB-Resto)
 
 1. found 'Magic Mirror' in file `MMM-VUB-Resto.js`: Replace it with `MagicMirror²`
-2. found 'node-fetch' in file `package-lock.json`: Replace it with built-in fetch.
 
 ## [MMM-ValuesByNotification by Tom-Hirschberger](https://github.com/Tom-Hirschberger/MMM-ValuesByNotification)
 
@@ -4375,19 +4317,13 @@ Number of analyzed modules: 1015
 
 1. found 'Magic Mirror' in file `README.md`: Replace it with `MagicMirror²`
 
-## [MMM-YNAB by thesoftwarejedi](https://github.com/thesoftwarejedi/MMM-YNAB)
-
-1. found 'node-fetch' in file `package-lock.json`: Replace it with built-in fetch.
-
 ## [MMM-YT-SubCount by choffmann](https://github.com/choffmann/MMM-YT-SubCount)
 
 1. found 'Magic Mirror' in file `MMM-YT-SubCount.js`: Replace it with `MagicMirror²`
 2. found 'Magic Mirror' in file `node_helper.js`: Replace it with `MagicMirror²`
 3. found 'node-fetch' in file `node_helper.js`: Replace it with built-in fetch.
-4. found 'stylelint-config-prettier' in file `package-lock.json`: Deprecated since `stylelint` v15. Update `stylelint` and remove `stylelint-config-prettier`.
-5. found 'node-fetch' in file `package-lock.json`: Replace it with built-in fetch.
-6. found 'stylelint-config-prettier' in file `package.json`: Deprecated since `stylelint` v15. Update `stylelint` and remove `stylelint-config-prettier`.
-7. found 'node-fetch' in file `package.json`: Replace it with built-in fetch.
+4. found 'stylelint-config-prettier' in file `package.json`: Deprecated since `stylelint` v15. Update `stylelint` and remove `stylelint-config-prettier`.
+5. found 'node-fetch' in file `package.json`: Replace it with built-in fetch.
 
 ## [MMM-Yeelight by slametps](https://github.com/slametps/MMM-Yeelight)
 
@@ -4471,8 +4407,7 @@ Number of analyzed modules: 1015
 4. found 'electron-rebuild' in file `installation.md`: Replace it with `@electron/rebuild`
 5. found 'electron-rebuild' in file `troubleshoot.md`: Replace it with `@electron/rebuild`
 6. found 'require("request")' in file `node_helper.js`: Replace it with built-in fetch.
-7. found 'node-fetch' in file `package-lock.json`: Replace it with built-in fetch.
-8. found 'Magic Mirror' in file `package.json`: Replace it with `MagicMirror²`
+7. found 'Magic Mirror' in file `package.json`: Replace it with `MagicMirror²`
 
 ## [MMM-bergfex.at by FatTony404](https://gitlab.com/FatTony404/MMM-bergfex)
 
@@ -4499,8 +4434,7 @@ Number of analyzed modules: 1015
 3. found 'Magic Mirror' in file `MMM-bunq.js`: Replace it with `MagicMirror²`
 4. found 'Magic Mirror' in file `node_helper.js`: Replace it with `MagicMirror²`
 5. found 'node-fetch' in file `node_helper.js`: Replace it with built-in fetch.
-6. found 'node-fetch' in file `package-lock.json`: Replace it with built-in fetch.
-7. found 'node-fetch' in file `package.json`: Replace it with built-in fetch.
+6. found 'node-fetch' in file `package.json`: Replace it with built-in fetch.
 
 ## [MMM-bustimes by 73cirdan](https://github.com/73cirdan/MMM-bustimes)
 
@@ -4525,9 +4459,8 @@ Number of analyzed modules: 1015
 2. found 'Magic Mirror' in file `README.md`: Replace it with `MagicMirror²`
 3. found 'Magic Mirror' in file `node_helper.js`: Replace it with `MagicMirror²`
 4. found 'node-fetch' in file `node_helper.js`: Replace it with built-in fetch.
-5. found 'node-fetch' in file `package-lock.json`: Replace it with built-in fetch.
-6. found 'Magic Mirror' in file `package.json`: Replace it with `MagicMirror²`
-7. found 'node-fetch' in file `package.json`: Replace it with built-in fetch.
+5. found 'Magic Mirror' in file `package.json`: Replace it with `MagicMirror²`
+6. found 'node-fetch' in file `package.json`: Replace it with built-in fetch.
 
 ## [MMM-covid19uk-stats by blighter](https://github.com/blighter/MMM-covid19uk-stats)
 
@@ -4683,8 +4616,7 @@ Number of analyzed modules: 1015
 2. found 'Magic Mirror' in file `configuration.md`: Replace it with `MagicMirror²`
 3. found 'node-fetch' in file `configuration.md`: Replace it with built-in fetch.
 4. found 'node-fetch' in file `node_helper.js`: Replace it with built-in fetch.
-5. found 'node-fetch' in file `package-lock.json`: Replace it with built-in fetch.
-6. found 'node-fetch' in file `package.json`: Replace it with built-in fetch.
+5. found 'node-fetch' in file `package.json`: Replace it with built-in fetch.
 
 ## [MMM-json-feed by amcolash](https://github.com/amcolash/MMM-json-feed)
 
@@ -4780,10 +4712,8 @@ Number of analyzed modules: 1015
 
 1. found 'node-version: 16' in file `npm-publish-github-packages.yml`: Deprecated: Update to current version.
 2. found 'node-version: 16' in file `npm-publish.yml`: Deprecated: Update to current version.
-3. found 'stylelint-config-prettier' in file `package-lock.json`: Deprecated since `stylelint` v15. Update `stylelint` and remove `stylelint-config-prettier`.
-4. found 'node-fetch' in file `package-lock.json`: Replace it with built-in fetch.
-5. found 'Magic Mirror' in file `package.json`: Replace it with `MagicMirror²`
-6. found 'node-fetch' in file `yarn.lock`: Replace it with built-in fetch.
+3. found 'Magic Mirror' in file `package.json`: Replace it with `MagicMirror²`
+4. found 'node-fetch' in file `yarn.lock`: Replace it with built-in fetch.
 
 ## [MMM-oebb-station-board by mscharl](https://github.com/mscharl/MMM-oebb-station-board)
 
@@ -4869,9 +4799,8 @@ Number of analyzed modules: 1015
 
 1. found 'node-fetch' in file `README.md`: Replace it with built-in fetch.
 2. found 'node-fetch' in file `node_helper.js`: Replace it with built-in fetch.
-3. found 'node-fetch' in file `package-lock.json`: Replace it with built-in fetch.
-4. found 'MagicMirror2' in file `package.json`: Replace it with `MagicMirror²`
-5. found 'node-fetch' in file `package.json`: Replace it with built-in fetch.
+3. found 'MagicMirror2' in file `package.json`: Replace it with `MagicMirror²`
+4. found 'node-fetch' in file `package.json`: Replace it with built-in fetch.
 
 ## [MMM-social-counter by ngnijland](https://github.com/ngnijland/MMM-social-counter)
 
@@ -5122,9 +5051,8 @@ Number of analyzed modules: 1015
 ## [mmm-miami-transit by istvanfedak](https://github.com/istvanfedak/mmm-miami-transit)
 
 1. found 'electron-rebuild' in file `README.md`: Replace it with `@electron/rebuild`
-2. found 'electron-rebuild' in file `package-lock.json`: Replace it with `@electron/rebuild`
-3. found 'Magic Mirror' in file `package.json`: Replace it with `MagicMirror²`
-4. found 'electron-rebuild' in file `package.json`: Replace it with `@electron/rebuild`
+2. found 'Magic Mirror' in file `package.json`: Replace it with `MagicMirror²`
+3. found 'electron-rebuild' in file `package.json`: Replace it with `@electron/rebuild`
 
 ## [mmm-uah-currency by wzooff](https://github.com/wzooff/mmm-uah-currency)
 
