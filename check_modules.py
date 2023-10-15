@@ -69,7 +69,7 @@ def check_modules():
                     for search_string, value in search_strings.items():
                         found_string = search_in_file(file_path, search_string)
                         if found_string:
-                            issues.append(f"found '{search_string}' in file `{file_path.name}`: {value}")
+                            issues.append(f"Found '{search_string}' in file `{file_path.name}`: {value}")
                 if ".yml" in str(file_path).lower():
                     issues.append(f"`{file_path.name}`: Change file extention from `.yml` to `.yaml`: <https://yaml.org/faq.html>.")
 
