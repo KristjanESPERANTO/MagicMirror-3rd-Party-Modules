@@ -56,6 +56,9 @@ def check_modules():
         module_owner = module_directory.name.split("-----")[1]
         issues = []
 
+        if not module_name.startswith("MMM-"):
+            issues.append("Module name doesn't follow the recommended pattern. Consider renaming your module.")
+
         for file_path in sorted(module_directory.rglob("*")):
             if file_path.is_dir():
                 if file_path.name == "node_modules":

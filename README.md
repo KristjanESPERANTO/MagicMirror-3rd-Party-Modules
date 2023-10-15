@@ -44,7 +44,6 @@ Note: This list is not entirely up to date. See the code for current status.
   - Is there a `package.json`?
     - Is there a `package-lock.json`?
     - `npm i` ok? _dangerous_, time consuming and storage consuming -> should be done in a container
-    - Does the module following the recommended name pattern: MMM-ModuleName?
     - Do they use prettier and linter?
   - Is depandabot there?
     - Is it set to monthly?
