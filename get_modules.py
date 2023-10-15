@@ -10,21 +10,21 @@ def get_modules():
         lines = file.readlines()
 
     module_counter = 0
+    # For testing set this to a lower number to test only a few meodules
+    max_module_counter = 99999
 
     for line in lines:
-        if "](https://github.com/" in line or "](https://gitlab.com/" in line:
+        if ("](https://github.com/" in line or "](https://gitlab.com/" in line) and module_counter < max_module_counter:
             module_counter += 1
             columns = line.split("|")
 
-            # for testing only 10 modules:
-            # if len(columns) == 5 and module_counter < 10:
             if len(columns) == 5:
 
                 module_name = columns[1].split("(")[0].strip().replace("[", "").replace("]", "")
                 module_url = columns[1].split("(")[1].strip().replace("(", "").replace(")", "")
                 module_owner = module_url.split("/")[3]
                 # module_description = columns[3].strip()
-                path = Path(f"./modules/{module_name}_{module_owner}")
+                path = Path(f"./modules/{module_name}-----{module_owner}")
 
                 print(
                     f"\n########   {module_counter:4}: {module_name} by {module_owner}"
