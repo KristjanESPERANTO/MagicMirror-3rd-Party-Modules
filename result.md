@@ -1,6 +1,6 @@
 # Result of the module analysis
 
-Timestamp: 2023-10-16 01:49:33
+Timestamp: 2023-10-16 01:53:17
 
 Number of analyzed modules: 1015
 
@@ -1510,6 +1510,7 @@ Number of analyzed modules: 1015
 ## [MMM-HabiticaStats by delightedCrow](https://github.com/delightedCrow/MMM-HabiticaStats)
 
 1. Found 'Magic Mirror' in file `MMM-HabiticaStats.js`: Replace it with `MagicMirror²`.
+2. Found 'XMLHttpRequest' in file `HabiticaMagic-v2.0.1.min.js`: Replace it with built-in fetch.
 
 ## [MMM-Hanzi by tderflinger](https://github.com/tderflinger/MMM-Hanzi)
 
@@ -1672,7 +1673,9 @@ Number of analyzed modules: 1015
 ## [MMM-ISY by shbatm](https://github.com/shbatm/MMM-ISY)
 
 1. Found 'Magic Mirror' in file `MMM-ISY.js`: Replace it with `MagicMirror²`.
-2. Found 'Magic Mirror' in file `node_helper.js`: Replace it with `MagicMirror²`.
+2. Found 'XMLHttpRequest' in file `jquery-3.2.1.min.js`: Replace it with built-in fetch.
+3. Found 'XMLHttpRequest' in file `jquery.min.js`: Replace it with built-in fetch.
+4. Found 'Magic Mirror' in file `node_helper.js`: Replace it with `MagicMirror²`.
 
 ## [MMM-ITCH-IO by Xanthus1](https://github.com/Xanthus1/MMM-ITCH-IO)
 
@@ -1979,6 +1982,10 @@ Number of analyzed modules: 1015
 1. Found 'Magic Mirror' in file `MMM-Lottery.js`: Replace it with `MagicMirror²`.
 2. Found 'Magic Mirror' in file `node_helper.js`: Replace it with `MagicMirror²`.
 3. Found 'require('request')' in file `node_helper.js`: Replace it with built-in fetch.
+
+## [MMM-Loxone by idoodler](https://github.com/idoodler/MMM-Loxone)
+
+1. Found 'XMLHttpRequest' in file `jquery.min.js`: Replace it with built-in fetch.
 
 ## [MMM-Luftdaten by pixxelfriend](https://github.com/pixxelfriend/MMM-Luftdaten)
 
@@ -2569,7 +2576,8 @@ Number of analyzed modules: 1015
 ## [MMM-Netatmo-Thermostat by overflOw11](https://github.com/overflOw11/MMM-Netatmo-Thermostat)
 
 1. Found 'Magic Mirror' in file `MMM-Netatmo-Thermostat.js`: Replace it with `MagicMirror²`.
-2. Found 'Magic Mirror' in file `node_helper.js`: Replace it with `MagicMirror²`.
+2. Found 'XMLHttpRequest' in file `jquery-3.2.1.min.js`: Replace it with built-in fetch.
+3. Found 'Magic Mirror' in file `node_helper.js`: Replace it with `MagicMirror²`.
 
 ## [MMM-NetworkScanner by spitzlbergerj](https://github.com/spitzlbergerj/MMM-NetworkScanner)
 
@@ -2698,9 +2706,10 @@ Number of analyzed modules: 1015
 1. `dependabot.yml`: Change file extention from `.yml` to `.yaml`: <https://yaml.org/faq.html>.
 2. Found 'Magic Mirror' in file `README.md`: Replace it with `MagicMirror²`.
 3. Found 'require("request")' in file `authorization.js`: Replace it with built-in fetch.
-4. Found 'MagicMirror2' in file `package.json`: Replace it with `MagicMirror²`.
-5. Found 'node-fetch' in file `package.json`: Replace it with built-in fetch.
-6. Found 'node-fetch' in file `SpotifyFetcher.js`: Replace it with built-in fetch.
+4. Found 'XMLHttpRequest' in file `jquery-1.10.1.min.js`: Replace it with built-in fetch.
+5. Found 'MagicMirror2' in file `package.json`: Replace it with `MagicMirror²`.
+6. Found 'node-fetch' in file `package.json`: Replace it with built-in fetch.
+7. Found 'node-fetch' in file `SpotifyFetcher.js`: Replace it with built-in fetch.
 
 ## [MMM-OnThisDay by nkl-kst](https://github.com/nkl-kst/MMM-OnThisDay)
 
@@ -2966,6 +2975,7 @@ Number of analyzed modules: 1015
 ## [MMM-Planetarium by MMRIZE](https://github.com/MMRIZE/MMM-Planetarium)
 
 1. `FUNDING.yml`: Change file extention from `.yml` to `.yaml`: <https://yaml.org/faq.html>.
+2. Found 'XMLHttpRequest' in file `stuquery.min.js`: Replace it with built-in fetch.
 
 ## [MMM-Plantower by gimdh](https://github.com/gimdh/MMM-Plantower)
 
@@ -3186,6 +3196,7 @@ Number of analyzed modules: 1015
 ## [MMM-RSS-FEED by Taolanoz](https://github.com/Taolanoz/MMM-RSS-FEED)
 
 1. Found 'XMLHttpRequest' in file `feednami.js`: Replace it with built-in fetch.
+2. Found 'XMLHttpRequest' in file `jquery-3.1.1.min.js`: Replace it with built-in fetch.
 
 ## [MMM-RTSPStream by shbatm](https://github.com/shbatm/MMM-RTSPStream)
 
@@ -3196,7 +3207,9 @@ Number of analyzed modules: 1015
 5. Found 'node-fetch' in file `node_helper.js`: Replace it with built-in fetch.
 6. Found 'Magic Mirror' in file `package.json`: Replace it with `MagicMirror²`.
 7. Found 'node-fetch' in file `package.json`: Replace it with built-in fetch.
-8. Found 'MagicMirror2' in file `installer.sh`: Replace it with `MagicMirror²`.
+8. Found 'XMLHttpRequest' in file `jquery-3.2.1.min.js`: Replace it with built-in fetch.
+9. Found 'MagicMirror2' in file `installer.sh`: Replace it with `MagicMirror²`.
+10. Found 'XMLHttpRequest' in file `jsmpeg.min.js`: Replace it with built-in fetch.
 
 ## [MMM-RVV by sebikolon](https://github.com/sebikolon/MMM-RVV)
 
@@ -3236,6 +3249,10 @@ Number of analyzed modules: 1015
 ## [MMM-RandomQuotes by Jacopo1891](https://github.com/Jacopo1891/MMM-RandomQuotes)
 
 1. Found 'node-fetch' in file `node_helper.js`: Replace it with built-in fetch.
+
+## [MMM-RandomQuranAyah by slametps](https://github.com/slametps/MMM-RandomQuranAyah)
+
+1. Found 'XMLHttpRequest' in file `jquery-3.1.1.min.js`: Replace it with built-in fetch.
 
 ## [MMM-RandomYouTubePlayer by justjim1220](https://github.com/justjim1220/MMM-RandomYouTubePlayer)
 
@@ -3300,6 +3317,7 @@ Number of analyzed modules: 1015
 
 1. Found 'Magic Mirror' in file `MMM-RemoteCompliments.js`: Replace it with `MagicMirror²`.
 2. Found 'Magic Mirror' in file `node_helper.js`: Replace it with `MagicMirror²`.
+3. Found 'XMLHttpRequest' in file `jquery-3.3.1.min.js`: Replace it with built-in fetch.
 
 ## [MMM-RepRapFirmware by arirobinson](https://github.com/arirobinson/MMM-RepRapFirmware/)
 
@@ -3953,7 +3971,8 @@ Number of analyzed modules: 1015
 
 1. Found 'Magic Mirror' in file `README.md`: Replace it with `MagicMirror²`.
 2. Found 'Magic Mirror' in file `SECURITY.md`: Replace it with `MagicMirror²`.
-3. Found 'Magic Mirror' in file `tomtomv6.html`: Replace it with `MagicMirror²`.
+3. Found 'XMLHttpRequest' in file `maps-web.min.js`: Replace it with built-in fetch.
+4. Found 'Magic Mirror' in file `tomtomv6.html`: Replace it with `MagicMirror²`.
 
 ## [MMM-Toon by MichMich](https://github.com/MichMich/MMM-Toon)
 
@@ -4117,8 +4136,9 @@ Number of analyzed modules: 1015
 
 ## [MMM-VideoPlayer by asimhsidd](https://github.com/asimhsidd/MMM-VideoPlayer)
 
-1. Found 'Magic Mirror' in file `MMM-VideoPlayer.js`: Replace it with `MagicMirror²`.
-2. Found 'Magic Mirror' in file `node_helper.js`: Replace it with `MagicMirror²`.
+1. Found 'XMLHttpRequest' in file `jquery-3.3.1.min.js`: Replace it with built-in fetch.
+2. Found 'Magic Mirror' in file `MMM-VideoPlayer.js`: Replace it with `MagicMirror²`.
+3. Found 'Magic Mirror' in file `node_helper.js`: Replace it with `MagicMirror²`.
 
 ## [MMM-Videoplayer by Snille](https://github.com/Snille/MMM-Videoplayer)
 
@@ -4221,8 +4241,10 @@ Number of analyzed modules: 1015
 2. Found 'Magic Mirror' in file `MMM-WeasleyClock.js`: Replace it with `MagicMirror²`.
 3. Found 'Magic Mirror' in file `MosquittoSetup.md`: Replace it with `MagicMirror²`.
 4. Found 'Magic Mirror' in file `README.md`: Replace it with `MagicMirror²`.
-5. Found 'Magic Mirror' in file `node_helper.js`: Replace it with `MagicMirror²`.
-6. Found 'Magic Mirror' in file `package.json`: Replace it with `MagicMirror²`.
+5. Found 'XMLHttpRequest' in file `howler.core.min.js`: Replace it with built-in fetch.
+6. Found 'XMLHttpRequest' in file `howler.min.js`: Replace it with built-in fetch.
+7. Found 'Magic Mirror' in file `node_helper.js`: Replace it with `MagicMirror²`.
+8. Found 'Magic Mirror' in file `package.json`: Replace it with `MagicMirror²`.
 
 ## [MMM-Weather-Now by nigel-daniels](https://github.com/nigel-daniels/MMM-Weather-Now)
 
@@ -4243,6 +4265,10 @@ Number of analyzed modules: 1015
 
 1. Found 'Magic Mirror' in file `MMM-WeatherDependentClothes.js`: Replace it with `MagicMirror²`.
 2. Found 'XMLHttpRequest' in file `MMM-WeatherDependentClothes.js`: Replace it with built-in fetch.
+
+## [MMM-WeatherGraph by FlatPepsi17](https://github.com/FlatPepsi17/MMM-WeatherGraph)
+
+1. Found 'XMLHttpRequest' in file `d3.min.js`: Replace it with built-in fetch.
 
 ## [MMM-WeatherOrNot by mykle1](https://github.com/mykle1/MMM-WeatherOrNot)
 
@@ -4520,6 +4546,14 @@ Number of analyzed modules: 1015
 2. Found 'MagicMirror2' in file `README.md`: Replace it with `MagicMirror²`.
 3. Found 'require('request')' in file `node_helper.js`: Replace it with built-in fetch.
 
+## [MMM-forecast-io by dmcinnes](https://github.com/dmcinnes/MMM-forecast-io)
+
+1. Found 'XMLHttpRequest' in file `d3.min.js`: Replace it with built-in fetch.
+
+## [MMM-forecast-io by idoodler](https://github.com/idoodler/MMM-forecast-io)
+
+1. Found 'XMLHttpRequest' in file `d3.min.js`: Replace it with built-in fetch.
+
 ## [MMM-fronius by peteyjaym](https://github.com/peteyjaym/MMM-fronius)
 
 1. Found 'require("request")' in file `node_helper.js`: Replace it with built-in fetch.
@@ -4594,8 +4628,11 @@ Number of analyzed modules: 1015
 2. Found 'XMLHttpRequest' in file `ammap.js`: Replace it with built-in fetch.
 3. Found 'XMLHttpRequest' in file `ammap_amcharts_extension.js`: Replace it with built-in fetch.
 4. Found 'XMLHttpRequest' in file `dataloader.js`: Replace it with built-in fetch.
-5. Found 'require('https')' in file `fabric.js`: Replace it with built-in fetch.
-6. Found 'XMLHttpRequest' in file `fabric.js`: Replace it with built-in fetch.
+5. Found 'XMLHttpRequest' in file `dataloader.min.js`: Replace it with built-in fetch.
+6. Found 'require('https')' in file `fabric.js`: Replace it with built-in fetch.
+7. Found 'XMLHttpRequest' in file `fabric.js`: Replace it with built-in fetch.
+8. Found 'require("https")' in file `fabric.min.js`: Replace it with built-in fetch.
+9. Found 'XMLHttpRequest' in file `fabric.min.js`: Replace it with built-in fetch.
 
 ## [MMM-idos by soyrubio](https://github.com/soyrubio/MMM-idos)
 
