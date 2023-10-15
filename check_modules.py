@@ -3,6 +3,8 @@
 
 from pathlib import Path
 from datetime import datetime
+import subprocess
+
 def search_in_file(path, searchstring):
     """Function to search a string in a file."""
     try:
@@ -37,24 +39,24 @@ def check_modules():
     }
 
     all_modules_path = Path("./modules")
-    all_modules_folders = sorted([f for f in all_modules_path.iterdir() if f.is_dir()])
+    all_modules_directories = sorted([f for f in all_modules_path.iterdir() if f.is_dir()])
 
     output = open("result.md", "w", encoding="utf-8")
     output.write("# Result of the module analysis\n\n")
     output.write(f"Timestamp: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}\n\n")
-    output.write(f"Number of analyzed modules: {len(all_modules_folders)}\n")
+    output.write(f"Number of analyzed modules: {len(all_modules_directories)}\n")
 
-    for i, module_folder in enumerate(all_modules_folders):
+    for i, module_directory in enumerate(all_modules_directories):
 
         # Print progress
-        progress = f"{i:4}/{len(all_modules_folders)}\r"
+        progress = f"{i:4}/{len(all_modules_directories)}\r"
         print(progress, end = '')
 
-        module_name = module_folder.name.split("-----")[0]
-        module_owner = module_folder.name.split("-----")[1]
+        module_name = module_directory.name.split("-----")[0]
+        module_owner = module_directory.name.split("-----")[1]
         issues = []
 
-        for file_path in sorted(module_folder.rglob("*")):
+        for file_path in sorted(module_directory.rglob("*")):
             if file_path.is_dir():
                 if file_path.name == "node_modules":
                     issues.append(
@@ -67,10 +69,13 @@ def check_modules():
                             issues.append(f"found '{search_string}' in file `{file_path.name}`: {value}")
 
         if len(issues) > 0:
-            output.write(f"\n## {module_name} by {module_owner}\n\n")
+            url = subprocess.run(f"cd {module_directory} && git remote get-url origin && cd ..", stdout=subprocess.PIPE, shell=True, check=False)
+            url_string = url.stdout.decode().rstrip()
+
+            output.write(f"\n## [{module_name} by {module_owner}]({url_string})\n\n")
             for idx, issue in enumerate(issues):
                 output.write(f"{idx+1}. {issue}\n")
-    print(f"{len(all_modules_folders)} modules analyzed. For results see file result.md.           ")
+    print(f"{len(all_modules_directories)} modules analyzed. For results see file result.md.           ")
     output.close()
 
 check_modules()
