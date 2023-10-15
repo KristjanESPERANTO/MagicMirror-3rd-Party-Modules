@@ -1,6 +1,6 @@
 # Result of the module analysis
 
-Timestamp: 2023-10-16 01:03:09
+Timestamp: 2023-10-16 01:11:49
 
 Number of analyzed modules: 1015
 
@@ -473,8 +473,7 @@ Number of analyzed modules: 1015
 
 ## [MMM-CalendarExt2 by MMM-CalendarExt2](https://github.com/MMM-CalendarExt2/MMM-CalendarExt2)
 
-1. found 'uses: actions/setup-node@v3' in file `automated-tests.yaml`: Replace it with v4.
-2. found 'node-fetch' in file `README.md`: Replace it with built-in fetch.
+1. found 'node-fetch' in file `README.md`: Replace it with built-in fetch.
 
 ## [MMM-CalendarExt3 by MMRIZE](https://github.com/MMRIZE/MMM-CalendarExt3)
 
@@ -767,7 +766,7 @@ Number of analyzed modules: 1015
 
 ## [MMM-DagelijksWoord by wctimmer](https://github.com/wctimmer/MMM-DagelijksWoord)
 
-1. found 'uses: actions/setup-node@v3' in file `lint.yml`: Replace it with v4.
+1. found 'uses: actions/checkout@v3' in file `lint.yml`: Replace it with v4.
 2. `lint.yml`: Change file extention from `.yml` to `.yaml`: <https://yaml.org/faq.html>.
 3. found 'Magic Mirror' in file `MMM-DagelijksWoord.js`: Replace it with `MagicMirror²`.
 4. found 'Magic Mirror' in file `node_helper.js`: Replace it with `MagicMirror²`.
@@ -955,7 +954,7 @@ Number of analyzed modules: 1015
 
 ## [MMM-Ecobee by parnic](https://github.com/parnic/MMM-Ecobee)
 
-1. found 'uses: actions/setup-node@v3' in file `nodejs.yml`: Replace it with v4.
+1. found 'uses: actions/checkout@v3' in file `nodejs.yml`: Replace it with v4.
 2. found 'node-version: [16' in file `nodejs.yml`: Deprecated: Update to current version.
 3. `nodejs.yml`: Change file extention from `.yml` to `.yaml`: <https://yaml.org/faq.html>.
 4. found 'Magic Mirror' in file `MMM-Ecobee.js`: Replace it with `MagicMirror²`.
@@ -1315,7 +1314,7 @@ Number of analyzed modules: 1015
 ## [MMM-Formula1 by ianperrin](https://github.com/ianperrin/MMM-Formula1)
 
 1. `FUNDING.yml`: Change file extention from `.yml` to `.yaml`: <https://yaml.org/faq.html>.
-2. found 'uses: actions/setup-node@v3' in file `node.js.yml`: Replace it with v4.
+2. found 'uses: actions/checkout@v3' in file `node.js.yml`: Replace it with v4.
 3. found 'node-version: [16' in file `node.js.yml`: Deprecated: Update to current version.
 4. `node.js.yml`: Change file extention from `.yml` to `.yaml`: <https://yaml.org/faq.html>.
 5. found 'XMLHttpRequest' in file `MMM-Formula1.js`: Replace it with built-in fetch.
@@ -1429,13 +1428,14 @@ Number of analyzed modules: 1015
 
 ## [MMM-Gestures by thobach](https://github.com/thobach/MMM-Gestures)
 
-1. `codeql.yml`: Change file extention from `.yml` to `.yaml`: <https://yaml.org/faq.html>.
-2. found 'Magic Mirror' in file `MagicMirror2.ino`: Replace it with `MagicMirror²`.
-3. found 'Magic Mirror' in file `MMM-Gestures.js`: Replace it with `MagicMirror²`.
-4. found 'Magic Mirror' in file `README.MD`: Replace it with `MagicMirror²`.
-5. found 'electron-rebuild' in file `README.MD`: Replace it with `@electron/rebuild`
-6. found 'Magic Mirror' in file `package.json`: Replace it with `MagicMirror²`.
-7. found 'electron-rebuild' in file `postinstall`: Replace it with `@electron/rebuild`
+1. found 'uses: actions/checkout@v3' in file `codeql.yml`: Replace it with v4.
+2. `codeql.yml`: Change file extention from `.yml` to `.yaml`: <https://yaml.org/faq.html>.
+3. found 'Magic Mirror' in file `MagicMirror2.ino`: Replace it with `MagicMirror²`.
+4. found 'Magic Mirror' in file `MMM-Gestures.js`: Replace it with `MagicMirror²`.
+5. found 'Magic Mirror' in file `README.MD`: Replace it with `MagicMirror²`.
+6. found 'electron-rebuild' in file `README.MD`: Replace it with `@electron/rebuild`
+7. found 'Magic Mirror' in file `package.json`: Replace it with `MagicMirror²`.
+8. found 'electron-rebuild' in file `postinstall`: Replace it with `@electron/rebuild`
 
 ## [MMM-Gitlab-MergeRequests by jkschoen](https://github.com/jkschoen/MMM-Gitlab-MergeRequests)
 
@@ -1457,7 +1457,8 @@ Number of analyzed modules: 1015
 ## [MMM-GoogleAssistant by bugsounet](https://github.com/bugsounet/MMM-GoogleAssistant)
 
 1. `dependabot.yml`: Change file extention from `.yml` to `.yaml`: <https://yaml.org/faq.html>.
-2. `dependency-review.yml`: Change file extention from `.yml` to `.yaml`: <https://yaml.org/faq.html>.
+2. found 'uses: actions/checkout@v3' in file `dependency-review.yml`: Replace it with v4.
+3. `dependency-review.yml`: Change file extention from `.yml` to `.yaml`: <https://yaml.org/faq.html>.
 
 ## [MMM-GoogleAssistant by gauravsacc](https://github.com/gauravsacc/MMM-GoogleAssistant)
 
@@ -1683,7 +1684,7 @@ Number of analyzed modules: 1015
 
 ## [MMM-IDF-LOCALTRANSPORT by djey47](https://github.com/djey47/MMM-IDF-LOCALTRANSPORT)
 
-1. found 'uses: actions/setup-node@v3' in file `mm2-idf.js.yml`: Replace it with v4.
+1. found 'uses: actions/checkout@v3' in file `mm2-idf.js.yml`: Replace it with v4.
 2. `mm2-idf.js.yml`: Change file extention from `.yml` to `.yaml`: <https://yaml.org/faq.html>.
 3. found 'MagicMirror2' in file `README.md`: Replace it with `MagicMirror²`.
 4. found 'XMLHttpRequest' in file `axios_v0.16.x.js`: Replace it with built-in fetch.
@@ -1854,7 +1855,7 @@ Number of analyzed modules: 1015
 ## [MMM-JsonTable by timdows](https://github.com/timdows/MMM-JsonTable)
 
 1. `dependabot.yml`: Change file extention from `.yml` to `.yaml`: <https://yaml.org/faq.html>.
-2. found 'uses: actions/setup-node@v3' in file `runtest.yml`: Replace it with v4.
+2. found 'uses: actions/checkout@v3' in file `runtest.yml`: Replace it with v4.
 3. `runtest.yml`: Change file extention from `.yml` to `.yaml`: <https://yaml.org/faq.html>.
 
 ## [MMM-JsonValue by c-klinger](https://github.com/c-klinger/MMM-JsonValue)
@@ -1927,7 +1928,7 @@ Number of analyzed modules: 1015
 
 ## [MMM-LKY-TIC by djey47](https://github.com/djey47/MMM-LKY-TIC)
 
-1. found 'uses: actions/setup-node@v3' in file `ci.yml`: Replace it with v4.
+1. found 'uses: actions/checkout@v3' in file `ci.yml`: Replace it with v4.
 2. `ci.yml`: Change file extention from `.yml` to `.yaml`: <https://yaml.org/faq.html>.
 3. found 'MagicMirror2' in file `README.md`: Replace it with `MagicMirror²`.
 4. found 'MagicMirror2' in file `package.json`: Replace it with `MagicMirror²`.
@@ -1947,7 +1948,8 @@ Number of analyzed modules: 1015
 
 ## [MMM-Lastfm by RineshRamadhin](https://github.com/RineshRamadhin/MMM-Lastfm)
 
-1. `codeql-analysis.yml`: Change file extention from `.yml` to `.yaml`: <https://yaml.org/faq.html>.
+1. found 'uses: actions/checkout@v3' in file `codeql-analysis.yml`: Replace it with v4.
+2. `codeql-analysis.yml`: Change file extention from `.yml` to `.yaml`: <https://yaml.org/faq.html>.
 
 ## [MMM-Launch by mykle1](https://github.com/mykle1/MMM-Launch)
 
@@ -2206,11 +2208,12 @@ Number of analyzed modules: 1015
 
 ## [MMM-MicrosoftToDo by thobach](https://github.com/thobach/MMM-MicrosoftToDo/)
 
-1. `codeql.yml`: Change file extention from `.yml` to `.yaml`: <https://yaml.org/faq.html>.
-2. `node.js.yml`: Change file extention from `.yml` to `.yaml`: <https://yaml.org/faq.html>.
-3. `.travis.yml`: Change file extention from `.yml` to `.yaml`: <https://yaml.org/faq.html>.
-4. found 'Magic Mirror' in file `README.MD`: Replace it with `MagicMirror²`.
-5. found 'node-fetch' in file `node_helper.js`: Replace it with built-in fetch.
+1. found 'uses: actions/checkout@v3' in file `codeql.yml`: Replace it with v4.
+2. `codeql.yml`: Change file extention from `.yml` to `.yaml`: <https://yaml.org/faq.html>.
+3. `node.js.yml`: Change file extention from `.yml` to `.yaml`: <https://yaml.org/faq.html>.
+4. `.travis.yml`: Change file extention from `.yml` to `.yaml`: <https://yaml.org/faq.html>.
+5. found 'Magic Mirror' in file `README.MD`: Replace it with `MagicMirror²`.
+6. found 'node-fetch' in file `node_helper.js`: Replace it with built-in fetch.
 
 ## [MMM-MieleAtHome by SAR71](https://github.com/SAR71/MMM-MieleAtHome/)
 
@@ -2336,7 +2339,7 @@ Number of analyzed modules: 1015
 
 ## [MMM-MyQ by parnic](https://github.com/parnic/MMM-MyQ)
 
-1. found 'uses: actions/setup-node@v3' in file `nodejs.yml`: Replace it with v4.
+1. found 'uses: actions/checkout@v3' in file `nodejs.yml`: Replace it with v4.
 2. found 'node-version: [16' in file `nodejs.yml`: Deprecated: Update to current version.
 3. `nodejs.yml`: Change file extention from `.yml` to `.yaml`: <https://yaml.org/faq.html>.
 4. found 'Magic Mirror' in file `MMM-MyQ.js`: Replace it with `MagicMirror²`.
@@ -2890,23 +2893,22 @@ Number of analyzed modules: 1015
 1. `.codeclimate.yml`: Change file extention from `.yml` to `.yaml`: <https://yaml.org/faq.html>.
 2. `.eslintrc.yml`: Change file extention from `.yml` to `.yaml`: <https://yaml.org/faq.html>.
 3. `FUNDING.yml`: Change file extention from `.yml` to `.yaml`: <https://yaml.org/faq.html>.
-4. found 'uses: actions/setup-node@v3' in file `validation.yml`: Replace it with v4.
-5. found 'node-version: [16' in file `validation.yml`: Deprecated: Update to current version.
-6. `validation.yml`: Change file extention from `.yml` to `.yaml`: <https://yaml.org/faq.html>.
-7. `.markdownlint.yml`: Change file extention from `.yml` to `.yaml`: <https://yaml.org/faq.html>.
-8. `.stylelintrc.yml`: Change file extention from `.yml` to `.yaml`: <https://yaml.org/faq.html>.
-9. `docker-compose.yml`: Change file extention from `.yml` to `.yaml`: <https://yaml.org/faq.html>.
-10. found 'Magic Mirror' in file `helper.js`: Replace it with `MagicMirror²`.
-11. found '<sub>2</sub>' in file `cs.json`: Replace it with `²`.
-12. found '<sub>2</sub>' in file `de.json`: Replace it with `²`.
-13. found '<sub>2</sub>' in file `en.json`: Replace it with `²`.
-14. found '<sub>2</sub>' in file `fr.json`: Replace it with `²`.
-15. found '<sub>2</sub>' in file `hu.json`: Replace it with `²`.
-16. found '<sub>2</sub>' in file `nb.json`: Replace it with `²`.
-17. found '<sub>2</sub>' in file `nn.json`: Replace it with `²`.
-18. found '<sub>2</sub>' in file `ru.json`: Replace it with `²`.
-19. found 'Magic Mirror' in file `netatmo.js`: Replace it with `MagicMirror²`.
-20. found 'Magic Mirror' in file `node_helper.js`: Replace it with `MagicMirror²`.
+4. found 'node-version: [16' in file `validation.yml`: Deprecated: Update to current version.
+5. `validation.yml`: Change file extention from `.yml` to `.yaml`: <https://yaml.org/faq.html>.
+6. `.markdownlint.yml`: Change file extention from `.yml` to `.yaml`: <https://yaml.org/faq.html>.
+7. `.stylelintrc.yml`: Change file extention from `.yml` to `.yaml`: <https://yaml.org/faq.html>.
+8. `docker-compose.yml`: Change file extention from `.yml` to `.yaml`: <https://yaml.org/faq.html>.
+9. found 'Magic Mirror' in file `helper.js`: Replace it with `MagicMirror²`.
+10. found '<sub>2</sub>' in file `cs.json`: Replace it with `²`.
+11. found '<sub>2</sub>' in file `de.json`: Replace it with `²`.
+12. found '<sub>2</sub>' in file `en.json`: Replace it with `²`.
+13. found '<sub>2</sub>' in file `fr.json`: Replace it with `²`.
+14. found '<sub>2</sub>' in file `hu.json`: Replace it with `²`.
+15. found '<sub>2</sub>' in file `nb.json`: Replace it with `²`.
+16. found '<sub>2</sub>' in file `nn.json`: Replace it with `²`.
+17. found '<sub>2</sub>' in file `ru.json`: Replace it with `²`.
+18. found 'Magic Mirror' in file `netatmo.js`: Replace it with `MagicMirror²`.
+19. found 'Magic Mirror' in file `node_helper.js`: Replace it with `MagicMirror²`.
 
 ## [MMM-Netatmo by RaymondMolenaar](https://github.com/RaymondMolenaar/MMM-Netatmo)
 
@@ -3322,7 +3324,8 @@ Number of analyzed modules: 1015
 ## [MMM-Pir by bugsounet](https://github.com/bugsounet/MMM-Pir)
 
 1. `dependabot.yml`: Change file extention from `.yml` to `.yaml`: <https://yaml.org/faq.html>.
-2. `dependency-review.yml`: Change file extention from `.yml` to `.yaml`: <https://yaml.org/faq.html>.
+2. found 'uses: actions/checkout@v3' in file `dependency-review.yml`: Replace it with v4.
+3. `dependency-review.yml`: Change file extention from `.yml` to `.yaml`: <https://yaml.org/faq.html>.
 
 ## [MMM-PirateSkyForecast by dankerthrone](https://github.com/dankerthrone/MMM-PirateSkyForecast)
 
@@ -3457,14 +3460,6 @@ Number of analyzed modules: 1015
 1. found 'Magic Mirror' in file `MMM-Property-Managed.js`: Replace it with `MagicMirror²`.
 2. found 'XMLHttpRequest' in file `MMM-Property-Managed.js`: Replace it with built-in fetch.
 3. found 'Magic Mirror' in file `node_helper.js`: Replace it with `MagicMirror²`.
-
-## [MMM-PublicTransportBerlin by deg0nz](https://github.com/deg0nz/MMM-PublicTransportBerlin)
-
-1. found 'uses: actions/setup-node@v3' in file `automated-tests.yaml`: Replace it with v4.
-
-## [MMM-PublicTransportHafas by KristjanESPERANTO](https://github.com/KristjanESPERANTO/MMM-PublicTransportHafas)
-
-1. found 'uses: actions/setup-node@v3' in file `automated-tests.yaml`: Replace it with v4.
 
 ## [MMM-PublicTransportVVO by ChristianGeie](https://github.com/ChristianGeie/MMM-PublicTransportVVO)
 
@@ -3712,7 +3707,7 @@ Number of analyzed modules: 1015
 
 ## [MMM-RingAlarm by parnic](https://github.com/parnic/MMM-RingAlarm)
 
-1. found 'uses: actions/setup-node@v3' in file `nodejs.yml`: Replace it with v4.
+1. found 'uses: actions/checkout@v3' in file `nodejs.yml`: Replace it with v4.
 2. `nodejs.yml`: Change file extention from `.yml` to `.yaml`: <https://yaml.org/faq.html>.
 3. found 'Magic Mirror' in file `MMM-RingAlarm.js`: Replace it with `MagicMirror²`.
 
@@ -3810,7 +3805,7 @@ Number of analyzed modules: 1015
 
 ## [MMM-ScreenLogic by parnic](https://github.com/parnic/MMM-ScreenLogic)
 
-1. found 'uses: actions/setup-node@v3' in file `nodejs.yml`: Replace it with v4.
+1. found 'uses: actions/checkout@v3' in file `nodejs.yml`: Replace it with v4.
 2. `nodejs.yml`: Change file extention from `.yml` to `.yaml`: <https://yaml.org/faq.html>.
 
 ## [MMM-Screencast by kevinatown](https://github.com/kevinatown/MMM-Screencast)
@@ -4100,12 +4095,13 @@ Number of analyzed modules: 1015
 
 ## [MMM-StatusPageIo by spyder007](https://github.com/spyder007/MMM-StatusPageIo)
 
-1. found 'node-version: [16' in file `node.js.yml`: Deprecated: Update to current version.
-2. `node.js.yml`: Change file extention from `.yml` to `.yaml`: <https://yaml.org/faq.html>.
-3. found 'Magic Mirror' in file `CONTRIBUTING.md`: Replace it with `MagicMirror²`.
-4. found 'node-fetch' in file `package.json`: Replace it with built-in fetch.
-5. found 'node-fetch' in file `StatusPageService.test.ts`: Replace it with built-in fetch.
-6. found 'node-fetch' in file `StatusPageService.ts`: Replace it with built-in fetch.
+1. found 'uses: actions/checkout@v3' in file `node.js.yml`: Replace it with v4.
+2. found 'node-version: [16' in file `node.js.yml`: Deprecated: Update to current version.
+3. `node.js.yml`: Change file extention from `.yml` to `.yaml`: <https://yaml.org/faq.html>.
+4. found 'Magic Mirror' in file `CONTRIBUTING.md`: Replace it with `MagicMirror²`.
+5. found 'node-fetch' in file `package.json`: Replace it with built-in fetch.
+6. found 'node-fetch' in file `StatusPageService.test.ts`: Replace it with built-in fetch.
+7. found 'node-fetch' in file `StatusPageService.ts`: Replace it with built-in fetch.
 
 ## [MMM-SteamPlaytime by buxxi](https://github.com/buxxi/MMM-SteamPlaytime)
 
@@ -4553,7 +4549,7 @@ Number of analyzed modules: 1015
 
 ## [MMM-Vrr by Klizzy](https://github.com/Klizzy/MMM-Vrr)
 
-1. found 'uses: actions/setup-node@v3' in file `automated-tests.yaml`: Replace it with v4.
+1. found 'uses: actions/checkout@v3' in file `automated-tests.yaml`: Replace it with v4.
 2. found 'node-version: [14' in file `automated-tests.yaml`: Deprecated: Update to current version.
 3. found 'Magic Mirror' in file `MMM-Vrr.js`: Replace it with `MagicMirror²`.
 4. found 'XMLHttpRequest' in file `MMM-Vrr.js`: Replace it with built-in fetch.
@@ -4823,7 +4819,7 @@ Number of analyzed modules: 1015
 
 ## [MMM-bunq by choffmann](https://github.com/choffmann/MMM-bunq)
 
-1. found 'uses: actions/setup-node@v3' in file `node.js.yml`: Replace it with v4.
+1. found 'uses: actions/checkout@v3' in file `node.js.yml`: Replace it with v4.
 2. found 'node-version: [14' in file `node.js.yml`: Deprecated: Update to current version.
 3. `node.js.yml`: Change file extention from `.yml` to `.yaml`: <https://yaml.org/faq.html>.
 4. found 'Magic Mirror' in file `MMM-bunq.js`: Replace it with `MagicMirror²`.
@@ -5544,8 +5540,9 @@ Number of analyzed modules: 1015
 
 1. Module name doesn't follow the recommended pattern (it doesn't start with `MMM-`). Consider renaming your module.
 2. `FUNDING.yml`: Change file extention from `.yml` to `.yaml`: <https://yaml.org/faq.html>.
-3. `build.yml`: Change file extention from `.yml` to `.yaml`: <https://yaml.org/faq.html>.
-4. `.travis.yml`: Change file extention from `.yml` to `.yaml`: <https://yaml.org/faq.html>.
+3. found 'uses: actions/checkout@v3' in file `build.yml`: Replace it with v4.
+4. `build.yml`: Change file extention from `.yml` to `.yaml`: <https://yaml.org/faq.html>.
+5. `.travis.yml`: Change file extention from `.yml` to `.yaml`: <https://yaml.org/faq.html>.
 
 ## [motiondetector by alexyak](https://github.com/alexyak/motiondetector)
 

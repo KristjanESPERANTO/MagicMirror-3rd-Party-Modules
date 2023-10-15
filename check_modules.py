@@ -30,7 +30,7 @@ def check_modules():
         "electron-rebuild": "Replace it with `@electron/rebuild`",
         "node-fetch": "Replace it with built-in fetch.",
         "XMLHttpRequest": "Replace it with built-in fetch.",
-        "uses: actions/setup-node@v3": "Replace it with v4.",
+        "uses: actions/checkout@v3": "Replace it with v4.",
         "node-version: 14": "Deprecated: Update to current version.",
         "node-version: [14": "Deprecated: Update to current version.",
         "node-version: 16": "Deprecated: Update to current version.",
