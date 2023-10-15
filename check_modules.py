@@ -24,9 +24,15 @@ def check_modules():
         "require('request')", # to replace by built-in fetch
         "require(\"https\")", # to replace by built-in fetch
         "require('https')", # to replace by built-in fetch
+        "require('bent')", # to replace by built-in fetch
         "electron-rebuild", # to replace by @electron/rebuild
         "node-fetch", # to replace by built-in fetch
         "XMLHttpRequest", # to replace by built-in fetch
+        "uses: actions/setup-node@v3", # to replace by v4
+        "node-version: 14",
+        "node-version: [14",
+        "node-version: 16",
+        "node-version: [16",
         "github/super-linter@" # to replace by github/super-linter/slim@
         ]
 
@@ -45,7 +51,7 @@ def check_modules():
                             # print(f"{subfolder.name}: found '{searchstring}' in file {file_path.name}")
                             issues.append(f"{subfolder.name}: found '{searchstring}' in file {file_path.name}")
                             counter += 1
-            if counter > 7:
+            if counter > 0:
                 print(f"{subfolder.name}: {counter} - {subfolder}")
                 for issue in issues:
                     print(issue)
