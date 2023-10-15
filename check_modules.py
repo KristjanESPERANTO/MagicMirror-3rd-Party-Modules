@@ -2,7 +2,7 @@
 """Function to run some checks to all downloaded modules."""
 
 from pathlib import Path
-
+from datetime import datetime
 def search_in_file(path, searchstring):
     """Function to search a string in a file."""
     try:
@@ -10,50 +10,67 @@ def search_in_file(path, searchstring):
             if searchstring in file.read():
                 return True
     except UnicodeDecodeError:
-        pass # Fond non-text data
+        pass  # Fond non-text data
 
 
 def check_modules():
     """Function to search a string in a file."""
-    search_strings = [
-        "stylelint-config-prettier", # Deprecated since stylint v15.
-        "Magic Mirror", # to replace by "MagicMirror²"
-        "MagicMirror2",
-        "<sub>2</sub>,"
-        "require(\"request\")", # to replace by built-in fetch
-        "require('request')", # to replace by built-in fetch
-        "require(\"https\")", # to replace by built-in fetch
-        "require('https')", # to replace by built-in fetch
-        "require('bent')", # to replace by built-in fetch
-        "electron-rebuild", # to replace by @electron/rebuild
-        "node-fetch", # to replace by built-in fetch
-        "XMLHttpRequest", # to replace by built-in fetch
-        "uses: actions/setup-node@v3", # to replace by v4
-        "node-version: 14",
-        "node-version: [14",
-        "node-version: 16",
-        "node-version: [16",
-        "github/super-linter@" # to replace by github/super-linter/slim@
-        ]
+    search_strings = {
+        "stylelint-config-prettier": "Deprecated since `stylelint` v15. Update `stylelint` and remove `stylelint-config-prettier`.",
+        "Magic Mirror": "Replace it with `MagicMirror²`",
+        "MagicMirror2": "Replace it with `MagicMirror²`",
+        "<sub>2</sub>": "Replace it with `²`",
+        "require(\"request\")": "Replace it with built-in fetch.",
+        "require('request')": "Replace it with built-in fetch.",
+        "require(\"https\")": "Replace it with built-in fetch.",
+        "require('https')": "Replace it with built-in fetch.",
+        "require('bent')": "Replace it with built-in fetch.",
+        "electron-rebuild": "Replace it with `@electron/rebuild`",
+        "node-fetch": "Replace it with built-in fetch.",
+        "XMLHttpRequest": "Replace it with built-in fetch.",
+        "uses: actions/setup-node@v3": "Replace it with v4.",
+        "node-version: 14": "Deprecated: Update to current version.",
+        "node-version: [14": "Deprecated: Update to current version.",
+        "node-version: 16": "Deprecated: Update to current version.",
+        "node-version: [16": "Deprecated: Update to current version.",
+        "github/super-linter@": "Replace it with `github/super-linter/slim@`."
+    }
 
     all_modules_path = Path("./modules")
-    for subfolder in sorted(all_modules_path.rglob("*")):
-        if subfolder.is_dir():
-            counter = 0
-            issues = []
-            #print(subfolder.name)
-            dir_content = sorted(Path(subfolder).iterdir())
-            for file_path in dir_content:
-                if not file_path.is_dir() and not file_path.is_symlink() and ".min.js" not in str(file_path):
-                    for searchstring in search_strings:
-                        found_string = search_in_file(file_path, searchstring)
-                        if found_string:
-                            # print(f"{subfolder.name}: found '{searchstring}' in file {file_path.name}")
-                            issues.append(f"{subfolder.name}: found '{searchstring}' in file {file_path.name}")
-                            counter += 1
-            if counter > 0:
-                print(f"{subfolder.name}: {counter} - {subfolder}")
-                for issue in issues:
-                    print(issue)
+    all_modules_folders = sorted([f for f in all_modules_path.iterdir() if f.is_dir()])
+
+    output = open("result.md", "w", encoding="utf-8")
+    output.write("# Result of the module analysis\n\n")
+    output.write(f"Timestamp: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}\n")
+    output.write(f"Number of analyzed modules: {len(all_modules_folders)}\n")
+
+    for i, module_folder in enumerate(all_modules_folders):
+
+        # Progressbar
+        strbarwidth = f"[{'#' * i}{'-' * (len(all_modules_folders) - i)}] - {int(i * (100 / len(all_modules_folders)))}%\r"
+        print(strbarwidth ,end = '')
+
+        module_name = module_folder.name.split("-----")[0]
+        module_owner = module_folder.name.split("-----")[1]
+        issues = []
+
+        for file_path in sorted(module_folder.rglob("*")):
+            if file_path.is_dir():
+                if file_path.name == "node_modules":
+                    issues.append(
+                        "Found directory `node_modules`. This shouldn't be uploaded. Add `node_modules/`to `.gitignore`.")
+            elif not file_path.is_symlink() and ".min.js" not in str(file_path):
+
+                for search_string, value in search_strings.items():
+                    found_string = search_in_file(file_path, search_string)
+                    if found_string:
+                        issues.append(f"found '{search_string}' in file `{file_path.name}`: {value}")
+        if len(issues) > 0:
+            output.write(f"\n## {module_name} by {module_owner}\n\n")
+            for idx, issue in enumerate(issues):
+                output.write(f"{idx+1}. {issue}\n")
+                #print(f"  {idx+1}: {issue}")
+    print(f"{len(all_modules_folders)} modules analyzed. For results see file result.md.           ")
+    output.close()
 
 check_modules()
