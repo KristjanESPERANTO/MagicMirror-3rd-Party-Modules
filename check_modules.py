@@ -19,9 +19,9 @@ def check_modules():
     """Function to search a string in a file."""
     search_strings = {
         "stylelint-config-prettier": "Deprecated since `stylelint` v15. Update `stylelint` and remove `stylelint-config-prettier`.",
-        "Magic Mirror": "Replace it with `MagicMirror²`",
-        "MagicMirror2": "Replace it with `MagicMirror²`",
-        "<sub>2</sub>": "Replace it with `²`",
+        "Magic Mirror": "Replace it with `MagicMirror²`.",
+        "MagicMirror2": "Replace it with `MagicMirror²`.",
+        "<sub>2</sub>": "Replace it with `²`.",
         "require(\"request\")": "Replace it with built-in fetch.",
         "require('request')": "Replace it with built-in fetch.",
         "require(\"https\")": "Replace it with built-in fetch.",
@@ -62,11 +62,13 @@ def check_modules():
                     issues.append(
                         "Found directory `node_modules`. This shouldn't be uploaded. Add `node_modules/`to `.gitignore`.")
             elif not file_path.is_symlink() and ".min.js" not in str(file_path):
-                if "changelog" not in str(file_path).lower() and "package-lock.json" not in str(file_path).lower() :
+                if "changelog" not in str(file_path).lower() and "package-lock.json" not in str(file_path).lower():
                     for search_string, value in search_strings.items():
                         found_string = search_in_file(file_path, search_string)
                         if found_string:
                             issues.append(f"found '{search_string}' in file `{file_path.name}`: {value}")
+                if ".yml" in str(file_path).lower():
+                    issues.append(f"`{file_path.name}`: Change file extention from `.yml` to `.yaml`: <https://yaml.org/faq.html>.")
 
         if len(issues) > 0:
             url = subprocess.run(f"cd {module_directory} && git remote get-url origin && cd ..", stdout=subprocess.PIPE, shell=True, check=False)
