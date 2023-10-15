@@ -57,7 +57,7 @@ def check_modules():
         issues = []
 
         if not module_name.startswith("MMM-"):
-            issues.append("Module name doesn't follow the recommended pattern. Consider renaming your module.")
+            issues.append("Module name doesn't follow the recommended pattern (it doesn't start with `MMM-`). Consider renaming your module.")
 
         for file_path in sorted(module_directory.rglob("*")):
             if file_path.is_dir():

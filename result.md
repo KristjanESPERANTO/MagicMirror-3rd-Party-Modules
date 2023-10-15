@@ -6,7 +6,7 @@ Number of analyzed modules: 1015
 
 ## [BIRTHDAYS by marcomerens](https://github.com/marcomerens/anniversarymodule)
 
-1. Module name doesn't follow the recommended pattern. Consider renaming your module.
+1. Module name doesn't follow the recommended pattern (it doesn't start with `MMM-`). Consider renaming your module.
 2. found 'Magic Mirror' in file `MMM-Birthdays.js`: Replace it with `MagicMirror²`.
 3. found 'Magic Mirror' in file `BIRTHDAYS.js`: Replace it with `MagicMirror²`.
 4. found 'Magic Mirror' in file `README.md`: Replace it with `MagicMirror²`.
@@ -14,40 +14,40 @@ Number of analyzed modules: 1015
 
 ## [COINSQUARE by marcomerens](https://github.com/marcomerens/coinsquaremodule)
 
-1. Module name doesn't follow the recommended pattern. Consider renaming your module.
+1. Module name doesn't follow the recommended pattern (it doesn't start with `MMM-`). Consider renaming your module.
 2. found 'Magic Mirror' in file `COINSQUARE.js`: Replace it with `MagicMirror²`.
 3. found 'Magic Mirror' in file `README.md`: Replace it with `MagicMirror²`.
 
 ## [DWD-RealtimeIrishRail by archerydwd](https://github.com/archerydwd/DWD-RealtimeIrishRail)
 
-1. Module name doesn't follow the recommended pattern. Consider renaming your module.
+1. Module name doesn't follow the recommended pattern (it doesn't start with `MMM-`). Consider renaming your module.
 2. found 'Magic Mirror' in file `DWD-RealtimeIrishRail.js`: Replace it with `MagicMirror²`.
 3. found 'XMLHttpRequest' in file `DWD-RealtimeIrishRail.js`: Replace it with built-in fetch.
 
 ## [DailyXKCD by Blastitt](https://github.com/Blastitt/DailyXKCD)
 
-1. Module name doesn't follow the recommended pattern. Consider renaming your module.
+1. Module name doesn't follow the recommended pattern (it doesn't start with `MMM-`). Consider renaming your module.
 2. found 'require('https')' in file `node_helper.js`: Replace it with built-in fetch.
 
 ## [Hello-Lucy by mykle1](https://github.com/mykle1/Hello-Lucy)
 
-1. Module name doesn't follow the recommended pattern. Consider renaming your module.
+1. Module name doesn't follow the recommended pattern (it doesn't start with `MMM-`). Consider renaming your module.
 2. found 'XMLHttpRequest' in file `Hello-Lucy.js`: Replace it with built-in fetch.
 3. found 'Magic Mirror' in file `dependencies.sh`: Replace it with `MagicMirror²`.
 4. found 'XMLHttpRequest' in file `node_helper.js`: Replace it with built-in fetch.
 
 ## [JIR-EMT by jirsis](https://github.com/jirsis/emt)
 
-1. Module name doesn't follow the recommended pattern. Consider renaming your module.
+1. Module name doesn't follow the recommended pattern (it doesn't start with `MMM-`). Consider renaming your module.
 2. found 'Magic Mirror' in file `emt.js`: Replace it with `MagicMirror²`.
 
 ## [KeyDisplayed by l0b5ter](https://github.com/l0b5ter/KeyDisplayed)
 
-1. Module name doesn't follow the recommended pattern. Consider renaming your module.
+1. Module name doesn't follow the recommended pattern (it doesn't start with `MMM-`). Consider renaming your module.
 
 ## [MM-Remote by Klettner](https://github.com/Klettner/MM-Remote)
 
-1. Module name doesn't follow the recommended pattern. Consider renaming your module.
+1. Module name doesn't follow the recommended pattern (it doesn't start with `MMM-`). Consider renaming your module.
 2. `main.yml`: Change file extention from `.yml` to `.yaml`: <https://yaml.org/faq.html>.
 
 ## [MMM-01ZM by rubinho101](https://github.com/rubinho101/MMM-01ZM)
@@ -5399,7 +5399,7 @@ Number of analyzed modules: 1015
 
 ## [MagicMirror-Module-Template by roramirez](https://github.com/roramirez/MagicMirror-Module-Template)
 
-1. Module name doesn't follow the recommended pattern. Consider renaming your module.
+1. Module name doesn't follow the recommended pattern (it doesn't start with `MMM-`). Consider renaming your module.
 2. `.travis.yml`: Change file extention from `.yml` to `.yaml`: <https://yaml.org/faq.html>.
 3. found 'Magic Mirror' in file `MagicMirror-Module-Template.js`: Replace it with `MagicMirror²`.
 4. found 'XMLHttpRequest' in file `MagicMirror-Module-Template.js`: Replace it with built-in fetch.
@@ -5407,27 +5407,27 @@ Number of analyzed modules: 1015
 
 ## [PlutoTime by croxis](https://github.com/croxis/PlutoTime)
 
-1. Module name doesn't follow the recommended pattern. Consider renaming your module.
+1. Module name doesn't follow the recommended pattern (it doesn't start with `MMM-`). Consider renaming your module.
 
 ## [PresenceMonitor-WiFi by RpDp-git](https://github.com/RpDp-git/PiDisplaySleep.git)
 
-1. Module name doesn't follow the recommended pattern. Consider renaming your module.
+1. Module name doesn't follow the recommended pattern (it doesn't start with `MMM-`). Consider renaming your module.
 
 ## [Shelly-HT by Medve01](https://github.com/Medve01/Shelly-HT)
 
-1. Module name doesn't follow the recommended pattern. Consider renaming your module.
+1. Module name doesn't follow the recommended pattern (it doesn't start with `MMM-`). Consider renaming your module.
 2. found 'Magic Mirror' in file `README.md`: Replace it with `MagicMirror²`.
 3. found 'require('request')' in file `node_helper.js`: Replace it with built-in fetch.
 
 ## [Shelly-PM by stefanjacobs](https://github.com/stefanjacobs/MMM-Shelly-PM)
 
-1. Module name doesn't follow the recommended pattern. Consider renaming your module.
+1. Module name doesn't follow the recommended pattern (it doesn't start with `MMM-`). Consider renaming your module.
 2. found 'Magic Mirror' in file `README.md`: Replace it with `MagicMirror²`.
 3. found 'require('request')' in file `node_helper.js`: Replace it with built-in fetch.
 
 ## [WallberryTheme by delightedCrow](https://github.com/delightedCrow/WallberryTheme)
 
-1. Module name doesn't follow the recommended pattern. Consider renaming your module.
+1. Module name doesn't follow the recommended pattern (it doesn't start with `MMM-`). Consider renaming your module.
 2. `FUNDING.yml`: Change file extention from `.yml` to `.yaml`: <https://yaml.org/faq.html>.
 3. found 'Magic Mirror' in file `bug_report.md`: Replace it with `MagicMirror²`.
 4. found 'Magic Mirror' in file `WB-clock.js`: Replace it with `MagicMirror²`.
@@ -5444,34 +5444,34 @@ Number of analyzed modules: 1015
 
 ## [calendar_monthly by KirAsh4](https://github.com/KirAsh4/calendar_monthly/)
 
-1. Module name doesn't follow the recommended pattern. Consider renaming your module.
+1. Module name doesn't follow the recommended pattern (it doesn't start with `MMM-`). Consider renaming your module.
 2. found 'Magic Mirror' in file `calendar_monthly.js`: Replace it with `MagicMirror²`.
 
 ## [camera by alexyak](https://github.com/alexyak/camera)
 
-1. Module name doesn't follow the recommended pattern. Consider renaming your module.
+1. Module name doesn't follow the recommended pattern (it doesn't start with `MMM-`). Consider renaming your module.
 2. found 'Magic Mirror' in file `node_helper.js`: Replace it with `MagicMirror²`.
 3. found 'XMLHttpRequest' in file `webcam.js`: Replace it with built-in fetch.
 
 ## [cookiecutter-magic-mirror-module by xadamxk](https://github.com/xadamxk/cookiecutter-magic-mirror-module)
 
-1. Module name doesn't follow the recommended pattern. Consider renaming your module.
+1. Module name doesn't follow the recommended pattern (it doesn't start with `MMM-`). Consider renaming your module.
 2. found 'require('https')' in file `node_helper.js`: Replace it with built-in fetch.
 
 ## [facts by alanshen111](https://github.com/alanshen111/facts)
 
-1. Module name doesn't follow the recommended pattern. Consider renaming your module.
+1. Module name doesn't follow the recommended pattern (it doesn't start with `MMM-`). Consider renaming your module.
 2. found 'Magic Mirror' in file `README.md`: Replace it with `MagicMirror²`.
 
 ## [iFrame by desertblade](https://github.com/desertblade/iFrame)
 
-1. Module name doesn't follow the recommended pattern. Consider renaming your module.
+1. Module name doesn't follow the recommended pattern (it doesn't start with `MMM-`). Consider renaming your module.
 2. found 'Magic Mirror' in file `iFrame.js`: Replace it with `MagicMirror²`.
 3. found 'Magic Mirror' in file `package.json`: Replace it with `MagicMirror²`.
 
 ## [internet-monitor by ronny3050](https://github.com/ronny3050/internet-monitor)
 
-1. Module name doesn't follow the recommended pattern. Consider renaming your module.
+1. Module name doesn't follow the recommended pattern (it doesn't start with `MMM-`). Consider renaming your module.
 2. found 'XMLHttpRequest' in file `jquery.js`: Replace it with built-in fetch.
 3. Found directory `node_modules`. This shouldn't be uploaded. Add `node_modules/`to `.gitignore`.
 4. `.travis.yml`: Change file extention from `.yml` to `.yaml`: <https://yaml.org/faq.html>.
@@ -5479,7 +5479,7 @@ Number of analyzed modules: 1015
 
 ## [magic-mirror-voice by whyjustin](https://github.com/whyjustin/magic-mirror-voice)
 
-1. Module name doesn't follow the recommended pattern. Consider renaming your module.
+1. Module name doesn't follow the recommended pattern (it doesn't start with `MMM-`). Consider renaming your module.
 2. found 'Magic Mirror' in file `README.md`: Replace it with `MagicMirror²`.
 3. found 'electron-rebuild' in file `README.md`: Replace it with `@electron/rebuild`
 4. found 'require('https')' in file `alexa-authentication.js`: Replace it with built-in fetch.
@@ -5491,19 +5491,19 @@ Number of analyzed modules: 1015
 
 ## [mm-hide-all by masters1222](https://github.com/masters1222/mm-hide-all)
 
-1. Module name doesn't follow the recommended pattern. Consider renaming your module.
+1. Module name doesn't follow the recommended pattern (it doesn't start with `MMM-`). Consider renaming your module.
 2. found 'XMLHttpRequest' in file `jquery.js`: Replace it with built-in fetch.
 3. found 'Magic Mirror' in file `mm-hide-all.js`: Replace it with `MagicMirror²`.
 
 ## [mm-hsl-timetable by ZakarFin](https://github.com/ZakarFin/mm-hsl-timetable)
 
-1. Module name doesn't follow the recommended pattern. Consider renaming your module.
+1. Module name doesn't follow the recommended pattern (it doesn't start with `MMM-`). Consider renaming your module.
 2. found 'Magic Mirror' in file `mm-hsl-timetable.js`: Replace it with `MagicMirror²`.
 3. found 'node-fetch' in file `node_helper.js`: Replace it with built-in fetch.
 
 ## [mm-music-player by masters1222](https://github.com/masters1222/mm-music-player)
 
-1. Module name doesn't follow the recommended pattern. Consider renaming your module.
+1. Module name doesn't follow the recommended pattern (it doesn't start with `MMM-`). Consider renaming your module.
 2. found 'Magic Mirror' in file `README.md`: Replace it with `MagicMirror²`.
 3. found 'XMLHttpRequest' in file `jquery.js`: Replace it with built-in fetch.
 4. found 'Magic Mirror' in file `mm-music-player.js`: Replace it with `MagicMirror²`.
@@ -5511,13 +5511,13 @@ Number of analyzed modules: 1015
 
 ## [mm-tkl-timetable by JurnetFIN](https://github.com/JurnetFIN/mm-tkl-timetable)
 
-1. Module name doesn't follow the recommended pattern. Consider renaming your module.
+1. Module name doesn't follow the recommended pattern (it doesn't start with `MMM-`). Consider renaming your module.
 2. found 'Magic Mirror' in file `mm-tkl-timetable.js`: Replace it with `MagicMirror²`.
 3. found 'require("request")' in file `node_helper.js`: Replace it with built-in fetch.
 
 ## [mmm-amazon-photos by sthuber90](https://github.com/sthuber90/mmm-amazon-photos)
 
-1. Module name doesn't follow the recommended pattern. Consider renaming your module.
+1. Module name doesn't follow the recommended pattern (it doesn't start with `MMM-`). Consider renaming your module.
 2. found 'Magic Mirror' in file `README.md`: Replace it with `MagicMirror²`.
 3. found 'Magic Mirror' in file `mmm-amazon-photos.js`: Replace it with `MagicMirror²`.
 4. found 'Magic Mirror' in file `node_helper.js`: Replace it with `MagicMirror²`.
@@ -5525,42 +5525,42 @@ Number of analyzed modules: 1015
 
 ## [mmm-miami-transit by istvanfedak](https://github.com/istvanfedak/mmm-miami-transit)
 
-1. Module name doesn't follow the recommended pattern. Consider renaming your module.
+1. Module name doesn't follow the recommended pattern (it doesn't start with `MMM-`). Consider renaming your module.
 2. found 'electron-rebuild' in file `README.md`: Replace it with `@electron/rebuild`
 3. found 'Magic Mirror' in file `package.json`: Replace it with `MagicMirror²`.
 4. found 'electron-rebuild' in file `package.json`: Replace it with `@electron/rebuild`
 
 ## [mmm-uah-currency by wzooff](https://github.com/wzooff/mmm-uah-currency)
 
-1. Module name doesn't follow the recommended pattern. Consider renaming your module.
+1. Module name doesn't follow the recommended pattern (it doesn't start with `MMM-`). Consider renaming your module.
 2. found 'XMLHttpRequest' in file `mmm-uah-currency.js`: Replace it with built-in fetch.
 
 ## [mmm-uk-pollen-forecast by szech](https://github.com/szech/mmm-uk-pollen-forecast)
 
-1. Module name doesn't follow the recommended pattern. Consider renaming your module.
+1. Module name doesn't follow the recommended pattern (it doesn't start with `MMM-`). Consider renaming your module.
 2. found 'require('request')' in file `node_helper.js`: Replace it with built-in fetch.
 
 ## [mmpm by Bee-Mar](https://github.com/Bee-Mar/mmpm)
 
-1. Module name doesn't follow the recommended pattern. Consider renaming your module.
+1. Module name doesn't follow the recommended pattern (it doesn't start with `MMM-`). Consider renaming your module.
 2. `FUNDING.yml`: Change file extention from `.yml` to `.yaml`: <https://yaml.org/faq.html>.
 3. `build.yml`: Change file extention from `.yml` to `.yaml`: <https://yaml.org/faq.html>.
 4. `.travis.yml`: Change file extention from `.yml` to `.yaml`: <https://yaml.org/faq.html>.
 
 ## [motiondetector by alexyak](https://github.com/alexyak/motiondetector)
 
-1. Module name doesn't follow the recommended pattern. Consider renaming your module.
+1. Module name doesn't follow the recommended pattern (it doesn't start with `MMM-`). Consider renaming your module.
 2. found 'Magic Mirror' in file `node_helper.js`: Replace it with `MagicMirror²`.
 
 ## [next-train-transilien by trizome](https://github.com/trizome/next-train-transilien/)
 
-1. Module name doesn't follow the recommended pattern. Consider renaming your module.
+1. Module name doesn't follow the recommended pattern (it doesn't start with `MMM-`). Consider renaming your module.
 2. found 'Magic Mirror' in file `next-train-transilien.js`: Replace it with `MagicMirror²`.
 3. found 'Magic Mirror' in file `node_helper.js`: Replace it with `MagicMirror²`.
 
 ## [octoprint-module by shbatm](https://github.com/shbatm/octomirror-module/)
 
-1. Module name doesn't follow the recommended pattern. Consider renaming your module.
+1. Module name doesn't follow the recommended pattern (it doesn't start with `MMM-`). Consider renaming your module.
 2. found 'Magic Mirror' in file `README.md`: Replace it with `MagicMirror²`.
 3. found 'Magic Mirror' in file `octomirror-module.js`: Replace it with `MagicMirror²`.
 4. found 'Magic Mirror' in file `package.json`: Replace it with `MagicMirror²`.
@@ -5568,47 +5568,47 @@ Number of analyzed modules: 1015
 
 ## [on-this-day by elliefairholm](https://github.com/elliefairholm/on-this-day)
 
-1. Module name doesn't follow the recommended pattern. Consider renaming your module.
+1. Module name doesn't follow the recommended pattern (it doesn't start with `MMM-`). Consider renaming your module.
 2. found 'Magic Mirror' in file `README.md`: Replace it with `MagicMirror²`.
 3. found 'Magic Mirror' in file `on-this-day.js`: Replace it with `MagicMirror²`.
 
 ## [phone-notification-mirror by ronny3050](https://github.com/ronny3050/phone-notification-mirror)
 
-1. Module name doesn't follow the recommended pattern. Consider renaming your module.
+1. Module name doesn't follow the recommended pattern (it doesn't start with `MMM-`). Consider renaming your module.
 
 ## [planetrise by croxis](https://github.com/croxis/planetrise)
 
-1. Module name doesn't follow the recommended pattern. Consider renaming your module.
+1. Module name doesn't follow the recommended pattern (it doesn't start with `MMM-`). Consider renaming your module.
 2. found 'Magic Mirror' in file `README.md`: Replace it with `MagicMirror²`.
 
 ## [publika by alonsourbano](https://github.com/alonsourbano/publika)
 
-1. Module name doesn't follow the recommended pattern. Consider renaming your module.
+1. Module name doesn't follow the recommended pattern (it doesn't start with `MMM-`). Consider renaming your module.
 2. found 'node-fetch' in file `node_helper.js`: Replace it with built-in fetch.
 
 ## [random_quotes by KirAsh4](https://github.com/KirAsh4/random_quotes/)
 
-1. Module name doesn't follow the recommended pattern. Consider renaming your module.
+1. Module name doesn't follow the recommended pattern (it doesn't start with `MMM-`). Consider renaming your module.
 2. found 'Magic Mirror' in file `random_quotes.js`: Replace it with `MagicMirror²`.
 
 ## [twitControl by Blastitt](https://github.com/Blastitt/twitControl)
 
-1. Module name doesn't follow the recommended pattern. Consider renaming your module.
+1. Module name doesn't follow the recommended pattern (it doesn't start with `MMM-`). Consider renaming your module.
 2. found 'MagicMirror2' in file `package.json`: Replace it with `MagicMirror²`.
 
 ## [voicecontrol by alexyak](https://github.com/alexyak/voicecontrol)
 
-1. Module name doesn't follow the recommended pattern. Consider renaming your module.
+1. Module name doesn't follow the recommended pattern (it doesn't start with `MMM-`). Consider renaming your module.
 2. found 'Magic Mirror' in file `node_helper.js`: Replace it with `MagicMirror²`.
 3. found 'Magic Mirror' in file `voicecontrol.js`: Replace it with `MagicMirror²`.
 
 ## [worldclock by eouia](https://github.com/eouia/worldclock)
 
-1. Module name doesn't follow the recommended pattern. Consider renaming your module.
+1. Module name doesn't follow the recommended pattern (it doesn't start with `MMM-`). Consider renaming your module.
 2. found 'Magic Mirror' in file `worldclock.js`: Replace it with `MagicMirror²`.
 
 ## [wuforecast by MattLugar](https://github.com/MattLugar/wuforecast)
 
-1. Module name doesn't follow the recommended pattern. Consider renaming your module.
+1. Module name doesn't follow the recommended pattern (it doesn't start with `MMM-`). Consider renaming your module.
 2. found 'Magic Mirror' in file `wuforecast.js`: Replace it with `MagicMirror²`.
 3. found 'XMLHttpRequest' in file `wuforecast.js`: Replace it with built-in fetch.
