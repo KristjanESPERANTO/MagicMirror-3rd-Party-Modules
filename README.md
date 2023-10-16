@@ -35,7 +35,6 @@ Note: This list is not entirely up to date. See the code for current status.
 
 ## Ideas / To do
 
-- Categorizing the messages. Like: critical, warning and information.
 - Create test result overview (like a statistic).
 - Statistics per module
   - last update date
