@@ -1,8 +1,8 @@
 # Result of the module analysis
 
-Timestamp: 2023-10-16 01:53:17
+Timestamp: 2023-10-16 19:27:43
 
-Number of analyzed modules: 1015
+Number of analyzed modules: 1016
 
 ## [BIRTHDAYS by marcomerens](https://github.com/marcomerens/anniversarymodule)
 
@@ -59,6 +59,13 @@ Number of analyzed modules: 1015
 1. Found 'Magic Mirror' in file `MMM-1-Second-A-Day.js`: Replace it with `MagicMirror²`.
 2. Found 'Magic Mirror' in file `package.json`: Replace it with `MagicMirror²`.
 
+## [MMM-2Day-NOAA-Forecast by jinserk](https://github.com/jinserk/MMM-2Day-NOAA-Forecast)
+
+1. Found 'Magic Mirror' in file `MMM-2Day-NOAA-Forecast.js`: Replace it with `MagicMirror²`.
+2. Found 'Magic Mirror' in file `README.md`: Replace it with `MagicMirror²`.
+3. Found 'Magic Mirror' in file `node_helper.js`: Replace it with `MagicMirror²`.
+4. Found 'MagicMirror2' in file `package.json`: Replace it with `MagicMirror²`.
+
 ## [MMM-3Day-Forecast by nigel-daniels](https://github.com/nigel-daniels/MMM-3Day-Forecast)
 
 1. Found 'Magic Mirror' in file `MMM-3Day-Forecast.js`: Replace it with `MagicMirror²`.
@@ -111,7 +118,7 @@ Number of analyzed modules: 1015
 2. Found 'Magic Mirror' in file `node_helper.js`: Replace it with `MagicMirror²`.
 3. Found 'require('request')' in file `node_helper.js`: Replace it with built-in fetch.
 
-## [MMM-AVStock by eouia](https://github.com/eouia/MMM-AVStock)
+## [MMM-AVStock by lavolp3](https://github.com/lavolp3/MMM-AVStock)
 
 1. `.gitpod.yml`: Change file extention from `.yml` to `.yaml`: <https://yaml.org/faq.html>.
 
@@ -889,7 +896,7 @@ Number of analyzed modules: 1015
 
 1. `.travis.yml`: Change file extention from `.yml` to `.yaml`: <https://yaml.org/faq.html>.
 
-## [MMM-DropboxWallpaper by eouia](https://github.com/eouia/MMM-DropboxWallpaper)
+## [MMM-DropboxWallpaper by Mong-ni](https://github.com/Mong-ni/MMM-DropboxWallpaper)
 
 1. Found 'Magic Mirror' in file `MMM-DropboxWallpaper.js`: Replace it with `MagicMirror²`.
 2. Found 'require('request')' in file `node_helper.js`: Replace it with built-in fetch.
@@ -1384,7 +1391,7 @@ Number of analyzed modules: 1015
 
 1. Found 'require("request")' in file `MergeRequestFetcher.js`: Replace it with built-in fetch.
 
-## [MMM-Glance by eouia](https://github.com/eouia/MMM-Glance)
+## [MMM-Glance by tttooommm56](https://github.com/tttooommm56/MMM-Glance)
 
 1. Found 'Magic Mirror' in file `MMM-Glance.js`: Replace it with `MagicMirror²`.
 
@@ -1444,7 +1451,7 @@ Number of analyzed modules: 1015
 
 1. Found 'Magic Mirror' in file `MMM-GoogleMapsTraffic.js`: Replace it with `MagicMirror²`.
 
-## [MMM-GooglePhotos by eouia](https://github.com/eouia/MMM-GooglePhotos)
+## [MMM-GooglePhotos by hermanho](https://github.com/hermanho/MMM-GooglePhotos)
 
 1. Found 'electron-rebuild' in file `README.md`: Replace it with `@electron/rebuild`
 2. Found 'require("https")' in file `node_helper.js`: Replace it with built-in fetch.
@@ -1991,7 +1998,7 @@ Number of analyzed modules: 1015
 
 1. Found 'Magic Mirror' in file `README.md`: Replace it with `MagicMirror²`.
 
-## [MMM-LunarDate by eouia](https://github.com/eouia/MMM-LunarDate)
+## [MMM-LunarDate by MMRIZE](https://github.com/MMRIZE/MMM-LunarDate)
 
 1. Found 'require('request')' in file `node_helper.js`: Replace it with built-in fetch.
 
@@ -2186,10 +2193,6 @@ Number of analyzed modules: 1015
 
 1. Found 'Magic Mirror' in file `README.md`: Replace it with `MagicMirror²`.
 2. Found 'Magic Mirror' in file `controls.py`: Replace it with `MagicMirror²`.
-
-## [MMM-ModuleMonkeyPatch by MMRIZE](https://github.com/MMRIZE/MMM-ModuleMonkeyPatch)
-
-1. Found directory `node_modules`. This shouldn't be uploaded. Add `node_modules/`to `.gitignore`.
 
 ## [MMM-ModuleScheduler by ianperrin](https://github.com/ianperrin/MMM-ModuleScheduler)
 
@@ -3307,7 +3310,7 @@ Number of analyzed modules: 1015
 7. Found 'XMLHttpRequest' in file `remote.js`: Replace it with built-in fetch.
 8. Found 'node-fetch' in file `download_modules.js`: Replace it with built-in fetch.
 
-## [MMM-Remote-Control-Repository by eouia](https://github.com/eouia/MMM-Remote-Control-Repository)
+## [MMM-Remote-Control-Repository by MMRIZE](https://github.com/MMRIZE/MMM-Remote-Control-Repository)
 
 1. Found 'Magic Mirror' in file `MMM-Remote-Control-Repository.js`: Replace it with `MagicMirror²`.
 2. Found 'Magic Mirror' in file `node_helper.js`: Replace it with `MagicMirror²`.
@@ -4186,7 +4189,7 @@ Number of analyzed modules: 1015
 1. Found 'Magic Mirror' in file `README.md`: Replace it with `MagicMirror²`.
 2. Found 'Magic Mirror' in file `package.json`: Replace it with `MagicMirror²`.
 
-## [MMM-Volume by eouia](https://github.com/eouia/MMM-Volume)
+## [MMM-Volume by Anonym-tsk](https://github.com/Anonym-tsk/MMM-Volume)
 
 1. Found 'Magic Mirror' in file `MMM-Volume.js`: Replace it with `MagicMirror²`.
 2. Found 'Magic Mirror' in file `node_helper.js`: Replace it with `MagicMirror²`.
@@ -4296,7 +4299,7 @@ Number of analyzed modules: 1015
 
 1. Found 'Magic Mirror' in file `README.md`: Replace it with `MagicMirror²`.
 
-## [MMM-Widget by eouia](https://github.com/eouia/MMM-Widget)
+## [MMM-Widget by ulrichwisser](https://github.com/ulrichwisser/MMM-Widget)
 
 1. Found 'Magic Mirror' in file `MMM-Widget.js`: Replace it with `MagicMirror²`.
 
@@ -5257,7 +5260,7 @@ Number of analyzed modules: 1015
 2. Found 'Magic Mirror' in file `node_helper.js`: Replace it with `MagicMirror²`.
 3. Found 'Magic Mirror' in file `voicecontrol.js`: Replace it with `MagicMirror²`.
 
-## [worldclock by eouia](https://github.com/eouia/worldclock)
+## [worldclock by ulrichwisser](https://github.com/ulrichwisser/worldclock)
 
 1. Module name doesn't follow the recommended pattern (it doesn't start with `MMM-`). Consider renaming your module.
 2. Found 'Magic Mirror' in file `worldclock.js`: Replace it with `MagicMirror²`.
