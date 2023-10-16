@@ -1,6 +1,6 @@
 # Result of the module analysis
 
-Timestamp: 2023-10-16 19:27:43
+Timestamp: 2023-10-16 19:45:18
 
 Number of analyzed modules: 1016
 
@@ -308,6 +308,7 @@ Number of analyzed modules: 1016
 1. Found 'Magic Mirror' in file `MMM-BackgroundSlideshow.js`: Replace it with `MagicMirror²`.
 2. Found 'Magic Mirror' in file `README.md`: Replace it with `MagicMirror²`.
 3. Found 'Magic Mirror' in file `node_helper.js`: Replace it with `MagicMirror²`.
+4. Found 'omxplayer' in file `node_helper.js`: Deprecated: Try to replace it with `vlc`.
 
 ## [MMM-BartTimes by falafel2222](https://github.com/falafel2222/MMM-BartTimes)
 
@@ -889,8 +890,11 @@ Number of analyzed modules: 1016
 ## [MMM-Dreambox by Ax-LED](https://github.com/Ax-LED/MMM-Dreambox)
 
 1. Found 'Magic Mirror' in file `MMM-Dreambox.js`: Replace it with `MagicMirror²`.
-2. Found 'Magic Mirror' in file `node_helper.js`: Replace it with `MagicMirror²`.
-3. Found 'require('request')' in file `node_helper.js`: Replace it with built-in fetch.
+2. Found 'omxplayer' in file `README.md`: Deprecated: Try to replace it with `vlc`.
+3. Found 'Magic Mirror' in file `node_helper.js`: Replace it with `MagicMirror²`.
+4. Found 'require('request')' in file `node_helper.js`: Replace it with built-in fetch.
+5. Found 'omxplayer' in file `node_helper.js`: Deprecated: Try to replace it with `vlc`.
+6. Found 'omxplayer' in file `package.json`: Deprecated: Try to replace it with `vlc`.
 
 ## [MMM-Dribbble by marcobiedermann](https://github.com/marcobiedermann/MMM-dribbble)
 
@@ -937,6 +941,7 @@ Number of analyzed modules: 1016
 
 1. Found 'XMLHttpRequest' in file `MMM-ELMPrayerTime.js`: Replace it with built-in fetch.
 2. Found 'Magic Mirror' in file `node_helper.js`: Replace it with `MagicMirror²`.
+3. Found 'omxplayer' in file `node_helper.js`: Deprecated: Try to replace it with `vlc`.
 
 ## [MMM-EOL by mykle1](https://github.com/mykle1/MMM-EOL)
 
@@ -3003,14 +3008,17 @@ Number of analyzed modules: 1016
 
 ## [MMM-Podcast by ptrbld](https://github.com/ptrbld/MMM-Podcast)
 
-1. Found 'Magic Mirror' in file `node_helper.js`: Replace it with `MagicMirror²`.
-2. Found 'electron-rebuild' in file `package.json`: Replace it with `@electron/rebuild`
+1. Found 'omxplayer' in file `README.md`: Deprecated: Try to replace it with `vlc`.
+2. Found 'Magic Mirror' in file `node_helper.js`: Replace it with `MagicMirror²`.
+3. Found 'electron-rebuild' in file `package.json`: Replace it with `@electron/rebuild`
 
 ## [MMM-Podcast2 by Ax-LED](https://github.com/Ax-LED/MMM-Podcast2)
 
 1. Found 'Magic Mirror' in file `MMM-Podcast2.js`: Replace it with `MagicMirror²`.
-2. Found 'Magic Mirror' in file `node_helper.js`: Replace it with `MagicMirror²`.
-3. Found 'require('request')' in file `node_helper.js`: Replace it with built-in fetch.
+2. Found 'omxplayer' in file `README.md`: Deprecated: Try to replace it with `vlc`.
+3. Found 'Magic Mirror' in file `node_helper.js`: Replace it with `MagicMirror²`.
+4. Found 'require('request')' in file `node_helper.js`: Replace it with built-in fetch.
+5. Found 'omxplayer' in file `node_helper.js`: Deprecated: Try to replace it with `vlc`.
 
 ## [MMM-PoemOfTheDay by Steven-Gassert](https://github.com/Steven-Gassert/MMM-PoemOfTheDay)
 
@@ -3062,7 +3070,9 @@ Number of analyzed modules: 1016
 ## [MMM-PrayerTime by slametps](https://github.com/slametps/MMM-PrayerTime)
 
 1. Found 'XMLHttpRequest' in file `MMM-PrayerTime.js`: Replace it with built-in fetch.
-2. Found 'Magic Mirror' in file `node_helper.js`: Replace it with `MagicMirror²`.
+2. Found 'omxplayer' in file `README.md`: Deprecated: Try to replace it with `vlc`.
+3. Found 'Magic Mirror' in file `node_helper.js`: Replace it with `MagicMirror²`.
+4. Found 'omxplayer' in file `node_helper.js`: Deprecated: Try to replace it with `vlc`.
 
 ## [MMM-PreciousMetals by Fifteen15Studios](https://github.com/Fifteen15Studios/MMM-PreciousMetals)
 
@@ -3113,6 +3123,7 @@ Number of analyzed modules: 1016
 2. Found 'Magic Mirror' in file `MMM-PushBulletNotifications.js`: Replace it with `MagicMirror²`.
 3. Found 'Magic Mirror' in file `node_helper.js`: Replace it with `MagicMirror²`.
 4. Found 'require('https')' in file `node_helper.js`: Replace it with built-in fetch.
+5. Found 'omxplayer' in file `node_helper.js`: Deprecated: Try to replace it with `vlc`.
 
 ## [MMM-QRCode by MarinescuEvghenii](https://github.com/MarinescuEvghenii/MMM-QRCode)
 
@@ -3205,14 +3216,19 @@ Number of analyzed modules: 1016
 
 1. `stale.yml`: Change file extention from `.yml` to `.yaml`: <https://yaml.org/faq.html>.
 2. Found 'Magic Mirror' in file `MMM-RTSPStream.js`: Replace it with `MagicMirror²`.
-3. Found 'Magic Mirror' in file `README.md`: Replace it with `MagicMirror²`.
-4. Found 'Magic Mirror' in file `node_helper.js`: Replace it with `MagicMirror²`.
-5. Found 'node-fetch' in file `node_helper.js`: Replace it with built-in fetch.
-6. Found 'Magic Mirror' in file `package.json`: Replace it with `MagicMirror²`.
-7. Found 'node-fetch' in file `package.json`: Replace it with built-in fetch.
-8. Found 'XMLHttpRequest' in file `jquery-3.2.1.min.js`: Replace it with built-in fetch.
-9. Found 'MagicMirror2' in file `installer.sh`: Replace it with `MagicMirror²`.
-10. Found 'XMLHttpRequest' in file `jsmpeg.min.js`: Replace it with built-in fetch.
+3. Found 'omxplayer' in file `MMM-RTSPStream.js`: Deprecated: Try to replace it with `vlc`.
+4. Found 'Magic Mirror' in file `README.md`: Replace it with `MagicMirror²`.
+5. Found 'omxplayer' in file `README.md`: Deprecated: Try to replace it with `vlc`.
+6. Found 'Magic Mirror' in file `node_helper.js`: Replace it with `MagicMirror²`.
+7. Found 'node-fetch' in file `node_helper.js`: Replace it with built-in fetch.
+8. Found 'omxplayer' in file `node_helper.js`: Deprecated: Try to replace it with `vlc`.
+9. Found 'Magic Mirror' in file `package.json`: Replace it with `MagicMirror²`.
+10. Found 'node-fetch' in file `package.json`: Replace it with built-in fetch.
+11. Found 'omxplayer' in file `config.html`: Deprecated: Try to replace it with `vlc`.
+12. Found 'XMLHttpRequest' in file `jquery-3.2.1.min.js`: Replace it with built-in fetch.
+13. Found 'MagicMirror2' in file `installer.sh`: Replace it with `MagicMirror²`.
+14. Found 'XMLHttpRequest' in file `jsmpeg.min.js`: Replace it with built-in fetch.
+15. Found 'omxplayer' in file `preinstall.sh`: Deprecated: Try to replace it with `vlc`.
 
 ## [MMM-RVV by sebikolon](https://github.com/sebikolon/MMM-RVV)
 
@@ -3305,10 +3321,11 @@ Number of analyzed modules: 1016
 2. `Feature_request.yml`: Change file extention from `.yml` to `.yaml`: <https://yaml.org/faq.html>.
 3. `config.yml`: Change file extention from `.yml` to `.yaml`: <https://yaml.org/faq.html>.
 4. `stale.yml`: Change file extention from `.yml` to `.yaml`: <https://yaml.org/faq.html>.
-5. Found 'Magic Mirror' in file `package.json`: Replace it with `MagicMirror²`.
-6. Found 'node-fetch' in file `package.json`: Replace it with built-in fetch.
-7. Found 'XMLHttpRequest' in file `remote.js`: Replace it with built-in fetch.
-8. Found 'node-fetch' in file `download_modules.js`: Replace it with built-in fetch.
+5. Found 'omxplayer' in file `modules.json`: Deprecated: Try to replace it with `vlc`.
+6. Found 'Magic Mirror' in file `package.json`: Replace it with `MagicMirror²`.
+7. Found 'node-fetch' in file `package.json`: Replace it with built-in fetch.
+8. Found 'XMLHttpRequest' in file `remote.js`: Replace it with built-in fetch.
+9. Found 'node-fetch' in file `download_modules.js`: Replace it with built-in fetch.
 
 ## [MMM-Remote-Control-Repository by MMRIZE](https://github.com/MMRIZE/MMM-Remote-Control-Repository)
 
@@ -4445,11 +4462,12 @@ Number of analyzed modules: 1016
 2. `.travis.yml`: Change file extention from `.yml` to `.yaml`: <https://yaml.org/faq.html>.
 3. Found 'Magic Mirror' in file `README.md`: Replace it with `MagicMirror²`.
 4. Found 'Magic Mirror' in file `README.md`: Replace it with `MagicMirror²`.
-5. Found 'Magic Mirror' in file `index.html`: Replace it with `MagicMirror²`.
-6. Found 'electron-rebuild' in file `installation.md`: Replace it with `@electron/rebuild`
-7. Found 'electron-rebuild' in file `troubleshoot.md`: Replace it with `@electron/rebuild`
-8. Found 'require("request")' in file `node_helper.js`: Replace it with built-in fetch.
-9. Found 'Magic Mirror' in file `package.json`: Replace it with `MagicMirror²`.
+5. Found 'omxplayer' in file `audio-setup.md`: Deprecated: Try to replace it with `vlc`.
+6. Found 'Magic Mirror' in file `index.html`: Replace it with `MagicMirror²`.
+7. Found 'electron-rebuild' in file `installation.md`: Replace it with `@electron/rebuild`
+8. Found 'electron-rebuild' in file `troubleshoot.md`: Replace it with `@electron/rebuild`
+9. Found 'require("request")' in file `node_helper.js`: Replace it with built-in fetch.
+10. Found 'Magic Mirror' in file `package.json`: Replace it with `MagicMirror²`.
 
 ## [MMM-bergfex.at by FatTony404](https://gitlab.com/FatTony404/MMM-bergfex)
 

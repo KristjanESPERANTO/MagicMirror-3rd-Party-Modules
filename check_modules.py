@@ -29,6 +29,7 @@ def check_modules():
         "require('bent')": "Replace it with built-in fetch.",
         "electron-rebuild": "Replace it with `@electron/rebuild`",
         "node-fetch": "Replace it with built-in fetch.",
+        "omxplayer": "Deprecated: Try to replace it with `vlc`.", # https://github.com/popcornmix/omxplayer
         "XMLHttpRequest": "Replace it with built-in fetch.",
         "uses: actions/checkout@v3": "Replace it with v4.",
         "node-version: 14": "Deprecated: Update to current version.",
