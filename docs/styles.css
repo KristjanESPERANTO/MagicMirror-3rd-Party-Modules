@@ -47,6 +47,16 @@ aside {
   border-radius: 5px;
 }
 
+
+.cardHeader{
+  font-size: larger;
+  text-align: center;
+  margin-bottom: 1em;
+}
+.cardHeader a{
+  text-decoration: none;
+}
+
 main {
   display: flex;
   flex-wrap: wrap;

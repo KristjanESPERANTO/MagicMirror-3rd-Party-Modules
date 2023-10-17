@@ -11,13 +11,13 @@ document.addEventListener("DOMContentLoaded", function () {
             const card = document.createElement("div");
             card.className = "card";
             card.innerHTML = `
-              <p>${cardData.name}</p>
+              <div class="cardHeader"><a href="${cardData.link}" target="_blank">${cardData.name}</a></div>
               <img src="${cardData.image}" alt="Image">
-              <p><a href="${cardData.link}" target="_blank">Link</a></p>
               <p>Category: ${cardData.category}</p>
               <p>Tags: ${cardData.tags.map(tag => `#${tag}`).join(" ")}</p>
-              <p>${cardData.text}</p>
+              <p>Text: ${cardData.text}</p>
               <p>Description: ${cardData.description}</p>
+              <p>Maintainer: ${cardData.maintainer}</p>
             `;
 
             cardContainer.appendChild(card);
