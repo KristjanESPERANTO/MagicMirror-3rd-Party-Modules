@@ -35,6 +35,8 @@ Note: This list is not entirely up to date. See the code for current status.
 
 ## Ideas / To do
 
+- Use data from GitHub API: https://api.github.com/repos/MichMich/MagicMirror
+  - Is there also a GitLab API?
 - Create test result overview (like a statistic).
 - Statistics per module
   - last update date
