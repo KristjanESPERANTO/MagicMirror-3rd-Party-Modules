@@ -109,37 +109,39 @@ def check_modules():
         progress = f"{i:4}/{len(all_modules_directories)}\r"
         print(progress, end='')
 
-        module_name = module_directory.name.split("-----")[0]
-        module_owner = module_directory.name.split("-----")[1]
-        issues = []
+        module = {
+            "name": module_directory.name.split("-----")[0],
+            "owner": module_directory.name.split("-----")[1],
+            "issues": []
+        }
 
-        if not module_name.startswith("MMM-"):
-            issues.append(
+        if not module["name"].startswith("MMM-"):
+            module["issues"].append(
                 "Module name doesn't follow the recommended pattern (it doesn't start with `MMM-`). Consider renaming your module.")
 
         for file_path in sorted(module_directory.rglob("*")):
             if file_path.is_dir():
                 # .count == 1: If there is a node_modules directory, there are probably others in it with that name. There does not have to be an additional message for this.
                 if file_path.name == "node_modules" and str(file_path).count("node_modules") == 1:
-                    issues.append(
+                    module["issues"].append(
                         "Found directory `node_modules`. This shouldn't be uploaded. Add `node_modules/`to `.gitignore`.")
             elif not file_path.is_symlink() and "node_modules" not in str(file_path):
                 if "changelog" not in str(file_path).lower() and "package-lock.json" not in str(file_path).lower():
                     for search_string, value in search_strings.items():
                         found_string = search_in_file(file_path, search_string)
                         if found_string:
-                            issues.append(f"{value['category']} - Found '{search_string}' in file `{file_path.name}`: {value['name']}")
-                if ".yml" in str(file_path).lower():
-                    issues.append(
-                        f"`{file_path.name}`: Change file extention from `.yml` to `.yaml`: <https://yaml.org/faq.html>.")
+                            module["issues"].append(f"{value['category']} - Found '{search_string}' in file `{file_path.name}`: {value['name']}")
+                #if ".yml" in str(file_path).lower():
+                #    module["issues"].append(
+                #        f"`{file_path.name}`: Change file extention from `.yml` to `.yaml`: <https://yaml.org/faq.html>.")
 
-        if len(issues) > 0:
+        if len(module["issues"]) > 0:
             url = subprocess.run(f"cd {module_directory} && git remote get-url origin && cd ..",
                                  stdout=subprocess.PIPE, shell=True, check=False)
             url_string = url.stdout.decode().rstrip()
 
-            output.write(f"\n## [{module_name} by {module_owner}]({url_string})\n\n")
-            for idx, issue in enumerate(issues):
+            output.write(f"\n## [{module['name']} by {module['owner']}]({url_string})\n\n")
+            for idx, issue in enumerate(module["issues"]):
                 output.write(f"{idx+1}. {issue}\n")
     print(f"{len(all_modules_directories)} modules analyzed. For results see file result.md.           ")
     output.close()

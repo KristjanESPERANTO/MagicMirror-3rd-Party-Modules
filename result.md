@@ -1,6 +1,6 @@
 # Result of the module analysis
 
-Timestamp: 2023-10-16 20:57:04
+Timestamp: 2023-10-17 23:30:55
 
 Number of analyzed modules: 1016
 
@@ -48,7 +48,6 @@ Number of analyzed modules: 1016
 ## [MM-Remote by Klettner](https://github.com/Klettner/MM-Remote)
 
 1. Module name doesn't follow the recommended pattern (it doesn't start with `MMM-`). Consider renaming your module.
-2. `main.yml`: Change file extention from `.yml` to `.yaml`: <https://yaml.org/faq.html>.
 
 ## [MMM-01ZM by rubinho101](https://github.com/rubinho101/MMM-01ZM)
 
@@ -100,11 +99,10 @@ Number of analyzed modules: 1016
 
 ## [MMM-AQI by ryck](https://github.com/ryck/MMM-AQI)
 
-1. `dependabot.yml`: Change file extention from `.yml` to `.yaml`: <https://yaml.org/faq.html>.
-2. Typo - Found 'Magic Mirror' in file `MMM-AQI.js`: Replace it with `MagicMirror²`.
-3. Typo - Found 'MagicMirror2' in file `README.md`: Replace it with `MagicMirror²`.
-4. Typo - Found 'Magic Mirror' in file `node_helper.js`: Replace it with `MagicMirror²`.
-5. Deprecated - Found 'require("request")' in file `node_helper.js`: Replace it with built-in fetch.
+1. Typo - Found 'Magic Mirror' in file `MMM-AQI.js`: Replace it with `MagicMirror²`.
+2. Typo - Found 'MagicMirror2' in file `README.md`: Replace it with `MagicMirror²`.
+3. Typo - Found 'Magic Mirror' in file `node_helper.js`: Replace it with `MagicMirror²`.
+4. Deprecated - Found 'require("request")' in file `node_helper.js`: Replace it with built-in fetch.
 
 ## [MMM-AT-Bus by Estanz0](https://github.com/Estanz0/MMM-AT-Bus)
 
@@ -117,10 +115,6 @@ Number of analyzed modules: 1016
 1. Typo - Found 'Magic Mirror' in file `MMM-ATM.js`: Replace it with `MagicMirror²`.
 2. Typo - Found 'Magic Mirror' in file `node_helper.js`: Replace it with `MagicMirror²`.
 3. Deprecated - Found 'require('request')' in file `node_helper.js`: Replace it with built-in fetch.
-
-## [MMM-AVStock by lavolp3](https://github.com/lavolp3/MMM-AVStock)
-
-1. `.gitpod.yml`: Change file extention from `.yml` to `.yaml`: <https://yaml.org/faq.html>.
 
 ## [MMM-AareGuru by buge](https://github.com/buge/MMM-AareGuru)
 
@@ -151,8 +145,7 @@ Number of analyzed modules: 1016
 
 ## [MMM-AirQuality by CFenner](https://github.com/CFenner/MMM-AirQuality)
 
-1. `FUNDING.yml`: Change file extention from `.yml` to `.yaml`: <https://yaml.org/faq.html>.
-2. Typo - Found 'Magic Mirror' in file `MMM-AirQuality.js`: Replace it with `MagicMirror²`.
+1. Typo - Found 'Magic Mirror' in file `MMM-AirQuality.js`: Replace it with `MagicMirror²`.
 
 ## [MMM-AirQualityv2 by cslev](https://github.com/cslev/MMM-AirQuality)
 
@@ -175,9 +168,7 @@ Number of analyzed modules: 1016
 
 ## [MMM-AlarmClock by fewieden](https://github.com/fewieden/MMM-AlarmClock)
 
-1. `.codeclimate.yml`: Change file extention from `.yml` to `.yaml`: <https://yaml.org/faq.html>.
-2. `.travis.yml`: Change file extention from `.yml` to `.yaml`: <https://yaml.org/faq.html>.
-3. Typo - Found 'MagicMirror2' in file `package.json`: Replace it with `MagicMirror²`.
+1. Typo - Found 'MagicMirror2' in file `package.json`: Replace it with `MagicMirror²`.
 
 ## [MMM-Alexa by sakirtemel](https://github.com/sakirtemel/MMM-alexa)
 
@@ -367,10 +358,6 @@ Number of analyzed modules: 1016
 2. Typo - Found 'Magic Mirror' in file `README.md`: Replace it with `MagicMirror²`.
 3. Typo - Found 'Magic Mirror' in file `node_helper.js`: Replace it with `MagicMirror²`.
 
-## [MMM-BluetoothDevices by timodejong95](https://github.com/timodejong95/MMM-BluetoothDevices)
-
-1. `nodejs.yml`: Change file extention from `.yml` to `.yaml`: <https://yaml.org/faq.html>.
-
 ## [MMM-Bob-Ross by Veldrovive](https://github.com/Veldrovive/MMM-Bob-Ross)
 
 1. Typo - Found 'Magic Mirror' in file `README.md`: Replace it with `MagicMirror²`.
@@ -383,9 +370,7 @@ Number of analyzed modules: 1016
 
 ## [MMM-BoschSmartHome by jalibu](https://github.com/jalibu/MMM-BoschSmartHome)
 
-1. `FUNDING.yml`: Change file extention from `.yml` to `.yaml`: <https://yaml.org/faq.html>.
-2. `bug_report.yml`: Change file extention from `.yml` to `.yaml`: <https://yaml.org/faq.html>.
-3. Typo - Found 'Magic Mirror' in file `README.md`: Replace it with `MagicMirror²`.
+1. Typo - Found 'Magic Mirror' in file `README.md`: Replace it with `MagicMirror²`.
 
 ## [MMM-Bose-Soundtouch by spoturdeal](https://github.com/spoturdeal/MMM-Bose-Soundtouch)
 
@@ -445,8 +430,7 @@ Number of analyzed modules: 1016
 ## [MMM-CECControl by nischi](https://github.com/nischi/MMM-CECControl)
 
 1. Typo - Found 'Magic Mirror' in file `MMM-CECControl.js`: Replace it with `MagicMirror²`.
-2. `action.yml`: Change file extention from `.yml` to `.yaml`: <https://yaml.org/faq.html>.
-3. Typo - Found 'Magic Mirror' in file `node_helper.js`: Replace it with `MagicMirror²`.
+2. Typo - Found 'Magic Mirror' in file `node_helper.js`: Replace it with `MagicMirror²`.
 
 ## [MMM-CHAMPIONSQUEUE-LEADERBOARD by xadamxk](https://github.com/xadamxk/MMM-CHAMPIONSQUEUE-LEADERBOARD)
 
@@ -473,40 +457,24 @@ Number of analyzed modules: 1016
 
 ## [MMM-CalDAV by MMRIZE](https://github.com/MMRIZE/MMM-CalDAV)
 
-1. `FUNDING.yml`: Change file extention from `.yml` to `.yaml`: <https://yaml.org/faq.html>.
-2. Recommendation - Found 'node-fetch' in file `node_helper.js`: Replace it with built-in fetch.
-3. Recommendation - Found 'node-fetch' in file `package.json`: Replace it with built-in fetch.
+1. Recommendation - Found 'node-fetch' in file `node_helper.js`: Replace it with built-in fetch.
+2. Recommendation - Found 'node-fetch' in file `package.json`: Replace it with built-in fetch.
 
 ## [MMM-CalendarExt2 by MMM-CalendarExt2](https://github.com/MMM-CalendarExt2/MMM-CalendarExt2)
 
 1. Recommendation - Found 'node-fetch' in file `README.md`: Replace it with built-in fetch.
 
-## [MMM-CalendarExt3 by MMRIZE](https://github.com/MMRIZE/MMM-CalendarExt3)
-
-1. `FUNDING.yml`: Change file extention from `.yml` to `.yaml`: <https://yaml.org/faq.html>.
-
-## [MMM-CalendarExt3Agenda by MMRIZE](https://github.com/MMRIZE/MMM-CalendarExt3Agenda)
-
-1. `FUNDING.yml`: Change file extention from `.yml` to `.yaml`: <https://yaml.org/faq.html>.
-
-## [MMM-CalendarExt3Timeline by MMRIZE](https://github.com/MMRIZE/MMM-CalendarExt3Timeline)
-
-1. `FUNDING.yml`: Change file extention from `.yml` to `.yaml`: <https://yaml.org/faq.html>.
-
 ## [MMM-CalendarExtMinimonth by MMM-CalendarExt2](https://github.com/MMM-CalendarExt2/MMM-CalendarExtMinimonth)
 
-1. `dependabot.yml`: Change file extention from `.yml` to `.yaml`: <https://yaml.org/faq.html>.
-2. Typo - Found 'Magic Mirror' in file `MMM-CalendarExtMinimonth.js`: Replace it with `MagicMirror²`.
+1. Typo - Found 'Magic Mirror' in file `MMM-CalendarExtMinimonth.js`: Replace it with `MagicMirror²`.
 
 ## [MMM-CalendarExtPlan by MMM-CalendarExt2](https://github.com/MMM-CalendarExt2/MMM-CalendarExtPlan)
 
-1. `dependabot.yml`: Change file extention from `.yml` to `.yaml`: <https://yaml.org/faq.html>.
-2. Typo - Found 'Magic Mirror' in file `MMM-CalendarExtPlan.js`: Replace it with `MagicMirror²`.
+1. Typo - Found 'Magic Mirror' in file `MMM-CalendarExtPlan.js`: Replace it with `MagicMirror²`.
 
 ## [MMM-CalendarExtTimeline by MMM-CalendarExt2](https://github.com/MMM-CalendarExt2/MMM-CalendarExtTimeline)
 
-1. `dependabot.yml`: Change file extention from `.yml` to `.yaml`: <https://yaml.org/faq.html>.
-2. Typo - Found 'Magic Mirror' in file `MMM-CalendarExtTimeline.js`: Replace it with `MagicMirror²`.
+1. Typo - Found 'Magic Mirror' in file `MMM-CalendarExtTimeline.js`: Replace it with `MagicMirror²`.
 
 ## [MMM-CalendarTodayTomorrow by qunu](https://github.com/qunu/MMM-CalendarTodayTomorrow)
 
@@ -519,8 +487,7 @@ Number of analyzed modules: 1016
 2. Typo - Found 'Magic Mirror' in file `README.md`: Replace it with `MagicMirror²`.
 3. Typo - Found 'Magic Mirror' in file `calendarfetcher.js`: Replace it with `MagicMirror²`.
 4. Typo - Found 'Magic Mirror' in file `node_helper.js`: Replace it with `MagicMirror²`.
-5. `.travis.yml`: Change file extention from `.yml` to `.yaml`: <https://yaml.org/faq.html>.
-6. Deprecated - Found 'require('request')' in file `node-ical.js`: Replace it with built-in fetch.
+5. Deprecated - Found 'require('request')' in file `node-ical.js`: Replace it with built-in fetch.
 
 ## [MMM-Callmonitor-Current-Call by paviro](https://github.com/paviro/MMM-Callmonitor-Current-Call)
 
@@ -693,10 +660,6 @@ Number of analyzed modules: 1016
 1. Typo - Found 'Magic Mirror' in file `MMM-Cursor.js`: Replace it with `MagicMirror²`.
 2. Typo - Found 'Magic Mirror' in file `package.json`: Replace it with `MagicMirror²`.
 
-## [MMM-CustomElementTime by MMRIZE](https://github.com/MMRIZE/MMM-CustomElementTime)
-
-1. `FUNDING.yml`: Change file extention from `.yml` to `.yaml`: <https://yaml.org/faq.html>.
-
 ## [MMM-CyanideHappiness by werthdavid](https://github.com/werthdavid/MMM-CyanideHappiness)
 
 1. Deprecated - Found 'require("request")' in file `node_helper.js`: Replace it with built-in fetch.
@@ -743,17 +706,12 @@ Number of analyzed modules: 1016
 2. Typo - Found 'Magic Mirror' in file `node_helper.js`: Replace it with `MagicMirror²`.
 3. Typo - Found 'Magic Mirror' in file `package.json`: Replace it with `MagicMirror²`.
 
-## [MMM-DVB by skastenholz](https://github.com/skastenholz/MMM-DVB)
-
-1. `.travis.yml`: Change file extention from `.yml` to `.yaml`: <https://yaml.org/faq.html>.
-
 ## [MMM-DWD-Pollen by carstendirks](https://github.com/carstendirks/MMM-DWD-Pollen)
 
 1. Typo - Found 'Magic Mirror' in file `README.md`: Replace it with `MagicMirror²`.
-2. `_config.yml`: Change file extention from `.yml` to `.yaml`: <https://yaml.org/faq.html>.
-3. Typo - Found 'Magic Mirror' in file `node_helper.js`: Replace it with `MagicMirror²`.
-4. Deprecated - Found 'require("request")' in file `node_helper.js`: Replace it with built-in fetch.
-5. Typo - Found 'Magic Mirror' in file `package.json`: Replace it with `MagicMirror²`.
+2. Typo - Found 'Magic Mirror' in file `node_helper.js`: Replace it with `MagicMirror²`.
+3. Deprecated - Found 'require("request")' in file `node_helper.js`: Replace it with built-in fetch.
+4. Typo - Found 'Magic Mirror' in file `package.json`: Replace it with `MagicMirror²`.
 
 ## [MMM-DWD-WarnWeather by LukeSkywalker92](https://github.com/LukeSkywalker92/MMM-DWD-WarnWeather)
 
@@ -773,10 +731,9 @@ Number of analyzed modules: 1016
 ## [MMM-DagelijksWoord by wctimmer](https://github.com/wctimmer/MMM-DagelijksWoord)
 
 1. Recommendation - Found 'uses: actions/checkout@v3' in file `lint.yml`: Replace it with v4.
-2. `lint.yml`: Change file extention from `.yml` to `.yaml`: <https://yaml.org/faq.html>.
-3. Typo - Found 'Magic Mirror' in file `MMM-DagelijksWoord.js`: Replace it with `MagicMirror²`.
-4. Typo - Found 'Magic Mirror' in file `node_helper.js`: Replace it with `MagicMirror²`.
-5. Recommendation - Found 'require("https")' in file `node_helper.js`: Replace it with built-in fetch.
+2. Typo - Found 'Magic Mirror' in file `MMM-DagelijksWoord.js`: Replace it with `MagicMirror²`.
+3. Typo - Found 'Magic Mirror' in file `node_helper.js`: Replace it with `MagicMirror²`.
+4. Recommendation - Found 'require("https")' in file `node_helper.js`: Replace it with built-in fetch.
 
 ## [MMM-Daikin by kymeyer](https://github.com/kymeyer/MMM-daikin)
 
@@ -869,9 +826,8 @@ Number of analyzed modules: 1016
 
 ## [MMM-Discourse-notifications by jordy-u](https://github.com/jordy-u/MMM-Discourse-notifications)
 
-1. `.travis.yml`: Change file extention from `.yml` to `.yaml`: <https://yaml.org/faq.html>.
-2. Recommendation - Found 'node-fetch' in file `DiscourseRequestHandler.js`: Replace it with built-in fetch.
-3. Recommendation - Found 'node-fetch' in file `package.json`: Replace it with built-in fetch.
+1. Recommendation - Found 'node-fetch' in file `DiscourseRequestHandler.js`: Replace it with built-in fetch.
+2. Recommendation - Found 'node-fetch' in file `package.json`: Replace it with built-in fetch.
 
 ## [MMM-DisneyWaitTimes by gberg927](https://github.com/gberg927/MMM-DisneyWaitTimes)
 
@@ -896,10 +852,6 @@ Number of analyzed modules: 1016
 5. Deprecated - Found 'omxplayer' in file `node_helper.js`: Try to replace it with `vlc`.
 6. Deprecated - Found 'omxplayer' in file `package.json`: Try to replace it with `vlc`.
 
-## [MMM-Dribbble by marcobiedermann](https://github.com/marcobiedermann/MMM-dribbble)
-
-1. `.travis.yml`: Change file extention from `.yml` to `.yaml`: <https://yaml.org/faq.html>.
-
 ## [MMM-DropboxWallpaper by Mong-ni](https://github.com/Mong-ni/MMM-DropboxWallpaper)
 
 1. Typo - Found 'Magic Mirror' in file `MMM-DropboxWallpaper.js`: Replace it with `MagicMirror²`.
@@ -915,11 +867,10 @@ Number of analyzed modules: 1016
 
 ## [MMM-DynamicWeather by scottcl88](https://github.com/scottcl88/MMM-DynamicWeather)
 
-1. `codeql-analysis.yml`: Change file extention from `.yml` to `.yaml`: <https://yaml.org/faq.html>.
-2. Typo - Found 'Magic Mirror' in file `MMM-DynamicWeather.ts`: Replace it with `MagicMirror²`.
-3. Typo - Found 'Magic Mirror' in file `node_helper.js`: Replace it with `MagicMirror²`.
-4. Deprecated - Found 'require("request")' in file `node_helper.js`: Replace it with built-in fetch.
-5. Found directory `node_modules`. This shouldn't be uploaded. Add `node_modules/`to `.gitignore`.
+1. Typo - Found 'Magic Mirror' in file `MMM-DynamicWeather.ts`: Replace it with `MagicMirror²`.
+2. Typo - Found 'Magic Mirror' in file `node_helper.js`: Replace it with `MagicMirror²`.
+3. Deprecated - Found 'require("request")' in file `node_helper.js`: Replace it with built-in fetch.
+4. Found directory `node_modules`. This shouldn't be uploaded. Add `node_modules/`to `.gitignore`.
 
 ## [MMM-EARTH by mykle1](https://github.com/mykle1/MMM-EARTH)
 
@@ -963,11 +914,10 @@ Number of analyzed modules: 1016
 
 1. Recommendation - Found 'uses: actions/checkout@v3' in file `nodejs.yml`: Replace it with v4.
 2. Deprecated - Found 'node-version: [16' in file `nodejs.yml`: Update to current version.
-3. `nodejs.yml`: Change file extention from `.yml` to `.yaml`: <https://yaml.org/faq.html>.
-4. Typo - Found 'Magic Mirror' in file `MMM-Ecobee.js`: Replace it with `MagicMirror²`.
-5. Typo - Found 'Magic Mirror' in file `README.md`: Replace it with `MagicMirror²`.
-6. Recommendation - Found 'require("https")' in file `node_helper.js`: Replace it with built-in fetch.
-7. Typo - Found 'MagicMirror2' in file `package.json`: Replace it with `MagicMirror²`.
+3. Typo - Found 'Magic Mirror' in file `MMM-Ecobee.js`: Replace it with `MagicMirror²`.
+4. Typo - Found 'Magic Mirror' in file `README.md`: Replace it with `MagicMirror²`.
+5. Recommendation - Found 'require("https")' in file `node_helper.js`: Replace it with built-in fetch.
+6. Typo - Found 'MagicMirror2' in file `package.json`: Replace it with `MagicMirror²`.
 
 ## [MMM-Ecosia-Tree-Counter by rehne](https://github.com/rehne/MMM-Ecosia-Tree-Counter)
 
@@ -990,8 +940,7 @@ Number of analyzed modules: 1016
 
 ## [MMM-EmbedYoutube by nitpum](https://github.com/nitpum/MMM-EmbedYoutube)
 
-1. `FUNDING.yml`: Change file extention from `.yml` to `.yaml`: <https://yaml.org/faq.html>.
-2. Typo - Found 'Magic Mirror' in file `MMM-EmbedYoutube.js`: Replace it with `MagicMirror²`.
+1. Typo - Found 'Magic Mirror' in file `MMM-EmbedYoutube.js`: Replace it with `MagicMirror²`.
 
 ## [MMM-EnergyMonitor by deg0nz](https://github.com/deg0nz/MMM-EnergyMonitor)
 
@@ -1233,14 +1182,9 @@ Number of analyzed modules: 1016
 
 1. Typo - Found 'Magic Mirror' in file `README.md`: Replace it with `MagicMirror²`.
 
-## [MMM-FlightTracker by tbouron](https://github.com/tbouron/MMM-FlightTracker)
-
-1. `codeql-analysis.yml`: Change file extention from `.yml` to `.yaml`: <https://yaml.org/faq.html>.
-
 ## [MMM-Flights by khassel](https://gitlab.com/khassel/MMM-Flights)
 
-1. `.gitlab-ci.yml`: Change file extention from `.yml` to `.yaml`: <https://yaml.org/faq.html>.
-2. Typo - Found 'MagicMirror2' in file `package.json`: Replace it with `MagicMirror²`.
+1. Typo - Found 'MagicMirror2' in file `package.json`: Replace it with `MagicMirror²`.
 
 ## [MMM-FlightsAbove by E3V3A](https://github.com/E3V3A/MMM-FlightsAbove)
 
@@ -1268,12 +1212,10 @@ Number of analyzed modules: 1016
 
 ## [MMM-Formula1 by ianperrin](https://github.com/ianperrin/MMM-Formula1)
 
-1. `FUNDING.yml`: Change file extention from `.yml` to `.yaml`: <https://yaml.org/faq.html>.
-2. Recommendation - Found 'uses: actions/checkout@v3' in file `node.js.yml`: Replace it with v4.
-3. Deprecated - Found 'node-version: [16' in file `node.js.yml`: Update to current version.
-4. `node.js.yml`: Change file extention from `.yml` to `.yaml`: <https://yaml.org/faq.html>.
-5. Recommendation - Found 'XMLHttpRequest' in file `MMM-Formula1.js`: Replace it with built-in fetch.
-6. Typo - Found 'Magic Mirror' in file `README.md`: Replace it with `MagicMirror²`.
+1. Recommendation - Found 'uses: actions/checkout@v3' in file `node.js.yml`: Replace it with v4.
+2. Deprecated - Found 'node-version: [16' in file `node.js.yml`: Update to current version.
+3. Recommendation - Found 'XMLHttpRequest' in file `MMM-Formula1.js`: Replace it with built-in fetch.
+4. Typo - Found 'Magic Mirror' in file `README.md`: Replace it with `MagicMirror²`.
 
 ## [MMM-Fortnite by retroflex](https://github.com/retroflex/MMM-Fortnite)
 
@@ -1321,19 +1263,15 @@ Number of analyzed modules: 1016
 
 ## [MMM-Fuel by fewieden](https://github.com/fewieden/MMM-Fuel)
 
-1. `.codeclimate.yml`: Change file extention from `.yml` to `.yaml`: <https://yaml.org/faq.html>.
-2. `FUNDING.yml`: Change file extention from `.yml` to `.yaml`: <https://yaml.org/faq.html>.
-3. Deprecated - Found 'node-version: 16' in file `build.yml`: Update to current version.
-4. `build.yml`: Change file extention from `.yml` to `.yaml`: <https://yaml.org/faq.html>.
-5. `changelog.yml`: Change file extention from `.yml` to `.yaml`: <https://yaml.org/faq.html>.
-6. Recommendation - Found 'node-fetch' in file `README.md`: Replace it with built-in fetch.
-7. Recommendation - Found 'node-fetch' in file `autoblog.js`: Replace it with built-in fetch.
-8. Recommendation - Found 'node-fetch' in file `gasbuddy.js`: Replace it with built-in fetch.
-9. Recommendation - Found 'node-fetch' in file `nsw.js`: Replace it with built-in fetch.
-10. Recommendation - Found 'node-fetch' in file `spritpreisrechner.js`: Replace it with built-in fetch.
-11. Recommendation - Found 'node-fetch' in file `tankerkoenig.js`: Replace it with built-in fetch.
-12. Typo - Found 'MagicMirror2' in file `package.json`: Replace it with `MagicMirror²`.
-13. Recommendation - Found 'node-fetch' in file `package.json`: Replace it with built-in fetch.
+1. Deprecated - Found 'node-version: 16' in file `build.yml`: Update to current version.
+2. Recommendation - Found 'node-fetch' in file `README.md`: Replace it with built-in fetch.
+3. Recommendation - Found 'node-fetch' in file `autoblog.js`: Replace it with built-in fetch.
+4. Recommendation - Found 'node-fetch' in file `gasbuddy.js`: Replace it with built-in fetch.
+5. Recommendation - Found 'node-fetch' in file `nsw.js`: Replace it with built-in fetch.
+6. Recommendation - Found 'node-fetch' in file `spritpreisrechner.js`: Replace it with built-in fetch.
+7. Recommendation - Found 'node-fetch' in file `tankerkoenig.js`: Replace it with built-in fetch.
+8. Typo - Found 'MagicMirror2' in file `package.json`: Replace it with `MagicMirror²`.
+9. Recommendation - Found 'node-fetch' in file `package.json`: Replace it with built-in fetch.
 
 ## [MMM-FunnyHolidays by mattileh](https://github.com/mattileh/MMM-FunnyHolidays)
 
@@ -1372,10 +1310,8 @@ Number of analyzed modules: 1016
 
 ## [MMM-GameOfLife by raywo](https://github.com/raywo/MMM-GameOfLife)
 
-1. `.codeclimate.yml`: Change file extention from `.yml` to `.yaml`: <https://yaml.org/faq.html>.
-2. `.travis.yml`: Change file extention from `.yml` to `.yaml`: <https://yaml.org/faq.html>.
-3. Typo - Found 'Magic Mirror' in file `README.md`: Replace it with `MagicMirror²`.
-4. Typo - Found 'MagicMirror2' in file `README.md`: Replace it with `MagicMirror²`.
+1. Typo - Found 'Magic Mirror' in file `README.md`: Replace it with `MagicMirror²`.
+2. Typo - Found 'MagicMirror2' in file `README.md`: Replace it with `MagicMirror²`.
 
 ## [MMM-GeoTracking by asimhsidd](https://github.com/asimhsidd/MMM-GeoTracking)
 
@@ -1384,13 +1320,12 @@ Number of analyzed modules: 1016
 ## [MMM-Gestures by thobach](https://github.com/thobach/MMM-Gestures)
 
 1. Recommendation - Found 'uses: actions/checkout@v3' in file `codeql.yml`: Replace it with v4.
-2. `codeql.yml`: Change file extention from `.yml` to `.yaml`: <https://yaml.org/faq.html>.
-3. Typo - Found 'Magic Mirror' in file `MagicMirror2.ino`: Replace it with `MagicMirror²`.
-4. Typo - Found 'Magic Mirror' in file `MMM-Gestures.js`: Replace it with `MagicMirror²`.
-5. Typo - Found 'Magic Mirror' in file `README.MD`: Replace it with `MagicMirror²`.
-6. Deprecated - Found 'electron-rebuild' in file `README.MD`: Replace it with `@electron/rebuild`
-7. Typo - Found 'Magic Mirror' in file `package.json`: Replace it with `MagicMirror²`.
-8. Deprecated - Found 'electron-rebuild' in file `postinstall`: Replace it with `@electron/rebuild`
+2. Typo - Found 'Magic Mirror' in file `MagicMirror2.ino`: Replace it with `MagicMirror²`.
+3. Typo - Found 'Magic Mirror' in file `MMM-Gestures.js`: Replace it with `MagicMirror²`.
+4. Typo - Found 'Magic Mirror' in file `README.MD`: Replace it with `MagicMirror²`.
+5. Deprecated - Found 'electron-rebuild' in file `README.MD`: Replace it with `@electron/rebuild`
+6. Typo - Found 'Magic Mirror' in file `package.json`: Replace it with `MagicMirror²`.
+7. Deprecated - Found 'electron-rebuild' in file `postinstall`: Replace it with `@electron/rebuild`
 
 ## [MMM-Gitlab-MergeRequests by jkschoen](https://github.com/jkschoen/MMM-Gitlab-MergeRequests)
 
@@ -1411,9 +1346,7 @@ Number of analyzed modules: 1016
 
 ## [MMM-GoogleAssistant by bugsounet](https://github.com/bugsounet/MMM-GoogleAssistant)
 
-1. `dependabot.yml`: Change file extention from `.yml` to `.yaml`: <https://yaml.org/faq.html>.
-2. Recommendation - Found 'uses: actions/checkout@v3' in file `dependency-review.yml`: Replace it with v4.
-3. `dependency-review.yml`: Change file extention from `.yml` to `.yaml`: <https://yaml.org/faq.html>.
+1. Recommendation - Found 'uses: actions/checkout@v3' in file `dependency-review.yml`: Replace it with v4.
 
 ## [MMM-GoogleAssistant by gauravsacc](https://github.com/gauravsacc/MMM-GoogleAssistant)
 
@@ -1423,8 +1356,7 @@ Number of analyzed modules: 1016
 
 ## [MMM-GoogleBirthdaysProvider by PalatinCoder](https://github.com/PalatinCoder/MMM-GoogleBirthdaysProvider)
 
-1. `.travis.yml`: Change file extention from `.yml` to `.yaml`: <https://yaml.org/faq.html>.
-2. Typo - Found 'Magic Mirror' in file `node_helper.js`: Replace it with `MagicMirror²`.
+1. Typo - Found 'Magic Mirror' in file `node_helper.js`: Replace it with `MagicMirror²`.
 
 ## [MMM-GoogleCalendar by randomBrainstormer](https://github.com/randomBrainstormer/MMM-GoogleCalendar)
 
@@ -1432,13 +1364,12 @@ Number of analyzed modules: 1016
 
 ## [MMM-GoogleDocs-Notes by No3x](https://github.com/No3x/MMM-GoogleDocs-Notes)
 
-1. `dependabot.yml`: Change file extention from `.yml` to `.yaml`: <https://yaml.org/faq.html>.
-2. Typo - Found 'Magic Mirror' in file `INSTALL.md`: Replace it with `MagicMirror²`.
-3. Typo - Found 'Magic Mirror' in file `MMM-GoogleDocs-Notes.js`: Replace it with `MagicMirror²`.
-4. Typo - Found 'Magic Mirror' in file `README.md`: Replace it with `MagicMirror²`.
-5. Typo - Found 'Magic Mirror' in file `authorize.mjs`: Replace it with `MagicMirror²`.
-6. Typo - Found 'Magic Mirror' in file `node_helper.js`: Replace it with `MagicMirror²`.
-7. Typo - Found 'Magic Mirror' in file `package.json`: Replace it with `MagicMirror²`.
+1. Typo - Found 'Magic Mirror' in file `INSTALL.md`: Replace it with `MagicMirror²`.
+2. Typo - Found 'Magic Mirror' in file `MMM-GoogleDocs-Notes.js`: Replace it with `MagicMirror²`.
+3. Typo - Found 'Magic Mirror' in file `README.md`: Replace it with `MagicMirror²`.
+4. Typo - Found 'Magic Mirror' in file `authorize.mjs`: Replace it with `MagicMirror²`.
+5. Typo - Found 'Magic Mirror' in file `node_helper.js`: Replace it with `MagicMirror²`.
+6. Typo - Found 'Magic Mirror' in file `package.json`: Replace it with `MagicMirror²`.
 
 ## [MMM-GoogleDriveSlideShow by clegallic](https://github.com/clegallic/MMM-GoogleDriveSlideShow)
 
@@ -1470,8 +1401,7 @@ Number of analyzed modules: 1016
 
 ## [MMM-GoogleTTS by MMRIZE](https://github.com/MMRIZE/MMM-GoogleTTS)
 
-1. `FUNDING.yml`: Change file extention from `.yml` to `.yaml`: <https://yaml.org/faq.html>.
-2. Deprecated - Found 'electron-rebuild' in file `README.md`: Replace it with `@electron/rebuild`
+1. Deprecated - Found 'electron-rebuild' in file `README.md`: Replace it with `@electron/rebuild`
 
 ## [MMM-GrafanaChart by SvenSommer](https://github.com/SvenSommer/MMM-GrafanaChart)
 
@@ -1530,12 +1460,11 @@ Number of analyzed modules: 1016
 
 ## [MMM-HappyHours by aleckeller](https://github.com/aleckeller/MMM-HappyHours)
 
-1. `.travis.yml`: Change file extention from `.yml` to `.yaml`: <https://yaml.org/faq.html>.
-2. Typo - Found 'Magic Mirror' in file `MMM-HappyHours.css`: Replace it with `MagicMirror²`.
-3. Typo - Found 'Magic Mirror' in file `MMM-HappyHours.js`: Replace it with `MagicMirror²`.
-4. Typo - Found 'Magic Mirror' in file `README.md`: Replace it with `MagicMirror²`.
-5. Typo - Found 'Magic Mirror' in file `node_helper.js`: Replace it with `MagicMirror²`.
-6. Deprecated - Found 'require('request')' in file `node_helper.js`: Replace it with built-in fetch.
+1. Typo - Found 'Magic Mirror' in file `MMM-HappyHours.css`: Replace it with `MagicMirror²`.
+2. Typo - Found 'Magic Mirror' in file `MMM-HappyHours.js`: Replace it with `MagicMirror²`.
+3. Typo - Found 'Magic Mirror' in file `README.md`: Replace it with `MagicMirror²`.
+4. Typo - Found 'Magic Mirror' in file `node_helper.js`: Replace it with `MagicMirror²`.
+5. Deprecated - Found 'require('request')' in file `node_helper.js`: Replace it with built-in fetch.
 
 ## [MMM-Helium-Wallet by hayseedbyte](https://github.com/hayseedbyte/mmm-helium-wallet)
 
@@ -1575,12 +1504,9 @@ Number of analyzed modules: 1016
 
 ## [MMM-HomeAssistantDisplay by wonderslug](https://github.com/wonderslug/MMM-HomeAssistantDisplay)
 
-1. `dependabot.yml`: Change file extention from `.yml` to `.yaml`: <https://yaml.org/faq.html>.
-2. `release-drafter.yml`: Change file extention from `.yml` to `.yaml`: <https://yaml.org/faq.html>.
-3. `release-drafter.yml`: Change file extention from `.yml` to `.yaml`: <https://yaml.org/faq.html>.
-4. Typo - Found 'Magic Mirror' in file `MMM-HomeAssistantDisplay.js`: Replace it with `MagicMirror²`.
-5. Typo - Found 'Magic Mirror' in file `README.md`: Replace it with `MagicMirror²`.
-6. Typo - Found 'Magic Mirror' in file `node_helper.js`: Replace it with `MagicMirror²`.
+1. Typo - Found 'Magic Mirror' in file `MMM-HomeAssistantDisplay.js`: Replace it with `MagicMirror²`.
+2. Typo - Found 'Magic Mirror' in file `README.md`: Replace it with `MagicMirror²`.
+3. Typo - Found 'Magic Mirror' in file `node_helper.js`: Replace it with `MagicMirror²`.
 
 ## [MMM-HomeAutomationNotifications by john3300](https://github.com/john3300/MMM-HomeAutomationNotifications)
 
@@ -1611,10 +1537,9 @@ Number of analyzed modules: 1016
 
 ## [MMM-Hover by dancj](https://github.com/dancj/MMM-Hover)
 
-1. `.travis.yml`: Change file extention from `.yml` to `.yaml`: <https://yaml.org/faq.html>.
-2. Typo - Found 'Magic Mirror' in file `MMM-Hover.js`: Replace it with `MagicMirror²`.
-3. Typo - Found 'Magic Mirror' in file `node_helper.js`: Replace it with `MagicMirror²`.
-4. Deprecated - Found 'electron-rebuild' in file `package.json`: Replace it with `@electron/rebuild`
+1. Typo - Found 'Magic Mirror' in file `MMM-Hover.js`: Replace it with `MagicMirror²`.
+2. Typo - Found 'Magic Mirror' in file `node_helper.js`: Replace it with `MagicMirror²`.
+3. Deprecated - Found 'electron-rebuild' in file `package.json`: Replace it with `@electron/rebuild`
 
 ## [MMM-Hue by MitchSS](https://github.com/MitchSS/MMM-Hue)
 
@@ -1641,15 +1566,10 @@ Number of analyzed modules: 1016
 ## [MMM-IDF-LOCALTRANSPORT by djey47](https://github.com/djey47/MMM-IDF-LOCALTRANSPORT)
 
 1. Recommendation - Found 'uses: actions/checkout@v3' in file `mm2-idf.js.yml`: Replace it with v4.
-2. `mm2-idf.js.yml`: Change file extention from `.yml` to `.yaml`: <https://yaml.org/faq.html>.
-3. Typo - Found 'MagicMirror2' in file `README.md`: Replace it with `MagicMirror²`.
-4. Recommendation - Found 'XMLHttpRequest' in file `axios_v0.16.x.js`: Replace it with built-in fetch.
-5. Typo - Found 'Magic Mirror' in file `module.js`: Replace it with `MagicMirror²`.
-6. Typo - Found 'Magic Mirror' in file `helper.js`: Replace it with `MagicMirror²`.
-
-## [MMM-IOTStatus by aduyng](https://github.com/aduyng/MMM-IOTStatus)
-
-1. `config.yml`: Change file extention from `.yml` to `.yaml`: <https://yaml.org/faq.html>.
+2. Typo - Found 'MagicMirror2' in file `README.md`: Replace it with `MagicMirror²`.
+3. Recommendation - Found 'XMLHttpRequest' in file `axios_v0.16.x.js`: Replace it with built-in fetch.
+4. Typo - Found 'Magic Mirror' in file `module.js`: Replace it with `MagicMirror²`.
+5. Typo - Found 'Magic Mirror' in file `helper.js`: Replace it with `MagicMirror²`.
 
 ## [MMM-IPCam by RedNax67](https://github.com/RedNax67/MMM-IPCam)
 
@@ -1791,9 +1711,7 @@ Number of analyzed modules: 1016
 
 ## [MMM-Jast by jalibu](https://github.com/jalibu/MMM-Jast)
 
-1. `FUNDING.yml`: Change file extention from `.yml` to `.yaml`: <https://yaml.org/faq.html>.
-2. `bug_report.yml`: Change file extention from `.yml` to `.yaml`: <https://yaml.org/faq.html>.
-3. Typo - Found 'Magic Mirror' in file `README.md`: Replace it with `MagicMirror²`.
+1. Typo - Found 'Magic Mirror' in file `README.md`: Replace it with `MagicMirror²`.
 
 ## [MMM-Jeedom by prysme01](https://github.com/prysme01/MMM-Jeedom)
 
@@ -1812,9 +1730,7 @@ Number of analyzed modules: 1016
 
 ## [MMM-JsonTable by timdows](https://github.com/timdows/MMM-JsonTable)
 
-1. `dependabot.yml`: Change file extention from `.yml` to `.yaml`: <https://yaml.org/faq.html>.
-2. Recommendation - Found 'uses: actions/checkout@v3' in file `runtest.yml`: Replace it with v4.
-3. `runtest.yml`: Change file extention from `.yml` to `.yaml`: <https://yaml.org/faq.html>.
+1. Recommendation - Found 'uses: actions/checkout@v3' in file `runtest.yml`: Replace it with v4.
 
 ## [MMM-JsonValue by c-klinger](https://github.com/c-klinger/MMM-JsonValue)
 
@@ -1847,19 +1763,17 @@ Number of analyzed modules: 1016
 
 ## [MMM-KeyBindings by shbatm](https://github.com/shbatm/MMM-KeyBindings)
 
-1. `dependabot.yml`: Change file extention from `.yml` to `.yaml`: <https://yaml.org/faq.html>.
-2. Typo - Found 'Magic Mirror' in file `MMM-KeyBindings.js`: Replace it with `MagicMirror²`.
-3. Typo - Found 'Magic Mirror' in file `node_helper.js`: Replace it with `MagicMirror²`.
-4. Deprecated - Found 'electron-rebuild' in file `package.json`: Replace it with `@electron/rebuild`
-5. Deprecated - Found 'electron-rebuild' in file `postinstall.sh`: Replace it with `@electron/rebuild`
+1. Typo - Found 'Magic Mirror' in file `MMM-KeyBindings.js`: Replace it with `MagicMirror²`.
+2. Typo - Found 'Magic Mirror' in file `node_helper.js`: Replace it with `MagicMirror²`.
+3. Deprecated - Found 'electron-rebuild' in file `package.json`: Replace it with `@electron/rebuild`
+4. Deprecated - Found 'electron-rebuild' in file `postinstall.sh`: Replace it with `@electron/rebuild`
 
 ## [MMM-Koket-by-Sodexo by Alvinger](https://github.com/Alvinger/MMM-Koket-by-Sodexo)
 
 1. Typo - Found 'Magic Mirror' in file `MMM-Koket-by-Sodexo.js`: Replace it with `MagicMirror²`.
 2. Typo - Found 'Magic Mirror' in file `node_helper.js`: Replace it with `MagicMirror²`.
 3. Typo - Found 'MagicMirror2' in file `package.json`: Replace it with `MagicMirror²`.
-4. `.travis.yml`: Change file extention from `.yml` to `.yaml`: <https://yaml.org/faq.html>.
-5. Deprecated - Found 'require('request')' in file `node-ical.js`: Replace it with built-in fetch.
+4. Deprecated - Found 'require('request')' in file `node-ical.js`: Replace it with built-in fetch.
 
 ## [MMM-LAMetro by pbuabthong](https://github.com/pbuabthong/MMM-LAMetro)
 
@@ -1887,14 +1801,13 @@ Number of analyzed modules: 1016
 ## [MMM-LKY-TIC by djey47](https://github.com/djey47/MMM-LKY-TIC)
 
 1. Recommendation - Found 'uses: actions/checkout@v3' in file `ci.yml`: Replace it with v4.
-2. `ci.yml`: Change file extention from `.yml` to `.yaml`: <https://yaml.org/faq.html>.
-3. Typo - Found 'MagicMirror2' in file `README.md`: Replace it with `MagicMirror²`.
-4. Typo - Found 'MagicMirror2' in file `package.json`: Replace it with `MagicMirror²`.
-5. Deprecated - Found 'electron-rebuild' in file `package.json`: Replace it with `@electron/rebuild`
-6. Typo - Found 'Magic Mirror' in file `module.ts`: Replace it with `MagicMirror²`.
-7. Typo - Found 'Magic Mirror' in file `helper.ts`: Replace it with `MagicMirror²`.
-8. Typo - Found 'Magic Mirror' in file `helper_impl.ts`: Replace it with `MagicMirror²`.
-9. Typo - Found 'MagicMirror2' in file `init-mmm.ts`: Replace it with `MagicMirror²`.
+2. Typo - Found 'MagicMirror2' in file `README.md`: Replace it with `MagicMirror²`.
+3. Typo - Found 'MagicMirror2' in file `package.json`: Replace it with `MagicMirror²`.
+4. Deprecated - Found 'electron-rebuild' in file `package.json`: Replace it with `@electron/rebuild`
+5. Typo - Found 'Magic Mirror' in file `module.ts`: Replace it with `MagicMirror²`.
+6. Typo - Found 'Magic Mirror' in file `helper.ts`: Replace it with `MagicMirror²`.
+7. Typo - Found 'Magic Mirror' in file `helper_impl.ts`: Replace it with `MagicMirror²`.
+8. Typo - Found 'MagicMirror2' in file `init-mmm.ts`: Replace it with `MagicMirror²`.
 
 ## [MMM-LOLESPORTS-SCHEDULES by xadamxk](https://github.com/xadamxk/MMM-LOLESPORTS-SCHEDULES)
 
@@ -1907,7 +1820,6 @@ Number of analyzed modules: 1016
 ## [MMM-Lastfm by RineshRamadhin](https://github.com/RineshRamadhin/MMM-Lastfm)
 
 1. Recommendation - Found 'uses: actions/checkout@v3' in file `codeql-analysis.yml`: Replace it with v4.
-2. `codeql-analysis.yml`: Change file extention from `.yml` to `.yaml`: <https://yaml.org/faq.html>.
 
 ## [MMM-Launch by mykle1](https://github.com/mykle1/MMM-Launch)
 
@@ -1933,9 +1845,8 @@ Number of analyzed modules: 1016
 
 ## [MMM-LibrespotJava by l3d00m](https://github.com/l3d00m/MMM-LibrespotJava)
 
-1. `.travis.yml`: Change file extention from `.yml` to `.yaml`: <https://yaml.org/faq.html>.
-2. Typo - Found 'Magic Mirror' in file `README.md`: Replace it with `MagicMirror²`.
-3. Deprecated - Found 'require("request")' in file `node_helper.js`: Replace it with built-in fetch.
+1. Typo - Found 'Magic Mirror' in file `README.md`: Replace it with `MagicMirror²`.
+2. Deprecated - Found 'require("request")' in file `node_helper.js`: Replace it with built-in fetch.
 
 ## [MMM-Liquipedia-Dota2 by buxxi](https://github.com/buxxi/MMM-Liquipedia-Dota2)
 
@@ -1957,18 +1868,13 @@ Number of analyzed modules: 1016
 
 ## [MMM-LocalTransport by CFenner](https://github.com/CFenner/MMM-LocalTransport)
 
-1. `FUNDING.yml`: Change file extention from `.yml` to `.yaml`: <https://yaml.org/faq.html>.
-2. Typo - Found 'Magic Mirror' in file `MMM-LocalTransport.js`: Replace it with `MagicMirror²`.
-3. Typo - Found 'Magic Mirror' in file `node_helper.js`: Replace it with `MagicMirror²`.
-4. Deprecated - Found 'require('request')' in file `node_helper.js`: Replace it with built-in fetch.
+1. Typo - Found 'Magic Mirror' in file `MMM-LocalTransport.js`: Replace it with `MagicMirror²`.
+2. Typo - Found 'Magic Mirror' in file `node_helper.js`: Replace it with `MagicMirror²`.
+3. Deprecated - Found 'require('request')' in file `node_helper.js`: Replace it with built-in fetch.
 
 ## [MMM-LocalVideoPlayer by RayTCosgrove](https://github.com/RayTCosgrove/MMM-LocalVideoPlayer)
 
 1. Typo - Found 'Magic Mirror' in file `README.md`: Replace it with `MagicMirror²`.
-
-## [MMM-LogExt by MMRIZE](https://github.com/MMRIZE/MMM-LogExt)
-
-1. `FUNDING.yml`: Change file extention from `.yml` to `.yaml`: <https://yaml.org/faq.html>.
 
 ## [MMM-Logging by shbatm](https://github.com/shbatm/MMM-Logging)
 
@@ -1984,10 +1890,6 @@ Number of analyzed modules: 1016
 
 1. Recommendation - Found 'node-fetch' in file `node_helper.js`: Replace it with built-in fetch.
 2. Recommendation - Found 'node-fetch' in file `package.json`: Replace it with built-in fetch.
-
-## [MMM-LothianBuses by tbouron](https://github.com/tbouron/MMM-LothianBuses)
-
-1. `codeql-analysis.yml`: Change file extention from `.yml` to `.yaml`: <https://yaml.org/faq.html>.
 
 ## [MMM-Lottery by mykle1](https://github.com/mykle1/MMM-Lottery)
 
@@ -2073,10 +1975,6 @@ Number of analyzed modules: 1016
 3. Typo - Found 'Magic Mirror' in file `node_helper.js`: Replace it with `MagicMirror²`.
 4. Typo - Found 'Magic Mirror' in file `subscriber.js`: Replace it with `MagicMirror²`.
 
-## [MMM-MQTT by ottopaulsen](https://github.com/ottopaulsen/MMM-MQTT)
-
-1. `FUNDING.yml`: Change file extention from `.yml` to `.yaml`: <https://yaml.org/faq.html>.
-
 ## [MMM-MQTTbridge by Tom-Hirschberger](https://github.com/Tom-Hirschberger/MMM-MQTTbridge)
 
 1. Typo - Found 'Magic Mirror' in file `MMM-MQTTbridge.js`: Replace it with `MagicMirror²`.
@@ -2101,20 +1999,16 @@ Number of analyzed modules: 1016
 
 ## [MMM-MacAddressScan by doctorfree](https://github.com/doctorfree/MMM-MacAddressScan)
 
-1. `FUNDING.yml`: Change file extention from `.yml` to `.yaml`: <https://yaml.org/faq.html>.
-2. `.travis.yml`: Change file extention from `.yml` to `.yaml`: <https://yaml.org/faq.html>.
-3. Typo - Found 'Magic Mirror' in file `MMM-MacAddressScan.js`: Replace it with `MagicMirror²`.
-4. Typo - Found 'Magic Mirror' in file `node_helper.js`: Replace it with `MagicMirror²`.
+1. Typo - Found 'Magic Mirror' in file `MMM-MacAddressScan.js`: Replace it with `MagicMirror²`.
+2. Typo - Found 'Magic Mirror' in file `node_helper.js`: Replace it with `MagicMirror²`.
 
 ## [MMM-MagicMover by Lavve](https://github.com/Lavve/MMM-MagicMover)
 
-1. `FUNDING.yml`: Change file extention from `.yml` to `.yaml`: <https://yaml.org/faq.html>.
-2. Typo - Found 'Magic Mirror' in file `MMM-MagicMover.js`: Replace it with `MagicMirror²`.
+1. Typo - Found 'Magic Mirror' in file `MMM-MagicMover.js`: Replace it with `MagicMirror²`.
 
 ## [MMM-MagicSuperHero by Lavve](https://github.com/Lavve/MMM-MagicSuperHero)
 
-1. `FUNDING.yml`: Change file extention from `.yml` to `.yaml`: <https://yaml.org/faq.html>.
-2. Deprecated - Found 'require('request')' in file `node_helper.js`: Replace it with built-in fetch.
+1. Deprecated - Found 'require('request')' in file `node_helper.js`: Replace it with built-in fetch.
 
 ## [MMM-MarineWeather by grenagit](https://github.com/grenagit/MMM-MarineWeather)
 
@@ -2129,8 +2023,7 @@ Number of analyzed modules: 1016
 1. Typo - Found 'Magic Mirror' in file `MMM-Mashie-Skolmat.js`: Replace it with `MagicMirror²`.
 2. Typo - Found 'Magic Mirror' in file `node_helper.js`: Replace it with `MagicMirror²`.
 3. Typo - Found 'MagicMirror2' in file `package.json`: Replace it with `MagicMirror²`.
-4. `.travis.yml`: Change file extention from `.yml` to `.yaml`: <https://yaml.org/faq.html>.
-5. Deprecated - Found 'require('request')' in file `node-ical.js`: Replace it with built-in fetch.
+4. Deprecated - Found 'require('request')' in file `node-ical.js`: Replace it with built-in fetch.
 
 ## [MMM-MataChuan by Hcreak](https://github.com/Hcreak/MMM-MataChuan)
 
@@ -2171,11 +2064,8 @@ Number of analyzed modules: 1016
 ## [MMM-MicrosoftToDo by thobach](https://github.com/thobach/MMM-MicrosoftToDo/)
 
 1. Recommendation - Found 'uses: actions/checkout@v3' in file `codeql.yml`: Replace it with v4.
-2. `codeql.yml`: Change file extention from `.yml` to `.yaml`: <https://yaml.org/faq.html>.
-3. `node.js.yml`: Change file extention from `.yml` to `.yaml`: <https://yaml.org/faq.html>.
-4. `.travis.yml`: Change file extention from `.yml` to `.yaml`: <https://yaml.org/faq.html>.
-5. Typo - Found 'Magic Mirror' in file `README.MD`: Replace it with `MagicMirror²`.
-6. Recommendation - Found 'node-fetch' in file `node_helper.js`: Replace it with built-in fetch.
+2. Typo - Found 'Magic Mirror' in file `README.MD`: Replace it with `MagicMirror²`.
+3. Recommendation - Found 'node-fetch' in file `node_helper.js`: Replace it with built-in fetch.
 
 ## [MMM-MieleAtHome by SAR71](https://github.com/SAR71/MMM-MieleAtHome/)
 
@@ -2183,10 +2073,9 @@ Number of analyzed modules: 1016
 
 ## [MMM-MinecraftStatus by ralberth](https://github.com/ralberth/MMM-MinecraftStatus)
 
-1. `.travis.yml`: Change file extention from `.yml` to `.yaml`: <https://yaml.org/faq.html>.
-2. Typo - Found 'Magic Mirror' in file `MMM-MinecraftStatus.js`: Replace it with `MagicMirror²`.
-3. Typo - Found 'Magic Mirror' in file `node_helper.js`: Replace it with `MagicMirror²`.
-4. Deprecated - Found 'electron-rebuild' in file `package.json`: Replace it with `@electron/rebuild`
+1. Typo - Found 'Magic Mirror' in file `MMM-MinecraftStatus.js`: Replace it with `MagicMirror²`.
+2. Typo - Found 'Magic Mirror' in file `node_helper.js`: Replace it with `MagicMirror²`.
+3. Deprecated - Found 'electron-rebuild' in file `package.json`: Replace it with `@electron/rebuild`
 
 ## [MMM-MirrorMirrorOnTheWall by joanaz](https://github.com/joanaz/MMM-MirrorMirrorOnTheWall)
 
@@ -2201,11 +2090,9 @@ Number of analyzed modules: 1016
 
 ## [MMM-ModuleScheduler by ianperrin](https://github.com/ianperrin/MMM-ModuleScheduler)
 
-1. `FUNDING.yml`: Change file extention from `.yml` to `.yaml`: <https://yaml.org/faq.html>.
-2. `node.js.yml`: Change file extention from `.yml` to `.yaml`: <https://yaml.org/faq.html>.
-3. Typo - Found 'Magic Mirror' in file `MMM-ModuleScheduler.js`: Replace it with `MagicMirror²`.
-4. Typo - Found 'Magic Mirror' in file `README.md`: Replace it with `MagicMirror²`.
-5. Typo - Found 'Magic Mirror' in file `node_helper.js`: Replace it with `MagicMirror²`.
+1. Typo - Found 'Magic Mirror' in file `MMM-ModuleScheduler.js`: Replace it with `MagicMirror²`.
+2. Typo - Found 'Magic Mirror' in file `README.md`: Replace it with `MagicMirror²`.
+3. Typo - Found 'Magic Mirror' in file `node_helper.js`: Replace it with `MagicMirror²`.
 
 ## [MMM-ModuleToggleButton by balassy](https://github.com/balassy/MMM-ModuleToggleButton)
 
@@ -2230,8 +2117,7 @@ Number of analyzed modules: 1016
 ## [MMM-MotionControl by nischi](https://github.com/nischi/MMM-MotionControl)
 
 1. Typo - Found 'Magic Mirror' in file `MMM-MotionControl.js`: Replace it with `MagicMirror²`.
-2. `action.yml`: Change file extention from `.yml` to `.yaml`: <https://yaml.org/faq.html>.
-3. Typo - Found 'Magic Mirror' in file `package.json`: Replace it with `MagicMirror²`.
+2. Typo - Found 'Magic Mirror' in file `package.json`: Replace it with `MagicMirror²`.
 
 ## [MMM-MotionDisplay by pjestico](https://github.com/pjestico/MMM-MotionDisplay/)
 
@@ -2239,12 +2125,10 @@ Number of analyzed modules: 1016
 
 ## [MMM-MovieInfo by fewieden](https://github.com/fewieden/MMM-MovieInfo)
 
-1. `.codeclimate.yml`: Change file extention from `.yml` to `.yaml`: <https://yaml.org/faq.html>.
-2. `.travis.yml`: Change file extention from `.yml` to `.yaml`: <https://yaml.org/faq.html>.
-3. Typo - Found 'Magic Mirror' in file `MMM-MovieInfo.js`: Replace it with `MagicMirror²`.
-4. Typo - Found 'Magic Mirror' in file `node_helper.js`: Replace it with `MagicMirror²`.
-5. Deprecated - Found 'require('request')' in file `node_helper.js`: Replace it with built-in fetch.
-6. Typo - Found 'MagicMirror2' in file `package.json`: Replace it with `MagicMirror²`.
+1. Typo - Found 'Magic Mirror' in file `MMM-MovieInfo.js`: Replace it with `MagicMirror²`.
+2. Typo - Found 'Magic Mirror' in file `node_helper.js`: Replace it with `MagicMirror²`.
+3. Deprecated - Found 'require('request')' in file `node_helper.js`: Replace it with built-in fetch.
+4. Typo - Found 'MagicMirror2' in file `package.json`: Replace it with `MagicMirror²`.
 
 ## [MMM-MovieListings by Tueti](https://github.com/Tueti/MMM-MovieListings)
 
@@ -2263,16 +2147,14 @@ Number of analyzed modules: 1016
 ## [MMM-MyCalendar by jclarke0000](https://github.com/jclarke0000/MMM-MyCalendar)
 
 1. Recommendation - Found 'require("https")' in file `calendarfetcher.js`: Replace it with built-in fetch.
-2. `.travis.yml`: Change file extention from `.yml` to `.yaml`: <https://yaml.org/faq.html>.
-3. Deprecated - Found 'require('request')' in file `node-ical.js`: Replace it with built-in fetch.
+2. Deprecated - Found 'require('request')' in file `node-ical.js`: Replace it with built-in fetch.
 
 ## [MMM-MyCommute by qistoph](https://github.com/qistoph/MMM-MyCommute)
 
-1. `.travis.yml`: Change file extention from `.yml` to `.yaml`: <https://yaml.org/faq.html>.
-2. Typo - Found 'Magic Mirror' in file `MMM-MyCommute.js`: Replace it with `MagicMirror²`.
-3. Typo - Found 'MagicMirror2' in file `README.md`: Replace it with `MagicMirror²`.
-4. Typo - Found 'Magic Mirror' in file `node_helper.js`: Replace it with `MagicMirror²`.
-5. Deprecated - Found 'require("request")' in file `node_helper.js`: Replace it with built-in fetch.
+1. Typo - Found 'Magic Mirror' in file `MMM-MyCommute.js`: Replace it with `MagicMirror²`.
+2. Typo - Found 'MagicMirror2' in file `README.md`: Replace it with `MagicMirror²`.
+3. Typo - Found 'Magic Mirror' in file `node_helper.js`: Replace it with `MagicMirror²`.
+4. Deprecated - Found 'require("request")' in file `node_helper.js`: Replace it with built-in fetch.
 
 ## [MMM-MyDutchWeather by htilburgs](https://github.com/htilburgs/MMM-MyDutchWeather)
 
@@ -2299,10 +2181,9 @@ Number of analyzed modules: 1016
 
 1. Recommendation - Found 'uses: actions/checkout@v3' in file `nodejs.yml`: Replace it with v4.
 2. Deprecated - Found 'node-version: [16' in file `nodejs.yml`: Update to current version.
-3. `nodejs.yml`: Change file extention from `.yml` to `.yaml`: <https://yaml.org/faq.html>.
-4. Typo - Found 'Magic Mirror' in file `MMM-MyQ.js`: Replace it with `MagicMirror²`.
-5. Typo - Found 'Magic Mirror' in file `node_helper.js`: Replace it with `MagicMirror²`.
-6. Typo - Found 'MagicMirror2' in file `package.json`: Replace it with `MagicMirror²`.
+3. Typo - Found 'Magic Mirror' in file `MMM-MyQ.js`: Replace it with `MagicMirror²`.
+4. Typo - Found 'Magic Mirror' in file `node_helper.js`: Replace it with `MagicMirror²`.
+5. Typo - Found 'MagicMirror2' in file `package.json`: Replace it with `MagicMirror²`.
 
 ## [MMM-MySenseHat by framboise-pi](https://github.com/framboise-pi/MMM-MySenseHat)
 
@@ -2331,10 +2212,6 @@ Number of analyzed modules: 1016
 ## [MMM-MyTraffic by htilburgs](https://github.com/htilburgs/MMM-MyTraffic)
 
 1. Deprecated - Found 'require('request')' in file `node_helper.js`: Replace it with built-in fetch.
-
-## [MMM-MyTraktSeries by TheVieiraAkA](https://github.com/TheVieiraAkA/MMM-MyTraktSeries)
-
-1. `_config.yml`: Change file extention from `.yml` to `.yaml`: <https://yaml.org/faq.html>.
 
 ## [MMM-MyTransitTime by SageBrushes](https://github.com/SageBrushes/MMM-MyTransitTime)
 
@@ -2395,16 +2272,12 @@ Number of analyzed modules: 1016
 
 ## [MMM-NFL by fewieden](https://github.com/fewieden/MMM-NFL)
 
-1. `.codeclimate.yml`: Change file extention from `.yml` to `.yaml`: <https://yaml.org/faq.html>.
-2. `FUNDING.yml`: Change file extention from `.yml` to `.yaml`: <https://yaml.org/faq.html>.
-3. `build.yml`: Change file extention from `.yml` to `.yaml`: <https://yaml.org/faq.html>.
-4. `changelog.yml`: Change file extention from `.yml` to `.yaml`: <https://yaml.org/faq.html>.
-5. Typo - Found 'Magic Mirror' in file `MMM-NFL.js`: Replace it with `MagicMirror²`.
-6. Recommendation - Found 'node-fetch' in file `README.md`: Replace it with built-in fetch.
-7. Recommendation - Found 'node-fetch' in file `espn.js`: Replace it with built-in fetch.
-8. Typo - Found 'Magic Mirror' in file `node_helper.js`: Replace it with `MagicMirror²`.
-9. Typo - Found 'MagicMirror2' in file `package.json`: Replace it with `MagicMirror²`.
-10. Recommendation - Found 'node-fetch' in file `package.json`: Replace it with built-in fetch.
+1. Typo - Found 'Magic Mirror' in file `MMM-NFL.js`: Replace it with `MagicMirror²`.
+2. Recommendation - Found 'node-fetch' in file `README.md`: Replace it with built-in fetch.
+3. Recommendation - Found 'node-fetch' in file `espn.js`: Replace it with built-in fetch.
+4. Typo - Found 'Magic Mirror' in file `node_helper.js`: Replace it with `MagicMirror²`.
+5. Typo - Found 'MagicMirror2' in file `package.json`: Replace it with `MagicMirror²`.
+6. Recommendation - Found 'node-fetch' in file `package.json`: Replace it with built-in fetch.
 
 ## [MMM-NFTcollections by TemianMihai](https://github.com/TemianMihai/MMM-NFTcollections.git)
 
@@ -2413,24 +2286,18 @@ Number of analyzed modules: 1016
 
 ## [MMM-NHL by fewieden](https://github.com/fewieden/MMM-NHL)
 
-1. `.codeclimate.yml`: Change file extention from `.yml` to `.yaml`: <https://yaml.org/faq.html>.
-2. `FUNDING.yml`: Change file extention from `.yml` to `.yaml`: <https://yaml.org/faq.html>.
-3. Deprecated - Found 'node-version: 16' in file `build.yml`: Update to current version.
-4. `build.yml`: Change file extention from `.yml` to `.yaml`: <https://yaml.org/faq.html>.
-5. `changelog.yml`: Change file extention from `.yml` to `.yaml`: <https://yaml.org/faq.html>.
-6. Recommendation - Found 'node-fetch' in file `README.md`: Replace it with built-in fetch.
-7. Recommendation - Found 'node-fetch' in file `node_helper.js`: Replace it with built-in fetch.
-8. Recommendation - Found 'node-fetch' in file `package.json`: Replace it with built-in fetch.
+1. Deprecated - Found 'node-version: 16' in file `build.yml`: Update to current version.
+2. Recommendation - Found 'node-fetch' in file `README.md`: Replace it with built-in fetch.
+3. Recommendation - Found 'node-fetch' in file `node_helper.js`: Replace it with built-in fetch.
+4. Recommendation - Found 'node-fetch' in file `package.json`: Replace it with built-in fetch.
 
 ## [MMM-NINA by jalibu](https://github.com/jalibu/MMM-NINA)
 
-1. `FUNDING.yml`: Change file extention from `.yml` to `.yaml`: <https://yaml.org/faq.html>.
-2. `bug_report.yml`: Change file extention from `.yml` to `.yaml`: <https://yaml.org/faq.html>.
-3. Typo - Found 'Magic Mirror' in file `README.md`: Replace it with `MagicMirror²`.
-4. Recommendation - Found 'node-fetch' in file `node_helper.js`: Replace it with built-in fetch.
-5. Recommendation - Found 'node-fetch' in file `package.json`: Replace it with built-in fetch.
-6. Recommendation - Found 'node-fetch' in file `rollup.config.js`: Replace it with built-in fetch.
-7. Recommendation - Found 'node-fetch' in file `Backend.ts`: Replace it with built-in fetch.
+1. Typo - Found 'Magic Mirror' in file `README.md`: Replace it with `MagicMirror²`.
+2. Recommendation - Found 'node-fetch' in file `node_helper.js`: Replace it with built-in fetch.
+3. Recommendation - Found 'node-fetch' in file `package.json`: Replace it with built-in fetch.
+4. Recommendation - Found 'node-fetch' in file `rollup.config.js`: Replace it with built-in fetch.
+5. Recommendation - Found 'node-fetch' in file `Backend.ts`: Replace it with built-in fetch.
 
 ## [MMM-NL-rain-intensity by thekampany](https://github.com/thekampany/MMM-NL-rain-intensity)
 
@@ -2529,48 +2396,37 @@ Number of analyzed modules: 1016
 
 ## [MMM-Netatmo by CFenner](https://github.com/CFenner/MMM-Netatmo)
 
-1. `.codeclimate.yml`: Change file extention from `.yml` to `.yaml`: <https://yaml.org/faq.html>.
-2. `.eslintrc.yml`: Change file extention from `.yml` to `.yaml`: <https://yaml.org/faq.html>.
-3. `FUNDING.yml`: Change file extention from `.yml` to `.yaml`: <https://yaml.org/faq.html>.
-4. Deprecated - Found 'node-version: [16' in file `validation.yml`: Update to current version.
-5. `validation.yml`: Change file extention from `.yml` to `.yaml`: <https://yaml.org/faq.html>.
-6. `.markdownlint.yml`: Change file extention from `.yml` to `.yaml`: <https://yaml.org/faq.html>.
-7. `.stylelintrc.yml`: Change file extention from `.yml` to `.yaml`: <https://yaml.org/faq.html>.
-8. `docker-compose.yml`: Change file extention from `.yml` to `.yaml`: <https://yaml.org/faq.html>.
-9. Typo - Found 'Magic Mirror' in file `helper.js`: Replace it with `MagicMirror²`.
+1. Deprecated - Found 'node-version: [16' in file `validation.yml`: Update to current version.
+2. Typo - Found 'Magic Mirror' in file `helper.js`: Replace it with `MagicMirror²`.
+3. Typo - Found '<sub>2</sub>' in file `cs.json`: Replace it with `²`.`.
+4. Typo - Found '<sub>2</sub>' in file `de.json`: Replace it with `²`.`.
+5. Typo - Found '<sub>2</sub>' in file `en.json`: Replace it with `²`.`.
+6. Typo - Found '<sub>2</sub>' in file `fr.json`: Replace it with `²`.`.
+7. Typo - Found '<sub>2</sub>' in file `hu.json`: Replace it with `²`.`.
+8. Typo - Found '<sub>2</sub>' in file `nb.json`: Replace it with `²`.`.
+9. Typo - Found '<sub>2</sub>' in file `nn.json`: Replace it with `²`.`.
+10. Typo - Found '<sub>2</sub>' in file `ru.json`: Replace it with `²`.`.
+11. Typo - Found 'Magic Mirror' in file `netatmo.js`: Replace it with `MagicMirror²`.
+12. Typo - Found 'Magic Mirror' in file `node_helper.js`: Replace it with `MagicMirror²`.
+
+## [MMM-Netatmo by RaymondMolenaar](https://github.com/RaymondMolenaar/MMM-Netatmo)
+
+1. Typo - Found 'Magic Mirror' in file `MMM-Netatmo.js`: Replace it with `MagicMirror²`.
+2. Typo - Found 'Magic Mirror' in file `MMM-Netatmo.js`: Replace it with `MagicMirror²`.
+3. Typo - Found '<sub>2</sub>' in file `cs.json`: Replace it with `²`.`.
+4. Typo - Found '<sub>2</sub>' in file `de.json`: Replace it with `²`.`.
+5. Typo - Found '<sub>2</sub>' in file `en.json`: Replace it with `²`.`.
+6. Typo - Found '<sub>2</sub>' in file `fr.json`: Replace it with `²`.`.
+7. Typo - Found '<sub>2</sub>' in file `nb.json`: Replace it with `²`.`.
+8. Typo - Found '<sub>2</sub>' in file `nl.json`: Replace it with `²`.`.
+9. Typo - Found '<sub>2</sub>' in file `nn.json`: Replace it with `²`.`.
 10. Typo - Found '<sub>2</sub>' in file `cs.json`: Replace it with `²`.`.
 11. Typo - Found '<sub>2</sub>' in file `de.json`: Replace it with `²`.`.
 12. Typo - Found '<sub>2</sub>' in file `en.json`: Replace it with `²`.`.
 13. Typo - Found '<sub>2</sub>' in file `fr.json`: Replace it with `²`.`.
-14. Typo - Found '<sub>2</sub>' in file `hu.json`: Replace it with `²`.`.
-15. Typo - Found '<sub>2</sub>' in file `nb.json`: Replace it with `²`.`.
+14. Typo - Found '<sub>2</sub>' in file `nb.json`: Replace it with `²`.`.
+15. Typo - Found '<sub>2</sub>' in file `nl.json`: Replace it with `²`.`.
 16. Typo - Found '<sub>2</sub>' in file `nn.json`: Replace it with `²`.`.
-17. Typo - Found '<sub>2</sub>' in file `ru.json`: Replace it with `²`.`.
-18. Typo - Found 'Magic Mirror' in file `netatmo.js`: Replace it with `MagicMirror²`.
-19. Typo - Found 'Magic Mirror' in file `node_helper.js`: Replace it with `MagicMirror²`.
-
-## [MMM-Netatmo by RaymondMolenaar](https://github.com/RaymondMolenaar/MMM-Netatmo)
-
-1. `nodejs.yml`: Change file extention from `.yml` to `.yaml`: <https://yaml.org/faq.html>.
-2. `.travis.yml`: Change file extention from `.yml` to `.yaml`: <https://yaml.org/faq.html>.
-3. Typo - Found 'Magic Mirror' in file `MMM-Netatmo.js`: Replace it with `MagicMirror²`.
-4. `.codeclimate.yml`: Change file extention from `.yml` to `.yaml`: <https://yaml.org/faq.html>.
-5. `.travis.yml`: Change file extention from `.yml` to `.yaml`: <https://yaml.org/faq.html>.
-6. Typo - Found 'Magic Mirror' in file `MMM-Netatmo.js`: Replace it with `MagicMirror²`.
-7. Typo - Found '<sub>2</sub>' in file `cs.json`: Replace it with `²`.`.
-8. Typo - Found '<sub>2</sub>' in file `de.json`: Replace it with `²`.`.
-9. Typo - Found '<sub>2</sub>' in file `en.json`: Replace it with `²`.`.
-10. Typo - Found '<sub>2</sub>' in file `fr.json`: Replace it with `²`.`.
-11. Typo - Found '<sub>2</sub>' in file `nb.json`: Replace it with `²`.`.
-12. Typo - Found '<sub>2</sub>' in file `nl.json`: Replace it with `²`.`.
-13. Typo - Found '<sub>2</sub>' in file `nn.json`: Replace it with `²`.`.
-14. Typo - Found '<sub>2</sub>' in file `cs.json`: Replace it with `²`.`.
-15. Typo - Found '<sub>2</sub>' in file `de.json`: Replace it with `²`.`.
-16. Typo - Found '<sub>2</sub>' in file `en.json`: Replace it with `²`.`.
-17. Typo - Found '<sub>2</sub>' in file `fr.json`: Replace it with `²`.`.
-18. Typo - Found '<sub>2</sub>' in file `nb.json`: Replace it with `²`.`.
-19. Typo - Found '<sub>2</sub>' in file `nl.json`: Replace it with `²`.`.
-20. Typo - Found '<sub>2</sub>' in file `nn.json`: Replace it with `²`.`.
 
 ## [MMM-Netatmo-Presence by AgP42](https://github.com/AgP42/MMM-Netatmo-Presence)
 
@@ -2589,9 +2445,8 @@ Number of analyzed modules: 1016
 
 ## [MMM-NetworkScanner by spitzlbergerj](https://github.com/spitzlbergerj/MMM-NetworkScanner)
 
-1. `.travis.yml`: Change file extention from `.yml` to `.yaml`: <https://yaml.org/faq.html>.
-2. Typo - Found 'Magic Mirror' in file `MMM-NetworkScanner.js`: Replace it with `MagicMirror²`.
-3. Typo - Found 'Magic Mirror' in file `node_helper.js`: Replace it with `MagicMirror²`.
+1. Typo - Found 'Magic Mirror' in file `MMM-NetworkScanner.js`: Replace it with `MagicMirror²`.
+2. Typo - Found 'Magic Mirror' in file `node_helper.js`: Replace it with `MagicMirror²`.
 
 ## [MMM-News-QR by nischi](https://github.com/nischi/MMM-News-QR)
 
@@ -2615,8 +2470,7 @@ Number of analyzed modules: 1016
 
 ## [MMM-NiceHash by mlbonniec](https://github.com/mlbonniec/MMM-NiceHash)
 
-1. `build.yml`: Change file extention from `.yml` to `.yaml`: <https://yaml.org/faq.html>.
-2. Recommendation - Found 'XMLHttpRequest' in file `MMM-NiceHash.js`: Replace it with built-in fetch.
+1. Recommendation - Found 'XMLHttpRequest' in file `MMM-NiceHash.js`: Replace it with built-in fetch.
 
 ## [MMM-Nightscout by bureus](https://github.com/bureus/MMM-Nightscout)
 
@@ -2640,10 +2494,6 @@ Number of analyzed modules: 1016
 2. Typo - Found 'Magic Mirror' in file `README.md`: Replace it with `MagicMirror²`.
 3. Typo - Found 'Magic Mirror' in file `package.json`: Replace it with `MagicMirror²`.
 
-## [MMM-NotificationTrigger by MMRIZE](https://github.com/MMRIZE/MMM-NotificationTrigger)
-
-1. `FUNDING.yml`: Change file extention from `.yml` to `.yaml`: <https://yaml.org/faq.html>.
-
 ## [MMM-Notion by choffmann](https://github.com/choffmann/MMM-Notion)
 
 1. Typo - Found 'Magic Mirror' in file `MMM-Notion.js`: Replace it with `MagicMirror²`.
@@ -2659,9 +2509,7 @@ Number of analyzed modules: 1016
 
 ## [MMM-NowPlayingOnSpotify by raywo](https://github.com/raywo/MMM-NowPlayingOnSpotify)
 
-1. `.codeclimate.yml`: Change file extention from `.yml` to `.yaml`: <https://yaml.org/faq.html>.
-2. `.travis.yml`: Change file extention from `.yml` to `.yaml`: <https://yaml.org/faq.html>.
-3. Deprecated - Found 'require('request')' in file `app.js`: Replace it with built-in fetch.
+1. Deprecated - Found 'require('request')' in file `app.js`: Replace it with built-in fetch.
 
 ## [MMM-NsInfo by mfurious](https://github.com/mfurious/MMM-NsInfo)
 
@@ -2694,15 +2542,11 @@ Number of analyzed modules: 1016
 
 ## [MMM-OlympicGames by fewieden](https://github.com/fewieden/MMM-OlympicGames)
 
-1. `.codeclimate.yml`: Change file extention from `.yml` to `.yaml`: <https://yaml.org/faq.html>.
-2. `FUNDING.yml`: Change file extention from `.yml` to `.yaml`: <https://yaml.org/faq.html>.
-3. `build.yml`: Change file extention from `.yml` to `.yaml`: <https://yaml.org/faq.html>.
-4. `changelog.yml`: Change file extention from `.yml` to `.yaml`: <https://yaml.org/faq.html>.
-5. Recommendation - Found 'node-fetch' in file `README.md`: Replace it with built-in fetch.
-6. Recommendation - Found 'node-fetch' in file `package.json`: Replace it with built-in fetch.
-7. Recommendation - Found 'node-fetch' in file `bloomberg.js`: Replace it with built-in fetch.
-8. Recommendation - Found 'node-fetch' in file `nbc.js`: Replace it with built-in fetch.
-9. Recommendation - Found 'node-fetch' in file `paralympic.js`: Replace it with built-in fetch.
+1. Recommendation - Found 'node-fetch' in file `README.md`: Replace it with built-in fetch.
+2. Recommendation - Found 'node-fetch' in file `package.json`: Replace it with built-in fetch.
+3. Recommendation - Found 'node-fetch' in file `bloomberg.js`: Replace it with built-in fetch.
+4. Recommendation - Found 'node-fetch' in file `nbc.js`: Replace it with built-in fetch.
+5. Recommendation - Found 'node-fetch' in file `paralympic.js`: Replace it with built-in fetch.
 
 ## [MMM-OnScreenMenu by shbatm](https://github.com/shbatm/MMM-OnScreenMenu)
 
@@ -2711,34 +2555,32 @@ Number of analyzed modules: 1016
 
 ## [MMM-OnSpotify by Fabrizz](https://github.com/Fabrizz/MMM-OnSpotify)
 
-1. `dependabot.yml`: Change file extention from `.yml` to `.yaml`: <https://yaml.org/faq.html>.
-2. Typo - Found 'Magic Mirror' in file `README.md`: Replace it with `MagicMirror²`.
-3. Deprecated - Found 'require("request")' in file `authorization.js`: Replace it with built-in fetch.
-4. Recommendation - Found 'XMLHttpRequest' in file `jquery-1.10.1.min.js`: Replace it with built-in fetch.
-5. Typo - Found 'MagicMirror2' in file `package.json`: Replace it with `MagicMirror²`.
-6. Recommendation - Found 'node-fetch' in file `package.json`: Replace it with built-in fetch.
-7. Recommendation - Found 'node-fetch' in file `SpotifyFetcher.js`: Replace it with built-in fetch.
+1. Typo - Found 'Magic Mirror' in file `README.md`: Replace it with `MagicMirror²`.
+2. Deprecated - Found 'require("request")' in file `authorization.js`: Replace it with built-in fetch.
+3. Recommendation - Found 'XMLHttpRequest' in file `jquery-1.10.1.min.js`: Replace it with built-in fetch.
+4. Typo - Found 'MagicMirror2' in file `package.json`: Replace it with `MagicMirror²`.
+5. Recommendation - Found 'node-fetch' in file `package.json`: Replace it with built-in fetch.
+6. Recommendation - Found 'node-fetch' in file `SpotifyFetcher.js`: Replace it with built-in fetch.
 
 ## [MMM-OnThisDay by nkl-kst](https://github.com/nkl-kst/MMM-OnThisDay)
 
-1. `ci.yml`: Change file extention from `.yml` to `.yaml`: <https://yaml.org/faq.html>.
-2. Typo - Found 'Magic Mirror' in file `EventService.js`: Replace it with `MagicMirror²`.
-3. Typo - Found 'Magic Mirror' in file `LoggerProxy.js`: Replace it with `MagicMirror²`.
-4. Typo - Found 'Magic Mirror' in file `MMM-OnThisDay.css`: Replace it with `MagicMirror²`.
-5. Typo - Found 'Magic Mirror' in file `MMM-OnThisDay.js`: Replace it with `MagicMirror²`.
-6. Typo - Found 'Magic Mirror' in file `MMM-OnThisDay.njk`: Replace it with `MagicMirror²`.
-7. Typo - Found 'Magic Mirror' in file `Vagrantfile`: Replace it with `MagicMirror²`.
-8. Typo - Found 'Magic Mirror' in file `WikiCssSelectors.js`: Replace it with `MagicMirror²`.
-9. Typo - Found 'Magic Mirror' in file `node_helper.js`: Replace it with `MagicMirror²`.
-10. Typo - Found 'Magic Mirror' in file `HelperTestEnv.js`: Replace it with `MagicMirror²`.
-11. Typo - Found 'Magic Mirror' in file `ModuleTestEnv.js`: Replace it with `MagicMirror²`.
-12. Typo - Found 'Magic Mirror' in file `WikiSiteTest.js`: Replace it with `MagicMirror²`.
-13. Typo - Found 'Magic Mirror' in file `EventServiceTest.js`: Replace it with `MagicMirror²`.
-14. Typo - Found 'Magic Mirror' in file `MMM-OnThisDayTest.js`: Replace it with `MagicMirror²`.
-15. Typo - Found 'Magic Mirror' in file `node_helperTest.js`: Replace it with `MagicMirror²`.
-16. Typo - Found 'Magic Mirror' in file `config.js`: Replace it with `MagicMirror²`.
-17. Typo - Found 'Magic Mirror' in file `magicmirror.sh`: Replace it with `MagicMirror²`.
-18. Typo - Found 'Magic Mirror' in file `packages.sh`: Replace it with `MagicMirror²`.
+1. Typo - Found 'Magic Mirror' in file `EventService.js`: Replace it with `MagicMirror²`.
+2. Typo - Found 'Magic Mirror' in file `LoggerProxy.js`: Replace it with `MagicMirror²`.
+3. Typo - Found 'Magic Mirror' in file `MMM-OnThisDay.css`: Replace it with `MagicMirror²`.
+4. Typo - Found 'Magic Mirror' in file `MMM-OnThisDay.js`: Replace it with `MagicMirror²`.
+5. Typo - Found 'Magic Mirror' in file `MMM-OnThisDay.njk`: Replace it with `MagicMirror²`.
+6. Typo - Found 'Magic Mirror' in file `Vagrantfile`: Replace it with `MagicMirror²`.
+7. Typo - Found 'Magic Mirror' in file `WikiCssSelectors.js`: Replace it with `MagicMirror²`.
+8. Typo - Found 'Magic Mirror' in file `node_helper.js`: Replace it with `MagicMirror²`.
+9. Typo - Found 'Magic Mirror' in file `HelperTestEnv.js`: Replace it with `MagicMirror²`.
+10. Typo - Found 'Magic Mirror' in file `ModuleTestEnv.js`: Replace it with `MagicMirror²`.
+11. Typo - Found 'Magic Mirror' in file `WikiSiteTest.js`: Replace it with `MagicMirror²`.
+12. Typo - Found 'Magic Mirror' in file `EventServiceTest.js`: Replace it with `MagicMirror²`.
+13. Typo - Found 'Magic Mirror' in file `MMM-OnThisDayTest.js`: Replace it with `MagicMirror²`.
+14. Typo - Found 'Magic Mirror' in file `node_helperTest.js`: Replace it with `MagicMirror²`.
+15. Typo - Found 'Magic Mirror' in file `config.js`: Replace it with `MagicMirror²`.
+16. Typo - Found 'Magic Mirror' in file `magicmirror.sh`: Replace it with `MagicMirror²`.
+17. Typo - Found 'Magic Mirror' in file `packages.sh`: Replace it with `MagicMirror²`.
 
 ## [MMM-OneBusAway by jugler](https://github.com/jugler/MMM-OneBusAway)
 
@@ -2914,11 +2756,9 @@ Number of analyzed modules: 1016
 
 ## [MMM-PersonalConfig by CFenner](https://github.com/CFenner/MMM-PersonalConfig-Template)
 
-1. `FUNDING.yml`: Change file extention from `.yml` to `.yaml`: <https://yaml.org/faq.html>.
-2. `sync-from-template.yml`: Change file extention from `.yml` to `.yaml`: <https://yaml.org/faq.html>.
-3. Typo - Found 'Magic Mirror' in file `MMM-PersonalConfig.js`: Replace it with `MagicMirror²`.
-4. Typo - Found 'Magic Mirror' in file `config.js.sample`: Replace it with `MagicMirror²`.
-5. Typo - Found 'Magic Mirror' in file `custom.css.sample`: Replace it with `MagicMirror²`.
+1. Typo - Found 'Magic Mirror' in file `MMM-PersonalConfig.js`: Replace it with `MagicMirror²`.
+2. Typo - Found 'Magic Mirror' in file `config.js.sample`: Replace it with `MagicMirror²`.
+3. Typo - Found 'Magic Mirror' in file `custom.css.sample`: Replace it with `MagicMirror²`.
 
 ## [MMM-PetFinder by mykle1](https://github.com/mykle1/MMM-PetFinder)
 
@@ -2964,9 +2804,7 @@ Number of analyzed modules: 1016
 
 ## [MMM-Pir by bugsounet](https://github.com/bugsounet/MMM-Pir)
 
-1. `dependabot.yml`: Change file extention from `.yml` to `.yaml`: <https://yaml.org/faq.html>.
-2. Recommendation - Found 'uses: actions/checkout@v3' in file `dependency-review.yml`: Replace it with v4.
-3. `dependency-review.yml`: Change file extention from `.yml` to `.yaml`: <https://yaml.org/faq.html>.
+1. Recommendation - Found 'uses: actions/checkout@v3' in file `dependency-review.yml`: Replace it with v4.
 
 ## [MMM-PirateSkyForecast by dankerthrone](https://github.com/dankerthrone/MMM-PirateSkyForecast)
 
@@ -2982,8 +2820,7 @@ Number of analyzed modules: 1016
 
 ## [MMM-Planetarium by MMRIZE](https://github.com/MMRIZE/MMM-Planetarium)
 
-1. `FUNDING.yml`: Change file extention from `.yml` to `.yaml`: <https://yaml.org/faq.html>.
-2. Recommendation - Found 'XMLHttpRequest' in file `stuquery.min.js`: Replace it with built-in fetch.
+1. Recommendation - Found 'XMLHttpRequest' in file `stuquery.min.js`: Replace it with built-in fetch.
 
 ## [MMM-Plantower by gimdh](https://github.com/gimdh/MMM-Plantower)
 
@@ -3141,9 +2978,7 @@ Number of analyzed modules: 1016
 
 ## [MMM-RAIN-MAP by jalibu](https://github.com/jalibu/MMM-RAIN-MAP)
 
-1. `FUNDING.yml`: Change file extention from `.yml` to `.yaml`: <https://yaml.org/faq.html>.
-2. `bug_report.yml`: Change file extention from `.yml` to `.yaml`: <https://yaml.org/faq.html>.
-3. Typo - Found 'Magic Mirror' in file `README.md`: Replace it with `MagicMirror²`.
+1. Typo - Found 'Magic Mirror' in file `README.md`: Replace it with `MagicMirror²`.
 
 ## [MMM-RAIN-RADAR by jojoduquartier](https://github.com/jojoduquartier/MMM-RAIN-RADAR)
 
@@ -3152,17 +2987,16 @@ Number of analyzed modules: 1016
 
 ## [MMM-RBB-Weather by nkl-kst](https://github.com/nkl-kst/MMM-RBB-Weather)
 
-1. `.travis.yml`: Change file extention from `.yml` to `.yaml`: <https://yaml.org/faq.html>.
-2. Typo - Found 'Magic Mirror' in file `IconMapper.js`: Replace it with `MagicMirror²`.
-3. Typo - Found 'Magic Mirror' in file `Logger.js`: Replace it with `MagicMirror²`.
-4. Typo - Found 'Magic Mirror' in file `MMM-RBB-Weather.css`: Replace it with `MagicMirror²`.
-5. Typo - Found 'Magic Mirror' in file `MMM-RBB-Weather.js`: Replace it with `MagicMirror²`.
-6. Typo - Found 'Magic Mirror' in file `node_helper.js`: Replace it with `MagicMirror²`.
-7. Recommendation - Found 'require('https')' in file `node_helper.js`: Replace it with built-in fetch.
-8. Typo - Found 'Magic Mirror' in file `MagicMirrorTestEnv.js`: Replace it with `MagicMirror²`.
-9. Typo - Found 'Magic Mirror' in file `ModuleTest.js`: Replace it with `MagicMirror²`.
-10. Typo - Found 'Magic Mirror' in file `TestConfig.js`: Replace it with `MagicMirror²`.
-11. Recommendation - Found 'require('https')' in file `EndpointTest.js`: Replace it with built-in fetch.
+1. Typo - Found 'Magic Mirror' in file `IconMapper.js`: Replace it with `MagicMirror²`.
+2. Typo - Found 'Magic Mirror' in file `Logger.js`: Replace it with `MagicMirror²`.
+3. Typo - Found 'Magic Mirror' in file `MMM-RBB-Weather.css`: Replace it with `MagicMirror²`.
+4. Typo - Found 'Magic Mirror' in file `MMM-RBB-Weather.js`: Replace it with `MagicMirror²`.
+5. Typo - Found 'Magic Mirror' in file `node_helper.js`: Replace it with `MagicMirror²`.
+6. Recommendation - Found 'require('https')' in file `node_helper.js`: Replace it with built-in fetch.
+7. Typo - Found 'Magic Mirror' in file `MagicMirrorTestEnv.js`: Replace it with `MagicMirror²`.
+8. Typo - Found 'Magic Mirror' in file `ModuleTest.js`: Replace it with `MagicMirror²`.
+9. Typo - Found 'Magic Mirror' in file `TestConfig.js`: Replace it with `MagicMirror²`.
+10. Recommendation - Found 'require('https')' in file `EndpointTest.js`: Replace it with built-in fetch.
 
 ## [MMM-RKI-Covid19 by fhinder](https://github.com/fhinder/MMM-RKI-Covid19)
 
@@ -3177,13 +3011,11 @@ Number of analyzed modules: 1016
 
 ## [MMM-RNV by jalibu](https://github.com/jalibu/MMM-RNV)
 
-1. `FUNDING.yml`: Change file extention from `.yml` to `.yaml`: <https://yaml.org/faq.html>.
-2. `bug_report.yml`: Change file extention from `.yml` to `.yaml`: <https://yaml.org/faq.html>.
-3. Typo - Found 'Magic Mirror' in file `MMM-RNV.css`: Replace it with `MagicMirror²`.
-4. Recommendation - Found 'node-fetch' in file `node_helper.js`: Replace it with built-in fetch.
-5. Recommendation - Found 'node-fetch' in file `package.json`: Replace it with built-in fetch.
-6. Recommendation - Found 'node-fetch' in file `rollup.config.js`: Replace it with built-in fetch.
-7. Recommendation - Found 'node-fetch' in file `Backend.ts`: Replace it with built-in fetch.
+1. Typo - Found 'Magic Mirror' in file `MMM-RNV.css`: Replace it with `MagicMirror²`.
+2. Recommendation - Found 'node-fetch' in file `node_helper.js`: Replace it with built-in fetch.
+3. Recommendation - Found 'node-fetch' in file `package.json`: Replace it with built-in fetch.
+4. Recommendation - Found 'node-fetch' in file `rollup.config.js`: Replace it with built-in fetch.
+5. Recommendation - Found 'node-fetch' in file `Backend.ts`: Replace it with built-in fetch.
 
 ## [MMM-RNV by jupadin](https://github.com/jupadin/MMM-RNV)
 
@@ -3214,21 +3046,20 @@ Number of analyzed modules: 1016
 
 ## [MMM-RTSPStream by shbatm](https://github.com/shbatm/MMM-RTSPStream)
 
-1. `stale.yml`: Change file extention from `.yml` to `.yaml`: <https://yaml.org/faq.html>.
-2. Typo - Found 'Magic Mirror' in file `MMM-RTSPStream.js`: Replace it with `MagicMirror²`.
-3. Deprecated - Found 'omxplayer' in file `MMM-RTSPStream.js`: Try to replace it with `vlc`.
-4. Typo - Found 'Magic Mirror' in file `README.md`: Replace it with `MagicMirror²`.
-5. Deprecated - Found 'omxplayer' in file `README.md`: Try to replace it with `vlc`.
-6. Typo - Found 'Magic Mirror' in file `node_helper.js`: Replace it with `MagicMirror²`.
-7. Recommendation - Found 'node-fetch' in file `node_helper.js`: Replace it with built-in fetch.
-8. Deprecated - Found 'omxplayer' in file `node_helper.js`: Try to replace it with `vlc`.
-9. Typo - Found 'Magic Mirror' in file `package.json`: Replace it with `MagicMirror²`.
-10. Recommendation - Found 'node-fetch' in file `package.json`: Replace it with built-in fetch.
-11. Deprecated - Found 'omxplayer' in file `config.html`: Try to replace it with `vlc`.
-12. Recommendation - Found 'XMLHttpRequest' in file `jquery-3.2.1.min.js`: Replace it with built-in fetch.
-13. Typo - Found 'MagicMirror2' in file `installer.sh`: Replace it with `MagicMirror²`.
-14. Recommendation - Found 'XMLHttpRequest' in file `jsmpeg.min.js`: Replace it with built-in fetch.
-15. Deprecated - Found 'omxplayer' in file `preinstall.sh`: Try to replace it with `vlc`.
+1. Typo - Found 'Magic Mirror' in file `MMM-RTSPStream.js`: Replace it with `MagicMirror²`.
+2. Deprecated - Found 'omxplayer' in file `MMM-RTSPStream.js`: Try to replace it with `vlc`.
+3. Typo - Found 'Magic Mirror' in file `README.md`: Replace it with `MagicMirror²`.
+4. Deprecated - Found 'omxplayer' in file `README.md`: Try to replace it with `vlc`.
+5. Typo - Found 'Magic Mirror' in file `node_helper.js`: Replace it with `MagicMirror²`.
+6. Recommendation - Found 'node-fetch' in file `node_helper.js`: Replace it with built-in fetch.
+7. Deprecated - Found 'omxplayer' in file `node_helper.js`: Try to replace it with `vlc`.
+8. Typo - Found 'Magic Mirror' in file `package.json`: Replace it with `MagicMirror²`.
+9. Recommendation - Found 'node-fetch' in file `package.json`: Replace it with built-in fetch.
+10. Deprecated - Found 'omxplayer' in file `config.html`: Try to replace it with `vlc`.
+11. Recommendation - Found 'XMLHttpRequest' in file `jquery-3.2.1.min.js`: Replace it with built-in fetch.
+12. Typo - Found 'MagicMirror2' in file `installer.sh`: Replace it with `MagicMirror²`.
+13. Recommendation - Found 'XMLHttpRequest' in file `jsmpeg.min.js`: Replace it with built-in fetch.
+14. Deprecated - Found 'omxplayer' in file `preinstall.sh`: Try to replace it with `vlc`.
 
 ## [MMM-RVV by sebikolon](https://github.com/sebikolon/MMM-RVV)
 
@@ -3288,7 +3119,6 @@ Number of analyzed modules: 1016
 3. Recommendation - Found 'XMLHttpRequest' in file `jquery.js`: Replace it with built-in fetch.
 4. Typo - Found 'Magic Mirror' in file `node_helper.js`: Replace it with `MagicMirror²`.
 5. Deprecated - Found 'require('request')' in file `node_helper.js`: Replace it with built-in fetch.
-6. `nodejs.yml`: Change file extention from `.yml` to `.yaml`: <https://yaml.org/faq.html>.
 
 ## [MMM-RecyclingCalendar by FatTony404](https://gitlab.com/FatTony404/MMM-RecyclingCalendar)
 
@@ -3317,15 +3147,11 @@ Number of analyzed modules: 1016
 
 ## [MMM-Remote-Control by Jopyth](https://github.com/Jopyth/MMM-Remote-Control)
 
-1. `Bug_report.yml`: Change file extention from `.yml` to `.yaml`: <https://yaml.org/faq.html>.
-2. `Feature_request.yml`: Change file extention from `.yml` to `.yaml`: <https://yaml.org/faq.html>.
-3. `config.yml`: Change file extention from `.yml` to `.yaml`: <https://yaml.org/faq.html>.
-4. `stale.yml`: Change file extention from `.yml` to `.yaml`: <https://yaml.org/faq.html>.
-5. Deprecated - Found 'omxplayer' in file `modules.json`: Try to replace it with `vlc`.
-6. Typo - Found 'Magic Mirror' in file `package.json`: Replace it with `MagicMirror²`.
-7. Recommendation - Found 'node-fetch' in file `package.json`: Replace it with built-in fetch.
-8. Recommendation - Found 'XMLHttpRequest' in file `remote.js`: Replace it with built-in fetch.
-9. Recommendation - Found 'node-fetch' in file `download_modules.js`: Replace it with built-in fetch.
+1. Deprecated - Found 'omxplayer' in file `modules.json`: Try to replace it with `vlc`.
+2. Typo - Found 'Magic Mirror' in file `package.json`: Replace it with `MagicMirror²`.
+3. Recommendation - Found 'node-fetch' in file `package.json`: Replace it with built-in fetch.
+4. Recommendation - Found 'XMLHttpRequest' in file `remote.js`: Replace it with built-in fetch.
+5. Recommendation - Found 'node-fetch' in file `download_modules.js`: Replace it with built-in fetch.
 
 ## [MMM-Remote-Control-Repository by MMRIZE](https://github.com/MMRIZE/MMM-Remote-Control-Repository)
 
@@ -3370,8 +3196,7 @@ Number of analyzed modules: 1016
 ## [MMM-RingAlarm by parnic](https://github.com/parnic/MMM-RingAlarm)
 
 1. Recommendation - Found 'uses: actions/checkout@v3' in file `nodejs.yml`: Replace it with v4.
-2. `nodejs.yml`: Change file extention from `.yml` to `.yaml`: <https://yaml.org/faq.html>.
-3. Typo - Found 'Magic Mirror' in file `MMM-RingAlarm.js`: Replace it with `MagicMirror²`.
+2. Typo - Found 'Magic Mirror' in file `MMM-RingAlarm.js`: Replace it with `MagicMirror²`.
 
 ## [MMM-RocketLeagueZ by Zeprakadebra](https://github.com/Zeprakadebra/MMM-RocketLeagueZ)
 
@@ -3406,7 +3231,6 @@ Number of analyzed modules: 1016
 
 1. Typo - Found 'Magic Mirror' in file `MMM-SE-Reputation.js`: Replace it with `MagicMirror²`.
 2. Recommendation - Found 'XMLHttpRequest' in file `MMM-SE-Reputation.js`: Replace it with built-in fetch.
-3. `_config.yml`: Change file extention from `.yml` to `.yaml`: <https://yaml.org/faq.html>.
 
 ## [MMM-SFMuniBusTimes by vikramraja1995](https://github.com/vikramraja1995/MMM-SFMuniBusTimes)
 
@@ -3449,26 +3273,18 @@ Number of analyzed modules: 1016
 
 ## [MMM-Scenes by MMRIZE](https://github.com/MMRIZE/MMM-Scenes)
 
-1. `FUNDING.yml`: Change file extention from `.yml` to `.yaml`: <https://yaml.org/faq.html>.
-2. Typo - Found 'Magic Mirror' in file `config.js`: Replace it with `MagicMirror²`.
-
-## [MMM-Scenes2 by MMRIZE](https://github.com/MMRIZE/MMM-Scenes2)
-
-1. `FUNDING.yml`: Change file extention from `.yml` to `.yaml`: <https://yaml.org/faq.html>.
+1. Typo - Found 'Magic Mirror' in file `config.js`: Replace it with `MagicMirror²`.
 
 ## [MMM-ScottishPremierLeague by fewieden](https://github.com/fewieden/MMM-ScottishPremierLeague)
 
-1. `.codeclimate.yml`: Change file extention from `.yml` to `.yaml`: <https://yaml.org/faq.html>.
-2. `.travis.yml`: Change file extention from `.yml` to `.yaml`: <https://yaml.org/faq.html>.
-3. Typo - Found 'Magic Mirror' in file `MMM-ScottishPremierLeague.js`: Replace it with `MagicMirror²`.
-4. Typo - Found 'Magic Mirror' in file `node_helper.js`: Replace it with `MagicMirror²`.
-5. Deprecated - Found 'require('request')' in file `node_helper.js`: Replace it with built-in fetch.
-6. Typo - Found 'MagicMirror2' in file `package.json`: Replace it with `MagicMirror²`.
+1. Typo - Found 'Magic Mirror' in file `MMM-ScottishPremierLeague.js`: Replace it with `MagicMirror²`.
+2. Typo - Found 'Magic Mirror' in file `node_helper.js`: Replace it with `MagicMirror²`.
+3. Deprecated - Found 'require('request')' in file `node_helper.js`: Replace it with built-in fetch.
+4. Typo - Found 'MagicMirror2' in file `package.json`: Replace it with `MagicMirror²`.
 
 ## [MMM-ScreenLogic by parnic](https://github.com/parnic/MMM-ScreenLogic)
 
 1. Recommendation - Found 'uses: actions/checkout@v3' in file `nodejs.yml`: Replace it with v4.
-2. `nodejs.yml`: Change file extention from `.yml` to `.yaml`: <https://yaml.org/faq.html>.
 
 ## [MMM-Screencast by kevinatown](https://github.com/kevinatown/MMM-Screencast)
 
@@ -3549,17 +3365,15 @@ Number of analyzed modules: 1016
 
 ## [MMM-ShipmentTracking by fewieden](https://github.com/fewieden/MMM-ShipmentTracking)
 
-1. `.codeclimate.yml`: Change file extention from `.yml` to `.yaml`: <https://yaml.org/faq.html>.
-2. `.travis.yml`: Change file extention from `.yml` to `.yaml`: <https://yaml.org/faq.html>.
-3. Typo - Found 'Magic Mirror' in file `MMM-ShipmentTracking.js`: Replace it with `MagicMirror²`.
-4. Typo - Found 'Magic Mirror' in file `Tracker.js`: Replace it with `MagicMirror²`.
-5. Typo - Found 'Magic Mirror' in file `17track.js`: Replace it with `MagicMirror²`.
-6. Deprecated - Found 'require('request')' in file `17track.js`: Replace it with built-in fetch.
-7. Recommendation - Found 'XMLHttpRequest' in file `17track.js`: Replace it with built-in fetch.
-8. Typo - Found 'Magic Mirror' in file `DHL.js`: Replace it with `MagicMirror²`.
-9. Typo - Found 'Magic Mirror' in file `Landmark.js`: Replace it with `MagicMirror²`.
-10. Typo - Found 'Magic Mirror' in file `node_helper.js`: Replace it with `MagicMirror²`.
-11. Typo - Found 'MagicMirror2' in file `package.json`: Replace it with `MagicMirror²`.
+1. Typo - Found 'Magic Mirror' in file `MMM-ShipmentTracking.js`: Replace it with `MagicMirror²`.
+2. Typo - Found 'Magic Mirror' in file `Tracker.js`: Replace it with `MagicMirror²`.
+3. Typo - Found 'Magic Mirror' in file `17track.js`: Replace it with `MagicMirror²`.
+4. Deprecated - Found 'require('request')' in file `17track.js`: Replace it with built-in fetch.
+5. Recommendation - Found 'XMLHttpRequest' in file `17track.js`: Replace it with built-in fetch.
+6. Typo - Found 'Magic Mirror' in file `DHL.js`: Replace it with `MagicMirror²`.
+7. Typo - Found 'Magic Mirror' in file `Landmark.js`: Replace it with `MagicMirror²`.
+8. Typo - Found 'Magic Mirror' in file `node_helper.js`: Replace it with `MagicMirror²`.
+9. Typo - Found 'MagicMirror2' in file `package.json`: Replace it with `MagicMirror²`.
 
 ## [MMM-Simple-Swiper by Bee-Mar](https://github.com/Bee-Mar/MMM-Simple-Swiper)
 
@@ -3567,10 +3381,6 @@ Number of analyzed modules: 1016
 2. Deprecated - Found 'electron-rebuild' in file `README.org`: Replace it with `@electron/rebuild`
 3. Deprecated - Found 'electron-rebuild' in file `package.json`: Replace it with `@electron/rebuild`
 4. Typo - Found 'Magic Mirror' in file `SAMPLE_CONFIG.js`: Replace it with `MagicMirror²`.
-
-## [MMM-SimpleLogo by frdteknikelektro](https://github.com/frdteknikelektro/MMM-SimpleLogo)
-
-1. `FUNDING.yml`: Change file extention from `.yml` to `.yaml`: <https://yaml.org/faq.html>.
 
 ## [MMM-SimpleNotifyTrashDay by sabo10o29](https://github.com/sabo10o29/MMM-SimpleNotifyTrashDay)
 
@@ -3583,9 +3393,8 @@ Number of analyzed modules: 1016
 
 ## [MMM-SingleStock by balassy](https://github.com/balassy/MMM-SingleStock)
 
-1. `node.js.yml`: Change file extention from `.yml` to `.yaml`: <https://yaml.org/faq.html>.
-2. Typo - Found 'Magic Mirror' in file `MMM-SingleStock.js`: Replace it with `MagicMirror²`.
-3. Recommendation - Found 'XMLHttpRequest' in file `MMM-SingleStock.js`: Replace it with built-in fetch.
+1. Typo - Found 'Magic Mirror' in file `MMM-SingleStock.js`: Replace it with `MagicMirror²`.
+2. Recommendation - Found 'XMLHttpRequest' in file `MMM-SingleStock.js`: Replace it with built-in fetch.
 
 ## [MMM-Skola24 by retroflex](https://github.com/retroflex/MMM-Skola24)
 
@@ -3624,11 +3433,9 @@ Number of analyzed modules: 1016
 
 ## [MMM-Smappee by CFenner](https://github.com/CFenner/MMM-Smappee)
 
-1. `.codeclimate.yml`: Change file extention from `.yml` to `.yaml`: <https://yaml.org/faq.html>.
-2. `.travis.yml`: Change file extention from `.yml` to `.yaml`: <https://yaml.org/faq.html>.
-3. Typo - Found 'Magic Mirror' in file `MMM-Smappee.js`: Replace it with `MagicMirror²`.
-4. Typo - Found 'Magic Mirror' in file `node_helper.js`: Replace it with `MagicMirror²`.
-5. Typo - Found 'Magic Mirror' in file `package.json`: Replace it with `MagicMirror²`.
+1. Typo - Found 'Magic Mirror' in file `MMM-Smappee.js`: Replace it with `MagicMirror²`.
+2. Typo - Found 'Magic Mirror' in file `node_helper.js`: Replace it with `MagicMirror²`.
+3. Typo - Found 'Magic Mirror' in file `package.json`: Replace it with `MagicMirror²`.
 
 ## [MMM-SmartTouch by EbenKouao](https://github.com/EbenKouao/MMM-SmartTouch)
 
@@ -3657,13 +3464,11 @@ Number of analyzed modules: 1016
 
 ## [MMM-SoccerLiveScore by 0m4r](https://github.com/0m4r/MMM-SoccerLiveScore)
 
-1. `github-traffic-action_cron-trigger.yml`: Change file extention from `.yml` to `.yaml`: <https://yaml.org/faq.html>.
-2. `github-traffic-action_manual-trigger.yml`: Change file extention from `.yml` to `.yaml`: <https://yaml.org/faq.html>.
-3. Typo - Found 'Magic Mirror' in file `MMM-SoccerLiveScore.js`: Replace it with `MagicMirror²`.
-4. Typo - Found 'MagicMirror2' in file `README.md`: Replace it with `MagicMirror²`.
-5. Typo - Found 'Magic Mirror' in file `node_helper.js`: Replace it with `MagicMirror²`.
-6. Recommendation - Found 'node-fetch' in file `node_helper.js`: Replace it with built-in fetch.
-7. Recommendation - Found 'node-fetch' in file `package.json`: Replace it with built-in fetch.
+1. Typo - Found 'Magic Mirror' in file `MMM-SoccerLiveScore.js`: Replace it with `MagicMirror²`.
+2. Typo - Found 'MagicMirror2' in file `README.md`: Replace it with `MagicMirror²`.
+3. Typo - Found 'Magic Mirror' in file `node_helper.js`: Replace it with `MagicMirror²`.
+4. Recommendation - Found 'node-fetch' in file `node_helper.js`: Replace it with built-in fetch.
+5. Recommendation - Found 'node-fetch' in file `package.json`: Replace it with built-in fetch.
 
 ## [MMM-Solar by tkrywit](https://github.com/tkrywit/MMM-Solar)
 
@@ -3707,25 +3512,16 @@ Number of analyzed modules: 1016
 
 ## [MMM-Sonos by CFenner](https://github.com/CFenner/MMM-Sonos)
 
-1. `.eslintrc.yml`: Change file extention from `.yml` to `.yaml`: <https://yaml.org/faq.html>.
-2. `FUNDING.yml`: Change file extention from `.yml` to `.yaml`: <https://yaml.org/faq.html>.
-3. Deprecated - Found 'node-version: [14' in file `validation.yml`: Update to current version.
-4. `validation.yml`: Change file extention from `.yml` to `.yaml`: <https://yaml.org/faq.html>.
-5. `.markdownlint.yml`: Change file extention from `.yml` to `.yaml`: <https://yaml.org/faq.html>.
-6. `.stylelintrc.yml`: Change file extention from `.yml` to `.yaml`: <https://yaml.org/faq.html>.
-7. Typo - Found 'Magic Mirror' in file `MMM-Sonos.js`: Replace it with `MagicMirror²`.
-8. Typo - Found 'Magic Mirror' in file `node_helper.js`: Replace it with `MagicMirror²`.
-9. Deprecated - Found 'require('request')' in file `node_helper.js`: Replace it with built-in fetch.
+1. Deprecated - Found 'node-version: [14' in file `validation.yml`: Update to current version.
+2. Typo - Found 'Magic Mirror' in file `MMM-Sonos.js`: Replace it with `MagicMirror²`.
+3. Typo - Found 'Magic Mirror' in file `node_helper.js`: Replace it with `MagicMirror²`.
+4. Deprecated - Found 'require('request')' in file `node_helper.js`: Replace it with built-in fetch.
 
 ## [MMM-Sonos by Snille](https://github.com/Snille/MMM-Sonos)
 
 1. Typo - Found 'Magic Mirror' in file `MMM-Sonos.js`: Replace it with `MagicMirror²`.
 2. Typo - Found 'Magic Mirror' in file `node_helper.js`: Replace it with `MagicMirror²`.
 3. Deprecated - Found 'require('request')' in file `node_helper.js`: Replace it with built-in fetch.
-
-## [MMM-Sonos by tbouron](https://github.com/tbouron/MMM-Sonos)
-
-1. `codeql-analysis.yml`: Change file extention from `.yml` to `.yaml`: <https://yaml.org/faq.html>.
 
 ## [MMM-Space by grabenhenrich](https://github.com/grabenhenrich/MMM-Space)
 
@@ -3759,11 +3555,10 @@ Number of analyzed modules: 1016
 
 1. Recommendation - Found 'uses: actions/checkout@v3' in file `node.js.yml`: Replace it with v4.
 2. Deprecated - Found 'node-version: [16' in file `node.js.yml`: Update to current version.
-3. `node.js.yml`: Change file extention from `.yml` to `.yaml`: <https://yaml.org/faq.html>.
-4. Typo - Found 'Magic Mirror' in file `CONTRIBUTING.md`: Replace it with `MagicMirror²`.
-5. Recommendation - Found 'node-fetch' in file `package.json`: Replace it with built-in fetch.
-6. Recommendation - Found 'node-fetch' in file `StatusPageService.test.ts`: Replace it with built-in fetch.
-7. Recommendation - Found 'node-fetch' in file `StatusPageService.ts`: Replace it with built-in fetch.
+3. Typo - Found 'Magic Mirror' in file `CONTRIBUTING.md`: Replace it with `MagicMirror²`.
+4. Recommendation - Found 'node-fetch' in file `package.json`: Replace it with built-in fetch.
+5. Recommendation - Found 'node-fetch' in file `StatusPageService.test.ts`: Replace it with built-in fetch.
+6. Recommendation - Found 'node-fetch' in file `StatusPageService.ts`: Replace it with built-in fetch.
 
 ## [MMM-SteamPlaytime by buxxi](https://github.com/buxxi/MMM-SteamPlaytime)
 
@@ -3784,11 +3579,9 @@ Number of analyzed modules: 1016
 
 ## [MMM-Strava by ianperrin](https://github.com/ianperrin/MMM-Strava)
 
-1. `FUNDING.yml`: Change file extention from `.yml` to `.yaml`: <https://yaml.org/faq.html>.
-2. `node.js.yml`: Change file extention from `.yml` to `.yaml`: <https://yaml.org/faq.html>.
-3. Typo - Found 'Magic Mirror' in file `README.md`: Replace it with `MagicMirror²`.
-4. Deprecated - Found 'stylelint-config-prettier' in file `package.json`: Update `stylelint` and remove `stylelint-config-prettier`.
-5. Recommendation - Found 'XMLHttpRequest' in file `index.html`: Replace it with built-in fetch.
+1. Typo - Found 'Magic Mirror' in file `README.md`: Replace it with `MagicMirror²`.
+2. Deprecated - Found 'stylelint-config-prettier' in file `package.json`: Update `stylelint` and remove `stylelint-config-prettier`.
+3. Recommendation - Found 'XMLHttpRequest' in file `index.html`: Replace it with built-in fetch.
 
 ## [MMM-SugarValue by balharrie](https://github.com/balharrie/MMM-SugarValue)
 
@@ -3818,9 +3611,8 @@ Number of analyzed modules: 1016
 
 ## [MMM-SwissCommute by nixnuex](https://github.com/nixnuex/MMM-SwissCommute)
 
-1. `.travis.yml`: Change file extention from `.yml` to `.yaml`: <https://yaml.org/faq.html>.
-2. Typo - Found 'Magic Mirror' in file `MMM-SwissCommute.js`: Replace it with `MagicMirror²`.
-3. Recommendation - Found 'XMLHttpRequest' in file `MMM-SwissCommute.js`: Replace it with built-in fetch.
+1. Typo - Found 'Magic Mirror' in file `MMM-SwissCommute.js`: Replace it with `MagicMirror²`.
+2. Recommendation - Found 'XMLHttpRequest' in file `MMM-SwissCommute.js`: Replace it with built-in fetch.
 
 ## [MMM-SwissLakeTemperature by roufri](https://github.com/roufri/MMM-SwissLakeTemperature)
 
@@ -3856,11 +3648,10 @@ Number of analyzed modules: 1016
 
 ## [MMM-TFL-Arrivals by ryck](https://github.com/ryck/MMM-TFL-Arrivals)
 
-1. `dependabot.yml`: Change file extention from `.yml` to `.yaml`: <https://yaml.org/faq.html>.
-2. Typo - Found 'Magic Mirror' in file `MMM-TFL-Arrivals.js`: Replace it with `MagicMirror²`.
-3. Typo - Found 'MagicMirror2' in file `README.md`: Replace it with `MagicMirror²`.
-4. Typo - Found 'Magic Mirror' in file `node_helper.js`: Replace it with `MagicMirror²`.
-5. Deprecated - Found 'require("request")' in file `node_helper.js`: Replace it with built-in fetch.
+1. Typo - Found 'Magic Mirror' in file `MMM-TFL-Arrivals.js`: Replace it with `MagicMirror²`.
+2. Typo - Found 'MagicMirror2' in file `README.md`: Replace it with `MagicMirror²`.
+3. Typo - Found 'Magic Mirror' in file `node_helper.js`: Replace it with `MagicMirror²`.
+4. Deprecated - Found 'require("request")' in file `node_helper.js`: Replace it with built-in fetch.
 
 ## [MMM-TFL-Status by emanuele-albini](https://github.com/emanuele-albini/MMM-TFL-Status)
 
@@ -3887,11 +3678,9 @@ Number of analyzed modules: 1016
 
 ## [MMM-TTS by fewieden](https://github.com/fewieden/MMM-TTS)
 
-1. `.codeclimate.yml`: Change file extention from `.yml` to `.yaml`: <https://yaml.org/faq.html>.
-2. `.travis.yml`: Change file extention from `.yml` to `.yaml`: <https://yaml.org/faq.html>.
-3. Typo - Found 'Magic Mirror' in file `MMM-TTS.js`: Replace it with `MagicMirror²`.
-4. Typo - Found 'Magic Mirror' in file `node_helper.js`: Replace it with `MagicMirror²`.
-5. Typo - Found 'MagicMirror2' in file `package.json`: Replace it with `MagicMirror²`.
+1. Typo - Found 'Magic Mirror' in file `MMM-TTS.js`: Replace it with `MagicMirror²`.
+2. Typo - Found 'Magic Mirror' in file `node_helper.js`: Replace it with `MagicMirror²`.
+3. Typo - Found 'MagicMirror2' in file `package.json`: Replace it with `MagicMirror²`.
 
 ## [MMM-TUZSAZaragoza by rafagale](https://github.com/rafagale/MMM-TUZSAZaragoza)
 
@@ -3910,10 +3699,9 @@ Number of analyzed modules: 1016
 
 ## [MMM-TelegramCommands by doctorfree](https://github.com/doctorfree/MMM-TelegramCommands)
 
-1. `FUNDING.yml`: Change file extention from `.yml` to `.yaml`: <https://yaml.org/faq.html>.
-2. Typo - Found 'Magic Mirror' in file `config-commands.js`: Replace it with `MagicMirror²`.
-3. Typo - Found 'Magic Mirror' in file `config-simple.js`: Replace it with `MagicMirror²`.
-4. Recommendation - Found 'require('https')' in file `node_helper.js`: Replace it with built-in fetch.
+1. Typo - Found 'Magic Mirror' in file `config-commands.js`: Replace it with `MagicMirror²`.
+2. Typo - Found 'Magic Mirror' in file `config-simple.js`: Replace it with `MagicMirror²`.
+3. Recommendation - Found 'require('https')' in file `node_helper.js`: Replace it with built-in fetch.
 
 ## [MMM-Temperature by Tom-Hirschberger](https://github.com/Tom-Hirschberger/MMM-Temperature)
 
@@ -3922,18 +3710,13 @@ Number of analyzed modules: 1016
 
 ## [MMM-Tesla by mattdy](https://github.com/mattdy/MMM-Tesla)
 
-1. `FUNDING.yml`: Change file extention from `.yml` to `.yaml`: <https://yaml.org/faq.html>.
-2. `dependabot.yml`: Change file extention from `.yml` to `.yaml`: <https://yaml.org/faq.html>.
-3. `checkFormat.yml`: Change file extention from `.yml` to `.yaml`: <https://yaml.org/faq.html>.
-4. `formatting.yml`: Change file extention from `.yml` to `.yaml`: <https://yaml.org/faq.html>.
-5. `stale-issues.yml`: Change file extention from `.yml` to `.yaml`: <https://yaml.org/faq.html>.
-6. Typo - Found 'Magic Mirror' in file `MMM-Tesla.js`: Replace it with `MagicMirror²`.
-7. Typo - Found 'Magic Mirror' in file `README.md`: Replace it with `MagicMirror²`.
-8. Deprecated - Found 'require("request")' in file `teslafi.js`: Replace it with built-in fetch.
-9. Deprecated - Found 'require("request")' in file `tessie.js`: Replace it with built-in fetch.
-10. Typo - Found 'Magic Mirror' in file `node_helper.js`: Replace it with `MagicMirror²`.
-11. Deprecated - Found 'require("request")' in file `node_helper.js`: Replace it with built-in fetch.
-12. Typo - Found 'MagicMirror2' in file `package.json`: Replace it with `MagicMirror²`.
+1. Typo - Found 'Magic Mirror' in file `MMM-Tesla.js`: Replace it with `MagicMirror²`.
+2. Typo - Found 'Magic Mirror' in file `README.md`: Replace it with `MagicMirror²`.
+3. Deprecated - Found 'require("request")' in file `teslafi.js`: Replace it with built-in fetch.
+4. Deprecated - Found 'require("request")' in file `tessie.js`: Replace it with built-in fetch.
+5. Typo - Found 'Magic Mirror' in file `node_helper.js`: Replace it with `MagicMirror²`.
+6. Deprecated - Found 'require("request")' in file `node_helper.js`: Replace it with built-in fetch.
+7. Typo - Found 'MagicMirror2' in file `package.json`: Replace it with `MagicMirror²`.
 
 ## [MMM-Tesla3 by usncahill](https://github.com/usncahill/MMM-Tesla3)
 
@@ -3944,10 +3727,6 @@ Number of analyzed modules: 1016
 ## [MMM-TeslaMate by denverquane](https://github.com/denverquane/MMM-Teslamate)
 
 1. Typo - Found 'Magic Mirror' in file `README.md`: Replace it with `MagicMirror²`.
-
-## [MMM-TeslaStatus by aduyng](https://github.com/aduyng/MMM-TeslaStatus)
-
-1. `config.yml`: Change file extention from `.yml` to `.yaml`: <https://yaml.org/faq.html>.
 
 ## [MMM-TextPerWeek by retroflex](https://github.com/retroflex/MMM-TextPerWeek)
 
@@ -3960,10 +3739,9 @@ Number of analyzed modules: 1016
 
 ## [MMM-Tibber by ottopaulsen](https://github.com/ottopaulsen/MMM-Tibber)
 
-1. `FUNDING.yml`: Change file extention from `.yml` to `.yaml`: <https://yaml.org/faq.html>.
-2. Recommendation - Found 'node-fetch' in file `consumptions.js`: Replace it with built-in fetch.
-3. Recommendation - Found 'node-fetch' in file `package.json`: Replace it with built-in fetch.
-4. Recommendation - Found 'node-fetch' in file `tibber.js`: Replace it with built-in fetch.
+1. Recommendation - Found 'node-fetch' in file `consumptions.js`: Replace it with built-in fetch.
+2. Recommendation - Found 'node-fetch' in file `package.json`: Replace it with built-in fetch.
+3. Recommendation - Found 'node-fetch' in file `tibber.js`: Replace it with built-in fetch.
 
 ## [MMM-TimeTreeEvent by sabo10o29](https://github.com/sabo10o29/MMM-TimeTreeEvent)
 
@@ -4024,9 +3802,8 @@ Number of analyzed modules: 1016
 
 ## [MMM-Trains-Trafikverket by per-garden](https://github.com/per-garden/MMM-Trains-Trafikverket)
 
-1. `.travis.yml`: Change file extention from `.yml` to `.yaml`: <https://yaml.org/faq.html>.
-2. Typo - Found 'Magic Mirror' in file `MMM-Trains-Trafikverket.js`: Replace it with `MagicMirror²`.
-3. Typo - Found 'Magic Mirror' in file `node_helper.js`: Replace it with `MagicMirror²`.
+1. Typo - Found 'Magic Mirror' in file `MMM-Trains-Trafikverket.js`: Replace it with `MagicMirror²`.
+2. Typo - Found 'Magic Mirror' in file `node_helper.js`: Replace it with `MagicMirror²`.
 
 ## [MMM-TranslatedMessages by ahmedwab](https://github.com/ahmedwab/MMM-TranslatedMessages)
 
@@ -4192,10 +3969,7 @@ Number of analyzed modules: 1016
 
 ## [MMM-VocabularyTrainer by fewieden](https://github.com/fewieden/MMM-VocabularyTrainer)
 
-1. `.codeclimate.yml`: Change file extention from `.yml` to `.yaml`: <https://yaml.org/faq.html>.
-2. `.doclets.yml`: Change file extention from `.yml` to `.yaml`: <https://yaml.org/faq.html>.
-3. `.travis.yml`: Change file extention from `.yml` to `.yaml`: <https://yaml.org/faq.html>.
-4. Typo - Found 'MagicMirror2' in file `package.json`: Replace it with `MagicMirror²`.
+1. Typo - Found 'MagicMirror2' in file `package.json`: Replace it with `MagicMirror²`.
 
 ## [MMM-Voice-Commands by Veldrovive](https://github.com/Veldrovive/MMM-Voice-Commands)
 
@@ -4257,14 +4031,13 @@ Number of analyzed modules: 1016
 
 ## [MMM-WeasleyClock by BrianHepler](https://github.com/BrianHepler/MMM-WeasleyClock)
 
-1. `.travis.yml`: Change file extention from `.yml` to `.yaml`: <https://yaml.org/faq.html>.
-2. Typo - Found 'Magic Mirror' in file `MMM-WeasleyClock.js`: Replace it with `MagicMirror²`.
-3. Typo - Found 'Magic Mirror' in file `MosquittoSetup.md`: Replace it with `MagicMirror²`.
-4. Typo - Found 'Magic Mirror' in file `README.md`: Replace it with `MagicMirror²`.
-5. Recommendation - Found 'XMLHttpRequest' in file `howler.core.min.js`: Replace it with built-in fetch.
-6. Recommendation - Found 'XMLHttpRequest' in file `howler.min.js`: Replace it with built-in fetch.
-7. Typo - Found 'Magic Mirror' in file `node_helper.js`: Replace it with `MagicMirror²`.
-8. Typo - Found 'Magic Mirror' in file `package.json`: Replace it with `MagicMirror²`.
+1. Typo - Found 'Magic Mirror' in file `MMM-WeasleyClock.js`: Replace it with `MagicMirror²`.
+2. Typo - Found 'Magic Mirror' in file `MosquittoSetup.md`: Replace it with `MagicMirror²`.
+3. Typo - Found 'Magic Mirror' in file `README.md`: Replace it with `MagicMirror²`.
+4. Recommendation - Found 'XMLHttpRequest' in file `howler.core.min.js`: Replace it with built-in fetch.
+5. Recommendation - Found 'XMLHttpRequest' in file `howler.min.js`: Replace it with built-in fetch.
+6. Typo - Found 'Magic Mirror' in file `node_helper.js`: Replace it with `MagicMirror²`.
+7. Typo - Found 'Magic Mirror' in file `package.json`: Replace it with `MagicMirror²`.
 
 ## [MMM-Weather-Now by nigel-daniels](https://github.com/nigel-daniels/MMM-Weather-Now)
 
@@ -4322,12 +4095,10 @@ Number of analyzed modules: 1016
 
 ## [MMM-WienerLinien by fewieden](https://github.com/fewieden/MMM-WienerLinien)
 
-1. `.codeclimate.yml`: Change file extention from `.yml` to `.yaml`: <https://yaml.org/faq.html>.
-2. `.travis.yml`: Change file extention from `.yml` to `.yaml`: <https://yaml.org/faq.html>.
-3. Recommendation - Found 'node-fetch' in file `README.md`: Replace it with built-in fetch.
-4. Recommendation - Found 'node-fetch' in file `node_helper.js`: Replace it with built-in fetch.
-5. Typo - Found 'MagicMirror2' in file `package.json`: Replace it with `MagicMirror²`.
-6. Recommendation - Found 'node-fetch' in file `package.json`: Replace it with built-in fetch.
+1. Recommendation - Found 'node-fetch' in file `README.md`: Replace it with built-in fetch.
+2. Recommendation - Found 'node-fetch' in file `node_helper.js`: Replace it with built-in fetch.
+3. Typo - Found 'MagicMirror2' in file `package.json`: Replace it with `MagicMirror²`.
+4. Recommendation - Found 'node-fetch' in file `package.json`: Replace it with built-in fetch.
 
 ## [MMM-WordGenius by drventure](https://github.com/drventure/MMM-WordGenius)
 
@@ -4372,12 +4143,11 @@ Number of analyzed modules: 1016
 
 ## [MMM-YT-SubCount by choffmann](https://github.com/choffmann/MMM-YT-SubCount)
 
-1. `node.js.yml`: Change file extention from `.yml` to `.yaml`: <https://yaml.org/faq.html>.
-2. Typo - Found 'Magic Mirror' in file `MMM-YT-SubCount.js`: Replace it with `MagicMirror²`.
-3. Typo - Found 'Magic Mirror' in file `node_helper.js`: Replace it with `MagicMirror²`.
-4. Recommendation - Found 'node-fetch' in file `node_helper.js`: Replace it with built-in fetch.
-5. Deprecated - Found 'stylelint-config-prettier' in file `package.json`: Update `stylelint` and remove `stylelint-config-prettier`.
-6. Recommendation - Found 'node-fetch' in file `package.json`: Replace it with built-in fetch.
+1. Typo - Found 'Magic Mirror' in file `MMM-YT-SubCount.js`: Replace it with `MagicMirror²`.
+2. Typo - Found 'Magic Mirror' in file `node_helper.js`: Replace it with `MagicMirror²`.
+3. Recommendation - Found 'node-fetch' in file `node_helper.js`: Replace it with built-in fetch.
+4. Deprecated - Found 'stylelint-config-prettier' in file `package.json`: Update `stylelint` and remove `stylelint-config-prettier`.
+5. Recommendation - Found 'node-fetch' in file `package.json`: Replace it with built-in fetch.
 
 ## [MMM-Yeelight by slametps](https://github.com/slametps/MMM-Yeelight)
 
@@ -4401,15 +4171,12 @@ Number of analyzed modules: 1016
 
 ## [MMM-YouTube-Live-Stream by ngnijland](https://github.com/ngnijland/MMM-YouTube-Live-Stream)
 
-1. `FUNDING.yml`: Change file extention from `.yml` to `.yaml`: <https://yaml.org/faq.html>.
-2. `nodejs.yml`: Change file extention from `.yml` to `.yaml`: <https://yaml.org/faq.html>.
-3. Typo - Found 'Magic Mirror' in file `MMM-YouTube-Live-Stream.js`: Replace it with `MagicMirror²`.
-4. Typo - Found 'Magic Mirror' in file `README.md`: Replace it with `MagicMirror²`.
+1. Typo - Found 'Magic Mirror' in file `MMM-YouTube-Live-Stream.js`: Replace it with `MagicMirror²`.
+2. Typo - Found 'Magic Mirror' in file `README.md`: Replace it with `MagicMirror²`.
 
 ## [MMM-YouTubeWebView by doctorfree](https://gitlab.com/doctorfree/MMM-YouTubeWebView)
 
-1. `FUNDING.yml`: Change file extention from `.yml` to `.yaml`: <https://yaml.org/faq.html>.
-2. Typo - Found 'Magic Mirror' in file `MMM-YouTubeWebView.js`: Replace it with `MagicMirror²`.
+1. Typo - Found 'Magic Mirror' in file `MMM-YouTubeWebView.js`: Replace it with `MagicMirror²`.
 
 ## [MMM-YrNow by Yr](https://github.com/Yr/MMM-YrNow)
 
@@ -4458,16 +4225,14 @@ Number of analyzed modules: 1016
 
 ## [MMM-awesome-alexa by dolanmiu](https://github.com/dolanmiu/MMM-awesome-alexa)
 
-1. `.prettierrc.yml`: Change file extention from `.yml` to `.yaml`: <https://yaml.org/faq.html>.
-2. `.travis.yml`: Change file extention from `.yml` to `.yaml`: <https://yaml.org/faq.html>.
-3. Typo - Found 'Magic Mirror' in file `README.md`: Replace it with `MagicMirror²`.
-4. Typo - Found 'Magic Mirror' in file `README.md`: Replace it with `MagicMirror²`.
-5. Deprecated - Found 'omxplayer' in file `audio-setup.md`: Try to replace it with `vlc`.
-6. Typo - Found 'Magic Mirror' in file `index.html`: Replace it with `MagicMirror²`.
-7. Deprecated - Found 'electron-rebuild' in file `installation.md`: Replace it with `@electron/rebuild`
-8. Deprecated - Found 'electron-rebuild' in file `troubleshoot.md`: Replace it with `@electron/rebuild`
-9. Deprecated - Found 'require("request")' in file `node_helper.js`: Replace it with built-in fetch.
-10. Typo - Found 'Magic Mirror' in file `package.json`: Replace it with `MagicMirror²`.
+1. Typo - Found 'Magic Mirror' in file `README.md`: Replace it with `MagicMirror²`.
+2. Typo - Found 'Magic Mirror' in file `README.md`: Replace it with `MagicMirror²`.
+3. Deprecated - Found 'omxplayer' in file `audio-setup.md`: Try to replace it with `vlc`.
+4. Typo - Found 'Magic Mirror' in file `index.html`: Replace it with `MagicMirror²`.
+5. Deprecated - Found 'electron-rebuild' in file `installation.md`: Replace it with `@electron/rebuild`
+6. Deprecated - Found 'electron-rebuild' in file `troubleshoot.md`: Replace it with `@electron/rebuild`
+7. Deprecated - Found 'require("request")' in file `node_helper.js`: Replace it with built-in fetch.
+8. Typo - Found 'Magic Mirror' in file `package.json`: Replace it with `MagicMirror²`.
 
 ## [MMM-bergfex.at by FatTony404](https://gitlab.com/FatTony404/MMM-bergfex)
 
@@ -4491,11 +4256,10 @@ Number of analyzed modules: 1016
 
 1. Recommendation - Found 'uses: actions/checkout@v3' in file `node.js.yml`: Replace it with v4.
 2. Deprecated - Found 'node-version: [14' in file `node.js.yml`: Update to current version.
-3. `node.js.yml`: Change file extention from `.yml` to `.yaml`: <https://yaml.org/faq.html>.
-4. Typo - Found 'Magic Mirror' in file `MMM-bunq.js`: Replace it with `MagicMirror²`.
-5. Typo - Found 'Magic Mirror' in file `node_helper.js`: Replace it with `MagicMirror²`.
-6. Recommendation - Found 'node-fetch' in file `node_helper.js`: Replace it with built-in fetch.
-7. Recommendation - Found 'node-fetch' in file `package.json`: Replace it with built-in fetch.
+3. Typo - Found 'Magic Mirror' in file `MMM-bunq.js`: Replace it with `MagicMirror²`.
+4. Typo - Found 'Magic Mirror' in file `node_helper.js`: Replace it with `MagicMirror²`.
+5. Recommendation - Found 'node-fetch' in file `node_helper.js`: Replace it with built-in fetch.
+6. Recommendation - Found 'node-fetch' in file `package.json`: Replace it with built-in fetch.
 
 ## [MMM-bustimes by 73cirdan](https://github.com/73cirdan/MMM-bustimes)
 
@@ -4511,21 +4275,17 @@ Number of analyzed modules: 1016
 
 ## [MMM-connection-status by sheyabernstein](https://github.com/sheyabernstein/MMM-connection-status)
 
-1. `format-code.yml`: Change file extention from `.yml` to `.yaml`: <https://yaml.org/faq.html>.
-2. `stale.yml`: Change file extention from `.yml` to `.yaml`: <https://yaml.org/faq.html>.
-3. Typo - Found 'Magic Mirror' in file `MMM-connection-status.js`: Replace it with `MagicMirror²`.
-4. Typo - Found 'MagicMirror2' in file `package.json`: Replace it with `MagicMirror²`.
+1. Typo - Found 'Magic Mirror' in file `MMM-connection-status.js`: Replace it with `MagicMirror²`.
+2. Typo - Found 'MagicMirror2' in file `package.json`: Replace it with `MagicMirror²`.
 
 ## [MMM-covid19 by 0m4r](https://github.com/0m4r/MMM-covid19)
 
-1. `github-traffic-action_cron-trigger.yml`: Change file extention from `.yml` to `.yaml`: <https://yaml.org/faq.html>.
-2. `github-traffic-action_manual-trigger.yml`: Change file extention from `.yml` to `.yaml`: <https://yaml.org/faq.html>.
-3. Typo - Found 'Magic Mirror' in file `MMM-covid19.js`: Replace it with `MagicMirror²`.
-4. Typo - Found 'Magic Mirror' in file `README.md`: Replace it with `MagicMirror²`.
-5. Typo - Found 'Magic Mirror' in file `node_helper.js`: Replace it with `MagicMirror²`.
-6. Recommendation - Found 'node-fetch' in file `node_helper.js`: Replace it with built-in fetch.
-7. Typo - Found 'Magic Mirror' in file `package.json`: Replace it with `MagicMirror²`.
-8. Recommendation - Found 'node-fetch' in file `package.json`: Replace it with built-in fetch.
+1. Typo - Found 'Magic Mirror' in file `MMM-covid19.js`: Replace it with `MagicMirror²`.
+2. Typo - Found 'Magic Mirror' in file `README.md`: Replace it with `MagicMirror²`.
+3. Typo - Found 'Magic Mirror' in file `node_helper.js`: Replace it with `MagicMirror²`.
+4. Recommendation - Found 'node-fetch' in file `node_helper.js`: Replace it with built-in fetch.
+5. Typo - Found 'Magic Mirror' in file `package.json`: Replace it with `MagicMirror²`.
+6. Recommendation - Found 'node-fetch' in file `package.json`: Replace it with built-in fetch.
 
 ## [MMM-covid19uk-stats by blighter](https://github.com/blighter/MMM-covid19uk-stats)
 
@@ -4617,8 +4377,7 @@ Number of analyzed modules: 1016
 1. Typo - Found 'Magic Mirror' in file `MMM-iCal-ToDo.js`: Replace it with `MagicMirror²`.
 2. Typo - Found 'Magic Mirror' in file `node_helper.js`: Replace it with `MagicMirror²`.
 3. Typo - Found 'Magic Mirror' in file `todofetcher.js`: Replace it with `MagicMirror²`.
-4. `.travis.yml`: Change file extention from `.yml` to `.yaml`: <https://yaml.org/faq.html>.
-5. Deprecated - Found 'require('request')' in file `node-ical.js`: Replace it with built-in fetch.
+4. Deprecated - Found 'require('request')' in file `node-ical.js`: Replace it with built-in fetch.
 
 ## [MMM-iCloud-Client by bitte-ein-bit](https://github.com/bitte-ein-bit/MMM-iCloud-Client)
 
@@ -4678,11 +4437,7 @@ Number of analyzed modules: 1016
 
 ## [MMM-ip by fewieden](https://github.com/fewieden/MMM-ip)
 
-1. `.codeclimate.yml`: Change file extention from `.yml` to `.yaml`: <https://yaml.org/faq.html>.
-2. `FUNDING.yml`: Change file extention from `.yml` to `.yaml`: <https://yaml.org/faq.html>.
-3. `build.yml`: Change file extention from `.yml` to `.yaml`: <https://yaml.org/faq.html>.
-4. `changelog.yml`: Change file extention from `.yml` to `.yaml`: <https://yaml.org/faq.html>.
-5. Typo - Found 'MagicMirror2' in file `package.json`: Replace it with `MagicMirror²`.
+1. Typo - Found 'MagicMirror2' in file `package.json`: Replace it with `MagicMirror²`.
 
 ## [MMM-jokes by pvyParts](https://github.com/pvyParts/MMM-jokes)
 
@@ -4693,18 +4448,11 @@ Number of analyzed modules: 1016
 
 ## [MMM-json by DanielHabenicht](https://github.com/DanielHabenicht/MMM-json)
 
-1. `FUNDING.yml`: Change file extention from `.yml` to `.yaml`: <https://yaml.org/faq.html>.
-2. `docs.yml`: Change file extention from `.yml` to `.yaml`: <https://yaml.org/faq.html>.
-3. `pr-title-check.yml`: Change file extention from `.yml` to `.yaml`: <https://yaml.org/faq.html>.
-4. `pr.yml`: Change file extention from `.yml` to `.yaml`: <https://yaml.org/faq.html>.
-5. `release.yml`: Change file extention from `.yml` to `.yaml`: <https://yaml.org/faq.html>.
-6. `.gitpod.yml`: Change file extention from `.yml` to `.yaml`: <https://yaml.org/faq.html>.
-7. Typo - Found 'Magic Mirror' in file `MMM-json.js`: Replace it with `MagicMirror²`.
-8. Typo - Found 'Magic Mirror' in file `configuration.md`: Replace it with `MagicMirror²`.
-9. Recommendation - Found 'node-fetch' in file `configuration.md`: Replace it with built-in fetch.
-10. `mkdocs.yml`: Change file extention from `.yml` to `.yaml`: <https://yaml.org/faq.html>.
-11. Recommendation - Found 'node-fetch' in file `node_helper.js`: Replace it with built-in fetch.
-12. Recommendation - Found 'node-fetch' in file `package.json`: Replace it with built-in fetch.
+1. Typo - Found 'Magic Mirror' in file `MMM-json.js`: Replace it with `MagicMirror²`.
+2. Typo - Found 'Magic Mirror' in file `configuration.md`: Replace it with `MagicMirror²`.
+3. Recommendation - Found 'node-fetch' in file `configuration.md`: Replace it with built-in fetch.
+4. Recommendation - Found 'node-fetch' in file `node_helper.js`: Replace it with built-in fetch.
+5. Recommendation - Found 'node-fetch' in file `package.json`: Replace it with built-in fetch.
 
 ## [MMM-json-feed by amcolash](https://github.com/amcolash/MMM-json-feed)
 
@@ -4761,19 +4509,14 @@ Number of analyzed modules: 1016
 
 ## [MMM-mvgmunich by mrVragec](https://github.com/mrVragec/MMM-mvgmunich)
 
-1. `.travis.yml`: Change file extention from `.yml` to `.yaml`: <https://yaml.org/faq.html>.
-2. Typo - Found 'Magic Mirror' in file `mvgmunich.js`: Replace it with `MagicMirror²`.
-3. Typo - Found 'Magic Mirror' in file `node_helper.js`: Replace it with `MagicMirror²`.
-4. Deprecated - Found 'require("request")' in file `node_helper.js`: Replace it with built-in fetch.
-5. Recommendation - Found 'XMLHttpRequest' in file `node_helper.js`: Replace it with built-in fetch.
+1. Typo - Found 'Magic Mirror' in file `mvgmunich.js`: Replace it with `MagicMirror²`.
+2. Typo - Found 'Magic Mirror' in file `node_helper.js`: Replace it with `MagicMirror²`.
+3. Deprecated - Found 'require("request")' in file `node_helper.js`: Replace it with built-in fetch.
+4. Recommendation - Found 'XMLHttpRequest' in file `node_helper.js`: Replace it with built-in fetch.
 
 ## [MMM-mycroft-wakeword by smartgic](https://github.com/smartgic/MMM-mycroft-wakeword)
 
 1. Typo - Found 'Magic Mirror' in file `MMM-mycroft-wakeword.js`: Replace it with `MagicMirror²`.
-
-## [MMM-nagios by qistoph](https://github.com/qistoph/MMM-nagios)
-
-1. `.travis.yml`: Change file extention from `.yml` to `.yaml`: <https://yaml.org/faq.html>.
 
 ## [MMM-nasaastropic by nebulx29](https://github.com/nebulx29/MMM-nasaastropic)
 
@@ -4788,9 +4531,8 @@ Number of analyzed modules: 1016
 
 ## [MMM-network-signal by PoOwAa](https://github.com/PoOwAa/MMM-network-signal)
 
-1. `dependabot.yml`: Change file extention from `.yml` to `.yaml`: <https://yaml.org/faq.html>.
-2. Typo - Found 'Magic Mirror' in file `MMM-network-signal.js`: Replace it with `MagicMirror²`.
-3. Typo - Found 'MagicMirror2' in file `package.json`: Replace it with `MagicMirror²`.
+1. Typo - Found 'Magic Mirror' in file `MMM-network-signal.js`: Replace it with `MagicMirror²`.
+2. Typo - Found 'MagicMirror2' in file `package.json`: Replace it with `MagicMirror²`.
 
 ## [MMM-next-episode by PierreGode](https://github.com/PierreGode/MMM-next-episode)
 
@@ -4802,23 +4544,12 @@ Number of analyzed modules: 1016
 2. Typo - Found 'Magic Mirror' in file `node_helper.js`: Replace it with `MagicMirror²`.
 3. Deprecated - Found 'require('request')' in file `node_helper.js`: Replace it with built-in fetch.
 
-## [MMM-nstreinen by qistoph](https://github.com/qistoph/MMM-nstreinen)
-
-1. `.travis.yml`: Change file extention from `.yml` to `.yaml`: <https://yaml.org/faq.html>.
-
 ## [MMM-nyc-transit by elaniobro](https://github.com/elaniobro/MMM-nyc-transit)
 
-1. `FUNDING.yml`: Change file extention from `.yml` to `.yaml`: <https://yaml.org/faq.html>.
-2. `codacy_analysis.yml`: Change file extention from `.yml` to `.yaml`: <https://yaml.org/faq.html>.
-3. `codeql-analysis.yml`: Change file extention from `.yml` to `.yaml`: <https://yaml.org/faq.html>.
-4. `greetings.yml`: Change file extention from `.yml` to `.yaml`: <https://yaml.org/faq.html>.
-5. `lint.yml`: Change file extention from `.yml` to `.yaml`: <https://yaml.org/faq.html>.
-6. Deprecated - Found 'node-version: 16' in file `npm-publish-github-packages.yml`: Update to current version.
-7. `npm-publish-github-packages.yml`: Change file extention from `.yml` to `.yaml`: <https://yaml.org/faq.html>.
-8. Deprecated - Found 'node-version: 16' in file `npm-publish.yml`: Update to current version.
-9. `npm-publish.yml`: Change file extention from `.yml` to `.yaml`: <https://yaml.org/faq.html>.
-10. Typo - Found 'Magic Mirror' in file `package.json`: Replace it with `MagicMirror²`.
-11. Recommendation - Found 'node-fetch' in file `yarn.lock`: Replace it with built-in fetch.
+1. Deprecated - Found 'node-version: 16' in file `npm-publish-github-packages.yml`: Update to current version.
+2. Deprecated - Found 'node-version: 16' in file `npm-publish.yml`: Update to current version.
+3. Typo - Found 'Magic Mirror' in file `package.json`: Replace it with `MagicMirror²`.
+4. Recommendation - Found 'node-fetch' in file `yarn.lock`: Replace it with built-in fetch.
 
 ## [MMM-oebb-station-board by mscharl](https://github.com/mscharl/MMM-oebb-station-board)
 
@@ -4850,17 +4581,12 @@ Number of analyzed modules: 1016
 
 ## [MMM-pihole-stats by sheyabernstein](https://github.com/sheyabernstein/MMM-pihole-stats)
 
-1. `format-code.yml`: Change file extention from `.yml` to `.yaml`: <https://yaml.org/faq.html>.
-2. `stale.yml`: Change file extention from `.yml` to `.yaml`: <https://yaml.org/faq.html>.
-3. Typo - Found 'Magic Mirror' in file `MMM-pihole-stats.js`: Replace it with `MagicMirror²`.
-4. Recommendation - Found 'node-fetch' in file `node_helper.js`: Replace it with built-in fetch.
+1. Typo - Found 'Magic Mirror' in file `MMM-pihole-stats.js`: Replace it with `MagicMirror²`.
+2. Recommendation - Found 'node-fetch' in file `node_helper.js`: Replace it with built-in fetch.
 
 ## [MMM-ping by fewieden](https://github.com/fewieden/MMM-ping)
 
-1. `.codeclimate.yml`: Change file extention from `.yml` to `.yaml`: <https://yaml.org/faq.html>.
-2. `FUNDING.yml`: Change file extention from `.yml` to `.yaml`: <https://yaml.org/faq.html>.
-3. `.travis.yml`: Change file extention from `.yml` to `.yaml`: <https://yaml.org/faq.html>.
-4. Typo - Found 'MagicMirror2' in file `package.json`: Replace it with `MagicMirror²`.
+1. Typo - Found 'MagicMirror2' in file `package.json`: Replace it with `MagicMirror²`.
 
 ## [MMM-pollen by devduisburg](https://github.com/devduisburg/MMM-pollen)
 
@@ -4901,31 +4627,21 @@ Number of analyzed modules: 1016
 
 ## [MMM-slamfm-playing-now by ngnijland](https://github.com/ngnijland/MMM-slamfm-playing-now)
 
-1. `FUNDING.yml`: Change file extention from `.yml` to `.yaml`: <https://yaml.org/faq.html>.
-2. `nodejs.yml`: Change file extention from `.yml` to `.yaml`: <https://yaml.org/faq.html>.
-3. Typo - Found 'Magic Mirror' in file `MMM-slamfm-playing-now.js`: Replace it with `MagicMirror²`.
-4. Typo - Found 'Magic Mirror' in file `README.md`: Replace it with `MagicMirror²`.
-5. Recommendation - Found 'require('https')' in file `node_helper.js`: Replace it with built-in fetch.
+1. Typo - Found 'Magic Mirror' in file `MMM-slamfm-playing-now.js`: Replace it with `MagicMirror²`.
+2. Typo - Found 'Magic Mirror' in file `README.md`: Replace it with `MagicMirror²`.
+3. Recommendation - Found 'require('https')' in file `node_helper.js`: Replace it with built-in fetch.
 
 ## [MMM-soccer by fewieden](https://github.com/fewieden/MMM-soccer)
 
-1. `.codeclimate.yml`: Change file extention from `.yml` to `.yaml`: <https://yaml.org/faq.html>.
-2. `FUNDING.yml`: Change file extention from `.yml` to `.yaml`: <https://yaml.org/faq.html>.
-3. `build.yml`: Change file extention from `.yml` to `.yaml`: <https://yaml.org/faq.html>.
-4. `changelog.yml`: Change file extention from `.yml` to `.yaml`: <https://yaml.org/faq.html>.
-5. `coverage.yml`: Change file extention from `.yml` to `.yaml`: <https://yaml.org/faq.html>.
-6. `.travis.yml`: Change file extention from `.yml` to `.yaml`: <https://yaml.org/faq.html>.
-7. Recommendation - Found 'node-fetch' in file `README.md`: Replace it with built-in fetch.
-8. Recommendation - Found 'node-fetch' in file `node_helper.js`: Replace it with built-in fetch.
-9. Typo - Found 'MagicMirror2' in file `package.json`: Replace it with `MagicMirror²`.
-10. Recommendation - Found 'node-fetch' in file `package.json`: Replace it with built-in fetch.
+1. Recommendation - Found 'node-fetch' in file `README.md`: Replace it with built-in fetch.
+2. Recommendation - Found 'node-fetch' in file `node_helper.js`: Replace it with built-in fetch.
+3. Typo - Found 'MagicMirror2' in file `package.json`: Replace it with `MagicMirror²`.
+4. Recommendation - Found 'node-fetch' in file `package.json`: Replace it with built-in fetch.
 
 ## [MMM-social-counter by ngnijland](https://github.com/ngnijland/MMM-social-counter)
 
-1. `FUNDING.yml`: Change file extention from `.yml` to `.yaml`: <https://yaml.org/faq.html>.
-2. `nodejs.yml`: Change file extention from `.yml` to `.yaml`: <https://yaml.org/faq.html>.
-3. Typo - Found 'Magic Mirror' in file `MMM-social-counter.js`: Replace it with `MagicMirror²`.
-4. Recommendation - Found 'require('https')' in file `node_helper.js`: Replace it with built-in fetch.
+1. Typo - Found 'Magic Mirror' in file `MMM-social-counter.js`: Replace it with `MagicMirror²`.
+2. Recommendation - Found 'require('https')' in file `node_helper.js`: Replace it with built-in fetch.
 
 ## [MMM-socialbicycles by 0lek](https://github.com/0lek/MMM-socialbicycles)
 
@@ -5008,16 +4724,14 @@ Number of analyzed modules: 1016
 
 ## [MMM-uptimekuma by MikeBishop](https://github.com/MikeBishop/MMM-uptimekuma)
 
-1. `.travis.yml`: Change file extention from `.yml` to `.yaml`: <https://yaml.org/faq.html>.
-2. Typo - Found 'Magic Mirror' in file `MMM-uptimekuma.js`: Replace it with `MagicMirror²`.
-3. Typo - Found 'Magic Mirror' in file `node_helper.js`: Replace it with `MagicMirror²`.
+1. Typo - Found 'Magic Mirror' in file `MMM-uptimekuma.js`: Replace it with `MagicMirror²`.
+2. Typo - Found 'Magic Mirror' in file `node_helper.js`: Replace it with `MagicMirror²`.
 
 ## [MMM-uptimerobot by mrVragec](https://github.com/mrVragec/MMM-uptimerobot)
 
-1. `.travis.yml`: Change file extention from `.yml` to `.yaml`: <https://yaml.org/faq.html>.
-2. Typo - Found 'Magic Mirror' in file `node_helper.js`: Replace it with `MagicMirror²`.
-3. Deprecated - Found 'require('request')' in file `node_helper.js`: Replace it with built-in fetch.
-4. Typo - Found 'Magic Mirror' in file `uptimerobot.js`: Replace it with `MagicMirror²`.
+1. Typo - Found 'Magic Mirror' in file `node_helper.js`: Replace it with `MagicMirror²`.
+2. Deprecated - Found 'require('request')' in file `node_helper.js`: Replace it with built-in fetch.
+3. Typo - Found 'Magic Mirror' in file `uptimerobot.js`: Replace it with `MagicMirror²`.
 
 ## [MMM-vCard2Calendar by n-gao](https://github.com/n-gao/MMM-vCard2Calendar)
 
@@ -5026,11 +4740,8 @@ Number of analyzed modules: 1016
 
 ## [MMM-voice by fewieden](https://github.com/fewieden/MMM-voice)
 
-1. `.codeclimate.yml`: Change file extention from `.yml` to `.yaml`: <https://yaml.org/faq.html>.
-2. `.doclets.yml`: Change file extention from `.yml` to `.yaml`: <https://yaml.org/faq.html>.
-3. `.travis.yml`: Change file extention from `.yml` to `.yaml`: <https://yaml.org/faq.html>.
-4. Typo - Found 'Magic Mirror' in file `dependencies.sh`: Replace it with `MagicMirror²`.
-5. Typo - Found 'MagicMirror2' in file `package.json`: Replace it with `MagicMirror²`.
+1. Typo - Found 'Magic Mirror' in file `dependencies.sh`: Replace it with `MagicMirror²`.
+2. Typo - Found 'MagicMirror2' in file `package.json`: Replace it with `MagicMirror²`.
 
 ## [MMM-vvsDeparture by fhinder](https://github.com/fhinder/MMM-vvsDeparture)
 
@@ -5077,10 +4788,9 @@ Number of analyzed modules: 1016
 ## [MagicMirror-Module-Template by roramirez](https://github.com/roramirez/MagicMirror-Module-Template)
 
 1. Module name doesn't follow the recommended pattern (it doesn't start with `MMM-`). Consider renaming your module.
-2. `.travis.yml`: Change file extention from `.yml` to `.yaml`: <https://yaml.org/faq.html>.
-3. Typo - Found 'Magic Mirror' in file `MagicMirror-Module-Template.js`: Replace it with `MagicMirror²`.
-4. Recommendation - Found 'XMLHttpRequest' in file `MagicMirror-Module-Template.js`: Replace it with built-in fetch.
-5. Typo - Found 'Magic Mirror' in file `node_helper.js`: Replace it with `MagicMirror²`.
+2. Typo - Found 'Magic Mirror' in file `MagicMirror-Module-Template.js`: Replace it with `MagicMirror²`.
+3. Recommendation - Found 'XMLHttpRequest' in file `MagicMirror-Module-Template.js`: Replace it with built-in fetch.
+4. Typo - Found 'Magic Mirror' in file `node_helper.js`: Replace it with `MagicMirror²`.
 
 ## [PlutoTime by croxis](https://github.com/croxis/PlutoTime)
 
@@ -5105,19 +4815,18 @@ Number of analyzed modules: 1016
 ## [WallberryTheme by delightedCrow](https://github.com/delightedCrow/WallberryTheme)
 
 1. Module name doesn't follow the recommended pattern (it doesn't start with `MMM-`). Consider renaming your module.
-2. `FUNDING.yml`: Change file extention from `.yml` to `.yaml`: <https://yaml.org/faq.html>.
-3. Typo - Found 'Magic Mirror' in file `bug_report.md`: Replace it with `MagicMirror²`.
-4. Typo - Found 'Magic Mirror' in file `WB-clock.js`: Replace it with `MagicMirror²`.
-5. Recommendation - Found 'node-fetch' in file `README.md`: Replace it with built-in fetch.
-6. Typo - Found 'Magic Mirror' in file `WB-dataObjects.js`: Replace it with `MagicMirror²`.
-7. Typo - Found 'Magic Mirror' in file `WB-provider.js`: Replace it with `MagicMirror²`.
-8. Typo - Found 'Magic Mirror' in file `WB-weather.js`: Replace it with `MagicMirror²`.
-9. Typo - Found 'Magic Mirror' in file `WB-darksky-helper.js`: Replace it with `MagicMirror²`.
-10. Recommendation - Found 'node-fetch' in file `WB-darksky-helper.js`: Replace it with built-in fetch.
-11. Typo - Found 'Magic Mirror' in file `WB-darksky.js`: Replace it with `MagicMirror²`.
-12. Typo - Found 'Magic Mirror' in file `WB-openweathermap.js`: Replace it with `MagicMirror²`.
-13. Typo - Found 'Magic Mirror' in file `WallberryTheme.js`: Replace it with `MagicMirror²`.
-14. Recommendation - Found 'XMLHttpRequest' in file `WallberryTheme.js`: Replace it with built-in fetch.
+2. Typo - Found 'Magic Mirror' in file `bug_report.md`: Replace it with `MagicMirror²`.
+3. Typo - Found 'Magic Mirror' in file `WB-clock.js`: Replace it with `MagicMirror²`.
+4. Recommendation - Found 'node-fetch' in file `README.md`: Replace it with built-in fetch.
+5. Typo - Found 'Magic Mirror' in file `WB-dataObjects.js`: Replace it with `MagicMirror²`.
+6. Typo - Found 'Magic Mirror' in file `WB-provider.js`: Replace it with `MagicMirror²`.
+7. Typo - Found 'Magic Mirror' in file `WB-weather.js`: Replace it with `MagicMirror²`.
+8. Typo - Found 'Magic Mirror' in file `WB-darksky-helper.js`: Replace it with `MagicMirror²`.
+9. Recommendation - Found 'node-fetch' in file `WB-darksky-helper.js`: Replace it with built-in fetch.
+10. Typo - Found 'Magic Mirror' in file `WB-darksky.js`: Replace it with `MagicMirror²`.
+11. Typo - Found 'Magic Mirror' in file `WB-openweathermap.js`: Replace it with `MagicMirror²`.
+12. Typo - Found 'Magic Mirror' in file `WallberryTheme.js`: Replace it with `MagicMirror²`.
+13. Recommendation - Found 'XMLHttpRequest' in file `WallberryTheme.js`: Replace it with built-in fetch.
 
 ## [calendar_monthly by KirAsh4](https://github.com/KirAsh4/calendar_monthly/)
 
@@ -5218,10 +4927,7 @@ Number of analyzed modules: 1016
 ## [mmpm by Bee-Mar](https://github.com/Bee-Mar/mmpm)
 
 1. Module name doesn't follow the recommended pattern (it doesn't start with `MMM-`). Consider renaming your module.
-2. `FUNDING.yml`: Change file extention from `.yml` to `.yaml`: <https://yaml.org/faq.html>.
-3. Recommendation - Found 'uses: actions/checkout@v3' in file `build.yml`: Replace it with v4.
-4. `build.yml`: Change file extention from `.yml` to `.yaml`: <https://yaml.org/faq.html>.
-5. `.travis.yml`: Change file extention from `.yml` to `.yaml`: <https://yaml.org/faq.html>.
+2. Recommendation - Found 'uses: actions/checkout@v3' in file `build.yml`: Replace it with v4.
 
 ## [motiondetector by alexyak](https://github.com/alexyak/motiondetector)
 
