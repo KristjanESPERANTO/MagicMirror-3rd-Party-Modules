@@ -1,0 +1,74 @@
+[
+  {
+    "name": "Departure Times Module",
+    "image": "departure_times.jpg",
+    "link": "#",
+    "category": "Public Transportation",
+    "tags": ["Transportation", "Schedule", "Public Transit", "Traffic"],
+    "text": "This module displays real-time departure times for public transportation.",
+    "description": "Stay informed about the upcoming departures from your local public transit stations."
+  },
+  {
+    "name": "Weather Widget",
+    "image": "weather_widget.jpg",
+    "link": "#",
+    "category": "Weather",
+    "tags": ["Weather", "Forecast", "Temperature", "Conditions"],
+    "text": "Get up-to-date weather information with this module, including forecasts and current conditions.",
+    "description": "Plan your day accordingly by checking the latest weather updates at a glance."
+  },
+  {
+    "name": "News Ticker",
+    "image": "news_ticker.jpg",
+    "link": "#",
+    "category": "News",
+    "tags": ["News", "Headlines", "Current Events"],
+    "text": "Stay informed about the latest news with this dynamic news ticker module.",
+    "description": "Catch up on breaking news and top headlines without leaving your screen."
+  },
+  {
+    "name": "Traffic Monitor",
+    "image": "traffic_monitor.jpg",
+    "link": "#",
+    "category": "Traffic",
+    "tags": ["Traffic", "Commute", "Road Conditions"],
+    "text": "Monitor real-time traffic conditions and plan your commute effectively with this module.",
+    "description": "Avoid traffic jams and delays by staying informed about the current road conditions."
+  },
+  {
+    "name": "Calendar Events",
+    "image": "calendar_events.jpg",
+    "link": "#",
+    "category": "Personal Organization",
+    "tags": ["Calendar", "Events", "Reminders"],
+    "text": "Keep track of your upcoming events and appointments with this calendar events module.",
+    "description": "Never miss an important date by having your calendar events displayed on your screen."
+  },
+  {
+    "name": "Stock Market Updates",
+    "image": "stock_market.jpg",
+    "link": "#",
+    "category": "Finance",
+    "tags": ["Stocks", "Market", "Investments"],
+    "text": "Stay updated on the stock market with this module, providing real-time stock prices and market trends.",
+    "description": "Make informed decisions about your investments by monitoring stock market updates."
+  },
+  {
+    "name": "Social Media Feed",
+    "image": "social_media_feed.jpg",
+    "link": "#",
+    "category": "Social Media",
+    "tags": ["Social Media", "Feed", "Updates"],
+    "text": "Stay connected with your social media accounts using this dynamic social media feed module.",
+    "description": "View the latest posts and updates from your friends and connections without opening your browser."
+  },
+  {
+    "name": "Health and Fitness Tracker",
+    "image": "fitness_tracker.jpg",
+    "link": "#",
+    "category": "Health",
+    "tags": ["Fitness", "Health", "Activity"],
+    "text": "Monitor your health and fitness goals with this tracker, providing insights into your daily activity and well-being.",
+    "description": "Stay on top of your fitness routine and health objectives by visualizing your progress on your screen."
+  }
+]
