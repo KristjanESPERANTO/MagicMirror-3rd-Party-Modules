@@ -70,7 +70,7 @@
     "description": "Stay connected with your social media accounts using this dynamic social media feed module."
   },
   {
-    "name": "Health and Fitness Tracker",
+    "name": "MMM-GoogleFit",
     "image": "https://raw.githubusercontent.com/amcolash/MMM-GoogleFit/master/screenshots/normal.png",
     "maintainer": "fry0815",
     "link": "https://github.com/fry0815/MMM-GoogleFit",
@@ -78,5 +78,15 @@
     "tags": ["Fitness"],
     "text": "",
     "description": "Display google fit daily step count and weights."
+  },
+  {
+    "name": "MMM-CrisisInformationSweden",
+    "image": "https://raw.githubusercontent.com/boghammar/MMM-CrisisInformationSweden/master/docs/ScreenShot2.PNG",
+    "maintainer": "boghammar",
+    "link": "https://github.com/boghammar/MMM-CrisisInformationSweden",
+    "category": "Information",
+    "tags": ["Crisis", "Sweden"],
+    "text": "",
+    "description": "News feed from the Swedish Government Crisis Information (Krisinformation.se)."
   }
 ]

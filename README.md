@@ -35,12 +35,15 @@ Note: This list is not entirely up to date. See the code for current status.
 
 ## Ideas / To do
 
-- Use data from GitHub API: https://api.github.com/repos/MichMich/MagicMirror
+- Use data from GitHub API: <https://api.github.com/repos/MichMich/MagicMirror>
   - Is there also a GitLab API?
 - Create test result overview (like a statistic).
 - Statistics per module
   - last update date
   - number of unresolved issues to guess the module’s activation level or popularity
+- Website
+  - Make it responsive.
+  - add sorting options alphabetically + last commit + GitHub stars + issues
 - Also check MagicMirror² core.
 - Tests
   - Is repository reachable? Now the get_modules skript interupts if a repo isn't reachable.

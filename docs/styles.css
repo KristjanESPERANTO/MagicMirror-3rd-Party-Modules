@@ -1,5 +1,5 @@
 body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   margin: 0;
   padding: 0;
   display: flex;
@@ -23,6 +23,26 @@ aside {
   border-radius: 5px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   position: fixed;
+  margin: auto;
+}
+
+@media screen and (max-width: 768px) {
+  main {
+    margin-top: auto;
+    margin-left: auto !important;
+  }
+
+  .container {
+    display: grid;
+    margin: 1em;
+  }
+  #filterMenu {
+    display: none;
+  }
+
+  #hamburger-icon {
+    display: block !important;
+  }
 }
 
 .tag-button {
@@ -47,13 +67,12 @@ aside {
   border-radius: 5px;
 }
 
-
-.cardHeader{
+.cardHeader {
   font-size: larger;
   text-align: center;
   margin-bottom: 1em;
 }
-.cardHeader a{
+.cardHeader a {
   text-decoration: none;
 }
 
@@ -95,6 +114,11 @@ main {
 #filterMenu {
   padding: 0;
   background-color: #6b6b6b;
+}
+
+#hamburger-icon {
+  display: none;
+  cursor: pointer;
 }
 
 .menu-item a {
