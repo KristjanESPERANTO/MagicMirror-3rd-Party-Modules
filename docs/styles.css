@@ -81,7 +81,7 @@ main {
   flex-wrap: wrap;
   justify-content: space-around;
   padding: 1em;
-  margin-left: 200px;
+  margin-left: 250px;
 }
 
 .card {
@@ -133,4 +133,29 @@ main {
 
 .menu-item a:hover {
   background-color: #ddd;
+}
+
+[data-category]:before {
+  padding-right: 0.5em;
+  content: "🗋"
+}
+
+[data-category="all"]:before {
+  content: "🗺️";
+}
+
+[data-category="Finance"]:before {
+  content:"💰";
+}
+
+[data-category="Weather"]:before {
+  content:"☁️";
+}
+
+[data-category="Traffic"]:before {
+  content:"⛕";
+}
+
+[data-category="Social Media"]:before {
+  content:"📱";
 }
