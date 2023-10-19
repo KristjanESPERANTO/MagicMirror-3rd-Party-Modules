@@ -20,7 +20,7 @@ def get_modules():
 
             if len(columns) == 5:
 
-                module_name = columns[1].split("(")[0].strip().replace("[", "").replace("]", "")
+                module_name = columns[1].split("(")[0].strip().replace("[", "").replace("]", "").replace(" ", "-")
                 module_url = columns[1].split("(")[1].strip().replace("(", "").replace(")", "")
                 module_owner = module_url.split("/")[3]
                 # module_description = columns[3].strip()
