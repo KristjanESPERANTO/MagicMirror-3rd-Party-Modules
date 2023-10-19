@@ -35,6 +35,7 @@ Note: This list is not entirely up to date. See the code for current status.
 
 ## Ideas / To do
 
+- Compatibility with the module list of `MMM-Remote-Control`: <https://github.com/Jopyth/MMM-Remote-Control/blob/master/modules.json>
 - Use data from GitHub API: <https://api.github.com/repos/MichMich/MagicMirror>
   - Is there also a GitLab API?
 - Create test result overview (like a statistic).
