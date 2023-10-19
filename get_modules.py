@@ -38,6 +38,15 @@ def get_modules():
                 else:
                     print("- I - path doesn't exists: run `git clone`")
                     subprocess.run(f"git clone {module_url} {path} --depth 1", shell=True, check=False)
-    print("\n- I - Modules found and downloaded: " + str(module_counter))
+    print("\n- I - Modules found and downloaded: " + str(module_counter) + "\n")
+
+    for line in lines:
+        line = line.strip()
+        if line.startswith("|"):
+            if not line.endswith("|"):
+                print('- E - Pipe is missing at the end of line: \n   ' + line + "\n   Please fix it in the wiki.")
+        if line.endswith("|"):
+            if not line.startswith("|"):
+                print('- E - Pipe is missing at the beginnig of line: \n   ' + line + "\n   Please fix it in the wiki.")
 
 get_modules()
