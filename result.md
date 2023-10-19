@@ -1,8 +1,8 @@
 # Result of the module analysis
 
-Timestamp: 2023-10-17 23:30:55
+Timestamp: 2023-10-19 03:24:18
 
-Number of analyzed modules: 1016
+Number of analyzed modules: 1022
 
 ## [BIRTHDAYS by marcomerens](https://github.com/marcomerens/anniversarymodule)
 
@@ -40,6 +40,11 @@ Number of analyzed modules: 1016
 
 1. Module name doesn't follow the recommended pattern (it doesn't start with `MMM-`). Consider renaming your module.
 2. Typo - Found 'Magic Mirror' in file `emt.js`: Replace it with `MagicMirror²`.
+
+## [JIR-Tarifa-luz by jirsis](https://github.com/jirsis/JIR-tarifa-luz)
+
+1. Module name doesn't follow the recommended pattern (it doesn't start with `MMM-`). Consider renaming your module.
+2. Typo - Found 'MagicMirror2' in file `package.json`: Replace it with `MagicMirror²`.
 
 ## [KeyDisplayed by l0b5ter](https://github.com/l0b5ter/KeyDisplayed)
 
@@ -234,7 +239,8 @@ Number of analyzed modules: 1016
 
 ## [MMM-Autobahn by JockeyDoe](https://github.com/JockeyDoe/MMM-Autobahn)
 
-1. Found directory `node_modules`. This shouldn't be uploaded. Add `node_modules/`to `.gitignore`.
+1. Deprecated - Found 'require("native-request")' in file `node_helper.js`: Replace it with built-in fetch.
+2. Found directory `node_modules`. This shouldn't be uploaded. Add `node_modules/`to `.gitignore`.
 
 ## [MMM-AvfallshentingOslo by blixhavn](https://github.com/blixhavn/MMM-AvfallshentingOslo)
 
@@ -1379,6 +1385,11 @@ Number of analyzed modules: 1016
 
 1. Deprecated - Found 'require("request")' in file `node_helper.js`: Replace it with built-in fetch.
 
+## [MMM-GoogleFit by fry0815](https://github.com/fry0815/MMM-GoogleFit)
+
+1. Deprecated - Found 'require("request")' in file `node_helper.js`: Replace it with built-in fetch.
+2. Typo - Found 'Magic Mirror' in file `package.json`: Replace it with `MagicMirror²`.
+
 ## [MMM-GoogleMaps-Tracking by MartinGris](https://github.com/MartinGris/MMM-GoogleMaps-Tracking)
 
 1. Typo - Found 'Magic Mirror' in file `package.json`: Replace it with `MagicMirror²`.
@@ -1855,6 +1866,11 @@ Number of analyzed modules: 1016
 3. Recommendation - Found 'node-fetch' in file `node_helper.js`: Replace it with built-in fetch.
 4. Typo - Found 'Magic Mirror' in file `package.json`: Replace it with `MagicMirror²`.
 5. Recommendation - Found 'node-fetch' in file `package.json`: Replace it with built-in fetch.
+
+## [MMM-LoadShedding by qunu](https://github.com/qunu/MMM-LoadShedding)
+
+1. Typo - Found 'Magic Mirror' in file `custom.md`: Replace it with `MagicMirror²`.
+2. Typo - Found 'Magic Mirror' in file `MMM-LoadShedding.js`: Replace it with `MagicMirror²`.
 
 ## [MMM-LocalEvents by dwoolridge](https://github.com/dwoolridge/MMM-LocalEvents)
 
@@ -2452,6 +2468,14 @@ Number of analyzed modules: 1016
 
 1. Typo - Found 'Magic Mirror' in file `MMM-News-QR.js`: Replace it with `MagicMirror²`.
 
+## [MMM-NewsAPI by mumblebaj](https://github.com/mumblebaj/MMM-NewsAPI)
+
+1. Recommendation - Found 'XMLHttpRequest' in file `MMM-NewsAPI.js`: Replace it with built-in fetch.
+2. Recommendation - Found 'node-fetch' in file `README.md`: Replace it with built-in fetch.
+3. Deprecated - Found 'require('request')' in file `node_helper.js`: Replace it with built-in fetch.
+4. Recommendation - Found 'node-fetch' in file `node_helper.js`: Replace it with built-in fetch.
+5. Recommendation - Found 'node-fetch' in file `package.json`: Replace it with built-in fetch.
+
 ## [MMM-NewsFeedTicker by justjim1220](https://github.com/justjim1220/MMM-NewsFeedTicker)
 
 1. Typo - Found 'Magic Mirror' in file `fetcher.js`: Replace it with `MagicMirror²`.
@@ -2939,6 +2963,14 @@ Number of analyzed modules: 1016
 
 1. Typo - Found 'Magic Mirror' in file `MMM-Profilepicture.js`: Replace it with `MagicMirror²`.
 
+## [MMM-PrometheusAlerts by spyder007](https://github.com/spyder007/MMM-PrometheusAlerts)
+
+1. Recommendation - Found 'uses: actions/checkout@v3' in file `node.js.yml`: Replace it with v4.
+2. Typo - Found 'Magic Mirror' in file `CONTRIBUTING.md`: Replace it with `MagicMirror²`.
+3. Recommendation - Found 'node-fetch' in file `package.json`: Replace it with built-in fetch.
+4. Recommendation - Found 'node-fetch' in file `PrometheusService.test.ts`: Replace it with built-in fetch.
+5. Recommendation - Found 'node-fetch' in file `PrometheusService.ts`: Replace it with built-in fetch.
+
 ## [MMM-Property-Managed by stewartmckee](https://github.com/stewartmckee/MMM-Property-managed)
 
 1. Typo - Found 'Magic Mirror' in file `MMM-Property-Managed.js`: Replace it with `MagicMirror²`.
@@ -3002,6 +3034,7 @@ Number of analyzed modules: 1016
 
 1. Typo - Found 'Magic Mirror' in file `MMM-RKI-Covid19.js`: Replace it with `MagicMirror²`.
 2. Typo - Found 'Magic Mirror' in file `node_helper.js`: Replace it with `MagicMirror²`.
+3. Deprecated - Found 'require("native-request")' in file `node_helper.js`: Replace it with built-in fetch.
 
 ## [MMM-RMV by Com-Lum](https://github.com/Com-Lum/MMM-RMV)
 
@@ -3554,11 +3587,10 @@ Number of analyzed modules: 1016
 ## [MMM-StatusPageIo by spyder007](https://github.com/spyder007/MMM-StatusPageIo)
 
 1. Recommendation - Found 'uses: actions/checkout@v3' in file `node.js.yml`: Replace it with v4.
-2. Deprecated - Found 'node-version: [16' in file `node.js.yml`: Update to current version.
-3. Typo - Found 'Magic Mirror' in file `CONTRIBUTING.md`: Replace it with `MagicMirror²`.
-4. Recommendation - Found 'node-fetch' in file `package.json`: Replace it with built-in fetch.
-5. Recommendation - Found 'node-fetch' in file `StatusPageService.test.ts`: Replace it with built-in fetch.
-6. Recommendation - Found 'node-fetch' in file `StatusPageService.ts`: Replace it with built-in fetch.
+2. Typo - Found 'Magic Mirror' in file `CONTRIBUTING.md`: Replace it with `MagicMirror²`.
+3. Recommendation - Found 'node-fetch' in file `package.json`: Replace it with built-in fetch.
+4. Recommendation - Found 'node-fetch' in file `StatusPageService.test.ts`: Replace it with built-in fetch.
+5. Recommendation - Found 'node-fetch' in file `StatusPageService.ts`: Replace it with built-in fetch.
 
 ## [MMM-SteamPlaytime by buxxi](https://github.com/buxxi/MMM-SteamPlaytime)
 
@@ -3695,7 +3727,6 @@ Number of analyzed modules: 1016
 
 1. Typo - Found 'MagicMirror2' in file `MMM-TautulliActivity.js`: Replace it with `MagicMirror²`.
 2. Typo - Found 'MagicMirror2' in file `README.md`: Replace it with `MagicMirror²`.
-3. Recommendation - Found 'node-fetch' in file `node_helper.js`: Replace it with built-in fetch.
 
 ## [MMM-TelegramCommands by doctorfree](https://github.com/doctorfree/MMM-TelegramCommands)
 
@@ -3736,6 +3767,10 @@ Number of analyzed modules: 1016
 
 1. Typo - Found 'Magic Mirror' in file `MMM-Thingiverse.js`: Replace it with `MagicMirror²`.
 2. Recommendation - Found 'XMLHttpRequest' in file `MMM-Thingiverse.js`: Replace it with built-in fetch.
+
+## [MMM-TiHimawari8Earth by zhouxichun](https://github.com/zhouxichun/MMM-TiHimawari8Earth)
+
+1. Typo - Found 'Magic Mirror' in file `MMM-TiHimawari8Earth.js`: Replace it with `MagicMirror²`.
 
 ## [MMM-Tibber by ottopaulsen](https://github.com/ottopaulsen/MMM-Tibber)
 
