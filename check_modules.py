@@ -44,6 +44,14 @@ def check_modules():
             "name": "Replace it with built-in fetch.",
             "category": "Deprecated"
         },
+        "require(\"native-request\")": {
+            "name": "Replace it with built-in fetch.",
+            "category": "Deprecated"
+        },
+        "require('native-request')": {
+            "name": "Replace it with built-in fetch.",
+            "category": "Deprecated"
+        },
         "require(\"https\")": {
             "name": "Replace it with built-in fetch.",
             "category": "Recommendation"
@@ -117,23 +125,23 @@ def check_modules():
 
         if not module["name"].startswith("MMM-"):
             module["issues"].append(
-                "Module name doesn't follow the recommended pattern (it doesn't start with `MMM-`). Consider renaming your module.")
+                "Recommendation: Module name doesn't follow the recommended pattern (it doesn't start with `MMM-`). Consider renaming your module.")
 
         for file_path in sorted(module_directory.rglob("*")):
             if file_path.is_dir():
                 # .count == 1: If there is a node_modules directory, there are probably others in it with that name. There does not have to be an additional message for this.
                 if file_path.name == "node_modules" and str(file_path).count("node_modules") == 1:
                     module["issues"].append(
-                        "Found directory `node_modules`. This shouldn't be uploaded. Add `node_modules/`to `.gitignore`.")
+                        "Issue: Found directory `node_modules`. This shouldn't be uploaded. Add `node_modules/`to `.gitignore`.")
             elif not file_path.is_symlink() and "node_modules" not in str(file_path):
                 if "changelog" not in str(file_path).lower() and "package-lock.json" not in str(file_path).lower():
                     for search_string, value in search_strings.items():
                         found_string = search_in_file(file_path, search_string)
                         if found_string:
-                            module["issues"].append(f"{value['category']} - Found '{search_string}' in file `{file_path.name}`: {value['name']}")
+                            module["issues"].append(f"{value['category']}: Found '{search_string}' in file `{file_path.name}`: {value['name']}")
                 #if ".yml" in str(file_path).lower():
                 #    module["issues"].append(
-                #        f"`{file_path.name}`: Change file extention from `.yml` to `.yaml`: <https://yaml.org/faq.html>.")
+                #        f"`Recommendation: {file_path.name}`: Change file extention from `.yml` to `.yaml`: <https://yaml.org/faq.html>.")
 
         if len(module["issues"]) > 0:
             url = subprocess.run(f"cd {module_directory} && git remote get-url origin && cd ..",
