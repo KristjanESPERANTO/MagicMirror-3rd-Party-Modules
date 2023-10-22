@@ -14,7 +14,7 @@ document.addEventListener("DOMContentLoaded", function () {
       card.className = "card";
       card.innerHTML = `
               <div class="cardHeader"><a href="${
-                cardData.link
+                cardData.url
               }" target="_blank">${cardData.name}</a></div>
               <img src="${cardData.image}" alt="Image">
               <p>Category: ${cardData.category}</p>
@@ -103,10 +103,10 @@ document.addEventListener("DOMContentLoaded", function () {
         displayCards(filteredCards);
 
         // Remove the "selected" class from all categories, tags, and cards
-        const allLinks = document.querySelectorAll(
+        const allURLs = document.querySelectorAll(
           ".menu-item a, .tag-button, .card"
         );
-        allLinks.forEach((link) => link.classList.remove("selected"));
+        allURLs.forEach((url) => url.classList.remove("selected"));
 
         if (categoryFilter !== null || searchText) {
           // filterMenu.style.display = "none";
@@ -129,11 +129,11 @@ document.addEventListener("DOMContentLoaded", function () {
         }
 
         // Mark the selected menu entry
-        const selectedLink = document.querySelector(
+        const selectedURL = document.querySelector(
           `.menu-item a[data-category="${categoryFilter}"]`
         );
-        if (selectedLink) {
-          selectedLink.classList.add("selected");
+        if (selectedURL) {
+          selectedURL.classList.add("selected");
         }
       })
       .catch((error) => console.error("Error fetching data:", error));
@@ -147,17 +147,17 @@ document.addEventListener("DOMContentLoaded", function () {
         displayCards(filteredCards);
 
         // Remove the "selected" class from all categories, tags, and cards
-        const allLinks = document.querySelectorAll(
+        const allURLs = document.querySelectorAll(
           ".menu-item a, .tag-button, .card"
         );
-        allLinks.forEach((link) => link.classList.remove("selected"));
+        allURLs.forEach((url) => url.classList.remove("selected"));
 
         // Mark the selected tag
-        const selectedLink = document.querySelector(
+        const selectedURL = document.querySelector(
           `.tag-button[data-tag="${tag}"]`
         );
-        if (selectedLink) {
-          selectedLink.classList.add("selected");
+        if (selectedURL) {
+          selectedURL.classList.add("selected");
         }
       })
       .catch((error) => console.error("Error fetching data:", error));
@@ -165,10 +165,10 @@ document.addEventListener("DOMContentLoaded", function () {
 
   function removeAllSelected() {
     // Remove the "selected" class from all categories, tags, and cards
-    const allLinks = document.querySelectorAll(
+    const allURLs = document.querySelectorAll(
       ".menu-item a, .tag-button, .card"
     );
-    allLinks.forEach((link) => link.classList.remove("selected"));
+    allURLs.forEach((url) => url.classList.remove("selected"));
   }
 
   // Event listener for clicks outside of categories, tags, and cards
