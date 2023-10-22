@@ -1,8 +1,10 @@
 #!/usr/bin/python3
 """Function to get all MagicMirror² modules."""
 
+import shutil
 import subprocess
 from pathlib import Path
+
 
 def get_modules():
     """Function to get all the modules per git."""
@@ -24,12 +26,12 @@ def get_modules():
                 module_url = columns[1].split("(")[1].strip().replace("(", "").replace(")", "")
                 module_owner = module_url.split("/")[3]
                 # module_description = columns[3].strip()
-                path = Path(f"./modules/{module_name}-----{module_owner}")
+                path = Path(f"./modules_temp/{module_name}-----{module_owner}")
 
                 print(
                     f"\n########   {module_counter:4}: {module_name} by {module_owner}"
                     f"\n- I - {module_url:4}"
-                    #f"\n      {module_description}"
+                    # f"\n      {module_description}"
                 )
 
                 if path.exists():
@@ -49,4 +51,32 @@ def get_modules():
             if not line.startswith("|"):
                 print('- E - Pipe is missing at the beginnig of line: \n   ' + line + "\n   Please fix it in the wiki.")
 
+
+def rename_modules_directory():
+    """
+    Deletes the directory "modules_temp" and renames the directory "modules" to "modules_temp".
+    We need this so that we don't have to download all the git repositories every time.
+    With rename process we get rid of old modules that have been removed from the list.
+    """
+
+    # Delete the directory "modules_temp" if it exists
+    try:
+        shutil.rmtree("modules_temp")
+    except FileNotFoundError:
+        pass
+
+    # Rename the directory "modules" to "modules_temp"
+    shutil.move("modules", "modules_temp")
+
+
+def rename_modules_temp_directory_to_modules():
+    """
+    Rename the directory "modules_temp" to "modules"
+    """
+    shutil.move("modules_temp", "modules")
+
+rename_modules_directory()
+
 get_modules()
+
+rename_modules_temp_directory_to_modules()

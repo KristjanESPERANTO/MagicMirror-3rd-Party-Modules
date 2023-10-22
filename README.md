@@ -60,5 +60,4 @@ Note: This list is not entirely up to date. See the code for current status.
   - Is `moment` in use? <https://momentjs.com/docs/#/-project-status/>
   - Is there a LICENCE file?
   - Is branch name master? -> Description why and how switch to main.
-  - `get_modules.py`
-    - Take care of modules that are removed from the wiki. So far they remain local forever after cloning and are then also checked.
+
