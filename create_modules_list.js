@@ -1,6 +1,7 @@
 const fs = require('fs');
+const fsp = require('fs').promises;
 
-async function fetchData() {
+async function fetchMarkdownData() {
   try {
     const url = 'https://raw.githubusercontent.com/wiki/MichMich/MagicMirror/3rd-Party-Modules.md';
     const response = await fetch(url);
@@ -14,8 +15,20 @@ async function fetchData() {
   }
 }
 
+async function getModuleData(maintainer, name) {
+  console.log("##### " + name + " " + maintainer);
+  try {
+    const data = await fsp.readFile(`./modules/${name}-----${maintainer}/package.json`, 'utf8');
+    const json = JSON.parse(data);
+    return json;
+  } catch (err) {
+    // Handle any errors that may occur during reading or parsing the JSON
+    throw err;
+  }
+}
+
 async function createModuleList() {
-  markdown = await fetchData();
+  markdown = await fetchMarkdownData();
   const modules = [];
   for (const line of markdown.split('\n')) {
     if (line.includes("](https://github.com/") || line.includes("](https://gitlab.com/")) {
@@ -47,6 +60,24 @@ async function createModuleList() {
 
         let description = parts[3];
 
+        let tags;
+        let license;
+
+        // Gather Information from package.json
+        try {
+          const moduleData = await getModuleData(maintainer, name);
+          tags = moduleData.keywords;
+          license = moduleData.license;
+        } catch (error) {
+          if (error instanceof SyntaxError) {
+            issues.push("- E - An error occurred parsing 'package.json'.");
+          } else if (error.code === 'ENOENT') {
+            issues.push("- W - There is no 'package.json'. We need this file to gather information about the module.");
+          } else {
+            issues.push(`- E - An error occurred while getting information from 'package.json': ${error}`);
+          } 
+        }
+
         const module = {
           name,
           url,
@@ -54,9 +85,10 @@ async function createModuleList() {
           maintainer,
           maintainerURL,
           description,
+          tags,
+          license,
           issues
         };
-        console.log(module);
         modules.push(module);
       }
     }
