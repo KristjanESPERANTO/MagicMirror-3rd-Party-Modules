@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const cardContainer = document.getElementById("card-container");
   const hamburgerIcon = document.getElementById("hamburger-icon");
   const searchInput = document.getElementById("search-input");
-  const tagButtons = document.getElementById("tag-buttons");
+  const tagButtonContainer = document.getElementById("tag-buttons");
 
   function displayCards(cards) {
     cardContainer.innerHTML = "";
@@ -68,8 +68,8 @@ document.addEventListener("DOMContentLoaded", () => {
     filterMenu.appendChild(categoryList);
   }
 
-  function displayTagButtons(tags) {
-    tagButtons.innerHTML = "";
+  function displayTagButtonContainer(tags) {
+    tagButtonContainer.innerHTML = "";
 
     const sortedTags = tags.sort();
 
@@ -78,7 +78,7 @@ document.addEventListener("DOMContentLoaded", () => {
       button.className = "tag-button";
       button.setAttribute("data-tag", tag);
       button.textContent = `#${tag}`;
-      tagButtons.appendChild(button);
+      tagButtonContainer.appendChild(button);
     });
   }
 
@@ -124,7 +124,7 @@ document.addEventListener("DOMContentLoaded", () => {
             []
           );
           const uniqueTags = [...new Set(allTags)];
-          displayTagButtons(uniqueTags);
+          displayTagButtonContainer(uniqueTags);
         }
 
         // Empty the search field if "Show All" is selected
@@ -205,7 +205,7 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
 
-  tagButtons.addEventListener("click", (event) => {
+  tagButtonContainer.addEventListener("click", (event) => {
     if (event.target.tagName === "A") {
       const tag = event.target.getAttribute("data-tag");
 
