@@ -9,6 +9,10 @@ document.addEventListener("DOMContentLoaded", () => {
   function displayCards(cards) {
     cardContainer.innerHTML = "";
 
+    const cardCountValue = cards.length;
+    const cardCountElement = document.getElementById("card-count-value");
+    cardCountElement.textContent = cardCountValue;
+
     cards.forEach((cardData) => {
       const card = document.createElement("div");
       card.className = "card";
