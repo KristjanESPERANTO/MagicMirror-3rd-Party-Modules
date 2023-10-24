@@ -1,29 +1,35 @@
 {
-    "env": {
-        "browser": true,
-        "commonjs": true,
-        "es2021": true,
-        "node": true
-    },
-    "extends":  [
-        "airbnb-base",
-        "plugin:json/recommended",
-        "plugin:prettier/recommended"
-      ],
-    "overrides": [
-        {
-          "files": ["*.md"],
-          "parser": "eslint-plugin-markdownlint/parser",
-          "extends": ["plugin:markdownlint/recommended"],
-          "rules": {
-            "markdownlint/md013": "off",
-            "markdownlint/md033": "off"
-          }
-        }
-      ],
-    "parserOptions": {
-        "ecmaVersion": "latest"
-    },
-    "rules": {
+  "env": {
+    "browser": true,
+    "node": true
+  },
+  "extends": [
+    "airbnb-base",
+    "plugin:json/recommended",
+    "plugin:prettier/recommended"
+  ],
+  "parserOptions": {
+    "ecmaVersion": "latest",
+    "sourceType": "module"
+  },
+  "root": true,
+  "rules": {
+    "consistent-return": "off",
+    "default-case": "off",
+    "import/no-unresolved": "off",
+    "prefer-destructuring": "off",
+    "no-console": "off"
+  },
+  "overrides": [
+    {
+      "files": ["*.md"],
+      "parser": "eslint-plugin-markdownlint/parser",
+      "extends": ["plugin:markdownlint/recommended"],
+      "rules": {
+        "markdownlint/md013": "off",
+        "markdownlint/md033": "off"
+      }
     }
+  ],
+  "ignorePatterns": ["modules/", "MagicMirror.wiki/"]
 }

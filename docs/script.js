@@ -1,10 +1,10 @@
-document.addEventListener("DOMContentLoaded", function () {
+document.addEventListener("DOMContentLoaded", () => {
   const apiUrl = "modules.json";
-  const filterMenu = document.getElementById("filterMenu");
-  const cardContainer = document.getElementById("cardContainer");
+  const filterMenu = document.getElementById("filter-menu");
+  const cardContainer = document.getElementById("card-container");
   const hamburgerIcon = document.getElementById("hamburger-icon");
-  const searchInput = document.getElementById("searchInput");
-  const tagButtons = document.getElementById("tagButtons");
+  const searchInput = document.getElementById("search-input");
+  const tagButtons = document.getElementById("tag-buttons");
 
   function displayCards(cards) {
     cardContainer.innerHTML = "";
@@ -13,7 +13,7 @@ document.addEventListener("DOMContentLoaded", function () {
       const card = document.createElement("div");
       card.className = "card";
       card.innerHTML = `
-              <div class="cardHeader"><a href="${
+              <div class="card-header"><a href="${
                 cardData.url
               }" target="_blank">${cardData.name}</a></div>
               <img src="${cardData.image}" alt="Image">
@@ -28,7 +28,7 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
     // Add an event listener for clicks on the cards
-    cardContainer.addEventListener("click", function (event) {
+    cardContainer.addEventListener("click", (event) => {
       // Check if the clicked element is a card
       const clickedCard = event.target.closest(".card");
       if (clickedCard) {
@@ -172,22 +172,22 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 
   // Event listener for clicks outside of categories, tags, and cards
-  document.addEventListener("click", function (event) {
-    const isMenuClick = event.target.closest("#filterMenu");
-    const isCardClick = event.target.closest("#cardContainer");
-    const isTagClick = event.target.closest("#tagButtons");
+  document.addEventListener("click", (event) => {
+    const isMenuClick = event.target.closest("#filter-menu");
+    const isCardClick = event.target.closest("#card-container");
+    const isTagClick = event.target.closest("#tag-buttons");
 
     if (!isMenuClick && !isCardClick && !isTagClick) {
       removeAllSelected();
     }
   });
 
-  hamburgerIcon.addEventListener("click", function () {
+  hamburgerIcon.addEventListener("click", () => {
     filterMenu.style.display =
       filterMenu.style.display === "block" ? "none" : "block";
   });
 
-  filterMenu.addEventListener("click", function (event) {
+  filterMenu.addEventListener("click", (event) => {
     if (event.target.tagName === "A") {
       const category = event.target.getAttribute("data-category");
 
@@ -201,7 +201,7 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   });
 
-  tagButtons.addEventListener("click", function (event) {
+  tagButtons.addEventListener("click", (event) => {
     if (event.target.tagName === "A") {
       const tag = event.target.getAttribute("data-tag");
 
@@ -211,7 +211,7 @@ document.addEventListener("DOMContentLoaded", function () {
     searchInput.value = "";
   });
 
-  searchInput.addEventListener("input", function () {
+  searchInput.addEventListener("input", () => {
     updateDisplay(null, searchInput.value);
   });
 

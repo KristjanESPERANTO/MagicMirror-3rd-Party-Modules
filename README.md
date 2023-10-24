@@ -43,7 +43,7 @@ Note: This list is not entirely up to date. See the code for current status.
 - Compatibility with the module list of `MMM-Remote-Control`: <https://github.com/Jopyth/MMM-Remote-Control/blob/master/modules.json>
 - Use data from GitHub API: <https://api.github.com/repos/MichMich/MagicMirror>
   - Unfortunately we can't make many API queries. That's why we try to get the most data without the API queries.
-Maybe we can build the API query into the website. E.g. a detail button for each module, which then opens a window with more details (like open issues and stars).
+    Maybe we can build the API query into the website. E.g. a detail button for each module, which then opens a window with more details (like open issues and stars).
   - Is there also a GitLab API?
 - Create test result overview (like a statistic).
 - Statistics per module
