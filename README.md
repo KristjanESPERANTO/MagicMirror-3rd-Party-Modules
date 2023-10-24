@@ -16,7 +16,11 @@ This script reads the module list (created by the script before) and clones all 
 
 ## check_modules.py
 
-This module goes through all cloned modules and performs various checks. The result is writen to the [result.md](result.md).
+This script goes through all cloned modules and performs various checks. The result is writen to the [result.md](result.md).
+
+## create_modules_list.js
+
+This script parses the list of modules. Then it collects information for each module found from the module's `package.json` (if available). From the collected information it creates a JSON file which can be used later for the module web page and possibly also for `MMM-Remote-Control`.
 
 ### Checks
 
