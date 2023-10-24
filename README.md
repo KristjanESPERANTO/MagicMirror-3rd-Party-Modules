@@ -6,9 +6,9 @@ You can see the result of the last analysis in [result.md](result.md).
 
 This project is still in a very early stage. Feedback is very welcome.
 
-## get_wiki.sh
+## create_modules_list.js
 
-This script fetches the wiki that contains the list of the modules.
+This script parses the list of modules. Then it collects information for each module found from the module's `package.json` (if available). From the collected information it creates a JSON file which can be used later for the module web page and possibly also for `MMM-Remote-Control`.
 
 ## get_modules.py
 
@@ -17,10 +17,6 @@ This script reads the module list (created by the script before) and clones all 
 ## check_modules.py
 
 This script goes through all cloned modules and performs various checks. The result is writen to the [result.md](result.md).
-
-## create_modules_list.js
-
-This script parses the list of modules. Then it collects information for each module found from the module's `package.json` (if available). From the collected information it creates a JSON file which can be used later for the module web page and possibly also for `MMM-Remote-Control`.
 
 ### Checks
 
@@ -39,7 +35,7 @@ Note: This list is not entirely up to date. See the code for current status.
 
 ## Ideas / To do
 
-- Get rid of the get_wiki.py script -> update README (add create_modules_list.js)
+- divide create_modules_list.js into a part that only creates the list and another that do checks after the get_modules.py script
 - Get images module README?
 - Get last commit date from git?
 - Use modules.json for website

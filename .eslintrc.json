@@ -31,5 +31,5 @@
       }
     }
   ],
-  "ignorePatterns": ["modules/", "MagicMirror.wiki/"]
+  "ignorePatterns": ["modules/"]
 }
