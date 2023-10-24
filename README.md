@@ -38,8 +38,6 @@ Note: This list is not entirely up to date. See the code for current status.
 - Get rid of the get_wiki.py script -> update README (add create_modules_list.js)
 - Get images module README?
 - Get last commit date from git?
-- Add license
-- Add linter and prettier
 - Use modules.json for website
 - Filter some keywords: MM, module, MagicMirror, Smart Miror, ...
 - Compatibility with the module list of `MMM-Remote-Control`: <https://github.com/Jopyth/MMM-Remote-Control/blob/master/modules.json>
@@ -69,4 +67,3 @@ Maybe we can build the API query into the website. E.g. a detail button for each
   - Is `moment` in use? <https://momentjs.com/docs/#/-project-status/>
   - Is there a LICENCE file?
   - Is branch name master? -> Description why and how switch to main.
-
