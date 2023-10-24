@@ -58,7 +58,7 @@ aside {
 }
 
 .tag-button:hover {
-  background-color: #ddd;
+  background-color: #2276c588;
 }
 
 #search-input {
@@ -134,7 +134,7 @@ main {
 }
 
 .menu-item a:hover {
-  background-color: #ddd;
+  background-color: #2276c588;
 }
 
 /* Give some tags an emoji */
