@@ -75,7 +75,7 @@
     "maintainer": "fry0815",
     "url": "https://github.com/fry0815/MMM-GoogleFit",
     "category": "Health",
-    "tags": ["Fitness"],
+    "tags": ["fitness"],
     "text": "",
     "description": "Display google fit daily step count and weights."
   },
@@ -85,7 +85,7 @@
     "maintainer": "boghammar",
     "url": "https://github.com/boghammar/MMM-CrisisInformationSweden",
     "category": "Information",
-    "tags": ["Crisis", "Sweden"],
+    "tags": ["crisis", "sweden"],
     "text": "",
     "description": "News feed from the Swedish Government Crisis Information (Krisinformation.se)."
   }
