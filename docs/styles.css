@@ -137,6 +137,12 @@ main {
   background-color: #ddd;
 }
 
+/* Give some tags an emoji */
+
+[data-tag]::before {
+  padding-right: 0.5em;
+}
+
 [data-category]::before {
   padding-right: 0.5em;
   content: "🗋";
@@ -146,18 +152,52 @@ main {
   content: "🗺️";
 }
 
+
+[data-tag="Health"]::before,
+[data-category="Health"]::before {
+  content: "🍏";
+}
+
+[data-tag="Finance"]::before,
 [data-category="Finance"]::before {
   content: "💰";
 }
 
-[data-category="Weather"]::before {
-  content: "☁️";
+[data-tag="Information"]::before,
+[data-category="Information"]::before {
+  content: "ℹ️";
 }
 
+[data-tag="News"]::before,
+[data-category="News"]::before {
+  content: "📰";
+}
+
+[data-tag="Social Media"]::before,
+[data-category="Social Media"]::before {
+  content: "📱";
+}
+
+[data-tag="Traffic"]::before,
 [data-category="Traffic"]::before {
   content: "⛕";
 }
 
-[data-category="Social Media"]::before {
-  content: "📱";
+[data-tag="Weather"]::before,
+[data-category="Weather"]::before {
+  content: "☁️";
+}
+
+/* Highlight important tags */
+[data-tag="Entertainment"],
+[data-tag="Finance"],
+[data-tag="Health"],
+[data-tag="News"],
+[data-tag="Public Transport"],
+[data-tag="Religion"],
+[data-tag="Sports"],
+[data-tag="Voice Control"],
+[data-tag="Weather"] {
+  font-weight: bold;
+  font-size: large;
 }

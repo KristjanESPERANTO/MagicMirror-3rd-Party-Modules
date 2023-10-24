@@ -44,7 +44,7 @@
     "image": "",
     "maintainer": "randomBrainstormer",
     "url": "#",
-    "category": "Personal Organization",
+    "category": "Information",
     "tags": ["Calendar", "Events", "Reminders"],
     "text": "",
     "description": "Get your Google Calendars in the shape of MagicMirror's default calendar."
