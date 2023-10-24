@@ -74,14 +74,16 @@ async function createModuleList() {
 
         const description = parts[3];
 
-        let tags;
+        let tags = [];
         let license;
 
         // Gather Information from package.json
         try {
           // eslint-disable-next-line no-await-in-loop
           const moduleData = await getModuleData(maintainer, name);
-          tags = moduleData.keywords;
+          if (moduleData.keywords) {
+            tags = moduleData.keywords.map((tag) => tag.toLowerCase());
+          }
           license = moduleData.license;
         } catch (error) {
           if (error instanceof SyntaxError) {

@@ -5,7 +5,7 @@
     "maintainer": "KristjanESPERANTO",
     "url": "https://github.com/KristjanESPERANTO/MMM-PublicTransportHafas",
     "category": "Traffic",
-    "tags": ["Schedule", "Public Transport", "Traffic", "HAFAS"],
+    "tags": ["schedule", "public transport", "traffic", "hafas"],
     "text": "This module displays real-time departure times for public transportation.",
     "description": "Stay informed about the upcoming departures from your local public transit stations."
   },
@@ -15,7 +15,7 @@
     "maintainer": "jinserk",
     "url": "https://github.com/jinserk/MMM-2Day-NOAA-Forecast",
     "category": "Weather",
-    "tags": ["Weather", "Forecast"],
+    "tags": ["weather", "forecast"],
     "text": "",
     "description": "Show 4 consecutive 12-hr forecast, provided by NOAA National Weather Service API. No user registration nor API-key required."
   },
@@ -25,7 +25,7 @@
     "maintainer": "justjim1220",
     "url": "https://github.com/justjim1220/MMM-NewsFeedTicker",
     "category": "News",
-    "tags": ["News", "Events"],
+    "tags": ["news", "events"],
     "text": "Stay informed about the latest news with this dynamic news ticker module.",
     "description": "Mod of the default newsfeed module - shows the logo and scrolls the headlines and brief description across the screen like those seen on the news channels."
   },
@@ -35,7 +35,7 @@
     "maintainer": "JockeyDoe",
     "url": "https://github.com/JockeyDoe/MMM-Autobahn",
     "category": "Traffic",
-    "tags": ["Traffic"],
+    "tags": ["traffic"],
     "text": "",
     "description": "Traffic warnings for the german Autobahn."
   },
@@ -45,7 +45,7 @@
     "maintainer": "randomBrainstormer",
     "url": "#",
     "category": "Information",
-    "tags": ["Calendar", "Events", "Reminders"],
+    "tags": ["calendar", "events", "reminders", "sweden"],
     "text": "",
     "description": "Get your Google Calendars in the shape of MagicMirror's default calendar."
   },
@@ -55,7 +55,7 @@
     "maintainer": "balassy",
     "url": "https://github.com/balassy/MMM-SingleStock",
     "category": "Finance",
-    "tags": ["Investments"],
+    "tags": ["investments"],
     "text": "",
     "description": "Displays the stock price of a single company without any fancy animation."
   },
@@ -65,7 +65,7 @@
     "maintainer": "kapsolas",
     "url": "https://github.com/kapsolas/MMM-Instagram",
     "category": "Social Media",
-    "tags": ["Social Media", "Feed", "Updates"],
+    "tags": ["social media", "feed", "updates"],
     "text": "",
     "description": "Stay connected with your social media accounts using this dynamic social media feed module."
   },
