@@ -100,7 +100,8 @@ document.addEventListener("DOMContentLoaded", () => {
             (card) =>
               card.text.toLowerCase().includes(searchLower) ||
               card.description.toLowerCase().includes(searchLower) ||
-              card.name.toLowerCase().includes(searchLower)
+              card.name.toLowerCase().includes(searchLower) ||
+              card.tags.some((tag) => tag.toLowerCase().includes(searchText))
           );
         }
 
