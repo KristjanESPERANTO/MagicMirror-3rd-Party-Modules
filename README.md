@@ -39,7 +39,7 @@ Note: This list is not entirely up to date. See the code for current status.
 - Get images module README?
 - Get last commit date from git?
 - Add license
-- Add package.json
+- Add linter and prettier
 - Use modules.json for website
 - Filter some keywords: MM, module, MagicMirror, Smart Miror, ...
 - Compatibility with the module list of `MMM-Remote-Control`: <https://github.com/Jopyth/MMM-Remote-Control/blob/master/modules.json>

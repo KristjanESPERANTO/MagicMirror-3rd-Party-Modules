@@ -1,0 +1,26 @@
+{
+  "name": "magicmirror-3rd-party-module-check",
+  "version": "0.1.0",
+  "description": "This project provides an overview of all MagicMirror² modules and puts the modules through a few tests.",
+  "main": "create_modules_list.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KristjanESPERANTO/MagicMirror-3rd-Party-Module-check.git"
+  },
+  "keywords": [
+    "MagicMirror²",
+    "Modules"
+  ],
+  "author": "Kristjan ESPERANTO",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/KristjanESPERANTO/MagicMirror-3rd-Party-Module-check/issues"
+  },
+  "homepage": "https://github.com/KristjanESPERANTO/MagicMirror-3rd-Party-Module-check#readme"
+}
