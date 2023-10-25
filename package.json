@@ -51,6 +51,6 @@
     "*.css": "stylelint --fix"
   },
   "dependencies": {
-    "read-package-json": "^7.0.0"
+    "normalize-package-data": "^6.0.0"
   }
 }

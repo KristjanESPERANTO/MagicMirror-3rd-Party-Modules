@@ -7,7 +7,7 @@
     "maintainerURL": "",
     "description": "Module to help developers to start building their own modules for the MagicMirror².",
     "issues": [
-      "- W - An error occurred while getting information from 'package.json': Error: Invalid name: \"MagicMirror-Module-Template\""
+      "- W - package.json issue: No repository field."
     ]
   },
   {
@@ -70,8 +70,12 @@
     "maintainer": "MarcLandis",
     "maintainerURL": "https://github.com/MarcLandis",
     "description": "More complicated, but also more powerful: multiple buttons, configurable notifications, different actions on short and long press.",
-    "issues": [
-      "- W - An error occurred while getting information from 'package.json': Error: Invalid name: \"Magic-Mirror-Module-Buttons\""
+    "issues": [],
+    "tags": [
+      "magic mirror",
+      "smart mirror",
+      "buttons",
+      "module"
     ]
   },
   {
@@ -156,7 +160,9 @@
     "maintainer": "jancalve",
     "maintainerURL": "",
     "description": "detecting 3D gesture with GestIC Sensor(MGC3130)",
-    "issues": [],
+    "issues": [
+      "- W - package.json issue: No repository field."
+    ],
     "tags": [
       "flick",
       "board",
@@ -174,8 +180,13 @@
     "maintainer": "thobach",
     "maintainerURL": "",
     "description": "allows gesture control of compliments (only show when stepping in front of mirror), newsfeed (wave left / right, up for full-screen) and pages with two types of infrared sensors. Gestures can be up, down, left, right, far and close movements of the hand in front of a gesture sensor (APDS-9960) and present and away gestures in front of an IR distance sensor (GP2Y0A21YK)",
-    "issues": [
-      "- W - An error occurred while getting information from 'package.json': Error: Invalid name: \"Magic-Mirror-Module-Gestures\""
+    "issues": [],
+    "tags": [
+      "magic mirror",
+      "smart mirror",
+      "gesture",
+      "gestures",
+      "module"
     ]
   },
   {
@@ -186,7 +197,7 @@
     "maintainerURL": "",
     "description": "Displays merge requests from gitlab and their status.",
     "issues": [
-      "- W - An error occurred while getting information from 'package.json': Error: Invalid name: \"MMM-Gitlab-MergeRequests\""
+      "- W - package.json issue: No repository field."
     ]
   },
   {
@@ -289,8 +300,11 @@
     "maintainer": "shbatm",
     "maintainerURL": "",
     "description": "More details and customization for MM's Node.js console logs.",
-    "issues": [
-      "- W - An error occurred while getting information from 'package.json': Error: Invalid name: \"MMM-Logging\""
+    "issues": [],
+    "tags": [
+      "magicmirror",
+      "logging",
+      "logs"
     ]
   },
   {
@@ -300,8 +314,12 @@
     "maintainer": "wmawhinney1990",
     "maintainerURL": "https://github.com/wmawhinney1990",
     "description": "Render markdown files on your MagicMirror².",
-    "issues": [
-      "- W - An error occurred while getting information from 'package.json': Error: Invalid name: \"mmm-Markdown\""
+    "issues": [],
+    "tags": [
+      "magicmirror",
+      "module",
+      "markdown",
+      "productivity"
     ]
   },
   {
@@ -324,8 +342,11 @@
     "maintainer": "ianperrin",
     "maintainerURL": "",
     "description": "Create schedules to control when other modules are shown, hidden or dimmed and to send notifications to other modules.",
-    "issues": [
-      "- W - An error occurred while getting information from 'package.json': Error: Invalid name: \"MMM-ModuleScheduler\""
+    "issues": [],
+    "tags": [
+      "magicmirror",
+      "module",
+      "scheduler"
     ]
   },
   {
@@ -335,8 +356,12 @@
     "maintainer": "balassy",
     "maintainerURL": "https://github.com/balassy",
     "description": "Shows or hides other modules when a momentary push button is pressed. Useful for development and maintenance after the module is deployed.",
-    "issues": [
-      "- W - An error occurred while getting information from 'package.json': Error: Invalid name: \"MMM-ModuleToggleButton\""
+    "issues": [],
+    "tags": [
+      "magicmirror",
+      "module",
+      "button",
+      "raspberry"
     ]
   },
   {
@@ -394,8 +419,12 @@
     "maintainer": "shbatm",
     "maintainerURL": "",
     "description": "Simple On-Screen Menu for controlling the MagicMirror²",
-    "issues": [
-      "- W - An error occurred while getting information from 'package.json': Error: Invalid name: \"MMM-OnScreenMenu\""
+    "issues": [],
+    "tags": [
+      "magicmirror",
+      "menu",
+      "remote control",
+      "on-screen menu"
     ]
   },
   {
@@ -476,7 +505,7 @@
     "maintainerURL": "https://github.com/Tom-Hirschberger",
     "description": "Indicator module for MMM-ProfileSwitcher.",
     "issues": [
-      "- W - An error occurred while getting information from 'package.json': Error: Invalid name: \"MMM-ProfileControl\""
+      "- W - package.json issue: No description"
     ]
   },
   {
@@ -508,8 +537,13 @@
     "maintainer": "Jopyth",
     "maintainerURL": "",
     "description": "Cleanly shutdown (or reboot) your mirror, edit which modules are shown on your mirror and turn your monitor off and on from a simple website, i.e. from your smartphone.",
-    "issues": [
-      "- W - An error occurred while getting information from 'package.json': Error: Invalid name: \"Magic-Mirror-Module-Remote-Control\""
+    "issues": [],
+    "tags": [
+      "magic mirror",
+      "smart mirror",
+      "module",
+      "remote control",
+      "control"
     ]
   },
   {
@@ -545,7 +579,9 @@
     "maintainer": "MMRIZE",
     "maintainerURL": "",
     "description": "Successor of MMM-Scenes Since MM 2.25 (AnimateCSS is introduced.)",
-    "issues": []
+    "issues": [
+      "- W - package.json issue: No repository field."
+    ]
   },
   {
     "name": "MMM-SendNotificationButton",
@@ -620,7 +656,9 @@
     "maintainer": "CFenner",
     "maintainerURL": "",
     "description": "Module to version your personal config in a separate repository.",
-    "issues": []
+    "issues": [
+      "- W - package.json issue: No description"
+    ]
   },
   {
     "name": "MMM-AVStock",
@@ -629,8 +667,12 @@
     "maintainer": "lavolp3",
     "maintainerURL": "",
     "description": "Module for displaying stock price with Alphavantage API.",
-    "issues": [
-      "- W - An error occurred while getting information from 'package.json': Error: Invalid name: \"MMM-AVStock\""
+    "issues": [],
+    "tags": [
+      "magic mirror",
+      "module",
+      "stock",
+      "alphavantage"
     ]
   },
   {
@@ -662,7 +704,10 @@
     "maintainer": "TemianMihai",
     "maintainerURL": "",
     "description": "Module for displaying details about a NFT collection.",
-    "issues": [],
+    "issues": [
+      "- W - package.json issue: No description",
+      "- W - package.json issue: No repository field."
+    ],
     "tags": []
   },
   {
@@ -772,7 +817,7 @@
     "maintainerURL": "https://github.com/hayseedbyte",
     "description": "Display your helium wallet balance and value (in your chosen currency) on your MagicMirror.",
     "issues": [
-      "- W - An error occurred while getting information from 'package.json': Error: Invalid name: \"MMM-Helium-Wallet\""
+      "- W - package.json issue: No repository field."
     ]
   },
   {
@@ -804,7 +849,9 @@
     "maintainer": "mlbonniec",
     "maintainerURL": "https://github.com/mlbonniec",
     "description": "Display your NiceHash projected income and rigs highest temperature",
-    "issues": [],
+    "issues": [
+      "- W - package.json issue: No description"
+    ],
     "tags": [
       "crypto",
       "mining",
@@ -859,8 +906,11 @@
     "maintainer": "balassy",
     "maintainerURL": "https://github.com/balassy",
     "description": "Displays the stock price of a single company without any fancy animation.",
-    "issues": [
-      "- W - An error occurred while getting information from 'package.json': Error: Invalid name: \"MMM-SingleStock\""
+    "issues": [],
+    "tags": [
+      "magicmirror",
+      "module",
+      "stock"
     ]
   },
   {
@@ -908,7 +958,10 @@
     "maintainer": "thesoftwarejedi",
     "maintainerURL": "https://github.com/thesoftwarejedi",
     "description": "Displays categories of your choosing from your YNAB budget.",
-    "issues": []
+    "issues": [
+      "- W - package.json issue: No description",
+      "- W - package.json issue: No repository field."
+    ]
   },
   {
     "name": "MMM-Sbanken",
@@ -985,7 +1038,9 @@
     "maintainer": "drventure",
     "maintainerURL": "https://github.com/drventure",
     "description": "Display status of mountain bike trails via the trailforks.com website",
-    "issues": [],
+    "issues": [
+      "- W - package.json issue: No repository field."
+    ],
     "tags": []
   },
   {
@@ -1006,8 +1061,12 @@
     "maintainer": "tttooommm56",
     "maintainerURL": "https://github.com/tttooommm56",
     "description": "Graphical and textual informations from [Ecowatt](https://www.monecowatt.fr/).",
-    "issues": [
-      "- W - An error occurred while getting information from 'package.json': Error: Invalid name: \"MMM-Ecowatt\""
+    "issues": [],
+    "tags": [
+      "ecowatt",
+      "electricity weather",
+      "electricity transmission network",
+      "france"
     ]
   },
   {
@@ -1017,9 +1076,7 @@
     "maintainer": "Helpi90",
     "maintainerURL": "",
     "description": "Displays the rig infos from [Ethos API](http://ethosdistro.com/)",
-    "issues": [
-      "- W - An error occurred while getting information from 'package.json': Error: Invalid name: \"Magic-Mirror-Module-Ethos\""
-    ]
+    "issues": []
   },
   {
     "name": "MMM-FlagRise",
@@ -1039,7 +1096,10 @@
     "maintainer": "joschi27",
     "maintainerURL": "",
     "description": "Displays information from the [flatastic](https://www.flatastic-app.com/) commune management app",
-    "issues": [],
+    "issues": [
+      "- W - package.json issue: No description",
+      "- W - package.json issue: No repository field."
+    ],
     "tags": []
   },
   {
@@ -1073,7 +1133,7 @@
     "maintainerURL": "",
     "description": "Module which will show CS:GO matches provided by HLTV",
     "issues": [
-      "- W - An error occurred while getting information from 'package.json': Error: Invalid name: \"MMM-HLTV\""
+      "- W - package.json issue: No repository field."
     ]
   },
   {
@@ -1097,7 +1157,7 @@
     "maintainerURL": "",
     "description": "Displays the last post from Les Joies Du Code, or TheCodingLove (The english version).",
     "issues": [
-      "- W - An error occurred while getting information from 'package.json': Error: Invalid name: \"MMM-LesJoiesDuCode\""
+      "- W - package.json issue: No repository field."
     ]
   },
   {
@@ -1175,7 +1235,9 @@
     "maintainerURL": "https://github.com/Menturan",
     "description": "Module that displays places opening hours.",
     "issues": [
-      "- W - An error occurred while getting information from 'package.json': Error: name field must be a string."
+      "- W - package.json issue: No description",
+      "- W - package.json issue: No repository field.",
+      "- W - package.json issue: No license field."
     ]
   },
   {
@@ -1185,9 +1247,7 @@
     "maintainer": "nkl-kst",
     "maintainerURL": "https://github.com/nkl-kst",
     "description": "Display historical events from Wikipedia based on the current date.",
-    "issues": [
-      "- W - An error occurred while getting information from 'package.json': Error: Invalid name: \"MMM-OnThisDay\""
-    ]
+    "issues": []
   },
   {
     "name": "MMM-PlaceInfo",
@@ -1232,8 +1292,10 @@
     "maintainer": "uncleLem",
     "maintainerURL": "https://github.com/uncleLem",
     "description": "The total losses of the russian occupier since the full-scale invasion in Ukraine, per General Staff of the Armed Forces of Ukraine.",
-    "issues": [
-      "- W - An error occurred while getting information from 'package.json': Error: Invalid name: \"MMM-Russianwarship\""
+    "issues": [],
+    "tags": [
+      "magicmirror",
+      "russian invasion"
     ]
   },
   {
@@ -1254,9 +1316,7 @@
     "maintainer": "pinsdorf",
     "maintainerURL": "",
     "description": "Display weekly recurring timetables such as class schedules.",
-    "issues": [
-      "- W - An error occurred while getting information from 'package.json': Error: Invalid name: \"MMM-WeeklySchedule\""
-    ]
+    "issues": []
   },
   {
     "name": "MMM-wiki",
@@ -1309,9 +1369,7 @@
     "maintainer": "j-hiller",
     "maintainerURL": "https://github.com/j-hiller",
     "description": "Displays departures for ASEAG busses in Aachen, Germany.",
-    "issues": [
-      "- W - An error occurred while getting information from 'package.json': Error: Invalid name: \"MMM-AC-aseag\""
-    ]
+    "issues": []
   },
   {
     "name": "MMM-AtbSanntid",
@@ -1342,7 +1400,9 @@
     "maintainer": "JockeyDoe",
     "maintainerURL": "",
     "description": "Traffic warnings for the german Autobahn",
-    "issues": []
+    "issues": [
+      "- W - package.json issue: No description"
+    ]
   },
   {
     "name": "MMM-Avinor",
@@ -1373,8 +1433,16 @@
     "maintainer": "stonecrown",
     "maintainerURL": "",
     "description": "Displays the current info for scheduled sailings of specified BC Ferries route",
-    "issues": [
-      "- W - An error occurred while getting information from 'package.json': Error: Invalid name: \"MMM-BCFerries\""
+    "issues": [],
+    "tags": [
+      "magic mirror",
+      "smart mirror",
+      "transport",
+      "ferry",
+      "ferries",
+      "vancouver",
+      "british columbia",
+      "module"
     ]
   },
   {
@@ -1385,7 +1453,8 @@
     "maintainerURL": "https://github.com/kuitin",
     "description": "Hour bus station of Bordeaux",
     "issues": [
-      "- W - An error occurred while getting information from 'package.json': Error: Invalid name: \"MMM-BdxBus\""
+      "- W - package.json issue: No repository field.",
+      "- W - package.json issue: No license field."
     ]
   },
   {
@@ -1428,7 +1497,9 @@
     "maintainer": "Cyw00d",
     "maintainerURL": "https://github.com/Cyw00d\"",
     "description": "Displays some of your Hyundai's data on your Mirror, the code is based on [MMM-Tesla2](https://github.com/martinburheimtingstad/MMM-Tesla2)",
-    "issues": []
+    "issues": [
+      "- W - package.json issue: No repository field."
+    ]
   },
   {
     "name": "MMM-BMWConnected",
@@ -1437,9 +1508,7 @@
     "maintainer": "hdurdle",
     "maintainerURL": "https://github.com/hdurdle",
     "description": "Displays information about your BMW from the BMW Connected Drive API.",
-    "issues": [
-      "- W - An error occurred while getting information from 'package.json': Error: Invalid name: \"MMM-BMWConnected\""
-    ]
+    "issues": []
   },
   {
     "name": "MMM-Bubi",
@@ -1448,8 +1517,12 @@
     "maintainer": "balassy",
     "maintainerURL": "https://github.com/balassy",
     "description": "Displays the number of available bikes on the selected stations of the Budapest public bike system (aka MOL Bubi).",
-    "issues": [
-      "- W - An error occurred while getting information from 'package.json': Error: Invalid name: \"MMM-Bubi\""
+    "issues": [],
+    "tags": [
+      "magicmirror",
+      "module",
+      "bike",
+      "transport"
     ]
   },
   {
@@ -1558,9 +1631,7 @@
     "maintainer": "Helpi90",
     "maintainerURL": "",
     "description": "Module to display train arrivals/departures (unofficial frontend for db navigator) with details for Germany",
-    "issues": [
-      "- W - An error occurred while getting information from 'package.json': Error: Invalid name: \"Magic-Mirror-Module-DBF\""
-    ]
+    "issues": []
   },
   {
     "name": "MMM-DCMetroTimes",
@@ -1603,7 +1674,7 @@
     "maintainerURL": "https://github.com/gberg927",
     "description": "Displays ride wait times at the Disney World Parks.",
     "issues": [
-      "- W - An error occurred while getting information from 'package.json': Error: Invalid name: \"MMM-DisneyWaitTimes\""
+      "- W - package.json issue: No repository field."
     ]
   },
   {
@@ -1613,7 +1684,9 @@
     "maintainer": "drventure",
     "maintainerURL": "https://github.com/drventure",
     "description": "Display status of mountain bike trails via the trailforks.com website",
-    "issues": [],
+    "issues": [
+      "- W - package.json issue: No repository field."
+    ],
     "tags": []
   },
   {
@@ -1623,8 +1696,16 @@
     "maintainer": "galaktor",
     "maintainerURL": "https://github.com/galaktor",
     "description": "Customisable real-time stop data for Dublin Bus, Luas and IrishRail stops",
-    "issues": [
-      "- W - An error occurred while getting information from 'package.json': Error: Invalid name: \"MMM-DublinRTPI\""
+    "issues": [],
+    "tags": [
+      "mmm",
+      "public transport",
+      "magic mirror",
+      "smart mirror",
+      "dublin bus",
+      "dublin luas",
+      "irish rail",
+      "module"
     ]
   },
   {
@@ -1634,8 +1715,16 @@
     "maintainer": "skastenholz",
     "maintainerURL": "",
     "description": "Station monitor for the Dresden/Germany local transport (DVB) bus, tram and train system.",
-    "issues": [
-      "- W - An error occurred while getting information from 'package.json': Error: Invalid name: \"MMM-DVB\""
+    "issues": [],
+    "tags": [
+      "magicmirror",
+      "dvb",
+      "vvo",
+      "dresden",
+      "magic mirror",
+      "smart mirror",
+      "public transport",
+      "local transit"
     ]
   },
   {
@@ -1645,8 +1734,18 @@
     "maintainer": "Dom1n1c",
     "maintainerURL": "",
     "description": "Station monitor for local transport companies using the EFA system.",
-    "issues": [
-      "- W - An error occurred while getting information from 'package.json': Error: Invalid name: \"MMM-EFA-departures\""
+    "issues": [],
+    "tags": [
+      "magicmirror",
+      "efa",
+      "smart mirror",
+      "departures",
+      "station board",
+      "fahrplan",
+      "fahrplanauskunft",
+      "bahn",
+      "bus",
+      "module"
     ]
   },
   {
@@ -1656,8 +1755,17 @@
     "maintainer": "balassy",
     "maintainerURL": "https://github.com/balassy",
     "description": "Displays Hungarian public train departure times using real-time data from the \"Elvira\" service provided by the Hungarian national railway company (MÁV)",
-    "issues": [
-      "- W - An error occurred while getting information from 'package.json': Error: Invalid name: \"MMM-Elvira\""
+    "issues": [],
+    "tags": [
+      "magicmirror",
+      "module",
+      "elvira",
+      "máv",
+      "máv-start",
+      "transport",
+      "public-transport",
+      "train",
+      "budapest"
     ]
   },
   {
@@ -1667,8 +1775,12 @@
     "maintainer": "TheRaulXP",
     "maintainerURL": "",
     "description": "Get estimations for bus stops in the city of Valencia (Spain)",
-    "issues": [
-      "- W - An error occurred while getting information from 'package.json': Error: Invalid name: \"MMM-EMTValencia\""
+    "issues": [],
+    "tags": [
+      "magicmirror",
+      "bus stop",
+      "emt valencia",
+      "public transport"
     ]
   },
   {
@@ -1689,8 +1801,13 @@
     "maintainer": "nigel-daniels",
     "maintainerURL": "https://github.com/nigel-daniels",
     "description": "Display information published by the FAA on delays and weather conditions at some US airports.  Note: this has been updated following a change by the FAA to the API.",
-    "issues": [
-      "- W - An error occurred while getting information from 'package.json': Error: Invalid name: \"MMM-FAA-Delay\""
+    "issues": [],
+    "tags": [
+      "magic mirror",
+      "smart mirror",
+      "faa",
+      "airports",
+      "module"
     ]
   },
   {
@@ -1700,8 +1817,12 @@
     "maintainer": "jesmak",
     "maintainerURL": "https://github.com/jesmak/",
     "description": "Module that tracks nearby planes based on Flightradar24 data.",
-    "issues": [
-      "- W - An error occurred while getting information from 'package.json': Error: Invalid name: \"MMM-FlightRadarTracker\""
+    "issues": [],
+    "tags": [
+      "magic mirror",
+      "module",
+      "flights",
+      "flightradar24"
     ]
   },
   {
@@ -1734,7 +1855,8 @@
     "maintainerURL": "https://github.com/tbouron/",
     "description": "Module that uses ADS-B systems to track and display nearby planes.",
     "issues": [
-      "- W - An error occurred while getting information from 'package.json': Error: Invalid name: \"MMM-FlightTracker\""
+      "- W - package.json issue: No repository field.",
+      "- W - package.json issue: license should be a valid SPDX license expression"
     ]
   },
   {
@@ -1758,8 +1880,14 @@
     "maintainer": "balassy",
     "maintainerURL": "https://github.com/balassy",
     "description": "Displays Budapest public transport information directly from the Futár webservice.",
-    "issues": [
-      "- W - An error occurred while getting information from 'package.json': Error: Invalid name: \"MMM-Futar\""
+    "issues": [],
+    "tags": [
+      "magicmirror",
+      "module",
+      "futar",
+      "transport",
+      "public-transport",
+      "budapest"
     ]
   },
   {
@@ -1770,7 +1898,7 @@
     "maintainerURL": "https://github.com/asimhsidd/",
     "description": "Geo-track a moving object on the map by continuously listening to a pubnub channel where the publisher (example file attached) has to publish the new location (lat, lon) as and when moves",
     "issues": [
-      "- W - An error occurred while getting information from 'package.json': Error: Invalid name: \"MMM-GeoTracking\""
+      "- W - package.json issue: No repository field."
     ]
   },
   {
@@ -1780,8 +1908,13 @@
     "maintainer": "MartinGris",
     "maintainerURL": "https://github.com/MartinGris/",
     "description": "Tracking of multiple objects on a google map. Position can be updated by a notification.",
-    "issues": [
-      "- W - An error occurred while getting information from 'package.json': Error: Invalid name: \"MMM-GoogleMaps-Tracking\""
+    "issues": [],
+    "tags": [
+      "magic mirror",
+      "smart mirror",
+      "module",
+      "google maps",
+      "marker"
     ]
   },
   {
@@ -1792,7 +1925,7 @@
     "maintainerURL": "",
     "description": "Displays a Google map, centered at provided coordinates, with traffic information.",
     "issues": [
-      "- W - An error occurred while getting information from 'package.json': Error: Invalid name: \"MMM-GoogleMapsTraffic\""
+      "- W - package.json issue: No repository field."
     ]
   },
   {
@@ -1814,7 +1947,7 @@
     "maintainerURL": "",
     "description": "Lists travel times to requested locations taking into account Google traffic information.",
     "issues": [
-      "- W - An error occurred while getting information from 'package.json': Error: Invalid name: \"MMM-GoogleTrafficTimes\""
+      "- W - package.json issue: No repository field."
     ]
   },
   {
@@ -1825,7 +1958,7 @@
     "maintainerURL": "https://github.com/jacopo1891/",
     "description": "Lists travel times to requested locations taking into account Google traffic information with \"classic view\".",
     "issues": [
-      "- W - An error occurred while getting information from 'package.json': Error: Invalid name: \"MMM-GoogleTrafficTimes\""
+      "- W - package.json issue: No repository field."
     ]
   },
   {
@@ -1847,8 +1980,13 @@
     "maintainer": "georg90",
     "maintainerURL": "",
     "description": "Display local transport in Hamburg/Germany.",
-    "issues": [
-      "- W - An error occurred while getting information from 'package.json': Error: Invalid name: \"MMM-HH-LocalTransport\""
+    "issues": [],
+    "tags": [
+      "magic mirror",
+      "smart mirror",
+      "localtransport",
+      "module",
+      "hvv"
     ]
   },
   {
@@ -1858,8 +1996,14 @@
     "maintainer": "skuethe",
     "maintainerURL": "",
     "description": "Display local transport in Hamburg/Germany. Now up to date",
-    "issues": [
-      "- W - An error occurred while getting information from 'package.json': Error: Invalid name: \"MMM-HH-LocalTransport\""
+    "issues": [],
+    "tags": [
+      "magic mirror",
+      "smart mirror",
+      "localtransport",
+      "module",
+      "hvv",
+      "hamburg"
     ]
   },
   {
@@ -1869,8 +2013,14 @@
     "maintainer": "winstonma",
     "maintainerURL": "https://github.com/winstonma/",
     "description": "Display Estimated Time of Arrival (ETA) of Hong Kong public transport.",
-    "issues": [
-      "- W - An error occurred while getting information from 'package.json': Error: Invalid name: \"MMM-HK-Transport-ETA\""
+    "issues": [],
+    "tags": [
+      "magicmirror",
+      "kmb",
+      "magicmirror²",
+      "smart mirror",
+      "public transport",
+      "local transit"
     ]
   },
   {
@@ -1913,8 +2063,13 @@
     "maintainer": "soyrubio",
     "maintainerURL": "https://github.com/soyrubio",
     "description": "Display estimated departures for public transport stops in the Czech Republic",
-    "issues": [
-      "- W - An error occurred while getting information from 'package.json': Error: Invalid name: \"MMM-idos\""
+    "issues": [],
+    "tags": [
+      "magicmirror",
+      "bus stop",
+      "tram stop",
+      "czech republic",
+      "public transport"
     ]
   },
   {
@@ -1935,8 +2090,14 @@
     "maintainer": "Jilano5",
     "maintainerURL": "",
     "description": "time to the next buses, tramways from a list of stations / lines for Lille (Ilevia).",
-    "issues": [
-      "- W - An error occurred while getting information from 'package.json': Error: Invalid name: \"MMM-Ilevia-Lille\""
+    "issues": [],
+    "tags": [
+      "magic mirror",
+      "smart mirror",
+      "localtransport",
+      "module",
+      "lille",
+      "ilevia"
     ]
   },
   {
@@ -1946,8 +2107,13 @@
     "maintainer": "Adman",
     "maintainerURL": "https://github.com/Adman",
     "description": "Display real-time estimations for public transport stops in Bratislava, Slovakia",
-    "issues": [
-      "- W - An error occurred while getting information from 'package.json': Error: Invalid name: \"MMM-imhdsk\""
+    "issues": [],
+    "tags": [
+      "magicmirror",
+      "bus stop",
+      "tram stop",
+      "bratislava",
+      "public transport"
     ]
   },
   {
@@ -1958,7 +2124,7 @@
     "maintainerURL": "",
     "description": "Station monitor for the Jena/Germany local transport (JNV) bus and tram.",
     "issues": [
-      "- W - An error occurred while getting information from 'package.json': Error: Invalid name: \"MMM-JNV2\""
+      "- W - package.json issue: No repository field."
     ]
   },
   {
@@ -1968,8 +2134,16 @@
     "maintainer": "yo-less",
     "maintainerURL": "",
     "description": "Station monitor for the Karlsruhe/Germany local transport (KVV) bus, tram and train system.",
-    "issues": [
-      "- W - An error occurred while getting information from 'package.json': Error: Invalid name: \"MMM-KVV\""
+    "issues": [],
+    "tags": [
+      "magicmirror",
+      "kvv",
+      "vbk",
+      "karlsruhe",
+      "magic mirror",
+      "smart mirror",
+      "public transport",
+      "local transit"
     ]
   },
   {
@@ -1979,7 +2153,9 @@
     "maintainer": "pbuabthong",
     "maintainerURL": "https://github.com/pbuabthong/",
     "description": "Shows real-time departures for LA Metro (Los Angeles, CA).",
-    "issues": [],
+    "issues": [
+      "- W - package.json issue: No repository field."
+    ],
     "tags": [
       "magicmirror",
       "lametro"
@@ -2090,7 +2266,13 @@
     "maintainerURL": "",
     "description": "Displays the public transport information for Munich - Germany.",
     "issues": [
-      "- W - An error occurred while getting information from 'package.json': Error: Invalid name: \"MMM-mvgmunich\""
+      "- W - package.json issue: No description"
+    ],
+    "tags": [
+      "magic mirror",
+      "public transport",
+      "mvv",
+      "mvg"
     ]
   },
   {
@@ -2100,8 +2282,12 @@
     "maintainer": "wiesty",
     "maintainerURL": "",
     "description": "Module to display public transport 🚐 from Munich in Germany.",
-    "issues": [
-      "- W - An error occurred while getting information from 'package.json': Error: Invalid name: \"MMM-MVVWiesty\""
+    "issues": [],
+    "tags": [
+      "magic mirror",
+      "public transport",
+      "mvg",
+      "mvv"
     ]
   },
   {
@@ -2155,8 +2341,14 @@
     "maintainer": "normyx",
     "maintainerURL": "",
     "description": "time to the next buses, tramways or navibus from a list of stations / lines for Nantes (TAN).",
-    "issues": [
-      "- W - An error occurred while getting information from 'package.json': Error: Invalid name: \"MMM-Nantes-TAN\""
+    "issues": [],
+    "tags": [
+      "magic mirror",
+      "smart mirror",
+      "localtransport",
+      "module",
+      "paris",
+      "ratp"
     ]
   },
   {
@@ -2178,7 +2370,8 @@
     "maintainerURL": "",
     "description": "A module that shows how many minutes until the next bus(es) goes from given bus stops.",
     "issues": [
-      "- W - An error occurred while getting information from 'package.json': Error: Invalid name: \"MMM-NesteBussAtB\""
+      "- W - package.json issue: No repository field.",
+      "- W - package.json issue: No license field."
     ]
   },
   {
@@ -2188,8 +2381,14 @@
     "maintainer": "yo-less",
     "maintainerURL": "",
     "description": "Station monitor for the nextbike bike-sharing network.",
-    "issues": [
-      "- W - An error occurred while getting information from 'package.json': Error: Invalid name: \"MMM-nextbike\""
+    "issues": [],
+    "tags": [
+      "magicmirror",
+      "nextbike",
+      "magic mirror",
+      "smart mirror",
+      "bike sharing",
+      "module"
     ]
   },
   {
@@ -2200,7 +2399,9 @@
     "maintainerURL": "https://github.com/CptMeetKat",
     "description": "Display departures from Sydney train stations in NSW, Australia",
     "issues": [
-      "- W - An error occurred while getting information from 'package.json': Error: name field must be a string."
+      "- W - package.json issue: No description",
+      "- W - package.json issue: No repository field.",
+      "- W - package.json issue: No license field."
     ]
   },
   {
@@ -2233,7 +2434,14 @@
     "maintainerURL": "",
     "description": "Display upcoming trains between 2 NMBS/SNCB stations. (Belgium)",
     "issues": [
-      "- W - An error occurred while getting information from 'package.json': Error: Invalid name: \"MMM-NMBS-Connection\""
+      "- W - package.json issue: license should be a valid SPDX license expression"
+    ],
+    "tags": [
+      "magic mirror 2",
+      "nmbs",
+      "public transport belgium",
+      "smart mirror",
+      "sncb"
     ]
   },
   {
@@ -2307,7 +2515,9 @@
     "maintainer": "TobbenTM",
     "maintainerURL": "",
     "description": "Shows nearby CityBike stations in Oslo, and the number of bikes available at each.",
-    "issues": []
+    "issues": [
+      "- W - package.json issue: No repository field."
+    ]
   },
   {
     "name": "MMM-Paris-RATP-PG",
@@ -2316,8 +2526,14 @@
     "maintainer": "da4throux",
     "maintainerURL": "",
     "description": "Time to the next buses, metros, rers & tramways for Paris Network (RATP), along with: the traffic status for selected lines, the risk of rain in the next hour, autolib and velib stations status.",
-    "issues": [
-      "- W - An error occurred while getting information from 'package.json': Error: Invalid name: \"MMM-Paris-RATP-PG\""
+    "issues": [],
+    "tags": [
+      "magic mirror",
+      "smart mirror",
+      "localtransport",
+      "module",
+      "paris",
+      "ratp"
     ]
   },
   {
@@ -2327,7 +2543,10 @@
     "maintainer": "pbuabthong",
     "maintainerURL": "https://github.com/pbuabthong/",
     "description": "Shows real-time departures for Pasadena Transit.",
-    "issues": []
+    "issues": [
+      "- W - package.json issue: No description",
+      "- W - package.json issue: No repository field."
+    ]
   },
   {
     "name": "MMM-pathtime",
@@ -2347,8 +2566,18 @@
     "maintainer": "ytmytm",
     "maintainerURL": "",
     "description": "Station monitor for tram and bus system in Poznań.",
-    "issues": [
-      "- W - An error occurred while getting information from 'package.json': Error: Invalid name: \"MMM-pekavm\""
+    "issues": [],
+    "tags": [
+      "magicmirror",
+      "ztm",
+      "mpk",
+      "peka",
+      "wirtualny monitor",
+      "poznań",
+      "magic mirror",
+      "smart mirror",
+      "public transport",
+      "local transit"
     ]
   },
   {
@@ -2403,8 +2632,15 @@
     "maintainer": "ChristianGeie",
     "maintainerURL": "",
     "description": "Display live departures from public passenger transport service of the 'Verkehrsverbund Oberelbe' (VVO).",
-    "issues": [
-      "- W - An error occurred while getting information from 'package.json': Error: Invalid name: \"MMM-PublicTransportVVO\""
+    "issues": [],
+    "tags": [
+      "magic mirror",
+      "magic mirror 2",
+      "smart mirror",
+      "public transport",
+      "public transport vvo",
+      "public transport dresden",
+      "module"
     ]
   },
   {
@@ -2415,8 +2651,10 @@
     "maintainerURL": "https://gitlab.com/closingin",
     "description": "Display next passing times and traffic information from the RATP for Metros, RERs, and Tramways of Paris, France. Fully featured.",
     "issues": [
-      "- W - An error occurred while getting information from 'package.json': Error: Invalid name: \"MMM-RATP\""
-    ]
+      "- W - package.json issue: No repository field.",
+      "- W - package.json issue: license should be a valid SPDX license expression"
+    ],
+    "tags": []
   },
   {
     "name": "MMM-ResRobot",
@@ -2425,8 +2663,13 @@
     "maintainer": "Alvinger",
     "maintainerURL": "",
     "description": "Public transport information for Sweden.",
-    "issues": [
-      "- W - An error occurred while getting information from 'package.json': Error: Invalid name: \"MMM-ResRobot\""
+    "issues": [],
+    "tags": [
+      "magic mirror",
+      "smart mirror",
+      "local transport",
+      "module",
+      "sweden"
     ]
   },
   {
@@ -2436,8 +2679,14 @@
     "maintainer": "Com-Lum",
     "maintainerURL": "",
     "description": "Rhein-Main local transport system (RMV) - Departure Monitor",
-    "issues": [
-      "- W - An error occurred while getting information from 'package.json': Error: Invalid name: \"MMM-RMV\""
+    "issues": [],
+    "tags": [
+      "magicmirror",
+      "rmv",
+      "frankfurt",
+      "magic mirror",
+      "public transport",
+      "local transit"
     ]
   },
   {
@@ -2447,7 +2696,9 @@
     "maintainer": "jalibu",
     "maintainerURL": "https://github.com/jalibu",
     "description": "A departure monitor for stations within the Rhein-Neckar-Verkehr (RNV) public traffic network using the new API.",
-    "issues": []
+    "issues": [
+      "- W - package.json issue: No repository field."
+    ]
   },
   {
     "name": "MMM-RNV",
@@ -2456,7 +2707,10 @@
     "maintainer": "jupadin",
     "maintainerURL": "https://github.com/jupadin",
     "description": "Departure Monitor for stations in the Rhein-Neckar-Verkehr (RNV) public traffic network using the new API.",
-    "issues": []
+    "issues": [
+      "- W - package.json issue: No description",
+      "- W - package.json issue: No repository field."
+    ]
   },
   {
     "name": "MMM-RNV",
@@ -2524,7 +2778,9 @@
     "maintainer": "PabloDons",
     "maintainerURL": "",
     "description": "Based on MMM-Ruter, but for the municipality of Hordaland in Norway",
-    "issues": []
+    "issues": [
+      "- W - package.json issue: No repository field."
+    ]
   },
   {
     "name": "MMM-SL-PublicTransport",
@@ -2546,8 +2802,14 @@
     "maintainer": "jvanoost",
     "maintainerURL": "",
     "description": "Display upcoming trains between 2 SNCF stations (France)",
-    "issues": [
-      "- W - An error occurred while getting information from 'package.json': Error: Invalid name: \"MMM-SNCF\""
+    "issues": [],
+    "tags": [
+      "magic mirror",
+      "smart mirror",
+      "localtransport",
+      "module",
+      "sncf",
+      "train"
     ]
   },
   {
@@ -2557,8 +2819,14 @@
     "maintainer": "0lek",
     "maintainerURL": "",
     "description": "Station monitor for bicycle networks based on the Socialbicycles API/Infrastructure, e.g. Wavelo in Kraków, Poland.",
-    "issues": [
-      "- W - An error occurred while getting information from 'package.json': Error: Invalid name: \"MMM-nextbike\""
+    "issues": [],
+    "tags": [
+      "magicmirror",
+      "nextbike",
+      "magic mirror",
+      "smart mirror",
+      "bike sharing",
+      "module"
     ]
   },
   {
@@ -2590,9 +2858,7 @@
     "maintainer": "bendardenne",
     "maintainerURL": "",
     "description": "STIB waiting times. Re-write of danito's MMM-stib, using the official STIB API and no XML parsing.",
-    "issues": [
-      "- W - An error occurred while getting information from 'package.json': Error: Invalid name: \"MMM-stib2\""
-    ]
+    "issues": []
   },
   {
     "name": "MMM-SwissCommute",
@@ -2602,7 +2868,7 @@
     "maintainerURL": "",
     "description": "Display the next departures for your favorite (train) connection in Switzerland (SBB)",
     "issues": [
-      "- W - An error occurred while getting information from 'package.json': Error: Invalid name: \"MMM-SwissCommute\""
+      "- W - package.json issue: No repository field."
     ]
   },
   {
@@ -2613,7 +2879,7 @@
     "maintainerURL": "",
     "description": "Display the next departures in every direction for your favorite trainstation in Switzerland with delay information",
     "issues": [
-      "- W - An error occurred while getting information from 'package.json': Error: Invalid name: \"MMM-SwissStationboard\""
+      "- W - package.json issue: No repository field."
     ]
   },
   {
@@ -2635,7 +2901,15 @@
     "maintainerURL": "",
     "description": "Shows nearest scooters/cars/mopeds/bikes to rent in your area. Comes with direction and distance info.",
     "issues": [
-      "- W - An error occurred while getting information from 'package.json': Error: Invalid name: \"MMM-TakeAndDrive\""
+      "- W - package.json issue: No repository field."
+    ],
+    "tags": [
+      "magicmirror",
+      "carsharing",
+      "scooters",
+      "cars",
+      "mopeds",
+      "lime"
     ]
   },
   {
@@ -2645,8 +2919,14 @@
     "maintainer": "mattdy",
     "maintainerURL": "",
     "description": "Display Tesla data from either [TeslaFi](https://teslafi.com/) or [Tessie](https://www.tessie.com/)",
-    "issues": [
-      "- W - An error occurred while getting information from 'package.json': Error: Invalid name: \"Magic-Mirror-Module-Tesla\""
+    "issues": [],
+    "tags": [
+      "magic mirror",
+      "smart mirror",
+      "tesla",
+      "teslafi",
+      "tessie",
+      "module"
     ]
   },
   {
@@ -2656,7 +2936,9 @@
     "maintainer": "usncahill",
     "maintainerURL": "",
     "description": "Display Tesla data directly from Tesla API. Customizable GUI based on [MMM-TeslaMate](https://github.com/denverquane/MMM-Teslamate).",
-    "issues": []
+    "issues": [
+      "- W - package.json issue: No repository field."
+    ]
   },
   {
     "name": "MMM-TeslaLogger",
@@ -2665,9 +2947,7 @@
     "maintainer": "spitzlbergerj",
     "maintainerURL": "https://github.com/spitzlbergerj",
     "description": "Displays data from [TeslaLogger](https://github.com/bassmaster187/TeslaLogger) or/and [TeslaMate](https://github.com/adriankumpf/teslamate) via MQTT",
-    "issues": [
-      "- W - An error occurred while getting information from 'package.json': Error: Invalid name: \"MMM-TeslaLogger\""
-    ]
+    "issues": []
   },
   {
     "name": "MMM-TeslaMate",
@@ -2677,7 +2957,8 @@
     "maintainerURL": "",
     "description": "Display live Tesla status using the Teslamate self-hosted monitoring system and MQTT Broker",
     "issues": [
-      "- W - An error occurred while getting information from 'package.json': Error: Invalid name: \"MMM-Teslamate\""
+      "- W - package.json issue: No repository field.",
+      "- W - package.json issue: No license field."
     ]
   },
   {
@@ -2687,7 +2968,11 @@
     "maintainer": "aduyng",
     "maintainerURL": "",
     "description": "Display my tesla status using data from firebase realtime database",
-    "issues": []
+    "issues": [
+      "- W - package.json issue: No description",
+      "- W - package.json issue: No repository field.",
+      "- W - package.json issue: No license field."
+    ]
   },
   {
     "name": "MMM-TFL-Status",
@@ -2707,8 +2992,11 @@
     "maintainer": "jaumebosch",
     "maintainerURL": "https://github.com/jaumebosch",
     "description": "Display Barcelona's TMB bus times by line and stop",
-    "issues": [
-      "- W - An error occurred while getting information from 'package.json': Error: Invalid name: \"MMM-TMB\""
+    "issues": [],
+    "tags": [
+      "magic",
+      "mirror",
+      "module"
     ]
   },
   {
@@ -2729,9 +3017,7 @@
     "maintainer": "bendardenne",
     "maintainerURL": "",
     "description": "Show a map of a given area with TomTom traffic information",
-    "issues": [
-      "- W - An error occurred while getting information from 'package.json': Error: Invalid name: \"MMM-stib2\""
-    ]
+    "issues": []
   },
   {
     "name": "MMM-TomTomTrafficIncidents",
@@ -2751,8 +3037,13 @@
     "maintainer": "LoneWanderer-GH",
     "maintainerURL": "https://github.com/LoneWanderer-GH",
     "description": "time to the next buses lines for Toulouse (Tisseo).",
-    "issues": [
-      "- W - An error occurred while getting information from 'package.json': Error: Invalid name: \"MMM-Toulouse-Transports\""
+    "issues": [],
+    "tags": [
+      "magic mirror",
+      "smart mirror",
+      "localtransport",
+      "module",
+      "toulouse"
     ]
   },
   {
@@ -2762,7 +3053,9 @@
     "maintainer": "asimhsidd",
     "maintainerURL": "https://github.com/asimhsidd/",
     "description": "Track moving objects through Traccar.org APIs on google maps. This is based on a websocket connection to the Traccar.org server over which the locations of all the registered users are received upon any update. Not only the markers are updated but also the map's center & zoom level. All online users have a green icon, rest are red. Error handling is built in too.",
-    "issues": []
+    "issues": [
+      "- W - package.json issue: No repository field."
+    ]
   },
   {
     "name": "MMM-Traffic",
@@ -2771,8 +3064,12 @@
     "maintainer": "SamLewis0602",
     "maintainerURL": "https://github.com/samlewis0602/",
     "description": "Display commute travel time with current traffic conditions factored in. Can be used for driving, biking, walking, and public transit.",
-    "issues": [
-      "- W - An error occurred while getting information from 'package.json': Error: Invalid name: \"Magic-Mirror-Module-Traffic\""
+    "issues": [],
+    "tags": [
+      "magic mirror",
+      "smart mirror",
+      "traffic",
+      "module"
     ]
   },
   {
@@ -2794,7 +3091,7 @@
     "maintainerURL": "",
     "description": "Module to display train departure times for railway stations within Sweden, as supplied by the Swedish Transport Administration (Trafikverket).",
     "issues": [
-      "- W - An error occurred while getting information from 'package.json': Error: Invalid name: \"MMM-Trains-Trafikverket\""
+      "- W - package.json issue: No repository field."
     ]
   },
   {
@@ -2804,7 +3101,10 @@
     "maintainer": "dekinet",
     "maintainerURL": "",
     "description": "Simple display of train departure times for Brisbane (Australia)",
-    "issues": []
+    "issues": [
+      "- W - package.json issue: No description",
+      "- W - package.json issue: No repository field."
+    ]
   },
   {
     "name": "MMM-MyTransitTime",
@@ -2813,7 +3113,10 @@
     "maintainer": "SageBrushes",
     "maintainerURL": "",
     "description": "Display step by step directions to a location and provide an estimated time of arrival using Google Maps API",
-    "issues": [],
+    "issues": [
+      "- W - package.json issue: No description",
+      "- W - package.json issue: No repository field."
+    ],
     "tags": []
   },
   {
@@ -2845,8 +3148,11 @@
     "maintainer": "robotfishe",
     "maintainerURL": "https://github.com/robotfishe",
     "description": "Pull charging and range data from your EV via Tronity Platform.",
-    "issues": [
-      "- W - An error occurred while getting information from 'package.json': Error: Invalid name: \"MMM-Tronity\""
+    "issues": [],
+    "tags": [
+      "magic",
+      "mirror",
+      "module"
     ]
   },
   {
@@ -2867,8 +3173,12 @@
     "maintainer": "rafagale",
     "maintainerURL": "https://github.com/rafagale",
     "description": "Get estimations for bus stops in the city of Zaragoza (Spain)",
-    "issues": [
-      "- W - An error occurred while getting information from 'package.json': Error: Invalid name: \"MMM-TUZSAZaragoza\""
+    "issues": [],
+    "tags": [
+      "magicmirror",
+      "bus stop",
+      "tuzsa zaragoza",
+      "public transport"
     ]
   },
   {
@@ -2928,9 +3238,8 @@
     "maintainer": "Xkhi",
     "maintainerURL": "",
     "description": "Display public transport operated by Västtrafik for western part of Sweden, including Gothenburg. This version is updated to support multi-filtering and Vasttrafik's API version 4.",
-    "issues": [
-      "- W - An error occurred while getting information from 'package.json': Error: Invalid name: \"MMM-Vasttrafik-PublicTransport\""
-    ]
+    "issues": [],
+    "tags": []
   },
   {
     "name": "MMM-Vasttrafik-PublicTransport",
@@ -2939,9 +3248,8 @@
     "maintainer": "bureus",
     "maintainerURL": "",
     "description": "Display public transport operated by Västtrafik for western part of Sweden, including Gothenburg. Uses Vasttrafik's API version 2.",
-    "issues": [
-      "- W - An error occurred while getting information from 'package.json': Error: Invalid name: \"MMM-Vasttrafik-PublicTransport\""
-    ]
+    "issues": [],
+    "tags": []
   },
   {
     "name": "MMM-VolvoOnCall",
@@ -2950,8 +3258,11 @@
     "maintainer": "eouia",
     "maintainerURL": "",
     "description": "Display Volvo car status and trip information by VolvoOnCall",
-    "issues": [
-      "- W - An error occurred while getting information from 'package.json': Error: Invalid name: \"MMM-VolvoOnCall\""
+    "issues": [],
+    "tags": [
+      "magicmirror",
+      "volvo",
+      "volvooncall"
     ]
   },
   {
@@ -2961,8 +3272,13 @@
     "maintainer": "Klizzy",
     "maintainerURL": "https://github.com/Klizzy/",
     "description": "Easy configuration module to display bus and train arrivals/departures with different display types for Germany (VRR and more EFA).",
-    "issues": [
-      "- W - An error occurred while getting information from 'package.json': Error: Invalid name: \"Magic-Mirror-Module-Vrr\""
+    "issues": [],
+    "tags": [
+      "magic mirror",
+      "smart mirror",
+      "vrr",
+      "transportation",
+      "module"
     ]
   },
   {
@@ -2972,8 +3288,15 @@
     "maintainer": "nigel-daniels",
     "maintainerURL": "https://github.com/nigel-daniels",
     "description": "Updated: You can now monitor live arrival times at many CA, Bay Area transit stops.  This covers BART, VTA, etc.",
-    "issues": [
-      "- W - An error occurred while getting information from 'package.json': Error: Invalid name: \"MMM-VTA-Live\""
+    "issues": [],
+    "tags": [
+      "magic mirror",
+      "smart mirror",
+      "vta",
+      "transit",
+      "live",
+      "arrivals",
+      "module"
     ]
   },
   {
@@ -3043,7 +3366,10 @@
     "maintainer": "tticehurst",
     "maintainerURL": "https://github.com/tticehurst",
     "description": "Displays live train times making use of the [RTT.io](https://api.rtt.io/) api.",
-    "issues": [],
+    "issues": [
+      "- W - package.json issue: No description",
+      "- W - package.json issue: No repository field."
+    ],
     "tags": []
   },
   {
@@ -3053,8 +3379,14 @@
     "maintainer": "FalseIlyu",
     "maintainerURL": "https://github.com/FalseIlyu",
     "description": "Display next bus/tramway/metro/train in the Paris/Ile-de-France région in France using IDFM API",
-    "issues": [
-      "- W - An error occurred while getting information from 'package.json': Error: Invalid name: \"MMM-IdF-Transport\""
+    "issues": [],
+    "tags": [
+      "magicmirror",
+      "idf-transport",
+      "magic mirror",
+      "smart mirror",
+      "public transport",
+      "local transit"
     ]
   },
   {
@@ -3064,8 +3396,18 @@
     "maintainer": "djey47",
     "maintainerURL": "https://github.com/djey47",
     "description": "Local transport in IDF (STIF) module based on [MMM-Paris-RATP-PG](https://github.com/da4throux/MMM-Paris-RATP-PG)",
-    "issues": [
-      "- W - An error occurred while getting information from 'package.json': Error: Invalid name: \"MMM-IDF-LOCALTRANSPORT\""
+    "issues": [],
+    "tags": [
+      "magic mirror",
+      "smart mirror",
+      "localtransport",
+      "module",
+      "paris",
+      "stif",
+      "ratp",
+      "transilien",
+      "sncf",
+      "citymapper.com"
     ]
   },
   {
@@ -3087,7 +3429,7 @@
     "maintainerURL": "",
     "description": "Amazon Alexa integration with using Javascript only.",
     "issues": [
-      "- W - An error occurred while getting information from 'package.json': Error: Invalid name: \"MMM-alexa\""
+      "- W - package.json issue: No repository field."
     ]
   },
   {
@@ -3097,8 +3439,12 @@
     "maintainer": "JoChef2",
     "maintainerURL": "",
     "description": "The MMM-AlexaControl module allows you to control your Mirror with Alexa (every device that support Wemos devices). You can turn it on and off, change the page and send notifications to other modules.",
-    "issues": [
-      "- W - An error occurred while getting information from 'package.json': Error: Invalid name: \"MMM-ALexaControl\""
+    "issues": [],
+    "tags": [
+      "magicmirror",
+      "alexacontrol",
+      "wemos",
+      "fauxmo"
     ]
   },
   {
@@ -3108,8 +3454,12 @@
     "maintainer": "shbatm",
     "maintainerURL": "",
     "description": "Simple Mirror Control from External Home Assistant (Alexa/Google Home/HASS.io)",
-    "issues": [
-      "- W - An error occurred while getting information from 'package.json': Error: Invalid name: \"MMM-AlexaOnOff\""
+    "issues": [],
+    "tags": [
+      "magicmirror",
+      "alexaonoff",
+      "wemos",
+      "fauxmo"
     ]
   },
   {
@@ -3128,7 +3478,10 @@
     "maintainer": "gauravsacc",
     "maintainerURL": "",
     "description": "Google Assistant integration using python library. Activated using hotword 'Ok Google'",
-    "issues": []
+    "issues": [
+      "- W - package.json issue: No repository field.",
+      "- W - package.json issue: No license field."
+    ]
   },
   {
     "name": "MMM-GoogleAssistant",
@@ -3137,8 +3490,14 @@
     "maintainer": "bugsounet",
     "maintainerURL": "https://wiki.bugsounet.fr",
     "description": "MMM-GoogleAssistant is an real embedded Google assistant on MagicMirror². [Maintained]",
-    "issues": [
-      "- W - An error occurred while getting information from 'package.json': Error: Invalid name: \"MMM-GoogleAssistant\""
+    "issues": [],
+    "tags": [
+      "magic mirror",
+      "module",
+      "google assistant",
+      "voice",
+      "embedded",
+      "assistant for device"
     ]
   },
   {
@@ -3149,7 +3508,8 @@
     "maintainerURL": "",
     "description": "Text-to-Speech module with Google Cloud TTS API. Give a voice to your Mirror.",
     "issues": [
-      "- W - An error occurred while getting information from 'package.json': Error: Invalid name: \"MMM-GoogleTTS\""
+      "- W - package.json issue: No description",
+      "- W - package.json issue: No repository field."
     ]
   },
   {
@@ -3192,7 +3552,10 @@
     "maintainer": "whyjustin",
     "maintainerURL": "",
     "description": "Voice control based on based on Sphinx and Alexa.",
-    "issues": []
+    "issues": [
+      "- W - package.json issue: No description",
+      "- W - package.json issue: No repository field."
+    ]
   },
   {
     "name": "MMM-MirrorMirrorOnTheWall",
@@ -3201,8 +3564,17 @@
     "maintainer": "joanaz",
     "maintainerURL": "",
     "description": "Alexa voice control to show/hide modules, search for images or Youtube video, and display them with the search term on the mirror.",
-    "issues": [
-      "- W - An error occurred while getting information from 'package.json': Error: Invalid name: \"Magic-Mirror-Module-Mirror-Mirror-On-The-Wall\""
+    "issues": [],
+    "tags": [
+      "magic mirror",
+      "smart mirror",
+      "alexa",
+      "module",
+      "aws iot",
+      "device gateway",
+      "alexa",
+      "skill",
+      "google search engine"
     ]
   },
   {
@@ -3223,8 +3595,18 @@
     "maintainer": "SikandAlex",
     "maintainerURL": "",
     "description": "Picovoice Porcupine hotword detection, works with MMM-AssistantMk2",
-    "issues": [
-      "- W - An error occurred while getting information from 'package.json': Error: Invalid name: \"MMM-Porcupine\""
+    "issues": [],
+    "tags": [
+      "module",
+      "hotword",
+      "hotword detection",
+      "porcupine",
+      "bumblebee",
+      "picovoice",
+      "magic mirror",
+      "smart mirror",
+      "voice",
+      "jarvis"
     ]
   },
   {
@@ -3261,7 +3643,10 @@
     "maintainer": "Veldrovive",
     "maintainerURL": "",
     "description": "Highly configurable voice control based on annyang.",
-    "issues": []
+    "issues": [
+      "- W - package.json issue: No description",
+      "- W - package.json issue: No repository field."
+    ]
   },
   {
     "name": "MMM-Voice-Control",
@@ -3270,8 +3655,12 @@
     "maintainer": "dr4ke616",
     "maintainerURL": "",
     "description": "Voice control based on annyang.",
-    "issues": [
-      "- W - An error occurred while getting information from 'package.json': Error: Invalid name: \"Magic-Mirror-Module-Voice-Control\""
+    "issues": [],
+    "tags": [
+      "magic mirror",
+      "smart mirror",
+      "voice control",
+      "module"
     ]
   },
   {
@@ -3292,7 +3681,9 @@
     "maintainer": "Gomez0015",
     "maintainerURL": "",
     "description": "Machine learning AI to take input and pass it through the AI to get an answer, best use is when combined with other modules to have full control over MagicMirror² with voice",
-    "issues": []
+    "issues": [
+      "- W - package.json issue: No repository field."
+    ]
   },
   {
     "name": "MMM-WhisperGPT",
@@ -3302,7 +3693,7 @@
     "maintainerURL": "https://nikro.me/",
     "description": "Adds a personal ChatGPT (3.5) voice-controlled (through PicoVoice, Whisper, Mimic3) assistant.",
     "issues": [
-      "- W - An error occurred while getting information from 'package.json': Error: Invalid name: \"MMM-WhisperGPT\""
+      "- W - package.json issue: No repository field."
     ]
   },
   {
@@ -3323,8 +3714,13 @@
     "maintainer": "nigel-daniels",
     "maintainerURL": "https://github.com/nigel-daniels",
     "description": "Simple display of today, tomorrow & next-day, designed to work with MMM-Weather-Now. Now uses Open Weather as WeatherBit reduced the free service to an unusable level :( If you installed an older version ( < 18 Oct 2022 ), please update and get a new api key!",
-    "issues": [
-      "- W - An error occurred while getting information from 'package.json': Error: Invalid name: \"MMM-3Day-Forecast\""
+    "issues": [],
+    "tags": [
+      "magic mirror",
+      "smart mirror",
+      "weather",
+      "forecast",
+      "module"
     ]
   },
   {
@@ -3345,8 +3741,13 @@
     "maintainer": "nigel-daniels",
     "maintainerURL": "https://github.com/nigel-daniels",
     "description": "Simple display of air quality based on the US AirNow API.",
-    "issues": [
-      "- W - An error occurred while getting information from 'package.json': Error: Invalid name: \"MMM-AirNow\""
+    "issues": [],
+    "tags": [
+      "magic mirror",
+      "smart mirror",
+      "air",
+      "quality",
+      "module"
     ]
   },
   {
@@ -3389,8 +3790,11 @@
     "maintainer": "mstarzec386",
     "maintainerURL": "",
     "description": "Air pollution in Polish cities. Data from airly (<https://airly.eu/>)",
-    "issues": [
-      "- W - An error occurred while getting information from 'package.json': Error: Invalid name: \"MMM-Airly\""
+    "issues": [],
+    "tags": [
+      "magicmirror",
+      "air polution",
+      "airly"
     ]
   },
   {
@@ -3400,8 +3804,14 @@
     "maintainer": "ryck",
     "maintainerURL": "",
     "description": "Module to get the Air Quality Index (AQI) using the World Air Quality Index project API.",
-    "issues": [
-      "- W - An error occurred while getting information from 'package.json': Error: Invalid name: \"MMM-AQI\""
+    "issues": [],
+    "tags": [
+      "magic mirror",
+      "smart mirror",
+      "transport",
+      "air",
+      "aqi",
+      "module"
     ]
   },
   {
@@ -3422,7 +3832,9 @@
     "maintainer": "ajones",
     "maintainerURL": "https://github.com/ajones",
     "description": "Display air quality sensor data from [Purple Air](https://www2.purpleair.com/)",
-    "issues": []
+    "issues": [
+      "- W - package.json issue: No description"
+    ]
   },
   {
     "name": "MMM-aviationwx",
@@ -3493,8 +3905,17 @@
     "maintainer": "aSouchereau",
     "maintainerURL": "",
     "description": "Gets weather watches, warnings, and advisories for user specified regions. Using alert data published by Environment Canada.",
-    "issues": [
-      "- W - An error occurred while getting information from 'package.json': Error: Invalid name: \"MMM-CanadianPublicWeatherAlerts\""
+    "issues": [],
+    "tags": [
+      "magicmirror",
+      "canada",
+      "alerts",
+      "weather",
+      "watch",
+      "warning",
+      "regions",
+      "provinces",
+      "territories"
     ]
   },
   {
@@ -3515,9 +3936,7 @@
     "maintainer": "spitzlbergerj",
     "maintainerURL": "https://github.com/spitzlbergerj",
     "description": "Extension of the standard module currentweather by the possibility to process and integrate MQTT telegrams of an own weather station",
-    "issues": [
-      "- W - An error occurred while getting information from 'package.json': Error: Invalid name: \"MMM-CurrentWeather-MQTT\""
-    ]
+    "issues": []
   },
   {
     "name": "MMM-PilotWX",
@@ -3538,7 +3957,7 @@
     "maintainerURL": "https://github.com/StefanNienhuis",
     "description": "This module will show a map with the weather forecast provided by Buienradar.",
     "issues": [
-      "- W - An error occurred while getting information from 'package.json': Error: Invalid name: \"MMM-Buienradar\""
+      "- W - package.json issue: No repository field."
     ]
   },
   {
@@ -3598,7 +4017,7 @@
     "maintainerURL": "",
     "description": "displays temperature/humidity readings from DHT22 sensor connected via GPIOs",
     "issues": [
-      "- W - An error occurred while getting information from 'package.json': Error: Invalid name: \"MMM-dht22\""
+      "- W - An error occurred while getting information from 'package.json': Error: Invalid version: \"0.1\""
     ]
   },
   {
@@ -3646,8 +4065,13 @@
     "maintainer": "BenRoe",
     "maintainerURL": "",
     "description": "Display Readings/Values from your FHEM device like temperature or humidity.",
-    "issues": [
-      "- W - An error occurred while getting information from 'package.json': Error: Invalid name: \"Magic-Mirror-Module-FHEM\""
+    "issues": [],
+    "tags": [
+      "magic mirror",
+      "smart mirror",
+      "fhem",
+      "home automation",
+      "module"
     ]
   },
   {
@@ -3712,8 +4136,13 @@
     "maintainer": "raywo",
     "maintainerURL": "",
     "description": "Displays a grid simulating the [Game of Life](https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life).",
-    "issues": [
-      "- W - An error occurred while getting information from 'package.json': Error: Invalid name: \"MMM-GameOfLife\""
+    "issues": [],
+    "tags": [
+      "magic mirror",
+      "magic mirror 2",
+      "smart mirror",
+      "game of life",
+      "module"
     ]
   },
   {
@@ -3748,7 +4177,9 @@
     "maintainer": "buxxi",
     "maintainerURL": "",
     "description": "This module exposes a HTTP-endpoint on the MagicMirror² that can receive the indoor temperature and then emits that value as notification \"INDOOR_TEMPERATURE\".",
-    "issues": []
+    "issues": [
+      "- W - package.json issue: No license field."
+    ]
   },
   {
     "name": "MMM-LocalTemperature",
@@ -3780,7 +4211,7 @@
     "maintainerURL": "",
     "description": "Display the air quality index from [looko2](https://looko2.pl/) sensor.",
     "issues": [
-      "- W - An error occurred while getting information from 'package.json': Error: Invalid name: \"MMM-Looko2-aq\""
+      "- W - package.json issue: No repository field."
     ]
   },
   {
@@ -3901,8 +4332,14 @@
     "maintainer": "crice009",
     "maintainerURL": "https://github.com/crice009",
     "description": "Graph daily low and high tide predictions for a given NOAA tide station, and measured data as it is reported. Data is pulled from [NOAA-tidesandcurrents](https://tidesandcurrents.noaa.gov/map/index.html). Data is a free service - no API key",
-    "issues": [
-      "- W - An error occurred while getting information from 'package.json': Error: Invalid name: \"MMM-NOAATides\""
+    "issues": [],
+    "tags": [
+      "magic mirror",
+      "smart mirror",
+      "tide",
+      "high water",
+      "low water",
+      "cool graphs"
     ]
   },
   {
@@ -3912,7 +4349,9 @@
     "maintainer": "CFenner",
     "maintainerURL": "",
     "description": "Display your Netatmo in/outdoor weather station data.",
-    "issues": []
+    "issues": [
+      "- W - package.json issue: No description"
+    ]
   },
   {
     "name": "MMM-Netatmo",
@@ -3921,7 +4360,9 @@
     "maintainer": "RaymondMolenaar",
     "maintainerURL": "https://github.com/RaymondMolenaar",
     "description": "Fork of CFenner's module with improved UI.",
-    "issues": []
+    "issues": [
+      "- W - package.json issue: No description"
+    ]
   },
   {
     "name": "MMM-OneCallWeather",
@@ -3962,7 +4403,9 @@
     "maintainerURL": "",
     "description": "Display pollen.com information for your US zipcode",
     "issues": [
-      "- W - An error occurred while getting information from 'package.json': Error: Invalid name: \"MMM-Pollen\""
+      "- W - package.json issue: No description",
+      "- W - package.json issue: No repository field.",
+      "- W - package.json issue: No license field."
     ]
   },
   {
@@ -3994,9 +4437,7 @@
     "maintainer": "nkl-kst",
     "maintainerURL": "https://github.com/nkl-kst",
     "description": "Display RBB weather data",
-    "issues": [
-      "- W - An error occurred while getting information from 'package.json': Error: Invalid name: \"MMM-RBB-Weather\""
-    ]
+    "issues": []
   },
   {
     "name": "MMM-RainFc",
@@ -4017,7 +4458,9 @@
     "maintainerURL": "https://github.com/jupadin",
     "description": "Show rain forecast weather maps based on OpenStreeMap. Highlight multiple points of interest with colored markers.",
     "issues": [
-      "- W - An error occurred while getting information from 'package.json': Error: name field must be a string."
+      "- W - package.json issue: No description",
+      "- W - package.json issue: No repository field.",
+      "- W - package.json issue: No license field."
     ]
   },
   {
@@ -4113,8 +4556,12 @@
     "maintainer": "balassy",
     "maintainerURL": "https://github.com/balassy",
     "description": "Displays the temperature from a remote sensor that is capable to POST the measured value through HTTP protocol in JSON.",
-    "issues": [
-      "- W - An error occurred while getting information from 'package.json': Error: Invalid name: \"MMM-RemoteTemperature\""
+    "issues": [],
+    "tags": [
+      "magicmirror",
+      "module",
+      "temperature",
+      "raspberrypi"
     ]
   },
   {
@@ -4124,8 +4571,14 @@
     "maintainer": "sisimomo",
     "maintainerURL": "https://github.com/sisimomo",
     "description": "Display a Nest Like thermostat from a remote sensor that is capable to POST values through HTTP protocol. It is designed to be generic. Useful when having Home Assistant and MagicMirror².",
-    "issues": [
-      "- W - An error occurred while getting information from 'package.json': Error: Invalid name: \"MMM-NestRemoteThermostat\""
+    "issues": [],
+    "tags": [
+      "magicmirror",
+      "module",
+      "temperature",
+      "nest",
+      "thermostat",
+      "raspberrypi"
     ]
   },
   {
@@ -4135,8 +4588,10 @@
     "maintainer": "Santanachia",
     "maintainerURL": "",
     "description": "Air pollution in Polish cities.",
-    "issues": [
-      "- W - An error occurred while getting information from 'package.json': Error: Invalid name: \"MMM-SmokedMirror\""
+    "issues": [],
+    "tags": [
+      "magicmirror",
+      "air polution"
     ]
   },
   {
@@ -4168,8 +4623,14 @@
     "maintainer": "maloakes",
     "maintainerURL": "",
     "description": "Display weather warnings for the UK issued by UK Met Office.",
-    "issues": [
-      "- W - An error occurred while getting information from 'package.json': Error: Invalid name: \"MMM-UKMOWeatherWarnings\""
+    "issues": [],
+    "tags": [
+      "magic mirror",
+      "smart mirror",
+      "weather",
+      "warnings",
+      "module",
+      "uk met office"
     ]
   },
   {
@@ -4180,7 +4641,7 @@
     "maintainerURL": "https://github.com/Tom-Hirschberger",
     "description": "A module to display tempature, humdity, and more of DHT11, DHT22, BMT280, HTU21, DS18B20 or other sensors",
     "issues": [
-      "- W - An error occurred while getting information from 'package.json': Error: Invalid name: \"MMM-Temperature\""
+      "- W - package.json issue: No description"
     ]
   },
   {
@@ -4190,7 +4651,9 @@
     "maintainer": "szech",
     "maintainerURL": "",
     "description": "Displays pollen forecast for your area in the UK.",
-    "issues": [],
+    "issues": [
+      "- W - package.json issue: No repository field."
+    ],
     "tags": [
       "magic mirror",
       "smart mirror",
@@ -4220,7 +4683,9 @@
     "maintainer": "erikmohn",
     "maintainerURL": "",
     "description": "Display weather data from weather stations available at vindsiden.no(Norway)...",
-    "issues": []
+    "issues": [
+      "- W - package.json issue: No repository field."
+    ]
   },
   {
     "name": "MMM-WeatherGraph",
@@ -4240,8 +4705,13 @@
     "maintainer": "nigel-daniels",
     "maintainerURL": "https://github.com/nigel-daniels",
     "description": "Simple clean display of the weather now, designed to go with MMM-3Day-Forecast. Now uses Open Weather as WeatherBit reduced the free service to an unusable level :( If you installed an older version ( < 18 Oct 2022 ), please update and get a new api key!",
-    "issues": [
-      "- W - An error occurred while getting information from 'package.json': Error: Invalid name: \"MMM-Weather-Now\""
+    "issues": [],
+    "tags": [
+      "magic mirror",
+      "smart mirror",
+      "weather",
+      "forecast",
+      "module"
     ]
   },
   {
@@ -4252,7 +4722,9 @@
     "maintainerURL": "https://github.com/Menturan",
     "description": "Displays weather from Swedish SMHI hourly.",
     "issues": [
-      "- W - An error occurred while getting information from 'package.json': Error: name field must be a string."
+      "- W - package.json issue: No description",
+      "- W - package.json issue: No repository field.",
+      "- W - package.json issue: No license field."
     ]
   },
   {
@@ -4263,7 +4735,7 @@
     "maintainerURL": "",
     "description": "Displays active weather alerts provided by [OpenWeatherMap's onecall API](https://openweathermap.org/api/one-call-3#listsource).",
     "issues": [
-      "- W - An error occurred while getting information from 'package.json': Error: Invalid name: \"MagicMirror-Module-Template\""
+      "- W - package.json issue: No repository field."
     ]
   },
   {
@@ -4331,7 +4803,7 @@
     "maintainerURL": "https://github.com/dWoolridge",
     "description": "Displays an hourly forecast table for multiple days. Allows you to specify what hours of the day to include and which forecast components will be displayed",
     "issues": [
-      "- W - An error occurred while getting information from 'package.json': Error: Invalid name: \"Magic-Mirror-Module-WeatherHourlyByDay\""
+      "- W - An error occurred while getting information from 'package.json': Error: Invalid version: \"1.0\""
     ]
   },
   {
@@ -4342,7 +4814,7 @@
     "maintainerURL": "https://github.com/st3v0rr",
     "description": "This module integrates a WH2600 System to display several statistics like temperature and humidity for all registered sensors, wind data, UV index and rain data",
     "issues": [
-      "- W - An error occurred while getting information from 'package.json': Error: Invalid name: \"MMM-WH2600\""
+      "- W - package.json issue: No repository field."
     ]
   },
   {
@@ -4473,7 +4945,9 @@
     "maintainer": "MStoltzfus",
     "maintainerURL": "https://github.com/MStoltzfus",
     "description": "A module that displays the \"Unreached of the Day\" data from [Joshua Project](www.joshuaproject.net/pray/unreachedoftheday/today)",
-    "issues": []
+    "issues": [
+      "- W - package.json issue: No repository field."
+    ]
   },
   {
     "name": "MMM-DagelijksWoord",
@@ -4526,9 +5000,8 @@
     "maintainer": "Dobherrmann",
     "maintainerURL": "",
     "description": "Displays the daily bible verse from ther german “Losungstext” and the additional teaching text.",
-    "issues": [
-      "- W - An error occurred while getting information from 'package.json': Error: Invalid name: \"MMM-Losung\""
-    ]
+    "issues": [],
+    "tags": []
   },
   {
     "name": "MMM-MataChuan",
@@ -4593,8 +5066,10 @@
     "maintainerURL": "",
     "description": "Displays daily Jewish calendar information.",
     "issues": [
-      "- W - An error occurred while getting information from 'package.json': Error: Invalid name: \"MMM-Zmanim\""
-    ]
+      "- W - package.json issue: No description",
+      "- W - package.json issue: No repository field."
+    ],
+    "tags": []
   },
   {
     "name": "MMM-AllsvenskanStandings",
@@ -4603,8 +5078,13 @@
     "maintainer": "retroflex",
     "maintainerURL": "",
     "description": "Shows the current standings of Allsvenskan (the top Swedish football league).",
-    "issues": [
-      "- W - An error occurred while getting information from 'package.json': Error: Invalid name: \"MMM-AllsvenskanStandings\""
+    "issues": [],
+    "tags": [
+      "magic mirror",
+      "allsvenskan",
+      "football",
+      "soccer",
+      "sweden"
     ]
   },
   {
@@ -4667,7 +5147,9 @@
     "maintainerURL": "https://github.com/jupadin",
     "description": "Displays the current driver standings of the current Formula 1 season.",
     "issues": [
-      "- W - An error occurred while getting information from 'package.json': Error: name field must be a string."
+      "- W - package.json issue: No description",
+      "- W - package.json issue: No repository field.",
+      "- W - package.json issue: No license field."
     ]
   },
   {
@@ -4677,7 +5159,10 @@
     "maintainer": "buxxi",
     "maintainerURL": "",
     "description": "Displays current and upcoming pro matches in Dota2.",
-    "issues": []
+    "issues": [
+      "- W - package.json issue: No repository field.",
+      "- W - package.json issue: No license field."
+    ]
   },
   {
     "name": "MMM-LOLESPORTS-SCHEDULES",
@@ -4728,7 +5213,9 @@
     "maintainerURL": "",
     "description": "Display ESPN standings for major US Sports and international soccer leagues.",
     "issues": [
-      "- W - An error occurred while getting information from 'package.json': Error: Invalid name: \"MMM-MyStandings\""
+      "- W - package.json issue: No description",
+      "- W - package.json issue: No repository field.",
+      "- W - package.json issue: No license field."
     ]
   },
   {
@@ -4766,7 +5253,9 @@
     "maintainerURL": "https://github.com/jupadin",
     "description": "Display scores of National Basketball Association.",
     "issues": [
-      "- W - An error occurred while getting information from 'package.json': Error: name field must be a string."
+      "- W - package.json issue: No description",
+      "- W - package.json issue: No repository field.",
+      "- W - package.json issue: No license field."
     ]
   },
   {
@@ -4811,9 +5300,8 @@
     "maintainer": "bureus",
     "maintainerURL": "",
     "description": "Display stands of Svenska Hockey Ligan (SHL).",
-    "issues": [
-      "- W - An error occurred while getting information from 'package.json': Error: Invalid name: \"MMM-SHL\""
-    ]
+    "issues": [],
+    "tags": []
   },
   {
     "name": "MMM-ScottishPremierLeague",
@@ -4846,8 +5334,13 @@
     "maintainer": "0m4r",
     "maintainerURL": "",
     "description": "A module that displays live scores of your favorite soccer leagues/competitions.",
-    "issues": [
-      "- W - An error occurred while getting information from 'package.json': Error: Invalid name: \"MMM-SoccerLiveScore\""
+    "issues": [],
+    "tags": [
+      "mmm",
+      "magic mirror",
+      "magic mirror 2",
+      "live score",
+      "soccer"
     ]
   },
   {
@@ -4871,7 +5364,9 @@
     "maintainerURL": "https://github.com/LukasKlose",
     "description": "A module that displays the tables of the Polish Speedway Leagues (PGE Ekstraliga, I. Liga Żużlowa , II. Liga Żużlowa).",
     "issues": [
-      "- W - An error occurred while getting information from 'package.json': Error: Invalid name: \"MMM-Speedway\""
+      "- W - package.json issue: No description",
+      "- W - package.json issue: No repository field.",
+      "- W - package.json issue: No license field."
     ]
   },
   {
@@ -4895,8 +5390,11 @@
     "maintainer": "dsouzadrian",
     "maintainerURL": "https://github.com/dsouzadrian",
     "description": "A module that displays cicket scores for ongoing live cricket matches.",
-    "issues": [
-      "- W - An error occurred while getting information from 'package.json': Error: Invalid name: \"MMM-CricketScores\""
+    "issues": [],
+    "tags": [
+      "magic mirror",
+      "module",
+      "cricket"
     ]
   },
   {
@@ -4957,8 +5455,12 @@
     "maintainer": "Jopyth",
     "maintainerURL": "",
     "description": "Display a candle burning down towards a specific date (e.g. an advent candle).",
-    "issues": [
-      "- W - An error occurred while getting information from 'package.json': Error: Invalid name: \"Magic-Mirror-Module-Advent\""
+    "issues": [],
+    "tags": [
+      "magic mirror",
+      "smart mirror",
+      "buttons",
+      "module"
     ]
   },
   {
@@ -4980,7 +5482,7 @@
     "maintainerURL": "",
     "description": "Displays all your tracked parcels from AfterShip.",
     "issues": [
-      "- W - An error occurred while getting information from 'package.json': Error: Invalid name: \"MMM-AfterShip\""
+      "- W - package.json issue: No repository field."
     ]
   },
   {
@@ -5025,8 +5527,15 @@
     "maintainer": "eric-h-st",
     "maintainerURL": "https://github.com/eric-h-st/",
     "description": "Ambient brightness detection and Auto-Brightness of the mirror modules accordingly",
-    "issues": [
-      "- W - An error occurred while getting information from 'package.json': Error: Invalid name: \"Magic-Mirror-Module-Ambient-Brightness-Detection\""
+    "issues": [],
+    "tags": [
+      "magic mirror",
+      "smart mirror",
+      "ambient brightness",
+      "module",
+      "ambient",
+      "brightness",
+      "camera"
     ]
   },
   {
@@ -5036,9 +5545,8 @@
     "maintainer": "codetheweb",
     "maintainerURL": "",
     "description": "Module to display a list from the AnyList app.",
-    "issues": [
-      "- W - An error occurred while getting information from 'package.json': Error: Invalid name: \"MMM-AnyList\""
-    ]
+    "issues": [],
+    "tags": []
   },
   {
     "name": "MMM-API",
@@ -5058,7 +5566,9 @@
     "maintainer": "martinburheimtingstad",
     "maintainerURL": "https://github.com/martinburheimtingstad",
     "description": "This module integrates with Panasonic Aquarea Smart Cloud to display data from your heat pump.",
-    "issues": []
+    "issues": [
+      "- W - package.json issue: No repository field."
+    ]
   },
   {
     "name": "MMM-ArduPort",
@@ -5082,8 +5592,11 @@
     "maintainer": "relm923",
     "maintainerURL": "",
     "description": "This module pulls data (lock and door status) from August Locks connected to the configured account using august-connect.",
-    "issues": [
-      "- W - An error occurred while getting information from 'package.json': Error: Invalid name: \"MMM-August-Lock\""
+    "issues": [],
+    "tags": [
+      "magic mirror",
+      "smart mirror",
+      "august"
     ]
   },
   {
@@ -5093,7 +5606,9 @@
     "maintainer": "amitchone",
     "maintainerURL": "https://github.com/amitchone",
     "description": "A simple, lightweight birthday reminder - specified either via simple JSON file or in `config.js`. Supports multiple languages!",
-    "issues": []
+    "issues": [
+      "- W - package.json issue: No repository field."
+    ]
   },
   {
     "name": "MMM-Beestat",
@@ -5103,7 +5618,9 @@
     "maintainerURL": "",
     "description": "Display Ecobee runtime data from beestat.io API",
     "issues": [
-      "- W - An error occurred while getting information from 'package.json': Error: Invalid name: \"MMM-Beestat\""
+      "- W - package.json issue: No description",
+      "- W - package.json issue: No repository field.",
+      "- W - package.json issue: No license field."
     ]
   },
   {
@@ -5190,7 +5707,9 @@
     "maintainer": "rseidt",
     "maintainerURL": "",
     "description": "Display a Bring! shopping list in a tabular view",
-    "issues": []
+    "issues": [
+      "- W - package.json issue: No repository field."
+    ]
   },
   {
     "name": "MMM-Buller",
@@ -5200,7 +5719,7 @@
     "maintainerURL": "",
     "description": "Dynamic compliments leveraging Google Tasks",
     "issues": [
-      "- W - An error occurred while getting information from 'package.json': Error: Invalid name: \"MMM-Buller\""
+      "- W - An error occurred while getting information from 'package.json': Error: Invalid version: \"1.0\""
     ]
   },
   {
@@ -5210,7 +5729,10 @@
     "maintainer": "awitwicki",
     "maintainerURL": "https://github.com/awitwicki",
     "description": "Display temperature, humidity, and pressure readings from BME280 I2C sensor",
-    "issues": []
+    "issues": [
+      "- W - package.json issue: No description",
+      "- W - package.json issue: No repository field."
+    ]
   },
   {
     "name": "MMM-CalDAV",
@@ -5380,7 +5902,10 @@
     "maintainer": "MarinescuEvghenii",
     "maintainerURL": "",
     "description": "Chart module. This is a simple wrapper for [Chart.js](https://www.chartjs.org/)",
-    "issues": []
+    "issues": [
+      "- W - package.json issue: No description",
+      "- W - package.json issue: No repository field."
+    ]
   },
   {
     "name": "MMM-chromecast",
@@ -5401,7 +5926,7 @@
     "maintainerURL": "https://github.com/Tom-Hirschberger",
     "description": "Calls configurable scripts periodically and send the output as notifications(s).",
     "issues": [
-      "- W - An error occurred while getting information from 'package.json': Error: Invalid name: \"MMM-CommandToNotification\""
+      "- W - package.json issue: No description"
     ]
   },
   {
@@ -5412,7 +5937,9 @@
     "maintainerURL": "",
     "description": "Displays ComEd Hourly Pricing.",
     "issues": [
-      "- W - An error occurred while getting information from 'package.json': Error: Invalid name: \"MMM-ComEdPrice\""
+      "- W - package.json issue: No description",
+      "- W - package.json issue: No repository field.",
+      "- W - package.json issue: No license field."
     ]
   },
   {
@@ -5423,7 +5950,7 @@
     "maintainerURL": "",
     "description": "Display a count down to a date/event.",
     "issues": [
-      "- W - An error occurred while getting information from 'package.json': Error: Invalid name: \"MMM-CountDown\""
+      "- W - package.json issue: No repository field."
     ]
   },
   {
@@ -5434,7 +5961,7 @@
     "maintainerURL": "",
     "description": "Display a count down to the next event from [MMM-CalendarExt2](https://github.com/MMM-CalendarExt2/MMM-CalendarExt2).",
     "issues": [
-      "- W - An error occurred while getting information from 'package.json': Error: Invalid name: \"MMM-NextEvent\""
+      "- W - package.json issue: No repository field."
     ]
   },
   {
@@ -5444,8 +5971,15 @@
     "maintainer": "MarinescuEvghenii",
     "maintainerURL": "",
     "description": "Display cursor when user moves mouse and hide after delay.",
-    "issues": [
-      "- W - An error occurred while getting information from 'package.json': Error: Invalid name: \"MMM-Cursor\""
+    "issues": [],
+    "tags": [
+      "magicmirror²",
+      "magic mirror",
+      "magic",
+      "mirror",
+      "module",
+      "cursor",
+      "mmm-cursor"
     ]
   },
   {
@@ -5569,8 +6103,12 @@
     "maintainer": "goedh452",
     "maintainerURL": "",
     "description": "A highly configurable module for displaying domoticz information and performing actions on Domoticz.",
-    "issues": [
-      "- W - An error occurred while getting information from 'package.json': Error: Invalid name: \"MMM-Domoticz-ext\""
+    "issues": [],
+    "tags": [
+      "magic mirror",
+      "smart mirror",
+      "domoticz",
+      "module"
     ]
   },
   {
@@ -5603,7 +6141,7 @@
     "maintainerURL": "https://github.com/Tom-Hirschberger",
     "description": "Embed one or multiple websites with there URL.",
     "issues": [
-      "- W - An error occurred while getting information from 'package.json': Error: Invalid name: \"MMM-EmbedURL\""
+      "- W - package.json issue: No description"
     ]
   },
   {
@@ -5698,8 +6236,13 @@
     "maintainer": "jesmak",
     "maintainerURL": "https://github.com/jesmak",
     "description": "Module that tracks packages from Finnish Posti and/or Matkahuolto",
-    "issues": [
-      "- W - An error occurred while getting information from 'package.json': Error: Invalid name: \"MMM-FinParcel\""
+    "issues": [],
+    "tags": [
+      "magic mirror",
+      "module",
+      "parcel",
+      "posti",
+      "matkahuolto"
     ]
   },
   {
@@ -5721,7 +6264,9 @@
     "maintainerURL": "https://github.com/nomis6432",
     "description": "send notifications to other modules with flic.io buttons.",
     "issues": [
-      "- W - An error occurred while getting information from 'package.json': Error: Invalid name: \"MMM-flicio\""
+      "- W - package.json issue: No description",
+      "- W - package.json issue: No repository field.",
+      "- W - package.json issue: No license field."
     ]
   },
   {
@@ -5779,8 +6324,12 @@
     "maintainer": "drtorchwood",
     "maintainerURL": "",
     "description": "FRITZ!Box Callmonitor (Display an alert when someone is calling and offers a call history...)",
-    "issues": [
-      "- W - An error occurred while getting information from 'package.json': Error: Invalid name: \"Magic-Mirror-Module-Callmonitor\""
+    "issues": [],
+    "tags": [
+      "magic mirror",
+      "smart mirror",
+      "callmonitor",
+      "module"
     ]
   },
   {
@@ -5829,7 +6378,9 @@
     "maintainer": "jboucly",
     "maintainerURL": "https://github.com/jboucly",
     "description": "Displays images from an FTP server with a display delay",
-    "issues": []
+    "issues": [
+      "- W - package.json issue: No repository field."
+    ]
   },
   {
     "name": "MMM-GamepadEvents",
@@ -5849,8 +6400,12 @@
     "maintainer": "da4throux",
     "maintainerURL": "",
     "description": "Track your GCP (Google Cloud Platform) activity.",
-    "issues": [
-      "- W - An error occurred while getting information from 'package.json': Error: Invalid name: \"MMM-GCP\""
+    "issues": [],
+    "tags": [
+      "magic mirror",
+      "smart mirror",
+      "gcp",
+      "billing"
     ]
   },
   {
@@ -5860,7 +6415,10 @@
     "maintainer": "shaneapowell",
     "maintainerURL": "",
     "description": "Show a list of unread gmails.",
-    "issues": [],
+    "issues": [
+      "- W - package.json issue: No repository field.",
+      "- W - package.json issue: No license field."
+    ],
     "tags": [
       "magic mirror",
       "smart mirror",
@@ -5903,9 +6461,7 @@
     "maintainer": "Gismo150",
     "maintainerURL": "",
     "description": "Display a google shoppinglist items",
-    "issues": [
-      "- W - An error occurred while getting information from 'package.json': Error: Invalid name: \"MMM-GoogleShoppingList\""
-    ]
+    "issues": []
   },
   {
     "name": "MMM-GoogleTasks",
@@ -5957,7 +6513,7 @@
     "maintainerURL": "https://github.com/Tom-Hirschberger",
     "description": "A module to send notifications based on GPIO events. Can be used as PIR module and with rotary encoders.",
     "issues": [
-      "- W - An error occurred while getting information from 'package.json': Error: Invalid name: \"MMM-GPIO-Notifications\""
+      "- W - package.json issue: No description"
     ]
   },
   {
@@ -6000,8 +6556,12 @@
     "maintainer": "aserramonner",
     "maintainerURL": "",
     "description": "An alternate home-assistant integration.",
-    "issues": [
-      "- W - An error occurred while getting information from 'package.json': Error: Invalid name: \"MMM-HASS\""
+    "issues": [],
+    "tags": [
+      "magic",
+      "mirror",
+      "module",
+      "home-assistant"
     ]
   },
   {
@@ -6055,8 +6615,13 @@
     "maintainer": "Snille",
     "maintainerURL": "https://github.com/Snille",
     "description": "Fork of leinich module. Many new features added. Display information from Home Assistant using the home assistant REST API.",
-    "issues": [
-      "- W - An error occurred while getting information from 'package.json': Error: Invalid name: \"MMM-homeassistant-sensors\""
+    "issues": [],
+    "tags": [
+      "magic mirror",
+      "smart mirror",
+      "home assistant",
+      "ha",
+      "module"
     ]
   },
   {
@@ -6066,7 +6631,10 @@
     "maintainer": "mathewmeconry",
     "maintainerURL": "https://github.com/mathewmeconry",
     "description": "Displays information from HomeAssistant via Rest API. Litens for State changes with Websockets. Touch control for Entities",
-    "issues": []
+    "issues": [
+      "- W - package.json issue: No description",
+      "- W - package.json issue: No repository field."
+    ]
   },
   {
     "name": "MMM-HomeAssistantDisplay",
@@ -6097,9 +6665,8 @@
     "maintainer": "djerik",
     "maintainerURL": "https://github.com/djerik/",
     "description": "Shows status such as remaining program time of your Home Connect appliances.",
-    "issues": [
-      "- W - An error occurred while getting information from 'package.json': Error: Invalid name: \"MMM-HomeConnect\""
-    ]
+    "issues": [],
+    "tags": []
   },
   {
     "name": "MMM-Homematic",
@@ -6109,8 +6676,9 @@
     "maintainerURL": "https://github.com/Sickboy78/",
     "description": "Shows values and warnings from HomeMatic smart home components and system variables as text and/or icons. Highly flexible and customizable design.",
     "issues": [
-      "- W - An error occurred while getting information from 'package.json': Error: Invalid name: \"MMM-Homematic\""
-    ]
+      "- W - package.json issue: license should be a valid SPDX license expression"
+    ],
+    "tags": []
   },
   {
     "name": "MMM-Homematic-Rooms",
@@ -6119,8 +6687,12 @@
     "maintainer": "JFWenisch",
     "maintainerURL": "https://github.com/JFWenisch/",
     "description": "Requests device information from the HomeMatic CCU and displays them grouped by the assigned room.",
-    "issues": [
-      "- W - An error occurred while getting information from 'package.json': Error: Invalid name: \"MMM-Homematic-Rooms\""
+    "issues": [],
+    "tags": [
+      "magic mirror",
+      "homematic",
+      "smarthome",
+      "ccu2"
     ]
   },
   {
@@ -6141,9 +6713,7 @@
     "maintainer": "tomgroenwoldt",
     "maintainerURL": "https://github.com/tomgroenwoldt",
     "description": "Monitors reachability of local IP addresses.",
-    "issues": [
-      "- W - An error occurred while getting information from 'package.json': Error: Invalid name: \"MMM-Home-Presence\""
-    ]
+    "issues": []
   },
   {
     "name": "MMM-Hover",
@@ -6152,9 +6722,7 @@
     "maintainer": "dancj",
     "maintainerURL": "",
     "description": "Connects to HoverLabs hover gesture detector and can raise notifications on swipes and taps",
-    "issues": [
-      "- W - An error occurred while getting information from 'package.json': Error: Invalid name: \"MMM-Hover\""
-    ]
+    "issues": []
   },
   {
     "name": "MMM-HRS-PickupPlan",
@@ -6225,9 +6793,8 @@
     "maintainer": "nixnuex",
     "maintainerURL": "",
     "description": "Display non-completed ToDos from an iCal source like CalDAV or the Task App in ownCloud or Nextcloud",
-    "issues": [
-      "- W - An error occurred while getting information from 'package.json': Error: Invalid name: \"MMM-iCal-ToDo\""
-    ]
+    "issues": [],
+    "tags": []
   },
   {
     "name": "MMM-iCloud-Client",
@@ -6258,8 +6825,12 @@
     "maintainer": "alberttwong",
     "maintainerURL": "",
     "description": "A simple way to add an iFrame of any web content. Supports multiple URLs and will rotate between them. Works with static pages or streams like Nest Cam, D-Link Cameras, Twitch.tv, YouTube and more.",
-    "issues": [
-      "- W - An error occurred while getting information from 'package.json': Error: Invalid name: \"Magic-Mirror-Module-MMM-iFrame\""
+    "issues": [],
+    "tags": [
+      "magic mirror",
+      "smart mirror",
+      "iframe",
+      "module"
     ]
   },
   {
@@ -6280,8 +6851,13 @@
     "maintainer": "AgP42",
     "maintainerURL": "https://github.com/AgP42",
     "description": "An iFrame module to display any web content to your MagicMirror² (including YouTube, IP Cameras, ...). Several functionalities like auto-refresh, Ping the Url before to display it and last update time display. See also [MMM-SmartWebDisplay](https://forum.magicmirror.builders/topic/9750/mmm-smartwebdisplay-display-web-contents-including-youtube-on-your-mm)",
-    "issues": [
-      "- W - An error occurred while getting information from 'package.json': Error: Invalid name: \"MMM-iFrame-Ping\""
+    "issues": [],
+    "tags": [
+      "magic mirror",
+      "smart mirror",
+      "iframe",
+      "ping",
+      "module"
     ]
   },
   {
@@ -6302,7 +6878,9 @@
     "maintainer": "ronny3050",
     "maintainerURL": "",
     "description": "Display internet statistics such as strength and speed information.",
-    "issues": [],
+    "issues": [
+      "- W - package.json issue: No repository field."
+    ],
     "tags": [
       "internet",
       "speed"
@@ -6315,7 +6893,11 @@
     "maintainer": "aduyng",
     "maintainerURL": "",
     "description": "Show my Smartthings Home automation device status using firebase realtime database",
-    "issues": []
+    "issues": [
+      "- W - package.json issue: No description",
+      "- W - package.json issue: No repository field.",
+      "- W - package.json issue: No license field."
+    ]
   },
   {
     "name": "MMM-ioBroker",
@@ -6360,9 +6942,7 @@
     "maintainer": "shbatm",
     "maintainerURL": "",
     "description": "Display status of lights and variables on a floor plan connected to an ISY-994i Device.",
-    "issues": [
-      "- W - An error occurred while getting information from 'package.json': Error: Invalid name: \"MMM-ISY\""
-    ]
+    "issues": []
   },
   {
     "name": "MMM-json",
@@ -6382,8 +6962,15 @@
     "maintainer": "c-klinger",
     "maintainerURL": "",
     "description": "Display data from any Web/REST API that return JSON.",
-    "issues": [
-      "- W - An error occurred while getting information from 'package.json': Error: Invalid name: \"Magic-Mirror-Module-JsonValue\""
+    "issues": [],
+    "tags": [
+      "magic mirror",
+      "smart mirror",
+      "module",
+      "remote control",
+      "control",
+      "json",
+      "rest"
     ]
   },
   {
@@ -6393,8 +6980,11 @@
     "maintainer": "shbatm",
     "maintainerURL": "",
     "description": "Display a True/False status from any JSON source (e.g. VPN Connected/Disconnected).",
-    "issues": [
-      "- W - An error occurred while getting information from 'package.json': Error: Invalid name: \"MMM-JSONStatusChecker\""
+    "issues": [],
+    "tags": [
+      "status",
+      "json",
+      "api"
     ]
   },
   {
@@ -6448,8 +7038,12 @@
     "maintainer": "shbatm",
     "maintainerURL": "",
     "description": "A module for getting bluetooth remote control and keyboard inputs",
-    "issues": [
-      "- W - An error occurred while getting information from 'package.json': Error: Invalid name: \"MMM-KeyBindings\""
+    "issues": [],
+    "tags": [
+      "magicmirror",
+      "fire stick",
+      "remote control",
+      "keyboard"
     ]
   },
   {
@@ -6481,8 +7075,12 @@
     "maintainer": "Alvinger",
     "maintainerURL": "",
     "description": "Replaced by MMM-Mashie-Skolmat! Show school lunch menus from Köket by Sodexo (based on MMM-Skolmaten with different source for menus)",
-    "issues": [
-      "- W - An error occurred while getting information from 'package.json': Error: Invalid name: \"MMM-Koket-by-Sodexo\""
+    "issues": [],
+    "tags": [
+      "magic mirror",
+      "skolmat",
+      "köket by sodexo",
+      "sweden"
     ]
   },
   {
@@ -6492,8 +7090,13 @@
     "maintainer": "Txukie",
     "maintainerURL": "",
     "description": "Turns on or off a device connected to GPIO (in my case, an LCD screen) based on the input of a PIR device. Integrates nicely with MMM-Assistant (for voice control) and MMM-TelegramBot (for Telegram control).",
-    "issues": [
-      "- W - An error occurred while getting information from 'package.json': Error: Invalid name: \"Magic-Mirror-Module-LCDControl\""
+    "issues": [],
+    "tags": [
+      "magic mirror",
+      "smart mirror",
+      "lcd",
+      "module",
+      "pir"
     ]
   },
   {
@@ -6504,7 +7107,7 @@
     "maintainerURL": "https://github.com/Tom-Hirschberger",
     "description": "A module to control the color (and pong game parameters) of led strips via MQTT",
     "issues": [
-      "- W - An error occurred while getting information from 'package.json': Error: Invalid name: \"MMM-LEDStripControl\""
+      "- W - package.json issue: No description"
     ]
   },
   {
@@ -6524,7 +7127,16 @@
     "maintainerURL": "https://github.com/djey47",
     "description": "Module to display info about home power supply - FRANCE TELEINFO ENEDIS",
     "issues": [
-      "- W - An error occurred while getting information from 'package.json': Error: Invalid name: \"MMM-LKY-TIC\""
+      "- W - package.json issue: No repository field.",
+      "- W - package.json issue: No license field."
+    ],
+    "tags": [
+      "magic",
+      "mirror",
+      "linky",
+      "enedis",
+      "tic",
+      "teleinfo"
     ]
   },
   {
@@ -6545,9 +7157,7 @@
     "maintainer": "idoodler",
     "maintainerURL": "",
     "description": "MMM-Loxone connects to your Loxone Miniserver and lets it communicate to your MagicMirror².",
-    "issues": [
-      "- W - An error occurred while getting information from 'package.json': Error: Invalid name: \"MMM-Loxone\""
-    ]
+    "issues": []
   },
   {
     "name": "MMM-MacAddressScan",
@@ -6556,8 +7166,11 @@
     "maintainer": "doctorfree",
     "maintainerURL": "https://github.com/doctorfree",
     "description": "A module which determines the status of devices on the network based on their MAC address. It can also look up devices by IP addresses or hostnames. This module is an enhanced clone of the excellent MMM-NetworkScanner module by [Ian Perrin](https://github.com/ianperrin)",
-    "issues": [
-      "- W - An error occurred while getting information from 'package.json': Error: Invalid name: \"MMM-MacAddressScan\""
+    "issues": [],
+    "tags": [
+      "magicmirror",
+      "network",
+      "scanner"
     ]
   },
   {
@@ -6567,8 +7180,13 @@
     "maintainer": "Alvinger",
     "maintainerURL": "",
     "description": "Show school lunch menus from Mashie.com. (based on MMM-Skolmaten with different source for menus)",
-    "issues": [
-      "- W - An error occurred while getting information from 'package.json': Error: Invalid name: \"MMM-Mashie-Skolmat\""
+    "issues": [],
+    "tags": [
+      "magic mirror",
+      "skolmat",
+      "mashie",
+      "köket by sodexo",
+      "sweden"
     ]
   },
   {
@@ -6579,7 +7197,7 @@
     "maintainerURL": "",
     "description": "Show specific messages from mattermost chat. (Similar to MMM-SlackAnnouncements, but not bound to a specific channel).",
     "issues": [
-      "- W - An error occurred while getting information from 'package.json': Error: Invalid name: \"MMM-Mattermost\""
+      "- W - package.json issue: No repository field."
     ]
   },
   {
@@ -6600,8 +7218,13 @@
     "maintainer": "fuerst",
     "maintainerURL": "https://github.com/fuerst",
     "description": "Show the menu of german school lunch service provider MensaMax.",
-    "issues": [
-      "- W - An error occurred while getting information from 'package.json': Error: Invalid name: \"MMM-MensaMax\""
+    "issues": [],
+    "tags": [
+      "magicmirror",
+      "mensmax",
+      "speiseplan",
+      "magic mirror",
+      "smart mirror"
     ]
   },
   {
@@ -6611,7 +7234,10 @@
     "maintainer": "awitwicki",
     "maintainerURL": "https://github.com/awitwicki",
     "description": "Display CO2 readings from MH-Z19 sensor.",
-    "issues": []
+    "issues": [
+      "- W - package.json issue: No description",
+      "- W - package.json issue: No repository field."
+    ]
   },
   {
     "name": "MMM-MicrosoftToDo",
@@ -6659,7 +7285,9 @@
     "maintainer": "ahmedwab",
     "maintainerURL": "https://github.com/ahmedwab",
     "description": "An application that adds and removes any desired modules found on this website.",
-    "issues": []
+    "issues": [
+      "- W - package.json issue: No repository field."
+    ]
   },
   {
     "name": "motiondetector",
@@ -6679,8 +7307,15 @@
     "maintainer": "btastic",
     "maintainerURL": "https://github.com/btastic",
     "description": "Moonraker API integration for Klipper powered 3D printers.",
-    "issues": [
-      "- W - An error occurred while getting information from 'package.json': Error: Invalid name: \"MMM-moonraker\""
+    "issues": [],
+    "tags": [
+      "magic mirror",
+      "smart mirror",
+      "moonraker",
+      "klipper",
+      "mainsail",
+      "fluidd",
+      "module"
     ]
   },
   {
@@ -6701,8 +7336,13 @@
     "maintainer": "PatriceG",
     "maintainerURL": "",
     "description": "Connects multiple touch (capacitive) buttons via a MPR121 touch controller to send notifications to other modules (based on MMM-Buttons)",
-    "issues": [
-      "- W - An error occurred while getting information from 'package.json': Error: Invalid name: \"Magic-Mirror-Module-MPR121\""
+    "issues": [],
+    "tags": [
+      "magic mirror",
+      "smart mirror",
+      "buttons",
+      "touch",
+      "module"
     ]
   },
   {
@@ -6723,8 +7363,10 @@
     "maintainer": "Tom-Hirschberger",
     "maintainerURL": "https://github.com/Tom-Hirschberger",
     "description": "A powerful module that subscribes to MQTT broker and read/send MQTT messages and MM Notifications with a lot of individual setup/rules. Allows you to integrate MM into smart home like Home Assistant. Powerful automation with structured Noti and MQTT dictionaries rules (e.g. one mqtt message could trigger many predefined noti, and one mm-noti could trigger different predefined mqtt messages)",
-    "issues": [
-      "- W - An error occurred while getting information from 'package.json': Error: Invalid name: \"MMM-MQTTbridge\""
+    "issues": [],
+    "tags": [
+      "magicmirror",
+      "mqtt"
     ]
   },
   {
@@ -6750,7 +7392,9 @@
     "maintainerURL": "https://github.com/jupadin",
     "description": "Display received MQTT messages from a MQTT-Broker.",
     "issues": [
-      "- W - An error occurred while getting information from 'package.json': Error: name field must be a string."
+      "- W - package.json issue: No description",
+      "- W - package.json issue: No repository field.",
+      "- W - package.json issue: No license field."
     ]
   },
   {
@@ -6772,7 +7416,8 @@
     "maintainerURL": "",
     "description": "MM Module that publishes notifications with any payload (messages, values, etc) sent via received by ```sendNotification()``` method to specified topics on MQTT Broker(s).",
     "issues": [
-      "- W - An error occurred while getting information from 'package.json': Error: Invalid name: \"MMM-MQTT-Publisher\""
+      "- W - package.json issue: No repository field.",
+      "- W - package.json issue: No license field."
     ]
   },
   {
@@ -6783,7 +7428,8 @@
     "maintainerURL": "",
     "description": "A module that subscribes to topics from MQTT message queues, and displays the sensor results on a floor plan of your house.",
     "issues": [
-      "- W - An error occurred while getting information from 'package.json': Error: Invalid name: \"MMM-MQTTfloorplan\""
+      "- W - package.json issue: No repository field.",
+      "- W - package.json issue: No license field."
     ]
   },
   {
@@ -6902,8 +7548,11 @@
     "maintainer": "ralberth",
     "maintainerURL": "",
     "description": "Run a SQL SELECT against a MySQL database and display the results in an HTML table.",
-    "issues": [
-      "- W - An error occurred while getting information from 'package.json': Error: Invalid name: \"MMM-MysqlQuery\""
+    "issues": [],
+    "tags": [
+      "magicmirror",
+      "module",
+      "mysql"
     ]
   },
   {
@@ -6925,7 +7574,7 @@
     "maintainerURL": "",
     "description": "Module to talk to Arduino two-way via web-socket and ObjectBlocks platform.",
     "issues": [
-      "- W - An error occurred while getting information from 'package.json': Error: Invalid name: \"MagicMirror-Module-Template\""
+      "- W - package.json issue: No repository field."
     ]
   },
   {
@@ -6999,8 +7648,11 @@
     "maintainer": "semox",
     "maintainerURL": "",
     "description": "Uses HC-SR04 sensors to measure distance and display compliments if USER_PRESENCE is detected by MMM-PIR-Sensor and user is near the MagicMirror².",
-    "issues": [
-      "- W - An error occurred while getting information from 'package.json': Error: Invalid name: \"MMM-NearCompliments\""
+    "issues": [],
+    "tags": [
+      "magic mirror",
+      "distance",
+      "modules"
     ]
   },
   {
@@ -7011,7 +7663,9 @@
     "maintainerURL": "",
     "description": "Viewer for Nextcloud Deck app decks",
     "issues": [
-      "- W - An error occurred while getting information from 'package.json': Error: name field must be a string."
+      "- W - package.json issue: No description",
+      "- W - package.json issue: No repository field.",
+      "- W - package.json issue: No license field."
     ]
   },
   {
@@ -7052,8 +7706,14 @@
     "maintainer": "AgP42",
     "maintainerURL": "https://github.com/AgP42",
     "description": "Display live snapshot of Netatmo Presence and Welcome cameras and an events timeline of all your Netatmo Presence cameras.",
-    "issues": [
-      "- W - An error occurred while getting information from 'package.json': Error: Invalid name: \"MMM-Netatmo-Presence\""
+    "issues": [],
+    "tags": [
+      "magic mirror",
+      "smart mirror",
+      "module",
+      "netatmo",
+      "netatmo-presence",
+      "camera"
     ]
   },
   {
@@ -7064,7 +7724,7 @@
     "maintainerURL": "",
     "description": "Netatmo thermostat module.",
     "issues": [
-      "- W - An error occurred while getting information from 'package.json': Error: Invalid name: \"MMM-Netatmo-Thermostat\""
+      "- W - package.json issue: No repository field."
     ]
   },
   {
@@ -7074,8 +7734,11 @@
     "maintainer": "spitzlbergerj",
     "maintainerURL": "https://github.com/spitzlbergerj",
     "description": "Display the status of devices on the network based on their MAC address with nice columnview",
-    "issues": [
-      "- W - An error occurred while getting information from 'package.json': Error: Invalid name: \"MMM-NetworkScanner\""
+    "issues": [],
+    "tags": [
+      "magicmirror",
+      "network",
+      "scanner"
     ]
   },
   {
@@ -7085,7 +7748,9 @@
     "maintainer": "justjim1220",
     "maintainerURL": "",
     "description": "Mod of the default newsfeed module - shows the logo and scrolls the headlines and brief description across the screen like those seen on the news channels.",
-    "issues": []
+    "issues": [
+      "- W - package.json issue: No repository field."
+    ]
   },
   {
     "name": "MMM-NextCloud-Tasks",
@@ -7105,7 +7770,9 @@
     "maintainer": "trizome",
     "maintainerURL": "https://github.com/trizome",
     "description": "Next trains / RER transilien (SNCF) Ile-de-France from a station",
-    "issues": []
+    "issues": [
+      "- W - package.json issue: No repository field."
+    ]
   },
   {
     "name": "MMM-NoteTaker",
@@ -7114,8 +7781,18 @@
     "maintainer": "joanaz",
     "maintainerURL": "",
     "description": "Display your notes stored by Alexa skill [Note Taker](https://github.com/joanaz/AS-NoteTaker).",
-    "issues": [
-      "- W - An error occurred while getting information from 'package.json': Error: Invalid name: \"MagicMirrorModuleNoteTaker\""
+    "issues": [],
+    "tags": [
+      "magic mirror",
+      "smart mirror",
+      "aws lambda",
+      "alexa",
+      "skill",
+      "dynamodb",
+      "notebook",
+      "note taker",
+      "take note",
+      "notes"
     ]
   },
   {
@@ -7125,9 +7802,7 @@
     "maintainer": "choffmann",
     "maintainerURL": "https://github.com/choffmann",
     "description": "Display your Notion database.",
-    "issues": [
-      "- W - An error occurred while getting information from 'package.json': Error: Invalid name: \"MMM-Notion\""
-    ]
+    "issues": []
   },
   {
     "name": "octoprint-module",
@@ -7147,8 +7822,15 @@
     "maintainer": "btastic",
     "maintainerURL": "https://github.com/btastic",
     "description": "Octoprint API integration.",
-    "issues": [
-      "- W - An error occurred while getting information from 'package.json': Error: Invalid name: \"MMM-octoprint\""
+    "issues": [],
+    "tags": [
+      "magic mirror",
+      "smart mirror",
+      "octoprint",
+      "klipper",
+      "mainsail",
+      "fluidd",
+      "module"
     ]
   },
   {
@@ -7208,9 +7890,7 @@
     "maintainer": "hggh",
     "maintainerURL": "",
     "description": "Show OpenHAB Items (label, values) in a list. Also supports touchscreen to toggle Switches or use RollerShutter items.",
-    "issues": [
-      "- W - An error occurred while getting information from 'package.json': Error: Invalid name: \"MMM-OpenHAB-Items\""
-    ]
+    "issues": []
   },
   {
     "name": "MMM-openhabQuickWatch",
@@ -7231,7 +7911,7 @@
     "maintainerURL": "https://github.com/johnny-co",
     "description": "Sprinkler module for displaying OpenSprinkler lawn care station and programs",
     "issues": [
-      "- W - An error occurred while getting information from 'package.json': Error: Failed to parse json\nUnexpected token ']', ...\"dule\",\r\n  ],\r\n  \"aut\"... is not valid JSON while parsing '{\r\n  \"name\": \"Magic-Mirror-Module-OpenSp'"
+      "- W - An error occurred while getting information from 'package.json': SyntaxError: /home/kristjan/Development/MagicMirror 3rd-Party-Module check/modules/MMM-OpenSprinkler-----johnny-co/package.json: Unexpected token ']', ...\"dule\",\r\n  ],\r\n  \"aut\"... is not valid JSON"
     ]
   },
   {
@@ -7314,7 +7994,9 @@
     "maintainer": "mumblebaj",
     "maintainerURL": "https://github.com/mumblebaj",
     "description": "Module to grab the status of your lights from your Hue Bridge with some updated features to display status of lights or groups.",
-    "issues": []
+    "issues": [
+      "- W - package.json issue: No repository field."
+    ]
   },
   {
     "name": "MMM-Plenticore",
@@ -7335,7 +8017,10 @@
     "maintainer": "ronny3050",
     "maintainerURL": "",
     "description": "Displays and alerts mirror users on new phone notifications.",
-    "issues": [],
+    "issues": [
+      "- W - package.json issue: No repository field.",
+      "- W - package.json issue: No license field."
+    ],
     "tags": [
       "phone notification",
       "mirror",
@@ -7372,8 +8057,13 @@
     "maintainer": "MarcLandis",
     "maintainerURL": "",
     "description": "This module can monitor a PIR motion sensor and put your mirror to sleep if nobody uses it.",
-    "issues": [
-      "- W - An error occurred while getting information from 'package.json': Error: Invalid name: \"Magic-Mirror-Module-PIR-Sensor\""
+    "issues": [],
+    "tags": [
+      "magic mirror",
+      "smart mirror",
+      "pir-sensor",
+      "module",
+      "motion"
     ]
   },
   {
@@ -7383,7 +8073,9 @@
     "maintainer": "mboskamp",
     "maintainerURL": "",
     "description": "Another PIR monitoring module that allows you to run custom scripts and integrates MMM-TelegramBot commands. ⚠️ **Module not maintained (GitHub repo has been archived)**",
-    "issues": []
+    "issues": [
+      "- W - package.json issue: No description"
+    ]
   },
   {
     "name": "MMM-Pir",
@@ -7392,8 +8084,11 @@
     "maintainer": "bugsounet",
     "maintainerURL": "",
     "description": "After a configurated time without any user interaction the display will turn off and hide all modules for economy mode.It will wake up with a Pir sensor [Maintained]",
-    "issues": [
-      "- W - An error occurred while getting information from 'package.json': Error: Invalid name: \"MMM-Pir\""
+    "issues": [],
+    "tags": [
+      "magic mirror",
+      "module",
+      "screen"
     ]
   },
   {
@@ -7500,9 +8195,8 @@
     "maintainer": "bureus",
     "maintainerURL": "",
     "description": "Automatically track and trace PostNords letters, parcels and pallets with your phone number or email",
-    "issues": [
-      "- W - An error occurred while getting information from 'package.json': Error: Invalid name: \"MMM-Postnord\""
-    ]
+    "issues": [],
+    "tags": []
   },
   {
     "name": "MMM-Powerwall",
@@ -7511,7 +8205,9 @@
     "maintainer": "MikeBishop",
     "maintainerURL": "",
     "description": "Display status of Tesla Powerwall & Tesla vehicle charging",
-    "issues": []
+    "issues": [
+      "- W - package.json issue: No repository field."
+    ]
   },
   {
     "name": "PresenceMonitor-WiFi",
@@ -7531,8 +8227,11 @@
     "maintainer": "spyder007",
     "maintainerURL": "https://github.com/spyder007",
     "description": "Display Prometheus Alerts.",
-    "issues": [
-      "- W - An error occurred while getting information from 'package.json': Error: Invalid name: \"MMM-PrometheusAlerts\""
+    "issues": [],
+    "tags": [
+      "magicmirror",
+      "module",
+      "scheduler"
     ]
   },
   {
@@ -7698,8 +8397,11 @@
     "maintainer": "relm923",
     "maintainerURL": "",
     "description": "Display status of local Roomba.",
-    "issues": [
-      "- W - An error occurred while getting information from 'package.json': Error: Invalid name: \"MMM-Roomba\""
+    "issues": [],
+    "tags": [
+      "magic mirror",
+      "smart mirror",
+      "roomba"
     ]
   },
   {
@@ -7742,7 +8444,9 @@
     "maintainer": "stefanjacobs",
     "maintainerURL": "https://github.com/stefanjacobs/",
     "description": "Module for displaying data from 1 Shelly PM sensor, forked and modified by [Shelly-HT](https://github.com/Medve01/Shelly-HT)",
-    "issues": []
+    "issues": [
+      "- W - package.json issue: license should be a valid SPDX license expression"
+    ]
   },
   {
     "name": "MMM-TRV-WastePlan",
@@ -7785,7 +8489,7 @@
     "maintainerURL": "https://github.com/Tom-Hirschberger",
     "description": "Screensaver module which shuts the screen off if USER_PRESENCE is not received within specified timeout. Can be used as PIR module in combination with [MMM-GPIO-Notifications](https://github.com/Tom-Hirschberger/MMM-GPIO-Notifications).",
     "issues": [
-      "- W - An error occurred while getting information from 'package.json': Error: Invalid name: \"MMM-Screen-Powersave-Notification\""
+      "- W - package.json issue: No description"
     ]
   },
   {
@@ -7796,7 +8500,7 @@
     "maintainerURL": "https://github.com/ChielChiel",
     "description": "Display your reputation of a StackExchange site (such as StackOverflow).",
     "issues": [
-      "- W - An error occurred while getting information from 'package.json': Error: Invalid name: \"MMM-SE-Reputation\""
+      "- W - package.json issue: No repository field."
     ]
   },
   {
@@ -7806,8 +8510,12 @@
     "maintainer": "Txukie",
     "maintainerURL": "",
     "description": "Takes a Selfie with an official Raspberry Pi Cam and can publish it to Facebook or Twitter. Needs API keys. Integrates nicely with MMM-Assistant (for voice control) and MMM-TelegramBot (for Telegram control).",
-    "issues": [
-      "- W - An error occurred while getting information from 'package.json': Error: Invalid name: \"Magic-Mirror-Module-Selfie\""
+    "issues": [],
+    "tags": [
+      "magic mirror",
+      "smart mirror",
+      "selfie",
+      "module"
     ]
   },
   {
@@ -7829,7 +8537,7 @@
     "maintainerURL": "",
     "description": "Connects to the Seneye Aquarium Monitor API and displays water parameters from the most recent test data",
     "issues": [
-      "- W - An error occurred while getting information from 'package.json': Error: Invalid name: \"MMM-Seneye\""
+      "- W - package.json issue: No repository field."
     ]
   },
   {
@@ -7862,7 +8570,7 @@
     "maintainerURL": "https://github.com/Tom-Hirschberger",
     "description": "A module to send notifications based on messages received via one/multiple serial devices",
     "issues": [
-      "- W - An error occurred while getting information from 'package.json': Error: Invalid name: \"MMM-Serial-Notifications\""
+      "- W - package.json issue: No description"
     ]
   },
   {
@@ -7873,7 +8581,8 @@
     "maintainerURL": "https://github.com/cybex-dev",
     "description": "Displays all Bonjour/Avahi services on your local network in a readable format, also allowing some interaction with the services, works well with [XMMM-Xdg-Open](https://github.com/cybex-dev/MMM-XDG-OPEN)",
     "issues": [
-      "- W - An error occurred while getting information from 'package.json': Error: Invalid name: \"MMM-ServiceViewer\""
+      "- W - package.json issue: No repository field.",
+      "- W - package.json issue: No license field."
     ]
   },
   {
@@ -7894,7 +8603,9 @@
     "maintainer": "mgarrix",
     "maintainerURL": "https://github.com/mgarrix",
     "description": "Module for displaying data from Shelly EM sensor.",
-    "issues": [],
+    "issues": [
+      "- W - package.json issue: No repository field."
+    ],
     "tags": [
       "magic mirror 2",
       "magic mirror",
@@ -7948,8 +8659,12 @@
     "maintainer": "retroflex",
     "maintainerURL": "",
     "description": "Show school lunch menus in Sweden from skolmaten.se.",
-    "issues": [
-      "- W - An error occurred while getting information from 'package.json': Error: Invalid name: \"MMM-Skolmaten\""
+    "issues": [],
+    "tags": [
+      "magic mirror",
+      "skolmat",
+      "skolmaten",
+      "sweden"
     ]
   },
   {
@@ -7959,8 +8674,10 @@
     "maintainer": "Jupter1",
     "maintainerURL": "",
     "description": "Cycles through the newest messages of a Slack channel.",
-    "issues": [
-      "- W - An error occurred while getting information from 'package.json': Error: Invalid name: \"MMM-Slack2\""
+    "issues": [],
+    "tags": [
+      "magicmirror",
+      "slack"
     ]
   },
   {
@@ -7990,8 +8707,13 @@
     "maintainer": "AgP42",
     "maintainerURL": "https://github.com/AgP42",
     "description": "An iFrame module to display web content (including YouTube, IP Cameras, ...). Several rotating URL, autorefresh and remote control of the URL to display, Next/Prev/Play/Stop. [MMM-SmartWebDisplay forum](https://forum.magicmirror.builders/topic/9750/mmm-smartwebdisplay-display-web-contents-including-youtube-on-your-mm)",
-    "issues": [
-      "- W - An error occurred while getting information from 'package.json': Error: Invalid name: \"MMM-SmartWebDisplay\""
+    "issues": [],
+    "tags": [
+      "magic mirror",
+      "smart mirror",
+      "iframe",
+      "notification",
+      "module"
     ]
   },
   {
@@ -8013,7 +8735,7 @@
     "maintainerURL": "https://github.com/st3v0rr",
     "description": "Display live data and statistics from your SolarEdge inverter system. PV and optional battery support.",
     "issues": [
-      "- W - An error occurred while getting information from 'package.json': Error: Invalid name: \"MMM-SolarEdge\""
+      "- W - package.json issue: No repository field."
     ]
   },
   {
@@ -8094,7 +8816,7 @@
     "maintainerURL": "https://github.com/tbouron",
     "description": "Module that displays playing tracks on your Sonos network.",
     "issues": [
-      "- W - An error occurred while getting information from 'package.json': Error: Invalid name: \"MMM-Sonos\""
+      "- W - package.json issue: license should be a valid SPDX license expression"
     ]
   },
   {
@@ -8104,7 +8826,11 @@
     "maintainer": "Snille",
     "maintainerURL": "https://github.com/Snille",
     "description": "A fork of CFenners module with new features. It's used to display informations about the currently playing songs on your Sonos system.",
-    "issues": []
+    "issues": [
+      "- W - package.json issue: No description",
+      "- W - package.json issue: No repository field.",
+      "- W - package.json issue: No license field."
+    ]
   },
   {
     "name": "MMM-StatusPageIo",
@@ -8113,8 +8839,11 @@
     "maintainer": "spyder007",
     "maintainerURL": "https://github.com/spyder007",
     "description": "Display incidents and component status from a StatusPage.io site",
-    "issues": [
-      "- W - An error occurred while getting information from 'package.json': Error: Invalid name: \"MMM-StatusPageIo\""
+    "issues": [],
+    "tags": [
+      "magicmirror",
+      "module",
+      "scheduler"
     ]
   },
   {
@@ -8124,8 +8853,11 @@
     "maintainer": "Klettner",
     "maintainerURL": "https://github.com/Klettner",
     "description": "Display an alert-style timer or stopwatch. Controllable via notifications or the [MM-Remote](https://github.com/Klettner/MM-Remote) android app.",
-    "issues": [
-      "- W - An error occurred while getting information from 'package.json': Error: Invalid name: \"MMM-StopwatchTimer\""
+    "issues": [],
+    "tags": [
+      "magic mirror",
+      "module",
+      "timer"
     ]
   },
   {
@@ -8135,7 +8867,9 @@
     "maintainer": "SkogDev",
     "maintainerURL": "",
     "description": "A shopping list module for users of the StorH app.",
-    "issues": []
+    "issues": [
+      "- W - package.json issue: No repository field."
+    ]
   },
   {
     "name": "MMM-Strava",
@@ -8144,8 +8878,11 @@
     "maintainer": "ianperrin",
     "maintainerURL": "",
     "description": "A module that displays your activity data from [Strava.com](https://www.strava.com).",
-    "issues": [
-      "- W - An error occurred while getting information from 'package.json': Error: Invalid name: \"MMM-Strava\""
+    "issues": [],
+    "tags": [
+      "magic",
+      "mirror",
+      "strava"
     ]
   },
   {
@@ -8176,8 +8913,12 @@
     "maintainer": "mochman",
     "maintainerURL": "",
     "description": "Uses 2 HC-SR04 ultrasonic sensors to determing hand position to produce a \"Swipe Left\", \"Swipe Right\", or \"Press\".",
-    "issues": [
-      "- W - An error occurred while getting information from 'package.json': Error: Invalid name: \"MMM-Swipe\""
+    "issues": [],
+    "tags": [
+      "magic mirror",
+      "hand gestures",
+      "swipe",
+      "modules"
     ]
   },
   {
@@ -8187,8 +8928,12 @@
     "maintainer": "Thlb",
     "maintainerURL": "",
     "description": "Display Synology Download Station tasks.",
-    "issues": [
-      "- W - An error occurred while getting information from 'package.json': Error: Invalid name: \"MMM-synology-ds\""
+    "issues": [],
+    "tags": [
+      "magicmirror",
+      "smart mirror",
+      "synology",
+      "download satation"
     ]
   },
   {
@@ -8199,7 +8944,7 @@
     "maintainerURL": "https://github.com/Tom-Hirschberger",
     "description": "A module to display the Video Streams of cameras connected to your Synology Disc Stations and control their positions",
     "issues": [
-      "- W - An error occurred while getting information from 'package.json': Error: Invalid name: \"MMM-SynologySurveillance\""
+      "- W - package.json issue: No description"
     ]
   },
   {
@@ -8220,8 +8965,12 @@
     "maintainer": "btastic",
     "maintainerURL": "https://github.com/btastic",
     "description": "Shows system stats similar to MMM-SystemStats",
-    "issues": [
-      "- W - An error occurred while getting information from 'package.json': Error: Invalid name: \"MMM-SystemMonitor\""
+    "issues": [],
+    "tags": [
+      "magic mirror",
+      "smart mirror",
+      "systemmonitor",
+      "module"
     ]
   },
   {
@@ -8280,8 +9029,13 @@
     "maintainer": "Thlb",
     "maintainerURL": "",
     "description": "Display DS18B20 sensor's temperature.",
-    "issues": [
-      "- W - An error occurred while getting information from 'package.json': Error: Invalid name: \"MMM-temp-ds18b20\""
+    "issues": [],
+    "tags": [
+      "magicmirror",
+      "smart mirror",
+      "ds18b20",
+      "temperature",
+      "sensor"
     ]
   },
   {
@@ -8303,7 +9057,7 @@
     "maintainerURL": "",
     "description": "View the latest popular things on Thingiverse.",
     "issues": [
-      "- W - An error occurred while getting information from 'package.json': Error: Invalid name: \"MMM-Thingiverse\""
+      "- W - package.json issue: No repository field."
     ]
   },
   {
@@ -8330,7 +9084,9 @@
     "maintainer": "evanhsu",
     "maintainerURL": "",
     "description": "Retrieves school meal menus from the Titan Schools API (family.titank12.com)",
-    "issues": []
+    "issues": [
+      "- W - package.json issue: No repository field."
+    ]
   },
   {
     "name": "MMM-ToDoLive",
@@ -8361,7 +9117,9 @@
     "maintainer": "moejetz",
     "maintainerURL": "",
     "description": "Shows/hides modules and turns on/off hdmi display based on mqtt command.",
-    "issues": [],
+    "issues": [
+      "- W - package.json issue: No repository field."
+    ],
     "tags": [
       "magic",
       "mirror",
@@ -8398,7 +9156,7 @@
     "maintainerURL": "https://github.com/Tom-Hirschberger",
     "description": "A module to add clickable buttons to send notifications or run commands.",
     "issues": [
-      "- W - An error occurred while getting information from 'package.json': Error: Invalid name: \"MMM-TouchButton\""
+      "- W - package.json issue: No description"
     ]
   },
   {
@@ -8430,8 +9188,12 @@
     "maintainer": "Jopyth",
     "maintainerURL": "",
     "description": "This module can show [Trello](https://trello.com/) cards on your mirror.",
-    "issues": [
-      "- W - An error occurred while getting information from 'package.json': Error: Invalid name: \"Magic-Mirror-Module-Trello\""
+    "issues": [],
+    "tags": [
+      "magic mirror",
+      "smart mirror",
+      "trello",
+      "module"
     ]
   },
   {
@@ -8463,8 +9225,12 @@
     "maintainer": "bacherd",
     "maintainerURL": "",
     "description": "Displays UniFi hotspot vouchers.",
-    "issues": [
-      "- W - An error occurred while getting information from 'package.json': Error: Invalid name: \"Magic-Mirror-Module-MMM-UniFi-Voucher\""
+    "issues": [],
+    "tags": [
+      "magic mirror",
+      "smart mirror",
+      "unifi",
+      "module"
     ]
   },
   {
@@ -8500,8 +9266,12 @@
     "maintainer": "MikeBishop",
     "maintainerURL": "",
     "description": "Display monitor data (online/offline detection) from selfhosted <https://github.com/louislam/uptime-kuma>. (Fork of MMM-uptimerobot.)",
-    "issues": [
-      "- W - An error occurred while getting information from 'package.json': Error: Invalid name: \"MMM-uptimekuma\""
+    "issues": [],
+    "tags": [
+      "uptimekuma",
+      "uptime kuma",
+      "uptime",
+      "kuma"
     ]
   },
   {
@@ -8511,7 +9281,10 @@
     "maintainer": "olexs",
     "maintainerURL": "",
     "description": "Publish USER_PRESENCE from PIR or motion detector modules to MQTT, allowing to use the mirror as a smart home presence sensor.",
-    "issues": []
+    "issues": [
+      "- W - package.json issue: No description",
+      "- W - package.json issue: No repository field."
+    ]
   },
   {
     "name": "MMM-VartaESS",
@@ -8538,7 +9311,7 @@
     "maintainerURL": "https://github.com/Tom-Hirschberger",
     "description": "Display the values of messages of notifications. Titles, icons, reformatting and parsing are supported.",
     "issues": [
-      "- W - An error occurred while getting information from 'package.json': Error: Invalid name: \"MMM-ValuesByNotification\""
+      "- W - package.json issue: No description"
     ]
   },
   {
@@ -8549,7 +9322,14 @@
     "maintainerURL": "https://github.com/n-gao",
     "description": "Enables you to display birthdays from a contacts via a vCard.",
     "issues": [
-      "- W - An error occurred while getting information from 'package.json': Error: Invalid name: \"MMM-vCard2Calendar\""
+      "- W - package.json issue: No repository field."
+    ],
+    "tags": [
+      "\"magic",
+      "mirror\"",
+      "\"magic",
+      "mirror",
+      "module\""
     ]
   },
   {
@@ -8593,7 +9373,9 @@
     "maintainerURL": "",
     "description": "Displays energy consumption from Wattvision",
     "issues": [
-      "- W - An error occurred while getting information from 'package.json': Error: Invalid name: \"MMM-Wattvision\""
+      "- W - package.json issue: No description",
+      "- W - package.json issue: No repository field.",
+      "- W - package.json issue: No license field."
     ]
   },
   {
@@ -8603,9 +9385,7 @@
     "maintainer": "hdurdle",
     "maintainerURL": "",
     "description": "Displays next refuse and recycling collections for West Berkshire (UK) houses based on Unique Property Reference Number.",
-    "issues": [
-      "- W - An error occurred while getting information from 'package.json': Error: Invalid name: \"MMM-WestBerksBinDay\""
-    ]
+    "issues": []
   },
   {
     "name": "MMM-WebView",
@@ -8614,8 +9394,13 @@
     "maintainer": "Iketaki",
     "maintainerURL": "https://github.com/Iketaki",
     "description": "Embed any web pages by using a webview instead of an iframe.",
-    "issues": [
-      "- W - An error occurred while getting information from 'package.json': Error: Invalid name: \"MMM-WebView\""
+    "issues": [],
+    "tags": [
+      "magic mirror",
+      "magicmirror",
+      "magicmirror2",
+      "smart mirror",
+      "webview"
     ]
   },
   {
@@ -8659,7 +9444,7 @@
     "maintainerURL": "https://github.com/BKeyport",
     "description": "Fully supported version of worldclock",
     "issues": [
-      "- W - An error occurred while getting information from 'package.json': Error: Invalid name: \"MMM-Worldclock\""
+      "- W - An error occurred while getting information from 'package.json': Error: Invalid version: \"1.5\""
     ]
   },
   {
@@ -8681,7 +9466,8 @@
     "maintainerURL": "https://github.com/cybex-dev",
     "description": "Opens a file, URL, etc using default applications for a particular MIME, all done by using the [Notification Mechanism](https://github.com/michMich/MagicMirror/wiki/notifications)",
     "issues": [
-      "- W - An error occurred while getting information from 'package.json': Error: Invalid name: \"MMM-Xdg-Open\""
+      "- W - package.json issue: No repository field.",
+      "- W - package.json issue: No license field."
     ]
   },
   {
@@ -8691,8 +9477,12 @@
     "maintainer": "mirko3000",
     "maintainerURL": "",
     "description": "Integrate temperature and humidity from your xiaomi smarthome system.",
-    "issues": [
-      "- W - An error occurred while getting information from 'package.json': Error: Invalid name: \"Magic-Mirror-Module-Xiaomi-Smarthome\""
+    "issues": [],
+    "tags": [
+      "magic mirror",
+      "smart mirror",
+      "wunderlist",
+      "module"
     ]
   },
   {
@@ -8736,8 +9526,13 @@
     "maintainer": "doctorfree",
     "maintainerURL": "https://github.com/doctorfree",
     "description": "Embed YouTube videos and playlists using the Electron webview tag rather than an iframe. May assist access to YouTube videos blocked in an iframe.",
-    "issues": [
-      "- W - An error occurred while getting information from 'package.json': Error: Invalid name: \"MMM-YouTubeWebView\""
+    "issues": [],
+    "tags": [
+      "magic mirror",
+      "magicmirror",
+      "magicmirror2",
+      "smart mirror",
+      "webview"
     ]
   },
   {
@@ -8769,8 +9564,12 @@
     "maintainer": "sabo10o29",
     "maintainerURL": "https://github.com/sabo10o29",
     "description": "Shows trash days with simple setup.",
-    "issues": [
-      "- W - An error occurred while getting information from 'package.json': Error: Invalid name: \"MMM-SimpleNotifyTrashDay\""
+    "issues": [],
+    "tags": [
+      "magic mirror",
+      "smart mirror",
+      "trash day",
+      "garbage"
     ]
   },
   {
@@ -8791,7 +9590,10 @@
     "maintainer": "dekinet",
     "maintainerURL": "",
     "description": "Simple display for data from a Growatt solar panel inverter.",
-    "issues": []
+    "issues": [
+      "- W - package.json issue: No description",
+      "- W - package.json issue: No repository field."
+    ]
   },
   {
     "name": "MMM-CoupleDays",
@@ -8844,8 +9646,12 @@
     "maintainer": "GaryLChew",
     "maintainerURL": "https://github.com/GaryLChew",
     "description": "Record daily 1-second-clips and automatically generate a 1-second-a-day video of your life.",
-    "issues": [
-      "- W - An error occurred while getting information from 'package.json': Error: Invalid name: \"Magic-Mirror-Module-1-Second-A-Day\""
+    "issues": [],
+    "tags": [
+      "magic mirror",
+      "smart mirror",
+      "1 second a day",
+      "module"
     ]
   },
   {
@@ -8922,7 +9728,7 @@
     "maintainerURL": "https://github.com/bigfoott",
     "description": "Displays current or upcoming Pokemon GO Events. Event data is scraped from [LeekDuck](https://www.leekduck.com/events/).",
     "issues": [
-      "- W - An error occurred while getting information from 'package.json': Error: Invalid name: \"MMM-PokemonGOEvents\""
+      "- W - package.json issue: No repository field."
     ]
   },
   {
@@ -8944,7 +9750,9 @@
     "maintainerURL": "https://github.com/jupadin",
     "description": "Displays either the daily XKCD comic or a random XKCD comic.",
     "issues": [
-      "- W - An error occurred while getting information from 'package.json': Error: name field must be a string."
+      "- W - package.json issue: No description",
+      "- W - package.json issue: No repository field.",
+      "- W - package.json issue: No license field."
     ]
   },
   {
@@ -8984,7 +9792,9 @@
     "maintainer": "sthuber90",
     "maintainerURL": "",
     "description": "Amazon Photos as background images",
-    "issues": [],
+    "issues": [
+      "- W - package.json issue: No repository field."
+    ],
     "tags": [
       "amazon-photos",
       "magic-mirror"
@@ -9030,8 +9840,10 @@
     "maintainer": "retroflex",
     "maintainerURL": "",
     "description": "Shows stats (level, kills and global rank) for players of Apex Legends.",
-    "issues": [
-      "- W - An error occurred while getting information from 'package.json': Error: Invalid name: \"MMM-ApexLegends\""
+    "issues": [],
+    "tags": [
+      "magic mirror",
+      "apex legends"
     ]
   },
   {
@@ -9140,7 +9952,10 @@
     "maintainer": "darickc",
     "maintainerURL": "",
     "description": "Show fullscreen slideshow in background from images in a local folder. Great for a photo frame.",
-    "issues": []
+    "issues": [
+      "- W - package.json issue: No description",
+      "- W - package.json issue: No repository field."
+    ]
   },
   {
     "name": "BIRTHDAYS",
@@ -9160,8 +9975,10 @@
     "maintainer": "retroflex",
     "maintainerURL": "",
     "description": "Shows stats (level, trophies and victories) for players of mobile game Brawl Stars.",
-    "issues": [
-      "- W - An error occurred while getting information from 'package.json': Error: Invalid name: \"MMM-BrawlStars\""
+    "issues": [],
+    "tags": [
+      "magic mirror",
+      "brawl stars"
     ]
   },
   {
@@ -9241,7 +10058,7 @@
     "maintainerURL": "https://github.com/nout-kleef",
     "description": "Display your chess.com games on your mirror (chess skills optional!)",
     "issues": [
-      "- W - An error occurred while getting information from 'package.json': Error: Invalid name: \"MMM-Chess-Daily\""
+      "- W - package.json issue: No repository field."
     ]
   },
   {
@@ -9448,8 +10265,9 @@
     "maintainerURL": "",
     "description": "Module which shows the latest popular [dribbble](https://dribbble.com/) shots",
     "issues": [
-      "- W - An error occurred while getting information from 'package.json': Error: Invalid name: \"MMM-dribbble\""
-    ]
+      "- W - package.json issue: No description"
+    ],
+    "tags": []
   },
   {
     "name": "MMM-DropboxWallpaper",
@@ -9588,7 +10406,9 @@
     "maintainer": "shin10",
     "maintainerURL": "",
     "description": "This module complements the [MMM-Spotify module](https://github.com/skuethe/MMM-Spotify) and listens for it's song info notifications to automatically fetch the lyrics for the currently playing song. (API key required)",
-    "issues": []
+    "issues": [
+      "- W - package.json issue: No repository field."
+    ]
   },
   {
     "name": "MMM-FF-tenor-gif",
@@ -9641,8 +10461,12 @@
     "maintainer": "njwilliams",
     "maintainerURL": "",
     "description": "Yet Another Facial Recognition system, with admin tooling to make all the AI/ML easy to maintain and supporting hardware acceleration",
-    "issues": [
-      "- W - An error occurred while getting information from 'package.json': Error: Invalid name: \"Magic-Mirror-Module-Faces\""
+    "issues": [],
+    "tags": [
+      "magic mirror",
+      "smart mirror",
+      "facial recognition",
+      "module"
     ]
   },
   {
@@ -9652,8 +10476,12 @@
     "maintainer": "normyx",
     "maintainerURL": "",
     "description": "Modified version of the above PaViRo one that works with OpenCV 3.3+, where training tools is merge in one project and code simplifications.",
-    "issues": [
-      "- W - An error occurred while getting information from 'package.json': Error: Invalid name: \"Magic-Mirror-Module-Facial-Recognition-OCV3\""
+    "issues": [],
+    "tags": [
+      "magic mirror",
+      "smart mirror",
+      "facial recognition",
+      "module"
     ]
   },
   {
@@ -9685,8 +10513,12 @@
     "maintainer": "kapsolas",
     "maintainerURL": "",
     "description": "A module to load last 20 images posted to user's Flickr photostream to mirror and animate them; with the need of an API_KEY",
-    "issues": [
-      "- W - An error occurred while getting information from 'package.json': Error: Invalid name: \"Magic-Mirror-Module-Flickr\""
+    "issues": [],
+    "tags": [
+      "magic mirror",
+      "smart mirror",
+      "flickr",
+      "module"
     ]
   },
   {
@@ -9718,8 +10550,10 @@
     "maintainer": "retroflex",
     "maintainerURL": "",
     "description": "Shows Fortnite players' stats (score, matches played and kills).",
-    "issues": [
-      "- W - An error occurred while getting information from 'package.json': Error: Invalid name: \"MMM-Fortnite\""
+    "issues": [],
+    "tags": [
+      "magic mirror",
+      "fortnite"
     ]
   },
   {
@@ -9749,7 +10583,9 @@
     "maintainer": "LukeSkywalker92",
     "maintainerURL": "",
     "description": "Displays live image of our planet.",
-    "issues": []
+    "issues": [
+      "- W - package.json issue: No description"
+    ]
   },
   {
     "name": "MMM-GoogleDriveSlideShow",
@@ -9767,9 +10603,7 @@
     "maintainer": "hermanho",
     "maintainerURL": "",
     "description": "image gallery or wallpaper with your Google Photos account",
-    "issues": [
-      "- W - An error occurred while getting information from 'package.json': Error: Invalid name: \"MMM-GooglePhotos\""
-    ]
+    "issues": []
   },
   {
     "name": "MMM-GoogleCast",
@@ -9779,7 +10613,13 @@
     "maintainerURL": "",
     "description": "See what's playing in your Google Cast device.",
     "issues": [
-      "- W - An error occurred while getting information from 'package.json': Error: Invalid name: \"Google-Cast\""
+      "- W - package.json issue: license should be a valid SPDX license expression"
+    ],
+    "tags": [
+      "google",
+      "google cast",
+      "multimedia",
+      "connected home"
     ]
   },
   {
@@ -9790,7 +10630,8 @@
     "maintainerURL": "",
     "description": "A module that finds and displays local happy hours",
     "issues": [
-      "- W - An error occurred while getting information from 'package.json': Error: Invalid name: \"MMM-HappyHours\""
+      "- W - package.json issue: No repository field.",
+      "- W - package.json issue: No license field."
     ]
   },
   {
@@ -9866,9 +10707,7 @@
     "maintainer": "2hdlockness",
     "maintainerURL": "https://github.com/2hdlockness",
     "description": "Nice gifs on the theme of \"IronMan\".",
-    "issues": [
-      "- W - An error occurred while getting information from 'package.json': Error: Invalid name: \"MMM-IronManGIF\""
-    ]
+    "issues": []
   },
   {
     "name": "MMM-ISS-Live",
@@ -9900,7 +10739,7 @@
     "maintainerURL": "",
     "description": "Like Mykle1's, but different.",
     "issues": [
-      "- W - An error occurred while getting information from 'package.json': Error: Invalid name: \"Magic-Mirror-Module-ISS\""
+      "- W - An error occurred while getting information from 'package.json': Error: Invalid version: \"1.0\""
     ]
   },
   {
@@ -10000,8 +10839,12 @@
     "maintainer": "kapsolas",
     "maintainerURL": "",
     "description": "A module load the images from a users Instagram feed. The images are displayed on the mirror and animated; it requires an API_KEY",
-    "issues": [
-      "- W - An error occurred while getting information from 'package.json': Error: Invalid name: \"Magic-Mirror-Module-Flickr\""
+    "issues": [],
+    "tags": [
+      "magic mirror",
+      "smart mirror",
+      "traffic",
+      "module"
     ]
   },
   {
@@ -10011,8 +10854,13 @@
     "maintainer": "AlexanderSalter",
     "maintainerURL": "https://github.com/AlexanderSalter/",
     "description": "A module for displaying your Instagram photos and comments. It makes use of the new Facebook Instagram Graph API.",
-    "issues": [
-      "- W - An error occurred while getting information from 'package.json': Error: Invalid name: \"MMM-Instagram2020\""
+    "issues": [],
+    "tags": [
+      "magic mirror",
+      "smart mirror",
+      "instagram",
+      "entertainment",
+      "module"
     ]
   },
   {
@@ -10022,8 +10870,13 @@
     "maintainer": "doctorfree",
     "maintainerURL": "https://github.com/doctorfree/",
     "description": "Display your Instagram photos, videos, multiple media postings, and post description. Makes use of the Facebook Instagram Graph API.",
-    "issues": [
-      "- W - An error occurred while getting information from 'package.json': Error: Invalid name: \"MMM-InstagramView\""
+    "issues": [],
+    "tags": [
+      "magic mirror",
+      "smart mirror",
+      "instagram",
+      "entertainment",
+      "module"
     ]
   },
   {
@@ -10055,8 +10908,12 @@
     "maintainer": "pvyParts",
     "maintainerURL": "",
     "description": "A module to load random jokes from the web.",
-    "issues": [
-      "- W - An error occurred while getting information from 'package.json': Error: Invalid name: \"Magic-Mirror-Module-Jokes\""
+    "issues": [],
+    "tags": [
+      "magic mirror",
+      "smart mirror",
+      "jokes",
+      "module"
     ]
   },
   {
@@ -10087,7 +10944,7 @@
     "maintainerURL": "",
     "description": "Compliment clone - allows to define when (at which hour) the used kudo(compliment) subset will change and you can define further subsets - up to one for each hour.",
     "issues": [
-      "- W - An error occurred while getting information from 'package.json': Error: Invalid name: \"MMM-kudos\""
+      "- W - package.json issue: No repository field."
     ]
   },
   {
@@ -10141,8 +10998,13 @@
     "maintainer": "l3d00m",
     "maintainerURL": "",
     "description": "Display the song you are currently streaming on your [Librespot Java](https://github.com/librespot-org/librespot-java) Spotify Speaker",
-    "issues": [
-      "- W - An error occurred while getting information from 'package.json': Error: Invalid name: \"MMM-LibrespotJava\""
+    "issues": [],
+    "tags": [
+      "magic mirror",
+      "magic mirror 2",
+      "smart mirror",
+      "spotify",
+      "module"
     ]
   },
   {
@@ -10153,7 +11015,7 @@
     "maintainerURL": "",
     "description": "Upcoming events in your city from G**gle.  Could be an update to the \"Eventful API\". Modular so additional event providers can be added.",
     "issues": [
-      "- W - An error occurred while getting information from 'package.json': Error: Invalid name: \"Magic-Mirror-Module-LocalEvents\""
+      "- W - An error occurred while getting information from 'package.json': Error: Invalid version: \"1.0\""
     ]
   },
   {
@@ -10185,8 +11047,11 @@
     "maintainer": "MMRIZE",
     "maintainerURL": "",
     "description": "Module - Lunar date of today (Chinese Zodiac)",
-    "issues": [
-      "- W - An error occurred while getting information from 'package.json': Error: Invalid name: \"MMM-LunarDate\""
+    "issues": [],
+    "tags": [
+      "magic mirror",
+      "module",
+      "lunar date"
     ]
   },
   {
@@ -10207,7 +11072,9 @@
     "maintainer": "Lavve",
     "maintainerURL": "",
     "description": "Shows super heroes on your MagicMirror²!",
-    "issues": []
+    "issues": [
+      "- W - package.json issue: No repository field."
+    ]
   },
   {
     "name": "MMM-MARS",
@@ -10261,7 +11128,7 @@
     "maintainerURL": "",
     "description": "A module for playing music from folder. It's a remade asimhsidd's MMM-MP3Player module.",
     "issues": [
-      "- W - An error occurred while getting information from 'package.json': Error: Invalid name: \"MMM-MP3Player\""
+      "- W - package.json issue: license should be a valid SPDX license expression"
     ]
   },
   {
@@ -10271,7 +11138,10 @@
     "maintainer": "timjong93",
     "maintainerURL": "",
     "description": "Uses MPD to show the state and playlist of your music player.",
-    "issues": []
+    "issues": [
+      "- W - package.json issue: No repository field.",
+      "- W - package.json issue: license should be a valid SPDX license expression"
+    ]
   },
   {
     "name": "MMM-Meniny",
@@ -10291,8 +11161,11 @@
     "maintainer": "ralberth",
     "maintainerURL": "",
     "description": "Player status of Minecraft server",
-    "issues": [
-      "- W - An error occurred while getting information from 'package.json': Error: Invalid name: \"MMM-MinecraftStatus\""
+    "issues": [],
+    "tags": [
+      "magicmirror",
+      "module",
+      "minecraft"
     ]
   },
   {
@@ -10326,7 +11199,9 @@
     "maintainer": "Tueti",
     "maintainerURL": "",
     "description": "Displays the currently airing top movies in theaters around you.",
-    "issues": []
+    "issues": [
+      "- W - package.json issue: No repository field."
+    ]
   },
   {
     "name": "MMM-MplayerRadio",
@@ -10336,7 +11211,7 @@
     "maintainerURL": "https://github.com/Tom-Hirschberger",
     "description": "Play m3u radio streams. Controllable by touch and notification.",
     "issues": [
-      "- W - An error occurred while getting information from 'package.json': Error: Invalid name: \"MMM-MplayerRadio\""
+      "- W - package.json issue: No description"
     ]
   },
   {
@@ -10384,9 +11259,7 @@
     "maintainer": "TheVieiraAkA",
     "maintainerURL": "",
     "description": "A module to display your show's watch progress in a private list in your [trakt.tv](https://trakt.tv) account.",
-    "issues": [
-      "- W - An error occurred while getting information from 'package.json': Error: Invalid name: \"MMM-MyTraktSeries\""
-    ]
+    "issues": []
   },
   {
     "name": "MMM-MyVideoPlayer",
@@ -10432,7 +11305,9 @@
     "maintainerURL": "https://github.com/Menturan",
     "description": "Displays Swedish name of the day.",
     "issues": [
-      "- W - An error occurred while getting information from 'package.json': Error: name field must be a string."
+      "- W - package.json issue: No description",
+      "- W - package.json issue: No repository field.",
+      "- W - package.json issue: No license field."
     ]
   },
   {
@@ -10443,7 +11318,12 @@
     "maintainerURL": "",
     "description": "A module displaying NASA's astronomy picture of the day.",
     "issues": [
-      "- W - An error occurred while getting information from 'package.json': Error: Invalid name: \"MMM-nasaastropic\""
+      "- W - package.json issue: license should be a valid SPDX license expression"
+    ],
+    "tags": [
+      "nasa",
+      "astronomy",
+      "picture of the day"
     ]
   },
   {
@@ -10486,8 +11366,11 @@
     "maintainer": "jesmak",
     "maintainerURL": "https://github.com/jesmak",
     "description": "Display the song you are currently listening to on AIMP.",
-    "issues": [
-      "- W - An error occurred while getting information from 'package.json': Error: Invalid name: \"MMM-NowPlayingOnSpotify\""
+    "issues": [],
+    "tags": [
+      "magic mirror",
+      "module",
+      "aimp"
     ]
   },
   {
@@ -10509,8 +11392,13 @@
     "maintainer": "raywo",
     "maintainerURL": "",
     "description": "Display the song you are currently listening to on Spotify.",
-    "issues": [
-      "- W - An error occurred while getting information from 'package.json': Error: Invalid name: \"MMM-NowPlayingOnSpotify\""
+    "issues": [],
+    "tags": [
+      "magic mirror",
+      "magic mirror 2",
+      "smart mirror",
+      "spotify",
+      "module"
     ]
   },
   {
@@ -10531,7 +11419,9 @@
     "maintainer": "NicholasRasi",
     "maintainerURL": "https://github.com/NicholasRasi/",
     "description": "Displays images from online URLs, useful for showing images from webcams.",
-    "issues": []
+    "issues": [
+      "- W - package.json issue: No repository field."
+    ]
   },
   {
     "name": "MMM-Overwatch",
@@ -10540,8 +11430,10 @@
     "maintainer": "retroflex",
     "maintainerURL": "",
     "description": "Shows stats for Overwatch players.",
-    "issues": [
-      "- W - An error occurred while getting information from 'package.json': Error: Invalid name: \"MMM-Overwatch\""
+    "issues": [],
+    "tags": [
+      "magic mirror",
+      "overwatch"
     ]
   },
   {
@@ -10562,9 +11454,7 @@
     "maintainer": "kaelspencer",
     "maintainerURL": "https://github.com/kaelspencer",
     "description": "Displays a weekly meal menu from the Paprika Recipe Manager app.",
-    "issues": [
-      "- W - An error occurred while getting information from 'package.json': Error: Invalid name: \"MMM-PaprikaMenu\""
-    ]
+    "issues": []
   },
   {
     "name": "MMM-PetFinder",
@@ -10584,7 +11474,11 @@
     "maintainer": "nsieg",
     "maintainerURL": "https://github.com/nsieg",
     "description": "Display photos downloaded from a [Piwigo](https://piwigo.org/) photo library instance",
-    "issues": []
+    "issues": [
+      "- W - package.json issue: No description",
+      "- W - package.json issue: No repository field.",
+      "- W - package.json issue: No license field."
+    ]
   },
   {
     "name": "MMM-PlexNowPlaying",
@@ -10663,7 +11557,9 @@
     "maintainer": "skuethe",
     "maintainerURL": "",
     "description": "A module that will load a random photo from picsum. Originally by diego-vieira, now with support for local paths and NextCloud shares",
-    "issues": []
+    "issues": [
+      "- W - package.json issue: No repository field."
+    ]
   },
   {
     "name": "MMM-RandomYouTubePlayer",
@@ -10694,7 +11590,9 @@
     "maintainer": "kjb085",
     "maintainerURL": "",
     "description": "Displays top level content from Reddit in either headlines or image based display types.",
-    "issues": []
+    "issues": [
+      "- W - package.json issue: No repository field."
+    ]
   },
   {
     "name": "MMM-Reddito",
@@ -10725,8 +11623,11 @@
     "maintainer": "73cirdan",
     "maintainerURL": "",
     "description": "Module for Rijks Museum. This was developed using the Rijksmuseum API.",
-    "issues": [
-      "- W - An error occurred while getting information from 'package.json': Error: Invalid name: \"MMM-Rijks\""
+    "issues": [],
+    "tags": [
+      "magicmirror",
+      "art",
+      "rijksmuseum"
     ]
   },
   {
@@ -10747,8 +11648,10 @@
     "maintainer": "Zeprakadebra",
     "maintainerURL": "",
     "description": "Displays Rocket League Stats.",
-    "issues": [
-      "- W - An error occurred while getting information from 'package.json': Error: Invalid name: \"MMM-RocketLeagueZ\""
+    "issues": [],
+    "tags": [
+      "magic mirror",
+      "rocket league"
     ]
   },
   {
@@ -10785,8 +11688,13 @@
     "maintainer": "ralberth",
     "maintainerURL": "",
     "description": "Run a set of command-line scripts on a cron schedule and display an icon to differentiate",
-    "issues": [
-      "- W - An error occurred while getting information from 'package.json': Error: Invalid name: \"MMM-ScriptSchedule\""
+    "issues": [],
+    "tags": [
+      "magicmirror",
+      "module",
+      "volume",
+      "mute",
+      "cron"
     ]
   },
   {
@@ -10918,7 +11826,10 @@
     "maintainer": "buxxi",
     "maintainerURL": "",
     "description": "Displays time spent on games on Steam for a specific user.",
-    "issues": []
+    "issues": [
+      "- W - package.json issue: No repository field.",
+      "- W - package.json issue: No license field."
+    ]
   },
   {
     "name": "MMM-SunRiseSet",
@@ -10960,8 +11871,12 @@
     "maintainer": "sabo10o29",
     "maintainerURL": "",
     "description": "Shows your TimeTree event.",
-    "issues": [
-      "- W - An error occurred while getting information from 'package.json': Error: Invalid name: \"MMM-TimeTreeEvent\""
+    "issues": [],
+    "tags": [
+      "magic mirror",
+      "smart mirror",
+      "event",
+      "timetree"
     ]
   },
   {
@@ -10971,8 +11886,11 @@
     "maintainer": "JulienPeloton",
     "maintainerURL": "https://github.com/JulienPeloton",
     "description": "Module to display latest new astronomical transients from [TNS](https://wis-tns.weizmann.ac.il/) such as [supernova](https://en.wikipedia.org/wiki/Supernova) candidates.",
-    "issues": [
-      "- W - An error occurred while getting information from 'package.json': Error: Invalid name: \"MMM-tns\""
+    "issues": [],
+    "tags": [
+      "magicmirror",
+      "module",
+      "tns"
     ]
   },
   {
@@ -10982,9 +11900,7 @@
     "maintainer": "Kiina",
     "maintainerURL": "",
     "description": "A module to display your upcoming Shows from your [trakt.tv](https://trakt.tv) account.",
-    "issues": [
-      "- W - An error occurred while getting information from 'package.json': Error: Invalid name: \"MMM-trakt\""
-    ]
+    "issues": []
   },
   {
     "name": "MMM-TvheadendDVR",
@@ -11056,8 +11972,11 @@
     "maintainer": "balassy",
     "maintainerURL": "https://github.com/balassy",
     "description": "Displays Hungarian compliments from [Uvaronc](https://udvaronc.hu).",
-    "issues": [
-      "- W - An error occurred while getting information from 'package.json': Error: Invalid name: \"MMM-Udvaronc\""
+    "issues": [],
+    "tags": [
+      "magicmirror",
+      "module",
+      "udvaronc"
     ]
   },
   {
@@ -11114,7 +12033,7 @@
     "maintainerURL": "",
     "description": "Control volume of MagicMirror²",
     "issues": [
-      "- W - An error occurred while getting information from 'package.json': Error: Invalid name: \"MMM-Volume\""
+      "- W - package.json issue: No description"
     ]
   },
   {
@@ -11134,7 +12053,9 @@
     "maintainerURL": "https://github.com/jupadin",
     "description": "Display images from Unsplash as wallpapers.",
     "issues": [
-      "- W - An error occurred while getting information from 'package.json': Error: name field must be a string."
+      "- W - package.json issue: No description",
+      "- W - package.json issue: No repository field.",
+      "- W - package.json issue: No license field."
     ]
   },
   {
@@ -11166,9 +12087,7 @@
     "maintainer": "choffmann",
     "maintainerURL": "https://github.com/choffmann",
     "description": "Show the subscription from Youtube Channel.",
-    "issues": [
-      "- W - An error occurred while getting information from 'package.json': Error: Invalid name: \"MMM-YT-SubCount\""
-    ]
+    "issues": []
   },
   {
     "name": "MMM-YouTube-Live-Stream",
@@ -11226,8 +12145,12 @@
     "maintainer": "Thlb",
     "maintainerURL": "",
     "description": "Display client list of a Teamspeak3 server.",
-    "issues": [
-      "- W - An error occurred while getting information from 'package.json': Error: Invalid name: \"MMM-teamspeak3\""
+    "issues": [],
+    "tags": [
+      "magicmirror",
+      "smart mirror",
+      "teamspeak",
+      "client list"
     ]
   },
   {
@@ -11281,8 +12204,11 @@
     "maintainer": "salpar",
     "maintainerURL": "",
     "description": "Displays a random quote from various movies, books, and people.",
-    "issues": [
-      "- W - An error occurred while getting information from 'package.json': Error: Invalid name: \"MagicMirror-QuoteCatalog\""
+    "issues": [],
+    "tags": [
+      "magicmirror",
+      "magicmirror²",
+      "quotes"
     ]
   },
   {
@@ -11348,7 +12274,7 @@
     "maintainerURL": "",
     "description": "Display your Twitter feed.",
     "issues": [
-      "- W - An error occurred while getting information from 'package.json': Error: Invalid name: \"twitControl\""
+      "- W - package.json issue: No repository field."
     ]
   },
   {
@@ -11403,7 +12329,7 @@
     "maintainerURL": "https://github.com/jimbydude",
     "description": "This is a fork of Ebens module above. This version can handle multi-user and uses MMM-Face-Reco-DNN to hide/show modules based on user logged in.",
     "issues": [
-      "- W - An error occurred while getting information from 'package.json': Error: Invalid name: \"MMM-Face-Multi-User-Recognition-SMAI\""
+      "- W - package.json issue: No repository field."
     ]
   },
   {
@@ -11467,7 +12393,9 @@
     "maintainer": "0m4r",
     "maintainerURL": "",
     "description": "Live covid19 numbers provided via <https://covid19api.com/>",
-    "issues": [],
+    "issues": [
+      "- W - package.json issue: No license field."
+    ],
     "tags": [
       "mmm",
       "magic-mirror",
@@ -11498,7 +12426,7 @@
     "maintainerURL": "",
     "description": "Displays today's NA \"Just For Today\" Header",
     "issues": [
-      "- W - An error occurred while getting information from 'package.json': Error: Invalid name: \"MMM-JustForTodayMeditation\""
+      "- W - package.json issue: No repository field."
     ]
   },
   {
@@ -11508,9 +12436,8 @@
     "maintainer": "bureus",
     "maintainerURL": "",
     "description": "Keep track of blood glucose levels with ease thru your MagicMirror².",
-    "issues": [
-      "- W - An error occurred while getting information from 'package.json': Error: Invalid name: \"MMM-Nightscout\""
-    ]
+    "issues": [],
+    "tags": []
   },
   {
     "name": "MMM-OneTouchReveal",
@@ -11520,7 +12447,7 @@
     "maintainerURL": "",
     "description": "Keep track of blood glucose levels measured with your LifeScan OneTouch Glucose Meter",
     "issues": [
-      "- W - An error occurred while getting information from 'package.json': Error: Invalid name: \"MMM-OneTouchReveal\""
+      "- W - package.json issue: No repository field."
     ]
   },
   {
@@ -11531,7 +12458,7 @@
     "maintainerURL": "https://github.com/erchenger",
     "description": "Allows you to see last night's sleep data from your Oura sleep tracker. WIP",
     "issues": [
-      "- W - An error occurred while getting information from 'package.json': Error: Invalid name: \"MMM-Oura\""
+      "- W - package.json issue: No repository field."
     ]
   },
   {
@@ -11563,8 +12490,11 @@
     "maintainer": "balharrie",
     "maintainerURL": "",
     "description": "Displays last reading from your Dexcom G6 via the share API",
-    "issues": [
-      "- W - An error occurred while getting information from 'package.json': Error: Invalid name: \"MMM-Dexcom\""
+    "issues": [],
+    "tags": [
+      "magicmirror",
+      "magicmirror2",
+      "dexcom"
     ]
   },
   {
@@ -11678,8 +12608,13 @@
     "maintainer": "retroflex",
     "maintainerURL": "",
     "description": "Shows this week's school timetable from the Swedish school system Skola24.",
-    "issues": [
-      "- W - An error occurred while getting information from 'package.json': Error: Invalid name: \"MMM-Skola24\""
+    "issues": [],
+    "tags": [
+      "magic mirror",
+      "schema",
+      "skolschema",
+      "skola24",
+      "sweden"
     ]
   },
   {
@@ -11689,7 +12624,9 @@
     "maintainer": "thyed",
     "maintainerURL": "",
     "description": "It allows you to display your kids' canceled and irregular lessons for schools using [Untis](https://www.untis.at/) software to organize school's timetables.",
-    "issues": [],
+    "issues": [
+      "- W - package.json issue: No repository field."
+    ],
     "tags": [
       "magicmirror",
       "webuntis"
@@ -11702,7 +12639,9 @@
     "maintainer": "drventure",
     "maintainerURL": "",
     "description": "Displays the WordGenius.com word of the day along with its part of speech, pronunciation, definition, and occasionally, its origin.",
-    "issues": [],
+    "issues": [
+      "- W - package.json issue: No repository field."
+    ],
     "tags": [
       "magicmirror"
     ]
@@ -11740,7 +12679,8 @@
     "maintainerURL": "https://github.com/blighter",
     "description": "This module displays a table of the 5 latest statistics for COVID-19 New Vaccinations as published by the UK Government.",
     "issues": [
-      "- W - An error occurred while getting information from 'package.json': Error: Invalid name: \"MMM-covid19uk-stats\""
+      "- W - package.json issue: No repository field.",
+      "- W - package.json issue: No license field."
     ]
   },
   {
@@ -11750,7 +12690,9 @@
     "maintainer": "CatoAntonsen",
     "maintainerURL": "",
     "description": "Display public transport information for Oslo and Akershus in Norway. Abandoned - see [MMM-Entur-tavle](https://github.com/Arve/MMM-Entur-tavle) instead.",
-    "issues": []
+    "issues": [
+      "- W - package.json issue: No repository field."
+    ]
   },
   {
     "name": "iFrame",
@@ -11759,8 +12701,11 @@
     "maintainer": "desertblade",
     "maintainerURL": "",
     "description": "A simple way to add an iFrame of any web content. Abandoned.",
-    "issues": [
-      "- W - An error occurred while getting information from 'package.json': Error: Invalid name: \"Magic-Mirror-iFrame\""
+    "issues": [],
+    "tags": [
+      "magic mirror",
+      "smart mirror",
+      "iframe"
     ]
   },
   {
@@ -11826,7 +12771,9 @@
     "maintainerURL": "",
     "description": "Display a radar map from DarkSky **°DarkSky API no longer works since 2023-Mar-31**",
     "issues": [
-      "- W - An error occurred while getting information from 'package.json': Error: Invalid name: \"MMM-DarkSkyRadar\""
+      "- W - package.json issue: No description",
+      "- W - package.json issue: No repository field.",
+      "- W - package.json issue: No license field."
     ]
   },
   {
@@ -11856,7 +12803,10 @@
     "maintainer": "mboskamp",
     "maintainerURL": "",
     "description": "This module enables the user to pull updates for modules and/or MagicMirror² itself via Telegram commands. ⚠️ **Module not maintained (GitHub repo has been archived)**",
-    "issues": []
+    "issues": [
+      "- W - package.json issue: No description",
+      "- W - package.json issue: No repository field."
+    ]
   },
   {
     "name": "MMM-vvsDeparture",
