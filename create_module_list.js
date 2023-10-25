@@ -1,5 +1,4 @@
 const fs = require("fs");
-const fsp = require("fs").promises;
 
 async function fetchMarkdownData() {
   try {
@@ -16,17 +15,6 @@ async function fetchMarkdownData() {
   } catch (error) {
     console.error(error);
   }
-}
-
-async function getModuleData(maintainer, name) {
-  console.log(`##### ${name} ${maintainer}`);
-
-  const data = await fsp.readFile(
-    `./modules/${name}-----${maintainer}/package.json`,
-    "utf8"
-  );
-  const json = JSON.parse(data);
-  return json;
 }
 
 async function createModuleList() {
@@ -55,7 +43,7 @@ async function createModuleList() {
           !url.startsWith("https://gitlab.com")
         ) {
           issues.push(
-            `URL: Neither a valid GitHub nor a valid GitLab URL. ${url}`
+            `URL: Neither a valid GitHub nor a valid GitLab URL: ${url}.`
           );
         }
 
@@ -74,31 +62,6 @@ async function createModuleList() {
 
         const description = parts[3];
 
-        let tags = [];
-        let license;
-
-        // Gather Information from package.json
-        try {
-          // eslint-disable-next-line no-await-in-loop
-          const moduleData = await getModuleData(maintainer, name);
-          if (moduleData.keywords) {
-            tags = moduleData.keywords.map((tag) => tag.toLowerCase());
-          }
-          license = moduleData.license;
-        } catch (error) {
-          if (error instanceof SyntaxError) {
-            issues.push("- E - An error occurred parsing 'package.json'.");
-          } else if (error.code === "ENOENT") {
-            issues.push(
-              "- W - There is no 'package.json'. We need this file to gather information about the module."
-            );
-          } else {
-            issues.push(
-              `- E - An error occurred while getting information from 'package.json': ${error}`
-            );
-          }
-        }
-
         const module = {
           name,
           url,
@@ -106,8 +69,6 @@ async function createModuleList() {
           maintainer,
           maintainerURL,
           description,
-          tags,
-          license,
           issues
         };
         modules.push(module);

@@ -6,17 +6,23 @@ You can see the result of the last analysis in [result.md](result.md).
 
 This project is still in a very early stage. Feedback is very welcome.
 
-## create_modules_list.js
+## create_module_list.js
 
-This script parses the list of modules. Then it collects information for each module found from the module's `package.json` (if available). From the collected information it creates a JSON file which can be used later for the module web page and possibly also for `MMM-Remote-Control`.
+This script parses the list of modules from the wiki and writes it to a json file.
 
 ## get_modules.py
 
 This script reads the module list (created by the script before) and clones all modules.
 
+## expand_module_list_with_repo_data.js
+
+This script expands the module list with information from the `package.json` files from the modules (if available).
+
+From the collected information it creates a new JSON file which can be used later for the module web page and possibly also for `MMM-Remote-Control`.
+
 ## check_modules.py
 
-This script goes through all cloned modules and performs various checks. The result is writen to the [result.md](result.md).
+This script goes through all cloned modules and performs various checks. The result is writen to the [result.md](result.md). This script still not extends the modules list.
 
 ### Checks
 
@@ -35,8 +41,8 @@ Note: This list is not entirely up to date. See the code for current status.
 
 ## Ideas / To do
 
+- use images depending if the licence of the module is compatible
 - divide create_modules_list.js into a part that only creates the list and another that do checks after the get_modules.py script
-- Get images module README?
 - Get last commit date from git?
 - Use modules.json for website
 - Filter some keywords: MM, module, MagicMirror, Smart Miror, ...

@@ -42,7 +42,7 @@
   },
   "scripts": {
     "lint": "eslint . && stylelint **/*.css && prettier --check .",
-    "lint:fix": "eslint --fix . && stylelint --fix **/*.css && prettier --write .",
+    "lint:fix": "eslint --fix . && stylelint --fix **/docs/*.css && prettier --write .",
     "prepare": "husky install",
     "test": "npm run lint"
   },
