@@ -49,5 +49,8 @@
   "lint-staged": {
     "*.js": "eslint --cache --fix",
     "*.css": "stylelint --fix"
+  },
+  "dependencies": {
+    "read-package-json": "^7.0.0"
   }
 }
