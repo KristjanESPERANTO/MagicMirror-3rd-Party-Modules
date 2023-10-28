@@ -1,0 +1,92 @@
+[
+  {
+    "name": "MMM-PublicTransportHafas",
+    "image": "https://raw.githubusercontent.com/KristjanESPERANTO/MMM-PublicTransportHafas/main/img/Goerdelerring_all.png",
+    "maintainer": "KristjanESPERANTO",
+    "url": "https://github.com/KristjanESPERANTO/MMM-PublicTransportHafas",
+    "category": "Traffic",
+    "tags": ["schedule", "public transport", "traffic", "hafas"],
+    "text": "This module displays real-time departure times for public transportation.",
+    "description": "Stay informed about the upcoming departures from your local public transit stations."
+  },
+  {
+    "name": "MMM-2Day-NOAA-Forecast",
+    "image": "https://user-images.githubusercontent.com/823222/274599375-09e9bca7-9c45-4f7b-9a73-ad0f742efcde.png",
+    "maintainer": "jinserk",
+    "url": "https://github.com/jinserk/MMM-2Day-NOAA-Forecast",
+    "category": "Weather",
+    "tags": ["weather", "forecast"],
+    "text": "",
+    "description": "Show 4 consecutive 12-hr forecast, provided by NOAA National Weather Service API. No user registration nor API-key required."
+  },
+  {
+    "name": "MMM-NewsFeedTicker",
+    "image": "https://raw.githubusercontent.com/justjim1220/MMM-NewsFeedTicker/master/Screenshot%20(401).png",
+    "maintainer": "justjim1220",
+    "url": "https://github.com/justjim1220/MMM-NewsFeedTicker",
+    "category": "News",
+    "tags": ["news", "events"],
+    "text": "Stay informed about the latest news with this dynamic news ticker module.",
+    "description": "Mod of the default newsfeed module - shows the logo and scrolls the headlines and brief description across the screen like those seen on the news channels."
+  },
+  {
+    "name": "MMM-Autobahn",
+    "image": "https://raw.githubusercontent.com/JockeyDoe/MMM-Autobahn/master/screenshot2.jpg",
+    "maintainer": "JockeyDoe",
+    "url": "https://github.com/JockeyDoe/MMM-Autobahn",
+    "category": "Traffic",
+    "tags": ["traffic"],
+    "text": "",
+    "description": "Traffic warnings for the german Autobahn."
+  },
+  {
+    "name": "MMM-GoogleCalendar",
+    "image": "",
+    "maintainer": "randomBrainstormer",
+    "url": "#",
+    "category": "Information",
+    "tags": ["calendar", "events", "reminders", "sweden"],
+    "text": "",
+    "description": "Get your Google Calendars in the shape of MagicMirror's default calendar."
+  },
+  {
+    "name": "MMM-SingleStock",
+    "image": "https://raw.githubusercontent.com/balassy/MMM-SingleStock/master/doc/screenshot-default.png",
+    "maintainer": "balassy",
+    "url": "https://github.com/balassy/MMM-SingleStock",
+    "category": "Finance",
+    "tags": ["investments"],
+    "text": "",
+    "description": "Displays the stock price of a single company without any fancy animation."
+  },
+  {
+    "name": "MMM-Instagram",
+    "image": "https://raw.githubusercontent.com/github/explore/06c46459e7947c8a25f72798af696d66e202ac39/topics/instagram/instagram.png",
+    "maintainer": "kapsolas",
+    "url": "https://github.com/kapsolas/MMM-Instagram",
+    "category": "Social Media",
+    "tags": ["social media", "feed", "updates"],
+    "text": "",
+    "description": "Stay connected with your social media accounts using this dynamic social media feed module."
+  },
+  {
+    "name": "MMM-GoogleFit",
+    "image": "https://raw.githubusercontent.com/amcolash/MMM-GoogleFit/master/screenshots/normal.png",
+    "maintainer": "fry0815",
+    "url": "https://github.com/fry0815/MMM-GoogleFit",
+    "category": "Health",
+    "tags": ["fitness"],
+    "text": "",
+    "description": "Display google fit daily step count and weights."
+  },
+  {
+    "name": "MMM-CrisisInformationSweden",
+    "image": "https://raw.githubusercontent.com/boghammar/MMM-CrisisInformationSweden/master/docs/ScreenShot2.PNG",
+    "maintainer": "boghammar",
+    "url": "https://github.com/boghammar/MMM-CrisisInformationSweden",
+    "category": "Information",
+    "tags": ["crisis", "sweden"],
+    "text": "",
+    "description": "News feed from the Swedish Government Crisis Information (Krisinformation.se)."
+  }
+]

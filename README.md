@@ -42,6 +42,7 @@ Note: This list is not entirely up to date. See the code for current status.
 ## Ideas / To do
 
 - use images depending if the licence of the module is compatible
+- create thumbnails
 - divide create_modules_list.js into a part that only creates the list and another that do checks after the get_modules.py script
 - Get last commit date from git?
 - Use modules.json for website

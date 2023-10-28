@@ -34,7 +34,24 @@ async function addInformationFromPackageJson(moduleList) {
       }
 
       if (moduleData && moduleData.keywords) {
-        module.tags = moduleData.keywords.map((tag) => tag.toLowerCase());
+        const tagsToRemove = [
+          "2",
+          "magic",
+          "magicmirror",
+          "magicmirror2",
+          "magic mirror",
+          "magic mirror 2",
+          "mirror",
+          "mmm",
+          "module",
+          "nodejs",
+          "smart",
+          "smart mirror"
+        ];
+
+        module.tags = moduleData.keywords
+          .map((tag) => tag.toLowerCase())
+          .filter((tag) => !tagsToRemove.includes(tag));
       }
       if (module.license) {
         module.license = moduleData.license;

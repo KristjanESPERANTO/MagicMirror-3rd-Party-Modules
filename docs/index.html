@@ -8,25 +8,18 @@
   </head>
   <body>
     <header>
-      <div>
+        <div id="repo-link"><a href="https://github.com/KristjanESPERANTO/MagicMirror-3rd-Party-Module-check" target="_blank">GitHub</a></div>
         <h1>MagicMirror² 3rd Party Modules</h1>
         <input type="text" id="search-input" placeholder="Search..." />
+        <div id="container">
+          <div id="card-count">
+            Modules shown: <span id="card-count-value">0</span>
+          </div>
+          <button id="show-all-button" style="display: none;">Reset</button>
+        </div>
         <div id="tag-buttons"></div>
-        <div id="card-count">
-          Module quantity: <span id="card-count-value">0</span>
-        </div>
-      </div>
     </header>
-
-    <div class="container">
-      <aside>
-        <div class="container">
-          <div id="hamburger-icon">&#9776;</div>
-          <div id="filter-menu"></div>
-        </div>
-      </aside>
-      <main id="card-container"></main>
-    </div>
+    <main id="card-container"></main>
     <script src="script.js"></script>
   </body>
 </html>

@@ -1,224 +1,164 @@
-document.addEventListener("DOMContentLoaded", () => {
-  const apiUrl = "modules.json";
-  const filterMenu = document.getElementById("filter-menu");
-  const cardContainer = document.getElementById("card-container");
-  const hamburgerIcon = document.getElementById("hamburger-icon");
-  const searchInput = document.getElementById("search-input");
-  const tagButtonContainer = document.getElementById("tag-buttons");
+let allData = [];
+const showAllButton = document.getElementById("show-all-button");
+const cardContainer = document.getElementById("card-container");
+const searchInput = document.getElementById("search-input");
+const tagButtonContainer = document.getElementById("tag-buttons");
 
-  function displayCards(cards) {
-    cardContainer.innerHTML = "";
+function displayCards(cards) {
+  cardContainer.innerHTML = "";
 
-    const cardCountValue = cards.length;
-    const cardCountElement = document.getElementById("card-count-value");
-    cardCountElement.textContent = cardCountValue;
+  const cardCountValue = cards.length;
+  const cardCountElement = document.getElementById("card-count-value");
+  cardCountElement.textContent = `${cardCountValue} of ${allData.length}`;
 
-    cards.forEach((cardData) => {
-      const card = document.createElement("div");
-      card.className = "card";
-      card.innerHTML = `
-              <div class="card-header"><a href="${
-                cardData.url
-              }" target="_blank">${cardData.name}</a></div>
+  cards.forEach((cardData) => {
+    const card = document.createElement("div");
+    card.className = "card";
+    card.innerHTML = `
+              <div class="card-header"><a href="${cardData.url}" target="_blank">${cardData.name}</a></div>
               <img src="${cardData.image}" alt="Image">
-              <p>Category: ${cardData.category}</p>
-              <p>Tags: ${cardData.tags.map((tag) => `#${tag}`).join(" ")}</p>
-              <p>Text: ${cardData.text}</p>
-              <p>Description: ${cardData.description}</p>
-              <p>Maintainer: ${cardData.maintainer}</p>
             `;
-
-      cardContainer.appendChild(card);
-    });
-
-    // Add an event listener for clicks on the cards
-    cardContainer.addEventListener("click", (event) => {
-      // Check if the clicked element is a card
-      const clickedCard = event.target.closest(".card");
-      if (clickedCard) {
-        // Remove the "selected" class from all cards
-        const allCards = document.querySelectorAll(".card");
-        allCards.forEach((c) => c.classList.remove("selected"));
-
-        // Mark the selected card
-        clickedCard.classList.add("selected");
-      }
-    });
-  }
-
-  function displayFilterMenu(categories) {
-    filterMenu.innerHTML = "";
-    categories.sort();
-    const categoryList = document.createElement("div");
-
-    // Add the "Show All" entry
-    const allCategoryItem = document.createElement("div");
-    allCategoryItem.className = "menu-item";
-    allCategoryItem.innerHTML = `<a href="#" data-category="all">Show All</a>`;
-    categoryList.appendChild(allCategoryItem);
-
-    // Add the remaining categories
-    categories.forEach((category) => {
-      const listItem = document.createElement("div");
-      listItem.className = "menu-item";
-      listItem.innerHTML = `<a href="#" data-category="${category}">${category}</a>`;
-      categoryList.appendChild(listItem);
-    });
-
-    filterMenu.appendChild(categoryList);
-  }
-
-  function displayTagButtonContainer(tags) {
-    tagButtonContainer.innerHTML = "";
-
-    const sortedTags = tags.sort();
-
-    sortedTags.forEach((tag) => {
-      const button = document.createElement("a");
-      button.className = "tag-button";
-      button.setAttribute("data-tag", tag);
-      button.textContent = `#${tag}`;
-      tagButtonContainer.appendChild(button);
-    });
-  }
-
-  function updateDisplay(categoryFilter, searchText) {
-    fetch(apiUrl)
-      .then((response) => response.json())
-      .then((data) => {
-        let filteredCards = data;
-
-        if (categoryFilter && categoryFilter !== "all") {
-          filteredCards = filteredCards.filter(
-            (card) => card.category === categoryFilter
-          );
-        }
-
-        if (searchText) {
-          const searchLower = searchText.toLowerCase();
-          filteredCards = filteredCards.filter(
-            (card) =>
-              card.text.toLowerCase().includes(searchLower) ||
-              card.description.toLowerCase().includes(searchLower) ||
-              card.name.toLowerCase().includes(searchLower) ||
-              card.tags.some((tag) => tag.toLowerCase().includes(searchLower))
-          );
-        }
-
-        displayCards(filteredCards);
-
-        // Remove the "selected" class from all categories, tags, and cards
-        const allURLs = document.querySelectorAll(
-          ".menu-item a, .tag-button, .card"
-        );
-        allURLs.forEach((url) => url.classList.remove("selected"));
-
-        if (categoryFilter !== null || searchText) {
-          // filterMenu.style.display = "none";
-        } else {
-          filterMenu.style.display = "block";
-          const categories = [...new Set(data.map((card) => card.category))];
-          displayFilterMenu(categories);
-
-          const allTags = data.reduce(
-            (acc, card) => [...acc, ...card.tags],
-            []
-          );
-          const uniqueTags = [...new Set(allTags)];
-          displayTagButtonContainer(uniqueTags);
-        }
-
-        // Empty the search field if "Show All" is selected
-        if (categoryFilter === "all") {
-          searchInput.value = "";
-        }
-
-        // Mark the selected menu entry
-        const selectedURL = document.querySelector(
-          `.menu-item a[data-category="${categoryFilter}"]`
-        );
-        if (selectedURL) {
-          selectedURL.classList.add("selected");
-        }
-      })
-      .catch((error) => console.error("Error fetching data:", error));
-  }
-
-  function filterByTag(tag) {
-    fetch(apiUrl)
-      .then((response) => response.json())
-      .then((data) => {
-        const filteredCards = data.filter((card) => card.tags.includes(tag));
-        displayCards(filteredCards);
-
-        // Remove the "selected" class from all categories, tags, and cards
-        const allURLs = document.querySelectorAll(
-          ".menu-item a, .tag-button, .card"
-        );
-        allURLs.forEach((url) => url.classList.remove("selected"));
-
-        // Mark the selected tag
-        const selectedURL = document.querySelector(
-          `.tag-button[data-tag="${tag}"]`
-        );
-        if (selectedURL) {
-          selectedURL.classList.add("selected");
-        }
-      })
-      .catch((error) => console.error("Error fetching data:", error));
-  }
-
-  function removeAllSelected() {
-    // Remove the "selected" class from all categories, tags, and cards
-    const allURLs = document.querySelectorAll(
-      ".menu-item a, .tag-button, .card"
-    );
-    allURLs.forEach((url) => url.classList.remove("selected"));
-  }
-
-  // Event listener for clicks outside of categories, tags, and cards
-  document.addEventListener("click", (event) => {
-    const isMenuClick = event.target.closest("#filter-menu");
-    const isCardClick = event.target.closest("#card-container");
-    const isTagClick = event.target.closest("#tag-buttons");
-
-    if (!isMenuClick && !isCardClick && !isTagClick) {
-      removeAllSelected();
+    card.innerHTML += `
+        <p>${cardData.description}</p>
+        <p><b>Maintainer:</b> ${cardData.maintainer}</p>
+        `;
+    if (cardData.tags) {
+      card.innerHTML += `
+                <p><b>Tags:</b> ${cardData.tags
+                  .map((tag) => `#${tag}`)
+                  .join(" ")}</p>
+              `;
     }
+    cardContainer.appendChild(card);
   });
 
-  hamburgerIcon.addEventListener("click", () => {
-    filterMenu.style.display =
-      filterMenu.style.display === "block" ? "none" : "block";
-  });
+  // Add an event listener for clicks on the cards
+  cardContainer.addEventListener("click", (event) => {
+    // Check if the clicked element is a card
+    const clickedCard = event.target.closest(".card");
+    if (clickedCard) {
+      // Remove the "selected" class from all cards
+      const allCards = document.querySelectorAll(".card");
+      allCards.forEach((card) => card.classList.remove("selected"));
 
-  filterMenu.addEventListener("click", (event) => {
-    if (event.target.tagName === "A") {
-      const category = event.target.getAttribute("data-category");
-
-      if (category === "all") {
-        // If "Show All" is selected, empty the search field
-        searchInput.value = "";
-      }
-
-      // Otherwise, update the display
-      updateDisplay(category, searchInput.value);
+      // Mark the selected card
+      clickedCard.classList.add("selected");
     }
   });
+}
 
-  tagButtonContainer.addEventListener("click", (event) => {
-    if (event.target.tagName === "A") {
-      const tag = event.target.getAttribute("data-tag");
+function displayTagButtonContainer() {
+  const tags = [
+    "news",
+    "public transport",
+    "soccer",
+    "stock",
+    "traffic",
+    "voice control",
+    "weather"
+  ];
+  tagButtonContainer.innerHTML = "";
 
-      // Otherwise, update the display
-      filterByTag(tag);
-    }
+  const sortedTags = tags.sort();
+
+  sortedTags.forEach((tag) => {
+    const button = document.createElement("a");
+    button.className = "tag-button";
+    button.setAttribute("data-tag", tag);
+    button.textContent = `#${tag}`;
+    tagButtonContainer.appendChild(button);
+  });
+}
+
+function removeAllSelected() {
+  // Remove the "selected" class from all tag buttons and cards
+  const allURLs = document.querySelectorAll(".tag-button, .card");
+  allURLs.forEach((url) => url.classList.remove("selected"));
+}
+
+function updateDisplay(searchText) {
+  let filteredCards = allData;
+
+  if (typeof searchText === "string") {
+    const searchLower = searchText.toLowerCase();
+    filteredCards = filteredCards.filter((card) => {
+      const cardText = card.text ? card.text.toLowerCase() : "";
+      const cardDescription = card.description
+        ? card.description.toLowerCase()
+        : "";
+      const cardName = card.name ? card.name.toLowerCase() : "";
+      const cardTags = card.tags ? card.tags : [];
+
+      return (
+        cardText.includes(searchLower) ||
+        cardDescription.includes(searchLower) ||
+        cardName.includes(searchLower) ||
+        cardTags.some((tag) => tag.toLowerCase().includes(searchLower))
+      );
+    });
+
+    // Show showAllButton
+    showAllButton.style.display = "block";
+  } else {
+    // Empty the search field
     searchInput.value = "";
-  });
 
-  searchInput.addEventListener("input", () => {
-    updateDisplay(null, searchInput.value);
-  });
+    // Hide showAllButton
+    showAllButton.style.display = "none";
+  }
 
-  updateDisplay(null, null);
+  removeAllSelected();
+  displayCards(filteredCards);
+  displayTagButtonContainer();
+}
+
+function filterByTag(tag) {
+  const data = allData;
+  const filteredCards = data.filter((card) => {
+    const tags = card.tags;
+    if (tags) {
+      return tags.includes(tag);
+    }
+    return false;
+  });
+  displayCards(filteredCards);
+
+  removeAllSelected();
+
+  // Mark the selected tag
+  const selectedURL = document.querySelector(`.tag-button[data-tag="${tag}"]`);
+  if (selectedURL) {
+    selectedURL.classList.add("selected");
+  }
+
+  // Show showAllButton
+  showAllButton.style.display = "block";
+}
+
+showAllButton.addEventListener("click", updateDisplay);
+
+tagButtonContainer.addEventListener("click", (event) => {
+  if (event.target.tagName === "A") {
+    const tag = event.target.getAttribute("data-tag");
+    filterByTag(tag);
+    searchInput.value = "";
+  }
 });
+
+searchInput.addEventListener("input", () => {
+  updateDisplay(searchInput.value);
+});
+
+async function initiate() {
+  const apiUrl = "modules.json";
+  try {
+    const response = await fetch(apiUrl);
+    const data = await response.json();
+    allData = data;
+    updateDisplay();
+  } catch (error) {
+    console.error("Error fetching data:", error);
+  }
+}
+
+initiate();

@@ -1,62 +1,80 @@
+:root {
+  --color-text: #ddd;
+  --color-text-dimmed: #666;
+  --color-text-bright: #fff;
+  --color-background: #f9f9f9;
+  --color-background-header: #222;
+  --color-buttons: #555;
+  --font-primary: "Roboto Condensed";
+  --font-secondary: "Roboto";
+  --font-size: 16px;
+  --font-size-xsmall: 0.75rem;
+  --font-size-small: 1rem;
+  --font-size-medium: 1.5rem;
+  --font-size-large: 3.25rem;
+  --font-size-xlarge: 3.75rem;
+}
+
 body {
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   margin: 0;
-  padding: 0;
-  display: flex;
-  flex-direction: column;
-  background-color: #f9f9f9;
+  font-size: var(--font-size);
+  font-family: var(--font-primary), sans-serif;
+  font-weight: 400;
+  line-height: 1.5;
 }
 
 header {
-  background-color: #333;
-  color: #fff;
+  background: var(--color-background);
+  font-family: var(--font-primary), Arial, Helvetica, sans-serif;
+  color: var(--color-text);
   padding: 1em;
+  margin-bottom: 10px;
+  background-color: var(--color-background-header);
   text-align: center;
 }
 
-.container {
+#container {
   display: flex;
-  margin: 1em;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
-aside {
+#container > div {
+  align-self: center;
+}
+
+#show-all-button {
+  color: var(--color-text);
+  cursor: pointer;
+  background-color: var(--color-buttons);
   border-radius: 5px;
-  box-shadow: 0 0 10px rgb(0 0 0 / 10%);
-  position: fixed;
-  margin: auto;
+  transition: background-color 0.3s ease-in-out;
+  padding: 0.5em;
+  margin-left: 1em;
 }
 
-@media screen and (width <= 768px) {
-  main {
-    margin-top: auto;
-    margin-left: auto !important;
-  }
-
-  .container {
-    display: grid;
-    margin: 1em;
-  }
-
-  #filter-menu {
-    display: none;
-  }
-
-  #hamburger-icon {
-    display: block !important;
-  }
+#tag-buttons {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .tag-button {
-  font-size: small;
-  color: #eee;
-  background-color: #6b6b6b;
-  padding: 0.3em 0.5em;
-  margin: 0.25em;
+  min-height: 1.5em;
+  margin: 0.3em 0.3em 0 0;
+  padding: 0.1em 0.3em;
+  text-align: center;
+  color: var(--color-text);
+  background-color: var(--color-buttons);
+  cursor: pointer;
   border-radius: 5px;
-  display: inline-block;
   transition: background-color 0.3s ease-in-out;
+  align-self: center;
 }
 
+#show-all-button:hover,
 .tag-button:hover {
   background-color: #2276c588;
 }
@@ -64,35 +82,43 @@ aside {
 #search-input {
   padding: 0.5em;
   margin-bottom: 1em;
-  border: 1px solid #ddd;
+  border: 1px solid #888;
   border-radius: 5px;
+  background-color: #eee;
 }
 
 .card-header {
-  font-size: larger;
+  font-size: var(--font-size-medium);
   text-align: center;
   margin-bottom: 1em;
+  border-bottom: 1px solid var(--color-text-dimmed);
 }
 
 .card-header a {
   text-decoration: none;
+  color: #16367d;
+}
+
+.card-header a::after {
+  padding-left: 0.3em;
+  font-size: var(--font-size-small);
+  content: "🔗";
 }
 
 main {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  padding: 1em;
-  margin-left: 250px;
+  padding: 2em;
 }
 
 .card {
-  background-color: #b2c4c984;
+  flex: 0.43 1 20%;
+  background-color: #d4dde0;
   border: 1px solid #ddd;
   border-radius: 8px;
   margin: 0.5em;
   padding: 1em;
-  width: 300px;
   box-shadow: 0 4px 8px rgb(0 0 0 / 10%);
   transition: transform 0.3s ease-in-out;
   overflow: hidden;
@@ -109,99 +135,49 @@ main {
 }
 
 .selected {
-  background-color: #2276c5;
-  color: #fff;
+  background-color: #04246888 !important;
 }
 
-#filter-menu {
-  padding: 0;
-  background-color: #6b6b6b;
-}
-
-#hamburger-icon {
-  display: none;
-  cursor: pointer;
-}
-
-.menu-item a {
-  margin: 0.25em;
-  display: block;
-  padding: 0.25em 0.5em;
+#repo-link,
+#repo-link a {
+  text-align: right;
   text-decoration: none;
-  color: #fff;
-  border-radius: 5px;
-  transition: background-color 0.3s ease-in-out;
-}
-
-.menu-item a:hover {
-  background-color: #2276c588;
+  color: #999;
 }
 
 /* Give some tags an emoji */
-
 [data-tag]::before {
-  padding-right: 0.5em;
+  padding-right: 0.3em;
 }
 
-[data-category]::before {
-  padding-right: 0.5em;
-  content: "🗋";
+[data-tag="soccer"]::before {
+  content: "⚽";
 }
 
-[data-category="all"]::before {
-  content: "🗺️";
+[data-tag="stock"]::before {
+  content: "🗠";
 }
 
-[data-tag="health"]::before,
-[data-category="Health"]::before {
-  content: "🍏";
-}
-
-[data-tag="finance"]::before,
-[data-category="Finance"]::before {
-  content: "💰";
-}
-
-[data-tag="information"]::before,
-[data-category="Information"]::before {
-  content: "ℹ️";
-}
-
-[data-tag="news"]::before,
-[data-category="News"]::before {
+[data-tag="news"]::before {
   content: "📰";
 }
 
-[data-tag="public transport"]::before,
-[data-category="Public Transport"]::before {
+[data-tag="public transport"]::before {
   content: "🚍";
 }
 
-[data-tag="social media"]::before,
-[data-category="Social Media"]::before {
+[data-tag="social media"]::before {
   content: "📱";
 }
 
-[data-tag="traffic"]::before,
-[data-category="Traffic"]::before {
+[data-tag="traffic"]::before {
   content: "⛕";
 }
 
-[data-tag="weather"]::before,
-[data-category="Weather"]::before {
-  content: "☁️";
+[data-tag="voice control"]::before {
+  content: "🎤";
 }
 
-/* Highlight important tags */
-[data-tag="entertainment"],
-[data-tag="finance"],
-[data-tag="health"],
-[data-tag="news"],
-[data-tag="public transport"],
-[data-tag="religion"],
-[data-tag="sports"],
-[data-tag="voice control"],
-[data-tag="weather"] {
-  font-weight: bold;
-  font-size: large;
+[data-tag="weather"]::before {
+  content: "☁️";
 }

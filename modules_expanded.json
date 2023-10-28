@@ -41,15 +41,11 @@
     "description": "A module that flickers the whole screen to prevent a burn-in effect on your display.",
     "issues": [],
     "tags": [
-      "magic",
-      "mirror",
-      "2",
       "lcd",
       "amoled",
       "burn-in",
       "burn",
-      "screensaver",
-      "module"
+      "screensaver"
     ]
   },
   {
@@ -72,10 +68,7 @@
     "description": "More complicated, but also more powerful: multiple buttons, configurable notifications, different actions on short and long press.",
     "issues": [],
     "tags": [
-      "magic mirror",
-      "smart mirror",
-      "buttons",
-      "module"
+      "buttons"
     ]
   },
   {
@@ -87,8 +80,6 @@
     "description": "Rotate modules, to save space on screen.",
     "issues": [],
     "tags": [
-      "magic",
-      "mirror",
       "carousel",
       "navigation",
       "move",
@@ -166,11 +157,7 @@
     "tags": [
       "flick",
       "board",
-      "python",
-      "magic",
-      "mirror",
-      "magicmirror",
-      "nodejs"
+      "python"
     ]
   },
   {
@@ -182,11 +169,8 @@
     "description": "allows gesture control of compliments (only show when stepping in front of mirror), newsfeed (wave left / right, up for full-screen) and pages with two types of infrared sensors. Gestures can be up, down, left, right, far and close movements of the hand in front of a gesture sensor (APDS-9960) and present and away gestures in front of an IR distance sensor (GP2Y0A21YK)",
     "issues": [],
     "tags": [
-      "magic mirror",
-      "smart mirror",
       "gesture",
-      "gestures",
-      "module"
+      "gestures"
     ]
   },
   {
@@ -242,8 +226,6 @@
     "description": "detecting 3D gesture with GroveGesture Sensor(PAJ7620u2)",
     "issues": [],
     "tags": [
-      "magic mirror",
-      "module",
       "grove gesture",
       "gesture",
       "paj7620u2"
@@ -302,7 +284,6 @@
     "description": "More details and customization for MM's Node.js console logs.",
     "issues": [],
     "tags": [
-      "magicmirror",
       "logging",
       "logs"
     ]
@@ -316,8 +297,6 @@
     "description": "Render markdown files on your MagicMirror².",
     "issues": [],
     "tags": [
-      "magicmirror",
-      "module",
       "markdown",
       "productivity"
     ]
@@ -331,7 +310,6 @@
     "description": "On running-time monkey patch for other module",
     "issues": [],
     "tags": [
-      "magicmirror",
       "monkeypatch"
     ]
   },
@@ -344,8 +322,6 @@
     "description": "Create schedules to control when other modules are shown, hidden or dimmed and to send notifications to other modules.",
     "issues": [],
     "tags": [
-      "magicmirror",
-      "module",
       "scheduler"
     ]
   },
@@ -358,8 +334,6 @@
     "description": "Shows or hides other modules when a momentary push button is pressed. Useful for development and maintenance after the module is deployed.",
     "issues": [],
     "tags": [
-      "magicmirror",
-      "module",
       "button",
       "raspberry"
     ]
@@ -395,9 +369,6 @@
     "description": "Display a solid wifi logo as network signal based on ping speed.",
     "issues": [],
     "tags": [
-      "mmm",
-      "magicmirror",
-      "magicmirror2",
       "network"
     ]
   },
@@ -421,7 +392,6 @@
     "description": "Simple On-Screen Menu for controlling the MagicMirror²",
     "issues": [],
     "tags": [
-      "magicmirror",
       "menu",
       "remote control",
       "on-screen menu"
@@ -448,9 +418,7 @@
     "issues": [],
     "tags": [
       "pages",
-      "module",
-      "screencast",
-      "magicmirror"
+      "screencast"
     ]
   },
   {
@@ -539,9 +507,6 @@
     "description": "Cleanly shutdown (or reboot) your mirror, edit which modules are shown on your mirror and turn your monitor off and on from a simple website, i.e. from your smartphone.",
     "issues": [],
     "tags": [
-      "magic mirror",
-      "smart mirror",
-      "module",
       "remote control",
       "control"
     ]
@@ -566,7 +531,6 @@
     "description": "Module to change screen scenes by time and order with ANIMATION EFFECT.",
     "issues": [],
     "tags": [
-      "magicmirror",
       "mm",
       "paging",
       "animation"
@@ -669,8 +633,6 @@
     "description": "Module for displaying stock price with Alphavantage API.",
     "issues": [],
     "tags": [
-      "magic mirror",
-      "module",
       "stock",
       "alphavantage"
     ]
@@ -728,11 +690,7 @@
     "description": "Display your Bitcoin Coinbase balance.",
     "issues": [],
     "tags": [
-      "magic",
-      "mirror",
       "coinbase",
-      "module",
-      "mmm",
       "mmm-magic-mirror"
     ]
   },
@@ -745,10 +703,6 @@
     "description": "Display cryptocurrency information from the Coin Market Cap website.  Ticker Price, Logos, Sparkline Graphs, etc...",
     "issues": [],
     "tags": [
-      "smart mirror",
-      "magicmirror",
-      "mirror",
-      "module",
       "crypto currency",
       "coinmarketcap",
       "bitcoin"
@@ -869,11 +823,8 @@
     "description": "Display current electrical spot prices in northen europe (also works in Germany)",
     "issues": [],
     "tags": [
-      "magic mirror",
-      "smart mirror",
       "eon",
       "electricity",
-      "module",
       "motion"
     ]
   },
@@ -908,8 +859,6 @@
     "description": "Displays the stock price of a single company without any fancy animation.",
     "issues": [],
     "tags": [
-      "magicmirror",
-      "module",
       "stock"
     ]
   },
@@ -934,10 +883,7 @@
     "issues": [],
     "tags": [
       "stock",
-      "stocks",
-      "magic",
-      "mirror",
-      "module"
+      "stocks"
     ]
   },
   {
@@ -1016,7 +962,6 @@
     "description": "News feed from the **Swedish** Government Crisis Information (Krisinformation.se).",
     "issues": [],
     "tags": [
-      "magicmirror",
       "crisis"
     ]
   },
@@ -1120,7 +1065,6 @@
     "description": "Get your Google Calendars in the shape of MagicMirror's default calendar.",
     "issues": [],
     "tags": [
-      "magicmirror",
       "google",
       "calendar"
     ]
@@ -1145,7 +1089,6 @@
     "description": "This module shows the different ranges of electricity prices in Spain during the day.",
     "issues": [],
     "tags": [
-      "magicmirror2",
       "javascript"
     ]
   },
@@ -1294,7 +1237,6 @@
     "description": "The total losses of the russian occupier since the full-scale invasion in Ukraine, per General Staff of the Armed Forces of Ukraine.",
     "issues": [],
     "tags": [
-      "magicmirror",
       "russian invasion"
     ]
   },
@@ -1435,14 +1377,11 @@
     "description": "Displays the current info for scheduled sailings of specified BC Ferries route",
     "issues": [],
     "tags": [
-      "magic mirror",
-      "smart mirror",
       "transport",
       "ferry",
       "ferries",
       "vancouver",
-      "british columbia",
-      "module"
+      "british columbia"
     ]
   },
   {
@@ -1519,8 +1458,6 @@
     "description": "Displays the number of available bikes on the selected stations of the Budapest public bike system (aka MOL Bubi).",
     "issues": [],
     "tags": [
-      "magicmirror",
-      "module",
       "bike",
       "transport"
     ]
@@ -1698,14 +1635,10 @@
     "description": "Customisable real-time stop data for Dublin Bus, Luas and IrishRail stops",
     "issues": [],
     "tags": [
-      "mmm",
       "public transport",
-      "magic mirror",
-      "smart mirror",
       "dublin bus",
       "dublin luas",
-      "irish rail",
-      "module"
+      "irish rail"
     ]
   },
   {
@@ -1717,12 +1650,9 @@
     "description": "Station monitor for the Dresden/Germany local transport (DVB) bus, tram and train system.",
     "issues": [],
     "tags": [
-      "magicmirror",
       "dvb",
       "vvo",
       "dresden",
-      "magic mirror",
-      "smart mirror",
       "public transport",
       "local transit"
     ]
@@ -1736,16 +1666,13 @@
     "description": "Station monitor for local transport companies using the EFA system.",
     "issues": [],
     "tags": [
-      "magicmirror",
       "efa",
-      "smart mirror",
       "departures",
       "station board",
       "fahrplan",
       "fahrplanauskunft",
       "bahn",
-      "bus",
-      "module"
+      "bus"
     ]
   },
   {
@@ -1757,8 +1684,6 @@
     "description": "Displays Hungarian public train departure times using real-time data from the \"Elvira\" service provided by the Hungarian national railway company (MÁV)",
     "issues": [],
     "tags": [
-      "magicmirror",
-      "module",
       "elvira",
       "máv",
       "máv-start",
@@ -1777,7 +1702,6 @@
     "description": "Get estimations for bus stops in the city of Valencia (Spain)",
     "issues": [],
     "tags": [
-      "magicmirror",
       "bus stop",
       "emt valencia",
       "public transport"
@@ -1803,11 +1727,8 @@
     "description": "Display information published by the FAA on delays and weather conditions at some US airports.  Note: this has been updated following a change by the FAA to the API.",
     "issues": [],
     "tags": [
-      "magic mirror",
-      "smart mirror",
       "faa",
-      "airports",
-      "module"
+      "airports"
     ]
   },
   {
@@ -1819,8 +1740,6 @@
     "description": "Module that tracks nearby planes based on Flightradar24 data.",
     "issues": [],
     "tags": [
-      "magic mirror",
-      "module",
       "flights",
       "flightradar24"
     ]
@@ -1868,7 +1787,6 @@
     "description": "Display Gas Station prices.",
     "issues": [],
     "tags": [
-      "magicmirror",
       "fuel price",
       "gas station"
     ]
@@ -1882,8 +1800,6 @@
     "description": "Displays Budapest public transport information directly from the Futár webservice.",
     "issues": [],
     "tags": [
-      "magicmirror",
-      "module",
       "futar",
       "transport",
       "public-transport",
@@ -1910,9 +1826,6 @@
     "description": "Tracking of multiple objects on a google map. Position can be updated by a notification.",
     "issues": [],
     "tags": [
-      "magic mirror",
-      "smart mirror",
-      "module",
       "google maps",
       "marker"
     ]
@@ -1969,9 +1882,7 @@
     "maintainerURL": "",
     "description": "Gyeonggi-Do, South Korea Bus Location ETA Time, Remaining Seat information.",
     "issues": [],
-    "tags": [
-      "magicmirror"
-    ]
+    "tags": []
   },
   {
     "name": "MMM-HH-LocalTransport",
@@ -1982,10 +1893,7 @@
     "description": "Display local transport in Hamburg/Germany.",
     "issues": [],
     "tags": [
-      "magic mirror",
-      "smart mirror",
       "localtransport",
-      "module",
       "hvv"
     ]
   },
@@ -1998,10 +1906,7 @@
     "description": "Display local transport in Hamburg/Germany. Now up to date",
     "issues": [],
     "tags": [
-      "magic mirror",
-      "smart mirror",
       "localtransport",
-      "module",
       "hvv",
       "hamburg"
     ]
@@ -2015,10 +1920,8 @@
     "description": "Display Estimated Time of Arrival (ETA) of Hong Kong public transport.",
     "issues": [],
     "tags": [
-      "magicmirror",
       "kmb",
       "magicmirror²",
-      "smart mirror",
       "public transport",
       "local transit"
     ]
@@ -2065,7 +1968,6 @@
     "description": "Display estimated departures for public transport stops in the Czech Republic",
     "issues": [],
     "tags": [
-      "magicmirror",
       "bus stop",
       "tram stop",
       "czech republic",
@@ -2092,10 +1994,7 @@
     "description": "time to the next buses, tramways from a list of stations / lines for Lille (Ilevia).",
     "issues": [],
     "tags": [
-      "magic mirror",
-      "smart mirror",
       "localtransport",
-      "module",
       "lille",
       "ilevia"
     ]
@@ -2109,7 +2008,6 @@
     "description": "Display real-time estimations for public transport stops in Bratislava, Slovakia",
     "issues": [],
     "tags": [
-      "magicmirror",
       "bus stop",
       "tram stop",
       "bratislava",
@@ -2136,12 +2034,9 @@
     "description": "Station monitor for the Karlsruhe/Germany local transport (KVV) bus, tram and train system.",
     "issues": [],
     "tags": [
-      "magicmirror",
       "kvv",
       "vbk",
       "karlsruhe",
-      "magic mirror",
-      "smart mirror",
       "public transport",
       "local transit"
     ]
@@ -2157,7 +2052,6 @@
       "- W - package.json issue: No repository field."
     ],
     "tags": [
-      "magicmirror",
       "lametro"
     ]
   },
@@ -2269,7 +2163,6 @@
       "- W - package.json issue: No description"
     ],
     "tags": [
-      "magic mirror",
       "public transport",
       "mvv",
       "mvg"
@@ -2284,7 +2177,6 @@
     "description": "Module to display public transport 🚐 from Munich in Germany.",
     "issues": [],
     "tags": [
-      "magic mirror",
       "public transport",
       "mvg",
       "mvv"
@@ -2343,10 +2235,7 @@
     "description": "time to the next buses, tramways or navibus from a list of stations / lines for Nantes (TAN).",
     "issues": [],
     "tags": [
-      "magic mirror",
-      "smart mirror",
       "localtransport",
-      "module",
       "paris",
       "ratp"
     ]
@@ -2383,12 +2272,8 @@
     "description": "Station monitor for the nextbike bike-sharing network.",
     "issues": [],
     "tags": [
-      "magicmirror",
       "nextbike",
-      "magic mirror",
-      "smart mirror",
-      "bike sharing",
-      "module"
+      "bike sharing"
     ]
   },
   {
@@ -2437,10 +2322,8 @@
       "- W - package.json issue: license should be a valid SPDX license expression"
     ],
     "tags": [
-      "magic mirror 2",
       "nmbs",
       "public transport belgium",
-      "smart mirror",
       "sncb"
     ]
   },
@@ -2528,10 +2411,7 @@
     "description": "Time to the next buses, metros, rers & tramways for Paris Network (RATP), along with: the traffic status for selected lines, the risk of rain in the next hour, autolib and velib stations status.",
     "issues": [],
     "tags": [
-      "magic mirror",
-      "smart mirror",
       "localtransport",
-      "module",
       "paris",
       "ratp"
     ]
@@ -2568,14 +2448,11 @@
     "description": "Station monitor for tram and bus system in Poznań.",
     "issues": [],
     "tags": [
-      "magicmirror",
       "ztm",
       "mpk",
       "peka",
       "wirtualny monitor",
       "poznań",
-      "magic mirror",
-      "smart mirror",
       "public transport",
       "local transit"
     ]
@@ -2600,13 +2477,9 @@
     "description": "Display departures for public transport in Berlin and Brandenburg (Covers VBB Area).",
     "issues": [],
     "tags": [
-      "magic mirror",
-      "magic mirror 2",
-      "smart mirror",
       "public transport",
       "public transport berlin",
-      "public transport brandenburg",
-      "module"
+      "public transport brandenburg"
     ]
   },
   {
@@ -2618,11 +2491,7 @@
     "description": "Displays departure information for public transport in Germany. The [hafas-client](https://github.com/public-transport/hafas-client) is used to query the information. The interface of the Deutsche Bahn is used as standard, this includes most of the local networks with buses, trams, etc. However, other hafas interfaces can also be used.",
     "issues": [],
     "tags": [
-      "magic mirror",
-      "magic mirror 2",
-      "smart mirror",
-      "public transport",
-      "module"
+      "public transport"
     ]
   },
   {
@@ -2634,13 +2503,9 @@
     "description": "Display live departures from public passenger transport service of the 'Verkehrsverbund Oberelbe' (VVO).",
     "issues": [],
     "tags": [
-      "magic mirror",
-      "magic mirror 2",
-      "smart mirror",
       "public transport",
       "public transport vvo",
-      "public transport dresden",
-      "module"
+      "public transport dresden"
     ]
   },
   {
@@ -2665,10 +2530,7 @@
     "description": "Public transport information for Sweden.",
     "issues": [],
     "tags": [
-      "magic mirror",
-      "smart mirror",
       "local transport",
-      "module",
       "sweden"
     ]
   },
@@ -2681,10 +2543,8 @@
     "description": "Rhein-Main local transport system (RMV) - Departure Monitor",
     "issues": [],
     "tags": [
-      "magicmirror",
       "rmv",
       "frankfurt",
-      "magic mirror",
       "public transport",
       "local transit"
     ]
@@ -2754,9 +2614,6 @@
     "description": "Displays the ETA of San Francisco's MUNI Bus and Rail systems based on the given stops and routes.",
     "issues": [],
     "tags": [
-      "magic mirror",
-      "smart mirror",
-      "module",
       "muni",
       "sf",
       "bus times"
@@ -2791,7 +2648,6 @@
     "description": "Display public transport in Stockholm/**Sweden**.",
     "issues": [],
     "tags": [
-      "magicmirror",
       "publictransport"
     ]
   },
@@ -2804,10 +2660,7 @@
     "description": "Display upcoming trains between 2 SNCF stations (France)",
     "issues": [],
     "tags": [
-      "magic mirror",
-      "smart mirror",
       "localtransport",
-      "module",
       "sncf",
       "train"
     ]
@@ -2821,12 +2674,8 @@
     "description": "Station monitor for bicycle networks based on the Socialbicycles API/Infrastructure, e.g. Wavelo in Kraków, Poland.",
     "issues": [],
     "tags": [
-      "magicmirror",
       "nextbike",
-      "magic mirror",
-      "smart mirror",
-      "bike sharing",
-      "module"
+      "bike sharing"
     ]
   },
   {
@@ -2904,7 +2753,6 @@
       "- W - package.json issue: No repository field."
     ],
     "tags": [
-      "magicmirror",
       "carsharing",
       "scooters",
       "cars",
@@ -2921,12 +2769,9 @@
     "description": "Display Tesla data from either [TeslaFi](https://teslafi.com/) or [Tessie](https://www.tessie.com/)",
     "issues": [],
     "tags": [
-      "magic mirror",
-      "smart mirror",
       "tesla",
       "teslafi",
-      "tessie",
-      "module"
+      "tessie"
     ]
   },
   {
@@ -2993,11 +2838,7 @@
     "maintainerURL": "https://github.com/jaumebosch",
     "description": "Display Barcelona's TMB bus times by line and stop",
     "issues": [],
-    "tags": [
-      "magic",
-      "mirror",
-      "module"
-    ]
+    "tags": []
   },
   {
     "name": "mm-tkl-timetable",
@@ -3039,10 +2880,7 @@
     "description": "time to the next buses lines for Toulouse (Tisseo).",
     "issues": [],
     "tags": [
-      "magic mirror",
-      "smart mirror",
       "localtransport",
-      "module",
       "toulouse"
     ]
   },
@@ -3066,10 +2904,7 @@
     "description": "Display commute travel time with current traffic conditions factored in. Can be used for driving, biking, walking, and public transit.",
     "issues": [],
     "tags": [
-      "magic mirror",
-      "smart mirror",
-      "traffic",
-      "module"
+      "traffic"
     ]
   },
   {
@@ -3149,11 +2984,7 @@
     "maintainerURL": "https://github.com/robotfishe",
     "description": "Pull charging and range data from your EV via Tronity Platform.",
     "issues": [],
-    "tags": [
-      "magic",
-      "mirror",
-      "module"
-    ]
+    "tags": []
   },
   {
     "name": "MMM-Tube-Status",
@@ -3175,7 +3006,6 @@
     "description": "Get estimations for bus stops in the city of Zaragoza (Spain)",
     "issues": [],
     "tags": [
-      "magicmirror",
       "bus stop",
       "tuzsa zaragoza",
       "public transport"
@@ -3200,11 +3030,7 @@
     "maintainerURL": "",
     "description": "This module displays LIVE UK information about a specific bus stop and the routes that serve it.",
     "issues": [],
-    "tags": [
-      "magic",
-      "mirror",
-      "module"
-    ]
+    "tags": []
   },
   {
     "name": "MMM-UKLiveTrainDepartures",
@@ -3225,11 +3051,7 @@
     "maintainerURL": "",
     "description": "This module displays LIVE UK National Rail train arrivals & departures from a specified station.",
     "issues": [],
-    "tags": [
-      "magic",
-      "mirror",
-      "module"
-    ]
+    "tags": []
   },
   {
     "name": "MMM-Vasttrafik-PublicTransport",
@@ -3260,7 +3082,6 @@
     "description": "Display Volvo car status and trip information by VolvoOnCall",
     "issues": [],
     "tags": [
-      "magicmirror",
       "volvo",
       "volvooncall"
     ]
@@ -3274,11 +3095,8 @@
     "description": "Easy configuration module to display bus and train arrivals/departures with different display types for Germany (VRR and more EFA).",
     "issues": [],
     "tags": [
-      "magic mirror",
-      "smart mirror",
       "vrr",
-      "transportation",
-      "module"
+      "transportation"
     ]
   },
   {
@@ -3290,13 +3108,10 @@
     "description": "Updated: You can now monitor live arrival times at many CA, Bay Area transit stops.  This covers BART, VTA, etc.",
     "issues": [],
     "tags": [
-      "magic mirror",
-      "smart mirror",
       "vta",
       "transit",
       "live",
-      "arrivals",
-      "module"
+      "arrivals"
     ]
   },
   {
@@ -3341,7 +3156,6 @@
     "description": "Display Public Transport timetable of Vienna/Austria.",
     "issues": [],
     "tags": [
-      "magicmirror",
       "vienna",
       "wien",
       "public transport",
@@ -3381,10 +3195,7 @@
     "description": "Display next bus/tramway/metro/train in the Paris/Ile-de-France région in France using IDFM API",
     "issues": [],
     "tags": [
-      "magicmirror",
       "idf-transport",
-      "magic mirror",
-      "smart mirror",
       "public transport",
       "local transit"
     ]
@@ -3398,10 +3209,7 @@
     "description": "Local transport in IDF (STIF) module based on [MMM-Paris-RATP-PG](https://github.com/da4throux/MMM-Paris-RATP-PG)",
     "issues": [],
     "tags": [
-      "magic mirror",
-      "smart mirror",
       "localtransport",
-      "module",
       "paris",
       "stif",
       "ratp",
@@ -3441,7 +3249,6 @@
     "description": "The MMM-AlexaControl module allows you to control your Mirror with Alexa (every device that support Wemos devices). You can turn it on and off, change the page and send notifications to other modules.",
     "issues": [],
     "tags": [
-      "magicmirror",
       "alexacontrol",
       "wemos",
       "fauxmo"
@@ -3456,7 +3263,6 @@
     "description": "Simple Mirror Control from External Home Assistant (Alexa/Google Home/HASS.io)",
     "issues": [],
     "tags": [
-      "magicmirror",
       "alexaonoff",
       "wemos",
       "fauxmo"
@@ -3492,8 +3298,6 @@
     "description": "MMM-GoogleAssistant is an real embedded Google assistant on MagicMirror². [Maintained]",
     "issues": [],
     "tags": [
-      "magic mirror",
-      "module",
       "google assistant",
       "voice",
       "embedded",
@@ -3566,10 +3370,7 @@
     "description": "Alexa voice control to show/hide modules, search for images or Youtube video, and display them with the search term on the mirror.",
     "issues": [],
     "tags": [
-      "magic mirror",
-      "smart mirror",
       "alexa",
-      "module",
       "aws iot",
       "device gateway",
       "alexa",
@@ -3597,14 +3398,11 @@
     "description": "Picovoice Porcupine hotword detection, works with MMM-AssistantMk2",
     "issues": [],
     "tags": [
-      "module",
       "hotword",
       "hotword detection",
       "porcupine",
       "bumblebee",
       "picovoice",
-      "magic mirror",
-      "smart mirror",
       "voice",
       "jarvis"
     ]
@@ -3618,7 +3416,6 @@
     "description": "Offline Text-To-Speech based on festival.",
     "issues": [],
     "tags": [
-      "magicmirror",
       "text-to-speech"
     ]
   },
@@ -3631,7 +3428,6 @@
     "description": "Offline Voice Recognition Module, with ability to control other modules, based on pocketsphinx.",
     "issues": [],
     "tags": [
-      "magicmirror",
       "voice recognition",
       "speech to text"
     ]
@@ -3657,10 +3453,7 @@
     "description": "Voice control based on annyang.",
     "issues": [],
     "tags": [
-      "magic mirror",
-      "smart mirror",
-      "voice control",
-      "module"
+      "voice control"
     ]
   },
   {
@@ -3716,11 +3509,8 @@
     "description": "Simple display of today, tomorrow & next-day, designed to work with MMM-Weather-Now. Now uses Open Weather as WeatherBit reduced the free service to an unusable level :( If you installed an older version ( < 18 Oct 2022 ), please update and get a new api key!",
     "issues": [],
     "tags": [
-      "magic mirror",
-      "smart mirror",
       "weather",
-      "forecast",
-      "module"
+      "forecast"
     ]
   },
   {
@@ -3743,11 +3533,8 @@
     "description": "Simple display of air quality based on the US AirNow API.",
     "issues": [],
     "tags": [
-      "magic mirror",
-      "smart mirror",
       "air",
-      "quality",
-      "module"
+      "quality"
     ]
   },
   {
@@ -3792,7 +3579,6 @@
     "description": "Air pollution in Polish cities. Data from airly (<https://airly.eu/>)",
     "issues": [],
     "tags": [
-      "magicmirror",
       "air polution",
       "airly"
     ]
@@ -3806,12 +3592,9 @@
     "description": "Module to get the Air Quality Index (AQI) using the World Air Quality Index project API.",
     "issues": [],
     "tags": [
-      "magic mirror",
-      "smart mirror",
       "transport",
       "air",
-      "aqi",
-      "module"
+      "aqi"
     ]
   },
   {
@@ -3907,7 +3690,6 @@
     "description": "Gets weather watches, warnings, and advisories for user specified regions. Using alert data published by Environment Canada.",
     "issues": [],
     "tags": [
-      "magicmirror",
       "canada",
       "alerts",
       "weather",
@@ -4029,8 +3811,6 @@
     "description": "A heavily configurable module to display different animations based on current weather and show customized event effects.",
     "issues": [],
     "tags": [
-      "magic mirror",
-      "module",
       "weather"
     ]
   },
@@ -4053,7 +3833,6 @@
     "issues": [],
     "tags": [
       "magic mirror module",
-      "smart mirror",
       "radiation",
       "multigeiger"
     ]
@@ -4067,11 +3846,8 @@
     "description": "Display Readings/Values from your FHEM device like temperature or humidity.",
     "issues": [],
     "tags": [
-      "magic mirror",
-      "smart mirror",
       "fhem",
-      "home automation",
-      "module"
+      "home automation"
     ]
   },
   {
@@ -4138,11 +3914,7 @@
     "description": "Displays a grid simulating the [Game of Life](https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life).",
     "issues": [],
     "tags": [
-      "magic mirror",
-      "magic mirror 2",
-      "smart mirror",
-      "game of life",
-      "module"
+      "game of life"
     ]
   },
   {
@@ -4165,7 +3937,6 @@
     "description": "The module emits the notification \"INDOOR_TEMPERATURE\" to display the indoor temperature received via a subscribed MQTT topic in the default [Current Weather module](https://github.com/MichMich/MagicMirror/tree/develop/modules/default/currentweather).",
     "issues": [],
     "tags": [
-      "magicmirror",
       "mqtt",
       "indoor_temperature"
     ]
@@ -4321,9 +4092,7 @@
     "maintainerURL": "https://github.com/cowboysdude",
     "description": "Different providers for users to choose from.  Shows current plus 3 day forecast. Mouseover shows forecast, with Air, UV, Humidity, Sunrise and Set.",
     "issues": [],
-    "tags": [
-      "magicmirror2"
-    ]
+    "tags": []
   },
   {
     "name": "MMM-NOAATides",
@@ -4334,8 +4103,6 @@
     "description": "Graph daily low and high tide predictions for a given NOAA tide station, and measured data as it is reported. Data is pulled from [NOAA-tidesandcurrents](https://tidesandcurrents.noaa.gov/map/index.html). Data is a free service - no API key",
     "issues": [],
     "tags": [
-      "magic mirror",
-      "smart mirror",
       "tide",
       "high water",
       "low water",
@@ -4558,8 +4325,6 @@
     "description": "Displays the temperature from a remote sensor that is capable to POST the measured value through HTTP protocol in JSON.",
     "issues": [],
     "tags": [
-      "magicmirror",
-      "module",
       "temperature",
       "raspberrypi"
     ]
@@ -4573,8 +4338,6 @@
     "description": "Display a Nest Like thermostat from a remote sensor that is capable to POST values through HTTP protocol. It is designed to be generic. Useful when having Home Assistant and MagicMirror².",
     "issues": [],
     "tags": [
-      "magicmirror",
-      "module",
       "temperature",
       "nest",
       "thermostat",
@@ -4590,7 +4353,6 @@
     "description": "Air pollution in Polish cities.",
     "issues": [],
     "tags": [
-      "magicmirror",
       "air polution"
     ]
   },
@@ -4625,11 +4387,8 @@
     "description": "Display weather warnings for the UK issued by UK Met Office.",
     "issues": [],
     "tags": [
-      "magic mirror",
-      "smart mirror",
       "weather",
       "warnings",
-      "module",
       "uk met office"
     ]
   },
@@ -4655,9 +4414,6 @@
       "- W - package.json issue: No repository field."
     ],
     "tags": [
-      "magic mirror",
-      "smart mirror",
-      "module",
       "pollen",
       "count",
       "allergy",
@@ -4707,11 +4463,8 @@
     "description": "Simple clean display of the weather now, designed to go with MMM-3Day-Forecast. Now uses Open Weather as WeatherBit reduced the free service to an unusable level :( If you installed an older version ( < 18 Oct 2022 ), please update and get a new api key!",
     "issues": [],
     "tags": [
-      "magic mirror",
-      "smart mirror",
       "weather",
-      "forecast",
-      "module"
+      "forecast"
     ]
   },
   {
@@ -4757,10 +4510,7 @@
     "maintainerURL": "",
     "description": "Display a weather diagram provided by yr.no.",
     "issues": [],
-    "tags": [
-      "magic",
-      "mirror"
-    ]
+    "tags": []
   },
   {
     "name": "MMM-WeatherChart",
@@ -5080,7 +4830,6 @@
     "description": "Shows the current standings of Allsvenskan (the top Swedish football league).",
     "issues": [],
     "tags": [
-      "magic mirror",
       "allsvenskan",
       "football",
       "soccer",
@@ -5107,9 +4856,6 @@
     "description": "Displays LOL Champions Queue standings.",
     "issues": [],
     "tags": [
-      "magic",
-      "mirror",
-      "module",
       "esports",
       "league",
       "of",
@@ -5173,8 +4919,6 @@
     "description": "Display League of Legends league schedules.",
     "issues": [],
     "tags": [
-      "magic mirror",
-      "module",
       "esports",
       "league of legends"
     ]
@@ -5188,8 +4932,6 @@
     "description": "Display League of Legends league standings.",
     "issues": [],
     "tags": [
-      "magic mirror",
-      "module",
       "esports",
       "league of legends"
     ]
@@ -5227,7 +4969,6 @@
     "description": "Display scores of National Football League (optional voice-control).",
     "issues": [],
     "tags": [
-      "magicmirror",
       "nfl"
     ]
   },
@@ -5240,7 +4981,6 @@
     "description": "Display scores of National Hockey League.",
     "issues": [],
     "tags": [
-      "magicmirror",
       "nhl",
       "ice hockey"
     ]
@@ -5278,7 +5018,6 @@
     "description": "Displays the medals for olympic games.",
     "issues": [],
     "tags": [
-      "magicmirror",
       "olympic games"
     ]
   },
@@ -5312,7 +5051,6 @@
     "description": "Display scottish premiere league standings.",
     "issues": [],
     "tags": [
-      "magicmirror",
       "scottish premier league"
     ]
   },
@@ -5336,9 +5074,6 @@
     "description": "A module that displays live scores of your favorite soccer leagues/competitions.",
     "issues": [],
     "tags": [
-      "mmm",
-      "magic mirror",
-      "magic mirror 2",
       "live score",
       "soccer"
     ]
@@ -5352,7 +5087,6 @@
     "description": "A module that displays standings from European Soccer (Football) leagues. (optional voice-control)",
     "issues": [],
     "tags": [
-      "magicmirror",
       "soccer standings"
     ]
   },
@@ -5378,7 +5112,6 @@
     "description": "A module that displays your official USGA Ghin handicap.",
     "issues": [],
     "tags": [
-      "magicmirror",
       "ghin",
       "golf"
     ]
@@ -5392,8 +5125,6 @@
     "description": "A module that displays cicket scores for ongoing live cricket matches.",
     "issues": [],
     "tags": [
-      "magic mirror",
-      "module",
       "cricket"
     ]
   },
@@ -5439,7 +5170,6 @@
     "description": "Display Xiaomi LYWSDCGQ 01ZM Temperature and Humidity sensor values directly AND Nova SDS011 PM Air Quality sensor data.",
     "issues": [],
     "tags": [
-      "magicmirror",
       "xiaomi",
       "temperature",
       "humidity",
@@ -5457,10 +5187,7 @@
     "description": "Display a candle burning down towards a specific date (e.g. an advent candle).",
     "issues": [],
     "tags": [
-      "magic mirror",
-      "smart mirror",
-      "buttons",
-      "module"
+      "buttons"
     ]
   },
   {
@@ -5516,7 +5243,6 @@
     "description": "Alarm Clock Module (touch and non-touch)",
     "issues": [],
     "tags": [
-      "magicmirror",
       "alarm clock"
     ]
   },
@@ -5529,10 +5255,7 @@
     "description": "Ambient brightness detection and Auto-Brightness of the mirror modules accordingly",
     "issues": [],
     "tags": [
-      "magic mirror",
-      "smart mirror",
       "ambient brightness",
-      "module",
       "ambient",
       "brightness",
       "camera"
@@ -5579,8 +5302,6 @@
     "description": "This module provides Arduino serial communication support with Raspberry PI. Arduino sends the sensor's data value to the module using Python. Your next favorite Plug&Play utility module.",
     "issues": [],
     "tags": [
-      "magicmirror",
-      "module",
       "arduino",
       "serialport"
     ]
@@ -5594,8 +5315,6 @@
     "description": "This module pulls data (lock and door status) from August Locks connected to the configured account using august-connect.",
     "issues": [],
     "tags": [
-      "magic mirror",
-      "smart mirror",
       "august"
     ]
   },
@@ -5643,10 +5362,6 @@
     "description": "Connecting Bluetooth devices, currently only Oral-B toothbrushes",
     "issues": [],
     "tags": [
-      "magic",
-      "mirror",
-      "2",
-      "module",
       "bluetooth",
       "oralb"
     ]
@@ -5693,11 +5408,7 @@
     "description": "Display a Bring! shopping list in a flexible view and touch support",
     "issues": [],
     "tags": [
-      "magic",
-      "mirror",
-      "2",
-      "bring",
-      "module"
+      "bring"
     ]
   },
   {
@@ -5743,7 +5454,6 @@
     "description": "CalDav Parser to convert to iCal format.",
     "issues": [],
     "tags": [
-      "magicmirror",
       "caldav"
     ]
   },
@@ -5768,7 +5478,6 @@
     "issues": [],
     "tags": [
       "mm",
-      "magicmirror",
       "calendar",
       "calext3"
     ]
@@ -5782,7 +5491,6 @@
     "description": "Extended calendar and event view. Show calendar as agenda",
     "issues": [],
     "tags": [
-      "magicmirror",
       "calendar",
       "agenda"
     ]
@@ -5797,10 +5505,7 @@
     "issues": [],
     "tags": [
       "timeline",
-      "cx3",
-      "magicmirror",
-      "module",
-      "mmm"
+      "cx3"
     ]
   },
   {
@@ -5880,7 +5585,6 @@
     "tags": [
       "email",
       "camera",
-      "smart mirror",
       "mirror camera"
     ]
   },
@@ -5974,10 +5678,6 @@
     "issues": [],
     "tags": [
       "magicmirror²",
-      "magic mirror",
-      "magic",
-      "mirror",
-      "module",
       "cursor",
       "mmm-cursor"
     ]
@@ -6057,9 +5757,6 @@
     "description": "A module to display a random release from your [discogs.com](https://www.discogs.com/) music collection. ⚠️ **Module not maintained (GitHub repo has been archived)**",
     "issues": [],
     "tags": [
-      "magic",
-      "mirror",
-      "module",
       "discogs"
     ]
   },
@@ -6105,10 +5802,7 @@
     "description": "A highly configurable module for displaying domoticz information and performing actions on Domoticz.",
     "issues": [],
     "tags": [
-      "magic mirror",
-      "smart mirror",
-      "domoticz",
-      "module"
+      "domoticz"
     ]
   },
   {
@@ -6164,7 +5858,6 @@
     "description": "Visualizes production and consumption of electrical energy in your home. Is meant to be used with solar energy converters and (optional) energy storage systems.",
     "issues": [],
     "tags": [
-      "magicmirror",
       "energy",
       "monitor",
       "storage",
@@ -6223,8 +5916,6 @@
     "description": "Inject Ricardo Cabello's ([mrdoob](https://github.com/mrdoob)) [stats.js](https://github.com/mrdoob/stats.js/) to display FPS, MS and MEM consumption",
     "issues": [],
     "tags": [
-      "magic mirror",
-      "smart mirror",
       "fps",
       "memory"
     ]
@@ -6238,8 +5929,6 @@
     "description": "Module that tracks packages from Finnish Posti and/or Matkahuolto",
     "issues": [],
     "tags": [
-      "magic mirror",
-      "module",
       "parcel",
       "posti",
       "matkahuolto"
@@ -6311,8 +6000,6 @@
     "description": "Display data from your FreeBox v6 server (Revolution) from the french ISP free.",
     "issues": [],
     "tags": [
-      "magic mirror",
-      "smart mirror",
       "freebox",
       "monitor"
     ]
@@ -6326,10 +6013,7 @@
     "description": "FRITZ!Box Callmonitor (Display an alert when someone is calling and offers a call history...)",
     "issues": [],
     "tags": [
-      "magic mirror",
-      "smart mirror",
-      "callmonitor",
-      "module"
+      "callmonitor"
     ]
   },
   {
@@ -6363,7 +6047,6 @@
     "description": "Displays data from a Fronius Solar Inverter, supports auto-off inverters and can be used as a data source for [MMM-EnergyMonitor](https://github.com/deg0nz/MMM-EnergyMonitor).",
     "issues": [],
     "tags": [
-      "magicmirror",
       "varta",
       "energy",
       "storage",
@@ -6402,8 +6085,6 @@
     "description": "Track your GCP (Google Cloud Platform) activity.",
     "issues": [],
     "tags": [
-      "magic mirror",
-      "smart mirror",
       "gcp",
       "billing"
     ]
@@ -6420,8 +6101,6 @@
       "- W - package.json issue: No license field."
     ],
     "tags": [
-      "magic mirror",
-      "smart mirror",
       "mirror email"
     ]
   },
@@ -6558,9 +6237,6 @@
     "description": "An alternate home-assistant integration.",
     "issues": [],
     "tags": [
-      "magic",
-      "mirror",
-      "module",
       "home-assistant"
     ]
   },
@@ -6617,11 +6293,8 @@
     "description": "Fork of leinich module. Many new features added. Display information from Home Assistant using the home assistant REST API.",
     "issues": [],
     "tags": [
-      "magic mirror",
-      "smart mirror",
       "home assistant",
-      "ha",
-      "module"
+      "ha"
     ]
   },
   {
@@ -6689,7 +6362,6 @@
     "description": "Requests device information from the HomeMatic CCU and displays them grouped by the assigned room.",
     "issues": [],
     "tags": [
-      "magic mirror",
       "homematic",
       "smarthome",
       "ccu2"
@@ -6827,10 +6499,7 @@
     "description": "A simple way to add an iFrame of any web content. Supports multiple URLs and will rotate between them. Works with static pages or streams like Nest Cam, D-Link Cameras, Twitch.tv, YouTube and more.",
     "issues": [],
     "tags": [
-      "magic mirror",
-      "smart mirror",
-      "iframe",
-      "module"
+      "iframe"
     ]
   },
   {
@@ -6853,11 +6522,8 @@
     "description": "An iFrame module to display any web content to your MagicMirror² (including YouTube, IP Cameras, ...). Several functionalities like auto-refresh, Ping the Url before to display it and last update time display. See also [MMM-SmartWebDisplay](https://forum.magicmirror.builders/topic/9750/mmm-smartwebdisplay-display-web-contents-including-youtube-on-your-mm)",
     "issues": [],
     "tags": [
-      "magic mirror",
-      "smart mirror",
       "iframe",
-      "ping",
-      "module"
+      "ping"
     ]
   },
   {
@@ -6919,7 +6585,6 @@
     "description": "Display IPv4/IPv6 Network Address.",
     "issues": [],
     "tags": [
-      "magicmirror",
       "network interfaces",
       "ip"
     ]
@@ -6964,9 +6629,6 @@
     "description": "Display data from any Web/REST API that return JSON.",
     "issues": [],
     "tags": [
-      "magic mirror",
-      "smart mirror",
-      "module",
       "remote control",
       "control",
       "json",
@@ -7040,7 +6702,6 @@
     "description": "A module for getting bluetooth remote control and keyboard inputs",
     "issues": [],
     "tags": [
-      "magicmirror",
       "fire stick",
       "remote control",
       "keyboard"
@@ -7077,7 +6738,6 @@
     "description": "Replaced by MMM-Mashie-Skolmat! Show school lunch menus from Köket by Sodexo (based on MMM-Skolmaten with different source for menus)",
     "issues": [],
     "tags": [
-      "magic mirror",
       "skolmat",
       "köket by sodexo",
       "sweden"
@@ -7092,10 +6752,7 @@
     "description": "Turns on or off a device connected to GPIO (in my case, an LCD screen) based on the input of a PIR device. Integrates nicely with MMM-Assistant (for voice control) and MMM-TelegramBot (for Telegram control).",
     "issues": [],
     "tags": [
-      "magic mirror",
-      "smart mirror",
       "lcd",
-      "module",
       "pir"
     ]
   },
@@ -7131,8 +6788,6 @@
       "- W - package.json issue: No license field."
     ],
     "tags": [
-      "magic",
-      "mirror",
       "linky",
       "enedis",
       "tic",
@@ -7168,7 +6823,6 @@
     "description": "A module which determines the status of devices on the network based on their MAC address. It can also look up devices by IP addresses or hostnames. This module is an enhanced clone of the excellent MMM-NetworkScanner module by [Ian Perrin](https://github.com/ianperrin)",
     "issues": [],
     "tags": [
-      "magicmirror",
       "network",
       "scanner"
     ]
@@ -7182,7 +6836,6 @@
     "description": "Show school lunch menus from Mashie.com. (based on MMM-Skolmaten with different source for menus)",
     "issues": [],
     "tags": [
-      "magic mirror",
       "skolmat",
       "mashie",
       "köket by sodexo",
@@ -7220,11 +6873,8 @@
     "description": "Show the menu of german school lunch service provider MensaMax.",
     "issues": [],
     "tags": [
-      "magicmirror",
       "mensmax",
-      "speiseplan",
-      "magic mirror",
-      "smart mirror"
+      "speiseplan"
     ]
   },
   {
@@ -7249,11 +6899,7 @@
     "issues": [],
     "tags": [
       "todo",
-      "microsoft",
-      "magicmirror",
-      "magic",
-      "mirror",
-      "module"
+      "microsoft"
     ]
   },
   {
@@ -7309,13 +6955,10 @@
     "description": "Moonraker API integration for Klipper powered 3D printers.",
     "issues": [],
     "tags": [
-      "magic mirror",
-      "smart mirror",
       "moonraker",
       "klipper",
       "mainsail",
-      "fluidd",
-      "module"
+      "fluidd"
     ]
   },
   {
@@ -7338,11 +6981,8 @@
     "description": "Connects multiple touch (capacitive) buttons via a MPR121 touch controller to send notifications to other modules (based on MMM-Buttons)",
     "issues": [],
     "tags": [
-      "magic mirror",
-      "smart mirror",
       "buttons",
-      "touch",
-      "module"
+      "touch"
     ]
   },
   {
@@ -7365,7 +7005,6 @@
     "description": "A powerful module that subscribes to MQTT broker and read/send MQTT messages and MM Notifications with a lot of individual setup/rules. Allows you to integrate MM into smart home like Home Assistant. Powerful automation with structured Noti and MQTT dictionaries rules (e.g. one mqtt message could trigger many predefined noti, and one mm-noti could trigger different predefined mqtt messages)",
     "issues": [],
     "tags": [
-      "magicmirror",
       "mqtt"
     ]
   },
@@ -7378,7 +7017,6 @@
     "description": "A module that subscribes topics from MQTT message queues, and displays the payload values in a table, with configurable labels.",
     "issues": [],
     "tags": [
-      "magicmirror",
       "smarthome",
       "home-automation",
       "mqtt"
@@ -7452,10 +7090,6 @@
     "description": "Camera based motion detector that turns of your display after a while, updated fork of alexyaks version.",
     "issues": [],
     "tags": [
-      "magic",
-      "mirror",
-      "smart",
-      "mirror",
       "motion detection"
     ]
   },
@@ -7523,9 +7157,6 @@
     "description": "Raspberry Pi SenseHat Module. Show sensors values, display pixelart and more.",
     "issues": [],
     "tags": [
-      "mmm",
-      "magicmirror",
-      "magicmirror2",
       "raspberry",
       "sensehat"
     ]
@@ -7550,8 +7181,6 @@
     "description": "Run a SQL SELECT against a MySQL database and display the results in an HTML table.",
     "issues": [],
     "tags": [
-      "magicmirror",
-      "module",
       "mysql"
     ]
   },
@@ -7610,9 +7239,6 @@
     "description": "Display sentences built with randomed words.",
     "issues": [],
     "tags": [
-      "mmm",
-      "magicmirror",
-      "magicmirror2",
       "words",
       "random"
     ]
@@ -7626,7 +7252,6 @@
     "description": "A MagicMirror² Module for Nagios.",
     "issues": [],
     "tags": [
-      "magicmirror",
       "nagios"
     ]
   },
@@ -7650,7 +7275,6 @@
     "description": "Uses HC-SR04 sensors to measure distance and display compliments if USER_PRESENCE is detected by MMM-PIR-Sensor and user is near the MagicMirror².",
     "issues": [],
     "tags": [
-      "magic mirror",
       "distance",
       "modules"
     ]
@@ -7708,9 +7332,6 @@
     "description": "Display live snapshot of Netatmo Presence and Welcome cameras and an events timeline of all your Netatmo Presence cameras.",
     "issues": [],
     "tags": [
-      "magic mirror",
-      "smart mirror",
-      "module",
       "netatmo",
       "netatmo-presence",
       "camera"
@@ -7736,7 +7357,6 @@
     "description": "Display the status of devices on the network based on their MAC address with nice columnview",
     "issues": [],
     "tags": [
-      "magicmirror",
       "network",
       "scanner"
     ]
@@ -7783,8 +7403,6 @@
     "description": "Display your notes stored by Alexa skill [Note Taker](https://github.com/joanaz/AS-NoteTaker).",
     "issues": [],
     "tags": [
-      "magic mirror",
-      "smart mirror",
       "aws lambda",
       "alexa",
       "skill",
@@ -7824,13 +7442,10 @@
     "description": "Octoprint API integration.",
     "issues": [],
     "tags": [
-      "magic mirror",
-      "smart mirror",
       "octoprint",
       "klipper",
       "mainsail",
-      "fluidd",
-      "module"
+      "fluidd"
     ]
   },
   {
@@ -7864,12 +7479,9 @@
     "description": "Highly customizable MM2 module that displays what you are listening to in Spotify. Compatible with MMM-LiveLyrics and DynamicTheming",
     "issues": [],
     "tags": [
-      "magicmirror",
-      "magicmirror2",
       "mm2",
       "spotify",
-      "spotify connect",
-      "mirror"
+      "spotify connect"
     ]
   },
   {
@@ -8023,8 +7635,6 @@
     ],
     "tags": [
       "phone notification",
-      "mirror",
-      "smart mirror",
       "notification"
     ]
   },
@@ -8059,10 +7669,7 @@
     "description": "This module can monitor a PIR motion sensor and put your mirror to sleep if nobody uses it.",
     "issues": [],
     "tags": [
-      "magic mirror",
-      "smart mirror",
       "pir-sensor",
-      "module",
       "motion"
     ]
   },
@@ -8086,8 +7693,6 @@
     "description": "After a configurated time without any user interaction the display will turn off and hide all modules for economy mode.It will wake up with a Pir sensor [Maintained]",
     "issues": [],
     "tags": [
-      "magic mirror",
-      "module",
       "screen"
     ]
   },
@@ -8144,7 +7749,6 @@
     "description": "Display status from website/ip's.",
     "issues": [],
     "tags": [
-      "magicmirror",
       "ping",
       "online",
       "offline"
@@ -8170,8 +7774,6 @@
     "description": "Displays air quality readings from Plantower PMSx003 series sensors",
     "issues": [],
     "tags": [
-      "mmm",
-      "magicmirror",
       "plantower",
       "pms",
       "dust"
@@ -8229,8 +7831,6 @@
     "description": "Display Prometheus Alerts.",
     "issues": [],
     "tags": [
-      "magicmirror",
-      "module",
       "scheduler"
     ]
   },
@@ -8265,11 +7865,9 @@
     "description": "Display notifications from phone and PC and control your mirror using Pushbullet (API)",
     "issues": [],
     "tags": [
-      "magicmirror",
       "pushbullet",
       "phone notification",
-      "notification",
-      "smart mirror"
+      "notification"
     ]
   },
   {
@@ -8365,7 +7963,6 @@
     "description": "Show your daily time spent using your digital devices with [RescueTime](https://www.rescuetime.com/)",
     "issues": [],
     "tags": [
-      "magicmirror",
       "rescuetime",
       "productivity"
     ]
@@ -8399,8 +7996,6 @@
     "description": "Display status of local Roomba.",
     "issues": [],
     "tags": [
-      "magic mirror",
-      "smart mirror",
       "roomba"
     ]
   },
@@ -8512,10 +8107,7 @@
     "description": "Takes a Selfie with an official Raspberry Pi Cam and can publish it to Facebook or Twitter. Needs API keys. Integrates nicely with MMM-Assistant (for voice control) and MMM-TelegramBot (for Telegram control).",
     "issues": [],
     "tags": [
-      "magic mirror",
-      "smart mirror",
-      "selfie",
-      "module"
+      "selfie"
     ]
   },
   {
@@ -8607,10 +8199,7 @@
       "- W - package.json issue: No repository field."
     ],
     "tags": [
-      "magic mirror 2",
-      "magic mirror",
       "magicmirror²",
-      "smart mirror",
       "shelly",
       "shellyem",
       "meter",
@@ -8637,7 +8226,6 @@
     "description": "Display your shipment tracking status.",
     "issues": [],
     "tags": [
-      "magicmirror",
       "shipment tracking"
     ]
   },
@@ -8661,7 +8249,6 @@
     "description": "Show school lunch menus in Sweden from skolmaten.se.",
     "issues": [],
     "tags": [
-      "magic mirror",
       "skolmat",
       "skolmaten",
       "sweden"
@@ -8676,7 +8263,6 @@
     "description": "Cycles through the newest messages of a Slack channel.",
     "issues": [],
     "tags": [
-      "magicmirror",
       "slack"
     ]
   },
@@ -8709,11 +8295,8 @@
     "description": "An iFrame module to display web content (including YouTube, IP Cameras, ...). Several rotating URL, autorefresh and remote control of the URL to display, Next/Prev/Play/Stop. [MMM-SmartWebDisplay forum](https://forum.magicmirror.builders/topic/9750/mmm-smartwebdisplay-display-web-contents-including-youtube-on-your-mm)",
     "issues": [],
     "tags": [
-      "magic mirror",
-      "smart mirror",
       "iframe",
-      "notification",
-      "module"
+      "notification"
     ]
   },
   {
@@ -8792,8 +8375,7 @@
     "issues": [],
     "tags": [
       "snmp",
-      "bandwidth",
-      "magicmirror"
+      "bandwidth"
     ]
   },
   {
@@ -8804,9 +8386,7 @@
     "maintainerURL": "",
     "description": "Display the currently playing track of your Sonos system.",
     "issues": [],
-    "tags": [
-      "magicmirror"
-    ]
+    "tags": []
   },
   {
     "name": "MMM-Sonos",
@@ -8841,8 +8421,6 @@
     "description": "Display incidents and component status from a StatusPage.io site",
     "issues": [],
     "tags": [
-      "magicmirror",
-      "module",
       "scheduler"
     ]
   },
@@ -8855,8 +8433,6 @@
     "description": "Display an alert-style timer or stopwatch. Controllable via notifications or the [MM-Remote](https://github.com/Klettner/MM-Remote) android app.",
     "issues": [],
     "tags": [
-      "magic mirror",
-      "module",
       "timer"
     ]
   },
@@ -8880,8 +8456,6 @@
     "description": "A module that displays your activity data from [Strava.com](https://www.strava.com).",
     "issues": [],
     "tags": [
-      "magic",
-      "mirror",
       "strava"
     ]
   },
@@ -8915,7 +8489,6 @@
     "description": "Uses 2 HC-SR04 ultrasonic sensors to determing hand position to produce a \"Swipe Left\", \"Swipe Right\", or \"Press\".",
     "issues": [],
     "tags": [
-      "magic mirror",
       "hand gestures",
       "swipe",
       "modules"
@@ -8930,8 +8503,6 @@
     "description": "Display Synology Download Station tasks.",
     "issues": [],
     "tags": [
-      "magicmirror",
-      "smart mirror",
       "synology",
       "download satation"
     ]
@@ -8967,10 +8538,7 @@
     "description": "Shows system stats similar to MMM-SystemStats",
     "issues": [],
     "tags": [
-      "magic mirror",
-      "smart mirror",
-      "systemmonitor",
-      "module"
+      "systemmonitor"
     ]
   },
   {
@@ -8982,11 +8550,8 @@
     "description": "Shows Raspberry Pi system stats like CPU temperature, free Ram, System load, and Uptime.",
     "issues": [],
     "tags": [
-      "magic mirror",
-      "smart mirror",
       "cpu temperature",
-      "system load",
-      "module"
+      "system load"
     ]
   },
   {
@@ -9016,7 +8581,6 @@
     "description": "Creates and manages Telegram commands to control a MagicMirror² via the MirrorCommandLine tools. MMM-TelegramCommands requires the installation and configuration of the [MMM-TelegramBot](https://github.com/bugsounet/MMM-TelegramBot) module and the [MirrorCommandLine](https://gitlab.com/doctorfree/MirrorCommandLine) suite of command line utilites for the MagicMirror².",
     "issues": [],
     "tags": [
-      "magicmirror",
       "mm",
       "telegram",
       "commandline"
@@ -9031,8 +8595,6 @@
     "description": "Display DS18B20 sensor's temperature.",
     "issues": [],
     "tags": [
-      "magicmirror",
-      "smart mirror",
       "ds18b20",
       "temperature",
       "sensor"
@@ -9069,7 +8631,6 @@
     "description": "Show electricity related data for Tibber customers. Shows power, prices, consumption, voltage, current and more",
     "issues": [],
     "tags": [
-      "magicmirror",
       "tibber",
       "energy",
       "smarthome",
@@ -9120,11 +8681,7 @@
     "issues": [
       "- W - package.json issue: No repository field."
     ],
-    "tags": [
-      "magic",
-      "mirror",
-      "magicmirror"
-    ]
+    "tags": []
   },
   {
     "name": "MMM-Toon",
@@ -9190,10 +8747,7 @@
     "description": "This module can show [Trello](https://trello.com/) cards on your mirror.",
     "issues": [],
     "tags": [
-      "magic mirror",
-      "smart mirror",
-      "trello",
-      "module"
+      "trello"
     ]
   },
   {
@@ -9227,10 +8781,7 @@
     "description": "Displays UniFi hotspot vouchers.",
     "issues": [],
     "tags": [
-      "magic mirror",
-      "smart mirror",
-      "unifi",
-      "module"
+      "unifi"
     ]
   },
   {
@@ -9295,7 +8846,6 @@
     "description": "Displays data from Varta Energy Storage Systems and can be used as data source for [MMM-EnergyMonitor](https://github.com/deg0nz/MMM-EnergyMonitor).",
     "issues": [],
     "tags": [
-      "magicmirror",
       "varta",
       "energy",
       "storage",
@@ -9328,7 +8878,6 @@
       "\"magic",
       "mirror\"",
       "\"magic",
-      "mirror",
       "module\""
     ]
   },
@@ -9396,10 +8945,6 @@
     "description": "Embed any web pages by using a webview instead of an iframe.",
     "issues": [],
     "tags": [
-      "magic mirror",
-      "magicmirror",
-      "magicmirror2",
-      "smart mirror",
       "webview"
     ]
   },
@@ -9479,10 +9024,7 @@
     "description": "Integrate temperature and humidity from your xiaomi smarthome system.",
     "issues": [],
     "tags": [
-      "magic mirror",
-      "smart mirror",
-      "wunderlist",
-      "module"
+      "wunderlist"
     ]
   },
   {
@@ -9528,10 +9070,6 @@
     "description": "Embed YouTube videos and playlists using the Electron webview tag rather than an iframe. May assist access to YouTube videos blocked in an iframe.",
     "issues": [],
     "tags": [
-      "magic mirror",
-      "magicmirror",
-      "magicmirror2",
-      "smart mirror",
       "webview"
     ]
   },
@@ -9566,8 +9104,6 @@
     "description": "Shows trash days with simple setup.",
     "issues": [],
     "tags": [
-      "magic mirror",
-      "smart mirror",
       "trash day",
       "garbage"
     ]
@@ -9648,10 +9184,7 @@
     "description": "Record daily 1-second-clips and automatically generate a 1-second-a-day video of your life.",
     "issues": [],
     "tags": [
-      "magic mirror",
-      "smart mirror",
-      "1 second a day",
-      "module"
+      "1 second a day"
     ]
   },
   {
@@ -9775,9 +9308,7 @@
     "description": "A clock which shows the time as text.",
     "issues": [],
     "tags": [
-      "magicmirror",
       "smar",
-      "mirror",
       "clock",
       "text",
       "clock",
@@ -9842,7 +9373,6 @@
     "description": "Shows stats (level, kills and global rank) for players of Apex Legends.",
     "issues": [],
     "tags": [
-      "magic mirror",
       "apex legends"
     ]
   },
@@ -9977,7 +9507,6 @@
     "description": "Shows stats (level, trophies and victories) for players of mobile game Brawl Stars.",
     "issues": [],
     "tags": [
-      "magic mirror",
       "brawl stars"
     ]
   },
@@ -10012,8 +9541,6 @@
     "description": "Show meals from canteens (Germany and Switzerland)",
     "issues": [],
     "tags": [
-      "magicmirror",
-      "magicmirror2",
       "openmensa"
     ]
   },
@@ -10180,13 +9707,9 @@
     "description": "Displays the daily Cyanide&Happiness Comic",
     "issues": [],
     "tags": [
-      "magic",
-      "mirror",
-      "2",
       "cyanide",
       "happiness",
-      "explosm",
-      "module"
+      "explosm"
     ]
   },
   {
@@ -10242,7 +9765,6 @@
     "description": "A vintage-style Digital Alarm Clock integrating MMM-DigClock and MMM-AlarmClock.",
     "issues": [],
     "tags": [
-      "magicmirror",
       "digital alarm clock"
     ]
   },
@@ -10463,10 +9985,7 @@
     "description": "Yet Another Facial Recognition system, with admin tooling to make all the AI/ML easy to maintain and supporting hardware acceleration",
     "issues": [],
     "tags": [
-      "magic mirror",
-      "smart mirror",
-      "facial recognition",
-      "module"
+      "facial recognition"
     ]
   },
   {
@@ -10478,10 +9997,7 @@
     "description": "Modified version of the above PaViRo one that works with OpenCV 3.3+, where training tools is merge in one project and code simplifications.",
     "issues": [],
     "tags": [
-      "magic mirror",
-      "smart mirror",
-      "facial recognition",
-      "module"
+      "facial recognition"
     ]
   },
   {
@@ -10515,10 +10031,7 @@
     "description": "A module to load last 20 images posted to user's Flickr photostream to mirror and animate them; with the need of an API_KEY",
     "issues": [],
     "tags": [
-      "magic mirror",
-      "smart mirror",
-      "flickr",
-      "module"
+      "flickr"
     ]
   },
   {
@@ -10552,7 +10065,6 @@
     "description": "Shows Fortnite players' stats (score, matches played and kills).",
     "issues": [],
     "tags": [
-      "magic mirror",
       "fortnite"
     ]
   },
@@ -10784,7 +10296,6 @@
     "description": "Displays an image for a period of time when added/uploaded to a directory.",
     "issues": [],
     "tags": [
-      "magicmirror",
       "imagefilewatcher"
     ]
   },
@@ -10841,10 +10352,7 @@
     "description": "A module load the images from a users Instagram feed. The images are displayed on the mirror and animated; it requires an API_KEY",
     "issues": [],
     "tags": [
-      "magic mirror",
-      "smart mirror",
-      "traffic",
-      "module"
+      "traffic"
     ]
   },
   {
@@ -10856,11 +10364,8 @@
     "description": "A module for displaying your Instagram photos and comments. It makes use of the new Facebook Instagram Graph API.",
     "issues": [],
     "tags": [
-      "magic mirror",
-      "smart mirror",
       "instagram",
-      "entertainment",
-      "module"
+      "entertainment"
     ]
   },
   {
@@ -10872,11 +10377,8 @@
     "description": "Display your Instagram photos, videos, multiple media postings, and post description. Makes use of the Facebook Instagram Graph API.",
     "issues": [],
     "tags": [
-      "magic mirror",
-      "smart mirror",
       "instagram",
-      "entertainment",
-      "module"
+      "entertainment"
     ]
   },
   {
@@ -10910,10 +10412,7 @@
     "description": "A module to load random jokes from the web.",
     "issues": [],
     "tags": [
-      "magic mirror",
-      "smart mirror",
-      "jokes",
-      "module"
+      "jokes"
     ]
   },
   {
@@ -11000,11 +10499,7 @@
     "description": "Display the song you are currently streaming on your [Librespot Java](https://github.com/librespot-org/librespot-java) Spotify Speaker",
     "issues": [],
     "tags": [
-      "magic mirror",
-      "magic mirror 2",
-      "smart mirror",
-      "spotify",
-      "module"
+      "spotify"
     ]
   },
   {
@@ -11049,8 +10544,6 @@
     "description": "Module - Lunar date of today (Chinese Zodiac)",
     "issues": [],
     "tags": [
-      "magic mirror",
-      "module",
       "lunar date"
     ]
   },
@@ -11163,8 +10656,6 @@
     "description": "Player status of Minecraft server",
     "issues": [],
     "tags": [
-      "magicmirror",
-      "module",
       "minecraft"
     ]
   },
@@ -11188,7 +10679,6 @@
     "description": "Display information about upcoming movies (title, cover, genre, rating, plot) or discover movies with custom filters.",
     "issues": [],
     "tags": [
-      "magicmirror",
       "upcoming movies"
     ]
   },
@@ -11245,9 +10735,6 @@
     "description": "Displays Minecraft server(s) informations.",
     "issues": [],
     "tags": [
-      "mmm",
-      "magicmirror",
-      "magicmirror2",
       "raspberry",
       "minecraft"
     ]
@@ -11271,8 +10758,7 @@
     "issues": [],
     "tags": [
       "video",
-      "player",
-      "magicmirror"
+      "player"
     ]
   },
   {
@@ -11368,8 +10854,6 @@
     "description": "Display the song you are currently listening to on AIMP.",
     "issues": [],
     "tags": [
-      "magic mirror",
-      "module",
       "aimp"
     ]
   },
@@ -11394,11 +10878,7 @@
     "description": "Display the song you are currently listening to on Spotify.",
     "issues": [],
     "tags": [
-      "magic mirror",
-      "magic mirror 2",
-      "smart mirror",
-      "spotify",
-      "module"
+      "spotify"
     ]
   },
   {
@@ -11432,7 +10912,6 @@
     "description": "Shows stats for Overwatch players.",
     "issues": [],
     "tags": [
-      "magic mirror",
       "overwatch"
     ]
   },
@@ -11500,9 +10979,6 @@
     "description": "Displays a Polish Word of the Day with examples and the English translations.",
     "issues": [],
     "tags": [
-      "magic mirror",
-      "smart mirror",
-      "module",
       "language"
     ]
   },
@@ -11625,7 +11101,6 @@
     "description": "Module for Rijks Museum. This was developed using the Rijksmuseum API.",
     "issues": [],
     "tags": [
-      "magicmirror",
       "art",
       "rijksmuseum"
     ]
@@ -11650,7 +11125,6 @@
     "description": "Displays Rocket League Stats.",
     "issues": [],
     "tags": [
-      "magic mirror",
       "rocket league"
     ]
   },
@@ -11690,8 +11164,6 @@
     "description": "Run a set of command-line scripts on a cron schedule and display an icon to differentiate",
     "issues": [],
     "tags": [
-      "magicmirror",
-      "module",
       "volume",
       "mute",
       "cron"
@@ -11799,9 +11271,6 @@
     "description": "Spotify Controller - with device and account switch buttons, easy volume change via touch and much more",
     "issues": [],
     "tags": [
-      "magicmirror",
-      "magic mirror",
-      "module",
       "magicmirrormodule",
       "magic mirror module",
       "spotify",
@@ -11873,8 +11342,6 @@
     "description": "Shows your TimeTree event.",
     "issues": [],
     "tags": [
-      "magic mirror",
-      "smart mirror",
       "event",
       "timetree"
     ]
@@ -11888,8 +11355,6 @@
     "description": "Module to display latest new astronomical transients from [TNS](https://wis-tns.weizmann.ac.il/) such as [supernova](https://en.wikipedia.org/wiki/Supernova) candidates.",
     "issues": [],
     "tags": [
-      "magicmirror",
-      "module",
       "tns"
     ]
   },
@@ -11974,8 +11439,6 @@
     "description": "Displays Hungarian compliments from [Uvaronc](https://udvaronc.hu).",
     "issues": [],
     "tags": [
-      "magicmirror",
-      "module",
       "udvaronc"
     ]
   },
@@ -12021,7 +11484,6 @@
     "description": "Learn new languages on your MagicMirror².",
     "issues": [],
     "tags": [
-      "magicmirror",
       "vocabulary trainer"
     ]
   },
@@ -12147,8 +11609,6 @@
     "description": "Display client list of a Teamspeak3 server.",
     "issues": [],
     "tags": [
-      "magicmirror",
-      "smart mirror",
       "teamspeak",
       "client list"
     ]
@@ -12206,7 +11666,6 @@
     "description": "Displays a random quote from various movies, books, and people.",
     "issues": [],
     "tags": [
-      "magicmirror",
       "magicmirror²",
       "quotes"
     ]
@@ -12397,7 +11856,6 @@
       "- W - package.json issue: No license field."
     ],
     "tags": [
-      "mmm",
       "magic-mirror",
       "covid19",
       "covid",
@@ -12413,8 +11871,6 @@
     "description": "Display google fit daily step count and weights.",
     "issues": [],
     "tags": [
-      "magic mirror",
-      "smart mirror",
       "google fit"
     ]
   },
@@ -12492,8 +11948,6 @@
     "description": "Displays last reading from your Dexcom G6 via the share API",
     "issues": [],
     "tags": [
-      "magicmirror",
-      "magicmirror2",
       "dexcom"
     ]
   },
@@ -12573,7 +12027,6 @@
     "issues": [],
     "tags": [
       "magic mirror module",
-      "smart mirror",
       "cheat sheet",
       "cht.sh",
       "tldr"
@@ -12610,7 +12063,6 @@
     "description": "Shows this week's school timetable from the Swedish school system Skola24.",
     "issues": [],
     "tags": [
-      "magic mirror",
       "schema",
       "skolschema",
       "skola24",
@@ -12628,7 +12080,6 @@
       "- W - package.json issue: No repository field."
     ],
     "tags": [
-      "magicmirror",
       "webuntis"
     ]
   },
@@ -12642,9 +12093,7 @@
     "issues": [
       "- W - package.json issue: No repository field."
     ],
-    "tags": [
-      "magicmirror"
-    ]
+    "tags": []
   },
   {
     "name": "MMM-Covid19-Vaccination",
@@ -12666,8 +12115,6 @@
     "description": "RKI-Covid19 data for German Counties",
     "issues": [],
     "tags": [
-      "magicmirror",
-      "magicmirror2",
       "rki"
     ]
   },
@@ -12703,8 +12150,6 @@
     "description": "A simple way to add an iFrame of any web content. Abandoned.",
     "issues": [],
     "tags": [
-      "magic mirror",
-      "smart mirror",
       "iframe"
     ]
   },
