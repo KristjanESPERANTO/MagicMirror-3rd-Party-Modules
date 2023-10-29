@@ -46,6 +46,7 @@ Note: This list is not entirely up to date. See the code for current status.
 
 - Write instructions: “How do I get my module presented perfectly?”
 - handle/mark deprecated/unmaintained modules
+- get rid of of the cloned repo files if a module is removed
 - create super script which runs all scripts in the right order and shows a progress information
 - rewite get_modules.py in javascript
 - Get last commit date from git?

@@ -7364,9 +7364,9 @@
   },
   {
     "name": "internet-monitor",
-    "url": "https://github.com/ronny3050/internet-monitor",
-    "id": "ronny3050/internet-monitor",
-    "maintainer": "ronny3050",
+    "url": "https://github.com/BrianHepler/internet-monitor",
+    "id": "BrianHepler/internet-monitor",
+    "maintainer": "BrianHepler",
     "maintainerURL": "",
     "description": "Display internet statistics such as strength and speed information.",
     "issues": [
@@ -7377,7 +7377,7 @@
       "speed"
     ],
     "license": "MIT",
-    "image": "node_modules-speedtest-net-bin-semi.jpg"
+    "image": "images-strength_almost.jpg"
   },
   {
     "name": "MMM-IOTStatus",

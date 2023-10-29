@@ -14,7 +14,7 @@ def get_modules():
     # For testing set this to a lower number to test only a few meodules
     max_module_counter = 99999
 
-    modules_json_file = open('./doc/modules.temp.json', encoding="utf-8")
+    modules_json_file = open('./docs/modules.temp.json', encoding="utf-8")
     modules = json.load(modules_json_file)
 
     for module in modules:

@@ -1,8 +1,8 @@
 # Result of the module analysis
 
-Timestamp: 2023-10-29 02:36:57
+Timestamp: 2023-10-29 04:39:40
 
-Number of analyzed modules: 1053
+Number of analyzed modules: 1054
 
 ## [BIRTHDAYS by marcomerens](https://github.com/marcomerens/anniversarymodule)
 
@@ -5033,11 +5033,10 @@ Number of analyzed modules: 1053
 2. Typo: Found 'Magic Mirror' in file `iFrame.js`: Replace it with `MagicMirror²`.
 3. Typo: Found 'Magic Mirror' in file `package.json`: Replace it with `MagicMirror²`.
 
-## [internet-monitor by ronny3050](https://github.com/ronny3050/internet-monitor)
+## [internet-monitor by BrianHepler](https://github.com/BrianHepler/internet-monitor)
 
 1. Recommendation: Module name doesn't follow the recommended pattern (it doesn't start with `MMM-`). Consider renaming your module.
 2. Recommendation: Found 'XMLHttpRequest' in file `jquery.js`: Replace it with built-in fetch.
-3. Issue: Found directory `node_modules`. This shouldn't be uploaded. Add `node_modules/`to `.gitignore`.
 
 ## [magic-mirror-voice by whyjustin](https://github.com/whyjustin/magic-mirror-voice)
 
