@@ -2,6 +2,8 @@ const fs = require("fs");
 const normalizeData = require("normalize-package-data");
 const sharp = require("sharp");
 
+const imagesFolder = "./docs/images";
+
 async function getJson(filePath) {
   const data = await fs.promises.readFile(filePath, "utf8");
   const json = JSON.parse(data);
@@ -9,7 +11,7 @@ async function getJson(filePath) {
 }
 
 function isImageFile(filename) {
-  return /\.(jpg|jpeg|png|gif|bmp|webp)$/i.test(filename);
+  return /\.(bmp|gif|jpg|jpeg|png|webp)$/i.test(filename);
 }
 
 async function findAndResizeImage(moduleName, moduleMaintainer) {
@@ -34,9 +36,15 @@ async function findAndResizeImage(moduleName, moduleMaintainer) {
   imageToProcess = firstScreenshotImage || firstImage;
 
   if (imageToProcess) {
-    targetImageName = imageToProcess.replaceAll("/", "-").replace("png", "jpg");
+    targetImageName = imageToProcess
+      .replaceAll("/", "-")
+      .replace("bmp", "jpg")
+      .replace("gif", "jpg")
+      .replace("jepg", "jpg")
+      .replace("png", "jpg")
+      .replace("webp", "jpg");
     const sourcePath = `${sourceFolder}/${imageToProcess}`;
-    const targetPath = `./docs/images/${moduleName}---${moduleMaintainer}---${targetImageName}`;
+    const targetPath = `${imagesFolder}/${moduleName}---${moduleMaintainer}---${targetImageName}`;
 
     await sharp(sourcePath).resize(300).toFile(targetPath);
   } else {
@@ -149,5 +157,15 @@ async function expandModuleList() {
     "utf8"
   );
 }
+
+/*
+ * Remove old images before creating new ones
+ */
+async function purgeImageFolder() {
+  await fs.promises.rm(imagesFolder, { recursive: true });
+  await fs.promises.mkdir(imagesFolder);
+}
+
+purgeImageFolder();
 
 expandModuleList();

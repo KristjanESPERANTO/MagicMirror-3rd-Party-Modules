@@ -45,7 +45,6 @@ Note: This list is not entirely up to date. See the code for current status.
 ## Ideas / To do
 
 - Write instructions: “How do I get my module presented perfectly?”
-- Purge the image folder at the start of script expand_module_list_with_repo_data.js to get rid of images from removed modules.
 - handle/mark deprecated/unmaintained modules
 - create super script which runs all scripts in the right order and shows a progress information
 - rewite get_modules.py in javascript

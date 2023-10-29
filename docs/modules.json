@@ -50,7 +50,7 @@
       "screensaver"
     ],
     "license": "MIT",
-    "image": "img-readme-burnin.gif"
+    "image": "img-readme-burnin.jpg"
   },
   {
     "name": "MMM-Button",
@@ -360,7 +360,7 @@
       "scheduler"
     ],
     "license": "MIT",
-    "image": ".github-example.gif"
+    "image": ".github-example.jpg"
   },
   {
     "name": "MMM-ModuleToggleButton",
@@ -418,7 +418,7 @@
       "network"
     ],
     "license": "MIT",
-    "image": "icons.gif"
+    "image": "icons.jpg"
   },
   {
     "name": "MMM-NotificationTrigger",
@@ -445,7 +445,7 @@
       "on-screen menu"
     ],
     "license": "MIT",
-    "image": "img-demo.gif"
+    "image": "img-demo.jpg"
   },
   {
     "name": "MMM-pages",
@@ -863,7 +863,7 @@
     "description": "A simple but powerful vertical, horizontal or static stock ticker based on Yahoo's finance API. Supports international stocks, crypto currencies and index symbols. No API key required.",
     "issues": [],
     "license": "MIT",
-    "image": "docs-horizontal.gif"
+    "image": "docs-horizontal.jpg"
   },
   {
     "name": "MMM-LICE",
@@ -1214,7 +1214,7 @@
       "- W - package.json issue: No repository field."
     ],
     "license": "MIT",
-    "image": "images-demo.gif"
+    "image": "images-demo.jpg"
   },
   {
     "name": "MMM-LeagueOfLegends",
@@ -2637,7 +2637,7 @@
       "bus"
     ],
     "license": "MIT",
-    "image": "MMM-nyc-transit.gif"
+    "image": "MMM-nyc-transit.jpg"
   },
   {
     "name": "MMM-oebb-station-board",
@@ -3672,7 +3672,7 @@
     "description": "Easy, hands free Amazon Alexa integration; activated, simply by saying \"Alexa\".",
     "issues": [],
     "license": "MIT",
-    "image": "styles-loading.gif"
+    "image": "styles-loading.jpg"
   },
   {
     "name": "MMM-GoogleAssistant",
@@ -4155,7 +4155,7 @@
       "territories"
     ],
     "license": "MIT",
-    "image": "img-AlertExample.gif"
+    "image": "img-AlertExample.jpg"
   },
   {
     "name": "MMM-Climacell-Hourly",
@@ -4318,7 +4318,7 @@
       "multigeiger"
     ],
     "license": "ISC",
-    "image": "screenshot-charts.gif"
+    "image": "screenshot-charts.jpg"
   },
   {
     "name": "MMM-FHEM",
@@ -4737,7 +4737,7 @@
     "description": "Display RBB weather data",
     "issues": [],
     "license": "MIT",
-    "image": ".github-screen.gif"
+    "image": ".github-screen.jpg"
   },
   {
     "name": "MMM-RainFc",
@@ -4896,7 +4896,7 @@
       "raspberrypi"
     ],
     "license": "MIT",
-    "image": "images-fanIconSpeed1.gif"
+    "image": "images-fanIconSpeed1.jpg"
   },
   {
     "name": "MMM-SmokedMirror",
@@ -5768,7 +5768,7 @@
       "cricket"
     ],
     "license": "MIT",
-    "image": "Screenshots-Screenshot.gif"
+    "image": "Screenshots-Screenshot.jpg"
   },
   {
     "name": "MMM-GConnect",
@@ -6567,7 +6567,7 @@
       "bandwith"
     ],
     "license": "MIT",
-    "image": "assets-MMM-edgerouter.gif"
+    "image": "assets-MMM-edgerouter.jpg"
   },
   {
     "name": "MMM-EmbedURL",
@@ -6834,7 +6834,7 @@
       "- W - package.json issue: No repository field."
     ],
     "license": "ISC",
-    "image": "examples-example.gif"
+    "image": "examples-example.jpg"
   },
   {
     "name": "MMM-GamepadEvents",
@@ -7444,7 +7444,7 @@
     "description": "Display status of lights and variables on a floor plan connected to an ISY-994i Device.",
     "issues": [],
     "license": "MIT",
-    "image": "screenshots-floorplan_animated.gif"
+    "image": "screenshots-floorplan_animated.jpg"
   },
   {
     "name": "MMM-json",
@@ -9504,7 +9504,7 @@
       "timer"
     ],
     "license": "MIT",
-    "image": "Timer.gif"
+    "image": "Timer.jpg"
   },
   {
     "name": "MMM-StorH",
@@ -11052,7 +11052,7 @@
       "nasa"
     ],
     "license": "MIT",
-    "image": "pix-7.gif"
+    "image": "pix-7.jpg"
   },
   {
     "name": "MMM-EOL",
@@ -11498,7 +11498,7 @@
     "description": "Nice gifs on the theme of \"IronMan\".",
     "issues": [],
     "license": "MIT",
-    "image": "Resources-1.gif"
+    "image": "Resources-1.jpg"
   },
   {
     "name": "MMM-ISS-Live",
@@ -12887,7 +12887,7 @@
       "vocabulary trainer"
     ],
     "license": "MIT",
-    "image": ".github-example.gif"
+    "image": ".github-example.jpg"
   },
   {
     "name": "MMM-Volume",
@@ -13215,7 +13215,7 @@
       "- W - package.json issue: No repository field."
     ],
     "license": "MIT",
-    "image": "public-guest.gif"
+    "image": "public-guest.jpg"
   },
   {
     "name": "MMM-nixie-clock",
