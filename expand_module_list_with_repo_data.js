@@ -25,7 +25,10 @@ async function findAndResizeImage(moduleName, moduleMaintainer) {
   let firstImage = null;
 
   for (const file of files) {
-    if (file.toLowerCase().startsWith("screenshot") && isImageFile(file)) {
+    if (
+      (file.toLowerCase().startsWith("screenshot") && isImageFile(file)) ||
+      (file.toLowerCase().startsWith("example") && isImageFile(file))
+    ) {
       firstScreenshotImage = file;
       break;
     } else if (isImageFile(file) && !firstImage) {

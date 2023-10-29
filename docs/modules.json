@@ -4612,7 +4612,7 @@
     "issues": [],
     "tags": [],
     "license": "ISC",
-    "image": "warning.PNG"
+    "image": "examples-1.jpg"
   },
   {
     "name": "MMM-NOAATides",
@@ -12039,7 +12039,7 @@
       "- W - package.json issue: No description"
     ],
     "license": "MIT",
-    "image": "public-radio-cleanpig.jpg"
+    "image": "examples-initialScreen.jpg"
   },
   {
     "name": "MMM-MPRIS2-WebSocket",
