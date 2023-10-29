@@ -44,6 +44,8 @@ Note: This list is not entirely up to date. See the code for current status.
 
 ## Ideas / To do
 
+- Rename repo
+- Parse markdown for description? In Browser or in script?
 - Write instructions: “How do I get my module presented perfectly?”
 - handle/mark deprecated/unmaintained modules
 - get rid of of the cloned repo files if a module is removed
