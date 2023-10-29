@@ -145,6 +145,19 @@ main {
   color: #999;
 }
 
+.card-image-container > img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
+
+.card-image-license-info {
+  color: var(--color-text-dimmed);
+  font-size: var(--font-size-xsmall);
+  text-align: center;
+}
+
 /* Give some tags an emoji */
 [data-tag]::before {
   padding-right: 0.3em;

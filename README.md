@@ -18,6 +18,9 @@ This script reads the module list (created by the script before) and clones all 
 
 This script expands the module list with information from the `package.json` files from the modules (if available).
 
+The script also adds an image. To do this, it searches the module's repo for an image that begins with "screenshot". If it doesn't find anything like that, it takes the first image it finds in the repo.
+Note: Images will only be included if a free license is specified in the `package.json`.
+
 From the collected information it creates a new JSON file which can be used later for the module web page and possibly also for `MMM-Remote-Control`.
 
 ## check_modules.py
@@ -41,9 +44,11 @@ Note: This list is not entirely up to date. See the code for current status.
 
 ## Ideas / To do
 
-- use images depending if the licence of the module is compatible
-- create thumbnails
-- divide create_modules_list.js into a part that only creates the list and another that do checks after the get_modules.py script
+- Write instructions: “How do I get my module presented perfectly?”
+- Purge the image folder at the start of script expand_module_list_with_repo_data.js to get rid of images from removed modules.
+- handle/mark deprecated/unmaintained modules
+- create super script which runs all scripts in the right order and shows a progress information
+- rewite get_modules.py in javascript
 - Get last commit date from git?
 - Use modules.json for website
 - Filter some keywords: MM, module, MagicMirror, Smart Miror, ...

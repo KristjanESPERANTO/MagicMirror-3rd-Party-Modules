@@ -392,7 +392,7 @@
     "id": "Klettner/MM-Remote",
     "maintainer": "Klettner",
     "maintainerURL": "https://github.com/Klettner",
-    "description": "Android 📱  and Windows-desktop 💻  app to control your MagicMirror² remotely. (Shutdown, reboot, toggle monitor on/off, change brightness of monitor, custom-commands...)",
+    "description": "Android 📱 and Windows-desktop 💻 app to control your MagicMirror² remotely. (Shutdown, reboot, toggle monitor on/off, change brightness of monitor, custom-commands...)",
     "issues": []
   },
   {
@@ -419,7 +419,7 @@
     "id": "ralberth/MMM-SendNotificationButton",
     "maintainer": "ralberth",
     "maintainerURL": "",
-    "description": "Web form to send arbitrary messages via `this.sendNotification()`",
+    "description": "Web form to send arbitrary messages via `this.sendNotification()`.",
     "issues": []
   },
   {
@@ -428,7 +428,7 @@
     "id": "Bee-Mar/MMM-Simple-Swiper",
     "maintainer": "Bee-Mar; OttoJuba",
     "maintainerURL": "",
-    "description": "Simple, multi-threaded interface for HC-SR04 ultra sonic sensors to be used with MMM-pages",
+    "description": "Simple, multi-threaded interface for HC-SR04 ultra sonic sensors to be used with MMM-pages.",
     "issues": []
   },
   {
@@ -536,7 +536,7 @@
     "id": "glitch452/MMM-CoinMarketCap",
     "maintainer": "glitch452",
     "maintainerURL": "",
-    "description": "Display cryptocurrency information from the Coin Market Cap website.  Ticker Price, Logos, Sparkline Graphs, etc...",
+    "description": "Display cryptocurrency information from the Coin Market Cap website. Ticker Price, Logos, Sparkline Graphs, etc...",
     "issues": []
   },
   {
@@ -1328,7 +1328,7 @@
     "id": "nigel-daniels/MMM-FAA-Delay",
     "maintainer": "nigel-daniels",
     "maintainerURL": "https://github.com/nigel-daniels",
-    "description": "Display information published by the FAA on delays and weather conditions at some US airports.  Note: this has been updated following a change by the FAA to the API.",
+    "description": "Display information published by the FAA on delays and weather conditions at some US airports. Note: this has been updated following a change by the FAA to the API.",
     "issues": []
   },
   {
@@ -2372,7 +2372,7 @@
     "id": "nigel-daniels/MMM-VTA-Live",
     "maintainer": "nigel-daniels",
     "maintainerURL": "https://github.com/nigel-daniels",
-    "description": "Updated: You can now monitor live arrival times at many CA, Bay Area transit stops.  This covers BART, VTA, etc.",
+    "description": "Updated: You can now monitor live arrival times at many CA, Bay Area transit stops. This covers BART, VTA, etc.",
     "issues": []
   },
   {
@@ -2840,7 +2840,7 @@
     "id": "ckoutavas/MMM-DHT",
     "maintainer": "ckoutavas",
     "maintainerURL": "",
-    "description": "Reads the temperature and humidity from a DHT22 sensor and displays one or both  on your MM2 with custom coloring based on a temperature/humidity range you specify.",
+    "description": "Reads the temperature and humidity from a DHT22 sensor and displays one or both with custom coloring based on a temperature/humidity range you specify.",
     "issues": []
   },
   {
@@ -3020,7 +3020,7 @@
     "id": "cslev/MMM-loldht22",
     "maintainer": "cslev",
     "maintainerURL": "",
-    "description": "Show the temperature and humidity from a DHT22 sensor. This module uses the loldht_22 library and can work inside a docker container, i.e., when your Magicmirror² is inside a docker. Lot of settings can be made for how the temperature/humidity data are shown. Change colors, icons, layout, as well as, define threshold values when icons/colors should change according to the temperature",
+    "description": "Show the temperature and humidity from a DHT22 sensor. This module uses the loldht_22 library and can work inside a docker container, i.e., when your Magicmirror² is inside a docker. Lot of settings can be made for how the temperature/humidity data are shown. Change colors, icons, layout, as well as, define threshold values when icons/colors should change according to the temperature.",
     "issues": []
   },
   {
@@ -3074,7 +3074,7 @@
     "id": "spectroman/mmm-moon-phases",
     "maintainer": "Spectroman",
     "maintainerURL": "",
-    "description": "Show an image of the current moon phase",
+    "description": "Show an image of the current moon phase.",
     "issues": []
   },
   {
@@ -3083,7 +3083,7 @@
     "id": "NolanKingdon/MMM-MoonPhase",
     "maintainer": "Nolan Kingdon",
     "maintainerURL": "",
-    "description": "Presents the real-time moon phase",
+    "description": "Presents the real-time moon phase.",
     "issues": []
   },
   {
@@ -3099,7 +3099,7 @@
     "name": "MMM-MyWeather",
     "url": "https://github.com/martinkooij/MMM-MyWeather",
     "id": "martinkooij/MMM-MyWeather",
-    "maintainer": "Jeff Clarke / Martin Kooij",
+    "maintainer": "Martin Kooij",
     "maintainerURL": "",
     "description": "Fork of MMM-WunderGround, with a few more display options and slightly different formatting. Updated under the hood to use weatherbit API, Wunderground free API is discontinued.",
     "issues": []
@@ -3119,7 +3119,7 @@
     "id": "cowboysdude/MMM-NOAA3",
     "maintainer": "cowboysdude",
     "maintainerURL": "https://github.com/cowboysdude",
-    "description": "Different providers for users to choose from.  Shows current plus 3 day forecast. Mouseover shows forecast, with Air, UV, Humidity, Sunrise and Set.",
+    "description": "Different providers for users to choose from. Shows current plus 3 day forecast. Mouseover shows forecast, with Air, UV, Humidity, Sunrise and Set.",
     "issues": []
   },
   {
@@ -4847,7 +4847,7 @@
     "id": "wonderslug/MMM-HomeAssistantDisplay",
     "maintainer": "WonderSlug",
     "maintainerURL": "https://github.com/wonderslug",
-    "description": "Displays information from Home Assistant using Home Assistant Templates to render any HTML you want for the module.  Includes support for Material Design Icons, Websockets for fast updating, and auto reconnect on Home Assistant restarts.  Allows you to show or hide a whole module based on a Home Assistant Template as well.",
+    "description": "Displays information from Home Assistant using Home Assistant Templates to render any HTML you want for the module. Includes support for Material Design Icons, Websockets for fast updating, and auto reconnect on Home Assistant restarts. Allows you to show or hide a whole module based on a Home Assistant Template as well.",
     "issues": []
   },
   {
@@ -5738,7 +5738,7 @@
     "id": "Fabrizz/MMM-OnSpotify",
     "maintainer": "Fabrizz",
     "maintainerURL": "https://github.com/Fabrizz",
-    "description": "Highly customizable MM2 module that displays what you are listening to in Spotify. Compatible with MMM-LiveLyrics and DynamicTheming",
+    "description": "Highly customizable module that displays what you are listening to in Spotify. Compatible with MMM-LiveLyrics and DynamicTheming",
     "issues": []
   },
   {
@@ -6168,8 +6168,8 @@
     "name": "MMM-RubbishCollection",
     "url": "https://github.com/nikobix/MMM-RubbishCollection",
     "id": "nikobix/MMM-RubbishCollection",
-    "maintainer": "[nikobix] (<https://github.com/nikobix>)",
-    "maintainerURL": "",
+    "maintainer": "nikobix",
+    "maintainerURL": "https://github.com/nikobix",
     "description": "Module to skim council website and extract rubish collection times",
     "issues": []
   },
@@ -8132,7 +8132,7 @@
     "id": "dwoolridge/MMM-LocalEvents",
     "maintainer": "dwoolridge",
     "maintainerURL": "",
-    "description": "Upcoming events in your city from G**gle.  Could be an update to the \"Eventful API\". Modular so additional event providers can be added.",
+    "description": "Upcoming events in your city from G**gle. Could be an update to the \"Eventful API\". Modular so additional event providers can be added.",
     "issues": []
   },
   {
@@ -8564,7 +8564,7 @@
     "id": "cowboysdude/MMM-Recipe",
     "maintainer": "Cowboysdude",
     "maintainerURL": "",
-    "description": "Displays a new recipe everyday on your MM2.",
+    "description": "Displays a new recipe everyday.",
     "issues": []
   },
   {
@@ -9158,7 +9158,7 @@
     "id": "yashatgit/MMM-Breathwork",
     "maintainer": "Yash",
     "maintainerURL": "",
-    "description": "Quick Breathing Exercise to calm you down",
+    "description": "Quick Breathing Exercise to calm you down.",
     "issues": []
   },
   {
@@ -9167,7 +9167,7 @@
     "id": "bibaldo/MMM-COVID19",
     "maintainer": "bibaldo",
     "maintainerURL": "",
-    "description": "Keep track of Corona Virus (COVID-19) cases via rapidapi API",
+    "description": "Keep track of Corona Virus (COVID-19) cases via rapidapi API.",
     "issues": []
   },
   {
@@ -9176,7 +9176,7 @@
     "id": "magic21nrw/MMM-COVID19-AMPEL",
     "maintainer": "magic21nrw",
     "maintainerURL": "",
-    "description": "German Ampel for Incidence Value for your City",
+    "description": "German Ampel for Incidence Value for your City.",
     "issues": []
   },
   {
@@ -9185,7 +9185,7 @@
     "id": "0m4r/MMM-covid19",
     "maintainer": "0m4r",
     "maintainerURL": "",
-    "description": "Live covid19 numbers provided via <https://covid19api.com/>",
+    "description": "Live covid19 numbers provided via <https://covid19api.com/>.",
     "issues": []
   },
   {
@@ -9203,7 +9203,7 @@
     "id": "LeftBrainCreated/MMM-JustForTodayMeditation",
     "maintainer": "LeftBrainCreated",
     "maintainerURL": "",
-    "description": "Displays today's NA \"Just For Today\" Header",
+    "description": "Displays today's NA \"Just For Today\" Header.",
     "issues": []
   },
   {
@@ -9221,7 +9221,7 @@
     "id": "Canonip/MMM-OneTouchReveal",
     "maintainer": "Canonip",
     "maintainerURL": "",
-    "description": "Keep track of blood glucose levels measured with your LifeScan OneTouch Glucose Meter",
+    "description": "Keep track of blood glucose levels measured with your LifeScan OneTouch Glucose Meter.",
     "issues": []
   },
   {
@@ -9374,7 +9374,7 @@
     "id": "fhinder/MMM-Covid19-Vaccination",
     "maintainer": "fhinder",
     "maintainerURL": "",
-    "description": "Keep track of the covid19 vaccination progress for Germany/German states",
+    "description": "Keep track of the covid19 vaccination progress for Germany/German states.",
     "issues": []
   },
   {

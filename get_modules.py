@@ -9,8 +9,6 @@ from pathlib import Path
 
 def get_modules():
     """Function to get all the modules per git."""
-    with open("MagicMirror.wiki/3rd-Party-Modules.md", encoding="utf-8") as file:
-        lines = file.readlines()
 
     module_counter = 0
     # For testing set this to a lower number to test only a few meodules
@@ -19,7 +17,6 @@ def get_modules():
     modules_json_file = open('modules.json', encoding="utf-8")
     modules = json.load(modules_json_file)
 
-    #for line in lines:
     for module in modules:
         if module_counter < max_module_counter:
             module_counter += 1
@@ -42,25 +39,16 @@ def get_modules():
                 subprocess.run(f"git clone {module_url} {path} --depth 1", shell=True, check=False)
     print("\n- I - Modules found and downloaded: " + str(module_counter) + "\n")
 
-    for line in lines:
-        line = line.strip()
-        if line.startswith("|"):
-            if not line.endswith("|"):
-                print('- E - Pipe is missing at the end of line: \n   ' + line + "\n   Please fix it in the wiki.")
-        if line.endswith("|"):
-            if not line.startswith("|"):
-                print('- E - Pipe is missing at the beginnig of line: \n   ' + line + "\n   Please fix it in the wiki.")
-
-
 def rename_modules_directory():
     """
     Deletes the directory "modules_temp" and renames the directory "modules" to "modules_temp".
     We need this so that we don't have to download all the git repositories every time.
     With rename process we get rid of old modules that have been removed from the list.
-    """
-    temp_path = Path('/modules_temp')
-    modules_path = Path('/modules')
 
+    NOTE/TODO: There is still a flaw in the system with this part. So far we are not getting rid of old modules.
+    """
+    temp_path = Path('./modules_temp')
+    modules_path = Path('./modules')
 
     if (modules_path.exists()):
         # Delete the directory "modules_temp" if it exists
@@ -68,7 +56,6 @@ def rename_modules_directory():
             shutil.rmtree(str(temp_path))
         except FileNotFoundError:
             pass
-
         # Rename the directory "modules" to "modules_temp"
         shutil.move(str(modules_path), str(temp_path))
 

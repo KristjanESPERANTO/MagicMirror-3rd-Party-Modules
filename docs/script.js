@@ -16,8 +16,18 @@ function displayCards(cards) {
     card.className = "card";
     card.innerHTML = `
               <div class="card-header"><a href="${cardData.url}" target="_blank">${cardData.name}</a></div>
-              <img src="${cardData.image}" alt="Image">
+              
             `;
+    if (cardData.image) {
+      const imagePath = `./images/${cardData.name}---${cardData.maintainer}---${cardData.image}`;
+      card.innerHTML += `
+      <div class="card-image-container">
+        <img src="${imagePath}" alt="Image">
+        <div class="card-image-license-info">Image from the repository. ©${cardData.license}</div>
+      </div>
+        `;
+    }
+
     card.innerHTML += `
         <p>${cardData.description}</p>
         <p><b>Maintainer:</b> ${cardData.maintainer}</p>
