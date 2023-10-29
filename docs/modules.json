@@ -56,12 +56,16 @@
     "name": "MMM-Button",
     "url": "https://github.com/ptrbld/MMM-Button",
     "id": "ptrbld/MMM-Button",
-    "maintainer": "PtrBld",
+    "maintainer": "ptrbld",
     "maintainerURL": "https://github.com/ptrbld",
     "description": "Use a button to hide or show different modules via a broadcast message.",
     "issues": [
-      "- W - There is no 'package.json'. We need this file to gather information about the module."
-    ]
+      "- I - No image found."
+    ],
+    "tags": [
+      "button"
+    ],
+    "license": "MIT"
   },
   {
     "name": "MMM-Buttons",
@@ -102,12 +106,15 @@
     "name": "MMM-connection-status",
     "url": "https://github.com/sheyabernstein/MMM-connection-status",
     "id": "sheyabernstein/MMM-connection-status",
-    "maintainer": "SheyaBernstein",
+    "maintainer": "sheyabernstein",
     "maintainerURL": "",
     "description": "Display internet connection status.",
-    "issues": [
-      "- W - There is no 'package.json'. We need this file to gather information about the module."
-    ]
+    "issues": [],
+    "tags": [
+      "magicmirror internet connection"
+    ],
+    "license": "MIT",
+    "image": "docs-preview.jpg"
   },
   {
     "name": "cookiecutter-magic-mirror-module",
@@ -215,11 +222,12 @@
     "name": "MMM-GitHub-Notifications",
     "url": "https://github.com/ByteExceptionM/MMM-GitHub-Notifications",
     "id": "ByteExceptionM/MMM-GitHub-Notifications",
-    "maintainer": "ByteException_",
+    "maintainer": "ByteExceptionM",
     "maintainerURL": "https://github.com/ByteExceptionM/",
     "description": "Displays clickable GitHub notifications",
     "issues": [
-      "- W - There is no 'package.json'. We need this file to gather information about the module."
+      "- W - package.json issue: No repository field.",
+      "- W - package.json issue: No license field."
     ]
   },
   {
@@ -374,23 +382,29 @@
     "name": "MMM-Navigate",
     "url": "https://github.com/Ax-LED/MMM-Navigate",
     "id": "Ax-LED/MMM-Navigate",
-    "maintainer": "AxLED",
+    "maintainer": "Ax-LED",
     "maintainerURL": "",
     "description": "A module to connect a rotary encoder to MagicMirror² and use it for navigation inside of MagicMirror².",
-    "issues": [
-      "- W - There is no 'package.json'. We need this file to gather information about the module."
-    ]
+    "issues": [],
+    "license": "MIT",
+    "image": "MMM-Navigate_fritzing_rotaryencoder.jpg"
   },
   {
     "name": "MMM-NetworkConnection",
     "url": "https://github.com/slametps/MMM-NetworkConnection",
     "id": "slametps/MMM-NetworkConnection",
-    "maintainer": "Slamet PS",
+    "maintainer": "slametps",
     "maintainerURL": "https://github.com/slametps",
     "description": "Display network connection status (ping, download speed, upload speed).",
-    "issues": [
-      "- W - There is no 'package.json'. We need this file to gather information about the module."
-    ]
+    "issues": [],
+    "tags": [
+      "networkconnection",
+      "network",
+      "connection",
+      "speedtest"
+    ],
+    "license": "MIT",
+    "image": "others-MMM-NetworkConnection-screenshot-01.jpg"
   },
   {
     "name": "MMM-network-signal",
@@ -496,7 +510,7 @@
     "name": "MMM-ProfileSwitcher",
     "url": "https://github.com/tosti007/MMM-ProfileSwitcher",
     "id": "tosti007/MMM-ProfileSwitcher",
-    "maintainer": "toasti007",
+    "maintainer": "tosti007",
     "maintainerURL": "",
     "description": "This Module adds the ability to have different layouts for different profiles.",
     "issues": [
@@ -609,12 +623,12 @@
     "name": "MMM-Simple-Swiper",
     "url": "https://github.com/Bee-Mar/MMM-Simple-Swiper",
     "id": "Bee-Mar/MMM-Simple-Swiper",
-    "maintainer": "Bee-Mar; OttoJuba",
+    "maintainer": "Bee-Mar",
     "maintainerURL": "",
     "description": "Simple, multi-threaded interface for HC-SR04 ultra sonic sensors to be used with MMM-pages.",
-    "issues": [
-      "- W - There is no 'package.json'. We need this file to gather information about the module."
-    ]
+    "issues": [],
+    "license": "MIT",
+    "image": "images-MMM-Simple-Swiper-Pin-Layout.jpg"
   },
   {
     "name": "MMM-SmartTouch",
@@ -631,12 +645,17 @@
     "name": "MMM-Tabulator",
     "url": "https://github.com/E3V3A/MMM-Tabulator",
     "id": "E3V3A/MMM-Tabulator",
-    "maintainer": "E:V:A",
+    "maintainer": "E3V3A",
     "maintainerURL": "https://github.com/E3V3A/",
     "description": "A Demo module for using [Tabulator](https://tabulator.info/) to directly parse JSON/XML into MM DHTML tables.",
-    "issues": [
-      "- W - There is no 'package.json'. We need this file to gather information about the module."
-    ]
+    "issues": [],
+    "tags": [
+      "tables",
+      "json",
+      "tabulator"
+    ],
+    "license": "MIT",
+    "image": "demo1.jpg"
   },
   {
     "name": "MMM-ViewNotifications",
@@ -839,18 +858,18 @@
     "name": "MMM-Jast",
     "url": "https://github.com/jalibu/MMM-Jast",
     "id": "jalibu/MMM-Jast",
-    "maintainer": "Jalibu",
+    "maintainer": "jalibu",
     "maintainerURL": "https://github.com/jalibu",
     "description": "A simple but powerful vertical, horizontal or static stock ticker based on Yahoo's finance API. Supports international stocks, crypto currencies and index symbols. No API key required.",
-    "issues": [
-      "- W - There is no 'package.json'. We need this file to gather information about the module."
-    ]
+    "issues": [],
+    "license": "MIT",
+    "image": "docs-horizontal.gif"
   },
   {
     "name": "MMM-LICE",
     "url": "https://github.com/mykle1/MMM-LICE",
     "id": "mykle1/MMM-LICE",
-    "maintainer": "Mykle1",
+    "maintainer": "mykle1",
     "maintainerURL": "",
     "description": "Live International Currency Exchange",
     "issues": [
@@ -1018,7 +1037,7 @@
     "name": "MMM-CalendarTodayTomorrow",
     "url": "https://github.com/qunu/MMM-CalendarTodayTomorrow",
     "id": "qunu/MMM-CalendarTodayTomorrow",
-    "maintainer": "Qunu",
+    "maintainer": "qunu",
     "maintainerURL": "https://github.com/qunu",
     "description": "This calendar module functions the same as the default calendar app, but it only displays Today and Tomorrows events.",
     "issues": [
@@ -1201,18 +1220,18 @@
     "name": "MMM-LeagueOfLegends",
     "url": "https://github.com/JulianEgbert/MMM-LeagueOfLegends",
     "id": "JulianEgbert/MMM-LeagueOfLegends",
-    "maintainer": "Julian",
+    "maintainer": "JulianEgbert",
     "maintainerURL": "",
     "description": "Displays your rank in League Of Legends, as well as a match history of your recent games.",
-    "issues": [
-      "- W - There is no 'package.json'. We need this file to gather information about the module."
-    ]
+    "issues": [],
+    "license": "MIT",
+    "image": "Screenshot.jpg"
   },
   {
     "name": "MMM-LoadShedding",
     "url": "https://github.com/qunu/MMM-LoadShedding",
     "id": "qunu/MMM-LoadShedding",
-    "maintainer": "Qunu",
+    "maintainer": "qunu",
     "maintainerURL": "https://github.com/qunu",
     "description": "Display the expected power cut periods throughout the day.",
     "issues": [
@@ -1237,7 +1256,7 @@
     "name": "MMM-News-QR",
     "url": "https://github.com/nischi/MMM-News-QR",
     "id": "nischi/MMM-News-QR",
-    "maintainer": "Nischi",
+    "maintainer": "nischi",
     "maintainerURL": "",
     "description": "Add a QR Code with the link to the showing Newsfeed (Default Newsfeed Module)",
     "issues": [
@@ -1248,23 +1267,29 @@
     "name": "MMM-NINA",
     "url": "https://github.com/jalibu/MMM-NINA",
     "id": "jalibu/MMM-NINA",
-    "maintainer": "Jalibu",
+    "maintainer": "jalibu",
     "maintainerURL": "https://github.com/Jalibu",
     "description": "Client implementation for German NINA Warn API. Supports alerts of KatWarn, Biwapp and Mowas.",
     "issues": [
-      "- W - There is no 'package.json'. We need this file to gather information about the module."
-    ]
+      "- I - No image found."
+    ],
+    "license": "MIT"
   },
   {
     "name": "MMM-Oelpreise",
     "url": "https://github.com/eckonator/MMM-Oelpreise",
     "id": "eckonator/MMM-Oelpreise",
-    "maintainer": "Eckonator",
+    "maintainer": "eckonator",
     "maintainerURL": "https://github.com/eckonator",
     "description": "The module displays oil prices for the current year based on Chart.js and the API of heizoel24.de.",
-    "issues": [
-      "- W - There is no 'package.json'. We need this file to gather information about the module."
-    ]
+    "issues": [],
+    "tags": [
+      "magicmirrir",
+      "oil",
+      "chart"
+    ],
+    "license": "MIT",
+    "image": "MMM-Oelpreise.jpg"
   },
   {
     "name": "MMM-OpeningHours",
@@ -1305,12 +1330,17 @@
     "name": "MMM-Pelletpreise",
     "url": "https://github.com/eckonator/MMM-Pelletpreise",
     "id": "eckonator/MMM-Pelletpreise",
-    "maintainer": "Eckonator",
+    "maintainer": "eckonator",
     "maintainerURL": "https://github.com/eckonator",
     "description": "The module displays pellet prices for the current year based on Chart.js and the API of heizpellets24.de.",
-    "issues": [
-      "- W - There is no 'package.json'. We need this file to gather information about the module."
-    ]
+    "issues": [],
+    "tags": [
+      "magicmirrir",
+      "pellet",
+      "chart"
+    ],
+    "license": "MIT",
+    "image": "MMM-Pelletpreise.jpg"
   },
   {
     "name": "MMM-Reddit-News-Ticker",
@@ -1346,7 +1376,7 @@
     "name": "MMM-TiHimawari8Earth",
     "url": "https://github.com/zhouxichun/MMM-TiHimawari8Earth",
     "id": "zhouxichun/MMM-TiHimawari8Earth",
-    "maintainer": "Zhouxichun",
+    "maintainer": "zhouxichun",
     "maintainerURL": "https://github.com/zhouxichun",
     "description": "This is a module that fetch earth live image form Himawari #8 geostationary satellite and display images on screen.",
     "issues": [
@@ -1368,7 +1398,7 @@
     "name": "MMM-wiki",
     "url": "https://github.com/mihairinzis/MMM-wiki",
     "id": "mihairinzis/MMM-wiki",
-    "maintainer": "mrinzis",
+    "maintainer": "mihairinzis",
     "maintainerURL": "",
     "description": "Displays random Wikipedia snippets.",
     "issues": [
@@ -1379,7 +1409,7 @@
     "name": "MMM-ZAPTEC",
     "url": "https://github.com/PierreGode/MMM-ZAPTEC",
     "id": "PierreGode/MMM-ZAPTEC",
-    "maintainer": "Pierre Gode",
+    "maintainer": "PierreGode",
     "maintainerURL": "https://github.com/PierreGode",
     "description": "Module for displaying ZAPTEC charging API.",
     "issues": [
@@ -1459,18 +1489,20 @@
     "name": "MMM-Avinor",
     "url": "https://github.com/kagjerde/MMM-Avinor",
     "id": "kagjerde/MMM-Avinor",
-    "maintainer": "KAG",
+    "maintainer": "kagjerde",
     "maintainerURL": "",
     "description": "Avinor flight schedule for airports in Norway",
     "issues": [
-      "- W - There is no 'package.json'. We need this file to gather information about the module."
-    ]
+      "- W - package.json issue: No repository field."
+    ],
+    "license": "MIT",
+    "image": "Screenshot0.jpg"
   },
   {
     "name": "MMM-BartTimes",
     "url": "https://github.com/falafel2222/MMM-BartTimes",
     "id": "falafel2222/MMM-BartTimes",
-    "maintainer": "Alex Goldstein",
+    "maintainer": "falafel2222",
     "maintainerURL": "",
     "description": "Bay Area Rapid Transit (BART) departure times",
     "issues": [
@@ -1523,12 +1555,14 @@
     "name": "MMM-Bixi",
     "url": "https://github.com/nictruong/MMM-Bixi",
     "id": "nictruong/MMM-Bixi",
-    "maintainer": "Nicolas Truong",
+    "maintainer": "nictruong",
     "maintainerURL": "https://github.com/nictruong",
     "description": "Displays the number of available bikes and electric bikes on any Bixi stations in Montreal",
     "issues": [
-      "- W - There is no 'package.json'. We need this file to gather information about the module."
-    ]
+      "- W - package.json issue: No description"
+    ],
+    "license": "ISC",
+    "image": "screenshot.jpg"
   },
   {
     "name": "MMM-Bluebikes",
@@ -1584,12 +1618,16 @@
     "name": "MMM-bustimes",
     "url": "https://github.com/73cirdan/MMM-bustimes",
     "id": "73cirdan/MMM-bustimes",
-    "maintainer": "cirdan",
+    "maintainer": "73cirdan",
     "maintainerURL": "",
     "description": "Display Dutch bus and some other public transports for a targeted set of bus stops.",
-    "issues": [
-      "- W - There is no 'package.json'. We need this file to gather information about the module."
-    ]
+    "issues": [],
+    "tags": [
+      "bus",
+      "times"
+    ],
+    "license": "MIT",
+    "image": "screenshot.jpg"
   },
   {
     "name": "MMM-Bysykkel",
@@ -1617,7 +1655,7 @@
     "name": "MMM-Caltrain",
     "url": "https://github.com/zzhenney/MMM-Caltrain",
     "id": "zzhenney/MMM-Caltrain",
-    "maintainer": "Zac Henney",
+    "maintainer": "zzhenney",
     "maintainerURL": "https://github.com/zzhenney",
     "description": "Display departure times or estimated time to departure for the selected Caltrain station.",
     "issues": [
@@ -1628,7 +1666,7 @@
     "name": "MMM-ClosestFlight",
     "url": "https://github.com/rc7/MMM-ClosestFlight",
     "id": "rc7/MMM-ClosestFlight",
-    "maintainer": "RC7",
+    "maintainer": "rc7",
     "maintainerURL": "",
     "description": "Displays the closest aircraft's callsign and altitude using ADS-B data.",
     "issues": [
@@ -1639,12 +1677,18 @@
     "name": "MMM-CoupEscooters",
     "url": "https://github.com/bogomips/MMM-CoupEscooters",
     "id": "bogomips/MMM-CoupEscooters",
-    "maintainer": "Bogomips",
+    "maintainer": "bogomips",
     "maintainerURL": "",
     "description": "Display COUP e-scooters around you and sort them by distance. It works for Berlin and other cities",
-    "issues": [
-      "- W - There is no 'package.json'. We need this file to gather information about the module."
-    ]
+    "issues": [],
+    "tags": [
+      "coup",
+      "sooter",
+      "escooter",
+      "berlin"
+    ],
+    "license": "ISC",
+    "image": "screenshots-screenshot.jpg"
   },
   {
     "name": "MMM-CracowMPK",
@@ -1694,7 +1738,7 @@
     "name": "MMM-DCMetroTimes",
     "url": "https://github.com/kyle-kelly/MMM-DCMetroTimes",
     "id": "kyle-kelly/MMM-DCMetroTimes",
-    "maintainer": "Kyle Kelly",
+    "maintainer": "kyle-kelly",
     "maintainerURL": "https://github.com/kyle-kelly",
     "description": "A fork of [MMM-DCMetroTrainTimes](https://github.com/AdamMoses-GitHub/MMM-DCMetroTrainTimes) (above) that also displays arrival times for buses.",
     "issues": [
@@ -1888,23 +1932,33 @@
     "name": "MMM-Flights",
     "url": "https://gitlab.com/khassel/MMM-Flights",
     "id": "khassel/MMM-Flights",
-    "maintainer": "karsten13",
+    "maintainer": "khassel",
     "maintainerURL": "https://gitlab.com/karsten13",
     "description": "Displays current flights in a defined area with a map containing the plane positions.",
-    "issues": [
-      "- W - There is no 'package.json'. We need this file to gather information about the module."
-    ]
+    "issues": [],
+    "tags": [
+      "flight",
+      "tracking",
+      "radar"
+    ],
+    "license": "MIT",
+    "image": "data-flights_mapbox.jpg"
   },
   {
     "name": "MMM-FlightsAbove",
     "url": "https://github.com/E3V3A/MMM-FlightsAbove",
     "id": "E3V3A/MMM-FlightsAbove",
-    "maintainer": "E:V:A",
+    "maintainer": "E3V3A",
     "maintainerURL": "https://github.com/E3V3A/",
     "description": "A flight radar that display airplane/flight details of what is currently flying in the airspace above some location.",
-    "issues": [
-      "- W - There is no 'package.json'. We need this file to gather information about the module."
-    ]
+    "issues": [],
+    "tags": [
+      "flights",
+      "iata/icao",
+      "airspace"
+    ],
+    "license": "MIT",
+    "image": "images-FlightsAbove1.jpg"
   },
   {
     "name": "MMM-FlightTracker",
@@ -2119,12 +2173,12 @@
     "name": "publika",
     "url": "https://github.com/alonsourbano/publika",
     "id": "alonsourbano/publika",
-    "maintainer": "Alonso Urbano",
+    "maintainer": "alonsourbano",
     "maintainerURL": "",
     "description": "Display local transport for different regions of Finland (Helsinki, Hämeenlinna, Joensuu, Jyväskylä, Kajaani, Kotka, Kouvola, Kuopio, Lahti, Lappeenranta, Mikkeli, Tampere, Oulu, Rovaniemi, Turku, Vaasa)",
-    "issues": [
-      "- W - There is no 'package.json'. We need this file to gather information about the module."
-    ]
+    "issues": [],
+    "license": "MIT",
+    "image": "docs-aguffsox.jpg"
   },
   {
     "name": "MMM-idos",
@@ -2293,12 +2347,15 @@
     "name": "MMM-MercedesMe",
     "url": "https://github.com/ashishtank/MMM-MercedesMe",
     "id": "ashishtank/MMM-MercedesMe",
-    "maintainer": "Ashish Tank",
+    "maintainer": "ashishtank",
     "maintainerURL": "https://github.com/ashishtank",
     "description": "Displays EV/Fuel status and Range of Mercedes cars",
-    "issues": [
-      "- W - There is no 'package.json'. We need this file to gather information about the module."
-    ]
+    "issues": [],
+    "tags": [
+      "mercedes"
+    ],
+    "license": "MIT",
+    "image": "screenshots-appregistration.jpg"
   },
   {
     "name": "mmm-miami-transit",
@@ -2326,12 +2383,14 @@
     "name": "MMM-MTA-NextBus",
     "url": "https://github.com/tie624/MMM-MTA-NextBus",
     "id": "tie624/MMM-MTA-NextBus",
-    "maintainer": "Tie",
+    "maintainer": "tie624",
     "maintainerURL": "",
     "description": "Displays the arrival time of the next few buses for a particular bus stop. This is for the Metropolitan Transit Authority (MTA) in New York City.",
     "issues": [
-      "- W - There is no 'package.json'. We need this file to gather information about the module."
-    ]
+      "- W - package.json issue: No repository field.",
+      "- I - No image found."
+    ],
+    "license": "MIT"
   },
   {
     "name": "MMM-mvgmunich",
@@ -2372,18 +2431,22 @@
     "name": "MMM-MyCommute",
     "url": "https://github.com/qistoph/MMM-MyCommute",
     "id": "qistoph/MMM-MyCommute",
-    "maintainer": "Jeff Clarke",
+    "maintainer": "qistoph",
     "maintainerURL": "",
     "description": "Displays your commute times to several destinations. Highly configurable.",
-    "issues": [
-      "- W - There is no 'package.json'. We need this file to gather information about the module."
-    ]
+    "issues": [],
+    "tags": [
+      "traffic",
+      "commute"
+    ],
+    "license": "MIT",
+    "image": "screenshots-MMM-MyCommute-screenshot.jpg"
   },
   {
     "name": "MMM-MyTraffic",
     "url": "https://github.com/htilburgs/MMM-MyTraffic",
     "id": "htilburgs/MMM-MyTraffic",
-    "maintainer": "HTilburgs",
+    "maintainer": "htilburgs",
     "maintainerURL": "",
     "description": "Module is dead for now... Real Time Dutch traffic information from the ANWB",
     "issues": [
@@ -2394,23 +2457,30 @@
     "name": "MMM-MyTTC",
     "url": "https://github.com/jclarke0000/MMM-MyTTC",
     "id": "jclarke0000/MMM-MyTTC",
-    "maintainer": "Jeff Clarke",
+    "maintainer": "jclarke0000",
     "maintainerURL": "",
     "description": "Displays Toronto Transit schedule for your selected routes and stops.",
     "issues": [
-      "- W - There is no 'package.json'. We need this file to gather information about the module."
-    ]
+      "- W - package.json issue: No repository field.",
+      "- I - No image found."
+    ],
+    "license": "ISC"
   },
   {
     "name": "MMM-MyVolvo",
     "url": "https://github.com/mazim-co/MMM-MyVolvo",
     "id": "mazim-co/MMM-MyVolvo",
-    "maintainer": "mazim",
+    "maintainer": "mazim-co",
     "maintainerURL": "https://github.com/mazim-co",
     "description": "Displays information about your Volvo from the Volvo Connect API.",
-    "issues": [
-      "- W - There is no 'package.json'. We need this file to gather information about the module."
-    ]
+    "issues": [],
+    "tags": [
+      "volvo",
+      "myvolvo",
+      "volvooncall"
+    ],
+    "license": "MIT",
+    "image": "graphics-c40-electric.jpg"
   },
   {
     "name": "MMM-Nantes-TAN",
@@ -2432,12 +2502,16 @@
     "name": "MMM-NCTtimes",
     "url": "https://gitlab.com/dnmmrdr1/MMM-NCTtimes",
     "id": "dnmmrdr1/MMM-NCTtimes",
-    "maintainer": "dnmmrdr",
+    "maintainer": "dnmmrdr1",
     "maintainerURL": "",
     "description": "Displays bus information for the Nottingham bus company, NCT.",
-    "issues": [
-      "- W - There is no 'package.json'. We need this file to gather information about the module."
-    ]
+    "issues": [],
+    "tags": [
+      "nct",
+      "buses"
+    ],
+    "license": "MIT",
+    "image": "assets-screenshot1.jpg"
   },
   {
     "name": "MMM-NesteBussAtB",
@@ -2483,23 +2557,30 @@
     "name": "MMM-NJTransit",
     "url": "https://github.com/dimitrystd/MMM-NJTransit",
     "id": "dimitrystd/MMM-NJTransit",
-    "maintainer": "Dmitry Studynskyi",
+    "maintainer": "dimitrystd",
     "maintainerURL": "",
     "description": "Real-time bus tracking for NJ Transit.",
-    "issues": [
-      "- W - There is no 'package.json'. We need this file to gather information about the module."
-    ]
+    "issues": [],
+    "tags": [
+      "public transport",
+      "nj transit bus"
+    ],
+    "license": "GPL-3.0-or-later",
+    "image": "docs-preview1.jpg"
   },
   {
     "name": "MMM-NLDepartureTimes",
     "url": "https://github.com/Travelbacon/MMM-NLDepartureTimes",
     "id": "Travelbacon/MMM-NLDepartureTimes",
-    "maintainer": "travelbacon",
+    "maintainer": "Travelbacon",
     "maintainerURL": "https://github.com/Travelbacon",
     "description": "Shows departure times of Dutch public transport. Where you can sort on destination and group stops in one stop. Good for hubs where multiple lines and authorities merge, so yo have one stop instead of multiple.",
-    "issues": [
-      "- W - There is no 'package.json'. We need this file to gather information about the module."
-    ]
+    "issues": [],
+    "tags": [
+      "publictransport"
+    ],
+    "license": "MIT",
+    "image": "screenshot.jpg"
   },
   {
     "name": "MMM-NMBS-Connection",
@@ -2523,7 +2604,7 @@
     "name": "MMM-NsInfo",
     "url": "https://github.com/mfurious/MMM-NsInfo",
     "id": "mfurious/MMM-NsInfo",
-    "maintainer": "MFurious",
+    "maintainer": "mfurious",
     "maintainerURL": "",
     "description": "Shows Dutch train departures from the NS (Dutch railways), based on a configurable train station.",
     "issues": [
@@ -2545,29 +2626,39 @@
     "name": "MMM-nyc-transit",
     "url": "https://github.com/elaniobro/MMM-nyc-transit",
     "id": "elaniobro/MMM-nyc-transit",
-    "maintainer": "Elaniobro",
+    "maintainer": "elaniobro",
     "maintainerURL": "https://github.com/elaniobro",
     "description": "Real-time MTA subway countdown clock for stations you choose. Configurable for marquee and or list view",
-    "issues": [
-      "- W - There is no 'package.json'. We need this file to gather information about the module."
-    ]
+    "issues": [],
+    "tags": [
+      "nyc",
+      "transit",
+      "subway",
+      "bus"
+    ],
+    "license": "MIT",
+    "image": "MMM-nyc-transit.gif"
   },
   {
     "name": "MMM-oebb-station-board",
     "url": "https://github.com/mscharl/MMM-oebb-station-board",
     "id": "mscharl/MMM-oebb-station-board",
-    "maintainer": "Michael Scharl",
+    "maintainer": "mscharl",
     "maintainerURL": "",
     "description": "Shows trains and other public transports for a configured ÖBB-Station.",
-    "issues": [
-      "- W - There is no 'package.json'. We need this file to gather information about the module."
-    ]
+    "issues": [],
+    "tags": [
+      "oebb",
+      "öbb"
+    ],
+    "license": "MIT",
+    "image": "assets-screenshot.jpg"
   },
   {
     "name": "MMM-OneBusAway",
     "url": "https://github.com/jugler/MMM-OneBusAway",
     "id": "jugler/MMM-OneBusAway",
-    "maintainer": "Jesus Silva",
+    "maintainer": "jugler",
     "maintainerURL": "",
     "description": "Shows ETA for buses for a given stop using OneBusAway API",
     "issues": [
@@ -2578,12 +2669,17 @@
     "name": "MMM-OpelStatuses",
     "url": "https://github.com/santanachia/MMM-OpelStatuses",
     "id": "santanachia/MMM-OpelStatuses",
-    "maintainer": "Santanachia",
+    "maintainer": "santanachia",
     "maintainerURL": "",
     "description": "Shows current production status of your Opel/Vauxhall",
     "issues": [
-      "- W - There is no 'package.json'. We need this file to gather information about the module."
-    ]
+      "- I - No image found."
+    ],
+    "tags": [
+      "opel",
+      "status"
+    ],
+    "license": "MIT"
   },
   {
     "name": "MMM-OsloCityBike",
@@ -2632,7 +2728,7 @@
     "name": "MMM-pathtime",
     "url": "https://github.com/Comf0rTS1997/MMM-pathtime",
     "id": "Comf0rTS1997/MMM-pathtime",
-    "maintainer": "comf0rts",
+    "maintainer": "Comf0rTS1997",
     "maintainerURL": "",
     "description": "An unofficial module to show Port Autority Trans-Hudson(PATH) Train schedules.",
     "issues": [
@@ -2795,11 +2891,11 @@
     "name": "MMM-RNV",
     "url": "https://github.com/yawnsde/MMM-RNV",
     "id": "yawnsde/MMM-RNV",
-    "maintainer": "yawns",
+    "maintainer": "yawnsde",
     "maintainerURL": "",
     "description": "Monitor a given station in the RNV traffic network",
     "issues": [
-      "- W - There is no 'package.json'. We need this file to gather information about the module."
+      "- W - An error occurred while getting information from 'package.json': SyntaxError: Unexpected token ']', ...\"odule\",\n  ],\n  \"auth\"... is not valid JSON"
     ]
   },
   {
@@ -3113,7 +3209,7 @@
     "name": "MMM-TomTomTrafficIncidents",
     "url": "https://github.com/Travelbacon/MMM-TomTomTrafficIncidents",
     "id": "Travelbacon/MMM-TomTomTrafficIncidents",
-    "maintainer": "travelbacon",
+    "maintainer": "Travelbacon",
     "maintainerURL": "https://github.com/Travelbacon",
     "description": "Shows on a TomTom map of your location the current traffic and actual traffic incidents like crashes and road construction. You can choose if you want traffic delay/jam or traffic speed/flow to be displayed.",
     "issues": [
@@ -3219,7 +3315,7 @@
     "name": "MMM-TransLoc",
     "url": "https://github.com/OrangeHoopla/MMM-TransLoc",
     "id": "OrangeHoopla/MMM-TransLoc",
-    "maintainer": "OrangleHoopla",
+    "maintainer": "OrangeHoopla",
     "maintainerURL": "",
     "description": "Display TransLoc locations for a bus stop, used by the Rider App",
     "issues": [
@@ -3304,7 +3400,7 @@
     "name": "MMM-UKLiveTrainDepartures",
     "url": "https://github.com/XBCreepinJesus/MMM-UKLiveTrainDepartures",
     "id": "XBCreepinJesus/MMM-UKLiveTrainDepartures",
-    "maintainer": "CreepinJesus",
+    "maintainer": "XBCreepinJesus",
     "maintainerURL": "https://github.com/XBCreepinJesus",
     "description": "A module showing live train departure/arrival times for the UK's National Rail network.",
     "issues": [
@@ -3398,23 +3494,27 @@
     "name": "MMM-vvsDeparture",
     "url": "https://github.com/fhinder/MMM-vvsDeparture",
     "id": "fhinder/MMM-vvsDeparture",
-    "maintainer": "Fabian Hinder",
+    "maintainer": "fhinder",
     "maintainerURL": "https://github.com/fhinder",
     "description": "Display departures for public transport in Stuttgart (Covers VVS Area). Based on MMM-vvsDebarture by Niklas Kappler, changed deprected request dependency",
-    "issues": [
-      "- W - There is no 'package.json'. We need this file to gather information about the module."
-    ]
+    "issues": [],
+    "tags": [
+      "vvs",
+      "public-transport"
+    ],
+    "license": "MIT",
+    "image": "example1.jpg"
   },
   {
     "name": "MMM-WeasleyClock",
     "url": "https://github.com/BrianHepler/MMM-WeasleyClock",
     "id": "BrianHepler/MMM-WeasleyClock",
-    "maintainer": "Brian Hepler",
+    "maintainer": "BrianHepler",
     "maintainerURL": "https://github.com/BrianHepler",
     "description": "Displays a clock that shows your family's location via OwnTracks.",
-    "issues": [
-      "- W - There is no 'package.json'. We need this file to gather information about the module."
-    ]
+    "issues": [],
+    "license": "MIT",
+    "image": "images-connection.jpg"
   },
   {
     "name": "MMM-weconnectid",
@@ -3621,12 +3721,16 @@
     "name": "Hello-Lucy",
     "url": "https://github.com/mykle1/Hello-Lucy",
     "id": "mykle1/Hello-Lucy",
-    "maintainer": "Mykle1",
+    "maintainer": "mykle1",
     "maintainerURL": "",
     "description": "Hide/Show individual modules and pages of modules with custom audio responses that you create.",
-    "issues": [
-      "- W - There is no 'package.json'. We need this file to gather information about the module."
-    ]
+    "issues": [],
+    "tags": [
+      "voice recognition",
+      "speech to text"
+    ],
+    "license": "MIT",
+    "image": "images-1.jpg"
   },
   {
     "name": "MMM-Hello-Mirror",
@@ -3643,7 +3747,7 @@
     "name": "MMM-kalliope",
     "url": "https://github.com/kalliope-project/MMM-kalliope",
     "id": "kalliope-project/MMM-kalliope",
-    "maintainer": "sispheor",
+    "maintainer": "kalliope-project",
     "maintainerURL": "",
     "description": "Control MM from Kalliope assistant",
     "issues": [
@@ -3817,12 +3921,17 @@
     "name": "MMM-2Day-NOAA-Forecast",
     "url": "https://github.com/jinserk/MMM-2Day-NOAA-Forecast",
     "id": "jinserk/MMM-2Day-NOAA-Forecast",
-    "maintainer": "Jinserk Baik",
+    "maintainer": "jinserk",
     "maintainerURL": "https://github.com/jinserk",
     "description": "Show 4 consecutive 12-hr forecast, provided by [NOAA National Weather Service API](https://www.weather.gov/documentation/services-web-api). No user registration nor API-key required.",
     "issues": [
-      "- W - There is no 'package.json'. We need this file to gather information about the module."
-    ]
+      "- I - No image found."
+    ],
+    "tags": [
+      "weather",
+      "forecast"
+    ],
+    "license": "MIT"
   },
   {
     "name": "MMM-3Day-Forecast",
@@ -3969,12 +4078,21 @@
     "name": "MMM-bergfex.at",
     "url": "https://github.com/nebulx29/MMM-bergfex",
     "id": "nebulx29/MMM-bergfex",
-    "maintainer": "nebulx",
+    "maintainer": "nebulx29",
     "maintainerURL": "",
     "description": "Displays snow reports from bergfex.at",
     "issues": [
-      "- W - There is no 'package.json'. We need this file to gather information about the module."
-    ]
+      "- W - package.json issue: license should be a valid SPDX license expression",
+      "- W - No compatible or wrong license field in 'package.json'. Without that, we can't use an image."
+    ],
+    "tags": [
+      "bergfex",
+      "weather forecast",
+      "snow forecast",
+      "skiing",
+      "austria"
+    ],
+    "license": "Apache 2.0"
   },
   {
     "name": "MMM-bergfex.at",
@@ -4000,7 +4118,7 @@
     "name": "MMM-BMW-CC",
     "url": "https://github.com/mykle1/MMM-BMW-CC",
     "id": "mykle1/MMM-BMW-CC",
-    "maintainer": "Mykle1",
+    "maintainer": "mykle1",
     "maintainerURL": "",
     "description": "Weather designed for bottom bar position, now using the ClimaCell API",
     "issues": [
@@ -4011,7 +4129,7 @@
     "name": "MMM-BMW-OW",
     "url": "https://github.com/mykle1/MMM-BMW-OW",
     "id": "mykle1/MMM-BMW-OW",
-    "maintainer": "Mykle1",
+    "maintainer": "mykle1",
     "maintainerURL": "",
     "description": "Weather designed for bottom bar position, now using the OpenWeather API",
     "issues": [
@@ -4043,7 +4161,7 @@
     "name": "MMM-Climacell-Hourly",
     "url": "https://github.com/mykle1/MMM-Climacell-Hourly",
     "id": "mykle1/MMM-Climacell-Hourly",
-    "maintainer": "Mykle1",
+    "maintainer": "mykle1",
     "maintainerURL": "",
     "description": "Hourly weather designed for bottom bar position using the Climacell API",
     "issues": [
@@ -4065,12 +4183,12 @@
     "name": "MMM-PilotWX",
     "url": "https://github.com/mykle1/MMM-PilotWX",
     "id": "mykle1/MMM-PilotWX",
-    "maintainer": "Mykle1",
+    "maintainer": "mykle1",
     "maintainerURL": "",
     "description": "Static or Rotating Weather for Pilots. International ICAO's",
-    "issues": [
-      "- W - There is no 'package.json'. We need this file to gather information about the module."
-    ]
+    "issues": [],
+    "license": "MIT",
+    "image": "images-1.PNG"
   },
   {
     "name": "MMM-Buienradar",
@@ -4100,12 +4218,21 @@
     "name": "MMM-DHT-Sensor",
     "url": "https://github.com/grenagit/MMM-DHT-Sensor",
     "id": "grenagit/MMM-DHT-Sensor",
-    "maintainer": "Grena",
+    "maintainer": "grenagit",
     "maintainerURL": "",
     "description": "A module displaying the current temperature and humidity from DHT11, DHT22 and AM2302 sensors.",
-    "issues": [
-      "- W - There is no 'package.json'. We need this file to gather information about the module."
-    ]
+    "issues": [],
+    "tags": [
+      "temperature",
+      "humidity",
+      "sensor",
+      "dht11",
+      "dht22",
+      "am2302",
+      "bcm2835"
+    ],
+    "license": "MIT",
+    "image": "MMM-DHT-Sensor_screenshot.jpg"
   },
   {
     "name": "MMM-DWD-WarnWeather",
@@ -4213,7 +4340,7 @@
     "name": "MMM-FloGraph",
     "url": "https://github.com/kagjerde/MMM-FloGraph",
     "id": "kagjerde/MMM-FloGraph",
-    "maintainer": "KAG",
+    "maintainer": "kagjerde",
     "maintainerURL": "",
     "description": "Displays tide graph for Norway",
     "issues": [
@@ -4224,7 +4351,7 @@
     "name": "MMM-Flo",
     "url": "https://github.com/kagjerde/MMM-Flo",
     "id": "kagjerde/MMM-Flo",
-    "maintainer": "KAG",
+    "maintainer": "kagjerde",
     "maintainerURL": "",
     "description": "Displays tide table for Norway",
     "issues": [
@@ -4366,12 +4493,24 @@
     "name": "MMM-MarineWeather",
     "url": "https://github.com/grenagit/MMM-MarineWeather",
     "id": "grenagit/MMM-MarineWeather",
-    "maintainer": "Grena",
+    "maintainer": "grenagit",
     "maintainerURL": "",
     "description": "A module displaying the current marine weather (water and air temperatures, wind and wave conditions).",
-    "issues": [
-      "- W - There is no 'package.json'. We need this file to gather information about the module."
-    ]
+    "issues": [],
+    "tags": [
+      "marine weather",
+      "sea weather",
+      "storm glass",
+      "temperature",
+      "wind",
+      "wave",
+      "pressure",
+      "cloud cover",
+      "visibility",
+      "sea level"
+    ],
+    "license": "MIT",
+    "image": "MMM-MarineWeather_screenshot1.jpg"
   },
   {
     "name": "MMM-meteoblueCurrent",
@@ -4399,7 +4538,7 @@
     "name": "MMM-moon-phases",
     "url": "https://github.com/spectroman/mmm-moon-phases",
     "id": "spectroman/mmm-moon-phases",
-    "maintainer": "Spectroman",
+    "maintainer": "spectroman",
     "maintainerURL": "",
     "description": "Show an image of the current moon phase.",
     "issues": [
@@ -4410,40 +4549,53 @@
     "name": "MMM-MoonPhase",
     "url": "https://github.com/NolanKingdon/MMM-MoonPhase",
     "id": "NolanKingdon/MMM-MoonPhase",
-    "maintainer": "Nolan Kingdon",
+    "maintainer": "NolanKingdon",
     "maintainerURL": "",
     "description": "Presents the real-time moon phase.",
     "issues": [
-      "- W - There is no 'package.json'. We need this file to gather information about the module."
-    ]
+      "- W - package.json issue: No repository field."
+    ],
+    "license": "MIT",
+    "image": "public-Phases-full.jpg"
   },
   {
     "name": "MMM-MyDutchWeather",
     "url": "https://github.com/htilburgs/MMM-MyDutchWeather",
     "id": "htilburgs/MMM-MyDutchWeather",
-    "maintainer": "HTilburgs",
+    "maintainer": "htilburgs",
     "maintainerURL": "",
     "description": "Displays local Dutch weather from the KNMI 10-minutes netwerk",
-    "issues": [
-      "- W - There is no 'package.json'. We need this file to gather information about the module."
-    ]
+    "issues": [],
+    "tags": [
+      "weer",
+      "weerbericht",
+      "knmi"
+    ],
+    "license": "MIT",
+    "image": "screenshot01.jpg"
   },
   {
     "name": "MMM-MyWeather",
     "url": "https://github.com/martinkooij/MMM-MyWeather",
     "id": "martinkooij/MMM-MyWeather",
-    "maintainer": "Martin Kooij",
+    "maintainer": "martinkooij",
     "maintainerURL": "",
     "description": "Fork of MMM-WunderGround, with a few more display options and slightly different formatting. Updated under the hood to use weatherbit API, Wunderground free API is discontinued.",
-    "issues": [
-      "- W - There is no 'package.json'. We need this file to gather information about the module."
-    ]
+    "issues": [],
+    "tags": [
+      "\"magic",
+      "mirror\"",
+      "\"weather",
+      "module\""
+    ],
+    "license": "MIT",
+    "image": "img-weezle-chanceflurries.jpg"
   },
   {
     "name": "MMM-NL-rain-intensity",
     "url": "https://github.com/thekampany/MMM-NL-rain-intensity",
     "id": "thekampany/MMM-NL-rain-intensity",
-    "maintainer": "theKampany",
+    "maintainer": "thekampany",
     "maintainerURL": "",
     "description": "Do I need an umbrella when i go out, or shall i take my chances? Shows rainintensity for a location in the Netherlands in the next hour.",
     "issues": [
@@ -4509,18 +4661,21 @@
     "name": "MMM-OneCallWeather",
     "url": "https://github.com/KristjanESPERANTO/MMM-OneCallWeather",
     "id": "KristjanESPERANTO/MMM-OneCallWeather",
-    "maintainer": "Kristjan ESPERANTO",
+    "maintainer": "KristjanESPERANTO",
     "maintainerURL": "",
     "description": "Display current and forecast weather based on the Openweathermap OneCall API data with alternative formatting.",
-    "issues": [
-      "- W - There is no 'package.json'. We need this file to gather information about the module."
-    ]
+    "issues": [],
+    "tags": [
+      "weather"
+    ],
+    "license": "MIT",
+    "image": "OneCallWeather-Screenshot.jpg"
   },
   {
     "name": "MMM-OpenmapWeather",
     "url": "https://github.com/sathyarajv/MMM-OpenmapWeather",
     "id": "sathyarajv/MMM-OpenmapWeather",
-    "maintainer": "SathyarajV",
+    "maintainer": "sathyarajv",
     "maintainerURL": "",
     "description": "Display current weather as image based on the Openmap Weather API data with different formatting.",
     "issues": [
@@ -4588,12 +4743,16 @@
     "name": "MMM-RainFc",
     "url": "https://github.com/73cirdan/MMM-rainfc",
     "id": "73cirdan/MMM-rainfc",
-    "maintainer": "cirdan",
+    "maintainer": "73cirdan",
     "maintainerURL": "",
     "description": "2 hour Dutch rain forecast graph based on Buienradar",
-    "issues": [
-      "- W - There is no 'package.json'. We need this file to gather information about the module."
-    ]
+    "issues": [],
+    "tags": [
+      "rain",
+      "forecast"
+    ],
+    "license": "MIT",
+    "image": "screenshot2.jpg"
   },
   {
     "name": "MMM-RainForecast",
@@ -4612,7 +4771,7 @@
     "name": "MMM-rain-forecast",
     "url": "https://github.com/spoturdeal/MMM-rain-forecast",
     "id": "spoturdeal/MMM-rain-forecast",
-    "maintainer": "Carl",
+    "maintainer": "spoturdeal",
     "maintainerURL": "",
     "description": "Graphical rain forecast for the Netherlands, no dependies or outside scripts needed. Superfast with scalable vector graphics in desired color",
     "issues": [
@@ -4623,12 +4782,12 @@
     "name": "MMM-RAIN-MAP",
     "url": "https://github.com/jalibu/MMM-RAIN-MAP",
     "id": "jalibu/MMM-RAIN-MAP",
-    "maintainer": "Jalibu",
+    "maintainer": "jalibu",
     "maintainerURL": "https://github.com/jalibu",
     "description": "A rain radar map based on OpenStreetMap. Multiple location markers, option for alternating positions and zoom levels",
-    "issues": [
-      "- W - There is no 'package.json'. We need this file to gather information about the module."
-    ]
+    "issues": [],
+    "license": "MIT",
+    "image": "img-marker-icon-2x-black.jpg"
   },
   {
     "name": "MMM-RainForecast-FR",
@@ -4645,7 +4804,7 @@
     "name": "MMM-RAIN-RADAR",
     "url": "https://github.com/jojoduquartier/MMM-RAIN-RADAR",
     "id": "jojoduquartier/MMM-RAIN-RADAR",
-    "maintainer": "jojoDuQuartier",
+    "maintainer": "jojoduquartier",
     "maintainerURL": "",
     "description": "Displays a Precipitation Radar for your Location",
     "issues": [
@@ -4656,18 +4815,29 @@
     "name": "MMM-VigilanceMeteoFrance",
     "url": "https://github.com/grenagit/MMM-VigilanceMeteoFrance",
     "id": "grenagit/MMM-VigilanceMeteoFrance",
-    "maintainer": "Grena",
+    "maintainer": "grenagit",
     "maintainerURL": "",
     "description": "A module displaying the current level of vigilance of weather phenomena and associated risks for France.",
-    "issues": [
-      "- W - There is no 'package.json'. We need this file to gather information about the module."
-    ]
+    "issues": [],
+    "tags": [
+      "vigilance",
+      "weather phenomena",
+      "météo france",
+      "france",
+      "risks",
+      "storm",
+      "water",
+      "rise",
+      "snow"
+    ],
+    "license": "MIT",
+    "image": "MMM-VigilanceMeteoFrance_screenshot1.jpg"
   },
   {
     "name": "MMM-VigiCrues",
     "url": "https://github.com/grenagit/MMM-VigiCrues",
     "id": "grenagit/MMM-VigiCrues",
-    "maintainer": "Grena",
+    "maintainer": "grenagit",
     "maintainerURL": "",
     "description": "A module displaying the last value of water level at a station in the Vigicrues network in France.",
     "issues": [
@@ -4841,7 +5011,7 @@
     "name": "MMM-WeatherGraph",
     "url": "https://github.com/FlatPepsi17/MMM-WeatherGraph",
     "id": "FlatPepsi17/MMM-WeatherGraph",
-    "maintainer": "FlatPepsi",
+    "maintainer": "FlatPepsi17",
     "maintainerURL": "",
     "description": "Weather forecast with rain & temp graphs. Lots of options to turn on & off. Data from OpenWeatherMap API",
     "issues": [
@@ -4893,7 +5063,7 @@
     "name": "MMM-WeatherBackground",
     "url": "https://github.com/BrianHepler/MMM-WeatherBackground",
     "id": "BrianHepler/MMM-WeatherBackground",
-    "maintainer": "Brian Hepler",
+    "maintainer": "BrianHepler",
     "maintainerURL": "https://github.com/BrianHepler",
     "description": "Dynamically loaded weather image background from Unsplash. This is a plugin of other weather modules.",
     "issues": [
@@ -4984,12 +5154,19 @@
     "name": "MMM-WorldTides",
     "url": "https://github.com/yawnsde/MMM-WorldTides",
     "id": "yawnsde/MMM-WorldTides",
-    "maintainer": "yawns",
+    "maintainer": "yawnsde",
     "maintainerURL": "",
     "description": "Displays low and high water time predictions for a given tide station, derived from worldtides.info",
     "issues": [
-      "- W - There is no 'package.json'. We need this file to gather information about the module."
-    ]
+      "- I - No image found."
+    ],
+    "tags": [
+      "tide",
+      "high water",
+      "low water",
+      "flood"
+    ],
+    "license": "MIT"
   },
   {
     "name": "wuforecast",
@@ -5017,7 +5194,7 @@
     "name": "MMM-WWI",
     "url": "https://github.com/mykle1/MMM-WWI",
     "id": "mykle1/MMM-WWI",
-    "maintainer": "Mykle1",
+    "maintainer": "mykle1",
     "maintainerURL": "",
     "description": "Nope! Not World War I. It's **Weather Without Icons**. Up to the minute weather. Full weather information, yet a small footprint.",
     "issues": [
@@ -5061,12 +5238,13 @@
     "name": "MMM-DailyBibleVerse",
     "url": "https://github.com/arthurgarzajr/MMM-DailyBibleVerse",
     "id": "arthurgarzajr/MMM-DailyBibleVerse",
-    "maintainer": "Arthur Garza",
+    "maintainer": "arthurgarzajr",
     "maintainerURL": "",
     "description": "A module that displays the verse of the day from <www.biblegateway.com>.",
     "issues": [
-      "- W - There is no 'package.json'. We need this file to gather information about the module."
-    ]
+      "- I - No image found."
+    ],
+    "license": "MIT"
   },
   {
     "name": "MMM-DailyBuddismWisdom",
@@ -5107,18 +5285,18 @@
     "name": "MMM-DagelijksWoord",
     "url": "https://github.com/wctimmer/MMM-DagelijksWoord",
     "id": "wctimmer/MMM-DagelijksWoord",
-    "maintainer": "Wim Timmer",
+    "maintainer": "wctimmer",
     "maintainerURL": "",
     "description": "A module that displays the **dutch** verse of the day from <www.dagelijkswoord.nl>.",
-    "issues": [
-      "- W - There is no 'package.json'. We need this file to gather information about the module."
-    ]
+    "issues": [],
+    "license": "MIT",
+    "image": "images-screenshot.jpg"
   },
   {
     "name": "MMM-ELMPrayerTime",
     "url": "https://github.com/moinahmed001/MMM-ELMPrayerTime",
     "id": "moinahmed001/MMM-ELMPrayerTime",
-    "maintainer": "Moin Ahmed",
+    "maintainer": "moinahmed001",
     "maintainerURL": "",
     "description": "Displays praying times from East London Mosque in London.",
     "issues": [
@@ -5174,45 +5352,62 @@
     "name": "MMM-MyPrayerTimes",
     "url": "https://github.com/htilburgs/MMM-MyPrayerTimes",
     "id": "htilburgs/MMM-MyPrayerTimes",
-    "maintainer": "HTilburgs",
+    "maintainer": "htilburgs",
     "maintainerURL": "",
     "description": "MyPrayerTimes is a simple Module, that calculate prayer times for any location around the world, based on a variety of calculation methods currently used in Muslim communities using the Aladhan API",
-    "issues": [
-      "- W - There is no 'package.json'. We need this file to gather information about the module."
-    ]
+    "issues": [],
+    "license": "MIT",
+    "image": "screenshot.jpg"
   },
   {
     "name": "MMM-PrayerTime",
     "url": "https://github.com/slametps/MMM-PrayerTime",
     "id": "slametps/MMM-PrayerTime",
-    "maintainer": "Slamet PS",
+    "maintainer": "slametps",
     "maintainerURL": "https://github.com/slametps",
     "description": "Displays moslem praying time with Adhan recital.",
-    "issues": [
-      "- W - There is no 'package.json'. We need this file to gather information about the module."
-    ]
+    "issues": [],
+    "tags": [
+      "moslem",
+      "islam",
+      "prayertime",
+      "adzan"
+    ],
+    "license": "MIT",
+    "image": "screenshot-alert.jpg"
   },
   {
     "name": "MMM-RandomQuranAyah",
     "url": "https://github.com/slametps/MMM-RandomQuranAyah",
     "id": "slametps/MMM-RandomQuranAyah",
-    "maintainer": "Slamet PS",
+    "maintainer": "slametps",
     "maintainerURL": "https://github.com/slametps",
     "description": "Display ayah/verse of Qur'an randomly.",
-    "issues": [
-      "- W - There is no 'package.json'. We need this file to gather information about the module."
-    ]
+    "issues": [],
+    "tags": [
+      "moslem",
+      "islam",
+      "quran"
+    ],
+    "license": "MIT",
+    "image": "screenshot.jpg"
   },
   {
     "name": "MMM-shabbat",
     "url": "https://github.com/sheyabernstein/MMM-shabbat",
     "id": "sheyabernstein/MMM-shabbat",
-    "maintainer": "SheyaBernstein",
+    "maintainer": "sheyabernstein",
     "maintainerURL": "",
     "description": "Display shabbat times for the current week and optionally hide all modules.",
     "issues": [
-      "- W - There is no 'package.json'. We need this file to gather information about the module."
-    ]
+      "- I - No image found."
+    ],
+    "tags": [
+      "shabbat",
+      "hebrew",
+      "jewish"
+    ],
+    "license": "MIT"
   },
   {
     "name": "MMM-Zmanim",
@@ -5251,12 +5446,17 @@
     "name": "MMM-BiathlonResults",
     "url": "https://github.com/grenagit/MMM-BiathlonResults",
     "id": "grenagit/MMM-BiathlonResults",
-    "maintainer": "Grena",
+    "maintainer": "grenagit",
     "maintainerURL": "",
     "description": "A module displaying the current biathlon results (World Cup and IBU Cup).",
-    "issues": [
-      "- W - There is no 'package.json'. We need this file to gather information about the module."
-    ]
+    "issues": [],
+    "tags": [
+      "biathlon",
+      "result",
+      "ibu"
+    ],
+    "license": "MIT",
+    "image": "MMM-BiathlonResults_screenshot1.jpg"
   },
   {
     "name": "MMM-CHAMPIONSQUEUE-LEADERBOARD",
@@ -5291,12 +5491,15 @@
     "name": "MMM-Formula1",
     "url": "https://github.com/ianperrin/MMM-Formula1",
     "id": "ianperrin/MMM-Formula1",
-    "maintainer": "ian",
+    "maintainer": "ianperrin",
     "maintainerURL": "",
     "description": "A module that displays the driver standings from the current Formula 1 season.",
-    "issues": [
-      "- W - There is no 'package.json'. We need this file to gather information about the module."
-    ]
+    "issues": [],
+    "tags": [
+      "formula1"
+    ],
+    "license": "MIT",
+    "image": "flags.jpg"
   },
   {
     "name": "MMM-F1",
@@ -5357,12 +5560,15 @@
     "name": "MMM-MyScoreboard",
     "url": "https://github.com/jclarke0000/MMM-MyScoreboard",
     "id": "jclarke0000/MMM-MyScoreboard",
-    "maintainer": "jclarke000",
+    "maintainer": "jclarke0000",
     "maintainerURL": "",
     "description": "Module to display today's scores for your favourite teams across multiple sports.",
-    "issues": [
-      "- W - There is no 'package.json'. We need this file to gather information about the module."
-    ]
+    "issues": [],
+    "tags": [
+      "sports"
+    ],
+    "license": "MIT",
+    "image": "logos-NCAAW-CAL.jpg"
   },
   {
     "name": "MMM-MyStandings",
@@ -5423,7 +5629,7 @@
     "name": "MMM-Olympia",
     "url": "https://github.com/GHLasse/MagicMirror-Olympia-Module",
     "id": "GHLasse/MagicMirror-Olympia-Module",
-    "maintainer": "ghlasse",
+    "maintainer": "GHLasse",
     "maintainerURL": "",
     "description": "A module that displays the medals for the summer olympics 2016.",
     "issues": [
@@ -5568,18 +5774,18 @@
     "name": "MMM-GConnect",
     "url": "https://github.com/tderflinger/MMM-GConnect",
     "id": "tderflinger/MMM-GConnect",
-    "maintainer": "td",
+    "maintainer": "tderflinger",
     "maintainerURL": "https://github.com/tderflinger",
     "description": "A module that displays sports data from your Garmin Connect(tm) account.",
-    "issues": [
-      "- W - There is no 'package.json'. We need this file to gather information about the module."
-    ]
+    "issues": [],
+    "license": "MIT",
+    "image": "doc-screenshot-MMM-GConnect.jpg"
   },
   {
     "name": "MMM-ICA",
     "url": "https://github.com/PierreGode/MMM-ICA",
     "id": "PierreGode/MMM-ICA",
-    "maintainer": "Pierre Gode",
+    "maintainer": "PierreGode",
     "maintainerURL": "https://github.com/PierreGode",
     "description": "MMM-ICA is a Module for connecting to the Swedish grocery store ICA API and get information.",
     "issues": [
@@ -5634,7 +5840,7 @@
     "name": "MMM-AfterShip",
     "url": "https://github.com/mykle1/MMM-AfterShip",
     "id": "mykle1/MMM-AfterShip",
-    "maintainer": "Mykle1",
+    "maintainer": "mykle1",
     "maintainerURL": "",
     "description": "Track all your deliveries in one module. Supports 428 couriers worldwide!",
     "issues": [
@@ -5658,23 +5864,31 @@
     "name": "MMM-AirbarHelper",
     "url": "https://github.com/ryanzor/MMM-AirbarHelper",
     "id": "ryanzor/MMM-AirbarHelper",
-    "maintainer": "Ryan Cooke",
+    "maintainer": "ryanzor",
     "maintainerURL": "",
     "description": "Module to add touch input to your mirror using a ~$50 usb plug and play sensor.",
     "issues": [
-      "- W - There is no 'package.json'. We need this file to gather information about the module."
-    ]
+      "- W - package.json issue: No repository field.",
+      "- I - No image found."
+    ],
+    "license": "MIT"
   },
   {
     "name": "MMM-Airtable",
     "url": "https://github.com/yashatgit/MMM-Airtable",
     "id": "yashatgit/MMM-Airtable",
-    "maintainer": "Yash",
+    "maintainer": "yashatgit",
     "maintainerURL": "",
     "description": "Module to display tables from Airtable.",
-    "issues": [
-      "- W - There is no 'package.json'. We need this file to gather information about the module."
-    ]
+    "issues": [],
+    "tags": [
+      "magic-mirror",
+      "airtable",
+      "magic-mirror-table",
+      "table"
+    ],
+    "license": "ISC",
+    "image": "screenshots-MMM_Airtable_airtableKey.jpg"
   },
   {
     "name": "MMM-AlarmClock",
@@ -5723,12 +5937,18 @@
     "name": "MMM-API",
     "url": "https://github.com/juzim/MMM-Api",
     "id": "juzim/MMM-Api",
-    "maintainer": "JuZim",
+    "maintainer": "juzim",
     "maintainerURL": "",
     "description": "A somewhat RESTful(ish) API.",
     "issues": [
-      "- W - There is no 'package.json'. We need this file to gather information about the module."
-    ]
+      "- I - No image found."
+    ],
+    "tags": [
+      "remote control",
+      "control",
+      "api"
+    ],
+    "license": "MIT"
   },
   {
     "name": "MMM-AquareaSmartCloud",
@@ -5828,12 +6048,13 @@
     "name": "MMM-BoschSmartHome",
     "url": "https://github.com/jalibu/MMM-BoschSmartHome",
     "id": "jalibu/MMM-BoschSmartHome",
-    "maintainer": "Jalibu",
+    "maintainer": "jalibu",
     "maintainerURL": "https://github.com/jalibu/MMM-BoschSmartHome",
     "description": "A client interface for the Bosch Smart Home System. Supports rooms, Window/Door contacts, Room Climate Controls, Thermostats, Twinguards, Visualization of Temperature, Humidity and Purity, Bosch Home Connect Dishwashers, Philips Hue Bridge",
     "issues": [
-      "- W - There is no 'package.json'. We need this file to gather information about the module."
-    ]
+      "- I - No image found."
+    ],
+    "license": "MIT"
   },
   {
     "name": "MMM-BornBeforeDate",
@@ -5850,7 +6071,7 @@
     "name": "MMM-Bose-Soundtouch",
     "url": "https://github.com/spoturdeal/MMM-Bose-Soundtouch",
     "id": "spoturdeal/MMM-Bose-Soundtouch",
-    "maintainer": "Carl",
+    "maintainer": "spoturdeal",
     "maintainerURL": "",
     "description": "Shows the music that plays on your Soundtouch",
     "issues": [
@@ -5928,12 +6149,15 @@
     "name": "MMM-CalendarExt2",
     "url": "https://github.com/MMM-CalendarExt2/MMM-CalendarExt2",
     "id": "MMM-CalendarExt2/MMM-CalendarExt2",
-    "maintainer": "klaernie",
+    "maintainer": "MMM-CalendarExt2",
     "maintainerURL": "",
     "description": "Extended calendar and event view.",
-    "issues": [
-      "- W - There is no 'package.json'. We need this file to gather information about the module."
-    ]
+    "issues": [],
+    "tags": [
+      "calendar"
+    ],
+    "license": "MIT",
+    "image": "screenshot.jpg"
   },
   {
     "name": "MMM-CalendarExt3",
@@ -5988,7 +6212,7 @@
     "name": "MMM-CalendarExtTimeline",
     "url": "https://github.com/MMM-CalendarExt2/MMM-CalendarExtTimeline",
     "id": "MMM-CalendarExt2/MMM-CalendarExtTimeline",
-    "maintainer": "klaernie",
+    "maintainer": "MMM-CalendarExt2",
     "maintainerURL": "",
     "description": "Display current timeline schedules. This is a plugin module for `MMM-CalendarExt2`.",
     "issues": [
@@ -5999,7 +6223,7 @@
     "name": "MMM-CalendarExtMinimonth",
     "url": "https://github.com/MMM-CalendarExt2/MMM-CalendarExtMinimonth",
     "id": "MMM-CalendarExt2/MMM-CalendarExtMinimonth",
-    "maintainer": "klaernie",
+    "maintainer": "MMM-CalendarExt2",
     "maintainerURL": "",
     "description": "Display mini month calendar. This is a plugin module for `MMM-CalendarExt2`.",
     "issues": [
@@ -6010,7 +6234,7 @@
     "name": "MMM-CalendarExtPlan",
     "url": "https://github.com/MMM-CalendarExt2/MMM-CalendarExtPlan",
     "id": "MMM-CalendarExt2/MMM-CalendarExtPlan",
-    "maintainer": "klaernie",
+    "maintainer": "MMM-CalendarExt2",
     "maintainerURL": "",
     "description": "Display daily plan by criteria. This is a plugin module for `MMM-CalendarExt2`.",
     "issues": [
@@ -6043,7 +6267,7 @@
     "name": "MMM-Callmonitor-Current-Call",
     "url": "https://github.com/paviro/MMM-Callmonitor-Current-Call",
     "id": "paviro/MMM-Callmonitor-Current-Call",
-    "maintainer": "PaViRo",
+    "maintainer": "paviro",
     "maintainerURL": "",
     "description": "Extension for [MMM-FRITZ-Box-Callmonitor](https://github.com/paviro/MMM-FRITZ-Box-Callmonitor) (Displays the currently active call)",
     "issues": [
@@ -6071,11 +6295,11 @@
     "name": "MMM-CardDavBirthdaysProvider",
     "url": "https://github.com/ulrichwisser/MMM-CardDavBirthdaysProvider",
     "id": "ulrichwisser/MMM-CardDavBirthdaysProvider",
-    "maintainer": "Ulrich Wisser",
+    "maintainer": "ulrichwisser",
     "maintainerURL": "",
     "description": "Birthday calendar from your CardDav contacts",
     "issues": [
-      "- W - There is no 'package.json'. We need this file to gather information about the module."
+      "- W - An error occurred while getting information from 'package.json': SyntaxError: Expected double-quoted property name in JSON at position 777 (line 25 column 3)"
     ]
   },
   {
@@ -6187,23 +6411,28 @@
     "name": "MMM-D2L",
     "url": "https://github.com/berryerlouis/MMM-D2L",
     "id": "berryerlouis/MMM-D2L",
-    "maintainer": "lberryer",
+    "maintainer": "berryerlouis",
     "maintainerURL": "",
     "description": "Displays information retreived from a D2L module for Linky",
     "issues": [
-      "- W - There is no 'package.json'. We need this file to gather information about the module."
-    ]
+      "- W - package.json issue: No repository field."
+    ],
+    "license": "MIT",
+    "image": "ui-d2l.jpg"
   },
   {
     "name": "MMM-Daikin",
     "url": "https://github.com/kymeyer/MMM-daikin",
     "id": "kymeyer/MMM-daikin",
-    "maintainer": "KyMeyer",
+    "maintainer": "kymeyer",
     "maintainerURL": "",
     "description": "Displays information retreived from a Daikin Air Conditioner Unit",
-    "issues": [
-      "- W - There is no 'package.json'. We need this file to gather information about the module."
-    ]
+    "issues": [],
+    "tags": [
+      "daikin"
+    ],
+    "license": "MIT",
+    "image": "screenshots-daikin.jpg"
   },
   {
     "name": "MMM-DaikinAirbase",
@@ -6256,23 +6485,33 @@
     "name": "MMM-DiscordWatch",
     "url": "https://github.com/Smiche/MMM-DiscordWatch",
     "id": "Smiche/MMM-DiscordWatch",
-    "maintainer": "smiche",
+    "maintainer": "Smiche",
     "maintainerURL": "",
     "description": "A module to display messages from discord channels.",
     "issues": [
-      "- W - There is no 'package.json'. We need this file to gather information about the module."
-    ]
+      "- W - package.json issue: No repository field.",
+      "- W - package.json issue: license should be a valid SPDX license expression",
+      "- W - No compatible or wrong license field in 'package.json'. Without that, we can't use an image."
+    ],
+    "tags": [
+      "discord"
+    ],
+    "license": "CC Zero"
   },
   {
     "name": "MMM-Discourse-notifications",
     "url": "https://github.com/jordy-u/MMM-Discourse-notifications",
     "id": "jordy-u/MMM-Discourse-notifications",
-    "maintainer": "jordy-u & OsinixXx",
+    "maintainer": "jordy-u",
     "maintainerURL": "",
     "description": "Show user notifications of a site that runs on [Discourse](https://www.discourse.org).",
-    "issues": [
-      "- W - There is no 'package.json'. We need this file to gather information about the module."
-    ]
+    "issues": [],
+    "tags": [
+      "discourse",
+      "notifications"
+    ],
+    "license": "MIT",
+    "image": "docs-images-module_preview.jpg"
   },
   {
     "name": "MMM-DockerVisualizer",
@@ -6303,23 +6542,32 @@
     "name": "MMM-Ecobee",
     "url": "https://github.com/parnic/MMM-Ecobee",
     "id": "parnic/MMM-Ecobee",
-    "maintainer": "Parnic",
+    "maintainer": "parnic",
     "maintainerURL": "",
     "description": "Display data from ecobee thermostats and remote sensors.",
-    "issues": [
-      "- W - There is no 'package.json'. We need this file to gather information about the module."
-    ]
+    "issues": [],
+    "tags": [
+      "ecobee",
+      "thermostat"
+    ],
+    "license": "MIT",
+    "image": "sample.jpg"
   },
   {
     "name": "MMM-edgerouter-throughput",
     "url": "https://github.com/mscharl/MMM-edgerouter-throughput",
     "id": "mscharl/MMM-edgerouter-throughput",
-    "maintainer": "Michael Scharl",
+    "maintainer": "mscharl",
     "maintainerURL": "",
     "description": "Show the interface throughput of an Ubiquity EdgeRouter",
-    "issues": [
-      "- W - There is no 'package.json'. We need this file to gather information about the module."
-    ]
+    "issues": [],
+    "tags": [
+      "edgerouter",
+      "throughput",
+      "bandwith"
+    ],
+    "license": "MIT",
+    "image": "assets-MMM-edgerouter.gif"
   },
   {
     "name": "MMM-EmbedURL",
@@ -6466,7 +6714,7 @@
     "name": "MMM-FortniteStats",
     "url": "https://github.com/yourdawi/MMM-FortniteStats",
     "id": "yourdawi/MMM-FortniteStats",
-    "maintainer": "Dawi",
+    "maintainer": "yourdawi",
     "maintainerURL": "",
     "description": "Module to display Fortnite Stats.",
     "issues": [
@@ -6477,11 +6725,16 @@
     "name": "MMM-AOE2-STATS",
     "url": "https://github.com/FabianNiehaus89/MMM-AOE2-STATS",
     "id": "FabianNiehaus89/MMM-AOE2-STATS",
-    "maintainer": "Fabian Niehaus",
+    "maintainer": "FabianNiehaus89",
     "maintainerURL": "",
     "description": "Module to display Age of Empire stats by player ID",
     "issues": [
-      "- W - There is no 'package.json'. We need this file to gather information about the module."
+      "- W - package.json issue: No repository field.",
+      "- W - package.json issue: No license field."
+    ],
+    "tags": [
+      "aoe2",
+      "age of empire 2"
     ]
   },
   {
@@ -6529,12 +6782,17 @@
     "name": "MMM-FroelingConnect",
     "url": "https://github.com/eckonator/MMM-FroelingConnect",
     "id": "eckonator/MMM-FroelingConnect",
-    "maintainer": "Eckonator",
+    "maintainer": "eckonator",
     "maintainerURL": "https://github.com/eckonator",
     "description": "The module builds charts to your FRÖLING pellet boiler based on data from the FRÖLING Connect API. Inspiration and code base comes from [TA2k/ioBroker.froeling](https://github.com/TA2k/ioBroker.froeling).",
-    "issues": [
-      "- W - There is no 'package.json'. We need this file to gather information about the module."
-    ]
+    "issues": [],
+    "tags": [
+      "magicmirrir",
+      "fröling connect",
+      "fröling"
+    ],
+    "license": "MIT",
+    "image": "MMM-FroelingConnect.jpg"
   },
   {
     "name": "MMM-fronius",
@@ -6747,12 +7005,14 @@
     "name": "MMM-HabiticaStats",
     "url": "https://github.com/delightedCrow/MMM-HabiticaStats",
     "id": "delightedCrow/MMM-HabiticaStats",
-    "maintainer": "delightedCrow, ArrayOfFrost",
+    "maintainer": "delightedCrow",
     "maintainerURL": "",
     "description": "Display your an overview of your [Habitica](https://habitica.com) player stats.",
     "issues": [
-      "- W - There is no 'package.json'. We need this file to gather information about the module."
-    ]
+      "- W - package.json issue: No repository field."
+    ],
+    "license": "ISC",
+    "image": "screenshots-MM_landscape_DefaultTheme.jpg"
   },
   {
     "name": "MMM-hass",
@@ -6845,12 +7105,15 @@
     "name": "MMM-HomeAssistantDisplay",
     "url": "https://github.com/wonderslug/MMM-HomeAssistantDisplay",
     "id": "wonderslug/MMM-HomeAssistantDisplay",
-    "maintainer": "WonderSlug",
+    "maintainer": "wonderslug",
     "maintainerURL": "https://github.com/wonderslug",
     "description": "Displays information from Home Assistant using Home Assistant Templates to render any HTML you want for the module. Includes support for Material Design Icons, Websockets for fast updating, and auto reconnect on Home Assistant restarts. Allows you to show or hide a whole module based on a Home Assistant Template as well.",
-    "issues": [
-      "- W - There is no 'package.json'. We need this file to gather information about the module."
-    ]
+    "issues": [],
+    "tags": [
+      "home assistant"
+    ],
+    "license": "MIT",
+    "image": "images-MMM-HomeAssistantDisplay.jpg"
   },
   {
     "name": "MMM-HomeAutomationNotifications",
@@ -6944,7 +7207,7 @@
     "name": "MMM-HRS-PickupPlan",
     "url": "https://github.com/maan75/MMM-HRS-PickupPlan",
     "id": "maan75/MMM-HRS-PickupPlan",
-    "maintainer": "Martin Andreassen",
+    "maintainer": "maan75",
     "maintainerURL": "https://github.com/maan75",
     "description": "Module to display upcoming pickup dates for garbage in the Norwegian municipalities of Harstad, Narvik, Evenes, Gratangen, Ibestad, Kvæfjord, Lavangen and Tjeldsund.",
     "issues": [
@@ -7000,12 +7263,14 @@
     "name": "MMM-HVIEW-Snapshot",
     "url": "https://github.com/coderpussy/MMM-HVIEW-Snapshot",
     "id": "coderpussy/MMM-HVIEW-Snapshot",
-    "maintainer": "c0d3rpu55y",
+    "maintainer": "coderpussy",
     "maintainerURL": "https://github.com/coderpussy",
     "description": "Display a snapshot from your H.View security camera.",
     "issues": [
-      "- W - There is no 'package.json'. We need this file to gather information about the module."
-    ]
+      "- W - package.json issue: No repository field.",
+      "- I - No image found."
+    ],
+    "license": "MIT"
   },
   {
     "name": "MMM-iCal-ToDo",
@@ -7023,12 +7288,16 @@
     "name": "MMM-iCloud-Client",
     "url": "https://github.com/bitte-ein-bit/MMM-iCloud-Client",
     "id": "bitte-ein-bit/MMM-iCloud-Client",
-    "maintainer": "Bitte-ein-Bit",
+    "maintainer": "bitte-ein-bit",
     "maintainerURL": "",
     "description": "Load iCloud addressbook and provide birthday iCal feed for calendar module and addressbook for [MMM-FRITZ-Box-Callmonitor](https://github.com/paviro/MMM-FRITZ-Box-Callmonitor).",
     "issues": [
-      "- W - There is no 'package.json'. We need this file to gather information about the module."
-    ]
+      "- I - No image found."
+    ],
+    "tags": [
+      "carddav-client"
+    ],
+    "license": "MIT"
   },
   {
     "name": "MMM-IconDisplayer",
@@ -7127,12 +7396,18 @@
     "name": "MMM-ioBroker",
     "url": "https://github.com/ioBroker/MMM-ioBroker",
     "id": "ioBroker/MMM-ioBroker",
-    "maintainer": "Bluefox",
+    "maintainer": "ioBroker",
     "maintainerURL": "",
     "description": "Display ioBroker values.",
     "issues": [
-      "- W - There is no 'package.json'. We need this file to gather information about the module."
-    ]
+      "- I - No image found."
+    ],
+    "tags": [
+      "iobroker",
+      "iot",
+      "home automation"
+    ],
+    "license": "MIT"
   },
   {
     "name": "MMM-ip",
@@ -7175,12 +7450,12 @@
     "name": "MMM-json",
     "url": "https://github.com/DanielHabenicht/MMM-json",
     "id": "DanielHabenicht/MMM-json",
-    "maintainer": "danielhabenicht",
+    "maintainer": "DanielHabenicht",
     "maintainerURL": "",
     "description": "Display data from any JSON source.",
-    "issues": [
-      "- W - There is no 'package.json'. We need this file to gather information about the module."
-    ]
+    "issues": [],
+    "license": "MIT",
+    "image": "sample.jpg"
   },
   {
     "name": "MMM-JsonValue",
@@ -7219,7 +7494,7 @@
     "name": "MMM-Jeedom",
     "url": "https://github.com/prysme01/MMM-Jeedom",
     "id": "prysme01/MMM-Jeedom",
-    "maintainer": "prysme",
+    "maintainer": "prysme01",
     "maintainerURL": "",
     "description": "Display values from Home automation software [JEEDOM](https://www.jeedom.com).",
     "issues": [
@@ -7241,7 +7516,7 @@
     "name": "MMM-JsonGraph",
     "url": "https://github.com/timdows/MMM-JsonGraph",
     "id": "timdows/MMM-JsonGraph",
-    "maintainer": "Timdows",
+    "maintainer": "timdows",
     "maintainerURL": "",
     "description": "Creates a SVG bar chart based on a list gathered from a json request",
     "issues": [
@@ -7252,11 +7527,12 @@
     "name": "MMM-JsonTable",
     "url": "https://github.com/timdows/MMM-JsonTable",
     "id": "timdows/MMM-JsonTable",
-    "maintainer": "Timdows",
+    "maintainer": "timdows",
     "maintainerURL": "",
     "description": "Creates a table filled by a list gathered from a json request, and puts all variables of the object in its own table column",
     "issues": [
-      "- W - There is no 'package.json'. We need this file to gather information about the module."
+      "- W - package.json issue: No repository field.",
+      "- W - package.json issue: No license field."
     ]
   },
   {
@@ -7290,7 +7566,7 @@
     "name": "KeyDisplayed",
     "url": "https://github.com/l0b5ter/KeyDisplayed",
     "id": "l0b5ter/KeyDisplayed",
-    "maintainer": "MJØD",
+    "maintainer": "l0b5ter",
     "maintainerURL": "",
     "description": "Use the keyboard to open and close a popupwindow in the MagicMirror². Like lets say using the \"q\" key will open a popupwindow on MagicMirror's webpage. Using the iFrame to display web content",
     "issues": [
@@ -7500,7 +7776,7 @@
     "name": "MMM-MieleAtHome",
     "url": "https://github.com/SAR71/MMM-MieleAtHome/",
     "id": "SAR71/MMM-MieleAtHome/",
-    "maintainer": "ViDiBi",
+    "maintainer": "SAR71",
     "maintainerURL": "",
     "description": "Displays the status of you Miele@Home Devices.",
     "issues": [
@@ -7563,11 +7839,13 @@
     "name": "MMM-MotionDisplay",
     "url": "https://github.com/pjestico/MMM-MotionDisplay/",
     "id": "pjestico/MMM-MotionDisplay/",
-    "maintainer": "PJestico",
+    "maintainer": "pjestico",
     "maintainerURL": "https://github.com/pjestico",
     "description": "A module that displays motion detected by your security camera.",
     "issues": [
-      "- W - There is no 'package.json'. We need this file to gather information about the module."
+      "- W - package.json issue: No description",
+      "- W - package.json issue: No repository field.",
+      "- W - package.json issue: No license field."
     ]
   },
   {
@@ -7644,12 +7922,15 @@
     "name": "MMM-MQTTbind",
     "url": "https://github.com/janm84/MMM-MQTTbind",
     "id": "janm84/MMM-MQTTbind",
-    "maintainer": "Janm84",
+    "maintainer": "janm84",
     "maintainerURL": "",
     "description": "A module to subscribe to MQTT Topics and forward the payload (as it is) as notification and vice versa. Features QoS, Clean Session, Retained Messages and Shortcuts...",
-    "issues": [
-      "- W - There is no 'package.json'. We need this file to gather information about the module."
-    ]
+    "issues": [],
+    "tags": [
+      "mqtt"
+    ],
+    "license": "MIT",
+    "image": "github-MQTTbind.jpg"
   },
   {
     "name": "MMM-MQTT-Publisher",
@@ -7716,18 +7997,23 @@
     "name": "MMM-MusicOnDemand",
     "url": "https://github.com/ptrk95/MMM-MusicOnDemand",
     "id": "ptrk95/MMM-MusicOnDemand",
-    "maintainer": "Ptrk95",
+    "maintainer": "ptrk95",
     "maintainerURL": "",
     "description": "Play music with deezer on a browser in the background.",
-    "issues": [
-      "- W - There is no 'package.json'. We need this file to gather information about the module."
-    ]
+    "issues": [],
+    "tags": [
+      "musicondemand",
+      "music",
+      "deezer"
+    ],
+    "license": "MIT",
+    "image": "img-Example.jpg"
   },
   {
     "name": "MMM-MyCalendar",
     "url": "https://github.com/jclarke0000/MMM-MyCalendar",
     "id": "jclarke0000/MMM-MyCalendar",
-    "maintainer": "Jeff Clarke",
+    "maintainer": "jclarke0000",
     "maintainerURL": "",
     "description": "Same functionality as the default Calendar app but different display formatting.",
     "issues": [
@@ -7738,7 +8024,7 @@
     "name": "MMM-mycroft-wakeword",
     "url": "https://github.com/smartgic/MMM-mycroft-wakeword",
     "id": "smartgic/MMM-mycroft-wakeword",
-    "maintainer": "Smart'Gic",
+    "maintainer": "smartgic",
     "maintainerURL": "https://github.com/smartgic",
     "description": "When a Mycroft AI wake word is detected, an image is displayed and when the recording is done the image disappears.",
     "issues": [
@@ -7749,12 +8035,12 @@
     "name": "MMM-MyGarbage",
     "url": "https://github.com/htilburgs/MMM-MyGarbage",
     "id": "htilburgs/MMM-MyGarbage",
-    "maintainer": "HTilburgs",
+    "maintainer": "htilburgs",
     "maintainerURL": "",
     "description": "Displays your Custom Garbage Calendar.",
-    "issues": [
-      "- W - There is no 'package.json'. We need this file to gather information about the module."
-    ]
+    "issues": [],
+    "license": "MIT",
+    "image": "screenshot.jpg"
   },
   {
     "name": "MMM-MySenseHat",
@@ -7776,12 +8062,14 @@
     "name": "MMM-MyWastePickup",
     "url": "https://github.com/jclarke0000/MMM-MyWastePickup",
     "id": "jclarke0000/MMM-MyWastePickup",
-    "maintainer": "Jeff Clarke",
+    "maintainer": "jclarke0000",
     "maintainerURL": "",
     "description": "Displays your schedule for Toronto curb-side waste collection.",
     "issues": [
-      "- W - There is no 'package.json'. We need this file to gather information about the module."
-    ]
+      "- W - package.json issue: No repository field."
+    ],
+    "license": "MIT",
+    "image": "node_modules-npm-node_modules-unique-filename-coverage-sort-arrow-sprite.jpg"
   },
   {
     "name": "MMM-MysqlQuery",
@@ -7801,12 +8089,18 @@
     "name": "MMM-MyQ",
     "url": "https://github.com/parnic/MMM-MyQ",
     "id": "parnic/MMM-MyQ",
-    "maintainer": "Parnic",
+    "maintainer": "parnic",
     "maintainerURL": "",
     "description": "Display status and allow control of MyQ garage door opener devices.",
     "issues": [
-      "- W - There is no 'package.json'. We need this file to gather information about the module."
-    ]
+      "- I - No image found."
+    ],
+    "tags": [
+      "myq",
+      "chamberlain",
+      "liftmaster"
+    ],
+    "license": "MIT"
   },
   {
     "name": "MMM-ObjectBlocks",
@@ -7840,12 +8134,16 @@
     "name": "MMM-MyStudyLife",
     "url": "https://github.com/ethanpartida/MMM-MyStudyLife",
     "id": "ethanpartida/MMM-MyStudyLife",
-    "maintainer": "Ethan Partida",
+    "maintainer": "ethanpartida",
     "maintainerURL": "",
     "description": "Displays upcoming classes, tasks and exams from the [My Study Life](https://www.mystudylife.com/) app and website.",
-    "issues": [
-      "- W - There is no 'package.json'. We need this file to gather information about the module."
-    ]
+    "issues": [],
+    "tags": [
+      "mystudylife",
+      "study"
+    ],
+    "license": "MIT",
+    "image": "Screenshot.PNG"
   },
   {
     "name": "MMM-MyWordsRandomed",
@@ -7921,7 +8219,7 @@
     "name": "MMM-neoomAPI",
     "url": "https://github.com/MartinLoidolt/MMM-neoomAPI",
     "id": "MartinLoidolt/MMM-neoomAPI",
-    "maintainer": "Martin Loidolt",
+    "maintainer": "MartinLoidolt",
     "maintainerURL": "https://github.com/MartinLoidolt",
     "description": "Module for displaying your photovoltaic statistics from neoom.",
     "issues": [
@@ -8011,12 +8309,14 @@
     "name": "MMM-NextCloud-Tasks",
     "url": "https://github.com/starlingfire/MMM-NextCloud-Tasks",
     "id": "starlingfire/MMM-NextCloud-Tasks",
-    "maintainer": "Starlingfire",
+    "maintainer": "starlingfire",
     "maintainerURL": "",
     "description": "Displays ToDo list(s) from NextCloud Tasks app",
     "issues": [
-      "- W - There is no 'package.json'. We need this file to gather information about the module."
-    ]
+      "- W - package.json issue: No repository field."
+    ],
+    "license": "MIT",
+    "image": "assets-create-app-password.jpg"
   },
   {
     "name": "next-train-transilien",
@@ -8068,12 +8368,12 @@
     "name": "octoprint-module",
     "url": "https://github.com/shbatm/octomirror-module/",
     "id": "shbatm/octomirror-module/",
-    "maintainer": "DongerZonnie & shbatm",
+    "maintainer": "shbatm",
     "maintainerURL": "",
     "description": "View & Control an OctoPrint 3d Printer Server Instance.",
-    "issues": [
-      "- W - There is no 'package.json'. We need this file to gather information about the module."
-    ]
+    "issues": [],
+    "license": "MIT",
+    "image": "img-capture.jpg"
   },
   {
     "name": "MMM-octoprint",
@@ -8189,7 +8489,7 @@
     "name": "MMM-OctoMon",
     "url": "https://github.com/christopherpthomas/MMM-OctoMon",
     "id": "christopherpthomas/MMM-OctoMon",
-    "maintainer": "ChrisThomas",
+    "maintainer": "christopherpthomas",
     "maintainerURL": "",
     "description": "Displays energy usage history for your Octopus Energy account.",
     "issues": [
@@ -8222,7 +8522,7 @@
     "name": "MMM-ParticleStatus",
     "url": "https://github.com/NickEngmann/MMM-ParticleStatus",
     "id": "NickEngmann/MMM-ParticleStatus",
-    "maintainer": "NickEngmann & yummypasta",
+    "maintainer": "NickEngmann",
     "maintainerURL": "https://github.com/NickEngmann",
     "description": "Module for displaying Particle.io device data.",
     "issues": [
@@ -8298,23 +8598,37 @@
     "name": "MMM-Pins",
     "url": "https://github.com/ptrbld/mmm-pins",
     "id": "ptrbld/mmm-pins",
-    "maintainer": "PtrBld",
+    "maintainer": "ptrbld",
     "maintainerURL": "",
     "description": "Triggers any specified rpi pins with different trigger notifications. All messages will be registered with the MMM-Remote Module automatically. It can also play sounds using MMM-Sounds module when a pin is toggled.",
     "issues": [
-      "- W - There is no 'package.json'. We need this file to gather information about the module."
-    ]
+      "- W - package.json issue: No description",
+      "- I - No image found."
+    ],
+    "tags": [
+      "pins"
+    ],
+    "license": "MIT"
   },
   {
     "name": "MMM-PIR-Sensor-Lite",
     "url": "https://github.com/grenagit/MMM-PIR-Sensor-Lite",
     "id": "grenagit/MMM-PIR-Sensor-Lite",
-    "maintainer": "Grena",
+    "maintainer": "grenagit",
     "maintainerURL": "",
     "description": "A module managing monitor with PIR motion sensor (automatic standby when presence isn't detected).",
-    "issues": [
-      "- W - There is no 'package.json'. We need this file to gather information about the module."
-    ]
+    "issues": [],
+    "tags": [
+      "motion",
+      "sensor",
+      "pir",
+      "monitor",
+      "screen",
+      "standby",
+      "automatic"
+    ],
+    "license": "MIT",
+    "image": "MMM-PIR-Sensor-Lite_console-log.jpg"
   },
   {
     "name": "MMM-PIR-Sensor",
@@ -8363,7 +8677,7 @@
     "name": "MMM-pihole-stats",
     "url": "https://github.com/sheyabernstein/MMM-pihole-stats",
     "id": "sheyabernstein/MMM-pihole-stats",
-    "maintainer": "SheyaBernstein",
+    "maintainer": "sheyabernstein",
     "maintainerURL": "",
     "description": "Display stats from Pi-Hole DNS ad blocking.",
     "issues": [
@@ -8385,12 +8699,16 @@
     "name": "MMM-Pinfo",
     "url": "https://github.com/SalekurPolas/MMM-Pinfo",
     "id": "SalekurPolas/MMM-Pinfo",
-    "maintainer": "Salekur Rahaman",
+    "maintainer": "SalekurPolas",
     "maintainerURL": "https://github.com/SalekurPolas",
     "description": "Informational module to display mirror information like Raspberry Pi model, unique serial number, network information, IPv4, IPv6, MAC address, OS information, CPU information, and more.",
-    "issues": [
-      "- W - There is no 'package.json'. We need this file to gather information about the module."
-    ]
+    "issues": [],
+    "tags": [
+      "raspberrypi",
+      "node"
+    ],
+    "license": "MIT",
+    "image": "res-img.jpg"
   },
   {
     "name": "MMM-Ping",
@@ -8512,12 +8830,14 @@
     "name": "MMM-Property-Managed",
     "url": "https://github.com/stewartmckee/MMM-Property-managed",
     "id": "stewartmckee/MMM-Property-managed",
-    "maintainer": "Property Managed",
+    "maintainer": "stewartmckee",
     "maintainerURL": "",
     "description": "Integrates with landlord management site Property Managed to display upcoming actions.",
     "issues": [
-      "- W - There is no 'package.json'. We need this file to gather information about the module."
-    ]
+      "- W - package.json issue: No repository field.",
+      "- I - No image found."
+    ],
+    "license": "MIT"
   },
   {
     "name": "MMM-Profilepicture",
@@ -8561,12 +8881,13 @@
     "name": "MMM-Ring",
     "url": "https://github.com/DustinBryant/MMM-Ring",
     "id": "DustinBryant/MMM-Ring",
-    "maintainer": "Dustin Bryant",
+    "maintainer": "DustinBryant",
     "maintainerURL": "",
     "description": "Displays a video stream of your Ring doorbell when someone rings your doorbell.",
     "issues": [
-      "- W - There is no 'package.json'. We need this file to gather information about the module."
-    ]
+      "- I - No image found."
+    ],
+    "license": "MIT"
   },
   {
     "name": "MMM-RPI-LED",
@@ -8584,7 +8905,7 @@
     "name": "MMM-RSS-FEED",
     "url": "https://github.com/Taolanoz/MMM-RSS-FEED",
     "id": "Taolanoz/MMM-RSS-FEED",
-    "maintainer": "taolanoz",
+    "maintainer": "Taolanoz",
     "maintainerURL": "",
     "description": "Display any RSS feed",
     "issues": [
@@ -8617,12 +8938,21 @@
     "name": "MMM-RepoStats",
     "url": "https://gitlab.com/khassel/MMM-RepoStats",
     "id": "khassel/MMM-RepoStats",
-    "maintainer": "karsten13",
+    "maintainer": "khassel",
     "maintainerURL": "https://gitlab.com/karsten13",
     "description": "Shows repository statistics for DockerHub, GitHub and GitLab.",
-    "issues": [
-      "- W - There is no 'package.json'. We need this file to gather information about the module."
-    ]
+    "issues": [],
+    "tags": [
+      "dockerhub",
+      "docker",
+      "images",
+      "github",
+      "gitlab",
+      "repository",
+      "statistics"
+    ],
+    "license": "MIT",
+    "image": "img-example_3_types.jpg"
   },
   {
     "name": "MMM-RepRapFirmware",
@@ -8666,12 +8996,12 @@
     "name": "MMM-RingAlarm",
     "url": "https://github.com/parnic/MMM-RingAlarm",
     "id": "parnic/MMM-RingAlarm",
-    "maintainer": "Parnic",
+    "maintainer": "parnic",
     "maintainerURL": "",
     "description": "Display status and allow arming/disarming of a Ring alarm system.",
-    "issues": [
-      "- W - There is no 'package.json'. We need this file to gather information about the module."
-    ]
+    "issues": [],
+    "license": "MIT",
+    "image": "screenshot.jpg"
   },
   {
     "name": "MMM-Roomba980",
@@ -8715,7 +9045,7 @@
     "name": "Shelly-HT",
     "url": "https://github.com/Medve01/Shelly-HT",
     "id": "Medve01/Shelly-HT",
-    "maintainer": "Medve",
+    "maintainer": "Medve01",
     "maintainerURL": "https://github.com/Medve01",
     "description": "Module for displaying data from 1 Shelly HT sensor.",
     "issues": [
@@ -8761,12 +9091,12 @@
     "name": "MMM-ScreenLogic",
     "url": "https://github.com/parnic/MMM-ScreenLogic",
     "id": "parnic/MMM-ScreenLogic",
-    "maintainer": "Parnic",
+    "maintainer": "parnic",
     "maintainerURL": "",
     "description": "Module to read data from a Pentair ScreenLogic pool system.",
-    "issues": [
-      "- W - There is no 'package.json'. We need this file to gather information about the module."
-    ]
+    "issues": [],
+    "license": "MIT",
+    "image": "screenshot.jpg"
   },
   {
     "name": "MMM-Screen-Powersave-Notification",
@@ -8813,12 +9143,12 @@
     "name": "MMM-Selfieshot",
     "url": "https://github.com/BrianHepler/MMM-Selfieshot",
     "id": "BrianHepler/MMM-Selfieshot",
-    "maintainer": "Brian Hepler",
+    "maintainer": "BrianHepler",
     "maintainerURL": "https://github.com/BrianHepler",
     "description": "Taking a Selfie with USB cam.",
-    "issues": [
-      "- W - There is no 'package.json'. We need this file to gather information about the module."
-    ]
+    "issues": [],
+    "license": "MIT",
+    "image": "screenshot.jpg"
   },
   {
     "name": "MMM-Seneye",
@@ -8835,23 +9165,35 @@
     "name": "MMM-SensorGateway",
     "url": "https://github.com/mattileh/MMM-SensorGateway",
     "id": "mattileh/MMM-SensorGateway",
-    "maintainer": "Mattileh",
+    "maintainer": "mattileh",
     "maintainerURL": "",
     "description": "This module enables having live sensor data without touching the Pi hardware by utilizing the BLE advertisment beacons from sensors and routing that live info into MagicMirror² platform.",
     "issues": [
-      "- W - There is no 'package.json'. We need this file to gather information about the module."
-    ]
+      "- W - package.json issue: No repository field."
+    ],
+    "tags": [
+      "movesense",
+      "ruuvitag",
+      "iot"
+    ],
+    "license": "MIT",
+    "image": "images-home.jpg"
   },
   {
     "name": "MMM-ServerStatus",
     "url": "https://github.com/XBCreepinJesus/MMM-ServerStatus",
     "id": "XBCreepinJesus/MMM-ServerStatus",
-    "maintainer": "CreepinJesus",
+    "maintainer": "XBCreepinJesus",
     "maintainerURL": "https://github.com/XBCreepinJesus",
     "description": "A module to check the up/down status of servers/devices on your network.",
-    "issues": [
-      "- W - There is no 'package.json'. We need this file to gather information about the module."
-    ]
+    "issues": [],
+    "tags": [
+      "ping",
+      "server",
+      "status"
+    ],
+    "license": "MIT",
+    "image": "screenshots-DeviceStatusExample.jpg"
   },
   {
     "name": "MMM-Serial-Notifications",
@@ -8981,7 +9323,7 @@
     "name": "MMM-SlackAnnouncements",
     "url": "https://github.com/Monkeyanator/MMM-SlackAnnouncements",
     "id": "Monkeyanator/MMM-SlackAnnouncements",
-    "maintainer": "Hacker Home MTV",
+    "maintainer": "Monkeyanator",
     "maintainerURL": "",
     "description": "Post announcements to your mirror from a designated Slack channel!",
     "issues": [
@@ -9361,12 +9703,18 @@
     "name": "MMM-TFL-Arrivals",
     "url": "https://github.com/ryck/MMM-TFL-Arrivals",
     "id": "ryck/MMM-TFL-Arrivals",
-    "maintainer": "MMM-TFL-Arrivals",
+    "maintainer": "ryck",
     "maintainerURL": "",
     "description": "This module gets real time arrival predictions for specifc stops using the TfL API.",
-    "issues": [
-      "- W - There is no 'package.json'. We need this file to gather information about the module."
-    ]
+    "issues": [],
+    "tags": [
+      "transport",
+      "london",
+      "underground",
+      "tfl"
+    ],
+    "license": "MIT",
+    "image": "screenshots-due.jpg"
   },
   {
     "name": "MMM-Thingiverse",
@@ -9427,12 +9775,15 @@
     "name": "MMM-Todoist",
     "url": "https://github.com/cbrooker/MMM-Todoist",
     "id": "cbrooker/MMM-Todoist",
-    "maintainer": "CBrooker",
+    "maintainer": "cbrooker",
     "maintainerURL": "",
     "description": "Displays your todos from Todoist.",
-    "issues": [
-      "- W - There is no 'package.json'. We need this file to gather information about the module."
-    ]
+    "issues": [],
+    "tags": [
+      "wunderlist"
+    ],
+    "license": "MIT",
+    "image": "1x1px.jpg"
   },
   {
     "name": "MMM-toggle-by-mqtt",
@@ -9487,12 +9838,16 @@
     "name": "MMM-TPLink",
     "url": "https://github.com/slametps/MMM-TPLink",
     "id": "slametps/MMM-TPLink",
-    "maintainer": "Slamet PS",
+    "maintainer": "slametps",
     "maintainerURL": "https://github.com/slametps",
     "description": "Display the status of TPLink lights/plugs in your local network.",
-    "issues": [
-      "- W - There is no 'package.json'. We need this file to gather information about the module."
-    ]
+    "issues": [],
+    "tags": [
+      "tplink",
+      "smarthome"
+    ],
+    "license": "MIT",
+    "image": "others-MMM-TPLink-screenshot-01.jpg"
   },
   {
     "name": "MMM-TranslatedMessages",
@@ -9523,18 +9878,26 @@
     "name": "MMM-TuyaSL",
     "url": "https://github.com/slametps/MMM-TuyaSL",
     "id": "slametps/MMM-TuyaSL",
-    "maintainer": "Slamet PS",
+    "maintainer": "slametps",
     "maintainerURL": "https://github.com/slametps",
     "description": "Display the status of smarthome devices based on Tuya IoT-Platform (managed by SmartLife app).",
-    "issues": [
-      "- W - There is no 'package.json'. We need this file to gather information about the module."
-    ]
+    "issues": [],
+    "tags": [
+      "tuyasl",
+      "smarthome",
+      "smartlife",
+      "smart_life",
+      "iot",
+      "platform"
+    ],
+    "license": "MIT",
+    "image": "others-MMM-TuyaSL-photo-01.jpg"
   },
   {
     "name": "MMM-UDR",
     "url": "https://github.com/crimsonclyde/mmm-udr",
     "id": "crimsonclyde/mmm-udr",
-    "maintainer": "CrimsonClyde",
+    "maintainer": "crimsonclyde",
     "maintainerURL": "",
     "description": "Display own events in default compliments module style",
     "issues": [
@@ -9680,12 +10043,12 @@
     "name": "MMM-VUB-Resto",
     "url": "https://github.com/OscarVsp/MMM-VUB-Resto",
     "id": "OscarVsp/MMM-VUB-Resto",
-    "maintainer": "Oscar Vsp",
+    "maintainer": "OscarVsp",
     "maintainerURL": "",
     "description": "Get the menu of day of the VUB restaurant (Vrije Universiteit Brussel). Based on MMM-json.",
-    "issues": [
-      "- W - There is no 'package.json'. We need this file to gather information about the module."
-    ]
+    "issues": [],
+    "license": "MIT",
+    "image": "sample.jpg"
   },
   {
     "name": "MMM-WatchDog",
@@ -9763,7 +10126,7 @@
     "name": "MMM-wordnik",
     "url": "https://github.com/SVendittelli/MMM-wordnik",
     "id": "SVendittelli/MMM-wordnik",
-    "maintainer": "Vendittelli",
+    "maintainer": "SVendittelli",
     "maintainerURL": "",
     "description": "Get the word of the day, its definition, and origin ...",
     "issues": [
@@ -9785,12 +10148,18 @@
     "name": "MMM-WS281X-Server",
     "url": "https://github.com/coderpussy/MMM-WS281X-Server",
     "id": "coderpussy/MMM-WS281X-Server",
-    "maintainer": "c0d3rpu55y",
+    "maintainer": "coderpussy",
     "maintainerURL": "",
     "description": "Have ws2812 LEDs on your mirror with [RPI-WS2812-Server](https://github.com/tom-2015/rpi-ws2812-server).",
     "issues": [
-      "- W - There is no 'package.json'. We need this file to gather information about the module."
-    ]
+      "- I - No image found."
+    ],
+    "tags": [
+      "led",
+      "rgb",
+      "neopixels"
+    ],
+    "license": "MIT"
   },
   {
     "name": "MMM-Xdg-Open",
@@ -9823,23 +10192,30 @@
     "name": "MMM-Yeelight",
     "url": "https://github.com/slametps/MMM-Yeelight",
     "id": "slametps/MMM-Yeelight",
-    "maintainer": "Slamet PS",
+    "maintainer": "slametps",
     "maintainerURL": "https://github.com/slametps",
     "description": "Display the status of Yeelight bulbs in your local network.",
-    "issues": [
-      "- W - There is no 'package.json'. We need this file to gather information about the module."
-    ]
+    "issues": [],
+    "tags": [
+      "yeelight",
+      "smarthome"
+    ],
+    "license": "MIT",
+    "image": "others-MMM-Yeelight-screenshot-01.jpg"
   },
   {
     "name": "MMM-YouLess2",
     "url": "https://github.com/eckonator/MMM-YouLess2",
     "id": "eckonator/MMM-YouLess2",
-    "maintainer": "Eckonator",
+    "maintainer": "eckonator",
     "maintainerURL": "https://github.com/eckonator",
     "description": "This module reads from a YouLess energy meter in your network to display a gauge of realtime energy usage information. It´s a optimized fork from QNimbus first module.",
-    "issues": [
-      "- W - There is no 'package.json'. We need this file to gather information about the module."
-    ]
+    "issues": [],
+    "tags": [
+      "youless\u001b[hmagi\u001b[c\u001b[f"
+    ],
+    "license": "MIT",
+    "image": "public-images-module_ss_01.jpg"
   },
   {
     "name": "MMM-YouLess",
@@ -9873,7 +10249,7 @@
     "name": "MMM-Zabbix-Alerts",
     "url": "https://github.com/spectroman/mmm-zabbix-alerts",
     "id": "spectroman/mmm-zabbix-alerts",
-    "maintainer": "Spectroman",
+    "maintainer": "spectroman",
     "maintainerURL": "",
     "description": "Show the status of triggers from Zabbix via API calls.",
     "issues": [
@@ -9910,12 +10286,12 @@
     "name": "MMM-Timetagger",
     "url": "https://github.com/tderflinger/MMM-Timetagger",
     "id": "tderflinger/MMM-Timetagger",
-    "maintainer": "TD",
+    "maintainer": "tderflinger",
     "maintainerURL": "",
     "description": "Shows the latest hours tracked by the time tracking application Timetagger.",
-    "issues": [
-      "- W - There is no 'package.json'. We need this file to gather information about the module."
-    ]
+    "issues": [],
+    "license": "MIT",
+    "image": "doc-mmm-timetagger-screenshot-1.jpg"
   },
   {
     "name": "MMM-Growatt",
@@ -9946,7 +10322,7 @@
     "name": "MMM-next-episode",
     "url": "https://github.com/PierreGode/MMM-next-episode",
     "id": "PierreGode/MMM-next-episode",
-    "maintainer": "Pierre Gode",
+    "maintainer": "PierreGode",
     "maintainerURL": "https://github.com/PierreGode",
     "description": "A module to display your upcomming show's and movies from your next-episode account.",
     "issues": [
@@ -10027,12 +10403,20 @@
     "name": "MMM-PoemOfTheDay",
     "url": "https://github.com/Steven-Gassert/MMM-PoemOfTheDay",
     "id": "Steven-Gassert/MMM-PoemOfTheDay",
-    "maintainer": "Steven Gassert",
+    "maintainer": "Steven-Gassert",
     "maintainerURL": "",
     "description": "Display a poem of the day, in the language(s) of your choice",
-    "issues": [
-      "- W - There is no 'package.json'. We need this file to gather information about the module."
-    ]
+    "issues": [],
+    "tags": [
+      "magic-mirror",
+      "mm2",
+      "poetry",
+      "poem-of-the-day",
+      "poemist",
+      "multi-language"
+    ],
+    "license": "MIT",
+    "image": "docs-images-MMM-screenshot.jpg"
   },
   {
     "name": "MMM-DailyACVillager",
@@ -10049,12 +10433,14 @@
     "name": "MMM-DailyPokemon",
     "url": "https://github.com/NolanKingdon/MMM-DailyPokemon",
     "id": "NolanKingdon/MMM-DailyPokemon",
-    "maintainer": "Nolan Kingdon",
+    "maintainer": "NolanKingdon",
     "maintainerURL": "",
     "description": "Displays a random Pokemon, it's type, and stats daily.",
     "issues": [
-      "- W - There is no 'package.json'. We need this file to gather information about the module."
-    ]
+      "- W - package.json issue: No repository field."
+    ],
+    "license": "MIT",
+    "image": "images-demo.jpg"
   },
   {
     "name": "MMM-PokemonGOEvents",
@@ -10144,7 +10530,7 @@
     "name": "MMM-AmLich",
     "url": "https://github.com/diyeverythingvn/MMM-AmLich",
     "id": "diyeverythingvn/MMM-AmLich",
-    "maintainer": "CuongNV",
+    "maintainer": "diyeverythingvn",
     "maintainerURL": "",
     "description": "Am Lich - Lunar Date - Vietnamese Language.",
     "issues": [
@@ -10155,7 +10541,7 @@
     "name": "MMM-ATM",
     "url": "https://github.com/mykle1/MMM-ATM",
     "id": "mykle1/MMM-ATM",
-    "maintainer": "Mykle1",
+    "maintainer": "mykle1",
     "maintainerURL": "",
     "description": "Another Trivia Module? Really?.",
     "issues": [
@@ -10192,7 +10578,7 @@
     "name": "MMM-APOD",
     "url": "https://github.com/grenagit/MMM-APOD",
     "id": "grenagit/MMM-APOD",
-    "maintainer": "Grena",
+    "maintainer": "grenagit",
     "maintainerURL": "",
     "description": "A module displaying the last Astronomy Picture Of the Day (APOD). This is an evolution of MMM-nasaastropic : supports image and video and display title, description and copyright.",
     "issues": [
@@ -10203,7 +10589,7 @@
     "name": "MMM-Astrology",
     "url": "https://github.com/cowboysdude/MMM-Astrology",
     "id": "cowboysdude/MMM-Astrology",
-    "maintainer": "Cowboysdude",
+    "maintainer": "cowboysdude",
     "maintainerURL": "",
     "description": "Displays daily, weekly or monthly horoscopes for MM2.",
     "issues": [
@@ -10214,7 +10600,7 @@
     "name": "MMM-Astronauts",
     "url": "https://github.com/mykle1/MMM-Astronauts",
     "id": "mykle1/MMM-Astronauts",
-    "maintainer": "Mykle1",
+    "maintainer": "mykle1",
     "maintainerURL": "",
     "description": "A rotation of astronauts that are currently in space and the spacecraft they are on.",
     "issues": [
@@ -10225,18 +10611,20 @@
     "name": "MMM-AvfallshentingOslo",
     "url": "https://github.com/blixhavn/MMM-AvfallshentingOslo",
     "id": "blixhavn/MMM-AvfallshentingOslo",
-    "maintainer": "Blixhavn",
+    "maintainer": "blixhavn",
     "maintainerURL": "",
     "description": "A module to show the next waste pickup dates for any address in Oslo, Norway",
     "issues": [
-      "- W - There is no 'package.json'. We need this file to gather information about the module."
-    ]
+      "- W - package.json issue: No repository field."
+    ],
+    "license": "MIT",
+    "image": "img-brennbar-rest.jpg"
   },
   {
     "name": "MMM-Minigjenbruksstasjon",
     "url": "https://github.com/blixhavn/MMM-Minigjenbruksstasjon",
     "id": "blixhavn/MMM-Minigjenbruksstasjon",
-    "maintainer": "Blixhavn",
+    "maintainer": "blixhavn",
     "maintainerURL": "",
     "description": "A module to show opening hours for mobile recycling stations in Oslo, Norway. API free, so if it looks intresting, check to see if you can use it for your city too!",
     "issues": [
@@ -10247,7 +10635,7 @@
     "name": "MMM-BinaryClock",
     "url": "https://github.com/nikobix/MMM-BinaryClock",
     "id": "nikobix/MMM-BinaryClock",
-    "maintainer": "Nikobix",
+    "maintainer": "nikobix",
     "maintainerURL": "",
     "description": "Simple Binary Clock.",
     "issues": [
@@ -10269,18 +10657,18 @@
     "name": "MMM-BMI",
     "url": "https://github.com/mykle1/MMM-BMI",
     "id": "mykle1/MMM-BMI",
-    "maintainer": "Mykle1",
+    "maintainer": "mykle1",
     "maintainerURL": "",
     "description": "Body Mass Index Calculator. For those seeking separation or divorce.",
-    "issues": [
-      "- W - There is no 'package.json'. We need this file to gather information about the module."
-    ]
+    "issues": [],
+    "license": "MIT",
+    "image": "images-1.jpg"
   },
   {
     "name": "MMM-BMW",
     "url": "https://github.com/mykle1/MMM-BMW",
     "id": "mykle1/MMM-BMW",
-    "maintainer": "Mykle1",
+    "maintainer": "mykle1",
     "maintainerURL": "",
     "description": "Minimalist Weather for the bottom_bar or thirds position of your MagicMirror².",
     "issues": [
@@ -10367,7 +10755,7 @@
     "name": "MMM-CARDS",
     "url": "https://github.com/mykle1/MMM-CARDS",
     "id": "mykle1/MMM-CARDS",
-    "maintainer": "Mykle1",
+    "maintainer": "mykle1",
     "maintainerURL": "",
     "description": "Play 5 Card Stud Poker against your mirror.",
     "issues": [
@@ -10378,18 +10766,24 @@
     "name": "MMM-CECControl",
     "url": "https://github.com/nischi/MMM-CECControl",
     "id": "nischi/MMM-CECControl",
-    "maintainer": "Nischi",
+    "maintainer": "nischi",
     "maintainerURL": "",
     "description": "Send Notification to this module to turn TV over HDMI on or off",
     "issues": [
-      "- W - There is no 'package.json'. We need this file to gather information about the module."
-    ]
+      "- I - No image found."
+    ],
+    "tags": [
+      "cec",
+      "control",
+      "tv"
+    ],
+    "license": "MIT"
   },
   {
     "name": "MMM-Census",
     "url": "https://github.com/mykle1/MMM-Census",
     "id": "mykle1/MMM-Census",
-    "maintainer": "Mykle1",
+    "maintainer": "mykle1",
     "maintainerURL": "",
     "description": "World Population and demographics, by age and sex, or by individual country. 1950 - 2100.",
     "issues": [
@@ -10413,12 +10807,14 @@
     "name": "MMM-Chuck-Norris",
     "url": "https://github.com/toddsantoro/MMM-Chuck-Norris",
     "id": "toddsantoro/MMM-Chuck-Norris",
-    "maintainer": "Todd Santoro",
+    "maintainer": "toddsantoro",
     "maintainerURL": "https://toddsantoro.com",
     "description": "Displays a random Chuck Norris fact using a free public API",
     "issues": [
-      "- W - There is no 'package.json'. We need this file to gather information about the module."
-    ]
+      "- W - package.json issue: No repository field."
+    ],
+    "license": "MIT",
+    "image": "assets-img-screenshot.jpg"
   },
   {
     "name": "MMM-ClashofClans-Player",
@@ -10435,7 +10831,7 @@
     "name": "MMM-Clash-Royale",
     "url": "https://github.com/ianperrin/MMM-Clash-Royale",
     "id": "ianperrin/MMM-Clash-Royale",
-    "maintainer": "ian",
+    "maintainer": "ianperrin",
     "maintainerURL": "",
     "description": "A module that displays random Clash Royale decks.",
     "issues": [
@@ -10457,7 +10853,7 @@
     "name": "MMM-Clockinese",
     "url": "https://github.com/mykle1/MMM-Clockinese",
     "id": "mykle1/MMM-Clockinese",
-    "maintainer": "Mykle1",
+    "maintainer": "mykle1",
     "maintainerURL": "",
     "description": "A simple analog clock module using Chinese numbers.",
     "issues": [
@@ -10479,7 +10875,7 @@
     "name": "MMM-Cocktails",
     "url": "https://github.com/mykle1/MMM-Cocktails",
     "id": "mykle1/MMM-Cocktails",
-    "maintainer": "Mykle1",
+    "maintainer": "mykle1",
     "maintainerURL": "",
     "description": "How to make all kinds of mixed drinks - Instructions, ingredients and images.",
     "issues": [
@@ -10539,12 +10935,14 @@
     "name": "MMM-Dad-Jokes",
     "url": "https://github.com/echang15/MMM-Dad-Jokes",
     "id": "echang15/MMM-Dad-Jokes",
-    "maintainer": "Echang15",
+    "maintainer": "echang15",
     "maintainerURL": "",
     "description": "Simple display of dad jokes from icanhazdadjoke.com",
     "issues": [
-      "- W - There is no 'package.json'. We need this file to gather information about the module."
-    ]
+      "- W - package.json issue: No repository field.",
+      "- I - No image found."
+    ],
+    "license": "MIT"
   },
   {
     "name": "MMM-DailyDilbert",
@@ -10597,12 +10995,13 @@
     "name": "MMM-Dreambox",
     "url": "https://github.com/Ax-LED/MMM-Dreambox",
     "id": "Ax-LED/MMM-Dreambox",
-    "maintainer": "AxLED",
+    "maintainer": "Ax-LED",
     "maintainerURL": "",
     "description": "A module to connect a Dreambox or a Enigma2 Receiver (like VU or VU+) to MagicMirror² and stream stations via omxplayer.",
-    "issues": [
-      "- W - There is no 'package.json'. We need this file to gather information about the module."
-    ]
+    "issues": [],
+    "tags": [],
+    "license": "ISC",
+    "image": "MMM-Dreambox_screenshot1.jpg"
   },
   {
     "name": "MMM-Dribbble",
@@ -10633,7 +11032,7 @@
     "name": "MMM-EARTH-Live",
     "url": "https://github.com/mykle1/MMM-EARTH-Live",
     "id": "mykle1/MMM-EARTH-Live",
-    "maintainer": "Mykle1",
+    "maintainer": "mykle1",
     "maintainerURL": "",
     "description": "Live video of the Earth from the International Space Station.",
     "issues": [
@@ -10644,18 +11043,22 @@
     "name": "MMM-EARTH",
     "url": "https://github.com/mykle1/MMM-EARTH",
     "id": "mykle1/MMM-EARTH",
-    "maintainer": "Mykle1",
+    "maintainer": "mykle1",
     "maintainerURL": "",
     "description": "Watch the sunlit side of Earth as it rotates.",
-    "issues": [
-      "- W - There is no 'package.json'. We need this file to gather information about the module."
-    ]
+    "issues": [],
+    "tags": [
+      "earth",
+      "nasa"
+    ],
+    "license": "MIT",
+    "image": "pix-7.gif"
   },
   {
     "name": "MMM-EOL",
     "url": "https://github.com/mykle1/MMM-EOL",
     "id": "mykle1/MMM-EOL",
-    "maintainer": "Mykle1",
+    "maintainer": "mykle1",
     "maintainerURL": "",
     "description": "The Encyclopedia of Life.",
     "issues": [
@@ -10666,18 +11069,18 @@
     "name": "MMM-Earthquake",
     "url": "https://github.com/mykle1/MMM-Earthquake",
     "id": "mykle1/MMM-Earthquake",
-    "maintainer": "Mykle1",
+    "maintainer": "mykle1",
     "maintainerURL": "",
     "description": "The probability of an earthquake in your city. You'll be surprised!",
-    "issues": [
-      "- W - There is no 'package.json'. We need this file to gather information about the module."
-    ]
+    "issues": [],
+    "license": "MIT",
+    "image": "pix-1.JPG"
   },
   {
     "name": "MMM-EasyPix",
     "url": "https://github.com/mykle1/MMM-EasyPix",
     "id": "mykle1/MMM-EasyPix",
-    "maintainer": "Mykle1",
+    "maintainer": "mykle1",
     "maintainerURL": "",
     "description": "The easiest way to show pictures on your mirror.",
     "issues": [
@@ -10688,7 +11091,7 @@
     "name": "MMM-EventHorizon",
     "url": "https://github.com/mykle1/MMM-EventHorizon",
     "id": "mykle1/MMM-EventHorizon",
-    "maintainer": "Mykle1",
+    "maintainer": "mykle1",
     "maintainerURL": "",
     "description": "Simple countdown timer for events. Birthdays, weddings, anniversaries, vacations, etc.",
     "issues": [
@@ -10699,7 +11102,7 @@
     "name": "MMM-Events",
     "url": "https://github.com/mykle1/MMM-Events",
     "id": "mykle1/MMM-Events",
-    "maintainer": "Mykle1",
+    "maintainer": "mykle1",
     "maintainerURL": "",
     "description": "**NOTE:** Eventful API discontinued. This module needs updated. Upcoming events in your city. Concerts, Performances, Comedy Shows, Sporting Events, Theatre, Exhibits, Art Galleries, Museums, Festivals, Food & Drink and many more.",
     "issues": [
@@ -10710,7 +11113,7 @@
     "name": "MMM-EveryNews",
     "url": "https://github.com/mykle1/MMM-EveryNews",
     "id": "mykle1/MMM-EveryNews",
-    "maintainer": "Mykle1",
+    "maintainer": "mykle1",
     "maintainerURL": "",
     "description": "Over 30,000 News sources! Up to 10 at once. Simplified addition to your config entry.",
     "issues": [
@@ -10721,7 +11124,7 @@
     "name": "MMM-EyeCandy",
     "url": "https://github.com/mykle1/MMM-EyeCandy",
     "id": "mykle1/MMM-EyeCandy",
-    "maintainer": "Mykle1",
+    "maintainer": "mykle1",
     "maintainerURL": "",
     "description": "Add some EyeCandy to your mirror. You can even choose your own local images or internet images.",
     "issues": [
@@ -10789,23 +11192,33 @@
     "name": "MMM-FMI",
     "url": "https://github.com/mykle1/MMM-FMI",
     "id": "mykle1/MMM-FMI",
-    "maintainer": "Mykle1",
+    "maintainer": "mykle1",
     "maintainerURL": "",
     "description": "Find My iPhone tells you the location of your iPhone and sends loud, beeping tones, even when muted.",
     "issues": [
-      "- W - There is no 'package.json'. We need this file to gather information about the module."
-    ]
+      "- W - package.json issue: No repository field."
+    ],
+    "license": "MIT",
+    "image": "images-1.jpg"
   },
   {
     "name": "MMM-Face-Reco-DNN",
     "url": "https://github.com/nischi/MMM-Face-Reco-DNN",
     "id": "nischi/MMM-Face-Reco-DNN",
-    "maintainer": "Nischi",
+    "maintainer": "nischi",
     "maintainerURL": "",
     "description": "All new Version of Face Recognition with Open CV 4.1 and Deep Neural Network",
     "issues": [
-      "- W - There is no 'package.json'. We need this file to gather information about the module."
-    ]
+      "- I - No image found."
+    ],
+    "tags": [
+      "face",
+      "recognition",
+      "deep",
+      "neural",
+      "network"
+    ],
+    "license": "MIT"
   },
   {
     "name": "MMM-Faces",
@@ -10840,12 +11253,16 @@
     "name": "MMM-Facial-Recognition",
     "url": "https://github.com/paviro/MMM-Facial-Recognition",
     "id": "paviro/MMM-Facial-Recognition",
-    "maintainer": "PaViRo",
+    "maintainer": "paviro",
     "maintainerURL": "",
     "description": "Facial recognition and module swapping based on the current user ...",
     "issues": [
-      "- W - There is no 'package.json'. We need this file to gather information about the module."
-    ]
+      "- I - No image found."
+    ],
+    "tags": [
+      "facial recognition"
+    ],
+    "license": "MIT"
   },
   {
     "name": "MMM-Fish",
@@ -10888,7 +11305,7 @@
     "name": "MMM-food2fork-recipes",
     "url": "https://github.com/spectroman/mmm-food2fork-recipes",
     "id": "spectroman/mmm-food2fork-recipes",
-    "maintainer": "Spectroman",
+    "maintainer": "spectroman",
     "maintainerURL": "",
     "description": "Fetches one recipe type per day from food2fork API and display as a small menu.",
     "issues": [
@@ -10914,12 +11331,14 @@
     "name": "MMM-Fortune",
     "url": "https://github.com/mykle1/MMM-Fortune",
     "id": "mykle1/MMM-Fortune",
-    "maintainer": "Mykle1",
+    "maintainer": "mykle1",
     "maintainerURL": "",
     "description": "A fortune cookie for your MagicMirror².",
     "issues": [
-      "- W - There is no 'package.json'. We need this file to gather information about the module."
-    ]
+      "- W - package.json issue: Normalized value of bugs field is an empty object. Deleted."
+    ],
+    "license": "MIT",
+    "image": "Capture2.JPG"
   },
   {
     "name": "MMM-FSAPI",
@@ -11002,12 +11421,13 @@
     "name": "MMM-History",
     "url": "https://github.com/cowboysdude/MMM-History",
     "id": "cowboysdude/MMM-History",
-    "maintainer": "Cowboysdude",
+    "maintainer": "cowboysdude",
     "maintainerURL": "",
     "description": "Displays History that happened on today's date.",
     "issues": [
-      "- W - There is no 'package.json'. We need this file to gather information about the module."
-    ]
+      "- I - No image found."
+    ],
+    "license": "MIT"
   },
   {
     "name": "MMM-HolidayLights",
@@ -11024,18 +11444,21 @@
     "name": "MMM-horoscope",
     "url": "https://github.com/morozgrafix/MMM-horoscope",
     "id": "morozgrafix/MMM-horoscope",
-    "maintainer": "MMM-horoscope",
+    "maintainer": "morozgrafix",
     "maintainerURL": "",
     "description": "Displays Daily Horoscope.",
-    "issues": [
-      "- W - There is no 'package.json'. We need this file to gather information about the module."
-    ]
+    "issues": [],
+    "tags": [
+      "horoscope"
+    ],
+    "license": "MIT",
+    "image": "screenshot.jpg"
   },
   {
     "name": "MMM-HumanCalendar",
     "url": "https://github.com/mykle1/MMM-HumanCalendar",
     "id": "mykle1/MMM-HumanCalendar",
-    "maintainer": "Mykle1",
+    "maintainer": "mykle1",
     "maintainerURL": "",
     "description": "A different kind of calendar.",
     "issues": [
@@ -11046,7 +11469,7 @@
     "name": "MMM-HumanClock",
     "url": "https://github.com/mykle1/MMM-HumanClock",
     "id": "mykle1/MMM-HumanClock",
-    "maintainer": "Mykle1",
+    "maintainer": "mykle1",
     "maintainerURL": "",
     "description": "A different kind of clock.",
     "issues": [
@@ -11057,12 +11480,14 @@
     "name": "MMM-Insults",
     "url": "https://github.com/mykle1/MMM-Insults",
     "id": "mykle1/MMM-Insults",
-    "maintainer": "Mykle1",
+    "maintainer": "mykle1",
     "maintainerURL": "",
     "description": "Alternative to the compliments module",
     "issues": [
-      "- W - There is no 'package.json'. We need this file to gather information about the module."
-    ]
+      "- W - package.json issue: No description"
+    ],
+    "license": "ISC",
+    "image": "images-1.jpg"
   },
   {
     "name": "MMM-IronManGIF",
@@ -11079,7 +11504,7 @@
     "name": "MMM-ISS-Live",
     "url": "https://github.com/mykle1/MMM-ISS-Live",
     "id": "mykle1/MMM-ISS-Live",
-    "maintainer": "Mykle1",
+    "maintainer": "mykle1",
     "maintainerURL": "",
     "description": "Displays live video from the International Space Station.",
     "issues": [
@@ -11090,7 +11515,7 @@
     "name": "MMM-ISS",
     "url": "https://github.com/mykle1/MMM-ISS",
     "id": "mykle1/MMM-ISS",
-    "maintainer": "Mykle1",
+    "maintainer": "mykle1",
     "maintainerURL": "",
     "description": "Know when the International Space Station is visible from your location. Can be seen with the naked eye.",
     "issues": [
@@ -11171,29 +11596,38 @@
     "name": "MMM-WebHookAlerts",
     "url": "https://github.com/PjTewkesbury/MMM-WebHookAlerts",
     "id": "PjTewkesbury/MMM-WebHookAlerts",
-    "maintainer": "PJTewkesbury-GitHub",
+    "maintainer": "PjTewkesbury",
     "maintainerURL": "",
     "description": "Displays HTTP POST webhook notifications on screen and supports templates for alert message formatting",
     "issues": [
-      "- W - There is no 'package.json'. We need this file to gather information about the module."
-    ]
+      "- W - package.json issue: No repository field."
+    ],
+    "tags": [
+      "web hooks",
+      "alerts"
+    ],
+    "license": "MIT",
+    "image": "screenshot.jpg"
   },
   {
     "name": "MMM-PlexSlideshow",
     "url": "https://github.com/PjTewkesbury/MMM-PlexSlideshow",
     "id": "PjTewkesbury/MMM-PlexSlideshow",
-    "maintainer": "PJTewkesbury-GitHub",
+    "maintainer": "PjTewkesbury",
     "maintainerURL": "",
     "description": "Displays images in the background one at a time, pulling the images from a PLEX Media Server.",
     "issues": [
-      "- W - There is no 'package.json'. We need this file to gather information about the module."
-    ]
+      "- W - package.json issue: No description",
+      "- W - package.json issue: No repository field.",
+      "- I - No image found."
+    ],
+    "license": "ISC"
   },
   {
     "name": "MMM-Inspirobot",
     "url": "https://github.com/JonathanAndersonPE/MMM-inspirobot",
     "id": "JonathanAndersonPE/MMM-inspirobot",
-    "maintainer": "JonathanAndersonPE-GitHub",
+    "maintainer": "JonathanAndersonPE",
     "maintainerURL": "",
     "description": "Displays AI generated inspirational images from Inspirobot.me.",
     "issues": [
@@ -11321,7 +11755,7 @@
     "name": "MMM-Launch",
     "url": "https://github.com/mykle1/MMM-Launch",
     "id": "mykle1/MMM-Launch",
-    "maintainer": "Mykle1",
+    "maintainer": "mykle1",
     "maintainerURL": "",
     "description": "Ever wonder just how often mankind is launching things into space? Once a year? Twice? WRONG! On a daily basis. Often, several times a day! Don’t believe it? Neither did I.",
     "issues": [
@@ -11343,7 +11777,7 @@
     "name": "MMM-learnlanguage",
     "url": "https://github.com/thekampany/MMM-learnlanguage",
     "id": "thekampany/MMM-learnlanguage",
-    "maintainer": "theKampany",
+    "maintainer": "thekampany",
     "maintainerURL": "",
     "description": "Learn a (new foreign language) word every time you look in the mirror.",
     "issues": [
@@ -11401,7 +11835,7 @@
     "name": "MMM-Lottery",
     "url": "https://github.com/mykle1/MMM-Lottery",
     "id": "mykle1/MMM-Lottery",
-    "maintainer": "Mykle1",
+    "maintainer": "mykle1",
     "maintainerURL": "",
     "description": "A module that gives you truly random lottery numbers, coinciding with many International lotteries.",
     "issues": [
@@ -11426,12 +11860,16 @@
     "name": "MMM-Lunartic",
     "url": "https://github.com/mykle1/MMM-Lunartic",
     "id": "mykle1/MMM-Lunartic",
-    "maintainer": "Mykle1",
+    "maintainer": "mykle1",
     "maintainerURL": "",
     "description": "Up to the minute information about our Lunar partner, with a splash of EyeCandy, to boot! **Doesn't work anymore (API is down).**",
-    "issues": [
-      "- W - There is no 'package.json'. We need this file to gather information about the module."
-    ]
+    "issues": [],
+    "tags": [
+      "mirror ui",
+      "modular"
+    ],
+    "license": "MIT",
+    "image": "pix-11.JPG"
   },
   {
     "name": "MMM-MagicSuperHero",
@@ -11450,7 +11888,7 @@
     "name": "MMM-MARS",
     "url": "https://github.com/mykle1/MMM-MARS",
     "id": "mykle1/MMM-MARS",
-    "maintainer": "Mykle1",
+    "maintainer": "mykle1",
     "maintainerURL": "",
     "description": "Mars Exploration Rover missions.",
     "issues": [
@@ -11472,23 +11910,28 @@
     "name": "MMM-Mopidy-MPD",
     "url": "https://github.com/coderpussy/MMM-Mopidy-MPD",
     "id": "coderpussy/MMM-Mopidy-MPD",
-    "maintainer": "c0d3rpu55y",
+    "maintainer": "coderpussy",
     "maintainerURL": "",
     "description": "Same like MMM-MPD but restyled and additional with volume level and played time.",
     "issues": [
-      "- W - There is no 'package.json'. We need this file to gather information about the module."
-    ]
+      "- W - package.json issue: No repository field.",
+      "- W - package.json issue: license should be a valid SPDX license expression",
+      "- W - No compatible or wrong license field in 'package.json'. Without that, we can't use an image."
+    ],
+    "license": "MIT License"
   },
   {
     "name": "MMM-MP3Player",
     "url": "https://github.com/asimhsidd/MMM-MP3Player",
     "id": "asimhsidd/MMM-MP3Player",
-    "maintainer": "Asimsidd",
+    "maintainer": "asimhsidd",
     "maintainerURL": "",
     "description": "A module for playing music from USB pen drive as soon as it is inserted.",
     "issues": [
-      "- W - There is no 'package.json'. We need this file to gather information about the module."
-    ]
+      "- W - package.json issue: No repository field."
+    ],
+    "license": "MIT",
+    "image": "Capture1.JPG"
   },
   {
     "name": "MMM-MP3Player",
@@ -11546,12 +11989,17 @@
     "name": "MMM-MotionControl",
     "url": "https://github.com/nischi/MMM-MotionControl",
     "id": "nischi/MMM-MotionControl",
-    "maintainer": "Nischi",
+    "maintainer": "nischi",
     "maintainerURL": "",
     "description": "Control HDMI TV if some movement are detected from 3rd Party modules",
     "issues": [
-      "- W - There is no 'package.json'. We need this file to gather information about the module."
-    ]
+      "- I - No image found."
+    ],
+    "tags": [
+      "motion",
+      "control"
+    ],
+    "license": "MIT"
   },
   {
     "name": "MMM-MovieInfo",
@@ -11660,7 +12108,7 @@
     "name": "MMM-NASA",
     "url": "https://github.com/mykle1/MMM-NASA",
     "id": "mykle1/MMM-NASA",
-    "maintainer": "Mykle1",
+    "maintainer": "mykle1",
     "maintainerURL": "",
     "description": "Stunning imagery and information about your universe. Choose from a host of categories. Looks amazing on your mirror!",
     "issues": [
@@ -11713,7 +12161,7 @@
     "name": "MMM-NatureCalendar",
     "url": "https://github.com/mykle1/MMM-NatureCalendar",
     "id": "mykle1/MMM-NatureCalendar",
-    "maintainer": "Mykle1",
+    "maintainer": "mykle1",
     "maintainerURL": "",
     "description": "Simple calendar. Optional Rotating Nature Scenes. Optional color schemes. 17 different languages.",
     "issues": [
@@ -11724,7 +12172,7 @@
     "name": "MMM-NEO",
     "url": "https://github.com/mykle1/MMM-NEO",
     "id": "mykle1/MMM-NEO",
-    "maintainer": "Mykle1",
+    "maintainer": "mykle1",
     "maintainerURL": "",
     "description": "Near Earth Objects passing by our planet this week. Be afraid. Be VERY afraid!",
     "issues": [
@@ -11735,7 +12183,7 @@
     "name": "MMM-Nixie-Clock",
     "url": "https://github.com/nikobix/MMM-Nixie-Clock",
     "id": "nikobix/MMM-Nixie-Clock",
-    "maintainer": "Nikobix",
+    "maintainer": "nikobix",
     "maintainerURL": "",
     "description": "Simple virtual Nixie Clock",
     "issues": [
@@ -11850,7 +12298,7 @@
     "name": "MMM-PetFinder",
     "url": "https://github.com/mykle1/MMM-PetFinder",
     "id": "mykle1/MMM-PetFinder",
-    "maintainer": "Mykle1",
+    "maintainer": "mykle1",
     "maintainerURL": "",
     "description": "All types of pets for adoption. Cat, dog, bird, horse, rabbit, reptile, smallfurry, barnyard.",
     "issues": [
@@ -11910,18 +12358,23 @@
     "name": "MMM-Podcast",
     "url": "https://github.com/ptrbld/MMM-Podcast",
     "id": "ptrbld/MMM-Podcast",
-    "maintainer": "PtrBld",
+    "maintainer": "ptrbld",
     "maintainerURL": "",
     "description": "This module can show/hide a video downloaded from a Podcast or a private server (needs static file path). At the moment you can only display the video by clicking a button (use the MMM-Button module).",
     "issues": [
-      "- W - There is no 'package.json'. We need this file to gather information about the module."
-    ]
+      "- I - No image found."
+    ],
+    "tags": [
+      "podcast",
+      "video"
+    ],
+    "license": "MIT"
   },
   {
     "name": "MMM-PopulationClock",
     "url": "https://github.com/mykle1/MMM-PopulationClock",
     "id": "mykle1/MMM-PopulationClock",
-    "maintainer": "Mykle1",
+    "maintainer": "mykle1",
     "maintainerURL": "",
     "description": "Live World Population Clock",
     "issues": [
@@ -11932,7 +12385,7 @@
     "name": "MMM-Profile",
     "url": "https://github.com/kurtern84/MMM-profile",
     "id": "kurtern84/MMM-profile",
-    "maintainer": "Kurtern84",
+    "maintainer": "kurtern84",
     "maintainerURL": "https://github.com/kurtern84",
     "description": "A simple module to show a profilpicture with your name and wheater report for your MagicMirrorDisplays Swedish name of the day.",
     "issues": [
@@ -11967,12 +12420,14 @@
     "name": "MMM-Recipe",
     "url": "https://github.com/cowboysdude/MMM-Recipe",
     "id": "cowboysdude/MMM-Recipe",
-    "maintainer": "Cowboysdude",
+    "maintainer": "cowboysdude",
     "maintainerURL": "",
     "description": "Displays a new recipe everyday.",
     "issues": [
-      "- W - There is no 'package.json'. We need this file to gather information about the module."
-    ]
+      "- W - package.json issue: No description"
+    ],
+    "license": "MIT",
+    "image": "pics-recipe1.jpg"
   },
   {
     "name": "MMM-Reddit",
@@ -12053,7 +12508,7 @@
     "name": "MMM-SearchLight",
     "url": "https://github.com/mykle1/MMM-SearchLight",
     "id": "mykle1/MMM-SearchLight",
-    "maintainer": "Mykle1",
+    "maintainer": "mykle1",
     "maintainerURL": "",
     "description": "Screensaver",
     "issues": [
@@ -12149,7 +12604,7 @@
     "name": "MMM-SolarPicture",
     "url": "https://github.com/grenagit/MMM-SolarPicture",
     "id": "grenagit/MMM-SolarPicture",
-    "maintainer": "Grena",
+    "maintainer": "grenagit",
     "maintainerURL": "",
     "description": "A module displaying the last Solar Dynamics Observatory (SDO) picture.",
     "issues": [
@@ -12160,7 +12615,7 @@
     "name": "MMM-SORT",
     "url": "https://github.com/mykle1/MMM-SORT",
     "id": "mykle1/MMM-SORT",
-    "maintainer": "Mykle1",
+    "maintainer": "mykle1",
     "maintainerURL": "",
     "description": "Static Or Rotating Tides module. Replaces/combines MMM-SimpleTides and MMM-StaticTides.",
     "issues": [
@@ -12233,7 +12688,7 @@
     "name": "MMM-SunRiseSet",
     "url": "https://github.com/mykle1/MMM-SunRiseSet",
     "id": "mykle1/MMM-SunRiseSet",
-    "maintainer": "Mykle1",
+    "maintainer": "mykle1",
     "maintainerURL": "",
     "description": "More information than you ever wanted to know about the rising and setting of the sun.",
     "issues": [
@@ -12306,12 +12761,15 @@
     "name": "MMM-TvheadendDVR",
     "url": "https://github.com/XBCreepinJesus/MMM-TvheadendDVR",
     "id": "XBCreepinJesus/MMM-TvheadendDVR",
-    "maintainer": "CreepinJesus",
+    "maintainer": "XBCreepinJesus",
     "maintainerURL": "https://github.com/XBCreepinJesus",
     "description": "A module to show your upcoming Tvheadend recordings.",
-    "issues": [
-      "- W - There is no 'package.json'. We need this file to gather information about the module."
-    ]
+    "issues": [],
+    "tags": [
+      "tvheadend"
+    ],
+    "license": "MIT",
+    "image": "screenshots-demo.jpg"
   },
   {
     "name": "MMM-TweetsByTimelineOrList",
@@ -12385,23 +12843,26 @@
     "name": "MMM-Unsplash",
     "url": "https://github.com/parnic/MMM-Unsplash",
     "id": "parnic/MMM-Unsplash",
-    "maintainer": "Parnic",
+    "maintainer": "parnic",
     "maintainerURL": "",
     "description": "Display a random image from Unsplash categories.",
     "issues": [
-      "- W - There is no 'package.json'. We need this file to gather information about the module."
-    ]
+      "- I - No image found."
+    ],
+    "license": "MIT"
   },
   {
     "name": "MMM-VideoPlayer",
     "url": "https://github.com/asimhsidd/MMM-VideoPlayer",
     "id": "asimhsidd/MMM-VideoPlayer",
-    "maintainer": "Asimsidd",
+    "maintainer": "asimhsidd",
     "maintainerURL": "",
     "description": "A module for playing video from any device on the same network.",
     "issues": [
-      "- W - There is no 'package.json'. We need this file to gather information about the module."
-    ]
+      "- W - package.json issue: No repository field."
+    ],
+    "license": "MIT",
+    "image": "Pictures-1.jpg"
   },
   {
     "name": "MMM-Videoplayer",
@@ -12521,7 +12982,7 @@
     "name": "MMM-mumble",
     "url": "https://github.com/ThePirateWhoSmellsOfSunflowers/MMM-mumble",
     "id": "ThePirateWhoSmellsOfSunflowers/MMM-mumble",
-    "maintainer": "TPWSOS",
+    "maintainer": "ThePirateWhoSmellsOfSunflowers",
     "maintainerURL": "",
     "description": "Display users currently connected on the mumble server (murmur).",
     "issues": [
@@ -12711,12 +13172,15 @@
     "name": "MMM-FunnyHolidays",
     "url": "https://github.com/mattileh/MMM-FunnyHolidays",
     "id": "mattileh/MMM-FunnyHolidays",
-    "maintainer": "Mattileh",
+    "maintainer": "mattileh",
     "maintainerURL": "",
     "description": "Shows Today's and Tomorrow's \"funny\" holidays around world (datasource <www.webcal.fi>).",
-    "issues": [
-      "- W - There is no 'package.json'. We need this file to gather information about the module."
-    ]
+    "issues": [],
+    "tags": [
+      "calendar"
+    ],
+    "license": "MIT",
+    "image": "images-webcalfi-logo-small.jpg"
   },
   {
     "name": "MMM-yijv",
@@ -12779,7 +13243,7 @@
     "name": "MMM-Breathwork",
     "url": "https://github.com/yashatgit/MMM-Breathwork",
     "id": "yashatgit/MMM-Breathwork",
-    "maintainer": "Yash",
+    "maintainer": "yashatgit",
     "maintainerURL": "",
     "description": "Quick Breathing Exercise to calm you down.",
     "issues": [
@@ -12953,7 +13417,7 @@
     "name": "MMM-BirdNET",
     "url": "https://github.com/BrianHepler/MMM-BirdNET/tree/popup_reposition",
     "id": "BrianHepler/MMM-BirdNET/tree/popup_reposition",
-    "maintainer": "Brian Hepler",
+    "maintainer": "BrianHepler",
     "maintainerURL": "https://github.com/BrianHepler",
     "description": "Display submissions to BirdNET, Cornell University's machine learning project to identify birds by their song.",
     "issues": [
@@ -12964,7 +13428,7 @@
     "name": "MMM-Canvas",
     "url": "https://github.com/chase-cromwell/MMM-Canvas",
     "id": "chase-cromwell/MMM-Canvas",
-    "maintainer": "Chase Cromwell",
+    "maintainer": "chase-cromwell",
     "maintainerURL": "https://github.com/chase-cromwell",
     "description": "Module to display upcoming assignments from Canvas LMS platform.",
     "issues": [
@@ -12975,18 +13439,22 @@
     "name": "MMM-eswordoftheday",
     "url": "https://github.com/daniel-windsor/MMM-eswordoftheday",
     "id": "daniel-windsor/MMM-eswordoftheday",
-    "maintainer": "Dan Windsor",
+    "maintainer": "daniel-windsor",
     "maintainerURL": "https://github.com/daniel-windsor",
     "description": "Display a Spanish word of the day along with translations and example sentences.",
     "issues": [
-      "- W - There is no 'package.json'. We need this file to gather information about the module."
-    ]
+      "- W - package.json issue: No description",
+      "- W - package.json issue: No repository field.",
+      "- I - No image found."
+    ],
+    "tags": [],
+    "license": "ISC"
   },
   {
     "name": "facts",
     "url": "https://github.com/alanshen111/facts",
     "id": "alanshen111/facts",
-    "maintainer": "Alan Shen",
+    "maintainer": "alanshen111",
     "maintainerURL": "https://github.com/alanshen111",
     "description": "Displays some ✨interesting✨ facts! Makes your mirror look like an RPG loading screen. Example screenshot included.",
     "issues": [
@@ -13014,7 +13482,7 @@
     "name": "MMM-Hanzi",
     "url": "https://github.com/tderflinger/MMM-Hanzi",
     "id": "tderflinger/MMM-Hanzi",
-    "maintainer": "TD",
+    "maintainer": "tderflinger",
     "maintainerURL": "",
     "description": "Learn Chinese Hanzi characters directly on your MagicMirror². This module rotates between a configurable number of characters.",
     "issues": [
@@ -13160,7 +13628,7 @@
     "name": "MMM-BMW-DS",
     "url": "https://github.com/mykle1/MMM-BMW-DS",
     "id": "mykle1/MMM-BMW-DS",
-    "maintainer": "Mykle1",
+    "maintainer": "mykle1",
     "maintainerURL": "",
     "description": "Weather designed for bottom bar position, now using the DarkSky API **°DarkSky API no longer works since 2023-Mar-31**",
     "issues": [
@@ -13171,7 +13639,7 @@
     "name": "MMM-WeatherOrNot",
     "url": "https://github.com/mykle1/MMM-WeatherOrNot",
     "id": "mykle1/MMM-WeatherOrNot",
-    "maintainer": "Mykle1",
+    "maintainer": "mykle1",
     "maintainerURL": "",
     "description": "Squeeze or stretch it. Watch it respond by reformatting itself. Fully customizable. Also driven by Darksky API (**°DarkSky API no longer works since 2023-Mar-31**)",
     "issues": [
@@ -13193,7 +13661,7 @@
     "name": "MMM-darksky-hourly",
     "url": "https://github.com/jacquesCedric/MMM-darksky-hourly",
     "id": "jacquesCedric/MMM-darksky-hourly",
-    "maintainer": "JacquesCedric",
+    "maintainer": "jacquesCedric",
     "maintainerURL": "",
     "description": "Hourly weather and precipitation pulled from DarkSky **°DarkSky API no longer works since 2023-Mar-31**",
     "issues": [
@@ -13228,7 +13696,7 @@
     "name": "MMM-PLOW",
     "url": "https://github.com/mykle1/MMM-PLOW",
     "id": "mykle1/MMM-PLOW",
-    "maintainer": "Mykle1",
+    "maintainer": "mykle1",
     "maintainerURL": "",
     "description": "Pig Latin On Weather! Multiple views in a single module. Driven by Darksky API. **°DarkSky API no longer works since 2023-Mar-31**",
     "issues": [

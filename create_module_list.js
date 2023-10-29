@@ -33,8 +33,6 @@ async function createModuleList() {
 
       if (parts.length === 5) {
         const issues = [];
-        let maintainer;
-        let maintainerURL;
 
         const name = parts[1].match(/\[(.*?)\]\((.*?)\)/)[1];
         const url = parts[1].match(/\[(.*?)\]\((.*?)\)/)[2];
@@ -51,12 +49,13 @@ async function createModuleList() {
           .replace("https://github.com/", "")
           .replace("https://gitlab.com/", "");
 
+        const maintainer = url.split("/")[3];
+
         const maintainerLinked = parts[2].match(/\[(.*?)\]\((.*?)\)/);
+        let maintainerURL;
         if (maintainerLinked !== null) {
-          maintainer = maintainerLinked[1];
           maintainerURL = maintainerLinked[2];
         } else {
-          maintainer = parts[2];
           maintainerURL = "";
         }
 
