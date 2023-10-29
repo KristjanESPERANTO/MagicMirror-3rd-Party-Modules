@@ -50,8 +50,6 @@ Note: This list is not entirely up to date. See the code for current status.
 - create super script which runs all scripts in the right order and shows a progress information
 - rewite get_modules.py in javascript
 - Get last commit date from git?
-- Use modules.json for website
-- Filter some keywords: MM, module, MagicMirror, Smart Miror, ...
 - Compatibility with the module list of `MMM-Remote-Control`: <https://github.com/Jopyth/MMM-Remote-Control/blob/master/modules.json>
 - Use data from GitHub API: <https://api.github.com/repos/MichMich/MagicMirror>
   - Unfortunately we can't make many API queries. That's why we try to get the most data without the API queries.

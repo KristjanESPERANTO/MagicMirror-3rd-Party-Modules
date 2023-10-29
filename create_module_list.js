@@ -75,7 +75,11 @@ async function createModuleList() {
     }
   }
 
-  fs.writeFileSync("modules.json", JSON.stringify(modules, null, 2), "utf8");
+  fs.writeFileSync(
+    "./docs/modules.temp.json",
+    JSON.stringify(modules, null, 2),
+    "utf8"
+  );
 }
 
 createModuleList();

@@ -133,13 +133,19 @@ async function addInformationFromPackageJson(moduleList) {
 }
 
 async function expandModuleList() {
-  const moduleList = await getJson("modules.json");
+  const moduleList = await getJson("./docs/modules.temp.json");
 
   const expandedModuleList = await addInformationFromPackageJson(moduleList);
 
   fs.writeFileSync(
     "./docs/modules.json",
     JSON.stringify(expandedModuleList, null, 2),
+    "utf8"
+  );
+
+  fs.writeFileSync(
+    "./docs/modules.min.json",
+    JSON.stringify(expandedModuleList),
     "utf8"
   );
 }

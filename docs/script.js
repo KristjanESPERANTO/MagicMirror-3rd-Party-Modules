@@ -35,8 +35,8 @@ function displayCards(cards) {
     if (cardData.tags) {
       card.innerHTML += `
                 <p><b>Tags:</b> ${cardData.tags
-                  .map((tag) => `#${tag}`)
-                  .join(" ")}</p>
+          .map((tag) => `#${tag}`)
+          .join(" ")}</p>
               `;
     }
     cardContainer.appendChild(card);
@@ -160,7 +160,7 @@ searchInput.addEventListener("input", () => {
 });
 
 async function initiate() {
-  const apiUrl = "modules.json";
+  const apiUrl = "modules.min.json";
   try {
     const response = await fetch(apiUrl);
     const data = await response.json();
