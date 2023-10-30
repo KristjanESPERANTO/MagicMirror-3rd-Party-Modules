@@ -139,6 +139,12 @@ main {
   background-color: #04246888 !important;
 }
 
+#top-right {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+}
+
 #repo-link,
 #repo-link a {
   text-align: right;
@@ -158,6 +164,15 @@ main {
   color: var(--color-text-dimmed);
   font-size: var(--font-size-xsmall);
   text-align: center;
+}
+
+#sort-dropdown {
+  margin: 0.5em;
+  padding: 0.5em;
+  cursor: pointer;
+  color: var(--color-text);
+  background-color: var(--color-buttons);
+  border-radius: 5px;
 }
 
 /* Give some tags an emoji */

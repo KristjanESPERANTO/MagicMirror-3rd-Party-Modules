@@ -17,9 +17,15 @@ async function fetchMarkdownData() {
   }
 }
 
+function sortByNameIgnoringPrefix(a, b) {
+  const nameA = a.name.replace("MMM-", "");
+  const nameB = b.name.replace("MMM-", "");
+  return nameA.localeCompare(nameB);
+}
+
 async function createModuleList() {
   const markdown = await fetchMarkdownData();
-  const modules = [];
+  const moduleList = [];
   // eslint-disable-next-line no-restricted-syntax
   for (const line of markdown.split("\n")) {
     if (
@@ -34,8 +40,7 @@ async function createModuleList() {
       if (parts.length === 5) {
         const issues = [];
 
-        const name = parts[1].match(/\[(.*?)\]\((.*?)\)/)[1];
-        const url = parts[1].match(/\[(.*?)\]\((.*?)\)/)[2];
+        const url = parts[1].match(/\[(.*?)\]\((.*?)\)/)[2].trim();
         if (
           !url.startsWith("https://github.com") &&
           !url.startsWith("https://gitlab.com")
@@ -50,6 +55,7 @@ async function createModuleList() {
           .replace("https://gitlab.com/", "");
 
         const maintainer = url.split("/")[3];
+        const name = url.split("/")[4];
 
         const maintainerLinked = parts[2].match(/\[(.*?)\]\((.*?)\)/);
         let maintainerURL;
@@ -70,14 +76,16 @@ async function createModuleList() {
           description,
           issues
         };
-        modules.push(module);
+        moduleList.push(module);
       }
     }
   }
 
+  const sortedModuleList = moduleList.sort(sortByNameIgnoringPrefix);
+
   fs.writeFileSync(
     "./docs/modules.temp.json",
-    JSON.stringify(modules, null, 2),
+    JSON.stringify(sortedModuleList, null, 2),
     "utf8"
   );
 }

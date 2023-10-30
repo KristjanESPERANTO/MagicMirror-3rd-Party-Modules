@@ -8,16 +8,27 @@
   </head>
   <body>
     <header>
-        <div id="repo-link"><a href="https://github.com/KristjanESPERANTO/MagicMirror-3rd-Party-Module-check" target="_blank">GitHub</a></div>
-        <h1>MagicMirror² 3rd Party Modules</h1>
-        <input type="text" id="search-input" placeholder="Search in tags, descriptions and names ..." />
-        <div id="container">
-          <div id="card-count">
-            Modules shown: <span id="card-count-value">0</span>
-          </div>
-          <button id="show-all-button" style="display: none;">Reset</button>
+      <div id="top-right">
+        <div id="repo-link">
+          <a href="https://github.com/KristjanESPERANTO/MagicMirror-3rd-Party-Module-check" target="_blank">GitHub</a>
         </div>
-        <div id="tag-buttons"></div>
+        <div id="sort-container">
+          <label for="sort-dropdown">Sort:</label>
+          <select id="sort-dropdown">
+            <option value="issues" selected>default</option>
+            <option value="name">name</option>
+          </select>
+        </div>
+      </div>
+      <h1>MagicMirror² 3rd Party Modules</h1>
+      <input type="text" id="search-input" placeholder="Search in tags, descriptions and names ..." />
+      <div id="container">
+        <div id="card-count">
+          Modules shown: <span id="card-count-value">0</span>
+        </div>
+        <button id="show-all-button" style="display: none;">Reset</button>
+      </div>
+      <div id="tag-buttons"></div>
     </header>
     <main id="card-container"></main>
     <script src="script.js"></script>

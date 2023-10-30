@@ -1,17 +1,19 @@
 let allData = [];
-const showAllButton = document.getElementById("show-all-button");
+let filteredCards;
+const resetButton = document.getElementById("show-all-button");
 const cardContainer = document.getElementById("card-container");
 const searchInput = document.getElementById("search-input");
 const tagButtonContainer = document.getElementById("tag-buttons");
+const sortDropdown = document.getElementById("sort-dropdown");
 
-function displayCards(cards) {
+function displayCards() {
   cardContainer.innerHTML = "";
 
-  const cardCountValue = cards.length;
+  const cardCountValue = filteredCards.length;
   const cardCountElement = document.getElementById("card-count-value");
   cardCountElement.textContent = `${cardCountValue} of ${allData.length}`;
 
-  cards.forEach((cardData) => {
+  filteredCards.forEach((cardData) => {
     const card = document.createElement("div");
     card.className = "card";
     card.innerHTML = `
@@ -35,8 +37,8 @@ function displayCards(cards) {
     if (cardData.tags) {
       card.innerHTML += `
                 <p><b>Tags:</b> ${cardData.tags
-          .map((tag) => `#${tag}`)
-          .join(" ")}</p>
+                  .map((tag) => `#${tag}`)
+                  .join(" ")}</p>
               `;
     }
     cardContainer.appendChild(card);
@@ -55,6 +57,23 @@ function displayCards(cards) {
       clickedCard.classList.add("selected");
     }
   });
+}
+
+function sortData(sortOption) {
+  switch (sortOption) {
+    case "name":
+      // Sort by name
+      filteredCards.sort((a, b) => {
+        const nameA = a.name.replace("MMM-", "");
+        const nameB = b.name.replace("MMM-", "");
+        return nameA.localeCompare(nameB);
+      });
+      break;
+    case "issues":
+      // Sort by issue count
+      filteredCards.sort((a, b) => a.issues.length - b.issues.length);
+      break;
+  }
 }
 
 function displayTagButtonContainer() {
@@ -80,72 +99,82 @@ function displayTagButtonContainer() {
   });
 }
 
-function removeAllSelected() {
+function removeSelectedMarkingFromTagsAndCards() {
   // Remove the "selected" class from all tag buttons and cards
   const allURLs = document.querySelectorAll(".tag-button, .card");
   allURLs.forEach((url) => url.classList.remove("selected"));
 }
 
-function updateDisplay(searchText) {
-  let filteredCards = allData;
+function updateDisplay() {
+  sortData(sortDropdown.value);
+  displayCards();
+}
 
-  if (typeof searchText === "string") {
-    const searchLower = searchText.toLowerCase();
-    filteredCards = filteredCards.filter((card) => {
-      const cardText = card.text ? card.text.toLowerCase() : "";
-      const cardDescription = card.description
-        ? card.description.toLowerCase()
-        : "";
-      const cardName = card.name ? card.name.toLowerCase() : "";
-      const cardTags = card.tags ? card.tags : [];
+function filterBySearchText(searchText) {
+  const searchLower = searchText.toLowerCase();
+  filteredCards = allData.filter((card) => {
+    const cardText = card.text ? card.text.toLowerCase() : "";
+    const cardDescription = card.description
+      ? card.description.toLowerCase()
+      : "";
+    const cardName = card.name ? card.name.toLowerCase() : "";
+    const cardTags = card.tags ? card.tags : [];
 
-      return (
-        cardText.includes(searchLower) ||
-        cardDescription.includes(searchLower) ||
-        cardName.includes(searchLower) ||
-        cardTags.some((tag) => tag.toLowerCase().includes(searchLower))
-      );
-    });
+    return (
+      cardText.includes(searchLower) ||
+      cardDescription.includes(searchLower) ||
+      cardName.includes(searchLower) ||
+      cardTags.some((tag) => tag.toLowerCase().includes(searchLower))
+    );
+  });
 
-    // Show showAllButton
-    showAllButton.style.display = "block";
-  } else {
-    // Empty the search field
-    searchInput.value = "";
+  // Show resetButton
+  resetButton.style.display = "block";
 
-    // Hide showAllButton
-    showAllButton.style.display = "none";
-  }
+  removeSelectedMarkingFromTagsAndCards();
 
-  removeAllSelected();
-  displayCards(filteredCards);
-  displayTagButtonContainer();
+  updateDisplay();
 }
 
 function filterByTag(tag) {
-  const data = allData;
-  const filteredCards = data.filter((card) => {
+  filteredCards = allData.filter((card) => {
     const tags = card.tags;
     if (tags) {
       return tags.includes(tag);
     }
     return false;
   });
-  displayCards(filteredCards);
 
-  removeAllSelected();
+  // Empty the search field
+  searchInput.value = "";
+
+  // Show resetButton
+  resetButton.style.display = "block";
+
+  removeSelectedMarkingFromTagsAndCards();
+
+  updateDisplay();
 
   // Mark the selected tag
   const selectedURL = document.querySelector(`.tag-button[data-tag="${tag}"]`);
   if (selectedURL) {
     selectedURL.classList.add("selected");
   }
-
-  // Show showAllButton
-  showAllButton.style.display = "block";
 }
 
-showAllButton.addEventListener("click", updateDisplay);
+resetButton.addEventListener("click", () => {
+  filteredCards = allData;
+
+  // Empty the search field
+  searchInput.value = "";
+
+  // Hide resetButton
+  resetButton.style.display = "none";
+
+  removeSelectedMarkingFromTagsAndCards();
+
+  updateDisplay();
+});
 
 tagButtonContainer.addEventListener("click", (event) => {
   if (event.target.tagName === "A") {
@@ -156,7 +185,18 @@ tagButtonContainer.addEventListener("click", (event) => {
 });
 
 searchInput.addEventListener("input", () => {
-  updateDisplay(searchInput.value);
+  if (searchInput.value) {
+    filterBySearchText(searchInput.value);
+  } else {
+    resetButton.style.display = "none";
+    filteredCards = allData;
+    updateDisplay();
+  }
+});
+
+// Add a change event listener to the dropdown menu
+sortDropdown.addEventListener("change", () => {
+  updateDisplay();
 });
 
 async function initiate() {
@@ -165,7 +205,9 @@ async function initiate() {
     const response = await fetch(apiUrl);
     const data = await response.json();
     allData = data;
+    filteredCards = data;
     updateDisplay();
+    displayTagButtonContainer();
   } catch (error) {
     console.error("Error fetching data:", error);
   }
