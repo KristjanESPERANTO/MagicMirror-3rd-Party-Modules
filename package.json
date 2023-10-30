@@ -1,5 +1,5 @@
 {
-  "name": "magicmirror-3rd-party-module-check",
+  "name": "magicmirror-3rd-party-modules",
   "version": "0.1.0",
   "description": "This project provides an overview of all MagicMirror² modules and puts the modules through a few tests.",
   "main": "create_modules_list.js",
@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/KristjanESPERANTO/MagicMirror-3rd-Party-Module-check.git"
+    "url": "git+https://github.com/KristjanESPERANTO/MagicMirror-3rd-Party-Modules.git"
   },
   "keywords": [
     "MagicMirror²",
@@ -20,9 +20,9 @@
   },
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/KristjanESPERANTO/MagicMirror-3rd-Party-Module-check/issues"
+    "url": "https://github.com/KristjanESPERANTO/MagicMirror-3rd-Party-Modules/issues"
   },
-  "homepage": "https://github.com/KristjanESPERANTO/MagicMirror-3rd-Party-Module-check#readme",
+  "homepage": "https://github.com/KristjanESPERANTO/MagicMirror-3rd-Party-Modules#readme",
   "devDependencies": {
     "eslint": "^8.52.0",
     "eslint-config-airbnb-base": "^15.0.0",
