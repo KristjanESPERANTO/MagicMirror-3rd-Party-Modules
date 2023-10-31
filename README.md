@@ -2,7 +2,10 @@
 
 _This project is still in a early stage. Feedback and pull requests are very welcome._
 
-The two goals of this project are, on the one hand, to **create a better list of modules** for [MagicMirror²](https://magicmirror.builders/) and, on the other hand, to **do a few rudimentary tests** on the modules and to generate suggestions for improvements for the developers.
+The two goals of this project are:
+
+1. **Create a better list of modules** for [MagicMirror²](https://magicmirror.builders/).
+2. **Do a few rudimentary tests** on the modules and generate suggestions for improvements for the developers.
 
 ## List of modules
 
