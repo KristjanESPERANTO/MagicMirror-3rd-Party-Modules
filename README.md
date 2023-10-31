@@ -4,14 +4,14 @@ _This project is still in a early stage. Feedback and pull requests are very wel
 
 The two goals of this project are:
 
-1. **Create a better list of modules** for [MagicMirror²](https://magicmirror.builders/).
+1. **Create a nice list of modules** for [MagicMirror²](https://magicmirror.builders/).
 2. **Do a few rudimentary tests** on the modules and generate suggestions for improvements for the developers.
 
 ## List of modules
 
 [The official list in the wiki](https://github.com/MichMich/MagicMirror/wiki/3rd-party-modules) is a simple text list without filters and images. This list now contains over 1000 modules, so it is not so easy for users to pick out modules.
 
-With a few scripts we create a web page with filter function and integrated images from the original list. This website still needs some fine tuning, but is already in a usable state. You can check it here: <https://kristjanesperanto.github.io/MagicMirror-3rd-Party-Modules/>
+With a few scripts we create a web page with filter function and integrated images. This website still needs some fine tuning, but is already in a usable state. You can check it here: <https://kristjanesperanto.github.io/MagicMirror-3rd-Party-Modules/>
 
 ## Module tests
 
