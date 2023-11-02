@@ -64,11 +64,18 @@ This script goes through all cloned modules and performs various checks. The res
 
 - Website
   - Make it responsive.
-  - add sorting options alphabetically + last commit + GitHub stars + issues
-  - Parse markdown for description? In Browser or in script?
   - Add an issue div to each card which have issues: counter + link to result.md.
+  - Add little statistics:
+    - last update
+    - module amount
+    - amount of different maintainer
+    - amount of modules with images
+    - amount of GitHub repos
+    - amount of GitLab repos
+    - amount of bitbucket repos
 - Write instructions: “How do I get my module presented perfectly?”
 - handle/mark deprecated/unmaintained modules
+- Use issue codes to make the module list file smaller.
 - get rid of of the cloned repo files if a module is removed
 - create super script which runs all scripts in the right order and shows a progress information
 - rewite get_modules.py in javascript
