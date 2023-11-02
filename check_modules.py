@@ -156,6 +156,10 @@ def check_modules():
             output.write(f"\n## [{module['name']} by {module['maintainer']}]({url_string})\n\n")
             for idx, issue in enumerate(module["issues"]):
                 output.write(f"{idx+1}. {issue}\n")
+
+        module["last_commit"] = subprocess.run(f"cd ./modules/{module_directory} && git log -1 --format='%as' && cd ..",
+                                 stdout=subprocess.PIPE, shell=True, check=False).stdout.decode().rstrip()
+
     print(f"{module_counter} modules analyzed. For results see file result.md.           ")
     output.close()
 

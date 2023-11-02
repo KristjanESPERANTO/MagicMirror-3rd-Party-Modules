@@ -69,7 +69,9 @@ function sortData(sortOption) {
         return nameA.localeCompare(nameB);
       });
       break;
-    case "issues":
+    case "default":
+      // Sort by last commit date
+      filteredCards.sort((a, b) => b.last_commit.localeCompare(a.last_commit));
       // Sort by issue count
       filteredCards.sort((a, b) => a.issues.length - b.issues.length);
       break;
