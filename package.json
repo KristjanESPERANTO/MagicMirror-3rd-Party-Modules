@@ -1,8 +1,9 @@
 {
   "name": "magicmirror-3rd-party-modules",
   "version": "0.1.0",
+  "type": "module",
   "description": "This project provides an overview of all MagicMirror² modules and puts the modules through a few tests.",
-  "main": "create_modules_list.js",
+  "main": "create_module_list.js",
   "directories": {
     "doc": "docs"
   },
@@ -52,7 +53,9 @@
     "*.css": "stylelint --fix"
   },
   "dependencies": {
+    "marked": "^9.1.5",
     "normalize-package-data": "^6.0.0",
+    "sanitize-html": "^2.11.0",
     "sharp": "^0.32.6"
   }
 }

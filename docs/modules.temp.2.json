@@ -39,7 +39,7 @@
     "id": "jinserk/MMM-2Day-NOAA-Forecast",
     "maintainer": "jinserk",
     "maintainerURL": "https://github.com/jinserk",
-    "description": "Show 4 consecutive 12-hr forecast, provided by [NOAA National Weather Service API](https://www.weather.gov/documentation/services-web-api). No user registration nor API-key required.",
+    "description": "Show 4 consecutive 12-hr forecast, provided by <a target=\"_blank\" href=\"https://www.weather.gov/documentation/services-web-api\">NOAA National Weather Service API</a>. No user registration nor API-key required.",
     "issues": [
       "Issue: No image found."
     ],
@@ -55,7 +55,7 @@
     "id": "nigel-daniels/MMM-3Day-Forecast",
     "maintainer": "nigel-daniels",
     "maintainerURL": "https://github.com/nigel-daniels",
-    "description": "Simple display of today, tomorrow & next-day, designed to work with MMM-Weather-Now. Now uses Open Weather as WeatherBit reduced the free service to an unusable level :( If you installed an older version ( < 18 Oct 2022 ), please update and get a new api key!",
+    "description": "Simple display of today, tomorrow &amp; next-day, designed to work with MMM-Weather-Now. Now uses Open Weather as WeatherBit reduced the free service to an unusable level :( If you installed an older version ( &lt; 18 Oct 2022 ), please update and get a new api key!",
     "issues": [],
     "tags": [
       "weather",
@@ -70,7 +70,7 @@
     "id": "buge/MMM-AareGuru",
     "maintainer": "buge",
     "maintainerURL": "https://github.com/buge",
-    "description": "Displays the temperature from [aare.guru](https://aare.guru) for the river Aare in Switzerland (in Brienz, Interlaken, Thun, Bern, Hagneck, Biel or Brugg).",
+    "description": "Displays the temperature from <a target=\"_blank\" href=\"https://aare.guru\">aare.guru</a> for the river Aare in Switzerland (in Brienz, Interlaken, Thun, Bern, Hagneck, Biel or Brugg).",
     "issues": [
       "Issue: There is no `package.json`. We need this file to gather information about the module."
     ]
@@ -155,7 +155,7 @@
     "id": "mstarzec386/MMM-Airly",
     "maintainer": "mstarzec386",
     "maintainerURL": "",
-    "description": "Air pollution in Polish cities. Data from airly (<https://airly.eu/>)",
+    "description": "Air pollution in Polish cities. Data from airly (<a target=\"_blank\" href=\"https://airly.eu/\">https://airly.eu/</a>)",
     "issues": [
       "Issue: No image found."
     ],
@@ -440,7 +440,7 @@
     "id": "gpailler/MMM-aqicn",
     "maintainer": "gpailler",
     "maintainerURL": "https://github.com/gpailler",
-    "description": "Display the air quality index from [aqicn](https://aqicn.org) project.",
+    "description": "Display the air quality index from <a target=\"_blank\" href=\"https://aqicn.org\">aqicn</a> project.",
     "issues": [
       "Issue: There is no `package.json`. We need this file to gather information about the module."
     ]
@@ -464,7 +464,7 @@
     "id": "Dentrax/MMM-ArduPort",
     "maintainer": "Dentrax",
     "maintainerURL": "",
-    "description": "This module provides Arduino serial communication support with Raspberry PI. Arduino sends the sensor's data value to the module using Python. Your next favorite Plug&Play utility module.",
+    "description": "This module provides Arduino serial communication support with Raspberry PI. Arduino sends the sensor's data value to the module using Python. Your next favorite Plug&amp;Play utility module.",
     "issues": [],
     "tags": [
       "arduino",
@@ -826,7 +826,7 @@
     "id": "amitchone/MMM-birthdays",
     "maintainer": "amitchone",
     "maintainerURL": "https://github.com/amitchone",
-    "description": "A simple, lightweight birthday reminder - specified either via simple JSON file or in `config.js`. Supports multiple languages!",
+    "description": "A simple, lightweight birthday reminder - specified either via simple JSON file or in <code>config.js</code>. Supports multiple languages!",
     "issues": [
       "`package.json` issue: No repository field.",
       "Issue: No image found."
@@ -874,7 +874,7 @@
     "id": "pcurt/MMM-BlaguesAPI",
     "maintainer": "pcurt",
     "maintainerURL": "https://github.com/pcurt",
-    "description": "Module that shows french jokes from the BlaguesAPI <https://www.blagues-api.fr>.",
+    "description": "Module that shows french jokes from the BlaguesAPI <a target=\"_blank\" href=\"https://www.blagues-api.fr\">https://www.blagues-api.fr</a>.",
     "issues": [
       "Issue: There is no `package.json`. We need this file to gather information about the module."
     ]
@@ -907,7 +907,7 @@
     "id": "Cyw00d/MMM-Bluelinky",
     "maintainer": "Cyw00d",
     "maintainerURL": "https://github.com/Cyw00d\"",
-    "description": "Displays some of your Hyundai's data on your Mirror, the code is based on [MMM-Tesla2](https://github.com/martinburheimtingstad/MMM-Tesla2)",
+    "description": "Displays some of your Hyundai's data on your Mirror, the code is based on <a target=\"_blank\" href=\"https://github.com/martinburheimtingstad/MMM-Tesla2\">MMM-Tesla2</a>",
     "issues": [
       "`package.json` issue: No repository field."
     ],
@@ -982,7 +982,7 @@
     "id": "mykle1/MMM-BMW-DS",
     "maintainer": "mykle1",
     "maintainerURL": "",
-    "description": "Weather designed for bottom bar position, now using the DarkSky API **°DarkSky API no longer works since 2023-Mar-31**",
+    "description": "Weather designed for bottom bar position, now using the DarkSky API <strong>°DarkSky API no longer works since 2023-Mar-31</strong>",
     "issues": [
       "Issue: There is no `package.json`. We need this file to gather information about the module."
     ]
@@ -1348,7 +1348,7 @@
     "id": "MMM-CalendarExt2/MMM-CalendarExtMinimonth",
     "maintainer": "MMM-CalendarExt2",
     "maintainerURL": "",
-    "description": "Display mini month calendar. This is a plugin module for `MMM-CalendarExt2`.",
+    "description": "Display mini month calendar. This is a plugin module for <code>MMM-CalendarExt2</code>.",
     "issues": [
       "Issue: There is no `package.json`. We need this file to gather information about the module."
     ]
@@ -1359,7 +1359,7 @@
     "id": "MMM-CalendarExt2/MMM-CalendarExtPlan",
     "maintainer": "MMM-CalendarExt2",
     "maintainerURL": "",
-    "description": "Display daily plan by criteria. This is a plugin module for `MMM-CalendarExt2`.",
+    "description": "Display daily plan by criteria. This is a plugin module for <code>MMM-CalendarExt2</code>.",
     "issues": [
       "Issue: There is no `package.json`. We need this file to gather information about the module."
     ]
@@ -1370,7 +1370,7 @@
     "id": "MMM-CalendarExt2/MMM-CalendarExtTimeline",
     "maintainer": "MMM-CalendarExt2",
     "maintainerURL": "",
-    "description": "Display current timeline schedules. This is a plugin module for `MMM-CalendarExt2`.",
+    "description": "Display current timeline schedules. This is a plugin module for <code>MMM-CalendarExt2</code>.",
     "issues": [
       "Issue: There is no `package.json`. We need this file to gather information about the module."
     ]
@@ -1403,7 +1403,7 @@
     "id": "paviro/MMM-Callmonitor-Current-Call",
     "maintainer": "paviro",
     "maintainerURL": "",
-    "description": "Extension for [MMM-FRITZ-Box-Callmonitor](https://github.com/paviro/MMM-FRITZ-Box-Callmonitor) (Displays the currently active call)",
+    "description": "Extension for <a target=\"_blank\" href=\"https://github.com/paviro/MMM-FRITZ-Box-Callmonitor\">MMM-FRITZ-Box-Callmonitor</a> (Displays the currently active call)",
     "issues": [
       "Issue: There is no `package.json`. We need this file to gather information about the module."
     ]
@@ -1587,7 +1587,7 @@
     "id": "MarinescuEvghenii/MMM-Chart",
     "maintainer": "MarinescuEvghenii",
     "maintainerURL": "",
-    "description": "Chart module. This is a simple wrapper for [Chart.js](https://www.chartjs.org)",
+    "description": "Chart module. This is a simple wrapper for <a target=\"_blank\" href=\"https://www.chartjs.org\">Chart.js</a>",
     "issues": [
       "`package.json` issue: No description",
       "`package.json` issue: No repository field."
@@ -1693,7 +1693,7 @@
     "id": "macd2point0/MMM-CloneWarsQuotes",
     "maintainer": "macd2point0",
     "maintainerURL": "",
-    "description": "Module displays a random intro quote from *The Clone Wars* television series, seasons 1-6.",
+    "description": "Module displays a random intro quote from <em>The Clone Wars</em> television series, seasons 1-6.",
     "issues": [
       "Issue: There is no `package.json`. We need this file to gather information about the module."
     ]
@@ -1893,7 +1893,7 @@
     "id": "0m4r/MMM-covid19",
     "maintainer": "0m4r",
     "maintainerURL": "",
-    "description": "Live covid19 numbers provided via <https://covid19api.com/>.",
+    "description": "Live covid19 numbers provided via <a target=\"_blank\" href=\"https://covid19api.com/\">https://covid19api.com/</a>.",
     "issues": [
       "`package.json` issue: No license field."
     ],
@@ -1981,7 +1981,7 @@
     "id": "boghammar/MMM-CrisisInformationSweden",
     "maintainer": "boghammar",
     "maintainerURL": "",
-    "description": "News feed from the **Swedish** Government Crisis Information (Krisinformation.se).",
+    "description": "News feed from the <strong>Swedish</strong> Government Crisis Information (Krisinformation.se).",
     "issues": [],
     "tags": [
       "crisis"
@@ -2078,7 +2078,7 @@
     "id": "MMRIZE/MMM-CustomElementTime",
     "maintainer": "MMRIZE",
     "maintainerURL": "",
-    "description": "Custom element `mm-time` launcher",
+    "description": "Custom element <code>mm-time</code> launcher",
     "issues": [
       "Issue: There is no `package.json`. We need this file to gather information about the module."
     ]
@@ -2089,7 +2089,7 @@
     "id": "werthdavid/MMM-CyanideHappiness",
     "maintainer": "werthdavid",
     "maintainerURL": "",
-    "description": "Displays the daily Cyanide&Happiness Comic",
+    "description": "Displays the daily Cyanide&amp;Happiness Comic",
     "issues": [],
     "tags": [
       "cyanide",
@@ -2153,7 +2153,7 @@
     "id": "wctimmer/MMM-DagelijksWoord",
     "maintainer": "wctimmer",
     "maintainerURL": "",
-    "description": "A module that displays the **dutch** verse of the day from <www.dagelijkswoord.nl>.",
+    "description": "A module that displays the <strong>dutch</strong> verse of the day from &lt;<a target=\"_blank\" href=\"http://www.dagelijkswoord.nl%3E\">www.dagelijkswoord.nl&gt;</a>.",
     "issues": [],
     "license": "MIT",
     "image": "images-screenshot.jpg"
@@ -2211,7 +2211,7 @@
     "id": "arthurgarzajr/MMM-DailyBibleVerse",
     "maintainer": "arthurgarzajr",
     "maintainerURL": "",
-    "description": "A module that displays the verse of the day from <www.biblegateway.com>.",
+    "description": "A module that displays the verse of the day from &lt;<a target=\"_blank\" href=\"http://www.biblegateway.com%3E\">www.biblegateway.com&gt;</a>.",
     "issues": [
       "Issue: No image found."
     ],
@@ -2258,7 +2258,7 @@
     "id": "oemel09/MMM-DailyPower",
     "maintainer": "oemel09",
     "maintainerURL": "",
-    "description": "A module that displays the bible verse of the day from [DailyPower](https://dailypower.oemel09.de)",
+    "description": "A module that displays the bible verse of the day from <a target=\"_blank\" href=\"https://dailypower.oemel09.de\">DailyPower</a>",
     "issues": [
       "Issue: There is no `package.json`. We need this file to gather information about the module."
     ]
@@ -2269,7 +2269,7 @@
     "id": "MStoltzfus/MMM-DailyUnreachedPeopleGroup",
     "maintainer": "MStoltzfus",
     "maintainerURL": "https://github.com/MStoltzfus",
-    "description": "A module that displays the \"Unreached of the Day\" data from [Joshua Project](www.joshuaproject.net/pray/unreachedoftheday/today)",
+    "description": "A module that displays the \"Unreached of the Day\" data from <a target=\"_blank\" href=\"www.joshuaproject.net/pray/unreachedoftheday/today\">Joshua Project</a>",
     "issues": [
       "`package.json` issue: No repository field."
     ],
@@ -2293,7 +2293,7 @@
     "id": "jacquesCedric/MMM-darksky-hourly",
     "maintainer": "jacquesCedric",
     "maintainerURL": "",
-    "description": "Hourly weather and precipitation pulled from DarkSky **°DarkSky API no longer works since 2023-Mar-31**",
+    "description": "Hourly weather and precipitation pulled from DarkSky <strong>°DarkSky API no longer works since 2023-Mar-31</strong>",
     "issues": [
       "Issue: There is no `package.json`. We need this file to gather information about the module."
     ]
@@ -2304,7 +2304,7 @@
     "id": "thobach/MMM-DarkSky24Hours",
     "maintainer": "thobach",
     "maintainerURL": "",
-    "description": "shows weather information for the next 24 hours using the Dark Sky API. The idea of this module is to give you confidence on what to wear when you go outside / to work, or what transport mode you should take (in case you are a good weather-only biker). The hourly forecast gives you a good decision basis based on the weather condition at the times you go to work and return home. **°DarkSky API no longer works since 2023-Mar-31**",
+    "description": "shows weather information for the next 24 hours using the Dark Sky API. The idea of this module is to give you confidence on what to wear when you go outside / to work, or what transport mode you should take (in case you are a good weather-only biker). The hourly forecast gives you a good decision basis based on the weather condition at the times you go to work and return home. <strong>°DarkSky API no longer works since 2023-Mar-31</strong>",
     "issues": [
       "Issue: There is no `package.json`. We need this file to gather information about the module."
     ]
@@ -2315,7 +2315,7 @@
     "id": "jclarke0000/MMM-DarkSkyForecast",
     "maintainer": "jclarke0000",
     "maintainerURL": "",
-    "description": "A weather module that displays current, hourly and daily forecast information using data from the Dark Sky API. **°DarkSky API no longer works since 2023-Mar-31**",
+    "description": "A weather module that displays current, hourly and daily forecast information using data from the Dark Sky API. <strong>°DarkSky API no longer works since 2023-Mar-31</strong>",
     "issues": [],
     "license": "MIT",
     "image": "icons-iconsets.jpg"
@@ -2326,7 +2326,7 @@
     "id": "vincep5/MMM-DarkSkyRadar",
     "maintainer": "vincep5",
     "maintainerURL": "",
-    "description": "Display a radar map from DarkSky **°DarkSky API no longer works since 2023-Mar-31**",
+    "description": "Display a radar map from DarkSky <strong>°DarkSky API no longer works since 2023-Mar-31</strong>",
     "issues": [
       "`package.json` issue: No description",
       "`package.json` issue: No repository field.",
@@ -2372,7 +2372,7 @@
     "id": "kyle-kelly/MMM-DCMetroTimes",
     "maintainer": "kyle-kelly",
     "maintainerURL": "https://github.com/kyle-kelly",
-    "description": "A fork of [MMM-DCMetroTrainTimes](https://github.com/AdamMoses-GitHub/MMM-DCMetroTrainTimes) (above) that also displays arrival times for buses.",
+    "description": "A fork of <a target=\"_blank\" href=\"https://github.com/AdamMoses-GitHub/MMM-DCMetroTrainTimes\">MMM-DCMetroTrainTimes</a> (above) that also displays arrival times for buses.",
     "issues": [
       "Issue: There is no `package.json`. We need this file to gather information about the module."
     ]
@@ -2483,7 +2483,7 @@
     "id": "mboskamp/MMM-Discogs",
     "maintainer": "mboskamp",
     "maintainerURL": "",
-    "description": "A module to display a random release from your [discogs.com](https://www.discogs.com) music collection. ⚠️ **Module not maintained (GitHub repo has been archived)**",
+    "description": "A module to display a random release from your <a target=\"_blank\" href=\"https://www.discogs.com\">discogs.com</a> music collection. ⚠️ <strong>Module not maintained (GitHub repo has been archived)</strong>",
     "issues": [],
     "tags": [
       "discogs"
@@ -2514,7 +2514,7 @@
     "id": "jordy-u/MMM-Discourse-notifications",
     "maintainer": "jordy-u",
     "maintainerURL": "",
-    "description": "Show user notifications of a site that runs on [Discourse](https://www.discourse.org).",
+    "description": "Show user notifications of a site that runs on <a target=\"_blank\" href=\"https://www.discourse.org\">Discourse</a>.",
     "issues": [],
     "tags": [
       "discourse",
@@ -2593,7 +2593,7 @@
     "id": "marcobiedermann/MMM-dribbble",
     "maintainer": "marcobiedermann",
     "maintainerURL": "",
-    "description": "Module which shows the latest popular [dribbble](https://dribbble.com) shots",
+    "description": "Module which shows the latest popular <a target=\"_blank\" href=\"https://dribbble.com\">dribbble</a> shots",
     "issues": [
       "`package.json` issue: No description"
     ],
@@ -2607,7 +2607,7 @@
     "id": "Mong-ni/MMM-DropboxWallpaper",
     "maintainer": "Mong-ni",
     "maintainerURL": "",
-    "description": "Show photos from `Dropbox` as wallpaper",
+    "description": "Show photos from <code>Dropbox</code> as wallpaper",
     "issues": [],
     "license": "MIT",
     "image": "sc.jpg"
@@ -2774,7 +2774,7 @@
     "id": "rehne/MMM-Ecosia-Tree-Counter",
     "maintainer": "rehne",
     "maintainerURL": "",
-    "description": "Displays the tree counter from [Ecosia](https://ecosia.org).",
+    "description": "Displays the tree counter from <a target=\"_blank\" href=\"https://ecosia.org\">Ecosia</a>.",
     "issues": [
       "Issue: There is no `package.json`. We need this file to gather information about the module."
     ]
@@ -2785,7 +2785,7 @@
     "id": "tttooommm56/MMM-Ecowatt",
     "maintainer": "tttooommm56",
     "maintainerURL": "https://github.com/tttooommm56",
-    "description": "Graphical and textual informations from [Ecowatt](https://www.monecowatt.fr).",
+    "description": "Graphical and textual informations from <a target=\"_blank\" href=\"https://www.monecowatt.fr\">Ecowatt</a>.",
     "issues": [],
     "tags": [
       "ecowatt",
@@ -3010,7 +3010,7 @@
     "id": "Helpi90/MMM-Ethos",
     "maintainer": "Helpi90",
     "maintainerURL": "",
-    "description": "Displays the rig infos from [Ethos API](http://ethosdistro.com).",
+    "description": "Displays the rig infos from <a target=\"_blank\" href=\"http://ethosdistro.com\">Ethos API</a>.",
     "issues": [],
     "license": "MIT",
     "image": "showAllTemps.jpg"
@@ -3032,7 +3032,7 @@
     "id": "mykle1/MMM-Events",
     "maintainer": "mykle1",
     "maintainerURL": "",
-    "description": "**NOTE:** Eventful API discontinued. This module needs updated. Upcoming events in your city. Concerts, Performances, Comedy Shows, Sporting Events, Theatre, Exhibits, Art Galleries, Museums, Festivals, Food & Drink and many more.",
+    "description": "<strong>NOTE:</strong> Eventful API discontinued. This module needs updated. Upcoming events in your city. Concerts, Performances, Comedy Shows, Sporting Events, Theatre, Exhibits, Art Galleries, Museums, Festivals, Food &amp; Drink and many more.",
     "issues": [
       "Issue: There is no `package.json`. We need this file to gather information about the module."
     ]
@@ -3214,7 +3214,7 @@
     "id": "eouia/MMM-fbPageCounter",
     "maintainer": "eouia",
     "maintainerURL": "",
-    "description": "`Likes` counter of FACEBOOK page.",
+    "description": "<code>Likes</code> counter of FACEBOOK page.",
     "issues": [
       "Issue: There is no `package.json`. We need this file to gather information about the module."
     ]
@@ -3225,7 +3225,7 @@
     "id": "shin10/MMM-FF-cht-sh",
     "maintainer": "shin10",
     "maintainerURL": "",
-    "description": "Display random or your most treasured [cheat sheets](https://cht.sh) and learn something new while you have your cup of coffee.",
+    "description": "Display random or your most treasured <a target=\"_blank\" href=\"https://cht.sh\">cheat sheets</a> and learn something new while you have your cup of coffee.",
     "issues": [],
     "tags": [
       "magic mirror module",
@@ -3264,7 +3264,7 @@
     "id": "shin10/MMM-FF-Evan-Roth-Red-Lines",
     "maintainer": "shin10",
     "maintainerURL": "",
-    "description": "Display Evan Roth's artwork \"Red Lines\" (2018) and participate in it's p2p ring. If you wonder what it is or why it's important, head to [www.redlines.network](https://www.redlines.network) or check out installations and talks on [youtube](https://www.youtube.com/results?search_query=evan+roth+red+lines).",
+    "description": "Display Evan Roth's artwork \"Red Lines\" (2018) and participate in it's p2p ring. If you wonder what it is or why it's important, head to <a target=\"_blank\" href=\"https://www.redlines.network\">www.redlines.network</a> or check out installations and talks on <a target=\"_blank\" href=\"https://www.youtube.com/results?search_query=evan+roth+red+lines\">youtube</a>.",
     "issues": [
       "Issue: There is no `package.json`. We need this file to gather information about the module."
     ]
@@ -3275,7 +3275,7 @@
     "id": "shin10/MMM-FF-Genius-Lyrics",
     "maintainer": "shin10",
     "maintainerURL": "",
-    "description": "This module complements the [MMM-Spotify module](https://github.com/skuethe/MMM-Spotify) and listens for it's song info notifications to automatically fetch the lyrics for the currently playing song. (API key required)",
+    "description": "This module complements the <a target=\"_blank\" href=\"https://github.com/skuethe/MMM-Spotify\">MMM-Spotify module</a> and listens for it's song info notifications to automatically fetch the lyrics for the currently playing song. (API key required)",
     "issues": [
       "`package.json` issue: No repository field."
     ],
@@ -3288,7 +3288,7 @@
     "id": "shin10/MMM-FF-multigeiger",
     "maintainer": "shin10",
     "maintainerURL": "",
-    "description": "A module showing radiation charts from [https://multigeiger.citysensor.de](https://multigeiger.citysensor.de).",
+    "description": "A module showing radiation charts from <a target=\"_blank\" href=\"https://multigeiger.citysensor.de\">https://multigeiger.citysensor.de</a>.",
     "issues": [],
     "tags": [
       "magic mirror module",
@@ -3315,7 +3315,7 @@
     "id": "shin10/MMM-FF-StatsJS",
     "maintainer": "shin10",
     "maintainerURL": "",
-    "description": "Inject Ricardo Cabello's ([mrdoob](https://github.com/mrdoob)) [stats.js](https://github.com/mrdoob/stats.js) to display FPS, MS and MEM consumption",
+    "description": "Inject Ricardo Cabello's (<a target=\"_blank\" href=\"https://github.com/mrdoob\">mrdoob</a>) <a target=\"_blank\" href=\"https://github.com/mrdoob/stats.js\">stats.js</a> to display FPS, MS and MEM consumption",
     "issues": [],
     "tags": [
       "fps",
@@ -3330,7 +3330,7 @@
     "id": "shin10/MMM-FF-tenor-gif",
     "maintainer": "shin10",
     "maintainerURL": "",
-    "description": "Display random gifs by topic from [tenor](https://tenor.com) (API key required)",
+    "description": "Display random gifs by topic from <a target=\"_blank\" href=\"https://tenor.com\">tenor</a> (API key required)",
     "issues": [
       "Issue: There is no `package.json`. We need this file to gather information about the module."
     ]
@@ -3341,7 +3341,7 @@
     "id": "shin10/MMM-FF-XKCD",
     "maintainer": "shin10",
     "maintainerURL": "",
-    "description": "Show latest, random or your favourite [XKCD](https://xkcd.com) comic. Navigate by events and read on where you left yesterday.",
+    "description": "Show latest, random or your favourite <a target=\"_blank\" href=\"https://xkcd.com\">XKCD</a> comic. Navigate by events and read on where you left yesterday.",
     "issues": [
       "Issue: There is no `package.json`. We need this file to gather information about the module."
     ]
@@ -3406,7 +3406,7 @@
     "id": "ItsMeBrille/MMM-FlagRise",
     "maintainer": "ItsMeBrille",
     "maintainerURL": "https://github.com/ItsMeBrille",
-    "description": "A module to raise an image of a flag according to national flag rules. (Norwegian rules) Fetches sunrise and sunset times using [Steder-API](https://steder-api.no)",
+    "description": "A module to raise an image of a flag according to national flag rules. (Norwegian rules) Fetches sunrise and sunset times using <a target=\"_blank\" href=\"https://steder-api.no\">Steder-API</a>",
     "issues": [
       "Issue: There is no `package.json`. We need this file to gather information about the module."
     ]
@@ -3417,7 +3417,7 @@
     "id": "joschi27/MMM-Flatastic",
     "maintainer": "joschi27",
     "maintainerURL": "",
-    "description": "Displays information from the [flatastic](https://www.flatastic-app.com) commune management app.",
+    "description": "Displays information from the <a target=\"_blank\" href=\"https://www.flatastic-app.com\">flatastic</a> commune management app.",
     "issues": [
       "`package.json` issue: No description",
       "`package.json` issue: No repository field.",
@@ -3539,7 +3539,7 @@
     "id": "MarcLandis/MMM-FlipClock",
     "maintainer": "MarcLandis",
     "maintainerURL": "",
-    "description": "A classic flip clock that is powered by the awesome [flip plugin](https://pqina.nl/flip).",
+    "description": "A classic flip clock that is powered by the awesome <a target=\"_blank\" href=\"https://pqina.nl/flip\">flip plugin</a>.",
     "issues": [
       "Issue: There is no `package.json`. We need this file to gather information about the module."
     ]
@@ -3596,7 +3596,7 @@
     "id": "idoodler/MMM-forecast-io",
     "maintainer": "idoodler",
     "maintainerURL": "",
-    "description": "Fork of [MMM-forecast-io](https://github.com/dmcinnes/MMM-forecast-io) Display weather based on forecast API. Uses the `INDOOR_TEMPERATURE` notification to display the indoor temperature emmited by some modules",
+    "description": "Fork of <a target=\"_blank\" href=\"https://github.com/dmcinnes/MMM-forecast-io\">MMM-forecast-io</a> Display weather based on forecast API. Uses the <code>INDOOR_TEMPERATURE</code> notification to display the indoor temperature emmited by some modules",
     "issues": [
       "Issue: There is no `package.json`. We need this file to gather information about the module."
     ]
@@ -3713,7 +3713,7 @@
     "id": "eckonator/MMM-FroelingConnect",
     "maintainer": "eckonator",
     "maintainerURL": "https://github.com/eckonator",
-    "description": "The module builds charts to your FRÖLING pellet boiler based on data from the FRÖLING Connect API. Inspiration and code base comes from [TA2k/ioBroker.froeling](https://github.com/TA2k/ioBroker.froeling).",
+    "description": "The module builds charts to your FRÖLING pellet boiler based on data from the FRÖLING Connect API. Inspiration and code base comes from <a target=\"_blank\" href=\"https://github.com/TA2k/ioBroker.froeling\">TA2k/ioBroker.froeling</a>.",
     "issues": [],
     "tags": [
       "magicmirrir",
@@ -3740,7 +3740,7 @@
     "id": "deg0nz/MMM-Fronius2",
     "maintainer": "deg0nz",
     "maintainerURL": "",
-    "description": "Displays data from a Fronius Solar Inverter, supports auto-off inverters and can be used as a data source for [MMM-EnergyMonitor](https://github.com/deg0nz/MMM-EnergyMonitor).",
+    "description": "Displays data from a Fronius Solar Inverter, supports auto-off inverters and can be used as a data source for <a target=\"_blank\" href=\"https://github.com/deg0nz/MMM-EnergyMonitor\">MMM-EnergyMonitor</a>.",
     "issues": [],
     "tags": [
       "varta",
@@ -3797,7 +3797,7 @@
     "id": "mattileh/MMM-FunnyHolidays",
     "maintainer": "mattileh",
     "maintainerURL": "",
-    "description": "Shows Today's and Tomorrow's \"funny\" holidays around world (datasource <www.webcal.fi>).",
+    "description": "Shows Today's and Tomorrow's \"funny\" holidays around world (datasource &lt;<a target=\"_blank\" href=\"http://www.webcal.fi%3E\">www.webcal.fi&gt;</a>).",
     "issues": [],
     "tags": [
       "calendar"
@@ -3828,7 +3828,7 @@
     "id": "raywo/MMM-GameOfLife",
     "maintainer": "raywo",
     "maintainerURL": "",
-    "description": "Displays a grid simulating the [Game of Life](https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life).",
+    "description": "Displays a grid simulating the <a target=\"_blank\" href=\"https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life\">Game of Life</a>.",
     "issues": [],
     "tags": [
       "game of life"
@@ -4356,7 +4356,7 @@
     "id": "delightedCrow/MMM-HabiticaStats",
     "maintainer": "delightedCrow",
     "maintainerURL": "",
-    "description": "Display your an overview of your [Habitica](https://habitica.com) player stats.",
+    "description": "Display your an overview of your <a target=\"_blank\" href=\"https://habitica.com\">Habitica</a> player stats.",
     "issues": [
       "`package.json` issue: No repository field."
     ],
@@ -4795,7 +4795,7 @@
     "id": "harv-singh/MMM-hukamnama",
     "maintainer": "harv-singh",
     "maintainerURL": "https://github.com/harv-singh",
-    "description": "This module loads the latest Hukamnama from Sri Harmandir Sahib powered by the GurbaniNow API: <https://github.com/GurbaniNow/api>",
+    "description": "This module loads the latest Hukamnama from Sri Harmandir Sahib powered by the GurbaniNow API: <a target=\"_blank\" href=\"https://github.com/GurbaniNow/api\">https://github.com/GurbaniNow/api</a>",
     "issues": [
       "Issue: There is no `package.json`. We need this file to gather information about the module."
     ]
@@ -4864,7 +4864,7 @@
     "id": "bitte-ein-bit/MMM-iCloud-Client",
     "maintainer": "bitte-ein-bit",
     "maintainerURL": "",
-    "description": "Load iCloud addressbook and provide birthday iCal feed for calendar module and addressbook for [MMM-FRITZ-Box-Callmonitor](https://github.com/paviro/MMM-FRITZ-Box-Callmonitor).",
+    "description": "Load iCloud addressbook and provide birthday iCal feed for calendar module and addressbook for <a target=\"_blank\" href=\"https://github.com/paviro/MMM-FRITZ-Box-Callmonitor\">MMM-FRITZ-Box-Callmonitor</a>.",
     "issues": [
       "Issue: No image found."
     ],
@@ -4890,7 +4890,7 @@
     "id": "djey47/MMM-IDF-LOCALTRANSPORT",
     "maintainer": "djey47",
     "maintainerURL": "https://github.com/djey47",
-    "description": "Local transport in IDF (STIF) module based on [MMM-Paris-RATP-PG](https://github.com/da4throux/MMM-Paris-RATP-PG)",
+    "description": "Local transport in IDF (STIF) module based on <a target=\"_blank\" href=\"https://github.com/da4throux/MMM-Paris-RATP-PG\">MMM-Paris-RATP-PG</a>",
     "issues": [],
     "tags": [
       "localtransport",
@@ -4984,7 +4984,7 @@
     "id": "AgP42/MMM-iFrame-Ping",
     "maintainer": "AgP42",
     "maintainerURL": "https://github.com/AgP42",
-    "description": "An iFrame module to display any web content to your MagicMirror² (including YouTube, IP Cameras, ...). Several functionalities like auto-refresh, Ping the Url before to display it and last update time display. See also [MMM-SmartWebDisplay](https://forum.magicmirror.builders/topic/9750/mmm-smartwebdisplay-display-web-contents-including-youtube-on-your-mm)",
+    "description": "An iFrame module to display any web content to your MagicMirror² (including YouTube, IP Cameras, ...). Several functionalities like auto-refresh, Ping the Url before to display it and last update time display. See also <a target=\"_blank\" href=\"https://forum.magicmirror.builders/topic/9750/mmm-smartwebdisplay-display-web-contents-including-youtube-on-your-mm\">MMM-SmartWebDisplay</a>",
     "issues": [],
     "tags": [
       "iframe",
@@ -5069,7 +5069,7 @@
     "id": "sebastianhodapp/MMM-IndoorTemp",
     "maintainer": "sebastianhodapp",
     "maintainerURL": "",
-    "description": "The module emits the notification \"INDOOR_TEMPERATURE\" to display the indoor temperature received via a subscribed MQTT topic in the default [Current Weather module](https://github.com/MichMich/MagicMirror/tree/develop/modules/default/currentweather).",
+    "description": "The module emits the notification \"INDOOR_TEMPERATURE\" to display the indoor temperature received via a subscribed MQTT topic in the default <a target=\"_blank\" href=\"https://github.com/MichMich/MagicMirror/tree/develop/modules/default/currentweather\">Current Weather module</a>.",
     "issues": [
       "Issue: No image found."
     ],
@@ -5260,7 +5260,7 @@
     "id": "PavlenkoM/MMM-IQAir",
     "maintainer": "PavlenkoM",
     "maintainerURL": "https://github.com/PavlenkoM",
-    "description": "Air quality widget based on [IQAir API](https://www.iqair.com)",
+    "description": "Air quality widget based on <a target=\"_blank\" href=\"https://www.iqair.com\">IQAir API</a>",
     "issues": [
       "Issue: There is no `package.json`. We need this file to gather information about the module."
     ]
@@ -5326,7 +5326,7 @@
     "id": "Xanthus1/MMM-ITCH-IO",
     "maintainer": "Xanthus1",
     "maintainerURL": "https://github.com/Xanthus1",
-    "description": "Displays recently featured and highly rated free games from <https://itch.io>.",
+    "description": "Displays recently featured and highly rated free games from <a target=\"_blank\" href=\"https://itch.io\">https://itch.io</a>.",
     "issues": [
       "Issue: There is no `package.json`. We need this file to gather information about the module."
     ]
@@ -5348,7 +5348,7 @@
     "id": "prysme01/MMM-Jeedom",
     "maintainer": "prysme01",
     "maintainerURL": "",
-    "description": "Display values from Home automation software [JEEDOM](https://www.jeedom.com).",
+    "description": "Display values from Home automation software <a target=\"_blank\" href=\"https://www.jeedom.com\">JEEDOM</a>.",
     "issues": [
       "Issue: There is no `package.json`. We need this file to gather information about the module."
     ]
@@ -5613,7 +5613,7 @@
     "id": "polarbearjngl/MMM-KudaGo",
     "maintainer": "polarbearjngl",
     "maintainerURL": "",
-    "description": "Can show upcoming events (concerts, theater plays, exhibitions and etc.), that collected from [KudaGo](https://kudago.com).",
+    "description": "Can show upcoming events (concerts, theater plays, exhibitions and etc.), that collected from <a target=\"_blank\" href=\"https://kudago.com\">KudaGo</a>.",
     "issues": [
       "Issue: There is no `package.json`. We need this file to gather information about the module."
     ]
@@ -5671,7 +5671,7 @@
     "id": "RineshRamadhin/MMM-Lastfm",
     "maintainer": "RineshRamadhin",
     "maintainerURL": "https://github.com/RineshRamadhin",
-    "description": "Displays the Last.fm scrobble currently playing. Supports Spotify, YouTube, Tidal, SoundCloud, MixCloud and [many others](https://www.last.fm/about/trackmymusic).",
+    "description": "Displays the Last.fm scrobble currently playing. Supports Spotify, YouTube, Tidal, SoundCloud, MixCloud and <a target=\"_blank\" href=\"https://www.last.fm/about/trackmymusic\">many others</a>.",
     "issues": [
       "Issue: There is no `package.json`. We need this file to gather information about the module."
     ]
@@ -5768,7 +5768,7 @@
     "id": "l3d00m/MMM-LibrespotJava",
     "maintainer": "l3d00m",
     "maintainerURL": "",
-    "description": "Display the song you are currently streaming on your [Librespot Java](https://github.com/librespot-org/librespot-java) Spotify Speaker",
+    "description": "Display the song you are currently streaming on your <a target=\"_blank\" href=\"https://github.com/librespot-org/librespot-java\">Librespot Java</a> Spotify Speaker",
     "issues": [],
     "tags": [
       "spotify"
@@ -5968,7 +5968,7 @@
     "id": "marska/MMM-Looko2-aq",
     "maintainer": "marska",
     "maintainerURL": "",
-    "description": "Display the air quality index from [looko2](https://looko2.pl) sensor.",
+    "description": "Display the air quality index from <a target=\"_blank\" href=\"https://looko2.pl\">looko2</a> sensor.",
     "issues": [
       "`package.json` issue: No repository field."
     ],
@@ -6026,7 +6026,7 @@
     "id": "pixxelfriend/MMM-Luftdaten",
     "maintainer": "pixxelfriend",
     "maintainerURL": "https://github.com/pixxelfriend",
-    "description": "Displays data (particulate matter PM2.5/PM10, temperature, pressure) from air quality sensors, connected to [sensor.community](https://sensor.community) or local wifi.",
+    "description": "Displays data (particulate matter PM2.5/PM10, temperature, pressure) from air quality sensors, connected to <a target=\"_blank\" href=\"https://sensor.community\">sensor.community</a> or local wifi.",
     "issues": [
       "Issue: There is no `package.json`. We need this file to gather information about the module."
     ]
@@ -6051,7 +6051,7 @@
     "id": "mykle1/MMM-Lunartic",
     "maintainer": "mykle1",
     "maintainerURL": "",
-    "description": "Up to the minute information about our Lunar partner, with a splash of EyeCandy, to boot! **Doesn't work anymore (API is down).**",
+    "description": "Up to the minute information about our Lunar partner, with a splash of EyeCandy, to boot! <strong>Doesn't work anymore (API is down).</strong>",
     "issues": [],
     "tags": [
       "mirror ui",
@@ -6088,7 +6088,7 @@
     "id": "doctorfree/MMM-MacAddressScan",
     "maintainer": "doctorfree",
     "maintainerURL": "https://github.com/doctorfree",
-    "description": "A module which determines the status of devices on the network based on their MAC address. It can also look up devices by IP addresses or hostnames. This module is an enhanced clone of the excellent MMM-NetworkScanner module by [Ian Perrin](https://github.com/ianperrin)",
+    "description": "A module which determines the status of devices on the network based on their MAC address. It can also look up devices by IP addresses or hostnames. This module is an enhanced clone of the excellent MMM-NetworkScanner module by <a target=\"_blank\" href=\"https://github.com/ianperrin\">Ian Perrin</a>",
     "issues": [],
     "tags": [
       "network",
@@ -6327,7 +6327,7 @@
     "id": "schnibel/MMM-Memo",
     "maintainer": "schnibel",
     "maintainerURL": "",
-    "description": "Add one to many memo notes (\"post-it look & feel\"). Content is manageable through HTTP get requests.",
+    "description": "Add one to many memo notes (\"post-it look &amp; feel\"). Content is manageable through HTTP get requests.",
     "issues": [
       "Issue: There is no `package.json`. We need this file to gather information about the module."
     ]
@@ -6651,7 +6651,7 @@
     "id": "michael5r/mmm-nest-cameras",
     "maintainer": "michael5r",
     "maintainerURL": "https://github.com/michael5r",
-    "description": "Displays your [Nest](https://www.nest.com) cameras on your MagicMirror² and gives you the option to show either live streams or constantly-updated snapshots.",
+    "description": "Displays your <a target=\"_blank\" href=\"https://www.nest.com\">Nest</a> cameras on your MagicMirror² and gives you the option to show either live streams or constantly-updated snapshots.",
     "issues": [
       "Issue: There is no `package.json`. We need this file to gather information about the module."
     ]
@@ -6662,7 +6662,7 @@
     "id": "michael5r/mmm-nest-status",
     "maintainer": "michael5r",
     "maintainerURL": "https://github.com/michael5r",
-    "description": "Displays both your [Nest](https://www.nest.com) thermostats and protect smoke detectors. Supports multiple designs & sizes.",
+    "description": "Displays both your <a target=\"_blank\" href=\"https://www.nest.com\">Nest</a> thermostats and protect smoke detectors. Supports multiple designs &amp; sizes.",
     "issues": [],
     "license": "MIT",
     "image": "icons-icon-fan-white.jpg"
@@ -6815,7 +6815,7 @@
     "id": "https://bitbucket.org/rsperezn/mmm-uvindex",
     "maintainer": "rsperezn",
     "maintainerURL": "https://bitbucket.org/rsperezn",
-    "description": "Displays the current and forecasted UV Index fo a given location given its longitude and latitude. It requires a free API token from <https://www.openuv.io/>",
+    "description": "Displays the current and forecasted UV Index fo a given location given its longitude and latitude. It requires a free API token from <a target=\"_blank\" href=\"https://www.openuv.io/\">https://www.openuv.io/</a>",
     "issues": [
       "Issue: There is no `package.json`. We need this file to gather information about the module."
     ]
@@ -7186,7 +7186,7 @@
     "id": "cybex-dev/MMM-MQTT-Publisher",
     "maintainer": "cybex-dev",
     "maintainerURL": "",
-    "description": "MM Module that publishes notifications with any payload (messages, values, etc) sent via received by ```sendNotification()``` method to specified topics on MQTT Broker(s).",
+    "description": "MM Module that publishes notifications with any payload (messages, values, etc) sent via received by <code>sendNotification()</code> method to specified topics on MQTT Broker(s).",
     "issues": [
       "`package.json` issue: No repository field.",
       "`package.json` issue: No license field."
@@ -7499,7 +7499,7 @@
     "id": "ethanpartida/MMM-MyStudyLife",
     "maintainer": "ethanpartida",
     "maintainerURL": "",
-    "description": "Displays upcoming classes, tasks and exams from the [My Study Life](https://www.mystudylife.com) app and website.",
+    "description": "Displays upcoming classes, tasks and exams from the <a target=\"_blank\" href=\"https://www.mystudylife.com\">My Study Life</a> app and website.",
     "issues": [],
     "tags": [
       "mystudylife",
@@ -7525,7 +7525,7 @@
     "id": "TheVieiraAkA/MMM-MyTraktSeries",
     "maintainer": "TheVieiraAkA",
     "maintainerURL": "",
-    "description": "A module to display your show's watch progress in a private list in your [trakt.tv](https://trakt.tv) account.",
+    "description": "A module to display your show's watch progress in a private list in your <a target=\"_blank\" href=\"https://trakt.tv\">trakt.tv</a> account.",
     "issues": [],
     "license": "MIT",
     "image": "preview.jpg"
@@ -7735,7 +7735,7 @@
     "id": "mtatsuma/MMM-NatureRemo",
     "maintainer": "mtatsuma",
     "maintainerURL": "https://github.com/mtatsuma",
-    "description": "Displays sensor data collected by [Nature Remo](https://en.nature.global) devices.",
+    "description": "Displays sensor data collected by <a target=\"_blank\" href=\"https://en.nature.global\">Nature Remo</a> devices.",
     "issues": [
       "Issue: There is no `package.json`. We need this file to gather information about the module."
     ]
@@ -7964,7 +7964,7 @@
     "id": "mumblebaj/MMM-NewsAPI",
     "maintainer": "mumblebaj",
     "maintainerURL": "https://github.com/mumblebaj",
-    "description": "Module to to get news from [NewsAPi.org](https://newsapi.org)",
+    "description": "Module to to get news from <a target=\"_blank\" href=\"https://newsapi.org\">NewsAPi.org</a>",
     "issues": [],
     "tags": [
       "news"
@@ -8043,7 +8043,7 @@
     "id": "cure/MMM-NextEvent",
     "maintainer": "cure",
     "maintainerURL": "",
-    "description": "Display a count down to the next event from [MMM-CalendarExt2](https://github.com/MMM-CalendarExt2/MMM-CalendarExt2).",
+    "description": "Display a count down to the next event from <a target=\"_blank\" href=\"https://github.com/MMM-CalendarExt2/MMM-CalendarExt2\">MMM-CalendarExt2</a>.",
     "issues": [
       "`package.json` issue: No repository field."
     ],
@@ -8249,7 +8249,7 @@
     "id": "crice009/MMM-NOAATides",
     "maintainer": "crice009",
     "maintainerURL": "https://github.com/crice009",
-    "description": "Graph daily low and high tide predictions for a given NOAA tide station, and measured data as it is reported. Data is pulled from [NOAA-tidesandcurrents](https://tidesandcurrents.noaa.gov/map/index.html). Data is a free service - no API key",
+    "description": "Graph daily low and high tide predictions for a given NOAA tide station, and measured data as it is reported. Data is pulled from <a target=\"_blank\" href=\"https://tidesandcurrents.noaa.gov/map/index.html\">NOAA-tidesandcurrents</a>. Data is a free service - no API key",
     "issues": [],
     "tags": [
       "tide",
@@ -8266,7 +8266,7 @@
     "id": "joanaz/MMM-NoteTaker",
     "maintainer": "joanaz",
     "maintainerURL": "",
-    "description": "Display your notes stored by Alexa skill [Note Taker](https://github.com/joanaz/AS-NoteTaker).",
+    "description": "Display your notes stored by Alexa skill <a target=\"_blank\" href=\"https://github.com/joanaz/AS-NoteTaker\">Note Taker</a>.",
     "issues": [
       "Issue: No image found."
     ],
@@ -8401,7 +8401,7 @@
     "id": "shbatm/octomirror-module",
     "maintainer": "shbatm",
     "maintainerURL": "",
-    "description": "View & Control an OctoPrint 3d Printer Server Instance.",
+    "description": "View &amp; Control an OctoPrint 3d Printer Server Instance.",
     "issues": [],
     "license": "MIT",
     "image": "img-capture.jpg"
@@ -8827,7 +8827,7 @@
     "id": "jboucly/MMM-Pages-Screencast",
     "maintainer": "jboucly",
     "maintainerURL": "https://github.com/jboucly",
-    "description": "Interface module between [MMM-pages](https://github.com/edward-shen/MMM-pages) and [MMM-Screencast](https://github.com/kevinatown/MMM-Screencast). Module to automatically change page when a video is cast on the MagicMirror².",
+    "description": "Interface module between <a target=\"_blank\" href=\"https://github.com/edward-shen/MMM-pages\">MMM-pages</a> and <a target=\"_blank\" href=\"https://github.com/kevinatown/MMM-Screencast\">MMM-Screencast</a>. Module to automatically change page when a video is cast on the MagicMirror².",
     "issues": [],
     "tags": [
       "pages",
@@ -8864,7 +8864,7 @@
     "id": "martinkooij/MMM-Parcel",
     "maintainer": "martinkooij",
     "maintainerURL": "",
-    "description": "*RENEWED 2021* Glance over your parcel deliveries on your Mirror, track your shipments. >700 couriers supported (Integrating via Tracktry.com (free) or AfterShip.com (paid & legacy free)). Various layout options depending on your need. With auto translate feature to your language.",
+    "description": "<em>RENEWED 2021</em> Glance over your parcel deliveries on your Mirror, track your shipments. &gt;700 couriers supported (Integrating via Tracktry.com (free) or AfterShip.com (paid &amp; legacy free)). Various layout options depending on your need. With auto translate feature to your language.",
     "issues": [],
     "license": "MIT",
     "image": "pictures-1.jpg"
@@ -8875,7 +8875,7 @@
     "id": "da4throux/MMM-Paris-RATP-PG",
     "maintainer": "da4throux",
     "maintainerURL": "",
-    "description": "Time to the next buses, metros, rers & tramways for Paris Network (RATP), along with: the traffic status for selected lines, the risk of rain in the next hour, autolib and velib stations status.",
+    "description": "Time to the next buses, metros, rers &amp; tramways for Paris Network (RATP), along with: the traffic status for selected lines, the risk of rain in the next hour, autolib and velib stations status.",
     "issues": [],
     "tags": [
       "localtransport",
@@ -9160,7 +9160,7 @@
     "id": "mboskamp/MMM-PIR",
     "maintainer": "mboskamp",
     "maintainerURL": "",
-    "description": "Another PIR monitoring module that allows you to run custom scripts and integrates MMM-TelegramBot commands. ⚠️ **Module not maintained (GitHub repo has been archived)**",
+    "description": "Another PIR monitoring module that allows you to run custom scripts and integrates MMM-TelegramBot commands. ⚠️ <strong>Module not maintained (GitHub repo has been archived)</strong>",
     "issues": [
       "`package.json` issue: No description"
     ],
@@ -9209,7 +9209,7 @@
     "id": "dankerthrone/MMM-PirateSkyForecast",
     "maintainer": "dankerthrone",
     "maintainerURL": "",
-    "description": "Almost completely unchanged fork of the beautiful MMM-DarkSkyForecast but uses the **pirateweather.net API since DarkSky is EOL**.",
+    "description": "Almost completely unchanged fork of the beautiful MMM-DarkSkyForecast but uses the <strong>pirateweather.net API since DarkSky is EOL</strong>.",
     "issues": [],
     "license": "MIT",
     "image": "icons-iconsets.jpg"
@@ -9231,7 +9231,7 @@
     "id": "nsieg/MMM-piwigo-photo-wheel",
     "maintainer": "nsieg",
     "maintainerURL": "https://github.com/nsieg",
-    "description": "Display photos downloaded from a [Piwigo](https://piwigo.org) photo library instance",
+    "description": "Display photos downloaded from a <a target=\"_blank\" href=\"https://piwigo.org\">Piwigo</a> photo library instance",
     "issues": [
       "`package.json` issue: No description",
       "`package.json` issue: No repository field.",
@@ -9347,7 +9347,7 @@
     "id": "mykle1/MMM-PLOW",
     "maintainer": "mykle1",
     "maintainerURL": "",
-    "description": "Pig Latin On Weather! Multiple views in a single module. Driven by Darksky API. **°DarkSky API no longer works since 2023-Mar-31**",
+    "description": "Pig Latin On Weather! Multiple views in a single module. Driven by Darksky API. <strong>°DarkSky API no longer works since 2023-Mar-31</strong>",
     "issues": [
       "Issue: There is no `package.json`. We need this file to gather information about the module."
     ]
@@ -9415,7 +9415,7 @@
     "id": "bigfoott/MMM-PokemonGOEvents",
     "maintainer": "bigfoott",
     "maintainerURL": "https://github.com/bigfoott",
-    "description": "Displays current or upcoming Pokemon GO Events. Event data is scraped from [LeekDuck](https://www.leekduck.com/events).",
+    "description": "Displays current or upcoming Pokemon GO Events. Event data is scraped from <a target=\"_blank\" href=\"https://www.leekduck.com/events\">LeekDuck</a>.",
     "issues": [
       "`package.json` issue: No repository field."
     ],
@@ -9540,7 +9540,7 @@
     "id": "MikeBishop/MMM-Powerwall",
     "maintainer": "MikeBishop",
     "maintainerURL": "",
-    "description": "Display status of Tesla Powerwall & Tesla vehicle charging",
+    "description": "Display status of Tesla Powerwall &amp; Tesla vehicle charging",
     "issues": [
       "`package.json` issue: No repository field."
     ],
@@ -9570,7 +9570,7 @@
     "id": "Fifteen15Studios/MMM-PreciousMetals",
     "maintainer": "Fifteen15Studios",
     "maintainerURL": "https://github.com/Fifteen15Studios",
-    "description": "Displays prices of select precious metals and commodities, like gold and silver. Retrieves information from API provided by [api.metals.live](https://api.metals.live)",
+    "description": "Displays prices of select precious metals and commodities, like gold and silver. Retrieves information from API provided by <a target=\"_blank\" href=\"https://api.metals.live\">api.metals.live</a>",
     "issues": [
       "Issue: There is no `package.json`. We need this file to gather information about the module."
     ]
@@ -9681,7 +9681,7 @@
     "id": "KristjanESPERANTO/MMM-PublicTransportHafas",
     "maintainer": "KristjanESPERANTO",
     "maintainerURL": "",
-    "description": "Displays departure information for public transport in Germany. The [hafas-client](https://github.com/public-transport/hafas-client) is used to query the information. The interface of the Deutsche Bahn is used as standard, this includes most of the local networks with buses, trams, etc. However, other hafas interfaces can also be used.",
+    "description": "Displays departure information for public transport in Germany. The <a target=\"_blank\" href=\"https://github.com/public-transport/hafas-client\">hafas-client</a> is used to query the information. The interface of the Deutsche Bahn is used as standard, this includes most of the local networks with buses, trams, etc. However, other hafas interfaces can also be used.",
     "issues": [],
     "tags": [
       "public transport"
@@ -9722,7 +9722,7 @@
     "id": "mboskamp/MMM-Pull",
     "maintainer": "mboskamp",
     "maintainerURL": "",
-    "description": "This module enables the user to pull updates for modules and/or MagicMirror² itself via Telegram commands. ⚠️ **Module not maintained (GitHub repo has been archived)**",
+    "description": "This module enables the user to pull updates for modules and/or MagicMirror² itself via Telegram commands. ⚠️ <strong>Module not maintained (GitHub repo has been archived)</strong>",
     "issues": [
       "`package.json` issue: No description",
       "`package.json` issue: No repository field.",
@@ -9736,7 +9736,7 @@
     "id": "ajones/MMM-PurpleAir",
     "maintainer": "ajones",
     "maintainerURL": "https://github.com/ajones",
-    "description": "Display air quality sensor data from [Purple Air](https://www2.purpleair.com)",
+    "description": "Display air quality sensor data from <a target=\"_blank\" href=\"https://www2.purpleair.com\">Purple Air</a>",
     "issues": [
       "`package.json` issue: No description"
     ],
@@ -9798,7 +9798,7 @@
     "id": "dfanica/MMM-Quotable",
     "maintainer": "dfanica",
     "maintainerURL": "",
-    "description": "A module for displaying random quotes using the [Quotable API](https://github.com/lukePeavey/quotable). Filters quotes by max length and tags.",
+    "description": "A module for displaying random quotes using the <a target=\"_blank\" href=\"https://github.com/lukePeavey/quotable\">Quotable API</a>. Filters quotes by max length and tags.",
     "issues": [
       "Issue: There is no `package.json`. We need this file to gather information about the module."
     ]
@@ -10080,7 +10080,7 @@
     "id": "Linas1234/MMM-Regenradar",
     "maintainer": "Linas1234",
     "maintainerURL": "",
-    "description": "Rain radar for locations in Germany. The weather dates were provided by [Morgenwirdes](https://morgenwirdes.de).",
+    "description": "Rain radar for locations in Germany. The weather dates were provided by <a target=\"_blank\" href=\"https://morgenwirdes.de\">Morgenwirdes</a>.",
     "issues": [
       "Issue: There is no `package.json`. We need this file to gather information about the module."
     ]
@@ -10106,7 +10106,7 @@
     "id": "MMRIZE/MMM-Remote-Control-Repository",
     "maintainer": "MMRIZE",
     "maintainerURL": "",
-    "description": "Plugin for `MMM-Remote-Control` to update installable modules automatically.",
+    "description": "Plugin for <code>MMM-Remote-Control</code> to update installable modules automatically.",
     "issues": [
       "Issue: There is no `package.json`. We need this file to gather information about the module."
     ]
@@ -10163,7 +10163,7 @@
     "id": "arirobinson/MMM-RepRapFirmware",
     "maintainer": "arirobinson",
     "maintainerURL": "https://github.com/arirobinson",
-    "description": "Display live info from your 3D printer running [RepRapFirmware](https://github.com/dc42/RepRapFirmware). This firmware is mainly used on [Duet3D control boards (Duet Wifi & Ethernet)](https://www.duet3d.com).",
+    "description": "Display live info from your 3D printer running <a target=\"_blank\" href=\"https://github.com/dc42/RepRapFirmware\">RepRapFirmware</a>. This firmware is mainly used on <a target=\"_blank\" href=\"https://www.duet3d.com\">Duet3D control boards (Duet Wifi &amp; Ethernet)</a>.",
     "issues": [
       "Issue: There is no `package.json`. We need this file to gather information about the module."
     ]
@@ -10174,7 +10174,7 @@
     "id": "Duske/MMM-RescueTime",
     "maintainer": "Duske",
     "maintainerURL": "",
-    "description": "Show your daily time spent using your digital devices with [RescueTime](https://www.rescuetime.com)",
+    "description": "Show your daily time spent using your digital devices with <a target=\"_blank\" href=\"https://www.rescuetime.com\">RescueTime</a>",
     "issues": [],
     "tags": [
       "rescuetime",
@@ -10435,7 +10435,7 @@
     "id": "CatoAntonsen/MMM-Ruter",
     "maintainer": "CatoAntonsen",
     "maintainerURL": "",
-    "description": "Display public transport information for Oslo and Akershus in Norway. Abandoned - see [MMM-Entur-tavle](https://github.com/Arve/MMM-Entur-tavle) instead.",
+    "description": "Display public transport information for Oslo and Akershus in Norway. Abandoned - see <a target=\"_blank\" href=\"https://github.com/Arve/MMM-Entur-tavle\">MMM-Entur-tavle</a> instead.",
     "issues": [
       "`package.json` issue: No repository field."
     ],
@@ -10514,7 +10514,7 @@
     "id": "Tom-Hirschberger/MMM-Screen-Powersave-Notification",
     "maintainer": "Tom-Hirschberger",
     "maintainerURL": "https://github.com/Tom-Hirschberger",
-    "description": "Screensaver module which shuts the screen off if USER_PRESENCE is not received within specified timeout. Can be used as PIR module in combination with [MMM-GPIO-Notifications](https://github.com/Tom-Hirschberger/MMM-GPIO-Notifications).",
+    "description": "Screensaver module which shuts the screen off if USER_PRESENCE is not received within specified timeout. Can be used as PIR module in combination with <a target=\"_blank\" href=\"https://github.com/Tom-Hirschberger/MMM-GPIO-Notifications\">MMM-GPIO-Notifications</a>.",
     "issues": [
       "`package.json` issue: No description",
       "Issue: No image found."
@@ -10644,7 +10644,7 @@
     "id": "ralberth/MMM-SendNotificationButton",
     "maintainer": "ralberth",
     "maintainerURL": "",
-    "description": "Web form to send arbitrary messages via `this.sendNotification()`.",
+    "description": "Web form to send arbitrary messages via <code>this.sendNotification()</code>.",
     "issues": [
       "Issue: There is no `package.json`. We need this file to gather information about the module."
     ]
@@ -10713,7 +10713,7 @@
     "id": "cybex-dev/MMM-ServiceViewer",
     "maintainer": "cybex-dev",
     "maintainerURL": "https://github.com/cybex-dev",
-    "description": "Displays all Bonjour/Avahi services on your local network in a readable format, also allowing some interaction with the services, works well with [XMMM-Xdg-Open](https://github.com/cybex-dev/MMM-XDG-OPEN)",
+    "description": "Displays all Bonjour/Avahi services on your local network in a readable format, also allowing some interaction with the services, works well with <a target=\"_blank\" href=\"https://github.com/cybex-dev/MMM-XDG-OPEN\">XMMM-Xdg-Open</a>",
     "issues": [
       "`package.json` issue: No repository field.",
       "`package.json` issue: No license field."
@@ -10791,7 +10791,7 @@
     "id": "stefanjacobs/MMM-Shelly-PM",
     "maintainer": "stefanjacobs",
     "maintainerURL": "https://github.com/stefanjacobs",
-    "description": "Module for displaying data from 1 Shelly PM sensor, forked and modified by [Shelly-HT](https://github.com/Medve01/Shelly-HT)",
+    "description": "Module for displaying data from 1 Shelly PM sensor, forked and modified by <a target=\"_blank\" href=\"https://github.com/Medve01/Shelly-HT\">Shelly-HT</a>",
     "issues": [
       "`package.json` issue: license should be a valid SPDX license expression",
       "Issue: No compatible or wrong license field in 'package.json'. Without that, we can't use an image."
@@ -10971,7 +10971,7 @@
     "id": "boghammar/MMM-SL-PublicTransport",
     "maintainer": "boghammar",
     "maintainerURL": "",
-    "description": "Display public transport in Stockholm/**Sweden**.",
+    "description": "Display public transport in Stockholm/<strong>Sweden</strong>.",
     "issues": [],
     "tags": [
       "publictransport"
@@ -11029,7 +11029,7 @@
     "id": "jackmeyer/MMM-SleeperNFL",
     "maintainer": "jackmeyer",
     "maintainerURL": "",
-    "description": "Displays your [Sleeper](https://sleeper.com) fantasy football matchup with live updating scores.",
+    "description": "Displays your <a target=\"_blank\" href=\"https://sleeper.com\">Sleeper</a> fantasy football matchup with live updating scores.",
     "issues": [
       "Issue: There is no `package.json`. We need this file to gather information about the module."
     ]
@@ -11040,7 +11040,7 @@
     "id": "CFenner/MMM-Smappee",
     "maintainer": "CFenner",
     "maintainerURL": "",
-    "description": "Module to integrate [Smappee](https://www.smappee.com)s smart home energy consumption monitor.",
+    "description": "Module to integrate <a target=\"_blank\" href=\"https://www.smappee.com\">Smappee</a>s smart home energy consumption monitor.",
     "issues": [],
     "license": "MIT",
     "image": ".github-preview.jpg"
@@ -11062,7 +11062,7 @@
     "id": "AgP42/MMM-SmartWebDisplay",
     "maintainer": "AgP42",
     "maintainerURL": "https://github.com/AgP42",
-    "description": "An iFrame module to display web content (including YouTube, IP Cameras, ...). Several rotating URL, autorefresh and remote control of the URL to display, Next/Prev/Play/Stop. [MMM-SmartWebDisplay forum](https://forum.magicmirror.builders/topic/9750/mmm-smartwebdisplay-display-web-contents-including-youtube-on-your-mm)",
+    "description": "An iFrame module to display web content (including YouTube, IP Cameras, ...). Several rotating URL, autorefresh and remote control of the URL to display, Next/Prev/Play/Stop. <a target=\"_blank\" href=\"https://forum.magicmirror.builders/topic/9750/mmm-smartwebdisplay-display-web-contents-including-youtube-on-your-mm\">MMM-SmartWebDisplay forum</a>",
     "issues": [
       "Issue: No image found."
     ],
@@ -11497,7 +11497,7 @@
     "id": "Klettner/MMM-StopwatchTimer",
     "maintainer": "Klettner",
     "maintainerURL": "https://github.com/Klettner",
-    "description": "Display an alert-style timer or stopwatch. Controllable via notifications or the [MM-Remote](https://github.com/Klettner/MM-Remote) android app.",
+    "description": "Display an alert-style timer or stopwatch. Controllable via notifications or the <a target=\"_blank\" href=\"https://github.com/Klettner/MM-Remote\">MM-Remote</a> android app.",
     "issues": [],
     "tags": [
       "timer"
@@ -11524,7 +11524,7 @@
     "id": "ianperrin/MMM-Strava",
     "maintainer": "ianperrin",
     "maintainerURL": "",
-    "description": "A module that displays your activity data from [Strava.com](https://www.strava.com).",
+    "description": "A module that displays your activity data from <a target=\"_blank\" href=\"https://www.strava.com\">Strava.com</a>.",
     "issues": [],
     "tags": [
       "strava"
@@ -11552,7 +11552,7 @@
     "id": "linuxtuxie/MMM-SunnyPortal",
     "maintainer": "linuxtuxie",
     "maintainerURL": "",
-    "description": "A module for displaying the current, monthly and yearly power output of your SunnyPortal Solar Panels.(<https://www.sunnyportal.com>).",
+    "description": "A module for displaying the current, monthly and yearly power output of your SunnyPortal Solar Panels.(<a target=\"_blank\" href=\"https://www.sunnyportal.com\">https://www.sunnyportal.com</a>).",
     "issues": [],
     "tags": [],
     "license": "MIT",
@@ -11720,7 +11720,7 @@
     "id": "E3V3A/MMM-Tabulator",
     "maintainer": "E3V3A",
     "maintainerURL": "https://github.com/E3V3A",
-    "description": "A Demo module for using [Tabulator](https://tabulator.info) to directly parse JSON/XML into MM DHTML tables.",
+    "description": "A Demo module for using <a target=\"_blank\" href=\"https://tabulator.info\">Tabulator</a> to directly parse JSON/XML into MM DHTML tables.",
     "issues": [],
     "tags": [
       "tables",
@@ -11778,7 +11778,7 @@
     "id": "derekn/MMM-TautulliActivity",
     "maintainer": "derekn",
     "maintainerURL": "",
-    "description": "Displays the currently playing Plex stream activity from [Tautulli](https://tautulli.com).",
+    "description": "Displays the currently playing Plex stream activity from <a target=\"_blank\" href=\"https://tautulli.com\">Tautulli</a>.",
     "issues": [
       "Issue: There is no `package.json`. We need this file to gather information about the module."
     ]
@@ -11805,7 +11805,7 @@
     "id": "doctorfree/MMM-TelegramCommands",
     "maintainer": "doctorfree",
     "maintainerURL": "https://github.com/doctorfree",
-    "description": "Creates and manages Telegram commands to control a MagicMirror² via the MirrorCommandLine tools. MMM-TelegramCommands requires the installation and configuration of the [MMM-TelegramBot](https://github.com/bugsounet/MMM-TelegramBot) module and the [MirrorCommandLine](https://gitlab.com/doctorfree/MirrorCommandLine) suite of command line utilites for the MagicMirror².",
+    "description": "Creates and manages Telegram commands to control a MagicMirror² via the MirrorCommandLine tools. MMM-TelegramCommands requires the installation and configuration of the <a target=\"_blank\" href=\"https://github.com/bugsounet/MMM-TelegramBot\">MMM-TelegramBot</a> module and the <a target=\"_blank\" href=\"https://gitlab.com/doctorfree/MirrorCommandLine\">MirrorCommandLine</a> suite of command line utilites for the MagicMirror².",
     "issues": [
       "Issue: No image found."
     ],
@@ -11852,7 +11852,7 @@
     "id": "mattdy/MMM-Tesla",
     "maintainer": "mattdy",
     "maintainerURL": "",
-    "description": "Display Tesla data from either [TeslaFi](https://teslafi.com) or [Tessie](https://www.tessie.com)",
+    "description": "Display Tesla data from either <a target=\"_blank\" href=\"https://teslafi.com\">TeslaFi</a> or <a target=\"_blank\" href=\"https://www.tessie.com\">Tessie</a>",
     "issues": [],
     "tags": [
       "tesla",
@@ -11868,7 +11868,7 @@
     "id": "usncahill/MMM-Tesla3",
     "maintainer": "usncahill",
     "maintainerURL": "",
-    "description": "Display Tesla data directly from Tesla API. Customizable GUI based on [MMM-TeslaMate](https://github.com/denverquane/MMM-Teslamate).",
+    "description": "Display Tesla data directly from Tesla API. Customizable GUI based on <a target=\"_blank\" href=\"https://github.com/denverquane/MMM-Teslamate\">MMM-TeslaMate</a>.",
     "issues": [
       "`package.json` issue: No repository field."
     ],
@@ -11881,7 +11881,7 @@
     "id": "spitzlbergerj/MMM-TeslaLogger",
     "maintainer": "spitzlbergerj",
     "maintainerURL": "https://github.com/spitzlbergerj",
-    "description": "Displays data from [TeslaLogger](https://github.com/bassmaster187/TeslaLogger) or/and [TeslaMate](https://github.com/adriankumpf/teslamate) via MQTT",
+    "description": "Displays data from <a target=\"_blank\" href=\"https://github.com/bassmaster187/TeslaLogger\">TeslaLogger</a> or/and <a target=\"_blank\" href=\"https://github.com/adriankumpf/teslamate\">TeslaMate</a> via MQTT",
     "issues": [],
     "license": "MIT",
     "image": "img-HAL9000.jpg"
@@ -12068,7 +12068,7 @@
     "id": "JulienPeloton/MMM-tns",
     "maintainer": "JulienPeloton",
     "maintainerURL": "https://github.com/JulienPeloton",
-    "description": "Module to display latest new astronomical transients from [TNS](https://wis-tns.weizmann.ac.il) such as [supernova](https://en.wikipedia.org/wiki/Supernova) candidates.",
+    "description": "Module to display latest new astronomical transients from <a target=\"_blank\" href=\"https://wis-tns.weizmann.ac.il\">TNS</a> such as <a target=\"_blank\" href=\"https://en.wikipedia.org/wiki/Supernova\">supernova</a> candidates.",
     "issues": [],
     "tags": [
       "tns"
@@ -12194,7 +12194,7 @@
     "id": "asimhsidd/MMM-TracCar",
     "maintainer": "asimhsidd",
     "maintainerURL": "https://github.com/asimhsidd",
-    "description": "Track moving objects through Traccar.org APIs on google maps. This is based on a websocket connection to the Traccar.org server over which the locations of all the registered users are received upon any update. Not only the markers are updated but also the map's center & zoom level. All online users have a green icon, rest are red. Error handling is built in too.",
+    "description": "Track moving objects through Traccar.org APIs on google maps. This is based on a websocket connection to the Traccar.org server over which the locations of all the registered users are received upon any update. Not only the markers are updated but also the map's center &amp; zoom level. All online users have a green icon, rest are red. Error handling is built in too.",
     "issues": [
       "`package.json` issue: No repository field."
     ],
@@ -12245,7 +12245,7 @@
     "id": "tticehurst/MMM-TrainTimesRTT",
     "maintainer": "tticehurst",
     "maintainerURL": "https://github.com/tticehurst",
-    "description": "Displays live train times making use of the [RTT.io](https://api.rtt.io) api.",
+    "description": "Displays live train times making use of the <a target=\"_blank\" href=\"https://api.rtt.io\">RTT.io</a> api.",
     "issues": [
       "`package.json` issue: No description",
       "`package.json` issue: No repository field.",
@@ -12260,7 +12260,7 @@
     "id": "Kiina/MMM-trakt",
     "maintainer": "Kiina",
     "maintainerURL": "",
-    "description": "A module to display your upcoming Shows from your [trakt.tv](https://trakt.tv) account.",
+    "description": "A module to display your upcoming Shows from your <a target=\"_blank\" href=\"https://trakt.tv\">trakt.tv</a> account.",
     "issues": [],
     "license": "MIT",
     "image": "screenshot.jpg"
@@ -12340,7 +12340,7 @@
     "id": "Jopyth/MMM-Trello",
     "maintainer": "Jopyth",
     "maintainerURL": "",
-    "description": "This module can show [Trello](https://trello.com) cards on your mirror.",
+    "description": "This module can show <a target=\"_blank\" href=\"https://trello.com\">Trello</a> cards on your mirror.",
     "issues": [],
     "tags": [
       "trello"
@@ -12393,7 +12393,7 @@
     "id": "nigel-daniels/MMM-Tube-Status",
     "maintainer": "nigel-daniels",
     "maintainerURL": "https://github.com/nigel-daniels",
-    "description": "Simple at-a-glance display of the London Underground system status. See [MMM-TFL-Status](https://github.com/emanuele-albini/MMM-TFL-Status) for more modes (e.g., Elizabeth line, DLR, Buses, Tram, etc.)",
+    "description": "Simple at-a-glance display of the London Underground system status. See <a target=\"_blank\" href=\"https://github.com/emanuele-albini/MMM-TFL-Status\">MMM-TFL-Status</a> for more modes (e.g., Elizabeth line, DLR, Buses, Tram, etc.)",
     "issues": [
       "Issue: There is no `package.json`. We need this file to gather information about the module."
     ]
@@ -12510,7 +12510,7 @@
     "id": "balassy/MMM-Udvaronc",
     "maintainer": "balassy",
     "maintainerURL": "https://github.com/balassy",
-    "description": "Displays Hungarian compliments from [Uvaronc](https://udvaronc.hu).",
+    "description": "Displays Hungarian compliments from <a target=\"_blank\" href=\"https://udvaronc.hu\">Uvaronc</a>.",
     "issues": [],
     "tags": [
       "udvaronc"
@@ -12563,7 +12563,7 @@
     "id": "nwootton/MMM-UKNationalRail",
     "maintainer": "nwootton",
     "maintainerURL": "",
-    "description": "This module displays LIVE UK National Rail train arrivals & departures from a specified station.",
+    "description": "This module displays LIVE UK National Rail train arrivals &amp; departures from a specified station.",
     "issues": [],
     "tags": [],
     "license": "MIT",
@@ -12623,7 +12623,7 @@
     "id": "MikeBishop/MMM-uptimekuma",
     "maintainer": "MikeBishop",
     "maintainerURL": "",
-    "description": "Display monitor data (online/offline detection) from selfhosted <https://github.com/louislam/uptime-kuma>. (Fork of MMM-uptimerobot.)",
+    "description": "Display monitor data (online/offline detection) from selfhosted <a target=\"_blank\" href=\"https://github.com/louislam/uptime-kuma\">https://github.com/louislam/uptime-kuma</a>. (Fork of MMM-uptimerobot.)",
     "issues": [],
     "tags": [
       "uptimekuma",
@@ -12640,7 +12640,7 @@
     "id": "mrVragec/MMM-uptimerobot",
     "maintainer": "mrVragec",
     "maintainerURL": "",
-    "description": "Display monitor data (online/offline detection) from <https://uptimerobot.com/>.",
+    "description": "Display monitor data (online/offline detection) from <a target=\"_blank\" href=\"https://uptimerobot.com/\">https://uptimerobot.com/</a>.",
     "issues": [],
     "tags": [
       "uptimerobot",
@@ -12684,7 +12684,7 @@
     "id": "deg0nz/MMM-VartaESS",
     "maintainer": "deg0nz",
     "maintainerURL": "",
-    "description": "Displays data from Varta Energy Storage Systems and can be used as data source for [MMM-EnergyMonitor](https://github.com/deg0nz/MMM-EnergyMonitor).",
+    "description": "Displays data from Varta Energy Storage Systems and can be used as data source for <a target=\"_blank\" href=\"https://github.com/deg0nz/MMM-EnergyMonitor\">MMM-EnergyMonitor</a>.",
     "issues": [
       "Issue: No image found."
     ],
@@ -13098,7 +13098,7 @@
     "id": "nigel-daniels/MMM-Weather-Now",
     "maintainer": "nigel-daniels",
     "maintainerURL": "https://github.com/nigel-daniels",
-    "description": "Simple clean display of the weather now, designed to go with MMM-3Day-Forecast. Now uses Open Weather as WeatherBit reduced the free service to an unusable level :( If you installed an older version ( < 18 Oct 2022 ), please update and get a new api key!",
+    "description": "Simple clean display of the weather now, designed to go with MMM-3Day-Forecast. Now uses Open Weather as WeatherBit reduced the free service to an unusable level :( If you installed an older version ( &lt; 18 Oct 2022 ), please update and get a new api key!",
     "issues": [],
     "tags": [
       "weather",
@@ -13126,7 +13126,7 @@
     "id": "gjonesme/MMM-WeatherAlerts",
     "maintainer": "gjonesme",
     "maintainerURL": "",
-    "description": "Displays active weather alerts provided by [OpenWeatherMap's onecall API](https://openweathermap.org/api/one-call-3#listsource).",
+    "description": "Displays active weather alerts provided by <a target=\"_blank\" href=\"https://openweathermap.org/api/one-call-3#listsource\">OpenWeatherMap's onecall API</a>.",
     "issues": [
       "`package.json` issue: No repository field."
     ],
@@ -13150,7 +13150,7 @@
     "id": "mtatsuma/MMM-WeatherChart",
     "maintainer": "mtatsuma",
     "maintainerURL": "https://github.com/mtatsuma",
-    "description": "Display a weather forecast chart using [OpenWeather](https://openweathermap.org) API and [Chart.js](https://www.chartjs.org), an open-source library to plot data on charts.",
+    "description": "Display a weather forecast chart using <a target=\"_blank\" href=\"https://openweathermap.org\">OpenWeather</a> API and <a target=\"_blank\" href=\"https://www.chartjs.org\">Chart.js</a>, an open-source library to plot data on charts.",
     "issues": [
       "Issue: There is no `package.json`. We need this file to gather information about the module."
     ]
@@ -13183,7 +13183,7 @@
     "id": "FlatPepsi17/MMM-WeatherGraph",
     "maintainer": "FlatPepsi17",
     "maintainerURL": "",
-    "description": "Weather forecast with rain & temp graphs. Lots of options to turn on & off. Data from OpenWeatherMap API",
+    "description": "Weather forecast with rain &amp; temp graphs. Lots of options to turn on &amp; off. Data from OpenWeatherMap API",
     "issues": [
       "Issue: There is no `package.json`. We need this file to gather information about the module."
     ]
@@ -13205,7 +13205,7 @@
     "id": "mykle1/MMM-WeatherOrNot",
     "maintainer": "mykle1",
     "maintainerURL": "",
-    "description": "Squeeze or stretch it. Watch it respond by reformatting itself. Fully customizable. Also driven by Darksky API (**°DarkSky API no longer works since 2023-Mar-31**)",
+    "description": "Squeeze or stretch it. Watch it respond by reformatting itself. Fully customizable. Also driven by Darksky API (<strong>°DarkSky API no longer works since 2023-Mar-31</strong>)",
     "issues": [
       "Issue: There is no `package.json`. We need this file to gather information about the module."
     ]
@@ -13233,7 +13233,7 @@
     "id": "thyed/MMM-Webuntis",
     "maintainer": "thyed",
     "maintainerURL": "",
-    "description": "It allows you to display your kids' canceled and irregular lessons for schools using [Untis](https://www.untis.at) software to organize school's timetables.",
+    "description": "It allows you to display your kids' canceled and irregular lessons for schools using <a target=\"_blank\" href=\"https://www.untis.at\">Untis</a> software to organize school's timetables.",
     "issues": [
       "`package.json` issue: No repository field."
     ],
@@ -13460,7 +13460,7 @@
     "id": "coderpussy/MMM-WS281X-Server",
     "maintainer": "coderpussy",
     "maintainerURL": "",
-    "description": "Have ws2812 LEDs on your mirror with [RPI-WS2812-Server](https://github.com/tom-2015/rpi-ws2812-server).",
+    "description": "Have ws2812 LEDs on your mirror with <a target=\"_blank\" href=\"https://github.com/tom-2015/rpi-ws2812-server\">RPI-WS2812-Server</a>.",
     "issues": [
       "Issue: No image found."
     ],
@@ -13499,7 +13499,7 @@
     "id": "mykle1/MMM-WWI",
     "maintainer": "mykle1",
     "maintainerURL": "",
-    "description": "Nope! Not World War I. It's **Weather Without Icons**. Up to the minute weather. Full weather information, yet a small footprint.",
+    "description": "Nope! Not World War I. It's <strong>Weather Without Icons</strong>. Up to the minute weather. Full weather information, yet a small footprint.",
     "issues": [
       "Issue: There is no `package.json`. We need this file to gather information about the module."
     ]
@@ -13510,7 +13510,7 @@
     "id": "cybex-dev/MMM-XDG-OPEN",
     "maintainer": "cybex-dev",
     "maintainerURL": "https://github.com/cybex-dev",
-    "description": "Opens a file, URL, etc using default applications for a particular MIME, all done by using the [Notification Mechanism](https://github.com/michMich/MagicMirror/wiki/notifications)",
+    "description": "Opens a file, URL, etc using default applications for a particular MIME, all done by using the <a target=\"_blank\" href=\"https://github.com/michMich/MagicMirror/wiki/notifications\">Notification Mechanism</a>",
     "issues": [
       "`package.json` issue: No repository field.",
       "`package.json` issue: No license field."
@@ -13672,7 +13672,7 @@
     "id": "Yr/MMM-YrNow",
     "maintainer": "Yr",
     "maintainerURL": "",
-    "description": "The official Yr Nowcast module for MagicMirror², which displays data from [Yr](https://www.yr.no). Nowcast data is only available for some Norwegian locations covered by the Norwegian weather radars. Yr is a weather service from the Norwegian Broadcasting Corporation and the Norwegian Meteorological Institute.",
+    "description": "The official Yr Nowcast module for MagicMirror², which displays data from <a target=\"_blank\" href=\"https://www.yr.no\">Yr</a>. Nowcast data is only available for some Norwegian locations covered by the Norwegian weather radars. Yr is a weather service from the Norwegian Broadcasting Corporation and the Norwegian Meteorological Institute.",
     "issues": [
       "Issue: There is no `package.json`. We need this file to gather information about the module."
     ]
@@ -13683,7 +13683,7 @@
     "id": "fmandal/MMM-YrThen",
     "maintainer": "fmandal",
     "maintainerURL": "",
-    "description": "Displays weather forecast from [Yr](https://www.yr.no). Yr is a weather service from the Norwegian Broadcasting Corporation and the Norwegian Meteorological Institute.",
+    "description": "Displays weather forecast from <a target=\"_blank\" href=\"https://www.yr.no\">Yr</a>. Yr is a weather service from the Norwegian Broadcasting Corporation and the Norwegian Meteorological Institute.",
     "issues": [
       "Issue: There is no `package.json`. We need this file to gather information about the module."
     ]

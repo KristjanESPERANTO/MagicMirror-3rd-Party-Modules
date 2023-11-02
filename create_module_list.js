@@ -1,4 +1,6 @@
-const fs = require("fs");
+import { marked } from "marked";
+import sanitizeHtml from "sanitize-html";
+import fs from "fs";
 
 async function fetchMarkdownData() {
   try {
@@ -67,7 +69,13 @@ async function createModuleList() {
           maintainerURL = "";
         }
 
-        const description = parts[3];
+        const descriptionMarkdown = parts[3];
+        const descriptionHtml = marked.parseInline(descriptionMarkdown);
+        const descriptionHtmlATarget = descriptionHtml.replaceAll(
+          "<a href=",
+          '<a target="_blank" href='
+        );
+        const description = sanitizeHtml(descriptionHtmlATarget);
 
         const module = {
           name,

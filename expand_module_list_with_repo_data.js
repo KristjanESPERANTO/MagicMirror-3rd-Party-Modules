@@ -1,6 +1,6 @@
-const fs = require("fs");
-const normalizeData = require("normalize-package-data");
-const sharp = require("sharp");
+import fs from "fs";
+import normalizeData from "normalize-package-data";
+import sharp from "sharp";
 
 const imagesFolder = "./docs/images";
 
