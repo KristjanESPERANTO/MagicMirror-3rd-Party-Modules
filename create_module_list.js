@@ -30,7 +30,8 @@ async function createModuleList() {
   for (const line of markdown.split("\n")) {
     if (
       line.includes("](https://github.com/") ||
-      line.includes("](https://gitlab.com/")
+      line.includes("](https://gitlab.com/") ||
+      line.includes("](https://bitbucket.org/")
     ) {
       // Split the line into an array of parts, and trim each part.
       const parts = line.split("|").map((part) => {
@@ -43,7 +44,8 @@ async function createModuleList() {
         const url = parts[1].match(/\[(.*?)\]\((.*?)\)/)[2].trim();
         if (
           !url.startsWith("https://github.com") &&
-          !url.startsWith("https://gitlab.com")
+          !url.startsWith("https://gitlab.com") &&
+          !url.startsWith("https://bitbucket.org")
         ) {
           issues.push(
             `URL: Neither a valid GitHub nor a valid GitLab URL: ${url}.`
@@ -84,7 +86,7 @@ async function createModuleList() {
   const sortedModuleList = moduleList.sort(sortByNameIgnoringPrefix);
 
   fs.writeFileSync(
-    "./docs/modules.temp.json",
+    "./docs/modules.temp.1.json",
     JSON.stringify(sortedModuleList, null, 2),
     "utf8"
   );

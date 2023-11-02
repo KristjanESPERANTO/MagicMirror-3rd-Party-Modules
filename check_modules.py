@@ -3,6 +3,7 @@
 
 from pathlib import Path
 from datetime import datetime
+import json
 import subprocess
 
 
@@ -103,31 +104,32 @@ def check_modules():
         }
     }
 
-    all_modules_path = Path("./modules")
-    all_modules_directories = sorted([f for f in all_modules_path.iterdir() if f.is_dir()])
+    modules_json_file = open('./docs/modules.temp.2.json', encoding="utf-8")
+    modules = json.load(modules_json_file)
 
     output = open("result.md", "w", encoding="utf-8")
     output.write("# Result of the module analysis\n\n")
     output.write(f"Timestamp: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}\n\n")
-    output.write(f"Number of analyzed modules: {len(all_modules_directories)}\n")
+    output.write(f"Number of analyzed modules: {len(modules)}\n")
 
-    for i, module_directory in enumerate(all_modules_directories):
+    module_counter = 0
+
+    for module in modules:
+
+        module_counter = module_counter +1
+
+        module_directory = module["name"] + "-----" + module["maintainer"]
 
         # Print progress
-        progress = f"{i:4}/{len(all_modules_directories)}\r"
+        progress = f"{module_counter:4}/{len(modules)}\r"
         print(progress, end='')
-
-        module = {
-            "name": module_directory.name.split("-----")[0],
-            "owner": module_directory.name.split("-----")[1],
-            "issues": []
-        }
 
         if not module["name"].startswith("MMM-"):
             module["issues"].append(
                 "Recommendation: Module name doesn't follow the recommended pattern (it doesn't start with `MMM-`). Consider renaming your module.")
 
-        for file_path in sorted(module_directory.rglob("*")):
+        module_directory_path = Path("./modules/" + module_directory)
+        for file_path in sorted(module_directory_path.rglob("*")):
             if file_path.is_dir():
                 # .count == 1: If there is a node_modules directory, there are probably others in it with that name. There does not have to be an additional message for this.
                 if file_path.name == "node_modules" and str(file_path).count("node_modules") == 1:
@@ -144,15 +146,28 @@ def check_modules():
                 #        f"`Recommendation: {file_path.name}`: Change file extention from `.yml` to `.yaml`: <https://yaml.org/faq.html>.")
 
         if len(module["issues"]) > 0:
-            url = subprocess.run(f"cd {module_directory} && git remote get-url origin && cd ..",
+            url = subprocess.run(f"cd ./modules/{module_directory} && git remote get-url origin && cd ..",
                                  stdout=subprocess.PIPE, shell=True, check=False)
             url_string = url.stdout.decode().rstrip()
 
-            output.write(f"\n## [{module['name']} by {module['owner']}]({url_string})\n\n")
+            output.write(f"\n## [{module['name']} by {module['maintainer']}]({url_string})\n\n")
             for idx, issue in enumerate(module["issues"]):
                 output.write(f"{idx+1}. {issue}\n")
-    print(f"{len(all_modules_directories)} modules analyzed. For results see file result.md.           ")
+    print(f"{module_counter} modules analyzed. For results see file result.md.           ")
     output.close()
 
+    # Serializing json
+    json_object = json.dumps(modules, indent=2)
+
+    # Writing to modules.json
+    with open("./docs/modules.json", "w", encoding="utf-8")as outfile:
+        outfile.write(json_object)
+
+    # Serializing and minifying json
+    json_object = json.dumps(modules)
+
+    # Writing to modules.min.json
+    with open("./docs/modules.min.json", "w", encoding="utf-8")as outfile:
+        outfile.write(json_object)
 
 check_modules()

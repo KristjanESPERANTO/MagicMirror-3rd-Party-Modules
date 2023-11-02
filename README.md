@@ -15,11 +15,9 @@ With a few scripts we create a web page with filter function and integrated imag
 
 ## Module tests
 
-The test part is currently in a rebuild state.
-
 The usefulness of some of the tests is certainly debatable. Some of the tests are like a proof of concept. If you as a developer do not like a test, you are welcome to give feedback or simply ignore the result.
 
-One part of the tests ends up in the file [result.md](result.md) and another part in file [./docs/modules.json](modules.json). This still needs to be consolidated.
+The results of the tests you can see in the [result.md](result.md).
 
 Here are some test results:
 
