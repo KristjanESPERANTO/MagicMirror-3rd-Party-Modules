@@ -69,6 +69,10 @@ def check_modules():
             "name": "Replace it with built-in fetch.",
             "category": "Recommendation"
         },
+        "axios": {
+            "name": "Replace it with built-in fetch.",
+            "category": "Recommendation"
+        },
         "omxplayer": {
             "name": "Try to replace it with `vlc`.",
             "category": "Deprecated",

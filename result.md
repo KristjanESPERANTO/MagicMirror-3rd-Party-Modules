@@ -1,6 +1,6 @@
 # Result of the module analysis
 
-Timestamp: 2023-11-03 00:28:00
+Timestamp: 2023-11-03 00:51:52
 
 Number of analyzed modules: 1057
 
@@ -20,7 +20,9 @@ Number of analyzed modules: 1057
 2. Typo: Found 'Magic Mirror' in file `MMM-2Day-NOAA-Forecast.js`: Replace it with `MagicMirror²`.
 3. Typo: Found 'Magic Mirror' in file `README.md`: Replace it with `MagicMirror²`.
 4. Typo: Found 'Magic Mirror' in file `node_helper.js`: Replace it with `MagicMirror²`.
-5. Typo: Found 'MagicMirror2' in file `package.json`: Replace it with `MagicMirror²`.
+5. Recommendation: Found 'axios' in file `node_helper.js`: Replace it with built-in fetch.
+6. Typo: Found 'MagicMirror2' in file `package.json`: Replace it with `MagicMirror²`.
+7. Recommendation: Found 'axios' in file `package.json`: Replace it with built-in fetch.
 
 ## [MMM-3Day-Forecast by nigel-daniels](https://github.com/nigel-daniels/MMM-3Day-Forecast)
 
@@ -39,6 +41,7 @@ Number of analyzed modules: 1057
 1. Issue: No image found.
 2. Typo: Found 'Magic Mirror' in file `MMM-AC-aseag.js`: Replace it with `MagicMirror²`.
 3. Typo: Found 'Magic Mirror' in file `node_helper.js`: Replace it with `MagicMirror²`.
+4. Recommendation: Found 'axios' in file `node_helper.js`: Replace it with built-in fetch.
 
 ## [MMM-Advent by Jopyth](https://github.com/Jopyth/MMM-Advent)
 
@@ -551,7 +554,9 @@ Number of analyzed modules: 1057
 ## [MMM-Bring by werthdavid](https://github.com/werthdavid/MMM-Bring)
 
 1. Recommendation: Found 'require("https")' in file `BringClient.js`: Replace it with built-in fetch.
-2. Typo: Found 'Magic Mirror' in file `styles.css`: Replace it with `MagicMirror²`.
+2. Recommendation: Found 'axios' in file `BringClient.js`: Replace it with built-in fetch.
+3. Typo: Found 'Magic Mirror' in file `styles.css`: Replace it with `MagicMirror²`.
+4. Recommendation: Found 'axios' in file `package.json`: Replace it with built-in fetch.
 
 ## [MMM-bringList by rseidt](https://github.com/rseidt/MMM-bringList)
 
@@ -589,7 +594,10 @@ Number of analyzed modules: 1057
 
 1. Typo: Found 'Magic Mirror' in file `MMM-bustimes.js`: Replace it with `MagicMirror²`.
 2. Typo: Found 'Magic Mirror' in file `README.md`: Replace it with `MagicMirror²`.
-3. Typo: Found 'Magic Mirror' in file `node_helper.js`: Replace it with `MagicMirror²`.
+3. Recommendation: Found 'axios' in file `README.md`: Replace it with built-in fetch.
+4. Typo: Found 'Magic Mirror' in file `node_helper.js`: Replace it with `MagicMirror²`.
+5. Recommendation: Found 'axios' in file `node_helper.js`: Replace it with built-in fetch.
+6. Recommendation: Found 'axios' in file `package.json`: Replace it with built-in fetch.
 
 ## [MMM-Button by ptrbld](https://github.com/ptrbld/MMM-Button)
 
@@ -610,6 +618,8 @@ Number of analyzed modules: 1057
 ## [MMM-Bysykkel by JonasTriki](https://github.com/JonasTriki/MMM-Bysykkel)
 
 1. Issue: There is no `package.json`. We need this file to gather information about the module.
+2. Recommendation: Found 'axios' in file `urbancity.js`: Replace it with built-in fetch.
+3. Recommendation: Found 'axios' in file `directionsApi.js`: Replace it with built-in fetch.
 
 ## [MMM-CalDAV by MMRIZE](https://github.com/MMRIZE/MMM-CalDAV)
 
@@ -1223,7 +1233,9 @@ Number of analyzed modules: 1057
 
 1. `package.json` issue: No repository field.
 2. Typo: Found 'Magic Mirror' in file `README.md`: Replace it with `MagicMirror²`.
-3. Typo: Found 'MagicMirror2' in file `package.json`: Replace it with `MagicMirror²`.
+3. Recommendation: Found 'axios' in file `node_helper.js`: Replace it with built-in fetch.
+4. Typo: Found 'MagicMirror2' in file `package.json`: Replace it with `MagicMirror²`.
+5. Recommendation: Found 'axios' in file `package.json`: Replace it with built-in fetch.
 
 ## [MMM-DockerVisualizer by aaron64](https://github.com/aaron64/MMM-DockerVisualizer)
 
@@ -1256,12 +1268,19 @@ Number of analyzed modules: 1057
 ## [MMM-DropboxWallpaper by Mong-ni](https://github.com/Mong-ni/MMM-DropboxWallpaper)
 
 1. Typo: Found 'Magic Mirror' in file `MMM-DropboxWallpaper.js`: Replace it with `MagicMirror²`.
-2. Deprecated: Found 'require('request')' in file `node_helper.js`: Replace it with built-in fetch.
-3. Warning: No LICENSE file.
+2. Recommendation: Found 'axios' in file `README.md`: Replace it with built-in fetch.
+3. Deprecated: Found 'require('request')' in file `node_helper.js`: Replace it with built-in fetch.
+4. Recommendation: Found 'axios' in file `node_helper.js`: Replace it with built-in fetch.
+5. Recommendation: Found 'axios' in file `package.json`: Replace it with built-in fetch.
+6. Warning: No LICENSE file.
 
 ## [MMM-DublinRTPI by galaktor](https://github.com/galaktor/MMM-DublinRTPI)
 
 1. Deprecated: Found 'require('request')' in file `rtpifetcher.js`: Replace it with built-in fetch.
+
+## [MMM-DVB by skastenholz](https://github.com/skastenholz/MMM-DVB)
+
+1. Recommendation: Found 'axios' in file `package.json`: Replace it with built-in fetch.
 
 ## [MMM-DWD-Pollen by carstendirks](https://github.com/carstendirks/MMM-DWD-Pollen)
 
@@ -1340,6 +1359,8 @@ Number of analyzed modules: 1057
 
 1. Typo: Found 'Magic Mirror' in file `MMM-Ecowatt.js`: Replace it with `MagicMirror²`.
 2. Typo: Found 'Magic Mirror' in file `node_helper.js`: Replace it with `MagicMirror²`.
+3. Recommendation: Found 'axios' in file `node_helper.js`: Replace it with built-in fetch.
+4. Recommendation: Found 'axios' in file `package.json`: Replace it with built-in fetch.
 
 ## [MMM-edgerouter-throughput by mscharl](https://github.com/mscharl/MMM-edgerouter-throughput)
 
@@ -1416,6 +1437,8 @@ Number of analyzed modules: 1057
 1. `package.json` issue: No description
 2. `package.json` issue: No repository field.
 3. Issue: No image found.
+4. Recommendation: Found 'axios' in file `node_helper.js`: Replace it with built-in fetch.
+5. Recommendation: Found 'axios' in file `package.json`: Replace it with built-in fetch.
 
 ## [MMM-ethereum by hansman84](https://github.com/hansman84/MMM-ethereum)
 
@@ -1451,6 +1474,7 @@ Number of analyzed modules: 1057
 2. Typo: Found 'Magic Mirror' in file `MMM-EveryNews.js`: Replace it with `MagicMirror²`.
 3. Typo: Found 'Magic Mirror' in file `node_helper.js`: Replace it with `MagicMirror²`.
 4. Deprecated: Found 'require('request')' in file `node_helper.js`: Replace it with built-in fetch.
+5. Recommendation: Found 'axios' in file `sources.json`: Replace it with built-in fetch.
 
 ## [MMM-EyeCandy by mykle1](https://github.com/mykle1/MMM-EyeCandy)
 
@@ -1540,9 +1564,11 @@ Number of analyzed modules: 1057
 2. Typo: Found 'Magic Mirror' in file `README.md`: Replace it with `MagicMirror²`.
 3. Typo: Found 'Magic Mirror' in file `node_helper.js`: Replace it with `MagicMirror²`.
 4. Typo: Found 'Magic Mirror' in file `package.json`: Replace it with `MagicMirror²`.
-5. Typo: Found 'Magic Mirror' in file `sheetFetcher.js`: Replace it with `MagicMirror²`.
-6. Typo: Found 'Magic Mirror' in file `MMM-FF-cht-sh.css`: Replace it with `MagicMirror²`.
-7. Typo: Found 'Magic Mirror' in file `MMM-FF-cht-sh.scss`: Replace it with `MagicMirror²`.
+5. Recommendation: Found 'axios' in file `package.json`: Replace it with built-in fetch.
+6. Typo: Found 'Magic Mirror' in file `sheetFetcher.js`: Replace it with `MagicMirror²`.
+7. Recommendation: Found 'axios' in file `sheetFetcher.js`: Replace it with built-in fetch.
+8. Typo: Found 'Magic Mirror' in file `MMM-FF-cht-sh.css`: Replace it with `MagicMirror²`.
+9. Typo: Found 'Magic Mirror' in file `MMM-FF-cht-sh.scss`: Replace it with `MagicMirror²`.
 
 ## [MMM-FF-code-injector by shin10](https://github.com/shin10/MMM-FF-code-injector)
 
@@ -1579,15 +1605,17 @@ Number of analyzed modules: 1057
 1. Typo: Found 'Magic Mirror' in file `MMM-FF-multigeiger.js`: Replace it with `MagicMirror²`.
 2. Typo: Found 'Magic Mirror' in file `README.md`: Replace it with `MagicMirror²`.
 3. Typo: Found 'Magic Mirror' in file `dataFetcher.js`: Replace it with `MagicMirror²`.
-4. Typo: Found 'Magic Mirror' in file `node_helper.js`: Replace it with `MagicMirror²`.
-5. Typo: Found 'Magic Mirror' in file `package.json`: Replace it with `MagicMirror²`.
-6. Typo: Found 'Magic Mirror' in file `MMM-FF-multigeiger-charts.scss`: Replace it with `MagicMirror²`.
-7. Typo: Found 'Magic Mirror' in file `MMM-FF-multigeiger-list-horizontal.css`: Replace it with `MagicMirror²`.
-8. Typo: Found 'Magic Mirror' in file `MMM-FF-multigeiger-list-horizontal.scss`: Replace it with `MagicMirror²`.
-9. Typo: Found 'Magic Mirror' in file `MMM-FF-multigeiger-list-vertical.css`: Replace it with `MagicMirror²`.
-10. Typo: Found 'Magic Mirror' in file `MMM-FF-multigeiger-list-vertical.scss`: Replace it with `MagicMirror²`.
-11. Typo: Found 'Magic Mirror' in file `MMM-FF-multigeiger.css`: Replace it with `MagicMirror²`.
-12. Typo: Found 'Magic Mirror' in file `MMM-FF-multigeiger.scss`: Replace it with `MagicMirror²`.
+4. Recommendation: Found 'axios' in file `dataFetcher.js`: Replace it with built-in fetch.
+5. Typo: Found 'Magic Mirror' in file `node_helper.js`: Replace it with `MagicMirror²`.
+6. Typo: Found 'Magic Mirror' in file `package.json`: Replace it with `MagicMirror²`.
+7. Recommendation: Found 'axios' in file `package.json`: Replace it with built-in fetch.
+8. Typo: Found 'Magic Mirror' in file `MMM-FF-multigeiger-charts.scss`: Replace it with `MagicMirror²`.
+9. Typo: Found 'Magic Mirror' in file `MMM-FF-multigeiger-list-horizontal.css`: Replace it with `MagicMirror²`.
+10. Typo: Found 'Magic Mirror' in file `MMM-FF-multigeiger-list-horizontal.scss`: Replace it with `MagicMirror²`.
+11. Typo: Found 'Magic Mirror' in file `MMM-FF-multigeiger-list-vertical.css`: Replace it with `MagicMirror²`.
+12. Typo: Found 'Magic Mirror' in file `MMM-FF-multigeiger-list-vertical.scss`: Replace it with `MagicMirror²`.
+13. Typo: Found 'Magic Mirror' in file `MMM-FF-multigeiger.css`: Replace it with `MagicMirror²`.
+14. Typo: Found 'Magic Mirror' in file `MMM-FF-multigeiger.scss`: Replace it with `MagicMirror²`.
 
 ## [MMM-FF-process-stats by shin10](https://github.com/shin10/MMM-FF-process-stats)
 
@@ -1798,7 +1826,9 @@ Number of analyzed modules: 1057
 ## [MMM-FroelingConnect by eckonator](https://github.com/eckonator/MMM-FroelingConnect)
 
 1. Typo: Found 'Magic Mirror' in file `MMM-FroelingConnect.js`: Replace it with `MagicMirror²`.
-2. Warning: No LICENSE file.
+2. Recommendation: Found 'axios' in file `node_helper.js`: Replace it with built-in fetch.
+3. Recommendation: Found 'axios' in file `package.json`: Replace it with built-in fetch.
+4. Warning: No LICENSE file.
 
 ## [MMM-fronius by peteyjaym](https://github.com/peteyjaym/MMM-fronius)
 
@@ -1895,10 +1925,12 @@ Number of analyzed modules: 1057
 ## [MMM-GHIN by C-Deck](https://github.com/C-Deck/MMM-GHIN)
 
 1. Issue: No image found.
-2. Typo: Found 'Magic Mirror' in file `MMM-GHIN.js`: Replace it with `MagicMirror²`.
-3. Typo: Found 'Magic Mirror' in file `README.md`: Replace it with `MagicMirror²`.
-4. Typo: Found 'Magic Mirror' in file `node_helper.js`: Replace it with `MagicMirror²`.
-5. Typo: Found 'MagicMirror2' in file `package.json`: Replace it with `MagicMirror²`.
+2. Recommendation: Found 'axios' in file `GHINApi.js`: Replace it with built-in fetch.
+3. Typo: Found 'Magic Mirror' in file `MMM-GHIN.js`: Replace it with `MagicMirror²`.
+4. Typo: Found 'Magic Mirror' in file `README.md`: Replace it with `MagicMirror²`.
+5. Typo: Found 'Magic Mirror' in file `node_helper.js`: Replace it with `MagicMirror²`.
+6. Typo: Found 'MagicMirror2' in file `package.json`: Replace it with `MagicMirror²`.
+7. Recommendation: Found 'axios' in file `package.json`: Replace it with built-in fetch.
 
 ## [MMM-GitHub-Monitor by fpfuetsch](https://github.com/fpfuetsch/MMM-GitHub-Monitor)
 
@@ -1908,7 +1940,9 @@ Number of analyzed modules: 1057
 
 1. `package.json` issue: No repository field.
 2. `package.json` issue: No license field.
-3. Warning: No LICENSE file.
+3. Recommendation: Found 'axios' in file `node_helper.js`: Replace it with built-in fetch.
+4. Recommendation: Found 'axios' in file `package.json`: Replace it with built-in fetch.
+5. Warning: No LICENSE file.
 
 ## [MMM-Gitlab-MergeRequests by jkschoen](https://github.com/jkschoen/MMM-Gitlab-MergeRequests)
 
@@ -1950,6 +1984,12 @@ Number of analyzed modules: 1057
 ## [MMM-GoogleAssistant by bugsounet](https://github.com/bugsounet/MMM-GoogleAssistant)
 
 1. Recommendation: Found 'uses: actions/checkout@v3' in file `dependency-review.yml`: Replace it with v4.
+2. Recommendation: Found 'axios' in file `googleSearch.js`: Replace it with built-in fetch.
+3. Recommendation: Found 'axios' in file `loadLibraries.js`: Replace it with built-in fetch.
+4. Recommendation: Found 'axios' in file `delete.js`: Replace it with built-in fetch.
+5. Recommendation: Found 'axios' in file `list.js`: Replace it with built-in fetch.
+6. Recommendation: Found 'axios' in file `register.js`: Replace it with built-in fetch.
+7. Recommendation: Found 'axios' in file `package.json`: Replace it with built-in fetch.
 
 ## [MMM-GoogleBirthdaysProvider by PalatinCoder](https://github.com/PalatinCoder/MMM-GoogleBirthdaysProvider)
 
@@ -1972,8 +2012,10 @@ Number of analyzed modules: 1057
 3. Typo: Found 'Magic Mirror' in file `MMM-GoogleDocs-Notes.js`: Replace it with `MagicMirror²`.
 4. Typo: Found 'Magic Mirror' in file `README.md`: Replace it with `MagicMirror²`.
 5. Typo: Found 'Magic Mirror' in file `authorize.mjs`: Replace it with `MagicMirror²`.
-6. Typo: Found 'Magic Mirror' in file `node_helper.js`: Replace it with `MagicMirror²`.
-7. Typo: Found 'Magic Mirror' in file `package.json`: Replace it with `MagicMirror²`.
+6. Recommendation: Found 'axios' in file `authorize.mjs`: Replace it with built-in fetch.
+7. Typo: Found 'Magic Mirror' in file `node_helper.js`: Replace it with `MagicMirror²`.
+8. Typo: Found 'Magic Mirror' in file `package.json`: Replace it with `MagicMirror²`.
+9. Recommendation: Found 'axios' in file `package.json`: Replace it with built-in fetch.
 
 ## [MMM-GoogleDriveSlideShow by clegallic](https://github.com/clegallic/MMM-GoogleDriveSlideShow)
 
@@ -1999,9 +2041,11 @@ Number of analyzed modules: 1057
 
 ## [MMM-GooglePhotos by hermanho](https://github.com/hermanho/MMM-GooglePhotos)
 
-1. Deprecated: Found 'electron-rebuild' in file `README.md`: Replace it with `@electron/rebuild`
-2. Recommendation: Found 'require("https")' in file `node_helper.js`: Replace it with built-in fetch.
-3. Deprecated: Found 'electron-rebuild' in file `package.json`: Replace it with `@electron/rebuild`
+1. Recommendation: Found 'axios' in file `GPhotos.js`: Replace it with built-in fetch.
+2. Deprecated: Found 'electron-rebuild' in file `README.md`: Replace it with `@electron/rebuild`
+3. Recommendation: Found 'require("https")' in file `node_helper.js`: Replace it with built-in fetch.
+4. Deprecated: Found 'electron-rebuild' in file `package.json`: Replace it with `@electron/rebuild`
+5. Recommendation: Found 'axios' in file `package.json`: Replace it with built-in fetch.
 
 ## [MMM-GoogleSheets by ryan-d-williams](https://github.com/ryan-d-williams/MMM-GoogleSheets)
 
@@ -2161,8 +2205,10 @@ Number of analyzed modules: 1057
 1. Issue: There is no `package.json`. We need this file to gather information about the module.
 2. Typo: Found 'Magic Mirror' in file `MMM-Hive.js`: Replace it with `MagicMirror²`.
 3. Typo: Found 'MagicMirror2' in file `README.md`: Replace it with `MagicMirror²`.
-4. Typo: Found 'Magic Mirror' in file `node_helper.js`: Replace it with `MagicMirror²`.
-5. Deprecated: Found 'require('request')' in file `node_helper.js`: Replace it with built-in fetch.
+4. Recommendation: Found 'axios' in file `README.md`: Replace it with built-in fetch.
+5. Typo: Found 'Magic Mirror' in file `node_helper.js`: Replace it with `MagicMirror²`.
+6. Deprecated: Found 'require('request')' in file `node_helper.js`: Replace it with built-in fetch.
+7. Recommendation: Found 'axios' in file `index.js`: Replace it with built-in fetch.
 
 ## [MMM-HLTV by Helpi90](https://github.com/Helpi90/MMM-HLTV)
 
@@ -2257,7 +2303,9 @@ Number of analyzed modules: 1057
 
 1. Issue: There is no `package.json`. We need this file to gather information about the module.
 2. Typo: Found 'Magic Mirror' in file `MMM-HRS-PickupPlan.js`: Replace it with `MagicMirror²`.
-3. Typo: Found 'Magic Mirror' in file `node_helper.js`: Replace it with `MagicMirror²`.
+3. Recommendation: Found 'axios' in file `README.md`: Replace it with built-in fetch.
+4. Typo: Found 'Magic Mirror' in file `node_helper.js`: Replace it with `MagicMirror²`.
+5. Recommendation: Found 'axios' in file `node_helper.js`: Replace it with built-in fetch.
 
 ## [MMM-HTMLSnippet by ulrichwisser](https://github.com/ulrichwisser/MMM-HTMLSnippet)
 
@@ -2316,7 +2364,8 @@ Number of analyzed modules: 1057
 
 1. Issue: There is no `package.json`. We need this file to gather information about the module.
 2. Typo: Found 'Magic Mirror' in file `README.md`: Replace it with `MagicMirror²`.
-3. Warning: No LICENSE file.
+3. Recommendation: Found 'axios' in file `node_helper.js`: Replace it with built-in fetch.
+4. Warning: No LICENSE file.
 
 ## [MMM-iCal-ToDo by nixnuex](https://github.com/nixnuex/MMM-iCal-ToDo)
 
@@ -2342,9 +2391,16 @@ Number of analyzed modules: 1057
 
 1. Recommendation: Found 'uses: actions/checkout@v3' in file `mm2-idf.js.yml`: Replace it with v4.
 2. Typo: Found 'MagicMirror2' in file `README.md`: Replace it with `MagicMirror²`.
-3. Recommendation: Found 'XMLHttpRequest' in file `axios_v0.16.x.js`: Replace it with built-in fetch.
-4. Typo: Found 'Magic Mirror' in file `module.js`: Replace it with `MagicMirror²`.
-5. Typo: Found 'Magic Mirror' in file `helper.js`: Replace it with `MagicMirror²`.
+3. Recommendation: Found 'axios' in file `axios_v0.16.x.js`: Replace it with built-in fetch.
+4. Recommendation: Found 'XMLHttpRequest' in file `axios_v0.16.x.js`: Replace it with built-in fetch.
+5. Recommendation: Found 'axios' in file `package.json`: Replace it with built-in fetch.
+6. Typo: Found 'Magic Mirror' in file `module.js`: Replace it with `MagicMirror²`.
+7. Typo: Found 'Magic Mirror' in file `helper.js`: Replace it with `MagicMirror²`.
+8. Recommendation: Found 'axios' in file `helper_impl.js`: Replace it with built-in fetch.
+9. Recommendation: Found 'axios' in file `helper_impl.spec.js`: Replace it with built-in fetch.
+10. Recommendation: Found 'axios' in file `railwayRepository.js`: Replace it with built-in fetch.
+11. Recommendation: Found 'axios' in file `railwayRepository.spec.js`: Replace it with built-in fetch.
+12. Recommendation: Found 'axios' in file `yarn.lock`: Replace it with built-in fetch.
 
 ## [MMM-IdF-Transport by FalseIlyu](https://github.com/FalseIlyu/MMM-IdF-Transport)
 
@@ -2786,6 +2842,8 @@ Number of analyzed modules: 1057
 1. `package.json` issue: No repository field.
 2. Typo: Found 'Magic Mirror' in file `MMM-LesJoiesDuCode.js`: Replace it with `MagicMirror²`.
 3. Typo: Found 'Magic Mirror' in file `node_helper.js`: Replace it with `MagicMirror²`.
+4. Recommendation: Found 'axios' in file `node_helper.js`: Replace it with built-in fetch.
+5. Recommendation: Found 'axios' in file `package.json`: Replace it with built-in fetch.
 
 ## [MMM-Letterboxd by tristanburke](https://github.com/tristanburke/MMM-Letterboxd)
 
@@ -2825,10 +2883,13 @@ Number of analyzed modules: 1057
 
 ## [MMM-Live-Stream-TV by mcintyrehh](https://github.com/mcintyrehh/MMM-Live-Stream-TV)
 
-1. Typo: Found 'Magic Mirror' in file `README.md`: Replace it with `MagicMirror²`.
-2. Issue: Found directory `node_modules`. This shouldn't be uploaded. Add `node_modules/`to `.gitignore`.
-3. Typo: Found 'Magic Mirror' in file `package.json`: Replace it with `MagicMirror²`.
-4. Recommendation: Found 'XMLHttpRequest' in file `response.json`: Replace it with built-in fetch.
+1. Recommendation: Found 'axios' in file `MMM-Live-Stream-TV.js`: Replace it with built-in fetch.
+2. Typo: Found 'Magic Mirror' in file `README.md`: Replace it with `MagicMirror²`.
+3. Issue: Found directory `node_modules`. This shouldn't be uploaded. Add `node_modules/`to `.gitignore`.
+4. Typo: Found 'Magic Mirror' in file `package.json`: Replace it with `MagicMirror²`.
+5. Recommendation: Found 'axios' in file `package.json`: Replace it with built-in fetch.
+6. Recommendation: Found 'XMLHttpRequest' in file `response.json`: Replace it with built-in fetch.
+7. Recommendation: Found 'axios' in file `test-scrape.js`: Replace it with built-in fetch.
 
 ## [MMM-LKY-TIC by djey47](https://github.com/djey47/MMM-LKY-TIC)
 
@@ -2853,7 +2914,9 @@ Number of analyzed modules: 1057
 ## [MMM-LocalEvents by dwoolridge](https://github.com/dwoolridge/MMM-LocalEvents)
 
 1. Issue: An error occurred while getting information from 'package.json': Error: Invalid version: "1.0"
-2. Recommendation: Found 'XMLHttpRequest' in file `eventprovider.js`: Replace it with built-in fetch.
+2. Recommendation: Found 'axios' in file `ProviderDevelopment.md`: Replace it with built-in fetch.
+3. Recommendation: Found 'XMLHttpRequest' in file `eventprovider.js`: Replace it with built-in fetch.
+4. Recommendation: Found 'axios' in file `node_helper.js`: Replace it with built-in fetch.
 
 ## [MMM-LocalTemperature by glitch452](https://github.com/glitch452/MMM-LocalTemperature)
 
@@ -3232,8 +3295,10 @@ Number of analyzed modules: 1057
 3. Typo: Found 'Magic Mirror' in file `README.md`: Replace it with `MagicMirror²`.
 4. Typo: Found 'Magic Mirror' in file `mmm-amazon-photos.js`: Replace it with `MagicMirror²`.
 5. Typo: Found 'Magic Mirror' in file `node_helper.js`: Replace it with `MagicMirror²`.
-6. Typo: Found 'Magic Mirror' in file `package.json`: Replace it with `MagicMirror²`.
-7. Warning: No LICENSE file.
+6. Recommendation: Found 'axios' in file `node_helper.js`: Replace it with built-in fetch.
+7. Typo: Found 'Magic Mirror' in file `package.json`: Replace it with `MagicMirror²`.
+8. Recommendation: Found 'axios' in file `package.json`: Replace it with built-in fetch.
+9. Warning: No LICENSE file.
 
 ## [mmm-food2fork-recipes by spectroman](https://github.com/spectroman/mmm-food2fork-recipes)
 
@@ -3257,6 +3322,8 @@ Number of analyzed modules: 1057
 2. Recommendation: Module name doesn't follow the recommended pattern (it doesn't start with `MMM-`). Consider renaming your module.
 3. Typo: Found 'Magic Mirror' in file `README.md`: Replace it with `MagicMirror²`.
 4. Typo: Found 'Magic Mirror' in file `mmm-hue-lights.js`: Replace it with `MagicMirror²`.
+5. Recommendation: Found 'axios' in file `node_helper.js`: Replace it with built-in fetch.
+6. Recommendation: Found 'axios' in file `package.json`: Replace it with built-in fetch.
 
 ## [mmm-miami-transit by istvanfedak](https://github.com/istvanfedak/mmm-miami-transit)
 
@@ -3287,6 +3354,8 @@ Number of analyzed modules: 1057
 1. Recommendation: Module name doesn't follow the recommended pattern (it doesn't start with `MMM-`). Consider renaming your module.
 2. Typo: Found 'Magic Mirror' in file `README.md`: Replace it with `MagicMirror²`.
 3. Typo: Found 'Magic Mirror' in file `mmm-nest-status.js`: Replace it with `MagicMirror²`.
+4. Recommendation: Found 'axios' in file `node_helper.js`: Replace it with built-in fetch.
+5. Recommendation: Found 'axios' in file `package.json`: Replace it with built-in fetch.
 
 ## [mmm-nordic-electrical-spot-prices by cSharpBastard](https://github.com/cSharpBastard/mmm-nordic-electrical-spot-prices)
 
@@ -3654,6 +3723,9 @@ Number of analyzed modules: 1057
 
 1. Typo: Found 'Magic Mirror' in file `MMM-MyScoreboard.js`: Replace it with `MagicMirror²`.
 2. Typo: Found 'MagicMirror2' in file `package.json`: Replace it with `MagicMirror²`.
+3. Recommendation: Found 'axios' in file `package.json`: Replace it with built-in fetch.
+4. Recommendation: Found 'axios' in file `ESPN.js`: Replace it with built-in fetch.
+5. Recommendation: Found 'axios' in file `SNET.js`: Replace it with built-in fetch.
 
 ## [MMM-MySenseHat by framboise-pi](https://github.com/framboise-pi/MMM-MySenseHat)
 
@@ -3809,7 +3881,10 @@ Number of analyzed modules: 1057
 ## [MMM-NCTtimes by dnmmrdr1](https://gitlab.com/dnmmrdr1/MMM-NCTtimes)
 
 1. Typo: Found 'Magic Mirror' in file `README.md`: Replace it with `MagicMirror²`.
-2. Typo: Found 'Magic Mirror' in file `package.json`: Replace it with `MagicMirror²`.
+2. Recommendation: Found 'axios' in file `README.md`: Replace it with built-in fetch.
+3. Recommendation: Found 'axios' in file `node_helper.js`: Replace it with built-in fetch.
+4. Typo: Found 'Magic Mirror' in file `package.json`: Replace it with `MagicMirror²`.
+5. Recommendation: Found 'axios' in file `package.json`: Replace it with built-in fetch.
 
 ## [MMM-NearCompliments by semox](https://github.com/semox/MMM-NearCompliments)
 
@@ -3995,8 +4070,13 @@ Number of analyzed modules: 1057
 
 1. `package.json` issue: No description
 2. Issue: No image found.
-3. Recommendation: Found 'XMLHttpRequest' in file `MMM-NiceHash.js`: Replace it with built-in fetch.
-4. Warning: No LICENSE file.
+3. Recommendation: Found 'axios' in file `MMM-NiceHash.js`: Replace it with built-in fetch.
+4. Recommendation: Found 'XMLHttpRequest' in file `MMM-NiceHash.js`: Replace it with built-in fetch.
+5. Recommendation: Found 'axios' in file `node_helper.js`: Replace it with built-in fetch.
+6. Recommendation: Found 'axios' in file `package.json`: Replace it with built-in fetch.
+7. Recommendation: Found 'axios' in file `conversions.ts`: Replace it with built-in fetch.
+8. Recommendation: Found 'axios' in file `nicehash.ts`: Replace it with built-in fetch.
+9. Warning: No LICENSE file.
 
 ## [MMM-Nightscout by bureus](https://github.com/bureus/MMM-Nightscout)
 
@@ -4033,7 +4113,10 @@ Number of analyzed modules: 1057
 
 ## [MMM-NLDepartureTimes by Travelbacon](https://github.com/Travelbacon/MMM-NLDepartureTimes)
 
-1. Typo: Found 'Magic Mirror' in file `package.json`: Replace it with `MagicMirror²`.
+1. Recommendation: Found 'axios' in file `README.md`: Replace it with built-in fetch.
+2. Recommendation: Found 'axios' in file `node_helper.js`: Replace it with built-in fetch.
+3. Typo: Found 'Magic Mirror' in file `package.json`: Replace it with `MagicMirror²`.
+4. Recommendation: Found 'axios' in file `package.json`: Replace it with built-in fetch.
 
 ## [MMM-NMBS-Connection by Jan-Bart](https://github.com/Jan-Bart/MMM-NMBS-Connection)
 
@@ -4186,12 +4269,19 @@ Number of analyzed modules: 1057
 3. Deprecated: Found 'require('request')' in file `node_helper.js`: Replace it with built-in fetch.
 4. Warning: No LICENSE file.
 
+## [MMM-OneCallWeather by KristjanESPERANTO](https://github.com/KristjanESPERANTO/MMM-OneCallWeather)
+
+1. Recommendation: Found 'axios' in file `node_helper.js`: Replace it with built-in fetch.
+2. Recommendation: Found 'axios' in file `package.json`: Replace it with built-in fetch.
+
 ## [MMM-OneTouchReveal by Canonip](https://github.com/Canonip/MMM-OneTouchReveal)
 
 1. `package.json` issue: No repository field.
 2. Typo: Found 'Magic Mirror' in file `MMM-OneTouchReveal.js`: Replace it with `MagicMirror²`.
 3. Typo: Found 'Magic Mirror' in file `node_helper.js`: Replace it with `MagicMirror²`.
 4. Deprecated: Found 'require('request')' in file `node_helper.js`: Replace it with built-in fetch.
+5. Recommendation: Found 'axios' in file `node_helper.js`: Replace it with built-in fetch.
+6. Recommendation: Found 'axios' in file `package.json`: Replace it with built-in fetch.
 
 ## [MMM-OneTracker by seeshaughnessy](https://github.com/seeshaughnessy/MMM-OneTracker)
 
@@ -4631,8 +4721,11 @@ Number of analyzed modules: 1057
 ## [MMM-PoemOfTheDay by Steven-Gassert](https://github.com/Steven-Gassert/MMM-PoemOfTheDay)
 
 1. Typo: Found 'Magic Mirror' in file `README.md`: Replace it with `MagicMirror²`.
-2. Typo: Found 'Magic Mirror' in file `package.json`: Replace it with `MagicMirror²`.
-3. Warning: No LICENSE file.
+2. Recommendation: Found 'axios' in file `node_helper.test.js`: Replace it with built-in fetch.
+3. Recommendation: Found 'axios' in file `node_helper.js`: Replace it with built-in fetch.
+4. Typo: Found 'Magic Mirror' in file `package.json`: Replace it with `MagicMirror²`.
+5. Recommendation: Found 'axios' in file `package.json`: Replace it with built-in fetch.
+6. Warning: No LICENSE file.
 
 ## [MMM-PokemonGOEvents by bigfoott](https://github.com/bigfoott/MMM-PokemonGOEvents)
 
@@ -4704,7 +4797,9 @@ Number of analyzed modules: 1057
 4. Typo: Found 'Magic Mirror' in file `node_helper.js`: Replace it with `MagicMirror²`.
 5. Recommendation: Found 'node-fetch' in file `node_helper.js`: Replace it with built-in fetch.
 6. Recommendation: Found 'node-fetch' in file `package.json`: Replace it with built-in fetch.
-7. Recommendation: Found 'require("https")' in file `powerwall.js`: Replace it with built-in fetch.
+7. Recommendation: Found 'axios' in file `package.json`: Replace it with built-in fetch.
+8. Recommendation: Found 'require("https")' in file `powerwall.js`: Replace it with built-in fetch.
+9. Recommendation: Found 'axios' in file `powerwall.js`: Replace it with built-in fetch.
 
 ## [MMM-PrayerTime by slametps](https://github.com/slametps/MMM-PrayerTime)
 
@@ -4822,8 +4917,10 @@ Number of analyzed modules: 1057
 ## [MMM-quote-of-the-day by Sispheor](https://github.com/Sispheor/MMM-quote-of-the-day)
 
 1. Typo: Found 'Magic Mirror' in file `README.md`: Replace it with `MagicMirror²`.
-2. Typo: Found 'Magic Mirror' in file `package.json`: Replace it with `MagicMirror²`.
-3. Warning: No LICENSE file.
+2. Recommendation: Found 'axios' in file `node_helper.js`: Replace it with built-in fetch.
+3. Typo: Found 'Magic Mirror' in file `package.json`: Replace it with `MagicMirror²`.
+4. Recommendation: Found 'axios' in file `package.json`: Replace it with built-in fetch.
+5. Warning: No LICENSE file.
 
 ## [MMM-RaiderIO by jwcnewton](https://github.com/jwcnewton/MMM-RaiderIO)
 
@@ -4853,7 +4950,10 @@ Number of analyzed modules: 1057
 
 1. Typo: Found 'Magic Mirror' in file `MMM-rainfc.js`: Replace it with `MagicMirror²`.
 2. Typo: Found 'Magic Mirror' in file `README.md`: Replace it with `MagicMirror²`.
-3. Typo: Found 'Magic Mirror' in file `node_helper.js`: Replace it with `MagicMirror²`.
+3. Recommendation: Found 'axios' in file `README.md`: Replace it with built-in fetch.
+4. Typo: Found 'Magic Mirror' in file `node_helper.js`: Replace it with `MagicMirror²`.
+5. Recommendation: Found 'axios' in file `node_helper.js`: Replace it with built-in fetch.
+6. Recommendation: Found 'axios' in file `package.json`: Replace it with built-in fetch.
 
 ## [MMM-RainForecast by jupadin](https://github.com/jupadin/MMM-RainForecast)
 
@@ -4869,6 +4969,8 @@ Number of analyzed modules: 1057
 
 1. Typo: Found 'Magic Mirror' in file `MMM-RainForecast-FR.js`: Replace it with `MagicMirror²`.
 2. Typo: Found 'Magic Mirror' in file `node_helper.js`: Replace it with `MagicMirror²`.
+3. Recommendation: Found 'axios' in file `node_helper.js`: Replace it with built-in fetch.
+4. Recommendation: Found 'axios' in file `package.json`: Replace it with built-in fetch.
 
 ## [random_quotes by KirAsh4](https://github.com/KirAsh4/random_quotes)
 
@@ -5022,6 +5124,11 @@ Number of analyzed modules: 1057
 3. Typo: Found 'Magic Mirror' in file `node_helper.js`: Replace it with `MagicMirror²`.
 4. Deprecated: Found 'require('request')' in file `node_helper.js`: Replace it with built-in fetch.
 
+## [MMM-Rijks by 73cirdan](https://github.com/73cirdan/MMM-Rijks)
+
+1. Recommendation: Found 'axios' in file `node_helper.js`: Replace it with built-in fetch.
+2. Recommendation: Found 'axios' in file `package.json`: Replace it with built-in fetch.
+
 ## [MMM-Ring by DustinBryant](https://github.com/DustinBryant/MMM-Ring)
 
 1. Issue: No image found.
@@ -5083,8 +5190,10 @@ Number of analyzed modules: 1057
 1. Typo: Found 'Magic Mirror' in file `MMM-RocketLeagueZ.js`: Replace it with `MagicMirror²`.
 2. Typo: Found 'MagicMirror2' in file `Readme.md`: Replace it with `MagicMirror²`.
 3. Typo: Found 'Magic Mirror' in file `node_helper.js`: Replace it with `MagicMirror²`.
-4. Typo: Found 'MagicMirror2' in file `package.json`: Replace it with `MagicMirror²`.
-5. Warning: No LICENSE file.
+4. Recommendation: Found 'axios' in file `node_helper.js`: Replace it with built-in fetch.
+5. Typo: Found 'MagicMirror2' in file `package.json`: Replace it with `MagicMirror²`.
+6. Recommendation: Found 'axios' in file `package.json`: Replace it with built-in fetch.
+7. Warning: No LICENSE file.
 
 ## [MMM-Roomba980 by relm923](https://github.com/relm923/MMM-Roomba980)
 
@@ -5317,7 +5426,8 @@ Number of analyzed modules: 1057
 
 1. `package.json` issue: No repository field.
 2. Typo: Found 'Magic Mirror' in file `README.md`: Replace it with `MagicMirror²`.
-3. Typo: Found 'Magic Mirror' in file `package.json`: Replace it with `MagicMirror²`.
+3. Recommendation: Found 'axios' in file `node_helper.js`: Replace it with built-in fetch.
+4. Typo: Found 'Magic Mirror' in file `package.json`: Replace it with `MagicMirror²`.
 
 ## [MMM-ShellyPlus-HT by IoT-Coder](https://github.com/IoT-Coder/MMM-ShellyPlus-HT)
 
@@ -5376,7 +5486,9 @@ Number of analyzed modules: 1057
 1. Issue: No image found.
 2. Typo: Found 'Magic Mirror' in file `MMM-Skola24.js`: Replace it with `MagicMirror²`.
 3. Typo: Found 'Magic Mirror' in file `node_helper.js`: Replace it with `MagicMirror²`.
-4. Typo: Found 'MagicMirror2' in file `package.json`: Replace it with `MagicMirror²`.
+4. Recommendation: Found 'axios' in file `node_helper.js`: Replace it with built-in fetch.
+5. Typo: Found 'MagicMirror2' in file `package.json`: Replace it with `MagicMirror²`.
+6. Recommendation: Found 'axios' in file `package.json`: Replace it with built-in fetch.
 
 ## [MMM-Skolmaten by retroflex](https://github.com/retroflex/MMM-Skolmaten)
 
@@ -5596,6 +5708,11 @@ Number of analyzed modules: 1057
 3. `package.json` issue: No license field.
 4. Deprecated: Found 'require('request')' in file `node_helper.js`: Replace it with built-in fetch.
 5. Warning: No LICENSE file.
+
+## [MMM-Spotify by skuethe](https://github.com/skuethe/MMM-Spotify)
+
+1. Recommendation: Found 'axios' in file `Spotify.js`: Replace it with built-in fetch.
+2. Recommendation: Found 'axios' in file `package.json`: Replace it with built-in fetch.
 
 ## [MMM-SpotifyConnectUI by CatoAntonsen](https://github.com/CatoAntonsen/MMM-SpotifyConnectUI)
 
@@ -5881,26 +5998,38 @@ Number of analyzed modules: 1057
 ## [MMM-Timetagger by tderflinger](https://github.com/tderflinger/MMM-Timetagger)
 
 1. Typo: Found 'Magic Mirror' in file `README.md`: Replace it with `MagicMirror²`.
-2. Typo: Found 'Magic Mirror' in file `README_es.md`: Replace it with `MagicMirror²`.
-3. Typo: Found 'Magic Mirror' in file `package.json`: Replace it with `MagicMirror²`.
-4. Warning: No LICENSE file.
+2. Recommendation: Found 'axios' in file `README.md`: Replace it with built-in fetch.
+3. Typo: Found 'Magic Mirror' in file `README_es.md`: Replace it with `MagicMirror²`.
+4. Recommendation: Found 'axios' in file `README_es.md`: Replace it with built-in fetch.
+5. Recommendation: Found 'axios' in file `node_helper.js`: Replace it with built-in fetch.
+6. Typo: Found 'Magic Mirror' in file `package.json`: Replace it with `MagicMirror²`.
+7. Recommendation: Found 'axios' in file `package.json`: Replace it with built-in fetch.
+8. Warning: No LICENSE file.
 
 ## [MMM-TimeTreeEvent by sabo10o29](https://github.com/sabo10o29/MMM-TimeTreeEvent)
 
 1. Typo: Found 'Magic Mirror' in file `MMM-TimeTreeEvent.js`: Replace it with `MagicMirror²`.
-2. Typo: Found 'Magic Mirror' in file `node_helper.js`: Replace it with `MagicMirror²`.
-3. Warning: No LICENSE file.
+2. Recommendation: Found 'axios' in file `README.md`: Replace it with built-in fetch.
+3. Typo: Found 'Magic Mirror' in file `node_helper.js`: Replace it with `MagicMirror²`.
+4. Recommendation: Found 'axios' in file `node_helper.js`: Replace it with built-in fetch.
+5. Recommendation: Found 'axios' in file `package.json`: Replace it with built-in fetch.
+6. Warning: No LICENSE file.
 
 ## [MMM-TitanSchoolMealMenu by evanhsu](https://github.com/evanhsu/MMM-TitanSchoolMealMenu)
 
 1. `package.json` issue: No repository field.
-2. Warning: No LICENSE file.
+2. Recommendation: Found 'axios' in file `TitanSchoolsClient.js`: Replace it with built-in fetch.
+3. Recommendation: Found 'axios' in file `package.json`: Replace it with built-in fetch.
+4. Recommendation: Found 'axios' in file `api-response-shape.test.js`: Replace it with built-in fetch.
+5. Warning: No LICENSE file.
 
 ## [MMM-TMB by jaumebosch](https://github.com/jaumebosch/MMM-TMB)
 
 1. Typo: Found 'Magic Mirror' in file `MMM-TMB.css`: Replace it with `MagicMirror²`.
 2. Typo: Found 'Magic Mirror' in file `MMM-TMB.js`: Replace it with `MagicMirror²`.
 3. Typo: Found 'Magic Mirror' in file `node_helper.js`: Replace it with `MagicMirror²`.
+4. Recommendation: Found 'axios' in file `node_helper.js`: Replace it with built-in fetch.
+5. Recommendation: Found 'axios' in file `package.json`: Replace it with built-in fetch.
 
 ## [MMM-tns by JulienPeloton](https://github.com/JulienPeloton/MMM-tns)
 
@@ -5926,8 +6055,9 @@ Number of analyzed modules: 1057
 1. Issue: There is no `package.json`. We need this file to gather information about the module.
 2. Typo: Found 'Magic Mirror' in file `README.md`: Replace it with `MagicMirror²`.
 3. Typo: Found 'Magic Mirror' in file `SECURITY.md`: Replace it with `MagicMirror²`.
-4. Recommendation: Found 'XMLHttpRequest' in file `maps-web.min.js`: Replace it with built-in fetch.
-5. Typo: Found 'Magic Mirror' in file `tomtomv6.html`: Replace it with `MagicMirror²`.
+4. Recommendation: Found 'axios' in file `LICENSE.txt`: Replace it with built-in fetch.
+5. Recommendation: Found 'XMLHttpRequest' in file `maps-web.min.js`: Replace it with built-in fetch.
+6. Typo: Found 'Magic Mirror' in file `tomtomv6.html`: Replace it with `MagicMirror²`.
 
 ## [MMM-Toon by MichMich](https://github.com/MichMich/MMM-Toon)
 
@@ -5989,6 +6119,9 @@ Number of analyzed modules: 1057
 1. `package.json` issue: No description
 2. `package.json` issue: No repository field.
 3. Issue: No image found.
+4. Recommendation: Found 'axios' in file `node_helper.js`: Replace it with built-in fetch.
+5. Recommendation: Found 'axios' in file `package.json`: Replace it with built-in fetch.
+6. Recommendation: Found 'axios' in file `pnpm-lock.yaml`: Replace it with built-in fetch.
 
 ## [MMM-transitfeed by bnitkin](https://github.com/bnitkin/MMM-transitfeed)
 
@@ -6024,6 +6157,7 @@ Number of analyzed modules: 1057
 1. Issue: There is no `package.json`. We need this file to gather information about the module.
 2. Typo: Found 'Magic Mirror' in file `MMM-TransporteCABA.js`: Replace it with `MagicMirror²`.
 3. Typo: Found 'Magic Mirror' in file `node_helper.js`: Replace it with `MagicMirror²`.
+4. Recommendation: Found 'axios' in file `node_helper.js`: Replace it with built-in fetch.
 
 ## [MMM-Trello by Jopyth](https://github.com/Jopyth/MMM-Trello)
 
@@ -6064,11 +6198,16 @@ Number of analyzed modules: 1057
 ## [MMM-TuyaSL by slametps](https://github.com/slametps/MMM-TuyaSL)
 
 1. Typo: Found 'Magic Mirror' in file `node_helper.js`: Replace it with `MagicMirror²`.
-2. Warning: No LICENSE file.
+2. Recommendation: Found 'axios' in file `node_helper.js`: Replace it with built-in fetch.
+3. Recommendation: Found 'axios' in file `package.json`: Replace it with built-in fetch.
+4. Warning: No LICENSE file.
 
 ## [MMM-TUZSAZaragoza by rafagale](https://github.com/rafagale/MMM-TUZSAZaragoza)
 
 1. Typo: Found 'MagicMirror2' in file `README.md`: Replace it with `MagicMirror²`.
+2. Recommendation: Found 'axios' in file `README.md`: Replace it with built-in fetch.
+3. Recommendation: Found 'axios' in file `node_helper.js`: Replace it with built-in fetch.
+4. Recommendation: Found 'axios' in file `package.json`: Replace it with built-in fetch.
 
 ## [MMM-TweetsByTimelineOrList by AdamMoses-GitHub](https://github.com/AdamMoses-GitHub/MMM-TweetsByTimelineOrList)
 
@@ -6169,6 +6308,8 @@ Number of analyzed modules: 1057
 
 1. Typo: Found 'Magic Mirror' in file `MMM-uptimekuma.js`: Replace it with `MagicMirror²`.
 2. Typo: Found 'Magic Mirror' in file `node_helper.js`: Replace it with `MagicMirror²`.
+3. Recommendation: Found 'axios' in file `node_helper.js`: Replace it with built-in fetch.
+4. Recommendation: Found 'axios' in file `package.json`: Replace it with built-in fetch.
 
 ## [MMM-uptimerobot by mrVragec](https://github.com/mrVragec/MMM-uptimerobot)
 
@@ -6253,7 +6394,9 @@ Number of analyzed modules: 1057
 
 1. Typo: Found 'Magic Mirror' in file `MMM-VigilanceMeteoFrance.js`: Replace it with `MagicMirror²`.
 2. Typo: Found 'Magic Mirror' in file `node_helper.js`: Replace it with `MagicMirror²`.
-3. Typo: Found 'Magic Mirror' in file `package.json`: Replace it with `MagicMirror²`.
+3. Recommendation: Found 'axios' in file `node_helper.js`: Replace it with built-in fetch.
+4. Typo: Found 'Magic Mirror' in file `package.json`: Replace it with `MagicMirror²`.
+5. Recommendation: Found 'axios' in file `package.json`: Replace it with built-in fetch.
 
 ## [MMM-Vindsiden by erikmohn](https://github.com/erikmohn/MMM-Vindsiden)
 
@@ -6329,6 +6472,7 @@ Number of analyzed modules: 1057
 1. Typo: Found 'Magic Mirror' in file `MMM-vvsDeparture.js`: Replace it with `MagicMirror²`.
 2. Typo: Found 'MagicMirror2' in file `README.md`: Replace it with `MagicMirror²`.
 3. Typo: Found 'Magic Mirror' in file `node_helper.js`: Replace it with `MagicMirror²`.
+4. Recommendation: Found 'axios' in file `node_helper.js`: Replace it with built-in fetch.
 
 ## [MMM-vvsDeparture by niklaskappler](https://github.com/niklaskappler/MMM-vvsDeparture)
 
@@ -6486,6 +6630,8 @@ Number of analyzed modules: 1057
 ## [MMM-WestBerksBinDay by hdurdle](https://github.com/hdurdle/MMM-WestBerksBinDay)
 
 1. Typo: Found 'Magic Mirror' in file `README.md`: Replace it with `MagicMirror²`.
+2. Recommendation: Found 'axios' in file `node_helper.js`: Replace it with built-in fetch.
+3. Recommendation: Found 'axios' in file `package.json`: Replace it with built-in fetch.
 
 ## [MMM-WH2600 by st3v0rr](https://github.com/st3v0rr/MMM-WH2600)
 
@@ -6499,6 +6645,8 @@ Number of analyzed modules: 1057
 1. `package.json` issue: No repository field.
 2. Issue: No image found.
 3. Typo: Found 'Magic Mirror' in file `MMM-WhisperGPT.js`: Replace it with `MagicMirror²`.
+4. Recommendation: Found 'axios' in file `node_helper.js`: Replace it with built-in fetch.
+5. Recommendation: Found 'axios' in file `package.json`: Replace it with built-in fetch.
 
 ## [MMM-Widget by ulrichwisser](https://github.com/ulrichwisser/MMM-Widget)
 
@@ -6706,7 +6854,8 @@ Number of analyzed modules: 1057
 1. Issue: There is no `package.json`. We need this file to gather information about the module.
 2. Recommendation: Found 'XMLHttpRequest' in file `MMM-ZAPTEC.js`: Replace it with built-in fetch.
 3. Typo: Found 'Magic Mirror' in file `README.md`: Replace it with `MagicMirror²`.
-4. Warning: No LICENSE file.
+4. Recommendation: Found 'axios' in file `node_helper.js`: Replace it with built-in fetch.
+5. Warning: No LICENSE file.
 
 ## [MMM-Zmanim by shmulyeng](https://github.com/shmulyeng/MMM-Zmanim)
 

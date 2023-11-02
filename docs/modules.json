@@ -51,7 +51,9 @@
       "Typo: Found 'Magic Mirror' in file `MMM-2Day-NOAA-Forecast.js`: Replace it with `MagicMirror\u00b2`.",
       "Typo: Found 'Magic Mirror' in file `README.md`: Replace it with `MagicMirror\u00b2`.",
       "Typo: Found 'Magic Mirror' in file `node_helper.js`: Replace it with `MagicMirror\u00b2`.",
-      "Typo: Found 'MagicMirror2' in file `package.json`: Replace it with `MagicMirror\u00b2`."
+      "Recommendation: Found 'axios' in file `node_helper.js`: Replace it with built-in fetch.",
+      "Typo: Found 'MagicMirror2' in file `package.json`: Replace it with `MagicMirror\u00b2`.",
+      "Recommendation: Found 'axios' in file `package.json`: Replace it with built-in fetch."
     ],
     "tags": [
       "weather",
@@ -104,7 +106,8 @@
     "issues": [
       "Issue: No image found.",
       "Typo: Found 'Magic Mirror' in file `MMM-AC-aseag.js`: Replace it with `MagicMirror\u00b2`.",
-      "Typo: Found 'Magic Mirror' in file `node_helper.js`: Replace it with `MagicMirror\u00b2`."
+      "Typo: Found 'Magic Mirror' in file `node_helper.js`: Replace it with `MagicMirror\u00b2`.",
+      "Recommendation: Found 'axios' in file `node_helper.js`: Replace it with built-in fetch."
     ],
     "license": "MIT",
     "last_commit": "2022-07-14"
@@ -1429,7 +1432,9 @@
     "description": "Display a Bring! shopping list in a flexible view and touch support",
     "issues": [
       "Recommendation: Found 'require(\"https\")' in file `BringClient.js`: Replace it with built-in fetch.",
-      "Typo: Found 'Magic Mirror' in file `styles.css`: Replace it with `MagicMirror\u00b2`."
+      "Recommendation: Found 'axios' in file `BringClient.js`: Replace it with built-in fetch.",
+      "Typo: Found 'Magic Mirror' in file `styles.css`: Replace it with `MagicMirror\u00b2`.",
+      "Recommendation: Found 'axios' in file `package.json`: Replace it with built-in fetch."
     ],
     "tags": [
       "bring"
@@ -1551,7 +1556,10 @@
     "issues": [
       "Typo: Found 'Magic Mirror' in file `MMM-bustimes.js`: Replace it with `MagicMirror\u00b2`.",
       "Typo: Found 'Magic Mirror' in file `README.md`: Replace it with `MagicMirror\u00b2`.",
-      "Typo: Found 'Magic Mirror' in file `node_helper.js`: Replace it with `MagicMirror\u00b2`."
+      "Recommendation: Found 'axios' in file `README.md`: Replace it with built-in fetch.",
+      "Typo: Found 'Magic Mirror' in file `node_helper.js`: Replace it with `MagicMirror\u00b2`.",
+      "Recommendation: Found 'axios' in file `node_helper.js`: Replace it with built-in fetch.",
+      "Recommendation: Found 'axios' in file `package.json`: Replace it with built-in fetch."
     ],
     "tags": [
       "bus",
@@ -1609,7 +1617,9 @@
     "maintainerURL": "https://github.com/JonasTriki",
     "description": "Display the availability of the city bikes around in Norway from A to B.",
     "issues": [
-      "Issue: There is no `package.json`. We need this file to gather information about the module."
+      "Issue: There is no `package.json`. We need this file to gather information about the module.",
+      "Recommendation: Found 'axios' in file `urbancity.js`: Replace it with built-in fetch.",
+      "Recommendation: Found 'axios' in file `directionsApi.js`: Replace it with built-in fetch."
     ],
     "last_commit": "2022-01-30"
   },
@@ -3236,7 +3246,9 @@
     "issues": [
       "`package.json` issue: No repository field.",
       "Typo: Found 'Magic Mirror' in file `README.md`: Replace it with `MagicMirror\u00b2`.",
-      "Typo: Found 'MagicMirror2' in file `package.json`: Replace it with `MagicMirror\u00b2`."
+      "Recommendation: Found 'axios' in file `node_helper.js`: Replace it with built-in fetch.",
+      "Typo: Found 'MagicMirror2' in file `package.json`: Replace it with `MagicMirror\u00b2`.",
+      "Recommendation: Found 'axios' in file `package.json`: Replace it with built-in fetch."
     ],
     "license": "MIT",
     "image": "wait-times-demo.jpg",
@@ -3333,7 +3345,10 @@
     "description": "Show photos from <code>Dropbox</code> as wallpaper",
     "issues": [
       "Typo: Found 'Magic Mirror' in file `MMM-DropboxWallpaper.js`: Replace it with `MagicMirror\u00b2`.",
+      "Recommendation: Found 'axios' in file `README.md`: Replace it with built-in fetch.",
       "Deprecated: Found 'require('request')' in file `node_helper.js`: Replace it with built-in fetch.",
+      "Recommendation: Found 'axios' in file `node_helper.js`: Replace it with built-in fetch.",
+      "Recommendation: Found 'axios' in file `package.json`: Replace it with built-in fetch.",
       "Warning: No LICENSE file."
     ],
     "license": "MIT",
@@ -3367,7 +3382,9 @@
     "maintainer": "skastenholz",
     "maintainerURL": "",
     "description": "Station monitor for the Dresden/Germany local transport (DVB) bus, tram and train system.",
-    "issues": [],
+    "issues": [
+      "Recommendation: Found 'axios' in file `package.json`: Replace it with built-in fetch."
+    ],
     "tags": [
       "dvb",
       "vvo",
@@ -3572,7 +3589,9 @@
     "description": "Graphical and textual informations from <a target=\"_blank\" href=\"https://www.monecowatt.fr\">Ecowatt</a>.",
     "issues": [
       "Typo: Found 'Magic Mirror' in file `MMM-Ecowatt.js`: Replace it with `MagicMirror\u00b2`.",
-      "Typo: Found 'Magic Mirror' in file `node_helper.js`: Replace it with `MagicMirror\u00b2`."
+      "Typo: Found 'Magic Mirror' in file `node_helper.js`: Replace it with `MagicMirror\u00b2`.",
+      "Recommendation: Found 'axios' in file `node_helper.js`: Replace it with built-in fetch.",
+      "Recommendation: Found 'axios' in file `package.json`: Replace it with built-in fetch."
     ],
     "tags": [
       "ecowatt",
@@ -3805,7 +3824,9 @@
     "issues": [
       "`package.json` issue: No description",
       "`package.json` issue: No repository field.",
-      "Issue: No image found."
+      "Issue: No image found.",
+      "Recommendation: Found 'axios' in file `node_helper.js`: Replace it with built-in fetch.",
+      "Recommendation: Found 'axios' in file `package.json`: Replace it with built-in fetch."
     ],
     "tags": [],
     "license": "ISC",
@@ -3892,7 +3913,8 @@
       "Issue: There is no `package.json`. We need this file to gather information about the module.",
       "Typo: Found 'Magic Mirror' in file `MMM-EveryNews.js`: Replace it with `MagicMirror\u00b2`.",
       "Typo: Found 'Magic Mirror' in file `node_helper.js`: Replace it with `MagicMirror\u00b2`.",
-      "Deprecated: Found 'require('request')' in file `node_helper.js`: Replace it with built-in fetch."
+      "Deprecated: Found 'require('request')' in file `node_helper.js`: Replace it with built-in fetch.",
+      "Recommendation: Found 'axios' in file `sources.json`: Replace it with built-in fetch."
     ],
     "last_commit": "2020-02-07"
   },
@@ -4124,7 +4146,9 @@
       "Typo: Found 'Magic Mirror' in file `README.md`: Replace it with `MagicMirror\u00b2`.",
       "Typo: Found 'Magic Mirror' in file `node_helper.js`: Replace it with `MagicMirror\u00b2`.",
       "Typo: Found 'Magic Mirror' in file `package.json`: Replace it with `MagicMirror\u00b2`.",
+      "Recommendation: Found 'axios' in file `package.json`: Replace it with built-in fetch.",
       "Typo: Found 'Magic Mirror' in file `sheetFetcher.js`: Replace it with `MagicMirror\u00b2`.",
+      "Recommendation: Found 'axios' in file `sheetFetcher.js`: Replace it with built-in fetch.",
       "Typo: Found 'Magic Mirror' in file `MMM-FF-cht-sh.css`: Replace it with `MagicMirror\u00b2`.",
       "Typo: Found 'Magic Mirror' in file `MMM-FF-cht-sh.scss`: Replace it with `MagicMirror\u00b2`."
     ],
@@ -4213,8 +4237,10 @@
       "Typo: Found 'Magic Mirror' in file `MMM-FF-multigeiger.js`: Replace it with `MagicMirror\u00b2`.",
       "Typo: Found 'Magic Mirror' in file `README.md`: Replace it with `MagicMirror\u00b2`.",
       "Typo: Found 'Magic Mirror' in file `dataFetcher.js`: Replace it with `MagicMirror\u00b2`.",
+      "Recommendation: Found 'axios' in file `dataFetcher.js`: Replace it with built-in fetch.",
       "Typo: Found 'Magic Mirror' in file `node_helper.js`: Replace it with `MagicMirror\u00b2`.",
       "Typo: Found 'Magic Mirror' in file `package.json`: Replace it with `MagicMirror\u00b2`.",
+      "Recommendation: Found 'axios' in file `package.json`: Replace it with built-in fetch.",
       "Typo: Found 'Magic Mirror' in file `MMM-FF-multigeiger-charts.scss`: Replace it with `MagicMirror\u00b2`.",
       "Typo: Found 'Magic Mirror' in file `MMM-FF-multigeiger-list-horizontal.css`: Replace it with `MagicMirror\u00b2`.",
       "Typo: Found 'Magic Mirror' in file `MMM-FF-multigeiger-list-horizontal.scss`: Replace it with `MagicMirror\u00b2`.",
@@ -4772,6 +4798,8 @@
     "description": "The module builds charts to your FR\u00d6LING pellet boiler based on data from the FR\u00d6LING Connect API. Inspiration and code base comes from <a target=\"_blank\" href=\"https://github.com/TA2k/ioBroker.froeling\">TA2k/ioBroker.froeling</a>.",
     "issues": [
       "Typo: Found 'Magic Mirror' in file `MMM-FroelingConnect.js`: Replace it with `MagicMirror\u00b2`.",
+      "Recommendation: Found 'axios' in file `node_helper.js`: Replace it with built-in fetch.",
+      "Recommendation: Found 'axios' in file `package.json`: Replace it with built-in fetch.",
       "Warning: No LICENSE file."
     ],
     "tags": [
@@ -5048,10 +5076,12 @@
     "description": "A module that displays your official USGA Ghin handicap.",
     "issues": [
       "Issue: No image found.",
+      "Recommendation: Found 'axios' in file `GHINApi.js`: Replace it with built-in fetch.",
       "Typo: Found 'Magic Mirror' in file `MMM-GHIN.js`: Replace it with `MagicMirror\u00b2`.",
       "Typo: Found 'Magic Mirror' in file `README.md`: Replace it with `MagicMirror\u00b2`.",
       "Typo: Found 'Magic Mirror' in file `node_helper.js`: Replace it with `MagicMirror\u00b2`.",
-      "Typo: Found 'MagicMirror2' in file `package.json`: Replace it with `MagicMirror\u00b2`."
+      "Typo: Found 'MagicMirror2' in file `package.json`: Replace it with `MagicMirror\u00b2`.",
+      "Recommendation: Found 'axios' in file `package.json`: Replace it with built-in fetch."
     ],
     "tags": [
       "ghin",
@@ -5082,6 +5112,8 @@
     "issues": [
       "`package.json` issue: No repository field.",
       "`package.json` issue: No license field.",
+      "Recommendation: Found 'axios' in file `node_helper.js`: Replace it with built-in fetch.",
+      "Recommendation: Found 'axios' in file `package.json`: Replace it with built-in fetch.",
       "Warning: No LICENSE file."
     ],
     "last_commit": "2023-01-07"
@@ -5186,7 +5218,13 @@
     "maintainerURL": "https://wiki.bugsounet.fr",
     "description": "MMM-GoogleAssistant is an real embedded Google assistant on MagicMirror\u00b2. [Maintained]",
     "issues": [
-      "Recommendation: Found 'uses: actions/checkout@v3' in file `dependency-review.yml`: Replace it with v4."
+      "Recommendation: Found 'uses: actions/checkout@v3' in file `dependency-review.yml`: Replace it with v4.",
+      "Recommendation: Found 'axios' in file `googleSearch.js`: Replace it with built-in fetch.",
+      "Recommendation: Found 'axios' in file `loadLibraries.js`: Replace it with built-in fetch.",
+      "Recommendation: Found 'axios' in file `delete.js`: Replace it with built-in fetch.",
+      "Recommendation: Found 'axios' in file `list.js`: Replace it with built-in fetch.",
+      "Recommendation: Found 'axios' in file `register.js`: Replace it with built-in fetch.",
+      "Recommendation: Found 'axios' in file `package.json`: Replace it with built-in fetch."
     ],
     "tags": [
       "google assistant",
@@ -5263,8 +5301,10 @@
       "Typo: Found 'Magic Mirror' in file `MMM-GoogleDocs-Notes.js`: Replace it with `MagicMirror\u00b2`.",
       "Typo: Found 'Magic Mirror' in file `README.md`: Replace it with `MagicMirror\u00b2`.",
       "Typo: Found 'Magic Mirror' in file `authorize.mjs`: Replace it with `MagicMirror\u00b2`.",
+      "Recommendation: Found 'axios' in file `authorize.mjs`: Replace it with built-in fetch.",
       "Typo: Found 'Magic Mirror' in file `node_helper.js`: Replace it with `MagicMirror\u00b2`.",
-      "Typo: Found 'Magic Mirror' in file `package.json`: Replace it with `MagicMirror\u00b2`."
+      "Typo: Found 'Magic Mirror' in file `package.json`: Replace it with `MagicMirror\u00b2`.",
+      "Recommendation: Found 'axios' in file `package.json`: Replace it with built-in fetch."
     ],
     "license": "MIT",
     "last_commit": "2023-09-26"
@@ -5354,9 +5394,11 @@
     "maintainerURL": "",
     "description": "image gallery or wallpaper with your Google Photos account",
     "issues": [
+      "Recommendation: Found 'axios' in file `GPhotos.js`: Replace it with built-in fetch.",
       "Deprecated: Found 'electron-rebuild' in file `README.md`: Replace it with `@electron/rebuild`",
       "Recommendation: Found 'require(\"https\")' in file `node_helper.js`: Replace it with built-in fetch.",
-      "Deprecated: Found 'electron-rebuild' in file `package.json`: Replace it with `@electron/rebuild`"
+      "Deprecated: Found 'electron-rebuild' in file `package.json`: Replace it with `@electron/rebuild`",
+      "Recommendation: Found 'axios' in file `package.json`: Replace it with built-in fetch."
     ],
     "license": "MIT",
     "image": "PublishAppScreen.jpg",
@@ -5784,8 +5826,10 @@
       "Issue: There is no `package.json`. We need this file to gather information about the module.",
       "Typo: Found 'Magic Mirror' in file `MMM-Hive.js`: Replace it with `MagicMirror\u00b2`.",
       "Typo: Found 'MagicMirror2' in file `README.md`: Replace it with `MagicMirror\u00b2`.",
+      "Recommendation: Found 'axios' in file `README.md`: Replace it with built-in fetch.",
       "Typo: Found 'Magic Mirror' in file `node_helper.js`: Replace it with `MagicMirror\u00b2`.",
-      "Deprecated: Found 'require('request')' in file `node_helper.js`: Replace it with built-in fetch."
+      "Deprecated: Found 'require('request')' in file `node_helper.js`: Replace it with built-in fetch.",
+      "Recommendation: Found 'axios' in file `index.js`: Replace it with built-in fetch."
     ],
     "last_commit": "2021-04-03"
   },
@@ -6060,7 +6104,9 @@
     "issues": [
       "Issue: There is no `package.json`. We need this file to gather information about the module.",
       "Typo: Found 'Magic Mirror' in file `MMM-HRS-PickupPlan.js`: Replace it with `MagicMirror\u00b2`.",
-      "Typo: Found 'Magic Mirror' in file `node_helper.js`: Replace it with `MagicMirror\u00b2`."
+      "Recommendation: Found 'axios' in file `README.md`: Replace it with built-in fetch.",
+      "Typo: Found 'Magic Mirror' in file `node_helper.js`: Replace it with `MagicMirror\u00b2`.",
+      "Recommendation: Found 'axios' in file `node_helper.js`: Replace it with built-in fetch."
     ],
     "last_commit": "2022-02-12"
   },
@@ -6202,6 +6248,7 @@
     "issues": [
       "Issue: There is no `package.json`. We need this file to gather information about the module.",
       "Typo: Found 'Magic Mirror' in file `README.md`: Replace it with `MagicMirror\u00b2`.",
+      "Recommendation: Found 'axios' in file `node_helper.js`: Replace it with built-in fetch.",
       "Warning: No LICENSE file."
     ],
     "last_commit": "2023-06-08"
@@ -6267,9 +6314,16 @@
     "issues": [
       "Recommendation: Found 'uses: actions/checkout@v3' in file `mm2-idf.js.yml`: Replace it with v4.",
       "Typo: Found 'MagicMirror2' in file `README.md`: Replace it with `MagicMirror\u00b2`.",
+      "Recommendation: Found 'axios' in file `axios_v0.16.x.js`: Replace it with built-in fetch.",
       "Recommendation: Found 'XMLHttpRequest' in file `axios_v0.16.x.js`: Replace it with built-in fetch.",
+      "Recommendation: Found 'axios' in file `package.json`: Replace it with built-in fetch.",
       "Typo: Found 'Magic Mirror' in file `module.js`: Replace it with `MagicMirror\u00b2`.",
-      "Typo: Found 'Magic Mirror' in file `helper.js`: Replace it with `MagicMirror\u00b2`."
+      "Typo: Found 'Magic Mirror' in file `helper.js`: Replace it with `MagicMirror\u00b2`.",
+      "Recommendation: Found 'axios' in file `helper_impl.js`: Replace it with built-in fetch.",
+      "Recommendation: Found 'axios' in file `helper_impl.spec.js`: Replace it with built-in fetch.",
+      "Recommendation: Found 'axios' in file `railwayRepository.js`: Replace it with built-in fetch.",
+      "Recommendation: Found 'axios' in file `railwayRepository.spec.js`: Replace it with built-in fetch.",
+      "Recommendation: Found 'axios' in file `yarn.lock`: Replace it with built-in fetch."
     ],
     "tags": [
       "localtransport",
@@ -7405,7 +7459,9 @@
     "issues": [
       "`package.json` issue: No repository field.",
       "Typo: Found 'Magic Mirror' in file `MMM-LesJoiesDuCode.js`: Replace it with `MagicMirror\u00b2`.",
-      "Typo: Found 'Magic Mirror' in file `node_helper.js`: Replace it with `MagicMirror\u00b2`."
+      "Typo: Found 'Magic Mirror' in file `node_helper.js`: Replace it with `MagicMirror\u00b2`.",
+      "Recommendation: Found 'axios' in file `node_helper.js`: Replace it with built-in fetch.",
+      "Recommendation: Found 'axios' in file `package.json`: Replace it with built-in fetch."
     ],
     "license": "MIT",
     "image": "images-demo.jpg",
@@ -7500,10 +7556,13 @@
     "maintainerURL": "https://github.com/mcintyrehh",
     "description": "Display HLS live feeds with Arduino powered channel changing!",
     "issues": [
+      "Recommendation: Found 'axios' in file `MMM-Live-Stream-TV.js`: Replace it with built-in fetch.",
       "Typo: Found 'Magic Mirror' in file `README.md`: Replace it with `MagicMirror\u00b2`.",
       "Issue: Found directory `node_modules`. This shouldn't be uploaded. Add `node_modules/`to `.gitignore`.",
       "Typo: Found 'Magic Mirror' in file `package.json`: Replace it with `MagicMirror\u00b2`.",
-      "Recommendation: Found 'XMLHttpRequest' in file `response.json`: Replace it with built-in fetch."
+      "Recommendation: Found 'axios' in file `package.json`: Replace it with built-in fetch.",
+      "Recommendation: Found 'XMLHttpRequest' in file `response.json`: Replace it with built-in fetch.",
+      "Recommendation: Found 'axios' in file `test-scrape.js`: Replace it with built-in fetch."
     ],
     "license": "ISC",
     "image": "Screenshots-Schematics-Potentiometer.jpg",
@@ -7560,7 +7619,9 @@
     "description": "Upcoming events in your city from G**gle. Could be an update to the \"Eventful API\". Modular so additional event providers can be added.",
     "issues": [
       "Issue: An error occurred while getting information from 'package.json': Error: Invalid version: \"1.0\"",
-      "Recommendation: Found 'XMLHttpRequest' in file `eventprovider.js`: Replace it with built-in fetch."
+      "Recommendation: Found 'axios' in file `ProviderDevelopment.md`: Replace it with built-in fetch.",
+      "Recommendation: Found 'XMLHttpRequest' in file `eventprovider.js`: Replace it with built-in fetch.",
+      "Recommendation: Found 'axios' in file `node_helper.js`: Replace it with built-in fetch."
     ],
     "last_commit": "2023-01-16"
   },
@@ -8513,7 +8574,9 @@
       "Typo: Found 'Magic Mirror' in file `README.md`: Replace it with `MagicMirror\u00b2`.",
       "Typo: Found 'Magic Mirror' in file `mmm-amazon-photos.js`: Replace it with `MagicMirror\u00b2`.",
       "Typo: Found 'Magic Mirror' in file `node_helper.js`: Replace it with `MagicMirror\u00b2`.",
+      "Recommendation: Found 'axios' in file `node_helper.js`: Replace it with built-in fetch.",
       "Typo: Found 'Magic Mirror' in file `package.json`: Replace it with `MagicMirror\u00b2`.",
+      "Recommendation: Found 'axios' in file `package.json`: Replace it with built-in fetch.",
       "Warning: No LICENSE file."
     ],
     "tags": [
@@ -8569,7 +8632,9 @@
       "Issue: No image found.",
       "Recommendation: Module name doesn't follow the recommended pattern (it doesn't start with `MMM-`). Consider renaming your module.",
       "Typo: Found 'Magic Mirror' in file `README.md`: Replace it with `MagicMirror\u00b2`.",
-      "Typo: Found 'Magic Mirror' in file `mmm-hue-lights.js`: Replace it with `MagicMirror\u00b2`."
+      "Typo: Found 'Magic Mirror' in file `mmm-hue-lights.js`: Replace it with `MagicMirror\u00b2`.",
+      "Recommendation: Found 'axios' in file `node_helper.js`: Replace it with built-in fetch.",
+      "Recommendation: Found 'axios' in file `package.json`: Replace it with built-in fetch."
     ],
     "license": "MIT",
     "last_commit": "2022-03-15"
@@ -8634,7 +8699,9 @@
     "issues": [
       "Recommendation: Module name doesn't follow the recommended pattern (it doesn't start with `MMM-`). Consider renaming your module.",
       "Typo: Found 'Magic Mirror' in file `README.md`: Replace it with `MagicMirror\u00b2`.",
-      "Typo: Found 'Magic Mirror' in file `mmm-nest-status.js`: Replace it with `MagicMirror\u00b2`."
+      "Typo: Found 'Magic Mirror' in file `mmm-nest-status.js`: Replace it with `MagicMirror\u00b2`.",
+      "Recommendation: Found 'axios' in file `node_helper.js`: Replace it with built-in fetch.",
+      "Recommendation: Found 'axios' in file `package.json`: Replace it with built-in fetch."
     ],
     "license": "MIT",
     "image": "icons-icon-fan-white.jpg",
@@ -9625,7 +9692,10 @@
     "description": "Module to display today's scores for your favourite teams across multiple sports.",
     "issues": [
       "Typo: Found 'Magic Mirror' in file `MMM-MyScoreboard.js`: Replace it with `MagicMirror\u00b2`.",
-      "Typo: Found 'MagicMirror2' in file `package.json`: Replace it with `MagicMirror\u00b2`."
+      "Typo: Found 'MagicMirror2' in file `package.json`: Replace it with `MagicMirror\u00b2`.",
+      "Recommendation: Found 'axios' in file `package.json`: Replace it with built-in fetch.",
+      "Recommendation: Found 'axios' in file `ESPN.js`: Replace it with built-in fetch.",
+      "Recommendation: Found 'axios' in file `SNET.js`: Replace it with built-in fetch."
     ],
     "tags": [
       "sports"
@@ -10050,7 +10120,10 @@
     "description": "Displays bus information for the Nottingham bus company, NCT.",
     "issues": [
       "Typo: Found 'Magic Mirror' in file `README.md`: Replace it with `MagicMirror\u00b2`.",
-      "Typo: Found 'Magic Mirror' in file `package.json`: Replace it with `MagicMirror\u00b2`."
+      "Recommendation: Found 'axios' in file `README.md`: Replace it with built-in fetch.",
+      "Recommendation: Found 'axios' in file `node_helper.js`: Replace it with built-in fetch.",
+      "Typo: Found 'Magic Mirror' in file `package.json`: Replace it with `MagicMirror\u00b2`.",
+      "Recommendation: Found 'axios' in file `package.json`: Replace it with built-in fetch."
     ],
     "tags": [
       "nct",
@@ -10518,7 +10591,12 @@
     "issues": [
       "`package.json` issue: No description",
       "Issue: No image found.",
+      "Recommendation: Found 'axios' in file `MMM-NiceHash.js`: Replace it with built-in fetch.",
       "Recommendation: Found 'XMLHttpRequest' in file `MMM-NiceHash.js`: Replace it with built-in fetch.",
+      "Recommendation: Found 'axios' in file `node_helper.js`: Replace it with built-in fetch.",
+      "Recommendation: Found 'axios' in file `package.json`: Replace it with built-in fetch.",
+      "Recommendation: Found 'axios' in file `conversions.ts`: Replace it with built-in fetch.",
+      "Recommendation: Found 'axios' in file `nicehash.ts`: Replace it with built-in fetch.",
       "Warning: No LICENSE file."
     ],
     "tags": [
@@ -10632,7 +10710,10 @@
     "maintainerURL": "https://github.com/Travelbacon",
     "description": "Shows departure times of Dutch public transport. Where you can sort on destination and group stops in one stop. Good for hubs where multiple lines and authorities merge, so yo have one stop instead of multiple.",
     "issues": [
-      "Typo: Found 'Magic Mirror' in file `package.json`: Replace it with `MagicMirror\u00b2`."
+      "Recommendation: Found 'axios' in file `README.md`: Replace it with built-in fetch.",
+      "Recommendation: Found 'axios' in file `node_helper.js`: Replace it with built-in fetch.",
+      "Typo: Found 'Magic Mirror' in file `package.json`: Replace it with `MagicMirror\u00b2`.",
+      "Recommendation: Found 'axios' in file `package.json`: Replace it with built-in fetch."
     ],
     "tags": [
       "publictransport"
@@ -11046,7 +11127,10 @@
     "maintainer": "KristjanESPERANTO",
     "maintainerURL": "",
     "description": "Display current and forecast weather based on the Openweathermap OneCall API data with alternative formatting.",
-    "issues": [],
+    "issues": [
+      "Recommendation: Found 'axios' in file `node_helper.js`: Replace it with built-in fetch.",
+      "Recommendation: Found 'axios' in file `package.json`: Replace it with built-in fetch."
+    ],
     "tags": [
       "weather"
     ],
@@ -11065,7 +11149,9 @@
       "`package.json` issue: No repository field.",
       "Typo: Found 'Magic Mirror' in file `MMM-OneTouchReveal.js`: Replace it with `MagicMirror\u00b2`.",
       "Typo: Found 'Magic Mirror' in file `node_helper.js`: Replace it with `MagicMirror\u00b2`.",
-      "Deprecated: Found 'require('request')' in file `node_helper.js`: Replace it with built-in fetch."
+      "Deprecated: Found 'require('request')' in file `node_helper.js`: Replace it with built-in fetch.",
+      "Recommendation: Found 'axios' in file `node_helper.js`: Replace it with built-in fetch.",
+      "Recommendation: Found 'axios' in file `package.json`: Replace it with built-in fetch."
     ],
     "license": "MIT",
     "image": "screenshots-screenColor.PNG",
@@ -12204,7 +12290,10 @@
     "description": "Display a poem of the day, in the language(s) of your choice",
     "issues": [
       "Typo: Found 'Magic Mirror' in file `README.md`: Replace it with `MagicMirror\u00b2`.",
+      "Recommendation: Found 'axios' in file `node_helper.test.js`: Replace it with built-in fetch.",
+      "Recommendation: Found 'axios' in file `node_helper.js`: Replace it with built-in fetch.",
       "Typo: Found 'Magic Mirror' in file `package.json`: Replace it with `MagicMirror\u00b2`.",
+      "Recommendation: Found 'axios' in file `package.json`: Replace it with built-in fetch.",
       "Warning: No LICENSE file."
     ],
     "tags": [
@@ -12390,7 +12479,9 @@
       "Typo: Found 'Magic Mirror' in file `node_helper.js`: Replace it with `MagicMirror\u00b2`.",
       "Recommendation: Found 'node-fetch' in file `node_helper.js`: Replace it with built-in fetch.",
       "Recommendation: Found 'node-fetch' in file `package.json`: Replace it with built-in fetch.",
-      "Recommendation: Found 'require(\"https\")' in file `powerwall.js`: Replace it with built-in fetch."
+      "Recommendation: Found 'axios' in file `package.json`: Replace it with built-in fetch.",
+      "Recommendation: Found 'require(\"https\")' in file `powerwall.js`: Replace it with built-in fetch.",
+      "Recommendation: Found 'axios' in file `powerwall.js`: Replace it with built-in fetch."
     ],
     "license": "MIT",
     "image": "images-CarCharging.jpg",
@@ -12729,7 +12820,9 @@
     "description": "Show a random quote from an online collection of quotations by authors, celebrities, and newsmakers. Multi language supported",
     "issues": [
       "Typo: Found 'Magic Mirror' in file `README.md`: Replace it with `MagicMirror\u00b2`.",
+      "Recommendation: Found 'axios' in file `node_helper.js`: Replace it with built-in fetch.",
       "Typo: Found 'Magic Mirror' in file `package.json`: Replace it with `MagicMirror\u00b2`.",
+      "Recommendation: Found 'axios' in file `package.json`: Replace it with built-in fetch.",
       "Warning: No LICENSE file."
     ],
     "tags": [
@@ -12807,7 +12900,10 @@
     "issues": [
       "Typo: Found 'Magic Mirror' in file `MMM-rainfc.js`: Replace it with `MagicMirror\u00b2`.",
       "Typo: Found 'Magic Mirror' in file `README.md`: Replace it with `MagicMirror\u00b2`.",
-      "Typo: Found 'Magic Mirror' in file `node_helper.js`: Replace it with `MagicMirror\u00b2`."
+      "Recommendation: Found 'axios' in file `README.md`: Replace it with built-in fetch.",
+      "Typo: Found 'Magic Mirror' in file `node_helper.js`: Replace it with `MagicMirror\u00b2`.",
+      "Recommendation: Found 'axios' in file `node_helper.js`: Replace it with built-in fetch.",
+      "Recommendation: Found 'axios' in file `package.json`: Replace it with built-in fetch."
     ],
     "tags": [
       "rain",
@@ -12844,7 +12940,9 @@
     "description": "Graphical and textual rain forecast for France.",
     "issues": [
       "Typo: Found 'Magic Mirror' in file `MMM-RainForecast-FR.js`: Replace it with `MagicMirror\u00b2`.",
-      "Typo: Found 'Magic Mirror' in file `node_helper.js`: Replace it with `MagicMirror\u00b2`."
+      "Typo: Found 'Magic Mirror' in file `node_helper.js`: Replace it with `MagicMirror\u00b2`.",
+      "Recommendation: Found 'axios' in file `node_helper.js`: Replace it with built-in fetch.",
+      "Recommendation: Found 'axios' in file `package.json`: Replace it with built-in fetch."
     ],
     "license": "MIT",
     "image": "screenshotRainForecast.jpg",
@@ -13264,7 +13362,10 @@
     "maintainer": "73cirdan",
     "maintainerURL": "",
     "description": "Module for Rijks Museum. This was developed using the Rijksmuseum API.",
-    "issues": [],
+    "issues": [
+      "Recommendation: Found 'axios' in file `node_helper.js`: Replace it with built-in fetch.",
+      "Recommendation: Found 'axios' in file `package.json`: Replace it with built-in fetch."
+    ],
     "tags": [
       "art",
       "rijksmuseum"
@@ -13412,7 +13513,9 @@
       "Typo: Found 'Magic Mirror' in file `MMM-RocketLeagueZ.js`: Replace it with `MagicMirror\u00b2`.",
       "Typo: Found 'MagicMirror2' in file `Readme.md`: Replace it with `MagicMirror\u00b2`.",
       "Typo: Found 'Magic Mirror' in file `node_helper.js`: Replace it with `MagicMirror\u00b2`.",
+      "Recommendation: Found 'axios' in file `node_helper.js`: Replace it with built-in fetch.",
       "Typo: Found 'MagicMirror2' in file `package.json`: Replace it with `MagicMirror\u00b2`.",
+      "Recommendation: Found 'axios' in file `package.json`: Replace it with built-in fetch.",
       "Warning: No LICENSE file."
     ],
     "tags": [
@@ -14035,6 +14138,7 @@
     "issues": [
       "`package.json` issue: No repository field.",
       "Typo: Found 'Magic Mirror' in file `README.md`: Replace it with `MagicMirror\u00b2`.",
+      "Recommendation: Found 'axios' in file `node_helper.js`: Replace it with built-in fetch.",
       "Typo: Found 'Magic Mirror' in file `package.json`: Replace it with `MagicMirror\u00b2`."
     ],
     "tags": [
@@ -14196,7 +14300,9 @@
       "Issue: No image found.",
       "Typo: Found 'Magic Mirror' in file `MMM-Skola24.js`: Replace it with `MagicMirror\u00b2`.",
       "Typo: Found 'Magic Mirror' in file `node_helper.js`: Replace it with `MagicMirror\u00b2`.",
-      "Typo: Found 'MagicMirror2' in file `package.json`: Replace it with `MagicMirror\u00b2`."
+      "Recommendation: Found 'axios' in file `node_helper.js`: Replace it with built-in fetch.",
+      "Typo: Found 'MagicMirror2' in file `package.json`: Replace it with `MagicMirror\u00b2`.",
+      "Recommendation: Found 'axios' in file `package.json`: Replace it with built-in fetch."
     ],
     "tags": [
       "schema",
@@ -14783,7 +14889,10 @@
     "maintainer": "skuethe",
     "maintainerURL": "",
     "description": "Spotify Controller - with device and account switch buttons, easy volume change via touch and much more",
-    "issues": [],
+    "issues": [
+      "Recommendation: Found 'axios' in file `Spotify.js`: Replace it with built-in fetch.",
+      "Recommendation: Found 'axios' in file `package.json`: Replace it with built-in fetch."
+    ],
     "tags": [
       "magicmirrormodule",
       "magic mirror module",
@@ -15602,8 +15711,12 @@
     "description": "Shows the latest hours tracked by the time tracking application Timetagger.",
     "issues": [
       "Typo: Found 'Magic Mirror' in file `README.md`: Replace it with `MagicMirror\u00b2`.",
+      "Recommendation: Found 'axios' in file `README.md`: Replace it with built-in fetch.",
       "Typo: Found 'Magic Mirror' in file `README_es.md`: Replace it with `MagicMirror\u00b2`.",
+      "Recommendation: Found 'axios' in file `README_es.md`: Replace it with built-in fetch.",
+      "Recommendation: Found 'axios' in file `node_helper.js`: Replace it with built-in fetch.",
       "Typo: Found 'Magic Mirror' in file `package.json`: Replace it with `MagicMirror\u00b2`.",
+      "Recommendation: Found 'axios' in file `package.json`: Replace it with built-in fetch.",
       "Warning: No LICENSE file."
     ],
     "license": "MIT",
@@ -15619,7 +15732,10 @@
     "description": "Shows your TimeTree event.",
     "issues": [
       "Typo: Found 'Magic Mirror' in file `MMM-TimeTreeEvent.js`: Replace it with `MagicMirror\u00b2`.",
+      "Recommendation: Found 'axios' in file `README.md`: Replace it with built-in fetch.",
       "Typo: Found 'Magic Mirror' in file `node_helper.js`: Replace it with `MagicMirror\u00b2`.",
+      "Recommendation: Found 'axios' in file `node_helper.js`: Replace it with built-in fetch.",
+      "Recommendation: Found 'axios' in file `package.json`: Replace it with built-in fetch.",
       "Warning: No LICENSE file."
     ],
     "tags": [
@@ -15639,6 +15755,9 @@
     "description": "Retrieves school meal menus from the Titan Schools API (family.titank12.com)",
     "issues": [
       "`package.json` issue: No repository field.",
+      "Recommendation: Found 'axios' in file `TitanSchoolsClient.js`: Replace it with built-in fetch.",
+      "Recommendation: Found 'axios' in file `package.json`: Replace it with built-in fetch.",
+      "Recommendation: Found 'axios' in file `api-response-shape.test.js`: Replace it with built-in fetch.",
       "Warning: No LICENSE file."
     ],
     "license": "ISC",
@@ -15655,7 +15774,9 @@
     "issues": [
       "Typo: Found 'Magic Mirror' in file `MMM-TMB.css`: Replace it with `MagicMirror\u00b2`.",
       "Typo: Found 'Magic Mirror' in file `MMM-TMB.js`: Replace it with `MagicMirror\u00b2`.",
-      "Typo: Found 'Magic Mirror' in file `node_helper.js`: Replace it with `MagicMirror\u00b2`."
+      "Typo: Found 'Magic Mirror' in file `node_helper.js`: Replace it with `MagicMirror\u00b2`.",
+      "Recommendation: Found 'axios' in file `node_helper.js`: Replace it with built-in fetch.",
+      "Recommendation: Found 'axios' in file `package.json`: Replace it with built-in fetch."
     ],
     "tags": [],
     "license": "MIT",
@@ -15738,6 +15859,7 @@
       "Issue: There is no `package.json`. We need this file to gather information about the module.",
       "Typo: Found 'Magic Mirror' in file `README.md`: Replace it with `MagicMirror\u00b2`.",
       "Typo: Found 'Magic Mirror' in file `SECURITY.md`: Replace it with `MagicMirror\u00b2`.",
+      "Recommendation: Found 'axios' in file `LICENSE.txt`: Replace it with built-in fetch.",
       "Recommendation: Found 'XMLHttpRequest' in file `maps-web.min.js`: Replace it with built-in fetch.",
       "Typo: Found 'Magic Mirror' in file `tomtomv6.html`: Replace it with `MagicMirror\u00b2`."
     ],
@@ -15903,7 +16025,10 @@
     "issues": [
       "`package.json` issue: No description",
       "`package.json` issue: No repository field.",
-      "Issue: No image found."
+      "Issue: No image found.",
+      "Recommendation: Found 'axios' in file `node_helper.js`: Replace it with built-in fetch.",
+      "Recommendation: Found 'axios' in file `package.json`: Replace it with built-in fetch.",
+      "Recommendation: Found 'axios' in file `pnpm-lock.yaml`: Replace it with built-in fetch."
     ],
     "tags": [],
     "license": "ISC",
@@ -16001,7 +16126,8 @@
     "issues": [
       "Issue: There is no `package.json`. We need this file to gather information about the module.",
       "Typo: Found 'Magic Mirror' in file `MMM-TransporteCABA.js`: Replace it with `MagicMirror\u00b2`.",
-      "Typo: Found 'Magic Mirror' in file `node_helper.js`: Replace it with `MagicMirror\u00b2`."
+      "Typo: Found 'Magic Mirror' in file `node_helper.js`: Replace it with `MagicMirror\u00b2`.",
+      "Recommendation: Found 'axios' in file `node_helper.js`: Replace it with built-in fetch."
     ],
     "last_commit": "2022-10-28"
   },
@@ -16101,6 +16227,8 @@
     "description": "Display the status of smarthome devices based on Tuya IoT-Platform (managed by SmartLife app).",
     "issues": [
       "Typo: Found 'Magic Mirror' in file `node_helper.js`: Replace it with `MagicMirror\u00b2`.",
+      "Recommendation: Found 'axios' in file `node_helper.js`: Replace it with built-in fetch.",
+      "Recommendation: Found 'axios' in file `package.json`: Replace it with built-in fetch.",
       "Warning: No LICENSE file."
     ],
     "tags": [
@@ -16123,7 +16251,10 @@
     "maintainerURL": "https://github.com/rafagale",
     "description": "Get estimations for bus stops in the city of Zaragoza (Spain)",
     "issues": [
-      "Typo: Found 'MagicMirror2' in file `README.md`: Replace it with `MagicMirror\u00b2`."
+      "Typo: Found 'MagicMirror2' in file `README.md`: Replace it with `MagicMirror\u00b2`.",
+      "Recommendation: Found 'axios' in file `README.md`: Replace it with built-in fetch.",
+      "Recommendation: Found 'axios' in file `node_helper.js`: Replace it with built-in fetch.",
+      "Recommendation: Found 'axios' in file `package.json`: Replace it with built-in fetch."
     ],
     "tags": [
       "bus stop",
@@ -16390,7 +16521,9 @@
     "description": "Display monitor data (online/offline detection) from selfhosted <a target=\"_blank\" href=\"https://github.com/louislam/uptime-kuma\">https://github.com/louislam/uptime-kuma</a>. (Fork of MMM-uptimerobot.)",
     "issues": [
       "Typo: Found 'Magic Mirror' in file `MMM-uptimekuma.js`: Replace it with `MagicMirror\u00b2`.",
-      "Typo: Found 'Magic Mirror' in file `node_helper.js`: Replace it with `MagicMirror\u00b2`."
+      "Typo: Found 'Magic Mirror' in file `node_helper.js`: Replace it with `MagicMirror\u00b2`.",
+      "Recommendation: Found 'axios' in file `node_helper.js`: Replace it with built-in fetch.",
+      "Recommendation: Found 'axios' in file `package.json`: Replace it with built-in fetch."
     ],
     "tags": [
       "uptimekuma",
@@ -16621,7 +16754,9 @@
     "issues": [
       "Typo: Found 'Magic Mirror' in file `MMM-VigilanceMeteoFrance.js`: Replace it with `MagicMirror\u00b2`.",
       "Typo: Found 'Magic Mirror' in file `node_helper.js`: Replace it with `MagicMirror\u00b2`.",
-      "Typo: Found 'Magic Mirror' in file `package.json`: Replace it with `MagicMirror\u00b2`."
+      "Recommendation: Found 'axios' in file `node_helper.js`: Replace it with built-in fetch.",
+      "Typo: Found 'Magic Mirror' in file `package.json`: Replace it with `MagicMirror\u00b2`.",
+      "Recommendation: Found 'axios' in file `package.json`: Replace it with built-in fetch."
     ],
     "tags": [
       "vigilance",
@@ -16856,7 +16991,8 @@
     "issues": [
       "Typo: Found 'Magic Mirror' in file `MMM-vvsDeparture.js`: Replace it with `MagicMirror\u00b2`.",
       "Typo: Found 'MagicMirror2' in file `README.md`: Replace it with `MagicMirror\u00b2`.",
-      "Typo: Found 'Magic Mirror' in file `node_helper.js`: Replace it with `MagicMirror\u00b2`."
+      "Typo: Found 'Magic Mirror' in file `node_helper.js`: Replace it with `MagicMirror\u00b2`.",
+      "Recommendation: Found 'axios' in file `node_helper.js`: Replace it with built-in fetch."
     ],
     "tags": [
       "vvs",
@@ -17239,7 +17375,9 @@
     "maintainerURL": "",
     "description": "Displays next refuse and recycling collections for West Berkshire (UK) houses based on Unique Property Reference Number.",
     "issues": [
-      "Typo: Found 'Magic Mirror' in file `README.md`: Replace it with `MagicMirror\u00b2`."
+      "Typo: Found 'Magic Mirror' in file `README.md`: Replace it with `MagicMirror\u00b2`.",
+      "Recommendation: Found 'axios' in file `node_helper.js`: Replace it with built-in fetch.",
+      "Recommendation: Found 'axios' in file `package.json`: Replace it with built-in fetch."
     ],
     "license": "MIT",
     "image": "screenshot.jpg",
@@ -17272,7 +17410,9 @@
     "issues": [
       "`package.json` issue: No repository field.",
       "Issue: No image found.",
-      "Typo: Found 'Magic Mirror' in file `MMM-WhisperGPT.js`: Replace it with `MagicMirror\u00b2`."
+      "Typo: Found 'Magic Mirror' in file `MMM-WhisperGPT.js`: Replace it with `MagicMirror\u00b2`.",
+      "Recommendation: Found 'axios' in file `node_helper.js`: Replace it with built-in fetch.",
+      "Recommendation: Found 'axios' in file `package.json`: Replace it with built-in fetch."
     ],
     "license": "MIT",
     "last_commit": "2023-05-30"
@@ -17789,6 +17929,7 @@
       "Issue: There is no `package.json`. We need this file to gather information about the module.",
       "Recommendation: Found 'XMLHttpRequest' in file `MMM-ZAPTEC.js`: Replace it with built-in fetch.",
       "Typo: Found 'Magic Mirror' in file `README.md`: Replace it with `MagicMirror\u00b2`.",
+      "Recommendation: Found 'axios' in file `node_helper.js`: Replace it with built-in fetch.",
       "Warning: No LICENSE file."
     ],
     "last_commit": "2023-10-09"
