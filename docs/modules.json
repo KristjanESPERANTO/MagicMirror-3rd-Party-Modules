@@ -112,7 +112,8 @@
     "description": "Display a candle burning down towards a specific date (e.g. an advent candle).",
     "issues": [
       "Typo: Found 'Magic Mirror' in file `MMM-Advent.js`: Replace it with `MagicMirror\u00b2`.",
-      "Typo: Found 'Magic Mirror' in file `README.md`: Replace it with `MagicMirror\u00b2`."
+      "Typo: Found 'Magic Mirror' in file `README.md`: Replace it with `MagicMirror\u00b2`.",
+      "Warning: No LICENSE file."
     ],
     "tags": [
       "buttons"
@@ -159,7 +160,8 @@
     "issues": [
       "Issue: There is no `package.json`. We need this file to gather information about the module.",
       "Typo: Found 'Magic Mirror' in file `node_helper.js`: Replace it with `MagicMirror\u00b2`.",
-      "Recommendation: Found 'require(\"https\")' in file `node_helper.js`: Replace it with built-in fetch."
+      "Recommendation: Found 'require(\"https\")' in file `node_helper.js`: Replace it with built-in fetch.",
+      "Warning: No LICENSE file."
     ]
   },
   {
@@ -248,7 +250,8 @@
     "description": "Module to display tables from Airtable.",
     "issues": [
       "Typo: Found 'Magic Mirror' in file `MMM-Airtable.js`: Replace it with `MagicMirror\u00b2`.",
-      "Typo: Found 'MagicMirror2' in file `package.json`: Replace it with `MagicMirror\u00b2`."
+      "Typo: Found 'MagicMirror2' in file `package.json`: Replace it with `MagicMirror\u00b2`.",
+      "Warning: No LICENSE file."
     ],
     "tags": [
       "magic-mirror",
@@ -380,7 +383,8 @@
     "maintainerURL": "",
     "description": "Am Lich - Lunar Date - Vietnamese Language.",
     "issues": [
-      "Issue: There is no `package.json`. We need this file to gather information about the module."
+      "Issue: There is no `package.json`. We need this file to gather information about the module.",
+      "Warning: No LICENSE file."
     ]
   },
   {
@@ -396,7 +400,8 @@
       "Typo: Found 'Magic Mirror' in file `MMM-Birthdays.js`: Replace it with `MagicMirror\u00b2`.",
       "Typo: Found 'Magic Mirror' in file `BIRTHDAYS.js`: Replace it with `MagicMirror\u00b2`.",
       "Typo: Found 'Magic Mirror' in file `README.md`: Replace it with `MagicMirror\u00b2`.",
-      "Typo: Found 'Magic Mirror' in file `README.md`: Replace it with `MagicMirror\u00b2`."
+      "Typo: Found 'Magic Mirror' in file `README.md`: Replace it with `MagicMirror\u00b2`.",
+      "Warning: No LICENSE file."
     ]
   },
   {
@@ -408,7 +413,8 @@
     "description": "Module to display a list from the AnyList app.",
     "issues": [
       "Typo: Found 'Magic Mirror' in file `README.md`: Replace it with `MagicMirror\u00b2`.",
-      "Typo: Found 'Magic Mirror' in file `package.json`: Replace it with `MagicMirror\u00b2`."
+      "Typo: Found 'Magic Mirror' in file `package.json`: Replace it with `MagicMirror\u00b2`.",
+      "Warning: No LICENSE file."
     ],
     "tags": [],
     "license": "MIT",
@@ -555,7 +561,9 @@
     "maintainer": "Dentrax",
     "maintainerURL": "",
     "description": "This module provides Arduino serial communication support with Raspberry PI. Arduino sends the sensor's data value to the module using Python. Your next favorite Plug&Play utility module.",
-    "issues": [],
+    "issues": [
+      "Warning: No LICENSE file."
+    ],
     "tags": [
       "arduino",
       "serialport"
@@ -575,7 +583,8 @@
       "Typo: Found 'Magic Mirror' in file `MMM-Astrology.js`: Replace it with `MagicMirror\u00b2`.",
       "Typo: Found 'MagicMirror2' in file `README.md`: Replace it with `MagicMirror\u00b2`.",
       "Typo: Found 'Magic Mirror' in file `node_helper.js`: Replace it with `MagicMirror\u00b2`.",
-      "Deprecated: Found 'require('request')' in file `node_helper.js`: Replace it with built-in fetch."
+      "Deprecated: Found 'require('request')' in file `node_helper.js`: Replace it with built-in fetch.",
+      "Warning: No LICENSE file."
     ]
   },
   {
@@ -603,7 +612,8 @@
       "Issue: There is no `package.json`. We need this file to gather information about the module.",
       "Typo: Found 'Magic Mirror' in file `README.md`: Replace it with `MagicMirror\u00b2`.",
       "Typo: Found 'Magic Mirror' in file `node_helper.js`: Replace it with `MagicMirror\u00b2`.",
-      "Recommendation: Found 'node-fetch' in file `node_helper.js`: Replace it with built-in fetch."
+      "Recommendation: Found 'node-fetch' in file `node_helper.js`: Replace it with built-in fetch.",
+      "Warning: No LICENSE file."
     ]
   },
   {
@@ -643,7 +653,8 @@
     "issues": [
       "Typo: Found 'Magic Mirror' in file `MMM-August-Lock.js`: Replace it with `MagicMirror\u00b2`.",
       "Typo: Found 'Magic Mirror' in file `node_helper.js`: Replace it with `MagicMirror\u00b2`.",
-      "Typo: Found 'Magic Mirror' in file `package.json`: Replace it with `MagicMirror\u00b2`."
+      "Typo: Found 'Magic Mirror' in file `package.json`: Replace it with `MagicMirror\u00b2`.",
+      "Warning: No LICENSE file."
     ],
     "tags": [
       "august"
@@ -661,7 +672,8 @@
     "issues": [
       "`package.json` issue: No description",
       "Deprecated: Found 'require(\"native-request\")' in file `node_helper.js`: Replace it with built-in fetch.",
-      "Issue: Found directory `node_modules`. This shouldn't be uploaded. Add `node_modules/`to `.gitignore`."
+      "Issue: Found directory `node_modules`. This shouldn't be uploaded. Add `node_modules/`to `.gitignore`.",
+      "Warning: No LICENSE file."
     ],
     "license": "ISC",
     "image": "screenshot.jpg"
@@ -839,7 +851,8 @@
       "`package.json` issue: No repository field.",
       "`package.json` issue: No license field.",
       "Typo: Found 'Magic Mirror' in file `node_helper.js`: Replace it with `MagicMirror\u00b2`.",
-      "Deprecated: Found 'require('request')' in file `node_helper.js`: Replace it with built-in fetch."
+      "Deprecated: Found 'require('request')' in file `node_helper.js`: Replace it with built-in fetch.",
+      "Warning: No LICENSE file."
     ]
   },
   {
@@ -851,7 +864,8 @@
     "description": "Cyclically displays Bengali Words and Bengali Pronunciations with English Translations.",
     "issues": [
       "Issue: There is no `package.json`. We need this file to gather information about the module.",
-      "Typo: Found 'MagicMirror2' in file `README.md`: Replace it with `MagicMirror\u00b2`."
+      "Typo: Found 'MagicMirror2' in file `README.md`: Replace it with `MagicMirror\u00b2`.",
+      "Warning: No LICENSE file."
     ]
   },
   {
@@ -954,7 +968,8 @@
     "maintainerURL": "https://github.com/brssaricicek",
     "description": "Display cryptocurrency information from the Binance website.",
     "issues": [
-      "Issue: There is no `package.json`. We need this file to gather information about the module."
+      "Issue: There is no `package.json`. We need this file to gather information about the module.",
+      "Warning: No LICENSE file."
     ]
   },
   {
@@ -978,7 +993,8 @@
     "description": "Display submissions to BirdNET, Cornell University's machine learning project to identify birds by their song.",
     "issues": [
       "Issue: An error occurred while getting information from 'package.json': Error: Invalid version: \"1.1\"",
-      "Recommendation: Found 'XMLHttpRequest' in file `MMM-BirdNET.js`: Replace it with built-in fetch."
+      "Recommendation: Found 'XMLHttpRequest' in file `MMM-BirdNET.js`: Replace it with built-in fetch.",
+      "Warning: No LICENSE file."
     ]
   },
   {
@@ -1029,7 +1045,8 @@
       "`package.json` issue: No description",
       "Typo: Found 'Magic Mirror' in file `README.md`: Replace it with `MagicMirror\u00b2`.",
       "Recommendation: Found 'node-fetch' in file `BIXIFetcher.js`: Replace it with built-in fetch.",
-      "Recommendation: Found 'node-fetch' in file `package.json`: Replace it with built-in fetch."
+      "Recommendation: Found 'node-fetch' in file `package.json`: Replace it with built-in fetch.",
+      "Warning: No LICENSE file."
     ],
     "license": "ISC",
     "image": "screenshot.jpg"
@@ -1042,7 +1059,8 @@
     "maintainerURL": "https://github.com/pcurt",
     "description": "Module that shows french jokes from the BlaguesAPI <https://www.blagues-api.fr>.",
     "issues": [
-      "Issue: There is no `package.json`. We need this file to gather information about the module."
+      "Issue: There is no `package.json`. We need this file to gather information about the module.",
+      "Warning: No LICENSE file."
     ]
   },
   {
@@ -1054,7 +1072,8 @@
     "description": "Quick Module to easily move modules up or down for blank space",
     "issues": [
       "Issue: There is no `package.json`. We need this file to gather information about the module.",
-      "Typo: Found 'Magic Mirror' in file `MMM-Block.js`: Replace it with `MagicMirror\u00b2`."
+      "Typo: Found 'Magic Mirror' in file `MMM-Block.js`: Replace it with `MagicMirror\u00b2`.",
+      "Warning: No LICENSE file."
     ]
   },
   {
@@ -1067,7 +1086,8 @@
     "issues": [
       "Issue: There is no `package.json`. We need this file to gather information about the module.",
       "Typo: Found 'Magic Mirror' in file `MMM-Bluebikes.js`: Replace it with `MagicMirror\u00b2`.",
-      "Recommendation: Found 'XMLHttpRequest' in file `MMM-Bluebikes.js`: Replace it with built-in fetch."
+      "Recommendation: Found 'XMLHttpRequest' in file `MMM-Bluebikes.js`: Replace it with built-in fetch.",
+      "Warning: No LICENSE file."
     ]
   },
   {
@@ -1093,7 +1113,9 @@
     "maintainer": "timodejong95",
     "maintainerURL": "https://github.com/timodejong95",
     "description": "Connecting Bluetooth devices, currently only Oral-B toothbrushes",
-    "issues": [],
+    "issues": [
+      "Warning: No LICENSE file."
+    ],
     "tags": [
       "bluetooth",
       "oralb"
@@ -1111,7 +1133,8 @@
     "issues": [
       "`package.json` issue: No description",
       "`package.json` issue: No repository field.",
-      "Typo: Found 'Magic Mirror' in file `node_helper.js`: Replace it with `MagicMirror\u00b2`."
+      "Typo: Found 'Magic Mirror' in file `node_helper.js`: Replace it with `MagicMirror\u00b2`.",
+      "Warning: No LICENSE file."
     ],
     "license": "MIT",
     "image": ".github-connect.jpg"
@@ -1211,7 +1234,8 @@
     "description": "Spice up your life with a happy little painting and video of the man himself.",
     "issues": [
       "Issue: There is no `package.json`. We need this file to gather information about the module.",
-      "Typo: Found 'Magic Mirror' in file `README.md`: Replace it with `MagicMirror\u00b2`."
+      "Typo: Found 'Magic Mirror' in file `README.md`: Replace it with `MagicMirror\u00b2`.",
+      "Warning: No LICENSE file."
     ]
   },
   {
@@ -1292,7 +1316,8 @@
     "maintainerURL": "",
     "description": "Quick Breathing Exercise to calm you down.",
     "issues": [
-      "Issue: There is no `package.json`. We need this file to gather information about the module."
+      "Issue: There is no `package.json`. We need this file to gather information about the module.",
+      "Warning: No LICENSE file."
     ]
   },
   {
@@ -1306,7 +1331,8 @@
       "Issue: There is no `package.json`. We need this file to gather information about the module.",
       "Typo: Found 'Magic Mirror' in file `MMM-Brewdog.js`: Replace it with `MagicMirror\u00b2`.",
       "Typo: Found 'Magic Mirror' in file `node_helper.js`: Replace it with `MagicMirror\u00b2`.",
-      "Deprecated: Found 'require('request')' in file `node_helper.js`: Replace it with built-in fetch."
+      "Deprecated: Found 'require('request')' in file `node_helper.js`: Replace it with built-in fetch.",
+      "Warning: No LICENSE file."
     ]
   },
   {
@@ -1383,7 +1409,8 @@
     "issues": [
       "Issue: An error occurred while getting information from 'package.json': Error: Invalid version: \"1.0\"",
       "Typo: Found 'Magic Mirror' in file `MMM-Buller.js`: Replace it with `MagicMirror\u00b2`.",
-      "Typo: Found 'Magic Mirror' in file `node_helper.js`: Replace it with `MagicMirror\u00b2`."
+      "Typo: Found 'Magic Mirror' in file `node_helper.js`: Replace it with `MagicMirror\u00b2`.",
+      "Warning: No LICENSE file."
     ]
   },
   {
@@ -1452,7 +1479,8 @@
       "Issue: No image found.",
       "Typo: Found 'Magic Mirror' in file `MMM-Button.js`: Replace it with `MagicMirror\u00b2`.",
       "Typo: Found 'Magic Mirror' in file `node_helper.js`: Replace it with `MagicMirror\u00b2`.",
-      "Deprecated: Found 'electron-rebuild' in file `package.json`: Replace it with `@electron/rebuild`"
+      "Deprecated: Found 'electron-rebuild' in file `package.json`: Replace it with `@electron/rebuild`",
+      "Warning: No LICENSE file."
     ],
     "tags": [
       "button"
@@ -1470,7 +1498,8 @@
       "Issue: No image found.",
       "Typo: Found 'Magic Mirror' in file `MMM-Buttons.js`: Replace it with `MagicMirror\u00b2`.",
       "Typo: Found 'Magic Mirror' in file `README.md`: Replace it with `MagicMirror\u00b2`.",
-      "Typo: Found 'Magic Mirror' in file `node_helper.js`: Replace it with `MagicMirror\u00b2`."
+      "Typo: Found 'Magic Mirror' in file `node_helper.js`: Replace it with `MagicMirror\u00b2`.",
+      "Warning: No LICENSE file."
     ],
     "tags": [
       "buttons"
@@ -1627,7 +1656,8 @@
     "issues": [
       "Issue: There is no `package.json`. We need this file to gather information about the module.",
       "Recommendation: Found 'require(\"https\")' in file `calendarfetcher.js`: Replace it with built-in fetch.",
-      "Recommendation: Found 'node-fetch' in file `calendarfetcher.js`: Replace it with built-in fetch."
+      "Recommendation: Found 'node-fetch' in file `calendarfetcher.js`: Replace it with built-in fetch.",
+      "Warning: No LICENSE file."
     ]
   },
   {
@@ -1655,7 +1685,8 @@
     "description": "Extension for [MMM-FRITZ-Box-Callmonitor](https://github.com/paviro/MMM-FRITZ-Box-Callmonitor) (Displays the currently active call)",
     "issues": [
       "Issue: There is no `package.json`. We need this file to gather information about the module.",
-      "Typo: Found 'Magic Mirror' in file `MMM-Callmonitor-Current-Call.js`: Replace it with `MagicMirror\u00b2`."
+      "Typo: Found 'Magic Mirror' in file `MMM-Callmonitor-Current-Call.js`: Replace it with `MagicMirror\u00b2`.",
+      "Warning: No LICENSE file."
     ]
   },
   {
@@ -1682,7 +1713,8 @@
       "Typo: Found 'Magic Mirror' in file `MMM-Caltrain.js`: Replace it with `MagicMirror\u00b2`.",
       "Typo: Found 'Magic Mirror' in file `README.md`: Replace it with `MagicMirror\u00b2`.",
       "Recommendation: Found 'node-fetch' in file `README.md`: Replace it with built-in fetch.",
-      "Recommendation: Found 'node-fetch' in file `node_helper.js`: Replace it with built-in fetch."
+      "Recommendation: Found 'node-fetch' in file `node_helper.js`: Replace it with built-in fetch.",
+      "Warning: No LICENSE file."
     ]
   },
   {
@@ -1696,7 +1728,8 @@
       "Issue: No image found.",
       "Recommendation: Module name doesn't follow the recommended pattern (it doesn't start with `MMM-`). Consider renaming your module.",
       "Typo: Found 'Magic Mirror' in file `node_helper.js`: Replace it with `MagicMirror\u00b2`.",
-      "Recommendation: Found 'XMLHttpRequest' in file `webcam.js`: Replace it with built-in fetch."
+      "Recommendation: Found 'XMLHttpRequest' in file `webcam.js`: Replace it with built-in fetch.",
+      "Warning: No LICENSE file."
     ],
     "tags": [
       "email",
@@ -1755,7 +1788,8 @@
       "Issue: There is no `package.json`. We need this file to gather information about the module.",
       "Typo: Found 'Magic Mirror' in file `MMM-Canvas.js`: Replace it with `MagicMirror\u00b2`.",
       "Typo: Found 'Magic Mirror' in file `node_helper.js`: Replace it with `MagicMirror\u00b2`.",
-      "Deprecated: Found 'require('request')' in file `node_helper.js`: Replace it with built-in fetch."
+      "Deprecated: Found 'require('request')' in file `node_helper.js`: Replace it with built-in fetch.",
+      "Warning: No LICENSE file."
     ]
   },
   {
@@ -1846,7 +1880,8 @@
     "issues": [
       "Typo: Found 'Magic Mirror' in file `node_helper.js`: Replace it with `MagicMirror\u00b2`.",
       "Recommendation: Found 'node-fetch' in file `node_helper.js`: Replace it with built-in fetch.",
-      "Recommendation: Found 'node-fetch' in file `package.json`: Replace it with built-in fetch."
+      "Recommendation: Found 'node-fetch' in file `package.json`: Replace it with built-in fetch.",
+      "Warning: No LICENSE file."
     ],
     "tags": [
       "esports",
@@ -1868,7 +1903,8 @@
     "issues": [
       "`package.json` issue: No description",
       "`package.json` issue: No repository field.",
-      "Typo: Found 'Magic Mirror' in file `MMM-Chart.js`: Replace it with `MagicMirror\u00b2`."
+      "Typo: Found 'Magic Mirror' in file `MMM-Chart.js`: Replace it with `MagicMirror\u00b2`.",
+      "Warning: No LICENSE file."
     ],
     "license": "MIT",
     "image": ".github-example.jpg"
@@ -2020,7 +2056,8 @@
       "Issue: There is no `package.json`. We need this file to gather information about the module.",
       "Typo: Found 'Magic Mirror' in file `MMM-Cocktails.js`: Replace it with `MagicMirror\u00b2`.",
       "Typo: Found 'Magic Mirror' in file `node_helper.js`: Replace it with `MagicMirror\u00b2`.",
-      "Deprecated: Found 'require('request')' in file `node_helper.js`: Replace it with built-in fetch."
+      "Deprecated: Found 'require('request')' in file `node_helper.js`: Replace it with built-in fetch.",
+      "Warning: No LICENSE file."
     ]
   },
   {
@@ -2073,7 +2110,8 @@
       "Issue: There is no `package.json`. We need this file to gather information about the module.",
       "Recommendation: Module name doesn't follow the recommended pattern (it doesn't start with `MMM-`). Consider renaming your module.",
       "Typo: Found 'Magic Mirror' in file `COINSQUARE.js`: Replace it with `MagicMirror\u00b2`.",
-      "Typo: Found 'Magic Mirror' in file `README.md`: Replace it with `MagicMirror\u00b2`."
+      "Typo: Found 'Magic Mirror' in file `README.md`: Replace it with `MagicMirror\u00b2`.",
+      "Warning: No LICENSE file."
     ]
   },
   {
@@ -2102,7 +2140,8 @@
       "`package.json` issue: No repository field.",
       "`package.json` issue: No license field.",
       "Typo: Found 'Magic Mirror' in file `node_helper.js`: Replace it with `MagicMirror\u00b2`.",
-      "Deprecated: Found 'require('request')' in file `node_helper.js`: Replace it with built-in fetch."
+      "Deprecated: Found 'require('request')' in file `node_helper.js`: Replace it with built-in fetch.",
+      "Warning: No LICENSE file."
     ]
   },
   {
@@ -2147,7 +2186,8 @@
     "issues": [
       "Issue: There is no `package.json`. We need this file to gather information about the module.",
       "Recommendation: Module name doesn't follow the recommended pattern (it doesn't start with `MMM-`). Consider renaming your module.",
-      "Recommendation: Found 'require('https')' in file `node_helper.js`: Replace it with built-in fetch."
+      "Recommendation: Found 'require('https')' in file `node_helper.js`: Replace it with built-in fetch.",
+      "Warning: No LICENSE file."
     ]
   },
   {
@@ -2230,7 +2270,8 @@
       "Typo: Found 'Magic Mirror' in file `node_helper.js`: Replace it with `MagicMirror\u00b2`.",
       "Recommendation: Found 'node-fetch' in file `node_helper.js`: Replace it with built-in fetch.",
       "Typo: Found 'Magic Mirror' in file `package.json`: Replace it with `MagicMirror\u00b2`.",
-      "Recommendation: Found 'node-fetch' in file `package.json`: Replace it with built-in fetch."
+      "Recommendation: Found 'node-fetch' in file `package.json`: Replace it with built-in fetch.",
+      "Warning: No LICENSE file."
     ],
     "tags": [
       "magic-mirror",
@@ -2309,7 +2350,8 @@
     "issues": [
       "Issue: There is no `package.json`. We need this file to gather information about the module.",
       "Typo: Found 'Magic Mirror' in file `MMM-CracowMPK.js`: Replace it with `MagicMirror\u00b2`.",
-      "Deprecated: Found 'require(\"request\")' in file `node_helper.js`: Replace it with built-in fetch."
+      "Deprecated: Found 'require(\"request\")' in file `node_helper.js`: Replace it with built-in fetch.",
+      "Warning: No LICENSE file."
     ]
   },
   {
@@ -2355,7 +2397,8 @@
     "description": "Virtual model of physical Cronixie (Led Nixie) clock",
     "issues": [
       "Issue: There is no `package.json`. We need this file to gather information about the module.",
-      "Typo: Found 'Magic Mirror' in file `MMM-Cronixie.js`: Replace it with `MagicMirror\u00b2`."
+      "Typo: Found 'Magic Mirror' in file `MMM-Cronixie.js`: Replace it with `MagicMirror\u00b2`.",
+      "Warning: No LICENSE file."
     ]
   },
   {
@@ -2380,7 +2423,8 @@
     "description": "Displays arrival times for the Chicago Transit Authority 'L' system buses and trains.",
     "issues": [
       "Issue: There is no `package.json`. We need this file to gather information about the module.",
-      "Deprecated: Found 'require(\"request\")' in file `node_helper.js`: Replace it with built-in fetch."
+      "Deprecated: Found 'require(\"request\")' in file `node_helper.js`: Replace it with built-in fetch.",
+      "Warning: No LICENSE file."
     ]
   },
   {
@@ -2406,7 +2450,8 @@
     "description": "Display the dollar price in real time.",
     "issues": [
       "Issue: There is no `package.json`. We need this file to gather information about the module.",
-      "Recommendation: Found 'XMLHttpRequest' in file `MMM-CurrencyArg.js`: Replace it with built-in fetch."
+      "Recommendation: Found 'XMLHttpRequest' in file `MMM-CurrencyArg.js`: Replace it with built-in fetch.",
+      "Warning: No LICENSE file."
     ]
   },
   {
@@ -2554,7 +2599,8 @@
     "issues": [
       "Typo: Found 'Magic Mirror' in file `MMM-Daikin.js`: Replace it with `MagicMirror\u00b2`.",
       "Typo: Found 'Magic Mirror' in file `node_helper.js`: Replace it with `MagicMirror\u00b2`.",
-      "Typo: Found 'Magic Mirror' in file `package.json`: Replace it with `MagicMirror\u00b2`."
+      "Typo: Found 'Magic Mirror' in file `package.json`: Replace it with `MagicMirror\u00b2`.",
+      "Warning: No LICENSE file."
     ],
     "tags": [
       "daikin"
@@ -2572,7 +2618,8 @@
     "issues": [
       "Issue: There is no `package.json`. We need this file to gather information about the module.",
       "Typo: Found 'Magic Mirror' in file `MMM-DaikinAirbase.js`: Replace it with `MagicMirror\u00b2`.",
-      "Typo: Found 'Magic Mirror' in file `node_helper.js`: Replace it with `MagicMirror\u00b2`."
+      "Typo: Found 'Magic Mirror' in file `node_helper.js`: Replace it with `MagicMirror\u00b2`.",
+      "Warning: No LICENSE file."
     ]
   },
   {
@@ -2660,7 +2707,8 @@
     "description": "A module that displays the bible verse of the day from [DailyPower](https://dailypower.oemel09.de)",
     "issues": [
       "Issue: There is no `package.json`. We need this file to gather information about the module.",
-      "Recommendation: Found 'require('https')' in file `node_helper.js`: Replace it with built-in fetch."
+      "Recommendation: Found 'require('https')' in file `node_helper.js`: Replace it with built-in fetch.",
+      "Warning: No LICENSE file."
     ]
   },
   {
@@ -2701,7 +2749,8 @@
     "maintainerURL": "",
     "description": "Hourly weather and precipitation pulled from DarkSky **\u00b0DarkSky API no longer works since 2023-Mar-31**",
     "issues": [
-      "Issue: There is no `package.json`. We need this file to gather information about the module."
+      "Issue: There is no `package.json`. We need this file to gather information about the module.",
+      "Warning: No LICENSE file."
     ]
   },
   {
@@ -2713,7 +2762,8 @@
     "description": "shows weather information for the next 24 hours using the Dark Sky API. The idea of this module is to give you confidence on what to wear when you go outside / to work, or what transport mode you should take (in case you are a good weather-only biker). The hourly forecast gives you a good decision basis based on the weather condition at the times you go to work and return home. **\u00b0DarkSky API no longer works since 2023-Mar-31**",
     "issues": [
       "Issue: There is no `package.json`. We need this file to gather information about the module.",
-      "Typo: Found 'Magic Mirror' in file `weather.html`: Replace it with `MagicMirror\u00b2`."
+      "Typo: Found 'Magic Mirror' in file `weather.html`: Replace it with `MagicMirror\u00b2`.",
+      "Warning: No LICENSE file."
     ]
   },
   {
@@ -2727,7 +2777,8 @@
       "Typo: Found 'Magic Mirror' in file `MMM-DarkSkyForecast.js`: Replace it with `MagicMirror\u00b2`.",
       "Typo: Found 'Magic Mirror' in file `README.md`: Replace it with `MagicMirror\u00b2`.",
       "Deprecated: Found 'require(\"request\")' in file `node_helper.js`: Replace it with built-in fetch.",
-      "Typo: Found 'Magic Mirror' in file `package.json`: Replace it with `MagicMirror\u00b2`."
+      "Typo: Found 'Magic Mirror' in file `package.json`: Replace it with `MagicMirror\u00b2`.",
+      "Warning: No LICENSE file."
     ],
     "license": "MIT",
     "image": "icons-iconsets.jpg"
@@ -2743,7 +2794,8 @@
       "`package.json` issue: No description",
       "`package.json` issue: No repository field.",
       "`package.json` issue: No license field.",
-      "Typo: Found 'Magic Mirror' in file `MMM-DarkSkyRadar.js`: Replace it with `MagicMirror\u00b2`."
+      "Typo: Found 'Magic Mirror' in file `MMM-DarkSkyRadar.js`: Replace it with `MagicMirror\u00b2`.",
+      "Warning: No LICENSE file."
     ]
   },
   {
@@ -2756,7 +2808,8 @@
     "issues": [
       "Issue: There is no `package.json`. We need this file to gather information about the module.",
       "Typo: Found 'Magic Mirror' in file `MMM-DateCounter.js`: Replace it with `MagicMirror\u00b2`.",
-      "Recommendation: Found 'XMLHttpRequest' in file `MMM-DateCounter.js`: Replace it with built-in fetch."
+      "Recommendation: Found 'XMLHttpRequest' in file `MMM-DateCounter.js`: Replace it with built-in fetch.",
+      "Warning: No LICENSE file."
     ]
   },
   {
@@ -2768,7 +2821,8 @@
     "description": "Shows the date without a clock (if you have one in another place).",
     "issues": [
       "Issue: There is no `package.json`. We need this file to gather information about the module.",
-      "Typo: Found 'Magic Mirror' in file `MMM-DateOnly.js`: Replace it with `MagicMirror\u00b2`."
+      "Typo: Found 'Magic Mirror' in file `MMM-DateOnly.js`: Replace it with `MagicMirror\u00b2`.",
+      "Warning: No LICENSE file."
     ]
   },
   {
@@ -2781,7 +2835,8 @@
     "issues": [
       "Typo: Found 'Magic Mirror' in file `MMM-DBF.js`: Replace it with `MagicMirror\u00b2`.",
       "Recommendation: Found 'XMLHttpRequest' in file `MMM-DBF.js`: Replace it with built-in fetch.",
-      "Typo: Found 'Magic Mirror' in file `node_helper.js`: Replace it with `MagicMirror\u00b2`."
+      "Typo: Found 'Magic Mirror' in file `node_helper.js`: Replace it with `MagicMirror\u00b2`.",
+      "Warning: No LICENSE file."
     ],
     "license": "MIT",
     "image": "dbfApp_dark.jpg"
@@ -2840,7 +2895,8 @@
     "issues": [
       "Issue: There is no `package.json`. We need this file to gather information about the module.",
       "Recommendation: Found 'XMLHttpRequest' in file `MMM-DeLijn.js`: Replace it with built-in fetch.",
-      "Typo: Found 'Magic Mirror' in file `README.md`: Replace it with `MagicMirror\u00b2`."
+      "Typo: Found 'Magic Mirror' in file `README.md`: Replace it with `MagicMirror\u00b2`.",
+      "Warning: No LICENSE file."
     ]
   },
   {
@@ -2928,7 +2984,8 @@
     "maintainerURL": "",
     "description": "A module to display a random release from your [discogs.com](https://www.discogs.com) music collection. \u26a0\ufe0f **Module not maintained (GitHub repo has been archived)**",
     "issues": [
-      "Typo: Found 'Magic Mirror' in file `README.md`: Replace it with `MagicMirror\u00b2`."
+      "Typo: Found 'Magic Mirror' in file `README.md`: Replace it with `MagicMirror\u00b2`.",
+      "Warning: No LICENSE file."
     ],
     "tags": [
       "discogs"
@@ -3043,7 +3100,8 @@
       "Typo: Found 'Magic Mirror' in file `node_helper.js`: Replace it with `MagicMirror\u00b2`.",
       "Deprecated: Found 'require('request')' in file `node_helper.js`: Replace it with built-in fetch.",
       "Deprecated: Found 'omxplayer' in file `node_helper.js`: Try to replace it with `vlc`.",
-      "Deprecated: Found 'omxplayer' in file `package.json`: Try to replace it with `vlc`."
+      "Deprecated: Found 'omxplayer' in file `package.json`: Try to replace it with `vlc`.",
+      "Warning: No LICENSE file."
     ],
     "tags": [],
     "license": "ISC",
@@ -3072,7 +3130,8 @@
     "description": "Show photos from `Dropbox` as wallpaper",
     "issues": [
       "Typo: Found 'Magic Mirror' in file `MMM-DropboxWallpaper.js`: Replace it with `MagicMirror\u00b2`.",
-      "Deprecated: Found 'require('request')' in file `node_helper.js`: Replace it with built-in fetch."
+      "Deprecated: Found 'require('request')' in file `node_helper.js`: Replace it with built-in fetch.",
+      "Warning: No LICENSE file."
     ],
     "license": "MIT",
     "image": "sc.jpg"
@@ -3156,7 +3215,8 @@
       "Typo: Found 'MagicMirror2' in file `README.md`: Replace it with `MagicMirror\u00b2`.",
       "Typo: Found 'Magic Mirror' in file `node_helper.js`: Replace it with `MagicMirror\u00b2`.",
       "Recommendation: Found 'node-fetch' in file `node_helper.js`: Replace it with built-in fetch.",
-      "Recommendation: Found 'node-fetch' in file `package.json`: Replace it with built-in fetch."
+      "Recommendation: Found 'node-fetch' in file `package.json`: Replace it with built-in fetch.",
+      "Warning: No LICENSE file."
     ],
     "license": "ISC",
     "image": "screenshot.jpg"
@@ -3170,7 +3230,8 @@
     "description": "Change positions of modules.",
     "issues": [
       "Issue: There is no `package.json`. We need this file to gather information about the module.",
-      "Typo: Found 'Magic Mirror' in file `README.md`: Replace it with `MagicMirror\u00b2`."
+      "Typo: Found 'Magic Mirror' in file `README.md`: Replace it with `MagicMirror\u00b2`.",
+      "Warning: No LICENSE file."
     ]
   },
   {
@@ -3313,7 +3374,8 @@
     "maintainerURL": "",
     "description": "Show the interface throughput of an Ubiquity EdgeRouter",
     "issues": [
-      "Typo: Found 'MagicMirror2' in file `package.json`: Replace it with `MagicMirror\u00b2`."
+      "Typo: Found 'MagicMirror2' in file `package.json`: Replace it with `MagicMirror\u00b2`.",
+      "Warning: No LICENSE file."
     ],
     "tags": [
       "edgerouter",
@@ -3407,7 +3469,8 @@
     "description": "Embed youtube video and playlist.",
     "issues": [
       "Issue: There is no `package.json`. We need this file to gather information about the module.",
-      "Typo: Found 'Magic Mirror' in file `MMM-EmbedYoutube.js`: Replace it with `MagicMirror\u00b2`."
+      "Typo: Found 'Magic Mirror' in file `MMM-EmbedYoutube.js`: Replace it with `MagicMirror\u00b2`.",
+      "Warning: No LICENSE file."
     ]
   },
   {
@@ -3431,7 +3494,8 @@
     "maintainerURL": "",
     "description": "Get estimations for bus stops in the city of Valencia (Spain)",
     "issues": [
-      "Issue: No image found."
+      "Issue: No image found.",
+      "Warning: No LICENSE file."
     ],
     "tags": [
       "bus stop",
@@ -3720,7 +3784,8 @@
     "issues": [
       "Issue: No image found.",
       "Typo: Found 'Magic Mirror' in file `MMM-Facial-Recognition.js`: Replace it with `MagicMirror\u00b2`.",
-      "Typo: Found 'Magic Mirror' in file `package.json`: Replace it with `MagicMirror\u00b2`."
+      "Typo: Found 'Magic Mirror' in file `package.json`: Replace it with `MagicMirror\u00b2`.",
+      "Warning: No LICENSE file."
     ],
     "tags": [
       "facial recognition"
@@ -4054,7 +4119,8 @@
     "description": "A module to raise an image of a flag according to national flag rules. (Norwegian rules) Fetches sunrise and sunset times using [Steder-API](https://steder-api.no)",
     "issues": [
       "Issue: There is no `package.json`. We need this file to gather information about the module.",
-      "Typo: Found 'MagicMirror2' in file `README.md`: Replace it with `MagicMirror\u00b2`."
+      "Typo: Found 'MagicMirror2' in file `README.md`: Replace it with `MagicMirror\u00b2`.",
+      "Warning: No LICENSE file."
     ]
   },
   {
@@ -4217,7 +4283,8 @@
       "Typo: Found 'Magic Mirror' in file `MMM-Flo.js`: Replace it with `MagicMirror\u00b2`.",
       "Typo: Found 'Magic Mirror' in file `README.md`: Replace it with `MagicMirror\u00b2`.",
       "Typo: Found 'Magic Mirror' in file `node_helper.js`: Replace it with `MagicMirror\u00b2`.",
-      "Deprecated: Found 'require(\"request\")' in file `node_helper.js`: Replace it with built-in fetch."
+      "Deprecated: Found 'require(\"request\")' in file `node_helper.js`: Replace it with built-in fetch.",
+      "Warning: No LICENSE file."
     ]
   },
   {
@@ -4232,7 +4299,8 @@
       "Typo: Found 'Magic Mirror' in file `MMM-FloGraph.js`: Replace it with `MagicMirror\u00b2`.",
       "Typo: Found 'Magic Mirror' in file `README.md`: Replace it with `MagicMirror\u00b2`.",
       "Typo: Found 'Magic Mirror' in file `node_helper.js`: Replace it with `MagicMirror\u00b2`.",
-      "Deprecated: Found 'require(\"request\")' in file `node_helper.js`: Replace it with built-in fetch."
+      "Deprecated: Found 'require(\"request\")' in file `node_helper.js`: Replace it with built-in fetch.",
+      "Warning: No LICENSE file."
     ]
   },
   {
@@ -4258,7 +4326,8 @@
     "description": "Display weather based on forecast API.",
     "issues": [
       "Issue: There is no `package.json`. We need this file to gather information about the module.",
-      "Recommendation: Found 'XMLHttpRequest' in file `d3.min.js`: Replace it with built-in fetch."
+      "Recommendation: Found 'XMLHttpRequest' in file `d3.min.js`: Replace it with built-in fetch.",
+      "Warning: No LICENSE file."
     ]
   },
   {
@@ -4270,7 +4339,8 @@
     "description": "Fork of [MMM-forecast-io](https://github.com/dmcinnes/MMM-forecast-io) Display weather based on forecast API. Uses the `INDOOR_TEMPERATURE` notification to display the indoor temperature emmited by some modules",
     "issues": [
       "Issue: There is no `package.json`. We need this file to gather information about the module.",
-      "Recommendation: Found 'XMLHttpRequest' in file `d3.min.js`: Replace it with built-in fetch."
+      "Recommendation: Found 'XMLHttpRequest' in file `d3.min.js`: Replace it with built-in fetch.",
+      "Warning: No LICENSE file."
     ]
   },
   {
@@ -4383,7 +4453,8 @@
     "maintainerURL": "",
     "description": "Show your horoscope of the day, the week or the month on your MagicMirror\u00b2. Currently only in French.",
     "issues": [
-      "Issue: No image found."
+      "Issue: No image found.",
+      "Warning: No LICENSE file."
     ],
     "license": "ISC"
   },
@@ -4397,7 +4468,8 @@
     "issues": [
       "Issue: No image found.",
       "Typo: Found 'Magic Mirror' in file `MMM-FRITZ-Box-Callmonitor-py3.js`: Replace it with `MagicMirror\u00b2`.",
-      "Typo: Found 'Magic Mirror' in file `package.json`: Replace it with `MagicMirror\u00b2`."
+      "Typo: Found 'Magic Mirror' in file `package.json`: Replace it with `MagicMirror\u00b2`.",
+      "Warning: No LICENSE file."
     ],
     "tags": [
       "callmonitor"
@@ -4412,7 +4484,8 @@
     "maintainerURL": "https://github.com/eckonator",
     "description": "The module builds charts to your FR\u00d6LING pellet boiler based on data from the FR\u00d6LING Connect API. Inspiration and code base comes from [TA2k/ioBroker.froeling](https://github.com/TA2k/ioBroker.froeling).",
     "issues": [
-      "Typo: Found 'Magic Mirror' in file `MMM-FroelingConnect.js`: Replace it with `MagicMirror\u00b2`."
+      "Typo: Found 'Magic Mirror' in file `MMM-FroelingConnect.js`: Replace it with `MagicMirror\u00b2`.",
+      "Warning: No LICENSE file."
     ],
     "tags": [
       "magicmirrir",
@@ -4522,7 +4595,8 @@
     "issues": [
       "Typo: Found 'Magic Mirror' in file `MMM-FunnyHolidays.js`: Replace it with `MagicMirror\u00b2`.",
       "Typo: Found 'Magic Mirror' in file `node_helper.js`: Replace it with `MagicMirror\u00b2`.",
-      "Deprecated: Found 'require('request')' in file `node_helper.js`: Replace it with built-in fetch."
+      "Deprecated: Found 'require('request')' in file `node_helper.js`: Replace it with built-in fetch.",
+      "Warning: No LICENSE file."
     ],
     "tags": [
       "calendar"
@@ -4575,7 +4649,8 @@
     "maintainerURL": "",
     "description": "Use Gamepad to send event of exec a command.",
     "issues": [
-      "Issue: There is no `package.json`. We need this file to gather information about the module."
+      "Issue: There is no `package.json`. We need this file to gather information about the module.",
+      "Warning: No LICENSE file."
     ]
   },
   {
@@ -4601,7 +4676,8 @@
     "description": "Track your GCP (Google Cloud Platform) activity.",
     "issues": [
       "Typo: Found 'Magic Mirror' in file `MMM-GCP.js`: Replace it with `MagicMirror\u00b2`.",
-      "Typo: Found 'Magic Mirror' in file `node_helper.js`: Replace it with `MagicMirror\u00b2`."
+      "Typo: Found 'Magic Mirror' in file `node_helper.js`: Replace it with `MagicMirror\u00b2`.",
+      "Warning: No LICENSE file."
     ],
     "tags": [
       "gcp",
@@ -4652,7 +4728,8 @@
       "Typo: Found 'Magic Mirror' in file `README.MD`: Replace it with `MagicMirror\u00b2`.",
       "Deprecated: Found 'electron-rebuild' in file `README.MD`: Replace it with `@electron/rebuild`",
       "Typo: Found 'Magic Mirror' in file `package.json`: Replace it with `MagicMirror\u00b2`.",
-      "Deprecated: Found 'electron-rebuild' in file `postinstall`: Replace it with `@electron/rebuild`"
+      "Deprecated: Found 'electron-rebuild' in file `postinstall`: Replace it with `@electron/rebuild`",
+      "Warning: No LICENSE file."
     ],
     "tags": [
       "gesture",
@@ -4700,7 +4777,8 @@
     "description": "Displays clickable GitHub notifications",
     "issues": [
       "`package.json` issue: No repository field.",
-      "`package.json` issue: No license field."
+      "`package.json` issue: No license field.",
+      "Warning: No LICENSE file."
     ]
   },
   {
@@ -4739,7 +4817,8 @@
     "issues": [
       "`package.json` issue: No description",
       "Typo: Found 'Magic Mirror' in file `MMM-Globe.js`: Replace it with `MagicMirror\u00b2`.",
-      "Typo: Found 'MagicMirror2' in file `README.md`: Replace it with `MagicMirror\u00b2`."
+      "Typo: Found 'MagicMirror2' in file `README.md`: Replace it with `MagicMirror\u00b2`.",
+      "Warning: No LICENSE file."
     ],
     "license": "MIT",
     "image": "screenshot.jpg"
@@ -4754,7 +4833,8 @@
     "issues": [
       "`package.json` issue: No repository field.",
       "`package.json` issue: No license field.",
-      "Deprecated: Found 'require(\"request\")' in file `node_helper.js`: Replace it with built-in fetch."
+      "Deprecated: Found 'require(\"request\")' in file `node_helper.js`: Replace it with built-in fetch.",
+      "Warning: No LICENSE file."
     ],
     "tags": [
       "mirror email"
@@ -4768,7 +4848,8 @@
     "maintainerURL": "",
     "description": "Displays the two best routes from an origin to a destination, using Google Directions API.",
     "issues": [
-      "Issue: There is no `package.json`. We need this file to gather information about the module."
+      "Issue: There is no `package.json`. We need this file to gather information about the module.",
+      "Warning: No LICENSE file."
     ]
   },
   {
@@ -4970,7 +5051,8 @@
       "Issue: There is no `package.json`. We need this file to gather information about the module.",
       "Typo: Found 'Magic Mirror' in file `MMM-GoogleSheets.js`: Replace it with `MagicMirror\u00b2`.",
       "Typo: Found 'Magic Mirror' in file `README.md`: Replace it with `MagicMirror\u00b2`.",
-      "Deprecated: Found 'require(\"request\")' in file `node_helper.js`: Replace it with built-in fetch."
+      "Deprecated: Found 'require(\"request\")' in file `node_helper.js`: Replace it with built-in fetch.",
+      "Warning: No LICENSE file."
     ]
   },
   {
@@ -4992,7 +5074,8 @@
     "maintainerURL": "",
     "description": "Display Google Tasks",
     "issues": [
-      "Issue: There is no `package.json`. We need this file to gather information about the module."
+      "Issue: There is no `package.json`. We need this file to gather information about the module.",
+      "Warning: No LICENSE file."
     ]
   },
   {
@@ -5003,7 +5086,8 @@
     "maintainerURL": "",
     "description": "Updated Google Tasks display module",
     "issues": [
-      "Issue: There is no `package.json`. We need this file to gather information about the module."
+      "Issue: There is no `package.json`. We need this file to gather information about the module.",
+      "Warning: No LICENSE file."
     ]
   },
   {
@@ -5014,7 +5098,8 @@
     "maintainerURL": "",
     "description": "Lists travel times to requested locations taking into account Google traffic information.",
     "issues": [
-      "`package.json` issue: No repository field."
+      "`package.json` issue: No repository field.",
+      "Warning: No LICENSE file."
     ],
     "license": "MIT",
     "image": "MMM-GoogleTrafficTimes.jpg"
@@ -5027,7 +5112,8 @@
     "maintainerURL": "https://github.com/jacopo1891",
     "description": "Lists travel times to requested locations taking into account Google traffic information with \"classic view\".",
     "issues": [
-      "`package.json` issue: No repository field."
+      "`package.json` issue: No repository field.",
+      "Warning: No LICENSE file."
     ],
     "license": "MIT",
     "image": "screen-01-minimal_look.jpg"
@@ -5089,7 +5175,8 @@
     "issues": [
       "Issue: There is no `package.json`. We need this file to gather information about the module.",
       "Typo: Found 'Magic Mirror' in file `MMM-GPSWeather.js`: Replace it with `MagicMirror\u00b2`.",
-      "Recommendation: Found 'XMLHttpRequest' in file `MMM-GPSWeather.js`: Replace it with built-in fetch."
+      "Recommendation: Found 'XMLHttpRequest' in file `MMM-GPSWeather.js`: Replace it with built-in fetch.",
+      "Warning: No LICENSE file."
     ]
   },
   {
@@ -5192,7 +5279,8 @@
       "Typo: Found 'Magic Mirror' in file `MMM-HappyHours.js`: Replace it with `MagicMirror\u00b2`.",
       "Typo: Found 'Magic Mirror' in file `README.md`: Replace it with `MagicMirror\u00b2`.",
       "Typo: Found 'Magic Mirror' in file `node_helper.js`: Replace it with `MagicMirror\u00b2`.",
-      "Deprecated: Found 'require('request')' in file `node_helper.js`: Replace it with built-in fetch."
+      "Deprecated: Found 'require('request')' in file `node_helper.js`: Replace it with built-in fetch.",
+      "Warning: No LICENSE file."
     ]
   },
   {
@@ -5222,7 +5310,8 @@
     "description": "Display the temperature and humidity of the I2C-based HDC1080-sensor.",
     "issues": [
       "Issue: There is no `package.json`. We need this file to gather information about the module.",
-      "Typo: Found 'Magic Mirror' in file `node_helper.js`: Replace it with `MagicMirror\u00b2`."
+      "Typo: Found 'Magic Mirror' in file `node_helper.js`: Replace it with `MagicMirror\u00b2`.",
+      "Warning: No LICENSE file."
     ]
   },
   {
@@ -5305,7 +5394,8 @@
     "issues": [
       "Issue: There is no `package.json`. We need this file to gather information about the module.",
       "Typo: Found 'Magic Mirror' in file `MMM-HideAll.js`: Replace it with `MagicMirror\u00b2`.",
-      "Recommendation: Found 'XMLHttpRequest' in file `jquery.js`: Replace it with built-in fetch."
+      "Recommendation: Found 'XMLHttpRequest' in file `jquery.js`: Replace it with built-in fetch.",
+      "Warning: No LICENSE file."
     ]
   },
   {
@@ -5319,7 +5409,8 @@
       "Issue: No image found.",
       "Typo: Found 'Magic Mirror' in file `MMM-History.js`: Replace it with `MagicMirror\u00b2`.",
       "Typo: Found 'Magic Mirror' in file `node_helper.js`: Replace it with `MagicMirror\u00b2`.",
-      "Deprecated: Found 'require('request')' in file `node_helper.js`: Replace it with built-in fetch."
+      "Deprecated: Found 'require('request')' in file `node_helper.js`: Replace it with built-in fetch.",
+      "Warning: No LICENSE file."
     ],
     "license": "MIT"
   },
@@ -5400,7 +5491,8 @@
     "description": "Monitors reachability of local IP addresses.",
     "issues": [
       "Issue: No image found.",
-      "Typo: Found 'Magic Mirror' in file `package.json`: Replace it with `MagicMirror\u00b2`."
+      "Typo: Found 'Magic Mirror' in file `package.json`: Replace it with `MagicMirror\u00b2`.",
+      "Warning: No LICENSE file."
     ],
     "license": "MIT"
   },
@@ -5457,7 +5549,8 @@
     "description": "Displays information from HomeAssistant via Rest API. Litens for State changes with Websockets. Touch control for Entities",
     "issues": [
       "`package.json` issue: No description",
-      "`package.json` issue: No repository field."
+      "`package.json` issue: No repository field.",
+      "Warning: No LICENSE file."
     ],
     "license": "ISC",
     "image": "screenshots-1.jpg"
@@ -5502,7 +5595,8 @@
     "description": "Shows status such as remaining program time of your Home Connect appliances.",
     "issues": [
       "Typo: Found 'Magic Mirror' in file `README.md`: Replace it with `MagicMirror\u00b2`.",
-      "Typo: Found 'Magic Mirror' in file `package.json`: Replace it with `MagicMirror\u00b2`."
+      "Typo: Found 'Magic Mirror' in file `package.json`: Replace it with `MagicMirror\u00b2`.",
+      "Warning: No LICENSE file."
     ],
     "tags": [],
     "license": "ISC",
@@ -5534,7 +5628,8 @@
     "description": "Requests device information from the HomeMatic CCU and displays them grouped by the assigned room.",
     "issues": [
       "Recommendation: Found 'XMLHttpRequest' in file `node_helper.js`: Replace it with built-in fetch.",
-      "Typo: Found 'MagicMirror2' in file `package.json`: Replace it with `MagicMirror\u00b2`."
+      "Typo: Found 'MagicMirror2' in file `package.json`: Replace it with `MagicMirror\u00b2`.",
+      "Warning: No LICENSE file."
     ],
     "tags": [
       "homematic",
@@ -5638,7 +5733,8 @@
     "issues": [
       "Issue: There is no `package.json`. We need this file to gather information about the module.",
       "Typo: Found 'Magic Mirror' in file `MMM-Hue.js`: Replace it with `MagicMirror\u00b2`.",
-      "Recommendation: Found 'XMLHttpRequest' in file `jquery.js`: Replace it with built-in fetch."
+      "Recommendation: Found 'XMLHttpRequest' in file `jquery.js`: Replace it with built-in fetch.",
+      "Warning: No LICENSE file."
     ]
   },
   {
@@ -5679,7 +5775,8 @@
     "issues": [
       "Issue: There is no `package.json`. We need this file to gather information about the module.",
       "Typo: Found 'Magic Mirror' in file `README.md`: Replace it with `MagicMirror\u00b2`.",
-      "Deprecated: Found 'require('request')' in file `node_helper.js`: Replace it with built-in fetch."
+      "Deprecated: Found 'require('request')' in file `node_helper.js`: Replace it with built-in fetch.",
+      "Warning: No LICENSE file."
     ]
   },
   {
@@ -5729,7 +5826,8 @@
     "description": "MMM-ICA is a Module for connecting to the Swedish grocery store ICA API and get information.",
     "issues": [
       "Issue: There is no `package.json`. We need this file to gather information about the module.",
-      "Typo: Found 'Magic Mirror' in file `README.md`: Replace it with `MagicMirror\u00b2`."
+      "Typo: Found 'Magic Mirror' in file `README.md`: Replace it with `MagicMirror\u00b2`.",
+      "Warning: No LICENSE file."
     ]
   },
   {
@@ -5776,7 +5874,8 @@
     "description": "A module that shows a icon according to a MagicMirror\u00b2 notification.",
     "issues": [
       "Issue: There is no `package.json`. We need this file to gather information about the module.",
-      "Typo: Found 'Magic Mirror' in file `MMM-IconDisplayer.js`: Replace it with `MagicMirror\u00b2`."
+      "Typo: Found 'Magic Mirror' in file `MMM-IconDisplayer.js`: Replace it with `MagicMirror\u00b2`.",
+      "Warning: No LICENSE file."
     ]
   },
   {
@@ -5838,7 +5937,8 @@
       "Typo: Found 'Magic Mirror' in file `MMM-idos.js`: Replace it with `MagicMirror\u00b2`.",
       "Typo: Found 'Magic Mirror' in file `README.md`: Replace it with `MagicMirror\u00b2`.",
       "Typo: Found 'Magic Mirror' in file `node-idos.js`: Replace it with `MagicMirror\u00b2`.",
-      "Typo: Found 'Magic Mirror' in file `node_helper.js`: Replace it with `MagicMirror\u00b2`."
+      "Typo: Found 'Magic Mirror' in file `node_helper.js`: Replace it with `MagicMirror\u00b2`.",
+      "Warning: No LICENSE file."
     ],
     "tags": [
       "bus stop",
@@ -5859,7 +5959,8 @@
     "issues": [
       "Issue: No image found.",
       "Typo: Found 'Magic Mirror' in file `MMM-iFrame.js`: Replace it with `MagicMirror\u00b2`.",
-      "Typo: Found 'Magic Mirror' in file `package.json`: Replace it with `MagicMirror\u00b2`."
+      "Typo: Found 'Magic Mirror' in file `package.json`: Replace it with `MagicMirror\u00b2`.",
+      "Warning: No LICENSE file."
     ],
     "tags": [
       "iframe"
@@ -5877,7 +5978,8 @@
       "Issue: No image found.",
       "Recommendation: Module name doesn't follow the recommended pattern (it doesn't start with `MMM-`). Consider renaming your module.",
       "Typo: Found 'Magic Mirror' in file `iFrame.js`: Replace it with `MagicMirror\u00b2`.",
-      "Typo: Found 'Magic Mirror' in file `package.json`: Replace it with `MagicMirror\u00b2`."
+      "Typo: Found 'Magic Mirror' in file `package.json`: Replace it with `MagicMirror\u00b2`.",
+      "Warning: No LICENSE file."
     ],
     "tags": [
       "iframe"
@@ -5908,7 +6010,8 @@
       "Typo: Found 'Magic Mirror' in file `README.md`: Replace it with `MagicMirror\u00b2`.",
       "Typo: Found 'Magic Mirror' in file `node_helper.js`: Replace it with `MagicMirror\u00b2`.",
       "Deprecated: Found 'require('request')' in file `node_helper.js`: Replace it with built-in fetch.",
-      "Typo: Found 'Magic Mirror' in file `package.json`: Replace it with `MagicMirror\u00b2`."
+      "Typo: Found 'Magic Mirror' in file `package.json`: Replace it with `MagicMirror\u00b2`.",
+      "Warning: No LICENSE file."
     ],
     "tags": [
       "iframe",
@@ -6020,7 +6123,8 @@
     "issues": [
       "Issue: No image found.",
       "Typo: Found 'Magic Mirror' in file `MMM-IndoorTemp.js`: Replace it with `MagicMirror\u00b2`.",
-      "Typo: Found 'Magic Mirror' in file `node_helper.js`: Replace it with `MagicMirror\u00b2`."
+      "Typo: Found 'Magic Mirror' in file `node_helper.js`: Replace it with `MagicMirror\u00b2`.",
+      "Warning: No LICENSE file."
     ],
     "tags": [
       "mqtt",
@@ -6037,7 +6141,8 @@
     "description": "This module exposes a HTTP-endpoint on the MagicMirror\u00b2 that can receive the indoor temperature and then emits that value as notification \"INDOOR_TEMPERATURE\".",
     "issues": [
       "`package.json` issue: No license field.",
-      "Typo: Found 'Magic Mirror' in file `README.md`: Replace it with `MagicMirror\u00b2`."
+      "Typo: Found 'Magic Mirror' in file `README.md`: Replace it with `MagicMirror\u00b2`.",
+      "Warning: No LICENSE file."
     ]
   },
   {
@@ -6050,7 +6155,8 @@
     "issues": [
       "Issue: There is no `package.json`. We need this file to gather information about the module.",
       "Recommendation: Found 'XMLHttpRequest' in file `MMM-inspirobot.js`: Replace it with built-in fetch.",
-      "Typo: Found 'Magic Mirror' in file `README.md`: Replace it with `MagicMirror\u00b2`."
+      "Typo: Found 'Magic Mirror' in file `README.md`: Replace it with `MagicMirror\u00b2`.",
+      "Warning: No LICENSE file."
     ]
   },
   {
@@ -6065,7 +6171,8 @@
       "Typo: Found 'Magic Mirror' in file `MMM-Instagram.js`: Replace it with `MagicMirror\u00b2`.",
       "Typo: Found 'MagicMirror2' in file `README.md`: Replace it with `MagicMirror\u00b2`.",
       "Typo: Found 'Magic Mirror' in file `node_helper.js`: Replace it with `MagicMirror\u00b2`.",
-      "Deprecated: Found 'require('request')' in file `node_helper.js`: Replace it with built-in fetch."
+      "Deprecated: Found 'require('request')' in file `node_helper.js`: Replace it with built-in fetch.",
+      "Warning: No LICENSE file."
     ],
     "tags": [
       "traffic"
@@ -6234,7 +6341,8 @@
     "issues": [
       "Issue: There is no `package.json`. We need this file to gather information about the module.",
       "Recommendation: Found 'XMLHttpRequest' in file `MMM-IPT.js`: Replace it with built-in fetch.",
-      "Typo: Found 'Magic Mirror' in file `README.md`: Replace it with `MagicMirror\u00b2`."
+      "Typo: Found 'Magic Mirror' in file `README.md`: Replace it with `MagicMirror\u00b2`.",
+      "Warning: No LICENSE file."
     ]
   },
   {
@@ -6247,7 +6355,8 @@
     "issues": [
       "Issue: There is no `package.json`. We need this file to gather information about the module.",
       "Typo: Found 'Magic Mirror' in file `node_helper.js`: Replace it with `MagicMirror\u00b2`.",
-      "Recommendation: Found 'require(\"https\")' in file `node_helper.js`: Replace it with built-in fetch."
+      "Recommendation: Found 'require(\"https\")' in file `node_helper.js`: Replace it with built-in fetch.",
+      "Warning: No LICENSE file."
     ]
   },
   {
@@ -6332,7 +6441,8 @@
       "Typo: Found 'Magic Mirror' in file `README.md`: Replace it with `MagicMirror\u00b2`.",
       "Typo: Found 'Magic Mirror' in file `node_helper.js`: Replace it with `MagicMirror\u00b2`.",
       "Deprecated: Found 'require('request')' in file `node_helper.js`: Replace it with built-in fetch.",
-      "Recommendation: Found 'XMLHttpRequest' in file `node_helper.js`: Replace it with built-in fetch."
+      "Recommendation: Found 'XMLHttpRequest' in file `node_helper.js`: Replace it with built-in fetch.",
+      "Warning: No LICENSE file."
     ]
   },
   {
@@ -6387,7 +6497,8 @@
     "issues": [
       "Issue: There is no `package.json`. We need this file to gather information about the module.",
       "Typo: Found 'Magic Mirror' in file `MMM-JewishDate.js`: Replace it with `MagicMirror\u00b2`.",
-      "Recommendation: Found 'XMLHttpRequest' in file `MMM-JewishDate.js`: Replace it with built-in fetch."
+      "Recommendation: Found 'XMLHttpRequest' in file `MMM-JewishDate.js`: Replace it with built-in fetch.",
+      "Warning: No LICENSE file."
     ]
   },
   {
@@ -6442,7 +6553,8 @@
     "maintainerURL": "https://github.com/Kreshnik",
     "description": "Module that shows jokes from the JokeAPI.",
     "issues": [
-      "Issue: There is no `package.json`. We need this file to gather information about the module."
+      "Issue: There is no `package.json`. We need this file to gather information about the module.",
+      "Warning: No LICENSE file."
     ]
   },
   {
@@ -6457,7 +6569,8 @@
       "Typo: Found 'Magic Mirror' in file `MMM-jokes.js`: Replace it with `MagicMirror\u00b2`.",
       "Typo: Found 'Magic Mirror' in file `node_helper.js`: Replace it with `MagicMirror\u00b2`.",
       "Deprecated: Found 'require('request')' in file `node_helper.js`: Replace it with built-in fetch.",
-      "Typo: Found 'Magic Mirror' in file `package.json`: Replace it with `MagicMirror\u00b2`."
+      "Typo: Found 'Magic Mirror' in file `package.json`: Replace it with `MagicMirror\u00b2`.",
+      "Warning: No LICENSE file."
     ],
     "tags": [
       "jokes"
@@ -6502,7 +6615,8 @@
     "description": "Creates a SVG bar chart based on a list gathered from a json request",
     "issues": [
       "Issue: There is no `package.json`. We need this file to gather information about the module.",
-      "Deprecated: Found 'require('request')' in file `node_helper.js`: Replace it with built-in fetch."
+      "Deprecated: Found 'require('request')' in file `node_helper.js`: Replace it with built-in fetch.",
+      "Warning: No LICENSE file."
     ]
   },
   {
@@ -6535,7 +6649,8 @@
     "issues": [
       "`package.json` issue: No repository field.",
       "`package.json` issue: No license field.",
-      "Recommendation: Found 'uses: actions/checkout@v3' in file `runtest.yml`: Replace it with v4."
+      "Recommendation: Found 'uses: actions/checkout@v3' in file `runtest.yml`: Replace it with v4.",
+      "Warning: No LICENSE file."
     ]
   },
   {
@@ -6589,7 +6704,8 @@
     "description": "Control MM from Kalliope assistant",
     "issues": [
       "Issue: There is no `package.json`. We need this file to gather information about the module.",
-      "Typo: Found 'Magic Mirror' in file `README.md`: Replace it with `MagicMirror\u00b2`."
+      "Typo: Found 'Magic Mirror' in file `README.md`: Replace it with `MagicMirror\u00b2`.",
+      "Warning: No LICENSE file."
     ]
   },
   {
@@ -6602,7 +6718,8 @@
     "issues": [
       "Typo: Found 'Magic Mirror' in file `MMM-Kanji-Random.js`: Replace it with `MagicMirror\u00b2`.",
       "Typo: Found 'Magic Mirror' in file `node_helper.js`: Replace it with `MagicMirror\u00b2`.",
-      "Deprecated: Found 'require(\"request\")' in file `node_helper.js`: Replace it with built-in fetch."
+      "Deprecated: Found 'require(\"request\")' in file `node_helper.js`: Replace it with built-in fetch.",
+      "Warning: No LICENSE file."
     ],
     "license": "MIT",
     "image": "screenshot.jpg"
@@ -6637,7 +6754,8 @@
     "description": "Use the keyboard to open and close a popupwindow in the MagicMirror\u00b2. Like lets say using the \"q\" key will open a popupwindow on MagicMirror's webpage. Using the iFrame to display web content",
     "issues": [
       "Issue: There is no `package.json`. We need this file to gather information about the module.",
-      "Recommendation: Module name doesn't follow the recommended pattern (it doesn't start with `MMM-`). Consider renaming your module."
+      "Recommendation: Module name doesn't follow the recommended pattern (it doesn't start with `MMM-`). Consider renaming your module.",
+      "Warning: No LICENSE file."
     ]
   },
   {
@@ -6648,7 +6766,8 @@
     "maintainerURL": "https://github.com/ItsMeBrille",
     "description": "A module for sending notifications to other modules based on keys pressed",
     "issues": [
-      "Issue: There is no `package.json`. We need this file to gather information about the module."
+      "Issue: There is no `package.json`. We need this file to gather information about the module.",
+      "Warning: No LICENSE file."
     ]
   },
   {
@@ -6732,7 +6851,8 @@
       "Typo: Found 'Magic Mirror' in file `MMM-LAMetro.js`: Replace it with `MagicMirror\u00b2`.",
       "Typo: Found 'Magic Mirror' in file `README.md`: Replace it with `MagicMirror\u00b2`.",
       "Deprecated: Found 'require('request')' in file `node_helper.js`: Replace it with built-in fetch.",
-      "Deprecated: Found 'require('request')' in file `pt_helper.js`: Replace it with built-in fetch."
+      "Deprecated: Found 'require('request')' in file `pt_helper.js`: Replace it with built-in fetch.",
+      "Warning: No LICENSE file."
     ],
     "tags": [
       "lametro"
@@ -6749,7 +6869,8 @@
     "description": "Displays the Last.fm scrobble currently playing. Supports Spotify, YouTube, Tidal, SoundCloud, MixCloud and [many others](https://www.last.fm/about/trackmymusic).",
     "issues": [
       "Issue: There is no `package.json`. We need this file to gather information about the module.",
-      "Recommendation: Found 'uses: actions/checkout@v3' in file `codeql-analysis.yml`: Replace it with v4."
+      "Recommendation: Found 'uses: actions/checkout@v3' in file `codeql-analysis.yml`: Replace it with v4.",
+      "Warning: No LICENSE file."
     ]
   },
   {
@@ -6810,7 +6931,8 @@
       "Recommendation: Found 'XMLHttpRequest' in file `MMM-learnlanguage.js`: Replace it with built-in fetch.",
       "Typo: Found 'Magic Mirror' in file `README.md`: Replace it with `MagicMirror\u00b2`.",
       "Typo: Found 'Magic Mirror' in file `node_helper.js`: Replace it with `MagicMirror\u00b2`.",
-      "Deprecated: Found 'require('request')' in file `node_helper.js`: Replace it with built-in fetch."
+      "Deprecated: Found 'require('request')' in file `node_helper.js`: Replace it with built-in fetch.",
+      "Warning: No LICENSE file."
     ]
   },
   {
@@ -6823,7 +6945,8 @@
     "issues": [
       "`package.json` issue: No description",
       "Typo: Found 'Magic Mirror' in file `MMM-LEDStripControl.js`: Replace it with `MagicMirror\u00b2`.",
-      "Typo: Found 'Magic Mirror' in file `node_helper.js`: Replace it with `MagicMirror\u00b2`."
+      "Typo: Found 'Magic Mirror' in file `node_helper.js`: Replace it with `MagicMirror\u00b2`.",
+      "Warning: No LICENSE file."
     ],
     "license": "MIT",
     "image": "screenshots-led-control-all-options.jpg"
@@ -6854,7 +6977,8 @@
       "Issue: There is no `package.json`. We need this file to gather information about the module.",
       "Typo: Found 'Magic Mirror' in file `MMM-Letterboxd.js`: Replace it with `MagicMirror\u00b2`.",
       "Typo: Found 'Magic Mirror' in file `node_helper.js`: Replace it with `MagicMirror\u00b2`.",
-      "Recommendation: Found 'node-fetch' in file `node_helper.js`: Replace it with built-in fetch."
+      "Recommendation: Found 'node-fetch' in file `node_helper.js`: Replace it with built-in fetch.",
+      "Warning: No LICENSE file."
     ]
   },
   {
@@ -6896,7 +7020,8 @@
     "maintainerURL": "",
     "description": "The lichess.org daily puzzle",
     "issues": [
-      "Issue: There is no `package.json`. We need this file to gather information about the module."
+      "Issue: There is no `package.json`. We need this file to gather information about the module.",
+      "Warning: No LICENSE file."
     ]
   },
   {
@@ -6913,7 +7038,8 @@
       "Recommendation: Found 'node-fetch' in file `fetch_logos.js`: Replace it with built-in fetch.",
       "Recommendation: Found 'node-fetch' in file `node_helper.js`: Replace it with built-in fetch.",
       "Typo: Found 'Magic Mirror' in file `package.json`: Replace it with `MagicMirror\u00b2`.",
-      "Recommendation: Found 'node-fetch' in file `package.json`: Replace it with built-in fetch."
+      "Recommendation: Found 'node-fetch' in file `package.json`: Replace it with built-in fetch.",
+      "Warning: No LICENSE file."
     ]
   },
   {
@@ -6968,7 +7094,8 @@
     "issues": [
       "Issue: There is no `package.json`. We need this file to gather information about the module.",
       "Typo: Found 'Magic Mirror' in file `custom.md`: Replace it with `MagicMirror\u00b2`.",
-      "Typo: Found 'Magic Mirror' in file `MMM-LoadShedding.js`: Replace it with `MagicMirror\u00b2`."
+      "Typo: Found 'Magic Mirror' in file `MMM-LoadShedding.js`: Replace it with `MagicMirror\u00b2`.",
+      "Warning: No LICENSE file."
     ]
   },
   {
@@ -7020,7 +7147,8 @@
     "description": "A lightweight local video player.",
     "issues": [
       "Issue: There is no `package.json`. We need this file to gather information about the module.",
-      "Typo: Found 'Magic Mirror' in file `README.md`: Replace it with `MagicMirror\u00b2`."
+      "Typo: Found 'Magic Mirror' in file `README.md`: Replace it with `MagicMirror\u00b2`.",
+      "Warning: No LICENSE file."
     ]
   },
   {
@@ -7072,7 +7200,8 @@
     "maintainerURL": "https://github.com/xadamxk",
     "description": "Display League of Legends league schedules.",
     "issues": [
-      "Typo: Found 'Magic Mirror' in file `node_helper.js`: Replace it with `MagicMirror\u00b2`."
+      "Typo: Found 'Magic Mirror' in file `node_helper.js`: Replace it with `MagicMirror\u00b2`.",
+      "Warning: No LICENSE file."
     ],
     "tags": [
       "esports",
@@ -7089,7 +7218,8 @@
     "maintainerURL": "https://github.com/xadamxk",
     "description": "Display League of Legends league standings.",
     "issues": [
-      "Typo: Found 'Magic Mirror' in file `node_helper.js`: Replace it with `MagicMirror\u00b2`."
+      "Typo: Found 'Magic Mirror' in file `node_helper.js`: Replace it with `MagicMirror\u00b2`.",
+      "Warning: No LICENSE file."
     ],
     "tags": [
       "esports",
@@ -7122,7 +7252,8 @@
     "description": "Displays the daily bible verse from ther german \u201cLosungstext\u201d and the additional teaching text.",
     "issues": [
       "Recommendation: Found 'node-fetch' in file `node_helper.js`: Replace it with built-in fetch.",
-      "Recommendation: Found 'node-fetch' in file `package.json`: Replace it with built-in fetch."
+      "Recommendation: Found 'node-fetch' in file `package.json`: Replace it with built-in fetch.",
+      "Warning: No LICENSE file."
     ],
     "tags": [],
     "license": "ISC",
@@ -7227,7 +7358,8 @@
       "Issue: There is no `package.json`. We need this file to gather information about the module.",
       "Typo: Found 'Magic Mirror' in file `MMM-Luxembourg-Public-Transport.js`: Replace it with `MagicMirror\u00b2`.",
       "Typo: Found 'Magic Mirror' in file `node_helper.js`: Replace it with `MagicMirror\u00b2`.",
-      "Recommendation: Found 'require('https')' in file `node_helper.js`: Replace it with built-in fetch."
+      "Recommendation: Found 'require('https')' in file `node_helper.js`: Replace it with built-in fetch.",
+      "Warning: No LICENSE file."
     ]
   },
   {
@@ -7242,7 +7374,8 @@
       "Typo: Found 'Magic Mirror' in file `MMM-lyft.js`: Replace it with `MagicMirror\u00b2`.",
       "Typo: Found 'Magic Mirror' in file `README.md`: Replace it with `MagicMirror\u00b2`.",
       "Typo: Found 'Magic Mirror' in file `node_helper.js`: Replace it with `MagicMirror\u00b2`.",
-      "Deprecated: Found 'require('request')' in file `node_helper.js`: Replace it with built-in fetch."
+      "Deprecated: Found 'require('request')' in file `node_helper.js`: Replace it with built-in fetch.",
+      "Warning: No LICENSE file."
     ]
   },
   {
@@ -7316,7 +7449,8 @@
       "Typo: Found 'MagicMirror2' in file `README.md`: Replace it with `MagicMirror\u00b2`.",
       "Typo: Found 'Magic Mirror' in file `node_helper.js`: Replace it with `MagicMirror\u00b2`.",
       "Deprecated: Found 'require('request')' in file `node_helper.js`: Replace it with built-in fetch.",
-      "Typo: Found 'Magic Mirror' in file `olympia.js`: Replace it with `MagicMirror\u00b2`."
+      "Typo: Found 'Magic Mirror' in file `olympia.js`: Replace it with `MagicMirror\u00b2`.",
+      "Warning: No LICENSE file."
     ]
   },
   {
@@ -7360,7 +7494,8 @@
     "description": "Prevent screen burn-in on your MagicMirror\u00b2",
     "issues": [
       "Issue: There is no `package.json`. We need this file to gather information about the module.",
-      "Typo: Found 'Magic Mirror' in file `MMM-MagicMover.js`: Replace it with `MagicMirror\u00b2`."
+      "Typo: Found 'Magic Mirror' in file `MMM-MagicMover.js`: Replace it with `MagicMirror\u00b2`.",
+      "Warning: No LICENSE file."
     ]
   },
   {
@@ -7372,7 +7507,8 @@
     "description": "Get your festive on. Put snow in the background for winter or anti burn-in purposes... your family won't know the difference.",
     "issues": [
       "Issue: There is no `package.json`. We need this file to gather information about the module.",
-      "Recommendation: Module name doesn't follow the recommended pattern (it doesn't start with `MMM-`). Consider renaming your module."
+      "Recommendation: Module name doesn't follow the recommended pattern (it doesn't start with `MMM-`). Consider renaming your module.",
+      "Warning: No LICENSE file."
     ]
   },
   {
@@ -7623,7 +7759,8 @@
     "issues": [
       "Issue: There is no `package.json`. We need this file to gather information about the module.",
       "Typo: Found 'Magic Mirror' in file `MMM-meteoblueCurrent.js`: Replace it with `MagicMirror\u00b2`.",
-      "Recommendation: Found 'XMLHttpRequest' in file `MMM-meteoblueCurrent.js`: Replace it with built-in fetch."
+      "Recommendation: Found 'XMLHttpRequest' in file `MMM-meteoblueCurrent.js`: Replace it with built-in fetch.",
+      "Warning: No LICENSE file."
     ]
   },
   {
@@ -7637,7 +7774,8 @@
       "`package.json` issue: No description",
       "`package.json` issue: No repository field.",
       "Typo: Found 'Magic Mirror' in file `MMM-MHZ19.js`: Replace it with `MagicMirror\u00b2`.",
-      "Typo: Found 'Magic Mirror' in file `node_helper.js`: Replace it with `MagicMirror\u00b2`."
+      "Typo: Found 'Magic Mirror' in file `node_helper.js`: Replace it with `MagicMirror\u00b2`.",
+      "Warning: No LICENSE file."
     ],
     "license": "MIT",
     "image": ".github-connection.jpg"
@@ -7684,7 +7822,8 @@
     "description": "Displays the status of you Miele@Home Devices.",
     "issues": [
       "Issue: There is no `package.json`. We need this file to gather information about the module.",
-      "Deprecated: Found 'require(\"request\")' in file `mieleathome.js`: Replace it with built-in fetch."
+      "Deprecated: Found 'require(\"request\")' in file `mieleathome.js`: Replace it with built-in fetch.",
+      "Warning: No LICENSE file."
     ]
   },
   {
@@ -7765,7 +7904,8 @@
       "Issue: There is no `package.json`. We need this file to gather information about the module.",
       "Recommendation: Module name doesn't follow the recommended pattern (it doesn't start with `MMM-`). Consider renaming your module.",
       "Recommendation: Found 'XMLHttpRequest' in file `jquery.js`: Replace it with built-in fetch.",
-      "Typo: Found 'Magic Mirror' in file `mm-hide-all.js`: Replace it with `MagicMirror\u00b2`."
+      "Typo: Found 'Magic Mirror' in file `mm-hide-all.js`: Replace it with `MagicMirror\u00b2`.",
+      "Warning: No LICENSE file."
     ]
   },
   {
@@ -7779,7 +7919,8 @@
       "Issue: There is no `package.json`. We need this file to gather information about the module.",
       "Recommendation: Module name doesn't follow the recommended pattern (it doesn't start with `MMM-`). Consider renaming your module.",
       "Typo: Found 'Magic Mirror' in file `mm-hsl-timetable.js`: Replace it with `MagicMirror\u00b2`.",
-      "Recommendation: Found 'node-fetch' in file `node_helper.js`: Replace it with built-in fetch."
+      "Recommendation: Found 'node-fetch' in file `node_helper.js`: Replace it with built-in fetch.",
+      "Warning: No LICENSE file."
     ]
   },
   {
@@ -7795,7 +7936,8 @@
       "Typo: Found 'Magic Mirror' in file `README.md`: Replace it with `MagicMirror\u00b2`.",
       "Recommendation: Found 'XMLHttpRequest' in file `jquery.js`: Replace it with built-in fetch.",
       "Typo: Found 'Magic Mirror' in file `mm-music-player.js`: Replace it with `MagicMirror\u00b2`.",
-      "Typo: Found 'Magic Mirror' in file `node_helper.js`: Replace it with `MagicMirror\u00b2`."
+      "Typo: Found 'Magic Mirror' in file `node_helper.js`: Replace it with `MagicMirror\u00b2`.",
+      "Warning: No LICENSE file."
     ]
   },
   {
@@ -7821,7 +7963,8 @@
       "Issue: There is no `package.json`. We need this file to gather information about the module.",
       "Recommendation: Module name doesn't follow the recommended pattern (it doesn't start with `MMM-`). Consider renaming your module.",
       "Typo: Found 'Magic Mirror' in file `mm-tkl-timetable.js`: Replace it with `MagicMirror\u00b2`.",
-      "Deprecated: Found 'require(\"request\")' in file `node_helper.js`: Replace it with built-in fetch."
+      "Deprecated: Found 'require(\"request\")' in file `node_helper.js`: Replace it with built-in fetch.",
+      "Warning: No LICENSE file."
     ]
   },
   {
@@ -7852,7 +7995,8 @@
       "Typo: Found 'Magic Mirror' in file `README.md`: Replace it with `MagicMirror\u00b2`.",
       "Typo: Found 'Magic Mirror' in file `mmm-amazon-photos.js`: Replace it with `MagicMirror\u00b2`.",
       "Typo: Found 'Magic Mirror' in file `node_helper.js`: Replace it with `MagicMirror\u00b2`.",
-      "Typo: Found 'Magic Mirror' in file `package.json`: Replace it with `MagicMirror\u00b2`."
+      "Typo: Found 'Magic Mirror' in file `package.json`: Replace it with `MagicMirror\u00b2`.",
+      "Warning: No LICENSE file."
     ],
     "tags": [
       "amazon-photos",
@@ -7873,7 +8017,8 @@
       "Recommendation: Module name doesn't follow the recommended pattern (it doesn't start with `MMM-`). Consider renaming your module.",
       "Typo: Found 'Magic Mirror' in file `README.md`: Replace it with `MagicMirror\u00b2`.",
       "Typo: Found 'MagicMirror2' in file `README.md`: Replace it with `MagicMirror\u00b2`.",
-      "Deprecated: Found 'require('request')' in file `node_helper.js`: Replace it with built-in fetch."
+      "Deprecated: Found 'require('request')' in file `node_helper.js`: Replace it with built-in fetch.",
+      "Warning: No LICENSE file."
     ]
   },
   {
@@ -7980,7 +8125,8 @@
       "Recommendation: Module name doesn't follow the recommended pattern (it doesn't start with `MMM-`). Consider renaming your module.",
       "Deprecated: Found 'require('request')' in file `node_helper.js`: Replace it with built-in fetch.",
       "Typo: Found 'Magic Mirror' in file `package.json`: Replace it with `MagicMirror\u00b2`.",
-      "Deprecated: Found 'electron-rebuild' in file `package.json`: Replace it with `@electron/rebuild`"
+      "Deprecated: Found 'electron-rebuild' in file `package.json`: Replace it with `@electron/rebuild`",
+      "Warning: No LICENSE file."
     ],
     "tags": [
       "eon",
@@ -8054,7 +8200,8 @@
       "Typo: Found 'Magic Mirror' in file `MMM-stocks.js`: Replace it with `MagicMirror\u00b2`.",
       "Typo: Found 'Magic Mirror' in file `README.md`: Replace it with `MagicMirror\u00b2`.",
       "Typo: Found 'Magic Mirror' in file `node_helper.js`: Replace it with `MagicMirror\u00b2`.",
-      "Deprecated: Found 'require('request')' in file `node_helper.js`: Replace it with built-in fetch."
+      "Deprecated: Found 'require('request')' in file `node_helper.js`: Replace it with built-in fetch.",
+      "Warning: No LICENSE file."
     ],
     "tags": [
       "stock",
@@ -8089,7 +8236,8 @@
       "Recommendation: Found 'XMLHttpRequest' in file `jquery.js`: Replace it with built-in fetch.",
       "Typo: Found 'Magic Mirror' in file `mmm-toggle-by-mqtt.js`: Replace it with `MagicMirror\u00b2`.",
       "Typo: Found 'MagicMirror2' in file `mmm-toggle-by-mqtt.js`: Replace it with `MagicMirror\u00b2`.",
-      "Typo: Found 'Magic Mirror' in file `node_helper.js`: Replace it with `MagicMirror\u00b2`."
+      "Typo: Found 'Magic Mirror' in file `node_helper.js`: Replace it with `MagicMirror\u00b2`.",
+      "Warning: No LICENSE file."
     ],
     "tags": [],
     "license": "MIT"
@@ -8152,7 +8300,8 @@
       "Issue: There is no `package.json`. We need this file to gather information about the module.",
       "Recommendation: Module name doesn't follow the recommended pattern (it doesn't start with `MMM-`). Consider renaming your module.",
       "Typo: Found 'Magic Mirror' in file `MMM-UVIndex.js`: Replace it with `MagicMirror\u00b2`.",
-      "Recommendation: Found 'XMLHttpRequest' in file `MMM-UVIndex.js`: Replace it with built-in fetch."
+      "Recommendation: Found 'XMLHttpRequest' in file `MMM-UVIndex.js`: Replace it with built-in fetch.",
+      "Warning: No LICENSE file."
     ]
   },
   {
@@ -8186,7 +8335,8 @@
       "Recommendation: Module name doesn't follow the recommended pattern (it doesn't start with `MMM-`). Consider renaming your module.",
       "Typo: Found 'Magic Mirror' in file `README.md`: Replace it with `MagicMirror\u00b2`.",
       "Typo: Found 'MagicMirror2' in file `README.md`: Replace it with `MagicMirror\u00b2`.",
-      "Deprecated: Found 'require('request')' in file `node_helper.js`: Replace it with built-in fetch."
+      "Deprecated: Found 'require('request')' in file `node_helper.js`: Replace it with built-in fetch.",
+      "Warning: No LICENSE file."
     ]
   },
   {
@@ -8302,7 +8452,8 @@
     "description": "Displays moonrise, moonset, and an image of the moon using AstronomyAPI.",
     "issues": [
       "Issue: There is no `package.json`. We need this file to gather information about the module.",
-      "Recommendation: Found 'require(\"https\")' in file `node_helper.js`: Replace it with built-in fetch."
+      "Recommendation: Found 'require(\"https\")' in file `node_helper.js`: Replace it with built-in fetch.",
+      "Warning: No LICENSE file."
     ]
   },
   {
@@ -8350,7 +8501,8 @@
       "`package.json` issue: license should be a valid SPDX license expression",
       "Issue: No compatible or wrong license field in 'package.json'. Without that, we can't use an image.",
       "Typo: Found 'Magic Mirror' in file `MMM-Mopidy-MPD.js`: Replace it with `MagicMirror\u00b2`.",
-      "Typo: Found 'Magic Mirror' in file `README.md`: Replace it with `MagicMirror\u00b2`."
+      "Typo: Found 'Magic Mirror' in file `README.md`: Replace it with `MagicMirror\u00b2`.",
+      "Warning: No LICENSE file."
     ],
     "license": "MIT License"
   },
@@ -8382,7 +8534,8 @@
     "issues": [
       "Issue: There is no `package.json`. We need this file to gather information about the module.",
       "Recommendation: Module name doesn't follow the recommended pattern (it doesn't start with `MMM-`). Consider renaming your module.",
-      "Typo: Found 'Magic Mirror' in file `node_helper.js`: Replace it with `MagicMirror\u00b2`."
+      "Typo: Found 'Magic Mirror' in file `node_helper.js`: Replace it with `MagicMirror\u00b2`.",
+      "Warning: No LICENSE file."
     ]
   },
   {
@@ -8411,7 +8564,8 @@
       "`package.json` issue: No description",
       "`package.json` issue: No repository field.",
       "`package.json` issue: No license field.",
-      "Deprecated: Found 'require('request')' in file `node_helper.js`: Replace it with built-in fetch."
+      "Deprecated: Found 'require('request')' in file `node_helper.js`: Replace it with built-in fetch.",
+      "Warning: No LICENSE file."
     ]
   },
   {
@@ -8475,7 +8629,8 @@
       "`package.json` issue: license should be a valid SPDX license expression",
       "Issue: No compatible or wrong license field in 'package.json'. Without that, we can't use an image.",
       "Typo: Found 'Magic Mirror' in file `MMM-MP3Player.js`: Replace it with `MagicMirror\u00b2`.",
-      "Typo: Found 'Magic Mirror' in file `node_helper.js`: Replace it with `MagicMirror\u00b2`."
+      "Typo: Found 'Magic Mirror' in file `node_helper.js`: Replace it with `MagicMirror\u00b2`.",
+      "Warning: No LICENSE file."
     ],
     "license": "GPLv3"
   },
@@ -8490,7 +8645,8 @@
       "`package.json` issue: No repository field.",
       "`package.json` issue: license should be a valid SPDX license expression",
       "Issue: No compatible or wrong license field in 'package.json'. Without that, we can't use an image.",
-      "Typo: Found 'Magic Mirror' in file `mpd_client.js`: Replace it with `MagicMirror\u00b2`."
+      "Typo: Found 'Magic Mirror' in file `mpd_client.js`: Replace it with `MagicMirror\u00b2`.",
+      "Warning: No LICENSE file."
     ],
     "license": "MIT License"
   },
@@ -8520,7 +8676,8 @@
       "Typo: Found 'Magic Mirror' in file `MMM-MPR121.js`: Replace it with `MagicMirror\u00b2`.",
       "Typo: Found 'Magic Mirror' in file `README.md`: Replace it with `MagicMirror\u00b2`.",
       "Typo: Found 'Magic Mirror' in file `node_helper.js`: Replace it with `MagicMirror\u00b2`.",
-      "Deprecated: Found 'electron-rebuild' in file `package.json`: Replace it with `@electron/rebuild`"
+      "Deprecated: Found 'electron-rebuild' in file `package.json`: Replace it with `@electron/rebuild`",
+      "Warning: No LICENSE file."
     ],
     "tags": [
       "buttons",
@@ -8537,7 +8694,8 @@
     "description": "Displays current playing media on a remote machine with a MPRIS2 capable player.",
     "issues": [
       "Issue: There is no `package.json`. We need this file to gather information about the module.",
-      "Typo: Found 'Magic Mirror' in file `README.md`: Replace it with `MagicMirror\u00b2`."
+      "Typo: Found 'Magic Mirror' in file `README.md`: Replace it with `MagicMirror\u00b2`.",
+      "Warning: No LICENSE file."
     ]
   },
   {
@@ -8765,7 +8923,8 @@
       "Typo: Found 'Magic Mirror' in file `MMM-MyCommute.js`: Replace it with `MagicMirror\u00b2`.",
       "Typo: Found 'MagicMirror2' in file `README.md`: Replace it with `MagicMirror\u00b2`.",
       "Typo: Found 'Magic Mirror' in file `node_helper.js`: Replace it with `MagicMirror\u00b2`.",
-      "Deprecated: Found 'require(\"request\")' in file `node_helper.js`: Replace it with built-in fetch."
+      "Deprecated: Found 'require(\"request\")' in file `node_helper.js`: Replace it with built-in fetch.",
+      "Warning: No LICENSE file."
     ],
     "tags": [
       "traffic",
@@ -8943,7 +9102,8 @@
       "`package.json` issue: No repository field.",
       "`package.json` issue: No license field.",
       "Typo: Found 'Magic Mirror' in file `node_helper.js`: Replace it with `MagicMirror\u00b2`.",
-      "Deprecated: Found 'require('request')' in file `node_helper.js`: Replace it with built-in fetch."
+      "Deprecated: Found 'require('request')' in file `node_helper.js`: Replace it with built-in fetch.",
+      "Warning: No LICENSE file."
     ]
   },
   {
@@ -9000,7 +9160,8 @@
     "issues": [
       "`package.json` issue: No description",
       "`package.json` issue: No repository field.",
-      "Deprecated: Found 'require(\"request\")' in file `node_helper.js`: Replace it with built-in fetch."
+      "Deprecated: Found 'require(\"request\")' in file `node_helper.js`: Replace it with built-in fetch.",
+      "Warning: No LICENSE file."
     ],
     "tags": [],
     "license": "ISC",
@@ -9032,7 +9193,8 @@
     "description": "A video player with buttons to select a video to play.",
     "issues": [
       "Typo: Found 'Magic Mirror' in file `MMM-MyVideoPlayer.js`: Replace it with `MagicMirror\u00b2`.",
-      "Typo: Found 'MagicMirror2' in file `package.json`: Replace it with `MagicMirror\u00b2`."
+      "Typo: Found 'MagicMirror2' in file `package.json`: Replace it with `MagicMirror\u00b2`.",
+      "Warning: No LICENSE file."
     ],
     "tags": [
       "video",
@@ -9048,7 +9210,9 @@
     "maintainer": "mazim-co",
     "maintainerURL": "https://github.com/mazim-co",
     "description": "Displays information about your Volvo from the Volvo Connect API.",
-    "issues": [],
+    "issues": [
+      "Warning: No LICENSE file."
+    ],
     "tags": [
       "volvo",
       "myvolvo",
@@ -9082,7 +9246,8 @@
     "issues": [
       "Typo: Found 'Magic Mirror' in file `MMM-MyWeather.js`: Replace it with `MagicMirror\u00b2`.",
       "Typo: Found 'Magic Mirror' in file `node_helper.js`: Replace it with `MagicMirror\u00b2`.",
-      "Deprecated: Found 'require('request')' in file `node_helper.js`: Replace it with built-in fetch."
+      "Deprecated: Found 'require('request')' in file `node_helper.js`: Replace it with built-in fetch.",
+      "Warning: No LICENSE file."
     ],
     "tags": [
       "\"magic",
@@ -9120,7 +9285,9 @@
     "maintainer": "qistoph",
     "maintainerURL": "",
     "description": "A MagicMirror\u00b2 Module for Nagios.",
-    "issues": [],
+    "issues": [
+      "Warning: No LICENSE file."
+    ],
     "tags": [
       "nagios"
     ],
@@ -9296,7 +9463,8 @@
       "Issue: No image found.",
       "Typo: Found 'Magic Mirror' in file `MMM-NearCompliments.js`: Replace it with `MagicMirror\u00b2`.",
       "Typo: Found 'Magic Mirror' in file `node_helper.js`: Replace it with `MagicMirror\u00b2`.",
-      "Typo: Found 'Magic Mirror' in file `package.json`: Replace it with `MagicMirror\u00b2`."
+      "Typo: Found 'Magic Mirror' in file `package.json`: Replace it with `MagicMirror\u00b2`.",
+      "Warning: No LICENSE file."
     ],
     "tags": [
       "distance",
@@ -9326,7 +9494,8 @@
     "maintainerURL": "https://github.com/MartinLoidolt",
     "description": "Module for displaying your photovoltaic statistics from neoom.",
     "issues": [
-      "Issue: There is no `package.json`. We need this file to gather information about the module."
+      "Issue: There is no `package.json`. We need this file to gather information about the module.",
+      "Warning: No LICENSE file."
     ]
   },
   {
@@ -9429,7 +9598,8 @@
       "Typo: Found 'Magic Mirror' in file `node_helper.js`: Replace it with `MagicMirror\u00b2`.",
       "Deprecated: Found 'require('request')' in file `node_helper.js`: Replace it with built-in fetch.",
       "Recommendation: Found 'require(\"https\")' in file `node_helper.js`: Replace it with built-in fetch.",
-      "Typo: Found 'Magic Mirror' in file `package.json`: Replace it with `MagicMirror\u00b2`."
+      "Typo: Found 'Magic Mirror' in file `package.json`: Replace it with `MagicMirror\u00b2`.",
+      "Warning: No LICENSE file."
     ],
     "tags": [
       "netatmo",
@@ -9479,7 +9649,9 @@
     "maintainer": "slametps",
     "maintainerURL": "https://github.com/slametps",
     "description": "Display network connection status (ping, download speed, upload speed).",
-    "issues": [],
+    "issues": [
+      "Warning: No LICENSE file."
+    ],
     "tags": [
       "networkconnection",
       "network",
@@ -9593,7 +9765,8 @@
     "issues": [
       "Typo: Found 'Magic Mirror' in file `MMM-nextbike.js`: Replace it with `MagicMirror\u00b2`.",
       "Typo: Found 'Magic Mirror' in file `node_helper.js`: Replace it with `MagicMirror\u00b2`.",
-      "Deprecated: Found 'require('request')' in file `node_helper.js`: Replace it with built-in fetch."
+      "Deprecated: Found 'require('request')' in file `node_helper.js`: Replace it with built-in fetch.",
+      "Warning: No LICENSE file."
     ],
     "tags": [
       "nextbike",
@@ -9713,7 +9886,8 @@
     "issues": [
       "`package.json` issue: No description",
       "Issue: No image found.",
-      "Recommendation: Found 'XMLHttpRequest' in file `MMM-NiceHash.js`: Replace it with built-in fetch."
+      "Recommendation: Found 'XMLHttpRequest' in file `MMM-NiceHash.js`: Replace it with built-in fetch.",
+      "Warning: No LICENSE file."
     ],
     "tags": [
       "crypto",
@@ -9733,7 +9907,8 @@
     "description": "Keep track of blood glucose levels with ease thru your MagicMirror\u00b2.",
     "issues": [
       "Typo: Found 'Magic Mirror' in file `README.md`: Replace it with `MagicMirror\u00b2`.",
-      "Typo: Found 'Magic Mirror' in file `package.json`: Replace it with `MagicMirror\u00b2`."
+      "Typo: Found 'Magic Mirror' in file `package.json`: Replace it with `MagicMirror\u00b2`.",
+      "Warning: No LICENSE file."
     ],
     "tags": [],
     "license": "MIT",
@@ -9806,7 +9981,8 @@
       "Issue: There is no `package.json`. We need this file to gather information about the module.",
       "Typo: Found 'Magic Mirror' in file `README.md`: Replace it with `MagicMirror\u00b2`.",
       "Typo: Found 'Magic Mirror' in file `node_helper.js`: Replace it with `MagicMirror\u00b2`.",
-      "Deprecated: Found 'require('request')' in file `node_helper.js`: Replace it with built-in fetch."
+      "Deprecated: Found 'require('request')' in file `node_helper.js`: Replace it with built-in fetch.",
+      "Warning: No LICENSE file."
     ]
   },
   {
@@ -9871,7 +10047,8 @@
       "Typo: Found 'Magic Mirror' in file `wg.js`: Replace it with `MagicMirror\u00b2`.",
       "Deprecated: Found 'require('request')' in file `wg.js`: Replace it with built-in fetch.",
       "Typo: Found 'Magic Mirror' in file `wu.js`: Replace it with `MagicMirror\u00b2`.",
-      "Deprecated: Found 'require('request')' in file `wu.js`: Replace it with built-in fetch."
+      "Deprecated: Found 'require('request')' in file `wu.js`: Replace it with built-in fetch.",
+      "Warning: No LICENSE file."
     ],
     "tags": [],
     "license": "ISC",
@@ -10010,7 +10187,9 @@
     "maintainer": "qistoph",
     "maintainerURL": "",
     "description": "Shows information on trains departuring a configurable Dutch trainstation.",
-    "issues": [],
+    "issues": [
+      "Warning: No LICENSE file."
+    ],
     "license": "ISC",
     "image": ".previews-nstreinen-destination.jpg"
   },
@@ -10139,7 +10318,8 @@
     "description": "The module displays oil prices for the current year based on Chart.js and the API of heizoel24.de.",
     "issues": [
       "Typo: Found 'Magic Mirror' in file `MMM-Oelpreise.js`: Replace it with `MagicMirror\u00b2`.",
-      "Deprecated: Found 'require('request')' in file `node_helper.js`: Replace it with built-in fetch."
+      "Deprecated: Found 'require('request')' in file `node_helper.js`: Replace it with built-in fetch.",
+      "Warning: No LICENSE file."
     ],
     "tags": [
       "magicmirrir",
@@ -10180,7 +10360,8 @@
       "Issue: There is no `package.json`. We need this file to gather information about the module.",
       "Recommendation: Module name doesn't follow the recommended pattern (it doesn't start with `MMM-`). Consider renaming your module.",
       "Typo: Found 'Magic Mirror' in file `README.md`: Replace it with `MagicMirror\u00b2`.",
-      "Typo: Found 'Magic Mirror' in file `on-this-day.js`: Replace it with `MagicMirror\u00b2`."
+      "Typo: Found 'Magic Mirror' in file `on-this-day.js`: Replace it with `MagicMirror\u00b2`.",
+      "Warning: No LICENSE file."
     ]
   },
   {
@@ -10193,7 +10374,8 @@
     "issues": [
       "Issue: There is no `package.json`. We need this file to gather information about the module.",
       "Typo: Found 'Magic Mirror' in file `README.md`: Replace it with `MagicMirror\u00b2`.",
-      "Deprecated: Found 'require('request')' in file `node_helper.js`: Replace it with built-in fetch."
+      "Deprecated: Found 'require('request')' in file `node_helper.js`: Replace it with built-in fetch.",
+      "Warning: No LICENSE file."
     ]
   },
   {
@@ -10430,7 +10612,8 @@
     "issues": [
       "Issue: There is no `package.json`. We need this file to gather information about the module.",
       "Typo: Found 'Magic Mirror' in file `MMM-OpenTherm.js`: Replace it with `MagicMirror\u00b2`.",
-      "Deprecated: Found 'require('request')' in file `node_helper.js`: Replace it with built-in fetch."
+      "Deprecated: Found 'require('request')' in file `node_helper.js`: Replace it with built-in fetch.",
+      "Warning: No LICENSE file."
     ]
   },
   {
@@ -10443,7 +10626,8 @@
     "issues": [
       "Typo: Found 'Magic Mirror' in file `MMM-OpenWeatherMapForecast.js`: Replace it with `MagicMirror\u00b2`.",
       "Typo: Found 'Magic Mirror' in file `README.md`: Replace it with `MagicMirror\u00b2`.",
-      "Typo: Found 'Magic Mirror' in file `package.json`: Replace it with `MagicMirror\u00b2`."
+      "Typo: Found 'Magic Mirror' in file `package.json`: Replace it with `MagicMirror\u00b2`.",
+      "Warning: No LICENSE file."
     ],
     "license": "MIT",
     "image": "screenshots-MMM-OpenWeatherMapForecast.jpg"
@@ -10499,7 +10683,8 @@
     "maintainerURL": "https://github.com/themox",
     "description": "A more detailed Oura data display including readiness scores and heart rate data.",
     "issues": [
-      "Issue: There is no `package.json`. We need this file to gather information about the module."
+      "Issue: There is no `package.json`. We need this file to gather information about the module.",
+      "Warning: No LICENSE file."
     ]
   },
   {
@@ -10539,7 +10724,8 @@
     "maintainerURL": "",
     "description": "A module that uses 2 HCSR04 sensors to enable switching between pages by making a push gesture.",
     "issues": [
-      "Issue: There is no `package.json`. We need this file to gather information about the module."
+      "Issue: There is no `package.json`. We need this file to gather information about the module.",
+      "Warning: No LICENSE file."
     ]
   },
   {
@@ -10551,7 +10737,8 @@
     "description": "Configure location and visibity of modules on defined pages.",
     "issues": [
       "Issue: There is no `package.json`. We need this file to gather information about the module.",
-      "Typo: Found 'Magic Mirror' in file `README.md`: Replace it with `MagicMirror\u00b2`."
+      "Typo: Found 'Magic Mirror' in file `README.md`: Replace it with `MagicMirror\u00b2`.",
+      "Warning: No LICENSE file."
     ]
   },
   {
@@ -10748,7 +10935,8 @@
     "description": "The module displays pellet prices for the current year based on Chart.js and the API of heizpellets24.de.",
     "issues": [
       "Typo: Found 'Magic Mirror' in file `MMM-Pelletpreise.js`: Replace it with `MagicMirror\u00b2`.",
-      "Deprecated: Found 'require('request')' in file `node_helper.js`: Replace it with built-in fetch."
+      "Deprecated: Found 'require('request')' in file `node_helper.js`: Replace it with built-in fetch.",
+      "Warning: No LICENSE file."
     ],
     "tags": [
       "magicmirrir",
@@ -10767,7 +10955,8 @@
     "description": "This will show you your Peloton information to keep you motivated to achieve your goals.",
     "issues": [
       "Issue: There is no `package.json`. We need this file to gather information about the module.",
-      "Deprecated: Found 'require(\"request\")' in file `node_helper.js`: Replace it with built-in fetch."
+      "Deprecated: Found 'require(\"request\")' in file `node_helper.js`: Replace it with built-in fetch.",
+      "Warning: No LICENSE file."
     ]
   },
   {
@@ -10844,7 +11033,8 @@
     "issues": [
       "Issue: There is no `package.json`. We need this file to gather information about the module.",
       "Typo: Found 'Magic Mirror' in file `README.md`: Replace it with `MagicMirror\u00b2`.",
-      "Deprecated: Found 'require('request')' in file `node_helper.js`: Replace it with built-in fetch."
+      "Deprecated: Found 'require('request')' in file `node_helper.js`: Replace it with built-in fetch.",
+      "Warning: No LICENSE file."
     ]
   },
   {
@@ -10874,7 +11064,8 @@
     "issues": [
       "`package.json` issue: No repository field.",
       "`package.json` issue: No license field.",
-      "Recommendation: Module name doesn't follow the recommended pattern (it doesn't start with `MMM-`). Consider renaming your module."
+      "Recommendation: Module name doesn't follow the recommended pattern (it doesn't start with `MMM-`). Consider renaming your module.",
+      "Warning: No LICENSE file."
     ],
     "tags": [
       "phone notification",
@@ -10890,7 +11081,8 @@
     "description": "A python script that puts your display to sleep, if your smartphone/smartwatch is not connected to the WiFi network !",
     "issues": [
       "Issue: There is no `package.json`. We need this file to gather information about the module.",
-      "Recommendation: Module name doesn't follow the recommended pattern (it doesn't start with `MMM-`). Consider renaming your module."
+      "Recommendation: Module name doesn't follow the recommended pattern (it doesn't start with `MMM-`). Consider renaming your module.",
+      "Warning: No LICENSE file."
     ]
   },
   {
@@ -10993,7 +11185,8 @@
     "maintainerURL": "",
     "description": "Another PIR monitoring module that allows you to run custom scripts and integrates MMM-TelegramBot commands. \u26a0\ufe0f **Module not maintained (GitHub repo has been archived)**",
     "issues": [
-      "`package.json` issue: No description"
+      "`package.json` issue: No description",
+      "Warning: No LICENSE file."
     ],
     "license": "ISC",
     "image": "screenshot.jpg"
@@ -11009,7 +11202,8 @@
       "Issue: No image found.",
       "Typo: Found 'Magic Mirror' in file `MMM-PIR-Sensor.js`: Replace it with `MagicMirror\u00b2`.",
       "Typo: Found 'Magic Mirror' in file `node_helper.js`: Replace it with `MagicMirror\u00b2`.",
-      "Typo: Found 'Magic Mirror' in file `package.json`: Replace it with `MagicMirror\u00b2`."
+      "Typo: Found 'Magic Mirror' in file `package.json`: Replace it with `MagicMirror\u00b2`.",
+      "Warning: No LICENSE file."
     ],
     "tags": [
       "pir-sensor",
@@ -11052,7 +11246,8 @@
       "Typo: Found 'Magic Mirror' in file `MMM-DarkSkyForecast.js`: Replace it with `MagicMirror\u00b2`.",
       "Typo: Found 'Magic Mirror' in file `README.md`: Replace it with `MagicMirror\u00b2`.",
       "Deprecated: Found 'require(\"request\")' in file `node_helper.js`: Replace it with built-in fetch.",
-      "Typo: Found 'Magic Mirror' in file `package.json`: Replace it with `MagicMirror\u00b2`."
+      "Typo: Found 'Magic Mirror' in file `package.json`: Replace it with `MagicMirror\u00b2`.",
+      "Warning: No LICENSE file."
     ],
     "license": "MIT",
     "image": "icons-iconsets.jpg"
@@ -11079,7 +11274,8 @@
     "issues": [
       "`package.json` issue: No description",
       "`package.json` issue: No repository field.",
-      "`package.json` issue: No license field."
+      "`package.json` issue: No license field.",
+      "Warning: No LICENSE file."
     ]
   },
   {
@@ -11091,7 +11287,8 @@
     "description": "Displays a Polish Word of the Day with examples and the English translations.",
     "issues": [
       "Typo: Found 'Magic Mirror' in file `MMM-PL_WOTD.js`: Replace it with `MagicMirror\u00b2`.",
-      "Typo: Found 'Magic Mirror' in file `README.md`: Replace it with `MagicMirror\u00b2`."
+      "Typo: Found 'Magic Mirror' in file `README.md`: Replace it with `MagicMirror\u00b2`.",
+      "Warning: No LICENSE file."
     ],
     "tags": [
       "language"
@@ -11109,7 +11306,8 @@
     "issues": [
       "Issue: There is no `package.json`. We need this file to gather information about the module.",
       "Typo: Found 'Magic Mirror' in file `MMM-PlaceInfo.js`: Replace it with `MagicMirror\u00b2`.",
-      "Recommendation: Found 'XMLHttpRequest' in file `MMM-PlaceInfo.js`: Replace it with built-in fetch."
+      "Recommendation: Found 'XMLHttpRequest' in file `MMM-PlaceInfo.js`: Replace it with built-in fetch.",
+      "Warning: No LICENSE file."
     ]
   },
   {
@@ -11134,7 +11332,8 @@
     "issues": [
       "Issue: There is no `package.json`. We need this file to gather information about the module.",
       "Recommendation: Module name doesn't follow the recommended pattern (it doesn't start with `MMM-`). Consider renaming your module.",
-      "Typo: Found 'Magic Mirror' in file `README.md`: Replace it with `MagicMirror\u00b2`."
+      "Typo: Found 'Magic Mirror' in file `README.md`: Replace it with `MagicMirror\u00b2`.",
+      "Warning: No LICENSE file."
     ]
   },
   {
@@ -11146,7 +11345,8 @@
     "description": "Displays air quality readings from Plantower PMSx003 series sensors",
     "issues": [
       "Issue: No image found.",
-      "Typo: Found 'Magic Mirror' in file `package.json`: Replace it with `MagicMirror\u00b2`."
+      "Typo: Found 'Magic Mirror' in file `package.json`: Replace it with `MagicMirror\u00b2`.",
+      "Warning: No LICENSE file."
     ],
     "tags": [
       "plantower",
@@ -11224,7 +11424,8 @@
     "description": "Display the next time on a clear morning or evening that you can go outside and experience the brightness of high noon on Pluto.",
     "issues": [
       "Issue: There is no `package.json`. We need this file to gather information about the module.",
-      "Recommendation: Module name doesn't follow the recommended pattern (it doesn't start with `MMM-`). Consider renaming your module."
+      "Recommendation: Module name doesn't follow the recommended pattern (it doesn't start with `MMM-`). Consider renaming your module.",
+      "Warning: No LICENSE file."
     ]
   },
   {
@@ -11238,7 +11439,8 @@
       "Issue: No image found.",
       "Deprecated: Found 'omxplayer' in file `README.md`: Try to replace it with `vlc`.",
       "Typo: Found 'Magic Mirror' in file `node_helper.js`: Replace it with `MagicMirror\u00b2`.",
-      "Deprecated: Found 'electron-rebuild' in file `package.json`: Replace it with `@electron/rebuild`"
+      "Deprecated: Found 'electron-rebuild' in file `package.json`: Replace it with `@electron/rebuild`",
+      "Warning: No LICENSE file."
     ],
     "tags": [
       "podcast",
@@ -11271,7 +11473,8 @@
     "description": "Display a poem of the day, in the language(s) of your choice",
     "issues": [
       "Typo: Found 'Magic Mirror' in file `README.md`: Replace it with `MagicMirror\u00b2`.",
-      "Typo: Found 'Magic Mirror' in file `package.json`: Replace it with `MagicMirror\u00b2`."
+      "Typo: Found 'Magic Mirror' in file `package.json`: Replace it with `MagicMirror\u00b2`.",
+      "Warning: No LICENSE file."
     ],
     "tags": [
       "magic-mirror",
@@ -11322,7 +11525,8 @@
       "`package.json` issue: No repository field.",
       "`package.json` issue: No license field.",
       "Typo: Found 'Magic Mirror' in file `node_helper.js`: Replace it with `MagicMirror\u00b2`.",
-      "Deprecated: Found 'require('request')' in file `node_helper.js`: Replace it with built-in fetch."
+      "Deprecated: Found 'require('request')' in file `node_helper.js`: Replace it with built-in fetch.",
+      "Warning: No LICENSE file."
     ]
   },
   {
@@ -11423,7 +11627,8 @@
       "Typo: Found 'Magic Mirror' in file `MMM-Postnord.js`: Replace it with `MagicMirror\u00b2`.",
       "Typo: Found 'Magic Mirror' in file `README.md`: Replace it with `MagicMirror\u00b2`.",
       "Typo: Found 'Magic Mirror' in file `node_helper.js`: Replace it with `MagicMirror\u00b2`.",
-      "Typo: Found 'Magic Mirror' in file `package.json`: Replace it with `MagicMirror\u00b2`."
+      "Typo: Found 'Magic Mirror' in file `package.json`: Replace it with `MagicMirror\u00b2`.",
+      "Warning: No LICENSE file."
     ],
     "tags": [],
     "license": "ISC",
@@ -11655,7 +11860,8 @@
     "issues": [
       "`package.json` issue: No description",
       "`package.json` issue: No repository field.",
-      "Issue: No image found."
+      "Issue: No image found.",
+      "Warning: No LICENSE file."
     ],
     "license": "ISC"
   },
@@ -11719,7 +11925,8 @@
     "description": "Show QRCode image of encoded text.",
     "issues": [
       "Issue: There is no `package.json`. We need this file to gather information about the module.",
-      "Typo: Found 'Magic Mirror' in file `MMM-QRCode.js`: Replace it with `MagicMirror\u00b2`."
+      "Typo: Found 'Magic Mirror' in file `MMM-QRCode.js`: Replace it with `MagicMirror\u00b2`.",
+      "Warning: No LICENSE file."
     ]
   },
   {
@@ -11731,7 +11938,8 @@
     "description": "Displays your Questrade positions",
     "issues": [
       "Issue: There is no `package.json`. We need this file to gather information about the module.",
-      "Recommendation: Found 'node-fetch' in file `node_helper.js`: Replace it with built-in fetch."
+      "Recommendation: Found 'node-fetch' in file `node_helper.js`: Replace it with built-in fetch.",
+      "Warning: No LICENSE file."
     ]
   },
   {
@@ -11745,7 +11953,8 @@
       "Issue: There is no `package.json`. We need this file to gather information about the module.",
       "Typo: Found 'Magic Mirror' in file `MMM-Quotable.js`: Replace it with `MagicMirror\u00b2`.",
       "Recommendation: Found 'node-fetch' in file `README.md`: Replace it with built-in fetch.",
-      "Recommendation: Found 'node-fetch' in file `node_helper.js`: Replace it with built-in fetch."
+      "Recommendation: Found 'node-fetch' in file `node_helper.js`: Replace it with built-in fetch.",
+      "Warning: No LICENSE file."
     ]
   },
   {
@@ -11757,7 +11966,8 @@
     "description": "Show a random quote from an online collection of quotations by authors, celebrities, and newsmakers. Multi language supported",
     "issues": [
       "Typo: Found 'Magic Mirror' in file `README.md`: Replace it with `MagicMirror\u00b2`.",
-      "Typo: Found 'Magic Mirror' in file `package.json`: Replace it with `MagicMirror\u00b2`."
+      "Typo: Found 'Magic Mirror' in file `package.json`: Replace it with `MagicMirror\u00b2`.",
+      "Warning: No LICENSE file."
     ],
     "tags": [
       "quotes"
@@ -11776,7 +11986,8 @@
       "Issue: There is no `package.json`. We need this file to gather information about the module.",
       "Typo: Found 'Magic Mirror' in file `MMM-RaiderIO.js`: Replace it with `MagicMirror\u00b2`.",
       "Recommendation: Found 'XMLHttpRequest' in file `MMM-RaiderIO.js`: Replace it with built-in fetch.",
-      "Typo: Found 'Magic Mirror' in file `README.md`: Replace it with `MagicMirror\u00b2`."
+      "Typo: Found 'Magic Mirror' in file `README.md`: Replace it with `MagicMirror\u00b2`.",
+      "Warning: No LICENSE file."
     ]
   },
   {
@@ -11893,7 +12104,8 @@
       "Issue: No image found.",
       "Typo: Found 'Magic Mirror' in file `MMM-RandomPhoto.js`: Replace it with `MagicMirror\u00b2`.",
       "Typo: Found 'MagicMirror2' in file `README.md`: Replace it with `MagicMirror\u00b2`.",
-      "Recommendation: Found 'require(\"https\")' in file `node_helper.js`: Replace it with built-in fetch."
+      "Recommendation: Found 'require(\"https\")' in file `node_helper.js`: Replace it with built-in fetch.",
+      "Warning: No LICENSE file."
     ],
     "license": "ISC"
   },
@@ -11906,7 +12118,8 @@
     "description": "A module that displays a random quote from various authorship using Paperquote's API.",
     "issues": [
       "Issue: There is no `package.json`. We need this file to gather information about the module.",
-      "Recommendation: Found 'node-fetch' in file `node_helper.js`: Replace it with built-in fetch."
+      "Recommendation: Found 'node-fetch' in file `node_helper.js`: Replace it with built-in fetch.",
+      "Warning: No LICENSE file."
     ]
   },
   {
@@ -11971,7 +12184,8 @@
     "issues": [
       "Issue: There is no `package.json`. We need this file to gather information about the module.",
       "Typo: Found 'Magic Mirror' in file `MMM-rbtv-sendeplan.js`: Replace it with `MagicMirror\u00b2`.",
-      "Recommendation: Found 'XMLHttpRequest' in file `MMM-rbtv-sendeplan.js`: Replace it with built-in fetch."
+      "Recommendation: Found 'XMLHttpRequest' in file `MMM-rbtv-sendeplan.js`: Replace it with built-in fetch.",
+      "Warning: No LICENSE file."
     ]
   },
   {
@@ -11983,7 +12197,8 @@
     "description": "Display recent US rainfall with a small map of your state",
     "issues": [
       "Issue: There is no `package.json`. We need this file to gather information about the module.",
-      "Recommendation: Found 'XMLHttpRequest' in file `MMM-RecentRainfall.js`: Replace it with built-in fetch."
+      "Recommendation: Found 'XMLHttpRequest' in file `MMM-RecentRainfall.js`: Replace it with built-in fetch.",
+      "Warning: No LICENSE file."
     ]
   },
   {
@@ -11999,7 +12214,8 @@
       "Typo: Found 'MagicMirror2' in file `README.md`: Replace it with `MagicMirror\u00b2`.",
       "Recommendation: Found 'XMLHttpRequest' in file `jquery.js`: Replace it with built-in fetch.",
       "Typo: Found 'Magic Mirror' in file `node_helper.js`: Replace it with `MagicMirror\u00b2`.",
-      "Deprecated: Found 'require('request')' in file `node_helper.js`: Replace it with built-in fetch."
+      "Deprecated: Found 'require('request')' in file `node_helper.js`: Replace it with built-in fetch.",
+      "Warning: No LICENSE file."
     ],
     "license": "MIT",
     "image": "pics-recipe1.jpg"
@@ -12035,7 +12251,8 @@
       "Typo: Found 'Magic Mirror' in file `README.md`: Replace it with `MagicMirror\u00b2`.",
       "Typo: Found 'Magic Mirror' in file `node_helper.js`: Replace it with `MagicMirror\u00b2`.",
       "Deprecated: Found 'require('request')' in file `node_helper.js`: Replace it with built-in fetch.",
-      "Typo: Found 'Magic Mirror' in file `package.json`: Replace it with `MagicMirror\u00b2`."
+      "Typo: Found 'Magic Mirror' in file `package.json`: Replace it with `MagicMirror\u00b2`.",
+      "Warning: No LICENSE file."
     ],
     "license": "ISC"
   },
@@ -12190,7 +12407,8 @@
     "issues": [
       "Issue: There is no `package.json`. We need this file to gather information about the module.",
       "Recommendation: Found 'XMLHttpRequest' in file `MMM-RepRapFirmware.js`: Replace it with built-in fetch.",
-      "Typo: Found 'Magic Mirror' in file `README.md`: Replace it with `MagicMirror\u00b2`."
+      "Typo: Found 'Magic Mirror' in file `README.md`: Replace it with `MagicMirror\u00b2`.",
+      "Warning: No LICENSE file."
     ]
   },
   {
@@ -12220,7 +12438,8 @@
       "Typo: Found 'Magic Mirror' in file `MMM-ResRobot.js`: Replace it with `MagicMirror\u00b2`.",
       "Typo: Found 'MagicMirror2' in file `README.md`: Replace it with `MagicMirror\u00b2`.",
       "Typo: Found 'Magic Mirror' in file `node_helper.js`: Replace it with `MagicMirror\u00b2`.",
-      "Recommendation: Found 'node-fetch' in file `node_helper.js`: Replace it with built-in fetch."
+      "Recommendation: Found 'node-fetch' in file `node_helper.js`: Replace it with built-in fetch.",
+      "Warning: No LICENSE file."
     ],
     "tags": [
       "local transport",
@@ -12375,7 +12594,8 @@
       "Typo: Found 'Magic Mirror' in file `MMM-RNV.js`: Replace it with `MagicMirror\u00b2`.",
       "Typo: Found 'Magic Mirror' in file `node_helper.js`: Replace it with `MagicMirror\u00b2`.",
       "Deprecated: Found 'require('request')' in file `node_helper.js`: Replace it with built-in fetch.",
-      "Typo: Found 'MagicMirror2' in file `package.json`: Replace it with `MagicMirror\u00b2`."
+      "Typo: Found 'MagicMirror2' in file `package.json`: Replace it with `MagicMirror\u00b2`.",
+      "Warning: No LICENSE file."
     ]
   },
   {
@@ -12389,7 +12609,8 @@
       "Typo: Found 'Magic Mirror' in file `MMM-RocketLeagueZ.js`: Replace it with `MagicMirror\u00b2`.",
       "Typo: Found 'MagicMirror2' in file `Readme.md`: Replace it with `MagicMirror\u00b2`.",
       "Typo: Found 'Magic Mirror' in file `node_helper.js`: Replace it with `MagicMirror\u00b2`.",
-      "Typo: Found 'MagicMirror2' in file `package.json`: Replace it with `MagicMirror\u00b2`."
+      "Typo: Found 'MagicMirror2' in file `package.json`: Replace it with `MagicMirror\u00b2`.",
+      "Warning: No LICENSE file."
     ],
     "tags": [
       "rocket league"
@@ -12451,7 +12672,8 @@
     "maintainerURL": "",
     "description": "Control the built in LEDs of your Raspberry Pi.",
     "issues": [
-      "Issue: No image found."
+      "Issue: No image found.",
+      "Warning: No LICENSE file."
     ],
     "license": "MIT"
   },
@@ -12844,7 +13066,9 @@
     "maintainer": "XBCreepinJesus",
     "maintainerURL": "https://github.com/XBCreepinJesus",
     "description": "A module to check the up/down status of servers/devices on your network.",
-    "issues": [],
+    "issues": [
+      "Warning: No LICENSE file."
+    ],
     "tags": [
       "ping",
       "server",
@@ -12893,7 +13117,8 @@
     "maintainerURL": "https://github.com/mosesyong",
     "description": "Display bus transport info in Singapore",
     "issues": [
-      "Typo: Found 'Magic Mirror' in file `MMM-SG-Transport-V2.js`: Replace it with `MagicMirror\u00b2`."
+      "Typo: Found 'Magic Mirror' in file `MMM-SG-Transport-V2.js`: Replace it with `MagicMirror\u00b2`.",
+      "Warning: No LICENSE file."
     ],
     "license": "ISC",
     "image": "screenshots-screenshot.jpg"
@@ -12992,7 +13217,8 @@
     "issues": [
       "Issue: There is no `package.json`. We need this file to gather information about the module.",
       "Typo: Found 'Magic Mirror' in file `README.md`: Replace it with `MagicMirror\u00b2`.",
-      "Deprecated: Found 'require('request')' in file `node_helper.js`: Replace it with built-in fetch."
+      "Deprecated: Found 'require('request')' in file `node_helper.js`: Replace it with built-in fetch.",
+      "Warning: No LICENSE file."
     ]
   },
   {
@@ -13045,7 +13271,8 @@
       "Typo: Found 'Magic Mirror' in file `README.org`: Replace it with `MagicMirror\u00b2`.",
       "Deprecated: Found 'electron-rebuild' in file `README.org`: Replace it with `@electron/rebuild`",
       "Deprecated: Found 'electron-rebuild' in file `package.json`: Replace it with `@electron/rebuild`",
-      "Typo: Found 'Magic Mirror' in file `SAMPLE_CONFIG.js`: Replace it with `MagicMirror\u00b2`."
+      "Typo: Found 'Magic Mirror' in file `SAMPLE_CONFIG.js`: Replace it with `MagicMirror\u00b2`.",
+      "Warning: No LICENSE file."
     ],
     "license": "MIT",
     "image": "images-MMM-Simple-Swiper-Pin-Layout.jpg"
@@ -13070,7 +13297,8 @@
     "description": "Shows trash days with simple setup.",
     "issues": [
       "Typo: Found 'Magic Mirror' in file `MMM-SimpleNotifyTrashDay.js`: Replace it with `MagicMirror\u00b2`.",
-      "Typo: Found 'Magic Mirror' in file `node_helper.js`: Replace it with `MagicMirror\u00b2`."
+      "Typo: Found 'Magic Mirror' in file `node_helper.js`: Replace it with `MagicMirror\u00b2`.",
+      "Warning: No LICENSE file."
     ],
     "tags": [
       "trash day",
@@ -13290,7 +13518,8 @@
       "Issue: No image found.",
       "Typo: Found 'Magic Mirror' in file `MMM-SmartWebDisplay.js`: Replace it with `MagicMirror\u00b2`.",
       "Typo: Found 'Magic Mirror' in file `README.md`: Replace it with `MagicMirror\u00b2`.",
-      "Typo: Found 'Magic Mirror' in file `package.json`: Replace it with `MagicMirror\u00b2`."
+      "Typo: Found 'Magic Mirror' in file `package.json`: Replace it with `MagicMirror\u00b2`.",
+      "Warning: No LICENSE file."
     ],
     "tags": [
       "iframe",
@@ -13307,7 +13536,8 @@
     "description": "Air pollution in Polish cities.",
     "issues": [
       "Recommendation: Found 'require('https')' in file `node_helper.js`: Replace it with built-in fetch.",
-      "Typo: Found 'Magic Mirror' in file `package.json`: Replace it with `MagicMirror\u00b2`."
+      "Typo: Found 'Magic Mirror' in file `package.json`: Replace it with `MagicMirror\u00b2`.",
+      "Warning: No LICENSE file."
     ],
     "tags": [
       "air polution"
@@ -13362,7 +13592,8 @@
     "description": "More realistic snow plugin to improve your winter experience",
     "issues": [
       "Issue: There is no `package.json`. We need this file to gather information about the module.",
-      "Typo: Found 'Magic Mirror' in file `MMM-Snow.js`: Replace it with `MagicMirror\u00b2`."
+      "Typo: Found 'Magic Mirror' in file `MMM-Snow.js`: Replace it with `MagicMirror\u00b2`.",
+      "Warning: No LICENSE file."
     ]
   },
   {
@@ -13396,7 +13627,8 @@
       "Typo: Found 'MagicMirror2' in file `README.md`: Replace it with `MagicMirror\u00b2`.",
       "Typo: Found 'Magic Mirror' in file `node_helper.js`: Replace it with `MagicMirror\u00b2`.",
       "Recommendation: Found 'node-fetch' in file `node_helper.js`: Replace it with built-in fetch.",
-      "Recommendation: Found 'node-fetch' in file `package.json`: Replace it with built-in fetch."
+      "Recommendation: Found 'node-fetch' in file `package.json`: Replace it with built-in fetch.",
+      "Warning: No LICENSE file."
     ],
     "tags": [
       "live score",
@@ -13439,7 +13671,8 @@
     "issues": [
       "Typo: Found 'Magic Mirror' in file `MMM-socialbicycles.js`: Replace it with `MagicMirror\u00b2`.",
       "Typo: Found 'Magic Mirror' in file `node_helper.js`: Replace it with `MagicMirror\u00b2`.",
-      "Deprecated: Found 'require('request')' in file `node_helper.js`: Replace it with built-in fetch."
+      "Deprecated: Found 'require('request')' in file `node_helper.js`: Replace it with built-in fetch.",
+      "Warning: No LICENSE file."
     ],
     "tags": [
       "nextbike",
@@ -13615,7 +13848,8 @@
     "description": "Adds vertical space (as HTML div) between modules.",
     "issues": [
       "Issue: There is no `package.json`. We need this file to gather information about the module.",
-      "Typo: Found 'Magic Mirror' in file `MMM-Space.js`: Replace it with `MagicMirror\u00b2`."
+      "Typo: Found 'Magic Mirror' in file `MMM-Space.js`: Replace it with `MagicMirror\u00b2`.",
+      "Warning: No LICENSE file."
     ]
   },
   {
@@ -13627,7 +13861,8 @@
     "description": "Show the previous and upcoming launches of any rocket, bases on SpaceLaunchNow API.",
     "issues": [
       "Issue: There is no `package.json`. We need this file to gather information about the module.",
-      "Recommendation: Found 'XMLHttpRequest' in file `MMM-SpaceLaunchNow.js`: Replace it with built-in fetch."
+      "Recommendation: Found 'XMLHttpRequest' in file `MMM-SpaceLaunchNow.js`: Replace it with built-in fetch.",
+      "Warning: No LICENSE file."
     ]
   },
   {
@@ -13639,7 +13874,8 @@
     "description": "Show the previous and upcoming launches of SpaceX rockets.",
     "issues": [
       "Issue: There is no `package.json`. We need this file to gather information about the module.",
-      "Recommendation: Found 'XMLHttpRequest' in file `MMM-SpaceX.js`: Replace it with built-in fetch."
+      "Recommendation: Found 'XMLHttpRequest' in file `MMM-SpaceX.js`: Replace it with built-in fetch.",
+      "Warning: No LICENSE file."
     ]
   },
   {
@@ -13653,7 +13889,8 @@
       "`package.json` issue: No description",
       "`package.json` issue: No repository field.",
       "`package.json` issue: No license field.",
-      "Deprecated: Found 'require('request')' in file `node_helper.js`: Replace it with built-in fetch."
+      "Deprecated: Found 'require('request')' in file `node_helper.js`: Replace it with built-in fetch.",
+      "Warning: No LICENSE file."
     ]
   },
   {
@@ -13694,7 +13931,8 @@
     "maintainerURL": "",
     "description": "Add events to MMM-Spotify to manage volume and playlists",
     "issues": [
-      "Issue: There is no `package.json`. We need this file to gather information about the module."
+      "Issue: There is no `package.json`. We need this file to gather information about the module.",
+      "Warning: No LICENSE file."
     ]
   },
   {
@@ -13724,7 +13962,8 @@
     "maintainerURL": "",
     "description": "Display upcoming metros in Rennes (France)",
     "issues": [
-      "Issue: There is no `package.json`. We need this file to gather information about the module."
+      "Issue: There is no `package.json`. We need this file to gather information about the module.",
+      "Warning: No LICENSE file."
     ]
   },
   {
@@ -13759,7 +13998,8 @@
       "Typo: Found 'Magic Mirror' in file `README.md`: Replace it with `MagicMirror\u00b2`.",
       "Recommendation: Found 'node-fetch' in file `node_helper.js`: Replace it with built-in fetch.",
       "Typo: Found 'Magic Mirror' in file `package.json`: Replace it with `MagicMirror\u00b2`.",
-      "Recommendation: Found 'node-fetch' in file `package.json`: Replace it with built-in fetch."
+      "Recommendation: Found 'node-fetch' in file `package.json`: Replace it with built-in fetch.",
+      "Warning: No LICENSE file."
     ]
   },
   {
@@ -13810,7 +14050,9 @@
     "maintainer": "Klettner",
     "maintainerURL": "https://github.com/Klettner",
     "description": "Display an alert-style timer or stopwatch. Controllable via notifications or the [MM-Remote](https://github.com/Klettner/MM-Remote) android app.",
-    "issues": [],
+    "issues": [
+      "Warning: No LICENSE file."
+    ],
     "tags": [
       "timer"
     ],
@@ -13922,7 +14164,8 @@
       "Typo: Found 'Magic Mirror' in file `MMM-Swipe.js`: Replace it with `MagicMirror\u00b2`.",
       "Typo: Found 'Magic Mirror' in file `node_helper.js`: Replace it with `MagicMirror\u00b2`.",
       "Typo: Found 'Magic Mirror' in file `package.json`: Replace it with `MagicMirror\u00b2`.",
-      "Deprecated: Found 'electron-rebuild' in file `package.json`: Replace it with `@electron/rebuild`"
+      "Deprecated: Found 'electron-rebuild' in file `package.json`: Replace it with `@electron/rebuild`",
+      "Warning: No LICENSE file."
     ],
     "tags": [
       "hand gestures",
@@ -14029,7 +14272,8 @@
     "issues": [
       "Issue: There is no `package.json`. We need this file to gather information about the module.",
       "Typo: Found 'Magic Mirror' in file `MMM-syslog.js`: Replace it with `MagicMirror\u00b2`.",
-      "Typo: Found 'Magic Mirror' in file `node_helper.js`: Replace it with `MagicMirror\u00b2`."
+      "Typo: Found 'Magic Mirror' in file `node_helper.js`: Replace it with `MagicMirror\u00b2`.",
+      "Warning: No LICENSE file."
     ]
   },
   {
@@ -14121,7 +14365,8 @@
     "issues": [
       "`package.json` issue: No repository field.",
       "Typo: Found 'Magic Mirror' in file `MMM-TakeAndDrive.js`: Replace it with `MagicMirror\u00b2`.",
-      "Deprecated: Found 'require('request')' in file `node_helper.js`: Replace it with built-in fetch."
+      "Deprecated: Found 'require('request')' in file `node_helper.js`: Replace it with built-in fetch.",
+      "Warning: No LICENSE file."
     ],
     "tags": [
       "carsharing",
@@ -14254,7 +14499,8 @@
       "`package.json` issue: No repository field.",
       "Typo: Found 'Magic Mirror' in file `MMM-Tesla3.js`: Replace it with `MagicMirror\u00b2`.",
       "Typo: Found 'Magic Mirror' in file `node_helper.js`: Replace it with `MagicMirror\u00b2`.",
-      "Deprecated: Found 'require('request')' in file `node_helper.js`: Replace it with built-in fetch."
+      "Deprecated: Found 'require('request')' in file `node_helper.js`: Replace it with built-in fetch.",
+      "Warning: No LICENSE file."
     ],
     "license": "ISC",
     "image": "images-MMM-Tesla3.jpg"
@@ -14412,7 +14658,8 @@
     "description": "This is a module that fetch earth live image form Himawari #8 geostationary satellite and display images on screen.",
     "issues": [
       "Issue: There is no `package.json`. We need this file to gather information about the module.",
-      "Typo: Found 'Magic Mirror' in file `MMM-TiHimawari8Earth.js`: Replace it with `MagicMirror\u00b2`."
+      "Typo: Found 'Magic Mirror' in file `MMM-TiHimawari8Earth.js`: Replace it with `MagicMirror\u00b2`.",
+      "Warning: No LICENSE file."
     ]
   },
   {
@@ -14425,7 +14672,8 @@
     "issues": [
       "Typo: Found 'Magic Mirror' in file `README.md`: Replace it with `MagicMirror\u00b2`.",
       "Typo: Found 'Magic Mirror' in file `README_es.md`: Replace it with `MagicMirror\u00b2`.",
-      "Typo: Found 'Magic Mirror' in file `package.json`: Replace it with `MagicMirror\u00b2`."
+      "Typo: Found 'Magic Mirror' in file `package.json`: Replace it with `MagicMirror\u00b2`.",
+      "Warning: No LICENSE file."
     ],
     "license": "MIT",
     "image": "doc-mmm-timetagger-screenshot-1.jpg"
@@ -14439,7 +14687,8 @@
     "description": "Shows your TimeTree event.",
     "issues": [
       "Typo: Found 'Magic Mirror' in file `MMM-TimeTreeEvent.js`: Replace it with `MagicMirror\u00b2`.",
-      "Typo: Found 'Magic Mirror' in file `node_helper.js`: Replace it with `MagicMirror\u00b2`."
+      "Typo: Found 'Magic Mirror' in file `node_helper.js`: Replace it with `MagicMirror\u00b2`.",
+      "Warning: No LICENSE file."
     ],
     "tags": [
       "event",
@@ -14456,7 +14705,8 @@
     "maintainerURL": "",
     "description": "Retrieves school meal menus from the Titan Schools API (family.titank12.com)",
     "issues": [
-      "`package.json` issue: No repository field."
+      "`package.json` issue: No repository field.",
+      "Warning: No LICENSE file."
     ],
     "license": "ISC",
     "image": "docs-multiple-schools.jpg"
@@ -14563,7 +14813,8 @@
     "issues": [
       "Issue: There is no `package.json`. We need this file to gather information about the module.",
       "Typo: Found 'Magic Mirror' in file `MMM-Toon.js`: Replace it with `MagicMirror\u00b2`.",
-      "Recommendation: Found 'require('https')' in file `ToonAPI.js`: Replace it with built-in fetch."
+      "Recommendation: Found 'require('https')' in file `ToonAPI.js`: Replace it with built-in fetch.",
+      "Warning: No LICENSE file."
     ]
   },
   {
@@ -14618,7 +14869,8 @@
     "maintainerURL": "https://github.com/slametps",
     "description": "Display the status of TPLink lights/plugs in your local network.",
     "issues": [
-      "Typo: Found 'Magic Mirror' in file `node_helper.js`: Replace it with `MagicMirror\u00b2`."
+      "Typo: Found 'Magic Mirror' in file `node_helper.js`: Replace it with `MagicMirror\u00b2`.",
+      "Warning: No LICENSE file."
     ],
     "tags": [
       "tplink",
@@ -14654,7 +14906,8 @@
       "Typo: Found 'Magic Mirror' in file `MMM-Traffic.js`: Replace it with `MagicMirror\u00b2`.",
       "Recommendation: Found 'node-fetch' in file `README.md`: Replace it with built-in fetch.",
       "Typo: Found 'Magic Mirror' in file `package.json`: Replace it with `MagicMirror\u00b2`.",
-      "Recommendation: Found 'node-fetch' in file `package.json`: Replace it with built-in fetch."
+      "Recommendation: Found 'node-fetch' in file `package.json`: Replace it with built-in fetch.",
+      "Warning: No LICENSE file."
     ],
     "tags": [
       "traffic"
@@ -14672,7 +14925,8 @@
     "issues": [
       "Issue: There is no `package.json`. We need this file to gather information about the module.",
       "Typo: Found 'Magic Mirror' in file `trainconnections.js`: Replace it with `MagicMirror\u00b2`.",
-      "Recommendation: Found 'XMLHttpRequest' in file `trainconnections.js`: Replace it with built-in fetch."
+      "Recommendation: Found 'XMLHttpRequest' in file `trainconnections.js`: Replace it with built-in fetch.",
+      "Warning: No LICENSE file."
     ]
   },
   {
@@ -14726,7 +14980,8 @@
     "issues": [
       "Issue: There is no `package.json`. We need this file to gather information about the module.",
       "Typo: Found 'Magic Mirror' in file `MMM-transitfeed.js`: Replace it with `MagicMirror\u00b2`.",
-      "Typo: Found 'Magic Mirror' in file `node_helper.js`: Replace it with `MagicMirror\u00b2`."
+      "Typo: Found 'Magic Mirror' in file `node_helper.js`: Replace it with `MagicMirror\u00b2`.",
+      "Warning: No LICENSE file."
     ]
   },
   {
@@ -14765,7 +15020,8 @@
     "maintainerURL": "",
     "description": "Display TransLoc locations for a bus stop, used by the Rider App",
     "issues": [
-      "Issue: There is no `package.json`. We need this file to gather information about the module."
+      "Issue: There is no `package.json`. We need this file to gather information about the module.",
+      "Warning: No LICENSE file."
     ]
   },
   {
@@ -14802,7 +15058,8 @@
     "issues": [
       "Typo: Found 'Magic Mirror' in file `MMM-Trello.js`: Replace it with `MagicMirror\u00b2`.",
       "Typo: Found 'Magic Mirror' in file `node_helper.js`: Replace it with `MagicMirror\u00b2`.",
-      "Typo: Found 'Magic Mirror' in file `package.json`: Replace it with `MagicMirror\u00b2`."
+      "Typo: Found 'Magic Mirror' in file `package.json`: Replace it with `MagicMirror\u00b2`.",
+      "Warning: No LICENSE file."
     ],
     "tags": [
       "trello"
@@ -14869,7 +15126,8 @@
       "Typo: Found 'Magic Mirror' in file `MMM-Tube-Status.js`: Replace it with `MagicMirror\u00b2`.",
       "Typo: Found 'MagicMirror2' in file `README.md`: Replace it with `MagicMirror\u00b2`.",
       "Typo: Found 'Magic Mirror' in file `node_helper.js`: Replace it with `MagicMirror\u00b2`.",
-      "Deprecated: Found 'require('request')' in file `node_helper.js`: Replace it with built-in fetch."
+      "Deprecated: Found 'require('request')' in file `node_helper.js`: Replace it with built-in fetch.",
+      "Warning: No LICENSE file."
     ]
   },
   {
@@ -14880,7 +15138,8 @@
     "maintainerURL": "https://github.com/slametps",
     "description": "Display the status of smarthome devices based on Tuya IoT-Platform (managed by SmartLife app).",
     "issues": [
-      "Typo: Found 'Magic Mirror' in file `node_helper.js`: Replace it with `MagicMirror\u00b2`."
+      "Typo: Found 'Magic Mirror' in file `node_helper.js`: Replace it with `MagicMirror\u00b2`.",
+      "Warning: No LICENSE file."
     ],
     "tags": [
       "tuyasl",
@@ -14992,7 +15251,8 @@
       "Typo: Found 'Magic Mirror' in file `MMM-uber.js`: Replace it with `MagicMirror\u00b2`.",
       "Typo: Found 'Magic Mirror' in file `README.md`: Replace it with `MagicMirror\u00b2`.",
       "Typo: Found 'Magic Mirror' in file `node_helper.js`: Replace it with `MagicMirror\u00b2`.",
-      "Deprecated: Found 'require('request')' in file `node_helper.js`: Replace it with built-in fetch."
+      "Deprecated: Found 'require('request')' in file `node_helper.js`: Replace it with built-in fetch.",
+      "Warning: No LICENSE file."
     ]
   },
   {
@@ -15093,7 +15353,8 @@
       "Issue: There is no `package.json`. We need this file to gather information about the module.",
       "Typo: Found 'Magic Mirror' in file `MMM-UKTide.js`: Replace it with `MagicMirror\u00b2`.",
       "Typo: Found 'Magic Mirror' in file `node_helper.js`: Replace it with `MagicMirror\u00b2`.",
-      "Deprecated: Found 'require('request')' in file `node_helper.js`: Replace it with built-in fetch."
+      "Deprecated: Found 'require('request')' in file `node_helper.js`: Replace it with built-in fetch.",
+      "Warning: No LICENSE file."
     ]
   },
   {
@@ -15106,7 +15367,8 @@
     "issues": [
       "Typo: Found 'Magic Mirror' in file `MMM-UniFi-Voucher.js`: Replace it with `MagicMirror\u00b2`.",
       "Deprecated: Found 'require(\"request\")' in file `node_helper.js`: Replace it with built-in fetch.",
-      "Typo: Found 'Magic Mirror' in file `package.json`: Replace it with `MagicMirror\u00b2`."
+      "Typo: Found 'Magic Mirror' in file `package.json`: Replace it with `MagicMirror\u00b2`.",
+      "Warning: No LICENSE file."
     ],
     "tags": [
       "unifi"
@@ -15136,7 +15398,8 @@
     "description": "Display temperature readings from a USB DVB-T stick acting as a 433Mhz SDR, receiving input from a cheap wireless weather sensor (GT-WT-01).",
     "issues": [
       "Issue: There is no `package.json`. We need this file to gather information about the module.",
-      "Typo: Found 'Magic Mirror' in file `README.md`: Replace it with `MagicMirror\u00b2`."
+      "Typo: Found 'Magic Mirror' in file `README.md`: Replace it with `MagicMirror\u00b2`.",
+      "Warning: No LICENSE file."
     ]
   },
   {
@@ -15242,7 +15505,8 @@
       "Typo: Found 'Magic Mirror' in file `MMM-Vasttrafik-PublicTransport.js`: Replace it with `MagicMirror\u00b2`.",
       "Typo: Found 'Magic Mirror' in file `README.md`: Replace it with `MagicMirror\u00b2`.",
       "Typo: Found 'Magic Mirror' in file `node_helper.js`: Replace it with `MagicMirror\u00b2`.",
-      "Typo: Found 'Magic Mirror' in file `package.json`: Replace it with `MagicMirror\u00b2`."
+      "Typo: Found 'Magic Mirror' in file `package.json`: Replace it with `MagicMirror\u00b2`.",
+      "Warning: No LICENSE file."
     ],
     "tags": [],
     "license": "MIT",
@@ -15259,7 +15523,8 @@
       "Typo: Found 'Magic Mirror' in file `MMM-Vasttrafik-PublicTransport.js`: Replace it with `MagicMirror\u00b2`.",
       "Typo: Found 'Magic Mirror' in file `README.md`: Replace it with `MagicMirror\u00b2`.",
       "Typo: Found 'Magic Mirror' in file `node_helper.js`: Replace it with `MagicMirror\u00b2`.",
-      "Typo: Found 'Magic Mirror' in file `package.json`: Replace it with `MagicMirror\u00b2`."
+      "Typo: Found 'Magic Mirror' in file `package.json`: Replace it with `MagicMirror\u00b2`.",
+      "Warning: No LICENSE file."
     ],
     "tags": [],
     "license": "MIT",
@@ -15276,7 +15541,8 @@
       "`package.json` issue: No repository field.",
       "Issue: No image found.",
       "Typo: Found 'Magic Mirror' in file `node_helper.js`: Replace it with `MagicMirror\u00b2`.",
-      "Deprecated: Found 'require(\"request\")' in file `node_helper.js`: Replace it with built-in fetch."
+      "Deprecated: Found 'require(\"request\")' in file `node_helper.js`: Replace it with built-in fetch.",
+      "Warning: No LICENSE file."
     ],
     "tags": [
       "\"magic",
@@ -15439,7 +15705,8 @@
       "`package.json` issue: No description",
       "`package.json` issue: No repository field.",
       "Issue: No image found.",
-      "Typo: Found 'Magic Mirror' in file `README.md`: Replace it with `MagicMirror\u00b2`."
+      "Typo: Found 'Magic Mirror' in file `README.md`: Replace it with `MagicMirror\u00b2`.",
+      "Warning: No LICENSE file."
     ],
     "license": "ISC"
   },
@@ -15471,7 +15738,8 @@
       "Issue: There is no `package.json`. We need this file to gather information about the module.",
       "Recommendation: Module name doesn't follow the recommended pattern (it doesn't start with `MMM-`). Consider renaming your module.",
       "Typo: Found 'Magic Mirror' in file `node_helper.js`: Replace it with `MagicMirror\u00b2`.",
-      "Typo: Found 'Magic Mirror' in file `voicecontrol.js`: Replace it with `MagicMirror\u00b2`."
+      "Typo: Found 'Magic Mirror' in file `voicecontrol.js`: Replace it with `MagicMirror\u00b2`.",
+      "Warning: No LICENSE file."
     ]
   },
   {
@@ -15497,7 +15765,8 @@
     "maintainerURL": "",
     "description": "Displays what a Volumio device is currently playing",
     "issues": [
-      "Issue: There is no `package.json`. We need this file to gather information about the module."
+      "Issue: There is no `package.json`. We need this file to gather information about the module.",
+      "Warning: No LICENSE file."
     ]
   },
   {
@@ -15680,7 +15949,8 @@
     "maintainerURL": "",
     "description": "A simple Water Reminder Module",
     "issues": [
-      "Issue: There is no `package.json`. We need this file to gather information about the module."
+      "Issue: There is no `package.json`. We need this file to gather information about the module.",
+      "Warning: No LICENSE file."
     ]
   },
   {
@@ -15695,7 +15965,8 @@
       "`package.json` issue: No repository field.",
       "`package.json` issue: No license field.",
       "Typo: Found 'Magic Mirror' in file `node_helper.js`: Replace it with `MagicMirror\u00b2`.",
-      "Deprecated: Found 'require('request')' in file `node_helper.js`: Replace it with built-in fetch."
+      "Deprecated: Found 'require('request')' in file `node_helper.js`: Replace it with built-in fetch.",
+      "Warning: No LICENSE file."
     ]
   },
   {
@@ -15802,7 +16073,8 @@
     "issues": [
       "Issue: There is no `package.json`. We need this file to gather information about the module.",
       "Typo: Found 'Magic Mirror' in file `MMM-WeatherDependentClothes.js`: Replace it with `MagicMirror\u00b2`.",
-      "Recommendation: Found 'XMLHttpRequest' in file `MMM-WeatherDependentClothes.js`: Replace it with built-in fetch."
+      "Recommendation: Found 'XMLHttpRequest' in file `MMM-WeatherDependentClothes.js`: Replace it with built-in fetch.",
+      "Warning: No LICENSE file."
     ]
   },
   {
@@ -15827,7 +16099,8 @@
     "description": "Weather forecast with rain & temp graphs. Lots of options to turn on & off. Data from OpenWeatherMap API",
     "issues": [
       "Issue: There is no `package.json`. We need this file to gather information about the module.",
-      "Recommendation: Found 'XMLHttpRequest' in file `d3.min.js`: Replace it with built-in fetch."
+      "Recommendation: Found 'XMLHttpRequest' in file `d3.min.js`: Replace it with built-in fetch.",
+      "Warning: No LICENSE file."
     ]
   },
   {
@@ -16037,7 +16310,8 @@
     "maintainerURL": "",
     "description": "Adds the windy weather map which covers the whole screen.",
     "issues": [
-      "Issue: There is no `package.json`. We need this file to gather information about the module."
+      "Issue: There is no `package.json`. We need this file to gather information about the module.",
+      "Warning: No LICENSE file."
     ]
   },
   {
@@ -16067,7 +16341,8 @@
     "issues": [
       "Issue: There is no `package.json`. We need this file to gather information about the module.",
       "Typo: Found 'Magic Mirror' in file `MMM-wordnik.js`: Replace it with `MagicMirror\u00b2`.",
-      "Typo: Found 'Magic Mirror' in file `node_helper.js`: Replace it with `MagicMirror\u00b2`."
+      "Typo: Found 'Magic Mirror' in file `node_helper.js`: Replace it with `MagicMirror\u00b2`.",
+      "Warning: No LICENSE file."
     ]
   },
   {
@@ -16094,7 +16369,8 @@
     "issues": [
       "Issue: There is no `package.json`. We need this file to gather information about the module.",
       "Recommendation: Module name doesn't follow the recommended pattern (it doesn't start with `MMM-`). Consider renaming your module.",
-      "Typo: Found 'Magic Mirror' in file `worldclock.js`: Replace it with `MagicMirror\u00b2`."
+      "Typo: Found 'Magic Mirror' in file `worldclock.js`: Replace it with `MagicMirror\u00b2`.",
+      "Warning: No LICENSE file."
     ]
   },
   {
@@ -16122,7 +16398,8 @@
       "Issue: No image found.",
       "Typo: Found 'Magic Mirror' in file `MMM-WorldTides.js`: Replace it with `MagicMirror\u00b2`.",
       "Recommendation: Found 'XMLHttpRequest' in file `MMM-WorldTides.js`: Replace it with built-in fetch.",
-      "Typo: Found 'MagicMirror2' in file `package.json`: Replace it with `MagicMirror\u00b2`."
+      "Typo: Found 'MagicMirror2' in file `package.json`: Replace it with `MagicMirror\u00b2`.",
+      "Warning: No LICENSE file."
     ],
     "tags": [
       "tide",
@@ -16162,7 +16439,8 @@
       "Issue: There is no `package.json`. We need this file to gather information about the module.",
       "Recommendation: Module name doesn't follow the recommended pattern (it doesn't start with `MMM-`). Consider renaming your module.",
       "Typo: Found 'Magic Mirror' in file `wuforecast.js`: Replace it with `MagicMirror\u00b2`.",
-      "Recommendation: Found 'XMLHttpRequest' in file `wuforecast.js`: Replace it with built-in fetch."
+      "Recommendation: Found 'XMLHttpRequest' in file `wuforecast.js`: Replace it with built-in fetch.",
+      "Warning: No LICENSE file."
     ]
   },
   {
@@ -16176,7 +16454,8 @@
       "Issue: There is no `package.json`. We need this file to gather information about the module.",
       "Typo: Found 'Magic Mirror' in file `MMM-WunderGround.js`: Replace it with `MagicMirror\u00b2`.",
       "Typo: Found 'Magic Mirror' in file `node_helper.js`: Replace it with `MagicMirror\u00b2`.",
-      "Deprecated: Found 'require('request')' in file `node_helper.js`: Replace it with built-in fetch."
+      "Deprecated: Found 'require('request')' in file `node_helper.js`: Replace it with built-in fetch.",
+      "Warning: No LICENSE file."
     ]
   },
   {
@@ -16218,7 +16497,8 @@
       "Typo: Found 'Magic Mirror' in file `.gitignore`: Replace it with `MagicMirror\u00b2`.",
       "Typo: Found 'Magic Mirror' in file `MMM-xiaomi.js`: Replace it with `MagicMirror\u00b2`.",
       "Typo: Found 'Magic Mirror' in file `node_helper.js`: Replace it with `MagicMirror\u00b2`.",
-      "Typo: Found 'Magic Mirror' in file `package.json`: Replace it with `MagicMirror\u00b2`."
+      "Typo: Found 'Magic Mirror' in file `package.json`: Replace it with `MagicMirror\u00b2`.",
+      "Warning: No LICENSE file."
     ],
     "tags": [
       "wunderlist"
@@ -16261,7 +16541,8 @@
     "maintainerURL": "https://github.com/slametps",
     "description": "Display the status of Yeelight bulbs in your local network.",
     "issues": [
-      "Typo: Found 'Magic Mirror' in file `node_helper.js`: Replace it with `MagicMirror\u00b2`."
+      "Typo: Found 'Magic Mirror' in file `node_helper.js`: Replace it with `MagicMirror\u00b2`.",
+      "Warning: No LICENSE file."
     ],
     "tags": [
       "yeelight",
@@ -16279,7 +16560,8 @@
     "description": "Instead of default compliments with classical poems, just supports Chinese.\u968f\u673a\u4ea7\u751f\u4e00\u53e5\u53e4\u8bd7\u8bcd\u3002",
     "issues": [
       "Issue: There is no `package.json`. We need this file to gather information about the module.",
-      "Deprecated: Found 'require('request')' in file `node_helper.js`: Replace it with built-in fetch."
+      "Deprecated: Found 'require('request')' in file `node_helper.js`: Replace it with built-in fetch.",
+      "Warning: No LICENSE file."
     ]
   },
   {
@@ -16291,7 +16573,8 @@
     "description": "Displays categories of your choosing from your YNAB budget.",
     "issues": [
       "`package.json` issue: No description",
-      "`package.json` issue: No repository field."
+      "`package.json` issue: No repository field.",
+      "Warning: No LICENSE file."
     ],
     "license": "ISC",
     "image": "screenshot.jpg"
@@ -16344,7 +16627,8 @@
     "maintainerURL": "",
     "description": "Enables easy integration of YouTube videos.",
     "issues": [
-      "Issue: There is no `package.json`. We need this file to gather information about the module."
+      "Issue: There is no `package.json`. We need this file to gather information about the module.",
+      "Warning: No LICENSE file."
     ]
   },
   {
@@ -16395,7 +16679,8 @@
       "Recommendation: Found 'XMLHttpRequest' in file `MMM-YrNow.js`: Replace it with built-in fetch.",
       "Typo: Found 'Magic Mirror' in file `README.md`: Replace it with `MagicMirror\u00b2`.",
       "Deprecated: Found 'require('request')' in file `node_helper.js`: Replace it with built-in fetch.",
-      "Recommendation: Found 'XMLHttpRequest' in file `readTextFile.js`: Replace it with built-in fetch."
+      "Recommendation: Found 'XMLHttpRequest' in file `readTextFile.js`: Replace it with built-in fetch.",
+      "Warning: No LICENSE file."
     ]
   },
   {
@@ -16410,7 +16695,8 @@
       "Typo: Found 'Magic Mirror' in file `README.md`: Replace it with `MagicMirror\u00b2`.",
       "Typo: Found 'MagicMirror2' in file `README.md`: Replace it with `MagicMirror\u00b2`.",
       "Deprecated: Found 'require('request')' in file `node_helper.js`: Replace it with built-in fetch.",
-      "Recommendation: Found 'XMLHttpRequest' in file `readTextFile.js`: Replace it with built-in fetch."
+      "Recommendation: Found 'XMLHttpRequest' in file `readTextFile.js`: Replace it with built-in fetch.",
+      "Warning: No LICENSE file."
     ]
   },
   {
@@ -16440,7 +16726,8 @@
     "issues": [
       "Issue: There is no `package.json`. We need this file to gather information about the module.",
       "Recommendation: Found 'XMLHttpRequest' in file `MMM-ZAPTEC.js`: Replace it with built-in fetch.",
-      "Typo: Found 'Magic Mirror' in file `README.md`: Replace it with `MagicMirror\u00b2`."
+      "Typo: Found 'Magic Mirror' in file `README.md`: Replace it with `MagicMirror\u00b2`.",
+      "Warning: No LICENSE file."
     ]
   },
   {

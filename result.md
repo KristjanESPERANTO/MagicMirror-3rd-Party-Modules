@@ -1,6 +1,6 @@
 # Result of the module analysis
 
-Timestamp: 2023-11-02 13:26:03
+Timestamp: 2023-11-02 14:33:33
 
 Number of analyzed modules: 1056
 
@@ -44,6 +44,7 @@ Number of analyzed modules: 1056
 
 1. Typo: Found 'Magic Mirror' in file `MMM-Advent.js`: Replace it with `MagicMirror²`.
 2. Typo: Found 'Magic Mirror' in file `README.md`: Replace it with `MagicMirror²`.
+3. Warning: No LICENSE file.
 
 ## [MMM-AfterShip by mykle1](https://github.com/mykle1/MMM-AfterShip)
 
@@ -63,6 +64,7 @@ Number of analyzed modules: 1056
 1. Issue: There is no `package.json`. We need this file to gather information about the module.
 2. Typo: Found 'Magic Mirror' in file `node_helper.js`: Replace it with `MagicMirror²`.
 3. Recommendation: Found 'require("https")' in file `node_helper.js`: Replace it with built-in fetch.
+4. Warning: No LICENSE file.
 
 ## [MMM-AirbarHelper by ryanzor](https://github.com/ryanzor/MMM-AirbarHelper)
 
@@ -98,6 +100,7 @@ Number of analyzed modules: 1056
 
 1. Typo: Found 'Magic Mirror' in file `MMM-Airtable.js`: Replace it with `MagicMirror²`.
 2. Typo: Found 'MagicMirror2' in file `package.json`: Replace it with `MagicMirror²`.
+3. Warning: No LICENSE file.
 
 ## [MMM-AlarmClock by fewieden](https://github.com/fewieden/MMM-AlarmClock)
 
@@ -139,6 +142,7 @@ Number of analyzed modules: 1056
 ## [MMM-AmLich by diyeverythingvn](https://github.com/diyeverythingvn/MMM-AmLich)
 
 1. Issue: There is no `package.json`. We need this file to gather information about the module.
+2. Warning: No LICENSE file.
 
 ## [anniversarymodule by marcomerens](https://github.com/marcomerens/anniversarymodule)
 
@@ -148,11 +152,13 @@ Number of analyzed modules: 1056
 4. Typo: Found 'Magic Mirror' in file `BIRTHDAYS.js`: Replace it with `MagicMirror²`.
 5. Typo: Found 'Magic Mirror' in file `README.md`: Replace it with `MagicMirror²`.
 6. Typo: Found 'Magic Mirror' in file `README.md`: Replace it with `MagicMirror²`.
+7. Warning: No LICENSE file.
 
 ## [MMM-AnyList by codetheweb](https://github.com/codetheweb/MMM-AnyList)
 
 1. Typo: Found 'Magic Mirror' in file `README.md`: Replace it with `MagicMirror²`.
 2. Typo: Found 'Magic Mirror' in file `package.json`: Replace it with `MagicMirror²`.
+3. Warning: No LICENSE file.
 
 ## [MMM-AoC by JonasTriki](https://github.com/JonasTriki/MMM-AoC)
 
@@ -210,6 +216,10 @@ Number of analyzed modules: 1056
 4. Typo: Found 'Magic Mirror' in file `node_helper.js`: Replace it with `MagicMirror²`.
 5. Deprecated: Found 'require('request')' in file `node_helper.js`: Replace it with built-in fetch.
 
+## [MMM-ArduPort by Dentrax](https://github.com/Dentrax/MMM-ArduPort)
+
+1. Warning: No LICENSE file.
+
 ## [MMM-Astrology by cowboysdude](https://github.com/cowboysdude/MMM-Astrology)
 
 1. Issue: There is no `package.json`. We need this file to gather information about the module.
@@ -217,6 +227,7 @@ Number of analyzed modules: 1056
 3. Typo: Found 'MagicMirror2' in file `README.md`: Replace it with `MagicMirror²`.
 4. Typo: Found 'Magic Mirror' in file `node_helper.js`: Replace it with `MagicMirror²`.
 5. Deprecated: Found 'require('request')' in file `node_helper.js`: Replace it with built-in fetch.
+6. Warning: No LICENSE file.
 
 ## [MMM-Astronauts by mykle1](https://github.com/mykle1/MMM-Astronauts)
 
@@ -231,6 +242,7 @@ Number of analyzed modules: 1056
 2. Typo: Found 'Magic Mirror' in file `README.md`: Replace it with `MagicMirror²`.
 3. Typo: Found 'Magic Mirror' in file `node_helper.js`: Replace it with `MagicMirror²`.
 4. Recommendation: Found 'node-fetch' in file `node_helper.js`: Replace it with built-in fetch.
+5. Warning: No LICENSE file.
 
 ## [MMM-AtbSanntid by Springvar](https://github.com/Springvar/MMM-AtbSanntid)
 
@@ -250,12 +262,14 @@ Number of analyzed modules: 1056
 1. Typo: Found 'Magic Mirror' in file `MMM-August-Lock.js`: Replace it with `MagicMirror²`.
 2. Typo: Found 'Magic Mirror' in file `node_helper.js`: Replace it with `MagicMirror²`.
 3. Typo: Found 'Magic Mirror' in file `package.json`: Replace it with `MagicMirror²`.
+4. Warning: No LICENSE file.
 
 ## [MMM-Autobahn by JockeyDoe](https://github.com/JockeyDoe/MMM-Autobahn)
 
 1. `package.json` issue: No description
 2. Deprecated: Found 'require("native-request")' in file `node_helper.js`: Replace it with built-in fetch.
 3. Issue: Found directory `node_modules`. This shouldn't be uploaded. Add `node_modules/`to `.gitignore`.
+4. Warning: No LICENSE file.
 
 ## [MMM-AutoDimmer by Fifteen15Studios](https://github.com/Fifteen15Studios/MMM-AutoDimmer)
 
@@ -331,11 +345,13 @@ Number of analyzed modules: 1056
 3. `package.json` issue: No license field.
 4. Typo: Found 'Magic Mirror' in file `node_helper.js`: Replace it with `MagicMirror²`.
 5. Deprecated: Found 'require('request')' in file `node_helper.js`: Replace it with built-in fetch.
+6. Warning: No LICENSE file.
 
 ## [MMM-Bengali by ethanwang4](https://github.com/ethanwang4/MMM-Bengali)
 
 1. Issue: There is no `package.json`. We need this file to gather information about the module.
 2. Typo: Found 'MagicMirror2' in file `README.md`: Replace it with `MagicMirror²`.
+3. Warning: No LICENSE file.
 
 ## [MMM-Bensinpriser by ItsMeBrille](https://github.com/ItsMeBrille/MMM-Bensinpriser)
 
@@ -371,6 +387,7 @@ Number of analyzed modules: 1056
 ## [MMM-Binance by brssaricicek](https://github.com/brssaricicek/MMM-Binance)
 
 1. Issue: There is no `package.json`. We need this file to gather information about the module.
+2. Warning: No LICENSE file.
 
 ## [MMM-BinaryClock by nikobix](https://github.com/nikobix/MMM-BinaryClock)
 
@@ -381,6 +398,7 @@ Number of analyzed modules: 1056
 
 1. Issue: An error occurred while getting information from 'package.json': Error: Invalid version: "1.1"
 2. Recommendation: Found 'XMLHttpRequest' in file `MMM-BirdNET.js`: Replace it with built-in fetch.
+3. Warning: No LICENSE file.
 
 ## [MMM-birthdays by amitchone](https://github.com/amitchone/MMM-birthdays)
 
@@ -403,21 +421,25 @@ Number of analyzed modules: 1056
 2. Typo: Found 'Magic Mirror' in file `README.md`: Replace it with `MagicMirror²`.
 3. Recommendation: Found 'node-fetch' in file `BIXIFetcher.js`: Replace it with built-in fetch.
 4. Recommendation: Found 'node-fetch' in file `package.json`: Replace it with built-in fetch.
+5. Warning: No LICENSE file.
 
 ## [MMM-BlaguesAPI by pcurt](https://github.com/pcurt/MMM-BlaguesAPI)
 
 1. Issue: There is no `package.json`. We need this file to gather information about the module.
+2. Warning: No LICENSE file.
 
 ## [MMM-Block by BKeyport](https://github.com/BKeyport/MMM-Block)
 
 1. Issue: There is no `package.json`. We need this file to gather information about the module.
 2. Typo: Found 'Magic Mirror' in file `MMM-Block.js`: Replace it with `MagicMirror²`.
+3. Warning: No LICENSE file.
 
 ## [MMM-Bluebikes by jschless](https://github.com/jschless/MMM-Bluebikes)
 
 1. Issue: There is no `package.json`. We need this file to gather information about the module.
 2. Typo: Found 'Magic Mirror' in file `MMM-Bluebikes.js`: Replace it with `MagicMirror²`.
 3. Recommendation: Found 'XMLHttpRequest' in file `MMM-Bluebikes.js`: Replace it with built-in fetch.
+4. Warning: No LICENSE file.
 
 ## [MMM-Bluelinky by Cyw00d](https://github.com/Cyw00d/MMM-Bluelinky)
 
@@ -426,11 +448,16 @@ Number of analyzed modules: 1056
 3. Typo: Found 'Magic Mirror' in file `README.md`: Replace it with `MagicMirror²`.
 4. Typo: Found 'Magic Mirror' in file `node_helper.js`: Replace it with `MagicMirror²`.
 
+## [MMM-BluetoothDevices by timodejong95](https://github.com/timodejong95/MMM-BluetoothDevices)
+
+1. Warning: No LICENSE file.
+
 ## [MMM-BME280 by awitwicki](https://github.com/awitwicki/MMM-BME280)
 
 1. `package.json` issue: No description
 2. `package.json` issue: No repository field.
 3. Typo: Found 'Magic Mirror' in file `node_helper.js`: Replace it with `MagicMirror²`.
+4. Warning: No LICENSE file.
 
 ## [MMM-BMI by mykle1](https://github.com/mykle1/MMM-BMI)
 
@@ -476,6 +503,7 @@ Number of analyzed modules: 1056
 
 1. Issue: There is no `package.json`. We need this file to gather information about the module.
 2. Typo: Found 'Magic Mirror' in file `README.md`: Replace it with `MagicMirror²`.
+3. Warning: No LICENSE file.
 
 ## [MMM-BoredDaily by CptMeetKat](https://github.com/CptMeetKat/MMM-BoredDaily)
 
@@ -510,6 +538,7 @@ Number of analyzed modules: 1056
 ## [MMM-Breathwork by yashatgit](https://github.com/yashatgit/MMM-Breathwork)
 
 1. Issue: There is no `package.json`. We need this file to gather information about the module.
+2. Warning: No LICENSE file.
 
 ## [MMM-Brewdog by jsteel715](https://github.com/jsteel715/MMM-Brewdog)
 
@@ -517,6 +546,7 @@ Number of analyzed modules: 1056
 2. Typo: Found 'Magic Mirror' in file `MMM-Brewdog.js`: Replace it with `MagicMirror²`.
 3. Typo: Found 'Magic Mirror' in file `node_helper.js`: Replace it with `MagicMirror²`.
 4. Deprecated: Found 'require('request')' in file `node_helper.js`: Replace it with built-in fetch.
+5. Warning: No LICENSE file.
 
 ## [MMM-Bring by werthdavid](https://github.com/werthdavid/MMM-Bring)
 
@@ -544,6 +574,7 @@ Number of analyzed modules: 1056
 1. Issue: An error occurred while getting information from 'package.json': Error: Invalid version: "1.0"
 2. Typo: Found 'Magic Mirror' in file `MMM-Buller.js`: Replace it with `MagicMirror²`.
 3. Typo: Found 'Magic Mirror' in file `node_helper.js`: Replace it with `MagicMirror²`.
+4. Warning: No LICENSE file.
 
 ## [MMM-bunq by choffmann](https://github.com/choffmann/MMM-bunq)
 
@@ -566,6 +597,7 @@ Number of analyzed modules: 1056
 2. Typo: Found 'Magic Mirror' in file `MMM-Button.js`: Replace it with `MagicMirror²`.
 3. Typo: Found 'Magic Mirror' in file `node_helper.js`: Replace it with `MagicMirror²`.
 4. Deprecated: Found 'electron-rebuild' in file `package.json`: Replace it with `@electron/rebuild`
+5. Warning: No LICENSE file.
 
 ## [MMM-Buttons by MarcLandis](https://github.com/MarcLandis/MMM-Buttons)
 
@@ -573,6 +605,7 @@ Number of analyzed modules: 1056
 2. Typo: Found 'Magic Mirror' in file `MMM-Buttons.js`: Replace it with `MagicMirror²`.
 3. Typo: Found 'Magic Mirror' in file `README.md`: Replace it with `MagicMirror²`.
 4. Typo: Found 'Magic Mirror' in file `node_helper.js`: Replace it with `MagicMirror²`.
+5. Warning: No LICENSE file.
 
 ## [MMM-Bysykkel by JonasTriki](https://github.com/JonasTriki/MMM-Bysykkel)
 
@@ -624,6 +657,7 @@ Number of analyzed modules: 1056
 1. Issue: There is no `package.json`. We need this file to gather information about the module.
 2. Recommendation: Found 'require("https")' in file `calendarfetcher.js`: Replace it with built-in fetch.
 3. Recommendation: Found 'node-fetch' in file `calendarfetcher.js`: Replace it with built-in fetch.
+4. Warning: No LICENSE file.
 
 ## [MMM-CalendarWeek by heskja](https://github.com/heskja/MMM-CalendarWeek)
 
@@ -638,6 +672,7 @@ Number of analyzed modules: 1056
 
 1. Issue: There is no `package.json`. We need this file to gather information about the module.
 2. Typo: Found 'Magic Mirror' in file `MMM-Callmonitor-Current-Call.js`: Replace it with `MagicMirror²`.
+3. Warning: No LICENSE file.
 
 ## [MMM-Caltrain by efritz09](https://github.com/efritz09/MMM-Caltrain)
 
@@ -651,6 +686,7 @@ Number of analyzed modules: 1056
 3. Typo: Found 'Magic Mirror' in file `README.md`: Replace it with `MagicMirror²`.
 4. Recommendation: Found 'node-fetch' in file `README.md`: Replace it with built-in fetch.
 5. Recommendation: Found 'node-fetch' in file `node_helper.js`: Replace it with built-in fetch.
+6. Warning: No LICENSE file.
 
 ## [camera by alexyak](https://github.com/alexyak/camera)
 
@@ -658,6 +694,7 @@ Number of analyzed modules: 1056
 2. Recommendation: Module name doesn't follow the recommended pattern (it doesn't start with `MMM-`). Consider renaming your module.
 3. Typo: Found 'Magic Mirror' in file `node_helper.js`: Replace it with `MagicMirror²`.
 4. Recommendation: Found 'XMLHttpRequest' in file `webcam.js`: Replace it with built-in fetch.
+5. Warning: No LICENSE file.
 
 ## [MMM-CanadianPublicWeatherAlerts by aSouchereau](https://github.com/aSouchereau/MMM-CanadianPublicWeatherAlerts)
 
@@ -671,6 +708,7 @@ Number of analyzed modules: 1056
 2. Typo: Found 'Magic Mirror' in file `MMM-Canvas.js`: Replace it with `MagicMirror²`.
 3. Typo: Found 'Magic Mirror' in file `node_helper.js`: Replace it with `MagicMirror²`.
 4. Deprecated: Found 'require('request')' in file `node_helper.js`: Replace it with built-in fetch.
+5. Warning: No LICENSE file.
 
 ## [MMM-CardDavBirthdaysProvider by ulrichwisser](https://github.com/ulrichwisser/MMM-CardDavBirthdaysProvider)
 
@@ -701,12 +739,14 @@ Number of analyzed modules: 1056
 1. Typo: Found 'Magic Mirror' in file `node_helper.js`: Replace it with `MagicMirror²`.
 2. Recommendation: Found 'node-fetch' in file `node_helper.js`: Replace it with built-in fetch.
 3. Recommendation: Found 'node-fetch' in file `package.json`: Replace it with built-in fetch.
+4. Warning: No LICENSE file.
 
 ## [MMM-Chart by MarinescuEvghenii](https://github.com/MarinescuEvghenii/MMM-Chart)
 
 1. `package.json` issue: No description
 2. `package.json` issue: No repository field.
 3. Typo: Found 'Magic Mirror' in file `MMM-Chart.js`: Replace it with `MagicMirror²`.
+4. Warning: No LICENSE file.
 
 ## [MMM-Chess-Daily by nout-kleef](https://github.com/nout-kleef/MMM-Chess-Daily)
 
@@ -776,6 +816,7 @@ Number of analyzed modules: 1056
 2. Typo: Found 'Magic Mirror' in file `MMM-Cocktails.js`: Replace it with `MagicMirror²`.
 3. Typo: Found 'Magic Mirror' in file `node_helper.js`: Replace it with `MagicMirror²`.
 4. Deprecated: Found 'require('request')' in file `node_helper.js`: Replace it with built-in fetch.
+5. Warning: No LICENSE file.
 
 ## [MMM-Coinbase by mlbonniec](https://github.com/mlbonniec/MMM-Coinbase)
 
@@ -795,6 +836,7 @@ Number of analyzed modules: 1056
 2. Recommendation: Module name doesn't follow the recommended pattern (it doesn't start with `MMM-`). Consider renaming your module.
 3. Typo: Found 'Magic Mirror' in file `COINSQUARE.js`: Replace it with `MagicMirror²`.
 4. Typo: Found 'Magic Mirror' in file `README.md`: Replace it with `MagicMirror²`.
+5. Warning: No LICENSE file.
 
 ## [MMM-CollegeFootballTop25 by AdamMoses-GitHub](https://github.com/AdamMoses-GitHub/MMM-CollegeFootballTop25)
 
@@ -810,6 +852,7 @@ Number of analyzed modules: 1056
 3. `package.json` issue: No license field.
 4. Typo: Found 'Magic Mirror' in file `node_helper.js`: Replace it with `MagicMirror²`.
 5. Deprecated: Found 'require('request')' in file `node_helper.js`: Replace it with built-in fetch.
+6. Warning: No LICENSE file.
 
 ## [MMM-CommandToNotification by Tom-Hirschberger](https://github.com/Tom-Hirschberger/MMM-CommandToNotification)
 
@@ -828,6 +871,7 @@ Number of analyzed modules: 1056
 1. Issue: There is no `package.json`. We need this file to gather information about the module.
 2. Recommendation: Module name doesn't follow the recommended pattern (it doesn't start with `MMM-`). Consider renaming your module.
 3. Recommendation: Found 'require('https')' in file `node_helper.js`: Replace it with built-in fetch.
+4. Warning: No LICENSE file.
 
 ## [MMM-CountDown by boazarad](https://github.com/boazarad/MMM-CountDown)
 
@@ -859,6 +903,7 @@ Number of analyzed modules: 1056
 5. Recommendation: Found 'node-fetch' in file `node_helper.js`: Replace it with built-in fetch.
 6. Typo: Found 'Magic Mirror' in file `package.json`: Replace it with `MagicMirror²`.
 7. Recommendation: Found 'node-fetch' in file `package.json`: Replace it with built-in fetch.
+8. Warning: No LICENSE file.
 
 ## [MMM-COVID19 by bibaldo](https://github.com/bibaldo/MMM-COVID19)
 
@@ -894,6 +939,7 @@ Number of analyzed modules: 1056
 1. Issue: There is no `package.json`. We need this file to gather information about the module.
 2. Typo: Found 'Magic Mirror' in file `MMM-CracowMPK.js`: Replace it with `MagicMirror²`.
 3. Deprecated: Found 'require("request")' in file `node_helper.js`: Replace it with built-in fetch.
+4. Warning: No LICENSE file.
 
 ## [MMM-CricketScores by dsouzadrian](https://github.com/dsouzadrian/MMM-CricketScores)
 
@@ -909,6 +955,7 @@ Number of analyzed modules: 1056
 
 1. Issue: There is no `package.json`. We need this file to gather information about the module.
 2. Typo: Found 'Magic Mirror' in file `MMM-Cronixie.js`: Replace it with `MagicMirror²`.
+3. Warning: No LICENSE file.
 
 ## [MMM-cryptocurrency by matteodanelli](https://github.com/matteodanelli/MMM-cryptocurrency)
 
@@ -920,6 +967,7 @@ Number of analyzed modules: 1056
 
 1. Issue: There is no `package.json`. We need this file to gather information about the module.
 2. Deprecated: Found 'require("request")' in file `node_helper.js`: Replace it with built-in fetch.
+3. Warning: No LICENSE file.
 
 ## [MMM-CuandoLlega by bibaldo](https://github.com/bibaldo/MMM-CuandoLlega)
 
@@ -932,6 +980,7 @@ Number of analyzed modules: 1056
 
 1. Issue: There is no `package.json`. We need this file to gather information about the module.
 2. Recommendation: Found 'XMLHttpRequest' in file `MMM-CurrencyArg.js`: Replace it with built-in fetch.
+3. Warning: No LICENSE file.
 
 ## [MMM-Currentweather-MQTT by spitzlbergerj](https://github.com/spitzlbergerj/MMM-Currentweather-MQTT)
 
@@ -990,12 +1039,14 @@ Number of analyzed modules: 1056
 1. Typo: Found 'Magic Mirror' in file `MMM-Daikin.js`: Replace it with `MagicMirror²`.
 2. Typo: Found 'Magic Mirror' in file `node_helper.js`: Replace it with `MagicMirror²`.
 3. Typo: Found 'Magic Mirror' in file `package.json`: Replace it with `MagicMirror²`.
+4. Warning: No LICENSE file.
 
 ## [MMM-DaikinAirbase by matt-thurling](https://github.com/matt-thurling/MMM-DaikinAirbase)
 
 1. Issue: There is no `package.json`. We need this file to gather information about the module.
 2. Typo: Found 'Magic Mirror' in file `MMM-DaikinAirbase.js`: Replace it with `MagicMirror²`.
 3. Typo: Found 'Magic Mirror' in file `node_helper.js`: Replace it with `MagicMirror²`.
+4. Warning: No LICENSE file.
 
 ## [MMM-DailyACVillager by Nickiroo](https://github.com/Nickiroo/MMM-DailyACVillager)
 
@@ -1032,6 +1083,7 @@ Number of analyzed modules: 1056
 
 1. Issue: There is no `package.json`. We need this file to gather information about the module.
 2. Recommendation: Found 'require('https')' in file `node_helper.js`: Replace it with built-in fetch.
+3. Warning: No LICENSE file.
 
 ## [MMM-DailyUnreachedPeopleGroup by MStoltzfus](https://github.com/MStoltzfus/MMM-DailyUnreachedPeopleGroup)
 
@@ -1050,11 +1102,13 @@ Number of analyzed modules: 1056
 ## [MMM-darksky-hourly by jacquesCedric](https://github.com/jacquesCedric/MMM-darksky-hourly)
 
 1. Issue: There is no `package.json`. We need this file to gather information about the module.
+2. Warning: No LICENSE file.
 
 ## [MMM-DarkSky24Hours by thobach](https://github.com/thobach/MMM-DarkSky24Hours)
 
 1. Issue: There is no `package.json`. We need this file to gather information about the module.
 2. Typo: Found 'Magic Mirror' in file `weather.html`: Replace it with `MagicMirror²`.
+3. Warning: No LICENSE file.
 
 ## [MMM-DarkSkyForecast by jclarke0000](https://github.com/jclarke0000/MMM-DarkSkyForecast)
 
@@ -1062,6 +1116,7 @@ Number of analyzed modules: 1056
 2. Typo: Found 'Magic Mirror' in file `README.md`: Replace it with `MagicMirror²`.
 3. Deprecated: Found 'require("request")' in file `node_helper.js`: Replace it with built-in fetch.
 4. Typo: Found 'Magic Mirror' in file `package.json`: Replace it with `MagicMirror²`.
+5. Warning: No LICENSE file.
 
 ## [MMM-DarkSkyRadar by vincep5](https://github.com/vincep5/MMM-DarkSkyRadar)
 
@@ -1069,23 +1124,27 @@ Number of analyzed modules: 1056
 2. `package.json` issue: No repository field.
 3. `package.json` issue: No license field.
 4. Typo: Found 'Magic Mirror' in file `MMM-DarkSkyRadar.js`: Replace it with `MagicMirror²`.
+5. Warning: No LICENSE file.
 
 ## [MMM-DateCounter by alltopafi](https://github.com/alltopafi/MMM-DateCounter)
 
 1. Issue: There is no `package.json`. We need this file to gather information about the module.
 2. Typo: Found 'Magic Mirror' in file `MMM-DateCounter.js`: Replace it with `MagicMirror²`.
 3. Recommendation: Found 'XMLHttpRequest' in file `MMM-DateCounter.js`: Replace it with built-in fetch.
+4. Warning: No LICENSE file.
 
 ## [MMM-DateOnly by grabenhenrich](https://github.com/grabenhenrich/MMM-DateOnly)
 
 1. Issue: There is no `package.json`. We need this file to gather information about the module.
 2. Typo: Found 'Magic Mirror' in file `MMM-DateOnly.js`: Replace it with `MagicMirror²`.
+3. Warning: No LICENSE file.
 
 ## [MMM-DBF by Helpi90](https://github.com/Helpi90/MMM-DBF)
 
 1. Typo: Found 'Magic Mirror' in file `MMM-DBF.js`: Replace it with `MagicMirror²`.
 2. Recommendation: Found 'XMLHttpRequest' in file `MMM-DBF.js`: Replace it with built-in fetch.
 3. Typo: Found 'Magic Mirror' in file `node_helper.js`: Replace it with `MagicMirror²`.
+4. Warning: No LICENSE file.
 
 ## [MMM-DCMetroTimes by kyle-kelly](https://github.com/kyle-kelly/MMM-DCMetroTimes)
 
@@ -1115,6 +1174,7 @@ Number of analyzed modules: 1056
 1. Issue: There is no `package.json`. We need this file to gather information about the module.
 2. Recommendation: Found 'XMLHttpRequest' in file `MMM-DeLijn.js`: Replace it with built-in fetch.
 3. Typo: Found 'Magic Mirror' in file `README.md`: Replace it with `MagicMirror²`.
+4. Warning: No LICENSE file.
 
 ## [MMM-DHT by ckoutavas](https://github.com/ckoutavas/MMM-DHT)
 
@@ -1145,6 +1205,7 @@ Number of analyzed modules: 1056
 ## [MMM-Discogs by mboskamp](https://github.com/mboskamp/MMM-Discogs)
 
 1. Typo: Found 'Magic Mirror' in file `README.md`: Replace it with `MagicMirror²`.
+2. Warning: No LICENSE file.
 
 ## [MMM-DiscordWatch by Smiche](https://github.com/Smiche/MMM-DiscordWatch)
 
@@ -1186,6 +1247,7 @@ Number of analyzed modules: 1056
 4. Deprecated: Found 'require('request')' in file `node_helper.js`: Replace it with built-in fetch.
 5. Deprecated: Found 'omxplayer' in file `node_helper.js`: Try to replace it with `vlc`.
 6. Deprecated: Found 'omxplayer' in file `package.json`: Try to replace it with `vlc`.
+7. Warning: No LICENSE file.
 
 ## [MMM-dribbble by marcobiedermann](https://github.com/marcobiedermann/MMM-dribbble)
 
@@ -1195,6 +1257,7 @@ Number of analyzed modules: 1056
 
 1. Typo: Found 'Magic Mirror' in file `MMM-DropboxWallpaper.js`: Replace it with `MagicMirror²`.
 2. Deprecated: Found 'require('request')' in file `node_helper.js`: Replace it with built-in fetch.
+3. Warning: No LICENSE file.
 
 ## [MMM-DublinRTPI by galaktor](https://github.com/galaktor/MMM-DublinRTPI)
 
@@ -1221,11 +1284,13 @@ Number of analyzed modules: 1056
 3. Typo: Found 'Magic Mirror' in file `node_helper.js`: Replace it with `MagicMirror²`.
 4. Recommendation: Found 'node-fetch' in file `node_helper.js`: Replace it with built-in fetch.
 5. Recommendation: Found 'node-fetch' in file `package.json`: Replace it with built-in fetch.
+6. Warning: No LICENSE file.
 
 ## [MMM-Dynamic-Modules by Toreke](https://github.com/Toreke/MMM-Dynamic-Modules)
 
 1. Issue: There is no `package.json`. We need this file to gather information about the module.
 2. Typo: Found 'Magic Mirror' in file `README.md`: Replace it with `MagicMirror²`.
+3. Warning: No LICENSE file.
 
 ## [MMM-DynamicWeather by scottcl88](https://github.com/scottcl88/MMM-DynamicWeather)
 
@@ -1279,6 +1344,7 @@ Number of analyzed modules: 1056
 ## [MMM-edgerouter-throughput by mscharl](https://github.com/mscharl/MMM-edgerouter-throughput)
 
 1. Typo: Found 'MagicMirror2' in file `package.json`: Replace it with `MagicMirror²`.
+2. Warning: No LICENSE file.
 
 ## [MMM-EFA-departures by Dom1n1c](https://github.com/Dom1n1c/MMM-EFA-departures)
 
@@ -1308,6 +1374,7 @@ Number of analyzed modules: 1056
 
 1. Issue: There is no `package.json`. We need this file to gather information about the module.
 2. Typo: Found 'Magic Mirror' in file `MMM-EmbedYoutube.js`: Replace it with `MagicMirror²`.
+3. Warning: No LICENSE file.
 
 ## [emt by jirsis](https://github.com/jirsis/emt)
 
@@ -1318,6 +1385,7 @@ Number of analyzed modules: 1056
 ## [MMM-EMTValencia by TheRaulXP](https://github.com/TheRaulXP/MMM-EMTValencia)
 
 1. Issue: No image found.
+2. Warning: No LICENSE file.
 
 ## [MMM-EnergyMonitor by deg0nz](https://github.com/deg0nz/MMM-EnergyMonitor)
 
@@ -1434,6 +1502,7 @@ Number of analyzed modules: 1056
 1. Issue: No image found.
 2. Typo: Found 'Magic Mirror' in file `MMM-Facial-Recognition.js`: Replace it with `MagicMirror²`.
 3. Typo: Found 'Magic Mirror' in file `package.json`: Replace it with `MagicMirror²`.
+4. Warning: No LICENSE file.
 
 ## [MMM-Facial-Recognition-OCV3 by normyx](https://github.com/normyx/MMM-Facial-Recognition-OCV3)
 
@@ -1582,6 +1651,7 @@ Number of analyzed modules: 1056
 
 1. Issue: There is no `package.json`. We need this file to gather information about the module.
 2. Typo: Found 'MagicMirror2' in file `README.md`: Replace it with `MagicMirror²`.
+3. Warning: No LICENSE file.
 
 ## [MMM-Flatastic by joschi27](https://github.com/joschi27/MMM-Flatastic)
 
@@ -1642,6 +1712,7 @@ Number of analyzed modules: 1056
 3. Typo: Found 'Magic Mirror' in file `README.md`: Replace it with `MagicMirror²`.
 4. Typo: Found 'Magic Mirror' in file `node_helper.js`: Replace it with `MagicMirror²`.
 5. Deprecated: Found 'require("request")' in file `node_helper.js`: Replace it with built-in fetch.
+6. Warning: No LICENSE file.
 
 ## [MMM-FloGraph by kagjerde](https://github.com/kagjerde/MMM-FloGraph)
 
@@ -1650,6 +1721,7 @@ Number of analyzed modules: 1056
 3. Typo: Found 'Magic Mirror' in file `README.md`: Replace it with `MagicMirror²`.
 4. Typo: Found 'Magic Mirror' in file `node_helper.js`: Replace it with `MagicMirror²`.
 5. Deprecated: Found 'require("request")' in file `node_helper.js`: Replace it with built-in fetch.
+6. Warning: No LICENSE file.
 
 ## [MMM-FMI by mykle1](https://github.com/mykle1/MMM-FMI)
 
@@ -1660,11 +1732,13 @@ Number of analyzed modules: 1056
 
 1. Issue: There is no `package.json`. We need this file to gather information about the module.
 2. Recommendation: Found 'XMLHttpRequest' in file `d3.min.js`: Replace it with built-in fetch.
+3. Warning: No LICENSE file.
 
 ## [MMM-forecast-io by idoodler](https://github.com/idoodler/MMM-forecast-io)
 
 1. Issue: There is no `package.json`. We need this file to gather information about the module.
 2. Recommendation: Found 'XMLHttpRequest' in file `d3.min.js`: Replace it with built-in fetch.
+3. Warning: No LICENSE file.
 
 ## [MMM-Formula1 by ianperrin](https://github.com/ianperrin/MMM-Formula1)
 
@@ -1712,16 +1786,19 @@ Number of analyzed modules: 1056
 ## [MMM-FrenchHoroscope by Amand-M](https://github.com/Amand-M/MMM-FrenchHoroscope)
 
 1. Issue: No image found.
+2. Warning: No LICENSE file.
 
 ## [MMM-FRITZ-Box-Callmonitor-py3 by drtorchwood](https://github.com/drtorchwood/MMM-FRITZ-Box-Callmonitor-py3)
 
 1. Issue: No image found.
 2. Typo: Found 'Magic Mirror' in file `MMM-FRITZ-Box-Callmonitor-py3.js`: Replace it with `MagicMirror²`.
 3. Typo: Found 'Magic Mirror' in file `package.json`: Replace it with `MagicMirror²`.
+4. Warning: No LICENSE file.
 
 ## [MMM-FroelingConnect by eckonator](https://github.com/eckonator/MMM-FroelingConnect)
 
 1. Typo: Found 'Magic Mirror' in file `MMM-FroelingConnect.js`: Replace it with `MagicMirror²`.
+2. Warning: No LICENSE file.
 
 ## [MMM-fronius by peteyjaym](https://github.com/peteyjaym/MMM-fronius)
 
@@ -1764,6 +1841,7 @@ Number of analyzed modules: 1056
 1. Typo: Found 'Magic Mirror' in file `MMM-FunnyHolidays.js`: Replace it with `MagicMirror²`.
 2. Typo: Found 'Magic Mirror' in file `node_helper.js`: Replace it with `MagicMirror²`.
 3. Deprecated: Found 'require('request')' in file `node_helper.js`: Replace it with built-in fetch.
+4. Warning: No LICENSE file.
 
 ## [MMM-Futar by balassy](https://github.com/balassy/MMM-Futar)
 
@@ -1778,6 +1856,7 @@ Number of analyzed modules: 1056
 ## [MMM-GamepadEvents by victor-paumier](https://github.com/victor-paumier/MMM-GamepadEvents)
 
 1. Issue: There is no `package.json`. We need this file to gather information about the module.
+2. Warning: No LICENSE file.
 
 ## [MMM-GConnect by tderflinger](https://github.com/tderflinger/MMM-GConnect)
 
@@ -1788,6 +1867,7 @@ Number of analyzed modules: 1056
 
 1. Typo: Found 'Magic Mirror' in file `MMM-GCP.js`: Replace it with `MagicMirror²`.
 2. Typo: Found 'Magic Mirror' in file `node_helper.js`: Replace it with `MagicMirror²`.
+3. Warning: No LICENSE file.
 
 ## [MMM-GeoTracking by asimhsidd](https://github.com/asimhsidd/MMM-GeoTracking)
 
@@ -1810,6 +1890,7 @@ Number of analyzed modules: 1056
 6. Deprecated: Found 'electron-rebuild' in file `README.MD`: Replace it with `@electron/rebuild`
 7. Typo: Found 'Magic Mirror' in file `package.json`: Replace it with `MagicMirror²`.
 8. Deprecated: Found 'electron-rebuild' in file `postinstall`: Replace it with `@electron/rebuild`
+9. Warning: No LICENSE file.
 
 ## [MMM-GHIN by C-Deck](https://github.com/C-Deck/MMM-GHIN)
 
@@ -1827,6 +1908,7 @@ Number of analyzed modules: 1056
 
 1. `package.json` issue: No repository field.
 2. `package.json` issue: No license field.
+3. Warning: No LICENSE file.
 
 ## [MMM-Gitlab-MergeRequests by jkschoen](https://github.com/jkschoen/MMM-Gitlab-MergeRequests)
 
@@ -1843,16 +1925,19 @@ Number of analyzed modules: 1056
 1. `package.json` issue: No description
 2. Typo: Found 'Magic Mirror' in file `MMM-Globe.js`: Replace it with `MagicMirror²`.
 3. Typo: Found 'MagicMirror2' in file `README.md`: Replace it with `MagicMirror²`.
+4. Warning: No LICENSE file.
 
 ## [MMM-GmailFeed by shaneapowell](https://github.com/shaneapowell/MMM-GmailFeed)
 
 1. `package.json` issue: No repository field.
 2. `package.json` issue: No license field.
 3. Deprecated: Found 'require("request")' in file `node_helper.js`: Replace it with built-in fetch.
+4. Warning: No LICENSE file.
 
 ## [MMM-google-route by mrdis](https://github.com/mrdis/MMM-google-route)
 
 1. Issue: There is no `package.json`. We need this file to gather information about the module.
+2. Warning: No LICENSE file.
 
 ## [MMM-GoogleAssistant by gauravsacc](https://github.com/gauravsacc/MMM-GoogleAssistant)
 
@@ -1924,22 +2009,27 @@ Number of analyzed modules: 1056
 2. Typo: Found 'Magic Mirror' in file `MMM-GoogleSheets.js`: Replace it with `MagicMirror²`.
 3. Typo: Found 'Magic Mirror' in file `README.md`: Replace it with `MagicMirror²`.
 4. Deprecated: Found 'require("request")' in file `node_helper.js`: Replace it with built-in fetch.
+5. Warning: No LICENSE file.
 
 ## [MMM-GoogleTasks by jayked](https://github.com/jayked/MMM-GoogleTasks)
 
 1. Issue: There is no `package.json`. We need this file to gather information about the module.
+2. Warning: No LICENSE file.
 
 ## [MMM-GoogleTasks by themox](https://github.com/themox/MMM-GoogleTasks)
 
 1. Issue: There is no `package.json`. We need this file to gather information about the module.
+2. Warning: No LICENSE file.
 
 ## [MMM-GoogleTrafficTimes by pjestico](https://github.com/pjestico/MMM-GoogleTrafficTimes)
 
 1. `package.json` issue: No repository field.
+2. Warning: No LICENSE file.
 
 ## [MMM-GoogleTrafficTimes by Jacopo1891](https://github.com/Jacopo1891/MMM-GoogleTrafficTimes)
 
 1. `package.json` issue: No repository field.
+2. Warning: No LICENSE file.
 
 ## [MMM-GoogleTTS by MMRIZE](https://github.com/MMRIZE/MMM-GoogleTTS)
 
@@ -1967,6 +2057,7 @@ Number of analyzed modules: 1056
 1. Issue: There is no `package.json`. We need this file to gather information about the module.
 2. Typo: Found 'Magic Mirror' in file `MMM-GPSWeather.js`: Replace it with `MagicMirror²`.
 3. Recommendation: Found 'XMLHttpRequest' in file `MMM-GPSWeather.js`: Replace it with built-in fetch.
+4. Warning: No LICENSE file.
 
 ## [MMM-GrafanaChart by SvenSommer](https://github.com/SvenSommer/MMM-GrafanaChart)
 
@@ -2007,6 +2098,7 @@ Number of analyzed modules: 1056
 5. Typo: Found 'Magic Mirror' in file `README.md`: Replace it with `MagicMirror²`.
 6. Typo: Found 'Magic Mirror' in file `node_helper.js`: Replace it with `MagicMirror²`.
 7. Deprecated: Found 'require('request')' in file `node_helper.js`: Replace it with built-in fetch.
+8. Warning: No LICENSE file.
 
 ## [MMM-HASS by aserramonner](https://github.com/aserramonner/MMM-HASS)
 
@@ -2018,6 +2110,7 @@ Number of analyzed modules: 1056
 
 1. Issue: There is no `package.json`. We need this file to gather information about the module.
 2. Typo: Found 'Magic Mirror' in file `node_helper.js`: Replace it with `MagicMirror²`.
+3. Warning: No LICENSE file.
 
 ## [Hello-Lucy by mykle1](https://github.com/mykle1/Hello-Lucy)
 
@@ -2049,6 +2142,7 @@ Number of analyzed modules: 1056
 1. Issue: There is no `package.json`. We need this file to gather information about the module.
 2. Typo: Found 'Magic Mirror' in file `MMM-HideAll.js`: Replace it with `MagicMirror²`.
 3. Recommendation: Found 'XMLHttpRequest' in file `jquery.js`: Replace it with built-in fetch.
+4. Warning: No LICENSE file.
 
 ## [MMM-History by cowboysdude](https://github.com/cowboysdude/MMM-History)
 
@@ -2056,6 +2150,7 @@ Number of analyzed modules: 1056
 2. Typo: Found 'Magic Mirror' in file `MMM-History.js`: Replace it with `MagicMirror²`.
 3. Typo: Found 'Magic Mirror' in file `node_helper.js`: Replace it with `MagicMirror²`.
 4. Deprecated: Found 'require('request')' in file `node_helper.js`: Replace it with built-in fetch.
+5. Warning: No LICENSE file.
 
 ## [MMM-Hive by NateBrownProjects](https://github.com/NateBrownProjects/MMM-Hive)
 
@@ -2082,6 +2177,7 @@ Number of analyzed modules: 1056
 
 1. Issue: No image found.
 2. Typo: Found 'Magic Mirror' in file `package.json`: Replace it with `MagicMirror²`.
+3. Warning: No LICENSE file.
 
 ## [MMM-HomeAssistant by zuo000](https://github.com/zuo000/MMM-HomeAssistant)
 
@@ -2104,6 +2200,7 @@ Number of analyzed modules: 1056
 
 1. `package.json` issue: No description
 2. `package.json` issue: No repository field.
+3. Warning: No LICENSE file.
 
 ## [MMM-HomeAssistantDisplay by wonderslug](https://github.com/wonderslug/MMM-HomeAssistantDisplay)
 
@@ -2121,6 +2218,7 @@ Number of analyzed modules: 1056
 
 1. Typo: Found 'Magic Mirror' in file `README.md`: Replace it with `MagicMirror²`.
 2. Typo: Found 'Magic Mirror' in file `package.json`: Replace it with `MagicMirror²`.
+3. Warning: No LICENSE file.
 
 ## [MMM-Homematic by Sickboy78](https://github.com/Sickboy78/MMM-Homematic)
 
@@ -2134,6 +2232,7 @@ Number of analyzed modules: 1056
 
 1. Recommendation: Found 'XMLHttpRequest' in file `node_helper.js`: Replace it with built-in fetch.
 2. Typo: Found 'MagicMirror2' in file `package.json`: Replace it with `MagicMirror²`.
+3. Warning: No LICENSE file.
 
 ## [MMM-Homematic-Thermostats by spitzlbergerj](https://github.com/spitzlbergerj/MMM-Homematic-Thermostats)
 
@@ -2176,6 +2275,7 @@ Number of analyzed modules: 1056
 1. Issue: There is no `package.json`. We need this file to gather information about the module.
 2. Typo: Found 'Magic Mirror' in file `MMM-Hue.js`: Replace it with `MagicMirror²`.
 3. Recommendation: Found 'XMLHttpRequest' in file `jquery.js`: Replace it with built-in fetch.
+4. Warning: No LICENSE file.
 
 ## [MMM-Hue-Controller by gueguet](https://github.com/gueguet/MMM-Hue-Controller)
 
@@ -2194,6 +2294,7 @@ Number of analyzed modules: 1056
 1. Issue: There is no `package.json`. We need this file to gather information about the module.
 2. Typo: Found 'Magic Mirror' in file `README.md`: Replace it with `MagicMirror²`.
 3. Deprecated: Found 'require('request')' in file `node_helper.js`: Replace it with built-in fetch.
+4. Warning: No LICENSE file.
 
 ## [MMM-HumanCalendar by mykle1](https://github.com/mykle1/MMM-HumanCalendar)
 
@@ -2215,6 +2316,7 @@ Number of analyzed modules: 1056
 
 1. Issue: There is no `package.json`. We need this file to gather information about the module.
 2. Typo: Found 'Magic Mirror' in file `README.md`: Replace it with `MagicMirror²`.
+3. Warning: No LICENSE file.
 
 ## [MMM-iCal-ToDo by nixnuex](https://github.com/nixnuex/MMM-iCal-ToDo)
 
@@ -2234,6 +2336,7 @@ Number of analyzed modules: 1056
 
 1. Issue: There is no `package.json`. We need this file to gather information about the module.
 2. Typo: Found 'Magic Mirror' in file `MMM-IconDisplayer.js`: Replace it with `MagicMirror²`.
+3. Warning: No LICENSE file.
 
 ## [MMM-IDF-LOCALTRANSPORT by djey47](https://github.com/djey47/MMM-IDF-LOCALTRANSPORT)
 
@@ -2257,12 +2360,14 @@ Number of analyzed modules: 1056
 3. Typo: Found 'Magic Mirror' in file `README.md`: Replace it with `MagicMirror²`.
 4. Typo: Found 'Magic Mirror' in file `node-idos.js`: Replace it with `MagicMirror²`.
 5. Typo: Found 'Magic Mirror' in file `node_helper.js`: Replace it with `MagicMirror²`.
+6. Warning: No LICENSE file.
 
 ## [MMM-iFrame by alberttwong](https://github.com/alberttwong/MMM-iFrame)
 
 1. Issue: No image found.
 2. Typo: Found 'Magic Mirror' in file `MMM-iFrame.js`: Replace it with `MagicMirror²`.
 3. Typo: Found 'Magic Mirror' in file `package.json`: Replace it with `MagicMirror²`.
+4. Warning: No LICENSE file.
 
 ## [iFrame by desertblade](https://github.com/desertblade/iFrame)
 
@@ -2270,6 +2375,7 @@ Number of analyzed modules: 1056
 2. Recommendation: Module name doesn't follow the recommended pattern (it doesn't start with `MMM-`). Consider renaming your module.
 3. Typo: Found 'Magic Mirror' in file `iFrame.js`: Replace it with `MagicMirror²`.
 4. Typo: Found 'Magic Mirror' in file `package.json`: Replace it with `MagicMirror²`.
+5. Warning: No LICENSE file.
 
 ## [MMM-iFrame-GSlides by jharttech](https://github.com/jharttech/MMM-iFrame-GSlides)
 
@@ -2283,6 +2389,7 @@ Number of analyzed modules: 1056
 3. Typo: Found 'Magic Mirror' in file `node_helper.js`: Replace it with `MagicMirror²`.
 4. Deprecated: Found 'require('request')' in file `node_helper.js`: Replace it with built-in fetch.
 5. Typo: Found 'Magic Mirror' in file `package.json`: Replace it with `MagicMirror²`.
+6. Warning: No LICENSE file.
 
 ## [MMM-iHaveBeenThere by basti0001](https://github.com/basti0001/MMM-iHaveBeenThere)
 
@@ -2328,17 +2435,20 @@ Number of analyzed modules: 1056
 1. Issue: No image found.
 2. Typo: Found 'Magic Mirror' in file `MMM-IndoorTemp.js`: Replace it with `MagicMirror²`.
 3. Typo: Found 'Magic Mirror' in file `node_helper.js`: Replace it with `MagicMirror²`.
+4. Warning: No LICENSE file.
 
 ## [MMM-IndoorTemperature-Endpoint by buxxi](https://github.com/buxxi/MMM-IndoorTemperature-Endpoint)
 
 1. `package.json` issue: No license field.
 2. Typo: Found 'Magic Mirror' in file `README.md`: Replace it with `MagicMirror²`.
+3. Warning: No LICENSE file.
 
 ## [MMM-inspirobot by JonathanAndersonPE](https://github.com/JonathanAndersonPE/MMM-inspirobot)
 
 1. Issue: There is no `package.json`. We need this file to gather information about the module.
 2. Recommendation: Found 'XMLHttpRequest' in file `MMM-inspirobot.js`: Replace it with built-in fetch.
 3. Typo: Found 'Magic Mirror' in file `README.md`: Replace it with `MagicMirror²`.
+4. Warning: No LICENSE file.
 
 ## [MMM-Instagram by kapsolas](https://github.com/kapsolas/MMM-Instagram)
 
@@ -2347,6 +2457,7 @@ Number of analyzed modules: 1056
 3. Typo: Found 'MagicMirror2' in file `README.md`: Replace it with `MagicMirror²`.
 4. Typo: Found 'Magic Mirror' in file `node_helper.js`: Replace it with `MagicMirror²`.
 5. Deprecated: Found 'require('request')' in file `node_helper.js`: Replace it with built-in fetch.
+6. Warning: No LICENSE file.
 
 ## [MMM-Instagram2020 by AlexanderSalter](https://github.com/AlexanderSalter/MMM-Instagram2020)
 
@@ -2410,12 +2521,14 @@ Number of analyzed modules: 1056
 1. Issue: There is no `package.json`. We need this file to gather information about the module.
 2. Recommendation: Found 'XMLHttpRequest' in file `MMM-IPT.js`: Replace it with built-in fetch.
 3. Typo: Found 'Magic Mirror' in file `README.md`: Replace it with `MagicMirror²`.
+4. Warning: No LICENSE file.
 
 ## [MMM-IQAir by PavlenkoM](https://github.com/PavlenkoM/MMM-IQAir)
 
 1. Issue: There is no `package.json`. We need this file to gather information about the module.
 2. Typo: Found 'Magic Mirror' in file `node_helper.js`: Replace it with `MagicMirror²`.
 3. Recommendation: Found 'require("https")' in file `node_helper.js`: Replace it with built-in fetch.
+4. Warning: No LICENSE file.
 
 ## [MMM-IronManGIF by 2hdlockness](https://github.com/2hdlockness/MMM-IronManGIF)
 
@@ -2455,6 +2568,7 @@ Number of analyzed modules: 1056
 3. Typo: Found 'Magic Mirror' in file `node_helper.js`: Replace it with `MagicMirror²`.
 4. Deprecated: Found 'require('request')' in file `node_helper.js`: Replace it with built-in fetch.
 5. Recommendation: Found 'XMLHttpRequest' in file `node_helper.js`: Replace it with built-in fetch.
+6. Warning: No LICENSE file.
 
 ## [MMM-Jast by jalibu](https://github.com/jalibu/MMM-Jast)
 
@@ -2480,6 +2594,7 @@ Number of analyzed modules: 1056
 1. Issue: There is no `package.json`. We need this file to gather information about the module.
 2. Typo: Found 'Magic Mirror' in file `MMM-JewishDate.js`: Replace it with `MagicMirror²`.
 3. Recommendation: Found 'XMLHttpRequest' in file `MMM-JewishDate.js`: Replace it with built-in fetch.
+4. Warning: No LICENSE file.
 
 ## [JIR-tarifa-luz by jirsis](https://github.com/jirsis/JIR-tarifa-luz)
 
@@ -2500,6 +2615,7 @@ Number of analyzed modules: 1056
 ## [MMM-JokeAPI by Kreshnik](https://github.com/Kreshnik/MMM-JokeAPI)
 
 1. Issue: There is no `package.json`. We need this file to gather information about the module.
+2. Warning: No LICENSE file.
 
 ## [MMM-jokes by pvyParts](https://github.com/pvyParts/MMM-jokes)
 
@@ -2508,6 +2624,7 @@ Number of analyzed modules: 1056
 3. Typo: Found 'Magic Mirror' in file `node_helper.js`: Replace it with `MagicMirror²`.
 4. Deprecated: Found 'require('request')' in file `node_helper.js`: Replace it with built-in fetch.
 5. Typo: Found 'Magic Mirror' in file `package.json`: Replace it with `MagicMirror²`.
+6. Warning: No LICENSE file.
 
 ## [MMM-json by DanielHabenicht](https://github.com/DanielHabenicht/MMM-json)
 
@@ -2526,6 +2643,7 @@ Number of analyzed modules: 1056
 
 1. Issue: There is no `package.json`. We need this file to gather information about the module.
 2. Deprecated: Found 'require('request')' in file `node_helper.js`: Replace it with built-in fetch.
+3. Warning: No LICENSE file.
 
 ## [MMM-JSONStatusChecker by shbatm](https://github.com/shbatm/MMM-JSONStatusChecker)
 
@@ -2538,6 +2656,7 @@ Number of analyzed modules: 1056
 1. `package.json` issue: No repository field.
 2. `package.json` issue: No license field.
 3. Recommendation: Found 'uses: actions/checkout@v3' in file `runtest.yml`: Replace it with v4.
+4. Warning: No LICENSE file.
 
 ## [MMM-JsonValue by c-klinger](https://github.com/c-klinger/MMM-JsonValue)
 
@@ -2561,12 +2680,14 @@ Number of analyzed modules: 1056
 
 1. Issue: There is no `package.json`. We need this file to gather information about the module.
 2. Typo: Found 'Magic Mirror' in file `README.md`: Replace it with `MagicMirror²`.
+3. Warning: No LICENSE file.
 
 ## [MMM-Kanji-Random by njwilliams](https://github.com/njwilliams/MMM-Kanji-Random)
 
 1. Typo: Found 'Magic Mirror' in file `MMM-Kanji-Random.js`: Replace it with `MagicMirror²`.
 2. Typo: Found 'Magic Mirror' in file `node_helper.js`: Replace it with `MagicMirror²`.
 3. Deprecated: Found 'require("request")' in file `node_helper.js`: Replace it with built-in fetch.
+4. Warning: No LICENSE file.
 
 ## [MMM-KeyBindings by shbatm](https://github.com/shbatm/MMM-KeyBindings)
 
@@ -2579,10 +2700,12 @@ Number of analyzed modules: 1056
 
 1. Issue: There is no `package.json`. We need this file to gather information about the module.
 2. Recommendation: Module name doesn't follow the recommended pattern (it doesn't start with `MMM-`). Consider renaming your module.
+3. Warning: No LICENSE file.
 
 ## [MMM-Keypress by ItsMeBrille](https://github.com/ItsMeBrille/MMM-Keypress)
 
 1. Issue: There is no `package.json`. We need this file to gather information about the module.
+2. Warning: No LICENSE file.
 
 ## [MMM-Koket-by-Sodexo by Alvinger](https://github.com/Alvinger/MMM-Koket-by-Sodexo)
 
@@ -2616,11 +2739,13 @@ Number of analyzed modules: 1056
 3. Typo: Found 'Magic Mirror' in file `README.md`: Replace it with `MagicMirror²`.
 4. Deprecated: Found 'require('request')' in file `node_helper.js`: Replace it with built-in fetch.
 5. Deprecated: Found 'require('request')' in file `pt_helper.js`: Replace it with built-in fetch.
+6. Warning: No LICENSE file.
 
 ## [MMM-Lastfm by RineshRamadhin](https://github.com/RineshRamadhin/MMM-Lastfm)
 
 1. Issue: There is no `package.json`. We need this file to gather information about the module.
 2. Recommendation: Found 'uses: actions/checkout@v3' in file `codeql-analysis.yml`: Replace it with v4.
+3. Warning: No LICENSE file.
 
 ## [MMM-Launch by mykle1](https://github.com/mykle1/MMM-Launch)
 
@@ -2647,12 +2772,14 @@ Number of analyzed modules: 1056
 3. Typo: Found 'Magic Mirror' in file `README.md`: Replace it with `MagicMirror²`.
 4. Typo: Found 'Magic Mirror' in file `node_helper.js`: Replace it with `MagicMirror²`.
 5. Deprecated: Found 'require('request')' in file `node_helper.js`: Replace it with built-in fetch.
+6. Warning: No LICENSE file.
 
 ## [MMM-LEDStripControl by Tom-Hirschberger](https://github.com/Tom-Hirschberger/MMM-LEDStripControl)
 
 1. `package.json` issue: No description
 2. Typo: Found 'Magic Mirror' in file `MMM-LEDStripControl.js`: Replace it with `MagicMirror²`.
 3. Typo: Found 'Magic Mirror' in file `node_helper.js`: Replace it with `MagicMirror²`.
+4. Warning: No LICENSE file.
 
 ## [MMM-LesJoiesDuCode by Tomadelostacos](https://github.com/Tomadelostacos/MMM-LesJoiesDuCode)
 
@@ -2666,6 +2793,7 @@ Number of analyzed modules: 1056
 2. Typo: Found 'Magic Mirror' in file `MMM-Letterboxd.js`: Replace it with `MagicMirror²`.
 3. Typo: Found 'Magic Mirror' in file `node_helper.js`: Replace it with `MagicMirror²`.
 4. Recommendation: Found 'node-fetch' in file `node_helper.js`: Replace it with built-in fetch.
+5. Warning: No LICENSE file.
 
 ## [MMM-LibrespotJava by l3d00m](https://github.com/l3d00m/MMM-LibrespotJava)
 
@@ -2682,6 +2810,7 @@ Number of analyzed modules: 1056
 ## [MMM-lichess-daily by tonymorris](https://github.com/tonymorris/MMM-lichess-daily)
 
 1. Issue: There is no `package.json`. We need this file to gather information about the module.
+2. Warning: No LICENSE file.
 
 ## [MMM-Liquipedia-Dota2 by buxxi](https://github.com/buxxi/MMM-Liquipedia-Dota2)
 
@@ -2692,6 +2821,7 @@ Number of analyzed modules: 1056
 5. Recommendation: Found 'node-fetch' in file `node_helper.js`: Replace it with built-in fetch.
 6. Typo: Found 'Magic Mirror' in file `package.json`: Replace it with `MagicMirror²`.
 7. Recommendation: Found 'node-fetch' in file `package.json`: Replace it with built-in fetch.
+8. Warning: No LICENSE file.
 
 ## [MMM-Live-Stream-TV by mcintyrehh](https://github.com/mcintyrehh/MMM-Live-Stream-TV)
 
@@ -2718,6 +2848,7 @@ Number of analyzed modules: 1056
 1. Issue: There is no `package.json`. We need this file to gather information about the module.
 2. Typo: Found 'Magic Mirror' in file `custom.md`: Replace it with `MagicMirror²`.
 3. Typo: Found 'Magic Mirror' in file `MMM-LoadShedding.js`: Replace it with `MagicMirror²`.
+4. Warning: No LICENSE file.
 
 ## [MMM-LocalEvents by dwoolridge](https://github.com/dwoolridge/MMM-LocalEvents)
 
@@ -2742,6 +2873,7 @@ Number of analyzed modules: 1056
 
 1. Issue: There is no `package.json`. We need this file to gather information about the module.
 2. Typo: Found 'Magic Mirror' in file `README.md`: Replace it with `MagicMirror²`.
+3. Warning: No LICENSE file.
 
 ## [MMM-LogExt by MMRIZE](https://github.com/MMRIZE/MMM-LogExt)
 
@@ -2761,10 +2893,12 @@ Number of analyzed modules: 1056
 ## [MMM-LOLESPORTS-SCHEDULES by xadamxk](https://github.com/xadamxk/MMM-LOLESPORTS-SCHEDULES)
 
 1. Typo: Found 'Magic Mirror' in file `node_helper.js`: Replace it with `MagicMirror²`.
+2. Warning: No LICENSE file.
 
 ## [MMM-LOLESPORTS-STANDINGS by xadamxk](https://github.com/xadamxk/MMM-LOLESPORTS-STANDINGS)
 
 1. Typo: Found 'Magic Mirror' in file `node_helper.js`: Replace it with `MagicMirror²`.
+2. Warning: No LICENSE file.
 
 ## [MMM-Looko2-aq by marska](https://github.com/marska/MMM-Looko2-aq)
 
@@ -2776,6 +2910,7 @@ Number of analyzed modules: 1056
 
 1. Recommendation: Found 'node-fetch' in file `node_helper.js`: Replace it with built-in fetch.
 2. Recommendation: Found 'node-fetch' in file `package.json`: Replace it with built-in fetch.
+3. Warning: No LICENSE file.
 
 ## [MMM-LothianBuses by tbouron](https://github.com/tbouron/MMM-LothianBuses)
 
@@ -2816,6 +2951,7 @@ Number of analyzed modules: 1056
 2. Typo: Found 'Magic Mirror' in file `MMM-Luxembourg-Public-Transport.js`: Replace it with `MagicMirror²`.
 3. Typo: Found 'Magic Mirror' in file `node_helper.js`: Replace it with `MagicMirror²`.
 4. Recommendation: Found 'require('https')' in file `node_helper.js`: Replace it with built-in fetch.
+5. Warning: No LICENSE file.
 
 ## [MMM-lyft by kyle-kelly](https://github.com/kyle-kelly/MMM-lyft)
 
@@ -2824,6 +2960,7 @@ Number of analyzed modules: 1056
 3. Typo: Found 'Magic Mirror' in file `README.md`: Replace it with `MagicMirror²`.
 4. Typo: Found 'Magic Mirror' in file `node_helper.js`: Replace it with `MagicMirror²`.
 5. Deprecated: Found 'require('request')' in file `node_helper.js`: Replace it with built-in fetch.
+6. Warning: No LICENSE file.
 
 ## [MMM-MacAddressScan by doctorfree](https://github.com/doctorfree/MMM-MacAddressScan)
 
@@ -2862,6 +2999,7 @@ Number of analyzed modules: 1056
 4. Typo: Found 'Magic Mirror' in file `node_helper.js`: Replace it with `MagicMirror²`.
 5. Deprecated: Found 'require('request')' in file `node_helper.js`: Replace it with built-in fetch.
 6. Typo: Found 'Magic Mirror' in file `olympia.js`: Replace it with `MagicMirror²`.
+7. Warning: No LICENSE file.
 
 ## [MagicMirror-Ping-Module by CFenner](https://github.com/CFenner/MagicMirror-Ping-Module)
 
@@ -2879,11 +3017,13 @@ Number of analyzed modules: 1056
 
 1. Issue: There is no `package.json`. We need this file to gather information about the module.
 2. Typo: Found 'Magic Mirror' in file `MMM-MagicMover.js`: Replace it with `MagicMirror²`.
+3. Warning: No LICENSE file.
 
 ## [MagicPlugins by nhubbard]()
 
 1. Issue: There is no `package.json`. We need this file to gather information about the module.
 2. Recommendation: Module name doesn't follow the recommended pattern (it doesn't start with `MMM-`). Consider renaming your module.
+3. Warning: No LICENSE file.
 
 ## [MMM-MagicSuperHero by Lavve](https://github.com/Lavve/MMM-MagicSuperHero)
 
@@ -2984,6 +3124,7 @@ Number of analyzed modules: 1056
 1. Issue: There is no `package.json`. We need this file to gather information about the module.
 2. Typo: Found 'Magic Mirror' in file `MMM-meteoblueCurrent.js`: Replace it with `MagicMirror²`.
 3. Recommendation: Found 'XMLHttpRequest' in file `MMM-meteoblueCurrent.js`: Replace it with built-in fetch.
+4. Warning: No LICENSE file.
 
 ## [MMM-MHZ19 by awitwicki](https://github.com/awitwicki/MMM-MHZ19)
 
@@ -2991,6 +3132,7 @@ Number of analyzed modules: 1056
 2. `package.json` issue: No repository field.
 3. Typo: Found 'Magic Mirror' in file `MMM-MHZ19.js`: Replace it with `MagicMirror²`.
 4. Typo: Found 'Magic Mirror' in file `node_helper.js`: Replace it with `MagicMirror²`.
+5. Warning: No LICENSE file.
 
 ## [MMM-MiBiciTuBici by bibaldo](https://github.com/bibaldo/MMM-MiBiciTuBici)
 
@@ -3009,6 +3151,7 @@ Number of analyzed modules: 1056
 
 1. Issue: There is no `package.json`. We need this file to gather information about the module.
 2. Deprecated: Found 'require("request")' in file `mieleathome.js`: Replace it with built-in fetch.
+3. Warning: No LICENSE file.
 
 ## [MMM-MinecraftStatus by ralberth](https://github.com/ralberth/MMM-MinecraftStatus)
 
@@ -3041,6 +3184,7 @@ Number of analyzed modules: 1056
 2. Recommendation: Module name doesn't follow the recommended pattern (it doesn't start with `MMM-`). Consider renaming your module.
 3. Recommendation: Found 'XMLHttpRequest' in file `jquery.js`: Replace it with built-in fetch.
 4. Typo: Found 'Magic Mirror' in file `mm-hide-all.js`: Replace it with `MagicMirror²`.
+5. Warning: No LICENSE file.
 
 ## [mm-hsl-timetable by ZakarFin](https://github.com/ZakarFin/mm-hsl-timetable)
 
@@ -3048,6 +3192,7 @@ Number of analyzed modules: 1056
 2. Recommendation: Module name doesn't follow the recommended pattern (it doesn't start with `MMM-`). Consider renaming your module.
 3. Typo: Found 'Magic Mirror' in file `mm-hsl-timetable.js`: Replace it with `MagicMirror²`.
 4. Recommendation: Found 'node-fetch' in file `node_helper.js`: Replace it with built-in fetch.
+5. Warning: No LICENSE file.
 
 ## [mm-music-player by masters1222](https://github.com/masters1222/mm-music-player)
 
@@ -3057,6 +3202,7 @@ Number of analyzed modules: 1056
 4. Recommendation: Found 'XMLHttpRequest' in file `jquery.js`: Replace it with built-in fetch.
 5. Typo: Found 'Magic Mirror' in file `mm-music-player.js`: Replace it with `MagicMirror²`.
 6. Typo: Found 'Magic Mirror' in file `node_helper.js`: Replace it with `MagicMirror²`.
+7. Warning: No LICENSE file.
 
 ## [MM-Remote by Klettner](https://github.com/Klettner/MM-Remote)
 
@@ -3069,6 +3215,7 @@ Number of analyzed modules: 1056
 2. Recommendation: Module name doesn't follow the recommended pattern (it doesn't start with `MMM-`). Consider renaming your module.
 3. Typo: Found 'Magic Mirror' in file `mm-tkl-timetable.js`: Replace it with `MagicMirror²`.
 4. Deprecated: Found 'require("request")' in file `node_helper.js`: Replace it with built-in fetch.
+5. Warning: No LICENSE file.
 
 ## [MMM_ncdeck by motey](https://github.com/motey/MMM_ncdeck)
 
@@ -3086,6 +3233,7 @@ Number of analyzed modules: 1056
 4. Typo: Found 'Magic Mirror' in file `mmm-amazon-photos.js`: Replace it with `MagicMirror²`.
 5. Typo: Found 'Magic Mirror' in file `node_helper.js`: Replace it with `MagicMirror²`.
 6. Typo: Found 'Magic Mirror' in file `package.json`: Replace it with `MagicMirror²`.
+7. Warning: No LICENSE file.
 
 ## [mmm-food2fork-recipes by spectroman](https://github.com/spectroman/mmm-food2fork-recipes)
 
@@ -3094,6 +3242,7 @@ Number of analyzed modules: 1056
 3. Typo: Found 'Magic Mirror' in file `README.md`: Replace it with `MagicMirror²`.
 4. Typo: Found 'MagicMirror2' in file `README.md`: Replace it with `MagicMirror²`.
 5. Deprecated: Found 'require('request')' in file `node_helper.js`: Replace it with built-in fetch.
+6. Warning: No LICENSE file.
 
 ## [mmm-helium-wallet by hayseedbyte](https://github.com/hayseedbyte/mmm-helium-wallet)
 
@@ -3145,6 +3294,7 @@ Number of analyzed modules: 1056
 2. Deprecated: Found 'require('request')' in file `node_helper.js`: Replace it with built-in fetch.
 3. Typo: Found 'Magic Mirror' in file `package.json`: Replace it with `MagicMirror²`.
 4. Deprecated: Found 'electron-rebuild' in file `package.json`: Replace it with `@electron/rebuild`
+5. Warning: No LICENSE file.
 
 ## [mmm-openhabfloorplan by paphko](https://github.com/paphko/mmm-openhabfloorplan)
 
@@ -3178,6 +3328,7 @@ Number of analyzed modules: 1056
 4. Typo: Found 'Magic Mirror' in file `README.md`: Replace it with `MagicMirror²`.
 5. Typo: Found 'Magic Mirror' in file `node_helper.js`: Replace it with `MagicMirror²`.
 6. Deprecated: Found 'require('request')' in file `node_helper.js`: Replace it with built-in fetch.
+7. Warning: No LICENSE file.
 
 ## [mmm-systemtemperature by MichMich](https://github.com/MichMich/mmm-systemtemperature)
 
@@ -3193,6 +3344,7 @@ Number of analyzed modules: 1056
 5. Typo: Found 'Magic Mirror' in file `mmm-toggle-by-mqtt.js`: Replace it with `MagicMirror²`.
 6. Typo: Found 'MagicMirror2' in file `mmm-toggle-by-mqtt.js`: Replace it with `MagicMirror²`.
 7. Typo: Found 'Magic Mirror' in file `node_helper.js`: Replace it with `MagicMirror²`.
+8. Warning: No LICENSE file.
 
 ## [mmm-uah-currency by wzooff](https://github.com/wzooff/mmm-uah-currency)
 
@@ -3217,6 +3369,7 @@ Number of analyzed modules: 1056
 2. Recommendation: Module name doesn't follow the recommended pattern (it doesn't start with `MMM-`). Consider renaming your module.
 3. Typo: Found 'Magic Mirror' in file `MMM-UVIndex.js`: Replace it with `MagicMirror²`.
 4. Recommendation: Found 'XMLHttpRequest' in file `MMM-UVIndex.js`: Replace it with built-in fetch.
+5. Warning: No LICENSE file.
 
 ## [mmm-weatherchart by paphko](https://github.com/paphko/mmm-weatherchart)
 
@@ -3234,6 +3387,7 @@ Number of analyzed modules: 1056
 3. Typo: Found 'Magic Mirror' in file `README.md`: Replace it with `MagicMirror²`.
 4. Typo: Found 'MagicMirror2' in file `README.md`: Replace it with `MagicMirror²`.
 5. Deprecated: Found 'require('request')' in file `node_helper.js`: Replace it with built-in fetch.
+6. Warning: No LICENSE file.
 
 ## [mmpm by Bee-Mar](https://github.com/Bee-Mar/mmpm)
 
@@ -3278,6 +3432,7 @@ Number of analyzed modules: 1056
 
 1. Issue: There is no `package.json`. We need this file to gather information about the module.
 2. Recommendation: Found 'require("https")' in file `node_helper.js`: Replace it with built-in fetch.
+3. Warning: No LICENSE file.
 
 ## [MMM-MoonPhase by NolanKingdon](https://github.com/NolanKingdon/MMM-MoonPhase)
 
@@ -3295,6 +3450,7 @@ Number of analyzed modules: 1056
 3. Issue: No compatible or wrong license field in 'package.json'. Without that, we can't use an image.
 4. Typo: Found 'Magic Mirror' in file `MMM-Mopidy-MPD.js`: Replace it with `MagicMirror²`.
 5. Typo: Found 'Magic Mirror' in file `README.md`: Replace it with `MagicMirror²`.
+6. Warning: No LICENSE file.
 
 ## [MMM-MotionControl by nischi](https://github.com/nischi/MMM-MotionControl)
 
@@ -3307,6 +3463,7 @@ Number of analyzed modules: 1056
 1. Issue: There is no `package.json`. We need this file to gather information about the module.
 2. Recommendation: Module name doesn't follow the recommended pattern (it doesn't start with `MMM-`). Consider renaming your module.
 3. Typo: Found 'Magic Mirror' in file `node_helper.js`: Replace it with `MagicMirror²`.
+4. Warning: No LICENSE file.
 
 ## [MMM-MotionDetector by rejas](https://github.com/rejas/MMM-MotionDetector)
 
@@ -3318,6 +3475,7 @@ Number of analyzed modules: 1056
 2. `package.json` issue: No repository field.
 3. `package.json` issue: No license field.
 4. Deprecated: Found 'require('request')' in file `node_helper.js`: Replace it with built-in fetch.
+5. Warning: No LICENSE file.
 
 ## [MMM-MovieInfo by fewieden](https://github.com/fewieden/MMM-MovieInfo)
 
@@ -3345,6 +3503,7 @@ Number of analyzed modules: 1056
 2. Issue: No compatible or wrong license field in 'package.json'. Without that, we can't use an image.
 3. Typo: Found 'Magic Mirror' in file `MMM-MP3Player.js`: Replace it with `MagicMirror²`.
 4. Typo: Found 'Magic Mirror' in file `node_helper.js`: Replace it with `MagicMirror²`.
+5. Warning: No LICENSE file.
 
 ## [MMM-MPD by timjong93](https://github.com/timjong93/MMM-MPD)
 
@@ -3352,6 +3511,7 @@ Number of analyzed modules: 1056
 2. `package.json` issue: license should be a valid SPDX license expression
 3. Issue: No compatible or wrong license field in 'package.json'. Without that, we can't use an image.
 4. Typo: Found 'Magic Mirror' in file `mpd_client.js`: Replace it with `MagicMirror²`.
+5. Warning: No LICENSE file.
 
 ## [MMM-MplayerRadio by Tom-Hirschberger](https://github.com/Tom-Hirschberger/MMM-MplayerRadio)
 
@@ -3365,11 +3525,13 @@ Number of analyzed modules: 1056
 3. Typo: Found 'Magic Mirror' in file `README.md`: Replace it with `MagicMirror²`.
 4. Typo: Found 'Magic Mirror' in file `node_helper.js`: Replace it with `MagicMirror²`.
 5. Deprecated: Found 'electron-rebuild' in file `package.json`: Replace it with `@electron/rebuild`
+6. Warning: No LICENSE file.
 
 ## [MMM-MPRIS2-WebSocket by buxxi](https://github.com/buxxi/MMM-MPRIS2-WebSocket)
 
 1. Issue: There is no `package.json`. We need this file to gather information about the module.
 2. Typo: Found 'Magic Mirror' in file `README.md`: Replace it with `MagicMirror²`.
+3. Warning: No LICENSE file.
 
 ## [MMM-MQTT by jupadin](https://github.com/jupadin/MMM-MQTT)
 
@@ -3451,6 +3613,7 @@ Number of analyzed modules: 1056
 2. Typo: Found 'MagicMirror2' in file `README.md`: Replace it with `MagicMirror²`.
 3. Typo: Found 'Magic Mirror' in file `node_helper.js`: Replace it with `MagicMirror²`.
 4. Deprecated: Found 'require("request")' in file `node_helper.js`: Replace it with built-in fetch.
+5. Warning: No LICENSE file.
 
 ## [MMM-mycroft-wakeword by smartgic](https://github.com/smartgic/MMM-mycroft-wakeword)
 
@@ -3515,6 +3678,7 @@ Number of analyzed modules: 1056
 3. `package.json` issue: No license field.
 4. Typo: Found 'Magic Mirror' in file `node_helper.js`: Replace it with `MagicMirror²`.
 5. Deprecated: Found 'require('request')' in file `node_helper.js`: Replace it with built-in fetch.
+6. Warning: No LICENSE file.
 
 ## [MMM-MyStudyLife by ethanpartida](https://github.com/ethanpartida/MMM-MyStudyLife)
 
@@ -3534,6 +3698,7 @@ Number of analyzed modules: 1056
 1. `package.json` issue: No description
 2. `package.json` issue: No repository field.
 3. Deprecated: Found 'require("request")' in file `node_helper.js`: Replace it with built-in fetch.
+4. Warning: No LICENSE file.
 
 ## [MMM-MyTTC by jclarke0000](https://github.com/jclarke0000/MMM-MyTTC)
 
@@ -3548,6 +3713,11 @@ Number of analyzed modules: 1056
 
 1. Typo: Found 'Magic Mirror' in file `MMM-MyVideoPlayer.js`: Replace it with `MagicMirror²`.
 2. Typo: Found 'MagicMirror2' in file `package.json`: Replace it with `MagicMirror²`.
+3. Warning: No LICENSE file.
+
+## [MMM-MyVolvo by mazim-co](https://github.com/mazim-co/MMM-MyVolvo)
+
+1. Warning: No LICENSE file.
 
 ## [MMM-MyWastePickup by jclarke0000](https://github.com/jclarke0000/MMM-MyWastePickup)
 
@@ -3560,6 +3730,7 @@ Number of analyzed modules: 1056
 1. Typo: Found 'Magic Mirror' in file `MMM-MyWeather.js`: Replace it with `MagicMirror²`.
 2. Typo: Found 'Magic Mirror' in file `node_helper.js`: Replace it with `MagicMirror²`.
 3. Deprecated: Found 'require('request')' in file `node_helper.js`: Replace it with built-in fetch.
+4. Warning: No LICENSE file.
 
 ## [MMM-MyWordsRandomed by framboise-pi](https://github.com/framboise-pi/MMM-MyWordsRandomed)
 
@@ -3568,6 +3739,10 @@ Number of analyzed modules: 1056
 3. Typo: Found 'Magic Mirror' in file `README.md`: Replace it with `MagicMirror²`.
 4. Typo: Found 'Magic Mirror' in file `node_helper.js`: Replace it with `MagicMirror²`.
 5. Typo: Found 'MagicMirror2' in file `package.json`: Replace it with `MagicMirror²`.
+
+## [MMM-nagios by qistoph](https://github.com/qistoph/MMM-nagios)
+
+1. Warning: No LICENSE file.
 
 ## [MMM-NameDay by RichieCZ](https://github.com/RichieCZ/MMM-NameDay)
 
@@ -3642,6 +3817,7 @@ Number of analyzed modules: 1056
 2. Typo: Found 'Magic Mirror' in file `MMM-NearCompliments.js`: Replace it with `MagicMirror²`.
 3. Typo: Found 'Magic Mirror' in file `node_helper.js`: Replace it with `MagicMirror²`.
 4. Typo: Found 'Magic Mirror' in file `package.json`: Replace it with `MagicMirror²`.
+5. Warning: No LICENSE file.
 
 ## [MMM-NEO by mykle1](https://github.com/mykle1/MMM-NEO)
 
@@ -3653,6 +3829,7 @@ Number of analyzed modules: 1056
 ## [MMM-neoomAPI by MartinLoidolt](https://github.com/MartinLoidolt/MMM-neoomAPI)
 
 1. Issue: There is no `package.json`. We need this file to gather information about the module.
+2. Warning: No LICENSE file.
 
 ## [MMM-NesteBussAtB by ottopaulsen](https://github.com/ottopaulsen/MMM-NesteBussAtB)
 
@@ -3709,6 +3886,7 @@ Number of analyzed modules: 1056
 4. Deprecated: Found 'require('request')' in file `node_helper.js`: Replace it with built-in fetch.
 5. Recommendation: Found 'require("https")' in file `node_helper.js`: Replace it with built-in fetch.
 6. Typo: Found 'Magic Mirror' in file `package.json`: Replace it with `MagicMirror²`.
+7. Warning: No LICENSE file.
 
 ## [MMM-Netatmo-Thermostat by overflOw11](https://github.com/overflOw11/MMM-Netatmo-Thermostat)
 
@@ -3722,6 +3900,10 @@ Number of analyzed modules: 1056
 
 1. Typo: Found 'Magic Mirror' in file `MMM-network-signal.js`: Replace it with `MagicMirror²`.
 2. Typo: Found 'MagicMirror2' in file `package.json`: Replace it with `MagicMirror²`.
+
+## [MMM-NetworkConnection by slametps](https://github.com/slametps/MMM-NetworkConnection)
+
+1. Warning: No LICENSE file.
 
 ## [MMM-NetworkScanner by spitzlbergerj](https://github.com/spitzlbergerj/MMM-NetworkScanner)
 
@@ -3765,6 +3947,7 @@ Number of analyzed modules: 1056
 1. Typo: Found 'Magic Mirror' in file `MMM-nextbike.js`: Replace it with `MagicMirror²`.
 2. Typo: Found 'Magic Mirror' in file `node_helper.js`: Replace it with `MagicMirror²`.
 3. Deprecated: Found 'require('request')' in file `node_helper.js`: Replace it with built-in fetch.
+4. Warning: No LICENSE file.
 
 ## [MMM-NextCloud-Tasks by starlingfire](https://github.com/starlingfire/MMM-NextCloud-Tasks)
 
@@ -3813,11 +3996,13 @@ Number of analyzed modules: 1056
 1. `package.json` issue: No description
 2. Issue: No image found.
 3. Recommendation: Found 'XMLHttpRequest' in file `MMM-NiceHash.js`: Replace it with built-in fetch.
+4. Warning: No LICENSE file.
 
 ## [MMM-Nightscout by bureus](https://github.com/bureus/MMM-Nightscout)
 
 1. Typo: Found 'Magic Mirror' in file `README.md`: Replace it with `MagicMirror²`.
 2. Typo: Found 'Magic Mirror' in file `package.json`: Replace it with `MagicMirror²`.
+3. Warning: No LICENSE file.
 
 ## [MMM-NINA by jalibu](https://github.com/jalibu/MMM-NINA)
 
@@ -3844,6 +4029,7 @@ Number of analyzed modules: 1056
 2. Typo: Found 'Magic Mirror' in file `README.md`: Replace it with `MagicMirror²`.
 3. Typo: Found 'Magic Mirror' in file `node_helper.js`: Replace it with `MagicMirror²`.
 4. Deprecated: Found 'require('request')' in file `node_helper.js`: Replace it with built-in fetch.
+5. Warning: No LICENSE file.
 
 ## [MMM-NLDepartureTimes by Travelbacon](https://github.com/Travelbacon/MMM-NLDepartureTimes)
 
@@ -3877,6 +4063,7 @@ Number of analyzed modules: 1056
 19. Deprecated: Found 'require('request')' in file `wg.js`: Replace it with built-in fetch.
 20. Typo: Found 'Magic Mirror' in file `wu.js`: Replace it with `MagicMirror²`.
 21. Deprecated: Found 'require('request')' in file `wu.js`: Replace it with built-in fetch.
+22. Warning: No LICENSE file.
 
 ## [MMM-NOAATides by crice009](https://github.com/crice009/MMM-NOAATides)
 
@@ -3924,6 +4111,10 @@ Number of analyzed modules: 1056
 3. Typo: Found 'Magic Mirror' in file `README.md`: Replace it with `MagicMirror²`.
 4. Recommendation: Found 'XMLHttpRequest' in file `stations.js`: Replace it with built-in fetch.
 
+## [MMM-nstreinen by qistoph](https://github.com/qistoph/MMM-nstreinen)
+
+1. Warning: No LICENSE file.
+
 ## [MMM-nyc-transit by elaniobro](https://github.com/elaniobro/MMM-nyc-transit)
 
 1. Deprecated: Found 'node-version: 16' in file `npm-publish-github-packages.yml`: Update to current version.
@@ -3970,6 +4161,7 @@ Number of analyzed modules: 1056
 
 1. Typo: Found 'Magic Mirror' in file `MMM-Oelpreise.js`: Replace it with `MagicMirror²`.
 2. Deprecated: Found 'require('request')' in file `node_helper.js`: Replace it with built-in fetch.
+3. Warning: No LICENSE file.
 
 ## [MMM-OlympicGames by fewieden](https://github.com/fewieden/MMM-OlympicGames)
 
@@ -3985,12 +4177,14 @@ Number of analyzed modules: 1056
 2. Recommendation: Module name doesn't follow the recommended pattern (it doesn't start with `MMM-`). Consider renaming your module.
 3. Typo: Found 'Magic Mirror' in file `README.md`: Replace it with `MagicMirror²`.
 4. Typo: Found 'Magic Mirror' in file `on-this-day.js`: Replace it with `MagicMirror²`.
+5. Warning: No LICENSE file.
 
 ## [MMM-OneBusAway by jugler](https://github.com/jugler/MMM-OneBusAway)
 
 1. Issue: There is no `package.json`. We need this file to gather information about the module.
 2. Typo: Found 'Magic Mirror' in file `README.md`: Replace it with `MagicMirror²`.
 3. Deprecated: Found 'require('request')' in file `node_helper.js`: Replace it with built-in fetch.
+4. Warning: No LICENSE file.
 
 ## [MMM-OneTouchReveal by Canonip](https://github.com/Canonip/MMM-OneTouchReveal)
 
@@ -4091,12 +4285,14 @@ Number of analyzed modules: 1056
 1. Issue: There is no `package.json`. We need this file to gather information about the module.
 2. Typo: Found 'Magic Mirror' in file `MMM-OpenTherm.js`: Replace it with `MagicMirror²`.
 3. Deprecated: Found 'require('request')' in file `node_helper.js`: Replace it with built-in fetch.
+4. Warning: No LICENSE file.
 
 ## [MMM-OpenWeatherMapForecast by MarcLandis](https://github.com/MarcLandis/MMM-OpenWeatherMapForecast)
 
 1. Typo: Found 'Magic Mirror' in file `MMM-OpenWeatherMapForecast.js`: Replace it with `MagicMirror²`.
 2. Typo: Found 'Magic Mirror' in file `README.md`: Replace it with `MagicMirror²`.
 3. Typo: Found 'Magic Mirror' in file `package.json`: Replace it with `MagicMirror²`.
+4. Warning: No LICENSE file.
 
 ## [MMM-OsloCityBike by TobbenTM](https://github.com/TobbenTM/MMM-OsloCityBike)
 
@@ -4118,6 +4314,7 @@ Number of analyzed modules: 1056
 ## [MMM-Oura2 by themox](https://github.com/themox/MMM-Oura2)
 
 1. Issue: There is no `package.json`. We need this file to gather information about the module.
+2. Warning: No LICENSE file.
 
 ## [MMM-Overwatch by retroflex](https://github.com/retroflex/MMM-Overwatch)
 
@@ -4133,11 +4330,13 @@ Number of analyzed modules: 1056
 ## [MMM-Page-Pusher by zerosamski](https://github.com/zerosamski/MMM-Page-Pusher)
 
 1. Issue: There is no `package.json`. We need this file to gather information about the module.
+2. Warning: No LICENSE file.
 
 ## [MMM-Page-Selector by Veldrovive](https://github.com/Veldrovive/MMM-Page-Selector)
 
 1. Issue: There is no `package.json`. We need this file to gather information about the module.
 2. Typo: Found 'Magic Mirror' in file `README.md`: Replace it with `MagicMirror²`.
+3. Warning: No LICENSE file.
 
 ## [MMM-PageReader by dgburr](https://github.com/dgburr/MMM-PageReader)
 
@@ -4210,11 +4409,13 @@ Number of analyzed modules: 1056
 
 1. Typo: Found 'Magic Mirror' in file `MMM-Pelletpreise.js`: Replace it with `MagicMirror²`.
 2. Deprecated: Found 'require('request')' in file `node_helper.js`: Replace it with built-in fetch.
+3. Warning: No LICENSE file.
 
 ## [MMM-Peloton by chicohernando](https://github.com/chicohernando/MMM-Peloton)
 
 1. Issue: There is no `package.json`. We need this file to gather information about the module.
 2. Deprecated: Found 'require("request")' in file `node_helper.js`: Replace it with built-in fetch.
+3. Warning: No LICENSE file.
 
 ## [MMM-PenPlotter by jbamford](https://github.com/jbamford/MMM-PenPlotter)
 
@@ -4256,6 +4457,7 @@ Number of analyzed modules: 1056
 1. Issue: There is no `package.json`. We need this file to gather information about the module.
 2. Typo: Found 'Magic Mirror' in file `README.md`: Replace it with `MagicMirror²`.
 3. Deprecated: Found 'require('request')' in file `node_helper.js`: Replace it with built-in fetch.
+4. Warning: No LICENSE file.
 
 ## [MMM-PhilipsHue by mumblebaj](https://github.com/mumblebaj/MMM-PhilipsHue)
 
@@ -4271,11 +4473,13 @@ Number of analyzed modules: 1056
 1. `package.json` issue: No repository field.
 2. `package.json` issue: No license field.
 3. Recommendation: Module name doesn't follow the recommended pattern (it doesn't start with `MMM-`). Consider renaming your module.
+4. Warning: No LICENSE file.
 
 ## [PiDisplaySleep by RpDp-git](https://github.com/RpDp-git/PiDisplaySleep)
 
 1. Issue: There is no `package.json`. We need this file to gather information about the module.
 2. Recommendation: Module name doesn't follow the recommended pattern (it doesn't start with `MMM-`). Consider renaming your module.
+3. Warning: No LICENSE file.
 
 ## [MMM-pihole-stats by sheyabernstein](https://github.com/sheyabernstein/MMM-pihole-stats)
 
@@ -4308,6 +4512,7 @@ Number of analyzed modules: 1056
 ## [MMM-PIR by mboskamp](https://github.com/mboskamp/MMM-PIR)
 
 1. `package.json` issue: No description
+2. Warning: No LICENSE file.
 
 ## [MMM-PIR-Sensor by MarcLandis](https://github.com/MarcLandis/MMM-PIR-Sensor)
 
@@ -4315,6 +4520,7 @@ Number of analyzed modules: 1056
 2. Typo: Found 'Magic Mirror' in file `MMM-PIR-Sensor.js`: Replace it with `MagicMirror²`.
 3. Typo: Found 'Magic Mirror' in file `node_helper.js`: Replace it with `MagicMirror²`.
 4. Typo: Found 'Magic Mirror' in file `package.json`: Replace it with `MagicMirror²`.
+5. Warning: No LICENSE file.
 
 ## [MMM-PIR-Sensor-Lite by grenagit](https://github.com/grenagit/MMM-PIR-Sensor-Lite)
 
@@ -4328,6 +4534,7 @@ Number of analyzed modules: 1056
 2. Typo: Found 'Magic Mirror' in file `README.md`: Replace it with `MagicMirror²`.
 3. Deprecated: Found 'require("request")' in file `node_helper.js`: Replace it with built-in fetch.
 4. Typo: Found 'Magic Mirror' in file `package.json`: Replace it with `MagicMirror²`.
+5. Warning: No LICENSE file.
 
 ## [MMM-PiTemp by ckoutavas](https://github.com/ckoutavas/MMM-PiTemp)
 
@@ -4339,17 +4546,20 @@ Number of analyzed modules: 1056
 1. `package.json` issue: No description
 2. `package.json` issue: No repository field.
 3. `package.json` issue: No license field.
+4. Warning: No LICENSE file.
 
 ## [MMM-PL_WOTD by mjb527](https://github.com/mjb527/MMM-PL_WOTD)
 
 1. Typo: Found 'Magic Mirror' in file `MMM-PL_WOTD.js`: Replace it with `MagicMirror²`.
 2. Typo: Found 'Magic Mirror' in file `README.md`: Replace it with `MagicMirror²`.
+3. Warning: No LICENSE file.
 
 ## [MMM-PlaceInfo by njwilliams](https://github.com/njwilliams/MMM-PlaceInfo)
 
 1. Issue: There is no `package.json`. We need this file to gather information about the module.
 2. Typo: Found 'Magic Mirror' in file `MMM-PlaceInfo.js`: Replace it with `MagicMirror²`.
 3. Recommendation: Found 'XMLHttpRequest' in file `MMM-PlaceInfo.js`: Replace it with built-in fetch.
+4. Warning: No LICENSE file.
 
 ## [MMM-Planetarium by MMRIZE](https://github.com/MMRIZE/MMM-Planetarium)
 
@@ -4361,11 +4571,13 @@ Number of analyzed modules: 1056
 1. Issue: There is no `package.json`. We need this file to gather information about the module.
 2. Recommendation: Module name doesn't follow the recommended pattern (it doesn't start with `MMM-`). Consider renaming your module.
 3. Typo: Found 'Magic Mirror' in file `README.md`: Replace it with `MagicMirror²`.
+4. Warning: No LICENSE file.
 
 ## [MMM-Plantower by gimdh](https://github.com/gimdh/MMM-Plantower)
 
 1. Issue: No image found.
 2. Typo: Found 'Magic Mirror' in file `package.json`: Replace it with `MagicMirror²`.
+3. Warning: No LICENSE file.
 
 ## [MMM-Plenticore by eckonator](https://github.com/eckonator/MMM-Plenticore)
 
@@ -4397,6 +4609,7 @@ Number of analyzed modules: 1056
 
 1. Issue: There is no `package.json`. We need this file to gather information about the module.
 2. Recommendation: Module name doesn't follow the recommended pattern (it doesn't start with `MMM-`). Consider renaming your module.
+3. Warning: No LICENSE file.
 
 ## [MMM-Podcast by ptrbld](https://github.com/ptrbld/MMM-Podcast)
 
@@ -4404,6 +4617,7 @@ Number of analyzed modules: 1056
 2. Deprecated: Found 'omxplayer' in file `README.md`: Try to replace it with `vlc`.
 3. Typo: Found 'Magic Mirror' in file `node_helper.js`: Replace it with `MagicMirror²`.
 4. Deprecated: Found 'electron-rebuild' in file `package.json`: Replace it with `@electron/rebuild`
+5. Warning: No LICENSE file.
 
 ## [MMM-Podcast2 by Ax-LED](https://github.com/Ax-LED/MMM-Podcast2)
 
@@ -4418,6 +4632,7 @@ Number of analyzed modules: 1056
 
 1. Typo: Found 'Magic Mirror' in file `README.md`: Replace it with `MagicMirror²`.
 2. Typo: Found 'Magic Mirror' in file `package.json`: Replace it with `MagicMirror²`.
+3. Warning: No LICENSE file.
 
 ## [MMM-PokemonGOEvents by bigfoott](https://github.com/bigfoott/MMM-PokemonGOEvents)
 
@@ -4436,6 +4651,7 @@ Number of analyzed modules: 1056
 3. `package.json` issue: No license field.
 4. Typo: Found 'Magic Mirror' in file `node_helper.js`: Replace it with `MagicMirror²`.
 5. Deprecated: Found 'require('request')' in file `node_helper.js`: Replace it with built-in fetch.
+6. Warning: No LICENSE file.
 
 ## [MMM-Pollen-FR by lekesako](https://github.com/lekesako/MMM-Pollen-FR)
 
@@ -4478,6 +4694,7 @@ Number of analyzed modules: 1056
 2. Typo: Found 'Magic Mirror' in file `README.md`: Replace it with `MagicMirror²`.
 3. Typo: Found 'Magic Mirror' in file `node_helper.js`: Replace it with `MagicMirror²`.
 4. Typo: Found 'Magic Mirror' in file `package.json`: Replace it with `MagicMirror²`.
+5. Warning: No LICENSE file.
 
 ## [MMM-Powerwall by MikeBishop](https://github.com/MikeBishop/MMM-Powerwall)
 
@@ -4559,6 +4776,7 @@ Number of analyzed modules: 1056
 1. `package.json` issue: No description
 2. `package.json` issue: No repository field.
 3. Issue: No image found.
+4. Warning: No LICENSE file.
 
 ## [MMM-PurpleAir by ajones](https://github.com/ajones/MMM-PurpleAir)
 
@@ -4585,11 +4803,13 @@ Number of analyzed modules: 1056
 
 1. Issue: There is no `package.json`. We need this file to gather information about the module.
 2. Typo: Found 'Magic Mirror' in file `MMM-QRCode.js`: Replace it with `MagicMirror²`.
+3. Warning: No LICENSE file.
 
 ## [MMM-Questrade by Daniel1145](https://github.com/Daniel1145/MMM-Questrade)
 
 1. Issue: There is no `package.json`. We need this file to gather information about the module.
 2. Recommendation: Found 'node-fetch' in file `node_helper.js`: Replace it with built-in fetch.
+3. Warning: No LICENSE file.
 
 ## [MMM-Quotable by dfanica](https://github.com/dfanica/MMM-Quotable)
 
@@ -4597,11 +4817,13 @@ Number of analyzed modules: 1056
 2. Typo: Found 'Magic Mirror' in file `MMM-Quotable.js`: Replace it with `MagicMirror²`.
 3. Recommendation: Found 'node-fetch' in file `README.md`: Replace it with built-in fetch.
 4. Recommendation: Found 'node-fetch' in file `node_helper.js`: Replace it with built-in fetch.
+5. Warning: No LICENSE file.
 
 ## [MMM-quote-of-the-day by Sispheor](https://github.com/Sispheor/MMM-quote-of-the-day)
 
 1. Typo: Found 'Magic Mirror' in file `README.md`: Replace it with `MagicMirror²`.
 2. Typo: Found 'Magic Mirror' in file `package.json`: Replace it with `MagicMirror²`.
+3. Warning: No LICENSE file.
 
 ## [MMM-RaiderIO by jwcnewton](https://github.com/jwcnewton/MMM-RaiderIO)
 
@@ -4609,6 +4831,7 @@ Number of analyzed modules: 1056
 2. Typo: Found 'Magic Mirror' in file `MMM-RaiderIO.js`: Replace it with `MagicMirror²`.
 3. Recommendation: Found 'XMLHttpRequest' in file `MMM-RaiderIO.js`: Replace it with built-in fetch.
 4. Typo: Found 'Magic Mirror' in file `README.md`: Replace it with `MagicMirror²`.
+5. Warning: No LICENSE file.
 
 ## [MMM-rain-forecast by spoturdeal](https://github.com/spoturdeal/MMM-rain-forecast)
 
@@ -4660,11 +4883,13 @@ Number of analyzed modules: 1056
 3. Typo: Found 'Magic Mirror' in file `MMM-RandomPhoto.js`: Replace it with `MagicMirror²`.
 4. Typo: Found 'MagicMirror2' in file `README.md`: Replace it with `MagicMirror²`.
 5. Recommendation: Found 'require("https")' in file `node_helper.js`: Replace it with built-in fetch.
+6. Warning: No LICENSE file.
 
 ## [MMM-RandomQuotes by Jacopo1891](https://github.com/Jacopo1891/MMM-RandomQuotes)
 
 1. Issue: There is no `package.json`. We need this file to gather information about the module.
 2. Recommendation: Found 'node-fetch' in file `node_helper.js`: Replace it with built-in fetch.
+3. Warning: No LICENSE file.
 
 ## [MMM-RandomQuranAyah by slametps](https://github.com/slametps/MMM-RandomQuranAyah)
 
@@ -4693,11 +4918,13 @@ Number of analyzed modules: 1056
 1. Issue: There is no `package.json`. We need this file to gather information about the module.
 2. Typo: Found 'Magic Mirror' in file `MMM-rbtv-sendeplan.js`: Replace it with `MagicMirror²`.
 3. Recommendation: Found 'XMLHttpRequest' in file `MMM-rbtv-sendeplan.js`: Replace it with built-in fetch.
+4. Warning: No LICENSE file.
 
 ## [MMM-RecentRainfall by vincep5](https://github.com/vincep5/MMM-RecentRainfall)
 
 1. Issue: There is no `package.json`. We need this file to gather information about the module.
 2. Recommendation: Found 'XMLHttpRequest' in file `MMM-RecentRainfall.js`: Replace it with built-in fetch.
+3. Warning: No LICENSE file.
 
 ## [MMM-Recipe by cowboysdude](https://github.com/cowboysdude/MMM-Recipe)
 
@@ -4707,6 +4934,7 @@ Number of analyzed modules: 1056
 4. Recommendation: Found 'XMLHttpRequest' in file `jquery.js`: Replace it with built-in fetch.
 5. Typo: Found 'Magic Mirror' in file `node_helper.js`: Replace it with `MagicMirror²`.
 6. Deprecated: Found 'require('request')' in file `node_helper.js`: Replace it with built-in fetch.
+7. Warning: No LICENSE file.
 
 ## [MMM-RecyclingCalendar by FatTony404](https://gitlab.com/FatTony404/MMM-RecyclingCalendar)
 
@@ -4721,6 +4949,7 @@ Number of analyzed modules: 1056
 5. Typo: Found 'Magic Mirror' in file `node_helper.js`: Replace it with `MagicMirror²`.
 6. Deprecated: Found 'require('request')' in file `node_helper.js`: Replace it with built-in fetch.
 7. Typo: Found 'Magic Mirror' in file `package.json`: Replace it with `MagicMirror²`.
+8. Warning: No LICENSE file.
 
 ## [MMM-Reddit-News-Ticker by hayseedbyte](https://github.com/hayseedbyte/MMM-Reddit-News-Ticker)
 
@@ -4775,6 +5004,7 @@ Number of analyzed modules: 1056
 1. Issue: There is no `package.json`. We need this file to gather information about the module.
 2. Recommendation: Found 'XMLHttpRequest' in file `MMM-RepRapFirmware.js`: Replace it with built-in fetch.
 3. Typo: Found 'Magic Mirror' in file `README.md`: Replace it with `MagicMirror²`.
+4. Warning: No LICENSE file.
 
 ## [MMM-ResRobot by Alvinger](https://github.com/Alvinger/MMM-ResRobot)
 
@@ -4783,6 +5013,7 @@ Number of analyzed modules: 1056
 3. Typo: Found 'MagicMirror2' in file `README.md`: Replace it with `MagicMirror²`.
 4. Typo: Found 'Magic Mirror' in file `node_helper.js`: Replace it with `MagicMirror²`.
 5. Recommendation: Found 'node-fetch' in file `node_helper.js`: Replace it with built-in fetch.
+6. Warning: No LICENSE file.
 
 ## [MMM-Rest by Tuxdiver](https://github.com/Tuxdiver/MMM-Rest)
 
@@ -4845,6 +5076,7 @@ Number of analyzed modules: 1056
 3. Typo: Found 'Magic Mirror' in file `node_helper.js`: Replace it with `MagicMirror²`.
 4. Deprecated: Found 'require('request')' in file `node_helper.js`: Replace it with built-in fetch.
 5. Typo: Found 'MagicMirror2' in file `package.json`: Replace it with `MagicMirror²`.
+6. Warning: No LICENSE file.
 
 ## [MMM-RocketLeagueZ by Zeprakadebra](https://github.com/Zeprakadebra/MMM-RocketLeagueZ)
 
@@ -4852,6 +5084,7 @@ Number of analyzed modules: 1056
 2. Typo: Found 'MagicMirror2' in file `Readme.md`: Replace it with `MagicMirror²`.
 3. Typo: Found 'Magic Mirror' in file `node_helper.js`: Replace it with `MagicMirror²`.
 4. Typo: Found 'MagicMirror2' in file `package.json`: Replace it with `MagicMirror²`.
+5. Warning: No LICENSE file.
 
 ## [MMM-Roomba980 by relm923](https://github.com/relm923/MMM-Roomba980)
 
@@ -4876,6 +5109,7 @@ Number of analyzed modules: 1056
 ## [MMM-RPI-LED by idoodler](https://github.com/idoodler/MMM-RPI-LED)
 
 1. Issue: No image found.
+2. Warning: No LICENSE file.
 
 ## [MMM-RSS-FEED by Taolanoz](https://github.com/Taolanoz/MMM-RSS-FEED)
 
@@ -5032,6 +5266,10 @@ Number of analyzed modules: 1056
 7. Typo: Found 'Magic Mirror' in file `node_helper.js`: Replace it with `MagicMirror²`.
 8. Deprecated: Found 'electron-rebuild' in file `postinstall`: Replace it with `@electron/rebuild`
 
+## [MMM-ServerStatus by XBCreepinJesus](https://github.com/XBCreepinJesus/MMM-ServerStatus)
+
+1. Warning: No LICENSE file.
+
 ## [MMM-ServiceViewer by cybex-dev](https://github.com/cybex-dev/MMM-ServiceViewer)
 
 1. `package.json` issue: No repository field.
@@ -5046,6 +5284,7 @@ Number of analyzed modules: 1056
 ## [MMM-SG-Transport-V2 by mosesyong](https://github.com/mosesyong/MMM-SG-Transport-V2)
 
 1. Typo: Found 'Magic Mirror' in file `MMM-SG-Transport-V2.js`: Replace it with `MagicMirror²`.
+2. Warning: No LICENSE file.
 
 ## [MMM-shabbat by sheyabernstein](https://github.com/sheyabernstein/MMM-shabbat)
 
@@ -5085,6 +5324,7 @@ Number of analyzed modules: 1056
 1. Issue: There is no `package.json`. We need this file to gather information about the module.
 2. Typo: Found 'Magic Mirror' in file `README.md`: Replace it with `MagicMirror²`.
 3. Deprecated: Found 'require('request')' in file `node_helper.js`: Replace it with built-in fetch.
+4. Warning: No LICENSE file.
 
 ## [MMM-ShipmentTracking by fewieden](https://github.com/fewieden/MMM-ShipmentTracking)
 
@@ -5109,6 +5349,7 @@ Number of analyzed modules: 1056
 2. Deprecated: Found 'electron-rebuild' in file `README.org`: Replace it with `@electron/rebuild`
 3. Deprecated: Found 'electron-rebuild' in file `package.json`: Replace it with `@electron/rebuild`
 4. Typo: Found 'Magic Mirror' in file `SAMPLE_CONFIG.js`: Replace it with `MagicMirror²`.
+5. Warning: No LICENSE file.
 
 ## [MMM-SimpleLogo by frdteknikelektro](https://github.com/frdteknikelektro/MMM-SimpleLogo)
 
@@ -5118,6 +5359,7 @@ Number of analyzed modules: 1056
 
 1. Typo: Found 'Magic Mirror' in file `MMM-SimpleNotifyTrashDay.js`: Replace it with `MagicMirror²`.
 2. Typo: Found 'Magic Mirror' in file `node_helper.js`: Replace it with `MagicMirror²`.
+3. Warning: No LICENSE file.
 
 ## [MMM-SimpleText by SaltyRiver](https://github.com/SaltyRiver/MMM-SimpleText)
 
@@ -5201,11 +5443,13 @@ Number of analyzed modules: 1056
 2. Typo: Found 'Magic Mirror' in file `MMM-SmartWebDisplay.js`: Replace it with `MagicMirror²`.
 3. Typo: Found 'Magic Mirror' in file `README.md`: Replace it with `MagicMirror²`.
 4. Typo: Found 'Magic Mirror' in file `package.json`: Replace it with `MagicMirror²`.
+5. Warning: No LICENSE file.
 
 ## [MMM-SmokedMirror by Santanachia](https://github.com/Santanachia/MMM-SmokedMirror)
 
 1. Recommendation: Found 'require('https')' in file `node_helper.js`: Replace it with built-in fetch.
 2. Typo: Found 'Magic Mirror' in file `package.json`: Replace it with `MagicMirror²`.
+3. Warning: No LICENSE file.
 
 ## [MMM-SNCF by jvanoost](https://github.com/jvanoost/MMM-SNCF)
 
@@ -5222,6 +5466,7 @@ Number of analyzed modules: 1056
 
 1. Issue: There is no `package.json`. We need this file to gather information about the module.
 2. Typo: Found 'Magic Mirror' in file `MMM-Snow.js`: Replace it with `MagicMirror²`.
+3. Warning: No LICENSE file.
 
 ## [MMM-soccer by fewieden](https://github.com/fewieden/MMM-soccer)
 
@@ -5237,6 +5482,7 @@ Number of analyzed modules: 1056
 3. Typo: Found 'Magic Mirror' in file `node_helper.js`: Replace it with `MagicMirror²`.
 4. Recommendation: Found 'node-fetch' in file `node_helper.js`: Replace it with built-in fetch.
 5. Recommendation: Found 'node-fetch' in file `package.json`: Replace it with built-in fetch.
+6. Warning: No LICENSE file.
 
 ## [MMM-social-counter by ngnijland](https://github.com/ngnijland/MMM-social-counter)
 
@@ -5248,6 +5494,7 @@ Number of analyzed modules: 1056
 1. Typo: Found 'Magic Mirror' in file `MMM-socialbicycles.js`: Replace it with `MagicMirror²`.
 2. Typo: Found 'Magic Mirror' in file `node_helper.js`: Replace it with `MagicMirror²`.
 3. Deprecated: Found 'require('request')' in file `node_helper.js`: Replace it with built-in fetch.
+4. Warning: No LICENSE file.
 
 ## [MMM-Solar by tkrywit](https://github.com/tkrywit/MMM-Solar)
 
@@ -5328,16 +5575,19 @@ Number of analyzed modules: 1056
 
 1. Issue: There is no `package.json`. We need this file to gather information about the module.
 2. Typo: Found 'Magic Mirror' in file `MMM-Space.js`: Replace it with `MagicMirror²`.
+3. Warning: No LICENSE file.
 
 ## [MMM-SpaceLaunchNow by koxm](https://github.com/koxm/MMM-SpaceLaunchNow)
 
 1. Issue: There is no `package.json`. We need this file to gather information about the module.
 2. Recommendation: Found 'XMLHttpRequest' in file `MMM-SpaceLaunchNow.js`: Replace it with built-in fetch.
+3. Warning: No LICENSE file.
 
 ## [MMM-SpaceX by koxm](https://github.com/koxm/MMM-SpaceX)
 
 1. Issue: There is no `package.json`. We need this file to gather information about the module.
 2. Recommendation: Found 'XMLHttpRequest' in file `MMM-SpaceX.js`: Replace it with built-in fetch.
+3. Warning: No LICENSE file.
 
 ## [MMM-Speedway by LukasKlose](https://github.com/LukasKlose/MMM-Speedway)
 
@@ -5345,6 +5595,7 @@ Number of analyzed modules: 1056
 2. `package.json` issue: No repository field.
 3. `package.json` issue: No license field.
 4. Deprecated: Found 'require('request')' in file `node_helper.js`: Replace it with built-in fetch.
+5. Warning: No LICENSE file.
 
 ## [MMM-SpotifyConnectUI by CatoAntonsen](https://github.com/CatoAntonsen/MMM-SpotifyConnectUI)
 
@@ -5355,6 +5606,7 @@ Number of analyzed modules: 1056
 ## [MMM-SpotifyHelper by victor-paumier](https://github.com/victor-paumier/MMM-SpotifyHelper)
 
 1. Issue: There is no `package.json`. We need this file to gather information about the module.
+2. Warning: No LICENSE file.
 
 ## [MMM-SpotifyReleases by Ruud14](https://github.com/Ruud14/MMM-SpotifyReleases)
 
@@ -5367,6 +5619,7 @@ Number of analyzed modules: 1056
 ## [MMM-Star-Metro by alexandreLavenant](https://github.com/alexandreLavenant/MMM-Star-Metro)
 
 1. Issue: There is no `package.json`. We need this file to gather information about the module.
+2. Warning: No LICENSE file.
 
 ## [MMM-StatusPageIo by spyder007](https://github.com/spyder007/MMM-StatusPageIo)
 
@@ -5383,6 +5636,7 @@ Number of analyzed modules: 1056
 4. Recommendation: Found 'node-fetch' in file `node_helper.js`: Replace it with built-in fetch.
 5. Typo: Found 'Magic Mirror' in file `package.json`: Replace it with `MagicMirror²`.
 6. Recommendation: Found 'node-fetch' in file `package.json`: Replace it with built-in fetch.
+7. Warning: No LICENSE file.
 
 ## [MMM-stib by danito](https://github.com/danito/MMM-stib)
 
@@ -5399,6 +5653,10 @@ Number of analyzed modules: 1056
 1. Issue: There is no `package.json`. We need this file to gather information about the module.
 2. Typo: Found 'Magic Mirror' in file `README.md`: Replace it with `MagicMirror²`.
 3. Deprecated: Found 'require("request")' in file `node_helper.js`: Replace it with built-in fetch.
+
+## [MMM-StopwatchTimer by Klettner](https://github.com/Klettner/MMM-StopwatchTimer)
+
+1. Warning: No LICENSE file.
 
 ## [MMM-StorH by SkogDev](https://github.com/SkogDev/MMM-StorH)
 
@@ -5443,6 +5701,7 @@ Number of analyzed modules: 1056
 3. Typo: Found 'Magic Mirror' in file `node_helper.js`: Replace it with `MagicMirror²`.
 4. Typo: Found 'Magic Mirror' in file `package.json`: Replace it with `MagicMirror²`.
 5. Deprecated: Found 'electron-rebuild' in file `package.json`: Replace it with `@electron/rebuild`
+6. Warning: No LICENSE file.
 
 ## [MMM-SwissCommute by nixnuex](https://github.com/nixnuex/MMM-SwissCommute)
 
@@ -5485,6 +5744,7 @@ Number of analyzed modules: 1056
 1. Issue: There is no `package.json`. We need this file to gather information about the module.
 2. Typo: Found 'Magic Mirror' in file `MMM-syslog.js`: Replace it with `MagicMirror²`.
 3. Typo: Found 'Magic Mirror' in file `node_helper.js`: Replace it with `MagicMirror²`.
+4. Warning: No LICENSE file.
 
 ## [MMM-SystemMonitor by btastic](https://github.com/btastic/MMM-SystemMonitor)
 
@@ -5511,6 +5771,7 @@ Number of analyzed modules: 1056
 1. `package.json` issue: No repository field.
 2. Typo: Found 'Magic Mirror' in file `MMM-TakeAndDrive.js`: Replace it with `MagicMirror²`.
 3. Deprecated: Found 'require('request')' in file `node_helper.js`: Replace it with built-in fetch.
+4. Warning: No LICENSE file.
 
 ## [MMM-TautulliActivity by derekn](https://github.com/derekn/MMM-TautulliActivity)
 
@@ -5560,6 +5821,7 @@ Number of analyzed modules: 1056
 2. Typo: Found 'Magic Mirror' in file `MMM-Tesla3.js`: Replace it with `MagicMirror²`.
 3. Typo: Found 'Magic Mirror' in file `node_helper.js`: Replace it with `MagicMirror²`.
 4. Deprecated: Found 'require('request')' in file `node_helper.js`: Replace it with built-in fetch.
+5. Warning: No LICENSE file.
 
 ## [MMM-Teslamate by denverquane](https://github.com/denverquane/MMM-Teslamate)
 
@@ -5614,21 +5876,25 @@ Number of analyzed modules: 1056
 
 1. Issue: There is no `package.json`. We need this file to gather information about the module.
 2. Typo: Found 'Magic Mirror' in file `MMM-TiHimawari8Earth.js`: Replace it with `MagicMirror²`.
+3. Warning: No LICENSE file.
 
 ## [MMM-Timetagger by tderflinger](https://github.com/tderflinger/MMM-Timetagger)
 
 1. Typo: Found 'Magic Mirror' in file `README.md`: Replace it with `MagicMirror²`.
 2. Typo: Found 'Magic Mirror' in file `README_es.md`: Replace it with `MagicMirror²`.
 3. Typo: Found 'Magic Mirror' in file `package.json`: Replace it with `MagicMirror²`.
+4. Warning: No LICENSE file.
 
 ## [MMM-TimeTreeEvent by sabo10o29](https://github.com/sabo10o29/MMM-TimeTreeEvent)
 
 1. Typo: Found 'Magic Mirror' in file `MMM-TimeTreeEvent.js`: Replace it with `MagicMirror²`.
 2. Typo: Found 'Magic Mirror' in file `node_helper.js`: Replace it with `MagicMirror²`.
+3. Warning: No LICENSE file.
 
 ## [MMM-TitanSchoolMealMenu by evanhsu](https://github.com/evanhsu/MMM-TitanSchoolMealMenu)
 
 1. `package.json` issue: No repository field.
+2. Warning: No LICENSE file.
 
 ## [MMM-TMB by jaumebosch](https://github.com/jaumebosch/MMM-TMB)
 
@@ -5668,6 +5934,7 @@ Number of analyzed modules: 1056
 1. Issue: There is no `package.json`. We need this file to gather information about the module.
 2. Typo: Found 'Magic Mirror' in file `MMM-Toon.js`: Replace it with `MagicMirror²`.
 3. Recommendation: Found 'require('https')' in file `ToonAPI.js`: Replace it with built-in fetch.
+4. Warning: No LICENSE file.
 
 ## [MMM-Touch by gfischershaw](https://github.com/gfischershaw/MMM-Touch)
 
@@ -5687,6 +5954,7 @@ Number of analyzed modules: 1056
 ## [MMM-TPLink by slametps](https://github.com/slametps/MMM-TPLink)
 
 1. Typo: Found 'Magic Mirror' in file `node_helper.js`: Replace it with `MagicMirror²`.
+2. Warning: No LICENSE file.
 
 ## [MMM-TracCar by asimhsidd](https://github.com/asimhsidd/MMM-TracCar)
 
@@ -5701,12 +5969,14 @@ Number of analyzed modules: 1056
 2. Recommendation: Found 'node-fetch' in file `README.md`: Replace it with built-in fetch.
 3. Typo: Found 'Magic Mirror' in file `package.json`: Replace it with `MagicMirror²`.
 4. Recommendation: Found 'node-fetch' in file `package.json`: Replace it with built-in fetch.
+5. Warning: No LICENSE file.
 
 ## [MMM-TrainConnections by Bangee44](https://github.com/Bangee44/MMM-TrainConnections)
 
 1. Issue: There is no `package.json`. We need this file to gather information about the module.
 2. Typo: Found 'Magic Mirror' in file `trainconnections.js`: Replace it with `MagicMirror²`.
 3. Recommendation: Found 'XMLHttpRequest' in file `trainconnections.js`: Replace it with built-in fetch.
+4. Warning: No LICENSE file.
 
 ## [MMM-Trains-Trafikverket by per-garden](https://github.com/per-garden/MMM-Trains-Trafikverket)
 
@@ -5725,6 +5995,7 @@ Number of analyzed modules: 1056
 1. Issue: There is no `package.json`. We need this file to gather information about the module.
 2. Typo: Found 'Magic Mirror' in file `MMM-transitfeed.js`: Replace it with `MagicMirror²`.
 3. Typo: Found 'Magic Mirror' in file `node_helper.js`: Replace it with `MagicMirror²`.
+4. Warning: No LICENSE file.
 
 ## [MMM-TranslatedMessages by ahmedwab](https://github.com/ahmedwab/MMM-TranslatedMessages)
 
@@ -5742,6 +6013,7 @@ Number of analyzed modules: 1056
 ## [MMM-TransLoc by OrangeHoopla](https://github.com/OrangeHoopla/MMM-TransLoc)
 
 1. Issue: There is no `package.json`. We need this file to gather information about the module.
+2. Warning: No LICENSE file.
 
 ## [MMM-Transmission by nikxif](https://github.com/nikxif/MMM-Transmission)
 
@@ -5758,6 +6030,7 @@ Number of analyzed modules: 1056
 1. Typo: Found 'Magic Mirror' in file `MMM-Trello.js`: Replace it with `MagicMirror²`.
 2. Typo: Found 'Magic Mirror' in file `node_helper.js`: Replace it with `MagicMirror²`.
 3. Typo: Found 'Magic Mirror' in file `package.json`: Replace it with `MagicMirror²`.
+4. Warning: No LICENSE file.
 
 ## [MMM-Tronity by robotfishe](https://github.com/robotfishe/MMM-Tronity)
 
@@ -5786,10 +6059,12 @@ Number of analyzed modules: 1056
 3. Typo: Found 'MagicMirror2' in file `README.md`: Replace it with `MagicMirror²`.
 4. Typo: Found 'Magic Mirror' in file `node_helper.js`: Replace it with `MagicMirror²`.
 5. Deprecated: Found 'require('request')' in file `node_helper.js`: Replace it with built-in fetch.
+6. Warning: No LICENSE file.
 
 ## [MMM-TuyaSL by slametps](https://github.com/slametps/MMM-TuyaSL)
 
 1. Typo: Found 'Magic Mirror' in file `node_helper.js`: Replace it with `MagicMirror²`.
+2. Warning: No LICENSE file.
 
 ## [MMM-TUZSAZaragoza by rafagale](https://github.com/rafagale/MMM-TUZSAZaragoza)
 
@@ -5828,6 +6103,7 @@ Number of analyzed modules: 1056
 3. Typo: Found 'Magic Mirror' in file `README.md`: Replace it with `MagicMirror²`.
 4. Typo: Found 'Magic Mirror' in file `node_helper.js`: Replace it with `MagicMirror²`.
 5. Deprecated: Found 'require('request')' in file `node_helper.js`: Replace it with built-in fetch.
+6. Warning: No LICENSE file.
 
 ## [MMM-Udvaronc by balassy](https://github.com/balassy/MMM-Udvaronc)
 
@@ -5869,12 +6145,14 @@ Number of analyzed modules: 1056
 2. Typo: Found 'Magic Mirror' in file `MMM-UKTide.js`: Replace it with `MagicMirror²`.
 3. Typo: Found 'Magic Mirror' in file `node_helper.js`: Replace it with `MagicMirror²`.
 4. Deprecated: Found 'require('request')' in file `node_helper.js`: Replace it with built-in fetch.
+5. Warning: No LICENSE file.
 
 ## [MMM-UniFi-Voucher by bacherd](https://github.com/bacherd/MMM-UniFi-Voucher)
 
 1. Typo: Found 'Magic Mirror' in file `MMM-UniFi-Voucher.js`: Replace it with `MagicMirror²`.
 2. Deprecated: Found 'require("request")' in file `node_helper.js`: Replace it with built-in fetch.
 3. Typo: Found 'Magic Mirror' in file `package.json`: Replace it with `MagicMirror²`.
+4. Warning: No LICENSE file.
 
 ## [MMM-Unsplash by parnic](https://github.com/parnic/MMM-Unsplash)
 
@@ -5885,6 +6163,7 @@ Number of analyzed modules: 1056
 
 1. Issue: There is no `package.json`. We need this file to gather information about the module.
 2. Typo: Found 'Magic Mirror' in file `README.md`: Replace it with `MagicMirror²`.
+3. Warning: No LICENSE file.
 
 ## [MMM-uptimekuma by MikeBishop](https://github.com/MikeBishop/MMM-uptimekuma)
 
@@ -5922,6 +6201,7 @@ Number of analyzed modules: 1056
 2. Typo: Found 'Magic Mirror' in file `README.md`: Replace it with `MagicMirror²`.
 3. Typo: Found 'Magic Mirror' in file `node_helper.js`: Replace it with `MagicMirror²`.
 4. Typo: Found 'Magic Mirror' in file `package.json`: Replace it with `MagicMirror²`.
+5. Warning: No LICENSE file.
 
 ## [MMM-Vasttrafik-PublicTransport by bureus](https://github.com/bureus/MMM-Vasttrafik-PublicTransport)
 
@@ -5929,6 +6209,7 @@ Number of analyzed modules: 1056
 2. Typo: Found 'Magic Mirror' in file `README.md`: Replace it with `MagicMirror²`.
 3. Typo: Found 'Magic Mirror' in file `node_helper.js`: Replace it with `MagicMirror²`.
 4. Typo: Found 'Magic Mirror' in file `package.json`: Replace it with `MagicMirror²`.
+5. Warning: No LICENSE file.
 
 ## [MMM-vCard2Calendar by n-gao](https://github.com/n-gao/MMM-vCard2Calendar)
 
@@ -5936,6 +6217,7 @@ Number of analyzed modules: 1056
 2. Issue: No image found.
 3. Typo: Found 'Magic Mirror' in file `node_helper.js`: Replace it with `MagicMirror²`.
 4. Deprecated: Found 'require("request")' in file `node_helper.js`: Replace it with built-in fetch.
+5. Warning: No LICENSE file.
 
 ## [MMM-Videoplayer by Snille](https://github.com/Snille/MMM-Videoplayer)
 
@@ -5995,6 +6277,7 @@ Number of analyzed modules: 1056
 2. `package.json` issue: No repository field.
 3. Issue: No image found.
 4. Typo: Found 'Magic Mirror' in file `README.md`: Replace it with `MagicMirror²`.
+5. Warning: No LICENSE file.
 
 ## [MMM-Voice-Control by dr4ke616](https://github.com/dr4ke616/MMM-Voice-Control)
 
@@ -6008,6 +6291,7 @@ Number of analyzed modules: 1056
 2. Recommendation: Module name doesn't follow the recommended pattern (it doesn't start with `MMM-`). Consider renaming your module.
 3. Typo: Found 'Magic Mirror' in file `node_helper.js`: Replace it with `MagicMirror²`.
 4. Typo: Found 'Magic Mirror' in file `voicecontrol.js`: Replace it with `MagicMirror²`.
+5. Warning: No LICENSE file.
 
 ## [MMM-Volume by Anonym-tsk](https://github.com/Anonym-tsk/MMM-Volume)
 
@@ -6018,6 +6302,7 @@ Number of analyzed modules: 1056
 ## [MMM-volumio-playing by mrdis](https://github.com/mrdis/MMM-volumio-playing)
 
 1. Issue: There is no `package.json`. We need this file to gather information about the module.
+2. Warning: No LICENSE file.
 
 ## [MMM-Vrr by Klizzy](https://github.com/Klizzy/MMM-Vrr)
 
@@ -6093,6 +6378,7 @@ Number of analyzed modules: 1056
 ## [MMM-WaterReminder by thiagomides](https://github.com/thiagomides/MMM-WaterReminder)
 
 1. Issue: There is no `package.json`. We need this file to gather information about the module.
+2. Warning: No LICENSE file.
 
 ## [MMM-Wattvision by vincep5](https://github.com/vincep5/MMM-Wattvision)
 
@@ -6101,6 +6387,7 @@ Number of analyzed modules: 1056
 3. `package.json` issue: No license field.
 4. Typo: Found 'Magic Mirror' in file `node_helper.js`: Replace it with `MagicMirror²`.
 5. Deprecated: Found 'require('request')' in file `node_helper.js`: Replace it with built-in fetch.
+6. Warning: No LICENSE file.
 
 ## [MMM-WeasleyClock by BrianHepler](https://github.com/BrianHepler/MMM-WeasleyClock)
 
@@ -6149,6 +6436,7 @@ Number of analyzed modules: 1056
 1. Issue: There is no `package.json`. We need this file to gather information about the module.
 2. Typo: Found 'Magic Mirror' in file `MMM-WeatherDependentClothes.js`: Replace it with `MagicMirror²`.
 3. Recommendation: Found 'XMLHttpRequest' in file `MMM-WeatherDependentClothes.js`: Replace it with built-in fetch.
+4. Warning: No LICENSE file.
 
 ## [MMM-weatherforecast by jharttech](https://github.com/jharttech/MMM-weatherforecast)
 
@@ -6160,6 +6448,7 @@ Number of analyzed modules: 1056
 
 1. Issue: There is no `package.json`. We need this file to gather information about the module.
 2. Recommendation: Found 'XMLHttpRequest' in file `d3.min.js`: Replace it with built-in fetch.
+3. Warning: No LICENSE file.
 
 ## [MMM-WeatherHourlyByDay by dWoolridge](https://github.com/dWoolridge/MMM-WeatherHourlyByDay)
 
@@ -6235,6 +6524,7 @@ Number of analyzed modules: 1056
 ## [MMM-windy by santi4488](https://github.com/santi4488/MMM-windy)
 
 1. Issue: There is no `package.json`. We need this file to gather information about the module.
+2. Warning: No LICENSE file.
 
 ## [MMM-WordGenius by drventure](https://github.com/drventure/MMM-WordGenius)
 
@@ -6248,6 +6538,7 @@ Number of analyzed modules: 1056
 1. Issue: There is no `package.json`. We need this file to gather information about the module.
 2. Typo: Found 'Magic Mirror' in file `MMM-wordnik.js`: Replace it with `MagicMirror²`.
 3. Typo: Found 'Magic Mirror' in file `node_helper.js`: Replace it with `MagicMirror²`.
+4. Warning: No LICENSE file.
 
 ## [MMM-WordOfTheDay by jmwyds](https://github.com/jmwyds/MMM-WordOfTheDay)
 
@@ -6261,6 +6552,7 @@ Number of analyzed modules: 1056
 1. Issue: There is no `package.json`. We need this file to gather information about the module.
 2. Recommendation: Module name doesn't follow the recommended pattern (it doesn't start with `MMM-`). Consider renaming your module.
 3. Typo: Found 'Magic Mirror' in file `worldclock.js`: Replace it with `MagicMirror²`.
+4. Warning: No LICENSE file.
 
 ## [MMM-Worldclock by BKeyport](https://github.com/BKeyport/MMM-Worldclock/)
 
@@ -6275,6 +6567,7 @@ Number of analyzed modules: 1056
 2. Typo: Found 'Magic Mirror' in file `MMM-WorldTides.js`: Replace it with `MagicMirror²`.
 3. Recommendation: Found 'XMLHttpRequest' in file `MMM-WorldTides.js`: Replace it with built-in fetch.
 4. Typo: Found 'MagicMirror2' in file `package.json`: Replace it with `MagicMirror²`.
+5. Warning: No LICENSE file.
 
 ## [MMM-WS281X-Server by coderpussy](https://github.com/coderpussy/MMM-WS281X-Server)
 
@@ -6288,6 +6581,7 @@ Number of analyzed modules: 1056
 2. Recommendation: Module name doesn't follow the recommended pattern (it doesn't start with `MMM-`). Consider renaming your module.
 3. Typo: Found 'Magic Mirror' in file `wuforecast.js`: Replace it with `MagicMirror²`.
 4. Recommendation: Found 'XMLHttpRequest' in file `wuforecast.js`: Replace it with built-in fetch.
+5. Warning: No LICENSE file.
 
 ## [MMM-WunderGround by RedNax67](https://github.com/RedNax67/MMM-WunderGround)
 
@@ -6295,6 +6589,7 @@ Number of analyzed modules: 1056
 2. Typo: Found 'Magic Mirror' in file `MMM-WunderGround.js`: Replace it with `MagicMirror²`.
 3. Typo: Found 'Magic Mirror' in file `node_helper.js`: Replace it with `MagicMirror²`.
 4. Deprecated: Found 'require('request')' in file `node_helper.js`: Replace it with built-in fetch.
+5. Warning: No LICENSE file.
 
 ## [MMM-WWI by mykle1](https://github.com/mykle1/MMM-WWI)
 
@@ -6316,6 +6611,7 @@ Number of analyzed modules: 1056
 3. Typo: Found 'Magic Mirror' in file `MMM-xiaomi.js`: Replace it with `MagicMirror²`.
 4. Typo: Found 'Magic Mirror' in file `node_helper.js`: Replace it with `MagicMirror²`.
 5. Typo: Found 'Magic Mirror' in file `package.json`: Replace it with `MagicMirror²`.
+6. Warning: No LICENSE file.
 
 ## [MMM-XKCD by jupadin](https://github.com/jupadin/MMM-XKCD)
 
@@ -6334,16 +6630,19 @@ Number of analyzed modules: 1056
 ## [MMM-Yeelight by slametps](https://github.com/slametps/MMM-Yeelight)
 
 1. Typo: Found 'Magic Mirror' in file `node_helper.js`: Replace it with `MagicMirror²`.
+2. Warning: No LICENSE file.
 
 ## [MMM-yijv by jdonge](https://github.com/jdonge/MMM-yijv)
 
 1. Issue: There is no `package.json`. We need this file to gather information about the module.
 2. Deprecated: Found 'require('request')' in file `node_helper.js`: Replace it with built-in fetch.
+3. Warning: No LICENSE file.
 
 ## [MMM-YNAB by thesoftwarejedi](https://github.com/thesoftwarejedi/MMM-YNAB)
 
 1. `package.json` issue: No description
 2. `package.json` issue: No repository field.
+3. Warning: No LICENSE file.
 
 ## [MMM-YouLess by QNimbus](https://github.com/QNimbus/MMM-YouLess)
 
@@ -6364,6 +6663,7 @@ Number of analyzed modules: 1056
 ## [MMM-YouTube-API by C4TFLY](https://github.com/C4TFLY/MMM-YouTube-API)
 
 1. Issue: There is no `package.json`. We need this file to gather information about the module.
+2. Warning: No LICENSE file.
 
 ## [MMM-YouTube-Live-Stream by ngnijland](https://github.com/ngnijland/MMM-YouTube-Live-Stream)
 
@@ -6382,6 +6682,7 @@ Number of analyzed modules: 1056
 3. Typo: Found 'Magic Mirror' in file `README.md`: Replace it with `MagicMirror²`.
 4. Deprecated: Found 'require('request')' in file `node_helper.js`: Replace it with built-in fetch.
 5. Recommendation: Found 'XMLHttpRequest' in file `readTextFile.js`: Replace it with built-in fetch.
+6. Warning: No LICENSE file.
 
 ## [MMM-YrThen by fmandal](https://github.com/fmandal/MMM-YrThen)
 
@@ -6390,6 +6691,7 @@ Number of analyzed modules: 1056
 3. Typo: Found 'MagicMirror2' in file `README.md`: Replace it with `MagicMirror²`.
 4. Deprecated: Found 'require('request')' in file `node_helper.js`: Replace it with built-in fetch.
 5. Recommendation: Found 'XMLHttpRequest' in file `readTextFile.js`: Replace it with built-in fetch.
+6. Warning: No LICENSE file.
 
 ## [MMM-YT-SubCount by choffmann](https://github.com/choffmann/MMM-YT-SubCount)
 
@@ -6404,6 +6706,7 @@ Number of analyzed modules: 1056
 1. Issue: There is no `package.json`. We need this file to gather information about the module.
 2. Recommendation: Found 'XMLHttpRequest' in file `MMM-ZAPTEC.js`: Replace it with built-in fetch.
 3. Typo: Found 'Magic Mirror' in file `README.md`: Replace it with `MagicMirror²`.
+4. Warning: No LICENSE file.
 
 ## [MMM-Zmanim by shmulyeng](https://github.com/shmulyeng/MMM-Zmanim)
 

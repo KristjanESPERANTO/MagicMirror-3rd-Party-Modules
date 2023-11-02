@@ -131,7 +131,7 @@ def check_modules():
         module_directory_path = Path("./modules/" + module_directory)
         for file_path in sorted(module_directory_path.rglob("*")):
             if file_path.is_dir():
-                # .count == 1: If there is a node_modules directory, there are probably others in it with that name. There does not have to be an additional message for this.
+                # Explanation for .count("node_modules") == 1: If there is a node_modules directory, there are probably others in it with that name. There does not have to be an additional message for this.
                 if file_path.name == "node_modules" and str(file_path).count("node_modules") == 1:
                     module["issues"].append(
                         "Issue: Found directory `node_modules`. This shouldn't be uploaded. Add `node_modules/`to `.gitignore`.")
@@ -144,6 +144,9 @@ def check_modules():
                 #if ".yml" in str(file_path).lower():
                 #    module["issues"].append(
                 #        f"`Recommendation: {file_path.name}`: Change file extention from `.yml` to `.yaml`: <https://yaml.org/faq.html>.")
+
+        if "LICENSE" not in str(sorted(module_directory_path.rglob("*"))):
+            module["issues"].append("Warning: No LICENSE file.")
 
         if len(module["issues"]) > 0:
             url = subprocess.run(f"cd ./modules/{module_directory} && git remote get-url origin && cd ..",
