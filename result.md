@@ -1,8 +1,8 @@
 # Result of the module analysis
 
-Timestamp: 2023-11-02 17:08:57
+Timestamp: 2023-11-03 00:28:00
 
-Number of analyzed modules: 1056
+Number of analyzed modules: 1057
 
 ## [MMM-01ZM by rubinho101](https://github.com/rubinho101/MMM-01ZM)
 
@@ -615,7 +615,7 @@ Number of analyzed modules: 1056
 
 1. Issue: No image found.
 
-## [calendar_monthly by KirAsh4](https://github.com/KirAsh4/calendar_monthly/)
+## [calendar_monthly by KirAsh4](https://github.com/KirAsh4/calendar_monthly)
 
 1. Issue: There is no `package.json`. We need this file to gather information about the module.
 2. Recommendation: Module name doesn't follow the recommended pattern (it doesn't start with `MMM-`). Consider renaming your module.
@@ -3009,27 +3009,27 @@ Number of analyzed modules: 1056
 4. Deprecated: Found 'require('request')' in file `node_helper.js`: Replace it with built-in fetch.
 5. Typo: Found 'Magic Mirror' in file `ping.js`: Replace it with `MagicMirror²`.
 
-## [MagicMirror-QuoteCatalog by salpar](https://github.com/salpar/MagicMirror-QuoteCatalog/)
+## [MagicMirror-QuoteCatalog by salpar](https://github.com/salpar/MagicMirror-QuoteCatalog)
 
 1. Recommendation: Module name doesn't follow the recommended pattern (it doesn't start with `MMM-`). Consider renaming your module.
 
 ## [MMM-MagicMover by Lavve](https://github.com/Lavve/MMM-MagicMover)
 
 1. Issue: There is no `package.json`. We need this file to gather information about the module.
-2. Typo: Found 'Magic Mirror' in file `MMM-MagicMover.js`: Replace it with `MagicMirror²`.
-3. Warning: No LICENSE file.
 
-## [MagicPlugins by nhubbard]()
+## [MagicPlugins by nhubbard](https://github.com/nhubbard/MagicPlugins/tree/master/snow)
 
-1. Issue: There is no `package.json`. We need this file to gather information about the module.
-2. Recommendation: Module name doesn't follow the recommended pattern (it doesn't start with `MMM-`). Consider renaming your module.
-3. Warning: No LICENSE file.
+1. Error: It appears that the repository could not be cloned. Check the URL.
 
 ## [MMM-MagicSuperHero by Lavve](https://github.com/Lavve/MMM-MagicSuperHero)
 
 1. `package.json` issue: No repository field.
 2. Issue: No image found.
 3. Deprecated: Found 'require('request')' in file `node_helper.js`: Replace it with built-in fetch.
+
+## [MMM-MailMessage by Unclearogre](https://github.com/Unclearogre/MMM-MailMessage)
+
+1. Error: It appears that the repository could not be cloned. Check the URL.
 
 ## [MMM-MarineWeather by grenagit](https://github.com/grenagit/MMM-MarineWeather)
 
@@ -3141,13 +3141,13 @@ Number of analyzed modules: 1056
 3. Typo: Found 'Magic Mirror' in file `node_helper.js`: Replace it with `MagicMirror²`.
 4. Deprecated: Found 'require('request')' in file `node_helper.js`: Replace it with built-in fetch.
 
-## [MMM-MicrosoftToDo by thobach](https://github.com/thobach/MMM-MicrosoftToDo/)
+## [MMM-MicrosoftToDo by thobach](https://github.com/thobach/MMM-MicrosoftToDo)
 
 1. Recommendation: Found 'uses: actions/checkout@v3' in file `codeql.yml`: Replace it with v4.
 2. Typo: Found 'Magic Mirror' in file `README.MD`: Replace it with `MagicMirror²`.
 3. Recommendation: Found 'node-fetch' in file `node_helper.js`: Replace it with built-in fetch.
 
-## [MMM-MieleAtHome by SAR71](https://github.com/SAR71/MMM-MieleAtHome/)
+## [MMM-MieleAtHome by SAR71](https://github.com/SAR71/MMM-MieleAtHome)
 
 1. Issue: There is no `package.json`. We need this file to gather information about the module.
 2. Deprecated: Found 'require("request")' in file `mieleathome.js`: Replace it with built-in fetch.
@@ -3399,7 +3399,7 @@ Number of analyzed modules: 1056
 
 1. Issue: There is no `package.json`. We need this file to gather information about the module.
 
-## [MMM-Modulebar by Snille](https://github.com/Snille/MMM-Modulebar/)
+## [MMM-Modulebar by Snille](https://github.com/Snille/MMM-Modulebar)
 
 1. Issue: There is no `package.json`. We need this file to gather information about the module.
 2. Typo: Found 'Magic Mirror' in file `MMM-Modulebar.css`: Replace it with `MagicMirror²`.
@@ -3469,7 +3469,7 @@ Number of analyzed modules: 1056
 
 1. Issue: No image found.
 
-## [MMM-MotionDisplay by pjestico](https://github.com/pjestico/MMM-MotionDisplay/)
+## [MMM-MotionDisplay by pjestico](https://github.com/pjestico/MMM-MotionDisplay)
 
 1. `package.json` issue: No description
 2. `package.json` issue: No repository field.
@@ -3935,7 +3935,7 @@ Number of analyzed modules: 1056
 1. Issue: There is no `package.json`. We need this file to gather information about the module.
 2. Deprecated: Found 'require('request')' in file `node_helper.js`: Replace it with built-in fetch.
 
-## [next-train-transilien by trizome](https://github.com/trizome/next-train-transilien/)
+## [next-train-transilien by trizome](https://github.com/trizome/next-train-transilien)
 
 1. `package.json` issue: No repository field.
 2. Recommendation: Module name doesn't follow the recommended pattern (it doesn't start with `MMM-`). Consider renaming your module.
@@ -4134,7 +4134,7 @@ Number of analyzed modules: 1056
 
 1. Issue: There is no `package.json`. We need this file to gather information about the module.
 
-## [octomirror-module by shbatm](https://github.com/shbatm/octomirror-module/)
+## [octomirror-module by shbatm](https://github.com/shbatm/octomirror-module)
 
 1. Recommendation: Module name doesn't follow the recommended pattern (it doesn't start with `MMM-`). Consider renaming your module.
 2. Typo: Found 'Magic Mirror' in file `README.md`: Replace it with `MagicMirror²`.
@@ -4870,7 +4870,7 @@ Number of analyzed modules: 1056
 1. Typo: Found 'Magic Mirror' in file `MMM-RainForecast-FR.js`: Replace it with `MagicMirror²`.
 2. Typo: Found 'Magic Mirror' in file `node_helper.js`: Replace it with `MagicMirror²`.
 
-## [random_quotes by KirAsh4](https://github.com/KirAsh4/random_quotes/)
+## [random_quotes by KirAsh4](https://github.com/KirAsh4/random_quotes)
 
 1. Issue: There is no `package.json`. We need this file to gather information about the module.
 2. Recommendation: Module name doesn't follow the recommended pattern (it doesn't start with `MMM-`). Consider renaming your module.
@@ -4999,7 +4999,7 @@ Number of analyzed modules: 1056
 1. Typo: Found 'Magic Mirror' in file `node_helper.js`: Replace it with `MagicMirror²`.
 2. Typo: Found 'MagicMirror2' in file `package.json`: Replace it with `MagicMirror²`.
 
-## [MMM-RepRapFirmware by arirobinson](https://github.com/arirobinson/MMM-RepRapFirmware/)
+## [MMM-RepRapFirmware by arirobinson](https://github.com/arirobinson/MMM-RepRapFirmware)
 
 1. Issue: There is no `package.json`. We need this file to gather information about the module.
 2. Recommendation: Found 'XMLHttpRequest' in file `MMM-RepRapFirmware.js`: Replace it with built-in fetch.
@@ -6554,7 +6554,7 @@ Number of analyzed modules: 1056
 3. Typo: Found 'Magic Mirror' in file `worldclock.js`: Replace it with `MagicMirror²`.
 4. Warning: No LICENSE file.
 
-## [MMM-Worldclock by BKeyport](https://github.com/BKeyport/MMM-Worldclock/)
+## [MMM-Worldclock by BKeyport](https://github.com/BKeyport/MMM-Worldclock)
 
 1. Issue: An error occurred while getting information from 'package.json': Error: Invalid version: "1.5"
 2. Typo: Found 'Magic Mirror' in file `MMM-Worldclock.js`: Replace it with `MagicMirror²`.

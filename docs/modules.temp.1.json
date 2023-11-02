@@ -4329,6 +4329,15 @@
     "issues": []
   },
   {
+    "name": "MMM-MailMessage",
+    "url": "https://github.com/Unclearogre/MMM-MailMessage",
+    "id": "Unclearogre/MMM-MailMessage",
+    "maintainer": "Unclearogre",
+    "maintainerURL": "https://github.com/Unclearogre",
+    "description": "Send messages to be displayed on your MagicMirror via e-mail.",
+    "issues": []
+  },
+  {
     "name": "MMM-MarineWeather",
     "url": "https://github.com/grenagit/MMM-MarineWeather",
     "id": "grenagit/MMM-MarineWeather",

@@ -35,7 +35,7 @@ Here are some test results:
 
 ## Skripts
 
-You can run all scripts in the right order by `npm run all`. Note that running the second script requires a lot of time and memory.
+You can run all scripts in the right order by `npm run all`. Note that running the second script requires a lot of time (> 10 min) and memory (> 2 GB).
 
 ### create_module_list.js
 
@@ -45,7 +45,7 @@ This script parses the list of modules from the wiki and writes it to a json fil
 
 This script reads the module list (created by the script before) and clones all modules.
 
-Please note that this script takes a long time to download all modules and also takes up a lot of space on your hard drive (> 2GB).
+Please note that this script takes a long time to download all modules and also takes up a lot of space on your hard drive (> 2 GB).
 
 ### expand_module_list_with_repo_data.js
 

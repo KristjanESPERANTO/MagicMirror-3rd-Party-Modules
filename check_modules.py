@@ -148,12 +148,11 @@ def check_modules():
         if "LICENSE" not in str(sorted(module_directory_path.rglob("*"))):
             module["issues"].append("Warning: No LICENSE file.")
 
-        if len(module["issues"]) > 0:
-            url = subprocess.run(f"cd ./modules/{module_directory} && git remote get-url origin && cd ..",
-                                 stdout=subprocess.PIPE, shell=True, check=False)
-            url_string = url.stdout.decode().rstrip()
+        if not Path(f"./modules/{module_directory}").is_dir():
+            module["issues"] = ["Error: It appears that the repository could not be cloned. Check the URL."]
 
-            output.write(f"\n## [{module['name']} by {module['maintainer']}]({url_string})\n\n")
+        if len(module["issues"]) > 0:
+            output.write(f"\n## [{module['name']} by {module['maintainer']}]({module['url']})\n\n")
             for idx, issue in enumerate(module["issues"]):
                 output.write(f"{idx+1}. {issue}\n")
 

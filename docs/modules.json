@@ -3984,7 +3984,7 @@
       "network"
     ],
     "license": "MIT",
-    "last_commit": "2023-10-01"
+    "last_commit": "2023-11-02"
   },
   {
     "name": "MMM-Face-Recognition-SMAI",
@@ -7971,11 +7971,9 @@
     "maintainerURL": "",
     "description": "Prevent screen burn-in on your MagicMirror\u00b2",
     "issues": [
-      "Issue: There is no `package.json`. We need this file to gather information about the module.",
-      "Typo: Found 'Magic Mirror' in file `MMM-MagicMover.js`: Replace it with `MagicMirror\u00b2`.",
-      "Warning: No LICENSE file."
+      "Issue: There is no `package.json`. We need this file to gather information about the module."
     ],
-    "last_commit": "2022-03-03"
+    "last_commit": "2023-11-02"
   },
   {
     "name": "MagicPlugins",
@@ -7985,9 +7983,7 @@
     "maintainerURL": "",
     "description": "Get your festive on. Put snow in the background for winter or anti burn-in purposes... your family won't know the difference.",
     "issues": [
-      "Issue: There is no `package.json`. We need this file to gather information about the module.",
-      "Recommendation: Module name doesn't follow the recommended pattern (it doesn't start with `MMM-`). Consider renaming your module.",
-      "Warning: No LICENSE file."
+      "Error: It appears that the repository could not be cloned. Check the URL."
     ],
     "last_commit": ""
   },
@@ -8005,6 +8001,18 @@
     ],
     "license": "ISC",
     "last_commit": "2022-02-18"
+  },
+  {
+    "name": "MMM-MailMessage",
+    "url": "https://github.com/Unclearogre/MMM-MailMessage",
+    "id": "Unclearogre/MMM-MailMessage",
+    "maintainer": "Unclearogre",
+    "maintainerURL": "https://github.com/Unclearogre",
+    "description": "Send messages to be displayed on your MagicMirror via e-mail.",
+    "issues": [
+      "Error: It appears that the repository could not be cloned. Check the URL."
+    ],
+    "last_commit": ""
   },
   {
     "name": "MMM-MarineWeather",
