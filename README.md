@@ -21,10 +21,10 @@ The results of the tests you can see in the [result.md](result.md).
 
 Here are some test results:
 
-- _- I - No image found._ - No image means no image on the web page.
-- _- W - package.json issue: No license field._ - No license field means no image on the web page.
-- _- W - package.json issue: license should be a valid SPDX license expression_ - No license field means no image on the web page.
-- _- W - There is no 'package.json'. We need this file to gather information about the module._ - Incorrectly spelled license name means no image on the web page.
+- _Issue: No image found._ - No image means no image on the web page.
+- _Issue: package.json issue: No license field._ - No license field means no image on the web page.
+- _Issue: package.json issue: license should be a valid SPDX license expression_ - No license field means no image on the web page.
+- _Issue: There is no `package.json`. We need this file to gather information about the module._ - Incorrectly spelled license name means no image on the web page.
 - _Issue: Found directory `node_modules`. This shouldn't be uploaded. Add `node_modules/`to `.gitignore`._
 - _Deprecated: Found 'omxplayer' in file `node_helper.js`: Try to replace it with `vlc`._
 - _Recommendation: Found 'node-fetch' in file `node_helper.js`: Replace it with built-in fetch._
@@ -33,7 +33,9 @@ Here are some test results:
 - _Recommendation: Found 'uses: actions/checkout@v3' in file `nodejs.yml`: Replace it with v4._
 - _Deprecated: Found 'node-version: [16' in file `nodejs.yml`: Update to current version._
 
-## Scripts
+## Skripts
+
+You can run all scripts in the right order by `npm run all`. Note that running the second script requires a lot of time and memory.
 
 ### create_module_list.js
 
@@ -42,6 +44,8 @@ This script parses the list of modules from the wiki and writes it to a json fil
 ### get_modules.py
 
 This script reads the module list (created by the script before) and clones all modules.
+
+Please note that this script takes a long time to download all modules and also takes up a lot of space on your hard drive (> 2GB).
 
 ### expand_module_list_with_repo_data.js
 
@@ -62,6 +66,7 @@ This script goes through all cloned modules and performs various checks. The res
   - Make it responsive.
   - add sorting options alphabetically + last commit + GitHub stars + issues
   - Parse markdown for description? In Browser or in script?
+  - Add an issue div to each card which have issues: counter + link to result.md.
 - Write instructions: “How do I get my module presented perfectly?”
 - handle/mark deprecated/unmaintained modules
 - get rid of of the cloned repo files if a module is removed

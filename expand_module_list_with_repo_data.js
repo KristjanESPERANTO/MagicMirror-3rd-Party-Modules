@@ -51,7 +51,7 @@ async function findAndResizeImage(moduleName, moduleMaintainer) {
 
     await sharp(sourcePath).resize(300).toFile(targetPath);
   } else {
-    issues.push("- I - No image found.");
+    issues.push("Issue: No image found.");
   }
   return { targetImageName, issues };
 }
@@ -68,7 +68,7 @@ async function addInformationFromPackageJson(moduleList) {
       // Normalize package.json
       const warnFn = (msg) => {
         if (!msg.includes("No README data")) {
-          module.issues.push(`- W - package.json issue: ${msg}`);
+          module.issues.push(`\`package.json\` issue: ${msg}`);
         }
       };
       normalizeData(moduleData, warnFn);
@@ -124,18 +124,18 @@ async function addInformationFromPackageJson(moduleList) {
           }
         } else {
           module.issues.push(
-            `- W - No compatible or wrong license field in 'package.json'. Without that, we can't use an image.`
+            `Issue: No compatible or wrong license field in 'package.json'. Without that, we can't use an image.`
           );
         }
       }
     } catch (error) {
       if (error.code === "ENOENT") {
         module.issues.push(
-          `- W - There is no 'package.json'. We need this file to gather information about the module.`
+          "Issue: There is no `package.json`. We need this file to gather information about the module."
         );
       } else {
         module.issues.push(
-          `- W - An error occurred while getting information from 'package.json': ${error}`
+          `Issue: An error occurred while getting information from 'package.json': ${error}`
         );
       }
     }

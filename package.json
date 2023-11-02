@@ -41,6 +41,7 @@
     "stylelint-prettier": "^4.0.2"
   },
   "scripts": {
+    "all": "node create_module_list.js && python3 get_modules.py && node expand_module_list_with_repo_data.js && python3 check_modules.py",
     "lint": "eslint . && stylelint **/*.css && prettier --check .",
     "lint:fix": "eslint --fix . && stylelint --fix **/docs/*.css && prettier --write .",
     "prepare": "husky install",

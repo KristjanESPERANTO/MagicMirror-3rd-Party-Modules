@@ -1697,7 +1697,7 @@
     "id": "wouter-heerwegh/MMM-DeLijn",
     "maintainer": "wouter-heerwegh",
     "maintainerURL": "https://github.com/wouter-heerwegh",
-    "description": "Retrieves live timings of busses for a specific bus stop",
+    "description": "Retrieves live timings of busses for a specific bus stop.",
     "issues": []
   },
   {
@@ -1805,16 +1805,7 @@
     "id": "drventure/MMM-Dorba-Trails",
     "maintainer": "drventure",
     "maintainerURL": "https://github.com/drventure",
-    "description": "Display status of mountain bike trails via the trailforks.com website",
-    "issues": []
-  },
-  {
-    "name": "MMM-Dorba-Trails",
-    "url": "https://github.com/drventure/MMM-Dorba-Trails",
-    "id": "drventure/MMM-Dorba-Trails",
-    "maintainer": "drventure",
-    "maintainerURL": "https://github.com/drventure",
-    "description": "Display status of mountain bike trails via the trailforks.com website",
+    "description": "Display status of mountain bike trails via the trailforks.com website.",
     "issues": []
   },
   {
@@ -1850,7 +1841,7 @@
     "id": "galaktor/MMM-DublinRTPI",
     "maintainer": "galaktor",
     "maintainerURL": "https://github.com/galaktor",
-    "description": "Customisable real-time stop data for Dublin Bus, Luas and IrishRail stops",
+    "description": "Customisable real-time stop data for Dublin Bus, Luas and IrishRail stops.",
     "issues": []
   },
   {
@@ -1958,7 +1949,7 @@
     "id": "rehne/MMM-Ecosia-Tree-Counter",
     "maintainer": "rehne",
     "maintainerURL": "",
-    "description": "Displays the tree counter from [Ecosia](https://ecosia.org)",
+    "description": "Displays the tree counter from [Ecosia](https://ecosia.org).",
     "issues": []
   },
   {
@@ -2111,7 +2102,7 @@
     "id": "Helpi90/MMM-Ethos",
     "maintainer": "Helpi90",
     "maintainerURL": "",
-    "description": "Displays the rig infos from [Ethos API](http://ethosdistro.com)",
+    "description": "Displays the rig infos from [Ethos API](http://ethosdistro.com).",
     "issues": []
   },
   {
@@ -2399,7 +2390,7 @@
     "id": "joschi27/MMM-Flatastic",
     "maintainer": "joschi27",
     "maintainerURL": "",
-    "description": "Displays information from the [flatastic](https://www.flatastic-app.com) commune management app",
+    "description": "Displays information from the [flatastic](https://www.flatastic-app.com) commune management app.",
     "issues": []
   },
   {
