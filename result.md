@@ -1,6 +1,6 @@
 # Result of the module analysis
 
-Timestamp: 2023-11-04 01:49:31
+Timestamp: 2023-11-04 02:49:23
 
 Number of analyzed modules: 1058
 
@@ -4280,11 +4280,6 @@ Number of analyzed modules: 1058
 2. Typo: Found 'Magic Mirror' in file `README.md`: Replace it with `MagicMirror²`.
 3. Deprecated: Found 'require('request')' in file `node_helper.js`: Replace it with built-in fetch.
 4. Warning: No LICENSE file.
-
-## [MMM-OneCallWeather by KristjanESPERANTO](https://github.com/KristjanESPERANTO/MMM-OneCallWeather)
-
-1. Recommendation: Found 'axios' in file `node_helper.js`: Replace it with built-in fetch.
-2. Recommendation: Found 'axios' in file `package.json`: Replace it with built-in fetch.
 
 ## [MMM-OneTouchReveal by Canonip](https://github.com/Canonip/MMM-OneTouchReveal)
 

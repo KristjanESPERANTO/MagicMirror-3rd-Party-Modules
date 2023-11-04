@@ -11145,16 +11145,13 @@
     "maintainer": "KristjanESPERANTO",
     "maintainerURL": "",
     "description": "Display current and forecast weather based on the Openweathermap OneCall API data with alternative formatting.",
-    "issues": [
-      "Recommendation: Found 'axios' in file `node_helper.js`: Replace it with built-in fetch.",
-      "Recommendation: Found 'axios' in file `package.json`: Replace it with built-in fetch."
-    ],
+    "issues": [],
     "tags": [
       "weather"
     ],
     "license": "MIT",
     "image": "OneCallWeather-Screenshot.jpg",
-    "last_commit": "2023-03-14"
+    "last_commit": "2023-11-04"
   },
   {
     "name": "MMM-OneTouchReveal",
