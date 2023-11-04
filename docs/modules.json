@@ -1265,13 +1265,14 @@
     "id": "mykle1/MMM-BMW-DS",
     "maintainer": "mykle1",
     "maintainerURL": "",
-    "description": "Weather designed for bottom bar position, now using the DarkSky API <strong>\u00b0DarkSky API no longer works since 2023-Mar-31</strong>",
+    "description": "Weather designed for bottom bar position.",
     "issues": [
       "Issue: There is no `package.json`. We need this file to gather information about the module.",
       "Typo: Found 'Magic Mirror' in file `MMM-BMW-DS.js`: Replace it with `MagicMirror\u00b2`.",
       "Typo: Found 'Magic Mirror' in file `node_helper.js`: Replace it with `MagicMirror\u00b2`.",
       "Deprecated: Found 'require('request')' in file `node_helper.js`: Replace it with built-in fetch."
     ],
+    "outdated": "Deprecated. DarkSky API no longer works since 2023-03-31.",
     "last_commit": "2020-05-28"
   },
   {
@@ -2482,6 +2483,7 @@
       "Typo: Found 'Magic Mirror' in file `node_helper.js`: Replace it with `MagicMirror\u00b2`.",
       "Deprecated: Found 'require(\"request\")' in file `node_helper.js`: Replace it with built-in fetch."
     ],
+    "outdated": "Obsolete, no new data since 2022-04-27.",
     "last_commit": "2021-05-17"
   },
   {
@@ -2498,6 +2500,7 @@
       "Typo: Found 'Magic Mirror' in file `node_helper.js`: Replace it with `MagicMirror\u00b2`.",
       "Deprecated: Found 'require('request')' in file `node_helper.js`: Replace it with built-in fetch."
     ],
+    "outdated": "Obsolete, no new data since 2022-05-20.",
     "last_commit": "2021-03-01"
   },
   {
@@ -2935,11 +2938,12 @@
     "id": "jacquesCedric/MMM-darksky-hourly",
     "maintainer": "jacquesCedric",
     "maintainerURL": "",
-    "description": "Hourly weather and precipitation pulled from DarkSky <strong>\u00b0DarkSky API no longer works since 2023-Mar-31</strong>",
+    "description": "Hourly weather and precipitation pulled from DarkSky.",
     "issues": [
       "Issue: There is no `package.json`. We need this file to gather information about the module.",
       "Warning: No LICENSE file."
     ],
+    "outdated": "Deprecated. DarkSky API no longer works since 2023-03-31.",
     "last_commit": "2019-04-21"
   },
   {
@@ -2948,12 +2952,13 @@
     "id": "thobach/MMM-DarkSky24Hours",
     "maintainer": "thobach",
     "maintainerURL": "",
-    "description": "shows weather information for the next 24 hours using the Dark Sky API. The idea of this module is to give you confidence on what to wear when you go outside / to work, or what transport mode you should take (in case you are a good weather-only biker). The hourly forecast gives you a good decision basis based on the weather condition at the times you go to work and return home. <strong>\u00b0DarkSky API no longer works since 2023-Mar-31</strong>",
+    "description": "Shows weather information for the next 24 hours using the Dark Sky API. The idea of this module is to give you confidence on what to wear when you go outside / to work, or what transport mode you should take (in case you are a good weather-only biker). The hourly forecast gives you a good decision basis based on the weather condition at the times you go to work and return home.",
     "issues": [
       "Issue: There is no `package.json`. We need this file to gather information about the module.",
       "Typo: Found 'Magic Mirror' in file `weather.html`: Replace it with `MagicMirror\u00b2`.",
       "Warning: No LICENSE file."
     ],
+    "outdated": "Deprecated. DarkSky API no longer works since 2023-03-31.",
     "last_commit": "2020-12-22"
   },
   {
@@ -2962,7 +2967,7 @@
     "id": "jclarke0000/MMM-DarkSkyForecast",
     "maintainer": "jclarke0000",
     "maintainerURL": "",
-    "description": "A weather module that displays current, hourly and daily forecast information using data from the Dark Sky API. <strong>\u00b0DarkSky API no longer works since 2023-Mar-31</strong>",
+    "description": "A weather module that displays current, hourly and daily forecast information using data from the Dark Sky API.",
     "issues": [
       "Typo: Found 'Magic Mirror' in file `MMM-DarkSkyForecast.js`: Replace it with `MagicMirror\u00b2`.",
       "Typo: Found 'Magic Mirror' in file `README.md`: Replace it with `MagicMirror\u00b2`.",
@@ -2970,6 +2975,7 @@
       "Typo: Found 'Magic Mirror' in file `package.json`: Replace it with `MagicMirror\u00b2`.",
       "Warning: No LICENSE file."
     ],
+    "outdated": "Deprecated. DarkSky API no longer works since 2023-03-31.",
     "license": "MIT",
     "image": "icons-iconsets.jpg",
     "last_commit": "2018-12-14"
@@ -2980,7 +2986,7 @@
     "id": "vincep5/MMM-DarkSkyRadar",
     "maintainer": "vincep5",
     "maintainerURL": "",
-    "description": "Display a radar map from DarkSky <strong>\u00b0DarkSky API no longer works since 2023-Mar-31</strong>",
+    "description": "Display a radar map from DarkSky.",
     "issues": [
       "`package.json` issue: No description",
       "`package.json` issue: No repository field.",
@@ -2988,6 +2994,7 @@
       "Typo: Found 'Magic Mirror' in file `MMM-DarkSkyRadar.js`: Replace it with `MagicMirror\u00b2`.",
       "Warning: No LICENSE file."
     ],
+    "outdated": "Deprecated. DarkSky API no longer works since 2023-03-31.",
     "last_commit": "2022-01-05"
   },
   {
@@ -3186,11 +3193,12 @@
     "id": "mboskamp/MMM-Discogs",
     "maintainer": "mboskamp",
     "maintainerURL": "",
-    "description": "A module to display a random release from your <a target=\"_blank\" href=\"https://www.discogs.com\">discogs.com</a> music collection. \u26a0\ufe0f <strong>Module not maintained (GitHub repo has been archived)</strong>",
+    "description": "A module to display a random release from your <a target=\"_blank\" href=\"https://www.discogs.com\">discogs.com</a> music collection.",
     "issues": [
       "Typo: Found 'Magic Mirror' in file `README.md`: Replace it with `MagicMirror\u00b2`.",
       "Warning: No LICENSE file."
     ],
+    "outdated": "Abandoned. Repo has been archived at 2022-08-26.",
     "tags": [
       "discogs"
     ],
@@ -3792,7 +3800,7 @@
     "id": "Arve/MMM-Entur-tavle",
     "maintainer": "Arve",
     "maintainerURL": "",
-    "description": "Display public transport information/departure boards for any public transport in Norway",
+    "description": "Display public transport information/departure boards for any public transport in Norway.",
     "issues": [
       "Issue: There is no `package.json`. We need this file to gather information about the module.",
       "Recommendation: Found 'node-fetch' in file `node_helper.js`: Replace it with built-in fetch."
@@ -6410,7 +6418,7 @@
     "id": "desertblade/iFrame",
     "maintainer": "desertblade",
     "maintainerURL": "",
-    "description": "A simple way to add an iFrame of any web content. Abandoned.",
+    "description": "A simple way to add an iFrame of any web content.",
     "issues": [
       "Issue: No image found.",
       "Recommendation: Module name doesn't follow the recommended pattern (it doesn't start with `MMM-`). Consider renaming your module.",
@@ -6418,6 +6426,7 @@
       "Typo: Found 'Magic Mirror' in file `package.json`: Replace it with `MagicMirror\u00b2`.",
       "Warning: No LICENSE file."
     ],
+    "outdated": "Abandoned. Repo has been archived at 2019-03-08.",
     "tags": [
       "iframe"
     ],
@@ -7076,11 +7085,12 @@
     "id": "amcolash/MMM-json-feed",
     "maintainer": "amcolash",
     "maintainerURL": "",
-    "description": "(Deprecated) Display data from any JSON source.",
+    "description": "Display data from any JSON source.",
     "issues": [
       "Issue: There is no `package.json`. We need this file to gather information about the module.",
       "Deprecated: Found 'require(\"request\")' in file `node_helper.js`: Replace it with built-in fetch."
     ],
+    "outdated": "Deprecated. Repo has been archived at 2020-08-03.",
     "last_commit": "2020-04-07"
   },
   {
@@ -8071,9 +8081,17 @@
     "maintainerURL": "https://github.com/Unclearogre",
     "description": "Send messages to be displayed on your MagicMirror via e-mail.",
     "issues": [
-      "Error: It appears that the repository could not be cloned. Check the URL."
+      "`package.json` issue: No repository field.",
+      "`package.json` issue: No license field.",
+      "Warning: No LICENSE file."
     ],
-    "last_commit": ""
+    "tags": [
+      "email",
+      "messages",
+      "announcements",
+      "mirror announcements"
+    ],
+    "last_commit": "2023-10-31"
   },
   {
     "name": "MMM-MarineWeather",
@@ -10359,7 +10377,7 @@
     "id": "spitzlbergerj/MMM-NetworkScanner",
     "maintainer": "spitzlbergerj",
     "maintainerURL": "https://github.com/spitzlbergerj",
-    "description": "Display the status of devices on the network based on their MAC address with nice columnview",
+    "description": "Display the status of devices on the network based on their MAC address with nice columnview.",
     "issues": [
       "Typo: Found 'Magic Mirror' in file `MMM-NetworkScanner.js`: Replace it with `MagicMirror\u00b2`.",
       "Typo: Found 'Magic Mirror' in file `node_helper.js`: Replace it with `MagicMirror\u00b2`."
@@ -11225,7 +11243,7 @@
     "id": "Fabrizz/MMM-OnSpotify",
     "maintainer": "Fabrizz",
     "maintainerURL": "https://github.com/Fabrizz",
-    "description": "Highly customizable module that displays what you are listening to in Spotify. Compatible with MMM-LiveLyrics and DynamicTheming",
+    "description": "Highly customizable module that displays what you are listening to in Spotify. Compatible with MMM-LiveLyrics and DynamicTheming.",
     "issues": [
       "Typo: Found 'Magic Mirror' in file `README.md`: Replace it with `MagicMirror\u00b2`.",
       "Deprecated: Found 'require(\"request\")' in file `authorization.js`: Replace it with built-in fetch.",
@@ -11982,11 +12000,12 @@
     "id": "mboskamp/MMM-PIR",
     "maintainer": "mboskamp",
     "maintainerURL": "",
-    "description": "Another PIR monitoring module that allows you to run custom scripts and integrates MMM-TelegramBot commands. \u26a0\ufe0f <strong>Module not maintained (GitHub repo has been archived)</strong>",
+    "description": "Another PIR monitoring module that allows you to run custom scripts and integrates MMM-TelegramBot commands.",
     "issues": [
       "`package.json` issue: No description",
       "Warning: No LICENSE file."
     ],
+    "outdated": "Abandoned. Repo has been archived at 2022-08-26.",
     "license": "ISC",
     "image": "screenshot.jpg",
     "last_commit": "2020-07-15"
@@ -12222,11 +12241,12 @@
     "id": "mykle1/MMM-PLOW",
     "maintainer": "mykle1",
     "maintainerURL": "",
-    "description": "Pig Latin On Weather! Multiple views in a single module. Driven by Darksky API. <strong>\u00b0DarkSky API no longer works since 2023-Mar-31</strong>",
+    "description": "Pig Latin On Weather! Multiple views in a single module. Driven by Darksky API.",
     "issues": [
       "Issue: There is no `package.json`. We need this file to gather information about the module.",
       "Typo: Found 'Magic Mirror' in file `MMM-PLOW.js`: Replace it with `MagicMirror\u00b2`."
     ],
+    "outdated": "Deprecated. DarkSky API no longer works since 2023-03-31.",
     "last_commit": "2020-01-30"
   },
   {
@@ -12703,13 +12723,14 @@
     "id": "mboskamp/MMM-Pull",
     "maintainer": "mboskamp",
     "maintainerURL": "",
-    "description": "This module enables the user to pull updates for modules and/or MagicMirror\u00b2 itself via Telegram commands. \u26a0\ufe0f <strong>Module not maintained (GitHub repo has been archived)</strong>",
+    "description": "This module enables the user to pull updates for modules and/or MagicMirror\u00b2 itself via Telegram commands.",
     "issues": [
       "`package.json` issue: No description",
       "`package.json` issue: No repository field.",
       "Issue: No image found.",
       "Warning: No LICENSE file."
     ],
+    "outdated": "Abandoned. Repo has been archived at 2022-08-26.",
     "license": "ISC",
     "last_commit": "2018-04-18"
   },
@@ -13410,12 +13431,13 @@
     "id": "fhinder/MMM-RKI-Covid19",
     "maintainer": "fhinder",
     "maintainerURL": "",
-    "description": "RKI-Covid19 data for German Counties",
+    "description": "RKI-Covid19 data for German Counties.",
     "issues": [
       "Typo: Found 'Magic Mirror' in file `MMM-RKI-Covid19.js`: Replace it with `MagicMirror\u00b2`.",
       "Typo: Found 'Magic Mirror' in file `node_helper.js`: Replace it with `MagicMirror\u00b2`.",
       "Deprecated: Found 'require(\"native-request\")' in file `node_helper.js`: Replace it with built-in fetch."
     ],
+    "outdated": "Obsolete, no new data.",
     "tags": [
       "rki"
     ],
@@ -13671,12 +13693,13 @@
     "id": "CatoAntonsen/MMM-Ruter",
     "maintainer": "CatoAntonsen",
     "maintainerURL": "",
-    "description": "Display public transport information for Oslo and Akershus in Norway. Abandoned - see <a target=\"_blank\" href=\"https://github.com/Arve/MMM-Entur-tavle\">MMM-Entur-tavle</a> instead.",
+    "description": "Display public transport information for Oslo and Akershus in Norway.",
     "issues": [
       "`package.json` issue: No repository field.",
       "Typo: Found 'Magic Mirror' in file `MMM-Ruter.js`: Replace it with `MagicMirror\u00b2`.",
       "Recommendation: Found 'XMLHttpRequest' in file `MMM-Ruter.js`: Replace it with built-in fetch."
     ],
+    "outdated": "Abandoned. Repo has been archived at 2019-03-14. See <a href=\"https://github.com/Arve/MMM-Entur-tavle\">MMM-Entur-tavle</a> instead.",
     "license": "ISC",
     "image": "images-MMM-Ruter_Full.jpg",
     "last_commit": "2017-08-19"
@@ -14340,7 +14363,7 @@
     "id": "PabloDons/MMM-Skyss",
     "maintainer": "PabloDons",
     "maintainerURL": "",
-    "description": "Based on MMM-Ruter, but for the municipality of Hordaland in Norway",
+    "description": "Based on MMM-Ruter, but for the municipality of Hordaland in Norway.",
     "issues": [
       "`package.json` issue: No repository field.",
       "Typo: Found 'Magic Mirror' in file `MMM-Skyss.js`: Replace it with `MagicMirror\u00b2`.",
@@ -15046,6 +15069,20 @@
     "last_commit": "2018-04-13"
   },
   {
+    "name": "MMM-stoic-quotes",
+    "url": "https://github.com/pal-thomassen/MMM-stoic-quotes",
+    "id": "pal-thomassen/MMM-stoic-quotes",
+    "maintainer": "pal-thomassen",
+    "maintainerURL": "",
+    "description": "Display a stoic quote at a given interval or time of day.",
+    "issues": [
+      "`package.json` issue: No description",
+      "`package.json` issue: No repository field.",
+      "`package.json` issue: No license field."
+    ],
+    "last_commit": "2023-10-29"
+  },
+  {
     "name": "MMM-StopwatchTimer",
     "url": "https://github.com/Klettner/MMM-StopwatchTimer",
     "id": "Klettner/MMM-StopwatchTimer",
@@ -15400,6 +15437,22 @@
     "license": "MIT",
     "image": "screenshot.jpg",
     "last_commit": "2021-12-02"
+  },
+  {
+    "name": "MMM-Tankerkoenig",
+    "url": "https://github.com/wiesty/MMM-Tankerkoenig",
+    "id": "wiesty/MMM-Tankerkoenig",
+    "maintainer": "wiesty",
+    "maintainerURL": "https://github.com/wiesty",
+    "description": "Module to display the local gas prices in Germany. (Tankstellen Preise)",
+    "issues": [],
+    "tags": [
+      "gas",
+      "germany"
+    ],
+    "license": "MIT",
+    "image": "example.jpg",
+    "last_commit": "2023-11-03"
   },
   {
     "name": "MMM-TautulliActivity",
@@ -17003,22 +17056,6 @@
     "last_commit": "2022-12-03"
   },
   {
-    "name": "MMM-vvsDeparture",
-    "url": "https://github.com/niklaskappler/MMM-vvsDeparture",
-    "id": "niklaskappler/MMM-vvsDeparture",
-    "maintainer": "niklaskappler",
-    "maintainerURL": "",
-    "description": "Display departures for public transport in Stuttgart (Covers VVS Area).",
-    "issues": [
-      "Issue: There is no `package.json`. We need this file to gather information about the module.",
-      "Typo: Found 'Magic Mirror' in file `MMM-vvsDeparture.js`: Replace it with `MagicMirror\u00b2`.",
-      "Typo: Found 'MagicMirror2' in file `README.md`: Replace it with `MagicMirror\u00b2`.",
-      "Typo: Found 'Magic Mirror' in file `node_helper.js`: Replace it with `MagicMirror\u00b2`.",
-      "Deprecated: Found 'require(\"request\")' in file `node_helper.js`: Replace it with built-in fetch."
-    ],
-    "last_commit": "2020-01-10"
-  },
-  {
     "name": "WallberryTheme",
     "url": "https://github.com/delightedCrow/WallberryTheme",
     "id": "delightedCrow/WallberryTheme",
@@ -17279,11 +17316,12 @@
     "id": "mykle1/MMM-WeatherOrNot",
     "maintainer": "mykle1",
     "maintainerURL": "",
-    "description": "Squeeze or stretch it. Watch it respond by reformatting itself. Fully customizable. Also driven by Darksky API (<strong>\u00b0DarkSky API no longer works since 2023-Mar-31</strong>)",
+    "description": "Squeeze or stretch it. Watch it respond by reformatting itself. Fully customizable. Also driven by Darksky API.",
     "issues": [
       "Issue: There is no `package.json`. We need this file to gather information about the module.",
       "Typo: Found 'Magic Mirror' in file `MMM-WeatherOrNot.js`: Replace it with `MagicMirror\u00b2`."
     ],
+    "outdated": "Deprecated. DarkSky API no longer works since 2023-03-31.",
     "last_commit": "2020-11-22"
   },
   {

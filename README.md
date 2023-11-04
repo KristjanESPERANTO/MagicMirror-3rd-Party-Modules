@@ -73,8 +73,8 @@ This script goes through all cloned modules and performs various checks. The res
     - amount of GitHub repos
     - amount of GitLab repos
     - amount of bitbucket repos
+  - Add filter for outdated modules.
 - Write instructions: “How do I get my module presented perfectly?”
-- handle/mark deprecated/unmaintained modules
 - Use issue codes to make the module list file smaller.
 - get rid of of the cloned repo files if a module is removed
 - create super script which runs all scripts in the right order and shows a progress information

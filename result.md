@@ -1,8 +1,8 @@
 # Result of the module analysis
 
-Timestamp: 2023-11-03 00:51:52
+Timestamp: 2023-11-04 01:49:31
 
-Number of analyzed modules: 1057
+Number of analyzed modules: 1058
 
 ## [MMM-01ZM by rubinho101](https://github.com/rubinho101/MMM-01ZM)
 
@@ -484,6 +484,7 @@ Number of analyzed modules: 1057
 
 ## [MMM-BMW-DS by mykle1](https://github.com/mykle1/MMM-BMW-DS)
 
+0. This module is outdated: Deprecated. DarkSky API no longer works since 2023-03-31.
 1. Issue: There is no `package.json`. We need this file to gather information about the module.
 2. Typo: Found 'Magic Mirror' in file `MMM-BMW-DS.js`: Replace it with `MagicMirror²`.
 3. Typo: Found 'Magic Mirror' in file `node_helper.js`: Replace it with `MagicMirror²`.
@@ -931,6 +932,7 @@ Number of analyzed modules: 1057
 
 ## [MMM-Covid19-Vaccination by fhinder](https://github.com/fhinder/MMM-Covid19-Vaccination)
 
+0. This module is outdated: Obsolete, no new data since 2022-04-27.
 1. Issue: There is no `package.json`. We need this file to gather information about the module.
 2. Typo: Found 'Magic Mirror' in file `MMM-Covid19-Vaccination.js`: Replace it with `MagicMirror²`.
 3. Typo: Found 'Magic Mirror' in file `node_helper.js`: Replace it with `MagicMirror²`.
@@ -938,6 +940,7 @@ Number of analyzed modules: 1057
 
 ## [MMM-covid19uk-stats by blighter](https://github.com/blighter/MMM-covid19uk-stats)
 
+0. This module is outdated: Obsolete, no new data since 2022-05-20.
 1. `package.json` issue: No repository field.
 2. `package.json` issue: No license field.
 3. Typo: Found 'Magic Mirror' in file `README.md`: Replace it with `MagicMirror²`.
@@ -1111,17 +1114,20 @@ Number of analyzed modules: 1057
 
 ## [MMM-darksky-hourly by jacquesCedric](https://github.com/jacquesCedric/MMM-darksky-hourly)
 
+0. This module is outdated: Deprecated. DarkSky API no longer works since 2023-03-31.
 1. Issue: There is no `package.json`. We need this file to gather information about the module.
 2. Warning: No LICENSE file.
 
 ## [MMM-DarkSky24Hours by thobach](https://github.com/thobach/MMM-DarkSky24Hours)
 
+0. This module is outdated: Deprecated. DarkSky API no longer works since 2023-03-31.
 1. Issue: There is no `package.json`. We need this file to gather information about the module.
 2. Typo: Found 'Magic Mirror' in file `weather.html`: Replace it with `MagicMirror²`.
 3. Warning: No LICENSE file.
 
 ## [MMM-DarkSkyForecast by jclarke0000](https://github.com/jclarke0000/MMM-DarkSkyForecast)
 
+0. This module is outdated: Deprecated. DarkSky API no longer works since 2023-03-31.
 1. Typo: Found 'Magic Mirror' in file `MMM-DarkSkyForecast.js`: Replace it with `MagicMirror²`.
 2. Typo: Found 'Magic Mirror' in file `README.md`: Replace it with `MagicMirror²`.
 3. Deprecated: Found 'require("request")' in file `node_helper.js`: Replace it with built-in fetch.
@@ -1130,6 +1136,7 @@ Number of analyzed modules: 1057
 
 ## [MMM-DarkSkyRadar by vincep5](https://github.com/vincep5/MMM-DarkSkyRadar)
 
+0. This module is outdated: Deprecated. DarkSky API no longer works since 2023-03-31.
 1. `package.json` issue: No description
 2. `package.json` issue: No repository field.
 3. `package.json` issue: No license field.
@@ -1214,6 +1221,7 @@ Number of analyzed modules: 1057
 
 ## [MMM-Discogs by mboskamp](https://github.com/mboskamp/MMM-Discogs)
 
+0. This module is outdated: Abandoned. Repo has been archived at 2022-08-26.
 1. Typo: Found 'Magic Mirror' in file `README.md`: Replace it with `MagicMirror²`.
 2. Warning: No LICENSE file.
 
@@ -2427,6 +2435,7 @@ Number of analyzed modules: 1057
 
 ## [iFrame by desertblade](https://github.com/desertblade/iFrame)
 
+0. This module is outdated: Abandoned. Repo has been archived at 2019-03-08.
 1. Issue: No image found.
 2. Recommendation: Module name doesn't follow the recommended pattern (it doesn't start with `MMM-`). Consider renaming your module.
 3. Typo: Found 'Magic Mirror' in file `iFrame.js`: Replace it with `MagicMirror²`.
@@ -2692,6 +2701,7 @@ Number of analyzed modules: 1057
 
 ## [MMM-json-feed by amcolash](https://github.com/amcolash/MMM-json-feed)
 
+0. This module is outdated: Deprecated. Repo has been archived at 2020-08-03.
 1. Issue: There is no `package.json`. We need this file to gather information about the module.
 2. Deprecated: Found 'require("request")' in file `node_helper.js`: Replace it with built-in fetch.
 
@@ -3092,7 +3102,9 @@ Number of analyzed modules: 1057
 
 ## [MMM-MailMessage by Unclearogre](https://github.com/Unclearogre/MMM-MailMessage)
 
-1. Error: It appears that the repository could not be cloned. Check the URL.
+1. `package.json` issue: No repository field.
+2. `package.json` issue: No license field.
+3. Warning: No LICENSE file.
 
 ## [MMM-MarineWeather by grenagit](https://github.com/grenagit/MMM-MarineWeather)
 
@@ -4601,6 +4613,7 @@ Number of analyzed modules: 1057
 
 ## [MMM-PIR by mboskamp](https://github.com/mboskamp/MMM-PIR)
 
+0. This module is outdated: Abandoned. Repo has been archived at 2022-08-26.
 1. `package.json` issue: No description
 2. Warning: No LICENSE file.
 
@@ -4692,6 +4705,7 @@ Number of analyzed modules: 1057
 
 ## [MMM-PLOW by mykle1](https://github.com/mykle1/MMM-PLOW)
 
+0. This module is outdated: Deprecated. DarkSky API no longer works since 2023-03-31.
 1. Issue: There is no `package.json`. We need this file to gather information about the module.
 2. Typo: Found 'Magic Mirror' in file `MMM-PLOW.js`: Replace it with `MagicMirror²`.
 
@@ -4868,6 +4882,7 @@ Number of analyzed modules: 1057
 
 ## [MMM-Pull by mboskamp](https://github.com/mboskamp/MMM-Pull)
 
+0. This module is outdated: Abandoned. Repo has been archived at 2022-08-26.
 1. `package.json` issue: No description
 2. `package.json` issue: No repository field.
 3. Issue: No image found.
@@ -5142,6 +5157,7 @@ Number of analyzed modules: 1057
 
 ## [MMM-RKI-Covid19 by fhinder](https://github.com/fhinder/MMM-RKI-Covid19)
 
+0. This module is outdated: Obsolete, no new data.
 1. Typo: Found 'Magic Mirror' in file `MMM-RKI-Covid19.js`: Replace it with `MagicMirror²`.
 2. Typo: Found 'Magic Mirror' in file `node_helper.js`: Replace it with `MagicMirror²`.
 3. Deprecated: Found 'require("native-request")' in file `node_helper.js`: Replace it with built-in fetch.
@@ -5258,6 +5274,7 @@ Number of analyzed modules: 1057
 
 ## [MMM-Ruter by CatoAntonsen](https://github.com/CatoAntonsen/MMM-Ruter)
 
+0. This module is outdated: Abandoned. Repo has been archived at 2019-03-14. See <a href="https://github.com/Arve/MMM-Entur-tavle">MMM-Entur-tavle</a> instead.
 1. `package.json` issue: No repository field.
 2. Typo: Found 'Magic Mirror' in file `MMM-Ruter.js`: Replace it with `MagicMirror²`.
 3. Recommendation: Found 'XMLHttpRequest' in file `MMM-Ruter.js`: Replace it with built-in fetch.
@@ -5770,6 +5787,12 @@ Number of analyzed modules: 1057
 1. Issue: There is no `package.json`. We need this file to gather information about the module.
 2. Typo: Found 'Magic Mirror' in file `README.md`: Replace it with `MagicMirror²`.
 3. Deprecated: Found 'require("request")' in file `node_helper.js`: Replace it with built-in fetch.
+
+## [MMM-stoic-quotes by pal-thomassen](https://github.com/pal-thomassen/MMM-stoic-quotes)
+
+1. `package.json` issue: No description
+2. `package.json` issue: No repository field.
+3. `package.json` issue: No license field.
 
 ## [MMM-StopwatchTimer by Klettner](https://github.com/Klettner/MMM-StopwatchTimer)
 
@@ -6474,14 +6497,6 @@ Number of analyzed modules: 1057
 3. Typo: Found 'Magic Mirror' in file `node_helper.js`: Replace it with `MagicMirror²`.
 4. Recommendation: Found 'axios' in file `node_helper.js`: Replace it with built-in fetch.
 
-## [MMM-vvsDeparture by niklaskappler](https://github.com/niklaskappler/MMM-vvsDeparture)
-
-1. Issue: There is no `package.json`. We need this file to gather information about the module.
-2. Typo: Found 'Magic Mirror' in file `MMM-vvsDeparture.js`: Replace it with `MagicMirror²`.
-3. Typo: Found 'MagicMirror2' in file `README.md`: Replace it with `MagicMirror²`.
-4. Typo: Found 'Magic Mirror' in file `node_helper.js`: Replace it with `MagicMirror²`.
-5. Deprecated: Found 'require("request")' in file `node_helper.js`: Replace it with built-in fetch.
-
 ## [WallberryTheme by delightedCrow](https://github.com/delightedCrow/WallberryTheme)
 
 1. Issue: There is no `package.json`. We need this file to gather information about the module.
@@ -6600,6 +6615,7 @@ Number of analyzed modules: 1057
 
 ## [MMM-WeatherOrNot by mykle1](https://github.com/mykle1/MMM-WeatherOrNot)
 
+0. This module is outdated: Deprecated. DarkSky API no longer works since 2023-03-31.
 1. Issue: There is no `package.json`. We need this file to gather information about the module.
 2. Typo: Found 'Magic Mirror' in file `MMM-WeatherOrNot.js`: Replace it with `MagicMirror²`.
 

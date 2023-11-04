@@ -155,10 +155,15 @@ def check_modules():
         if not Path(f"./modules/{module_directory}").is_dir():
             module["issues"] = ["Error: It appears that the repository could not be cloned. Check the URL."]
 
-        if len(module["issues"]) > 0:
+        if "outdated" in module or len(module["issues"]) > 0:
             output.write(f"\n## [{module['name']} by {module['maintainer']}]({module['url']})\n\n")
-            for idx, issue in enumerate(module["issues"]):
-                output.write(f"{idx+1}. {issue}\n")
+
+            if "outdated" in module:
+                output.write(f"0. This module is outdated: {module['outdated']}\n")
+
+            if len(module["issues"]) > 0:
+                for idx, issue in enumerate(module["issues"]):
+                    output.write(f"{idx+1}. {issue}\n")
 
         module["last_commit"] = subprocess.run(f"cd ./modules/{module_directory} && git log -1 --format='%as' && cd ..",
                                  stdout=subprocess.PIPE, shell=True, check=False).stdout.decode().rstrip()

@@ -30,6 +30,14 @@ function displayCards() {
         `;
     }
 
+    if (cardData.outdated) {
+      card.className += " outdated";
+      card.innerHTML += `
+      <p><b>⚠ This module is outdated:</b> ${cardData.outdated}</p>
+      <hr>
+      `;
+    }
+
     card.innerHTML += `
         <p>${cardData.description}</p>
         <p><b>Maintainer:</b> ${cardData.maintainer}</p>
@@ -74,6 +82,8 @@ function sortData(sortOption) {
       filteredCards.sort((a, b) => b.last_commit.localeCompare(a.last_commit));
       // Sort by issue count
       filteredCards.sort((a, b) => a.issues.length - b.issues.length);
+      // Put oudated to the end
+      filteredCards.sort((a, b) => !!a.outdated - !!b.outdated);
       break;
   }
 }

@@ -139,6 +139,10 @@ main {
   background-color: #04246888 !important;
 }
 
+.outdated {
+  background-color: #f99;
+}
+
 #top-right {
   position: absolute;
   right: 20px;

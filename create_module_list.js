@@ -40,7 +40,7 @@ async function createModuleList() {
         return part.trim();
       });
 
-      if (parts.length === 5) {
+      if (parts.length === 5 || parts.length === 6) {
         const issues = [];
 
         const url = parts[1].match(/\[(.*?)\]\((.*?)\)/)[2].trim();
@@ -86,6 +86,14 @@ async function createModuleList() {
           description,
           issues
         };
+
+        if (parts.length === 6) {
+          const outdatedMarkdown = parts[4];
+          const outdatedHtml = marked.parseInline(outdatedMarkdown);
+          const outdated = sanitizeHtml(outdatedHtml);
+          module.outdated = outdated;
+        }
+
         moduleList.push(module);
       }
     }
