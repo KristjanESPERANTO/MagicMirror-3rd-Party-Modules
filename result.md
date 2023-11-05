@@ -1,8 +1,8 @@
 # Result of the module analysis
 
-Timestamp: 2023-11-04 02:49:23
+Timestamp: 2023-11-05 19:40:22
 
-Number of analyzed modules: 1058
+Number of analyzed modules: 1059
 
 ## [MMM-01ZM by rubinho101](https://github.com/rubinho101/MMM-01ZM)
 
@@ -66,7 +66,7 @@ Number of analyzed modules: 1058
 
 1. Issue: There is no `package.json`. We need this file to gather information about the module.
 2. Typo: Found 'Magic Mirror' in file `node_helper.js`: Replace it with `MagicMirror²`.
-3. Recommendation: Found 'require("https")' in file `node_helper.js`: Replace it with built-in fetch.
+3. Recommendation: Found 'require("https")' in file `node_helper.js`: Replace "https" by "node:https".
 4. Warning: No LICENSE file.
 
 ## [MMM-AirbarHelper by ryanzor](https://github.com/ryanzor/MMM-AirbarHelper)
@@ -338,7 +338,7 @@ Number of analyzed modules: 1058
 1. `package.json` issue: No repository field.
 2. `package.json` issue: No license field.
 3. Deprecated: Found 'require('request')' in file `node_helper.js`: Replace it with built-in fetch.
-4. Recommendation: Found 'require('https')' in file `node_helper.js`: Replace it with built-in fetch.
+4. Recommendation: Found 'require('https')' in file `node_helper.js`: Replace 'https' by 'node:https'.
 5. Recommendation: Found 'XMLHttpRequest' in file `node_helper.js`: Replace it with built-in fetch.
 
 ## [MMM-Beestat by vincep5](https://github.com/vincep5/MMM-Beestat)
@@ -500,7 +500,7 @@ Number of analyzed modules: 1058
 ## [MMM-BMWConnected by hdurdle](https://github.com/hdurdle/MMM-BMWConnected)
 
 1. Typo: Found 'Magic Mirror' in file `README.md`: Replace it with `MagicMirror²`.
-2. Recommendation: Found 'require("https")' in file `bmwrequest.js`: Replace it with built-in fetch.
+2. Recommendation: Found 'require("https")' in file `bmwrequest.js`: Replace "https" by "node:https".
 3. Typo: Found 'Magic Mirror' in file `package.json`: Replace it with `MagicMirror²`.
 
 ## [MMM-Bob-Ross by Veldrovive](https://github.com/Veldrovive/MMM-Bob-Ross)
@@ -554,7 +554,7 @@ Number of analyzed modules: 1058
 
 ## [MMM-Bring by werthdavid](https://github.com/werthdavid/MMM-Bring)
 
-1. Recommendation: Found 'require("https")' in file `BringClient.js`: Replace it with built-in fetch.
+1. Recommendation: Found 'require("https")' in file `BringClient.js`: Replace "https" by "node:https".
 2. Recommendation: Found 'axios' in file `BringClient.js`: Replace it with built-in fetch.
 3. Typo: Found 'Magic Mirror' in file `styles.css`: Replace it with `MagicMirror²`.
 4. Recommendation: Found 'axios' in file `package.json`: Replace it with built-in fetch.
@@ -666,7 +666,7 @@ Number of analyzed modules: 1058
 ## [MMM-CalendarTodayTomorrow by qunu](https://github.com/qunu/MMM-CalendarTodayTomorrow)
 
 1. Issue: There is no `package.json`. We need this file to gather information about the module.
-2. Recommendation: Found 'require("https")' in file `calendarfetcher.js`: Replace it with built-in fetch.
+2. Recommendation: Found 'require("https")' in file `calendarfetcher.js`: Replace "https" by "node:https".
 3. Recommendation: Found 'node-fetch' in file `calendarfetcher.js`: Replace it with built-in fetch.
 4. Warning: No LICENSE file.
 
@@ -711,7 +711,7 @@ Number of analyzed modules: 1058
 
 1. Typo: Found 'Magic Mirror' in file `MMM-CanadianPublicWeatherAlerts.js`: Replace it with `MagicMirror²`.
 2. Typo: Found 'Magic Mirror' in file `node_helper.js`: Replace it with `MagicMirror²`.
-3. Recommendation: Found 'require('https')' in file `node_helper.js`: Replace it with built-in fetch.
+3. Recommendation: Found 'require('https')' in file `node_helper.js`: Replace 'https' by 'node:https'.
 
 ## [MMM-Canvas by chase-cromwell](https://github.com/chase-cromwell/MMM-Canvas)
 
@@ -881,7 +881,7 @@ Number of analyzed modules: 1058
 
 1. Issue: There is no `package.json`. We need this file to gather information about the module.
 2. Recommendation: Module name doesn't follow the recommended pattern (it doesn't start with `MMM-`). Consider renaming your module.
-3. Recommendation: Found 'require('https')' in file `node_helper.js`: Replace it with built-in fetch.
+3. Recommendation: Found 'require('https')' in file `node_helper.js`: Replace 'https' by 'node:https'.
 4. Warning: No LICENSE file.
 
 ## [MMM-CountDown by boazarad](https://github.com/boazarad/MMM-CountDown)
@@ -974,7 +974,7 @@ Number of analyzed modules: 1058
 
 1. Issue: There is no `package.json`. We need this file to gather information about the module.
 2. Recommendation: Found 'XMLHttpRequest' in file `MMM-cryptocurrency.js`: Replace it with built-in fetch.
-3. Recommendation: Found 'require("https")' in file `node_helper.js`: Replace it with built-in fetch.
+3. Recommendation: Found 'require("https")' in file `node_helper.js`: Replace "https" by "node:https".
 
 ## [MMM-CTA by NateDee](https://github.com/NateDee/MMM-CTA)
 
@@ -1045,7 +1045,7 @@ Number of analyzed modules: 1058
 1. Recommendation: Found 'uses: actions/checkout@v3' in file `lint.yml`: Replace it with v4.
 2. Typo: Found 'Magic Mirror' in file `MMM-DagelijksWoord.js`: Replace it with `MagicMirror²`.
 3. Typo: Found 'Magic Mirror' in file `node_helper.js`: Replace it with `MagicMirror²`.
-4. Recommendation: Found 'require("https")' in file `node_helper.js`: Replace it with built-in fetch.
+4. Recommendation: Found 'require("https")' in file `node_helper.js`: Replace "https" by "node:https".
 
 ## [MMM-daikin by kymeyer](https://github.com/kymeyer/MMM-daikin)
 
@@ -1095,7 +1095,7 @@ Number of analyzed modules: 1058
 ## [MMM-DailyPower by oemel09](https://github.com/oemel09/MMM-DailyPower)
 
 1. Issue: There is no `package.json`. We need this file to gather information about the module.
-2. Recommendation: Found 'require('https')' in file `node_helper.js`: Replace it with built-in fetch.
+2. Recommendation: Found 'require('https')' in file `node_helper.js`: Replace 'https' by 'node:https'.
 3. Warning: No LICENSE file.
 
 ## [MMM-DailyUnreachedPeopleGroup by MStoltzfus](https://github.com/MStoltzfus/MMM-DailyUnreachedPeopleGroup)
@@ -1110,7 +1110,7 @@ Number of analyzed modules: 1058
 
 1. Issue: There is no `package.json`. We need this file to gather information about the module.
 2. Recommendation: Module name doesn't follow the recommended pattern (it doesn't start with `MMM-`). Consider renaming your module.
-3. Recommendation: Found 'require('https')' in file `node_helper.js`: Replace it with built-in fetch.
+3. Recommendation: Found 'require('https')' in file `node_helper.js`: Replace 'https' by 'node:https'.
 
 ## [MMM-darksky-hourly by jacquesCedric](https://github.com/jacquesCedric/MMM-darksky-hourly)
 
@@ -1169,8 +1169,8 @@ Number of analyzed modules: 1058
 2. Typo: Found 'Magic Mirror' in file `MMM-DCMetroTimes.js`: Replace it with `MagicMirror²`.
 3. Typo: Found 'Magic Mirror' in file `README.md`: Replace it with `MagicMirror²`.
 4. Typo: Found 'Magic Mirror' in file `node_helper.js`: Replace it with `MagicMirror²`.
-5. Recommendation: Found 'require('https')' in file `node_helper.js`: Replace it with built-in fetch.
-6. Recommendation: Found 'require('https')' in file `getStationCodes.js`: Replace it with built-in fetch.
+5. Recommendation: Found 'require('https')' in file `node_helper.js`: Replace 'https' by 'node:https'.
+6. Recommendation: Found 'require('https')' in file `getStationCodes.js`: Replace 'https' by 'node:https'.
 
 ## [MMM-DCMetroTrainTimes by AdamMoses-GitHub](https://github.com/AdamMoses-GitHub/MMM-DCMetroTrainTimes)
 
@@ -1178,8 +1178,8 @@ Number of analyzed modules: 1058
 2. Typo: Found 'Magic Mirror' in file `MMM-DCMetroTrainTimes.js`: Replace it with `MagicMirror²`.
 3. Typo: Found 'Magic Mirror' in file `README.md`: Replace it with `MagicMirror²`.
 4. Typo: Found 'Magic Mirror' in file `node_helper.js`: Replace it with `MagicMirror²`.
-5. Recommendation: Found 'require('https')' in file `node_helper.js`: Replace it with built-in fetch.
-6. Recommendation: Found 'require('https')' in file `getStationCodes.js`: Replace it with built-in fetch.
+5. Recommendation: Found 'require('https')' in file `node_helper.js`: Replace 'https' by 'node:https'.
+6. Recommendation: Found 'require('https')' in file `getStationCodes.js`: Replace 'https' by 'node:https'.
 
 ## [MMM-DefaultWeatherAnimated by MatthiPi](https://github.com/MatthiPi/MMM-DefaultWeatherAnimated)
 
@@ -1355,7 +1355,7 @@ Number of analyzed modules: 1058
 2. Deprecated: Found 'node-version: [16' in file `nodejs.yml`: Update to current version.
 3. Typo: Found 'Magic Mirror' in file `MMM-Ecobee.js`: Replace it with `MagicMirror²`.
 4. Typo: Found 'Magic Mirror' in file `README.md`: Replace it with `MagicMirror²`.
-5. Recommendation: Found 'require("https")' in file `node_helper.js`: Replace it with built-in fetch.
+5. Recommendation: Found 'require("https")' in file `node_helper.js`: Replace "https" by "node:https".
 6. Typo: Found 'MagicMirror2' in file `package.json`: Replace it with `MagicMirror²`.
 
 ## [MMM-Ecosia-Tree-Counter by rehne](https://github.com/rehne/MMM-Ecosia-Tree-Counter)
@@ -1426,7 +1426,7 @@ Number of analyzed modules: 1058
 1. Issue: There is no `package.json`. We need this file to gather information about the module.
 2. Typo: Found 'Magic Mirror' in file `MMM-EnphaseSolar.js`: Replace it with `MagicMirror²`.
 3. Typo: Found 'Magic Mirror' in file `node_helper.js`: Replace it with `MagicMirror²`.
-4. Recommendation: Found 'require('https')' in file `node_helper.js`: Replace it with built-in fetch.
+4. Recommendation: Found 'require('https')' in file `node_helper.js`: Replace 'https' by 'node:https'.
 
 ## [MMM-Entur-tavle by Arve](https://github.com/Arve/MMM-Entur-tavle)
 
@@ -1471,6 +1471,7 @@ Number of analyzed modules: 1058
 
 ## [MMM-Events by mykle1](https://github.com/mykle1/MMM-Events)
 
+0. This module is outdated: Deprecated. Eventful API discontinued. This module needs updated.
 1. Issue: There is no `package.json`. We need this file to gather information about the module.
 2. Typo: Found 'Magic Mirror' in file `MMM-Events.js`: Replace it with `MagicMirror²`.
 3. Typo: Found 'Magic Mirror' in file `node_helper.js`: Replace it with `MagicMirror²`.
@@ -1641,7 +1642,7 @@ Number of analyzed modules: 1058
 1. Issue: There is no `package.json`. We need this file to gather information about the module.
 2. Typo: Found 'Magic Mirror' in file `MMM-FF-tenor-gif.js`: Replace it with `MagicMirror²`.
 3. Typo: Found 'Magic Mirror' in file `gifFetcher.js`: Replace it with `MagicMirror²`.
-4. Recommendation: Found 'require("https")' in file `gifFetcher.js`: Replace it with built-in fetch.
+4. Recommendation: Found 'require("https")' in file `gifFetcher.js`: Replace "https" by "node:https".
 5. Typo: Found 'Magic Mirror' in file `node_helper.js`: Replace it with `MagicMirror²`.
 6. Typo: Found 'Magic Mirror' in file `MMM-FF-tenor-gif.css`: Replace it with `MagicMirror²`.
 7. Typo: Found 'Magic Mirror' in file `MMM-FF-tenor-gif.scss`: Replace it with `MagicMirror²`.
@@ -1652,7 +1653,7 @@ Number of analyzed modules: 1058
 2. Typo: Found 'Magic Mirror' in file `MMM-FF-XKCD.js`: Replace it with `MagicMirror²`.
 3. Typo: Found 'Magic Mirror' in file `README.md`: Replace it with `MagicMirror²`.
 4. Typo: Found 'Magic Mirror' in file `comicFetcher.js`: Replace it with `MagicMirror²`.
-5. Recommendation: Found 'require("https")' in file `comicFetcher.js`: Replace it with built-in fetch.
+5. Recommendation: Found 'require("https")' in file `comicFetcher.js`: Replace "https" by "node:https".
 6. Typo: Found 'Magic Mirror' in file `node_helper.js`: Replace it with `MagicMirror²`.
 7. Typo: Found 'Magic Mirror' in file `persistenceService.js`: Replace it with `MagicMirror²`.
 8. Typo: Found 'Magic Mirror' in file `MMM-FF-XKCD.css`: Replace it with `MagicMirror²`.
@@ -2027,7 +2028,7 @@ Number of analyzed modules: 1058
 
 ## [MMM-GoogleDriveSlideShow by clegallic](https://github.com/clegallic/MMM-GoogleDriveSlideShow)
 
-1. Recommendation: Found 'require("https")' in file `node_helper.js`: Replace it with built-in fetch.
+1. Recommendation: Found 'require("https")' in file `node_helper.js`: Replace "https" by "node:https".
 
 ## [MMM-GoogleFit by fry0815](https://github.com/fry0815/MMM-GoogleFit)
 
@@ -2051,7 +2052,7 @@ Number of analyzed modules: 1058
 
 1. Recommendation: Found 'axios' in file `GPhotos.js`: Replace it with built-in fetch.
 2. Deprecated: Found 'electron-rebuild' in file `README.md`: Replace it with `@electron/rebuild`
-3. Recommendation: Found 'require("https")' in file `node_helper.js`: Replace it with built-in fetch.
+3. Recommendation: Found 'require("https")' in file `node_helper.js`: Replace "https" by "node:https".
 4. Deprecated: Found 'electron-rebuild' in file `package.json`: Replace it with `@electron/rebuild`
 5. Recommendation: Found 'axios' in file `package.json`: Replace it with built-in fetch.
 
@@ -2464,9 +2465,9 @@ Number of analyzed modules: 1058
 4. Recommendation: Found 'XMLHttpRequest' in file `ammap_amcharts_extension.js`: Replace it with built-in fetch.
 5. Recommendation: Found 'XMLHttpRequest' in file `dataloader.js`: Replace it with built-in fetch.
 6. Recommendation: Found 'XMLHttpRequest' in file `dataloader.min.js`: Replace it with built-in fetch.
-7. Recommendation: Found 'require('https')' in file `fabric.js`: Replace it with built-in fetch.
+7. Recommendation: Found 'require('https')' in file `fabric.js`: Replace 'https' by 'node:https'.
 8. Recommendation: Found 'XMLHttpRequest' in file `fabric.js`: Replace it with built-in fetch.
-9. Recommendation: Found 'require("https")' in file `fabric.min.js`: Replace it with built-in fetch.
+9. Recommendation: Found 'require("https")' in file `fabric.min.js`: Replace "https" by "node:https".
 10. Recommendation: Found 'XMLHttpRequest' in file `fabric.min.js`: Replace it with built-in fetch.
 
 ## [MMM-Ilevia-Lille by Jilano5](https://github.com/Jilano5/MMM-Ilevia-Lille)
@@ -2563,7 +2564,7 @@ Number of analyzed modules: 1058
 1. Issue: No image found.
 2. Typo: Found 'Magic Mirror' in file `MMM-ioBroker.js`: Replace it with `MagicMirror²`.
 3. Typo: Found 'Magic Mirror' in file `node_helper.js`: Replace it with `MagicMirror²`.
-4. Recommendation: Found 'require('https')' in file `node_helper.js`: Replace it with built-in fetch.
+4. Recommendation: Found 'require('https')' in file `node_helper.js`: Replace 'https' by 'node:https'.
 5. Typo: Found 'Magic Mirror' in file `package.json`: Replace it with `MagicMirror²`.
 
 ## [MMM-IOTStatus by aduyng](https://github.com/aduyng/MMM-IOTStatus)
@@ -2592,7 +2593,7 @@ Number of analyzed modules: 1058
 
 1. Issue: There is no `package.json`. We need this file to gather information about the module.
 2. Typo: Found 'Magic Mirror' in file `node_helper.js`: Replace it with `MagicMirror²`.
-3. Recommendation: Found 'require("https")' in file `node_helper.js`: Replace it with built-in fetch.
+3. Recommendation: Found 'require("https")' in file `node_helper.js`: Replace "https" by "node:https".
 4. Warning: No LICENSE file.
 
 ## [MMM-IronManGIF by 2hdlockness](https://github.com/2hdlockness/MMM-IronManGIF)
@@ -2644,7 +2645,7 @@ Number of analyzed modules: 1058
 1. Issue: There is no `package.json`. We need this file to gather information about the module.
 2. Recommendation: Found 'XMLHttpRequest' in file `MMM-Jeedom.js`: Replace it with built-in fetch.
 3. Typo: Found 'Magic Mirror' in file `README.md`: Replace it with `MagicMirror²`.
-4. Recommendation: Found 'require('https')' in file `node_helper.js`: Replace it with built-in fetch.
+4. Recommendation: Found 'require('https')' in file `node_helper.js`: Replace 'https' by 'node:https'.
 
 ## [MMM-JEOPARDY-Enhanced by fering3](https://github.com/fering3/MMM-JEOPARDY-Enhanced)
 
@@ -2675,7 +2676,7 @@ Number of analyzed modules: 1058
 1. `package.json` issue: No repository field.
 2. Typo: Found 'Magic Mirror' in file `MMM-JNV.js`: Replace it with `MagicMirror²`.
 3. Typo: Found 'Magic Mirror' in file `node_helper.js`: Replace it with `MagicMirror²`.
-4. Recommendation: Found 'require("https")' in file `node_helper.js`: Replace it with built-in fetch.
+4. Recommendation: Found 'require("https")' in file `node_helper.js`: Replace "https" by "node:https".
 
 ## [MMM-JokeAPI by Kreshnik](https://github.com/Kreshnik/MMM-JokeAPI)
 
@@ -3023,7 +3024,7 @@ Number of analyzed modules: 1058
 1. Issue: There is no `package.json`. We need this file to gather information about the module.
 2. Typo: Found 'Magic Mirror' in file `MMM-Luxembourg-Public-Transport.js`: Replace it with `MagicMirror²`.
 3. Typo: Found 'Magic Mirror' in file `node_helper.js`: Replace it with `MagicMirror²`.
-4. Recommendation: Found 'require('https')' in file `node_helper.js`: Replace it with built-in fetch.
+4. Recommendation: Found 'require('https')' in file `node_helper.js`: Replace 'https' by 'node:https'.
 5. Warning: No LICENSE file.
 
 ## [MMM-lyft by kyle-kelly](https://github.com/kyle-kelly/MMM-lyft)
@@ -3048,8 +3049,8 @@ Number of analyzed modules: 1058
 4. Recommendation: Module name doesn't follow the recommended pattern (it doesn't start with `MMM-`). Consider renaming your module.
 5. Typo: Found 'Magic Mirror' in file `README.md`: Replace it with `MagicMirror²`.
 6. Deprecated: Found 'electron-rebuild' in file `README.md`: Replace it with `@electron/rebuild`
-7. Recommendation: Found 'require('https')' in file `alexa-authentication.js`: Replace it with built-in fetch.
-8. Recommendation: Found 'require('https')' in file `alexa-companion-service.js`: Replace it with built-in fetch.
+7. Recommendation: Found 'require('https')' in file `alexa-authentication.js`: Replace 'https' by 'node:https'.
+8. Recommendation: Found 'require('https')' in file `alexa-companion-service.js`: Replace 'https' by 'node:https'.
 9. Typo: Found 'Magic Mirror' in file `pom.xml`: Replace it with `MagicMirror²`.
 10. Typo: Found 'Magic Mirror' in file `CompanionServiceAuthenticator.java`: Replace it with `MagicMirror²`.
 11. Deprecated: Found 'electron-rebuild' in file `package.json`: Replace it with `@electron/rebuild`
@@ -3351,7 +3352,7 @@ Number of analyzed modules: 1058
 3. Typo: Found 'Magic Mirror' in file `README.md`: Replace it with `MagicMirror²`.
 4. Typo: Found 'MagicMirror2' in file `README.md`: Replace it with `MagicMirror²`.
 5. Deprecated: Found 'require('request')' in file `node_helper.js`: Replace it with built-in fetch.
-6. Recommendation: Found 'require('https')' in file `node_helper.js`: Replace it with built-in fetch.
+6. Recommendation: Found 'require('https')' in file `node_helper.js`: Replace 'https' by 'node:https'.
 
 ## [mmm-nest-cameras by michael5r](https://github.com/michael5r/mmm-nest-cameras)
 
@@ -3458,7 +3459,7 @@ Number of analyzed modules: 1058
 2. Typo: Found 'Magic Mirror' in file `README.md`: Replace it with `MagicMirror²`.
 3. Typo: Found 'MagicMirror2' in file `README.md`: Replace it with `MagicMirror²`.
 4. Deprecated: Found 'require('request')' in file `node_helper.js`: Replace it with built-in fetch.
-5. Recommendation: Found 'require('https')' in file `node_helper.js`: Replace it with built-in fetch.
+5. Recommendation: Found 'require('https')' in file `node_helper.js`: Replace 'https' by 'node:https'.
 6. Typo: Found 'MagicMirror2' in file `package.json`: Replace it with `MagicMirror²`.
 
 ## [mmm-zabbix-alerts by spectroman](https://github.com/spectroman/mmm-zabbix-alerts)
@@ -3512,7 +3513,7 @@ Number of analyzed modules: 1058
 ## [MMM-Moon by EnderFlop](https://github.com/EnderFlop/MMM-Moon)
 
 1. Issue: There is no `package.json`. We need this file to gather information about the module.
-2. Recommendation: Found 'require("https")' in file `node_helper.js`: Replace it with built-in fetch.
+2. Recommendation: Found 'require("https")' in file `node_helper.js`: Replace "https" by "node:https".
 3. Warning: No LICENSE file.
 
 ## [MMM-MoonPhase by NolanKingdon](https://github.com/NolanKingdon/MMM-MoonPhase)
@@ -3685,7 +3686,7 @@ Number of analyzed modules: 1058
 ## [MMM-MyCalendar by jclarke0000](https://github.com/jclarke0000/MMM-MyCalendar)
 
 1. Issue: There is no `package.json`. We need this file to gather information about the module.
-2. Recommendation: Found 'require("https")' in file `calendarfetcher.js`: Replace it with built-in fetch.
+2. Recommendation: Found 'require("https")' in file `calendarfetcher.js`: Replace "https" by "node:https".
 3. Deprecated: Found 'require('request')' in file `node-ical.js`: Replace it with built-in fetch.
 
 ## [MMM-MyCommute by qistoph](https://github.com/qistoph/MMM-MyCommute)
@@ -3971,7 +3972,7 @@ Number of analyzed modules: 1058
 2. Typo: Found 'Magic Mirror' in file `README.md`: Replace it with `MagicMirror²`.
 3. Typo: Found 'Magic Mirror' in file `node_helper.js`: Replace it with `MagicMirror²`.
 4. Deprecated: Found 'require('request')' in file `node_helper.js`: Replace it with built-in fetch.
-5. Recommendation: Found 'require("https")' in file `node_helper.js`: Replace it with built-in fetch.
+5. Recommendation: Found 'require("https")' in file `node_helper.js`: Replace "https" by "node:https".
 6. Typo: Found 'Magic Mirror' in file `package.json`: Replace it with `MagicMirror²`.
 7. Warning: No LICENSE file.
 
@@ -4052,7 +4053,7 @@ Number of analyzed modules: 1058
 2. `package.json` issue: No repository field.
 3. `package.json` issue: No license field.
 4. Typo: Found 'Magic Mirror' in file `NextTrains.js`: Replace it with `MagicMirror²`.
-5. Recommendation: Found 'require('https')' in file `node_helper.js`: Replace it with built-in fetch.
+5. Recommendation: Found 'require('https')' in file `node_helper.js`: Replace 'https' by 'node:https'.
 
 ## [MMM-NFL by fewieden](https://github.com/fewieden/MMM-NFL)
 
@@ -4491,7 +4492,7 @@ Number of analyzed modules: 1058
 
 1. Issue: There is no `package.json`. We need this file to gather information about the module.
 2. Typo: Found 'Magic Mirror' in file `README.md`: Replace it with `MagicMirror²`.
-3. Recommendation: Found 'require("https")' in file `node_helper.js`: Replace it with built-in fetch.
+3. Recommendation: Found 'require("https")' in file `node_helper.js`: Replace "https" by "node:https".
 
 ## [MMM-PC-Stats by mykle1](https://github.com/mykle1/MMM-PC-Stats)
 
@@ -4680,7 +4681,7 @@ Number of analyzed modules: 1058
 ## [MMM-Plenticore by eckonator](https://github.com/eckonator/MMM-Plenticore)
 
 1. Typo: Found 'Magic Mirror' in file `.gitignore`: Replace it with `MagicMirror²`.
-2. Recommendation: Found 'require("https")' in file `node_helper.js`: Replace it with built-in fetch.
+2. Recommendation: Found 'require("https")' in file `node_helper.js`: Replace "https" by "node:https".
 
 ## [MMM-PlexNowPlaying by glitch452](https://github.com/glitch452/MMM-PlexNowPlaying)
 
@@ -4807,7 +4808,7 @@ Number of analyzed modules: 1058
 5. Recommendation: Found 'node-fetch' in file `node_helper.js`: Replace it with built-in fetch.
 6. Recommendation: Found 'node-fetch' in file `package.json`: Replace it with built-in fetch.
 7. Recommendation: Found 'axios' in file `package.json`: Replace it with built-in fetch.
-8. Recommendation: Found 'require("https")' in file `powerwall.js`: Replace it with built-in fetch.
+8. Recommendation: Found 'require("https")' in file `powerwall.js`: Replace "https" by "node:https".
 9. Recommendation: Found 'axios' in file `powerwall.js`: Replace it with built-in fetch.
 
 ## [MMM-PrayerTime by slametps](https://github.com/slametps/MMM-PrayerTime)
@@ -4894,7 +4895,7 @@ Number of analyzed modules: 1058
 1. Typo: Found 'Magic Mirror' in file `MMM-PushBulletNotifications.css`: Replace it with `MagicMirror²`.
 2. Typo: Found 'Magic Mirror' in file `MMM-PushBulletNotifications.js`: Replace it with `MagicMirror²`.
 3. Typo: Found 'Magic Mirror' in file `node_helper.js`: Replace it with `MagicMirror²`.
-4. Recommendation: Found 'require('https')' in file `node_helper.js`: Replace it with built-in fetch.
+4. Recommendation: Found 'require('https')' in file `node_helper.js`: Replace 'https' by 'node:https'.
 5. Deprecated: Found 'omxplayer' in file `node_helper.js`: Try to replace it with `vlc`.
 
 ## [MMM-qnapDownloadStation by flick116](https://github.com/flick116/MMM-qnapDownloadStation)
@@ -4903,6 +4904,12 @@ Number of analyzed modules: 1058
 2. Typo: Found 'Magic Mirror' in file `MMM-qnapDownloadStation.js`: Replace it with `MagicMirror²`.
 3. Typo: Found 'Magic Mirror' in file `node_helper.js`: Replace it with `MagicMirror²`.
 4. Deprecated: Found 'require('request')' in file `node_helper.js`: Replace it with built-in fetch.
+
+## [MMM-QR-Remote-Link by JasonVonKrueger](https://github.com/JasonVonKrueger/MMM-QR-Remote-Link)
+
+1. `package.json` issue: No repository field.
+2. Typo: Found 'Magic Mirror' in file `README.md`: Replace it with `MagicMirror²`.
+3. Typo: Found 'Magic Mirror' in file `package.json`: Replace it with `MagicMirror²`.
 
 ## [MMM-QRCode by MarinescuEvghenii](https://github.com/MarinescuEvghenii/MMM-QRCode)
 
@@ -4994,7 +5001,7 @@ Number of analyzed modules: 1058
 2. Issue: No image found.
 3. Typo: Found 'Magic Mirror' in file `MMM-RandomPhoto.js`: Replace it with `MagicMirror²`.
 4. Typo: Found 'MagicMirror2' in file `README.md`: Replace it with `MagicMirror²`.
-5. Recommendation: Found 'require("https")' in file `node_helper.js`: Replace it with built-in fetch.
+5. Recommendation: Found 'require("https")' in file `node_helper.js`: Replace "https" by "node:https".
 6. Warning: No LICENSE file.
 
 ## [MMM-RandomQuotes by Jacopo1891](https://github.com/Jacopo1891/MMM-RandomQuotes)
@@ -5019,11 +5026,11 @@ Number of analyzed modules: 1058
 3. Typo: Found 'Magic Mirror' in file `MMM-RBB-Weather.css`: Replace it with `MagicMirror²`.
 4. Typo: Found 'Magic Mirror' in file `MMM-RBB-Weather.js`: Replace it with `MagicMirror²`.
 5. Typo: Found 'Magic Mirror' in file `node_helper.js`: Replace it with `MagicMirror²`.
-6. Recommendation: Found 'require('https')' in file `node_helper.js`: Replace it with built-in fetch.
+6. Recommendation: Found 'require('https')' in file `node_helper.js`: Replace 'https' by 'node:https'.
 7. Typo: Found 'Magic Mirror' in file `MagicMirrorTestEnv.js`: Replace it with `MagicMirror²`.
 8. Typo: Found 'Magic Mirror' in file `ModuleTest.js`: Replace it with `MagicMirror²`.
 9. Typo: Found 'Magic Mirror' in file `TestConfig.js`: Replace it with `MagicMirror²`.
-10. Recommendation: Found 'require('https')' in file `EndpointTest.js`: Replace it with built-in fetch.
+10. Recommendation: Found 'require('https')' in file `EndpointTest.js`: Replace 'https' by 'node:https'.
 
 ## [MMM-rbtv-sendeplan by juliankern](https://github.com/juliankern/MMM-rbtv-sendeplan)
 
@@ -5093,7 +5100,7 @@ Number of analyzed modules: 1058
 ## [MMM-Remote-Control-Repository by MMRIZE](https://github.com/MMRIZE/MMM-Remote-Control-Repository)
 
 1. Issue: There is no `package.json`. We need this file to gather information about the module.
-2. Recommendation: Found 'require("https")' in file `node_helper.js`: Replace it with built-in fetch.
+2. Recommendation: Found 'require("https")' in file `node_helper.js`: Replace "https" by "node:https".
 
 ## [MMM-RemoteCompliments by mitchelltmarino](https://github.com/mitchelltmarino/MMM-RemoteCompliments)
 
@@ -5161,7 +5168,7 @@ Number of analyzed modules: 1058
 
 1. Typo: Found 'Magic Mirror' in file `MMM-RMV.js`: Replace it with `MagicMirror²`.
 2. Typo: Found 'Magic Mirror' in file `node_helper.js`: Replace it with `MagicMirror²`.
-3. Recommendation: Found 'require("https")' in file `node_helper.js`: Replace it with built-in fetch.
+3. Recommendation: Found 'require("https")' in file `node_helper.js`: Replace "https" by "node:https".
 
 ## [MMM-RNV by jalibu](https://github.com/jalibu/MMM-RNV)
 
@@ -5514,7 +5521,7 @@ Number of analyzed modules: 1058
 1. `package.json` issue: No repository field.
 2. Typo: Found 'Magic Mirror' in file `MMM-Skyss.js`: Replace it with `MagicMirror²`.
 3. Recommendation: Found 'XMLHttpRequest' in file `MMM-Skyss.js`: Replace it with built-in fetch.
-4. Recommendation: Found 'require("https")' in file `node_helper.js`: Replace it with built-in fetch.
+4. Recommendation: Found 'require("https")' in file `node_helper.js`: Replace "https" by "node:https".
 
 ## [MMM-SL-PublicTransport by boghammar](https://github.com/boghammar/MMM-SL-PublicTransport)
 
@@ -5538,7 +5545,7 @@ Number of analyzed modules: 1058
 
 1. Typo: Found 'Magic Mirror' in file `MMM-slamfm-playing-now.js`: Replace it with `MagicMirror²`.
 2. Typo: Found 'Magic Mirror' in file `README.md`: Replace it with `MagicMirror²`.
-3. Recommendation: Found 'require('https')' in file `node_helper.js`: Replace it with built-in fetch.
+3. Recommendation: Found 'require('https')' in file `node_helper.js`: Replace 'https' by 'node:https'.
 
 ## [MMM-SleeperNFL by jackmeyer](https://github.com/jackmeyer/MMM-SleeperNFL)
 
@@ -5571,7 +5578,7 @@ Number of analyzed modules: 1058
 
 ## [MMM-SmokedMirror by Santanachia](https://github.com/Santanachia/MMM-SmokedMirror)
 
-1. Recommendation: Found 'require('https')' in file `node_helper.js`: Replace it with built-in fetch.
+1. Recommendation: Found 'require('https')' in file `node_helper.js`: Replace 'https' by 'node:https'.
 2. Typo: Found 'Magic Mirror' in file `package.json`: Replace it with `MagicMirror²`.
 3. Warning: No LICENSE file.
 
@@ -5611,7 +5618,7 @@ Number of analyzed modules: 1058
 ## [MMM-social-counter by ngnijland](https://github.com/ngnijland/MMM-social-counter)
 
 1. Typo: Found 'Magic Mirror' in file `MMM-social-counter.js`: Replace it with `MagicMirror²`.
-2. Recommendation: Found 'require('https')' in file `node_helper.js`: Replace it with built-in fetch.
+2. Recommendation: Found 'require('https')' in file `node_helper.js`: Replace 'https' by 'node:https'.
 
 ## [MMM-socialbicycles by 0lek](https://github.com/0lek/MMM-socialbicycles)
 
@@ -5809,7 +5816,7 @@ Number of analyzed modules: 1058
 
 1. Typo: Found 'Magic Mirror' in file `README.md`: Replace it with `MagicMirror²`.
 2. Deprecated: Found 'require('request')' in file `node_helper.js`: Replace it with built-in fetch.
-3. Recommendation: Found 'require('https')' in file `node_helper.js`: Replace it with built-in fetch.
+3. Recommendation: Found 'require('https')' in file `node_helper.js`: Replace 'https' by 'node:https'.
 4. Typo: Found 'Magic Mirror' in file `package.json`: Replace it with `MagicMirror²`.
 5. Typo: Found 'MagicMirror2' in file `package.json`: Replace it with `MagicMirror²`.
 
@@ -5925,7 +5932,7 @@ Number of analyzed modules: 1058
 1. Issue: No image found.
 2. Typo: Found 'Magic Mirror' in file `config-commands.js`: Replace it with `MagicMirror²`.
 3. Typo: Found 'Magic Mirror' in file `config-simple.js`: Replace it with `MagicMirror²`.
-4. Recommendation: Found 'require('https')' in file `node_helper.js`: Replace it with built-in fetch.
+4. Recommendation: Found 'require('https')' in file `node_helper.js`: Replace 'https' by 'node:https'.
 
 ## [MMM-temp-ds18b20 by Thlb](https://github.com/Thlb/MMM-temp-ds18b20)
 
@@ -5992,7 +5999,7 @@ Number of analyzed modules: 1058
 2. Typo: Found 'Magic Mirror' in file `MMM-TFL-Status.js`: Replace it with `MagicMirror²`.
 3. Typo: Found 'Magic Mirror' in file `README.md`: Replace it with `MagicMirror²`.
 4. Typo: Found 'Magic Mirror' in file `node_helper.js`: Replace it with `MagicMirror²`.
-5. Recommendation: Found 'require('https')' in file `node_helper.js`: Replace it with built-in fetch.
+5. Recommendation: Found 'require('https')' in file `node_helper.js`: Replace 'https' by 'node:https'.
 
 ## [MMM-Thingiverse by appdevelopmentandsuch](https://github.com/appdevelopmentandsuch/MMM-Thingiverse)
 
@@ -6081,7 +6088,7 @@ Number of analyzed modules: 1058
 
 1. Issue: There is no `package.json`. We need this file to gather information about the module.
 2. Typo: Found 'Magic Mirror' in file `MMM-Toon.js`: Replace it with `MagicMirror²`.
-3. Recommendation: Found 'require('https')' in file `ToonAPI.js`: Replace it with built-in fetch.
+3. Recommendation: Found 'require('https')' in file `ToonAPI.js`: Replace 'https' by 'node:https'.
 4. Warning: No LICENSE file.
 
 ## [MMM-Touch by gfischershaw](https://github.com/gfischershaw/MMM-Touch)
@@ -6159,7 +6166,7 @@ Number of analyzed modules: 1058
 1. `package.json` issue: No description
 2. `package.json` issue: No repository field.
 3. Issue: No image found.
-4. Recommendation: Found 'require('https')' in file `node_helper.js`: Replace it with built-in fetch.
+4. Recommendation: Found 'require('https')' in file `node_helper.js`: Replace 'https' by 'node:https'.
 
 ## [MMM-TransLoc by OrangeHoopla](https://github.com/OrangeHoopla/MMM-TransLoc)
 
@@ -6512,7 +6519,7 @@ Number of analyzed modules: 1058
 ## [MMM-Wallpaper by kolbyjack](https://github.com/kolbyjack/MMM-Wallpaper)
 
 1. Issue: No image found.
-2. Recommendation: Found 'require("https")' in file `node_helper.js`: Replace it with built-in fetch.
+2. Recommendation: Found 'require("https")' in file `node_helper.js`: Replace "https" by "node:https".
 3. Typo: Found 'MagicMirror2' in file `package.json`: Replace it with `MagicMirror²`.
 
 ## [MMM-Wallpaper by jupadin](https://github.com/jupadin/MMM-Wallpaper)
