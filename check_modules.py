@@ -45,14 +45,6 @@ def check_modules():
             "name": "Replace it with built-in fetch.",
             "category": "Deprecated"
         },
-        "require(\"moment\")": {
-            "name": "Replace it with Luxon or Day.js.",
-            "category": "Deprecated"
-        },
-        "require('moment')": {
-            "name": "Replace it with Luxon or Day.js.",
-            "category": "Deprecated"
-        },
         "require(\"native-request\")": {
             "name": "Replace it with built-in fetch.",
             "category": "Deprecated"
@@ -62,11 +54,11 @@ def check_modules():
             "category": "Deprecated"
         },
         "require(\"https\")": {
-            "name": "Replace it with built-in fetch.",
+            "name": "Replace \"https\" by \"node:https\".",
             "category": "Recommendation"
         },
         "require('https')": {
-            "name": "Replace it with built-in fetch.",
+            "name": "Replace 'https' by 'node:https'.",
             "category": "Recommendation"
         },
         "electron-rebuild": {
