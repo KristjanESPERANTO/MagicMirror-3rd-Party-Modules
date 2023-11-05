@@ -78,12 +78,15 @@ function sortData(sortOption) {
       });
       break;
     case "default":
-      // Sort by last commit date
-      filteredCards.sort((a, b) => b.last_commit.localeCompare(a.last_commit));
-      // Sort by issue count
-      filteredCards.sort((a, b) => a.issues.length - b.issues.length);
-      // Put oudated to the end
-      filteredCards.sort((a, b) => !!a.outdated - !!b.outdated);
+      filteredCards.sort(
+        (a, b) =>
+          // Put oudated to the end
+          !!a.outdated - !!b.outdated ||
+          // Sort by issue count
+          a.issues.length - b.issues.length ||
+          // Sort by last commit date
+          b.last_commit.localeCompare(a.last_commit)
+      );
       break;
   }
 }
