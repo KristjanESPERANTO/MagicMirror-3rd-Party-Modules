@@ -45,6 +45,14 @@ def check_modules():
             "name": "Replace it with built-in fetch.",
             "category": "Deprecated"
         },
+        "require(\"moment\")": {
+            "name": "Replace it with Luxon or Day.js.",
+            "category": "Deprecated"
+        },
+        "require('moment')": {
+            "name": "Replace it with Luxon or Day.js.",
+            "category": "Deprecated"
+        },
         "require(\"native-request\")": {
             "name": "Replace it with built-in fetch.",
             "category": "Deprecated"
