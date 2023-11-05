@@ -1,6 +1,6 @@
 # Result of the module analysis
 
-Timestamp: 2023-11-05 22:18:15
+Timestamp: 2023-11-06 00:50:00
 
 Number of analyzed modules: 1059
 
@@ -3012,6 +3012,7 @@ Number of analyzed modules: 1059
 
 ## [MMM-Lunartic by mykle1](https://github.com/mykle1/MMM-Lunartic)
 
+0. This module is outdated: Deprecated. Doesn't work anymore (API is down).
 1. Typo: Found 'Magic Mirror' in file `MMM-Lunartic.js`: Replace it with `MagicMirror²`.
 2. Typo: Found 'Magic Mirror' in file `node_helper.js`: Replace it with `MagicMirror²`.
 3. Deprecated: Found 'require('request')' in file `node_helper.js`: Replace it with built-in fetch.
@@ -3093,6 +3094,7 @@ Number of analyzed modules: 1059
 
 ## [MagicPlugins by nhubbard](https://github.com/nhubbard/MagicPlugins/tree/master/snow)
 
+0. This module is outdated: Deprecated. The successor is MMM-Snow.
 1. Error: It appears that the repository could not be cloned. Check the URL.
 
 ## [MMM-MagicSuperHero by Lavve](https://github.com/Lavve/MMM-MagicSuperHero)
@@ -5295,6 +5297,7 @@ Number of analyzed modules: 1059
 
 ## [MMM-Scenes by MMRIZE](https://github.com/MMRIZE/MMM-Scenes)
 
+0. This module is outdated: Deprecated. The successor is MMM-Scenes2.
 1. Issue: No image found.
 2. Typo: Found 'Magic Mirror' in file `config.js`: Replace it with `MagicMirror²`.
 

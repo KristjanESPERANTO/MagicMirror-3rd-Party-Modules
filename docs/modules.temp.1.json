@@ -68,7 +68,7 @@
     "id": "mykle1/MMM-AfterShip",
     "maintainer": "mykle1",
     "maintainerURL": "",
-    "description": "Track all your deliveries in one module. Supports 428 couriers worldwide!",
+    "description": "Track all your deliveries in one module. Supports 428 couriers worldwide.",
     "issues": []
   },
   {
@@ -104,7 +104,7 @@
     "id": "mstarzec386/MMM-Airly",
     "maintainer": "mstarzec386",
     "maintainerURL": "",
-    "description": "Air pollution in Polish cities. Data from airly (<a target=\"_blank\" href=\"https://airly.eu/\">https://airly.eu/</a>)",
+    "description": "Air pollution in Polish cities. Data from <a target=\"_blank\" href=\"https://airly.eu/\">airly</a>.",
     "issues": []
   },
   {
@@ -149,7 +149,7 @@
     "id": "fewieden/MMM-AlarmClock",
     "maintainer": "fewieden",
     "maintainerURL": "",
-    "description": "Alarm Clock Module (touch and non-touch)",
+    "description": "Alarm Clock Module (touch and non-touch).",
     "issues": []
   },
   {
@@ -194,7 +194,7 @@
     "id": "eric-h-st/MMM-AmbientBrightnessDetection",
     "maintainer": "eric-h-st",
     "maintainerURL": "https://github.com/eric-h-st",
-    "description": "Ambient brightness detection and Auto-Brightness of the mirror modules accordingly",
+    "description": "Ambient brightness detection and Auto-Brightness of the mirror modules accordingly.",
     "issues": []
   },
   {
@@ -239,7 +239,7 @@
     "id": "FabianNiehaus89/MMM-AOE2-STATS",
     "maintainer": "FabianNiehaus89",
     "maintainerURL": "",
-    "description": "Module to display Age of Empire stats by player ID",
+    "description": "Module to display Age of Empire stats by player ID.",
     "issues": []
   },
   {
@@ -464,7 +464,7 @@
     "id": "vincep5/MMM-Beestat",
     "maintainer": "vincep5",
     "maintainerURL": "",
-    "description": "Display Ecobee runtime data from beestat.io API",
+    "description": "Display Ecobee runtime data from beestat.io API.",
     "issues": []
   },
   {
@@ -491,7 +491,7 @@
     "id": "nebulx29/MMM-bergfex",
     "maintainer": "nebulx29",
     "maintainerURL": "",
-    "description": "Displays snow reports from bergfex.at",
+    "description": "Displays snow reports from bergfex.at.",
     "issues": []
   },
   {
@@ -554,7 +554,7 @@
     "id": "amitchone/MMM-birthdays",
     "maintainer": "amitchone",
     "maintainerURL": "https://github.com/amitchone",
-    "description": "A simple, lightweight birthday reminder - specified either via simple JSON file or in <code>config.js</code>. Supports multiple languages!",
+    "description": "A simple, lightweight birthday reminder - specified either via simple JSON file or in <code>config.js</code>. Supports multiple languages.",
     "issues": []
   },
   {
@@ -572,7 +572,7 @@
     "id": "jeroenpeters1986/MMM-bitcoin-portfolio",
     "maintainer": "jeroenpeters1986",
     "maintainerURL": "https://github.com/jeroenpeters1986",
-    "description": "Display bitcoin ticket price + worth of your own wallet/portfolio",
+    "description": "Display bitcoin ticket price + worth of your own wallet/portfolio.",
     "issues": []
   },
   {
@@ -599,7 +599,7 @@
     "id": "BKeyport/MMM-Block",
     "maintainer": "BKeyport",
     "maintainerURL": "https://github.com/BKeyport",
-    "description": "Quick Module to easily move modules up or down for blank space",
+    "description": "Quick Module to easily move modules up or down for blank space.",
     "issues": []
   },
   {
@@ -626,7 +626,7 @@
     "id": "timodejong95/MMM-BluetoothDevices",
     "maintainer": "timodejong95",
     "maintainerURL": "https://github.com/timodejong95",
-    "description": "Connecting Bluetooth devices, currently only Oral-B toothbrushes",
+    "description": "Connecting Bluetooth devices, currently only Oral-B toothbrushes.",
     "issues": []
   },
   {
@@ -635,7 +635,7 @@
     "id": "awitwicki/MMM-BME280",
     "maintainer": "awitwicki",
     "maintainerURL": "https://github.com/awitwicki",
-    "description": "Display temperature, humidity, and pressure readings from BME280 I2C sensor",
+    "description": "Display temperature, humidity, and pressure readings from BME280 I2C sensor.",
     "issues": []
   },
   {
@@ -662,7 +662,7 @@
     "id": "mykle1/MMM-BMW-CC",
     "maintainer": "mykle1",
     "maintainerURL": "",
-    "description": "Weather designed for bottom bar position, now using the ClimaCell API",
+    "description": "Weather designed for bottom bar position, now using the ClimaCell API.",
     "issues": []
   },
   {
@@ -681,7 +681,7 @@
     "id": "mykle1/MMM-BMW-OW",
     "maintainer": "mykle1",
     "maintainerURL": "",
-    "description": "Weather designed for bottom bar position, now using the OpenWeather API",
+    "description": "Weather designed for bottom bar position, now using the OpenWeather API.",
     "issues": []
   },
   {
@@ -717,7 +717,7 @@
     "id": "justjim1220/MMM-BornBeforeDate",
     "maintainer": "justjim1220",
     "maintainerURL": "",
-    "description": "module request to show the date you must be born before to enter premises.",
+    "description": "Module request to show the date you must be born before to enter premises.",
     "issues": []
   },
   {
@@ -726,7 +726,7 @@
     "id": "jalibu/MMM-BoschSmartHome",
     "maintainer": "jalibu",
     "maintainerURL": "https://github.com/jalibu/MMM-BoschSmartHome",
-    "description": "A client interface for the Bosch Smart Home System. Supports rooms, Window/Door contacts, Room Climate Controls, Thermostats, Twinguards, Visualization of Temperature, Humidity and Purity, Bosch Home Connect Dishwashers, Philips Hue Bridge",
+    "description": "A client interface for the Bosch Smart Home System. Supports rooms, Window/Door contacts, Room Climate Controls, Thermostats, Twinguards, Visualization of Temperature, Humidity and Purity, Bosch Home Connect Dishwashers, Philips Hue Bridge.",
     "issues": []
   },
   {
@@ -735,7 +735,7 @@
     "id": "spoturdeal/MMM-Bose-Soundtouch",
     "maintainer": "spoturdeal",
     "maintainerURL": "",
-    "description": "Shows the music that plays on your Soundtouch",
+    "description": "Shows the music that plays on your Soundtouch.",
     "issues": []
   },
   {
@@ -771,7 +771,7 @@
     "id": "werthdavid/MMM-Bring",
     "maintainer": "werthdavid",
     "maintainerURL": "",
-    "description": "Display a Bring! shopping list in a flexible view and touch support",
+    "description": "Display a Bring! shopping list in a flexible view and touch support.",
     "issues": []
   },
   {
@@ -780,7 +780,7 @@
     "id": "rseidt/MMM-bringList",
     "maintainer": "rseidt",
     "maintainerURL": "",
-    "description": "Display a Bring! shopping list in a tabular view",
+    "description": "Display a Bring! shopping list in a tabular view.",
     "issues": []
   },
   {
@@ -807,7 +807,7 @@
     "id": "da4throux/MMM-Buller",
     "maintainer": "da4throux",
     "maintainerURL": "",
-    "description": "Dynamic compliments leveraging Google Tasks",
+    "description": "Dynamic compliments leveraging Google Tasks.",
     "issues": []
   },
   {
@@ -906,7 +906,7 @@
     "id": "MMRIZE/MMM-CalendarExt3Agenda",
     "maintainer": "MMRIZE",
     "maintainerURL": "",
-    "description": "Extended calendar and event view. Show calendar as agenda",
+    "description": "Extended calendar and event view. Show calendar as agenda.",
     "issues": []
   },
   {
@@ -915,7 +915,7 @@
     "id": "MMRIZE/MMM-CalendarExt3Timeline",
     "maintainer": "MMRIZE",
     "maintainerURL": "",
-    "description": "Extended calendar and event view. Show calendar timeline",
+    "description": "Extended calendar and event view. Show calendar timeline.",
     "issues": []
   },
   {
@@ -960,7 +960,7 @@
     "id": "heskja/MMM-CalendarWeek",
     "maintainer": "heskja",
     "maintainerURL": "",
-    "description": "Display a weekly (n days) calendar view",
+    "description": "Display a weekly (n days) calendar view.",
     "issues": []
   },
   {
@@ -969,7 +969,7 @@
     "id": "paviro/MMM-Callmonitor-Current-Call",
     "maintainer": "paviro",
     "maintainerURL": "",
-    "description": "Extension for <a target=\"_blank\" href=\"https://github.com/paviro/MMM-FRITZ-Box-Callmonitor\">MMM-FRITZ-Box-Callmonitor</a> (Displays the currently active call)",
+    "description": "Extension for <a target=\"_blank\" href=\"https://github.com/paviro/MMM-FRITZ-Box-Callmonitor\">MMM-FRITZ-Box-Callmonitor</a>. Displays the currently active call.",
     "issues": []
   },
   {
@@ -1032,7 +1032,7 @@
     "id": "ulrichwisser/MMM-CardDavBirthdaysProvider",
     "maintainer": "ulrichwisser",
     "maintainerURL": "",
-    "description": "Birthday calendar from your CardDav contacts",
+    "description": "Birthday calendar from your CardDav contacts.",
     "issues": []
   },
   {
@@ -1086,7 +1086,7 @@
     "id": "MarinescuEvghenii/MMM-Chart",
     "maintainer": "MarinescuEvghenii",
     "maintainerURL": "",
-    "description": "Chart module. This is a simple wrapper for <a target=\"_blank\" href=\"https://www.chartjs.org\">Chart.js</a>",
+    "description": "Chart module. This is a simple wrapper for <a target=\"_blank\" href=\"https://www.chartjs.org\">Chart.js</a>.",
     "issues": []
   },
   {
@@ -1149,7 +1149,7 @@
     "id": "mykle1/MMM-Climacell-Hourly",
     "maintainer": "mykle1",
     "maintainerURL": "",
-    "description": "Hourly weather designed for bottom bar position using the Climacell API",
+    "description": "Hourly weather designed for bottom bar position using the Climacell API.",
     "issues": []
   },
   {
@@ -1203,7 +1203,7 @@
     "id": "glitch452/MMM-CoinMarketCap",
     "maintainer": "glitch452",
     "maintainerURL": "",
-    "description": "Display cryptocurrency information from the Coin Market Cap website. Ticker Price, Logos, Sparkline Graphs, etc...",
+    "description": "Display cryptocurrency information from the Coin Market Cap website. Ticker Price, Logos, Sparkline Graphs, etc.",
     "issues": []
   },
   {
@@ -1430,7 +1430,7 @@
     "id": "spitzlbergerj/MMM-Currentweather-MQTT",
     "maintainer": "spitzlbergerj",
     "maintainerURL": "https://github.com/spitzlbergerj",
-    "description": "Extension of the standard module currentweather by the possibility to process and integrate MQTT telegrams of an own weather station",
+    "description": "Extension of the standard module currentweather by the possibility to process and integrate MQTT telegrams of an own weather station.",
     "issues": []
   },
   {
@@ -1448,7 +1448,7 @@
     "id": "MMRIZE/MMM-CustomElementTime",
     "maintainer": "MMRIZE",
     "maintainerURL": "",
-    "description": "Custom element <code>mm-time</code> launcher",
+    "description": "Custom element <code>mm-time</code> launcher.",
     "issues": []
   },
   {
@@ -1475,7 +1475,7 @@
     "id": "RichieCZ/MMM-CzechPost",
     "maintainer": "RichieCZ",
     "maintainerURL": "",
-    "description": "Display tracking information for parcels handled by Czech Post",
+    "description": "Display tracking information for parcels handled by Czech Post.",
     "issues": []
   },
   {
@@ -1484,7 +1484,7 @@
     "id": "berryerlouis/MMM-D2L",
     "maintainer": "berryerlouis",
     "maintainerURL": "",
-    "description": "Displays information retreived from a D2L module for Linky",
+    "description": "Displays information retreived from a D2L module for Linky.",
     "issues": []
   },
   {
@@ -1511,7 +1511,7 @@
     "id": "kymeyer/MMM-daikin",
     "maintainer": "kymeyer",
     "maintainerURL": "",
-    "description": "Displays information retreived from a Daikin Air Conditioner Unit",
+    "description": "Displays information retreived from a Daikin Air Conditioner Unit.",
     "issues": []
   },
   {
@@ -1520,7 +1520,7 @@
     "id": "matt-thurling/MMM-DaikinAirbase",
     "maintainer": "matt-thurling",
     "maintainerURL": "",
-    "description": "Forked from MMM-Daikin to work with Daikin Airbase controllers (wifi air conditioner controllers used in Australia/New Zealand regions)",
+    "description": "Forked from MMM-Daikin to work with Daikin Airbase controllers (wifi air conditioner controllers used in Australia/New Zealand regions).",
     "issues": []
   },
   {
@@ -1538,7 +1538,7 @@
     "id": "eouia/MMM-DailyAlarm",
     "maintainer": "eouia",
     "maintainerURL": "",
-    "description": "Module for daily recurrent event alarms",
+    "description": "Module for daily recurrent event alarms.",
     "issues": []
   },
   {
@@ -1583,7 +1583,7 @@
     "id": "oemel09/MMM-DailyPower",
     "maintainer": "oemel09",
     "maintainerURL": "",
-    "description": "A module that displays the bible verse of the day from <a target=\"_blank\" href=\"https://dailypower.oemel09.de\">DailyPower</a>",
+    "description": "A module that displays the bible verse of the day from <a target=\"_blank\" href=\"https://dailypower.oemel09.de\">DailyPower</a>.",
     "issues": []
   },
   {
@@ -1592,7 +1592,7 @@
     "id": "MStoltzfus/MMM-DailyUnreachedPeopleGroup",
     "maintainer": "MStoltzfus",
     "maintainerURL": "https://github.com/MStoltzfus",
-    "description": "A module that displays the \"Unreached of the Day\" data from <a target=\"_blank\" href=\"www.joshuaproject.net/pray/unreachedoftheday/today\">Joshua Project</a>",
+    "description": "A module that displays the \"Unreached of the Day\" data from <a target=\"_blank\" href=\"www.joshuaproject.net/pray/unreachedoftheday/today\">Joshua Project</a>.",
     "issues": []
   },
   {
@@ -1695,7 +1695,7 @@
     "id": "MatthiPi/MMM-DefaultWeatherAnimated",
     "maintainer": "MatthiPi",
     "maintainerURL": "",
-    "description": "Adds animated icons and changes layout of default weather plugin",
+    "description": "Adds animated icons and changes layout of default weather plugin.",
     "issues": []
   },
   {
@@ -1731,7 +1731,7 @@
     "id": "nebulx29/MMM-dht22",
     "maintainer": "nebulx29",
     "maintainerURL": "",
-    "description": "displays temperature/humidity readings from DHT22 sensor connected via GPIOs",
+    "description": "displays temperature/humidity readings from DHT22 sensor connected via GPIOs.",
     "issues": []
   },
   {
@@ -1795,7 +1795,7 @@
     "id": "aaron64/MMM-DockerVisualizer",
     "maintainer": "aaron64",
     "maintainerURL": "",
-    "description": "See your docker swarm running in real time through docker-swarm-visualizer",
+    "description": "See your docker swarm running in real time through docker-swarm-visualizer.",
     "issues": []
   },
   {
@@ -1975,7 +1975,7 @@
     "id": "mscharl/MMM-edgerouter-throughput",
     "maintainer": "mscharl",
     "maintainerURL": "",
-    "description": "Show the interface throughput of an Ubiquity EdgeRouter",
+    "description": "Show the interface throughput of an Ubiquity EdgeRouter.",
     "issues": []
   },
   {
@@ -2056,7 +2056,7 @@
     "id": "matt-thurling/MMM-EnphaseSolar",
     "maintainer": "matt-thurling",
     "maintainerURL": "",
-    "description": "Display live data and cumulative daily totals of energy produced from an Enphase Solar system by reading data from the local Enphase gateway (firmware 7.0+)",
+    "description": "Display live data and cumulative daily totals of energy produced from an Enphase Solar system by reading data from the local Enphase gateway (firmware 7.0+).",
     "issues": []
   },
   {
@@ -2101,7 +2101,7 @@
     "id": "AjaxCarroway/MMM-ethermine",
     "maintainer": "AjaxCarroway",
     "maintainerURL": "",
-    "description": "Displays Ethereum miner rig statistics for miners on the ethermine.org mining pool",
+    "description": "Displays Ethereum miner rig statistics for miners on the ethermine.org mining pool.",
     "issues": []
   },
   {
@@ -2183,7 +2183,7 @@
     "id": "nischi/MMM-Face-Reco-DNN",
     "maintainer": "nischi",
     "maintainerURL": "",
-    "description": "All new Version of Face Recognition with Open CV 4.1 and Deep Neural Network",
+    "description": "All new version of Face Recognition with Open CV 4.1 and Deep Neural Network.",
     "issues": []
   },
   {
@@ -2201,7 +2201,7 @@
     "id": "njwilliams/MMM-Faces",
     "maintainer": "njwilliams",
     "maintainerURL": "",
-    "description": "Yet Another Facial Recognition system, with admin tooling to make all the AI/ML easy to maintain and supporting hardware acceleration",
+    "description": "Yet Another Facial Recognition system, with admin tooling to make all the AI/ML easy to maintain and supporting hardware acceleration.",
     "issues": []
   },
   {
@@ -2210,7 +2210,7 @@
     "id": "paviro/MMM-Facial-Recognition",
     "maintainer": "paviro",
     "maintainerURL": "",
-    "description": "Facial recognition and module swapping based on the current user ...",
+    "description": "Facial recognition and module swapping based on the current user.",
     "issues": []
   },
   {
@@ -2255,7 +2255,7 @@
     "id": "eouia/MMM-fbPageCounter",
     "maintainer": "eouia",
     "maintainerURL": "",
-    "description": "<code>Likes</code> counter of FACEBOOK page.",
+    "description": "<code>Likes</code> counter of Facebook page.",
     "issues": []
   },
   {
@@ -2300,7 +2300,7 @@
     "id": "shin10/MMM-FF-Genius-Lyrics",
     "maintainer": "shin10",
     "maintainerURL": "",
-    "description": "This module complements the <a target=\"_blank\" href=\"https://github.com/skuethe/MMM-Spotify\">MMM-Spotify module</a> and listens for it's song info notifications to automatically fetch the lyrics for the currently playing song. (API key required)",
+    "description": "This module complements the <a target=\"_blank\" href=\"https://github.com/skuethe/MMM-Spotify\">MMM-Spotify module</a> and listens for it's song info notifications to automatically fetch the lyrics for the currently playing song. API key required.",
     "issues": []
   },
   {
@@ -2327,7 +2327,7 @@
     "id": "shin10/MMM-FF-StatsJS",
     "maintainer": "shin10",
     "maintainerURL": "",
-    "description": "Inject Ricardo Cabello's (<a target=\"_blank\" href=\"https://github.com/mrdoob\">mrdoob</a>) <a target=\"_blank\" href=\"https://github.com/mrdoob/stats.js\">stats.js</a> to display FPS, MS and MEM consumption",
+    "description": "Inject Ricardo Cabello's (<a target=\"_blank\" href=\"https://github.com/mrdoob\">mrdoob</a>) <a target=\"_blank\" href=\"https://github.com/mrdoob/stats.js\">stats.js</a> to display FPS, MS and MEM consumption.",
     "issues": []
   },
   {
@@ -2336,7 +2336,7 @@
     "id": "shin10/MMM-FF-tenor-gif",
     "maintainer": "shin10",
     "maintainerURL": "",
-    "description": "Display random gifs by topic from <a target=\"_blank\" href=\"https://tenor.com\">tenor</a> (API key required)",
+    "description": "Display random gifs by topic from <a target=\"_blank\" href=\"https://tenor.com\">tenor</a>. API key required.",
     "issues": []
   },
   {
@@ -2363,7 +2363,7 @@
     "id": "jesmak/MMM-FinParcel",
     "maintainer": "jesmak",
     "maintainerURL": "https://github.com/jesmak",
-    "description": "Module that tracks packages from Finnish Posti and/or Matkahuolto",
+    "description": "Module that tracks packages from Finnish Posti and/or Matkahuolto.",
     "issues": []
   },
   {
@@ -2390,7 +2390,7 @@
     "id": "ItsMeBrille/MMM-FlagRise",
     "maintainer": "ItsMeBrille",
     "maintainerURL": "https://github.com/ItsMeBrille",
-    "description": "A module to raise an image of a flag according to national flag rules. (Norwegian rules) Fetches sunrise and sunset times using <a target=\"_blank\" href=\"https://steder-api.no\">Steder-API</a>",
+    "description": "A module to raise an image of a flag according to national flag rules. (Norwegian rules) Fetches sunrise and sunset times using <a target=\"_blank\" href=\"https://steder-api.no\">Steder-API</a>.",
     "issues": []
   },
   {
@@ -2408,7 +2408,7 @@
     "id": "nomis6432/MMM-flicio",
     "maintainer": "nomis6432",
     "maintainerURL": "https://github.com/nomis6432",
-    "description": "send notifications to other modules with flic.io buttons.",
+    "description": "Send notifications to other modules with flic.io buttons.",
     "issues": []
   },
   {
@@ -2417,7 +2417,7 @@
     "id": "jancalve/MMM-flick-gestures",
     "maintainer": "jancalve",
     "maintainerURL": "",
-    "description": "detecting 3D gesture with GestIC Sensor(MGC3130)",
+    "description": "Detecting 3D gesture with GestIC Sensor (MGC3130).",
     "issues": []
   },
   {
@@ -2426,7 +2426,7 @@
     "id": "kapsolas/MMM-Flickr",
     "maintainer": "kapsolas",
     "maintainerURL": "",
-    "description": "A module to load last 20 images posted to user's Flickr photostream to mirror and animate them; with the need of an API_KEY",
+    "description": "A module to load last 20 images posted to user's Flickr photostream to mirror and animate them. API key required.",
     "issues": []
   },
   {
@@ -2480,7 +2480,7 @@
     "id": "kagjerde/MMM-Flo",
     "maintainer": "kagjerde",
     "maintainerURL": "",
-    "description": "Displays tide table for Norway",
+    "description": "Displays tide table for Norway.",
     "issues": []
   },
   {
@@ -2489,7 +2489,7 @@
     "id": "kagjerde/MMM-FloGraph",
     "maintainer": "kagjerde",
     "maintainerURL": "",
-    "description": "Displays tide graph for Norway",
+    "description": "Displays tide graph for Norway.",
     "issues": []
   },
   {
@@ -2516,7 +2516,7 @@
     "id": "idoodler/MMM-forecast-io",
     "maintainer": "idoodler",
     "maintainerURL": "",
-    "description": "Fork of <a target=\"_blank\" href=\"https://github.com/dmcinnes/MMM-forecast-io\">MMM-forecast-io</a> Display weather based on forecast API. Uses the <code>INDOOR_TEMPERATURE</code> notification to display the indoor temperature emmited by some modules",
+    "description": "Fork of <a target=\"_blank\" href=\"https://github.com/dmcinnes/MMM-forecast-io\">MMM-forecast-io</a> Display weather based on forecast API. Uses the <code>INDOOR_TEMPERATURE</code> notification to display the indoor temperature emitted by some modules.",
     "issues": []
   },
   {
@@ -2588,7 +2588,7 @@
     "id": "drtorchwood/MMM-FRITZ-Box-Callmonitor-py3",
     "maintainer": "drtorchwood",
     "maintainerURL": "",
-    "description": "FRITZ!Box Callmonitor (Display an alert when someone is calling and offers a call history...)",
+    "description": "FRITZ!Box Callmonitor. Display an alert when someone is calling and offers a call history.",
     "issues": []
   },
   {
@@ -2606,7 +2606,7 @@
     "id": "peteyjaym/MMM-fronius",
     "maintainer": "peteyjaym",
     "maintainerURL": "",
-    "description": "Fronius Solar Module (Display data from a Fronius Solar Inverter)",
+    "description": "Fronius Solar Module. Display data from a Fronius Solar Inverter.",
     "issues": []
   },
   {
@@ -2633,7 +2633,7 @@
     "id": "jboucly/MMM-FTP-image",
     "maintainer": "jboucly",
     "maintainerURL": "https://github.com/jboucly",
-    "description": "Displays images from an FTP server with a display delay",
+    "description": "Displays images from an FTP server with a display delay.",
     "issues": []
   },
   {
@@ -2705,7 +2705,7 @@
     "id": "asimhsidd/MMM-GeoTracking",
     "maintainer": "asimhsidd",
     "maintainerURL": "https://github.com/asimhsidd",
-    "description": "Geo-track a moving object on the map by continuously listening to a pubnub channel where the publisher (example file attached) has to publish the new location (lat, lon) as and when moves",
+    "description": "Geo-track a moving object on the map by continuously listening to a pubnub channel where the publisher (example file attached) has to publish the new location (lat, lon) as and when moves.",
     "issues": []
   },
   {
@@ -2723,7 +2723,7 @@
     "id": "thobach/MMM-Gestures",
     "maintainer": "thobach",
     "maintainerURL": "",
-    "description": "allows gesture control of compliments (only show when stepping in front of mirror), newsfeed (wave left / right, up for full-screen) and pages with two types of infrared sensors. Gestures can be up, down, left, right, far and close movements of the hand in front of a gesture sensor (APDS-9960) and present and away gestures in front of an IR distance sensor (GP2Y0A21YK)",
+    "description": "allows gesture control of compliments (only show when stepping in front of mirror), newsfeed (wave left / right, up for full-screen) and pages with two types of infrared sensors. Gestures can be up, down, left, right, far and close movements of the hand in front of a gesture sensor (APDS-9960) and present and away gestures in front of an IR distance sensor (GP2Y0A21YK).",
     "issues": []
   },
   {
@@ -2741,7 +2741,7 @@
     "id": "fpfuetsch/MMM-GitHub-Monitor",
     "maintainer": "fpfuetsch",
     "maintainerURL": "",
-    "description": "Displays GitHub repository information",
+    "description": "Displays GitHub repository information.",
     "issues": []
   },
   {
@@ -2750,7 +2750,7 @@
     "id": "ByteExceptionM/MMM-GitHub-Notifications",
     "maintainer": "ByteExceptionM",
     "maintainerURL": "https://github.com/ByteExceptionM",
-    "description": "Displays clickable GitHub notifications",
+    "description": "Displays clickable GitHub notifications.",
     "issues": []
   },
   {
@@ -2849,7 +2849,7 @@
     "id": "No3x/MMM-GoogleDocs-Notes",
     "maintainer": "No3x",
     "maintainerURL": "https://github.com/No3x",
-    "description": "Display notes from a Google Doc",
+    "description": "Display notes from a Google Doc.",
     "issues": []
   },
   {
@@ -2858,7 +2858,7 @@
     "id": "clegallic/MMM-GoogleDriveSlideShow",
     "maintainer": "clegallic",
     "maintainerURL": "",
-    "description": "Slideshow of photos stored in Google Drive",
+    "description": "Slideshow of photos stored in Google Drive.",
     "issues": []
   },
   {
@@ -2876,7 +2876,7 @@
     "id": "sp4ceman/MMM-googlemaps",
     "maintainer": "sp4ceman",
     "maintainerURL": "",
-    "description": "Displays a google map of an origin and destination",
+    "description": "Displays a google map of an origin and destination.",
     "issues": []
   },
   {
@@ -2903,7 +2903,7 @@
     "id": "hermanho/MMM-GooglePhotos",
     "maintainer": "hermanho",
     "maintainerURL": "",
-    "description": "image gallery or wallpaper with your Google Photos account",
+    "description": "image gallery or wallpaper with your Google Photos account.",
     "issues": []
   },
   {
@@ -2912,7 +2912,7 @@
     "id": "ryan-d-williams/MMM-GoogleSheets",
     "maintainer": "ryan-d-williams",
     "maintainerURL": "",
-    "description": "Display Google Sheets data. Highly customizable",
+    "description": "Display Google Sheets data. Highly customizable.",
     "issues": []
   },
   {
@@ -2921,7 +2921,7 @@
     "id": "Gismo150/MMM-GoogleShoppingList",
     "maintainer": "Gismo150",
     "maintainerURL": "",
-    "description": "Display a google shoppinglist items",
+    "description": "Display a google shoppinglist items.",
     "issues": []
   },
   {
@@ -2930,7 +2930,7 @@
     "id": "jayked/MMM-GoogleTasks",
     "maintainer": "jayked",
     "maintainerURL": "",
-    "description": "Display Google Tasks",
+    "description": "Display Google Tasks.",
     "issues": []
   },
   {
@@ -2939,7 +2939,7 @@
     "id": "themox/MMM-GoogleTasks",
     "maintainer": "themox",
     "maintainerURL": "",
-    "description": "Updated Google Tasks display module",
+    "description": "Updated Google Tasks display module.",
     "issues": []
   },
   {
@@ -2984,7 +2984,7 @@
     "id": "brentpabst/MMM-gpsd",
     "maintainer": "brentpabst",
     "maintainerURL": "https://github.com/brentpabst",
-    "description": "Display real-time GPS data from GPSD",
+    "description": "Display real-time GPS data from GPSD.",
     "issues": []
   },
   {
@@ -3002,7 +3002,7 @@
     "id": "SvenSommer/MMM-GrafanaChart",
     "maintainer": "SvenSommer",
     "maintainerURL": "",
-    "description": "Module to display a diagram generated by Grafana",
+    "description": "Module to display a diagram generated by Grafana.",
     "issues": []
   },
   {
@@ -3011,7 +3011,7 @@
     "id": "MMRIZE/MMM-GroveGestures",
     "maintainer": "MMRIZE",
     "maintainerURL": "",
-    "description": "detecting 3D gesture with GroveGesture Sensor(PAJ7620u2)",
+    "description": "Detecting 3D gesture with GroveGesture Sensor(PAJ7620u2).",
     "issues": []
   },
   {
@@ -3056,7 +3056,7 @@
     "id": "aleckeller/MMM-HappyHours",
     "maintainer": "aleckeller",
     "maintainerURL": "",
-    "description": "A module that finds and displays local happy hours",
+    "description": "A module that finds and displays local happy hours.",
     "issues": []
   },
   {
@@ -3110,7 +3110,7 @@
     "id": "skuethe/MMM-HH-LocalTransport",
     "maintainer": "skuethe",
     "maintainerURL": "",
-    "description": "Display local transport in Hamburg/Germany. Now up to date",
+    "description": "Display local transport in Hamburg/Germany. Now up to date.",
     "issues": []
   },
   {
@@ -3164,7 +3164,7 @@
     "id": "Helpi90/MMM-HLTV",
     "maintainer": "Helpi90",
     "maintainerURL": "",
-    "description": "Module which will show CS:GO matches provided by HLTV",
+    "description": "Module which will show CS:GO matches provided by HLTV.",
     "issues": []
   },
   {
@@ -3218,7 +3218,7 @@
     "id": "mathewmeconry/MMM-HomeAssistant-Touch",
     "maintainer": "mathewmeconry",
     "maintainerURL": "https://github.com/mathewmeconry",
-    "description": "Displays information from HomeAssistant via Rest API. Litens for State changes with Websockets. Touch control for Entities",
+    "description": "Displays information from HomeAssistant via Rest API. Litens for State changes with Websockets. Touch control for Entities.",
     "issues": []
   },
   {
@@ -3290,7 +3290,7 @@
     "id": "dancj/MMM-Hover",
     "maintainer": "dancj",
     "maintainerURL": "",
-    "description": "Connects to HoverLabs hover gesture detector and can raise notifications on swipes and taps",
+    "description": "Connects to HoverLabs hover gesture detector and can raise notifications on swipes and taps.",
     "issues": []
   },
   {
@@ -3353,7 +3353,7 @@
     "id": "harv-singh/MMM-hukamnama",
     "maintainer": "harv-singh",
     "maintainerURL": "https://github.com/harv-singh",
-    "description": "This module loads the latest Hukamnama from Sri Harmandir Sahib powered by the GurbaniNow API: <a target=\"_blank\" href=\"https://github.com/GurbaniNow/api\">https://github.com/GurbaniNow/api</a>",
+    "description": "This module loads the latest Hukamnama from Sri Harmandir Sahib powered by the GurbaniNow API: <a target=\"_blank\" href=\"https://github.com/GurbaniNow/api\">https://github.com/GurbaniNow/api</a>.",
     "issues": []
   },
   {
@@ -3398,7 +3398,7 @@
     "id": "nixnuex/MMM-iCal-ToDo",
     "maintainer": "nixnuex",
     "maintainerURL": "",
-    "description": "Display non-completed ToDos from an iCal source like CalDAV or the Task App in ownCloud or Nextcloud",
+    "description": "Display non-completed ToDos from an iCal source like CalDAV or the Task App in ownCloud or Nextcloud.",
     "issues": []
   },
   {
@@ -3443,7 +3443,7 @@
     "id": "soyrubio/MMM-idos",
     "maintainer": "soyrubio",
     "maintainerURL": "https://github.com/soyrubio",
-    "description": "Display estimated departures for public transport stops in the Czech Republic",
+    "description": "Display estimated departures for public transport stops in the Czech Republic.",
     "issues": []
   },
   {
@@ -3480,7 +3480,7 @@
     "id": "AgP42/MMM-iFrame-Ping",
     "maintainer": "AgP42",
     "maintainerURL": "https://github.com/AgP42",
-    "description": "An iFrame module to display any web content to your MagicMirror² (including YouTube, IP Cameras, ...). Several functionalities like auto-refresh, Ping the Url before to display it and last update time display. See also <a target=\"_blank\" href=\"https://forum.magicmirror.builders/topic/9750/mmm-smartwebdisplay-display-web-contents-including-youtube-on-your-mm\">MMM-SmartWebDisplay</a>",
+    "description": "An iFrame module to display any web content to your MagicMirror² (including YouTube, IP cameras, etc.). Several functionalities like auto-refresh, Ping the URL before to display it and last update time display. See also <a target=\"_blank\" href=\"https://forum.magicmirror.builders/topic/9750/mmm-smartwebdisplay-display-web-contents-including-youtube-on-your-mm\">MMM-SmartWebDisplay</a>.",
     "issues": []
   },
   {
@@ -3489,7 +3489,7 @@
     "id": "basti0001/MMM-iHaveBeenThere",
     "maintainer": "basti0001",
     "maintainerURL": "",
-    "description": "Visulizes your places where you have been traveled..or intend to go.......or or or.",
+    "description": "Visualizes your places where you have been traveled..or intend to go.",
     "issues": []
   },
   {
@@ -3525,7 +3525,7 @@
     "id": "Adman/MMM-imhdsk",
     "maintainer": "Adman",
     "maintainerURL": "https://github.com/Adman",
-    "description": "Display real-time estimations for public transport stops in Bratislava, Slovakia",
+    "description": "Display real-time estimations for public transport stops in Bratislava, Slovakia.",
     "issues": []
   },
   {
@@ -3561,7 +3561,7 @@
     "id": "kapsolas/MMM-Instagram",
     "maintainer": "kapsolas",
     "maintainerURL": "",
-    "description": "A module load the images from a users Instagram feed. The images are displayed on the mirror and animated; it requires an API_KEY",
+    "description": "A module load the images from a users Instagram feed. The images are displayed on the mirror and animated. API key required.",
     "issues": []
   },
   {
@@ -3588,7 +3588,7 @@
     "id": "mykle1/MMM-Insults",
     "maintainer": "mykle1",
     "maintainerURL": "",
-    "description": "Alternative to the compliments module",
+    "description": "Alternative to the compliments module.",
     "issues": []
   },
   {
@@ -3597,7 +3597,7 @@
     "id": "ianmccon/MMM-IntelligentOctopus",
     "maintainer": "ianmccon",
     "maintainerURL": "",
-    "description": "Displays energy usage history for your Octopus Energy account. For use if you are on the Intelligent Octopus tarrif. Based on MMM-OctoMon",
+    "description": "Displays energy usage history for your Octopus Energy account. For use if you are on the Intelligent Octopus tarrif. Based on MMM-OctoMon.",
     "issues": []
   },
   {
@@ -3624,7 +3624,7 @@
     "id": "aduyng/MMM-IOTStatus",
     "maintainer": "aduyng",
     "maintainerURL": "",
-    "description": "Show my Smartthings Home automation device status using firebase realtime database",
+    "description": "Show my Smartthings Home automation device status using firebase realtime database.",
     "issues": []
   },
   {
@@ -3660,7 +3660,7 @@
     "id": "PavlenkoM/MMM-IQAir",
     "maintainer": "PavlenkoM",
     "maintainerURL": "https://github.com/PavlenkoM",
-    "description": "Air quality widget based on <a target=\"_blank\" href=\"https://www.iqair.com\">IQAir API</a>",
+    "description": "Air quality widget based on <a target=\"_blank\" href=\"https://www.iqair.com\">IQAir API</a>.",
     "issues": []
   },
   {
@@ -3741,7 +3741,7 @@
     "id": "fering3/MMM-JEOPARDY-Enhanced",
     "maintainer": "fering3",
     "maintainerURL": "",
-    "description": "Discover a treasure trove of over 156,800 meticulously crafted clues and answers from the show, ensuring endless entertainment and excitement!",
+    "description": "Discover a treasure trove of over 156,800 meticulously crafted clues and answers from the show, ensuring endless entertainment and excitement.",
     "issues": []
   },
   {
@@ -3768,7 +3768,7 @@
     "id": "nomis6432/MMM-jitsi",
     "maintainer": "nomis6432",
     "maintainerURL": "https://github.com/nomis6432",
-    "description": "Jitsi meet IFrame integration",
+    "description": "Jitsi meet IFrame integration.",
     "issues": []
   },
   {
@@ -3823,7 +3823,7 @@
     "id": "timdows/MMM-JsonGraph",
     "maintainer": "timdows",
     "maintainerURL": "",
-    "description": "Creates a SVG bar chart based on a list gathered from a json request",
+    "description": "Creates a SVG bar chart based on a list gathered from a JSON request.",
     "issues": []
   },
   {
@@ -3841,7 +3841,7 @@
     "id": "timdows/MMM-JsonTable",
     "maintainer": "timdows",
     "maintainerURL": "",
-    "description": "Creates a table filled by a list gathered from a json request, and puts all variables of the object in its own table column",
+    "description": "Creates a table filled by a list gathered from a JSON request, and puts all variables of the object in its own table column.",
     "issues": []
   },
   {
@@ -3877,7 +3877,7 @@
     "id": "njwilliams/MMM-Kanji-Random",
     "maintainer": "njwilliams",
     "maintainerURL": "",
-    "description": "Show a random Kanji",
+    "description": "Show a random Kanji.",
     "issues": []
   },
   {
@@ -3886,7 +3886,7 @@
     "id": "shbatm/MMM-KeyBindings",
     "maintainer": "shbatm",
     "maintainerURL": "",
-    "description": "A module for getting bluetooth remote control and keyboard inputs",
+    "description": "A module for getting bluetooth remote control and keyboard inputs.",
     "issues": []
   },
   {
@@ -3895,7 +3895,7 @@
     "id": "l0b5ter/KeyDisplayed",
     "maintainer": "l0b5ter",
     "maintainerURL": "",
-    "description": "Use the keyboard to open and close a popupwindow in the MagicMirror². Like lets say using the \"q\" key will open a popupwindow on MagicMirror's webpage. Using the iFrame to display web content",
+    "description": "Use the keyboard to open and close a popupwindow in the MagicMirror². Like lets say using the \"q\" key will open a popupwindow on MagicMirror's webpage. Using the iFrame to display web content.",
     "issues": []
   },
   {
@@ -3904,7 +3904,7 @@
     "id": "ItsMeBrille/MMM-Keypress",
     "maintainer": "ItsMeBrille",
     "maintainerURL": "https://github.com/ItsMeBrille",
-    "description": "A module for sending notifications to other modules based on keys pressed",
+    "description": "A module for sending notifications to other modules based on keys pressed.",
     "issues": []
   },
   {
@@ -3913,7 +3913,7 @@
     "id": "Alvinger/MMM-Koket-by-Sodexo",
     "maintainer": "Alvinger",
     "maintainerURL": "",
-    "description": "Replaced by MMM-Mashie-Skolmat! Show school lunch menus from Köket by Sodexo (based on MMM-Skolmaten with different source for menus)",
+    "description": "Replaced by MMM-Mashie-Skolmat! Show school lunch menus from Köket by Sodexo (based on MMM-Skolmaten with different source for menus).",
     "issues": []
   },
   {
@@ -4003,7 +4003,7 @@
     "id": "Tom-Hirschberger/MMM-LEDStripControl",
     "maintainer": "Tom-Hirschberger",
     "maintainerURL": "https://github.com/Tom-Hirschberger",
-    "description": "A module to control the color (and pong game parameters) of led strips via MQTT",
+    "description": "A module to control the color (and pong game parameters) of led strips via MQTT.",
     "issues": []
   },
   {
@@ -4030,7 +4030,7 @@
     "id": "l3d00m/MMM-LibrespotJava",
     "maintainer": "l3d00m",
     "maintainerURL": "",
-    "description": "Display the song you are currently streaming on your <a target=\"_blank\" href=\"https://github.com/librespot-org/librespot-java\">Librespot Java</a> Spotify Speaker",
+    "description": "Display the song you are currently streaming on your <a target=\"_blank\" href=\"https://github.com/librespot-org/librespot-java\">Librespot Java</a> Spotify Speaker.",
     "issues": []
   },
   {
@@ -4039,7 +4039,7 @@
     "id": "mykle1/MMM-LICE",
     "maintainer": "mykle1",
     "maintainerURL": "",
-    "description": "Live International Currency Exchange",
+    "description": "Live International Currency Exchange.",
     "issues": []
   },
   {
@@ -4048,7 +4048,7 @@
     "id": "tonymorris/MMM-lichess-daily",
     "maintainer": "tonymorris",
     "maintainerURL": "",
-    "description": "The lichess.org daily puzzle",
+    "description": "The lichess.org daily puzzle.",
     "issues": []
   },
   {
@@ -4066,7 +4066,7 @@
     "id": "mcintyrehh/MMM-Live-Stream-TV",
     "maintainer": "mcintyrehh",
     "maintainerURL": "https://github.com/mcintyrehh",
-    "description": "Display HLS live feeds with Arduino powered channel changing!",
+    "description": "Display HLS live feeds with Arduino powered channel changing.",
     "issues": []
   },
   {
@@ -4075,7 +4075,7 @@
     "id": "djey47/MMM-LKY-TIC",
     "maintainer": "djey47",
     "maintainerURL": "https://github.com/djey47",
-    "description": "Module to display info about home power supply - FRANCE TELEINFO ENEDIS",
+    "description": "Module to display info about home power supply - FRANCE TELEINFO ENEDIS.",
     "issues": []
   },
   {
@@ -4102,7 +4102,7 @@
     "id": "glitch452/MMM-LocalTemperature",
     "maintainer": "glitch452",
     "maintainerURL": "",
-    "description": "Show the temperature and/or humidity from a DHT11, DHT22, or AM2302 sensor",
+    "description": "Show the temperature and/or humidity from a DHT11, DHT22, or AM2302 sensor.",
     "issues": []
   },
   {
@@ -4228,7 +4228,7 @@
     "id": "MMRIZE/MMM-LunarDate",
     "maintainer": "MMRIZE",
     "maintainerURL": "",
-    "description": "Module - Lunar date of today (Chinese Zodiac)",
+    "description": "Module - Lunar date of today (Chinese Zodiac).",
     "issues": []
   },
   {
@@ -4237,8 +4237,9 @@
     "id": "mykle1/MMM-Lunartic",
     "maintainer": "mykle1",
     "maintainerURL": "",
-    "description": "Up to the minute information about our Lunar partner, with a splash of EyeCandy, to boot! <strong>Doesn't work anymore (API is down).</strong>",
-    "issues": []
+    "description": "Up to the minute information about our Lunar partner, with a splash of EyeCandy, to boot!",
+    "issues": [],
+    "outdated": "Deprecated. Doesn't work anymore (API is down)."
   },
   {
     "name": "MMM-Luxembourg-Public-Transport",
@@ -4255,7 +4256,7 @@
     "id": "kyle-kelly/MMM-lyft",
     "maintainer": "kyle-kelly",
     "maintainerURL": "",
-    "description": "Estimated arrival times for lyft",
+    "description": "Estimated arrival times for lyft.",
     "issues": []
   },
   {
@@ -4264,7 +4265,7 @@
     "id": "doctorfree/MMM-MacAddressScan",
     "maintainer": "doctorfree",
     "maintainerURL": "https://github.com/doctorfree",
-    "description": "A module which determines the status of devices on the network based on their MAC address. It can also look up devices by IP addresses or hostnames. This module is an enhanced clone of the excellent MMM-NetworkScanner module by <a target=\"_blank\" href=\"https://github.com/ianperrin\">Ian Perrin</a>",
+    "description": "A module which determines the status of devices on the network based on their MAC address. It can also look up devices by IP addresses or hostnames. This module is an enhanced clone of the excellent MMM-NetworkScanner module by <a target=\"_blank\" href=\"https://github.com/ianperrin\">Ian Perrin</a>.",
     "issues": []
   },
   {
@@ -4318,7 +4319,7 @@
     "id": "Lavve/MMM-MagicMover",
     "maintainer": "Lavve",
     "maintainerURL": "",
-    "description": "Prevent screen burn-in on your MagicMirror²",
+    "description": "Prevent screen burn-in on your MagicMirror².",
     "issues": []
   },
   {
@@ -4327,8 +4328,9 @@
     "id": "nhubbard/MagicPlugins/tree/master/snow",
     "maintainer": "nhubbard",
     "maintainerURL": "",
-    "description": "Get your festive on. Put snow in the background for winter or anti burn-in purposes... your family won't know the difference.",
-    "issues": []
+    "description": "Get your festive on. Put snow in the background for winter or anti burn-in purposes. Your family won't know the difference.",
+    "issues": [],
+    "outdated": "Deprecated. The successor is MMM-Snow."
   },
   {
     "name": "MMM-MagicSuperHero",
@@ -4336,7 +4338,7 @@
     "id": "Lavve/MMM-MagicSuperHero",
     "maintainer": "Lavve",
     "maintainerURL": "",
-    "description": "Shows super heroes on your MagicMirror²!",
+    "description": "Shows super heroes on your mirror.",
     "issues": []
   },
   {
@@ -4381,7 +4383,7 @@
     "id": "Alvinger/MMM-Mashie-Skolmat",
     "maintainer": "Alvinger",
     "maintainerURL": "",
-    "description": "Show school lunch menus from Mashie.com. (based on MMM-Skolmaten with different source for menus)",
+    "description": "Show school lunch menus from Mashie.com. (based on MMM-Skolmaten with different source for menus).",
     "issues": []
   },
   {
@@ -4390,7 +4392,7 @@
     "id": "Hcreak/MMM-MataChuan",
     "maintainer": "Hcreak",
     "maintainerURL": "",
-    "description": "Chinese online godfather NM$L Sun Xiaochuan",
+    "description": "Chinese online godfather NM$L Sun Xiaochuan.",
     "issues": []
   },
   {
@@ -4471,7 +4473,7 @@
     "id": "ashishtank/MMM-MercedesMe",
     "maintainer": "ashishtank",
     "maintainerURL": "https://github.com/ashishtank",
-    "description": "Displays EV/Fuel status and Range of Mercedes cars",
+    "description": "Displays EV/Fuel status and Range of Mercedes cars.",
     "issues": []
   },
   {
@@ -4498,7 +4500,7 @@
     "id": "bibaldo/MMM-MiBiciTuBici",
     "maintainer": "bibaldo",
     "maintainerURL": "",
-    "description": "Displays the number of available bikes on the selected stations of Rosario, Santa Fe, Argentina public bike system (aka MOVI)",
+    "description": "Displays the number of available bikes on the selected stations of Rosario, Santa Fe, Argentina public bike system (aka MOVI).",
     "issues": []
   },
   {
@@ -4525,7 +4527,7 @@
     "id": "ralberth/MMM-MinecraftStatus",
     "maintainer": "ralberth",
     "maintainerURL": "",
-    "description": "Player status of Minecraft server",
+    "description": "Player status of Minecraft server.",
     "issues": []
   },
   {
@@ -4588,7 +4590,7 @@
     "id": "Klettner/MM-Remote",
     "maintainer": "Klettner",
     "maintainerURL": "https://github.com/Klettner",
-    "description": "Android 📱 and Windows-desktop 💻 app to control your MagicMirror² remotely. (Shutdown, reboot, toggle monitor on/off, change brightness of monitor, custom-commands...)",
+    "description": "Android 📱 and Windows-desktop 💻 app to control your MagicMirror² remotely. (Shutdown, reboot, toggle monitor on/off, change brightness of monitor, custom-commands, etc.).",
     "issues": []
   },
   {
@@ -4606,7 +4608,7 @@
     "id": "motey/MMM_ncdeck",
     "maintainer": "motey",
     "maintainerURL": "",
-    "description": "Viewer for Nextcloud Deck app decks",
+    "description": "Viewer for Nextcloud Deck app decks.",
     "issues": []
   },
   {
@@ -4633,7 +4635,7 @@
     "id": "hayseedbyte/mmm-helium-wallet",
     "maintainer": "hayseedbyte",
     "maintainerURL": "https://github.com/hayseedbyte",
-    "description": "Display your helium wallet balance and value (in your chosen currency) on your MagicMirror.",
+    "description": "Display your helium wallet balance and value (in your chosen currency) on your mirror.",
     "issues": []
   },
   {
@@ -4651,7 +4653,7 @@
     "id": "istvanfedak/mmm-miami-transit",
     "maintainer": "istvanfedak",
     "maintainerURL": "https://github.com/istvanfedak",
-    "description": "Displays the Miami Metrorail times for a given train station!",
+    "description": "Displays the Miami Metrorail times for a given train station.",
     "issues": []
   },
   {
@@ -4687,7 +4689,7 @@
     "id": "cSharpBastard/mmm-nordic-electrical-spot-prices",
     "maintainer": "cSharpBastard",
     "maintainerURL": "https://github.com/cSharpBastard",
-    "description": "Display current electrical spot prices in northen europe (also works in Germany)",
+    "description": "Display current electrical spot prices in northen Europe (also works in Germany).",
     "issues": []
   },
   {
@@ -4750,7 +4752,7 @@
     "id": "wzooff/mmm-uah-currency",
     "maintainer": "wzooff",
     "maintainerURL": "",
-    "description": "Display UAH currency from bank.gov.ua",
+    "description": "Display UAH currency from bank.gov.ua.",
     "issues": []
   },
   {
@@ -4777,7 +4779,7 @@
     "id": "https://bitbucket.org/rsperezn/mmm-uvindex",
     "maintainer": "rsperezn",
     "maintainerURL": "https://bitbucket.org/rsperezn",
-    "description": "Displays the current and forecasted UV Index fo a given location given its longitude and latitude. It requires a free API token from <a target=\"_blank\" href=\"https://www.openuv.io/\">https://www.openuv.io/</a>",
+    "description": "Displays the current and forecasted UV Index fo a given location given its longitude and latitude. It requires a free API token from <a target=\"_blank\" href=\"https://www.openuv.io/\">https://www.openuv.io/</a>.",
     "issues": []
   },
   {
@@ -4840,7 +4842,7 @@
     "id": "MMRIZE/MMM-ModuleMonkeyPatch",
     "maintainer": "MMRIZE",
     "maintainerURL": "",
-    "description": "On running-time monkey patch for other module",
+    "description": "On running-time monkey patch for other module.",
     "issues": []
   },
   {
@@ -4903,7 +4905,7 @@
     "id": "nischi/MMM-MotionControl",
     "maintainer": "nischi",
     "maintainerURL": "",
-    "description": "Control HDMI TV if some movement are detected from 3rd Party modules",
+    "description": "Control HDMI TV if some movement are detected from 3rd Party modules.",
     "issues": []
   },
   {
@@ -4993,7 +4995,7 @@
     "id": "PatriceG/MMM-MPR121",
     "maintainer": "PatriceG",
     "maintainerURL": "",
-    "description": "Connects multiple touch (capacitive) buttons via a MPR121 touch controller to send notifications to other modules (based on MMM-Buttons)",
+    "description": "Connects multiple touch (capacitive) buttons via a MPR121 touch controller to send notifications to other modules (based on MMM-Buttons).",
     "issues": []
   },
   {
@@ -5038,7 +5040,7 @@
     "id": "janm84/MMM-MQTTbind",
     "maintainer": "janm84",
     "maintainerURL": "",
-    "description": "A module to subscribe to MQTT Topics and forward the payload (as it is) as notification and vice versa. Features QoS, Clean Session, Retained Messages and Shortcuts...",
+    "description": "A module to subscribe to MQTT topics and forward the payload (as it is) as notification and vice versa. Features QoS, Clean Session, Retained Messages and Shortcuts.",
     "issues": []
   },
   {
@@ -5047,7 +5049,7 @@
     "id": "Tom-Hirschberger/MMM-MQTTbridge",
     "maintainer": "Tom-Hirschberger",
     "maintainerURL": "https://github.com/Tom-Hirschberger",
-    "description": "A powerful module that subscribes to MQTT broker and read/send MQTT messages and MM Notifications with a lot of individual setup/rules. Allows you to integrate MM into smart home like Home Assistant. Powerful automation with structured Noti and MQTT dictionaries rules (e.g. one mqtt message could trigger many predefined noti, and one mm-noti could trigger different predefined mqtt messages)",
+    "description": "A powerful module that subscribes to MQTT broker and read/send MQTT messages and MM Notifications with a lot of individual setup/rules. Allows you to integrate MM into smart home like Home Assistant. Powerful automation with structured Noti and MQTT dictionaries rules (e.g. one mqtt message could trigger many predefined noti, and one mm-noti could trigger different predefined mqtt messages).",
     "issues": []
   },
   {
@@ -5074,7 +5076,7 @@
     "id": "BKeyport/MMM-Multimonth",
     "maintainer": "BKeyport",
     "maintainerURL": "https://github.com/BKeyport",
-    "description": "Calendar module for displaying multiple mini-calendars at the same time (actively maintained)",
+    "description": "Calendar module for displaying multiple mini-calendars at the same time (actively maintained).",
     "issues": []
   },
   {
@@ -5092,7 +5094,7 @@
     "id": "jrettsch/MMM-MusicButler",
     "maintainer": "jrettsch",
     "maintainerURL": "",
-    "description": "Displays new music releases from tracked artists on musicbutler.io",
+    "description": "Displays new music releases from tracked artists on musicbutler.io.",
     "issues": []
   },
   {
@@ -5155,7 +5157,7 @@
     "id": "htilburgs/MMM-MyDutchWeather",
     "maintainer": "htilburgs",
     "maintainerURL": "",
-    "description": "Displays local Dutch weather from the KNMI 10-minutes netwerk",
+    "description": "Displays local Dutch weather from the KNMI 10-minutes netwerk.",
     "issues": []
   },
   {
@@ -5182,7 +5184,7 @@
     "id": "htilburgs/MMM-MyPrayerTimes",
     "maintainer": "htilburgs",
     "maintainerURL": "",
-    "description": "MyPrayerTimes is a simple Module, that calculate prayer times for any location around the world, based on a variety of calculation methods currently used in Muslim communities using the Aladhan API",
+    "description": "MyPrayerTimes is a simple module, that calculate prayer times for any location around the world, based on a variety of calculation methods currently used in Muslim communities using the Aladhan API.",
     "issues": []
   },
   {
@@ -5245,7 +5247,7 @@
     "id": "htilburgs/MMM-MyTraffic",
     "maintainer": "htilburgs",
     "maintainerURL": "",
-    "description": "Module is dead for now... Real Time Dutch traffic information from the ANWB",
+    "description": "Real Time Dutch traffic information from the ANWB. Module is dead for now (there is a PR which seems to fix it).",
     "issues": []
   },
   {
@@ -5335,7 +5337,7 @@
     "id": "RichieCZ/MMM-NameDay",
     "maintainer": "RichieCZ",
     "maintainerURL": "",
-    "description": "Nameday module (multiple countries)",
+    "description": "Nameday module (multiple countries).",
     "issues": []
   },
   {
@@ -5533,7 +5535,7 @@
     "id": "nischi/MMM-News-QR",
     "maintainer": "nischi",
     "maintainerURL": "",
-    "description": "Add a QR Code with the link to the showing Newsfeed (Default Newsfeed Module)",
+    "description": "Add a QR Code with the link to the showing Newsfeed (Default Newsfeed Module).",
     "issues": []
   },
   {
@@ -5542,7 +5544,7 @@
     "id": "mumblebaj/MMM-NewsAPI",
     "maintainer": "mumblebaj",
     "maintainerURL": "https://github.com/mumblebaj",
-    "description": "Module to to get news from <a target=\"_blank\" href=\"https://newsapi.org\">NewsAPi.org</a>",
+    "description": "Module to to get news from <a target=\"_blank\" href=\"https://newsapi.org\">newsapi.org</a>.",
     "issues": []
   },
   {
@@ -5569,7 +5571,7 @@
     "id": "trizome/next-train-transilien",
     "maintainer": "trizome",
     "maintainerURL": "https://github.com/trizome",
-    "description": "Next trains / RER transilien (SNCF) Ile-de-France from a station",
+    "description": "Next trains / RER transilien (SNCF) Ile-de-France from a station.",
     "issues": []
   },
   {
@@ -5587,7 +5589,7 @@
     "id": "starlingfire/MMM-NextCloud-Tasks",
     "maintainer": "starlingfire",
     "maintainerURL": "",
-    "description": "Displays ToDo list(s) from NextCloud Tasks app",
+    "description": "Displays ToDo list(s) from NextCloud Tasks app.",
     "issues": []
   },
   {
@@ -5605,7 +5607,7 @@
     "id": "CptMeetKat/MMM-NextTrains",
     "maintainer": "CptMeetKat",
     "maintainerURL": "https://github.com/CptMeetKat",
-    "description": "Display departures from Sydney train stations in NSW, Australia",
+    "description": "Display departures from Sydney train stations in NSW, Australia.",
     "issues": []
   },
   {
@@ -5641,7 +5643,7 @@
     "id": "mlbonniec/MMM-NiceHash",
     "maintainer": "mlbonniec",
     "maintainerURL": "https://github.com/mlbonniec",
-    "description": "Display your NiceHash projected income and rigs highest temperature",
+    "description": "Display your NiceHash projected income and rigs highest temperature.",
     "issues": []
   },
   {
@@ -5677,7 +5679,7 @@
     "id": "nikobix/MMM-Nixie-Clock",
     "maintainer": "nikobix",
     "maintainerURL": "",
-    "description": "Simple virtual Nixie Clock",
+    "description": "Simple virtual Nixie Clock.",
     "issues": []
   },
   {
@@ -5713,7 +5715,7 @@
     "id": "Jan-Bart/MMM-NMBS-Connection",
     "maintainer": "Jan-Bart",
     "maintainerURL": "",
-    "description": "Display upcoming trains between 2 NMBS/SNCB stations. (Belgium)",
+    "description": "Display upcoming trains between 2 NMBS/SNCB stations (Belgium).",
     "issues": []
   },
   {
@@ -5731,7 +5733,7 @@
     "id": "crice009/MMM-NOAATides",
     "maintainer": "crice009",
     "maintainerURL": "https://github.com/crice009",
-    "description": "Graph daily low and high tide predictions for a given NOAA tide station, and measured data as it is reported. Data is pulled from <a target=\"_blank\" href=\"https://tidesandcurrents.noaa.gov/map/index.html\">NOAA-tidesandcurrents</a>. Data is a free service - no API key",
+    "description": "Graph daily low and high tide predictions for a given NOAA tide station, and measured data as it is reported. Data is pulled from <a target=\"_blank\" href=\"https://tidesandcurrents.noaa.gov/map/index.html\">NOAA-tidesandcurrents</a>. Data is a free service - no API key.",
     "issues": []
   },
   {
@@ -5749,7 +5751,7 @@
     "id": "MMRIZE/MMM-NotificationTrigger",
     "maintainer": "MMRIZE",
     "maintainerURL": "",
-    "description": "MMM-NotificationTrigger is a simple notification relay which can convert notifications from TRIGGER_NOTIFICATION to FIRE_NOTIFICATION",
+    "description": "MMM-NotificationTrigger is a simple notification relay which can convert notifications from TRIGGER_NOTIFICATION to FIRE_NOTIFICATION.",
     "issues": []
   },
   {
@@ -5803,7 +5805,7 @@
     "id": "elaniobro/MMM-nyc-transit",
     "maintainer": "elaniobro",
     "maintainerURL": "https://github.com/elaniobro",
-    "description": "Real-time MTA subway countdown clock for stations you choose. Configurable for marquee and or list view",
+    "description": "Real-time MTA subway countdown clock for stations you choose. Configurable for marquee and or list view.",
     "issues": []
   },
   {
@@ -5893,7 +5895,7 @@
     "id": "jugler/MMM-OneBusAway",
     "maintainer": "jugler",
     "maintainerURL": "",
-    "description": "Shows ETA for buses for a given stop using OneBusAway API",
+    "description": "Shows ETA for buses for a given stop using OneBusAway API.",
     "issues": []
   },
   {
@@ -5920,7 +5922,7 @@
     "id": "seeshaughnessy/MMM-OneTracker",
     "maintainer": "seeshaughnessy",
     "maintainerURL": "",
-    "description": "Use OneTracker app to deliveries/packages by forwarding from any email address!",
+    "description": "Use OneTracker app to deliveries/packages by forwarding from any email address.",
     "issues": []
   },
   {
@@ -5947,7 +5949,7 @@
     "id": "shbatm/MMM-OnScreenMenu",
     "maintainer": "shbatm",
     "maintainerURL": "",
-    "description": "Simple On-Screen Menu for controlling the MagicMirror²",
+    "description": "Simple On-Screen Menu for controlling the MagicMirror².",
     "issues": []
   },
   {
@@ -5974,7 +5976,7 @@
     "id": "santanachia/MMM-OpelStatuses",
     "maintainer": "santanachia",
     "maintainerURL": "",
-    "description": "Shows current production status of your Opel/Vauxhall",
+    "description": "Shows current production status of your Opel/Vauxhall.",
     "issues": []
   },
   {
@@ -6019,7 +6021,7 @@
     "id": "johnny-co/MMM-OpenSprinkler",
     "maintainer": "johnny-co",
     "maintainerURL": "https://github.com/johnny-co",
-    "description": "Sprinkler module for displaying OpenSprinkler lawn care station and programs",
+    "description": "Sprinkler module for displaying OpenSprinkler lawn care station and programs.",
     "issues": []
   },
   {
@@ -6055,7 +6057,7 @@
     "id": "Gomez0015/MMM-OTIS",
     "maintainer": "Gomez0015",
     "maintainerURL": "",
-    "description": "Machine learning AI to take input and pass it through the AI to get an answer, best use is when combined with other modules to have full control over MagicMirror² with voice",
+    "description": "Machine learning AI to take input and pass it through the AI to get an answer, best use is when combined with other modules to have full control over MagicMirror² with voice.",
     "issues": []
   },
   {
@@ -6127,7 +6129,7 @@
     "id": "edward-shen/MMM-pages",
     "maintainer": "edward-shen",
     "maintainerURL": "",
-    "description": "A module that allows you to rotate out pages of modules!",
+    "description": "A module that allows you to rotate out pages of modules.",
     "issues": []
   },
   {
@@ -6244,7 +6246,7 @@
     "id": "jbamford/MMM-PenPlotter",
     "maintainer": "jbamford",
     "maintainerURL": "https://github.com/jbamford",
-    "description": "Render mesmerizing line animations on your mirror!",
+    "description": "Render mesmerizing line animations on your mirror.",
     "issues": []
   },
   {
@@ -6280,7 +6282,7 @@
     "id": "yuhanx0728/MMM-PGHBus",
     "maintainer": "yuhanx0728",
     "maintainerURL": "",
-    "description": "Real Time Pittsburgh bus information from Port Authority",
+    "description": "Real Time Pittsburgh bus information from Port Authority.",
     "issues": []
   },
   {
@@ -6307,7 +6309,7 @@
     "id": "RpDp-git/PiDisplaySleep",
     "maintainer": "RpDp-git",
     "maintainerURL": "",
-    "description": "A python script that puts your display to sleep, if your smartphone/smartwatch is not connected to the WiFi network !",
+    "description": "A python script that puts your display to sleep, if your smartphone/smartwatch is not connected to the WiFi network.",
     "issues": []
   },
   {
@@ -6325,7 +6327,7 @@
     "id": "mykle1/MMM-PilotWX",
     "maintainer": "mykle1",
     "maintainerURL": "",
-    "description": "Static or Rotating Weather for Pilots. International ICAO's",
+    "description": "Static or Rotating Weather for Pilots. International ICAO's.",
     "issues": []
   },
   {
@@ -6361,7 +6363,7 @@
     "id": "bugsounet/MMM-Pir",
     "maintainer": "bugsounet",
     "maintainerURL": "",
-    "description": "After a configurated time without any user interaction the display will turn off and hide all modules for economy mode.It will wake up with a Pir sensor [Maintained]",
+    "description": "After a configurated time without any user interaction the display will turn off and hide all modules for economy mode.It will wake up with a PIR sensor. [Maintained].",
     "issues": []
   },
   {
@@ -6416,7 +6418,7 @@
     "id": "nsieg/MMM-piwigo-photo-wheel",
     "maintainer": "nsieg",
     "maintainerURL": "https://github.com/nsieg",
-    "description": "Display photos downloaded from a <a target=\"_blank\" href=\"https://piwigo.org\">Piwigo</a> photo library instance",
+    "description": "Display photos downloaded from a <a target=\"_blank\" href=\"https://piwigo.org\">Piwigo</a> photo library instance.",
     "issues": []
   },
   {
@@ -6434,7 +6436,7 @@
     "id": "njwilliams/MMM-PlaceInfo",
     "maintainer": "njwilliams",
     "maintainerURL": "",
-    "description": "Displays brief information (flag, weather, exchange rate) about multiple locations at once",
+    "description": "Displays brief information (flag, weather, exchange rate) about multiple locations at once.",
     "issues": []
   },
   {
@@ -6443,7 +6445,7 @@
     "id": "MMRIZE/MMM-Planetarium",
     "maintainer": "MMRIZE",
     "maintainerURL": "",
-    "description": "Make your mirror to a Planetarium!",
+    "description": "Make your mirror to a Planetarium.",
     "issues": []
   },
   {
@@ -6461,7 +6463,7 @@
     "id": "gimdh/MMM-Plantower",
     "maintainer": "gimdh",
     "maintainerURL": "https://github.com/gimdh",
-    "description": "Displays air quality readings from Plantower PMSx003 series sensors",
+    "description": "Displays air quality readings from Plantower PMSx003 series sensors.",
     "issues": []
   },
   {
@@ -6479,7 +6481,7 @@
     "id": "glitch452/MMM-PlexNowPlaying",
     "maintainer": "glitch452",
     "maintainerURL": "",
-    "description": "Displays the list of playback sessions for a Plex Media Server",
+    "description": "Displays the list of playback sessions for a Plex Media Server.",
     "issues": []
   },
   {
@@ -6552,7 +6554,7 @@
     "id": "devduisburg/MMM-pollen",
     "maintainer": "devduisburg",
     "maintainerURL": "",
-    "description": "Display 2 day pollen forecast based on DWD geoserver data",
+    "description": "Display 2 day pollen forecast based on DWD geoserver data.",
     "issues": []
   },
   {
@@ -6561,7 +6563,7 @@
     "id": "vincep5/MMM-Pollen",
     "maintainer": "vincep5",
     "maintainerURL": "",
-    "description": "Display pollen.com information for your US zipcode",
+    "description": "Display pollen.com information for your US zipcode.",
     "issues": []
   },
   {
@@ -6570,7 +6572,7 @@
     "id": "lekesako/MMM-Pollen-FR",
     "maintainer": "lekesako",
     "maintainerURL": "https://github.com/lekesako",
-    "description": "Display pollen.fr information for your FR region code",
+    "description": "Display pollen.fr information for your FR region code.",
     "issues": []
   },
   {
@@ -6588,7 +6590,7 @@
     "id": "mykle1/MMM-PopulationClock",
     "maintainer": "mykle1",
     "maintainerURL": "",
-    "description": "Live World Population Clock",
+    "description": "Live World Population Clock.",
     "issues": []
   },
   {
@@ -6597,7 +6599,7 @@
     "id": "SikandAlex/MMM-Porcupine",
     "maintainer": "SikandAlex",
     "maintainerURL": "",
-    "description": "Picovoice Porcupine hotword detection, works with MMM-AssistantMk2",
+    "description": "Picovoice Porcupine hotword detection, works with MMM-AssistantMk2.",
     "issues": []
   },
   {
@@ -6606,7 +6608,7 @@
     "id": "Wanztwurst/MMM-portscan",
     "maintainer": "Wanztwurst",
     "maintainerURL": "",
-    "description": "Track the status of your services with opened/closed ports",
+    "description": "Track the status of your services with opened/closed ports.",
     "issues": []
   },
   {
@@ -6624,7 +6626,7 @@
     "id": "bureus/MMM-Postnord",
     "maintainer": "bureus",
     "maintainerURL": "",
-    "description": "Automatically track and trace PostNords letters, parcels and pallets with your phone number or email",
+    "description": "Automatically track and trace PostNords letters, parcels and pallets with your phone number or email.",
     "issues": []
   },
   {
@@ -6633,7 +6635,7 @@
     "id": "MikeBishop/MMM-Powerwall",
     "maintainer": "MikeBishop",
     "maintainerURL": "",
-    "description": "Display status of Tesla Powerwall &amp; Tesla vehicle charging",
+    "description": "Display status of Tesla Powerwall &amp; Tesla vehicle charging.",
     "issues": []
   },
   {
@@ -6651,7 +6653,7 @@
     "id": "Fifteen15Studios/MMM-PreciousMetals",
     "maintainer": "Fifteen15Studios",
     "maintainerURL": "https://github.com/Fifteen15Studios",
-    "description": "Displays prices of select precious metals and commodities, like gold and silver. Retrieves information from API provided by <a target=\"_blank\" href=\"https://api.metals.live\">api.metals.live</a>",
+    "description": "Displays prices of select precious metals and commodities, like gold and silver. Retrieves information from API provided by <a target=\"_blank\" href=\"https://api.metals.live\">api.metals.live</a>.",
     "issues": []
   },
   {
@@ -6769,7 +6771,7 @@
     "id": "ajones/MMM-PurpleAir",
     "maintainer": "ajones",
     "maintainerURL": "https://github.com/ajones",
-    "description": "Display air quality sensor data from <a target=\"_blank\" href=\"https://www2.purpleair.com\">Purple Air</a>",
+    "description": "Display air quality sensor data from <a target=\"_blank\" href=\"https://www2.purpleair.com\">Purple Air</a>.",
     "issues": []
   },
   {
@@ -6778,7 +6780,7 @@
     "id": "basknol/MMM-PushBulletNotifications",
     "maintainer": "basknol",
     "maintainerURL": "",
-    "description": "Display notifications from phone and PC and control your mirror using Pushbullet (API)",
+    "description": "Display notifications from phone and PC and control your mirror using Pushbullet (API).",
     "issues": []
   },
   {
@@ -6814,7 +6816,7 @@
     "id": "Daniel1145/MMM-Questrade",
     "maintainer": "Daniel1145",
     "maintainerURL": "",
-    "description": "Displays your Questrade positions",
+    "description": "Displays your Questrade positions.",
     "issues": []
   },
   {
@@ -6850,7 +6852,7 @@
     "id": "spoturdeal/MMM-rain-forecast",
     "maintainer": "spoturdeal",
     "maintainerURL": "",
-    "description": "Graphical rain forecast for the Netherlands, no dependies or outside scripts needed. Superfast with scalable vector graphics in desired color",
+    "description": "Graphical rain forecast for the Netherlands, no dependies or outside scripts needed. Superfast with scalable vector graphics in desired color.",
     "issues": []
   },
   {
@@ -6859,7 +6861,7 @@
     "id": "jalibu/MMM-RAIN-MAP",
     "maintainer": "jalibu",
     "maintainerURL": "https://github.com/jalibu",
-    "description": "A rain radar map based on OpenStreetMap. Multiple location markers, option for alternating positions and zoom levels",
+    "description": "A rain radar map based on OpenStreetMap. Multiple location markers, option for alternating positions and zoom levels.",
     "issues": []
   },
   {
@@ -6868,7 +6870,7 @@
     "id": "jojoduquartier/MMM-RAIN-RADAR",
     "maintainer": "jojoduquartier",
     "maintainerURL": "",
-    "description": "Displays a Precipitation Radar for your Location",
+    "description": "Displays a Precipitation Radar for your location.",
     "issues": []
   },
   {
@@ -6877,7 +6879,7 @@
     "id": "73cirdan/MMM-rainfc",
     "maintainer": "73cirdan",
     "maintainerURL": "",
-    "description": "2 hour Dutch rain forecast graph based on Buienradar",
+    "description": "2 hour Dutch rain forecast graph based on Buienradar.",
     "issues": []
   },
   {
@@ -6913,7 +6915,7 @@
     "id": "skuethe/MMM-RandomPhoto",
     "maintainer": "skuethe",
     "maintainerURL": "",
-    "description": "A module that will load a random photo from picsum. Originally by diego-vieira, now with support for local paths and NextCloud shares",
+    "description": "A module that will load a random photo from picsum. Originally by diego-vieira, now with support for local paths and NextCloud shares.",
     "issues": []
   },
   {
@@ -6949,7 +6951,7 @@
     "id": "nkl-kst/MMM-RBB-Weather",
     "maintainer": "nkl-kst",
     "maintainerURL": "https://github.com/nkl-kst",
-    "description": "Display RBB weather data",
+    "description": "Display RBB weather data.",
     "issues": []
   },
   {
@@ -6967,7 +6969,7 @@
     "id": "vincep5/MMM-RecentRainfall",
     "maintainer": "vincep5",
     "maintainerURL": "",
-    "description": "Display recent US rainfall with a small map of your state",
+    "description": "Display recent US rainfall with a small map of your state.",
     "issues": []
   },
   {
@@ -7012,7 +7014,7 @@
     "id": "rcberg3/MMM-RedditKarma",
     "maintainer": "rcberg3",
     "maintainerURL": "",
-    "description": "A simple module to display user karma from Reddit.com",
+    "description": "A simple module to display user karma from Reddit.com.",
     "issues": []
   },
   {
@@ -7157,7 +7159,7 @@
     "id": "Com-Lum/MMM-RMV",
     "maintainer": "Com-Lum",
     "maintainerURL": "",
-    "description": "Rhein-Main local transport system (RMV) - Departure Monitor",
+    "description": "Rhein-Main local transport system (RMV) - Departure Monitor.",
     "issues": []
   },
   {
@@ -7303,7 +7305,8 @@
     "maintainer": "MMRIZE",
     "maintainerURL": "",
     "description": "Module to change screen scenes by time and order with ANIMATION EFFECT.",
-    "issues": []
+    "issues": [],
+    "outdated": "Deprecated. The successor is MMM-Scenes2."
   },
   {
     "name": "MMM-Scenes2",
@@ -7311,7 +7314,7 @@
     "id": "MMRIZE/MMM-Scenes2",
     "maintainer": "MMRIZE",
     "maintainerURL": "",
-    "description": "Successor of MMM-Scenes Since MM 2.25 (AnimateCSS is introduced.)",
+    "description": "Module to change screen scenes by time and order with ANIMATION EFFECT. Successor of MMM-Scenes since MM 2.25 (AnimateCSS is introduced).",
     "issues": []
   },
   {
@@ -7338,7 +7341,7 @@
     "id": "kevinatown/MMM-Screencast",
     "maintainer": "kevinatown",
     "maintainerURL": "",
-    "description": "Cast a video from your phone to the MagicMirror² (currently can only cast YouTube)",
+    "description": "Cast a video from your phone to your mirror (currently can only cast YouTube).",
     "issues": []
   },
   {
@@ -7356,7 +7359,7 @@
     "id": "ralberth/MMM-ScriptScheduler",
     "maintainer": "ralberth",
     "maintainerURL": "",
-    "description": "Run a set of command-line scripts on a cron schedule and display an icon to differentiate",
+    "description": "Run a set of command-line scripts on a cron schedule and display an icon to differentiate.",
     "issues": []
   },
   {
@@ -7383,7 +7386,7 @@
     "id": "mykle1/MMM-SearchLight",
     "maintainer": "mykle1",
     "maintainerURL": "",
-    "description": "Screensaver",
+    "description": "Screensaver.",
     "issues": []
   },
   {
@@ -7698,7 +7701,7 @@
     "id": "AgP42/MMM-SmartWebDisplay",
     "maintainer": "AgP42",
     "maintainerURL": "https://github.com/AgP42",
-    "description": "An iFrame module to display web content (including YouTube, IP Cameras, ...). Several rotating URL, autorefresh and remote control of the URL to display, Next/Prev/Play/Stop. <a target=\"_blank\" href=\"https://forum.magicmirror.builders/topic/9750/mmm-smartwebdisplay-display-web-contents-including-youtube-on-your-mm\">MMM-SmartWebDisplay forum</a>.",
+    "description": "An iFrame module to display web content (including YouTube, IP cameras, etc.). Several rotating URL, autorefresh and remote control of the URL to display, Next/Prev/Play/Stop. <a target=\"_blank\" href=\"https://forum.magicmirror.builders/topic/9750/mmm-smartwebdisplay-display-web-contents-including-youtube-on-your-mm\">MMM-SmartWebDisplay forum</a>.",
     "issues": []
   },
   {
@@ -7734,7 +7737,7 @@
     "id": "MichMich/MMM-Snow",
     "maintainer": "MichMich",
     "maintainerURL": "",
-    "description": "More realistic snow plugin to improve your winter experience",
+    "description": "More realistic snow plugin to improve your winter experience.",
     "issues": []
   },
   {
@@ -7743,7 +7746,7 @@
     "id": "fewieden/MMM-soccer",
     "maintainer": "fewieden",
     "maintainerURL": "",
-    "description": "A module that displays standings from European Soccer (Football) leagues. (optional voice-control)",
+    "description": "A module that displays standings from European Soccer (Football) leagues (optional voice-control).",
     "issues": []
   },
   {
@@ -7914,7 +7917,7 @@
     "id": "skuethe/MMM-Spotify",
     "maintainer": "skuethe",
     "maintainerURL": "",
-    "description": "Spotify Controller - with device and account switch buttons, easy volume change via touch and much more",
+    "description": "Spotify Controller - with device and account switch buttons, easy volume change via touch and much more.",
     "issues": []
   },
   {
@@ -7932,7 +7935,7 @@
     "id": "victor-paumier/MMM-SpotifyHelper",
     "maintainer": "victor-paumier",
     "maintainerURL": "",
-    "description": "Add events to MMM-Spotify to manage volume and playlists",
+    "description": "Add events to MMM-Spotify to manage volume and playlists.",
     "issues": []
   },
   {
@@ -7995,7 +7998,7 @@
     "id": "hakanmhmd/MMM-Stock",
     "maintainer": "hakanmhmd",
     "maintainerURL": "",
-    "description": "Displays current stock prices of companies using YAHHO FINANCE API...",
+    "description": "Displays current stock prices of companies using YAHOO FINANCE API.",
     "issues": []
   },
   {
@@ -8247,7 +8250,7 @@
     "id": "Tom-Hirschberger/MMM-Temperature",
     "maintainer": "Tom-Hirschberger",
     "maintainerURL": "https://github.com/Tom-Hirschberger",
-    "description": "A module to display tempature, humdity, and more of DHT11, DHT22, BMT280, HTU21, DS18B20 or other sensors",
+    "description": "A module to display tempature, humdity, and more of DHT11, DHT22, BMT280, HTU21, DS18B20 or other sensors.",
     "issues": []
   },
   {
@@ -8418,7 +8421,7 @@
     "id": "mykle1/MMM-ToDoLive",
     "maintainer": "mykle1",
     "maintainerURL": "",
-    "description": "Edit ToDo's, lists, reminders, messages etc. without quitting or restarting your MagicMirror².",
+    "description": "Edit ToDo's, lists, reminders, messages etc. without quitting or restarting your mirror.",
     "issues": []
   },
   {
@@ -8544,7 +8547,7 @@
     "id": "bnitkin/MMM-transitfeed",
     "maintainer": "bnitkin",
     "maintainerURL": "https://github.com/bnitkin",
-    "description": "Upcoming departures for any transit agencies that publishes GTFS",
+    "description": "Upcoming departures for any transit agencies that publishes GTFS.",
     "issues": []
   },
   {
@@ -8679,7 +8682,7 @@
     "id": "WilliamFitzjohn/MMM-TwitchAlert",
     "maintainer": "WilliamFitzjohn",
     "maintainerURL": "https://github.com/WilliamFitzjohn",
-    "description": "Get notified when your favourite Twitch streamers go live!",
+    "description": "Get notified when your favourite Twitch streamers go live.",
     "issues": []
   },
   {
@@ -8922,7 +8925,7 @@
     "id": "erikmohn/MMM-Vindsiden",
     "maintainer": "erikmohn",
     "maintainerURL": "",
-    "description": "Display weather data from weather stations available at vindsiden.no(Norway)...",
+    "description": "Display weather data from weather stations available at vindsiden.no (Norway).",
     "issues": []
   },
   {
@@ -9039,7 +9042,7 @@
     "id": "delightedCrow/WallberryTheme",
     "maintainer": "delightedCrow",
     "maintainerURL": "",
-    "description": "Re-themes MagicMirror² to look like a beautiful digital photo wall display. It adds a new font, styles, redesigned clock and weather displays, and rotating background image pulled from Unsplash.com",
+    "description": "Re-themes MagicMirror² to look like a beautiful digital photo wall display. It adds a new font, styles, redesigned clock and weather displays, and rotating background image pulled from unsplash.com.",
     "issues": []
   },
   {
@@ -9165,7 +9168,7 @@
     "id": "FlatPepsi17/MMM-WeatherGraph",
     "maintainer": "FlatPepsi17",
     "maintainerURL": "",
-    "description": "Weather forecast with rain &amp; temp graphs. Lots of options to turn on &amp; off. Data from OpenWeatherMap API",
+    "description": "Weather forecast with rain &amp; temp graphs. Lots of options to turn on &amp; off. Data from OpenWeatherMap API.",
     "issues": []
   },
   {
@@ -9174,7 +9177,7 @@
     "id": "dWoolridge/MMM-WeatherHourlyByDay",
     "maintainer": "dWoolridge",
     "maintainerURL": "https://github.com/dWoolridge",
-    "description": "Displays an hourly forecast table for multiple days. Allows you to specify what hours of the day to include and which forecast components will be displayed",
+    "description": "Displays an hourly forecast table for multiple days. Allows you to specify what hours of the day to include and which forecast components will be displayed.",
     "issues": []
   },
   {
@@ -9193,7 +9196,7 @@
     "id": "PjTewkesbury/MMM-WebHookAlerts",
     "maintainer": "PjTewkesbury",
     "maintainerURL": "",
-    "description": "Displays HTTP POST webhook notifications on screen and supports templates for alert message formatting",
+    "description": "Displays HTTP POST webhook notifications on screen and supports templates for alert message formatting.",
     "issues": []
   },
   {
@@ -9247,7 +9250,7 @@
     "id": "st3v0rr/MMM-WH2600",
     "maintainer": "st3v0rr",
     "maintainerURL": "https://github.com/st3v0rr",
-    "description": "This module integrates a WH2600 System to display several statistics like temperature and humidity for all registered sensors, wind data, UV index and rain data",
+    "description": "This module integrates a WH2600 System to display several statistics like temperature and humidity for all registered sensors, wind data, UV index and rain data.",
     "issues": []
   },
   {
@@ -9355,7 +9358,7 @@
     "id": "yawnsde/MMM-WorldTides",
     "maintainer": "yawnsde",
     "maintainerURL": "",
-    "description": "Displays low and high water time predictions for a given tide station, derived from worldtides.info",
+    "description": "Displays low and high water time predictions for a given tide station, derived from worldtides.info.",
     "issues": []
   },
   {
