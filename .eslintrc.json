@@ -33,5 +33,5 @@
       }
     }
   ],
-  "ignorePatterns": ["modules/"]
+  "ignorePatterns": ["modules/", "**/docs/modules*.json"]
 }
