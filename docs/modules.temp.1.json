@@ -158,7 +158,7 @@
     "id": "sakirtemel/MMM-alexa",
     "maintainer": "sakirtemel",
     "maintainerURL": "",
-    "description": "Amazon Alexa integration with using Javascript only.",
+    "description": "Amazon Alexa integration with using JavaScript only.",
     "issues": []
   },
   {
@@ -176,7 +176,7 @@
     "id": "shbatm/MMM-AlexaOnOff",
     "maintainer": "shbatm",
     "maintainerURL": "",
-    "description": "Simple Mirror Control from External Home Assistant (Alexa/Google Home/HASS.io)",
+    "description": "Simple Mirror Control from External Home Assistant (Alexa/Google Home/HASS.io).",
     "issues": []
   },
   {
@@ -2804,7 +2804,7 @@
     "id": "gauravsacc/MMM-GoogleAssistant",
     "maintainer": "gauravsacc",
     "maintainerURL": "",
-    "description": "Google Assistant integration using python library. Activated using hotword 'Ok Google'",
+    "description": "Google Assistant integration using python library. Activated using hotword 'Ok Google'.",
     "issues": []
   },
   {
@@ -2813,7 +2813,7 @@
     "id": "bugsounet/MMM-GoogleAssistant",
     "maintainer": "bugsounet",
     "maintainerURL": "https://wiki.bugsounet.fr",
-    "description": "MMM-GoogleAssistant is an real embedded Google assistant on MagicMirror². [Maintained]",
+    "description": "MMM-GoogleAssistant is an real embedded Google assistant on MagicMirror². [Maintained].",
     "issues": []
   },
   {
@@ -3425,7 +3425,7 @@
     "id": "djey47/MMM-IDF-LOCALTRANSPORT",
     "maintainer": "djey47",
     "maintainerURL": "https://github.com/djey47",
-    "description": "Local transport in IDF (STIF) module based on <a target=\"_blank\" href=\"https://github.com/da4throux/MMM-Paris-RATP-PG\">MMM-Paris-RATP-PG</a>",
+    "description": "Local transport in IDF (STIF) module based on <a target=\"_blank\" href=\"https://github.com/da4throux/MMM-Paris-RATP-PG\">MMM-Paris-RATP-PG</a>.",
     "issues": []
   },
   {
@@ -3434,7 +3434,7 @@
     "id": "FalseIlyu/MMM-IdF-Transport",
     "maintainer": "FalseIlyu",
     "maintainerURL": "https://github.com/FalseIlyu",
-    "description": "Display next bus/tramway/metro/train in the Paris/Ile-de-France région in France using IDFM API",
+    "description": "Display next bus/tramway/metro/train in the Paris/Ile-de-France région in France using IDFM API.",
     "issues": []
   },
   {
@@ -3868,7 +3868,7 @@
     "id": "kalliope-project/MMM-kalliope",
     "maintainer": "kalliope-project",
     "maintainerURL": "",
-    "description": "Control MM from Kalliope assistant",
+    "description": "Control MM from Kalliope assistant.",
     "issues": []
   },
   {
@@ -5263,7 +5263,7 @@
     "id": "SageBrushes/MMM-MyTransitTime",
     "maintainer": "SageBrushes",
     "maintainerURL": "",
-    "description": "Display step by step directions to a location and provide an estimated time of arrival using Google Maps API",
+    "description": "Display step by step directions to a location and provide an estimated time of arrival using Google Maps API.",
     "issues": []
   },
   {
@@ -7180,11 +7180,11 @@
   },
   {
     "name": "MMM-RNV",
-    "url": "https://github.com/yawnsde/MMM-RNV",
-    "id": "yawnsde/MMM-RNV",
-    "maintainer": "yawnsde",
+    "url": "https://github.com/bogenpirat/MMM-RNV",
+    "id": "bogenpirat/MMM-RNV",
+    "maintainer": "bogenpirat",
     "maintainerURL": "",
-    "description": "Monitor a given station in the RNV traffic network",
+    "description": "Monitor a given station in the RNV traffic network.",
     "issues": []
   },
   {
@@ -7284,7 +7284,7 @@
     "id": "sebikolon/MMM-RVV",
     "maintainer": "sebikolon",
     "maintainerURL": "https://github.com/sebikolon/MMM-RVV \"github.com/sebikolon\"",
-    "description": "Departure monitor for the RVV (Regensburger Verkehrsverbund) public transport (bus) system (Bavaria/Germany)",
+    "description": "Departure monitor for the RVV (Regensburger Verkehrsverbund) public transport (bus) system (Bavaria/Germany).",
     "issues": []
   },
   {
@@ -7482,7 +7482,7 @@
     "id": "mosesyong/MMM-SG-Transport-V2",
     "maintainer": "mosesyong",
     "maintainerURL": "https://github.com/mosesyong",
-    "description": "Display bus transport info in Singapore",
+    "description": "Display bus transport info in Singapore.",
     "issues": []
   },
   {
@@ -7716,7 +7716,7 @@
     "id": "jvanoost/MMM-SNCF",
     "maintainer": "jvanoost",
     "maintainerURL": "",
-    "description": "Display upcoming trains between 2 SNCF stations (France)",
+    "description": "Display upcoming trains between 2 SNCF stations (France).",
     "issues": []
   },
   {
@@ -7950,7 +7950,7 @@
     "id": "alexandreLavenant/MMM-Star-Metro",
     "maintainer": "alexandreLavenant",
     "maintainerURL": "",
-    "description": "Display upcoming metros in Rennes (France)",
+    "description": "Display upcoming metros in Rennes (France).",
     "issues": []
   },
   {
@@ -8085,7 +8085,7 @@
     "id": "nixnuex/MMM-SwissCommute",
     "maintainer": "nixnuex",
     "maintainerURL": "",
-    "description": "Display the next departures for your favorite (train) connection in Switzerland (SBB)",
+    "description": "Display the next departures for your favorite (train) connection in Switzerland (SBB).",
     "issues": []
   },
   {
@@ -8103,7 +8103,7 @@
     "id": "vanhoekd/MMM-SwissStationboard",
     "maintainer": "vanhoekd",
     "maintainerURL": "",
-    "description": "Display the next departures in every direction for your favorite trainstation in Switzerland with delay information",
+    "description": "Display the next departures in every direction for your favorite trainstation in Switzerland with delay information.",
     "issues": []
   },
   {
@@ -8202,7 +8202,7 @@
     "id": "wiesty/MMM-Tankerkoenig",
     "maintainer": "wiesty",
     "maintainerURL": "https://github.com/wiesty",
-    "description": "Module to display the local gas prices in Germany. (Tankstellen Preise)",
+    "description": "Module to display the local gas prices in Germany (Tankstellen-Preise).",
     "issues": []
   },
   {
@@ -8256,7 +8256,7 @@
     "id": "mattdy/MMM-Tesla",
     "maintainer": "mattdy",
     "maintainerURL": "",
-    "description": "Display Tesla data from either <a target=\"_blank\" href=\"https://teslafi.com\">TeslaFi</a> or <a target=\"_blank\" href=\"https://www.tessie.com\">Tessie</a>",
+    "description": "Display Tesla data from either <a target=\"_blank\" href=\"https://teslafi.com\">TeslaFi</a> or <a target=\"_blank\" href=\"https://www.tessie.com\">Tessie</a>.",
     "issues": []
   },
   {
@@ -8274,7 +8274,7 @@
     "id": "spitzlbergerj/MMM-TeslaLogger",
     "maintainer": "spitzlbergerj",
     "maintainerURL": "https://github.com/spitzlbergerj",
-    "description": "Displays data from <a target=\"_blank\" href=\"https://github.com/bassmaster187/TeslaLogger\">TeslaLogger</a> or/and <a target=\"_blank\" href=\"https://github.com/adriankumpf/teslamate\">TeslaMate</a> via MQTT",
+    "description": "Displays data from <a target=\"_blank\" href=\"https://github.com/bassmaster187/TeslaLogger\">TeslaLogger</a> or/and <a target=\"_blank\" href=\"https://github.com/adriankumpf/teslamate\">TeslaMate</a> via MQTT.",
     "issues": []
   },
   {
@@ -8283,7 +8283,7 @@
     "id": "denverquane/MMM-Teslamate",
     "maintainer": "denverquane",
     "maintainerURL": "",
-    "description": "Display live Tesla status using the Teslamate self-hosted monitoring system and MQTT Broker",
+    "description": "Display live Tesla status using the Teslamate self-hosted monitoring system and MQTT Broker.",
     "issues": []
   },
   {
@@ -8292,7 +8292,7 @@
     "id": "aduyng/MMM-TeslaStatus",
     "maintainer": "aduyng",
     "maintainerURL": "",
-    "description": "Display my tesla status using data from firebase realtime database",
+    "description": "Display my tesla status using data from firebase realtime database.",
     "issues": []
   },
   {
@@ -8391,7 +8391,7 @@
     "id": "jaumebosch/MMM-TMB",
     "maintainer": "jaumebosch",
     "maintainerURL": "https://github.com/jaumebosch",
-    "description": "Display Barcelona's TMB bus times by line and stop",
+    "description": "Display Barcelona's TMB bus times by line and stop.",
     "issues": []
   },
   {
@@ -8427,7 +8427,7 @@
     "id": "bendardenne/MMM-TomTomTraffic",
     "maintainer": "bendardenne",
     "maintainerURL": "",
-    "description": "Show a map of a given area with TomTom traffic information",
+    "description": "Show a map of a given area with TomTom traffic information.",
     "issues": []
   },
   {
@@ -8562,7 +8562,7 @@
     "id": "dekinet/MMM-TranslinkBrisbane",
     "maintainer": "dekinet",
     "maintainerURL": "",
-    "description": "Simple display of train departure times for Brisbane (Australia)",
+    "description": "Simple display of train departure times for Brisbane (Australia).",
     "issues": []
   },
   {
@@ -8571,7 +8571,7 @@
     "id": "OrangeHoopla/MMM-TransLoc",
     "maintainer": "OrangeHoopla",
     "maintainerURL": "",
-    "description": "Display TransLoc locations for a bus stop, used by the Rider App",
+    "description": "Display TransLoc locations for a bus stop, used by the Rider App.",
     "issues": []
   },
   {
@@ -8634,7 +8634,7 @@
     "id": "nigel-daniels/MMM-Tube-Status",
     "maintainer": "nigel-daniels",
     "maintainerURL": "https://github.com/nigel-daniels",
-    "description": "Simple at-a-glance display of the London Underground system status. See <a target=\"_blank\" href=\"https://github.com/emanuele-albini/MMM-TFL-Status\">MMM-TFL-Status</a> for more modes (e.g., Elizabeth line, DLR, Buses, Tram, etc.)",
+    "description": "Simple at-a-glance display of the London Underground system status. See <a target=\"_blank\" href=\"https://github.com/emanuele-albini/MMM-TFL-Status\">MMM-TFL-Status</a> for more modes (e.g., Elizabeth line, DLR, Buses, Tram, etc.).",
     "issues": []
   },
   {
@@ -8652,7 +8652,7 @@
     "id": "rafagale/MMM-TUZSAZaragoza",
     "maintainer": "rafagale",
     "maintainerURL": "https://github.com/rafagale",
-    "description": "Get estimations for bus stops in the city of Zaragoza (Spain)",
+    "description": "Get estimations for bus stops in the city of Zaragoza (Spain).",
     "issues": []
   },
   {
@@ -8706,7 +8706,7 @@
     "id": "kyle-kelly/MMM-uber",
     "maintainer": "kyle-kelly",
     "maintainerURL": "",
-    "description": "Estimated arrival times for UBER",
+    "description": "Estimated arrival times for UBER.",
     "issues": []
   },
   {
@@ -8994,7 +8994,7 @@
     "id": "eouia/MMM-VolvoOnCall",
     "maintainer": "eouia",
     "maintainerURL": "",
-    "description": "Display Volvo car status and trip information by VolvoOnCall",
+    "description": "Display Volvo car status and trip information by VolvoOnCall.",
     "issues": []
   },
   {
@@ -9030,7 +9030,7 @@
     "id": "fhinder/MMM-vvsDeparture",
     "maintainer": "fhinder",
     "maintainerURL": "https://github.com/fhinder",
-    "description": "Display departures for public transport in Stuttgart (Covers VVS Area). Based on MMM-vvsDebarture by Niklas Kappler, changed deprected request dependency",
+    "description": "Display departures for public transport in Stuttgart (Covers VVS Area). Based on MMM-vvsDebarture by Niklas Kappler, changed deprected request dependency.",
     "issues": []
   },
   {
@@ -9220,7 +9220,7 @@
     "id": "NikolasRupp/MMM-weconnectid",
     "maintainer": "NikolasRupp",
     "maintainerURL": "https://github.com/NikolasRupp",
-    "description": "Shows Status of your VW ID Car based on We Connect",
+    "description": "Shows Status of your VW ID Car based on We Connect.",
     "issues": []
   },
   {
@@ -9427,7 +9427,7 @@
     "id": "DimmanT/MMM-yandex-route",
     "maintainer": "DimmanT",
     "maintainerURL": "",
-    "description": "Displays car routes on the map, using Yandex.Maps API",
+    "description": "Displays car routes on the map, using Yandex.Maps API.",
     "issues": []
   },
   {

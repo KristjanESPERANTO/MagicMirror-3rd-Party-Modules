@@ -239,7 +239,7 @@
     "id": "sakirtemel/MMM-alexa",
     "maintainer": "sakirtemel",
     "maintainerURL": "",
-    "description": "Amazon Alexa integration with using Javascript only.",
+    "description": "Amazon Alexa integration with using JavaScript only.",
     "issues": [
       "`package.json` issue: No repository field.",
       "Issue: No image found."
@@ -268,7 +268,7 @@
     "id": "shbatm/MMM-AlexaOnOff",
     "maintainer": "shbatm",
     "maintainerURL": "",
-    "description": "Simple Mirror Control from External Home Assistant (Alexa/Google Home/HASS.io)",
+    "description": "Simple Mirror Control from External Home Assistant (Alexa/Google Home/HASS.io).",
     "issues": [
       "Issue: No image found."
     ],
@@ -4029,7 +4029,7 @@
     "id": "gauravsacc/MMM-GoogleAssistant",
     "maintainer": "gauravsacc",
     "maintainerURL": "",
-    "description": "Google Assistant integration using python library. Activated using hotword 'Ok Google'",
+    "description": "Google Assistant integration using python library. Activated using hotword 'Ok Google'.",
     "issues": [
       "`package.json` issue: No repository field.",
       "`package.json` issue: No license field."
@@ -4041,7 +4041,7 @@
     "id": "bugsounet/MMM-GoogleAssistant",
     "maintainer": "bugsounet",
     "maintainerURL": "https://wiki.bugsounet.fr",
-    "description": "MMM-GoogleAssistant is an real embedded Google assistant on MagicMirror². [Maintained]",
+    "description": "MMM-GoogleAssistant is an real embedded Google assistant on MagicMirror². [Maintained].",
     "issues": [],
     "tags": [
       "google assistant",
@@ -4897,7 +4897,7 @@
     "id": "djey47/MMM-IDF-LOCALTRANSPORT",
     "maintainer": "djey47",
     "maintainerURL": "https://github.com/djey47",
-    "description": "Local transport in IDF (STIF) module based on <a target=\"_blank\" href=\"https://github.com/da4throux/MMM-Paris-RATP-PG\">MMM-Paris-RATP-PG</a>",
+    "description": "Local transport in IDF (STIF) module based on <a target=\"_blank\" href=\"https://github.com/da4throux/MMM-Paris-RATP-PG\">MMM-Paris-RATP-PG</a>.",
     "issues": [],
     "tags": [
       "localtransport",
@@ -4917,7 +4917,7 @@
     "id": "FalseIlyu/MMM-IdF-Transport",
     "maintainer": "FalseIlyu",
     "maintainerURL": "https://github.com/FalseIlyu",
-    "description": "Display next bus/tramway/metro/train in the Paris/Ile-de-France région in France using IDFM API",
+    "description": "Display next bus/tramway/metro/train in the Paris/Ile-de-France région in France using IDFM API.",
     "issues": [],
     "tags": [
       "idf-transport",
@@ -5545,7 +5545,7 @@
     "id": "kalliope-project/MMM-kalliope",
     "maintainer": "kalliope-project",
     "maintainerURL": "",
-    "description": "Control MM from Kalliope assistant",
+    "description": "Control MM from Kalliope assistant.",
     "issues": [
       "Issue: There is no `package.json`. We need this file to gather information about the module."
     ]
@@ -7562,7 +7562,7 @@
     "id": "SageBrushes/MMM-MyTransitTime",
     "maintainer": "SageBrushes",
     "maintainerURL": "",
-    "description": "Display step by step directions to a location and provide an estimated time of arrival using Google Maps API",
+    "description": "Display step by step directions to a location and provide an estimated time of arrival using Google Maps API.",
     "issues": [
       "`package.json` issue: No description",
       "`package.json` issue: No repository field."
@@ -10352,14 +10352,18 @@
   },
   {
     "name": "MMM-RNV",
-    "url": "https://github.com/yawnsde/MMM-RNV",
-    "id": "yawnsde/MMM-RNV",
-    "maintainer": "yawnsde",
+    "url": "https://github.com/bogenpirat/MMM-RNV",
+    "id": "bogenpirat/MMM-RNV",
+    "maintainer": "bogenpirat",
     "maintainerURL": "",
-    "description": "Monitor a given station in the RNV traffic network",
+    "description": "Monitor a given station in the RNV traffic network.",
     "issues": [
-      "Issue: An error occurred while getting information from 'package.json': SyntaxError: Unexpected token ']', ...\"odule\",\n  ],\n  \"auth\"... is not valid JSON"
-    ]
+      "Issue: No image found."
+    ],
+    "tags": [
+      "rnv"
+    ],
+    "license": "MIT"
   },
   {
     "name": "MMM-RocketLeagueZ",
@@ -10492,7 +10496,7 @@
     "id": "sebikolon/MMM-RVV",
     "maintainer": "sebikolon",
     "maintainerURL": "https://github.com/sebikolon/MMM-RVV \"github.com/sebikolon\"",
-    "description": "Departure monitor for the RVV (Regensburger Verkehrsverbund) public transport (bus) system (Bavaria/Germany)",
+    "description": "Departure monitor for the RVV (Regensburger Verkehrsverbund) public transport (bus) system (Bavaria/Germany).",
     "issues": [
       "Issue: There is no `package.json`. We need this file to gather information about the module."
     ]
@@ -10785,7 +10789,7 @@
     "id": "mosesyong/MMM-SG-Transport-V2",
     "maintainer": "mosesyong",
     "maintainerURL": "https://github.com/mosesyong",
-    "description": "Display bus transport info in Singapore",
+    "description": "Display bus transport info in Singapore.",
     "issues": [],
     "license": "ISC",
     "image": "screenshots-screenshot.jpg"
@@ -11135,7 +11139,7 @@
     "id": "jvanoost/MMM-SNCF",
     "maintainer": "jvanoost",
     "maintainerURL": "",
-    "description": "Display upcoming trains between 2 SNCF stations (France)",
+    "description": "Display upcoming trains between 2 SNCF stations (France).",
     "issues": [],
     "tags": [
       "localtransport",
@@ -11470,7 +11474,7 @@
     "id": "alexandreLavenant/MMM-Star-Metro",
     "maintainer": "alexandreLavenant",
     "maintainerURL": "",
-    "description": "Display upcoming metros in Rennes (France)",
+    "description": "Display upcoming metros in Rennes (France).",
     "issues": [
       "Issue: There is no `package.json`. We need this file to gather information about the module."
     ]
@@ -11659,7 +11663,7 @@
     "id": "nixnuex/MMM-SwissCommute",
     "maintainer": "nixnuex",
     "maintainerURL": "",
-    "description": "Display the next departures for your favorite (train) connection in Switzerland (SBB)",
+    "description": "Display the next departures for your favorite (train) connection in Switzerland (SBB).",
     "issues": [
       "`package.json` issue: No repository field.",
       "Issue: No image found."
@@ -11683,7 +11687,7 @@
     "id": "vanhoekd/MMM-SwissStationboard",
     "maintainer": "vanhoekd",
     "maintainerURL": "",
-    "description": "Display the next departures in every direction for your favorite trainstation in Switzerland with delay information",
+    "description": "Display the next departures in every direction for your favorite trainstation in Switzerland with delay information.",
     "issues": [
       "`package.json` issue: No repository field."
     ],
@@ -11834,7 +11838,7 @@
     "id": "wiesty/MMM-Tankerkoenig",
     "maintainer": "wiesty",
     "maintainerURL": "https://github.com/wiesty",
-    "description": "Module to display the local gas prices in Germany. (Tankstellen Preise)",
+    "description": "Module to display the local gas prices in Germany (Tankstellen-Preise).",
     "issues": [],
     "tags": [
       "gas",
@@ -11923,7 +11927,7 @@
     "id": "mattdy/MMM-Tesla",
     "maintainer": "mattdy",
     "maintainerURL": "",
-    "description": "Display Tesla data from either <a target=\"_blank\" href=\"https://teslafi.com\">TeslaFi</a> or <a target=\"_blank\" href=\"https://www.tessie.com\">Tessie</a>",
+    "description": "Display Tesla data from either <a target=\"_blank\" href=\"https://teslafi.com\">TeslaFi</a> or <a target=\"_blank\" href=\"https://www.tessie.com\">Tessie</a>.",
     "issues": [],
     "tags": [
       "tesla",
@@ -11952,7 +11956,7 @@
     "id": "spitzlbergerj/MMM-TeslaLogger",
     "maintainer": "spitzlbergerj",
     "maintainerURL": "https://github.com/spitzlbergerj",
-    "description": "Displays data from <a target=\"_blank\" href=\"https://github.com/bassmaster187/TeslaLogger\">TeslaLogger</a> or/and <a target=\"_blank\" href=\"https://github.com/adriankumpf/teslamate\">TeslaMate</a> via MQTT",
+    "description": "Displays data from <a target=\"_blank\" href=\"https://github.com/bassmaster187/TeslaLogger\">TeslaLogger</a> or/and <a target=\"_blank\" href=\"https://github.com/adriankumpf/teslamate\">TeslaMate</a> via MQTT.",
     "issues": [],
     "license": "MIT",
     "image": "img-HAL9000.jpg"
@@ -11963,7 +11967,7 @@
     "id": "denverquane/MMM-Teslamate",
     "maintainer": "denverquane",
     "maintainerURL": "",
-    "description": "Display live Tesla status using the Teslamate self-hosted monitoring system and MQTT Broker",
+    "description": "Display live Tesla status using the Teslamate self-hosted monitoring system and MQTT Broker.",
     "issues": [
       "`package.json` issue: No repository field.",
       "`package.json` issue: No license field."
@@ -11975,7 +11979,7 @@
     "id": "aduyng/MMM-TeslaStatus",
     "maintainer": "aduyng",
     "maintainerURL": "",
-    "description": "Display my tesla status using data from firebase realtime database",
+    "description": "Display my tesla status using data from firebase realtime database.",
     "issues": [
       "`package.json` issue: No description",
       "`package.json` issue: No repository field.",
@@ -12127,7 +12131,7 @@
     "id": "jaumebosch/MMM-TMB",
     "maintainer": "jaumebosch",
     "maintainerURL": "https://github.com/jaumebosch",
-    "description": "Display Barcelona's TMB bus times by line and stop",
+    "description": "Display Barcelona's TMB bus times by line and stop.",
     "issues": [],
     "tags": [],
     "license": "MIT",
@@ -12178,7 +12182,7 @@
     "id": "bendardenne/MMM-TomTomTraffic",
     "maintainer": "bendardenne",
     "maintainerURL": "",
-    "description": "Show a map of a given area with TomTom traffic information",
+    "description": "Show a map of a given area with TomTom traffic information.",
     "issues": [],
     "license": "MIT",
     "image": "img-screenshot.jpg"
@@ -12364,7 +12368,7 @@
     "id": "dekinet/MMM-TranslinkBrisbane",
     "maintainer": "dekinet",
     "maintainerURL": "",
-    "description": "Simple display of train departure times for Brisbane (Australia)",
+    "description": "Simple display of train departure times for Brisbane (Australia).",
     "issues": [
       "`package.json` issue: No description",
       "`package.json` issue: No repository field.",
@@ -12378,7 +12382,7 @@
     "id": "OrangeHoopla/MMM-TransLoc",
     "maintainer": "OrangeHoopla",
     "maintainerURL": "",
-    "description": "Display TransLoc locations for a bus stop, used by the Rider App",
+    "description": "Display TransLoc locations for a bus stop, used by the Rider App.",
     "issues": [
       "Issue: There is no `package.json`. We need this file to gather information about the module."
     ]
@@ -12464,7 +12468,7 @@
     "id": "nigel-daniels/MMM-Tube-Status",
     "maintainer": "nigel-daniels",
     "maintainerURL": "https://github.com/nigel-daniels",
-    "description": "Simple at-a-glance display of the London Underground system status. See <a target=\"_blank\" href=\"https://github.com/emanuele-albini/MMM-TFL-Status\">MMM-TFL-Status</a> for more modes (e.g., Elizabeth line, DLR, Buses, Tram, etc.)",
+    "description": "Simple at-a-glance display of the London Underground system status. See <a target=\"_blank\" href=\"https://github.com/emanuele-albini/MMM-TFL-Status\">MMM-TFL-Status</a> for more modes (e.g., Elizabeth line, DLR, Buses, Tram, etc.).",
     "issues": [
       "Issue: There is no `package.json`. We need this file to gather information about the module."
     ]
@@ -12494,7 +12498,7 @@
     "id": "rafagale/MMM-TUZSAZaragoza",
     "maintainer": "rafagale",
     "maintainerURL": "https://github.com/rafagale",
-    "description": "Get estimations for bus stops in the city of Zaragoza (Spain)",
+    "description": "Get estimations for bus stops in the city of Zaragoza (Spain).",
     "issues": [],
     "tags": [
       "bus stop",
@@ -12570,7 +12574,7 @@
     "id": "kyle-kelly/MMM-uber",
     "maintainer": "kyle-kelly",
     "maintainerURL": "",
-    "description": "Estimated arrival times for UBER",
+    "description": "Estimated arrival times for UBER.",
     "issues": [
       "Issue: There is no `package.json`. We need this file to gather information about the module."
     ]
@@ -13003,7 +13007,7 @@
     "id": "eouia/MMM-VolvoOnCall",
     "maintainer": "eouia",
     "maintainerURL": "",
-    "description": "Display Volvo car status and trip information by VolvoOnCall",
+    "description": "Display Volvo car status and trip information by VolvoOnCall.",
     "issues": [],
     "tags": [
       "volvo",
@@ -13061,7 +13065,7 @@
     "id": "fhinder/MMM-vvsDeparture",
     "maintainer": "fhinder",
     "maintainerURL": "https://github.com/fhinder",
-    "description": "Display departures for public transport in Stuttgart (Covers VVS Area). Based on MMM-vvsDebarture by Niklas Kappler, changed deprected request dependency",
+    "description": "Display departures for public transport in Stuttgart (Covers VVS Area). Based on MMM-vvsDebarture by Niklas Kappler, changed deprected request dependency.",
     "issues": [],
     "tags": [
       "vvs",
@@ -13325,7 +13329,7 @@
     "id": "NikolasRupp/MMM-weconnectid",
     "maintainer": "NikolasRupp",
     "maintainerURL": "https://github.com/NikolasRupp",
-    "description": "Shows Status of your VW ID Car based on We Connect",
+    "description": "Shows Status of your VW ID Car based on We Connect.",
     "issues": [
       "Issue: An error occurred while getting information from 'package.json': Error: Invalid version: \"0.8\""
     ]
@@ -13611,7 +13615,7 @@
     "id": "DimmanT/MMM-yandex-route",
     "maintainer": "DimmanT",
     "maintainerURL": "",
-    "description": "Displays car routes on the map, using Yandex.Maps API",
+    "description": "Displays car routes on the map, using Yandex.Maps API.",
     "issues": [
       "Issue: There is no `package.json`. We need this file to gather information about the module."
     ]

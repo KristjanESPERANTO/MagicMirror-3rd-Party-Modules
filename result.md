@@ -1,6 +1,6 @@
 # Result of the module analysis
 
-Timestamp: 2023-11-05 19:40:22
+Timestamp: 2023-11-05 22:18:15
 
 Number of analyzed modules: 1059
 
@@ -5192,16 +5192,15 @@ Number of analyzed modules: 1059
 8. Recommendation: Found 'node-fetch' in file `node_helper.js`: Replace it with built-in fetch.
 9. Recommendation: Found 'node-fetch' in file `package.json`: Replace it with built-in fetch.
 
-## [MMM-RNV by yawnsde](https://github.com/yawnsde/MMM-RNV)
+## [MMM-RNV by bogenpirat](https://github.com/bogenpirat/MMM-RNV)
 
-1. Issue: An error occurred while getting information from 'package.json': SyntaxError: Unexpected token ']', ..."odule",
-  ],
-  "auth"... is not valid JSON
+1. Issue: No image found.
 2. Typo: Found 'Magic Mirror' in file `MMM-RNV.js`: Replace it with `MagicMirror²`.
 3. Typo: Found 'Magic Mirror' in file `node_helper.js`: Replace it with `MagicMirror²`.
-4. Deprecated: Found 'require('request')' in file `node_helper.js`: Replace it with built-in fetch.
+4. Recommendation: Found 'axios' in file `node_helper.js`: Replace it with built-in fetch.
 5. Typo: Found 'MagicMirror2' in file `package.json`: Replace it with `MagicMirror²`.
-6. Warning: No LICENSE file.
+6. Recommendation: Found 'axios' in file `package.json`: Replace it with built-in fetch.
+7. Warning: No LICENSE file.
 
 ## [MMM-RocketLeagueZ by Zeprakadebra](https://github.com/Zeprakadebra/MMM-RocketLeagueZ)
 
