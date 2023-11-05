@@ -17,9 +17,16 @@ function displayCards() {
     const card = document.createElement("div");
     card.className = "card";
     card.innerHTML = `
-              <div class="card-header"><a href="${cardData.url}" target="_blank">${cardData.name}</a></div>
-              
+              <div class="card-header">
+                <a href="${cardData.url}" target="_blank">${cardData.name}</a>
+                <div class="maintainer">maintained by ${cardData.maintainer}</div>
+              </div>
             `;
+    if (cardData.issues.length > 0) {
+      const url = `https://github.com/KristjanESPERANTO/MagicMirror-3rd-Party-Modules/blob/main/result.md#${cardData.name}-by-${cardData.maintainer}`;
+      card.innerHTML += `<div class="issues"><a target="_blank" href="${url}">🗈</a></div>`;
+    }
+
     if (cardData.image) {
       const imagePath = `./images/${cardData.name}---${cardData.maintainer}---${cardData.image}`;
       card.innerHTML += `
@@ -40,7 +47,6 @@ function displayCards() {
 
     card.innerHTML += `
         <p>${cardData.description}</p>
-        <p><b>Maintainer:</b> ${cardData.maintainer}</p>
         `;
     if (cardData.tags) {
       card.innerHTML += `
