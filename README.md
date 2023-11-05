@@ -11,7 +11,7 @@ The two goals of this project are:
 
 [The official list in the wiki](https://github.com/MichMich/MagicMirror/wiki/3rd-party-modules) is a simple text list without filters and images. This list now contains over 1000 modules, so it is not so easy for users to pick out modules.
 
-With a few scripts we create a web page with filter function and integrated images. This website still needs some fine tuning, but is already in a usable state. You can check it here: <https://kristjanesperanto.github.io/MagicMirror-3rd-Party-Modules/>
+With a few scripts we create a web page with filter function and integrated images. This website still needs some fine tuning, but is already in a usable state. You can check it out here: <https://kristjanesperanto.github.io/MagicMirror-3rd-Party-Modules/>
 
 ## Module tests
 
@@ -35,7 +35,9 @@ Here are some test results:
 
 ## Skripts
 
-You can run all scripts in the right order by `npm run all`. Note that running the second script requires a lot of time (> 10 min) and memory (> 2 GB).
+You can run all scripts in the right order by `npm run all`.
+
+_Note_: Running all scripts requires a lot of time (> 10 min) and space on your hard drive (> 2 GB).
 
 ### create_module_list.js
 
@@ -45,26 +47,24 @@ This script parses the list of modules from the wiki and writes it to a json fil
 
 This script reads the module list (created by the script before) and clones all modules.
 
-Please note that this script takes a long time to download all modules and also takes up a lot of space on your hard drive (> 2 GB).
+_Note_: This script takes a long time (> 10 min) to download all modules and also takes up a lot of space on your hard drive (> 2 GB).
 
 ### expand_module_list_with_repo_data.js
 
 This script expands the module list with information from the `package.json` files from the modules (if available).
 
 The script also adds an image. To do this, it searches the module's repo for an image that begins with "screenshot". If it doesn't find anything like that, it takes the first image it finds in the repo.
-Note: Images will only be included if a free license is specified in the `package.json`.
 
-From the collected information it creates a new JSON file which can be used later for the module web page and possibly also for `MMM-Remote-Control`.
+_Note_: Images will only be included if a free license is specified in the `package.json`.
 
 ### check_modules.py
 
-This script goes through all cloned modules and performs various checks. The result is writen to the [result.md](result.md). This script still not extends the modules list.
+This script goes through all cloned modules and performs various checks. The result is written to the files [`result.md`](result.md) and [`modules.json`](./docs/modules.json).
 
 ## Ideas / To do
 
 - Website
   - Make it responsive.
-  - Add an issue div to each card which have issues: counter + link to result.md.
   - Add little statistics:
     - last update
     - module amount
@@ -77,9 +77,8 @@ This script goes through all cloned modules and performs various checks. The res
 - Write instructions: “How do I get my module presented perfectly?”
 - Use issue codes to make the module list file smaller.
 - get rid of of the cloned repo files if a module is removed
-- create super script which runs all scripts in the right order and shows a progress information
-- rewite get_modules.py in javascript
-- Get last commit date from git?
+- optimize progress information while running `npm run all`
+- rewrite python scripts in javascript
 - Compatibility with the module list of `MMM-Remote-Control`: <https://github.com/Jopyth/MMM-Remote-Control/blob/master/modules.json>
 - Use data from GitHub API: <https://api.github.com/repos/MichMich/MagicMirror>
   - Unfortunately we can't make many API queries. That's why we try to get the most data without the API queries.
@@ -93,10 +92,8 @@ This script goes through all cloned modules and performs various checks. The res
 - Tests
   - Is repository reachable? Now the get_modules skript interupts if a repo isn't reachable.
   - Is the module set to archived on GitHub/GitLab?
-  - When was the last commit?
   - Is depandabot there?
     - Is it set to monthly?
     - Only production?
-  - Is `moment` in use? <https://momentjs.com/docs/#/-project-status/>
-  - Is there a LICENCE file?
   - Is branch name master? -> Description why and how switch to main.
+  - Is `moment` in use? <https://momentjs.com/docs/#/-project-status/> - This is a test for the future when the Temporal API is ready.
