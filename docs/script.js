@@ -139,12 +139,14 @@ function filterBySearchText(searchText) {
       ? card.description.toLowerCase()
       : "";
     const cardName = card.name ? card.name.toLowerCase() : "";
+    const cardMaintainer = card.maintainer ? card.maintainer.toLowerCase() : "";
     const cardTags = card.tags ? card.tags : [];
 
     return (
       cardText.includes(searchLower) ||
       cardDescription.includes(searchLower) ||
       cardName.includes(searchLower) ||
+      cardMaintainer.includes(searchLower) ||
       cardTags.some((tag) => tag.toLowerCase().includes(searchLower))
     );
   });
