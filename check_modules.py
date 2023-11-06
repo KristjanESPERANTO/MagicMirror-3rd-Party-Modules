@@ -53,6 +53,14 @@ def check_modules():
             "name": "Replace it with built-in fetch.",
             "category": "Deprecated"
         },
+        "require(\"http\")": {
+            "name": "Replace \"http\" by \"node:http\".",
+            "category": "Recommendation"
+        },
+        "require('http')": {
+            "name": "Replace 'http' by 'node:http'.",
+            "category": "Recommendation"
+        },
         "require(\"https\")": {
             "name": "Replace \"https\" by \"node:https\".",
             "category": "Recommendation"
