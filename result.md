@@ -1,8 +1,8 @@
 # Result of the module analysis
 
-Timestamp: 2023-11-06 00:50:00
+Timestamp: 2023-11-06 19:07:47
 
-Number of analyzed modules: 1059
+Number of analyzed modules: 1062
 
 ## [MMM-01ZM by rubinho101](https://github.com/rubinho101/MMM-01ZM)
 
@@ -1440,6 +1440,13 @@ Number of analyzed modules: 1059
 3. Typo: Found 'Magic Mirror' in file `node_helper.js`: Replace it with `MagicMirror²`.
 4. Deprecated: Found 'require('request')' in file `node_helper.js`: Replace it with built-in fetch.
 
+## [MMM-EskomSePush by mumblebaj](https://github.com/mumblebaj/MMM-EskomSePush)
+
+1. `package.json` issue: No repository field.
+2. Recommendation: Found 'node-fetch' in file `README.md`: Replace it with built-in fetch.
+3. Recommendation: Found 'node-fetch' in file `node_helper.js`: Replace it with built-in fetch.
+4. Recommendation: Found 'node-fetch' in file `package.json`: Replace it with built-in fetch.
+
 ## [MMM-eswordoftheday by daniel-windsor](https://github.com/daniel-windsor/MMM-eswordoftheday)
 
 1. `package.json` issue: No description
@@ -1897,6 +1904,12 @@ Number of analyzed modules: 1059
 1. Issue: There is no `package.json`. We need this file to gather information about the module.
 2. Warning: No LICENSE file.
 
+## [MMM-GasMonitor by mumblebaj](https://github.com/mumblebaj/MMM-GasMonitor)
+
+1. `package.json` issue: No description
+2. `package.json` issue: No repository field.
+3. Warning: No LICENSE file.
+
 ## [MMM-GConnect by tderflinger](https://github.com/tderflinger/MMM-GConnect)
 
 1. Typo: Found 'Magic Mirror' in file `README.md`: Replace it with `MagicMirror²`.
@@ -2117,12 +2130,22 @@ Number of analyzed modules: 1059
 1. Issue: There is no `package.json`. We need this file to gather information about the module.
 2. Typo: Found 'Magic Mirror' in file `README.md`: Replace it with `MagicMirror²`.
 
+## [MMM-Growatt by mumblebaj](https://github.com/mumblebaj/MMM-Growatt)
+
+1. `package.json` issue: No description
+2. `package.json` issue: No repository field.
+
 ## [MMM-Growatt by dekinet](https://github.com/dekinet/MMM-Growatt)
 
 1. `package.json` issue: No description
 2. `package.json` issue: No repository field.
 3. Issue: No image found.
 4. Typo: Found 'Magic Mirror' in file `README.md`: Replace it with `MagicMirror²`.
+
+## [MMM-Growatt-Stats by mumblebaj](https://github.com/mumblebaj/MMM-Growatt-Stats)
+
+1. `package.json` issue: No description
+2. Warning: No LICENSE file.
 
 ## [MMM-GyeonggiBus by iceship](https://github.com/iceship/MMM-GyeonggiBus)
 
@@ -3948,26 +3971,6 @@ Number of analyzed modules: 1059
 12. Typo: Found 'Magic Mirror' in file `netatmo.js`: Replace it with `MagicMirror²`.
 13. Typo: Found 'Magic Mirror' in file `node_helper.js`: Replace it with `MagicMirror²`.
 
-## [MMM-Netatmo by RaymondMolenaar](https://github.com/RaymondMolenaar/MMM-Netatmo)
-
-1. `package.json` issue: No description
-2. Typo: Found 'Magic Mirror' in file `MMM-Netatmo.js`: Replace it with `MagicMirror²`.
-3. Typo: Found 'Magic Mirror' in file `MMM-Netatmo.js`: Replace it with `MagicMirror²`.
-4. Typo: Found '<sub>2</sub>' in file `cs.json`: Replace it with `²`.`.
-5. Typo: Found '<sub>2</sub>' in file `de.json`: Replace it with `²`.`.
-6. Typo: Found '<sub>2</sub>' in file `en.json`: Replace it with `²`.`.
-7. Typo: Found '<sub>2</sub>' in file `fr.json`: Replace it with `²`.`.
-8. Typo: Found '<sub>2</sub>' in file `nb.json`: Replace it with `²`.`.
-9. Typo: Found '<sub>2</sub>' in file `nl.json`: Replace it with `²`.`.
-10. Typo: Found '<sub>2</sub>' in file `nn.json`: Replace it with `²`.`.
-11. Typo: Found '<sub>2</sub>' in file `cs.json`: Replace it with `²`.`.
-12. Typo: Found '<sub>2</sub>' in file `de.json`: Replace it with `²`.`.
-13. Typo: Found '<sub>2</sub>' in file `en.json`: Replace it with `²`.`.
-14. Typo: Found '<sub>2</sub>' in file `fr.json`: Replace it with `²`.`.
-15. Typo: Found '<sub>2</sub>' in file `nb.json`: Replace it with `²`.`.
-16. Typo: Found '<sub>2</sub>' in file `nl.json`: Replace it with `²`.`.
-17. Typo: Found '<sub>2</sub>' in file `nn.json`: Replace it with `²`.`.
-
 ## [MMM-Netatmo-Presence by AgP42](https://github.com/AgP42/MMM-Netatmo-Presence)
 
 1. Typo: Found 'Magic Mirror' in file `MMM-Netatmo-Presence.js`: Replace it with `MagicMirror²`.
@@ -5791,12 +5794,6 @@ Number of analyzed modules: 1059
 1. Issue: There is no `package.json`. We need this file to gather information about the module.
 2. Typo: Found 'Magic Mirror' in file `README.md`: Replace it with `MagicMirror²`.
 3. Deprecated: Found 'require("request")' in file `node_helper.js`: Replace it with built-in fetch.
-
-## [MMM-stoic-quotes by pal-thomassen](https://github.com/pal-thomassen/MMM-stoic-quotes)
-
-1. `package.json` issue: No description
-2. `package.json` issue: No repository field.
-3. `package.json` issue: No license field.
 
 ## [MMM-StopwatchTimer by Klettner](https://github.com/Klettner/MMM-StopwatchTimer)
 

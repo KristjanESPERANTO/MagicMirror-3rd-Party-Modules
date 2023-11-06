@@ -446,7 +446,7 @@
     "tags": [],
     "license": "MIT",
     "image": "anylist.jpg",
-    "last_commit": "2023-10-11"
+    "last_commit": "2023-11-05"
   },
   {
     "name": "MMM-AoC",
@@ -3148,7 +3148,7 @@
     "id": "nebulx29/MMM-dht22",
     "maintainer": "nebulx29",
     "maintainerURL": "",
-    "description": "displays temperature/humidity readings from DHT22 sensor connected via GPIOs.",
+    "description": "Displays temperature/humidity readings from DHT22 sensor connected via GPIOs.",
     "issues": [
       "Issue: An error occurred while getting information from 'package.json': Error: Invalid version: \"0.1\"",
       "Typo: Found 'Magic Mirror' in file `MMM-dht22.js`: Replace it with `MagicMirror\u00b2`.",
@@ -3822,6 +3822,23 @@
     "last_commit": "2022-01-31"
   },
   {
+    "name": "MMM-EskomSePush",
+    "url": "https://github.com/mumblebaj/MMM-EskomSePush",
+    "id": "mumblebaj/MMM-EskomSePush",
+    "maintainer": "mumblebaj",
+    "maintainerURL": "https://github.com/mumblebaj",
+    "description": "A module to display loadshedding schedule data for the South African users.",
+    "issues": [
+      "`package.json` issue: No repository field.",
+      "Recommendation: Found 'node-fetch' in file `README.md`: Replace it with built-in fetch.",
+      "Recommendation: Found 'node-fetch' in file `node_helper.js`: Replace it with built-in fetch.",
+      "Recommendation: Found 'node-fetch' in file `package.json`: Replace it with built-in fetch."
+    ],
+    "license": "ISC",
+    "image": "images-image-1.jpg",
+    "last_commit": "2023-09-12"
+  },
+  {
     "name": "MMM-eswordoftheday",
     "url": "https://github.com/daniel-windsor/MMM-eswordoftheday",
     "id": "daniel-windsor/MMM-eswordoftheday",
@@ -4135,7 +4152,7 @@
     "id": "eouia/MMM-fbPageCounter",
     "maintainer": "eouia",
     "maintainerURL": "",
-    "description": "<code>Likes</code> counter of Facebook page.",
+    "description": "'Likes' counter of Facebook page.",
     "issues": [
       "Issue: There is no `package.json`. We need this file to gather information about the module.",
       "Recommendation: Found 'XMLHttpRequest' in file `MMM-fbPageCounter.js`: Replace it with built-in fetch."
@@ -4987,6 +5004,23 @@
     "last_commit": "2020-04-08"
   },
   {
+    "name": "MMM-GasMonitor",
+    "url": "https://github.com/mumblebaj/MMM-GasMonitor",
+    "id": "mumblebaj/MMM-GasMonitor",
+    "maintainer": "mumblebaj",
+    "maintainerURL": "https://github.com/mumblebaj",
+    "description": "A module to monitor your gas tank level on your mirror.",
+    "issues": [
+      "`package.json` issue: No description",
+      "`package.json` issue: No repository field.",
+      "Warning: No LICENSE file."
+    ],
+    "tags": [],
+    "license": "ISC",
+    "image": "images-image-1.jpg",
+    "last_commit": "2023-08-15"
+  },
+  {
     "name": "MMM-GConnect",
     "url": "https://github.com/tderflinger/MMM-GConnect",
     "id": "tderflinger/MMM-GConnect",
@@ -5056,7 +5090,7 @@
     "id": "thobach/MMM-Gestures",
     "maintainer": "thobach",
     "maintainerURL": "",
-    "description": "allows gesture control of compliments (only show when stepping in front of mirror), newsfeed (wave left / right, up for full-screen) and pages with two types of infrared sensors. Gestures can be up, down, left, right, far and close movements of the hand in front of a gesture sensor (APDS-9960) and present and away gestures in front of an IR distance sensor (GP2Y0A21YK).",
+    "description": "Allows gesture control of compliments (only show when stepping in front of mirror), newsfeed (wave left / right, up for full-screen) and pages with two types of infrared sensors. Gestures can be up, down, left, right, far and close movements of the hand in front of a gesture sensor (APDS-9960) and present and away gestures in front of an IR distance sensor (GP2Y0A21YK).",
     "issues": [
       "Issue: No image found.",
       "Recommendation: Found 'uses: actions/checkout@v3' in file `codeql.yml`: Replace it with v4.",
@@ -5400,7 +5434,7 @@
     "id": "hermanho/MMM-GooglePhotos",
     "maintainer": "hermanho",
     "maintainerURL": "",
-    "description": "image gallery or wallpaper with your Google Photos account.",
+    "description": "Image gallery or wallpaper with your Google Photos account.",
     "issues": [
       "Recommendation: Found 'axios' in file `GPhotos.js`: Replace it with built-in fetch.",
       "Deprecated: Found 'electron-rebuild' in file `README.md`: Replace it with `@electron/rebuild`",
@@ -5593,6 +5627,22 @@
   },
   {
     "name": "MMM-Growatt",
+    "url": "https://github.com/mumblebaj/MMM-Growatt",
+    "id": "mumblebaj/MMM-Growatt",
+    "maintainer": "mumblebaj",
+    "maintainerURL": "https://github.com/mumblebaj",
+    "description": "A module to display data from Growatt Inveter. Support multiple Growatt Inverter types.",
+    "issues": [
+      "`package.json` issue: No description",
+      "`package.json` issue: No repository field."
+    ],
+    "tags": [],
+    "license": "ISC",
+    "image": "images-b_CO2.jpg",
+    "last_commit": "2023-08-31"
+  },
+  {
+    "name": "MMM-Growatt",
     "url": "https://github.com/dekinet/MMM-Growatt",
     "id": "dekinet/MMM-Growatt",
     "maintainer": "dekinet",
@@ -5606,6 +5656,24 @@
     ],
     "license": "ISC",
     "last_commit": "2023-06-24"
+  },
+  {
+    "name": "MMM-Growatt-Stats",
+    "url": "https://github.com/mumblebaj/MMM-Growatt-Stats",
+    "id": "mumblebaj/MMM-Growatt-Stats",
+    "maintainer": "mumblebaj",
+    "maintainerURL": "https://github.com/mumblebaj",
+    "description": "A module to display status data from Growatt Inveter. Support multiple Growatt Inverter types. Made to work in conjunction with <a target=\"_blank\" href=\"https://github.com/mumblebaj/MMM-Growatt\">MMM-Growatt</a> or independently.",
+    "issues": [
+      "`package.json` issue: No description",
+      "Warning: No LICENSE file."
+    ],
+    "tags": [
+      "growatt"
+    ],
+    "license": "MIT",
+    "image": "images-batCharge.jpg",
+    "last_commit": "2023-09-05"
   },
   {
     "name": "MMM-GyeonggiBus",
@@ -7853,7 +7921,7 @@
     "id": "MMRIZE/MMM-LunarDate",
     "maintainer": "MMRIZE",
     "maintainerURL": "",
-    "description": "Module - Lunar date of today (Chinese Zodiac).",
+    "description": "Displays the lunar date of today (Chinese Zodiac).",
     "issues": [
       "Deprecated: Found 'require('request')' in file `node_helper.js`: Replace it with built-in fetch."
     ],
@@ -10260,36 +10328,6 @@
     "license": "MIT",
     "image": ".github-preview.bubbles.jpg",
     "last_commit": "2023-11-04"
-  },
-  {
-    "name": "MMM-Netatmo",
-    "url": "https://github.com/RaymondMolenaar/MMM-Netatmo",
-    "id": "RaymondMolenaar/MMM-Netatmo",
-    "maintainer": "RaymondMolenaar",
-    "maintainerURL": "https://github.com/RaymondMolenaar",
-    "description": "Fork of CFenner's module with improved UI.",
-    "issues": [
-      "`package.json` issue: No description",
-      "Typo: Found 'Magic Mirror' in file `MMM-Netatmo.js`: Replace it with `MagicMirror\u00b2`.",
-      "Typo: Found 'Magic Mirror' in file `MMM-Netatmo.js`: Replace it with `MagicMirror\u00b2`.",
-      "Typo: Found '<sub>2</sub>' in file `cs.json`: Replace it with `\u00b2`.`.",
-      "Typo: Found '<sub>2</sub>' in file `de.json`: Replace it with `\u00b2`.`.",
-      "Typo: Found '<sub>2</sub>' in file `en.json`: Replace it with `\u00b2`.`.",
-      "Typo: Found '<sub>2</sub>' in file `fr.json`: Replace it with `\u00b2`.`.",
-      "Typo: Found '<sub>2</sub>' in file `nb.json`: Replace it with `\u00b2`.`.",
-      "Typo: Found '<sub>2</sub>' in file `nl.json`: Replace it with `\u00b2`.`.",
-      "Typo: Found '<sub>2</sub>' in file `nn.json`: Replace it with `\u00b2`.`.",
-      "Typo: Found '<sub>2</sub>' in file `cs.json`: Replace it with `\u00b2`.`.",
-      "Typo: Found '<sub>2</sub>' in file `de.json`: Replace it with `\u00b2`.`.",
-      "Typo: Found '<sub>2</sub>' in file `en.json`: Replace it with `\u00b2`.`.",
-      "Typo: Found '<sub>2</sub>' in file `fr.json`: Replace it with `\u00b2`.`.",
-      "Typo: Found '<sub>2</sub>' in file `nb.json`: Replace it with `\u00b2`.`.",
-      "Typo: Found '<sub>2</sub>' in file `nl.json`: Replace it with `\u00b2`.`.",
-      "Typo: Found '<sub>2</sub>' in file `nn.json`: Replace it with `\u00b2`.`."
-    ],
-    "license": "MIT",
-    "image": "MMM-Netatmo_Horizontal.jpg",
-    "last_commit": "2020-03-30"
   },
   {
     "name": "MMM-Netatmo-Presence",
@@ -15093,12 +15131,14 @@
     "maintainer": "pal-thomassen",
     "maintainerURL": "",
     "description": "Display a stoic quote at a given interval or time of day.",
-    "issues": [
-      "`package.json` issue: No description",
-      "`package.json` issue: No repository field.",
-      "`package.json` issue: No license field."
+    "issues": [],
+    "tags": [
+      "quotes",
+      "quote"
     ],
-    "last_commit": "2023-10-29"
+    "license": "MIT",
+    "image": "screenshot just module.jpg",
+    "last_commit": "2023-11-06"
   },
   {
     "name": "MMM-StopwatchTimer",

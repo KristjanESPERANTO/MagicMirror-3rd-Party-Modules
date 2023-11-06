@@ -1731,7 +1731,7 @@
     "id": "nebulx29/MMM-dht22",
     "maintainer": "nebulx29",
     "maintainerURL": "",
-    "description": "displays temperature/humidity readings from DHT22 sensor connected via GPIOs.",
+    "description": "Displays temperature/humidity readings from DHT22 sensor connected via GPIOs.",
     "issues": []
   },
   {
@@ -2078,6 +2078,15 @@
     "issues": []
   },
   {
+    "name": "MMM-EskomSePush",
+    "url": "https://github.com/mumblebaj/MMM-EskomSePush",
+    "id": "mumblebaj/MMM-EskomSePush",
+    "maintainer": "mumblebaj",
+    "maintainerURL": "https://github.com/mumblebaj",
+    "description": "A module to display loadshedding schedule data for the South African users.",
+    "issues": []
+  },
+  {
     "name": "MMM-eswordoftheday",
     "url": "https://github.com/daniel-windsor/MMM-eswordoftheday",
     "id": "daniel-windsor/MMM-eswordoftheday",
@@ -2255,7 +2264,7 @@
     "id": "eouia/MMM-fbPageCounter",
     "maintainer": "eouia",
     "maintainerURL": "",
-    "description": "<code>Likes</code> counter of Facebook page.",
+    "description": "'Likes' counter of Facebook page.",
     "issues": []
   },
   {
@@ -2682,6 +2691,15 @@
     "issues": []
   },
   {
+    "name": "MMM-GasMonitor",
+    "url": "https://github.com/mumblebaj/MMM-GasMonitor",
+    "id": "mumblebaj/MMM-GasMonitor",
+    "maintainer": "mumblebaj",
+    "maintainerURL": "https://github.com/mumblebaj",
+    "description": "A module to monitor your gas tank level on your mirror.",
+    "issues": []
+  },
+  {
     "name": "MMM-GConnect",
     "url": "https://github.com/tderflinger/MMM-GConnect",
     "id": "tderflinger/MMM-GConnect",
@@ -2723,7 +2741,7 @@
     "id": "thobach/MMM-Gestures",
     "maintainer": "thobach",
     "maintainerURL": "",
-    "description": "allows gesture control of compliments (only show when stepping in front of mirror), newsfeed (wave left / right, up for full-screen) and pages with two types of infrared sensors. Gestures can be up, down, left, right, far and close movements of the hand in front of a gesture sensor (APDS-9960) and present and away gestures in front of an IR distance sensor (GP2Y0A21YK).",
+    "description": "Allows gesture control of compliments (only show when stepping in front of mirror), newsfeed (wave left / right, up for full-screen) and pages with two types of infrared sensors. Gestures can be up, down, left, right, far and close movements of the hand in front of a gesture sensor (APDS-9960) and present and away gestures in front of an IR distance sensor (GP2Y0A21YK).",
     "issues": []
   },
   {
@@ -2903,7 +2921,7 @@
     "id": "hermanho/MMM-GooglePhotos",
     "maintainer": "hermanho",
     "maintainerURL": "",
-    "description": "image gallery or wallpaper with your Google Photos account.",
+    "description": "Image gallery or wallpaper with your Google Photos account.",
     "issues": []
   },
   {
@@ -3016,11 +3034,29 @@
   },
   {
     "name": "MMM-Growatt",
+    "url": "https://github.com/mumblebaj/MMM-Growatt",
+    "id": "mumblebaj/MMM-Growatt",
+    "maintainer": "mumblebaj",
+    "maintainerURL": "https://github.com/mumblebaj",
+    "description": "A module to display data from Growatt Inveter. Support multiple Growatt Inverter types.",
+    "issues": []
+  },
+  {
+    "name": "MMM-Growatt",
     "url": "https://github.com/dekinet/MMM-Growatt",
     "id": "dekinet/MMM-Growatt",
     "maintainer": "dekinet",
     "maintainerURL": "",
     "description": "Simple display for data from a Growatt solar panel inverter.",
+    "issues": []
+  },
+  {
+    "name": "MMM-Growatt-Stats",
+    "url": "https://github.com/mumblebaj/MMM-Growatt-Stats",
+    "id": "mumblebaj/MMM-Growatt-Stats",
+    "maintainer": "mumblebaj",
+    "maintainerURL": "https://github.com/mumblebaj",
+    "description": "A module to display status data from Growatt Inveter. Support multiple Growatt Inverter types. Made to work in conjunction with <a target=\"_blank\" href=\"https://github.com/mumblebaj/MMM-Growatt\">MMM-Growatt</a> or independently.",
     "issues": []
   },
   {
@@ -4228,7 +4264,7 @@
     "id": "MMRIZE/MMM-LunarDate",
     "maintainer": "MMRIZE",
     "maintainerURL": "",
-    "description": "Module - Lunar date of today (Chinese Zodiac).",
+    "description": "Displays the lunar date of today (Chinese Zodiac).",
     "issues": []
   },
   {
@@ -5473,15 +5509,6 @@
     "maintainer": "CFenner",
     "maintainerURL": "",
     "description": "Display your Netatmo in/outdoor weather station data.",
-    "issues": []
-  },
-  {
-    "name": "MMM-Netatmo",
-    "url": "https://github.com/RaymondMolenaar/MMM-Netatmo",
-    "id": "RaymondMolenaar/MMM-Netatmo",
-    "maintainer": "RaymondMolenaar",
-    "maintainerURL": "https://github.com/RaymondMolenaar",
-    "description": "Fork of CFenner's module with improved UI.",
     "issues": []
   },
   {
