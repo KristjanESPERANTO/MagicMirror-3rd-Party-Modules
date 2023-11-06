@@ -133,6 +133,7 @@ main {
   box-shadow: 0 4px 8px rgb(0 0 0 / 10%);
   transition: transform 0.3s ease-in-out;
   overflow: hidden;
+  min-width: 250px;
 }
 
 .card:hover {
@@ -170,7 +171,7 @@ main {
   margin-left: auto;
   margin-right: auto;
   width: 100%;
-  max-width: 33vw;
+  max-width: 400px;
 }
 
 .card-image-license-info {
@@ -223,4 +224,25 @@ main {
 
 [data-tag="weather"]::before {
   content: "☁️";
+}
+
+@media (0 <= width <= 800px) {
+  #sort-container {
+    display: none;
+  }
+
+  #repo-link,
+  #repo-link a {
+    text-align: center;
+  }
+
+  #top-right {
+    position: relative;
+    right: 0;
+    top: 0;
+  }
+
+  h1 {
+    margin: 0.25em;
+  }
 }

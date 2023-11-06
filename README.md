@@ -64,7 +64,6 @@ This script goes through all cloned modules and performs various checks. The res
 ## Ideas / To do
 
 - Website
-  - Make it responsive.
   - Add little statistics:
     - last update
     - module amount
