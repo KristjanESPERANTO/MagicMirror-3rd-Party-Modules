@@ -120,7 +120,7 @@ main {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  padding: 2em;
+  padding: 0 2em 2em;
 }
 
 .card {
