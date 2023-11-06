@@ -2,10 +2,7 @@
 
 _This project is still in a early stage. Feedback and pull requests are very welcome._
 
-The two goals of this project are:
-
-1. **Create a nice list of modules** for [MagicMirror²](https://magicmirror.builders/).
-2. **Do a few rudimentary tests** on the modules and generate suggestions for improvements for the developers.
+The goals of this project are to **create a nice list of modules** for [MagicMirror²](https://magicmirror.builders/) and **do some rudimentary tests** on the modules (to generate suggestions for improvements for the developers).
 
 ## List of modules
 
@@ -15,7 +12,9 @@ With a few scripts we create a web page with filter function and integrated imag
 
 ## Module tests
 
-The usefulness of some of the tests is certainly debatable. Some of the tests are like a proof of concept. If you as a developer do not like a test, you are welcome to give feedback or simply ignore the result.
+The aim of the tests is to increase the quality of the modules, also in order to be able to present them optimally in the module list. Due to the huge number of modules, the tests can only remain rudimentary.
+
+If you have ideas for further tests, you are welcome to create an issue or pull request. And if you as a developer do not like a test, you are welcome to give feedback or simply ignore the result.
 
 The results of the tests you can see in the [result.md](result.md).
 
@@ -73,26 +72,29 @@ This script goes through all cloned modules and performs various checks. The res
     - amount of GitLab repos
     - amount of bitbucket repos
   - Add filter for outdated modules.
-- Write instructions: “How do I get my module presented perfectly?”
+- Write instructions: “How do I get my module presented perfectly in the list?”
 - Use issue codes to make the module list file smaller.
 - get rid of of the cloned repo files if a module is removed
 - optimize progress information while running `npm run all`
 - rewrite python scripts in javascript
 - Compatibility with the module list of `MMM-Remote-Control`: <https://github.com/Jopyth/MMM-Remote-Control/blob/master/modules.json>
-- Use data from GitHub API: <https://api.github.com/repos/MichMich/MagicMirror>
-  - Unfortunately we can't make many API queries. That's why we try to get the most data without the API queries.
-    Maybe we can build the API query into the website. E.g. a detail button for each module, which then opens a window with more details (like open issues and stars).
-  - Is there also a GitLab API? Yes, example: <https://gitlab.com/khassel/MMM-RepoStats/-/blob/master/node_helper.js?ref_type=heads#L116>
 - Create test result overview (like a statistic).
 - Statistics per module
   - last update date
   - number of unresolved issues to guess the module’s activation level or popularity
-- Also do check MagicMirror² core?
+- Also run the tests on MagicMirror² core?
 - Tests
   - Is repository reachable? Now the get_modules skript interupts if a repo isn't reachable.
-  - Is the module set to archived on GitHub/GitLab?
+  - If a module isn't marked as outdated, but has no commits since years: Check if the module is set to archived on GitHub/GitLab.
   - Is depandabot there?
     - Is it set to monthly?
     - Only production?
   - Is branch name master? -> Description why and how switch to main.
-  - Is `moment` in use? <https://momentjs.com/docs/#/-project-status/> - This is a test for the future when the Temporal API is ready.
+
+### Discarded ideas
+
+- New test: Is `moment` in use? <https://momentjs.com/docs/#/-project-status/>.
+  - `moment` is not really dead yet (it is no longer being developed, but it is still being maintained), so there is no urgent reason to change now. This is a test for the future when the Temporal API is ready.
+- Use data from GitHub API: <https://api.github.com/repos/MichMich/MagicMirror>
+  - Is there also a GitLab API? Yes, example: <https://gitlab.com/khassel/MMM-RepoStats/-/blob/master/node_helper.js?ref_type=heads#L116>
+  - Unfortunately, the queries are blocked relatively quickly when we query information from each module via the API.
