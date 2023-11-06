@@ -239,7 +239,7 @@
     "id": "FabianNiehaus89/MMM-AOE2-STATS",
     "maintainer": "FabianNiehaus89",
     "maintainerURL": "",
-    "description": "Module to display Age of Empire stats by player ID.",
+    "description": "Display Age of Empire stats by player ID.",
     "issues": []
   },
   {
@@ -266,7 +266,7 @@
     "id": "grenagit/MMM-APOD",
     "maintainer": "grenagit",
     "maintainerURL": "",
-    "description": "A module displaying the last Astronomy Picture Of the Day (APOD). This is an evolution of MMM-nasaastropic : supports image and video and display title, description and copyright.",
+    "description": "Display the last Astronomy Picture Of the Day (APOD). This is an evolution of MMM-nasaastropic : supports image and video and display title, description and copyright.",
     "issues": []
   },
   {
@@ -410,7 +410,7 @@
     "id": "lavolp3/MMM-AVStock",
     "maintainer": "lavolp3",
     "maintainerURL": "",
-    "description": "Module for displaying stock price with Alphavantage API.",
+    "description": "Display stock prices and charts using Yahoo Finance API.",
     "issues": []
   },
   {
@@ -482,7 +482,7 @@
     "id": "ItsMeBrille/MMM-Bensinpriser",
     "maintainer": "ItsMeBrille",
     "maintainerURL": "https://github.com/ItsMeBrille",
-    "description": "A module to display current fuel prices at your nearest gas station in Norway.",
+    "description": "Display current fuel prices at your nearest gas station in Norway.",
     "issues": []
   },
   {
@@ -518,7 +518,7 @@
     "id": "grenagit/MMM-BiathlonResults",
     "maintainer": "grenagit",
     "maintainerURL": "",
-    "description": "A module displaying the current biathlon results (World Cup and IBU Cup).",
+    "description": "Display the current biathlon results (World Cup and IBU Cup).",
     "issues": []
   },
   {
@@ -1104,7 +1104,7 @@
     "id": "flo80/MMM-chromecast",
     "maintainer": "flo80",
     "maintainerURL": "",
-    "description": "A module to directly cast from the MagicMirror² server to a chromecast.",
+    "description": "Directly cast from the MagicMirror² server to a chromecast.",
     "issues": []
   },
   {
@@ -1122,7 +1122,7 @@
     "id": "ianperrin/MMM-Clash-Royale",
     "maintainer": "ianperrin",
     "maintainerURL": "",
-    "description": "A module that displays random Clash Royale decks.",
+    "description": "Display random Clash Royale decks.",
     "issues": []
   },
   {
@@ -1367,7 +1367,7 @@
     "id": "dsouzadrian/MMM-CricketScores",
     "maintainer": "dsouzadrian",
     "maintainerURL": "https://github.com/dsouzadrian",
-    "description": "A module that displays cicket scores for ongoing live cricket matches.",
+    "description": "Display cicket scores for ongoing live cricket matches.",
     "issues": []
   },
   {
@@ -1502,7 +1502,7 @@
     "id": "wctimmer/MMM-DagelijksWoord",
     "maintainer": "wctimmer",
     "maintainerURL": "",
-    "description": "A module that displays the <strong>dutch</strong> verse of the day from &lt;<a target=\"_blank\" href=\"http://www.dagelijkswoord.nl%3E\">www.dagelijkswoord.nl&gt;</a>.",
+    "description": "Display the <strong>dutch</strong> verse of the day from &lt;<a target=\"_blank\" href=\"http://www.dagelijkswoord.nl%3E\">www.dagelijkswoord.nl&gt;</a>.",
     "issues": []
   },
   {
@@ -1547,7 +1547,7 @@
     "id": "arthurgarzajr/MMM-DailyBibleVerse",
     "maintainer": "arthurgarzajr",
     "maintainerURL": "",
-    "description": "A module that displays the verse of the day from &lt;<a target=\"_blank\" href=\"http://www.biblegateway.com%3E\">www.biblegateway.com&gt;</a>.",
+    "description": "Display the verse of the day from &lt;<a target=\"_blank\" href=\"http://www.biblegateway.com%3E\">www.biblegateway.com&gt;</a>.",
     "issues": []
   },
   {
@@ -1556,7 +1556,7 @@
     "id": "anthpham/MMM-DailyBuddhismWisdom",
     "maintainer": "anthpham",
     "maintainerURL": "",
-    "description": "A module that displays a daily bit of Buddhist wisdom from Thich Nhat Hanh's \"Your True Home\".",
+    "description": "Display a daily bit of Buddhist wisdom from Thich Nhat Hanh's \"Your True Home\".",
     "issues": []
   },
   {
@@ -1583,7 +1583,7 @@
     "id": "oemel09/MMM-DailyPower",
     "maintainer": "oemel09",
     "maintainerURL": "",
-    "description": "A module that displays the bible verse of the day from <a target=\"_blank\" href=\"https://dailypower.oemel09.de\">DailyPower</a>.",
+    "description": "Display the bible verse of the day from <a target=\"_blank\" href=\"https://dailypower.oemel09.de\">DailyPower</a>.",
     "issues": []
   },
   {
@@ -1592,7 +1592,7 @@
     "id": "MStoltzfus/MMM-DailyUnreachedPeopleGroup",
     "maintainer": "MStoltzfus",
     "maintainerURL": "https://github.com/MStoltzfus",
-    "description": "A module that displays the \"Unreached of the Day\" data from <a target=\"_blank\" href=\"www.joshuaproject.net/pray/unreachedoftheday/today\">Joshua Project</a>.",
+    "description": "Display the \"Unreached of the Day\" data from <a target=\"_blank\" href=\"www.joshuaproject.net/pray/unreachedoftheday/today\">Joshua Project</a>.",
     "issues": []
   },
   {
@@ -1650,7 +1650,7 @@
     "id": "alltopafi/MMM-DateCounter",
     "maintainer": "alltopafi",
     "maintainerURL": "",
-    "description": "A module that can show either the time remaining to an event, or the time since an event. This module also supports having a supporting image.",
+    "description": "Shows either the time remaining to an event, or the time since an event. This module also supports having a supporting image.",
     "issues": []
   },
   {
@@ -1722,7 +1722,7 @@
     "id": "grenagit/MMM-DHT-Sensor",
     "maintainer": "grenagit",
     "maintainerURL": "",
-    "description": "A module displaying the current temperature and humidity from DHT11, DHT22 and AM2302 sensors.",
+    "description": "Display the current temperature and humidity from DHT11, DHT22 and AM2302 sensors.",
     "issues": []
   },
   {
@@ -1758,7 +1758,7 @@
     "id": "mboskamp/MMM-Discogs",
     "maintainer": "mboskamp",
     "maintainerURL": "",
-    "description": "A module to display a random release from your <a target=\"_blank\" href=\"https://www.discogs.com\">discogs.com</a> music collection.",
+    "description": "Display a random release from your <a target=\"_blank\" href=\"https://www.discogs.com\">discogs.com</a> music collection.",
     "issues": [],
     "outdated": "Abandoned. Repo has been archived at 2022-08-26."
   },
@@ -1768,7 +1768,7 @@
     "id": "Smiche/MMM-DiscordWatch",
     "maintainer": "Smiche",
     "maintainerURL": "",
-    "description": "A module to display messages from discord channels.",
+    "description": "Display messages from discord channels.",
     "issues": []
   },
   {
@@ -1822,7 +1822,7 @@
     "id": "Ax-LED/MMM-Dreambox",
     "maintainer": "Ax-LED",
     "maintainerURL": "",
-    "description": "A module to connect a Dreambox or a Enigma2 Receiver (like VU or VU+) to MagicMirror² and stream stations via omxplayer.",
+    "description": "Connect a Dreambox or a Enigma2 Receiver (like VU or VU+) to MagicMirror² and stream stations via omxplayer.",
     "issues": []
   },
   {
@@ -2083,7 +2083,7 @@
     "id": "mumblebaj/MMM-EskomSePush",
     "maintainer": "mumblebaj",
     "maintainerURL": "https://github.com/mumblebaj",
-    "description": "A module to display loadshedding schedule data for the South African users.",
+    "description": "Display loadshedding schedule data for the South African users.",
     "issues": []
   },
   {
@@ -2318,7 +2318,7 @@
     "id": "shin10/MMM-FF-multigeiger",
     "maintainer": "shin10",
     "maintainerURL": "",
-    "description": "A module showing radiation charts from <a target=\"_blank\" href=\"https://multigeiger.citysensor.de\">https://multigeiger.citysensor.de</a>.",
+    "description": "Show radiation charts from <a target=\"_blank\" href=\"https://multigeiger.citysensor.de\">https://multigeiger.citysensor.de</a>.",
     "issues": []
   },
   {
@@ -2435,7 +2435,7 @@
     "id": "kapsolas/MMM-Flickr",
     "maintainer": "kapsolas",
     "maintainerURL": "",
-    "description": "A module to load last 20 images posted to user's Flickr photostream to mirror and animate them. API key required.",
+    "description": "Load last 20 images posted to user's Flickr photostream to mirror and animate them. API key required.",
     "issues": []
   },
   {
@@ -2534,7 +2534,7 @@
     "id": "ianperrin/MMM-Formula1",
     "maintainer": "ianperrin",
     "maintainerURL": "",
-    "description": "A module that displays the driver standings from the current Formula 1 season.",
+    "description": "Display the driver standings from the current Formula 1 season.",
     "issues": []
   },
   {
@@ -2552,7 +2552,7 @@
     "id": "yourdawi/MMM-FortniteStats",
     "maintainer": "yourdawi",
     "maintainerURL": "",
-    "description": "Module to display Fortnite Stats.",
+    "description": "Display Fortnite Stats.",
     "issues": []
   },
   {
@@ -2570,7 +2570,7 @@
     "id": "RaspiManu/MMM-FrameLight",
     "maintainer": "RaspiManu",
     "maintainerURL": "",
-    "description": "This is a module for controlling an RGB-LED strip mounted onto or embedded into a smart mirror's frame. It provides features for static background lighting, highly customizable effects on notifications and party lighting.",
+    "description": "Controlling an RGB-LED strip mounted onto or embedded into a smart mirror's frame. It provides features for static background lighting, highly customizable effects on notifications and party lighting.",
     "issues": []
   },
   {
@@ -2696,7 +2696,7 @@
     "id": "mumblebaj/MMM-GasMonitor",
     "maintainer": "mumblebaj",
     "maintainerURL": "https://github.com/mumblebaj",
-    "description": "A module to monitor your gas tank level on your mirror.",
+    "description": "Monitor your gas tank level on your mirror.",
     "issues": []
   },
   {
@@ -2705,7 +2705,7 @@
     "id": "tderflinger/MMM-GConnect",
     "maintainer": "tderflinger",
     "maintainerURL": "https://github.com/tderflinger",
-    "description": "A module that displays sports data from your Garmin Connect(tm) account.",
+    "description": "Display sports data from your Garmin Connect(tm) account.",
     "issues": []
   },
   {
@@ -2750,7 +2750,7 @@
     "id": "C-Deck/MMM-GHIN",
     "maintainer": "C-Deck",
     "maintainerURL": "https://github.com/C-Deck",
-    "description": "A module that displays your official USGA Ghin handicap.",
+    "description": "Display your official USGA Ghin handicap.",
     "issues": []
   },
   {
@@ -2993,7 +2993,7 @@
     "id": "Tom-Hirschberger/MMM-GPIO-Notifications",
     "maintainer": "Tom-Hirschberger",
     "maintainerURL": "https://github.com/Tom-Hirschberger",
-    "description": "A module to send notifications based on GPIO events. Can be used as PIR module and with rotary encoders.",
+    "description": "Send notifications based on GPIO events. Can be used as PIR module and with rotary encoders.",
     "issues": []
   },
   {
@@ -3020,7 +3020,7 @@
     "id": "SvenSommer/MMM-GrafanaChart",
     "maintainer": "SvenSommer",
     "maintainerURL": "",
-    "description": "Module to display a diagram generated by Grafana.",
+    "description": "Display a diagram generated by Grafana.",
     "issues": []
   },
   {
@@ -3038,7 +3038,7 @@
     "id": "mumblebaj/MMM-Growatt",
     "maintainer": "mumblebaj",
     "maintainerURL": "https://github.com/mumblebaj",
-    "description": "A module to display data from Growatt Inveter. Support multiple Growatt Inverter types.",
+    "description": "Display data from Growatt Inveter. Support multiple Growatt Inverter types.",
     "issues": []
   },
   {
@@ -3056,7 +3056,7 @@
     "id": "mumblebaj/MMM-Growatt-Stats",
     "maintainer": "mumblebaj",
     "maintainerURL": "https://github.com/mumblebaj",
-    "description": "A module to display status data from Growatt Inveter. Support multiple Growatt Inverter types. Made to work in conjunction with <a target=\"_blank\" href=\"https://github.com/mumblebaj/MMM-Growatt\">MMM-Growatt</a> or independently.",
+    "description": "Display status data from Growatt Inveter. Support multiple Growatt Inverter types. Made to work in conjunction with <a target=\"_blank\" href=\"https://github.com/mumblebaj/MMM-Growatt\">MMM-Growatt</a> or independently.",
     "issues": []
   },
   {
@@ -3155,7 +3155,7 @@
     "id": "Snille/MMM-HideAll",
     "maintainer": "Snille",
     "maintainerURL": "https://github.com/Snille",
-    "description": "A fork of masters1222s module. Module to Hide Everything on Screen. I have added lot's of new features and customizations.",
+    "description": "Module to hide everything on screen. With a lot of features and customizations.",
     "issues": []
   },
   {
@@ -3425,7 +3425,7 @@
     "id": "PierreGode/MMM-ICA",
     "maintainer": "PierreGode",
     "maintainerURL": "https://github.com/PierreGode",
-    "description": "MMM-ICA is a Module for connecting to the Swedish grocery store ICA API and get information.",
+    "description": "MMM-ICA is a module for connecting to the Swedish grocery store ICA API and get information.",
     "issues": []
   },
   {
@@ -3452,7 +3452,7 @@
     "id": "wiedsee/MMM-IconDisplayer",
     "maintainer": "wiedsee",
     "maintainerURL": "",
-    "description": "A module that shows a icon according to a MagicMirror² notification.",
+    "description": "Show an icon according to a MagicMirror² notification.",
     "issues": []
   },
   {
@@ -3597,7 +3597,7 @@
     "id": "kapsolas/MMM-Instagram",
     "maintainer": "kapsolas",
     "maintainerURL": "",
-    "description": "A module load the images from a users Instagram feed. The images are displayed on the mirror and animated. API key required.",
+    "description": "Load the images from a users Instagram feed. The images are displayed on the mirror and animated. API key required.",
     "issues": []
   },
   {
@@ -3606,7 +3606,7 @@
     "id": "AlexanderSalter/MMM-Instagram2020",
     "maintainer": "AlexanderSalter",
     "maintainerURL": "https://github.com/AlexanderSalter",
-    "description": "A module for displaying your Instagram photos and comments. It makes use of the new Facebook Instagram Graph API.",
+    "description": "Display your Instagram photos and comments. It makes use of the new Facebook Instagram Graph API.",
     "issues": []
   },
   {
@@ -3831,7 +3831,7 @@
     "id": "pvyParts/MMM-jokes",
     "maintainer": "pvyParts",
     "maintainerURL": "",
-    "description": "A module to load random jokes from the web.",
+    "description": "Load random jokes from the web.",
     "issues": []
   },
   {
@@ -4237,7 +4237,7 @@
     "id": "mykle1/MMM-Lottery",
     "maintainer": "mykle1",
     "maintainerURL": "",
-    "description": "A module that gives you truly random lottery numbers, coinciding with many International lotteries.",
+    "description": "Display truly random lottery numbers, coinciding with many International lotteries.",
     "issues": []
   },
   {
@@ -4328,7 +4328,7 @@
     "id": "GHLasse/MagicMirror-Olympia-Module",
     "maintainer": "GHLasse",
     "maintainerURL": "",
-    "description": "A module that displays the medals for the summer olympics 2016.",
+    "description": "Display the medals for the summer olympics 2016.",
     "issues": []
   },
   {
@@ -4392,7 +4392,7 @@
     "id": "grenagit/MMM-MarineWeather",
     "maintainer": "grenagit",
     "maintainerURL": "",
-    "description": "A module displaying the current marine weather (water and air temperatures, wind and wave conditions).",
+    "description": "Display the current marine weather (water and air temperatures, wind and wave conditions).",
     "issues": []
   },
   {
@@ -4572,7 +4572,7 @@
     "id": "blixhavn/MMM-Minigjenbruksstasjon",
     "maintainer": "blixhavn",
     "maintainerURL": "",
-    "description": "A module to show opening hours for mobile recycling stations in Oslo, Norway. API free, so if it looks intresting, check to see if you can use it for your city too!",
+    "description": "Show opening hours for mobile recycling stations in Oslo, Norway. API free, so if it looks intresting, check to see if you can use it for your city too!",
     "issues": []
   },
   {
@@ -4860,7 +4860,7 @@
     "id": "Snille/MMM-Modulebar",
     "maintainer": "Snille",
     "maintainerURL": "https://github.com/Snille",
-    "description": "A module that adds touch buttons for showing/hiding other modules.",
+    "description": "Add touch buttons for showing/hiding other modules.",
     "issues": []
   },
   {
@@ -4968,7 +4968,7 @@
     "id": "pjestico/MMM-MotionDisplay",
     "maintainer": "pjestico",
     "maintainerURL": "https://github.com/pjestico",
-    "description": "A module that displays motion detected by your security camera.",
+    "description": "Display motion detected by your security camera.",
     "issues": []
   },
   {
@@ -4995,7 +4995,7 @@
     "id": "asimhsidd/MMM-MP3Player",
     "maintainer": "asimhsidd",
     "maintainerURL": "",
-    "description": "A module for playing music from USB pen drive as soon as it is inserted.",
+    "description": "Play music from USB pen drive as soon as it is inserted.",
     "issues": []
   },
   {
@@ -5004,7 +5004,7 @@
     "id": "x3mEr/MMM-MP3Player",
     "maintainer": "x3mEr",
     "maintainerURL": "",
-    "description": "A module for playing music from folder. It's a remade asimhsidd's MMM-MP3Player module.",
+    "description": "Play music from folder. It's a remade asimhsidd's MMM-MP3Player module.",
     "issues": []
   },
   {
@@ -5112,7 +5112,7 @@
     "id": "BKeyport/MMM-Multimonth",
     "maintainer": "BKeyport",
     "maintainerURL": "https://github.com/BKeyport",
-    "description": "Calendar module for displaying multiple mini-calendars at the same time (actively maintained).",
+    "description": "Display multiple mini-calendars at the same time (actively maintained).",
     "issues": []
   },
   {
@@ -5292,7 +5292,7 @@
     "id": "TheVieiraAkA/MMM-MyTraktSeries",
     "maintainer": "TheVieiraAkA",
     "maintainerURL": "",
-    "description": "A module to display your show's watch progress in a private list in your <a target=\"_blank\" href=\"https://trakt.tv\">trakt.tv</a> account.",
+    "description": "Display your show's watch progress in a private list in your <a target=\"_blank\" href=\"https://trakt.tv\">trakt.tv</a> account.",
     "issues": []
   },
   {
@@ -5409,7 +5409,7 @@
     "id": "nebulx29/MMM-nasaastropic",
     "maintainer": "nebulx29",
     "maintainerURL": "",
-    "description": "A module displaying NASA's astronomy picture of the day.",
+    "description": "Display NASA's astronomy picture of the day.",
     "issues": []
   },
   {
@@ -5436,7 +5436,7 @@
     "id": "Ax-LED/MMM-Navigate",
     "maintainer": "Ax-LED",
     "maintainerURL": "",
-    "description": "A module to connect a rotary encoder to MagicMirror² and use it for navigation inside of MagicMirror².",
+    "description": "Connect a rotary encoder to MagicMirror² and use it for navigation inside of MagicMirror².",
     "issues": []
   },
   {
@@ -5481,7 +5481,7 @@
     "id": "MartinLoidolt/MMM-neoomAPI",
     "maintainer": "MartinLoidolt",
     "maintainerURL": "https://github.com/MartinLoidolt",
-    "description": "Module for displaying your photovoltaic statistics from neoom.",
+    "description": "Display your photovoltaic statistics from neoom.",
     "issues": []
   },
   {
@@ -5490,7 +5490,7 @@
     "id": "ottopaulsen/MMM-NesteBussAtB",
     "maintainer": "ottopaulsen",
     "maintainerURL": "",
-    "description": "A module that shows how many minutes until the next bus(es) goes from given bus stops.",
+    "description": "Show how many minutes until the next bus(es) goes from given bus stops.",
     "issues": []
   },
   {
@@ -5589,7 +5589,7 @@
     "id": "PierreGode/MMM-next-episode",
     "maintainer": "PierreGode",
     "maintainerURL": "https://github.com/PierreGode",
-    "description": "A module to display your upcomming show's and movies from your next-episode account.",
+    "description": "Display your upcomming show's and movies from your next-episode account.",
     "issues": []
   },
   {
@@ -5652,7 +5652,7 @@
     "id": "TemianMihai/MMM-NFTcollections",
     "maintainer": "TemianMihai",
     "maintainerURL": "",
-    "description": "Module for displaying details about a NFT collection.",
+    "description": "Display details about a NFT collection.",
     "issues": []
   },
   {
@@ -6048,7 +6048,7 @@
     "id": "johnny-co/MMM-OpenSprinkler",
     "maintainer": "johnny-co",
     "maintainerURL": "https://github.com/johnny-co",
-    "description": "Sprinkler module for displaying OpenSprinkler lawn care station and programs.",
+    "description": "Display OpenSprinkler lawn care station and programs.",
     "issues": []
   },
   {
@@ -6210,7 +6210,7 @@
     "id": "NickEngmann/MMM-ParticleStatus",
     "maintainer": "NickEngmann",
     "maintainerURL": "https://github.com/NickEngmann",
-    "description": "Module for displaying Particle.io device data.",
+    "description": "Display Particle.io device data.",
     "issues": []
   },
   {
@@ -6300,7 +6300,7 @@
     "id": "mcl8on/MMM-PGA",
     "maintainer": "mcl8on",
     "maintainerURL": "https://github.com/mcl8on",
-    "description": "A module to show PGA tournaments scores.",
+    "description": "Displays PGA tournaments scores.",
     "issues": []
   },
   {
@@ -6825,7 +6825,7 @@
     "id": "JasonVonKrueger/MMM-QR-Remote-Link",
     "maintainer": "JasonVonKrueger",
     "maintainerURL": "",
-    "description": "A module that will display a QR code with a link to a local module.",
+    "description": "Display a QR code with a link to a local module.",
     "issues": []
   },
   {
@@ -6852,7 +6852,7 @@
     "id": "dfanica/MMM-Quotable",
     "maintainer": "dfanica",
     "maintainerURL": "",
-    "description": "A module for displaying random quotes using the <a target=\"_blank\" href=\"https://github.com/lukePeavey/quotable\">Quotable API</a>. Filters quotes by max length and tags.",
+    "description": "Display random quotes using the <a target=\"_blank\" href=\"https://github.com/lukePeavey/quotable\">Quotable API</a>. Filters quotes by max length and tags.",
     "issues": []
   },
   {
@@ -6942,7 +6942,7 @@
     "id": "skuethe/MMM-RandomPhoto",
     "maintainer": "skuethe",
     "maintainerURL": "",
-    "description": "A module that will load a random photo from picsum. Originally by diego-vieira, now with support for local paths and NextCloud shares.",
+    "description": "Load a random photo from picsum. Originally by diego-vieira, now with support for local paths and NextCloud shares.",
     "issues": []
   },
   {
@@ -6951,7 +6951,7 @@
     "id": "Jacopo1891/MMM-RandomQuotes",
     "maintainer": "Jacopo1891",
     "maintainerURL": "https://github.com/jacopo1891",
-    "description": "A module that displays a random quote from various authorship using Paperquote's API.",
+    "description": "Display a random quote from various authorship using Paperquote's API.",
     "issues": []
   },
   {
@@ -6969,7 +6969,7 @@
     "id": "justjim1220/MMM-RandomYouTubePlayer",
     "maintainer": "justjim1220",
     "maintainerURL": "",
-    "description": "A module that will load a playlist into a YouTube player, AND shuffle the videos in the playlist.",
+    "description": "Load a playlist into a YouTube player, AND shuffle the videos in the playlist.",
     "issues": []
   },
   {
@@ -7530,7 +7530,7 @@
     "id": "surekap/MMM-ShairportMetadata",
     "maintainer": "surekap",
     "maintainerURL": "",
-    "description": "A module to integrate Apple AirTunes/Airplay metadata coming via shairport-sync into the MagicMirror². Does not work with video or mirroring.",
+    "description": "Integrate Apple AirTunes/Airplay metadata coming via shairport-sync into the MagicMirror². Does not work with video or mirroring.",
     "issues": []
   },
   {
@@ -7539,7 +7539,7 @@
     "id": "Medve01/Shelly-HT",
     "maintainer": "Medve01",
     "maintainerURL": "https://github.com/Medve01",
-    "description": "Module for displaying data from 1 Shelly HT sensor.",
+    "description": "Display data from 1 Shelly HT sensor.",
     "issues": []
   },
   {
@@ -7548,7 +7548,7 @@
     "id": "stefanjacobs/MMM-Shelly-PM",
     "maintainer": "stefanjacobs",
     "maintainerURL": "https://github.com/stefanjacobs",
-    "description": "Module for displaying data from 1 Shelly PM sensor, forked and modified by <a target=\"_blank\" href=\"https://github.com/Medve01/Shelly-HT\">Shelly-HT</a>.",
+    "description": "Display data from 1 Shelly PM sensor, forked and modified by <a target=\"_blank\" href=\"https://github.com/Medve01/Shelly-HT\">Shelly-HT</a>.",
     "issues": []
   },
   {
@@ -7557,7 +7557,7 @@
     "id": "mgarrix/MMM-ShellyEMMeter",
     "maintainer": "mgarrix",
     "maintainerURL": "https://github.com/mgarrix",
-    "description": "Module for displaying data from Shelly EM sensor.",
+    "description": "Display data from Shelly EM sensor.",
     "issues": []
   },
   {
@@ -7566,7 +7566,7 @@
     "id": "IoT-Coder/MMM-ShellyPlus-HT",
     "maintainer": "IoT-Coder",
     "maintainerURL": "https://github.com/IoT-Coder",
-    "description": "Module for displaying data from Shelly+ HT sensor. Forked from Shelly-HT for Gen2 device Shelly Plus HT.",
+    "description": "Display data from Shelly+ HT sensor. Forked from Shelly-HT for Gen2 device Shelly Plus HT.",
     "issues": []
   },
   {
@@ -7773,7 +7773,7 @@
     "id": "fewieden/MMM-soccer",
     "maintainer": "fewieden",
     "maintainerURL": "",
-    "description": "A module that displays standings from European Soccer (Football) leagues (optional voice-control).",
+    "description": "Display standings from European Soccer (Football) leagues (optional voice-control).",
     "issues": []
   },
   {
@@ -7782,7 +7782,7 @@
     "id": "0m4r/MMM-SoccerLiveScore",
     "maintainer": "0m4r",
     "maintainerURL": "",
-    "description": "A module that displays live scores of your favorite soccer leagues/competitions.",
+    "description": "Display live scores of your favorite soccer leagues/competitions.",
     "issues": []
   },
   {
@@ -7863,7 +7863,7 @@
     "id": "grenagit/MMM-SolarPicture",
     "maintainer": "grenagit",
     "maintainerURL": "",
-    "description": "A module displaying the last Solar Dynamics Observatory (SDO) picture.",
+    "description": "Display the last Solar Dynamics Observatory (SDO) picture.",
     "issues": []
   },
   {
@@ -7935,7 +7935,7 @@
     "id": "LukasKlose/MMM-Speedway",
     "maintainer": "LukasKlose",
     "maintainerURL": "https://github.com/LukasKlose",
-    "description": "A module that displays the tables of the Polish Speedway Leagues (PGE Ekstraliga, I. Liga Żużlowa , II. Liga Żużlowa).",
+    "description": "Display the tables of the Polish Speedway Leagues (PGE Ekstraliga, I. Liga Żużlowa , II. Liga Żużlowa).",
     "issues": []
   },
   {
@@ -8061,7 +8061,7 @@
     "id": "ianperrin/MMM-Strava",
     "maintainer": "ianperrin",
     "maintainerURL": "",
-    "description": "A module that displays your activity data from <a target=\"_blank\" href=\"https://www.strava.com\">Strava.com</a>.",
+    "description": "Display your activity data from <a target=\"_blank\" href=\"https://www.strava.com\">Strava.com</a>.",
     "issues": []
   },
   {
@@ -8079,7 +8079,7 @@
     "id": "linuxtuxie/MMM-SunnyPortal",
     "maintainer": "linuxtuxie",
     "maintainerURL": "",
-    "description": "A module for displaying the current, monthly and yearly power output of your SunnyPortal Solar Panels.(<a target=\"_blank\" href=\"https://www.sunnyportal.com\">https://www.sunnyportal.com</a>).",
+    "description": "Display the current, monthly and yearly power output of your SunnyPortal Solar Panels.(<a target=\"_blank\" href=\"https://www.sunnyportal.com\">https://www.sunnyportal.com</a>).",
     "issues": []
   },
   {
@@ -8097,7 +8097,7 @@
     "id": "mumblebaj/MMM-SweepClock",
     "maintainer": "mumblebaj",
     "maintainerURL": "https://github.com/mumblebaj",
-    "description": "A module to display a classic railway clock.",
+    "description": "Display a classic railway clock.",
     "issues": []
   },
   {
@@ -8160,7 +8160,7 @@
     "id": "Tom-Hirschberger/MMM-SynologySurveillance",
     "maintainer": "Tom-Hirschberger",
     "maintainerURL": "https://github.com/Tom-Hirschberger",
-    "description": "A module to display the Video Streams of cameras connected to your Synology Disc Stations and control their positions.",
+    "description": "Display the video streams of cameras connected to your Synology Disc Stations and control their positions.",
     "issues": []
   },
   {
@@ -8277,7 +8277,7 @@
     "id": "Tom-Hirschberger/MMM-Temperature",
     "maintainer": "Tom-Hirschberger",
     "maintainerURL": "https://github.com/Tom-Hirschberger",
-    "description": "A module to display tempature, humdity, and more of DHT11, DHT22, BMT280, HTU21, DS18B20 or other sensors.",
+    "description": "Display tempature, humdity, and more of DHT11, DHT22, BMT280, HTU21, DS18B20 or other sensors.",
     "issues": []
   },
   {
@@ -8385,7 +8385,7 @@
     "id": "zhouxichun/MMM-TiHimawari8Earth",
     "maintainer": "zhouxichun",
     "maintainerURL": "https://github.com/zhouxichun",
-    "description": "This is a module that fetch earth live image form Himawari #8 geostationary satellite and display images on screen.",
+    "description": "Fetch earth live image form Himawari #8 geostationary satellite and display images on screen.",
     "issues": []
   },
   {
@@ -8493,7 +8493,7 @@
     "id": "Tom-Hirschberger/MMM-TouchButton",
     "maintainer": "Tom-Hirschberger",
     "maintainerURL": "https://github.com/Tom-Hirschberger",
-    "description": "A module to add clickable buttons to send notifications or run commands.",
+    "description": "Add clickable buttons to send notifications or run commands.",
     "issues": []
   },
   {
@@ -8565,7 +8565,7 @@
     "id": "Kiina/MMM-trakt",
     "maintainer": "Kiina",
     "maintainerURL": "",
-    "description": "A module to display your upcoming Shows from your <a target=\"_blank\" href=\"https://trakt.tv\">trakt.tv</a> account.",
+    "description": "Display your upcoming Shows from your <a target=\"_blank\" href=\"https://trakt.tv\">trakt.tv</a> account.",
     "issues": []
   },
   {
@@ -8691,7 +8691,7 @@
     "id": "XBCreepinJesus/MMM-TvheadendDVR",
     "maintainer": "XBCreepinJesus",
     "maintainerURL": "https://github.com/XBCreepinJesus",
-    "description": "A module to show your upcoming Tvheadend recordings.",
+    "description": "Show your upcoming Tvheadend recordings.",
     "issues": []
   },
   {
@@ -8763,7 +8763,7 @@
     "id": "XBCreepinJesus/MMM-UKLiveTrainDepartures",
     "maintainer": "XBCreepinJesus",
     "maintainerURL": "https://github.com/XBCreepinJesus",
-    "description": "A module showing live train departure/arrival times for the UK's National Rail network.",
+    "description": "Show live train departure/arrival times for the UK's National Rail network.",
     "issues": []
   },
   {
@@ -8934,7 +8934,7 @@
     "id": "grenagit/MMM-VigiCrues",
     "maintainer": "grenagit",
     "maintainerURL": "",
-    "description": "A module displaying the last value of water level at a station in the Vigicrues network in France.",
+    "description": "Display the last value of water level at a station in the Vigicrues network in France.",
     "issues": []
   },
   {
@@ -8943,7 +8943,7 @@
     "id": "grenagit/MMM-VigilanceMeteoFrance",
     "maintainer": "grenagit",
     "maintainerURL": "",
-    "description": "A module displaying the current level of vigilance of weather phenomena and associated risks for France.",
+    "description": "Display the current level of vigilance of weather phenomena and associated risks for France.",
     "issues": []
   },
   {
@@ -9565,7 +9565,7 @@
     "id": "PierreGode/MMM-ZAPTEC",
     "maintainer": "PierreGode",
     "maintainerURL": "https://github.com/PierreGode",
-    "description": "Module for displaying ZAPTEC charging API.",
+    "description": "Display ZAPTEC charging API.",
     "issues": []
   },
   {

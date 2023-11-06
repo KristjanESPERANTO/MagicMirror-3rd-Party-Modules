@@ -467,7 +467,7 @@
     "id": "FabianNiehaus89/MMM-AOE2-STATS",
     "maintainer": "FabianNiehaus89",
     "maintainerURL": "",
-    "description": "Module to display Age of Empire stats by player ID.",
+    "description": "Display Age of Empire stats by player ID.",
     "issues": [
       "`package.json` issue: No repository field.",
       "`package.json` issue: No license field.",
@@ -530,7 +530,7 @@
     "id": "grenagit/MMM-APOD",
     "maintainer": "grenagit",
     "maintainerURL": "",
-    "description": "A module displaying the last Astronomy Picture Of the Day (APOD). This is an evolution of MMM-nasaastropic : supports image and video and display title, description and copyright.",
+    "description": "Display the last Astronomy Picture Of the Day (APOD). This is an evolution of MMM-nasaastropic : supports image and video and display title, description and copyright.",
     "issues": [
       "Issue: There is no `package.json`. We need this file to gather information about the module.",
       "Typo: Found 'Magic Mirror' in file `MMM-APOD.js`: Replace it with `MagicMirror\u00b2`.",
@@ -789,7 +789,7 @@
     "id": "lavolp3/MMM-AVStock",
     "maintainer": "lavolp3",
     "maintainerURL": "",
-    "description": "Module for displaying stock price with Alphavantage API.",
+    "description": "Display stock prices and charts using Yahoo Finance API.",
     "issues": [],
     "tags": [
       "stock",
@@ -930,7 +930,7 @@
     "id": "ItsMeBrille/MMM-Bensinpriser",
     "maintainer": "ItsMeBrille",
     "maintainerURL": "https://github.com/ItsMeBrille",
-    "description": "A module to display current fuel prices at your nearest gas station in Norway.",
+    "description": "Display current fuel prices at your nearest gas station in Norway.",
     "issues": [
       "Issue: There is no `package.json`. We need this file to gather information about the module.",
       "Recommendation: Found 'XMLHttpRequest' in file `MMM-Bensinpriser.js`: Replace it with built-in fetch."
@@ -1004,7 +1004,7 @@
     "id": "grenagit/MMM-BiathlonResults",
     "maintainer": "grenagit",
     "maintainerURL": "",
-    "description": "A module displaying the current biathlon results (World Cup and IBU Cup).",
+    "description": "Display the current biathlon results (World Cup and IBU Cup).",
     "issues": [
       "Typo: Found 'Magic Mirror' in file `MMM-BiathlonResults.js`: Replace it with `MagicMirror\u00b2`.",
       "Typo: Found 'Magic Mirror' in file `node_helper.js`: Replace it with `MagicMirror\u00b2`.",
@@ -2063,7 +2063,7 @@
     "id": "flo80/MMM-chromecast",
     "maintainer": "flo80",
     "maintainerURL": "",
-    "description": "A module to directly cast from the MagicMirror\u00b2 server to a chromecast.",
+    "description": "Directly cast from the MagicMirror\u00b2 server to a chromecast.",
     "issues": [
       "Issue: There is no `package.json`. We need this file to gather information about the module.",
       "Typo: Found 'Magic Mirror' in file `MMM-chromecast.js`: Replace it with `MagicMirror\u00b2`.",
@@ -2097,7 +2097,7 @@
     "id": "ianperrin/MMM-Clash-Royale",
     "maintainer": "ianperrin",
     "maintainerURL": "",
-    "description": "A module that displays random Clash Royale decks.",
+    "description": "Display random Clash Royale decks.",
     "issues": [
       "Issue: There is no `package.json`. We need this file to gather information about the module.",
       "Typo: Found 'Magic Mirror' in file `MMM-Clash-Royale.js`: Replace it with `MagicMirror\u00b2`.",
@@ -2524,7 +2524,7 @@
     "id": "dsouzadrian/MMM-CricketScores",
     "maintainer": "dsouzadrian",
     "maintainerURL": "https://github.com/dsouzadrian",
-    "description": "A module that displays cicket scores for ongoing live cricket matches.",
+    "description": "Display cicket scores for ongoing live cricket matches.",
     "issues": [
       "Deprecated: Found 'require('request')' in file `node_helper.js`: Replace it with built-in fetch."
     ],
@@ -2757,7 +2757,7 @@
     "id": "wctimmer/MMM-DagelijksWoord",
     "maintainer": "wctimmer",
     "maintainerURL": "",
-    "description": "A module that displays the <strong>dutch</strong> verse of the day from &lt;<a target=\"_blank\" href=\"http://www.dagelijkswoord.nl%3E\">www.dagelijkswoord.nl&gt;</a>.",
+    "description": "Display the <strong>dutch</strong> verse of the day from &lt;<a target=\"_blank\" href=\"http://www.dagelijkswoord.nl%3E\">www.dagelijkswoord.nl&gt;</a>.",
     "issues": [
       "Recommendation: Found 'uses: actions/checkout@v3' in file `lint.yml`: Replace it with v4.",
       "Typo: Found 'Magic Mirror' in file `MMM-DagelijksWoord.js`: Replace it with `MagicMirror\u00b2`.",
@@ -2799,6 +2799,7 @@
       "Issue: There is no `package.json`. We need this file to gather information about the module.",
       "Typo: Found 'Magic Mirror' in file `MMM-DaikinAirbase.js`: Replace it with `MagicMirror\u00b2`.",
       "Typo: Found 'Magic Mirror' in file `node_helper.js`: Replace it with `MagicMirror\u00b2`.",
+      "Recommendation: Found 'require('http')' in file `node_helper.js`: Replace 'http' by 'node:http'.",
       "Warning: No LICENSE file."
     ],
     "last_commit": "2023-08-26"
@@ -2834,7 +2835,7 @@
     "id": "arthurgarzajr/MMM-DailyBibleVerse",
     "maintainer": "arthurgarzajr",
     "maintainerURL": "",
-    "description": "A module that displays the verse of the day from &lt;<a target=\"_blank\" href=\"http://www.biblegateway.com%3E\">www.biblegateway.com&gt;</a>.",
+    "description": "Display the verse of the day from &lt;<a target=\"_blank\" href=\"http://www.biblegateway.com%3E\">www.biblegateway.com&gt;</a>.",
     "issues": [
       "Issue: No image found.",
       "Typo: Found 'Magic Mirror' in file `node_helper.js`: Replace it with `MagicMirror\u00b2`.",
@@ -2849,7 +2850,7 @@
     "id": "anthpham/MMM-DailyBuddhismWisdom",
     "maintainer": "anthpham",
     "maintainerURL": "",
-    "description": "A module that displays a daily bit of Buddhist wisdom from Thich Nhat Hanh's \"Your True Home\".",
+    "description": "Display a daily bit of Buddhist wisdom from Thich Nhat Hanh's \"Your True Home\".",
     "issues": [
       "Issue: There is no `package.json`. We need this file to gather information about the module.",
       "Typo: Found 'Magic Mirror' in file `README.md`: Replace it with `MagicMirror\u00b2`."
@@ -2891,7 +2892,7 @@
     "id": "oemel09/MMM-DailyPower",
     "maintainer": "oemel09",
     "maintainerURL": "",
-    "description": "A module that displays the bible verse of the day from <a target=\"_blank\" href=\"https://dailypower.oemel09.de\">DailyPower</a>.",
+    "description": "Display the bible verse of the day from <a target=\"_blank\" href=\"https://dailypower.oemel09.de\">DailyPower</a>.",
     "issues": [
       "Issue: There is no `package.json`. We need this file to gather information about the module.",
       "Recommendation: Found 'require('https')' in file `node_helper.js`: Replace 'https' by 'node:https'.",
@@ -2905,7 +2906,7 @@
     "id": "MStoltzfus/MMM-DailyUnreachedPeopleGroup",
     "maintainer": "MStoltzfus",
     "maintainerURL": "https://github.com/MStoltzfus",
-    "description": "A module that displays the \"Unreached of the Day\" data from <a target=\"_blank\" href=\"www.joshuaproject.net/pray/unreachedoftheday/today\">Joshua Project</a>.",
+    "description": "Display the \"Unreached of the Day\" data from <a target=\"_blank\" href=\"www.joshuaproject.net/pray/unreachedoftheday/today\">Joshua Project</a>.",
     "issues": [
       "`package.json` issue: No repository field.",
       "Recommendation: Found 'node-fetch' in file `README.md`: Replace it with built-in fetch.",
@@ -3002,7 +3003,7 @@
     "id": "alltopafi/MMM-DateCounter",
     "maintainer": "alltopafi",
     "maintainerURL": "",
-    "description": "A module that can show either the time remaining to an event, or the time since an event. This module also supports having a supporting image.",
+    "description": "Shows either the time remaining to an event, or the time since an event. This module also supports having a supporting image.",
     "issues": [
       "Issue: There is no `package.json`. We need this file to gather information about the module.",
       "Typo: Found 'Magic Mirror' in file `MMM-DateCounter.js`: Replace it with `MagicMirror\u00b2`.",
@@ -3123,7 +3124,7 @@
     "id": "grenagit/MMM-DHT-Sensor",
     "maintainer": "grenagit",
     "maintainerURL": "",
-    "description": "A module displaying the current temperature and humidity from DHT11, DHT22 and AM2302 sensors.",
+    "description": "Display the current temperature and humidity from DHT11, DHT22 and AM2302 sensors.",
     "issues": [
       "Typo: Found 'Magic Mirror' in file `MMM-DHT-Sensor.js`: Replace it with `MagicMirror\u00b2`.",
       "Typo: Found 'Magic Mirror' in file `node_helper.js`: Replace it with `MagicMirror\u00b2`.",
@@ -3192,7 +3193,7 @@
     "id": "mboskamp/MMM-Discogs",
     "maintainer": "mboskamp",
     "maintainerURL": "",
-    "description": "A module to display a random release from your <a target=\"_blank\" href=\"https://www.discogs.com\">discogs.com</a> music collection.",
+    "description": "Display a random release from your <a target=\"_blank\" href=\"https://www.discogs.com\">discogs.com</a> music collection.",
     "issues": [
       "Typo: Found 'Magic Mirror' in file `README.md`: Replace it with `MagicMirror\u00b2`.",
       "Warning: No LICENSE file."
@@ -3211,7 +3212,7 @@
     "id": "Smiche/MMM-DiscordWatch",
     "maintainer": "Smiche",
     "maintainerURL": "",
-    "description": "A module to display messages from discord channels.",
+    "description": "Display messages from discord channels.",
     "issues": [
       "`package.json` issue: No repository field.",
       "`package.json` issue: license should be a valid SPDX license expression",
@@ -3271,7 +3272,8 @@
     "issues": [
       "Issue: There is no `package.json`. We need this file to gather information about the module.",
       "Typo: Found 'Magic Mirror' in file `MMM-DockerVisualizer.js`: Replace it with `MagicMirror\u00b2`.",
-      "Recommendation: Found 'XMLHttpRequest' in file `jQuery.js`: Replace it with built-in fetch."
+      "Recommendation: Found 'XMLHttpRequest' in file `jQuery.js`: Replace it with built-in fetch.",
+      "Recommendation: Found 'require('http')' in file `node_helper.js`: Replace 'http' by 'node:http'."
     ],
     "last_commit": "2019-02-14"
   },
@@ -3313,7 +3315,7 @@
     "id": "Ax-LED/MMM-Dreambox",
     "maintainer": "Ax-LED",
     "maintainerURL": "",
-    "description": "A module to connect a Dreambox or a Enigma2 Receiver (like VU or VU+) to MagicMirror\u00b2 and stream stations via omxplayer.",
+    "description": "Connect a Dreambox or a Enigma2 Receiver (like VU or VU+) to MagicMirror\u00b2 and stream stations via omxplayer.",
     "issues": [
       "Typo: Found 'Magic Mirror' in file `MMM-Dreambox.js`: Replace it with `MagicMirror\u00b2`.",
       "Deprecated: Found 'omxplayer' in file `README.md`: Try to replace it with `vlc`.",
@@ -3746,6 +3748,7 @@
     "description": "Get estimations for bus stops in the city of Valencia (Spain).",
     "issues": [
       "Issue: No image found.",
+      "Recommendation: Found 'require('http')' in file `node_helper.js`: Replace 'http' by 'node:http'.",
       "Warning: No LICENSE file."
     ],
     "tags": [
@@ -3827,7 +3830,7 @@
     "id": "mumblebaj/MMM-EskomSePush",
     "maintainer": "mumblebaj",
     "maintainerURL": "https://github.com/mumblebaj",
-    "description": "A module to display loadshedding schedule data for the South African users.",
+    "description": "Display loadshedding schedule data for the South African users.",
     "issues": [
       "`package.json` issue: No repository field.",
       "Recommendation: Found 'node-fetch' in file `README.md`: Replace it with built-in fetch.",
@@ -4257,7 +4260,7 @@
     "id": "shin10/MMM-FF-multigeiger",
     "maintainer": "shin10",
     "maintainerURL": "",
-    "description": "A module showing radiation charts from <a target=\"_blank\" href=\"https://multigeiger.citysensor.de\">https://multigeiger.citysensor.de</a>.",
+    "description": "Show radiation charts from <a target=\"_blank\" href=\"https://multigeiger.citysensor.de\">https://multigeiger.citysensor.de</a>.",
     "issues": [
       "Typo: Found 'Magic Mirror' in file `MMM-FF-multigeiger.js`: Replace it with `MagicMirror\u00b2`.",
       "Typo: Found 'Magic Mirror' in file `README.md`: Replace it with `MagicMirror\u00b2`.",
@@ -4496,7 +4499,7 @@
     "id": "kapsolas/MMM-Flickr",
     "maintainer": "kapsolas",
     "maintainerURL": "",
-    "description": "A module to load last 20 images posted to user's Flickr photostream to mirror and animate them. API key required.",
+    "description": "Load last 20 images posted to user's Flickr photostream to mirror and animate them. API key required.",
     "issues": [
       "Issue: No image found.",
       "Typo: Found 'Magic Mirror' in file `MMM-Flickr.js`: Replace it with `MagicMirror\u00b2`.",
@@ -4679,7 +4682,7 @@
     "id": "ianperrin/MMM-Formula1",
     "maintainer": "ianperrin",
     "maintainerURL": "",
-    "description": "A module that displays the driver standings from the current Formula 1 season.",
+    "description": "Display the driver standings from the current Formula 1 season.",
     "issues": [
       "Recommendation: Found 'uses: actions/checkout@v3' in file `node.js.yml`: Replace it with v4.",
       "Deprecated: Found 'node-version: [16' in file `node.js.yml`: Update to current version.",
@@ -4718,7 +4721,7 @@
     "id": "yourdawi/MMM-FortniteStats",
     "maintainer": "yourdawi",
     "maintainerURL": "",
-    "description": "Module to display Fortnite Stats.",
+    "description": "Display Fortnite Stats.",
     "issues": [
       "Issue: There is no `package.json`. We need this file to gather information about the module.",
       "Recommendation: Found 'XMLHttpRequest' in file `MMM-FortniteStats.js`: Replace it with built-in fetch.",
@@ -4749,7 +4752,7 @@
     "id": "RaspiManu/MMM-FrameLight",
     "maintainer": "RaspiManu",
     "maintainerURL": "",
-    "description": "This is a module for controlling an RGB-LED strip mounted onto or embedded into a smart mirror's frame. It provides features for static background lighting, highly customizable effects on notifications and party lighting.",
+    "description": "Controlling an RGB-LED strip mounted onto or embedded into a smart mirror's frame. It provides features for static background lighting, highly customizable effects on notifications and party lighting.",
     "issues": [
       "Issue: There is no `package.json`. We need this file to gather information about the module.",
       "Typo: Found 'Magic Mirror' in file `MMM-FrameLight.js`: Replace it with `MagicMirror\u00b2`.",
@@ -4823,6 +4826,7 @@
     "description": "The module builds charts to your FR\u00d6LING pellet boiler based on data from the FR\u00d6LING Connect API. Inspiration and code base comes from <a target=\"_blank\" href=\"https://github.com/TA2k/ioBroker.froeling\">TA2k/ioBroker.froeling</a>.",
     "issues": [
       "Typo: Found 'Magic Mirror' in file `MMM-FroelingConnect.js`: Replace it with `MagicMirror\u00b2`.",
+      "Recommendation: Found 'require('http')' in file `node_helper.js`: Replace 'http' by 'node:http'.",
       "Recommendation: Found 'axios' in file `node_helper.js`: Replace it with built-in fetch.",
       "Recommendation: Found 'axios' in file `package.json`: Replace it with built-in fetch.",
       "Warning: No LICENSE file."
@@ -5009,7 +5013,7 @@
     "id": "mumblebaj/MMM-GasMonitor",
     "maintainer": "mumblebaj",
     "maintainerURL": "https://github.com/mumblebaj",
-    "description": "A module to monitor your gas tank level on your mirror.",
+    "description": "Monitor your gas tank level on your mirror.",
     "issues": [
       "`package.json` issue: No description",
       "`package.json` issue: No repository field.",
@@ -5026,7 +5030,7 @@
     "id": "tderflinger/MMM-GConnect",
     "maintainer": "tderflinger",
     "maintainerURL": "https://github.com/tderflinger",
-    "description": "A module that displays sports data from your Garmin Connect(tm) account.",
+    "description": "Display sports data from your Garmin Connect(tm) account.",
     "issues": [
       "Typo: Found 'Magic Mirror' in file `README.md`: Replace it with `MagicMirror\u00b2`.",
       "Typo: Found 'Magic Mirror' in file `package.json`: Replace it with `MagicMirror\u00b2`."
@@ -5115,7 +5119,7 @@
     "id": "C-Deck/MMM-GHIN",
     "maintainer": "C-Deck",
     "maintainerURL": "https://github.com/C-Deck",
-    "description": "A module that displays your official USGA Ghin handicap.",
+    "description": "Display your official USGA Ghin handicap.",
     "issues": [
       "Issue: No image found.",
       "Recommendation: Found 'axios' in file `GHINApi.js`: Replace it with built-in fetch.",
@@ -5552,7 +5556,7 @@
     "id": "Tom-Hirschberger/MMM-GPIO-Notifications",
     "maintainer": "Tom-Hirschberger",
     "maintainerURL": "https://github.com/Tom-Hirschberger",
-    "description": "A module to send notifications based on GPIO events. Can be used as PIR module and with rotary encoders.",
+    "description": "Send notifications based on GPIO events. Can be used as PIR module and with rotary encoders.",
     "issues": [
       "`package.json` issue: No description",
       "Typo: Found 'Magic Mirror' in file `MMM-GPIO-Notifications.js`: Replace it with `MagicMirror\u00b2`.",
@@ -5601,7 +5605,7 @@
     "id": "SvenSommer/MMM-GrafanaChart",
     "maintainer": "SvenSommer",
     "maintainerURL": "",
-    "description": "Module to display a diagram generated by Grafana.",
+    "description": "Display a diagram generated by Grafana.",
     "issues": [
       "Issue: There is no `package.json`. We need this file to gather information about the module.",
       "Typo: Found 'Magic Mirror' in file `README.md`: Replace it with `MagicMirror\u00b2`."
@@ -5631,7 +5635,7 @@
     "id": "mumblebaj/MMM-Growatt",
     "maintainer": "mumblebaj",
     "maintainerURL": "https://github.com/mumblebaj",
-    "description": "A module to display data from Growatt Inveter. Support multiple Growatt Inverter types.",
+    "description": "Display data from Growatt Inveter. Support multiple Growatt Inverter types.",
     "issues": [
       "`package.json` issue: No description",
       "`package.json` issue: No repository field."
@@ -5663,7 +5667,7 @@
     "id": "mumblebaj/MMM-Growatt-Stats",
     "maintainer": "mumblebaj",
     "maintainerURL": "https://github.com/mumblebaj",
-    "description": "A module to display status data from Growatt Inveter. Support multiple Growatt Inverter types. Made to work in conjunction with <a target=\"_blank\" href=\"https://github.com/mumblebaj/MMM-Growatt\">MMM-Growatt</a> or independently.",
+    "description": "Display status data from Growatt Inveter. Support multiple Growatt Inverter types. Made to work in conjunction with <a target=\"_blank\" href=\"https://github.com/mumblebaj/MMM-Growatt\">MMM-Growatt</a> or independently.",
     "issues": [
       "`package.json` issue: No description",
       "Warning: No LICENSE file."
@@ -5853,7 +5857,7 @@
     "id": "Snille/MMM-HideAll",
     "maintainer": "Snille",
     "maintainerURL": "https://github.com/Snille",
-    "description": "A fork of masters1222s module. Module to Hide Everything on Screen. I have added lot's of new features and customizations.",
+    "description": "Module to hide everything on screen. With a lot of features and customizations.",
     "issues": [
       "Issue: There is no `package.json`. We need this file to gather information about the module.",
       "Typo: Found 'Magic Mirror' in file `MMM-HideAll.js`: Replace it with `MagicMirror\u00b2`.",
@@ -6319,7 +6323,7 @@
     "id": "PierreGode/MMM-ICA",
     "maintainer": "PierreGode",
     "maintainerURL": "https://github.com/PierreGode",
-    "description": "MMM-ICA is a Module for connecting to the Swedish grocery store ICA API and get information.",
+    "description": "MMM-ICA is a module for connecting to the Swedish grocery store ICA API and get information.",
     "issues": [
       "Issue: There is no `package.json`. We need this file to gather information about the module.",
       "Typo: Found 'Magic Mirror' in file `README.md`: Replace it with `MagicMirror\u00b2`.",
@@ -6371,7 +6375,7 @@
     "id": "wiedsee/MMM-IconDisplayer",
     "maintainer": "wiedsee",
     "maintainerURL": "",
-    "description": "A module that shows a icon according to a MagicMirror\u00b2 notification.",
+    "description": "Show an icon according to a MagicMirror\u00b2 notification.",
     "issues": [
       "Issue: There is no `package.json`. We need this file to gather information about the module.",
       "Typo: Found 'Magic Mirror' in file `MMM-IconDisplayer.js`: Replace it with `MagicMirror\u00b2`.",
@@ -6550,8 +6554,10 @@
       "Recommendation: Found 'XMLHttpRequest' in file `ammap_amcharts_extension.js`: Replace it with built-in fetch.",
       "Recommendation: Found 'XMLHttpRequest' in file `dataloader.js`: Replace it with built-in fetch.",
       "Recommendation: Found 'XMLHttpRequest' in file `dataloader.min.js`: Replace it with built-in fetch.",
+      "Recommendation: Found 'require('http')' in file `fabric.js`: Replace 'http' by 'node:http'.",
       "Recommendation: Found 'require('https')' in file `fabric.js`: Replace 'https' by 'node:https'.",
       "Recommendation: Found 'XMLHttpRequest' in file `fabric.js`: Replace it with built-in fetch.",
+      "Recommendation: Found 'require(\"http\")' in file `fabric.min.js`: Replace \"http\" by \"node:http\".",
       "Recommendation: Found 'require(\"https\")' in file `fabric.min.js`: Replace \"https\" by \"node:https\".",
       "Recommendation: Found 'XMLHttpRequest' in file `fabric.min.js`: Replace it with built-in fetch."
     ],
@@ -6689,7 +6695,7 @@
     "id": "kapsolas/MMM-Instagram",
     "maintainer": "kapsolas",
     "maintainerURL": "",
-    "description": "A module load the images from a users Instagram feed. The images are displayed on the mirror and animated. API key required.",
+    "description": "Load the images from a users Instagram feed. The images are displayed on the mirror and animated. API key required.",
     "issues": [
       "Issue: No image found.",
       "Typo: Found 'Magic Mirror' in file `MMM-Instagram.js`: Replace it with `MagicMirror\u00b2`.",
@@ -6710,7 +6716,7 @@
     "id": "AlexanderSalter/MMM-Instagram2020",
     "maintainer": "AlexanderSalter",
     "maintainerURL": "https://github.com/AlexanderSalter",
-    "description": "A module for displaying your Instagram photos and comments. It makes use of the new Facebook Instagram Graph API.",
+    "description": "Display your Instagram photos and comments. It makes use of the new Facebook Instagram Graph API.",
     "issues": [
       "Typo: Found 'Magic Mirror' in file `MMM-Instagram2020.js`: Replace it with `MagicMirror\u00b2`.",
       "Typo: Found 'Magic Mirror' in file `README.md`: Replace it with `MagicMirror\u00b2`.",
@@ -6809,6 +6815,7 @@
       "Issue: No image found.",
       "Typo: Found 'Magic Mirror' in file `MMM-ioBroker.js`: Replace it with `MagicMirror\u00b2`.",
       "Typo: Found 'Magic Mirror' in file `node_helper.js`: Replace it with `MagicMirror\u00b2`.",
+      "Recommendation: Found 'require('http')' in file `node_helper.js`: Replace 'http' by 'node:http'.",
       "Recommendation: Found 'require('https')' in file `node_helper.js`: Replace 'https' by 'node:https'.",
       "Typo: Found 'Magic Mirror' in file `package.json`: Replace it with `MagicMirror\u00b2`."
     ],
@@ -6861,6 +6868,7 @@
     "description": "Display ipcam feed.",
     "issues": [
       "Issue: There is no `package.json`. We need this file to gather information about the module.",
+      "Recommendation: Found 'require('http')' in file `foscam.js`: Replace 'http' by 'node:http'.",
       "Deprecated: Found 'require('request')' in file `node_helper.js`: Replace it with built-in fetch."
     ],
     "last_commit": "2017-01-23"
@@ -7012,6 +7020,7 @@
       "Issue: There is no `package.json`. We need this file to gather information about the module.",
       "Recommendation: Found 'XMLHttpRequest' in file `MMM-Jeedom.js`: Replace it with built-in fetch.",
       "Typo: Found 'Magic Mirror' in file `README.md`: Replace it with `MagicMirror\u00b2`.",
+      "Recommendation: Found 'require('http')' in file `node_helper.js`: Replace 'http' by 'node:http'.",
       "Recommendation: Found 'require('https')' in file `node_helper.js`: Replace 'https' by 'node:https'."
     ],
     "last_commit": "2022-11-02"
@@ -7113,7 +7122,7 @@
     "id": "pvyParts/MMM-jokes",
     "maintainer": "pvyParts",
     "maintainerURL": "",
-    "description": "A module to load random jokes from the web.",
+    "description": "Load random jokes from the web.",
     "issues": [
       "Issue: No image found.",
       "Typo: Found 'Magic Mirror' in file `MMM-jokes.js`: Replace it with `MagicMirror\u00b2`.",
@@ -7879,7 +7888,7 @@
     "id": "mykle1/MMM-Lottery",
     "maintainer": "mykle1",
     "maintainerURL": "",
-    "description": "A module that gives you truly random lottery numbers, coinciding with many International lotteries.",
+    "description": "Display truly random lottery numbers, coinciding with many International lotteries.",
     "issues": [
       "Issue: There is no `package.json`. We need this file to gather information about the module.",
       "Typo: Found 'Magic Mirror' in file `MMM-Lottery.js`: Replace it with `MagicMirror\u00b2`.",
@@ -8056,7 +8065,7 @@
     "id": "GHLasse/MagicMirror-Olympia-Module",
     "maintainer": "GHLasse",
     "maintainerURL": "",
-    "description": "A module that displays the medals for the summer olympics 2016.",
+    "description": "Display the medals for the summer olympics 2016.",
     "issues": [
       "Issue: There is no `package.json`. We need this file to gather information about the module.",
       "Recommendation: Module name doesn't follow the recommended pattern (it doesn't start with `MMM-`). Consider renaming your module.",
@@ -8167,7 +8176,7 @@
     "id": "grenagit/MMM-MarineWeather",
     "maintainer": "grenagit",
     "maintainerURL": "",
-    "description": "A module displaying the current marine weather (water and air temperatures, wind and wave conditions).",
+    "description": "Display the current marine weather (water and air temperatures, wind and wave conditions).",
     "issues": [
       "Typo: Found 'Magic Mirror' in file `MMM-MarineWeather.js`: Replace it with `MagicMirror\u00b2`.",
       "Typo: Found 'Magic Mirror' in file `node_helper.js`: Replace it with `MagicMirror\u00b2`.",
@@ -8506,7 +8515,7 @@
     "id": "blixhavn/MMM-Minigjenbruksstasjon",
     "maintainer": "blixhavn",
     "maintainerURL": "",
-    "description": "A module to show opening hours for mobile recycling stations in Oslo, Norway. API free, so if it looks intresting, check to see if you can use it for your city too!",
+    "description": "Show opening hours for mobile recycling stations in Oslo, Norway. API free, so if it looks intresting, check to see if you can use it for your city too!",
     "issues": [
       "Issue: There is no `package.json`. We need this file to gather information about the module."
     ],
@@ -9063,7 +9072,7 @@
     "id": "Snille/MMM-Modulebar",
     "maintainer": "Snille",
     "maintainerURL": "https://github.com/Snille",
-    "description": "A module that adds touch buttons for showing/hiding other modules.",
+    "description": "Add touch buttons for showing/hiding other modules.",
     "issues": [
       "Issue: There is no `package.json`. We need this file to gather information about the module.",
       "Typo: Found 'Magic Mirror' in file `MMM-Modulebar.css`: Replace it with `MagicMirror\u00b2`.",
@@ -9265,7 +9274,7 @@
     "id": "pjestico/MMM-MotionDisplay",
     "maintainer": "pjestico",
     "maintainerURL": "https://github.com/pjestico",
-    "description": "A module that displays motion detected by your security camera.",
+    "description": "Display motion detected by your security camera.",
     "issues": [
       "`package.json` issue: No description",
       "`package.json` issue: No repository field.",
@@ -9318,7 +9327,7 @@
     "id": "asimhsidd/MMM-MP3Player",
     "maintainer": "asimhsidd",
     "maintainerURL": "",
-    "description": "A module for playing music from USB pen drive as soon as it is inserted.",
+    "description": "Play music from USB pen drive as soon as it is inserted.",
     "issues": [
       "`package.json` issue: No repository field.",
       "Typo: Found 'Magic Mirror' in file `MMM-MP3Player.js`: Replace it with `MagicMirror\u00b2`.",
@@ -9334,7 +9343,7 @@
     "id": "x3mEr/MMM-MP3Player",
     "maintainer": "x3mEr",
     "maintainerURL": "",
-    "description": "A module for playing music from folder. It's a remade asimhsidd's MMM-MP3Player module.",
+    "description": "Play music from folder. It's a remade asimhsidd's MMM-MP3Player module.",
     "issues": [
       "`package.json` issue: license should be a valid SPDX license expression",
       "Issue: No compatible or wrong license field in 'package.json'. Without that, we can't use an image.",
@@ -9522,7 +9531,8 @@
       "`package.json` issue: No repository field.",
       "Issue: No image found.",
       "Typo: Found 'Magic Mirror' in file `MMM-MTA-NextBus.js`: Replace it with `MagicMirror\u00b2`.",
-      "Typo: Found 'Magic Mirror' in file `node_helper.js`: Replace it with `MagicMirror\u00b2`."
+      "Typo: Found 'Magic Mirror' in file `node_helper.js`: Replace it with `MagicMirror\u00b2`.",
+      "Recommendation: Found 'require('http')' in file `node_helper.js`: Replace 'http' by 'node:http'."
     ],
     "license": "MIT",
     "last_commit": "2017-09-25"
@@ -9533,7 +9543,7 @@
     "id": "BKeyport/MMM-Multimonth",
     "maintainer": "BKeyport",
     "maintainerURL": "https://github.com/BKeyport",
-    "description": "Calendar module for displaying multiple mini-calendars at the same time (actively maintained).",
+    "description": "Display multiple mini-calendars at the same time (actively maintained).",
     "issues": [
       "Issue: There is no `package.json`. We need this file to gather information about the module.",
       "Typo: Found 'Magic Mirror' in file `MMM-Multimonth.js`: Replace it with `MagicMirror\u00b2`."
@@ -9882,7 +9892,7 @@
       "Issue: There is no `package.json`. We need this file to gather information about the module.",
       "Deprecated: Found 'require('request')' in file `node_helper.js`: Replace it with built-in fetch."
     ],
-    "last_commit": "2019-04-18"
+    "last_commit": "2023-11-06"
   },
   {
     "name": "MMM-MyTraktSeries",
@@ -9890,7 +9900,7 @@
     "id": "TheVieiraAkA/MMM-MyTraktSeries",
     "maintainer": "TheVieiraAkA",
     "maintainerURL": "",
-    "description": "A module to display your show's watch progress in a private list in your <a target=\"_blank\" href=\"https://trakt.tv\">trakt.tv</a> account.",
+    "description": "Display your show's watch progress in a private list in your <a target=\"_blank\" href=\"https://trakt.tv\">trakt.tv</a> account.",
     "issues": [],
     "license": "MIT",
     "image": "preview.jpg",
@@ -10120,7 +10130,7 @@
     "id": "nebulx29/MMM-nasaastropic",
     "maintainer": "nebulx29",
     "maintainerURL": "",
-    "description": "A module displaying NASA's astronomy picture of the day.",
+    "description": "Display NASA's astronomy picture of the day.",
     "issues": [
       "`package.json` issue: license should be a valid SPDX license expression",
       "Issue: No compatible or wrong license field in 'package.json'. Without that, we can't use an image.",
@@ -10170,7 +10180,7 @@
     "id": "Ax-LED/MMM-Navigate",
     "maintainer": "Ax-LED",
     "maintainerURL": "",
-    "description": "A module to connect a rotary encoder to MagicMirror\u00b2 and use it for navigation inside of MagicMirror\u00b2.",
+    "description": "Connect a rotary encoder to MagicMirror\u00b2 and use it for navigation inside of MagicMirror\u00b2.",
     "issues": [
       "Typo: Found 'Magic Mirror' in file `node_helper.js`: Replace it with `MagicMirror\u00b2`.",
       "Deprecated: Found 'electron-rebuild' in file `postinstall`: Replace it with `@electron/rebuild`"
@@ -10261,7 +10271,7 @@
     "id": "MartinLoidolt/MMM-neoomAPI",
     "maintainer": "MartinLoidolt",
     "maintainerURL": "https://github.com/MartinLoidolt",
-    "description": "Module for displaying your photovoltaic statistics from neoom.",
+    "description": "Display your photovoltaic statistics from neoom.",
     "issues": [
       "Issue: There is no `package.json`. We need this file to gather information about the module.",
       "Warning: No LICENSE file."
@@ -10274,7 +10284,7 @@
     "id": "ottopaulsen/MMM-NesteBussAtB",
     "maintainer": "ottopaulsen",
     "maintainerURL": "",
-    "description": "A module that shows how many minutes until the next bus(es) goes from given bus stops.",
+    "description": "Show how many minutes until the next bus(es) goes from given bus stops.",
     "issues": [
       "`package.json` issue: No repository field.",
       "`package.json` issue: No license field.",
@@ -10485,7 +10495,7 @@
     "id": "PierreGode/MMM-next-episode",
     "maintainer": "PierreGode",
     "maintainerURL": "https://github.com/PierreGode",
-    "description": "A module to display your upcomming show's and movies from your next-episode account.",
+    "description": "Display your upcomming show's and movies from your next-episode account.",
     "issues": [
       "Issue: There is no `package.json`. We need this file to gather information about the module.",
       "Deprecated: Found 'require('request')' in file `node_helper.js`: Replace it with built-in fetch."
@@ -10604,7 +10614,7 @@
     "id": "TemianMihai/MMM-NFTcollections",
     "maintainer": "TemianMihai",
     "maintainerURL": "",
-    "description": "Module for displaying details about a NFT collection.",
+    "description": "Display details about a NFT collection.",
     "issues": [
       "`package.json` issue: No description",
       "`package.json` issue: No repository field.",
@@ -11406,7 +11416,7 @@
     "id": "johnny-co/MMM-OpenSprinkler",
     "maintainer": "johnny-co",
     "maintainerURL": "https://github.com/johnny-co",
-    "description": "Sprinkler module for displaying OpenSprinkler lawn care station and programs.",
+    "description": "Display OpenSprinkler lawn care station and programs.",
     "issues": [
       "Issue: An error occurred while getting information from 'package.json': SyntaxError: Unexpected token ']', ...\"dule\",\r\n  ],\r\n  \"aut\"... is not valid JSON",
       "Typo: Found 'Magic Mirror' in file `MMM-OpenSprinkler.js`: Replace it with `MagicMirror\u00b2`.",
@@ -11684,7 +11694,7 @@
     "id": "NickEngmann/MMM-ParticleStatus",
     "maintainer": "NickEngmann",
     "maintainerURL": "https://github.com/NickEngmann",
-    "description": "Module for displaying Particle.io device data.",
+    "description": "Display Particle.io device data.",
     "issues": [
       "Issue: There is no `package.json`. We need this file to gather information about the module.",
       "Typo: Found 'Magic Mirror' in file `README.md`: Replace it with `MagicMirror\u00b2`."
@@ -11850,7 +11860,7 @@
     "id": "mcl8on/MMM-PGA",
     "maintainer": "mcl8on",
     "maintainerURL": "https://github.com/mcl8on",
-    "description": "A module to show PGA tournaments scores.",
+    "description": "Displays PGA tournaments scores.",
     "issues": [
       "Issue: There is no `package.json`. We need this file to gather information about the module.",
       "Deprecated: Found 'require('request')' in file `ESPN.js`: Replace it with built-in fetch.",
@@ -12228,6 +12238,7 @@
     "description": "The module connects to the API of the KOSTAL Plenticore inverter and reads the current data and brings it to the output.",
     "issues": [
       "Typo: Found 'Magic Mirror' in file `.gitignore`: Replace it with `MagicMirror\u00b2`.",
+      "Recommendation: Found 'require(\"http\")' in file `node_helper.js`: Replace \"http\" by \"node:http\".",
       "Recommendation: Found 'require(\"https\")' in file `node_helper.js`: Replace \"https\" by \"node:https\"."
     ],
     "tags": [
@@ -12309,6 +12320,7 @@
       "Issue: No image found.",
       "Deprecated: Found 'omxplayer' in file `README.md`: Try to replace it with `vlc`.",
       "Typo: Found 'Magic Mirror' in file `node_helper.js`: Replace it with `MagicMirror\u00b2`.",
+      "Recommendation: Found 'require('http')' in file `node_helper.js`: Replace 'http' by 'node:http'.",
       "Deprecated: Found 'electron-rebuild' in file `package.json`: Replace it with `@electron/rebuild`",
       "Warning: No LICENSE file."
     ],
@@ -12829,7 +12841,7 @@
     "id": "JasonVonKrueger/MMM-QR-Remote-Link",
     "maintainer": "JasonVonKrueger",
     "maintainerURL": "",
-    "description": "A module that will display a QR code with a link to a local module.",
+    "description": "Display a QR code with a link to a local module.",
     "issues": [
       "`package.json` issue: No repository field.",
       "Typo: Found 'Magic Mirror' in file `README.md`: Replace it with `MagicMirror\u00b2`.",
@@ -12873,7 +12885,7 @@
     "id": "dfanica/MMM-Quotable",
     "maintainer": "dfanica",
     "maintainerURL": "",
-    "description": "A module for displaying random quotes using the <a target=\"_blank\" href=\"https://github.com/lukePeavey/quotable\">Quotable API</a>. Filters quotes by max length and tags.",
+    "description": "Display random quotes using the <a target=\"_blank\" href=\"https://github.com/lukePeavey/quotable\">Quotable API</a>. Filters quotes by max length and tags.",
     "issues": [
       "Issue: There is no `package.json`. We need this file to gather information about the module.",
       "Typo: Found 'Magic Mirror' in file `MMM-Quotable.js`: Replace it with `MagicMirror\u00b2`.",
@@ -13040,7 +13052,7 @@
     "id": "skuethe/MMM-RandomPhoto",
     "maintainer": "skuethe",
     "maintainerURL": "",
-    "description": "A module that will load a random photo from picsum. Originally by diego-vieira, now with support for local paths and NextCloud shares.",
+    "description": "Load a random photo from picsum. Originally by diego-vieira, now with support for local paths and NextCloud shares.",
     "issues": [
       "`package.json` issue: No repository field.",
       "Issue: No image found.",
@@ -13058,7 +13070,7 @@
     "id": "Jacopo1891/MMM-RandomQuotes",
     "maintainer": "Jacopo1891",
     "maintainerURL": "https://github.com/jacopo1891",
-    "description": "A module that displays a random quote from various authorship using Paperquote's API.",
+    "description": "Display a random quote from various authorship using Paperquote's API.",
     "issues": [
       "Issue: There is no `package.json`. We need this file to gather information about the module.",
       "Recommendation: Found 'node-fetch' in file `node_helper.js`: Replace it with built-in fetch.",
@@ -13091,7 +13103,7 @@
     "id": "justjim1220/MMM-RandomYouTubePlayer",
     "maintainer": "justjim1220",
     "maintainerURL": "",
-    "description": "A module that will load a playlist into a YouTube player, AND shuffle the videos in the playlist.",
+    "description": "Load a playlist into a YouTube player, AND shuffle the videos in the playlist.",
     "issues": [
       "Issue: There is no `package.json`. We need this file to gather information about the module.",
       "Typo: Found 'Magic Mirror' in file `node_helper.js`: Replace it with `MagicMirror\u00b2`."
@@ -13867,6 +13879,7 @@
     "maintainerURL": "",
     "description": "Cast a video from your phone to your mirror (currently can only cast YouTube).",
     "issues": [
+      "Recommendation: Found 'require('http')' in file `DialServer.js`: Replace 'http' by 'node:http'.",
       "Typo: Found 'Magic Mirror' in file `MMM-Screencast.js`: Replace it with `MagicMirror\u00b2`.",
       "Typo: Found 'Magic Mirror' in file `package.json`: Replace it with `MagicMirror\u00b2`."
     ],
@@ -13968,7 +13981,8 @@
     "issues": [
       "Issue: There is no `package.json`. We need this file to gather information about the module.",
       "Typo: Found 'Magic Mirror' in file `MMM-SeawayLockTraffic.js`: Replace it with `MagicMirror\u00b2`.",
-      "Typo: Found 'Magic Mirror' in file `node_helper.js`: Replace it with `MagicMirror\u00b2`."
+      "Typo: Found 'Magic Mirror' in file `node_helper.js`: Replace it with `MagicMirror\u00b2`.",
+      "Recommendation: Found 'require('http')' in file `node_helper.js`: Replace 'http' by 'node:http'."
     ],
     "last_commit": "2020-12-22"
   },
@@ -14169,7 +14183,7 @@
     "id": "surekap/MMM-ShairportMetadata",
     "maintainer": "surekap",
     "maintainerURL": "",
-    "description": "A module to integrate Apple AirTunes/Airplay metadata coming via shairport-sync into the MagicMirror\u00b2. Does not work with video or mirroring.",
+    "description": "Integrate Apple AirTunes/Airplay metadata coming via shairport-sync into the MagicMirror\u00b2. Does not work with video or mirroring.",
     "issues": [
       "Issue: There is no `package.json`. We need this file to gather information about the module.",
       "Typo: Found 'Magic Mirror' in file `MMM-ShairportMetadata.js`: Replace it with `MagicMirror\u00b2`.",
@@ -14183,7 +14197,7 @@
     "id": "Medve01/Shelly-HT",
     "maintainer": "Medve01",
     "maintainerURL": "https://github.com/Medve01",
-    "description": "Module for displaying data from 1 Shelly HT sensor.",
+    "description": "Display data from 1 Shelly HT sensor.",
     "issues": [
       "Issue: There is no `package.json`. We need this file to gather information about the module.",
       "Recommendation: Module name doesn't follow the recommended pattern (it doesn't start with `MMM-`). Consider renaming your module.",
@@ -14198,7 +14212,7 @@
     "id": "stefanjacobs/MMM-Shelly-PM",
     "maintainer": "stefanjacobs",
     "maintainerURL": "https://github.com/stefanjacobs",
-    "description": "Module for displaying data from 1 Shelly PM sensor, forked and modified by <a target=\"_blank\" href=\"https://github.com/Medve01/Shelly-HT\">Shelly-HT</a>.",
+    "description": "Display data from 1 Shelly PM sensor, forked and modified by <a target=\"_blank\" href=\"https://github.com/Medve01/Shelly-HT\">Shelly-HT</a>.",
     "issues": [
       "`package.json` issue: license should be a valid SPDX license expression",
       "Issue: No compatible or wrong license field in 'package.json'. Without that, we can't use an image.",
@@ -14214,7 +14228,7 @@
     "id": "mgarrix/MMM-ShellyEMMeter",
     "maintainer": "mgarrix",
     "maintainerURL": "https://github.com/mgarrix",
-    "description": "Module for displaying data from Shelly EM sensor.",
+    "description": "Display data from Shelly EM sensor.",
     "issues": [
       "`package.json` issue: No repository field.",
       "Typo: Found 'Magic Mirror' in file `README.md`: Replace it with `MagicMirror\u00b2`.",
@@ -14237,7 +14251,7 @@
     "id": "IoT-Coder/MMM-ShellyPlus-HT",
     "maintainer": "IoT-Coder",
     "maintainerURL": "https://github.com/IoT-Coder",
-    "description": "Module for displaying data from Shelly+ HT sensor. Forked from Shelly-HT for Gen2 device Shelly Plus HT.",
+    "description": "Display data from Shelly+ HT sensor. Forked from Shelly-HT for Gen2 device Shelly Plus HT.",
     "issues": [
       "Issue: There is no `package.json`. We need this file to gather information about the module.",
       "Typo: Found 'Magic Mirror' in file `README.md`: Replace it with `MagicMirror\u00b2`.",
@@ -14651,7 +14665,7 @@
     "id": "fewieden/MMM-soccer",
     "maintainer": "fewieden",
     "maintainerURL": "",
-    "description": "A module that displays standings from European Soccer (Football) leagues (optional voice-control).",
+    "description": "Display standings from European Soccer (Football) leagues (optional voice-control).",
     "issues": [
       "Recommendation: Found 'node-fetch' in file `README.md`: Replace it with built-in fetch.",
       "Recommendation: Found 'node-fetch' in file `node_helper.js`: Replace it with built-in fetch.",
@@ -14671,7 +14685,7 @@
     "id": "0m4r/MMM-SoccerLiveScore",
     "maintainer": "0m4r",
     "maintainerURL": "",
-    "description": "A module that displays live scores of your favorite soccer leagues/competitions.",
+    "description": "Display live scores of your favorite soccer leagues/competitions.",
     "issues": [
       "Typo: Found 'Magic Mirror' in file `MMM-SoccerLiveScore.js`: Replace it with `MagicMirror\u00b2`.",
       "Typo: Found 'MagicMirror2' in file `README.md`: Replace it with `MagicMirror\u00b2`.",
@@ -14832,7 +14846,7 @@
     "id": "grenagit/MMM-SolarPicture",
     "maintainer": "grenagit",
     "maintainerURL": "",
-    "description": "A module displaying the last Solar Dynamics Observatory (SDO) picture.",
+    "description": "Display the last Solar Dynamics Observatory (SDO) picture.",
     "issues": [
       "Issue: There is no `package.json`. We need this file to gather information about the module.",
       "Typo: Found 'Magic Mirror' in file `MMM-SolarPicture.js`: Replace it with `MagicMirror\u00b2`."
@@ -14951,7 +14965,7 @@
     "id": "LukasKlose/MMM-Speedway",
     "maintainer": "LukasKlose",
     "maintainerURL": "https://github.com/LukasKlose",
-    "description": "A module that displays the tables of the Polish Speedway Leagues (PGE Ekstraliga, I. Liga \u017bu\u017clowa , II. Liga \u017bu\u017clowa).",
+    "description": "Display the tables of the Polish Speedway Leagues (PGE Ekstraliga, I. Liga \u017bu\u017clowa , II. Liga \u017bu\u017clowa).",
     "issues": [
       "`package.json` issue: No description",
       "`package.json` issue: No repository field.",
@@ -14992,7 +15006,8 @@
     "issues": [
       "Issue: There is no `package.json`. We need this file to gather information about the module.",
       "Typo: Found 'Magic Mirror' in file `MMM-SpotifyConnectUI.js`: Replace it with `MagicMirror\u00b2`.",
-      "Typo: Found 'Magic Mirror' in file `node_helper.js`: Replace it with `MagicMirror\u00b2`."
+      "Typo: Found 'Magic Mirror' in file `node_helper.js`: Replace it with `MagicMirror\u00b2`.",
+      "Recommendation: Found 'require('http')' in file `node_helper.js`: Replace 'http' by 'node:http'."
     ],
     "last_commit": "2017-02-15"
   },
@@ -15179,7 +15194,7 @@
     "id": "ianperrin/MMM-Strava",
     "maintainer": "ianperrin",
     "maintainerURL": "",
-    "description": "A module that displays your activity data from <a target=\"_blank\" href=\"https://www.strava.com\">Strava.com</a>.",
+    "description": "Display your activity data from <a target=\"_blank\" href=\"https://www.strava.com\">Strava.com</a>.",
     "issues": [
       "Typo: Found 'Magic Mirror' in file `README.md`: Replace it with `MagicMirror\u00b2`.",
       "Deprecated: Found 'stylelint-config-prettier' in file `package.json`: Update `stylelint` and remove `stylelint-config-prettier`.",
@@ -15219,7 +15234,7 @@
     "id": "linuxtuxie/MMM-SunnyPortal",
     "maintainer": "linuxtuxie",
     "maintainerURL": "",
-    "description": "A module for displaying the current, monthly and yearly power output of your SunnyPortal Solar Panels.(<a target=\"_blank\" href=\"https://www.sunnyportal.com\">https://www.sunnyportal.com</a>).",
+    "description": "Display the current, monthly and yearly power output of your SunnyPortal Solar Panels.(<a target=\"_blank\" href=\"https://www.sunnyportal.com\">https://www.sunnyportal.com</a>).",
     "issues": [
       "Typo: Found 'Magic Mirror' in file `MMM-SunnyPortal.js`: Replace it with `MagicMirror\u00b2`.",
       "Deprecated: Found 'require('request')' in file `node_helper.js`: Replace it with built-in fetch."
@@ -15250,7 +15265,7 @@
     "id": "mumblebaj/MMM-SweepClock",
     "maintainer": "mumblebaj",
     "maintainerURL": "https://github.com/mumblebaj",
-    "description": "A module to display a classic railway clock.",
+    "description": "Display a classic railway clock.",
     "issues": [
       "Issue: There is no `package.json`. We need this file to gather information about the module."
     ],
@@ -15364,7 +15379,7 @@
     "id": "Tom-Hirschberger/MMM-SynologySurveillance",
     "maintainer": "Tom-Hirschberger",
     "maintainerURL": "https://github.com/Tom-Hirschberger",
-    "description": "A module to display the Video Streams of cameras connected to your Synology Disc Stations and control their positions.",
+    "description": "Display the video streams of cameras connected to your Synology Disc Stations and control their positions.",
     "issues": [
       "`package.json` issue: No description",
       "Typo: Found 'Magic Mirror' in file `node_helper.js`: Replace it with `MagicMirror\u00b2`."
@@ -15593,7 +15608,7 @@
     "id": "Tom-Hirschberger/MMM-Temperature",
     "maintainer": "Tom-Hirschberger",
     "maintainerURL": "https://github.com/Tom-Hirschberger",
-    "description": "A module to display tempature, humdity, and more of DHT11, DHT22, BMT280, HTU21, DS18B20 or other sensors.",
+    "description": "Display tempature, humdity, and more of DHT11, DHT22, BMT280, HTU21, DS18B20 or other sensors.",
     "issues": [
       "`package.json` issue: No description",
       "Typo: Found 'Magic Mirror' in file `MMM-Temperature.js`: Replace it with `MagicMirror\u00b2`.",
@@ -15805,7 +15820,7 @@
     "id": "zhouxichun/MMM-TiHimawari8Earth",
     "maintainer": "zhouxichun",
     "maintainerURL": "https://github.com/zhouxichun",
-    "description": "This is a module that fetch earth live image form Himawari #8 geostationary satellite and display images on screen.",
+    "description": "Fetch earth live image form Himawari #8 geostationary satellite and display images on screen.",
     "issues": [
       "Issue: There is no `package.json`. We need this file to gather information about the module.",
       "Typo: Found 'Magic Mirror' in file `MMM-TiHimawari8Earth.js`: Replace it with `MagicMirror\u00b2`.",
@@ -15986,6 +16001,7 @@
     "issues": [
       "Issue: There is no `package.json`. We need this file to gather information about the module.",
       "Typo: Found 'Magic Mirror' in file `MMM-Toon.js`: Replace it with `MagicMirror\u00b2`.",
+      "Recommendation: Found 'require('http')' in file `ToonAPI.js`: Replace 'http' by 'node:http'.",
       "Recommendation: Found 'require('https')' in file `ToonAPI.js`: Replace 'https' by 'node:https'.",
       "Warning: No LICENSE file."
     ],
@@ -16009,7 +16025,7 @@
     "id": "Tom-Hirschberger/MMM-TouchButton",
     "maintainer": "Tom-Hirschberger",
     "maintainerURL": "https://github.com/Tom-Hirschberger",
-    "description": "A module to add clickable buttons to send notifications or run commands.",
+    "description": "Add clickable buttons to send notifications or run commands.",
     "issues": [
       "`package.json` issue: No description",
       "Typo: Found 'Magic Mirror' in file `MMM-TouchButton.js`: Replace it with `MagicMirror\u00b2`.",
@@ -16151,7 +16167,7 @@
     "id": "Kiina/MMM-trakt",
     "maintainer": "Kiina",
     "maintainerURL": "",
-    "description": "A module to display your upcoming Shows from your <a target=\"_blank\" href=\"https://trakt.tv\">trakt.tv</a> account.",
+    "description": "Display your upcoming Shows from your <a target=\"_blank\" href=\"https://trakt.tv\">trakt.tv</a> account.",
     "issues": [],
     "license": "MIT",
     "image": "screenshot.jpg",
@@ -16382,7 +16398,7 @@
     "id": "XBCreepinJesus/MMM-TvheadendDVR",
     "maintainer": "XBCreepinJesus",
     "maintainerURL": "https://github.com/XBCreepinJesus",
-    "description": "A module to show your upcoming Tvheadend recordings.",
+    "description": "Show your upcoming Tvheadend recordings.",
     "issues": [],
     "tags": [
       "tvheadend"
@@ -16510,7 +16526,7 @@
     "id": "XBCreepinJesus/MMM-UKLiveTrainDepartures",
     "maintainer": "XBCreepinJesus",
     "maintainerURL": "https://github.com/XBCreepinJesus",
-    "description": "A module showing live train departure/arrival times for the UK's National Rail network.",
+    "description": "Show live train departure/arrival times for the UK's National Rail network.",
     "issues": [
       "Issue: There is no `package.json`. We need this file to gather information about the module."
     ],
@@ -16527,6 +16543,7 @@
       "Typo: Found 'Magic Mirror' in file `MMM-UKMOWeatherWarnings.css`: Replace it with `MagicMirror\u00b2`.",
       "Typo: Found 'Magic Mirror' in file `MMM-UKMOWeatherWarnings.js`: Replace it with `MagicMirror\u00b2`.",
       "Typo: Found 'Magic Mirror' in file `node_helper.js`: Replace it with `MagicMirror\u00b2`.",
+      "Recommendation: Found 'require(\"http\")' in file `node_helper.js`: Replace \"http\" by \"node:http\".",
       "Typo: Found 'Magic Mirror' in file `package.json`: Replace it with `MagicMirror\u00b2`.",
       "Typo: Found 'Magic Mirror' in file `createDummyWarnings.js`: Replace it with `MagicMirror\u00b2`.",
       "Typo: Found 'Magic Mirror' in file `warningitemobject.js`: Replace it with `MagicMirror\u00b2`.",
@@ -16847,7 +16864,7 @@
     "id": "grenagit/MMM-VigiCrues",
     "maintainer": "grenagit",
     "maintainerURL": "",
-    "description": "A module displaying the last value of water level at a station in the Vigicrues network in France.",
+    "description": "Display the last value of water level at a station in the Vigicrues network in France.",
     "issues": [
       "Issue: There is no `package.json`. We need this file to gather information about the module.",
       "Typo: Found 'Magic Mirror' in file `MMM-VigiCrues.js`: Replace it with `MagicMirror\u00b2`.",
@@ -16861,7 +16878,7 @@
     "id": "grenagit/MMM-VigilanceMeteoFrance",
     "maintainer": "grenagit",
     "maintainerURL": "",
-    "description": "A module displaying the current level of vigilance of weather phenomena and associated risks for France.",
+    "description": "Display the current level of vigilance of weather phenomena and associated risks for France.",
     "issues": [
       "Typo: Found 'Magic Mirror' in file `MMM-VigilanceMeteoFrance.js`: Replace it with `MagicMirror\u00b2`.",
       "Typo: Found 'Magic Mirror' in file `node_helper.js`: Replace it with `MagicMirror\u00b2`.",
@@ -16894,7 +16911,8 @@
     "issues": [
       "`package.json` issue: No repository field.",
       "Typo: Found 'Magic Mirror' in file `MMM-vindsiden.js`: Replace it with `MagicMirror\u00b2`.",
-      "Typo: Found 'Magic Mirror' in file `node_helper.js`: Replace it with `MagicMirror\u00b2`."
+      "Typo: Found 'Magic Mirror' in file `node_helper.js`: Replace it with `MagicMirror\u00b2`.",
+      "Recommendation: Found 'require(\"http\")' in file `node_helper.js`: Replace \"http\" by \"node:http\"."
     ],
     "license": "MIT",
     "image": "images-MMM-Vindsiden.jpg",
@@ -17147,6 +17165,7 @@
     "description": "Rotates through wallpapers from Bing or Reddit.",
     "issues": [
       "Issue: No image found.",
+      "Recommendation: Found 'require(\"http\")' in file `node_helper.js`: Replace \"http\" by \"node:http\".",
       "Recommendation: Found 'require(\"https\")' in file `node_helper.js`: Replace \"https\" by \"node:https\".",
       "Typo: Found 'MagicMirror2' in file `package.json`: Replace it with `MagicMirror\u00b2`."
     ],
@@ -18020,7 +18039,7 @@
     "id": "PierreGode/MMM-ZAPTEC",
     "maintainer": "PierreGode",
     "maintainerURL": "https://github.com/PierreGode",
-    "description": "Module for displaying ZAPTEC charging API.",
+    "description": "Display ZAPTEC charging API.",
     "issues": [
       "Issue: There is no `package.json`. We need this file to gather information about the module.",
       "Recommendation: Found 'XMLHttpRequest' in file `MMM-ZAPTEC.js`: Replace it with built-in fetch.",
