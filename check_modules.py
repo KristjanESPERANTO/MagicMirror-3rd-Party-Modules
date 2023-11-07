@@ -73,7 +73,11 @@ def check_modules():
             "name": "Replace it with `@electron/rebuild`",
             "category": "Deprecated"
         },
-        "node-fetch": {
+        "'node-fetch'": {
+            "name": "Replace it with built-in fetch.",
+            "category": "Recommendation"
+        },
+        "\"node-fetch\"": {
             "name": "Replace it with built-in fetch.",
             "category": "Recommendation"
         },
@@ -152,7 +156,7 @@ def check_modules():
                     for search_string, value in search_strings.items():
                         found_string = search_in_file(file_path, search_string)
                         if found_string:
-                            module["issues"].append(f"{value['category']}: Found '{search_string}' in file `{file_path.name}`: {value['name']}")
+                            module["issues"].append(f"{value['category']}: Found `{search_string}` in file `{file_path.name}`: {value['name']}")
                 #if ".yml" in str(file_path).lower():
                 #    module["issues"].append(
                 #        f"`Recommendation: {file_path.name}`: Change file extention from `.yml` to `.yaml`: <https://yaml.org/faq.html>.")
