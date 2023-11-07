@@ -20,11 +20,11 @@ The results of the tests you can see in the [result.md](result.md).
 
 Here are some test results:
 
-- _Issue: No image found._ - No image means no image on the web page.
-- _Issue: package.json issue: No license field._ - No license field means no image on the web page.
-- _Issue: package.json issue: license should be a valid SPDX license expression_ - No license field means no image on the web page.
-- _Issue: There is no `package.json`. We need this file to gather information about the module._ - Incorrectly spelled license name means no image on the web page.
-- _Issue: Found directory `node_modules`. This shouldn't be uploaded. Add `node_modules/`to `.gitignore`._
+- _No image found._ - No image means no image on the web page.
+- _package.json issue: No license field._ - No license field means no image on the web page.
+- _package.json issue: license should be a valid SPDX license expression_ - No license field means no image on the web page.
+- _There is no `package.json`. We need this file to gather information about the module._ - Incorrectly spelled license name means no image on the web page.
+- _Found directory `node_modules`. This shouldn't be uploaded. Add `node_modules/`to `.gitignore`._
 - _Deprecated: Found 'omxplayer' in file `node_helper.js`: Try to replace it with `vlc`._
 - _Recommendation: Found 'node-fetch' in file `node_helper.js`: Replace it with built-in fetch._
 - _Recommendation: Module name doesn't follow the recommended pattern (it doesn't start with `MMM-`). Consider renaming your module._
@@ -52,7 +52,7 @@ _Note_: This script takes a long time (> 10 min) to download all modules and als
 
 This script expands the module list with information from the `package.json` files from the modules (if available).
 
-The script also adds an image. To do this, it searches the module's repo for an image that begins with "screenshot". If it doesn't find anything like that, it takes the first image it finds in the repo.
+The script also adds an image. To do this, it searches the module's repo for an image that begins with "screenshot" or "example". If it doesn't find anything like that, it takes the first image it finds in the repo.
 
 _Note_: Images will only be included if a free license is specified in the `package.json`.
 
