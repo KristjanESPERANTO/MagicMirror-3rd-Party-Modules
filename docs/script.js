@@ -1,6 +1,6 @@
 let allData = [];
 let filteredCards;
-const resetButton = document.getElementById("show-all-button");
+const resetButton = document.getElementById("reset-button");
 const cardContainer = document.getElementById("card-container");
 const searchInput = document.getElementById("search-input");
 const tagButtonContainer = document.getElementById("tag-buttons");

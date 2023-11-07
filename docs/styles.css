@@ -48,7 +48,7 @@ a {
   align-self: center;
 }
 
-#show-all-button {
+#reset-button {
   color: var(--color-text);
   cursor: pointer;
   background-color: var(--color-buttons);
@@ -77,7 +77,7 @@ a {
   align-self: center;
 }
 
-#show-all-button:hover,
+#reset-button:hover,
 .tag-button:hover {
   background-color: #2276c588;
 }
