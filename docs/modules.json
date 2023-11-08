@@ -302,9 +302,9 @@
   },
   {
     "name": "MMM-alexa",
-    "url": "https://github.com/sakirtemel/MMM-alexa",
-    "id": "sakirtemel/MMM-alexa",
-    "maintainer": "sakirtemel",
+    "url": "https://github.com/sdetweil/MMM-alexa",
+    "id": "sdetweil/MMM-alexa",
+    "maintainer": "sdetweil",
     "maintainerURL": "",
     "description": "Amazon Alexa integration with using JavaScript only.",
     "issues": [
@@ -315,7 +315,7 @@
       "Recommendation: Found `XMLHttpRequest` in file `runDirectives.js`: Replace it with built-in fetch."
     ],
     "license": "MIT",
-    "last_commit": "2016-11-08"
+    "last_commit": "2019-04-11"
   },
   {
     "name": "MMM-AlexaControl",
@@ -1814,9 +1814,9 @@
   },
   {
     "name": "MMM-Callmonitor-Current-Call",
-    "url": "https://github.com/paviro/MMM-Callmonitor-Current-Call",
-    "id": "paviro/MMM-Callmonitor-Current-Call",
-    "maintainer": "paviro",
+    "url": "https://github.com/armybean/MMM-Callmonitor-Current-Call",
+    "id": "armybean/MMM-Callmonitor-Current-Call",
+    "maintainer": "armybean",
     "maintainerURL": "",
     "description": "Extension for <a target=\"_blank\" href=\"https://github.com/paviro/MMM-FRITZ-Box-Callmonitor\">MMM-FRITZ-Box-Callmonitor</a>. Displays the currently active call.",
     "issues": [
@@ -1824,7 +1824,7 @@
       "Typo: Found `Magic Mirror` in file `MMM-Callmonitor-Current-Call.js`: Replace it with `MagicMirror\u00b2`.",
       "Warning: No LICENSE file."
     ],
-    "last_commit": "2016-04-25"
+    "last_commit": "2020-04-21"
   },
   {
     "name": "MMM-Caltrain",
@@ -3460,18 +3460,23 @@
   },
   {
     "name": "DWD-RealtimeIrishRail",
-    "url": "https://github.com/archerydwd/DWD-RealtimeIrishRail",
-    "id": "archerydwd/DWD-RealtimeIrishRail",
-    "maintainer": "archerydwd",
+    "url": "https://github.com/DavidLSmyth/DWD-RealtimeIrishRail",
+    "id": "DavidLSmyth/DWD-RealtimeIrishRail",
+    "maintainer": "DavidLSmyth",
     "maintainerURL": "",
     "description": "Display Realtime Irish Rail data for a targeted station.",
     "issues": [
-      "There is no `package.json`. We need this file to gather information about the module.",
+      "No image found.",
       "Recommendation: Module name doesn't follow the recommended pattern (it doesn't start with `MMM-`). Consider renaming your module.",
       "Typo: Found `Magic Mirror` in file `DWD-RealtimeIrishRail.js`: Replace it with `MagicMirror\u00b2`.",
-      "Recommendation: Found `XMLHttpRequest` in file `DWD-RealtimeIrishRail.js`: Replace it with built-in fetch."
+      "Deprecated: Found `require(\"request\")` in file `irishRailFetcher.js`: Replace it with built-in fetch.",
+      "Deprecated: Found `require(\"request\")` in file `node_helper.js`: Replace it with built-in fetch."
     ],
-    "last_commit": "2016-12-20"
+    "tags": [
+      "irishrail"
+    ],
+    "license": "ISC",
+    "last_commit": "2022-05-31"
   },
   {
     "name": "MMM-DWD-WarnWeather",
@@ -4076,7 +4081,7 @@
       "network"
     ],
     "license": "MIT",
-    "last_commit": "2023-11-02"
+    "last_commit": "2023-11-08"
   },
   {
     "name": "MMM-Face-Recognition-SMAI",
@@ -5666,6 +5671,7 @@
       "Recommendation: Found `XMLHttpRequest` in file `MMM-GPSWeather.js`: Replace it with built-in fetch.",
       "Warning: No LICENSE file."
     ],
+    "outdated": "Abandoned. Repo has been archived at 2022-02-27.",
     "last_commit": "2016-11-13"
   },
   {
@@ -5962,7 +5968,7 @@
     "id": "NateBrownProjects/MMM-Hive",
     "maintainer": "NateBrownProjects",
     "maintainerURL": "",
-    "description": "Implements H.I.V.E AI into MagicMirror.",
+    "description": "Implements H.I.V.E AI into your mirror.",
     "issues": [
       "There is no `package.json`. We need this file to gather information about the module."
     ],
@@ -7204,9 +7210,9 @@
   },
   {
     "name": "MMM-jokes",
-    "url": "https://github.com/pvyParts/MMM-jokes",
-    "id": "pvyParts/MMM-jokes",
-    "maintainer": "pvyParts",
+    "url": "https://github.com/aegis1980/MMM-jokes",
+    "id": "aegis1980/MMM-jokes",
+    "maintainer": "aegis1980",
     "maintainerURL": "",
     "description": "Load random jokes from the web.",
     "issues": [
@@ -7221,7 +7227,7 @@
       "jokes"
     ],
     "license": "MIT",
-    "last_commit": "2016-07-21"
+    "last_commit": "2017-04-25"
   },
   {
     "name": "MMM-json",
@@ -8174,6 +8180,7 @@
       "Typo: Found `Magic Mirror` in file `olympia.js`: Replace it with `MagicMirror\u00b2`.",
       "Warning: No LICENSE file."
     ],
+    "outdated": "Outdated: Only works for Rio 2016 Summer Olympics.",
     "last_commit": "2016-08-13"
   },
   {
@@ -8663,22 +8670,6 @@
     "last_commit": "2022-06-21"
   },
   {
-    "name": "mm-hide-all",
-    "url": "https://github.com/masters1222/mm-hide-all",
-    "id": "masters1222/mm-hide-all",
-    "maintainer": "masters1222",
-    "maintainerURL": "",
-    "description": "Hide all modules on your screen.",
-    "issues": [
-      "There is no `package.json`. We need this file to gather information about the module.",
-      "Recommendation: Module name doesn't follow the recommended pattern (it doesn't start with `MMM-`). Consider renaming your module.",
-      "Recommendation: Found `XMLHttpRequest` in file `jquery.js`: Replace it with built-in fetch.",
-      "Typo: Found `Magic Mirror` in file `mm-hide-all.js`: Replace it with `MagicMirror\u00b2`.",
-      "Warning: No LICENSE file."
-    ],
-    "last_commit": "2016-06-01"
-  },
-  {
     "name": "mm-hsl-timetable",
     "url": "https://github.com/ZakarFin/mm-hsl-timetable",
     "id": "ZakarFin/mm-hsl-timetable",
@@ -8798,6 +8789,7 @@
       "Deprecated: Found `require('request')` in file `node_helper.js`: Replace it with built-in fetch.",
       "Warning: No LICENSE file."
     ],
+    "outdated": "Deprecated. food2fork API isn't reachable anymore.",
     "last_commit": "2016-10-16"
   },
   {
@@ -9359,6 +9351,7 @@
       "Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror\u00b2`.",
       "Warning: No LICENSE file."
     ],
+    "outdated": "Abandoned. No reactions to issues since years. No installation instructions.",
     "last_commit": "2016-12-20"
   },
   {
@@ -16708,9 +16701,9 @@
   },
   {
     "name": "MMM-UKLiveBusStopInfo",
-    "url": "https://github.com/nwootton/MMM-UKLiveBusStopInfo",
-    "id": "nwootton/MMM-UKLiveBusStopInfo",
-    "maintainer": "nwootton",
+    "url": "https://github.com/AndyHazz/MMM-UKLiveBusStopInfo",
+    "id": "AndyHazz/MMM-UKLiveBusStopInfo",
+    "maintainer": "AndyHazz",
     "maintainerURL": "",
     "description": "This module displays LIVE UK information about a specific bus stop and the routes that serve it.",
     "issues": [
@@ -16723,7 +16716,7 @@
     "tags": [],
     "license": "MIT",
     "image": "images-Current_version.jpg",
-    "last_commit": "2022-05-04"
+    "last_commit": "2019-12-19"
   },
   {
     "name": "MMM-UKLiveTrainDepartures",
@@ -16765,21 +16758,23 @@
   },
   {
     "name": "MMM-UKNationalRail",
-    "url": "https://github.com/nwootton/MMM-UKNationalRail",
-    "id": "nwootton/MMM-UKNationalRail",
-    "maintainer": "nwootton",
+    "url": "https://github.com/mattdy/MMM-UKNationalRail",
+    "id": "mattdy/MMM-UKNationalRail",
+    "maintainer": "mattdy",
     "maintainerURL": "",
     "description": "This module displays LIVE UK National Rail train arrivals &amp; departures from a specified station.",
     "issues": [
       "Typo: Found `Magic Mirror` in file `MMM-UKNationalRail.js`: Replace it with `MagicMirror\u00b2`.",
       "Typo: Found `Magic Mirror` in file `README.md`: Replace it with `MagicMirror\u00b2`.",
-      "Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror\u00b2`.",
-      "Deprecated: Found `require('request')` in file `node_helper.js`: Replace it with built-in fetch."
+      "Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror\u00b2`."
     ],
-    "tags": [],
+    "tags": [
+      "national rail",
+      "trains"
+    ],
     "license": "MIT",
     "image": "images-Current_version.jpg",
-    "last_commit": "2022-06-09"
+    "last_commit": "2022-08-11"
   },
   {
     "name": "MMM-UKTide",

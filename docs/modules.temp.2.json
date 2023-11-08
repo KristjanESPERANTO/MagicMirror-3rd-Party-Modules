@@ -237,9 +237,9 @@
   },
   {
     "name": "MMM-alexa",
-    "url": "https://github.com/sakirtemel/MMM-alexa",
-    "id": "sakirtemel/MMM-alexa",
-    "maintainer": "sakirtemel",
+    "url": "https://github.com/sdetweil/MMM-alexa",
+    "id": "sdetweil/MMM-alexa",
+    "maintainer": "sdetweil",
     "maintainerURL": "",
     "description": "Amazon Alexa integration with using JavaScript only.",
     "issues": [
@@ -1424,9 +1424,9 @@
   },
   {
     "name": "MMM-Callmonitor-Current-Call",
-    "url": "https://github.com/paviro/MMM-Callmonitor-Current-Call",
-    "id": "paviro/MMM-Callmonitor-Current-Call",
-    "maintainer": "paviro",
+    "url": "https://github.com/armybean/MMM-Callmonitor-Current-Call",
+    "id": "armybean/MMM-Callmonitor-Current-Call",
+    "maintainer": "armybean",
     "maintainerURL": "",
     "description": "Extension for <a target=\"_blank\" href=\"https://github.com/paviro/MMM-FRITZ-Box-Callmonitor\">MMM-FRITZ-Box-Callmonitor</a>. Displays the currently active call.",
     "issues": [
@@ -2716,14 +2716,18 @@
   },
   {
     "name": "DWD-RealtimeIrishRail",
-    "url": "https://github.com/archerydwd/DWD-RealtimeIrishRail",
-    "id": "archerydwd/DWD-RealtimeIrishRail",
-    "maintainer": "archerydwd",
+    "url": "https://github.com/DavidLSmyth/DWD-RealtimeIrishRail",
+    "id": "DavidLSmyth/DWD-RealtimeIrishRail",
+    "maintainer": "DavidLSmyth",
     "maintainerURL": "",
     "description": "Display Realtime Irish Rail data for a targeted station.",
     "issues": [
-      "There is no `package.json`. We need this file to gather information about the module."
-    ]
+      "No image found."
+    ],
+    "tags": [
+      "irishrail"
+    ],
+    "license": "ISC"
   },
   {
     "name": "MMM-DWD-WarnWeather",
@@ -4424,7 +4428,8 @@
     "description": "Display weather from a self-updated GPS Location.",
     "issues": [
       "There is no `package.json`. We need this file to gather information about the module."
-    ]
+    ],
+    "outdated": "Abandoned. Repo has been archived at 2022-02-27."
   },
   {
     "name": "MMM-GrafanaChart",
@@ -4664,7 +4669,7 @@
     "id": "NateBrownProjects/MMM-Hive",
     "maintainer": "NateBrownProjects",
     "maintainerURL": "",
-    "description": "Implements H.I.V.E AI into MagicMirror.",
+    "description": "Implements H.I.V.E AI into your mirror.",
     "issues": [
       "There is no `package.json`. We need this file to gather information about the module."
     ]
@@ -5608,9 +5613,9 @@
   },
   {
     "name": "MMM-jokes",
-    "url": "https://github.com/pvyParts/MMM-jokes",
-    "id": "pvyParts/MMM-jokes",
-    "maintainer": "pvyParts",
+    "url": "https://github.com/aegis1980/MMM-jokes",
+    "id": "aegis1980/MMM-jokes",
+    "maintainer": "aegis1980",
     "maintainerURL": "",
     "description": "Load random jokes from the web.",
     "issues": [
@@ -6336,7 +6341,8 @@
     "description": "Display the medals for the summer olympics 2016.",
     "issues": [
       "There is no `package.json`. We need this file to gather information about the module."
-    ]
+    ],
+    "outdated": "Outdated: Only works for Rio 2016 Summer Olympics."
   },
   {
     "name": "MagicMirror-Ping-Module",
@@ -6727,17 +6733,6 @@
     ]
   },
   {
-    "name": "mm-hide-all",
-    "url": "https://github.com/masters1222/mm-hide-all",
-    "id": "masters1222/mm-hide-all",
-    "maintainer": "masters1222",
-    "maintainerURL": "",
-    "description": "Hide all modules on your screen.",
-    "issues": [
-      "There is no `package.json`. We need this file to gather information about the module."
-    ]
-  },
-  {
     "name": "mm-hsl-timetable",
     "url": "https://github.com/ZakarFin/mm-hsl-timetable",
     "id": "ZakarFin/mm-hsl-timetable",
@@ -6820,7 +6815,8 @@
     "description": "Fetches one recipe type per day from food2fork API and display as a small menu.",
     "issues": [
       "There is no `package.json`. We need this file to gather information about the module."
-    ]
+    ],
+    "outdated": "Deprecated. food2fork API isn't reachable anymore."
   },
   {
     "name": "mmm-helium-wallet",
@@ -7248,7 +7244,8 @@
     "description": "Camera based motion detector.",
     "issues": [
       "There is no `package.json`. We need this file to gather information about the module."
-    ]
+    ],
+    "outdated": "Abandoned. No reactions to issues since years. No installation instructions."
   },
   {
     "name": "MMM-MotionDetector",
@@ -12933,9 +12930,9 @@
   },
   {
     "name": "MMM-UKLiveBusStopInfo",
-    "url": "https://github.com/nwootton/MMM-UKLiveBusStopInfo",
-    "id": "nwootton/MMM-UKLiveBusStopInfo",
-    "maintainer": "nwootton",
+    "url": "https://github.com/AndyHazz/MMM-UKLiveBusStopInfo",
+    "id": "AndyHazz/MMM-UKLiveBusStopInfo",
+    "maintainer": "AndyHazz",
     "maintainerURL": "",
     "description": "This module displays LIVE UK information about a specific bus stop and the routes that serve it.",
     "issues": [],
@@ -12972,13 +12969,16 @@
   },
   {
     "name": "MMM-UKNationalRail",
-    "url": "https://github.com/nwootton/MMM-UKNationalRail",
-    "id": "nwootton/MMM-UKNationalRail",
-    "maintainer": "nwootton",
+    "url": "https://github.com/mattdy/MMM-UKNationalRail",
+    "id": "mattdy/MMM-UKNationalRail",
+    "maintainer": "mattdy",
     "maintainerURL": "",
     "description": "This module displays LIVE UK National Rail train arrivals &amp; departures from a specified station.",
     "issues": [],
-    "tags": [],
+    "tags": [
+      "national rail",
+      "trains"
+    ],
     "license": "MIT",
     "image": "images-Current_version.jpg"
   },

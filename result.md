@@ -1,14 +1,14 @@
 # Result of the module analysis
 
-Timestamp: 2023-11-08 02:59:09
+Timestamp: 2023-11-08 13:34:20
 
 ## Statistics
 
 |                     | number     |
 |:--------------------|:----------:|
-| modules analyzed    |    1062    |
-| modules with issues |    1042    |
-| issues              |    4018    |
+| modules analyzed    |    1061    |
+| modules with issues |    1041    |
+| issues              |    4017    |
 
 ## Modules with issues
 
@@ -120,7 +120,7 @@ Timestamp: 2023-11-08 02:59:09
 
 1. Typo: Found `MagicMirror2` in file `package.json`: Replace it with `MagicMirror²`.
 
-### [MMM-alexa by sakirtemel](https://github.com/sakirtemel/MMM-alexa)
+### [MMM-alexa by sdetweil](https://github.com/sdetweil/MMM-alexa)
 
 1. `package.json` issue: No repository field.
 2. No keywords in 'package.json'. We would use them as tags on the website.
@@ -705,7 +705,7 @@ Timestamp: 2023-11-08 02:59:09
 5. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
 6. Deprecated: Found `require('request')` in file `node-ical.js`: Replace it with built-in fetch.
 
-### [MMM-Callmonitor-Current-Call by paviro](https://github.com/paviro/MMM-Callmonitor-Current-Call)
+### [MMM-Callmonitor-Current-Call by armybean](https://github.com/armybean/MMM-Callmonitor-Current-Call)
 
 1. There is no `package.json`. We need this file to gather information about the module.
 2. Typo: Found `Magic Mirror` in file `MMM-Callmonitor-Current-Call.js`: Replace it with `MagicMirror²`.
@@ -1344,12 +1344,13 @@ Timestamp: 2023-11-08 02:59:09
 4. Deprecated: Found `require("request")` in file `node_helper.js`: Replace it with built-in fetch.
 5. Typo: Found `Magic Mirror` in file `package.json`: Replace it with `MagicMirror²`.
 
-### [DWD-RealtimeIrishRail by archerydwd](https://github.com/archerydwd/DWD-RealtimeIrishRail)
+### [DWD-RealtimeIrishRail by DavidLSmyth](https://github.com/DavidLSmyth/DWD-RealtimeIrishRail)
 
-1. There is no `package.json`. We need this file to gather information about the module.
+1. No image found.
 2. Recommendation: Module name doesn't follow the recommended pattern (it doesn't start with `MMM-`). Consider renaming your module.
 3. Typo: Found `Magic Mirror` in file `DWD-RealtimeIrishRail.js`: Replace it with `MagicMirror²`.
-4. Recommendation: Found `XMLHttpRequest` in file `DWD-RealtimeIrishRail.js`: Replace it with built-in fetch.
+4. Deprecated: Found `require("request")` in file `irishRailFetcher.js`: Replace it with built-in fetch.
+5. Deprecated: Found `require("request")` in file `node_helper.js`: Replace it with built-in fetch.
 
 ### [MMM-DWD-WarnWeather by LukeSkywalker92](https://github.com/LukeSkywalker92/MMM-DWD-WarnWeather)
 
@@ -2204,6 +2205,7 @@ Timestamp: 2023-11-08 02:59:09
 
 ### [MMM-GPSWeather by mochman](https://github.com/mochman/MMM-GPSWeather)
 
+0. This module is outdated: Abandoned. Repo has been archived at 2022-02-27.
 1. There is no `package.json`. We need this file to gather information about the module.
 2. Typo: Found `Magic Mirror` in file `MMM-GPSWeather.js`: Replace it with `MagicMirror²`.
 3. Recommendation: Found `XMLHttpRequest` in file `MMM-GPSWeather.js`: Replace it with built-in fetch.
@@ -2812,7 +2814,7 @@ Timestamp: 2023-11-08 02:59:09
 1. There is no `package.json`. We need this file to gather information about the module.
 2. Warning: No LICENSE file.
 
-### [MMM-jokes by pvyParts](https://github.com/pvyParts/MMM-jokes)
+### [MMM-jokes by aegis1980](https://github.com/aegis1980/MMM-jokes)
 
 1. No image found.
 2. Typo: Found `Magic Mirror` in file `MMM-jokes.js`: Replace it with `MagicMirror²`.
@@ -3210,6 +3212,7 @@ Timestamp: 2023-11-08 02:59:09
 
 ### [MagicMirror-Olympia-Module by GHLasse](https://github.com/GHLasse/MagicMirror-Olympia-Module)
 
+0. This module is outdated: Outdated: Only works for Rio 2016 Summer Olympics.
 1. There is no `package.json`. We need this file to gather information about the module.
 2. Recommendation: Module name doesn't follow the recommended pattern (it doesn't start with `MMM-`). Consider renaming your module.
 3. Typo: Found `MagicMirror2` in file `README.md`: Replace it with `MagicMirror²`.
@@ -3400,14 +3403,6 @@ Timestamp: 2023-11-08 02:59:09
 4. Typo: Found `Magic Mirror` in file `concertcalendar.js`: Replace it with `MagicMirror²`.
 5. Recommendation: Found `XMLHttpRequest` in file `concertcalendar.js`: Replace it with built-in fetch.
 
-### [mm-hide-all by masters1222](https://github.com/masters1222/mm-hide-all)
-
-1. There is no `package.json`. We need this file to gather information about the module.
-2. Recommendation: Module name doesn't follow the recommended pattern (it doesn't start with `MMM-`). Consider renaming your module.
-3. Recommendation: Found `XMLHttpRequest` in file `jquery.js`: Replace it with built-in fetch.
-4. Typo: Found `Magic Mirror` in file `mm-hide-all.js`: Replace it with `MagicMirror²`.
-5. Warning: No LICENSE file.
-
 ### [mm-hsl-timetable by ZakarFin](https://github.com/ZakarFin/mm-hsl-timetable)
 
 1. There is no `package.json`. We need this file to gather information about the module.
@@ -3462,6 +3457,7 @@ Timestamp: 2023-11-08 02:59:09
 
 ### [mmm-food2fork-recipes by spectroman](https://github.com/spectroman/mmm-food2fork-recipes)
 
+0. This module is outdated: Deprecated. food2fork API isn't reachable anymore.
 1. There is no `package.json`. We need this file to gather information about the module.
 2. Recommendation: Module name doesn't follow the recommended pattern (it doesn't start with `MMM-`). Consider renaming your module.
 3. Typo: Found `Magic Mirror` in file `README.md`: Replace it with `MagicMirror²`.
@@ -3697,6 +3693,7 @@ Timestamp: 2023-11-08 02:59:09
 
 ### [motiondetector by alexyak](https://github.com/alexyak/motiondetector)
 
+0. This module is outdated: Abandoned. No reactions to issues since years. No installation instructions.
 1. There is no `package.json`. We need this file to gather information about the module.
 2. Recommendation: Module name doesn't follow the recommended pattern (it doesn't start with `MMM-`). Consider renaming your module.
 3. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
@@ -6527,7 +6524,7 @@ Timestamp: 2023-11-08 02:59:09
 1. Typo: Found `Magic Mirror` in file `MMM-Udvaronc.js`: Replace it with `MagicMirror²`.
 2. Deprecated: Found `require('request')` in file `node_helper.js`: Replace it with built-in fetch.
 
-### [MMM-UKLiveBusStopInfo by nwootton](https://github.com/nwootton/MMM-UKLiveBusStopInfo)
+### [MMM-UKLiveBusStopInfo by AndyHazz](https://github.com/AndyHazz/MMM-UKLiveBusStopInfo)
 
 1. Typo: Found `Magic Mirror` in file `MMM-UKLiveBusStopInfo.js`: Replace it with `MagicMirror²`.
 2. Typo: Found `Magic Mirror` in file `README.md`: Replace it with `MagicMirror²`.
@@ -6550,12 +6547,11 @@ Timestamp: 2023-11-08 02:59:09
 7. Typo: Found `Magic Mirror` in file `warningitemobject.js`: Replace it with `MagicMirror²`.
 8. Typo: Found `Magic Mirror` in file `warningsobject.js`: Replace it with `MagicMirror²`.
 
-### [MMM-UKNationalRail by nwootton](https://github.com/nwootton/MMM-UKNationalRail)
+### [MMM-UKNationalRail by mattdy](https://github.com/mattdy/MMM-UKNationalRail)
 
 1. Typo: Found `Magic Mirror` in file `MMM-UKNationalRail.js`: Replace it with `MagicMirror²`.
 2. Typo: Found `Magic Mirror` in file `README.md`: Replace it with `MagicMirror²`.
 3. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
-4. Deprecated: Found `require('request')` in file `node_helper.js`: Replace it with built-in fetch.
 
 ### [MMM-UKTide by Captsi](https://github.com/Captsi/MMM-UKTide)
 
