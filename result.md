@@ -1,14 +1,16 @@
 # Result of the module analysis
 
-Timestamp: 2023-11-08 02:10:14
+Timestamp: 2023-11-08 02:23:53
 
 ## Statistics
 
-|                           |            |
-|:--------------------------|-----------:|
-|number of analyzed modules |       1062 |
-|modules with issues        |       1042 |
-|number of issues           |       4021 |
+|                     | number     |
+|:--------------------|-----------:|
+| analyzed modules    |       1062 |
+| modules with issues |       1042 |
+| issues              |       4021 |
+
+## Modules with issues
 
 ### [MMM-01ZM by rubinho101](https://github.com/rubinho101/MMM-01ZM)
 
