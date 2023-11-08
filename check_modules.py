@@ -189,10 +189,10 @@ def check_modules():
     markdown_output += f"Timestamp: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}\n\n"
     markdown_output +=  "## Statistics\n\n"
     markdown_output +=  "|                     | number     |\n"
-    markdown_output +=  "|:--------------------|-----------:|\n"
-    markdown_output += f"| analyzed modules    | {             module_counter:>10} |\n"
-    markdown_output += f"| modules with issues | {modules_with_issues_counter:>10} |\n"
-    markdown_output += f"| issues              | {              issue_counter:>10} |\n\n"
+    markdown_output +=  "|:--------------------|:----------:|\n"
+    markdown_output += f"| modules analyzed    | {             module_counter:^10} |\n"
+    markdown_output += f"| modules with issues | {modules_with_issues_counter:^10} |\n"
+    markdown_output += f"| issues              | {              issue_counter:^10} |\n\n"
     markdown_output +=  "## Modules with issues\n"
     markdown_output += markdown_output_modules
 
