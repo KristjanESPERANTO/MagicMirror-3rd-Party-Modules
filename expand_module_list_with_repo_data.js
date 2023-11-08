@@ -77,12 +77,15 @@ async function addInformationFromPackageJson(moduleList) {
       if (moduleData.keywords) {
         const tagsToRemove = [
           "2",
+          "mm",
+          "mm2",
           "magic",
           "magicmirror",
           "magicmirror2",
           "magicmirror²",
           "magic mirror",
           "magic mirror 2",
+          "magic-mirror",
           "mirror",
           "mmm",
           "module",
