@@ -73,6 +73,7 @@ This script goes through all cloned modules and performs various checks. The res
     - amount of bitbucket repos
   - Add filter for outdated modules.
 - Write instructions: “How do I get my module presented perfectly in the list?”
+- Handle empty keywords array + handle empty tags array (advise: Add a few meaningful terms to the keywords in the package.json. Not just “mirror” or “module”.)
 - Use issue codes to make the module list file smaller.
 - get rid of of the cloned repo files if a module is removed
 - optimize progress information while running `npm run all`
