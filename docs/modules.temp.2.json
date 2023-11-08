@@ -214,7 +214,6 @@
     "description": "Module to display tables from Airtable.",
     "issues": [],
     "tags": [
-      "magic-mirror",
       "airtable",
       "magic-mirror-table",
       "table"
@@ -1331,7 +1330,6 @@
       "No image found."
     ],
     "tags": [
-      "mm",
       "calendar",
       "calext3"
     ],
@@ -1931,7 +1929,6 @@
       "`package.json` issue: No license field."
     ],
     "tags": [
-      "magic-mirror",
       "covid19",
       "covid",
       "covid19api"
@@ -6809,8 +6806,7 @@
       "`package.json` issue: No repository field."
     ],
     "tags": [
-      "amazon-photos",
-      "magic-mirror"
+      "amazon-photos"
     ],
     "license": "MIT",
     "image": "docs-example.jpg"
@@ -8853,7 +8849,6 @@
     "description": "Highly customizable module that displays what you are listening to in Spotify. Compatible with MMM-LiveLyrics and DynamicTheming.",
     "issues": [],
     "tags": [
-      "mm2",
       "spotify",
       "spotify connect"
     ],
@@ -9691,8 +9686,6 @@
     "description": "Display a poem of the day, in the language(s) of your choice.",
     "issues": [],
     "tags": [
-      "magic-mirror",
-      "mm2",
       "poetry",
       "poem-of-the-day",
       "poemist",
@@ -10080,10 +10073,9 @@
     "maintainerURL": "",
     "description": "Display a QR code with a link to a local module.",
     "issues": [
-      "`package.json` issue: No repository field.",
       "No keywords in 'package.json'. We would use them as tags on the website."
     ],
-    "license": "ISC",
+    "license": "Apache-2.0",
     "image": "Sreenshot1.jpg"
   },
   {
@@ -10819,7 +10811,6 @@
     ],
     "outdated": "Deprecated. The successor is MMM-Scenes2.",
     "tags": [
-      "mm",
       "paging",
       "animation"
     ],
@@ -12214,7 +12205,6 @@
       "No image found."
     ],
     "tags": [
-      "mm",
       "telegram",
       "commandline"
     ],

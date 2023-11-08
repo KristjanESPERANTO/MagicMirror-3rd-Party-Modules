@@ -275,7 +275,6 @@
       "Warning: No LICENSE file."
     ],
     "tags": [
-      "magic-mirror",
       "airtable",
       "magic-mirror-table",
       "table"
@@ -1702,7 +1701,6 @@
       "No image found."
     ],
     "tags": [
-      "mm",
       "calendar",
       "calext3"
     ],
@@ -2455,7 +2453,6 @@
       "Warning: No LICENSE file."
     ],
     "tags": [
-      "magic-mirror",
       "covid19",
       "covid",
       "covid19api"
@@ -8780,8 +8777,7 @@
       "Warning: No LICENSE file."
     ],
     "tags": [
-      "amazon-photos",
-      "magic-mirror"
+      "amazon-photos"
     ],
     "license": "MIT",
     "image": "docs-example.jpg",
@@ -11435,7 +11431,6 @@
       "Recommendation: Found `\"node-fetch\"` in file `SpotifyFetcher.js`: Replace it with built-in fetch."
     ],
     "tags": [
-      "mm2",
       "spotify",
       "spotify connect"
     ],
@@ -12516,8 +12511,6 @@
       "Warning: No LICENSE file."
     ],
     "tags": [
-      "magic-mirror",
-      "mm2",
       "poetry",
       "poem-of-the-day",
       "poemist",
@@ -13003,14 +12996,11 @@
     "maintainerURL": "",
     "description": "Display a QR code with a link to a local module.",
     "issues": [
-      "`package.json` issue: No repository field.",
-      "No keywords in 'package.json'. We would use them as tags on the website.",
-      "Typo: Found `Magic Mirror` in file `README.md`: Replace it with `MagicMirror\u00b2`.",
-      "Typo: Found `Magic Mirror` in file `package.json`: Replace it with `MagicMirror\u00b2`."
+      "No keywords in 'package.json'. We would use them as tags on the website."
     ],
-    "license": "ISC",
+    "license": "Apache-2.0",
     "image": "Sreenshot1.jpg",
-    "last_commit": "2023-11-03"
+    "last_commit": "2023-11-07"
   },
   {
     "name": "MMM-QRCode",
@@ -13990,7 +13980,6 @@
     ],
     "outdated": "Deprecated. The successor is MMM-Scenes2.",
     "tags": [
-      "mm",
       "paging",
       "animation"
     ],
@@ -15774,7 +15763,6 @@
       "Recommendation: Found `require('https')` in file `node_helper.js`: Replace 'https' by 'node:https'."
     ],
     "tags": [
-      "mm",
       "telegram",
       "commandline"
     ],

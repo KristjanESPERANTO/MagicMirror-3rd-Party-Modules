@@ -1,14 +1,14 @@
 # Result of the module analysis
 
-Timestamp: 2023-11-08 02:23:53
+Timestamp: 2023-11-08 02:59:09
 
 ## Statistics
 
 |                     | number     |
-|:--------------------|-----------:|
-| analyzed modules    |       1062 |
-| modules with issues |       1042 |
-| issues              |       4021 |
+|:--------------------|:----------:|
+| modules analyzed    |    1062    |
+| modules with issues |    1042    |
+| issues              |    4018    |
 
 ## Modules with issues
 
@@ -5098,10 +5098,7 @@ Timestamp: 2023-11-08 02:23:53
 
 ### [MMM-QR-Remote-Link by JasonVonKrueger](https://github.com/JasonVonKrueger/MMM-QR-Remote-Link)
 
-1. `package.json` issue: No repository field.
-2. No keywords in 'package.json'. We would use them as tags on the website.
-3. Typo: Found `Magic Mirror` in file `README.md`: Replace it with `MagicMirror²`.
-4. Typo: Found `Magic Mirror` in file `package.json`: Replace it with `MagicMirror²`.
+1. No keywords in 'package.json'. We would use them as tags on the website.
 
 ### [MMM-QRCode by MarinescuEvghenii](https://github.com/MarinescuEvghenii/MMM-QRCode)
 
