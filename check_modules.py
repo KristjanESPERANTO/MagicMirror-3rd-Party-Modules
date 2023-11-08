@@ -28,7 +28,7 @@ def check_modules():
         "Magic Mirror": {
             "name": "Replace it with `MagicMirror²`.",
             "category": "Typo"
-            },
+        },
         "MagicMirror2": {
             "name": "Replace it with `MagicMirror²`.",
             "category": "Typo"
@@ -123,16 +123,14 @@ def check_modules():
     modules_json_file = open('./docs/modules.temp.2.json', encoding="utf-8")
     modules = json.load(modules_json_file)
 
-    output = open("result.md", "w", encoding="utf-8")
-    output.write("# Result of the module analysis\n\n")
-    output.write(f"Timestamp: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}\n\n")
-    output.write(f"Number of analyzed modules: {len(modules)}\n")
-
     module_counter = 0
+    modules_with_issues_counter = 0
+    issue_counter = 0
+    markdown_output_modules = ""
 
     for module in modules:
 
-        module_counter = module_counter +1
+        module_counter += 1
 
         module_directory = module["name"] + "-----" + module["maintainer"]
 
@@ -156,8 +154,9 @@ def check_modules():
                     for search_string, value in search_strings.items():
                         found_string = search_in_file(file_path, search_string)
                         if found_string:
-                            module["issues"].append(f"{value['category']}: Found `{search_string}` in file `{file_path.name}`: {value['name']}")
-                #if ".yml" in str(file_path).lower():
+                            module["issues"].append(
+                                f"{value['category']}: Found `{search_string}` in file `{file_path.name}`: {value['name']}")
+                # if ".yml" in str(file_path).lower():
                 #    module["issues"].append(
                 #        f"`Recommendation: {file_path.name}`: Change file extention from `.yml` to `.yaml`: <https://yaml.org/faq.html>.")
 
@@ -168,33 +167,51 @@ def check_modules():
             module["issues"] = ["Error: It appears that the repository could not be cloned. Check the URL."]
 
         if "outdated" in module or len(module["issues"]) > 0:
-            output.write(f"\n## [{module['name']} by {module['maintainer']}]({module['url']})\n\n")
+            modules_with_issues_counter += 1
+            markdown_output_modules += f"\n### [{module['name']} by {module['maintainer']}]({module['url']})\n\n"
 
             if "outdated" in module:
-                output.write(f"0. This module is outdated: {module['outdated']}\n")
+                issue_counter += 1
+                markdown_output_modules += f"0. This module is outdated: {module['outdated']}\n"
 
             if len(module["issues"]) > 0:
+                issue_counter += len(module["issues"])
                 for idx, issue in enumerate(module["issues"]):
-                    output.write(f"{idx+1}. {issue}\n")
+                    markdown_output_modules += f"{idx+1}. {issue}\n"
 
         module["last_commit"] = subprocess.run(f"cd ./modules/{module_directory} && git log -1 --format='%as' && cd ..",
-                                 stdout=subprocess.PIPE, shell=True, check=False).stdout.decode().rstrip()
+                                               stdout=subprocess.PIPE, shell=True, check=False).stdout.decode().rstrip()
 
     print(f"{module_counter} modules analyzed. For results see file result.md.           ")
-    output.close()
+
+    # Prepearing the markdown output
+    markdown_output =   "# Result of the module analysis\n\n"
+    markdown_output += f"Timestamp: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}\n\n"
+    markdown_output +=  "## Statistics\n\n"
+    markdown_output +=  "|                           |            |\n"
+    markdown_output +=  "|:--------------------------|-----------:|\n"
+    markdown_output += f"|number of analyzed modules | {             module_counter:>10} |\n"
+    markdown_output += f"|modules with issues        | {modules_with_issues_counter:>10} |\n"
+    markdown_output += f"|number of issues           | {              issue_counter:>10} |\n"
+    markdown_output += markdown_output_modules
+
+    # Writing to markdown
+    with open("result.md", "w", encoding="utf-8") as outputfile:
+        outputfile.write(markdown_output)
 
     # Serializing json
     json_object = json.dumps(modules, indent=2)
 
     # Writing to modules.json
-    with open("./docs/modules.json", "w", encoding="utf-8")as outfile:
+    with open("./docs/modules.json", "w", encoding="utf-8") as outfile:
         outfile.write(json_object)
 
     # Serializing and minifying json
     json_object = json.dumps(modules)
 
     # Writing to modules.min.json
-    with open("./docs/modules.min.json", "w", encoding="utf-8")as outfile:
+    with open("./docs/modules.min.json", "w", encoding="utf-8") as outfile:
         outfile.write(json_object)
+
 
 check_modules()
