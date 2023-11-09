@@ -1,14 +1,14 @@
 # Result of the module analysis
 
-Timestamp: 2023-11-08 13:34:20
+Timestamp: 2023-11-09 18:58:19
 
 ## Statistics
 
 |                     | number     |
 |:--------------------|:----------:|
 | modules analyzed    |    1061    |
-| modules with issues |    1041    |
-| issues              |    4017    |
+| modules with issues |    1040    |
+| issues              |    4015    |
 
 ## Modules with issues
 
@@ -5137,11 +5137,6 @@ Timestamp: 2023-11-08 13:34:20
 1. There is no `package.json`. We need this file to gather information about the module.
 2. Typo: Found `Magic Mirror` in file `MMM-rain-forecast.js`: Replace it with `MagicMirror²`.
 3. Deprecated: Found `require('request')` in file `node_helper.js`: Replace it with built-in fetch.
-
-### [MMM-RAIN-MAP by jalibu](https://github.com/jalibu/MMM-RAIN-MAP)
-
-1. No keywords in 'package.json'. We would use them as tags on the website.
-2. Typo: Found `Magic Mirror` in file `README.md`: Replace it with `MagicMirror²`.
 
 ### [MMM-RAIN-RADAR by jojoduquartier](https://github.com/jojoduquartier/MMM-RAIN-RADAR)
 

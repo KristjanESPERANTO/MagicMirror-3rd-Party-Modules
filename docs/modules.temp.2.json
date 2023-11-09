@@ -10151,11 +10151,15 @@
     "maintainer": "jalibu",
     "maintainerURL": "https://github.com/jalibu",
     "description": "A rain radar map based on OpenStreetMap. Multiple location markers, option for alternating positions and zoom levels.",
-    "issues": [
-      "No keywords in 'package.json'. We would use them as tags on the website."
+    "issues": [],
+    "tags": [
+      "weather",
+      "rain",
+      "leaflet",
+      "map"
     ],
     "license": "MIT",
-    "image": "img-marker-icon-2x-black.jpg"
+    "image": "img-example.jpg"
   },
   {
     "name": "MMM-RAIN-RADAR",

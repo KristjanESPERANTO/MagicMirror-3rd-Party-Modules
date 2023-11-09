@@ -10459,7 +10459,7 @@
     ],
     "license": "MIT",
     "image": ".github-preview.bubbles.jpg",
-    "last_commit": "2023-11-07"
+    "last_commit": "2023-11-09"
   },
   {
     "name": "MMM-Netatmo-Presence",
@@ -13096,13 +13096,16 @@
     "maintainer": "jalibu",
     "maintainerURL": "https://github.com/jalibu",
     "description": "A rain radar map based on OpenStreetMap. Multiple location markers, option for alternating positions and zoom levels.",
-    "issues": [
-      "No keywords in 'package.json'. We would use them as tags on the website.",
-      "Typo: Found `Magic Mirror` in file `README.md`: Replace it with `MagicMirror\u00b2`."
+    "issues": [],
+    "tags": [
+      "weather",
+      "rain",
+      "leaflet",
+      "map"
     ],
     "license": "MIT",
-    "image": "img-marker-icon-2x-black.jpg",
-    "last_commit": "2023-09-24"
+    "image": "img-example.jpg",
+    "last_commit": "2023-11-09"
   },
   {
     "name": "MMM-RAIN-RADAR",
@@ -13426,7 +13429,7 @@
       "There is no `package.json`. We need this file to gather information about the module.",
       "Typo: Found `Magic Mirror` in file `MMM-Regenradar.js`: Replace it with `MagicMirror\u00b2`."
     ],
-    "last_commit": "2021-08-30"
+    "last_commit": "2023-11-08"
   },
   {
     "name": "MMM-Remote-Control",
