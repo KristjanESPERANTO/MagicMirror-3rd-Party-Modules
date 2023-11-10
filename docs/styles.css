@@ -104,7 +104,8 @@ a {
   content: "🔗";
 }
 
-.maintainer {
+.maintainer,
+.last-commit {
   color: var(--color-text-dimmed);
   font-size: var(--font-size-small);
 }

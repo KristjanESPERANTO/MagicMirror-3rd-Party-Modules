@@ -20,6 +20,7 @@ function displayCards() {
               <div class="card-header">
                 <a href="${cardData.url}" target="_blank">${cardData.name}</a>
                 <div class="maintainer">maintained by ${cardData.maintainer}</div>
+                <div class="last-commit">last commit: ${cardData.last_commit}</div>
               </div>
             `;
     if (cardData.issues.length > 0) {
@@ -51,8 +52,8 @@ function displayCards() {
     if (cardData.tags) {
       card.innerHTML += `
                 <p><b>Tags:</b> ${cardData.tags
-                  .map((tag) => `#${tag}`)
-                  .join(" ")}</p>
+          .map((tag) => `#${tag}`)
+          .join(" ")}</p>
               `;
     }
     cardContainer.appendChild(card);
@@ -75,14 +76,6 @@ function displayCards() {
 
 function sortData(sortOption) {
   switch (sortOption) {
-    case "name":
-      // Sort by name
-      filteredCards.sort((a, b) => {
-        const nameA = a.name.replace("MMM-", "");
-        const nameB = b.name.replace("MMM-", "");
-        return nameA.localeCompare(nameB);
-      });
-      break;
     case "default":
       filteredCards.sort(
         (a, b) =>
@@ -93,6 +86,16 @@ function sortData(sortOption) {
           // Sort by last commit date
           b.last_commit.localeCompare(a.last_commit)
       );
+      break;
+    case "lastcommit":
+      filteredCards.sort((a, b) => b.last_commit.localeCompare(a.last_commit));
+      break;
+    case "name":
+      filteredCards.sort((a, b) => {
+        const nameA = a.name.replace("MMM-", "");
+        const nameB = b.name.replace("MMM-", "");
+        return nameA.localeCompare(nameB);
+      });
       break;
   }
 }
