@@ -7436,7 +7436,7 @@
       "There is no `package.json`. We need this file to gather information about the module.",
       "Warning: No LICENSE file."
     ],
-    "last_commit": "2023-08-27"
+    "last_commit": "2023-11-09"
   },
   {
     "name": "MMM-Koket-by-Sodexo",
@@ -10459,7 +10459,7 @@
     ],
     "license": "MIT",
     "image": ".github-preview.bubbles.jpg",
-    "last_commit": "2023-11-09"
+    "last_commit": "2023-11-10"
   },
   {
     "name": "MMM-Netatmo-Presence",
@@ -12840,6 +12840,25 @@
     ],
     "license": "MIT",
     "last_commit": "2018-03-27"
+  },
+  {
+    "name": "MMM-ProxyImage",
+    "url": "https://github.com/daxiang28/MMM-ProxyImage",
+    "id": "daxiang28/MMM-ProxyImage",
+    "maintainer": "daxiang28",
+    "maintainerURL": "https://github.com/daxiang28",
+    "description": "Display basic auth images through a simple Express proxy.",
+    "issues": [
+      "No image found.",
+      "Typo: Found `Magic Mirror` in file `README.md`: Replace it with `MagicMirror\u00b2`.",
+      "Typo: Found `Magic Mirror` in file `package.json`: Replace it with `MagicMirror\u00b2`."
+    ],
+    "tags": [
+      "iframe",
+      "notification"
+    ],
+    "license": "MIT",
+    "last_commit": "2021-06-17"
   },
   {
     "name": "MMM-PublicTransportBerlin",

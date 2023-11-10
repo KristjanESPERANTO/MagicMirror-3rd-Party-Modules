@@ -1,14 +1,14 @@
 # Result of the module analysis
 
-Timestamp: 2023-11-09 18:58:19
+Timestamp: 2023-11-10 23:41:45
 
 ## Statistics
 
 |                     | number     |
 |:--------------------|:----------:|
-| modules analyzed    |    1061    |
-| modules with issues |    1040    |
-| issues              |    4015    |
+| modules analyzed    |    1062    |
+| modules with issues |    1041    |
+| issues              |    4018    |
 
 ## Modules with issues
 
@@ -5051,6 +5051,12 @@ Timestamp: 2023-11-09 18:58:19
 4. Typo: Found `Magic Mirror` in file `MMM-Property-Managed.js`: Replace it with `MagicMirror²`.
 5. Recommendation: Found `XMLHttpRequest` in file `MMM-Property-Managed.js`: Replace it with built-in fetch.
 6. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
+
+### [MMM-ProxyImage by daxiang28](https://github.com/daxiang28/MMM-ProxyImage)
+
+1. No image found.
+2. Typo: Found `Magic Mirror` in file `README.md`: Replace it with `MagicMirror²`.
+3. Typo: Found `Magic Mirror` in file `package.json`: Replace it with `MagicMirror²`.
 
 ### [MMM-PublicTransportVVO by ChristianGeie](https://github.com/ChristianGeie/MMM-PublicTransportVVO)
 

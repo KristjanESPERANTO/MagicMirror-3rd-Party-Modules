@@ -9947,6 +9947,22 @@
     "license": "MIT"
   },
   {
+    "name": "MMM-ProxyImage",
+    "url": "https://github.com/daxiang28/MMM-ProxyImage",
+    "id": "daxiang28/MMM-ProxyImage",
+    "maintainer": "daxiang28",
+    "maintainerURL": "https://github.com/daxiang28",
+    "description": "Display basic auth images through a simple Express proxy.",
+    "issues": [
+      "No image found."
+    ],
+    "tags": [
+      "iframe",
+      "notification"
+    ],
+    "license": "MIT"
+  },
+  {
     "name": "MMM-PublicTransportBerlin",
     "url": "https://github.com/deg0nz/MMM-PublicTransportBerlin",
     "id": "deg0nz/MMM-PublicTransportBerlin",
