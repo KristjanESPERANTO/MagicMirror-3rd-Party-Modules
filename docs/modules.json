@@ -302,9 +302,9 @@
   },
   {
     "name": "MMM-alexa",
-    "url": "https://github.com/sdetweil/MMM-alexa",
-    "id": "sdetweil/MMM-alexa",
-    "maintainer": "sdetweil",
+    "url": "https://github.com/sakirtemel/MMM-alexa",
+    "id": "sakirtemel/MMM-alexa",
+    "maintainer": "sakirtemel",
     "maintainerURL": "",
     "description": "Amazon Alexa integration with using JavaScript only.",
     "issues": [
@@ -315,7 +315,7 @@
       "Recommendation: Found `XMLHttpRequest` in file `runDirectives.js`: Replace it with built-in fetch."
     ],
     "license": "MIT",
-    "last_commit": "2019-04-11"
+    "last_commit": "2016-11-08"
   },
   {
     "name": "MMM-AlexaControl",
@@ -3876,14 +3876,15 @@
     "maintainerURL": "https://github.com/mumblebaj",
     "description": "Display loadshedding schedule data for the South African users.",
     "issues": [
-      "`package.json` issue: No repository field.",
-      "No keywords in 'package.json'. We would use them as tags on the website.",
       "Recommendation: Found `'node-fetch'` in file `node_helper.js`: Replace it with built-in fetch.",
       "Recommendation: Found `\"node-fetch\"` in file `package.json`: Replace it with built-in fetch."
     ],
+    "tags": [
+      "eskomsepush"
+    ],
     "license": "ISC",
     "image": "images-image-1.jpg",
-    "last_commit": "2023-09-12"
+    "last_commit": "2023-11-11"
   },
   {
     "name": "MMM-eswordoftheday",
@@ -5070,15 +5071,13 @@
     "maintainer": "mumblebaj",
     "maintainerURL": "https://github.com/mumblebaj",
     "description": "Monitor your gas tank level on your mirror.",
-    "issues": [
-      "`package.json` issue: No description",
-      "`package.json` issue: No repository field.",
-      "Warning: No LICENSE file."
+    "issues": [],
+    "tags": [
+      "growatt"
     ],
-    "tags": [],
     "license": "ISC",
     "image": "images-image-1.jpg",
-    "last_commit": "2023-08-15"
+    "last_commit": "2023-11-11"
   },
   {
     "name": "MMM-GConnect",
@@ -5711,14 +5710,13 @@
     "maintainer": "mumblebaj",
     "maintainerURL": "https://github.com/mumblebaj",
     "description": "Display data from Growatt Inveter. Support multiple Growatt Inverter types.",
-    "issues": [
-      "`package.json` issue: No description",
-      "`package.json` issue: No repository field."
+    "issues": [],
+    "tags": [
+      "growatt"
     ],
-    "tags": [],
     "license": "ISC",
     "image": "images-b_CO2.jpg",
-    "last_commit": "2023-08-31"
+    "last_commit": "2023-11-11"
   },
   {
     "name": "MMM-Growatt",
@@ -5744,16 +5742,13 @@
     "maintainer": "mumblebaj",
     "maintainerURL": "https://github.com/mumblebaj",
     "description": "Display status data from Growatt Inveter. Support multiple Growatt Inverter types. Made to work in conjunction with <a target=\"_blank\" href=\"https://github.com/mumblebaj/MMM-Growatt\">MMM-Growatt</a> or independently.",
-    "issues": [
-      "`package.json` issue: No description",
-      "Warning: No LICENSE file."
-    ],
+    "issues": [],
     "tags": [
       "growatt"
     ],
     "license": "MIT",
     "image": "images-batCharge.jpg",
-    "last_commit": "2023-09-05"
+    "last_commit": "2023-11-11"
   },
   {
     "name": "MMM-GyeonggiBus",
@@ -12033,15 +12028,16 @@
     "maintainerURL": "https://github.com/mumblebaj",
     "description": "Module to grab the status of your lights from your Hue Bridge with some updated features to display status of lights or groups.",
     "issues": [
-      "`package.json` issue: No repository field.",
-      "No keywords in 'package.json'. We would use them as tags on the website.",
       "No image found.",
       "Recommendation: Found `'node-fetch'` in file `node_helper.js`: Replace it with built-in fetch.",
-      "Typo: Found `Magic Mirror` in file `package.json`: Replace it with `MagicMirror\u00b2`.",
       "Recommendation: Found `\"node-fetch\"` in file `package.json`: Replace it with built-in fetch."
     ],
+    "tags": [
+      "philipshue",
+      "smart lights"
+    ],
     "license": "ISC",
-    "last_commit": "2023-03-16"
+    "last_commit": "2023-11-11"
   },
   {
     "name": "phone-notification-mirror",
@@ -13661,7 +13657,7 @@
     ],
     "license": "MIT",
     "image": "screenshot.jpg",
-    "last_commit": "2023-09-21"
+    "last_commit": "2023-11-11"
   },
   {
     "name": "MMM-RKI-Covid19",
@@ -14727,6 +14723,19 @@
     "last_commit": "2023-09-08"
   },
   {
+    "name": "MMM-SleepWake",
+    "url": "https://github.com/sdetweil/MMM-SleepWake",
+    "id": "sdetweil/MMM-SleepWake",
+    "maintainer": "sdetweil",
+    "maintainerURL": "",
+    "description": "Module that uses an external source for motion detection, like a web camera .",
+    "issues": [
+      "There is no `package.json`. We need this file to gather information about the module.",
+      "Warning: No LICENSE file."
+    ],
+    "last_commit": "2023-05-26"
+  },
+  {
     "name": "MMM-Smappee",
     "url": "https://github.com/CFenner/MMM-Smappee",
     "id": "CFenner/MMM-Smappee",
@@ -15289,7 +15298,7 @@
       "Recommendation: Found `\"node-fetch\"` in file `package.json`: Replace it with built-in fetch.",
       "Warning: No LICENSE file."
     ],
-    "last_commit": "2023-11-04"
+    "last_commit": "2023-11-11"
   },
   {
     "name": "MMM-stib",

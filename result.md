@@ -1,16 +1,16 @@
 # Result of the module analysis
 
-Last update: 2023-11-11 03:57:06 UTC
+Last update: 2023-11-11 16:57:34 UTC
 
 ## Statistics
 
 |                      | number   |
 |:---------------------|:--------:|
-| modules analyzed     |   1062   |
-| maintainer           |    611   |
-| modules with issues  |   1041   |
-| issues               |   4018   |
-| modules at github    |   1053   |
+| modules analyzed     |   1063   |
+| maintainer           |    612   |
+| modules with issues  |   1039   |
+| issues               |   4008   |
+| modules at github    |   1054   |
 | modules at gitlab    |      8   |
 | modules at bitbucket |      1   |
 
@@ -124,7 +124,7 @@ Last update: 2023-11-11 03:57:06 UTC
 
 1. Typo: Found `MagicMirror2` in file `package.json`: Replace it with `MagicMirror²`.
 
-### [MMM-alexa by sdetweil](https://github.com/sdetweil/MMM-alexa)
+### [MMM-alexa by sakirtemel](https://github.com/sakirtemel/MMM-alexa)
 
 1. `package.json` issue: No repository field.
 2. No keywords in 'package.json'. We would use them as tags on the website.
@@ -1498,10 +1498,8 @@ Last update: 2023-11-11 03:57:06 UTC
 
 ### [MMM-EskomSePush by mumblebaj](https://github.com/mumblebaj/MMM-EskomSePush)
 
-1. `package.json` issue: No repository field.
-2. No keywords in 'package.json'. We would use them as tags on the website.
-3. Recommendation: Found `'node-fetch'` in file `node_helper.js`: Replace it with built-in fetch.
-4. Recommendation: Found `"node-fetch"` in file `package.json`: Replace it with built-in fetch.
+1. Recommendation: Found `'node-fetch'` in file `node_helper.js`: Replace it with built-in fetch.
+2. Recommendation: Found `"node-fetch"` in file `package.json`: Replace it with built-in fetch.
 
 ### [MMM-eswordoftheday by daniel-windsor](https://github.com/daniel-windsor/MMM-eswordoftheday)
 
@@ -1973,12 +1971,6 @@ Last update: 2023-11-11 03:57:06 UTC
 1. There is no `package.json`. We need this file to gather information about the module.
 2. Warning: No LICENSE file.
 
-### [MMM-GasMonitor by mumblebaj](https://github.com/mumblebaj/MMM-GasMonitor)
-
-1. `package.json` issue: No description
-2. `package.json` issue: No repository field.
-3. Warning: No LICENSE file.
-
 ### [MMM-GConnect by tderflinger](https://github.com/tderflinger/MMM-GConnect)
 
 1. No keywords in 'package.json'. We would use them as tags on the website.
@@ -2220,11 +2212,6 @@ Last update: 2023-11-11 03:57:06 UTC
 1. There is no `package.json`. We need this file to gather information about the module.
 2. Typo: Found `Magic Mirror` in file `README.md`: Replace it with `MagicMirror²`.
 
-### [MMM-Growatt by mumblebaj](https://github.com/mumblebaj/MMM-Growatt)
-
-1. `package.json` issue: No description
-2. `package.json` issue: No repository field.
-
 ### [MMM-Growatt by dekinet](https://github.com/dekinet/MMM-Growatt)
 
 1. `package.json` issue: No description
@@ -2232,11 +2219,6 @@ Last update: 2023-11-11 03:57:06 UTC
 3. No keywords in 'package.json'. We would use them as tags on the website.
 4. No image found.
 5. Typo: Found `Magic Mirror` in file `README.md`: Replace it with `MagicMirror²`.
-
-### [MMM-Growatt-Stats by mumblebaj](https://github.com/mumblebaj/MMM-Growatt-Stats)
-
-1. `package.json` issue: No description
-2. Warning: No LICENSE file.
 
 ### [MMM-GyeonggiBus by iceship](https://github.com/iceship/MMM-GyeonggiBus)
 
@@ -4736,12 +4718,9 @@ Last update: 2023-11-11 03:57:06 UTC
 
 ### [MMM-PhilipsHue by mumblebaj](https://github.com/mumblebaj/MMM-PhilipsHue)
 
-1. `package.json` issue: No repository field.
-2. No keywords in 'package.json'. We would use them as tags on the website.
-3. No image found.
-4. Recommendation: Found `'node-fetch'` in file `node_helper.js`: Replace it with built-in fetch.
-5. Typo: Found `Magic Mirror` in file `package.json`: Replace it with `MagicMirror²`.
-6. Recommendation: Found `"node-fetch"` in file `package.json`: Replace it with built-in fetch.
+1. No image found.
+2. Recommendation: Found `'node-fetch'` in file `node_helper.js`: Replace it with built-in fetch.
+3. Recommendation: Found `"node-fetch"` in file `package.json`: Replace it with built-in fetch.
 
 ### [phone-notification-mirror by ronny3050](https://github.com/ronny3050/phone-notification-mirror)
 
@@ -5774,6 +5753,11 @@ Last update: 2023-11-11 03:57:06 UTC
 3. Recommendation: Found `'node-fetch'` in file `SleeperAPI.js`: Replace it with built-in fetch.
 4. Recommendation: Found `'node-fetch'` in file `espn.js`: Replace it with built-in fetch.
 5. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
+
+### [MMM-SleepWake by sdetweil](https://github.com/sdetweil/MMM-SleepWake)
+
+1. There is no `package.json`. We need this file to gather information about the module.
+2. Warning: No LICENSE file.
 
 ### [MMM-Smappee by CFenner](https://github.com/CFenner/MMM-Smappee)
 

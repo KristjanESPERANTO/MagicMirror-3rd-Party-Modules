@@ -1,9 +1,9 @@
 {
-  "module-counter": 1062,
+  "module-counter": 1063,
   "modules-with-image-counter": 426,
-  "modules-with-issues-counter": 1041,
-  "issue-counter": 4018,
-  "last-update": "2023-11-11 03:57:06",
+  "modules-with-issues-counter": 1039,
+  "issue-counter": 4008,
+  "last-update": "2023-11-11 16:57:34",
   "maintainer": {
     "mykle1": 49,
     "MMRIZE": 16,
@@ -194,7 +194,7 @@
     "j-hiller": 1,
     "ryanzor": 1,
     "mstarzec386": 1,
-    "sdetweil": 1,
+    "sakirtemel": 1,
     "JoChef2": 1,
     "eric-h-st": 1,
     "diyeverythingvn": 1,
@@ -533,6 +533,7 @@
     "Jupter1": 1,
     "Monkeyanator": 1,
     "jackmeyer": 1,
+    "sdetweil": 1,
     "Santanachia": 1,
     "jvanoost": 1,
     "irsheep": 1,
@@ -618,7 +619,7 @@
     "shmulyeng": 1
   },
   "repository-hoster": {
-    "github": 1053,
+    "github": 1054,
     "gitlab": 8,
     "bitbucket": 1
   }

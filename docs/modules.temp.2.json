@@ -237,9 +237,9 @@
   },
   {
     "name": "MMM-alexa",
-    "url": "https://github.com/sdetweil/MMM-alexa",
-    "id": "sdetweil/MMM-alexa",
-    "maintainer": "sdetweil",
+    "url": "https://github.com/sakirtemel/MMM-alexa",
+    "id": "sakirtemel/MMM-alexa",
+    "maintainer": "sakirtemel",
     "maintainerURL": "",
     "description": "Amazon Alexa integration with using JavaScript only.",
     "issues": [
@@ -3039,9 +3039,9 @@
     "maintainer": "mumblebaj",
     "maintainerURL": "https://github.com/mumblebaj",
     "description": "Display loadshedding schedule data for the South African users.",
-    "issues": [
-      "`package.json` issue: No repository field.",
-      "No keywords in 'package.json'. We would use them as tags on the website."
+    "issues": [],
+    "tags": [
+      "eskomsepush"
     ],
     "license": "ISC",
     "image": "images-image-1.jpg"
@@ -3950,11 +3950,10 @@
     "maintainer": "mumblebaj",
     "maintainerURL": "https://github.com/mumblebaj",
     "description": "Monitor your gas tank level on your mirror.",
-    "issues": [
-      "`package.json` issue: No description",
-      "`package.json` issue: No repository field."
+    "issues": [],
+    "tags": [
+      "growatt"
     ],
-    "tags": [],
     "license": "ISC",
     "image": "images-image-1.jpg"
   },
@@ -4465,11 +4464,10 @@
     "maintainer": "mumblebaj",
     "maintainerURL": "https://github.com/mumblebaj",
     "description": "Display data from Growatt Inveter. Support multiple Growatt Inverter types.",
-    "issues": [
-      "`package.json` issue: No description",
-      "`package.json` issue: No repository field."
+    "issues": [],
+    "tags": [
+      "growatt"
     ],
-    "tags": [],
     "license": "ISC",
     "image": "images-b_CO2.jpg"
   },
@@ -4495,9 +4493,7 @@
     "maintainer": "mumblebaj",
     "maintainerURL": "https://github.com/mumblebaj",
     "description": "Display status data from Growatt Inveter. Support multiple Growatt Inverter types. Made to work in conjunction with <a target=\"_blank\" href=\"https://github.com/mumblebaj/MMM-Growatt\">MMM-Growatt</a> or independently.",
-    "issues": [
-      "`package.json` issue: No description"
-    ],
+    "issues": [],
     "tags": [
       "growatt"
     ],
@@ -9318,9 +9314,11 @@
     "maintainerURL": "https://github.com/mumblebaj",
     "description": "Module to grab the status of your lights from your Hue Bridge with some updated features to display status of lights or groups.",
     "issues": [
-      "`package.json` issue: No repository field.",
-      "No keywords in 'package.json'. We would use them as tags on the website.",
       "No image found."
+    ],
+    "tags": [
+      "philipshue",
+      "smart lights"
     ],
     "license": "ISC"
   },
@@ -11397,6 +11395,17 @@
     "maintainer": "jackmeyer",
     "maintainerURL": "",
     "description": "Displays your <a target=\"_blank\" href=\"https://sleeper.com\">Sleeper</a> fantasy football matchup with live updating scores.",
+    "issues": [
+      "There is no `package.json`. We need this file to gather information about the module."
+    ]
+  },
+  {
+    "name": "MMM-SleepWake",
+    "url": "https://github.com/sdetweil/MMM-SleepWake",
+    "id": "sdetweil/MMM-SleepWake",
+    "maintainer": "sdetweil",
+    "maintainerURL": "",
+    "description": "Module that uses an external source for motion detection, like a web camera .",
     "issues": [
       "There is no `package.json`. We need this file to gather information about the module."
     ]

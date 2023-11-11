@@ -154,9 +154,9 @@
   },
   {
     "name": "MMM-alexa",
-    "url": "https://github.com/sdetweil/MMM-alexa",
-    "id": "sdetweil/MMM-alexa",
-    "maintainer": "sdetweil",
+    "url": "https://github.com/sakirtemel/MMM-alexa",
+    "id": "sakirtemel/MMM-alexa",
+    "maintainer": "sakirtemel",
     "maintainerURL": "",
     "description": "Amazon Alexa integration with using JavaScript only.",
     "issues": []
@@ -7706,6 +7706,15 @@
     "maintainer": "jackmeyer",
     "maintainerURL": "",
     "description": "Displays your <a target=\"_blank\" href=\"https://sleeper.com\">Sleeper</a> fantasy football matchup with live updating scores.",
+    "issues": []
+  },
+  {
+    "name": "MMM-SleepWake",
+    "url": "https://github.com/sdetweil/MMM-SleepWake",
+    "id": "sdetweil/MMM-SleepWake",
+    "maintainer": "sdetweil",
+    "maintainerURL": "",
+    "description": "Module that uses an external source for motion detection, like a web camera .",
     "issues": []
   },
   {
