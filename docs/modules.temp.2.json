@@ -72,7 +72,7 @@
     "maintainerURL": "https://github.com/buge",
     "description": "Displays the temperature from <a target=\"_blank\" href=\"https://aare.guru\">aare.guru</a> for the river Aare in Switzerland (in Brienz, Interlaken, Thun, Bern, Hagneck, Biel or Brugg).",
     "issues": [
-      "There is no `package.json`. We need this file to gather information about the module."
+      "There is no `package.json`. We need this file to gather information about the module for the website."
     ]
   },
   {
@@ -110,7 +110,7 @@
     "maintainerURL": "",
     "description": "Track all your deliveries in one module. Supports 428 couriers worldwide.",
     "issues": [
-      "There is no `package.json`. We need this file to gather information about the module."
+      "There is no `package.json`. We need this file to gather information about the module for the website."
     ]
   },
   {
@@ -135,7 +135,7 @@
     "maintainerURL": "https://github.com/PavlenkoM",
     "description": "This module shows the current status of air raid sirens in Ukraine.",
     "issues": [
-      "There is no `package.json`. We need this file to gather information about the module."
+      "There is no `package.json`. We need this file to gather information about the module for the website."
     ]
   },
   {
@@ -191,7 +191,7 @@
     "maintainerURL": "",
     "description": "Display the air quality index for a certain location.",
     "issues": [
-      "There is no `package.json`. We need this file to gather information about the module."
+      "There is no `package.json`. We need this file to gather information about the module for the website."
     ]
   },
   {
@@ -202,7 +202,7 @@
     "maintainerURL": "",
     "description": "Fork from CFenner's repo and extended with a new layout setting to print location data as a header.",
     "issues": [
-      "There is no `package.json`. We need this file to gather information about the module."
+      "There is no `package.json`. We need this file to gather information about the module for the website."
     ]
   },
   {
@@ -325,7 +325,7 @@
     "maintainerURL": "",
     "description": "Am Lich - Lunar Date - Vietnamese Language.",
     "issues": [
-      "There is no `package.json`. We need this file to gather information about the module."
+      "There is no `package.json`. We need this file to gather information about the module for the website."
     ]
   },
   {
@@ -336,7 +336,7 @@
     "maintainerURL": "",
     "description": "Show a table of upcoming birthdays for a list of people you provided. Nice not to forget birthdays.",
     "issues": [
-      "There is no `package.json`. We need this file to gather information about the module."
+      "There is no `package.json`. We need this file to gather information about the module for the website."
     ]
   },
   {
@@ -359,7 +359,7 @@
     "maintainerURL": "https://github.com/JonasTriki",
     "description": "Displays a private leaderboard in Advent of Code.",
     "issues": [
-      "There is no `package.json`. We need this file to gather information about the module."
+      "There is no `package.json`. We need this file to gather information about the module for the website."
     ]
   },
   {
@@ -418,7 +418,7 @@
     "maintainerURL": "",
     "description": "Display the last Astronomy Picture Of the Day (APOD). This is an evolution of MMM-nasaastropic : supports image and video and display title, description and copyright.",
     "issues": [
-      "There is no `package.json`. We need this file to gather information about the module."
+      "There is no `package.json`. We need this file to gather information about the module for the website."
     ]
   },
   {
@@ -445,7 +445,7 @@
     "maintainerURL": "https://github.com/gpailler",
     "description": "Display the air quality index from <a target=\"_blank\" href=\"https://aqicn.org\">aqicn</a> project.",
     "issues": [
-      "There is no `package.json`. We need this file to gather information about the module."
+      "There is no `package.json`. We need this file to gather information about the module for the website."
     ]
   },
   {
@@ -485,7 +485,7 @@
     "maintainerURL": "",
     "description": "Displays daily, weekly or monthly horoscopes for MM2.",
     "issues": [
-      "There is no `package.json`. We need this file to gather information about the module."
+      "There is no `package.json`. We need this file to gather information about the module for the website."
     ]
   },
   {
@@ -496,7 +496,7 @@
     "maintainerURL": "",
     "description": "A rotation of astronauts that are currently in space and the spacecraft they are on.",
     "issues": [
-      "There is no `package.json`. We need this file to gather information about the module."
+      "There is no `package.json`. We need this file to gather information about the module for the website."
     ]
   },
   {
@@ -507,7 +507,7 @@
     "maintainerURL": "https://github.com/Estanz0",
     "description": "Displays arrival time in minutes or scheduled arrival for a selected bus or stop in Auckland, NZ.",
     "issues": [
-      "There is no `package.json`. We need this file to gather information about the module."
+      "There is no `package.json`. We need this file to gather information about the module for the website."
     ]
   },
   {
@@ -518,7 +518,7 @@
     "maintainerURL": "",
     "description": "Unofficial module showing departure times from given stops for the public transport service in Trøndelag, Norway - AtB.",
     "issues": [
-      "There is no `package.json`. We need this file to gather information about the module."
+      "There is no `package.json`. We need this file to gather information about the module for the website."
     ]
   },
   {
@@ -529,7 +529,7 @@
     "maintainerURL": "",
     "description": "Another Trivia Module? Really?",
     "issues": [
-      "There is no `package.json`. We need this file to gather information about the module."
+      "There is no `package.json`. We need this file to gather information about the module for the website."
     ]
   },
   {
@@ -568,7 +568,7 @@
     "maintainerURL": "https://github.com/Fifteen15Studios",
     "description": "Set 1 or more schedules to dim and brighten your screen at specific times.",
     "issues": [
-      "There is no `package.json`. We need this file to gather information about the module."
+      "There is no `package.json`. We need this file to gather information about the module for the website."
     ]
   },
   {
@@ -593,7 +593,7 @@
     "maintainerURL": "",
     "description": "Display aviation weather (METAR) and FAA delay data for continental U.S. airports.",
     "issues": [
-      "There is no `package.json`. We need this file to gather information about the module."
+      "There is no `package.json`. We need this file to gather information about the module for the website."
     ]
   },
   {
@@ -661,7 +661,7 @@
     "maintainerURL": "",
     "description": "Bay Area Rapid Transit (BART) departure times.",
     "issues": [
-      "There is no `package.json`. We need this file to gather information about the module."
+      "There is no `package.json`. We need this file to gather information about the module for the website."
     ]
   },
   {
@@ -718,7 +718,7 @@
     "maintainerURL": "",
     "description": "Cyclically displays Bengali Words and Bengali Pronunciations with English Translations.",
     "issues": [
-      "There is no `package.json`. We need this file to gather information about the module."
+      "There is no `package.json`. We need this file to gather information about the module for the website."
     ]
   },
   {
@@ -729,7 +729,7 @@
     "maintainerURL": "https://github.com/ItsMeBrille",
     "description": "Display current fuel prices at your nearest gas station in Norway.",
     "issues": [
-      "There is no `package.json`. We need this file to gather information about the module."
+      "There is no `package.json`. We need this file to gather information about the module for the website."
     ]
   },
   {
@@ -780,7 +780,7 @@
     "maintainerURL": "",
     "description": "Displays a Word Clock written in the Swiss German dialect of Bern.",
     "issues": [
-      "There is no `package.json`. We need this file to gather information about the module."
+      "There is no `package.json`. We need this file to gather information about the module for the website."
     ]
   },
   {
@@ -807,7 +807,7 @@
     "maintainerURL": "https://github.com/brssaricicek",
     "description": "Display cryptocurrency information from the Binance website.",
     "issues": [
-      "There is no `package.json`. We need this file to gather information about the module."
+      "There is no `package.json`. We need this file to gather information about the module for the website."
     ]
   },
   {
@@ -818,7 +818,7 @@
     "maintainerURL": "",
     "description": "Simple Binary Clock.",
     "issues": [
-      "There is no `package.json`. We need this file to gather information about the module."
+      "There is no `package.json`. We need this file to gather information about the module for the website."
     ]
   },
   {
@@ -854,7 +854,7 @@
     "maintainerURL": "",
     "description": "Display bitcoin ticker price.",
     "issues": [
-      "There is no `package.json`. We need this file to gather information about the module."
+      "There is no `package.json`. We need this file to gather information about the module for the website."
     ]
   },
   {
@@ -865,7 +865,7 @@
     "maintainerURL": "https://github.com/jeroenpeters1986",
     "description": "Display bitcoin ticket price + worth of your own wallet/portfolio.",
     "issues": [
-      "There is no `package.json`. We need this file to gather information about the module."
+      "There is no `package.json`. We need this file to gather information about the module for the website."
     ]
   },
   {
@@ -890,7 +890,7 @@
     "maintainerURL": "https://github.com/pcurt",
     "description": "Module that shows french jokes from the BlaguesAPI <a target=\"_blank\" href=\"https://www.blagues-api.fr\">https://www.blagues-api.fr</a>.",
     "issues": [
-      "There is no `package.json`. We need this file to gather information about the module."
+      "There is no `package.json`. We need this file to gather information about the module for the website."
     ]
   },
   {
@@ -901,7 +901,7 @@
     "maintainerURL": "https://github.com/BKeyport",
     "description": "Quick Module to easily move modules up or down for blank space.",
     "issues": [
-      "There is no `package.json`. We need this file to gather information about the module."
+      "There is no `package.json`. We need this file to gather information about the module for the website."
     ]
   },
   {
@@ -912,7 +912,7 @@
     "maintainerURL": "https://github.com/jschless",
     "description": "Displays the number of available bikes at selected stations of the Boston public bike system (Bluebikes).",
     "issues": [
-      "There is no `package.json`. We need this file to gather information about the module."
+      "There is no `package.json`. We need this file to gather information about the module for the website."
     ]
   },
   {
@@ -980,7 +980,7 @@
     "maintainerURL": "",
     "description": "Minimalist Weather for the bottom_bar or thirds position of your MagicMirror².",
     "issues": [
-      "There is no `package.json`. We need this file to gather information about the module."
+      "There is no `package.json`. We need this file to gather information about the module for the website."
     ]
   },
   {
@@ -991,7 +991,7 @@
     "maintainerURL": "",
     "description": "Weather designed for bottom bar position, now using the ClimaCell API.",
     "issues": [
-      "There is no `package.json`. We need this file to gather information about the module."
+      "There is no `package.json`. We need this file to gather information about the module for the website."
     ]
   },
   {
@@ -1002,7 +1002,7 @@
     "maintainerURL": "",
     "description": "Weather designed for bottom bar position.",
     "issues": [
-      "There is no `package.json`. We need this file to gather information about the module."
+      "There is no `package.json`. We need this file to gather information about the module for the website."
     ],
     "outdated": "Deprecated. DarkSky API no longer works since 2023-03-31."
   },
@@ -1014,7 +1014,7 @@
     "maintainerURL": "",
     "description": "Weather designed for bottom bar position, now using the OpenWeather API.",
     "issues": [
-      "There is no `package.json`. We need this file to gather information about the module."
+      "There is no `package.json`. We need this file to gather information about the module for the website."
     ]
   },
   {
@@ -1038,7 +1038,7 @@
     "maintainerURL": "",
     "description": "Spice up your life with a happy little painting and video of the man himself.",
     "issues": [
-      "There is no `package.json`. We need this file to gather information about the module."
+      "There is no `package.json`. We need this file to gather information about the module for the website."
     ]
   },
   {
@@ -1049,7 +1049,7 @@
     "maintainerURL": "https://github.com/CptMeetKat",
     "description": "Display ideas for when you're bored to keep your boring life fresh.",
     "issues": [
-      "There is no `package.json`. We need this file to gather information about the module."
+      "There is no `package.json`. We need this file to gather information about the module for the website."
     ]
   },
   {
@@ -1060,7 +1060,7 @@
     "maintainerURL": "",
     "description": "Module request to show the date you must be born before to enter premises.",
     "issues": [
-      "There is no `package.json`. We need this file to gather information about the module."
+      "There is no `package.json`. We need this file to gather information about the module for the website."
     ]
   },
   {
@@ -1084,7 +1084,7 @@
     "maintainerURL": "",
     "description": "Shows the music that plays on your Soundtouch.",
     "issues": [
-      "There is no `package.json`. We need this file to gather information about the module."
+      "There is no `package.json`. We need this file to gather information about the module for the website."
     ]
   },
   {
@@ -1110,7 +1110,7 @@
     "maintainerURL": "",
     "description": "Quick Breathing Exercise to calm you down.",
     "issues": [
-      "There is no `package.json`. We need this file to gather information about the module."
+      "There is no `package.json`. We need this file to gather information about the module for the website."
     ]
   },
   {
@@ -1121,7 +1121,7 @@
     "maintainerURL": "",
     "description": "Displays information about beers available from Brewdog.",
     "issues": [
-      "There is no `package.json`. We need this file to gather information about the module."
+      "There is no `package.json`. We need this file to gather information about the module for the website."
     ]
   },
   {
@@ -1276,7 +1276,7 @@
     "maintainerURL": "https://github.com/JonasTriki",
     "description": "Display the availability of the city bikes around in Norway from A to B.",
     "issues": [
-      "There is no `package.json`. We need this file to gather information about the module."
+      "There is no `package.json`. We need this file to gather information about the module for the website."
     ]
   },
   {
@@ -1302,7 +1302,7 @@
     "maintainerURL": "",
     "description": "Display a compact monthly calendar view.",
     "issues": [
-      "There is no `package.json`. We need this file to gather information about the module."
+      "There is no `package.json`. We need this file to gather information about the module for the website."
     ]
   },
   {
@@ -1375,7 +1375,7 @@
     "maintainerURL": "",
     "description": "Display mini month calendar. This is a plugin module for <code>MMM-CalendarExt2</code>.",
     "issues": [
-      "There is no `package.json`. We need this file to gather information about the module."
+      "There is no `package.json`. We need this file to gather information about the module for the website."
     ]
   },
   {
@@ -1386,7 +1386,7 @@
     "maintainerURL": "",
     "description": "Display daily plan by criteria. This is a plugin module for <code>MMM-CalendarExt2</code>.",
     "issues": [
-      "There is no `package.json`. We need this file to gather information about the module."
+      "There is no `package.json`. We need this file to gather information about the module for the website."
     ]
   },
   {
@@ -1397,7 +1397,7 @@
     "maintainerURL": "",
     "description": "Display current timeline schedules. This is a plugin module for <code>MMM-CalendarExt2</code>.",
     "issues": [
-      "There is no `package.json`. We need this file to gather information about the module."
+      "There is no `package.json`. We need this file to gather information about the module for the website."
     ]
   },
   {
@@ -1408,7 +1408,7 @@
     "maintainerURL": "https://github.com/qunu",
     "description": "This calendar module functions the same as the default calendar app, but it only displays Today and Tomorrows events.",
     "issues": [
-      "There is no `package.json`. We need this file to gather information about the module."
+      "There is no `package.json`. We need this file to gather information about the module for the website."
     ]
   },
   {
@@ -1419,7 +1419,7 @@
     "maintainerURL": "",
     "description": "Display a weekly (n days) calendar view.",
     "issues": [
-      "There is no `package.json`. We need this file to gather information about the module."
+      "There is no `package.json`. We need this file to gather information about the module for the website."
     ]
   },
   {
@@ -1430,7 +1430,7 @@
     "maintainerURL": "",
     "description": "Extension for <a target=\"_blank\" href=\"https://github.com/paviro/MMM-FRITZ-Box-Callmonitor\">MMM-FRITZ-Box-Callmonitor</a>. Displays the currently active call.",
     "issues": [
-      "There is no `package.json`. We need this file to gather information about the module."
+      "There is no `package.json`. We need this file to gather information about the module for the website."
     ]
   },
   {
@@ -1441,7 +1441,7 @@
     "maintainerURL": "",
     "description": "Caltrain (San Francisco Bay Area) status monitoring.",
     "issues": [
-      "There is no `package.json`. We need this file to gather information about the module."
+      "There is no `package.json`. We need this file to gather information about the module for the website."
     ]
   },
   {
@@ -1452,7 +1452,7 @@
     "maintainerURL": "https://github.com/zzhenney",
     "description": "Display departure times or estimated time to departure for the selected Caltrain station.",
     "issues": [
-      "There is no `package.json`. We need this file to gather information about the module."
+      "There is no `package.json`. We need this file to gather information about the module for the website."
     ]
   },
   {
@@ -1515,7 +1515,7 @@
     "maintainerURL": "https://github.com/chase-cromwell",
     "description": "Module to display upcoming assignments from Canvas LMS platform.",
     "issues": [
-      "There is no `package.json`. We need this file to gather information about the module."
+      "There is no `package.json`. We need this file to gather information about the module for the website."
     ]
   },
   {
@@ -1537,7 +1537,7 @@
     "maintainerURL": "",
     "description": "Play 5 Card Stud Poker against your mirror.",
     "issues": [
-      "There is no `package.json`. We need this file to gather information about the module."
+      "There is no `package.json`. We need this file to gather information about the module for the website."
     ]
   },
   {
@@ -1585,7 +1585,7 @@
     "maintainerURL": "",
     "description": "World Population and demographics, by age and sex, or by individual country. 1950 - 2100.",
     "issues": [
-      "There is no `package.json`. We need this file to gather information about the module."
+      "There is no `package.json`. We need this file to gather information about the module for the website."
     ]
   },
   {
@@ -1643,7 +1643,7 @@
     "maintainerURL": "",
     "description": "Directly cast from the MagicMirror² server to a chromecast.",
     "issues": [
-      "There is no `package.json`. We need this file to gather information about the module."
+      "There is no `package.json`. We need this file to gather information about the module for the website."
     ]
   },
   {
@@ -1668,7 +1668,7 @@
     "maintainerURL": "",
     "description": "Display random Clash Royale decks.",
     "issues": [
-      "There is no `package.json`. We need this file to gather information about the module."
+      "There is no `package.json`. We need this file to gather information about the module for the website."
     ]
   },
   {
@@ -1679,7 +1679,7 @@
     "maintainerURL": "https://github.com/AdmiralMurtho",
     "description": "This module show you the name, trophies and clan of an player.",
     "issues": [
-      "There is no `package.json`. We need this file to gather information about the module."
+      "There is no `package.json`. We need this file to gather information about the module for the website."
     ]
   },
   {
@@ -1690,7 +1690,7 @@
     "maintainerURL": "https://github.com/chicohernando",
     "description": "This will show you your upcoming chests to open in ClashRoyale.",
     "issues": [
-      "There is no `package.json`. We need this file to gather information about the module."
+      "There is no `package.json`. We need this file to gather information about the module for the website."
     ]
   },
   {
@@ -1701,7 +1701,7 @@
     "maintainerURL": "",
     "description": "Hourly weather designed for bottom bar position using the Climacell API.",
     "issues": [
-      "There is no `package.json`. We need this file to gather information about the module."
+      "There is no `package.json`. We need this file to gather information about the module for the website."
     ]
   },
   {
@@ -1712,7 +1712,7 @@
     "maintainerURL": "",
     "description": "A simple analog clock module using Chinese numbers.",
     "issues": [
-      "There is no `package.json`. We need this file to gather information about the module."
+      "There is no `package.json`. We need this file to gather information about the module for the website."
     ]
   },
   {
@@ -1723,7 +1723,7 @@
     "maintainerURL": "",
     "description": "Module displays a random intro quote from <em>The Clone Wars</em> television series, seasons 1-6.",
     "issues": [
-      "There is no `package.json`. We need this file to gather information about the module."
+      "There is no `package.json`. We need this file to gather information about the module for the website."
     ]
   },
   {
@@ -1734,7 +1734,7 @@
     "maintainerURL": "",
     "description": "Displays the closest aircraft's callsign and altitude using ADS-B data.",
     "issues": [
-      "There is no `package.json`. We need this file to gather information about the module."
+      "There is no `package.json`. We need this file to gather information about the module for the website."
     ]
   },
   {
@@ -1745,7 +1745,7 @@
     "maintainerURL": "",
     "description": "How to make all kinds of mixed drinks - Instructions, ingredients and images.",
     "issues": [
-      "There is no `package.json`. We need this file to gather information about the module."
+      "There is no `package.json`. We need this file to gather information about the module for the website."
     ]
   },
   {
@@ -1787,7 +1787,7 @@
     "maintainerURL": "",
     "description": "Displays cryptocurreency values and trends in different currencies based of COINSQUARE.",
     "issues": [
-      "There is no `package.json`. We need this file to gather information about the module."
+      "There is no `package.json`. We need this file to gather information about the module for the website."
     ]
   },
   {
@@ -1798,7 +1798,7 @@
     "maintainerURL": "",
     "description": "Displays the Top 25 College Football Teams (USA) based on the Associated Press Polling.",
     "issues": [
-      "There is no `package.json`. We need this file to gather information about the module."
+      "There is no `package.json`. We need this file to gather information about the module for the website."
     ]
   },
   {
@@ -1851,7 +1851,7 @@
     "maintainerURL": "https://github.com/xadamxk",
     "description": "CookieCutter template for generating MagicMirror² modules.",
     "issues": [
-      "There is no `package.json`. We need this file to gather information about the module."
+      "There is no `package.json`. We need this file to gather information about the module for the website."
     ]
   },
   {
@@ -1876,7 +1876,7 @@
     "maintainerURL": "",
     "description": "Countdown or countup for events.",
     "issues": [
-      "There is no `package.json`. We need this file to gather information about the module."
+      "There is no `package.json`. We need this file to gather information about the module for the website."
     ]
   },
   {
@@ -1887,7 +1887,7 @@
     "maintainerURL": "",
     "description": "Shows a progressive counter from a specific date.",
     "issues": [
-      "There is no `package.json`. We need this file to gather information about the module."
+      "There is no `package.json`. We need this file to gather information about the module for the website."
     ]
   },
   {
@@ -1915,7 +1915,7 @@
     "maintainerURL": "https://github.com/wiesty",
     "description": "Module that displays the number of days, weeks, months, and years since a specified date, serving as a romantic reminder for couples 💌. Can also be used for Birthdays 📆.",
     "issues": [
-      "There is no `package.json`. We need this file to gather information about the module."
+      "There is no `package.json`. We need this file to gather information about the module for the website."
     ]
   },
   {
@@ -1942,7 +1942,7 @@
     "maintainerURL": "",
     "description": "Keep track of Corona Virus (COVID-19) cases via rapidapi API.",
     "issues": [
-      "There is no `package.json`. We need this file to gather information about the module."
+      "There is no `package.json`. We need this file to gather information about the module for the website."
     ]
   },
   {
@@ -1965,7 +1965,7 @@
     "maintainerURL": "",
     "description": "Keep track of the covid19 vaccination progress for Germany/German states.",
     "issues": [
-      "There is no `package.json`. We need this file to gather information about the module."
+      "There is no `package.json`. We need this file to gather information about the module for the website."
     ],
     "outdated": "Obsolete, no new data since 2022-04-27."
   },
@@ -1991,7 +1991,7 @@
     "maintainerURL": "",
     "description": "Real time tram departure from selected stop in Cracow (Poland).",
     "issues": [
-      "There is no `package.json`. We need this file to gather information about the module."
+      "There is no `package.json`. We need this file to gather information about the module for the website."
     ]
   },
   {
@@ -2030,7 +2030,7 @@
     "maintainerURL": "https://github.com/timophey",
     "description": "Virtual model of physical Cronixie (Led Nixie) clock.",
     "issues": [
-      "There is no `package.json`. We need this file to gather information about the module."
+      "There is no `package.json`. We need this file to gather information about the module for the website."
     ]
   },
   {
@@ -2041,7 +2041,7 @@
     "maintainerURL": "",
     "description": "Display cryptocurrencies ticker price, with graphs and changes over time.",
     "issues": [
-      "There is no `package.json`. We need this file to gather information about the module."
+      "There is no `package.json`. We need this file to gather information about the module for the website."
     ]
   },
   {
@@ -2052,7 +2052,7 @@
     "maintainerURL": "https://github.com/NateDee",
     "description": "Displays arrival times for the Chicago Transit Authority 'L' system buses and trains.",
     "issues": [
-      "There is no `package.json`. We need this file to gather information about the module."
+      "There is no `package.json`. We need this file to gather information about the module for the website."
     ]
   },
   {
@@ -2063,7 +2063,7 @@
     "maintainerURL": "",
     "description": "Real time bus information from Rosario, Santa Fe, Argentina.",
     "issues": [
-      "There is no `package.json`. We need this file to gather information about the module."
+      "There is no `package.json`. We need this file to gather information about the module for the website."
     ]
   },
   {
@@ -2074,7 +2074,7 @@
     "maintainerURL": "",
     "description": "Display the dollar price in real time.",
     "issues": [
-      "There is no `package.json`. We need this file to gather information about the module."
+      "There is no `package.json`. We need this file to gather information about the module for the website."
     ]
   },
   {
@@ -2114,7 +2114,7 @@
     "maintainerURL": "",
     "description": "Custom element <code>mm-time</code> launcher.",
     "issues": [
-      "There is no `package.json`. We need this file to gather information about the module."
+      "There is no `package.json`. We need this file to gather information about the module for the website."
     ]
   },
   {
@@ -2141,7 +2141,7 @@
     "maintainerURL": "https://github.com/gueguet",
     "description": "This module allows you to display the last news about CyberSecurity.",
     "issues": [
-      "There is no `package.json`. We need this file to gather information about the module."
+      "There is no `package.json`. We need this file to gather information about the module for the website."
     ]
   },
   {
@@ -2152,7 +2152,7 @@
     "maintainerURL": "",
     "description": "Display tracking information for parcels handled by Czech Post.",
     "issues": [
-      "There is no `package.json`. We need this file to gather information about the module."
+      "There is no `package.json`. We need this file to gather information about the module for the website."
     ]
   },
   {
@@ -2218,7 +2218,7 @@
     "maintainerURL": "",
     "description": "Forked from MMM-Daikin to work with Daikin Airbase controllers (wifi air conditioner controllers used in Australia/New Zealand regions).",
     "issues": [
-      "There is no `package.json`. We need this file to gather information about the module."
+      "There is no `package.json`. We need this file to gather information about the module for the website."
     ]
   },
   {
@@ -2229,7 +2229,7 @@
     "maintainerURL": "https://github.com/Nickiroo",
     "description": "Displays a random AC villager with a picture and some traits. Inspired by MMM-DailyPokemon.",
     "issues": [
-      "There is no `package.json`. We need this file to gather information about the module."
+      "There is no `package.json`. We need this file to gather information about the module for the website."
     ]
   },
   {
@@ -2240,7 +2240,7 @@
     "maintainerURL": "",
     "description": "Module for daily recurrent event alarms.",
     "issues": [
-      "There is no `package.json`. We need this file to gather information about the module."
+      "There is no `package.json`. We need this file to gather information about the module for the website."
     ]
   },
   {
@@ -2264,7 +2264,7 @@
     "maintainerURL": "",
     "description": "Display a daily bit of Buddhist wisdom from Thich Nhat Hanh's \"Your True Home\".",
     "issues": [
-      "There is no `package.json`. We need this file to gather information about the module."
+      "There is no `package.json`. We need this file to gather information about the module for the website."
     ]
   },
   {
@@ -2275,7 +2275,7 @@
     "maintainerURL": "",
     "description": "Displays the daily Dilbert strip.",
     "issues": [
-      "There is no `package.json`. We need this file to gather information about the module."
+      "There is no `package.json`. We need this file to gather information about the module for the website."
     ]
   },
   {
@@ -2300,7 +2300,7 @@
     "maintainerURL": "",
     "description": "Display the bible verse of the day from <a target=\"_blank\" href=\"https://dailypower.oemel09.de\">DailyPower</a>.",
     "issues": [
-      "There is no `package.json`. We need this file to gather information about the module."
+      "There is no `package.json`. We need this file to gather information about the module for the website."
     ]
   },
   {
@@ -2325,7 +2325,7 @@
     "maintainerURL": "",
     "description": "Displays the daily XKCD web comic.",
     "issues": [
-      "There is no `package.json`. We need this file to gather information about the module."
+      "There is no `package.json`. We need this file to gather information about the module for the website."
     ]
   },
   {
@@ -2336,7 +2336,7 @@
     "maintainerURL": "",
     "description": "Hourly weather and precipitation pulled from DarkSky.",
     "issues": [
-      "There is no `package.json`. We need this file to gather information about the module."
+      "There is no `package.json`. We need this file to gather information about the module for the website."
     ],
     "outdated": "Deprecated. DarkSky API no longer works since 2023-03-31."
   },
@@ -2348,7 +2348,7 @@
     "maintainerURL": "",
     "description": "Shows weather information for the next 24 hours using the Dark Sky API. The idea of this module is to give you confidence on what to wear when you go outside / to work, or what transport mode you should take (in case you are a good weather-only biker). The hourly forecast gives you a good decision basis based on the weather condition at the times you go to work and return home.",
     "issues": [
-      "There is no `package.json`. We need this file to gather information about the module."
+      "There is no `package.json`. We need this file to gather information about the module for the website."
     ],
     "outdated": "Deprecated. DarkSky API no longer works since 2023-03-31."
   },
@@ -2389,7 +2389,7 @@
     "maintainerURL": "",
     "description": "Shows either the time remaining to an event, or the time since an event. This module also supports having a supporting image.",
     "issues": [
-      "There is no `package.json`. We need this file to gather information about the module."
+      "There is no `package.json`. We need this file to gather information about the module for the website."
     ]
   },
   {
@@ -2400,7 +2400,7 @@
     "maintainerURL": "",
     "description": "Shows the date without a clock (if you have one in another place).",
     "issues": [
-      "There is no `package.json`. We need this file to gather information about the module."
+      "There is no `package.json`. We need this file to gather information about the module for the website."
     ]
   },
   {
@@ -2424,7 +2424,7 @@
     "maintainerURL": "https://github.com/kyle-kelly",
     "description": "A fork of <a target=\"_blank\" href=\"https://github.com/AdamMoses-GitHub/MMM-DCMetroTrainTimes\">MMM-DCMetroTrainTimes</a> (above) that also displays arrival times for buses.",
     "issues": [
-      "There is no `package.json`. We need this file to gather information about the module."
+      "There is no `package.json`. We need this file to gather information about the module for the website."
     ]
   },
   {
@@ -2435,7 +2435,7 @@
     "maintainerURL": "",
     "description": "Displays the arrival time of trains to any station in the Washington DC subway metro system (WMATA) as well as incidents reported for any of the line colors.",
     "issues": [
-      "There is no `package.json`. We need this file to gather information about the module."
+      "There is no `package.json`. We need this file to gather information about the module for the website."
     ]
   },
   {
@@ -2446,7 +2446,7 @@
     "maintainerURL": "",
     "description": "Adds animated icons and changes layout of default weather plugin.",
     "issues": [
-      "There is no `package.json`. We need this file to gather information about the module."
+      "There is no `package.json`. We need this file to gather information about the module for the website."
     ]
   },
   {
@@ -2457,7 +2457,7 @@
     "maintainerURL": "https://github.com/wouter-heerwegh",
     "description": "Retrieves live timings of busses for a specific bus stop.",
     "issues": [
-      "There is no `package.json`. We need this file to gather information about the module."
+      "There is no `package.json`. We need this file to gather information about the module for the website."
     ]
   },
   {
@@ -2468,7 +2468,7 @@
     "maintainerURL": "",
     "description": "Reads the temperature and humidity from a DHT22 sensor and displays one or both with custom coloring based on a temperature/humidity range you specify.",
     "issues": [
-      "There is no `package.json`. We need this file to gather information about the module."
+      "There is no `package.json`. We need this file to gather information about the module for the website."
     ]
   },
   {
@@ -2510,7 +2510,7 @@
     "maintainerURL": "",
     "description": "modified defult clock showing only the digital part.",
     "issues": [
-      "There is no `package.json`. We need this file to gather information about the module."
+      "There is no `package.json`. We need this file to gather information about the module for the website."
     ]
   },
   {
@@ -2596,7 +2596,7 @@
     "maintainerURL": "",
     "description": "See your docker swarm running in real time through docker-swarm-visualizer.",
     "issues": [
-      "There is no `package.json`. We need this file to gather information about the module."
+      "There is no `package.json`. We need this file to gather information about the module for the website."
     ]
   },
   {
@@ -2750,7 +2750,7 @@
     "maintainerURL": "",
     "description": "Change positions of modules.",
     "issues": [
-      "There is no `package.json`. We need this file to gather information about the module."
+      "There is no `package.json`. We need this file to gather information about the module for the website."
     ]
   },
   {
@@ -2790,7 +2790,7 @@
     "maintainerURL": "",
     "description": "Live video of the Earth from the International Space Station.",
     "issues": [
-      "There is no `package.json`. We need this file to gather information about the module."
+      "There is no `package.json`. We need this file to gather information about the module for the website."
     ]
   },
   {
@@ -2814,7 +2814,7 @@
     "maintainerURL": "",
     "description": "The easiest way to show pictures on your mirror.",
     "issues": [
-      "There is no `package.json`. We need this file to gather information about the module."
+      "There is no `package.json`. We need this file to gather information about the module for the website."
     ]
   },
   {
@@ -2840,7 +2840,7 @@
     "maintainerURL": "",
     "description": "Displays the tree counter from <a target=\"_blank\" href=\"https://ecosia.org\">Ecosia</a>.",
     "issues": [
-      "There is no `package.json`. We need this file to gather information about the module."
+      "There is no `package.json`. We need this file to gather information about the module for the website."
     ]
   },
   {
@@ -2905,7 +2905,7 @@
     "maintainerURL": "",
     "description": "Displays praying times from East London Mosque in London.",
     "issues": [
-      "There is no `package.json`. We need this file to gather information about the module."
+      "There is no `package.json`. We need this file to gather information about the module for the website."
     ]
   },
   {
@@ -2950,7 +2950,7 @@
     "maintainerURL": "",
     "description": "Embed youtube video and playlist.",
     "issues": [
-      "There is no `package.json`. We need this file to gather information about the module."
+      "There is no `package.json`. We need this file to gather information about the module for the website."
     ]
   },
   {
@@ -2961,7 +2961,7 @@
     "maintainerURL": "https://github.com/jirsis",
     "description": "Estimated arrival time and distance Madrid buses.",
     "issues": [
-      "There is no `package.json`. We need this file to gather information about the module."
+      "There is no `package.json`. We need this file to gather information about the module for the website."
     ]
   },
   {
@@ -3007,7 +3007,7 @@
     "maintainerURL": "",
     "description": "Display live data and cumulative daily totals of energy produced from an Enphase Solar system by reading data from the local Enphase gateway (firmware 7.0+).",
     "issues": [
-      "There is no `package.json`. We need this file to gather information about the module."
+      "There is no `package.json`. We need this file to gather information about the module for the website."
     ]
   },
   {
@@ -3018,7 +3018,7 @@
     "maintainerURL": "",
     "description": "Display public transport information/departure boards for any public transport in Norway.",
     "issues": [
-      "There is no `package.json`. We need this file to gather information about the module."
+      "There is no `package.json`. We need this file to gather information about the module for the website."
     ]
   },
   {
@@ -3029,7 +3029,7 @@
     "maintainerURL": "",
     "description": "The Encyclopedia of Life.",
     "issues": [
-      "There is no `package.json`. We need this file to gather information about the module."
+      "There is no `package.json`. We need this file to gather information about the module for the website."
     ]
   },
   {
@@ -3069,7 +3069,7 @@
     "maintainerURL": "",
     "description": "Display ethereum ticker.",
     "issues": [
-      "There is no `package.json`. We need this file to gather information about the module."
+      "There is no `package.json`. We need this file to gather information about the module for the website."
     ]
   },
   {
@@ -3080,7 +3080,7 @@
     "maintainerURL": "",
     "description": "Displays Ethereum miner rig statistics for miners on the ethermine.org mining pool.",
     "issues": [
-      "There is no `package.json`. We need this file to gather information about the module."
+      "There is no `package.json`. We need this file to gather information about the module for the website."
     ]
   },
   {
@@ -3104,7 +3104,7 @@
     "maintainerURL": "",
     "description": "Simple countdown timer for events. Birthdays, weddings, anniversaries, vacations, etc.",
     "issues": [
-      "There is no `package.json`. We need this file to gather information about the module."
+      "There is no `package.json`. We need this file to gather information about the module for the website."
     ]
   },
   {
@@ -3115,7 +3115,7 @@
     "maintainerURL": "",
     "description": "Upcoming events in your city. Concerts, Performances, Comedy Shows, Sporting Events, Theatre, Exhibits, Art Galleries, Museums, Festivals, Food &amp; Drink and many more.",
     "issues": [
-      "There is no `package.json`. We need this file to gather information about the module."
+      "There is no `package.json`. We need this file to gather information about the module for the website."
     ],
     "outdated": "Deprecated. Eventful API discontinued. This module needs updated."
   },
@@ -3127,7 +3127,7 @@
     "maintainerURL": "",
     "description": "Over 30,000 News sources! Up to 10 at once. Simplified addition to your config entry.",
     "issues": [
-      "There is no `package.json`. We need this file to gather information about the module."
+      "There is no `package.json`. We need this file to gather information about the module for the website."
     ]
   },
   {
@@ -3138,7 +3138,7 @@
     "maintainerURL": "",
     "description": "Add some EyeCandy to your mirror. You can even choose your own local images or internet images.",
     "issues": [
-      "There is no `package.json`. We need this file to gather information about the module."
+      "There is no `package.json`. We need this file to gather information about the module for the website."
     ]
   },
   {
@@ -3211,7 +3211,7 @@
     "maintainerURL": "https://github.com/EbenKouao",
     "description": "This module allows you to access profiles using face recognition. This works on the back of OpenCV face recognition module. Program this script to control applicances e.g. Smart Plugs, or lights based on an individual's face profile being recognized.",
     "issues": [
-      "There is no `package.json`. We need this file to gather information about the module."
+      "There is no `package.json`. We need this file to gather information about the module for the website."
     ]
   },
   {
@@ -3266,7 +3266,7 @@
     "maintainerURL": "https://github.com/alanshen111",
     "description": "Displays some ✨interesting✨ facts! Makes your mirror look like an RPG loading screen. Example screenshot included.",
     "issues": [
-      "There is no `package.json`. We need this file to gather information about the module."
+      "There is no `package.json`. We need this file to gather information about the module for the website."
     ]
   },
   {
@@ -3290,7 +3290,7 @@
     "maintainerURL": "",
     "description": "Can be used for adding notes using fast and easy web interface.",
     "issues": [
-      "There is no `package.json`. We need this file to gather information about the module."
+      "There is no `package.json`. We need this file to gather information about the module for the website."
     ]
   },
   {
@@ -3301,7 +3301,7 @@
     "maintainerURL": "",
     "description": "'Likes' counter of Facebook page.",
     "issues": [
-      "There is no `package.json`. We need this file to gather information about the module."
+      "There is no `package.json`. We need this file to gather information about the module for the website."
     ]
   },
   {
@@ -3329,7 +3329,7 @@
     "maintainerURL": "",
     "description": "Multi purpose module to inject code and mess around with your mirror without developing a complete new module.",
     "issues": [
-      "There is no `package.json`. We need this file to gather information about the module."
+      "There is no `package.json`. We need this file to gather information about the module for the website."
     ]
   },
   {
@@ -3340,7 +3340,7 @@
     "maintainerURL": "",
     "description": "Wake up, $USER... A module giving you the cyberpunk feeling in the morning that you deserve. The Matrix has you...",
     "issues": [
-      "There is no `package.json`. We need this file to gather information about the module."
+      "There is no `package.json`. We need this file to gather information about the module for the website."
     ]
   },
   {
@@ -3351,7 +3351,7 @@
     "maintainerURL": "",
     "description": "Display Evan Roth's artwork \"Red Lines\" (2018) and participate in it's p2p ring. If you wonder what it is or why it's important, head to <a target=\"_blank\" href=\"https://www.redlines.network\">www.redlines.network</a> or check out installations and talks on <a target=\"_blank\" href=\"https://www.youtube.com/results?search_query=evan+roth+red+lines\">youtube</a>.",
     "issues": [
-      "There is no `package.json`. We need this file to gather information about the module."
+      "There is no `package.json`. We need this file to gather information about the module for the website."
     ]
   },
   {
@@ -3420,7 +3420,7 @@
     "maintainerURL": "",
     "description": "Display random gifs by topic from <a target=\"_blank\" href=\"https://tenor.com\">tenor</a>. API key required.",
     "issues": [
-      "There is no `package.json`. We need this file to gather information about the module."
+      "There is no `package.json`. We need this file to gather information about the module for the website."
     ]
   },
   {
@@ -3431,7 +3431,7 @@
     "maintainerURL": "",
     "description": "Show latest, random or your favourite <a target=\"_blank\" href=\"https://xkcd.com\">XKCD</a> comic. Navigate by events and read on where you left yesterday.",
     "issues": [
-      "There is no `package.json`. We need this file to gather information about the module."
+      "There is no `package.json`. We need this file to gather information about the module for the website."
     ]
   },
   {
@@ -3474,7 +3474,7 @@
     "maintainerURL": "https://github.com/nigel-daniels",
     "description": "Shows a fish every day, fish is good for you :)",
     "issues": [
-      "There is no `package.json`. We need this file to gather information about the module."
+      "There is no `package.json`. We need this file to gather information about the module for the website."
     ]
   },
   {
@@ -3485,7 +3485,7 @@
     "maintainerURL": "",
     "description": "Display your Fitbit statistics.",
     "issues": [
-      "There is no `package.json`. We need this file to gather information about the module."
+      "There is no `package.json`. We need this file to gather information about the module for the website."
     ]
   },
   {
@@ -3496,7 +3496,7 @@
     "maintainerURL": "https://github.com/ItsMeBrille",
     "description": "A module to raise an image of a flag according to national flag rules. (Norwegian rules) Fetches sunrise and sunset times using <a target=\"_blank\" href=\"https://steder-api.no\">Steder-API</a>.",
     "issues": [
-      "There is no `package.json`. We need this file to gather information about the module."
+      "There is no `package.json`. We need this file to gather information about the module for the website."
     ]
   },
   {
@@ -3631,7 +3631,7 @@
     "maintainerURL": "",
     "description": "A classic flip clock that is powered by the awesome <a target=\"_blank\" href=\"https://pqina.nl/flip\">flip plugin</a>.",
     "issues": [
-      "There is no `package.json`. We need this file to gather information about the module."
+      "There is no `package.json`. We need this file to gather information about the module for the website."
     ]
   },
   {
@@ -3642,7 +3642,7 @@
     "maintainerURL": "",
     "description": "Displays tide table for Norway.",
     "issues": [
-      "There is no `package.json`. We need this file to gather information about the module."
+      "There is no `package.json`. We need this file to gather information about the module for the website."
     ]
   },
   {
@@ -3653,7 +3653,7 @@
     "maintainerURL": "",
     "description": "Displays tide graph for Norway.",
     "issues": [
-      "There is no `package.json`. We need this file to gather information about the module."
+      "There is no `package.json`. We need this file to gather information about the module for the website."
     ]
   },
   {
@@ -3678,7 +3678,7 @@
     "maintainerURL": "",
     "description": "Display weather based on forecast API.",
     "issues": [
-      "There is no `package.json`. We need this file to gather information about the module."
+      "There is no `package.json`. We need this file to gather information about the module for the website."
     ]
   },
   {
@@ -3689,7 +3689,7 @@
     "maintainerURL": "",
     "description": "Fork of <a target=\"_blank\" href=\"https://github.com/dmcinnes/MMM-forecast-io\">MMM-forecast-io</a> Display weather based on forecast API. Uses the <code>INDOOR_TEMPERATURE</code> notification to display the indoor temperature emitted by some modules.",
     "issues": [
-      "There is no `package.json`. We need this file to gather information about the module."
+      "There is no `package.json`. We need this file to gather information about the module for the website."
     ]
   },
   {
@@ -3729,7 +3729,7 @@
     "maintainerURL": "",
     "description": "Display Fortnite Stats.",
     "issues": [
-      "There is no `package.json`. We need this file to gather information about the module."
+      "There is no `package.json`. We need this file to gather information about the module for the website."
     ]
   },
   {
@@ -3754,7 +3754,7 @@
     "maintainerURL": "",
     "description": "Controlling an RGB-LED strip mounted onto or embedded into a smart mirror's frame. It provides features for static background lighting, highly customizable effects on notifications and party lighting.",
     "issues": [
-      "There is no `package.json`. We need this file to gather information about the module."
+      "There is no `package.json`. We need this file to gather information about the module for the website."
     ]
   },
   {
@@ -3824,7 +3824,7 @@
     "maintainerURL": "",
     "description": "Fronius Solar Module. Display data from a Fronius Solar Inverter.",
     "issues": [
-      "There is no `package.json`. We need this file to gather information about the module."
+      "There is no `package.json`. We need this file to gather information about the module for the website."
     ]
   },
   {
@@ -3940,7 +3940,7 @@
     "maintainerURL": "",
     "description": "Use Gamepad to send event of exec a command.",
     "issues": [
-      "There is no `package.json`. We need this file to gather information about the module."
+      "There is no `package.json`. We need this file to gather information about the module for the website."
     ]
   },
   {
@@ -4007,7 +4007,7 @@
     "maintainerURL": "",
     "description": "Displays a Word Clock written in German.",
     "issues": [
-      "There is no `package.json`. We need this file to gather information about the module."
+      "There is no `package.json`. We need this file to gather information about the module for the website."
     ]
   },
   {
@@ -4050,7 +4050,7 @@
     "maintainerURL": "",
     "description": "Displays GitHub repository information.",
     "issues": [
-      "There is no `package.json`. We need this file to gather information about the module."
+      "There is no `package.json`. We need this file to gather information about the module for the website."
     ]
   },
   {
@@ -4088,7 +4088,7 @@
     "maintainerURL": "",
     "description": "Show specific module(s) and hide others for a some time by notification or command.",
     "issues": [
-      "There is no `package.json`. We need this file to gather information about the module."
+      "There is no `package.json`. We need this file to gather information about the module for the website."
     ]
   },
   {
@@ -4128,7 +4128,7 @@
     "maintainerURL": "",
     "description": "Displays the two best routes from an origin to a destination, using Google Directions API.",
     "issues": [
-      "There is no `package.json`. We need this file to gather information about the module."
+      "There is no `package.json`. We need this file to gather information about the module for the website."
     ]
   },
   {
@@ -4257,7 +4257,7 @@
     "maintainerURL": "",
     "description": "Displays a google map of an origin and destination.",
     "issues": [
-      "There is no `package.json`. We need this file to gather information about the module."
+      "There is no `package.json`. We need this file to gather information about the module for the website."
     ]
   },
   {
@@ -4310,7 +4310,7 @@
     "maintainerURL": "",
     "description": "Display Google Sheets data. Highly customizable.",
     "issues": [
-      "There is no `package.json`. We need this file to gather information about the module."
+      "There is no `package.json`. We need this file to gather information about the module for the website."
     ]
   },
   {
@@ -4334,7 +4334,7 @@
     "maintainerURL": "",
     "description": "Display Google Tasks.",
     "issues": [
-      "There is no `package.json`. We need this file to gather information about the module."
+      "There is no `package.json`. We need this file to gather information about the module for the website."
     ]
   },
   {
@@ -4345,7 +4345,7 @@
     "maintainerURL": "",
     "description": "Updated Google Tasks display module.",
     "issues": [
-      "There is no `package.json`. We need this file to gather information about the module."
+      "There is no `package.json`. We need this file to gather information about the module for the website."
     ]
   },
   {
@@ -4426,7 +4426,7 @@
     "maintainerURL": "",
     "description": "Display weather from a self-updated GPS Location.",
     "issues": [
-      "There is no `package.json`. We need this file to gather information about the module."
+      "There is no `package.json`. We need this file to gather information about the module for the website."
     ],
     "outdated": "Abandoned. Repo has been archived at 2022-02-27."
   },
@@ -4438,7 +4438,7 @@
     "maintainerURL": "",
     "description": "Display a diagram generated by Grafana.",
     "issues": [
-      "There is no `package.json`. We need this file to gather information about the module."
+      "There is no `package.json`. We need this file to gather information about the module for the website."
     ]
   },
   {
@@ -4535,7 +4535,7 @@
     "maintainerURL": "",
     "description": "Learn Chinese Hanzi characters directly on your MagicMirror². This module rotates between a configurable number of characters.",
     "issues": [
-      "There is no `package.json`. We need this file to gather information about the module."
+      "There is no `package.json`. We need this file to gather information about the module for the website."
     ]
   },
   {
@@ -4573,7 +4573,7 @@
     "maintainerURL": "",
     "description": "Display the temperature and humidity of the I2C-based HDC1080-sensor.",
     "issues": [
-      "There is no `package.json`. We need this file to gather information about the module."
+      "There is no `package.json`. We need this file to gather information about the module for the website."
     ]
   },
   {
@@ -4599,7 +4599,7 @@
     "maintainerURL": "",
     "description": "Voice-Control module based on Google Speech Recognizer (annyang). Send a notification to all other modules on voice detection.",
     "issues": [
-      "There is no `package.json`. We need this file to gather information about the module."
+      "There is no `package.json`. We need this file to gather information about the module for the website."
     ]
   },
   {
@@ -4643,7 +4643,7 @@
     "maintainerURL": "https://github.com/Snille",
     "description": "Module to hide everything on screen. With a lot of features and customizations.",
     "issues": [
-      "There is no `package.json`. We need this file to gather information about the module."
+      "There is no `package.json`. We need this file to gather information about the module for the website."
     ]
   },
   {
@@ -4667,7 +4667,7 @@
     "maintainerURL": "",
     "description": "Implements H.I.V.E AI into your mirror.",
     "issues": [
-      "There is no `package.json`. We need this file to gather information about the module."
+      "There is no `package.json`. We need this file to gather information about the module for the website."
     ]
   },
   {
@@ -4678,7 +4678,7 @@
     "maintainerURL": "",
     "description": "Displays Hive (British Gas) inside / outside temperature.",
     "issues": [
-      "There is no `package.json`. We need this file to gather information about the module."
+      "There is no `package.json`. We need this file to gather information about the module for the website."
     ]
   },
   {
@@ -4719,7 +4719,7 @@
     "maintainerURL": "",
     "description": "Modified from cowboydude's MMM-Xmas for different holidays, events, et.al.",
     "issues": [
-      "There is no `package.json`. We need this file to gather information about the module."
+      "There is no `package.json`. We need this file to gather information about the module for the website."
     ]
   },
   {
@@ -4743,7 +4743,7 @@
     "maintainerURL": "https://github.com/zuo000",
     "description": "HomeAssistant frontend module using HA REST API, including Light, Switch, Sensor.",
     "issues": [
-      "There is no `package.json`. We need this file to gather information about the module."
+      "There is no `package.json`. We need this file to gather information about the module for the website."
     ]
   },
   {
@@ -4754,7 +4754,7 @@
     "maintainerURL": "",
     "description": "Display information from Home Assistant using the home assistant REST API.",
     "issues": [
-      "There is no `package.json`. We need this file to gather information about the module."
+      "There is no `package.json`. We need this file to gather information about the module for the website."
     ]
   },
   {
@@ -4809,7 +4809,7 @@
     "maintainerURL": "https://github.com/john3300",
     "description": "Displays notifications sent with a simple HTTP POST request.",
     "issues": [
-      "There is no `package.json`. We need this file to gather information about the module."
+      "There is no `package.json`. We need this file to gather information about the module for the website."
     ]
   },
   {
@@ -4862,7 +4862,7 @@
     "maintainerURL": "https://github.com/spitzlbergerj",
     "description": "Shows values from HomeMatic smart home radiator and wall thermostats.",
     "issues": [
-      "There is no `package.json`. We need this file to gather information about the module."
+      "There is no `package.json`. We need this file to gather information about the module for the website."
     ]
   },
   {
@@ -4900,7 +4900,7 @@
     "maintainerURL": "https://github.com/maan75",
     "description": "Module to display upcoming pickup dates for garbage in the Norwegian municipalities of Harstad, Narvik, Evenes, Gratangen, Ibestad, Kvæfjord, Lavangen and Tjeldsund.",
     "issues": [
-      "There is no `package.json`. We need this file to gather information about the module."
+      "There is no `package.json`. We need this file to gather information about the module for the website."
     ]
   },
   {
@@ -4911,7 +4911,7 @@
     "maintainerURL": "",
     "description": "Module to include arbitrary HTML snippets in an iframe (script tags work).",
     "issues": [
-      "There is no `package.json`. We need this file to gather information about the module."
+      "There is no `package.json`. We need this file to gather information about the module for the website."
     ]
   },
   {
@@ -4922,7 +4922,7 @@
     "maintainerURL": "",
     "description": "Display XML data from a HTTP response.",
     "issues": [
-      "There is no `package.json`. We need this file to gather information about the module."
+      "There is no `package.json`. We need this file to gather information about the module for the website."
     ]
   },
   {
@@ -4933,7 +4933,7 @@
     "maintainerURL": "",
     "description": "Display the status of groups or lights in your Philips Hue setup.",
     "issues": [
-      "There is no `package.json`. We need this file to gather information about the module."
+      "There is no `package.json`. We need this file to gather information about the module for the website."
     ]
   },
   {
@@ -4944,7 +4944,7 @@
     "maintainerURL": "https://github.com/gueguet",
     "description": "This module allows you to control your Philips Hue lights with simple buttons.",
     "issues": [
-      "There is no `package.json`. We need this file to gather information about the module."
+      "There is no `package.json`. We need this file to gather information about the module for the website."
     ]
   },
   {
@@ -4968,7 +4968,7 @@
     "maintainerURL": "https://github.com/harv-singh",
     "description": "This module loads the latest Hukamnama from Sri Harmandir Sahib powered by the GurbaniNow API: <a target=\"_blank\" href=\"https://github.com/GurbaniNow/api\">https://github.com/GurbaniNow/api</a>.",
     "issues": [
-      "There is no `package.json`. We need this file to gather information about the module."
+      "There is no `package.json`. We need this file to gather information about the module for the website."
     ]
   },
   {
@@ -4979,7 +4979,7 @@
     "maintainerURL": "",
     "description": "A different kind of calendar.",
     "issues": [
-      "There is no `package.json`. We need this file to gather information about the module."
+      "There is no `package.json`. We need this file to gather information about the module for the website."
     ]
   },
   {
@@ -4990,7 +4990,7 @@
     "maintainerURL": "",
     "description": "A different kind of clock.",
     "issues": [
-      "There is no `package.json`. We need this file to gather information about the module."
+      "There is no `package.json`. We need this file to gather information about the module for the website."
     ]
   },
   {
@@ -5015,7 +5015,7 @@
     "maintainerURL": "https://github.com/PierreGode",
     "description": "MMM-ICA is a module for connecting to the Swedish grocery store ICA API and get information.",
     "issues": [
-      "There is no `package.json`. We need this file to gather information about the module."
+      "There is no `package.json`. We need this file to gather information about the module for the website."
     ]
   },
   {
@@ -5053,7 +5053,7 @@
     "maintainerURL": "",
     "description": "Show an icon according to a MagicMirror² notification.",
     "issues": [
-      "There is no `package.json`. We need this file to gather information about the module."
+      "There is no `package.json`. We need this file to gather information about the module for the website."
     ]
   },
   {
@@ -5148,7 +5148,7 @@
     "maintainerURL": "",
     "description": "Module to add an iFrame of a published Google Slides Presentation.",
     "issues": [
-      "There is no `package.json`. We need this file to gather information about the module."
+      "There is no `package.json`. We need this file to gather information about the module for the website."
     ]
   },
   {
@@ -5174,7 +5174,7 @@
     "maintainerURL": "",
     "description": "Visualizes your places where you have been traveled..or intend to go.",
     "issues": [
-      "There is no `package.json`. We need this file to gather information about the module."
+      "There is no `package.json`. We need this file to gather information about the module for the website."
     ]
   },
   {
@@ -5216,7 +5216,7 @@
     "maintainerURL": "",
     "description": "Displays images one-at-a-time from local folders.",
     "issues": [
-      "There is no `package.json`. We need this file to gather information about the module."
+      "There is no `package.json`. We need this file to gather information about the module for the website."
     ]
   },
   {
@@ -5272,7 +5272,7 @@
     "maintainerURL": "",
     "description": "Displays AI generated inspirational images from Inspirobot.me.",
     "issues": [
-      "There is no `package.json`. We need this file to gather information about the module."
+      "There is no `package.json`. We need this file to gather information about the module for the website."
     ]
   },
   {
@@ -5342,7 +5342,7 @@
     "maintainerURL": "",
     "description": "Displays energy usage history for your Octopus Energy account. For use if you are on the Intelligent Octopus tarrif. Based on MMM-OctoMon.",
     "issues": [
-      "There is no `package.json`. We need this file to gather information about the module."
+      "There is no `package.json`. We need this file to gather information about the module for the website."
     ]
   },
   {
@@ -5416,7 +5416,7 @@
     "maintainerURL": "",
     "description": "Display ipcam feed.",
     "issues": [
-      "There is no `package.json`. We need this file to gather information about the module."
+      "There is no `package.json`. We need this file to gather information about the module for the website."
     ]
   },
   {
@@ -5427,7 +5427,7 @@
     "maintainerURL": "",
     "description": "Displays Islamic Prayer Times for the place you want.",
     "issues": [
-      "There is no `package.json`. We need this file to gather information about the module."
+      "There is no `package.json`. We need this file to gather information about the module for the website."
     ]
   },
   {
@@ -5438,7 +5438,7 @@
     "maintainerURL": "https://github.com/PavlenkoM",
     "description": "Air quality widget based on <a target=\"_blank\" href=\"https://www.iqair.com\">IQAir API</a>.",
     "issues": [
-      "There is no `package.json`. We need this file to gather information about the module."
+      "There is no `package.json`. We need this file to gather information about the module for the website."
     ]
   },
   {
@@ -5462,7 +5462,7 @@
     "maintainerURL": "",
     "description": "Know when the International Space Station is visible from your location. Can be seen with the naked eye.",
     "issues": [
-      "There is no `package.json`. We need this file to gather information about the module."
+      "There is no `package.json`. We need this file to gather information about the module for the website."
     ]
   },
   {
@@ -5484,7 +5484,7 @@
     "maintainerURL": "",
     "description": "Displays live video from the International Space Station.",
     "issues": [
-      "There is no `package.json`. We need this file to gather information about the module."
+      "There is no `package.json`. We need this file to gather information about the module for the website."
     ]
   },
   {
@@ -5508,7 +5508,7 @@
     "maintainerURL": "https://github.com/Xanthus1",
     "description": "Displays recently featured and highly rated free games from <a target=\"_blank\" href=\"https://itch.io\">https://itch.io</a>.",
     "issues": [
-      "There is no `package.json`. We need this file to gather information about the module."
+      "There is no `package.json`. We need this file to gather information about the module for the website."
     ]
   },
   {
@@ -5532,7 +5532,7 @@
     "maintainerURL": "",
     "description": "Display values from Home automation software <a target=\"_blank\" href=\"https://www.jeedom.com\">JEEDOM</a>.",
     "issues": [
-      "There is no `package.json`. We need this file to gather information about the module."
+      "There is no `package.json`. We need this file to gather information about the module for the website."
     ]
   },
   {
@@ -5543,7 +5543,7 @@
     "maintainerURL": "",
     "description": "Discover a treasure trove of over 156,800 meticulously crafted clues and answers from the show, ensuring endless entertainment and excitement.",
     "issues": [
-      "There is no `package.json`. We need this file to gather information about the module."
+      "There is no `package.json`. We need this file to gather information about the module for the website."
     ]
   },
   {
@@ -5554,7 +5554,7 @@
     "maintainerURL": "",
     "description": "This module displays the current Jewish date.",
     "issues": [
-      "There is no `package.json`. We need this file to gather information about the module."
+      "There is no `package.json`. We need this file to gather information about the module for the website."
     ]
   },
   {
@@ -5579,7 +5579,7 @@
     "maintainerURL": "https://github.com/nomis6432",
     "description": "Jitsi meet IFrame integration.",
     "issues": [
-      "There is no `package.json`. We need this file to gather information about the module."
+      "There is no `package.json`. We need this file to gather information about the module for the website."
     ]
   },
   {
@@ -5604,7 +5604,7 @@
     "maintainerURL": "https://github.com/Kreshnik",
     "description": "Module that shows jokes from the JokeAPI.",
     "issues": [
-      "There is no `package.json`. We need this file to gather information about the module."
+      "There is no `package.json`. We need this file to gather information about the module for the website."
     ]
   },
   {
@@ -5643,7 +5643,7 @@
     "maintainerURL": "",
     "description": "Display data from any JSON source.",
     "issues": [
-      "There is no `package.json`. We need this file to gather information about the module."
+      "There is no `package.json`. We need this file to gather information about the module for the website."
     ],
     "outdated": "Deprecated. Repo has been archived at 2020-08-03."
   },
@@ -5655,7 +5655,7 @@
     "maintainerURL": "",
     "description": "Creates a SVG bar chart based on a list gathered from a JSON request.",
     "issues": [
-      "There is no `package.json`. We need this file to gather information about the module."
+      "There is no `package.json`. We need this file to gather information about the module for the website."
     ]
   },
   {
@@ -5726,7 +5726,7 @@
     "maintainerURL": "",
     "description": "Control MM from Kalliope assistant.",
     "issues": [
-      "There is no `package.json`. We need this file to gather information about the module."
+      "There is no `package.json`. We need this file to gather information about the module for the website."
     ]
   },
   {
@@ -5766,7 +5766,7 @@
     "maintainerURL": "",
     "description": "Use the keyboard to open and close a popupwindow in the MagicMirror². Like lets say using the \"q\" key will open a popupwindow on MagicMirror's webpage. Using the iFrame to display web content.",
     "issues": [
-      "There is no `package.json`. We need this file to gather information about the module."
+      "There is no `package.json`. We need this file to gather information about the module for the website."
     ]
   },
   {
@@ -5777,7 +5777,7 @@
     "maintainerURL": "https://github.com/ItsMeBrille",
     "description": "A module for sending notifications to other modules based on keys pressed.",
     "issues": [
-      "There is no `package.json`. We need this file to gather information about the module."
+      "There is no `package.json`. We need this file to gather information about the module for the website."
     ]
   },
   {
@@ -5805,7 +5805,7 @@
     "maintainerURL": "",
     "description": "Can show upcoming events (concerts, theater plays, exhibitions and etc.), that collected from <a target=\"_blank\" href=\"https://kudago.com\">KudaGo</a>.",
     "issues": [
-      "There is no `package.json`. We need this file to gather information about the module."
+      "There is no `package.json`. We need this file to gather information about the module for the website."
     ]
   },
   {
@@ -5864,7 +5864,7 @@
     "maintainerURL": "https://github.com/RineshRamadhin",
     "description": "Displays the Last.fm scrobble currently playing. Supports Spotify, YouTube, Tidal, SoundCloud, MixCloud and <a target=\"_blank\" href=\"https://www.last.fm/about/trackmymusic\">many others</a>.",
     "issues": [
-      "There is no `package.json`. We need this file to gather information about the module."
+      "There is no `package.json`. We need this file to gather information about the module for the website."
     ]
   },
   {
@@ -5875,7 +5875,7 @@
     "maintainerURL": "",
     "description": "Ever wonder just how often mankind is launching things into space? Once a year? Twice? WRONG! On a daily basis. Often, several times a day! Don’t believe it? Neither did I.",
     "issues": [
-      "There is no `package.json`. We need this file to gather information about the module."
+      "There is no `package.json`. We need this file to gather information about the module for the website."
     ]
   },
   {
@@ -5915,7 +5915,7 @@
     "maintainerURL": "",
     "description": "Learn a (new foreign language) word every time you look in the mirror.",
     "issues": [
-      "There is no `package.json`. We need this file to gather information about the module."
+      "There is no `package.json`. We need this file to gather information about the module for the website."
     ]
   },
   {
@@ -5954,7 +5954,7 @@
     "maintainerURL": "",
     "description": "Display recent Letterbox reviews from a list of users.",
     "issues": [
-      "There is no `package.json`. We need this file to gather information about the module."
+      "There is no `package.json`. We need this file to gather information about the module for the website."
     ]
   },
   {
@@ -5979,7 +5979,7 @@
     "maintainerURL": "",
     "description": "Live International Currency Exchange.",
     "issues": [
-      "There is no `package.json`. We need this file to gather information about the module."
+      "There is no `package.json`. We need this file to gather information about the module for the website."
     ]
   },
   {
@@ -5990,7 +5990,7 @@
     "maintainerURL": "",
     "description": "The lichess.org daily puzzle.",
     "issues": [
-      "There is no `package.json`. We need this file to gather information about the module."
+      "There is no `package.json`. We need this file to gather information about the module for the website."
     ]
   },
   {
@@ -6045,7 +6045,7 @@
     "maintainerURL": "https://github.com/qunu",
     "description": "Display the expected power cut periods throughout the day.",
     "issues": [
-      "There is no `package.json`. We need this file to gather information about the module."
+      "There is no `package.json`. We need this file to gather information about the module for the website."
     ]
   },
   {
@@ -6067,7 +6067,7 @@
     "maintainerURL": "",
     "description": "Show the temperature and/or humidity from a DHT11, DHT22, or AM2302 sensor.",
     "issues": [
-      "There is no `package.json`. We need this file to gather information about the module."
+      "There is no `package.json`. We need this file to gather information about the module for the website."
     ]
   },
   {
@@ -6078,7 +6078,7 @@
     "maintainerURL": "",
     "description": "Display the next public transport connections for a certain route.",
     "issues": [
-      "There is no `package.json`. We need this file to gather information about the module."
+      "There is no `package.json`. We need this file to gather information about the module for the website."
     ]
   },
   {
@@ -6089,7 +6089,7 @@
     "maintainerURL": "",
     "description": "A lightweight local video player.",
     "issues": [
-      "There is no `package.json`. We need this file to gather information about the module."
+      "There is no `package.json`. We need this file to gather information about the module for the website."
     ]
   },
   {
@@ -6100,7 +6100,7 @@
     "maintainerURL": "",
     "description": "Deliver the logs from Frontend to Backend and more features.",
     "issues": [
-      "There is no `package.json`. We need this file to gather information about the module."
+      "There is no `package.json`. We need this file to gather information about the module for the website."
     ]
   },
   {
@@ -6127,7 +6127,7 @@
     "maintainerURL": "",
     "description": "Show the temperature and humidity from a DHT22 sensor. This module uses the loldht_22 library and can work inside a docker container, i.e., when your Magicmirror² is inside a docker. Lot of settings can be made for how the temperature/humidity data are shown. Change colors, icons, layout, as well as, define threshold values when icons/colors should change according to the temperature.",
     "issues": [
-      "There is no `package.json`. We need this file to gather information about the module."
+      "There is no `package.json`. We need this file to gather information about the module for the website."
     ]
   },
   {
@@ -6194,7 +6194,7 @@
     "maintainerURL": "https://github.com/tbouron",
     "description": "Display live timetables for specific bus stops of Lothian buses network.",
     "issues": [
-      "There is no `package.json`. We need this file to gather information about the module."
+      "There is no `package.json`. We need this file to gather information about the module for the website."
     ]
   },
   {
@@ -6205,7 +6205,7 @@
     "maintainerURL": "",
     "description": "Display truly random lottery numbers, coinciding with many International lotteries.",
     "issues": [
-      "There is no `package.json`. We need this file to gather information about the module."
+      "There is no `package.json`. We need this file to gather information about the module for the website."
     ]
   },
   {
@@ -6229,7 +6229,7 @@
     "maintainerURL": "https://github.com/pixxelfriend",
     "description": "Displays data (particulate matter PM2.5/PM10, temperature, pressure) from air quality sensors, connected to <a target=\"_blank\" href=\"https://sensor.community\">sensor.community</a> or local wifi.",
     "issues": [
-      "There is no `package.json`. We need this file to gather information about the module."
+      "There is no `package.json`. We need this file to gather information about the module for the website."
     ]
   },
   {
@@ -6270,7 +6270,7 @@
     "maintainerURL": "",
     "description": "Luxembourg public transport departures in real time.",
     "issues": [
-      "There is no `package.json`. We need this file to gather information about the module."
+      "There is no `package.json`. We need this file to gather information about the module for the website."
     ]
   },
   {
@@ -6281,7 +6281,7 @@
     "maintainerURL": "",
     "description": "Estimated arrival times for lyft.",
     "issues": [
-      "There is no `package.json`. We need this file to gather information about the module."
+      "There is no `package.json`. We need this file to gather information about the module for the website."
     ]
   },
   {
@@ -6336,7 +6336,7 @@
     "maintainerURL": "",
     "description": "Display the medals for the summer olympics 2016.",
     "issues": [
-      "There is no `package.json`. We need this file to gather information about the module."
+      "There is no `package.json`. We need this file to gather information about the module for the website."
     ],
     "outdated": "Outdated: Only works for Rio 2016 Summer Olympics."
   },
@@ -6348,7 +6348,7 @@
     "maintainerURL": "",
     "description": "Display the mirrors connection status.",
     "issues": [
-      "There is no `package.json`. We need this file to gather information about the module."
+      "There is no `package.json`. We need this file to gather information about the module for the website."
     ]
   },
   {
@@ -6373,7 +6373,7 @@
     "maintainerURL": "",
     "description": "Prevent screen burn-in on your MagicMirror².",
     "issues": [
-      "There is no `package.json`. We need this file to gather information about the module."
+      "There is no `package.json`. We need this file to gather information about the module for the website."
     ]
   },
   {
@@ -6384,7 +6384,7 @@
     "maintainerURL": "",
     "description": "Get your festive on. Put snow in the background for winter or anti burn-in purposes. Your family won't know the difference.",
     "issues": [
-      "There is no `package.json`. We need this file to gather information about the module."
+      "There is no `package.json`. We need this file to gather information about the module for the website."
     ],
     "outdated": "Deprecated. The successor is MMM-Snow."
   },
@@ -6467,7 +6467,7 @@
     "maintainerURL": "",
     "description": "Mars Exploration Rover missions.",
     "issues": [
-      "There is no `package.json`. We need this file to gather information about the module."
+      "There is no `package.json`. We need this file to gather information about the module for the website."
     ]
   },
   {
@@ -6496,7 +6496,7 @@
     "maintainerURL": "",
     "description": "Chinese online godfather NM$L Sun Xiaochuan.",
     "issues": [
-      "There is no `package.json`. We need this file to gather information about the module."
+      "There is no `package.json`. We need this file to gather information about the module for the website."
     ]
   },
   {
@@ -6521,7 +6521,7 @@
     "maintainerURL": "",
     "description": "Displays the status of you MAX! radiator thermostats via the MAX! cube gateway.",
     "issues": [
-      "There is no `package.json`. We need this file to gather information about the module."
+      "There is no `package.json`. We need this file to gather information about the module for the website."
     ]
   },
   {
@@ -6532,7 +6532,7 @@
     "maintainerURL": "",
     "description": "Displays information about a Massachusetts Bay Transportation Authority (MBTA) station, including upcoming arrivals and alerts and warnings.",
     "issues": [
-      "There is no `package.json`. We need this file to gather information about the module."
+      "There is no `package.json`. We need this file to gather information about the module for the website."
     ]
   },
   {
@@ -6543,7 +6543,7 @@
     "maintainerURL": "https://github.com/AndreaGrandieri",
     "description": "Write Markdown. Render it on the MagicMirror².",
     "issues": [
-      "There is no `package.json`. We need this file to gather information about the module."
+      "There is no `package.json`. We need this file to gather information about the module for the website."
     ]
   },
   {
@@ -6554,7 +6554,7 @@
     "maintainerURL": "",
     "description": "Add one to many memo notes (\"post-it look &amp; feel\"). Content is manageable through HTTP get requests.",
     "issues": [
-      "There is no `package.json`. We need this file to gather information about the module."
+      "There is no `package.json`. We need this file to gather information about the module for the website."
     ]
   },
   {
@@ -6565,7 +6565,7 @@
     "maintainerURL": "",
     "description": "Display Slovak name of day.",
     "issues": [
-      "There is no `package.json`. We need this file to gather information about the module."
+      "There is no `package.json`. We need this file to gather information about the module for the website."
     ]
   },
   {
@@ -6592,7 +6592,7 @@
     "maintainerURL": "",
     "description": "Module to display daily menu 🍔🥕 information from the canteens of the Studierendenwerk München Oberbayern as well as some other canteens.",
     "issues": [
-      "There is no `package.json`. We need this file to gather information about the module."
+      "There is no `package.json`. We need this file to gather information about the module for the website."
     ]
   },
   {
@@ -6617,7 +6617,7 @@
     "maintainerURL": "",
     "description": "Display current weather based on the Meteoblue.com API.",
     "issues": [
-      "There is no `package.json`. We need this file to gather information about the module."
+      "There is no `package.json`. We need this file to gather information about the module for the website."
     ]
   },
   {
@@ -6643,7 +6643,7 @@
     "maintainerURL": "",
     "description": "Displays the number of available bikes on the selected stations of Rosario, Santa Fe, Argentina public bike system (aka MOVI).",
     "issues": [
-      "There is no `package.json`. We need this file to gather information about the module."
+      "There is no `package.json`. We need this file to gather information about the module for the website."
     ]
   },
   {
@@ -6669,7 +6669,7 @@
     "maintainerURL": "",
     "description": "Displays the status of you Miele@Home Devices.",
     "issues": [
-      "There is no `package.json`. We need this file to gather information about the module."
+      "There is no `package.json`. We need this file to gather information about the module for the website."
     ]
   },
   {
@@ -6694,7 +6694,7 @@
     "maintainerURL": "",
     "description": "Show opening hours for mobile recycling stations in Oslo, Norway. API free, so if it looks intresting, check to see if you can use it for your city too!",
     "issues": [
-      "There is no `package.json`. We need this file to gather information about the module."
+      "There is no `package.json`. We need this file to gather information about the module for the website."
     ]
   },
   {
@@ -6725,7 +6725,7 @@
     "maintainerURL": "https://github.com/muilpp",
     "description": "Shows concerts around you of the bands you listen to the most.",
     "issues": [
-      "There is no `package.json`. We need this file to gather information about the module."
+      "There is no `package.json`. We need this file to gather information about the module for the website."
     ]
   },
   {
@@ -6736,7 +6736,7 @@
     "maintainerURL": "",
     "description": "Display departures for public transport in Helsinki region - Finland.",
     "issues": [
-      "There is no `package.json`. We need this file to gather information about the module."
+      "There is no `package.json`. We need this file to gather information about the module for the website."
     ]
   },
   {
@@ -6747,7 +6747,7 @@
     "maintainerURL": "",
     "description": "Simple player to play your music.",
     "issues": [
-      "There is no `package.json`. We need this file to gather information about the module."
+      "There is no `package.json`. We need this file to gather information about the module for the website."
     ]
   },
   {
@@ -6758,7 +6758,7 @@
     "maintainerURL": "https://github.com/Klettner",
     "description": "Android 📱 and Windows-desktop 💻 app to control your MagicMirror² remotely. (Shutdown, reboot, toggle monitor on/off, change brightness of monitor, custom-commands, etc.).",
     "issues": [
-      "There is no `package.json`. We need this file to gather information about the module."
+      "There is no `package.json`. We need this file to gather information about the module for the website."
     ]
   },
   {
@@ -6769,7 +6769,7 @@
     "maintainerURL": "",
     "description": "Display departures for public transport in Tampere region - Finland.",
     "issues": [
-      "There is no `package.json`. We need this file to gather information about the module."
+      "There is no `package.json`. We need this file to gather information about the module for the website."
     ]
   },
   {
@@ -6810,7 +6810,7 @@
     "maintainerURL": "",
     "description": "Fetches one recipe type per day from food2fork API and display as a small menu.",
     "issues": [
-      "There is no `package.json`. We need this file to gather information about the module."
+      "There is no `package.json`. We need this file to gather information about the module for the website."
     ],
     "outdated": "Deprecated. food2fork API isn't reachable anymore."
   },
@@ -6862,7 +6862,7 @@
     "maintainerURL": "",
     "description": "Show an image of the current moon phase.",
     "issues": [
-      "There is no `package.json`. We need this file to gather information about the module."
+      "There is no `package.json`. We need this file to gather information about the module for the website."
     ]
   },
   {
@@ -6873,7 +6873,7 @@
     "maintainerURL": "https://github.com/michael5r",
     "description": "Displays your <a target=\"_blank\" href=\"https://www.nest.com\">Nest</a> cameras on your MagicMirror² and gives you the option to show either live streams or constantly-updated snapshots.",
     "issues": [
-      "There is no `package.json`. We need this file to gather information about the module."
+      "There is no `package.json`. We need this file to gather information about the module for the website."
     ]
   },
   {
@@ -6913,7 +6913,7 @@
     "maintainerURL": "",
     "description": "Show lights and window states on a floorplan of an openhab server.",
     "issues": [
-      "There is no `package.json`. We need this file to gather information about the module."
+      "There is no `package.json`. We need this file to gather information about the module for the website."
     ]
   },
   {
@@ -6998,7 +6998,7 @@
     "maintainerURL": "",
     "description": "Display UAH currency from bank.gov.ua.",
     "issues": [
-      "There is no `package.json`. We need this file to gather information about the module."
+      "There is no `package.json`. We need this file to gather information about the module for the website."
     ]
   },
   {
@@ -7009,7 +7009,7 @@
     "maintainerURL": "",
     "description": "Display own events in default compliments module style.",
     "issues": [
-      "There is no `package.json`. We need this file to gather information about the module."
+      "There is no `package.json`. We need this file to gather information about the module for the website."
     ]
   },
   {
@@ -7040,7 +7040,7 @@
     "maintainerURL": "https://bitbucket.org/rsperezn",
     "description": "Displays the current and forecasted UV Index fo a given location given its longitude and latitude. It requires a free API token from <a target=\"_blank\" href=\"https://www.openuv.io/\">https://www.openuv.io/</a>.",
     "issues": [
-      "There is no `package.json`. We need this file to gather information about the module."
+      "There is no `package.json`. We need this file to gather information about the module for the website."
     ]
   },
   {
@@ -7063,7 +7063,7 @@
     "maintainerURL": "",
     "description": "Show the status of triggers from Zabbix via API calls.",
     "issues": [
-      "There is no `package.json`. We need this file to gather information about the module."
+      "There is no `package.json`. We need this file to gather information about the module for the website."
     ]
   },
   {
@@ -7074,7 +7074,7 @@
     "maintainerURL": "https://github.com/Bee-Mar",
     "description": "An unofficial MagicMirror² 3rd Party Package Manager. Automates searching, installation, removal, updating, and upgrading of MagicMirror² modules.",
     "issues": [
-      "There is no `package.json`. We need this file to gather information about the module."
+      "There is no `package.json`. We need this file to gather information about the module for the website."
     ]
   },
   {
@@ -7085,7 +7085,7 @@
     "maintainerURL": "",
     "description": "Companion module for MMPM to enable hiding/showing of MagicMirror² modules.",
     "issues": [
-      "There is no `package.json`. We need this file to gather information about the module."
+      "There is no `package.json`. We need this file to gather information about the module for the website."
     ]
   },
   {
@@ -7096,7 +7096,7 @@
     "maintainerURL": "https://github.com/Snille",
     "description": "Add touch buttons for showing/hiding other modules.",
     "issues": [
-      "There is no `package.json`. We need this file to gather information about the module."
+      "There is no `package.json`. We need this file to gather information about the module for the website."
     ]
   },
   {
@@ -7166,7 +7166,7 @@
     "maintainerURL": "",
     "description": "Displays moonrise, moonset, and an image of the moon using AstronomyAPI.",
     "issues": [
-      "There is no `package.json`. We need this file to gather information about the module."
+      "There is no `package.json`. We need this file to gather information about the module for the website."
     ]
   },
   {
@@ -7239,7 +7239,7 @@
     "maintainerURL": "",
     "description": "Camera based motion detector.",
     "issues": [
-      "There is no `package.json`. We need this file to gather information about the module."
+      "There is no `package.json`. We need this file to gather information about the module for the website."
     ],
     "outdated": "Abandoned. No reactions to issues since years. No installation instructions."
   },
@@ -7381,7 +7381,7 @@
     "maintainerURL": "",
     "description": "Displays current playing media on a remote machine with a MPRIS2 capable player.",
     "issues": [
-      "There is no `package.json`. We need this file to gather information about the module."
+      "There is no `package.json`. We need this file to gather information about the module for the website."
     ]
   },
   {
@@ -7490,7 +7490,7 @@
     "maintainerURL": "https://github.com/BKeyport",
     "description": "Display multiple mini-calendars at the same time (actively maintained).",
     "issues": [
-      "There is no `package.json`. We need this file to gather information about the module."
+      "There is no `package.json`. We need this file to gather information about the module for the website."
     ]
   },
   {
@@ -7501,7 +7501,7 @@
     "maintainerURL": "",
     "description": "Display users currently connected on the mumble server (murmur).",
     "issues": [
-      "There is no `package.json`. We need this file to gather information about the module."
+      "There is no `package.json`. We need this file to gather information about the module for the website."
     ]
   },
   {
@@ -7512,7 +7512,7 @@
     "maintainerURL": "",
     "description": "Displays new music releases from tracked artists on musicbutler.io.",
     "issues": [
-      "There is no `package.json`. We need this file to gather information about the module."
+      "There is no `package.json`. We need this file to gather information about the module for the website."
     ]
   },
   {
@@ -7574,7 +7574,7 @@
     "maintainerURL": "",
     "description": "Same functionality as the default Calendar app but different display formatting.",
     "issues": [
-      "There is no `package.json`. We need this file to gather information about the module."
+      "There is no `package.json`. We need this file to gather information about the module for the website."
     ]
   },
   {
@@ -7600,7 +7600,7 @@
     "maintainerURL": "https://github.com/smartgic",
     "description": "When a Mycroft AI wake word is detected, an image is displayed and when the recording is done the image disappears.",
     "issues": [
-      "There is no `package.json`. We need this file to gather information about the module."
+      "There is no `package.json`. We need this file to gather information about the module for the website."
     ]
   },
   {
@@ -7758,7 +7758,7 @@
     "maintainerURL": "",
     "description": "Real Time Dutch traffic information from the ANWB. Module is dead for now (there is a PR which seems to fix it).",
     "issues": [
-      "There is no `package.json`. We need this file to gather information about the module."
+      "There is no `package.json`. We need this file to gather information about the module for the website."
     ]
   },
   {
@@ -7903,7 +7903,7 @@
     "maintainerURL": "",
     "description": "Nameday module (multiple countries).",
     "issues": [
-      "There is no `package.json`. We need this file to gather information about the module."
+      "There is no `package.json`. We need this file to gather information about the module for the website."
     ]
   },
   {
@@ -7944,7 +7944,7 @@
     "maintainerURL": "",
     "description": "Stunning imagery and information about your universe. Choose from a host of categories. Looks amazing on your mirror!",
     "issues": [
-      "There is no `package.json`. We need this file to gather information about the module."
+      "There is no `package.json`. We need this file to gather information about the module for the website."
     ]
   },
   {
@@ -7973,7 +7973,7 @@
     "maintainerURL": "",
     "description": "Simple calendar. Optional Rotating Nature Scenes. Optional color schemes. 17 different languages.",
     "issues": [
-      "There is no `package.json`. We need this file to gather information about the module."
+      "There is no `package.json`. We need this file to gather information about the module for the website."
     ]
   },
   {
@@ -7984,7 +7984,7 @@
     "maintainerURL": "https://github.com/mtatsuma",
     "description": "Displays sensor data collected by <a target=\"_blank\" href=\"https://en.nature.global\">Nature Remo</a> devices.",
     "issues": [
-      "There is no `package.json`. We need this file to gather information about the module."
+      "There is no `package.json`. We need this file to gather information about the module for the website."
     ]
   },
   {
@@ -8053,7 +8053,7 @@
     "maintainerURL": "",
     "description": "Near Earth Objects passing by our planet this week. Be afraid. Be VERY afraid!",
     "issues": [
-      "There is no `package.json`. We need this file to gather information about the module."
+      "There is no `package.json`. We need this file to gather information about the module for the website."
     ]
   },
   {
@@ -8064,7 +8064,7 @@
     "maintainerURL": "https://github.com/MartinLoidolt",
     "description": "Display your photovoltaic statistics from neoom.",
     "issues": [
-      "There is no `package.json`. We need this file to gather information about the module."
+      "There is no `package.json`. We need this file to gather information about the module for the website."
     ]
   },
   {
@@ -8195,7 +8195,7 @@
     "maintainerURL": "",
     "description": "Add a QR Code with the link to the showing Newsfeed (Default Newsfeed Module).",
     "issues": [
-      "There is no `package.json`. We need this file to gather information about the module."
+      "There is no `package.json`. We need this file to gather information about the module for the website."
     ]
   },
   {
@@ -8234,7 +8234,7 @@
     "maintainerURL": "https://github.com/PierreGode",
     "description": "Display your upcomming show's and movies from your next-episode account.",
     "issues": [
-      "There is no `package.json`. We need this file to gather information about the module."
+      "There is no `package.json`. We need this file to gather information about the module for the website."
     ]
   },
   {
@@ -8405,7 +8405,7 @@
     "maintainerURL": "https://github.com/Isaac-the-Man",
     "description": "Retro nixie clock display.",
     "issues": [
-      "There is no `package.json`. We need this file to gather information about the module."
+      "There is no `package.json`. We need this file to gather information about the module for the website."
     ]
   },
   {
@@ -8416,7 +8416,7 @@
     "maintainerURL": "",
     "description": "Simple virtual Nixie Clock.",
     "issues": [
-      "There is no `package.json`. We need this file to gather information about the module."
+      "There is no `package.json`. We need this file to gather information about the module for the website."
     ]
   },
   {
@@ -8442,7 +8442,7 @@
     "maintainerURL": "",
     "description": "Do I need an umbrella when i go out, or shall i take my chances? Shows rainintensity for a location in the Netherlands in the next hour.",
     "issues": [
-      "There is no `package.json`. We need this file to gather information about the module."
+      "There is no `package.json`. We need this file to gather information about the module for the website."
     ]
   },
   {
@@ -8536,7 +8536,7 @@
     "maintainerURL": "",
     "description": "MMM-NotificationTrigger is a simple notification relay which can convert notifications from TRIGGER_NOTIFICATION to FIRE_NOTIFICATION.",
     "issues": [
-      "There is no `package.json`. We need this file to gather information about the module."
+      "There is no `package.json`. We need this file to gather information about the module for the website."
     ]
   },
   {
@@ -8588,7 +8588,7 @@
     "maintainerURL": "",
     "description": "Shows Dutch train departures from the NS (Dutch railways), based on a configurable train station.",
     "issues": [
-      "There is no `package.json`. We need this file to gather information about the module."
+      "There is no `package.json`. We need this file to gather information about the module for the website."
     ]
   },
   {
@@ -8643,7 +8643,7 @@
     "maintainerURL": "",
     "description": "O-clock inspired by PolarClock Screensaver.",
     "issues": [
-      "There is no `package.json`. We need this file to gather information about the module."
+      "There is no `package.json`. We need this file to gather information about the module for the website."
     ]
   },
   {
@@ -8667,7 +8667,7 @@
     "maintainerURL": "",
     "description": "Displays energy usage history for your Octopus Energy account.",
     "issues": [
-      "There is no `package.json`. We need this file to gather information about the module."
+      "There is no `package.json`. We need this file to gather information about the module for the website."
     ]
   },
   {
@@ -8739,7 +8739,7 @@
     "maintainerURL": "",
     "description": "Make mirrors great again (?): a daily historical fact.",
     "issues": [
-      "There is no `package.json`. We need this file to gather information about the module."
+      "There is no `package.json`. We need this file to gather information about the module for the website."
     ]
   },
   {
@@ -8750,7 +8750,7 @@
     "maintainerURL": "",
     "description": "Shows ETA for buses for a given stop using OneBusAway API.",
     "issues": [
-      "There is no `package.json`. We need this file to gather information about the module."
+      "There is no `package.json`. We need this file to gather information about the module for the website."
     ]
   },
   {
@@ -8789,7 +8789,7 @@
     "maintainerURL": "",
     "description": "Use OneTracker app to deliveries/packages by forwarding from any email address.",
     "issues": [
-      "There is no `package.json`. We need this file to gather information about the module."
+      "There is no `package.json`. We need this file to gather information about the module for the website."
     ]
   },
   {
@@ -8800,7 +8800,7 @@
     "maintainerURL": "https://github.com/Legion2",
     "description": "Displays the network connection availability of the browser.",
     "issues": [
-      "There is no `package.json`. We need this file to gather information about the module."
+      "There is no `package.json`. We need this file to gather information about the module for the website."
     ]
   },
   {
@@ -8898,7 +8898,7 @@
     "maintainerURL": "",
     "description": "Display item states from openhab.",
     "issues": [
-      "There is no `package.json`. We need this file to gather information about the module."
+      "There is no `package.json`. We need this file to gather information about the module for the website."
     ]
   },
   {
@@ -8923,7 +8923,7 @@
     "maintainerURL": "",
     "description": "Display current weather as image based on the Openmap Weather API data with different formatting.",
     "issues": [
-      "There is no `package.json`. We need this file to gather information about the module."
+      "There is no `package.json`. We need this file to gather information about the module for the website."
     ]
   },
   {
@@ -8945,7 +8945,7 @@
     "maintainerURL": "",
     "description": "Display information from your OpenTherm gateway.",
     "issues": [
-      "There is no `package.json`. We need this file to gather information about the module."
+      "There is no `package.json`. We need this file to gather information about the module for the website."
     ]
   },
   {
@@ -9011,7 +9011,7 @@
     "maintainerURL": "https://github.com/themox",
     "description": "A more detailed Oura data display including readiness scores and heart rate data.",
     "issues": [
-      "There is no `package.json`. We need this file to gather information about the module."
+      "There is no `package.json`. We need this file to gather information about the module for the website."
     ]
   },
   {
@@ -9037,7 +9037,7 @@
     "maintainerURL": "",
     "description": "A helper module to display what page you're on. Intended to be used with other modules that rotate out modules.",
     "issues": [
-      "There is no `package.json`. We need this file to gather information about the module."
+      "There is no `package.json`. We need this file to gather information about the module for the website."
     ]
   },
   {
@@ -9048,7 +9048,7 @@
     "maintainerURL": "",
     "description": "A module that uses 2 HCSR04 sensors to enable switching between pages by making a push gesture.",
     "issues": [
-      "There is no `package.json`. We need this file to gather information about the module."
+      "There is no `package.json`. We need this file to gather information about the module for the website."
     ]
   },
   {
@@ -9059,7 +9059,7 @@
     "maintainerURL": "",
     "description": "Configure location and visibity of modules on defined pages.",
     "issues": [
-      "There is no `package.json`. We need this file to gather information about the module."
+      "There is no `package.json`. We need this file to gather information about the module for the website."
     ]
   },
   {
@@ -9070,7 +9070,7 @@
     "maintainerURL": "",
     "description": "Loads a website and highlights each sentence in turn (timer or event-driven).",
     "issues": [
-      "There is no `package.json`. We need this file to gather information about the module."
+      "There is no `package.json`. We need this file to gather information about the module for the website."
     ]
   },
   {
@@ -9081,7 +9081,7 @@
     "maintainerURL": "",
     "description": "A module that allows you to rotate out pages of modules.",
     "issues": [
-      "There is no `package.json`. We need this file to gather information about the module."
+      "There is no `package.json`. We need this file to gather information about the module for the website."
     ]
   },
   {
@@ -9107,7 +9107,7 @@
     "maintainerURL": "",
     "description": "A module for streaming Pandora music.",
     "issues": [
-      "There is no `package.json`. We need this file to gather information about the module."
+      "There is no `package.json`. We need this file to gather information about the module for the website."
     ]
   },
   {
@@ -9160,7 +9160,7 @@
     "maintainerURL": "https://github.com/NickEngmann",
     "description": "Display Particle.io device data.",
     "issues": [
-      "There is no `package.json`. We need this file to gather information about the module."
+      "There is no `package.json`. We need this file to gather information about the module for the website."
     ]
   },
   {
@@ -9186,7 +9186,7 @@
     "maintainerURL": "",
     "description": "An unofficial module to show Port Autority Trans-Hudson(PATH) Train schedules.",
     "issues": [
-      "There is no `package.json`. We need this file to gather information about the module."
+      "There is no `package.json`. We need this file to gather information about the module for the website."
     ]
   },
   {
@@ -9245,7 +9245,7 @@
     "maintainerURL": "https://github.com/chicohernando",
     "description": "This will show you your Peloton information to keep you motivated to achieve your goals.",
     "issues": [
-      "There is no `package.json`. We need this file to gather information about the module."
+      "There is no `package.json`. We need this file to gather information about the module for the website."
     ]
   },
   {
@@ -9256,7 +9256,7 @@
     "maintainerURL": "https://github.com/jbamford",
     "description": "Render mesmerizing line animations on your mirror.",
     "issues": [
-      "There is no `package.json`. We need this file to gather information about the module."
+      "There is no `package.json`. We need this file to gather information about the module for the website."
     ]
   },
   {
@@ -9281,7 +9281,7 @@
     "maintainerURL": "",
     "description": "All types of pets for adoption. Cat, dog, bird, horse, rabbit, reptile, smallfurry, barnyard.",
     "issues": [
-      "There is no `package.json`. We need this file to gather information about the module."
+      "There is no `package.json`. We need this file to gather information about the module for the website."
     ]
   },
   {
@@ -9292,7 +9292,7 @@
     "maintainerURL": "https://github.com/mcl8on",
     "description": "Displays PGA tournaments scores.",
     "issues": [
-      "There is no `package.json`. We need this file to gather information about the module."
+      "There is no `package.json`. We need this file to gather information about the module for the website."
     ]
   },
   {
@@ -9303,7 +9303,7 @@
     "maintainerURL": "",
     "description": "Real Time Pittsburgh bus information from Port Authority.",
     "issues": [
-      "There is no `package.json`. We need this file to gather information about the module."
+      "There is no `package.json`. We need this file to gather information about the module for the website."
     ]
   },
   {
@@ -9346,7 +9346,7 @@
     "maintainerURL": "",
     "description": "A python script that puts your display to sleep, if your smartphone/smartwatch is not connected to the WiFi network.",
     "issues": [
-      "There is no `package.json`. We need this file to gather information about the module."
+      "There is no `package.json`. We need this file to gather information about the module for the website."
     ]
   },
   {
@@ -9357,7 +9357,7 @@
     "maintainerURL": "",
     "description": "Display stats from Pi-Hole DNS ad blocking.",
     "issues": [
-      "There is no `package.json`. We need this file to gather information about the module."
+      "There is no `package.json`. We need this file to gather information about the module for the website."
     ]
   },
   {
@@ -9381,7 +9381,7 @@
     "maintainerURL": "",
     "description": "Show lights and window states on a floorplan given from a pimatic server.",
     "issues": [
-      "There is no `package.json`. We need this file to gather information about the module."
+      "There is no `package.json`. We need this file to gather information about the module for the website."
     ]
   },
   {
@@ -9501,7 +9501,7 @@
     "maintainerURL": "",
     "description": "MMM-PiTemp works in conjunction with MagicMirror² and tells you the temperature of your raspberry pi's CPU. If the temperature is ever greater than 85 degrees then the pi shuts down.",
     "issues": [
-      "There is no `package.json`. We need this file to gather information about the module."
+      "There is no `package.json`. We need this file to gather information about the module for the website."
     ]
   },
   {
@@ -9540,7 +9540,7 @@
     "maintainerURL": "",
     "description": "Displays brief information (flag, weather, exchange rate) about multiple locations at once.",
     "issues": [
-      "There is no `package.json`. We need this file to gather information about the module."
+      "There is no `package.json`. We need this file to gather information about the module for the website."
     ]
   },
   {
@@ -9551,7 +9551,7 @@
     "maintainerURL": "",
     "description": "Make your mirror to a Planetarium.",
     "issues": [
-      "There is no `package.json`. We need this file to gather information about the module."
+      "There is no `package.json`. We need this file to gather information about the module for the website."
     ]
   },
   {
@@ -9562,7 +9562,7 @@
     "maintainerURL": "",
     "description": "Display the rise and set times of the planets.",
     "issues": [
-      "There is no `package.json`. We need this file to gather information about the module."
+      "There is no `package.json`. We need this file to gather information about the module for the website."
     ]
   },
   {
@@ -9604,7 +9604,7 @@
     "maintainerURL": "",
     "description": "Displays the list of playback sessions for a Plex Media Server.",
     "issues": [
-      "There is no `package.json`. We need this file to gather information about the module."
+      "There is no `package.json`. We need this file to gather information about the module for the website."
     ]
   },
   {
@@ -9630,7 +9630,7 @@
     "maintainerURL": "",
     "description": "Pig Latin On Weather! Multiple views in a single module. Driven by Darksky API.",
     "issues": [
-      "There is no `package.json`. We need this file to gather information about the module."
+      "There is no `package.json`. We need this file to gather information about the module for the website."
     ],
     "outdated": "Deprecated. DarkSky API no longer works since 2023-03-31."
   },
@@ -9642,7 +9642,7 @@
     "maintainerURL": "",
     "description": "Display the next time on a clear morning or evening that you can go outside and experience the brightness of high noon on Pluto.",
     "issues": [
-      "There is no `package.json`. We need this file to gather information about the module."
+      "There is no `package.json`. We need this file to gather information about the module for the website."
     ]
   },
   {
@@ -9669,7 +9669,7 @@
     "maintainerURL": "",
     "description": "This module can stream the video of 100 Sekunden Tagesschau by using omxplayer. It can be controlled by MM notification system.",
     "issues": [
-      "There is no `package.json`. We need this file to gather information about the module."
+      "There is no `package.json`. We need this file to gather information about the module for the website."
     ]
   },
   {
@@ -9711,7 +9711,7 @@
     "maintainerURL": "",
     "description": "Display 2 day pollen forecast based on DWD geoserver data.",
     "issues": [
-      "There is no `package.json`. We need this file to gather information about the module."
+      "There is no `package.json`. We need this file to gather information about the module for the website."
     ]
   },
   {
@@ -9736,7 +9736,7 @@
     "maintainerURL": "https://github.com/lekesako",
     "description": "Display pollen.fr information for your FR region code.",
     "issues": [
-      "There is no `package.json`. We need this file to gather information about the module."
+      "There is no `package.json`. We need this file to gather information about the module for the website."
     ]
   },
   {
@@ -9747,7 +9747,7 @@
     "maintainerURL": "",
     "description": "Text-to-Speech using Amazon Polly.",
     "issues": [
-      "There is no `package.json`. We need this file to gather information about the module."
+      "There is no `package.json`. We need this file to gather information about the module for the website."
     ]
   },
   {
@@ -9758,7 +9758,7 @@
     "maintainerURL": "",
     "description": "Live World Population Clock.",
     "issues": [
-      "There is no `package.json`. We need this file to gather information about the module."
+      "There is no `package.json`. We need this file to gather information about the module for the website."
     ]
   },
   {
@@ -9790,7 +9790,7 @@
     "maintainerURL": "",
     "description": "Track the status of your services with opened/closed ports.",
     "issues": [
-      "There is no `package.json`. We need this file to gather information about the module."
+      "There is no `package.json`. We need this file to gather information about the module for the website."
     ]
   },
   {
@@ -9801,7 +9801,7 @@
     "maintainerURL": "https://github.com/reidarw",
     "description": "Module for showing showing the next post delivery day for your zip code in Norway.",
     "issues": [
-      "There is no `package.json`. We need this file to gather information about the module."
+      "There is no `package.json`. We need this file to gather information about the module for the website."
     ]
   },
   {
@@ -9855,7 +9855,7 @@
     "maintainerURL": "https://github.com/Fifteen15Studios",
     "description": "Displays prices of select precious metals and commodities, like gold and silver. Retrieves information from API provided by <a target=\"_blank\" href=\"https://api.metals.live\">api.metals.live</a>.",
     "issues": [
-      "There is no `package.json`. We need this file to gather information about the module."
+      "There is no `package.json`. We need this file to gather information about the module for the website."
     ]
   },
   {
@@ -9866,7 +9866,7 @@
     "maintainerURL": "",
     "description": "Allows you to get instant info of your developing pregnancy.",
     "issues": [
-      "There is no `package.json`. We need this file to gather information about the module."
+      "There is no `package.json`. We need this file to gather information about the module for the website."
     ]
   },
   {
@@ -9877,7 +9877,7 @@
     "maintainerURL": "https://github.com/kurtern84",
     "description": "A simple module to show a profilpicture with your name and wheater report for your MagicMirrorDisplays Swedish name of the day.",
     "issues": [
-      "There is no `package.json`. We need this file to gather information about the module."
+      "There is no `package.json`. We need this file to gather information about the module for the website."
     ]
   },
   {
@@ -9902,7 +9902,7 @@
     "maintainerURL": "https://github.com/Snille",
     "description": "A module for adding a background picture to the current profile.",
     "issues": [
-      "There is no `package.json`. We need this file to gather information about the module."
+      "There is no `package.json`. We need this file to gather information about the module for the website."
     ]
   },
   {
@@ -9913,7 +9913,7 @@
     "maintainerURL": "",
     "description": "This Module adds the ability to have different layouts for different profiles.",
     "issues": [
-      "There is no `package.json`. We need this file to gather information about the module."
+      "There is no `package.json`. We need this file to gather information about the module for the website."
     ]
   },
   {
@@ -10073,7 +10073,7 @@
     "maintainerURL": "",
     "description": "Displays downloads from Download Station running on a QNAP NAS.",
     "issues": [
-      "There is no `package.json`. We need this file to gather information about the module."
+      "There is no `package.json`. We need this file to gather information about the module for the website."
     ]
   },
   {
@@ -10097,7 +10097,7 @@
     "maintainerURL": "",
     "description": "Show QRCode image of encoded text.",
     "issues": [
-      "There is no `package.json`. We need this file to gather information about the module."
+      "There is no `package.json`. We need this file to gather information about the module for the website."
     ]
   },
   {
@@ -10108,7 +10108,7 @@
     "maintainerURL": "",
     "description": "Displays your Questrade positions.",
     "issues": [
-      "There is no `package.json`. We need this file to gather information about the module."
+      "There is no `package.json`. We need this file to gather information about the module for the website."
     ]
   },
   {
@@ -10119,7 +10119,7 @@
     "maintainerURL": "",
     "description": "Display random quotes using the <a target=\"_blank\" href=\"https://github.com/lukePeavey/quotable\">Quotable API</a>. Filters quotes by max length and tags.",
     "issues": [
-      "There is no `package.json`. We need this file to gather information about the module."
+      "There is no `package.json`. We need this file to gather information about the module for the website."
     ]
   },
   {
@@ -10144,7 +10144,7 @@
     "maintainerURL": "",
     "description": "Module that displays Raider IO score for multiple characters over any realms or regions.",
     "issues": [
-      "There is no `package.json`. We need this file to gather information about the module."
+      "There is no `package.json`. We need this file to gather information about the module for the website."
     ]
   },
   {
@@ -10155,7 +10155,7 @@
     "maintainerURL": "",
     "description": "Graphical rain forecast for the Netherlands, no dependies or outside scripts needed. Superfast with scalable vector graphics in desired color.",
     "issues": [
-      "There is no `package.json`. We need this file to gather information about the module."
+      "There is no `package.json`. We need this file to gather information about the module for the website."
     ]
   },
   {
@@ -10183,7 +10183,7 @@
     "maintainerURL": "",
     "description": "Displays a Precipitation Radar for your location.",
     "issues": [
-      "There is no `package.json`. We need this file to gather information about the module."
+      "There is no `package.json`. We need this file to gather information about the module for the website."
     ]
   },
   {
@@ -10236,7 +10236,7 @@
     "maintainerURL": "",
     "description": "Display random quotes from brainyquote.",
     "issues": [
-      "There is no `package.json`. We need this file to gather information about the module."
+      "There is no `package.json`. We need this file to gather information about the module for the website."
     ]
   },
   {
@@ -10261,7 +10261,7 @@
     "maintainerURL": "https://github.com/jacopo1891",
     "description": "Display a random quote from various authorship using Paperquote's API.",
     "issues": [
-      "There is no `package.json`. We need this file to gather information about the module."
+      "There is no `package.json`. We need this file to gather information about the module for the website."
     ]
   },
   {
@@ -10288,7 +10288,7 @@
     "maintainerURL": "",
     "description": "Load a playlist into a YouTube player, AND shuffle the videos in the playlist.",
     "issues": [
-      "There is no `package.json`. We need this file to gather information about the module."
+      "There is no `package.json`. We need this file to gather information about the module for the website."
     ]
   },
   {
@@ -10312,7 +10312,7 @@
     "maintainerURL": "https://github.com/juliankern",
     "description": "Displays the live timetable of the German pop culture TV/Streaming channel RocketBeansTV.",
     "issues": [
-      "There is no `package.json`. We need this file to gather information about the module."
+      "There is no `package.json`. We need this file to gather information about the module for the website."
     ]
   },
   {
@@ -10323,7 +10323,7 @@
     "maintainerURL": "",
     "description": "Display recent US rainfall with a small map of your state.",
     "issues": [
-      "There is no `package.json`. We need this file to gather information about the module."
+      "There is no `package.json`. We need this file to gather information about the module for the website."
     ]
   },
   {
@@ -10393,7 +10393,7 @@
     "maintainerURL": "",
     "description": "A simple module to display user karma from Reddit.com.",
     "issues": [
-      "There is no `package.json`. We need this file to gather information about the module."
+      "There is no `package.json`. We need this file to gather information about the module for the website."
     ]
   },
   {
@@ -10404,7 +10404,7 @@
     "maintainerURL": "",
     "description": "Shows specified subreddits(Text only), can have multiple instances.",
     "issues": [
-      "There is no `package.json`. We need this file to gather information about the module."
+      "There is no `package.json`. We need this file to gather information about the module for the website."
     ]
   },
   {
@@ -10415,7 +10415,7 @@
     "maintainerURL": "",
     "description": "Rain radar for locations in Germany. The weather dates were provided by <a target=\"_blank\" href=\"https://morgenwirdes.de\">Morgenwirdes</a>.",
     "issues": [
-      "There is no `package.json`. We need this file to gather information about the module."
+      "There is no `package.json`. We need this file to gather information about the module for the website."
     ]
   },
   {
@@ -10441,7 +10441,7 @@
     "maintainerURL": "",
     "description": "Plugin for <code>MMM-Remote-Control</code> to update installable modules automatically.",
     "issues": [
-      "There is no `package.json`. We need this file to gather information about the module."
+      "There is no `package.json`. We need this file to gather information about the module for the website."
     ]
   },
   {
@@ -10452,7 +10452,7 @@
     "maintainerURL": "",
     "description": "Provides seamless integration with Google Drive™ to display compliments and images from Drive.",
     "issues": [
-      "There is no `package.json`. We need this file to gather information about the module."
+      "There is no `package.json`. We need this file to gather information about the module for the website."
     ]
   },
   {
@@ -10498,7 +10498,7 @@
     "maintainerURL": "https://github.com/arirobinson",
     "description": "Display live info from your 3D printer running <a target=\"_blank\" href=\"https://github.com/dc42/RepRapFirmware\">RepRapFirmware</a>. This firmware is mainly used on <a target=\"_blank\" href=\"https://www.duet3d.com\">Duet3D control boards (Duet Wifi &amp; Ethernet)</a>.",
     "issues": [
-      "There is no `package.json`. We need this file to gather information about the module."
+      "There is no `package.json`. We need this file to gather information about the module for the website."
     ]
   },
   {
@@ -10698,7 +10698,7 @@
     "maintainerURL": "",
     "description": "Displays the Rotten Tomatoes meter score for the current box office and movies coming soon.",
     "issues": [
-      "There is no `package.json`. We need this file to gather information about the module."
+      "There is no `package.json`. We need this file to gather information about the module for the website."
     ]
   },
   {
@@ -10709,7 +10709,7 @@
     "maintainerURL": "https://github.com/jeroenpeters1986",
     "description": "Module which shows when and which type of trash will be collected by Dutch garbage service ROVA.",
     "issues": [
-      "There is no `package.json`. We need this file to gather information about the module."
+      "There is no `package.json`. We need this file to gather information about the module for the website."
     ]
   },
   {
@@ -10733,7 +10733,7 @@
     "maintainerURL": "",
     "description": "Display any RSS feed.",
     "issues": [
-      "There is no `package.json`. We need this file to gather information about the module."
+      "There is no `package.json`. We need this file to gather information about the module for the website."
     ]
   },
   {
@@ -10800,7 +10800,7 @@
     "maintainerURL": "https://github.com/sebikolon/MMM-RVV \"github.com/sebikolon\"",
     "description": "Departure monitor for the RVV (Regensburger Verkehrsverbund) public transport (bus) system (Bavaria/Germany).",
     "issues": [
-      "There is no `package.json`. We need this file to gather information about the module."
+      "There is no `package.json`. We need this file to gather information about the module for the website."
     ]
   },
   {
@@ -10811,7 +10811,7 @@
     "maintainerURL": "https://github.com/reidarw",
     "description": "Displaying transactions and account balance from Sbanken (Norway).",
     "issues": [
-      "There is no `package.json`. We need this file to gather information about the module."
+      "There is no `package.json`. We need this file to gather information about the module for the website."
     ]
   },
   {
@@ -10928,7 +10928,7 @@
     "maintainerURL": "",
     "description": "Display the current playing song from Spotify, ITunes and Co.",
     "issues": [
-      "There is no `package.json`. We need this file to gather information about the module."
+      "There is no `package.json`. We need this file to gather information about the module for the website."
     ]
   },
   {
@@ -10953,7 +10953,7 @@
     "maintainerURL": "",
     "description": "Screensaver.",
     "issues": [
-      "There is no `package.json`. We need this file to gather information about the module."
+      "There is no `package.json`. We need this file to gather information about the module for the website."
     ]
   },
   {
@@ -10964,7 +10964,7 @@
     "maintainerURL": "",
     "description": "Display order of turn information for ships transiting the St Lawrence Seaway Locks.",
     "issues": [
-      "There is no `package.json`. We need this file to gather information about the module."
+      "There is no `package.json`. We need this file to gather information about the module for the website."
     ]
   },
   {
@@ -11003,7 +11003,7 @@
     "maintainerURL": "",
     "description": "Web form to send arbitrary messages via <code>this.sendNotification()</code>.",
     "issues": [
-      "There is no `package.json`. We need this file to gather information about the module."
+      "There is no `package.json`. We need this file to gather information about the module for the website."
     ]
   },
   {
@@ -11133,7 +11133,7 @@
     "maintainerURL": "",
     "description": "Integrate Apple AirTunes/Airplay metadata coming via shairport-sync into the MagicMirror². Does not work with video or mirroring.",
     "issues": [
-      "There is no `package.json`. We need this file to gather information about the module."
+      "There is no `package.json`. We need this file to gather information about the module for the website."
     ]
   },
   {
@@ -11144,7 +11144,7 @@
     "maintainerURL": "https://github.com/Medve01",
     "description": "Display data from 1 Shelly HT sensor.",
     "issues": [
-      "There is no `package.json`. We need this file to gather information about the module."
+      "There is no `package.json`. We need this file to gather information about the module for the website."
     ]
   },
   {
@@ -11188,7 +11188,7 @@
     "maintainerURL": "https://github.com/IoT-Coder",
     "description": "Display data from Shelly+ HT sensor. Forked from Shelly-HT for Gen2 device Shelly Plus HT.",
     "issues": [
-      "There is no `package.json`. We need this file to gather information about the module."
+      "There is no `package.json`. We need this file to gather information about the module for the website."
     ]
   },
   {
@@ -11238,7 +11238,7 @@
     "maintainerURL": "",
     "description": "Simply displays logo with local image file path or url.",
     "issues": [
-      "There is no `package.json`. We need this file to gather information about the module."
+      "There is no `package.json`. We need this file to gather information about the module for the website."
     ]
   },
   {
@@ -11264,7 +11264,7 @@
     "maintainerURL": "",
     "description": "Simple and plain text module with some minor formatting options. Can also display content from text files with multiple lines.",
     "issues": [
-      "There is no `package.json`. We need this file to gather information about the module."
+      "There is no `package.json`. We need this file to gather information about the module for the website."
     ]
   },
   {
@@ -11367,7 +11367,7 @@
     "maintainerURL": "",
     "description": "Post announcements to your mirror from a designated Slack channel.",
     "issues": [
-      "There is no `package.json`. We need this file to gather information about the module."
+      "There is no `package.json`. We need this file to gather information about the module for the website."
     ]
   },
   {
@@ -11396,7 +11396,7 @@
     "maintainerURL": "",
     "description": "Displays your <a target=\"_blank\" href=\"https://sleeper.com\">Sleeper</a> fantasy football matchup with live updating scores.",
     "issues": [
-      "There is no `package.json`. We need this file to gather information about the module."
+      "There is no `package.json`. We need this file to gather information about the module for the website."
     ]
   },
   {
@@ -11407,7 +11407,7 @@
     "maintainerURL": "",
     "description": "Module that uses an external source for motion detection, like a web camera .",
     "issues": [
-      "There is no `package.json`. We need this file to gather information about the module."
+      "There is no `package.json`. We need this file to gather information about the module for the website."
     ]
   },
   {
@@ -11431,7 +11431,7 @@
     "maintainerURL": "https://github.com/EbenKouao",
     "description": "This module allows you to transform your MagicMirror² into a touchscreen interactive experience. This includes hiding all modules (Standby Mode) and Side Menu Option to shutdown your mirror via MagicMirror² UI.",
     "issues": [
-      "There is no `package.json`. We need this file to gather information about the module."
+      "There is no `package.json`. We need this file to gather information about the module for the website."
     ]
   },
   {
@@ -11503,7 +11503,7 @@
     "maintainerURL": "",
     "description": "More realistic snow plugin to improve your winter experience.",
     "issues": [
-      "There is no `package.json`. We need this file to gather information about the module."
+      "There is no `package.json`. We need this file to gather information about the module for the website."
     ]
   },
   {
@@ -11579,7 +11579,7 @@
     "maintainerURL": "",
     "description": "Display statistics from your Enphase Energy microinverter PV system.",
     "issues": [
-      "There is no `package.json`. We need this file to gather information about the module."
+      "There is no `package.json`. We need this file to gather information about the module for the website."
     ]
   },
   {
@@ -11604,7 +11604,7 @@
     "maintainerURL": "",
     "description": "Display statistics from your SolarEdge PV inverter system.",
     "issues": [
-      "There is no `package.json`. We need this file to gather information about the module."
+      "There is no `package.json`. We need this file to gather information about the module for the website."
     ]
   },
   {
@@ -11615,7 +11615,7 @@
     "maintainerURL": "",
     "description": "Displays, updated every minute, the energy produced, used and received/released to the grid by your SolarEdge System.",
     "issues": [
-      "There is no `package.json`. We need this file to gather information about the module."
+      "There is no `package.json`. We need this file to gather information about the module for the website."
     ]
   },
   {
@@ -11626,7 +11626,7 @@
     "maintainerURL": "https://github.com/jeroenpeters1986",
     "description": "Display simple statistics from your SolarEdge (based on bertieuk).",
     "issues": [
-      "There is no `package.json`. We need this file to gather information about the module."
+      "There is no `package.json`. We need this file to gather information about the module for the website."
     ]
   },
   {
@@ -11637,7 +11637,7 @@
     "maintainerURL": "",
     "description": "Display statistics from the Solarman API, e.g. from Bosswerk PV inverter.",
     "issues": [
-      "There is no `package.json`. We need this file to gather information about the module."
+      "There is no `package.json`. We need this file to gather information about the module for the website."
     ]
   },
   {
@@ -11648,7 +11648,7 @@
     "maintainerURL": "",
     "description": "Display the last Solar Dynamics Observatory (SDO) picture.",
     "issues": [
-      "There is no `package.json`. We need this file to gather information about the module."
+      "There is no `package.json`. We need this file to gather information about the module for the website."
     ]
   },
   {
@@ -11699,7 +11699,7 @@
     "maintainerURL": "",
     "description": "Static Or Rotating Tides module. Replaces/combines MMM-SimpleTides and MMM-StaticTides.",
     "issues": [
-      "There is no `package.json`. We need this file to gather information about the module."
+      "There is no `package.json`. We need this file to gather information about the module for the website."
     ]
   },
   {
@@ -11710,7 +11710,7 @@
     "maintainerURL": "",
     "description": "Adds vertical space (as HTML div) between modules.",
     "issues": [
-      "There is no `package.json`. We need this file to gather information about the module."
+      "There is no `package.json`. We need this file to gather information about the module for the website."
     ]
   },
   {
@@ -11721,7 +11721,7 @@
     "maintainerURL": "",
     "description": "Show the previous and upcoming launches of any rocket, bases on SpaceLaunchNow API.",
     "issues": [
-      "There is no `package.json`. We need this file to gather information about the module."
+      "There is no `package.json`. We need this file to gather information about the module for the website."
     ]
   },
   {
@@ -11732,7 +11732,7 @@
     "maintainerURL": "",
     "description": "Show the previous and upcoming launches of SpaceX rockets.",
     "issues": [
-      "There is no `package.json`. We need this file to gather information about the module."
+      "There is no `package.json`. We need this file to gather information about the module for the website."
     ]
   },
   {
@@ -11774,7 +11774,7 @@
     "maintainerURL": "",
     "description": "Display information from Spotify Connect e.g. cover, artist and track information.",
     "issues": [
-      "There is no `package.json`. We need this file to gather information about the module."
+      "There is no `package.json`. We need this file to gather information about the module for the website."
     ]
   },
   {
@@ -11785,7 +11785,7 @@
     "maintainerURL": "",
     "description": "Add events to MMM-Spotify to manage volume and playlists.",
     "issues": [
-      "There is no `package.json`. We need this file to gather information about the module."
+      "There is no `package.json`. We need this file to gather information about the module for the website."
     ]
   },
   {
@@ -11811,7 +11811,7 @@
     "maintainerURL": "",
     "description": "Display upcoming metros in Rennes (France).",
     "issues": [
-      "There is no `package.json`. We need this file to gather information about the module."
+      "There is no `package.json`. We need this file to gather information about the module for the website."
     ]
   },
   {
@@ -11849,7 +11849,7 @@
     "maintainerURL": "",
     "description": "Display the next transports for any given STIB (Brussel/Belgium) station.",
     "issues": [
-      "There is no `package.json`. We need this file to gather information about the module."
+      "There is no `package.json`. We need this file to gather information about the module for the website."
     ]
   },
   {
@@ -11873,7 +11873,7 @@
     "maintainerURL": "",
     "description": "Displays current stock prices of companies using YAHOO FINANCE API.",
     "issues": [
-      "There is no `package.json`. We need this file to gather information about the module."
+      "There is no `package.json`. We need this file to gather information about the module for the website."
     ]
   },
   {
@@ -11967,7 +11967,7 @@
     "maintainerURL": "",
     "description": "More information than you ever wanted to know about the rising and setting of the sun.",
     "issues": [
-      "There is no `package.json`. We need this file to gather information about the module."
+      "There is no `package.json`. We need this file to gather information about the module for the website."
     ]
   },
   {
@@ -11978,7 +11978,7 @@
     "maintainerURL": "https://github.com/mumblebaj",
     "description": "Display a classic railway clock.",
     "issues": [
-      "There is no `package.json`. We need this file to gather information about the module."
+      "There is no `package.json`. We need this file to gather information about the module for the website."
     ]
   },
   {
@@ -12020,7 +12020,7 @@
     "maintainerURL": "https://github.com/roufri",
     "description": "Display the water temperature of a Swiss lake at a given point.",
     "issues": [
-      "There is no `package.json`. We need this file to gather information about the module."
+      "There is no `package.json`. We need this file to gather information about the module for the website."
     ]
   },
   {
@@ -12045,7 +12045,7 @@
     "maintainerURL": "",
     "description": "Display train departures from your favourite train station.",
     "issues": [
-      "There is no `package.json`. We need this file to gather information about the module."
+      "There is no `package.json`. We need this file to gather information about the module for the website."
     ]
   },
   {
@@ -12086,7 +12086,7 @@
     "maintainerURL": "",
     "description": "API for sending notifications to your mirror.",
     "issues": [
-      "There is no `package.json`. We need this file to gather information about the module."
+      "There is no `package.json`. We need this file to gather information about the module for the website."
     ]
   },
   {
@@ -12155,7 +12155,7 @@
     "maintainerURL": "",
     "description": "Display METAR and TAF data for airports world-wide.",
     "issues": [
-      "There is no `package.json`. We need this file to gather information about the module."
+      "There is no `package.json`. We need this file to gather information about the module for the website."
     ]
   },
   {
@@ -12201,7 +12201,7 @@
     "maintainerURL": "",
     "description": "Displays the currently playing Plex stream activity from <a target=\"_blank\" href=\"https://tautulli.com\">Tautulli</a>.",
     "issues": [
-      "There is no `package.json`. We need this file to gather information about the module."
+      "There is no `package.json`. We need this file to gather information about the module for the website."
     ]
   },
   {
@@ -12364,7 +12364,7 @@
     "maintainerURL": "",
     "description": "Shows a different text each week.",
     "issues": [
-      "There is no `package.json`. We need this file to gather information about the module."
+      "There is no `package.json`. We need this file to gather information about the module for the website."
     ]
   },
   {
@@ -12392,7 +12392,7 @@
     "maintainerURL": "https://www.emanuelealbini.com",
     "description": "Status board for TFL (Transport For London) lines including London Tube, Elizabeth line, Tram, DLR, Bus, River Coach.",
     "issues": [
-      "There is no `package.json`. We need this file to gather information about the module."
+      "There is no `package.json`. We need this file to gather information about the module for the website."
     ]
   },
   {
@@ -12435,7 +12435,7 @@
     "maintainerURL": "https://github.com/zhouxichun",
     "description": "Fetch earth live image form Himawari #8 geostationary satellite and display images on screen.",
     "issues": [
-      "There is no `package.json`. We need this file to gather information about the module."
+      "There is no `package.json`. We need this file to gather information about the module for the website."
     ]
   },
   {
@@ -12528,7 +12528,7 @@
     "maintainerURL": "",
     "description": "Edit ToDo's, lists, reminders, messages etc. without quitting or restarting your mirror.",
     "issues": [
-      "There is no `package.json`. We need this file to gather information about the module."
+      "There is no `package.json`. We need this file to gather information about the module for the website."
     ]
   },
   {
@@ -12552,7 +12552,7 @@
     "maintainerURL": "https://github.com/Travelbacon",
     "description": "Shows on a TomTom map of your location the current traffic and actual traffic incidents like crashes and road construction. You can choose if you want traffic delay/jam or traffic speed/flow to be displayed.",
     "issues": [
-      "There is no `package.json`. We need this file to gather information about the module."
+      "There is no `package.json`. We need this file to gather information about the module for the website."
     ]
   },
   {
@@ -12563,7 +12563,7 @@
     "maintainerURL": "",
     "description": "A module for the Toon Thermostat.",
     "issues": [
-      "There is no `package.json`. We need this file to gather information about the module."
+      "There is no `package.json`. We need this file to gather information about the module for the website."
     ]
   },
   {
@@ -12574,7 +12574,7 @@
     "maintainerURL": "",
     "description": "Module for universal touch gesture commander using touchscreen.",
     "issues": [
-      "There is no `package.json`. We need this file to gather information about the module."
+      "There is no `package.json`. We need this file to gather information about the module for the website."
     ]
   },
   {
@@ -12657,7 +12657,7 @@
     "maintainerURL": "",
     "description": "Display trains from your favorite departure station to any destination in Europe.",
     "issues": [
-      "There is no `package.json`. We need this file to gather information about the module."
+      "There is no `package.json`. We need this file to gather information about the module for the website."
     ]
   },
   {
@@ -12710,7 +12710,7 @@
     "maintainerURL": "https://github.com/bnitkin",
     "description": "Upcoming departures for any transit agencies that publishes GTFS.",
     "issues": [
-      "There is no `package.json`. We need this file to gather information about the module."
+      "There is no `package.json`. We need this file to gather information about the module for the website."
     ]
   },
   {
@@ -12721,7 +12721,7 @@
     "maintainerURL": "https://github.com/ahmedwab",
     "description": "The MMM-Display a given list of messages translated to language inputted.",
     "issues": [
-      "There is no `package.json`. We need this file to gather information about the module."
+      "There is no `package.json`. We need this file to gather information about the module for the website."
     ]
   },
   {
@@ -12747,7 +12747,7 @@
     "maintainerURL": "",
     "description": "Display TransLoc locations for a bus stop, used by the Rider App.",
     "issues": [
-      "There is no `package.json`. We need this file to gather information about the module."
+      "There is no `package.json`. We need this file to gather information about the module for the website."
     ]
   },
   {
@@ -12758,7 +12758,7 @@
     "maintainerURL": "https://github.com/nikxif",
     "description": "Connect to the Transmission BitTorrent client and display current torrent list information.",
     "issues": [
-      "There is no `package.json`. We need this file to gather information about the module."
+      "There is no `package.json`. We need this file to gather information about the module for the website."
     ]
   },
   {
@@ -12769,7 +12769,7 @@
     "maintainerURL": "https://github.com/luccapolastri",
     "description": "Module that displays real time information of the public transportation service in CABA, Buenos Aires, Argentina.",
     "issues": [
-      "There is no `package.json`. We need this file to gather information about the module."
+      "There is no `package.json`. We need this file to gather information about the module for the website."
     ]
   },
   {
@@ -12807,7 +12807,7 @@
     "maintainerURL": "https://github.com/reidarw",
     "description": "Module for showing the waste plan for your destination in Trondheim, Norway.",
     "issues": [
-      "There is no `package.json`. We need this file to gather information about the module."
+      "There is no `package.json`. We need this file to gather information about the module for the website."
     ]
   },
   {
@@ -12833,7 +12833,7 @@
     "maintainerURL": "https://github.com/nigel-daniels",
     "description": "Simple at-a-glance display of the London Underground system status. See <a target=\"_blank\" href=\"https://github.com/emanuele-albini/MMM-TFL-Status\">MMM-TFL-Status</a> for more modes (e.g., Elizabeth line, DLR, Buses, Tram, etc.).",
     "issues": [
-      "There is no `package.json`. We need this file to gather information about the module."
+      "There is no `package.json`. We need this file to gather information about the module for the website."
     ]
   },
   {
@@ -12893,7 +12893,7 @@
     "maintainerURL": "",
     "description": "Displays tweets a few at a time from a user's home timeline or list.",
     "issues": [
-      "There is no `package.json`. We need this file to gather information about the module."
+      "There is no `package.json`. We need this file to gather information about the module for the website."
     ]
   },
   {
@@ -12904,7 +12904,7 @@
     "maintainerURL": "https://github.com/WilliamFitzjohn",
     "description": "Get notified when your favourite Twitch streamers go live.",
     "issues": [
-      "There is no `package.json`. We need this file to gather information about the module."
+      "There is no `package.json`. We need this file to gather information about the module for the website."
     ]
   },
   {
@@ -12929,7 +12929,7 @@
     "maintainerURL": "",
     "description": "Displays the Twitter Trending Topics for a given place or city, as well as showing the tweet volume for each topic.",
     "issues": [
-      "There is no `package.json`. We need this file to gather information about the module."
+      "There is no `package.json`. We need this file to gather information about the module for the website."
     ]
   },
   {
@@ -12940,7 +12940,7 @@
     "maintainerURL": "",
     "description": "Estimated arrival times for UBER.",
     "issues": [
-      "There is no `package.json`. We need this file to gather information about the module."
+      "There is no `package.json`. We need this file to gather information about the module for the website."
     ]
   },
   {
@@ -12977,7 +12977,7 @@
     "maintainerURL": "https://github.com/XBCreepinJesus",
     "description": "Show live train departure/arrival times for the UK's National Rail network.",
     "issues": [
-      "There is no `package.json`. We need this file to gather information about the module."
+      "There is no `package.json`. We need this file to gather information about the module for the website."
     ]
   },
   {
@@ -13019,7 +13019,7 @@
     "maintainerURL": "",
     "description": "Display tidal data in British Isles with free data from UKHO/Admiralty.",
     "issues": [
-      "There is no `package.json`. We need this file to gather information about the module."
+      "There is no `package.json`. We need this file to gather information about the module for the website."
     ]
   },
   {
@@ -13057,7 +13057,7 @@
     "maintainerURL": "",
     "description": "Display temperature readings from a USB DVB-T stick acting as a 433Mhz SDR, receiving input from a cheap wireless weather sensor (GT-WT-01).",
     "issues": [
-      "There is no `package.json`. We need this file to gather information about the module."
+      "There is no `package.json`. We need this file to gather information about the module for the website."
     ]
   },
   {
@@ -13193,7 +13193,7 @@
     "maintainerURL": "https://github.com/Snille",
     "description": "Play a video file (from local folder or internet) in any region. The module will pause the video when hidden and resume when shown. You can also pause and play by using notifications.",
     "issues": [
-      "There is no `package.json`. We need this file to gather information about the module."
+      "There is no `package.json`. We need this file to gather information about the module for the website."
     ]
   },
   {
@@ -13218,7 +13218,7 @@
     "maintainerURL": "https://github.com/phungorquan",
     "description": "Display your google calendar, VietNam or your country events and your personal events.",
     "issues": [
-      "There is no `package.json`. We need this file to gather information about the module."
+      "There is no `package.json`. We need this file to gather information about the module for the website."
     ]
   },
   {
@@ -13229,7 +13229,7 @@
     "maintainerURL": "",
     "description": "Display a list of notifications that have been broadcast to all the modules.",
     "issues": [
-      "There is no `package.json`. We need this file to gather information about the module."
+      "There is no `package.json`. We need this file to gather information about the module for the website."
     ]
   },
   {
@@ -13240,7 +13240,7 @@
     "maintainerURL": "",
     "description": "Display the last value of water level at a station in the Vigicrues network in France.",
     "issues": [
-      "There is no `package.json`. We need this file to gather information about the module."
+      "There is no `package.json`. We need this file to gather information about the module for the website."
     ]
   },
   {
@@ -13347,7 +13347,7 @@
     "maintainerURL": "",
     "description": "Voice control based on snowboy.",
     "issues": [
-      "There is no `package.json`. We need this file to gather information about the module."
+      "There is no `package.json`. We need this file to gather information about the module for the website."
     ]
   },
   {
@@ -13372,7 +13372,7 @@
     "maintainerURL": "",
     "description": "Displays what a Volumio device is currently playing.",
     "issues": [
-      "There is no `package.json`. We need this file to gather information about the module."
+      "There is no `package.json`. We need this file to gather information about the module for the website."
     ]
   },
   {
@@ -13458,7 +13458,7 @@
     "maintainerURL": "",
     "description": "Re-themes MagicMirror² to look like a beautiful digital photo wall display. It adds a new font, styles, redesigned clock and weather displays, and rotating background image pulled from unsplash.com.",
     "issues": [
-      "There is no `package.json`. We need this file to gather information about the module."
+      "There is no `package.json`. We need this file to gather information about the module for the website."
     ]
   },
   {
@@ -13496,7 +13496,7 @@
     "maintainerURL": "",
     "description": "Keeps an eye on your UI and quits app in case the UI crashes. If you combine this with the PM2 process manager, MM2 will automaticly restart after a UI failure.",
     "issues": [
-      "There is no `package.json`. We need this file to gather information about the module."
+      "There is no `package.json`. We need this file to gather information about the module for the website."
     ]
   },
   {
@@ -13507,7 +13507,7 @@
     "maintainerURL": "",
     "description": "A simple Water Reminder Module.",
     "issues": [
-      "There is no `package.json`. We need this file to gather information about the module."
+      "There is no `package.json`. We need this file to gather information about the module for the website."
     ]
   },
   {
@@ -13588,7 +13588,7 @@
     "maintainerURL": "https://github.com/BrianHepler",
     "description": "Dynamically loaded weather image background from Unsplash. This is a plugin of other weather modules.",
     "issues": [
-      "There is no `package.json`. We need this file to gather information about the module."
+      "There is no `package.json`. We need this file to gather information about the module for the website."
     ]
   },
   {
@@ -13599,7 +13599,7 @@
     "maintainerURL": "https://github.com/mtatsuma",
     "description": "Display a weather forecast chart using <a target=\"_blank\" href=\"https://openweathermap.org\">OpenWeather</a> API and <a target=\"_blank\" href=\"https://www.chartjs.org\">Chart.js</a>, an open-source library to plot data on charts.",
     "issues": [
-      "There is no `package.json`. We need this file to gather information about the module."
+      "There is no `package.json`. We need this file to gather information about the module for the website."
     ]
   },
   {
@@ -13610,7 +13610,7 @@
     "maintainerURL": "https://github.com/fruestueck",
     "description": "Display clothing depending on the weather forecast and your personal preferences.",
     "issues": [
-      "There is no `package.json`. We need this file to gather information about the module."
+      "There is no `package.json`. We need this file to gather information about the module for the website."
     ]
   },
   {
@@ -13621,7 +13621,7 @@
     "maintainerURL": "",
     "description": "This is a new version of the weather forecast module. This one does not come as a default module. This version has been edited to allow the days of the week to span left to right, each with its own weather icon and details. Uses openweathermap.org API Key.",
     "issues": [
-      "There is no `package.json`. We need this file to gather information about the module."
+      "There is no `package.json`. We need this file to gather information about the module for the website."
     ]
   },
   {
@@ -13632,7 +13632,7 @@
     "maintainerURL": "",
     "description": "Weather forecast with rain &amp; temp graphs. Lots of options to turn on &amp; off. Data from OpenWeatherMap API.",
     "issues": [
-      "There is no `package.json`. We need this file to gather information about the module."
+      "There is no `package.json`. We need this file to gather information about the module for the website."
     ]
   },
   {
@@ -13654,7 +13654,7 @@
     "maintainerURL": "",
     "description": "Squeeze or stretch it. Watch it respond by reformatting itself. Fully customizable. Also driven by Darksky API.",
     "issues": [
-      "There is no `package.json`. We need this file to gather information about the module."
+      "There is no `package.json`. We need this file to gather information about the module for the website."
     ],
     "outdated": "Deprecated. DarkSky API no longer works since 2023-03-31."
   },
@@ -13779,7 +13779,7 @@
     "maintainerURL": "",
     "description": "Inserting, evaluating, excuting external web widgets on MM.",
     "issues": [
-      "There is no `package.json`. We need this file to gather information about the module."
+      "There is no `package.json`. We need this file to gather information about the module for the website."
     ]
   },
   {
@@ -13807,7 +13807,7 @@
     "maintainerURL": "",
     "description": "Displays WiFi password and QRCode.",
     "issues": [
-      "There is no `package.json`. We need this file to gather information about the module."
+      "There is no `package.json`. We need this file to gather information about the module for the website."
     ]
   },
   {
@@ -13818,7 +13818,7 @@
     "maintainerURL": "",
     "description": "Displays random Wikipedia snippets.",
     "issues": [
-      "There is no `package.json`. We need this file to gather information about the module."
+      "There is no `package.json`. We need this file to gather information about the module for the website."
     ]
   },
   {
@@ -13829,7 +13829,7 @@
     "maintainerURL": "",
     "description": "Adds the windy weather map which covers the whole screen.",
     "issues": [
-      "There is no `package.json`. We need this file to gather information about the module."
+      "There is no `package.json`. We need this file to gather information about the module for the website."
     ]
   },
   {
@@ -13854,7 +13854,7 @@
     "maintainerURL": "",
     "description": "Get the word of the day, its definition, and origin.",
     "issues": [
-      "There is no `package.json`. We need this file to gather information about the module."
+      "There is no `package.json`. We need this file to gather information about the module for the website."
     ]
   },
   {
@@ -13865,7 +13865,7 @@
     "maintainerURL": "",
     "description": "Displays the Merriam-Webster word of the day along with its part of speech, pronunciation, definition, and an example.",
     "issues": [
-      "There is no `package.json`. We need this file to gather information about the module."
+      "There is no `package.json`. We need this file to gather information about the module for the website."
     ]
   },
   {
@@ -13876,7 +13876,7 @@
     "maintainerURL": "",
     "description": "Display local time of several locations.",
     "issues": [
-      "There is no `package.json`. We need this file to gather information about the module."
+      "There is no `package.json`. We need this file to gather information about the module for the website."
     ]
   },
   {
@@ -13933,7 +13933,7 @@
     "maintainerURL": "",
     "description": "Weather Underground Forecast Module Retrieves forecast from Weather Underground. Also adds a percentage probability of precipitation to forecast display.",
     "issues": [
-      "There is no `package.json`. We need this file to gather information about the module."
+      "There is no `package.json`. We need this file to gather information about the module for the website."
     ]
   },
   {
@@ -13944,7 +13944,7 @@
     "maintainerURL": "",
     "description": "Display weather based on wunderground API.",
     "issues": [
-      "There is no `package.json`. We need this file to gather information about the module."
+      "There is no `package.json`. We need this file to gather information about the module for the website."
     ]
   },
   {
@@ -13955,7 +13955,7 @@
     "maintainerURL": "",
     "description": "Nope! Not World War I. It's <strong>Weather Without Icons</strong>. Up to the minute weather. Full weather information, yet a small footprint.",
     "issues": [
-      "There is no `package.json`. We need this file to gather information about the module."
+      "There is no `package.json`. We need this file to gather information about the module for the website."
     ]
   },
   {
@@ -14008,7 +14008,7 @@
     "maintainerURL": "",
     "description": "Displays car routes on the map, using Yandex.Maps API.",
     "issues": [
-      "There is no `package.json`. We need this file to gather information about the module."
+      "There is no `package.json`. We need this file to gather information about the module for the website."
     ]
   },
   {
@@ -14034,7 +14034,7 @@
     "maintainerURL": "",
     "description": "Instead of default compliments with classical poems, just supports Chinese.随机产生一句古诗词。.",
     "issues": [
-      "There is no `package.json`. We need this file to gather information about the module."
+      "There is no `package.json`. We need this file to gather information about the module for the website."
     ]
   },
   {
@@ -14088,7 +14088,7 @@
     "maintainerURL": "",
     "description": "Enables easy integration of YouTube videos.",
     "issues": [
-      "There is no `package.json`. We need this file to gather information about the module."
+      "There is no `package.json`. We need this file to gather information about the module for the website."
     ]
   },
   {
@@ -14131,7 +14131,7 @@
     "maintainerURL": "",
     "description": "The official Yr Nowcast module for MagicMirror², which displays data from <a target=\"_blank\" href=\"https://www.yr.no\">Yr</a>. Nowcast data is only available for some Norwegian locations covered by the Norwegian weather radars. Yr is a weather service from the Norwegian Broadcasting Corporation and the Norwegian Meteorological Institute.",
     "issues": [
-      "There is no `package.json`. We need this file to gather information about the module."
+      "There is no `package.json`. We need this file to gather information about the module for the website."
     ]
   },
   {
@@ -14142,7 +14142,7 @@
     "maintainerURL": "",
     "description": "Displays weather forecast from <a target=\"_blank\" href=\"https://www.yr.no\">Yr</a>. Yr is a weather service from the Norwegian Broadcasting Corporation and the Norwegian Meteorological Institute.",
     "issues": [
-      "There is no `package.json`. We need this file to gather information about the module."
+      "There is no `package.json`. We need this file to gather information about the module for the website."
     ]
   },
   {
@@ -14166,7 +14166,7 @@
     "maintainerURL": "https://github.com/PierreGode",
     "description": "Display ZAPTEC charging API.",
     "issues": [
-      "There is no `package.json`. We need this file to gather information about the module."
+      "There is no `package.json`. We need this file to gather information about the module for the website."
     ]
   },
   {

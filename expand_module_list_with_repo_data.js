@@ -139,7 +139,7 @@ async function addInformationFromPackageJson(moduleList) {
     } catch (error) {
       if (error.code === "ENOENT") {
         module.issues.push(
-          "There is no `package.json`. We need this file to gather information about the module."
+          "There is no `package.json`. We need this file to gather information about the module for the website."
         );
       } else {
         module.issues.push(
