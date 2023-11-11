@@ -63,14 +63,6 @@ This script goes through all cloned modules and performs various checks. The res
 ## Ideas / To do
 
 - Website
-  - Add little statistics:
-    - last update
-    - module amount
-    - amount of different maintainer
-    - amount of modules with images
-    - amount of GitHub repos
-    - amount of GitLab repos
-    - amount of bitbucket repos
   - Add filter for outdated modules.
 - Write instructions: “How do I get my module presented perfectly in the list?”
 - Handle empty keywords array + handle empty tags array (advise: Add a few meaningful terms to the keywords in the package.json. Not just “mirror” or “module”.)
@@ -79,7 +71,6 @@ This script goes through all cloned modules and performs various checks. The res
 - optimize progress information while running `npm run all`
 - rewrite python scripts in javascript
 - Compatibility with the module list of `MMM-Remote-Control`: <https://github.com/Jopyth/MMM-Remote-Control/blob/master/modules.json>
-- Create test result overview (like a statistic).
 - Statistics per module
   - last update date
   - number of unresolved issues to guess the module’s activation level or popularity

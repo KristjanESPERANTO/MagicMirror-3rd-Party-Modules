@@ -122,20 +122,26 @@ def check_modules():
 
     modules_json_file = open('./docs/modules.temp.2.json', encoding="utf-8")
     modules = json.load(modules_json_file)
+    stats = {
+        "module-counter": 0,
+        "modules-with-image-counter": 0,
+        "modules-with-issues-counter": 0,
+        "issue-counter": 0,
+        "last-update": datetime.utcnow().strftime('%Y-%m-%d %H:%M:%S'),
+        "maintainer": {},
+        "repository-hoster": {}
+    }
 
-    module_counter = 0
-    modules_with_issues_counter = 0
-    issue_counter = 0
     markdown_output_modules = ""
 
     for module in modules:
 
-        module_counter += 1
+        stats["module-counter"] += 1
 
         module_directory = module["name"] + "-----" + module["maintainer"]
 
         # Print progress
-        progress = f"{module_counter:4}/{len(modules)}\r"
+        progress = f"{stats['module-counter']:4}/{len(modules)}\r"
         print(progress, end='')
 
         if not module["name"].startswith("MMM-"):
@@ -167,34 +173,55 @@ def check_modules():
             module["issues"] = ["Error: It appears that the repository could not be cloned. Check the URL."]
 
         if "outdated" in module or len(module["issues"]) > 0:
-            modules_with_issues_counter += 1
+            stats["modules-with-issues-counter"] += 1
             markdown_output_modules += f"\n### [{module['name']} by {module['maintainer']}]({module['url']})\n\n"
 
             if "outdated" in module:
-                issue_counter += 1
+                stats["issue-counter"] += 1
                 markdown_output_modules += f"0. This module is outdated: {module['outdated']}\n"
 
             if len(module["issues"]) > 0:
-                issue_counter += len(module["issues"])
+                stats["issue-counter"] += len(module["issues"])
                 for idx, issue in enumerate(module["issues"]):
                     markdown_output_modules += f"{idx+1}. {issue}\n"
 
         module["last_commit"] = subprocess.run(f"cd ./modules/{module_directory} && git log -1 --format='%as' && cd ..",
                                                stdout=subprocess.PIPE, shell=True, check=False).stdout.decode().rstrip()
 
-    print(f"{module_counter} modules analyzed. For results see file result.md.           ")
+        if "image" in module:
+            stats["modules-with-image-counter"] += 1
+
+        repository_hoster = module["url"].split(".")[0].split("/")[2]
+        if repository_hoster not in stats["repository-hoster"]:
+            stats["repository-hoster"][repository_hoster] = 1
+        else:
+            stats["repository-hoster"][repository_hoster] += 1
+
+        if module["maintainer"] not in stats["maintainer"]:
+            stats["maintainer"][module["maintainer"]] = 1
+        else:
+            stats["maintainer"][module["maintainer"]] += 1
+
+    print(f"{stats['module-counter']} modules analyzed. For results see file result.md.           ")
 
     # Prepearing the markdown output
     markdown_output =   "# Result of the module analysis\n\n"
-    markdown_output += f"Timestamp: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}\n\n"
+    markdown_output += f"Last update: {stats['last-update']} UTC\n\n"
     markdown_output +=  "## Statistics\n\n"
-    markdown_output +=  "|                     | number     |\n"
-    markdown_output +=  "|:--------------------|:----------:|\n"
-    markdown_output += f"| modules analyzed    | {             module_counter:^10} |\n"
-    markdown_output += f"| modules with issues | {modules_with_issues_counter:^10} |\n"
-    markdown_output += f"| issues              | {              issue_counter:^10} |\n\n"
-    markdown_output +=  "## Modules with issues\n"
+    markdown_output +=  "|                      | number   |\n"
+    markdown_output +=  "|:---------------------|:--------:|\n"
+    markdown_output += f"| modules analyzed     | {             stats['module-counter']:>6}   |\n"
+    markdown_output += f"| maintainer           | {            len(stats['maintainer']):>6}   |\n"
+    markdown_output += f"| modules with issues  | {stats['modules-with-issues-counter']:>6}   |\n"
+    markdown_output += f"| issues               | {              stats['issue-counter']:>6}   |\n"
+
+    for hoster, number in stats["repository-hoster"].items():
+        markdown_output += f"| modules at {hoster:9} | {                              number:>6}   |\n"
+
+    markdown_output +=  "\n## Modules with issues\n"
     markdown_output += markdown_output_modules
+
+    stats["maintainer"] = dict(sorted(stats["maintainer"].items(), key=lambda x: x[1], reverse=True))
 
     # Writing to markdown
     with open("result.md", "w", encoding="utf-8") as outputfile:
@@ -214,5 +241,12 @@ def check_modules():
     with open("./docs/modules.min.json", "w", encoding="utf-8") as outfile:
         outfile.write(json_object)
 
+    # Statistics
+    # Serializing json
+    statistics_json_object = json.dumps(stats, indent=2)
+
+    # Writing to modules.json
+    with open("./docs/stats.json", "w", encoding="utf-8") as outfile:
+        outfile.write(statistics_json_object)
 
 check_modules()

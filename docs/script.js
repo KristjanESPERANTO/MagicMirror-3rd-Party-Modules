@@ -52,8 +52,8 @@ function displayCards() {
     if (cardData.tags) {
       card.innerHTML += `
                 <p><b>Tags:</b> ${cardData.tags
-          .map((tag) => `#${tag}`)
-          .join(" ")}</p>
+                  .map((tag) => `#${tag}`)
+                  .join(" ")}</p>
               `;
     }
     cardContainer.appendChild(card);
@@ -127,6 +127,11 @@ function removeSelectedMarkingFromTagsAndCards() {
   // Remove the "selected" class from all tag buttons and cards
   const allURLs = document.querySelectorAll(".tag-button, .card");
   allURLs.forEach((url) => url.classList.remove("selected"));
+}
+
+function displayStatistics(data) {
+  const lastUpdateDiv = document.getElementById("last-update");
+  lastUpdateDiv.innerHTML = `Last update: ${data["last-update"]} UTC`;
 }
 
 function updateDisplay() {
@@ -226,9 +231,18 @@ sortDropdown.addEventListener("change", () => {
 });
 
 async function initiate() {
-  const apiUrl = "modules.min.json";
+  const statisticsFile = "stats.json";
   try {
-    const response = await fetch(apiUrl);
+    const response = await fetch(statisticsFile);
+    const data = await response.json();
+    displayStatistics(data);
+  } catch (error) {
+    console.error("Error fetching data:", error);
+  }
+
+  const modulesFile = "modules.min.json";
+  try {
+    const response = await fetch(modulesFile);
     const data = await response.json();
     allData = data;
     filteredCards = data;

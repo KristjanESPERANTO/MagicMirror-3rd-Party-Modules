@@ -155,6 +155,14 @@ main {
   background-color: #f99;
 }
 
+#top-left {
+  text-align: left;
+  font-size: var(--font-size-xsmall);
+  position: absolute;
+  left: 20px;
+  top: 20px;
+}
+
 #top-right {
   position: absolute;
   right: 20px;
@@ -228,6 +236,7 @@ main {
 }
 
 @media (0 <= width <= 800px) {
+  #top-left,
   #sort-container {
     display: none;
   }

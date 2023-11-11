@@ -1,14 +1,18 @@
 # Result of the module analysis
 
-Timestamp: 2023-11-10 23:41:45
+Last update: 2023-11-11 03:57:06 UTC
 
 ## Statistics
 
-|                     | number     |
-|:--------------------|:----------:|
-| modules analyzed    |    1062    |
-| modules with issues |    1041    |
-| issues              |    4018    |
+|                      | number   |
+|:---------------------|:--------:|
+| modules analyzed     |   1062   |
+| maintainer           |    611   |
+| modules with issues  |   1041   |
+| issues               |   4018   |
+| modules at github    |   1053   |
+| modules at gitlab    |      8   |
+| modules at bitbucket |      1   |
 
 ## Modules with issues
 
