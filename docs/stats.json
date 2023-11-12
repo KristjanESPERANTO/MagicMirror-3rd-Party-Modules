@@ -1,9 +1,14 @@
 {
   "module-counter": 1063,
   "modules-with-image-counter": 426,
-  "modules-with-issues-counter": 1039,
-  "issue-counter": 4008,
-  "last-update": "2023-11-11 18:43:48",
+  "modules-with-issues-counter": 1038,
+  "issue-counter": 4006,
+  "last-update": "2023-11-12 15:36:41",
+  "repository-hoster": {
+    "github": 1054,
+    "gitlab": 8,
+    "bitbucket": 1
+  },
   "maintainer": {
     "mykle1": 49,
     "MMRIZE": 16,
@@ -617,10 +622,5 @@
     "Yr": 1,
     "fmandal": 1,
     "shmulyeng": 1
-  },
-  "repository-hoster": {
-    "github": 1054,
-    "gitlab": 8,
-    "bitbucket": 1
   }
 }

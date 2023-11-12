@@ -128,8 +128,8 @@ def check_modules():
         "modules-with-issues-counter": 0,
         "issue-counter": 0,
         "last-update": datetime.utcnow().strftime('%Y-%m-%d %H:%M:%S'),
-        "maintainer": {},
-        "repository-hoster": {}
+        "repository-hoster": {},
+        "maintainer": {}
     }
 
     markdown_output_modules = ""
