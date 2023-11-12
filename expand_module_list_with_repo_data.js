@@ -99,7 +99,7 @@ async function addInformationFromPackageJson(moduleList) {
           .filter((tag) => !tagsToRemove.includes(tag));
       } else {
         module.issues.push(
-          `No keywords in 'package.json'. We would use them as tags on the website.`
+          `There are no keywords in 'package.json'. We would use them as tags on the module list page.`
         );
       }
 
@@ -139,7 +139,7 @@ async function addInformationFromPackageJson(moduleList) {
     } catch (error) {
       if (error.code === "ENOENT") {
         module.issues.push(
-          "There is no `package.json`. We need this file to gather information about the module for the website."
+          "There is no `package.json`. We need this file to gather information about the module for the module list page."
         );
       } else {
         module.issues.push(
