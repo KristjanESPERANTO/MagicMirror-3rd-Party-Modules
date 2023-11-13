@@ -1,16 +1,16 @@
 # Result of the module analysis
 
-Last update: 2023-11-12 15:36:41 UTC
+Last update: 2023-11-13 17:56:07 UTC
 
 ## Statistics
 
 |                      | number   |
 |:---------------------|:--------:|
-| modules analyzed     |   1063   |
+| modules analyzed     |   1064   |
 | maintainer           |    612   |
-| modules with issues  |   1038   |
-| issues               |   4006   |
-| modules at github    |   1054   |
+| modules with issues  |   1039   |
+| issues               |   4012   |
+| modules at github    |   1055   |
 | modules at gitlab    |      8   |
 | modules at bitbucket |      1   |
 
@@ -668,7 +668,7 @@ Last update: 2023-11-12 15:36:41 UTC
 
 ### [MMM-CalendarExt3 by MMRIZE](https://github.com/MMRIZE/MMM-CalendarExt3)
 
-1. No image found.
+1. An error occurred while getting information from 'package.json': Error: Invalid version: "1.7,0"
 
 ### [MMM-CalendarExt3Agenda by MMRIZE](https://github.com/MMRIZE/MMM-CalendarExt3Agenda)
 
@@ -5437,6 +5437,15 @@ Last update: 2023-11-12 15:36:41 UTC
 13. Typo: Found `MagicMirror2` in file `installer.sh`: Replace it with `MagicMirror²`.
 14. Recommendation: Found `XMLHttpRequest` in file `jsmpeg.min.js`: Replace it with built-in fetch.
 15. Deprecated: Found `omxplayer` in file `preinstall.sh`: Try to replace it with `vlc`.
+
+### [MMM-RTSPtoWeb by shbatm](https://github.com/shbatm/MMM-RTSPtoWeb)
+
+1. `package.json` issue: No description
+2. There are no keywords in 'package.json'. We would use them as tags on the module list page.
+3. No image found.
+4. Typo: Found `MagicMirror2` in file `README.md`: Replace it with `MagicMirror²`.
+5. Recommendation: Found `'node-fetch'` in file `node_helper.js`: Replace it with built-in fetch.
+6. Recommendation: Found `"node-fetch"` in file `package.json`: Replace it with built-in fetch.
 
 ### [MMM-RubbishCollection by nikobix](https://github.com/nikobix/MMM-RubbishCollection)
 

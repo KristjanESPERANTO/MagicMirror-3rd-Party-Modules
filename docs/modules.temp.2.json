@@ -1327,13 +1327,8 @@
     "maintainerURL": "",
     "description": "Extended calendar and event view.",
     "issues": [
-      "No image found."
-    ],
-    "tags": [
-      "calendar",
-      "calext3"
-    ],
-    "license": "MIT"
+      "An error occurred while getting information from 'package.json': Error: Invalid version: \"1.7,0\""
+    ]
   },
   {
     "name": "MMM-CalendarExt3Agenda",
@@ -10760,6 +10755,20 @@
     ],
     "license": "MIT",
     "image": "screenshot.jpg"
+  },
+  {
+    "name": "MMM-RTSPtoWeb",
+    "url": "https://github.com/shbatm/MMM-RTSPtoWeb",
+    "id": "shbatm/MMM-RTSPtoWeb",
+    "maintainer": "shbatm",
+    "maintainerURL": "",
+    "description": "Viewing IP cameras RTSP stream in real time using WebRTC technology.",
+    "issues": [
+      "`package.json` issue: No description",
+      "There are no keywords in 'package.json'. We would use them as tags on the module list page.",
+      "No image found."
+    ],
+    "license": "ISC"
   },
   {
     "name": "MMM-RubbishCollection",

@@ -1,11 +1,11 @@
 {
-  "module-counter": 1063,
+  "module-counter": 1064,
   "modules-with-image-counter": 426,
-  "modules-with-issues-counter": 1038,
-  "issue-counter": 4006,
-  "last-update": "2023-11-12 15:36:41",
+  "modules-with-issues-counter": 1039,
+  "issue-counter": 4012,
+  "last-update": "2023-11-13 17:56:07",
   "repository-hoster": {
-    "github": 1054,
+    "github": 1055,
     "gitlab": 8,
     "bitbucket": 1
   },
@@ -14,8 +14,8 @@
     "MMRIZE": 16,
     "fewieden": 15,
     "Tom-Hirschberger": 13,
+    "shbatm": 10,
     "shin10": 10,
-    "shbatm": 9,
     "retroflex": 8,
     "grenagit": 8,
     "nigel-daniels": 7,

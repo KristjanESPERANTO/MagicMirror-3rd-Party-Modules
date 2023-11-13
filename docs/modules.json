@@ -1698,14 +1698,9 @@
     "maintainerURL": "",
     "description": "Extended calendar and event view.",
     "issues": [
-      "No image found."
+      "An error occurred while getting information from 'package.json': Error: Invalid version: \"1.7,0\""
     ],
-    "tags": [
-      "calendar",
-      "calext3"
-    ],
-    "license": "MIT",
-    "last_commit": "2023-10-19"
+    "last_commit": "2023-11-13"
   },
   {
     "name": "MMM-CalendarExt3Agenda",
@@ -10100,7 +10095,7 @@
     ],
     "license": "MIT",
     "image": "graphics-c40-electric.jpg",
-    "last_commit": "2022-03-28"
+    "last_commit": "2023-11-13"
   },
   {
     "name": "MMM-MyWastePickup",
@@ -10463,7 +10458,7 @@
     ],
     "license": "MIT",
     "image": ".github-preview.bubbles.jpg",
-    "last_commit": "2023-11-10"
+    "last_commit": "2023-11-13"
   },
   {
     "name": "MMM-Netatmo-Presence",
@@ -13906,6 +13901,24 @@
     "last_commit": "2022-10-06"
   },
   {
+    "name": "MMM-RTSPtoWeb",
+    "url": "https://github.com/shbatm/MMM-RTSPtoWeb",
+    "id": "shbatm/MMM-RTSPtoWeb",
+    "maintainer": "shbatm",
+    "maintainerURL": "",
+    "description": "Viewing IP cameras RTSP stream in real time using WebRTC technology.",
+    "issues": [
+      "`package.json` issue: No description",
+      "There are no keywords in 'package.json'. We would use them as tags on the module list page.",
+      "No image found.",
+      "Typo: Found `MagicMirror2` in file `README.md`: Replace it with `MagicMirror\u00b2`.",
+      "Recommendation: Found `'node-fetch'` in file `node_helper.js`: Replace it with built-in fetch.",
+      "Recommendation: Found `\"node-fetch\"` in file `package.json`: Replace it with built-in fetch."
+    ],
+    "license": "ISC",
+    "last_commit": "2022-10-05"
+  },
+  {
     "name": "MMM-RubbishCollection",
     "url": "https://github.com/nikobix/MMM-RubbishCollection",
     "id": "nikobix/MMM-RubbishCollection",
@@ -16139,7 +16152,7 @@
     "tags": [],
     "license": "MIT",
     "image": "images-logo.jpg",
-    "last_commit": "2023-09-16"
+    "last_commit": "2023-11-13"
   },
   {
     "name": "MMM-tns",

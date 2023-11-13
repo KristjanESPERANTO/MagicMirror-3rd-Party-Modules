@@ -7284,6 +7284,15 @@
     "issues": []
   },
   {
+    "name": "MMM-RTSPtoWeb",
+    "url": "https://github.com/shbatm/MMM-RTSPtoWeb",
+    "id": "shbatm/MMM-RTSPtoWeb",
+    "maintainer": "shbatm",
+    "maintainerURL": "",
+    "description": "Viewing IP cameras RTSP stream in real time using WebRTC technology.",
+    "issues": []
+  },
+  {
     "name": "MMM-RubbishCollection",
     "url": "https://github.com/nikobix/MMM-RubbishCollection",
     "id": "nikobix/MMM-RubbishCollection",
