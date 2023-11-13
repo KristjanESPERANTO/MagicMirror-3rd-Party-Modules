@@ -26,8 +26,7 @@ def get_modules():
             path = Path(f"./modules_temp/{module_name}-----{module_owner}")
 
             print(
-                f"\n########   {module_counter:4}: {module_name} by {module_owner}"
-                f"\n- I - {module_url:4}"
+                f"\n+++   {module_counter:4}: {module_name} by {module_owner} - {module_url:4}"
                 # f"\n      {module_description}"
             )
 

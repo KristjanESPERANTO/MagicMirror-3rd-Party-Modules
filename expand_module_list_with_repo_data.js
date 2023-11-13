@@ -59,7 +59,7 @@ async function findAndResizeImage(moduleName, moduleMaintainer) {
 // Gather information from package.json
 async function addInformationFromPackageJson(moduleList) {
   for (const module of moduleList) {
-    console.log(`+++ Module: ${module.name} by ${module.maintainer}`);
+    console.log(`+++ ${module.name} by ${module.maintainer}`);
     try {
       // Get package.json
       const filePath = `./modules/${module.name}-----${module.maintainer}/package.json`;
