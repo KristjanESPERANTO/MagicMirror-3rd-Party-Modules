@@ -2069,6 +2069,15 @@
     "issues": []
   },
   {
+    "name": "MMM-EnvCanada",
+    "url": "https://github.com/CharlesMorris78/MMM-EnvCanada",
+    "id": "CharlesMorris78/MMM-EnvCanada",
+    "maintainer": "CharlesMorris78",
+    "maintainerURL": "",
+    "description": "Module to display weather forecast information from Environment Canada.",
+    "issues": []
+  },
+  {
     "name": "MMM-EOL",
     "url": "https://github.com/mykle1/MMM-EOL",
     "id": "mykle1/MMM-EOL",
@@ -4611,7 +4620,8 @@
     "maintainer": "masters1222",
     "maintainerURL": "",
     "description": "Simple player to play your music.",
-    "issues": []
+    "issues": [],
+    "outdated": "Abandoned. No reactions to issues since years. No installation instructions. It no longer seems to work."
   },
   {
     "name": "MM-Remote",
@@ -5216,15 +5226,6 @@
     "maintainer": "htilburgs",
     "maintainerURL": "",
     "description": "MyPrayerTimes is a simple module, that calculate prayer times for any location around the world, based on a variety of calculation methods currently used in Muslim communities using the Aladhan API.",
-    "issues": []
-  },
-  {
-    "name": "MMM-MyQ",
-    "url": "https://github.com/parnic/MMM-MyQ",
-    "id": "parnic/MMM-MyQ",
-    "maintainer": "parnic",
-    "maintainerURL": "",
-    "description": "Display status and allow control of MyQ garage door opener devices.",
     "issues": []
   },
   {

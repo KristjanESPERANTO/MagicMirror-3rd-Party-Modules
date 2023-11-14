@@ -3849,6 +3849,19 @@
     "last_commit": "2023-06-17"
   },
   {
+    "name": "MMM-EnvCanada",
+    "url": "https://github.com/CharlesMorris78/MMM-EnvCanada",
+    "id": "CharlesMorris78/MMM-EnvCanada",
+    "maintainer": "CharlesMorris78",
+    "maintainerURL": "",
+    "description": "Module to display weather forecast information from Environment Canada.",
+    "issues": [
+      "There is no `package.json`. We need this file to gather information about the module for the module list page.",
+      "Typo: Found `Magic Mirror` in file `README.md`: Replace it with `MagicMirror\u00b2`."
+    ],
+    "last_commit": "2023-08-18"
+  },
+  {
     "name": "MMM-EOL",
     "url": "https://github.com/mykle1/MMM-EOL",
     "id": "mykle1/MMM-EOL",
@@ -8700,6 +8713,7 @@
       "Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror\u00b2`.",
       "Warning: No LICENSE file."
     ],
+    "outdated": "Abandoned. No reactions to issues since years. No installation instructions. It no longer seems to work.",
     "last_commit": "2016-05-04"
   },
   {
@@ -9869,29 +9883,6 @@
     "last_commit": "2020-04-02"
   },
   {
-    "name": "MMM-MyQ",
-    "url": "https://github.com/parnic/MMM-MyQ",
-    "id": "parnic/MMM-MyQ",
-    "maintainer": "parnic",
-    "maintainerURL": "",
-    "description": "Display status and allow control of MyQ garage door opener devices.",
-    "issues": [
-      "No image found.",
-      "Recommendation: Found `uses: actions/checkout@v3` in file `nodejs.yml`: Replace it with v4.",
-      "Deprecated: Found `node-version: [16` in file `nodejs.yml`: Update to current version.",
-      "Typo: Found `Magic Mirror` in file `MMM-MyQ.js`: Replace it with `MagicMirror\u00b2`.",
-      "Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror\u00b2`.",
-      "Typo: Found `MagicMirror2` in file `package.json`: Replace it with `MagicMirror\u00b2`."
-    ],
-    "tags": [
-      "myq",
-      "chamberlain",
-      "liftmaster"
-    ],
-    "license": "MIT",
-    "last_commit": "2023-09-12"
-  },
-  {
     "name": "MMM-MyScoreboard",
     "url": "https://github.com/jclarke0000/MMM-MyScoreboard",
     "id": "jclarke0000/MMM-MyScoreboard",
@@ -10458,7 +10449,7 @@
     ],
     "license": "MIT",
     "image": ".github-preview.bubbles.jpg",
-    "last_commit": "2023-11-13"
+    "last_commit": "2023-11-14"
   },
   {
     "name": "MMM-Netatmo-Presence",
@@ -12693,7 +12684,7 @@
     ],
     "license": "MIT",
     "image": "images-CarCharging.jpg",
-    "last_commit": "2023-09-24"
+    "last_commit": "2023-11-13"
   },
   {
     "name": "MMM-PrayerTime",

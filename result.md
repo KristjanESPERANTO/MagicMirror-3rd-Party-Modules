@@ -1,15 +1,15 @@
 # Result of the module analysis
 
-Last update: 2023-11-13 17:56:07 UTC
+Last update: 2023-11-14 21:20:46 UTC
 
 ## Statistics
 
 |                      | number   |
 |:---------------------|:--------:|
 | modules analyzed     |   1064   |
-| maintainer           |    612   |
+| maintainer           |    613   |
 | modules with issues  |   1039   |
-| issues               |   4012   |
+| issues               |   4009   |
 | modules at github    |   1055   |
 | modules at gitlab    |      8   |
 | modules at bitbucket |      1   |
@@ -1488,6 +1488,11 @@ Last update: 2023-11-13 17:56:07 UTC
 
 1. There is no `package.json`. We need this file to gather information about the module for the module list page.
 2. Recommendation: Found `"node-fetch"` in file `node_helper.js`: Replace it with built-in fetch.
+
+### [MMM-EnvCanada by CharlesMorris78](https://github.com/CharlesMorris78/MMM-EnvCanada)
+
+1. There is no `package.json`. We need this file to gather information about the module for the module list page.
+2. Typo: Found `Magic Mirror` in file `README.md`: Replace it with `MagicMirror²`.
 
 ### [MMM-EOL by mykle1](https://github.com/mykle1/MMM-EOL)
 
@@ -3394,6 +3399,7 @@ Last update: 2023-11-13 17:56:07 UTC
 
 ### [mm-music-player by masters1222](https://github.com/masters1222/mm-music-player)
 
+0. This module is outdated: Abandoned. No reactions to issues since years. No installation instructions. It no longer seems to work.
 1. There is no `package.json`. We need this file to gather information about the module for the module list page.
 2. Recommendation: Module name doesn't follow the recommended pattern (it doesn't start with `MMM-`). Consider renaming your module.
 3. Typo: Found `Magic Mirror` in file `README.md`: Replace it with `MagicMirror²`.
@@ -3867,15 +3873,6 @@ Last update: 2023-11-13 17:56:07 UTC
 
 1. There are no keywords in 'package.json'. We would use them as tags on the module list page.
 2. Deprecated: Found `require('request')` in file `node_helper.js`: Replace it with built-in fetch.
-
-### [MMM-MyQ by parnic](https://github.com/parnic/MMM-MyQ)
-
-1. No image found.
-2. Recommendation: Found `uses: actions/checkout@v3` in file `nodejs.yml`: Replace it with v4.
-3. Deprecated: Found `node-version: [16` in file `nodejs.yml`: Update to current version.
-4. Typo: Found `Magic Mirror` in file `MMM-MyQ.js`: Replace it with `MagicMirror²`.
-5. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
-6. Typo: Found `MagicMirror2` in file `package.json`: Replace it with `MagicMirror²`.
 
 ### [MMM-MyScoreboard by jclarke0000](https://github.com/jclarke0000/MMM-MyScoreboard)
 

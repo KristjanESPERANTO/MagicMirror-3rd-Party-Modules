@@ -3017,6 +3017,17 @@
     ]
   },
   {
+    "name": "MMM-EnvCanada",
+    "url": "https://github.com/CharlesMorris78/MMM-EnvCanada",
+    "id": "CharlesMorris78/MMM-EnvCanada",
+    "maintainer": "CharlesMorris78",
+    "maintainerURL": "",
+    "description": "Module to display weather forecast information from Environment Canada.",
+    "issues": [
+      "There is no `package.json`. We need this file to gather information about the module for the module list page."
+    ]
+  },
+  {
     "name": "MMM-EOL",
     "url": "https://github.com/mykle1/MMM-EOL",
     "id": "mykle1/MMM-EOL",
@@ -6753,7 +6764,8 @@
     "description": "Simple player to play your music.",
     "issues": [
       "There is no `package.json`. We need this file to gather information about the module for the module list page."
-    ]
+    ],
+    "outdated": "Abandoned. No reactions to issues since years. No installation instructions. It no longer seems to work."
   },
   {
     "name": "MM-Remote",
@@ -7664,23 +7676,6 @@
     ],
     "license": "MIT",
     "image": "screenshot.jpg"
-  },
-  {
-    "name": "MMM-MyQ",
-    "url": "https://github.com/parnic/MMM-MyQ",
-    "id": "parnic/MMM-MyQ",
-    "maintainer": "parnic",
-    "maintainerURL": "",
-    "description": "Display status and allow control of MyQ garage door opener devices.",
-    "issues": [
-      "No image found."
-    ],
-    "tags": [
-      "myq",
-      "chamberlain",
-      "liftmaster"
-    ],
-    "license": "MIT"
   },
   {
     "name": "MMM-MyScoreboard",
