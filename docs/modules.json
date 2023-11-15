@@ -379,7 +379,7 @@
       "sweden"
     ],
     "license": "MIT",
-    "last_commit": "2019-04-15"
+    "last_commit": "2023-11-15"
   },
   {
     "name": "MMM-AmbientBrightnessDetection",
@@ -6977,7 +6977,7 @@
       "Typo: Found `Magic Mirror` in file `README.md`: Replace it with `MagicMirror\u00b2`.",
       "Warning: No LICENSE file."
     ],
-    "last_commit": "2020-06-23"
+    "last_commit": "2023-11-15"
   },
   {
     "name": "MMM-IQAir",
@@ -7448,7 +7448,7 @@
       "There is no `package.json`. We need this file to gather information about the module for the module list page.",
       "Warning: No LICENSE file."
     ],
-    "last_commit": "2023-11-09"
+    "last_commit": "2023-11-14"
   },
   {
     "name": "MMM-Koket-by-Sodexo",
@@ -10449,7 +10449,7 @@
     ],
     "license": "MIT",
     "image": ".github-preview.bubbles.jpg",
-    "last_commit": "2023-11-14"
+    "last_commit": "2023-11-15"
   },
   {
     "name": "MMM-Netatmo-Presence",
