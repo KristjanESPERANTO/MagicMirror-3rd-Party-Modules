@@ -1,6 +1,6 @@
 # Result of the module analysis
 
-Last update: 2023-11-16 12:06:46 UTC
+Last update: 2023-11-16 13:33:01 UTC
 
 ## Statistics
 
@@ -668,7 +668,7 @@ Last update: 2023-11-16 12:06:46 UTC
 
 ### [MMM-CalendarExt3 by MMRIZE](https://github.com/MMRIZE/MMM-CalendarExt3)
 
-1. An error occurred while getting information from 'package.json': Error: Invalid version: "1.7,0"
+1. No image found.
 
 ### [MMM-CalendarExt3Agenda by MMRIZE](https://github.com/MMRIZE/MMM-CalendarExt3Agenda)
 

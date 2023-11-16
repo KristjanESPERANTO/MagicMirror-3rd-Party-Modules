@@ -1698,9 +1698,14 @@
     "maintainerURL": "",
     "description": "Extended calendar and event view.",
     "issues": [
-      "An error occurred while getting information from 'package.json': Error: Invalid version: \"1.7,0\""
+      "No image found."
     ],
-    "last_commit": "2023-11-13"
+    "tags": [
+      "calendar",
+      "calext3"
+    ],
+    "license": "MIT",
+    "last_commit": "2023-11-16"
   },
   {
     "name": "MMM-CalendarExt3Agenda",

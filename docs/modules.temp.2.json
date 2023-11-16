@@ -1327,8 +1327,13 @@
     "maintainerURL": "",
     "description": "Extended calendar and event view.",
     "issues": [
-      "An error occurred while getting information from 'package.json': Error: Invalid version: \"1.7,0\""
-    ]
+      "No image found."
+    ],
+    "tags": [
+      "calendar",
+      "calext3"
+    ],
+    "license": "MIT"
   },
   {
     "name": "MMM-CalendarExt3Agenda",
