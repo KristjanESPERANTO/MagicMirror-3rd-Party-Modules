@@ -104,6 +104,7 @@ function displayTagButtonContainer() {
   const tags = [
     "news",
     "public transport",
+    "smarthome",
     "soccer",
     "stock",
     "traffic",
