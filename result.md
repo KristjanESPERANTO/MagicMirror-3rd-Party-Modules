@@ -1,16 +1,16 @@
 # Result of the module analysis
 
-Last update: 2023-11-16 13:33:01 UTC
+Last update: 2023-11-16 21:44:37 UTC
 
 ## Statistics
 
 |                      | number   |
 |:---------------------|:--------:|
-| modules analyzed     |   1064   |
-| maintainer           |    612   |
+| modules analyzed     |   1065   |
+| maintainer           |    613   |
 | modules with issues  |   1039   |
-| issues               |   4009   |
-| modules at github    |   1055   |
+| issues               |   4000   |
+| modules at github    |   1056   |
 | modules at gitlab    |      8   |
 | modules at bitbucket |      1   |
 
@@ -1491,8 +1491,7 @@ Last update: 2023-11-16 13:33:01 UTC
 
 ### [MMM-EnvCanada by CharlesMorris78](https://github.com/CharlesMorris78/MMM-EnvCanada)
 
-1. There is no `package.json`. We need this file to gather information about the module for the module list page.
-2. Typo: Found `Magic Mirror` in file `README.md`: Replace it with `MagicMirror²`.
+1. An error occurred while getting information from 'package.json': Error: Invalid version: "1.1"
 
 ### [MMM-EOL by mykle1](https://github.com/mykle1/MMM-EOL)
 
@@ -2141,10 +2140,11 @@ Last update: 2023-11-16 13:33:01 UTC
 
 1. There are no keywords in 'package.json'. We would use them as tags on the module list page.
 2. Recommendation: Found `axios` in file `GPhotos.js`: Replace it with built-in fetch.
-3. Deprecated: Found `electron-rebuild` in file `README.md`: Replace it with `@electron/rebuild`
-4. Recommendation: Found `require("https")` in file `node_helper.js`: Replace "https" by "node:https".
-5. Deprecated: Found `electron-rebuild` in file `package.json`: Replace it with `@electron/rebuild`
-6. Recommendation: Found `axios` in file `package.json`: Replace it with built-in fetch.
+3. Deprecated: Found `electron-rebuild` in file `INSTALL.md`: Replace it with `@electron/rebuild`
+4. Recommendation: Found `axios` in file `error_to_string.js`: Replace it with built-in fetch.
+5. Recommendation: Found `XMLHttpRequest` in file `error_to_string.js`: Replace it with built-in fetch.
+6. Deprecated: Found `electron-rebuild` in file `package.json`: Replace it with `@electron/rebuild`
+7. Recommendation: Found `axios` in file `package.json`: Replace it with built-in fetch.
 
 ### [MMM-GoogleSheets by ryan-d-williams](https://github.com/ryan-d-williams/MMM-GoogleSheets)
 
@@ -2268,6 +2268,10 @@ Last update: 2023-11-16 13:33:01 UTC
 2. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
 3. Warning: No LICENSE file.
 
+### [MMM-HebrewCalendar by neshkoli](https://github.com/neshkoli/MMM-HebrewCalendar)
+
+1. There is no `package.json`. We need this file to gather information about the module for the module list page.
+
 ### [Hello-Lucy by mykle1](https://github.com/mykle1/Hello-Lucy)
 
 1. Recommendation: Module name doesn't follow the recommended pattern (it doesn't start with `MMM-`). Consider renaming your module.
@@ -2384,11 +2388,9 @@ Last update: 2023-11-16 13:33:01 UTC
 
 ### [MMM-Homematic by Sickboy78](https://github.com/Sickboy78/MMM-Homematic)
 
-1. `package.json` issue: license should be a valid SPDX license expression
-2. No compatible or wrong license field in 'package.json'. Without that, we can't use an image.
-3. Typo: Found `Magic Mirror` in file `MMM-Homematic.js`: Replace it with `MagicMirror²`.
-4. Typo: Found `Magic Mirror` in file `README.md`: Replace it with `MagicMirror²`.
-5. Deprecated: Found `require('request')` in file `node_helper.js`: Replace it with built-in fetch.
+1. Typo: Found `Magic Mirror` in file `MMM-Homematic.js`: Replace it with `MagicMirror²`.
+2. Typo: Found `Magic Mirror` in file `README.md`: Replace it with `MagicMirror²`.
+3. Deprecated: Found `require('request')` in file `node_helper.js`: Replace it with built-in fetch.
 
 ### [MMM-Homematic-Rooms by JFWenisch](https://github.com/JFWenisch/MMM-Homematic-Rooms)
 
@@ -2617,10 +2619,9 @@ Last update: 2023-11-16 13:33:01 UTC
 
 ### [MMM-IndoorTemperature-Endpoint by buxxi](https://github.com/buxxi/MMM-IndoorTemperature-Endpoint)
 
-1. `package.json` issue: No license field.
-2. There are no keywords in 'package.json'. We would use them as tags on the module list page.
+1. There are no keywords in 'package.json'. We would use them as tags on the module list page.
+2. No image found.
 3. Typo: Found `Magic Mirror` in file `README.md`: Replace it with `MagicMirror²`.
-4. Warning: No LICENSE file.
 
 ### [MMM-inspirobot by JonathanAndersonPE](https://github.com/JonathanAndersonPE/MMM-inspirobot)
 
@@ -3008,14 +3009,12 @@ Last update: 2023-11-16 13:33:01 UTC
 ### [MMM-Liquipedia-Dota2 by buxxi](https://github.com/buxxi/MMM-Liquipedia-Dota2)
 
 1. `package.json` issue: No repository field.
-2. `package.json` issue: No license field.
-3. There are no keywords in 'package.json'. We would use them as tags on the module list page.
-4. Typo: Found `Magic Mirror` in file `README.md`: Replace it with `MagicMirror²`.
-5. Recommendation: Found `"node-fetch"` in file `fetch_logos.js`: Replace it with built-in fetch.
-6. Recommendation: Found `"node-fetch"` in file `node_helper.js`: Replace it with built-in fetch.
-7. Typo: Found `Magic Mirror` in file `package.json`: Replace it with `MagicMirror²`.
-8. Recommendation: Found `"node-fetch"` in file `package.json`: Replace it with built-in fetch.
-9. Warning: No LICENSE file.
+2. There are no keywords in 'package.json'. We would use them as tags on the module list page.
+3. Typo: Found `Magic Mirror` in file `README.md`: Replace it with `MagicMirror²`.
+4. Recommendation: Found `"node-fetch"` in file `fetch_logos.js`: Replace it with built-in fetch.
+5. Recommendation: Found `"node-fetch"` in file `node_helper.js`: Replace it with built-in fetch.
+6. Typo: Found `Magic Mirror` in file `package.json`: Replace it with `MagicMirror²`.
+7. Recommendation: Found `"node-fetch"` in file `package.json`: Replace it with built-in fetch.
 
 ### [MMM-Live-Stream-TV by mcintyrehh](https://github.com/mcintyrehh/MMM-Live-Stream-TV)
 
@@ -3356,7 +3355,6 @@ Last update: 2023-11-16 13:33:01 UTC
 
 1. Recommendation: Found `uses: actions/checkout@v3` in file `codeql.yml`: Replace it with v4.
 2. Typo: Found `Magic Mirror` in file `README.MD`: Replace it with `MagicMirror²`.
-3. Recommendation: Found `"node-fetch"` in file `node_helper.js`: Replace it with built-in fetch.
 
 ### [MMM-MieleAtHome by SAR71](https://github.com/SAR71/MMM-MieleAtHome)
 
@@ -3758,7 +3756,6 @@ Last update: 2023-11-16 13:33:01 UTC
 
 1. There is no `package.json`. We need this file to gather information about the module for the module list page.
 2. Typo: Found `Magic Mirror` in file `README.md`: Replace it with `MagicMirror²`.
-3. Warning: No LICENSE file.
 
 ### [MMM-MQTT by jupadin](https://github.com/jupadin/MMM-MQTT)
 
@@ -5976,13 +5973,11 @@ Last update: 2023-11-16 13:33:01 UTC
 ### [MMM-SteamPlaytime by buxxi](https://github.com/buxxi/MMM-SteamPlaytime)
 
 1. `package.json` issue: No repository field.
-2. `package.json` issue: No license field.
-3. There are no keywords in 'package.json'. We would use them as tags on the module list page.
-4. Typo: Found `Magic Mirror` in file `README.md`: Replace it with `MagicMirror²`.
-5. Recommendation: Found `"node-fetch"` in file `node_helper.js`: Replace it with built-in fetch.
-6. Typo: Found `Magic Mirror` in file `package.json`: Replace it with `MagicMirror²`.
-7. Recommendation: Found `"node-fetch"` in file `package.json`: Replace it with built-in fetch.
-8. Warning: No LICENSE file.
+2. There are no keywords in 'package.json'. We would use them as tags on the module list page.
+3. Typo: Found `Magic Mirror` in file `README.md`: Replace it with `MagicMirror²`.
+4. Recommendation: Found `"node-fetch"` in file `node_helper.js`: Replace it with built-in fetch.
+5. Typo: Found `Magic Mirror` in file `package.json`: Replace it with `MagicMirror²`.
+6. Recommendation: Found `"node-fetch"` in file `package.json`: Replace it with built-in fetch.
 
 ### [MMM-stib by danito](https://github.com/danito/MMM-stib)
 
@@ -6040,10 +6035,6 @@ Last update: 2023-11-16 13:33:01 UTC
 2. Typo: Found `Magic Mirror` in file `MMM-SunRiseSet.js`: Replace it with `MagicMirror²`.
 3. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
 4. Deprecated: Found `require('request')` in file `node_helper.js`: Replace it with built-in fetch.
-
-### [MMM-SweepClock by mumblebaj](https://github.com/mumblebaj/MMM-SweepClock)
-
-1. There is no `package.json`. We need this file to gather information about the module for the module list page.
 
 ### [MMM-Swipe by mochman](https://github.com/mochman/MMM-Swipe)
 

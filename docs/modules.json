@@ -3861,10 +3861,9 @@
     "maintainerURL": "",
     "description": "Module to display weather forecast information from Environment Canada.",
     "issues": [
-      "There is no `package.json`. We need this file to gather information about the module for the module list page.",
-      "Typo: Found `Magic Mirror` in file `README.md`: Replace it with `MagicMirror\u00b2`."
+      "An error occurred while getting information from 'package.json': Error: Invalid version: \"1.1\""
     ],
-    "last_commit": "2023-08-18"
+    "last_commit": "2023-11-16"
   },
   {
     "name": "MMM-EOL",
@@ -4594,7 +4593,7 @@
     ],
     "license": "MIT",
     "image": "screenshot_nearbyplanes.jpg",
-    "last_commit": "2023-07-09"
+    "last_commit": "2023-11-16"
   },
   {
     "name": "MMM-Flights",
@@ -5520,14 +5519,15 @@
     "issues": [
       "There are no keywords in 'package.json'. We would use them as tags on the module list page.",
       "Recommendation: Found `axios` in file `GPhotos.js`: Replace it with built-in fetch.",
-      "Deprecated: Found `electron-rebuild` in file `README.md`: Replace it with `@electron/rebuild`",
-      "Recommendation: Found `require(\"https\")` in file `node_helper.js`: Replace \"https\" by \"node:https\".",
+      "Deprecated: Found `electron-rebuild` in file `INSTALL.md`: Replace it with `@electron/rebuild`",
+      "Recommendation: Found `axios` in file `error_to_string.js`: Replace it with built-in fetch.",
+      "Recommendation: Found `XMLHttpRequest` in file `error_to_string.js`: Replace it with built-in fetch.",
       "Deprecated: Found `electron-rebuild` in file `package.json`: Replace it with `@electron/rebuild`",
       "Recommendation: Found `axios` in file `package.json`: Replace it with built-in fetch."
     ],
     "license": "MIT",
     "image": "PublishAppScreen.jpg",
-    "last_commit": "2023-07-17"
+    "last_commit": "2023-11-17"
   },
   {
     "name": "MMM-GoogleSheets",
@@ -5864,6 +5864,18 @@
     "last_commit": "2018-05-19"
   },
   {
+    "name": "MMM-HebrewCalendar",
+    "url": "https://github.com/neshkoli/MMM-HebrewCalendar",
+    "id": "neshkoli/MMM-HebrewCalendar",
+    "maintainer": "neshkoli",
+    "maintainerURL": "https://github.com/neshkoli",
+    "description": "Hebrew calendar in monthly view.",
+    "issues": [
+      "There is no `package.json`. We need this file to gather information about the module for the module list page."
+    ],
+    "last_commit": "2023-11-13"
+  },
+  {
     "name": "Hello-Lucy",
     "url": "https://github.com/mykle1/Hello-Lucy",
     "id": "mykle1/Hello-Lucy",
@@ -6183,15 +6195,17 @@
     "maintainerURL": "https://github.com/Sickboy78",
     "description": "Shows values and warnings from HomeMatic smart home components and system variables as text and/or icons. Highly flexible and customizable design.",
     "issues": [
-      "`package.json` issue: license should be a valid SPDX license expression",
-      "No compatible or wrong license field in 'package.json'. Without that, we can't use an image.",
       "Typo: Found `Magic Mirror` in file `MMM-Homematic.js`: Replace it with `MagicMirror\u00b2`.",
       "Typo: Found `Magic Mirror` in file `README.md`: Replace it with `MagicMirror\u00b2`.",
       "Deprecated: Found `require('request')` in file `node_helper.js`: Replace it with built-in fetch."
     ],
-    "tags": [],
-    "license": "GPL",
-    "last_commit": "2023-10-26"
+    "tags": [
+      "homematic",
+      "smarthome"
+    ],
+    "license": "GPL-3.0-only",
+    "image": "screenshot_01.jpg",
+    "last_commit": "2023-11-16"
   },
   {
     "name": "MMM-Homematic-Rooms",
@@ -6761,12 +6775,12 @@
     "maintainerURL": "",
     "description": "This module exposes a HTTP-endpoint on the MagicMirror\u00b2 that can receive the indoor temperature and then emits that value as notification \"INDOOR_TEMPERATURE\".",
     "issues": [
-      "`package.json` issue: No license field.",
       "There are no keywords in 'package.json'. We would use them as tags on the module list page.",
-      "Typo: Found `Magic Mirror` in file `README.md`: Replace it with `MagicMirror\u00b2`.",
-      "Warning: No LICENSE file."
+      "No image found.",
+      "Typo: Found `Magic Mirror` in file `README.md`: Replace it with `MagicMirror\u00b2`."
     ],
-    "last_commit": "2020-10-18"
+    "license": "MIT",
+    "last_commit": "2023-11-16"
   },
   {
     "name": "MMM-inspirobot",
@@ -7740,16 +7754,16 @@
     "description": "Displays current and upcoming pro matches in Dota2.",
     "issues": [
       "`package.json` issue: No repository field.",
-      "`package.json` issue: No license field.",
       "There are no keywords in 'package.json'. We would use them as tags on the module list page.",
       "Typo: Found `Magic Mirror` in file `README.md`: Replace it with `MagicMirror\u00b2`.",
       "Recommendation: Found `\"node-fetch\"` in file `fetch_logos.js`: Replace it with built-in fetch.",
       "Recommendation: Found `\"node-fetch\"` in file `node_helper.js`: Replace it with built-in fetch.",
       "Typo: Found `Magic Mirror` in file `package.json`: Replace it with `MagicMirror\u00b2`.",
-      "Recommendation: Found `\"node-fetch\"` in file `package.json`: Replace it with built-in fetch.",
-      "Warning: No LICENSE file."
+      "Recommendation: Found `\"node-fetch\"` in file `package.json`: Replace it with built-in fetch."
     ],
-    "last_commit": "2023-08-05"
+    "license": "MIT",
+    "image": "screenshot.jpg",
+    "last_commit": "2023-11-16"
   },
   {
     "name": "MMM-Live-Stream-TV",
@@ -8590,8 +8604,7 @@
     "description": "Displays your Microsoft To Do tasks on your mirror.",
     "issues": [
       "Recommendation: Found `uses: actions/checkout@v3` in file `codeql.yml`: Replace it with v4.",
-      "Typo: Found `Magic Mirror` in file `README.MD`: Replace it with `MagicMirror\u00b2`.",
-      "Recommendation: Found `\"node-fetch\"` in file `node_helper.js`: Replace it with built-in fetch."
+      "Typo: Found `Magic Mirror` in file `README.MD`: Replace it with `MagicMirror\u00b2`."
     ],
     "tags": [
       "todo",
@@ -8599,7 +8612,7 @@
     ],
     "license": "MIT",
     "image": "screenshots-microsoft todo magic mirror module.jpg",
-    "last_commit": "2023-05-21"
+    "last_commit": "2023-11-16"
   },
   {
     "name": "MMM-MieleAtHome",
@@ -9543,10 +9556,9 @@
     "description": "Displays current playing media on a remote machine with a MPRIS2 capable player.",
     "issues": [
       "There is no `package.json`. We need this file to gather information about the module for the module list page.",
-      "Typo: Found `Magic Mirror` in file `README.md`: Replace it with `MagicMirror\u00b2`.",
-      "Warning: No LICENSE file."
+      "Typo: Found `Magic Mirror` in file `README.md`: Replace it with `MagicMirror\u00b2`."
     ],
-    "last_commit": "2019-12-30"
+    "last_commit": "2023-11-16"
   },
   {
     "name": "MMM-MQTT",
@@ -10454,7 +10466,7 @@
     ],
     "license": "MIT",
     "image": ".github-preview.bubbles.jpg",
-    "last_commit": "2023-11-15"
+    "last_commit": "2023-11-16"
   },
   {
     "name": "MMM-Netatmo-Presence",
@@ -15312,15 +15324,15 @@
     "description": "Displays time spent on games on Steam for a specific user.",
     "issues": [
       "`package.json` issue: No repository field.",
-      "`package.json` issue: No license field.",
       "There are no keywords in 'package.json'. We would use them as tags on the module list page.",
       "Typo: Found `Magic Mirror` in file `README.md`: Replace it with `MagicMirror\u00b2`.",
       "Recommendation: Found `\"node-fetch\"` in file `node_helper.js`: Replace it with built-in fetch.",
       "Typo: Found `Magic Mirror` in file `package.json`: Replace it with `MagicMirror\u00b2`.",
-      "Recommendation: Found `\"node-fetch\"` in file `package.json`: Replace it with built-in fetch.",
-      "Warning: No LICENSE file."
+      "Recommendation: Found `\"node-fetch\"` in file `package.json`: Replace it with built-in fetch."
     ],
-    "last_commit": "2023-11-11"
+    "license": "MIT",
+    "image": "screenshot.jpg",
+    "last_commit": "2023-11-16"
   },
   {
     "name": "MMM-stib",
@@ -15496,10 +15508,13 @@
     "maintainer": "mumblebaj",
     "maintainerURL": "https://github.com/mumblebaj",
     "description": "Display a classic railway clock.",
-    "issues": [
-      "There is no `package.json`. We need this file to gather information about the module for the module list page."
+    "issues": [],
+    "tags": [
+      "sweepclock station clock"
     ],
-    "last_commit": "2023-03-19"
+    "license": "ISC",
+    "image": "image.jpg",
+    "last_commit": "2023-11-16"
   },
   {
     "name": "MMM-Swipe",

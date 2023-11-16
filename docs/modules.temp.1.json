@@ -3124,6 +3124,15 @@
     "issues": []
   },
   {
+    "name": "MMM-HebrewCalendar",
+    "url": "https://github.com/neshkoli/MMM-HebrewCalendar",
+    "id": "neshkoli/MMM-HebrewCalendar",
+    "maintainer": "neshkoli",
+    "maintainerURL": "https://github.com/neshkoli",
+    "description": "Hebrew calendar in monthly view.",
+    "issues": []
+  },
+  {
     "name": "Hello-Lucy",
     "url": "https://github.com/mykle1/Hello-Lucy",
     "id": "mykle1/Hello-Lucy",

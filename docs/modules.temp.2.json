@@ -3029,7 +3029,7 @@
     "maintainerURL": "",
     "description": "Module to display weather forecast information from Environment Canada.",
     "issues": [
-      "There is no `package.json`. We need this file to gather information about the module for the module list page."
+      "An error occurred while getting information from 'package.json': Error: Invalid version: \"1.1\""
     ]
   },
   {
@@ -4588,6 +4588,17 @@
     ]
   },
   {
+    "name": "MMM-HebrewCalendar",
+    "url": "https://github.com/neshkoli/MMM-HebrewCalendar",
+    "id": "neshkoli/MMM-HebrewCalendar",
+    "maintainer": "neshkoli",
+    "maintainerURL": "https://github.com/neshkoli",
+    "description": "Hebrew calendar in monthly view.",
+    "issues": [
+      "There is no `package.json`. We need this file to gather information about the module for the module list page."
+    ]
+  },
+  {
     "name": "Hello-Lucy",
     "url": "https://github.com/mykle1/Hello-Lucy",
     "id": "mykle1/Hello-Lucy",
@@ -4842,12 +4853,13 @@
     "maintainer": "Sickboy78",
     "maintainerURL": "https://github.com/Sickboy78",
     "description": "Shows values and warnings from HomeMatic smart home components and system variables as text and/or icons. Highly flexible and customizable design.",
-    "issues": [
-      "`package.json` issue: license should be a valid SPDX license expression",
-      "No compatible or wrong license field in 'package.json'. Without that, we can't use an image."
+    "issues": [],
+    "tags": [
+      "homematic",
+      "smarthome"
     ],
-    "tags": [],
-    "license": "GPL"
+    "license": "GPL-3.0-only",
+    "image": "screenshot_01.jpg"
   },
   {
     "name": "MMM-Homematic-Rooms",
@@ -5271,9 +5283,10 @@
     "maintainerURL": "",
     "description": "This module exposes a HTTP-endpoint on the MagicMirror² that can receive the indoor temperature and then emits that value as notification \"INDOOR_TEMPERATURE\".",
     "issues": [
-      "`package.json` issue: No license field.",
-      "There are no keywords in 'package.json'. We would use them as tags on the module list page."
-    ]
+      "There are no keywords in 'package.json'. We would use them as tags on the module list page.",
+      "No image found."
+    ],
+    "license": "MIT"
   },
   {
     "name": "MMM-inspirobot",
@@ -6023,9 +6036,10 @@
     "description": "Displays current and upcoming pro matches in Dota2.",
     "issues": [
       "`package.json` issue: No repository field.",
-      "`package.json` issue: No license field.",
       "There are no keywords in 'package.json'. We would use them as tags on the module list page."
-    ]
+    ],
+    "license": "MIT",
+    "image": "screenshot.jpg"
   },
   {
     "name": "MMM-Live-Stream-TV",
@@ -11860,9 +11874,10 @@
     "description": "Displays time spent on games on Steam for a specific user.",
     "issues": [
       "`package.json` issue: No repository field.",
-      "`package.json` issue: No license field.",
       "There are no keywords in 'package.json'. We would use them as tags on the module list page."
-    ]
+    ],
+    "license": "MIT",
+    "image": "screenshot.jpg"
   },
   {
     "name": "MMM-stib",
@@ -12000,9 +12015,12 @@
     "maintainer": "mumblebaj",
     "maintainerURL": "https://github.com/mumblebaj",
     "description": "Display a classic railway clock.",
-    "issues": [
-      "There is no `package.json`. We need this file to gather information about the module for the module list page."
-    ]
+    "issues": [],
+    "tags": [
+      "sweepclock station clock"
+    ],
+    "license": "ISC",
+    "image": "image.jpg"
   },
   {
     "name": "MMM-Swipe",
