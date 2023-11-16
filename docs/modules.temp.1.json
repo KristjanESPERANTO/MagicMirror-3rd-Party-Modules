@@ -6292,9 +6292,9 @@
   },
   {
     "name": "MMM-PGA",
-    "url": "https://github.com/mcl8on/MMM-PGA",
-    "id": "mcl8on/MMM-PGA",
-    "maintainer": "mcl8on",
+    "url": "https://github.com/mumblebaj/MMM-PGA",
+    "id": "mumblebaj/MMM-PGA",
+    "maintainer": "mumblebaj",
     "maintainerURL": "https://github.com/mcl8on",
     "description": "Displays PGA tournaments scores.",
     "issues": []

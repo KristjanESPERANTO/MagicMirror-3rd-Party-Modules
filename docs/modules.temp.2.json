@@ -9286,14 +9286,16 @@
   },
   {
     "name": "MMM-PGA",
-    "url": "https://github.com/mcl8on/MMM-PGA",
-    "id": "mcl8on/MMM-PGA",
-    "maintainer": "mcl8on",
+    "url": "https://github.com/mumblebaj/MMM-PGA",
+    "id": "mumblebaj/MMM-PGA",
+    "maintainer": "mumblebaj",
     "maintainerURL": "https://github.com/mcl8on",
     "description": "Displays PGA tournaments scores.",
     "issues": [
-      "There is no `package.json`. We need this file to gather information about the module for the module list page."
-    ]
+      "There are no keywords in 'package.json'. We would use them as tags on the module list page."
+    ],
+    "license": "ISC",
+    "image": "images-PGAlogo.jpg"
   },
   {
     "name": "MMM-PGHBus",

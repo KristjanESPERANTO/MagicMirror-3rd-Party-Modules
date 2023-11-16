@@ -11981,13 +11981,13 @@
   },
   {
     "name": "MMM-PGA",
-    "url": "https://github.com/mcl8on/MMM-PGA",
-    "id": "mcl8on/MMM-PGA",
-    "maintainer": "mcl8on",
+    "url": "https://github.com/mumblebaj/MMM-PGA",
+    "id": "mumblebaj/MMM-PGA",
+    "maintainer": "mumblebaj",
     "maintainerURL": "https://github.com/mcl8on",
     "description": "Displays PGA tournaments scores.",
     "issues": [
-      "There is no `package.json`. We need this file to gather information about the module for the module list page.",
+      "There are no keywords in 'package.json'. We would use them as tags on the module list page.",
       "Deprecated: Found `require('request')` in file `ESPN.js`: Replace it with built-in fetch.",
       "Deprecated: Found `require('request')` in file `FEDEXCUP.js`: Replace it with built-in fetch.",
       "Typo: Found `Magic Mirror` in file `MMM-PGA.js`: Replace it with `MagicMirror\u00b2`.",
@@ -11998,7 +11998,9 @@
       "Deprecated: Found `require('request')` in file `node_helper.js`: Replace it with built-in fetch.",
       "Recommendation: Found `XMLHttpRequest` in file `favorites.js`: Replace it with built-in fetch."
     ],
-    "last_commit": "2020-10-30"
+    "license": "ISC",
+    "image": "images-PGAlogo.jpg",
+    "last_commit": "2022-08-15"
   },
   {
     "name": "MMM-PGHBus",

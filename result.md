@@ -1,13 +1,13 @@
 # Result of the module analysis
 
-Last update: 2023-11-15 21:47:49 UTC
+Last update: 2023-11-16 12:06:46 UTC
 
 ## Statistics
 
 |                      | number   |
 |:---------------------|:--------:|
 | modules analyzed     |   1064   |
-| maintainer           |    613   |
+| maintainer           |    612   |
 | modules with issues  |   1039   |
 | issues               |   4009   |
 | modules at github    |   1055   |
@@ -4688,9 +4688,9 @@ Last update: 2023-11-15 21:47:49 UTC
 3. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
 4. Deprecated: Found `require('request')` in file `node_helper.js`: Replace it with built-in fetch.
 
-### [MMM-PGA by mcl8on](https://github.com/mcl8on/MMM-PGA)
+### [MMM-PGA by mumblebaj](https://github.com/mumblebaj/MMM-PGA)
 
-1. There is no `package.json`. We need this file to gather information about the module for the module list page.
+1. There are no keywords in 'package.json'. We would use them as tags on the module list page.
 2. Deprecated: Found `require('request')` in file `ESPN.js`: Replace it with built-in fetch.
 3. Deprecated: Found `require('request')` in file `FEDEXCUP.js`: Replace it with built-in fetch.
 4. Typo: Found `Magic Mirror` in file `MMM-PGA.js`: Replace it with `MagicMirror²`.
