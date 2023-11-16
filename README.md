@@ -82,6 +82,7 @@ This script goes through all cloned modules and performs various checks. The res
     - Is it set to monthly?
     - Only production?
   - Is branch name master? -> Description why and how switch to main.
+- Check if license in package.json matches the version in LICENSE file (I've seen some mismatches)
 
 ### Discarded ideas
 
