@@ -114,6 +114,7 @@ async function addInformationFromPackageJson(moduleList) {
           "Apache-2.0",
           "BSD-3-Clause",
           "GPL-3.0",
+          "GPL-3.0-only",
           "GPL-3.0-or-later",
           "ISC",
           "MIT"
