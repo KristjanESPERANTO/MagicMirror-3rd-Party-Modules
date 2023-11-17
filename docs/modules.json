@@ -1705,7 +1705,7 @@
       "calext3"
     ],
     "license": "MIT",
-    "last_commit": "2023-11-16"
+    "last_commit": "2023-11-17"
   },
   {
     "name": "MMM-CalendarExt3Agenda",
@@ -3380,6 +3380,24 @@
     "last_commit": "2017-12-04"
   },
   {
+    "name": "MMM-DropboxPictures",
+    "url": "https://github.com/MMRIZE/MMM-DropboxPictures",
+    "id": "MMRIZE/MMM-DropboxPictures",
+    "maintainer": "MMRIZE",
+    "maintainerURL": "",
+    "description": "Presenting Pictures from Dropbox (Successor of MMM-DropboxWallpaper).",
+    "issues": [
+      "There are no keywords in 'package.json'. We would use them as tags on the module list page.",
+      "No image found.",
+      "Typo: Found `Magic Mirror` in file `MMM-DropboxPictures.js`: Replace it with `MagicMirror\u00b2`.",
+      "Recommendation: Found `'node-fetch'` in file `auth.js`: Replace it with built-in fetch.",
+      "Recommendation: Found `'node-fetch'` in file `node_helper.js`: Replace it with built-in fetch.",
+      "Recommendation: Found `\"node-fetch\"` in file `package.json`: Replace it with built-in fetch."
+    ],
+    "license": "MIT",
+    "last_commit": "2023-11-17"
+  },
+  {
     "name": "MMM-DropboxWallpaper",
     "url": "https://github.com/Mong-ni/MMM-DropboxWallpaper",
     "id": "Mong-ni/MMM-DropboxWallpaper",
@@ -3395,6 +3413,7 @@
       "Recommendation: Found `axios` in file `package.json`: Replace it with built-in fetch.",
       "Warning: No LICENSE file."
     ],
+    "outdated": "Successor is MMM-DropboxPictures.",
     "license": "MIT",
     "image": "sc.jpg",
     "last_commit": "2023-04-19"
@@ -3860,9 +3879,14 @@
     "maintainer": "CharlesMorris78",
     "maintainerURL": "",
     "description": "Module to display weather forecast information from Environment Canada.",
-    "issues": [
-      "An error occurred while getting information from 'package.json': Error: Invalid version: \"1.1\""
+    "issues": [],
+    "tags": [
+      "canada",
+      "weather",
+      "forecast"
     ],
+    "license": "MIT",
+    "image": "screenshot.jpg",
     "last_commit": "2023-11-16"
   },
   {
@@ -13136,7 +13160,7 @@
     ],
     "license": "MIT",
     "image": "img-example.jpg",
-    "last_commit": "2023-11-12"
+    "last_commit": "2023-11-16"
   },
   {
     "name": "MMM-RAIN-RADAR",

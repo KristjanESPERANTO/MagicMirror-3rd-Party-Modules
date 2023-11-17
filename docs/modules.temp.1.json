@@ -1835,13 +1835,23 @@
     "issues": []
   },
   {
+    "name": "MMM-DropboxPictures",
+    "url": "https://github.com/MMRIZE/MMM-DropboxPictures",
+    "id": "MMRIZE/MMM-DropboxPictures",
+    "maintainer": "MMRIZE",
+    "maintainerURL": "",
+    "description": "Presenting Pictures from Dropbox (Successor of MMM-DropboxWallpaper).",
+    "issues": []
+  },
+  {
     "name": "MMM-DropboxWallpaper",
     "url": "https://github.com/Mong-ni/MMM-DropboxWallpaper",
     "id": "Mong-ni/MMM-DropboxWallpaper",
     "maintainer": "Mong-ni",
     "maintainerURL": "",
     "description": "Show photos from <code>Dropbox</code> as wallpaper.",
-    "issues": []
+    "issues": [],
+    "outdated": "Successor is MMM-DropboxPictures."
   },
   {
     "name": "MMM-DublinRTPI",

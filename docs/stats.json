@@ -1,17 +1,17 @@
 {
-  "module-counter": 1065,
-  "modules-with-image-counter": 431,
+  "module-counter": 1066,
+  "modules-with-image-counter": 432,
   "modules-with-issues-counter": 1039,
-  "issue-counter": 4000,
-  "last-update": "2023-11-16 21:44:37",
+  "issue-counter": 4006,
+  "last-update": "2023-11-17 17:05:25",
   "repository-hoster": {
-    "github": 1056,
+    "github": 1057,
     "gitlab": 8,
     "bitbucket": 1
   },
   "maintainer": {
     "mykle1": 49,
-    "MMRIZE": 16,
+    "MMRIZE": 17,
     "fewieden": 15,
     "Tom-Hirschberger": 13,
     "shbatm": 10,

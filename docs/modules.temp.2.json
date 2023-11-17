@@ -2654,6 +2654,19 @@
     "image": "media-01-developer.dribbble.com.jpg"
   },
   {
+    "name": "MMM-DropboxPictures",
+    "url": "https://github.com/MMRIZE/MMM-DropboxPictures",
+    "id": "MMRIZE/MMM-DropboxPictures",
+    "maintainer": "MMRIZE",
+    "maintainerURL": "",
+    "description": "Presenting Pictures from Dropbox (Successor of MMM-DropboxWallpaper).",
+    "issues": [
+      "There are no keywords in 'package.json'. We would use them as tags on the module list page.",
+      "No image found."
+    ],
+    "license": "MIT"
+  },
+  {
     "name": "MMM-DropboxWallpaper",
     "url": "https://github.com/Mong-ni/MMM-DropboxWallpaper",
     "id": "Mong-ni/MMM-DropboxWallpaper",
@@ -2663,6 +2676,7 @@
     "issues": [
       "There are no keywords in 'package.json'. We would use them as tags on the module list page."
     ],
+    "outdated": "Successor is MMM-DropboxPictures.",
     "license": "MIT",
     "image": "sc.jpg"
   },
@@ -3028,9 +3042,14 @@
     "maintainer": "CharlesMorris78",
     "maintainerURL": "",
     "description": "Module to display weather forecast information from Environment Canada.",
-    "issues": [
-      "An error occurred while getting information from 'package.json': Error: Invalid version: \"1.1\""
-    ]
+    "issues": [],
+    "tags": [
+      "canada",
+      "weather",
+      "forecast"
+    ],
+    "license": "MIT",
+    "image": "screenshot.jpg"
   },
   {
     "name": "MMM-EOL",

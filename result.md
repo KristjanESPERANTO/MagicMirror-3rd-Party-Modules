@@ -1,16 +1,16 @@
 # Result of the module analysis
 
-Last update: 2023-11-16 21:44:37 UTC
+Last update: 2023-11-17 17:05:25 UTC
 
 ## Statistics
 
 |                      | number   |
 |:---------------------|:--------:|
-| modules analyzed     |   1065   |
+| modules analyzed     |   1066   |
 | maintainer           |    613   |
 | modules with issues  |   1039   |
-| issues               |   4000   |
-| modules at github    |   1056   |
+| issues               |   4006   |
+| modules at github    |   1057   |
 | modules at gitlab    |      8   |
 | modules at bitbucket |      1   |
 
@@ -1322,8 +1322,18 @@ Last update: 2023-11-16 21:44:37 UTC
 
 1. `package.json` issue: No description
 
+### [MMM-DropboxPictures by MMRIZE](https://github.com/MMRIZE/MMM-DropboxPictures)
+
+1. There are no keywords in 'package.json'. We would use them as tags on the module list page.
+2. No image found.
+3. Typo: Found `Magic Mirror` in file `MMM-DropboxPictures.js`: Replace it with `MagicMirror²`.
+4. Recommendation: Found `'node-fetch'` in file `auth.js`: Replace it with built-in fetch.
+5. Recommendation: Found `'node-fetch'` in file `node_helper.js`: Replace it with built-in fetch.
+6. Recommendation: Found `"node-fetch"` in file `package.json`: Replace it with built-in fetch.
+
 ### [MMM-DropboxWallpaper by Mong-ni](https://github.com/Mong-ni/MMM-DropboxWallpaper)
 
+0. This module is outdated: Successor is MMM-DropboxPictures.
 1. There are no keywords in 'package.json'. We would use them as tags on the module list page.
 2. Typo: Found `Magic Mirror` in file `MMM-DropboxWallpaper.js`: Replace it with `MagicMirror²`.
 3. Recommendation: Found `axios` in file `README.md`: Replace it with built-in fetch.
@@ -1488,10 +1498,6 @@ Last update: 2023-11-16 21:44:37 UTC
 
 1. There is no `package.json`. We need this file to gather information about the module for the module list page.
 2. Recommendation: Found `"node-fetch"` in file `node_helper.js`: Replace it with built-in fetch.
-
-### [MMM-EnvCanada by CharlesMorris78](https://github.com/CharlesMorris78/MMM-EnvCanada)
-
-1. An error occurred while getting information from 'package.json': Error: Invalid version: "1.1"
 
 ### [MMM-EOL by mykle1](https://github.com/mykle1/MMM-EOL)
 
