@@ -219,6 +219,10 @@ main {
   content: "🚍";
 }
 
+[data-tag="smarthome"]::before {
+  content: "💡";
+}
+
 [data-tag="social media"]::before {
   content: "📱";
 }
