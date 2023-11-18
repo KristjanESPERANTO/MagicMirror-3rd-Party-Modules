@@ -1722,7 +1722,7 @@
       "agenda"
     ],
     "license": "MIT",
-    "last_commit": "2023-10-10"
+    "last_commit": "2023-11-18"
   },
   {
     "name": "MMM-CalendarExt3Timeline",
@@ -7660,15 +7660,15 @@
     "maintainer": "thekampany",
     "maintainerURL": "",
     "description": "Learn a (new foreign language) word every time you look in the mirror.",
-    "issues": [
-      "There is no `package.json`. We need this file to gather information about the module for the module list page.",
-      "Recommendation: Found `XMLHttpRequest` in file `MMM-learnlanguage.js`: Replace it with built-in fetch.",
-      "Typo: Found `Magic Mirror` in file `README.md`: Replace it with `MagicMirror\u00b2`.",
-      "Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror\u00b2`.",
-      "Deprecated: Found `require('request')` in file `node_helper.js`: Replace it with built-in fetch.",
-      "Warning: No LICENSE file."
+    "issues": [],
+    "tags": [
+      "learn",
+      "language",
+      "vocabulary"
     ],
-    "last_commit": "2021-01-18"
+    "license": "ISC",
+    "image": "screenshot-MMM-learnlanguage-1.jpg",
+    "last_commit": "2023-11-18"
   },
   {
     "name": "MMM-LEDStripControl",
@@ -10490,7 +10490,7 @@
     ],
     "license": "MIT",
     "image": ".github-preview.bubbles.jpg",
-    "last_commit": "2023-11-16"
+    "last_commit": "2023-11-17"
   },
   {
     "name": "MMM-Netatmo-Presence",
@@ -15934,7 +15934,7 @@
     ],
     "license": "ISC",
     "image": "images-MMM-Tesla3.jpg",
-    "last_commit": "2023-11-05"
+    "last_commit": "2023-11-18"
   },
   {
     "name": "MMM-TeslaLogger",

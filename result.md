@@ -1,6 +1,6 @@
 # Result of the module analysis
 
-Last update: 2023-11-17 17:05:25 UTC
+Last update: 2023-11-18 23:26:32 UTC
 
 ## Statistics
 
@@ -8,8 +8,8 @@ Last update: 2023-11-17 17:05:25 UTC
 |:---------------------|:--------:|
 | modules analyzed     |   1066   |
 | maintainer           |    613   |
-| modules with issues  |   1039   |
-| issues               |   4006   |
+| modules with issues  |   1038   |
+| issues               |   4000   |
 | modules at github    |   1057   |
 | modules at gitlab    |      8   |
 | modules at bitbucket |      1   |
@@ -2960,15 +2960,6 @@ Last update: 2023-11-17 17:05:25 UTC
 1. There are no keywords in 'package.json'. We would use them as tags on the module list page.
 2. Typo: Found `Magic Mirror` in file `MMM-LeagueOfLegends.js`: Replace it with `MagicMirror²`.
 3. Recommendation: Found `XMLHttpRequest` in file `MMM-LeagueOfLegends.js`: Replace it with built-in fetch.
-
-### [MMM-learnlanguage by thekampany](https://github.com/thekampany/MMM-learnlanguage)
-
-1. There is no `package.json`. We need this file to gather information about the module for the module list page.
-2. Recommendation: Found `XMLHttpRequest` in file `MMM-learnlanguage.js`: Replace it with built-in fetch.
-3. Typo: Found `Magic Mirror` in file `README.md`: Replace it with `MagicMirror²`.
-4. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
-5. Deprecated: Found `require('request')` in file `node_helper.js`: Replace it with built-in fetch.
-6. Warning: No LICENSE file.
 
 ### [MMM-LEDStripControl by Tom-Hirschberger](https://github.com/Tom-Hirschberger/MMM-LEDStripControl)
 

@@ -25,7 +25,7 @@
   },
   "homepage": "https://github.com/KristjanESPERANTO/MagicMirror-3rd-Party-Modules#readme",
   "devDependencies": {
-    "eslint": "^8.53.0",
+    "eslint": "^8.54.0",
     "eslint-config-airbnb-base": "^15.0.0",
     "eslint-config-prettier": "^9.0.0",
     "eslint-plugin-import": "^2.29.0",
@@ -34,7 +34,7 @@
     "eslint-plugin-prettier": "^5.0.1",
     "husky": "^8.0.3",
     "lint-staged": "^15.1.0",
-    "markdownlint": "^0.31.1",
+    "markdownlint": "^0.32.1",
     "mega-linter-runner": "^7.5.0",
     "prettier": "^3.1.0",
     "stylelint": "^15.11.0",

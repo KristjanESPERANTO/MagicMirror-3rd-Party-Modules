@@ -5967,9 +5967,14 @@
     "maintainer": "thekampany",
     "maintainerURL": "",
     "description": "Learn a (new foreign language) word every time you look in the mirror.",
-    "issues": [
-      "There is no `package.json`. We need this file to gather information about the module for the module list page."
-    ]
+    "issues": [],
+    "tags": [
+      "learn",
+      "language",
+      "vocabulary"
+    ],
+    "license": "ISC",
+    "image": "screenshot-MMM-learnlanguage-1.jpg"
   },
   {
     "name": "MMM-LEDStripControl",
