@@ -32,6 +32,22 @@ Here are some test results:
 - _Recommendation: Found 'uses: actions/checkout@v3' in file `nodejs.yml`: Replace it with v4._
 - _Deprecated: Found 'node-version: [16' in file `nodejs.yml`: Update to current version._
 
+## Prerequisites
+
+For running the scripts and developing you need:
+
+- [Python](https://www.python.org)
+- [node.js](https://nodejs.org)
+
+## Installation
+
+1. Clone this repository:
+   `git clone https://github.com/KristjanESPERANTO/MagicMirror-3rd-Party-Modules`
+2. Change into the created folder:
+   `cd MagicMirror-3rd-Party-Modules`
+3. Install dependencies:
+   `npm install`
+
 ## Skripts
 
 You can run all scripts in the right order by `npm run all`.
