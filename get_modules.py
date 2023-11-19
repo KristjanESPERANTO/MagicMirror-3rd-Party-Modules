@@ -36,6 +36,10 @@ def get_modules():
             else:
                 print("- I - path doesn't exists: run `git clone`")
                 subprocess.run(f"git clone {module_url} {path} --depth 1", shell=True, check=False)
+
+            # Move module from temp directory to working directory
+            shutil.move(path, f"./modules/{module_name}-----{module_owner}")
+
     print("\n- I - Modules found and downloaded: " + str(module_counter) + "\n")
 
 def rename_modules_directory():
@@ -43,8 +47,6 @@ def rename_modules_directory():
     Deletes the directory "modules_temp" and renames the directory "modules" to "modules_temp".
     We need this so that we don't have to download all the git repositories every time.
     With rename process we get rid of old modules that have been removed from the list.
-
-    NOTE/TODO: There is still a flaw in the system with this part. So far we are not getting rid of old modules.
     """
     temp_path = Path('./modules_temp')
     modules_path = Path('./modules')
@@ -58,14 +60,6 @@ def rename_modules_directory():
         # Rename the directory "modules" to "modules_temp"
         shutil.move(str(modules_path), str(temp_path))
 
-def rename_modules_temp_directory_to_modules():
-    """
-    Rename the directory "modules_temp" to "modules"
-    """
-    shutil.move("modules_temp", "modules")
-
 rename_modules_directory()
 
 get_modules()
-
-rename_modules_temp_directory_to_modules()
