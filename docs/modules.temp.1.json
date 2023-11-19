@@ -4390,16 +4390,6 @@
     "issues": []
   },
   {
-    "name": "MagicPlugins",
-    "url": "https://github.com/nhubbard/MagicPlugins/tree/master/snow",
-    "id": "nhubbard/MagicPlugins/tree/master/snow",
-    "maintainer": "nhubbard",
-    "maintainerURL": "",
-    "description": "Get your festive on. Put snow in the background for winter or anti burn-in purposes. Your family won't know the difference.",
-    "issues": [],
-    "outdated": "Deprecated. The successor is MMM-Snow."
-  },
-  {
     "name": "MMM-MagicSuperHero",
     "url": "https://github.com/Lavve/MMM-MagicSuperHero",
     "id": "Lavve/MMM-MagicSuperHero",

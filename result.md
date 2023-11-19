@@ -1,16 +1,16 @@
 # Result of the module analysis
 
-Last update: 2023-11-19 12:55:53 UTC
+Last update: 2023-11-19 23:02:23 UTC
 
 ## Statistics
 
 |                      | number   |
 |:---------------------|:--------:|
-| modules analyzed     |   1066   |
-| maintainer           |    613   |
-| modules with issues  |   1037   |
-| issues               |   3983   |
-| modules at github    |   1057   |
+| modules analyzed     |   1065   |
+| maintainer           |    612   |
+| modules with issues  |   1036   |
+| issues               |   3976   |
+| modules at github    |   1056   |
 | modules at gitlab    |      8   |
 | modules at bitbucket |      1   |
 
@@ -2083,12 +2083,7 @@ Last update: 2023-11-19 12:55:53 UTC
 ### [MMM-GoogleAssistant by bugsounet](https://github.com/bugsounet/MMM-GoogleAssistant)
 
 1. Recommendation: Found `uses: actions/checkout@v3` in file `dependency-review.yml`: Replace it with v4.
-2. Recommendation: Found `axios` in file `googleSearch.js`: Replace it with built-in fetch.
-3. Recommendation: Found `axios` in file `loadLibraries.js`: Replace it with built-in fetch.
-4. Recommendation: Found `axios` in file `delete.js`: Replace it with built-in fetch.
-5. Recommendation: Found `axios` in file `list.js`: Replace it with built-in fetch.
-6. Recommendation: Found `axios` in file `register.js`: Replace it with built-in fetch.
-7. Recommendation: Found `axios` in file `package.json`: Replace it with built-in fetch.
+2. Recommendation: Found `axios` in file `loadLibraries.js`: Replace it with built-in fetch.
 
 ### [MMM-GoogleBirthdaysProvider by PalatinCoder](https://github.com/PalatinCoder/MMM-GoogleBirthdaysProvider)
 
@@ -3219,11 +3214,6 @@ Last update: 2023-11-19 12:55:53 UTC
 ### [MMM-MagicMover by Lavve](https://github.com/Lavve/MMM-MagicMover)
 
 1. There is no `package.json`. We need this file to gather information about the module for the module list page.
-
-### [MagicPlugins by nhubbard](https://github.com/nhubbard/MagicPlugins/tree/master/snow)
-
-0. This module is outdated: Deprecated. The successor is MMM-Snow.
-1. Error: It appears that the repository could not be cloned. Check the URL.
 
 ### [MMM-MagicSuperHero by Lavve](https://github.com/Lavve/MMM-MagicSuperHero)
 

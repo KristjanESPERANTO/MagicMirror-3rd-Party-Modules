@@ -1,11 +1,11 @@
 {
-  "module-counter": 1066,
+  "module-counter": 1065,
   "modules-with-image-counter": 433,
-  "modules-with-issues-counter": 1037,
-  "issue-counter": 3983,
-  "last-update": "2023-11-19 12:55:53",
+  "modules-with-issues-counter": 1036,
+  "issue-counter": 3976,
+  "last-update": "2023-11-19 23:02:23",
   "repository-hoster": {
-    "github": 1057,
+    "github": 1056,
     "gitlab": 8,
     "bitbucket": 1
   },
@@ -396,7 +396,6 @@
     "roramirez": 1,
     "GHLasse": 1,
     "salpar": 1,
-    "nhubbard": 1,
     "Unclearogre": 1,
     "wmawhinney1990": 1,
     "Hcreak": 1,

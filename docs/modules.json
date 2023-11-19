@@ -5362,12 +5362,7 @@
     "description": "MMM-GoogleAssistant is an real embedded Google assistant on MagicMirror\u00b2. [Maintained].",
     "issues": [
       "Recommendation: Found `uses: actions/checkout@v3` in file `dependency-review.yml`: Replace it with v4.",
-      "Recommendation: Found `axios` in file `googleSearch.js`: Replace it with built-in fetch.",
-      "Recommendation: Found `axios` in file `loadLibraries.js`: Replace it with built-in fetch.",
-      "Recommendation: Found `axios` in file `delete.js`: Replace it with built-in fetch.",
-      "Recommendation: Found `axios` in file `list.js`: Replace it with built-in fetch.",
-      "Recommendation: Found `axios` in file `register.js`: Replace it with built-in fetch.",
-      "Recommendation: Found `axios` in file `package.json`: Replace it with built-in fetch."
+      "Recommendation: Found `axios` in file `loadLibraries.js`: Replace it with built-in fetch."
     ],
     "tags": [
       "google assistant",
@@ -5377,7 +5372,7 @@
     ],
     "license": "MIT",
     "image": "resources-GA_Big.jpg",
-    "last_commit": "2023-11-04"
+    "last_commit": "2023-11-19"
   },
   {
     "name": "MMM-GoogleBirthdaysProvider",
@@ -8283,19 +8278,6 @@
       "There is no `package.json`. We need this file to gather information about the module for the module list page."
     ],
     "last_commit": "2023-11-02"
-  },
-  {
-    "name": "MagicPlugins",
-    "url": "https://github.com/nhubbard/MagicPlugins/tree/master/snow",
-    "id": "nhubbard/MagicPlugins/tree/master/snow",
-    "maintainer": "nhubbard",
-    "maintainerURL": "",
-    "description": "Get your festive on. Put snow in the background for winter or anti burn-in purposes. Your family won't know the difference.",
-    "issues": [
-      "Error: It appears that the repository could not be cloned. Check the URL."
-    ],
-    "outdated": "Deprecated. The successor is MMM-Snow.",
-    "last_commit": ""
   },
   {
     "name": "MMM-MagicSuperHero",
@@ -12911,7 +12893,7 @@
     ],
     "license": "MIT",
     "image": "img-Goerdelerring_all.jpg",
-    "last_commit": "2023-11-01"
+    "last_commit": "2023-11-19"
   },
   {
     "name": "MMM-PublicTransportVVO",
