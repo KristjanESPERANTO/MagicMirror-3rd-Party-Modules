@@ -7754,6 +7754,7 @@
       "Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror\u00b2`.",
       "Deprecated: Found `require('request')` in file `node_helper.js`: Replace it with built-in fetch."
     ],
+    "outdated": "Abandoned. No reactions to issues since years. Missing instructions to install 'request'.",
     "last_commit": "2018-03-20"
   },
   {
@@ -11469,29 +11470,15 @@
     "maintainer": "nkl-kst",
     "maintainerURL": "https://github.com/nkl-kst",
     "description": "Display historical events from Wikipedia based on the current date.",
-    "issues": [
-      "There are no keywords in 'package.json'. We would use them as tags on the module list page.",
-      "Typo: Found `Magic Mirror` in file `EventService.js`: Replace it with `MagicMirror\u00b2`.",
-      "Typo: Found `Magic Mirror` in file `LoggerProxy.js`: Replace it with `MagicMirror\u00b2`.",
-      "Typo: Found `Magic Mirror` in file `MMM-OnThisDay.css`: Replace it with `MagicMirror\u00b2`.",
-      "Typo: Found `Magic Mirror` in file `MMM-OnThisDay.js`: Replace it with `MagicMirror\u00b2`.",
-      "Typo: Found `Magic Mirror` in file `MMM-OnThisDay.njk`: Replace it with `MagicMirror\u00b2`.",
-      "Typo: Found `Magic Mirror` in file `Vagrantfile`: Replace it with `MagicMirror\u00b2`.",
-      "Typo: Found `Magic Mirror` in file `WikiCssSelectors.js`: Replace it with `MagicMirror\u00b2`.",
-      "Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror\u00b2`.",
-      "Typo: Found `Magic Mirror` in file `HelperTestEnv.js`: Replace it with `MagicMirror\u00b2`.",
-      "Typo: Found `Magic Mirror` in file `ModuleTestEnv.js`: Replace it with `MagicMirror\u00b2`.",
-      "Typo: Found `Magic Mirror` in file `WikiSiteTest.js`: Replace it with `MagicMirror\u00b2`.",
-      "Typo: Found `Magic Mirror` in file `EventServiceTest.js`: Replace it with `MagicMirror\u00b2`.",
-      "Typo: Found `Magic Mirror` in file `MMM-OnThisDayTest.js`: Replace it with `MagicMirror\u00b2`.",
-      "Typo: Found `Magic Mirror` in file `node_helperTest.js`: Replace it with `MagicMirror\u00b2`.",
-      "Typo: Found `Magic Mirror` in file `config.js`: Replace it with `MagicMirror\u00b2`.",
-      "Typo: Found `Magic Mirror` in file `magicmirror.sh`: Replace it with `MagicMirror\u00b2`.",
-      "Typo: Found `Magic Mirror` in file `packages.sh`: Replace it with `MagicMirror\u00b2`."
+    "issues": [],
+    "tags": [
+      "events",
+      "history",
+      "wikipedia"
     ],
     "license": "MIT",
     "image": "screenshot-module.jpg",
-    "last_commit": "2022-01-20"
+    "last_commit": "2023-11-19"
   },
   {
     "name": "MMM-OpelStatuses",

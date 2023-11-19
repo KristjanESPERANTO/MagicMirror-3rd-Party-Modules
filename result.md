@@ -1,6 +1,6 @@
 # Result of the module analysis
 
-Last update: 2023-11-18 23:26:32 UTC
+Last update: 2023-11-19 12:55:53 UTC
 
 ## Statistics
 
@@ -8,8 +8,8 @@ Last update: 2023-11-18 23:26:32 UTC
 |:---------------------|:--------:|
 | modules analyzed     |   1066   |
 | maintainer           |    613   |
-| modules with issues  |   1038   |
-| issues               |   4000   |
+| modules with issues  |   1037   |
+| issues               |   3983   |
 | modules at github    |   1057   |
 | modules at gitlab    |      8   |
 | modules at bitbucket |      1   |
@@ -2993,6 +2993,7 @@ Last update: 2023-11-18 23:26:32 UTC
 
 ### [MMM-LICE by mykle1](https://github.com/mykle1/MMM-LICE)
 
+0. This module is outdated: Abandoned. No reactions to issues since years. Missing instructions to install 'request'.
 1. There is no `package.json`. We need this file to gather information about the module for the module list page.
 2. Typo: Found `Magic Mirror` in file `MMM-LICE.js`: Replace it with `MagicMirror²`.
 3. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
@@ -4452,27 +4453,6 @@ Last update: 2023-11-18 23:26:32 UTC
 4. Typo: Found `MagicMirror2` in file `package.json`: Replace it with `MagicMirror²`.
 5. Recommendation: Found `"node-fetch"` in file `package.json`: Replace it with built-in fetch.
 6. Recommendation: Found `"node-fetch"` in file `SpotifyFetcher.js`: Replace it with built-in fetch.
-
-### [MMM-OnThisDay by nkl-kst](https://github.com/nkl-kst/MMM-OnThisDay)
-
-1. There are no keywords in 'package.json'. We would use them as tags on the module list page.
-2. Typo: Found `Magic Mirror` in file `EventService.js`: Replace it with `MagicMirror²`.
-3. Typo: Found `Magic Mirror` in file `LoggerProxy.js`: Replace it with `MagicMirror²`.
-4. Typo: Found `Magic Mirror` in file `MMM-OnThisDay.css`: Replace it with `MagicMirror²`.
-5. Typo: Found `Magic Mirror` in file `MMM-OnThisDay.js`: Replace it with `MagicMirror²`.
-6. Typo: Found `Magic Mirror` in file `MMM-OnThisDay.njk`: Replace it with `MagicMirror²`.
-7. Typo: Found `Magic Mirror` in file `Vagrantfile`: Replace it with `MagicMirror²`.
-8. Typo: Found `Magic Mirror` in file `WikiCssSelectors.js`: Replace it with `MagicMirror²`.
-9. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
-10. Typo: Found `Magic Mirror` in file `HelperTestEnv.js`: Replace it with `MagicMirror²`.
-11. Typo: Found `Magic Mirror` in file `ModuleTestEnv.js`: Replace it with `MagicMirror²`.
-12. Typo: Found `Magic Mirror` in file `WikiSiteTest.js`: Replace it with `MagicMirror²`.
-13. Typo: Found `Magic Mirror` in file `EventServiceTest.js`: Replace it with `MagicMirror²`.
-14. Typo: Found `Magic Mirror` in file `MMM-OnThisDayTest.js`: Replace it with `MagicMirror²`.
-15. Typo: Found `Magic Mirror` in file `node_helperTest.js`: Replace it with `MagicMirror²`.
-16. Typo: Found `Magic Mirror` in file `config.js`: Replace it with `MagicMirror²`.
-17. Typo: Found `Magic Mirror` in file `magicmirror.sh`: Replace it with `MagicMirror²`.
-18. Typo: Found `Magic Mirror` in file `packages.sh`: Replace it with `MagicMirror²`.
 
 ### [MMM-OpelStatuses by santanachia](https://github.com/santanachia/MMM-OpelStatuses)
 

@@ -4105,7 +4105,8 @@
     "maintainer": "mykle1",
     "maintainerURL": "",
     "description": "Live International Currency Exchange.",
-    "issues": []
+    "issues": [],
+    "outdated": "Abandoned. No reactions to issues since years. Missing instructions to install 'request'."
   },
   {
     "name": "MMM-lichess-daily",
