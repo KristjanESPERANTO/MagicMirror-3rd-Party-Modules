@@ -21,7 +21,7 @@ The results of the tests you can see in the [result.md](result.md).
 Here are some test results:
 
 - _No image found._ - That means we will not have an image on the web page for this module.
-- _package.json issue: No license field._ - No license field means no image on the web page (we can not use images without proper licence).
+- _package.json issue: No license field._ - No license field means no image on the web page (we can not use images without proper license).
 - _package.json issue: license should be a valid SPDX license expression_ - Incorrectly spelled license name means no image on the web page.
 - _There is no `package.json`. We need this file to gather information about the module._ - We need information like the license and keywords.
 - _Found directory `node_modules`. This shouldn't be uploaded. Add `node_modules/`to `.gitignore`._
