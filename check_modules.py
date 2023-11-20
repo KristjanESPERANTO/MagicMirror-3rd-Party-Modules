@@ -81,6 +81,14 @@ def check_modules():
             "name": "Replace it with built-in fetch.",
             "category": "Recommendation"
         },
+        "require(\"fetch\")": {
+            "name": "Replace it with built-in fetch.",
+            "category": "Recommendation"
+        },
+        "require('fetch')": {
+            "name": "Replace it with built-in fetch.",
+            "category": "Recommendation"
+        },
         "axios": {
             "name": "Replace it with built-in fetch.",
             "category": "Recommendation"
