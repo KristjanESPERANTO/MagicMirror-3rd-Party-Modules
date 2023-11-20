@@ -86,6 +86,7 @@ async function addInformationFromPackageJson(moduleList) {
           "magic mirror",
           "magic mirror 2",
           "magic-mirror",
+          "magic mirror module",
           "mirror",
           "mmm",
           "module",
