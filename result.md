@@ -1,6 +1,6 @@
 # Result of the module analysis
 
-Last update: 2023-11-19 23:02:23 UTC
+Last update: 2023-11-20 21:25:15 UTC
 
 ## Statistics
 
@@ -9,7 +9,7 @@ Last update: 2023-11-19 23:02:23 UTC
 | modules analyzed     |   1065   |
 | maintainer           |    612   |
 | modules with issues  |   1036   |
-| issues               |   3976   |
+| issues               |   3984   |
 | modules at github    |   1056   |
 | modules at gitlab    |      8   |
 | modules at bitbucket |      1   |
@@ -2935,7 +2935,8 @@ Last update: 2023-11-19 23:02:23 UTC
 
 1. There is no `package.json`. We need this file to gather information about the module for the module list page.
 2. Recommendation: Found `uses: actions/checkout@v3` in file `codeql-analysis.yml`: Replace it with v4.
-3. Warning: No LICENSE file.
+3. Recommendation: Found `require("fetch")` in file `fetcher.js`: Replace it with built-in fetch.
+4. Warning: No LICENSE file.
 
 ### [MMM-Launch by mykle1](https://github.com/mykle1/MMM-Launch)
 
@@ -3647,6 +3648,7 @@ Last update: 2023-11-19 23:02:23 UTC
 
 1. Typo: Found `Magic Mirror` in file `MMM-moonraker.js`: Replace it with `MagicMirror²`.
 2. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
+3. Recommendation: Found `require("fetch")` in file `node_helper.js`: Replace it with built-in fetch.
 
 ### [MMM-Mopidy-MPD by coderpussy](https://github.com/coderpussy/MMM-Mopidy-MPD)
 
@@ -3799,6 +3801,7 @@ Last update: 2023-11-19 23:02:23 UTC
 ### [MMM-MusicButler by jrettsch](https://github.com/jrettsch/MMM-MusicButler)
 
 1. There is no `package.json`. We need this file to gather information about the module for the module list page.
+2. Recommendation: Found `require("fetch")` in file `MMM-MusicButlerFetcher.js`: Replace it with built-in fetch.
 
 ### [MMM-MusicOnDemand by ptrk95](https://github.com/ptrk95/MMM-MusicOnDemand)
 
@@ -3821,7 +3824,8 @@ Last update: 2023-11-19 23:02:23 UTC
 
 1. There is no `package.json`. We need this file to gather information about the module for the module list page.
 2. Recommendation: Found `require("https")` in file `calendarfetcher.js`: Replace "https" by "node:https".
-3. Deprecated: Found `require('request')` in file `node-ical.js`: Replace it with built-in fetch.
+3. Recommendation: Found `require("fetch")` in file `calendarfetcher.js`: Replace it with built-in fetch.
+4. Deprecated: Found `require('request')` in file `node-ical.js`: Replace it with built-in fetch.
 
 ### [MMM-MyCommute by qistoph](https://github.com/qistoph/MMM-MyCommute)
 
@@ -4372,6 +4376,7 @@ Last update: 2023-11-19 23:02:23 UTC
 
 1. Typo: Found `Magic Mirror` in file `MMM-octoprint.js`: Replace it with `MagicMirror²`.
 2. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
+3. Recommendation: Found `require("fetch")` in file `node_helper.js`: Replace it with built-in fetch.
 
 ### [MMM-oebb-station-board by mscharl](https://github.com/mscharl/MMM-oebb-station-board)
 
@@ -6201,7 +6206,8 @@ Last update: 2023-11-19 23:02:23 UTC
 
 1. There is no `package.json`. We need this file to gather information about the module for the module list page.
 2. Typo: Found `Magic Mirror` in file `MMM-TiHimawari8Earth.js`: Replace it with `MagicMirror²`.
-3. Warning: No LICENSE file.
+3. Recommendation: Found `require("fetch")` in file `node_helper.js`: Replace it with built-in fetch.
+4. Warning: No LICENSE file.
 
 ### [MMM-Timetagger by tderflinger](https://github.com/tderflinger/MMM-Timetagger)
 
@@ -6349,7 +6355,8 @@ Last update: 2023-11-19 23:02:23 UTC
 1. There is no `package.json`. We need this file to gather information about the module for the module list page.
 2. Typo: Found `Magic Mirror` in file `MMM-transitfeed.js`: Replace it with `MagicMirror²`.
 3. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
-4. Warning: No LICENSE file.
+4. Recommendation: Found `require('fetch')` in file `node_helper.js`: Replace it with built-in fetch.
+5. Warning: No LICENSE file.
 
 ### [MMM-TranslatedMessages by ahmedwab](https://github.com/ahmedwab/MMM-TranslatedMessages)
 
@@ -6729,7 +6736,8 @@ Last update: 2023-11-19 23:02:23 UTC
 2. No image found.
 3. Recommendation: Found `require("http")` in file `node_helper.js`: Replace "http" by "node:http".
 4. Recommendation: Found `require("https")` in file `node_helper.js`: Replace "https" by "node:https".
-5. Typo: Found `MagicMirror2` in file `package.json`: Replace it with `MagicMirror²`.
+5. Recommendation: Found `require("fetch")` in file `node_helper.js`: Replace it with built-in fetch.
+6. Typo: Found `MagicMirror2` in file `package.json`: Replace it with `MagicMirror²`.
 
 ### [MMM-Wallpaper by jupadin](https://github.com/jupadin/MMM-Wallpaper)
 

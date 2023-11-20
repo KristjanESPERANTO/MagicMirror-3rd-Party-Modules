@@ -4118,7 +4118,7 @@
       "network"
     ],
     "license": "MIT",
-    "last_commit": "2023-11-08"
+    "last_commit": "2023-11-20"
   },
   {
     "name": "MMM-Face-Recognition-SMAI",
@@ -4266,7 +4266,6 @@
       "Typo: Found `Magic Mirror` in file `MMM-FF-cht-sh.scss`: Replace it with `MagicMirror\u00b2`."
     ],
     "tags": [
-      "magic mirror module",
       "cheat sheet",
       "cht.sh",
       "tldr"
@@ -4364,7 +4363,6 @@
       "Typo: Found `Magic Mirror` in file `MMM-FF-multigeiger.scss`: Replace it with `MagicMirror\u00b2`."
     ],
     "tags": [
-      "magic mirror module",
       "radiation",
       "multigeiger"
     ],
@@ -7594,6 +7592,7 @@
     "issues": [
       "There is no `package.json`. We need this file to gather information about the module for the module list page.",
       "Recommendation: Found `uses: actions/checkout@v3` in file `codeql-analysis.yml`: Replace it with v4.",
+      "Recommendation: Found `require(\"fetch\")` in file `fetcher.js`: Replace it with built-in fetch.",
       "Warning: No LICENSE file."
     ],
     "last_commit": "2022-08-03"
@@ -9326,7 +9325,8 @@
     "description": "Moonraker API integration for Klipper powered 3D printers.",
     "issues": [
       "Typo: Found `Magic Mirror` in file `MMM-moonraker.js`: Replace it with `MagicMirror\u00b2`.",
-      "Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror\u00b2`."
+      "Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror\u00b2`.",
+      "Recommendation: Found `require(\"fetch\")` in file `node_helper.js`: Replace it with built-in fetch."
     ],
     "tags": [
       "moonraker",
@@ -9720,7 +9720,8 @@
     "maintainerURL": "",
     "description": "Displays new music releases from tracked artists on musicbutler.io.",
     "issues": [
-      "There is no `package.json`. We need this file to gather information about the module for the module list page."
+      "There is no `package.json`. We need this file to gather information about the module for the module list page.",
+      "Recommendation: Found `require(\"fetch\")` in file `MMM-MusicButlerFetcher.js`: Replace it with built-in fetch."
     ],
     "last_commit": "2022-07-22"
   },
@@ -9795,6 +9796,7 @@
     "issues": [
       "There is no `package.json`. We need this file to gather information about the module for the module list page.",
       "Recommendation: Found `require(\"https\")` in file `calendarfetcher.js`: Replace \"https\" by \"node:https\".",
+      "Recommendation: Found `require(\"fetch\")` in file `calendarfetcher.js`: Replace it with built-in fetch.",
       "Deprecated: Found `require('request')` in file `node-ical.js`: Replace it with built-in fetch."
     ],
     "last_commit": "2022-09-26"
@@ -10473,7 +10475,7 @@
     ],
     "license": "MIT",
     "image": ".github-preview.bubbles.jpg",
-    "last_commit": "2023-11-17"
+    "last_commit": "2023-11-20"
   },
   {
     "name": "MMM-Netatmo-Presence",
@@ -11225,7 +11227,8 @@
     "description": "Octoprint API integration.",
     "issues": [
       "Typo: Found `Magic Mirror` in file `MMM-octoprint.js`: Replace it with `MagicMirror\u00b2`.",
-      "Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror\u00b2`."
+      "Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror\u00b2`.",
+      "Recommendation: Found `require(\"fetch\")` in file `node_helper.js`: Replace it with built-in fetch."
     ],
     "tags": [
       "octoprint",
@@ -15219,7 +15222,6 @@
     ],
     "tags": [
       "magicmirrormodule",
-      "magic mirror module",
       "spotify",
       "music"
     ],
@@ -16073,6 +16075,7 @@
     "issues": [
       "There is no `package.json`. We need this file to gather information about the module for the module list page.",
       "Typo: Found `Magic Mirror` in file `MMM-TiHimawari8Earth.js`: Replace it with `MagicMirror\u00b2`.",
+      "Recommendation: Found `require(\"fetch\")` in file `node_helper.js`: Replace it with built-in fetch.",
       "Warning: No LICENSE file."
     ],
     "last_commit": "2023-09-21"
@@ -16441,6 +16444,7 @@
       "There is no `package.json`. We need this file to gather information about the module for the module list page.",
       "Typo: Found `Magic Mirror` in file `MMM-transitfeed.js`: Replace it with `MagicMirror\u00b2`.",
       "Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror\u00b2`.",
+      "Recommendation: Found `require('fetch')` in file `node_helper.js`: Replace it with built-in fetch.",
       "Warning: No LICENSE file."
     ],
     "last_commit": "2023-08-21"
@@ -17437,6 +17441,7 @@
       "No image found.",
       "Recommendation: Found `require(\"http\")` in file `node_helper.js`: Replace \"http\" by \"node:http\".",
       "Recommendation: Found `require(\"https\")` in file `node_helper.js`: Replace \"https\" by \"node:https\".",
+      "Recommendation: Found `require(\"fetch\")` in file `node_helper.js`: Replace it with built-in fetch.",
       "Typo: Found `MagicMirror2` in file `package.json`: Replace it with `MagicMirror\u00b2`."
     ],
     "license": "MIT",

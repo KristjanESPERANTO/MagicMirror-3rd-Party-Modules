@@ -3343,7 +3343,6 @@
     "description": "Display random or your most treasured <a target=\"_blank\" href=\"https://cht.sh\">cheat sheets</a> and learn something new while you have your cup of coffee.",
     "issues": [],
     "tags": [
-      "magic mirror module",
       "cheat sheet",
       "cht.sh",
       "tldr"
@@ -3407,7 +3406,6 @@
     "description": "Show radiation charts from <a target=\"_blank\" href=\"https://multigeiger.citysensor.de\">https://multigeiger.citysensor.de</a>.",
     "issues": [],
     "tags": [
-      "magic mirror module",
       "radiation",
       "multigeiger"
     ],
@@ -11812,7 +11810,6 @@
     "issues": [],
     "tags": [
       "magicmirrormodule",
-      "magic mirror module",
       "spotify",
       "music"
     ],
