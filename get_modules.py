@@ -14,7 +14,7 @@ def get_modules():
     # For testing set this to a lower number to test only a few meodules
     max_module_counter = 99999
 
-    modules_json_file = open('./docs/modules.temp.1.json', encoding="utf-8")
+    modules_json_file = open("./docs/modules.temp.1.json", encoding="utf-8")
     modules = json.load(modules_json_file)
 
     for module in modules:
@@ -32,15 +32,20 @@ def get_modules():
 
             if path.exists():
                 print("- I - path already exists: run `git pull`")
-                subprocess.run(f"cd {path} && git pull && cd ..", shell=True, check=False)
+                subprocess.run(
+                    f"cd {path} && git pull && cd ..", shell=True, check=False
+                )
             else:
                 print("- I - path doesn't exists: run `git clone`")
-                subprocess.run(f"git clone {module_url} {path} --depth 1", shell=True, check=False)
+                subprocess.run(
+                    f"git clone {module_url} {path} --depth 1", shell=True, check=False
+                )
 
             # Move module from temp directory to working directory
             shutil.move(path, f"./modules/{module_name}-----{module_owner}")
 
     print("\n- I - Modules found and downloaded: " + str(module_counter) + "\n")
+
 
 def rename_modules_directory():
     """
@@ -48,10 +53,10 @@ def rename_modules_directory():
     We need this so that we don't have to download all the git repositories every time.
     With rename process we get rid of old modules that have been removed from the list.
     """
-    temp_path = Path('./modules_temp')
-    modules_path = Path('./modules')
+    temp_path = Path("./modules_temp")
+    modules_path = Path("./modules")
 
-    if (modules_path.exists()):
+    if modules_path.exists():
         # Delete the directory "modules_temp" if it exists
         try:
             shutil.rmtree(str(temp_path))
@@ -59,6 +64,7 @@ def rename_modules_directory():
             pass
         # Rename the directory "modules" to "modules_temp"
         shutil.move(str(modules_path), str(temp_path))
+
 
 rename_modules_directory()
 
