@@ -874,15 +874,6 @@
     "issues": []
   },
   {
-    "name": "calendar_monthly",
-    "url": "https://github.com/KirAsh4/calendar_monthly",
-    "id": "KirAsh4/calendar_monthly",
-    "maintainer": "KirAsh4",
-    "maintainerURL": "",
-    "description": "Display a compact monthly calendar view.",
-    "issues": []
-  },
-  {
     "name": "MMM-CalendarExt2",
     "url": "https://github.com/MMM-CalendarExt2/MMM-CalendarExt2",
     "id": "MMM-CalendarExt2/MMM-CalendarExt2",
@@ -5227,6 +5218,15 @@
     "maintainer": "framboise-pi",
     "maintainerURL": "https://github.com/framboise-pi",
     "description": "Displays Minecraft server(s) informations.",
+    "issues": []
+  },
+  {
+    "name": "MMM-MyMonthlyCalendar",
+    "url": "https://github.com/htilburgs/MMM-MyMonthlyCalendar",
+    "id": "htilburgs/MMM-MyMonthlyCalendar",
+    "maintainer": "htilburgs",
+    "maintainerURL": "",
+    "description": "Display a compact monthly calendar view.",
     "issues": []
   },
   {

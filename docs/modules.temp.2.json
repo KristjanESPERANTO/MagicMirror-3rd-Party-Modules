@@ -1295,17 +1295,6 @@
     "license": "MIT"
   },
   {
-    "name": "calendar_monthly",
-    "url": "https://github.com/KirAsh4/calendar_monthly",
-    "id": "KirAsh4/calendar_monthly",
-    "maintainer": "KirAsh4",
-    "maintainerURL": "",
-    "description": "Display a compact monthly calendar view.",
-    "issues": [
-      "There is no `package.json`. We need this file to gather information about the module for the module list page."
-    ]
-  },
-  {
     "name": "MMM-CalendarExt2",
     "url": "https://github.com/MMM-CalendarExt2/MMM-CalendarExt2",
     "id": "MMM-CalendarExt2/MMM-CalendarExt2",
@@ -7693,6 +7682,17 @@
     ],
     "license": "MIT",
     "image": "Images-MMM-MyMinecraft_offline.jpg"
+  },
+  {
+    "name": "MMM-MyMonthlyCalendar",
+    "url": "https://github.com/htilburgs/MMM-MyMonthlyCalendar",
+    "id": "htilburgs/MMM-MyMonthlyCalendar",
+    "maintainer": "htilburgs",
+    "maintainerURL": "",
+    "description": "Display a compact monthly calendar view.",
+    "issues": [
+      "There is no `package.json`. We need this file to gather information about the module for the module list page."
+    ]
   },
   {
     "name": "MMM-MyPrayerTimes",

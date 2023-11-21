@@ -1662,20 +1662,6 @@
     "last_commit": "2023-10-29"
   },
   {
-    "name": "calendar_monthly",
-    "url": "https://github.com/KirAsh4/calendar_monthly",
-    "id": "KirAsh4/calendar_monthly",
-    "maintainer": "KirAsh4",
-    "maintainerURL": "",
-    "description": "Display a compact monthly calendar view.",
-    "issues": [
-      "There is no `package.json`. We need this file to gather information about the module for the module list page.",
-      "Recommendation: Module name doesn't follow the recommended pattern (it doesn't start with `MMM-`). Consider renaming your module.",
-      "Typo: Found `Magic Mirror` in file `calendar_monthly.js`: Replace it with `MagicMirror\u00b2`."
-    ],
-    "last_commit": "2019-01-06"
-  },
-  {
     "name": "MMM-CalendarExt2",
     "url": "https://github.com/MMM-CalendarExt2/MMM-CalendarExt2",
     "id": "MMM-CalendarExt2/MMM-CalendarExt2",
@@ -1916,7 +1902,7 @@
     ],
     "license": "MIT",
     "image": "img-example1.jpg",
-    "last_commit": "2023-08-15"
+    "last_commit": "2023-11-21"
   },
   {
     "name": "MMM-Canvas",
@@ -9894,6 +9880,19 @@
     "last_commit": "2021-12-05"
   },
   {
+    "name": "MMM-MyMonthlyCalendar",
+    "url": "https://github.com/htilburgs/MMM-MyMonthlyCalendar",
+    "id": "htilburgs/MMM-MyMonthlyCalendar",
+    "maintainer": "htilburgs",
+    "maintainerURL": "",
+    "description": "Display a compact monthly calendar view.",
+    "issues": [
+      "There is no `package.json`. We need this file to gather information about the module for the module list page.",
+      "Typo: Found `Magic Mirror` in file `MMM-MyMonthlyCalendar.js`: Replace it with `MagicMirror\u00b2`."
+    ],
+    "last_commit": "2023-06-21"
+  },
+  {
     "name": "MMM-MyPrayerTimes",
     "url": "https://github.com/htilburgs/MMM-MyPrayerTimes",
     "id": "htilburgs/MMM-MyPrayerTimes",
@@ -10475,7 +10474,7 @@
     ],
     "license": "MIT",
     "image": ".github-preview.bubbles.jpg",
-    "last_commit": "2023-11-20"
+    "last_commit": "2023-11-21"
   },
   {
     "name": "MMM-Netatmo-Presence",
@@ -13132,7 +13131,7 @@
     ],
     "license": "MIT",
     "image": "img-example.jpg",
-    "last_commit": "2023-11-16"
+    "last_commit": "2023-11-21"
   },
   {
     "name": "MMM-RAIN-RADAR",

@@ -1,6 +1,6 @@
 # Result of the module analysis
 
-Last update: 2023-11-20 21:25:15 UTC
+Last update: 2023-11-21 16:53:57 UTC
 
 ## Statistics
 
@@ -9,7 +9,7 @@ Last update: 2023-11-20 21:25:15 UTC
 | modules analyzed     |   1065   |
 | maintainer           |    612   |
 | modules with issues  |   1036   |
-| issues               |   3984   |
+| issues               |   3983   |
 | modules at github    |   1056   |
 | modules at gitlab    |      8   |
 | modules at bitbucket |      1   |
@@ -659,12 +659,6 @@ Last update: 2023-11-20 21:25:15 UTC
 ### [MMM-CalDAV by MMRIZE](https://github.com/MMRIZE/MMM-CalDAV)
 
 1. No image found.
-
-### [calendar_monthly by KirAsh4](https://github.com/KirAsh4/calendar_monthly)
-
-1. There is no `package.json`. We need this file to gather information about the module for the module list page.
-2. Recommendation: Module name doesn't follow the recommended pattern (it doesn't start with `MMM-`). Consider renaming your module.
-3. Typo: Found `Magic Mirror` in file `calendar_monthly.js`: Replace it with `MagicMirror²`.
 
 ### [MMM-CalendarExt3 by MMRIZE](https://github.com/MMRIZE/MMM-CalendarExt3)
 
@@ -3857,6 +3851,11 @@ Last update: 2023-11-20 21:25:15 UTC
 3. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
 4. Typo: Found `MagicMirror2` in file `package.json`: Replace it with `MagicMirror²`.
 5. Deprecated: Found `electron-rebuild` in file `package.json`: Replace it with `@electron/rebuild`
+
+### [MMM-MyMonthlyCalendar by htilburgs](https://github.com/htilburgs/MMM-MyMonthlyCalendar)
+
+1. There is no `package.json`. We need this file to gather information about the module for the module list page.
+2. Typo: Found `Magic Mirror` in file `MMM-MyMonthlyCalendar.js`: Replace it with `MagicMirror²`.
 
 ### [MMM-MyPrayerTimes by htilburgs](https://github.com/htilburgs/MMM-MyPrayerTimes)
 
