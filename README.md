@@ -85,7 +85,9 @@ This script goes through all cloned modules and performs various checks. The res
 - Use issue codes to make the module list file smaller.
 - optimize progress information while running `npm run all`
 - rewrite python scripts in javascript
-- Compatibility with the module list of `MMM-Remote-Control`: <https://github.com/Jopyth/MMM-Remote-Control/blob/master/modules.json>
+- Compatibility with:
+  - the module list of `MMM-Remote-Control`: <https://github.com/Jopyth/MMM-Remote-Control/blob/master/modules.json>
+  - and mmpm <https://github.com/Bee-Mar/mmpm>
 - Statistics per module
   - last update date
   - number of unresolved issues to guess the module’s activation level or popularity
