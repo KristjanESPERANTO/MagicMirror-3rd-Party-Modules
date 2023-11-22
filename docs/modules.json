@@ -6030,7 +6030,7 @@
     ],
     "license": "AGPL-3.0-or-later",
     "image": "screenshots-screenshot.jpg",
-    "last_commit": "2023-10-04"
+    "last_commit": "2023-11-22"
   },
   {
     "name": "MMM-HLTV",
@@ -7052,7 +7052,7 @@
     "id": "daterrell/MMM-ISS",
     "maintainer": "daterrell",
     "maintainerURL": "",
-    "description": "Like Mykle1's, but different.",
+    "description": "Display International Space Station fly-overs in your area.",
     "issues": [
       "An error occurred while getting information from 'package.json': Error: Invalid version: \"1.0\"",
       "Typo: Found `Magic Mirror` in file `MMM-ISS.js`: Replace it with `MagicMirror\u00b2`.",
@@ -7064,16 +7064,19 @@
   },
   {
     "name": "MMM-ISS-Live",
-    "url": "https://github.com/mykle1/MMM-ISS-Live",
-    "id": "mykle1/MMM-ISS-Live",
-    "maintainer": "mykle1",
+    "url": "https://github.com/KristjanESPERANTO/MMM-ISS-Live/",
+    "id": "KristjanESPERANTO/MMM-ISS-Live/",
+    "maintainer": "KristjanESPERANTO",
     "maintainerURL": "",
     "description": "Displays live video from the International Space Station.",
-    "issues": [
-      "There is no `package.json`. We need this file to gather information about the module for the module list page.",
-      "Typo: Found `Magic Mirror` in file `MMM-ISS-Live.js`: Replace it with `MagicMirror\u00b2`."
+    "issues": [],
+    "tags": [
+      "iss",
+      "livestream"
     ],
-    "last_commit": "2019-06-05"
+    "license": "MIT",
+    "image": "images-i1.jpg",
+    "last_commit": "2023-11-22"
   },
   {
     "name": "MMM-ISY",
@@ -12895,7 +12898,7 @@
     ],
     "license": "MIT",
     "image": "img-Goerdelerring_all.jpg",
-    "last_commit": "2023-11-19"
+    "last_commit": "2023-11-22"
   },
   {
     "name": "MMM-PublicTransportVVO",

@@ -1,16 +1,16 @@
 {
   "module-counter": 1065,
-  "modules-with-image-counter": 433,
-  "modules-with-issues-counter": 1036,
-  "issue-counter": 3983,
-  "last-update": "2023-11-21 16:53:57",
+  "modules-with-image-counter": 434,
+  "modules-with-issues-counter": 1035,
+  "issue-counter": 3981,
+  "last-update": "2023-11-22 22:38:55",
   "repository-hoster": {
     "github": 1056,
     "gitlab": 8,
     "bitbucket": 1
   },
   "maintainer": {
-    "mykle1": 49,
+    "mykle1": 48,
     "MMRIZE": 17,
     "fewieden": 15,
     "Tom-Hirschberger": 13,
@@ -38,6 +38,7 @@
     "htilburgs": 5,
     "cowboysdude": 4,
     "MMM-CalendarExt2": 4,
+    "KristjanESPERANTO": 4,
     "ulrichwisser": 4,
     "nischi": 4,
     "xadamxk": 4,
@@ -69,7 +70,6 @@
     "73cirdan": 3,
     "ptrbld": 3,
     "alexyak": 3,
-    "KristjanESPERANTO": 3,
     "sheyabernstein": 3,
     "fhinder": 3,
     "thobach": 3,

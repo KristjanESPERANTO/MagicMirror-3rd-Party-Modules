@@ -5501,21 +5501,25 @@
     "id": "daterrell/MMM-ISS",
     "maintainer": "daterrell",
     "maintainerURL": "",
-    "description": "Like Mykle1's, but different.",
+    "description": "Display International Space Station fly-overs in your area.",
     "issues": [
       "An error occurred while getting information from 'package.json': Error: Invalid version: \"1.0\""
     ]
   },
   {
     "name": "MMM-ISS-Live",
-    "url": "https://github.com/mykle1/MMM-ISS-Live",
-    "id": "mykle1/MMM-ISS-Live",
-    "maintainer": "mykle1",
+    "url": "https://github.com/KristjanESPERANTO/MMM-ISS-Live/",
+    "id": "KristjanESPERANTO/MMM-ISS-Live/",
+    "maintainer": "KristjanESPERANTO",
     "maintainerURL": "",
     "description": "Displays live video from the International Space Station.",
-    "issues": [
-      "There is no `package.json`. We need this file to gather information about the module for the module list page."
-    ]
+    "issues": [],
+    "tags": [
+      "iss",
+      "livestream"
+    ],
+    "license": "MIT",
+    "image": "images-i1.jpg"
   },
   {
     "name": "MMM-ISY",

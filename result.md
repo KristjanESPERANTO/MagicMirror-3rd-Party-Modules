@@ -1,6 +1,6 @@
 # Result of the module analysis
 
-Last update: 2023-11-21 16:53:57 UTC
+Last update: 2023-11-22 22:38:55 UTC
 
 ## Statistics
 
@@ -8,8 +8,8 @@ Last update: 2023-11-21 16:53:57 UTC
 |:---------------------|:--------:|
 | modules analyzed     |   1065   |
 | maintainer           |    612   |
-| modules with issues  |   1036   |
-| issues               |   3983   |
+| modules with issues  |   1035   |
+| issues               |   3981   |
 | modules at github    |   1056   |
 | modules at gitlab    |      8   |
 | modules at bitbucket |      1   |
@@ -2728,11 +2728,6 @@ Last update: 2023-11-21 16:53:57 UTC
 3. Typo: Found `Magic Mirror` in file `README.md`: Replace it with `MagicMirror²`.
 4. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
 5. Typo: Found `Magic Mirror` in file `package.json`: Replace it with `MagicMirror²`.
-
-### [MMM-ISS-Live by mykle1](https://github.com/mykle1/MMM-ISS-Live)
-
-1. There is no `package.json`. We need this file to gather information about the module for the module list page.
-2. Typo: Found `Magic Mirror` in file `MMM-ISS-Live.js`: Replace it with `MagicMirror²`.
 
 ### [MMM-ISY by shbatm](https://github.com/shbatm/MMM-ISY)
 

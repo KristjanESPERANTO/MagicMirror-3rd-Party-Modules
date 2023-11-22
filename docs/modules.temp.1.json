@@ -3743,14 +3743,14 @@
     "id": "daterrell/MMM-ISS",
     "maintainer": "daterrell",
     "maintainerURL": "",
-    "description": "Like Mykle1's, but different.",
+    "description": "Display International Space Station fly-overs in your area.",
     "issues": []
   },
   {
     "name": "MMM-ISS-Live",
-    "url": "https://github.com/mykle1/MMM-ISS-Live",
-    "id": "mykle1/MMM-ISS-Live",
-    "maintainer": "mykle1",
+    "url": "https://github.com/KristjanESPERANTO/MMM-ISS-Live/",
+    "id": "KristjanESPERANTO/MMM-ISS-Live/",
+    "maintainer": "KristjanESPERANTO",
     "maintainerURL": "",
     "description": "Displays live video from the International Space Station.",
     "issues": []
