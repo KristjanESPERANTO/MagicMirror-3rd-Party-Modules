@@ -7199,6 +7199,17 @@
     "license": "MIT"
   },
   {
+    "name": "MMM-MonthlyCalendar",
+    "url": "https://github.com/kolbyjack/MMM-MonthlyCalendar",
+    "id": "kolbyjack/MMM-MonthlyCalendar",
+    "maintainer": "kolbyjack",
+    "maintainerURL": "",
+    "description": "Display your calendar events in a monthly calendar view.",
+    "issues": [
+      "There is no `package.json`. We need this file to gather information about the module for the module list page."
+    ]
+  },
+  {
     "name": "MMM-Moon",
     "url": "https://github.com/EnderFlop/MMM-Moon",
     "id": "EnderFlop/MMM-Moon",

@@ -1,16 +1,16 @@
 # Result of the module analysis
 
-Last update: 2023-11-22 22:38:55 UTC
+Last update: 2023-11-23 16:58:48 UTC
 
 ## Statistics
 
 |                      | number   |
 |:---------------------|:--------:|
-| modules analyzed     |   1065   |
+| modules analyzed     |   1066   |
 | maintainer           |    612   |
-| modules with issues  |   1035   |
-| issues               |   3981   |
-| modules at github    |   1056   |
+| modules with issues  |   1036   |
+| issues               |   3982   |
+| modules at github    |   1057   |
 | modules at gitlab    |      8   |
 | modules at bitbucket |      1   |
 
@@ -3621,6 +3621,10 @@ Last update: 2023-11-22 22:38:55 UTC
 
 1. No image found.
 2. Deprecated: Found `electron-rebuild` in file `package.json`: Replace it with `@electron/rebuild`
+
+### [MMM-MonthlyCalendar by kolbyjack](https://github.com/kolbyjack/MMM-MonthlyCalendar)
+
+1. There is no `package.json`. We need this file to gather information about the module for the module list page.
 
 ### [MMM-Moon by EnderFlop](https://github.com/EnderFlop/MMM-Moon)
 

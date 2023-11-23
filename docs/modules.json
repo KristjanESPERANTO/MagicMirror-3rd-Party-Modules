@@ -9277,6 +9277,18 @@
     "last_commit": "2018-08-08"
   },
   {
+    "name": "MMM-MonthlyCalendar",
+    "url": "https://github.com/kolbyjack/MMM-MonthlyCalendar",
+    "id": "kolbyjack/MMM-MonthlyCalendar",
+    "maintainer": "kolbyjack",
+    "maintainerURL": "",
+    "description": "Display your calendar events in a monthly calendar view.",
+    "issues": [
+      "There is no `package.json`. We need this file to gather information about the module for the module list page."
+    ],
+    "last_commit": "2023-02-24"
+  },
+  {
     "name": "MMM-Moon",
     "url": "https://github.com/EnderFlop/MMM-Moon",
     "id": "EnderFlop/MMM-Moon",
@@ -10477,7 +10489,7 @@
     ],
     "license": "MIT",
     "image": ".github-preview.bubbles.jpg",
-    "last_commit": "2023-11-21"
+    "last_commit": "2023-11-23"
   },
   {
     "name": "MMM-Netatmo-Presence",

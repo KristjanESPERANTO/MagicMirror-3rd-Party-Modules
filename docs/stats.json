@@ -1,11 +1,11 @@
 {
-  "module-counter": 1065,
+  "module-counter": 1066,
   "modules-with-image-counter": 434,
-  "modules-with-issues-counter": 1035,
-  "issue-counter": 3981,
-  "last-update": "2023-11-22 22:38:55",
+  "modules-with-issues-counter": 1036,
+  "issue-counter": 3982,
+  "last-update": "2023-11-23 16:58:48",
   "repository-hoster": {
-    "github": 1056,
+    "github": 1057,
     "gitlab": 8,
     "bitbucket": 1
   },
@@ -175,6 +175,7 @@
     "elaniobro": 2,
     "Bee-Mar": 2,
     "ahmedwab": 2,
+    "kolbyjack": 2,
     "mrVragec": 2,
     "martinkooij": 2,
     "mtatsuma": 2,
@@ -597,7 +598,6 @@
     "Anonym-tsk": 1,
     "Klizzy": 1,
     "OscarVsp": 1,
-    "kolbyjack": 1,
     "thiagomides": 1,
     "gjonesme": 1,
     "fruestueck": 1,
