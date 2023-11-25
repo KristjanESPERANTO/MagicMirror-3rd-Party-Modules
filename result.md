@@ -1,6 +1,6 @@
 # Result of the module analysis
 
-Last update: 2023-11-23 16:58:48 UTC
+Last update: 2023-11-25 13:16:08 UTC
 
 ## Statistics
 
@@ -8,8 +8,8 @@ Last update: 2023-11-23 16:58:48 UTC
 |:---------------------|:--------:|
 | modules analyzed     |   1066   |
 | maintainer           |    612   |
-| modules with issues  |   1036   |
-| issues               |   3982   |
+| modules with issues  |   1026   |
+| issues               |   3928   |
 | modules at github    |   1057   |
 | modules at gitlab    |      8   |
 | modules at bitbucket |      1   |
@@ -892,14 +892,6 @@ Last update: 2023-11-23 16:58:48 UTC
 6. Deprecated: Found `require('request')` in file `node_helper.js`: Replace it with built-in fetch.
 7. Warning: No LICENSE file.
 
-### [MMM-CommandToNotification by Tom-Hirschberger](https://github.com/Tom-Hirschberger/MMM-CommandToNotification)
-
-1. `package.json` issue: No description
-2. There are no keywords in 'package.json'. We would use them as tags on the module list page.
-3. No image found.
-4. Typo: Found `Magic Mirror` in file `MMM-CommandToNotification.js`: Replace it with `MagicMirror²`.
-5. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
-
 ### [MMM-connection-status by sheyabernstein](https://github.com/sheyabernstein/MMM-connection-status)
 
 1. Typo: Found `Magic Mirror` in file `MMM-connection-status.js`: Replace it with `MagicMirror²`.
@@ -1450,13 +1442,6 @@ Last update: 2023-11-23 16:58:48 UTC
 
 1. Typo: Found `Magic Mirror` in file `MMM-Elvira.js`: Replace it with `MagicMirror²`.
 2. Deprecated: Found `require('request')` in file `node_helper.js`: Replace it with built-in fetch.
-
-### [MMM-EmbedURL by Tom-Hirschberger](https://github.com/Tom-Hirschberger/MMM-EmbedURL)
-
-1. `package.json` issue: No description
-2. There are no keywords in 'package.json'. We would use them as tags on the module list page.
-3. Typo: Found `Magic Mirror` in file `MMM-EmbedURL.js`: Replace it with `MagicMirror²`.
-4. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
 
 ### [MMM-EmbedYoutube by nitpum](https://github.com/nitpum/MMM-EmbedYoutube)
 
@@ -2185,12 +2170,7 @@ Last update: 2023-11-23 16:58:48 UTC
 
 ### [MMM-GPIO-Notifications by Tom-Hirschberger](https://github.com/Tom-Hirschberger/MMM-GPIO-Notifications)
 
-1. `package.json` issue: No description
-2. There are no keywords in 'package.json'. We would use them as tags on the module list page.
-3. Typo: Found `Magic Mirror` in file `MMM-GPIO-Notifications.js`: Replace it with `MagicMirror²`.
-4. Typo: Found `Magic Mirror` in file `HC-SR501-GPIO4-README-DE.md`: Replace it with `MagicMirror²`.
-5. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
-6. Deprecated: Found `electron-rebuild` in file `postinstall`: Replace it with `@electron/rebuild`
+1. Deprecated: Found `electron-rebuild` in file `postinstall`: Replace it with `@electron/rebuild`
 
 ### [MMM-gpsd by brentpabst](https://github.com/brentpabst/MMM-gpsd)
 
@@ -2945,14 +2925,6 @@ Last update: 2023-11-23 16:58:48 UTC
 1. There are no keywords in 'package.json'. We would use them as tags on the module list page.
 2. Typo: Found `Magic Mirror` in file `MMM-LeagueOfLegends.js`: Replace it with `MagicMirror²`.
 3. Recommendation: Found `XMLHttpRequest` in file `MMM-LeagueOfLegends.js`: Replace it with built-in fetch.
-
-### [MMM-LEDStripControl by Tom-Hirschberger](https://github.com/Tom-Hirschberger/MMM-LEDStripControl)
-
-1. `package.json` issue: No description
-2. There are no keywords in 'package.json'. We would use them as tags on the module list page.
-3. Typo: Found `Magic Mirror` in file `MMM-LEDStripControl.js`: Replace it with `MagicMirror²`.
-4. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
-5. Warning: No LICENSE file.
 
 ### [MMM-LesJoiesDuCode by Tomadelostacos](https://github.com/Tomadelostacos/MMM-LesJoiesDuCode)
 
@@ -3720,12 +3692,6 @@ Last update: 2023-11-23 16:58:48 UTC
 5. Typo: Found `Magic Mirror` in file `mpd_client.js`: Replace it with `MagicMirror²`.
 6. Warning: No LICENSE file.
 
-### [MMM-MplayerRadio by Tom-Hirschberger](https://github.com/Tom-Hirschberger/MMM-MplayerRadio)
-
-1. `package.json` issue: No description
-2. There are no keywords in 'package.json'. We would use them as tags on the module list page.
-3. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
-
 ### [MMM-MPR121 by PatriceG](https://github.com/PatriceG/MMM-MPR121)
 
 1. No image found.
@@ -3756,11 +3722,6 @@ Last update: 2023-11-23 16:58:48 UTC
 1. `package.json` issue: No repository field.
 2. `package.json` issue: No license field.
 3. There are no keywords in 'package.json'. We would use them as tags on the module list page.
-
-### [MMM-MQTTbridge by Tom-Hirschberger](https://github.com/Tom-Hirschberger/MMM-MQTTbridge)
-
-1. Typo: Found `Magic Mirror` in file `MMM-MQTTbridge.js`: Replace it with `MagicMirror²`.
-2. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
 
 ### [MMM-MQTTfloorplan by DMailMan](https://github.com/DMailMan/MMM-MQTTfloorplan)
 
@@ -4964,9 +4925,7 @@ Last update: 2023-11-23 16:58:48 UTC
 
 ### [MMM-ProfileControl by Tom-Hirschberger](https://github.com/Tom-Hirschberger/MMM-ProfileControl)
 
-1. `package.json` issue: No description
-2. There are no keywords in 'package.json'. We would use them as tags on the module list page.
-3. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
+1. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
 
 ### [MMM-Profilepicture by Snille](https://github.com/Snille/MMM-Profilepicture)
 
@@ -5465,14 +5424,6 @@ Last update: 2023-11-23 16:58:48 UTC
 3. Deprecated: Found `require('request')` in file `node_helper.js`: Replace it with built-in fetch.
 4. Typo: Found `MagicMirror2` in file `package.json`: Replace it with `MagicMirror²`.
 
-### [MMM-Screen-Powersave-Notification by Tom-Hirschberger](https://github.com/Tom-Hirschberger/MMM-Screen-Powersave-Notification)
-
-1. `package.json` issue: No description
-2. There are no keywords in 'package.json'. We would use them as tags on the module list page.
-3. No image found.
-4. Typo: Found `Magic Mirror` in file `MMM-Screen-Powersave-Notification.js`: Replace it with `MagicMirror²`.
-5. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
-
 ### [MMM-Screencast by kevinatown](https://github.com/kevinatown/MMM-Screencast)
 
 1. Recommendation: Found `require('http')` in file `DialServer.js`: Replace 'http' by 'node:http'.
@@ -5546,15 +5497,7 @@ Last update: 2023-11-23 16:58:48 UTC
 
 ### [MMM-Serial-Notifications by Tom-Hirschberger](https://github.com/Tom-Hirschberger/MMM-Serial-Notifications)
 
-1. `package.json` issue: No description
-2. There are no keywords in 'package.json'. We would use them as tags on the module list page.
-3. Typo: Found `Magic Mirror` in file `MMM-Serial-Notifications.js`: Replace it with `MagicMirror²`.
-4. Typo: Found `Magic Mirror` in file `APDS-9960-And-HC-SR04-Example.ino`: Replace it with `MagicMirror²`.
-5. Typo: Found `Magic Mirror` in file `APDS-9960-Example.ino`: Replace it with `MagicMirror²`.
-6. Typo: Found `Magic Mirror` in file `APDS-9960_Multi-VL53L0X.ino`: Replace it with `MagicMirror²`.
-7. Typo: Found `Magic Mirror` in file `APDS-9960_Multi-VL53L1X.ino`: Replace it with `MagicMirror²`.
-8. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
-9. Deprecated: Found `electron-rebuild` in file `postinstall`: Replace it with `@electron/rebuild`
+1. Deprecated: Found `electron-rebuild` in file `postinstall`: Replace it with `@electron/rebuild`
 
 ### [MMM-ServerStatus by XBCreepinJesus](https://github.com/XBCreepinJesus/MMM-ServerStatus)
 
@@ -6048,12 +5991,6 @@ Last update: 2023-11-23 16:58:48 UTC
 2. Typo: Found `Magic Mirror` in file `MMM-synology-ds.js`: Replace it with `MagicMirror²`.
 3. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
 
-### [MMM-SynologySurveillance by Tom-Hirschberger](https://github.com/Tom-Hirschberger/MMM-SynologySurveillance)
-
-1. `package.json` issue: No description
-2. There are no keywords in 'package.json'. We would use them as tags on the module list page.
-3. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
-
 ### [MMM-syslog by paviro](https://github.com/paviro/MMM-syslog)
 
 1. There is no `package.json`. We need this file to gather information about the module for the module list page.
@@ -6117,13 +6054,6 @@ Last update: 2023-11-23 16:58:48 UTC
 2. Typo: Found `Magic Mirror` in file `MMM-temp-ds18b20.js`: Replace it with `MagicMirror²`.
 3. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
 4. Typo: Found `Magic Mirror` in file `package.json`: Replace it with `MagicMirror²`.
-
-### [MMM-Temperature by Tom-Hirschberger](https://github.com/Tom-Hirschberger/MMM-Temperature)
-
-1. `package.json` issue: No description
-2. There are no keywords in 'package.json'. We would use them as tags on the module list page.
-3. Typo: Found `Magic Mirror` in file `MMM-Temperature.js`: Replace it with `MagicMirror²`.
-4. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
 
 ### [MMM-Tesla by mattdy](https://github.com/mattdy/MMM-Tesla)
 
@@ -6288,13 +6218,6 @@ Last update: 2023-11-23 16:58:48 UTC
 ### [MMM-Touch by gfischershaw](https://github.com/gfischershaw/MMM-Touch)
 
 1. There is no `package.json`. We need this file to gather information about the module for the module list page.
-
-### [MMM-TouchButton by Tom-Hirschberger](https://github.com/Tom-Hirschberger/MMM-TouchButton)
-
-1. `package.json` issue: No description
-2. There are no keywords in 'package.json'. We would use them as tags on the module list page.
-3. Typo: Found `Magic Mirror` in file `MMM-TouchButton.js`: Replace it with `MagicMirror²`.
-4. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
 
 ### [MMM-Toulouse-Transports by LoneWanderer-GH](https://github.com/LoneWanderer-GH/MMM-Toulouse-Transports)
 
@@ -6552,13 +6475,6 @@ Last update: 2023-11-23 16:58:48 UTC
 2. `package.json` issue: No repository field.
 3. There are no keywords in 'package.json'. We would use them as tags on the module list page.
 4. No image found.
-
-### [MMM-ValuesByNotification by Tom-Hirschberger](https://github.com/Tom-Hirschberger/MMM-ValuesByNotification)
-
-1. `package.json` issue: No description
-2. There are no keywords in 'package.json'. We would use them as tags on the module list page.
-3. Typo: Found `Magic Mirror` in file `MMM-ValuesByNotification.js`: Replace it with `MagicMirror²`.
-4. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
 
 ### [MMM-VartaESS by deg0nz](https://github.com/deg0nz/MMM-VartaESS)
 

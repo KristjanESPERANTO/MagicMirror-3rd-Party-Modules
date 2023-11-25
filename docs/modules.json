@@ -2306,15 +2306,20 @@
     "maintainer": "Tom-Hirschberger",
     "maintainerURL": "https://github.com/Tom-Hirschberger",
     "description": "Calls configurable scripts periodically and send the output as notifications(s).",
-    "issues": [
-      "`package.json` issue: No description",
-      "There are no keywords in 'package.json'. We would use them as tags on the module list page.",
-      "No image found.",
-      "Typo: Found `Magic Mirror` in file `MMM-CommandToNotification.js`: Replace it with `MagicMirror\u00b2`.",
-      "Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror\u00b2`."
+    "issues": [],
+    "tags": [
+      "scripts",
+      "commands",
+      "notifications",
+      "conditional",
+      "temperature",
+      "humidity",
+      "environment",
+      "sensors"
     ],
     "license": "MIT",
-    "last_commit": "2023-05-25"
+    "image": "examples-bash-curl.jpg",
+    "last_commit": "2023-11-24"
   },
   {
     "name": "MMM-connection-status",
@@ -3750,15 +3755,17 @@
     "maintainer": "Tom-Hirschberger",
     "maintainerURL": "https://github.com/Tom-Hirschberger",
     "description": "Embed one or multiple websites with there URL.",
-    "issues": [
-      "`package.json` issue: No description",
-      "There are no keywords in 'package.json'. We would use them as tags on the module list page.",
-      "Typo: Found `Magic Mirror` in file `MMM-EmbedURL.js`: Replace it with `MagicMirror\u00b2`.",
-      "Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror\u00b2`."
+    "issues": [],
+    "tags": [
+      "embed",
+      "iframe",
+      "webview",
+      "mjpeg",
+      "videostream"
     ],
     "license": "MIT",
     "image": "icons-tom.jpg",
-    "last_commit": "2023-02-05"
+    "last_commit": "2023-11-24"
   },
   {
     "name": "MMM-EmbedYoutube",
@@ -5645,16 +5652,14 @@
     "maintainerURL": "https://github.com/Tom-Hirschberger",
     "description": "Send notifications based on GPIO events. Can be used as PIR module and with rotary encoders.",
     "issues": [
-      "`package.json` issue: No description",
-      "There are no keywords in 'package.json'. We would use them as tags on the module list page.",
-      "Typo: Found `Magic Mirror` in file `MMM-GPIO-Notifications.js`: Replace it with `MagicMirror\u00b2`.",
-      "Typo: Found `Magic Mirror` in file `HC-SR501-GPIO4-README-DE.md`: Replace it with `MagicMirror\u00b2`.",
-      "Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror\u00b2`.",
       "Deprecated: Found `electron-rebuild` in file `postinstall`: Replace it with `@electron/rebuild`"
+    ],
+    "tags": [
+      "gpio"
     ],
     "license": "MIT",
     "image": "examples-HC-SR501-HC-SR501-GPIO4.jpg",
-    "last_commit": "2023-06-18"
+    "last_commit": "2023-11-24"
   },
   {
     "name": "MMM-gpsd",
@@ -7660,16 +7665,18 @@
     "maintainer": "Tom-Hirschberger",
     "maintainerURL": "https://github.com/Tom-Hirschberger",
     "description": "A module to control the color (and pong game parameters) of led strips via MQTT.",
-    "issues": [
-      "`package.json` issue: No description",
-      "There are no keywords in 'package.json'. We would use them as tags on the module list page.",
-      "Typo: Found `Magic Mirror` in file `MMM-LEDStripControl.js`: Replace it with `MagicMirror\u00b2`.",
-      "Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror\u00b2`.",
-      "Warning: No LICENSE file."
+    "issues": [],
+    "tags": [
+      "led",
+      "ws2801",
+      "ws2813",
+      "ws2812b",
+      "pong",
+      "mqtt"
     ],
     "license": "MIT",
     "image": "screenshots-led-control-all-options.jpg",
-    "last_commit": "2022-10-09"
+    "last_commit": "2023-11-24"
   },
   {
     "name": "MMM-LesJoiesDuCode",
@@ -9524,14 +9531,17 @@
     "maintainer": "Tom-Hirschberger",
     "maintainerURL": "https://github.com/Tom-Hirschberger",
     "description": "Play m3u radio streams. Controllable by touch and notification.",
-    "issues": [
-      "`package.json` issue: No description",
-      "There are no keywords in 'package.json'. We would use them as tags on the module list page.",
-      "Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror\u00b2`."
+    "issues": [],
+    "tags": [
+      "sound",
+      "radio",
+      "stream",
+      "audio",
+      "mp3"
     ],
     "license": "MIT",
     "image": "examples-initialScreen.jpg",
-    "last_commit": "2023-11-05"
+    "last_commit": "2023-11-23"
   },
   {
     "name": "MMM-MPR121",
@@ -9640,16 +9650,13 @@
     "maintainer": "Tom-Hirschberger",
     "maintainerURL": "https://github.com/Tom-Hirschberger",
     "description": "A powerful module that subscribes to MQTT broker and read/send MQTT messages and MM Notifications with a lot of individual setup/rules. Allows you to integrate MM into smart home like Home Assistant. Powerful automation with structured Noti and MQTT dictionaries rules (e.g. one mqtt message could trigger many predefined noti, and one mm-noti could trigger different predefined mqtt messages).",
-    "issues": [
-      "Typo: Found `Magic Mirror` in file `MMM-MQTTbridge.js`: Replace it with `MagicMirror\u00b2`.",
-      "Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror\u00b2`."
-    ],
+    "issues": [],
     "tags": [
       "mqtt"
     ],
     "license": "MIT",
     "image": ".github-mqttbridge_logo.jpg",
-    "last_commit": "2023-01-22"
+    "last_commit": "2023-11-24"
   },
   {
     "name": "MMM-MQTTfloorplan",
@@ -10489,7 +10496,7 @@
     ],
     "license": "MIT",
     "image": ".github-preview.bubbles.jpg",
-    "last_commit": "2023-11-23"
+    "last_commit": "2023-11-24"
   },
   {
     "name": "MMM-Netatmo-Presence",
@@ -10942,7 +10949,7 @@
     ],
     "license": "MIT",
     "image": "screenshot.jpg",
-    "last_commit": "2023-01-10"
+    "last_commit": "2023-11-25"
   },
   {
     "name": "MMM-NMBS-Connection",
@@ -12789,13 +12796,16 @@
     "maintainerURL": "https://github.com/Tom-Hirschberger",
     "description": "Indicator module for MMM-ProfileSwitcher.",
     "issues": [
-      "`package.json` issue: No description",
-      "There are no keywords in 'package.json'. We would use them as tags on the module list page.",
       "Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror\u00b2`."
+    ],
+    "tags": [
+      "profiles",
+      "pages",
+      "touchable"
     ],
     "license": "MIT",
     "image": "examples-page_one-profile_two.jpg",
-    "last_commit": "2020-04-06"
+    "last_commit": "2023-11-24"
   },
   {
     "name": "MMM-Profilepicture",
@@ -14083,15 +14093,14 @@
     "maintainer": "Tom-Hirschberger",
     "maintainerURL": "https://github.com/Tom-Hirschberger",
     "description": "Screensaver module which shuts the screen off if USER_PRESENCE is not received within specified timeout. Can be used as PIR module in combination with <a target=\"_blank\" href=\"https://github.com/Tom-Hirschberger/MMM-GPIO-Notifications\">MMM-GPIO-Notifications</a>.",
-    "issues": [
-      "`package.json` issue: No description",
-      "There are no keywords in 'package.json'. We would use them as tags on the module list page.",
-      "No image found.",
-      "Typo: Found `Magic Mirror` in file `MMM-Screen-Powersave-Notification.js`: Replace it with `MagicMirror\u00b2`.",
-      "Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror\u00b2`."
+    "issues": [],
+    "tags": [
+      "screensave",
+      "pir"
     ],
     "license": "MIT",
-    "last_commit": "2023-08-05"
+    "image": "example.jpg",
+    "last_commit": "2023-11-24"
   },
   {
     "name": "MMM-Screencast",
@@ -14301,19 +14310,16 @@
     "maintainerURL": "https://github.com/Tom-Hirschberger",
     "description": "A module to send notifications based on messages received via one/multiple serial devices.",
     "issues": [
-      "`package.json` issue: No description",
-      "There are no keywords in 'package.json'. We would use them as tags on the module list page.",
-      "Typo: Found `Magic Mirror` in file `MMM-Serial-Notifications.js`: Replace it with `MagicMirror\u00b2`.",
-      "Typo: Found `Magic Mirror` in file `APDS-9960-And-HC-SR04-Example.ino`: Replace it with `MagicMirror\u00b2`.",
-      "Typo: Found `Magic Mirror` in file `APDS-9960-Example.ino`: Replace it with `MagicMirror\u00b2`.",
-      "Typo: Found `Magic Mirror` in file `APDS-9960_Multi-VL53L0X.ino`: Replace it with `MagicMirror\u00b2`.",
-      "Typo: Found `Magic Mirror` in file `APDS-9960_Multi-VL53L1X.ino`: Replace it with `MagicMirror\u00b2`.",
-      "Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror\u00b2`.",
       "Deprecated: Found `electron-rebuild` in file `postinstall`: Replace it with `@electron/rebuild`"
+    ],
+    "tags": [
+      "serial console",
+      "tty",
+      "notifications"
     ],
     "license": "MIT",
     "image": "examples-APDS-9960_Multi-VL53L1X-APDS-9960_Multi-VL53L1X.jpg",
-    "last_commit": "2023-09-02"
+    "last_commit": "2023-11-24"
   },
   {
     "name": "MMM-ServerStatus",
@@ -15636,14 +15642,18 @@
     "maintainer": "Tom-Hirschberger",
     "maintainerURL": "https://github.com/Tom-Hirschberger",
     "description": "Display the video streams of cameras connected to your Synology Disc Stations and control their positions.",
-    "issues": [
-      "`package.json` issue: No description",
-      "There are no keywords in 'package.json'. We would use them as tags on the module list page.",
-      "Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror\u00b2`."
+    "issues": [],
+    "tags": [
+      "synology",
+      "surveillancestation",
+      "mjpeg",
+      "ptz",
+      "live-stream",
+      "video"
     ],
     "license": "MIT",
     "image": "examples-screenshot-horizontal.jpg",
-    "last_commit": "2023-07-21"
+    "last_commit": "2023-11-24"
   },
   {
     "name": "MMM-syslog",
@@ -15867,15 +15877,20 @@
     "maintainer": "Tom-Hirschberger",
     "maintainerURL": "https://github.com/Tom-Hirschberger",
     "description": "Display tempature, humdity, and more of DHT11, DHT22, BMT280, HTU21, DS18B20 or other sensors.",
-    "issues": [
-      "`package.json` issue: No description",
-      "There are no keywords in 'package.json'. We would use them as tags on the module list page.",
-      "Typo: Found `Magic Mirror` in file `MMM-Temperature.js`: Replace it with `MagicMirror\u00b2`.",
-      "Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror\u00b2`."
+    "issues": [],
+    "tags": [
+      "temperature",
+      "humidity",
+      "dht11",
+      "dht22",
+      "bme280",
+      "ds28b20",
+      "htu21",
+      "sht31d"
     ],
     "license": "MIT",
     "image": "examples-oneNamelessSensor.jpg",
-    "last_commit": "2023-08-05"
+    "last_commit": "2023-11-24"
   },
   {
     "name": "MMM-Tesla",
@@ -16296,15 +16311,17 @@
     "maintainer": "Tom-Hirschberger",
     "maintainerURL": "https://github.com/Tom-Hirschberger",
     "description": "Add clickable buttons to send notifications or run commands.",
-    "issues": [
-      "`package.json` issue: No description",
-      "There are no keywords in 'package.json'. We would use them as tags on the module list page.",
-      "Typo: Found `Magic Mirror` in file `MMM-TouchButton.js`: Replace it with `MagicMirror\u00b2`.",
-      "Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror\u00b2`."
+    "issues": [],
+    "tags": [
+      "touch",
+      "button",
+      "icon",
+      "notifications",
+      "scripts"
     ],
     "license": "MIT",
     "image": "screenshots-threeColoredButtons.jpg",
-    "last_commit": "2023-09-29"
+    "last_commit": "2023-11-24"
   },
   {
     "name": "MMM-Toulouse-Transports",
@@ -16492,7 +16509,7 @@
       "Recommendation: Found `require('https')` in file `node_helper.js`: Replace 'https' by 'node:https'."
     ],
     "license": "ISC",
-    "last_commit": "2023-03-06"
+    "last_commit": "2023-11-25"
   },
   {
     "name": "MMM-TransLoc",
@@ -16988,15 +17005,17 @@
     "maintainer": "Tom-Hirschberger",
     "maintainerURL": "https://github.com/Tom-Hirschberger",
     "description": "Display the values of messages of notifications. Titles, icons, reformatting and parsing are supported.",
-    "issues": [
-      "`package.json` issue: No description",
-      "There are no keywords in 'package.json'. We would use them as tags on the module list page.",
-      "Typo: Found `Magic Mirror` in file `MMM-ValuesByNotification.js`: Replace it with `MagicMirror\u00b2`.",
-      "Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror\u00b2`."
+    "issues": [],
+    "tags": [
+      "json",
+      "jsonpath",
+      "flexible",
+      "thresholds",
+      "conditions"
     ],
     "license": "MIT",
     "image": "icons-tom.jpg",
-    "last_commit": "2023-08-28"
+    "last_commit": "2023-11-24"
   },
   {
     "name": "MMM-VartaESS",
