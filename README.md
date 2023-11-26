@@ -10,6 +10,23 @@ The goals of this project are to **create a nice list of modules** for [MagicMir
 
 With a few scripts we create a web page with filter function and integrated images. This website still needs some fine tuning, but is already in a usable state. You can check it out here: <https://kristjanesperanto.github.io/MagicMirror-3rd-Party-Modules/>
 
+### How do I get my module presented perfectly in the new list?
+
+This is a list of information that we can display on the web page and where the information comes from. This should help you to improve the presentation of your module. Keep in mind that the web page will not be updated immediately, it may take a few days for your changes to arrive.
+
+- Module name: Is taken from the repository URL. Example URL: <https://github.com/maintainer/MMM-MyFancyModule> -> module name `MMM-MyFancyModule`.
+- Maintainer: Is also taken from the repository URL. Example URL: <https://github.com/BruceWayne/MMM-MyFancyModule> -> maintainer `BruceWayne`.
+- Last commit: It's taken directly from the repository.
+- Image
+  - There are two requirements for an image of your module to be displayed:
+    1. In the `package.json` must be a free license in the license field. Take a look at [this package.json](https://github.com/KristjanESPERANTO/MMM-PublicTransportHafas/blob/main/package.json) as an example.
+    2. There must be an image file in your repository.
+  - If there are several images in your repository, one image is selected according to the following logic: First search for an image that starts with 'screenshot' or 'example' and if none is found, take the first image that is found.
+- Description: Is taken from the [official list of modules](https://github.com/MichMich/MagicMirror/wiki/3rd-party-modules).
+- Tags: Are taken from the keywords in the `package.json`. Take a look at [this package.json](https://github.com/KristjanESPERANTO/MMM-PublicTransportHafas/blob/main/package.json) as an example.
+
+Also check the [result file](result.md) to see if there are any notes on your module.
+
 ## Module tests
 
 The aim of the tests is to increase the quality of the modules, also in order to be able to present them optimally in the module list. Due to the huge number of modules, the tests can only remain rudimentary.
@@ -80,7 +97,6 @@ This script goes through all cloned modules and performs various checks. The res
 
 - Website
   - Add filter for outdated modules.
-- Write instructions: “How do I get my module presented perfectly in the list?”
 - Handle empty keywords array + handle empty tags array (advise: Add a few meaningful terms to the keywords in the package.json. Not just “mirror” or “module”.)
 - Use issue codes to make the module list file smaller.
 - optimize progress information while running `npm run all`
