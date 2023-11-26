@@ -25,6 +25,10 @@
             <option value="name">name</option>
           </select>
         </div>
+        <div id="outdated-checkbox-container">
+          <label for="show-outdated">Show outdated modules</label>
+          <input type="checkbox" id="show-outdated" checked />
+        </div>
       </div>
       <div id="top-left">
         <div id="last-update"></div>
@@ -36,14 +40,14 @@
         placeholder="Search in tags, descriptions, names and maintainer..."
       />
       <div id="container">
-        <div id="card-count">
-          Modules shown: <span id="card-count-value">0</span>
+        <div id="module-count">
+          Modules shown: <span id="module-count-value">0</span>
         </div>
         <button id="reset-button" style="display: none">Reset</button>
       </div>
       <div id="tag-buttons"></div>
     </header>
-    <main id="card-container"></main>
+    <main id="module-container"></main>
     <script src="script.js"></script>
   </body>
 </html>

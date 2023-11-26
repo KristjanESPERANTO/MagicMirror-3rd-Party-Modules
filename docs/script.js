@@ -1,83 +1,81 @@
-let allData = [];
-let filteredCards;
+let allModules = [];
+let filteredModuleList;
 const resetButton = document.getElementById("reset-button");
-const cardContainer = document.getElementById("card-container");
+const moduleCardContainer = document.getElementById("module-container");
 const searchInput = document.getElementById("search-input");
 const tagButtonContainer = document.getElementById("tag-buttons");
 const sortDropdown = document.getElementById("sort-dropdown");
+const showOutdated = document.getElementById("show-outdated");
 
-function displayCards() {
-  cardContainer.innerHTML = "";
+function updateModuleCardContainer() {
+  moduleCardContainer.innerHTML = "";
 
-  const cardCountValue = filteredCards.length;
-  const cardCountElement = document.getElementById("card-count-value");
-  cardCountElement.textContent = `${cardCountValue} of ${allData.length}`;
+  let moduleCounter = filteredModuleList.length;
 
-  filteredCards.forEach((cardData) => {
-    const card = document.createElement("div");
-    card.className = "card";
-    card.innerHTML = `
+  filteredModuleList.forEach((moduleData) => {
+    if (!moduleData.outdated || showOutdated.checked) {
+      const card = document.createElement("div");
+      card.className = "card";
+      card.innerHTML = `
               <div class="card-header">
-                <a href="${cardData.url}" target="_blank">${cardData.name}</a>
-                <div class="maintainer">maintained by ${cardData.maintainer}</div>
-                <div class="last-commit">last commit: ${cardData.last_commit}</div>
+                <a href="${moduleData.url}" target="_blank">${moduleData.name}</a>
+                <div class="maintainer">maintained by ${moduleData.maintainer}</div>
+                <div class="last-commit">last commit: ${moduleData.last_commit}</div>
               </div>
             `;
-    if (cardData.issues.length > 0) {
-      const url = `https://github.com/KristjanESPERANTO/MagicMirror-3rd-Party-Modules/blob/main/result.md#${cardData.name}-by-${cardData.maintainer}`;
-      card.innerHTML += `<div class="issues"><a target="_blank" href="${url}">🗈</a></div>`;
-    }
+      if (moduleData.issues.length > 0) {
+        const url = `https://github.com/KristjanESPERANTO/MagicMirror-3rd-Party-Modules/blob/main/result.md#${moduleData.name}-by-${moduleData.maintainer}`;
+        card.innerHTML += `<div class="issues"><a target="_blank" href="${url}">🗈</a></div>`;
+      }
 
-    if (cardData.image) {
-      const imagePath = `./images/${cardData.name}---${cardData.maintainer}---${cardData.image}`;
-      card.innerHTML += `
+      if (moduleData.image) {
+        const imagePath = `./images/${moduleData.name}---${moduleData.maintainer}---${moduleData.image}`;
+        card.innerHTML += `
       <div class="card-image-container">
         <img src="${imagePath}" alt="Image">
-        <div class="card-image-license-info">Image from the repository. ©${cardData.license}</div>
+        <div class="card-image-license-info">Image from the repository. ©${moduleData.license}</div>
       </div>
         `;
-    }
+      }
 
-    if (cardData.outdated) {
-      card.className += " outdated";
-      card.innerHTML += `
-      <p><b>⚠ This module is outdated:</b> ${cardData.outdated}</p>
+      if (moduleData.outdated) {
+        card.className += " outdated";
+        card.innerHTML += `
+      <p><b>⚠ This module is outdated:</b> ${moduleData.outdated}</p>
       <hr>
       `;
-    }
+      }
 
-    card.innerHTML += `
-        <p>${cardData.description}</p>
-        `;
-    if (cardData.tags) {
       card.innerHTML += `
-                <p><b>Tags:</b> ${cardData.tags
+        <p>${moduleData.description}</p>
+        `;
+      if (moduleData.tags) {
+        card.innerHTML += `
+                <p><b>Tags:</b> ${moduleData.tags
                   .map((tag) => `#${tag}`)
                   .join(" ")}</p>
               `;
-    }
-    cardContainer.appendChild(card);
-  });
-
-  // Add an event listener for clicks on the cards
-  cardContainer.addEventListener("click", (event) => {
-    // Check if the clicked element is a card
-    const clickedCard = event.target.closest(".card");
-    if (clickedCard) {
-      // Remove the "selected" class from all cards
-      const allCards = document.querySelectorAll(".card");
-      allCards.forEach((card) => card.classList.remove("selected"));
-
-      // Mark the selected card
-      clickedCard.classList.add("selected");
+      }
+      moduleCardContainer.appendChild(card);
+    } else {
+      moduleCounter -= 1;
     }
   });
+
+  const moduleCountElement = document.getElementById("module-count-value");
+  moduleCountElement.textContent = `${moduleCounter} of ${allModules.length}`;
+
+  if (moduleCounter === allModules.length) {
+    resetButton.style.display = "none";
+  } else {
+    resetButton.style.display = "block";
+  }
 }
 
 function sortData(sortOption) {
   switch (sortOption) {
     case "default":
-      filteredCards.sort(
+      filteredModuleList.sort(
         (a, b) =>
           // Put oudated to the end
           !!a.outdated - !!b.outdated ||
@@ -88,10 +86,12 @@ function sortData(sortOption) {
       );
       break;
     case "lastcommit":
-      filteredCards.sort((a, b) => b.last_commit.localeCompare(a.last_commit));
+      filteredModuleList.sort((a, b) =>
+        b.last_commit.localeCompare(a.last_commit)
+      );
       break;
     case "name":
-      filteredCards.sort((a, b) => {
+      filteredModuleList.sort((a, b) => {
         const nameA = a.name.replace("MMM-", "");
         const nameB = b.name.replace("MMM-", "");
         return nameA.localeCompare(nameB);
@@ -135,14 +135,9 @@ function displayStatistics(data) {
   lastUpdateDiv.innerHTML = `Last update: ${data["last-update"]} UTC`;
 }
 
-function updateDisplay() {
-  sortData(sortDropdown.value);
-  displayCards();
-}
-
 function filterBySearchText(searchText) {
   const searchLower = searchText.toLowerCase();
-  filteredCards = allData.filter((card) => {
+  filteredModuleList = allModules.filter((card) => {
     const cardText = card.text ? card.text.toLowerCase() : "";
     const cardDescription = card.description
       ? card.description.toLowerCase()
@@ -160,16 +155,13 @@ function filterBySearchText(searchText) {
     );
   });
 
-  // Show resetButton
-  resetButton.style.display = "block";
-
   removeSelectedMarkingFromTagsAndCards();
 
-  updateDisplay();
+  updateModuleCardContainer();
 }
 
 function filterByTag(tag) {
-  filteredCards = allData.filter((card) => {
+  filteredModuleList = allModules.filter((card) => {
     const tags = card.tags;
     if (tags) {
       return tags.includes(tag);
@@ -177,15 +169,11 @@ function filterByTag(tag) {
     return false;
   });
 
-  // Empty the search field
   searchInput.value = "";
-
-  // Show resetButton
-  resetButton.style.display = "block";
 
   removeSelectedMarkingFromTagsAndCards();
 
-  updateDisplay();
+  updateModuleCardContainer();
 
   // Mark the selected tag
   const selectedURL = document.querySelector(`.tag-button[data-tag="${tag}"]`);
@@ -194,18 +182,26 @@ function filterByTag(tag) {
   }
 }
 
+// Add an event listener for clicks on the cards
+moduleCardContainer.addEventListener("click", (event) => {
+  // Check if the clicked element is a card
+  const clickedCard = event.target.closest(".card");
+  if (clickedCard) {
+    // Remove the "selected" class from all cards
+    const allCards = document.querySelectorAll(".card");
+    allCards.forEach((card) => card.classList.remove("selected"));
+
+    // Mark the selected card
+    clickedCard.classList.add("selected");
+  }
+});
+
 resetButton.addEventListener("click", () => {
-  filteredCards = allData;
-
-  // Empty the search field
+  filteredModuleList = allModules;
   searchInput.value = "";
-
-  // Hide resetButton
-  resetButton.style.display = "none";
-
+  showOutdated.checked = true;
   removeSelectedMarkingFromTagsAndCards();
-
-  updateDisplay();
+  updateModuleCardContainer();
 });
 
 tagButtonContainer.addEventListener("click", (event) => {
@@ -220,35 +216,40 @@ searchInput.addEventListener("input", () => {
   if (searchInput.value) {
     filterBySearchText(searchInput.value);
   } else {
-    resetButton.style.display = "none";
-    filteredCards = allData;
-    updateDisplay();
+    filteredModuleList = allModules;
+    updateModuleCardContainer();
   }
 });
 
 // Add a change event listener to the dropdown menu
 sortDropdown.addEventListener("change", () => {
-  updateDisplay();
+  sortData(sortDropdown.value);
+  updateModuleCardContainer();
+});
+
+showOutdated.addEventListener("change", () => {
+  updateModuleCardContainer();
 });
 
 async function initiate() {
+  const modulesFile = "modules.min.json";
+  try {
+    const response = await fetch(modulesFile);
+    const data = await response.json();
+    allModules = data;
+    filteredModuleList = data;
+    sortData(sortDropdown.value);
+    updateModuleCardContainer();
+    displayTagButtonContainer();
+  } catch (error) {
+    console.error("Error fetching data:", error);
+  }
+
   const statisticsFile = "stats.json";
   try {
     const response = await fetch(statisticsFile);
     const data = await response.json();
     displayStatistics(data);
-  } catch (error) {
-    console.error("Error fetching data:", error);
-  }
-
-  const modulesFile = "modules.min.json";
-  try {
-    const response = await fetch(modulesFile);
-    const data = await response.json();
-    allData = data;
-    filteredCards = data;
-    updateDisplay();
-    displayTagButtonContainer();
   } catch (error) {
     console.error("Error fetching data:", error);
   }
