@@ -1,11 +1,11 @@
 {
-  "module-counter": 1066,
+  "module-counter": 1067,
   "modules-with-image-counter": 436,
-  "modules-with-issues-counter": 1026,
-  "issue-counter": 3928,
-  "last-update": "2023-11-25 13:16:08",
+  "modules-with-issues-counter": 1027,
+  "issue-counter": 3931,
+  "last-update": "2023-11-26 18:06:50",
   "repository-hoster": {
-    "github": 1057,
+    "github": 1058,
     "gitlab": 8,
     "bitbucket": 1
   },
@@ -37,6 +37,7 @@
     "eckonator": 5,
     "htilburgs": 5,
     "cowboysdude": 4,
+    "ItsMeBrille": 4,
     "MMM-CalendarExt2": 4,
     "KristjanESPERANTO": 4,
     "ulrichwisser": 4,
@@ -58,7 +59,6 @@
     "ngnijland": 4,
     "Jopyth": 3,
     "kagjerde": 3,
-    "ItsMeBrille": 3,
     "nebulx29": 3,
     "nikobix": 3,
     "jeroenpeters1986": 3,

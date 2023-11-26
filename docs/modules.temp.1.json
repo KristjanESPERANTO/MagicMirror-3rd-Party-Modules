@@ -4698,6 +4698,15 @@
     "issues": []
   },
   {
+    "name": "MMm-MinecraftServer",
+    "url": "https://github.com/ItsMeBrille/MMm-MinecraftServer",
+    "id": "ItsMeBrille/MMm-MinecraftServer",
+    "maintainer": "ItsMeBrille",
+    "maintainerURL": "",
+    "description": "Display Minecraft server status and shows list of active players",
+    "issues": []
+  },
+  {
     "name": "mmm-moon-phases",
     "url": "https://github.com/spectroman/mmm-moon-phases",
     "id": "spectroman/mmm-moon-phases",

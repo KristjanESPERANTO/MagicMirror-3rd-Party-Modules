@@ -6911,6 +6911,17 @@
     "image": "brickell-station-colored.jpg"
   },
   {
+    "name": "MMm-MinecraftServer",
+    "url": "https://github.com/ItsMeBrille/MMm-MinecraftServer",
+    "id": "ItsMeBrille/MMm-MinecraftServer",
+    "maintainer": "ItsMeBrille",
+    "maintainerURL": "",
+    "description": "Display Minecraft server status and shows list of active players",
+    "issues": [
+      "There is no `package.json`. We need this file to gather information about the module for the module list page."
+    ]
+  },
+  {
     "name": "mmm-moon-phases",
     "url": "https://github.com/spectroman/mmm-moon-phases",
     "id": "spectroman/mmm-moon-phases",

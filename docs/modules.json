@@ -8881,6 +8881,20 @@
     "last_commit": "2021-04-04"
   },
   {
+    "name": "MMm-MinecraftServer",
+    "url": "https://github.com/ItsMeBrille/MMm-MinecraftServer",
+    "id": "ItsMeBrille/MMm-MinecraftServer",
+    "maintainer": "ItsMeBrille",
+    "maintainerURL": "",
+    "description": "Display Minecraft server status and shows list of active players",
+    "issues": [
+      "There is no `package.json`. We need this file to gather information about the module for the module list page.",
+      "Recommendation: Module name doesn't follow the recommended pattern (it doesn't start with `MMM-`). Consider renaming your module.",
+      "Warning: No LICENSE file."
+    ],
+    "last_commit": "2023-11-19"
+  },
+  {
     "name": "mmm-moon-phases",
     "url": "https://github.com/spectroman/mmm-moon-phases",
     "id": "spectroman/mmm-moon-phases",
@@ -13136,7 +13150,7 @@
       "Typo: Found `Magic Mirror` in file `MMM-rain-forecast.js`: Replace it with `MagicMirror\u00b2`.",
       "Deprecated: Found `require('request')` in file `node_helper.js`: Replace it with built-in fetch."
     ],
-    "last_commit": "2022-01-06"
+    "last_commit": "2023-11-26"
   },
   {
     "name": "MMM-RAIN-MAP",
