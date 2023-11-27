@@ -752,7 +752,7 @@
       "Deprecated: Found `require(\"request\")` in file `node_helper.js`: Replace it with built-in fetch."
     ],
     "license": "MIT",
-    "image": "img-brennbar-rest.jpg",
+    "image": "img-examples.jpg",
     "last_commit": "2020-11-26"
   },
   {
@@ -844,7 +844,7 @@
       "Deprecated: Found `omxplayer` in file `node_helper.js`: Try to replace it with `vlc`."
     ],
     "license": "MIT",
-    "image": "screenshots-landscape.jpg",
+    "image": "exampleImages-1.jpg",
     "last_commit": "2023-04-01"
   },
   {
@@ -1224,7 +1224,7 @@
       "Warning: No LICENSE file."
     ],
     "license": "MIT",
-    "image": ".github-connect.jpg",
+    "image": ".github-example.jpg",
     "last_commit": "2021-04-10"
   },
   {
@@ -1494,7 +1494,7 @@
       "transport"
     ],
     "license": "MIT",
-    "image": "doc-find-place-id.jpg",
+    "image": "doc-screenshot-custom-place-name.jpg",
     "last_commit": "2021-06-06"
   },
   {
@@ -1672,7 +1672,7 @@
       "calendar"
     ],
     "license": "MIT",
-    "image": "screenshot.jpg",
+    "image": "docs-Configuration-Views-legend-full-example.jpg",
     "last_commit": "2023-11-02"
   },
   {
@@ -2246,7 +2246,7 @@
       "bitcoin"
     ],
     "license": "MIT",
-    "image": "logos-ada-128.jpg",
+    "image": "images-sample.jpg",
     "last_commit": "2022-02-02"
   },
   {
@@ -2651,7 +2651,7 @@
       "Recommendation: Found `XMLHttpRequest` in file `MMM-Currentweather-MQTT.js`: Replace it with built-in fetch."
     ],
     "license": "MIT",
-    "image": "MMM-Currentweather-MQTT-minmax.jpg",
+    "image": "weather_screenshot.jpg",
     "last_commit": "2022-03-26"
   },
   {
@@ -3425,7 +3425,7 @@
       "irish rail"
     ],
     "license": "GPL-3.0-or-later",
-    "image": "docs-bus-stop-nr.jpg",
+    "image": "docs-preview.jpg",
     "last_commit": "2018-01-09"
   },
   {
@@ -3559,7 +3559,7 @@
       "nasa"
     ],
     "license": "MIT",
-    "image": "pix-7.jpg",
+    "image": "loading-loading.jpg",
     "last_commit": "2019-02-04"
   },
   {
@@ -3763,7 +3763,7 @@
       "videostream"
     ],
     "license": "MIT",
-    "image": "icons-tom.jpg",
+    "image": "doc-screenshots-SomeGrafanaPanels.jpg",
     "last_commit": "2023-11-24"
   },
   {
@@ -4087,7 +4087,7 @@
       "Typo: Found `Magic Mirror` in file `MMM-Face-Multi-User-Recognition-SMAI.js`: Replace it with `MagicMirror\u00b2`."
     ],
     "license": "MIT",
-    "image": "public-guest.jpg",
+    "image": "img-readme-face-recognition-guest-smai.jpg",
     "last_commit": "2021-07-18"
   },
   {
@@ -4141,7 +4141,7 @@
       "facial recognition"
     ],
     "license": "MIT",
-    "image": "pi-faced-etc-notready.jpg",
+    "image": "media-admin-ui.jpg",
     "last_commit": "2023-09-04"
   },
   {
@@ -4773,7 +4773,7 @@
       "formula1"
     ],
     "license": "MIT",
-    "image": "flags.jpg",
+    "image": ".github-example.jpg",
     "last_commit": "2023-03-17"
   },
   {
@@ -5035,7 +5035,7 @@
       "calendar"
     ],
     "license": "MIT",
-    "image": "images-webcalfi-logo-small.jpg",
+    "image": "documentation-exampleui.jpg",
     "last_commit": "2021-03-24"
   },
   {
@@ -5074,7 +5074,7 @@
       "game of life"
     ],
     "license": "MIT",
-    "image": "Icon.jpg",
+    "image": "img-screenshot_1.jpg",
     "last_commit": "2018-02-23"
   },
   {
@@ -5361,7 +5361,7 @@
       "assistant for device"
     ],
     "license": "MIT",
-    "image": "resources-GA_Big.jpg",
+    "image": "resources-previewFS.jpg",
     "last_commit": "2023-11-19"
   },
   {
@@ -6158,7 +6158,7 @@
       "home assistant"
     ],
     "license": "MIT",
-    "image": "images-MMM-HomeAssistantDisplay.jpg",
+    "image": "images-simpleExample.jpg",
     "last_commit": "2023-10-25"
   },
   {
@@ -6230,7 +6230,7 @@
       "ccu2"
     ],
     "license": "MIT",
-    "image": "readme_connect.jpg",
+    "image": "readme_screenshot.jpg",
     "last_commit": "2019-10-26"
   },
   {
@@ -6843,7 +6843,7 @@
       "entertainment"
     ],
     "license": "MIT",
-    "image": "ig_placeholder.jpg",
+    "image": "readme_images-Example.jpg",
     "last_commit": "2022-05-03"
   },
   {
@@ -6915,7 +6915,7 @@
       "speed"
     ],
     "license": "MIT",
-    "image": "images-strength_almost.jpg",
+    "image": ".previews-almost.jpg",
     "last_commit": "2022-10-25"
   },
   {
@@ -7030,7 +7030,7 @@
       "Typo: Found `Magic Mirror` in file `MMM-IronManGIF.js`: Replace it with `MagicMirror\u00b2`."
     ],
     "license": "MIT",
-    "image": "Resources-1.jpg",
+    "image": "Resources-screenshot.jpg",
     "last_commit": "2021-12-17"
   },
   {
@@ -7724,7 +7724,7 @@
       "spotify"
     ],
     "license": "MIT",
-    "image": "img-Spotify_Icon_RGB_White.jpg",
+    "image": ".github-example1.jpg",
     "last_commit": "2023-10-01"
   },
   {
@@ -8573,7 +8573,7 @@
       "Warning: No LICENSE file."
     ],
     "license": "MIT",
-    "image": ".github-connection.jpg",
+    "image": ".github-example.jpg",
     "last_commit": "2020-02-02"
   },
   {
@@ -9233,7 +9233,7 @@
       "Typo: Found `Magic Mirror` in file `controls.py`: Replace it with `MagicMirror\u00b2`."
     ],
     "license": "MIT",
-    "image": "images-image.jpg",
+    "image": "images-screenshot2.jpg",
     "last_commit": "2021-10-08"
   },
   {
@@ -9327,7 +9327,7 @@
       "There are no keywords in 'package.json'. We would use them as tags on the module list page."
     ],
     "license": "MIT",
-    "image": "public-Phases-full.jpg",
+    "image": "images-2019-06-22-example-moons.jpg",
     "last_commit": "2023-10-04"
   },
   {
@@ -9349,7 +9349,7 @@
       "fluidd"
     ],
     "license": "MIT",
-    "image": "img-no_thumbnail.jpg",
+    "image": ".github-example.jpg",
     "last_commit": "2023-09-11"
   },
   {
@@ -9904,7 +9904,7 @@
       "minecraft"
     ],
     "license": "MIT",
-    "image": "Images-MMM-MyMinecraft_offline.jpg",
+    "image": "Images-screenshot_MMM-MyMinecraft_01.jpg",
     "last_commit": "2021-12-05"
   },
   {
@@ -9953,7 +9953,7 @@
       "sports"
     ],
     "license": "MIT",
-    "image": "logos-NCAAW-CAL.jpg",
+    "image": "logos-NCAAF-CAL.jpg",
     "last_commit": "2022-10-09"
   },
   {
@@ -10138,7 +10138,7 @@
       "volvooncall"
     ],
     "license": "MIT",
-    "image": "graphics-c40-electric.jpg",
+    "image": "gallery-example.jpg",
     "last_commit": "2023-11-13"
   },
   {
@@ -10155,7 +10155,7 @@
       "Found directory `node_modules`. This shouldn't be uploaded. Add `node_modules/`to `.gitignore`."
     ],
     "license": "MIT",
-    "image": "node_modules-npm-node_modules-unique-filename-coverage-sort-arrow-sprite.jpg",
+    "image": "node_modules-npm-node_modules-read-node_modules-mute-stream-coverage-lcov-report-sort-arrow-sprite.jpg",
     "last_commit": "2022-03-12"
   },
   {
@@ -10178,7 +10178,7 @@
       "module\""
     ],
     "license": "MIT",
-    "image": "img-weezle-chanceflurries.jpg",
+    "image": "img-VCloudsWeatherIcons-chanceflurries.jpg",
     "last_commit": "2019-04-20"
   },
   {
@@ -10348,7 +10348,7 @@
       "Deprecated: Found ` electron-rebuild` in file `postinstall`: Replace it with `@electron/rebuild`"
     ],
     "license": "MIT",
-    "image": "MMM-Navigate_fritzing_rotaryencoder.jpg",
+    "image": "MMM-Navigate_screenshot1.jpg",
     "last_commit": "2023-05-02"
   },
   {
@@ -10474,7 +10474,7 @@
       "raspberrypi"
     ],
     "license": "MIT",
-    "image": "images-fanIconSpeed1.jpg",
+    "image": "doc-screenshot-cooling-ambientTemperature.jpg",
     "last_commit": "2022-03-22"
   },
   {
@@ -10601,7 +10601,7 @@
       "scanner"
     ],
     "license": "MIT",
-    "image": "exampleColumnsNewLines.jpg",
+    "image": ".github-example-columns2.jpg",
     "last_commit": "2020-04-13"
   },
   {
@@ -10721,7 +10721,7 @@
       "Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror\u00b2`."
     ],
     "license": "MIT",
-    "image": "assets-create-app-password.jpg",
+    "image": "assets-demo_screenshot.jpg",
     "last_commit": "2022-12-19"
   },
   {
@@ -11127,7 +11127,7 @@
       "spotify"
     ],
     "license": "MIT",
-    "image": "Icon.jpg",
+    "image": "img-readme-screenshot_authorize_app.jpg",
     "last_commit": "2020-11-29"
   },
   {
@@ -11264,7 +11264,7 @@
       "fluidd"
     ],
     "license": "MIT",
-    "image": "img-no_thumbnail.jpg",
+    "image": ".github-example.jpg",
     "last_commit": "2023-06-01"
   },
   {
@@ -11449,7 +11449,7 @@
       "on-screen menu"
     ],
     "license": "MIT",
-    "image": "img-demo.jpg",
+    "image": "img-screenshot.jpg",
     "last_commit": "2018-10-11"
   },
   {
@@ -11472,7 +11472,7 @@
       "spotify connect"
     ],
     "license": "MIT",
-    "image": "auth-client-assets-image-mmmdolarargentina.jpg",
+    "image": ".github-content-banner-social.jpg",
     "last_commit": "2023-10-21"
   },
   {
@@ -12268,7 +12268,7 @@
       "automatic"
     ],
     "license": "MIT",
-    "image": "MMM-PIR-Sensor-Lite_console-log.jpg",
+    "image": "MMM-PIR-Sensor-Lite_screenshot1.jpg",
     "last_commit": "2022-12-06"
   },
   {
@@ -12702,7 +12702,7 @@
     ],
     "tags": [],
     "license": "ISC",
-    "image": "images-logo.jpg",
+    "image": "docs-screenshot.jpg",
     "last_commit": "2021-05-22"
   },
   {
@@ -12958,7 +12958,7 @@
       "Recommendation: Found `\"node-fetch\"` in file `node_helper.js`: Replace it with built-in fetch."
     ],
     "license": "MIT",
-    "image": "docs-aguffsox.jpg",
+    "image": "docs-FOLI-mfrojxmz.jpg",
     "last_commit": "2022-11-14"
   },
   {
@@ -13444,7 +13444,7 @@
       "reddit"
     ],
     "license": "ISC",
-    "image": "images-reddit-api.jpg",
+    "image": "images-screenshot.jpg",
     "last_commit": "2022-11-27"
   },
   {
@@ -13505,7 +13505,7 @@
       "control"
     ],
     "license": "MIT",
-    "image": "apple-touch-icon.jpg",
+    "image": ".github-hide_show_module.jpg",
     "last_commit": "2023-10-03"
   },
   {
@@ -14192,7 +14192,7 @@
       "Recommendation: Found `XMLHttpRequest` in file `MMM-SE-Reputation.js`: Replace it with built-in fetch."
     ],
     "license": "MIT",
-    "image": "module_graph.jpg",
+    "image": "docs-module_graph.jpg",
     "last_commit": "2020-06-29"
   },
   {
@@ -14303,7 +14303,7 @@
       "iot"
     ],
     "license": "MIT",
-    "image": "images-home.jpg",
+    "image": "documentation-exampleui.jpg",
     "last_commit": "2020-07-14"
   },
   {
@@ -14320,7 +14320,7 @@
       "notifications"
     ],
     "license": "MIT",
-    "image": "examples-APDS-9960_Multi-VL53L1X-APDS-9960_Multi-VL53L1X.jpg",
+    "image": "examples-APDS-9960_Multi-VL53L0X-APDS-9960_Multi-VL53L0X.jpg",
     "last_commit": "2023-11-24"
   },
   {
@@ -15463,7 +15463,7 @@
       "strava"
     ],
     "license": "MIT",
-    "image": ".github-Strava-API-Application-Client-Details.jpg",
+    "image": ".github-example-chart-recent.jpg",
     "last_commit": "2021-09-10"
   },
   {
@@ -15891,7 +15891,7 @@
       "sht31d"
     ],
     "license": "MIT",
-    "image": "examples-oneNamelessSensor.jpg",
+    "image": "examples-htu21-htu21.jpg",
     "last_commit": "2023-11-24"
   },
   {
@@ -15949,7 +15949,7 @@
       "There are no keywords in 'package.json'. We would use them as tags on the module list page."
     ],
     "license": "MIT",
-    "image": "img-HAL9000.jpg",
+    "image": "img-MMM-TeslaLogger-ScreenShot-image.jpg",
     "last_commit": "2022-03-26"
   },
   {
@@ -16172,7 +16172,7 @@
       "Warning: No LICENSE file."
     ],
     "license": "ISC",
-    "image": "docs-multiple-schools.jpg",
+    "image": "docs-screenshot.jpg",
     "last_commit": "2023-10-09"
   },
   {
@@ -16191,7 +16191,7 @@
     ],
     "tags": [],
     "license": "MIT",
-    "image": "images-logo.jpg",
+    "image": "images-screenshot.jpg",
     "last_commit": "2023-11-13"
   },
   {
@@ -16322,7 +16322,7 @@
       "scripts"
     ],
     "license": "MIT",
-    "image": "screenshots-threeColoredButtons.jpg",
+    "image": "examples-ShellyPlugs-shellies.jpg",
     "last_commit": "2023-11-24"
   },
   {
@@ -16662,7 +16662,7 @@
       "platform"
     ],
     "license": "MIT",
-    "image": "others-MMM-TuyaSL-photo-01.jpg",
+    "image": "others-MMM-TuyaSL-screenshot-01.jpg",
     "last_commit": "2021-01-05"
   },
   {
@@ -17016,7 +17016,7 @@
       "conditions"
     ],
     "license": "MIT",
-    "image": "icons-tom.jpg",
+    "image": "doc-screenshots-basicConfiguration.jpg",
     "last_commit": "2023-11-24"
   },
   {
@@ -17058,7 +17058,7 @@
     ],
     "tags": [],
     "license": "MIT",
-    "image": "docs-departureTimeColors.PNG",
+    "image": "docs-screenshot.PNG",
     "last_commit": "2023-07-28"
   },
   {
@@ -17077,7 +17077,7 @@
     ],
     "tags": [],
     "license": "MIT",
-    "image": "docs-departureTimeColors.PNG",
+    "image": "docs-screenshot.PNG",
     "last_commit": "2021-05-22"
   },
   {
@@ -17132,7 +17132,7 @@
       "Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror\u00b2`."
     ],
     "license": "MIT",
-    "image": "Pictures-1.jpg",
+    "image": "App-Assets-background.jpg",
     "last_commit": "2018-06-28"
   },
   {
@@ -17583,7 +17583,7 @@
       "forecast"
     ],
     "license": "MIT",
-    "image": "weather2.jpg",
+    "image": "images-01d.jpg",
     "last_commit": "2022-10-20"
   },
   {
@@ -18385,7 +18385,7 @@
     ],
     "tags": [],
     "license": "ISC",
-    "image": "screenshot.jpg",
+    "image": "alternateScreenshot.jpg",
     "last_commit": "2020-12-06"
   }
 ]
