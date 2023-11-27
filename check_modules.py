@@ -69,7 +69,11 @@ def check_modules():
             "name": "Replace 'https' by 'node:https'.",
             "category": "Recommendation",
         },
-        "electron-rebuild": {
+        " electron-rebuild": {
+            "name": "Replace it with `@electron/rebuild`",
+            "category": "Deprecated",
+        },
+        '"electron-rebuild"': {
             "name": "Replace it with `@electron/rebuild`",
             "category": "Deprecated",
         },
