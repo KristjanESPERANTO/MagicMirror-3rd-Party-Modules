@@ -1341,6 +1341,23 @@
     "license": "MIT"
   },
   {
+    "name": "MMM-CalendarExt3Journal",
+    "url": "https://github.com/MMRIZE/MMM-CalendarExt3Journal",
+    "id": "MMRIZE/MMM-CalendarExt3Journal",
+    "maintainer": "MMRIZE",
+    "maintainerURL": "",
+    "description": "Presenting events as daily/weekly journal style.",
+    "issues": [
+      "No image found."
+    ],
+    "tags": [
+      "cx3j",
+      "calendarext3",
+      "cx3"
+    ],
+    "license": "MIT"
+  },
+  {
     "name": "MMM-CalendarExt3Timeline",
     "url": "https://github.com/MMRIZE/MMM-CalendarExt3Timeline",
     "id": "MMRIZE/MMM-CalendarExt3Timeline",

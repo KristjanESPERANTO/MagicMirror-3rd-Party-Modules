@@ -189,10 +189,30 @@ def check_modules():
         if "LICENSE" not in str(sorted(module_directory_path.rglob("*"))):
             module["issues"].append("Warning: No LICENSE file.")
 
-        if not Path(f"./modules/{module_directory}").is_dir():
+        if not module_directory_path.is_dir():
             module["issues"] = [
                 "Error: It appears that the repository could not be cloned. Check the URL."
             ]
+
+        if len(module["issues"]) < 2:
+            updates_string = (
+                subprocess.run(
+                    f"ncu --cwd {module_directory_path}",
+                    capture_output=True,
+                    shell=True,
+                    check=False
+                )
+                .stdout.decode()
+                .rstrip()
+            )
+            updates_list = updates_string.splitlines()
+            updates_list = [line for line in updates_list if "→" in line]
+
+            if len(updates_list) > 0:
+                issue_text = f"Information: There are updates for {len(updates_list)} dependencie(s):\n"
+                for update in updates_list:
+                    issue_text += f"   - {update}\n"
+                module["issues"].append(issue_text)
 
         if "outdated" in module or len(module["issues"]) > 0:
             stats["modules-with-issues-counter"] += 1
@@ -211,7 +231,7 @@ def check_modules():
 
         module["last_commit"] = (
             subprocess.run(
-                f"cd ./modules/{module_directory} && git log -1 --format='%as' && cd ..",
+                f"cd {module_directory_path} && git log -1 --format='%as' && cd .. && cd ..",
                 stdout=subprocess.PIPE,
                 shell=True,
                 check=False,

@@ -56,6 +56,7 @@
   "dependencies": {
     "marked": "^10.0.0",
     "normalize-package-data": "^6.0.0",
+    "npm-check-updates": "^16.14.11",
     "sanitize-html": "^2.11.0",
     "sharp": "^0.32.6"
   }

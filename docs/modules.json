@@ -291,7 +291,8 @@
     "maintainerURL": "",
     "description": "Alarm Clock Module (touch and non-touch).",
     "issues": [
-      "Typo: Found `MagicMirror2` in file `package.json`: Replace it with `MagicMirror\u00b2`."
+      "Typo: Found `MagicMirror2` in file `package.json`: Replace it with `MagicMirror\u00b2`.",
+      "Information: There are updates for 5 dependencie(s):\n   -  eslint                     ^5.11.0  \u2192   ^8.54.0\n   -  eslint-config-recommended   ^4.0.0  \u2192    ^4.1.0\n   -  jsdoc                       ^3.4.3  \u2192    ^4.0.2\n   -  stylelint                   ^7.8.0  \u2192  ^15.11.0\n   -  stylelint-config-standard  ^16.0.0  \u2192   ^34.0.0\n"
     ],
     "tags": [
       "alarm clock"
@@ -797,7 +798,9 @@
     "maintainer": "lavolp3",
     "maintainerURL": "",
     "description": "Display stock prices and charts using Yahoo Finance API.",
-    "issues": [],
+    "issues": [
+      "Information: There are updates for 3 dependencie(s):\n   -  alphavantage    ^2.4.1  \u2192   ^2.5.0\n   -  highcharts      ^9.0.0  \u2192  ^11.2.0\n   -  yahoo-finance2  ^2.4.3  \u2192   ^2.9.0\n"
+    ],
     "tags": [
       "stock",
       "alphavantage"
@@ -979,7 +982,8 @@
     "maintainerURL": "",
     "description": "Displays snow reports from bergfex.at, forked version. Countries provided by bergfex.at can be configured and set.",
     "issues": [
-      "Deprecated: Found `require('request')` in file `node_helper.js`: Replace it with built-in fetch."
+      "Deprecated: Found `require('request')` in file `node_helper.js`: Replace it with built-in fetch.",
+      "Information: There are updates for 1 dependencie(s):\n   -  cheerio  ^1.0.0-rc.5  \u2192  ^1.0.0-rc.12\n"
     ],
     "tags": [
       "bergfex",
@@ -1199,7 +1203,8 @@
     "maintainerURL": "https://github.com/timodejong95",
     "description": "Connecting Bluetooth devices, currently only Oral-B toothbrushes.",
     "issues": [
-      "Warning: No LICENSE file."
+      "Warning: No LICENSE file.",
+      "Information: There are updates for 8 dependencie(s):\n   -  eslint                      ^6.8.0  \u2192  ^8.54.0\n   -  eslint-config-airbnb-base  ^14.2.0  \u2192  ^15.0.0\n   -  eslint-plugin-import       ^2.22.1  \u2192  ^2.29.0\n   -  fast-safe-stringify         ^2.0.7  \u2192   ^2.1.1\n   -  minimist                    ^1.2.5  \u2192   ^1.2.8\n   -  mocha                       ^7.2.0  \u2192  ^10.2.0\n   -  sinon                       ^9.2.0  \u2192  ^17.0.1\n   -  xml2js                     ^0.4.23  \u2192   ^0.6.2\n"
     ],
     "tags": [
       "bluetooth",
@@ -1652,7 +1657,8 @@
     "maintainerURL": "",
     "description": "CalDav Parser to convert to iCal format.",
     "issues": [
-      "No image found."
+      "No image found.",
+      "Information: There are updates for 1 dependencie(s):\n   -  tsdav  ^2.0.5  \u2192  ^2.0.6\n"
     ],
     "tags": [
       "caldav"
@@ -1667,7 +1673,9 @@
     "maintainer": "MMM-CalendarExt2",
     "maintainerURL": "",
     "description": "Extended calendar and event view.",
-    "issues": [],
+    "issues": [
+      "Information: There are updates for 3 dependencie(s):\n   -  eslint              ^8.52.0  \u2192  ^8.54.0\n   -  prettier             ^3.0.3  \u2192   ^3.1.0\n   -  stylelint-prettier   ^4.0.2  \u2192   ^4.1.0\n"
+    ],
     "tags": [
       "calendar"
     ],
@@ -1708,6 +1716,24 @@
     ],
     "license": "MIT",
     "last_commit": "2023-11-18"
+  },
+  {
+    "name": "MMM-CalendarExt3Journal",
+    "url": "https://github.com/MMRIZE/MMM-CalendarExt3Journal",
+    "id": "MMRIZE/MMM-CalendarExt3Journal",
+    "maintainer": "MMRIZE",
+    "maintainerURL": "",
+    "description": "Presenting events as daily/weekly journal style.",
+    "issues": [
+      "No image found."
+    ],
+    "tags": [
+      "cx3j",
+      "calendarext3",
+      "cx3"
+    ],
+    "license": "MIT",
+    "last_commit": "2023-11-27"
   },
   {
     "name": "MMM-CalendarExt3Timeline",
@@ -1895,7 +1921,9 @@
     "maintainer": "KristjanESPERANTO",
     "maintainerURL": "",
     "description": "Show meals from canteens (Germany and Switzerland).",
-    "issues": [],
+    "issues": [
+      "Information: There are updates for 1 dependencie(s):\n   -  stylelint-prettier  ^4.0.2  \u2192  ^4.1.0\n"
+    ],
     "tags": [
       "openmensa"
     ],
@@ -1953,7 +1981,9 @@
     "maintainer": "shbatm",
     "maintainerURL": "https://github.com/shbatm",
     "description": "Rotate modules, to save space on screen.",
-    "issues": [],
+    "issues": [
+      "Information: There are updates for 4 dependencie(s):\n   -  eslint              ^8.52.0  \u2192  ^8.54.0\n   -  markdownlint        ^0.31.1  \u2192  ^0.32.1\n   -  prettier             ^3.0.3  \u2192   ^3.1.0\n   -  stylelint-prettier   ^4.0.2  \u2192   ^4.1.0\n"
+    ],
     "tags": [
       "carousel",
       "navigation",
@@ -2401,7 +2431,8 @@
     "maintainerURL": "",
     "description": "Display COUP e-scooters around you and sort them by distance. It works for Berlin and other cities.",
     "issues": [
-      "Deprecated: Found `require('request')` in file `node_helper.js`: Replace it with built-in fetch."
+      "Deprecated: Found `require('request')` in file `node_helper.js`: Replace it with built-in fetch.",
+      "Information: There are updates for 1 dependencie(s):\n   -  lodash  ^4.17.19  \u2192  ^4.17.21\n"
     ],
     "tags": [
       "coup",
@@ -3201,7 +3232,8 @@
     "maintainerURL": "",
     "description": "A vintage-style Digital Alarm Clock integrating MMM-DigClock and MMM-AlarmClock.",
     "issues": [
-      "Typo: Found `MagicMirror2` in file `package.json`: Replace it with `MagicMirror\u00b2`."
+      "Typo: Found `MagicMirror2` in file `package.json`: Replace it with `MagicMirror\u00b2`.",
+      "Information: There are updates for 6 dependencie(s):\n   -  eslint                     ^3.14.1  \u2192   ^8.54.0\n   -  eslint-config-airbnb-base  ^11.0.1  \u2192   ^15.0.0\n   -  eslint-plugin-import        ^2.2.0  \u2192   ^2.29.0\n   -  jsdoc                       ^3.4.3  \u2192    ^4.0.2\n   -  stylelint                   ^7.8.0  \u2192  ^15.11.0\n   -  stylelint-config-standard  ^16.0.0  \u2192   ^34.0.0\n"
     ],
     "tags": [
       "digital alarm clock"
@@ -3326,7 +3358,8 @@
     "maintainerURL": "https://github.com/drventure",
     "description": "Display status of mountain bike trails via the trailforks.com website.",
     "issues": [
-      "`package.json` issue: No repository field."
+      "`package.json` issue: No repository field.",
+      "Information: There are updates for 1 dependencie(s):\n   -  jsdom  ^22.1.0  \u2192  ^23.0.0\n"
     ],
     "tags": [],
     "license": "ISC",
@@ -3362,7 +3395,8 @@
     "maintainerURL": "",
     "description": "Module which shows the latest popular <a target=\"_blank\" href=\"https://dribbble.com\">dribbble</a> shots.",
     "issues": [
-      "`package.json` issue: No description"
+      "`package.json` issue: No description",
+      "Information: There are updates for 3 dependencie(s):\n   -  eslint                     ^4.10.0  \u2192   ^8.54.0\n   -  stylelint                   ^8.2.0  \u2192  ^15.11.0\n   -  stylelint-config-standard  ^17.0.0  \u2192   ^34.0.0\n"
     ],
     "tags": [],
     "license": "ISC",
@@ -3436,7 +3470,8 @@
     "maintainerURL": "",
     "description": "Station monitor for the Dresden/Germany local transport (DVB) bus, tram and train system.",
     "issues": [
-      "Recommendation: Found `axios` in file `package.json`: Replace it with built-in fetch."
+      "Recommendation: Found `axios` in file `package.json`: Replace it with built-in fetch.",
+      "Information: There are updates for 3 dependencie(s):\n   -  dvbjs               ^6.0.1  \u2192  ^6.2.0\n   -  grunt               ^1.5.3  \u2192  ^1.6.1\n   -  grunt-markdownlint  ^3.1.5  \u2192  ^3.1.6\n"
     ],
     "tags": [
       "dvb",
@@ -4599,7 +4634,8 @@
     "maintainerURL": "https://github.com/jesmak",
     "description": "Module that tracks nearby planes based on Flightradar24 data.",
     "issues": [
-      "Typo: Found `Magic Mirror` in file `README.md`: Replace it with `MagicMirror\u00b2`."
+      "Typo: Found `Magic Mirror` in file `README.md`: Replace it with `MagicMirror\u00b2`.",
+      "Information: There are updates for 3 dependencie(s):\n   -  csv-parse             ^4.6.5  \u2192  ^5.5.2\n   -  flightradar24-client  ^0.3.0  \u2192  ^1.0.1\n   -  geolocation-utils     ^1.2.2  \u2192  ^1.2.5\n"
     ],
     "tags": [
       "flights",
@@ -4617,7 +4653,8 @@
     "maintainerURL": "https://gitlab.com/karsten13",
     "description": "Displays current flights in a defined area with a map containing the plane positions.",
     "issues": [
-      "Typo: Found `MagicMirror2` in file `package.json`: Replace it with `MagicMirror\u00b2`."
+      "Typo: Found `MagicMirror2` in file `package.json`: Replace it with `MagicMirror\u00b2`.",
+      "Information: There are updates for 1 dependencie(s):\n   -  ol  ^8.1.0  \u2192  ^8.2.0\n"
     ],
     "tags": [
       "flight",
@@ -4636,7 +4673,8 @@
     "maintainerURL": "https://github.com/E3V3A",
     "description": "A flight radar that display airplane/flight details of what is currently flying in the airspace above some location.",
     "issues": [
-      "Typo: Found `MagicMirror2` in file `README.md`: Replace it with `MagicMirror\u00b2`."
+      "Typo: Found `MagicMirror2` in file `README.md`: Replace it with `MagicMirror\u00b2`.",
+      "Information: There are updates for 3 dependencie(s):\n   -  jquery             ^3.3.1  \u2192   ^3.7.1\n   -  jquery-ui-dist    ^1.12.1  \u2192  ^1.13.2\n   -  jquery.tabulator   ^3.4.4  \u2192   ^3.4.6\n"
     ],
     "tags": [
       "flights",
@@ -5351,8 +5389,7 @@
     "maintainerURL": "https://wiki.bugsounet.fr",
     "description": "MMM-GoogleAssistant is an real embedded Google assistant on MagicMirror\u00b2. [Maintained].",
     "issues": [
-      "Recommendation: Found `uses: actions/checkout@v3` in file `dependency-review.yml`: Replace it with v4.",
-      "Recommendation: Found `axios` in file `loadLibraries.js`: Replace it with built-in fetch."
+      "Information: There are updates for 1 dependencie(s):\n   -  @grpc/grpc-js  ^1.9.11  \u2192  ^1.9.12\n"
     ],
     "tags": [
       "google assistant",
@@ -5362,7 +5399,7 @@
     ],
     "license": "MIT",
     "image": "resources-previewFS.jpg",
-    "last_commit": "2023-11-19"
+    "last_commit": "2023-11-27"
   },
   {
     "name": "MMM-GoogleBirthdaysProvider",
@@ -5562,7 +5599,8 @@
     "maintainerURL": "",
     "description": "Display a google shoppinglist items.",
     "issues": [
-      "There are no keywords in 'package.json'. We would use them as tags on the module list page."
+      "There are no keywords in 'package.json'. We would use them as tags on the module list page.",
+      "Information: There are updates for 2 dependencie(s):\n   -  fs-extra   ^7.0.0  \u2192  ^11.1.1\n   -  puppeteer  ^2.0.0  \u2192  ^21.5.2\n"
     ],
     "license": "MIT",
     "image": "screenshot.jpg",
@@ -5633,7 +5671,9 @@
     "maintainer": "MMRIZE",
     "maintainerURL": "",
     "description": "Text-to-Speech module with Google Cloud TTS API. Give a voice to your Mirror.",
-    "issues": [],
+    "issues": [
+      "Information: There are updates for 1 dependencie(s):\n   -  @google-cloud/text-to-speech  ^3.3.1  \u2192  ^5.0.1\n"
+    ],
     "tags": [
       "text-to-speech",
       "tts",
@@ -5711,7 +5751,9 @@
     "maintainer": "MMRIZE",
     "maintainerURL": "",
     "description": "Detecting 3D gesture with GroveGesture Sensor(PAJ7620u2).",
-    "issues": [],
+    "issues": [
+      "Information: There are updates for 1 dependencie(s):\n   -  python-shell  ^1.0.6  \u2192  ^5.0.0\n"
+    ],
     "tags": [
       "grove gesture",
       "gesture",
@@ -5728,7 +5770,9 @@
     "maintainer": "mumblebaj",
     "maintainerURL": "https://github.com/mumblebaj",
     "description": "Display data from Growatt Inveter. Support multiple Growatt Inverter types.",
-    "issues": [],
+    "issues": [
+      "Information: There are updates for 1 dependencie(s):\n   -  growatt  ^0.5.6  \u2192  ^0.7.1\n"
+    ],
     "tags": [
       "growatt"
     ],
@@ -5760,7 +5804,9 @@
     "maintainer": "mumblebaj",
     "maintainerURL": "https://github.com/mumblebaj",
     "description": "Display status data from Growatt Inveter. Support multiple Growatt Inverter types. Made to work in conjunction with <a target=\"_blank\" href=\"https://github.com/mumblebaj/MMM-Growatt\">MMM-Growatt</a> or independently.",
-    "issues": [],
+    "issues": [
+      "Information: There are updates for 1 dependencie(s):\n   -  growatt  ^0.5.6  \u2192  ^0.7.1\n"
+    ],
     "tags": [
       "growatt"
     ],
@@ -6964,7 +7010,8 @@
     "maintainerURL": "",
     "description": "Display IPv4/IPv6 Network Address.",
     "issues": [
-      "Typo: Found `MagicMirror2` in file `package.json`: Replace it with `MagicMirror\u00b2`."
+      "Typo: Found `MagicMirror2` in file `package.json`: Replace it with `MagicMirror\u00b2`.",
+      "Information: There are updates for 2 dependencie(s):\n   -  eslint   ^6.8.0  \u2192  ^8.54.0\n   -  jsdoc   ^3.6.10  \u2192   ^4.0.2\n"
     ],
     "tags": [
       "network interfaces",
@@ -7122,7 +7169,9 @@
     "maintainer": "jalibu",
     "maintainerURL": "https://github.com/jalibu",
     "description": "A simple but powerful vertical, horizontal or static stock ticker based on Yahoo's finance API. Supports international stocks, crypto currencies and index symbols. No API key required.",
-    "issues": [],
+    "issues": [
+      "Information: There are updates for 5 dependencie(s):\n   -  eslint          ^8.53.0  \u2192  ^8.54.0\n   -  prettier         ^2.8.8  \u2192   ^3.1.0\n   -  rollup          ^2.79.0  \u2192   ^4.6.0\n   -  typescript       ^5.2.2  \u2192   ^5.3.2\n   -  yahoo-finance2   ^2.8.1  \u2192   ^2.9.0\n"
+    ],
     "tags": [
       "stock",
       "stocks",
@@ -9414,7 +9463,8 @@
     "maintainerURL": "",
     "description": "Camera based motion detector that turns of your display after a while, updated fork of alexyaks version.",
     "issues": [
-      "No image found."
+      "No image found.",
+      "Information: There are updates for 1 dependencie(s):\n   -  eslint  ^8.8.0  \u2192  ^8.54.0\n"
     ],
     "tags": [
       "motion detection"
@@ -9591,7 +9641,9 @@
     "maintainer": "ottopaulsen",
     "maintainerURL": "",
     "description": "A module that subscribes topics from MQTT message queues, and displays the payload values in a table, with configurable labels.",
-    "issues": [],
+    "issues": [
+      "Information: There are updates for 5 dependencie(s):\n   -  eslint                  ^7.23.0  \u2192  ^8.54.0\n   -  eslint-config-prettier   ^8.1.0  \u2192   ^9.0.0\n   -  eslint-plugin-prettier   ^3.3.1  \u2192   ^5.0.1\n   -  mqtt                     ^4.3.7  \u2192   ^5.3.0\n   -  mqtt-packet              ^6.3.2  \u2192   ^9.0.0\n"
+    ],
     "tags": [
       "smarthome",
       "home-automation",
@@ -9641,7 +9693,9 @@
     "maintainer": "janm84",
     "maintainerURL": "",
     "description": "A module to subscribe to MQTT topics and forward the payload (as it is) as notification and vice versa. Features QoS, Clean Session, Retained Messages and Shortcuts.",
-    "issues": [],
+    "issues": [
+      "Information: There are updates for 1 dependencie(s):\n   -  mqtt  ^1.10.0  \u2192  ^5.3.0\n"
+    ],
     "tags": [
       "mqtt"
     ],
@@ -9656,7 +9710,9 @@
     "maintainer": "Tom-Hirschberger",
     "maintainerURL": "https://github.com/Tom-Hirschberger",
     "description": "A powerful module that subscribes to MQTT broker and read/send MQTT messages and MM Notifications with a lot of individual setup/rules. Allows you to integrate MM into smart home like Home Assistant. Powerful automation with structured Noti and MQTT dictionaries rules (e.g. one mqtt message could trigger many predefined noti, and one mm-noti could trigger different predefined mqtt messages).",
-    "issues": [],
+    "issues": [
+      "Information: There are updates for 2 dependencie(s):\n   -  jsonpath-plus  5.0.1  \u2192  7.2.0\n   -  mqtt           4.3.7  \u2192  5.3.0\n"
+    ],
     "tags": [
       "mqtt"
     ],
@@ -9747,7 +9803,8 @@
     "maintainerURL": "",
     "description": "Play music with deezer on a browser in the background.",
     "issues": [
-      "Typo: Found `Magic Mirror` in file `package.json`: Replace it with `MagicMirror\u00b2`."
+      "Typo: Found `Magic Mirror` in file `package.json`: Replace it with `MagicMirror\u00b2`.",
+      "Information: There are updates for 1 dependencie(s):\n   -  puppeteer  1.11.0  \u2192  21.5.2\n"
     ],
     "tags": [
       "musicondemand",
@@ -10059,7 +10116,8 @@
     "maintainerURL": "",
     "description": "Display your show's watch progress in a private list in your <a target=\"_blank\" href=\"https://trakt.tv\">trakt.tv</a> account.",
     "issues": [
-      "There are no keywords in 'package.json'. We would use them as tags on the module list page."
+      "There are no keywords in 'package.json'. We would use them as tags on the module list page.",
+      "Information: There are updates for 2 dependencie(s):\n   -  trakt.tv         ^6.0.2  \u2192  ^8.2.0\n   -  trakt.tv-images  ^5.1.1  \u2192  ^5.2.0\n"
     ],
     "license": "MIT",
     "image": "preview.jpg",
@@ -10130,7 +10188,8 @@
     "maintainerURL": "https://github.com/mazim-co",
     "description": "Displays information about your Volvo from the Volvo Connect API.",
     "issues": [
-      "Warning: No LICENSE file."
+      "Warning: No LICENSE file.",
+      "Information: There are updates for 1 dependencie(s):\n   -  moment  ^2.22.2  \u2192  ^2.29.4\n"
     ],
     "tags": [
       "volvo",
@@ -10210,7 +10269,8 @@
     "maintainerURL": "",
     "description": "A MagicMirror\u00b2 Module for Nagios.",
     "issues": [
-      "Warning: No LICENSE file."
+      "Warning: No LICENSE file.",
+      "Information: There are updates for 4 dependencie(s):\n   -  grunt-markdownlint  ^1.0.43  \u2192    ^3.1.6\n   -  node-rest-client     ^2.0.1  \u2192    ^3.1.1\n   -  pre-commit           ^1.2.1  \u2192    ^1.2.2\n   -  stylelint           ^9.10.1  \u2192  ^15.11.0\n"
     ],
     "tags": [
       "nagios"
@@ -10573,7 +10633,8 @@
     "maintainerURL": "https://github.com/slametps",
     "description": "Display network connection status (ping, download speed, upload speed).",
     "issues": [
-      "Warning: No LICENSE file."
+      "Warning: No LICENSE file.",
+      "Information: There are updates for 1 dependencie(s):\n   -  speedtest-net  >=1.2.0  \u2192  >=2.2.0\n"
     ],
     "tags": [
       "networkconnection",
@@ -10912,7 +10973,9 @@
     "maintainer": "dimitrystd",
     "maintainerURL": "",
     "description": "Real-time bus tracking for NJ Transit.",
-    "issues": [],
+    "issues": [
+      "Information: There are updates for 13 dependencie(s):\n   -  chai                     ^4.2.0  \u2192  ^4.3.10\n   -  eslint                   ^5.6.1  \u2192  ^8.54.0\n   -  eslint-config-airbnb    ^17.1.0  \u2192  ^19.0.4\n   -  eslint-plugin-flowtype   ^3.2.0  \u2192   ^8.0.3\n   -  eslint-plugin-import    ^2.14.0  \u2192  ^2.29.0\n   -  eslint-plugin-jsx-a11y   ^6.1.2  \u2192   ^6.8.0\n   -  eslint-plugin-promise    ^4.0.1  \u2192   ^6.1.1\n   -  eslint-plugin-react     ^7.11.1  \u2192  ^7.33.2\n   -  mocha                    ^5.2.0  \u2192  ^10.2.0\n   -  mocha-junit-reporter    ^1.18.0  \u2192   ^2.2.1\n   -  nyc                     ^13.0.1  \u2192  ^15.1.0\n   -  sinon                    ^7.1.1  \u2192  ^17.0.1\n   -  xml2js                  ^0.4.19  \u2192   ^0.6.2\n"
+    ],
     "tags": [
       "public transport",
       "nj transit bus"
@@ -11093,7 +11156,7 @@
     ],
     "license": "MIT",
     "image": "img-mmm-notion-showcase.jpg",
-    "last_commit": "2023-03-10"
+    "last_commit": "2023-11-27"
   },
   {
     "name": "MMM-NowPlayingOnAIMP",
@@ -11121,7 +11184,8 @@
     "maintainerURL": "",
     "description": "Display the song you are currently listening to on Spotify.",
     "issues": [
-      "Deprecated: Found `require('request')` in file `app.js`: Replace it with built-in fetch."
+      "Deprecated: Found `require('request')` in file `app.js`: Replace it with built-in fetch.",
+      "Information: There are updates for 5 dependencie(s):\n   -  body-parser             ^1.18.2  \u2192  ^1.20.2\n   -  cookie-parser             1.4.3  \u2192    1.4.6\n   -  express                 ~4.16.0  \u2192  ~4.18.2\n   -  moment-duration-format   ^2.2.2  \u2192   ^2.3.2\n   -  npm                      ^5.7.1  \u2192  ^10.2.4\n"
     ],
     "tags": [
       "spotify"
@@ -11275,7 +11339,8 @@
     "maintainerURL": "",
     "description": "Shows trains and other public transports for a configured \u00d6BB-Station.",
     "issues": [
-      "Typo: Found `MagicMirror2` in file `package.json`: Replace it with `MagicMirror\u00b2`."
+      "Typo: Found `MagicMirror2` in file `package.json`: Replace it with `MagicMirror\u00b2`.",
+      "Information: There are updates for 9 dependencie(s):\n   -  @types/debounce        ^1.2.0  \u2192  ^1.2.4\n   -  @types/prompts         ^2.0.1  \u2192  ^2.4.9\n   -  chalk                  ^2.4.2  \u2192  ^5.3.0\n   -  debounce               ^1.2.0  \u2192  ^2.0.0\n   -  prompts                ^2.1.0  \u2192  ^2.4.2\n   -  rollup                ^1.17.0  \u2192  ^4.6.0\n   -  rollup-plugin-banner   ^0.2.0  \u2192  ^0.2.1\n   -  tslib                 ^1.10.0  \u2192  ^2.6.2\n   -  typescript             ^3.5.3  \u2192  ^5.3.2\n"
     ],
     "tags": [
       "oebb",
@@ -11293,7 +11358,8 @@
     "maintainerURL": "https://github.com/eckonator",
     "description": "The module displays oil prices for the current year based on Chart.js and the API of heizoel24.de.",
     "issues": [
-      "Deprecated: Found `require('request')` in file `node_helper.js`: Replace it with built-in fetch."
+      "Deprecated: Found `require('request')` in file `node_helper.js`: Replace it with built-in fetch.",
+      "Information: There are updates for 2 dependencie(s):\n   -  chart.js             ^3.7.1  \u2192  ^4.4.0\n   -  magicmirror-rebuild  ^1.0.5  \u2192  ^1.0.9\n"
     ],
     "tags": [
       "oil",
@@ -11361,7 +11427,9 @@
     "maintainer": "KristjanESPERANTO",
     "maintainerURL": "",
     "description": "Display current and forecast weather based on the Openweathermap OneCall API data with alternative formatting.",
-    "issues": [],
+    "issues": [
+      "Information: There are updates for 5 dependencie(s):\n   -  eslint              ^8.53.0  \u2192  ^8.54.0\n   -  lint-staged         ^15.0.2  \u2192  ^15.1.0\n   -  markdownlint        ^0.31.1  \u2192  ^0.32.1\n   -  prettier             ^3.0.3  \u2192   ^3.1.0\n   -  stylelint-prettier   ^4.0.2  \u2192   ^4.1.0\n"
+    ],
     "tags": [
       "weather"
     ],
@@ -11482,7 +11550,9 @@
     "maintainer": "nkl-kst",
     "maintainerURL": "https://github.com/nkl-kst",
     "description": "Display historical events from Wikipedia based on the current date.",
-    "issues": [],
+    "issues": [
+      "Information: There are updates for 1 dependencie(s):\n   -  jsdom  ^22.1.0  \u2192  ^23.0.0\n"
+    ],
     "tags": [
       "events",
       "history",
@@ -11804,7 +11874,8 @@
     "maintainerURL": "https://github.com/kaelspencer",
     "description": "Displays a weekly meal menu from the Paprika Recipe Manager app.",
     "issues": [
-      "There are no keywords in 'package.json'. We would use them as tags on the module list page."
+      "There are no keywords in 'package.json'. We would use them as tags on the module list page.",
+      "Information: There are updates for 1 dependencie(s):\n   -  npm  ^6.14.18  \u2192  ^10.2.4\n"
     ],
     "license": "MIT",
     "image": "MMM-PaprikaMenu-screenshot.jpg",
@@ -11924,7 +11995,8 @@
     "maintainerURL": "",
     "description": "Station monitor for tram and bus system in Pozna\u0144.",
     "issues": [
-      "Deprecated: Found `require('request')` in file `node_helper.js`: Replace it with built-in fetch."
+      "Deprecated: Found `require('request')` in file `node_helper.js`: Replace it with built-in fetch.",
+      "Information: There are updates for 1 dependencie(s):\n   -  http-parser-js  ^0.4.4  \u2192  ^0.5.8\n"
     ],
     "tags": [
       "ztm",
@@ -11947,7 +12019,8 @@
     "maintainerURL": "https://github.com/eckonator",
     "description": "The module displays pellet prices for the current year based on Chart.js and the API of heizpellets24.de.",
     "issues": [
-      "Deprecated: Found `require('request')` in file `node_helper.js`: Replace it with built-in fetch."
+      "Deprecated: Found `require('request')` in file `node_helper.js`: Replace it with built-in fetch.",
+      "Information: There are updates for 2 dependencie(s):\n   -  chart.js             ^3.7.1  \u2192  ^4.4.0\n   -  magicmirror-rebuild  ^1.0.5  \u2192  ^1.0.9\n"
     ],
     "tags": [
       "pellet",
@@ -12163,7 +12236,9 @@
     "maintainer": "SalekurPolas",
     "maintainerURL": "https://github.com/SalekurPolas",
     "description": "Informational module to display mirror information like Raspberry Pi model, unique serial number, network information, IPv4, IPv6, MAC address, OS information, CPU information, and more.",
-    "issues": [],
+    "issues": [
+      "Information: There are updates for 2 dependencie(s):\n   -  async              ^3.2.0  \u2192    ^3.2.5\n   -  systeminformation  ^5.6.7  \u2192  ^5.21.18\n"
+    ],
     "tags": [
       "raspberrypi",
       "node"
@@ -12180,7 +12255,8 @@
     "maintainerURL": "",
     "description": "Display status from website/ip's.",
     "issues": [
-      "Typo: Found `MagicMirror2` in file `package.json`: Replace it with `MagicMirror\u00b2`."
+      "Typo: Found `MagicMirror2` in file `package.json`: Replace it with `MagicMirror\u00b2`.",
+      "Information: There are updates for 6 dependencie(s):\n   -  eslint                      ^6.8.0  \u2192   ^8.54.0\n   -  eslint-config-recommended   ^4.0.0  \u2192    ^4.1.0\n   -  jsdoc                       ^3.6.4  \u2192    ^4.0.2\n   -  ping                        ^0.2.3  \u2192    ^0.4.4\n   -  stylelint                  ^13.3.3  \u2192  ^15.11.0\n   -  stylelint-config-standard  ^20.0.0  \u2192   ^34.0.0\n"
     ],
     "tags": [
       "ping",
@@ -12199,7 +12275,8 @@
     "maintainerURL": "",
     "description": "After a configurated time without any user interaction the display will turn off and hide all modules for economy mode.It will wake up with a PIR sensor. [Maintained].",
     "issues": [
-      "Recommendation: Found `uses: actions/checkout@v3` in file `dependency-review.yml`: Replace it with v4."
+      "Recommendation: Found `uses: actions/checkout@v3` in file `dependency-review.yml`: Replace it with v4.",
+      "Information: There are updates for 1 dependencie(s):\n   -  esbuild  ^0.19.5  \u2192  ^0.19.8\n"
     ],
     "tags": [
       "screen"
@@ -12641,7 +12718,8 @@
     "maintainerURL": "",
     "description": "Picovoice Porcupine hotword detection, works with MMM-AssistantMk2.",
     "issues": [
-      "No image found."
+      "No image found.",
+      "Information: There are updates for 1 dependencie(s):\n   -  bumblebee-hotword-node  ^0.0.5  \u2192  ^0.2.1\n"
     ],
     "tags": [
       "hotword",
@@ -12855,7 +12933,7 @@
     ],
     "license": "MIT",
     "image": ".github-example-screenshot.jpg",
-    "last_commit": "2023-10-27"
+    "last_commit": "2023-11-27"
   },
   {
     "name": "MMM-Property-managed",
@@ -12901,7 +12979,9 @@
     "maintainer": "deg0nz",
     "maintainerURL": "",
     "description": "Display departures for public transport in Berlin and Brandenburg (Covers VBB Area).",
-    "issues": [],
+    "issues": [
+      "Information: There are updates for 4 dependencie(s):\n   -  eslint              ^8.52.0  \u2192  ^8.54.0\n   -  hafas-client         ^6.1.1  \u2192   ^6.2.0\n   -  prettier             ^3.0.3  \u2192   ^3.1.0\n   -  stylelint-prettier   ^4.0.2  \u2192   ^4.1.0\n"
+    ],
     "tags": [
       "public transport",
       "public transport berlin",
@@ -12924,7 +13004,7 @@
     ],
     "license": "MIT",
     "image": "img-Goerdelerring_all.jpg",
-    "last_commit": "2023-11-22"
+    "last_commit": "2023-11-27"
   },
   {
     "name": "MMM-PublicTransportVVO",
@@ -13149,7 +13229,9 @@
     "maintainer": "jalibu",
     "maintainerURL": "https://github.com/jalibu",
     "description": "A rain radar map based on OpenStreetMap. Multiple location markers, option for alternating positions and zoom levels.",
-    "issues": [],
+    "issues": [
+      "Information: There are updates for 4 dependencie(s):\n   -  eslint      ^8.53.0  \u2192  ^8.54.0\n   -  prettier     ^2.8.8  \u2192   ^3.1.0\n   -  rollup       ^4.3.0  \u2192   ^4.6.0\n   -  typescript   ^5.2.2  \u2192   ^5.3.2\n"
+    ],
     "tags": [
       "weather",
       "rain",
@@ -13397,7 +13479,8 @@
     "maintainerURL": "https://gitlab.com/FatTony404",
     "description": "Displays recycling calendar data from Stadt Z\u00fcrich, Switzerland.",
     "issues": [
-      "Typo: Found `Magic Mirror` in file `README.md`: Replace it with `MagicMirror\u00b2`."
+      "Typo: Found `Magic Mirror` in file `README.md`: Replace it with `MagicMirror\u00b2`.",
+      "Information: There are updates for 1 dependencie(s):\n   -  cross-fetch  ^3.1.5  \u2192  ^4.0.0\n"
     ],
     "tags": [
       "recycling",
@@ -13544,7 +13627,8 @@
     "maintainerURL": "https://github.com/balassy",
     "description": "Displays the temperature from a remote sensor that is capable to POST the measured value through HTTP protocol in JSON.",
     "issues": [
-      "Typo: Found `Magic Mirror` in file `MMM-RemoteTemperature.js`: Replace it with `MagicMirror\u00b2`."
+      "Typo: Found `Magic Mirror` in file `MMM-RemoteTemperature.js`: Replace it with `MagicMirror\u00b2`.",
+      "Information: There are updates for 8 dependencie(s):\n   -  @prantlf/jsonlint          ^10.2.0  \u2192   ^14.0.3\n   -  body-parser                ^1.19.0  \u2192   ^1.20.2\n   -  eslint                      ^7.7.0  \u2192   ^8.54.0\n   -  eslint-config-airbnb-base  ^14.2.0  \u2192   ^15.0.0\n   -  eslint-plugin-import       ^2.22.0  \u2192   ^2.29.0\n   -  markdownlint-cli           ^0.23.2  \u2192   ^0.37.0\n   -  stylelint                  ^13.6.1  \u2192  ^15.11.0\n   -  stylelint-config-standard  ^20.0.0  \u2192   ^34.0.0\n"
     ],
     "tags": [
       "temperature",
@@ -13600,7 +13684,9 @@
     "maintainer": "Duske",
     "maintainerURL": "",
     "description": "Show your daily time spent using your digital devices with <a target=\"_blank\" href=\"https://www.rescuetime.com\">RescueTime</a>.",
-    "issues": [],
+    "issues": [
+      "Information: There are updates for 3 dependencie(s):\n   -  chart.js   ^2.7.2  \u2192   ^4.4.0\n   -  date-fns  ^1.29.0  \u2192  ^2.30.0\n   -  eslint    ^4.19.1  \u2192  ^8.54.0\n"
+    ],
     "tags": [
       "rescuetime",
       "productivity"
@@ -14331,7 +14417,8 @@
     "maintainerURL": "https://github.com/XBCreepinJesus",
     "description": "A module to check the up/down status of servers/devices on your network.",
     "issues": [
-      "Warning: No LICENSE file."
+      "Warning: No LICENSE file.",
+      "Information: There are updates for 1 dependencie(s):\n   -  ping  >=0.4.0  \u2192  >=0.4.4\n"
     ],
     "tags": [
       "ping",
@@ -15330,7 +15417,7 @@
     ],
     "license": "MIT",
     "image": ".github-example-screenshot.jpg",
-    "last_commit": "2023-10-27"
+    "last_commit": "2023-11-27"
   },
   {
     "name": "MMM-SteamPlaytime",
@@ -15377,7 +15464,8 @@
     "maintainerURL": "",
     "description": "STIB waiting times. Re-write of danito's MMM-stib, using the official STIB API and no XML parsing.",
     "issues": [
-      "There are no keywords in 'package.json'. We would use them as tags on the module list page."
+      "There are no keywords in 'package.json'. We would use them as tags on the module list page.",
+      "Information: There are updates for 1 dependencie(s):\n   -  grunt-markdownlint  ^1.0.13  \u2192  ^3.1.6\n"
     ],
     "license": "MIT",
     "image": "img-screenshot.jpg",
@@ -15718,7 +15806,9 @@
     "maintainer": "E3V3A",
     "maintainerURL": "https://github.com/E3V3A",
     "description": "A Demo module for using <a target=\"_blank\" href=\"https://tabulator.info\">Tabulator</a> to directly parse JSON/XML into MM DHTML tables.",
-    "issues": [],
+    "issues": [
+      "Information: There are updates for 3 dependencie(s):\n   -  jquery             ^3.3.1  \u2192   ^3.7.1\n   -  jquery-ui-dist    ^1.12.1  \u2192  ^1.13.2\n   -  jquery.tabulator   ^3.4.3  \u2192   ^3.4.6\n"
+    ],
     "tags": [
       "tables",
       "json",
@@ -15736,7 +15826,8 @@
     "maintainerURL": "https://github.com/WouterEekhout",
     "description": "Module for your Tado Smart Thermostat.",
     "issues": [
-      "There are no keywords in 'package.json'. We would use them as tags on the module list page."
+      "There are no keywords in 'package.json'. We would use them as tags on the module list page.",
+      "Information: There are updates for 2 dependencie(s):\n   -  mocha-logger      ^1.0.7  \u2192   ^1.0.8\n   -  node-tado-client  ^0.9.3  \u2192  ^0.14.0\n"
     ],
     "license": "ISC",
     "image": "img-screenshot.jpg",
@@ -15946,7 +16037,8 @@
     "maintainerURL": "https://github.com/spitzlbergerj",
     "description": "Displays data from <a target=\"_blank\" href=\"https://github.com/bassmaster187/TeslaLogger\">TeslaLogger</a> or/and <a target=\"_blank\" href=\"https://github.com/adriankumpf/teslamate\">TeslaMate</a> via MQTT.",
     "issues": [
-      "There are no keywords in 'package.json'. We would use them as tags on the module list page."
+      "There are no keywords in 'package.json'. We would use them as tags on the module list page.",
+      "Information: There are updates for 4 dependencie(s):\n   -  jsonpointer  ^5.0.0  \u2192   ^5.0.1\n   -  mocha        ^6.2.1  \u2192  ^10.2.0\n   -  mqtt         ^4.3.7  \u2192   ^5.3.0\n   -  mqtt-packet  ^6.2.1  \u2192   ^9.0.0\n"
     ],
     "license": "MIT",
     "image": "img-MMM-TeslaLogger-ScreenShot-image.jpg",
@@ -15990,7 +16082,8 @@
     "maintainerURL": "https://github.com/ngnijland",
     "description": "A clock which shows the time as text.",
     "issues": [
-      "Typo: Found `Magic Mirror` in file `MMM-text-clock.js`: Replace it with `MagicMirror\u00b2`."
+      "Typo: Found `Magic Mirror` in file `MMM-text-clock.js`: Replace it with `MagicMirror\u00b2`.",
+      "Information: There are updates for 4 dependencie(s):\n   -  eslint                      ^6.8.0  \u2192  ^8.54.0\n   -  eslint-config-airbnb-base  ^14.1.0  \u2192  ^15.0.0\n   -  eslint-plugin-import       ^2.20.2  \u2192  ^2.29.0\n   -  prettier                    ^2.0.5  \u2192   ^3.1.0\n"
     ],
     "tags": [
       "smar",
@@ -16255,7 +16348,8 @@
     "maintainerURL": "",
     "description": "Show a map of a given area with TomTom traffic information.",
     "issues": [
-      "There are no keywords in 'package.json'. We would use them as tags on the module list page."
+      "There are no keywords in 'package.json'. We would use them as tags on the module list page.",
+      "Information: There are updates for 1 dependencie(s):\n   -  grunt-markdownlint  ^1.0.13  \u2192  ^3.1.6\n"
     ],
     "license": "MIT",
     "image": "img-screenshot.jpg",
@@ -16313,7 +16407,9 @@
     "maintainer": "Tom-Hirschberger",
     "maintainerURL": "https://github.com/Tom-Hirschberger",
     "description": "Add clickable buttons to send notifications or run commands.",
-    "issues": [],
+    "issues": [
+      "Information: There are updates for 1 dependencie(s):\n   -  jsonpath-plus  5.0.1  \u2192  7.2.0\n"
+    ],
     "tags": [
       "touch",
       "button",
@@ -16460,7 +16556,8 @@
     "maintainerURL": "",
     "description": "Display your upcoming Shows from your <a target=\"_blank\" href=\"https://trakt.tv\">trakt.tv</a> account.",
     "issues": [
-      "There are no keywords in 'package.json'. We would use them as tags on the module list page."
+      "There are no keywords in 'package.json'. We would use them as tags on the module list page.",
+      "Information: There are updates for 1 dependencie(s):\n   -  trakt.tv  ^8.0.0  \u2192  ^8.2.0\n"
     ],
     "license": "MIT",
     "image": "screenshot.jpg",
@@ -16694,7 +16791,9 @@
     "maintainer": "XBCreepinJesus",
     "maintainerURL": "https://github.com/XBCreepinJesus",
     "description": "Show your upcoming Tvheadend recordings.",
-    "issues": [],
+    "issues": [
+      "Information: There are updates for 1 dependencie(s):\n   -  digest-fetch  >=1.1.6  \u2192  >=3.1.1\n"
+    ],
     "tags": [
       "tvheadend"
     ],
@@ -17007,7 +17106,9 @@
     "maintainer": "Tom-Hirschberger",
     "maintainerURL": "https://github.com/Tom-Hirschberger",
     "description": "Display the values of messages of notifications. Titles, icons, reformatting and parsing are supported.",
-    "issues": [],
+    "issues": [
+      "Information: There are updates for 1 dependencie(s):\n   -  jsonpath-plus  5.1.0  \u2192  7.2.0\n"
+    ],
     "tags": [
       "json",
       "jsonpath",
@@ -17231,7 +17332,8 @@
     "maintainerURL": "https://github.com/fewieden",
     "description": "Learn new languages on your MagicMirror\u00b2.",
     "issues": [
-      "Typo: Found `MagicMirror2` in file `package.json`: Replace it with `MagicMirror\u00b2`."
+      "Typo: Found `MagicMirror2` in file `package.json`: Replace it with `MagicMirror\u00b2`.",
+      "Information: There are updates for 7 dependencie(s):\n   -  eslint                     ^3.14.1  \u2192   ^8.54.0\n   -  eslint-config-airbnb-base  ^11.0.1  \u2192   ^15.0.0\n   -  eslint-plugin-import        ^2.2.0  \u2192   ^2.29.0\n   -  jsdoc                       ^3.4.3  \u2192    ^4.0.2\n   -  jsdom                      ^10.1.0  \u2192   ^23.0.0\n   -  stylelint                   ^7.8.0  \u2192  ^15.11.0\n   -  stylelint-config-standard  ^16.0.0  \u2192   ^34.0.0\n"
     ],
     "tags": [
       "vocabulary trainer"
@@ -17348,7 +17450,9 @@
     "maintainer": "eouia",
     "maintainerURL": "",
     "description": "Display Volvo car status and trip information by VolvoOnCall.",
-    "issues": [],
+    "issues": [
+      "Information: There are updates for 1 dependencie(s):\n   -  moment  ^2.22.2  \u2192  ^2.29.4\n"
+    ],
     "tags": [
       "volvo",
       "volvooncall"
@@ -18293,7 +18397,8 @@
     "maintainerURL": "https://github.com/doctorfree",
     "description": "Embed YouTube videos and playlists using the Electron webview tag rather than an iframe. May assist access to YouTube videos blocked in an iframe.",
     "issues": [
-      "Typo: Found `Magic Mirror` in file `MMM-YouTubeWebView.js`: Replace it with `MagicMirror\u00b2`."
+      "Typo: Found `Magic Mirror` in file `MMM-YouTubeWebView.js`: Replace it with `MagicMirror\u00b2`.",
+      "Information: There are updates for 1 dependencie(s):\n   -  prettier  2.4.0  \u2192  3.1.0\n"
     ],
     "tags": [
       "webview"
