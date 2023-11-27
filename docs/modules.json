@@ -819,8 +819,7 @@
       "Typo: Found `Magic Mirror` in file `README.md`: Replace it with `MagicMirror\u00b2`.",
       "Deprecated: Found `omxplayer` in file `audio-setup.md`: Try to replace it with `vlc`.",
       "Typo: Found `Magic Mirror` in file `index.html`: Replace it with `MagicMirror\u00b2`.",
-      "Deprecated: Found `electron-rebuild` in file `installation.md`: Replace it with `@electron/rebuild`",
-      "Deprecated: Found `electron-rebuild` in file `troubleshoot.md`: Replace it with `@electron/rebuild`",
+      "Deprecated: Found ` electron-rebuild` in file `installation.md`: Replace it with `@electron/rebuild`",
       "Deprecated: Found `require(\"request\")` in file `node_helper.js`: Replace it with built-in fetch.",
       "Typo: Found `Magic Mirror` in file `package.json`: Replace it with `MagicMirror\u00b2`."
     ],
@@ -946,7 +945,7 @@
       "There is no `package.json`. We need this file to gather information about the module for the module list page.",
       "Recommendation: Found `XMLHttpRequest` in file `MMM-Bensinpriser.js`: Replace it with built-in fetch."
     ],
-    "last_commit": "2023-08-27"
+    "last_commit": "2023-11-27"
   },
   {
     "name": "MMM-bergfex",
@@ -1602,7 +1601,7 @@
       "No image found.",
       "Typo: Found `Magic Mirror` in file `MMM-Button.js`: Replace it with `MagicMirror\u00b2`.",
       "Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror\u00b2`.",
-      "Deprecated: Found `electron-rebuild` in file `package.json`: Replace it with `@electron/rebuild`",
+      "Deprecated: Found `\"electron-rebuild\"` in file `package.json`: Replace it with `@electron/rebuild`",
       "Warning: No LICENSE file."
     ],
     "tags": [
@@ -2305,7 +2304,7 @@
     "id": "Tom-Hirschberger/MMM-CommandToNotification",
     "maintainer": "Tom-Hirschberger",
     "maintainerURL": "https://github.com/Tom-Hirschberger",
-    "description": "Calls configurable scripts periodically and send the output as notifications(s).",
+    "description": "Calls configurable scripts periodically and send the output as notification(s).",
     "issues": [],
     "tags": [
       "scripts",
@@ -5185,9 +5184,9 @@
       "Typo: Found `Magic Mirror` in file `MagicMirror2.ino`: Replace it with `MagicMirror\u00b2`.",
       "Typo: Found `Magic Mirror` in file `MMM-Gestures.js`: Replace it with `MagicMirror\u00b2`.",
       "Typo: Found `Magic Mirror` in file `README.MD`: Replace it with `MagicMirror\u00b2`.",
-      "Deprecated: Found `electron-rebuild` in file `README.MD`: Replace it with `@electron/rebuild`",
+      "Deprecated: Found ` electron-rebuild` in file `README.MD`: Replace it with `@electron/rebuild`",
       "Typo: Found `Magic Mirror` in file `package.json`: Replace it with `MagicMirror\u00b2`.",
-      "Deprecated: Found `electron-rebuild` in file `postinstall`: Replace it with `@electron/rebuild`",
+      "Deprecated: Found ` electron-rebuild` in file `postinstall`: Replace it with `@electron/rebuild`",
       "Warning: No LICENSE file."
     ],
     "tags": [
@@ -5529,10 +5528,10 @@
     "issues": [
       "There are no keywords in 'package.json'. We would use them as tags on the module list page.",
       "Recommendation: Found `axios` in file `GPhotos.js`: Replace it with built-in fetch.",
-      "Deprecated: Found `electron-rebuild` in file `INSTALL.md`: Replace it with `@electron/rebuild`",
+      "Deprecated: Found ` electron-rebuild` in file `INSTALL.md`: Replace it with `@electron/rebuild`",
       "Recommendation: Found `axios` in file `error_to_string.js`: Replace it with built-in fetch.",
       "Recommendation: Found `XMLHttpRequest` in file `error_to_string.js`: Replace it with built-in fetch.",
-      "Deprecated: Found `electron-rebuild` in file `package.json`: Replace it with `@electron/rebuild`",
+      "Deprecated: Found `\"electron-rebuild\"` in file `package.json`: Replace it with `@electron/rebuild`",
       "Recommendation: Found `axios` in file `package.json`: Replace it with built-in fetch."
     ],
     "license": "MIT",
@@ -5638,8 +5637,7 @@
       "`package.json` issue: No description",
       "`package.json` issue: No repository field.",
       "There are no keywords in 'package.json'. We would use them as tags on the module list page.",
-      "No image found.",
-      "Deprecated: Found `electron-rebuild` in file `README.md`: Replace it with `@electron/rebuild`"
+      "No image found."
     ],
     "license": "MIT",
     "last_commit": "2023-03-07"
@@ -5651,9 +5649,7 @@
     "maintainer": "Tom-Hirschberger",
     "maintainerURL": "https://github.com/Tom-Hirschberger",
     "description": "Send notifications based on GPIO events. Can be used as PIR module and with rotary encoders.",
-    "issues": [
-      "Deprecated: Found `electron-rebuild` in file `postinstall`: Replace it with `@electron/rebuild`"
-    ],
+    "issues": [],
     "tags": [
       "gpio"
     ],
@@ -6281,7 +6277,7 @@
       "No image found.",
       "Typo: Found `Magic Mirror` in file `MMM-Hover.js`: Replace it with `MagicMirror\u00b2`.",
       "Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror\u00b2`.",
-      "Deprecated: Found `electron-rebuild` in file `package.json`: Replace it with `@electron/rebuild`"
+      "Deprecated: Found `\"electron-rebuild\"` in file `package.json`: Replace it with `@electron/rebuild`"
     ],
     "license": "MIT",
     "last_commit": "2017-10-18"
@@ -7441,8 +7437,7 @@
     "issues": [
       "Typo: Found `Magic Mirror` in file `MMM-KeyBindings.js`: Replace it with `MagicMirror\u00b2`.",
       "Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror\u00b2`.",
-      "Deprecated: Found `electron-rebuild` in file `package.json`: Replace it with `@electron/rebuild`",
-      "Deprecated: Found `electron-rebuild` in file `postinstall.sh`: Replace it with `@electron/rebuild`"
+      "Deprecated: Found `\"electron-rebuild\"` in file `package.json`: Replace it with `@electron/rebuild`"
     ],
     "tags": [
       "fire stick",
@@ -7814,7 +7809,6 @@
       "Recommendation: Found `uses: actions/checkout@v3` in file `ci.yml`: Replace it with v4.",
       "Typo: Found `MagicMirror2` in file `README.md`: Replace it with `MagicMirror\u00b2`.",
       "Typo: Found `MagicMirror2` in file `package.json`: Replace it with `MagicMirror\u00b2`.",
-      "Deprecated: Found `electron-rebuild` in file `package.json`: Replace it with `@electron/rebuild`",
       "Typo: Found `Magic Mirror` in file `module.ts`: Replace it with `MagicMirror\u00b2`.",
       "Typo: Found `Magic Mirror` in file `helper.ts`: Replace it with `MagicMirror\u00b2`.",
       "Typo: Found `Magic Mirror` in file `helper_impl.ts`: Replace it with `MagicMirror\u00b2`.",
@@ -8180,12 +8174,11 @@
       "No image found.",
       "Recommendation: Module name doesn't follow the recommended pattern (it doesn't start with `MMM-`). Consider renaming your module.",
       "Typo: Found `Magic Mirror` in file `README.md`: Replace it with `MagicMirror\u00b2`.",
-      "Deprecated: Found `electron-rebuild` in file `README.md`: Replace it with `@electron/rebuild`",
       "Recommendation: Found `require('https')` in file `alexa-authentication.js`: Replace 'https' by 'node:https'.",
       "Recommendation: Found `require('https')` in file `alexa-companion-service.js`: Replace 'https' by 'node:https'.",
       "Typo: Found `Magic Mirror` in file `pom.xml`: Replace it with `MagicMirror\u00b2`.",
       "Typo: Found `Magic Mirror` in file `CompanionServiceAuthenticator.java`: Replace it with `MagicMirror\u00b2`.",
-      "Deprecated: Found `electron-rebuild` in file `package.json`: Replace it with `@electron/rebuild`",
+      "Deprecated: Found `\"electron-rebuild\"` in file `package.json`: Replace it with `@electron/rebuild`",
       "Typo: Found `Magic Mirror` in file `sphinx-model-generator.js`: Replace it with `MagicMirror\u00b2`."
     ],
     "license": "MIT",
@@ -8640,7 +8633,7 @@
     "issues": [
       "Typo: Found `Magic Mirror` in file `MMM-MinecraftStatus.js`: Replace it with `MagicMirror\u00b2`.",
       "Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror\u00b2`.",
-      "Deprecated: Found `electron-rebuild` in file `package.json`: Replace it with `@electron/rebuild`"
+      "Deprecated: Found `\"electron-rebuild\"` in file `package.json`: Replace it with `@electron/rebuild`"
     ],
     "tags": [
       "minecraft"
@@ -8872,9 +8865,8 @@
     "issues": [
       "There are no keywords in 'package.json'. We would use them as tags on the module list page.",
       "Recommendation: Module name doesn't follow the recommended pattern (it doesn't start with `MMM-`). Consider renaming your module.",
-      "Deprecated: Found `electron-rebuild` in file `README.md`: Replace it with `@electron/rebuild`",
       "Typo: Found `Magic Mirror` in file `package.json`: Replace it with `MagicMirror\u00b2`.",
-      "Deprecated: Found `electron-rebuild` in file `package.json`: Replace it with `@electron/rebuild`"
+      "Deprecated: Found `\"electron-rebuild\"` in file `package.json`: Replace it with `@electron/rebuild`"
     ],
     "license": "MIT",
     "image": "brickell-station-colored.jpg",
@@ -8886,13 +8878,13 @@
     "id": "ItsMeBrille/MMm-MinecraftServer",
     "maintainer": "ItsMeBrille",
     "maintainerURL": "",
-    "description": "Display Minecraft server status and shows list of active players",
+    "description": "Display Minecraft server status and shows list of active players.",
     "issues": [
       "There is no `package.json`. We need this file to gather information about the module for the module list page.",
       "Recommendation: Module name doesn't follow the recommended pattern (it doesn't start with `MMM-`). Consider renaming your module.",
       "Warning: No LICENSE file."
     ],
-    "last_commit": "2023-11-19"
+    "last_commit": "2023-11-27"
   },
   {
     "name": "mmm-moon-phases",
@@ -8957,7 +8949,6 @@
       "Recommendation: Module name doesn't follow the recommended pattern (it doesn't start with `MMM-`). Consider renaming your module.",
       "Deprecated: Found `require('request')` in file `node_helper.js`: Replace it with built-in fetch.",
       "Typo: Found `Magic Mirror` in file `package.json`: Replace it with `MagicMirror\u00b2`.",
-      "Deprecated: Found `electron-rebuild` in file `package.json`: Replace it with `@electron/rebuild`",
       "Warning: No LICENSE file."
     ],
     "tags": [
@@ -8998,7 +8989,7 @@
       "Recommendation: Module name doesn't follow the recommended pattern (it doesn't start with `MMM-`). Consider renaming your module.",
       "Typo: Found `Magic Mirror` in file `MMM-Pins.js`: Replace it with `MagicMirror\u00b2`.",
       "Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror\u00b2`.",
-      "Deprecated: Found `electron-rebuild` in file `package.json`: Replace it with `@electron/rebuild`"
+      "Deprecated: Found `\"electron-rebuild\"` in file `package.json`: Replace it with `@electron/rebuild`"
     ],
     "tags": [
       "pins"
@@ -9288,7 +9279,7 @@
     "description": "Shows or hides other modules when a momentary push button is pressed. Useful for development and maintenance after the module is deployed.",
     "issues": [
       "No image found.",
-      "Deprecated: Found `electron-rebuild` in file `package.json`: Replace it with `@electron/rebuild`"
+      "Deprecated: Found `\"electron-rebuild\"` in file `package.json`: Replace it with `@electron/rebuild`"
     ],
     "tags": [
       "button",
@@ -9569,7 +9560,7 @@
       "Typo: Found `Magic Mirror` in file `MMM-MPR121.js`: Replace it with `MagicMirror\u00b2`.",
       "Typo: Found `Magic Mirror` in file `README.md`: Replace it with `MagicMirror\u00b2`.",
       "Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror\u00b2`.",
-      "Deprecated: Found `electron-rebuild` in file `package.json`: Replace it with `@electron/rebuild`",
+      "Deprecated: Found `\"electron-rebuild\"` in file `package.json`: Replace it with `@electron/rebuild`",
       "Warning: No LICENSE file."
     ],
     "tags": [
@@ -9905,7 +9896,7 @@
       "Typo: Found `Magic Mirror` in file `README.md`: Replace it with `MagicMirror\u00b2`.",
       "Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror\u00b2`.",
       "Typo: Found `MagicMirror2` in file `package.json`: Replace it with `MagicMirror\u00b2`.",
-      "Deprecated: Found `electron-rebuild` in file `package.json`: Replace it with `@electron/rebuild`"
+      "Deprecated: Found `\"electron-rebuild\"` in file `package.json`: Replace it with `@electron/rebuild`"
     ],
     "tags": [
       "raspberry",
@@ -9978,7 +9969,7 @@
       "Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror\u00b2`.",
       "Deprecated: Found `require('request')` in file `node_helper.js`: Replace it with built-in fetch.",
       "Typo: Found `MagicMirror2` in file `package.json`: Replace it with `MagicMirror\u00b2`.",
-      "Deprecated: Found `electron-rebuild` in file `package.json`: Replace it with `@electron/rebuild`"
+      "Deprecated: Found `\"electron-rebuild\"` in file `package.json`: Replace it with `@electron/rebuild`"
     ],
     "tags": [
       "raspberry",
@@ -9997,7 +9988,7 @@
     "issues": [
       "Typo: Found `Magic Mirror` in file `MMM-MysqlQuery.js`: Replace it with `MagicMirror\u00b2`.",
       "Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror\u00b2`.",
-      "Deprecated: Found `electron-rebuild` in file `package.json`: Replace it with `@electron/rebuild`"
+      "Deprecated: Found `\"electron-rebuild\"` in file `package.json`: Replace it with `@electron/rebuild`"
     ],
     "tags": [
       "mysql"
@@ -10353,7 +10344,7 @@
     "issues": [
       "There are no keywords in 'package.json'. We would use them as tags on the module list page.",
       "Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror\u00b2`.",
-      "Deprecated: Found `electron-rebuild` in file `postinstall`: Replace it with `@electron/rebuild`"
+      "Deprecated: Found ` electron-rebuild` in file `postinstall`: Replace it with `@electron/rebuild`"
     ],
     "license": "MIT",
     "image": "MMM-Navigate_fritzing_rotaryencoder.jpg",
@@ -10510,7 +10501,7 @@
     ],
     "license": "MIT",
     "image": ".github-preview.bubbles.jpg",
-    "last_commit": "2023-11-24"
+    "last_commit": "2023-11-27"
   },
   {
     "name": "MMM-Netatmo-Presence",
@@ -12502,7 +12493,7 @@
       "Deprecated: Found `omxplayer` in file `README.md`: Try to replace it with `vlc`.",
       "Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror\u00b2`.",
       "Recommendation: Found `require('http')` in file `node_helper.js`: Replace 'http' by 'node:http'.",
-      "Deprecated: Found `electron-rebuild` in file `package.json`: Replace it with `@electron/rebuild`",
+      "Deprecated: Found `\"electron-rebuild\"` in file `package.json`: Replace it with `@electron/rebuild`",
       "Warning: No LICENSE file."
     ],
     "tags": [
@@ -14323,9 +14314,7 @@
     "maintainer": "Tom-Hirschberger",
     "maintainerURL": "https://github.com/Tom-Hirschberger",
     "description": "A module to send notifications based on messages received via one/multiple serial devices.",
-    "issues": [
-      "Deprecated: Found `electron-rebuild` in file `postinstall`: Replace it with `@electron/rebuild`"
-    ],
+    "issues": [],
     "tags": [
       "serial console",
       "tty",
@@ -14561,8 +14550,8 @@
     "issues": [
       "There are no keywords in 'package.json'. We would use them as tags on the module list page.",
       "Typo: Found `Magic Mirror` in file `README.org`: Replace it with `MagicMirror\u00b2`.",
-      "Deprecated: Found `electron-rebuild` in file `README.org`: Replace it with `@electron/rebuild`",
-      "Deprecated: Found `electron-rebuild` in file `package.json`: Replace it with `@electron/rebuild`",
+      "Deprecated: Found ` electron-rebuild` in file `README.org`: Replace it with `@electron/rebuild`",
+      "Deprecated: Found `\"electron-rebuild\"` in file `package.json`: Replace it with `@electron/rebuild`",
       "Typo: Found `Magic Mirror` in file `SAMPLE_CONFIG.js`: Replace it with `MagicMirror\u00b2`.",
       "Warning: No LICENSE file."
     ],
@@ -15557,7 +15546,7 @@
       "Typo: Found `Magic Mirror` in file `MMM-Swipe.js`: Replace it with `MagicMirror\u00b2`.",
       "Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror\u00b2`.",
       "Typo: Found `Magic Mirror` in file `package.json`: Replace it with `MagicMirror\u00b2`.",
-      "Deprecated: Found `electron-rebuild` in file `package.json`: Replace it with `@electron/rebuild`",
+      "Deprecated: Found `\"electron-rebuild\"` in file `package.json`: Replace it with `@electron/rebuild`",
       "Warning: No LICENSE file."
     ],
     "tags": [
@@ -16217,7 +16206,7 @@
       "Typo: Found `Magic Mirror` in file `MMM-tns.js`: Replace it with `MagicMirror\u00b2`.",
       "Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror\u00b2`.",
       "Deprecated: Found `require(\"request\")` in file `node_helper.js`: Replace it with built-in fetch.",
-      "Deprecated: Found `electron-rebuild` in file `package.json`: Replace it with `@electron/rebuild`"
+      "Deprecated: Found `\"electron-rebuild\"` in file `package.json`: Replace it with `@electron/rebuild`"
     ],
     "tags": [
       "tns"

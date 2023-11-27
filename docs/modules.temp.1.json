@@ -1230,7 +1230,7 @@
     "id": "Tom-Hirschberger/MMM-CommandToNotification",
     "maintainer": "Tom-Hirschberger",
     "maintainerURL": "https://github.com/Tom-Hirschberger",
-    "description": "Calls configurable scripts periodically and send the output as notifications(s).",
+    "description": "Calls configurable scripts periodically and send the output as notification(s).",
     "issues": []
   },
   {
@@ -4703,7 +4703,7 @@
     "id": "ItsMeBrille/MMm-MinecraftServer",
     "maintainer": "ItsMeBrille",
     "maintainerURL": "",
-    "description": "Display Minecraft server status and shows list of active players",
+    "description": "Display Minecraft server status and shows list of active players.",
     "issues": []
   },
   {

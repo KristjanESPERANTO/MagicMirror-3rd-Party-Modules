@@ -1,6 +1,6 @@
 # Result of the module analysis
 
-Last update: 2023-11-26 18:06:50 UTC
+Last update: 2023-11-27 13:09:22 UTC
 
 ## Statistics
 
@@ -8,8 +8,8 @@ Last update: 2023-11-26 18:06:50 UTC
 |:---------------------|:--------:|
 | modules analyzed     |   1067   |
 | maintainer           |    612   |
-| modules with issues  |   1027   |
-| issues               |   3931   |
+| modules with issues  |   1025   |
+| issues               |   3922   |
 | modules at github    |   1058   |
 | modules at gitlab    |      8   |
 | modules at bitbucket |      1   |
@@ -326,10 +326,9 @@ Last update: 2023-11-26 18:06:50 UTC
 3. Typo: Found `Magic Mirror` in file `README.md`: Replace it with `MagicMirror²`.
 4. Deprecated: Found `omxplayer` in file `audio-setup.md`: Try to replace it with `vlc`.
 5. Typo: Found `Magic Mirror` in file `index.html`: Replace it with `MagicMirror²`.
-6. Deprecated: Found `electron-rebuild` in file `installation.md`: Replace it with `@electron/rebuild`
-7. Deprecated: Found `electron-rebuild` in file `troubleshoot.md`: Replace it with `@electron/rebuild`
-8. Deprecated: Found `require("request")` in file `node_helper.js`: Replace it with built-in fetch.
-9. Typo: Found `Magic Mirror` in file `package.json`: Replace it with `MagicMirror²`.
+6. Deprecated: Found ` electron-rebuild` in file `installation.md`: Replace it with `@electron/rebuild`
+7. Deprecated: Found `require("request")` in file `node_helper.js`: Replace it with built-in fetch.
+8. Typo: Found `Magic Mirror` in file `package.json`: Replace it with `MagicMirror²`.
 
 ### [MMM-BackgroundSlideshow by darickc](https://github.com/darickc/MMM-BackgroundSlideshow)
 
@@ -639,7 +638,7 @@ Last update: 2023-11-26 18:06:50 UTC
 1. No image found.
 2. Typo: Found `Magic Mirror` in file `MMM-Button.js`: Replace it with `MagicMirror²`.
 3. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
-4. Deprecated: Found `electron-rebuild` in file `package.json`: Replace it with `@electron/rebuild`
+4. Deprecated: Found `"electron-rebuild"` in file `package.json`: Replace it with `@electron/rebuild`
 5. Warning: No LICENSE file.
 
 ### [MMM-Buttons by MarcLandis](https://github.com/MarcLandis/MMM-Buttons)
@@ -1991,9 +1990,9 @@ Last update: 2023-11-26 18:06:50 UTC
 3. Typo: Found `Magic Mirror` in file `MagicMirror2.ino`: Replace it with `MagicMirror²`.
 4. Typo: Found `Magic Mirror` in file `MMM-Gestures.js`: Replace it with `MagicMirror²`.
 5. Typo: Found `Magic Mirror` in file `README.MD`: Replace it with `MagicMirror²`.
-6. Deprecated: Found `electron-rebuild` in file `README.MD`: Replace it with `@electron/rebuild`
+6. Deprecated: Found ` electron-rebuild` in file `README.MD`: Replace it with `@electron/rebuild`
 7. Typo: Found `Magic Mirror` in file `package.json`: Replace it with `MagicMirror²`.
-8. Deprecated: Found `electron-rebuild` in file `postinstall`: Replace it with `@electron/rebuild`
+8. Deprecated: Found ` electron-rebuild` in file `postinstall`: Replace it with `@electron/rebuild`
 9. Warning: No LICENSE file.
 
 ### [MMM-GHIN by C-Deck](https://github.com/C-Deck/MMM-GHIN)
@@ -2120,10 +2119,10 @@ Last update: 2023-11-26 18:06:50 UTC
 
 1. There are no keywords in 'package.json'. We would use them as tags on the module list page.
 2. Recommendation: Found `axios` in file `GPhotos.js`: Replace it with built-in fetch.
-3. Deprecated: Found `electron-rebuild` in file `INSTALL.md`: Replace it with `@electron/rebuild`
+3. Deprecated: Found ` electron-rebuild` in file `INSTALL.md`: Replace it with `@electron/rebuild`
 4. Recommendation: Found `axios` in file `error_to_string.js`: Replace it with built-in fetch.
 5. Recommendation: Found `XMLHttpRequest` in file `error_to_string.js`: Replace it with built-in fetch.
-6. Deprecated: Found `electron-rebuild` in file `package.json`: Replace it with `@electron/rebuild`
+6. Deprecated: Found `"electron-rebuild"` in file `package.json`: Replace it with `@electron/rebuild`
 7. Recommendation: Found `axios` in file `package.json`: Replace it with built-in fetch.
 
 ### [MMM-GoogleSheets by ryan-d-williams](https://github.com/ryan-d-williams/MMM-GoogleSheets)
@@ -2166,11 +2165,6 @@ Last update: 2023-11-26 18:06:50 UTC
 2. `package.json` issue: No repository field.
 3. There are no keywords in 'package.json'. We would use them as tags on the module list page.
 4. No image found.
-5. Deprecated: Found `electron-rebuild` in file `README.md`: Replace it with `@electron/rebuild`
-
-### [MMM-GPIO-Notifications by Tom-Hirschberger](https://github.com/Tom-Hirschberger/MMM-GPIO-Notifications)
-
-1. Deprecated: Found `electron-rebuild` in file `postinstall`: Replace it with `@electron/rebuild`
 
 ### [MMM-gpsd by brentpabst](https://github.com/brentpabst/MMM-gpsd)
 
@@ -2391,7 +2385,7 @@ Last update: 2023-11-26 18:06:50 UTC
 2. No image found.
 3. Typo: Found `Magic Mirror` in file `MMM-Hover.js`: Replace it with `MagicMirror²`.
 4. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
-5. Deprecated: Found `electron-rebuild` in file `package.json`: Replace it with `@electron/rebuild`
+5. Deprecated: Found `"electron-rebuild"` in file `package.json`: Replace it with `@electron/rebuild`
 
 ### [MMM-HRS-PickupPlan by maan75](https://github.com/maan75/MMM-HRS-PickupPlan)
 
@@ -2851,8 +2845,7 @@ Last update: 2023-11-26 18:06:50 UTC
 
 1. Typo: Found `Magic Mirror` in file `MMM-KeyBindings.js`: Replace it with `MagicMirror²`.
 2. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
-3. Deprecated: Found `electron-rebuild` in file `package.json`: Replace it with `@electron/rebuild`
-4. Deprecated: Found `electron-rebuild` in file `postinstall.sh`: Replace it with `@electron/rebuild`
+3. Deprecated: Found `"electron-rebuild"` in file `package.json`: Replace it with `@electron/rebuild`
 
 ### [KeyDisplayed by l0b5ter](https://github.com/l0b5ter/KeyDisplayed)
 
@@ -2989,11 +2982,10 @@ Last update: 2023-11-26 18:06:50 UTC
 3. Recommendation: Found `uses: actions/checkout@v3` in file `ci.yml`: Replace it with v4.
 4. Typo: Found `MagicMirror2` in file `README.md`: Replace it with `MagicMirror²`.
 5. Typo: Found `MagicMirror2` in file `package.json`: Replace it with `MagicMirror²`.
-6. Deprecated: Found `electron-rebuild` in file `package.json`: Replace it with `@electron/rebuild`
-7. Typo: Found `Magic Mirror` in file `module.ts`: Replace it with `MagicMirror²`.
-8. Typo: Found `Magic Mirror` in file `helper.ts`: Replace it with `MagicMirror²`.
-9. Typo: Found `Magic Mirror` in file `helper_impl.ts`: Replace it with `MagicMirror²`.
-10. Typo: Found `MagicMirror2` in file `init-mmm.ts`: Replace it with `MagicMirror²`.
+6. Typo: Found `Magic Mirror` in file `module.ts`: Replace it with `MagicMirror²`.
+7. Typo: Found `Magic Mirror` in file `helper.ts`: Replace it with `MagicMirror²`.
+8. Typo: Found `Magic Mirror` in file `helper_impl.ts`: Replace it with `MagicMirror²`.
+9. Typo: Found `MagicMirror2` in file `init-mmm.ts`: Replace it with `MagicMirror²`.
 
 ### [MMM-LoadShedding by qunu](https://github.com/qunu/MMM-LoadShedding)
 
@@ -3132,13 +3124,12 @@ Last update: 2023-11-26 18:06:50 UTC
 4. No image found.
 5. Recommendation: Module name doesn't follow the recommended pattern (it doesn't start with `MMM-`). Consider renaming your module.
 6. Typo: Found `Magic Mirror` in file `README.md`: Replace it with `MagicMirror²`.
-7. Deprecated: Found `electron-rebuild` in file `README.md`: Replace it with `@electron/rebuild`
-8. Recommendation: Found `require('https')` in file `alexa-authentication.js`: Replace 'https' by 'node:https'.
-9. Recommendation: Found `require('https')` in file `alexa-companion-service.js`: Replace 'https' by 'node:https'.
-10. Typo: Found `Magic Mirror` in file `pom.xml`: Replace it with `MagicMirror²`.
-11. Typo: Found `Magic Mirror` in file `CompanionServiceAuthenticator.java`: Replace it with `MagicMirror²`.
-12. Deprecated: Found `electron-rebuild` in file `package.json`: Replace it with `@electron/rebuild`
-13. Typo: Found `Magic Mirror` in file `sphinx-model-generator.js`: Replace it with `MagicMirror²`.
+7. Recommendation: Found `require('https')` in file `alexa-authentication.js`: Replace 'https' by 'node:https'.
+8. Recommendation: Found `require('https')` in file `alexa-companion-service.js`: Replace 'https' by 'node:https'.
+9. Typo: Found `Magic Mirror` in file `pom.xml`: Replace it with `MagicMirror²`.
+10. Typo: Found `Magic Mirror` in file `CompanionServiceAuthenticator.java`: Replace it with `MagicMirror²`.
+11. Deprecated: Found `"electron-rebuild"` in file `package.json`: Replace it with `@electron/rebuild`
+12. Typo: Found `Magic Mirror` in file `sphinx-model-generator.js`: Replace it with `MagicMirror²`.
 
 ### [MagicMirror-Module-Template by roramirez](https://github.com/roramirez/MagicMirror-Module-Template)
 
@@ -3316,7 +3307,7 @@ Last update: 2023-11-26 18:06:50 UTC
 
 1. Typo: Found `Magic Mirror` in file `MMM-MinecraftStatus.js`: Replace it with `MagicMirror²`.
 2. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
-3. Deprecated: Found `electron-rebuild` in file `package.json`: Replace it with `@electron/rebuild`
+3. Deprecated: Found `"electron-rebuild"` in file `package.json`: Replace it with `@electron/rebuild`
 
 ### [MMM-Minigjenbruksstasjon by blixhavn](https://github.com/blixhavn/MMM-Minigjenbruksstasjon)
 
@@ -3422,9 +3413,8 @@ Last update: 2023-11-26 18:06:50 UTC
 
 1. There are no keywords in 'package.json'. We would use them as tags on the module list page.
 2. Recommendation: Module name doesn't follow the recommended pattern (it doesn't start with `MMM-`). Consider renaming your module.
-3. Deprecated: Found `electron-rebuild` in file `README.md`: Replace it with `@electron/rebuild`
-4. Typo: Found `Magic Mirror` in file `package.json`: Replace it with `MagicMirror²`.
-5. Deprecated: Found `electron-rebuild` in file `package.json`: Replace it with `@electron/rebuild`
+3. Typo: Found `Magic Mirror` in file `package.json`: Replace it with `MagicMirror²`.
+4. Deprecated: Found `"electron-rebuild"` in file `package.json`: Replace it with `@electron/rebuild`
 
 ### [MMm-MinecraftServer by ItsMeBrille](https://github.com/ItsMeBrille/MMm-MinecraftServer)
 
@@ -3463,8 +3453,7 @@ Last update: 2023-11-26 18:06:50 UTC
 1. Recommendation: Module name doesn't follow the recommended pattern (it doesn't start with `MMM-`). Consider renaming your module.
 2. Deprecated: Found `require('request')` in file `node_helper.js`: Replace it with built-in fetch.
 3. Typo: Found `Magic Mirror` in file `package.json`: Replace it with `MagicMirror²`.
-4. Deprecated: Found `electron-rebuild` in file `package.json`: Replace it with `@electron/rebuild`
-5. Warning: No LICENSE file.
+4. Warning: No LICENSE file.
 
 ### [mmm-openhabfloorplan by paphko](https://github.com/paphko/mmm-openhabfloorplan)
 
@@ -3481,7 +3470,7 @@ Last update: 2023-11-26 18:06:50 UTC
 3. Recommendation: Module name doesn't follow the recommended pattern (it doesn't start with `MMM-`). Consider renaming your module.
 4. Typo: Found `Magic Mirror` in file `MMM-Pins.js`: Replace it with `MagicMirror²`.
 5. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
-6. Deprecated: Found `electron-rebuild` in file `package.json`: Replace it with `@electron/rebuild`
+6. Deprecated: Found `"electron-rebuild"` in file `package.json`: Replace it with `@electron/rebuild`
 
 ### [mmm-ratp by closingin](https://gitlab.com/closingin/mmm-ratp)
 
@@ -3598,7 +3587,7 @@ Last update: 2023-11-26 18:06:50 UTC
 ### [MMM-ModuleToggleButton by balassy](https://github.com/balassy/MMM-ModuleToggleButton)
 
 1. No image found.
-2. Deprecated: Found `electron-rebuild` in file `package.json`: Replace it with `@electron/rebuild`
+2. Deprecated: Found `"electron-rebuild"` in file `package.json`: Replace it with `@electron/rebuild`
 
 ### [MMM-MonthlyCalendar by kolbyjack](https://github.com/kolbyjack/MMM-MonthlyCalendar)
 
@@ -3704,7 +3693,7 @@ Last update: 2023-11-26 18:06:50 UTC
 2. Typo: Found `Magic Mirror` in file `MMM-MPR121.js`: Replace it with `MagicMirror²`.
 3. Typo: Found `Magic Mirror` in file `README.md`: Replace it with `MagicMirror²`.
 4. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
-5. Deprecated: Found `electron-rebuild` in file `package.json`: Replace it with `@electron/rebuild`
+5. Deprecated: Found `"electron-rebuild"` in file `package.json`: Replace it with `@electron/rebuild`
 6. Warning: No LICENSE file.
 
 ### [MMM-MPRIS2-WebSocket by buxxi](https://github.com/buxxi/MMM-MPRIS2-WebSocket)
@@ -3816,7 +3805,7 @@ Last update: 2023-11-26 18:06:50 UTC
 2. Typo: Found `Magic Mirror` in file `README.md`: Replace it with `MagicMirror²`.
 3. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
 4. Typo: Found `MagicMirror2` in file `package.json`: Replace it with `MagicMirror²`.
-5. Deprecated: Found `electron-rebuild` in file `package.json`: Replace it with `@electron/rebuild`
+5. Deprecated: Found `"electron-rebuild"` in file `package.json`: Replace it with `@electron/rebuild`
 
 ### [MMM-MyMonthlyCalendar by htilburgs](https://github.com/htilburgs/MMM-MyMonthlyCalendar)
 
@@ -3844,13 +3833,13 @@ Last update: 2023-11-26 18:06:50 UTC
 4. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
 5. Deprecated: Found `require('request')` in file `node_helper.js`: Replace it with built-in fetch.
 6. Typo: Found `MagicMirror2` in file `package.json`: Replace it with `MagicMirror²`.
-7. Deprecated: Found `electron-rebuild` in file `package.json`: Replace it with `@electron/rebuild`
+7. Deprecated: Found `"electron-rebuild"` in file `package.json`: Replace it with `@electron/rebuild`
 
 ### [MMM-MysqlQuery by ralberth](https://github.com/ralberth/MMM-MysqlQuery)
 
 1. Typo: Found `Magic Mirror` in file `MMM-MysqlQuery.js`: Replace it with `MagicMirror²`.
 2. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
-3. Deprecated: Found `electron-rebuild` in file `package.json`: Replace it with `@electron/rebuild`
+3. Deprecated: Found `"electron-rebuild"` in file `package.json`: Replace it with `@electron/rebuild`
 
 ### [MMM-MyStandings by vincep5](https://github.com/vincep5/MMM-MyStandings)
 
@@ -3983,7 +3972,7 @@ Last update: 2023-11-26 18:06:50 UTC
 
 1. There are no keywords in 'package.json'. We would use them as tags on the module list page.
 2. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
-3. Deprecated: Found `electron-rebuild` in file `postinstall`: Replace it with `@electron/rebuild`
+3. Deprecated: Found ` electron-rebuild` in file `postinstall`: Replace it with `@electron/rebuild`
 
 ### [MMM-NBA by jupadin](https://github.com/jupadin/MMM-NBA)
 
@@ -4805,7 +4794,7 @@ Last update: 2023-11-26 18:06:50 UTC
 2. Deprecated: Found `omxplayer` in file `README.md`: Try to replace it with `vlc`.
 3. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
 4. Recommendation: Found `require('http')` in file `node_helper.js`: Replace 'http' by 'node:http'.
-5. Deprecated: Found `electron-rebuild` in file `package.json`: Replace it with `@electron/rebuild`
+5. Deprecated: Found `"electron-rebuild"` in file `package.json`: Replace it with `@electron/rebuild`
 6. Warning: No LICENSE file.
 
 ### [MMM-Podcast2 by Ax-LED](https://github.com/Ax-LED/MMM-Podcast2)
@@ -5501,10 +5490,6 @@ Last update: 2023-11-26 18:06:50 UTC
 2. Typo: Found `Magic Mirror` in file `MMM-SensorGateway.js`: Replace it with `MagicMirror²`.
 3. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
 
-### [MMM-Serial-Notifications by Tom-Hirschberger](https://github.com/Tom-Hirschberger/MMM-Serial-Notifications)
-
-1. Deprecated: Found `electron-rebuild` in file `postinstall`: Replace it with `@electron/rebuild`
-
 ### [MMM-ServerStatus by XBCreepinJesus](https://github.com/XBCreepinJesus/MMM-ServerStatus)
 
 1. Warning: No LICENSE file.
@@ -5590,8 +5575,8 @@ Last update: 2023-11-26 18:06:50 UTC
 
 1. There are no keywords in 'package.json'. We would use them as tags on the module list page.
 2. Typo: Found `Magic Mirror` in file `README.org`: Replace it with `MagicMirror²`.
-3. Deprecated: Found `electron-rebuild` in file `README.org`: Replace it with `@electron/rebuild`
-4. Deprecated: Found `electron-rebuild` in file `package.json`: Replace it with `@electron/rebuild`
+3. Deprecated: Found ` electron-rebuild` in file `README.org`: Replace it with `@electron/rebuild`
+4. Deprecated: Found `"electron-rebuild"` in file `package.json`: Replace it with `@electron/rebuild`
 5. Typo: Found `Magic Mirror` in file `SAMPLE_CONFIG.js`: Replace it with `MagicMirror²`.
 6. Warning: No LICENSE file.
 
@@ -5961,7 +5946,7 @@ Last update: 2023-11-26 18:06:50 UTC
 2. Typo: Found `Magic Mirror` in file `MMM-Swipe.js`: Replace it with `MagicMirror²`.
 3. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
 4. Typo: Found `Magic Mirror` in file `package.json`: Replace it with `MagicMirror²`.
-5. Deprecated: Found `electron-rebuild` in file `package.json`: Replace it with `@electron/rebuild`
+5. Deprecated: Found `"electron-rebuild"` in file `package.json`: Replace it with `@electron/rebuild`
 6. Warning: No LICENSE file.
 
 ### [MMM-SwissCommute by nixnuex](https://github.com/nixnuex/MMM-SwissCommute)
@@ -6186,7 +6171,7 @@ Last update: 2023-11-26 18:06:50 UTC
 1. Typo: Found `Magic Mirror` in file `MMM-tns.js`: Replace it with `MagicMirror²`.
 2. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
 3. Deprecated: Found `require("request")` in file `node_helper.js`: Replace it with built-in fetch.
-4. Deprecated: Found `electron-rebuild` in file `package.json`: Replace it with `@electron/rebuild`
+4. Deprecated: Found `"electron-rebuild"` in file `package.json`: Replace it with `@electron/rebuild`
 
 ### [MMM-Todoist by cbrooker](https://github.com/cbrooker/MMM-Todoist)
 
