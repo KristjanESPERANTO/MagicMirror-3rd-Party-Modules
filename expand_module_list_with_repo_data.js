@@ -17,6 +17,7 @@ function isImageFile(filename) {
 async function findAndResizeImage(moduleName, moduleMaintainer) {
   const sourceFolder = `./modules/${moduleName}-----${moduleMaintainer}/`;
   const files = await fs.promises.readdir(sourceFolder, { recursive: true });
+  files.sort();
   let imageToProcess = null;
   let targetImageName = null;
   const issues = [];
@@ -27,8 +28,10 @@ async function findAndResizeImage(moduleName, moduleMaintainer) {
   for (const file of files) {
     if (isImageFile(file)) {
       if (
-        file.toLowerCase().startsWith("screenshot") ||
-        file.toLowerCase().startsWith("example")
+        file.toLowerCase().includes("screenshot") ||
+        file.toLowerCase().includes("example") ||
+        file.toLowerCase().includes("sample") ||
+        file.toLowerCase().includes("preview")
       ) {
         firstScreenshotImage = file;
         break;

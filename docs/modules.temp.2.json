@@ -583,7 +583,7 @@
       "There are no keywords in 'package.json'. We would use them as tags on the module list page."
     ],
     "license": "MIT",
-    "image": "img-brennbar-rest.jpg"
+    "image": "img-examples.jpg"
   },
   {
     "name": "MMM-aviationwx",
@@ -651,7 +651,7 @@
       "There are no keywords in 'package.json'. We would use them as tags on the module list page."
     ],
     "license": "MIT",
-    "image": "screenshots-landscape.jpg"
+    "image": "exampleImages-1.jpg"
   },
   {
     "name": "MMM-BartTimes",
@@ -957,7 +957,7 @@
       "There are no keywords in 'package.json'. We would use them as tags on the module list page."
     ],
     "license": "MIT",
-    "image": ".github-connect.jpg"
+    "image": ".github-example.jpg"
   },
   {
     "name": "MMM-BMI",
@@ -1165,7 +1165,7 @@
       "transport"
     ],
     "license": "MIT",
-    "image": "doc-find-place-id.jpg"
+    "image": "doc-screenshot-custom-place-name.jpg"
   },
   {
     "name": "MMM-Buienradar",
@@ -1306,7 +1306,7 @@
       "calendar"
     ],
     "license": "MIT",
-    "image": "screenshot.jpg"
+    "image": "docs-Configuration-Views-legend-full-example.jpg"
   },
   {
     "name": "MMM-CalendarExt3",
@@ -1766,7 +1766,7 @@
       "bitcoin"
     ],
     "license": "MIT",
-    "image": "logos-ada-128.jpg"
+    "image": "images-sample.jpg"
   },
   {
     "name": "coinsquaremodule",
@@ -2084,7 +2084,7 @@
       "There are no keywords in 'package.json'. We would use them as tags on the module list page."
     ],
     "license": "MIT",
-    "image": "MMM-Currentweather-MQTT-minmax.jpg"
+    "image": "weather_screenshot.jpg"
   },
   {
     "name": "MMM-Cursor",
@@ -2691,7 +2691,7 @@
       "irish rail"
     ],
     "license": "GPL-3.0-or-later",
-    "image": "docs-bus-stop-nr.jpg"
+    "image": "docs-preview.jpg"
   },
   {
     "name": "MMM-DVB",
@@ -2790,7 +2790,7 @@
       "nasa"
     ],
     "license": "MIT",
-    "image": "pix-7.jpg"
+    "image": "loading-loading.jpg"
   },
   {
     "name": "MMM-EARTH-Live",
@@ -2954,7 +2954,7 @@
       "videostream"
     ],
     "license": "MIT",
-    "image": "icons-tom.jpg"
+    "image": "doc-screenshots-SomeGrafanaPanels.jpg"
   },
   {
     "name": "MMM-EmbedYoutube",
@@ -3212,7 +3212,7 @@
       "There are no keywords in 'package.json'. We would use them as tags on the module list page."
     ],
     "license": "MIT",
-    "image": "public-guest.jpg"
+    "image": "img-readme-face-recognition-guest-smai.jpg"
   },
   {
     "name": "MMM-Face-Reco-DNN",
@@ -3256,7 +3256,7 @@
       "facial recognition"
     ],
     "license": "MIT",
-    "image": "pi-faced-etc-notready.jpg"
+    "image": "media-admin-ui.jpg"
   },
   {
     "name": "MMM-Facial-Recognition",
@@ -3732,7 +3732,7 @@
       "formula1"
     ],
     "license": "MIT",
-    "image": "flags.jpg"
+    "image": ".github-example.jpg"
   },
   {
     "name": "MMM-Fortnite",
@@ -3927,7 +3927,7 @@
       "calendar"
     ],
     "license": "MIT",
-    "image": "images-webcalfi-logo-small.jpg"
+    "image": "documentation-exampleui.jpg"
   },
   {
     "name": "MMM-Futar",
@@ -3958,7 +3958,7 @@
       "game of life"
     ],
     "license": "MIT",
-    "image": "Icon.jpg"
+    "image": "img-screenshot_1.jpg"
   },
   {
     "name": "MMM-GamepadEvents",
@@ -4187,7 +4187,7 @@
       "assistant for device"
     ],
     "license": "MIT",
-    "image": "resources-GA_Big.jpg"
+    "image": "resources-previewFS.jpg"
   },
   {
     "name": "MMM-GoogleBirthdaysProvider",
@@ -4839,7 +4839,7 @@
       "home assistant"
     ],
     "license": "MIT",
-    "image": "images-MMM-HomeAssistantDisplay.jpg"
+    "image": "images-simpleExample.jpg"
   },
   {
     "name": "MMM-HomeAutomationNotifications",
@@ -4893,7 +4893,7 @@
       "ccu2"
     ],
     "license": "MIT",
-    "image": "readme_connect.jpg"
+    "image": "readme_screenshot.jpg"
   },
   {
     "name": "MMM-Homematic-Thermostats",
@@ -5345,7 +5345,7 @@
       "entertainment"
     ],
     "license": "MIT",
-    "image": "ig_placeholder.jpg"
+    "image": "readme_images-Example.jpg"
   },
   {
     "name": "MMM-InstagramView",
@@ -5402,7 +5402,7 @@
       "speed"
     ],
     "license": "MIT",
-    "image": "images-strength_almost.jpg"
+    "image": ".previews-almost.jpg"
   },
   {
     "name": "MMM-ioBroker",
@@ -5494,7 +5494,7 @@
       "There are no keywords in 'package.json'. We would use them as tags on the module list page."
     ],
     "license": "MIT",
-    "image": "Resources-1.jpg"
+    "image": "Resources-screenshot.jpg"
   },
   {
     "name": "MMM-ISS",
@@ -6035,7 +6035,7 @@
       "spotify"
     ],
     "license": "MIT",
-    "image": "img-Spotify_Icon_RGB_White.jpg"
+    "image": ".github-example1.jpg"
   },
   {
     "name": "MMM-LICE",
@@ -6689,7 +6689,7 @@
       "There are no keywords in 'package.json'. We would use them as tags on the module list page."
     ],
     "license": "MIT",
-    "image": ".github-connection.jpg"
+    "image": ".github-example.jpg"
   },
   {
     "name": "MMM-MiBiciTuBici",
@@ -7179,7 +7179,7 @@
       "There are no keywords in 'package.json'. We would use them as tags on the module list page."
     ],
     "license": "MIT",
-    "image": "images-image.jpg"
+    "image": "images-screenshot2.jpg"
   },
   {
     "name": "MMM-ModuleMonkeyPatch",
@@ -7260,7 +7260,7 @@
       "There are no keywords in 'package.json'. We would use them as tags on the module list page."
     ],
     "license": "MIT",
-    "image": "public-Phases-full.jpg"
+    "image": "images-2019-06-22-example-moons.jpg"
   },
   {
     "name": "MMM-moonraker",
@@ -7277,7 +7277,7 @@
       "fluidd"
     ],
     "license": "MIT",
-    "image": "img-no_thumbnail.jpg"
+    "image": ".github-example.jpg"
   },
   {
     "name": "MMM-Mopidy-MPD",
@@ -7728,7 +7728,7 @@
       "minecraft"
     ],
     "license": "MIT",
-    "image": "Images-MMM-MyMinecraft_offline.jpg"
+    "image": "Images-screenshot_MMM-MyMinecraft_01.jpg"
   },
   {
     "name": "MMM-MyMonthlyCalendar",
@@ -7766,7 +7766,7 @@
       "sports"
     ],
     "license": "MIT",
-    "image": "logos-NCAAW-CAL.jpg"
+    "image": "logos-NCAAF-CAL.jpg"
   },
   {
     "name": "MMM-MySenseHat",
@@ -7909,7 +7909,7 @@
       "volvooncall"
     ],
     "license": "MIT",
-    "image": "graphics-c40-electric.jpg"
+    "image": "gallery-example.jpg"
   },
   {
     "name": "MMM-MyWastePickup",
@@ -7923,7 +7923,7 @@
       "There are no keywords in 'package.json'. We would use them as tags on the module list page."
     ],
     "license": "MIT",
-    "image": "node_modules-npm-node_modules-unique-filename-coverage-sort-arrow-sprite.jpg"
+    "image": "node_modules-npm-node_modules-read-node_modules-mute-stream-coverage-lcov-report-sort-arrow-sprite.jpg"
   },
   {
     "name": "MMM-MyWeather",
@@ -7940,7 +7940,7 @@
       "module\""
     ],
     "license": "MIT",
-    "image": "img-weezle-chanceflurries.jpg"
+    "image": "img-VCloudsWeatherIcons-chanceflurries.jpg"
   },
   {
     "name": "MMM-MyWordsRandomed",
@@ -8075,7 +8075,7 @@
       "There are no keywords in 'package.json'. We would use them as tags on the module list page."
     ],
     "license": "MIT",
-    "image": "MMM-Navigate_fritzing_rotaryencoder.jpg"
+    "image": "MMM-Navigate_screenshot1.jpg"
   },
   {
     "name": "MMM-NBA",
@@ -8172,7 +8172,7 @@
       "raspberrypi"
     ],
     "license": "MIT",
-    "image": "images-fanIconSpeed1.jpg"
+    "image": "doc-screenshot-cooling-ambientTemperature.jpg"
   },
   {
     "name": "MMM-Netatmo",
@@ -8262,7 +8262,7 @@
       "scanner"
     ],
     "license": "MIT",
-    "image": "exampleColumnsNewLines.jpg"
+    "image": ".github-example-columns2.jpg"
   },
   {
     "name": "MMM-News-QR",
@@ -8355,7 +8355,7 @@
       "There are no keywords in 'package.json'. We would use them as tags on the module list page."
     ],
     "license": "MIT",
-    "image": "assets-create-app-password.jpg"
+    "image": "assets-demo_screenshot.jpg"
   },
   {
     "name": "MMM-NextEvent",
@@ -8655,7 +8655,7 @@
       "spotify"
     ],
     "license": "MIT",
-    "image": "Icon.jpg"
+    "image": "img-readme-screenshot_authorize_app.jpg"
   },
   {
     "name": "MMM-NsInfo",
@@ -8762,7 +8762,7 @@
       "fluidd"
     ],
     "license": "MIT",
-    "image": "img-no_thumbnail.jpg"
+    "image": ".github-example.jpg"
   },
   {
     "name": "MMM-oebb-station-board",
@@ -8908,7 +8908,7 @@
       "on-screen menu"
     ],
     "license": "MIT",
-    "image": "img-demo.jpg"
+    "image": "img-screenshot.jpg"
   },
   {
     "name": "MMM-OnSpotify",
@@ -8923,7 +8923,7 @@
       "spotify connect"
     ],
     "license": "MIT",
-    "image": "auth-client-assets-image-mmmdolarargentina.jpg"
+    "image": ".github-content-banner-social.jpg"
   },
   {
     "name": "MMM-OnThisDay",
@@ -9560,7 +9560,7 @@
       "automatic"
     ],
     "license": "MIT",
-    "image": "MMM-PIR-Sensor-Lite_console-log.jpg"
+    "image": "MMM-PIR-Sensor-Lite_screenshot1.jpg"
   },
   {
     "name": "MMM-PirateSkyForecast",
@@ -9896,7 +9896,7 @@
     "issues": [],
     "tags": [],
     "license": "ISC",
-    "image": "images-logo.jpg"
+    "image": "docs-screenshot.jpg"
   },
   {
     "name": "MMM-Powerwall",
@@ -10101,7 +10101,7 @@
       "There are no keywords in 'package.json'. We would use them as tags on the module list page."
     ],
     "license": "MIT",
-    "image": "docs-aguffsox.jpg"
+    "image": "docs-FOLI-mfrojxmz.jpg"
   },
   {
     "name": "MMM-Pull",
@@ -10469,7 +10469,7 @@
       "reddit"
     ],
     "license": "ISC",
-    "image": "images-reddit-api.jpg"
+    "image": "images-screenshot.jpg"
   },
   {
     "name": "MMM-RedditKarma",
@@ -10517,7 +10517,7 @@
       "control"
     ],
     "license": "MIT",
-    "image": "apple-touch-icon.jpg"
+    "image": ".github-hide_show_module.jpg"
   },
   {
     "name": "MMM-Remote-Control-Repository",
@@ -11044,7 +11044,7 @@
       "There are no keywords in 'package.json'. We would use them as tags on the module list page."
     ],
     "license": "MIT",
-    "image": "module_graph.jpg"
+    "image": "docs-module_graph.jpg"
   },
   {
     "name": "MMM-SearchLight",
@@ -11135,7 +11135,7 @@
       "iot"
     ],
     "license": "MIT",
-    "image": "images-home.jpg"
+    "image": "documentation-exampleui.jpg"
   },
   {
     "name": "MMM-Serial-Notifications",
@@ -11151,7 +11151,7 @@
       "notifications"
     ],
     "license": "MIT",
-    "image": "examples-APDS-9960_Multi-VL53L1X-APDS-9960_Multi-VL53L1X.jpg"
+    "image": "examples-APDS-9960_Multi-VL53L0X-APDS-9960_Multi-VL53L0X.jpg"
   },
   {
     "name": "MMM-ServerStatus",
@@ -12034,7 +12034,7 @@
       "strava"
     ],
     "license": "MIT",
-    "image": ".github-Strava-API-Application-Client-Details.jpg"
+    "image": ".github-example-chart-recent.jpg"
   },
   {
     "name": "MMM-SugarValue",
@@ -12383,7 +12383,7 @@
       "sht31d"
     ],
     "license": "MIT",
-    "image": "examples-oneNamelessSensor.jpg"
+    "image": "examples-htu21-htu21.jpg"
   },
   {
     "name": "MMM-Tesla",
@@ -12426,7 +12426,7 @@
       "There are no keywords in 'package.json'. We would use them as tags on the module list page."
     ],
     "license": "MIT",
-    "image": "img-HAL9000.jpg"
+    "image": "img-MMM-TeslaLogger-ScreenShot-image.jpg"
   },
   {
     "name": "MMM-Teslamate",
@@ -12596,7 +12596,7 @@
       "There are no keywords in 'package.json'. We would use them as tags on the module list page."
     ],
     "license": "ISC",
-    "image": "docs-multiple-schools.jpg"
+    "image": "docs-screenshot.jpg"
   },
   {
     "name": "MMM-TMB",
@@ -12608,7 +12608,7 @@
     "issues": [],
     "tags": [],
     "license": "MIT",
-    "image": "images-logo.jpg"
+    "image": "images-screenshot.jpg"
   },
   {
     "name": "MMM-tns",
@@ -12711,7 +12711,7 @@
       "scripts"
     ],
     "license": "MIT",
-    "image": "screenshots-threeColoredButtons.jpg"
+    "image": "examples-ShellyPlugs-shellies.jpg"
   },
   {
     "name": "MMM-Toulouse-Transports",
@@ -12975,7 +12975,7 @@
       "platform"
     ],
     "license": "MIT",
-    "image": "others-MMM-TuyaSL-photo-01.jpg"
+    "image": "others-MMM-TuyaSL-screenshot-01.jpg"
   },
   {
     "name": "MMM-TUZSAZaragoza",
@@ -13247,7 +13247,7 @@
       "conditions"
     ],
     "license": "MIT",
-    "image": "icons-tom.jpg"
+    "image": "doc-screenshots-basicConfiguration.jpg"
   },
   {
     "name": "MMM-VartaESS",
@@ -13278,7 +13278,7 @@
     "issues": [],
     "tags": [],
     "license": "MIT",
-    "image": "docs-departureTimeColors.PNG"
+    "image": "docs-screenshot.PNG"
   },
   {
     "name": "MMM-Vasttrafik-PublicTransport",
@@ -13290,7 +13290,7 @@
     "issues": [],
     "tags": [],
     "license": "MIT",
-    "image": "docs-departureTimeColors.PNG"
+    "image": "docs-screenshot.PNG"
   },
   {
     "name": "MMM-vCard2Calendar",
@@ -13334,7 +13334,7 @@
       "There are no keywords in 'package.json'. We would use them as tags on the module list page."
     ],
     "license": "MIT",
-    "image": "Pictures-1.jpg"
+    "image": "App-Assets-background.jpg"
   },
   {
     "name": "MMM-VietNamEventsCalendar",
@@ -13676,7 +13676,7 @@
       "forecast"
     ],
     "license": "MIT",
-    "image": "weather2.jpg"
+    "image": "images-01d.jpg"
   },
   {
     "name": "MMM-Weather-SMHI-Hourly",
@@ -14308,6 +14308,6 @@
     ],
     "tags": [],
     "license": "ISC",
-    "image": "screenshot.jpg"
+    "image": "alternateScreenshot.jpg"
   }
 ]

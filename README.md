@@ -21,7 +21,7 @@ This is a list of information that we can display on the web page and where the 
   - There are two requirements for an image of your module to be displayed:
     1. In the `package.json` must be a free license in the license field. Take a look at [this package.json](https://github.com/KristjanESPERANTO/MMM-PublicTransportHafas/blob/main/package.json) as an example.
     2. There must be an image file in your repository.
-  - If there are several images in your repository, one image is selected according to the following logic: First search for an image that starts with 'screenshot' or 'example' and if none is found, take the first image that is found.
+  - If there are several images in your repository, one image is selected according to the following logic: First search for an image that contains 'screenshot' or 'example' in it's name and if none is found, take the first image that is found.
 - Description: Is taken from the [official list of modules](https://github.com/MichMich/MagicMirror/wiki/3rd-party-modules).
 - Tags: Are taken from the keywords in the `package.json`. Take a look at [this package.json](https://github.com/KristjanESPERANTO/MMM-PublicTransportHafas/blob/main/package.json) as an example.
 
