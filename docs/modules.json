@@ -5633,14 +5633,15 @@
     "maintainer": "MMRIZE",
     "maintainerURL": "",
     "description": "Text-to-Speech module with Google Cloud TTS API. Give a voice to your Mirror.",
-    "issues": [
-      "`package.json` issue: No description",
-      "`package.json` issue: No repository field.",
-      "There are no keywords in 'package.json'. We would use them as tags on the module list page.",
-      "No image found."
+    "issues": [],
+    "tags": [
+      "text-to-speech",
+      "tts",
+      "google"
     ],
     "license": "MIT",
-    "last_commit": "2023-03-07"
+    "image": ".github-TTS.jpg",
+    "last_commit": "2023-11-27"
   },
   {
     "name": "MMM-GPIO-Notifications",
@@ -12800,9 +12801,7 @@
     "maintainer": "Tom-Hirschberger",
     "maintainerURL": "https://github.com/Tom-Hirschberger",
     "description": "Indicator module for MMM-ProfileSwitcher.",
-    "issues": [
-      "Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror\u00b2`."
-    ],
+    "issues": [],
     "tags": [
       "profiles",
       "pages",
@@ -12810,7 +12809,7 @@
     ],
     "license": "MIT",
     "image": "examples-page_one-profile_two.jpg",
-    "last_commit": "2023-11-24"
+    "last_commit": "2023-11-27"
   },
   {
     "name": "MMM-Profilepicture",

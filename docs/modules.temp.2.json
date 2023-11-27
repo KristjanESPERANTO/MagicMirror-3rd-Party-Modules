@@ -4411,13 +4411,14 @@
     "maintainer": "MMRIZE",
     "maintainerURL": "",
     "description": "Text-to-Speech module with Google Cloud TTS API. Give a voice to your Mirror.",
-    "issues": [
-      "`package.json` issue: No description",
-      "`package.json` issue: No repository field.",
-      "There are no keywords in 'package.json'. We would use them as tags on the module list page.",
-      "No image found."
+    "issues": [],
+    "tags": [
+      "text-to-speech",
+      "tts",
+      "google"
     ],
-    "license": "MIT"
+    "license": "MIT",
+    "image": ".github-TTS.jpg"
   },
   {
     "name": "MMM-GPIO-Notifications",

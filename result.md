@@ -1,6 +1,6 @@
 # Result of the module analysis
 
-Last update: 2023-11-27 13:09:22 UTC
+Last update: 2023-11-27 15:27:58 UTC
 
 ## Statistics
 
@@ -8,8 +8,8 @@ Last update: 2023-11-27 13:09:22 UTC
 |:---------------------|:--------:|
 | modules analyzed     |   1067   |
 | maintainer           |    612   |
-| modules with issues  |   1025   |
-| issues               |   3922   |
+| modules with issues  |   1023   |
+| issues               |   3917   |
 | modules at github    |   1058   |
 | modules at gitlab    |      8   |
 | modules at bitbucket |      1   |
@@ -2158,13 +2158,6 @@ Last update: 2023-11-27 13:09:22 UTC
 1. `package.json` issue: No repository field.
 2. There are no keywords in 'package.json'. We would use them as tags on the module list page.
 3. Warning: No LICENSE file.
-
-### [MMM-GoogleTTS by MMRIZE](https://github.com/MMRIZE/MMM-GoogleTTS)
-
-1. `package.json` issue: No description
-2. `package.json` issue: No repository field.
-3. There are no keywords in 'package.json'. We would use them as tags on the module list page.
-4. No image found.
 
 ### [MMM-gpsd by brentpabst](https://github.com/brentpabst/MMM-gpsd)
 
@@ -4917,10 +4910,6 @@ Last update: 2023-11-27 13:09:22 UTC
 1. There is no `package.json`. We need this file to gather information about the module for the module list page.
 2. Typo: Found `Magic Mirror` in file `MMM-Profile.js`: Replace it with `MagicMirror²`.
 3. Recommendation: Found `XMLHttpRequest` in file `MMM-Profile.js`: Replace it with built-in fetch.
-
-### [MMM-ProfileControl by Tom-Hirschberger](https://github.com/Tom-Hirschberger/MMM-ProfileControl)
-
-1. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
 
 ### [MMM-Profilepicture by Snille](https://github.com/Snille/MMM-Profilepicture)
 
