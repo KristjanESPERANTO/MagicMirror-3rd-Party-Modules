@@ -201,6 +201,8 @@ resetButton.addEventListener("click", () => {
   searchInput.value = "";
   showOutdated.checked = true;
   removeSelectedMarkingFromTagsAndCards();
+  sortDropdown.value = "default";
+  sortData(sortDropdown.value);
   updateModuleCardContainer();
 });
 
