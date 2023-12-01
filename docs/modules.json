@@ -562,7 +562,7 @@
     ],
     "license": "MIT",
     "image": "screenshots-screenshot_01.jpg",
-    "last_commit": "2022-04-25"
+    "last_commit": "2023-12-01"
   },
   {
     "name": "MMM-aqicn",
@@ -736,7 +736,8 @@
     "maintainerURL": "https://github.com/Fifteen15Studios",
     "description": "Set 1 or more schedules to dim and brighten your screen at specific times.",
     "issues": [
-      "There is no `package.json`. We need this file to gather information about the module for the module list page."
+      "There is no `package.json`. We need this file to gather information about the module for the module list page.",
+      "Information: There are updates for 2 dependencie(s):\n   -  marked  ^10.0.0  \u2192  ^11.0.0\n   -  sharp   ^0.32.6  \u2192  ^0.33.0\n"
     ],
     "last_commit": "2023-04-19"
   },
@@ -848,7 +849,7 @@
     ],
     "license": "MIT",
     "image": "exampleImages-1.jpg",
-    "last_commit": "2023-04-01"
+    "last_commit": "2023-11-28"
   },
   {
     "name": "MMM-BartTimes",
@@ -1364,7 +1365,8 @@
     "maintainerURL": "",
     "description": "Module request to show the date you must be born before to enter premises.",
     "issues": [
-      "There is no `package.json`. We need this file to gather information about the module for the module list page."
+      "There is no `package.json`. We need this file to gather information about the module for the module list page.",
+      "Information: There are updates for 2 dependencie(s):\n   -  marked  ^10.0.0  \u2192  ^11.0.0\n   -  sharp   ^0.32.6  \u2192  ^0.33.0\n"
     ],
     "last_commit": "2019-03-24"
   },
@@ -1658,7 +1660,7 @@
     "description": "CalDav Parser to convert to iCal format.",
     "issues": [
       "No image found.",
-      "Information: There are updates for 1 dependencie(s):\n   -  tsdav  ^2.0.5  \u2192  ^2.0.6\n"
+      "Information: There are updates for 2 dependencie(s):\n   -  googleapis  ^128.0.0  \u2192  ^129.0.0\n   -  tsdav         ^2.0.5  \u2192    ^2.0.6\n"
     ],
     "tags": [
       "caldav"
@@ -1921,15 +1923,13 @@
     "maintainer": "KristjanESPERANTO",
     "maintainerURL": "",
     "description": "Show meals from canteens (Germany and Switzerland).",
-    "issues": [
-      "Information: There are updates for 1 dependencie(s):\n   -  stylelint-prettier  ^4.0.2  \u2192  ^4.1.0\n"
-    ],
+    "issues": [],
     "tags": [
       "openmensa"
     ],
     "license": "MIT",
     "image": "img-example1.jpg",
-    "last_commit": "2023-11-21"
+    "last_commit": "2023-11-28"
   },
   {
     "name": "MMM-Canvas",
@@ -2406,7 +2406,8 @@
     "maintainerURL": "",
     "description": "Countdown or countup for events.",
     "issues": [
-      "There is no `package.json`. We need this file to gather information about the module for the module list page."
+      "There is no `package.json`. We need this file to gather information about the module for the module list page.",
+      "Information: There are updates for 2 dependencie(s):\n   -  marked  ^10.0.0  \u2192  ^11.0.0\n   -  sharp   ^0.32.6  \u2192  ^0.33.0\n"
     ],
     "last_commit": "2020-02-14"
   },
@@ -2452,7 +2453,8 @@
     "maintainerURL": "https://github.com/wiesty",
     "description": "Module that displays the number of days, weeks, months, and years since a specified date, serving as a romantic reminder for couples \ud83d\udc8c. Can also be used for Birthdays \ud83d\udcc6.",
     "issues": [
-      "There is no `package.json`. We need this file to gather information about the module for the module list page."
+      "There is no `package.json`. We need this file to gather information about the module for the module list page.",
+      "Information: There are updates for 2 dependencie(s):\n   -  marked  ^10.0.0  \u2192  ^11.0.0\n   -  sharp   ^0.32.6  \u2192  ^0.33.0\n"
     ],
     "last_commit": "2023-10-30"
   },
@@ -2478,7 +2480,7 @@
       "covid",
       "covid19api"
     ],
-    "last_commit": "2023-10-08"
+    "last_commit": "2023-11-29"
   },
   {
     "name": "MMM-COVID19",
@@ -2712,7 +2714,8 @@
     "maintainerURL": "",
     "description": "Custom element <code>mm-time</code> launcher.",
     "issues": [
-      "There is no `package.json`. We need this file to gather information about the module for the module list page."
+      "There is no `package.json`. We need this file to gather information about the module for the module list page.",
+      "Information: There are updates for 2 dependencie(s):\n   -  marked  ^10.0.0  \u2192  ^11.0.0\n   -  sharp   ^0.32.6  \u2192  ^0.33.0\n"
     ],
     "last_commit": "2022-04-13"
   },
@@ -2873,7 +2876,8 @@
     "maintainerURL": "",
     "description": "Module for daily recurrent event alarms.",
     "issues": [
-      "There is no `package.json`. We need this file to gather information about the module for the module list page."
+      "There is no `package.json`. We need this file to gather information about the module for the module list page.",
+      "Information: There are updates for 2 dependencie(s):\n   -  marked  ^10.0.0  \u2192  ^11.0.0\n   -  sharp   ^0.32.6  \u2192  ^0.33.0\n"
     ],
     "last_commit": "2018-10-23"
   },
@@ -3220,7 +3224,8 @@
     "maintainerURL": "",
     "description": "modified defult clock showing only the digital part.",
     "issues": [
-      "There is no `package.json`. We need this file to gather information about the module for the module list page."
+      "There is no `package.json`. We need this file to gather information about the module for the module list page.",
+      "Information: There are updates for 2 dependencie(s):\n   -  marked  ^10.0.0  \u2192  ^11.0.0\n   -  sharp   ^0.32.6  \u2192  ^0.33.0\n"
     ],
     "last_commit": "2019-02-09"
   },
@@ -3359,7 +3364,7 @@
     "description": "Display status of mountain bike trails via the trailforks.com website.",
     "issues": [
       "`package.json` issue: No repository field.",
-      "Information: There are updates for 1 dependencie(s):\n   -  jsdom  ^22.1.0  \u2192  ^23.0.0\n"
+      "Information: There are updates for 1 dependencie(s):\n   -  jsdom  ^22.1.0  \u2192  ^23.0.1\n"
     ],
     "tags": [],
     "license": "ISC",
@@ -3947,7 +3952,7 @@
     ],
     "license": "ISC",
     "image": "images-image-1.jpg",
-    "last_commit": "2023-11-11"
+    "last_commit": "2023-11-29"
   },
   {
     "name": "MMM-eswordoftheday",
@@ -5265,7 +5270,8 @@
     "maintainerURL": "",
     "description": "Displays GitHub repository information.",
     "issues": [
-      "There is no `package.json`. We need this file to gather information about the module for the module list page."
+      "There is no `package.json`. We need this file to gather information about the module for the module list page.",
+      "Information: There are updates for 2 dependencie(s):\n   -  marked  ^10.0.0  \u2192  ^11.0.0\n   -  sharp   ^0.32.6  \u2192  ^0.33.0\n"
     ],
     "last_commit": "2023-01-17"
   },
@@ -5389,7 +5395,7 @@
     "maintainerURL": "https://wiki.bugsounet.fr",
     "description": "MMM-GoogleAssistant is an real embedded Google assistant on MagicMirror\u00b2. [Maintained].",
     "issues": [
-      "Information: There are updates for 1 dependencie(s):\n   -  @grpc/grpc-js  ^1.9.11  \u2192  ^1.9.12\n"
+      "Information: There are updates for 2 dependencie(s):\n   -  @grpc/grpc-js        ^1.9.11  \u2192  ^1.9.12\n   -  google-auth-library   ^9.2.0  \u2192   ^9.4.1\n"
     ],
     "tags": [
       "google assistant",
@@ -5517,7 +5523,8 @@
     "maintainerURL": "",
     "description": "Displays a google map of an origin and destination.",
     "issues": [
-      "There is no `package.json`. We need this file to gather information about the module for the module list page."
+      "There is no `package.json`. We need this file to gather information about the module for the module list page.",
+      "Information: There are updates for 2 dependencie(s):\n   -  marked  ^10.0.0  \u2192  ^11.0.0\n   -  sharp   ^0.32.6  \u2192  ^0.33.0\n"
     ],
     "last_commit": "2016-12-28"
   },
@@ -5600,7 +5607,7 @@
     "description": "Display a google shoppinglist items.",
     "issues": [
       "There are no keywords in 'package.json'. We would use them as tags on the module list page.",
-      "Information: There are updates for 2 dependencie(s):\n   -  fs-extra   ^7.0.0  \u2192  ^11.1.1\n   -  puppeteer  ^2.0.0  \u2192  ^21.5.2\n"
+      "Information: There are updates for 2 dependencie(s):\n   -  fs-extra   ^7.0.0  \u2192  ^11.2.0\n   -  puppeteer  ^2.0.0  \u2192  ^21.5.2\n"
     ],
     "license": "MIT",
     "image": "screenshot.jpg",
@@ -5631,6 +5638,25 @@
       "Warning: No LICENSE file."
     ],
     "last_commit": "2022-07-17"
+  },
+  {
+    "name": "MMM-GoogleTasks",
+    "url": "https://github.com/spydersoft-consulting/MMM-GoogleTasks",
+    "id": "spydersoft-consulting/MMM-GoogleTasks",
+    "maintainer": "spydersoft-consulting",
+    "maintainerURL": "https://github.com/spydersoft-consulting/",
+    "description": "Google Tasks with Planned View.",
+    "issues": [
+      "Typo: Found `Magic Mirror` in file `CONTRIBUTING.md`: Replace it with `MagicMirror\u00b2`.",
+      "Recommendation: Found `axios` in file `GoogleTaskService.ts`: Replace it with built-in fetch.",
+      "Recommendation: Found `axios` in file `node_helper.ts`: Replace it with built-in fetch."
+    ],
+    "tags": [
+      "scheduler"
+    ],
+    "license": "MIT",
+    "image": "images-sample.jpg",
+    "last_commit": "2023-11-29"
   },
   {
     "name": "MMM-GoogleTrafficTimes",
@@ -5672,7 +5698,7 @@
     "maintainerURL": "",
     "description": "Text-to-Speech module with Google Cloud TTS API. Give a voice to your Mirror.",
     "issues": [
-      "Information: There are updates for 1 dependencie(s):\n   -  @google-cloud/text-to-speech  ^3.3.1  \u2192  ^5.0.1\n"
+      "Information: There are updates for 2 dependencie(s):\n   -  @electron/rebuild             ^3.3.1  \u2192  ^3.4.0\n   -  @google-cloud/text-to-speech  ^3.3.1  \u2192  ^5.0.1\n"
     ],
     "tags": [
       "text-to-speech",
@@ -5922,7 +5948,8 @@
     "maintainerURL": "https://github.com/neshkoli",
     "description": "Hebrew calendar in monthly view.",
     "issues": [
-      "There is no `package.json`. We need this file to gather information about the module for the module list page."
+      "There is no `package.json`. We need this file to gather information about the module for the module list page.",
+      "Information: There are updates for 2 dependencie(s):\n   -  marked  ^10.0.0  \u2192  ^11.0.0\n   -  sharp   ^0.32.6  \u2192  ^0.33.0\n"
     ],
     "last_commit": "2023-11-13"
   },
@@ -6041,7 +6068,8 @@
     "maintainerURL": "",
     "description": "Implements H.I.V.E AI into your mirror.",
     "issues": [
-      "There is no `package.json`. We need this file to gather information about the module for the module list page."
+      "There is no `package.json`. We need this file to gather information about the module for the module list page.",
+      "Information: There are updates for 2 dependencie(s):\n   -  marked  ^10.0.0  \u2192  ^11.0.0\n   -  sharp   ^0.32.6  \u2192  ^0.33.0\n"
     ],
     "last_commit": "2021-04-23"
   },
@@ -6104,7 +6132,8 @@
     "maintainerURL": "",
     "description": "Modified from cowboydude's MMM-Xmas for different holidays, events, et.al.",
     "issues": [
-      "There is no `package.json`. We need this file to gather information about the module for the module list page."
+      "There is no `package.json`. We need this file to gather information about the module for the module list page.",
+      "Information: There are updates for 2 dependencie(s):\n   -  marked  ^10.0.0  \u2192  ^11.0.0\n   -  sharp   ^0.32.6  \u2192  ^0.33.0\n"
     ],
     "last_commit": "2019-01-25"
   },
@@ -7170,7 +7199,7 @@
     "maintainerURL": "https://github.com/jalibu",
     "description": "A simple but powerful vertical, horizontal or static stock ticker based on Yahoo's finance API. Supports international stocks, crypto currencies and index symbols. No API key required.",
     "issues": [
-      "Information: There are updates for 5 dependencie(s):\n   -  eslint          ^8.53.0  \u2192  ^8.54.0\n   -  prettier         ^2.8.8  \u2192   ^3.1.0\n   -  rollup          ^2.79.0  \u2192   ^4.6.0\n   -  typescript       ^5.2.2  \u2192   ^5.3.2\n   -  yahoo-finance2   ^2.8.1  \u2192   ^2.9.0\n"
+      "Information: There are updates for 5 dependencie(s):\n   -  eslint          ^8.53.0  \u2192  ^8.54.0\n   -  prettier         ^2.8.8  \u2192   ^3.1.0\n   -  rollup          ^2.79.0  \u2192   ^4.6.1\n   -  typescript       ^5.2.2  \u2192   ^5.3.2\n   -  yahoo-finance2   ^2.8.1  \u2192   ^2.9.0\n"
     ],
     "tags": [
       "stock",
@@ -7261,7 +7290,8 @@
     "maintainerURL": "https://github.com/nomis6432",
     "description": "Jitsi meet IFrame integration.",
     "issues": [
-      "There is no `package.json`. We need this file to gather information about the module for the module list page."
+      "There is no `package.json`. We need this file to gather information about the module for the module list page.",
+      "Information: There are updates for 2 dependencie(s):\n   -  marked  ^10.0.0  \u2192  ^11.0.0\n   -  sharp   ^0.32.6  \u2192  ^0.33.0\n"
     ],
     "last_commit": "2020-08-31"
   },
@@ -7555,7 +7585,8 @@
     "maintainerURL": "",
     "description": "Can show upcoming events (concerts, theater plays, exhibitions and etc.), that collected from <a target=\"_blank\" href=\"https://kudago.com\">KudaGo</a>.",
     "issues": [
-      "There is no `package.json`. We need this file to gather information about the module for the module list page."
+      "There is no `package.json`. We need this file to gather information about the module for the module list page.",
+      "Information: There are updates for 2 dependencie(s):\n   -  marked  ^10.0.0  \u2192  ^11.0.0\n   -  sharp   ^0.32.6  \u2192  ^0.33.0\n"
     ],
     "last_commit": "2021-02-14"
   },
@@ -7870,7 +7901,7 @@
       "tic",
       "teleinfo"
     ],
-    "last_commit": "2023-09-20"
+    "last_commit": "2023-11-28"
   },
   {
     "name": "MMM-LoadShedding",
@@ -7954,7 +7985,8 @@
     "maintainerURL": "",
     "description": "Deliver the logs from Frontend to Backend and more features.",
     "issues": [
-      "There is no `package.json`. We need this file to gather information about the module for the module list page."
+      "There is no `package.json`. We need this file to gather information about the module for the module list page.",
+      "Information: There are updates for 2 dependencie(s):\n   -  marked  ^10.0.0  \u2192  ^11.0.0\n   -  sharp   ^0.32.6  \u2192  ^0.33.0\n"
     ],
     "last_commit": "2023-05-26"
   },
@@ -8070,7 +8102,8 @@
     "maintainerURL": "https://github.com/tbouron",
     "description": "Display live timetables for specific bus stops of Lothian buses network.",
     "issues": [
-      "There is no `package.json`. We need this file to gather information about the module for the module list page."
+      "There is no `package.json`. We need this file to gather information about the module for the module list page.",
+      "Information: There are updates for 2 dependencie(s):\n   -  marked  ^10.0.0  \u2192  ^11.0.0\n   -  sharp   ^0.32.6  \u2192  ^0.33.0\n"
     ],
     "last_commit": "2020-10-01"
   },
@@ -8313,7 +8346,8 @@
     "maintainerURL": "",
     "description": "Prevent screen burn-in on your MagicMirror\u00b2.",
     "issues": [
-      "There is no `package.json`. We need this file to gather information about the module for the module list page."
+      "There is no `package.json`. We need this file to gather information about the module for the module list page.",
+      "Information: There are updates for 2 dependencie(s):\n   -  marked  ^10.0.0  \u2192  ^11.0.0\n   -  sharp   ^0.32.6  \u2192  ^0.33.0\n"
     ],
     "last_commit": "2023-11-02"
   },
@@ -8534,7 +8568,8 @@
     "maintainerURL": "",
     "description": "Display Slovak name of day.",
     "issues": [
-      "There is no `package.json`. We need this file to gather information about the module for the module list page."
+      "There is no `package.json`. We need this file to gather information about the module for the module list page.",
+      "Information: There are updates for 2 dependencie(s):\n   -  marked  ^10.0.0  \u2192  ^11.0.0\n   -  sharp   ^0.32.6  \u2192  ^0.33.0\n"
     ],
     "last_commit": "2018-08-05"
   },
@@ -8565,7 +8600,8 @@
     "maintainerURL": "",
     "description": "Module to display daily menu \ud83c\udf54\ud83e\udd55 information from the canteens of the Studierendenwerk M\u00fcnchen Oberbayern as well as some other canteens.",
     "issues": [
-      "There is no `package.json`. We need this file to gather information about the module for the module list page."
+      "There is no `package.json`. We need this file to gather information about the module for the module list page.",
+      "Information: There are updates for 2 dependencie(s):\n   -  marked  ^10.0.0  \u2192  ^11.0.0\n   -  sharp   ^0.32.6  \u2192  ^0.33.0\n"
     ],
     "last_commit": "2023-07-15"
   },
@@ -8700,7 +8736,8 @@
     "maintainerURL": "",
     "description": "Show opening hours for mobile recycling stations in Oslo, Norway. API free, so if it looks intresting, check to see if you can use it for your city too!",
     "issues": [
-      "There is no `package.json`. We need this file to gather information about the module for the module list page."
+      "There is no `package.json`. We need this file to gather information about the module for the module list page.",
+      "Information: There are updates for 2 dependencie(s):\n   -  marked  ^10.0.0  \u2192  ^11.0.0\n   -  sharp   ^0.32.6  \u2192  ^0.33.0\n"
     ],
     "last_commit": "2020-12-02"
   },
@@ -8849,6 +8886,23 @@
     "license": "MIT",
     "image": "docs-example.jpg",
     "last_commit": "2022-04-19"
+  },
+  {
+    "name": "mmm-dropbox",
+    "url": "https://github.com/michael5r/mmm-dropbox",
+    "id": "michael5r/mmm-dropbox",
+    "maintainer": "michael5r",
+    "maintainerURL": "",
+    "description": "Takes images from a Dropbox folder, scales &amp; formats them nicely, and then displays them in organized rows.",
+    "issues": [
+      "There are no keywords in 'package.json'. We would use them as tags on the module list page.",
+      "No image found.",
+      "Recommendation: Module name doesn't follow the recommended pattern (it doesn't start with `MMM-`). Consider renaming your module.",
+      "Typo: Found `Magic Mirror` in file `README.md`: Replace it with `MagicMirror\u00b2`.",
+      "Typo: Found `Magic Mirror` in file `mmm-dropbox.js`: Replace it with `MagicMirror\u00b2`."
+    ],
+    "license": "MIT",
+    "last_commit": "2022-03-15"
   },
   {
     "name": "mmm-food2fork-recipes",
@@ -9248,9 +9302,10 @@
     "maintainerURL": "",
     "description": "Companion module for MMPM to enable hiding/showing of MagicMirror\u00b2 modules.",
     "issues": [
-      "There is no `package.json`. We need this file to gather information about the module for the module list page."
+      "There is no `package.json`. We need this file to gather information about the module for the module list page.",
+      "Information: There are updates for 2 dependencie(s):\n   -  marked  ^10.0.0  \u2192  ^11.0.0\n   -  sharp   ^0.32.6  \u2192  ^0.33.0\n"
     ],
-    "last_commit": "2023-03-12"
+    "last_commit": "2023-11-30"
   },
   {
     "name": "MMM-Modulebar",
@@ -9346,7 +9401,8 @@
     "maintainerURL": "",
     "description": "Display your calendar events in a monthly calendar view.",
     "issues": [
-      "There is no `package.json`. We need this file to gather information about the module for the module list page."
+      "There is no `package.json`. We need this file to gather information about the module for the module list page.",
+      "Information: There are updates for 2 dependencie(s):\n   -  marked  ^10.0.0  \u2192  ^11.0.0\n   -  sharp   ^0.32.6  \u2192  ^0.33.0\n"
     ],
     "last_commit": "2023-02-24"
   },
@@ -9642,7 +9698,7 @@
     "maintainerURL": "",
     "description": "A module that subscribes topics from MQTT message queues, and displays the payload values in a table, with configurable labels.",
     "issues": [
-      "Information: There are updates for 5 dependencie(s):\n   -  eslint                  ^7.23.0  \u2192  ^8.54.0\n   -  eslint-config-prettier   ^8.1.0  \u2192   ^9.0.0\n   -  eslint-plugin-prettier   ^3.3.1  \u2192   ^5.0.1\n   -  mqtt                     ^4.3.7  \u2192   ^5.3.0\n   -  mqtt-packet              ^6.3.2  \u2192   ^9.0.0\n"
+      "Information: There are updates for 5 dependencie(s):\n   -  eslint                  ^7.23.0  \u2192  ^8.54.0\n   -  eslint-config-prettier   ^8.1.0  \u2192   ^9.0.0\n   -  eslint-plugin-prettier   ^3.3.1  \u2192   ^5.0.1\n   -  mqtt                     ^4.3.7  \u2192   ^5.3.1\n   -  mqtt-packet              ^6.3.2  \u2192   ^9.0.0\n"
     ],
     "tags": [
       "smarthome",
@@ -9694,7 +9750,7 @@
     "maintainerURL": "",
     "description": "A module to subscribe to MQTT topics and forward the payload (as it is) as notification and vice versa. Features QoS, Clean Session, Retained Messages and Shortcuts.",
     "issues": [
-      "Information: There are updates for 1 dependencie(s):\n   -  mqtt  ^1.10.0  \u2192  ^5.3.0\n"
+      "Information: There are updates for 1 dependencie(s):\n   -  mqtt  ^1.10.0  \u2192  ^5.3.1\n"
     ],
     "tags": [
       "mqtt"
@@ -9711,7 +9767,7 @@
     "maintainerURL": "https://github.com/Tom-Hirschberger",
     "description": "A powerful module that subscribes to MQTT broker and read/send MQTT messages and MM Notifications with a lot of individual setup/rules. Allows you to integrate MM into smart home like Home Assistant. Powerful automation with structured Noti and MQTT dictionaries rules (e.g. one mqtt message could trigger many predefined noti, and one mm-noti could trigger different predefined mqtt messages).",
     "issues": [
-      "Information: There are updates for 2 dependencie(s):\n   -  jsonpath-plus  5.0.1  \u2192  7.2.0\n   -  mqtt           4.3.7  \u2192  5.3.0\n"
+      "Information: There are updates for 2 dependencie(s):\n   -  jsonpath-plus  5.0.1  \u2192  7.2.0\n   -  mqtt           4.3.7  \u2192  5.3.1\n"
     ],
     "tags": [
       "mqtt"
@@ -10562,7 +10618,7 @@
     ],
     "license": "MIT",
     "image": ".github-preview.bubbles.jpg",
-    "last_commit": "2023-11-27"
+    "last_commit": "2023-11-30"
   },
   {
     "name": "MMM-Netatmo-Presence",
@@ -10948,7 +11004,8 @@
     "maintainerURL": "https://github.com/Isaac-the-Man",
     "description": "Retro nixie clock display.",
     "issues": [
-      "There is no `package.json`. We need this file to gather information about the module for the module list page."
+      "There is no `package.json`. We need this file to gather information about the module for the module list page.",
+      "Information: There are updates for 2 dependencie(s):\n   -  marked  ^10.0.0  \u2192  ^11.0.0\n   -  sharp   ^0.32.6  \u2192  ^0.33.0\n"
     ],
     "last_commit": "2021-10-02"
   },
@@ -11134,7 +11191,8 @@
     "maintainerURL": "",
     "description": "MMM-NotificationTrigger is a simple notification relay which can convert notifications from TRIGGER_NOTIFICATION to FIRE_NOTIFICATION.",
     "issues": [
-      "There is no `package.json`. We need this file to gather information about the module for the module list page."
+      "There is no `package.json`. We need this file to gather information about the module for the module list page.",
+      "Information: There are updates for 2 dependencie(s):\n   -  marked  ^10.0.0  \u2192  ^11.0.0\n   -  sharp   ^0.32.6  \u2192  ^0.33.0\n"
     ],
     "last_commit": "2021-10-11"
   },
@@ -11156,7 +11214,7 @@
     ],
     "license": "MIT",
     "image": "img-mmm-notion-showcase.jpg",
-    "last_commit": "2023-11-27"
+    "last_commit": "2023-12-01"
   },
   {
     "name": "MMM-NowPlayingOnAIMP",
@@ -11272,7 +11330,8 @@
     "maintainerURL": "",
     "description": "O-clock inspired by PolarClock Screensaver.",
     "issues": [
-      "There is no `package.json`. We need this file to gather information about the module for the module list page."
+      "There is no `package.json`. We need this file to gather information about the module for the module list page.",
+      "Information: There are updates for 2 dependencie(s):\n   -  marked  ^10.0.0  \u2192  ^11.0.0\n   -  sharp   ^0.32.6  \u2192  ^0.33.0\n"
     ],
     "last_commit": "2020-01-04"
   },
@@ -11340,7 +11399,7 @@
     "description": "Shows trains and other public transports for a configured \u00d6BB-Station.",
     "issues": [
       "Typo: Found `MagicMirror2` in file `package.json`: Replace it with `MagicMirror\u00b2`.",
-      "Information: There are updates for 9 dependencie(s):\n   -  @types/debounce        ^1.2.0  \u2192  ^1.2.4\n   -  @types/prompts         ^2.0.1  \u2192  ^2.4.9\n   -  chalk                  ^2.4.2  \u2192  ^5.3.0\n   -  debounce               ^1.2.0  \u2192  ^2.0.0\n   -  prompts                ^2.1.0  \u2192  ^2.4.2\n   -  rollup                ^1.17.0  \u2192  ^4.6.0\n   -  rollup-plugin-banner   ^0.2.0  \u2192  ^0.2.1\n   -  tslib                 ^1.10.0  \u2192  ^2.6.2\n   -  typescript             ^3.5.3  \u2192  ^5.3.2\n"
+      "Information: There are updates for 9 dependencie(s):\n   -  @types/debounce        ^1.2.0  \u2192  ^1.2.4\n   -  @types/prompts         ^2.0.1  \u2192  ^2.4.9\n   -  chalk                  ^2.4.2  \u2192  ^5.3.0\n   -  debounce               ^1.2.0  \u2192  ^2.0.0\n   -  prompts                ^2.1.0  \u2192  ^2.4.2\n   -  rollup                ^1.17.0  \u2192  ^4.6.1\n   -  rollup-plugin-banner   ^0.2.0  \u2192  ^0.2.1\n   -  tslib                 ^1.10.0  \u2192  ^2.6.2\n   -  typescript             ^3.5.3  \u2192  ^5.3.2\n"
     ],
     "tags": [
       "oebb",
@@ -11427,15 +11486,13 @@
     "maintainer": "KristjanESPERANTO",
     "maintainerURL": "",
     "description": "Display current and forecast weather based on the Openweathermap OneCall API data with alternative formatting.",
-    "issues": [
-      "Information: There are updates for 5 dependencie(s):\n   -  eslint              ^8.53.0  \u2192  ^8.54.0\n   -  lint-staged         ^15.0.2  \u2192  ^15.1.0\n   -  markdownlint        ^0.31.1  \u2192  ^0.32.1\n   -  prettier             ^3.0.3  \u2192   ^3.1.0\n   -  stylelint-prettier   ^4.0.2  \u2192   ^4.1.0\n"
-    ],
+    "issues": [],
     "tags": [
       "weather"
     ],
     "license": "MIT",
     "image": "OneCallWeather-Screenshot.jpg",
-    "last_commit": "2023-11-04"
+    "last_commit": "2023-11-28"
   },
   {
     "name": "MMM-OneTouchReveal",
@@ -11481,7 +11538,8 @@
     "maintainerURL": "https://github.com/Legion2",
     "description": "Displays the network connection availability of the browser.",
     "issues": [
-      "There is no `package.json`. We need this file to gather information about the module for the module list page."
+      "There is no `package.json`. We need this file to gather information about the module for the module list page.",
+      "Information: There are updates for 2 dependencie(s):\n   -  marked  ^10.0.0  \u2192  ^11.0.0\n   -  sharp   ^0.32.6  \u2192  ^0.33.0\n"
     ],
     "last_commit": "2020-03-04"
   },
@@ -11551,7 +11609,7 @@
     "maintainerURL": "https://github.com/nkl-kst",
     "description": "Display historical events from Wikipedia based on the current date.",
     "issues": [
-      "Information: There are updates for 1 dependencie(s):\n   -  jsdom  ^22.1.0  \u2192  ^23.0.0\n"
+      "Information: There are updates for 1 dependencie(s):\n   -  jsdom  ^22.1.0  \u2192  ^23.0.1\n"
     ],
     "tags": [
       "events",
@@ -11776,7 +11834,8 @@
     "maintainerURL": "",
     "description": "A helper module to display what page you're on. Intended to be used with other modules that rotate out modules.",
     "issues": [
-      "There is no `package.json`. We need this file to gather information about the module for the module list page."
+      "There is no `package.json`. We need this file to gather information about the module for the module list page.",
+      "Information: There are updates for 2 dependencie(s):\n   -  marked  ^10.0.0  \u2192  ^11.0.0\n   -  sharp   ^0.32.6  \u2192  ^0.33.0\n"
     ],
     "last_commit": "2022-11-17"
   },
@@ -12274,16 +12333,13 @@
     "maintainer": "bugsounet",
     "maintainerURL": "",
     "description": "After a configurated time without any user interaction the display will turn off and hide all modules for economy mode.It will wake up with a PIR sensor. [Maintained].",
-    "issues": [
-      "Recommendation: Found `uses: actions/checkout@v3` in file `dependency-review.yml`: Replace it with v4.",
-      "Information: There are updates for 1 dependencie(s):\n   -  esbuild  ^0.19.5  \u2192  ^0.19.8\n"
-    ],
+    "issues": [],
     "tags": [
       "screen"
     ],
     "license": "MIT",
     "image": "screenshot-screenshot.jpg",
-    "last_commit": "2023-10-28"
+    "last_commit": "2023-11-27"
   },
   {
     "name": "MMM-PIR",
@@ -12693,7 +12749,8 @@
     "maintainerURL": "",
     "description": "Text-to-Speech using Amazon Polly.",
     "issues": [
-      "There is no `package.json`. We need this file to gather information about the module for the module list page."
+      "There is no `package.json`. We need this file to gather information about the module for the module list page.",
+      "Information: There are updates for 2 dependencie(s):\n   -  marked  ^10.0.0  \u2192  ^11.0.0\n   -  sharp   ^0.32.6  \u2192  ^0.33.0\n"
     ],
     "last_commit": "2019-04-25"
   },
@@ -12917,10 +12974,10 @@
   },
   {
     "name": "MMM-PrometheusAlerts",
-    "url": "https://github.com/spyder007/MMM-PrometheusAlerts",
-    "id": "spyder007/MMM-PrometheusAlerts",
-    "maintainer": "spyder007",
-    "maintainerURL": "https://github.com/spyder007",
+    "url": "https://github.com/spydersoft-consulting/MMM-PrometheusAlerts",
+    "id": "spydersoft-consulting/MMM-PrometheusAlerts",
+    "maintainer": "spydersoft-consulting",
+    "maintainerURL": "https://github.com/spydersoft-consulting",
     "description": "Display Prometheus Alerts.",
     "issues": [
       "Typo: Found `Magic Mirror` in file `CONTRIBUTING.md`: Replace it with `MagicMirror\u00b2`.",
@@ -12933,7 +12990,7 @@
     ],
     "license": "MIT",
     "image": ".github-example-screenshot.jpg",
-    "last_commit": "2023-11-27"
+    "last_commit": "2023-11-29"
   },
   {
     "name": "MMM-Property-managed",
@@ -12979,9 +13036,7 @@
     "maintainer": "deg0nz",
     "maintainerURL": "",
     "description": "Display departures for public transport in Berlin and Brandenburg (Covers VBB Area).",
-    "issues": [
-      "Information: There are updates for 4 dependencie(s):\n   -  eslint              ^8.52.0  \u2192  ^8.54.0\n   -  hafas-client         ^6.1.1  \u2192   ^6.2.0\n   -  prettier             ^3.0.3  \u2192   ^3.1.0\n   -  stylelint-prettier   ^4.0.2  \u2192   ^4.1.0\n"
-    ],
+    "issues": [],
     "tags": [
       "public transport",
       "public transport berlin",
@@ -12989,7 +13044,7 @@
     ],
     "license": "MIT",
     "image": "img-MMM-PublicTransport_screenshot.jpg",
-    "last_commit": "2023-11-01"
+    "last_commit": "2023-12-01"
   },
   {
     "name": "MMM-PublicTransportHafas",
@@ -13220,7 +13275,7 @@
       "Typo: Found `Magic Mirror` in file `MMM-rain-forecast.js`: Replace it with `MagicMirror\u00b2`.",
       "Deprecated: Found `require('request')` in file `node_helper.js`: Replace it with built-in fetch."
     ],
-    "last_commit": "2023-11-26"
+    "last_commit": "2023-11-29"
   },
   {
     "name": "MMM-RAIN-MAP",
@@ -13230,7 +13285,7 @@
     "maintainerURL": "https://github.com/jalibu",
     "description": "A rain radar map based on OpenStreetMap. Multiple location markers, option for alternating positions and zoom levels.",
     "issues": [
-      "Information: There are updates for 4 dependencie(s):\n   -  eslint      ^8.53.0  \u2192  ^8.54.0\n   -  prettier     ^2.8.8  \u2192   ^3.1.0\n   -  rollup       ^4.3.0  \u2192   ^4.6.0\n   -  typescript   ^5.2.2  \u2192   ^5.3.2\n"
+      "Information: There are updates for 4 dependencie(s):\n   -  eslint      ^8.53.0  \u2192  ^8.54.0\n   -  prettier     ^2.8.8  \u2192   ^3.1.0\n   -  rollup       ^4.3.0  \u2192   ^4.6.1\n   -  typescript   ^5.2.2  \u2192   ^5.3.2\n"
     ],
     "tags": [
       "weather",
@@ -13538,7 +13593,8 @@
     "maintainerURL": "",
     "description": "A simple module to display user karma from Reddit.com.",
     "issues": [
-      "There is no `package.json`. We need this file to gather information about the module for the module list page."
+      "There is no `package.json`. We need this file to gather information about the module for the module list page.",
+      "Information: There are updates for 2 dependencie(s):\n   -  marked  ^10.0.0  \u2192  ^11.0.0\n   -  sharp   ^0.32.6  \u2192  ^0.33.0\n"
     ],
     "last_commit": "2022-07-22"
   },
@@ -14653,7 +14709,8 @@
     "maintainerURL": "",
     "description": "Simply displays logo with local image file path or url.",
     "issues": [
-      "There is no `package.json`. We need this file to gather information about the module for the module list page."
+      "There is no `package.json`. We need this file to gather information about the module for the module list page.",
+      "Information: There are updates for 2 dependencie(s):\n   -  marked  ^10.0.0  \u2192  ^11.0.0\n   -  sharp   ^0.32.6  \u2192  ^0.33.0\n"
     ],
     "last_commit": "2019-08-01"
   },
@@ -15401,10 +15458,10 @@
   },
   {
     "name": "MMM-StatusPageIo",
-    "url": "https://github.com/spyder007/MMM-StatusPageIo",
-    "id": "spyder007/MMM-StatusPageIo",
-    "maintainer": "spyder007",
-    "maintainerURL": "https://github.com/spyder007",
+    "url": "https://github.com/spydersoft-consulting/MMM-StatusPageIo",
+    "id": "spydersoft-consulting/MMM-StatusPageIo",
+    "maintainer": "spydersoft-consulting",
+    "maintainerURL": "https://github.com/spydersoft-consulting",
     "description": "Display incidents and component status from a StatusPage.io site.",
     "issues": [
       "Typo: Found `Magic Mirror` in file `CONTRIBUTING.md`: Replace it with `MagicMirror\u00b2`.",
@@ -15417,7 +15474,7 @@
     ],
     "license": "MIT",
     "image": ".github-example-screenshot.jpg",
-    "last_commit": "2023-11-27"
+    "last_commit": "2023-11-29"
   },
   {
     "name": "MMM-SteamPlaytime",
@@ -16038,7 +16095,7 @@
     "description": "Displays data from <a target=\"_blank\" href=\"https://github.com/bassmaster187/TeslaLogger\">TeslaLogger</a> or/and <a target=\"_blank\" href=\"https://github.com/adriankumpf/teslamate\">TeslaMate</a> via MQTT.",
     "issues": [
       "There are no keywords in 'package.json'. We would use them as tags on the module list page.",
-      "Information: There are updates for 4 dependencie(s):\n   -  jsonpointer  ^5.0.0  \u2192   ^5.0.1\n   -  mocha        ^6.2.1  \u2192  ^10.2.0\n   -  mqtt         ^4.3.7  \u2192   ^5.3.0\n   -  mqtt-packet  ^6.2.1  \u2192   ^9.0.0\n"
+      "Information: There are updates for 4 dependencie(s):\n   -  jsonpointer  ^5.0.0  \u2192   ^5.0.1\n   -  mocha        ^6.2.1  \u2192  ^10.2.0\n   -  mqtt         ^4.3.7  \u2192   ^5.3.1\n   -  mqtt-packet  ^6.2.1  \u2192   ^9.0.0\n"
     ],
     "license": "MIT",
     "image": "img-MMM-TeslaLogger-ScreenShot-image.jpg",
@@ -16396,7 +16453,8 @@
     "maintainerURL": "",
     "description": "Module for universal touch gesture commander using touchscreen.",
     "issues": [
-      "There is no `package.json`. We need this file to gather information about the module for the module list page."
+      "There is no `package.json`. We need this file to gather information about the module for the module list page.",
+      "Information: There are updates for 2 dependencie(s):\n   -  marked  ^10.0.0  \u2192  ^11.0.0\n   -  sharp   ^0.32.6  \u2192  ^0.33.0\n"
     ],
     "last_commit": "2020-10-24"
   },
@@ -16631,7 +16689,8 @@
     "maintainerURL": "https://github.com/nikxif",
     "description": "Connect to the Transmission BitTorrent client and display current torrent list information.",
     "issues": [
-      "There is no `package.json`. We need this file to gather information about the module for the module list page."
+      "There is no `package.json`. We need this file to gather information about the module for the module list page.",
+      "Information: There are updates for 2 dependencie(s):\n   -  marked  ^10.0.0  \u2192  ^11.0.0\n   -  sharp   ^0.32.6  \u2192  ^0.33.0\n"
     ],
     "last_commit": "2022-08-06"
   },
@@ -16923,7 +16982,8 @@
     "maintainerURL": "https://github.com/XBCreepinJesus",
     "description": "Show live train departure/arrival times for the UK's National Rail network.",
     "issues": [
-      "There is no `package.json`. We need this file to gather information about the module for the module list page."
+      "There is no `package.json`. We need this file to gather information about the module for the module list page.",
+      "Information: There are updates for 2 dependencie(s):\n   -  marked  ^10.0.0  \u2192  ^11.0.0\n   -  sharp   ^0.32.6  \u2192  ^0.33.0\n"
     ],
     "last_commit": "2021-02-19"
   },
@@ -17333,7 +17393,7 @@
     "description": "Learn new languages on your MagicMirror\u00b2.",
     "issues": [
       "Typo: Found `MagicMirror2` in file `package.json`: Replace it with `MagicMirror\u00b2`.",
-      "Information: There are updates for 7 dependencie(s):\n   -  eslint                     ^3.14.1  \u2192   ^8.54.0\n   -  eslint-config-airbnb-base  ^11.0.1  \u2192   ^15.0.0\n   -  eslint-plugin-import        ^2.2.0  \u2192   ^2.29.0\n   -  jsdoc                       ^3.4.3  \u2192    ^4.0.2\n   -  jsdom                      ^10.1.0  \u2192   ^23.0.0\n   -  stylelint                   ^7.8.0  \u2192  ^15.11.0\n   -  stylelint-config-standard  ^16.0.0  \u2192   ^34.0.0\n"
+      "Information: There are updates for 7 dependencie(s):\n   -  eslint                     ^3.14.1  \u2192   ^8.54.0\n   -  eslint-config-airbnb-base  ^11.0.1  \u2192   ^15.0.0\n   -  eslint-plugin-import        ^2.2.0  \u2192   ^2.29.0\n   -  jsdoc                       ^3.4.3  \u2192    ^4.0.2\n   -  jsdom                      ^10.1.0  \u2192   ^23.0.1\n   -  stylelint                   ^7.8.0  \u2192  ^15.11.0\n   -  stylelint-config-standard  ^16.0.0  \u2192   ^34.0.0\n"
     ],
     "tags": [
       "vocabulary trainer"
@@ -17613,7 +17673,8 @@
     "maintainerURL": "",
     "description": "Keeps an eye on your UI and quits app in case the UI crashes. If you combine this with the PM2 process manager, MM2 will automaticly restart after a UI failure.",
     "issues": [
-      "There is no `package.json`. We need this file to gather information about the module for the module list page."
+      "There is no `package.json`. We need this file to gather information about the module for the module list page.",
+      "Information: There are updates for 2 dependencie(s):\n   -  marked  ^10.0.0  \u2192  ^11.0.0\n   -  sharp   ^0.32.6  \u2192  ^0.33.0\n"
     ],
     "last_commit": "2016-11-21"
   },
@@ -18011,7 +18072,8 @@
     "maintainerURL": "",
     "description": "Displays random Wikipedia snippets.",
     "issues": [
-      "There is no `package.json`. We need this file to gather information about the module for the module list page."
+      "There is no `package.json`. We need this file to gather information about the module for the module list page.",
+      "Information: There are updates for 2 dependencie(s):\n   -  marked  ^10.0.0  \u2192  ^11.0.0\n   -  sharp   ^0.32.6  \u2192  ^0.33.0\n"
     ],
     "last_commit": "2020-04-01"
   },
@@ -18259,7 +18321,8 @@
     "maintainerURL": "",
     "description": "Displays car routes on the map, using Yandex.Maps API.",
     "issues": [
-      "There is no `package.json`. We need this file to gather information about the module for the module list page."
+      "There is no `package.json`. We need this file to gather information about the module for the module list page.",
+      "Information: There are updates for 2 dependencie(s):\n   -  marked  ^10.0.0  \u2192  ^11.0.0\n   -  sharp   ^0.32.6  \u2192  ^0.33.0\n"
     ],
     "last_commit": "2020-05-12"
   },

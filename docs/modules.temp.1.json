@@ -2980,6 +2980,15 @@
     "issues": []
   },
   {
+    "name": "MMM-GoogleTasks",
+    "url": "https://github.com/spydersoft-consulting/MMM-GoogleTasks",
+    "id": "spydersoft-consulting/MMM-GoogleTasks",
+    "maintainer": "spydersoft-consulting",
+    "maintainerURL": "https://github.com/spydersoft-consulting/",
+    "description": "Google Tasks with Planned View.",
+    "issues": []
+  },
+  {
     "name": "MMM-GoogleTrafficTimes",
     "url": "https://github.com/pjestico/MMM-GoogleTrafficTimes",
     "id": "pjestico/MMM-GoogleTrafficTimes",
@@ -4667,6 +4676,15 @@
     "maintainer": "sthuber90",
     "maintainerURL": "",
     "description": "Amazon Photos as background images.",
+    "issues": []
+  },
+  {
+    "name": "mmm-dropbox",
+    "url": "https://github.com/michael5r/mmm-dropbox",
+    "id": "michael5r/mmm-dropbox",
+    "maintainer": "michael5r",
+    "maintainerURL": "",
+    "description": "Takes images from a Dropbox folder, scales &amp; formats them nicely, and then displays them in organized rows.",
     "issues": []
   },
   {
@@ -6763,10 +6781,10 @@
   },
   {
     "name": "MMM-PrometheusAlerts",
-    "url": "https://github.com/spyder007/MMM-PrometheusAlerts",
-    "id": "spyder007/MMM-PrometheusAlerts",
-    "maintainer": "spyder007",
-    "maintainerURL": "https://github.com/spyder007",
+    "url": "https://github.com/spydersoft-consulting/MMM-PrometheusAlerts",
+    "id": "spydersoft-consulting/MMM-PrometheusAlerts",
+    "maintainer": "spydersoft-consulting",
+    "maintainerURL": "https://github.com/spydersoft-consulting",
     "description": "Display Prometheus Alerts.",
     "issues": []
   },
@@ -8045,10 +8063,10 @@
   },
   {
     "name": "MMM-StatusPageIo",
-    "url": "https://github.com/spyder007/MMM-StatusPageIo",
-    "id": "spyder007/MMM-StatusPageIo",
-    "maintainer": "spyder007",
-    "maintainerURL": "https://github.com/spyder007",
+    "url": "https://github.com/spydersoft-consulting/MMM-StatusPageIo",
+    "id": "spydersoft-consulting/MMM-StatusPageIo",
+    "maintainer": "spydersoft-consulting",
+    "maintainerURL": "https://github.com/spydersoft-consulting",
     "description": "Display incidents and component status from a StatusPage.io site.",
     "issues": []
   },
