@@ -33,5 +33,10 @@
       }
     }
   ],
-  "ignorePatterns": ["modules/", "**/docs/modules*.json"]
+  "ignorePatterns": [
+    "modules/",
+    "modules_temp/",
+    "**/docs/modules*.json",
+    "result.md"
+  ]
 }
