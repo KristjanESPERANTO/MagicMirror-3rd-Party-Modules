@@ -1,15 +1,15 @@
 # Result of the module analysis
 
-Last update: 2023-12-02 14:22:05 UTC
+Last update: 2023-12-02 22:52:24 UTC
 
 ## Statistics
 
 |                      | number   |
 |:---------------------|:--------:|
 | modules analyzed     |   1069   |
-| maintainer           |    615   |
-| modules with issues  |   1050   |
-| issues               |   4030   |
+| maintainer           |    616   |
+| modules with issues  |   1044   |
+| issues               |   4023   |
 | modules at github    |   1060   |
 | modules at gitlab    |      8   |
 | modules at bitbucket |      1   |
@@ -685,15 +685,6 @@ Last update: 2023-12-02 14:22:05 UTC
    -  tsdav         ^2.0.5  →    ^2.0.6
 
 
-### [MMM-CalendarExt2 by MMM-CalendarExt2](https://github.com/MMM-CalendarExt2/MMM-CalendarExt2)
-
-1. Information: There are updates for 4 dependencie(s):
-   -  eslint                  ^8.52.0  →  ^8.55.0
-   -  eslint-config-prettier   ^9.0.0  →   ^9.1.0
-   -  prettier                 ^3.0.3  →   ^3.1.0
-   -  stylelint-prettier       ^4.0.2  →   ^4.1.0
-
-
 ### [MMM-CalendarExt3 by MMRIZE](https://github.com/MMRIZE/MMM-CalendarExt3)
 
 1. No image found.
@@ -773,13 +764,6 @@ Last update: 2023-12-02 14:22:05 UTC
 1. Typo: Found `Magic Mirror` in file `MMM-CanadianPublicWeatherAlerts.js`: Replace it with `MagicMirror²`.
 2. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
 3. Recommendation: Found `require('https')` in file `node_helper.js`: Replace 'https' by 'node:https'.
-
-### [MMM-Canteen by KristjanESPERANTO](https://github.com/KristjanESPERANTO/MMM-Canteen)
-
-1. Information: There are updates for 2 dependencie(s):
-   -  eslint                  ^8.54.0  →  ^8.55.0
-   -  eslint-config-prettier   ^9.0.0  →   ^9.1.0
-
 
 ### [MMM-Canvas by chase-cromwell](https://github.com/chase-cromwell/MMM-Canvas)
 
@@ -1511,11 +1495,6 @@ Last update: 2023-12-02 14:22:05 UTC
 3. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
 4. Deprecated: Found `require('request')` in file `node_helper.js`: Replace it with built-in fetch.
 
-### [MMM-EasyPix by mykle1](https://github.com/mykle1/MMM-EasyPix)
-
-1. There is no `package.json`. We need this file to gather information about the module for the module list page.
-2. Typo: Found `Magic Mirror` in file `MMM-EasyPix.js`: Replace it with `MagicMirror²`.
-
 ### [MMM-Ecobee by parnic](https://github.com/parnic/MMM-Ecobee)
 
 1. Recommendation: Found `uses: actions/checkout@v3` in file `nodejs.yml`: Replace it with v4.
@@ -1645,7 +1624,7 @@ Last update: 2023-12-02 14:22:05 UTC
 3. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
 4. Deprecated: Found `require('request')` in file `node_helper.js`: Replace it with built-in fetch.
 
-### [MMM-EveryNews by mykle1](https://github.com/mykle1/MMM-EveryNews)
+### [MMM-EveryNews by themox](https://github.com/themox/MMM-EveryNews)
 
 1. There is no `package.json`. We need this file to gather information about the module for the module list page.
 2. Typo: Found `Magic Mirror` in file `MMM-EveryNews.js`: Replace it with `MagicMirror²`.
@@ -2903,12 +2882,6 @@ Last update: 2023-12-02 14:22:05 UTC
 3. Typo: Found `Magic Mirror` in file `README.md`: Replace it with `MagicMirror²`.
 4. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
 5. Typo: Found `Magic Mirror` in file `package.json`: Replace it with `MagicMirror²`.
-
-### [MMM-ISS-Live by KristjanESPERANTO](https://github.com/KristjanESPERANTO/MMM-ISS-Live/)
-
-1. Information: There are updates for 1 dependencie(s):
-   -  eslint  ^8.54.0  →  ^8.55.0
-
 
 ### [MMM-ISY by shbatm](https://github.com/shbatm/MMM-ISY)
 
@@ -4751,13 +4724,6 @@ Last update: 2023-12-02 14:22:05 UTC
 3. Deprecated: Found `require('request')` in file `node_helper.js`: Replace it with built-in fetch.
 4. Warning: No LICENSE file.
 
-### [MMM-OneCallWeather by KristjanESPERANTO](https://github.com/KristjanESPERANTO/MMM-OneCallWeather)
-
-1. Information: There are updates for 2 dependencie(s):
-   -  eslint                  ^8.54.0  →  ^8.55.0
-   -  eslint-config-prettier   ^9.0.0  →   ^9.1.0
-
-
 ### [MMM-OneTouchReveal by Canonip](https://github.com/Canonip/MMM-OneTouchReveal)
 
 1. `package.json` issue: No repository field.
@@ -5028,7 +4994,7 @@ Last update: 2023-12-02 14:22:05 UTC
 5. Typo: Found `Magic Mirror` in file `config.js.sample`: Replace it with `MagicMirror²`.
 6. Typo: Found `Magic Mirror` in file `custom.css.sample`: Replace it with `MagicMirror²`.
 
-### [MMM-PetFinder by mykle1](https://github.com/mykle1/MMM-PetFinder)
+### [MMM-PetFinder by PhantomOffKanagawa](https://github.com/PhantomOffKanagawa/MMM-PetFinder)
 
 1. There is no `package.json`. We need this file to gather information about the module for the module list page.
 2. Typo: Found `Magic Mirror` in file `MMM-PetFinder.js`: Replace it with `MagicMirror²`.
@@ -5399,12 +5365,6 @@ Last update: 2023-12-02 14:22:05 UTC
 1. Information: There are updates for 2 dependencie(s):
    -  eslint                  ^8.54.0  →  ^8.55.0
    -  eslint-config-prettier   ^9.0.0  →   ^9.1.0
-
-
-### [MMM-PublicTransportHafas by KristjanESPERANTO](https://github.com/KristjanESPERANTO/MMM-PublicTransportHafas)
-
-1. Information: There are updates for 1 dependencie(s):
-   -  eslint  ^8.54.0  →  ^8.55.0
 
 
 ### [MMM-PublicTransportVVO by ChristianGeie](https://github.com/ChristianGeie/MMM-PublicTransportVVO)

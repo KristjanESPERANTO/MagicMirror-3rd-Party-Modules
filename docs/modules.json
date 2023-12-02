@@ -1631,15 +1631,13 @@
     "maintainer": "MMM-CalendarExt2",
     "maintainerURL": "",
     "description": "Extended calendar and event view.",
-    "issues": [
-      "Information: There are updates for 4 dependencie(s):\n   -  eslint                  ^8.52.0  \u2192  ^8.55.0\n   -  eslint-config-prettier   ^9.0.0  \u2192   ^9.1.0\n   -  prettier                 ^3.0.3  \u2192   ^3.1.0\n   -  stylelint-prettier       ^4.0.2  \u2192   ^4.1.0\n"
-    ],
+    "issues": [],
     "tags": [
       "calendar"
     ],
     "license": "MIT",
     "image": "docs-Configuration-Views-legend-full-example.jpg",
-    "last_commit": "2023-11-02"
+    "last_commit": "2023-12-02"
   },
   {
     "name": "MMM-CalendarExt3",
@@ -1879,15 +1877,13 @@
     "maintainer": "KristjanESPERANTO",
     "maintainerURL": "",
     "description": "Show meals from canteens (Germany and Switzerland).",
-    "issues": [
-      "Information: There are updates for 2 dependencie(s):\n   -  eslint                  ^8.54.0  \u2192  ^8.55.0\n   -  eslint-config-prettier   ^9.0.0  \u2192   ^9.1.0\n"
-    ],
+    "issues": [],
     "tags": [
       "openmensa"
     ],
     "license": "MIT",
     "image": "img-example1.jpg",
-    "last_commit": "2023-11-28"
+    "last_commit": "2023-12-02"
   },
   {
     "name": "MMM-Canvas",
@@ -3611,16 +3607,18 @@
   },
   {
     "name": "MMM-EasyPix",
-    "url": "https://github.com/mykle1/MMM-EasyPix",
-    "id": "mykle1/MMM-EasyPix",
-    "maintainer": "mykle1",
+    "url": "https://github.com/KristjanESPERANTO/MMM-EasyPix",
+    "id": "KristjanESPERANTO/MMM-EasyPix",
+    "maintainer": "KristjanESPERANTO",
     "maintainerURL": "",
     "description": "The easiest way to show pictures on your mirror.",
-    "issues": [
-      "There is no `package.json`. We need this file to gather information about the module for the module list page.",
-      "Typo: Found `Magic Mirror` in file `MMM-EasyPix.js`: Replace it with `MagicMirror\u00b2`."
+    "issues": [],
+    "tags": [
+      "picture"
     ],
-    "last_commit": "2019-02-18"
+    "license": "MIT",
+    "image": "pix-18.jpg",
+    "last_commit": "2023-12-02"
   },
   {
     "name": "MMM-Ecobee",
@@ -4023,9 +4021,9 @@
   },
   {
     "name": "MMM-EveryNews",
-    "url": "https://github.com/mykle1/MMM-EveryNews",
-    "id": "mykle1/MMM-EveryNews",
-    "maintainer": "mykle1",
+    "url": "https://github.com/themox/MMM-EveryNews",
+    "id": "themox/MMM-EveryNews",
+    "maintainer": "themox",
     "maintainerURL": "",
     "description": "Over 30,000 News sources! Up to 10 at once. Simplified addition to your config entry.",
     "issues": [
@@ -4035,7 +4033,7 @@
       "Deprecated: Found `require('request')` in file `node_helper.js`: Replace it with built-in fetch.",
       "Recommendation: Found `axios` in file `sources.json`: Replace it with built-in fetch."
     ],
-    "last_commit": "2020-02-07"
+    "last_commit": "2023-12-02"
   },
   {
     "name": "MMM-EyeCandy",
@@ -7138,16 +7136,14 @@
     "maintainer": "KristjanESPERANTO",
     "maintainerURL": "",
     "description": "Displays live video from the International Space Station.",
-    "issues": [
-      "Information: There are updates for 1 dependencie(s):\n   -  eslint  ^8.54.0  \u2192  ^8.55.0\n"
-    ],
+    "issues": [],
     "tags": [
       "iss",
       "livestream"
     ],
     "license": "MIT",
     "image": "images-i1.jpg",
-    "last_commit": "2023-11-22"
+    "last_commit": "2023-12-02"
   },
   {
     "name": "MMM-ISY",
@@ -11480,15 +11476,13 @@
     "maintainer": "KristjanESPERANTO",
     "maintainerURL": "",
     "description": "Display current and forecast weather based on the Openweathermap OneCall API data with alternative formatting.",
-    "issues": [
-      "Information: There are updates for 2 dependencie(s):\n   -  eslint                  ^8.54.0  \u2192  ^8.55.0\n   -  eslint-config-prettier   ^9.0.0  \u2192   ^9.1.0\n"
-    ],
+    "issues": [],
     "tags": [
       "weather"
     ],
     "license": "MIT",
     "image": "OneCallWeather-Screenshot.jpg",
-    "last_commit": "2023-11-28"
+    "last_commit": "2023-12-02"
   },
   {
     "name": "MMM-OneTouchReveal",
@@ -12134,9 +12128,9 @@
   },
   {
     "name": "MMM-PetFinder",
-    "url": "https://github.com/mykle1/MMM-PetFinder",
-    "id": "mykle1/MMM-PetFinder",
-    "maintainer": "mykle1",
+    "url": "https://github.com/PhantomOffKanagawa/MMM-PetFinder",
+    "id": "PhantomOffKanagawa/MMM-PetFinder",
+    "maintainer": "PhantomOffKanagawa",
     "maintainerURL": "",
     "description": "All types of pets for adoption. Cat, dog, bird, horse, rabbit, reptile, smallfurry, barnyard.",
     "issues": [
@@ -12145,7 +12139,7 @@
       "Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror\u00b2`.",
       "Deprecated: Found `require('request')` in file `node_helper.js`: Replace it with built-in fetch."
     ],
-    "last_commit": "2018-01-12"
+    "last_commit": "2023-12-02"
   },
   {
     "name": "MMM-PGA",
@@ -13051,15 +13045,13 @@
     "maintainer": "KristjanESPERANTO",
     "maintainerURL": "",
     "description": "Displays departure information for public transport in Germany. The <a target=\"_blank\" href=\"https://github.com/public-transport/hafas-client\">hafas-client</a> is used to query the information. The interface of the Deutsche Bahn is used as standard, this includes most of the local networks with buses, trams, etc. However, other hafas interfaces can also be used.",
-    "issues": [
-      "Information: There are updates for 1 dependencie(s):\n   -  eslint  ^8.54.0  \u2192  ^8.55.0\n"
-    ],
+    "issues": [],
     "tags": [
       "public transport"
     ],
     "license": "MIT",
     "image": "img-Goerdelerring_all.jpg",
-    "last_commit": "2023-11-27"
+    "last_commit": "2023-12-02"
   },
   {
     "name": "MMM-PublicTransportVVO",

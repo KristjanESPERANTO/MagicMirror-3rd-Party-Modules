@@ -2814,14 +2814,17 @@
   },
   {
     "name": "MMM-EasyPix",
-    "url": "https://github.com/mykle1/MMM-EasyPix",
-    "id": "mykle1/MMM-EasyPix",
-    "maintainer": "mykle1",
+    "url": "https://github.com/KristjanESPERANTO/MMM-EasyPix",
+    "id": "KristjanESPERANTO/MMM-EasyPix",
+    "maintainer": "KristjanESPERANTO",
     "maintainerURL": "",
     "description": "The easiest way to show pictures on your mirror.",
-    "issues": [
-      "There is no `package.json`. We need this file to gather information about the module for the module list page."
-    ]
+    "issues": [],
+    "tags": [
+      "picture"
+    ],
+    "license": "MIT",
+    "image": "pix-18.jpg"
   },
   {
     "name": "MMM-Ecobee",
@@ -3147,9 +3150,9 @@
   },
   {
     "name": "MMM-EveryNews",
-    "url": "https://github.com/mykle1/MMM-EveryNews",
-    "id": "mykle1/MMM-EveryNews",
-    "maintainer": "mykle1",
+    "url": "https://github.com/themox/MMM-EveryNews",
+    "id": "themox/MMM-EveryNews",
+    "maintainer": "themox",
     "maintainerURL": "",
     "description": "Over 30,000 News sources! Up to 10 at once. Simplified addition to your config entry.",
     "issues": [
@@ -9390,9 +9393,9 @@
   },
   {
     "name": "MMM-PetFinder",
-    "url": "https://github.com/mykle1/MMM-PetFinder",
-    "id": "mykle1/MMM-PetFinder",
-    "maintainer": "mykle1",
+    "url": "https://github.com/PhantomOffKanagawa/MMM-PetFinder",
+    "id": "PhantomOffKanagawa/MMM-PetFinder",
+    "maintainer": "PhantomOffKanagawa",
     "maintainerURL": "",
     "description": "All types of pets for adoption. Cat, dog, bird, horse, rabbit, reptile, smallfurry, barnyard.",
     "issues": [
