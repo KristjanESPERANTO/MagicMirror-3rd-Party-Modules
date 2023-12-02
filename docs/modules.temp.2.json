@@ -103,31 +103,6 @@
     "image": ".examples-example.jpg"
   },
   {
-    "name": "MMM-AfterShip",
-    "url": "https://github.com/mykle1/MMM-AfterShip",
-    "id": "mykle1/MMM-AfterShip",
-    "maintainer": "mykle1",
-    "maintainerURL": "",
-    "description": "Track all your deliveries in one module. Supports 428 couriers worldwide.",
-    "issues": [
-      "There is no `package.json`. We need this file to gather information about the module for the module list page."
-    ]
-  },
-  {
-    "name": "MMM-AfterShip",
-    "url": "https://github.com/vanhoekd/MMM-AfterShip",
-    "id": "vanhoekd/MMM-AfterShip",
-    "maintainer": "vanhoekd",
-    "maintainerURL": "",
-    "description": "Displays all your tracked parcels from AfterShip.",
-    "issues": [
-      "`package.json` issue: No repository field.",
-      "There are no keywords in 'package.json'. We would use them as tags on the module list page."
-    ],
-    "license": "MIT",
-    "image": "MMM-AfterShip.PNG"
-  },
-  {
     "name": "MMM-air-raid-monitor-ua",
     "url": "https://github.com/PavlenkoM/MMM-air-raid-monitor-ua",
     "id": "PavlenkoM/MMM-air-raid-monitor-ua",
@@ -973,17 +948,6 @@
     "image": "images-1.jpg"
   },
   {
-    "name": "MMM-BMW",
-    "url": "https://github.com/mykle1/MMM-BMW",
-    "id": "mykle1/MMM-BMW",
-    "maintainer": "mykle1",
-    "maintainerURL": "",
-    "description": "Minimalist Weather for the bottom_bar or thirds position of your MagicMirror².",
-    "issues": [
-      "There is no `package.json`. We need this file to gather information about the module for the module list page."
-    ]
-  },
-  {
     "name": "MMM-BMW-CC",
     "url": "https://github.com/mykle1/MMM-BMW-CC",
     "id": "mykle1/MMM-BMW-CC",
@@ -992,7 +956,8 @@
     "description": "Weather designed for bottom bar position, now using the ClimaCell API.",
     "issues": [
       "There is no `package.json`. We need this file to gather information about the module for the module list page."
-    ]
+    ],
+    "outdated": "Abandoned. The API endpoint changed. This module needs updated, but the author is inactive."
   },
   {
     "name": "MMM-BMW-DS",
@@ -1019,10 +984,10 @@
   },
   {
     "name": "MMM-BMWConnected",
-    "url": "https://github.com/hdurdle/MMM-BMWConnected",
-    "id": "hdurdle/MMM-BMWConnected",
-    "maintainer": "hdurdle",
-    "maintainerURL": "https://github.com/hdurdle",
+    "url": "https://github.com/jannekalliola/MMM-BMWConnected",
+    "id": "jannekalliola/MMM-BMWConnected",
+    "maintainer": "jannekalliola",
+    "maintainerURL": "https://github.com/jannekalliola",
     "description": "Displays information about your BMW from the BMW Connected Drive API.",
     "issues": [
       "There are no keywords in 'package.json'. We would use them as tags on the module list page."
@@ -1592,7 +1557,8 @@
     "description": "World Population and demographics, by age and sex, or by individual country. 1950 - 2100.",
     "issues": [
       "There is no `package.json`. We need this file to gather information about the module for the module list page."
-    ]
+    ],
+    "outdated": "Abandoned. The API endpoint changed. There is a PR to fix that, but the author is inactive."
   },
   {
     "name": "MMM-CHAMPIONSQUEUE-LEADERBOARD",
@@ -2126,6 +2092,17 @@
     "maintainer": "MMRIZE",
     "maintainerURL": "",
     "description": "Custom element <code>mm-time</code> launcher.",
+    "issues": [
+      "There is no `package.json`. We need this file to gather information about the module for the module list page."
+    ]
+  },
+  {
+    "name": "MMM-CustomMessage",
+    "url": "https://github.com/jpcaldwell30/MMM-CustomMessage",
+    "id": "jpcaldwell30/MMM-CustomMessage",
+    "maintainer": "jpcaldwell30",
+    "maintainerURL": "",
+    "description": "Post a message to your mirror either by MagicMirror API post or manual update (entering text onscreen).",
     "issues": [
       "There is no `package.json`. We need this file to gather information about the module for the module list page."
     ]
@@ -2818,7 +2795,8 @@
     "description": "Live video of the Earth from the International Space Station.",
     "issues": [
       "There is no `package.json`. We need this file to gather information about the module for the module list page."
-    ]
+    ],
+    "outdated": "Abandoned. The URL to fetch the video dooesn't work anymore. The author is inactive."
   },
   {
     "name": "MMM-Earthquake",
@@ -2830,6 +2808,7 @@
     "issues": [
       "There are no keywords in 'package.json'. We would use them as tags on the module list page."
     ],
+    "outdated": "Deprecated. API is disabled.",
     "license": "MIT",
     "image": "pix-1.JPG"
   },
@@ -3347,6 +3326,17 @@
     "maintainer": "eouia",
     "maintainerURL": "",
     "description": "'Likes' counter of Facebook page.",
+    "issues": [
+      "There is no `package.json`. We need this file to gather information about the module for the module list page."
+    ]
+  },
+  {
+    "name": "MMM-FearAndGreedIndex",
+    "url": "https://github.com/Pip1405/MMM-FearAndGreedIndex",
+    "id": "Pip1405/MMM-FearAndGreedIndex",
+    "maintainer": "Pip1405",
+    "maintainerURL": "",
+    "description": "Displays color-coded Fear &amp; Greed Index Values from CNBC for Stocks and from Alternative.me for Crypto.",
     "issues": [
       "There is no `package.json`. We need this file to gather information about the module for the module list page."
     ]
@@ -8548,6 +8538,7 @@
     "maintainerURL": "",
     "description": "Real-time bus tracking for NJ Transit.",
     "issues": [],
+    "outdated": "Deprecated. Old API doesn't work anymore. There is a new API, but it's not clear if keys are available. 2023-12-01.",
     "tags": [
       "public transport",
       "nj transit bus"
@@ -9253,7 +9244,7 @@
     "id": "martinkooij/MMM-Parcel",
     "maintainer": "martinkooij",
     "maintainerURL": "",
-    "description": "<em>RENEWED 2021</em> Glance over your parcel deliveries on your Mirror, track your shipments. &gt;700 couriers supported (Integrating via Tracktry.com (free) or AfterShip.com (paid &amp; legacy free)). Various layout options depending on your need. With auto translate feature to your language.",
+    "description": "Glance over your parcel deliveries on your mirror, track your shipments. &gt;700 couriers supported (Integrating via Tracktry.com (free) or AfterShip.com (paid &amp; legacy free)). Various layout options depending on your need. With auto translate feature to your language.",
     "issues": [
       "There are no keywords in 'package.json'. We would use them as tags on the module list page."
     ],
@@ -12683,17 +12674,6 @@
     "image": "1x1px.jpg"
   },
   {
-    "name": "MMM-ToDoLive",
-    "url": "https://github.com/mykle1/MMM-ToDoLive",
-    "id": "mykle1/MMM-ToDoLive",
-    "maintainer": "mykle1",
-    "maintainerURL": "",
-    "description": "Edit ToDo's, lists, reminders, messages etc. without quitting or restarting your mirror.",
-    "issues": [
-      "There is no `package.json`. We need this file to gather information about the module for the module list page."
-    ]
-  },
-  {
     "name": "MMM-TomTomTraffic",
     "url": "https://github.com/bendardenne/MMM-TomTomTraffic",
     "id": "bendardenne/MMM-TomTomTraffic",
@@ -14113,6 +14093,17 @@
     "maintainer": "RedNax67",
     "maintainerURL": "",
     "description": "Display weather based on wunderground API.",
+    "issues": [
+      "There is no `package.json`. We need this file to gather information about the module for the module list page."
+    ]
+  },
+  {
+    "name": "MMM-wundergroundBar",
+    "url": "https://github.com/Fifteen15Studios/MMM-wundergroundBar",
+    "id": "Fifteen15Studios/MMM-wundergroundBar",
+    "maintainer": "Fifteen15Studios",
+    "maintainerURL": "",
+    "description": "Minimalist Weather for the bottom_bar or thirds position of your mirror.",
     "issues": [
       "There is no `package.json`. We need this file to gather information about the module for the module list page."
     ]
