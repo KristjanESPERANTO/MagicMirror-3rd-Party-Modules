@@ -194,7 +194,8 @@ def check_modules():
                 "Error: It appears that the repository could not be cloned. Check the URL."
             ]
 
-        if len(module["issues"]) < 2:
+        package_json = Path(f"{module_directory_path}/package.json")
+        if len(module["issues"]) < 2 and package_json.is_file():
             updates_string = (
                 subprocess.run(
                     f"ncu --cwd {module_directory_path}",
