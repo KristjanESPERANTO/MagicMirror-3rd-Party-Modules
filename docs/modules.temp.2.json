@@ -321,8 +321,9 @@
     "maintainer": "codetheweb",
     "maintainerURL": "",
     "description": "Module to display a list from the AnyList app.",
-    "issues": [],
-    "tags": [],
+    "issues": [
+      "There are no specific keywords in 'package.json'. We would use them as tags on the module list page. Add a few meaningful terms to the keywords in the package.json. Not just “magicmirror” or “module”."
+    ],
     "license": "MIT",
     "image": "anylist.jpg"
   },
@@ -1931,8 +1932,9 @@
     "maintainer": "magic21nrw",
     "maintainerURL": "",
     "description": "German Ampel for Incidence Value for your City.",
-    "issues": [],
-    "tags": [],
+    "issues": [
+      "There are no specific keywords in 'package.json'. We would use them as tags on the module list page. Add a few meaningful terms to the keywords in the package.json. Not just “magicmirror” or “module”."
+    ],
     "license": "ISC",
     "image": "screenshot.jpg"
   },
@@ -2611,9 +2613,9 @@
     "maintainerURL": "https://github.com/drventure",
     "description": "Display status of mountain bike trails via the trailforks.com website.",
     "issues": [
-      "`package.json` issue: No repository field."
+      "`package.json` issue: No repository field.",
+      "There are no specific keywords in 'package.json'. We would use them as tags on the module list page. Add a few meaningful terms to the keywords in the package.json. Not just “magicmirror” or “module”."
     ],
-    "tags": [],
     "license": "ISC",
     "image": "MMM-Dorba-Trails.jpg"
   },
@@ -2624,8 +2626,9 @@
     "maintainer": "Ax-LED",
     "maintainerURL": "",
     "description": "Connect a Dreambox or a Enigma2 Receiver (like VU or VU+) to MagicMirror² and stream stations via omxplayer.",
-    "issues": [],
-    "tags": [],
+    "issues": [
+      "There are no specific keywords in 'package.json'. We would use them as tags on the module list page. Add a few meaningful terms to the keywords in the package.json. Not just “magicmirror” or “module”."
+    ],
     "license": "ISC",
     "image": "MMM-Dreambox_screenshot1.jpg"
   },
@@ -2637,9 +2640,9 @@
     "maintainerURL": "",
     "description": "Module which shows the latest popular <a target=\"_blank\" href=\"https://dribbble.com\">dribbble</a> shots.",
     "issues": [
-      "`package.json` issue: No description"
+      "`package.json` issue: No description",
+      "There are no specific keywords in 'package.json'. We would use them as tags on the module list page. Add a few meaningful terms to the keywords in the package.json. Not just “magicmirror” or “module”."
     ],
-    "tags": [],
     "license": "ISC",
     "image": "media-01-developer.dribbble.com.jpg"
   },
@@ -3085,9 +3088,9 @@
     "issues": [
       "`package.json` issue: No description",
       "`package.json` issue: No repository field.",
+      "There are no specific keywords in 'package.json'. We would use them as tags on the module list page. Add a few meaningful terms to the keywords in the package.json. Not just “magicmirror” or “module”.",
       "No image found."
     ],
-    "tags": [],
     "license": "ISC"
   },
   {
@@ -3547,9 +3550,9 @@
     "issues": [
       "`package.json` issue: No description",
       "`package.json` issue: No repository field.",
+      "There are no specific keywords in 'package.json'. We would use them as tags on the module list page. Add a few meaningful terms to the keywords in the package.json. Not just “magicmirror” or “module”.",
       "No image found."
     ],
-    "tags": [],
     "license": "ISC"
   },
   {
@@ -4561,9 +4564,9 @@
     "maintainerURL": "",
     "description": "Gyeonggi-Do, South Korea Bus Location ETA Time, Remaining Seat information.",
     "issues": [
+      "There are no specific keywords in 'package.json'. We would use them as tags on the module list page. Add a few meaningful terms to the keywords in the package.json. Not just “magicmirror” or “module”.",
       "No image found."
     ],
-    "tags": [],
     "license": "MIT"
   },
   {
@@ -4883,8 +4886,9 @@
     "maintainer": "djerik",
     "maintainerURL": "https://github.com/djerik",
     "description": "Shows status such as remaining program time of your Home Connect appliances.",
-    "issues": [],
-    "tags": [],
+    "issues": [
+      "There are no specific keywords in 'package.json'. We would use them as tags on the module list page. Add a few meaningful terms to the keywords in the package.json. Not just “magicmirror” or “module”."
+    ],
     "license": "ISC",
     "image": "HomeConnectDeveloperApplicationConfiguration.jpg"
   },
@@ -5090,8 +5094,9 @@
     "maintainer": "nixnuex",
     "maintainerURL": "",
     "description": "Display non-completed ToDos from an iCal source like CalDAV or the Task App in ownCloud or Nextcloud.",
-    "issues": [],
-    "tags": [],
+    "issues": [
+      "There are no specific keywords in 'package.json'. We would use them as tags on the module list page. Add a few meaningful terms to the keywords in the package.json. Not just “magicmirror” or “module”."
+    ],
     "license": "ISC",
     "image": "MMM-iCal-ToDo.jpg"
   },
@@ -6273,8 +6278,9 @@
     "maintainer": "Dobherrmann",
     "maintainerURL": "",
     "description": "Displays the daily bible verse from ther german “Losungstext” and the additional teaching text.",
-    "issues": [],
-    "tags": [],
+    "issues": [
+      "There are no specific keywords in 'package.json'. We would use them as tags on the module list page. Add a few meaningful terms to the keywords in the package.json. Not just “magicmirror” or “module”."
+    ],
     "license": "ISC",
     "image": "Example.JPG"
   },
@@ -7047,9 +7053,9 @@
     "issues": [
       "`package.json` issue: No repository field.",
       "`package.json` issue: license should be a valid SPDX license expression",
+      "There are no specific keywords in 'package.json'. We would use them as tags on the module list page. Add a few meaningful terms to the keywords in the package.json. Not just “magicmirror” or “module”.",
       "No compatible or wrong license field in 'package.json'. Without that, we can't use an image."
     ],
-    "tags": [],
     "license": "GPLv3"
   },
   {
@@ -7090,9 +7096,9 @@
     "description": "Shows/hides modules and turns on/off hdmi display based on mqtt command.",
     "issues": [
       "`package.json` issue: No repository field.",
+      "There are no specific keywords in 'package.json'. We would use them as tags on the module list page. Add a few meaningful terms to the keywords in the package.json. Not just “magicmirror” or “module”.",
       "No image found."
     ],
-    "tags": [],
     "license": "MIT"
   },
   {
@@ -7155,8 +7161,9 @@
     "maintainer": "paphko",
     "maintainerURL": "",
     "description": "Display a weather diagram provided by yr.no.",
-    "issues": [],
-    "tags": [],
+    "issues": [
+      "There are no specific keywords in 'package.json'. We would use them as tags on the module list page. Add a few meaningful terms to the keywords in the package.json. Not just “magicmirror” or “module”."
+    ],
     "license": "ISC",
     "image": "Screenshot1.jpg"
   },
@@ -7897,9 +7904,9 @@
     "description": "Display step by step directions to a location and provide an estimated time of arrival using Google Maps API.",
     "issues": [
       "`package.json` issue: No description",
-      "`package.json` issue: No repository field."
+      "`package.json` issue: No repository field.",
+      "There are no specific keywords in 'package.json'. We would use them as tags on the module list page. Add a few meaningful terms to the keywords in the package.json. Not just “magicmirror” or “module”."
     ],
-    "tags": [],
     "license": "ISC",
     "image": "example.jpg"
   },
@@ -8446,9 +8453,9 @@
     "issues": [
       "`package.json` issue: No description",
       "`package.json` issue: No repository field.",
+      "There are no specific keywords in 'package.json'. We would use them as tags on the module list page. Add a few meaningful terms to the keywords in the package.json. Not just “magicmirror” or “module”.",
       "No image found."
     ],
-    "tags": [],
     "license": "ISC"
   },
   {
@@ -8493,8 +8500,9 @@
     "maintainer": "bureus",
     "maintainerURL": "",
     "description": "Keep track of blood glucose levels with ease thru your MagicMirror².",
-    "issues": [],
-    "tags": [],
+    "issues": [
+      "There are no specific keywords in 'package.json'. We would use them as tags on the module list page. Add a few meaningful terms to the keywords in the package.json. Not just “magicmirror” or “module”."
+    ],
     "license": "MIT",
     "image": "docs-screenshot-2.PNG"
   },
@@ -8599,8 +8607,9 @@
     "maintainer": "cowboysdude",
     "maintainerURL": "https://github.com/cowboysdude",
     "description": "Different providers for users to choose from. Shows current plus 3 day forecast. Mouseover shows forecast, with Air, UV, Humidity, Sunrise and Set.",
-    "issues": [],
-    "tags": [],
+    "issues": [
+      "There are no specific keywords in 'package.json'. We would use them as tags on the module list page. Add a few meaningful terms to the keywords in the package.json. Not just “magicmirror” or “module”."
+    ],
     "license": "ISC",
     "image": "examples-1.jpg"
   },
@@ -8905,7 +8914,8 @@
     "description": "Use OneTracker app to deliveries/packages by forwarding from any email address.",
     "issues": [
       "There is no `package.json`. We need this file to gather information about the module for the module list page."
-    ]
+    ],
+    "outdated": "Deprecated. Module doesn't work without workaround (<code>npm install node-fetch@2</code>) and author doesn't work on it anymore. Maybe he would react to a PR. Status as of 2023-12-03."
   },
   {
     "name": "MMM-Online-State",
@@ -9931,8 +9941,9 @@
     "maintainer": "bureus",
     "maintainerURL": "",
     "description": "Automatically track and trace PostNords letters, parcels and pallets with your phone number or email.",
-    "issues": [],
-    "tags": [],
+    "issues": [
+      "There are no specific keywords in 'package.json'. We would use them as tags on the module list page. Add a few meaningful terms to the keywords in the package.json. Not just “magicmirror” or “module”."
+    ],
     "license": "ISC",
     "image": "docs-screenshot.jpg"
   },
@@ -11353,8 +11364,9 @@
     "maintainer": "bureus",
     "maintainerURL": "",
     "description": "Display stands of Svenska Hockey Ligan (SHL).",
-    "issues": [],
-    "tags": [],
+    "issues": [
+      "There are no specific keywords in 'package.json'. We would use them as tags on the module list page. Add a few meaningful terms to the keywords in the package.json. Not just “magicmirror” or “module”."
+    ],
     "license": "MIT",
     "image": "docs-screenshot.PNG"
   },
@@ -11799,8 +11811,9 @@
     "maintainer": "CFenner",
     "maintainerURL": "",
     "description": "Display the currently playing track of your Sonos system.",
-    "issues": [],
-    "tags": [],
+    "issues": [
+      "There are no specific keywords in 'package.json'. We would use them as tags on the module list page. Add a few meaningful terms to the keywords in the package.json. Not just “magicmirror” or “module”."
+    ],
     "license": "MIT",
     "image": ".github-preview.jpg"
   },
@@ -12095,8 +12108,9 @@
     "maintainer": "linuxtuxie",
     "maintainerURL": "",
     "description": "Display the current, monthly and yearly power output of your SunnyPortal Solar Panels.(<a target=\"_blank\" href=\"https://www.sunnyportal.com\">https://www.sunnyportal.com</a>).",
-    "issues": [],
-    "tags": [],
+    "issues": [
+      "There are no specific keywords in 'package.json'. We would use them as tags on the module list page. Add a few meaningful terms to the keywords in the package.json. Not just “magicmirror” or “module”."
+    ],
     "license": "MIT",
     "image": "images-SunnyPortal1.jpg"
   },
@@ -12643,8 +12657,9 @@
     "maintainer": "jaumebosch",
     "maintainerURL": "https://github.com/jaumebosch",
     "description": "Display Barcelona's TMB bus times by line and stop.",
-    "issues": [],
-    "tags": [],
+    "issues": [
+      "There are no specific keywords in 'package.json'. We would use them as tags on the module list page. Add a few meaningful terms to the keywords in the package.json. Not just “magicmirror” or “module”."
+    ],
     "license": "MIT",
     "image": "images-screenshot.jpg"
   },
@@ -12833,9 +12848,9 @@
     "issues": [
       "`package.json` issue: No description",
       "`package.json` issue: No repository field.",
+      "There are no specific keywords in 'package.json'. We would use them as tags on the module list page. Add a few meaningful terms to the keywords in the package.json. Not just “magicmirror” or “module”.",
       "No image found."
     ],
-    "tags": [],
     "license": "ISC"
   },
   {
@@ -12943,9 +12958,9 @@
     "maintainerURL": "https://github.com/robotfishe",
     "description": "Pull charging and range data from your EV via Tronity Platform.",
     "issues": [
+      "There are no specific keywords in 'package.json'. We would use them as tags on the module list page. Add a few meaningful terms to the keywords in the package.json. Not just “magicmirror” or “module”.",
       "No image found."
     ],
-    "tags": [],
     "license": "MIT"
   },
   {
@@ -13113,8 +13128,9 @@
     "maintainer": "AndyHazz",
     "maintainerURL": "",
     "description": "This module displays LIVE UK information about a specific bus stop and the routes that serve it.",
-    "issues": [],
-    "tags": [],
+    "issues": [
+      "There are no specific keywords in 'package.json'. We would use them as tags on the module list page. Add a few meaningful terms to the keywords in the package.json. Not just “magicmirror” or “module”."
+    ],
     "license": "MIT",
     "image": "images-Current_version.jpg"
   },
@@ -13302,8 +13318,9 @@
     "maintainer": "Xkhi",
     "maintainerURL": "",
     "description": "Display public transport operated by Västtrafik for western part of Sweden, including Gothenburg. This version is updated to support multi-filtering and Vasttrafik's API version 4.",
-    "issues": [],
-    "tags": [],
+    "issues": [
+      "There are no specific keywords in 'package.json'. We would use them as tags on the module list page. Add a few meaningful terms to the keywords in the package.json. Not just “magicmirror” or “module”."
+    ],
     "license": "MIT",
     "image": "docs-screenshot.PNG"
   },
@@ -13314,8 +13331,9 @@
     "maintainer": "bureus",
     "maintainerURL": "",
     "description": "Display public transport operated by Västtrafik for western part of Sweden, including Gothenburg. Uses Vasttrafik's API version 2.",
-    "issues": [],
-    "tags": [],
+    "issues": [
+      "There are no specific keywords in 'package.json'. We would use them as tags on the module list page. Add a few meaningful terms to the keywords in the package.json. Not just “magicmirror” or “module”."
+    ],
     "license": "MIT",
     "image": "docs-screenshot.PNG"
   },
@@ -13993,9 +14011,9 @@
     "maintainerURL": "",
     "description": "Displays the WordGenius.com word of the day along with its part of speech, pronunciation, definition, and occasionally, its origin.",
     "issues": [
-      "`package.json` issue: No repository field."
+      "`package.json` issue: No repository field.",
+      "There are no specific keywords in 'package.json'. We would use them as tags on the module list page. Add a few meaningful terms to the keywords in the package.json. Not just “magicmirror” or “module”."
     ],
-    "tags": [],
     "license": "MIT",
     "image": "MMM-WordGenius.jpg"
   },
@@ -14342,9 +14360,9 @@
     "description": "Displays daily Jewish calendar information.",
     "issues": [
       "`package.json` issue: No description",
-      "`package.json` issue: No repository field."
+      "`package.json` issue: No repository field.",
+      "There are no specific keywords in 'package.json'. We would use them as tags on the module list page. Add a few meaningful terms to the keywords in the package.json. Not just “magicmirror” or “module”."
     ],
-    "tags": [],
     "license": "ISC",
     "image": "alternateScreenshot.jpg"
   }

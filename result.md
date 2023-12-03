@@ -1,6 +1,6 @@
 # Result of the module analysis
 
-Last update: 2023-12-02 22:52:24 UTC
+Last update: 2023-12-03 10:09:17 UTC
 
 ## Statistics
 
@@ -9,7 +9,7 @@ Last update: 2023-12-02 22:52:24 UTC
 | modules analyzed     |   1069   |
 | maintainer           |    616   |
 | modules with issues  |   1044   |
-| issues               |   4023   |
+| issues               |   4016   |
 | modules at github    |   1060   |
 | modules at gitlab    |      8   |
 | modules at bitbucket |      1   |
@@ -168,9 +168,10 @@ Last update: 2023-12-02 22:52:24 UTC
 
 ### [MMM-AnyList by codetheweb](https://github.com/codetheweb/MMM-AnyList)
 
-1. Typo: Found `Magic Mirror` in file `README.md`: Replace it with `MagicMirror²`.
-2. Typo: Found `Magic Mirror` in file `package.json`: Replace it with `MagicMirror²`.
-3. Warning: No LICENSE file.
+1. There are no specific keywords in 'package.json'. We would use them as tags on the module list page. Add a few meaningful terms to the keywords in the package.json. Not just “magicmirror” or “module”.
+2. Typo: Found `Magic Mirror` in file `README.md`: Replace it with `MagicMirror²`.
+3. Typo: Found `Magic Mirror` in file `package.json`: Replace it with `MagicMirror²`.
+4. Warning: No LICENSE file.
 
 ### [MMM-AoC by JonasTriki](https://github.com/JonasTriki/MMM-AoC)
 
@@ -288,12 +289,6 @@ Last update: 2023-12-02 22:52:24 UTC
 ### [MMM-AutoDimmer by Fifteen15Studios](https://github.com/Fifteen15Studios/MMM-AutoDimmer)
 
 1. There is no `package.json`. We need this file to gather information about the module for the module list page.
-2. Information: There are updates for 4 dependencie(s):
-   -  eslint                  ^8.54.0  →  ^8.55.0
-   -  eslint-config-prettier   ^9.0.0  →   ^9.1.0
-   -  marked                  ^10.0.0  →  ^11.0.0
-   -  sharp                   ^0.32.6  →  ^0.33.0
-
 
 ### [MMM-AvfallshentingOslo by blixhavn](https://github.com/blixhavn/MMM-AvfallshentingOslo)
 
@@ -564,12 +559,6 @@ Last update: 2023-12-02 22:52:24 UTC
 ### [MMM-BornBeforeDate by justjim1220](https://github.com/justjim1220/MMM-BornBeforeDate)
 
 1. There is no `package.json`. We need this file to gather information about the module for the module list page.
-2. Information: There are updates for 4 dependencie(s):
-   -  eslint                  ^8.54.0  →  ^8.55.0
-   -  eslint-config-prettier   ^9.0.0  →   ^9.1.0
-   -  marked                  ^10.0.0  →  ^11.0.0
-   -  sharp                   ^0.32.6  →  ^0.33.0
-
 
 ### [MMM-BoschSmartHome by jalibu](https://github.com/jalibu/MMM-BoschSmartHome)
 
@@ -949,12 +938,6 @@ Last update: 2023-12-02 22:52:24 UTC
 ### [MMM-CountEvents by MMRIZE](https://github.com/MMRIZE/MMM-CountEvents)
 
 1. There is no `package.json`. We need this file to gather information about the module for the module list page.
-2. Information: There are updates for 4 dependencie(s):
-   -  eslint                  ^8.54.0  →  ^8.55.0
-   -  eslint-config-prettier   ^9.0.0  →   ^9.1.0
-   -  marked                  ^10.0.0  →  ^11.0.0
-   -  sharp                   ^0.32.6  →  ^0.33.0
-
 
 ### [MMM-CountUP by bibaldo](https://github.com/bibaldo/MMM-CountUP)
 
@@ -971,12 +954,6 @@ Last update: 2023-12-02 22:52:24 UTC
 ### [MMM-CoupleDays by wiesty](https://github.com/wiesty/MMM-CoupleDays)
 
 1. There is no `package.json`. We need this file to gather information about the module for the module list page.
-2. Information: There are updates for 4 dependencie(s):
-   -  eslint                  ^8.54.0  →  ^8.55.0
-   -  eslint-config-prettier   ^9.0.0  →   ^9.1.0
-   -  marked                  ^10.0.0  →  ^11.0.0
-   -  sharp                   ^0.32.6  →  ^0.33.0
-
 
 ### [MMM-covid19 by 0m4r](https://github.com/0m4r/MMM-covid19)
 
@@ -998,10 +975,11 @@ Last update: 2023-12-02 22:52:24 UTC
 
 ### [MMM-COVID19-AMPEL by magic21nrw](https://github.com/magic21nrw/MMM-COVID19-AMPEL)
 
-1. Typo: Found `Magic Mirror` in file `MMM-COVID19-AMPEL.js`: Replace it with `MagicMirror²`.
-2. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
-3. Recommendation: Found `'node-fetch'` in file `node_helper.js`: Replace it with built-in fetch.
-4. Recommendation: Found `"node-fetch"` in file `package.json`: Replace it with built-in fetch.
+1. There are no specific keywords in 'package.json'. We would use them as tags on the module list page. Add a few meaningful terms to the keywords in the package.json. Not just “magicmirror” or “module”.
+2. Typo: Found `Magic Mirror` in file `MMM-COVID19-AMPEL.js`: Replace it with `MagicMirror²`.
+3. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
+4. Recommendation: Found `'node-fetch'` in file `node_helper.js`: Replace it with built-in fetch.
+5. Recommendation: Found `"node-fetch"` in file `package.json`: Replace it with built-in fetch.
 
 ### [MMM-Covid19-Vaccination by fhinder](https://github.com/fhinder/MMM-Covid19-Vaccination)
 
@@ -1084,12 +1062,6 @@ Last update: 2023-12-02 22:52:24 UTC
 ### [MMM-CustomElementTime by MMRIZE](https://github.com/MMRIZE/MMM-CustomElementTime)
 
 1. There is no `package.json`. We need this file to gather information about the module for the module list page.
-2. Information: There are updates for 4 dependencie(s):
-   -  eslint                  ^8.54.0  →  ^8.55.0
-   -  eslint-config-prettier   ^9.0.0  →   ^9.1.0
-   -  marked                  ^10.0.0  →  ^11.0.0
-   -  sharp                   ^0.32.6  →  ^0.33.0
-
 
 ### [MMM-CustomMessage by jpcaldwell30](https://github.com/jpcaldwell30/MMM-CustomMessage)
 
@@ -1162,12 +1134,6 @@ Last update: 2023-12-02 22:52:24 UTC
 ### [MMM-DailyAlarm by eouia](https://github.com/eouia/MMM-DailyAlarm)
 
 1. There is no `package.json`. We need this file to gather information about the module for the module list page.
-2. Information: There are updates for 4 dependencie(s):
-   -  eslint                  ^8.54.0  →  ^8.55.0
-   -  eslint-config-prettier   ^9.0.0  →   ^9.1.0
-   -  marked                  ^10.0.0  →  ^11.0.0
-   -  sharp                   ^0.32.6  →  ^0.33.0
-
 
 ### [MMM-DailyBibleVerse by arthurgarzajr](https://github.com/arthurgarzajr/MMM-DailyBibleVerse)
 
@@ -1319,12 +1285,6 @@ Last update: 2023-12-02 22:52:24 UTC
 ### [MMM-DigClock by justjim1220](https://github.com/justjim1220/MMM-DigClock)
 
 1. There is no `package.json`. We need this file to gather information about the module for the module list page.
-2. Information: There are updates for 4 dependencie(s):
-   -  eslint                  ^8.54.0  →  ^8.55.0
-   -  eslint-config-prettier   ^9.0.0  →   ^9.1.0
-   -  marked                  ^10.0.0  →  ^11.0.0
-   -  sharp                   ^0.32.6  →  ^0.33.0
-
 
 ### [MMM-DigitalAlarmClock by justjim1220](https://github.com/justjim1220/MMM-DigitalAlarmClock)
 
@@ -1379,28 +1339,23 @@ Last update: 2023-12-02 22:52:24 UTC
 ### [MMM-Dorba-Trails by drventure](https://github.com/drventure/MMM-Dorba-Trails)
 
 1. `package.json` issue: No repository field.
-2. Information: There are updates for 1 dependencie(s):
-   -  jsdom  ^22.1.0  →  ^23.0.1
-
+2. There are no specific keywords in 'package.json'. We would use them as tags on the module list page. Add a few meaningful terms to the keywords in the package.json. Not just “magicmirror” or “module”.
 
 ### [MMM-Dreambox by Ax-LED](https://github.com/Ax-LED/MMM-Dreambox)
 
-1. Typo: Found `Magic Mirror` in file `MMM-Dreambox.js`: Replace it with `MagicMirror²`.
-2. Deprecated: Found `omxplayer` in file `README.md`: Try to replace it with `vlc`.
-3. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
-4. Deprecated: Found `require('request')` in file `node_helper.js`: Replace it with built-in fetch.
-5. Deprecated: Found `omxplayer` in file `node_helper.js`: Try to replace it with `vlc`.
-6. Deprecated: Found `omxplayer` in file `package.json`: Try to replace it with `vlc`.
-7. Warning: No LICENSE file.
+1. There are no specific keywords in 'package.json'. We would use them as tags on the module list page. Add a few meaningful terms to the keywords in the package.json. Not just “magicmirror” or “module”.
+2. Typo: Found `Magic Mirror` in file `MMM-Dreambox.js`: Replace it with `MagicMirror²`.
+3. Deprecated: Found `omxplayer` in file `README.md`: Try to replace it with `vlc`.
+4. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
+5. Deprecated: Found `require('request')` in file `node_helper.js`: Replace it with built-in fetch.
+6. Deprecated: Found `omxplayer` in file `node_helper.js`: Try to replace it with `vlc`.
+7. Deprecated: Found `omxplayer` in file `package.json`: Try to replace it with `vlc`.
+8. Warning: No LICENSE file.
 
 ### [MMM-dribbble by marcobiedermann](https://github.com/marcobiedermann/MMM-dribbble)
 
 1. `package.json` issue: No description
-2. Information: There are updates for 3 dependencie(s):
-   -  eslint                     ^4.10.0  →   ^8.55.0
-   -  stylelint                   ^8.2.0  →  ^15.11.0
-   -  stylelint-config-standard  ^17.0.0  →   ^34.0.0
-
+2. There are no specific keywords in 'package.json'. We would use them as tags on the module list page. Add a few meaningful terms to the keywords in the package.json. Not just “magicmirror” or “module”.
 
 ### [MMM-DropboxPictures by MMRIZE](https://github.com/MMRIZE/MMM-DropboxPictures)
 
@@ -1590,9 +1545,10 @@ Last update: 2023-12-02 22:52:24 UTC
 
 1. `package.json` issue: No description
 2. `package.json` issue: No repository field.
-3. No image found.
-4. Recommendation: Found `axios` in file `node_helper.js`: Replace it with built-in fetch.
-5. Recommendation: Found `axios` in file `package.json`: Replace it with built-in fetch.
+3. There are no specific keywords in 'package.json'. We would use them as tags on the module list page. Add a few meaningful terms to the keywords in the package.json. Not just “magicmirror” or “module”.
+4. No image found.
+5. Recommendation: Found `axios` in file `node_helper.js`: Replace it with built-in fetch.
+6. Recommendation: Found `axios` in file `package.json`: Replace it with built-in fetch.
 
 ### [MMM-ethereum by hansman84](https://github.com/hansman84/MMM-ethereum)
 
@@ -1852,8 +1808,9 @@ Last update: 2023-12-02 22:52:24 UTC
 
 1. `package.json` issue: No description
 2. `package.json` issue: No repository field.
-3. No image found.
-4. Deprecated: Found `require('request')` in file `node_helper.js`: Replace it with built-in fetch.
+3. There are no specific keywords in 'package.json'. We would use them as tags on the module list page. Add a few meaningful terms to the keywords in the package.json. Not just “magicmirror” or “module”.
+4. No image found.
+5. Deprecated: Found `require('request')` in file `node_helper.js`: Replace it with built-in fetch.
 
 ### [MMM-flicio by nomis6432](https://github.com/nomis6432/MMM-flicio)
 
@@ -2124,12 +2081,6 @@ Last update: 2023-12-02 22:52:24 UTC
 ### [MMM-GitHub-Monitor by fpfuetsch](https://github.com/fpfuetsch/MMM-GitHub-Monitor)
 
 1. There is no `package.json`. We need this file to gather information about the module for the module list page.
-2. Information: There are updates for 4 dependencie(s):
-   -  eslint                  ^8.54.0  →  ^8.55.0
-   -  eslint-config-prettier   ^9.0.0  →   ^9.1.0
-   -  marked                  ^10.0.0  →  ^11.0.0
-   -  sharp                   ^0.32.6  →  ^0.33.0
-
 
 ### [MMM-GitHub-Notifications by ByteExceptionM](https://github.com/ByteExceptionM/MMM-GitHub-Notifications)
 
@@ -2228,12 +2179,6 @@ Last update: 2023-12-02 22:52:24 UTC
 ### [MMM-googlemaps by sp4ceman](https://github.com/sp4ceman/MMM-googlemaps)
 
 1. There is no `package.json`. We need this file to gather information about the module for the module list page.
-2. Information: There are updates for 4 dependencie(s):
-   -  eslint                  ^8.54.0  →  ^8.55.0
-   -  eslint-config-prettier   ^9.0.0  →   ^9.1.0
-   -  marked                  ^10.0.0  →  ^11.0.0
-   -  sharp                   ^0.32.6  →  ^0.33.0
-
 
 ### [MMM-GoogleMaps-Tracking by MartinGris](https://github.com/MartinGris/MMM-GoogleMaps-Tracking)
 
@@ -2354,10 +2299,11 @@ Last update: 2023-12-02 22:52:24 UTC
 
 ### [MMM-GyeonggiBus by iceship](https://github.com/iceship/MMM-GyeonggiBus)
 
-1. No image found.
-2. Typo: Found `Magic Mirror` in file `MMM-GyeonggiBus.js`: Replace it with `MagicMirror²`.
-3. Typo: Found `Magic Mirror` in file `README.md`: Replace it with `MagicMirror²`.
-4. Deprecated: Found `require('request')` in file `node_helper.js`: Replace it with built-in fetch.
+1. There are no specific keywords in 'package.json'. We would use them as tags on the module list page. Add a few meaningful terms to the keywords in the package.json. Not just “magicmirror” or “module”.
+2. No image found.
+3. Typo: Found `Magic Mirror` in file `MMM-GyeonggiBus.js`: Replace it with `MagicMirror²`.
+4. Typo: Found `Magic Mirror` in file `README.md`: Replace it with `MagicMirror²`.
+5. Deprecated: Found `require('request')` in file `node_helper.js`: Replace it with built-in fetch.
 
 ### [MMM-HabiticaStats by delightedCrow](https://github.com/delightedCrow/MMM-HabiticaStats)
 
@@ -2398,12 +2344,6 @@ Last update: 2023-12-02 22:52:24 UTC
 ### [MMM-HebrewCalendar by neshkoli](https://github.com/neshkoli/MMM-HebrewCalendar)
 
 1. There is no `package.json`. We need this file to gather information about the module for the module list page.
-2. Information: There are updates for 4 dependencie(s):
-   -  eslint                  ^8.54.0  →  ^8.55.0
-   -  eslint-config-prettier   ^9.0.0  →   ^9.1.0
-   -  marked                  ^10.0.0  →  ^11.0.0
-   -  sharp                   ^0.32.6  →  ^0.33.0
-
 
 ### [Hello-Lucy by mykle1](https://github.com/mykle1/Hello-Lucy)
 
@@ -2449,12 +2389,6 @@ Last update: 2023-12-02 22:52:24 UTC
 ### [MMM-Hive by NateBrownProjects](https://github.com/NateBrownProjects/MMM-Hive)
 
 1. There is no `package.json`. We need this file to gather information about the module for the module list page.
-2. Information: There are updates for 4 dependencie(s):
-   -  eslint                  ^8.54.0  →  ^8.55.0
-   -  eslint-config-prettier   ^9.0.0  →   ^9.1.0
-   -  marked                  ^10.0.0  →  ^11.0.0
-   -  sharp                   ^0.32.6  →  ^0.33.0
-
 
 ### [MMM-Hive by flick116](https://github.com/flick116/MMM-Hive)
 
@@ -2475,12 +2409,6 @@ Last update: 2023-12-02 22:52:24 UTC
 ### [MMM-HolidayLights by justjim1220](https://github.com/justjim1220/MMM-HolidayLights)
 
 1. There is no `package.json`. We need this file to gather information about the module for the module list page.
-2. Information: There are updates for 4 dependencie(s):
-   -  eslint                  ^8.54.0  →  ^8.55.0
-   -  eslint-config-prettier   ^9.0.0  →   ^9.1.0
-   -  marked                  ^10.0.0  →  ^11.0.0
-   -  sharp                   ^0.32.6  →  ^0.33.0
-
 
 ### [MMM-home-presence by tomgroenwoldt](https://github.com/tomgroenwoldt/MMM-home-presence)
 
@@ -2527,9 +2455,10 @@ Last update: 2023-12-02 22:52:24 UTC
 
 ### [MMM-HomeConnect by djerik](https://github.com/djerik/MMM-HomeConnect)
 
-1. Typo: Found `Magic Mirror` in file `README.md`: Replace it with `MagicMirror²`.
-2. Typo: Found `Magic Mirror` in file `package.json`: Replace it with `MagicMirror²`.
-3. Warning: No LICENSE file.
+1. There are no specific keywords in 'package.json'. We would use them as tags on the module list page. Add a few meaningful terms to the keywords in the package.json. Not just “magicmirror” or “module”.
+2. Typo: Found `Magic Mirror` in file `README.md`: Replace it with `MagicMirror²`.
+3. Typo: Found `Magic Mirror` in file `package.json`: Replace it with `MagicMirror²`.
+4. Warning: No LICENSE file.
 
 ### [MMM-Homematic by Sickboy78](https://github.com/Sickboy78/MMM-Homematic)
 
@@ -2635,10 +2564,11 @@ Last update: 2023-12-02 22:52:24 UTC
 
 ### [MMM-iCal-ToDo by nixnuex](https://github.com/nixnuex/MMM-iCal-ToDo)
 
-1. Typo: Found `Magic Mirror` in file `MMM-iCal-ToDo.js`: Replace it with `MagicMirror²`.
-2. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
-3. Typo: Found `Magic Mirror` in file `todofetcher.js`: Replace it with `MagicMirror²`.
-4. Deprecated: Found `require('request')` in file `node-ical.js`: Replace it with built-in fetch.
+1. There are no specific keywords in 'package.json'. We would use them as tags on the module list page. Add a few meaningful terms to the keywords in the package.json. Not just “magicmirror” or “module”.
+2. Typo: Found `Magic Mirror` in file `MMM-iCal-ToDo.js`: Replace it with `MagicMirror²`.
+3. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
+4. Typo: Found `Magic Mirror` in file `todofetcher.js`: Replace it with `MagicMirror²`.
+5. Deprecated: Found `require('request')` in file `node-ical.js`: Replace it with built-in fetch.
 
 ### [MMM-iCloud-Client by bitte-ein-bit](https://github.com/bitte-ein-bit/MMM-iCloud-Client)
 
@@ -2941,12 +2871,6 @@ Last update: 2023-12-02 22:52:24 UTC
 ### [MMM-jitsi by nomis6432](https://github.com/nomis6432/MMM-jitsi)
 
 1. There is no `package.json`. We need this file to gather information about the module for the module list page.
-2. Information: There are updates for 4 dependencie(s):
-   -  eslint                  ^8.54.0  →  ^8.55.0
-   -  eslint-config-prettier   ^9.0.0  →   ^9.1.0
-   -  marked                  ^10.0.0  →  ^11.0.0
-   -  sharp                   ^0.32.6  →  ^0.33.0
-
 
 ### [MMM-JNV by michgue](https://github.com/michgue/MMM-JNV)
 
@@ -3065,12 +2989,6 @@ Last update: 2023-12-02 22:52:24 UTC
 ### [MMM-KudaGo by polarbearjngl](https://github.com/polarbearjngl/MMM-KudaGo)
 
 1. There is no `package.json`. We need this file to gather information about the module for the module list page.
-2. Information: There are updates for 4 dependencie(s):
-   -  eslint                  ^8.54.0  →  ^8.55.0
-   -  eslint-config-prettier   ^9.0.0  →   ^9.1.0
-   -  marked                  ^10.0.0  →  ^11.0.0
-   -  sharp                   ^0.32.6  →  ^0.33.0
-
 
 ### [MMM-kudos by thomo](https://github.com/thomo/MMM-kudos)
 
@@ -3226,12 +3144,6 @@ Last update: 2023-12-02 22:52:24 UTC
 ### [MMM-LogExt by MMRIZE](https://github.com/MMRIZE/MMM-LogExt)
 
 1. There is no `package.json`. We need this file to gather information about the module for the module list page.
-2. Information: There are updates for 4 dependencie(s):
-   -  eslint                  ^8.54.0  →  ^8.55.0
-   -  eslint-config-prettier   ^9.0.0  →   ^9.1.0
-   -  marked                  ^10.0.0  →  ^11.0.0
-   -  sharp                   ^0.32.6  →  ^0.33.0
-
 
 ### [MMM-Logging by shbatm](https://github.com/shbatm/MMM-Logging)
 
@@ -3263,19 +3175,14 @@ Last update: 2023-12-02 22:52:24 UTC
 
 ### [MMM-Losung by Dobherrmann](https://github.com/Dobherrmann/MMM-Losung)
 
-1. Recommendation: Found `'node-fetch'` in file `node_helper.js`: Replace it with built-in fetch.
-2. Recommendation: Found `"node-fetch"` in file `package.json`: Replace it with built-in fetch.
-3. Warning: No LICENSE file.
+1. There are no specific keywords in 'package.json'. We would use them as tags on the module list page. Add a few meaningful terms to the keywords in the package.json. Not just “magicmirror” or “module”.
+2. Recommendation: Found `'node-fetch'` in file `node_helper.js`: Replace it with built-in fetch.
+3. Recommendation: Found `"node-fetch"` in file `package.json`: Replace it with built-in fetch.
+4. Warning: No LICENSE file.
 
 ### [MMM-LothianBuses by tbouron](https://github.com/tbouron/MMM-LothianBuses)
 
 1. There is no `package.json`. We need this file to gather information about the module for the module list page.
-2. Information: There are updates for 4 dependencie(s):
-   -  eslint                  ^8.54.0  →  ^8.55.0
-   -  eslint-config-prettier   ^9.0.0  →   ^9.1.0
-   -  marked                  ^10.0.0  →  ^11.0.0
-   -  sharp                   ^0.32.6  →  ^0.33.0
-
 
 ### [MMM-Lottery by mykle1](https://github.com/mykle1/MMM-Lottery)
 
@@ -3381,12 +3288,6 @@ Last update: 2023-12-02 22:52:24 UTC
 ### [MMM-MagicMover by Lavve](https://github.com/Lavve/MMM-MagicMover)
 
 1. There is no `package.json`. We need this file to gather information about the module for the module list page.
-2. Information: There are updates for 4 dependencie(s):
-   -  eslint                  ^8.54.0  →  ^8.55.0
-   -  eslint-config-prettier   ^9.0.0  →   ^9.1.0
-   -  marked                  ^10.0.0  →  ^11.0.0
-   -  sharp                   ^0.32.6  →  ^0.33.0
-
 
 ### [MMM-MagicSuperHero by Lavve](https://github.com/Lavve/MMM-MagicSuperHero)
 
@@ -3469,12 +3370,6 @@ Last update: 2023-12-02 22:52:24 UTC
 ### [MMM-Meniny by eouia](https://github.com/eouia/MMM-Meniny)
 
 1. There is no `package.json`. We need this file to gather information about the module for the module list page.
-2. Information: There are updates for 4 dependencie(s):
-   -  eslint                  ^8.54.0  →  ^8.55.0
-   -  eslint-config-prettier   ^9.0.0  →   ^9.1.0
-   -  marked                  ^10.0.0  →  ^11.0.0
-   -  sharp                   ^0.32.6  →  ^0.33.0
-
 
 ### [MMM-MensaMax by fuerst](https://github.com/fuerst/MMM-MensaMax)
 
@@ -3485,12 +3380,6 @@ Last update: 2023-12-02 22:52:24 UTC
 ### [MMM-Mensamuc by wiesty](https://github.com/wiesty/MMM-Mensamuc)
 
 1. There is no `package.json`. We need this file to gather information about the module for the module list page.
-2. Information: There are updates for 4 dependencie(s):
-   -  eslint                  ^8.54.0  →  ^8.55.0
-   -  eslint-config-prettier   ^9.0.0  →   ^9.1.0
-   -  marked                  ^10.0.0  →  ^11.0.0
-   -  sharp                   ^0.32.6  →  ^0.33.0
-
 
 ### [MMM-MercedesMe by ashishtank](https://github.com/ashishtank/MMM-MercedesMe)
 
@@ -3544,12 +3433,6 @@ Last update: 2023-12-02 22:52:24 UTC
 ### [MMM-Minigjenbruksstasjon by blixhavn](https://github.com/blixhavn/MMM-Minigjenbruksstasjon)
 
 1. There is no `package.json`. We need this file to gather information about the module for the module list page.
-2. Information: There are updates for 4 dependencie(s):
-   -  eslint                  ^8.54.0  →  ^8.55.0
-   -  eslint-config-prettier   ^9.0.0  →   ^9.1.0
-   -  marked                  ^10.0.0  →  ^11.0.0
-   -  sharp                   ^0.32.6  →  ^0.33.0
-
 
 ### [MMM-MirrorMirrorOnTheWall by joanaz](https://github.com/joanaz/MMM-MirrorMirrorOnTheWall)
 
@@ -3722,8 +3605,9 @@ Last update: 2023-12-02 22:52:24 UTC
 
 1. `package.json` issue: No repository field.
 2. `package.json` issue: license should be a valid SPDX license expression
-3. No compatible or wrong license field in 'package.json'. Without that, we can't use an image.
-4. Recommendation: Module name doesn't follow the recommended pattern (it doesn't start with `MMM-`). Consider renaming your module.
+3. There are no specific keywords in 'package.json'. We would use them as tags on the module list page. Add a few meaningful terms to the keywords in the package.json. Not just “magicmirror” or “module”.
+4. No compatible or wrong license field in 'package.json'. Without that, we can't use an image.
+5. Recommendation: Module name doesn't follow the recommended pattern (it doesn't start with `MMM-`). Consider renaming your module.
 
 ### [mmm-stocks by elaniobro](https://github.com/elaniobro/mmm-stocks)
 
@@ -3744,13 +3628,14 @@ Last update: 2023-12-02 22:52:24 UTC
 ### [mmm-toggle-by-mqtt by moejetz](https://github.com/moejetz/mmm-toggle-by-mqtt)
 
 1. `package.json` issue: No repository field.
-2. No image found.
-3. Recommendation: Module name doesn't follow the recommended pattern (it doesn't start with `MMM-`). Consider renaming your module.
-4. Recommendation: Found `XMLHttpRequest` in file `jquery.js`: Replace it with built-in fetch.
-5. Typo: Found `Magic Mirror` in file `mmm-toggle-by-mqtt.js`: Replace it with `MagicMirror²`.
-6. Typo: Found `MagicMirror2` in file `mmm-toggle-by-mqtt.js`: Replace it with `MagicMirror²`.
-7. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
-8. Warning: No LICENSE file.
+2. There are no specific keywords in 'package.json'. We would use them as tags on the module list page. Add a few meaningful terms to the keywords in the package.json. Not just “magicmirror” or “module”.
+3. No image found.
+4. Recommendation: Module name doesn't follow the recommended pattern (it doesn't start with `MMM-`). Consider renaming your module.
+5. Recommendation: Found `XMLHttpRequest` in file `jquery.js`: Replace it with built-in fetch.
+6. Typo: Found `Magic Mirror` in file `mmm-toggle-by-mqtt.js`: Replace it with `MagicMirror²`.
+7. Typo: Found `MagicMirror2` in file `mmm-toggle-by-mqtt.js`: Replace it with `MagicMirror²`.
+8. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
+9. Warning: No LICENSE file.
 
 ### [mmm-uah-currency by wzooff](https://github.com/wzooff/mmm-uah-currency)
 
@@ -3779,12 +3664,13 @@ Last update: 2023-12-02 22:52:24 UTC
 
 ### [mmm-weatherchart by paphko](https://github.com/paphko/mmm-weatherchart)
 
-1. Recommendation: Module name doesn't follow the recommended pattern (it doesn't start with `MMM-`). Consider renaming your module.
-2. Typo: Found `Magic Mirror` in file `README.md`: Replace it with `MagicMirror²`.
-3. Typo: Found `MagicMirror2` in file `README.md`: Replace it with `MagicMirror²`.
-4. Deprecated: Found `require('request')` in file `node_helper.js`: Replace it with built-in fetch.
-5. Recommendation: Found `require('https')` in file `node_helper.js`: Replace 'https' by 'node:https'.
-6. Typo: Found `MagicMirror2` in file `package.json`: Replace it with `MagicMirror²`.
+1. There are no specific keywords in 'package.json'. We would use them as tags on the module list page. Add a few meaningful terms to the keywords in the package.json. Not just “magicmirror” or “module”.
+2. Recommendation: Module name doesn't follow the recommended pattern (it doesn't start with `MMM-`). Consider renaming your module.
+3. Typo: Found `Magic Mirror` in file `README.md`: Replace it with `MagicMirror²`.
+4. Typo: Found `MagicMirror2` in file `README.md`: Replace it with `MagicMirror²`.
+5. Deprecated: Found `require('request')` in file `node_helper.js`: Replace it with built-in fetch.
+6. Recommendation: Found `require('https')` in file `node_helper.js`: Replace 'https' by 'node:https'.
+7. Typo: Found `MagicMirror2` in file `package.json`: Replace it with `MagicMirror²`.
 
 ### [mmm-zabbix-alerts by spectroman](https://github.com/spectroman/mmm-zabbix-alerts)
 
@@ -3804,12 +3690,6 @@ Last update: 2023-12-02 22:52:24 UTC
 ### [MMM-mmpm by bee-mar](https://github.com/bee-mar/MMM-mmpm)
 
 1. There is no `package.json`. We need this file to gather information about the module for the module list page.
-2. Information: There are updates for 4 dependencie(s):
-   -  eslint                  ^8.54.0  →  ^8.55.0
-   -  eslint-config-prettier   ^9.0.0  →   ^9.1.0
-   -  marked                  ^10.0.0  →  ^11.0.0
-   -  sharp                   ^0.32.6  →  ^0.33.0
-
 
 ### [MMM-Modulebar by Snille](https://github.com/Snille/MMM-Modulebar)
 
@@ -3844,12 +3724,6 @@ Last update: 2023-12-02 22:52:24 UTC
 ### [MMM-MonthlyCalendar by kolbyjack](https://github.com/kolbyjack/MMM-MonthlyCalendar)
 
 1. There is no `package.json`. We need this file to gather information about the module for the module list page.
-2. Information: There are updates for 4 dependencie(s):
-   -  eslint                  ^8.54.0  →  ^8.55.0
-   -  eslint-config-prettier   ^9.0.0  →   ^9.1.0
-   -  marked                  ^10.0.0  →  ^11.0.0
-   -  sharp                   ^0.32.6  →  ^0.33.0
-
 
 ### [MMM-Moon by EnderFlop](https://github.com/EnderFlop/MMM-Moon)
 
@@ -4163,8 +4037,9 @@ Last update: 2023-12-02 22:52:24 UTC
 
 1. `package.json` issue: No description
 2. `package.json` issue: No repository field.
-3. Deprecated: Found `require("request")` in file `node_helper.js`: Replace it with built-in fetch.
-4. Warning: No LICENSE file.
+3. There are no specific keywords in 'package.json'. We would use them as tags on the module list page. Add a few meaningful terms to the keywords in the package.json. Not just “magicmirror” or “module”.
+4. Deprecated: Found `require("request")` in file `node_helper.js`: Replace it with built-in fetch.
+5. Warning: No LICENSE file.
 
 ### [MMM-MyTTC by jclarke0000](https://github.com/jclarke0000/MMM-MyTTC)
 
@@ -4451,9 +4326,10 @@ Last update: 2023-12-02 22:52:24 UTC
 
 1. `package.json` issue: No description
 2. `package.json` issue: No repository field.
-3. No image found.
-4. Recommendation: Found `"node-fetch"` in file `node_helper.js`: Replace it with built-in fetch.
-5. Recommendation: Found `"node-fetch"` in file `package.json`: Replace it with built-in fetch.
+3. There are no specific keywords in 'package.json'. We would use them as tags on the module list page. Add a few meaningful terms to the keywords in the package.json. Not just “magicmirror” or “module”.
+4. No image found.
+5. Recommendation: Found `"node-fetch"` in file `node_helper.js`: Replace it with built-in fetch.
+6. Recommendation: Found `"node-fetch"` in file `package.json`: Replace it with built-in fetch.
 
 ### [MMM-NHL by fewieden](https://github.com/fewieden/MMM-NHL)
 
@@ -4475,9 +4351,10 @@ Last update: 2023-12-02 22:52:24 UTC
 
 ### [MMM-Nightscout by bureus](https://github.com/bureus/MMM-Nightscout)
 
-1. Typo: Found `Magic Mirror` in file `README.md`: Replace it with `MagicMirror²`.
-2. Typo: Found `Magic Mirror` in file `package.json`: Replace it with `MagicMirror²`.
-3. Warning: No LICENSE file.
+1. There are no specific keywords in 'package.json'. We would use them as tags on the module list page. Add a few meaningful terms to the keywords in the package.json. Not just “magicmirror” or “module”.
+2. Typo: Found `Magic Mirror` in file `README.md`: Replace it with `MagicMirror²`.
+3. Typo: Found `Magic Mirror` in file `package.json`: Replace it with `MagicMirror²`.
+4. Warning: No LICENSE file.
 
 ### [MMM-NINA by jalibu](https://github.com/jalibu/MMM-NINA)
 
@@ -4492,12 +4369,6 @@ Last update: 2023-12-02 22:52:24 UTC
 ### [MMM-nixie-clock by Isaac-the-Man](https://github.com/Isaac-the-Man/MMM-nixie-clock)
 
 1. There is no `package.json`. We need this file to gather information about the module for the module list page.
-2. Information: There are updates for 4 dependencie(s):
-   -  eslint                  ^8.54.0  →  ^8.55.0
-   -  eslint-config-prettier   ^9.0.0  →   ^9.1.0
-   -  marked                  ^10.0.0  →  ^11.0.0
-   -  sharp                   ^0.32.6  →  ^0.33.0
-
 
 ### [MMM-Nixie-Clock by nikobix](https://github.com/nikobix/MMM-Nixie-Clock)
 
@@ -4546,28 +4417,29 @@ Last update: 2023-12-02 22:52:24 UTC
 
 ### [MMM-NOAA3 by cowboysdude](https://github.com/cowboysdude/MMM-NOAA3)
 
-1. Typo: Found `Magic Mirror` in file `MMM-NOAA3.js`: Replace it with `MagicMirror²`.
-2. Typo: Found `MagicMirror2` in file `README.md`: Replace it with `MagicMirror²`.
-3. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
-4. Deprecated: Found `require('request')` in file `node_helper.js`: Replace it with built-in fetch.
-5. Typo: Found `MagicMirror2` in file `package.json`: Replace it with `MagicMirror²`.
-6. Typo: Found `Magic Mirror` in file `aw.js`: Replace it with `MagicMirror²`.
-7. Deprecated: Found `require('request')` in file `aw.js`: Replace it with built-in fetch.
-8. Typo: Found `Magic Mirror` in file `ax.js`: Replace it with `MagicMirror²`.
-9. Deprecated: Found `require('request')` in file `ax.js`: Replace it with built-in fetch.
-10. Typo: Found `Magic Mirror` in file `ds.js`: Replace it with `MagicMirror²`.
-11. Deprecated: Found `require('request')` in file `ds.js`: Replace it with built-in fetch.
-12. Typo: Found `Magic Mirror` in file `ms.js`: Replace it with `MagicMirror²`.
-13. Deprecated: Found `require('request')` in file `ms.js`: Replace it with built-in fetch.
-14. Typo: Found `Magic Mirror` in file `ow.js`: Replace it with `MagicMirror²`.
-15. Deprecated: Found `require('request')` in file `ow.js`: Replace it with built-in fetch.
-16. Typo: Found `Magic Mirror` in file `wb.js`: Replace it with `MagicMirror²`.
-17. Deprecated: Found `require('request')` in file `wb.js`: Replace it with built-in fetch.
-18. Typo: Found `Magic Mirror` in file `wg.js`: Replace it with `MagicMirror²`.
-19. Deprecated: Found `require('request')` in file `wg.js`: Replace it with built-in fetch.
-20. Typo: Found `Magic Mirror` in file `wu.js`: Replace it with `MagicMirror²`.
-21. Deprecated: Found `require('request')` in file `wu.js`: Replace it with built-in fetch.
-22. Warning: No LICENSE file.
+1. There are no specific keywords in 'package.json'. We would use them as tags on the module list page. Add a few meaningful terms to the keywords in the package.json. Not just “magicmirror” or “module”.
+2. Typo: Found `Magic Mirror` in file `MMM-NOAA3.js`: Replace it with `MagicMirror²`.
+3. Typo: Found `MagicMirror2` in file `README.md`: Replace it with `MagicMirror²`.
+4. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
+5. Deprecated: Found `require('request')` in file `node_helper.js`: Replace it with built-in fetch.
+6. Typo: Found `MagicMirror2` in file `package.json`: Replace it with `MagicMirror²`.
+7. Typo: Found `Magic Mirror` in file `aw.js`: Replace it with `MagicMirror²`.
+8. Deprecated: Found `require('request')` in file `aw.js`: Replace it with built-in fetch.
+9. Typo: Found `Magic Mirror` in file `ax.js`: Replace it with `MagicMirror²`.
+10. Deprecated: Found `require('request')` in file `ax.js`: Replace it with built-in fetch.
+11. Typo: Found `Magic Mirror` in file `ds.js`: Replace it with `MagicMirror²`.
+12. Deprecated: Found `require('request')` in file `ds.js`: Replace it with built-in fetch.
+13. Typo: Found `Magic Mirror` in file `ms.js`: Replace it with `MagicMirror²`.
+14. Deprecated: Found `require('request')` in file `ms.js`: Replace it with built-in fetch.
+15. Typo: Found `Magic Mirror` in file `ow.js`: Replace it with `MagicMirror²`.
+16. Deprecated: Found `require('request')` in file `ow.js`: Replace it with built-in fetch.
+17. Typo: Found `Magic Mirror` in file `wb.js`: Replace it with `MagicMirror²`.
+18. Deprecated: Found `require('request')` in file `wb.js`: Replace it with built-in fetch.
+19. Typo: Found `Magic Mirror` in file `wg.js`: Replace it with `MagicMirror²`.
+20. Deprecated: Found `require('request')` in file `wg.js`: Replace it with built-in fetch.
+21. Typo: Found `Magic Mirror` in file `wu.js`: Replace it with `MagicMirror²`.
+22. Deprecated: Found `require('request')` in file `wu.js`: Replace it with built-in fetch.
+23. Warning: No LICENSE file.
 
 ### [MMM-NOAATides by crice009](https://github.com/crice009/MMM-NOAATides)
 
@@ -4588,12 +4460,6 @@ Last update: 2023-12-02 22:52:24 UTC
 ### [MMM-NotificationTrigger by MMRIZE](https://github.com/MMRIZE/MMM-NotificationTrigger)
 
 1. There is no `package.json`. We need this file to gather information about the module for the module list page.
-2. Information: There are updates for 4 dependencie(s):
-   -  eslint                  ^8.54.0  →  ^8.55.0
-   -  eslint-config-prettier   ^9.0.0  →   ^9.1.0
-   -  marked                  ^10.0.0  →  ^11.0.0
-   -  sharp                   ^0.32.6  →  ^0.33.0
-
 
 ### [MMM-Notion by choffmann](https://github.com/choffmann/MMM-Notion)
 
@@ -4651,12 +4517,6 @@ Last update: 2023-12-02 22:52:24 UTC
 ### [MMM-OClock by eouia](https://github.com/eouia/MMM-OClock)
 
 1. There is no `package.json`. We need this file to gather information about the module for the module list page.
-2. Information: There are updates for 4 dependencie(s):
-   -  eslint                  ^8.54.0  →  ^8.55.0
-   -  eslint-config-prettier   ^9.0.0  →   ^9.1.0
-   -  marked                  ^10.0.0  →  ^11.0.0
-   -  sharp                   ^0.32.6  →  ^0.33.0
-
 
 ### [octomirror-module by shbatm](https://github.com/shbatm/octomirror-module)
 
@@ -4736,6 +4596,7 @@ Last update: 2023-12-02 22:52:24 UTC
 
 ### [MMM-OneTracker by seeshaughnessy](https://github.com/seeshaughnessy/MMM-OneTracker)
 
+0. This module is outdated: Deprecated. Module doesn't work without workaround (<code>npm install node-fetch@2</code>) and author doesn't work on it anymore. Maybe he would react to a PR. Status as of 2023-12-03.
 1. There is no `package.json`. We need this file to gather information about the module for the module list page.
 2. Typo: Found `Magic Mirror` in file `MMM-OneTracker.js`: Replace it with `MagicMirror²`.
 3. Typo: Found `Magic Mirror` in file `README.md`: Replace it with `MagicMirror²`.
@@ -4745,12 +4606,6 @@ Last update: 2023-12-02 22:52:24 UTC
 ### [MMM-Online-State by Legion2](https://github.com/Legion2/MMM-Online-State)
 
 1. There is no `package.json`. We need this file to gather information about the module for the module list page.
-2. Information: There are updates for 4 dependencie(s):
-   -  eslint                  ^8.54.0  →  ^8.55.0
-   -  eslint-config-prettier   ^9.0.0  →   ^9.1.0
-   -  marked                  ^10.0.0  →  ^11.0.0
-   -  sharp                   ^0.32.6  →  ^0.33.0
-
 
 ### [MMM-OnlineImagesViewer by NicholasRasi](https://github.com/NicholasRasi/MMM-OnlineImagesViewer)
 
@@ -4866,12 +4721,6 @@ Last update: 2023-12-02 22:52:24 UTC
 ### [MMM-page-indicator by edward-shen](https://github.com/edward-shen/MMM-page-indicator)
 
 1. There is no `package.json`. We need this file to gather information about the module for the module list page.
-2. Information: There are updates for 4 dependencie(s):
-   -  eslint                  ^8.54.0  →  ^8.55.0
-   -  eslint-config-prettier   ^9.0.0  →   ^9.1.0
-   -  marked                  ^10.0.0  →  ^11.0.0
-   -  sharp                   ^0.32.6  →  ^0.33.0
-
 
 ### [MMM-Page-Pusher by zerosamski](https://github.com/zerosamski/MMM-Page-Pusher)
 
@@ -5247,12 +5096,6 @@ Last update: 2023-12-02 22:52:24 UTC
 ### [MMM-Polly by dgburr](https://github.com/dgburr/MMM-Polly)
 
 1. There is no `package.json`. We need this file to gather information about the module for the module list page.
-2. Information: There are updates for 4 dependencie(s):
-   -  eslint                  ^8.54.0  →  ^8.55.0
-   -  eslint-config-prettier   ^9.0.0  →   ^9.1.0
-   -  marked                  ^10.0.0  →  ^11.0.0
-   -  sharp                   ^0.32.6  →  ^0.33.0
-
 
 ### [MMM-PopulationClock by mykle1](https://github.com/mykle1/MMM-PopulationClock)
 
@@ -5283,11 +5126,12 @@ Last update: 2023-12-02 22:52:24 UTC
 
 ### [MMM-Postnord by bureus](https://github.com/bureus/MMM-Postnord)
 
-1. Typo: Found `Magic Mirror` in file `MMM-Postnord.js`: Replace it with `MagicMirror²`.
-2. Typo: Found `Magic Mirror` in file `README.md`: Replace it with `MagicMirror²`.
-3. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
-4. Typo: Found `Magic Mirror` in file `package.json`: Replace it with `MagicMirror²`.
-5. Warning: No LICENSE file.
+1. There are no specific keywords in 'package.json'. We would use them as tags on the module list page. Add a few meaningful terms to the keywords in the package.json. Not just “magicmirror” or “module”.
+2. Typo: Found `Magic Mirror` in file `MMM-Postnord.js`: Replace it with `MagicMirror²`.
+3. Typo: Found `Magic Mirror` in file `README.md`: Replace it with `MagicMirror²`.
+4. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
+5. Typo: Found `Magic Mirror` in file `package.json`: Replace it with `MagicMirror²`.
+6. Warning: No LICENSE file.
 
 ### [MMM-Powerwall by MikeBishop](https://github.com/MikeBishop/MMM-Powerwall)
 
@@ -5591,12 +5435,6 @@ Last update: 2023-12-02 22:52:24 UTC
 ### [MMM-RedditKarma by rcberg3](https://github.com/rcberg3/MMM-RedditKarma)
 
 1. There is no `package.json`. We need this file to gather information about the module for the module list page.
-2. Information: There are updates for 4 dependencie(s):
-   -  eslint                  ^8.54.0  →  ^8.55.0
-   -  eslint-config-prettier   ^9.0.0  →   ^9.1.0
-   -  marked                  ^10.0.0  →  ^11.0.0
-   -  sharp                   ^0.32.6  →  ^0.33.0
-
 
 ### [MMM-Reddito by bittiez](https://github.com/bittiez/MMM-Reddito)
 
@@ -6020,8 +5858,9 @@ Last update: 2023-12-02 22:52:24 UTC
 
 ### [MMM-SHL by bureus](https://github.com/bureus/MMM-SHL)
 
-1. Typo: Found `Magic Mirror` in file `README.md`: Replace it with `MagicMirror²`.
-2. Typo: Found `Magic Mirror` in file `package.json`: Replace it with `MagicMirror²`.
+1. There are no specific keywords in 'package.json'. We would use them as tags on the module list page. Add a few meaningful terms to the keywords in the package.json. Not just “magicmirror” or “module”.
+2. Typo: Found `Magic Mirror` in file `README.md`: Replace it with `MagicMirror²`.
+3. Typo: Found `Magic Mirror` in file `package.json`: Replace it with `MagicMirror²`.
 
 ### [MMM-Simple-Swiper by Bee-Mar](https://github.com/Bee-Mar/MMM-Simple-Swiper)
 
@@ -6035,12 +5874,6 @@ Last update: 2023-12-02 22:52:24 UTC
 ### [MMM-SimpleLogo by frdteknikelektro](https://github.com/frdteknikelektro/MMM-SimpleLogo)
 
 1. There is no `package.json`. We need this file to gather information about the module for the module list page.
-2. Information: There are updates for 4 dependencie(s):
-   -  eslint                  ^8.54.0  →  ^8.55.0
-   -  eslint-config-prettier   ^9.0.0  →   ^9.1.0
-   -  marked                  ^10.0.0  →  ^11.0.0
-   -  sharp                   ^0.32.6  →  ^0.33.0
-
 
 ### [MMM-SimpleNotifyTrashDay by sabo10o29](https://github.com/sabo10o29/MMM-SimpleNotifyTrashDay)
 
@@ -6240,10 +6073,11 @@ Last update: 2023-12-02 22:52:24 UTC
 
 ### [MMM-Sonos by CFenner](https://github.com/CFenner/MMM-Sonos)
 
-1. Deprecated: Found `node-version: [14` in file `validation.yml`: Update to current version.
-2. Typo: Found `Magic Mirror` in file `MMM-Sonos.js`: Replace it with `MagicMirror²`.
-3. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
-4. Deprecated: Found `require('request')` in file `node_helper.js`: Replace it with built-in fetch.
+1. There are no specific keywords in 'package.json'. We would use them as tags on the module list page. Add a few meaningful terms to the keywords in the package.json. Not just “magicmirror” or “module”.
+2. Deprecated: Found `node-version: [14` in file `validation.yml`: Update to current version.
+3. Typo: Found `Magic Mirror` in file `MMM-Sonos.js`: Replace it with `MagicMirror²`.
+4. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
+5. Deprecated: Found `require('request')` in file `node_helper.js`: Replace it with built-in fetch.
 
 ### [MMM-Sonos by tbouron](https://github.com/tbouron/MMM-Sonos)
 
@@ -6391,8 +6225,9 @@ Last update: 2023-12-02 22:52:24 UTC
 
 ### [MMM-SunnyPortal by linuxtuxie](https://github.com/linuxtuxie/MMM-SunnyPortal)
 
-1. Typo: Found `Magic Mirror` in file `MMM-SunnyPortal.js`: Replace it with `MagicMirror²`.
-2. Deprecated: Found `require('request')` in file `node_helper.js`: Replace it with built-in fetch.
+1. There are no specific keywords in 'package.json'. We would use them as tags on the module list page. Add a few meaningful terms to the keywords in the package.json. Not just “magicmirror” or “module”.
+2. Typo: Found `Magic Mirror` in file `MMM-SunnyPortal.js`: Replace it with `MagicMirror²`.
+3. Deprecated: Found `require('request')` in file `node_helper.js`: Replace it with built-in fetch.
 
 ### [MMM-SunRiseSet by mykle1](https://github.com/mykle1/MMM-SunRiseSet)
 
@@ -6645,11 +6480,12 @@ Last update: 2023-12-02 22:52:24 UTC
 
 ### [MMM-TMB by jaumebosch](https://github.com/jaumebosch/MMM-TMB)
 
-1. Typo: Found `Magic Mirror` in file `MMM-TMB.css`: Replace it with `MagicMirror²`.
-2. Typo: Found `Magic Mirror` in file `MMM-TMB.js`: Replace it with `MagicMirror²`.
-3. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
-4. Recommendation: Found `axios` in file `node_helper.js`: Replace it with built-in fetch.
-5. Recommendation: Found `axios` in file `package.json`: Replace it with built-in fetch.
+1. There are no specific keywords in 'package.json'. We would use them as tags on the module list page. Add a few meaningful terms to the keywords in the package.json. Not just “magicmirror” or “module”.
+2. Typo: Found `Magic Mirror` in file `MMM-TMB.css`: Replace it with `MagicMirror²`.
+3. Typo: Found `Magic Mirror` in file `MMM-TMB.js`: Replace it with `MagicMirror²`.
+4. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
+5. Recommendation: Found `axios` in file `node_helper.js`: Replace it with built-in fetch.
+6. Recommendation: Found `axios` in file `package.json`: Replace it with built-in fetch.
 
 ### [MMM-tns by JulienPeloton](https://github.com/JulienPeloton/MMM-tns)
 
@@ -6692,12 +6528,6 @@ Last update: 2023-12-02 22:52:24 UTC
 ### [MMM-Touch by gfischershaw](https://github.com/gfischershaw/MMM-Touch)
 
 1. There is no `package.json`. We need this file to gather information about the module for the module list page.
-2. Information: There are updates for 4 dependencie(s):
-   -  eslint                  ^8.54.0  →  ^8.55.0
-   -  eslint-config-prettier   ^9.0.0  →   ^9.1.0
-   -  marked                  ^10.0.0  →  ^11.0.0
-   -  sharp                   ^0.32.6  →  ^0.33.0
-
 
 ### [MMM-TouchButton by Tom-Hirschberger](https://github.com/Tom-Hirschberger/MMM-TouchButton)
 
@@ -6748,10 +6578,11 @@ Last update: 2023-12-02 22:52:24 UTC
 
 1. `package.json` issue: No description
 2. `package.json` issue: No repository field.
-3. No image found.
-4. Recommendation: Found `axios` in file `node_helper.js`: Replace it with built-in fetch.
-5. Recommendation: Found `axios` in file `package.json`: Replace it with built-in fetch.
-6. Recommendation: Found `axios` in file `pnpm-lock.yaml`: Replace it with built-in fetch.
+3. There are no specific keywords in 'package.json'. We would use them as tags on the module list page. Add a few meaningful terms to the keywords in the package.json. Not just “magicmirror” or “module”.
+4. No image found.
+5. Recommendation: Found `axios` in file `node_helper.js`: Replace it with built-in fetch.
+6. Recommendation: Found `axios` in file `package.json`: Replace it with built-in fetch.
+7. Recommendation: Found `axios` in file `pnpm-lock.yaml`: Replace it with built-in fetch.
 
 ### [MMM-trakt by Kiina](https://github.com/Kiina/MMM-trakt)
 
@@ -6790,12 +6621,6 @@ Last update: 2023-12-02 22:52:24 UTC
 ### [MMM-Transmission by nikxif](https://github.com/nikxif/MMM-Transmission)
 
 1. There is no `package.json`. We need this file to gather information about the module for the module list page.
-2. Information: There are updates for 4 dependencie(s):
-   -  eslint                  ^8.54.0  →  ^8.55.0
-   -  eslint-config-prettier   ^9.0.0  →   ^9.1.0
-   -  marked                  ^10.0.0  →  ^11.0.0
-   -  sharp                   ^0.32.6  →  ^0.33.0
-
 
 ### [MMM-TransporteCABA by luccapolastri](https://github.com/luccapolastri/MMM-TransporteCABA)
 
@@ -6813,9 +6638,10 @@ Last update: 2023-12-02 22:52:24 UTC
 
 ### [MMM-Tronity by robotfishe](https://github.com/robotfishe/MMM-Tronity)
 
-1. No image found.
-2. Typo: Found `Magic Mirror` in file `MMM-Tronity.js`: Replace it with `MagicMirror²`.
-3. Deprecated: Found `require('request')` in file `node_helper.js`: Replace it with built-in fetch.
+1. There are no specific keywords in 'package.json'. We would use them as tags on the module list page. Add a few meaningful terms to the keywords in the package.json. Not just “magicmirror” or “module”.
+2. No image found.
+3. Typo: Found `Magic Mirror` in file `MMM-Tronity.js`: Replace it with `MagicMirror²`.
+4. Deprecated: Found `require('request')` in file `node_helper.js`: Replace it with built-in fetch.
 
 ### [MMM-TRV-WastePlan by reidarw](https://github.com/reidarw/MMM-TRV-WastePlan)
 
@@ -6903,21 +6729,16 @@ Last update: 2023-12-02 22:52:24 UTC
 
 ### [MMM-UKLiveBusStopInfo by AndyHazz](https://github.com/AndyHazz/MMM-UKLiveBusStopInfo)
 
-1. Typo: Found `Magic Mirror` in file `MMM-UKLiveBusStopInfo.js`: Replace it with `MagicMirror²`.
-2. Typo: Found `Magic Mirror` in file `README.md`: Replace it with `MagicMirror²`.
-3. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
-4. Deprecated: Found `require('request')` in file `node_helper.js`: Replace it with built-in fetch.
-5. Deprecated: Found `require('request')` in file `test-UKLiveBusStopInfo.js`: Replace it with built-in fetch.
+1. There are no specific keywords in 'package.json'. We would use them as tags on the module list page. Add a few meaningful terms to the keywords in the package.json. Not just “magicmirror” or “module”.
+2. Typo: Found `Magic Mirror` in file `MMM-UKLiveBusStopInfo.js`: Replace it with `MagicMirror²`.
+3. Typo: Found `Magic Mirror` in file `README.md`: Replace it with `MagicMirror²`.
+4. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
+5. Deprecated: Found `require('request')` in file `node_helper.js`: Replace it with built-in fetch.
+6. Deprecated: Found `require('request')` in file `test-UKLiveBusStopInfo.js`: Replace it with built-in fetch.
 
 ### [MMM-UKLiveTrainDepartures by XBCreepinJesus](https://github.com/XBCreepinJesus/MMM-UKLiveTrainDepartures)
 
 1. There is no `package.json`. We need this file to gather information about the module for the module list page.
-2. Information: There are updates for 4 dependencie(s):
-   -  eslint                  ^8.54.0  →  ^8.55.0
-   -  eslint-config-prettier   ^9.0.0  →   ^9.1.0
-   -  marked                  ^10.0.0  →  ^11.0.0
-   -  sharp                   ^0.32.6  →  ^0.33.0
-
 
 ### [MMM-UKMOWeatherWarnings by maloakes](https://github.com/maloakes/MMM-UKMOWeatherWarnings)
 
@@ -6998,19 +6819,21 @@ Last update: 2023-12-02 22:52:24 UTC
 
 ### [MMM-Vasttrafik-PublicTransport by Xkhi](https://github.com/Xkhi/MMM-Vasttrafik-PublicTransport)
 
-1. Typo: Found `Magic Mirror` in file `MMM-Vasttrafik-PublicTransport.js`: Replace it with `MagicMirror²`.
-2. Typo: Found `Magic Mirror` in file `README.md`: Replace it with `MagicMirror²`.
-3. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
-4. Typo: Found `Magic Mirror` in file `package.json`: Replace it with `MagicMirror²`.
-5. Warning: No LICENSE file.
+1. There are no specific keywords in 'package.json'. We would use them as tags on the module list page. Add a few meaningful terms to the keywords in the package.json. Not just “magicmirror” or “module”.
+2. Typo: Found `Magic Mirror` in file `MMM-Vasttrafik-PublicTransport.js`: Replace it with `MagicMirror²`.
+3. Typo: Found `Magic Mirror` in file `README.md`: Replace it with `MagicMirror²`.
+4. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
+5. Typo: Found `Magic Mirror` in file `package.json`: Replace it with `MagicMirror²`.
+6. Warning: No LICENSE file.
 
 ### [MMM-Vasttrafik-PublicTransport by bureus](https://github.com/bureus/MMM-Vasttrafik-PublicTransport)
 
-1. Typo: Found `Magic Mirror` in file `MMM-Vasttrafik-PublicTransport.js`: Replace it with `MagicMirror²`.
-2. Typo: Found `Magic Mirror` in file `README.md`: Replace it with `MagicMirror²`.
-3. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
-4. Typo: Found `Magic Mirror` in file `package.json`: Replace it with `MagicMirror²`.
-5. Warning: No LICENSE file.
+1. There are no specific keywords in 'package.json'. We would use them as tags on the module list page. Add a few meaningful terms to the keywords in the package.json. Not just “magicmirror” or “module”.
+2. Typo: Found `Magic Mirror` in file `MMM-Vasttrafik-PublicTransport.js`: Replace it with `MagicMirror²`.
+3. Typo: Found `Magic Mirror` in file `README.md`: Replace it with `MagicMirror²`.
+4. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
+5. Typo: Found `Magic Mirror` in file `package.json`: Replace it with `MagicMirror²`.
+6. Warning: No LICENSE file.
 
 ### [MMM-vCard2Calendar by n-gao](https://github.com/n-gao/MMM-vCard2Calendar)
 
@@ -7195,12 +7018,6 @@ Last update: 2023-12-02 22:52:24 UTC
 ### [MMM-WatchDog by MichMich](https://github.com/MichMich/MMM-WatchDog)
 
 1. There is no `package.json`. We need this file to gather information about the module for the module list page.
-2. Information: There are updates for 4 dependencie(s):
-   -  eslint                  ^8.54.0  →  ^8.55.0
-   -  eslint-config-prettier   ^9.0.0  →   ^9.1.0
-   -  marked                  ^10.0.0  →  ^11.0.0
-   -  sharp                   ^0.32.6  →  ^0.33.0
-
 
 ### [MMM-WaterReminder by thiagomides](https://github.com/thiagomides/MMM-WaterReminder)
 
@@ -7359,12 +7176,6 @@ Last update: 2023-12-02 22:52:24 UTC
 ### [MMM-wiki by mihairinzis](https://github.com/mihairinzis/MMM-wiki)
 
 1. There is no `package.json`. We need this file to gather information about the module for the module list page.
-2. Information: There are updates for 4 dependencie(s):
-   -  eslint                  ^8.54.0  →  ^8.55.0
-   -  eslint-config-prettier   ^9.0.0  →   ^9.1.0
-   -  marked                  ^10.0.0  →  ^11.0.0
-   -  sharp                   ^0.32.6  →  ^0.33.0
-
 
 ### [MMM-windy by santi4488](https://github.com/santi4488/MMM-windy)
 
@@ -7374,9 +7185,10 @@ Last update: 2023-12-02 22:52:24 UTC
 ### [MMM-WordGenius by drventure](https://github.com/drventure/MMM-WordGenius)
 
 1. `package.json` issue: No repository field.
-2. Typo: Found `Magic Mirror` in file `README.md`: Replace it with `MagicMirror²`.
-3. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
-4. Deprecated: Found `require('request')` in file `node_helper.js`: Replace it with built-in fetch.
+2. There are no specific keywords in 'package.json'. We would use them as tags on the module list page. Add a few meaningful terms to the keywords in the package.json. Not just “magicmirror” or “module”.
+3. Typo: Found `Magic Mirror` in file `README.md`: Replace it with `MagicMirror²`.
+4. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
+5. Deprecated: Found `require('request')` in file `node_helper.js`: Replace it with built-in fetch.
 
 ### [MMM-wordnik by SVendittelli](https://github.com/SVendittelli/MMM-wordnik)
 
@@ -7480,12 +7292,6 @@ Last update: 2023-12-02 22:52:24 UTC
 ### [MMM-yandex-route by DimmanT](https://github.com/DimmanT/MMM-yandex-route)
 
 1. There is no `package.json`. We need this file to gather information about the module for the module list page.
-2. Information: There are updates for 4 dependencie(s):
-   -  eslint                  ^8.54.0  →  ^8.55.0
-   -  eslint-config-prettier   ^9.0.0  →   ^9.1.0
-   -  marked                  ^10.0.0  →  ^11.0.0
-   -  sharp                   ^0.32.6  →  ^0.33.0
-
 
 ### [MMM-Yeelight by slametps](https://github.com/slametps/MMM-Yeelight)
 
@@ -7578,4 +7384,5 @@ Last update: 2023-12-02 22:52:24 UTC
 
 1. `package.json` issue: No description
 2. `package.json` issue: No repository field.
-3. Found directory `node_modules`. This shouldn't be uploaded. Add `node_modules/`to `.gitignore`.
+3. There are no specific keywords in 'package.json'. We would use them as tags on the module list page. Add a few meaningful terms to the keywords in the package.json. Not just “magicmirror” or “module”.
+4. Found directory `node_modules`. This shouldn't be uploaded. Add `node_modules/`to `.gitignore`.

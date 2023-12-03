@@ -5997,7 +5997,8 @@
     "maintainer": "seeshaughnessy",
     "maintainerURL": "",
     "description": "Use OneTracker app to deliveries/packages by forwarding from any email address.",
-    "issues": []
+    "issues": [],
+    "outdated": "Deprecated. Module doesn't work without workaround (<code>npm install node-fetch@2</code>) and author doesn't work on it anymore. Maybe he would react to a PR. Status as of 2023-12-03."
   },
   {
     "name": "MMM-Online-State",
