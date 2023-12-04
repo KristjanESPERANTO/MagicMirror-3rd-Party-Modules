@@ -97,7 +97,6 @@ This script goes through all cloned modules and performs various checks. The res
 
 - Use issue codes to make the module list file smaller.
 - optimize progress information while running `npm run all`
-- rewrite python scripts in javascript
 - Compatibility with:
   - the module list of `MMM-Remote-Control`: <https://github.com/Jopyth/MMM-Remote-Control/blob/master/modules.json>
   - and mmpm <https://github.com/Bee-Mar/mmpm>
@@ -111,7 +110,6 @@ This script goes through all cloned modules and performs various checks. The res
   - Is depandabot there?
     - Is it set to monthly?
     - Only production?
-  - Is branch name master? -> Description why and how switch to main.
 - Check if license in package.json matches the version in LICENSE file (I've seen some mismatches)
 
 ### Discarded ideas

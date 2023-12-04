@@ -194,26 +194,9 @@ def check_modules():
                 "Error: It appears that the repository could not be cloned. Check the URL."
             ]
 
-        package_json = Path(f"{module_directory_path}/package.json")
-        if len(module["issues"]) < 2 and package_json.is_file():
-            updates_string = (
-                subprocess.run(
-                    f"ncu --cwd {module_directory_path}",
-                    capture_output=True,
-                    shell=True,
-                    check=False
-                )
-                .stdout.decode()
-                .rstrip()
-            )
-            updates_list = updates_string.splitlines()
-            updates_list = [line for line in updates_list if "→" in line]
+        check_branch_name(module, module_directory_path)
 
-            if len(updates_list) > 0:
-                issue_text = f"Information: There are updates for {len(updates_list)} dependencie(s):\n"
-                for update in updates_list:
-                    issue_text += f"   - {update}\n"
-                module["issues"].append(issue_text)
+        check_dependency_updates(module, module_directory_path)
 
         if "outdated" in module or len(module["issues"]) > 0:
             stats["modules-with-issues-counter"] += 1
@@ -230,16 +213,7 @@ def check_modules():
                 for idx, issue in enumerate(module["issues"]):
                     markdown_output_modules += f"{idx+1}. {issue}\n"
 
-        module["last_commit"] = (
-            subprocess.run(
-                f"cd {module_directory_path} && git log -1 --format='%as' && cd .. && cd ..",
-                stdout=subprocess.PIPE,
-                shell=True,
-                check=False,
-            )
-            .stdout.decode()
-            .rstrip()
-        )
+        get_last_commit_date(module, module_directory_path)
 
         if "image" in module:
             stats["modules-with-image-counter"] += 1
@@ -303,6 +277,54 @@ def check_modules():
     # Writing to modules.json
     with open("./docs/stats.json", "w", encoding="utf-8") as outfile:
         outfile.write(statistics_json_object)
+
+def get_last_commit_date(module, module_directory_path):
+    module["last_commit"] = (
+            subprocess.run(
+                f"cd {module_directory_path} && git log -1 --format='%as' && cd .. && cd ..",
+                stdout=subprocess.PIPE,
+                shell=True,
+                check=False,
+            )
+            .stdout.decode()
+            .rstrip()
+        )
+
+def check_dependency_updates(module, module_directory_path):
+    package_json = Path(f"{module_directory_path}/package.json")
+    if len(module["issues"]) < 2 and package_json.is_file():
+        updates_string = (
+                subprocess.run(
+                    f"ncu --cwd {module_directory_path}",
+                    capture_output=True,
+                    shell=True,
+                    check=False
+                )
+                .stdout.decode()
+                .rstrip()
+            )
+        updates_list = updates_string.splitlines()
+        updates_list = [line for line in updates_list if "→" in line]
+
+        if len(updates_list) > 0:
+            issue_text = f"Information: There are updates for {len(updates_list)} dependencie(s):\n"
+            for update in updates_list:
+                issue_text += f"   - {update}\n"
+            module["issues"].append(issue_text)
+
+def check_branch_name(module, module_directory_path):
+    branch = (
+            subprocess.run(
+                f"cd {module_directory_path} && git branch && cd .. && cd ..",
+                stdout=subprocess.PIPE,
+                shell=True,
+                check=False,
+            )
+            .stdout.decode()
+            .rstrip()
+        )
+    if "* master" in branch:
+        module["issues"].append("The branch name is 'master'. Consider renaming it to 'main'.")
 
 
 check_modules()
