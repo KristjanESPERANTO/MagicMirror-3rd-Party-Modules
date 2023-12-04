@@ -1,16 +1,16 @@
 # Result of the module analysis
 
-Last update: 2023-12-03 10:09:17 UTC
+Last update: 2023-12-04 22:07:10 UTC
 
 ## Statistics
 
 |                      | number   |
 |:---------------------|:--------:|
-| modules analyzed     |   1069   |
-| maintainer           |    616   |
-| modules with issues  |   1044   |
-| issues               |   4016   |
-| modules at github    |   1060   |
+| modules analyzed     |   1071   |
+| maintainer           |    617   |
+| modules with issues  |   1050   |
+| issues               |   4028   |
+| modules at github    |   1062   |
 | modules at gitlab    |      8   |
 | modules at bitbucket |      1   |
 
@@ -754,6 +754,12 @@ Last update: 2023-12-03 10:09:17 UTC
 2. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
 3. Recommendation: Found `require('https')` in file `node_helper.js`: Replace 'https' by 'node:https'.
 
+### [MMM-Canteen by KristjanESPERANTO](https://github.com/KristjanESPERANTO/MMM-Canteen)
+
+1. Information: There are updates for 1 dependencie(s):
+   -  lint-staged  ^15.1.0  →  ^15.2.0
+
+
 ### [MMM-Canvas by chase-cromwell](https://github.com/chase-cromwell/MMM-Canvas)
 
 1. There is no `package.json`. We need this file to gather information about the module for the module list page.
@@ -832,6 +838,14 @@ Last update: 2023-12-03 10:09:17 UTC
 5. Typo: Found `Magic Mirror` in file `README.md`: Replace it with `MagicMirror²`.
 6. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
 7. Typo: Found `Magic Mirror` in file `package.json`: Replace it with `MagicMirror²`.
+
+### [MMM-CivitAI by Andoramb](https://github.com/Andoramb/MMM-CivitAI)
+
+1. `package.json` issue: No description
+2. `package.json` issue: No repository field.
+3. There are no specific keywords in 'package.json'. We would use them as tags on the module list page. Add a few meaningful terms to the keywords in the package.json. Not just “magicmirror” or “module”.
+4. Recommendation: Found `XMLHttpRequest` in file `MMM-CivitAI.js`: Replace it with built-in fetch.
+5. Warning: No LICENSE file.
 
 ### [MMM-Clash-Royale by ianperrin](https://github.com/ianperrin/MMM-Clash-Royale)
 
@@ -1449,6 +1463,12 @@ Last update: 2023-12-03 10:09:17 UTC
 2. Typo: Found `Magic Mirror` in file `MMM-Earthquake.js`: Replace it with `MagicMirror²`.
 3. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
 4. Deprecated: Found `require('request')` in file `node_helper.js`: Replace it with built-in fetch.
+
+### [MMM-EasyPix by KristjanESPERANTO](https://github.com/KristjanESPERANTO/MMM-EasyPix)
+
+1. Information: There are updates for 1 dependencie(s):
+   -  lint-staged  ^15.1.0  →  ^15.2.0
+
 
 ### [MMM-Ecobee by parnic](https://github.com/parnic/MMM-Ecobee)
 
@@ -3842,7 +3862,7 @@ Last update: 2023-12-03 10:09:17 UTC
    -  eslint                  ^7.23.0  →  ^8.55.0
    -  eslint-config-prettier   ^8.1.0  →   ^9.1.0
    -  eslint-plugin-prettier   ^3.3.1  →   ^5.0.1
-   -  mqtt                     ^4.3.7  →   ^5.3.1
+   -  mqtt                     ^4.3.7  →   ^5.3.2
    -  mqtt-packet              ^6.3.2  →   ^9.0.0
 
 
@@ -3866,14 +3886,14 @@ Last update: 2023-12-03 10:09:17 UTC
 ### [MMM-MQTTbind by janm84](https://github.com/janm84/MMM-MQTTbind)
 
 1. Information: There are updates for 1 dependencie(s):
-   -  mqtt  ^1.10.0  →  ^5.3.1
+   -  mqtt  ^1.10.0  →  ^5.3.2
 
 
 ### [MMM-MQTTbridge by Tom-Hirschberger](https://github.com/Tom-Hirschberger/MMM-MQTTbridge)
 
 1. Information: There are updates for 2 dependencie(s):
    -  jsonpath-plus  5.0.1  →  7.2.0
-   -  mqtt           4.3.7  →  5.3.1
+   -  mqtt           4.3.7  →  5.3.2
 
 
 ### [MMM-MQTTfloorplan by DMailMan](https://github.com/DMailMan/MMM-MQTTfloorplan)
@@ -4558,7 +4578,7 @@ Last update: 2023-12-03 10:09:17 UTC
 
 1. Deprecated: Found `require('request')` in file `node_helper.js`: Replace it with built-in fetch.
 2. Information: There are updates for 2 dependencie(s):
-   -  chart.js             ^3.7.1  →  ^4.4.0
+   -  chart.js             ^3.7.1  →  ^4.4.1
    -  magicmirror-rebuild  ^1.0.5  →  ^1.0.9
 
 
@@ -4583,6 +4603,12 @@ Last update: 2023-12-03 10:09:17 UTC
 2. Typo: Found `Magic Mirror` in file `README.md`: Replace it with `MagicMirror²`.
 3. Deprecated: Found `require('request')` in file `node_helper.js`: Replace it with built-in fetch.
 4. Warning: No LICENSE file.
+
+### [MMM-OneCallWeather by KristjanESPERANTO](https://github.com/KristjanESPERANTO/MMM-OneCallWeather)
+
+1. Information: There are updates for 1 dependencie(s):
+   -  lint-staged  ^15.1.0  →  ^15.2.0
+
 
 ### [MMM-OneTouchReveal by Canonip](https://github.com/Canonip/MMM-OneTouchReveal)
 
@@ -4817,7 +4843,7 @@ Last update: 2023-12-03 10:09:17 UTC
 
 1. Deprecated: Found `require('request')` in file `node_helper.js`: Replace it with built-in fetch.
 2. Information: There are updates for 2 dependencie(s):
-   -  chart.js             ^3.7.1  →  ^4.4.0
+   -  chart.js             ^3.7.1  →  ^4.4.1
    -  magicmirror-rebuild  ^1.0.5  →  ^1.0.9
 
 
@@ -4914,7 +4940,7 @@ Last update: 2023-12-03 10:09:17 UTC
 
 1. Information: There are updates for 2 dependencie(s):
    -  async              ^3.2.0  →    ^3.2.5
-   -  systeminformation  ^5.6.7  →  ^5.21.18
+   -  systeminformation  ^5.6.7  →  ^5.21.20
 
 
 ### [MMM-ping by fewieden](https://github.com/fewieden/MMM-ping)
@@ -5211,6 +5237,12 @@ Last update: 2023-12-03 10:09:17 UTC
    -  eslint-config-prettier   ^9.0.0  →   ^9.1.0
 
 
+### [MMM-PublicTransportHafas by KristjanESPERANTO](https://github.com/KristjanESPERANTO/MMM-PublicTransportHafas)
+
+1. Information: There are updates for 1 dependencie(s):
+   -  lint-staged  ^15.1.0  →  ^15.2.0
+
+
 ### [MMM-PublicTransportVVO by ChristianGeie](https://github.com/ChristianGeie/MMM-PublicTransportVVO)
 
 1. Recommendation: Found `XMLHttpRequest` in file `MMM-PublicTransportVVO.js`: Replace it with built-in fetch.
@@ -5496,7 +5528,7 @@ Last update: 2023-12-03 10:09:17 UTC
 ### [MMM-RescueTime by Duske](https://github.com/Duske/MMM-RescueTime)
 
 1. Information: There are updates for 3 dependencie(s):
-   -  chart.js   ^2.7.2  →   ^4.4.0
+   -  chart.js   ^2.7.2  →   ^4.4.1
    -  date-fns  ^1.29.0  →  ^2.30.0
    -  eslint    ^4.19.1  →  ^8.55.0
 
@@ -6379,7 +6411,7 @@ Last update: 2023-12-03 10:09:17 UTC
 2. Information: There are updates for 4 dependencie(s):
    -  jsonpointer  ^5.0.0  →   ^5.0.1
    -  mocha        ^6.2.1  →  ^10.2.0
-   -  mqtt         ^4.3.7  →   ^5.3.1
+   -  mqtt         ^4.3.7  →   ^5.3.2
    -  mqtt-packet  ^6.2.1  →   ^9.0.0
 
 
@@ -7139,6 +7171,12 @@ Last update: 2023-12-03 10:09:17 UTC
 2. Typo: Found `Magic Mirror` in file `README.md`: Replace it with `MagicMirror²`.
 3. Recommendation: Found `axios` in file `node_helper.js`: Replace it with built-in fetch.
 4. Recommendation: Found `axios` in file `package.json`: Replace it with built-in fetch.
+
+### [MMM-WetterOnline by bogenpirat](https://github.com/bogenpirat/MMM-WetterOnline)
+
+1. There are no keywords in 'package.json'. We would use them as tags on the module list page.
+2. Typo: Found `Magic Mirror` in file `MMM-WetterOnline.js`: Replace it with `MagicMirror²`.
+3. Recommendation: Found `require('https')` in file `node_helper.js`: Replace 'https' by 'node:https'.
 
 ### [MMM-WH2600 by st3v0rr](https://github.com/st3v0rr/MMM-WH2600)
 

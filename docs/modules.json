@@ -916,7 +916,7 @@
       "There is no `package.json`. We need this file to gather information about the module for the module list page.",
       "Recommendation: Found `XMLHttpRequest` in file `MMM-Bensinpriser.js`: Replace it with built-in fetch."
     ],
-    "last_commit": "2023-11-27"
+    "last_commit": "2023-12-04"
   },
   {
     "name": "MMM-bergfex",
@@ -1875,7 +1875,9 @@
     "maintainer": "KristjanESPERANTO",
     "maintainerURL": "",
     "description": "Show meals from canteens (Germany and Switzerland).",
-    "issues": [],
+    "issues": [
+      "Information: There are updates for 1 dependencie(s):\n   -  lint-staged  ^15.1.0  \u2192  ^15.2.0\n"
+    ],
     "tags": [
       "openmensa"
     ],
@@ -2078,6 +2080,24 @@
     "license": "MIT",
     "image": "assets-img-screenshot.jpg",
     "last_commit": "2019-08-24"
+  },
+  {
+    "name": "MMM-CivitAI",
+    "url": "https://github.com/Andoramb/MMM-CivitAI",
+    "id": "Andoramb/MMM-CivitAI",
+    "maintainer": "Andoramb",
+    "maintainerURL": "",
+    "description": "Display AI generated images from CivitAI.",
+    "issues": [
+      "`package.json` issue: No description",
+      "`package.json` issue: No repository field.",
+      "There are no specific keywords in 'package.json'. We would use them as tags on the module list page. Add a few meaningful terms to the keywords in the package.json. Not just \u201cmagicmirror\u201d or \u201cmodule\u201d.",
+      "Recommendation: Found `XMLHttpRequest` in file `MMM-CivitAI.js`: Replace it with built-in fetch.",
+      "Warning: No LICENSE file."
+    ],
+    "license": "ISC",
+    "image": "image-1.jpg",
+    "last_commit": "2023-12-03"
   },
   {
     "name": "MMM-Clash-Royale",
@@ -3603,7 +3623,9 @@
     "maintainer": "KristjanESPERANTO",
     "maintainerURL": "",
     "description": "The easiest way to show pictures on your mirror.",
-    "issues": [],
+    "issues": [
+      "Information: There are updates for 1 dependencie(s):\n   -  lint-staged  ^15.1.0  \u2192  ^15.2.0\n"
+    ],
     "tags": [
       "picture"
     ],
@@ -9200,7 +9222,7 @@
     "id": "https://bitbucket.org/rsperezn/mmm-uvindex",
     "maintainer": "rsperezn",
     "maintainerURL": "https://bitbucket.org/rsperezn",
-    "description": "Displays the current and forecasted UV Index fo a given location given its longitude and latitude. It requires a free API token from <a target=\"_blank\" href=\"https://www.openuv.io/\">https://www.openuv.io/</a>.",
+    "description": "Displays the current and forecasted UV Index for a given location given its longitude and latitude. It requires a free API token from <a target=\"_blank\" href=\"https://www.openuv.io/\">https://www.openuv.io/</a>.",
     "issues": [
       "There is no `package.json`. We need this file to gather information about the module for the module list page.",
       "Recommendation: Module name doesn't follow the recommended pattern (it doesn't start with `MMM-`). Consider renaming your module.",
@@ -9663,7 +9685,7 @@
     "maintainerURL": "",
     "description": "A module that subscribes topics from MQTT message queues, and displays the payload values in a table, with configurable labels.",
     "issues": [
-      "Information: There are updates for 5 dependencie(s):\n   -  eslint                  ^7.23.0  \u2192  ^8.55.0\n   -  eslint-config-prettier   ^8.1.0  \u2192   ^9.1.0\n   -  eslint-plugin-prettier   ^3.3.1  \u2192   ^5.0.1\n   -  mqtt                     ^4.3.7  \u2192   ^5.3.1\n   -  mqtt-packet              ^6.3.2  \u2192   ^9.0.0\n"
+      "Information: There are updates for 5 dependencie(s):\n   -  eslint                  ^7.23.0  \u2192  ^8.55.0\n   -  eslint-config-prettier   ^8.1.0  \u2192   ^9.1.0\n   -  eslint-plugin-prettier   ^3.3.1  \u2192   ^5.0.1\n   -  mqtt                     ^4.3.7  \u2192   ^5.3.2\n   -  mqtt-packet              ^6.3.2  \u2192   ^9.0.0\n"
     ],
     "tags": [
       "smarthome",
@@ -9715,7 +9737,7 @@
     "maintainerURL": "",
     "description": "A module to subscribe to MQTT topics and forward the payload (as it is) as notification and vice versa. Features QoS, Clean Session, Retained Messages and Shortcuts.",
     "issues": [
-      "Information: There are updates for 1 dependencie(s):\n   -  mqtt  ^1.10.0  \u2192  ^5.3.1\n"
+      "Information: There are updates for 1 dependencie(s):\n   -  mqtt  ^1.10.0  \u2192  ^5.3.2\n"
     ],
     "tags": [
       "mqtt"
@@ -9732,7 +9754,7 @@
     "maintainerURL": "https://github.com/Tom-Hirschberger",
     "description": "A powerful module that subscribes to MQTT broker and read/send MQTT messages and MM Notifications with a lot of individual setup/rules. Allows you to integrate MM into smart home like Home Assistant. Powerful automation with structured Noti and MQTT dictionaries rules (e.g. one mqtt message could trigger many predefined noti, and one mm-noti could trigger different predefined mqtt messages).",
     "issues": [
-      "Information: There are updates for 2 dependencie(s):\n   -  jsonpath-plus  5.0.1  \u2192  7.2.0\n   -  mqtt           4.3.7  \u2192  5.3.1\n"
+      "Information: There are updates for 2 dependencie(s):\n   -  jsonpath-plus  5.0.1  \u2192  7.2.0\n   -  mqtt           4.3.7  \u2192  5.3.2\n"
     ],
     "tags": [
       "mqtt"
@@ -11381,7 +11403,7 @@
     "description": "The module displays oil prices for the current year based on Chart.js and the API of heizoel24.de.",
     "issues": [
       "Deprecated: Found `require('request')` in file `node_helper.js`: Replace it with built-in fetch.",
-      "Information: There are updates for 2 dependencie(s):\n   -  chart.js             ^3.7.1  \u2192  ^4.4.0\n   -  magicmirror-rebuild  ^1.0.5  \u2192  ^1.0.9\n"
+      "Information: There are updates for 2 dependencie(s):\n   -  chart.js             ^3.7.1  \u2192  ^4.4.1\n   -  magicmirror-rebuild  ^1.0.5  \u2192  ^1.0.9\n"
     ],
     "tags": [
       "oil",
@@ -11449,7 +11471,9 @@
     "maintainer": "KristjanESPERANTO",
     "maintainerURL": "",
     "description": "Display current and forecast weather based on the Openweathermap OneCall API data with alternative formatting.",
-    "issues": [],
+    "issues": [
+      "Information: There are updates for 1 dependencie(s):\n   -  lint-staged  ^15.1.0  \u2192  ^15.2.0\n"
+    ],
     "tags": [
       "weather"
     ],
@@ -12041,7 +12065,7 @@
     "description": "The module displays pellet prices for the current year based on Chart.js and the API of heizpellets24.de.",
     "issues": [
       "Deprecated: Found `require('request')` in file `node_helper.js`: Replace it with built-in fetch.",
-      "Information: There are updates for 2 dependencie(s):\n   -  chart.js             ^3.7.1  \u2192  ^4.4.0\n   -  magicmirror-rebuild  ^1.0.5  \u2192  ^1.0.9\n"
+      "Information: There are updates for 2 dependencie(s):\n   -  chart.js             ^3.7.1  \u2192  ^4.4.1\n   -  magicmirror-rebuild  ^1.0.5  \u2192  ^1.0.9\n"
     ],
     "tags": [
       "pellet",
@@ -12258,7 +12282,7 @@
     "maintainerURL": "https://github.com/SalekurPolas",
     "description": "Informational module to display mirror information like Raspberry Pi model, unique serial number, network information, IPv4, IPv6, MAC address, OS information, CPU information, and more.",
     "issues": [
-      "Information: There are updates for 2 dependencie(s):\n   -  async              ^3.2.0  \u2192    ^3.2.5\n   -  systeminformation  ^5.6.7  \u2192  ^5.21.18\n"
+      "Information: There are updates for 2 dependencie(s):\n   -  async              ^3.2.0  \u2192    ^3.2.5\n   -  systeminformation  ^5.6.7  \u2192  ^5.21.20\n"
     ],
     "tags": [
       "raspberrypi",
@@ -13016,7 +13040,9 @@
     "maintainer": "KristjanESPERANTO",
     "maintainerURL": "",
     "description": "Displays departure information for public transport in Germany. The <a target=\"_blank\" href=\"https://github.com/public-transport/hafas-client\">hafas-client</a> is used to query the information. The interface of the Deutsche Bahn is used as standard, this includes most of the local networks with buses, trams, etc. However, other hafas interfaces can also be used.",
-    "issues": [],
+    "issues": [
+      "Information: There are updates for 1 dependencie(s):\n   -  lint-staged  ^15.1.0  \u2192  ^15.2.0\n"
+    ],
     "tags": [
       "public transport"
     ],
@@ -13703,7 +13729,7 @@
     "maintainerURL": "",
     "description": "Show your daily time spent using your digital devices with <a target=\"_blank\" href=\"https://www.rescuetime.com\">RescueTime</a>.",
     "issues": [
-      "Information: There are updates for 3 dependencie(s):\n   -  chart.js   ^2.7.2  \u2192   ^4.4.0\n   -  date-fns  ^1.29.0  \u2192  ^2.30.0\n   -  eslint    ^4.19.1  \u2192  ^8.55.0\n"
+      "Information: There are updates for 3 dependencie(s):\n   -  chart.js   ^2.7.2  \u2192   ^4.4.1\n   -  date-fns  ^1.29.0  \u2192  ^2.30.0\n   -  eslint    ^4.19.1  \u2192  ^8.55.0\n"
     ],
     "tags": [
       "rescuetime",
@@ -16056,7 +16082,7 @@
     "description": "Displays data from <a target=\"_blank\" href=\"https://github.com/bassmaster187/TeslaLogger\">TeslaLogger</a> or/and <a target=\"_blank\" href=\"https://github.com/adriankumpf/teslamate\">TeslaMate</a> via MQTT.",
     "issues": [
       "There are no keywords in 'package.json'. We would use them as tags on the module list page.",
-      "Information: There are updates for 4 dependencie(s):\n   -  jsonpointer  ^5.0.0  \u2192   ^5.0.1\n   -  mocha        ^6.2.1  \u2192  ^10.2.0\n   -  mqtt         ^4.3.7  \u2192   ^5.3.1\n   -  mqtt-packet  ^6.2.1  \u2192   ^9.0.0\n"
+      "Information: There are updates for 4 dependencie(s):\n   -  jsonpointer  ^5.0.0  \u2192   ^5.0.1\n   -  mocha        ^6.2.1  \u2192  ^10.2.0\n   -  mqtt         ^4.3.7  \u2192   ^5.3.2\n   -  mqtt-packet  ^6.2.1  \u2192   ^9.0.0\n"
     ],
     "license": "MIT",
     "image": "img-MMM-TeslaLogger-ScreenShot-image.jpg",
@@ -17923,6 +17949,22 @@
     "license": "MIT",
     "image": "screenshot.jpg",
     "last_commit": "2020-07-20"
+  },
+  {
+    "name": "MMM-WetterOnline",
+    "url": "https://github.com/bogenpirat/MMM-WetterOnline",
+    "id": "bogenpirat/MMM-WetterOnline",
+    "maintainer": "bogenpirat",
+    "maintainerURL": "",
+    "description": "Display weather data from WetterOnline.",
+    "issues": [
+      "There are no keywords in 'package.json'. We would use them as tags on the module list page.",
+      "Typo: Found `Magic Mirror` in file `MMM-WetterOnline.js`: Replace it with `MagicMirror\u00b2`.",
+      "Recommendation: Found `require('https')` in file `node_helper.js`: Replace 'https' by 'node:https'."
+    ],
+    "license": "GPL-3.0",
+    "image": ".github-preview.jpg",
+    "last_commit": "2023-07-23"
   },
   {
     "name": "MMM-WH2600",

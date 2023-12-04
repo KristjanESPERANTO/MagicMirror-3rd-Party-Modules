@@ -1092,6 +1092,15 @@
     "issues": []
   },
   {
+    "name": "MMM-CivitAI",
+    "url": "https://github.com/Andoramb/MMM-CivitAI",
+    "id": "Andoramb/MMM-CivitAI",
+    "maintainer": "Andoramb",
+    "maintainerURL": "",
+    "description": "Display AI generated images from CivitAI.",
+    "issues": []
+  },
+  {
     "name": "MMM-Clash-Royale",
     "url": "https://github.com/ianperrin/MMM-Clash-Royale",
     "id": "ianperrin/MMM-Clash-Royale",
@@ -4851,7 +4860,7 @@
     "id": "https://bitbucket.org/rsperezn/mmm-uvindex",
     "maintainer": "rsperezn",
     "maintainerURL": "https://bitbucket.org/rsperezn",
-    "description": "Displays the current and forecasted UV Index fo a given location given its longitude and latitude. It requires a free API token from <a target=\"_blank\" href=\"https://www.openuv.io/\">https://www.openuv.io/</a>.",
+    "description": "Displays the current and forecasted UV Index for a given location given its longitude and latitude. It requires a free API token from <a target=\"_blank\" href=\"https://www.openuv.io/\">https://www.openuv.io/</a>.",
     "issues": []
   },
   {
@@ -9335,6 +9344,15 @@
     "maintainer": "hdurdle",
     "maintainerURL": "",
     "description": "Displays next refuse and recycling collections for West Berkshire (UK) houses based on Unique Property Reference Number.",
+    "issues": []
+  },
+  {
+    "name": "MMM-WetterOnline",
+    "url": "https://github.com/bogenpirat/MMM-WetterOnline",
+    "id": "bogenpirat/MMM-WetterOnline",
+    "maintainer": "bogenpirat",
+    "maintainerURL": "",
+    "description": "Display weather data from WetterOnline.",
     "issues": []
   },
   {

@@ -1634,6 +1634,21 @@
     "image": "assets-img-screenshot.jpg"
   },
   {
+    "name": "MMM-CivitAI",
+    "url": "https://github.com/Andoramb/MMM-CivitAI",
+    "id": "Andoramb/MMM-CivitAI",
+    "maintainer": "Andoramb",
+    "maintainerURL": "",
+    "description": "Display AI generated images from CivitAI.",
+    "issues": [
+      "`package.json` issue: No description",
+      "`package.json` issue: No repository field.",
+      "There are no specific keywords in 'package.json'. We would use them as tags on the module list page. Add a few meaningful terms to the keywords in the package.json. Not just “magicmirror” or “module”."
+    ],
+    "license": "ISC",
+    "image": "image-1.jpg"
+  },
+  {
     "name": "MMM-Clash-Royale",
     "url": "https://github.com/ianperrin/MMM-Clash-Royale",
     "id": "ianperrin/MMM-Clash-Royale",
@@ -7149,7 +7164,7 @@
     "id": "https://bitbucket.org/rsperezn/mmm-uvindex",
     "maintainer": "rsperezn",
     "maintainerURL": "https://bitbucket.org/rsperezn",
-    "description": "Displays the current and forecasted UV Index fo a given location given its longitude and latitude. It requires a free API token from <a target=\"_blank\" href=\"https://www.openuv.io/\">https://www.openuv.io/</a>.",
+    "description": "Displays the current and forecasted UV Index for a given location given its longitude and latitude. It requires a free API token from <a target=\"_blank\" href=\"https://www.openuv.io/\">https://www.openuv.io/</a>.",
     "issues": [
       "There is no `package.json`. We need this file to gather information about the module for the module list page."
     ]
@@ -13913,6 +13928,19 @@
     ],
     "license": "MIT",
     "image": "screenshot.jpg"
+  },
+  {
+    "name": "MMM-WetterOnline",
+    "url": "https://github.com/bogenpirat/MMM-WetterOnline",
+    "id": "bogenpirat/MMM-WetterOnline",
+    "maintainer": "bogenpirat",
+    "maintainerURL": "",
+    "description": "Display weather data from WetterOnline.",
+    "issues": [
+      "There are no keywords in 'package.json'. We would use them as tags on the module list page."
+    ],
+    "license": "GPL-3.0",
+    "image": ".github-preview.jpg"
   },
   {
     "name": "MMM-WH2600",
