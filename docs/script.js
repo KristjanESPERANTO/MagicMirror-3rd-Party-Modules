@@ -23,7 +23,7 @@ function updateModuleCardContainer() {
                 <div class="last-commit">last commit: ${moduleData.last_commit}</div>
               </div>
             `;
-      if (moduleData.issues.length > 0) {
+      if (moduleData.issues > 0) {
         const url = `https://github.com/KristjanESPERANTO/MagicMirror-3rd-Party-Modules/blob/main/result.md#${moduleData.name}-by-${moduleData.maintainer}`;
         card.innerHTML += `<div class="issues"><a target="_blank" href="${url}">🗈</a></div>`;
       }
@@ -80,7 +80,7 @@ function sortData(sortOption) {
           // Put oudated to the end
           !!a.outdated - !!b.outdated ||
           // Sort by issue count
-          a.issues.length - b.issues.length ||
+          a.issues - b.issues ||
           // Sort by last commit date
           b.last_commit.localeCompare(a.last_commit)
       );

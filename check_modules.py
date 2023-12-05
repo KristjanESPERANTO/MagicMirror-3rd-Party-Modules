@@ -229,6 +229,9 @@ def check_modules():
         else:
             stats["maintainer"][module["maintainer"]] += 1
 
+        # Replace the issue array with the issue number. The issues were written to resuld.md and only the number of issues is relevant for the website. This reduces the size of modules.json by more than half.
+        module["issues"] = len(module["issues"])
+
     print(f"{stats['module-counter']} modules analyzed. For results see file result.md.           ")
 
     # Prepearing the markdown output
