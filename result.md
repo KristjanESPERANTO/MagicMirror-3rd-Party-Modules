@@ -1,6 +1,6 @@
 # Result of the module analysis
 
-Last update: 2023-12-04 22:33:21 UTC
+Last update: 2023-12-05 00:42:28 UTC
 
 ## Statistics
 
@@ -2466,7 +2466,7 @@ Last update: 2023-12-04 22:33:21 UTC
 
 1. The branch name is 'master'. Consider renaming it to 'main'.
 2. Information: There are updates for 2 dependencie(s):
-   -  @electron/rebuild             ^3.3.1  →  ^3.4.0
+   -  @electron/rebuild             ^3.3.1  →  ^3.4.1
    -  @google-cloud/text-to-speech  ^3.3.1  →  ^5.0.1
 
 
