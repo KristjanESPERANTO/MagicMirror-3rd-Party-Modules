@@ -1183,7 +1183,7 @@
     "maintainer": "MMM-CalendarExt2",
     "maintainerURL": "",
     "description": "Extended calendar and event view.",
-    "issues": 0,
+    "issues": 1,
     "tags": [
       "calendar"
     ],
@@ -4022,7 +4022,7 @@
     "issues": 3,
     "license": "MIT",
     "image": ".screenshots-theme_insetShadow.jpg",
-    "last_commit": "2020-03-28"
+    "last_commit": "2023-12-07"
   },
   {
     "name": "MMM-GoogleFit",
@@ -4168,7 +4168,7 @@
     "issues": 4,
     "license": "MIT",
     "image": "screen-01-minimal_look.jpg",
-    "last_commit": "2023-01-24"
+    "last_commit": "2023-12-06"
   },
   {
     "name": "MMM-GoogleTTS",
@@ -5233,7 +5233,7 @@
     "maintainer": "KristjanESPERANTO",
     "maintainerURL": "",
     "description": "Displays live video from the International Space Station.",
-    "issues": 0,
+    "issues": 1,
     "tags": [
       "iss",
       "livestream"
@@ -6545,10 +6545,10 @@
     "url": "https://github.com/ItsMeBrille/MMm-MinecraftServer",
     "id": "ItsMeBrille/MMm-MinecraftServer",
     "maintainer": "ItsMeBrille",
-    "maintainerURL": "",
+    "maintainerURL": "https://github.com/ItsMeBrille",
     "description": "Display Minecraft server status and shows list of active players.",
     "issues": 3,
-    "last_commit": "2023-11-27"
+    "last_commit": "2023-12-09"
   },
   {
     "name": "mmm-moon-phases",
@@ -7237,6 +7237,16 @@
     "license": "MIT",
     "image": "screenshots-MMM-MyCommute-screenshot.jpg",
     "last_commit": "2022-02-15"
+  },
+  {
+    "name": "MMM-mycroft-bridge",
+    "url": "https://github.com/oenstrom/MMM-mycroft-bridge",
+    "id": "oenstrom/MMM-mycroft-bridge",
+    "maintainer": "oenstrom",
+    "maintainerURL": "",
+    "description": "A module that connects to the Mycroft messagebus.",
+    "issues": 3,
+    "last_commit": "2022-08-25"
   },
   {
     "name": "MMM-mycroft-wakeword",
@@ -8429,7 +8439,7 @@
     ],
     "license": "MIT",
     "image": ".github-content-banner-social.jpg",
-    "last_commit": "2023-10-21"
+    "last_commit": "2023-12-07"
   },
   {
     "name": "MMM-OnThisDay",
@@ -8968,7 +8978,7 @@
     "maintainer": "bugsounet",
     "maintainerURL": "",
     "description": "After a configurated time without any user interaction the display will turn off and hide all modules for economy mode.It will wake up with a PIR sensor. [Maintained].",
-    "issues": 1,
+    "issues": 2,
     "tags": [
       "screen"
     ],
@@ -9370,7 +9380,7 @@
     "maintainerURL": "https://github.com/Fifteen15Studios",
     "description": "Displays prices of select precious metals and commodities, like gold and silver. Retrieves information from API provided by <a target=\"_blank\" href=\"https://api.metals.live\">api.metals.live</a>.",
     "issues": 5,
-    "last_commit": "2023-04-20"
+    "last_commit": "2023-12-10"
   },
   {
     "name": "MMM-Pregnancy",
@@ -10417,7 +10427,7 @@
     "issues": 5,
     "license": "MIT",
     "image": "docs-module_graph.jpg",
-    "last_commit": "2020-06-29"
+    "last_commit": "2023-12-06"
   },
   {
     "name": "MMM-SearchLight",
@@ -11410,7 +11420,7 @@
     ],
     "license": "ISC",
     "image": "image.jpg",
-    "last_commit": "2023-11-16"
+    "last_commit": "2023-12-05"
   },
   {
     "name": "MMM-Swipe",
@@ -13186,7 +13196,7 @@
     "issues": 6,
     "license": "MIT",
     "image": "MMM-WordGenius.jpg",
-    "last_commit": "2022-02-05"
+    "last_commit": "2023-12-04"
   },
   {
     "name": "MMM-wordnik",

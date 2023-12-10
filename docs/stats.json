@@ -1,11 +1,11 @@
 {
-  "module-counter": 1071,
+  "module-counter": 1072,
   "modules-with-image-counter": 440,
-  "modules-with-issues-counter": 1062,
-  "issue-counter": 4827,
-  "last-update": "2023-12-05 00:42:28",
+  "modules-with-issues-counter": 1065,
+  "issue-counter": 4833,
+  "last-update": "2023-12-10 18:49:50",
   "repository-hoster": {
-    "github": 1062,
+    "github": 1063,
     "gitlab": 8,
     "bitbucket": 1
   },
@@ -435,6 +435,7 @@
     "ThePirateWhoSmellsOfSunflowers": 1,
     "jrettsch": 1,
     "ptrk95": 1,
+    "oenstrom": 1,
     "smartgic": 1,
     "ethanpartida": 1,
     "TheVieiraAkA": 1,

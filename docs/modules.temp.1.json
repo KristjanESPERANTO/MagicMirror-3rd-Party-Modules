@@ -4733,7 +4733,7 @@
     "url": "https://github.com/ItsMeBrille/MMm-MinecraftServer",
     "id": "ItsMeBrille/MMm-MinecraftServer",
     "maintainer": "ItsMeBrille",
-    "maintainerURL": "",
+    "maintainerURL": "https://github.com/ItsMeBrille",
     "description": "Display Minecraft server status and shows list of active players.",
     "issues": []
   },
@@ -5231,6 +5231,15 @@
     "maintainer": "qistoph",
     "maintainerURL": "",
     "description": "Displays your commute times to several destinations. Highly configurable.",
+    "issues": []
+  },
+  {
+    "name": "MMM-mycroft-bridge",
+    "url": "https://github.com/oenstrom/MMM-mycroft-bridge",
+    "id": "oenstrom/MMM-mycroft-bridge",
+    "maintainer": "oenstrom",
+    "maintainerURL": "",
+    "description": "A module that connects to the Mycroft messagebus.",
     "issues": []
   },
   {
