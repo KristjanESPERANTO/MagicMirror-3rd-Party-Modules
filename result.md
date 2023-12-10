@@ -1,6 +1,6 @@
 # Result of the module analysis
 
-Last update: 2023-12-10 18:49:50 UTC
+Last update: 2023-12-10 21:46:50 UTC
 
 ## Statistics
 
@@ -8,8 +8,8 @@ Last update: 2023-12-10 18:49:50 UTC
 |:---------------------|:--------:|
 | modules analyzed     |   1072   |
 | maintainer           |    618   |
-| modules with issues  |   1065   |
-| issues               |   4833   |
+| modules with issues  |   1058   |
+| issues               |   4823   |
 | modules at github    |   1063   |
 | modules at gitlab    |      8   |
 | modules at bitbucket |      1   |
@@ -732,14 +732,6 @@ Last update: 2023-12-10 18:49:50 UTC
    -  tsdav         ^2.0.5  →    ^2.0.6
 
 
-### [MMM-CalendarExt2 by MMM-CalendarExt2](https://github.com/MMM-CalendarExt2/MMM-CalendarExt2)
-
-1. Information: There are updates for 3 dependencie(s):
-   -  prettier                     ^3.1.0  →   ^3.1.1
-   -  stylelint                  ^15.11.0  →  ^16.0.1
-   -  stylelint-config-standard   ^34.0.0  →  ^35.0.0
-
-
 ### [MMM-CalendarExt3 by MMRIZE](https://github.com/MMRIZE/MMM-CalendarExt3)
 
 1. No image found.
@@ -826,15 +818,6 @@ Last update: 2023-12-10 18:49:50 UTC
 3. Recommendation: Found `require('https')` in file `node_helper.js`: Replace 'https' by 'node:https'.
 4. The branch name is 'master'. Consider renaming it to 'main'.
 
-### [MMM-Canteen by KristjanESPERANTO](https://github.com/KristjanESPERANTO/MMM-Canteen)
-
-1. Information: There are updates for 4 dependencie(s):
-   -  lint-staged                 ^15.1.0  →  ^15.2.0
-   -  prettier                     ^3.1.0  →   ^3.1.1
-   -  stylelint                  ^15.11.0  →  ^16.0.1
-   -  stylelint-config-standard   ^34.0.0  →  ^35.0.0
-
-
 ### [MMM-Canvas by chase-cromwell](https://github.com/chase-cromwell/MMM-Canvas)
 
 1. There is no `package.json`. We need this file to gather information about the module for the module list page.
@@ -859,13 +842,6 @@ Last update: 2023-12-10 18:49:50 UTC
 ### [MMM-Carousel by shbatm](https://github.com/shbatm/MMM-Carousel)
 
 1. The branch name is 'master'. Consider renaming it to 'main'.
-2. Information: There are updates for 5 dependencie(s):
-   -  eslint                      ^8.54.0  →  ^8.55.0
-   -  eslint-config-prettier       ^9.0.0  →   ^9.1.0
-   -  prettier                     ^3.1.0  →   ^3.1.1
-   -  stylelint                  ^15.11.0  →  ^16.0.1
-   -  stylelint-config-standard   ^34.0.0  →  ^35.0.0
-
 
 ### [MMM-CECControl by nischi](https://github.com/nischi/MMM-CECControl)
 
@@ -1610,15 +1586,6 @@ Last update: 2023-12-10 18:49:50 UTC
 3. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
 4. Deprecated: Found `require('request')` in file `node_helper.js`: Replace it with built-in fetch.
 5. The branch name is 'master'. Consider renaming it to 'main'.
-
-### [MMM-EasyPix by KristjanESPERANTO](https://github.com/KristjanESPERANTO/MMM-EasyPix)
-
-1. Information: There are updates for 4 dependencie(s):
-   -  lint-staged                 ^15.1.0  →  ^15.2.0
-   -  prettier                     ^3.1.0  →   ^3.1.1
-   -  stylelint                  ^15.11.0  →  ^16.0.1
-   -  stylelint-config-standard   ^34.0.0  →  ^35.0.0
-
 
 ### [MMM-Ecobee by parnic](https://github.com/parnic/MMM-Ecobee)
 
@@ -3115,12 +3082,6 @@ Last update: 2023-12-10 18:49:50 UTC
 5. Typo: Found `Magic Mirror` in file `package.json`: Replace it with `MagicMirror²`.
 6. The branch name is 'master'. Consider renaming it to 'main'.
 
-### [MMM-ISS-Live by KristjanESPERANTO](https://github.com/KristjanESPERANTO/MMM-ISS-Live/)
-
-1. Information: There are updates for 1 dependencie(s):
-   -  prettier  ^3.1.0  →  ^3.1.1
-
-
 ### [MMM-ISY by shbatm](https://github.com/shbatm/MMM-ISY)
 
 1. There are no keywords in 'package.json'. We would use them as tags on the module list page.
@@ -4189,9 +4150,6 @@ Last update: 2023-12-10 18:49:50 UTC
 ### [MMM-MotionDetector by rejas](https://github.com/rejas/MMM-MotionDetector)
 
 1. No image found.
-2. Information: There are updates for 1 dependencie(s):
-   -  eslint  ^8.8.0  →  ^8.55.0
-
 
 ### [MMM-MotionDisplay by pjestico](https://github.com/pjestico/MMM-MotionDisplay)
 
@@ -5063,13 +5021,6 @@ Last update: 2023-12-10 18:49:50 UTC
 4. Warning: No LICENSE file.
 5. The branch name is 'master'. Consider renaming it to 'main'.
 
-### [MMM-OneCallWeather by KristjanESPERANTO](https://github.com/KristjanESPERANTO/MMM-OneCallWeather)
-
-1. Information: There are updates for 2 dependencie(s):
-   -  lint-staged  ^15.1.0  →  ^15.2.0
-   -  prettier      ^3.1.0  →   ^3.1.1
-
-
 ### [MMM-OneTouchReveal by Canonip](https://github.com/Canonip/MMM-OneTouchReveal)
 
 1. `package.json` issue: No repository field.
@@ -5755,22 +5706,6 @@ Last update: 2023-12-10 18:49:50 UTC
 ### [MMM-PublicTransportBerlin by deg0nz](https://github.com/deg0nz/MMM-PublicTransportBerlin)
 
 1. The branch name is 'master'. Consider renaming it to 'main'.
-2. Information: There are updates for 5 dependencie(s):
-   -  eslint                      ^8.54.0  →  ^8.55.0
-   -  eslint-config-prettier       ^9.0.0  →   ^9.1.0
-   -  prettier                     ^3.1.0  →   ^3.1.1
-   -  stylelint                  ^15.11.0  →  ^16.0.1
-   -  stylelint-config-standard   ^34.0.0  →  ^35.0.0
-
-
-### [MMM-PublicTransportHafas by KristjanESPERANTO](https://github.com/KristjanESPERANTO/MMM-PublicTransportHafas)
-
-1. Information: There are updates for 4 dependencie(s):
-   -  lint-staged                 ^15.1.0  →  ^15.2.0
-   -  prettier                     ^3.1.0  →   ^3.1.1
-   -  stylelint                  ^15.11.0  →  ^16.0.1
-   -  stylelint-config-standard   ^34.0.0  →  ^35.0.0
-
 
 ### [MMM-PublicTransportVVO by ChristianGeie](https://github.com/ChristianGeie/MMM-PublicTransportVVO)
 
@@ -5865,15 +5800,6 @@ Last update: 2023-12-10 18:49:50 UTC
 2. Typo: Found `Magic Mirror` in file `MMM-rain-forecast.js`: Replace it with `MagicMirror²`.
 3. Deprecated: Found `require('request')` in file `node_helper.js`: Replace it with built-in fetch.
 4. The branch name is 'master'. Consider renaming it to 'main'.
-
-### [MMM-RAIN-MAP by jalibu](https://github.com/jalibu/MMM-RAIN-MAP)
-
-1. Information: There are updates for 4 dependencie(s):
-   -  eslint      ^8.53.0  →  ^8.55.0
-   -  prettier     ^2.8.8  →   ^3.1.1
-   -  rollup       ^4.3.0  →   ^4.7.0
-   -  typescript   ^5.2.2  →   ^5.3.3
-
 
 ### [MMM-RAIN-RADAR by jojoduquartier](https://github.com/jojoduquartier/MMM-RAIN-RADAR)
 

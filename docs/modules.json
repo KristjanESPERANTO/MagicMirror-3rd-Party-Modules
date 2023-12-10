@@ -1183,7 +1183,7 @@
     "maintainer": "MMM-CalendarExt2",
     "maintainerURL": "",
     "description": "Extended calendar and event view.",
-    "issues": 1,
+    "issues": 0,
     "tags": [
       "calendar"
     ],
@@ -1377,7 +1377,7 @@
     "maintainer": "KristjanESPERANTO",
     "maintainerURL": "",
     "description": "Show meals from canteens (Germany and Switzerland).",
-    "issues": 1,
+    "issues": 0,
     "tags": [
       "openmensa"
     ],
@@ -1422,7 +1422,7 @@
     "maintainer": "shbatm",
     "maintainerURL": "https://github.com/shbatm",
     "description": "Rotate modules, to save space on screen.",
-    "issues": 2,
+    "issues": 1,
     "tags": [
       "carousel",
       "navigation",
@@ -2652,7 +2652,7 @@
     "maintainer": "KristjanESPERANTO",
     "maintainerURL": "",
     "description": "The easiest way to show pictures on your mirror.",
-    "issues": 1,
+    "issues": 0,
     "tags": [
       "picture"
     ],
@@ -5233,7 +5233,7 @@
     "maintainer": "KristjanESPERANTO",
     "maintainerURL": "",
     "description": "Displays live video from the International Space Station.",
-    "issues": 1,
+    "issues": 0,
     "tags": [
       "iss",
       "livestream"
@@ -6922,7 +6922,7 @@
     "maintainer": "rejas",
     "maintainerURL": "",
     "description": "Camera based motion detector that turns of your display after a while, updated fork of alexyaks version.",
-    "issues": 2,
+    "issues": 1,
     "tags": [
       "motion detection"
     ],
@@ -8355,7 +8355,7 @@
     "maintainer": "KristjanESPERANTO",
     "maintainerURL": "",
     "description": "Display current and forecast weather based on the Openweathermap OneCall API data with alternative formatting.",
-    "issues": 1,
+    "issues": 0,
     "tags": [
       "weather"
     ],
@@ -9487,7 +9487,7 @@
     "maintainer": "deg0nz",
     "maintainerURL": "",
     "description": "Display departures for public transport in Berlin and Brandenburg (Covers VBB Area).",
-    "issues": 2,
+    "issues": 1,
     "tags": [
       "public transport",
       "public transport berlin",
@@ -9504,7 +9504,7 @@
     "maintainer": "KristjanESPERANTO",
     "maintainerURL": "",
     "description": "Displays departure information for public transport in Germany. The <a target=\"_blank\" href=\"https://github.com/public-transport/hafas-client\">hafas-client</a> is used to query the information. The interface of the Deutsche Bahn is used as standard, this includes most of the local networks with buses, trams, etc. However, other hafas interfaces can also be used.",
-    "issues": 1,
+    "issues": 0,
     "tags": [
       "public transport"
     ],
@@ -9676,7 +9676,7 @@
     "maintainer": "jalibu",
     "maintainerURL": "https://github.com/jalibu",
     "description": "A rain radar map based on OpenStreetMap. Multiple location markers, option for alternating positions and zoom levels.",
-    "issues": 1,
+    "issues": 0,
     "tags": [
       "weather",
       "rain",
