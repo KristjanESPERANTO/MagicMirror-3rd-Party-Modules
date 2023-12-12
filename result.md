@@ -1,16 +1,16 @@
 # Result of the module analysis
 
-Last update: 2023-12-10 21:46:50 UTC
+Last update: 2023-12-12 10:53:14 UTC
 
 ## Statistics
 
 |                      | number   |
 |:---------------------|:--------:|
-| modules analyzed     |   1072   |
-| maintainer           |    618   |
-| modules with issues  |   1058   |
-| issues               |   4823   |
-| modules at github    |   1063   |
+| modules analyzed     |   1073   |
+| maintainer           |    619   |
+| modules with issues  |   1059   |
+| issues               |   4822   |
+| modules at github    |   1064   |
 | modules at gitlab    |      8   |
 | modules at bitbucket |      1   |
 
@@ -2818,10 +2818,7 @@ Last update: 2023-12-10 21:46:50 UTC
 ### [MMM-iCloud-Client by bitte-ein-bit](https://github.com/bitte-ein-bit/MMM-iCloud-Client)
 
 1. No image found.
-2. Typo: Found `Magic Mirror` in file `MMM-iCloud-Client.js`: Replace it with `MagicMirror²`.
-3. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
-4. Typo: Found `Magic Mirror` in file `package.json`: Replace it with `MagicMirror²`.
-5. The branch name is 'master'. Consider renaming it to 'main'.
+2. The branch name is 'master'. Consider renaming it to 'main'.
 
 ### [MMM-IconDisplayer by wiedsee](https://github.com/wiedsee/MMM-IconDisplayer)
 
@@ -3106,7 +3103,7 @@ Last update: 2023-12-10 21:46:50 UTC
 1. Information: There are updates for 5 dependencie(s):
    -  eslint          ^8.53.0  →  ^8.55.0
    -  prettier         ^2.8.8  →   ^3.1.1
-   -  rollup          ^2.79.0  →   ^4.7.0
+   -  rollup          ^2.79.0  →   ^4.8.0
    -  typescript       ^5.2.2  →   ^5.3.3
    -  yahoo-finance2   ^2.8.1  →   ^2.9.0
 
@@ -5727,6 +5724,11 @@ Last update: 2023-12-10 21:46:50 UTC
 4. No image found.
 5. Warning: No LICENSE file.
 6. The branch name is 'master'. Consider renaming it to 'main'.
+
+### [MMM-Pure-Snow by ptornhult](https://github.com/ptornhult/MMM-Pure-Snow)
+
+1. There is no `package.json`. We need this file to gather information about the module for the module list page.
+2. Typo: Found `Magic Mirror` in file `MMM-Pure-Snow.js`: Replace it with `MagicMirror²`.
 
 ### [MMM-PurpleAir by ajones](https://github.com/ajones/MMM-PurpleAir)
 

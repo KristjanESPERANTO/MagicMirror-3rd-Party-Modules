@@ -1,11 +1,11 @@
 {
-  "module-counter": 1072,
+  "module-counter": 1073,
   "modules-with-image-counter": 440,
-  "modules-with-issues-counter": 1058,
-  "issue-counter": 4823,
-  "last-update": "2023-12-10 21:46:50",
+  "modules-with-issues-counter": 1059,
+  "issue-counter": 4822,
+  "last-update": "2023-12-12 10:53:14",
   "repository-hoster": {
-    "github": 1063,
+    "github": 1064,
     "gitlab": 8,
     "bitbucket": 1
   },
@@ -502,6 +502,7 @@
     "daxiang28": 1,
     "ChristianGeie": 1,
     "alonsourbano": 1,
+    "ptornhult": 1,
     "ajones": 1,
     "JasonVonKrueger": 1,
     "Daniel1145": 1,

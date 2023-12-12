@@ -110,6 +110,7 @@ This script goes through all cloned modules and performs various checks. The res
   - Is depandabot there?
     - Is it set to monthly?
     - Only production?
+- check for old eslint config file
 
 ### Discarded ideas
 

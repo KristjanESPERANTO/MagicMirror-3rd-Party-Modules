@@ -6868,6 +6868,15 @@
     "outdated": "Abandoned. Repo has been archived at 2022-08-26."
   },
   {
+    "name": "MMM-Pure-Snow",
+    "url": "https://github.com/ptornhult/MMM-Pure-Snow",
+    "id": "ptornhult/MMM-Pure-Snow",
+    "maintainer": "ptornhult",
+    "maintainerURL": "",
+    "description": "Another snow plugin to improve your winter experience.",
+    "issues": []
+  },
+  {
     "name": "MMM-PurpleAir",
     "url": "https://github.com/ajones/MMM-PurpleAir",
     "id": "ajones/MMM-PurpleAir",

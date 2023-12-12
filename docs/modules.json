@@ -660,7 +660,7 @@
     "maintainerURL": "https://github.com/ItsMeBrille",
     "description": "Display current fuel prices at your nearest gas station in Norway.",
     "issues": 2,
-    "last_commit": "2023-12-04"
+    "last_commit": "2023-12-10"
   },
   {
     "name": "MMM-bergfex",
@@ -1383,7 +1383,7 @@
     ],
     "license": "MIT",
     "image": "img-example1.jpg",
-    "last_commit": "2023-12-02"
+    "last_commit": "2023-12-10"
   },
   {
     "name": "MMM-Canvas",
@@ -4805,12 +4805,12 @@
     "maintainer": "bitte-ein-bit",
     "maintainerURL": "",
     "description": "Load iCloud addressbook and provide birthday iCal feed for calendar module and addressbook for <a target=\"_blank\" href=\"https://github.com/paviro/MMM-FRITZ-Box-Callmonitor\">MMM-FRITZ-Box-Callmonitor</a>.",
-    "issues": 5,
+    "issues": 2,
     "tags": [
-      "carddav-client"
+      "icloud"
     ],
     "license": "MIT",
-    "last_commit": "2016-04-28"
+    "last_commit": "2023-12-12"
   },
   {
     "name": "MMM-IconDisplayer",
@@ -5779,7 +5779,7 @@
       "tic",
       "teleinfo"
     ],
-    "last_commit": "2023-11-28"
+    "last_commit": "2023-12-11"
   },
   {
     "name": "MMM-LoadShedding",
@@ -6548,7 +6548,7 @@
     "maintainerURL": "https://github.com/ItsMeBrille",
     "description": "Display Minecraft server status and shows list of active players.",
     "issues": 3,
-    "last_commit": "2023-12-09"
+    "last_commit": "2023-12-10"
   },
   {
     "name": "mmm-moon-phases",
@@ -6760,7 +6760,7 @@
     "maintainerURL": "",
     "description": "Companion module for MMPM to enable hiding/showing of MagicMirror\u00b2 modules.",
     "issues": 2,
-    "last_commit": "2023-11-30"
+    "last_commit": "2023-12-11"
   },
   {
     "name": "MMM-Modulebar",
@@ -9552,6 +9552,16 @@
     "outdated": "Abandoned. Repo has been archived at 2022-08-26.",
     "license": "ISC",
     "last_commit": "2018-04-18"
+  },
+  {
+    "name": "MMM-Pure-Snow",
+    "url": "https://github.com/ptornhult/MMM-Pure-Snow",
+    "id": "ptornhult/MMM-Pure-Snow",
+    "maintainer": "ptornhult",
+    "maintainerURL": "",
+    "description": "Another snow plugin to improve your winter experience.",
+    "issues": 2,
+    "last_commit": "2023-12-10"
   },
   {
     "name": "MMM-PurpleAir",
