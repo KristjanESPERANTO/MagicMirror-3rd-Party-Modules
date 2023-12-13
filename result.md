@@ -1,6 +1,6 @@
 # Result of the module analysis
 
-Last update: 2023-12-12 23:45:45 UTC
+Last update: 2023-12-13 11:58:28 UTC
 
 ## Statistics
 
@@ -8,8 +8,8 @@ Last update: 2023-12-12 23:45:45 UTC
 |:---------------------|:--------:|
 | modules analyzed     |   1074   |
 | maintainer           |    620   |
-| modules with issues  |   1058   |
-| issues               |   4809   |
+| modules with issues  |   1056   |
+| issues               |   4805   |
 | modules at github    |   1065   |
 | modules at gitlab    |      8   |
 | modules at bitbucket |      1   |
@@ -5045,11 +5045,6 @@ Last update: 2023-12-12 23:45:45 UTC
    -  prettier   ^3.1.0  →   ^3.1.1
 
 
-### [MMM-OnThisDayWikiApi by slugmuffin](https://github.com/slugmuffin/MMM-OnThisDayWikiApi)
-
-1. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
-2. Deprecated: Found `require('request')` in file `node_helper.js`: Replace it with built-in fetch.
-
 ### [MMM-OpelStatuses by santanachia](https://github.com/santanachia/MMM-OpelStatuses)
 
 1. No image found.
@@ -5702,11 +5697,6 @@ Last update: 2023-12-12 23:45:45 UTC
 4. No image found.
 5. Warning: No LICENSE file.
 6. The branch name is 'master'. Consider renaming it to 'main'.
-
-### [MMM-Pure-Snow by ptornhult](https://github.com/ptornhult/MMM-Pure-Snow)
-
-1. There is no `package.json`. We need this file to gather information about the module for the module list page.
-2. Typo: Found `Magic Mirror` in file `MMM-Pure-Snow.js`: Replace it with `MagicMirror²`.
 
 ### [MMM-PurpleAir by ajones](https://github.com/ajones/MMM-PurpleAir)
 

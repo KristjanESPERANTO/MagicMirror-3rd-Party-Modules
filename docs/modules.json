@@ -7732,7 +7732,7 @@
     ],
     "license": "MIT",
     "image": ".github-preview.bubbles.jpg",
-    "last_commit": "2023-12-12"
+    "last_commit": "2023-12-13"
   },
   {
     "name": "MMM-Netatmo-Presence",
@@ -8469,7 +8469,7 @@
     "maintainer": "slugmuffin",
     "maintainerURL": "https://github.com/slugmuffin",
     "description": "Display historical events from Wikipedia based on the current date using the Wikimedia API. Can display as list or newsfeed style.",
-    "issues": 2,
+    "issues": 0,
     "tags": [
       "events",
       "history",
@@ -9581,8 +9581,14 @@
     "maintainer": "ptornhult",
     "maintainerURL": "",
     "description": "Another snow plugin to improve your winter experience.",
-    "issues": 2,
-    "last_commit": "2023-12-10"
+    "issues": 0,
+    "tags": [
+      "background",
+      "snow"
+    ],
+    "license": "MIT",
+    "image": ".github-snow.jpg",
+    "last_commit": "2023-12-13"
   },
   {
     "name": "MMM-PurpleAir",
