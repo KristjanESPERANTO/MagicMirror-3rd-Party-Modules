@@ -130,6 +130,10 @@ def check_modules():
             "name": "Replace it with `github/super-linter/slim@`.",
             "category": "Recommendation",
         },
+        "jshint": {
+            "name": 'Replace "jshint" by "eslint".',
+            "category": "Recommendation",
+        },
     }
 
     modules_json_file = open("./docs/modules.temp.2.json", encoding="utf-8")
@@ -188,6 +192,9 @@ def check_modules():
 
         if "LICENSE" not in str(sorted(module_directory_path.rglob("*"))):
             module["issues"].append("Warning: No LICENSE file.")
+
+        if "eslintrc" in str(sorted(module_directory_path.rglob("*"))):
+            module["issues"].append("Recommendation: Replace eslintrc by new flat config.")
 
         if not module_directory_path.is_dir():
             module["issues"] = [
