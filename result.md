@@ -1,6 +1,6 @@
 # Result of the module analysis
 
-Last update: 2023-12-13 11:58:28 UTC
+Last update: 2023-12-13 17:40:17 UTC
 
 ## Statistics
 
@@ -8,8 +8,8 @@ Last update: 2023-12-13 11:58:28 UTC
 |:---------------------|:--------:|
 | modules analyzed     |   1074   |
 | maintainer           |    620   |
-| modules with issues  |   1056   |
-| issues               |   4805   |
+| modules with issues  |   1067   |
+| issues               |   5062   |
 | modules at github    |   1065   |
 | modules at gitlab    |      8   |
 | modules at bitbucket |      1   |
@@ -80,9 +80,11 @@ Last update: 2023-12-13 11:58:28 UTC
 1. `package.json` issue: No repository field.
 2. There are no keywords in 'package.json'. We would use them as tags on the module list page.
 3. No image found.
-4. Typo: Found `Magic Mirror` in file `MMM-AirbarHelper.js`: Replace it with `MagicMirror²`.
-5. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
-6. The branch name is 'master'. Consider renaming it to 'main'.
+4. Recommendation: Found `jshint` in file `Gruntfile.js`: Replace "jshint" by "eslint".
+5. Typo: Found `Magic Mirror` in file `MMM-AirbarHelper.js`: Replace it with `MagicMirror²`.
+6. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
+7. Recommendation: Replace eslintrc by new flat config.
+8. The branch name is 'master'. Consider renaming it to 'main'.
 
 ### [MMM-Airly by mstarzec386](https://github.com/mstarzec386/MMM-Airly)
 
@@ -120,7 +122,8 @@ Last update: 2023-12-13 11:58:28 UTC
 ### [MMM-AlarmClock by fewieden](https://github.com/fewieden/MMM-AlarmClock)
 
 1. Typo: Found `MagicMirror2` in file `package.json`: Replace it with `MagicMirror²`.
-2. The branch name is 'master'. Consider renaming it to 'main'.
+2. Recommendation: Replace eslintrc by new flat config.
+3. The branch name is 'master'. Consider renaming it to 'main'.
 
 ### [MMM-alexa by sakirtemel](https://github.com/sakirtemel/MMM-alexa)
 
@@ -141,9 +144,11 @@ Last update: 2023-12-13 11:58:28 UTC
 
 1. No image found.
 2. Typo: Found `Magic Mirror` in file `MMM-AlexaOnOff.js`: Replace it with `MagicMirror²`.
-3. Typo: Found `Magic Mirror` in file `README.md`: Replace it with `MagicMirror²`.
-4. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
-5. The branch name is 'master'. Consider renaming it to 'main'.
+3. Recommendation: Found `jshint` in file `MMM-AlexaOnOff.js`: Replace "jshint" by "eslint".
+4. Typo: Found `Magic Mirror` in file `README.md`: Replace it with `MagicMirror²`.
+5. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
+6. Recommendation: Found `jshint` in file `node_helper.js`: Replace "jshint" by "eslint".
+7. The branch name is 'master'. Consider renaming it to 'main'.
 
 ### [MMM-AllsvenskanStandings by retroflex](https://github.com/retroflex/MMM-AllsvenskanStandings)
 
@@ -262,7 +267,8 @@ Last update: 2023-12-13 11:58:28 UTC
 4. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
 5. Deprecated: Found `require('request')` in file `node_helper.js`: Replace it with built-in fetch.
 6. Warning: No LICENSE file.
-7. The branch name is 'master'. Consider renaming it to 'main'.
+7. Recommendation: Replace eslintrc by new flat config.
+8. The branch name is 'master'. Consider renaming it to 'main'.
 
 ### [MMM-Astronauts by mykle1](https://github.com/mykle1/MMM-Astronauts)
 
@@ -302,6 +308,7 @@ Last update: 2023-12-13 11:58:28 UTC
 2. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
 3. Typo: Found `Magic Mirror` in file `package.json`: Replace it with `MagicMirror²`.
 4. Warning: No LICENSE file.
+5. Recommendation: Replace eslintrc by new flat config.
 
 ### [MMM-Autobahn by JockeyDoe](https://github.com/JockeyDoe/MMM-Autobahn)
 
@@ -529,7 +536,8 @@ Last update: 2023-12-13 11:58:28 UTC
 ### [MMM-BluetoothDevices by timodejong95](https://github.com/timodejong95/MMM-BluetoothDevices)
 
 1. Warning: No LICENSE file.
-2. The branch name is 'master'. Consider renaming it to 'main'.
+2. Recommendation: Replace eslintrc by new flat config.
+3. The branch name is 'master'. Consider renaming it to 'main'.
 
 ### [MMM-BME280 by awitwicki](https://github.com/awitwicki/MMM-BME280)
 
@@ -608,6 +616,7 @@ Last update: 2023-12-13 11:58:28 UTC
 1. There are no keywords in 'package.json'. We would use them as tags on the module list page.
 2. No image found.
 3. Typo: Found `Magic Mirror` in file `README.md`: Replace it with `MagicMirror²`.
+4. Recommendation: Replace eslintrc by new flat config.
 
 ### [MMM-Bose-Soundtouch by spoturdeal](https://github.com/spoturdeal/MMM-Bose-Soundtouch)
 
@@ -643,9 +652,10 @@ Last update: 2023-12-13 11:58:28 UTC
 
 1. Recommendation: Found `require("https")` in file `BringClient.js`: Replace "https" by "node:https".
 2. Recommendation: Found `axios` in file `BringClient.js`: Replace it with built-in fetch.
-3. Typo: Found `Magic Mirror` in file `styles.css`: Replace it with `MagicMirror²`.
-4. Recommendation: Found `axios` in file `package.json`: Replace it with built-in fetch.
-5. The branch name is 'master'. Consider renaming it to 'main'.
+3. Recommendation: Found `jshint` in file `MMM-Bring.js`: Replace "jshint" by "eslint".
+4. Typo: Found `Magic Mirror` in file `styles.css`: Replace it with `MagicMirror²`.
+5. Recommendation: Found `axios` in file `package.json`: Replace it with built-in fetch.
+6. The branch name is 'master'. Consider renaming it to 'main'.
 
 ### [MMM-bringList by rseidt](https://github.com/rseidt/MMM-bringList)
 
@@ -657,9 +667,11 @@ Last update: 2023-12-13 11:58:28 UTC
 
 ### [MMM-Bubi by balassy](https://github.com/balassy/MMM-Bubi)
 
-1. Typo: Found `Magic Mirror` in file `MMM-Bubi.js`: Replace it with `MagicMirror²`.
-2. Recommendation: Found `XMLHttpRequest` in file `MMM-Bubi.js`: Replace it with built-in fetch.
-3. The branch name is 'master'. Consider renaming it to 'main'.
+1. Recommendation: Found `jshint` in file `Gruntfile.js`: Replace "jshint" by "eslint".
+2. Typo: Found `Magic Mirror` in file `MMM-Bubi.js`: Replace it with `MagicMirror²`.
+3. Recommendation: Found `XMLHttpRequest` in file `MMM-Bubi.js`: Replace it with built-in fetch.
+4. Recommendation: Replace eslintrc by new flat config.
+5. The branch name is 'master'. Consider renaming it to 'main'.
 
 ### [MMM-Buienradar by StefanNienhuis](https://github.com/StefanNienhuis/MMM-Buienradar)
 
@@ -731,6 +743,10 @@ Last update: 2023-12-13 11:58:28 UTC
    -  googleapis  ^128.0.0  →  ^129.0.0
    -  tsdav         ^2.0.5  →    ^2.0.6
 
+
+### [MMM-CalendarExt2 by MMM-CalendarExt2](https://github.com/MMM-CalendarExt2/MMM-CalendarExt2)
+
+1. Recommendation: Replace eslintrc by new flat config.
 
 ### [MMM-CalendarExt3 by MMRIZE](https://github.com/MMRIZE/MMM-CalendarExt3)
 
@@ -818,6 +834,10 @@ Last update: 2023-12-13 11:58:28 UTC
 3. Recommendation: Found `require('https')` in file `node_helper.js`: Replace 'https' by 'node:https'.
 4. The branch name is 'master'. Consider renaming it to 'main'.
 
+### [MMM-Canteen by KristjanESPERANTO](https://github.com/KristjanESPERANTO/MMM-Canteen)
+
+1. Recommendation: Replace eslintrc by new flat config.
+
 ### [MMM-Canvas by chase-cromwell](https://github.com/chase-cromwell/MMM-Canvas)
 
 1. There is no `package.json`. We need this file to gather information about the module for the module list page.
@@ -841,14 +861,16 @@ Last update: 2023-12-13 11:58:28 UTC
 
 ### [MMM-Carousel by shbatm](https://github.com/shbatm/MMM-Carousel)
 
-1. The branch name is 'master'. Consider renaming it to 'main'.
+1. Recommendation: Replace eslintrc by new flat config.
+2. The branch name is 'master'. Consider renaming it to 'main'.
 
 ### [MMM-CECControl by nischi](https://github.com/nischi/MMM-CECControl)
 
 1. No image found.
 2. Typo: Found `Magic Mirror` in file `MMM-CECControl.js`: Replace it with `MagicMirror²`.
 3. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
-4. The branch name is 'master'. Consider renaming it to 'main'.
+4. Recommendation: Replace eslintrc by new flat config.
+5. The branch name is 'master'. Consider renaming it to 'main'.
 
 ### [MMM-Census by mykle1](https://github.com/mykle1/MMM-Census)
 
@@ -879,9 +901,11 @@ Last update: 2023-12-13 11:58:28 UTC
 
 1. `package.json` issue: No repository field.
 2. There are no keywords in 'package.json'. We would use them as tags on the module list page.
-3. Typo: Found `Magic Mirror` in file `MMM-Chess-Daily.js`: Replace it with `MagicMirror²`.
-4. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
-5. The branch name is 'master'. Consider renaming it to 'main'.
+3. Recommendation: Found `jshint` in file `Gruntfile.js`: Replace "jshint" by "eslint".
+4. Typo: Found `Magic Mirror` in file `MMM-Chess-Daily.js`: Replace it with `MagicMirror²`.
+5. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
+6. Recommendation: Replace eslintrc by new flat config.
+7. The branch name is 'master'. Consider renaming it to 'main'.
 
 ### [MMM-chromecast by flo80](https://github.com/flo80/MMM-chromecast)
 
@@ -895,12 +919,14 @@ Last update: 2023-12-13 11:58:28 UTC
 
 1. `package.json` issue: No repository field.
 2. There are no keywords in 'package.json'. We would use them as tags on the module list page.
-3. Typo: Found `Magic Mirror` in file `MMM-Chuck-Norris.js`: Replace it with `MagicMirror²`.
-4. Recommendation: Found `XMLHttpRequest` in file `MMM-Chuck-Norris.js`: Replace it with built-in fetch.
-5. Typo: Found `Magic Mirror` in file `README.md`: Replace it with `MagicMirror²`.
-6. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
-7. Typo: Found `Magic Mirror` in file `package.json`: Replace it with `MagicMirror²`.
-8. The branch name is 'master'. Consider renaming it to 'main'.
+3. Recommendation: Found `jshint` in file `Gruntfile.js`: Replace "jshint" by "eslint".
+4. Typo: Found `Magic Mirror` in file `MMM-Chuck-Norris.js`: Replace it with `MagicMirror²`.
+5. Recommendation: Found `XMLHttpRequest` in file `MMM-Chuck-Norris.js`: Replace it with built-in fetch.
+6. Typo: Found `Magic Mirror` in file `README.md`: Replace it with `MagicMirror²`.
+7. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
+8. Typo: Found `Magic Mirror` in file `package.json`: Replace it with `MagicMirror²`.
+9. Recommendation: Replace eslintrc by new flat config.
+10. The branch name is 'master'. Consider renaming it to 'main'.
 
 ### [MMM-CivitAI by Andoramb](https://github.com/Andoramb/MMM-CivitAI)
 
@@ -916,7 +942,8 @@ Last update: 2023-12-13 11:58:28 UTC
 2. Typo: Found `Magic Mirror` in file `MMM-Clash-Royale.js`: Replace it with `MagicMirror²`.
 3. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
 4. Deprecated: Found `require('request')` in file `node_helper.js`: Replace it with built-in fetch.
-5. The branch name is 'master'. Consider renaming it to 'main'.
+5. Recommendation: Found `jshint` in file `node_helper.js`: Replace "jshint" by "eslint".
+6. The branch name is 'master'. Consider renaming it to 'main'.
 
 ### [MMM-ClashofClans-Player by AdmiralMurtho](https://github.com/AdmiralMurtho/MMM-ClashofClans-Player)
 
@@ -1005,6 +1032,10 @@ Last update: 2023-12-13 11:58:28 UTC
 7. Warning: No LICENSE file.
 8. The branch name is 'master'. Consider renaming it to 'main'.
 
+### [MMM-CommandToNotification by Tom-Hirschberger](https://github.com/Tom-Hirschberger/MMM-CommandToNotification)
+
+1. Recommendation: Replace eslintrc by new flat config.
+
 ### [MMM-connection-status by sheyabernstein](https://github.com/sheyabernstein/MMM-connection-status)
 
 1. Typo: Found `Magic Mirror` in file `MMM-connection-status.js`: Replace it with `MagicMirror²`.
@@ -1054,6 +1085,7 @@ Last update: 2023-12-13 11:58:28 UTC
 6. Typo: Found `Magic Mirror` in file `package.json`: Replace it with `MagicMirror²`.
 7. Recommendation: Found `"node-fetch"` in file `package.json`: Replace it with built-in fetch.
 8. Warning: No LICENSE file.
+9. Recommendation: Replace eslintrc by new flat config.
 
 ### [MMM-COVID19 by bibaldo](https://github.com/bibaldo/MMM-COVID19)
 
@@ -1203,11 +1235,13 @@ Last update: 2023-12-13 11:58:28 UTC
 1. `package.json` issue: No repository field.
 2. There are no keywords in 'package.json'. We would use them as tags on the module list page.
 3. No image found.
-4. Typo: Found `Magic Mirror` in file `MMM-Dad-Jokes.js`: Replace it with `MagicMirror²`.
-5. Typo: Found `Magic Mirror` in file `README.md`: Replace it with `MagicMirror²`.
-6. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
-7. Deprecated: Found `require('request')` in file `node_helper.js`: Replace it with built-in fetch.
-8. The branch name is 'master'. Consider renaming it to 'main'.
+4. Recommendation: Found `jshint` in file `Gruntfile.js`: Replace "jshint" by "eslint".
+5. Typo: Found `Magic Mirror` in file `MMM-Dad-Jokes.js`: Replace it with `MagicMirror²`.
+6. Typo: Found `Magic Mirror` in file `README.md`: Replace it with `MagicMirror²`.
+7. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
+8. Deprecated: Found `require('request')` in file `node_helper.js`: Replace it with built-in fetch.
+9. Recommendation: Replace eslintrc by new flat config.
+10. The branch name is 'master'. Consider renaming it to 'main'.
 
 ### [MMM-DagelijksWoord by wctimmer](https://github.com/wctimmer/MMM-DagelijksWoord)
 
@@ -1216,7 +1250,8 @@ Last update: 2023-12-13 11:58:28 UTC
 3. Typo: Found `Magic Mirror` in file `MMM-DagelijksWoord.js`: Replace it with `MagicMirror²`.
 4. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
 5. Recommendation: Found `require("https")` in file `node_helper.js`: Replace "https" by "node:https".
-6. The branch name is 'master'. Consider renaming it to 'main'.
+6. Recommendation: Replace eslintrc by new flat config.
+7. The branch name is 'master'. Consider renaming it to 'main'.
 
 ### [MMM-daikin by kymeyer](https://github.com/kymeyer/MMM-daikin)
 
@@ -1420,8 +1455,9 @@ Last update: 2023-12-13 11:58:28 UTC
 
 ### [MMM-DigitalAlarmClock by justjim1220](https://github.com/justjim1220/MMM-DigitalAlarmClock)
 
-1. Typo: Found `MagicMirror2` in file `package.json`: Replace it with `MagicMirror²`.
-2. The branch name is 'master'. Consider renaming it to 'main'.
+1. Recommendation: Found `jshint` in file `MMM-DigitalAlarmClock.js`: Replace "jshint" by "eslint".
+2. Typo: Found `MagicMirror2` in file `package.json`: Replace it with `MagicMirror²`.
+3. The branch name is 'master'. Consider renaming it to 'main'.
 
 ### [MMM-Discogs by mboskamp](https://github.com/mboskamp/MMM-Discogs)
 
@@ -1441,7 +1477,8 @@ Last update: 2023-12-13 11:58:28 UTC
 
 1. Recommendation: Found `"node-fetch"` in file `DiscourseRequestHandler.js`: Replace it with built-in fetch.
 2. Recommendation: Found `"node-fetch"` in file `package.json`: Replace it with built-in fetch.
-3. The branch name is 'master'. Consider renaming it to 'main'.
+3. Recommendation: Replace eslintrc by new flat config.
+4. The branch name is 'master'. Consider renaming it to 'main'.
 
 ### [MMM-DisneyWaitTimes by gberg927](https://github.com/gberg927/MMM-DisneyWaitTimes)
 
@@ -1486,7 +1523,8 @@ Last update: 2023-12-13 11:58:28 UTC
 
 1. `package.json` issue: No description
 2. There are no specific keywords in 'package.json'. We would use them as tags on the module list page. Add a few meaningful terms to the keywords in the package.json. Not just “magicmirror” or “module”.
-3. The branch name is 'master'. Consider renaming it to 'main'.
+3. Recommendation: Replace eslintrc by new flat config.
+4. The branch name is 'master'. Consider renaming it to 'main'.
 
 ### [MMM-DropboxPictures by MMRIZE](https://github.com/MMRIZE/MMM-DropboxPictures)
 
@@ -1516,8 +1554,10 @@ Last update: 2023-12-13 11:58:28 UTC
 
 ### [MMM-DVB by skastenholz](https://github.com/skastenholz/MMM-DVB)
 
-1. Recommendation: Found `axios` in file `package.json`: Replace it with built-in fetch.
-2. The branch name is 'master'. Consider renaming it to 'main'.
+1. Recommendation: Found `jshint` in file `Gruntfile.js`: Replace "jshint" by "eslint".
+2. Recommendation: Found `axios` in file `package.json`: Replace it with built-in fetch.
+3. Recommendation: Found `jshint` in file `package.json`: Replace "jshint" by "eslint".
+4. The branch name is 'master'. Consider renaming it to 'main'.
 
 ### [MMM-DWD-Pollen by carstendirks](https://github.com/carstendirks/MMM-DWD-Pollen)
 
@@ -1587,6 +1627,10 @@ Last update: 2023-12-13 11:58:28 UTC
 4. Deprecated: Found `require('request')` in file `node_helper.js`: Replace it with built-in fetch.
 5. The branch name is 'master'. Consider renaming it to 'main'.
 
+### [MMM-EasyPix by KristjanESPERANTO](https://github.com/KristjanESPERANTO/MMM-EasyPix)
+
+1. Recommendation: Replace eslintrc by new flat config.
+
 ### [MMM-Ecobee by parnic](https://github.com/parnic/MMM-Ecobee)
 
 1. Recommendation: Found `uses: actions/checkout@v3` in file `nodejs.yml`: Replace it with v4.
@@ -1595,6 +1639,7 @@ Last update: 2023-12-13 11:58:28 UTC
 4. Typo: Found `Magic Mirror` in file `README.md`: Replace it with `MagicMirror²`.
 5. Recommendation: Found `require("https")` in file `node_helper.js`: Replace "https" by "node:https".
 6. Typo: Found `MagicMirror2` in file `package.json`: Replace it with `MagicMirror²`.
+7. Recommendation: Replace eslintrc by new flat config.
 
 ### [MMM-Ecosia-Tree-Counter by rehne](https://github.com/rehne/MMM-Ecosia-Tree-Counter)
 
@@ -1620,8 +1665,9 @@ Last update: 2023-12-13 11:58:28 UTC
 
 1. No image found.
 2. Typo: Found `Magic Mirror` in file `MMM-EFA-departures.js`: Replace it with `MagicMirror²`.
-3. Deprecated: Found `require('request')` in file `node_helper.js`: Replace it with built-in fetch.
-4. The branch name is 'master'. Consider renaming it to 'main'.
+3. Recommendation: Found `jshint` in file `classie.js`: Replace "jshint" by "eslint".
+4. Deprecated: Found `require('request')` in file `node_helper.js`: Replace it with built-in fetch.
+5. The branch name is 'master'. Consider renaming it to 'main'.
 
 ### [MMM-ELMPrayerTime by moinahmed001](https://github.com/moinahmed001/MMM-ELMPrayerTime)
 
@@ -1635,6 +1681,11 @@ Last update: 2023-12-13 11:58:28 UTC
 
 1. Typo: Found `Magic Mirror` in file `MMM-Elvira.js`: Replace it with `MagicMirror²`.
 2. Deprecated: Found `require('request')` in file `node_helper.js`: Replace it with built-in fetch.
+3. Recommendation: Replace eslintrc by new flat config.
+
+### [MMM-EmbedURL by Tom-Hirschberger](https://github.com/Tom-Hirschberger/MMM-EmbedURL)
+
+1. Recommendation: Replace eslintrc by new flat config.
 
 ### [MMM-EmbedYoutube by nitpum](https://github.com/nitpum/MMM-EmbedYoutube)
 
@@ -1673,7 +1724,8 @@ Last update: 2023-12-13 11:58:28 UTC
 
 1. There is no `package.json`. We need this file to gather information about the module for the module list page.
 2. Recommendation: Found `"node-fetch"` in file `node_helper.js`: Replace it with built-in fetch.
-3. The branch name is 'master'. Consider renaming it to 'main'.
+3. Recommendation: Replace eslintrc by new flat config.
+4. The branch name is 'master'. Consider renaming it to 'main'.
 
 ### [MMM-EOL by mykle1](https://github.com/mykle1/MMM-EOL)
 
@@ -1771,15 +1823,17 @@ Last update: 2023-12-13 11:58:28 UTC
 
 1. `package.json` issue: No repository field.
 2. There are no keywords in 'package.json'. We would use them as tags on the module list page.
-3. Typo: Found `Magic Mirror` in file `MMM-Face-Multi-User-Recognition-SMAI.js`: Replace it with `MagicMirror²`.
-4. The branch name is 'master'. Consider renaming it to 'main'.
+3. Recommendation: Found `jshint` in file `Gruntfile.js`: Replace "jshint" by "eslint".
+4. Typo: Found `Magic Mirror` in file `MMM-Face-Multi-User-Recognition-SMAI.js`: Replace it with `MagicMirror²`.
+5. The branch name is 'master'. Consider renaming it to 'main'.
 
 ### [MMM-Face-Reco-DNN by nischi](https://github.com/nischi/MMM-Face-Reco-DNN)
 
 1. No image found.
 2. Typo: Found `Magic Mirror` in file `MMM-Face-Reco-DNN.js`: Replace it with `MagicMirror²`.
 3. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
-4. The branch name is 'master'. Consider renaming it to 'main'.
+4. Recommendation: Replace eslintrc by new flat config.
+5. The branch name is 'master'. Consider renaming it to 'main'.
 
 ### [MMM-Face-Recognition-SMAI by EbenKouao](https://github.com/EbenKouao/MMM-Face-Recognition-SMAI)
 
@@ -1853,11 +1907,13 @@ Last update: 2023-12-13 11:58:28 UTC
 7. Recommendation: Found `axios` in file `sheetFetcher.js`: Replace it with built-in fetch.
 8. Typo: Found `Magic Mirror` in file `MMM-FF-cht-sh.css`: Replace it with `MagicMirror²`.
 9. Typo: Found `Magic Mirror` in file `MMM-FF-cht-sh.scss`: Replace it with `MagicMirror²`.
+10. Recommendation: Replace eslintrc by new flat config.
 
 ### [MMM-FF-code-injector by shin10](https://github.com/shin10/MMM-FF-code-injector)
 
 1. There is no `package.json`. We need this file to gather information about the module for the module list page.
 2. Typo: Found `Magic Mirror` in file `MMM-FF-code-injector.js`: Replace it with `MagicMirror²`.
+3. Recommendation: Replace eslintrc by new flat config.
 
 ### [MMM-FF-digital-rain by shin10](https://github.com/shin10/MMM-FF-digital-rain)
 
@@ -1865,6 +1921,7 @@ Last update: 2023-12-13 11:58:28 UTC
 2. Typo: Found `Magic Mirror` in file `MMM-FF-digital-rain.js`: Replace it with `MagicMirror²`.
 3. Typo: Found `Magic Mirror` in file `MMM-FF-digital-rain.css`: Replace it with `MagicMirror²`.
 4. Typo: Found `Magic Mirror` in file `MMM-FF-digital-rain.scss`: Replace it with `MagicMirror²`.
+5. Recommendation: Replace eslintrc by new flat config.
 
 ### [MMM-FF-Evan-Roth-Red-Lines by shin10](https://github.com/shin10/MMM-FF-Evan-Roth-Red-Lines)
 
@@ -1872,6 +1929,7 @@ Last update: 2023-12-13 11:58:28 UTC
 2. Typo: Found `Magic Mirror` in file `MMM-FF-Evan-Roth-Red-Lines.js`: Replace it with `MagicMirror²`.
 3. Typo: Found `Magic Mirror` in file `MMM-FF-Evan-Roth-Red-Lines.css`: Replace it with `MagicMirror²`.
 4. Typo: Found `Magic Mirror` in file `MMM-FF-Evan-Roth-Red-Lines.scss`: Replace it with `MagicMirror²`.
+5. Recommendation: Replace eslintrc by new flat config.
 
 ### [MMM-FF-Genius-Lyrics by shin10](https://github.com/shin10/MMM-FF-Genius-Lyrics)
 
@@ -1884,6 +1942,7 @@ Last update: 2023-12-13 11:58:28 UTC
 7. Found directory `node_modules`. This shouldn't be uploaded. Add `node_modules/`to `.gitignore`.
 8. Typo: Found `Magic Mirror` in file `MMM-FF-Genius-Lyrics.css`: Replace it with `MagicMirror²`.
 9. Typo: Found `Magic Mirror` in file `MMM-FF-Genius-Lyrics.scss`: Replace it with `MagicMirror²`.
+10. Recommendation: Replace eslintrc by new flat config.
 
 ### [MMM-FF-multigeiger by shin10](https://github.com/shin10/MMM-FF-multigeiger)
 
@@ -1901,6 +1960,7 @@ Last update: 2023-12-13 11:58:28 UTC
 12. Typo: Found `Magic Mirror` in file `MMM-FF-multigeiger-list-vertical.scss`: Replace it with `MagicMirror²`.
 13. Typo: Found `Magic Mirror` in file `MMM-FF-multigeiger.css`: Replace it with `MagicMirror²`.
 14. Typo: Found `Magic Mirror` in file `MMM-FF-multigeiger.scss`: Replace it with `MagicMirror²`.
+15. Recommendation: Replace eslintrc by new flat config.
 
 ### [MMM-FF-process-stats by shin10](https://github.com/shin10/MMM-FF-process-stats)
 
@@ -1909,10 +1969,12 @@ Last update: 2023-12-13 11:58:28 UTC
 3. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
 4. Typo: Found `Magic Mirror` in file `MMM-FF-process-stats.css`: Replace it with `MagicMirror²`.
 5. Typo: Found `Magic Mirror` in file `MMM-FF-process-stats.scss`: Replace it with `MagicMirror²`.
+6. Recommendation: Replace eslintrc by new flat config.
 
 ### [MMM-FF-StatsJS by shin10](https://github.com/shin10/MMM-FF-StatsJS)
 
 1. Typo: Found `Magic Mirror` in file `MMM-FF-StatsJS.js`: Replace it with `MagicMirror²`.
+2. Recommendation: Replace eslintrc by new flat config.
 
 ### [MMM-FF-tenor-gif by shin10](https://github.com/shin10/MMM-FF-tenor-gif)
 
@@ -1923,6 +1985,7 @@ Last update: 2023-12-13 11:58:28 UTC
 5. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
 6. Typo: Found `Magic Mirror` in file `MMM-FF-tenor-gif.css`: Replace it with `MagicMirror²`.
 7. Typo: Found `Magic Mirror` in file `MMM-FF-tenor-gif.scss`: Replace it with `MagicMirror²`.
+8. Recommendation: Replace eslintrc by new flat config.
 
 ### [MMM-FF-XKCD by shin10](https://github.com/shin10/MMM-FF-XKCD)
 
@@ -1935,6 +1998,7 @@ Last update: 2023-12-13 11:58:28 UTC
 7. Typo: Found `Magic Mirror` in file `persistenceService.js`: Replace it with `MagicMirror²`.
 8. Typo: Found `Magic Mirror` in file `MMM-FF-XKCD.css`: Replace it with `MagicMirror²`.
 9. Typo: Found `Magic Mirror` in file `MMM-FF-XKCD.scss`: Replace it with `MagicMirror²`.
+10. Recommendation: Replace eslintrc by new flat config.
 
 ### [MMM-FHEM by BenRoe](https://github.com/BenRoe/MMM-FHEM)
 
@@ -2082,7 +2146,8 @@ Last update: 2023-12-13 11:58:28 UTC
 2. Deprecated: Found `node-version: [16` in file `node.js.yml`: Update to current version.
 3. Recommendation: Found `XMLHttpRequest` in file `MMM-Formula1.js`: Replace it with built-in fetch.
 4. Typo: Found `Magic Mirror` in file `README.md`: Replace it with `MagicMirror²`.
-5. The branch name is 'master'. Consider renaming it to 'main'.
+5. Recommendation: Replace eslintrc by new flat config.
+6. The branch name is 'master'. Consider renaming it to 'main'.
 
 ### [MMM-Fortnite by retroflex](https://github.com/retroflex/MMM-Fortnite)
 
@@ -2124,6 +2189,7 @@ Last update: 2023-12-13 11:58:28 UTC
 3. Typo: Found `Magic Mirror` in file `config.js`: Replace it with `MagicMirror²`.
 4. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
 5. Typo: Found `Magic Mirror` in file `package.json`: Replace it with `MagicMirror²`.
+6. Recommendation: Found `jshint` in file `progressbar.js`: Replace "jshint" by "eslint".
 
 ### [MMM-FrenchHoroscope by Amand-M](https://github.com/Amand-M/MMM-FrenchHoroscope)
 
@@ -2152,7 +2218,8 @@ Last update: 2023-12-13 11:58:28 UTC
 
 1. There is no `package.json`. We need this file to gather information about the module for the module list page.
 2. Deprecated: Found `require("request")` in file `node_helper.js`: Replace it with built-in fetch.
-3. The branch name is 'master'. Consider renaming it to 'main'.
+3. Recommendation: Replace eslintrc by new flat config.
+4. The branch name is 'master'. Consider renaming it to 'main'.
 
 ### [MMM-Fronius2 by deg0nz](https://github.com/deg0nz/MMM-Fronius2)
 
@@ -2185,7 +2252,8 @@ Last update: 2023-12-13 11:58:28 UTC
 6. Recommendation: Found `'node-fetch'` in file `tankerkoenig.js`: Replace it with built-in fetch.
 7. Typo: Found `MagicMirror2` in file `package.json`: Replace it with `MagicMirror²`.
 8. Recommendation: Found `"node-fetch"` in file `package.json`: Replace it with built-in fetch.
-9. The branch name is 'master'. Consider renaming it to 'main'.
+9. Recommendation: Replace eslintrc by new flat config.
+10. The branch name is 'master'. Consider renaming it to 'main'.
 
 ### [MMM-FunnyHolidays by mattileh](https://github.com/mattileh/MMM-FunnyHolidays)
 
@@ -2199,13 +2267,15 @@ Last update: 2023-12-13 11:58:28 UTC
 
 1. Typo: Found `Magic Mirror` in file `MMM-Futar.js`: Replace it with `MagicMirror²`.
 2. Deprecated: Found `require('request')` in file `node_helper.js`: Replace it with built-in fetch.
-3. The branch name is 'master'. Consider renaming it to 'main'.
+3. Recommendation: Replace eslintrc by new flat config.
+4. The branch name is 'master'. Consider renaming it to 'main'.
 
 ### [MMM-GameOfLife by raywo](https://github.com/raywo/MMM-GameOfLife)
 
-1. Typo: Found `Magic Mirror` in file `README.md`: Replace it with `MagicMirror²`.
-2. Typo: Found `MagicMirror2` in file `README.md`: Replace it with `MagicMirror²`.
-3. The branch name is 'master'. Consider renaming it to 'main'.
+1. Recommendation: Found `jshint` in file `.gitignore`: Replace "jshint" by "eslint".
+2. Typo: Found `Magic Mirror` in file `README.md`: Replace it with `MagicMirror²`.
+3. Typo: Found `MagicMirror2` in file `README.md`: Replace it with `MagicMirror²`.
+4. The branch name is 'master'. Consider renaming it to 'main'.
 
 ### [MMM-GamepadEvents by victor-paumier](https://github.com/victor-paumier/MMM-GamepadEvents)
 
@@ -2263,6 +2333,7 @@ Last update: 2023-12-13 11:58:28 UTC
 5. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
 6. Typo: Found `MagicMirror2` in file `package.json`: Replace it with `MagicMirror²`.
 7. Recommendation: Found `axios` in file `package.json`: Replace it with built-in fetch.
+8. Recommendation: Replace eslintrc by new flat config.
 
 ### [MMM-GitHub-Monitor by fpfuetsch](https://github.com/fpfuetsch/MMM-GitHub-Monitor)
 
@@ -2360,7 +2431,8 @@ Last update: 2023-12-13 11:58:28 UTC
 8. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
 9. Typo: Found `Magic Mirror` in file `package.json`: Replace it with `MagicMirror²`.
 10. Recommendation: Found `axios` in file `package.json`: Replace it with built-in fetch.
-11. The branch name is 'master'. Consider renaming it to 'main'.
+11. Recommendation: Replace eslintrc by new flat config.
+12. The branch name is 'master'. Consider renaming it to 'main'.
 
 ### [MMM-GoogleDriveSlideShow by clegallic](https://github.com/clegallic/MMM-GoogleDriveSlideShow)
 
@@ -2372,7 +2444,8 @@ Last update: 2023-12-13 11:58:28 UTC
 
 1. Deprecated: Found `require("request")` in file `node_helper.js`: Replace it with built-in fetch.
 2. Typo: Found `Magic Mirror` in file `package.json`: Replace it with `MagicMirror²`.
-3. The branch name is 'master'. Consider renaming it to 'main'.
+3. Recommendation: Replace eslintrc by new flat config.
+4. The branch name is 'master'. Consider renaming it to 'main'.
 
 ### [MMM-googlemaps by sp4ceman](https://github.com/sp4ceman/MMM-googlemaps)
 
@@ -2387,8 +2460,9 @@ Last update: 2023-12-13 11:58:28 UTC
 
 1. `package.json` issue: No repository field.
 2. There are no keywords in 'package.json'. We would use them as tags on the module list page.
-3. Typo: Found `Magic Mirror` in file `MMM-GoogleMapsTraffic.js`: Replace it with `MagicMirror²`.
-4. The branch name is 'master'. Consider renaming it to 'main'.
+3. Recommendation: Found `jshint` in file `Gruntfile.js`: Replace "jshint" by "eslint".
+4. Typo: Found `Magic Mirror` in file `MMM-GoogleMapsTraffic.js`: Replace it with `MagicMirror²`.
+5. The branch name is 'master'. Consider renaming it to 'main'.
 
 ### [MMM-GooglePhotos by hermanho](https://github.com/hermanho/MMM-GooglePhotos)
 
@@ -2399,7 +2473,8 @@ Last update: 2023-12-13 11:58:28 UTC
 5. Recommendation: Found `XMLHttpRequest` in file `error_to_string.js`: Replace it with built-in fetch.
 6. Deprecated: Found `"electron-rebuild"` in file `package.json`: Replace it with `@electron/rebuild`
 7. Recommendation: Found `axios` in file `package.json`: Replace it with built-in fetch.
-8. The branch name is 'master'. Consider renaming it to 'main'.
+8. Recommendation: Replace eslintrc by new flat config.
+9. The branch name is 'master'. Consider renaming it to 'main'.
 
 ### [MMM-GoogleSheets by ryan-d-williams](https://github.com/ryan-d-williams/MMM-GoogleSheets)
 
@@ -2432,6 +2507,7 @@ Last update: 2023-12-13 11:58:28 UTC
 1. Typo: Found `Magic Mirror` in file `CONTRIBUTING.md`: Replace it with `MagicMirror²`.
 2. Recommendation: Found `axios` in file `GoogleTaskService.ts`: Replace it with built-in fetch.
 3. Recommendation: Found `axios` in file `node_helper.ts`: Replace it with built-in fetch.
+4. Recommendation: Replace eslintrc by new flat config.
 
 ### [MMM-GoogleTrafficTimes by pjestico](https://github.com/pjestico/MMM-GoogleTrafficTimes)
 
@@ -2457,7 +2533,8 @@ Last update: 2023-12-13 11:58:28 UTC
 
 ### [MMM-GPIO-Notifications by Tom-Hirschberger](https://github.com/Tom-Hirschberger/MMM-GPIO-Notifications)
 
-1. The branch name is 'master'. Consider renaming it to 'main'.
+1. Recommendation: Replace eslintrc by new flat config.
+2. The branch name is 'master'. Consider renaming it to 'main'.
 
 ### [MMM-gpsd by brentpabst](https://github.com/brentpabst/MMM-gpsd)
 
@@ -2672,9 +2749,11 @@ Last update: 2023-12-13 11:58:28 UTC
 
 ### [MMM-HomeAssistantDisplay by wonderslug](https://github.com/wonderslug/MMM-HomeAssistantDisplay)
 
-1. Typo: Found `Magic Mirror` in file `MMM-HomeAssistantDisplay.js`: Replace it with `MagicMirror²`.
-2. Typo: Found `Magic Mirror` in file `README.md`: Replace it with `MagicMirror²`.
-3. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
+1. Recommendation: Found `jshint` in file `Gruntfile.js`: Replace "jshint" by "eslint".
+2. Typo: Found `Magic Mirror` in file `MMM-HomeAssistantDisplay.js`: Replace it with `MagicMirror²`.
+3. Typo: Found `Magic Mirror` in file `README.md`: Replace it with `MagicMirror²`.
+4. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
+5. Recommendation: Replace eslintrc by new flat config.
 
 ### [MMM-HomeAutomationNotifications by john3300](https://github.com/john3300/MMM-HomeAutomationNotifications)
 
@@ -2696,7 +2775,8 @@ Last update: 2023-12-13 11:58:28 UTC
 1. Typo: Found `Magic Mirror` in file `MMM-Homematic.js`: Replace it with `MagicMirror²`.
 2. Typo: Found `Magic Mirror` in file `README.md`: Replace it with `MagicMirror²`.
 3. Deprecated: Found `require('request')` in file `node_helper.js`: Replace it with built-in fetch.
-4. The branch name is 'master'. Consider renaming it to 'main'.
+4. Recommendation: Replace eslintrc by new flat config.
+5. The branch name is 'master'. Consider renaming it to 'main'.
 
 ### [MMM-Homematic-Rooms by JFWenisch](https://github.com/JFWenisch/MMM-Homematic-Rooms)
 
@@ -2723,10 +2803,12 @@ Last update: 2023-12-13 11:58:28 UTC
 
 1. There are no keywords in 'package.json'. We would use them as tags on the module list page.
 2. No image found.
-3. Typo: Found `Magic Mirror` in file `MMM-Hover.js`: Replace it with `MagicMirror²`.
-4. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
-5. Deprecated: Found `"electron-rebuild"` in file `package.json`: Replace it with `@electron/rebuild`
-6. The branch name is 'master'. Consider renaming it to 'main'.
+3. Recommendation: Found `jshint` in file `Gruntfile.js`: Replace "jshint" by "eslint".
+4. Typo: Found `Magic Mirror` in file `MMM-Hover.js`: Replace it with `MagicMirror²`.
+5. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
+6. Deprecated: Found `"electron-rebuild"` in file `package.json`: Replace it with `@electron/rebuild`
+7. Recommendation: Replace eslintrc by new flat config.
+8. The branch name is 'master'. Consider renaming it to 'main'.
 
 ### [MMM-HRS-PickupPlan by maan75](https://github.com/maan75/MMM-HRS-PickupPlan)
 
@@ -2754,8 +2836,9 @@ Last update: 2023-12-13 11:58:28 UTC
 1. There is no `package.json`. We need this file to gather information about the module for the module list page.
 2. Typo: Found `Magic Mirror` in file `MMM-Hue.js`: Replace it with `MagicMirror²`.
 3. Recommendation: Found `XMLHttpRequest` in file `jquery.js`: Replace it with built-in fetch.
-4. Warning: No LICENSE file.
-5. The branch name is 'master'. Consider renaming it to 'main'.
+4. Recommendation: Found `jshint` in file `jquery.js`: Replace "jshint" by "eslint".
+5. Warning: No LICENSE file.
+6. The branch name is 'master'. Consider renaming it to 'main'.
 
 ### [MMM-Hue-Controller by gueguet](https://github.com/gueguet/MMM-Hue-Controller)
 
@@ -2840,7 +2923,8 @@ Last update: 2023-12-13 11:58:28 UTC
 10. Recommendation: Found `axios` in file `railwayRepository.js`: Replace it with built-in fetch.
 11. Recommendation: Found `axios` in file `railwayRepository.spec.js`: Replace it with built-in fetch.
 12. Recommendation: Found `axios` in file `yarn.lock`: Replace it with built-in fetch.
-13. The branch name is 'master'. Consider renaming it to 'main'.
+13. Recommendation: Replace eslintrc by new flat config.
+14. The branch name is 'master'. Consider renaming it to 'main'.
 
 ### [MMM-IdF-Transport by FalseIlyu](https://github.com/FalseIlyu/MMM-IdF-Transport)
 
@@ -2901,14 +2985,20 @@ Last update: 2023-12-13 11:58:28 UTC
 3. Recommendation: Found `XMLHttpRequest` in file `ammap.js`: Replace it with built-in fetch.
 4. Recommendation: Found `XMLHttpRequest` in file `ammap_amcharts_extension.js`: Replace it with built-in fetch.
 5. Recommendation: Found `XMLHttpRequest` in file `dataloader.js`: Replace it with built-in fetch.
-6. Recommendation: Found `XMLHttpRequest` in file `dataloader.min.js`: Replace it with built-in fetch.
-7. Recommendation: Found `require('http')` in file `fabric.js`: Replace 'http' by 'node:http'.
-8. Recommendation: Found `require('https')` in file `fabric.js`: Replace 'https' by 'node:https'.
-9. Recommendation: Found `XMLHttpRequest` in file `fabric.js`: Replace it with built-in fetch.
-10. Recommendation: Found `require("http")` in file `fabric.min.js`: Replace "http" by "node:http".
-11. Recommendation: Found `require("https")` in file `fabric.min.js`: Replace "https" by "node:https".
-12. Recommendation: Found `XMLHttpRequest` in file `fabric.min.js`: Replace it with built-in fetch.
-13. The branch name is 'master'. Consider renaming it to 'main'.
+6. Recommendation: Found `jshint` in file `dataloader.js`: Replace "jshint" by "eslint".
+7. Recommendation: Found `XMLHttpRequest` in file `dataloader.min.js`: Replace it with built-in fetch.
+8. Recommendation: Found `require('http')` in file `fabric.js`: Replace 'http' by 'node:http'.
+9. Recommendation: Found `require('https')` in file `fabric.js`: Replace 'https' by 'node:https'.
+10. Recommendation: Found `XMLHttpRequest` in file `fabric.js`: Replace it with built-in fetch.
+11. Recommendation: Found `jshint` in file `fabric.js`: Replace "jshint" by "eslint".
+12. Recommendation: Found `require("http")` in file `fabric.min.js`: Replace "http" by "node:http".
+13. Recommendation: Found `require("https")` in file `fabric.min.js`: Replace "https" by "node:https".
+14. Recommendation: Found `XMLHttpRequest` in file `fabric.min.js`: Replace it with built-in fetch.
+15. Recommendation: Found `jshint` in file `jszip.js`: Replace "jshint" by "eslint".
+16. Recommendation: Found `jshint` in file `pdfmake.js`: Replace "jshint" by "eslint".
+17. Recommendation: Found `jshint` in file `pdfmake.min.js.map`: Replace "jshint" by "eslint".
+18. Recommendation: Found `jshint` in file `xlsx.js`: Replace "jshint" by "eslint".
+19. The branch name is 'master'. Consider renaming it to 'main'.
 
 ### [MMM-Ilevia-Lille by Jilano5](https://github.com/Jilano5/MMM-Ilevia-Lille)
 
@@ -3028,12 +3118,14 @@ Last update: 2023-12-13 11:58:28 UTC
 2. `package.json` issue: No repository field.
 3. `package.json` issue: No license field.
 4. There are no keywords in 'package.json'. We would use them as tags on the module list page.
-5. The branch name is 'master'. Consider renaming it to 'main'.
+5. Recommendation: Replace eslintrc by new flat config.
+6. The branch name is 'master'. Consider renaming it to 'main'.
 
 ### [MMM-ip by fewieden](https://github.com/fewieden/MMM-ip)
 
 1. Typo: Found `MagicMirror2` in file `package.json`: Replace it with `MagicMirror²`.
-2. The branch name is 'master'. Consider renaming it to 'main'.
+2. Recommendation: Replace eslintrc by new flat config.
+3. The branch name is 'master'. Consider renaming it to 'main'.
 
 ### [MMM-IPCam by RedNax67](https://github.com/RedNax67/MMM-IPCam)
 
@@ -3079,14 +3171,20 @@ Last update: 2023-12-13 11:58:28 UTC
 5. Typo: Found `Magic Mirror` in file `package.json`: Replace it with `MagicMirror²`.
 6. The branch name is 'master'. Consider renaming it to 'main'.
 
+### [MMM-ISS-Live by KristjanESPERANTO](https://github.com/KristjanESPERANTO/MMM-ISS-Live)
+
+1. Recommendation: Replace eslintrc by new flat config.
+
 ### [MMM-ISY by shbatm](https://github.com/shbatm/MMM-ISY)
 
 1. There are no keywords in 'package.json'. We would use them as tags on the module list page.
 2. Typo: Found `Magic Mirror` in file `MMM-ISY.js`: Replace it with `MagicMirror²`.
-3. Recommendation: Found `XMLHttpRequest` in file `jquery-3.2.1.min.js`: Replace it with built-in fetch.
-4. Recommendation: Found `XMLHttpRequest` in file `jquery.min.js`: Replace it with built-in fetch.
-5. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
-6. The branch name is 'master'. Consider renaming it to 'main'.
+3. Recommendation: Found `jshint` in file `MMM-ISY.js`: Replace "jshint" by "eslint".
+4. Recommendation: Found `XMLHttpRequest` in file `jquery-3.2.1.min.js`: Replace it with built-in fetch.
+5. Recommendation: Found `XMLHttpRequest` in file `jquery.min.js`: Replace it with built-in fetch.
+6. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
+7. Recommendation: Found `jshint` in file `node_helper.js`: Replace "jshint" by "eslint".
+8. The branch name is 'master'. Consider renaming it to 'main'.
 
 ### [MMM-ITCH-IO by Xanthus1](https://github.com/Xanthus1/MMM-ITCH-IO)
 
@@ -3097,6 +3195,10 @@ Last update: 2023-12-13 11:58:28 UTC
 5. Recommendation: Found `XMLHttpRequest` in file `node_helper.js`: Replace it with built-in fetch.
 6. Warning: No LICENSE file.
 7. The branch name is 'master'. Consider renaming it to 'main'.
+
+### [MMM-Jast by jalibu](https://github.com/jalibu/MMM-Jast)
+
+1. Recommendation: Replace eslintrc by new flat config.
 
 ### [MMM-Jeedom by prysme01](https://github.com/prysme01/MMM-Jeedom)
 
@@ -3138,10 +3240,11 @@ Last update: 2023-12-13 11:58:28 UTC
 
 1. `package.json` issue: No repository field.
 2. There are no keywords in 'package.json'. We would use them as tags on the module list page.
-3. Typo: Found `Magic Mirror` in file `MMM-JNV.js`: Replace it with `MagicMirror²`.
-4. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
-5. Recommendation: Found `require("https")` in file `node_helper.js`: Replace "https" by "node:https".
-6. The branch name is 'master'. Consider renaming it to 'main'.
+3. Recommendation: Found `jshint` in file `Gruntfile.js`: Replace "jshint" by "eslint".
+4. Typo: Found `Magic Mirror` in file `MMM-JNV.js`: Replace it with `MagicMirror²`.
+5. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
+6. Recommendation: Found `require("https")` in file `node_helper.js`: Replace "https" by "node:https".
+7. The branch name is 'master'. Consider renaming it to 'main'.
 
 ### [MMM-JokeAPI by Kreshnik](https://github.com/Kreshnik/MMM-JokeAPI)
 
@@ -3172,7 +3275,8 @@ Last update: 2023-12-13 11:58:28 UTC
 0. This module is outdated: Deprecated. Repo has been archived at 2020-08-03.
 1. There is no `package.json`. We need this file to gather information about the module for the module list page.
 2. Deprecated: Found `require("request")` in file `node_helper.js`: Replace it with built-in fetch.
-3. The branch name is 'master'. Consider renaming it to 'main'.
+3. Recommendation: Replace eslintrc by new flat config.
+4. The branch name is 'master'. Consider renaming it to 'main'.
 
 ### [MMM-JsonGraph by timdows](https://github.com/timdows/MMM-JsonGraph)
 
@@ -3186,7 +3290,8 @@ Last update: 2023-12-13 11:58:28 UTC
 1. Typo: Found `Magic Mirror` in file `MMM-JSONStatusChecker.js`: Replace it with `MagicMirror²`.
 2. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
 3. Deprecated: Found `require('request')` in file `node_helper.js`: Replace it with built-in fetch.
-4. The branch name is 'master'. Consider renaming it to 'main'.
+4. Recommendation: Found `jshint` in file `node_helper.js`: Replace "jshint" by "eslint".
+5. The branch name is 'master'. Consider renaming it to 'main'.
 
 ### [MMM-JsonTable by timdows](https://github.com/timdows/MMM-JsonTable)
 
@@ -3195,7 +3300,8 @@ Last update: 2023-12-13 11:58:28 UTC
 3. There are no keywords in 'package.json'. We would use them as tags on the module list page.
 4. Recommendation: Found `uses: actions/checkout@v3` in file `runtest.yml`: Replace it with v4.
 5. Warning: No LICENSE file.
-6. The branch name is 'master'. Consider renaming it to 'main'.
+6. Recommendation: Replace eslintrc by new flat config.
+7. The branch name is 'master'. Consider renaming it to 'main'.
 
 ### [MMM-JsonValue by c-klinger](https://github.com/c-klinger/MMM-JsonValue)
 
@@ -3210,11 +3316,12 @@ Last update: 2023-12-13 11:58:28 UTC
 
 1. `package.json` issue: No repository field.
 2. There are no keywords in 'package.json'. We would use them as tags on the module list page.
-3. Typo: Found `Magic Mirror` in file `MMM-JustForTodayMeditation.js`: Replace it with `MagicMirror²`.
-4. Recommendation: Found `XMLHttpRequest` in file `MMM-JustForTodayMeditation.js`: Replace it with built-in fetch.
-5. Typo: Found `Magic Mirror` in file `README.md`: Replace it with `MagicMirror²`.
-6. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
-7. Deprecated: Found `require("request")` in file `node_helper.js`: Replace it with built-in fetch.
+3. Recommendation: Found `jshint` in file `Gruntfile.js`: Replace "jshint" by "eslint".
+4. Typo: Found `Magic Mirror` in file `MMM-JustForTodayMeditation.js`: Replace it with `MagicMirror²`.
+5. Recommendation: Found `XMLHttpRequest` in file `MMM-JustForTodayMeditation.js`: Replace it with built-in fetch.
+6. Typo: Found `Magic Mirror` in file `README.md`: Replace it with `MagicMirror²`.
+7. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
+8. Deprecated: Found `require("request")` in file `node_helper.js`: Replace it with built-in fetch.
 
 ### [MMM-kalliope by kalliope-project](https://github.com/kalliope-project/MMM-kalliope)
 
@@ -3234,9 +3341,12 @@ Last update: 2023-12-13 11:58:28 UTC
 ### [MMM-KeyBindings by shbatm](https://github.com/shbatm/MMM-KeyBindings)
 
 1. Typo: Found `Magic Mirror` in file `MMM-KeyBindings.js`: Replace it with `MagicMirror²`.
-2. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
-3. Deprecated: Found `"electron-rebuild"` in file `package.json`: Replace it with `@electron/rebuild`
-4. The branch name is 'master'. Consider renaming it to 'main'.
+2. Recommendation: Found `jshint` in file `MMM-KeyBindings.js`: Replace "jshint" by "eslint".
+3. Recommendation: Found `jshint` in file `keyHandler.js`: Replace "jshint" by "eslint".
+4. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
+5. Recommendation: Found `jshint` in file `node_helper.js`: Replace "jshint" by "eslint".
+6. Deprecated: Found `"electron-rebuild"` in file `package.json`: Replace it with `@electron/rebuild`
+7. The branch name is 'master'. Consider renaming it to 'main'.
 
 ### [KeyDisplayed by l0b5ter](https://github.com/l0b5ter/KeyDisplayed)
 
@@ -3269,9 +3379,11 @@ Last update: 2023-12-13 11:58:28 UTC
 1. `package.json` issue: No repository field.
 2. There are no keywords in 'package.json'. We would use them as tags on the module list page.
 3. No image found.
-4. Typo: Found `Magic Mirror` in file `MMM-kudos.js`: Replace it with `MagicMirror²`.
-5. Recommendation: Found `XMLHttpRequest` in file `MMM-kudos.js`: Replace it with built-in fetch.
-6. The branch name is 'master'. Consider renaming it to 'main'.
+4. Recommendation: Found `jshint` in file `Gruntfile.js`: Replace "jshint" by "eslint".
+5. Typo: Found `Magic Mirror` in file `MMM-kudos.js`: Replace it with `MagicMirror²`.
+6. Recommendation: Found `XMLHttpRequest` in file `MMM-kudos.js`: Replace it with built-in fetch.
+7. Recommendation: Replace eslintrc by new flat config.
+8. The branch name is 'master'. Consider renaming it to 'main'.
 
 ### [MMM-KVV by yo-less](https://github.com/yo-less/MMM-KVV)
 
@@ -3283,12 +3395,13 @@ Last update: 2023-12-13 11:58:28 UTC
 ### [MMM-LAMetro by pbuabthong](https://github.com/pbuabthong/MMM-LAMetro)
 
 1. `package.json` issue: No repository field.
-2. Typo: Found `Magic Mirror` in file `MMM-LAMetro.js`: Replace it with `MagicMirror²`.
-3. Typo: Found `Magic Mirror` in file `README.md`: Replace it with `MagicMirror²`.
-4. Deprecated: Found `require('request')` in file `node_helper.js`: Replace it with built-in fetch.
-5. Deprecated: Found `require('request')` in file `pt_helper.js`: Replace it with built-in fetch.
-6. Warning: No LICENSE file.
-7. The branch name is 'master'. Consider renaming it to 'main'.
+2. Recommendation: Found `jshint` in file `.gitignore`: Replace "jshint" by "eslint".
+3. Typo: Found `Magic Mirror` in file `MMM-LAMetro.js`: Replace it with `MagicMirror²`.
+4. Typo: Found `Magic Mirror` in file `README.md`: Replace it with `MagicMirror²`.
+5. Deprecated: Found `require('request')` in file `node_helper.js`: Replace it with built-in fetch.
+6. Deprecated: Found `require('request')` in file `pt_helper.js`: Replace it with built-in fetch.
+7. Warning: No LICENSE file.
+8. The branch name is 'master'. Consider renaming it to 'main'.
 
 ### [MMM-Lastfm by RineshRamadhin](https://github.com/RineshRamadhin/MMM-Lastfm)
 
@@ -3325,7 +3438,8 @@ Last update: 2023-12-13 11:58:28 UTC
 
 ### [MMM-LEDStripControl by Tom-Hirschberger](https://github.com/Tom-Hirschberger/MMM-LEDStripControl)
 
-1. The branch name is 'master'. Consider renaming it to 'main'.
+1. Recommendation: Replace eslintrc by new flat config.
+2. The branch name is 'master'. Consider renaming it to 'main'.
 
 ### [MMM-LesJoiesDuCode by Tomadelostacos](https://github.com/Tomadelostacos/MMM-LesJoiesDuCode)
 
@@ -3347,9 +3461,10 @@ Last update: 2023-12-13 11:58:28 UTC
 
 ### [MMM-LibrespotJava by l3d00m](https://github.com/l3d00m/MMM-LibrespotJava)
 
-1. Typo: Found `Magic Mirror` in file `README.md`: Replace it with `MagicMirror²`.
-2. Deprecated: Found `require("request")` in file `node_helper.js`: Replace it with built-in fetch.
-3. The branch name is 'master'. Consider renaming it to 'main'.
+1. Recommendation: Found `jshint` in file `.gitignore`: Replace "jshint" by "eslint".
+2. Typo: Found `Magic Mirror` in file `README.md`: Replace it with `MagicMirror²`.
+3. Deprecated: Found `require("request")` in file `node_helper.js`: Replace it with built-in fetch.
+4. The branch name is 'master'. Consider renaming it to 'main'.
 
 ### [MMM-LICE by mykle1](https://github.com/mykle1/MMM-LICE)
 
@@ -3387,7 +3502,8 @@ Last update: 2023-12-13 11:58:28 UTC
 6. Recommendation: Found `axios` in file `package.json`: Replace it with built-in fetch.
 7. Recommendation: Found `XMLHttpRequest` in file `response.json`: Replace it with built-in fetch.
 8. Recommendation: Found `axios` in file `test-scrape.js`: Replace it with built-in fetch.
-9. The branch name is 'master'. Consider renaming it to 'main'.
+9. Recommendation: Replace eslintrc by new flat config.
+10. The branch name is 'master'. Consider renaming it to 'main'.
 
 ### [MMM-LKY-TIC by djey47](https://github.com/djey47/MMM-LKY-TIC)
 
@@ -3400,6 +3516,7 @@ Last update: 2023-12-13 11:58:28 UTC
 7. Typo: Found `Magic Mirror` in file `helper.ts`: Replace it with `MagicMirror²`.
 8. Typo: Found `Magic Mirror` in file `helper_impl.ts`: Replace it with `MagicMirror²`.
 9. Typo: Found `MagicMirror2` in file `init-mmm.ts`: Replace it with `MagicMirror²`.
+10. Recommendation: Replace eslintrc by new flat config.
 
 ### [MMM-LoadShedding by qunu](https://github.com/qunu/MMM-LoadShedding)
 
@@ -3446,8 +3563,10 @@ Last update: 2023-12-13 11:58:28 UTC
 
 1. No image found.
 2. Typo: Found `Magic Mirror` in file `MMM-Logging.js`: Replace it with `MagicMirror²`.
-3. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
-4. The branch name is 'master'. Consider renaming it to 'main'.
+3. Recommendation: Found `jshint` in file `MMM-Logging.js`: Replace "jshint" by "eslint".
+4. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
+5. Recommendation: Found `jshint` in file `node_helper.js`: Replace "jshint" by "eslint".
+6. The branch name is 'master'. Consider renaming it to 'main'.
 
 ### [MMM-loldht22 by cslev](https://github.com/cslev/MMM-loldht22)
 
@@ -3469,9 +3588,11 @@ Last update: 2023-12-13 11:58:28 UTC
 
 1. `package.json` issue: No repository field.
 2. There are no keywords in 'package.json'. We would use them as tags on the module list page.
-3. Typo: Found `Magic Mirror` in file `MMM-Looko2-aq.js`: Replace it with `MagicMirror²`.
-4. Recommendation: Found `XMLHttpRequest` in file `MMM-Looko2-aq.js`: Replace it with built-in fetch.
-5. The branch name is 'master'. Consider renaming it to 'main'.
+3. Recommendation: Found `jshint` in file `Gruntfile.js`: Replace "jshint" by "eslint".
+4. Typo: Found `Magic Mirror` in file `MMM-Looko2-aq.js`: Replace it with `MagicMirror²`.
+5. Recommendation: Found `XMLHttpRequest` in file `MMM-Looko2-aq.js`: Replace it with built-in fetch.
+6. Recommendation: Replace eslintrc by new flat config.
+7. The branch name is 'master'. Consider renaming it to 'main'.
 
 ### [MMM-Losung by Dobherrmann](https://github.com/Dobherrmann/MMM-Losung)
 
@@ -3496,8 +3617,11 @@ Last update: 2023-12-13 11:58:28 UTC
 ### [MMM-Loxone by idoodler](https://github.com/idoodler/MMM-Loxone)
 
 1. There are no keywords in 'package.json'. We would use them as tags on the module list page.
-2. Recommendation: Found `XMLHttpRequest` in file `jquery.min.js`: Replace it with built-in fetch.
-3. The branch name is 'master'. Consider renaming it to 'main'.
+2. Recommendation: Found `jshint` in file `Gruntfile.js`: Replace "jshint" by "eslint".
+3. Recommendation: Found `XMLHttpRequest` in file `jquery.min.js`: Replace it with built-in fetch.
+4. Recommendation: Found `jshint` in file `q.js`: Replace "jshint" by "eslint".
+5. Recommendation: Replace eslintrc by new flat config.
+6. The branch name is 'master'. Consider renaming it to 'main'.
 
 ### [MMM-Luftdaten by pixxelfriend](https://github.com/pixxelfriend/MMM-Luftdaten)
 
@@ -3543,8 +3667,11 @@ Last update: 2023-12-13 11:58:28 UTC
 ### [MMM-MacAddressScan by doctorfree](https://github.com/doctorfree/MMM-MacAddressScan)
 
 1. Typo: Found `Magic Mirror` in file `MMM-MacAddressScan.js`: Replace it with `MagicMirror²`.
-2. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
-3. The branch name is 'master'. Consider renaming it to 'main'.
+2. Recommendation: Found `jshint` in file `gruntfile.js`: Replace "jshint" by "eslint".
+3. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
+4. Recommendation: Found `jshint` in file `node_helper.js`: Replace "jshint" by "eslint".
+5. Recommendation: Found `jshint` in file `package.json`: Replace "jshint" by "eslint".
+6. The branch name is 'master'. Consider renaming it to 'main'.
 
 ### [magic-mirror-voice by whyjustin](https://github.com/whyjustin/magic-mirror-voice)
 
@@ -3568,10 +3695,12 @@ Last update: 2023-12-13 11:58:28 UTC
 2. There are no keywords in 'package.json'. We would use them as tags on the module list page.
 3. No image found.
 4. Recommendation: Module name doesn't follow the recommended pattern (it doesn't start with `MMM-`). Consider renaming your module.
-5. Typo: Found `Magic Mirror` in file `MagicMirror-Module-Template.js`: Replace it with `MagicMirror²`.
-6. Recommendation: Found `XMLHttpRequest` in file `MagicMirror-Module-Template.js`: Replace it with built-in fetch.
-7. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
-8. The branch name is 'master'. Consider renaming it to 'main'.
+5. Recommendation: Found `jshint` in file `Gruntfile.js`: Replace "jshint" by "eslint".
+6. Typo: Found `Magic Mirror` in file `MagicMirror-Module-Template.js`: Replace it with `MagicMirror²`.
+7. Recommendation: Found `XMLHttpRequest` in file `MagicMirror-Module-Template.js`: Replace it with built-in fetch.
+8. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
+9. Recommendation: Replace eslintrc by new flat config.
+10. The branch name is 'master'. Consider renaming it to 'main'.
 
 ### [MagicMirror-Olympia-Module by GHLasse](https://github.com/GHLasse/MagicMirror-Olympia-Module)
 
@@ -3660,7 +3789,8 @@ Last update: 2023-12-13 11:58:28 UTC
 2. There are no keywords in 'package.json'. We would use them as tags on the module list page.
 3. Typo: Found `Magic Mirror` in file `MMM-Mattermost.js`: Replace it with `MagicMirror²`.
 4. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
-5. The branch name is 'master'. Consider renaming it to 'main'.
+5. Recommendation: Replace eslintrc by new flat config.
+6. The branch name is 'master'. Consider renaming it to 'main'.
 
 ### [MMM-max by mirko3000](https://github.com/mirko3000/MMM-max)
 
@@ -3680,6 +3810,11 @@ Last update: 2023-12-13 11:58:28 UTC
 
 1. There is no `package.json`. We need this file to gather information about the module for the module list page.
 2. Recommendation: Found `XMLHttpRequest` in file `MMM-MD.js`: Replace it with built-in fetch.
+3. Recommendation: Found `jshint` in file `bower.json`: Replace "jshint" by "eslint".
+4. Recommendation: Found `jshint` in file `showdown.js`: Replace "jshint" by "eslint".
+5. Recommendation: Found `jshint` in file `showdown.js.map`: Replace "jshint" by "eslint".
+6. Recommendation: Found `jshint` in file `package.json`: Replace "jshint" by "eslint".
+7. Recommendation: Found `jshint` in file `helpers.js`: Replace "jshint" by "eslint".
 
 ### [MMM-Memo by schnibel](https://github.com/schnibel/MMM-Memo)
 
@@ -3745,7 +3880,8 @@ Last update: 2023-12-13 11:58:28 UTC
 
 1. Recommendation: Found `uses: actions/checkout@v3` in file `codeql.yml`: Replace it with v4.
 2. Typo: Found `Magic Mirror` in file `README.MD`: Replace it with `MagicMirror²`.
-3. The branch name is 'master'. Consider renaming it to 'main'.
+3. Recommendation: Replace eslintrc by new flat config.
+4. The branch name is 'master'. Consider renaming it to 'main'.
 
 ### [MMM-MieleAtHome by SAR71](https://github.com/SAR71/MMM-MieleAtHome)
 
@@ -3756,10 +3892,13 @@ Last update: 2023-12-13 11:58:28 UTC
 
 ### [MMM-MinecraftStatus by ralberth](https://github.com/ralberth/MMM-MinecraftStatus)
 
-1. Typo: Found `Magic Mirror` in file `MMM-MinecraftStatus.js`: Replace it with `MagicMirror²`.
-2. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
-3. Deprecated: Found `"electron-rebuild"` in file `package.json`: Replace it with `@electron/rebuild`
-4. The branch name is 'master'. Consider renaming it to 'main'.
+1. Recommendation: Found `jshint` in file `Gruntfile.js`: Replace "jshint" by "eslint".
+2. Typo: Found `Magic Mirror` in file `MMM-MinecraftStatus.js`: Replace it with `MagicMirror²`.
+3. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
+4. Recommendation: Found `jshint` in file `node_helper.js`: Replace "jshint" by "eslint".
+5. Deprecated: Found `"electron-rebuild"` in file `package.json`: Replace it with `@electron/rebuild`
+6. Recommendation: Replace eslintrc by new flat config.
+7. The branch name is 'master'. Consider renaming it to 'main'.
 
 ### [MMM-Minigjenbruksstasjon by blixhavn](https://github.com/blixhavn/MMM-Minigjenbruksstasjon)
 
@@ -3839,6 +3978,7 @@ Last update: 2023-12-13 11:58:28 UTC
 7. Typo: Found `Magic Mirror` in file `package.json`: Replace it with `MagicMirror²`.
 8. Recommendation: Found `axios` in file `package.json`: Replace it with built-in fetch.
 9. Warning: No LICENSE file.
+10. Recommendation: Replace eslintrc by new flat config.
 
 ### [mmm-dropbox by michael5r](https://github.com/michael5r/mmm-dropbox)
 
@@ -3867,6 +4007,7 @@ Last update: 2023-12-13 11:58:28 UTC
 3. Recommendation: Module name doesn't follow the recommended pattern (it doesn't start with `MMM-`). Consider renaming your module.
 4. Typo: Found `Magic Mirror` in file `MMM-Helium-Wallet.js`: Replace it with `MagicMirror²`.
 5. Typo: Found `Magic Mirror` in file `package.json`: Replace it with `MagicMirror²`.
+6. Recommendation: Replace eslintrc by new flat config.
 
 ### [mmm-hue-lights by michael5r](https://github.com/michael5r/mmm-hue-lights)
 
@@ -3925,10 +4066,11 @@ Last update: 2023-12-13 11:58:28 UTC
 ### [mmm-nordic-electrical-spot-prices by cSharpBastard](https://github.com/cSharpBastard/mmm-nordic-electrical-spot-prices)
 
 1. Recommendation: Module name doesn't follow the recommended pattern (it doesn't start with `MMM-`). Consider renaming your module.
-2. Deprecated: Found `require('request')` in file `node_helper.js`: Replace it with built-in fetch.
-3. Typo: Found `Magic Mirror` in file `package.json`: Replace it with `MagicMirror²`.
-4. Warning: No LICENSE file.
-5. The branch name is 'master'. Consider renaming it to 'main'.
+2. Recommendation: Found `jshint` in file `canvasjs.min.js`: Replace "jshint" by "eslint".
+3. Deprecated: Found `require('request')` in file `node_helper.js`: Replace it with built-in fetch.
+4. Typo: Found `Magic Mirror` in file `package.json`: Replace it with `MagicMirror²`.
+5. Warning: No LICENSE file.
+6. The branch name is 'master'. Consider renaming it to 'main'.
 
 ### [mmm-openhabfloorplan by paphko](https://github.com/paphko/mmm-openhabfloorplan)
 
@@ -3967,7 +4109,8 @@ Last update: 2023-12-13 11:58:28 UTC
 5. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
 6. Deprecated: Found `require('request')` in file `node_helper.js`: Replace it with built-in fetch.
 7. Warning: No LICENSE file.
-8. The branch name is 'master'. Consider renaming it to 'main'.
+8. Recommendation: Replace eslintrc by new flat config.
+9. The branch name is 'master'. Consider renaming it to 'main'.
 
 ### [mmm-systemtemperature by MichMich](https://github.com/MichMich/mmm-systemtemperature)
 
@@ -4043,7 +4186,8 @@ Last update: 2023-12-13 11:58:28 UTC
 1. There is no `package.json`. We need this file to gather information about the module for the module list page.
 2. Recommendation: Module name doesn't follow the recommended pattern (it doesn't start with `MMM-`). Consider renaming your module.
 3. Recommendation: Found `uses: actions/checkout@v3` in file `build.yml`: Replace it with v4.
-4. The branch name is 'master'. Consider renaming it to 'main'.
+4. Recommendation: Replace eslintrc by new flat config.
+5. The branch name is 'master'. Consider renaming it to 'main'.
 
 ### [MMM-mmpm by bee-mar](https://github.com/bee-mar/MMM-mmpm)
 
@@ -4075,13 +4219,16 @@ Last update: 2023-12-13 11:58:28 UTC
 1. Typo: Found `Magic Mirror` in file `MMM-ModuleScheduler.js`: Replace it with `MagicMirror²`.
 2. Typo: Found `Magic Mirror` in file `README.md`: Replace it with `MagicMirror²`.
 3. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
-4. The branch name is 'master'. Consider renaming it to 'main'.
+4. Recommendation: Replace eslintrc by new flat config.
+5. The branch name is 'master'. Consider renaming it to 'main'.
 
 ### [MMM-ModuleToggleButton by balassy](https://github.com/balassy/MMM-ModuleToggleButton)
 
 1. No image found.
-2. Deprecated: Found `"electron-rebuild"` in file `package.json`: Replace it with `@electron/rebuild`
-3. The branch name is 'master'. Consider renaming it to 'main'.
+2. Recommendation: Found `jshint` in file `Gruntfile.js`: Replace "jshint" by "eslint".
+3. Deprecated: Found `"electron-rebuild"` in file `package.json`: Replace it with `@electron/rebuild`
+4. Recommendation: Replace eslintrc by new flat config.
+5. The branch name is 'master'. Consider renaming it to 'main'.
 
 ### [MMM-MonthlyCalendar by kolbyjack](https://github.com/kolbyjack/MMM-MonthlyCalendar)
 
@@ -4099,13 +4246,16 @@ Last update: 2023-12-13 11:58:28 UTC
 
 1. `package.json` issue: No repository field.
 2. There are no keywords in 'package.json'. We would use them as tags on the module list page.
-3. The branch name is 'master'. Consider renaming it to 'main'.
+3. Recommendation: Replace eslintrc by new flat config.
+4. The branch name is 'master'. Consider renaming it to 'main'.
 
 ### [MMM-moonraker by btastic](https://github.com/btastic/MMM-moonraker)
 
-1. Typo: Found `Magic Mirror` in file `MMM-moonraker.js`: Replace it with `MagicMirror²`.
-2. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
-3. Recommendation: Found `require("fetch")` in file `node_helper.js`: Replace it with built-in fetch.
+1. Recommendation: Found `jshint` in file `Gruntfile.js`: Replace "jshint" by "eslint".
+2. Typo: Found `Magic Mirror` in file `MMM-moonraker.js`: Replace it with `MagicMirror²`.
+3. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
+4. Recommendation: Found `require("fetch")` in file `node_helper.js`: Replace it with built-in fetch.
+5. Recommendation: Replace eslintrc by new flat config.
 
 ### [MMM-Mopidy-MPD by coderpussy](https://github.com/coderpussy/MMM-Mopidy-MPD)
 
@@ -4123,7 +4273,8 @@ Last update: 2023-12-13 11:58:28 UTC
 1. No image found.
 2. Typo: Found `Magic Mirror` in file `MMM-MotionControl.js`: Replace it with `MagicMirror²`.
 3. Typo: Found `Magic Mirror` in file `package.json`: Replace it with `MagicMirror²`.
-4. The branch name is 'master'. Consider renaming it to 'main'.
+4. Recommendation: Replace eslintrc by new flat config.
+5. The branch name is 'master'. Consider renaming it to 'main'.
 
 ### [motiondetector by alexyak](https://github.com/alexyak/motiondetector)
 
@@ -4153,7 +4304,8 @@ Last update: 2023-12-13 11:58:28 UTC
 2. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
 3. Deprecated: Found `require('request')` in file `node_helper.js`: Replace it with built-in fetch.
 4. Typo: Found `MagicMirror2` in file `package.json`: Replace it with `MagicMirror²`.
-5. The branch name is 'master'. Consider renaming it to 'main'.
+5. Recommendation: Replace eslintrc by new flat config.
+6. The branch name is 'master'. Consider renaming it to 'main'.
 
 ### [MMM-MovieListings by Tueti](https://github.com/Tueti/MMM-MovieListings)
 
@@ -4194,7 +4346,8 @@ Last update: 2023-12-13 11:58:28 UTC
 
 ### [MMM-MplayerRadio by Tom-Hirschberger](https://github.com/Tom-Hirschberger/MMM-MplayerRadio)
 
-1. The branch name is 'master'. Consider renaming it to 'main'.
+1. Recommendation: Replace eslintrc by new flat config.
+2. The branch name is 'master'. Consider renaming it to 'main'.
 
 ### [MMM-MPR121 by PatriceG](https://github.com/PatriceG/MMM-MPR121)
 
@@ -4214,14 +4367,8 @@ Last update: 2023-12-13 11:58:28 UTC
 
 ### [MMM-MQTT by ottopaulsen](https://github.com/ottopaulsen/MMM-MQTT)
 
-1. The branch name is 'master'. Consider renaming it to 'main'.
-2. Information: There are updates for 5 dependencie(s):
-   -  eslint                  ^7.23.0  →  ^8.55.0
-   -  eslint-config-prettier   ^8.1.0  →   ^9.1.0
-   -  eslint-plugin-prettier   ^3.3.1  →   ^5.0.1
-   -  mqtt                     ^4.3.7  →   ^5.3.3
-   -  mqtt-packet              ^6.3.2  →   ^9.0.0
-
+1. Recommendation: Replace eslintrc by new flat config.
+2. The branch name is 'master'. Consider renaming it to 'main'.
 
 ### [MMM-MQTT by jupadin](https://github.com/jupadin/MMM-MQTT)
 
@@ -4273,10 +4420,12 @@ Last update: 2023-12-13 11:58:28 UTC
 1. `package.json` issue: No repository field.
 2. There are no keywords in 'package.json'. We would use them as tags on the module list page.
 3. No image found.
-4. Typo: Found `Magic Mirror` in file `MMM-MTA-NextBus.js`: Replace it with `MagicMirror²`.
-5. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
-6. Recommendation: Found `require('http')` in file `node_helper.js`: Replace 'http' by 'node:http'.
-7. The branch name is 'master'. Consider renaming it to 'main'.
+4. Recommendation: Found `jshint` in file `Gruntfile.js`: Replace "jshint" by "eslint".
+5. Typo: Found `Magic Mirror` in file `MMM-MTA-NextBus.js`: Replace it with `MagicMirror²`.
+6. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
+7. Recommendation: Found `require('http')` in file `node_helper.js`: Replace 'http' by 'node:http'.
+8. Recommendation: Replace eslintrc by new flat config.
+9. The branch name is 'master'. Consider renaming it to 'main'.
 
 ### [MMM-Multimonth by BKeyport](https://github.com/BKeyport/MMM-Multimonth)
 
@@ -4303,11 +4452,12 @@ Last update: 2023-12-13 11:58:28 UTC
 ### [MMM-mvgmunich by mrVragec](https://github.com/mrVragec/MMM-mvgmunich)
 
 1. `package.json` issue: No description
-2. Typo: Found `Magic Mirror` in file `mvgmunich.js`: Replace it with `MagicMirror²`.
-3. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
-4. Deprecated: Found `require("request")` in file `node_helper.js`: Replace it with built-in fetch.
-5. Recommendation: Found `XMLHttpRequest` in file `node_helper.js`: Replace it with built-in fetch.
-6. The branch name is 'master'. Consider renaming it to 'main'.
+2. Recommendation: Found `jshint` in file `Gruntfile.js`: Replace "jshint" by "eslint".
+3. Typo: Found `Magic Mirror` in file `mvgmunich.js`: Replace it with `MagicMirror²`.
+4. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
+5. Deprecated: Found `require("request")` in file `node_helper.js`: Replace it with built-in fetch.
+6. Recommendation: Found `XMLHttpRequest` in file `node_helper.js`: Replace it with built-in fetch.
+7. The branch name is 'master'. Consider renaming it to 'main'.
 
 ### [MMM-MVVWiesty by wiesty](https://github.com/wiesty/MMM-MVVWiesty)
 
@@ -4324,12 +4474,14 @@ Last update: 2023-12-13 11:58:28 UTC
 
 ### [MMM-MyCommute by qistoph](https://github.com/qistoph/MMM-MyCommute)
 
-1. Typo: Found `Magic Mirror` in file `MMM-MyCommute.js`: Replace it with `MagicMirror²`.
-2. Typo: Found `MagicMirror2` in file `README.md`: Replace it with `MagicMirror²`.
-3. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
-4. Deprecated: Found `require("request")` in file `node_helper.js`: Replace it with built-in fetch.
-5. Warning: No LICENSE file.
-6. The branch name is 'master'. Consider renaming it to 'main'.
+1. Recommendation: Found `jshint` in file `Gruntfile.js`: Replace "jshint" by "eslint".
+2. Typo: Found `Magic Mirror` in file `MMM-MyCommute.js`: Replace it with `MagicMirror²`.
+3. Typo: Found `MagicMirror2` in file `README.md`: Replace it with `MagicMirror²`.
+4. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
+5. Deprecated: Found `require("request")` in file `node_helper.js`: Replace it with built-in fetch.
+6. Warning: No LICENSE file.
+7. Recommendation: Replace eslintrc by new flat config.
+8. The branch name is 'master'. Consider renaming it to 'main'.
 
 ### [MMM-mycroft-bridge by oenstrom](https://github.com/oenstrom/MMM-mycroft-bridge)
 
@@ -4341,7 +4493,8 @@ Last update: 2023-12-13 11:58:28 UTC
 
 1. There is no `package.json`. We need this file to gather information about the module for the module list page.
 2. Typo: Found `Magic Mirror` in file `MMM-mycroft-wakeword.js`: Replace it with `MagicMirror²`.
-3. The branch name is 'master'. Consider renaming it to 'main'.
+3. Recommendation: Replace eslintrc by new flat config.
+4. The branch name is 'master'. Consider renaming it to 'main'.
 
 ### [MMM-MyDutchWeather by htilburgs](https://github.com/htilburgs/MMM-MyDutchWeather)
 
@@ -4400,8 +4553,9 @@ Last update: 2023-12-13 11:58:28 UTC
 
 1. Typo: Found `Magic Mirror` in file `MMM-MysqlQuery.js`: Replace it with `MagicMirror²`.
 2. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
-3. Deprecated: Found `"electron-rebuild"` in file `package.json`: Replace it with `@electron/rebuild`
-4. The branch name is 'master'. Consider renaming it to 'main'.
+3. Recommendation: Found `jshint` in file `node_helper.js`: Replace "jshint" by "eslint".
+4. Deprecated: Found `"electron-rebuild"` in file `package.json`: Replace it with `@electron/rebuild`
+5. The branch name is 'master'. Consider renaming it to 'main'.
 
 ### [MMM-MyStandings by vincep5](https://github.com/vincep5/MMM-MyStandings)
 
@@ -4421,7 +4575,8 @@ Last update: 2023-12-13 11:58:28 UTC
 3. Deprecated: Found `require('request')` in file `node_helper.js`: Replace it with built-in fetch.
 4. Found directory `node_modules`. This shouldn't be uploaded. Add `node_modules/`to `.gitignore`.
 5. Typo: Found `Magic Mirror` in file `package.json`: Replace it with `MagicMirror²`.
-6. The branch name is 'master'. Consider renaming it to 'main'.
+6. Recommendation: Replace eslintrc by new flat config.
+7. The branch name is 'master'. Consider renaming it to 'main'.
 
 ### [MMM-MyTraffic by htilburgs](https://github.com/htilburgs/MMM-MyTraffic)
 
@@ -4473,7 +4628,8 @@ Last update: 2023-12-13 11:58:28 UTC
 2. There are no keywords in 'package.json'. We would use them as tags on the module list page.
 3. Typo: Found `Magic Mirror` in file `README.md`: Replace it with `MagicMirror²`.
 4. Found directory `node_modules`. This shouldn't be uploaded. Add `node_modules/`to `.gitignore`.
-5. The branch name is 'master'. Consider renaming it to 'main'.
+5. Recommendation: Replace eslintrc by new flat config.
+6. The branch name is 'master'. Consider renaming it to 'main'.
 
 ### [MMM-MyWeather by martinkooij](https://github.com/martinkooij/MMM-MyWeather)
 
@@ -4494,8 +4650,10 @@ Last update: 2023-12-13 11:58:28 UTC
 
 ### [MMM-nagios by qistoph](https://github.com/qistoph/MMM-nagios)
 
-1. Warning: No LICENSE file.
-2. The branch name is 'master'. Consider renaming it to 'main'.
+1. Recommendation: Found `jshint` in file `Gruntfile.js`: Replace "jshint" by "eslint".
+2. Warning: No LICENSE file.
+3. Recommendation: Replace eslintrc by new flat config.
+4. The branch name is 'master'. Consider renaming it to 'main'.
 
 ### [MMM-NameDay by RichieCZ](https://github.com/RichieCZ/MMM-NameDay)
 
@@ -4614,6 +4772,10 @@ Last update: 2023-12-13 11:58:28 UTC
 2. Typo: Found `Magic Mirror` in file `README.md`: Replace it with `MagicMirror²`.
 3. The branch name is 'master'. Consider renaming it to 'main'.
 
+### [MMM-Netatmo by CFenner](https://github.com/CFenner/MMM-Netatmo)
+
+1. Recommendation: Replace eslintrc by new flat config.
+
 ### [MMM-Netatmo-Presence by AgP42](https://github.com/AgP42/MMM-Netatmo-Presence)
 
 1. Typo: Found `Magic Mirror` in file `MMM-Netatmo-Presence.js`: Replace it with `MagicMirror²`.
@@ -4630,10 +4792,12 @@ Last update: 2023-12-13 11:58:28 UTC
 1. `package.json` issue: No repository field.
 2. There are no keywords in 'package.json'. We would use them as tags on the module list page.
 3. No image found.
-4. Typo: Found `Magic Mirror` in file `MMM-Netatmo-Thermostat.js`: Replace it with `MagicMirror²`.
-5. Recommendation: Found `XMLHttpRequest` in file `jquery-3.2.1.min.js`: Replace it with built-in fetch.
-6. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
-7. The branch name is 'master'. Consider renaming it to 'main'.
+4. Recommendation: Found `jshint` in file `Gruntfile.js`: Replace "jshint" by "eslint".
+5. Typo: Found `Magic Mirror` in file `MMM-Netatmo-Thermostat.js`: Replace it with `MagicMirror²`.
+6. Recommendation: Found `XMLHttpRequest` in file `jquery-3.2.1.min.js`: Replace it with built-in fetch.
+7. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
+8. Recommendation: Replace eslintrc by new flat config.
+9. The branch name is 'master'. Consider renaming it to 'main'.
 
 ### [MMM-network-signal by PoOwAa](https://github.com/PoOwAa/MMM-network-signal)
 
@@ -4649,8 +4813,11 @@ Last update: 2023-12-13 11:58:28 UTC
 ### [MMM-NetworkScanner by spitzlbergerj](https://github.com/spitzlbergerj/MMM-NetworkScanner)
 
 1. Typo: Found `Magic Mirror` in file `MMM-NetworkScanner.js`: Replace it with `MagicMirror²`.
-2. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
-3. The branch name is 'master'. Consider renaming it to 'main'.
+2. Recommendation: Found `jshint` in file `gruntfile.js`: Replace "jshint" by "eslint".
+3. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
+4. Recommendation: Found `jshint` in file `node_helper.js`: Replace "jshint" by "eslint".
+5. Recommendation: Found `jshint` in file `package.json`: Replace "jshint" by "eslint".
+6. The branch name is 'master'. Consider renaming it to 'main'.
 
 ### [MMM-News-QR by nischi](https://github.com/nischi/MMM-News-QR)
 
@@ -4684,8 +4851,9 @@ Last update: 2023-12-13 11:58:28 UTC
 1. `package.json` issue: No repository field.
 2. There are no keywords in 'package.json'. We would use them as tags on the module list page.
 3. Recommendation: Module name doesn't follow the recommended pattern (it doesn't start with `MMM-`). Consider renaming your module.
-4. Typo: Found `Magic Mirror` in file `next-train-transilien.js`: Replace it with `MagicMirror²`.
-5. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
+4. Recommendation: Found `jshint` in file `Gruntfile.js`: Replace "jshint" by "eslint".
+5. Typo: Found `Magic Mirror` in file `next-train-transilien.js`: Replace it with `MagicMirror²`.
+6. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
 
 ### [MMM-nextbike by yo-less](https://github.com/yo-less/MMM-nextbike)
 
@@ -4699,9 +4867,11 @@ Last update: 2023-12-13 11:58:28 UTC
 
 1. `package.json` issue: No repository field.
 2. There are no keywords in 'package.json'. We would use them as tags on the module list page.
-3. Typo: Found `Magic Mirror` in file `MMM-NextCloud-Tasks.js`: Replace it with `MagicMirror²`.
-4. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
-5. The branch name is 'master'. Consider renaming it to 'main'.
+3. Recommendation: Found `jshint` in file `Gruntfile.js`: Replace "jshint" by "eslint".
+4. Typo: Found `Magic Mirror` in file `MMM-NextCloud-Tasks.js`: Replace it with `MagicMirror²`.
+5. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
+6. Recommendation: Replace eslintrc by new flat config.
+7. The branch name is 'master'. Consider renaming it to 'main'.
 
 ### [MMM-NextEvent by cure](https://github.com/cure/MMM-NextEvent)
 
@@ -4724,7 +4894,8 @@ Last update: 2023-12-13 11:58:28 UTC
 3. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
 4. Typo: Found `MagicMirror2` in file `package.json`: Replace it with `MagicMirror²`.
 5. Recommendation: Found `"node-fetch"` in file `package.json`: Replace it with built-in fetch.
-6. The branch name is 'master'. Consider renaming it to 'main'.
+6. Recommendation: Replace eslintrc by new flat config.
+7. The branch name is 'master'. Consider renaming it to 'main'.
 
 ### [MMM-NFTcollections by TemianMihai](https://github.com/TemianMihai/MMM-NFTcollections)
 
@@ -4740,7 +4911,8 @@ Last update: 2023-12-13 11:58:28 UTC
 1. Deprecated: Found `node-version: 16` in file `build.yml`: Update to current version.
 2. Recommendation: Found `'node-fetch'` in file `node_helper.js`: Replace it with built-in fetch.
 3. Recommendation: Found `"node-fetch"` in file `package.json`: Replace it with built-in fetch.
-4. The branch name is 'master'. Consider renaming it to 'main'.
+4. Recommendation: Replace eslintrc by new flat config.
+5. The branch name is 'master'. Consider renaming it to 'main'.
 
 ### [MMM-NiceHash by mlbonniec](https://github.com/mlbonniec/MMM-NiceHash)
 
@@ -4772,6 +4944,7 @@ Last update: 2023-12-13 11:58:28 UTC
 5. Recommendation: Found `"node-fetch"` in file `package.json`: Replace it with built-in fetch.
 6. Recommendation: Found `'node-fetch'` in file `rollup.config.js`: Replace it with built-in fetch.
 7. Recommendation: Found `'node-fetch'` in file `Backend.ts`: Replace it with built-in fetch.
+8. Recommendation: Replace eslintrc by new flat config.
 
 ### [MMM-nixie-clock by Isaac-the-Man](https://github.com/Isaac-the-Man/MMM-nixie-clock)
 
@@ -4788,22 +4961,8 @@ Last update: 2023-12-13 11:58:28 UTC
 ### [MMM-NJTransit by dimitrystd](https://github.com/dimitrystd/MMM-NJTransit)
 
 0. This module is outdated: Deprecated. Old API doesn't work anymore. There is a new API, but it's not clear if keys are available. 2023-12-01.
-1. The branch name is 'master'. Consider renaming it to 'main'.
-2. Information: There are updates for 13 dependencie(s):
-   -  chai                     ^4.2.0  →  ^4.3.10
-   -  eslint                   ^5.6.1  →  ^8.55.0
-   -  eslint-config-airbnb    ^17.1.0  →  ^19.0.4
-   -  eslint-plugin-flowtype   ^3.2.0  →   ^8.0.3
-   -  eslint-plugin-import    ^2.14.0  →  ^2.29.0
-   -  eslint-plugin-jsx-a11y   ^6.1.2  →   ^6.8.0
-   -  eslint-plugin-promise    ^4.0.1  →   ^6.1.1
-   -  eslint-plugin-react     ^7.11.1  →  ^7.33.2
-   -  mocha                    ^5.2.0  →  ^10.2.0
-   -  mocha-junit-reporter    ^1.18.0  →   ^2.2.1
-   -  nyc                     ^13.0.1  →  ^15.1.0
-   -  sinon                    ^7.1.1  →  ^17.0.1
-   -  xml2js                  ^0.4.19  →   ^0.6.2
-
+1. Recommendation: Replace eslintrc by new flat config.
+2. The branch name is 'master'. Consider renaming it to 'main'.
 
 ### [MMM-NL-rain-intensity by thekampany](https://github.com/thekampany/MMM-NL-rain-intensity)
 
@@ -4894,8 +5053,9 @@ Last update: 2023-12-13 11:58:28 UTC
 
 ### [MMM-NowPlayingOnSpotify by raywo](https://github.com/raywo/MMM-NowPlayingOnSpotify)
 
-1. Deprecated: Found `require('request')` in file `app.js`: Replace it with built-in fetch.
-2. The branch name is 'master'. Consider renaming it to 'main'.
+1. Recommendation: Found `jshint` in file `.gitignore`: Replace "jshint" by "eslint".
+2. Deprecated: Found `require('request')` in file `app.js`: Replace it with built-in fetch.
+3. The branch name is 'master'. Consider renaming it to 'main'.
 
 ### [MMM-NsInfo by mfurious](https://github.com/mfurious/MMM-NsInfo)
 
@@ -4908,25 +5068,29 @@ Last update: 2023-12-13 11:58:28 UTC
 ### [MMM-nstreinen by qistoph](https://github.com/qistoph/MMM-nstreinen)
 
 1. There are no keywords in 'package.json'. We would use them as tags on the module list page.
-2. Warning: No LICENSE file.
-3. The branch name is 'master'. Consider renaming it to 'main'.
+2. Recommendation: Found `jshint` in file `Gruntfile.js`: Replace "jshint" by "eslint".
+3. Warning: No LICENSE file.
+4. Recommendation: Replace eslintrc by new flat config.
+5. The branch name is 'master'. Consider renaming it to 'main'.
 
 ### [MMM-nyc-transit by elaniobro](https://github.com/elaniobro/MMM-nyc-transit)
 
 1. Deprecated: Found `node-version: 16` in file `npm-publish-github-packages.yml`: Update to current version.
 2. Deprecated: Found `node-version: 16` in file `npm-publish.yml`: Update to current version.
 3. Typo: Found `Magic Mirror` in file `package.json`: Replace it with `MagicMirror²`.
-4. The branch name is 'master'. Consider renaming it to 'main'.
+4. Recommendation: Replace eslintrc by new flat config.
+5. The branch name is 'master'. Consider renaming it to 'main'.
 
 ### [MMM-ObjectBlocks by jimmykh](https://github.com/jimmykh/MMM-ObjectBlocks)
 
 1. `package.json` issue: No repository field.
 2. There are no keywords in 'package.json'. We would use them as tags on the module list page.
 3. No image found.
-4. Typo: Found `Magic Mirror` in file `MMM-ObjectBlocks.js`: Replace it with `MagicMirror²`.
-5. Typo: Found `Magic Mirror` in file `README.md`: Replace it with `MagicMirror²`.
-6. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
-7. The branch name is 'master'. Consider renaming it to 'main'.
+4. Recommendation: Found `jshint` in file `Gruntfile.js`: Replace "jshint" by "eslint".
+5. Typo: Found `Magic Mirror` in file `MMM-ObjectBlocks.js`: Replace it with `MagicMirror²`.
+6. Typo: Found `Magic Mirror` in file `README.md`: Replace it with `MagicMirror²`.
+7. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
+8. The branch name is 'master'. Consider renaming it to 'main'.
 
 ### [MMM-OClock by eouia](https://github.com/eouia/MMM-OClock)
 
@@ -4939,9 +5103,11 @@ Last update: 2023-12-13 11:58:28 UTC
 2. Recommendation: Module name doesn't follow the recommended pattern (it doesn't start with `MMM-`). Consider renaming your module.
 3. Typo: Found `Magic Mirror` in file `README.md`: Replace it with `MagicMirror²`.
 4. Typo: Found `Magic Mirror` in file `octomirror-module.js`: Replace it with `MagicMirror²`.
-5. Typo: Found `Magic Mirror` in file `package.json`: Replace it with `MagicMirror²`.
-6. Recommendation: Found `XMLHttpRequest` in file `packed_client.js`: Replace it with built-in fetch.
-7. The branch name is 'master'. Consider renaming it to 'main'.
+5. Recommendation: Found `jshint` in file `octomirror-module.js`: Replace "jshint" by "eslint".
+6. Typo: Found `Magic Mirror` in file `package.json`: Replace it with `MagicMirror²`.
+7. Recommendation: Found `XMLHttpRequest` in file `packed_client.js`: Replace it with built-in fetch.
+8. Recommendation: Replace eslintrc by new flat config.
+9. The branch name is 'master'. Consider renaming it to 'main'.
 
 ### [MMM-OctoMon by christopherpthomas](https://github.com/christopherpthomas/MMM-OctoMon)
 
@@ -4952,9 +5118,11 @@ Last update: 2023-12-13 11:58:28 UTC
 
 ### [MMM-octoprint by btastic](https://github.com/btastic/MMM-octoprint)
 
-1. Typo: Found `Magic Mirror` in file `MMM-octoprint.js`: Replace it with `MagicMirror²`.
-2. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
-3. Recommendation: Found `require("fetch")` in file `node_helper.js`: Replace it with built-in fetch.
+1. Recommendation: Found `jshint` in file `Gruntfile.js`: Replace "jshint" by "eslint".
+2. Typo: Found `Magic Mirror` in file `MMM-octoprint.js`: Replace it with `MagicMirror²`.
+3. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
+4. Recommendation: Found `require("fetch")` in file `node_helper.js`: Replace it with built-in fetch.
+5. Recommendation: Replace eslintrc by new flat config.
 
 ### [MMM-oebb-station-board by mscharl](https://github.com/mscharl/MMM-oebb-station-board)
 
@@ -4972,7 +5140,8 @@ Last update: 2023-12-13 11:58:28 UTC
 2. Recommendation: Found `'node-fetch'` in file `bloomberg.js`: Replace it with built-in fetch.
 3. Recommendation: Found `'node-fetch'` in file `nbc.js`: Replace it with built-in fetch.
 4. Recommendation: Found `'node-fetch'` in file `paralympic.js`: Replace it with built-in fetch.
-5. The branch name is 'master'. Consider renaming it to 'main'.
+5. Recommendation: Replace eslintrc by new flat config.
+6. The branch name is 'master'. Consider renaming it to 'main'.
 
 ### [on-this-day by elliefairholm](https://github.com/elliefairholm/on-this-day)
 
@@ -4991,16 +5160,22 @@ Last update: 2023-12-13 11:58:28 UTC
 4. Warning: No LICENSE file.
 5. The branch name is 'master'. Consider renaming it to 'main'.
 
+### [MMM-OneCallWeather by KristjanESPERANTO](https://github.com/KristjanESPERANTO/MMM-OneCallWeather)
+
+1. Recommendation: Replace eslintrc by new flat config.
+
 ### [MMM-OneTouchReveal by Canonip](https://github.com/Canonip/MMM-OneTouchReveal)
 
 1. `package.json` issue: No repository field.
 2. There are no keywords in 'package.json'. We would use them as tags on the module list page.
-3. Typo: Found `Magic Mirror` in file `MMM-OneTouchReveal.js`: Replace it with `MagicMirror²`.
-4. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
-5. Deprecated: Found `require('request')` in file `node_helper.js`: Replace it with built-in fetch.
-6. Recommendation: Found `axios` in file `node_helper.js`: Replace it with built-in fetch.
-7. Recommendation: Found `axios` in file `package.json`: Replace it with built-in fetch.
-8. The branch name is 'master'. Consider renaming it to 'main'.
+3. Recommendation: Found `jshint` in file `Gruntfile.js`: Replace "jshint" by "eslint".
+4. Typo: Found `Magic Mirror` in file `MMM-OneTouchReveal.js`: Replace it with `MagicMirror²`.
+5. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
+6. Deprecated: Found `require('request')` in file `node_helper.js`: Replace it with built-in fetch.
+7. Recommendation: Found `axios` in file `node_helper.js`: Replace it with built-in fetch.
+8. Recommendation: Found `axios` in file `package.json`: Replace it with built-in fetch.
+9. Recommendation: Replace eslintrc by new flat config.
+10. The branch name is 'master'. Consider renaming it to 'main'.
 
 ### [MMM-OneTracker by seeshaughnessy](https://github.com/seeshaughnessy/MMM-OneTracker)
 
@@ -5024,8 +5199,10 @@ Last update: 2023-12-13 11:58:28 UTC
 ### [MMM-OnScreenMenu by shbatm](https://github.com/shbatm/MMM-OnScreenMenu)
 
 1. Typo: Found `Magic Mirror` in file `MMM-OnScreenMenu.js`: Replace it with `MagicMirror²`.
-2. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
-3. The branch name is 'master'. Consider renaming it to 'main'.
+2. Recommendation: Found `jshint` in file `MMM-OnScreenMenu.js`: Replace "jshint" by "eslint".
+3. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
+4. Recommendation: Found `jshint` in file `node_helper.js`: Replace "jshint" by "eslint".
+5. The branch name is 'master'. Consider renaming it to 'main'.
 
 ### [MMM-OnSpotify by Fabrizz](https://github.com/Fabrizz/MMM-OnSpotify)
 
@@ -5124,9 +5301,11 @@ Last update: 2023-12-13 11:58:28 UTC
 
 1. `package.json` issue: No repository field.
 2. There are no keywords in 'package.json'. We would use them as tags on the module list page.
-3. Typo: Found `Magic Mirror` in file `MMM-Oura.js`: Replace it with `MagicMirror²`.
-4. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
-5. The branch name is 'master'. Consider renaming it to 'main'.
+3. Recommendation: Found `jshint` in file `Gruntfile.js`: Replace "jshint" by "eslint".
+4. Typo: Found `Magic Mirror` in file `MMM-Oura.js`: Replace it with `MagicMirror²`.
+5. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
+6. Recommendation: Replace eslintrc by new flat config.
+7. The branch name is 'master'. Consider renaming it to 'main'.
 
 ### [MMM-Oura2 by themox](https://github.com/themox/MMM-Oura2)
 
@@ -5144,7 +5323,8 @@ Last update: 2023-12-13 11:58:28 UTC
 ### [MMM-page-indicator by edward-shen](https://github.com/edward-shen/MMM-page-indicator)
 
 1. There is no `package.json`. We need this file to gather information about the module for the module list page.
-2. The branch name is 'master'. Consider renaming it to 'main'.
+2. Recommendation: Replace eslintrc by new flat config.
+3. The branch name is 'master'. Consider renaming it to 'main'.
 
 ### [MMM-Page-Pusher by zerosamski](https://github.com/zerosamski/MMM-Page-Pusher)
 
@@ -5170,7 +5350,8 @@ Last update: 2023-12-13 11:58:28 UTC
 1. There is no `package.json`. We need this file to gather information about the module for the module list page.
 2. Typo: Found `Magic Mirror` in file `Bug_report.md`: Replace it with `MagicMirror²`.
 3. Typo: Found `Magic Mirror` in file `readme.md`: Replace it with `MagicMirror²`.
-4. The branch name is 'master'. Consider renaming it to 'main'.
+4. Recommendation: Replace eslintrc by new flat config.
+5. The branch name is 'master'. Consider renaming it to 'main'.
 
 ### [MMM-Pages-Screencast by jboucly](https://github.com/jboucly/MMM-Pages-Screencast)
 
@@ -5219,11 +5400,12 @@ Last update: 2023-12-13 11:58:28 UTC
 1. `package.json` issue: No description
 2. `package.json` issue: No repository field.
 3. There are no keywords in 'package.json'. We would use them as tags on the module list page.
-4. Typo: Found `Magic Mirror` in file `MMM-PasadenaTransit.js`: Replace it with `MagicMirror²`.
-5. Typo: Found `Magic Mirror` in file `README.md`: Replace it with `MagicMirror²`.
-6. Deprecated: Found `require('request')` in file `node_helper.js`: Replace it with built-in fetch.
-7. Deprecated: Found `require('request')` in file `pt_helper.js`: Replace it with built-in fetch.
-8. The branch name is 'master'. Consider renaming it to 'main'.
+4. Recommendation: Found `jshint` in file `.gitignore`: Replace "jshint" by "eslint".
+5. Typo: Found `Magic Mirror` in file `MMM-PasadenaTransit.js`: Replace it with `MagicMirror²`.
+6. Typo: Found `Magic Mirror` in file `README.md`: Replace it with `MagicMirror²`.
+7. Deprecated: Found `require('request')` in file `node_helper.js`: Replace it with built-in fetch.
+8. Deprecated: Found `require('request')` in file `pt_helper.js`: Replace it with built-in fetch.
+9. The branch name is 'master'. Consider renaming it to 'main'.
 
 ### [MMM-pathtime by Comf0rTS1997](https://github.com/Comf0rTS1997/MMM-pathtime)
 
@@ -5302,9 +5484,8 @@ Last update: 2023-12-13 11:58:28 UTC
 
 ### [MMM-PhilipsHue by mumblebaj](https://github.com/mumblebaj/MMM-PhilipsHue)
 
-1. No image found.
-2. Recommendation: Found `'node-fetch'` in file `node_helper.js`: Replace it with built-in fetch.
-3. Recommendation: Found `"node-fetch"` in file `package.json`: Replace it with built-in fetch.
+1. Recommendation: Found `'node-fetch'` in file `node_helper.js`: Replace it with built-in fetch.
+2. Recommendation: Found `"node-fetch"` in file `package.json`: Replace it with built-in fetch.
 
 ### [phone-notification-mirror by ronny3050](https://github.com/ronny3050/phone-notification-mirror)
 
@@ -5356,7 +5537,8 @@ Last update: 2023-12-13 11:58:28 UTC
 ### [MMM-ping by fewieden](https://github.com/fewieden/MMM-ping)
 
 1. Typo: Found `MagicMirror2` in file `package.json`: Replace it with `MagicMirror²`.
-2. The branch name is 'master'. Consider renaming it to 'main'.
+2. Recommendation: Replace eslintrc by new flat config.
+3. The branch name is 'master'. Consider renaming it to 'main'.
 
 ### [MMM-Pir by bugsounet](https://github.com/bugsounet/MMM-Pir)
 
@@ -5595,15 +5777,17 @@ Last update: 2023-12-13 11:58:28 UTC
 
 1. `package.json` issue: No repository field.
 2. There are no keywords in 'package.json'. We would use them as tags on the module list page.
-3. Typo: Found `Magic Mirror` in file `MMM-Powerwall.js`: Replace it with `MagicMirror²`.
-4. Typo: Found `Magic Mirror` in file `README.md`: Replace it with `MagicMirror²`.
-5. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
-6. Recommendation: Found `'node-fetch'` in file `node_helper.js`: Replace it with built-in fetch.
-7. Recommendation: Found `"node-fetch"` in file `package.json`: Replace it with built-in fetch.
-8. Recommendation: Found `axios` in file `package.json`: Replace it with built-in fetch.
-9. Recommendation: Found `require("https")` in file `powerwall.js`: Replace "https" by "node:https".
-10. Recommendation: Found `axios` in file `powerwall.js`: Replace it with built-in fetch.
-11. The branch name is 'master'. Consider renaming it to 'main'.
+3. Recommendation: Found `jshint` in file `Gruntfile.js`: Replace "jshint" by "eslint".
+4. Typo: Found `Magic Mirror` in file `MMM-Powerwall.js`: Replace it with `MagicMirror²`.
+5. Typo: Found `Magic Mirror` in file `README.md`: Replace it with `MagicMirror²`.
+6. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
+7. Recommendation: Found `'node-fetch'` in file `node_helper.js`: Replace it with built-in fetch.
+8. Recommendation: Found `"node-fetch"` in file `package.json`: Replace it with built-in fetch.
+9. Recommendation: Found `axios` in file `package.json`: Replace it with built-in fetch.
+10. Recommendation: Found `require("https")` in file `powerwall.js`: Replace "https" by "node:https".
+11. Recommendation: Found `axios` in file `powerwall.js`: Replace it with built-in fetch.
+12. Recommendation: Replace eslintrc by new flat config.
+13. The branch name is 'master'. Consider renaming it to 'main'.
 
 ### [MMM-PrayerTime by slametps](https://github.com/slametps/MMM-PrayerTime)
 
@@ -5636,7 +5820,8 @@ Last update: 2023-12-13 11:58:28 UTC
 
 ### [MMM-ProfileControl by Tom-Hirschberger](https://github.com/Tom-Hirschberger/MMM-ProfileControl)
 
-1. The branch name is 'master'. Consider renaming it to 'main'.
+1. Recommendation: Replace eslintrc by new flat config.
+2. The branch name is 'master'. Consider renaming it to 'main'.
 
 ### [MMM-Profilepicture by Snille](https://github.com/Snille/MMM-Profilepicture)
 
@@ -5656,26 +5841,35 @@ Last update: 2023-12-13 11:58:28 UTC
 2. Recommendation: Found `"node-fetch"` in file `package.json`: Replace it with built-in fetch.
 3. Recommendation: Found `"node-fetch"` in file `PrometheusService.test.ts`: Replace it with built-in fetch.
 4. Recommendation: Found `"node-fetch"` in file `PrometheusService.ts`: Replace it with built-in fetch.
+5. Recommendation: Replace eslintrc by new flat config.
 
 ### [MMM-Property-managed by stewartmckee](https://github.com/stewartmckee/MMM-Property-managed)
 
 1. `package.json` issue: No repository field.
 2. There are no keywords in 'package.json'. We would use them as tags on the module list page.
 3. No image found.
-4. Typo: Found `Magic Mirror` in file `MMM-Property-Managed.js`: Replace it with `MagicMirror²`.
-5. Recommendation: Found `XMLHttpRequest` in file `MMM-Property-Managed.js`: Replace it with built-in fetch.
-6. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
-7. The branch name is 'master'. Consider renaming it to 'main'.
+4. Recommendation: Found `jshint` in file `Gruntfile.js`: Replace "jshint" by "eslint".
+5. Typo: Found `Magic Mirror` in file `MMM-Property-Managed.js`: Replace it with `MagicMirror²`.
+6. Recommendation: Found `XMLHttpRequest` in file `MMM-Property-Managed.js`: Replace it with built-in fetch.
+7. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
+8. Recommendation: Replace eslintrc by new flat config.
+9. The branch name is 'master'. Consider renaming it to 'main'.
 
 ### [MMM-ProxyImage by daxiang28](https://github.com/daxiang28/MMM-ProxyImage)
 
 1. No image found.
 2. Typo: Found `Magic Mirror` in file `README.md`: Replace it with `MagicMirror²`.
 3. Typo: Found `Magic Mirror` in file `package.json`: Replace it with `MagicMirror²`.
+4. Recommendation: Replace eslintrc by new flat config.
 
 ### [MMM-PublicTransportBerlin by deg0nz](https://github.com/deg0nz/MMM-PublicTransportBerlin)
 
-1. The branch name is 'master'. Consider renaming it to 'main'.
+1. Recommendation: Replace eslintrc by new flat config.
+2. The branch name is 'master'. Consider renaming it to 'main'.
+
+### [MMM-PublicTransportHafas by KristjanESPERANTO](https://github.com/KristjanESPERANTO/MMM-PublicTransportHafas)
+
+1. Recommendation: Replace eslintrc by new flat config.
 
 ### [MMM-PublicTransportVVO by ChristianGeie](https://github.com/ChristianGeie/MMM-PublicTransportVVO)
 
@@ -5771,6 +5965,10 @@ Last update: 2023-12-13 11:58:28 UTC
 3. Deprecated: Found `require('request')` in file `node_helper.js`: Replace it with built-in fetch.
 4. The branch name is 'master'. Consider renaming it to 'main'.
 
+### [MMM-RAIN-MAP by jalibu](https://github.com/jalibu/MMM-RAIN-MAP)
+
+1. Recommendation: Replace eslintrc by new flat config.
+
 ### [MMM-RAIN-RADAR by jojoduquartier](https://github.com/jojoduquartier/MMM-RAIN-RADAR)
 
 1. There is no `package.json`. We need this file to gather information about the module for the module list page.
@@ -5842,8 +6040,10 @@ Last update: 2023-12-13 11:58:28 UTC
 ### [MMM-RandomYouTubePlayer by justjim1220](https://github.com/justjim1220/MMM-RandomYouTubePlayer)
 
 1. There is no `package.json`. We need this file to gather information about the module for the module list page.
-2. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
-3. The branch name is 'master'. Consider renaming it to 'main'.
+2. Recommendation: Found `jshint` in file `Gruntfile.js`: Replace "jshint" by "eslint".
+3. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
+4. Recommendation: Replace eslintrc by new flat config.
+5. The branch name is 'master'. Consider renaming it to 'main'.
 
 ### [MMM-RBB-Weather by nkl-kst](https://github.com/nkl-kst/MMM-RBB-Weather)
 
@@ -5858,7 +6058,8 @@ Last update: 2023-12-13 11:58:28 UTC
 9. Typo: Found `Magic Mirror` in file `ModuleTest.js`: Replace it with `MagicMirror²`.
 10. Typo: Found `Magic Mirror` in file `TestConfig.js`: Replace it with `MagicMirror²`.
 11. Recommendation: Found `require('https')` in file `EndpointTest.js`: Replace 'https' by 'node:https'.
-12. The branch name is 'master'. Consider renaming it to 'main'.
+12. Recommendation: Replace eslintrc by new flat config.
+13. The branch name is 'master'. Consider renaming it to 'main'.
 
 ### [MMM-rbtv-sendeplan by juliankern](https://github.com/juliankern/MMM-rbtv-sendeplan)
 
@@ -5882,10 +6083,12 @@ Last update: 2023-12-13 11:58:28 UTC
 3. Typo: Found `Magic Mirror` in file `MMM-Recipe.js`: Replace it with `MagicMirror²`.
 4. Typo: Found `MagicMirror2` in file `README.md`: Replace it with `MagicMirror²`.
 5. Recommendation: Found `XMLHttpRequest` in file `jquery.js`: Replace it with built-in fetch.
-6. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
-7. Deprecated: Found `require('request')` in file `node_helper.js`: Replace it with built-in fetch.
-8. Warning: No LICENSE file.
-9. The branch name is 'master'. Consider renaming it to 'main'.
+6. Recommendation: Found `jshint` in file `jquery.js`: Replace "jshint" by "eslint".
+7. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
+8. Deprecated: Found `require('request')` in file `node_helper.js`: Replace it with built-in fetch.
+9. Warning: No LICENSE file.
+10. Recommendation: Replace eslintrc by new flat config.
+11. The branch name is 'master'. Consider renaming it to 'main'.
 
 ### [MMM-RecyclingCalendar by FatTony404](https://gitlab.com/FatTony404/MMM-RecyclingCalendar)
 
@@ -5927,12 +6130,17 @@ Last update: 2023-12-13 11:58:28 UTC
 
 ### [MMM-Remote-Control by Jopyth](https://github.com/Jopyth/MMM-Remote-Control)
 
-1. Deprecated: Found `omxplayer` in file `modules.json`: Try to replace it with `vlc`.
-2. Typo: Found `Magic Mirror` in file `package.json`: Replace it with `MagicMirror²`.
-3. Recommendation: Found `"node-fetch"` in file `package.json`: Replace it with built-in fetch.
-4. Recommendation: Found `XMLHttpRequest` in file `remote.js`: Replace it with built-in fetch.
-5. Recommendation: Found `"node-fetch"` in file `download_modules.js`: Replace it with built-in fetch.
-6. The branch name is 'master'. Consider renaming it to 'main'.
+1. Recommendation: Found `jshint` in file `api.js`: Replace "jshint" by "eslint".
+2. Recommendation: Found `jshint` in file `MMM-Remote-Control.js`: Replace "jshint" by "eslint".
+3. Deprecated: Found `omxplayer` in file `modules.json`: Try to replace it with `vlc`.
+4. Recommendation: Found `jshint` in file `node_helper.js`: Replace "jshint" by "eslint".
+5. Typo: Found `Magic Mirror` in file `package.json`: Replace it with `MagicMirror²`.
+6. Recommendation: Found `"node-fetch"` in file `package.json`: Replace it with built-in fetch.
+7. Recommendation: Found `XMLHttpRequest` in file `remote.js`: Replace it with built-in fetch.
+8. Recommendation: Found `jshint` in file `remote.js`: Replace "jshint" by "eslint".
+9. Recommendation: Found `"node-fetch"` in file `download_modules.js`: Replace it with built-in fetch.
+10. Recommendation: Found `jshint` in file `download_modules.js`: Replace "jshint" by "eslint".
+11. The branch name is 'master'. Consider renaming it to 'main'.
 
 ### [MMM-Remote-Control-Repository by MMRIZE](https://github.com/MMRIZE/MMM-Remote-Control-Repository)
 
@@ -5951,7 +6159,8 @@ Last update: 2023-12-13 11:58:28 UTC
 ### [MMM-RemoteTemperature by balassy](https://github.com/balassy/MMM-RemoteTemperature)
 
 1. Typo: Found `Magic Mirror` in file `MMM-RemoteTemperature.js`: Replace it with `MagicMirror²`.
-2. The branch name is 'master'. Consider renaming it to 'main'.
+2. Recommendation: Replace eslintrc by new flat config.
+3. The branch name is 'master'. Consider renaming it to 'main'.
 
 ### [MMM-RepoStats by khassel](https://gitlab.com/khassel/MMM-RepoStats)
 
@@ -5969,12 +6178,8 @@ Last update: 2023-12-13 11:58:28 UTC
 
 ### [MMM-RescueTime by Duske](https://github.com/Duske/MMM-RescueTime)
 
-1. The branch name is 'master'. Consider renaming it to 'main'.
-2. Information: There are updates for 3 dependencie(s):
-   -  chart.js   ^2.7.2  →   ^4.4.1
-   -  date-fns  ^1.29.0  →  ^2.30.0
-   -  eslint    ^4.19.1  →  ^8.55.0
-
+1. Recommendation: Replace eslintrc by new flat config.
+2. The branch name is 'master'. Consider renaming it to 'main'.
 
 ### [MMM-ResRobot by Alvinger](https://github.com/Alvinger/MMM-ResRobot)
 
@@ -6014,6 +6219,7 @@ Last update: 2023-12-13 11:58:28 UTC
 1. There are no keywords in 'package.json'. We would use them as tags on the module list page.
 2. Recommendation: Found `uses: actions/checkout@v3` in file `nodejs.yml`: Replace it with v4.
 3. Typo: Found `Magic Mirror` in file `MMM-RingAlarm.js`: Replace it with `MagicMirror²`.
+4. Recommendation: Replace eslintrc by new flat config.
 
 ### [MMM-RKI-Covid19 by fhinder](https://github.com/fhinder/MMM-RKI-Covid19)
 
@@ -6040,6 +6246,7 @@ Last update: 2023-12-13 11:58:28 UTC
 6. Recommendation: Found `"node-fetch"` in file `package.json`: Replace it with built-in fetch.
 7. Recommendation: Found `'node-fetch'` in file `rollup.config.js`: Replace it with built-in fetch.
 8. Recommendation: Found `'node-fetch'` in file `Backend.ts`: Replace it with built-in fetch.
+9. Recommendation: Replace eslintrc by new flat config.
 
 ### [MMM-RNV by jupadin](https://github.com/jupadin/MMM-RNV)
 
@@ -6082,7 +6289,8 @@ Last update: 2023-12-13 11:58:28 UTC
 1. Typo: Found `Magic Mirror` in file `MMM-Roomba.js`: Replace it with `MagicMirror²`.
 2. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
 3. Typo: Found `Magic Mirror` in file `package.json`: Replace it with `MagicMirror²`.
-4. The branch name is 'master'. Consider renaming it to 'main'.
+4. Recommendation: Replace eslintrc by new flat config.
+5. The branch name is 'master'. Consider renaming it to 'main'.
 
 ### [MMM-RottenTomatoes by AdamMoses-GitHub](https://github.com/AdamMoses-GitHub/MMM-RottenTomatoes)
 
@@ -6104,8 +6312,9 @@ Last update: 2023-12-13 11:58:28 UTC
 
 1. There are no keywords in 'package.json'. We would use them as tags on the module list page.
 2. No image found.
-3. Warning: No LICENSE file.
-4. The branch name is 'master'. Consider renaming it to 'main'.
+3. Recommendation: Found `jshint` in file `Gruntfile.js`: Replace "jshint" by "eslint".
+4. Warning: No LICENSE file.
+5. The branch name is 'master'. Consider renaming it to 'main'.
 
 ### [MMM-RSS-FEED by Taolanoz](https://github.com/Taolanoz/MMM-RSS-FEED)
 
@@ -6119,19 +6328,22 @@ Last update: 2023-12-13 11:58:28 UTC
 1. There are no keywords in 'package.json'. We would use them as tags on the module list page.
 2. Typo: Found `Magic Mirror` in file `MMM-RTSPStream.js`: Replace it with `MagicMirror²`.
 3. Deprecated: Found `omxplayer` in file `MMM-RTSPStream.js`: Try to replace it with `vlc`.
-4. Typo: Found `Magic Mirror` in file `README.md`: Replace it with `MagicMirror²`.
-5. Deprecated: Found `omxplayer` in file `README.md`: Try to replace it with `vlc`.
-6. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
-7. Recommendation: Found `"node-fetch"` in file `node_helper.js`: Replace it with built-in fetch.
-8. Deprecated: Found `omxplayer` in file `node_helper.js`: Try to replace it with `vlc`.
-9. Typo: Found `Magic Mirror` in file `package.json`: Replace it with `MagicMirror²`.
-10. Recommendation: Found `"node-fetch"` in file `package.json`: Replace it with built-in fetch.
-11. Deprecated: Found `omxplayer` in file `config.html`: Try to replace it with `vlc`.
-12. Recommendation: Found `XMLHttpRequest` in file `jquery-3.2.1.min.js`: Replace it with built-in fetch.
-13. Typo: Found `MagicMirror2` in file `installer.sh`: Replace it with `MagicMirror²`.
-14. Recommendation: Found `XMLHttpRequest` in file `jsmpeg.min.js`: Replace it with built-in fetch.
-15. Deprecated: Found `omxplayer` in file `preinstall.sh`: Try to replace it with `vlc`.
-16. The branch name is 'master'. Consider renaming it to 'main'.
+4. Recommendation: Found `jshint` in file `MMM-RTSPStream.js`: Replace "jshint" by "eslint".
+5. Typo: Found `Magic Mirror` in file `README.md`: Replace it with `MagicMirror²`.
+6. Deprecated: Found `omxplayer` in file `README.md`: Try to replace it with `vlc`.
+7. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
+8. Recommendation: Found `"node-fetch"` in file `node_helper.js`: Replace it with built-in fetch.
+9. Deprecated: Found `omxplayer` in file `node_helper.js`: Try to replace it with `vlc`.
+10. Typo: Found `Magic Mirror` in file `package.json`: Replace it with `MagicMirror²`.
+11. Recommendation: Found `"node-fetch"` in file `package.json`: Replace it with built-in fetch.
+12. Deprecated: Found `omxplayer` in file `config.html`: Try to replace it with `vlc`.
+13. Recommendation: Found `jshint` in file `config.html`: Replace "jshint" by "eslint".
+14. Recommendation: Found `XMLHttpRequest` in file `jquery-3.2.1.min.js`: Replace it with built-in fetch.
+15. Typo: Found `MagicMirror2` in file `installer.sh`: Replace it with `MagicMirror²`.
+16. Recommendation: Found `XMLHttpRequest` in file `jsmpeg.min.js`: Replace it with built-in fetch.
+17. Recommendation: Found `jshint` in file `onexit.js`: Replace "jshint" by "eslint".
+18. Deprecated: Found `omxplayer` in file `preinstall.sh`: Try to replace it with `vlc`.
+19. The branch name is 'master'. Consider renaming it to 'main'.
 
 ### [MMM-RTSPtoWeb by shbatm](https://github.com/shbatm/MMM-RTSPtoWeb)
 
@@ -6146,11 +6358,12 @@ Last update: 2023-12-13 11:58:28 UTC
 
 1. `package.json` issue: No repository field.
 2. There are no keywords in 'package.json'. We would use them as tags on the module list page.
-3. Typo: Found `Magic Mirror` in file `README.md`: Replace it with `MagicMirror²`.
-4. Typo: Found `Magic Mirror` in file `RubishCollection.js`: Replace it with `MagicMirror²`.
-5. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
-6. Deprecated: Found `require('request')` in file `node_helper.js`: Replace it with built-in fetch.
-7. The branch name is 'master'. Consider renaming it to 'main'.
+3. Recommendation: Found `jshint` in file `Gruntfile.js`: Replace "jshint" by "eslint".
+4. Typo: Found `Magic Mirror` in file `README.md`: Replace it with `MagicMirror²`.
+5. Typo: Found `Magic Mirror` in file `RubishCollection.js`: Replace it with `MagicMirror²`.
+6. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
+7. Deprecated: Found `require('request')` in file `node_helper.js`: Replace it with built-in fetch.
+8. The branch name is 'master'. Consider renaming it to 'main'.
 
 ### [MMM-Russianwarship by uncleLem](https://github.com/uncleLem/MMM-Russianwarship)
 
@@ -6199,11 +6412,13 @@ Last update: 2023-12-13 11:58:28 UTC
 2. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
 3. Deprecated: Found `require('request')` in file `node_helper.js`: Replace it with built-in fetch.
 4. Typo: Found `MagicMirror2` in file `package.json`: Replace it with `MagicMirror²`.
-5. The branch name is 'master'. Consider renaming it to 'main'.
+5. Recommendation: Replace eslintrc by new flat config.
+6. The branch name is 'master'. Consider renaming it to 'main'.
 
 ### [MMM-Screen-Powersave-Notification by Tom-Hirschberger](https://github.com/Tom-Hirschberger/MMM-Screen-Powersave-Notification)
 
-1. The branch name is 'master'. Consider renaming it to 'main'.
+1. Recommendation: Replace eslintrc by new flat config.
+2. The branch name is 'master'. Consider renaming it to 'main'.
 
 ### [MMM-Screencast by kevinatown](https://github.com/kevinatown/MMM-Screencast)
 
@@ -6216,13 +6431,15 @@ Last update: 2023-12-13 11:58:28 UTC
 
 1. There are no keywords in 'package.json'. We would use them as tags on the module list page.
 2. Recommendation: Found `uses: actions/checkout@v3` in file `nodejs.yml`: Replace it with v4.
+3. Recommendation: Replace eslintrc by new flat config.
 
 ### [MMM-ScriptScheduler by ralberth](https://github.com/ralberth/MMM-ScriptScheduler)
 
 1. Typo: Found `Magic Mirror` in file `MMM-ScriptScheduler.js`: Replace it with `MagicMirror²`.
 2. Typo: Found `Magic Mirror` in file `README.md`: Replace it with `MagicMirror²`.
 3. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
-4. The branch name is 'master'. Consider renaming it to 'main'.
+4. Recommendation: Found `jshint` in file `node_helper.js`: Replace "jshint" by "eslint".
+5. The branch name is 'master'. Consider renaming it to 'main'.
 
 ### [MMM-Scrobbler by PtrBld](https://github.com/PtrBld/MMM-Scrobbler)
 
@@ -6234,9 +6451,11 @@ Last update: 2023-12-13 11:58:28 UTC
 
 1. `package.json` issue: No repository field.
 2. There are no keywords in 'package.json'. We would use them as tags on the module list page.
-3. Typo: Found `Magic Mirror` in file `MMM-SE-Reputation.js`: Replace it with `MagicMirror²`.
-4. Recommendation: Found `XMLHttpRequest` in file `MMM-SE-Reputation.js`: Replace it with built-in fetch.
-5. The branch name is 'master'. Consider renaming it to 'main'.
+3. Recommendation: Found `jshint` in file `Gruntfile.js`: Replace "jshint" by "eslint".
+4. Typo: Found `Magic Mirror` in file `MMM-SE-Reputation.js`: Replace it with `MagicMirror²`.
+5. Recommendation: Found `XMLHttpRequest` in file `MMM-SE-Reputation.js`: Replace it with built-in fetch.
+6. Recommendation: Replace eslintrc by new flat config.
+7. The branch name is 'master'. Consider renaming it to 'main'.
 
 ### [MMM-SearchLight by mykle1](https://github.com/mykle1/MMM-SearchLight)
 
@@ -6288,7 +6507,8 @@ Last update: 2023-12-13 11:58:28 UTC
 
 ### [MMM-Serial-Notifications by Tom-Hirschberger](https://github.com/Tom-Hirschberger/MMM-Serial-Notifications)
 
-1. The branch name is 'master'. Consider renaming it to 'main'.
+1. Recommendation: Replace eslintrc by new flat config.
+2. The branch name is 'master'. Consider renaming it to 'main'.
 
 ### [MMM-ServerStatus by XBCreepinJesus](https://github.com/XBCreepinJesus/MMM-ServerStatus)
 
@@ -6374,7 +6594,8 @@ Last update: 2023-12-13 11:58:28 UTC
 7. Typo: Found `Magic Mirror` in file `Landmark.js`: Replace it with `MagicMirror²`.
 8. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
 9. Typo: Found `MagicMirror2` in file `package.json`: Replace it with `MagicMirror²`.
-10. The branch name is 'master'. Consider renaming it to 'main'.
+10. Recommendation: Replace eslintrc by new flat config.
+11. The branch name is 'master'. Consider renaming it to 'main'.
 
 ### [MMM-SHL by bureus](https://github.com/bureus/MMM-SHL)
 
@@ -6414,7 +6635,8 @@ Last update: 2023-12-13 11:58:28 UTC
 
 1. Typo: Found `Magic Mirror` in file `MMM-SingleStock.js`: Replace it with `MagicMirror²`.
 2. Recommendation: Found `XMLHttpRequest` in file `MMM-SingleStock.js`: Replace it with built-in fetch.
-3. The branch name is 'master'. Consider renaming it to 'main'.
+3. Recommendation: Replace eslintrc by new flat config.
+4. The branch name is 'master'. Consider renaming it to 'main'.
 
 ### [MMM-Skola24 by retroflex](https://github.com/retroflex/MMM-Skola24)
 
@@ -6467,7 +6689,8 @@ Last update: 2023-12-13 11:58:28 UTC
 1. Typo: Found `Magic Mirror` in file `MMM-slamfm-playing-now.js`: Replace it with `MagicMirror²`.
 2. Typo: Found `Magic Mirror` in file `README.md`: Replace it with `MagicMirror²`.
 3. Recommendation: Found `require('https')` in file `node_helper.js`: Replace 'https' by 'node:https'.
-4. The branch name is 'master'. Consider renaming it to 'main'.
+4. Recommendation: Replace eslintrc by new flat config.
+5. The branch name is 'master'. Consider renaming it to 'main'.
 
 ### [MMM-SleeperNFL by jackmeyer](https://github.com/jackmeyer/MMM-SleeperNFL)
 
@@ -6539,7 +6762,8 @@ Last update: 2023-12-13 11:58:28 UTC
 1. Recommendation: Found `'node-fetch'` in file `node_helper.js`: Replace it with built-in fetch.
 2. Typo: Found `MagicMirror2` in file `package.json`: Replace it with `MagicMirror²`.
 3. Recommendation: Found `"node-fetch"` in file `package.json`: Replace it with built-in fetch.
-4. The branch name is 'master'. Consider renaming it to 'main'.
+4. Recommendation: Replace eslintrc by new flat config.
+5. The branch name is 'master'. Consider renaming it to 'main'.
 
 ### [MMM-SoccerLiveScore by 0m4r](https://github.com/0m4r/MMM-SoccerLiveScore)
 
@@ -6549,13 +6773,15 @@ Last update: 2023-12-13 11:58:28 UTC
 4. Recommendation: Found `'node-fetch'` in file `node_helper.js`: Replace it with built-in fetch.
 5. Recommendation: Found `"node-fetch"` in file `package.json`: Replace it with built-in fetch.
 6. Warning: No LICENSE file.
-7. The branch name is 'master'. Consider renaming it to 'main'.
+7. Recommendation: Replace eslintrc by new flat config.
+8. The branch name is 'master'. Consider renaming it to 'main'.
 
 ### [MMM-social-counter by ngnijland](https://github.com/ngnijland/MMM-social-counter)
 
 1. Typo: Found `Magic Mirror` in file `MMM-social-counter.js`: Replace it with `MagicMirror²`.
 2. Recommendation: Found `require('https')` in file `node_helper.js`: Replace 'https' by 'node:https'.
-3. The branch name is 'master'. Consider renaming it to 'main'.
+3. Recommendation: Replace eslintrc by new flat config.
+4. The branch name is 'master'. Consider renaming it to 'main'.
 
 ### [MMM-socialbicycles by 0lek](https://github.com/0lek/MMM-socialbicycles)
 
@@ -6577,10 +6803,12 @@ Last update: 2023-12-13 11:58:28 UTC
 
 1. `package.json` issue: No repository field.
 2. There are no keywords in 'package.json'. We would use them as tags on the module list page.
-3. Typo: Found `Magic Mirror` in file `MMM-SolarEdge.js`: Replace it with `MagicMirror²`.
-4. Typo: Found `MagicMirror2` in file `README.md`: Replace it with `MagicMirror²`.
-5. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
-6. Deprecated: Found `require("request")` in file `node_helper.js`: Replace it with built-in fetch.
+3. Recommendation: Found `jshint` in file `Gruntfile.js`: Replace "jshint" by "eslint".
+4. Typo: Found `Magic Mirror` in file `MMM-SolarEdge.js`: Replace it with `MagicMirror²`.
+5. Typo: Found `MagicMirror2` in file `README.md`: Replace it with `MagicMirror²`.
+6. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
+7. Deprecated: Found `require("request")` in file `node_helper.js`: Replace it with built-in fetch.
+8. Recommendation: Replace eslintrc by new flat config.
 
 ### [MMM-SolarEdge by bertieuk](https://github.com/bertieuk/MMM-SolarEdge)
 
@@ -6625,7 +6853,8 @@ Last update: 2023-12-13 11:58:28 UTC
 3. Typo: Found `Magic Mirror` in file `MMM-Sonos.js`: Replace it with `MagicMirror²`.
 4. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
 5. Deprecated: Found `require('request')` in file `node_helper.js`: Replace it with built-in fetch.
-6. The branch name is 'master'. Consider renaming it to 'main'.
+6. Recommendation: Replace eslintrc by new flat config.
+7. The branch name is 'master'. Consider renaming it to 'main'.
 
 ### [MMM-Sonos by tbouron](https://github.com/tbouron/MMM-Sonos)
 
@@ -6725,6 +6954,7 @@ Last update: 2023-12-13 11:58:28 UTC
 2. Recommendation: Found `"node-fetch"` in file `package.json`: Replace it with built-in fetch.
 3. Recommendation: Found `"node-fetch"` in file `StatusPageService.test.ts`: Replace it with built-in fetch.
 4. Recommendation: Found `"node-fetch"` in file `StatusPageService.ts`: Replace it with built-in fetch.
+5. Recommendation: Replace eslintrc by new flat config.
 
 ### [MMM-SteamPlaytime by buxxi](https://github.com/buxxi/MMM-SteamPlaytime)
 
@@ -6750,7 +6980,9 @@ Last update: 2023-12-13 11:58:28 UTC
 ### [MMM-stib2 by bendardenne](https://github.com/bendardenne/MMM-stib2)
 
 1. There are no keywords in 'package.json'. We would use them as tags on the module list page.
-2. The branch name is 'master'. Consider renaming it to 'main'.
+2. Recommendation: Found `jshint` in file `Gruntfile.js`: Replace "jshint" by "eslint".
+3. Recommendation: Replace eslintrc by new flat config.
+4. The branch name is 'master'. Consider renaming it to 'main'.
 
 ### [MMM-Stock by hakanmhmd](https://github.com/hakanmhmd/MMM-Stock)
 
@@ -6777,7 +7009,8 @@ Last update: 2023-12-13 11:58:28 UTC
 1. Typo: Found `Magic Mirror` in file `README.md`: Replace it with `MagicMirror²`.
 2. Deprecated: Found `stylelint-config-prettier` in file `package.json`: Update `stylelint` and remove `stylelint-config-prettier`.
 3. Recommendation: Found `XMLHttpRequest` in file `index.html`: Replace it with built-in fetch.
-4. The branch name is 'master'. Consider renaming it to 'main'.
+4. Recommendation: Replace eslintrc by new flat config.
+5. The branch name is 'master'. Consider renaming it to 'main'.
 
 ### [MMM-SugarValue by balharrie](https://github.com/balharrie/MMM-SugarValue)
 
@@ -6822,9 +7055,11 @@ Last update: 2023-12-13 11:58:28 UTC
 1. `package.json` issue: No repository field.
 2. There are no keywords in 'package.json'. We would use them as tags on the module list page.
 3. No image found.
-4. Typo: Found `Magic Mirror` in file `MMM-SwissCommute.js`: Replace it with `MagicMirror²`.
-5. Recommendation: Found `XMLHttpRequest` in file `MMM-SwissCommute.js`: Replace it with built-in fetch.
-6. The branch name is 'master'. Consider renaming it to 'main'.
+4. Recommendation: Found `jshint` in file `Gruntfile.js`: Replace "jshint" by "eslint".
+5. Typo: Found `Magic Mirror` in file `MMM-SwissCommute.js`: Replace it with `MagicMirror²`.
+6. Recommendation: Found `XMLHttpRequest` in file `MMM-SwissCommute.js`: Replace it with built-in fetch.
+7. Recommendation: Replace eslintrc by new flat config.
+8. The branch name is 'master'. Consider renaming it to 'main'.
 
 ### [MMM-SwissLakeTemperature by roufri](https://github.com/roufri/MMM-SwissLakeTemperature)
 
@@ -6856,7 +7091,8 @@ Last update: 2023-12-13 11:58:28 UTC
 
 ### [MMM-SynologySurveillance by Tom-Hirschberger](https://github.com/Tom-Hirschberger/MMM-SynologySurveillance)
 
-1. The branch name is 'master'. Consider renaming it to 'main'.
+1. Recommendation: Replace eslintrc by new flat config.
+2. The branch name is 'master'. Consider renaming it to 'main'.
 
 ### [MMM-syslog by paviro](https://github.com/paviro/MMM-syslog)
 
@@ -6868,8 +7104,10 @@ Last update: 2023-12-13 11:58:28 UTC
 
 ### [MMM-SystemMonitor by btastic](https://github.com/btastic/MMM-SystemMonitor)
 
-1. Typo: Found `Magic Mirror` in file `MMM-SystemMonitor.js`: Replace it with `MagicMirror²`.
-2. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
+1. Recommendation: Found `jshint` in file `Gruntfile.js`: Replace "jshint" by "eslint".
+2. Typo: Found `Magic Mirror` in file `MMM-SystemMonitor.js`: Replace it with `MagicMirror²`.
+3. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
+4. Recommendation: Replace eslintrc by new flat config.
 
 ### [MMM-SystemStats by BenRoe](https://github.com/BenRoe/MMM-SystemStats)
 
@@ -6941,7 +7179,8 @@ Last update: 2023-12-13 11:58:28 UTC
 
 ### [MMM-Temperature by Tom-Hirschberger](https://github.com/Tom-Hirschberger/MMM-Temperature)
 
-1. The branch name is 'master'. Consider renaming it to 'main'.
+1. Recommendation: Replace eslintrc by new flat config.
+2. The branch name is 'master'. Consider renaming it to 'main'.
 
 ### [MMM-Tesla by mattdy](https://github.com/mattdy/MMM-Tesla)
 
@@ -6952,7 +7191,8 @@ Last update: 2023-12-13 11:58:28 UTC
 5. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
 6. Deprecated: Found `require("request")` in file `node_helper.js`: Replace it with built-in fetch.
 7. Typo: Found `MagicMirror2` in file `package.json`: Replace it with `MagicMirror²`.
-8. The branch name is 'master'. Consider renaming it to 'main'.
+8. Recommendation: Replace eslintrc by new flat config.
+9. The branch name is 'master'. Consider renaming it to 'main'.
 
 ### [MMM-Tesla3 by usncahill](https://github.com/usncahill/MMM-Tesla3)
 
@@ -6983,12 +7223,14 @@ Last update: 2023-12-13 11:58:28 UTC
 2. `package.json` issue: No repository field.
 3. `package.json` issue: No license field.
 4. There are no keywords in 'package.json'. We would use them as tags on the module list page.
-5. The branch name is 'master'. Consider renaming it to 'main'.
+5. Recommendation: Replace eslintrc by new flat config.
+6. The branch name is 'master'. Consider renaming it to 'main'.
 
 ### [MMM-text-clock by ngnijland](https://github.com/ngnijland/MMM-text-clock)
 
 1. Typo: Found `Magic Mirror` in file `MMM-text-clock.js`: Replace it with `MagicMirror²`.
-2. The branch name is 'master'. Consider renaming it to 'main'.
+2. Recommendation: Replace eslintrc by new flat config.
+3. The branch name is 'master'. Consider renaming it to 'main'.
 
 ### [MMM-TextPerWeek by retroflex](https://github.com/retroflex/MMM-TextPerWeek)
 
@@ -7095,7 +7337,9 @@ Last update: 2023-12-13 11:58:28 UTC
 ### [MMM-TomTomTraffic by bendardenne](https://github.com/bendardenne/MMM-TomTomTraffic)
 
 1. There are no keywords in 'package.json'. We would use them as tags on the module list page.
-2. The branch name is 'master'. Consider renaming it to 'main'.
+2. Recommendation: Found `jshint` in file `Gruntfile.js`: Replace "jshint" by "eslint".
+3. Recommendation: Replace eslintrc by new flat config.
+4. The branch name is 'master'. Consider renaming it to 'main'.
 
 ### [MMM-TomTomTrafficIncidents by Travelbacon](https://github.com/Travelbacon/MMM-TomTomTrafficIncidents)
 
@@ -7123,10 +7367,8 @@ Last update: 2023-12-13 11:58:28 UTC
 
 ### [MMM-TouchButton by Tom-Hirschberger](https://github.com/Tom-Hirschberger/MMM-TouchButton)
 
-1. The branch name is 'master'. Consider renaming it to 'main'.
-2. Information: There are updates for 1 dependencie(s):
-   -  jsonpath-plus  5.0.1  →  7.2.0
-
+1. Recommendation: Replace eslintrc by new flat config.
+2. The branch name is 'master'. Consider renaming it to 'main'.
 
 ### [MMM-Toulouse-Transports by LoneWanderer-GH](https://github.com/LoneWanderer-GH/MMM-Toulouse-Transports)
 
@@ -7169,9 +7411,11 @@ Last update: 2023-12-13 11:58:28 UTC
 
 1. `package.json` issue: No repository field.
 2. There are no keywords in 'package.json'. We would use them as tags on the module list page.
-3. Typo: Found `Magic Mirror` in file `MMM-Trains-Trafikverket.js`: Replace it with `MagicMirror²`.
-4. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
-5. The branch name is 'master'. Consider renaming it to 'main'.
+3. Recommendation: Found `jshint` in file `Gruntfile.js`: Replace "jshint" by "eslint".
+4. Typo: Found `Magic Mirror` in file `MMM-Trains-Trafikverket.js`: Replace it with `MagicMirror²`.
+5. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
+6. Recommendation: Replace eslintrc by new flat config.
+7. The branch name is 'master'. Consider renaming it to 'main'.
 
 ### [MMM-TrainTimesRTT by tticehurst](https://github.com/tticehurst/MMM-TrainTimesRTT)
 
@@ -7256,7 +7500,8 @@ Last update: 2023-12-13 11:58:28 UTC
 2. Typo: Found `Magic Mirror` in file `MMM-TTS.js`: Replace it with `MagicMirror²`.
 3. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
 4. Typo: Found `MagicMirror2` in file `package.json`: Replace it with `MagicMirror²`.
-5. The branch name is 'master'. Consider renaming it to 'main'.
+5. Recommendation: Replace eslintrc by new flat config.
+6. The branch name is 'master'. Consider renaming it to 'main'.
 
 ### [MMM-Tube-Status by nigel-daniels](https://github.com/nigel-daniels/MMM-Tube-Status)
 
@@ -7333,6 +7578,7 @@ Last update: 2023-12-13 11:58:28 UTC
 
 1. Typo: Found `Magic Mirror` in file `MMM-Udvaronc.js`: Replace it with `MagicMirror²`.
 2. Deprecated: Found `require('request')` in file `node_helper.js`: Replace it with built-in fetch.
+3. Recommendation: Replace eslintrc by new flat config.
 
 ### [MMM-UKLiveBusStopInfo by AndyHazz](https://github.com/AndyHazz/MMM-UKLiveBusStopInfo)
 
@@ -7365,7 +7611,8 @@ Last update: 2023-12-13 11:58:28 UTC
 1. Typo: Found `Magic Mirror` in file `MMM-UKNationalRail.js`: Replace it with `MagicMirror²`.
 2. Typo: Found `Magic Mirror` in file `README.md`: Replace it with `MagicMirror²`.
 3. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
-4. The branch name is 'master'. Consider renaming it to 'main'.
+4. Recommendation: Replace eslintrc by new flat config.
+5. The branch name is 'master'. Consider renaming it to 'main'.
 
 ### [MMM-UKTide by Captsi](https://github.com/Captsi/MMM-UKTide)
 
@@ -7398,18 +7645,20 @@ Last update: 2023-12-13 11:58:28 UTC
 
 ### [MMM-uptimekuma by MikeBishop](https://github.com/MikeBishop/MMM-uptimekuma)
 
-1. Typo: Found `Magic Mirror` in file `MMM-uptimekuma.js`: Replace it with `MagicMirror²`.
-2. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
-3. Recommendation: Found `axios` in file `node_helper.js`: Replace it with built-in fetch.
-4. Recommendation: Found `axios` in file `package.json`: Replace it with built-in fetch.
-5. The branch name is 'master'. Consider renaming it to 'main'.
+1. Recommendation: Found `jshint` in file `Gruntfile.js`: Replace "jshint" by "eslint".
+2. Typo: Found `Magic Mirror` in file `MMM-uptimekuma.js`: Replace it with `MagicMirror²`.
+3. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
+4. Recommendation: Found `axios` in file `node_helper.js`: Replace it with built-in fetch.
+5. Recommendation: Found `axios` in file `package.json`: Replace it with built-in fetch.
+6. The branch name is 'master'. Consider renaming it to 'main'.
 
 ### [MMM-uptimerobot by mrVragec](https://github.com/mrVragec/MMM-uptimerobot)
 
-1. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
-2. Deprecated: Found `require('request')` in file `node_helper.js`: Replace it with built-in fetch.
-3. Typo: Found `Magic Mirror` in file `uptimerobot.js`: Replace it with `MagicMirror²`.
-4. The branch name is 'master'. Consider renaming it to 'main'.
+1. Recommendation: Found `jshint` in file `Gruntfile.js`: Replace "jshint" by "eslint".
+2. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
+3. Deprecated: Found `require('request')` in file `node_helper.js`: Replace it with built-in fetch.
+4. Typo: Found `Magic Mirror` in file `uptimerobot.js`: Replace it with `MagicMirror²`.
+5. The branch name is 'master'. Consider renaming it to 'main'.
 
 ### [MMM-UserPresenceToMQTT by olexs](https://github.com/olexs/MMM-UserPresenceToMQTT)
 
@@ -7421,7 +7670,8 @@ Last update: 2023-12-13 11:58:28 UTC
 
 ### [MMM-ValuesByNotification by Tom-Hirschberger](https://github.com/Tom-Hirschberger/MMM-ValuesByNotification)
 
-1. Information: There are updates for 1 dependencie(s):
+1. Recommendation: Replace eslintrc by new flat config.
+2. Information: There are updates for 1 dependencie(s):
    -  jsonpath-plus  5.1.0  →  7.2.0
 
 
@@ -7515,14 +7765,16 @@ Last update: 2023-12-13 11:58:28 UTC
 ### [MMM-VocabularyTrainer by fewieden](https://github.com/fewieden/MMM-VocabularyTrainer)
 
 1. Typo: Found `MagicMirror2` in file `package.json`: Replace it with `MagicMirror²`.
-2. The branch name is 'master'. Consider renaming it to 'main'.
+2. Recommendation: Replace eslintrc by new flat config.
+3. The branch name is 'master'. Consider renaming it to 'main'.
 
 ### [MMM-voice by fewieden](https://github.com/fewieden/MMM-voice)
 
 1. No image found.
 2. Typo: Found `Magic Mirror` in file `dependencies.sh`: Replace it with `MagicMirror²`.
 3. Typo: Found `MagicMirror2` in file `package.json`: Replace it with `MagicMirror²`.
-4. The branch name is 'master'. Consider renaming it to 'main'.
+4. Recommendation: Replace eslintrc by new flat config.
+5. The branch name is 'master'. Consider renaming it to 'main'.
 
 ### [MMM-Voice-Commands by Veldrovive](https://github.com/Veldrovive/MMM-Voice-Commands)
 
@@ -7580,7 +7832,8 @@ Last update: 2023-12-13 11:58:28 UTC
 5. Typo: Found `Magic Mirror` in file `README.md`: Replace it with `MagicMirror²`.
 6. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
 7. Deprecated: Found `require("request")` in file `node_helper.js`: Replace it with built-in fetch.
-8. The branch name is 'master'. Consider renaming it to 'main'.
+8. Recommendation: Replace eslintrc by new flat config.
+9. The branch name is 'master'. Consider renaming it to 'main'.
 
 ### [MMM-VTA-Live by nigel-daniels](https://github.com/nigel-daniels/MMM-VTA-Live)
 
@@ -7674,7 +7927,8 @@ Last update: 2023-12-13 11:58:28 UTC
 6. Recommendation: Found `XMLHttpRequest` in file `howler.min.js`: Replace it with built-in fetch.
 7. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
 8. Typo: Found `Magic Mirror` in file `package.json`: Replace it with `MagicMirror²`.
-9. The branch name is 'master'. Consider renaming it to 'main'.
+9. Recommendation: Replace eslintrc by new flat config.
+10. The branch name is 'master'. Consider renaming it to 'main'.
 
 ### [MMM-Weather-Now by nigel-daniels](https://github.com/nigel-daniels/MMM-Weather-Now)
 
@@ -7697,10 +7951,12 @@ Last update: 2023-12-13 11:58:28 UTC
 
 1. `package.json` issue: No repository field.
 2. There are no keywords in 'package.json'. We would use them as tags on the module list page.
-3. Typo: Found `Magic Mirror` in file `MMM-WeatherAlerts.js`: Replace it with `MagicMirror²`.
-4. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
-5. Found directory `node_modules`. This shouldn't be uploaded. Add `node_modules/`to `.gitignore`.
-6. Typo: Found `MagicMirror2` in file `README.md`: Replace it with `MagicMirror²`.
+3. Recommendation: Found `jshint` in file `Gruntfile.js`: Replace "jshint" by "eslint".
+4. Typo: Found `Magic Mirror` in file `MMM-WeatherAlerts.js`: Replace it with `MagicMirror²`.
+5. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
+6. Found directory `node_modules`. This shouldn't be uploaded. Add `node_modules/`to `.gitignore`.
+7. Typo: Found `MagicMirror2` in file `README.md`: Replace it with `MagicMirror²`.
+8. Recommendation: Replace eslintrc by new flat config.
 
 ### [MMM-WeatherBackground by BrianHepler](https://github.com/BrianHepler/MMM-WeatherBackground)
 
@@ -7794,18 +8050,22 @@ Last update: 2023-12-13 11:58:28 UTC
 
 1. `package.json` issue: No repository field.
 2. There are no keywords in 'package.json'. We would use them as tags on the module list page.
-3. Typo: Found `Magic Mirror` in file `MMM-WH2600.js`: Replace it with `MagicMirror²`.
-4. Typo: Found `MagicMirror2` in file `README.md`: Replace it with `MagicMirror²`.
-5. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
+3. Recommendation: Found `jshint` in file `Gruntfile.js`: Replace "jshint" by "eslint".
+4. Typo: Found `Magic Mirror` in file `MMM-WH2600.js`: Replace it with `MagicMirror²`.
+5. Typo: Found `MagicMirror2` in file `README.md`: Replace it with `MagicMirror²`.
+6. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
+7. Recommendation: Replace eslintrc by new flat config.
 
 ### [MMM-WhisperGPT by Nikro](https://github.com/Nikro/MMM-WhisperGPT)
 
 1. `package.json` issue: No repository field.
 2. There are no keywords in 'package.json'. We would use them as tags on the module list page.
 3. No image found.
-4. Typo: Found `Magic Mirror` in file `MMM-WhisperGPT.js`: Replace it with `MagicMirror²`.
-5. Recommendation: Found `axios` in file `node_helper.js`: Replace it with built-in fetch.
-6. Recommendation: Found `axios` in file `package.json`: Replace it with built-in fetch.
+4. Recommendation: Found `jshint` in file `Gruntfile.js`: Replace "jshint" by "eslint".
+5. Typo: Found `Magic Mirror` in file `MMM-WhisperGPT.js`: Replace it with `MagicMirror²`.
+6. Recommendation: Found `axios` in file `node_helper.js`: Replace it with built-in fetch.
+7. Recommendation: Found `axios` in file `package.json`: Replace it with built-in fetch.
+8. Recommendation: Replace eslintrc by new flat config.
 
 ### [MMM-Widget by ulrichwisser](https://github.com/ulrichwisser/MMM-Widget)
 
@@ -7818,7 +8078,8 @@ Last update: 2023-12-13 11:58:28 UTC
 1. Recommendation: Found `'node-fetch'` in file `node_helper.js`: Replace it with built-in fetch.
 2. Typo: Found `MagicMirror2` in file `package.json`: Replace it with `MagicMirror²`.
 3. Recommendation: Found `"node-fetch"` in file `package.json`: Replace it with built-in fetch.
-4. The branch name is 'master'. Consider renaming it to 'main'.
+4. Recommendation: Replace eslintrc by new flat config.
+5. The branch name is 'master'. Consider renaming it to 'main'.
 
 ### [MMM-WiFiPassword by TeraTech](https://github.com/TeraTech/MMM-WiFiPassword)
 
@@ -8013,6 +8274,7 @@ Last update: 2023-12-13 11:58:28 UTC
 1. No image found.
 2. Typo: Found `Magic Mirror` in file `MMM-YouTube-Live-Stream.js`: Replace it with `MagicMirror²`.
 3. Typo: Found `Magic Mirror` in file `README.md`: Replace it with `MagicMirror²`.
+4. Recommendation: Replace eslintrc by new flat config.
 
 ### [MMM-YouTubeWebView by doctorfree](https://gitlab.com/doctorfree/MMM-YouTubeWebView)
 
@@ -8042,11 +8304,13 @@ Last update: 2023-12-13 11:58:28 UTC
 ### [MMM-YT-SubCount by choffmann](https://github.com/choffmann/MMM-YT-SubCount)
 
 1. There are no keywords in 'package.json'. We would use them as tags on the module list page.
-2. Typo: Found `Magic Mirror` in file `MMM-YT-SubCount.js`: Replace it with `MagicMirror²`.
-3. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
-4. Recommendation: Found `"node-fetch"` in file `node_helper.js`: Replace it with built-in fetch.
-5. Deprecated: Found `stylelint-config-prettier` in file `package.json`: Update `stylelint` and remove `stylelint-config-prettier`.
-6. Recommendation: Found `"node-fetch"` in file `package.json`: Replace it with built-in fetch.
+2. Recommendation: Found `jshint` in file `Gruntfile.js`: Replace "jshint" by "eslint".
+3. Typo: Found `Magic Mirror` in file `MMM-YT-SubCount.js`: Replace it with `MagicMirror²`.
+4. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
+5. Recommendation: Found `"node-fetch"` in file `node_helper.js`: Replace it with built-in fetch.
+6. Deprecated: Found `stylelint-config-prettier` in file `package.json`: Update `stylelint` and remove `stylelint-config-prettier`.
+7. Recommendation: Found `"node-fetch"` in file `package.json`: Replace it with built-in fetch.
+8. Recommendation: Replace eslintrc by new flat config.
 
 ### [MMM-ZAPTEC by PierreGode](https://github.com/PierreGode/MMM-ZAPTEC)
 

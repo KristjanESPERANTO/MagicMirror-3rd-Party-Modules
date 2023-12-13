@@ -4008,10 +4008,10 @@
     "description": "Monitor your gas tank level on your mirror.",
     "issues": [],
     "tags": [
-      "growatt"
+      "gasmonitor"
     ],
     "license": "ISC",
-    "image": "images-image-1.jpg"
+    "image": "images-screenshot.jpg"
   },
   {
     "name": "MMM-GConnect",
@@ -4540,7 +4540,7 @@
       "growatt"
     ],
     "license": "ISC",
-    "image": "images-b_CO2.jpg"
+    "image": "images-screenshot.jpg"
   },
   {
     "name": "MMM-Growatt",
@@ -4569,7 +4569,7 @@
       "growatt"
     ],
     "license": "MIT",
-    "image": "images-batCharge.jpg"
+    "image": "images-screenshot.jpg"
   },
   {
     "name": "MMM-GyeonggiBus",
@@ -9486,14 +9486,13 @@
     "maintainer": "mumblebaj",
     "maintainerURL": "https://github.com/mumblebaj",
     "description": "Module to grab the status of your lights from your Hue Bridge with some updated features to display status of lights or groups.",
-    "issues": [
-      "No image found."
-    ],
+    "issues": [],
     "tags": [
       "philipshue",
       "smart lights"
     ],
-    "license": "ISC"
+    "license": "ISC",
+    "image": "images-screenshot.jpg"
   },
   {
     "name": "phone-notification-mirror",
