@@ -1,5 +1,5 @@
 let allModules = [];
-let filteredModuleList;
+let filteredModuleList = [];
 const resetButton = document.getElementById("reset-button");
 const moduleCardContainer = document.getElementById("module-container");
 const searchInput = document.getElementById("search-input");
@@ -7,7 +7,7 @@ const tagButtonContainer = document.getElementById("tag-buttons");
 const sortDropdown = document.getElementById("sort-dropdown");
 const showOutdated = document.getElementById("show-outdated");
 
-function updateModuleCardContainer() {
+function updateModuleCardContainer () {
   moduleCardContainer.innerHTML = "";
 
   let moduleCounter = filteredModuleList.length;
@@ -52,8 +52,8 @@ function updateModuleCardContainer() {
       if (moduleData.tags) {
         card.innerHTML += `
                 <p><b>Tags:</b> ${moduleData.tags
-                  .map((tag) => `#${tag}`)
-                  .join(" ")}</p>
+    .map((tag) => `#${tag}`)
+    .join(" ")}</p>
               `;
       }
       moduleCardContainer.appendChild(card);
@@ -72,23 +72,11 @@ function updateModuleCardContainer() {
   }
 }
 
-function sortData(sortOption) {
+function sortData (sortOption) {
   switch (sortOption) {
-    case "default":
-      filteredModuleList.sort(
-        (a, b) =>
-          // Put oudated to the end
-          !!a.outdated - !!b.outdated ||
-          // Sort by issue count
-          a.issues - b.issues ||
-          // Sort by last commit date
-          b.last_commit.localeCompare(a.last_commit)
-      );
-      break;
     case "lastcommit":
       filteredModuleList.sort((a, b) =>
-        b.last_commit.localeCompare(a.last_commit)
-      );
+        b.last_commit.localeCompare(a.last_commit));
       break;
     case "name":
       filteredModuleList.sort((a, b) => {
@@ -97,10 +85,18 @@ function sortData(sortOption) {
         return nameA.localeCompare(nameB);
       });
       break;
+    default:
+      filteredModuleList.sort((a, b) =>
+      // Put oudated to the end
+        Boolean(a.outdated) - Boolean(b.outdated) ||
+        // Sort by issue count
+        a.issues - b.issues ||
+        // Sort by last commit date
+        b.last_commit.localeCompare(a.last_commit));
   }
 }
 
-function displayTagButtonContainer() {
+function displayTagButtonContainer () {
   const tags = [
     "news",
     "public transport",
@@ -124,27 +120,35 @@ function displayTagButtonContainer() {
   });
 }
 
-function removeSelectedMarkingFromTagsAndCards() {
+function removeSelectedMarkingFromTagsAndCards () {
   // Remove the "selected" class from all tag buttons and cards
   const allURLs = document.querySelectorAll(".tag-button, .card");
   allURLs.forEach((url) => url.classList.remove("selected"));
 }
 
-function displayStatistics(data) {
+function displayStatistics (data) {
   const lastUpdateDiv = document.getElementById("last-update");
   lastUpdateDiv.innerHTML = `Last update: ${data["last-update"]} UTC`;
 }
 
-function filterBySearchText(searchText) {
+function filterBySearchText (searchText) {
   const searchLower = searchText.toLowerCase();
   filteredModuleList = allModules.filter((card) => {
-    const cardText = card.text ? card.text.toLowerCase() : "";
+    const cardText = card.text
+      ? card.text.toLowerCase()
+      : "";
     const cardDescription = card.description
       ? card.description.toLowerCase()
       : "";
-    const cardName = card.name ? card.name.toLowerCase() : "";
-    const cardMaintainer = card.maintainer ? card.maintainer.toLowerCase() : "";
-    const cardTags = card.tags ? card.tags : [];
+    const cardName = card.name
+      ? card.name.toLowerCase()
+      : "";
+    const cardMaintainer = card.maintainer
+      ? card.maintainer.toLowerCase()
+      : "";
+    const cardTags = card.tags
+      ? card.tags
+      : [];
 
     return (
       cardText.includes(searchLower) ||
@@ -160,7 +164,7 @@ function filterBySearchText(searchText) {
   updateModuleCardContainer();
 }
 
-function filterByTag(tag) {
+function filterByTag (tag) {
   filteredModuleList = allModules.filter((card) => {
     const tags = card.tags;
     if (tags) {
@@ -233,7 +237,7 @@ showOutdated.addEventListener("change", () => {
   updateModuleCardContainer();
 });
 
-async function initiate() {
+async function initiate () {
   const modulesFile = "modules.min.json";
   try {
     const response = await fetch(modulesFile);

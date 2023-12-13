@@ -4,19 +4,19 @@ import sharp from "sharp";
 
 const imagesFolder = "./docs/images";
 
-async function getJson(filePath) {
+async function getJson (filePath) {
   const data = await fs.promises.readFile(filePath, "utf8");
   const json = JSON.parse(data);
   return json;
 }
 
-function isImageFile(filename) {
-  return /\.(bmp|gif|jpg|jpeg|png|webp)$/i.test(filename);
+function isImageFile (filename) {
+  return (/\.(bmp|gif|jpg|jpeg|png|webp)$/iu).test(filename);
 }
 
-async function findAndResizeImage(moduleName, moduleMaintainer) {
+async function findAndResizeImage (moduleName, moduleMaintainer) {
   const sourceFolder = `./modules/${moduleName}-----${moduleMaintainer}/`;
-  const files = await fs.promises.readdir(sourceFolder, { recursive: true });
+  const files = await fs.promises.readdir(sourceFolder, {"recursive": true});
   files.sort();
   let imageToProcess = null;
   let targetImageName = null;
@@ -54,15 +54,16 @@ async function findAndResizeImage(moduleName, moduleMaintainer) {
     const sourcePath = `${sourceFolder}/${imageToProcess}`;
     const targetPath = `${imagesFolder}/${moduleName}---${moduleMaintainer}---${targetImageName}`;
 
-    await sharp(sourcePath).resize(300).toFile(targetPath);
+    await sharp(sourcePath).resize(300)
+      .toFile(targetPath);
   } else {
     issues.push("No image found.");
   }
-  return { targetImageName, issues };
+  return {targetImageName, issues};
 }
 
 // Gather information from package.json
-async function addInformationFromPackageJson(moduleList) {
+async function addInformationFromPackageJson (moduleList) {
   for (const module of moduleList) {
     console.log(`+++ ${module.name} by ${module.maintainer}`);
     try {
@@ -106,14 +107,10 @@ async function addInformationFromPackageJson(moduleList) {
 
         if (module.tags.length === 0) {
           delete module.tags;
-          module.issues.push(
-            `There are no specific keywords in 'package.json'. We would use them as tags on the module list page. Add a few meaningful terms to the keywords in the package.json. Not just “magicmirror” or “module”.`
-          );
+          module.issues.push("There are no specific keywords in 'package.json'. We would use them as tags on the module list page. Add a few meaningful terms to the keywords in the package.json. Not just “magicmirror” or “module”.");
         }
       } else {
-        module.issues.push(
-          `There are no keywords in 'package.json'. We would use them as tags on the module list page.`
-        );
+        module.issues.push("There are no keywords in 'package.json'. We would use them as tags on the module list page.");
       }
 
       if (moduleData.license) {
@@ -133,7 +130,7 @@ async function addInformationFromPackageJson(moduleList) {
           "MIT"
         ];
         if (useableLicenses.includes(moduleData.license)) {
-          const { targetImageName, issues } = await findAndResizeImage(
+          const {targetImageName, issues} = await findAndResizeImage(
             module.name,
             module.maintainer
           );
@@ -145,27 +142,21 @@ async function addInformationFromPackageJson(moduleList) {
             module.issues = [...module.issues, ...issues];
           }
         } else {
-          module.issues.push(
-            `No compatible or wrong license field in 'package.json'. Without that, we can't use an image.`
-          );
+          module.issues.push("No compatible or wrong license field in 'package.json'. Without that, we can't use an image.");
         }
       }
     } catch (error) {
       if (error.code === "ENOENT") {
-        module.issues.push(
-          "There is no `package.json`. We need this file to gather information about the module for the module list page."
-        );
+        module.issues.push("There is no `package.json`. We need this file to gather information about the module for the module list page.");
       } else {
-        module.issues.push(
-          `An error occurred while getting information from 'package.json': ${error}`
-        );
+        module.issues.push(`An error occurred while getting information from 'package.json': ${error}`);
       }
     }
   }
   return moduleList;
 }
 
-async function expandModuleList() {
+async function expandModuleList () {
   const moduleList = await getJson("./docs/modules.temp.1.json");
 
   const expandedModuleList = await addInformationFromPackageJson(moduleList);
@@ -180,8 +171,8 @@ async function expandModuleList() {
 /*
  * Remove old images before creating new ones
  */
-async function purgeImageFolder() {
-  await fs.promises.rm(imagesFolder, { recursive: true });
+async function purgeImageFolder () {
+  await fs.promises.rm(imagesFolder, {"recursive": true});
   await fs.promises.mkdir(imagesFolder);
 }
 

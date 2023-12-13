@@ -1,3 +1,4 @@
+*.js
 docs/modules*.json
 docs/stats.json
 modules/
