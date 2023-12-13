@@ -230,7 +230,7 @@
     ],
     "license": "MIT",
     "image": "public-AlexaLogoGrey.jpg",
-    "last_commit": "2023-09-26"
+    "last_commit": "2023-12-12"
   },
   {
     "name": "MMM-AlexaOnOff",
@@ -5228,8 +5228,8 @@
   },
   {
     "name": "MMM-ISS-Live",
-    "url": "https://github.com/KristjanESPERANTO/MMM-ISS-Live/",
-    "id": "KristjanESPERANTO/MMM-ISS-Live/",
+    "url": "https://github.com/KristjanESPERANTO/MMM-ISS-Live",
+    "id": "KristjanESPERANTO/MMM-ISS-Live",
     "maintainer": "KristjanESPERANTO",
     "maintainerURL": "",
     "description": "Displays live video from the International Space Station.",
@@ -5271,7 +5271,7 @@
     "maintainer": "jalibu",
     "maintainerURL": "https://github.com/jalibu",
     "description": "A simple but powerful vertical, horizontal or static stock ticker based on Yahoo's finance API. Supports international stocks, crypto currencies and index symbols. No API key required.",
-    "issues": 1,
+    "issues": 0,
     "tags": [
       "stock",
       "stocks",
@@ -5286,7 +5286,7 @@
     ],
     "license": "MIT",
     "image": "docs-example.jpg",
-    "last_commit": "2023-11-12"
+    "last_commit": "2023-12-12"
   },
   {
     "name": "MMM-Jeedom",
@@ -5779,7 +5779,7 @@
       "tic",
       "teleinfo"
     ],
-    "last_commit": "2023-12-11"
+    "last_commit": "2023-12-12"
   },
   {
     "name": "MMM-LoadShedding",
@@ -7725,10 +7725,14 @@
     "maintainer": "CFenner",
     "maintainerURL": "",
     "description": "Display your Netatmo in/outdoor weather station data.",
-    "issues": 14,
+    "issues": 0,
+    "tags": [
+      "netatmo",
+      "smarthome"
+    ],
     "license": "MIT",
     "image": ".github-preview.bubbles.jpg",
-    "last_commit": "2023-12-01"
+    "last_commit": "2023-12-12"
   },
   {
     "name": "MMM-Netatmo-Presence",
@@ -8457,6 +8461,23 @@
     "license": "MIT",
     "image": "screenshot-module.jpg",
     "last_commit": "2023-11-19"
+  },
+  {
+    "name": "MMM-OnThisDayWikiApi",
+    "url": "https://github.com/slugmuffin/MMM-OnThisDayWikiApi",
+    "id": "slugmuffin/MMM-OnThisDayWikiApi",
+    "maintainer": "slugmuffin",
+    "maintainerURL": "https://github.com/slugmuffin",
+    "description": "Display historical events from Wikipedia based on the current date using the Wikimedia API. Can display as list or newsfeed style.",
+    "issues": 2,
+    "tags": [
+      "events",
+      "history",
+      "wikipedia"
+    ],
+    "license": "MIT",
+    "image": "screenshot-show_as_list.jpg",
+    "last_commit": "2023-12-12"
   },
   {
     "name": "MMM-OpelStatuses",

@@ -3770,8 +3770,8 @@
   },
   {
     "name": "MMM-ISS-Live",
-    "url": "https://github.com/KristjanESPERANTO/MMM-ISS-Live/",
-    "id": "KristjanESPERANTO/MMM-ISS-Live/",
+    "url": "https://github.com/KristjanESPERANTO/MMM-ISS-Live",
+    "id": "KristjanESPERANTO/MMM-ISS-Live",
     "maintainer": "KristjanESPERANTO",
     "maintainerURL": "",
     "description": "Displays live video from the International Space Station.",
@@ -6061,6 +6061,15 @@
     "maintainer": "nkl-kst",
     "maintainerURL": "https://github.com/nkl-kst",
     "description": "Display historical events from Wikipedia based on the current date.",
+    "issues": []
+  },
+  {
+    "name": "MMM-OnThisDayWikiApi",
+    "url": "https://github.com/slugmuffin/MMM-OnThisDayWikiApi",
+    "id": "slugmuffin/MMM-OnThisDayWikiApi",
+    "maintainer": "slugmuffin",
+    "maintainerURL": "https://github.com/slugmuffin",
+    "description": "Display historical events from Wikipedia based on the current date using the Wikimedia API. Can display as list or newsfeed style.",
     "issues": []
   },
   {

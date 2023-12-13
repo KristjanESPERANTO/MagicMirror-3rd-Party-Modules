@@ -5564,8 +5564,8 @@
   },
   {
     "name": "MMM-ISS-Live",
-    "url": "https://github.com/KristjanESPERANTO/MMM-ISS-Live/",
-    "id": "KristjanESPERANTO/MMM-ISS-Live/",
+    "url": "https://github.com/KristjanESPERANTO/MMM-ISS-Live",
+    "id": "KristjanESPERANTO/MMM-ISS-Live",
     "maintainer": "KristjanESPERANTO",
     "maintainerURL": "",
     "description": "Displays live video from the International Space Station.",
@@ -8251,9 +8251,10 @@
     "maintainer": "CFenner",
     "maintainerURL": "",
     "description": "Display your Netatmo in/outdoor weather station data.",
-    "issues": [
-      "`package.json` issue: No description",
-      "There are no keywords in 'package.json'. We would use them as tags on the module list page."
+    "issues": [],
+    "tags": [
+      "netatmo",
+      "smarthome"
     ],
     "license": "MIT",
     "image": ".github-preview.bubbles.jpg"
@@ -9014,6 +9015,22 @@
     ],
     "license": "MIT",
     "image": "screenshot-module.jpg"
+  },
+  {
+    "name": "MMM-OnThisDayWikiApi",
+    "url": "https://github.com/slugmuffin/MMM-OnThisDayWikiApi",
+    "id": "slugmuffin/MMM-OnThisDayWikiApi",
+    "maintainer": "slugmuffin",
+    "maintainerURL": "https://github.com/slugmuffin",
+    "description": "Display historical events from Wikipedia based on the current date using the Wikimedia API. Can display as list or newsfeed style.",
+    "issues": [],
+    "tags": [
+      "events",
+      "history",
+      "wikipedia"
+    ],
+    "license": "MIT",
+    "image": "screenshot-show_as_list.jpg"
   },
   {
     "name": "MMM-OpelStatuses",

@@ -1,16 +1,16 @@
 # Result of the module analysis
 
-Last update: 2023-12-12 10:53:14 UTC
+Last update: 2023-12-12 23:45:45 UTC
 
 ## Statistics
 
 |                      | number   |
 |:---------------------|:--------:|
-| modules analyzed     |   1073   |
-| maintainer           |    619   |
-| modules with issues  |   1059   |
-| issues               |   4822   |
-| modules at github    |   1064   |
+| modules analyzed     |   1074   |
+| maintainer           |    620   |
+| modules with issues  |   1058   |
+| issues               |   4809   |
+| modules at github    |   1065   |
 | modules at gitlab    |      8   |
 | modules at bitbucket |      1   |
 
@@ -2326,7 +2326,7 @@ Last update: 2023-12-12 10:53:14 UTC
 ### [MMM-GoogleAssistant by bugsounet](https://github.com/bugsounet/MMM-GoogleAssistant)
 
 1. Information: There are updates for 3 dependencie(s):
-   -  @grpc/grpc-js        ^1.9.11  →  ^1.9.12
+   -  @grpc/grpc-js        ^1.9.11  →  ^1.9.13
    -  esbuild              ^0.19.8  →  ^0.19.9
    -  google-auth-library   ^9.2.0  →   ^9.4.1
 
@@ -3097,16 +3097,6 @@ Last update: 2023-12-12 10:53:14 UTC
 5. Recommendation: Found `XMLHttpRequest` in file `node_helper.js`: Replace it with built-in fetch.
 6. Warning: No LICENSE file.
 7. The branch name is 'master'. Consider renaming it to 'main'.
-
-### [MMM-Jast by jalibu](https://github.com/jalibu/MMM-Jast)
-
-1. Information: There are updates for 5 dependencie(s):
-   -  eslint          ^8.53.0  →  ^8.55.0
-   -  prettier         ^2.8.8  →   ^3.1.1
-   -  rollup          ^2.79.0  →   ^4.8.0
-   -  typescript       ^5.2.2  →   ^5.3.3
-   -  yahoo-finance2   ^2.8.1  →   ^2.9.0
-
 
 ### [MMM-Jeedom by prysme01](https://github.com/prysme01/MMM-Jeedom)
 
@@ -4624,23 +4614,6 @@ Last update: 2023-12-12 10:53:14 UTC
 2. Typo: Found `Magic Mirror` in file `README.md`: Replace it with `MagicMirror²`.
 3. The branch name is 'master'. Consider renaming it to 'main'.
 
-### [MMM-Netatmo by CFenner](https://github.com/CFenner/MMM-Netatmo)
-
-1. `package.json` issue: No description
-2. There are no keywords in 'package.json'. We would use them as tags on the module list page.
-3. Deprecated: Found `node-version: [16` in file `validation.yml`: Update to current version.
-4. Typo: Found `Magic Mirror` in file `helper.js`: Replace it with `MagicMirror²`.
-5. Typo: Found `<sub>2</sub>` in file `cs.json`: Replace it with `²`.`.
-6. Typo: Found `<sub>2</sub>` in file `de.json`: Replace it with `²`.`.
-7. Typo: Found `<sub>2</sub>` in file `en.json`: Replace it with `²`.`.
-8. Typo: Found `<sub>2</sub>` in file `fr.json`: Replace it with `²`.`.
-9. Typo: Found `<sub>2</sub>` in file `hu.json`: Replace it with `²`.`.
-10. Typo: Found `<sub>2</sub>` in file `nb.json`: Replace it with `²`.`.
-11. Typo: Found `<sub>2</sub>` in file `nn.json`: Replace it with `²`.`.
-12. Typo: Found `<sub>2</sub>` in file `ru.json`: Replace it with `²`.`.
-13. Typo: Found `Magic Mirror` in file `netatmo.js`: Replace it with `MagicMirror²`.
-14. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
-
 ### [MMM-Netatmo-Presence by AgP42](https://github.com/AgP42/MMM-Netatmo-Presence)
 
 1. Typo: Found `Magic Mirror` in file `MMM-Netatmo-Presence.js`: Replace it with `MagicMirror²`.
@@ -5071,6 +5044,11 @@ Last update: 2023-12-12 10:53:14 UTC
    -  jsdom     ^22.1.0  →  ^23.0.1
    -  prettier   ^3.1.0  →   ^3.1.1
 
+
+### [MMM-OnThisDayWikiApi by slugmuffin](https://github.com/slugmuffin/MMM-OnThisDayWikiApi)
+
+1. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
+2. Deprecated: Found `require('request')` in file `node_helper.js`: Replace it with built-in fetch.
 
 ### [MMM-OpelStatuses by santanachia](https://github.com/santanachia/MMM-OpelStatuses)
 
