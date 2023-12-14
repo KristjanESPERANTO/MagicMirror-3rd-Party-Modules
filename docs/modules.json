@@ -1219,7 +1219,7 @@
       "agenda"
     ],
     "license": "MIT",
-    "last_commit": "2023-11-18"
+    "last_commit": "2023-12-14"
   },
   {
     "name": "MMM-CalendarExt3Journal",
@@ -1377,13 +1377,13 @@
     "maintainer": "KristjanESPERANTO",
     "maintainerURL": "",
     "description": "Show meals from canteens (Germany and Switzerland).",
-    "issues": 1,
+    "issues": 0,
     "tags": [
       "openmensa"
     ],
     "license": "MIT",
     "image": "img-example1.jpg",
-    "last_commit": "2023-12-10"
+    "last_commit": "2023-12-13"
   },
   {
     "name": "MMM-Canvas",
@@ -3218,14 +3218,14 @@
     "maintainer": "shin10",
     "maintainerURL": "",
     "description": "Show radiation charts from <a target=\"_blank\" href=\"https://multigeiger.citysensor.de\">https://multigeiger.citysensor.de</a>.",
-    "issues": 15,
+    "issues": 3,
     "tags": [
       "radiation",
       "multigeiger"
     ],
     "license": "ISC",
     "image": "screenshot-charts.jpg",
-    "last_commit": "2022-06-25"
+    "last_commit": "2023-12-13"
   },
   {
     "name": "MMM-FF-process-stats",
@@ -3568,7 +3568,7 @@
     "id": "RaspiManu/MMM-FrameLight",
     "maintainer": "RaspiManu",
     "maintainerURL": "",
-    "description": "Controlling an RGB-LED strip mounted onto or embedded into a smart mirror's frame. It provides features for static background lighting, highly customizable effects on notifications and party lighting.",
+    "description": "Controlling an RGB-LED strip around a smart mirror with or without touch input. It provides features for static background lighting, highly customizable effects on notifications and party lighting.",
     "issues": 6,
     "last_commit": "2023-01-01"
   },
@@ -6177,6 +6177,16 @@
     "last_commit": "2019-01-10"
   },
   {
+    "name": "MMM-MarsWeather",
+    "url": "https://github.com/rcollie/MMM-MarsWeather",
+    "id": "rcollie/MMM-MarsWeather",
+    "maintainer": "rcollie",
+    "maintainerURL": "",
+    "description": "Display current weather on Mars as provided by The {MAAS} API.",
+    "issues": 1,
+    "last_commit": "2023-12-14"
+  },
+  {
     "name": "MMM-Mashie-Skolmat",
     "url": "https://github.com/Alvinger/MMM-Mashie-Skolmat",
     "id": "Alvinger/MMM-Mashie-Skolmat",
@@ -6760,7 +6770,7 @@
     "maintainerURL": "",
     "description": "Companion module for MMPM to enable hiding/showing of MagicMirror\u00b2 modules.",
     "issues": 2,
-    "last_commit": "2023-12-11"
+    "last_commit": "2023-12-13"
   },
   {
     "name": "MMM-Modulebar",
@@ -7732,7 +7742,7 @@
     ],
     "license": "MIT",
     "image": ".github-preview.bubbles.jpg",
-    "last_commit": "2023-12-13"
+    "last_commit": "2023-12-14"
   },
   {
     "name": "MMM-Netatmo-Presence",
@@ -10602,6 +10612,7 @@
     "maintainerURL": "https://github.com/vikramraja1995",
     "description": "Displays the ETA of San Francisco's MUNI Bus and Rail systems based on the given stops and routes.",
     "issues": 3,
+    "outdated": "Abandoned. The API used no longer works, there is a new API but the developer no longer seems to be active.",
     "tags": [
       "muni",
       "sf",
@@ -11987,6 +11998,16 @@
     "license": "MIT",
     "image": "1x1px.jpg",
     "last_commit": "2023-03-22"
+  },
+  {
+    "name": "MMM-TomTomCalculateRouteTraffic",
+    "url": "https://github.com/teemoo7/MMM-TomTomCalculateRouteTraffic",
+    "id": "teemoo7/MMM-TomTomCalculateRouteTraffic",
+    "maintainer": "teemoo7",
+    "maintainerURL": "https://github.com/teemoo7",
+    "description": "Calculate routes with TomTom API (free), and display travel time with traffic delays.",
+    "issues": 2,
+    "last_commit": "2023-12-14"
   },
   {
     "name": "MMM-TomTomTraffic",

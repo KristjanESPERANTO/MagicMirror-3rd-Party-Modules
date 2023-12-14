@@ -1,16 +1,16 @@
 # Result of the module analysis
 
-Last update: 2023-12-13 17:40:17 UTC
+Last update: 2023-12-14 22:48:02 UTC
 
 ## Statistics
 
 |                      | number   |
 |:---------------------|:--------:|
-| modules analyzed     |   1074   |
-| maintainer           |    620   |
-| modules with issues  |   1067   |
-| issues               |   5062   |
-| modules at github    |   1065   |
+| modules analyzed     |   1076   |
+| maintainer           |    622   |
+| modules with issues  |   1068   |
+| issues               |   5053   |
+| modules at github    |   1067   |
 | modules at gitlab    |      8   |
 | modules at bitbucket |      1   |
 
@@ -741,7 +741,7 @@ Last update: 2023-12-13 17:40:17 UTC
 1. No image found.
 2. Information: There are updates for 2 dependencie(s):
    -  googleapis  ^128.0.0  →  ^129.0.0
-   -  tsdav         ^2.0.5  →    ^2.0.6
+   -  tsdav         ^2.0.5  →    ^2.0.7
 
 
 ### [MMM-CalendarExt2 by MMM-CalendarExt2](https://github.com/MMM-CalendarExt2/MMM-CalendarExt2)
@@ -833,10 +833,6 @@ Last update: 2023-12-13 17:40:17 UTC
 2. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
 3. Recommendation: Found `require('https')` in file `node_helper.js`: Replace 'https' by 'node:https'.
 4. The branch name is 'master'. Consider renaming it to 'main'.
-
-### [MMM-Canteen by KristjanESPERANTO](https://github.com/KristjanESPERANTO/MMM-Canteen)
-
-1. Recommendation: Replace eslintrc by new flat config.
 
 ### [MMM-Canvas by chase-cromwell](https://github.com/chase-cromwell/MMM-Canvas)
 
@@ -1946,21 +1942,9 @@ Last update: 2023-12-13 17:40:17 UTC
 
 ### [MMM-FF-multigeiger by shin10](https://github.com/shin10/MMM-FF-multigeiger)
 
-1. Typo: Found `Magic Mirror` in file `MMM-FF-multigeiger.js`: Replace it with `MagicMirror²`.
-2. Typo: Found `Magic Mirror` in file `README.md`: Replace it with `MagicMirror²`.
-3. Typo: Found `Magic Mirror` in file `dataFetcher.js`: Replace it with `MagicMirror²`.
-4. Recommendation: Found `axios` in file `dataFetcher.js`: Replace it with built-in fetch.
-5. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
-6. Typo: Found `Magic Mirror` in file `package.json`: Replace it with `MagicMirror²`.
-7. Recommendation: Found `axios` in file `package.json`: Replace it with built-in fetch.
-8. Typo: Found `Magic Mirror` in file `MMM-FF-multigeiger-charts.scss`: Replace it with `MagicMirror²`.
-9. Typo: Found `Magic Mirror` in file `MMM-FF-multigeiger-list-horizontal.css`: Replace it with `MagicMirror²`.
-10. Typo: Found `Magic Mirror` in file `MMM-FF-multigeiger-list-horizontal.scss`: Replace it with `MagicMirror²`.
-11. Typo: Found `Magic Mirror` in file `MMM-FF-multigeiger-list-vertical.css`: Replace it with `MagicMirror²`.
-12. Typo: Found `Magic Mirror` in file `MMM-FF-multigeiger-list-vertical.scss`: Replace it with `MagicMirror²`.
-13. Typo: Found `Magic Mirror` in file `MMM-FF-multigeiger.css`: Replace it with `MagicMirror²`.
-14. Typo: Found `Magic Mirror` in file `MMM-FF-multigeiger.scss`: Replace it with `MagicMirror²`.
-15. Recommendation: Replace eslintrc by new flat config.
+1. Recommendation: Found `axios` in file `dataFetcher.js`: Replace it with built-in fetch.
+2. Recommendation: Found `axios` in file `package.json`: Replace it with built-in fetch.
+3. Recommendation: Replace eslintrc by new flat config.
 
 ### [MMM-FF-process-stats by shin10](https://github.com/shin10/MMM-FF-process-stats)
 
@@ -3767,6 +3751,10 @@ Last update: 2023-12-13 17:40:17 UTC
 3. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
 4. Deprecated: Found `require('request')` in file `node_helper.js`: Replace it with built-in fetch.
 5. The branch name is 'master'. Consider renaming it to 'main'.
+
+### [MMM-MarsWeather by rcollie](https://github.com/rcollie/MMM-MarsWeather)
+
+1. There is no `package.json`. We need this file to gather information about the module for the module list page.
 
 ### [MMM-Mashie-Skolmat by Alvinger](https://github.com/Alvinger/MMM-Mashie-Skolmat)
 
@@ -6527,6 +6515,7 @@ Last update: 2023-12-13 17:40:17 UTC
 
 ### [MMM-SFMuniBusTimes by vikramraja1995](https://github.com/vikramraja1995/MMM-SFMuniBusTimes)
 
+0. This module is outdated: Abandoned. The API used no longer works, there is a new API but the developer no longer seems to be active.
 1. Recommendation: Found `"node-fetch"` in file `node_helper.js`: Replace it with built-in fetch.
 2. Recommendation: Found `"node-fetch"` in file `package.json`: Replace it with built-in fetch.
 3. The branch name is 'master'. Consider renaming it to 'main'.
@@ -7333,6 +7322,11 @@ Last update: 2023-12-13 17:40:17 UTC
 3. Deprecated: Found `require("request")` in file `node_helper.js`: Replace it with built-in fetch.
 4. Typo: Found `Magic Mirror` in file `package.json`: Replace it with `MagicMirror²`.
 5. The branch name is 'master'. Consider renaming it to 'main'.
+
+### [MMM-TomTomCalculateRouteTraffic by teemoo7](https://github.com/teemoo7/MMM-TomTomCalculateRouteTraffic)
+
+1. There is no `package.json`. We need this file to gather information about the module for the module list page.
+2. Recommendation: Found `XMLHttpRequest` in file `MMM-TomTomCalculateRouteTraffic.js`: Replace it with built-in fetch.
 
 ### [MMM-TomTomTraffic by bendardenne](https://github.com/bendardenne/MMM-TomTomTraffic)
 

@@ -3808,7 +3808,7 @@
     "id": "RaspiManu/MMM-FrameLight",
     "maintainer": "RaspiManu",
     "maintainerURL": "",
-    "description": "Controlling an RGB-LED strip mounted onto or embedded into a smart mirror's frame. It provides features for static background lighting, highly customizable effects on notifications and party lighting.",
+    "description": "Controlling an RGB-LED strip around a smart mirror with or without touch input. It provides features for static background lighting, highly customizable effects on notifications and party lighting.",
     "issues": [
       "There is no `package.json`. We need this file to gather information about the module for the module list page."
     ]
@@ -6567,6 +6567,17 @@
     "maintainer": "mykle1",
     "maintainerURL": "",
     "description": "Mars Exploration Rover missions.",
+    "issues": [
+      "There is no `package.json`. We need this file to gather information about the module for the module list page."
+    ]
+  },
+  {
+    "name": "MMM-MarsWeather",
+    "url": "https://github.com/rcollie/MMM-MarsWeather",
+    "id": "rcollie/MMM-MarsWeather",
+    "maintainer": "rcollie",
+    "maintainerURL": "",
+    "description": "Display current weather on Mars as provided by The {MAAS} API.",
     "issues": [
       "There is no `package.json`. We need this file to gather information about the module for the module list page."
     ]
@@ -11296,6 +11307,7 @@
     "maintainerURL": "https://github.com/vikramraja1995",
     "description": "Displays the ETA of San Francisco's MUNI Bus and Rail systems based on the given stops and routes.",
     "issues": [],
+    "outdated": "Abandoned. The API used no longer works, there is a new API but the developer no longer seems to be active.",
     "tags": [
       "muni",
       "sf",
@@ -12747,6 +12759,17 @@
     ],
     "license": "MIT",
     "image": "1x1px.jpg"
+  },
+  {
+    "name": "MMM-TomTomCalculateRouteTraffic",
+    "url": "https://github.com/teemoo7/MMM-TomTomCalculateRouteTraffic",
+    "id": "teemoo7/MMM-TomTomCalculateRouteTraffic",
+    "maintainer": "teemoo7",
+    "maintainerURL": "https://github.com/teemoo7",
+    "description": "Calculate routes with TomTom API (free), and display travel time with traffic delays.",
+    "issues": [
+      "There is no `package.json`. We need this file to gather information about the module for the module list page."
+    ]
   },
   {
     "name": "MMM-TomTomTraffic",
