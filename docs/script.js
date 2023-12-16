@@ -102,6 +102,7 @@ function displayTagButtonContainer () {
     "public transport",
     "smarthome",
     "soccer",
+    "text-to-speech",
     "stock",
     "traffic",
     "voice control",

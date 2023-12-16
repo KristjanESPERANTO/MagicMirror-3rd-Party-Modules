@@ -227,6 +227,10 @@ main {
   content: "📱";
 }
 
+[data-tag="text-to-speech"]::before {
+  content: "🔉";
+}
+
 [data-tag="traffic"]::before {
   content: "⛕";
 }
