@@ -2831,6 +2831,17 @@
     "image": "pix-1.JPG"
   },
   {
+    "name": "MMM-EarthquakeMonitor",
+    "url": "https://github.com/rcollie/MMM-EarthquakeMonitor",
+    "id": "rcollie/MMM-EarthquakeMonitor",
+    "maintainer": "rcollie",
+    "maintainerURL": "",
+    "description": "This module allows you to display global earthquake data from the USGS.",
+    "issues": [
+      "There is no `package.json`. We need this file to gather information about the module for the module list page."
+    ]
+  },
+  {
     "name": "MMM-EasyPix",
     "url": "https://github.com/KristjanESPERANTO/MMM-EasyPix",
     "id": "KristjanESPERANTO/MMM-EasyPix",
@@ -6579,8 +6590,12 @@
     "maintainerURL": "",
     "description": "Display current weather on Mars as provided by The {MAAS} API.",
     "issues": [
-      "There is no `package.json`. We need this file to gather information about the module for the module list page."
-    ]
+      "`package.json` issue: No description",
+      "`package.json` issue: No repository field.",
+      "There are no specific keywords in 'package.json'. We would use them as tags on the module list page. Add a few meaningful terms to the keywords in the package.json. Not just “magicmirror” or “module”.",
+      "No image found."
+    ],
+    "license": "ISC"
   },
   {
     "name": "MMM-Mashie-Skolmat",
@@ -13925,6 +13940,22 @@
     ],
     "license": "MIT",
     "image": "screenshot.jpg"
+  },
+  {
+    "name": "MMM-WebSpeechTTS",
+    "url": "https://github.com/KristjanESPERANTO/MMM-WebSpeechTTS",
+    "id": "KristjanESPERANTO/MMM-WebSpeechTTS",
+    "maintainer": "KristjanESPERANTO",
+    "maintainerURL": "",
+    "description": "A Text-To-Speech module which uses the Web Speech API of the browser. It is in an early stage of development. So far only German is supported.",
+    "issues": [],
+    "tags": [
+      "text-to-speech",
+      "tts",
+      "webspeech"
+    ],
+    "license": "MIT",
+    "image": ".github-TTS.jpg"
   },
   {
     "name": "MMM-Webuntis",

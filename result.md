@@ -1,16 +1,16 @@
 # Result of the module analysis
 
-Last update: 2023-12-14 22:48:02 UTC
+Last update: 2023-12-16 00:12:31 UTC
 
 ## Statistics
 
 |                      | number   |
 |:---------------------|:--------:|
-| modules analyzed     |   1076   |
+| modules analyzed     |   1078   |
 | maintainer           |    622   |
-| modules with issues  |   1068   |
-| issues               |   5053   |
-| modules at github    |   1067   |
+| modules with issues  |   1070   |
+| issues               |   5063   |
+| modules at github    |   1069   |
 | modules at gitlab    |      8   |
 | modules at bitbucket |      1   |
 
@@ -1622,6 +1622,11 @@ Last update: 2023-12-14 22:48:02 UTC
 3. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
 4. Deprecated: Found `require('request')` in file `node_helper.js`: Replace it with built-in fetch.
 5. The branch name is 'master'. Consider renaming it to 'main'.
+
+### [MMM-EarthquakeMonitor by rcollie](https://github.com/rcollie/MMM-EarthquakeMonitor)
+
+1. There is no `package.json`. We need this file to gather information about the module for the module list page.
+2. Recommendation: Found `XMLHttpRequest` in file `MMM-EarthquakeMonitor.js`: Replace it with built-in fetch.
 
 ### [MMM-EasyPix by KristjanESPERANTO](https://github.com/KristjanESPERANTO/MMM-EasyPix)
 
@@ -3754,7 +3759,14 @@ Last update: 2023-12-14 22:48:02 UTC
 
 ### [MMM-MarsWeather by rcollie](https://github.com/rcollie/MMM-MarsWeather)
 
-1. There is no `package.json`. We need this file to gather information about the module for the module list page.
+1. `package.json` issue: No description
+2. `package.json` issue: No repository field.
+3. There are no specific keywords in 'package.json'. We would use them as tags on the module list page. Add a few meaningful terms to the keywords in the package.json. Not just “magicmirror” or “module”.
+4. No image found.
+5. Recommendation: Found `axios` in file `MMM-MarsWeather.js`: Replace it with built-in fetch.
+6. Recommendation: Found `axios` in file `axios.min.js`: Replace it with built-in fetch.
+7. Recommendation: Found `XMLHttpRequest` in file `axios.min.js`: Replace it with built-in fetch.
+8. Recommendation: Found `axios` in file `package.json`: Replace it with built-in fetch.
 
 ### [MMM-Mashie-Skolmat by Alvinger](https://github.com/Alvinger/MMM-Mashie-Skolmat)
 
@@ -8002,6 +8014,10 @@ Last update: 2023-12-14 22:48:02 UTC
 2. Typo: Found `Magic Mirror` in file `README.md`: Replace it with `MagicMirror²`.
 3. Typo: Found `Magic Mirror` in file `package.json`: Replace it with `MagicMirror²`.
 4. The branch name is 'master'. Consider renaming it to 'main'.
+
+### [MMM-WebSpeechTTS by KristjanESPERANTO](https://github.com/KristjanESPERANTO/MMM-WebSpeechTTS)
+
+1. Recommendation: Replace eslintrc by new flat config.
 
 ### [MMM-Webuntis by thyed](https://github.com/thyed/MMM-Webuntis)
 

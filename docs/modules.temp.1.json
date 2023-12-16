@@ -1939,6 +1939,15 @@
     "outdated": "Deprecated. API is disabled."
   },
   {
+    "name": "MMM-EarthquakeMonitor",
+    "url": "https://github.com/rcollie/MMM-EarthquakeMonitor",
+    "id": "rcollie/MMM-EarthquakeMonitor",
+    "maintainer": "rcollie",
+    "maintainerURL": "",
+    "description": "This module allows you to display global earthquake data from the USGS.",
+    "issues": []
+  },
+  {
     "name": "MMM-EasyPix",
     "url": "https://github.com/KristjanESPERANTO/MMM-EasyPix",
     "id": "KristjanESPERANTO/MMM-EasyPix",
@@ -9345,6 +9354,15 @@
     "maintainer": "PjTewkesbury",
     "maintainerURL": "",
     "description": "Displays HTTP POST webhook notifications on screen and supports templates for alert message formatting.",
+    "issues": []
+  },
+  {
+    "name": "MMM-WebSpeechTTS",
+    "url": "https://github.com/KristjanESPERANTO/MMM-WebSpeechTTS",
+    "id": "KristjanESPERANTO/MMM-WebSpeechTTS",
+    "maintainer": "KristjanESPERANTO",
+    "maintainerURL": "",
+    "description": "A Text-To-Speech module which uses the Web Speech API of the browser. It is in an early stage of development. So far only German is supported.",
     "issues": []
   },
   {

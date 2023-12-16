@@ -2646,6 +2646,16 @@
     "last_commit": "2020-05-14"
   },
   {
+    "name": "MMM-EarthquakeMonitor",
+    "url": "https://github.com/rcollie/MMM-EarthquakeMonitor",
+    "id": "rcollie/MMM-EarthquakeMonitor",
+    "maintainer": "rcollie",
+    "maintainerURL": "",
+    "description": "This module allows you to display global earthquake data from the USGS.",
+    "issues": 2,
+    "last_commit": "2023-12-15"
+  },
+  {
     "name": "MMM-EasyPix",
     "url": "https://github.com/KristjanESPERANTO/MMM-EasyPix",
     "id": "KristjanESPERANTO/MMM-EasyPix",
@@ -6183,7 +6193,8 @@
     "maintainer": "rcollie",
     "maintainerURL": "",
     "description": "Display current weather on Mars as provided by The {MAAS} API.",
-    "issues": 1,
+    "issues": 8,
+    "license": "ISC",
     "last_commit": "2023-12-14"
   },
   {
@@ -6868,7 +6879,7 @@
     "issues": 4,
     "license": "MIT",
     "image": "images-2019-06-22-example-moons.jpg",
-    "last_commit": "2023-12-01"
+    "last_commit": "2023-12-14"
   },
   {
     "name": "MMM-moonraker",
@@ -7742,7 +7753,7 @@
     ],
     "license": "MIT",
     "image": ".github-preview.bubbles.jpg",
-    "last_commit": "2023-12-14"
+    "last_commit": "2023-12-16"
   },
   {
     "name": "MMM-Netatmo-Presence",
@@ -13088,6 +13099,23 @@
     "license": "MIT",
     "image": "screenshot.jpg",
     "last_commit": "2022-09-06"
+  },
+  {
+    "name": "MMM-WebSpeechTTS",
+    "url": "https://github.com/KristjanESPERANTO/MMM-WebSpeechTTS",
+    "id": "KristjanESPERANTO/MMM-WebSpeechTTS",
+    "maintainer": "KristjanESPERANTO",
+    "maintainerURL": "",
+    "description": "A Text-To-Speech module which uses the Web Speech API of the browser. It is in an early stage of development. So far only German is supported.",
+    "issues": 1,
+    "tags": [
+      "text-to-speech",
+      "tts",
+      "webspeech"
+    ],
+    "license": "MIT",
+    "image": ".github-TTS.jpg",
+    "last_commit": "2023-12-16"
   },
   {
     "name": "MMM-Webuntis",
