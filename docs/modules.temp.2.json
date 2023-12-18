@@ -7730,15 +7730,14 @@
     "maintainer": "wiesty",
     "maintainerURL": "",
     "description": "Module to display public transport 🚐 from Munich in Germany.",
-    "issues": [
-      "No image found."
-    ],
+    "issues": [],
     "tags": [
       "public transport",
       "mvg",
       "mvv"
     ],
-    "license": "MIT"
+    "license": "MIT",
+    "image": "assets-example.jpg"
   },
   {
     "name": "MMM-MyCalendar",

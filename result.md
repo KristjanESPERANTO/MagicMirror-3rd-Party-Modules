@@ -1,6 +1,6 @@
 # Result of the module analysis
 
-Last update: 2023-12-18 00:21:37 UTC
+Last update: 2023-12-18 11:49:53 UTC
 
 ## Statistics
 
@@ -9,7 +9,7 @@ Last update: 2023-12-18 00:21:37 UTC
 | modules analyzed     |   1078   |
 | maintainer           |    622   |
 | modules with issues  |   1070   |
-| issues               |   5063   |
+| issues               |   5061   |
 | modules at github    |   1069   |
 | modules at gitlab    |      8   |
 | modules at bitbucket |      1   |
@@ -4185,9 +4185,8 @@ Last update: 2023-12-18 00:21:37 UTC
 
 1. There is no `package.json`. We need this file to gather information about the module for the module list page.
 2. Recommendation: Module name doesn't follow the recommended pattern (it doesn't start with `MMM-`). Consider renaming your module.
-3. Recommendation: Found `uses: actions/checkout@v3` in file `build.yml`: Replace it with v4.
-4. Recommendation: Replace eslintrc by new flat config.
-5. The branch name is 'master'. Consider renaming it to 'main'.
+3. Recommendation: Replace eslintrc by new flat config.
+4. The branch name is 'master'. Consider renaming it to 'main'.
 
 ### [MMM-mmpm by bee-mar](https://github.com/bee-mar/MMM-mmpm)
 
@@ -4461,8 +4460,7 @@ Last update: 2023-12-18 00:21:37 UTC
 
 ### [MMM-MVVWiesty by wiesty](https://github.com/wiesty/MMM-MVVWiesty)
 
-1. No image found.
-2. Recommendation: Found `XMLHttpRequest` in file `MMM-MVVWiesty.js`: Replace it with built-in fetch.
+1. Recommendation: Found `XMLHttpRequest` in file `MMM-MVVWiesty.js`: Replace it with built-in fetch.
 
 ### [MMM-MyCalendar by jclarke0000](https://github.com/jclarke0000/MMM-MyCalendar)
 

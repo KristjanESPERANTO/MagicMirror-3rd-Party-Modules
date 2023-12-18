@@ -1788,7 +1788,7 @@
     "maintainerURL": "https://github.com/wiesty",
     "description": "Module that displays the number of days, weeks, months, and years since a specified date, serving as a romantic reminder for couples \ud83d\udc8c. Can also be used for Birthdays \ud83d\udcc6.",
     "issues": 1,
-    "last_commit": "2023-10-30"
+    "last_commit": "2023-12-18"
   },
   {
     "name": "MMM-covid19",
@@ -6770,8 +6770,8 @@
     "maintainer": "Bee-Mar",
     "maintainerURL": "https://github.com/Bee-Mar",
     "description": "An unofficial MagicMirror\u00b2 3rd Party Package Manager. Automates searching, installation, removal, updating, and upgrading of MagicMirror\u00b2 modules.",
-    "issues": 5,
-    "last_commit": "2023-10-14"
+    "issues": 4,
+    "last_commit": "2023-12-18"
   },
   {
     "name": "MMM-mmpm",
@@ -7230,14 +7230,15 @@
     "maintainer": "wiesty",
     "maintainerURL": "",
     "description": "Module to display public transport \ud83d\ude90 from Munich in Germany.",
-    "issues": 2,
+    "issues": 1,
     "tags": [
       "public transport",
       "mvg",
       "mvv"
     ],
     "license": "MIT",
-    "last_commit": "2023-11-04"
+    "image": "assets-example.jpg",
+    "last_commit": "2023-12-18"
   },
   {
     "name": "MMM-MyCalendar",
