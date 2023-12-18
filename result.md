@@ -1,6 +1,6 @@
 # Result of the module analysis
 
-Last update: 2023-12-16 00:12:31 UTC
+Last update: 2023-12-18 00:21:37 UTC
 
 ## Statistics
 
@@ -4191,7 +4191,7 @@ Last update: 2023-12-16 00:12:31 UTC
 
 ### [MMM-mmpm by bee-mar](https://github.com/bee-mar/MMM-mmpm)
 
-1. There is no `package.json`. We need this file to gather information about the module for the module list page.
+1. No image found.
 2. The branch name is 'master'. Consider renaming it to 'main'.
 
 ### [MMM-Modulebar by Snille](https://github.com/Snille/MMM-Modulebar)
@@ -6836,7 +6836,7 @@ Last update: 2023-12-16 00:12:31 UTC
 
 ### [MMM-Solarman by utzl](https://github.com/utzl/MMM-Solarman)
 
-1. There is no `package.json`. We need this file to gather information about the module for the module list page.
+1. There are no specific keywords in 'package.json'. We would use them as tags on the module list page. Add a few meaningful terms to the keywords in the package.json. Not just “magicmirror” or “module”.
 2. Typo: Found `Magic Mirror` in file `MMM-Solarman.js`: Replace it with `MagicMirror²`.
 3. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
 4. Deprecated: Found `require("request")` in file `node_helper.js`: Replace it with built-in fetch.

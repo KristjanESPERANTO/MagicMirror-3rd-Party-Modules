@@ -7238,8 +7238,14 @@
     "maintainerURL": "",
     "description": "Companion module for MMPM to enable hiding/showing of MagicMirror² modules.",
     "issues": [
-      "There is no `package.json`. We need this file to gather information about the module for the module list page."
-    ]
+      "No image found."
+    ],
+    "tags": [
+      "mmpm",
+      "magicmirror-package-manager",
+      "package-manager"
+    ],
+    "license": "MIT"
   },
   {
     "name": "MMM-Modulebar",
@@ -11874,8 +11880,10 @@
     "maintainerURL": "",
     "description": "Display statistics from the Solarman API, e.g. from Bosswerk PV inverter.",
     "issues": [
-      "There is no `package.json`. We need this file to gather information about the module for the module list page."
-    ]
+      "There are no specific keywords in 'package.json'. We would use them as tags on the module list page. Add a few meaningful terms to the keywords in the package.json. Not just “magicmirror” or “module”."
+    ],
+    "license": "MIT",
+    "image": "screenshot.jpg"
   },
   {
     "name": "MMM-SolarPicture",

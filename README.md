@@ -111,6 +111,22 @@ This script goes through all cloned modules and performs various checks. The res
     - Is it set to monthly?
     - Only production?
 - rewrite the scripts in rust (it could be faster and a good practice)
+- extend the package.json in modules to collect more additional information (based on a [proposal from MMRIZE](https://forum.magicmirror.builders/topic/18092/automatic-checking-of-all-magicmirror-modules/45?_=1702858630364))
+
+  ```json
+    "MagicMirror": {
+      "screenshot": "https://somewhere.com/screenshot.png",
+      "required": {
+        "mm": "2.25",
+        "node": "18.0",
+        "ApiKey": true
+      },
+      "notice" : [
+        "This will not work in Windows.",
+        "Pre-dependency required. Please readme."
+      ]
+  }
+  ```
 
 ### Discarded ideas
 

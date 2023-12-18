@@ -5761,7 +5761,7 @@
     "issues": 8,
     "license": "MIT",
     "image": "screenshot.jpg",
-    "last_commit": "2023-11-16"
+    "last_commit": "2023-12-17"
   },
   {
     "name": "MMM-Live-Stream-TV",
@@ -6781,7 +6781,13 @@
     "maintainerURL": "",
     "description": "Companion module for MMPM to enable hiding/showing of MagicMirror\u00b2 modules.",
     "issues": 2,
-    "last_commit": "2023-12-13"
+    "tags": [
+      "mmpm",
+      "magicmirror-package-manager",
+      "package-manager"
+    ],
+    "license": "MIT",
+    "last_commit": "2023-12-16"
   },
   {
     "name": "MMM-Modulebar",
@@ -10708,7 +10714,7 @@
     ],
     "license": "MIT",
     "image": "screenshot-NoProduction.jpg",
-    "last_commit": "2023-08-14"
+    "last_commit": "2023-12-17"
   },
   {
     "name": "MMM-ShellyPlus-HT",
@@ -11157,7 +11163,9 @@
     "maintainerURL": "",
     "description": "Display statistics from the Solarman API, e.g. from Bosswerk PV inverter.",
     "issues": 4,
-    "last_commit": "2023-09-28"
+    "license": "MIT",
+    "image": "screenshot.jpg",
+    "last_commit": "2023-12-17"
   },
   {
     "name": "MMM-SolarPicture",
@@ -11848,7 +11856,7 @@
     ],
     "license": "MIT",
     "image": "screenshots-MMM-text-clock-screenshot-compact.jpg",
-    "last_commit": "2023-07-06"
+    "last_commit": "2023-12-14"
   },
   {
     "name": "MMM-TextPerWeek",
