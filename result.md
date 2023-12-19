@@ -1,16 +1,16 @@
 # Result of the module analysis
 
-Last update: 2023-12-18 11:49:53 UTC
+Last update: 2023-12-19 22:03:53 UTC
 
 ## Statistics
 
 |                      | number   |
 |:---------------------|:--------:|
-| modules analyzed     |   1078   |
+| modules analyzed     |   1079   |
 | maintainer           |    622   |
-| modules with issues  |   1070   |
-| issues               |   5061   |
-| modules at github    |   1069   |
+| modules with issues  |   1071   |
+| issues               |   5139   |
+| modules at github    |   1070   |
 | modules at gitlab    |      8   |
 | modules at bitbucket |      1   |
 
@@ -83,8 +83,9 @@ Last update: 2023-12-18 11:49:53 UTC
 4. Recommendation: Found `jshint` in file `Gruntfile.js`: Replace "jshint" by "eslint".
 5. Typo: Found `Magic Mirror` in file `MMM-AirbarHelper.js`: Replace it with `MagicMirror²`.
 6. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
-7. Recommendation: Replace eslintrc by new flat config.
-8. The branch name is 'master'. Consider renaming it to 'main'.
+7. Deprecated: Found `"grunt"` in file `package.json`: Grunt is practically unmaintained. Move on to something better.
+8. Recommendation: Replace eslintrc by new flat config.
+9. The branch name is 'master'. Consider renaming it to 'main'.
 
 ### [MMM-Airly by mstarzec386](https://github.com/mstarzec386/MMM-Airly)
 
@@ -346,8 +347,9 @@ Last update: 2023-12-18 11:49:53 UTC
 3. Typo: Found `Magic Mirror` in file `MMM-Avinor.js`: Replace it with `MagicMirror²`.
 4. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
 5. Deprecated: Found `require("request")` in file `node_helper.js`: Replace it with built-in fetch.
-6. Typo: Found `Magic Mirror` in file `readme.md`: Replace it with `MagicMirror²`.
-7. The branch name is 'master'. Consider renaming it to 'main'.
+6. Deprecated: Found `"grunt"` in file `package.json`: Grunt is practically unmaintained. Move on to something better.
+7. Typo: Found `Magic Mirror` in file `readme.md`: Replace it with `MagicMirror²`.
+8. The branch name is 'master'. Consider renaming it to 'main'.
 
 ### [MMM-AVStock by lavolp3](https://github.com/lavolp3/MMM-AVStock)
 
@@ -670,8 +672,9 @@ Last update: 2023-12-18 11:49:53 UTC
 1. Recommendation: Found `jshint` in file `Gruntfile.js`: Replace "jshint" by "eslint".
 2. Typo: Found `Magic Mirror` in file `MMM-Bubi.js`: Replace it with `MagicMirror²`.
 3. Recommendation: Found `XMLHttpRequest` in file `MMM-Bubi.js`: Replace it with built-in fetch.
-4. Recommendation: Replace eslintrc by new flat config.
-5. The branch name is 'master'. Consider renaming it to 'main'.
+4. Deprecated: Found `"grunt"` in file `package.json`: Grunt is practically unmaintained. Move on to something better.
+5. Recommendation: Replace eslintrc by new flat config.
+6. The branch name is 'master'. Consider renaming it to 'main'.
 
 ### [MMM-Buienradar by StefanNienhuis](https://github.com/StefanNienhuis/MMM-Buienradar)
 
@@ -739,8 +742,9 @@ Last update: 2023-12-18 11:49:53 UTC
 ### [MMM-CalDAV by MMRIZE](https://github.com/MMRIZE/MMM-CalDAV)
 
 1. No image found.
-2. Information: There are updates for 2 dependencie(s):
+2. Information: There are updates for 3 dependencie(s):
    -  googleapis  ^128.0.0  →  ^129.0.0
+   -  open          ^9.1.0  →   ^10.0.0
    -  tsdav         ^2.0.5  →    ^2.0.7
 
 
@@ -900,8 +904,9 @@ Last update: 2023-12-18 11:49:53 UTC
 3. Recommendation: Found `jshint` in file `Gruntfile.js`: Replace "jshint" by "eslint".
 4. Typo: Found `Magic Mirror` in file `MMM-Chess-Daily.js`: Replace it with `MagicMirror²`.
 5. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
-6. Recommendation: Replace eslintrc by new flat config.
-7. The branch name is 'master'. Consider renaming it to 'main'.
+6. Deprecated: Found `"grunt"` in file `package.json`: Grunt is practically unmaintained. Move on to something better.
+7. Recommendation: Replace eslintrc by new flat config.
+8. The branch name is 'master'. Consider renaming it to 'main'.
 
 ### [MMM-chromecast by flo80](https://github.com/flo80/MMM-chromecast)
 
@@ -921,8 +926,9 @@ Last update: 2023-12-18 11:49:53 UTC
 6. Typo: Found `Magic Mirror` in file `README.md`: Replace it with `MagicMirror²`.
 7. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
 8. Typo: Found `Magic Mirror` in file `package.json`: Replace it with `MagicMirror²`.
-9. Recommendation: Replace eslintrc by new flat config.
-10. The branch name is 'master'. Consider renaming it to 'main'.
+9. Deprecated: Found `"grunt"` in file `package.json`: Grunt is practically unmaintained. Move on to something better.
+10. Recommendation: Replace eslintrc by new flat config.
+11. The branch name is 'master'. Consider renaming it to 'main'.
 
 ### [MMM-CivitAI by Andoramb](https://github.com/Andoramb/MMM-CivitAI)
 
@@ -1049,7 +1055,8 @@ Last update: 2023-12-18 11:49:53 UTC
 
 1. `package.json` issue: No repository field.
 2. There are no keywords in 'package.json'. We would use them as tags on the module list page.
-3. The branch name is 'master'. Consider renaming it to 'main'.
+3. Deprecated: Found `"grunt"` in file `package.json`: Grunt is practically unmaintained. Move on to something better.
+4. The branch name is 'master'. Consider renaming it to 'main'.
 
 ### [MMM-CountEvents by MMRIZE](https://github.com/MMRIZE/MMM-CountEvents)
 
@@ -1226,7 +1233,7 @@ Last update: 2023-12-18 11:49:53 UTC
 3. Recommendation: Found `XMLHttpRequest` in file `node_helper.js`: Replace it with built-in fetch.
 4. Typo: Found `MagicMirror2` in file `package.json`: Replace it with `MagicMirror²`.
 
-### [MMM-Dad-Jokes by echang15](https://github.com/echang15/MMM-Dad-Jokes)
+### [MMM-Dad-Jokes by brucetony](https://github.com/brucetony/MMM-Dad-Jokes)
 
 1. `package.json` issue: No repository field.
 2. There are no keywords in 'package.json'. We would use them as tags on the module list page.
@@ -1235,7 +1242,7 @@ Last update: 2023-12-18 11:49:53 UTC
 5. Typo: Found `Magic Mirror` in file `MMM-Dad-Jokes.js`: Replace it with `MagicMirror²`.
 6. Typo: Found `Magic Mirror` in file `README.md`: Replace it with `MagicMirror²`.
 7. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
-8. Deprecated: Found `require('request')` in file `node_helper.js`: Replace it with built-in fetch.
+8. Deprecated: Found `"grunt"` in file `package.json`: Grunt is practically unmaintained. Move on to something better.
 9. Recommendation: Replace eslintrc by new flat config.
 10. The branch name is 'master'. Consider renaming it to 'main'.
 
@@ -1302,7 +1309,8 @@ Last update: 2023-12-18 11:49:53 UTC
 2. There are no keywords in 'package.json'. We would use them as tags on the module list page.
 3. Typo: Found `Magic Mirror` in file `MMM-DailyPokemon.js`: Replace it with `MagicMirror²`.
 4. Recommendation: Found `XMLHttpRequest` in file `MMM-DailyPokemon.js`: Replace it with built-in fetch.
-5. The branch name is 'master'. Consider renaming it to 'main'.
+5. Deprecated: Found `"grunt"` in file `package.json`: Grunt is practically unmaintained. Move on to something better.
+6. The branch name is 'master'. Consider renaming it to 'main'.
 
 ### [MMM-DailyPower by oemel09](https://github.com/oemel09/MMM-DailyPower)
 
@@ -1386,8 +1394,9 @@ Last update: 2023-12-18 11:49:53 UTC
 2. Typo: Found `Magic Mirror` in file `MMM-DBF.js`: Replace it with `MagicMirror²`.
 3. Recommendation: Found `XMLHttpRequest` in file `MMM-DBF.js`: Replace it with built-in fetch.
 4. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
-5. Warning: No LICENSE file.
-6. The branch name is 'master'. Consider renaming it to 'main'.
+5. Deprecated: Found `"grunt"` in file `package.json`: Grunt is practically unmaintained. Move on to something better.
+6. Warning: No LICENSE file.
+7. The branch name is 'master'. Consider renaming it to 'main'.
 
 ### [MMM-DCMetroTimes by kyle-kelly](https://github.com/kyle-kelly/MMM-DCMetroTimes)
 
@@ -1551,9 +1560,10 @@ Last update: 2023-12-18 11:49:53 UTC
 ### [MMM-DVB by skastenholz](https://github.com/skastenholz/MMM-DVB)
 
 1. Recommendation: Found `jshint` in file `Gruntfile.js`: Replace "jshint" by "eslint".
-2. Recommendation: Found `axios` in file `package.json`: Replace it with built-in fetch.
-3. Recommendation: Found `jshint` in file `package.json`: Replace "jshint" by "eslint".
-4. The branch name is 'master'. Consider renaming it to 'main'.
+2. Deprecated: Found `"grunt"` in file `package.json`: Grunt is practically unmaintained. Move on to something better.
+3. Recommendation: Found `axios` in file `package.json`: Replace it with built-in fetch.
+4. Recommendation: Found `jshint` in file `package.json`: Replace "jshint" by "eslint".
+5. The branch name is 'master'. Consider renaming it to 'main'.
 
 ### [MMM-DWD-Pollen by carstendirks](https://github.com/carstendirks/MMM-DWD-Pollen)
 
@@ -1662,7 +1672,7 @@ Last update: 2023-12-18 11:49:53 UTC
 2. Warning: No LICENSE file.
 3. The branch name is 'master'. Consider renaming it to 'main'.
 
-### [MMM-EFA-departures by Dom1n1c](https://github.com/Dom1n1c/MMM-EFA-departures)
+### [MMM-EFA-departures by sourceforge807](https://github.com/sourceforge807/MMM-EFA-departures)
 
 1. No image found.
 2. Typo: Found `Magic Mirror` in file `MMM-EFA-departures.js`: Replace it with `MagicMirror²`.
@@ -1704,10 +1714,9 @@ Last update: 2023-12-18 11:49:53 UTC
 
 ### [MMM-EMTValencia by TheRaulXP](https://github.com/TheRaulXP/MMM-EMTValencia)
 
-1. No image found.
-2. Recommendation: Found `require('http')` in file `node_helper.js`: Replace 'http' by 'node:http'.
-3. Warning: No LICENSE file.
-4. The branch name is 'master'. Consider renaming it to 'main'.
+1. Recommendation: Found `require('http')` in file `node_helper.js`: Replace 'http' by 'node:http'.
+2. Warning: No LICENSE file.
+3. The branch name is 'master'. Consider renaming it to 'main'.
 
 ### [MMM-EnergyMonitor by deg0nz](https://github.com/deg0nz/MMM-EnergyMonitor)
 
@@ -1767,7 +1776,8 @@ Last update: 2023-12-18 11:49:53 UTC
 2. Typo: Found `Magic Mirror` in file `MMM-Ethos.js`: Replace it with `MagicMirror²`.
 3. Recommendation: Found `XMLHttpRequest` in file `MMM-Ethos.js`: Replace it with built-in fetch.
 4. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
-5. The branch name is 'master'. Consider renaming it to 'main'.
+5. Deprecated: Found `"grunt"` in file `package.json`: Grunt is practically unmaintained. Move on to something better.
+6. The branch name is 'master'. Consider renaming it to 'main'.
 
 ### [MMM-EventHorizon by mykle1](https://github.com/mykle1/MMM-EventHorizon)
 
@@ -1826,7 +1836,8 @@ Last update: 2023-12-18 11:49:53 UTC
 2. There are no keywords in 'package.json'. We would use them as tags on the module list page.
 3. Recommendation: Found `jshint` in file `Gruntfile.js`: Replace "jshint" by "eslint".
 4. Typo: Found `Magic Mirror` in file `MMM-Face-Multi-User-Recognition-SMAI.js`: Replace it with `MagicMirror²`.
-5. The branch name is 'master'. Consider renaming it to 'main'.
+5. Deprecated: Found `"grunt"` in file `package.json`: Grunt is practically unmaintained. Move on to something better.
+6. The branch name is 'master'. Consider renaming it to 'main'.
 
 ### [MMM-Face-Reco-DNN by nischi](https://github.com/nischi/MMM-Face-Reco-DNN)
 
@@ -2385,10 +2396,11 @@ Last update: 2023-12-18 11:49:53 UTC
 
 ### [MMM-GoogleAssistant by bugsounet](https://github.com/bugsounet/MMM-GoogleAssistant)
 
-1. Information: There are updates for 3 dependencie(s):
-   -  @grpc/grpc-js        ^1.9.11  →  ^1.9.13
-   -  esbuild              ^0.19.8  →  ^0.19.9
-   -  google-auth-library   ^9.2.0  →   ^9.4.1
+1. Information: There are updates for 4 dependencie(s):
+   -  @grpc/grpc-js        ^1.9.11  →   ^1.9.13
+   -  esbuild              ^0.19.8  →  ^0.19.10
+   -  google-auth-library   ^9.2.0  →    ^9.4.1
+   -  open                  ^9.1.0  →   ^10.0.0
 
 
 ### [MMM-GoogleBirthdaysProvider by PalatinCoder](https://github.com/PalatinCoder/MMM-GoogleBirthdaysProvider)
@@ -2451,7 +2463,8 @@ Last update: 2023-12-18 11:49:53 UTC
 2. There are no keywords in 'package.json'. We would use them as tags on the module list page.
 3. Recommendation: Found `jshint` in file `Gruntfile.js`: Replace "jshint" by "eslint".
 4. Typo: Found `Magic Mirror` in file `MMM-GoogleMapsTraffic.js`: Replace it with `MagicMirror²`.
-5. The branch name is 'master'. Consider renaming it to 'main'.
+5. Deprecated: Found `"grunt"` in file `package.json`: Grunt is practically unmaintained. Move on to something better.
+6. The branch name is 'master'. Consider renaming it to 'main'.
 
 ### [MMM-GooglePhotos by hermanho](https://github.com/hermanho/MMM-GooglePhotos)
 
@@ -2502,15 +2515,17 @@ Last update: 2023-12-18 11:49:53 UTC
 
 1. `package.json` issue: No repository field.
 2. There are no keywords in 'package.json'. We would use them as tags on the module list page.
-3. Warning: No LICENSE file.
-4. The branch name is 'master'. Consider renaming it to 'main'.
+3. Deprecated: Found `"grunt"` in file `package.json`: Grunt is practically unmaintained. Move on to something better.
+4. Warning: No LICENSE file.
+5. The branch name is 'master'. Consider renaming it to 'main'.
 
 ### [MMM-GoogleTrafficTimes by Jacopo1891](https://github.com/Jacopo1891/MMM-GoogleTrafficTimes)
 
 1. `package.json` issue: No repository field.
 2. There are no keywords in 'package.json'. We would use them as tags on the module list page.
-3. Warning: No LICENSE file.
-4. The branch name is 'master'. Consider renaming it to 'main'.
+3. Deprecated: Found `"grunt"` in file `package.json`: Grunt is practically unmaintained. Move on to something better.
+4. Warning: No LICENSE file.
+5. The branch name is 'master'. Consider renaming it to 'main'.
 
 ### [MMM-GoogleTTS by MMRIZE](https://github.com/MMRIZE/MMM-GoogleTTS)
 
@@ -2606,8 +2621,9 @@ Last update: 2023-12-18 11:49:53 UTC
 6. Typo: Found `Magic Mirror` in file `README.md`: Replace it with `MagicMirror²`.
 7. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
 8. Deprecated: Found `require('request')` in file `node_helper.js`: Replace it with built-in fetch.
-9. Warning: No LICENSE file.
-10. The branch name is 'master'. Consider renaming it to 'main'.
+9. Deprecated: Found `"grunt"` in file `package.json`: Grunt is practically unmaintained. Move on to something better.
+10. Warning: No LICENSE file.
+11. The branch name is 'master'. Consider renaming it to 'main'.
 
 ### [MMM-HASS by aserramonner](https://github.com/aserramonner/MMM-HASS)
 
@@ -2742,7 +2758,8 @@ Last update: 2023-12-18 11:49:53 UTC
 2. Typo: Found `Magic Mirror` in file `MMM-HomeAssistantDisplay.js`: Replace it with `MagicMirror²`.
 3. Typo: Found `Magic Mirror` in file `README.md`: Replace it with `MagicMirror²`.
 4. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
-5. Recommendation: Replace eslintrc by new flat config.
+5. Deprecated: Found `"grunt"` in file `package.json`: Grunt is practically unmaintained. Move on to something better.
+6. Recommendation: Replace eslintrc by new flat config.
 
 ### [MMM-HomeAutomationNotifications by john3300](https://github.com/john3300/MMM-HomeAutomationNotifications)
 
@@ -2796,8 +2813,10 @@ Last update: 2023-12-18 11:49:53 UTC
 4. Typo: Found `Magic Mirror` in file `MMM-Hover.js`: Replace it with `MagicMirror²`.
 5. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
 6. Deprecated: Found `"electron-rebuild"` in file `package.json`: Replace it with `@electron/rebuild`
-7. Recommendation: Replace eslintrc by new flat config.
-8. The branch name is 'master'. Consider renaming it to 'main'.
+7. Deprecated: Found `"grunt"` in file `package.json`: Grunt is practically unmaintained. Move on to something better.
+8. Deprecated: Found `"grunt"` in file `package.json`: Grunt is practically unmaintained. Move on to something better.
+9. Recommendation: Replace eslintrc by new flat config.
+10. The branch name is 'master'. Consider renaming it to 'main'.
 
 ### [MMM-HRS-PickupPlan by maan75](https://github.com/maan75/MMM-HRS-PickupPlan)
 
@@ -3011,6 +3030,19 @@ Last update: 2023-12-18 11:49:53 UTC
 3. Typo: Found `Magic Mirror` in file `README.md`: Replace it with `MagicMirror²`.
 4. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
 5. The branch name is 'master'. Consider renaming it to 'main'.
+
+### [MMM-ImagesPhotos by sdetweil](https://github.com/sdetweil/MMM-ImagesPhotos)
+
+1. `package.json` issue: No repository field.
+2. There are no keywords in 'package.json'. We would use them as tags on the module list page.
+3. Recommendation: Found `jshint` in file `Gruntfile.js`: Replace "jshint" by "eslint".
+4. Typo: Found `Magic Mirror` in file `MMM-ImagesPhotos.js`: Replace it with `MagicMirror²`.
+5. Recommendation: Found `XMLHttpRequest` in file `MMM-ImagesPhotos.js`: Replace it with built-in fetch.
+6. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
+7. Deprecated: Found `require("request")` in file `node_helper.js`: Replace it with built-in fetch.
+8. Deprecated: Found `"grunt"` in file `package.json`: Grunt is practically unmaintained. Move on to something better.
+9. Recommendation: Replace eslintrc by new flat config.
+10. The branch name is 'master'. Consider renaming it to 'main'.
 
 ### [MMM-imhdsk by Adman](https://github.com/Adman/MMM-imhdsk)
 
@@ -3233,7 +3265,8 @@ Last update: 2023-12-18 11:49:53 UTC
 4. Typo: Found `Magic Mirror` in file `MMM-JNV.js`: Replace it with `MagicMirror²`.
 5. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
 6. Recommendation: Found `require("https")` in file `node_helper.js`: Replace "https" by "node:https".
-7. The branch name is 'master'. Consider renaming it to 'main'.
+7. Deprecated: Found `"grunt"` in file `package.json`: Grunt is practically unmaintained. Move on to something better.
+8. The branch name is 'master'. Consider renaming it to 'main'.
 
 ### [MMM-JokeAPI by Kreshnik](https://github.com/Kreshnik/MMM-JokeAPI)
 
@@ -3311,6 +3344,7 @@ Last update: 2023-12-18 11:49:53 UTC
 6. Typo: Found `Magic Mirror` in file `README.md`: Replace it with `MagicMirror²`.
 7. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
 8. Deprecated: Found `require("request")` in file `node_helper.js`: Replace it with built-in fetch.
+9. Deprecated: Found `"grunt"` in file `package.json`: Grunt is practically unmaintained. Move on to something better.
 
 ### [MMM-kalliope by kalliope-project](https://github.com/kalliope-project/MMM-kalliope)
 
@@ -3371,8 +3405,9 @@ Last update: 2023-12-18 11:49:53 UTC
 4. Recommendation: Found `jshint` in file `Gruntfile.js`: Replace "jshint" by "eslint".
 5. Typo: Found `Magic Mirror` in file `MMM-kudos.js`: Replace it with `MagicMirror²`.
 6. Recommendation: Found `XMLHttpRequest` in file `MMM-kudos.js`: Replace it with built-in fetch.
-7. Recommendation: Replace eslintrc by new flat config.
-8. The branch name is 'master'. Consider renaming it to 'main'.
+7. Deprecated: Found `"grunt"` in file `package.json`: Grunt is practically unmaintained. Move on to something better.
+8. Recommendation: Replace eslintrc by new flat config.
+9. The branch name is 'master'. Consider renaming it to 'main'.
 
 ### [MMM-KVV by yo-less](https://github.com/yo-less/MMM-KVV)
 
@@ -3580,8 +3615,9 @@ Last update: 2023-12-18 11:49:53 UTC
 3. Recommendation: Found `jshint` in file `Gruntfile.js`: Replace "jshint" by "eslint".
 4. Typo: Found `Magic Mirror` in file `MMM-Looko2-aq.js`: Replace it with `MagicMirror²`.
 5. Recommendation: Found `XMLHttpRequest` in file `MMM-Looko2-aq.js`: Replace it with built-in fetch.
-6. Recommendation: Replace eslintrc by new flat config.
-7. The branch name is 'master'. Consider renaming it to 'main'.
+6. Deprecated: Found `"grunt"` in file `package.json`: Grunt is practically unmaintained. Move on to something better.
+7. Recommendation: Replace eslintrc by new flat config.
+8. The branch name is 'master'. Consider renaming it to 'main'.
 
 ### [MMM-Losung by Dobherrmann](https://github.com/Dobherrmann/MMM-Losung)
 
@@ -3607,10 +3643,11 @@ Last update: 2023-12-18 11:49:53 UTC
 
 1. There are no keywords in 'package.json'. We would use them as tags on the module list page.
 2. Recommendation: Found `jshint` in file `Gruntfile.js`: Replace "jshint" by "eslint".
-3. Recommendation: Found `XMLHttpRequest` in file `jquery.min.js`: Replace it with built-in fetch.
-4. Recommendation: Found `jshint` in file `q.js`: Replace "jshint" by "eslint".
-5. Recommendation: Replace eslintrc by new flat config.
-6. The branch name is 'master'. Consider renaming it to 'main'.
+3. Deprecated: Found `"grunt"` in file `package.json`: Grunt is practically unmaintained. Move on to something better.
+4. Recommendation: Found `XMLHttpRequest` in file `jquery.min.js`: Replace it with built-in fetch.
+5. Recommendation: Found `jshint` in file `q.js`: Replace "jshint" by "eslint".
+6. Recommendation: Replace eslintrc by new flat config.
+7. The branch name is 'master'. Consider renaming it to 'main'.
 
 ### [MMM-Luftdaten by pixxelfriend](https://github.com/pixxelfriend/MMM-Luftdaten)
 
@@ -3659,8 +3696,9 @@ Last update: 2023-12-18 11:49:53 UTC
 2. Recommendation: Found `jshint` in file `gruntfile.js`: Replace "jshint" by "eslint".
 3. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
 4. Recommendation: Found `jshint` in file `node_helper.js`: Replace "jshint" by "eslint".
-5. Recommendation: Found `jshint` in file `package.json`: Replace "jshint" by "eslint".
-6. The branch name is 'master'. Consider renaming it to 'main'.
+5. Deprecated: Found `"grunt"` in file `package.json`: Grunt is practically unmaintained. Move on to something better.
+6. Recommendation: Found `jshint` in file `package.json`: Replace "jshint" by "eslint".
+7. The branch name is 'master'. Consider renaming it to 'main'.
 
 ### [magic-mirror-voice by whyjustin](https://github.com/whyjustin/magic-mirror-voice)
 
@@ -3688,8 +3726,10 @@ Last update: 2023-12-18 11:49:53 UTC
 6. Typo: Found `Magic Mirror` in file `MagicMirror-Module-Template.js`: Replace it with `MagicMirror²`.
 7. Recommendation: Found `XMLHttpRequest` in file `MagicMirror-Module-Template.js`: Replace it with built-in fetch.
 8. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
-9. Recommendation: Replace eslintrc by new flat config.
-10. The branch name is 'master'. Consider renaming it to 'main'.
+9. Deprecated: Found `"grunt"` in file `package.json`: Grunt is practically unmaintained. Move on to something better.
+10. Deprecated: Found `"grunt"` in file `package.json`: Grunt is practically unmaintained. Move on to something better.
+11. Recommendation: Replace eslintrc by new flat config.
+12. The branch name is 'master'. Consider renaming it to 'main'.
 
 ### [MagicMirror-Olympia-Module by GHLasse](https://github.com/GHLasse/MagicMirror-Olympia-Module)
 
@@ -3789,8 +3829,9 @@ Last update: 2023-12-18 11:49:53 UTC
 2. There are no keywords in 'package.json'. We would use them as tags on the module list page.
 3. Typo: Found `Magic Mirror` in file `MMM-Mattermost.js`: Replace it with `MagicMirror²`.
 4. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
-5. Recommendation: Replace eslintrc by new flat config.
-6. The branch name is 'master'. Consider renaming it to 'main'.
+5. Deprecated: Found `"grunt"` in file `package.json`: Grunt is practically unmaintained. Move on to something better.
+6. Recommendation: Replace eslintrc by new flat config.
+7. The branch name is 'master'. Consider renaming it to 'main'.
 
 ### [MMM-max by mirko3000](https://github.com/mirko3000/MMM-max)
 
@@ -3813,8 +3854,9 @@ Last update: 2023-12-18 11:49:53 UTC
 3. Recommendation: Found `jshint` in file `bower.json`: Replace "jshint" by "eslint".
 4. Recommendation: Found `jshint` in file `showdown.js`: Replace "jshint" by "eslint".
 5. Recommendation: Found `jshint` in file `showdown.js.map`: Replace "jshint" by "eslint".
-6. Recommendation: Found `jshint` in file `package.json`: Replace "jshint" by "eslint".
-7. Recommendation: Found `jshint` in file `helpers.js`: Replace "jshint" by "eslint".
+6. Deprecated: Found `"grunt"` in file `package.json`: Grunt is practically unmaintained. Move on to something better.
+7. Recommendation: Found `jshint` in file `package.json`: Replace "jshint" by "eslint".
+8. Recommendation: Found `jshint` in file `helpers.js`: Replace "jshint" by "eslint".
 
 ### [MMM-Memo by schnibel](https://github.com/schnibel/MMM-Memo)
 
@@ -3897,8 +3939,9 @@ Last update: 2023-12-18 11:49:53 UTC
 3. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
 4. Recommendation: Found `jshint` in file `node_helper.js`: Replace "jshint" by "eslint".
 5. Deprecated: Found `"electron-rebuild"` in file `package.json`: Replace it with `@electron/rebuild`
-6. Recommendation: Replace eslintrc by new flat config.
-7. The branch name is 'master'. Consider renaming it to 'main'.
+6. Deprecated: Found `"grunt"` in file `package.json`: Grunt is practically unmaintained. Move on to something better.
+7. Recommendation: Replace eslintrc by new flat config.
+8. The branch name is 'master'. Consider renaming it to 'main'.
 
 ### [MMM-Minigjenbruksstasjon by blixhavn](https://github.com/blixhavn/MMM-Minigjenbruksstasjon)
 
@@ -4007,7 +4050,8 @@ Last update: 2023-12-18 11:49:53 UTC
 3. Recommendation: Module name doesn't follow the recommended pattern (it doesn't start with `MMM-`). Consider renaming your module.
 4. Typo: Found `Magic Mirror` in file `MMM-Helium-Wallet.js`: Replace it with `MagicMirror²`.
 5. Typo: Found `Magic Mirror` in file `package.json`: Replace it with `MagicMirror²`.
-6. Recommendation: Replace eslintrc by new flat config.
+6. Deprecated: Found `"grunt"` in file `package.json`: Grunt is practically unmaintained. Move on to something better.
+7. Recommendation: Replace eslintrc by new flat config.
 
 ### [mmm-hue-lights by michael5r](https://github.com/michael5r/mmm-hue-lights)
 
@@ -4226,8 +4270,9 @@ Last update: 2023-12-18 11:49:53 UTC
 1. No image found.
 2. Recommendation: Found `jshint` in file `Gruntfile.js`: Replace "jshint" by "eslint".
 3. Deprecated: Found `"electron-rebuild"` in file `package.json`: Replace it with `@electron/rebuild`
-4. Recommendation: Replace eslintrc by new flat config.
-5. The branch name is 'master'. Consider renaming it to 'main'.
+4. Deprecated: Found `"grunt"` in file `package.json`: Grunt is practically unmaintained. Move on to something better.
+5. Recommendation: Replace eslintrc by new flat config.
+6. The branch name is 'master'. Consider renaming it to 'main'.
 
 ### [MMM-MonthlyCalendar by kolbyjack](https://github.com/kolbyjack/MMM-MonthlyCalendar)
 
@@ -4245,8 +4290,9 @@ Last update: 2023-12-18 11:49:53 UTC
 
 1. `package.json` issue: No repository field.
 2. There are no keywords in 'package.json'. We would use them as tags on the module list page.
-3. Recommendation: Replace eslintrc by new flat config.
-4. The branch name is 'master'. Consider renaming it to 'main'.
+3. Deprecated: Found `"grunt"` in file `package.json`: Grunt is practically unmaintained. Move on to something better.
+4. Recommendation: Replace eslintrc by new flat config.
+5. The branch name is 'master'. Consider renaming it to 'main'.
 
 ### [MMM-moonraker by btastic](https://github.com/btastic/MMM-moonraker)
 
@@ -4254,7 +4300,8 @@ Last update: 2023-12-18 11:49:53 UTC
 2. Typo: Found `Magic Mirror` in file `MMM-moonraker.js`: Replace it with `MagicMirror²`.
 3. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
 4. Recommendation: Found `require("fetch")` in file `node_helper.js`: Replace it with built-in fetch.
-5. Recommendation: Replace eslintrc by new flat config.
+5. Deprecated: Found `"grunt"` in file `package.json`: Grunt is practically unmaintained. Move on to something better.
+6. Recommendation: Replace eslintrc by new flat config.
 
 ### [MMM-Mopidy-MPD by coderpussy](https://github.com/coderpussy/MMM-Mopidy-MPD)
 
@@ -4423,8 +4470,9 @@ Last update: 2023-12-18 11:49:53 UTC
 5. Typo: Found `Magic Mirror` in file `MMM-MTA-NextBus.js`: Replace it with `MagicMirror²`.
 6. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
 7. Recommendation: Found `require('http')` in file `node_helper.js`: Replace 'http' by 'node:http'.
-8. Recommendation: Replace eslintrc by new flat config.
-9. The branch name is 'master'. Consider renaming it to 'main'.
+8. Deprecated: Found `"grunt"` in file `package.json`: Grunt is practically unmaintained. Move on to something better.
+9. Recommendation: Replace eslintrc by new flat config.
+10. The branch name is 'master'. Consider renaming it to 'main'.
 
 ### [MMM-Multimonth by BKeyport](https://github.com/BKeyport/MMM-Multimonth)
 
@@ -4477,9 +4525,10 @@ Last update: 2023-12-18 11:49:53 UTC
 3. Typo: Found `MagicMirror2` in file `README.md`: Replace it with `MagicMirror²`.
 4. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
 5. Deprecated: Found `require("request")` in file `node_helper.js`: Replace it with built-in fetch.
-6. Warning: No LICENSE file.
-7. Recommendation: Replace eslintrc by new flat config.
-8. The branch name is 'master'. Consider renaming it to 'main'.
+6. Deprecated: Found `"grunt"` in file `package.json`: Grunt is practically unmaintained. Move on to something better.
+7. Warning: No LICENSE file.
+8. Recommendation: Replace eslintrc by new flat config.
+9. The branch name is 'master'. Consider renaming it to 'main'.
 
 ### [MMM-mycroft-bridge by oenstrom](https://github.com/oenstrom/MMM-mycroft-bridge)
 
@@ -4553,7 +4602,8 @@ Last update: 2023-12-18 11:49:53 UTC
 2. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
 3. Recommendation: Found `jshint` in file `node_helper.js`: Replace "jshint" by "eslint".
 4. Deprecated: Found `"electron-rebuild"` in file `package.json`: Replace it with `@electron/rebuild`
-5. The branch name is 'master'. Consider renaming it to 'main'.
+5. Deprecated: Found `"grunt"` in file `package.json`: Grunt is practically unmaintained. Move on to something better.
+6. The branch name is 'master'. Consider renaming it to 'main'.
 
 ### [MMM-MyStandings by vincep5](https://github.com/vincep5/MMM-MyStandings)
 
@@ -4649,9 +4699,10 @@ Last update: 2023-12-18 11:49:53 UTC
 ### [MMM-nagios by qistoph](https://github.com/qistoph/MMM-nagios)
 
 1. Recommendation: Found `jshint` in file `Gruntfile.js`: Replace "jshint" by "eslint".
-2. Warning: No LICENSE file.
-3. Recommendation: Replace eslintrc by new flat config.
-4. The branch name is 'master'. Consider renaming it to 'main'.
+2. Deprecated: Found `"grunt"` in file `package.json`: Grunt is practically unmaintained. Move on to something better.
+3. Warning: No LICENSE file.
+4. Recommendation: Replace eslintrc by new flat config.
+5. The branch name is 'master'. Consider renaming it to 'main'.
 
 ### [MMM-NameDay by RichieCZ](https://github.com/RichieCZ/MMM-NameDay)
 
@@ -4794,8 +4845,9 @@ Last update: 2023-12-18 11:49:53 UTC
 5. Typo: Found `Magic Mirror` in file `MMM-Netatmo-Thermostat.js`: Replace it with `MagicMirror²`.
 6. Recommendation: Found `XMLHttpRequest` in file `jquery-3.2.1.min.js`: Replace it with built-in fetch.
 7. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
-8. Recommendation: Replace eslintrc by new flat config.
-9. The branch name is 'master'. Consider renaming it to 'main'.
+8. Deprecated: Found `"grunt"` in file `package.json`: Grunt is practically unmaintained. Move on to something better.
+9. Recommendation: Replace eslintrc by new flat config.
+10. The branch name is 'master'. Consider renaming it to 'main'.
 
 ### [MMM-network-signal by PoOwAa](https://github.com/PoOwAa/MMM-network-signal)
 
@@ -4814,8 +4866,9 @@ Last update: 2023-12-18 11:49:53 UTC
 2. Recommendation: Found `jshint` in file `gruntfile.js`: Replace "jshint" by "eslint".
 3. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
 4. Recommendation: Found `jshint` in file `node_helper.js`: Replace "jshint" by "eslint".
-5. Recommendation: Found `jshint` in file `package.json`: Replace "jshint" by "eslint".
-6. The branch name is 'master'. Consider renaming it to 'main'.
+5. Deprecated: Found `"grunt"` in file `package.json`: Grunt is practically unmaintained. Move on to something better.
+6. Recommendation: Found `jshint` in file `package.json`: Replace "jshint" by "eslint".
+7. The branch name is 'master'. Consider renaming it to 'main'.
 
 ### [MMM-News-QR by nischi](https://github.com/nischi/MMM-News-QR)
 
@@ -4852,6 +4905,7 @@ Last update: 2023-12-18 11:49:53 UTC
 4. Recommendation: Found `jshint` in file `Gruntfile.js`: Replace "jshint" by "eslint".
 5. Typo: Found `Magic Mirror` in file `next-train-transilien.js`: Replace it with `MagicMirror²`.
 6. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
+7. Deprecated: Found `"grunt"` in file `package.json`: Grunt is practically unmaintained. Move on to something better.
 
 ### [MMM-nextbike by yo-less](https://github.com/yo-less/MMM-nextbike)
 
@@ -4868,13 +4922,15 @@ Last update: 2023-12-18 11:49:53 UTC
 3. Recommendation: Found `jshint` in file `Gruntfile.js`: Replace "jshint" by "eslint".
 4. Typo: Found `Magic Mirror` in file `MMM-NextCloud-Tasks.js`: Replace it with `MagicMirror²`.
 5. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
-6. Recommendation: Replace eslintrc by new flat config.
-7. The branch name is 'master'. Consider renaming it to 'main'.
+6. Deprecated: Found `"grunt"` in file `package.json`: Grunt is practically unmaintained. Move on to something better.
+7. Recommendation: Replace eslintrc by new flat config.
+8. The branch name is 'master'. Consider renaming it to 'main'.
 
 ### [MMM-NextEvent by cure](https://github.com/cure/MMM-NextEvent)
 
 1. `package.json` issue: No repository field.
 2. There are no keywords in 'package.json'. We would use them as tags on the module list page.
+3. Deprecated: Found `"grunt"` in file `package.json`: Grunt is practically unmaintained. Move on to something better.
 
 ### [MMM-NextTrains by CptMeetKat](https://github.com/CptMeetKat/MMM-NextTrains)
 
@@ -5067,9 +5123,10 @@ Last update: 2023-12-18 11:49:53 UTC
 
 1. There are no keywords in 'package.json'. We would use them as tags on the module list page.
 2. Recommendation: Found `jshint` in file `Gruntfile.js`: Replace "jshint" by "eslint".
-3. Warning: No LICENSE file.
-4. Recommendation: Replace eslintrc by new flat config.
-5. The branch name is 'master'. Consider renaming it to 'main'.
+3. Deprecated: Found `"grunt"` in file `package.json`: Grunt is practically unmaintained. Move on to something better.
+4. Warning: No LICENSE file.
+5. Recommendation: Replace eslintrc by new flat config.
+6. The branch name is 'master'. Consider renaming it to 'main'.
 
 ### [MMM-nyc-transit by elaniobro](https://github.com/elaniobro/MMM-nyc-transit)
 
@@ -5088,7 +5145,9 @@ Last update: 2023-12-18 11:49:53 UTC
 5. Typo: Found `Magic Mirror` in file `MMM-ObjectBlocks.js`: Replace it with `MagicMirror²`.
 6. Typo: Found `Magic Mirror` in file `README.md`: Replace it with `MagicMirror²`.
 7. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
-8. The branch name is 'master'. Consider renaming it to 'main'.
+8. Deprecated: Found `"grunt"` in file `package.json`: Grunt is practically unmaintained. Move on to something better.
+9. Deprecated: Found `"grunt"` in file `package.json`: Grunt is practically unmaintained. Move on to something better.
+10. The branch name is 'master'. Consider renaming it to 'main'.
 
 ### [MMM-OClock by eouia](https://github.com/eouia/MMM-OClock)
 
@@ -5120,7 +5179,8 @@ Last update: 2023-12-18 11:49:53 UTC
 2. Typo: Found `Magic Mirror` in file `MMM-octoprint.js`: Replace it with `MagicMirror²`.
 3. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
 4. Recommendation: Found `require("fetch")` in file `node_helper.js`: Replace it with built-in fetch.
-5. Recommendation: Replace eslintrc by new flat config.
+5. Deprecated: Found `"grunt"` in file `package.json`: Grunt is practically unmaintained. Move on to something better.
+6. Recommendation: Replace eslintrc by new flat config.
 
 ### [MMM-oebb-station-board by mscharl](https://github.com/mscharl/MMM-oebb-station-board)
 
@@ -5171,9 +5231,10 @@ Last update: 2023-12-18 11:49:53 UTC
 5. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
 6. Deprecated: Found `require('request')` in file `node_helper.js`: Replace it with built-in fetch.
 7. Recommendation: Found `axios` in file `node_helper.js`: Replace it with built-in fetch.
-8. Recommendation: Found `axios` in file `package.json`: Replace it with built-in fetch.
-9. Recommendation: Replace eslintrc by new flat config.
-10. The branch name is 'master'. Consider renaming it to 'main'.
+8. Deprecated: Found `"grunt"` in file `package.json`: Grunt is practically unmaintained. Move on to something better.
+9. Recommendation: Found `axios` in file `package.json`: Replace it with built-in fetch.
+10. Recommendation: Replace eslintrc by new flat config.
+11. The branch name is 'master'. Consider renaming it to 'main'.
 
 ### [MMM-OneTracker by seeshaughnessy](https://github.com/seeshaughnessy/MMM-OneTracker)
 
@@ -5302,8 +5363,9 @@ Last update: 2023-12-18 11:49:53 UTC
 3. Recommendation: Found `jshint` in file `Gruntfile.js`: Replace "jshint" by "eslint".
 4. Typo: Found `Magic Mirror` in file `MMM-Oura.js`: Replace it with `MagicMirror²`.
 5. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
-6. Recommendation: Replace eslintrc by new flat config.
-7. The branch name is 'master'. Consider renaming it to 'main'.
+6. Deprecated: Found `"grunt"` in file `package.json`: Grunt is practically unmaintained. Move on to something better.
+7. Recommendation: Replace eslintrc by new flat config.
+8. The branch name is 'master'. Consider renaming it to 'main'.
 
 ### [MMM-Oura2 by themox](https://github.com/themox/MMM-Oura2)
 
@@ -5542,7 +5604,7 @@ Last update: 2023-12-18 11:49:53 UTC
 
 1. The branch name is 'master'. Consider renaming it to 'main'.
 2. Information: There are updates for 1 dependencie(s):
-   -  esbuild  ^0.19.8  →  ^0.19.9
+   -  esbuild  ^0.19.8  →  ^0.19.10
 
 
 ### [MMM-PIR by mboskamp](https://github.com/mboskamp/MMM-PIR)
@@ -5850,8 +5912,9 @@ Last update: 2023-12-18 11:49:53 UTC
 5. Typo: Found `Magic Mirror` in file `MMM-Property-Managed.js`: Replace it with `MagicMirror²`.
 6. Recommendation: Found `XMLHttpRequest` in file `MMM-Property-Managed.js`: Replace it with built-in fetch.
 7. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
-8. Recommendation: Replace eslintrc by new flat config.
-9. The branch name is 'master'. Consider renaming it to 'main'.
+8. Deprecated: Found `"grunt"` in file `package.json`: Grunt is practically unmaintained. Move on to something better.
+9. Recommendation: Replace eslintrc by new flat config.
+10. The branch name is 'master'. Consider renaming it to 'main'.
 
 ### [MMM-ProxyImage by daxiang28](https://github.com/daxiang28/MMM-ProxyImage)
 
@@ -6311,8 +6374,9 @@ Last update: 2023-12-18 11:49:53 UTC
 1. There are no keywords in 'package.json'. We would use them as tags on the module list page.
 2. No image found.
 3. Recommendation: Found `jshint` in file `Gruntfile.js`: Replace "jshint" by "eslint".
-4. Warning: No LICENSE file.
-5. The branch name is 'master'. Consider renaming it to 'main'.
+4. Deprecated: Found `"grunt"` in file `package.json`: Grunt is practically unmaintained. Move on to something better.
+5. Warning: No LICENSE file.
+6. The branch name is 'master'. Consider renaming it to 'main'.
 
 ### [MMM-RSS-FEED by Taolanoz](https://github.com/Taolanoz/MMM-RSS-FEED)
 
@@ -6361,7 +6425,8 @@ Last update: 2023-12-18 11:49:53 UTC
 5. Typo: Found `Magic Mirror` in file `RubishCollection.js`: Replace it with `MagicMirror²`.
 6. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
 7. Deprecated: Found `require('request')` in file `node_helper.js`: Replace it with built-in fetch.
-8. The branch name is 'master'. Consider renaming it to 'main'.
+8. Deprecated: Found `"grunt"` in file `package.json`: Grunt is practically unmaintained. Move on to something better.
+9. The branch name is 'master'. Consider renaming it to 'main'.
 
 ### [MMM-Russianwarship by uncleLem](https://github.com/uncleLem/MMM-Russianwarship)
 
@@ -6452,8 +6517,9 @@ Last update: 2023-12-18 11:49:53 UTC
 3. Recommendation: Found `jshint` in file `Gruntfile.js`: Replace "jshint" by "eslint".
 4. Typo: Found `Magic Mirror` in file `MMM-SE-Reputation.js`: Replace it with `MagicMirror²`.
 5. Recommendation: Found `XMLHttpRequest` in file `MMM-SE-Reputation.js`: Replace it with built-in fetch.
-6. Recommendation: Replace eslintrc by new flat config.
-7. The branch name is 'master'. Consider renaming it to 'main'.
+6. Deprecated: Found `"grunt"` in file `package.json`: Grunt is practically unmaintained. Move on to something better.
+7. Recommendation: Replace eslintrc by new flat config.
+8. The branch name is 'master'. Consider renaming it to 'main'.
 
 ### [MMM-SearchLight by mykle1](https://github.com/mykle1/MMM-SearchLight)
 
@@ -6807,7 +6873,8 @@ Last update: 2023-12-18 11:49:53 UTC
 5. Typo: Found `MagicMirror2` in file `README.md`: Replace it with `MagicMirror²`.
 6. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
 7. Deprecated: Found `require("request")` in file `node_helper.js`: Replace it with built-in fetch.
-8. Recommendation: Replace eslintrc by new flat config.
+8. Deprecated: Found `"grunt"` in file `package.json`: Grunt is practically unmaintained. Move on to something better.
+9. Recommendation: Replace eslintrc by new flat config.
 
 ### [MMM-SolarEdge by bertieuk](https://github.com/bertieuk/MMM-SolarEdge)
 
@@ -6980,8 +7047,9 @@ Last update: 2023-12-18 11:49:53 UTC
 
 1. There are no keywords in 'package.json'. We would use them as tags on the module list page.
 2. Recommendation: Found `jshint` in file `Gruntfile.js`: Replace "jshint" by "eslint".
-3. Recommendation: Replace eslintrc by new flat config.
-4. The branch name is 'master'. Consider renaming it to 'main'.
+3. Deprecated: Found `"grunt"` in file `package.json`: Grunt is practically unmaintained. Move on to something better.
+4. Recommendation: Replace eslintrc by new flat config.
+5. The branch name is 'master'. Consider renaming it to 'main'.
 
 ### [MMM-Stock by hakanmhmd](https://github.com/hakanmhmd/MMM-Stock)
 
@@ -7057,8 +7125,9 @@ Last update: 2023-12-18 11:49:53 UTC
 4. Recommendation: Found `jshint` in file `Gruntfile.js`: Replace "jshint" by "eslint".
 5. Typo: Found `Magic Mirror` in file `MMM-SwissCommute.js`: Replace it with `MagicMirror²`.
 6. Recommendation: Found `XMLHttpRequest` in file `MMM-SwissCommute.js`: Replace it with built-in fetch.
-7. Recommendation: Replace eslintrc by new flat config.
-8. The branch name is 'master'. Consider renaming it to 'main'.
+7. Deprecated: Found `"grunt"` in file `package.json`: Grunt is practically unmaintained. Move on to something better.
+8. Recommendation: Replace eslintrc by new flat config.
+9. The branch name is 'master'. Consider renaming it to 'main'.
 
 ### [MMM-SwissLakeTemperature by roufri](https://github.com/roufri/MMM-SwissLakeTemperature)
 
@@ -7071,7 +7140,8 @@ Last update: 2023-12-18 11:49:53 UTC
 2. There are no keywords in 'package.json'. We would use them as tags on the module list page.
 3. Typo: Found `Magic Mirror` in file `MMM-SwissStationboard.js`: Replace it with `MagicMirror²`.
 4. Recommendation: Found `XMLHttpRequest` in file `MMM-SwissStationboard.js`: Replace it with built-in fetch.
-5. The branch name is 'master'. Consider renaming it to 'main'.
+5. Deprecated: Found `"grunt"` in file `package.json`: Grunt is practically unmaintained. Move on to something better.
+6. The branch name is 'master'. Consider renaming it to 'main'.
 
 ### [MMM-swisstransport by Bangee44](https://github.com/Bangee44/MMM-swisstransport)
 
@@ -7106,7 +7176,8 @@ Last update: 2023-12-18 11:49:53 UTC
 1. Recommendation: Found `jshint` in file `Gruntfile.js`: Replace "jshint" by "eslint".
 2. Typo: Found `Magic Mirror` in file `MMM-SystemMonitor.js`: Replace it with `MagicMirror²`.
 3. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
-4. Recommendation: Replace eslintrc by new flat config.
+4. Deprecated: Found `"grunt"` in file `package.json`: Grunt is practically unmaintained. Move on to something better.
+5. Recommendation: Replace eslintrc by new flat config.
 
 ### [MMM-SystemStats by BenRoe](https://github.com/BenRoe/MMM-SystemStats)
 
@@ -7323,7 +7394,8 @@ Last update: 2023-12-18 11:49:53 UTC
 2. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
 3. Deprecated: Found `require("request")` in file `node_helper.js`: Replace it with built-in fetch.
 4. Deprecated: Found `"electron-rebuild"` in file `package.json`: Replace it with `@electron/rebuild`
-5. The branch name is 'master'. Consider renaming it to 'main'.
+5. Deprecated: Found `"grunt"` in file `package.json`: Grunt is practically unmaintained. Move on to something better.
+6. The branch name is 'master'. Consider renaming it to 'main'.
 
 ### [MMM-Todoist by cbrooker](https://github.com/cbrooker/MMM-Todoist)
 
@@ -7342,8 +7414,9 @@ Last update: 2023-12-18 11:49:53 UTC
 
 1. There are no keywords in 'package.json'. We would use them as tags on the module list page.
 2. Recommendation: Found `jshint` in file `Gruntfile.js`: Replace "jshint" by "eslint".
-3. Recommendation: Replace eslintrc by new flat config.
-4. The branch name is 'master'. Consider renaming it to 'main'.
+3. Deprecated: Found `"grunt"` in file `package.json`: Grunt is practically unmaintained. Move on to something better.
+4. Recommendation: Replace eslintrc by new flat config.
+5. The branch name is 'master'. Consider renaming it to 'main'.
 
 ### [MMM-TomTomTrafficIncidents by Travelbacon](https://github.com/Travelbacon/MMM-TomTomTrafficIncidents)
 
@@ -7418,8 +7491,10 @@ Last update: 2023-12-18 11:49:53 UTC
 3. Recommendation: Found `jshint` in file `Gruntfile.js`: Replace "jshint" by "eslint".
 4. Typo: Found `Magic Mirror` in file `MMM-Trains-Trafikverket.js`: Replace it with `MagicMirror²`.
 5. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
-6. Recommendation: Replace eslintrc by new flat config.
-7. The branch name is 'master'. Consider renaming it to 'main'.
+6. Deprecated: Found `"grunt"` in file `package.json`: Grunt is practically unmaintained. Move on to something better.
+7. Deprecated: Found `"grunt"` in file `package.json`: Grunt is practically unmaintained. Move on to something better.
+8. Recommendation: Replace eslintrc by new flat config.
+9. The branch name is 'master'. Consider renaming it to 'main'.
 
 ### [MMM-TrainTimesRTT by tticehurst](https://github.com/tticehurst/MMM-TrainTimesRTT)
 
@@ -7653,16 +7728,18 @@ Last update: 2023-12-18 11:49:53 UTC
 2. Typo: Found `Magic Mirror` in file `MMM-uptimekuma.js`: Replace it with `MagicMirror²`.
 3. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
 4. Recommendation: Found `axios` in file `node_helper.js`: Replace it with built-in fetch.
-5. Recommendation: Found `axios` in file `package.json`: Replace it with built-in fetch.
-6. The branch name is 'master'. Consider renaming it to 'main'.
+5. Deprecated: Found `"grunt"` in file `package.json`: Grunt is practically unmaintained. Move on to something better.
+6. Recommendation: Found `axios` in file `package.json`: Replace it with built-in fetch.
+7. The branch name is 'master'. Consider renaming it to 'main'.
 
 ### [MMM-uptimerobot by mrVragec](https://github.com/mrVragec/MMM-uptimerobot)
 
 1. Recommendation: Found `jshint` in file `Gruntfile.js`: Replace "jshint" by "eslint".
 2. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
 3. Deprecated: Found `require('request')` in file `node_helper.js`: Replace it with built-in fetch.
-4. Typo: Found `Magic Mirror` in file `uptimerobot.js`: Replace it with `MagicMirror²`.
-5. The branch name is 'master'. Consider renaming it to 'main'.
+4. Deprecated: Found `"grunt"` in file `package.json`: Grunt is practically unmaintained. Move on to something better.
+5. Typo: Found `Magic Mirror` in file `uptimerobot.js`: Replace it with `MagicMirror²`.
+6. The branch name is 'master'. Consider renaming it to 'main'.
 
 ### [MMM-UserPresenceToMQTT by olexs](https://github.com/olexs/MMM-UserPresenceToMQTT)
 
@@ -7836,8 +7913,9 @@ Last update: 2023-12-18 11:49:53 UTC
 5. Typo: Found `Magic Mirror` in file `README.md`: Replace it with `MagicMirror²`.
 6. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
 7. Deprecated: Found `require("request")` in file `node_helper.js`: Replace it with built-in fetch.
-8. Recommendation: Replace eslintrc by new flat config.
-9. The branch name is 'master'. Consider renaming it to 'main'.
+8. Deprecated: Found `"grunt"` in file `package.json`: Grunt is practically unmaintained. Move on to something better.
+9. Recommendation: Replace eslintrc by new flat config.
+10. The branch name is 'master'. Consider renaming it to 'main'.
 
 ### [MMM-VTA-Live by nigel-daniels](https://github.com/nigel-daniels/MMM-VTA-Live)
 
@@ -7959,8 +8037,10 @@ Last update: 2023-12-18 11:49:53 UTC
 4. Typo: Found `Magic Mirror` in file `MMM-WeatherAlerts.js`: Replace it with `MagicMirror²`.
 5. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
 6. Found directory `node_modules`. This shouldn't be uploaded. Add `node_modules/`to `.gitignore`.
-7. Typo: Found `MagicMirror2` in file `README.md`: Replace it with `MagicMirror²`.
-8. Recommendation: Replace eslintrc by new flat config.
+7. Deprecated: Found `"grunt"` in file `package.json`: Grunt is practically unmaintained. Move on to something better.
+8. Typo: Found `MagicMirror2` in file `README.md`: Replace it with `MagicMirror²`.
+9. Deprecated: Found `"grunt"` in file `package.json`: Grunt is practically unmaintained. Move on to something better.
+10. Recommendation: Replace eslintrc by new flat config.
 
 ### [MMM-WeatherBackground by BrianHepler](https://github.com/BrianHepler/MMM-WeatherBackground)
 
@@ -8062,7 +8142,8 @@ Last update: 2023-12-18 11:49:53 UTC
 4. Typo: Found `Magic Mirror` in file `MMM-WH2600.js`: Replace it with `MagicMirror²`.
 5. Typo: Found `MagicMirror2` in file `README.md`: Replace it with `MagicMirror²`.
 6. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
-7. Recommendation: Replace eslintrc by new flat config.
+7. Deprecated: Found `"grunt"` in file `package.json`: Grunt is practically unmaintained. Move on to something better.
+8. Recommendation: Replace eslintrc by new flat config.
 
 ### [MMM-WhisperGPT by Nikro](https://github.com/Nikro/MMM-WhisperGPT)
 
@@ -8072,8 +8153,9 @@ Last update: 2023-12-18 11:49:53 UTC
 4. Recommendation: Found `jshint` in file `Gruntfile.js`: Replace "jshint" by "eslint".
 5. Typo: Found `Magic Mirror` in file `MMM-WhisperGPT.js`: Replace it with `MagicMirror²`.
 6. Recommendation: Found `axios` in file `node_helper.js`: Replace it with built-in fetch.
-7. Recommendation: Found `axios` in file `package.json`: Replace it with built-in fetch.
-8. Recommendation: Replace eslintrc by new flat config.
+7. Deprecated: Found `"grunt"` in file `package.json`: Grunt is practically unmaintained. Move on to something better.
+8. Recommendation: Found `axios` in file `package.json`: Replace it with built-in fetch.
+9. Recommendation: Replace eslintrc by new flat config.
 
 ### [MMM-Widget by ulrichwisser](https://github.com/ulrichwisser/MMM-Widget)
 
@@ -8317,8 +8399,9 @@ Last update: 2023-12-18 11:49:53 UTC
 4. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
 5. Recommendation: Found `"node-fetch"` in file `node_helper.js`: Replace it with built-in fetch.
 6. Deprecated: Found `stylelint-config-prettier` in file `package.json`: Update `stylelint` and remove `stylelint-config-prettier`.
-7. Recommendation: Found `"node-fetch"` in file `package.json`: Replace it with built-in fetch.
-8. Recommendation: Replace eslintrc by new flat config.
+7. Deprecated: Found `"grunt"` in file `package.json`: Grunt is practically unmaintained. Move on to something better.
+8. Recommendation: Found `"node-fetch"` in file `package.json`: Replace it with built-in fetch.
+9. Recommendation: Replace eslintrc by new flat config.
 
 ### [MMM-ZAPTEC by PierreGode](https://github.com/PierreGode/MMM-ZAPTEC)
 

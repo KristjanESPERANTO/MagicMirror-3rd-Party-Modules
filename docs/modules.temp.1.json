@@ -1482,9 +1482,9 @@
   },
   {
     "name": "MMM-Dad-Jokes",
-    "url": "https://github.com/echang15/MMM-Dad-Jokes",
-    "id": "echang15/MMM-Dad-Jokes",
-    "maintainer": "echang15",
+    "url": "https://github.com/brucetony/MMM-Dad-Jokes",
+    "id": "brucetony/MMM-Dad-Jokes",
+    "maintainer": "brucetony",
     "maintainerURL": "",
     "description": "Simple display of dad jokes from icanhazdadjoke.com.",
     "issues": []
@@ -1994,9 +1994,9 @@
   },
   {
     "name": "MMM-EFA-departures",
-    "url": "https://github.com/Dom1n1c/MMM-EFA-departures",
-    "id": "Dom1n1c/MMM-EFA-departures",
-    "maintainer": "Dom1n1c",
+    "url": "https://github.com/sourceforge807/MMM-EFA-departures",
+    "id": "sourceforge807/MMM-EFA-departures",
+    "maintainer": "sourceforge807",
     "maintainerURL": "",
     "description": "Station monitor for local transport companies using the EFA system.",
     "issues": []
@@ -3604,6 +3604,15 @@
     "maintainer": "AdamMoses-GitHub",
     "maintainerURL": "",
     "description": "Displays images one-at-a-time from local folders.",
+    "issues": []
+  },
+  {
+    "name": "MMM-ImagesPhotos",
+    "url": "https://github.com/sdetweil/MMM-ImagesPhotos",
+    "id": "sdetweil/MMM-ImagesPhotos",
+    "maintainer": "sdetweil",
+    "maintainerURL": "",
+    "description": "Show images and photos.",
     "issues": []
   },
   {

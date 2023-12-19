@@ -77,6 +77,10 @@ def check_modules():
             "name": "Replace it with `@electron/rebuild`",
             "category": "Deprecated",
         },
+        '"grunt"': {
+            "name": "Grunt is practically unmaintained. Move on to something better.",
+            "category": "Deprecated",
+        },
         "'node-fetch'": {
             "name": "Replace it with built-in fetch.",
             "category": "Recommendation",
