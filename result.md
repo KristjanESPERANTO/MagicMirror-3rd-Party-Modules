@@ -1,6 +1,6 @@
 # Result of the module analysis
 
-Last update: 2023-12-19 22:03:53 UTC
+Last update: 2023-12-20 15:31:03 UTC
 
 ## Statistics
 
@@ -8,8 +8,8 @@ Last update: 2023-12-19 22:03:53 UTC
 |:---------------------|:--------:|
 | modules analyzed     |   1079   |
 | maintainer           |    622   |
-| modules with issues  |   1071   |
-| issues               |   5139   |
+| modules with issues  |   1070   |
+| issues               |   5136   |
 | modules at github    |   1070   |
 | modules at gitlab    |      8   |
 | modules at bitbucket |      1   |
@@ -3532,15 +3532,13 @@ Last update: 2023-12-19 22:03:53 UTC
 ### [MMM-LKY-TIC by djey47](https://github.com/djey47/MMM-LKY-TIC)
 
 1. `package.json` issue: No repository field.
-2. `package.json` issue: No license field.
-3. Recommendation: Found `uses: actions/checkout@v3` in file `ci.yml`: Replace it with v4.
-4. Typo: Found `MagicMirror2` in file `README.md`: Replace it with `MagicMirror²`.
-5. Typo: Found `MagicMirror2` in file `package.json`: Replace it with `MagicMirror²`.
-6. Typo: Found `Magic Mirror` in file `module.ts`: Replace it with `MagicMirror²`.
-7. Typo: Found `Magic Mirror` in file `helper.ts`: Replace it with `MagicMirror²`.
-8. Typo: Found `Magic Mirror` in file `helper_impl.ts`: Replace it with `MagicMirror²`.
-9. Typo: Found `MagicMirror2` in file `init-mmm.ts`: Replace it with `MagicMirror²`.
-10. Recommendation: Replace eslintrc by new flat config.
+2. Recommendation: Found `uses: actions/checkout@v3` in file `ci.yml`: Replace it with v4.
+3. Typo: Found `MagicMirror2` in file `README.md`: Replace it with `MagicMirror²`.
+4. Typo: Found `Magic Mirror` in file `module.ts`: Replace it with `MagicMirror²`.
+5. Typo: Found `Magic Mirror` in file `helper.ts`: Replace it with `MagicMirror²`.
+6. Typo: Found `Magic Mirror` in file `helper_impl.ts`: Replace it with `MagicMirror²`.
+7. Typo: Found `MagicMirror2` in file `init-mmm.ts`: Replace it with `MagicMirror²`.
+8. Recommendation: Replace eslintrc by new flat config.
 
 ### [MMM-LoadShedding by qunu](https://github.com/qunu/MMM-LoadShedding)
 
@@ -5927,10 +5925,6 @@ Last update: 2023-12-19 22:03:53 UTC
 
 1. Recommendation: Replace eslintrc by new flat config.
 2. The branch name is 'master'. Consider renaming it to 'main'.
-
-### [MMM-PublicTransportHafas by KristjanESPERANTO](https://github.com/KristjanESPERANTO/MMM-PublicTransportHafas)
-
-1. Recommendation: Replace eslintrc by new flat config.
 
 ### [MMM-PublicTransportVVO by ChristianGeie](https://github.com/ChristianGeie/MMM-PublicTransportVVO)
 

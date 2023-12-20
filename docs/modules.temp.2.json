@@ -6163,15 +6163,16 @@
     "maintainerURL": "https://github.com/djey47",
     "description": "Module to display info about home power supply - FRANCE TELEINFO ENEDIS.",
     "issues": [
-      "`package.json` issue: No repository field.",
-      "`package.json` issue: No license field."
+      "`package.json` issue: No repository field."
     ],
     "tags": [
       "linky",
       "enedis",
       "tic",
       "teleinfo"
-    ]
+    ],
+    "license": "MIT",
+    "image": "doc-shots-Sample1.jpg"
   },
   {
     "name": "MMM-LoadShedding",
