@@ -196,7 +196,7 @@
     "maintainer": "fewieden",
     "maintainerURL": "",
     "description": "Alarm Clock Module (touch and non-touch).",
-    "issues": 3,
+    "issues": 4,
     "tags": [
       "alarm clock"
     ],
@@ -611,7 +611,7 @@
     "maintainer": "stonecrown",
     "maintainerURL": "",
     "description": "Displays the current info for scheduled sailings of specified BC Ferries route.",
-    "issues": 5,
+    "issues": 6,
     "tags": [
       "transport",
       "ferry",
@@ -755,7 +755,7 @@
     "maintainer": "BrianHepler",
     "maintainerURL": "https://github.com/BrianHepler",
     "description": "Display submissions to BirdNET, Cornell University's machine learning project to identify birds by their song.",
-    "issues": 4,
+    "issues": 5,
     "last_commit": "2023-10-12"
   },
   {
@@ -944,7 +944,7 @@
     "maintainer": "CptMeetKat",
     "maintainerURL": "https://github.com/CptMeetKat",
     "description": "Display ideas for when you're bored to keep your boring life fresh.",
-    "issues": 4,
+    "issues": 5,
     "last_commit": "2023-03-30"
   },
   {
@@ -954,7 +954,7 @@
     "maintainer": "justjim1220",
     "maintainerURL": "",
     "description": "Module request to show the date you must be born before to enter premises.",
-    "issues": 2,
+    "issues": 3,
     "last_commit": "2019-03-24"
   },
   {
@@ -1009,7 +1009,7 @@
     "maintainer": "jsteel715",
     "maintainerURL": "",
     "description": "Displays information about beers available from Brewdog.",
-    "issues": 6,
+    "issues": 7,
     "last_commit": "2019-07-30"
   },
   {
@@ -1513,7 +1513,7 @@
     "maintainer": "flo80",
     "maintainerURL": "",
     "description": "Directly cast from the MagicMirror\u00b2 server to a chromecast.",
-    "issues": 5,
+    "issues": 6,
     "last_commit": "2023-03-05"
   },
   {
@@ -1712,7 +1712,7 @@
     "maintainer": "sheyabernstein",
     "maintainerURL": "",
     "description": "Display internet connection status.",
-    "issues": 3,
+    "issues": 4,
     "tags": [
       "magicmirror internet connection"
     ],
@@ -1769,7 +1769,7 @@
     "maintainer": "bogomips",
     "maintainerURL": "",
     "description": "Display COUP e-scooters around you and sort them by distance. It works for Berlin and other cities.",
-    "issues": 2,
+    "issues": 3,
     "tags": [
       "coup",
       "sooter",
@@ -1993,7 +1993,7 @@
     "maintainer": "werthdavid",
     "maintainerURL": "",
     "description": "Displays the daily Cyanide&amp;Happiness Comic.",
-    "issues": 2,
+    "issues": 3,
     "tags": [
       "cyanide",
       "happiness",
@@ -2121,7 +2121,7 @@
     "maintainer": "anthpham",
     "maintainerURL": "",
     "description": "Display a daily bit of Buddhist wisdom from Thich Nhat Hanh's \"Your True Home\".",
-    "issues": 3,
+    "issues": 4,
     "last_commit": "2020-08-25"
   },
   {
@@ -2131,7 +2131,7 @@
     "maintainer": "andrecarlucci",
     "maintainerURL": "",
     "description": "Displays the daily Dilbert strip.",
-    "issues": 3,
+    "issues": 4,
     "last_commit": "2021-10-13"
   },
   {
@@ -2175,7 +2175,7 @@
     "maintainer": "Blastitt",
     "maintainerURL": "",
     "description": "Displays the daily XKCD web comic.",
-    "issues": 4,
+    "issues": 5,
     "last_commit": "2021-10-19"
   },
   {
@@ -2354,7 +2354,7 @@
     "maintainer": "justjim1220",
     "maintainerURL": "",
     "description": "A vintage-style Digital Alarm Clock integrating MMM-DigClock and MMM-AlarmClock.",
-    "issues": 3,
+    "issues": 4,
     "tags": [
       "digital alarm clock"
     ],
@@ -2415,7 +2415,7 @@
     "maintainer": "gberg927",
     "maintainerURL": "https://github.com/gberg927",
     "description": "Displays ride wait times at the Disney World Parks.",
-    "issues": 7,
+    "issues": 8,
     "license": "MIT",
     "image": "wait-times-demo.jpg",
     "last_commit": "2023-08-07"
@@ -2738,7 +2738,7 @@
     "maintainer": "sourceforge807",
     "maintainerURL": "",
     "description": "Station monitor for local transport companies using the EFA system.",
-    "issues": 5,
+    "issues": 6,
     "tags": [
       "efa",
       "departures",
@@ -2758,7 +2758,7 @@
     "maintainer": "moinahmed001",
     "maintainerURL": "",
     "description": "Displays praying times from East London Mosque in London.",
-    "issues": 5,
+    "issues": 6,
     "last_commit": "2019-05-09"
   },
   {
@@ -2828,7 +2828,7 @@
     "maintainer": "TheRaulXP",
     "maintainerURL": "",
     "description": "Get estimations for bus stops in the city of Valencia (Spain).",
-    "issues": 3,
+    "issues": 4,
     "tags": [
       "bus stop",
       "emt valencia",
@@ -3036,7 +3036,7 @@
     "maintainer": "jimbydude",
     "maintainerURL": "https://github.com/jimbydude",
     "description": "This is a fork of Ebens module above. This version can handle multi-user and uses MMM-Face-Reco-DNN to hide/show modules based on user logged in.",
-    "issues": 6,
+    "issues": 7,
     "license": "MIT",
     "image": "img-readme-face-recognition-guest-smai.jpg",
     "last_commit": "2021-07-18"
@@ -3066,7 +3066,7 @@
     "maintainer": "EbenKouao",
     "maintainerURL": "https://github.com/EbenKouao",
     "description": "This module allows you to access profiles using face recognition. This works on the back of OpenCV face recognition module. Program this script to control applicances e.g. Smart Plugs, or lights based on an individual's face profile being recognized.",
-    "issues": 3,
+    "issues": 4,
     "last_commit": "2020-06-12"
   },
   {
@@ -3293,7 +3293,7 @@
     "maintainer": "BenRoe",
     "maintainerURL": "",
     "description": "Display Readings/Values from your FHEM device like temperature or humidity.",
-    "issues": 6,
+    "issues": 7,
     "tags": [
       "fhem",
       "home automation"
@@ -3701,7 +3701,7 @@
     "maintainer": "fewieden",
     "maintainerURL": "",
     "description": "Display Gas Station prices.",
-    "issues": 10,
+    "issues": 11,
     "tags": [
       "fuel price",
       "gas station"
@@ -3750,7 +3750,7 @@
     "maintainer": "raywo",
     "maintainerURL": "",
     "description": "Displays a grid simulating the <a target=\"_blank\" href=\"https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life\">Game of Life</a>.",
-    "issues": 4,
+    "issues": 5,
     "tags": [
       "game of life"
     ],
@@ -4354,7 +4354,7 @@
     "maintainer": "aserramonner",
     "maintainerURL": "",
     "description": "An alternate home-assistant integration.",
-    "issues": 4,
+    "issues": 5,
     "tags": [
       "home-assistant"
     ],
@@ -4369,7 +4369,7 @@
     "maintainer": "MichaelF1",
     "maintainerURL": "",
     "description": "Display the temperature and humidity of the I2C-based HDC1080-sensor.",
-    "issues": 4,
+    "issues": 5,
     "last_commit": "2018-05-19"
   },
   {
@@ -4487,7 +4487,7 @@
     "maintainer": "winstonma",
     "maintainerURL": "https://github.com/winstonma",
     "description": "Display Estimated Time of Arrival (ETA) of Hong Kong public transport.",
-    "issues": 0,
+    "issues": 1,
     "tags": [
       "kmb",
       "public transport",
@@ -4655,7 +4655,7 @@
     "maintainer": "spitzlbergerj",
     "maintainerURL": "https://github.com/spitzlbergerj",
     "description": "Shows values from HomeMatic smart home radiator and wall thermostats.",
-    "issues": 5,
+    "issues": 6,
     "last_commit": "2022-11-14"
   },
   {
@@ -4861,7 +4861,7 @@
     "maintainer": "FalseIlyu",
     "maintainerURL": "https://github.com/FalseIlyu",
     "description": "Display next bus/tramway/metro/train in the Paris/Ile-de-France r\u00e9gion in France using IDFM API.",
-    "issues": 5,
+    "issues": 6,
     "tags": [
       "idf-transport",
       "public transport",
@@ -5126,7 +5126,7 @@
     "maintainer": "ianmccon",
     "maintainerURL": "",
     "description": "Displays energy usage history for your Octopus Energy account. For use if you are on the Intelligent Octopus tarrif. Based on MMM-OctoMon.",
-    "issues": 3,
+    "issues": 4,
     "last_commit": "2023-04-12"
   },
   {
@@ -5152,7 +5152,7 @@
     "maintainer": "ioBroker",
     "maintainerURL": "",
     "description": "Display ioBroker values.",
-    "issues": 7,
+    "issues": 8,
     "tags": [
       "iobroker",
       "iot",
@@ -5178,7 +5178,7 @@
     "maintainer": "fewieden",
     "maintainerURL": "",
     "description": "Display IPv4/IPv6 Network Address.",
-    "issues": 3,
+    "issues": 4,
     "tags": [
       "network interfaces",
       "ip"
@@ -5595,7 +5595,7 @@
     "maintainer": "yo-less",
     "maintainerURL": "",
     "description": "Station monitor for the Karlsruhe/Germany local transport (KVV) bus, tram and train system.",
-    "issues": 4,
+    "issues": 5,
     "tags": [
       "kvv",
       "vbk",
@@ -6288,7 +6288,7 @@
     "maintainer": "schnibel",
     "maintainerURL": "",
     "description": "Add one to many memo notes (\"post-it look &amp; feel\"). Content is manageable through HTTP get requests.",
-    "issues": 7,
+    "issues": 8,
     "last_commit": "2019-01-06"
   },
   {
@@ -6333,7 +6333,7 @@
     "maintainer": "ashishtank",
     "maintainerURL": "https://github.com/ashishtank",
     "description": "Displays EV/Fuel status and Range of Mercedes cars.",
-    "issues": 6,
+    "issues": 7,
     "tags": [
       "mercedes"
     ],
@@ -6734,7 +6734,7 @@
     "maintainer": "szech",
     "maintainerURL": "",
     "description": "Displays pollen forecast for your area in the UK.",
-    "issues": 4,
+    "issues": 6,
     "tags": [
       "pollen",
       "count",
@@ -6988,7 +6988,7 @@
     "maintainer": "fewieden",
     "maintainerURL": "",
     "description": "Display information about upcoming movies (title, cover, genre, rating, plot) or discover movies with custom filters.",
-    "issues": 6,
+    "issues": 7,
     "tags": [
       "upcoming movies"
     ],
@@ -7491,7 +7491,7 @@
     "maintainer": "justjim1220",
     "maintainerURL": "",
     "description": "A video player with buttons to select a video to play.",
-    "issues": 4,
+    "issues": 5,
     "tags": [
       "video",
       "player"
@@ -7812,7 +7812,7 @@
     "maintainer": "PoOwAa",
     "maintainerURL": "",
     "description": "Display a solid wifi logo as network signal based on ping speed.",
-    "issues": 3,
+    "issues": 4,
     "tags": [
       "network"
     ],
@@ -7827,7 +7827,7 @@
     "maintainer": "slametps",
     "maintainerURL": "https://github.com/slametps",
     "description": "Display network connection status (ping, download speed, upload speed).",
-    "issues": 2,
+    "issues": 3,
     "tags": [
       "networkconnection",
       "network",
@@ -7920,7 +7920,7 @@
     "maintainer": "yo-less",
     "maintainerURL": "",
     "description": "Station monitor for the nextbike bike-sharing network.",
-    "issues": 5,
+    "issues": 6,
     "tags": [
       "nextbike",
       "bike sharing"
@@ -7960,7 +7960,7 @@
     "maintainer": "CptMeetKat",
     "maintainerURL": "https://github.com/CptMeetKat",
     "description": "Display departures from Sydney train stations in NSW, Australia.",
-    "issues": 6,
+    "issues": 7,
     "last_commit": "2023-04-01"
   },
   {
@@ -7970,7 +7970,7 @@
     "maintainer": "fewieden",
     "maintainerURL": "",
     "description": "Display scores of National Football League (optional voice-control).",
-    "issues": 7,
+    "issues": 8,
     "tags": [
       "nfl"
     ],
@@ -8143,7 +8143,7 @@
     "maintainer": "crice009",
     "maintainerURL": "https://github.com/crice009",
     "description": "Graph daily low and high tide predictions for a given NOAA tide station, and measured data as it is reported. Data is pulled from <a target=\"_blank\" href=\"https://tidesandcurrents.noaa.gov/map/index.html\">NOAA-tidesandcurrents</a>. Data is a free service - no API key.",
-    "issues": 6,
+    "issues": 7,
     "tags": [
       "tide",
       "high water",
@@ -8219,7 +8219,7 @@
     "maintainer": "raywo",
     "maintainerURL": "",
     "description": "Display the song you are currently listening to on Spotify.",
-    "issues": 3,
+    "issues": 5,
     "tags": [
       "spotify"
     ],
@@ -8307,7 +8307,7 @@
     "maintainer": "christopherpthomas",
     "maintainerURL": "",
     "description": "Displays energy usage history for your Octopus Energy account.",
-    "issues": 4,
+    "issues": 5,
     "last_commit": "2022-03-04"
   },
   {
@@ -8479,7 +8479,7 @@
     "maintainer": "Fabrizz",
     "maintainerURL": "https://github.com/Fabrizz",
     "description": "Highly customizable module that displays what you are listening to in Spotify. Compatible with MMM-LiveLyrics and DynamicTheming.",
-    "issues": 7,
+    "issues": 8,
     "tags": [
       "spotify",
       "spotify connect"
@@ -8838,7 +8838,7 @@
     "maintainer": "ytmytm",
     "maintainerURL": "",
     "description": "Station monitor for tram and bus system in Pozna\u0144.",
-    "issues": 2,
+    "issues": 3,
     "tags": [
       "ztm",
       "mpk",
@@ -8978,7 +8978,7 @@
     "maintainer": "sheyabernstein",
     "maintainerURL": "",
     "description": "Display stats from Pi-Hole DNS ad blocking.",
-    "issues": 4,
+    "issues": 5,
     "last_commit": "2023-08-23"
   },
   {
@@ -9026,7 +9026,7 @@
     "maintainer": "fewieden",
     "maintainerURL": "",
     "description": "Display status from website/ip's.",
-    "issues": 3,
+    "issues": 4,
     "tags": [
       "ping",
       "online",
@@ -9392,7 +9392,7 @@
     "maintainer": "reidarw",
     "maintainerURL": "https://github.com/reidarw",
     "description": "Module for showing showing the next post delivery day for your zip code in Norway.",
-    "issues": 5,
+    "issues": 6,
     "last_commit": "2023-05-02"
   },
   {
@@ -9426,7 +9426,7 @@
     "maintainer": "slametps",
     "maintainerURL": "https://github.com/slametps",
     "description": "Displays moslem praying time with Adhan recital.",
-    "issues": 5,
+    "issues": 6,
     "tags": [
       "moslem",
       "islam",
@@ -9601,7 +9601,7 @@
     "maintainer": "alonsourbano",
     "maintainerURL": "",
     "description": "Display local transport for different regions of Finland (Helsinki, H\u00e4meenlinna, Joensuu, Jyv\u00e4skyl\u00e4, Kajaani, Kotka, Kouvola, Kuopio, Lahti, Lappeenranta, Mikkeli, Tampere, Oulu, Rovaniemi, Turku, Vaasa)",
-    "issues": 3,
+    "issues": 4,
     "license": "MIT",
     "image": "docs-FOLI-mfrojxmz.jpg",
     "last_commit": "2022-11-14"
@@ -9943,7 +9943,7 @@
     "maintainer": "kjb085",
     "maintainerURL": "",
     "description": "Displays top level content from Reddit in either headlines or image based display types.",
-    "issues": 10,
+    "issues": 11,
     "license": "ISC",
     "last_commit": "2020-06-25"
   },
@@ -10181,7 +10181,7 @@
     "maintainer": "Com-Lum",
     "maintainerURL": "",
     "description": "Rhein-Main local transport system (RMV) - Departure Monitor.",
-    "issues": 4,
+    "issues": 5,
     "tags": [
       "rmv",
       "frankfurt",
@@ -10275,7 +10275,7 @@
     "maintainer": "jeroenpeters1986",
     "maintainerURL": "https://github.com/jeroenpeters1986",
     "description": "Module which shows when and which type of trash will be collected by Dutch garbage service ROVA.",
-    "issues": 5,
+    "issues": 6,
     "last_commit": "2021-07-04"
   },
   {
@@ -10369,7 +10369,7 @@
     "maintainer": "sebikolon",
     "maintainerURL": "https://github.com/sebikolon/MMM-RVV \"github.com/sebikolon\"",
     "description": "Departure monitor for the RVV (Regensburger Verkehrsverbund) public transport (bus) system (Bavaria/Germany).",
-    "issues": 4,
+    "issues": 5,
     "last_commit": "2021-01-21"
   },
   {
@@ -10379,7 +10379,7 @@
     "maintainer": "reidarw",
     "maintainerURL": "https://github.com/reidarw",
     "description": "Displaying transactions and account balance from Sbanken (Norway).",
-    "issues": 4,
+    "issues": 5,
     "last_commit": "2021-06-03"
   },
   {
@@ -10416,7 +10416,7 @@
     "maintainer": "fewieden",
     "maintainerURL": "",
     "description": "Display scottish premiere league standings.",
-    "issues": 6,
+    "issues": 7,
     "tags": [
       "scottish premier league"
     ],
@@ -10662,7 +10662,7 @@
     "maintainer": "mosesyong",
     "maintainerURL": "https://github.com/mosesyong",
     "description": "Display bus transport info in Singapore.",
-    "issues": 3,
+    "issues": 4,
     "license": "ISC",
     "image": "screenshots-screenshot.jpg",
     "last_commit": "2021-01-31"
@@ -10674,7 +10674,7 @@
     "maintainer": "sheyabernstein",
     "maintainerURL": "",
     "description": "Display shabbat times for the current week and optionally hide all modules.",
-    "issues": 5,
+    "issues": 6,
     "tags": [
       "shabbat",
       "hebrew",
@@ -10749,7 +10749,7 @@
     "maintainer": "fewieden",
     "maintainerURL": "",
     "description": "Display your shipment tracking status.",
-    "issues": 11,
+    "issues": 12,
     "tags": [
       "shipment tracking"
     ],
@@ -10913,7 +10913,7 @@
     "maintainer": "Monkeyanator",
     "maintainerURL": "",
     "description": "Post announcements to your mirror from a designated Slack channel.",
-    "issues": 4,
+    "issues": 5,
     "last_commit": "2018-10-17"
   },
   {
@@ -10942,7 +10942,7 @@
     "maintainer": "jackmeyer",
     "maintainerURL": "",
     "description": "Displays your <a target=\"_blank\" href=\"https://sleeper.com\">Sleeper</a> fantasy football matchup with live updating scores.",
-    "issues": 5,
+    "issues": 6,
     "last_commit": "2023-09-08"
   },
   {
@@ -10952,7 +10952,7 @@
     "maintainer": "sdetweil",
     "maintainerURL": "",
     "description": "Module that uses an external source for motion detection, like a web camera .",
-    "issues": 3,
+    "issues": 4,
     "last_commit": "2023-05-26"
   },
   {
@@ -10974,7 +10974,7 @@
     "maintainer": "EbenKouao",
     "maintainerURL": "https://github.com/EbenKouao",
     "description": "This module allows you to transform your MagicMirror\u00b2 into a touchscreen interactive experience. This includes hiding all modules (Standby Mode) and Side Menu Option to shutdown your mirror via MagicMirror\u00b2 UI.",
-    "issues": 4,
+    "issues": 5,
     "last_commit": "2021-03-29"
   },
   {
@@ -11110,7 +11110,7 @@
     "maintainer": "0lek",
     "maintainerURL": "",
     "description": "Station monitor for bicycle networks based on the Socialbicycles API/Infrastructure, e.g. Wavelo in Krak\u00f3w, Poland.",
-    "issues": 5,
+    "issues": 6,
     "tags": [
       "nextbike",
       "bike sharing"
@@ -11126,7 +11126,7 @@
     "maintainer": "tkrywit",
     "maintainerURL": "",
     "description": "Display statistics from your Enphase Energy microinverter PV system.",
-    "issues": 5,
+    "issues": 6,
     "last_commit": "2017-03-29"
   },
   {
@@ -11148,7 +11148,7 @@
     "maintainer": "bertieuk",
     "maintainerURL": "",
     "description": "Display statistics from your SolarEdge PV inverter system.",
-    "issues": 5,
+    "issues": 6,
     "last_commit": "2019-05-03"
   },
   {
@@ -11158,7 +11158,7 @@
     "maintainer": "pizidavi",
     "maintainerURL": "",
     "description": "Displays, updated every minute, the energy produced, used and received/released to the grid by your SolarEdge System.",
-    "issues": 4,
+    "issues": 5,
     "last_commit": "2020-08-27"
   },
   {
@@ -11572,7 +11572,7 @@
     "maintainer": "Thlb",
     "maintainerURL": "",
     "description": "Display Synology Download Station tasks.",
-    "issues": 4,
+    "issues": 5,
     "tags": [
       "synology",
       "download satation"
@@ -11607,7 +11607,7 @@
     "maintainer": "paviro",
     "maintainerURL": "",
     "description": "API for sending notifications to your mirror.",
-    "issues": 5,
+    "issues": 6,
     "last_commit": "2017-04-03"
   },
   {
@@ -11632,7 +11632,7 @@
     "maintainer": "BenRoe",
     "maintainerURL": "",
     "description": "Shows Raspberry Pi system stats like CPU temperature, free Ram, System load, and Uptime.",
-    "issues": 5,
+    "issues": 6,
     "tags": [
       "cpu temperature",
       "system load"
@@ -11732,7 +11732,7 @@
     "maintainer": "Thlb",
     "maintainerURL": "",
     "description": "Display client list of a Teamspeak3 server.",
-    "issues": 4,
+    "issues": 5,
     "tags": [
       "teamspeak",
       "client list"
@@ -11762,7 +11762,7 @@
     "maintainer": "Thlb",
     "maintainerURL": "",
     "description": "Display DS18B20 sensor's temperature.",
-    "issues": 5,
+    "issues": 6,
     "tags": [
       "ds18b20",
       "temperature",
@@ -12128,7 +12128,7 @@
     "maintainer": "slametps",
     "maintainerURL": "https://github.com/slametps",
     "description": "Display the status of TPLink lights/plugs in your local network.",
-    "issues": 3,
+    "issues": 4,
     "tags": [
       "tplink",
       "smarthome"
@@ -12267,7 +12267,7 @@
     "maintainer": "luccapolastri",
     "maintainerURL": "https://github.com/luccapolastri",
     "description": "Module that displays real time information of the public transportation service in CABA, Buenos Aires, Argentina.",
-    "issues": 4,
+    "issues": 5,
     "last_commit": "2022-10-28"
   },
   {
@@ -12303,7 +12303,7 @@
     "maintainer": "reidarw",
     "maintainerURL": "https://github.com/reidarw",
     "description": "Module for showing the waste plan for your destination in Trondheim, Norway.",
-    "issues": 4,
+    "issues": 5,
     "last_commit": "2023-06-24"
   },
   {
@@ -12313,7 +12313,7 @@
     "maintainer": "fewieden",
     "maintainerURL": "",
     "description": "Offline Text-To-Speech based on festival.",
-    "issues": 6,
+    "issues": 7,
     "tags": [
       "text-to-speech"
     ],
@@ -12337,7 +12337,7 @@
     "maintainer": "slametps",
     "maintainerURL": "https://github.com/slametps",
     "description": "Display the status of smarthome devices based on Tuya IoT-Platform (managed by SmartLife app).",
-    "issues": 5,
+    "issues": 6,
     "tags": [
       "tuyasl",
       "smarthome",
@@ -12357,7 +12357,7 @@
     "maintainer": "rafagale",
     "maintainerURL": "https://github.com/rafagale",
     "description": "Get estimations for bus stops in the city of Zaragoza (Spain).",
-    "issues": 4,
+    "issues": 5,
     "tags": [
       "bus stop",
       "tuzsa zaragoza",
@@ -12409,7 +12409,7 @@
     "maintainer": "Blastitt",
     "maintainerURL": "",
     "description": "Display your Twitter feed.",
-    "issues": 6,
+    "issues": 7,
     "license": "MIT",
     "last_commit": "2017-01-30"
   },
@@ -12768,7 +12768,7 @@
     "maintainer": "fewieden",
     "maintainerURL": "https://github.com/fewieden",
     "description": "Learn new languages on your MagicMirror\u00b2.",
-    "issues": 3,
+    "issues": 4,
     "tags": [
       "vocabulary trainer"
     ],
@@ -12783,7 +12783,7 @@
     "maintainer": "fewieden",
     "maintainerURL": "",
     "description": "Offline Voice Recognition Module, with ability to control other modules, based on pocketsphinx.",
-    "issues": 5,
+    "issues": 6,
     "tags": [
       "voice recognition",
       "speech to text"
@@ -12974,7 +12974,7 @@
     "maintainer": "thiagomides",
     "maintainerURL": "",
     "description": "A simple Water Reminder Module.",
-    "issues": 3,
+    "issues": 4,
     "last_commit": "2021-01-03"
   },
   {
@@ -13256,7 +13256,7 @@
     "maintainer": "fewieden",
     "maintainerURL": "",
     "description": "Display Public Transport timetable of Vienna/Austria.",
-    "issues": 5,
+    "issues": 6,
     "tags": [
       "vienna",
       "wien",
@@ -13473,7 +13473,7 @@
     "maintainer": "slametps",
     "maintainerURL": "https://github.com/slametps",
     "description": "Display the status of Yeelight bulbs in your local network.",
-    "issues": 3,
+    "issues": 4,
     "tags": [
       "yeelight",
       "smarthome"

@@ -37,6 +37,10 @@ def check_modules():
             "name": "Replace it with `²`.`.",
             "category": "Typo"
         },
+        "<sup>2</sup>": {
+            "name": "Replace it with `²`.`.",
+            "category": "Typo"
+        },
         'require("request")': {
             "name": "Replace it with built-in fetch.",
             "category": "Deprecated",
