@@ -1926,7 +1926,7 @@
     "maintainerURL": "",
     "description": "Live video of the Earth from the International Space Station.",
     "issues": [],
-    "outdated": "Abandoned. The URL to fetch the video dooesn't work anymore. The author is inactive."
+    "outdated": "Abandoned. The URL to fetch the video doesn't work anymore. The author is inactive."
   },
   {
     "name": "MMM-Earthquake",
@@ -5437,7 +5437,7 @@
     "id": "martinkooij/MMM-MyWeather",
     "maintainer": "martinkooij",
     "maintainerURL": "",
-    "description": "Fork of MMM-WunderGround, with a few more display options and slightly different formatting. Updated under the hood to use weatherbit API, Wunderground free API is discontinued.",
+    "description": "Weather module based on the Weatherbit API.",
     "issues": []
   },
   {
@@ -9561,7 +9561,8 @@
     "maintainer": "MattLugar",
     "maintainerURL": "",
     "description": "Weather Underground Forecast Module Retrieves forecast from Weather Underground. Also adds a percentage probability of precipitation to forecast display.",
-    "issues": []
+    "issues": [],
+    "outdated": "Deprecated. Wunderground API isn't working anymore."
   },
   {
     "name": "MMM-WunderGround",
@@ -9570,7 +9571,8 @@
     "maintainer": "RedNax67",
     "maintainerURL": "",
     "description": "Display weather based on wunderground API.",
-    "issues": []
+    "issues": [],
+    "outdated": "Deprecated. Wunderground API isn't working anymore. Check out MMM-MyWeather which is a fork with another API."
   },
   {
     "name": "MMM-wundergroundBar",
@@ -9579,7 +9581,8 @@
     "maintainer": "Fifteen15Studios",
     "maintainerURL": "",
     "description": "Minimalist Weather for the bottom_bar or thirds position of your mirror.",
-    "issues": []
+    "issues": [],
+    "outdated": "Deprecated. Wunderground API isn't working anymore."
   },
   {
     "name": "MMM-WWI",

@@ -2814,7 +2814,7 @@
     "issues": [
       "There is no `package.json`. We need this file to gather information about the module for the module list page."
     ],
-    "outdated": "Abandoned. The URL to fetch the video dooesn't work anymore. The author is inactive."
+    "outdated": "Abandoned. The URL to fetch the video doesn't work anymore. The author is inactive."
   },
   {
     "name": "MMM-Earthquake",
@@ -8046,7 +8046,7 @@
     "id": "martinkooij/MMM-MyWeather",
     "maintainer": "martinkooij",
     "maintainerURL": "",
-    "description": "Fork of MMM-WunderGround, with a few more display options and slightly different formatting. Updated under the hood to use weatherbit API, Wunderground free API is discontinued.",
+    "description": "Weather module based on the Weatherbit API.",
     "issues": [],
     "tags": [
       "\"magic",
@@ -14250,7 +14250,8 @@
     "description": "Weather Underground Forecast Module Retrieves forecast from Weather Underground. Also adds a percentage probability of precipitation to forecast display.",
     "issues": [
       "There is no `package.json`. We need this file to gather information about the module for the module list page."
-    ]
+    ],
+    "outdated": "Deprecated. Wunderground API isn't working anymore."
   },
   {
     "name": "MMM-WunderGround",
@@ -14261,7 +14262,8 @@
     "description": "Display weather based on wunderground API.",
     "issues": [
       "There is no `package.json`. We need this file to gather information about the module for the module list page."
-    ]
+    ],
+    "outdated": "Deprecated. Wunderground API isn't working anymore. Check out MMM-MyWeather which is a fork with another API."
   },
   {
     "name": "MMM-wundergroundBar",
@@ -14272,7 +14274,8 @@
     "description": "Minimalist Weather for the bottom_bar or thirds position of your mirror.",
     "issues": [
       "There is no `package.json`. We need this file to gather information about the module for the module list page."
-    ]
+    ],
+    "outdated": "Deprecated. Wunderground API isn't working anymore."
   },
   {
     "name": "MMM-WWI",

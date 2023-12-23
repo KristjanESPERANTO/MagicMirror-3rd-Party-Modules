@@ -1,6 +1,6 @@
 # Result of the module analysis
 
-Last update: 2023-12-20 16:36:13 UTC
+Last update: 2023-12-23 16:44:56 UTC
 
 ## Statistics
 
@@ -9,7 +9,7 @@ Last update: 2023-12-20 16:36:13 UTC
 | modules analyzed     |   1079   |
 | maintainer           |    622   |
 | modules with issues  |   1071   |
-| issues               |   5224   |
+| issues               |   5232   |
 | modules at github    |   1070   |
 | modules at gitlab    |      8   |
 | modules at bitbucket |      1   |
@@ -750,13 +750,14 @@ Last update: 2023-12-20 16:36:13 UTC
 1. No image found.
 2. Information: There are updates for 3 dependencie(s):
    -  googleapis  ^128.0.0  →  ^129.0.0
-   -  open          ^9.1.0  →   ^10.0.0
+   -  open          ^9.1.0  →   ^10.0.1
    -  tsdav         ^2.0.5  →    ^2.0.7
 
 
 ### [MMM-CalendarExt2 by MMM-CalendarExt2](https://github.com/MMM-CalendarExt2/MMM-CalendarExt2)
 
-1. Recommendation: Replace eslintrc by new flat config.
+1. Recommendation: Found `"eslint-plugin-json"` in file `package.json`: Replace it by `eslint-plugin-jsonc`.
+2. Recommendation: Replace eslintrc by new flat config.
 
 ### [MMM-CalendarExt3 by MMRIZE](https://github.com/MMRIZE/MMM-CalendarExt3)
 
@@ -844,6 +845,10 @@ Last update: 2023-12-20 16:36:13 UTC
 3. Recommendation: Found `require('https')` in file `node_helper.js`: Replace 'https' by 'node:https'.
 4. The branch name is 'master'. Consider renaming it to 'main'.
 
+### [MMM-Canteen by KristjanESPERANTO](https://github.com/KristjanESPERANTO/MMM-Canteen)
+
+1. Recommendation: Found `"eslint-plugin-json"` in file `package.json`: Replace it by `eslint-plugin-jsonc`.
+
 ### [MMM-Canvas by chase-cromwell](https://github.com/chase-cromwell/MMM-Canvas)
 
 1. There is no `package.json`. We need this file to gather information about the module for the module list page.
@@ -867,8 +872,9 @@ Last update: 2023-12-20 16:36:13 UTC
 
 ### [MMM-Carousel by shbatm](https://github.com/shbatm/MMM-Carousel)
 
-1. Recommendation: Replace eslintrc by new flat config.
-2. The branch name is 'master'. Consider renaming it to 'main'.
+1. Recommendation: Found `"eslint-plugin-json"` in file `package.json`: Replace it by `eslint-plugin-jsonc`.
+2. Recommendation: Replace eslintrc by new flat config.
+3. The branch name is 'master'. Consider renaming it to 'main'.
 
 ### [MMM-CECControl by nischi](https://github.com/nischi/MMM-CECControl)
 
@@ -1634,7 +1640,7 @@ Last update: 2023-12-20 16:36:13 UTC
 
 ### [MMM-EARTH-Live by mykle1](https://github.com/mykle1/MMM-EARTH-Live)
 
-0. This module is outdated: Abandoned. The URL to fetch the video dooesn't work anymore. The author is inactive.
+0. This module is outdated: Abandoned. The URL to fetch the video doesn't work anymore. The author is inactive.
 1. There is no `package.json`. We need this file to gather information about the module for the module list page.
 2. Typo: Found `Magic Mirror` in file `MMM-EARTH-Live.js`: Replace it with `MagicMirror²`.
 3. The branch name is 'master'. Consider renaming it to 'main'.
@@ -1652,10 +1658,6 @@ Last update: 2023-12-20 16:36:13 UTC
 
 1. There is no `package.json`. We need this file to gather information about the module for the module list page.
 2. Recommendation: Found `XMLHttpRequest` in file `MMM-EarthquakeMonitor.js`: Replace it with built-in fetch.
-
-### [MMM-EasyPix by KristjanESPERANTO](https://github.com/KristjanESPERANTO/MMM-EasyPix)
-
-1. Recommendation: Replace eslintrc by new flat config.
 
 ### [MMM-Ecobee by parnic](https://github.com/parnic/MMM-Ecobee)
 
@@ -2423,7 +2425,7 @@ Last update: 2023-12-20 16:36:13 UTC
    -  @grpc/grpc-js        ^1.9.11  →   ^1.9.13
    -  esbuild              ^0.19.8  →  ^0.19.10
    -  google-auth-library   ^9.2.0  →    ^9.4.1
-   -  open                  ^9.1.0  →   ^10.0.0
+   -  open                  ^9.1.0  →   ^10.0.1
 
 
 ### [MMM-GoogleBirthdaysProvider by PalatinCoder](https://github.com/PalatinCoder/MMM-GoogleBirthdaysProvider)
@@ -3355,9 +3357,10 @@ Last update: 2023-12-20 16:36:13 UTC
 2. `package.json` issue: No license field.
 3. There are no keywords in 'package.json'. We would use them as tags on the module list page.
 4. Recommendation: Found `uses: actions/checkout@v3` in file `runtest.yml`: Replace it with v4.
-5. Warning: No LICENSE file.
-6. Recommendation: Replace eslintrc by new flat config.
-7. The branch name is 'master'. Consider renaming it to 'main'.
+5. Recommendation: Found `"eslint-plugin-json"` in file `package.json`: Replace it by `eslint-plugin-jsonc`.
+6. Warning: No LICENSE file.
+7. Recommendation: Replace eslintrc by new flat config.
+8. The branch name is 'master'. Consider renaming it to 'main'.
 
 ### [MMM-JsonValue by c-klinger](https://github.com/c-klinger/MMM-JsonValue)
 
@@ -3438,10 +3441,9 @@ Last update: 2023-12-20 16:36:13 UTC
 3. No image found.
 4. Recommendation: Found `jshint` in file `Gruntfile.js`: Replace "jshint" by "eslint".
 5. Typo: Found `Magic Mirror` in file `MMM-kudos.js`: Replace it with `MagicMirror²`.
-6. Recommendation: Found `XMLHttpRequest` in file `MMM-kudos.js`: Replace it with built-in fetch.
-7. Deprecated: Found `"grunt"` in file `package.json`: Grunt is practically unmaintained. Move on to something better.
-8. Recommendation: Replace eslintrc by new flat config.
-9. The branch name is 'master'. Consider renaming it to 'main'.
+6. Deprecated: Found `"grunt"` in file `package.json`: Grunt is practically unmaintained. Move on to something better.
+7. Recommendation: Replace eslintrc by new flat config.
+8. The branch name is 'master'. Consider renaming it to 'main'.
 
 ### [MMM-KVV by yo-less](https://github.com/yo-less/MMM-KVV)
 
@@ -4477,7 +4479,7 @@ Last update: 2023-12-20 16:36:13 UTC
 
 1. The branch name is 'master'. Consider renaming it to 'main'.
 2. Information: There are updates for 1 dependencie(s):
-   -  mqtt  ^1.10.0  →  ^5.3.3
+   -  mqtt  ^1.10.0  →  ^5.3.4
 
 
 ### [MMM-MQTTbridge by Tom-Hirschberger](https://github.com/Tom-Hirschberger/MMM-MQTTbridge)
@@ -4485,7 +4487,7 @@ Last update: 2023-12-20 16:36:13 UTC
 1. The branch name is 'master'. Consider renaming it to 'main'.
 2. Information: There are updates for 2 dependencie(s):
    -  jsonpath-plus  5.0.1  →  7.2.0
-   -  mqtt           4.3.7  →  5.3.3
+   -  mqtt           4.3.7  →  5.3.4
 
 
 ### [MMM-MQTTfloorplan by DMailMan](https://github.com/DMailMan/MMM-MQTTfloorplan)
@@ -5268,7 +5270,8 @@ Last update: 2023-12-20 16:36:13 UTC
 
 ### [MMM-OneCallWeather by KristjanESPERANTO](https://github.com/KristjanESPERANTO/MMM-OneCallWeather)
 
-1. Recommendation: Replace eslintrc by new flat config.
+1. Recommendation: Found `"eslint-plugin-json"` in file `package.json`: Replace it by `eslint-plugin-jsonc`.
+2. Recommendation: Replace eslintrc by new flat config.
 
 ### [MMM-OneTouchReveal by Canonip](https://github.com/Canonip/MMM-OneTouchReveal)
 
@@ -5642,7 +5645,7 @@ Last update: 2023-12-20 16:36:13 UTC
 1. The branch name is 'master'. Consider renaming it to 'main'.
 2. Information: There are updates for 2 dependencie(s):
    -  async              ^3.2.0  →    ^3.2.5
-   -  systeminformation  ^5.6.7  →  ^5.21.20
+   -  systeminformation  ^5.6.7  →  ^5.21.22
 
 
 ### [MMM-ping by fewieden](https://github.com/fewieden/MMM-ping)
@@ -5979,8 +5982,9 @@ Last update: 2023-12-20 16:36:13 UTC
 
 ### [MMM-PublicTransportBerlin by deg0nz](https://github.com/deg0nz/MMM-PublicTransportBerlin)
 
-1. Recommendation: Replace eslintrc by new flat config.
-2. The branch name is 'master'. Consider renaming it to 'main'.
+1. Recommendation: Found `"eslint-plugin-json"` in file `package.json`: Replace it by `eslint-plugin-jsonc`.
+2. Recommendation: Replace eslintrc by new flat config.
+3. The branch name is 'master'. Consider renaming it to 'main'.
 
 ### [MMM-PublicTransportVVO by ChristianGeie](https://github.com/ChristianGeie/MMM-PublicTransportVVO)
 
@@ -8178,7 +8182,8 @@ Last update: 2023-12-20 16:36:13 UTC
 
 ### [MMM-WebSpeechTTS by KristjanESPERANTO](https://github.com/KristjanESPERANTO/MMM-WebSpeechTTS)
 
-1. Recommendation: Replace eslintrc by new flat config.
+1. Recommendation: Found `"eslint-plugin-json"` in file `package.json`: Replace it by `eslint-plugin-jsonc`.
+2. Recommendation: Replace eslintrc by new flat config.
 
 ### [MMM-Webuntis by thyed](https://github.com/thyed/MMM-Webuntis)
 
@@ -8331,6 +8336,7 @@ Last update: 2023-12-20 16:36:13 UTC
 
 ### [wuforecast by MattLugar](https://github.com/MattLugar/wuforecast)
 
+0. This module is outdated: Deprecated. Wunderground API isn't working anymore.
 1. There is no `package.json`. We need this file to gather information about the module for the module list page.
 2. Recommendation: Module name doesn't follow the recommended pattern (it doesn't start with `MMM-`). Consider renaming your module.
 3. Typo: Found `Magic Mirror` in file `wuforecast.js`: Replace it with `MagicMirror²`.
@@ -8340,6 +8346,7 @@ Last update: 2023-12-20 16:36:13 UTC
 
 ### [MMM-WunderGround by RedNax67](https://github.com/RedNax67/MMM-WunderGround)
 
+0. This module is outdated: Deprecated. Wunderground API isn't working anymore. Check out MMM-MyWeather which is a fork with another API.
 1. There is no `package.json`. We need this file to gather information about the module for the module list page.
 2. Typo: Found `Magic Mirror` in file `MMM-WunderGround.js`: Replace it with `MagicMirror²`.
 3. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
@@ -8349,6 +8356,7 @@ Last update: 2023-12-20 16:36:13 UTC
 
 ### [MMM-wundergroundBar by Fifteen15Studios](https://github.com/Fifteen15Studios/MMM-wundergroundBar)
 
+0. This module is outdated: Deprecated. Wunderground API isn't working anymore.
 1. There is no `package.json`. We need this file to gather information about the module for the module list page.
 2. Typo: Found `Magic Mirror` in file `MMM-wundergroundBar.js`: Replace it with `MagicMirror²`.
 3. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.

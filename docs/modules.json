@@ -1183,7 +1183,7 @@
     "maintainer": "MMM-CalendarExt2",
     "maintainerURL": "",
     "description": "Extended calendar and event view.",
-    "issues": 1,
+    "issues": 2,
     "tags": [
       "calendar"
     ],
@@ -1204,7 +1204,7 @@
       "calext3"
     ],
     "license": "MIT",
-    "last_commit": "2023-11-17"
+    "last_commit": "2023-12-23"
   },
   {
     "name": "MMM-CalendarExt3Agenda",
@@ -1377,7 +1377,7 @@
     "maintainer": "KristjanESPERANTO",
     "maintainerURL": "",
     "description": "Show meals from canteens (Germany and Switzerland).",
-    "issues": 0,
+    "issues": 1,
     "tags": [
       "openmensa"
     ],
@@ -1422,7 +1422,7 @@
     "maintainer": "shbatm",
     "maintainerURL": "https://github.com/shbatm",
     "description": "Rotate modules, to save space on screen.",
-    "issues": 2,
+    "issues": 3,
     "tags": [
       "carousel",
       "navigation",
@@ -1538,7 +1538,7 @@
     "issues": 5,
     "license": "ISC",
     "image": "image-1.jpg",
-    "last_commit": "2023-12-03"
+    "last_commit": "2023-12-21"
   },
   {
     "name": "MMM-Clash-Royale",
@@ -2629,7 +2629,7 @@
     "maintainerURL": "",
     "description": "Live video of the Earth from the International Space Station.",
     "issues": 3,
-    "outdated": "Abandoned. The URL to fetch the video dooesn't work anymore. The author is inactive.",
+    "outdated": "Abandoned. The URL to fetch the video doesn't work anymore. The author is inactive.",
     "last_commit": "2019-12-02"
   },
   {
@@ -2662,13 +2662,13 @@
     "maintainer": "KristjanESPERANTO",
     "maintainerURL": "",
     "description": "The easiest way to show pictures on your mirror.",
-    "issues": 1,
+    "issues": 0,
     "tags": [
       "picture"
     ],
     "license": "MIT",
     "image": "pix-18.jpg",
-    "last_commit": "2023-12-02"
+    "last_commit": "2023-12-23"
   },
   {
     "name": "MMM-Ecobee",
@@ -5459,7 +5459,7 @@
     "maintainer": "timdows",
     "maintainerURL": "",
     "description": "Creates a table filled by a list gathered from a JSON request, and puts all variables of the object in its own table column.",
-    "issues": 7,
+    "issues": 8,
     "last_commit": "2023-10-15"
   },
   {
@@ -5584,9 +5584,9 @@
     "maintainer": "thomo",
     "maintainerURL": "",
     "description": "Compliment clone - allows to define when (at which hour) the used kudo(compliment) subset will change and you can define further subsets - up to one for each hour.",
-    "issues": 9,
+    "issues": 8,
     "license": "MIT",
-    "last_commit": "2017-04-30"
+    "last_commit": "2023-12-23"
   },
   {
     "name": "MMM-KVV",
@@ -6786,7 +6786,7 @@
     "maintainerURL": "https://github.com/Bee-Mar",
     "description": "An unofficial MagicMirror\u00b2 3rd Party Package Manager. Automates searching, installation, removal, updating, and upgrading of MagicMirror\u00b2 modules.",
     "issues": 4,
-    "last_commit": "2023-12-18"
+    "last_commit": "2023-12-20"
   },
   {
     "name": "MMM-mmpm",
@@ -7535,7 +7535,7 @@
     "id": "martinkooij/MMM-MyWeather",
     "maintainer": "martinkooij",
     "maintainerURL": "",
-    "description": "Fork of MMM-WunderGround, with a few more display options and slightly different formatting. Updated under the hood to use weatherbit API, Wunderground free API is discontinued.",
+    "description": "Weather module based on the Weatherbit API.",
     "issues": 5,
     "tags": [
       "\"magic",
@@ -8003,7 +8003,7 @@
     ],
     "license": "MIT",
     "image": ".github-example_nhl.jpg",
-    "last_commit": "2023-10-02"
+    "last_commit": "2023-12-22"
   },
   {
     "name": "MMM-NiceHash",
@@ -8402,7 +8402,7 @@
     "maintainer": "KristjanESPERANTO",
     "maintainerURL": "",
     "description": "Display current and forecast weather based on the Openweathermap OneCall API data with alternative formatting.",
-    "issues": 1,
+    "issues": 2,
     "tags": [
       "weather"
     ],
@@ -9417,7 +9417,7 @@
     "issues": 13,
     "license": "MIT",
     "image": "images-CarCharging.jpg",
-    "last_commit": "2023-11-13"
+    "last_commit": "2023-12-20"
   },
   {
     "name": "MMM-PrayerTime",
@@ -9552,7 +9552,7 @@
     "maintainer": "deg0nz",
     "maintainerURL": "",
     "description": "Display departures for public transport in Berlin and Brandenburg (Covers VBB Area).",
-    "issues": 2,
+    "issues": 3,
     "tags": [
       "public transport",
       "public transport berlin",
@@ -9575,7 +9575,7 @@
     ],
     "license": "MIT",
     "image": "img-Goerdelerring_all.jpg",
-    "last_commit": "2023-12-20"
+    "last_commit": "2023-12-23"
   },
   {
     "name": "MMM-PublicTransportVVO",
@@ -13131,7 +13131,7 @@
     "maintainer": "KristjanESPERANTO",
     "maintainerURL": "",
     "description": "A Text-To-Speech module which uses the Web Speech API of the browser. It is in an early stage of development. So far only German is supported.",
-    "issues": 1,
+    "issues": 2,
     "tags": [
       "text-to-speech",
       "tts",
@@ -13390,6 +13390,7 @@
     "maintainerURL": "",
     "description": "Weather Underground Forecast Module Retrieves forecast from Weather Underground. Also adds a percentage probability of precipitation to forecast display.",
     "issues": 6,
+    "outdated": "Deprecated. Wunderground API isn't working anymore.",
     "last_commit": "2016-05-20"
   },
   {
@@ -13400,6 +13401,7 @@
     "maintainerURL": "",
     "description": "Display weather based on wunderground API.",
     "issues": 6,
+    "outdated": "Deprecated. Wunderground API isn't working anymore. Check out MMM-MyWeather which is a fork with another API.",
     "last_commit": "2017-04-25"
   },
   {
@@ -13410,6 +13412,7 @@
     "maintainerURL": "",
     "description": "Minimalist Weather for the bottom_bar or thirds position of your mirror.",
     "issues": 5,
+    "outdated": "Deprecated. Wunderground API isn't working anymore.",
     "last_commit": "2022-07-02"
   },
   {
