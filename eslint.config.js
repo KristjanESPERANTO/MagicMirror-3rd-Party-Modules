@@ -1,11 +1,11 @@
-import globals from "globals";
-import importPlugin from "eslint-plugin-import";
-import js from "@eslint/js";
-import stylistic from "@stylistic/eslint-plugin";
+import * as fs from "fs";
 
-export default [
-  js.configs.all,
-  stylistic.configs["all-flat"],
+import eslintPlugin from "@eslint/js";
+import eslintPluginImport from "eslint-plugin-import";
+import eslintPluginStylistic from "@stylistic/eslint-plugin";
+import globals from "globals";
+
+const config = [
   {
     "ignores": [
       "modules/*",
@@ -22,10 +22,13 @@ export default [
       }
     },
     "plugins": {
-      "import": importPlugin
+      ...eslintPluginStylistic.configs["all-flat"].plugins,
+      "import": eslintPluginImport
     },
     "rules": {
-      ...importPlugin.configs.recommended.rules,
+      ...eslintPlugin.configs.all.rules,
+      ...eslintPluginImport.configs.recommended.rules,
+      ...eslintPluginStylistic.configs["all-flat"].rules,
       "func-style": "off",
       "id-length": ["error", {"exceptions": ["a", "b"]}],
       // Until now this rule doesn't run in flat config
@@ -52,3 +55,15 @@ export default [
     }
   }
 ];
+
+const debug = false;
+
+if (debug === true) {
+  fs.writeFile("eslint-config-DEBUG.json", JSON.stringify(config, null, 2), (error) => {
+    if (error) {
+      throw error;
+    }
+  });
+}
+
+export default config;

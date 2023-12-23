@@ -26,14 +26,15 @@
   "homepage": "https://github.com/KristjanESPERANTO/MagicMirror-3rd-Party-Modules#readme",
   "devDependencies": {
     "@eslint/js": "^8.56.0",
-    "@stylistic/eslint-plugin": "^1.5.1",
-    "eslint-plugin-import": "^2.29.1",
-    "husky": "^8.0.3",
-    "lint-staged": "^15.2.0",
+    "@stylistic/eslint-plugin": "latest",
+    "eslint": "^8.56.0",
+    "eslint-plugin-import": "latest",
+    "husky": "latest",
+    "lint-staged": "latest",
     "prettier": "^3.1.1",
-    "stylelint": "^16.0.2",
-    "stylelint-config-standard": "^35.0.0",
-    "stylelint-prettier": "^5.0.0"
+    "stylelint": "latest",
+    "stylelint-config-standard": "latest",
+    "stylelint-prettier": "latest"
   },
   "scripts": {
     "all": "node create_module_list.js && python3 get_modules.py && node expand_module_list_with_repo_data.js && python3 check_modules.py",
