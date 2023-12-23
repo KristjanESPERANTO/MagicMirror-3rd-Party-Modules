@@ -25,6 +25,10 @@ def check_modules():
             "name": "Update `stylelint` and remove `stylelint-config-prettier`.",
             "category": "Deprecated",
         },
+        '"eslint-plugin-json"': {
+            "name": "Replace it by `eslint-plugin-jsonc`.",
+            "category": "Recommendation",
+        },
         "Magic Mirror": {
             "name": "Replace it with `MagicMirror²`.",
             "category": "Typo",
