@@ -243,6 +243,16 @@ main {
   content: "☁️";
 }
 
+#unofficial-comment {
+  font-size: small;
+  margin-top: -25px;
+  margin-bottom: 5px;
+}
+
+#unofficial-comment a {
+  color: #888;
+}
+
 @media (0 <= width <= 800px) {
   #top-left,
   #sort-container {
@@ -262,5 +272,9 @@ main {
 
   h1 {
     margin: 0.25em;
+  }
+
+  #unofficial-comment {
+    margin-top: -10px;
   }
 }

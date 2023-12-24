@@ -95,7 +95,6 @@ This script goes through all cloned modules and performs various checks. The res
 
 ## Ideas / To do
 
-- Website: Add a note that this is a inofficial list and add a link to the official one.
 - Check if license in package.json matches the version in LICENSE file (I've seen some mismatches)
 - Statistics per module
   - last update date
