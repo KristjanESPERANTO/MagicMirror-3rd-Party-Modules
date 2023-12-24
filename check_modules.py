@@ -118,6 +118,10 @@ def check_modules():
             "name": "Replace it with built-in fetch.",
             "category": "Recommendation",
         },
+        "uses: actions/checkout@v2": {
+            "name": "Replace it with v4.",
+            "category": "Recommendation",
+        },
         "uses: actions/checkout@v3": {
             "name": "Replace it with v4.",
             "category": "Recommendation",
