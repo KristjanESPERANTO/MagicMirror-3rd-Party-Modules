@@ -4149,12 +4149,12 @@
     "issues": []
   },
   {
-    "name": "MMM-Liquipedia-Dota2",
-    "url": "https://github.com/buxxi/MMM-Liquipedia-Dota2",
-    "id": "buxxi/MMM-Liquipedia-Dota2",
+    "name": "MMM-Liquipedia-Matches",
+    "url": "https://github.com/buxxi/MMM-Liquipedia-Matches",
+    "id": "buxxi/MMM-Liquipedia-Matches",
     "maintainer": "buxxi",
     "maintainerURL": "",
-    "description": "Displays current and upcoming pro matches in Dota2.",
+    "description": "Displays current and upcoming pro matches in different e-sport games from Liquipedia (dota2, cs, lol etc).",
     "issues": []
   },
   {

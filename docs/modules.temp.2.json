@@ -40,14 +40,14 @@
     "maintainer": "jinserk",
     "maintainerURL": "https://github.com/jinserk",
     "description": "Show 4 consecutive 12-hr forecast, provided by <a target=\"_blank\" href=\"https://www.weather.gov/documentation/services-web-api\">NOAA National Weather Service API</a>. No user registration nor API-key required.",
-    "issues": [
-      "No image found."
-    ],
+    "issues": [],
     "tags": [
       "weather",
-      "forecast"
+      "forecast",
+      "noaa"
     ],
-    "license": "MIT"
+    "license": "MIT",
+    "image": "example1.jpg"
   },
   {
     "name": "MMM-3Day-Forecast",
@@ -1474,6 +1474,7 @@
     "description": "Show meals from canteens (Germany and Switzerland).",
     "issues": [],
     "tags": [
+      "canteen",
       "openmensa"
     ],
     "license": "MIT",
@@ -5321,9 +5322,10 @@
     "maintainer": "sdetweil",
     "maintainerURL": "",
     "description": "Show images and photos.",
-    "issues": [
-      "`package.json` issue: No repository field.",
-      "There are no keywords in 'package.json'. We would use them as tags on the module list page."
+    "issues": [],
+    "tags": [
+      "photos",
+      "images"
     ],
     "license": "MIT",
     "image": ".github-animate.jpg"
@@ -6129,14 +6131,13 @@
     ]
   },
   {
-    "name": "MMM-Liquipedia-Dota2",
-    "url": "https://github.com/buxxi/MMM-Liquipedia-Dota2",
-    "id": "buxxi/MMM-Liquipedia-Dota2",
+    "name": "MMM-Liquipedia-Matches",
+    "url": "https://github.com/buxxi/MMM-Liquipedia-Matches",
+    "id": "buxxi/MMM-Liquipedia-Matches",
     "maintainer": "buxxi",
     "maintainerURL": "",
-    "description": "Displays current and upcoming pro matches in Dota2.",
+    "description": "Displays current and upcoming pro matches in different e-sport games from Liquipedia (dota2, cs, lol etc).",
     "issues": [
-      "`package.json` issue: No repository field.",
       "There are no keywords in 'package.json'. We would use them as tags on the module list page."
     ],
     "license": "MIT",
@@ -12094,7 +12095,6 @@
     "maintainerURL": "",
     "description": "Displays time spent on games on Steam for a specific user.",
     "issues": [
-      "`package.json` issue: No repository field.",
       "There are no keywords in 'package.json'. We would use them as tags on the module list page."
     ],
     "license": "MIT",

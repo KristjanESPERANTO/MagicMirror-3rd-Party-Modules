@@ -40,13 +40,15 @@
     "maintainer": "jinserk",
     "maintainerURL": "https://github.com/jinserk",
     "description": "Show 4 consecutive 12-hr forecast, provided by <a target=\"_blank\" href=\"https://www.weather.gov/documentation/services-web-api\">NOAA National Weather Service API</a>. No user registration nor API-key required.",
-    "issues": 7,
+    "issues": 0,
     "tags": [
       "weather",
-      "forecast"
+      "forecast",
+      "noaa"
     ],
     "license": "MIT",
-    "last_commit": "2023-10-15"
+    "image": "example1.jpg",
+    "last_commit": "2023-12-28"
   },
   {
     "name": "MMM-3Day-Forecast",
@@ -850,7 +852,7 @@
     "maintainer": "timodejong95",
     "maintainerURL": "https://github.com/timodejong95",
     "description": "Connecting Bluetooth devices, currently only Oral-B toothbrushes.",
-    "issues": 3,
+    "issues": 4,
     "tags": [
       "bluetooth",
       "oralb"
@@ -1219,7 +1221,7 @@
       "agenda"
     ],
     "license": "MIT",
-    "last_commit": "2023-12-14"
+    "last_commit": "2023-12-26"
   },
   {
     "name": "MMM-CalendarExt3Journal",
@@ -1379,11 +1381,12 @@
     "description": "Show meals from canteens (Germany and Switzerland).",
     "issues": 1,
     "tags": [
+      "canteen",
       "openmensa"
     ],
     "license": "MIT",
     "image": "img-example1.jpg",
-    "last_commit": "2023-12-20"
+    "last_commit": "2023-12-23"
   },
   {
     "name": "MMM-Canvas",
@@ -1712,7 +1715,7 @@
     "maintainer": "sheyabernstein",
     "maintainerURL": "",
     "description": "Display internet connection status.",
-    "issues": 4,
+    "issues": 5,
     "tags": [
       "magicmirror internet connection"
     ],
@@ -1797,7 +1800,7 @@
     "maintainer": "0m4r",
     "maintainerURL": "",
     "description": "Live covid19 numbers provided via <a target=\"_blank\" href=\"https://covid19api.com/\">https://covid19api.com/</a>.",
-    "issues": 9,
+    "issues": 11,
     "tags": [
       "covid19",
       "covid",
@@ -2597,7 +2600,7 @@
     "maintainer": "scottcl88",
     "maintainerURL": "",
     "description": "A heavily configurable module to display different animations based on current weather and show customized event effects.",
-    "issues": 5,
+    "issues": 6,
     "tags": [
       "weather"
     ],
@@ -2668,7 +2671,7 @@
     ],
     "license": "MIT",
     "image": "pix-18.jpg",
-    "last_commit": "2023-12-23"
+    "last_commit": "2023-12-27"
   },
   {
     "name": "MMM-Ecobee",
@@ -2712,7 +2715,7 @@
     ],
     "license": "MIT",
     "image": "MMM-Ecowatt_screenshot1.jpg",
-    "last_commit": "2022-11-06"
+    "last_commit": "2023-12-26"
   },
   {
     "name": "MMM-edgerouter-throughput",
@@ -3236,7 +3239,7 @@
     ],
     "license": "ISC",
     "image": "screenshot-charts.jpg",
-    "last_commit": "2023-12-13"
+    "last_commit": "2023-12-28"
   },
   {
     "name": "MMM-FF-process-stats",
@@ -3456,7 +3459,7 @@
     "maintainer": "tbouron",
     "maintainerURL": "https://github.com/tbouron",
     "description": "Module that uses ADS-B systems to track and display nearby planes.",
-    "issues": 5,
+    "issues": 6,
     "license": "Apache 2.0",
     "last_commit": "2022-11-30"
   },
@@ -3701,7 +3704,7 @@
     "maintainer": "fewieden",
     "maintainerURL": "",
     "description": "Display Gas Station prices.",
-    "issues": 11,
+    "issues": 12,
     "tags": [
       "fuel price",
       "gas station"
@@ -5002,10 +5005,14 @@
     "maintainer": "sdetweil",
     "maintainerURL": "",
     "description": "Show images and photos.",
-    "issues": 10,
+    "issues": 3,
+    "tags": [
+      "photos",
+      "images"
+    ],
     "license": "MIT",
     "image": ".github-animate.jpg",
-    "last_commit": "2023-12-17"
+    "last_commit": "2023-12-25"
   },
   {
     "name": "MMM-imhdsk",
@@ -5178,7 +5185,7 @@
     "maintainer": "fewieden",
     "maintainerURL": "",
     "description": "Display IPv4/IPv6 Network Address.",
-    "issues": 4,
+    "issues": 5,
     "tags": [
       "network interfaces",
       "ip"
@@ -5409,7 +5416,7 @@
     "maintainer": "DanielHabenicht",
     "maintainerURL": "",
     "description": "Display data from any JSON source.",
-    "issues": 5,
+    "issues": 8,
     "license": "MIT",
     "image": "sample.jpg",
     "last_commit": "2023-01-14"
@@ -5765,16 +5772,16 @@
     "last_commit": "2018-11-08"
   },
   {
-    "name": "MMM-Liquipedia-Dota2",
-    "url": "https://github.com/buxxi/MMM-Liquipedia-Dota2",
-    "id": "buxxi/MMM-Liquipedia-Dota2",
+    "name": "MMM-Liquipedia-Matches",
+    "url": "https://github.com/buxxi/MMM-Liquipedia-Matches",
+    "id": "buxxi/MMM-Liquipedia-Matches",
     "maintainer": "buxxi",
     "maintainerURL": "",
-    "description": "Displays current and upcoming pro matches in Dota2.",
-    "issues": 8,
+    "description": "Displays current and upcoming pro matches in different e-sport games from Liquipedia (dota2, cs, lol etc).",
+    "issues": 4,
     "license": "MIT",
     "image": "screenshot.jpg",
-    "last_commit": "2023-12-17"
+    "last_commit": "2023-12-28"
   },
   {
     "name": "MMM-Live-Stream-TV",
@@ -5954,7 +5961,7 @@
     "maintainer": "tbouron",
     "maintainerURL": "https://github.com/tbouron",
     "description": "Display live timetables for specific bus stops of Lothian buses network.",
-    "issues": 2,
+    "issues": 3,
     "last_commit": "2020-10-01"
   },
   {
@@ -6380,7 +6387,7 @@
     "maintainer": "thobach",
     "maintainerURL": "",
     "description": "Displays your Microsoft To Do tasks on your mirror.",
-    "issues": 4,
+    "issues": 5,
     "tags": [
       "todo",
       "microsoft"
@@ -6481,7 +6488,7 @@
     "maintainer": "Klettner",
     "maintainerURL": "https://github.com/Klettner",
     "description": "Android \ud83d\udcf1 and Windows-desktop \ud83d\udcbb app to control your MagicMirror\u00b2 remotely. (Shutdown, reboot, toggle monitor on/off, change brightness of monitor, custom-commands, etc.).",
-    "issues": 3,
+    "issues": 4,
     "last_commit": "2021-05-27"
   },
   {
@@ -6786,7 +6793,7 @@
     "maintainerURL": "https://github.com/Bee-Mar",
     "description": "An unofficial MagicMirror\u00b2 3rd Party Package Manager. Automates searching, installation, removal, updating, and upgrading of MagicMirror\u00b2 modules.",
     "issues": 4,
-    "last_commit": "2023-12-20"
+    "last_commit": "2023-12-26"
   },
   {
     "name": "MMM-mmpm",
@@ -6847,7 +6854,7 @@
     "maintainer": "ianperrin",
     "maintainerURL": "",
     "description": "Create schedules to control when other modules are shown, hidden or dimmed and to send notifications to other modules.",
-    "issues": 5,
+    "issues": 6,
     "tags": [
       "scheduler"
     ],
@@ -7775,7 +7782,7 @@
     ],
     "license": "MIT",
     "image": ".github-preview.bubbles.jpg",
-    "last_commit": "2023-12-20"
+    "last_commit": "2023-12-25"
   },
   {
     "name": "MMM-Netatmo-Presence",
@@ -7970,7 +7977,7 @@
     "maintainer": "fewieden",
     "maintainerURL": "",
     "description": "Display scores of National Football League (optional voice-control).",
-    "issues": 8,
+    "issues": 9,
     "tags": [
       "nfl"
     ],
@@ -7996,7 +8003,7 @@
     "maintainer": "fewieden",
     "maintainerURL": "",
     "description": "Display scores of National Hockey League.",
-    "issues": 5,
+    "issues": 6,
     "tags": [
       "nhl",
       "ice hockey"
@@ -8012,7 +8019,7 @@
     "maintainer": "mlbonniec",
     "maintainerURL": "https://github.com/mlbonniec",
     "description": "Display your NiceHash projected income and rigs highest temperature.",
-    "issues": 10,
+    "issues": 11,
     "tags": [
       "crypto",
       "mining",
@@ -8256,7 +8263,7 @@
     "maintainer": "elaniobro",
     "maintainerURL": "https://github.com/elaniobro",
     "description": "Real-time MTA subway countdown clock for stations you choose. Configurable for marquee and or list view.",
-    "issues": 5,
+    "issues": 9,
     "tags": [
       "nyc",
       "transit",
@@ -8367,7 +8374,7 @@
     "maintainer": "fewieden",
     "maintainerURL": "",
     "description": "Displays the medals for olympic games.",
-    "issues": 6,
+    "issues": 7,
     "tags": [
       "olympic games"
     ],
@@ -8895,7 +8902,7 @@
     "maintainer": "CFenner",
     "maintainerURL": "",
     "description": "Module to version your personal config in a separate repository.",
-    "issues": 6,
+    "issues": 7,
     "license": "MIT",
     "last_commit": "2022-01-19"
   },
@@ -8978,7 +8985,7 @@
     "maintainer": "sheyabernstein",
     "maintainerURL": "",
     "description": "Display stats from Pi-Hole DNS ad blocking.",
-    "issues": 5,
+    "issues": 6,
     "last_commit": "2023-08-23"
   },
   {
@@ -9816,7 +9823,7 @@
     "issues": 6,
     "license": "MIT",
     "image": "screenshotRainForecast.jpg",
-    "last_commit": "2022-11-06"
+    "last_commit": "2023-12-26"
   },
   {
     "name": "random_quotes",
@@ -10037,7 +10044,7 @@
     "maintainer": "balassy",
     "maintainerURL": "https://github.com/balassy",
     "description": "Displays the temperature from a remote sensor that is capable to POST the measured value through HTTP protocol in JSON.",
-    "issues": 3,
+    "issues": 4,
     "tags": [
       "temperature",
       "raspberrypi"
@@ -10824,7 +10831,7 @@
     "maintainer": "balassy",
     "maintainerURL": "https://github.com/balassy",
     "description": "Displays the stock price of a single company without any fancy animation.",
-    "issues": 4,
+    "issues": 5,
     "tags": [
       "stock"
     ],
@@ -10923,7 +10930,7 @@
     "maintainer": "ngnijland",
     "maintainerURL": "https://github.com/ngnijland",
     "description": "Show what's currently playing now on the dutch radio station Slam!.",
-    "issues": 5,
+    "issues": 6,
     "tags": [
       "slamfm!",
       "radio",
@@ -11057,7 +11064,7 @@
     "maintainer": "fewieden",
     "maintainerURL": "",
     "description": "Display standings from European Soccer (Football) leagues (optional voice-control).",
-    "issues": 5,
+    "issues": 7,
     "tags": [
       "soccer standings"
     ],
@@ -11072,7 +11079,7 @@
     "maintainer": "0m4r",
     "maintainerURL": "",
     "description": "Display live scores of your favorite soccer leagues/competitions.",
-    "issues": 8,
+    "issues": 10,
     "tags": [
       "live score",
       "soccer"
@@ -11088,7 +11095,7 @@
     "maintainer": "ngnijland",
     "maintainerURL": "https://github.com/ngnijland",
     "description": "Displays the follower count of a Twitter user of choice.",
-    "issues": 4,
+    "issues": 5,
     "tags": [
       "social",
       "counter",
@@ -11200,7 +11207,7 @@
     "maintainer": "CFenner",
     "maintainerURL": "",
     "description": "Display the currently playing track of your Sonos system.",
-    "issues": 7,
+    "issues": 8,
     "license": "MIT",
     "image": ".github-preview.jpg",
     "last_commit": "2023-03-07"
@@ -11212,7 +11219,7 @@
     "maintainer": "tbouron",
     "maintainerURL": "https://github.com/tbouron",
     "description": "Module that displays playing tracks on your Sonos network.",
-    "issues": 4,
+    "issues": 5,
     "license": "Apache 2.0",
     "last_commit": "2020-10-01"
   },
@@ -11359,10 +11366,10 @@
     "maintainer": "buxxi",
     "maintainerURL": "",
     "description": "Displays time spent on games on Steam for a specific user.",
-    "issues": 7,
+    "issues": 4,
     "license": "MIT",
     "image": "screenshot.jpg",
-    "last_commit": "2023-11-16"
+    "last_commit": "2023-12-28"
   },
   {
     "name": "MMM-stib",
@@ -11446,7 +11453,7 @@
     "maintainer": "ianperrin",
     "maintainerURL": "",
     "description": "Display your activity data from <a target=\"_blank\" href=\"https://www.strava.com\">Strava.com</a>.",
-    "issues": 5,
+    "issues": 6,
     "tags": [
       "strava"
     ],
@@ -11800,7 +11807,7 @@
     "maintainer": "mattdy",
     "maintainerURL": "",
     "description": "Display Tesla data from either <a target=\"_blank\" href=\"https://teslafi.com\">TeslaFi</a> or <a target=\"_blank\" href=\"https://www.tessie.com\">Tessie</a>.",
-    "issues": 9,
+    "issues": 11,
     "tags": [
       "tesla",
       "teslafi",
@@ -11861,7 +11868,7 @@
     "maintainer": "ngnijland",
     "maintainerURL": "https://github.com/ngnijland",
     "description": "A clock which shows the time as text.",
-    "issues": 3,
+    "issues": 4,
     "tags": [
       "smar",
       "clock",
@@ -12494,7 +12501,7 @@
     "maintainer": "mattdy",
     "maintainerURL": "",
     "description": "This module displays LIVE UK National Rail train arrivals &amp; departures from a specified station.",
-    "issues": 5,
+    "issues": 7,
     "tags": [
       "national rail",
       "trains"
@@ -13554,7 +13561,7 @@
     "maintainer": "ngnijland",
     "maintainerURL": "https://github.com/ngnijland",
     "description": "A module that checks if a YouTube channel if streaming. If it is, it plays the live stream.",
-    "issues": 4,
+    "issues": 5,
     "tags": [
       "youtube",
       "live",
@@ -13606,7 +13613,7 @@
     "maintainer": "choffmann",
     "maintainerURL": "https://github.com/choffmann",
     "description": "Show the subscription from Youtube Channel.",
-    "issues": 9,
+    "issues": 10,
     "license": "MIT",
     "image": "img-preshow.jpg",
     "last_commit": "2021-07-16"
