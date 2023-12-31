@@ -150,6 +150,10 @@ def check_modules():
             "name": 'Replace "jshint" by "eslint".',
             "category": "Recommendation",
         },
+        "new Date()": {
+            "name": 'Replace "new Date()" by "Date.now()": [#3252](https://github.com/MichMich/MagicMirror/issues/3252).',
+            "category": "Recommendation",
+        },
     }
 
     modules_json_file = open("./docs/modules.temp.2.json", encoding="utf-8")
