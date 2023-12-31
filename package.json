@@ -31,6 +31,7 @@
     "eslint-plugin-import": "latest",
     "husky": "latest",
     "lint-staged": "latest",
+    "markdownlint-cli": "latest",
     "prettier": "^3.1.1",
     "stylelint": "latest",
     "stylelint-config-standard": "latest",
@@ -38,8 +39,8 @@
   },
   "scripts": {
     "all": "node create_module_list.js && python3 get_modules.py && node expand_module_list_with_repo_data.js && python3 check_modules.py",
-    "lint": "eslint . && stylelint **/*.css && prettier --check .",
-    "lint:fix": "eslint . --fix && stylelint **/docs/*.css --fix && prettier . --write",
+    "lint": "eslint . && stylelint **/docs/*.css && markdownlint README.md && prettier --check .",
+    "lint:fix": "eslint . --fix && stylelint **/docs/*.css --fix && markdownlint README.md --fix && prettier . --write",
     "prepare": "husky install",
     "test": "npm run lint"
   },
