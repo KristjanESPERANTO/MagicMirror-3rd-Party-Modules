@@ -1,6 +1,6 @@
 # Result of the module analysis
 
-Last update: 2023-12-28 20:16:50 UTC
+Last update: 2023-12-31 16:05:25 UTC
 
 ## Statistics
 
@@ -9,7 +9,7 @@ Last update: 2023-12-28 20:16:50 UTC
 | modules analyzed     |   1079   |
 | maintainer           |    622   |
 | modules with issues  |   1070   |
-| issues               |   5254   |
+| issues               |   5253   |
 | modules at github    |   1070   |
 | modules at gitlab    |      8   |
 | modules at bitbucket |      1   |
@@ -739,11 +739,6 @@ Last update: 2023-12-28 20:16:50 UTC
 ### [MMM-CalDAV by MMRIZE](https://github.com/MMRIZE/MMM-CalDAV)
 
 1. No image found.
-2. Information: There are updates for 3 dependencie(s):
-   -  googleapis  ^128.0.0  →  ^129.0.0
-   -  open          ^9.1.0  →   ^10.0.2
-   -  tsdav         ^2.0.5  →    ^2.0.7
-
 
 ### [MMM-CalendarExt2 by MMM-CalendarExt2](https://github.com/MMM-CalendarExt2/MMM-CalendarExt2)
 
@@ -2422,7 +2417,7 @@ Last update: 2023-12-28 20:16:50 UTC
 
 1. Information: There are updates for 5 dependencie(s):
    -  @grpc/grpc-js        ^1.9.11  →   ^1.9.13
-   -  esbuild              ^0.19.8  →  ^0.19.10
+   -  esbuild              ^0.19.8  →  ^0.19.11
    -  google-auth-library   ^9.2.0  →    ^9.4.1
    -  node-html-parser     ^6.1.11  →   ^6.1.12
    -  open                  ^9.1.0  →   ^10.0.2
@@ -3064,7 +3059,7 @@ Last update: 2023-12-28 20:16:50 UTC
 4. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
 5. The branch name is 'master'. Consider renaming it to 'main'.
 
-### [MMM-ImagesPhotos by sdetweil](https://github.com/sdetweil/MMM-ImagesPhotos)
+### [MMM-ImagesPhotos by roramirez](https://github.com/roramirez/MMM-ImagesPhotos)
 
 1. Recommendation: Found `"eslint-plugin-json"` in file `package.json`: Replace it by `eslint-plugin-jsonc`.
 2. Recommendation: Replace eslintrc by new flat config.
@@ -5333,9 +5328,10 @@ Last update: 2023-12-28 20:16:50 UTC
 ### [MMM-OnThisDay by nkl-kst](https://github.com/nkl-kst/MMM-OnThisDay)
 
 1. The branch name is 'master'. Consider renaming it to 'main'.
-2. Information: There are updates for 2 dependencie(s):
-   -  jsdom     ^22.1.0  →  ^23.0.1
-   -  prettier   ^3.1.0  →   ^3.1.1
+2. Information: There are updates for 3 dependencie(s):
+   -  follow-redirects  ^1.15.3  →  ^1.15.4
+   -  jsdom             ^22.1.0  →  ^23.0.1
+   -  prettier           ^3.1.0  →   ^3.1.1
 
 
 ### [MMM-OpelStatuses by santanachia](https://github.com/santanachia/MMM-OpelStatuses)
@@ -5666,7 +5662,7 @@ Last update: 2023-12-28 20:16:50 UTC
 
 1. The branch name is 'master'. Consider renaming it to 'main'.
 2. Information: There are updates for 1 dependencie(s):
-   -  esbuild  ^0.19.8  →  ^0.19.10
+   -  esbuild  ^0.19.8  →  ^0.19.11
 
 
 ### [MMM-PIR by mboskamp](https://github.com/mboskamp/MMM-PIR)

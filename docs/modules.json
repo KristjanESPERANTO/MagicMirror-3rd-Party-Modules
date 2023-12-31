@@ -1171,12 +1171,12 @@
     "maintainer": "MMRIZE",
     "maintainerURL": "",
     "description": "CalDav Parser to convert to iCal format.",
-    "issues": 2,
+    "issues": 1,
     "tags": [
       "caldav"
     ],
     "license": "MIT",
-    "last_commit": "2023-10-29"
+    "last_commit": "2023-12-29"
   },
   {
     "name": "MMM-CalendarExt2",
@@ -3123,7 +3123,7 @@
     "maintainerURL": "https://github.com/alanshen111",
     "description": "Displays some \u2728interesting\u2728 facts! Makes your mirror look like an RPG loading screen. Example screenshot included.",
     "issues": 3,
-    "last_commit": "2023-09-16"
+    "last_commit": "2023-12-28"
   },
   {
     "name": "MMM-Farevarsel",
@@ -5000,9 +5000,9 @@
   },
   {
     "name": "MMM-ImagesPhotos",
-    "url": "https://github.com/sdetweil/MMM-ImagesPhotos",
-    "id": "sdetweil/MMM-ImagesPhotos",
-    "maintainer": "sdetweil",
+    "url": "https://github.com/roramirez/MMM-ImagesPhotos",
+    "id": "roramirez/MMM-ImagesPhotos",
+    "maintainer": "roramirez",
     "maintainerURL": "",
     "description": "Show images and photos.",
     "issues": 3,
@@ -5012,7 +5012,7 @@
     ],
     "license": "MIT",
     "image": ".github-animate.jpg",
-    "last_commit": "2023-12-25"
+    "last_commit": "2023-12-29"
   },
   {
     "name": "MMM-imhdsk",
@@ -7403,7 +7403,7 @@
       "sensehat"
     ],
     "license": "MIT",
-    "last_commit": "2022-10-22"
+    "last_commit": "2023-12-31"
   },
   {
     "name": "MMM-MysqlQuery",
@@ -7782,7 +7782,7 @@
     ],
     "license": "MIT",
     "image": ".github-preview.bubbles.jpg",
-    "last_commit": "2023-12-25"
+    "last_commit": "2023-12-29"
   },
   {
     "name": "MMM-Netatmo-Presence",

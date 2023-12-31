@@ -5317,9 +5317,9 @@
   },
   {
     "name": "MMM-ImagesPhotos",
-    "url": "https://github.com/sdetweil/MMM-ImagesPhotos",
-    "id": "sdetweil/MMM-ImagesPhotos",
-    "maintainer": "sdetweil",
+    "url": "https://github.com/roramirez/MMM-ImagesPhotos",
+    "id": "roramirez/MMM-ImagesPhotos",
+    "maintainer": "roramirez",
     "maintainerURL": "",
     "description": "Show images and photos.",
     "issues": [],
