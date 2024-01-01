@@ -1,6 +1,6 @@
 # Result of the module analysis
 
-Last update: 2023-12-31 23:30:21 UTC
+Last update: 2024-01-01 19:36:47 UTC
 
 ## Statistics
 
@@ -9,7 +9,7 @@ Last update: 2023-12-31 23:30:21 UTC
 | modules analyzed     |   1079   |
 | maintainer           |    622   |
 | modules with issues  |   1074   |
-| issues               |   5623   |
+| issues               |   5625   |
 | modules at github    |   1070   |
 | modules at gitlab    |      8   |
 | modules at bitbucket |      1   |
@@ -34,7 +34,7 @@ Last update: 2023-12-31 23:30:21 UTC
 2. Typo: Found `MagicMirror2` in file `README.md`: Replace it with `MagicMirror²`.
 3. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
 4. Deprecated: Found `require('request')` in file `node_helper.js`: Replace it with built-in fetch.
-5. Recommendation: Found `new Date()` in file `node_helper.js`: Replace "new Date()" by "Date.now()": [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
+5. Recommendation: Found `new Date()` in file `node_helper.js`: Replace `new Date()` by `new Date(Date.now())`: [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
 6. The branch name is 'master'. Consider renaming it to 'main'.
 
 ### [MMM-AareGuru by buge](https://github.com/buge/MMM-AareGuru)
@@ -48,7 +48,7 @@ Last update: 2023-12-31 23:30:21 UTC
 1. There are no keywords in 'package.json'. We would use them as tags on the module list page.
 2. No image found.
 3. Typo: Found `Magic Mirror` in file `MMM-AC-aseag.js`: Replace it with `MagicMirror²`.
-4. Recommendation: Found `new Date()` in file `MMM-AC-aseag.js`: Replace "new Date()" by "Date.now()": [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
+4. Recommendation: Found `new Date()` in file `MMM-AC-aseag.js`: Replace `new Date()` by `new Date(Date.now())`: [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
 5. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
 6. Recommendation: Found `axios` in file `node_helper.js`: Replace it with built-in fetch.
 7. The branch name is 'master'. Consider renaming it to 'main'.
@@ -56,7 +56,7 @@ Last update: 2023-12-31 23:30:21 UTC
 ### [MMM-Advent by Jopyth](https://github.com/Jopyth/MMM-Advent)
 
 1. Typo: Found `Magic Mirror` in file `MMM-Advent.js`: Replace it with `MagicMirror²`.
-2. Recommendation: Found `new Date()` in file `MMM-Advent.js`: Replace "new Date()" by "Date.now()": [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
+2. Recommendation: Found `new Date()` in file `MMM-Advent.js`: Replace `new Date()` by `new Date(Date.now())`: [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
 3. Typo: Found `Magic Mirror` in file `README.md`: Replace it with `MagicMirror²`.
 4. Warning: No LICENSE file.
 5. The branch name is 'master'. Consider renaming it to 'main'.
@@ -75,7 +75,7 @@ Last update: 2023-12-31 23:30:21 UTC
 3. No image found.
 4. Recommendation: Found `jshint` in file `Gruntfile.js`: Replace "jshint" by "eslint".
 5. Typo: Found `Magic Mirror` in file `MMM-AirbarHelper.js`: Replace it with `MagicMirror²`.
-6. Recommendation: Found `new Date()` in file `MMM-AirbarHelper.js`: Replace "new Date()" by "Date.now()": [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
+6. Recommendation: Found `new Date()` in file `MMM-AirbarHelper.js`: Replace `new Date()` by `new Date(Date.now())`: [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
 7. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
 8. Deprecated: Found `"grunt"` in file `package.json`: Grunt is practically unmaintained. Move on to something better.
 9. Recommendation: Replace eslintrc by new flat config.
@@ -127,7 +127,7 @@ Last update: 2023-12-31 23:30:21 UTC
 2. There are no keywords in 'package.json'. We would use them as tags on the module list page.
 3. No image found.
 4. Recommendation: Found `XMLHttpRequest` in file `alexaRunner.babel.js`: Replace it with built-in fetch.
-5. Recommendation: Found `new Date()` in file `node_helper.js`: Replace "new Date()" by "Date.now()": [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
+5. Recommendation: Found `new Date()` in file `node_helper.js`: Replace `new Date()` by `new Date(Date.now())`: [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
 6. Recommendation: Found `XMLHttpRequest` in file `runDirectives.js`: Replace it with built-in fetch.
 7. The branch name is 'master'. Consider renaming it to 'main'.
 
@@ -166,7 +166,7 @@ Last update: 2023-12-31 23:30:21 UTC
 ### [MMM-AmLich by diyeverythingvn](https://github.com/diyeverythingvn/MMM-AmLich)
 
 1. There is no `package.json`. We need this file to gather information about the module for the module list page.
-2. Recommendation: Found `new Date()` in file `AmLich.js`: Replace "new Date()" by "Date.now()": [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
+2. Recommendation: Found `new Date()` in file `AmLich.js`: Replace `new Date()` by `new Date(Date.now())`: [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
 3. Warning: No LICENSE file.
 
 ### [anniversarymodule by marcomerens](https://github.com/marcomerens/anniversarymodule)
@@ -174,9 +174,9 @@ Last update: 2023-12-31 23:30:21 UTC
 1. There is no `package.json`. We need this file to gather information about the module for the module list page.
 2. Recommendation: Module name doesn't follow the recommended pattern (it doesn't start with `MMM-`). Consider renaming your module.
 3. Typo: Found `Magic Mirror` in file `MMM-Birthdays.js`: Replace it with `MagicMirror²`.
-4. Recommendation: Found `new Date()` in file `MMM-Birthdays.js`: Replace "new Date()" by "Date.now()": [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
+4. Recommendation: Found `new Date()` in file `MMM-Birthdays.js`: Replace `new Date()` by `new Date(Date.now())`: [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
 5. Typo: Found `Magic Mirror` in file `BIRTHDAYS.js`: Replace it with `MagicMirror²`.
-6. Recommendation: Found `new Date()` in file `BIRTHDAYS.js`: Replace "new Date()" by "Date.now()": [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
+6. Recommendation: Found `new Date()` in file `BIRTHDAYS.js`: Replace `new Date()` by `new Date(Date.now())`: [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
 7. Typo: Found `Magic Mirror` in file `README.md`: Replace it with `MagicMirror²`.
 8. Typo: Found `Magic Mirror` in file `README.md`: Replace it with `MagicMirror²`.
 9. Warning: No LICENSE file.
@@ -193,7 +193,7 @@ Last update: 2023-12-31 23:30:21 UTC
 ### [MMM-AoC by JonasTriki](https://github.com/JonasTriki/MMM-AoC)
 
 1. There is no `package.json`. We need this file to gather information about the module for the module list page.
-2. Recommendation: Found `new Date()` in file `MMM-AoC.js`: Replace "new Date()" by "Date.now()": [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
+2. Recommendation: Found `new Date()` in file `MMM-AoC.js`: Replace `new Date()` by `new Date(Date.now())`: [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
 3. Deprecated: Found `require("request")` in file `aoc.js`: Replace it with built-in fetch.
 4. The branch name is 'master'. Consider renaming it to 'main'.
 
@@ -204,7 +204,7 @@ Last update: 2023-12-31 23:30:21 UTC
 3. Typo: Found `Magic Mirror` in file `MMM-AOE2-STATS.js`: Replace it with `MagicMirror²`.
 4. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
 5. Deprecated: Found `require('request')` in file `node_helper.js`: Replace it with built-in fetch.
-6. Recommendation: Found `new Date()` in file `node_helper.js`: Replace "new Date()" by "Date.now()": [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
+6. Recommendation: Found `new Date()` in file `node_helper.js`: Replace `new Date()` by `new Date(Date.now())`: [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
 7. Typo: Found `MagicMirror2` in file `package.json`: Replace it with `MagicMirror²`.
 
 ### [MMM-ApexLegends by retroflex](https://github.com/retroflex/MMM-ApexLegends)
@@ -258,7 +258,7 @@ Last update: 2023-12-31 23:30:21 UTC
 
 ### [MMM-ArduPort by Dentrax](https://github.com/Dentrax/MMM-ArduPort)
 
-1. Recommendation: Found `new Date()` in file `MMM-ArduPort.js`: Replace "new Date()" by "Date.now()": [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
+1. Recommendation: Found `new Date()` in file `MMM-ArduPort.js`: Replace `new Date()` by `new Date(Date.now())`: [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
 2. Warning: No LICENSE file.
 3. The branch name is 'master'. Consider renaming it to 'main'.
 
@@ -287,7 +287,7 @@ Last update: 2023-12-31 23:30:21 UTC
 2. Typo: Found `Magic Mirror` in file `README.md`: Replace it with `MagicMirror²`.
 3. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
 4. Recommendation: Found `'node-fetch'` in file `node_helper.js`: Replace it with built-in fetch.
-5. Recommendation: Found `new Date()` in file `node_helper.js`: Replace "new Date()" by "Date.now()": [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
+5. Recommendation: Found `new Date()` in file `node_helper.js`: Replace `new Date()` by `new Date(Date.now())`: [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
 6. Warning: No LICENSE file.
 7. The branch name is 'master'. Consider renaming it to 'main'.
 
@@ -326,7 +326,7 @@ Last update: 2023-12-31 23:30:21 UTC
 ### [MMM-AutoDimmer by Fifteen15Studios](https://github.com/Fifteen15Studios/MMM-AutoDimmer)
 
 1. There is no `package.json`. We need this file to gather information about the module for the module list page.
-2. Recommendation: Found `new Date()` in file `MMM-AutoDimmer.js`: Replace "new Date()" by "Date.now()": [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
+2. Recommendation: Found `new Date()` in file `MMM-AutoDimmer.js`: Replace `new Date()` by `new Date(Date.now())`: [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
 3. The branch name is 'master'. Consider renaming it to 'main'.
 
 ### [MMM-AvfallshentingOslo by blixhavn](https://github.com/blixhavn/MMM-AvfallshentingOslo)
@@ -349,7 +349,7 @@ Last update: 2023-12-31 23:30:21 UTC
 1. `package.json` issue: No repository field.
 2. There are no keywords in 'package.json'. We would use them as tags on the module list page.
 3. Typo: Found `Magic Mirror` in file `MMM-Avinor.js`: Replace it with `MagicMirror²`.
-4. Recommendation: Found `new Date()` in file `MMM-Avinor.js`: Replace "new Date()" by "Date.now()": [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
+4. Recommendation: Found `new Date()` in file `MMM-Avinor.js`: Replace `new Date()` by `new Date(Date.now())`: [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
 5. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
 6. Deprecated: Found `require("request")` in file `node_helper.js`: Replace it with built-in fetch.
 7. Deprecated: Found `"grunt"` in file `package.json`: Grunt is practically unmaintained. Move on to something better.
@@ -375,7 +375,7 @@ Last update: 2023-12-31 23:30:21 UTC
 6. Deprecated: Found ` electron-rebuild` in file `installation.md`: Replace it with `@electron/rebuild`
 7. Deprecated: Found `require("request")` in file `node_helper.js`: Replace it with built-in fetch.
 8. Typo: Found `Magic Mirror` in file `package.json`: Replace it with `MagicMirror²`.
-9. Recommendation: Found `new Date()` in file `index.ts`: Replace "new Date()" by "Date.now()": [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
+9. Recommendation: Found `new Date()` in file `index.ts`: Replace `new Date()` by `new Date(Date.now())`: [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
 10. The branch name is 'master'. Consider renaming it to 'main'.
 
 ### [MMM-BackgroundSlideshow by darickc](https://github.com/darickc/MMM-BackgroundSlideshow)
@@ -410,7 +410,7 @@ Last update: 2023-12-31 23:30:21 UTC
 1. `package.json` issue: No repository field.
 2. `package.json` issue: No license field.
 3. There are no keywords in 'package.json'. We would use them as tags on the module list page.
-4. Recommendation: Found `new Date()` in file `MMM-BdxBus.js`: Replace "new Date()" by "Date.now()": [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
+4. Recommendation: Found `new Date()` in file `MMM-BdxBus.js`: Replace `new Date()` by `new Date(Date.now())`: [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
 5. Deprecated: Found `require('request')` in file `node_helper.js`: Replace it with built-in fetch.
 6. Recommendation: Found `require('https')` in file `node_helper.js`: Replace 'https' by 'node:https'.
 7. Recommendation: Found `XMLHttpRequest` in file `node_helper.js`: Replace it with built-in fetch.
@@ -437,7 +437,7 @@ Last update: 2023-12-31 23:30:21 UTC
 
 1. There is no `package.json`. We need this file to gather information about the module for the module list page.
 2. Recommendation: Found `XMLHttpRequest` in file `MMM-Bensinpriser.js`: Replace it with built-in fetch.
-3. Recommendation: Found `new Date()` in file `MMM-Bensinpriser.js`: Replace "new Date()" by "Date.now()": [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
+3. Recommendation: Found `new Date()` in file `MMM-Bensinpriser.js`: Replace `new Date()` by `new Date(Date.now())`: [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
 
 ### [MMM-bergfex by nebulx29](https://github.com/nebulx29/MMM-bergfex)
 
@@ -486,8 +486,8 @@ Last update: 2023-12-31 23:30:21 UTC
 1. An error occurred while getting information from 'package.json': Error: Invalid version: "1.1"
 2. Recommendation: Found `XMLHttpRequest` in file `MMM-BirdNET.js`: Replace it with built-in fetch.
 3. Typo: Found `<sup>2</sup>` in file `README.md`: Replace it with `²`.`.
-4. Recommendation: Found `new Date()` in file `leaflet-providers.js`: Replace "new Date()" by "Date.now()": [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
-5. Recommendation: Found `new Date()` in file `leaflet-src.js`: Replace "new Date()" by "Date.now()": [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
+4. Recommendation: Found `new Date()` in file `leaflet-providers.js`: Replace `new Date()` by `new Date(Date.now())`: [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
+5. Recommendation: Found `new Date()` in file `leaflet-src.js`: Replace `new Date()` by `new Date(Date.now())`: [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
 6. Warning: No LICENSE file.
 7. The branch name is 'master'. Consider renaming it to 'main'.
 
@@ -550,8 +550,8 @@ Last update: 2023-12-31 23:30:21 UTC
 ### [MMM-BluetoothDevices by timodejong95](https://github.com/timodejong95/MMM-BluetoothDevices)
 
 1. Recommendation: Found `uses: actions/checkout@v2` in file `nodejs.yml`: Replace it with v4.
-2. Recommendation: Found `new Date()` in file `Device.js`: Replace "new Date()" by "Date.now()": [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
-3. Recommendation: Found `new Date()` in file `CurrentTimeService.js`: Replace "new Date()" by "Date.now()": [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
+2. Recommendation: Found `new Date()` in file `Device.js`: Replace `new Date()` by `new Date(Date.now())`: [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
+3. Recommendation: Found `new Date()` in file `CurrentTimeService.js`: Replace `new Date()` by `new Date(Date.now())`: [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
 4. Warning: No LICENSE file.
 5. Recommendation: Replace eslintrc by new flat config.
 6. The branch name is 'master'. Consider renaming it to 'main'.
@@ -605,8 +605,8 @@ Last update: 2023-12-31 23:30:21 UTC
 2. Typo: Found `Magic Mirror` in file `README.md`: Replace it with `MagicMirror²`.
 3. Recommendation: Found `require("https")` in file `bmwrequest.js`: Replace "https" by "node:https".
 4. Recommendation: Found `"node-fetch"` in file `tokenmanager.js`: Replace it with built-in fetch.
-5. Recommendation: Found `new Date()` in file `tokenmanager.js`: Replace "new Date()" by "Date.now()": [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
-6. Recommendation: Found `new Date()` in file `node_helper.js`: Replace "new Date()" by "Date.now()": [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
+5. Recommendation: Found `new Date()` in file `tokenmanager.js`: Replace `new Date()` by `new Date(Date.now())`: [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
+6. Recommendation: Found `new Date()` in file `node_helper.js`: Replace `new Date()` by `new Date(Date.now())`: [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
 7. Typo: Found `Magic Mirror` in file `package.json`: Replace it with `MagicMirror²`.
 8. Recommendation: Found `"node-fetch"` in file `package.json`: Replace it with built-in fetch.
 9. The branch name is 'master'. Consider renaming it to 'main'.
@@ -674,7 +674,7 @@ Last update: 2023-12-31 23:30:21 UTC
 
 1. Recommendation: Found `require("https")` in file `BringClient.js`: Replace "https" by "node:https".
 2. Recommendation: Found `axios` in file `BringClient.js`: Replace it with built-in fetch.
-3. Recommendation: Found `new Date()` in file `BringClient.js`: Replace "new Date()" by "Date.now()": [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
+3. Recommendation: Found `new Date()` in file `BringClient.js`: Replace `new Date()` by `new Date(Date.now())`: [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
 4. Recommendation: Found `jshint` in file `MMM-Bring.js`: Replace "jshint" by "eslint".
 5. Typo: Found `Magic Mirror` in file `styles.css`: Replace it with `MagicMirror²`.
 6. Recommendation: Found `axios` in file `package.json`: Replace it with built-in fetch.
@@ -708,7 +708,7 @@ Last update: 2023-12-31 23:30:21 UTC
 
 1. An error occurred while getting information from 'package.json': Error: Invalid version: "1.0"
 2. Typo: Found `Magic Mirror` in file `MMM-Buller.js`: Replace it with `MagicMirror²`.
-3. Recommendation: Found `new Date()` in file `MMM-Buller.js`: Replace "new Date()" by "Date.now()": [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
+3. Recommendation: Found `new Date()` in file `MMM-Buller.js`: Replace `new Date()` by `new Date(Date.now())`: [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
 4. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
 5. Warning: No LICENSE file.
 6. The branch name is 'master'. Consider renaming it to 'main'.
@@ -752,7 +752,7 @@ Last update: 2023-12-31 23:30:21 UTC
 2. Typo: Found `Magic Mirror` in file `MMM-Buttons.js`: Replace it with `MagicMirror²`.
 3. Typo: Found `Magic Mirror` in file `README.md`: Replace it with `MagicMirror²`.
 4. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
-5. Recommendation: Found `new Date()` in file `node_helper.js`: Replace "new Date()" by "Date.now()": [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
+5. Recommendation: Found `new Date()` in file `node_helper.js`: Replace `new Date()` by `new Date(Date.now())`: [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
 6. Warning: No LICENSE file.
 
 ### [MMM-Bysykkel by JonasTriki](https://github.com/JonasTriki/MMM-Bysykkel)
@@ -765,7 +765,7 @@ Last update: 2023-12-31 23:30:21 UTC
 ### [MMM-CalDAV by MMRIZE](https://github.com/MMRIZE/MMM-CalDAV)
 
 1. No image found.
-2. Recommendation: Found `new Date()` in file `node_helper.js`: Replace "new Date()" by "Date.now()": [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
+2. Recommendation: Found `new Date()` in file `node_helper.js`: Replace `new Date()` by `new Date(Date.now())`: [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
 
 ### [MMM-CalendarExt2 by MMM-CalendarExt2](https://github.com/MMM-CalendarExt2/MMM-CalendarExt2)
 
@@ -775,23 +775,23 @@ Last update: 2023-12-31 23:30:21 UTC
 ### [MMM-CalendarExt3 by MMRIZE](https://github.com/MMRIZE/MMM-CalendarExt3)
 
 1. No image found.
-2. Recommendation: Found `new Date()` in file `MMM-CalendarExt3.js`: Replace "new Date()" by "Date.now()": [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
+2. Recommendation: Found `new Date()` in file `MMM-CalendarExt3.js`: Replace `new Date()` by `new Date(Date.now())`: [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
 
 ### [MMM-CalendarExt3Agenda by MMRIZE](https://github.com/MMRIZE/MMM-CalendarExt3Agenda)
 
 1. No image found.
-2. Recommendation: Found `new Date()` in file `MMM-CalendarExt3Agenda.js`: Replace "new Date()" by "Date.now()": [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
+2. Recommendation: Found `new Date()` in file `MMM-CalendarExt3Agenda.js`: Replace `new Date()` by `new Date(Date.now())`: [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
 
 ### [MMM-CalendarExt3Journal by MMRIZE](https://github.com/MMRIZE/MMM-CalendarExt3Journal)
 
 1. No image found.
-2. Recommendation: Found `new Date()` in file `MMM-CalendarExt3Journal.js`: Replace "new Date()" by "Date.now()": [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
+2. Recommendation: Found `new Date()` in file `MMM-CalendarExt3Journal.js`: Replace `new Date()` by `new Date(Date.now())`: [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
 
 ### [MMM-CalendarExt3Timeline by MMRIZE](https://github.com/MMRIZE/MMM-CalendarExt3Timeline)
 
 1. No image found.
-2. Recommendation: Found `new Date()` in file `CX3_shared.mjs`: Replace "new Date()" by "Date.now()": [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
-3. Recommendation: Found `new Date()` in file `MMM-CalendarExt3Timeline.js`: Replace "new Date()" by "Date.now()": [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
+2. Recommendation: Found `new Date()` in file `CX3_shared.mjs`: Replace `new Date()` by `new Date(Date.now())`: [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
+3. Recommendation: Found `new Date()` in file `MMM-CalendarExt3Timeline.js`: Replace `new Date()` by `new Date(Date.now())`: [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
 
 ### [MMM-CalendarExtMinimonth by MMM-CalendarExt2](https://github.com/MMM-CalendarExt2/MMM-CalendarExtMinimonth)
 
@@ -811,20 +811,20 @@ Last update: 2023-12-31 23:30:21 UTC
 ### [MMM-CalendarTodayTomorrow by qunu](https://github.com/qunu/MMM-CalendarTodayTomorrow)
 
 1. There is no `package.json`. We need this file to gather information about the module for the module list page.
-2. Recommendation: Found `new Date()` in file `MMM-CalendarTodayTomorrow.js`: Replace "new Date()" by "Date.now()": [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
+2. Recommendation: Found `new Date()` in file `MMM-CalendarTodayTomorrow.js`: Replace `new Date()` by `new Date(Date.now())`: [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
 3. Recommendation: Found `require("https")` in file `calendarfetcher.js`: Replace "https" by "node:https".
 4. Recommendation: Found `"node-fetch"` in file `calendarfetcher.js`: Replace it with built-in fetch.
-5. Recommendation: Found `new Date()` in file `calendarutils.js`: Replace "new Date()" by "Date.now()": [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
+5. Recommendation: Found `new Date()` in file `calendarutils.js`: Replace `new Date()` by `new Date(Date.now())`: [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
 6. Warning: No LICENSE file.
 
 ### [MMM-CalendarWeek by heskja](https://github.com/heskja/MMM-CalendarWeek)
 
 1. There is no `package.json`. We need this file to gather information about the module for the module list page.
 2. Typo: Found `Magic Mirror` in file `MMM-CalendarWeek.js`: Replace it with `MagicMirror²`.
-3. Recommendation: Found `new Date()` in file `MMM-CalendarWeek.js`: Replace "new Date()" by "Date.now()": [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
+3. Recommendation: Found `new Date()` in file `MMM-CalendarWeek.js`: Replace `new Date()` by `new Date(Date.now())`: [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
 4. Typo: Found `Magic Mirror` in file `README.md`: Replace it with `MagicMirror²`.
 5. Typo: Found `Magic Mirror` in file `calendarfetcher.js`: Replace it with `MagicMirror²`.
-6. Recommendation: Found `new Date()` in file `calendarfetcher.js`: Replace "new Date()" by "Date.now()": [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
+6. Recommendation: Found `new Date()` in file `calendarfetcher.js`: Replace `new Date()` by `new Date(Date.now())`: [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
 7. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
 8. Deprecated: Found `require('request')` in file `node-ical.js`: Replace it with built-in fetch.
 9. The branch name is 'master'. Consider renaming it to 'main'.
@@ -848,7 +848,7 @@ Last update: 2023-12-31 23:30:21 UTC
 2. Typo: Found `Magic Mirror` in file `MMM-Caltrain.js`: Replace it with `MagicMirror²`.
 3. Typo: Found `Magic Mirror` in file `README.md`: Replace it with `MagicMirror²`.
 4. Recommendation: Found `'node-fetch'` in file `node_helper.js`: Replace it with built-in fetch.
-5. Recommendation: Found `new Date()` in file `node_helper.js`: Replace "new Date()" by "Date.now()": [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
+5. Recommendation: Found `new Date()` in file `node_helper.js`: Replace `new Date()` by `new Date(Date.now())`: [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
 6. Warning: No LICENSE file.
 7. The branch name is 'master'. Consider renaming it to 'main'.
 
@@ -897,9 +897,7 @@ Last update: 2023-12-31 23:30:21 UTC
 
 ### [MMM-Carousel by shbatm](https://github.com/shbatm/MMM-Carousel)
 
-1. Recommendation: Found `"eslint-plugin-json"` in file `package.json`: Replace it by `eslint-plugin-jsonc`.
-2. Recommendation: Replace eslintrc by new flat config.
-3. The branch name is 'master'. Consider renaming it to 'main'.
+1. The branch name is 'master'. Consider renaming it to 'main'.
 
 ### [MMM-CECControl by nischi](https://github.com/nischi/MMM-CECControl)
 
@@ -920,7 +918,7 @@ Last update: 2023-12-31 23:30:21 UTC
 
 ### [MMM-CHAMPIONSQUEUE-LEADERBOARD by xadamxk](https://github.com/xadamxk/MMM-CHAMPIONSQUEUE-LEADERBOARD)
 
-1. Recommendation: Found `new Date()` in file `MMM-CHAMPIONSQUEUE-LEADERBOARD.js`: Replace "new Date()" by "Date.now()": [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
+1. Recommendation: Found `new Date()` in file `MMM-CHAMPIONSQUEUE-LEADERBOARD.js`: Replace `new Date()` by `new Date(Date.now())`: [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
 2. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
 3. Recommendation: Found `"node-fetch"` in file `node_helper.js`: Replace it with built-in fetch.
 4. Recommendation: Found `"node-fetch"` in file `package.json`: Replace it with built-in fetch.
@@ -964,7 +962,7 @@ Last update: 2023-12-31 23:30:21 UTC
 5. Recommendation: Found `XMLHttpRequest` in file `MMM-Chuck-Norris.js`: Replace it with built-in fetch.
 6. Typo: Found `Magic Mirror` in file `README.md`: Replace it with `MagicMirror²`.
 7. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
-8. Recommendation: Found `new Date()` in file `node_helper.js`: Replace "new Date()" by "Date.now()": [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
+8. Recommendation: Found `new Date()` in file `node_helper.js`: Replace `new Date()` by `new Date(Date.now())`: [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
 9. Typo: Found `Magic Mirror` in file `package.json`: Replace it with `MagicMirror²`.
 10. Deprecated: Found `"grunt"` in file `package.json`: Grunt is practically unmaintained. Move on to something better.
 11. Recommendation: Replace eslintrc by new flat config.
@@ -1042,7 +1040,7 @@ Last update: 2023-12-31 23:30:21 UTC
 
 1. Typo: Found `Magic Mirror` in file `MMM-CoinMarketCap.js`: Replace it with `MagicMirror²`.
 2. Recommendation: Found `XMLHttpRequest` in file `MMM-CoinMarketCap.js`: Replace it with built-in fetch.
-3. Recommendation: Found `new Date()` in file `MMM-CoinMarketCap.js`: Replace "new Date()" by "Date.now()": [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
+3. Recommendation: Found `new Date()` in file `MMM-CoinMarketCap.js`: Replace `new Date()` by `new Date(Date.now())`: [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
 4. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
 5. Deprecated: Found `require("request")` in file `node_helper.js`: Replace it with built-in fetch.
 6. The branch name is 'master'. Consider renaming it to 'main'.
@@ -1110,7 +1108,7 @@ Last update: 2023-12-31 23:30:21 UTC
 
 1. There is no `package.json`. We need this file to gather information about the module for the module list page.
 2. Typo: Found `Magic Mirror` in file `MMM-CountUP.js`: Replace it with `MagicMirror²`.
-3. Recommendation: Found `new Date()` in file `MMM-CountUP.js`: Replace "new Date()" by "Date.now()": [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
+3. Recommendation: Found `new Date()` in file `MMM-CountUP.js`: Replace `new Date()` by `new Date(Date.now())`: [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
 4. The branch name is 'master'. Consider renaming it to 'main'.
 
 ### [MMM-CoupEscooters by bogomips](https://github.com/bogomips/MMM-CoupEscooters)
@@ -1122,7 +1120,7 @@ Last update: 2023-12-31 23:30:21 UTC
 ### [MMM-CoupleDays by wiesty](https://github.com/wiesty/MMM-CoupleDays)
 
 1. There is no `package.json`. We need this file to gather information about the module for the module list page.
-2. Recommendation: Found `new Date()` in file `moment.js`: Replace "new Date()" by "Date.now()": [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
+2. Recommendation: Found `new Date()` in file `moment.js`: Replace `new Date()` by `new Date(Date.now())`: [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
 
 ### [MMM-covid19 by 0m4r](https://github.com/0m4r/MMM-covid19)
 
@@ -1133,7 +1131,7 @@ Last update: 2023-12-31 23:30:21 UTC
 5. Typo: Found `Magic Mirror` in file `README.md`: Replace it with `MagicMirror²`.
 6. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
 7. Recommendation: Found `'node-fetch'` in file `node_helper.js`: Replace it with built-in fetch.
-8. Recommendation: Found `new Date()` in file `node_helper.js`: Replace "new Date()" by "Date.now()": [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
+8. Recommendation: Found `new Date()` in file `node_helper.js`: Replace `new Date()` by `new Date(Date.now())`: [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
 9. Typo: Found `Magic Mirror` in file `package.json`: Replace it with `MagicMirror²`.
 10. Recommendation: Found `"node-fetch"` in file `package.json`: Replace it with built-in fetch.
 11. Warning: No LICENSE file.
@@ -1185,7 +1183,7 @@ Last update: 2023-12-31 23:30:21 UTC
 
 ### [MMM-CricketScores by dsouzadrian](https://github.com/dsouzadrian/MMM-CricketScores)
 
-1. Recommendation: Found `new Date()` in file `MMM-CricketScores.js`: Replace "new Date()" by "Date.now()": [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
+1. Recommendation: Found `new Date()` in file `MMM-CricketScores.js`: Replace `new Date()` by `new Date(Date.now())`: [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
 2. Deprecated: Found `require('request')` in file `node_helper.js`: Replace it with built-in fetch.
 
 ### [MMM-CrisisInformationSweden by boghammar](https://github.com/boghammar/MMM-CrisisInformationSweden)
@@ -1236,7 +1234,7 @@ Last update: 2023-12-31 23:30:21 UTC
 1. There are no keywords in 'package.json'. We would use them as tags on the module list page.
 2. Typo: Found `Magic Mirror` in file `MMM-Currentweather-MQTT.js`: Replace it with `MagicMirror²`.
 3. Recommendation: Found `XMLHttpRequest` in file `MMM-Currentweather-MQTT.js`: Replace it with built-in fetch.
-4. Recommendation: Found `new Date()` in file `MMM-Currentweather-MQTT.js`: Replace "new Date()" by "Date.now()": [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
+4. Recommendation: Found `new Date()` in file `MMM-Currentweather-MQTT.js`: Replace `new Date()` by `new Date(Date.now())`: [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
 5. The branch name is 'master'. Consider renaming it to 'main'.
 
 ### [MMM-Cursor by MarinescuEvghenii](https://github.com/MarinescuEvghenii/MMM-Cursor)
@@ -1249,7 +1247,7 @@ Last update: 2023-12-31 23:30:21 UTC
 ### [MMM-CustomElementTime by MMRIZE](https://github.com/MMRIZE/MMM-CustomElementTime)
 
 1. There is no `package.json`. We need this file to gather information about the module for the module list page.
-2. Recommendation: Found `new Date()` in file `MMM-CustomElementTime.js`: Replace "new Date()" by "Date.now()": [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
+2. Recommendation: Found `new Date()` in file `MMM-CustomElementTime.js`: Replace `new Date()` by `new Date(Date.now())`: [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
 
 ### [MMM-CustomMessage by jpcaldwell30](https://github.com/jpcaldwell30/MMM-CustomMessage)
 
@@ -1258,7 +1256,7 @@ Last update: 2023-12-31 23:30:21 UTC
 3. Recommendation: Found `XMLHttpRequest` in file `MMM-CustomMessage.js`: Replace it with built-in fetch.
 4. Typo: Found `Magic Mirror` in file `README.md`: Replace it with `MagicMirror²`.
 5. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
-6. Recommendation: Found `new Date()` in file `node_helper.js`: Replace "new Date()" by "Date.now()": [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
+6. Recommendation: Found `new Date()` in file `node_helper.js`: Replace `new Date()` by `new Date(Date.now())`: [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
 7. The branch name is 'master'. Consider renaming it to 'main'.
 
 ### [MMM-CyanideHappiness by werthdavid](https://github.com/werthdavid/MMM-CyanideHappiness)
@@ -1277,7 +1275,7 @@ Last update: 2023-12-31 23:30:21 UTC
 
 1. There is no `package.json`. We need this file to gather information about the module for the module list page.
 2. Recommendation: Found `XMLHttpRequest` in file `MMM-CzechPost.js`: Replace it with built-in fetch.
-3. Recommendation: Found `new Date()` in file `MMM-CzechPost.js`: Replace "new Date()" by "Date.now()": [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
+3. Recommendation: Found `new Date()` in file `MMM-CzechPost.js`: Replace `new Date()` by `new Date(Date.now())`: [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
 4. Typo: Found `MagicMirror2` in file `README.md`: Replace it with `MagicMirror²`.
 5. The branch name is 'master'. Consider renaming it to 'main'.
 
@@ -1285,10 +1283,10 @@ Last update: 2023-12-31 23:30:21 UTC
 
 1. `package.json` issue: No repository field.
 2. There are no keywords in 'package.json'. We would use them as tags on the module list page.
-3. Recommendation: Found `new Date()` in file `d2l.js`: Replace "new Date()" by "Date.now()": [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
-4. Recommendation: Found `new Date()` in file `index.html`: Replace "new Date()" by "Date.now()": [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
+3. Recommendation: Found `new Date()` in file `d2l.js`: Replace `new Date()` by `new Date(Date.now())`: [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
+4. Recommendation: Found `new Date()` in file `index.html`: Replace `new Date()` by `new Date(Date.now())`: [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
 5. Recommendation: Found `XMLHttpRequest` in file `node_helper.js`: Replace it with built-in fetch.
-6. Recommendation: Found `new Date()` in file `node_helper.js`: Replace "new Date()" by "Date.now()": [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
+6. Recommendation: Found `new Date()` in file `node_helper.js`: Replace `new Date()` by `new Date(Date.now())`: [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
 7. Typo: Found `MagicMirror2` in file `package.json`: Replace it with `MagicMirror²`.
 
 ### [MMM-Dad-Jokes by brucetony](https://github.com/brucetony/MMM-Dad-Jokes)
@@ -1309,7 +1307,7 @@ Last update: 2023-12-31 23:30:21 UTC
 1. There are no keywords in 'package.json'. We would use them as tags on the module list page.
 2. Recommendation: Found `uses: actions/checkout@v3` in file `lint.yml`: Replace it with v4.
 3. Typo: Found `Magic Mirror` in file `MMM-DagelijksWoord.js`: Replace it with `MagicMirror²`.
-4. Recommendation: Found `new Date()` in file `MMM-DagelijksWoord.js`: Replace "new Date()" by "Date.now()": [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
+4. Recommendation: Found `new Date()` in file `MMM-DagelijksWoord.js`: Replace `new Date()` by `new Date(Date.now())`: [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
 5. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
 6. Recommendation: Found `require("https")` in file `node_helper.js`: Replace "https" by "node:https".
 7. Recommendation: Replace eslintrc by new flat config.
@@ -1377,7 +1375,7 @@ Last update: 2023-12-31 23:30:21 UTC
 
 1. There is no `package.json`. We need this file to gather information about the module for the module list page.
 2. Recommendation: Found `require('https')` in file `node_helper.js`: Replace 'https' by 'node:https'.
-3. Recommendation: Found `new Date()` in file `node_helper.js`: Replace "new Date()" by "Date.now()": [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
+3. Recommendation: Found `new Date()` in file `node_helper.js`: Replace `new Date()` by `new Date(Date.now())`: [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
 4. Warning: No LICENSE file.
 5. The branch name is 'master'. Consider renaming it to 'main'.
 
@@ -1397,7 +1395,7 @@ Last update: 2023-12-31 23:30:21 UTC
 2. Recommendation: Module name doesn't follow the recommended pattern (it doesn't start with `MMM-`). Consider renaming your module.
 3. Typo: Found `<sup>2</sup>` in file `README.md`: Replace it with `²`.`.
 4. Recommendation: Found `require('https')` in file `node_helper.js`: Replace 'https' by 'node:https'.
-5. Recommendation: Found `new Date()` in file `node_helper.js`: Replace "new Date()" by "Date.now()": [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
+5. Recommendation: Found `new Date()` in file `node_helper.js`: Replace `new Date()` by `new Date(Date.now())`: [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
 6. The branch name is 'master'. Consider renaming it to 'main'.
 
 ### [MMM-darksky-hourly by jacquesCedric](https://github.com/jacquesCedric/MMM-darksky-hourly)
@@ -1457,9 +1455,9 @@ Last update: 2023-12-31 23:30:21 UTC
 1. There are no keywords in 'package.json'. We would use them as tags on the module list page.
 2. Typo: Found `Magic Mirror` in file `MMM-DBF.js`: Replace it with `MagicMirror²`.
 3. Recommendation: Found `XMLHttpRequest` in file `MMM-DBF.js`: Replace it with built-in fetch.
-4. Recommendation: Found `new Date()` in file `MMM-DBF.js`: Replace "new Date()" by "Date.now()": [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
+4. Recommendation: Found `new Date()` in file `MMM-DBF.js`: Replace `new Date()` by `new Date(Date.now())`: [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
 5. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
-6. Recommendation: Found `new Date()` in file `node_helper.js`: Replace "new Date()" by "Date.now()": [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
+6. Recommendation: Found `new Date()` in file `node_helper.js`: Replace `new Date()` by `new Date(Date.now())`: [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
 7. Deprecated: Found `"grunt"` in file `package.json`: Grunt is practically unmaintained. Move on to something better.
 8. Warning: No LICENSE file.
 9. The branch name is 'master'. Consider renaming it to 'main'.
@@ -1472,7 +1470,7 @@ Last update: 2023-12-31 23:30:21 UTC
 4. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
 5. Recommendation: Found `require('https')` in file `node_helper.js`: Replace 'https' by 'node:https'.
 6. Recommendation: Found `require('https')` in file `getStationCodes.js`: Replace 'https' by 'node:https'.
-7. Recommendation: Found `new Date()` in file `getStationCodes.js`: Replace "new Date()" by "Date.now()": [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
+7. Recommendation: Found `new Date()` in file `getStationCodes.js`: Replace `new Date()` by `new Date(Date.now())`: [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
 8. The branch name is 'master'. Consider renaming it to 'main'.
 
 ### [MMM-DCMetroTrainTimes by AdamMoses-GitHub](https://github.com/AdamMoses-GitHub/MMM-DCMetroTrainTimes)
@@ -1483,7 +1481,7 @@ Last update: 2023-12-31 23:30:21 UTC
 4. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
 5. Recommendation: Found `require('https')` in file `node_helper.js`: Replace 'https' by 'node:https'.
 6. Recommendation: Found `require('https')` in file `getStationCodes.js`: Replace 'https' by 'node:https'.
-7. Recommendation: Found `new Date()` in file `getStationCodes.js`: Replace "new Date()" by "Date.now()": [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
+7. Recommendation: Found `new Date()` in file `getStationCodes.js`: Replace `new Date()` by `new Date(Date.now())`: [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
 8. The branch name is 'master'. Consider renaming it to 'main'.
 
 ### [MMM-DefaultWeatherAnimated by MatthiPi](https://github.com/MatthiPi/MMM-DefaultWeatherAnimated)
@@ -1496,7 +1494,7 @@ Last update: 2023-12-31 23:30:21 UTC
 
 1. There is no `package.json`. We need this file to gather information about the module for the module list page.
 2. Recommendation: Found `XMLHttpRequest` in file `MMM-DeLijn.js`: Replace it with built-in fetch.
-3. Recommendation: Found `new Date()` in file `MMM-DeLijn.js`: Replace "new Date()" by "Date.now()": [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
+3. Recommendation: Found `new Date()` in file `MMM-DeLijn.js`: Replace `new Date()` by `new Date(Date.now())`: [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
 4. Typo: Found `Magic Mirror` in file `README.md`: Replace it with `MagicMirror²`.
 5. Warning: No LICENSE file.
 6. The branch name is 'master'. Consider renaming it to 'main'.
@@ -1639,7 +1637,7 @@ Last update: 2023-12-31 23:30:21 UTC
 ### [MMM-DWD-Pollen by carstendirks](https://github.com/carstendirks/MMM-DWD-Pollen)
 
 1. There are no keywords in 'package.json'. We would use them as tags on the module list page.
-2. Recommendation: Found `new Date()` in file `MMM-DWD-Pollen.js`: Replace "new Date()" by "Date.now()": [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
+2. Recommendation: Found `new Date()` in file `MMM-DWD-Pollen.js`: Replace `new Date()` by `new Date(Date.now())`: [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
 3. Typo: Found `Magic Mirror` in file `README.md`: Replace it with `MagicMirror²`.
 4. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
 5. Deprecated: Found `require("request")` in file `node_helper.js`: Replace it with built-in fetch.
@@ -1676,13 +1674,15 @@ Last update: 2023-12-31 23:30:21 UTC
 ### [MMM-DynamicWeather by scottcl88](https://github.com/scottcl88/MMM-DynamicWeather)
 
 1. Recommendation: Found `uses: actions/checkout@v2` in file `codeql-analysis.yml`: Replace it with v4.
-2. Recommendation: Found `new Date()` in file `MMM-DynamicWeather.js`: Replace "new Date()" by "Date.now()": [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
-3. Typo: Found `Magic Mirror` in file `MMM-DynamicWeather.ts`: Replace it with `MagicMirror²`.
-4. Recommendation: Found `new Date()` in file `MMM-DynamicWeather.ts`: Replace "new Date()" by "Date.now()": [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
-5. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
-6. Deprecated: Found `require("request")` in file `node_helper.js`: Replace it with built-in fetch.
-7. Found directory `node_modules`. This shouldn't be uploaded. Add `node_modules/`to `.gitignore`.
-8. The branch name is 'master'. Consider renaming it to 'main'.
+2. Recommendation: Found `new Date()` in file `MMM-DynamicWeather.js`: Replace `new Date()` by `new Date(Date.now())`: [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
+3. Deprecated: Found `getYear()` in file `MMM-DynamicWeather.js`: Replace `getYear()` by `getFullYear()`.
+4. Typo: Found `Magic Mirror` in file `MMM-DynamicWeather.ts`: Replace it with `MagicMirror²`.
+5. Recommendation: Found `new Date()` in file `MMM-DynamicWeather.ts`: Replace `new Date()` by `new Date(Date.now())`: [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
+6. Deprecated: Found `getYear()` in file `MMM-DynamicWeather.ts`: Replace `getYear()` by `getFullYear()`.
+7. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
+8. Deprecated: Found `require("request")` in file `node_helper.js`: Replace it with built-in fetch.
+9. Found directory `node_modules`. This shouldn't be uploaded. Add `node_modules/`to `.gitignore`.
+10. The branch name is 'master'. Consider renaming it to 'main'.
 
 ### [MMM-EARTH by mykle1](https://github.com/mykle1/MMM-EARTH)
 
@@ -1712,11 +1712,11 @@ Last update: 2023-12-31 23:30:21 UTC
 
 1. There is no `package.json`. We need this file to gather information about the module for the module list page.
 2. Recommendation: Found `XMLHttpRequest` in file `MMM-EarthquakeMonitor.js`: Replace it with built-in fetch.
-3. Recommendation: Found `new Date()` in file `MMM-EarthquakeMonitor.js`: Replace "new Date()" by "Date.now()": [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
+3. Recommendation: Found `new Date()` in file `MMM-EarthquakeMonitor.js`: Replace `new Date()` by `new Date(Date.now())`: [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
 
 ### [MMM-EasyPix by KristjanESPERANTO](https://github.com/KristjanESPERANTO/MMM-EasyPix)
 
-1. Recommendation: Found `new Date()` in file `MMM-EasyPix.js`: Replace "new Date()" by "Date.now()": [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
+1. Recommendation: Found `new Date()` in file `MMM-EasyPix.js`: Replace `new Date()` by `new Date(Date.now())`: [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
 
 ### [MMM-Ecobee by parnic](https://github.com/parnic/MMM-Ecobee)
 
@@ -1725,7 +1725,7 @@ Last update: 2023-12-31 23:30:21 UTC
 3. Typo: Found `Magic Mirror` in file `MMM-Ecobee.js`: Replace it with `MagicMirror²`.
 4. Typo: Found `Magic Mirror` in file `README.md`: Replace it with `MagicMirror²`.
 5. Recommendation: Found `require("https")` in file `node_helper.js`: Replace "https" by "node:https".
-6. Recommendation: Found `new Date()` in file `node_helper.js`: Replace "new Date()" by "Date.now()": [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
+6. Recommendation: Found `new Date()` in file `node_helper.js`: Replace `new Date()` by `new Date(Date.now())`: [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
 7. Typo: Found `MagicMirror2` in file `package.json`: Replace it with `MagicMirror²`.
 8. Recommendation: Replace eslintrc by new flat config.
 
@@ -1762,7 +1762,7 @@ Last update: 2023-12-31 23:30:21 UTC
 
 1. There is no `package.json`. We need this file to gather information about the module for the module list page.
 2. Recommendation: Found `XMLHttpRequest` in file `MMM-ELMPrayerTime.js`: Replace it with built-in fetch.
-3. Recommendation: Found `new Date()` in file `MMM-ELMPrayerTime.js`: Replace "new Date()" by "Date.now()": [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
+3. Recommendation: Found `new Date()` in file `MMM-ELMPrayerTime.js`: Replace `new Date()` by `new Date(Date.now())`: [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
 4. Typo: Found `<sup>2</sup>` in file `README.md`: Replace it with `²`.`.
 5. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
 6. Deprecated: Found `omxplayer` in file `node_helper.js`: Try to replace it with `vlc`.
@@ -1772,7 +1772,7 @@ Last update: 2023-12-31 23:30:21 UTC
 
 1. Typo: Found `Magic Mirror` in file `MMM-Elvira.js`: Replace it with `MagicMirror²`.
 2. Deprecated: Found `require('request')` in file `node_helper.js`: Replace it with built-in fetch.
-3. Recommendation: Found `new Date()` in file `node_helper.js`: Replace "new Date()" by "Date.now()": [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
+3. Recommendation: Found `new Date()` in file `node_helper.js`: Replace `new Date()` by `new Date(Date.now())`: [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
 4. Recommendation: Replace eslintrc by new flat config.
 
 ### [MMM-EmbedURL by Tom-Hirschberger](https://github.com/Tom-Hirschberger/MMM-EmbedURL)
@@ -1795,7 +1795,7 @@ Last update: 2023-12-31 23:30:21 UTC
 
 ### [MMM-EMTValencia by TheRaulXP](https://github.com/TheRaulXP/MMM-EMTValencia)
 
-1. Recommendation: Found `new Date()` in file `MMM-EMTValencia.js`: Replace "new Date()" by "Date.now()": [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
+1. Recommendation: Found `new Date()` in file `MMM-EMTValencia.js`: Replace `new Date()` by `new Date(Date.now())`: [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
 2. Typo: Found `<sup>2</sup>` in file `README.md`: Replace it with `²`.`.
 3. Recommendation: Found `require('http')` in file `node_helper.js`: Replace 'http' by 'node:http'.
 4. Warning: No LICENSE file.
@@ -1822,7 +1822,7 @@ Last update: 2023-12-31 23:30:21 UTC
 
 ### [MMM-EnvCanada by CharlesMorris78](https://github.com/CharlesMorris78/MMM-EnvCanada)
 
-1. Recommendation: Found `new Date()` in file `MMM-EnvCanada.js`: Replace "new Date()" by "Date.now()": [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
+1. Recommendation: Found `new Date()` in file `MMM-EnvCanada.js`: Replace `new Date()` by `new Date(Date.now())`: [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
 
 ### [MMM-EOL by mykle1](https://github.com/mykle1/MMM-EOL)
 
@@ -1834,7 +1834,7 @@ Last update: 2023-12-31 23:30:21 UTC
 
 ### [MMM-EskomSePush by mumblebaj](https://github.com/mumblebaj/MMM-EskomSePush)
 
-1. Recommendation: Found `new Date()` in file `MMM-EskomSePush.js`: Replace "new Date()" by "Date.now()": [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
+1. Recommendation: Found `new Date()` in file `MMM-EskomSePush.js`: Replace `new Date()` by `new Date(Date.now())`: [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
 2. Recommendation: Found `'node-fetch'` in file `node_helper.js`: Replace it with built-in fetch.
 3. Recommendation: Found `"node-fetch"` in file `package.json`: Replace it with built-in fetch.
 
@@ -1864,7 +1864,7 @@ Last update: 2023-12-31 23:30:21 UTC
 2. Typo: Found `Magic Mirror` in file `MMM-Ethos.js`: Replace it with `MagicMirror²`.
 3. Recommendation: Found `XMLHttpRequest` in file `MMM-Ethos.js`: Replace it with built-in fetch.
 4. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
-5. Recommendation: Found `new Date()` in file `node_helper.js`: Replace "new Date()" by "Date.now()": [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
+5. Recommendation: Found `new Date()` in file `node_helper.js`: Replace `new Date()` by `new Date(Date.now())`: [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
 6. Deprecated: Found `"grunt"` in file `package.json`: Grunt is practically unmaintained. Move on to something better.
 7. The branch name is 'master'. Consider renaming it to 'main'.
 
@@ -1879,7 +1879,7 @@ Last update: 2023-12-31 23:30:21 UTC
 0. This module is outdated: Deprecated. Eventful API discontinued. This module needs updated.
 1. There is no `package.json`. We need this file to gather information about the module for the module list page.
 2. Typo: Found `Magic Mirror` in file `MMM-Events.js`: Replace it with `MagicMirror²`.
-3. Recommendation: Found `new Date()` in file `MMM-Events.js`: Replace "new Date()" by "Date.now()": [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
+3. Recommendation: Found `new Date()` in file `MMM-Events.js`: Replace `new Date()` by `new Date(Date.now())`: [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
 4. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
 5. Deprecated: Found `require('request')` in file `node_helper.js`: Replace it with built-in fetch.
 6. The branch name is 'master'. Consider renaming it to 'main'.
@@ -1897,7 +1897,7 @@ Last update: 2023-12-31 23:30:21 UTC
 
 1. There is no `package.json`. We need this file to gather information about the module for the module list page.
 2. Typo: Found `Magic Mirror` in file `MMM-EyeCandy.js`: Replace it with `MagicMirror²`.
-3. Recommendation: Found `new Date()` in file `MMM-EyeCandy.js`: Replace "new Date()" by "Date.now()": [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
+3. Recommendation: Found `new Date()` in file `MMM-EyeCandy.js`: Replace `new Date()` by `new Date(Date.now())`: [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
 4. The branch name is 'master'. Consider renaming it to 'main'.
 
 ### [MMM-F1 by jupadin](https://github.com/jupadin/MMM-F1)
@@ -1951,7 +1951,7 @@ Last update: 2023-12-31 23:30:21 UTC
 1. Typo: Found `Magic Mirror` in file `MMM-Faces.js`: Replace it with `MagicMirror²`.
 2. Typo: Found `Magic Mirror` in file `README.md`: Replace it with `MagicMirror²`.
 3. Typo: Found `Magic Mirror` in file `package.json`: Replace it with `MagicMirror²`.
-4. Recommendation: Found `new Date()` in file `main.js`: Replace "new Date()" by "Date.now()": [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
+4. Recommendation: Found `new Date()` in file `main.js`: Replace `new Date()` by `new Date(Date.now())`: [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
 
 ### [MMM-Facial-Recognition by paviro](https://github.com/paviro/MMM-Facial-Recognition)
 
@@ -2052,9 +2052,9 @@ Last update: 2023-12-31 23:30:21 UTC
 
 ### [MMM-FF-multigeiger by shin10](https://github.com/shin10/MMM-FF-multigeiger)
 
-1. Recommendation: Found `new Date()` in file `MMM-FF-multigeiger.js`: Replace "new Date()" by "Date.now()": [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
+1. Recommendation: Found `new Date()` in file `MMM-FF-multigeiger.js`: Replace `new Date()` by `new Date(Date.now())`: [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
 2. Recommendation: Found `axios` in file `dataFetcher.js`: Replace it with built-in fetch.
-3. Recommendation: Found `new Date()` in file `dataFetcher.js`: Replace "new Date()" by "Date.now()": [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
+3. Recommendation: Found `new Date()` in file `dataFetcher.js`: Replace `new Date()` by `new Date(Date.now())`: [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
 4. Recommendation: Found `axios` in file `package.json`: Replace it with built-in fetch.
 5. Recommendation: Replace eslintrc by new flat config.
 
@@ -2110,7 +2110,7 @@ Last update: 2023-12-31 23:30:21 UTC
 
 1. Typo: Found `Magic Mirror` in file `README.md`: Replace it with `MagicMirror²`.
 2. Deprecated: Found `require('request')` in file `node_helper.js`: Replace it with built-in fetch.
-3. Recommendation: Found `new Date()` in file `node_helper.js`: Replace "new Date()" by "Date.now()": [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
+3. Recommendation: Found `new Date()` in file `node_helper.js`: Replace `new Date()` by `new Date(Date.now())`: [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
 4. The branch name is 'master'. Consider renaming it to 'main'.
 
 ### [MMM-Fish by nigel-daniels](https://github.com/nigel-daniels/MMM-Fish)
@@ -2130,7 +2130,7 @@ Last update: 2023-12-31 23:30:21 UTC
 ### [MMM-FlagRise by ItsMeBrille](https://github.com/ItsMeBrille/MMM-FlagRise)
 
 1. There is no `package.json`. We need this file to gather information about the module for the module list page.
-2. Recommendation: Found `new Date()` in file `MMM-FlagRise.js`: Replace "new Date()" by "Date.now()": [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
+2. Recommendation: Found `new Date()` in file `MMM-FlagRise.js`: Replace `new Date()` by `new Date(Date.now())`: [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
 3. Typo: Found `MagicMirror2` in file `README.md`: Replace it with `MagicMirror²`.
 4. Warning: No LICENSE file.
 
@@ -2140,7 +2140,7 @@ Last update: 2023-12-31 23:30:21 UTC
 2. `package.json` issue: No repository field.
 3. There are no specific keywords in 'package.json'. We would use them as tags on the module list page. Add a few meaningful terms to the keywords in the package.json. Not just “magicmirror” or “module”.
 4. No image found.
-5. Recommendation: Found `new Date()` in file `MMM-flatastic.js`: Replace "new Date()" by "Date.now()": [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
+5. Recommendation: Found `new Date()` in file `MMM-flatastic.js`: Replace `new Date()` by `new Date(Date.now())`: [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
 6. Deprecated: Found `require('request')` in file `node_helper.js`: Replace it with built-in fetch.
 7. The branch name is 'master'. Consider renaming it to 'main'.
 
@@ -2198,18 +2198,18 @@ Last update: 2023-12-31 23:30:21 UTC
 2. Typo: Found `Magic Mirror` in file `MMM-FlipClock.js`: Replace it with `MagicMirror²`.
 3. Typo: Found `Magic Mirror` in file `README.md`: Replace it with `MagicMirror²`.
 4. Recommendation: Found `XMLHttpRequest` in file `flip.js`: Replace it with built-in fetch.
-5. Recommendation: Found `new Date()` in file `flip.js`: Replace "new Date()" by "Date.now()": [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
+5. Recommendation: Found `new Date()` in file `flip.js`: Replace `new Date()` by `new Date(Date.now())`: [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
 6. The branch name is 'master'. Consider renaming it to 'main'.
 
 ### [MMM-Flo by kagjerde](https://github.com/kagjerde/MMM-Flo)
 
 1. There is no `package.json`. We need this file to gather information about the module for the module list page.
 2. Typo: Found `Magic Mirror` in file `MMM-Flo.js`: Replace it with `MagicMirror²`.
-3. Recommendation: Found `new Date()` in file `MMM-Flo.js`: Replace "new Date()" by "Date.now()": [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
+3. Recommendation: Found `new Date()` in file `MMM-Flo.js`: Replace `new Date()` by `new Date(Date.now())`: [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
 4. Typo: Found `Magic Mirror` in file `README.md`: Replace it with `MagicMirror²`.
 5. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
 6. Deprecated: Found `require("request")` in file `node_helper.js`: Replace it with built-in fetch.
-7. Recommendation: Found `new Date()` in file `node_helper.js`: Replace "new Date()" by "Date.now()": [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
+7. Recommendation: Found `new Date()` in file `node_helper.js`: Replace `new Date()` by `new Date(Date.now())`: [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
 8. Warning: No LICENSE file.
 9. The branch name is 'master'. Consider renaming it to 'main'.
 
@@ -2217,11 +2217,11 @@ Last update: 2023-12-31 23:30:21 UTC
 
 1. There is no `package.json`. We need this file to gather information about the module for the module list page.
 2. Typo: Found `Magic Mirror` in file `MMM-FloGraph.js`: Replace it with `MagicMirror²`.
-3. Recommendation: Found `new Date()` in file `MMM-FloGraph.js`: Replace "new Date()" by "Date.now()": [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
+3. Recommendation: Found `new Date()` in file `MMM-FloGraph.js`: Replace `new Date()` by `new Date(Date.now())`: [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
 4. Typo: Found `Magic Mirror` in file `README.md`: Replace it with `MagicMirror²`.
 5. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
 6. Deprecated: Found `require("request")` in file `node_helper.js`: Replace it with built-in fetch.
-7. Recommendation: Found `new Date()` in file `node_helper.js`: Replace "new Date()" by "Date.now()": [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
+7. Recommendation: Found `new Date()` in file `node_helper.js`: Replace `new Date()` by `new Date(Date.now())`: [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
 8. Warning: No LICENSE file.
 9. The branch name is 'master'. Consider renaming it to 'main'.
 
@@ -2252,7 +2252,7 @@ Last update: 2023-12-31 23:30:21 UTC
 2. Deprecated: Found `node-version: [16` in file `node.js.yml`: Update to current version.
 3. Recommendation: Found `XMLHttpRequest` in file `MMM-Formula1.js`: Replace it with built-in fetch.
 4. Typo: Found `Magic Mirror` in file `README.md`: Replace it with `MagicMirror²`.
-5. Recommendation: Found `new Date()` in file `node_helper.js`: Replace "new Date()" by "Date.now()": [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
+5. Recommendation: Found `new Date()` in file `node_helper.js`: Replace `new Date()` by `new Date(Date.now())`: [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
 6. Recommendation: Replace eslintrc by new flat config.
 7. The branch name is 'master'. Consider renaming it to 'main'.
 
@@ -2278,14 +2278,14 @@ Last update: 2023-12-31 23:30:21 UTC
 3. Typo: Found `Magic Mirror` in file `MMM-Fortune.js`: Replace it with `MagicMirror²`.
 4. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
 5. Deprecated: Found `require('request')` in file `node_helper.js`: Replace it with built-in fetch.
-6. Recommendation: Found `new Date()` in file `node_helper.js`: Replace "new Date()" by "Date.now()": [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
+6. Recommendation: Found `new Date()` in file `node_helper.js`: Replace `new Date()` by `new Date(Date.now())`: [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
 7. The branch name is 'master'. Consider renaming it to 'main'.
 
 ### [MMM-FrameLight by RaspiManu](https://github.com/RaspiManu/MMM-FrameLight)
 
 1. There is no `package.json`. We need this file to gather information about the module for the module list page.
 2. Typo: Found `Magic Mirror` in file `MMM-FrameLight.js`: Replace it with `MagicMirror²`.
-3. Recommendation: Found `new Date()` in file `MMM-FrameLight.js`: Replace "new Date()" by "Date.now()": [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
+3. Recommendation: Found `new Date()` in file `MMM-FrameLight.js`: Replace `new Date()` by `new Date(Date.now())`: [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
 4. Typo: Found `Magic Mirror` in file `color_picker.js`: Replace it with `MagicMirror²`.
 5. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
 6. Recommendation: Found `"node-fetch"` in file `node_helper.js`: Replace it with built-in fetch.
@@ -2295,12 +2295,12 @@ Last update: 2023-12-31 23:30:21 UTC
 
 1. Typo: Found `Magic Mirror` in file `MMM-FreeBox-Monitor.js`: Replace it with `MagicMirror²`.
 2. Typo: Found `Magic Mirror` in file `README.md`: Replace it with `MagicMirror²`.
-3. Recommendation: Found `new Date()` in file `freeboxapi.js`: Replace "new Date()" by "Date.now()": [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
+3. Recommendation: Found `new Date()` in file `freeboxapi.js`: Replace `new Date()` by `new Date(Date.now())`: [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
 4. Typo: Found `Magic Mirror` in file `config.js`: Replace it with `MagicMirror²`.
 5. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
 6. Typo: Found `Magic Mirror` in file `package.json`: Replace it with `MagicMirror²`.
 7. Recommendation: Found `jshint` in file `progressbar.js`: Replace "jshint" by "eslint".
-8. Recommendation: Found `new Date()` in file `progressbar.js`: Replace "new Date()" by "Date.now()": [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
+8. Recommendation: Found `new Date()` in file `progressbar.js`: Replace `new Date()` by `new Date(Date.now())`: [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
 
 ### [MMM-FrenchHoroscope by Amand-M](https://github.com/Amand-M/MMM-FrenchHoroscope)
 
@@ -2371,7 +2371,7 @@ Last update: 2023-12-31 23:30:21 UTC
 ### [MMM-FunnyHolidays by mattileh](https://github.com/mattileh/MMM-FunnyHolidays)
 
 1. Typo: Found `Magic Mirror` in file `MMM-FunnyHolidays.js`: Replace it with `MagicMirror²`.
-2. Recommendation: Found `new Date()` in file `MMM-FunnyHolidays.js`: Replace "new Date()" by "Date.now()": [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
+2. Recommendation: Found `new Date()` in file `MMM-FunnyHolidays.js`: Replace `new Date()` by `new Date(Date.now())`: [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
 3. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
 4. Deprecated: Found `require('request')` in file `node_helper.js`: Replace it with built-in fetch.
 5. Warning: No LICENSE file.
@@ -2402,16 +2402,16 @@ Last update: 2023-12-31 23:30:21 UTC
 
 1. There are no keywords in 'package.json'. We would use them as tags on the module list page.
 2. Typo: Found `Magic Mirror` in file `README.md`: Replace it with `MagicMirror²`.
-3. Recommendation: Found `new Date()` in file `node_helper.js`: Replace "new Date()" by "Date.now()": [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
+3. Recommendation: Found `new Date()` in file `node_helper.js`: Replace `new Date()` by `new Date(Date.now())`: [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
 4. Typo: Found `Magic Mirror` in file `package.json`: Replace it with `MagicMirror²`.
 5. The branch name is 'master'. Consider renaming it to 'main'.
 
 ### [MMM-GCP by da4throux](https://github.com/da4throux/MMM-GCP)
 
 1. Typo: Found `Magic Mirror` in file `MMM-GCP.js`: Replace it with `MagicMirror²`.
-2. Recommendation: Found `new Date()` in file `MMM-GCP.js`: Replace "new Date()" by "Date.now()": [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
+2. Recommendation: Found `new Date()` in file `MMM-GCP.js`: Replace `new Date()` by `new Date(Date.now())`: [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
 3. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
-4. Recommendation: Found `new Date()` in file `node_helper.js`: Replace "new Date()" by "Date.now()": [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
+4. Recommendation: Found `new Date()` in file `node_helper.js`: Replace `new Date()` by `new Date(Date.now())`: [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
 5. Warning: No LICENSE file.
 6. The branch name is 'master'. Consider renaming it to 'main'.
 
@@ -2437,7 +2437,7 @@ Last update: 2023-12-31 23:30:21 UTC
 4. Typo: Found `Magic Mirror` in file `MMM-Gestures.js`: Replace it with `MagicMirror²`.
 5. Typo: Found `Magic Mirror` in file `README.MD`: Replace it with `MagicMirror²`.
 6. Deprecated: Found ` electron-rebuild` in file `README.MD`: Replace it with `@electron/rebuild`
-7. Recommendation: Found `new Date()` in file `node_helper.js`: Replace "new Date()" by "Date.now()": [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
+7. Recommendation: Found `new Date()` in file `node_helper.js`: Replace `new Date()` by `new Date(Date.now())`: [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
 8. Typo: Found `Magic Mirror` in file `package.json`: Replace it with `MagicMirror²`.
 9. Deprecated: Found ` electron-rebuild` in file `postinstall`: Replace it with `@electron/rebuild`
 10. Warning: No LICENSE file.
@@ -2447,7 +2447,7 @@ Last update: 2023-12-31 23:30:21 UTC
 
 1. No image found.
 2. Recommendation: Found `axios` in file `GHINApi.js`: Replace it with built-in fetch.
-3. Recommendation: Found `new Date()` in file `GHINApi.js`: Replace "new Date()" by "Date.now()": [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
+3. Recommendation: Found `new Date()` in file `GHINApi.js`: Replace `new Date()` by `new Date(Date.now())`: [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
 4. Typo: Found `Magic Mirror` in file `MMM-GHIN.js`: Replace it with `MagicMirror²`.
 5. Typo: Found `Magic Mirror` in file `README.md`: Replace it with `MagicMirror²`.
 6. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
@@ -2486,7 +2486,7 @@ Last update: 2023-12-31 23:30:21 UTC
 1. `package.json` issue: No description
 2. There are no keywords in 'package.json'. We would use them as tags on the module list page.
 3. Typo: Found `Magic Mirror` in file `MMM-Globe.js`: Replace it with `MagicMirror²`.
-4. Recommendation: Found `new Date()` in file `MMM-Globe.js`: Replace "new Date()" by "Date.now()": [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
+4. Recommendation: Found `new Date()` in file `MMM-Globe.js`: Replace `new Date()` by `new Date(Date.now())`: [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
 5. Typo: Found `MagicMirror2` in file `README.md`: Replace it with `MagicMirror²`.
 6. Warning: No LICENSE file.
 7. The branch name is 'master'. Consider renaming it to 'main'.
@@ -2495,7 +2495,7 @@ Last update: 2023-12-31 23:30:21 UTC
 
 1. `package.json` issue: No repository field.
 2. `package.json` issue: No license field.
-3. Recommendation: Found `new Date()` in file `MMM-GmailFeed.js`: Replace "new Date()" by "Date.now()": [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
+3. Recommendation: Found `new Date()` in file `MMM-GmailFeed.js`: Replace `new Date()` by `new Date(Date.now())`: [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
 4. Deprecated: Found `require("request")` in file `node_helper.js`: Replace it with built-in fetch.
 5. Warning: No LICENSE file.
 6. The branch name is 'master'. Consider renaming it to 'main'.
@@ -2536,9 +2536,9 @@ Last update: 2023-12-31 23:30:21 UTC
 
 1. No image found.
 2. Typo: Found `Magic Mirror` in file `MMM-GoogleCalendar.js`: Replace it with `MagicMirror²`.
-3. Recommendation: Found `new Date()` in file `MMM-GoogleCalendar.js`: Replace "new Date()" by "Date.now()": [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
-4. Recommendation: Found `new Date()` in file `authorize.js`: Replace "new Date()" by "Date.now()": [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
-5. Recommendation: Found `new Date()` in file `node_helper.js`: Replace "new Date()" by "Date.now()": [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
+3. Recommendation: Found `new Date()` in file `MMM-GoogleCalendar.js`: Replace `new Date()` by `new Date(Date.now())`: [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
+4. Recommendation: Found `new Date()` in file `authorize.js`: Replace `new Date()` by `new Date(Date.now())`: [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
+5. Recommendation: Found `new Date()` in file `node_helper.js`: Replace `new Date()` by `new Date(Date.now())`: [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
 
 ### [MMM-GoogleCast by ferferga](https://github.com/ferferga/MMM-GoogleCast)
 
@@ -2565,13 +2565,13 @@ Last update: 2023-12-31 23:30:21 UTC
 
 1. There are no keywords in 'package.json'. We would use them as tags on the module list page.
 2. Recommendation: Found `require("https")` in file `node_helper.js`: Replace "https" by "node:https".
-3. Recommendation: Found `new Date()` in file `node_helper.js`: Replace "new Date()" by "Date.now()": [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
+3. Recommendation: Found `new Date()` in file `node_helper.js`: Replace `new Date()` by `new Date(Date.now())`: [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
 4. The branch name is 'master'. Consider renaming it to 'main'.
 
 ### [MMM-GoogleFit by fry0815](https://github.com/fry0815/MMM-GoogleFit)
 
 1. Deprecated: Found `require("request")` in file `node_helper.js`: Replace it with built-in fetch.
-2. Recommendation: Found `new Date()` in file `node_helper.js`: Replace "new Date()" by "Date.now()": [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
+2. Recommendation: Found `new Date()` in file `node_helper.js`: Replace `new Date()` by `new Date(Date.now())`: [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
 3. Typo: Found `Magic Mirror` in file `package.json`: Replace it with `MagicMirror²`.
 4. Recommendation: Replace eslintrc by new flat config.
 5. The branch name is 'master'. Consider renaming it to 'main'.
@@ -2599,7 +2599,7 @@ Last update: 2023-12-31 23:30:21 UTC
 1. There are no keywords in 'package.json'. We would use them as tags on the module list page.
 2. Recommendation: Found `axios` in file `GPhotos.js`: Replace it with built-in fetch.
 3. Deprecated: Found ` electron-rebuild` in file `INSTALL.md`: Replace it with `@electron/rebuild`
-4. Recommendation: Found `new Date()` in file `MMM-GooglePhotos.js`: Replace "new Date()" by "Date.now()": [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
+4. Recommendation: Found `new Date()` in file `MMM-GooglePhotos.js`: Replace `new Date()` by `new Date(Date.now())`: [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
 5. Recommendation: Found `axios` in file `error_to_string.js`: Replace it with built-in fetch.
 6. Recommendation: Found `XMLHttpRequest` in file `error_to_string.js`: Replace it with built-in fetch.
 7. Deprecated: Found `"electron-rebuild"` in file `package.json`: Replace it with `@electron/rebuild`
@@ -2630,7 +2630,7 @@ Last update: 2023-12-31 23:30:21 UTC
 ### [MMM-GoogleTasks by themox](https://github.com/themox/MMM-GoogleTasks)
 
 1. There is no `package.json`. We need this file to gather information about the module for the module list page.
-2. Recommendation: Found `new Date()` in file `MMM-GoogleTasks.js`: Replace "new Date()" by "Date.now()": [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
+2. Recommendation: Found `new Date()` in file `MMM-GoogleTasks.js`: Replace `new Date()` by `new Date(Date.now())`: [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
 3. Warning: No LICENSE file.
 4. The branch name is 'master'. Consider renaming it to 'main'.
 
@@ -2638,7 +2638,7 @@ Last update: 2023-12-31 23:30:21 UTC
 
 1. Typo: Found `Magic Mirror` in file `CONTRIBUTING.md`: Replace it with `MagicMirror²`.
 2. Recommendation: Found `axios` in file `GoogleTaskService.ts`: Replace it with built-in fetch.
-3. Recommendation: Found `new Date()` in file `Display.ts`: Replace "new Date()" by "Date.now()": [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
+3. Recommendation: Found `new Date()` in file `Display.ts`: Replace `new Date()` by `new Date(Date.now())`: [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
 4. Recommendation: Found `axios` in file `node_helper.ts`: Replace it with built-in fetch.
 5. Recommendation: Replace eslintrc by new flat config.
 
@@ -2660,7 +2660,7 @@ Last update: 2023-12-31 23:30:21 UTC
 
 ### [MMM-GoogleTTS by MMRIZE](https://github.com/MMRIZE/MMM-GoogleTTS)
 
-1. Recommendation: Found `new Date()` in file `node_helper.js`: Replace "new Date()" by "Date.now()": [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
+1. Recommendation: Found `new Date()` in file `node_helper.js`: Replace `new Date()` by `new Date(Date.now())`: [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
 2. The branch name is 'master'. Consider renaming it to 'main'.
 
 ### [MMM-GPIO-Notifications by Tom-Hirschberger](https://github.com/Tom-Hirschberger/MMM-GPIO-Notifications)
@@ -2681,14 +2681,14 @@ Last update: 2023-12-31 23:30:21 UTC
 1. There is no `package.json`. We need this file to gather information about the module for the module list page.
 2. Typo: Found `Magic Mirror` in file `MMM-GPSWeather.js`: Replace it with `MagicMirror²`.
 3. Recommendation: Found `XMLHttpRequest` in file `MMM-GPSWeather.js`: Replace it with built-in fetch.
-4. Recommendation: Found `new Date()` in file `MMM-GPSWeather.js`: Replace "new Date()" by "Date.now()": [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
+4. Recommendation: Found `new Date()` in file `MMM-GPSWeather.js`: Replace `new Date()` by `new Date(Date.now())`: [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
 5. Warning: No LICENSE file.
 6. The branch name is 'master'. Consider renaming it to 'main'.
 
 ### [MMM-GrafanaChart by SvenSommer](https://github.com/SvenSommer/MMM-GrafanaChart)
 
 1. There is no `package.json`. We need this file to gather information about the module for the module list page.
-2. Recommendation: Found `new Date()` in file `MMM-GrafanaChart.js`: Replace "new Date()" by "Date.now()": [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
+2. Recommendation: Found `new Date()` in file `MMM-GrafanaChart.js`: Replace `new Date()` by `new Date(Date.now())`: [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
 3. Typo: Found `Magic Mirror` in file `README.md`: Replace it with `MagicMirror²`.
 4. The branch name is 'master'. Consider renaming it to 'main'.
 
@@ -2748,7 +2748,7 @@ Last update: 2023-12-31 23:30:21 UTC
 3. There are no keywords in 'package.json'. We would use them as tags on the module list page.
 4. Typo: Found `Magic Mirror` in file `MMM-HappyHours.css`: Replace it with `MagicMirror²`.
 5. Typo: Found `Magic Mirror` in file `MMM-HappyHours.js`: Replace it with `MagicMirror²`.
-6. Recommendation: Found `new Date()` in file `MMM-HappyHours.js`: Replace "new Date()" by "Date.now()": [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
+6. Recommendation: Found `new Date()` in file `MMM-HappyHours.js`: Replace `new Date()` by `new Date(Date.now())`: [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
 7. Typo: Found `Magic Mirror` in file `README.md`: Replace it with `MagicMirror²`.
 8. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
 9. Deprecated: Found `require('request')` in file `node_helper.js`: Replace it with built-in fetch.
@@ -2775,7 +2775,7 @@ Last update: 2023-12-31 23:30:21 UTC
 ### [MMM-HebrewCalendar by neshkoli](https://github.com/neshkoli/MMM-HebrewCalendar)
 
 1. There is no `package.json`. We need this file to gather information about the module for the module list page.
-2. Recommendation: Found `new Date()` in file `MMM-HebrewCalendar.js`: Replace "new Date()" by "Date.now()": [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
+2. Recommendation: Found `new Date()` in file `MMM-HebrewCalendar.js`: Replace `new Date()` by `new Date(Date.now())`: [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
 
 ### [Hello-Lucy by mykle1](https://github.com/mykle1/Hello-Lucy)
 
@@ -2832,13 +2832,13 @@ Last update: 2023-12-31 23:30:21 UTC
 
 1. There is no `package.json`. We need this file to gather information about the module for the module list page.
 2. Typo: Found `Magic Mirror` in file `MMM-Hive.js`: Replace it with `MagicMirror²`.
-3. Recommendation: Found `new Date()` in file `MMM-Hive.js`: Replace "new Date()" by "Date.now()": [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
+3. Recommendation: Found `new Date()` in file `MMM-Hive.js`: Replace `new Date()` by `new Date(Date.now())`: [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
 4. Typo: Found `MagicMirror2` in file `README.md`: Replace it with `MagicMirror²`.
 5. Recommendation: Found `axios` in file `README.md`: Replace it with built-in fetch.
 6. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
 7. Deprecated: Found `require('request')` in file `node_helper.js`: Replace it with built-in fetch.
 8. Recommendation: Found `axios` in file `index.js`: Replace it with built-in fetch.
-9. Recommendation: Found `new Date()` in file `index.js`: Replace "new Date()" by "Date.now()": [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
+9. Recommendation: Found `new Date()` in file `index.js`: Replace `new Date()` by `new Date(Date.now())`: [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
 10. The branch name is 'master'. Consider renaming it to 'main'.
 
 ### [MMM-HK-Transport-ETA by winstonma](https://github.com/winstonma/MMM-HK-Transport-ETA)
@@ -2919,7 +2919,7 @@ Last update: 2023-12-31 23:30:21 UTC
 ### [MMM-Homematic by Sickboy78](https://github.com/Sickboy78/MMM-Homematic)
 
 1. Typo: Found `Magic Mirror` in file `MMM-Homematic.js`: Replace it with `MagicMirror²`.
-2. Recommendation: Found `new Date()` in file `MMM-Homematic.js`: Replace "new Date()" by "Date.now()": [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
+2. Recommendation: Found `new Date()` in file `MMM-Homematic.js`: Replace `new Date()` by `new Date(Date.now())`: [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
 3. Typo: Found `Magic Mirror` in file `README.md`: Replace it with `MagicMirror²`.
 4. Deprecated: Found `require('request')` in file `node_helper.js`: Replace it with built-in fetch.
 5. Recommendation: Replace eslintrc by new flat config.
@@ -2943,7 +2943,7 @@ Last update: 2023-12-31 23:30:21 UTC
 
 ### [MMM-horoscope by morozgrafix](https://github.com/morozgrafix/MMM-horoscope)
 
-1. Recommendation: Found `new Date()` in file `MMM-horoscope.js`: Replace "new Date()" by "Date.now()": [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
+1. Recommendation: Found `new Date()` in file `MMM-horoscope.js`: Replace `new Date()` by `new Date(Date.now())`: [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
 2. Deprecated: Found `require("request")` in file `node_helper.js`: Replace it with built-in fetch.
 3. Typo: Found `MagicMirror2` in file `package.json`: Replace it with `MagicMirror²`.
 4. The branch name is 'master'. Consider renaming it to 'main'.
@@ -2965,7 +2965,7 @@ Last update: 2023-12-31 23:30:21 UTC
 
 1. There is no `package.json`. We need this file to gather information about the module for the module list page.
 2. Typo: Found `Magic Mirror` in file `MMM-HRS-PickupPlan.js`: Replace it with `MagicMirror²`.
-3. Recommendation: Found `new Date()` in file `MMM-HRS-PickupPlan.js`: Replace "new Date()" by "Date.now()": [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
+3. Recommendation: Found `new Date()` in file `MMM-HRS-PickupPlan.js`: Replace `new Date()` by `new Date(Date.now())`: [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
 4. Recommendation: Found `axios` in file `README.md`: Replace it with built-in fetch.
 5. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
 6. Recommendation: Found `axios` in file `node_helper.js`: Replace it with built-in fetch.
@@ -2989,7 +2989,7 @@ Last update: 2023-12-31 23:30:21 UTC
 2. Typo: Found `Magic Mirror` in file `MMM-Hue.js`: Replace it with `MagicMirror²`.
 3. Recommendation: Found `XMLHttpRequest` in file `jquery.js`: Replace it with built-in fetch.
 4. Recommendation: Found `jshint` in file `jquery.js`: Replace "jshint" by "eslint".
-5. Recommendation: Found `new Date()` in file `jquery.js`: Replace "new Date()" by "Date.now()": [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
+5. Recommendation: Found `new Date()` in file `jquery.js`: Replace `new Date()` by `new Date(Date.now())`: [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
 6. Warning: No LICENSE file.
 7. The branch name is 'master'. Consider renaming it to 'main'.
 
@@ -3004,7 +3004,7 @@ Last update: 2023-12-31 23:30:21 UTC
 
 1. There are no keywords in 'package.json'. We would use them as tags on the module list page.
 2. Typo: Found `MagicMirror2` in file `README.md`: Replace it with `MagicMirror²`.
-3. Recommendation: Found `new Date()` in file `slider.js`: Replace "new Date()" by "Date.now()": [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
+3. Recommendation: Found `new Date()` in file `slider.js`: Replace `new Date()` by `new Date(Date.now())`: [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
 4. Recommendation: Found `'node-fetch'` in file `node_helper.js`: Replace it with built-in fetch.
 5. Recommendation: Found `"node-fetch"` in file `package.json`: Replace it with built-in fetch.
 
@@ -3047,17 +3047,17 @@ Last update: 2023-12-31 23:30:21 UTC
 
 1. There are no specific keywords in 'package.json'. We would use them as tags on the module list page. Add a few meaningful terms to the keywords in the package.json. Not just “magicmirror” or “module”.
 2. Typo: Found `Magic Mirror` in file `MMM-iCal-ToDo.js`: Replace it with `MagicMirror²`.
-3. Recommendation: Found `new Date()` in file `MMM-iCal-ToDo.js`: Replace "new Date()" by "Date.now()": [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
+3. Recommendation: Found `new Date()` in file `MMM-iCal-ToDo.js`: Replace `new Date()` by `new Date(Date.now())`: [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
 4. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
 5. Typo: Found `Magic Mirror` in file `todofetcher.js`: Replace it with `MagicMirror²`.
-6. Recommendation: Found `new Date()` in file `todofetcher.js`: Replace "new Date()" by "Date.now()": [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
+6. Recommendation: Found `new Date()` in file `todofetcher.js`: Replace `new Date()` by `new Date(Date.now())`: [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
 7. Deprecated: Found `require('request')` in file `node-ical.js`: Replace it with built-in fetch.
 8. The branch name is 'master'. Consider renaming it to 'main'.
 
 ### [MMM-iCloud-Client by bitte-ein-bit](https://github.com/bitte-ein-bit/MMM-iCloud-Client)
 
 1. No image found.
-2. Recommendation: Found `new Date()` in file `node_helper.js`: Replace "new Date()" by "Date.now()": [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
+2. Recommendation: Found `new Date()` in file `node_helper.js`: Replace `new Date()` by `new Date(Date.now())`: [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
 3. The branch name is 'master'. Consider renaming it to 'main'.
 
 ### [MMM-IconDisplayer by wiedsee](https://github.com/wiedsee/MMM-IconDisplayer)
@@ -3073,11 +3073,11 @@ Last update: 2023-12-31 23:30:21 UTC
 3. Recommendation: Found `axios` in file `axios_v0.16.x.js`: Replace it with built-in fetch.
 4. Recommendation: Found `XMLHttpRequest` in file `axios_v0.16.x.js`: Replace it with built-in fetch.
 5. Recommendation: Found `axios` in file `package.json`: Replace it with built-in fetch.
-6. Recommendation: Found `new Date()` in file `renderer.js`: Replace "new Date()" by "Date.now()": [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
+6. Recommendation: Found `new Date()` in file `renderer.js`: Replace `new Date()` by `new Date(Date.now())`: [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
 7. Typo: Found `Magic Mirror` in file `module.js`: Replace it with `MagicMirror²`.
 8. Typo: Found `Magic Mirror` in file `helper.js`: Replace it with `MagicMirror²`.
 9. Recommendation: Found `axios` in file `helper_impl.js`: Replace it with built-in fetch.
-10. Recommendation: Found `new Date()` in file `helper_impl.js`: Replace "new Date()" by "Date.now()": [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
+10. Recommendation: Found `new Date()` in file `helper_impl.js`: Replace `new Date()` by `new Date(Date.now())`: [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
 11. Recommendation: Found `axios` in file `helper_impl.spec.js`: Replace it with built-in fetch.
 12. Recommendation: Found `axios` in file `railwayRepository.js`: Replace it with built-in fetch.
 13. Recommendation: Found `axios` in file `railwayRepository.spec.js`: Replace it with built-in fetch.
@@ -3098,10 +3098,10 @@ Last update: 2023-12-31 23:30:21 UTC
 
 1. Typo: Found `Magic Mirror` in file `MMM-idos.css`: Replace it with `MagicMirror²`.
 2. Typo: Found `Magic Mirror` in file `MMM-idos.js`: Replace it with `MagicMirror²`.
-3. Recommendation: Found `new Date()` in file `MMM-idos.js`: Replace "new Date()" by "Date.now()": [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
+3. Recommendation: Found `new Date()` in file `MMM-idos.js`: Replace `new Date()` by `new Date(Date.now())`: [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
 4. Typo: Found `Magic Mirror` in file `README.md`: Replace it with `MagicMirror²`.
 5. Typo: Found `Magic Mirror` in file `node-idos.js`: Replace it with `MagicMirror²`.
-6. Recommendation: Found `new Date()` in file `node-idos.js`: Replace "new Date()" by "Date.now()": [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
+6. Recommendation: Found `new Date()` in file `node-idos.js`: Replace `new Date()` by `new Date(Date.now())`: [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
 7. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
 8. Warning: No LICENSE file.
 9. The branch name is 'master'. Consider renaming it to 'main'.
@@ -3136,7 +3136,7 @@ Last update: 2023-12-31 23:30:21 UTC
 2. Typo: Found `Magic Mirror` in file `README.md`: Replace it with `MagicMirror²`.
 3. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
 4. Deprecated: Found `require('request')` in file `node_helper.js`: Replace it with built-in fetch.
-5. Recommendation: Found `new Date()` in file `node_helper.js`: Replace "new Date()" by "Date.now()": [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
+5. Recommendation: Found `new Date()` in file `node_helper.js`: Replace `new Date()` by `new Date(Date.now())`: [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
 6. Typo: Found `Magic Mirror` in file `package.json`: Replace it with `MagicMirror²`.
 7. Warning: No LICENSE file.
 8. The branch name is 'master'. Consider renaming it to 'main'.
@@ -3149,36 +3149,36 @@ Last update: 2023-12-31 23:30:21 UTC
 4. Recommendation: Found `XMLHttpRequest` in file `ammap_amcharts_extension.js`: Replace it with built-in fetch.
 5. Recommendation: Found `XMLHttpRequest` in file `dataloader.js`: Replace it with built-in fetch.
 6. Recommendation: Found `jshint` in file `dataloader.js`: Replace "jshint" by "eslint".
-7. Recommendation: Found `new Date()` in file `dataloader.js`: Replace "new Date()" by "Date.now()": [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
+7. Recommendation: Found `new Date()` in file `dataloader.js`: Replace `new Date()` by `new Date(Date.now())`: [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
 8. Recommendation: Found `XMLHttpRequest` in file `dataloader.min.js`: Replace it with built-in fetch.
-9. Recommendation: Found `new Date()` in file `index.html`: Replace "new Date()" by "Date.now()": [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
-10. Recommendation: Found `new Date()` in file `serial3.html`: Replace "new Date()" by "Date.now()": [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
-11. Recommendation: Found `new Date()` in file `stock.html`: Replace "new Date()" by "Date.now()": [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
-12. Recommendation: Found `new Date()` in file `export.js`: Replace "new Date()" by "Date.now()": [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
+9. Recommendation: Found `new Date()` in file `index.html`: Replace `new Date()` by `new Date(Date.now())`: [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
+10. Recommendation: Found `new Date()` in file `serial3.html`: Replace `new Date()` by `new Date(Date.now())`: [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
+11. Recommendation: Found `new Date()` in file `stock.html`: Replace `new Date()` by `new Date(Date.now())`: [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
+12. Recommendation: Found `new Date()` in file `export.js`: Replace `new Date()` by `new Date(Date.now())`: [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
 13. Recommendation: Found `require('http')` in file `fabric.js`: Replace 'http' by 'node:http'.
 14. Recommendation: Found `require('https')` in file `fabric.js`: Replace 'https' by 'node:https'.
 15. Recommendation: Found `XMLHttpRequest` in file `fabric.js`: Replace it with built-in fetch.
 16. Recommendation: Found `jshint` in file `fabric.js`: Replace "jshint" by "eslint".
-17. Recommendation: Found `new Date()` in file `fabric.js`: Replace "new Date()" by "Date.now()": [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
+17. Recommendation: Found `new Date()` in file `fabric.js`: Replace `new Date()` by `new Date(Date.now())`: [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
 18. Recommendation: Found `require("http")` in file `fabric.min.js`: Replace "http" by "node:http".
 19. Recommendation: Found `require("https")` in file `fabric.min.js`: Replace "https" by "node:https".
 20. Recommendation: Found `XMLHttpRequest` in file `fabric.min.js`: Replace it with built-in fetch.
 21. Recommendation: Found `jshint` in file `jszip.js`: Replace "jshint" by "eslint".
-22. Recommendation: Found `new Date()` in file `jszip.js`: Replace "new Date()" by "Date.now()": [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
+22. Recommendation: Found `new Date()` in file `jszip.js`: Replace `new Date()` by `new Date(Date.now())`: [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
 23. Recommendation: Found `jshint` in file `pdfmake.js`: Replace "jshint" by "eslint".
-24. Recommendation: Found `new Date()` in file `pdfmake.js`: Replace "new Date()" by "Date.now()": [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
+24. Recommendation: Found `new Date()` in file `pdfmake.js`: Replace `new Date()` by `new Date(Date.now())`: [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
 25. Recommendation: Found `jshint` in file `pdfmake.min.js.map`: Replace "jshint" by "eslint".
-26. Recommendation: Found `new Date()` in file `pdfmake.min.js.map`: Replace "new Date()" by "Date.now()": [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
+26. Recommendation: Found `new Date()` in file `pdfmake.min.js.map`: Replace `new Date()` by `new Date(Date.now())`: [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
 27. Recommendation: Found `jshint` in file `xlsx.js`: Replace "jshint" by "eslint".
-28. Recommendation: Found `new Date()` in file `serial3.html`: Replace "new Date()" by "Date.now()": [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
-29. Recommendation: Found `new Date()` in file `stock.html`: Replace "new Date()" by "Date.now()": [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
+28. Recommendation: Found `new Date()` in file `serial3.html`: Replace `new Date()` by `new Date(Date.now())`: [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
+29. Recommendation: Found `new Date()` in file `stock.html`: Replace `new Date()` by `new Date(Date.now())`: [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
 30. The branch name is 'master'. Consider renaming it to 'main'.
 
 ### [MMM-Ilevia-Lille by Jilano5](https://github.com/Jilano5/MMM-Ilevia-Lille)
 
-1. Recommendation: Found `new Date()` in file `MMM-Ilevia-Lille.js`: Replace "new Date()" by "Date.now()": [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
+1. Recommendation: Found `new Date()` in file `MMM-Ilevia-Lille.js`: Replace `new Date()` by `new Date(Date.now())`: [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
 2. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
-3. Recommendation: Found `new Date()` in file `node_helper.js`: Replace "new Date()" by "Date.now()": [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
+3. Recommendation: Found `new Date()` in file `node_helper.js`: Replace `new Date()` by `new Date(Date.now())`: [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
 4. The branch name is 'master'. Consider renaming it to 'main'.
 
 ### [MMM-ImageFileWatcher by basknol](https://github.com/basknol/MMM-ImageFileWatcher)
@@ -3276,7 +3276,7 @@ Last update: 2023-12-31 23:30:21 UTC
 1. There is no `package.json`. We need this file to gather information about the module for the module list page.
 2. Typo: Found `Magic Mirror` in file `MMM-IntelligentOctopus.js`: Replace it with `MagicMirror²`.
 3. Recommendation: Found `XMLHttpRequest` in file `MMM-IntelligentOctopus.js`: Replace it with built-in fetch.
-4. Recommendation: Found `new Date()` in file `MMM-IntelligentOctopus.js`: Replace "new Date()" by "Date.now()": [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
+4. Recommendation: Found `new Date()` in file `MMM-IntelligentOctopus.js`: Replace `new Date()` by `new Date(Date.now())`: [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
 5. Typo: Found `<sup>2</sup>` in file `README.md`: Replace it with `²`.`.
 
 ### [internet-monitor by BrianHepler](https://github.com/BrianHepler/internet-monitor)
@@ -3325,7 +3325,7 @@ Last update: 2023-12-31 23:30:21 UTC
 
 1. There is no `package.json`. We need this file to gather information about the module for the module list page.
 2. Recommendation: Found `XMLHttpRequest` in file `MMM-IPT.js`: Replace it with built-in fetch.
-3. Recommendation: Found `new Date()` in file `MMM-IPT.js`: Replace "new Date()" by "Date.now()": [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
+3. Recommendation: Found `new Date()` in file `MMM-IPT.js`: Replace `new Date()` by `new Date(Date.now())`: [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
 4. Typo: Found `Magic Mirror` in file `README.md`: Replace it with `MagicMirror²`.
 5. Warning: No LICENSE file.
 6. The branch name is 'master'. Consider renaming it to 'main'.
@@ -3356,7 +3356,7 @@ Last update: 2023-12-31 23:30:21 UTC
 2. Typo: Found `Magic Mirror` in file `MMM-ISS.js`: Replace it with `MagicMirror²`.
 3. Typo: Found `Magic Mirror` in file `README.md`: Replace it with `MagicMirror²`.
 4. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
-5. Recommendation: Found `new Date()` in file `node_helper.js`: Replace "new Date()" by "Date.now()": [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
+5. Recommendation: Found `new Date()` in file `node_helper.js`: Replace `new Date()` by `new Date(Date.now())`: [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
 6. Typo: Found `Magic Mirror` in file `package.json`: Replace it with `MagicMirror²`.
 7. The branch name is 'master'. Consider renaming it to 'main'.
 
@@ -3371,7 +3371,7 @@ Last update: 2023-12-31 23:30:21 UTC
 3. Recommendation: Found `jshint` in file `MMM-ISY.js`: Replace "jshint" by "eslint".
 4. Recommendation: Found `XMLHttpRequest` in file `jquery-3.2.1.min.js`: Replace it with built-in fetch.
 5. Recommendation: Found `XMLHttpRequest` in file `jquery.min.js`: Replace it with built-in fetch.
-6. Recommendation: Found `new Date()` in file `jquery.svg.min.js`: Replace "new Date()" by "Date.now()": [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
+6. Recommendation: Found `new Date()` in file `jquery.svg.min.js`: Replace `new Date()` by `new Date(Date.now())`: [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
 7. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
 8. Recommendation: Found `jshint` in file `node_helper.js`: Replace "jshint" by "eslint".
 9. The branch name is 'master'. Consider renaming it to 'main'.
@@ -3388,7 +3388,7 @@ Last update: 2023-12-31 23:30:21 UTC
 
 ### [MMM-Jast by jalibu](https://github.com/jalibu/MMM-Jast)
 
-1. Recommendation: Found `new Date()` in file `JastBackendUtils.ts`: Replace "new Date()" by "Date.now()": [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
+1. Recommendation: Found `new Date()` in file `JastBackendUtils.ts`: Replace `new Date()` by `new Date(Date.now())`: [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
 2. Recommendation: Replace eslintrc by new flat config.
 
 ### [MMM-Jeedom by prysme01](https://github.com/prysme01/MMM-Jeedom)
@@ -3494,7 +3494,7 @@ Last update: 2023-12-31 23:30:21 UTC
 2. `package.json` issue: No license field.
 3. There are no keywords in 'package.json'. We would use them as tags on the module list page.
 4. Recommendation: Found `uses: actions/checkout@v3` in file `runtest.yml`: Replace it with v4.
-5. Recommendation: Found `new Date()` in file `MMM-JsonTable.js`: Replace "new Date()" by "Date.now()": [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
+5. Recommendation: Found `new Date()` in file `MMM-JsonTable.js`: Replace `new Date()` by `new Date(Date.now())`: [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
 6. Recommendation: Found `"eslint-plugin-json"` in file `package.json`: Replace it by `eslint-plugin-jsonc`.
 7. Warning: No LICENSE file.
 8. Recommendation: Replace eslintrc by new flat config.
@@ -3519,13 +3519,13 @@ Last update: 2023-12-31 23:30:21 UTC
 6. Typo: Found `Magic Mirror` in file `README.md`: Replace it with `MagicMirror²`.
 7. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
 8. Deprecated: Found `require("request")` in file `node_helper.js`: Replace it with built-in fetch.
-9. Recommendation: Found `new Date()` in file `node_helper.js`: Replace "new Date()" by "Date.now()": [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
+9. Recommendation: Found `new Date()` in file `node_helper.js`: Replace `new Date()` by `new Date(Date.now())`: [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
 10. Deprecated: Found `"grunt"` in file `package.json`: Grunt is practically unmaintained. Move on to something better.
 
 ### [MMM-kalliope by kalliope-project](https://github.com/kalliope-project/MMM-kalliope)
 
 1. There is no `package.json`. We need this file to gather information about the module for the module list page.
-2. Recommendation: Found `new Date()` in file `MMM-kalliope.js`: Replace "new Date()" by "Date.now()": [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
+2. Recommendation: Found `new Date()` in file `MMM-kalliope.js`: Replace `new Date()` by `new Date(Date.now())`: [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
 3. Typo: Found `Magic Mirror` in file `README.md`: Replace it with `MagicMirror²`.
 4. Warning: No LICENSE file.
 5. The branch name is 'master'. Consider renaming it to 'main'.
@@ -3685,9 +3685,9 @@ Last update: 2023-12-31 23:30:21 UTC
 ### [MMM-Liquipedia-Matches by buxxi](https://github.com/buxxi/MMM-Liquipedia-Matches)
 
 1. There are no keywords in 'package.json'. We would use them as tags on the module list page.
-2. Recommendation: Found `new Date()` in file `MMM-Liquipedia-Matches.js`: Replace "new Date()" by "Date.now()": [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
+2. Recommendation: Found `new Date()` in file `MMM-Liquipedia-Matches.js`: Replace `new Date()` by `new Date(Date.now())`: [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
 3. Typo: Found `Magic Mirror` in file `README.md`: Replace it with `MagicMirror²`.
-4. Recommendation: Found `new Date()` in file `node_helper.js`: Replace "new Date()" by "Date.now()": [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
+4. Recommendation: Found `new Date()` in file `node_helper.js`: Replace `new Date()` by `new Date(Date.now())`: [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
 5. Typo: Found `Magic Mirror` in file `package.json`: Replace it with `MagicMirror²`.
 6. The branch name is 'master'. Consider renaming it to 'main'.
 
@@ -3695,13 +3695,13 @@ Last update: 2023-12-31 23:30:21 UTC
 
 1. There are no keywords in 'package.json'. We would use them as tags on the module list page.
 2. Recommendation: Found `axios` in file `MMM-Live-Stream-TV.js`: Replace it with built-in fetch.
-3. Recommendation: Found `new Date()` in file `MMM-Live-Stream-TV.js`: Replace "new Date()" by "Date.now()": [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
+3. Recommendation: Found `new Date()` in file `MMM-Live-Stream-TV.js`: Replace `new Date()` by `new Date(Date.now())`: [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
 4. Typo: Found `Magic Mirror` in file `README.md`: Replace it with `MagicMirror²`.
 5. Found directory `node_modules`. This shouldn't be uploaded. Add `node_modules/`to `.gitignore`.
 6. Typo: Found `Magic Mirror` in file `package.json`: Replace it with `MagicMirror²`.
 7. Recommendation: Found `axios` in file `package.json`: Replace it with built-in fetch.
 8. Recommendation: Found `XMLHttpRequest` in file `response.json`: Replace it with built-in fetch.
-9. Recommendation: Found `new Date()` in file `response.json`: Replace "new Date()" by "Date.now()": [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
+9. Recommendation: Found `new Date()` in file `response.json`: Replace `new Date()` by `new Date(Date.now())`: [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
 10. Recommendation: Found `axios` in file `test-scrape.js`: Replace it with built-in fetch.
 11. Recommendation: Replace eslintrc by new flat config.
 12. The branch name is 'master'. Consider renaming it to 'main'.
@@ -3714,15 +3714,15 @@ Last update: 2023-12-31 23:30:21 UTC
 4. Typo: Found `Magic Mirror` in file `module.ts`: Replace it with `MagicMirror²`.
 5. Typo: Found `Magic Mirror` in file `helper.ts`: Replace it with `MagicMirror²`.
 6. Typo: Found `Magic Mirror` in file `helper_impl.ts`: Replace it with `MagicMirror²`.
-7. Recommendation: Found `new Date()` in file `data-enhancer.ts`: Replace "new Date()" by "Date.now()": [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
-8. Recommendation: Found `new Date()` in file `instance-store-keys.ts`: Replace "new Date()" by "Date.now()": [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
-9. Recommendation: Found `new Date()` in file `instance-store.ts`: Replace "new Date()" by "Date.now()": [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
-10. Recommendation: Found `new Date()` in file `reader.ts`: Replace "new Date()" by "Date.now()": [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
-11. Recommendation: Found `new Date()` in file `stats.ts`: Replace "new Date()" by "Date.now()": [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
-12. Recommendation: Found `new Date()` in file `teleinfo-processor.ts`: Replace "new Date()" by "Date.now()": [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
+7. Recommendation: Found `new Date()` in file `data-enhancer.ts`: Replace `new Date()` by `new Date(Date.now())`: [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
+8. Recommendation: Found `new Date()` in file `instance-store-keys.ts`: Replace `new Date()` by `new Date(Date.now())`: [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
+9. Recommendation: Found `new Date()` in file `instance-store.ts`: Replace `new Date()` by `new Date(Date.now())`: [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
+10. Recommendation: Found `new Date()` in file `reader.ts`: Replace `new Date()` by `new Date(Date.now())`: [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
+11. Recommendation: Found `new Date()` in file `stats.ts`: Replace `new Date()` by `new Date(Date.now())`: [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
+12. Recommendation: Found `new Date()` in file `teleinfo-processor.ts`: Replace `new Date()` by `new Date(Date.now())`: [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
 13. Typo: Found `MagicMirror2` in file `init-mmm.ts`: Replace it with `MagicMirror²`.
-14. Recommendation: Found `new Date()` in file `opensearch-data-export.ts`: Replace "new Date()" by "Date.now()": [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
-15. Recommendation: Found `new Date()` in file `teleinfo-reader.ts`: Replace "new Date()" by "Date.now()": [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
+14. Recommendation: Found `new Date()` in file `opensearch-data-export.ts`: Replace `new Date()` by `new Date(Date.now())`: [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
+15. Recommendation: Found `new Date()` in file `teleinfo-reader.ts`: Replace `new Date()` by `new Date(Date.now())`: [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
 16. Recommendation: Replace eslintrc by new flat config.
 
 ### [MMM-LoadShedding by qunu](https://github.com/qunu/MMM-LoadShedding)
@@ -3738,14 +3738,14 @@ Last update: 2023-12-31 23:30:21 UTC
 2. Recommendation: Found `axios` in file `ProviderDevelopment.md`: Replace it with built-in fetch.
 3. Recommendation: Found `XMLHttpRequest` in file `eventprovider.js`: Replace it with built-in fetch.
 4. Recommendation: Found `axios` in file `node_helper.js`: Replace it with built-in fetch.
-5. Recommendation: Found `new Date()` in file `google.js`: Replace "new Date()" by "Date.now()": [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
+5. Recommendation: Found `new Date()` in file `google.js`: Replace `new Date()` by `new Date(Date.now())`: [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
 
 ### [MMM-LocalTemperature by glitch452](https://github.com/glitch452/MMM-LocalTemperature)
 
 1. There is no `package.json`. We need this file to gather information about the module for the module list page.
 2. Typo: Found `Magic Mirror` in file `MMM-LocalTemperature.css`: Replace it with `MagicMirror²`.
 3. Typo: Found `Magic Mirror` in file `MMM-LocalTemperature.js`: Replace it with `MagicMirror²`.
-4. Recommendation: Found `new Date()` in file `MMM-LocalTemperature.js`: Replace "new Date()" by "Date.now()": [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
+4. Recommendation: Found `new Date()` in file `MMM-LocalTemperature.js`: Replace `new Date()` by `new Date(Date.now())`: [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
 5. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
 6. The branch name is 'master'. Consider renaming it to 'main'.
 
@@ -3753,7 +3753,7 @@ Last update: 2023-12-31 23:30:21 UTC
 
 1. There is no `package.json`. We need this file to gather information about the module for the module list page.
 2. Typo: Found `Magic Mirror` in file `MMM-LocalTransport.js`: Replace it with `MagicMirror²`.
-3. Recommendation: Found `new Date()` in file `MMM-LocalTransport.js`: Replace "new Date()" by "Date.now()": [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
+3. Recommendation: Found `new Date()` in file `MMM-LocalTransport.js`: Replace `new Date()` by `new Date(Date.now())`: [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
 4. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
 5. Deprecated: Found `require('request')` in file `node_helper.js`: Replace it with built-in fetch.
 6. The branch name is 'master'. Consider renaming it to 'main'.
@@ -3785,7 +3785,7 @@ Last update: 2023-12-31 23:30:21 UTC
 
 ### [MMM-LOLESPORTS-SCHEDULES by xadamxk](https://github.com/xadamxk/MMM-LOLESPORTS-SCHEDULES)
 
-1. Recommendation: Found `new Date()` in file `MMM-LOLESPORTS-SCHEDULES.js`: Replace "new Date()" by "Date.now()": [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
+1. Recommendation: Found `new Date()` in file `MMM-LOLESPORTS-SCHEDULES.js`: Replace `new Date()` by `new Date(Date.now())`: [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
 2. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
 3. Warning: No LICENSE file.
 
@@ -3802,7 +3802,7 @@ Last update: 2023-12-31 23:30:21 UTC
 3. Recommendation: Found `jshint` in file `Gruntfile.js`: Replace "jshint" by "eslint".
 4. Typo: Found `Magic Mirror` in file `MMM-Looko2-aq.js`: Replace it with `MagicMirror²`.
 5. Recommendation: Found `XMLHttpRequest` in file `MMM-Looko2-aq.js`: Replace it with built-in fetch.
-6. Recommendation: Found `new Date()` in file `MMM-Looko2-aq.js`: Replace "new Date()" by "Date.now()": [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
+6. Recommendation: Found `new Date()` in file `MMM-Looko2-aq.js`: Replace `new Date()` by `new Date(Date.now())`: [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
 7. Deprecated: Found `"grunt"` in file `package.json`: Grunt is practically unmaintained. Move on to something better.
 8. Recommendation: Replace eslintrc by new flat config.
 9. The branch name is 'master'. Consider renaming it to 'main'.
@@ -3810,16 +3810,17 @@ Last update: 2023-12-31 23:30:21 UTC
 ### [MMM-Losung by Dobherrmann](https://github.com/Dobherrmann/MMM-Losung)
 
 1. There are no specific keywords in 'package.json'. We would use them as tags on the module list page. Add a few meaningful terms to the keywords in the package.json. Not just “magicmirror” or “module”.
-2. Recommendation: Found `new Date()` in file `MMM-Losung.js`: Replace "new Date()" by "Date.now()": [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
-3. Recommendation: Found `'node-fetch'` in file `node_helper.js`: Replace it with built-in fetch.
-4. Recommendation: Found `"node-fetch"` in file `package.json`: Replace it with built-in fetch.
-5. Warning: No LICENSE file.
+2. Recommendation: Found `new Date()` in file `MMM-Losung.js`: Replace `new Date()` by `new Date(Date.now())`: [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
+3. Deprecated: Found `getYear()` in file `MMM-Losung.js`: Replace `getYear()` by `getFullYear()`.
+4. Recommendation: Found `'node-fetch'` in file `node_helper.js`: Replace it with built-in fetch.
+5. Recommendation: Found `"node-fetch"` in file `package.json`: Replace it with built-in fetch.
+6. Warning: No LICENSE file.
 
 ### [MMM-LothianBuses by tbouron](https://github.com/tbouron/MMM-LothianBuses)
 
 1. There is no `package.json`. We need this file to gather information about the module for the module list page.
 2. Recommendation: Found `uses: actions/checkout@v2` in file `codeql-analysis.yml`: Replace it with v4.
-3. Recommendation: Found `new Date()` in file `MMM-LothianBuses.js`: Replace "new Date()" by "Date.now()": [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
+3. Recommendation: Found `new Date()` in file `MMM-LothianBuses.js`: Replace `new Date()` by `new Date(Date.now())`: [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
 4. The branch name is 'master'. Consider renaming it to 'main'.
 
 ### [MMM-Lottery by mykle1](https://github.com/mykle1/MMM-Lottery)
@@ -3844,7 +3845,7 @@ Last update: 2023-12-31 23:30:21 UTC
 
 1. There is no `package.json`. We need this file to gather information about the module for the module list page.
 2. Typo: Found `Magic Mirror` in file `README.md`: Replace it with `MagicMirror²`.
-3. Recommendation: Found `new Date()` in file `node_helper.js`: Replace "new Date()" by "Date.now()": [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
+3. Recommendation: Found `new Date()` in file `node_helper.js`: Replace `new Date()` by `new Date(Date.now())`: [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
 4. The branch name is 'master'. Consider renaming it to 'main'.
 
 ### [MMM-LunarDate by MMRIZE](https://github.com/MMRIZE/MMM-LunarDate)
@@ -3856,20 +3857,20 @@ Last update: 2023-12-31 23:30:21 UTC
 
 0. This module is outdated: Deprecated. Doesn't work anymore (API is down).
 1. Typo: Found `Magic Mirror` in file `MMM-Lunartic.js`: Replace it with `MagicMirror²`.
-2. Recommendation: Found `new Date()` in file `MMM-Lunartic.js`: Replace "new Date()" by "Date.now()": [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
+2. Recommendation: Found `new Date()` in file `MMM-Lunartic.js`: Replace `new Date()` by `new Date(Date.now())`: [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
 3. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
 4. Deprecated: Found `require('request')` in file `node_helper.js`: Replace it with built-in fetch.
 5. Deprecated: Found `stylelint-config-prettier` in file `package.json`: Update `stylelint` and remove `stylelint-config-prettier`.
 6. Recommendation: Found `"node-fetch"` in file `package.json`: Replace it with built-in fetch.
 7. Typo: Found `Magic Mirror` in file `MMM-Lunartic.js`: Replace it with `MagicMirror²`.
-8. Recommendation: Found `new Date()` in file `MMM-Lunartic.js`: Replace "new Date()" by "Date.now()": [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
+8. Recommendation: Found `new Date()` in file `MMM-Lunartic.js`: Replace `new Date()` by `new Date(Date.now())`: [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
 9. The branch name is 'master'. Consider renaming it to 'main'.
 
 ### [MMM-Luxembourg-Public-Transport by MarinescuEvghenii](https://github.com/MarinescuEvghenii/MMM-Luxembourg-Public-Transport)
 
 1. There is no `package.json`. We need this file to gather information about the module for the module list page.
 2. Typo: Found `Magic Mirror` in file `MMM-Luxembourg-Public-Transport.js`: Replace it with `MagicMirror²`.
-3. Recommendation: Found `new Date()` in file `MMM-Luxembourg-Public-Transport.js`: Replace "new Date()" by "Date.now()": [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
+3. Recommendation: Found `new Date()` in file `MMM-Luxembourg-Public-Transport.js`: Replace `new Date()` by `new Date(Date.now())`: [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
 4. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
 5. Recommendation: Found `require('https')` in file `node_helper.js`: Replace 'https' by 'node:https'.
 6. Warning: No LICENSE file.
@@ -3906,7 +3907,7 @@ Last update: 2023-12-31 23:30:21 UTC
 7. Recommendation: Found `require('https')` in file `alexa-authentication.js`: Replace 'https' by 'node:https'.
 8. Recommendation: Found `require('https')` in file `alexa-companion-service.js`: Replace 'https' by 'node:https'.
 9. Typo: Found `Magic Mirror` in file `pom.xml`: Replace it with `MagicMirror²`.
-10. Recommendation: Found `new Date()` in file `OAuth2AccessToken.java`: Replace "new Date()" by "Date.now()": [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
+10. Recommendation: Found `new Date()` in file `OAuth2AccessToken.java`: Replace `new Date()` by `new Date(Date.now())`: [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
 11. Typo: Found `Magic Mirror` in file `CompanionServiceAuthenticator.java`: Replace it with `MagicMirror²`.
 12. Deprecated: Found `"electron-rebuild"` in file `package.json`: Replace it with `@electron/rebuild`
 13. Typo: Found `Magic Mirror` in file `sphinx-model-generator.js`: Replace it with `MagicMirror²`.
@@ -3922,7 +3923,7 @@ Last update: 2023-12-31 23:30:21 UTC
 6. Typo: Found `Magic Mirror` in file `MagicMirror-Module-Template.js`: Replace it with `MagicMirror²`.
 7. Recommendation: Found `XMLHttpRequest` in file `MagicMirror-Module-Template.js`: Replace it with built-in fetch.
 8. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
-9. Recommendation: Found `new Date()` in file `node_helper.js`: Replace "new Date()" by "Date.now()": [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
+9. Recommendation: Found `new Date()` in file `node_helper.js`: Replace `new Date()` by `new Date(Date.now())`: [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
 10. Deprecated: Found `"grunt"` in file `package.json`: Grunt is practically unmaintained. Move on to something better.
 11. Deprecated: Found `"grunt"` in file `package.json`: Grunt is practically unmaintained. Move on to something better.
 12. Recommendation: Replace eslintrc by new flat config.
@@ -3946,7 +3947,7 @@ Last update: 2023-12-31 23:30:21 UTC
 2. Recommendation: Module name doesn't follow the recommended pattern (it doesn't start with `MMM-`). Consider renaming your module.
 3. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
 4. Deprecated: Found `require('request')` in file `node_helper.js`: Replace it with built-in fetch.
-5. Recommendation: Found `new Date()` in file `node_helper.js`: Replace "new Date()" by "Date.now()": [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
+5. Recommendation: Found `new Date()` in file `node_helper.js`: Replace `new Date()` by `new Date(Date.now())`: [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
 6. Typo: Found `Magic Mirror` in file `ping.js`: Replace it with `MagicMirror²`.
 7. The branch name is 'master'. Consider renaming it to 'main'.
 
@@ -4065,7 +4066,7 @@ Last update: 2023-12-31 23:30:21 UTC
 5. Typo: Found `MagicMirror2` in file `README.md`: Replace it with `MagicMirror²`.
 6. Typo: Found `<sup>2</sup>` in file `README.md`: Replace it with `²`.`.
 7. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
-8. Recommendation: Found `new Date()` in file `node_helper.js`: Replace "new Date()" by "Date.now()": [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
+8. Recommendation: Found `new Date()` in file `node_helper.js`: Replace `new Date()` by `new Date(Date.now())`: [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
 9. The branch name is 'master'. Consider renaming it to 'main'.
 
 ### [MMM-Meniny by eouia](https://github.com/eouia/MMM-Meniny)
@@ -4087,7 +4088,7 @@ Last update: 2023-12-31 23:30:21 UTC
 
 1. Typo: Found `Magic Mirror` in file `MMM-MercedesMe.js`: Replace it with `MagicMirror²`.
 2. Deprecated: Found `require('request')` in file `OAuth.js`: Replace it with built-in fetch.
-3. Recommendation: Found `new Date()` in file `OAuth.js`: Replace "new Date()" by "Date.now()": [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
+3. Recommendation: Found `new Date()` in file `OAuth.js`: Replace `new Date()` by `new Date(Date.now())`: [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
 4. Typo: Found `Magic Mirror` in file `README.md`: Replace it with `MagicMirror²`.
 5. Typo: Found `<sup>2</sup>` in file `README.md`: Replace it with `²`.`.
 6. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
@@ -4099,7 +4100,7 @@ Last update: 2023-12-31 23:30:21 UTC
 1. There is no `package.json`. We need this file to gather information about the module for the module list page.
 2. Typo: Found `Magic Mirror` in file `MMM-meteoblueCurrent.js`: Replace it with `MagicMirror²`.
 3. Recommendation: Found `XMLHttpRequest` in file `MMM-meteoblueCurrent.js`: Replace it with built-in fetch.
-4. Recommendation: Found `new Date()` in file `MMM-meteoblueCurrent.js`: Replace "new Date()" by "Date.now()": [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
+4. Recommendation: Found `new Date()` in file `MMM-meteoblueCurrent.js`: Replace `new Date()` by `new Date(Date.now())`: [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
 5. Warning: No LICENSE file.
 6. The branch name is 'master'. Consider renaming it to 'main'.
 
@@ -4109,7 +4110,7 @@ Last update: 2023-12-31 23:30:21 UTC
 2. `package.json` issue: No repository field.
 3. There are no keywords in 'package.json'. We would use them as tags on the module list page.
 4. Typo: Found `Magic Mirror` in file `MMM-MHZ19.js`: Replace it with `MagicMirror²`.
-5. Recommendation: Found `new Date()` in file `MMM-MHZ19.js`: Replace "new Date()" by "Date.now()": [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
+5. Recommendation: Found `new Date()` in file `MMM-MHZ19.js`: Replace `new Date()` by `new Date(Date.now())`: [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
 6. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
 7. Warning: No LICENSE file.
 8. The branch name is 'master'. Consider renaming it to 'main'.
@@ -4134,7 +4135,7 @@ Last update: 2023-12-31 23:30:21 UTC
 
 1. There is no `package.json`. We need this file to gather information about the module for the module list page.
 2. Deprecated: Found `require("request")` in file `mieleathome.js`: Replace it with built-in fetch.
-3. Recommendation: Found `new Date()` in file `mieleathome.js`: Replace "new Date()" by "Date.now()": [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
+3. Recommendation: Found `new Date()` in file `mieleathome.js`: Replace `new Date()` by `new Date(Date.now())`: [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
 4. Warning: No LICENSE file.
 5. The branch name is 'master'. Consider renaming it to 'main'.
 
@@ -4144,7 +4145,7 @@ Last update: 2023-12-31 23:30:21 UTC
 2. Typo: Found `Magic Mirror` in file `MMM-MinecraftStatus.js`: Replace it with `MagicMirror²`.
 3. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
 4. Recommendation: Found `jshint` in file `node_helper.js`: Replace "jshint" by "eslint".
-5. Recommendation: Found `new Date()` in file `node_helper.js`: Replace "new Date()" by "Date.now()": [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
+5. Recommendation: Found `new Date()` in file `node_helper.js`: Replace `new Date()` by `new Date(Date.now())`: [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
 6. Deprecated: Found `"electron-rebuild"` in file `package.json`: Replace it with `@electron/rebuild`
 7. Deprecated: Found `"grunt"` in file `package.json`: Grunt is practically unmaintained. Move on to something better.
 8. Recommendation: Replace eslintrc by new flat config.
@@ -4158,7 +4159,7 @@ Last update: 2023-12-31 23:30:21 UTC
 
 1. No image found.
 2. Typo: Found `Magic Mirror` in file `MMM-MirrorMirrorOnTheWall.js`: Replace it with `MagicMirror²`.
-3. Recommendation: Found `new Date()` in file `MirrorMirror.js`: Replace "new Date()" by "Date.now()": [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
+3. Recommendation: Found `new Date()` in file `MirrorMirror.js`: Replace `new Date()` by `new Date(Date.now())`: [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
 4. Typo: Found `Magic Mirror` in file `README.md`: Replace it with `MagicMirror²`.
 5. Typo: Found `Magic Mirror` in file `package.json`: Replace it with `MagicMirror²`.
 6. The branch name is 'master'. Consider renaming it to 'main'.
@@ -4178,7 +4179,7 @@ Last update: 2023-12-31 23:30:21 UTC
 2. Recommendation: Module name doesn't follow the recommended pattern (it doesn't start with `MMM-`). Consider renaming your module.
 3. Typo: Found `Magic Mirror` in file `mm-hsl-timetable.js`: Replace it with `MagicMirror²`.
 4. Recommendation: Found `"node-fetch"` in file `node_helper.js`: Replace it with built-in fetch.
-5. Recommendation: Found `new Date()` in file `node_helper.js`: Replace "new Date()" by "Date.now()": [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
+5. Recommendation: Found `new Date()` in file `node_helper.js`: Replace `new Date()` by `new Date(Date.now())`: [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
 6. Warning: No LICENSE file.
 7. The branch name is 'master'. Consider renaming it to 'main'.
 
@@ -4188,11 +4189,12 @@ Last update: 2023-12-31 23:30:21 UTC
 1. There is no `package.json`. We need this file to gather information about the module for the module list page.
 2. Recommendation: Module name doesn't follow the recommended pattern (it doesn't start with `MMM-`). Consider renaming your module.
 3. Typo: Found `Magic Mirror` in file `README.md`: Replace it with `MagicMirror²`.
-4. Recommendation: Found `XMLHttpRequest` in file `jquery.js`: Replace it with built-in fetch.
-5. Typo: Found `Magic Mirror` in file `mm-music-player.js`: Replace it with `MagicMirror²`.
-6. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
-7. Warning: No LICENSE file.
-8. The branch name is 'master'. Consider renaming it to 'main'.
+4. Deprecated: Found `getYear()` in file `jquery-ui.min.js`: Replace `getYear()` by `getFullYear()`.
+5. Recommendation: Found `XMLHttpRequest` in file `jquery.js`: Replace it with built-in fetch.
+6. Typo: Found `Magic Mirror` in file `mm-music-player.js`: Replace it with `MagicMirror²`.
+7. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
+8. Warning: No LICENSE file.
+9. The branch name is 'master'. Consider renaming it to 'main'.
 
 ### [MM-Remote by Klettner](https://github.com/Klettner/MM-Remote)
 
@@ -4207,7 +4209,7 @@ Last update: 2023-12-31 23:30:21 UTC
 2. Recommendation: Module name doesn't follow the recommended pattern (it doesn't start with `MMM-`). Consider renaming your module.
 3. Typo: Found `Magic Mirror` in file `mm-tkl-timetable.js`: Replace it with `MagicMirror²`.
 4. Deprecated: Found `require("request")` in file `node_helper.js`: Replace it with built-in fetch.
-5. Recommendation: Found `new Date()` in file `node_helper.js`: Replace "new Date()" by "Date.now()": [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
+5. Recommendation: Found `new Date()` in file `node_helper.js`: Replace `new Date()` by `new Date(Date.now())`: [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
 6. Warning: No LICENSE file.
 7. The branch name is 'master'. Consider renaming it to 'main'.
 
@@ -4250,7 +4252,7 @@ Last update: 2023-12-31 23:30:21 UTC
 2. Recommendation: Module name doesn't follow the recommended pattern (it doesn't start with `MMM-`). Consider renaming your module.
 3. Typo: Found `Magic Mirror` in file `README.md`: Replace it with `MagicMirror²`.
 4. Typo: Found `MagicMirror2` in file `README.md`: Replace it with `MagicMirror²`.
-5. Recommendation: Found `new Date()` in file `mmm-food2fork-recipes.js`: Replace "new Date()" by "Date.now()": [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
+5. Recommendation: Found `new Date()` in file `mmm-food2fork-recipes.js`: Replace `new Date()` by `new Date(Date.now())`: [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
 6. Deprecated: Found `require('request')` in file `node_helper.js`: Replace it with built-in fetch.
 7. Warning: No LICENSE file.
 8. The branch name is 'master'. Consider renaming it to 'main'.
@@ -4298,7 +4300,7 @@ Last update: 2023-12-31 23:30:21 UTC
 4. Typo: Found `MagicMirror2` in file `README.md`: Replace it with `MagicMirror²`.
 5. Deprecated: Found `require('request')` in file `node_helper.js`: Replace it with built-in fetch.
 6. Recommendation: Found `require('https')` in file `node_helper.js`: Replace 'https' by 'node:https'.
-7. Recommendation: Found `new Date()` in file `node_helper.js`: Replace "new Date()" by "Date.now()": [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
+7. Recommendation: Found `new Date()` in file `node_helper.js`: Replace `new Date()` by `new Date(Date.now())`: [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
 8. The branch name is 'master'. Consider renaming it to 'main'.
 
 ### [mmm-nest-cameras by michael5r](https://github.com/michael5r/mmm-nest-cameras)
@@ -4307,7 +4309,7 @@ Last update: 2023-12-31 23:30:21 UTC
 2. Recommendation: Module name doesn't follow the recommended pattern (it doesn't start with `MMM-`). Consider renaming your module.
 3. Typo: Found `Magic Mirror` in file `README.md`: Replace it with `MagicMirror²`.
 4. Typo: Found `Magic Mirror` in file `mmm-nest-cameras.js`: Replace it with `MagicMirror²`.
-5. Recommendation: Found `new Date()` in file `mmm-nest-cameras.js`: Replace "new Date()" by "Date.now()": [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
+5. Recommendation: Found `new Date()` in file `mmm-nest-cameras.js`: Replace `new Date()` by `new Date(Date.now())`: [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
 6. Deprecated: Found `require('request')` in file `node_helper.js`: Replace it with built-in fetch.
 7. The branch name is 'master'. Consider renaming it to 'main'.
 
@@ -4318,7 +4320,7 @@ Last update: 2023-12-31 23:30:21 UTC
 3. Typo: Found `Magic Mirror` in file `README.md`: Replace it with `MagicMirror²`.
 4. Typo: Found `Magic Mirror` in file `mmm-nest-status.js`: Replace it with `MagicMirror²`.
 5. Recommendation: Found `axios` in file `node_helper.js`: Replace it with built-in fetch.
-6. Recommendation: Found `new Date()` in file `node_helper.js`: Replace "new Date()" by "Date.now()": [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
+6. Recommendation: Found `new Date()` in file `node_helper.js`: Replace `new Date()` by `new Date(Date.now())`: [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
 7. Recommendation: Found `axios` in file `package.json`: Replace it with built-in fetch.
 8. The branch name is 'master'. Consider renaming it to 'main'.
 
@@ -4326,9 +4328,9 @@ Last update: 2023-12-31 23:30:21 UTC
 
 1. Recommendation: Module name doesn't follow the recommended pattern (it doesn't start with `MMM-`). Consider renaming your module.
 2. Recommendation: Found `jshint` in file `canvasjs.min.js`: Replace "jshint" by "eslint".
-3. Recommendation: Found `new Date()` in file `mmm-nordic-electrical-spot-prices.js`: Replace "new Date()" by "Date.now()": [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
+3. Recommendation: Found `new Date()` in file `mmm-nordic-electrical-spot-prices.js`: Replace `new Date()` by `new Date(Date.now())`: [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
 4. Deprecated: Found `require('request')` in file `node_helper.js`: Replace it with built-in fetch.
-5. Recommendation: Found `new Date()` in file `node_helper.js`: Replace "new Date()" by "Date.now()": [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
+5. Recommendation: Found `new Date()` in file `node_helper.js`: Replace `new Date()` by `new Date(Date.now())`: [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
 6. Typo: Found `Magic Mirror` in file `package.json`: Replace it with `MagicMirror²`.
 7. Warning: No LICENSE file.
 8. The branch name is 'master'. Consider renaming it to 'main'.
@@ -4340,7 +4342,7 @@ Last update: 2023-12-31 23:30:21 UTC
 3. Typo: Found `Magic Mirror` in file `README.md`: Replace it with `MagicMirror²`.
 4. Typo: Found `MagicMirror2` in file `README.md`: Replace it with `MagicMirror²`.
 5. Deprecated: Found `require("request")` in file `node_helper.js`: Replace it with built-in fetch.
-6. Recommendation: Found `new Date()` in file `node_helper.js`: Replace "new Date()" by "Date.now()": [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
+6. Recommendation: Found `new Date()` in file `node_helper.js`: Replace `new Date()` by `new Date(Date.now())`: [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
 7. The branch name is 'master'. Consider renaming it to 'main'.
 
 ### [mmm-pins by ptrbld](https://github.com/ptrbld/mmm-pins)
@@ -4360,8 +4362,8 @@ Last update: 2023-12-31 23:30:21 UTC
 3. There are no specific keywords in 'package.json'. We would use them as tags on the module list page. Add a few meaningful terms to the keywords in the package.json. Not just “magicmirror” or “module”.
 4. No compatible or wrong license field in 'package.json'. Without that, we can't use an image.
 5. Recommendation: Module name doesn't follow the recommended pattern (it doesn't start with `MMM-`). Consider renaming your module.
-6. Recommendation: Found `new Date()` in file `MMM-RATP.js`: Replace "new Date()" by "Date.now()": [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
-7. Recommendation: Found `new Date()` in file `ratp_helper.js`: Replace "new Date()" by "Date.now()": [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
+6. Recommendation: Found `new Date()` in file `MMM-RATP.js`: Replace `new Date()` by `new Date(Date.now())`: [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
+7. Recommendation: Found `new Date()` in file `ratp_helper.js`: Replace `new Date()` by `new Date(Date.now())`: [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
 8. The branch name is 'master'. Consider renaming it to 'main'.
 
 ### [mmm-stocks by elaniobro](https://github.com/elaniobro/mmm-stocks)
@@ -4406,7 +4408,7 @@ Last update: 2023-12-31 23:30:21 UTC
 
 1. There is no `package.json`. We need this file to gather information about the module for the module list page.
 2. Recommendation: Module name doesn't follow the recommended pattern (it doesn't start with `MMM-`). Consider renaming your module.
-3. Recommendation: Found `new Date()` in file `node_helper.js`: Replace "new Date()" by "Date.now()": [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
+3. Recommendation: Found `new Date()` in file `node_helper.js`: Replace `new Date()` by `new Date(Date.now())`: [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
 4. The branch name is 'master'. Consider renaming it to 'main'.
 
 ### [mmm-uk-pollen-forecast by szech](https://github.com/szech/mmm-uk-pollen-forecast)
@@ -4415,7 +4417,7 @@ Last update: 2023-12-31 23:30:21 UTC
 2. Recommendation: Module name doesn't follow the recommended pattern (it doesn't start with `MMM-`). Consider renaming your module.
 3. Typo: Found `<sup>2</sup>` in file `README.md`: Replace it with `²`.`.
 4. Deprecated: Found `require('request')` in file `node_helper.js`: Replace it with built-in fetch.
-5. Recommendation: Found `new Date()` in file `node_helper.js`: Replace "new Date()" by "Date.now()": [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
+5. Recommendation: Found `new Date()` in file `node_helper.js`: Replace `new Date()` by `new Date(Date.now())`: [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
 6. Typo: Found `<sup>2</sup>` in file `package.json`: Replace it with `²`.`.
 7. The branch name is 'master'. Consider renaming it to 'main'.
 
@@ -4425,7 +4427,7 @@ Last update: 2023-12-31 23:30:21 UTC
 2. Recommendation: Module name doesn't follow the recommended pattern (it doesn't start with `MMM-`). Consider renaming your module.
 3. Typo: Found `Magic Mirror` in file `MMM-UVIndex.js`: Replace it with `MagicMirror²`.
 4. Recommendation: Found `XMLHttpRequest` in file `MMM-UVIndex.js`: Replace it with built-in fetch.
-5. Recommendation: Found `new Date()` in file `MMM-UVIndex.js`: Replace "new Date()" by "Date.now()": [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
+5. Recommendation: Found `new Date()` in file `MMM-UVIndex.js`: Replace `new Date()` by `new Date(Date.now())`: [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
 6. Warning: No LICENSE file.
 7. The branch name is 'master'. Consider renaming it to 'main'.
 
@@ -4437,7 +4439,7 @@ Last update: 2023-12-31 23:30:21 UTC
 4. Typo: Found `MagicMirror2` in file `README.md`: Replace it with `MagicMirror²`.
 5. Deprecated: Found `require('request')` in file `node_helper.js`: Replace it with built-in fetch.
 6. Recommendation: Found `require('https')` in file `node_helper.js`: Replace 'https' by 'node:https'.
-7. Recommendation: Found `new Date()` in file `node_helper.js`: Replace "new Date()" by "Date.now()": [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
+7. Recommendation: Found `new Date()` in file `node_helper.js`: Replace `new Date()` by `new Date(Date.now())`: [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
 8. Typo: Found `MagicMirror2` in file `package.json`: Replace it with `MagicMirror²`.
 9. The branch name is 'master'. Consider renaming it to 'main'.
 
@@ -4455,7 +4457,7 @@ Last update: 2023-12-31 23:30:21 UTC
 
 1. There is no `package.json`. We need this file to gather information about the module for the module list page.
 2. Recommendation: Module name doesn't follow the recommended pattern (it doesn't start with `MMM-`). Consider renaming your module.
-3. Recommendation: Found `new Date()` in file `log-stream-viewer.component.ts`: Replace "new Date()" by "Date.now()": [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
+3. Recommendation: Found `new Date()` in file `log-stream-viewer.component.ts`: Replace `new Date()` by `new Date(Date.now())`: [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
 4. Recommendation: Replace eslintrc by new flat config.
 5. The branch name is 'master'. Consider renaming it to 'main'.
 
@@ -4490,7 +4492,7 @@ Last update: 2023-12-31 23:30:21 UTC
 2. Typo: Found `Magic Mirror` in file `MMM-ModuleScheduler.js`: Replace it with `MagicMirror²`.
 3. Typo: Found `Magic Mirror` in file `README.md`: Replace it with `MagicMirror²`.
 4. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
-5. Recommendation: Found `new Date()` in file `node_helper.js`: Replace "new Date()" by "Date.now()": [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
+5. Recommendation: Found `new Date()` in file `node_helper.js`: Replace `new Date()` by `new Date(Date.now())`: [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
 6. Recommendation: Replace eslintrc by new flat config.
 7. The branch name is 'master'. Consider renaming it to 'main'.
 
@@ -4506,14 +4508,14 @@ Last update: 2023-12-31 23:30:21 UTC
 ### [MMM-MonthlyCalendar by kolbyjack](https://github.com/kolbyjack/MMM-MonthlyCalendar)
 
 1. There is no `package.json`. We need this file to gather information about the module for the module list page.
-2. Recommendation: Found `new Date()` in file `MMM-MonthlyCalendar.js`: Replace "new Date()" by "Date.now()": [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
+2. Recommendation: Found `new Date()` in file `MMM-MonthlyCalendar.js`: Replace `new Date()` by `new Date(Date.now())`: [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
 3. The branch name is 'master'. Consider renaming it to 'main'.
 
 ### [MMM-Moon by EnderFlop](https://github.com/EnderFlop/MMM-Moon)
 
 1. There is no `package.json`. We need this file to gather information about the module for the module list page.
 2. Recommendation: Found `require("https")` in file `node_helper.js`: Replace "https" by "node:https".
-3. Recommendation: Found `new Date()` in file `node_helper.js`: Replace "new Date()" by "Date.now()": [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
+3. Recommendation: Found `new Date()` in file `node_helper.js`: Replace `new Date()` by `new Date(Date.now())`: [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
 4. Warning: No LICENSE file.
 5. The branch name is 'master'. Consider renaming it to 'main'.
 
@@ -4521,7 +4523,7 @@ Last update: 2023-12-31 23:30:21 UTC
 
 1. `package.json` issue: No repository field.
 2. There are no keywords in 'package.json'. We would use them as tags on the module list page.
-3. Recommendation: Found `new Date()` in file `node_helper.js`: Replace "new Date()" by "Date.now()": [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
+3. Recommendation: Found `new Date()` in file `node_helper.js`: Replace `new Date()` by `new Date(Date.now())`: [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
 4. Deprecated: Found `"grunt"` in file `package.json`: Grunt is practically unmaintained. Move on to something better.
 5. Recommendation: Replace eslintrc by new flat config.
 6. The branch name is 'master'. Consider renaming it to 'main'.
@@ -4559,7 +4561,7 @@ Last update: 2023-12-31 23:30:21 UTC
 0. This module is outdated: Abandoned. No reactions to issues since years. No installation instructions.
 1. There is no `package.json`. We need this file to gather information about the module for the module list page.
 2. Recommendation: Module name doesn't follow the recommended pattern (it doesn't start with `MMM-`). Consider renaming your module.
-3. Recommendation: Found `new Date()` in file `motiondetector.js`: Replace "new Date()" by "Date.now()": [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
+3. Recommendation: Found `new Date()` in file `motiondetector.js`: Replace `new Date()` by `new Date(Date.now())`: [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
 4. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
 5. Warning: No LICENSE file.
 6. The branch name is 'master'. Consider renaming it to 'main'.
@@ -4567,7 +4569,7 @@ Last update: 2023-12-31 23:30:21 UTC
 ### [MMM-MotionDetector by rejas](https://github.com/rejas/MMM-MotionDetector)
 
 1. No image found.
-2. Recommendation: Found `new Date()` in file `MMM-MotionDetector.js`: Replace "new Date()" by "Date.now()": [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
+2. Recommendation: Found `new Date()` in file `MMM-MotionDetector.js`: Replace `new Date()` by `new Date(Date.now())`: [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
 
 ### [MMM-MotionDisplay by pjestico](https://github.com/pjestico/MMM-MotionDisplay)
 
@@ -4576,7 +4578,7 @@ Last update: 2023-12-31 23:30:21 UTC
 3. `package.json` issue: No license field.
 4. There are no keywords in 'package.json'. We would use them as tags on the module list page.
 5. Deprecated: Found `require('request')` in file `node_helper.js`: Replace it with built-in fetch.
-6. Recommendation: Found `new Date()` in file `node_helper.js`: Replace "new Date()" by "Date.now()": [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
+6. Recommendation: Found `new Date()` in file `node_helper.js`: Replace `new Date()` by `new Date(Date.now())`: [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
 7. Warning: No LICENSE file.
 
 ### [MMM-MovieInfo by fewieden](https://github.com/fewieden/MMM-MovieInfo)
@@ -4637,7 +4639,7 @@ Last update: 2023-12-31 23:30:21 UTC
 2. Typo: Found `Magic Mirror` in file `MMM-MPR121.js`: Replace it with `MagicMirror²`.
 3. Typo: Found `Magic Mirror` in file `README.md`: Replace it with `MagicMirror²`.
 4. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
-5. Recommendation: Found `new Date()` in file `node_helper.js`: Replace "new Date()" by "Date.now()": [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
+5. Recommendation: Found `new Date()` in file `node_helper.js`: Replace `new Date()` by `new Date(Date.now())`: [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
 6. Deprecated: Found `"electron-rebuild"` in file `package.json`: Replace it with `@electron/rebuild`
 7. Warning: No LICENSE file.
 8. The branch name is 'master'. Consider renaming it to 'main'.
@@ -4650,7 +4652,7 @@ Last update: 2023-12-31 23:30:21 UTC
 
 ### [MMM-MQTT by ottopaulsen](https://github.com/ottopaulsen/MMM-MQTT)
 
-1. Recommendation: Found `new Date()` in file `module.test.js`: Replace "new Date()" by "Date.now()": [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
+1. Recommendation: Found `new Date()` in file `module.test.js`: Replace `new Date()` by `new Date(Date.now())`: [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
 2. Recommendation: Replace eslintrc by new flat config.
 3. The branch name is 'master'. Consider renaming it to 'main'.
 
@@ -4716,7 +4718,7 @@ Last update: 2023-12-31 23:30:21 UTC
 
 1. There is no `package.json`. We need this file to gather information about the module for the module list page.
 2. Typo: Found `Magic Mirror` in file `MMM-Multimonth.js`: Replace it with `MagicMirror²`.
-3. Recommendation: Found `new Date()` in file `MMM-Multimonth.js`: Replace "new Date()" by "Date.now()": [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
+3. Recommendation: Found `new Date()` in file `MMM-Multimonth.js`: Replace `new Date()` by `new Date(Date.now())`: [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
 4. The branch name is 'master'. Consider renaming it to 'main'.
 
 ### [MMM-mumble by ThePirateWhoSmellsOfSunflowers](https://github.com/ThePirateWhoSmellsOfSunflowers/MMM-mumble)
@@ -4740,11 +4742,11 @@ Last update: 2023-12-31 23:30:21 UTC
 1. `package.json` issue: No description
 2. Recommendation: Found `jshint` in file `Gruntfile.js`: Replace "jshint" by "eslint".
 3. Typo: Found `Magic Mirror` in file `mvgmunich.js`: Replace it with `MagicMirror²`.
-4. Recommendation: Found `new Date()` in file `mvgmunich.js`: Replace "new Date()" by "Date.now()": [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
+4. Recommendation: Found `new Date()` in file `mvgmunich.js`: Replace `new Date()` by `new Date(Date.now())`: [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
 5. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
 6. Deprecated: Found `require("request")` in file `node_helper.js`: Replace it with built-in fetch.
 7. Recommendation: Found `XMLHttpRequest` in file `node_helper.js`: Replace it with built-in fetch.
-8. Recommendation: Found `new Date()` in file `node_helper.js`: Replace "new Date()" by "Date.now()": [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
+8. Recommendation: Found `new Date()` in file `node_helper.js`: Replace `new Date()` by `new Date(Date.now())`: [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
 9. The branch name is 'master'. Consider renaming it to 'main'.
 
 ### [MMM-MVVWiesty by wiesty](https://github.com/wiesty/MMM-MVVWiesty)
@@ -4754,10 +4756,10 @@ Last update: 2023-12-31 23:30:21 UTC
 ### [MMM-MyCalendar by jclarke0000](https://github.com/jclarke0000/MMM-MyCalendar)
 
 1. There is no `package.json`. We need this file to gather information about the module for the module list page.
-2. Recommendation: Found `new Date()` in file `MMM-MyCalendar.js`: Replace "new Date()" by "Date.now()": [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
+2. Recommendation: Found `new Date()` in file `MMM-MyCalendar.js`: Replace `new Date()` by `new Date(Date.now())`: [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
 3. Recommendation: Found `require("https")` in file `calendarfetcher.js`: Replace "https" by "node:https".
 4. Recommendation: Found `require("fetch")` in file `calendarfetcher.js`: Replace it with built-in fetch.
-5. Recommendation: Found `new Date()` in file `calendarutils.js`: Replace "new Date()" by "Date.now()": [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
+5. Recommendation: Found `new Date()` in file `calendarutils.js`: Replace `new Date()` by `new Date(Date.now())`: [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
 6. Deprecated: Found `require('request')` in file `node-ical.js`: Replace it with built-in fetch.
 7. The branch name is 'master'. Consider renaming it to 'main'.
 
@@ -4765,7 +4767,7 @@ Last update: 2023-12-31 23:30:21 UTC
 
 1. Recommendation: Found `jshint` in file `Gruntfile.js`: Replace "jshint" by "eslint".
 2. Typo: Found `Magic Mirror` in file `MMM-MyCommute.js`: Replace it with `MagicMirror²`.
-3. Recommendation: Found `new Date()` in file `MMM-MyCommute.js`: Replace "new Date()" by "Date.now()": [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
+3. Recommendation: Found `new Date()` in file `MMM-MyCommute.js`: Replace `new Date()` by `new Date(Date.now())`: [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
 4. Typo: Found `MagicMirror2` in file `README.md`: Replace it with `MagicMirror²`.
 5. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
 6. Deprecated: Found `require("request")` in file `node_helper.js`: Replace it with built-in fetch.
@@ -4817,7 +4819,7 @@ Last update: 2023-12-31 23:30:21 UTC
 ### [MMM-MyPrayerTimes by htilburgs](https://github.com/htilburgs/MMM-MyPrayerTimes)
 
 1. There are no keywords in 'package.json'. We would use them as tags on the module list page.
-2. Recommendation: Found `new Date()` in file `MMM-MyPrayerTimes.js`: Replace "new Date()" by "Date.now()": [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
+2. Recommendation: Found `new Date()` in file `MMM-MyPrayerTimes.js`: Replace `new Date()` by `new Date(Date.now())`: [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
 3. Deprecated: Found `require('request')` in file `node_helper.js`: Replace it with built-in fetch.
 4. The branch name is 'master'. Consider renaming it to 'main'.
 
@@ -4864,7 +4866,7 @@ Last update: 2023-12-31 23:30:21 UTC
 ### [MMM-MyStudyLife by ethanpartida](https://github.com/ethanpartida/MMM-MyStudyLife)
 
 1. Typo: Found `Magic Mirror` in file `MMM-MyStudyLife.js`: Replace it with `MagicMirror²`.
-2. Recommendation: Found `new Date()` in file `MMM-MyStudyLife.js`: Replace "new Date()" by "Date.now()": [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
+2. Recommendation: Found `new Date()` in file `MMM-MyStudyLife.js`: Replace `new Date()` by `new Date(Date.now())`: [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
 3. Typo: Found `MagicMirror2` in file `README.md`: Replace it with `MagicMirror²`.
 4. Deprecated: Found `require('request')` in file `node_helper.js`: Replace it with built-in fetch.
 5. Found directory `node_modules`. This shouldn't be uploaded. Add `node_modules/`to `.gitignore`.
@@ -4929,7 +4931,7 @@ Last update: 2023-12-31 23:30:21 UTC
 ### [MMM-MyWeather by martinkooij](https://github.com/martinkooij/MMM-MyWeather)
 
 1. Typo: Found `Magic Mirror` in file `MMM-MyWeather.js`: Replace it with `MagicMirror²`.
-2. Recommendation: Found `new Date()` in file `MMM-MyWeather.js`: Replace "new Date()" by "Date.now()": [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
+2. Recommendation: Found `new Date()` in file `MMM-MyWeather.js`: Replace `new Date()` by `new Date(Date.now())`: [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
 3. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
 4. Deprecated: Found `require('request')` in file `node_helper.js`: Replace it with built-in fetch.
 5. Warning: No LICENSE file.
@@ -4956,7 +4958,7 @@ Last update: 2023-12-31 23:30:21 UTC
 
 1. There is no `package.json`. We need this file to gather information about the module for the module list page.
 2. Recommendation: Found `XMLHttpRequest` in file `MMM-NameDay.js`: Replace it with built-in fetch.
-3. Recommendation: Found `new Date()` in file `MMM-NameDay.js`: Replace "new Date()" by "Date.now()": [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
+3. Recommendation: Found `new Date()` in file `MMM-NameDay.js`: Replace `new Date()` by `new Date(Date.now())`: [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
 4. The branch name is 'master'. Consider renaming it to 'main'.
 
 ### [MMM-Namnsdag by Menturan](https://github.com/Menturan/MMM-Namnsdag)
@@ -4973,9 +4975,9 @@ Last update: 2023-12-31 23:30:21 UTC
 ### [MMM-Nantes-TAN by normyx](https://github.com/normyx/MMM-Nantes-TAN)
 
 1. Typo: Found `Magic Mirror` in file `MMM-Nantes-TAN.js`: Replace it with `MagicMirror²`.
-2. Recommendation: Found `new Date()` in file `MMM-Nantes-TAN.js`: Replace "new Date()" by "Date.now()": [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
+2. Recommendation: Found `new Date()` in file `MMM-Nantes-TAN.js`: Replace `new Date()` by `new Date(Date.now())`: [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
 3. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
-4. Recommendation: Found `new Date()` in file `node_helper.js`: Replace "new Date()" by "Date.now()": [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
+4. Recommendation: Found `new Date()` in file `node_helper.js`: Replace `new Date()` by `new Date(Date.now())`: [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
 5. The branch name is 'master'. Consider renaming it to 'main'.
 
 ### [MMM-NASA by mykle1](https://github.com/mykle1/MMM-NASA)
@@ -5048,7 +5050,7 @@ Last update: 2023-12-31 23:30:21 UTC
 
 1. There is no `package.json`. We need this file to gather information about the module for the module list page.
 2. Typo: Found `Magic Mirror` in file `MMM-NEO.js`: Replace it with `MagicMirror²`.
-3. Recommendation: Found `new Date()` in file `MMM-NEO.js`: Replace "new Date()" by "Date.now()": [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
+3. Recommendation: Found `new Date()` in file `MMM-NEO.js`: Replace `new Date()` by `new Date(Date.now())`: [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
 4. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
 5. Deprecated: Found `require('request')` in file `node_helper.js`: Replace it with built-in fetch.
 6. The branch name is 'master'. Consider renaming it to 'main'.
@@ -5064,9 +5066,9 @@ Last update: 2023-12-31 23:30:21 UTC
 1. `package.json` issue: No repository field.
 2. `package.json` issue: No license field.
 3. There are no keywords in 'package.json'. We would use them as tags on the module list page.
-4. Recommendation: Found `new Date()` in file `MMM-NesteBussAtB.js`: Replace "new Date()" by "Date.now()": [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
+4. Recommendation: Found `new Date()` in file `MMM-NesteBussAtB.js`: Replace `new Date()` by `new Date(Date.now())`: [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
 5. Deprecated: Found `require('request')` in file `node_helper.js`: Replace it with built-in fetch.
-6. Recommendation: Found `new Date()` in file `node_helper.js`: Replace "new Date()" by "Date.now()": [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
+6. Recommendation: Found `new Date()` in file `node_helper.js`: Replace `new Date()` by `new Date(Date.now())`: [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
 7. The branch name is 'master'. Consider renaming it to 'main'.
 
 ### [MMM-NestRemoteThermostat by sisimomo](https://github.com/sisimomo/MMM-NestRemoteThermostat)
@@ -5086,7 +5088,7 @@ Last update: 2023-12-31 23:30:21 UTC
 3. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
 4. Deprecated: Found `require('request')` in file `node_helper.js`: Replace it with built-in fetch.
 5. Recommendation: Found `require("https")` in file `node_helper.js`: Replace "https" by "node:https".
-6. Recommendation: Found `new Date()` in file `node_helper.js`: Replace "new Date()" by "Date.now()": [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
+6. Recommendation: Found `new Date()` in file `node_helper.js`: Replace `new Date()` by `new Date(Date.now())`: [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
 7. Typo: Found `Magic Mirror` in file `package.json`: Replace it with `MagicMirror²`.
 8. Warning: No LICENSE file.
 9. The branch name is 'master'. Consider renaming it to 'main'.
@@ -5100,7 +5102,7 @@ Last update: 2023-12-31 23:30:21 UTC
 5. Typo: Found `Magic Mirror` in file `MMM-Netatmo-Thermostat.js`: Replace it with `MagicMirror²`.
 6. Recommendation: Found `XMLHttpRequest` in file `jquery-3.2.1.min.js`: Replace it with built-in fetch.
 7. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
-8. Recommendation: Found `new Date()` in file `node_helper.js`: Replace "new Date()" by "Date.now()": [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
+8. Recommendation: Found `new Date()` in file `node_helper.js`: Replace `new Date()` by `new Date(Date.now())`: [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
 9. Deprecated: Found `"grunt"` in file `package.json`: Grunt is practically unmaintained. Move on to something better.
 10. Recommendation: Replace eslintrc by new flat config.
 11. The branch name is 'master'. Consider renaming it to 'main'.
@@ -5198,20 +5200,20 @@ Last update: 2023-12-31 23:30:21 UTC
 3. `package.json` issue: No license field.
 4. There are no keywords in 'package.json'. We would use them as tags on the module list page.
 5. Typo: Found `Magic Mirror` in file `NextTrains.js`: Replace it with `MagicMirror²`.
-6. Recommendation: Found `new Date()` in file `NextTrains.js`: Replace "new Date()" by "Date.now()": [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
+6. Recommendation: Found `new Date()` in file `NextTrains.js`: Replace `new Date()` by `new Date(Date.now())`: [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
 7. Typo: Found `<sup>2</sup>` in file `README.md`: Replace it with `²`.`.
 8. Recommendation: Found `require('https')` in file `node_helper.js`: Replace 'https' by 'node:https'.
-9. Recommendation: Found `new Date()` in file `node_helper.js`: Replace "new Date()" by "Date.now()": [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
+9. Recommendation: Found `new Date()` in file `node_helper.js`: Replace `new Date()` by `new Date(Date.now())`: [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
 
 ### [MMM-NFL by fewieden](https://github.com/fewieden/MMM-NFL)
 
 1. Recommendation: Found `uses: actions/checkout@v2` in file `build.yml`: Replace it with v4.
 2. Typo: Found `Magic Mirror` in file `MMM-NFL.js`: Replace it with `MagicMirror²`.
-3. Recommendation: Found `new Date()` in file `MMM-NFL.js`: Replace "new Date()" by "Date.now()": [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
+3. Recommendation: Found `new Date()` in file `MMM-NFL.js`: Replace `new Date()` by `new Date(Date.now())`: [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
 4. Typo: Found `<sup>2</sup>` in file `README.md`: Replace it with `²`.`.
 5. Recommendation: Found `'node-fetch'` in file `espn.js`: Replace it with built-in fetch.
 6. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
-7. Recommendation: Found `new Date()` in file `node_helper.js`: Replace "new Date()" by "Date.now()": [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
+7. Recommendation: Found `new Date()` in file `node_helper.js`: Replace `new Date()` by `new Date(Date.now())`: [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
 8. Typo: Found `MagicMirror2` in file `package.json`: Replace it with `MagicMirror²`.
 9. Recommendation: Found `"node-fetch"` in file `package.json`: Replace it with built-in fetch.
 10. Recommendation: Replace eslintrc by new flat config.
@@ -5230,9 +5232,9 @@ Last update: 2023-12-31 23:30:21 UTC
 
 1. Recommendation: Found `uses: actions/checkout@v2` in file `build.yml`: Replace it with v4.
 2. Deprecated: Found `node-version: 16` in file `build.yml`: Update to current version.
-3. Recommendation: Found `new Date()` in file `MMM-NHL.js`: Replace "new Date()" by "Date.now()": [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
+3. Recommendation: Found `new Date()` in file `MMM-NHL.js`: Replace `new Date()` by `new Date(Date.now())`: [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
 4. Recommendation: Found `'node-fetch'` in file `node_helper.js`: Replace it with built-in fetch.
-5. Recommendation: Found `new Date()` in file `node_helper.js`: Replace "new Date()" by "Date.now()": [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
+5. Recommendation: Found `new Date()` in file `node_helper.js`: Replace `new Date()` by `new Date(Date.now())`: [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
 6. Recommendation: Found `"node-fetch"` in file `package.json`: Replace it with built-in fetch.
 7. Recommendation: Replace eslintrc by new flat config.
 8. The branch name is 'master'. Consider renaming it to 'main'.
@@ -5244,11 +5246,11 @@ Last update: 2023-12-31 23:30:21 UTC
 3. Recommendation: Found `uses: actions/checkout@v2` in file `build.yml`: Replace it with v4.
 4. Recommendation: Found `axios` in file `MMM-NiceHash.js`: Replace it with built-in fetch.
 5. Recommendation: Found `XMLHttpRequest` in file `MMM-NiceHash.js`: Replace it with built-in fetch.
-6. Recommendation: Found `new Date()` in file `MMM-NiceHash.js`: Replace "new Date()" by "Date.now()": [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
+6. Recommendation: Found `new Date()` in file `MMM-NiceHash.js`: Replace `new Date()` by `new Date(Date.now())`: [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
 7. Recommendation: Found `axios` in file `node_helper.js`: Replace it with built-in fetch.
 8. Recommendation: Found `axios` in file `package.json`: Replace it with built-in fetch.
 9. Recommendation: Found `axios` in file `conversions.ts`: Replace it with built-in fetch.
-10. Recommendation: Found `new Date()` in file `conversions.ts`: Replace "new Date()" by "Date.now()": [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
+10. Recommendation: Found `new Date()` in file `conversions.ts`: Replace `new Date()` by `new Date(Date.now())`: [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
 11. Recommendation: Found `axios` in file `nicehash.ts`: Replace it with built-in fetch.
 12. Warning: No LICENSE file.
 13. The branch name is 'master'. Consider renaming it to 'main'.
@@ -5270,7 +5272,7 @@ Last update: 2023-12-31 23:30:21 UTC
 5. Recommendation: Found `"node-fetch"` in file `package.json`: Replace it with built-in fetch.
 6. Recommendation: Found `'node-fetch'` in file `rollup.config.js`: Replace it with built-in fetch.
 7. Recommendation: Found `'node-fetch'` in file `Backend.ts`: Replace it with built-in fetch.
-8. Recommendation: Found `new Date()` in file `Utils.ts`: Replace "new Date()" by "Date.now()": [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
+8. Recommendation: Found `new Date()` in file `Utils.ts`: Replace `new Date()` by `new Date(Date.now())`: [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
 9. Recommendation: Replace eslintrc by new flat config.
 
 ### [MMM-nixie-clock by Isaac-the-Man](https://github.com/Isaac-the-Man/MMM-nixie-clock)
@@ -5318,7 +5320,7 @@ Last update: 2023-12-31 23:30:21 UTC
 
 1. There are no specific keywords in 'package.json'. We would use them as tags on the module list page. Add a few meaningful terms to the keywords in the package.json. Not just “magicmirror” or “module”.
 2. Typo: Found `Magic Mirror` in file `MMM-NOAA3.js`: Replace it with `MagicMirror²`.
-3. Recommendation: Found `new Date()` in file `MMM-NOAA3.js`: Replace "new Date()" by "Date.now()": [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
+3. Recommendation: Found `new Date()` in file `MMM-NOAA3.js`: Replace `new Date()` by `new Date(Date.now())`: [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
 4. Typo: Found `MagicMirror2` in file `README.md`: Replace it with `MagicMirror²`.
 5. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
 6. Deprecated: Found `require('request')` in file `node_helper.js`: Replace it with built-in fetch.
@@ -5331,7 +5333,7 @@ Last update: 2023-12-31 23:30:21 UTC
 13. Deprecated: Found `require('request')` in file `ds.js`: Replace it with built-in fetch.
 14. Typo: Found `Magic Mirror` in file `ms.js`: Replace it with `MagicMirror²`.
 15. Deprecated: Found `require('request')` in file `ms.js`: Replace it with built-in fetch.
-16. Recommendation: Found `new Date()` in file `ms.js`: Replace "new Date()" by "Date.now()": [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
+16. Recommendation: Found `new Date()` in file `ms.js`: Replace `new Date()` by `new Date(Date.now())`: [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
 17. Typo: Found `Magic Mirror` in file `ow.js`: Replace it with `MagicMirror²`.
 18. Deprecated: Found `require('request')` in file `ow.js`: Replace it with built-in fetch.
 19. Typo: Found `Magic Mirror` in file `wb.js`: Replace it with `MagicMirror²`.
@@ -5345,12 +5347,12 @@ Last update: 2023-12-31 23:30:21 UTC
 ### [MMM-NOAATides by crice009](https://github.com/crice009/MMM-NOAATides)
 
 1. Typo: Found `Magic Mirror` in file `MMM-NOAATides.js`: Replace it with `MagicMirror²`.
-2. Recommendation: Found `new Date()` in file `MMM-NOAATides.js`: Replace "new Date()" by "Date.now()": [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
+2. Recommendation: Found `new Date()` in file `MMM-NOAATides.js`: Replace `new Date()` by `new Date(Date.now())`: [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
 3. Typo: Found `Magic Mirror` in file `README.md`: Replace it with `MagicMirror²`.
 4. Typo: Found `<sup>2</sup>` in file `README.md`: Replace it with `²`.`.
 5. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
 6. Recommendation: Found `"node-fetch"` in file `node_helper.js`: Replace it with built-in fetch.
-7. Recommendation: Found `new Date()` in file `node_helper.js`: Replace "new Date()" by "Date.now()": [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
+7. Recommendation: Found `new Date()` in file `node_helper.js`: Replace `new Date()` by `new Date(Date.now())`: [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
 8. Typo: Found `MagicMirror2` in file `package.json`: Replace it with `MagicMirror²`.
 9. Recommendation: Found `"node-fetch"` in file `package.json`: Replace it with built-in fetch.
 
@@ -5373,7 +5375,7 @@ Last update: 2023-12-31 23:30:21 UTC
 2. Typo: Found `Magic Mirror` in file `MMM-Notion.js`: Replace it with `MagicMirror²`.
 3. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
 4. Typo: Found `Magic Mirror` in file `DateFormat.js`: Replace it with `MagicMirror²`.
-5. Recommendation: Found `new Date()` in file `DateFormat.js`: Replace "new Date()" by "Date.now()": [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
+5. Recommendation: Found `new Date()` in file `DateFormat.js`: Replace `new Date()` by `new Date(Date.now())`: [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
 6. Typo: Found `Magic Mirror` in file `PropertiesView.js`: Replace it with `MagicMirror²`.
 7. Typo: Found `Magic Mirror` in file `ListView.js`: Replace it with `MagicMirror²`.
 8. Typo: Found `Magic Mirror` in file `ListViewElement.js`: Replace it with `MagicMirror²`.
@@ -5404,7 +5406,7 @@ Last update: 2023-12-31 23:30:21 UTC
 
 1. There are no keywords in 'package.json'. We would use them as tags on the module list page.
 2. Recommendation: Found `jshint` in file `Gruntfile.js`: Replace "jshint" by "eslint".
-3. Recommendation: Found `new Date()` in file `NsFetcher.js`: Replace "new Date()" by "Date.now()": [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
+3. Recommendation: Found `new Date()` in file `NsFetcher.js`: Replace `new Date()` by `new Date(Date.now())`: [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
 4. Deprecated: Found `"grunt"` in file `package.json`: Grunt is practically unmaintained. Move on to something better.
 5. Warning: No LICENSE file.
 6. Recommendation: Replace eslintrc by new flat config.
@@ -5418,7 +5420,7 @@ Last update: 2023-12-31 23:30:21 UTC
 4. Deprecated: Found `node-version: 16` in file `npm-publish-github-packages.yml`: Update to current version.
 5. Recommendation: Found `uses: actions/checkout@v2` in file `npm-publish.yml`: Replace it with v4.
 6. Deprecated: Found `node-version: 16` in file `npm-publish.yml`: Update to current version.
-7. Recommendation: Found `new Date()` in file `node_helper.js`: Replace "new Date()" by "Date.now()": [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
+7. Recommendation: Found `new Date()` in file `node_helper.js`: Replace `new Date()` by `new Date(Date.now())`: [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
 8. Typo: Found `Magic Mirror` in file `package.json`: Replace it with `MagicMirror²`.
 9. Recommendation: Replace eslintrc by new flat config.
 10. The branch name is 'master'. Consider renaming it to 'main'.
@@ -5450,7 +5452,7 @@ Last update: 2023-12-31 23:30:21 UTC
 5. Recommendation: Found `jshint` in file `octomirror-module.js`: Replace "jshint" by "eslint".
 6. Typo: Found `Magic Mirror` in file `package.json`: Replace it with `MagicMirror²`.
 7. Recommendation: Found `XMLHttpRequest` in file `packed_client.js`: Replace it with built-in fetch.
-8. Recommendation: Found `new Date()` in file `packed_client.js`: Replace "new Date()" by "Date.now()": [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
+8. Recommendation: Found `new Date()` in file `packed_client.js`: Replace `new Date()` by `new Date(Date.now())`: [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
 9. Recommendation: Replace eslintrc by new flat config.
 10. The branch name is 'master'. Consider renaming it to 'main'.
 
@@ -5459,7 +5461,7 @@ Last update: 2023-12-31 23:30:21 UTC
 1. There is no `package.json`. We need this file to gather information about the module for the module list page.
 2. Typo: Found `Magic Mirror` in file `MMM-OctoMon.js`: Replace it with `MagicMirror²`.
 3. Recommendation: Found `XMLHttpRequest` in file `MMM-OctoMon.js`: Replace it with built-in fetch.
-4. Recommendation: Found `new Date()` in file `MMM-OctoMon.js`: Replace "new Date()" by "Date.now()": [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
+4. Recommendation: Found `new Date()` in file `MMM-OctoMon.js`: Replace `new Date()` by `new Date(Date.now())`: [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
 5. Typo: Found `<sup>2</sup>` in file `README.md`: Replace it with `²`.`.
 6. The branch name is 'master'. Consider renaming it to 'main'.
 
@@ -5474,14 +5476,14 @@ Last update: 2023-12-31 23:30:21 UTC
 
 ### [MMM-oebb-station-board by mscharl](https://github.com/mscharl/MMM-oebb-station-board)
 
-1. Recommendation: Found `new Date()` in file `MMM-oebb-station-board.js`: Replace "new Date()" by "Date.now()": [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
+1. Recommendation: Found `new Date()` in file `MMM-oebb-station-board.js`: Replace `new Date()` by `new Date(Date.now())`: [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
 2. Typo: Found `MagicMirror2` in file `package.json`: Replace it with `MagicMirror²`.
-3. Recommendation: Found `new Date()` in file `MMM-oebb-station-board.ts`: Replace "new Date()" by "Date.now()": [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
+3. Recommendation: Found `new Date()` in file `MMM-oebb-station-board.ts`: Replace `new Date()` by `new Date(Date.now())`: [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
 4. The branch name is 'master'. Consider renaming it to 'main'.
 
 ### [MMM-Oelpreise by eckonator](https://github.com/eckonator/MMM-Oelpreise)
 
-1. Recommendation: Found `new Date()` in file `MMM-Oelpreise.js`: Replace "new Date()" by "Date.now()": [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
+1. Recommendation: Found `new Date()` in file `MMM-Oelpreise.js`: Replace `new Date()` by `new Date(Date.now())`: [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
 2. Deprecated: Found `require('request')` in file `node_helper.js`: Replace it with built-in fetch.
 3. The branch name is 'master'. Consider renaming it to 'main'.
 
@@ -5507,7 +5509,7 @@ Last update: 2023-12-31 23:30:21 UTC
 ### [MMM-OneBusAway by jugler](https://github.com/jugler/MMM-OneBusAway)
 
 1. There is no `package.json`. We need this file to gather information about the module for the module list page.
-2. Recommendation: Found `new Date()` in file `MMM-OneBusAway.js`: Replace "new Date()" by "Date.now()": [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
+2. Recommendation: Found `new Date()` in file `MMM-OneBusAway.js`: Replace `new Date()` by `new Date(Date.now())`: [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
 3. Typo: Found `Magic Mirror` in file `README.md`: Replace it with `MagicMirror²`.
 4. Deprecated: Found `require('request')` in file `node_helper.js`: Replace it with built-in fetch.
 5. Warning: No LICENSE file.
@@ -5540,7 +5542,7 @@ Last update: 2023-12-31 23:30:21 UTC
 3. Typo: Found `Magic Mirror` in file `README.md`: Replace it with `MagicMirror²`.
 4. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
 5. Recommendation: Found `'node-fetch'` in file `node_helper.js`: Replace it with built-in fetch.
-6. Recommendation: Found `new Date()` in file `node_helper.js`: Replace "new Date()" by "Date.now()": [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
+6. Recommendation: Found `new Date()` in file `node_helper.js`: Replace `new Date()` by `new Date(Date.now())`: [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
 
 ### [MMM-Online-State by Legion2](https://github.com/Legion2/MMM-Online-State)
 
@@ -5551,7 +5553,7 @@ Last update: 2023-12-31 23:30:21 UTC
 
 1. `package.json` issue: No repository field.
 2. There are no keywords in 'package.json'. We would use them as tags on the module list page.
-3. Recommendation: Found `new Date()` in file `MMM-OnlineImagesViewer.js`: Replace "new Date()" by "Date.now()": [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
+3. Recommendation: Found `new Date()` in file `MMM-OnlineImagesViewer.js`: Replace `new Date()` by `new Date(Date.now())`: [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
 
 ### [MMM-OnScreenMenu by shbatm](https://github.com/shbatm/MMM-OnScreenMenu)
 
@@ -5583,12 +5585,12 @@ Last update: 2023-12-31 23:30:21 UTC
 
 ### [MMM-OnThisDayWikiApi by slugmuffin](https://github.com/slugmuffin/MMM-OnThisDayWikiApi)
 
-1. Recommendation: Found `new Date()` in file `MMM-OnThisDayWikiApi.js`: Replace "new Date()" by "Date.now()": [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
+1. Recommendation: Found `new Date()` in file `MMM-OnThisDayWikiApi.js`: Replace `new Date()` by `new Date(Date.now())`: [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
 
 ### [MMM-OpelStatuses by santanachia](https://github.com/santanachia/MMM-OpelStatuses)
 
 1. No image found.
-2. Recommendation: Found `new Date()` in file `MMM-OpelStatuses.js`: Replace "new Date()" by "Date.now()": [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
+2. Recommendation: Found `new Date()` in file `MMM-OpelStatuses.js`: Replace `new Date()` by `new Date(Date.now())`: [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
 3. Deprecated: Found `require('request')` in file `node_helper.js`: Replace it with built-in fetch.
 4. The branch name is 'master'. Consider renaming it to 'main'.
 
@@ -5617,7 +5619,7 @@ Last update: 2023-12-31 23:30:21 UTC
 1. There is no `package.json`. We need this file to gather information about the module for the module list page.
 2. Typo: Found `Magic Mirror` in file `MMM-OpenmapWeather.js`: Replace it with `MagicMirror²`.
 3. Recommendation: Found `XMLHttpRequest` in file `MMM-OpenmapWeather.js`: Replace it with built-in fetch.
-4. Recommendation: Found `new Date()` in file `MMM-OpenmapWeather.js`: Replace "new Date()" by "Date.now()": [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
+4. Recommendation: Found `new Date()` in file `MMM-OpenmapWeather.js`: Replace `new Date()` by `new Date(Date.now())`: [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
 5. The branch name is 'master'. Consider renaming it to 'main'.
 
 ### [MMM-OpenSprinkler by johnny-co](https://github.com/johnny-co/MMM-OpenSprinkler)
@@ -5625,7 +5627,7 @@ Last update: 2023-12-31 23:30:21 UTC
 1. An error occurred while getting information from 'package.json': SyntaxError: Unexpected token ']', ..."dule",
   ],
   "aut"... is not valid JSON
-2. Recommendation: Found `new Date()` in file `MMM-OS-Utilities.js`: Replace "new Date()" by "Date.now()": [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
+2. Recommendation: Found `new Date()` in file `MMM-OS-Utilities.js`: Replace `new Date()` by `new Date(Date.now())`: [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
 3. Typo: Found `Magic Mirror` in file `MMM-OpenSprinkler.js`: Replace it with `MagicMirror²`.
 4. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
 5. Deprecated: Found `require('request')` in file `node_helper.js`: Replace it with built-in fetch.
@@ -5662,7 +5664,7 @@ Last update: 2023-12-31 23:30:21 UTC
 1. `package.json` issue: No repository field.
 2. There are no keywords in 'package.json'. We would use them as tags on the module list page.
 3. No image found.
-4. Recommendation: Found `new Date()` in file `node_helper.js`: Replace "new Date()" by "Date.now()": [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
+4. Recommendation: Found `new Date()` in file `node_helper.js`: Replace `new Date()` by `new Date(Date.now())`: [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
 
 ### [MMM-Oura by erchenger](https://github.com/erchenger/MMM-Oura)
 
@@ -5671,7 +5673,7 @@ Last update: 2023-12-31 23:30:21 UTC
 3. Recommendation: Found `jshint` in file `Gruntfile.js`: Replace "jshint" by "eslint".
 4. Typo: Found `Magic Mirror` in file `MMM-Oura.js`: Replace it with `MagicMirror²`.
 5. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
-6. Recommendation: Found `new Date()` in file `node_helper.js`: Replace "new Date()" by "Date.now()": [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
+6. Recommendation: Found `new Date()` in file `node_helper.js`: Replace `new Date()` by `new Date(Date.now())`: [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
 7. Deprecated: Found `"grunt"` in file `package.json`: Grunt is practically unmaintained. Move on to something better.
 8. Recommendation: Replace eslintrc by new flat config.
 9. The branch name is 'master'. Consider renaming it to 'main'.
@@ -5742,7 +5744,7 @@ Last update: 2023-12-31 23:30:21 UTC
 
 1. There are no keywords in 'package.json'. We would use them as tags on the module list page.
 2. Typo: Found `Magic Mirror` in file `MMM-Parcel.js`: Replace it with `MagicMirror²`.
-3. Recommendation: Found `new Date()` in file `MMM-Parcel.js`: Replace "new Date()" by "Date.now()": [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
+3. Recommendation: Found `new Date()` in file `MMM-Parcel.js`: Replace `new Date()` by `new Date(Date.now())`: [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
 4. Typo: Found `Magic Mirror` in file `README.md`: Replace it with `MagicMirror²`.
 5. Recommendation: Found `"node-fetch"` in file `README.md`: Replace it with built-in fetch.
 6. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
@@ -5756,9 +5758,9 @@ Last update: 2023-12-31 23:30:21 UTC
 ### [MMM-Paris-RATP-PG by da4throux](https://github.com/da4throux/MMM-Paris-RATP-PG)
 
 1. Typo: Found `Magic Mirror` in file `MMM-Paris-RATP-PG.js`: Replace it with `MagicMirror²`.
-2. Recommendation: Found `new Date()` in file `MMM-Paris-RATP-PG.js`: Replace "new Date()" by "Date.now()": [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
+2. Recommendation: Found `new Date()` in file `MMM-Paris-RATP-PG.js`: Replace `new Date()` by `new Date(Date.now())`: [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
 3. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
-4. Recommendation: Found `new Date()` in file `node_helper.js`: Replace "new Date()" by "Date.now()": [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
+4. Recommendation: Found `new Date()` in file `node_helper.js`: Replace `new Date()` by `new Date(Date.now())`: [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
 5. The branch name is 'master'. Consider renaming it to 'main'.
 
 ### [MMM-ParticleStatus by NickEngmann](https://github.com/NickEngmann/MMM-ParticleStatus)
@@ -5800,7 +5802,7 @@ Last update: 2023-12-31 23:30:21 UTC
 
 ### [MMM-Pelletpreise by eckonator](https://github.com/eckonator/MMM-Pelletpreise)
 
-1. Recommendation: Found `new Date()` in file `MMM-Pelletpreise.js`: Replace "new Date()" by "Date.now()": [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
+1. Recommendation: Found `new Date()` in file `MMM-Pelletpreise.js`: Replace `new Date()` by `new Date(Date.now())`: [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
 2. Deprecated: Found `require('request')` in file `node_helper.js`: Replace it with built-in fetch.
 3. The branch name is 'master'. Consider renaming it to 'main'.
 
@@ -5847,7 +5849,7 @@ Last update: 2023-12-31 23:30:21 UTC
 8. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
 9. Deprecated: Found `require('request')` in file `node_helper.js`: Replace it with built-in fetch.
 10. Recommendation: Found `XMLHttpRequest` in file `favorites.js`: Replace it with built-in fetch.
-11. Recommendation: Found `new Date()` in file `favorites.js`: Replace "new Date()" by "Date.now()": [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
+11. Recommendation: Found `new Date()` in file `favorites.js`: Replace `new Date()` by `new Date(Date.now())`: [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
 12. The branch name is 'master'. Consider renaming it to 'main'.
 
 ### [MMM-PGHBus by yuhanx0728](https://github.com/yuhanx0728/MMM-PGHBus)
@@ -5993,16 +5995,16 @@ Last update: 2023-12-31 23:30:21 UTC
 
 1. There is no `package.json`. We need this file to gather information about the module for the module list page.
 2. Recommendation: Found `XMLHttpRequest` in file `stuquery.min.js`: Replace it with built-in fetch.
-3. Recommendation: Found `new Date()` in file `stuquery.min.js`: Replace "new Date()" by "Date.now()": [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
-4. Recommendation: Found `new Date()` in file `virtualsky-planets.js`: Replace "new Date()" by "Date.now()": [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
+3. Recommendation: Found `new Date()` in file `stuquery.min.js`: Replace `new Date()` by `new Date(Date.now())`: [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
+4. Recommendation: Found `new Date()` in file `virtualsky-planets.js`: Replace `new Date()` by `new Date(Date.now())`: [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
 
 ### [planetrise by croxis](https://github.com/croxis/planetrise)
 
 1. There is no `package.json`. We need this file to gather information about the module for the module list page.
 2. Recommendation: Module name doesn't follow the recommended pattern (it doesn't start with `MMM-`). Consider renaming your module.
 3. Typo: Found `Magic Mirror` in file `README.md`: Replace it with `MagicMirror²`.
-4. Recommendation: Found `new Date()` in file `astronomy.js`: Replace "new Date()" by "Date.now()": [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
-5. Recommendation: Found `new Date()` in file `planetrise.js`: Replace "new Date()" by "Date.now()": [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
+4. Recommendation: Found `new Date()` in file `astronomy.js`: Replace `new Date()` by `new Date(Date.now())`: [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
+5. Recommendation: Found `new Date()` in file `planetrise.js`: Replace `new Date()` by `new Date(Date.now())`: [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
 6. Warning: No LICENSE file.
 7. The branch name is 'master'. Consider renaming it to 'main'.
 
@@ -6026,8 +6028,8 @@ Last update: 2023-12-31 23:30:21 UTC
 2. Typo: Found `Magic Mirror` in file `MMM-PlexNowPlaying.css`: Replace it with `MagicMirror²`.
 3. Typo: Found `Magic Mirror` in file `MMM-PlexNowPlaying.js`: Replace it with `MagicMirror²`.
 4. Recommendation: Found `XMLHttpRequest` in file `MMM-PlexNowPlaying.js`: Replace it with built-in fetch.
-5. Recommendation: Found `new Date()` in file `MMM-PlexNowPlaying.js`: Replace "new Date()" by "Date.now()": [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
-6. Recommendation: Found `new Date()` in file `axis.js`: Replace "new Date()" by "Date.now()": [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
+5. Recommendation: Found `new Date()` in file `MMM-PlexNowPlaying.js`: Replace `new Date()` by `new Date(Date.now())`: [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
+6. Recommendation: Found `new Date()` in file `axis.js`: Replace `new Date()` by `new Date(Date.now())`: [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
 7. The branch name is 'master'. Consider renaming it to 'main'.
 
 ### [MMM-PlexSlideshow by PjTewkesbury](https://github.com/PjTewkesbury/MMM-PlexSlideshow)
@@ -6046,21 +6048,21 @@ Last update: 2023-12-31 23:30:21 UTC
 0. This module is outdated: Deprecated. DarkSky API no longer works since 2023-03-31.
 1. There is no `package.json`. We need this file to gather information about the module for the module list page.
 2. Typo: Found `Magic Mirror` in file `MMM-PLOW.js`: Replace it with `MagicMirror²`.
-3. Recommendation: Found `new Date()` in file `MMM-PLOW.js`: Replace "new Date()" by "Date.now()": [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
+3. Recommendation: Found `new Date()` in file `MMM-PLOW.js`: Replace `new Date()` by `new Date(Date.now())`: [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
 4. The branch name is 'master'. Consider renaming it to 'main'.
 
 ### [PlutoTime by croxis](https://github.com/croxis/PlutoTime)
 
 1. There is no `package.json`. We need this file to gather information about the module for the module list page.
 2. Recommendation: Module name doesn't follow the recommended pattern (it doesn't start with `MMM-`). Consider renaming your module.
-3. Recommendation: Found `new Date()` in file `plutotime.js`: Replace "new Date()" by "Date.now()": [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
+3. Recommendation: Found `new Date()` in file `plutotime.js`: Replace `new Date()` by `new Date(Date.now())`: [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
 4. Warning: No LICENSE file.
 5. The branch name is 'master'. Consider renaming it to 'main'.
 
 ### [MMM-Podcast by ptrbld](https://github.com/ptrbld/MMM-Podcast)
 
 1. No image found.
-2. Recommendation: Found `new Date()` in file `MMM-Podcast.js`: Replace "new Date()" by "Date.now()": [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
+2. Recommendation: Found `new Date()` in file `MMM-Podcast.js`: Replace `new Date()` by `new Date(Date.now())`: [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
 3. Deprecated: Found `omxplayer` in file `README.md`: Try to replace it with `vlc`.
 4. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
 5. Recommendation: Found `require('http')` in file `node_helper.js`: Replace 'http' by 'node:http'.
@@ -6093,14 +6095,14 @@ Last update: 2023-12-31 23:30:21 UTC
 1. `package.json` issue: No repository field.
 2. There are no keywords in 'package.json'. We would use them as tags on the module list page.
 3. Deprecated: Found `require('request')` in file `node_helper.js`: Replace it with built-in fetch.
-4. Recommendation: Found `new Date()` in file `node_helper.js`: Replace "new Date()" by "Date.now()": [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
+4. Recommendation: Found `new Date()` in file `node_helper.js`: Replace `new Date()` by `new Date(Date.now())`: [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
 5. The branch name is 'master'. Consider renaming it to 'main'.
 
 ### [MMM-pollen by devduisburg](https://github.com/devduisburg/MMM-pollen)
 
 1. There is no `package.json`. We need this file to gather information about the module for the module list page.
 2. Recommendation: Found `XMLHttpRequest` in file `MMM-pollen.js`: Replace it with built-in fetch.
-3. Recommendation: Found `new Date()` in file `MMM-pollen.js`: Replace "new Date()" by "Date.now()": [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
+3. Recommendation: Found `new Date()` in file `MMM-pollen.js`: Replace `new Date()` by `new Date(Date.now())`: [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
 4. The branch name is 'master'. Consider renaming it to 'main'.
 
 ### [MMM-Pollen by vincep5](https://github.com/vincep5/MMM-Pollen)
@@ -6170,7 +6172,7 @@ Last update: 2023-12-31 23:30:21 UTC
 2. There are no keywords in 'package.json'. We would use them as tags on the module list page.
 3. Recommendation: Found `jshint` in file `Gruntfile.js`: Replace "jshint" by "eslint".
 4. Typo: Found `Magic Mirror` in file `MMM-Powerwall.js`: Replace it with `MagicMirror²`.
-5. Recommendation: Found `new Date()` in file `MMM-Powerwall.js`: Replace "new Date()" by "Date.now()": [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
+5. Recommendation: Found `new Date()` in file `MMM-Powerwall.js`: Replace `new Date()` by `new Date(Date.now())`: [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
 6. Typo: Found `Magic Mirror` in file `README.md`: Replace it with `MagicMirror²`.
 7. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
 8. Recommendation: Found `'node-fetch'` in file `node_helper.js`: Replace it with built-in fetch.
@@ -6202,8 +6204,9 @@ Last update: 2023-12-31 23:30:21 UTC
 
 1. There is no `package.json`. We need this file to gather information about the module for the module list page.
 2. Typo: Found `Magic Mirror` in file `MMM-Pregnancy.js`: Replace it with `MagicMirror²`.
-3. Recommendation: Found `new Date()` in file `MMM-Pregnancy.js`: Replace "new Date()" by "Date.now()": [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
-4. The branch name is 'master'. Consider renaming it to 'main'.
+3. Recommendation: Found `new Date()` in file `MMM-Pregnancy.js`: Replace `new Date()` by `new Date(Date.now())`: [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
+4. Deprecated: Found `getYear()` in file `MMM-Pregnancy.js`: Replace `getYear()` by `getFullYear()`.
+5. The branch name is 'master'. Consider renaming it to 'main'.
 
 ### [MMM-profile by kurtern84](https://github.com/kurtern84/MMM-profile)
 
@@ -6221,7 +6224,7 @@ Last update: 2023-12-31 23:30:21 UTC
 
 1. There is no `package.json`. We need this file to gather information about the module for the module list page.
 2. Typo: Found `Magic Mirror` in file `MMM-Profilepicture.js`: Replace it with `MagicMirror²`.
-3. Recommendation: Found `new Date()` in file `MMM-Profilepicture.js`: Replace "new Date()" by "Date.now()": [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
+3. Recommendation: Found `new Date()` in file `MMM-Profilepicture.js`: Replace `new Date()` by `new Date(Date.now())`: [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
 4. The branch name is 'master'. Consider renaming it to 'main'.
 
 ### [MMM-ProfileSwitcher by tosti007](https://github.com/tosti007/MMM-ProfileSwitcher)
@@ -6254,14 +6257,14 @@ Last update: 2023-12-31 23:30:21 UTC
 ### [MMM-ProxyImage by daxiang28](https://github.com/daxiang28/MMM-ProxyImage)
 
 1. No image found.
-2. Recommendation: Found `new Date()` in file `MMM-ProxyImage.js`: Replace "new Date()" by "Date.now()": [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
+2. Recommendation: Found `new Date()` in file `MMM-ProxyImage.js`: Replace `new Date()` by `new Date(Date.now())`: [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
 3. Typo: Found `Magic Mirror` in file `README.md`: Replace it with `MagicMirror²`.
 4. Typo: Found `Magic Mirror` in file `package.json`: Replace it with `MagicMirror²`.
 5. Recommendation: Replace eslintrc by new flat config.
 
 ### [MMM-PublicTransportBerlin by deg0nz](https://github.com/deg0nz/MMM-PublicTransportBerlin)
 
-1. Recommendation: Found `new Date()` in file `BvgFetcher.js`: Replace "new Date()" by "Date.now()": [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
+1. Recommendation: Found `new Date()` in file `BvgFetcher.js`: Replace `new Date()` by `new Date(Date.now())`: [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
 2. Recommendation: Found `"eslint-plugin-json"` in file `package.json`: Replace it by `eslint-plugin-jsonc`.
 3. Recommendation: Replace eslintrc by new flat config.
 4. The branch name is 'master'. Consider renaming it to 'main'.
@@ -6269,7 +6272,7 @@ Last update: 2023-12-31 23:30:21 UTC
 ### [MMM-PublicTransportVVO by ChristianGeie](https://github.com/ChristianGeie/MMM-PublicTransportVVO)
 
 1. Recommendation: Found `XMLHttpRequest` in file `MMM-PublicTransportVVO.js`: Replace it with built-in fetch.
-2. Recommendation: Found `new Date()` in file `MMM-PublicTransportVVO.js`: Replace "new Date()" by "Date.now()": [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
+2. Recommendation: Found `new Date()` in file `MMM-PublicTransportVVO.js`: Replace `new Date()` by `new Date(Date.now())`: [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
 3. The branch name is 'master'. Consider renaming it to 'main'.
 
 ### [publika by alonsourbano](https://github.com/alonsourbano/publika)
@@ -6300,12 +6303,12 @@ Last update: 2023-12-31 23:30:21 UTC
 
 1. Typo: Found `Magic Mirror` in file `MMM-PushBulletNotifications.css`: Replace it with `MagicMirror²`.
 2. Typo: Found `Magic Mirror` in file `MMM-PushBulletNotifications.js`: Replace it with `MagicMirror²`.
-3. Recommendation: Found `new Date()` in file `MMM-PushBulletNotifications.js`: Replace "new Date()" by "Date.now()": [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
+3. Recommendation: Found `new Date()` in file `MMM-PushBulletNotifications.js`: Replace `new Date()` by `new Date(Date.now())`: [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
 4. Typo: Found `Magic Mirror` in file `README.md`: Replace it with `MagicMirror²`.
 5. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
 6. Recommendation: Found `require('https')` in file `node_helper.js`: Replace 'https' by 'node:https'.
 7. Deprecated: Found `omxplayer` in file `node_helper.js`: Try to replace it with `vlc`.
-8. Recommendation: Found `new Date()` in file `node_helper.js`: Replace "new Date()" by "Date.now()": [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
+8. Recommendation: Found `new Date()` in file `node_helper.js`: Replace `new Date()` by `new Date(Date.now())`: [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
 9. The branch name is 'master'. Consider renaming it to 'main'.
 
 ### [MMM-qnapDownloadStation by flick116](https://github.com/flick116/MMM-qnapDownloadStation)
@@ -6420,7 +6423,7 @@ Last update: 2023-12-31 23:30:21 UTC
 2. There are no keywords in 'package.json'. We would use them as tags on the module list page.
 3. No image found.
 4. Typo: Found `Magic Mirror` in file `MMM-RandomPhoto.js`: Replace it with `MagicMirror²`.
-5. Recommendation: Found `new Date()` in file `MMM-RandomPhoto.js`: Replace "new Date()" by "Date.now()": [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
+5. Recommendation: Found `new Date()` in file `MMM-RandomPhoto.js`: Replace `new Date()` by `new Date(Date.now())`: [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
 6. Typo: Found `MagicMirror2` in file `README.md`: Replace it with `MagicMirror²`.
 7. Recommendation: Found `require("https")` in file `node_helper.js`: Replace "https" by "node:https".
 8. Warning: No LICENSE file.
@@ -6443,7 +6446,7 @@ Last update: 2023-12-31 23:30:21 UTC
 1. There is no `package.json`. We need this file to gather information about the module for the module list page.
 2. Recommendation: Found `jshint` in file `Gruntfile.js`: Replace "jshint" by "eslint".
 3. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
-4. Recommendation: Found `new Date()` in file `node_helper.js`: Replace "new Date()" by "Date.now()": [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
+4. Recommendation: Found `new Date()` in file `node_helper.js`: Replace `new Date()` by `new Date(Date.now())`: [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
 5. Recommendation: Replace eslintrc by new flat config.
 6. The branch name is 'master'. Consider renaming it to 'main'.
 
@@ -6452,7 +6455,7 @@ Last update: 2023-12-31 23:30:21 UTC
 1. There are no keywords in 'package.json'. We would use them as tags on the module list page.
 2. Typo: Found `Magic Mirror` in file `IconMapper.js`: Replace it with `MagicMirror²`.
 3. Typo: Found `Magic Mirror` in file `Logger.js`: Replace it with `MagicMirror²`.
-4. Recommendation: Found `new Date()` in file `Logger.js`: Replace "new Date()" by "Date.now()": [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
+4. Recommendation: Found `new Date()` in file `Logger.js`: Replace `new Date()` by `new Date(Date.now())`: [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
 5. Typo: Found `Magic Mirror` in file `MMM-RBB-Weather.css`: Replace it with `MagicMirror²`.
 6. Typo: Found `Magic Mirror` in file `MMM-RBB-Weather.js`: Replace it with `MagicMirror²`.
 7. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
@@ -6487,7 +6490,7 @@ Last update: 2023-12-31 23:30:21 UTC
 4. Typo: Found `MagicMirror2` in file `README.md`: Replace it with `MagicMirror²`.
 5. Recommendation: Found `XMLHttpRequest` in file `jquery.js`: Replace it with built-in fetch.
 6. Recommendation: Found `jshint` in file `jquery.js`: Replace "jshint" by "eslint".
-7. Recommendation: Found `new Date()` in file `jquery.js`: Replace "new Date()" by "Date.now()": [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
+7. Recommendation: Found `new Date()` in file `jquery.js`: Replace `new Date()` by `new Date(Date.now())`: [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
 8. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
 9. Deprecated: Found `require('request')` in file `node_helper.js`: Replace it with built-in fetch.
 10. Warning: No LICENSE file.
@@ -6505,7 +6508,7 @@ Last update: 2023-12-31 23:30:21 UTC
 2. There are no keywords in 'package.json'. We would use them as tags on the module list page.
 3. No image found.
 4. Typo: Found `Magic Mirror` in file `MMM-Reddit.js`: Replace it with `MagicMirror²`.
-5. Recommendation: Found `new Date()` in file `MMM-Reddit.js`: Replace "new Date()" by "Date.now()": [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
+5. Recommendation: Found `new Date()` in file `MMM-Reddit.js`: Replace `new Date()` by `new Date(Date.now())`: [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
 6. Typo: Found `Magic Mirror` in file `README.md`: Replace it with `MagicMirror²`.
 7. Typo: Found `<sup>2</sup>` in file `README.md`: Replace it with `²`.`.
 8. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
@@ -6533,7 +6536,7 @@ Last update: 2023-12-31 23:30:21 UTC
 
 1. There is no `package.json`. We need this file to gather information about the module for the module list page.
 2. Typo: Found `Magic Mirror` in file `MMM-Regenradar.js`: Replace it with `MagicMirror²`.
-3. Recommendation: Found `new Date()` in file `MMM-Regenradar.js`: Replace "new Date()" by "Date.now()": [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
+3. Recommendation: Found `new Date()` in file `MMM-Regenradar.js`: Replace `new Date()` by `new Date(Date.now())`: [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
 
 ### [MMM-Remote-Control by Jopyth](https://github.com/Jopyth/MMM-Remote-Control)
 
@@ -6547,7 +6550,7 @@ Last update: 2023-12-31 23:30:21 UTC
 8. Recommendation: Found `jshint` in file `remote.js`: Replace "jshint" by "eslint".
 9. Recommendation: Found `"node-fetch"` in file `download_modules.js`: Replace it with built-in fetch.
 10. Recommendation: Found `jshint` in file `download_modules.js`: Replace "jshint" by "eslint".
-11. Recommendation: Found `new Date()` in file `download_modules.js`: Replace "new Date()" by "Date.now()": [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
+11. Recommendation: Found `new Date()` in file `download_modules.js`: Replace `new Date()` by `new Date(Date.now())`: [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
 12. The branch name is 'master'. Consider renaming it to 'main'.
 
 ### [MMM-Remote-Control-Repository by MMRIZE](https://github.com/MMRIZE/MMM-Remote-Control-Repository)
@@ -6574,7 +6577,7 @@ Last update: 2023-12-31 23:30:21 UTC
 ### [MMM-RepoStats by khassel](https://gitlab.com/khassel/MMM-RepoStats)
 
 1. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
-2. Recommendation: Found `new Date()` in file `node_helper.js`: Replace "new Date()" by "Date.now()": [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
+2. Recommendation: Found `new Date()` in file `node_helper.js`: Replace `new Date()` by `new Date(Date.now())`: [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
 3. Typo: Found `MagicMirror2` in file `package.json`: Replace it with `MagicMirror²`.
 4. The branch name is 'master'. Consider renaming it to 'main'.
 
@@ -6588,7 +6591,7 @@ Last update: 2023-12-31 23:30:21 UTC
 
 ### [MMM-RescueTime by Duske](https://github.com/Duske/MMM-RescueTime)
 
-1. Recommendation: Found `new Date()` in file `fetcher.js`: Replace "new Date()" by "Date.now()": [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
+1. Recommendation: Found `new Date()` in file `fetcher.js`: Replace `new Date()` by `new Date(Date.now())`: [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
 2. Recommendation: Replace eslintrc by new flat config.
 3. The branch name is 'master'. Consider renaming it to 'main'.
 
@@ -6623,7 +6626,7 @@ Last update: 2023-12-31 23:30:21 UTC
 2. No image found.
 3. Typo: Found `Magic Mirror` in file `MMM-Ring.js`: Replace it with `MagicMirror²`.
 4. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
-5. Recommendation: Found `new Date()` in file `node_helper.js`: Replace "new Date()" by "Date.now()": [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
+5. Recommendation: Found `new Date()` in file `node_helper.js`: Replace `new Date()` by `new Date(Date.now())`: [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
 6. The branch name is 'master'. Consider renaming it to 'main'.
 
 ### [MMM-RingAlarm by parnic](https://github.com/parnic/MMM-RingAlarm)
@@ -6644,7 +6647,7 @@ Last update: 2023-12-31 23:30:21 UTC
 ### [MMM-RMV by Com-Lum](https://github.com/Com-Lum/MMM-RMV)
 
 1. Typo: Found `Magic Mirror` in file `MMM-RMV.js`: Replace it with `MagicMirror²`.
-2. Recommendation: Found `new Date()` in file `MMM-RMV.js`: Replace "new Date()" by "Date.now()": [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
+2. Recommendation: Found `new Date()` in file `MMM-RMV.js`: Replace `new Date()` by `new Date(Date.now())`: [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
 3. Typo: Found `<sup>2</sup>` in file `README.md`: Replace it with `²`.`.
 4. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
 5. Recommendation: Found `require("https")` in file `node_helper.js`: Replace "https" by "node:https".
@@ -6673,7 +6676,7 @@ Last update: 2023-12-31 23:30:21 UTC
 7. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
 8. Deprecated: Found `require('request')` in file `node_helper.js`: Replace it with built-in fetch.
 9. Recommendation: Found `'node-fetch'` in file `node_helper.js`: Replace it with built-in fetch.
-10. Recommendation: Found `new Date()` in file `node_helper.js`: Replace "new Date()" by "Date.now()": [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
+10. Recommendation: Found `new Date()` in file `node_helper.js`: Replace `new Date()` by `new Date(Date.now())`: [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
 11. Recommendation: Found `"node-fetch"` in file `package.json`: Replace it with built-in fetch.
 12. The branch name is 'master'. Consider renaming it to 'main'.
 
@@ -6681,7 +6684,7 @@ Last update: 2023-12-31 23:30:21 UTC
 
 1. No image found.
 2. Typo: Found `Magic Mirror` in file `MMM-RNV.js`: Replace it with `MagicMirror²`.
-3. Recommendation: Found `new Date()` in file `MMM-RNV.js`: Replace "new Date()" by "Date.now()": [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
+3. Recommendation: Found `new Date()` in file `MMM-RNV.js`: Replace `new Date()` by `new Date(Date.now())`: [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
 4. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
 5. Recommendation: Found `axios` in file `node_helper.js`: Replace it with built-in fetch.
 6. Typo: Found `MagicMirror2` in file `package.json`: Replace it with `MagicMirror²`.
@@ -6738,7 +6741,7 @@ Last update: 2023-12-31 23:30:21 UTC
 
 1. There is no `package.json`. We need this file to gather information about the module for the module list page.
 2. Recommendation: Found `XMLHttpRequest` in file `feednami.js`: Replace it with built-in fetch.
-3. Recommendation: Found `new Date()` in file `feednami.js`: Replace "new Date()" by "Date.now()": [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
+3. Recommendation: Found `new Date()` in file `feednami.js`: Replace `new Date()` by `new Date(Date.now())`: [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
 4. Recommendation: Found `XMLHttpRequest` in file `jquery-3.1.1.min.js`: Replace it with built-in fetch.
 5. The branch name is 'master'. Consider renaming it to 'main'.
 
@@ -6780,7 +6783,7 @@ Last update: 2023-12-31 23:30:21 UTC
 3. Recommendation: Found `jshint` in file `Gruntfile.js`: Replace "jshint" by "eslint".
 4. Typo: Found `Magic Mirror` in file `README.md`: Replace it with `MagicMirror²`.
 5. Typo: Found `Magic Mirror` in file `RubishCollection.js`: Replace it with `MagicMirror²`.
-6. Recommendation: Found `new Date()` in file `RubishCollection.js`: Replace "new Date()" by "Date.now()": [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
+6. Recommendation: Found `new Date()` in file `RubishCollection.js`: Replace `new Date()` by `new Date(Date.now())`: [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
 7. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
 8. Deprecated: Found `require('request')` in file `node_helper.js`: Replace it with built-in fetch.
 9. Deprecated: Found `"grunt"` in file `package.json`: Grunt is practically unmaintained. Move on to something better.
@@ -6806,7 +6809,7 @@ Last update: 2023-12-31 23:30:21 UTC
 1. There is no `package.json`. We need this file to gather information about the module for the module list page.
 2. Typo: Found `<sup>2</sup>` in file `README.md`: Replace it with `²`.`.
 3. Typo: Found `Magic Mirror` in file `RVVHelper.js`: Replace it with `MagicMirror²`.
-4. Recommendation: Found `new Date()` in file `RVVHelper.js`: Replace "new Date()" by "Date.now()": [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
+4. Recommendation: Found `new Date()` in file `RVVHelper.js`: Replace `new Date()` by `new Date(Date.now())`: [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
 5. Deprecated: Found `require("request")` in file `node_helper.js`: Replace it with built-in fetch.
 6. The branch name is 'master'. Consider renaming it to 'main'.
 
@@ -6814,7 +6817,7 @@ Last update: 2023-12-31 23:30:21 UTC
 
 1. There is no `package.json`. We need this file to gather information about the module for the module list page.
 2. Typo: Found `Magic Mirror` in file `MMM-Sbanken.js`: Replace it with `MagicMirror²`.
-3. Recommendation: Found `new Date()` in file `MMM-Sbanken.js`: Replace "new Date()" by "Date.now()": [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
+3. Recommendation: Found `new Date()` in file `MMM-Sbanken.js`: Replace `new Date()` by `new Date(Date.now())`: [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
 4. Typo: Found `Magic Mirror` in file `README.md`: Replace it with `MagicMirror²`.
 5. Typo: Found `<sup>2</sup>` in file `README.md`: Replace it with `²`.`.
 6. Deprecated: Found `require('request')` in file `node_helper.js`: Replace it with built-in fetch.
@@ -6830,7 +6833,7 @@ Last update: 2023-12-31 23:30:21 UTC
 1. `package.json` issue: No repository field.
 2. There are no keywords in 'package.json'. We would use them as tags on the module list page.
 3. No image found.
-4. Recommendation: Found `new Date()` in file `library.mjs`: Replace "new Date()" by "Date.now()": [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
+4. Recommendation: Found `new Date()` in file `library.mjs`: Replace `new Date()` by `new Date(Date.now())`: [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
 
 ### [MMM-ScottishPremierLeague by fewieden](https://github.com/fewieden/MMM-ScottishPremierLeague)
 
@@ -6881,7 +6884,7 @@ Last update: 2023-12-31 23:30:21 UTC
 3. Recommendation: Found `jshint` in file `Gruntfile.js`: Replace "jshint" by "eslint".
 4. Typo: Found `Magic Mirror` in file `MMM-SE-Reputation.js`: Replace it with `MagicMirror²`.
 5. Recommendation: Found `XMLHttpRequest` in file `MMM-SE-Reputation.js`: Replace it with built-in fetch.
-6. Recommendation: Found `new Date()` in file `MMM-SE-Reputation.js`: Replace "new Date()" by "Date.now()": [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
+6. Recommendation: Found `new Date()` in file `MMM-SE-Reputation.js`: Replace `new Date()` by `new Date(Date.now())`: [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
 7. Deprecated: Found `"grunt"` in file `package.json`: Grunt is practically unmaintained. Move on to something better.
 8. Recommendation: Replace eslintrc by new flat config.
 9. The branch name is 'master'. Consider renaming it to 'main'.
@@ -6965,7 +6968,7 @@ Last update: 2023-12-31 23:30:21 UTC
 
 1. There are no keywords in 'package.json'. We would use them as tags on the module list page.
 2. Typo: Found `Magic Mirror` in file `MMM-SG-Transport-V2.js`: Replace it with `MagicMirror²`.
-3. Recommendation: Found `new Date()` in file `MMM-SG-Transport-V2.js`: Replace "new Date()" by "Date.now()": [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
+3. Recommendation: Found `new Date()` in file `MMM-SG-Transport-V2.js`: Replace `new Date()` by `new Date(Date.now())`: [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
 4. Typo: Found `<sup>2</sup>` in file `README.md`: Replace it with `²`.`.
 5. Warning: No LICENSE file.
 
@@ -6982,7 +6985,7 @@ Last update: 2023-12-31 23:30:21 UTC
 
 1. There is no `package.json`. We need this file to gather information about the module for the module list page.
 2. Typo: Found `Magic Mirror` in file `MMM-ShairportMetadata.js`: Replace it with `MagicMirror²`.
-3. Recommendation: Found `new Date()` in file `MMM-ShairportMetadata.js`: Replace "new Date()" by "Date.now()": [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
+3. Recommendation: Found `new Date()` in file `MMM-ShairportMetadata.js`: Replace `new Date()` by `new Date(Date.now())`: [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
 4. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
 5. The branch name is 'master'. Consider renaming it to 'main'.
 
@@ -6992,7 +6995,7 @@ Last update: 2023-12-31 23:30:21 UTC
 2. Recommendation: Module name doesn't follow the recommended pattern (it doesn't start with `MMM-`). Consider renaming your module.
 3. Typo: Found `Magic Mirror` in file `README.md`: Replace it with `MagicMirror²`.
 4. Deprecated: Found `require('request')` in file `node_helper.js`: Replace it with built-in fetch.
-5. Recommendation: Found `new Date()` in file `node_helper.js`: Replace "new Date()" by "Date.now()": [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
+5. Recommendation: Found `new Date()` in file `node_helper.js`: Replace `new Date()` by `new Date(Date.now())`: [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
 6. The branch name is 'master'. Consider renaming it to 'main'.
 
 ### [MMM-Shelly-PM by stefanjacobs](https://github.com/stefanjacobs/MMM-Shelly-PM)
@@ -7002,7 +7005,7 @@ Last update: 2023-12-31 23:30:21 UTC
 3. No compatible or wrong license field in 'package.json'. Without that, we can't use an image.
 4. Typo: Found `Magic Mirror` in file `README.md`: Replace it with `MagicMirror²`.
 5. Deprecated: Found `require('request')` in file `node_helper.js`: Replace it with built-in fetch.
-6. Recommendation: Found `new Date()` in file `node_helper.js`: Replace "new Date()" by "Date.now()": [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
+6. Recommendation: Found `new Date()` in file `node_helper.js`: Replace `new Date()` by `new Date(Date.now())`: [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
 7. The branch name is 'master'. Consider renaming it to 'main'.
 
 ### [MMM-ShellyEMMeter by mgarrix](https://github.com/mgarrix/MMM-ShellyEMMeter)
@@ -7017,7 +7020,7 @@ Last update: 2023-12-31 23:30:21 UTC
 1. There is no `package.json`. We need this file to gather information about the module for the module list page.
 2. Typo: Found `Magic Mirror` in file `README.md`: Replace it with `MagicMirror²`.
 3. Deprecated: Found `require('request')` in file `node_helper.js`: Replace it with built-in fetch.
-4. Recommendation: Found `new Date()` in file `node_helper.js`: Replace "new Date()" by "Date.now()": [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
+4. Recommendation: Found `new Date()` in file `node_helper.js`: Replace `new Date()` by `new Date(Date.now())`: [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
 5. Warning: No LICENSE file.
 
 ### [MMM-ShipmentTracking by fewieden](https://github.com/fewieden/MMM-ShipmentTracking)
@@ -7028,11 +7031,11 @@ Last update: 2023-12-31 23:30:21 UTC
 4. Typo: Found `Magic Mirror` in file `17track.js`: Replace it with `MagicMirror²`.
 5. Deprecated: Found `require('request')` in file `17track.js`: Replace it with built-in fetch.
 6. Recommendation: Found `XMLHttpRequest` in file `17track.js`: Replace it with built-in fetch.
-7. Recommendation: Found `new Date()` in file `17track.js`: Replace "new Date()" by "Date.now()": [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
+7. Recommendation: Found `new Date()` in file `17track.js`: Replace `new Date()` by `new Date(Date.now())`: [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
 8. Typo: Found `Magic Mirror` in file `DHL.js`: Replace it with `MagicMirror²`.
-9. Recommendation: Found `new Date()` in file `DHL.js`: Replace "new Date()" by "Date.now()": [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
+9. Recommendation: Found `new Date()` in file `DHL.js`: Replace `new Date()` by `new Date(Date.now())`: [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
 10. Typo: Found `Magic Mirror` in file `Landmark.js`: Replace it with `MagicMirror²`.
-11. Recommendation: Found `new Date()` in file `Landmark.js`: Replace "new Date()" by "Date.now()": [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
+11. Recommendation: Found `new Date()` in file `Landmark.js`: Replace `new Date()` by `new Date(Date.now())`: [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
 12. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
 13. Typo: Found `MagicMirror2` in file `package.json`: Replace it with `MagicMirror²`.
 14. Recommendation: Replace eslintrc by new flat config.
@@ -7103,18 +7106,18 @@ Last update: 2023-12-31 23:30:21 UTC
 2. There are no keywords in 'package.json'. We would use them as tags on the module list page.
 3. Typo: Found `Magic Mirror` in file `MMM-Skyss.js`: Replace it with `MagicMirror²`.
 4. Recommendation: Found `XMLHttpRequest` in file `MMM-Skyss.js`: Replace it with built-in fetch.
-5. Recommendation: Found `new Date()` in file `MMM-Skyss.js`: Replace "new Date()" by "Date.now()": [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
+5. Recommendation: Found `new Date()` in file `MMM-Skyss.js`: Replace `new Date()` by `new Date(Date.now())`: [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
 6. Recommendation: Found `require("https")` in file `node_helper.js`: Replace "https" by "node:https".
 7. The branch name is 'master'. Consider renaming it to 'main'.
 
 ### [MMM-SL-PublicTransport by boghammar](https://github.com/boghammar/MMM-SL-PublicTransport)
 
 1. Typo: Found `Magic Mirror` in file `MMM-SL-PublicTransport.js`: Replace it with `MagicMirror²`.
-2. Recommendation: Found `new Date()` in file `MMM-SL-PublicTransport.js`: Replace "new Date()" by "Date.now()": [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
+2. Recommendation: Found `new Date()` in file `MMM-SL-PublicTransport.js`: Replace `new Date()` by `new Date(Date.now())`: [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
 3. Typo: Found `Magic Mirror` in file `README.md`: Replace it with `MagicMirror²`.
 4. Typo: Found `Magic Mirror` in file `findStation.js`: Replace it with `MagicMirror²`.
 5. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
-6. Recommendation: Found `new Date()` in file `node_helper.js`: Replace "new Date()" by "Date.now()": [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
+6. Recommendation: Found `new Date()` in file `node_helper.js`: Replace `new Date()` by `new Date(Date.now())`: [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
 7. The branch name is 'master'. Consider renaming it to 'main'.
 
 ### [MMM-Slack2 by Jupter1](https://github.com/Jupter1/MMM-Slack2)
@@ -7145,10 +7148,10 @@ Last update: 2023-12-31 23:30:21 UTC
 2. Typo: Found `Magic Mirror` in file `MMM-SleeperNFL.js`: Replace it with `MagicMirror²`.
 3. Typo: Found `<sup>2</sup>` in file `README.md`: Replace it with `²`.`.
 4. Recommendation: Found `'node-fetch'` in file `SleeperAPI.js`: Replace it with built-in fetch.
-5. Recommendation: Found `new Date()` in file `SleeperAPI.js`: Replace "new Date()" by "Date.now()": [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
+5. Recommendation: Found `new Date()` in file `SleeperAPI.js`: Replace `new Date()` by `new Date(Date.now())`: [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
 6. Recommendation: Found `'node-fetch'` in file `espn.js`: Replace it with built-in fetch.
 7. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
-8. Recommendation: Found `new Date()` in file `node_helper.js`: Replace "new Date()" by "Date.now()": [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
+8. Recommendation: Found `new Date()` in file `node_helper.js`: Replace `new Date()` by `new Date(Date.now())`: [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
 
 ### [MMM-SleepWake by sdetweil](https://github.com/sdetweil/MMM-SleepWake)
 
@@ -7162,7 +7165,7 @@ Last update: 2023-12-31 23:30:21 UTC
 1. There are no keywords in 'package.json'. We would use them as tags on the module list page.
 2. Typo: Found `Magic Mirror` in file `MMM-Smappee.js`: Replace it with `MagicMirror²`.
 3. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
-4. Recommendation: Found `new Date()` in file `node_helper.js`: Replace "new Date()" by "Date.now()": [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
+4. Recommendation: Found `new Date()` in file `node_helper.js`: Replace `new Date()` by `new Date(Date.now())`: [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
 5. Typo: Found `Magic Mirror` in file `package.json`: Replace it with `MagicMirror²`.
 6. The branch name is 'master'. Consider renaming it to 'main'.
 
@@ -7178,7 +7181,7 @@ Last update: 2023-12-31 23:30:21 UTC
 
 1. No image found.
 2. Typo: Found `Magic Mirror` in file `MMM-SmartWebDisplay.js`: Replace it with `MagicMirror²`.
-3. Recommendation: Found `new Date()` in file `MMM-SmartWebDisplay.js`: Replace "new Date()" by "Date.now()": [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
+3. Recommendation: Found `new Date()` in file `MMM-SmartWebDisplay.js`: Replace `new Date()` by `new Date(Date.now())`: [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
 4. Typo: Found `Magic Mirror` in file `README.md`: Replace it with `MagicMirror²`.
 5. Typo: Found `Magic Mirror` in file `package.json`: Replace it with `MagicMirror²`.
 6. Warning: No LICENSE file.
@@ -7202,7 +7205,7 @@ Last update: 2023-12-31 23:30:21 UTC
 
 1. Typo: Found `Magic Mirror` in file `README.md`: Replace it with `MagicMirror²`.
 2. Recommendation: Found `XMLHttpRequest` in file `jquery.js`: Replace it with built-in fetch.
-3. Recommendation: Found `new Date()` in file `node_helper.js`: Replace "new Date()" by "Date.now()": [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
+3. Recommendation: Found `new Date()` in file `node_helper.js`: Replace `new Date()` by `new Date(Date.now())`: [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
 4. The branch name is 'master'. Consider renaming it to 'main'.
 
 ### [MMM-Snow by MichMich](https://github.com/MichMich/MMM-Snow)
@@ -7230,7 +7233,7 @@ Last update: 2023-12-31 23:30:21 UTC
 4. Typo: Found `MagicMirror2` in file `README.md`: Replace it with `MagicMirror²`.
 5. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
 6. Recommendation: Found `'node-fetch'` in file `node_helper.js`: Replace it with built-in fetch.
-7. Recommendation: Found `new Date()` in file `node_helper.js`: Replace "new Date()" by "Date.now()": [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
+7. Recommendation: Found `new Date()` in file `node_helper.js`: Replace `new Date()` by `new Date(Date.now())`: [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
 8. Recommendation: Found `"node-fetch"` in file `package.json`: Replace it with built-in fetch.
 9. Warning: No LICENSE file.
 10. Recommendation: Replace eslintrc by new flat config.
@@ -7404,7 +7407,7 @@ Last update: 2023-12-31 23:30:21 UTC
 ### [MMM-SpotifyReleases by Ruud14](https://github.com/Ruud14/MMM-SpotifyReleases)
 
 1. No image found.
-2. Recommendation: Found `new Date()` in file `MMM-SpotifyReleases.js`: Replace "new Date()" by "Date.now()": [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
+2. Recommendation: Found `new Date()` in file `MMM-SpotifyReleases.js`: Replace `new Date()` by `new Date(Date.now())`: [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
 3. Recommendation: Found `XMLHttpRequest` in file `SpotifyConnector.js`: Replace it with built-in fetch.
 4. Deprecated: Found `require('request')` in file `app.js`: Replace it with built-in fetch.
 5. Found directory `node_modules`. This shouldn't be uploaded. Add `node_modules/`to `.gitignore`.
@@ -7414,7 +7417,7 @@ Last update: 2023-12-31 23:30:21 UTC
 ### [MMM-Star-Metro by alexandreLavenant](https://github.com/alexandreLavenant/MMM-Star-Metro)
 
 1. There is no `package.json`. We need this file to gather information about the module for the module list page.
-2. Recommendation: Found `new Date()` in file `MMM-Star-Metro.js`: Replace "new Date()" by "Date.now()": [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
+2. Recommendation: Found `new Date()` in file `MMM-Star-Metro.js`: Replace `new Date()` by `new Date(Date.now())`: [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
 3. Warning: No LICENSE file.
 4. The branch name is 'master'. Consider renaming it to 'main'.
 
@@ -7448,7 +7451,7 @@ Last update: 2023-12-31 23:30:21 UTC
 
 1. There are no keywords in 'package.json'. We would use them as tags on the module list page.
 2. Recommendation: Found `jshint` in file `Gruntfile.js`: Replace "jshint" by "eslint".
-3. Recommendation: Found `new Date()` in file `MMM-stib2.js`: Replace "new Date()" by "Date.now()": [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
+3. Recommendation: Found `new Date()` in file `MMM-stib2.js`: Replace `new Date()` by `new Date(Date.now())`: [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
 4. Deprecated: Found `"grunt"` in file `package.json`: Grunt is practically unmaintained. Move on to something better.
 5. Recommendation: Replace eslintrc by new flat config.
 6. The branch name is 'master'. Consider renaming it to 'main'.
@@ -7462,7 +7465,7 @@ Last update: 2023-12-31 23:30:21 UTC
 
 ### [MMM-stoic-quotes by pal-thomassen](https://github.com/pal-thomassen/MMM-stoic-quotes)
 
-1. Recommendation: Found `new Date()` in file `MMM-stoic-quotes.js`: Replace "new Date()" by "Date.now()": [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
+1. Recommendation: Found `new Date()` in file `MMM-stoic-quotes.js`: Replace `new Date()` by `new Date(Date.now())`: [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
 
 ### [MMM-StopwatchTimer by Klettner](https://github.com/Klettner/MMM-StopwatchTimer)
 
@@ -7480,17 +7483,17 @@ Last update: 2023-12-31 23:30:21 UTC
 ### [MMM-Strava by ianperrin](https://github.com/ianperrin/MMM-Strava)
 
 1. Recommendation: Found `uses: actions/checkout@v2` in file `node.js.yml`: Replace it with v4.
-2. Recommendation: Found `new Date()` in file `MMM-Strava.js`: Replace "new Date()" by "Date.now()": [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
+2. Recommendation: Found `new Date()` in file `MMM-Strava.js`: Replace `new Date()` by `new Date(Date.now())`: [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
 3. Typo: Found `Magic Mirror` in file `README.md`: Replace it with `MagicMirror²`.
 4. Deprecated: Found `stylelint-config-prettier` in file `package.json`: Update `stylelint` and remove `stylelint-config-prettier`.
 5. Recommendation: Found `XMLHttpRequest` in file `index.html`: Replace it with built-in fetch.
-6. Recommendation: Found `new Date()` in file `MMM-Strava.test.js`: Replace "new Date()" by "Date.now()": [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
+6. Recommendation: Found `new Date()` in file `MMM-Strava.test.js`: Replace `new Date()` by `new Date(Date.now())`: [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
 7. Recommendation: Replace eslintrc by new flat config.
 8. The branch name is 'master'. Consider renaming it to 'main'.
 
 ### [MMM-SugarValue by balharrie](https://github.com/balharrie/MMM-SugarValue)
 
-1. Recommendation: Found `new Date()` in file `MMM-SugarValue.js`: Replace "new Date()" by "Date.now()": [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
+1. Recommendation: Found `new Date()` in file `MMM-SugarValue.js`: Replace `new Date()` by `new Date(Date.now())`: [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
 2. Typo: Found `Magic Mirror` in file `README.md`: Replace it with `MagicMirror²`.
 3. Deprecated: Found `require('request')` in file `node_helper.js`: Replace it with built-in fetch.
 4. Recommendation: Found `require('https')` in file `node_helper.js`: Replace 'https' by 'node:https'.
@@ -7503,21 +7506,21 @@ Last update: 2023-12-31 23:30:21 UTC
 1. There are no specific keywords in 'package.json'. We would use them as tags on the module list page. Add a few meaningful terms to the keywords in the package.json. Not just “magicmirror” or “module”.
 2. Typo: Found `Magic Mirror` in file `MMM-SunnyPortal.js`: Replace it with `MagicMirror²`.
 3. Deprecated: Found `require('request')` in file `node_helper.js`: Replace it with built-in fetch.
-4. Recommendation: Found `new Date()` in file `node_helper.js`: Replace "new Date()" by "Date.now()": [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
+4. Recommendation: Found `new Date()` in file `node_helper.js`: Replace `new Date()` by `new Date(Date.now())`: [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
 5. The branch name is 'master'. Consider renaming it to 'main'.
 
 ### [MMM-SunRiseSet by mykle1](https://github.com/mykle1/MMM-SunRiseSet)
 
 1. There is no `package.json`. We need this file to gather information about the module for the module list page.
 2. Typo: Found `Magic Mirror` in file `MMM-SunRiseSet.js`: Replace it with `MagicMirror²`.
-3. Recommendation: Found `new Date()` in file `MMM-SunRiseSet.js`: Replace "new Date()" by "Date.now()": [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
+3. Recommendation: Found `new Date()` in file `MMM-SunRiseSet.js`: Replace `new Date()` by `new Date(Date.now())`: [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
 4. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
 5. Deprecated: Found `require('request')` in file `node_helper.js`: Replace it with built-in fetch.
 6. The branch name is 'master'. Consider renaming it to 'main'.
 
 ### [MMM-SweepClock by mumblebaj](https://github.com/mumblebaj/MMM-SweepClock)
 
-1. Recommendation: Found `new Date()` in file `MMM-SweepClock.js`: Replace "new Date()" by "Date.now()": [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
+1. Recommendation: Found `new Date()` in file `MMM-SweepClock.js`: Replace `new Date()` by `new Date(Date.now())`: [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
 2. The branch name is 'master'. Consider renaming it to 'main'.
 
 ### [MMM-Swipe by mochman](https://github.com/mochman/MMM-Swipe)
@@ -7583,7 +7586,7 @@ Last update: 2023-12-31 23:30:21 UTC
 2. Typo: Found `Magic Mirror` in file `MMM-syslog.js`: Replace it with `MagicMirror²`.
 3. Typo: Found `<sup>2</sup>` in file `README.md`: Replace it with `²`.`.
 4. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
-5. Recommendation: Found `new Date()` in file `node_helper.js`: Replace "new Date()" by "Date.now()": [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
+5. Recommendation: Found `new Date()` in file `node_helper.js`: Replace `new Date()` by `new Date(Date.now())`: [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
 6. Warning: No LICENSE file.
 7. The branch name is 'master'. Consider renaming it to 'main'.
 
@@ -7622,7 +7625,7 @@ Last update: 2023-12-31 23:30:21 UTC
 
 1. There is no `package.json`. We need this file to gather information about the module for the module list page.
 2. Typo: Found `MagicMirror2` in file `MMM-TAF.js`: Replace it with `MagicMirror²`.
-3. Recommendation: Found `new Date()` in file `MMM-TAF.js`: Replace "new Date()" by "Date.now()": [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
+3. Recommendation: Found `new Date()` in file `MMM-TAF.js`: Replace `new Date()` by `new Date(Date.now())`: [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
 4. Typo: Found `Magic Mirror` in file `README.md`: Replace it with `MagicMirror²`.
 5. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
 6. Deprecated: Found `require("request")` in file `node_helper.js`: Replace it with built-in fetch.
@@ -7693,7 +7696,7 @@ Last update: 2023-12-31 23:30:21 UTC
 3. Typo: Found `Magic Mirror` in file `MMM-Tesla3.js`: Replace it with `MagicMirror²`.
 4. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
 5. Deprecated: Found `require('request')` in file `node_helper.js`: Replace it with built-in fetch.
-6. Recommendation: Found `new Date()` in file `node_helper.js`: Replace "new Date()" by "Date.now()": [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
+6. Recommendation: Found `new Date()` in file `node_helper.js`: Replace `new Date()` by `new Date(Date.now())`: [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
 7. Warning: No LICENSE file.
 8. The branch name is 'master'. Consider renaming it to 'main'.
 
@@ -7723,7 +7726,7 @@ Last update: 2023-12-31 23:30:21 UTC
 
 1. Recommendation: Found `uses: actions/checkout@v2` in file `nodejs.yml`: Replace it with v4.
 2. Typo: Found `Magic Mirror` in file `MMM-text-clock.js`: Replace it with `MagicMirror²`.
-3. Recommendation: Found `new Date()` in file `MMM-text-clock.js`: Replace "new Date()" by "Date.now()": [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
+3. Recommendation: Found `new Date()` in file `MMM-text-clock.js`: Replace `new Date()` by `new Date(Date.now())`: [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
 4. Recommendation: Replace eslintrc by new flat config.
 5. The branch name is 'master'. Consider renaming it to 'main'.
 
@@ -7761,8 +7764,8 @@ Last update: 2023-12-31 23:30:21 UTC
 ### [MMM-Tibber by ottopaulsen](https://github.com/ottopaulsen/MMM-Tibber)
 
 1. Recommendation: Found `"node-fetch"` in file `consumptions.js`: Replace it with built-in fetch.
-2. Recommendation: Found `new Date()` in file `consumptions.js`: Replace "new Date()" by "Date.now()": [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
-3. Recommendation: Found `new Date()` in file `draw-graphs.js`: Replace "new Date()" by "Date.now()": [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
+2. Recommendation: Found `new Date()` in file `consumptions.js`: Replace `new Date()` by `new Date(Date.now())`: [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
+3. Recommendation: Found `new Date()` in file `draw-graphs.js`: Replace `new Date()` by `new Date(Date.now())`: [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
 4. Recommendation: Found `"node-fetch"` in file `package.json`: Replace it with built-in fetch.
 5. Recommendation: Found `"node-fetch"` in file `tibber.js`: Replace it with built-in fetch.
 6. The branch name is 'master'. Consider renaming it to 'main'.
@@ -7782,7 +7785,7 @@ Last update: 2023-12-31 23:30:21 UTC
 4. Typo: Found `Magic Mirror` in file `README_es.md`: Replace it with `MagicMirror²`.
 5. Recommendation: Found `axios` in file `README_es.md`: Replace it with built-in fetch.
 6. Recommendation: Found `axios` in file `node_helper.js`: Replace it with built-in fetch.
-7. Recommendation: Found `new Date()` in file `node_helper.js`: Replace "new Date()" by "Date.now()": [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
+7. Recommendation: Found `new Date()` in file `node_helper.js`: Replace `new Date()` by `new Date(Date.now())`: [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
 8. Typo: Found `Magic Mirror` in file `package.json`: Replace it with `MagicMirror²`.
 9. Recommendation: Found `axios` in file `package.json`: Replace it with built-in fetch.
 10. Warning: No LICENSE file.
@@ -7802,7 +7805,7 @@ Last update: 2023-12-31 23:30:21 UTC
 1. `package.json` issue: No repository field.
 2. There are no keywords in 'package.json'. We would use them as tags on the module list page.
 3. Recommendation: Found `axios` in file `TitanSchoolsClient.js`: Replace it with built-in fetch.
-4. Recommendation: Found `new Date()` in file `TitanSchoolsClient.js`: Replace "new Date()" by "Date.now()": [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
+4. Recommendation: Found `new Date()` in file `TitanSchoolsClient.js`: Replace `new Date()` by `new Date(Date.now())`: [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
 5. Recommendation: Found `axios` in file `package.json`: Replace it with built-in fetch.
 6. Recommendation: Found `axios` in file `api-response-shape.test.js`: Replace it with built-in fetch.
 7. Warning: No LICENSE file.
@@ -7829,7 +7832,7 @@ Last update: 2023-12-31 23:30:21 UTC
 ### [MMM-Todoist by cbrooker](https://github.com/cbrooker/MMM-Todoist)
 
 1. Typo: Found `Magic Mirror` in file `MMM-Todoist.js`: Replace it with `MagicMirror²`.
-2. Recommendation: Found `new Date()` in file `MMM-Todoist.js`: Replace "new Date()" by "Date.now()": [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
+2. Recommendation: Found `new Date()` in file `MMM-Todoist.js`: Replace `new Date()` by `new Date(Date.now())`: [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
 3. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
 4. Deprecated: Found `require("request")` in file `node_helper.js`: Replace it with built-in fetch.
 5. Typo: Found `Magic Mirror` in file `package.json`: Replace it with `MagicMirror²`.
@@ -7879,7 +7882,7 @@ Last update: 2023-12-31 23:30:21 UTC
 
 ### [MMM-Toulouse-Transports by LoneWanderer-GH](https://github.com/LoneWanderer-GH/MMM-Toulouse-Transports)
 
-1. Recommendation: Found `new Date()` in file `MMM-Toulouse-Transports.js`: Replace "new Date()" by "Date.now()": [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
+1. Recommendation: Found `new Date()` in file `MMM-Toulouse-Transports.js`: Replace `new Date()` by `new Date(Date.now())`: [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
 2. Typo: Found `Magic Mirror` in file `README.md`: Replace it with `MagicMirror²`.
 3. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
 4. The branch name is 'master'. Consider renaming it to 'main'.
@@ -7922,9 +7925,9 @@ Last update: 2023-12-31 23:30:21 UTC
 2. There are no keywords in 'package.json'. We would use them as tags on the module list page.
 3. Recommendation: Found `jshint` in file `Gruntfile.js`: Replace "jshint" by "eslint".
 4. Typo: Found `Magic Mirror` in file `MMM-Trains-Trafikverket.js`: Replace it with `MagicMirror²`.
-5. Recommendation: Found `new Date()` in file `MMM-Trains-Trafikverket.js`: Replace "new Date()" by "Date.now()": [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
+5. Recommendation: Found `new Date()` in file `MMM-Trains-Trafikverket.js`: Replace `new Date()` by `new Date(Date.now())`: [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
 6. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
-7. Recommendation: Found `new Date()` in file `node_helper.js`: Replace "new Date()" by "Date.now()": [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
+7. Recommendation: Found `new Date()` in file `node_helper.js`: Replace `new Date()` by `new Date(Date.now())`: [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
 8. Deprecated: Found `"grunt"` in file `package.json`: Grunt is practically unmaintained. Move on to something better.
 9. Deprecated: Found `"grunt"` in file `package.json`: Grunt is practically unmaintained. Move on to something better.
 10. Recommendation: Replace eslintrc by new flat config.
@@ -7952,7 +7955,7 @@ Last update: 2023-12-31 23:30:21 UTC
 2. Typo: Found `Magic Mirror` in file `MMM-transitfeed.js`: Replace it with `MagicMirror²`.
 3. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
 4. Recommendation: Found `require('fetch')` in file `node_helper.js`: Replace it with built-in fetch.
-5. Recommendation: Found `new Date()` in file `node_helper.js`: Replace "new Date()" by "Date.now()": [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
+5. Recommendation: Found `new Date()` in file `node_helper.js`: Replace `new Date()` by `new Date(Date.now())`: [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
 6. Warning: No LICENSE file.
 
 ### [MMM-TranslatedMessages by ahmedwab](https://github.com/ahmedwab/MMM-TranslatedMessages)
@@ -7972,8 +7975,8 @@ Last update: 2023-12-31 23:30:21 UTC
 ### [MMM-TransLoc by OrangeHoopla](https://github.com/OrangeHoopla/MMM-TransLoc)
 
 1. There is no `package.json`. We need this file to gather information about the module for the module list page.
-2. Recommendation: Found `new Date()` in file `MMM-Transloc.js`: Replace "new Date()" by "Date.now()": [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
-3. Recommendation: Found `new Date()` in file `node_helper.js`: Replace "new Date()" by "Date.now()": [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
+2. Recommendation: Found `new Date()` in file `MMM-Transloc.js`: Replace `new Date()` by `new Date(Date.now())`: [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
+3. Recommendation: Found `new Date()` in file `node_helper.js`: Replace `new Date()` by `new Date(Date.now())`: [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
 4. Warning: No LICENSE file.
 5. The branch name is 'master'. Consider renaming it to 'main'.
 
@@ -8047,7 +8050,7 @@ Last update: 2023-12-31 23:30:21 UTC
 2. Typo: Found `<sup>2</sup>` in file `README.md`: Replace it with `²`.`.
 3. Recommendation: Found `axios` in file `README.md`: Replace it with built-in fetch.
 4. Recommendation: Found `axios` in file `node_helper.js`: Replace it with built-in fetch.
-5. Recommendation: Found `new Date()` in file `node_helper.js`: Replace "new Date()" by "Date.now()": [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
+5. Recommendation: Found `new Date()` in file `node_helper.js`: Replace `new Date()` by `new Date(Date.now())`: [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
 6. Recommendation: Found `axios` in file `package.json`: Replace it with built-in fetch.
 
 ### [MMM-TvheadendDVR by XBCreepinJesus](https://github.com/XBCreepinJesus/MMM-TvheadendDVR)
@@ -8077,7 +8080,7 @@ Last update: 2023-12-31 23:30:21 UTC
 4. Recommendation: Module name doesn't follow the recommended pattern (it doesn't start with `MMM-`). Consider renaming your module.
 5. Typo: Found `<sup>2</sup>` in file `README.md`: Replace it with `²`.`.
 6. Typo: Found `MagicMirror2` in file `package.json`: Replace it with `MagicMirror²`.
-7. Recommendation: Found `new Date()` in file `twitControl.js`: Replace "new Date()" by "Date.now()": [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
+7. Recommendation: Found `new Date()` in file `twitControl.js`: Replace `new Date()` by `new Date(Date.now())`: [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
 8. The branch name is 'master'. Consider renaming it to 'main'.
 
 ### [MMM-TwitterTrendsByPlace by AdamMoses-GitHub](https://github.com/AdamMoses-GitHub/MMM-TwitterTrendsByPlace)
@@ -8108,12 +8111,12 @@ Last update: 2023-12-31 23:30:21 UTC
 
 1. There are no specific keywords in 'package.json'. We would use them as tags on the module list page. Add a few meaningful terms to the keywords in the package.json. Not just “magicmirror” or “module”.
 2. Typo: Found `Magic Mirror` in file `MMM-UKLiveBusStopInfo.js`: Replace it with `MagicMirror²`.
-3. Recommendation: Found `new Date()` in file `MMM-UKLiveBusStopInfo.js`: Replace "new Date()" by "Date.now()": [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
+3. Recommendation: Found `new Date()` in file `MMM-UKLiveBusStopInfo.js`: Replace `new Date()` by `new Date(Date.now())`: [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
 4. Typo: Found `Magic Mirror` in file `README.md`: Replace it with `MagicMirror²`.
 5. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
 6. Deprecated: Found `require('request')` in file `node_helper.js`: Replace it with built-in fetch.
 7. Deprecated: Found `require('request')` in file `test-UKLiveBusStopInfo.js`: Replace it with built-in fetch.
-8. Recommendation: Found `new Date()` in file `test-UKLiveBusStopInfo.js`: Replace "new Date()" by "Date.now()": [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
+8. Recommendation: Found `new Date()` in file `test-UKLiveBusStopInfo.js`: Replace `new Date()` by `new Date(Date.now())`: [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
 9. The branch name is 'master'. Consider renaming it to 'main'.
 
 ### [MMM-UKLiveTrainDepartures by XBCreepinJesus](https://github.com/XBCreepinJesus/MMM-UKLiveTrainDepartures)
@@ -8228,7 +8231,7 @@ Last update: 2023-12-31 23:30:21 UTC
 2. Typo: Found `Magic Mirror` in file `MMM-Vasttrafik-PublicTransport.js`: Replace it with `MagicMirror²`.
 3. Typo: Found `Magic Mirror` in file `README.md`: Replace it with `MagicMirror²`.
 4. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
-5. Recommendation: Found `new Date()` in file `node_helper.js`: Replace "new Date()" by "Date.now()": [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
+5. Recommendation: Found `new Date()` in file `node_helper.js`: Replace `new Date()` by `new Date(Date.now())`: [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
 6. Typo: Found `Magic Mirror` in file `package.json`: Replace it with `MagicMirror²`.
 7. Warning: No LICENSE file.
 8. The branch name is 'master'. Consider renaming it to 'main'.
@@ -8259,17 +8262,17 @@ Last update: 2023-12-31 23:30:21 UTC
 ### [MMM-VietNamEventsCalendar by phungorquan](https://github.com/phungorquan/MMM-VietNamEventsCalendar)
 
 1. There is no `package.json`. We need this file to gather information about the module for the module list page.
-2. Recommendation: Found `new Date()` in file `MMM-VietNamEventsCalendar.js`: Replace "new Date()" by "Date.now()": [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
+2. Recommendation: Found `new Date()` in file `MMM-VietNamEventsCalendar.js`: Replace `new Date()` by `new Date(Date.now())`: [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
 3. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
-4. Recommendation: Found `new Date()` in file `VietNamCal.js`: Replace "new Date()" by "Date.now()": [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
+4. Recommendation: Found `new Date()` in file `VietNamCal.js`: Replace `new Date()` by `new Date(Date.now())`: [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
 5. Typo: Found `Magic Mirror` in file `calendarfetcher.js`: Replace it with `MagicMirror²`.
-6. Recommendation: Found `new Date()` in file `calendarfetcher.js`: Replace "new Date()" by "Date.now()": [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
+6. Recommendation: Found `new Date()` in file `calendarfetcher.js`: Replace `new Date()` by `new Date(Date.now())`: [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
 
 ### [MMM-ViewNotifications by glitch452](https://github.com/glitch452/MMM-ViewNotifications)
 
 1. There is no `package.json`. We need this file to gather information about the module for the module list page.
 2. Typo: Found `Magic Mirror` in file `MMM-ViewNotifications.js`: Replace it with `MagicMirror²`.
-3. Recommendation: Found `new Date()` in file `MMM-ViewNotifications.js`: Replace "new Date()" by "Date.now()": [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
+3. Recommendation: Found `new Date()` in file `MMM-ViewNotifications.js`: Replace `new Date()` by `new Date(Date.now())`: [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
 4. The branch name is 'master'. Consider renaming it to 'main'.
 
 ### [MMM-VigiCrues by grenagit](https://github.com/grenagit/MMM-VigiCrues)
@@ -8384,9 +8387,9 @@ Last update: 2023-12-31 23:30:21 UTC
 
 1. There are no keywords in 'package.json'. We would use them as tags on the module list page.
 2. Typo: Found `Magic Mirror` in file `MMM-VUB-Resto.js`: Replace it with `MagicMirror²`.
-3. Recommendation: Found `new Date()` in file `MMM-VUB-Resto.js`: Replace "new Date()" by "Date.now()": [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
-4. Recommendation: Found `new Date()` in file `node_helper.js`: Replace "new Date()" by "Date.now()": [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
-5. Recommendation: Found `new Date()` in file `example.html`: Replace "new Date()" by "Date.now()": [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
+3. Recommendation: Found `new Date()` in file `MMM-VUB-Resto.js`: Replace `new Date()` by `new Date(Date.now())`: [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
+4. Recommendation: Found `new Date()` in file `node_helper.js`: Replace `new Date()` by `new Date(Date.now())`: [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
+5. Recommendation: Found `new Date()` in file `example.html`: Replace `new Date()` by `new Date(Date.now())`: [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
 
 ### [MMM-vvsDeparture by fhinder](https://github.com/fhinder/MMM-vvsDeparture)
 
@@ -8394,7 +8397,7 @@ Last update: 2023-12-31 23:30:21 UTC
 2. Typo: Found `MagicMirror2` in file `README.md`: Replace it with `MagicMirror²`.
 3. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
 4. Recommendation: Found `axios` in file `node_helper.js`: Replace it with built-in fetch.
-5. Recommendation: Found `new Date()` in file `node_helper.js`: Replace "new Date()" by "Date.now()": [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
+5. Recommendation: Found `new Date()` in file `node_helper.js`: Replace `new Date()` by `new Date(Date.now())`: [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
 6. The branch name is 'master'. Consider renaming it to 'main'.
 
 ### [WallberryTheme by delightedCrow](https://github.com/delightedCrow/WallberryTheme)
@@ -8422,7 +8425,7 @@ Last update: 2023-12-31 23:30:21 UTC
 3. Recommendation: Found `require("http")` in file `node_helper.js`: Replace "http" by "node:http".
 4. Recommendation: Found `require("https")` in file `node_helper.js`: Replace "https" by "node:https".
 5. Recommendation: Found `require("fetch")` in file `node_helper.js`: Replace it with built-in fetch.
-6. Recommendation: Found `new Date()` in file `node_helper.js`: Replace "new Date()" by "Date.now()": [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
+6. Recommendation: Found `new Date()` in file `node_helper.js`: Replace `new Date()` by `new Date(Date.now())`: [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
 7. Typo: Found `MagicMirror2` in file `package.json`: Replace it with `MagicMirror²`.
 8. The branch name is 'master'. Consider renaming it to 'main'.
 
@@ -8441,7 +8444,7 @@ Last update: 2023-12-31 23:30:21 UTC
 ### [MMM-WatchDog by MichMich](https://github.com/MichMich/MMM-WatchDog)
 
 1. There is no `package.json`. We need this file to gather information about the module for the module list page.
-2. Recommendation: Found `new Date()` in file `node_helper.js`: Replace "new Date()" by "Date.now()": [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
+2. Recommendation: Found `new Date()` in file `node_helper.js`: Replace `new Date()` by `new Date(Date.now())`: [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
 3. The branch name is 'master'. Consider renaming it to 'main'.
 
 ### [MMM-WaterReminder by thiagomides](https://github.com/thiagomides/MMM-WaterReminder)
@@ -8499,7 +8502,7 @@ Last update: 2023-12-31 23:30:21 UTC
 3. Recommendation: Found `jshint` in file `Gruntfile.js`: Replace "jshint" by "eslint".
 4. Typo: Found `Magic Mirror` in file `MMM-WeatherAlerts.js`: Replace it with `MagicMirror²`.
 5. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
-6. Recommendation: Found `new Date()` in file `node_helper.js`: Replace "new Date()" by "Date.now()": [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
+6. Recommendation: Found `new Date()` in file `node_helper.js`: Replace `new Date()` by `new Date(Date.now())`: [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
 7. Found directory `node_modules`. This shouldn't be uploaded. Add `node_modules/`to `.gitignore`.
 8. Deprecated: Found `"grunt"` in file `package.json`: Grunt is practically unmaintained. Move on to something better.
 9. Typo: Found `MagicMirror2` in file `README.md`: Replace it with `MagicMirror²`.
@@ -8509,7 +8512,7 @@ Last update: 2023-12-31 23:30:21 UTC
 ### [MMM-WeatherBackground by BrianHepler](https://github.com/BrianHepler/MMM-WeatherBackground)
 
 1. There is no `package.json`. We need this file to gather information about the module for the module list page.
-2. Recommendation: Found `new Date()` in file `MMM-WeatherBackground.js`: Replace "new Date()" by "Date.now()": [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
+2. Recommendation: Found `new Date()` in file `MMM-WeatherBackground.js`: Replace `new Date()` by `new Date(Date.now())`: [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
 3. Typo: Found `Magic Mirror` in file `README.md`: Replace it with `MagicMirror²`.
 4. The branch name is 'master'. Consider renaming it to 'main'.
 
@@ -8537,22 +8540,22 @@ Last update: 2023-12-31 23:30:21 UTC
 ### [MMM-WeatherGraph by FlatPepsi17](https://github.com/FlatPepsi17/MMM-WeatherGraph)
 
 1. There is no `package.json`. We need this file to gather information about the module for the module list page.
-2. Recommendation: Found `new Date()` in file `MMM-WeatherGraph.js`: Replace "new Date()" by "Date.now()": [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
+2. Recommendation: Found `new Date()` in file `MMM-WeatherGraph.js`: Replace `new Date()` by `new Date(Date.now())`: [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
 3. Recommendation: Found `XMLHttpRequest` in file `d3.min.js`: Replace it with built-in fetch.
 4. Warning: No LICENSE file.
 
 ### [MMM-WeatherHourlyByDay by dWoolridge](https://github.com/dWoolridge/MMM-WeatherHourlyByDay)
 
 1. An error occurred while getting information from 'package.json': Error: Invalid version: "1.0"
-2. Recommendation: Found `new Date()` in file `MMM-WeatherHourlyByDay.js`: Replace "new Date()" by "Date.now()": [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
-3. Recommendation: Found `new Date()` in file `weatherobjecthourlybyday.js`: Replace "new Date()" by "Date.now()": [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
+2. Recommendation: Found `new Date()` in file `MMM-WeatherHourlyByDay.js`: Replace `new Date()` by `new Date(Date.now())`: [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
+3. Recommendation: Found `new Date()` in file `weatherobjecthourlybyday.js`: Replace `new Date()` by `new Date(Date.now())`: [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
 
 ### [MMM-WeatherOrNot by mykle1](https://github.com/mykle1/MMM-WeatherOrNot)
 
 0. This module is outdated: Deprecated. DarkSky API no longer works since 2023-03-31.
 1. There is no `package.json`. We need this file to gather information about the module for the module list page.
 2. Typo: Found `Magic Mirror` in file `MMM-WeatherOrNot.js`: Replace it with `MagicMirror²`.
-3. Recommendation: Found `new Date()` in file `MMM-WeatherOrNot.js`: Replace "new Date()" by "Date.now()": [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
+3. Recommendation: Found `new Date()` in file `MMM-WeatherOrNot.js`: Replace `new Date()` by `new Date(Date.now())`: [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
 4. The branch name is 'master'. Consider renaming it to 'main'.
 
 ### [MMM-WebHookAlerts by PjTewkesbury](https://github.com/PjTewkesbury/MMM-WebHookAlerts)
@@ -8564,15 +8567,14 @@ Last update: 2023-12-31 23:30:21 UTC
 
 ### [MMM-WebSpeechTTS by KristjanESPERANTO](https://github.com/KristjanESPERANTO/MMM-WebSpeechTTS)
 
-1. Recommendation: Found `new Date()` in file `TTS.js`: Replace "new Date()" by "Date.now()": [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
-2. Recommendation: Found `"eslint-plugin-json"` in file `package.json`: Replace it by `eslint-plugin-jsonc`.
-3. Recommendation: Replace eslintrc by new flat config.
+1. Recommendation: Found `new Date()` in file `TTS.js`: Replace `new Date()` by `new Date(Date.now())`: [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
+2. Recommendation: Replace eslintrc by new flat config.
 
 ### [MMM-Webuntis by thyed](https://github.com/thyed/MMM-Webuntis)
 
 1. `package.json` issue: No repository field.
-2. Recommendation: Found `new Date()` in file `MMM-Webuntis.js`: Replace "new Date()" by "Date.now()": [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
-3. Recommendation: Found `new Date()` in file `node_helper.js`: Replace "new Date()" by "Date.now()": [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
+2. Recommendation: Found `new Date()` in file `MMM-Webuntis.js`: Replace `new Date()` by `new Date(Date.now())`: [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
+3. Recommendation: Found `new Date()` in file `node_helper.js`: Replace `new Date()` by `new Date(Date.now())`: [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
 4. The branch name is 'master'. Consider renaming it to 'main'.
 
 ### [MMM-WebView by Iketaki](https://github.com/Iketaki/MMM-WebView)
@@ -8654,7 +8656,7 @@ Last update: 2023-12-31 23:30:21 UTC
 ### [MMM-wiki by mihairinzis](https://github.com/mihairinzis/MMM-wiki)
 
 1. There is no `package.json`. We need this file to gather information about the module for the module list page.
-2. Recommendation: Found `new Date()` in file `MMM-wiki.js`: Replace "new Date()" by "Date.now()": [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
+2. Recommendation: Found `new Date()` in file `MMM-wiki.js`: Replace `new Date()` by `new Date(Date.now())`: [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
 3. The branch name is 'master'. Consider renaming it to 'main'.
 
 ### [MMM-windy by santi4488](https://github.com/santi4488/MMM-windy)
@@ -8735,7 +8737,7 @@ Last update: 2023-12-31 23:30:21 UTC
 0. This module is outdated: Deprecated. Wunderground API isn't working anymore. Check out MMM-MyWeather which is a fork with another API.
 1. There is no `package.json`. We need this file to gather information about the module for the module list page.
 2. Typo: Found `Magic Mirror` in file `MMM-WunderGround.js`: Replace it with `MagicMirror²`.
-3. Recommendation: Found `new Date()` in file `MMM-WunderGround.js`: Replace "new Date()" by "Date.now()": [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
+3. Recommendation: Found `new Date()` in file `MMM-WunderGround.js`: Replace `new Date()` by `new Date(Date.now())`: [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
 4. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
 5. Deprecated: Found `require('request')` in file `node_helper.js`: Replace it with built-in fetch.
 6. Warning: No LICENSE file.
@@ -8771,9 +8773,9 @@ Last update: 2023-12-31 23:30:21 UTC
 1. No image found.
 2. Typo: Found `Magic Mirror` in file `.gitignore`: Replace it with `MagicMirror²`.
 3. Typo: Found `Magic Mirror` in file `MMM-xiaomi.js`: Replace it with `MagicMirror²`.
-4. Recommendation: Found `new Date()` in file `MMM-xiaomi.js`: Replace "new Date()" by "Date.now()": [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
+4. Recommendation: Found `new Date()` in file `MMM-xiaomi.js`: Replace `new Date()` by `new Date(Date.now())`: [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
 5. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
-6. Recommendation: Found `new Date()` in file `node_helper.js`: Replace "new Date()" by "Date.now()": [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
+6. Recommendation: Found `new Date()` in file `node_helper.js`: Replace `new Date()` by `new Date(Date.now())`: [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
 7. Typo: Found `Magic Mirror` in file `package.json`: Replace it with `MagicMirror²`.
 8. Warning: No LICENSE file.
 9. The branch name is 'master'. Consider renaming it to 'main'.
@@ -8788,7 +8790,7 @@ Last update: 2023-12-31 23:30:21 UTC
 6. Typo: Found `Magic Mirror` in file `MMM-XKCD.js`: Replace it with `MagicMirror²`.
 7. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
 8. Deprecated: Found `require('request')` in file `node_helper.js`: Replace it with built-in fetch.
-9. Recommendation: Found `new Date()` in file `node_helper.js`: Replace "new Date()" by "Date.now()": [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
+9. Recommendation: Found `new Date()` in file `node_helper.js`: Replace `new Date()` by `new Date(Date.now())`: [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
 10. The branch name is 'master'. Consider renaming it to 'main'.
 
 ### [MMM-yandex-route by DimmanT](https://github.com/DimmanT/MMM-yandex-route)
@@ -8831,7 +8833,7 @@ Last update: 2023-12-31 23:30:21 UTC
 
 1. Typo: Found `Magic Mirror` in file `.gitignore`: Replace it with `MagicMirror²`.
 2. Typo: Found `Magic Mirror` in file `MMM-YouLess2.js`: Replace it with `MagicMirror²`.
-3. Recommendation: Found `new Date()` in file `MMM-YouLess2.js`: Replace "new Date()" by "Date.now()": [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
+3. Recommendation: Found `new Date()` in file `MMM-YouLess2.js`: Replace `new Date()` by `new Date(Date.now())`: [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
 4. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
 5. Deprecated: Found `require("request")` in file `node_helper.js`: Replace it with built-in fetch.
 6. Typo: Found `Magic Mirror` in file `styles.css`: Replace it with `MagicMirror²`.
@@ -8860,7 +8862,7 @@ Last update: 2023-12-31 23:30:21 UTC
 
 1. There is no `package.json`. We need this file to gather information about the module for the module list page.
 2. Recommendation: Found `XMLHttpRequest` in file `MMM-YrNow.js`: Replace it with built-in fetch.
-3. Recommendation: Found `new Date()` in file `MMM-YrNow.js`: Replace "new Date()" by "Date.now()": [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
+3. Recommendation: Found `new Date()` in file `MMM-YrNow.js`: Replace `new Date()` by `new Date(Date.now())`: [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
 4. Typo: Found `Magic Mirror` in file `README.md`: Replace it with `MagicMirror²`.
 5. Deprecated: Found `require('request')` in file `node_helper.js`: Replace it with built-in fetch.
 6. Recommendation: Found `XMLHttpRequest` in file `readTextFile.js`: Replace it with built-in fetch.
@@ -8873,7 +8875,7 @@ Last update: 2023-12-31 23:30:21 UTC
 2. Typo: Found `Magic Mirror` in file `README.md`: Replace it with `MagicMirror²`.
 3. Typo: Found `MagicMirror2` in file `README.md`: Replace it with `MagicMirror²`.
 4. Deprecated: Found `require('request')` in file `node_helper.js`: Replace it with built-in fetch.
-5. Recommendation: Found `new Date()` in file `node_helper.js`: Replace "new Date()" by "Date.now()": [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
+5. Recommendation: Found `new Date()` in file `node_helper.js`: Replace `new Date()` by `new Date(Date.now())`: [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
 6. Recommendation: Found `XMLHttpRequest` in file `readTextFile.js`: Replace it with built-in fetch.
 7. Warning: No LICENSE file.
 8. The branch name is 'master'. Consider renaming it to 'main'.
@@ -8904,7 +8906,7 @@ Last update: 2023-12-31 23:30:21 UTC
 1. `package.json` issue: No description
 2. `package.json` issue: No repository field.
 3. There are no specific keywords in 'package.json'. We would use them as tags on the module list page. Add a few meaningful terms to the keywords in the package.json. Not just “magicmirror” or “module”.
-4. Recommendation: Found `new Date()` in file `MMM-Zmanim.js`: Replace "new Date()" by "Date.now()": [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
-5. Recommendation: Found `new Date()` in file `node_helper.js`: Replace "new Date()" by "Date.now()": [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
+4. Recommendation: Found `new Date()` in file `MMM-Zmanim.js`: Replace `new Date()` by `new Date(Date.now())`: [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
+5. Recommendation: Found `new Date()` in file `node_helper.js`: Replace `new Date()` by `new Date(Date.now())`: [#3252](https://github.com/MichMich/MagicMirror/issues/3252).
 6. Found directory `node_modules`. This shouldn't be uploaded. Add `node_modules/`to `.gitignore`.
 7. The branch name is 'master'. Consider renaming it to 'main'.

@@ -1425,7 +1425,7 @@
     "maintainer": "shbatm",
     "maintainerURL": "https://github.com/shbatm",
     "description": "Rotate modules, to save space on screen.",
-    "issues": 3,
+    "issues": 1,
     "tags": [
       "carousel",
       "navigation",
@@ -1437,7 +1437,7 @@
     ],
     "license": "MIT",
     "image": "img-example1-slide.jpg",
-    "last_commit": "2023-12-01"
+    "last_commit": "2024-01-01"
   },
   {
     "name": "MMM-CECControl",
@@ -2600,7 +2600,7 @@
     "maintainer": "scottcl88",
     "maintainerURL": "",
     "description": "A heavily configurable module to display different animations based on current weather and show customized event effects.",
-    "issues": 8,
+    "issues": 10,
     "tags": [
       "weather"
     ],
@@ -5949,7 +5949,7 @@
     "maintainer": "Dobherrmann",
     "maintainerURL": "",
     "description": "Displays the daily bible verse from ther german \u201cLosungstext\u201d and the additional teaching text.",
-    "issues": 5,
+    "issues": 6,
     "license": "ISC",
     "image": "Example.JPG",
     "last_commit": "2022-01-19"
@@ -6477,7 +6477,7 @@
     "maintainer": "masters1222",
     "maintainerURL": "",
     "description": "Simple player to play your music.",
-    "issues": 8,
+    "issues": 9,
     "outdated": "Abandoned. No reactions to issues since years. No installation instructions. It no longer seems to work.",
     "last_commit": "2016-05-04"
   },
@@ -9461,7 +9461,7 @@
     "maintainer": "bibaldo",
     "maintainerURL": "",
     "description": "Allows you to get instant info of your developing pregnancy.",
-    "issues": 4,
+    "issues": 5,
     "last_commit": "2021-03-22"
   },
   {
@@ -9567,7 +9567,7 @@
     ],
     "license": "MIT",
     "image": "img-MMM-PublicTransport_screenshot.jpg",
-    "last_commit": "2023-12-01"
+    "last_commit": "2024-01-01"
   },
   {
     "name": "MMM-PublicTransportHafas",
@@ -9582,7 +9582,7 @@
     ],
     "license": "MIT",
     "image": "img-Goerdelerring_all.jpg",
-    "last_commit": "2023-12-23"
+    "last_commit": "2024-01-01"
   },
   {
     "name": "MMM-PublicTransportVVO",
@@ -13138,7 +13138,7 @@
     "maintainer": "KristjanESPERANTO",
     "maintainerURL": "",
     "description": "A Text-To-Speech module which uses the Web Speech API of the browser. It is in an early stage of development. So far only German is supported.",
-    "issues": 3,
+    "issues": 2,
     "tags": [
       "text-to-speech",
       "tts",
@@ -13146,7 +13146,7 @@
     ],
     "license": "MIT",
     "image": ".github-TTS.jpg",
-    "last_commit": "2023-12-16"
+    "last_commit": "2024-01-01"
   },
   {
     "name": "MMM-Webuntis",
