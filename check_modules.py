@@ -151,7 +151,7 @@ def check_modules():
             "category": "Recommendation",
         },
         "new Date()": {
-            "name": "Replace it by `new Date(Date.now())`: [#3252](https://github.com/MichMich/MagicMirror/issues/3252).",
+            "name": "Replace it by `new Date(Date.now())`: [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).",
             "category": "Recommendation",
         },
         "getYear()": {
@@ -160,7 +160,7 @@ def check_modules():
         },
         "MichMich/MagicMirror": {
             "name": "Replace it by `MagicMirrorOrg/MagicMirror`.",
-            "category": "Deprecated",
+            "category": "Outdated",
         },
     }
 

@@ -6,7 +6,7 @@ The goals of this project are to **create a nice list of modules** for [MagicMir
 
 ## List of modules
 
-[The official list in the wiki](https://github.com/MichMich/MagicMirror/wiki/3rd-party-modules) is a simple text list without filters and images. This list now contains over 1000 modules, so it is not so easy for users to pick out modules.
+[The official list in the wiki](https://github.com/MagicMirrorOrg/MagicMirror/wiki/3rd-party-modules) is a simple text list without filters and images. This list now contains over 1000 modules, so it is not so easy for users to pick out modules.
 
 With a few scripts we create a web page with filter function and integrated images. This website still needs some fine tuning, but is already in a usable state. You can check it out here: <https://kristjanesperanto.github.io/MagicMirror-3rd-Party-Modules/>
 
@@ -22,7 +22,7 @@ This is a list of information that we can display on the web page and where the 
     1. In the `package.json` must be a free license in the license field. Take a look at [this package.json](https://github.com/KristjanESPERANTO/MMM-PublicTransportHafas/blob/main/package.json) as an example.
     2. There must be an image file in your repository.
   - If there are several images in your repository, one image is selected according to the following logic: First search for an image that contains 'screenshot' or 'example' in it's name and if none is found, take the first image that is found.
-- Description: Is taken from the [official list of modules](https://github.com/MichMich/MagicMirror/wiki/3rd-party-modules).
+- Description: Is taken from the [official list of modules](https://github.com/MagicMirrorOrg/MagicMirror/wiki/3rd-party-modules).
 - Tags: Are taken from the keywords in the `package.json`. Take a look at [this package.json](https://github.com/KristjanESPERANTO/MMM-PublicTransportHafas/blob/main/package.json) as an example.
 
 Also check the [result file](result.md) to see if there are any notes on your module.
@@ -132,6 +132,6 @@ This script goes through all cloned modules and performs various checks. The res
 
 - New test: Is `moment` in use? <https://momentjs.com/docs/#/-project-status/>.
   - `moment` is not really dead yet (it is no longer being developed, but it is still being maintained), so there is no urgent reason to change now. This is a test for the future when the Temporal API is ready.
-- Use data from GitHub API: <https://api.github.com/repos/MichMich/MagicMirror>
+- Use data from GitHub API: <https://api.github.com/repos/MagicMirrorOrg/MagicMirror>
   - Is there also a GitLab API? Yes, example: <https://gitlab.com/khassel/MMM-RepoStats/-/blob/master/node_helper.js?ref_type=heads#L116>
   - Unfortunately, the queries are blocked relatively quickly when we query information from each module via the API.

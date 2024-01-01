@@ -5,7 +5,7 @@ import sanitizeHtml from "sanitize-html";
 async function fetchMarkdownData () {
   try {
     const url =
-      "https://raw.githubusercontent.com/wiki/MichMich/MagicMirror/3rd-Party-Modules.md";
+      "https://raw.githubusercontent.com/wiki/MagicMirrorOrg/MagicMirror/3rd-Party-Modules.md";
     const response = await fetch(url);
     if (response.status !== 200) {
       throw new Error(`The fetch() call failed. Status code: ${response.status}`);

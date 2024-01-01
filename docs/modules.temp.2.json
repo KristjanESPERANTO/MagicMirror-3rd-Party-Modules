@@ -5353,7 +5353,7 @@
     "id": "sebastianhodapp/MMM-IndoorTemp",
     "maintainer": "sebastianhodapp",
     "maintainerURL": "",
-    "description": "The module emits the notification \"INDOOR_TEMPERATURE\" to display the indoor temperature received via a subscribed MQTT topic in the default <a target=\"_blank\" href=\"https://github.com/MichMich/MagicMirror/tree/develop/modules/default/currentweather\">Current Weather module</a>.",
+    "description": "The module emits the notification \"INDOOR_TEMPERATURE\" to display the indoor temperature received via a subscribed MQTT topic in the default <a target=\"_blank\" href=\"https://github.com/MagicMirrorOrg/MagicMirror/tree/develop/modules/default/currentweather\">Current Weather module</a>.",
     "issues": [
       "No image found."
     ],
@@ -14294,7 +14294,7 @@
     "id": "cybex-dev/MMM-XDG-OPEN",
     "maintainer": "cybex-dev",
     "maintainerURL": "https://github.com/cybex-dev",
-    "description": "Opens a file, URL, etc using default applications for a particular MIME, all done by using the <a target=\"_blank\" href=\"https://github.com/michMich/MagicMirror/wiki/notifications\">Notification Mechanism</a>.",
+    "description": "Opens a file, URL, etc using default applications for a particular MIME, all done by using the <a target=\"_blank\" href=\"https://github.com/MagicMirrorOrg/MagicMirror/wiki/notifications\">Notification Mechanism</a>.",
     "issues": [
       "`package.json` issue: No repository field.",
       "`package.json` issue: No license field.",
