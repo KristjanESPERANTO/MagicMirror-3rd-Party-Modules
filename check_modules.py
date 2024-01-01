@@ -151,8 +151,12 @@ def check_modules():
             "category": "Recommendation",
         },
         "new Date()": {
-            "name": 'Replace "new Date()" by "Date.now()": [#3252](https://github.com/MichMich/MagicMirror/issues/3252).',
+            "name": "Replace `new Date()` by `new Date(Date.now())`: [#3252](https://github.com/MichMich/MagicMirror/issues/3252).",
             "category": "Recommendation",
+        },
+        "getYear()": {
+            "name": "Replace `getYear()` by `getFullYear()`.",
+            "category": "Deprecated",
         },
     }
 
