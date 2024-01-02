@@ -1185,13 +1185,13 @@
     "maintainer": "MMM-CalendarExt2",
     "maintainerURL": "",
     "description": "Extended calendar and event view.",
-    "issues": 4,
+    "issues": 1,
     "tags": [
       "calendar"
     ],
     "license": "MIT",
     "image": "docs-Configuration-Views-legend-full-example.jpg",
-    "last_commit": "2023-12-02"
+    "last_commit": "2024-01-02"
   },
   {
     "name": "MMM-CalendarExt3",
@@ -1206,7 +1206,7 @@
       "calext3"
     ],
     "license": "MIT",
-    "last_commit": "2023-12-23"
+    "last_commit": "2024-01-02"
   },
   {
     "name": "MMM-CalendarExt3Agenda",
@@ -1221,7 +1221,7 @@
       "agenda"
     ],
     "license": "MIT",
-    "last_commit": "2023-12-26"
+    "last_commit": "2024-01-02"
   },
   {
     "name": "MMM-CalendarExt3Journal",
@@ -5466,8 +5466,14 @@
     "maintainer": "timdows",
     "maintainerURL": "",
     "description": "Creates a table filled by a list gathered from a JSON request, and puts all variables of the object in its own table column.",
-    "issues": 10,
-    "last_commit": "2023-10-15"
+    "issues": 5,
+    "tags": [
+      "json",
+      "table"
+    ],
+    "license": "MIT",
+    "image": "example1.jpg",
+    "last_commit": "2024-01-02"
   },
   {
     "name": "MMM-JsonValue",
@@ -7108,7 +7114,7 @@
     ],
     "license": "MIT",
     "image": "doc-MQTT.jpg",
-    "last_commit": "2023-04-25"
+    "last_commit": "2024-01-02"
   },
   {
     "name": "MMM-MQTT",
@@ -7782,7 +7788,7 @@
     ],
     "license": "MIT",
     "image": ".github-preview.bubbles.jpg",
-    "last_commit": "2023-12-29"
+    "last_commit": "2024-01-02"
   },
   {
     "name": "MMM-Netatmo-Presence",
@@ -8409,13 +8415,13 @@
     "maintainer": "KristjanESPERANTO",
     "maintainerURL": "",
     "description": "Display current and forecast weather based on the Openweathermap OneCall API data with alternative formatting.",
-    "issues": 3,
+    "issues": 0,
     "tags": [
       "weather"
     ],
     "license": "MIT",
     "image": "OneCallWeather-Screenshot.jpg",
-    "last_commit": "2023-12-02"
+    "last_commit": "2024-01-01"
   },
   {
     "name": "MMM-OneTouchReveal",
@@ -8436,9 +8442,9 @@
     "maintainer": "seeshaughnessy",
     "maintainerURL": "",
     "description": "Use OneTracker app to deliveries/packages by forwarding from any email address.",
-    "issues": 6,
+    "issues": 5,
     "outdated": "Deprecated. Module doesn't work without workaround (<code>npm install node-fetch@2</code>) and author doesn't work on it anymore. Maybe he would react to a PR. Status as of 2023-12-03.",
-    "last_commit": "2021-11-08"
+    "last_commit": "2024-01-02"
   },
   {
     "name": "MMM-Online-State",
@@ -9576,13 +9582,13 @@
     "maintainer": "KristjanESPERANTO",
     "maintainerURL": "",
     "description": "Displays departure information for public transport in Germany. The <a target=\"_blank\" href=\"https://github.com/public-transport/hafas-client\">hafas-client</a> is used to query the information. The interface of the Deutsche Bahn is used as standard, this includes most of the local networks with buses, trams, etc. However, other hafas interfaces can also be used.",
-    "issues": 1,
+    "issues": 0,
     "tags": [
       "public transport"
     ],
     "license": "MIT",
     "image": "img-Goerdelerring_all.jpg",
-    "last_commit": "2024-01-01"
+    "last_commit": "2024-01-02"
   },
   {
     "name": "MMM-PublicTransportVVO",

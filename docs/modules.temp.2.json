@@ -5807,11 +5807,13 @@
     "maintainer": "timdows",
     "maintainerURL": "",
     "description": "Creates a table filled by a list gathered from a JSON request, and puts all variables of the object in its own table column.",
-    "issues": [
-      "`package.json` issue: No repository field.",
-      "`package.json` issue: No license field.",
-      "There are no keywords in 'package.json'. We would use them as tags on the module list page."
-    ]
+    "issues": [],
+    "tags": [
+      "json",
+      "table"
+    ],
+    "license": "MIT",
+    "image": "example1.jpg"
   },
   {
     "name": "MMM-JsonValue",
