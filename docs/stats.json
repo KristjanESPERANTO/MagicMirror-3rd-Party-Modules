@@ -1,11 +1,11 @@
 {
-  "module-counter": 1079,
+  "module-counter": 1080,
   "modules-with-image-counter": 451,
-  "modules-with-issues-counter": 1075,
-  "issue-counter": 6319,
-  "last-update": "2024-01-02 19:01:05",
+  "modules-with-issues-counter": 1076,
+  "issue-counter": 6329,
+  "last-update": "2024-01-03 18:30:39",
   "repository-hoster": {
-    "github": 1070,
+    "github": 1071,
     "gitlab": 8,
     "bitbucket": 1
   },
@@ -272,6 +272,7 @@
     "alltopafi": 1,
     "MatthiPi": 1,
     "wouter-heerwegh": 1,
+    "J0n4e": 1,
     "Smiche": 1,
     "jordy-u": 1,
     "gberg927": 1,

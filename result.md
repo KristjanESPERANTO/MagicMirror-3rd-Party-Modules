@@ -1,16 +1,16 @@
 # Result of the module analysis
 
-Last update: 2024-01-02 19:01:05 UTC
+Last update: 2024-01-03 18:30:39 UTC
 
 ## Statistics
 
 |                      | number   |
 |:---------------------|:--------:|
-| modules analyzed     |   1079   |
-| maintainer           |    622   |
-| modules with issues  |   1075   |
-| issues               |   6319   |
-| modules at github    |   1070   |
+| modules analyzed     |   1080   |
+| maintainer           |    623   |
+| modules with issues  |   1076   |
+| issues               |   6329   |
+| modules at github    |   1071   |
 | modules at gitlab    |      8   |
 | modules at bitbucket |      1   |
 
@@ -1637,6 +1637,10 @@ Last update: 2024-01-02 19:01:05 UTC
 4. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
 5. The branch name is 'master'. Consider renaming it to 'main'.
 
+### [MMM-DHT22 by J0n4e](https://github.com/J0n4e/MMM-DHT22)
+
+1. There is no `package.json`. We need this file to gather information about the module for the module list page.
+
 ### [MMM-DigClock by justjim1220](https://github.com/justjim1220/MMM-DigClock)
 
 1. There is no `package.json`. We need this file to gather information about the module for the module list page.
@@ -2721,13 +2725,15 @@ Last update: 2024-01-02 19:01:05 UTC
 
 ### [MMM-GoogleAssistant by bugsounet](https://github.com/bugsounet/MMM-GoogleAssistant)
 
-1. Information: There are updates for 5 dependencie(s):
-   -  @grpc/grpc-js        ^1.9.11  →   ^1.9.13
-   -  esbuild              ^0.19.8  →  ^0.19.11
-   -  google-auth-library   ^9.2.0  →    ^9.4.1
-   -  node-html-parser     ^6.1.11  →   ^6.1.12
-   -  open                  ^9.1.0  →   ^10.0.2
-
+1. Recommendation: Found `new Date()` in file `EXT_Tools.js`: Replace it by `new Date(Date.now())`: [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
+2. Recommendation: Found `new Date()` in file `SH_Middleware.js`: Replace it by `new Date(Date.now())`: [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
+3. Typo: Found `Magic Mirror` in file `fr.json`: Replace it with `MagicMirror²`.
+4. Deprecated: Found `"grunt"` in file `fa-brands-400.svg`: Grunt is practically unmaintained. Move on to something better.
+5. Recommendation: Found `new Date()` in file `FileReader.js`: Replace it by `new Date(Date.now())`: [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
+6. Recommendation: Found `XMLHttpRequest` in file `jquery.min.js`: Replace it with built-in fetch.
+7. Typo: Found `Magic Mirror` in file `default.home`: Replace it with `MagicMirror²`.
+8. Typo: Found `Magic Mirror` in file `tr.home`: Replace it with `MagicMirror²`.
+9. Recommendation: Found `XMLHttpRequest` in file `EXT_Restart.js`: Replace it with built-in fetch.
 
 ### [MMM-GoogleBirthdaysProvider by PalatinCoder](https://github.com/PalatinCoder/MMM-GoogleBirthdaysProvider)
 
@@ -5464,7 +5470,9 @@ Last update: 2024-01-02 19:01:05 UTC
 
 ### [MMM-Netatmo by CFenner](https://github.com/CFenner/MMM-Netatmo)
 
-1. Recommendation: Replace eslintrc by new flat config.
+1. Recommendation: Found `'node-fetch'` in file `helper.js`: Replace it with built-in fetch.
+2. Recommendation: Found `"node-fetch"` in file `package.json`: Replace it with built-in fetch.
+3. Recommendation: Replace eslintrc by new flat config.
 
 ### [MMM-Netatmo-Presence by AgP42](https://github.com/AgP42/MMM-Netatmo-Presence)
 
@@ -5953,7 +5961,6 @@ Last update: 2024-01-02 19:01:05 UTC
 
 ### [MMM-OneTracker by seeshaughnessy](https://github.com/seeshaughnessy/MMM-OneTracker)
 
-0. This module is outdated: Deprecated. Module doesn't work without workaround (<code>npm install node-fetch@2</code>) and author doesn't work on it anymore. Maybe he would react to a PR. Status as of 2023-12-03.
 1. There is no `package.json`. We need this file to gather information about the module for the module list page.
 2. Typo: Found `Magic Mirror` in file `MMM-OneTracker.js`: Replace it with `MagicMirror²`.
 3. Typo: Found `Magic Mirror` in file `README.md`: Replace it with `MagicMirror²`.

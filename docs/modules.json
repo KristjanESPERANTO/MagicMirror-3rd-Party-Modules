@@ -2341,6 +2341,16 @@
     "last_commit": "2017-02-16"
   },
   {
+    "name": "MMM-DHT22",
+    "url": "https://github.com/J0n4e/MMM-DHT22",
+    "id": "J0n4e/MMM-DHT22",
+    "maintainer": "J0n4e",
+    "maintainerURL": "",
+    "description": "Displays temperature/humidity readings from DHT22 sensor.",
+    "issues": 1,
+    "last_commit": "2023-09-27"
+  },
+  {
     "name": "MMM-DigClock",
     "url": "https://github.com/justjim1220/MMM-DigClock",
     "id": "justjim1220/MMM-DigClock",
@@ -3960,7 +3970,7 @@
     "maintainer": "bugsounet",
     "maintainerURL": "https://wiki.bugsounet.fr",
     "description": "MMM-GoogleAssistant is an real embedded Google assistant on MagicMirror\u00b2. [Maintained].",
-    "issues": 1,
+    "issues": 9,
     "tags": [
       "google assistant",
       "voice",
@@ -3969,7 +3979,7 @@
     ],
     "license": "MIT",
     "image": "resources-previewFS.jpg",
-    "last_commit": "2023-11-27"
+    "last_commit": "2024-01-03"
   },
   {
     "name": "MMM-GoogleBirthdaysProvider",
@@ -6913,7 +6923,7 @@
     "issues": 7,
     "license": "MIT",
     "image": "images-2019-06-22-example-moons.jpg",
-    "last_commit": "2023-12-14"
+    "last_commit": "2024-01-02"
   },
   {
     "name": "MMM-moonraker",
@@ -7781,14 +7791,14 @@
     "maintainer": "CFenner",
     "maintainerURL": "",
     "description": "Display your Netatmo in/outdoor weather station data.",
-    "issues": 1,
+    "issues": 3,
     "tags": [
       "netatmo",
       "smarthome"
     ],
     "license": "MIT",
     "image": ".github-preview.bubbles.jpg",
-    "last_commit": "2024-01-02"
+    "last_commit": "2024-01-03"
   },
   {
     "name": "MMM-Netatmo-Presence",
@@ -8443,7 +8453,6 @@
     "maintainerURL": "",
     "description": "Use OneTracker app to deliveries/packages by forwarding from any email address.",
     "issues": 5,
-    "outdated": "Deprecated. Module doesn't work without workaround (<code>npm install node-fetch@2</code>) and author doesn't work on it anymore. Maybe he would react to a PR. Status as of 2023-12-03.",
     "last_commit": "2024-01-02"
   },
   {
@@ -8910,7 +8919,7 @@
     "description": "Module to version your personal config in a separate repository.",
     "issues": 7,
     "license": "MIT",
-    "last_commit": "2022-01-19"
+    "last_commit": "2024-01-03"
   },
   {
     "name": "MMM-PetFinder",

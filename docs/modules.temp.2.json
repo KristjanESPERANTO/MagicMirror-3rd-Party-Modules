@@ -2511,6 +2511,17 @@
     ]
   },
   {
+    "name": "MMM-DHT22",
+    "url": "https://github.com/J0n4e/MMM-DHT22",
+    "id": "J0n4e/MMM-DHT22",
+    "maintainer": "J0n4e",
+    "maintainerURL": "",
+    "description": "Displays temperature/humidity readings from DHT22 sensor.",
+    "issues": [
+      "There is no `package.json`. We need this file to gather information about the module for the module list page."
+    ]
+  },
+  {
     "name": "MMM-DigClock",
     "url": "https://github.com/justjim1220/MMM-DigClock",
     "id": "justjim1220/MMM-DigClock",
@@ -8989,8 +9000,7 @@
     "description": "Use OneTracker app to deliveries/packages by forwarding from any email address.",
     "issues": [
       "There is no `package.json`. We need this file to gather information about the module for the module list page."
-    ],
-    "outdated": "Deprecated. Module doesn't work without workaround (<code>npm install node-fetch@2</code>) and author doesn't work on it anymore. Maybe he would react to a PR. Status as of 2023-12-03."
+    ]
   },
   {
     "name": "MMM-Online-State",
