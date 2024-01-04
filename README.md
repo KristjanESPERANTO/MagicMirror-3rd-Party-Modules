@@ -95,6 +95,9 @@ This script goes through all cloned modules and performs various checks. The res
 
 ## Ideas / To do
 
+- Show and sort by GitHub Star #1.
+- Move `result.md` to docs.
+- Show results in popup on the page.
 - Check if license in package.json matches the version in LICENSE file (I've seen some mismatches)
 - Check if ESLint is in use. If not, recommend it.
 - Statistics per module
