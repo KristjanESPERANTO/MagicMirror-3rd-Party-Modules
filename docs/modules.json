@@ -3955,16 +3955,6 @@
   },
   {
     "name": "MMM-GoogleAssistant",
-    "url": "https://github.com/gauravsacc/MMM-GoogleAssistant",
-    "id": "gauravsacc/MMM-GoogleAssistant",
-    "maintainer": "gauravsacc",
-    "maintainerURL": "",
-    "description": "Google Assistant integration using python library. Activated using hotword 'Ok Google'.",
-    "issues": 7,
-    "last_commit": "2018-04-19"
-  },
-  {
-    "name": "MMM-GoogleAssistant",
     "url": "https://github.com/bugsounet/MMM-GoogleAssistant",
     "id": "bugsounet/MMM-GoogleAssistant",
     "maintainer": "bugsounet",
@@ -3980,6 +3970,17 @@
     "license": "MIT",
     "image": "resources-previewFS.jpg",
     "last_commit": "2024-01-03"
+  },
+  {
+    "name": "MMM-GoogleAssistant",
+    "url": "https://github.com/gauravsacc/MMM-GoogleAssistant",
+    "id": "gauravsacc/MMM-GoogleAssistant",
+    "maintainer": "gauravsacc",
+    "maintainerURL": "",
+    "description": "Google Assistant integration using python library. Activated using hotword 'Ok Google'.",
+    "issues": 7,
+    "outdated": "Abandoned. No reactions to issues since years. Seems not to work anymore.",
+    "last_commit": "2018-04-19"
   },
   {
     "name": "MMM-GoogleBirthdaysProvider",
@@ -7791,7 +7792,7 @@
     "maintainer": "CFenner",
     "maintainerURL": "",
     "description": "Display your Netatmo in/outdoor weather station data.",
-    "issues": 3,
+    "issues": 1,
     "tags": [
       "netatmo",
       "smarthome"
@@ -8919,7 +8920,7 @@
     "description": "Module to version your personal config in a separate repository.",
     "issues": 7,
     "license": "MIT",
-    "last_commit": "2024-01-03"
+    "last_commit": "2024-01-04"
   },
   {
     "name": "MMM-PetFinder",
@@ -8982,6 +8983,16 @@
       "notification"
     ],
     "last_commit": "2019-07-01"
+  },
+  {
+    "name": "MMM-PhoneDetect",
+    "url": "https://github.com/PierreGode/MMM-PhoneDetect",
+    "id": "PierreGode/MMM-PhoneDetect",
+    "maintainer": "PierreGode",
+    "maintainerURL": "https://github.com/PierreGode",
+    "description": "Automatically controls the screen's power based on the presence of specified phones or devices within the network.",
+    "issues": 3,
+    "last_commit": "2024-01-04"
   },
   {
     "name": "PiDisplaySleep",
@@ -9065,13 +9076,13 @@
     "maintainer": "bugsounet",
     "maintainerURL": "",
     "description": "After a configurated time without any user interaction the display will turn off and hide all modules for economy mode.It will wake up with a PIR sensor. [Maintained].",
-    "issues": 2,
+    "issues": 1,
     "tags": [
       "screen"
     ],
     "license": "MIT",
     "image": "screenshot-screenshot.jpg",
-    "last_commit": "2023-11-27"
+    "last_commit": "2024-01-04"
   },
   {
     "name": "MMM-PIR",
@@ -11225,7 +11236,7 @@
     "issues": 9,
     "license": "MIT",
     "image": ".github-preview.jpg",
-    "last_commit": "2023-03-07"
+    "last_commit": "2024-01-04"
   },
   {
     "name": "MMM-Sonos",

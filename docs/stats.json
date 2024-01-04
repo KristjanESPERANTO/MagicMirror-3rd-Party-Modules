@@ -1,11 +1,11 @@
 {
-  "module-counter": 1080,
+  "module-counter": 1081,
   "modules-with-image-counter": 451,
-  "modules-with-issues-counter": 1076,
-  "issue-counter": 6329,
-  "last-update": "2024-01-03 18:30:39",
+  "modules-with-issues-counter": 1077,
+  "issue-counter": 6330,
+  "last-update": "2024-01-04 17:28:08",
   "repository-hoster": {
-    "github": 1071,
+    "github": 1072,
     "gitlab": 8,
     "bitbucket": 1
   },
@@ -51,6 +51,7 @@
     "parnic": 4,
     "deg0nz": 4,
     "asimhsidd": 4,
+    "PierreGode": 4,
     "buxxi": 4,
     "doctorfree": 4,
     "ralberth": 4,
@@ -90,7 +91,6 @@
     "spydersoft-consulting": 3,
     "skuethe": 3,
     "coderpussy": 3,
-    "PierreGode": 3,
     "AgP42": 3,
     "RedNax67": 3,
     "Alvinger": 3,

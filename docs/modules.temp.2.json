@@ -4211,19 +4211,6 @@
   },
   {
     "name": "MMM-GoogleAssistant",
-    "url": "https://github.com/gauravsacc/MMM-GoogleAssistant",
-    "id": "gauravsacc/MMM-GoogleAssistant",
-    "maintainer": "gauravsacc",
-    "maintainerURL": "",
-    "description": "Google Assistant integration using python library. Activated using hotword 'Ok Google'.",
-    "issues": [
-      "`package.json` issue: No repository field.",
-      "`package.json` issue: No license field.",
-      "There are no keywords in 'package.json'. We would use them as tags on the module list page."
-    ]
-  },
-  {
-    "name": "MMM-GoogleAssistant",
     "url": "https://github.com/bugsounet/MMM-GoogleAssistant",
     "id": "bugsounet/MMM-GoogleAssistant",
     "maintainer": "bugsounet",
@@ -4238,6 +4225,20 @@
     ],
     "license": "MIT",
     "image": "resources-previewFS.jpg"
+  },
+  {
+    "name": "MMM-GoogleAssistant",
+    "url": "https://github.com/gauravsacc/MMM-GoogleAssistant",
+    "id": "gauravsacc/MMM-GoogleAssistant",
+    "maintainer": "gauravsacc",
+    "maintainerURL": "",
+    "description": "Google Assistant integration using python library. Activated using hotword 'Ok Google'.",
+    "issues": [
+      "`package.json` issue: No repository field.",
+      "`package.json` issue: No license field.",
+      "There are no keywords in 'package.json'. We would use them as tags on the module list page."
+    ],
+    "outdated": "Abandoned. No reactions to issues since years. Seems not to work anymore."
   },
   {
     "name": "MMM-GoogleBirthdaysProvider",
@@ -9566,6 +9567,17 @@
     "tags": [
       "phone notification",
       "notification"
+    ]
+  },
+  {
+    "name": "MMM-PhoneDetect",
+    "url": "https://github.com/PierreGode/MMM-PhoneDetect",
+    "id": "PierreGode/MMM-PhoneDetect",
+    "maintainer": "PierreGode",
+    "maintainerURL": "https://github.com/PierreGode",
+    "description": "Automatically controls the screen's power based on the presence of specified phones or devices within the network.",
+    "issues": [
+      "There is no `package.json`. We need this file to gather information about the module for the module list page."
     ]
   },
   {

@@ -2859,21 +2859,22 @@
   },
   {
     "name": "MMM-GoogleAssistant",
-    "url": "https://github.com/gauravsacc/MMM-GoogleAssistant",
-    "id": "gauravsacc/MMM-GoogleAssistant",
-    "maintainer": "gauravsacc",
-    "maintainerURL": "",
-    "description": "Google Assistant integration using python library. Activated using hotword 'Ok Google'.",
-    "issues": []
-  },
-  {
-    "name": "MMM-GoogleAssistant",
     "url": "https://github.com/bugsounet/MMM-GoogleAssistant",
     "id": "bugsounet/MMM-GoogleAssistant",
     "maintainer": "bugsounet",
     "maintainerURL": "https://wiki.bugsounet.fr",
     "description": "MMM-GoogleAssistant is an real embedded Google assistant on MagicMirror². [Maintained].",
     "issues": []
+  },
+  {
+    "name": "MMM-GoogleAssistant",
+    "url": "https://github.com/gauravsacc/MMM-GoogleAssistant",
+    "id": "gauravsacc/MMM-GoogleAssistant",
+    "maintainer": "gauravsacc",
+    "maintainerURL": "",
+    "description": "Google Assistant integration using python library. Activated using hotword 'Ok Google'.",
+    "issues": [],
+    "outdated": "Abandoned. No reactions to issues since years. Seems not to work anymore."
   },
   {
     "name": "MMM-GoogleBirthdaysProvider",
@@ -6438,6 +6439,15 @@
     "maintainer": "ronny3050",
     "maintainerURL": "",
     "description": "Displays and alerts mirror users on new phone notifications.",
+    "issues": []
+  },
+  {
+    "name": "MMM-PhoneDetect",
+    "url": "https://github.com/PierreGode/MMM-PhoneDetect",
+    "id": "PierreGode/MMM-PhoneDetect",
+    "maintainer": "PierreGode",
+    "maintainerURL": "https://github.com/PierreGode",
+    "description": "Automatically controls the screen's power based on the presence of specified phones or devices within the network.",
     "issues": []
   },
   {
