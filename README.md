@@ -96,6 +96,7 @@ This script goes through all cloned modules and performs various checks. The res
 ## Ideas / To do
 
 - Check if license in package.json matches the version in LICENSE file (I've seen some mismatches)
+- Check if ESLint is in use. If not, recommend it.
 - Statistics per module
   - last update date
   - number of unresolved GitHub issues to guess the module’s activation level or popularity
