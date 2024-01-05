@@ -6487,8 +6487,13 @@
     "maintainerURL": "",
     "description": "Turns on or off a device connected to GPIO (in my case, an LCD screen) based on the input of a PIR device. Integrates nicely with MMM-Assistant (for voice control) and MMM-TelegramBot (for Telegram control).",
     "issues": [
-      "There is no `package.json`. We need this file to gather information about the module for the module list page."
-    ]
+      "No image found."
+    ],
+    "tags": [
+      "lcd",
+      "pir"
+    ],
+    "license": "MIT"
   },
   {
     "name": "MMM-LeagueOfLegends",
@@ -10033,8 +10038,14 @@
     "maintainerURL": "https://github.com/PierreGode",
     "description": "Automatically controls the screen's power based on the presence of specified phones or devices within the network.",
     "issues": [
-      "There is no `package.json`. We need this file to gather information about the module for the module list page."
-    ]
+      "No image found."
+    ],
+    "tags": [
+      "phone",
+      "presence",
+      "detection"
+    ],
+    "license": "MIT"
   },
   {
     "name": "PiDisplaySleep",

@@ -1,6 +1,6 @@
 # Result of the module analysis
 
-Last update: 2024-01-05 20:19:31 UTC
+Last update: 2024-01-05 21:51:33 UTC
 
 ## Statistics
 
@@ -9,7 +9,7 @@ Last update: 2024-01-05 20:19:31 UTC
 | modules analyzed     |   1112   |
 | maintainer           |    623   |
 | modules with issues  |   1108   |
-| issues               |   6380   |
+| issues               |   6379   |
 | modules at github    |   1103   |
 | modules at gitlab    |      8   |
 | modules at bitbucket |      1   |
@@ -6477,9 +6477,8 @@ Last update: 2024-01-05 20:19:31 UTC
 
 ### [MMM-PhoneDetect by PierreGode](https://github.com/PierreGode/MMM-PhoneDetect)
 
-1. There is no `package.json`. We need this file to gather information about the module for the module list page.
+1. No image found.
 2. Recommendation: Found `new Date()` in file `node_helper.js`: Replace it by `new Date(Date.now())`: [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
-3. Warning: No LICENSE file.
 
 ### [PiDisplaySleep by RpDp-git](https://github.com/RpDp-git/PiDisplaySleep)
 

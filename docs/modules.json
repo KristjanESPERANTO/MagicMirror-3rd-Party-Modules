@@ -9451,7 +9451,13 @@
     "maintainer": "PierreGode",
     "maintainerURL": "https://github.com/PierreGode",
     "description": "Automatically controls the screen's power based on the presence of specified phones or devices within the network.",
-    "issues": 3,
+    "issues": 2,
+    "tags": [
+      "phone",
+      "presence",
+      "detection"
+    ],
+    "license": "MIT",
     "last_commit": "2024-01-05"
   },
   {
