@@ -4,8 +4,8 @@ import sharp from "sharp";
 
 const imagesFolder = "./docs/images";
 
-async function getJson (filePath) {
-  const data = await fs.promises.readFile(filePath, "utf8");
+function getJson (filePath) {
+  const data = fs.readFileSync(filePath, "utf8");
   const json = JSON.parse(data);
   return json;
 }
