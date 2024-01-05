@@ -98,6 +98,7 @@ function sortData (sortOption) {
 
 function displayTagButtonContainer () {
   const tags = [
+    "calendar",
     "news",
     "public transport",
     "smarthome",

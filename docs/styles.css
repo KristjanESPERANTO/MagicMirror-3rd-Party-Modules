@@ -203,6 +203,10 @@ main {
   padding-right: 0.3em;
 }
 
+[data-tag="calendar"]::before {
+  content: "📅";
+}
+
 [data-tag="soccer"]::before {
   content: "⚽";
 }
