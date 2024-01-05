@@ -1,0 +1,14 @@
+[
+  {
+    "url": "https://github.com/KristjanESPERANTO/MMM-Canteen"
+  },
+  {
+    "url": "https://github.com/bugsounet/MMM-GoogleAssistant/",
+    "branch": "dev"
+  },
+  {
+    "url": "https://github.com/KristjanESPERANTO/MMM-ISS-Live",
+    "branch": "main",
+    "description": "Displays live video from the International Space Station."
+  }
+]

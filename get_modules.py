@@ -35,6 +35,11 @@ def get_modules():
                 subprocess.run(
                     f"cd {path} && git pull && cd ..", shell=True, check=False
                 )
+            elif "branch" in module:
+                print("- I - run `git clone --branch {module['branch']}` ")
+                subprocess.run(
+                    f"git clone --single-branch --branch {module['branch']} {module_url} {path} --depth 1", shell=True, check=False
+                )
             else:
                 print("- I - path doesn't exists: run `git clone`")
                 subprocess.run(

@@ -93,10 +93,21 @@ _Note_: Images will only be included if a free license is specified in the `pack
 
 This script goes through all cloned modules and performs various checks. The result is written to the files [`result.md`](result.md) and [`modules.json`](./docs/modules.json).
 
+### Special script: create_own_module_list.js
+
+This script is for developers who want to test their own modules themselves. It can also be used to test other branches.
+
+This script replaces the first script `create_module_list.js` for this case.
+
+How can you use it?
+
+1. Write the module or modules you want to test in the file ownModuleList.json. The only obligatory field is "url", but you can also enter the "branch".
+2. Execute `npm run ownList`.
+3. You can see the result in the result.md.
+
 ## Ideas / To do
 
 - Move ideas/todos to GitHub Issues and ass proper tags.
-- Add posibility to test only a single repo. For module-developers.
 - Add exceptions for 3rd-Party stuff like jquery or fontwaesome? <https://github.com/bugsounet/MMM-GoogleAssistant/pull/386>
 - Show and sort by GitHub Star #1.
 - Move `result.md` to docs.

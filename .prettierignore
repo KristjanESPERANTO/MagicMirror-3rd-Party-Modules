@@ -3,3 +3,4 @@ docs/modules*.json
 docs/stats.json
 modules/
 result.md
+modules_temp/
