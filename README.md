@@ -95,6 +95,9 @@ This script goes through all cloned modules and performs various checks. The res
 
 ## Ideas / To do
 
+- Move ideas/todos to GitHub Issues and ass proper tags.
+- Add posibility to test only a single repo. For module-developers.
+- Add exceptions for 3rd-Party stuff like jquery or fontwaesome? <https://github.com/bugsounet/MMM-GoogleAssistant/pull/386>
 - Show and sort by GitHub Star #1.
 - Move `result.md` to docs.
 - Show results in popup on the page.

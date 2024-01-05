@@ -1,16 +1,16 @@
 # Result of the module analysis
 
-Last update: 2024-01-04 17:28:08 UTC
+Last update: 2024-01-05 16:01:09 UTC
 
 ## Statistics
 
 |                      | number   |
 |:---------------------|:--------:|
-| modules analyzed     |   1081   |
+| modules analyzed     |   1112   |
 | maintainer           |    623   |
-| modules with issues  |   1077   |
-| issues               |   6330   |
-| modules at github    |   1072   |
+| modules with issues  |   1108   |
+| issues               |   6387   |
+| modules at github    |   1103   |
 | modules at gitlab    |      8   |
 | modules at bitbucket |      1   |
 
@@ -284,12 +284,11 @@ Last update: 2024-01-04 17:28:08 UTC
 
 1. `package.json` issue: No repository field.
 2. There are no keywords in 'package.json'. We would use them as tags on the module list page.
-3. No image found.
-4. Typo: Found `Magic Mirror` in file `MMM-AquareaSmartCloud.js`: Replace it with `MagicMirror²`.
-5. Outdated: Found `MichMich/MagicMirror` in file `README.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
-6. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
-7. Deprecated: Found `require('request')` in file `node_helper.js`: Replace it with built-in fetch.
-8. The branch name is 'master'. Consider renaming it to 'main'.
+3. Typo: Found `Magic Mirror` in file `MMM-AquareaSmartCloud.js`: Replace it with `MagicMirror²`.
+4. Outdated: Found `MichMich/MagicMirror` in file `README.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
+5. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
+6. Deprecated: Found `require('request')` in file `node_helper.js`: Replace it with built-in fetch.
+7. The branch name is 'master'. Consider renaming it to 'main'.
 
 ### [MMM-ArduPort by Dentrax](https://github.com/Dentrax/MMM-ArduPort)
 
@@ -2040,6 +2039,165 @@ Last update: 2024-01-04 17:28:08 UTC
 4. Deprecated: Found `require('request')` in file `node_helper.js`: Replace it with built-in fetch.
 5. Recommendation: Found `axios` in file `sources.json`: Replace it with built-in fetch.
 6. The branch name is 'master'. Consider renaming it to 'main'.
+
+### [EXT-Alert by bugsounet](https://github.com/bugsounet/EXT-Alert)
+
+1. The branch name is 'master'. Consider renaming it to 'main'.
+
+### [EXT-Background by bugsounet](https://github.com/bugsounet/EXT-Background)
+
+1. There are no keywords in 'package.json'. We would use them as tags on the module list page.
+2. The branch name is 'master'. Consider renaming it to 'main'.
+
+### [EXT-Bring by bugsounet](https://github.com/bugsounet/EXT-Bring)
+
+1. There are no keywords in 'package.json'. We would use them as tags on the module list page.
+2. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
+
+### [EXT-Browser by bugsounet](https://github.com/bugsounet/EXT-Browser)
+
+1. No image found.
+2. The branch name is 'master'. Consider renaming it to 'main'.
+
+### [EXT-Detector by bugsounet](https://github.com/bugsounet/EXT-Detector)
+
+1. Information: There are updates for 1 dependencie(s):
+   -  @mapbox/node-pre-gyp  ^1.0.10  →  ^1.0.11
+
+
+### [EXT-FreeboxTV by bugsounet](https://github.com/bugsounet/EXT-FreeboxTV)
+
+1. There are no keywords in 'package.json'. We would use them as tags on the module list page.
+2. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
+
+### [EXT-GooglePhotos by bugsounet](https://github.com/bugsounet/EXT-GooglePhotos)
+
+1. Recommendation: Found `require('https')` in file `GooglePhotosLib.js`: Replace 'https' by 'node:https'.
+2. The branch name is 'master'. Consider renaming it to 'main'.
+
+### [EXT-Governor by bugsounet](https://github.com/bugsounet/EXT-Governor)
+
+1. No image found.
+2. The branch name is 'master'. Consider renaming it to 'main'.
+
+### [EXT-Internet by bugsounet](https://github.com/bugsounet/EXT-Internet)
+
+1. Outdated: Found `MichMich/MagicMirror` in file `README.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
+2. The branch name is 'master'. Consider renaming it to 'main'.
+
+### [EXT-Keyboard by bugsounet](https://github.com/bugsounet/EXT-Keyboard)
+
+1. There are no keywords in 'package.json'. We would use them as tags on the module list page.
+2. No image found.
+
+### [EXT-Librespot by bugsounet](https://github.com/bugsounet/EXT-Librespot)
+
+1. The branch name is 'master'. Consider renaming it to 'main'.
+
+### [EXT-Motion by bugsounet](https://github.com/bugsounet/EXT-Motion)
+
+1. No image found.
+2. Information: There are updates for 1 dependencie(s):
+   -  glob  ^10.3.7  →  ^10.3.10
+
+
+### [EXT-MusicPlayer by bugsounet](https://github.com/bugsounet/EXT-MusicPlayer)
+
+1. The branch name is 'master'. Consider renaming it to 'main'.
+
+### [EXT-Pages by bugsounet](https://github.com/bugsounet/EXT-Pages)
+
+1. The branch name is 'master'. Consider renaming it to 'main'.
+
+### [EXT-Photos by bugsounet](https://github.com/bugsounet/EXT-Photos)
+
+1. The branch name is 'master'. Consider renaming it to 'main'.
+2. Information: There are updates for 1 dependencie(s):
+   -  glob  ^10.3.7  →  ^10.3.10
+
+
+### [EXT-Pir by bugsounet](https://github.com/bugsounet/EXT-Pir)
+
+1. No image found.
+2. The branch name is 'master'. Consider renaming it to 'main'.
+
+### [EXT-RadioPlayer by bugsounet](https://github.com/bugsounet/EXT-RadioPlayer)
+
+1. The branch name is 'master'. Consider renaming it to 'main'.
+
+### [EXT-Screen by bugsounet](https://github.com/bugsounet/EXT-Screen)
+
+1. Recommendation: Found `new Date()` in file `long-press-event.js`: Replace it by `new Date(Date.now())`: [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
+2. The branch name is 'master'. Consider renaming it to 'main'.
+
+### [EXT-Selfies by bugsounet](https://github.com/bugsounet/EXT-Selfies)
+
+1. There are no keywords in 'package.json'. We would use them as tags on the module list page.
+2. Recommendation: Found `XMLHttpRequest` in file `webcam.js`: Replace it with built-in fetch.
+3. The branch name is 'master'. Consider renaming it to 'main'.
+
+### [EXT-SelfiesFlash by bugsounet](https://github.com/bugsounet/EXT-SelfiesFlash)
+
+1. There are no keywords in 'package.json'. We would use them as tags on the module list page.
+2. No image found.
+
+### [EXT-SelfiesSender by bugsounet](https://github.com/bugsounet/EXT-SelfiesSender)
+
+1. There are no keywords in 'package.json'. We would use them as tags on the module list page.
+2. No image found.
+
+### [EXT-SelfiesViewer by bugsounet](https://github.com/bugsounet/EXT-SelfiesViewer)
+
+1. There are no keywords in 'package.json'. We would use them as tags on the module list page.
+
+### [EXT-Spotify by bugsounet](https://github.com/bugsounet/EXT-Spotify)
+
+1. The branch name is 'master'. Consider renaming it to 'main'.
+2. Information: There are updates for 1 dependencie(s):
+   -  express  ^4.17.1  →  ^4.18.2
+
+
+### [EXT-SpotifyCanvasLyrics by bugsounet](https://github.com/bugsounet/EXT-SpotifyCanvasLyrics)
+
+1. No image found.
+
+### [EXT-StreamDeck by bugsounet](https://github.com/bugsounet/EXT-StreamDeck)
+
+1. There are no keywords in 'package.json'. We would use them as tags on the module list page.
+
+### [EXT-TelegramBot by bugsounet](https://github.com/bugsounet/EXT-TelegramBot)
+
+1. Typo: Found `Magic Mirror` in file `EXT-TelegramBot.js`: Replace it with `MagicMirror²`.
+2. Recommendation: Found `new Date()` in file `ProcessTBMessager.js`: Replace it by `new Date(Date.now())`: [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
+3. The branch name is 'master'. Consider renaming it to 'main'.
+
+### [EXT-Updates by bugsounet](https://github.com/bugsounet/EXT-Updates)
+
+1. There are no keywords in 'package.json'. We would use them as tags on the module list page.
+2. Typo: Found `Magic Mirror` in file `EXT-Updates.js`: Replace it with `MagicMirror²`.
+3. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
+4. The branch name is 'master'. Consider renaming it to 'main'.
+
+### [EXT-Volume by bugsounet](https://github.com/bugsounet/EXT-Volume)
+
+1. The branch name is 'master'. Consider renaming it to 'main'.
+
+### [EXT-Welcome by bugsounet](https://github.com/bugsounet/EXT-Welcome)
+
+1. No image found.
+2. The branch name is 'master'. Consider renaming it to 'main'.
+
+### [EXT-YouTube by bugsounet](https://github.com/bugsounet/EXT-YouTube)
+
+1. Recommendation: Found `axios` in file `youtube-search.js`: Replace it with built-in fetch.
+2. Recommendation: Found `axios` in file `node_helper.js`: Replace it with built-in fetch.
+3. Recommendation: Found `axios` in file `package.json`: Replace it with built-in fetch.
+4. The branch name is 'master'. Consider renaming it to 'main'.
+
+### [EXT-YouTubeCast by bugsounet](https://github.com/bugsounet/EXT-YouTubeCast)
+
+1. Recommendation: Found `require('http')` in file `peer-dial.js`: Replace 'http' by 'node:http'.
+2. The branch name is 'master'. Consider renaming it to 'main'.
 
 ### [MMM-EyeCandy by mykle1](https://github.com/mykle1/MMM-EyeCandy)
 

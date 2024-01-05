@@ -433,10 +433,10 @@
     "description": "This module integrates with Panasonic Aquarea Smart Cloud to display data from your heat pump.",
     "issues": [
       "`package.json` issue: No repository field.",
-      "There are no keywords in 'package.json'. We would use them as tags on the module list page.",
-      "No image found."
+      "There are no keywords in 'package.json'. We would use them as tags on the module list page."
     ],
-    "license": "ISC"
+    "license": "ISC",
+    "image": "example.jpg"
   },
   {
     "name": "MMM-ArduPort",
@@ -3200,6 +3200,463 @@
     ]
   },
   {
+    "name": "EXT-Alert",
+    "url": "https://github.com/bugsounet/EXT-Alert",
+    "id": "bugsounet/EXT-Alert",
+    "maintainer": "bugsounet",
+    "maintainerURL": "https://wiki.bugsounet.fr",
+    "description": "Display any warning, information or error on your screen about Assistant.",
+    "issues": [],
+    "tags": [
+      "notification",
+      "warning",
+      "alert"
+    ],
+    "license": "MIT",
+    "image": "errorShot.jpg"
+  },
+  {
+    "name": "EXT-Background",
+    "url": "https://github.com/bugsounet/EXT-Background",
+    "id": "bugsounet/EXT-Background",
+    "maintainer": "bugsounet",
+    "maintainerURL": "https://wiki.bugsounet.fr",
+    "description": "Change the default Google Assistant background to your own or with animated gifs for each status of the assistant.",
+    "issues": [
+      "There are no keywords in 'package.json'. We would use them as tags on the module list page."
+    ],
+    "license": "MIT",
+    "image": "cortana-confirmation.jpg"
+  },
+  {
+    "name": "EXT-Bring",
+    "url": "https://github.com/bugsounet/EXT-Bring",
+    "id": "bugsounet/EXT-Bring",
+    "maintainer": "bugsounet",
+    "maintainerURL": "https://wiki.bugsounet.fr",
+    "description": "Show your current shopping list of Bring!",
+    "issues": [
+      "There are no keywords in 'package.json'. We would use them as tags on the module list page."
+    ],
+    "license": "MIT",
+    "image": "Screenshot.JPG"
+  },
+  {
+    "name": "EXT-Browser",
+    "url": "https://github.com/bugsounet/EXT-Browser",
+    "id": "bugsounet/EXT-Browser",
+    "maintainer": "bugsounet",
+    "maintainerURL": "https://wiki.bugsounet.fr",
+    "description": "Display any internet web page like a real browser in fullscreen",
+    "issues": [
+      "No image found."
+    ],
+    "tags": [
+      "browser"
+    ],
+    "license": "MIT"
+  },
+  {
+    "name": "EXT-Detector",
+    "url": "https://github.com/bugsounet/EXT-Detector",
+    "id": "bugsounet/EXT-Detector",
+    "maintainer": "bugsounet",
+    "maintainerURL": "https://wiki.bugsounet.fr",
+    "description": "Multi-keyword listener for MMM-GoogleAssistant",
+    "issues": [],
+    "tags": [
+      "hotword",
+      "porcupine",
+      "snowboy",
+      "voice",
+      "jarvis",
+      "ok google"
+    ],
+    "license": "MIT",
+    "image": "resources-google.jpg"
+  },
+  {
+    "name": "EXT-FreeboxTV",
+    "url": "https://github.com/bugsounet/EXT-FreeboxTV",
+    "id": "bugsounet/EXT-FreeboxTV",
+    "maintainer": "bugsounet",
+    "maintainerURL": "https://wiki.bugsounet.fr",
+    "description": "Display Channel from French Internet Provider: Free",
+    "issues": [
+      "There are no keywords in 'package.json'. We would use them as tags on the module list page."
+    ],
+    "license": "MIT",
+    "image": "resources-FreeboxTV.jpg"
+  },
+  {
+    "name": "EXT-GooglePhotos",
+    "url": "https://github.com/bugsounet/EXT-GooglePhotos",
+    "id": "bugsounet/EXT-GooglePhotos",
+    "maintainer": "bugsounet",
+    "maintainerURL": "https://wiki.bugsounet.fr",
+    "description": "Display your album directory with Google photos API in background or in MagicMirror² position",
+    "issues": [],
+    "tags": [
+      "google",
+      "photo"
+    ],
+    "license": "MIT",
+    "image": "resources-GooglePhoto-Logo.jpg"
+  },
+  {
+    "name": "EXT-Governor",
+    "url": "https://github.com/bugsounet/EXT-Governor",
+    "id": "bugsounet/EXT-Governor",
+    "maintainer": "bugsounet",
+    "maintainerURL": "https://wiki.bugsounet.fr",
+    "description": "CPU governor enables the operating system to scale the CPU frequency up or down in order to save power or improve performance.",
+    "issues": [
+      "No image found."
+    ],
+    "tags": [
+      "governor",
+      "ext",
+      "googleassistant"
+    ],
+    "license": "MIT"
+  },
+  {
+    "name": "EXT-Internet",
+    "url": "https://github.com/bugsounet/EXT-Internet",
+    "id": "bugsounet/EXT-Internet",
+    "maintainer": "bugsounet",
+    "maintainerURL": "https://wiki.bugsounet.fr",
+    "description": "Check your internet connexion, display ping.",
+    "issues": [],
+    "tags": [
+      "internet",
+      "warning"
+    ],
+    "license": "MIT",
+    "image": "resources-Internet-Logo.jpg"
+  },
+  {
+    "name": "EXT-Keyboard",
+    "url": "https://github.com/bugsounet/EXT-Keyboard",
+    "id": "bugsounet/EXT-Keyboard",
+    "maintainer": "bugsounet",
+    "maintainerURL": "https://wiki.bugsounet.fr",
+    "description": "Control your mirror with a keyboard",
+    "issues": [
+      "There are no keywords in 'package.json'. We would use them as tags on the module list page.",
+      "No image found."
+    ],
+    "license": "MIT"
+  },
+  {
+    "name": "EXT-Librespot",
+    "url": "https://github.com/bugsounet/EXT-Librespot",
+    "id": "bugsounet/EXT-Librespot",
+    "maintainer": "bugsounet",
+    "maintainerURL": "https://wiki.bugsounet.fr",
+    "description": "Allow to play Spotify music on your mirror with Librespot.",
+    "issues": [],
+    "tags": [
+      "spotify",
+      "librespot"
+    ],
+    "license": "MIT",
+    "image": "resources-Spotify-Logo.jpg"
+  },
+  {
+    "name": "EXT-Motion",
+    "url": "https://github.com/bugsounet/EXT-Motion",
+    "id": "bugsounet/EXT-Motion",
+    "maintainer": "bugsounet",
+    "maintainerURL": "https://wiki.bugsounet.fr",
+    "description": "Control your screen with a webcam (as motion detector)",
+    "issues": [
+      "No image found."
+    ],
+    "tags": [
+      "plugin",
+      "screen",
+      "ext",
+      "googleassistant"
+    ],
+    "license": "MIT"
+  },
+  {
+    "name": "EXT-MusicPlayer",
+    "url": "https://github.com/bugsounet/EXT-MusicPlayer",
+    "id": "bugsounet/EXT-MusicPlayer",
+    "maintainer": "bugsounet",
+    "maintainerURL": "https://wiki.bugsounet.fr",
+    "description": "Play any music found on a USB Key or in defined local directory.",
+    "issues": [],
+    "tags": [
+      "volume",
+      "warning"
+    ],
+    "license": "MIT",
+    "image": "resources-Screenshot.jpg"
+  },
+  {
+    "name": "EXT-Pages",
+    "url": "https://github.com/bugsounet/EXT-Pages",
+    "id": "bugsounet/EXT-Pages",
+    "maintainer": "bugsounet",
+    "maintainerURL": "https://wiki.bugsounet.fr",
+    "description": "This plugin allows you to have animated pages",
+    "issues": [],
+    "tags": [
+      "pages"
+    ],
+    "license": "MIT",
+    "image": "example.jpg"
+  },
+  {
+    "name": "EXT-Photos",
+    "url": "https://github.com/bugsounet/EXT-Photos",
+    "id": "bugsounet/EXT-Photos",
+    "maintainer": "bugsounet",
+    "maintainerURL": "https://wiki.bugsounet.fr",
+    "description": "Displaying any photos discover by assistant in fullscreen",
+    "issues": [],
+    "tags": [
+      "photos"
+    ],
+    "license": "MIT",
+    "image": "resources-Photos-Logo.jpg"
+  },
+  {
+    "name": "EXT-Pir",
+    "url": "https://github.com/bugsounet/EXT-Pir",
+    "id": "bugsounet/EXT-Pir",
+    "maintainer": "bugsounet",
+    "maintainerURL": "https://wiki.bugsounet.fr",
+    "description": "Control your screen with a PIR Sensor.",
+    "issues": [
+      "No image found."
+    ],
+    "tags": [
+      "sensor",
+      "pir",
+      "ext",
+      "googleassistant"
+    ],
+    "license": "MIT"
+  },
+  {
+    "name": "EXT-RadioPlayer",
+    "url": "https://github.com/bugsounet/EXT-RadioPlayer",
+    "id": "bugsounet/EXT-RadioPlayer",
+    "maintainer": "bugsounet",
+    "maintainerURL": "https://wiki.bugsounet.fr",
+    "description": "Play radio station on MagicMirror².",
+    "issues": [],
+    "tags": [
+      "radio"
+    ],
+    "license": "MIT",
+    "image": "Logos-ES-Cadena_DIAL.jpg"
+  },
+  {
+    "name": "EXT-Screen",
+    "url": "https://github.com/bugsounet/EXT-Screen",
+    "id": "bugsounet/EXT-Screen",
+    "maintainer": "bugsounet",
+    "maintainerURL": "https://wiki.bugsounet.fr",
+    "description": "After a configurated time without any user interaction the display will turn off and hide all modules for economy mode.",
+    "issues": [],
+    "tags": [
+      "screen",
+      "ext",
+      "googleassistant"
+    ],
+    "license": "MIT",
+    "image": "screenshot-screenshot.jpg"
+  },
+  {
+    "name": "EXT-Selfies",
+    "url": "https://github.com/bugsounet/EXT-Selfies",
+    "id": "bugsounet/EXT-Selfies",
+    "maintainer": "bugsounet",
+    "maintainerURL": "https://wiki.bugsounet.fr",
+    "description": "Take selfies from webcam.",
+    "issues": [
+      "There are no keywords in 'package.json'. We would use them as tags on the module list page."
+    ],
+    "license": "MIT",
+    "image": "resources-screenshot.jpg"
+  },
+  {
+    "name": "EXT-SelfiesFlash",
+    "url": "https://github.com/bugsounet/EXT-SelfiesFlash",
+    "id": "bugsounet/EXT-SelfiesFlash",
+    "maintainer": "bugsounet",
+    "maintainerURL": "https://wiki.bugsounet.fr",
+    "description": "Need a flash to take selfies?",
+    "issues": [
+      "There are no keywords in 'package.json'. We would use them as tags on the module list page.",
+      "No image found."
+    ],
+    "license": "MIT"
+  },
+  {
+    "name": "EXT-SelfiesSender",
+    "url": "https://github.com/bugsounet/EXT-SelfiesSender",
+    "id": "bugsounet/EXT-SelfiesSender",
+    "maintainer": "bugsounet",
+    "maintainerURL": "https://wiki.bugsounet.fr",
+    "description": "Send your selfies to Telegram, google photos or by mail.",
+    "issues": [
+      "There are no keywords in 'package.json'. We would use them as tags on the module list page.",
+      "No image found."
+    ],
+    "license": "MIT"
+  },
+  {
+    "name": "EXT-SelfiesViewer",
+    "url": "https://github.com/bugsounet/EXT-SelfiesViewer",
+    "id": "bugsounet/EXT-SelfiesViewer",
+    "maintainer": "bugsounet",
+    "maintainerURL": "https://wiki.bugsounet.fr",
+    "description": "Slideshow of your best selfies.",
+    "issues": [
+      "There are no keywords in 'package.json'. We would use them as tags on the module list page."
+    ],
+    "license": "MIT",
+    "image": "resources-coming_soon.jpg"
+  },
+  {
+    "name": "EXT-Spotify",
+    "url": "https://github.com/bugsounet/EXT-Spotify",
+    "id": "bugsounet/EXT-Spotify",
+    "maintainer": "bugsounet",
+    "maintainerURL": "https://wiki.bugsounet.fr",
+    "description": "This plugin show current spotify playback of any devices.",
+    "issues": [],
+    "tags": [
+      "spotify"
+    ],
+    "license": "MIT",
+    "image": "components-Spotify-Logo.jpg"
+  },
+  {
+    "name": "EXT-SpotifyCanvasLyrics",
+    "url": "https://github.com/bugsounet/EXT-SpotifyCanvasLyrics",
+    "id": "bugsounet/EXT-SpotifyCanvasLyrics",
+    "maintainer": "bugsounet",
+    "maintainerURL": "https://wiki.bugsounet.fr",
+    "description": "Create a server for displaying any Lyrics and Canvas from Spotify",
+    "issues": [
+      "No image found."
+    ],
+    "tags": [
+      "spotify",
+      "canvas",
+      "lyrics"
+    ],
+    "license": "MIT"
+  },
+  {
+    "name": "EXT-StreamDeck",
+    "url": "https://github.com/bugsounet/EXT-StreamDeck",
+    "id": "bugsounet/EXT-StreamDeck",
+    "maintainer": "bugsounet",
+    "maintainerURL": "https://wiki.bugsounet.fr",
+    "description": "Control your mirror with a StreamDeck by elgato©",
+    "issues": [
+      "There are no keywords in 'package.json'. We would use them as tags on the module list page."
+    ],
+    "license": "MIT",
+    "image": "icons-Sample-access_time.jpg"
+  },
+  {
+    "name": "EXT-TelegramBot",
+    "url": "https://github.com/bugsounet/EXT-TelegramBot",
+    "id": "bugsounet/EXT-TelegramBot",
+    "maintainer": "bugsounet",
+    "maintainerURL": "https://wiki.bugsounet.fr",
+    "description": "You can remote-control plugins within Telegram.",
+    "issues": [],
+    "tags": [
+      "telegram"
+    ],
+    "license": "MIT",
+    "image": "screenshot-sc_fullsize.jpg"
+  },
+  {
+    "name": "EXT-Updates",
+    "url": "https://github.com/bugsounet/EXT-Updates",
+    "id": "bugsounet/EXT-Updates",
+    "maintainer": "bugsounet",
+    "maintainerURL": "https://wiki.bugsounet.fr",
+    "description": "This plugin allow to auto-update if an update is detected.",
+    "issues": [
+      "There are no keywords in 'package.json'. We would use them as tags on the module list page."
+    ],
+    "license": "MIT",
+    "image": "resources-update.jpg"
+  },
+  {
+    "name": "EXT-Volume",
+    "url": "https://github.com/bugsounet/EXT-Volume",
+    "id": "bugsounet/EXT-Volume",
+    "maintainer": "bugsounet",
+    "maintainerURL": "https://wiki.bugsounet.fr",
+    "description": "Control the sound volume level of your mirror.",
+    "issues": [],
+    "tags": [
+      "volume",
+      "warning",
+      "googleassistant"
+    ],
+    "license": "MIT",
+    "image": "resources-screenshot.jpg"
+  },
+  {
+    "name": "EXT-Welcome",
+    "url": "https://github.com/bugsounet/EXT-Welcome",
+    "id": "bugsounet/EXT-Welcome",
+    "maintainer": "bugsounet",
+    "maintainerURL": "https://wiki.bugsounet.fr",
+    "description": "Allow to send a welcome on start of MagicMirror².",
+    "issues": [
+      "No image found."
+    ],
+    "tags": [
+      "notification",
+      "warning"
+    ],
+    "license": "MIT"
+  },
+  {
+    "name": "EXT-YouTube",
+    "url": "https://github.com/bugsounet/EXT-YouTube",
+    "id": "bugsounet/EXT-YouTube",
+    "maintainer": "bugsounet",
+    "maintainerURL": "https://wiki.bugsounet.fr",
+    "description": "This plugins allows to play YouTube video.",
+    "issues": [],
+    "tags": [
+      "youtube"
+    ],
+    "license": "MIT",
+    "image": "resources-Screenshot1.jpg"
+  },
+  {
+    "name": "EXT-YouTubeCast",
+    "url": "https://github.com/bugsounet/EXT-YouTubeCast",
+    "id": "bugsounet/EXT-YouTubeCast",
+    "maintainer": "bugsounet",
+    "maintainerURL": "https://wiki.bugsounet.fr",
+    "description": "Allow to cast a YouTube video on MagicMirror².",
+    "issues": [],
+    "tags": [
+      "cast",
+      "youtube"
+    ],
+    "license": "MIT",
+    "image": "resources-Screenshot1.jpg"
+  },
+  {
     "name": "MMM-EyeCandy",
     "url": "https://github.com/mykle1/MMM-EyeCandy",
     "id": "mykle1/MMM-EyeCandy",
@@ -4215,7 +4672,7 @@
     "id": "bugsounet/MMM-GoogleAssistant",
     "maintainer": "bugsounet",
     "maintainerURL": "https://wiki.bugsounet.fr",
-    "description": "MMM-GoogleAssistant is an real embedded Google assistant on MagicMirror². [Maintained].",
+    "description": "MMM-GoogleAssistant is an real embedded Google assistant on MagicMirror² with many <a target=\"_blank\" href=\"#extended-plugins-for-mmm-googleassistant-by-bugsounet\">plugins</a> . [Maintained].",
     "issues": [],
     "tags": [
       "google assistant",

@@ -187,7 +187,10 @@ def check_modules():
         progress = f"{stats['module-counter']:4}/{len(modules)}\r"
         print(progress, end="")
 
-        if not module["name"].startswith("MMM-"):
+        if module["name"].startswith("EXT-"):
+            module["description"] += " This module have been defined to work only with MMM-GoogleAssistant."
+
+        elif not module["name"].startswith("MMM-"):
             module["issues"].append(
                 "Recommendation: Module name doesn't follow the recommended pattern (it doesn't start with `MMM-`). Consider renaming your module."
             )

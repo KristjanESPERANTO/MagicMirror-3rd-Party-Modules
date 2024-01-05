@@ -1,16 +1,17 @@
 {
-  "module-counter": 1081,
-  "modules-with-image-counter": 451,
-  "modules-with-issues-counter": 1077,
-  "issue-counter": 6330,
-  "last-update": "2024-01-04 17:28:08",
+  "module-counter": 1112,
+  "modules-with-image-counter": 474,
+  "modules-with-issues-counter": 1108,
+  "issue-counter": 6387,
+  "last-update": "2024-01-05 16:01:09",
   "repository-hoster": {
-    "github": 1072,
+    "github": 1103,
     "gitlab": 8,
     "bitbucket": 1
   },
   "maintainer": {
     "mykle1": 42,
+    "bugsounet": 33,
     "MMRIZE": 18,
     "fewieden": 15,
     "Tom-Hirschberger": 13,
@@ -149,7 +150,6 @@
     "raywo": 2,
     "victor-paumier": 2,
     "mrdis": 2,
-    "bugsounet": 2,
     "pjestico": 2,
     "Jacopo1891": 2,
     "mochman": 2,
