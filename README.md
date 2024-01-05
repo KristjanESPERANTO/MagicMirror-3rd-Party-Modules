@@ -101,9 +101,9 @@ This script replaces the first script `create_module_list.js` for this case.
 
 How can you use it?
 
-1. Write the module or modules you want to test in the file ownModuleList.json. The only obligatory field is "url", but you can also enter the "branch".
+1. Write the module or modules you want to test in the file [`ownModuleList.json`](ownModuleList.json). The only obligatory field is "url", but you can also enter a "branch".
 2. Execute `npm run ownList`.
-3. You can see the result in the result.md.
+3. You can see the result in [`result.md`](result.md).
 
 ## Ideas / To do
 
