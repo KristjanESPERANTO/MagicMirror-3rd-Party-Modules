@@ -1,6 +1,6 @@
 # Result of the module analysis
 
-Last update: 2024-01-05 16:01:09 UTC
+Last update: 2024-01-05 20:19:31 UTC
 
 ## Statistics
 
@@ -9,7 +9,7 @@ Last update: 2024-01-05 16:01:09 UTC
 | modules analyzed     |   1112   |
 | maintainer           |    623   |
 | modules with issues  |   1108   |
-| issues               |   6387   |
+| issues               |   6380   |
 | modules at github    |   1103   |
 | modules at gitlab    |      8   |
 | modules at bitbucket |      1   |
@@ -112,9 +112,7 @@ Last update: 2024-01-05 16:01:09 UTC
 
 ### [MMM-AirQuality by CFenner](https://github.com/CFenner/MMM-AirQuality)
 
-1. There is no `package.json`. We need this file to gather information about the module for the module list page.
-2. Typo: Found `Magic Mirror` in file `MMM-AirQuality.js`: Replace it with `MagicMirror²`.
-3. Outdated: Found `MichMich/MagicMirror` in file `README.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
+1. Recommendation: Replace eslintrc by new flat config.
 
 ### [MMM-AirQuality by cslev](https://github.com/cslev/MMM-AirQuality)
 
@@ -6940,13 +6938,11 @@ Last update: 2024-01-05 16:01:09 UTC
 1. Typo: Found `Magic Mirror` in file `MMM-PushBulletNotifications.css`: Replace it with `MagicMirror²`.
 2. Typo: Found `Magic Mirror` in file `MMM-PushBulletNotifications.js`: Replace it with `MagicMirror²`.
 3. Recommendation: Found `new Date()` in file `MMM-PushBulletNotifications.js`: Replace it by `new Date(Date.now())`: [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
-4. Typo: Found `Magic Mirror` in file `README.md`: Replace it with `MagicMirror²`.
-5. Outdated: Found `MichMich/MagicMirror` in file `README.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
-6. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
-7. Recommendation: Found `require('https')` in file `node_helper.js`: Replace 'https' by 'node:https'.
-8. Deprecated: Found `omxplayer` in file `node_helper.js`: Try to replace it with `vlc`.
-9. Recommendation: Found `new Date()` in file `node_helper.js`: Replace it by `new Date(Date.now())`: [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
-10. The branch name is 'master'. Consider renaming it to 'main'.
+4. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
+5. Recommendation: Found `require('https')` in file `node_helper.js`: Replace 'https' by 'node:https'.
+6. Deprecated: Found `omxplayer` in file `node_helper.js`: Try to replace it with `vlc`.
+7. Recommendation: Found `new Date()` in file `node_helper.js`: Replace it by `new Date(Date.now())`: [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
+8. The branch name is 'master'. Consider renaming it to 'main'.
 
 ### [MMM-qnapDownloadStation by flick116](https://github.com/flick116/MMM-qnapDownloadStation)
 
@@ -8041,14 +8037,11 @@ Last update: 2024-01-05 16:01:09 UTC
 ### [MMM-Sonos by CFenner](https://github.com/CFenner/MMM-Sonos)
 
 1. There are no specific keywords in 'package.json'. We would use them as tags on the module list page. Add a few meaningful terms to the keywords in the package.json. Not just “magicmirror” or “module”.
-2. Recommendation: Found `uses: actions/checkout@v2` in file `validation.yml`: Replace it with v4.
-3. Deprecated: Found `node-version: [14` in file `validation.yml`: Update to current version.
-4. Typo: Found `Magic Mirror` in file `MMM-Sonos.js`: Replace it with `MagicMirror²`.
-5. Outdated: Found `MichMich/MagicMirror` in file `README.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
-6. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
-7. Deprecated: Found `require('request')` in file `node_helper.js`: Replace it with built-in fetch.
-8. Recommendation: Replace eslintrc by new flat config.
-9. The branch name is 'master'. Consider renaming it to 'main'.
+2. Typo: Found `Magic Mirror` in file `MMM-Sonos.js`: Replace it with `MagicMirror²`.
+3. Outdated: Found `MichMich/MagicMirror` in file `README.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
+4. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
+5. Deprecated: Found `require('request')` in file `node_helper.js`: Replace it with built-in fetch.
+6. Recommendation: Replace eslintrc by new flat config.
 
 ### [MMM-Sonos by tbouron](https://github.com/tbouron/MMM-Sonos)
 

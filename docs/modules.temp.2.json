@@ -165,9 +165,13 @@
     "maintainer": "CFenner",
     "maintainerURL": "",
     "description": "Display the air quality index for a certain location.",
-    "issues": [
-      "There is no `package.json`. We need this file to gather information about the module for the module list page."
-    ]
+    "issues": [],
+    "tags": [
+      "aqi",
+      "air-quality"
+    ],
+    "license": "MIT",
+    "image": ".github-preview-good.jpg"
   },
   {
     "name": "MMM-AirQuality",
@@ -6483,13 +6487,8 @@
     "maintainerURL": "",
     "description": "Turns on or off a device connected to GPIO (in my case, an LCD screen) based on the input of a PIR device. Integrates nicely with MMM-Assistant (for voice control) and MMM-TelegramBot (for Telegram control).",
     "issues": [
-      "No image found."
-    ],
-    "tags": [
-      "lcd",
-      "pir"
-    ],
-    "license": "MIT"
+      "There is no `package.json`. We need this file to gather information about the module for the module list page."
+    ]
   },
   {
     "name": "MMM-LeagueOfLegends",

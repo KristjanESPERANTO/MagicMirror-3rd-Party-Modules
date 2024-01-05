@@ -161,8 +161,14 @@
     "maintainer": "CFenner",
     "maintainerURL": "",
     "description": "Display the air quality index for a certain location.",
-    "issues": 3,
-    "last_commit": "2022-01-20"
+    "issues": 1,
+    "tags": [
+      "aqi",
+      "air-quality"
+    ],
+    "license": "MIT",
+    "image": ".github-preview-good.jpg",
+    "last_commit": "2024-01-04"
   },
   {
     "name": "MMM-AirQuality",
@@ -9904,7 +9910,7 @@
     "issues": 15,
     "license": "MIT",
     "image": "images-CarCharging.jpg",
-    "last_commit": "2023-12-20"
+    "last_commit": "2024-01-05"
   },
   {
     "name": "MMM-PrayerTime",
@@ -10140,7 +10146,7 @@
     "maintainer": "basknol",
     "maintainerURL": "",
     "description": "Display notifications from phone and PC and control your mirror using Pushbullet (API).",
-    "issues": 10,
+    "issues": 8,
     "tags": [
       "pushbullet",
       "phone notification",
@@ -11687,10 +11693,10 @@
     "maintainer": "CFenner",
     "maintainerURL": "",
     "description": "Display the currently playing track of your Sonos system.",
-    "issues": 9,
+    "issues": 6,
     "license": "MIT",
     "image": ".github-preview.jpg",
-    "last_commit": "2024-01-04"
+    "last_commit": "2024-01-05"
   },
   {
     "name": "MMM-Sonos",
