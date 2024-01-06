@@ -219,7 +219,7 @@
     "maintainer": "sakirtemel",
     "maintainerURL": "",
     "description": "Amazon Alexa integration with using JavaScript only.",
-    "issues": 8,
+    "issues": 9,
     "license": "MIT",
     "last_commit": "2016-11-08"
   },
@@ -4893,7 +4893,7 @@
     "maintainer": "georg90",
     "maintainerURL": "",
     "description": "Display local transport in Hamburg/Germany.",
-    "issues": 4,
+    "issues": 6,
     "tags": [
       "localtransport",
       "hvv"
@@ -5429,7 +5429,7 @@
     "maintainer": "basti0001",
     "maintainerURL": "",
     "description": "Visualizes your places where you have been traveled..or intend to go.",
-    "issues": 31,
+    "issues": 38,
     "last_commit": "2021-01-09"
   },
   {
@@ -7130,7 +7130,7 @@
     "maintainer": "paphko",
     "maintainerURL": "",
     "description": "Show lights and window states on a floorplan of an openhab server.",
-    "issues": 8,
+    "issues": 9,
     "last_commit": "2023-03-01"
   },
   {
@@ -8707,7 +8707,7 @@
     "maintainer": "raywo",
     "maintainerURL": "",
     "description": "Display the song you are currently listening to on Spotify.",
-    "issues": 6,
+    "issues": 8,
     "tags": [
       "spotify"
     ],
@@ -8966,7 +8966,7 @@
     "maintainer": "Fabrizz",
     "maintainerURL": "https://github.com/Fabrizz",
     "description": "Highly customizable module that displays what you are listening to in Spotify. Compatible with MMM-LiveLyrics and DynamicTheming.",
-    "issues": 8,
+    "issues": 10,
     "tags": [
       "spotify",
       "spotify connect"
@@ -9441,7 +9441,7 @@
     "maintainer": "ronny3050",
     "maintainerURL": "",
     "description": "Displays and alerts mirror users on new phone notifications.",
-    "issues": 5,
+    "issues": 6,
     "tags": [
       "phone notification",
       "notification"
@@ -11704,7 +11704,7 @@
     "maintainer": "CFenner",
     "maintainerURL": "",
     "description": "Display the currently playing track of your Sonos system.",
-    "issues": 6,
+    "issues": 7,
     "license": "MIT",
     "image": ".github-preview.jpg",
     "last_commit": "2024-01-05"
@@ -11727,7 +11727,7 @@
     "maintainer": "Snille",
     "maintainerURL": "https://github.com/Snille",
     "description": "A fork of CFenners module with new features. It's used to display informations about the currently playing songs on your Sonos system.",
-    "issues": 9,
+    "issues": 10,
     "last_commit": "2021-08-07"
   },
   {
@@ -11824,7 +11824,7 @@
     "maintainer": "Ruud14",
     "maintainerURL": "https://github.com/Ruud14",
     "description": "Displays the latest releases from your favorite spotify artists.",
-    "issues": 7,
+    "issues": 9,
     "tags": [
       "spotify"
     ],
@@ -12567,7 +12567,7 @@
     "maintainer": "Travelbacon",
     "maintainerURL": "https://github.com/Travelbacon",
     "description": "Shows on a TomTom map of your location the current traffic and actual traffic incidents like crashes and road construction. You can choose if you want traffic delay/jam or traffic speed/flow to be displayed.",
-    "issues": 7,
+    "issues": 8,
     "last_commit": "2023-04-26"
   },
   {

@@ -1,6 +1,6 @@
 # Result of the module analysis
 
-Last update: 2024-01-06 11:12:13 UTC
+Last update: 2024-01-06 14:09:04 UTC
 
 ## Statistics
 
@@ -9,7 +9,7 @@ Last update: 2024-01-06 11:12:13 UTC
 | modules analyzed     |   1112   |
 | maintainer           |    623   |
 | modules with issues  |   1108   |
-| issues               |   6372   |
+| issues               |   6393   |
 | modules at github    |   1103   |
 | modules at gitlab    |      8   |
 | modules at bitbucket |      1   |
@@ -145,10 +145,11 @@ Last update: 2024-01-06 11:12:13 UTC
 2. There are no keywords in 'package.json'. We would use them as tags on the module list page.
 3. No image found.
 4. Outdated: Found `MichMich/MagicMirror` in file `README.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
-5. Recommendation: Found `XMLHttpRequest` in file `alexaRunner.babel.js`: Replace it with built-in fetch.
-6. Recommendation: Found `new Date()` in file `node_helper.js`: Replace it by `new Date(Date.now())`: [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
-7. Recommendation: Found `XMLHttpRequest` in file `runDirectives.js`: Replace it with built-in fetch.
-8. The branch name is 'master'. Consider renaming it to 'main'.
+5. Deprecated: Found `new Buffer(` in file `alexaRunner.babel.js`: This is deprecated. Please update: https://nodejs.org/api/buffer.html.
+6. Recommendation: Found `XMLHttpRequest` in file `alexaRunner.babel.js`: Replace it with built-in fetch.
+7. Recommendation: Found `new Date()` in file `node_helper.js`: Replace it by `new Date(Date.now())`: [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
+8. Recommendation: Found `XMLHttpRequest` in file `runDirectives.js`: Replace it with built-in fetch.
+9. The branch name is 'master'. Consider renaming it to 'main'.
 
 ### [MMM-AlexaControl by JoChef2](https://github.com/JoChef2/MMM-AlexaControl)
 
@@ -3175,8 +3176,10 @@ Last update: 2024-01-06 11:12:13 UTC
 
 1. No image found.
 2. Typo: Found `Magic Mirror` in file `MMM-HH-LocalTransport.js`: Replace it with `MagicMirror²`.
-3. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
-4. The branch name is 'master'. Consider renaming it to 'main'.
+3. Deprecated: Found `new Buffer(` in file `findStation.js`: This is deprecated. Please update: https://nodejs.org/api/buffer.html.
+4. Deprecated: Found `new Buffer(` in file `node_helper.js`: This is deprecated. Please update: https://nodejs.org/api/buffer.html.
+5. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
+6. The branch name is 'master'. Consider renaming it to 'main'.
 
 ### [MMM-HH-LocalTransport by skuethe](https://github.com/skuethe/MMM-HH-LocalTransport)
 
@@ -3565,24 +3568,31 @@ Last update: 2024-01-06 11:12:13 UTC
 11. Recommendation: Found `new Date()` in file `serial3.html`: Replace it by `new Date(Date.now())`: [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
 12. Recommendation: Found `new Date()` in file `stock.html`: Replace it by `new Date(Date.now())`: [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
 13. Recommendation: Found `new Date()` in file `export.js`: Replace it by `new Date(Date.now())`: [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
-14. Recommendation: Found `require('http')` in file `fabric.js`: Replace 'http' by 'node:http'.
-15. Recommendation: Found `require('https')` in file `fabric.js`: Replace 'https' by 'node:https'.
-16. Recommendation: Found `XMLHttpRequest` in file `fabric.js`: Replace it with built-in fetch.
-17. Recommendation: Found `jshint` in file `fabric.js`: Replace "jshint" by "eslint".
-18. Recommendation: Found `new Date()` in file `fabric.js`: Replace it by `new Date(Date.now())`: [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
-19. Recommendation: Found `require("http")` in file `fabric.min.js`: Replace "http" by "node:http".
-20. Recommendation: Found `require("https")` in file `fabric.min.js`: Replace "https" by "node:https".
-21. Recommendation: Found `XMLHttpRequest` in file `fabric.min.js`: Replace it with built-in fetch.
-22. Recommendation: Found `jshint` in file `jszip.js`: Replace "jshint" by "eslint".
-23. Recommendation: Found `new Date()` in file `jszip.js`: Replace it by `new Date(Date.now())`: [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
-24. Recommendation: Found `jshint` in file `pdfmake.js`: Replace "jshint" by "eslint".
-25. Recommendation: Found `new Date()` in file `pdfmake.js`: Replace it by `new Date(Date.now())`: [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
-26. Recommendation: Found `jshint` in file `pdfmake.min.js.map`: Replace "jshint" by "eslint".
-27. Recommendation: Found `new Date()` in file `pdfmake.min.js.map`: Replace it by `new Date(Date.now())`: [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
-28. Recommendation: Found `jshint` in file `xlsx.js`: Replace "jshint" by "eslint".
-29. Recommendation: Found `new Date()` in file `serial3.html`: Replace it by `new Date(Date.now())`: [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
-30. Recommendation: Found `new Date()` in file `stock.html`: Replace it by `new Date(Date.now())`: [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
-31. The branch name is 'master'. Consider renaming it to 'main'.
+14. Deprecated: Found `new Buffer(` in file `fabric.js`: This is deprecated. Please update: https://nodejs.org/api/buffer.html.
+15. Recommendation: Found `require('http')` in file `fabric.js`: Replace 'http' by 'node:http'.
+16. Recommendation: Found `require('https')` in file `fabric.js`: Replace 'https' by 'node:https'.
+17. Recommendation: Found `XMLHttpRequest` in file `fabric.js`: Replace it with built-in fetch.
+18. Recommendation: Found `jshint` in file `fabric.js`: Replace "jshint" by "eslint".
+19. Recommendation: Found `new Date()` in file `fabric.js`: Replace it by `new Date(Date.now())`: [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
+20. Deprecated: Found `new Buffer(` in file `fabric.min.js`: This is deprecated. Please update: https://nodejs.org/api/buffer.html.
+21. Recommendation: Found `require("http")` in file `fabric.min.js`: Replace "http" by "node:http".
+22. Recommendation: Found `require("https")` in file `fabric.min.js`: Replace "https" by "node:https".
+23. Recommendation: Found `XMLHttpRequest` in file `fabric.min.js`: Replace it with built-in fetch.
+24. Deprecated: Found `new Buffer(` in file `jszip.js`: This is deprecated. Please update: https://nodejs.org/api/buffer.html.
+25. Recommendation: Found `jshint` in file `jszip.js`: Replace "jshint" by "eslint".
+26. Recommendation: Found `new Date()` in file `jszip.js`: Replace it by `new Date(Date.now())`: [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
+27. Deprecated: Found `new Buffer(` in file `pdfmake.js`: This is deprecated. Please update: https://nodejs.org/api/buffer.html.
+28. Recommendation: Found `jshint` in file `pdfmake.js`: Replace "jshint" by "eslint".
+29. Recommendation: Found `new Date()` in file `pdfmake.js`: Replace it by `new Date(Date.now())`: [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
+30. Deprecated: Found `new Buffer(` in file `pdfmake.min.js.map`: This is deprecated. Please update: https://nodejs.org/api/buffer.html.
+31. Recommendation: Found `jshint` in file `pdfmake.min.js.map`: Replace "jshint" by "eslint".
+32. Recommendation: Found `new Date()` in file `pdfmake.min.js.map`: Replace it by `new Date(Date.now())`: [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
+33. Deprecated: Found `new Buffer(` in file `xlsx.js`: This is deprecated. Please update: https://nodejs.org/api/buffer.html.
+34. Recommendation: Found `jshint` in file `xlsx.js`: Replace "jshint" by "eslint".
+35. Deprecated: Found `new Buffer(` in file `xlsx.min.js`: This is deprecated. Please update: https://nodejs.org/api/buffer.html.
+36. Recommendation: Found `new Date()` in file `serial3.html`: Replace it by `new Date(Date.now())`: [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
+37. Recommendation: Found `new Date()` in file `stock.html`: Replace it by `new Date(Date.now())`: [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
+38. The branch name is 'master'. Consider renaming it to 'main'.
 
 ### [MMM-Ilevia-Lille by Jilano5](https://github.com/Jilano5/MMM-Ilevia-Lille)
 
@@ -4835,9 +4845,10 @@ Last update: 2024-01-06 11:12:13 UTC
 3. Typo: Found `Magic Mirror` in file `README.md`: Replace it with `MagicMirror²`.
 4. Typo: Found `MagicMirror2` in file `README.md`: Replace it with `MagicMirror²`.
 5. Outdated: Found `MichMich/MagicMirror` in file `README.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
-6. Deprecated: Found `require("request")` in file `node_helper.js`: Replace it with built-in fetch.
-7. Recommendation: Found `new Date()` in file `node_helper.js`: Replace it by `new Date(Date.now())`: [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
-8. The branch name is 'master'. Consider renaming it to 'main'.
+6. Deprecated: Found `new Buffer(` in file `node_helper.js`: This is deprecated. Please update: https://nodejs.org/api/buffer.html.
+7. Deprecated: Found `require("request")` in file `node_helper.js`: Replace it with built-in fetch.
+8. Recommendation: Found `new Date()` in file `node_helper.js`: Replace it by `new Date(Date.now())`: [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
+9. The branch name is 'master'. Consider renaming it to 'main'.
 
 ### [mmm-pins by ptrbld](https://github.com/ptrbld/mmm-pins)
 
@@ -5959,9 +5970,11 @@ Last update: 2024-01-06 11:12:13 UTC
 1. Recommendation: Found `jshint` in file `.gitignore`: Replace "jshint" by "eslint".
 2. Typo: Found `<sup>2</sup>` in file `README.md`: Replace it with `²`.`.
 3. Outdated: Found `MichMich/MagicMirror` in file `README.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
-4. Deprecated: Found `require('request')` in file `app.js`: Replace it with built-in fetch.
-5. Typo: Found `<sup>2</sup>` in file `index.html`: Replace it with `²`.`.
-6. The branch name is 'master'. Consider renaming it to 'main'.
+4. Deprecated: Found `new Buffer(` in file `app.js`: This is deprecated. Please update: https://nodejs.org/api/buffer.html.
+5. Deprecated: Found `require('request')` in file `app.js`: Replace it with built-in fetch.
+6. Typo: Found `<sup>2</sup>` in file `index.html`: Replace it with `²`.`.
+7. Deprecated: Found `new Buffer(` in file `SpotifyConnector.js`: This is deprecated. Please update: https://nodejs.org/api/buffer.html.
+8. The branch name is 'master'. Consider renaming it to 'main'.
 
 ### [MMM-NsInfo by mfurious](https://github.com/mfurious/MMM-NsInfo)
 
@@ -6146,7 +6159,9 @@ Last update: 2024-01-06 11:12:13 UTC
 5. Typo: Found `MagicMirror2` in file `package.json`: Replace it with `MagicMirror²`.
 6. Recommendation: Found `"node-fetch"` in file `package.json`: Replace it with built-in fetch.
 7. Recommendation: Found `"node-fetch"` in file `SpotifyFetcher.js`: Replace it with built-in fetch.
-8. The branch name is 'master'. Consider renaming it to 'main'.
+8. Deprecated: Found `new Buffer(` in file `vibrant.worker.js.map`: This is deprecated. Please update: https://nodejs.org/api/buffer.html.
+9. Deprecated: Found `new Buffer(` in file `vibrant.worker.min.js`: This is deprecated. Please update: https://nodejs.org/api/buffer.html.
+10. The branch name is 'master'. Consider renaming it to 'main'.
 
 ### [MMM-OnThisDay by nkl-kst](https://github.com/nkl-kst/MMM-OnThisDay)
 
@@ -6466,8 +6481,9 @@ Last update: 2024-01-06 11:12:13 UTC
 1. `package.json` issue: No repository field.
 2. `package.json` issue: No license field.
 3. Recommendation: Module name doesn't follow the recommended pattern (it doesn't start with `MMM-`). Consider renaming your module.
-4. Warning: No LICENSE file.
-5. The branch name is 'master'. Consider renaming it to 'main'.
+4. Deprecated: Found `new Buffer(` in file `node_helper.js`: This is deprecated. Please update: https://nodejs.org/api/buffer.html.
+5. Warning: No LICENSE file.
+6. The branch name is 'master'. Consider renaming it to 'main'.
 
 ### [MMM-PhoneDetect by PierreGode](https://github.com/PierreGode/MMM-PhoneDetect)
 
@@ -8030,10 +8046,11 @@ Last update: 2024-01-06 11:12:13 UTC
 
 1. There are no specific keywords in 'package.json'. We would use them as tags on the module list page. Add a few meaningful terms to the keywords in the package.json. Not just “magicmirror” or “module”.
 2. Typo: Found `Magic Mirror` in file `MMM-Sonos.js`: Replace it with `MagicMirror²`.
-3. Outdated: Found `MichMich/MagicMirror` in file `README.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
-4. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
-5. Deprecated: Found `require('request')` in file `node_helper.js`: Replace it with built-in fetch.
-6. Recommendation: Replace eslintrc by new flat config.
+3. Deprecated: Found `new Buffer(` in file `README.md`: This is deprecated. Please update: https://nodejs.org/api/buffer.html.
+4. Outdated: Found `MichMich/MagicMirror` in file `README.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
+5. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
+6. Deprecated: Found `require('request')` in file `node_helper.js`: Replace it with built-in fetch.
+7. Recommendation: Replace eslintrc by new flat config.
 
 ### [MMM-Sonos by tbouron](https://github.com/tbouron/MMM-Sonos)
 
@@ -8051,10 +8068,11 @@ Last update: 2024-01-06 11:12:13 UTC
 3. `package.json` issue: No license field.
 4. There are no keywords in 'package.json'. We would use them as tags on the module list page.
 5. Typo: Found `Magic Mirror` in file `MMM-Sonos.js`: Replace it with `MagicMirror²`.
-6. Outdated: Found `MichMich/MagicMirror` in file `README.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
-7. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
-8. Deprecated: Found `require('request')` in file `node_helper.js`: Replace it with built-in fetch.
-9. The branch name is 'master'. Consider renaming it to 'main'.
+6. Deprecated: Found `new Buffer(` in file `README.md`: This is deprecated. Please update: https://nodejs.org/api/buffer.html.
+7. Outdated: Found `MichMich/MagicMirror` in file `README.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
+8. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
+9. Deprecated: Found `require('request')` in file `node_helper.js`: Replace it with built-in fetch.
+10. The branch name is 'master'. Consider renaming it to 'main'.
 
 ### [MMM-SORT by mykle1](https://github.com/mykle1/MMM-SORT)
 
@@ -8122,11 +8140,13 @@ Last update: 2024-01-06 11:12:13 UTC
 
 1. No image found.
 2. Recommendation: Found `new Date()` in file `MMM-SpotifyReleases.js`: Replace it by `new Date(Date.now())`: [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
-3. Recommendation: Found `XMLHttpRequest` in file `SpotifyConnector.js`: Replace it with built-in fetch.
-4. Deprecated: Found `require('request')` in file `app.js`: Replace it with built-in fetch.
-5. Found directory `node_modules`. This shouldn't be uploaded. Add `node_modules/`to `.gitignore`.
-6. Deprecated: Found `require('request')` in file `node_helper.js`: Replace it with built-in fetch.
-7. The branch name is 'master'. Consider renaming it to 'main'.
+3. Deprecated: Found `new Buffer(` in file `SpotifyConnector.js`: This is deprecated. Please update: https://nodejs.org/api/buffer.html.
+4. Recommendation: Found `XMLHttpRequest` in file `SpotifyConnector.js`: Replace it with built-in fetch.
+5. Deprecated: Found `new Buffer(` in file `app.js`: This is deprecated. Please update: https://nodejs.org/api/buffer.html.
+6. Deprecated: Found `require('request')` in file `app.js`: Replace it with built-in fetch.
+7. Found directory `node_modules`. This shouldn't be uploaded. Add `node_modules/`to `.gitignore`.
+8. Deprecated: Found `require('request')` in file `node_helper.js`: Replace it with built-in fetch.
+9. The branch name is 'master'. Consider renaming it to 'main'.
 
 ### [MMM-Star-Metro by alexandreLavenant](https://github.com/alexandreLavenant/MMM-Star-Metro)
 
@@ -8608,9 +8628,10 @@ Last update: 2024-01-06 11:12:13 UTC
 2. Typo: Found `Magic Mirror` in file `README.md`: Replace it with `MagicMirror²`.
 3. Typo: Found `Magic Mirror` in file `SECURITY.md`: Replace it with `MagicMirror²`.
 4. Recommendation: Found `axios` in file `LICENSE.txt`: Replace it with built-in fetch.
-5. Recommendation: Found `XMLHttpRequest` in file `maps-web.min.js`: Replace it with built-in fetch.
-6. Typo: Found `Magic Mirror` in file `tomtomv6.html`: Replace it with `MagicMirror²`.
-7. The branch name is 'master'. Consider renaming it to 'main'.
+5. Deprecated: Found `new Buffer(` in file `maps-web.min.js`: This is deprecated. Please update: https://nodejs.org/api/buffer.html.
+6. Recommendation: Found `XMLHttpRequest` in file `maps-web.min.js`: Replace it with built-in fetch.
+7. Typo: Found `Magic Mirror` in file `tomtomv6.html`: Replace it with `MagicMirror²`.
+8. The branch name is 'master'. Consider renaming it to 'main'.
 
 ### [MMM-Toon by MichMich](https://github.com/MichMich/MMM-Toon)
 

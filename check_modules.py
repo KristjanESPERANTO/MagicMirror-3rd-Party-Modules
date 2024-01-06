@@ -21,6 +21,10 @@ def check_modules():
     """Function to search a string in a file."""
 
     search_strings = {
+        "new Buffer(": {
+            "name": "This is deprecated. Please update: https://nodejs.org/api/buffer.html.",
+            "category": "Deprecated",
+        },
         "stylelint-config-prettier": {
             "name": "Update `stylelint` and remove `stylelint-config-prettier`.",
             "category": "Deprecated",
