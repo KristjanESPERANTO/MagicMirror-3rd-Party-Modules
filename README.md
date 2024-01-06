@@ -107,7 +107,8 @@ How can you use it?
 
 ## Ideas / To do
 
-- Move ideas/todos to GitHub Issues and ass proper tags.
+- Long-term goal: The website functions like an app store. The user only has to click on an install button and the module is installed and a basic configuration is inserted.
+- Move ideas/todos to GitHub Issues and add proper tags.
 - Add exceptions for 3rd-Party stuff like jquery or fontwaesome? <https://github.com/bugsounet/MMM-GoogleAssistant/pull/386>
 - Show and sort by GitHub Star #1.
 - Move `result.md` to docs.

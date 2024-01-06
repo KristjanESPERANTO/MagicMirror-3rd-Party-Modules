@@ -625,10 +625,10 @@
     "maintainer": "darickc",
     "maintainerURL": "",
     "description": "Show fullscreen slideshow in background from images in a local folder. Great for a photo frame.",
-    "issues": [
-      "`package.json` issue: No description",
-      "`package.json` issue: No repository field.",
-      "There are no keywords in 'package.json'. We would use them as tags on the module list page."
+    "issues": [],
+    "tags": [
+      "background",
+      "slideshow"
     ],
     "license": "MIT",
     "image": "exampleImages-1.jpg"
@@ -10037,15 +10037,14 @@
     "maintainer": "PierreGode",
     "maintainerURL": "https://github.com/PierreGode",
     "description": "Automatically controls the screen's power based on the presence of specified phones or devices within the network.",
-    "issues": [
-      "No image found."
-    ],
+    "issues": [],
     "tags": [
       "phone",
       "presence",
       "detection"
     ],
-    "license": "MIT"
+    "license": "MIT",
+    "image": "screenshot.jpg"
   },
   {
     "name": "PiDisplaySleep",

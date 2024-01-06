@@ -1,6 +1,6 @@
 # Result of the module analysis
 
-Last update: 2024-01-05 21:51:33 UTC
+Last update: 2024-01-06 11:12:13 UTC
 
 ## Statistics
 
@@ -9,7 +9,7 @@ Last update: 2024-01-05 21:51:33 UTC
 | modules analyzed     |   1112   |
 | maintainer           |    623   |
 | modules with issues  |   1108   |
-| issues               |   6379   |
+| issues               |   6372   |
 | modules at github    |   1103   |
 | modules at gitlab    |      8   |
 | modules at bitbucket |      1   |
@@ -418,14 +418,8 @@ Last update: 2024-01-05 21:51:33 UTC
 
 ### [MMM-BackgroundSlideshow by darickc](https://github.com/darickc/MMM-BackgroundSlideshow)
 
-1. `package.json` issue: No description
-2. `package.json` issue: No repository field.
-3. There are no keywords in 'package.json'. We would use them as tags on the module list page.
-4. Typo: Found `Magic Mirror` in file `MMM-BackgroundSlideshow.js`: Replace it with `MagicMirror²`.
-5. Typo: Found `Magic Mirror` in file `README.md`: Replace it with `MagicMirror²`.
-6. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
-7. Deprecated: Found `omxplayer` in file `node_helper.js`: Try to replace it with `vlc`.
-8. The branch name is 'master'. Consider renaming it to 'main'.
+1. Deprecated: Found `omxplayer` in file `node_helper.js`: Try to replace it with `vlc`.
+2. The branch name is 'master'. Consider renaming it to 'main'.
 
 ### [MMM-BartTimes by falafel2222](https://github.com/falafel2222/MMM-BartTimes)
 
@@ -6477,8 +6471,7 @@ Last update: 2024-01-05 21:51:33 UTC
 
 ### [MMM-PhoneDetect by PierreGode](https://github.com/PierreGode/MMM-PhoneDetect)
 
-1. No image found.
-2. Recommendation: Found `new Date()` in file `node_helper.js`: Replace it by `new Date(Date.now())`: [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
+1. Recommendation: Found `new Date()` in file `node_helper.js`: Replace it by `new Date(Date.now())`: [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
 
 ### [PiDisplaySleep by RpDp-git](https://github.com/RpDp-git/PiDisplaySleep)
 

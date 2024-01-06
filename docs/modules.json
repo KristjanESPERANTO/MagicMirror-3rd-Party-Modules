@@ -598,10 +598,14 @@
     "maintainer": "darickc",
     "maintainerURL": "",
     "description": "Show fullscreen slideshow in background from images in a local folder. Great for a photo frame.",
-    "issues": 8,
+    "issues": 2,
+    "tags": [
+      "background",
+      "slideshow"
+    ],
     "license": "MIT",
     "image": "exampleImages-1.jpg",
-    "last_commit": "2023-11-28"
+    "last_commit": "2024-01-02"
   },
   {
     "name": "MMM-BartTimes",
@@ -2732,7 +2736,7 @@
     ],
     "license": "MIT",
     "image": "MMM-Ecowatt_screenshot1.jpg",
-    "last_commit": "2023-12-26"
+    "last_commit": "2024-01-02"
   },
   {
     "name": "MMM-edgerouter-throughput",
@@ -4054,7 +4058,7 @@
     "maintainerURL": "",
     "description": "Controlling an RGB-LED strip around a smart mirror with or without touch input. It provides features for static background lighting, highly customizable effects on notifications and party lighting.",
     "issues": 7,
-    "last_commit": "2023-01-01"
+    "last_commit": "2024-01-01"
   },
   {
     "name": "MMM-FreeBox-Monitor",
@@ -4266,7 +4270,7 @@
     "issues": 5,
     "license": "MIT",
     "image": "doc-screenshot-MMM-GConnect.jpg",
-    "last_commit": "2022-11-12"
+    "last_commit": "2024-01-05"
   },
   {
     "name": "MMM-GCP",
@@ -9451,14 +9455,15 @@
     "maintainer": "PierreGode",
     "maintainerURL": "https://github.com/PierreGode",
     "description": "Automatically controls the screen's power based on the presence of specified phones or devices within the network.",
-    "issues": 2,
+    "issues": 1,
     "tags": [
       "phone",
       "presence",
       "detection"
     ],
     "license": "MIT",
-    "last_commit": "2024-01-05"
+    "image": "screenshot.jpg",
+    "last_commit": "2024-01-06"
   },
   {
     "name": "PiDisplaySleep",
