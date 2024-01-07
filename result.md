@@ -1,6 +1,6 @@
 # Result of the module analysis
 
-Last update: 2024-01-06 14:09:04 UTC
+Last update: 2024-01-07 12:45:21 UTC
 
 ## Statistics
 
@@ -9,7 +9,7 @@ Last update: 2024-01-06 14:09:04 UTC
 | modules analyzed     |   1112   |
 | maintainer           |    623   |
 | modules with issues  |   1108   |
-| issues               |   6393   |
+| issues               |   6384   |
 | modules at github    |   1103   |
 | modules at gitlab    |      8   |
 | modules at bitbucket |      1   |
@@ -2146,8 +2146,9 @@ Last update: 2024-01-06 14:09:04 UTC
 ### [EXT-Spotify by bugsounet](https://github.com/bugsounet/EXT-Spotify)
 
 1. The branch name is 'master'. Consider renaming it to 'main'.
-2. Information: There are updates for 1 dependencie(s):
+2. Information: There are updates for 2 dependencie(s):
    -  express  ^4.17.1  →  ^4.18.2
+   -  open     ^10.0.2  →  ^10.0.3
 
 
 ### [EXT-SpotifyCanvasLyrics by bugsounet](https://github.com/bugsounet/EXT-SpotifyCanvasLyrics)
@@ -3438,11 +3439,11 @@ Last update: 2024-01-06 14:09:04 UTC
 
 ### [MMM-ICA by PierreGode](https://github.com/PierreGode/MMM-ICA)
 
-1. There is no `package.json`. We need this file to gather information about the module for the module list page.
-2. Typo: Found `Magic Mirror` in file `README.md`: Replace it with `MagicMirror²`.
-3. Outdated: Found `MichMich/MagicMirror` in file `README.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
-4. Recommendation: Found `axios` in file `node_helper.js`: Replace it with built-in fetch.
-5. Warning: No LICENSE file.
+1. `package.json` issue: license should be a valid SPDX license expression
+2. No compatible or wrong license field in 'package.json'. Without that, we can't use an image.
+3. Typo: Found `Magic Mirror` in file `README.md`: Replace it with `MagicMirror²`.
+4. Outdated: Found `MichMich/MagicMirror` in file `README.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
+5. Recommendation: Found `axios` in file `node_helper.js`: Replace it with built-in fetch.
 
 ### [MMM-iCal-ToDo by nixnuex](https://github.com/nixnuex/MMM-iCal-ToDo)
 
@@ -5715,8 +5716,9 @@ Last update: 2024-01-06 14:09:04 UTC
 
 ### [MMM-next-episode by PierreGode](https://github.com/PierreGode/MMM-next-episode)
 
-1. There is no `package.json`. We need this file to gather information about the module for the module list page.
-2. Deprecated: Found `require('request')` in file `node_helper.js`: Replace it with built-in fetch.
+1. `package.json` issue: license should be a valid SPDX license expression
+2. No compatible or wrong license field in 'package.json'. Without that, we can't use an image.
+3. Deprecated: Found `require('request')` in file `node_helper.js`: Replace it with built-in fetch.
 
 ### [next-train-transilien by trizome](https://github.com/trizome/next-train-transilien)
 
@@ -7946,18 +7948,9 @@ Last update: 2024-01-06 14:09:04 UTC
 
 ### [MMM-SoccerLiveScore by 0m4r](https://github.com/0m4r/MMM-SoccerLiveScore)
 
-1. Recommendation: Found `uses: actions/checkout@v2` in file `github-traffic-action_cron-trigger.yml`: Replace it with v4.
-2. Recommendation: Found `uses: actions/checkout@v2` in file `github-traffic-action_manual-trigger.yml`: Replace it with v4.
-3. Typo: Found `Magic Mirror` in file `MMM-SoccerLiveScore.js`: Replace it with `MagicMirror²`.
-4. Typo: Found `MagicMirror2` in file `README.md`: Replace it with `MagicMirror²`.
-5. Outdated: Found `MichMich/MagicMirror` in file `README.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
-6. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
-7. Recommendation: Found `'node-fetch'` in file `node_helper.js`: Replace it with built-in fetch.
-8. Recommendation: Found `new Date()` in file `node_helper.js`: Replace it by `new Date(Date.now())`: [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
-9. Recommendation: Found `"node-fetch"` in file `package.json`: Replace it with built-in fetch.
-10. Warning: No LICENSE file.
-11. Recommendation: Replace eslintrc by new flat config.
-12. The branch name is 'master'. Consider renaming it to 'main'.
+1. Recommendation: Found `new Date()` in file `node_helper.js`: Replace it by `new Date(Date.now())`: [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
+2. Recommendation: Replace eslintrc by new flat config.
+3. The branch name is 'master'. Consider renaming it to 'main'.
 
 ### [MMM-social-counter by ngnijland](https://github.com/ngnijland/MMM-social-counter)
 
@@ -9753,11 +9746,10 @@ Last update: 2024-01-06 14:09:04 UTC
 
 ### [MMM-ZAPTEC by PierreGode](https://github.com/PierreGode/MMM-ZAPTEC)
 
-1. There is no `package.json`. We need this file to gather information about the module for the module list page.
-2. Recommendation: Found `XMLHttpRequest` in file `MMM-ZAPTEC.js`: Replace it with built-in fetch.
-3. Typo: Found `Magic Mirror` in file `README.md`: Replace it with `MagicMirror²`.
+1. `package.json` issue: license should be a valid SPDX license expression
+2. No compatible or wrong license field in 'package.json'. Without that, we can't use an image.
+3. Recommendation: Found `XMLHttpRequest` in file `MMM-ZAPTEC.js`: Replace it with built-in fetch.
 4. Recommendation: Found `axios` in file `node_helper.js`: Replace it with built-in fetch.
-5. Warning: No LICENSE file.
 
 ### [MMM-Zmanim by shmulyeng](https://github.com/shmulyeng/MMM-Zmanim)
 
