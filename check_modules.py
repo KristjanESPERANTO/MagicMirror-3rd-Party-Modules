@@ -175,7 +175,7 @@ def check_modules():
         "modules-with-image-counter": 0,
         "modules-with-issues-counter": 0,
         "issue-counter": 0,
-        "last-update": datetime.utcnow().strftime("%Y-%m-%d %H:%M:%S"),
+        "last-update": datetime.now().astimezone().replace(microsecond=0).isoformat(),
         "repository-hoster": {},
         "maintainer": {},
     }
