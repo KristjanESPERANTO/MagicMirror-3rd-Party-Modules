@@ -326,7 +326,7 @@ def check_modules():
 def get_last_commit_date(module, module_directory_path):
     module["last_commit"] = (
             subprocess.run(
-                f"cd {module_directory_path} && git log -1 --format='%as' && cd .. && cd ..",
+                f"cd {module_directory_path} && git log -1 --format='%aI' && cd .. && cd ..",
                 stdout=subprocess.PIPE,
                 shell=True,
                 check=False,

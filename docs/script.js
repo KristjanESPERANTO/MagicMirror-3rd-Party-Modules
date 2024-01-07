@@ -20,7 +20,7 @@ function updateModuleCardContainer () {
               <div class="card-header">
                 <a href="${moduleData.url}" target="_blank">${moduleData.name}</a>
                 <div class="maintainer">maintained by ${moduleData.maintainer}</div>
-                <div class="last-commit">last commit: ${moduleData.last_commit}</div>
+                <div class="last-commit">last commit: ${moduleData.last_commit.split("T")[0]}</div>
               </div>
             `;
       if (moduleData.issues > 0) {
