@@ -8384,6 +8384,20 @@
     "license": "MIT"
   },
   {
+    "name": "MMM-MySQLData",
+    "url": "https://github.com/tabsl/MMM-MySQLData",
+    "id": "tabsl/MMM-MySQLData",
+    "maintainer": "tabsl",
+    "maintainerURL": "",
+    "description": "Connect to a MySQL database, run a select query (one value) and display the result.",
+    "issues": [],
+    "tags": [
+      "mysql"
+    ],
+    "license": "MIT",
+    "image": "screenshot.jpg"
+  },
+  {
     "name": "MMM-MysqlQuery",
     "url": "https://github.com/ralberth/MMM-MysqlQuery",
     "id": "ralberth/MMM-MysqlQuery",
@@ -8910,16 +8924,14 @@
     "maintainer": "PierreGode",
     "maintainerURL": "https://github.com/PierreGode",
     "description": "Display your upcomming show's and movies from your next-episode account.",
-    "issues": [
-      "`package.json` issue: license should be a valid SPDX license expression",
-      "No compatible or wrong license field in 'package.json'. Without that, we can't use an image."
-    ],
+    "issues": [],
     "tags": [
       "tvshows",
       "episodes",
       "movies"
     ],
-    "license": "GNU"
+    "license": "GPL-3.0-only",
+    "image": "img-screenshot-qr-code.jpg"
   },
   {
     "name": "next-train-transilien",

@@ -5631,6 +5631,15 @@
     "issues": []
   },
   {
+    "name": "MMM-MySQLData",
+    "url": "https://github.com/tabsl/MMM-MySQLData",
+    "id": "tabsl/MMM-MySQLData",
+    "maintainer": "tabsl",
+    "maintainerURL": "",
+    "description": "Connect to a MySQL database, run a select query (one value) and display the result.",
+    "issues": []
+  },
+  {
     "name": "MMM-MysqlQuery",
     "url": "https://github.com/ralberth/MMM-MysqlQuery",
     "id": "ralberth/MMM-MysqlQuery",

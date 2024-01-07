@@ -1,11 +1,11 @@
 {
-  "module-counter": 1112,
-  "modules-with-image-counter": 476,
+  "module-counter": 1113,
+  "modules-with-image-counter": 478,
   "modules-with-issues-counter": 1108,
-  "issue-counter": 6384,
-  "last-update": "2024-01-07 12:45:21",
+  "issue-counter": 6382,
+  "last-update": "2024-01-08T00:32:58+01:00",
   "repository-hoster": {
-    "github": 1103,
+    "github": 1104,
     "gitlab": 8,
     "bitbucket": 1
   },
@@ -439,6 +439,7 @@
     "ptrk95": 1,
     "oenstrom": 1,
     "smartgic": 1,
+    "tabsl": 1,
     "ethanpartida": 1,
     "TheVieiraAkA": 1,
     "SageBrushes": 1,

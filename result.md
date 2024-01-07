@@ -1,16 +1,16 @@
 # Result of the module analysis
 
-Last update: 2024-01-07 12:45:21 UTC
+Last update: 2024-01-08T00:32:58+01:00 UTC
 
 ## Statistics
 
 |                      | number   |
 |:---------------------|:--------:|
-| modules analyzed     |   1112   |
-| maintainer           |    623   |
+| modules analyzed     |   1113   |
+| maintainer           |    624   |
 | modules with issues  |   1108   |
-| issues               |   6384   |
-| modules at github    |   1103   |
+| issues               |   6382   |
+| modules at github    |   1104   |
 | modules at gitlab    |      8   |
 | modules at bitbucket |      1   |
 
@@ -2054,8 +2054,9 @@ Last update: 2024-01-07 12:45:21 UTC
 
 ### [EXT-Detector by bugsounet](https://github.com/bugsounet/EXT-Detector)
 
-1. Information: There are updates for 1 dependencie(s):
-   -  @mapbox/node-pre-gyp  ^1.0.10  →  ^1.0.11
+1. Information: There are updates for 2 dependencie(s):
+   -  @mapbox/node-pre-gyp   ^1.0.10  →   ^1.0.11
+   -  @types/node           ^20.10.6  →  ^20.10.7
 
 
 ### [EXT-FreeboxTV by bugsounet](https://github.com/bugsounet/EXT-FreeboxTV)
@@ -5385,6 +5386,10 @@ Last update: 2024-01-07 12:45:21 UTC
 7. Deprecated: Found `"electron-rebuild"` in file `package.json`: Replace it with `@electron/rebuild`
 8. The branch name is 'master'. Consider renaming it to 'main'.
 
+### [MMM-MySQLData by tabsl](https://github.com/tabsl/MMM-MySQLData)
+
+1. Warning: No LICENSE file.
+
 ### [MMM-MysqlQuery by ralberth](https://github.com/ralberth/MMM-MysqlQuery)
 
 1. Typo: Found `Magic Mirror` in file `MMM-MysqlQuery.js`: Replace it with `MagicMirror²`.
@@ -5713,12 +5718,6 @@ Last update: 2024-01-07 12:45:21 UTC
 6. Outdated: Found `MichMich/MagicMirror` in file `fetcher.js`: Replace it by `MagicMirrorOrg/MagicMirror`.
 7. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
 8. The branch name is 'master'. Consider renaming it to 'main'.
-
-### [MMM-next-episode by PierreGode](https://github.com/PierreGode/MMM-next-episode)
-
-1. `package.json` issue: license should be a valid SPDX license expression
-2. No compatible or wrong license field in 'package.json'. Without that, we can't use an image.
-3. Deprecated: Found `require('request')` in file `node_helper.js`: Replace it with built-in fetch.
 
 ### [next-train-transilien by trizome](https://github.com/trizome/next-train-transilien)
 

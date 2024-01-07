@@ -7894,6 +7894,21 @@
     "last_commit": "2023-12-31T00:38:49+03:00"
   },
   {
+    "name": "MMM-MySQLData",
+    "url": "https://github.com/tabsl/MMM-MySQLData",
+    "id": "tabsl/MMM-MySQLData",
+    "maintainer": "tabsl",
+    "maintainerURL": "",
+    "description": "Connect to a MySQL database, run a select query (one value) and display the result.",
+    "issues": 1,
+    "tags": [
+      "mysql"
+    ],
+    "license": "MIT",
+    "image": "screenshot.jpg",
+    "last_commit": "2024-01-07T22:22:34+01:00"
+  },
+  {
     "name": "MMM-MysqlQuery",
     "url": "https://github.com/ralberth/MMM-MysqlQuery",
     "id": "ralberth/MMM-MysqlQuery",
@@ -8393,14 +8408,15 @@
     "maintainer": "PierreGode",
     "maintainerURL": "https://github.com/PierreGode",
     "description": "Display your upcomming show's and movies from your next-episode account.",
-    "issues": 3,
+    "issues": 0,
     "tags": [
       "tvshows",
       "episodes",
       "movies"
     ],
-    "license": "GNU",
-    "last_commit": "2024-01-07T11:56:04+01:00"
+    "license": "GPL-3.0-only",
+    "image": "img-screenshot-qr-code.jpg",
+    "last_commit": "2024-01-07T21:48:39+01:00"
   },
   {
     "name": "next-train-transilien",
@@ -13462,7 +13478,7 @@
     "description": "Rotates through wallpapers from Bing or Reddit.",
     "issues": 8,
     "license": "MIT",
-    "last_commit": "2024-01-06T09:02:07-05:00"
+    "last_commit": "2024-01-07T14:38:43-05:00"
   },
   {
     "name": "MMM-Wallpaper",
@@ -14143,7 +14159,7 @@
       "ev"
     ],
     "license": "GNU",
-    "last_commit": "2024-01-07T12:08:26+01:00"
+    "last_commit": "2024-01-07T21:00:14+01:00"
   },
   {
     "name": "MMM-Zmanim",
