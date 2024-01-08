@@ -24,8 +24,11 @@ function updateModuleCardContainer () {
               </div>
             `;
       if (moduleData.issues > 0) {
-        const url = `https://github.com/KristjanESPERANTO/MagicMirror-3rd-Party-Modules/blob/main/result.md#${moduleData.name}-by-${moduleData.maintainer}`;
-        card.innerHTML += `<div class="issues"><a target="_blank" href="${url}">🗈</a></div>`;
+        // To reduce imbalance in the default sort order, modules from KristjanESPERANTO get a fake-issue (look at the check_modules.py). This condition is here to avoid displaying the div incorrectly.
+        if (!(moduleData.maintainer === "KristjanESPERANTO" && moduleData.issues === 1)) {
+          const url = `https://github.com/KristjanESPERANTO/MagicMirror-3rd-Party-Modules/blob/main/result.md#${moduleData.name}-by-${moduleData.maintainer}`;
+          card.innerHTML += `<div class="issues"><a target="_blank" href="${url}">🗈</a></div>`;
+        }
       }
 
       if (moduleData.image) {

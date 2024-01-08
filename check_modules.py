@@ -276,6 +276,11 @@ def check_modules():
         # Replace the issue array with the issue number. The issues were written to resuld.md and only the number of issues is relevant for the website. This reduces the size of modules.json by more than half.
         module["issues"] = len(module["issues"])
 
+        # Just to reduce imbalance in the default sort order, modules from this developer get minimum one issue.
+        if module['maintainer'] == "KristjanESPERANTO":
+            if module["issues"] == 0:
+                module["issues"] = 1
+
     print(f"{stats['module-counter']} modules analyzed. For results see file result.md.           ")
 
     # Prepearing the markdown output
