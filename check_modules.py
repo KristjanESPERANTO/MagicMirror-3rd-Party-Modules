@@ -230,6 +230,8 @@ def check_modules():
 
         if "eslintrc" in str(sorted(module_directory_path.rglob("*"))):
             module["issues"].append("Recommendation: Replace eslintrc by new flat config.")
+        elif "eslint.config" not in str(sorted(module_directory_path.rglob("*"))):
+            module["issues"].append("Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.")
 
         if not module_directory_path.is_dir():
             module["issues"] = [
