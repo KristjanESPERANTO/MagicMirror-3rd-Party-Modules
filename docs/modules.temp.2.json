@@ -5945,9 +5945,7 @@
     "maintainer": "BrianHepler",
     "maintainerURL": "",
     "description": "Display internet statistics such as strength and speed information.",
-    "issues": [
-      "`package.json` issue: No repository field."
-    ],
+    "issues": [],
     "tags": [
       "internet",
       "speed"

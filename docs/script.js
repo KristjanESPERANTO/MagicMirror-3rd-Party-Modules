@@ -90,7 +90,7 @@ function sortData (sortOption) {
       break;
     default:
       filteredModuleList.sort((a, b) =>
-      // Put oudated to the end
+        // Put oudated to the end
         Boolean(a.outdated) - Boolean(b.outdated) ||
         // Sort by issue count
         a.issues - b.issues ||

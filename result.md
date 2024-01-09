@@ -1,6 +1,6 @@
 # Result of the module analysis
 
-Last update: 2024-01-08T15:05:38+01:00 UTC
+Last update: 2024-01-09T00:44:31+01:00 UTC
 
 ## Statistics
 
@@ -9,7 +9,7 @@ Last update: 2024-01-08T15:05:38+01:00 UTC
 | modules analyzed     |   1113   |
 | maintainer           |    624   |
 | modules with issues  |   1107   |
-| issues               |   7317   |
+| issues               |   7314   |
 | modules at github    |   1104   |
 | modules at gitlab    |      8   |
 | modules at bitbucket |      1   |
@@ -4075,11 +4075,8 @@ Last update: 2024-01-08T15:05:38+01:00 UTC
 
 ### [internet-monitor by BrianHepler](https://github.com/BrianHepler/internet-monitor)
 
-1. `package.json` issue: No repository field.
-2. Recommendation: Module name doesn't follow the recommended pattern (it doesn't start with `MMM-`). Consider renaming your module.
-3. Recommendation: Found `XMLHttpRequest` in file `jquery.js`: Replace it with built-in fetch.
-4. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
-5. The branch name is 'master'. Consider renaming it to 'main'.
+1. Recommendation: Module name doesn't follow the recommended pattern (it doesn't start with `MMM-`). Consider renaming your module.
+2. The branch name is 'master'. Consider renaming it to 'main'.
 
 ### [MMM-ioBroker by ioBroker](https://github.com/ioBroker/MMM-ioBroker)
 

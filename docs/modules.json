@@ -1232,7 +1232,7 @@
       "agenda"
     ],
     "license": "MIT",
-    "last_commit": "2024-01-02T09:28:54+01:00"
+    "last_commit": "2024-01-08T16:45:41+01:00"
   },
   {
     "name": "MMM-CalendarExt3Journal",
@@ -5625,14 +5625,14 @@
     "maintainer": "BrianHepler",
     "maintainerURL": "",
     "description": "Display internet statistics such as strength and speed information.",
-    "issues": 5,
+    "issues": 2,
     "tags": [
       "internet",
       "speed"
     ],
     "license": "MIT",
     "image": ".previews-almost.jpg",
-    "last_commit": "2022-10-25T00:31:06-04:00"
+    "last_commit": "2024-01-08T18:27:41-05:00"
   },
   {
     "name": "MMM-ioBroker",
@@ -7906,7 +7906,7 @@
     ],
     "license": "MIT",
     "image": "screenshot.jpg",
-    "last_commit": "2024-01-08T08:00:17+01:00"
+    "last_commit": "2024-01-08T20:51:53+01:00"
   },
   {
     "name": "MMM-MysqlQuery",
@@ -8285,7 +8285,7 @@
     ],
     "license": "MIT",
     "image": ".github-preview.bubbles.jpg",
-    "last_commit": "2024-01-03T20:18:31+01:00"
+    "last_commit": "2024-01-08T14:29:04+00:00"
   },
   {
     "name": "MMM-Netatmo-Presence",
@@ -12801,7 +12801,7 @@
     "maintainerURL": "https://github.com/luccapolastri",
     "description": "Module that displays real time information of the public transportation service in CABA, Buenos Aires, Argentina.",
     "issues": 7,
-    "last_commit": "2022-10-28T10:16:41-03:00"
+    "last_commit": "2024-01-08T19:20:40-03:00"
   },
   {
     "name": "MMM-Trello",
