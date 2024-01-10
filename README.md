@@ -120,7 +120,7 @@ How can you use it?
   - last update date
   - number of unresolved GitHub issues to guess the module’s activation level or popularity
 - Compatibility with:
-  - the module list of `MMM-Remote-Control`: <https://github.com/Jopyth/MMM-Remote-Control/blob/master/modules.json>
+  - the module list of `MMM-Remote-Control`: <https://github.com/Jopyth/MMM-Remote-Control/blob/master/modules.json> / `MMM-Remote-Control-Repository` <https://github.com/MMRIZE/MMM-Remote-Control-Repository>
   - and mmpm <https://github.com/Bee-Mar/mmpm>
 - optimize progress information while running `npm run all`
 - Also run the tests on MagicMirror² core?

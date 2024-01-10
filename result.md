@@ -1,15 +1,15 @@
 # Result of the module analysis
 
-Last update: 2024-01-09T00:44:31+01:00 UTC
+Last update: 2024-01-10T21:25:32+01:00 UTC
 
 ## Statistics
 
 |                      | number   |
 |:---------------------|:--------:|
 | modules analyzed     |   1113   |
-| maintainer           |    624   |
+| maintainer           |    625   |
 | modules with issues  |   1107   |
-| issues               |   7314   |
+| issues               |   7310   |
 | modules at github    |   1104   |
 | modules at gitlab    |      8   |
 | modules at bitbucket |      1   |
@@ -67,6 +67,11 @@ Last update: 2024-01-09T00:44:31+01:00 UTC
 7. Recommendation: Found `axios` in file `node_helper.js`: Replace it with built-in fetch.
 8. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
 9. The branch name is 'master'. Consider renaming it to 'main'.
+
+### [MMM-AccuWeatherForecastDeluxe by maxbethge](https://github.com/maxbethge/MMM-AccuWeatherForecastDeluxe)
+
+1. Warning: No LICENSE file.
+2. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
 
 ### [MMM-Advent by Jopyth](https://github.com/Jopyth/MMM-Advent)
 
@@ -2260,7 +2265,7 @@ Last update: 2024-01-09T00:44:31+01:00 UTC
 1. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
 2. Information: There are updates for 2 dependencie(s):
    -  @mapbox/node-pre-gyp   ^1.0.10  →   ^1.0.11
-   -  @types/node           ^20.10.6  →  ^20.10.7
+   -  @types/node           ^20.10.6  →  ^20.10.8
 
 
 ### [EXT-FreeboxTV by bugsounet](https://github.com/bugsounet/EXT-FreeboxTV)
@@ -7171,15 +7176,6 @@ Last update: 2024-01-09T00:44:31+01:00 UTC
 5. Typo: Found `Magic Mirror` in file `package.json`: Replace it with `MagicMirror²`.
 6. Warning: No LICENSE file.
 7. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
-
-### [MMM-PIR-Sensor-Lite by grenagit](https://github.com/grenagit/MMM-PIR-Sensor-Lite)
-
-1. Typo: Found `Magic Mirror` in file `MMM-PIR-Sensor-Lite.js`: Replace it with `MagicMirror²`.
-2. Outdated: Found `MichMich/MagicMirror` in file `README.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
-3. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
-4. Typo: Found `Magic Mirror` in file `package.json`: Replace it with `MagicMirror²`.
-5. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
-6. The branch name is 'master'. Consider renaming it to 'main'.
 
 ### [MMM-PirateSkyForecast by dankerthrone](https://github.com/dankerthrone/MMM-PirateSkyForecast)
 

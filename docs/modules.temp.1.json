@@ -54,6 +54,15 @@
     "issues": []
   },
   {
+    "name": "MMM-AccuWeatherForecastDeluxe",
+    "url": "https://github.com/maxbethge/MMM-AccuWeatherForecastDeluxe",
+    "id": "maxbethge/MMM-AccuWeatherForecastDeluxe",
+    "maintainer": "maxbethge",
+    "maintainerURL": "",
+    "description": "Display weather information using the AccuWeather API.",
+    "issues": []
+  },
+  {
     "name": "MMM-Advent",
     "url": "https://github.com/Jopyth/MMM-Advent",
     "id": "Jopyth/MMM-Advent",
@@ -6818,15 +6827,6 @@
     "maintainer": "MarcLandis",
     "maintainerURL": "",
     "description": "This module can monitor a PIR motion sensor and put your mirror to sleep if nobody uses it.",
-    "issues": []
-  },
-  {
-    "name": "MMM-PIR-Sensor-Lite",
-    "url": "https://github.com/grenagit/MMM-PIR-Sensor-Lite",
-    "id": "grenagit/MMM-PIR-Sensor-Lite",
-    "maintainer": "grenagit",
-    "maintainerURL": "",
-    "description": "A module managing monitor with PIR motion sensor (automatic standby when presence isn't detected).",
     "issues": []
   },
   {

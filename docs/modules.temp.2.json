@@ -89,6 +89,20 @@
     "license": "MIT"
   },
   {
+    "name": "MMM-AccuWeatherForecastDeluxe",
+    "url": "https://github.com/maxbethge/MMM-AccuWeatherForecastDeluxe",
+    "id": "maxbethge/MMM-AccuWeatherForecastDeluxe",
+    "maintainer": "maxbethge",
+    "maintainerURL": "",
+    "description": "Display weather information using the AccuWeather API.",
+    "issues": [],
+    "tags": [
+      "weather"
+    ],
+    "license": "MIT",
+    "image": "screenshots-layout-bars-daily.jpg"
+  },
+  {
     "name": "MMM-Advent",
     "url": "https://github.com/Jopyth/MMM-Advent",
     "id": "Jopyth/MMM-Advent",
@@ -10192,26 +10206,6 @@
       "motion"
     ],
     "license": "MIT"
-  },
-  {
-    "name": "MMM-PIR-Sensor-Lite",
-    "url": "https://github.com/grenagit/MMM-PIR-Sensor-Lite",
-    "id": "grenagit/MMM-PIR-Sensor-Lite",
-    "maintainer": "grenagit",
-    "maintainerURL": "",
-    "description": "A module managing monitor with PIR motion sensor (automatic standby when presence isn't detected).",
-    "issues": [],
-    "tags": [
-      "motion",
-      "sensor",
-      "pir",
-      "monitor",
-      "screen",
-      "standby",
-      "automatic"
-    ],
-    "license": "MIT",
-    "image": "MMM-PIR-Sensor-Lite_screenshot1.jpg"
   },
   {
     "name": "MMM-PirateSkyForecast",
