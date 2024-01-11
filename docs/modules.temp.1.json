@@ -6830,6 +6830,16 @@
     "issues": []
   },
   {
+    "name": "MMM-PIR-Sensor-Lite",
+    "url": "https://github.com/grenagit/MMM-PIR-Sensor-Lite",
+    "id": "grenagit/MMM-PIR-Sensor-Lite",
+    "maintainer": "grenagit",
+    "maintainerURL": "",
+    "description": "A module managing monitor with PIR motion sensor (automatic standby when presence isn't detected).",
+    "issues": [],
+    "outdated": "Abandoned. Repo has been archived at 2024-01-10. There seems to be <a href=\"https://github.com/hervidero/MMM-PIR-Sensor-Lite\">an active fork</a>, but the clone command has not yet been adapted."
+  },
+  {
     "name": "MMM-PirateSkyForecast",
     "url": "https://github.com/dankerthrone/MMM-PirateSkyForecast",
     "id": "dankerthrone/MMM-PirateSkyForecast",

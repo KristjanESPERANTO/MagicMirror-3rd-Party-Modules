@@ -754,7 +754,7 @@
     ],
     "license": "MIT",
     "image": "MMM-BiathlonResults_screenshot1.jpg",
-    "last_commit": "2022-12-19T12:01:05+01:00"
+    "last_commit": "2024-01-10T15:29:32+01:00"
   },
   {
     "name": "MMM-Binance",
@@ -6177,7 +6177,7 @@
     "issues": 6,
     "license": "MIT",
     "image": "Screenshot.jpg",
-    "last_commit": "2022-07-08T18:56:57+02:00"
+    "last_commit": "2024-01-11T16:50:30+01:00"
   },
   {
     "name": "MMM-learnlanguage",
@@ -9628,6 +9628,28 @@
     "last_commit": "2023-01-04T08:30:06+01:00"
   },
   {
+    "name": "MMM-PIR-Sensor-Lite",
+    "url": "https://github.com/grenagit/MMM-PIR-Sensor-Lite",
+    "id": "grenagit/MMM-PIR-Sensor-Lite",
+    "maintainer": "grenagit",
+    "maintainerURL": "",
+    "description": "A module managing monitor with PIR motion sensor (automatic standby when presence isn't detected).",
+    "issues": 6,
+    "outdated": "Abandoned. Repo has been archived at 2024-01-10. There seems to be <a href=\"https://github.com/hervidero/MMM-PIR-Sensor-Lite\">an active fork</a>, but the clone command has not yet been adapted.",
+    "tags": [
+      "motion",
+      "sensor",
+      "pir",
+      "monitor",
+      "screen",
+      "standby",
+      "automatic"
+    ],
+    "license": "MIT",
+    "image": "MMM-PIR-Sensor-Lite_screenshot1.jpg",
+    "last_commit": "2024-01-10T15:40:16+01:00"
+  },
+  {
     "name": "MMM-PirateSkyForecast",
     "url": "https://github.com/dankerthrone/MMM-PirateSkyForecast",
     "id": "dankerthrone/MMM-PirateSkyForecast",
@@ -10343,7 +10365,7 @@
     "issues": 8,
     "license": "MIT",
     "image": "screenshotRainForecast.jpg",
-    "last_commit": "2023-12-26T21:06:20+01:00"
+    "last_commit": "2024-01-11T08:24:55+01:00"
   },
   {
     "name": "random_quotes",
@@ -10683,7 +10705,7 @@
     "issues": 5,
     "license": "MIT",
     "image": "screenshot.jpg",
-    "last_commit": "2023-11-11T10:23:04-06:00"
+    "last_commit": "2024-01-11T09:30:57-06:00"
   },
   {
     "name": "MMM-RKI-Covid19",
@@ -13274,7 +13296,7 @@
     ],
     "license": "MIT",
     "image": "MMM-VigilanceMeteoFrance_screenshot1.jpg",
-    "last_commit": "2023-09-30T17:34:44+02:00"
+    "last_commit": "2024-01-11T18:36:25+01:00"
   },
   {
     "name": "MMM-Vindsiden",
