@@ -253,7 +253,7 @@
     ],
     "license": "MIT",
     "image": "public-AlexaLogoGrey.jpg",
-    "last_commit": "2023-12-12T12:12:46+01:00"
+    "last_commit": "2024-01-12T10:51:59+01:00"
   },
   {
     "name": "MMM-AlexaOnOff",
@@ -3192,7 +3192,7 @@
     ],
     "license": "MIT",
     "image": "resources-Spotify-Logo.jpg",
-    "last_commit": "2024-01-03T16:30:27+01:00"
+    "last_commit": "2024-01-12T01:42:36+01:00"
   },
   {
     "name": "EXT-Motion",
@@ -3393,7 +3393,7 @@
     "issues": 2,
     "license": "MIT",
     "image": "icons-Sample-access_time.jpg",
-    "last_commit": "2024-01-03T16:38:24+01:00"
+    "last_commit": "2024-01-12T01:41:46+01:00"
   },
   {
     "name": "EXT-TelegramBot",
@@ -3467,7 +3467,7 @@
     ],
     "license": "MIT",
     "image": "resources-Screenshot1.jpg",
-    "last_commit": "2024-01-03T16:40:30+01:00"
+    "last_commit": "2024-01-12T01:42:23+01:00"
   },
   {
     "name": "EXT-YouTubeCast",
@@ -4439,16 +4439,17 @@
     "maintainer": "bugsounet",
     "maintainerURL": "https://wiki.bugsounet.fr",
     "description": "MMM-GoogleAssistant is an real embedded Google assistant on MagicMirror\u00b2 with many <a target=\"_blank\" href=\"#extended-plugins-for-mmm-googleassistant-by-bugsounet\">plugins</a> . [Maintained].",
-    "issues": 10,
+    "issues": 3,
     "tags": [
       "google assistant",
       "voice",
       "embedded",
-      "assistant for device"
+      "assistant for device",
+      "voice control"
     ],
     "license": "MIT",
     "image": "resources-previewFS.jpg",
-    "last_commit": "2024-01-03T16:18:08+01:00"
+    "last_commit": "2024-01-12T15:51:11+01:00"
   },
   {
     "name": "MMM-GoogleAssistant",
@@ -9966,7 +9967,7 @@
     "issues": 15,
     "license": "MIT",
     "image": "images-CarCharging.jpg",
-    "last_commit": "2024-01-10T09:56:20-05:00"
+    "last_commit": "2024-01-12T11:57:38-05:00"
   },
   {
     "name": "MMM-PrayerTime",
@@ -10343,7 +10344,7 @@
     ],
     "license": "MIT",
     "image": "screenshot2.jpg",
-    "last_commit": "2022-05-25T15:07:45+02:00"
+    "last_commit": "2024-01-12T20:21:32+01:00"
   },
   {
     "name": "MMM-RainForecast",

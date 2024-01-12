@@ -1,6 +1,6 @@
 # Result of the module analysis
 
-Last update: 2024-01-11T23:06:45+01:00 UTC
+Last update: 2024-01-12T20:46:57+01:00 UTC
 
 ## Statistics
 
@@ -9,7 +9,7 @@ Last update: 2024-01-11T23:06:45+01:00 UTC
 | modules analyzed     |   1114   |
 | maintainer           |    625   |
 | modules with issues  |   1108   |
-| issues               |   7317   |
+| issues               |   7310   |
 | modules at github    |   1105   |
 | modules at gitlab    |      8   |
 | modules at bitbucket |      1   |
@@ -3155,16 +3155,9 @@ Last update: 2024-01-11T23:06:45+01:00 UTC
 
 ### [MMM-GoogleAssistant by bugsounet](https://github.com/bugsounet/MMM-GoogleAssistant)
 
-1. Recommendation: Found `new Date()` in file `EXT_Tools.js`: Replace it by `new Date(Date.now())`: [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
-2. Recommendation: Found `new Date()` in file `SH_Middleware.js`: Replace it by `new Date(Date.now())`: [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
-3. Typo: Found `Magic Mirror` in file `fr.json`: Replace it with `MagicMirror²`.
-4. Deprecated: Found `"grunt"` in file `fa-brands-400.svg`: Grunt is practically unmaintained. Move on to something better.
-5. Recommendation: Found `new Date()` in file `FileReader.js`: Replace it by `new Date(Date.now())`: [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
-6. Recommendation: Found `XMLHttpRequest` in file `jquery.min.js`: Replace it with built-in fetch.
-7. Typo: Found `Magic Mirror` in file `default.home`: Replace it with `MagicMirror²`.
-8. Typo: Found `Magic Mirror` in file `tr.home`: Replace it with `MagicMirror²`.
-9. Recommendation: Found `XMLHttpRequest` in file `EXT_Restart.js`: Replace it with built-in fetch.
-10. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
+1. Deprecated: Found `"grunt"` in file `fa-brands-400.svg`: Grunt is practically unmaintained. Move on to something better.
+2. Recommendation: Found `XMLHttpRequest` in file `jquery.min.js`: Replace it with built-in fetch.
+3. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
 
 ### [MMM-GoogleAssistant by gauravsacc](https://github.com/gauravsacc/MMM-GoogleAssistant)
 

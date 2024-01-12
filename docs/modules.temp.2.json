@@ -4696,7 +4696,8 @@
       "google assistant",
       "voice",
       "embedded",
-      "assistant for device"
+      "assistant for device",
+      "voice control"
     ],
     "license": "MIT",
     "image": "resources-previewFS.jpg"
