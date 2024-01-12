@@ -32,7 +32,7 @@
     "husky": "latest",
     "lint-staged": "latest",
     "markdownlint-cli": "latest",
-    "prettier": "^3.1.1",
+    "prettier": "^3.2.1",
     "stylelint": "latest",
     "stylelint-config-standard": "latest",
     "stylelint-prettier": "latest"
@@ -55,6 +55,6 @@
     "normalize-package-data": "^6.0.0",
     "npm-check-updates": "^16.14.12",
     "sanitize-html": "^2.11.0",
-    "sharp": "^0.33.1"
+    "sharp": "^0.33.2"
   }
 }
