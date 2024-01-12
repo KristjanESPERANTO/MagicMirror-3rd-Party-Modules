@@ -20,7 +20,7 @@ function updateModuleCardContainer () {
               <div class="card-header">
                 <a href="${moduleData.url}" target="_blank">${moduleData.name}</a>
                 <div class="maintainer">maintained by ${moduleData.maintainer}</div>
-                <div class="last-commit">last commit: ${moduleData.last_commit.split("T")[0]}</div>
+                <div class="last-commit">last commit: ${moduleData.lastCommit.split("T")[0]}</div>
               </div>
             `;
       if (moduleData.issues > 0) {
@@ -79,7 +79,7 @@ function sortData (sortOption) {
   switch (sortOption) {
     case "lastcommit":
       filteredModuleList.sort((a, b) =>
-        b.last_commit.localeCompare(a.last_commit));
+        b.lastCommit.localeCompare(a.lastCommit));
       break;
     case "name":
       filteredModuleList.sort((a, b) => {
@@ -95,7 +95,7 @@ function sortData (sortOption) {
         // Sort by issue count
         a.issues - b.issues ||
         // Sort by last commit date
-        b.last_commit.localeCompare(a.last_commit));
+        b.lastCommit.localeCompare(a.lastCommit));
   }
 }
 
@@ -132,7 +132,7 @@ function removeSelectedMarkingFromTagsAndCards () {
 }
 
 function displayStatistics (data) {
-  const lastUpdateDate = new Date(data["last-update"]).toLocaleString();
+  const lastUpdateDate = new Date(data.lastUpdate).toLocaleString();
   const lastUpdateDiv = document.getElementById("last-update");
   lastUpdateDiv.innerHTML = `Last update: ${lastUpdateDate}`;
 }

@@ -171,24 +171,24 @@ def check_modules():
     modules_json_file = open("./docs/modules.temp.2.json", encoding="utf-8")
     modules = json.load(modules_json_file)
     stats = {
-        "module-counter": 0,
-        "modules-with-image-counter": 0,
-        "modules-with-issues-counter": 0,
-        "issue-counter": 0,
-        "last-update": datetime.now().astimezone().replace(microsecond=0).isoformat(),
-        "repository-hoster": {},
+        "moduleCounter": 0,
+        "modulesWithImageCounter": 0,
+        "modulesWithIssuesCounter": 0,
+        "issueCounter": 0,
+        "lastUpdate": datetime.now().astimezone().replace(microsecond=0).isoformat(),
+        "repositoryHoster": {},
         "maintainer": {},
     }
 
     markdown_output_modules = ""
 
     for module in modules:
-        stats["module-counter"] += 1
+        stats["moduleCounter"] += 1
 
         module_directory = module["name"] + "-----" + module["maintainer"]
 
         # Print progress
-        progress = f"{stats['module-counter']:4}/{len(modules)}\r"
+        progress = f"{stats['moduleCounter']:4}/{len(modules)}\r"
         print(progress, end="")
 
         if module["name"].startswith("EXT-"):
@@ -243,30 +243,30 @@ def check_modules():
         check_dependency_updates(module, module_directory_path)
 
         if "outdated" in module or len(module["issues"]) > 0:
-            stats["modules-with-issues-counter"] += 1
+            stats["modulesWithIssuesCounter"] += 1
             markdown_output_modules += f"\n### [{module['name']} by {module['maintainer']}]({module['url']})\n\n"
 
             if "outdated" in module:
-                stats["issue-counter"] += 1
+                stats["issueCounter"] += 1
                 markdown_output_modules += (
                     f"0. This module is outdated: {module['outdated']}\n"
                 )
 
             if len(module["issues"]) > 0:
-                stats["issue-counter"] += len(module["issues"])
+                stats["issueCounter"] += len(module["issues"])
                 for idx, issue in enumerate(module["issues"]):
                     markdown_output_modules += f"{idx+1}. {issue}\n"
 
         get_last_commit_date(module, module_directory_path)
 
         if "image" in module:
-            stats["modules-with-image-counter"] += 1
+            stats["modulesWithImageCounter"] += 1
 
         repository_hoster = module["url"].split(".")[0].split("/")[2]
-        if repository_hoster not in stats["repository-hoster"]:
-            stats["repository-hoster"][repository_hoster] = 1
+        if repository_hoster not in stats["repositoryHoster"]:
+            stats["repositoryHoster"][repository_hoster] = 1
         else:
-            stats["repository-hoster"][repository_hoster] += 1
+            stats["repositoryHoster"][repository_hoster] += 1
 
         if module["maintainer"] not in stats["maintainer"]:
             stats["maintainer"][module["maintainer"]] = 1
@@ -281,20 +281,20 @@ def check_modules():
             if module["issues"] == 0:
                 module["issues"] = 1
 
-    print(f"{stats['module-counter']} modules analyzed. For results see file result.md.           ")
+    print(f"{stats['moduleCounter']} modules analyzed. For results see file result.md.           ")
 
     # Prepearing the markdown output
     markdown_output =   "# Result of the module analysis\n\n"
-    markdown_output += f"Last update: {stats['last-update']} UTC\n\n"
+    markdown_output += f"Last update: {stats['lastUpdate']} UTC\n\n"
     markdown_output +=  "## Statistics\n\n"
     markdown_output +=  "|                      | number   |\n"
     markdown_output +=  "|:---------------------|:--------:|\n"
-    markdown_output += f"| modules analyzed     | {             stats['module-counter']:>6}   |\n"
-    markdown_output += f"| maintainer           | {            len(stats['maintainer']):>6}   |\n"
-    markdown_output += f"| modules with issues  | {stats['modules-with-issues-counter']:>6}   |\n"
-    markdown_output += f"| issues               | {              stats['issue-counter']:>6}   |\n"
+    markdown_output += f"| modules analyzed     | {           stats['moduleCounter']:>6}   |\n"
+    markdown_output += f"| maintainer           | {         len(stats['maintainer']):>6}   |\n"
+    markdown_output += f"| modules with issues  | {stats['modulesWithIssuesCounter']:>6}   |\n"
+    markdown_output += f"| issues               | {            stats['issueCounter']:>6}   |\n"
 
-    for hoster, number in stats["repository-hoster"].items():
+    for hoster, number in stats["repositoryHoster"].items():
         markdown_output += f"| modules at {hoster:9} | {                              number:>6}   |\n"
 
     markdown_output += "\n## Modules with issues\n"
@@ -331,7 +331,7 @@ def check_modules():
         outfile.write(statistics_json_object)
 
 def get_last_commit_date(module, module_directory_path):
-    module["last_commit"] = (
+    module["lastCommit"] = (
             subprocess.run(
                 f"cd {module_directory_path} && git log -1 --format='%aI' && cd .. && cd ..",
                 stdout=subprocess.PIPE,

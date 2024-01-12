@@ -1,10 +1,10 @@
 {
-  "module-counter": 1114,
-  "modules-with-image-counter": 479,
-  "modules-with-issues-counter": 1108,
-  "issue-counter": 7310,
-  "last-update": "2024-01-12T20:46:57+01:00",
-  "repository-hoster": {
+  "moduleCounter": 1114,
+  "modulesWithImageCounter": 479,
+  "modulesWithIssuesCounter": 1108,
+  "issueCounter": 7310,
+  "lastUpdate": "2024-01-12T20:46:57+01:00",
+  "repositoryHoster": {
     "github": 1105,
     "gitlab": 8,
     "bitbucket": 1
