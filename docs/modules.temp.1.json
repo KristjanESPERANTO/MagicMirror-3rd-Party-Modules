@@ -2903,6 +2903,15 @@
     "issues": []
   },
   {
+    "name": "MMM-FranceInfo",
+    "url": "https://github.com/bugsounet/MMM-FranceInfo",
+    "id": "bugsounet/MMM-FranceInfo",
+    "maintainer": "bugsounet",
+    "maintainerURL": "",
+    "description": "[FR] Affiche les flux rss de <a target=\"_blank\" href=\"https://www.francetvinfo.fr/\">franceinfo</a> sur MagicMirror².",
+    "issues": []
+  },
+  {
     "name": "MMM-FreeBox-Monitor",
     "url": "https://github.com/tataille/MMM-FreeBox-Monitor",
     "id": "tataille/MMM-FreeBox-Monitor",

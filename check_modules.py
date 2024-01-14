@@ -285,7 +285,7 @@ def check_modules():
 
     # Prepearing the markdown output
     markdown_output =   "# Result of the module analysis\n\n"
-    markdown_output += f"Last update: {stats['lastUpdate']} UTC\n\n"
+    markdown_output += f"Last update: {stats['lastUpdate']}\n\n"
     markdown_output +=  "## Statistics\n\n"
     markdown_output +=  "|                      | number   |\n"
     markdown_output +=  "|:---------------------|:--------:|\n"

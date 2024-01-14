@@ -50,6 +50,7 @@ const config = [
       "@stylistic/function-call-argument-newline": ["error", "consistent"],
       "@stylistic/implicit-arrow-linebreak": "off",
       "@stylistic/indent": ["error", 2],
+      "@stylistic/multiline-ternary": "off",
       "@stylistic/object-property-newline": "off",
       "@stylistic/padded-blocks": ["error", "never"]
     }

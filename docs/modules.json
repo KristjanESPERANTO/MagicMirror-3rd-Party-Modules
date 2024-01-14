@@ -1150,7 +1150,7 @@
     ],
     "license": "MIT",
     "image": "screenshot.jpg",
-    "lastCommit": "2022-06-01T14:35:14+02:00"
+    "lastCommit": "2024-01-13T14:13:10+01:00"
   },
   {
     "name": "MMM-Button",
@@ -4074,6 +4074,18 @@
     "description": "Controlling an RGB-LED strip around a smart mirror with or without touch input. It provides features for static background lighting, highly customizable effects on notifications and party lighting.",
     "issues": 8,
     "lastCommit": "2024-01-01T11:52:28+01:00"
+  },
+  {
+    "name": "MMM-FranceInfo",
+    "url": "https://github.com/bugsounet/MMM-FranceInfo",
+    "id": "bugsounet/MMM-FranceInfo",
+    "maintainer": "bugsounet",
+    "maintainerURL": "",
+    "description": "[FR] Affiche les flux rss de <a target=\"_blank\" href=\"https://www.francetvinfo.fr/\">franceinfo</a> sur MagicMirror\u00b2.",
+    "issues": 5,
+    "license": "MIT",
+    "image": "FRINFO.jpg",
+    "lastCommit": "2024-01-14T00:44:11+01:00"
   },
   {
     "name": "MMM-FreeBox-Monitor",
@@ -10344,7 +10356,7 @@
     ],
     "license": "MIT",
     "image": "screenshot2.jpg",
-    "lastCommit": "2024-01-12T20:21:32+01:00"
+    "lastCommit": "2024-01-13T14:01:57+01:00"
   },
   {
     "name": "MMM-RainForecast",
@@ -10683,7 +10695,7 @@
     ],
     "license": "MIT",
     "image": "scr1.jpg",
-    "lastCommit": "2022-05-30T11:17:34+02:00"
+    "lastCommit": "2024-01-13T14:09:44+01:00"
   },
   {
     "name": "MMM-Ring",

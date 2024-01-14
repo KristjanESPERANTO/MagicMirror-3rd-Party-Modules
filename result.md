@@ -1,16 +1,16 @@
 # Result of the module analysis
 
-Last update: 2024-01-12T20:46:57+01:00 UTC
+Last update: 2024-01-14T15:30:52+01:00
 
 ## Statistics
 
 |                      | number   |
 |:---------------------|:--------:|
-| modules analyzed     |   1114   |
+| modules analyzed     |   1115   |
 | maintainer           |    625   |
-| modules with issues  |   1108   |
-| issues               |   7310   |
-| modules at github    |   1105   |
+| modules with issues  |   1109   |
+| issues               |   7315   |
+| modules at github    |   1106   |
 | modules at gitlab    |      8   |
 | modules at bitbucket |      1   |
 
@@ -2888,6 +2888,14 @@ Last update: 2024-01-12T20:46:57+01:00 UTC
 6. Recommendation: Found `"node-fetch"` in file `node_helper.js`: Replace it with built-in fetch.
 7. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
 8. The branch name is 'master'. Consider renaming it to 'main'.
+
+### [MMM-FranceInfo by bugsounet](https://github.com/bugsounet/MMM-FranceInfo)
+
+1. There are no keywords in 'package.json'. We would use them as tags on the module list page.
+2. Typo: Found `Magic Mirror` in file `MMM-FranceInfo.css`: Replace it with `MagicMirror²`.
+3. Typo: Found `Magic Mirror` in file `MMM-FranceInfo.js`: Replace it with `MagicMirror²`.
+4. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
+5. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
 
 ### [MMM-FreeBox-Monitor by tataille](https://github.com/tataille/MMM-FreeBox-Monitor)
 
