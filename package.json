@@ -32,7 +32,7 @@
     "husky": "latest",
     "lint-staged": "latest",
     "markdownlint-cli": "latest",
-    "prettier": "^3.2.1",
+    "prettier": "^3.2.2",
     "stylelint": "latest",
     "stylelint-config-standard": "latest",
     "stylelint-prettier": "latest"

@@ -3259,7 +3259,7 @@
     "url": "https://github.com/hermanho/MMM-GooglePhotos",
     "id": "hermanho/MMM-GooglePhotos",
     "maintainer": "hermanho",
-    "maintainerURL": "",
+    "maintainerURL": "https://github.com/hermanho",
     "description": "Image gallery or wallpaper with your Google Photos account.",
     "issues": []
   },
@@ -6340,6 +6340,15 @@
     "maintainer": "KristjanESPERANTO",
     "maintainerURL": "",
     "description": "Display current and forecast weather based on the Openweathermap OneCall API data with alternative formatting.",
+    "issues": []
+  },
+  {
+    "name": "MMM-OneDrive",
+    "url": "https://github.com/hermanho/MMM-OneDrive",
+    "id": "hermanho/MMM-OneDrive",
+    "maintainer": "hermanho",
+    "maintainerURL": "https://github.com/hermanho",
+    "description": "Display your photos from Microsoft OneDrive.",
     "issues": []
   },
   {

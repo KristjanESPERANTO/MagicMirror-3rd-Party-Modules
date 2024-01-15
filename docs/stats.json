@@ -1,11 +1,11 @@
 {
-  "moduleCounter": 1115,
-  "modulesWithImageCounter": 480,
-  "modulesWithIssuesCounter": 1109,
-  "issueCounter": 7315,
-  "lastUpdate": "2024-01-14T15:30:52+01:00",
+  "moduleCounter": 1116,
+  "modulesWithImageCounter": 483,
+  "modulesWithIssuesCounter": 1110,
+  "issueCounter": 7316,
+  "lastUpdate": "2024-01-15T17:55:33+01:00",
   "repositoryHoster": {
-    "github": 1106,
+    "github": 1107,
     "gitlab": 8,
     "bitbucket": 1
   },
@@ -150,6 +150,7 @@
     "raywo": 2,
     "victor-paumier": 2,
     "mrdis": 2,
+    "hermanho": 2,
     "pjestico": 2,
     "Jacopo1891": 2,
     "mochman": 2,
@@ -326,7 +327,6 @@
     "sp4ceman": 1,
     "MartinGris": 1,
     "vicmora": 1,
-    "hermanho": 1,
     "ryan-d-williams": 1,
     "Gismo150": 1,
     "jayked": 1,

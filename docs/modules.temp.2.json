@@ -4678,13 +4678,12 @@
     "maintainer": "shaneapowell",
     "maintainerURL": "",
     "description": "Show a list of unread gmails.",
-    "issues": [
-      "`package.json` issue: No repository field.",
-      "`package.json` issue: No license field."
-    ],
+    "issues": [],
     "tags": [
       "mirror email"
-    ]
+    ],
+    "license": "MIT",
+    "image": "example1.jpg"
   },
   {
     "name": "MMM-google-route",
@@ -4862,7 +4861,7 @@
     "url": "https://github.com/hermanho/MMM-GooglePhotos",
     "id": "hermanho/MMM-GooglePhotos",
     "maintainer": "hermanho",
-    "maintainerURL": "",
+    "maintainerURL": "https://github.com/hermanho",
     "description": "Image gallery or wallpaper with your Google Photos account.",
     "issues": [
       "There are no keywords in 'package.json'. We would use them as tags on the module list page."
@@ -9493,6 +9492,19 @@
     "image": "OneCallWeather-Screenshot.jpg"
   },
   {
+    "name": "MMM-OneDrive",
+    "url": "https://github.com/hermanho/MMM-OneDrive",
+    "id": "hermanho/MMM-OneDrive",
+    "maintainer": "hermanho",
+    "maintainerURL": "https://github.com/hermanho",
+    "description": "Display your photos from Microsoft OneDrive.",
+    "issues": [
+      "There are no keywords in 'package.json'. We would use them as tags on the module list page."
+    ],
+    "license": "MIT",
+    "image": "images-authorize.jpg"
+  },
+  {
     "name": "MMM-OneTouchReveal",
     "url": "https://github.com/Canonip/MMM-OneTouchReveal",
     "id": "Canonip/MMM-OneTouchReveal",
@@ -10563,8 +10575,11 @@
     "maintainerURL": "https://github.com/reidarw",
     "description": "Module for showing showing the next post delivery day for your zip code in Norway.",
     "issues": [
-      "There is no `package.json`. We need this file to gather information about the module for the module list page."
-    ]
+      "`package.json` issue: No repository field.",
+      "There are no specific keywords in 'package.json'. We would use them as tags on the module list page. Add a few meaningful terms to the keywords in the package.json. Not just “magicmirror” or “module”."
+    ],
+    "license": "MIT",
+    "image": "MMM-PostDelivery-Norway.jpg"
   },
   {
     "name": "MMM-Postnord",

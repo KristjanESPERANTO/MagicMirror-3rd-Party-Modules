@@ -688,7 +688,7 @@
     "maintainerURL": "https://github.com/ItsMeBrille",
     "description": "Display current fuel prices at your nearest gas station in Norway.",
     "issues": 4,
-    "lastCommit": "2023-12-10T20:49:35+01:00"
+    "lastCommit": "2024-01-14T18:05:22+01:00"
   },
   {
     "name": "MMM-bergfex",
@@ -4428,11 +4428,13 @@
     "maintainer": "shaneapowell",
     "maintainerURL": "",
     "description": "Show a list of unread gmails.",
-    "issues": 8,
+    "issues": 1,
     "tags": [
       "mirror email"
     ],
-    "lastCommit": "2022-02-18T07:55:34-06:00"
+    "license": "MIT",
+    "image": "example1.jpg",
+    "lastCommit": "2024-01-15T08:14:43-06:00"
   },
   {
     "name": "MMM-google-route",
@@ -4599,7 +4601,7 @@
     "url": "https://github.com/hermanho/MMM-GooglePhotos",
     "id": "hermanho/MMM-GooglePhotos",
     "maintainer": "hermanho",
-    "maintainerURL": "",
+    "maintainerURL": "https://github.com/hermanho",
     "description": "Image gallery or wallpaper with your Google Photos account.",
     "issues": 10,
     "license": "MIT",
@@ -4685,7 +4687,7 @@
     "issues": 6,
     "license": "MIT",
     "image": "screen-01-minimal_look.jpg",
-    "lastCommit": "2023-12-06T00:25:38+01:00"
+    "lastCommit": "2024-01-15T09:25:22+01:00"
   },
   {
     "name": "MMM-GoogleTTS",
@@ -8928,7 +8930,7 @@
     "maintainerURL": "",
     "description": "Make mirrors great again (?): a daily historical fact.",
     "issues": 7,
-    "lastCommit": "2023-05-11T13:36:37+01:00"
+    "lastCommit": "2024-01-15T13:07:47+00:00"
   },
   {
     "name": "MMM-OneBusAway",
@@ -8954,6 +8956,18 @@
     "license": "MIT",
     "image": "OneCallWeather-Screenshot.jpg",
     "lastCommit": "2024-01-01T23:18:13+01:00"
+  },
+  {
+    "name": "MMM-OneDrive",
+    "url": "https://github.com/hermanho/MMM-OneDrive",
+    "id": "hermanho/MMM-OneDrive",
+    "maintainer": "hermanho",
+    "maintainerURL": "https://github.com/hermanho",
+    "description": "Display your photos from Microsoft OneDrive.",
+    "issues": 6,
+    "license": "MIT",
+    "image": "images-authorize.jpg",
+    "lastCommit": "2024-01-14T22:06:55+00:00"
   },
   {
     "name": "MMM-OneTouchReveal",
@@ -9030,7 +9044,7 @@
     ],
     "license": "MIT",
     "image": ".github-content-banner-social.jpg",
-    "lastCommit": "2024-01-08T23:19:54-03:00"
+    "lastCommit": "2024-01-15T13:47:18-03:00"
   },
   {
     "name": "MMM-OnThisDay",
@@ -9153,7 +9167,7 @@
     "issues": 8,
     "license": "MIT",
     "image": "screenshots-MMM-OpenWeatherMapForecast.jpg",
-    "lastCommit": "2022-04-08T21:52:33+02:00"
+    "lastCommit": "2023-04-06T12:04:05-07:00"
   },
   {
     "name": "MMM-OsloCityBike",
@@ -9489,7 +9503,7 @@
     ],
     "license": "ISC",
     "image": "images-screenshot.jpg",
-    "lastCommit": "2023-12-13T16:20:24+02:00"
+    "lastCommit": "2024-01-15T17:36:35+02:00"
   },
   {
     "name": "phone-notification-mirror",
@@ -9954,8 +9968,10 @@
     "maintainer": "reidarw",
     "maintainerURL": "https://github.com/reidarw",
     "description": "Module for showing showing the next post delivery day for your zip code in Norway.",
-    "issues": 8,
-    "lastCommit": "2023-05-02T22:38:32+02:00"
+    "issues": 10,
+    "license": "MIT",
+    "image": "MMM-PostDelivery-Norway.jpg",
+    "lastCommit": "2024-01-15T09:44:37+01:00"
   },
   {
     "name": "MMM-Postnord",
@@ -10409,7 +10425,7 @@
     "maintainerURL": "https://github.com/jacopo1891",
     "description": "Display a random quote from various authorship using Paperquote's API.",
     "issues": 5,
-    "lastCommit": "2023-03-29T00:54:35+02:00"
+    "lastCommit": "2024-01-15T09:26:01+01:00"
   },
   {
     "name": "MMM-RandomQuranAyah",
@@ -13740,7 +13756,7 @@
     "maintainerURL": "https://github.com/NikolasRupp",
     "description": "Shows Status of your VW ID Car based on We Connect.",
     "issues": 3,
-    "lastCommit": "2023-06-03T08:38:18+02:00"
+    "lastCommit": "2024-01-15T10:13:53+01:00"
   },
   {
     "name": "MMM-WeeklySchedule",
