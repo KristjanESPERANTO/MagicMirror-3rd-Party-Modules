@@ -4974,6 +4974,17 @@
     "image": ".github-TTS.jpg"
   },
   {
+    "name": "MMM-GPIO-HANDLER",
+    "url": "https://github.com/Sjohn21/MMM-GPIO-HANDLER",
+    "id": "Sjohn21/MMM-GPIO-HANDLER",
+    "maintainer": "Sjohn21",
+    "maintainerURL": "https://github.com/Sjohn21",
+    "description": "Handle GPIO, Inputs (Buttons, PIR, Other) and Outputs (including PWM), with notifications from and to other modules.",
+    "issues": [
+      "An error occurred while getting information from 'package.json': Error: Invalid version: \"0.1\""
+    ]
+  },
+  {
     "name": "MMM-GPIO-Notifications",
     "url": "https://github.com/Tom-Hirschberger/MMM-GPIO-Notifications",
     "id": "Tom-Hirschberger/MMM-GPIO-Notifications",
@@ -6450,9 +6461,10 @@
     "maintainerURL": "",
     "description": "Compliment clone - allows to define when (at which hour) the used kudo(compliment) subset will change and you can define further subsets - up to one for each hour.",
     "issues": [
-      "`package.json` issue: No repository field.",
-      "There are no keywords in 'package.json'. We would use them as tags on the module list page.",
       "No image found."
+    ],
+    "tags": [
+      "screen"
     ],
     "license": "MIT"
   },

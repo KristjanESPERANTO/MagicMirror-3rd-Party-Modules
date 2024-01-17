@@ -3336,6 +3336,15 @@
     "issues": []
   },
   {
+    "name": "MMM-GPIO-HANDLER",
+    "url": "https://github.com/Sjohn21/MMM-GPIO-HANDLER",
+    "id": "Sjohn21/MMM-GPIO-HANDLER",
+    "maintainer": "Sjohn21",
+    "maintainerURL": "https://github.com/Sjohn21",
+    "description": "Handle GPIO, Inputs (Buttons, PIR, Other) and Outputs (including PWM), with notifications from and to other modules.",
+    "issues": []
+  },
+  {
     "name": "MMM-GPIO-Notifications",
     "url": "https://github.com/Tom-Hirschberger/MMM-GPIO-Notifications",
     "id": "Tom-Hirschberger/MMM-GPIO-Notifications",

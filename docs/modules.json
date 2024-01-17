@@ -2913,8 +2913,8 @@
     "maintainer": "Arve",
     "maintainerURL": "",
     "description": "Display public transport information/departure boards for any public transport in Norway.",
-    "issues": 4,
-    "lastCommit": "2023-06-17T14:59:34+02:00"
+    "issues": 5,
+    "lastCommit": "2024-01-17T15:17:41+01:00"
   },
   {
     "name": "MMM-EnvCanada",
@@ -4707,6 +4707,16 @@
     "lastCommit": "2023-11-27T16:14:27+01:00"
   },
   {
+    "name": "MMM-GPIO-HANDLER",
+    "url": "https://github.com/Sjohn21/MMM-GPIO-HANDLER",
+    "id": "Sjohn21/MMM-GPIO-HANDLER",
+    "maintainer": "Sjohn21",
+    "maintainerURL": "https://github.com/Sjohn21",
+    "description": "Handle GPIO, Inputs (Buttons, PIR, Other) and Outputs (including PWM), with notifications from and to other modules.",
+    "issues": 9,
+    "lastCommit": "2024-01-16T21:54:37+01:00"
+  },
+  {
     "name": "MMM-GPIO-Notifications",
     "url": "https://github.com/Tom-Hirschberger/MMM-GPIO-Notifications",
     "id": "Tom-Hirschberger/MMM-GPIO-Notifications",
@@ -6109,9 +6119,12 @@
     "maintainer": "thomo",
     "maintainerURL": "",
     "description": "Compliment clone - allows to define when (at which hour) the used kudo(compliment) subset will change and you can define further subsets - up to one for each hour.",
-    "issues": 9,
+    "issues": 5,
+    "tags": [
+      "screen"
+    ],
     "license": "MIT",
-    "lastCommit": "2023-12-23T11:23:17+01:00"
+    "lastCommit": "2024-01-16T19:45:51+01:00"
   },
   {
     "name": "MMM-KVV",
@@ -7403,7 +7416,7 @@
     "maintainerURL": "",
     "description": "Display your calendar events in a monthly calendar view.",
     "issues": 4,
-    "lastCommit": "2023-02-24T06:37:26-05:00"
+    "lastCommit": "2024-01-16T18:40:51-05:00"
   },
   {
     "name": "MMM-Moon",
@@ -9044,7 +9057,7 @@
     ],
     "license": "MIT",
     "image": ".github-content-banner-social.jpg",
-    "lastCommit": "2024-01-15T13:47:18-03:00"
+    "lastCommit": "2024-01-15T14:48:11-03:00"
   },
   {
     "name": "MMM-OnThisDay",
@@ -9503,7 +9516,7 @@
     ],
     "license": "ISC",
     "image": "images-screenshot.jpg",
-    "lastCommit": "2024-01-15T17:36:35+02:00"
+    "lastCommit": "2024-01-17T17:15:47+02:00"
   },
   {
     "name": "phone-notification-mirror",
@@ -10394,7 +10407,7 @@
     "issues": 8,
     "license": "MIT",
     "image": "screenshotRainForecast.jpg",
-    "lastCommit": "2024-01-11T08:24:55+01:00"
+    "lastCommit": "2024-01-17T13:09:30+01:00"
   },
   {
     "name": "random_quotes",
@@ -12846,7 +12859,7 @@
     "maintainerURL": "https://github.com/luccapolastri",
     "description": "Module that displays real time information of the public transportation service in CABA, Buenos Aires, Argentina.",
     "issues": 7,
-    "lastCommit": "2024-01-08T19:20:40-03:00"
+    "lastCommit": "2024-01-09T00:33:24-03:00"
   },
   {
     "name": "MMM-Trello",
@@ -13523,7 +13536,7 @@
     "description": "Rotates through wallpapers from Bing or Reddit.",
     "issues": 9,
     "license": "MIT",
-    "lastCommit": "2024-01-07T14:38:43-05:00"
+    "lastCommit": "2024-01-16T19:26:18-05:00"
   },
   {
     "name": "MMM-Wallpaper",
