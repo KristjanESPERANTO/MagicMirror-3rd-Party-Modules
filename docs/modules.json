@@ -2457,7 +2457,7 @@
     "issues": 10,
     "license": "MIT",
     "image": "wait-times-demo.jpg",
-    "lastCommit": "2023-08-07T11:33:01-04:00"
+    "lastCommit": "2024-01-18T09:36:41-05:00"
   },
   {
     "name": "MMM-DockerVisualizer",
@@ -3948,9 +3948,10 @@
     "maintainer": "tbouron",
     "maintainerURL": "https://github.com/tbouron",
     "description": "Module that uses ADS-B systems to track and display nearby planes.",
-    "issues": 8,
-    "license": "Apache 2.0",
-    "lastCommit": "2022-11-30T13:25:42+01:00"
+    "issues": 5,
+    "license": "Apache-2.0",
+    "image": "screenshot-at-the-window.jpg",
+    "lastCommit": "2024-01-18T11:58:43+01:00"
   },
   {
     "name": "MMM-FlipClock",
@@ -4434,7 +4435,7 @@
     ],
     "license": "MIT",
     "image": "example1.jpg",
-    "lastCommit": "2024-01-15T08:14:43-06:00"
+    "lastCommit": "2024-01-18T11:21:58-06:00"
   },
   {
     "name": "MMM-google-route",
@@ -8328,7 +8329,7 @@
     ],
     "license": "MIT",
     "image": ".github-preview.bubbles.jpg",
-    "lastCommit": "2024-01-10T18:53:02+00:00"
+    "lastCommit": "2024-01-18T13:12:22+00:00"
   },
   {
     "name": "MMM-Netatmo-Presence",
@@ -11772,7 +11773,7 @@
     "issues": 6,
     "license": "MIT",
     "image": "screenshot.jpg",
-    "lastCommit": "2023-12-17T08:54:08+01:00"
+    "lastCommit": "2024-01-18T20:28:51+01:00"
   },
   {
     "name": "MMM-SolarPicture",

@@ -4169,12 +4169,10 @@
     "maintainerURL": "https://github.com/tbouron",
     "description": "Module that uses ADS-B systems to track and display nearby planes.",
     "issues": [
-      "`package.json` issue: No repository field.",
-      "`package.json` issue: license should be a valid SPDX license expression",
-      "There are no keywords in 'package.json'. We would use them as tags on the module list page.",
-      "No compatible or wrong license field in 'package.json'. Without that, we can't use an image."
+      "There are no keywords in 'package.json'. We would use them as tags on the module list page."
     ],
-    "license": "Apache 2.0"
+    "license": "Apache-2.0",
+    "image": "screenshot-at-the-window.jpg"
   },
   {
     "name": "MMM-FlipClock",

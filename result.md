@@ -1,6 +1,6 @@
 # Result of the module analysis
 
-Last update: 2024-01-17T20:40:47+01:00
+Last update: 2024-01-19T00:05:17+01:00
 
 ## Statistics
 
@@ -8,8 +8,8 @@ Last update: 2024-01-17T20:40:47+01:00
 |:---------------------|:--------:|
 | modules analyzed     |   1117   |
 | maintainer           |    626   |
-| modules with issues  |   1111   |
-| issues               |   7322   |
+| modules with issues  |   1112   |
+| issues               |   7320   |
 | modules at github    |   1108   |
 | modules at gitlab    |      8   |
 | modules at bitbucket |      1   |
@@ -2765,14 +2765,11 @@ Last update: 2024-01-17T20:40:47+01:00
 
 ### [MMM-FlightTracker by tbouron](https://github.com/tbouron/MMM-FlightTracker)
 
-1. `package.json` issue: No repository field.
-2. `package.json` issue: license should be a valid SPDX license expression
-3. There are no keywords in 'package.json'. We would use them as tags on the module list page.
-4. No compatible or wrong license field in 'package.json'. Without that, we can't use an image.
-5. Recommendation: Found `uses: actions/checkout@v2` in file `codeql-analysis.yml`: Replace it with v4.
-6. Outdated: Found `MichMich/MagicMirror` in file `README.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
-7. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
-8. The branch name is 'master'. Consider renaming it to 'main'.
+1. There are no keywords in 'package.json'. We would use them as tags on the module list page.
+2. Recommendation: Found `uses: actions/checkout@v2` in file `codeql-analysis.yml`: Replace it with v4.
+3. Outdated: Found `MichMich/MagicMirror` in file `README.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
+4. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
+5. The branch name is 'master'. Consider renaming it to 'main'.
 
 ### [MMM-FlipClock by MarcLandis](https://github.com/MarcLandis/MMM-FlipClock)
 
@@ -7573,6 +7570,14 @@ Last update: 2024-01-17T20:40:47+01:00
 4. Recommendation: Replace eslintrc by new flat config.
 5. The branch name is 'master'. Consider renaming it to 'main'.
 
+### [MMM-PublicTransportHafas by KristjanESPERANTO](https://github.com/KristjanESPERANTO/MMM-PublicTransportHafas)
+
+1. Information: There are updates for 3 dependencie(s):
+   -  @stylistic/eslint-plugin  ^1.5.3  →  ^1.5.4
+   -  hafas-client              ^6.2.0  →  ^6.2.1
+   -  prettier                  ^3.1.1  →  ^3.2.4
+
+
 ### [MMM-PublicTransportVVO by ChristianGeie](https://github.com/ChristianGeie/MMM-PublicTransportVVO)
 
 1. Recommendation: Found `XMLHttpRequest` in file `MMM-PublicTransportVVO.js`: Replace it with built-in fetch.
@@ -9852,7 +9857,7 @@ Last update: 2024-01-17T20:40:47+01:00
 
 1. Recommendation: Replace eslintrc by new flat config.
 2. Information: There are updates for 1 dependencie(s):
-   -  jsonpath-plus  5.1.0  →  7.2.0
+   -  jsonpath-plus  5.1.0  →  8.0.0
 
 
 ### [MMM-VartaESS by deg0nz](https://github.com/deg0nz/MMM-VartaESS)
