@@ -8329,7 +8329,7 @@
     ],
     "license": "MIT",
     "image": ".github-preview.bubbles.jpg",
-    "lastCommit": "2024-01-18T13:12:22+00:00"
+    "lastCommit": "2024-01-19T11:24:27+00:00"
   },
   {
     "name": "MMM-Netatmo-Presence",
@@ -8605,7 +8605,7 @@
     "description": "Client implementation for German NINA Warn API. Supports alerts of KatWarn, Biwapp and Mowas.",
     "issues": 9,
     "license": "MIT",
-    "lastCommit": "2022-02-21T15:30:25+01:00"
+    "lastCommit": "2024-01-19T09:27:51+01:00"
   },
   {
     "name": "MMM-nixie-clock",
@@ -10167,7 +10167,7 @@
     ],
     "license": "MIT",
     "image": "img-Goerdelerring_all.jpg",
-    "lastCommit": "2024-01-02T19:50:42+01:00"
+    "lastCommit": "2024-01-19T00:15:25+01:00"
   },
   {
     "name": "MMM-PublicTransportVVO",
@@ -12808,8 +12808,8 @@
     "maintainer": "bnitkin",
     "maintainerURL": "https://github.com/bnitkin",
     "description": "Upcoming departures for any transit agencies that publishes GTFS.",
-    "issues": 7,
-    "lastCommit": "2023-08-21T07:41:03-04:00"
+    "issues": 6,
+    "lastCommit": "2024-01-19T08:11:51-05:00"
   },
   {
     "name": "MMM-TranslatedMessages",

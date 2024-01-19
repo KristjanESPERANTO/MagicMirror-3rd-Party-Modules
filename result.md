@@ -1,6 +1,6 @@
 # Result of the module analysis
 
-Last update: 2024-01-19T00:05:17+01:00
+Last update: 2024-01-19T17:19:38+01:00
 
 ## Statistics
 
@@ -8,8 +8,8 @@ Last update: 2024-01-19T00:05:17+01:00
 |:---------------------|:--------:|
 | modules analyzed     |   1117   |
 | maintainer           |    626   |
-| modules with issues  |   1112   |
-| issues               |   7320   |
+| modules with issues  |   1111   |
+| issues               |   7318   |
 | modules at github    |   1108   |
 | modules at gitlab    |      8   |
 | modules at bitbucket |      1   |
@@ -7570,14 +7570,6 @@ Last update: 2024-01-19T00:05:17+01:00
 4. Recommendation: Replace eslintrc by new flat config.
 5. The branch name is 'master'. Consider renaming it to 'main'.
 
-### [MMM-PublicTransportHafas by KristjanESPERANTO](https://github.com/KristjanESPERANTO/MMM-PublicTransportHafas)
-
-1. Information: There are updates for 3 dependencie(s):
-   -  @stylistic/eslint-plugin  ^1.5.3  →  ^1.5.4
-   -  hafas-client              ^6.2.0  →  ^6.2.1
-   -  prettier                  ^3.1.1  →  ^3.2.4
-
-
 ### [MMM-PublicTransportVVO by ChristianGeie](https://github.com/ChristianGeie/MMM-PublicTransportVVO)
 
 1. Recommendation: Found `XMLHttpRequest` in file `MMM-PublicTransportVVO.js`: Replace it with built-in fetch.
@@ -9562,10 +9554,9 @@ Last update: 2024-01-19T00:05:17+01:00
 1. There is no `package.json`. We need this file to gather information about the module for the module list page.
 2. Typo: Found `Magic Mirror` in file `MMM-transitfeed.js`: Replace it with `MagicMirror²`.
 3. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
-4. Recommendation: Found `require('fetch')` in file `node_helper.js`: Replace it with built-in fetch.
-5. Recommendation: Found `new Date()` in file `node_helper.js`: Replace it by `new Date(Date.now())`: [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
-6. Warning: No LICENSE file.
-7. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
+4. Recommendation: Found `new Date()` in file `node_helper.js`: Replace it by `new Date(Date.now())`: [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
+5. Warning: No LICENSE file.
+6. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
 
 ### [MMM-TranslatedMessages by ahmedwab](https://github.com/ahmedwab/MMM-TranslatedMessages)
 
