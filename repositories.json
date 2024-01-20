@@ -1,0 +1,65 @@
+[
+  {
+    "name": "MMM-01ZM",
+    "url": "https://github.com/rubinho101/MMM-01ZM",
+    "id": "rubinho101/MMM-01ZM",
+    "maintainer": "rubinho101",
+    "maintainerURL": "",
+    "description": "Display Xiaomi LYWSDCGQ 01ZM Temperature and Humidity sensor values directly AND Nova SDS011 PM Air Quality sensor data.",
+    "issues": 3,
+    "tags": ["xiaomi", "temperature", "humidity", "pm2.5", "pm10", "sds011"],
+    "license": "MIT",
+    "image": "img-MMM-01ZM.jpg",
+    "lastCommit": "2021-01-04T13:53:39+01:00"
+  },
+  {
+    "name": "MMM-1-Second-A-Day",
+    "url": "https://github.com/GaryLChew/MMM-1-Second-A-Day",
+    "id": "GaryLChew/MMM-1-Second-A-Day",
+    "maintainer": "GaryLChew",
+    "maintainerURL": "https://github.com/GaryLChew",
+    "description": "Record daily 1-second-clips and automatically generate a 1-second-a-day video of your life.",
+    "issues": 6,
+    "tags": ["1 second a day"],
+    "license": "MIT",
+    "lastCommit": "2020-06-04T12:51:48-07:00",
+    "stargazers": {
+      "count": 2,
+      "lastUpdate": "2023-01-04T13:53:39+01:00"
+    }
+  },
+  {
+    "name": "MMM-2Day-NOAA-Forecast",
+    "url": "https://github.com/jinserk/MMM-2Day-NOAA-Forecast",
+    "id": "jinserk/MMM-2Day-NOAA-Forecast",
+    "maintainer": "jinserk",
+    "maintainerURL": "https://github.com/jinserk",
+    "description": "Show 4 consecutive 12-hr forecast, provided by <a target=\"_blank\" href=\"https://www.weather.gov/documentation/services-web-api\">NOAA National Weather Service API</a>. No user registration nor API-key required.",
+    "issues": 2,
+    "tags": ["weather", "forecast", "noaa"],
+    "license": "MIT",
+    "image": "example1.jpg",
+    "lastCommit": "2023-12-28T15:00:31-05:00",
+    "stargazers": {
+      "count": 232,
+      "lastUpdate": "2023-09-04T13:53:39+01:00"
+    }
+  },
+  {
+    "name": "MMM-3Day-Forecast",
+    "url": "https://github.com/nigel-daniels/MMM-3Day-Forecast",
+    "id": "nigel-daniels/MMM-3Day-Forecast",
+    "maintainer": "nigel-daniels",
+    "maintainerURL": "https://github.com/nigel-daniels",
+    "description": "Simple display of today, tomorrow &amp; next-day, designed to work with MMM-Weather-Now. Now uses Open Weather as WeatherBit reduced the free service to an unusable level :( If you installed an older version ( &lt; 18 Oct 2022 ), please update and get a new api key!",
+    "issues": 8,
+    "tags": ["weather", "forecast"],
+    "license": "MIT",
+    "image": "3-day2.jpg",
+    "lastCommit": "2023-03-15T13:25:58-07:00",
+    "stargazers": {
+      "count": 1,
+      "lastUpdate": "2023-04-04T13:53:39+01:00"
+    }
+  }
+]

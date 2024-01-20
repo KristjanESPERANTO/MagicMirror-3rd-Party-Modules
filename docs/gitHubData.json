@@ -1,0 +1,57 @@
+{
+  "lastUpdate": "2024-01-19T22:17:02.578Z",
+  "repositories": [
+    {
+      "id": "rubinho101/MMM-01ZM",
+      "gitHubDataLastUpdate": "2024-01-19T20:09:18.836Z",
+      "gitHubData": {
+        "issues": 3,
+        "stars": 4,
+        "license": "MIT",
+        "archived": false,
+        "disabled": false,
+        "defaultBranch": "master",
+        "lastCommit": "2021-01-04T12:53:39Z"
+      }
+    },
+    {
+      "id": "GaryLChew/MMM-1-Second-A-Day",
+      "gitHubDataLastUpdate": "2024-01-19T19:35:21.422Z",
+      "gitHubData": {
+        "issues": 5,
+        "stars": 8,
+        "license": "MIT",
+        "archived": false,
+        "disabled": false,
+        "defaultBranch": "master",
+        "lastCommit": "2020-06-04T19:51:48Z"
+      }
+    },
+    {
+      "id": "jinserk/MMM-2Day-NOAA-Forecast",
+      "gitHubDataLastUpdate": "2024-01-19T19:35:21.974Z",
+      "gitHubData": {
+        "issues": 0,
+        "stars": 3,
+        "license": "MIT",
+        "archived": false,
+        "disabled": false,
+        "defaultBranch": "main",
+        "lastCommit": "2023-12-28T20:00:31Z"
+      }
+    },
+    {
+      "id": "nigel-daniels/MMM-3Day-Forecast",
+      "gitHubDataLastUpdate": "2024-01-19T20:09:19.242Z",
+      "gitHubData": {
+        "issues": 10,
+        "stars": 32,
+        "license": "MIT",
+        "archived": false,
+        "disabled": false,
+        "defaultBranch": "master",
+        "lastCommit": "2023-03-15T20:25:58Z"
+      }
+    }
+  ]
+}
