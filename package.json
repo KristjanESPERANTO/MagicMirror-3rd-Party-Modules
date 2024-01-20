@@ -38,12 +38,34 @@
     "stylelint-prettier": "latest"
   },
   "scripts": {
-    "all": "node create_module_list.js && python3 get_modules.py && node expand_module_list_with_repo_data.js && python3 check_modules.py",
+    "start": "ntl --autocomplete --size 50 --exclude start lint* prepare test",
+    "all": "npm run createModuleList && npm run getModules && npm run expandModuleList && npm run checkModules",
+    "createModuleList": "node create_module_list.js",
+    "getModules": "python3 get_modules.py",
+    "expandModuleList": "node expand_module_list_with_repo_data.js",
+    "checkModules": "python3 check_modules.py",
     "ownList": "rm -rf modules & node create_own_module_list.js && python3 get_modules.py && node expand_module_list_with_repo_data.js && python3 check_modules.py",
     "lint": "eslint . && stylelint **/docs/*.css && markdownlint README.md && prettier --check .",
     "lint:fix": "eslint . --fix && stylelint **/docs/*.css --fix && markdownlint README.md --fix && prettier . --write",
     "prepare": "husky install",
-    "test": "npm run lint"
+    "test": "npm run lint",
+    "updateGitHubData": "node scripts/updateGitHubApiData.js",
+    "leaveMenu": ""
+  },
+  "ntl": {
+    "descriptions": {
+      "all": "Run all scripts on all modules. Requires a lot of time and storage space!",
+      "createModuleList": "Script 1: Convert the official module list from the wiki into a json file.",
+      "getModules": "Script 2: Get all modules with `git cone`. Requires a lot of time and storage space!",
+      "expandModuleList": "Script 3: Extend the module list with information from the package.json. And get an image if one is available and the license is okay.",
+      "checkModules": "Script 4: Perform various checks on the modules.",
+      "ownList": "Test only defined modules. See README.",
+      "lint": "Check this repository for linter and formatting problems.",
+      "lint:fix": "Fix automatically fixable linter or formatting problems of this repository.",
+      "prepare": "husky install",
+      "updateGitHubData": "ATTENTION: NOT READY YET! Update the json file that collects the GitHub information of the modules.",
+      "leaveMenu": "Leave this menu."
+    }
   },
   "lint-staged": {
     "*.js": "eslint --cache --fix",
@@ -54,6 +76,7 @@
     "marked": "^11.1.1",
     "normalize-package-data": "^6.0.0",
     "npm-check-updates": "^16.14.12",
+    "ntl": "^5.1.0",
     "sanitize-html": "^2.11.0",
     "sharp": "^0.33.2"
   }

@@ -67,6 +67,8 @@ For running the scripts and developing you need:
 
 ## Skripts
 
+With `npm start` you can call up a cli menu that offers you options for execution.
+
 You can run all scripts in the right order by `npm run all`.
 
 _Note_: Running all scripts requires a lot of time (> 10 min) and space on your hard drive (> 2 GB).
