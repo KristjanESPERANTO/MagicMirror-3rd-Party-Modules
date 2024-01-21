@@ -3941,21 +3941,21 @@
     "issues": []
   },
   {
+    "name": "MMM-IndoorClimate-Endpoint",
+    "url": "https://github.com/buxxi/MMM-IndoorClimate-Endpoint",
+    "id": "buxxi/MMM-IndoorClimate-Endpoint",
+    "maintainer": "buxxi",
+    "maintainerURL": "",
+    "description": "This module exposes a HTTP-endpoint on the MagicMirror² that can receive the indoor temperature and/or humidity and then emits that value as notification \"INDOOR_TEMPERATURE\"/\"INDOOR_HUMIDITY\".",
+    "issues": []
+  },
+  {
     "name": "MMM-IndoorTemp",
     "url": "https://github.com/sebastianhodapp/MMM-IndoorTemp",
     "id": "sebastianhodapp/MMM-IndoorTemp",
     "maintainer": "sebastianhodapp",
     "maintainerURL": "",
     "description": "The module emits the notification \"INDOOR_TEMPERATURE\" to display the indoor temperature received via a subscribed MQTT topic in the default <a target=\"_blank\" href=\"https://github.com/MagicMirrorOrg/MagicMirror/tree/develop/modules/default/currentweather\">Current Weather module</a>.",
-    "issues": []
-  },
-  {
-    "name": "MMM-IndoorTemperature-Endpoint",
-    "url": "https://github.com/buxxi/MMM-IndoorTemperature-Endpoint",
-    "id": "buxxi/MMM-IndoorTemperature-Endpoint",
-    "maintainer": "buxxi",
-    "maintainerURL": "",
-    "description": "This module exposes a HTTP-endpoint on the MagicMirror² that can receive the indoor temperature and then emits that value as notification \"INDOOR_TEMPERATURE\".",
     "issues": []
   },
   {

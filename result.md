@@ -1,6 +1,6 @@
 # Result of the module analysis
 
-Last update: 2024-01-20T01:14:52+01:00
+Last update: 2024-01-21T22:26:22+01:00
 
 ## Statistics
 
@@ -162,7 +162,7 @@ Last update: 2024-01-20T01:14:52+01:00
 2. There are no keywords in 'package.json'. We would use them as tags on the module list page.
 3. No image found.
 4. Outdated: Found `MichMich/MagicMirror` in file `README.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
-5. Deprecated: Found `new Buffer(` in file `alexaRunner.babel.js`: This is deprecated. Please update: https://nodejs.org/api/buffer.html.
+5. Deprecated: Found `new Buffer(` in file `alexaRunner.babel.js`: This is deprecated. Please update: <https://nodejs.org/api/buffer.html>.
 6. Recommendation: Found `XMLHttpRequest` in file `alexaRunner.babel.js`: Replace it with built-in fetch.
 7. Recommendation: Found `new Date()` in file `node_helper.js`: Replace it by `new Date(Date.now())`: [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
 8. Recommendation: Found `XMLHttpRequest` in file `runDirectives.js`: Replace it with built-in fetch.
@@ -2265,8 +2265,8 @@ Last update: 2024-01-20T01:14:52+01:00
 
 1. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
 2. Information: There are updates for 2 dependencie(s):
-   -  @mapbox/node-pre-gyp   ^1.0.10  →   ^1.0.11
-   -  @types/node           ^20.10.6  →  ^20.11.5
+   - @mapbox/node-pre-gyp   ^1.0.10  →   ^1.0.11
+   - @types/node           ^20.10.6  →  ^20.11.5
 
 
 ### [EXT-FreeboxTV by bugsounet](https://github.com/bugsounet/EXT-FreeboxTV)
@@ -3386,7 +3386,7 @@ Last update: 2024-01-20T01:14:52+01:00
 
 1. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
 2. Information: There are updates for 1 dependencie(s):
-   -  growatt  ^0.5.6  →  ^0.7.1
+   - growatt  ^0.5.6  →  ^0.7.1
 
 
 ### [MMM-Growatt by dekinet](https://github.com/dekinet/MMM-Growatt)
@@ -3403,7 +3403,7 @@ Last update: 2024-01-20T01:14:52+01:00
 
 1. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
 2. Information: There are updates for 1 dependencie(s):
-   -  growatt  ^0.5.6  →  ^0.7.1
+   - growatt  ^0.5.6  →  ^0.7.1
 
 
 ### [MMM-GyeonggiBus by iceship](https://github.com/iceship/MMM-GyeonggiBus)
@@ -3498,8 +3498,8 @@ Last update: 2024-01-20T01:14:52+01:00
 
 1. No image found.
 2. Typo: Found `Magic Mirror` in file `MMM-HH-LocalTransport.js`: Replace it with `MagicMirror²`.
-3. Deprecated: Found `new Buffer(` in file `findStation.js`: This is deprecated. Please update: https://nodejs.org/api/buffer.html.
-4. Deprecated: Found `new Buffer(` in file `node_helper.js`: This is deprecated. Please update: https://nodejs.org/api/buffer.html.
+3. Deprecated: Found `new Buffer(` in file `findStation.js`: This is deprecated. Please update: <https://nodejs.org/api/buffer.html>.
+4. Deprecated: Found `new Buffer(` in file `node_helper.js`: This is deprecated. Please update: <https://nodejs.org/api/buffer.html>.
 5. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
 6. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
 7. The branch name is 'master'. Consider renaming it to 'main'.
@@ -3929,28 +3929,28 @@ Last update: 2024-01-20T01:14:52+01:00
 11. Recommendation: Found `new Date()` in file `serial3.html`: Replace it by `new Date(Date.now())`: [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
 12. Recommendation: Found `new Date()` in file `stock.html`: Replace it by `new Date(Date.now())`: [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
 13. Recommendation: Found `new Date()` in file `export.js`: Replace it by `new Date(Date.now())`: [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
-14. Deprecated: Found `new Buffer(` in file `fabric.js`: This is deprecated. Please update: https://nodejs.org/api/buffer.html.
+14. Deprecated: Found `new Buffer(` in file `fabric.js`: This is deprecated. Please update: <https://nodejs.org/api/buffer.html>.
 15. Recommendation: Found `require('http')` in file `fabric.js`: Replace 'http' by 'node:http'.
 16. Recommendation: Found `require('https')` in file `fabric.js`: Replace 'https' by 'node:https'.
 17. Recommendation: Found `XMLHttpRequest` in file `fabric.js`: Replace it with built-in fetch.
 18. Recommendation: Found `jshint` in file `fabric.js`: Replace "jshint" by "eslint".
 19. Recommendation: Found `new Date()` in file `fabric.js`: Replace it by `new Date(Date.now())`: [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
-20. Deprecated: Found `new Buffer(` in file `fabric.min.js`: This is deprecated. Please update: https://nodejs.org/api/buffer.html.
+20. Deprecated: Found `new Buffer(` in file `fabric.min.js`: This is deprecated. Please update: <https://nodejs.org/api/buffer.html>.
 21. Recommendation: Found `require("http")` in file `fabric.min.js`: Replace "http" by "node:http".
 22. Recommendation: Found `require("https")` in file `fabric.min.js`: Replace "https" by "node:https".
 23. Recommendation: Found `XMLHttpRequest` in file `fabric.min.js`: Replace it with built-in fetch.
-24. Deprecated: Found `new Buffer(` in file `jszip.js`: This is deprecated. Please update: https://nodejs.org/api/buffer.html.
+24. Deprecated: Found `new Buffer(` in file `jszip.js`: This is deprecated. Please update: <https://nodejs.org/api/buffer.html>.
 25. Recommendation: Found `jshint` in file `jszip.js`: Replace "jshint" by "eslint".
 26. Recommendation: Found `new Date()` in file `jszip.js`: Replace it by `new Date(Date.now())`: [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
-27. Deprecated: Found `new Buffer(` in file `pdfmake.js`: This is deprecated. Please update: https://nodejs.org/api/buffer.html.
+27. Deprecated: Found `new Buffer(` in file `pdfmake.js`: This is deprecated. Please update: <https://nodejs.org/api/buffer.html>.
 28. Recommendation: Found `jshint` in file `pdfmake.js`: Replace "jshint" by "eslint".
 29. Recommendation: Found `new Date()` in file `pdfmake.js`: Replace it by `new Date(Date.now())`: [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
-30. Deprecated: Found `new Buffer(` in file `pdfmake.min.js.map`: This is deprecated. Please update: https://nodejs.org/api/buffer.html.
+30. Deprecated: Found `new Buffer(` in file `pdfmake.min.js.map`: This is deprecated. Please update: <https://nodejs.org/api/buffer.html>.
 31. Recommendation: Found `jshint` in file `pdfmake.min.js.map`: Replace "jshint" by "eslint".
 32. Recommendation: Found `new Date()` in file `pdfmake.min.js.map`: Replace it by `new Date(Date.now())`: [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
-33. Deprecated: Found `new Buffer(` in file `xlsx.js`: This is deprecated. Please update: https://nodejs.org/api/buffer.html.
+33. Deprecated: Found `new Buffer(` in file `xlsx.js`: This is deprecated. Please update: <https://nodejs.org/api/buffer.html>.
 34. Recommendation: Found `jshint` in file `xlsx.js`: Replace "jshint" by "eslint".
-35. Deprecated: Found `new Buffer(` in file `xlsx.min.js`: This is deprecated. Please update: https://nodejs.org/api/buffer.html.
+35. Deprecated: Found `new Buffer(` in file `xlsx.min.js`: This is deprecated. Please update: <https://nodejs.org/api/buffer.html>.
 36. Recommendation: Found `new Date()` in file `serial3.html`: Replace it by `new Date(Date.now())`: [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
 37. Recommendation: Found `new Date()` in file `stock.html`: Replace it by `new Date(Date.now())`: [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
 38. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
@@ -4001,6 +4001,14 @@ Last update: 2024-01-20T01:14:52+01:00
 5. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
 6. The branch name is 'master'. Consider renaming it to 'main'.
 
+### [MMM-IndoorClimate-Endpoint by buxxi](https://github.com/buxxi/MMM-IndoorClimate-Endpoint)
+
+1. There are no keywords in 'package.json'. We would use them as tags on the module list page.
+2. No image found.
+3. Typo: Found `Magic Mirror` in file `README.md`: Replace it with `MagicMirror²`.
+4. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
+5. The branch name is 'master'. Consider renaming it to 'main'.
+
 ### [MMM-IndoorTemp by sebastianhodapp](https://github.com/sebastianhodapp/MMM-IndoorTemp)
 
 1. No image found.
@@ -4010,14 +4018,6 @@ Last update: 2024-01-20T01:14:52+01:00
 5. Warning: No LICENSE file.
 6. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
 7. The branch name is 'master'. Consider renaming it to 'main'.
-
-### [MMM-IndoorTemperature-Endpoint by buxxi](https://github.com/buxxi/MMM-IndoorTemperature-Endpoint)
-
-1. There are no keywords in 'package.json'. We would use them as tags on the module list page.
-2. No image found.
-3. Typo: Found `Magic Mirror` in file `README.md`: Replace it with `MagicMirror²`.
-4. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
-5. The branch name is 'master'. Consider renaming it to 'main'.
 
 ### [MMM-inspirobot by JonathanAndersonPE](https://github.com/JonathanAndersonPE/MMM-inspirobot)
 
@@ -5312,7 +5312,7 @@ Last update: 2024-01-20T01:14:52+01:00
 3. Typo: Found `Magic Mirror` in file `README.md`: Replace it with `MagicMirror²`.
 4. Typo: Found `MagicMirror2` in file `README.md`: Replace it with `MagicMirror²`.
 5. Outdated: Found `MichMich/MagicMirror` in file `README.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
-6. Deprecated: Found `new Buffer(` in file `node_helper.js`: This is deprecated. Please update: https://nodejs.org/api/buffer.html.
+6. Deprecated: Found `new Buffer(` in file `node_helper.js`: This is deprecated. Please update: <https://nodejs.org/api/buffer.html>.
 7. Deprecated: Found `require("request")` in file `node_helper.js`: Replace it with built-in fetch.
 8. Recommendation: Found `new Date()` in file `node_helper.js`: Replace it by `new Date(Date.now())`: [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
 9. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
@@ -6527,10 +6527,10 @@ Last update: 2024-01-20T01:14:52+01:00
 1. Recommendation: Found `jshint` in file `.gitignore`: Replace "jshint" by "eslint".
 2. Typo: Found `<sup>2</sup>` in file `README.md`: Replace it with `²`.`.
 3. Outdated: Found `MichMich/MagicMirror` in file `README.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
-4. Deprecated: Found `new Buffer(` in file `app.js`: This is deprecated. Please update: https://nodejs.org/api/buffer.html.
+4. Deprecated: Found `new Buffer(` in file `app.js`: This is deprecated. Please update: <https://nodejs.org/api/buffer.html>.
 5. Deprecated: Found `require('request')` in file `app.js`: Replace it with built-in fetch.
 6. Typo: Found `<sup>2</sup>` in file `index.html`: Replace it with `²`.`.
-7. Deprecated: Found `new Buffer(` in file `SpotifyConnector.js`: This is deprecated. Please update: https://nodejs.org/api/buffer.html.
+7. Deprecated: Found `new Buffer(` in file `SpotifyConnector.js`: This is deprecated. Please update: <https://nodejs.org/api/buffer.html>.
 8. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
 9. The branch name is 'master'. Consider renaming it to 'main'.
 
@@ -6738,8 +6738,8 @@ Last update: 2024-01-20T01:14:52+01:00
 5. Typo: Found `MagicMirror2` in file `package.json`: Replace it with `MagicMirror²`.
 6. Recommendation: Found `"node-fetch"` in file `package.json`: Replace it with built-in fetch.
 7. Recommendation: Found `"node-fetch"` in file `SpotifyFetcher.js`: Replace it with built-in fetch.
-8. Deprecated: Found `new Buffer(` in file `vibrant.worker.js.map`: This is deprecated. Please update: https://nodejs.org/api/buffer.html.
-9. Deprecated: Found `new Buffer(` in file `vibrant.worker.min.js`: This is deprecated. Please update: https://nodejs.org/api/buffer.html.
+8. Deprecated: Found `new Buffer(` in file `vibrant.worker.js.map`: This is deprecated. Please update: <https://nodejs.org/api/buffer.html>.
+9. Deprecated: Found `new Buffer(` in file `vibrant.worker.min.js`: This is deprecated. Please update: <https://nodejs.org/api/buffer.html>.
 10. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
 11. The branch name is 'master'. Consider renaming it to 'main'.
 
@@ -7096,7 +7096,7 @@ Last update: 2024-01-20T01:14:52+01:00
 1. `package.json` issue: No repository field.
 2. `package.json` issue: No license field.
 3. Recommendation: Module name doesn't follow the recommended pattern (it doesn't start with `MMM-`). Consider renaming your module.
-4. Deprecated: Found `new Buffer(` in file `node_helper.js`: This is deprecated. Please update: https://nodejs.org/api/buffer.html.
+4. Deprecated: Found `new Buffer(` in file `node_helper.js`: This is deprecated. Please update: <https://nodejs.org/api/buffer.html>.
 5. Warning: No LICENSE file.
 6. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
 7. The branch name is 'master'. Consider renaming it to 'main'.
@@ -8802,7 +8802,7 @@ Last update: 2024-01-20T01:14:52+01:00
 
 1. There are no specific keywords in 'package.json'. We would use them as tags on the module list page. Add a few meaningful terms to the keywords in the package.json. Not just “magicmirror” or “module”.
 2. Typo: Found `Magic Mirror` in file `MMM-Sonos.js`: Replace it with `MagicMirror²`.
-3. Deprecated: Found `new Buffer(` in file `README.md`: This is deprecated. Please update: https://nodejs.org/api/buffer.html.
+3. Deprecated: Found `new Buffer(` in file `README.md`: This is deprecated. Please update: <https://nodejs.org/api/buffer.html>.
 4. Outdated: Found `MichMich/MagicMirror` in file `README.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
 5. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
 6. Deprecated: Found `require('request')` in file `node_helper.js`: Replace it with built-in fetch.
@@ -8825,7 +8825,7 @@ Last update: 2024-01-20T01:14:52+01:00
 3. `package.json` issue: No license field.
 4. There are no keywords in 'package.json'. We would use them as tags on the module list page.
 5. Typo: Found `Magic Mirror` in file `MMM-Sonos.js`: Replace it with `MagicMirror²`.
-6. Deprecated: Found `new Buffer(` in file `README.md`: This is deprecated. Please update: https://nodejs.org/api/buffer.html.
+6. Deprecated: Found `new Buffer(` in file `README.md`: This is deprecated. Please update: <https://nodejs.org/api/buffer.html>.
 7. Outdated: Found `MichMich/MagicMirror` in file `README.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
 8. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
 9. Deprecated: Found `require('request')` in file `node_helper.js`: Replace it with built-in fetch.
@@ -8906,9 +8906,9 @@ Last update: 2024-01-20T01:14:52+01:00
 
 1. No image found.
 2. Recommendation: Found `new Date()` in file `MMM-SpotifyReleases.js`: Replace it by `new Date(Date.now())`: [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
-3. Deprecated: Found `new Buffer(` in file `SpotifyConnector.js`: This is deprecated. Please update: https://nodejs.org/api/buffer.html.
+3. Deprecated: Found `new Buffer(` in file `SpotifyConnector.js`: This is deprecated. Please update: <https://nodejs.org/api/buffer.html>.
 4. Recommendation: Found `XMLHttpRequest` in file `SpotifyConnector.js`: Replace it with built-in fetch.
-5. Deprecated: Found `new Buffer(` in file `app.js`: This is deprecated. Please update: https://nodejs.org/api/buffer.html.
+5. Deprecated: Found `new Buffer(` in file `app.js`: This is deprecated. Please update: <https://nodejs.org/api/buffer.html>.
 6. Deprecated: Found `require('request')` in file `app.js`: Replace it with built-in fetch.
 7. Found directory `node_modules`. This shouldn't be uploaded. Add `node_modules/`to `.gitignore`.
 8. Deprecated: Found `require('request')` in file `node_helper.js`: Replace it with built-in fetch.
@@ -9438,7 +9438,7 @@ Last update: 2024-01-20T01:14:52+01:00
 2. Typo: Found `Magic Mirror` in file `README.md`: Replace it with `MagicMirror²`.
 3. Typo: Found `Magic Mirror` in file `SECURITY.md`: Replace it with `MagicMirror²`.
 4. Recommendation: Found `axios` in file `LICENSE.txt`: Replace it with built-in fetch.
-5. Deprecated: Found `new Buffer(` in file `maps-web.min.js`: This is deprecated. Please update: https://nodejs.org/api/buffer.html.
+5. Deprecated: Found `new Buffer(` in file `maps-web.min.js`: This is deprecated. Please update: <https://nodejs.org/api/buffer.html>.
 6. Recommendation: Found `XMLHttpRequest` in file `maps-web.min.js`: Replace it with built-in fetch.
 7. Typo: Found `Magic Mirror` in file `tomtomv6.html`: Replace it with `MagicMirror²`.
 8. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
@@ -9676,7 +9676,7 @@ Last update: 2024-01-20T01:14:52+01:00
 
 1. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
 2. Information: There are updates for 1 dependencie(s):
-   -  digest-fetch  >=1.1.6  →  >=3.1.1
+   - digest-fetch  >=1.1.6  →  >=3.1.1
 
 
 ### [MMM-TweetsByTimelineOrList by AdamMoses-GitHub](https://github.com/AdamMoses-GitHub/MMM-TweetsByTimelineOrList)
@@ -9848,7 +9848,7 @@ Last update: 2024-01-20T01:14:52+01:00
 
 1. Recommendation: Replace eslintrc by new flat config.
 2. Information: There are updates for 1 dependencie(s):
-   -  jsonpath-plus  5.1.0  →  8.0.0
+   - jsonpath-plus  5.1.0  →  8.0.0
 
 
 ### [MMM-VartaESS by deg0nz](https://github.com/deg0nz/MMM-VartaESS)

@@ -22,7 +22,7 @@ def check_modules():
 
     search_strings = {
         "new Buffer(": {
-            "name": "This is deprecated. Please update: https://nodejs.org/api/buffer.html.",
+            "name": "This is deprecated. Please update: <https://nodejs.org/api/buffer.html>.",
             "category": "Deprecated",
         },
         "stylelint-config-prettier": {
@@ -229,9 +229,11 @@ def check_modules():
             module["issues"].append("Warning: No LICENSE file.")
 
         if "eslintrc" in str(sorted(module_directory_path.rglob("*"))):
-            module["issues"].append("Recommendation: Replace eslintrc by new flat config.")
+            module["issues"].append(
+                "Recommendation: Replace eslintrc by new flat config.")
         elif "eslint.config" not in str(sorted(module_directory_path.rglob("*"))):
-            module["issues"].append("Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.")
+            module["issues"].append(
+                "Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.")
 
         if not module_directory_path.is_dir():
             module["issues"] = [
@@ -281,14 +283,15 @@ def check_modules():
             if module["issues"] == 0:
                 module["issues"] = 1
 
-    print(f"{stats['moduleCounter']} modules analyzed. For results see file result.md.           ")
+    print(
+        f"{stats['moduleCounter']} modules analyzed. For results see file result.md.           ")
 
     # Prepearing the markdown output
-    markdown_output =   "# Result of the module analysis\n\n"
+    markdown_output = "# Result of the module analysis\n\n"
     markdown_output += f"Last update: {stats['lastUpdate']}\n\n"
-    markdown_output +=  "## Statistics\n\n"
-    markdown_output +=  "|                      | number   |\n"
-    markdown_output +=  "|:---------------------|:--------:|\n"
+    markdown_output += "## Statistics\n\n"
+    markdown_output += "|                      | number   |\n"
+    markdown_output += "|:---------------------|:--------:|\n"
     markdown_output += f"| modules analyzed     | {           stats['moduleCounter']:>6}   |\n"
     markdown_output += f"| maintainer           | {         len(stats['maintainer']):>6}   |\n"
     markdown_output += f"| modules with issues  | {stats['modulesWithIssuesCounter']:>6}   |\n"
@@ -330,17 +333,20 @@ def check_modules():
     with open("./docs/stats.json", "w", encoding="utf-8") as outfile:
         outfile.write(statistics_json_object)
 
+
 def get_last_commit_date(module, module_directory_path):
+    """Function to get the last commit date."""
     module["lastCommit"] = (
-            subprocess.run(
-                f"cd {module_directory_path} && git log -1 --format='%aI' && cd .. && cd ..",
-                stdout=subprocess.PIPE,
-                shell=True,
-                check=False,
-            )
-            .stdout.decode()
-            .rstrip()
+        subprocess.run(
+            f"cd {module_directory_path} && git log -1 --format='%aI' && cd .. && cd ..",
+            stdout=subprocess.PIPE,
+            shell=True,
+            check=False,
         )
+        .stdout.decode()
+        .rstrip()
+    )
+
 
 def check_dependency_updates(module, module_directory_path):
     """
@@ -354,8 +360,24 @@ def check_dependency_updates(module, module_directory_path):
     if len(module["issues"]) < 2 and package_json.is_file():
 
         prod_updates_string = (
+            subprocess.run(
+                f"ncu --cwd {module_directory_path} --dep prod",
+                capture_output=True,
+                shell=True,
+                check=False
+            )
+            .stdout.decode()
+            .rstrip()
+        )
+        prod_updates_list = prod_updates_string.splitlines()
+        prod_updates_list = [
+            line for line in prod_updates_string if "→" in line]
+
+        if len(prod_updates_list) > 0:
+
+            updates_string = (
                 subprocess.run(
-                    f"ncu --cwd {module_directory_path} --dep prod",
+                    f"ncu --cwd {module_directory_path}",
                     capture_output=True,
                     shell=True,
                     check=False
@@ -363,42 +385,30 @@ def check_dependency_updates(module, module_directory_path):
                 .stdout.decode()
                 .rstrip()
             )
-        prod_updates_list = prod_updates_string.splitlines()
-        prod_updates_list = [line for line in prod_updates_string if "→" in line]
-        
-        if len(prod_updates_list) > 0:
-
-            updates_string = (
-                    subprocess.run(
-                        f"ncu --cwd {module_directory_path}",
-                        capture_output=True,
-                        shell=True,
-                        check=False
-                    )
-                    .stdout.decode()
-                    .rstrip()
-                )
             updates_list = updates_string.splitlines()
             updates_list = [line for line in updates_list if "→" in line]
 
             issue_text = f"Information: There are updates for {len(updates_list)} dependencie(s):\n"
             for update in updates_list:
-                issue_text += f"   - {update}\n"
+                issue_text += f"   -{update}\n"
             module["issues"].append(issue_text)
 
+
 def check_branch_name(module, module_directory_path):
+    """Function to check the branch name."""
     branch = (
-            subprocess.run(
-                f"cd {module_directory_path} && git branch && cd .. && cd ..",
-                stdout=subprocess.PIPE,
-                shell=True,
-                check=False,
-            )
-            .stdout.decode()
-            .rstrip()
+        subprocess.run(
+            f"cd {module_directory_path} && git branch && cd .. && cd ..",
+            stdout=subprocess.PIPE,
+            shell=True,
+            check=False,
         )
+        .stdout.decode()
+        .rstrip()
+    )
     if "* master" in branch:
-        module["issues"].append("The branch name is 'master'. Consider renaming it to 'main'.")
+        module["issues"].append(
+            "The branch name is 'master'. Consider renaming it to 'main'.")
 
 
 check_modules()

@@ -4707,7 +4707,8 @@
       "voice",
       "embedded",
       "assistant for device",
-      "voice control"
+      "voice control",
+      "smarthome"
     ],
     "license": "MIT",
     "image": "resources-previewFS.jpg"
@@ -5865,6 +5866,19 @@
     "image": "img-screenshoot.jpg"
   },
   {
+    "name": "MMM-IndoorClimate-Endpoint",
+    "url": "https://github.com/buxxi/MMM-IndoorClimate-Endpoint",
+    "id": "buxxi/MMM-IndoorClimate-Endpoint",
+    "maintainer": "buxxi",
+    "maintainerURL": "",
+    "description": "This module exposes a HTTP-endpoint on the MagicMirror² that can receive the indoor temperature and/or humidity and then emits that value as notification \"INDOOR_TEMPERATURE\"/\"INDOOR_HUMIDITY\".",
+    "issues": [
+      "There are no keywords in 'package.json'. We would use them as tags on the module list page.",
+      "No image found."
+    ],
+    "license": "MIT"
+  },
+  {
     "name": "MMM-IndoorTemp",
     "url": "https://github.com/sebastianhodapp/MMM-IndoorTemp",
     "id": "sebastianhodapp/MMM-IndoorTemp",
@@ -5877,19 +5891,6 @@
     "tags": [
       "mqtt",
       "indoor_temperature"
-    ],
-    "license": "MIT"
-  },
-  {
-    "name": "MMM-IndoorTemperature-Endpoint",
-    "url": "https://github.com/buxxi/MMM-IndoorTemperature-Endpoint",
-    "id": "buxxi/MMM-IndoorTemperature-Endpoint",
-    "maintainer": "buxxi",
-    "maintainerURL": "",
-    "description": "This module exposes a HTTP-endpoint on the MagicMirror² that can receive the indoor temperature and then emits that value as notification \"INDOOR_TEMPERATURE\".",
-    "issues": [
-      "There are no keywords in 'package.json'. We would use them as tags on the module list page.",
-      "No image found."
     ],
     "license": "MIT"
   },
