@@ -1,6 +1,6 @@
 # Result of the module analysis
 
-Last update: 2024-01-21T22:26:22+01:00
+Last update: 2024-01-22T19:39:19+01:00
 
 ## Statistics
 
@@ -9,7 +9,7 @@ Last update: 2024-01-21T22:26:22+01:00
 | modules analyzed     |   1117   |
 | maintainer           |    626   |
 | modules with issues  |   1111   |
-| issues               |   7318   |
+| issues               |   7319   |
 | modules at github    |   1108   |
 | modules at gitlab    |      8   |
 | modules at bitbucket |      1   |
@@ -3154,9 +3154,10 @@ Last update: 2024-01-21T22:26:22+01:00
 
 ### [MMM-GoogleAssistant by bugsounet](https://github.com/bugsounet/MMM-GoogleAssistant)
 
-1. Deprecated: Found `"grunt"` in file `fa-brands-400.svg`: Grunt is practically unmaintained. Move on to something better.
-2. Recommendation: Found `XMLHttpRequest` in file `jquery.min.js`: Replace it with built-in fetch.
-3. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
+1. Recommendation: Found `require("http")` in file `Middleware.js`: Replace "http" by "node:http".
+2. Deprecated: Found `"grunt"` in file `fa-brands-400.svg`: Grunt is practically unmaintained. Move on to something better.
+3. Recommendation: Found `XMLHttpRequest` in file `jquery.min.js`: Replace it with built-in fetch.
+4. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
 
 ### [MMM-GoogleAssistant by gauravsacc](https://github.com/gauravsacc/MMM-GoogleAssistant)
 
