@@ -157,12 +157,12 @@ async function addInformationFromPackageJson (moduleList) {
 }
 
 async function expandModuleList () {
-  const moduleList = await getJson("./docs/modules.temp.1.json");
+  const moduleList = await getJson("./docs/modules.stage.1.json");
 
   const expandedModuleList = await addInformationFromPackageJson(moduleList);
 
   fs.writeFileSync(
-    "./docs/modules.temp.2.json",
+    "./docs/modules.stage.2.json",
     JSON.stringify(expandedModuleList, null, 2),
     "utf8"
   );

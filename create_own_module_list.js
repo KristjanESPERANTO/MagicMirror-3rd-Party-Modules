@@ -31,7 +31,7 @@ function createModuleList () {
   const sortedModuleList = moduleList.sort(sortByNameIgnoringPrefix);
 
   fs.writeFileSync(
-    "./docs/modules.temp.1.json",
+    "./docs/modules.stage.1.json",
     JSON.stringify(sortedModuleList, null, 2),
     "utf8"
   );
