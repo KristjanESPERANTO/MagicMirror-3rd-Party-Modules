@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "type": "module",
   "description": "This project provides an overview of all MagicMirror² modules and puts the modules through a few tests.",
-  "main": "create_module_list.js",
+  "main": "scripts/create_module_list.js",
   "directories": {
     "doc": "docs"
   },
@@ -40,11 +40,11 @@
   "scripts": {
     "start": "ntl --autocomplete --size 50 --exclude start lint* prepare test",
     "all": "npm run createModuleList && npm run getModules && npm run expandModuleList && npm run checkModules",
-    "createModuleList": "node create_module_list.js",
-    "getModules": "python3 get_modules.py",
-    "expandModuleList": "node expand_module_list_with_repo_data.js",
-    "checkModules": "python3 check_modules.py",
-    "ownList": "rm -rf modules & node create_own_module_list.js && python3 get_modules.py && node expand_module_list_with_repo_data.js && python3 check_modules.py",
+    "createModuleList": "node scripts/create_module_list.js",
+    "getModules": "python3 scripts/get_modules.py",
+    "expandModuleList": "node scripts/expand_module_list_with_repo_data.js",
+    "checkModules": "python3 scripts/check_modules.py",
+    "ownList": "rm -rf modules & node create_own_module_list.js && npm run getModules && npm run expandModuleList && npm run checkModules",
     "lint": "eslint . && stylelint **/docs/*.css && markdownlint README.md && prettier --check .",
     "lint:fix": "eslint . --fix && stylelint **/docs/*.css --fix && markdownlint README.md --fix && prettier . --write",
     "prepare": "husky install",
