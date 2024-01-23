@@ -183,7 +183,7 @@
     ],
     "license": "MIT",
     "image": ".github-preview-good.jpg",
-    "lastCommit": "2024-01-09T10:57:20+01:00"
+    "lastCommit": "2024-01-22T22:46:17+01:00"
   },
   {
     "name": "MMM-AirQuality",
@@ -994,7 +994,7 @@
     "description": "A client interface for the Bosch Smart Home System. Supports rooms, Window/Door contacts, Room Climate Controls, Thermostats, Twinguards, Visualization of Temperature, Humidity and Purity, Bosch Home Connect Dishwashers, Philips Hue Bridge.",
     "issues": 4,
     "license": "MIT",
-    "lastCommit": "2023-09-24T21:32:36+02:00"
+    "lastCommit": "2024-01-23T11:30:02+01:00"
   },
   {
     "name": "MMM-Bose-Soundtouch",
@@ -1567,7 +1567,7 @@
     "issues": 6,
     "license": "ISC",
     "image": "image-1.jpg",
-    "lastCommit": "2023-12-21T21:18:11+01:00"
+    "lastCommit": "2024-01-23T15:06:01+01:00"
   },
   {
     "name": "MMM-Clash-Royale",
@@ -5840,7 +5840,7 @@
     ],
     "license": "MIT",
     "image": "docs-example.jpg",
-    "lastCommit": "2024-01-21T12:38:15+01:00"
+    "lastCommit": "2024-01-23T21:35:49+01:00"
   },
   {
     "name": "MMM-Jeedom",
@@ -8330,7 +8330,7 @@
     ],
     "license": "MIT",
     "image": ".github-preview.bubbles.jpg",
-    "lastCommit": "2024-01-22T07:41:31+00:00"
+    "lastCommit": "2024-01-23T19:59:06+00:00"
   },
   {
     "name": "MMM-Netatmo-Presence",
@@ -13236,7 +13236,7 @@
     "issues": 8,
     "license": "MIT",
     "image": "docs-screenshot.PNG",
-    "lastCommit": "2023-07-28T09:54:33+02:00"
+    "lastCommit": "2024-01-23T14:11:52+01:00"
   },
   {
     "name": "MMM-Vasttrafik-PublicTransport",

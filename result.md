@@ -1,6 +1,6 @@
 # Result of the module analysis
 
-Last update: 2024-01-22T19:39:19+01:00
+Last update: 2024-01-23T22:03:13+01:00
 
 ## Statistics
 
@@ -2264,9 +2264,10 @@ Last update: 2024-01-22T19:39:19+01:00
 ### [EXT-Detector by bugsounet](https://github.com/bugsounet/EXT-Detector)
 
 1. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
-2. Information: There are updates for 2 dependencie(s):
+2. Information: There are updates for 3 dependencie(s):
    - @mapbox/node-pre-gyp   ^1.0.10  →   ^1.0.11
    - @types/node           ^20.10.6  →  ^20.11.5
+   - esbuild               ^0.19.11  →  ^0.19.12
 
 
 ### [EXT-FreeboxTV by bugsounet](https://github.com/bugsounet/EXT-FreeboxTV)
