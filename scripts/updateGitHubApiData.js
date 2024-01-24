@@ -23,7 +23,7 @@ async function updateData () {
     // Read the previous version of the data
     let previousData = {};
     try {
-      previousData = JSON.parse(fs.readFileSync("docs/gitHubData.json"));
+      previousData = JSON.parse(fs.readFileSync("docs/data/gitHubData.json"));
     } catch (error) {
       // The file does not yet exist or could not be read
     }
@@ -73,7 +73,7 @@ async function updateData () {
       "repositories": results
     };
 
-    fs.writeFileSync("docs/gitHubData.json", JSON.stringify(updateInfo, null, 2));
+    fs.writeFileSync("docs/data/gitHubData.json", JSON.stringify(updateInfo, null, 2));
     console.info("GitHub data update completed successfully.");
   } catch (error) {
     console.error("Error fetching GitHub API data:", error);

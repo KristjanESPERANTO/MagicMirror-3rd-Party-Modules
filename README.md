@@ -93,7 +93,7 @@ _Note_: Images will only be included if a free license is specified in the `pack
 
 ### check_modules.py
 
-This script goes through all cloned modules and performs various checks. The result is written to the files [`result.md`](result.md) and [`modules.json`](./docs/modules.json).
+This script goes through all cloned modules and performs various checks. The result is written to the files [`result.md`](result.md) and [`modules.json`](./docs/data/modules.json).
 
 ### Special script: create_own_module_list.js
 

@@ -168,7 +168,7 @@ def check_modules():
         },
     }
 
-    modules_json_file = open("./docs/modules.stage.2.json", encoding="utf-8")
+    modules_json_file = open("./docs/data/modules.stage.2.json", encoding="utf-8")
     modules = json.load(modules_json_file)
     stats = {
         "moduleCounter": 0,
@@ -315,22 +315,22 @@ def check_modules():
     json_object = json.dumps(modules, indent=2)
 
     # Writing to modules.json
-    with open("./docs/modules.json", "w", encoding="utf-8") as outfile:
+    with open("./docs/data/modules.json", "w", encoding="utf-8") as outfile:
         outfile.write(json_object)
 
     # Serializing and minifying json
     json_object = json.dumps(modules)
 
     # Writing to modules.min.json
-    with open("./docs/modules.min.json", "w", encoding="utf-8") as outfile:
+    with open("./docs/data/modules.min.json", "w", encoding="utf-8") as outfile:
         outfile.write(json_object)
 
     # Statistics
     # Serializing json
     statistics_json_object = json.dumps(stats, indent=2)
 
-    # Writing to modules.json
-    with open("./docs/stats.json", "w", encoding="utf-8") as outfile:
+    # Writing to stats.json
+    with open("./docs/data/stats.json", "w", encoding="utf-8") as outfile:
         outfile.write(statistics_json_object)
 
 

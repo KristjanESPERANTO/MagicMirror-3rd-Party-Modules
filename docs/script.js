@@ -244,7 +244,7 @@ showOutdated.addEventListener("change", () => {
 });
 
 async function initiate () {
-  const modulesFile = "modules.min.json";
+  const modulesFile = "data/modules.min.json";
   try {
     const response = await fetch(modulesFile);
     const data = await response.json();
@@ -257,7 +257,7 @@ async function initiate () {
     console.error("Error fetching data:", error);
   }
 
-  const statisticsFile = "stats.json";
+  const statisticsFile = "data/stats.json";
   try {
     const response = await fetch(statisticsFile);
     const data = await response.json();

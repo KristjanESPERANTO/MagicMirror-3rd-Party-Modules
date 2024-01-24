@@ -100,7 +100,7 @@ async function createModuleList () {
 
 
   fs.writeFileSync(
-    "./docs/modules.stage.1.json",
+    "./docs/data/modules.stage.1.json",
     JSON.stringify(data, null, 2),
     "utf8"
   );

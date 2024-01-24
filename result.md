@@ -1,6 +1,6 @@
 # Result of the module analysis
 
-Last update: 2024-01-23T22:03:13+01:00
+Last update: 2024-01-24T16:36:24+01:00
 
 ## Statistics
 
@@ -2266,7 +2266,7 @@ Last update: 2024-01-23T22:03:13+01:00
 1. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
 2. Information: There are updates for 3 dependencie(s):
    - @mapbox/node-pre-gyp   ^1.0.10  →   ^1.0.11
-   - @types/node           ^20.10.6  →  ^20.11.5
+   - @types/node           ^20.10.6  →  ^20.11.6
    - esbuild               ^0.19.11  →  ^0.19.12
 
 
