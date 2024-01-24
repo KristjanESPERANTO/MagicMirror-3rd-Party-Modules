@@ -157,7 +157,8 @@ async function addInformationFromPackageJson (moduleList) {
 }
 
 async function expandModuleList () {
-  const moduleList = await getJson("./docs/modules.stage.1.json");
+  const moduleListData = await getJson("./docs/modules.stage.1.json");
+  const moduleList = moduleListData.modules;
 
   const expandedModuleList = await addInformationFromPackageJson(moduleList);
 

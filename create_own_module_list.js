@@ -29,10 +29,14 @@ function createModuleList () {
   });
 
   const sortedModuleList = moduleList.sort(sortByNameIgnoringPrefix);
+  const data = {
+    "lastUpdate": new Date().toISOString(),
+    "modules": sortedModuleList
+  };
 
   fs.writeFileSync(
     "./docs/modules.stage.1.json",
-    JSON.stringify(sortedModuleList, null, 2),
+    JSON.stringify(data, null, 2),
     "utf8"
   );
 }

@@ -15,7 +15,7 @@ def get_modules():
     max_module_counter = 99999
 
     modules_json_file = open("./docs/modules.stage.1.json", encoding="utf-8")
-    modules = json.load(modules_json_file)
+    modules = json.load(modules_json_file.modules)
 
     for module in modules:
         if module_counter < max_module_counter:
