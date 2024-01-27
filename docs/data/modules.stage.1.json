@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "2024-01-24T15:09:22.919Z",
+  "lastUpdate": "2024-01-27T15:20:23.427Z",
   "modules": [
     {
       "name": "MMM-01ZM",
@@ -3122,12 +3122,13 @@
     },
     {
       "name": "MMM-Glance",
-      "url": "https://github.com/tttooommm56/MMM-Glance",
-      "id": "tttooommm56/MMM-Glance",
-      "maintainer": "tttooommm56",
-      "maintainerURL": "",
+      "url": "https://github.com/eouia/MMM-Glance",
+      "id": "eouia/MMM-Glance",
+      "maintainer": "eouia",
+      "maintainerURL": "https://github.com/eouia",
       "description": "Show specific module(s) and hide others for a some time by notification or command.",
-      "issues": []
+      "issues": [],
+      "outdated": "Abandoned. Repo has been archived at 2020-06-10."
     },
     {
       "name": "MMM-Globe",
@@ -3230,6 +3231,15 @@
       "issues": []
     },
     {
+      "name": "MMM-GoogleKeep",
+      "url": "https://github.com/taxilof/MMM-GoogleKeep",
+      "id": "taxilof/MMM-GoogleKeep",
+      "maintainer": "taxilof",
+      "maintainerURL": "",
+      "description": "Displays one list from Google Keep.",
+      "issues": []
+    },
+    {
       "name": "MMM-googlemaps",
       "url": "https://github.com/sp4ceman/MMM-googlemaps",
       "id": "sp4ceman/MMM-googlemaps",
@@ -3285,29 +3295,11 @@
     },
     {
       "name": "MMM-GoogleTasks",
-      "url": "https://github.com/jayked/MMM-GoogleTasks",
-      "id": "jayked/MMM-GoogleTasks",
-      "maintainer": "jayked",
-      "maintainerURL": "",
-      "description": "Display Google Tasks.",
-      "issues": []
-    },
-    {
-      "name": "MMM-GoogleTasks",
-      "url": "https://github.com/themox/MMM-GoogleTasks",
-      "id": "themox/MMM-GoogleTasks",
-      "maintainer": "themox",
-      "maintainerURL": "",
-      "description": "Updated Google Tasks display module.",
-      "issues": []
-    },
-    {
-      "name": "MMM-GoogleTasks",
       "url": "https://github.com/spydersoft-consulting/MMM-GoogleTasks",
       "id": "spydersoft-consulting/MMM-GoogleTasks",
       "maintainer": "spydersoft-consulting",
       "maintainerURL": "https://github.com/spydersoft-consulting/",
-      "description": "Google Tasks with Planned View.",
+      "description": "Display Google Tasks with Planned View.",
       "issues": []
     },
     {
@@ -4879,7 +4871,7 @@
       "id": "wiesty/MMM-Mensamuc",
       "maintainer": "wiesty",
       "maintainerURL": "",
-      "description": "Module to display daily menu 🍔🥕 information from the canteens of the Studierendenwerk München Oberbayern as well as some other canteens.",
+      "description": "Display daily menu 🍔🥕 information from the canteens of the Studierendenwerk München Oberbayern as well as some other canteens.",
       "issues": []
     },
     {
@@ -5504,6 +5496,15 @@
       "maintainer": "tie624",
       "maintainerURL": "",
       "description": "Displays the arrival time of the next few buses for a particular bus stop. This is for the Metropolitan Transit Authority (MTA) in New York City.",
+      "issues": []
+    },
+    {
+      "name": "MMM-MTG",
+      "url": "https://github.com/crisvdn/MMM-MTG",
+      "id": "crisvdn/MMM-MTG",
+      "maintainer": "crisvdn",
+      "maintainerURL": "https://github.com/crisvdn",
+      "description": "Fetches a random MTG card on a configured interval and displays this.",
       "issues": []
     },
     {
@@ -6171,7 +6172,8 @@
       "maintainer": "cowboysdude",
       "maintainerURL": "https://github.com/cowboysdude",
       "description": "Different providers for users to choose from. Shows current plus 3 day forecast. Mouseover shows forecast, with Air, UV, Humidity, Sunrise and Set.",
-      "issues": []
+      "issues": [],
+      "outdated": "Abandoned. No reactions to issues and PRs since years. It no longer seems to work."
     },
     {
       "name": "MMM-NOAATides",
@@ -8225,6 +8227,15 @@
       "issues": []
     },
     {
+      "name": "MMM-Snake",
+      "url": "https://github.com/superuserx/MMM-Snake",
+      "id": "superuserx/MMM-Snake",
+      "maintainer": "superuserx",
+      "maintainerURL": "",
+      "description": "Play the retro game Snake on your mirror using your smartphone.",
+      "issues": []
+    },
+    {
       "name": "MMM-SNCF",
       "url": "https://github.com/jvanoost/MMM-SNCF",
       "id": "jvanoost/MMM-SNCF",
@@ -9095,15 +9106,6 @@
       "maintainer": "nikxif",
       "maintainerURL": "https://github.com/nikxif",
       "description": "Connect to the Transmission BitTorrent client and display current torrent list information.",
-      "issues": []
-    },
-    {
-      "name": "MMM-TransporteCABA",
-      "url": "https://github.com/luccapolastri/MMM-TransporteCABA",
-      "id": "luccapolastri/MMM-TransporteCABA",
-      "maintainer": "luccapolastri",
-      "maintainerURL": "https://github.com/luccapolastri",
-      "description": "Module that displays real time information of the public transportation service in CABA, Buenos Aires, Argentina.",
       "issues": []
     },
     {

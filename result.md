@@ -1,15 +1,15 @@
 # Result of the module analysis
 
-Last update: 2024-01-24T16:36:24+01:00
+Last update: 2024-01-27T16:30:01+01:00
 
 ## Statistics
 
 |                      | number   |
 |:---------------------|:--------:|
 | modules analyzed     |   1117   |
-| maintainer           |    626   |
+| maintainer           |    627   |
 | modules with issues  |   1111   |
-| issues               |   7319   |
+| issues               |   7316   |
 | modules at github    |   1108   |
 | modules at gitlab    |      8   |
 | modules at bitbucket |      1   |
@@ -2266,7 +2266,7 @@ Last update: 2024-01-24T16:36:24+01:00
 1. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
 2. Information: There are updates for 3 dependencie(s):
    - @mapbox/node-pre-gyp   ^1.0.10  →   ^1.0.11
-   - @types/node           ^20.10.6  →  ^20.11.6
+   - @types/node           ^20.10.6  →  ^20.11.7
    - esbuild               ^0.19.11  →  ^0.19.12
 
 
@@ -3122,8 +3122,9 @@ Last update: 2024-01-24T16:36:24+01:00
 5. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
 6. The branch name is 'master'. Consider renaming it to 'main'.
 
-### [MMM-Glance by tttooommm56](https://github.com/tttooommm56/MMM-Glance)
+### [MMM-Glance by eouia](https://github.com/eouia/MMM-Glance)
 
+0. This module is outdated: Abandoned. Repo has been archived at 2020-06-10.
 1. There is no `package.json`. We need this file to gather information about the module for the module list page.
 2. Typo: Found `Magic Mirror` in file `MMM-Glance.js`: Replace it with `MagicMirror²`.
 3. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
@@ -3229,6 +3230,19 @@ Last update: 2024-01-24T16:36:24+01:00
 5. Recommendation: Replace eslintrc by new flat config.
 6. The branch name is 'master'. Consider renaming it to 'main'.
 
+### [MMM-GoogleKeep by taxilof](https://github.com/taxilof/MMM-GoogleKeep)
+
+1. There are no keywords in 'package.json'. We would use them as tags on the module list page.
+2. No image found.
+3. Recommendation: Found `jshint` in file `Gruntfile.js`: Replace "jshint" by "eslint".
+4. Typo: Found `Magic Mirror` in file `MMM-GoogleKeep.js`: Replace it with `MagicMirror²`.
+5. Typo: Found `Magic Mirror` in file `README.md`: Replace it with `MagicMirror²`.
+6. Outdated: Found `MichMich/MagicMirror` in file `README.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
+7. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
+8. Deprecated: Found `"grunt"` in file `package.json`: Grunt is practically unmaintained. Move on to something better.
+9. Recommendation: Replace eslintrc by new flat config.
+10. The branch name is 'master'. Consider renaming it to 'main'.
+
 ### [MMM-googlemaps by sp4ceman](https://github.com/sp4ceman/MMM-googlemaps)
 
 1. There is no `package.json`. We need this file to gather information about the module for the module list page.
@@ -3281,23 +3295,6 @@ Last update: 2024-01-24T16:36:24+01:00
 1. There are no keywords in 'package.json'. We would use them as tags on the module list page.
 2. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
 3. The branch name is 'master'. Consider renaming it to 'main'.
-
-### [MMM-GoogleTasks by jayked](https://github.com/jayked/MMM-GoogleTasks)
-
-1. There is no `package.json`. We need this file to gather information about the module for the module list page.
-2. Outdated: Found `MichMich/MagicMirror` in file `README.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
-3. Warning: No LICENSE file.
-4. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
-5. The branch name is 'master'. Consider renaming it to 'main'.
-
-### [MMM-GoogleTasks by themox](https://github.com/themox/MMM-GoogleTasks)
-
-1. There is no `package.json`. We need this file to gather information about the module for the module list page.
-2. Recommendation: Found `new Date()` in file `MMM-GoogleTasks.js`: Replace it by `new Date(Date.now())`: [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
-3. Outdated: Found `MichMich/MagicMirror` in file `README.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
-4. Warning: No LICENSE file.
-5. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
-6. The branch name is 'master'. Consider renaming it to 'main'.
 
 ### [MMM-GoogleTasks by spydersoft-consulting](https://github.com/spydersoft-consulting/MMM-GoogleTasks)
 
@@ -3387,9 +3384,6 @@ Last update: 2024-01-24T16:36:24+01:00
 ### [MMM-Growatt by mumblebaj](https://github.com/mumblebaj/MMM-Growatt)
 
 1. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
-2. Information: There are updates for 1 dependencie(s):
-   - growatt  ^0.5.6  →  ^0.7.1
-
 
 ### [MMM-Growatt by dekinet](https://github.com/dekinet/MMM-Growatt)
 
@@ -3404,9 +3398,6 @@ Last update: 2024-01-24T16:36:24+01:00
 ### [MMM-Growatt-Stats by mumblebaj](https://github.com/mumblebaj/MMM-Growatt-Stats)
 
 1. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
-2. Information: There are updates for 1 dependencie(s):
-   - growatt  ^0.5.6  →  ^0.7.1
-
 
 ### [MMM-GyeonggiBus by iceship](https://github.com/iceship/MMM-GyeonggiBus)
 
@@ -5738,6 +5729,11 @@ Last update: 2024-01-24T16:36:24+01:00
 10. Recommendation: Replace eslintrc by new flat config.
 11. The branch name is 'master'. Consider renaming it to 'main'.
 
+### [MMM-MTG by crisvdn](https://github.com/crisvdn/MMM-MTG)
+
+1. There is no `package.json`. We need this file to gather information about the module for the module list page.
+2. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
+
 ### [MMM-Multimonth by BKeyport](https://github.com/BKeyport/MMM-Multimonth)
 
 1. There is no `package.json`. We need this file to gather information about the module for the module list page.
@@ -6446,6 +6442,7 @@ Last update: 2024-01-24T16:36:24+01:00
 
 ### [MMM-NOAA3 by cowboysdude](https://github.com/cowboysdude/MMM-NOAA3)
 
+0. This module is outdated: Abandoned. No reactions to issues and PRs since years. It no longer seems to work.
 1. There are no specific keywords in 'package.json'. We would use them as tags on the module list page. Add a few meaningful terms to the keywords in the package.json. Not just “magicmirror” or “module”.
 2. Typo: Found `Magic Mirror` in file `MMM-NOAA3.js`: Replace it with `MagicMirror²`.
 3. Recommendation: Found `new Date()` in file `MMM-NOAA3.js`: Replace it by `new Date(Date.now())`: [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
@@ -8666,6 +8663,12 @@ Last update: 2024-01-24T16:36:24+01:00
 5. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
 6. The branch name is 'master'. Consider renaming it to 'main'.
 
+### [MMM-Snake by superuserx](https://github.com/superuserx/MMM-Snake)
+
+1. There is no `package.json`. We need this file to gather information about the module for the module list page.
+2. Outdated: Found `MichMich/MagicMirror` in file `README.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
+3. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
+
 ### [MMM-SNCF by jvanoost](https://github.com/jvanoost/MMM-SNCF)
 
 1. Typo: Found `Magic Mirror` in file `MMM-SNCF.js`: Replace it with `MagicMirror²`.
@@ -9590,16 +9593,6 @@ Last update: 2024-01-24T16:36:24+01:00
 
 1. There is no `package.json`. We need this file to gather information about the module for the module list page.
 2. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
-
-### [MMM-TransporteCABA by luccapolastri](https://github.com/luccapolastri/MMM-TransporteCABA)
-
-1. There is no `package.json`. We need this file to gather information about the module for the module list page.
-2. Typo: Found `Magic Mirror` in file `MMM-TransporteCABA.js`: Replace it with `MagicMirror²`.
-3. Typo: Found `<sup>2</sup>` in file `README.md`: Replace it with `²`.`.
-4. Outdated: Found `MichMich/MagicMirror` in file `README.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
-5. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
-6. Recommendation: Found `axios` in file `node_helper.js`: Replace it with built-in fetch.
-7. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
 
 ### [MMM-Trello by Jopyth](https://github.com/Jopyth/MMM-Trello)
 

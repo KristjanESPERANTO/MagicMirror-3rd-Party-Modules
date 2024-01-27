@@ -7,7 +7,14 @@
     "maintainerURL": "",
     "description": "Display Xiaomi LYWSDCGQ 01ZM Temperature and Humidity sensor values directly AND Nova SDS011 PM Air Quality sensor data.",
     "issues": [],
-    "tags": ["xiaomi", "temperature", "humidity", "pm2.5", "pm10", "sds011"],
+    "tags": [
+      "xiaomi",
+      "temperature",
+      "humidity",
+      "pm2.5",
+      "pm10",
+      "sds011"
+    ],
     "license": "MIT",
     "image": "img-MMM-01ZM.jpg"
   },
@@ -18,8 +25,12 @@
     "maintainer": "GaryLChew",
     "maintainerURL": "https://github.com/GaryLChew",
     "description": "Record daily 1-second-clips and automatically generate a 1-second-a-day video of your life.",
-    "issues": ["No image found."],
-    "tags": ["1 second a day"],
+    "issues": [
+      "No image found."
+    ],
+    "tags": [
+      "1 second a day"
+    ],
     "license": "MIT"
   },
   {
@@ -30,7 +41,11 @@
     "maintainerURL": "https://github.com/jinserk",
     "description": "Show 4 consecutive 12-hr forecast, provided by <a target=\"_blank\" href=\"https://www.weather.gov/documentation/services-web-api\">NOAA National Weather Service API</a>. No user registration nor API-key required.",
     "issues": [],
-    "tags": ["weather", "forecast", "noaa"],
+    "tags": [
+      "weather",
+      "forecast",
+      "noaa"
+    ],
     "license": "MIT",
     "image": "example1.jpg"
   },
@@ -42,7 +57,10 @@
     "maintainerURL": "https://github.com/nigel-daniels",
     "description": "Simple display of today, tomorrow &amp; next-day, designed to work with MMM-Weather-Now. Now uses Open Weather as WeatherBit reduced the free service to an unusable level :( If you installed an older version ( &lt; 18 Oct 2022 ), please update and get a new api key!",
     "issues": [],
-    "tags": ["weather", "forecast"],
+    "tags": [
+      "weather",
+      "forecast"
+    ],
     "license": "MIT",
     "image": "3-day2.jpg"
   },
@@ -78,7 +96,9 @@
     "maintainerURL": "",
     "description": "Display weather information using the AccuWeather API.",
     "issues": [],
-    "tags": ["weather"],
+    "tags": [
+      "weather"
+    ],
     "license": "MIT",
     "image": "screenshots-layout-bars-daily.jpg"
   },
@@ -90,7 +110,9 @@
     "maintainerURL": "",
     "description": "Display a candle burning down towards a specific date (e.g. an advent candle).",
     "issues": [],
-    "tags": ["buttons"],
+    "tags": [
+      "buttons"
+    ],
     "license": "MIT",
     "image": ".examples-example.jpg"
   },
@@ -126,8 +148,13 @@
     "maintainer": "mstarzec386",
     "maintainerURL": "",
     "description": "Air pollution in Polish cities. Data from <a target=\"_blank\" href=\"https://airly.eu/\">airly</a>.",
-    "issues": ["No image found."],
-    "tags": ["air polution", "airly"],
+    "issues": [
+      "No image found."
+    ],
+    "tags": [
+      "air polution",
+      "airly"
+    ],
     "license": "MIT"
   },
   {
@@ -138,7 +165,10 @@
     "maintainerURL": "https://github.com/nigel-daniels",
     "description": "Simple display of air quality based on the US AirNow API.",
     "issues": [],
-    "tags": ["air", "quality"],
+    "tags": [
+      "air",
+      "quality"
+    ],
     "license": "MIT",
     "image": "airquality.jpg"
   },
@@ -150,7 +180,10 @@
     "maintainerURL": "",
     "description": "Display the air quality index for a certain location.",
     "issues": [],
-    "tags": ["aqi", "air-quality"],
+    "tags": [
+      "aqi",
+      "air-quality"
+    ],
     "license": "MIT",
     "image": ".github-preview-good.jpg"
   },
@@ -173,7 +206,11 @@
     "maintainerURL": "",
     "description": "Module to display tables from Airtable.",
     "issues": [],
-    "tags": ["airtable", "magic-mirror-table", "table"],
+    "tags": [
+      "airtable",
+      "magic-mirror-table",
+      "table"
+    ],
     "license": "ISC",
     "image": "screenshots-MMM_Airtable_airtableKey.jpg"
   },
@@ -185,7 +222,9 @@
     "maintainerURL": "",
     "description": "Alarm Clock Module (touch and non-touch).",
     "issues": [],
-    "tags": ["alarm clock"],
+    "tags": [
+      "alarm clock"
+    ],
     "license": "MIT",
     "image": ".github-example.jpg"
   },
@@ -211,7 +250,11 @@
     "maintainerURL": "",
     "description": "The MMM-AlexaControl module allows you to control your Mirror with Alexa (every device that support Wemos devices). You can turn it on and off, change the page and send notifications to other modules.",
     "issues": [],
-    "tags": ["alexacontrol", "wemos", "fauxmo"],
+    "tags": [
+      "alexacontrol",
+      "wemos",
+      "fauxmo"
+    ],
     "license": "MIT",
     "image": "public-AlexaLogoGrey.jpg"
   },
@@ -222,8 +265,14 @@
     "maintainer": "shbatm",
     "maintainerURL": "",
     "description": "Simple Mirror Control from External Home Assistant (Alexa/Google Home/HASS.io).",
-    "issues": ["No image found."],
-    "tags": ["alexaonoff", "wemos", "fauxmo"],
+    "issues": [
+      "No image found."
+    ],
+    "tags": [
+      "alexaonoff",
+      "wemos",
+      "fauxmo"
+    ],
     "license": "MIT"
   },
   {
@@ -233,8 +282,15 @@
     "maintainer": "retroflex",
     "maintainerURL": "",
     "description": "Shows the current standings of Allsvenskan (the top Swedish football league).",
-    "issues": ["No image found."],
-    "tags": ["allsvenskan", "football", "soccer", "sweden"],
+    "issues": [
+      "No image found."
+    ],
+    "tags": [
+      "allsvenskan",
+      "football",
+      "soccer",
+      "sweden"
+    ],
     "license": "MIT"
   },
   {
@@ -245,7 +301,12 @@
     "maintainerURL": "https://github.com/eric-h-st",
     "description": "Ambient brightness detection and Auto-Brightness of the mirror modules accordingly.",
     "issues": [],
-    "tags": ["ambient brightness", "ambient", "brightness", "camera"],
+    "tags": [
+      "ambient brightness",
+      "ambient",
+      "brightness",
+      "camera"
+    ],
     "license": "MIT",
     "image": "screenshots-screenshot.jpg"
   },
@@ -306,7 +367,10 @@
       "`package.json` issue: No repository field.",
       "`package.json` issue: No license field."
     ],
-    "tags": ["aoe2", "age of empire 2"]
+    "tags": [
+      "aoe2",
+      "age of empire 2"
+    ]
   },
   {
     "name": "MMM-ApexLegends",
@@ -315,8 +379,12 @@
     "maintainer": "retroflex",
     "maintainerURL": "",
     "description": "Shows stats (level, kills and global rank) for players of Apex Legends.",
-    "issues": ["No image found."],
-    "tags": ["apex legends"],
+    "issues": [
+      "No image found."
+    ],
+    "tags": [
+      "apex legends"
+    ],
     "license": "MIT"
   },
   {
@@ -326,8 +394,14 @@
     "maintainer": "juzim",
     "maintainerURL": "",
     "description": "A somewhat RESTful(ish) API.",
-    "issues": ["No image found."],
-    "tags": ["remote control", "control", "api"],
+    "issues": [
+      "No image found."
+    ],
+    "tags": [
+      "remote control",
+      "control",
+      "api"
+    ],
     "license": "MIT"
   },
   {
@@ -349,7 +423,11 @@
     "maintainerURL": "",
     "description": "Module to get the Air Quality Index (AQI) using the World Air Quality Index project API.",
     "issues": [],
-    "tags": ["transport", "air", "aqi"],
+    "tags": [
+      "transport",
+      "air",
+      "aqi"
+    ],
     "license": "MIT",
     "image": "screenshots-screenshot_01.jpg"
   },
@@ -386,7 +464,10 @@
     "maintainerURL": "",
     "description": "This module provides Arduino serial communication support with Raspberry PI. Arduino sends the sensor's data value to the module using Python. Your next favorite Plug&amp;Play utility module.",
     "issues": [],
-    "tags": ["arduino", "serialport"],
+    "tags": [
+      "arduino",
+      "serialport"
+    ],
     "license": "MIT",
     "image": "screenshots-mmmarduport_running.jpg"
   },
@@ -453,7 +534,9 @@
     "maintainerURL": "",
     "description": "This module pulls data (lock and door status) from August Locks connected to the configured account using august-connect.",
     "issues": [],
-    "tags": ["august"],
+    "tags": [
+      "august"
+    ],
     "license": "MIT",
     "image": "screenshots-example.jpg"
   },
@@ -529,7 +612,10 @@
     "maintainerURL": "",
     "description": "Display stock prices and charts using Yahoo Finance API.",
     "issues": [],
-    "tags": ["stock", "alphavantage"],
+    "tags": [
+      "stock",
+      "alphavantage"
+    ],
     "license": "MIT",
     "image": "avstock-grid.PNG"
   },
@@ -554,7 +640,10 @@
     "maintainerURL": "",
     "description": "Show fullscreen slideshow in background from images in a local folder. Great for a photo frame.",
     "issues": [],
-    "tags": ["background", "slideshow"],
+    "tags": [
+      "background",
+      "slideshow"
+    ],
     "license": "MIT",
     "image": "exampleImages-1.jpg"
   },
@@ -576,8 +665,16 @@
     "maintainer": "stonecrown",
     "maintainerURL": "",
     "description": "Displays the current info for scheduled sailings of specified BC Ferries route.",
-    "issues": ["No image found."],
-    "tags": ["transport", "ferry", "ferries", "vancouver", "british columbia"],
+    "issues": [
+      "No image found."
+    ],
+    "tags": [
+      "transport",
+      "ferry",
+      "ferries",
+      "vancouver",
+      "british columbia"
+    ],
     "license": "MIT"
   },
   {
@@ -688,7 +785,11 @@
     "maintainerURL": "",
     "description": "Display the current biathlon results (World Cup and IBU Cup).",
     "issues": [],
-    "tags": ["biathlon", "result", "ibu"],
+    "tags": [
+      "biathlon",
+      "result",
+      "ibu"
+    ],
     "license": "MIT",
     "image": "MMM-BiathlonResults_screenshot1.jpg"
   },
@@ -830,7 +931,10 @@
     "maintainerURL": "https://github.com/timodejong95",
     "description": "Connecting Bluetooth devices, currently only Oral-B toothbrushes.",
     "issues": [],
-    "tags": ["bluetooth", "oralb"],
+    "tags": [
+      "bluetooth",
+      "oralb"
+    ],
     "license": "MIT",
     "image": "screenshots-oralbtoothbrush.jpg"
   },
@@ -974,8 +1078,12 @@
     "maintainer": "retroflex",
     "maintainerURL": "",
     "description": "Shows stats (level, trophies and victories) for players of mobile game Brawl Stars.",
-    "issues": ["No image found."],
-    "tags": ["brawl stars"],
+    "issues": [
+      "No image found."
+    ],
+    "tags": [
+      "brawl stars"
+    ],
     "license": "MIT"
   },
   {
@@ -1008,7 +1116,9 @@
     "maintainerURL": "",
     "description": "Display a Bring! shopping list in a flexible view and touch support.",
     "issues": [],
-    "tags": ["bring"],
+    "tags": [
+      "bring"
+    ],
     "license": "MIT",
     "image": "img-readme-example.jpg"
   },
@@ -1034,7 +1144,10 @@
     "maintainerURL": "https://github.com/balassy",
     "description": "Displays the number of available bikes on the selected stations of the Budapest public bike system (aka MOL Bubi).",
     "issues": [],
-    "tags": ["bike", "transport"],
+    "tags": [
+      "bike",
+      "transport"
+    ],
     "license": "MIT",
     "image": "doc-screenshot-custom-place-name.jpg"
   },
@@ -1084,7 +1197,13 @@
     "maintainerURL": "https://github.com/werthdavid",
     "description": "A module that flickers the whole screen to prevent a burn-in effect on your display.",
     "issues": [],
-    "tags": ["lcd", "amoled", "burn-in", "burn", "screensaver"],
+    "tags": [
+      "lcd",
+      "amoled",
+      "burn-in",
+      "burn",
+      "screensaver"
+    ],
     "license": "MIT",
     "image": "img-readme-burnin.jpg"
   },
@@ -1096,7 +1215,10 @@
     "maintainerURL": "",
     "description": "Display Dutch bus and some other public transports for a targeted set of bus stops.",
     "issues": [],
-    "tags": ["bus", "times"],
+    "tags": [
+      "bus",
+      "times"
+    ],
     "license": "MIT",
     "image": "screenshot.jpg"
   },
@@ -1107,8 +1229,12 @@
     "maintainer": "ptrbld",
     "maintainerURL": "https://github.com/ptrbld",
     "description": "Use a button to hide or show different modules via a broadcast message.",
-    "issues": ["No image found."],
-    "tags": ["button"],
+    "issues": [
+      "No image found."
+    ],
+    "tags": [
+      "button"
+    ],
     "license": "MIT"
   },
   {
@@ -1118,8 +1244,12 @@
     "maintainer": "MarcLandis",
     "maintainerURL": "https://github.com/MarcLandis",
     "description": "More complicated, but also more powerful: multiple buttons, configurable notifications, different actions on short and long press.",
-    "issues": ["No image found."],
-    "tags": ["buttons"],
+    "issues": [
+      "No image found."
+    ],
+    "tags": [
+      "buttons"
+    ],
     "license": "MIT"
   },
   {
@@ -1140,8 +1270,12 @@
     "maintainer": "MMRIZE",
     "maintainerURL": "",
     "description": "CalDav Parser to convert to iCal format.",
-    "issues": ["No image found."],
-    "tags": ["caldav"],
+    "issues": [
+      "No image found."
+    ],
+    "tags": [
+      "caldav"
+    ],
     "license": "MIT"
   },
   {
@@ -1152,7 +1286,9 @@
     "maintainerURL": "",
     "description": "Extended calendar and event view.",
     "issues": [],
-    "tags": ["calendar"],
+    "tags": [
+      "calendar"
+    ],
     "license": "MIT",
     "image": "docs-Configuration-Views-legend-full-example.jpg"
   },
@@ -1163,8 +1299,13 @@
     "maintainer": "MMRIZE",
     "maintainerURL": "",
     "description": "Extended calendar and event view.",
-    "issues": ["No image found."],
-    "tags": ["calendar", "calext3"],
+    "issues": [
+      "No image found."
+    ],
+    "tags": [
+      "calendar",
+      "calext3"
+    ],
     "license": "MIT"
   },
   {
@@ -1174,8 +1315,13 @@
     "maintainer": "MMRIZE",
     "maintainerURL": "",
     "description": "Extended calendar and event view. Show calendar as agenda.",
-    "issues": ["No image found."],
-    "tags": ["calendar", "agenda"],
+    "issues": [
+      "No image found."
+    ],
+    "tags": [
+      "calendar",
+      "agenda"
+    ],
     "license": "MIT"
   },
   {
@@ -1185,8 +1331,14 @@
     "maintainer": "MMRIZE",
     "maintainerURL": "",
     "description": "Presenting events as daily/weekly journal style.",
-    "issues": ["No image found."],
-    "tags": ["cx3j", "calendarext3", "cx3"],
+    "issues": [
+      "No image found."
+    ],
+    "tags": [
+      "cx3j",
+      "calendarext3",
+      "cx3"
+    ],
     "license": "MIT"
   },
   {
@@ -1196,8 +1348,13 @@
     "maintainer": "MMRIZE",
     "maintainerURL": "",
     "description": "Extended calendar and event view. Show calendar timeline.",
-    "issues": ["No image found."],
-    "tags": ["timeline", "cx3"],
+    "issues": [
+      "No image found."
+    ],
+    "tags": [
+      "timeline",
+      "cx3"
+    ],
     "license": "MIT"
   },
   {
@@ -1295,8 +1452,14 @@
     "maintainer": "alexyak",
     "maintainerURL": "",
     "description": "Display a webcamera video feed.",
-    "issues": ["No image found."],
-    "tags": ["email", "camera", "mirror camera"],
+    "issues": [
+      "No image found."
+    ],
+    "tags": [
+      "email",
+      "camera",
+      "mirror camera"
+    ],
     "license": "MIT"
   },
   {
@@ -1328,7 +1491,10 @@
     "maintainerURL": "",
     "description": "Show meals from canteens (Germany and Switzerland).",
     "issues": [],
-    "tags": ["canteen", "openmensa"],
+    "tags": [
+      "canteen",
+      "openmensa"
+    ],
     "license": "MIT",
     "image": "img-example1.jpg"
   },
@@ -1392,8 +1558,14 @@
     "maintainer": "nischi",
     "maintainerURL": "",
     "description": "Send Notification to this module to turn TV over HDMI on or off.",
-    "issues": ["No image found."],
-    "tags": ["cec", "control", "tv"],
+    "issues": [
+      "No image found."
+    ],
+    "tags": [
+      "cec",
+      "control",
+      "tv"
+    ],
     "license": "MIT"
   },
   {
@@ -1416,7 +1588,13 @@
     "maintainerURL": "https://github.com/xadamxk",
     "description": "Displays LOL Champions Queue standings.",
     "issues": [],
-    "tags": ["esports", "league", "of", "legends", "championsqueue"],
+    "tags": [
+      "esports",
+      "league",
+      "of",
+      "legends",
+      "championsqueue"
+    ],
     "license": "MIT",
     "image": "screenshots-default_format.jpg"
   },
@@ -1585,7 +1763,10 @@
     "maintainerURL": "https://github.com/mlbonniec",
     "description": "Display your Bitcoin Coinbase balance.",
     "issues": [],
-    "tags": ["coinbase", "mmm-magic-mirror"],
+    "tags": [
+      "coinbase",
+      "mmm-magic-mirror"
+    ],
     "license": "ISC",
     "image": "img-readme-MMM-Coinbase.jpg"
   },
@@ -1597,7 +1778,11 @@
     "maintainerURL": "",
     "description": "Display cryptocurrency information from the Coin Market Cap website. Ticker Price, Logos, Sparkline Graphs, etc.",
     "issues": [],
-    "tags": ["crypto currency", "coinmarketcap", "bitcoin"],
+    "tags": [
+      "crypto currency",
+      "coinmarketcap",
+      "bitcoin"
+    ],
     "license": "MIT",
     "image": "images-sample.jpg"
   },
@@ -1666,7 +1851,9 @@
     "maintainerURL": "",
     "description": "Display internet connection status.",
     "issues": [],
-    "tags": ["magicmirror internet connection"],
+    "tags": [
+      "magicmirror internet connection"
+    ],
     "license": "MIT",
     "image": "docs-preview.jpg"
   },
@@ -1725,7 +1912,12 @@
     "maintainerURL": "",
     "description": "Display COUP e-scooters around you and sort them by distance. It works for Berlin and other cities.",
     "issues": [],
-    "tags": ["coup", "sooter", "escooter", "berlin"],
+    "tags": [
+      "coup",
+      "sooter",
+      "escooter",
+      "berlin"
+    ],
     "license": "ISC",
     "image": "screenshots-screenshot.jpg"
   },
@@ -1747,8 +1939,14 @@
     "maintainer": "0m4r",
     "maintainerURL": "",
     "description": "Live covid19 numbers provided via <a target=\"_blank\" href=\"https://covid19api.com/\">https://covid19api.com/</a>.",
-    "issues": ["`package.json` issue: No license field."],
-    "tags": ["covid19", "covid", "covid19api"]
+    "issues": [
+      "`package.json` issue: No license field."
+    ],
+    "tags": [
+      "covid19",
+      "covid",
+      "covid19api"
+    ]
   },
   {
     "name": "MMM-COVID19",
@@ -1819,7 +2017,9 @@
     "maintainerURL": "https://github.com/dsouzadrian",
     "description": "Display cicket scores for ongoing live cricket matches.",
     "issues": [],
-    "tags": ["cricket"],
+    "tags": [
+      "cricket"
+    ],
     "license": "MIT",
     "image": "Screenshots-Screenshot.jpg"
   },
@@ -1831,7 +2031,9 @@
     "maintainerURL": "",
     "description": "News feed from the <strong>Swedish</strong> Government Crisis Information (Krisinformation.se).",
     "issues": [],
-    "tags": ["crisis"],
+    "tags": [
+      "crisis"
+    ],
     "license": "MIT",
     "image": "docs-ScreenShot1.PNG"
   },
@@ -1910,8 +2112,13 @@
     "maintainer": "MarinescuEvghenii",
     "maintainerURL": "",
     "description": "Display cursor when user moves mouse and hide after delay.",
-    "issues": ["No image found."],
-    "tags": ["cursor", "mmm-cursor"],
+    "issues": [
+      "No image found."
+    ],
+    "tags": [
+      "cursor",
+      "mmm-cursor"
+    ],
     "license": "MIT"
   },
   {
@@ -1944,7 +2151,11 @@
     "maintainerURL": "",
     "description": "Displays the daily Cyanide&amp;Happiness Comic.",
     "issues": [],
-    "tags": ["cyanide", "happiness", "explosm"],
+    "tags": [
+      "cyanide",
+      "happiness",
+      "explosm"
+    ],
     "license": "MIT",
     "image": "cyanidehappiness.jpg"
   },
@@ -2019,7 +2230,9 @@
     "maintainerURL": "",
     "description": "Displays information retreived from a Daikin Air Conditioner Unit.",
     "issues": [],
-    "tags": ["daikin"],
+    "tags": [
+      "daikin"
+    ],
     "license": "MIT",
     "image": "screenshots-daikin.jpg"
   },
@@ -2345,7 +2558,9 @@
     "maintainerURL": "",
     "description": "A vintage-style Digital Alarm Clock integrating MMM-DigClock and MMM-AlarmClock.",
     "issues": [],
-    "tags": ["digital alarm clock"],
+    "tags": [
+      "digital alarm clock"
+    ],
     "license": "MIT",
     "image": "Screenshot (1).jpg"
   },
@@ -2358,7 +2573,9 @@
     "description": "Display a random release from your <a target=\"_blank\" href=\"https://www.discogs.com\">discogs.com</a> music collection.",
     "issues": [],
     "outdated": "Abandoned. Repo has been archived at 2022-08-26.",
-    "tags": ["discogs"],
+    "tags": [
+      "discogs"
+    ],
     "license": "MIT",
     "image": "cover-sample_cover.jpg"
   },
@@ -2374,7 +2591,9 @@
       "`package.json` issue: license should be a valid SPDX license expression",
       "No compatible or wrong license field in 'package.json'. Without that, we can't use an image."
     ],
-    "tags": ["discord"],
+    "tags": [
+      "discord"
+    ],
     "license": "CC Zero"
   },
   {
@@ -2385,7 +2604,10 @@
     "maintainerURL": "",
     "description": "Show user notifications of a site that runs on <a target=\"_blank\" href=\"https://www.discourse.org\">Discourse</a>.",
     "issues": [],
-    "tags": ["discourse", "notifications"],
+    "tags": [
+      "discourse",
+      "notifications"
+    ],
     "license": "MIT",
     "image": "docs-images-module_preview.jpg"
   },
@@ -2422,7 +2644,9 @@
     "maintainerURL": "",
     "description": "A highly configurable module for displaying domoticz information and performing actions on Domoticz.",
     "issues": [],
-    "tags": ["domoticz"],
+    "tags": [
+      "domoticz"
+    ],
     "license": "MIT",
     "image": "screenshots-dashboard.jpg"
   },
@@ -2502,7 +2726,12 @@
     "maintainerURL": "https://github.com/galaktor",
     "description": "Customisable real-time stop data for Dublin Bus, Luas and IrishRail stops.",
     "issues": [],
-    "tags": ["public transport", "dublin bus", "dublin luas", "irish rail"],
+    "tags": [
+      "public transport",
+      "dublin bus",
+      "dublin luas",
+      "irish rail"
+    ],
     "license": "GPL-3.0-or-later",
     "image": "docs-preview.jpg"
   },
@@ -2514,7 +2743,13 @@
     "maintainerURL": "",
     "description": "Station monitor for the Dresden/Germany local transport (DVB) bus, tram and train system.",
     "issues": [],
-    "tags": ["dvb", "vvo", "dresden", "public transport", "local transit"],
+    "tags": [
+      "dvb",
+      "vvo",
+      "dresden",
+      "public transport",
+      "local transit"
+    ],
     "license": "MIT",
     "image": "screenshot_en.jpg"
   },
@@ -2538,8 +2773,12 @@
     "maintainer": "DavidLSmyth",
     "maintainerURL": "",
     "description": "Display Realtime Irish Rail data for a targeted station.",
-    "issues": ["No image found."],
-    "tags": ["irishrail"],
+    "issues": [
+      "No image found."
+    ],
+    "tags": [
+      "irishrail"
+    ],
     "license": "ISC"
   },
   {
@@ -2574,7 +2813,9 @@
     "maintainerURL": "",
     "description": "A heavily configurable module to display different animations based on current weather and show customized event effects.",
     "issues": [],
-    "tags": ["weather"],
+    "tags": [
+      "weather"
+    ],
     "license": "MIT",
     "image": "cloudy_example.jpg"
   },
@@ -2586,7 +2827,10 @@
     "maintainerURL": "",
     "description": "Watch the sunlit side of Earth as it rotates.",
     "issues": [],
-    "tags": ["earth", "nasa"],
+    "tags": [
+      "earth",
+      "nasa"
+    ],
     "license": "MIT",
     "image": "loading-loading.jpg"
   },
@@ -2635,7 +2879,9 @@
     "maintainerURL": "",
     "description": "The easiest way to show pictures on your mirror.",
     "issues": [],
-    "tags": ["picture"],
+    "tags": [
+      "picture"
+    ],
     "license": "MIT",
     "image": "pix-18.jpg"
   },
@@ -2647,7 +2893,10 @@
     "maintainerURL": "",
     "description": "Display data from ecobee thermostats and remote sensors.",
     "issues": [],
-    "tags": ["ecobee", "thermostat"],
+    "tags": [
+      "ecobee",
+      "thermostat"
+    ],
     "license": "MIT",
     "image": "sample.jpg"
   },
@@ -2687,7 +2936,11 @@
     "maintainerURL": "",
     "description": "Show the interface throughput of an Ubiquity EdgeRouter.",
     "issues": [],
-    "tags": ["edgerouter", "throughput", "bandwith"],
+    "tags": [
+      "edgerouter",
+      "throughput",
+      "bandwith"
+    ],
     "license": "MIT",
     "image": "assets-MMM-edgerouter.jpg"
   },
@@ -2698,7 +2951,9 @@
     "maintainer": "sourceforge807",
     "maintainerURL": "",
     "description": "Station monitor for local transport companies using the EFA system.",
-    "issues": ["No image found."],
+    "issues": [
+      "No image found."
+    ],
     "tags": [
       "efa",
       "departures",
@@ -2749,7 +3004,13 @@
     "maintainerURL": "https://github.com/Tom-Hirschberger",
     "description": "Embed one or multiple websites with there URL.",
     "issues": [],
-    "tags": ["embed", "iframe", "webview", "mjpeg", "videostream"],
+    "tags": [
+      "embed",
+      "iframe",
+      "webview",
+      "mjpeg",
+      "videostream"
+    ],
     "license": "MIT",
     "image": "doc-screenshots-SomeGrafanaPanels.jpg"
   },
@@ -2783,7 +3044,11 @@
     "maintainerURL": "",
     "description": "Get estimations for bus stops in the city of Valencia (Spain).",
     "issues": [],
-    "tags": ["bus stop", "emt valencia", "public transport"],
+    "tags": [
+      "bus stop",
+      "emt valencia",
+      "public transport"
+    ],
     "license": "MIT",
     "image": "screenshot.jpg"
   },
@@ -2795,7 +3060,13 @@
     "maintainerURL": "",
     "description": "Visualizes production and consumption of electrical energy in your home. Is meant to be used with solar energy converters and (optional) energy storage systems.",
     "issues": [],
-    "tags": ["energy", "monitor", "storage", "home", "energymonitor"],
+    "tags": [
+      "energy",
+      "monitor",
+      "storage",
+      "home",
+      "energymonitor"
+    ],
     "license": "MIT",
     "image": "assets-screenshot-energy-monitor.jpg"
   },
@@ -2829,7 +3100,11 @@
     "maintainerURL": "",
     "description": "Module to display weather forecast information from Environment Canada.",
     "issues": [],
-    "tags": ["canada", "weather", "forecast"],
+    "tags": [
+      "canada",
+      "weather",
+      "forecast"
+    ],
     "license": "MIT",
     "image": "screenshot.jpg"
   },
@@ -2852,7 +3127,9 @@
     "maintainerURL": "https://github.com/mumblebaj",
     "description": "Display loadshedding schedule data for the South African users.",
     "issues": [],
-    "tags": ["eskomsepush"],
+    "tags": [
+      "eskomsepush"
+    ],
     "license": "ISC",
     "image": "images-image-1.jpg"
   },
@@ -2948,7 +3225,11 @@
     "maintainerURL": "https://wiki.bugsounet.fr",
     "description": "Display any warning, information or error on your screen about Assistant.",
     "issues": [],
-    "tags": ["notification", "warning", "alert"],
+    "tags": [
+      "notification",
+      "warning",
+      "alert"
+    ],
     "license": "MIT",
     "image": "errorShot.jpg"
   },
@@ -2985,8 +3266,12 @@
     "maintainer": "bugsounet",
     "maintainerURL": "https://wiki.bugsounet.fr",
     "description": "Display any internet web page like a real browser in fullscreen",
-    "issues": ["No image found."],
-    "tags": ["browser"],
+    "issues": [
+      "No image found."
+    ],
+    "tags": [
+      "browser"
+    ],
     "license": "MIT"
   },
   {
@@ -2997,7 +3282,14 @@
     "maintainerURL": "https://wiki.bugsounet.fr",
     "description": "Multi-keyword listener for MMM-GoogleAssistant",
     "issues": [],
-    "tags": ["hotword", "porcupine", "snowboy", "voice", "jarvis", "ok google"],
+    "tags": [
+      "hotword",
+      "porcupine",
+      "snowboy",
+      "voice",
+      "jarvis",
+      "ok google"
+    ],
     "license": "MIT",
     "image": "resources-google.jpg"
   },
@@ -3022,7 +3314,10 @@
     "maintainerURL": "https://wiki.bugsounet.fr",
     "description": "Display your album directory with Google photos API in background or in MagicMirror² position",
     "issues": [],
-    "tags": ["google", "photo"],
+    "tags": [
+      "google",
+      "photo"
+    ],
     "license": "MIT",
     "image": "resources-GooglePhoto-Logo.jpg"
   },
@@ -3033,8 +3328,14 @@
     "maintainer": "bugsounet",
     "maintainerURL": "https://wiki.bugsounet.fr",
     "description": "CPU governor enables the operating system to scale the CPU frequency up or down in order to save power or improve performance.",
-    "issues": ["No image found."],
-    "tags": ["governor", "ext", "googleassistant"],
+    "issues": [
+      "No image found."
+    ],
+    "tags": [
+      "governor",
+      "ext",
+      "googleassistant"
+    ],
     "license": "MIT"
   },
   {
@@ -3045,7 +3346,10 @@
     "maintainerURL": "https://wiki.bugsounet.fr",
     "description": "Check your internet connexion, display ping.",
     "issues": [],
-    "tags": ["internet", "warning"],
+    "tags": [
+      "internet",
+      "warning"
+    ],
     "license": "MIT",
     "image": "resources-Internet-Logo.jpg"
   },
@@ -3070,7 +3374,10 @@
     "maintainerURL": "https://wiki.bugsounet.fr",
     "description": "Allow to play Spotify music on your mirror with Librespot.",
     "issues": [],
-    "tags": ["spotify", "librespot"],
+    "tags": [
+      "spotify",
+      "librespot"
+    ],
     "license": "MIT",
     "image": "resources-Spotify-Logo.jpg"
   },
@@ -3081,8 +3388,15 @@
     "maintainer": "bugsounet",
     "maintainerURL": "https://wiki.bugsounet.fr",
     "description": "Control your screen with a webcam (as motion detector)",
-    "issues": ["No image found."],
-    "tags": ["plugin", "screen", "ext", "googleassistant"],
+    "issues": [
+      "No image found."
+    ],
+    "tags": [
+      "plugin",
+      "screen",
+      "ext",
+      "googleassistant"
+    ],
     "license": "MIT"
   },
   {
@@ -3093,7 +3407,10 @@
     "maintainerURL": "https://wiki.bugsounet.fr",
     "description": "Play any music found on a USB Key or in defined local directory.",
     "issues": [],
-    "tags": ["volume", "warning"],
+    "tags": [
+      "volume",
+      "warning"
+    ],
     "license": "MIT",
     "image": "resources-Screenshot.jpg"
   },
@@ -3105,7 +3422,9 @@
     "maintainerURL": "https://wiki.bugsounet.fr",
     "description": "This plugin allows you to have animated pages",
     "issues": [],
-    "tags": ["pages"],
+    "tags": [
+      "pages"
+    ],
     "license": "MIT",
     "image": "example.jpg"
   },
@@ -3117,7 +3436,9 @@
     "maintainerURL": "https://wiki.bugsounet.fr",
     "description": "Displaying any photos discover by assistant in fullscreen",
     "issues": [],
-    "tags": ["photos"],
+    "tags": [
+      "photos"
+    ],
     "license": "MIT",
     "image": "resources-Photos-Logo.jpg"
   },
@@ -3128,8 +3449,15 @@
     "maintainer": "bugsounet",
     "maintainerURL": "https://wiki.bugsounet.fr",
     "description": "Control your screen with a PIR Sensor.",
-    "issues": ["No image found."],
-    "tags": ["sensor", "pir", "ext", "googleassistant"],
+    "issues": [
+      "No image found."
+    ],
+    "tags": [
+      "sensor",
+      "pir",
+      "ext",
+      "googleassistant"
+    ],
     "license": "MIT"
   },
   {
@@ -3140,7 +3468,9 @@
     "maintainerURL": "https://wiki.bugsounet.fr",
     "description": "Play radio station on MagicMirror².",
     "issues": [],
-    "tags": ["radio"],
+    "tags": [
+      "radio"
+    ],
     "license": "MIT",
     "image": "Logos-ES-Cadena_DIAL.jpg"
   },
@@ -3152,7 +3482,11 @@
     "maintainerURL": "https://wiki.bugsounet.fr",
     "description": "After a configurated time without any user interaction the display will turn off and hide all modules for economy mode.",
     "issues": [],
-    "tags": ["screen", "ext", "googleassistant"],
+    "tags": [
+      "screen",
+      "ext",
+      "googleassistant"
+    ],
     "license": "MIT",
     "image": "screenshot-screenshot.jpg"
   },
@@ -3216,7 +3550,9 @@
     "maintainerURL": "https://wiki.bugsounet.fr",
     "description": "This plugin show current spotify playback of any devices.",
     "issues": [],
-    "tags": ["spotify"],
+    "tags": [
+      "spotify"
+    ],
     "license": "MIT",
     "image": "components-Spotify-Logo.jpg"
   },
@@ -3227,8 +3563,14 @@
     "maintainer": "bugsounet",
     "maintainerURL": "https://wiki.bugsounet.fr",
     "description": "Create a server for displaying any Lyrics and Canvas from Spotify",
-    "issues": ["No image found."],
-    "tags": ["spotify", "canvas", "lyrics"],
+    "issues": [
+      "No image found."
+    ],
+    "tags": [
+      "spotify",
+      "canvas",
+      "lyrics"
+    ],
     "license": "MIT"
   },
   {
@@ -3252,7 +3594,9 @@
     "maintainerURL": "https://wiki.bugsounet.fr",
     "description": "You can remote-control plugins within Telegram.",
     "issues": [],
-    "tags": ["telegram"],
+    "tags": [
+      "telegram"
+    ],
     "license": "MIT",
     "image": "screenshot-sc_fullsize.jpg"
   },
@@ -3277,7 +3621,11 @@
     "maintainerURL": "https://wiki.bugsounet.fr",
     "description": "Control the sound volume level of your mirror.",
     "issues": [],
-    "tags": ["volume", "warning", "googleassistant"],
+    "tags": [
+      "volume",
+      "warning",
+      "googleassistant"
+    ],
     "license": "MIT",
     "image": "resources-screenshot.jpg"
   },
@@ -3288,8 +3636,13 @@
     "maintainer": "bugsounet",
     "maintainerURL": "https://wiki.bugsounet.fr",
     "description": "Allow to send a welcome on start of MagicMirror².",
-    "issues": ["No image found."],
-    "tags": ["notification", "warning"],
+    "issues": [
+      "No image found."
+    ],
+    "tags": [
+      "notification",
+      "warning"
+    ],
     "license": "MIT"
   },
   {
@@ -3300,7 +3653,9 @@
     "maintainerURL": "https://wiki.bugsounet.fr",
     "description": "This plugins allows to play YouTube video.",
     "issues": [],
-    "tags": ["youtube"],
+    "tags": [
+      "youtube"
+    ],
     "license": "MIT",
     "image": "resources-Screenshot1.jpg"
   },
@@ -3312,7 +3667,10 @@
     "maintainerURL": "https://wiki.bugsounet.fr",
     "description": "Allow to cast a YouTube video on MagicMirror².",
     "issues": [],
-    "tags": ["cast", "youtube"],
+    "tags": [
+      "cast",
+      "youtube"
+    ],
     "license": "MIT",
     "image": "resources-Screenshot1.jpg"
   },
@@ -3349,7 +3707,10 @@
     "maintainerURL": "https://github.com/nigel-daniels",
     "description": "Display information published by the FAA on delays and weather conditions at some US airports.",
     "issues": [],
-    "tags": ["faa", "airports"],
+    "tags": [
+      "faa",
+      "airports"
+    ],
     "license": "MIT",
     "image": "airport-delays.jpg"
   },
@@ -3374,8 +3735,16 @@
     "maintainer": "nischi",
     "maintainerURL": "",
     "description": "All new version of Face Recognition with Open CV 4.1 and Deep Neural Network.",
-    "issues": ["No image found."],
-    "tags": ["face", "recognition", "deep", "neural", "network"],
+    "issues": [
+      "No image found."
+    ],
+    "tags": [
+      "face",
+      "recognition",
+      "deep",
+      "neural",
+      "network"
+    ],
     "license": "MIT"
   },
   {
@@ -3397,7 +3766,9 @@
     "maintainerURL": "",
     "description": "Yet Another Facial Recognition system, with admin tooling to make all the AI/ML easy to maintain and supporting hardware acceleration.",
     "issues": [],
-    "tags": ["facial recognition"],
+    "tags": [
+      "facial recognition"
+    ],
     "license": "MIT",
     "image": "media-admin-ui.jpg"
   },
@@ -3408,8 +3779,12 @@
     "maintainer": "paviro",
     "maintainerURL": "",
     "description": "Facial recognition and module swapping based on the current user.",
-    "issues": ["No image found."],
-    "tags": ["facial recognition"],
+    "issues": [
+      "No image found."
+    ],
+    "tags": [
+      "facial recognition"
+    ],
     "license": "MIT"
   },
   {
@@ -3419,8 +3794,12 @@
     "maintainer": "normyx",
     "maintainerURL": "",
     "description": "Modified version of the above PaViRo one that works with OpenCV 3.3+, where training tools is merge in one project and code simplifications.",
-    "issues": ["No image found."],
-    "tags": ["facial recognition"],
+    "issues": [
+      "No image found."
+    ],
+    "tags": [
+      "facial recognition"
+    ],
     "license": "MIT"
   },
   {
@@ -3488,7 +3867,11 @@
     "maintainerURL": "",
     "description": "Display random or your most treasured <a target=\"_blank\" href=\"https://cht.sh\">cheat sheets</a> and learn something new while you have your cup of coffee.",
     "issues": [],
-    "tags": ["cheat sheet", "cht.sh", "tldr"],
+    "tags": [
+      "cheat sheet",
+      "cht.sh",
+      "tldr"
+    ],
     "license": "ISC",
     "image": "screenshot.jpg"
   },
@@ -3547,7 +3930,10 @@
     "maintainerURL": "",
     "description": "Show radiation charts from <a target=\"_blank\" href=\"https://multigeiger.citysensor.de\">https://multigeiger.citysensor.de</a>.",
     "issues": [],
-    "tags": ["radiation", "multigeiger"],
+    "tags": [
+      "radiation",
+      "multigeiger"
+    ],
     "license": "ISC",
     "image": "screenshot-charts.jpg"
   },
@@ -3572,7 +3958,10 @@
     "maintainerURL": "",
     "description": "Inject Ricardo Cabello's (<a target=\"_blank\" href=\"https://github.com/mrdoob\">mrdoob</a>) <a target=\"_blank\" href=\"https://github.com/mrdoob/stats.js\">stats.js</a> to display FPS, MS and MEM consumption.",
     "issues": [],
-    "tags": ["fps", "memory"],
+    "tags": [
+      "fps",
+      "memory"
+    ],
     "license": "ISC",
     "image": "screenshots-custom.jpg"
   },
@@ -3605,8 +3994,13 @@
     "maintainer": "BenRoe",
     "maintainerURL": "",
     "description": "Display Readings/Values from your FHEM device like temperature or humidity.",
-    "issues": ["No image found."],
-    "tags": ["fhem", "home automation"],
+    "issues": [
+      "No image found."
+    ],
+    "tags": [
+      "fhem",
+      "home automation"
+    ],
     "license": "MIT"
   },
   {
@@ -3617,7 +4011,11 @@
     "maintainerURL": "https://github.com/jesmak",
     "description": "Module that tracks packages from Finnish Posti and/or Matkahuolto.",
     "issues": [],
-    "tags": ["parcel", "posti", "matkahuolto"],
+    "tags": [
+      "parcel",
+      "posti",
+      "matkahuolto"
+    ],
     "license": "MIT",
     "image": "screenshot_finparcel.jpg"
   },
@@ -3690,8 +4088,15 @@
     "maintainer": "jancalve",
     "maintainerURL": "",
     "description": "Detecting 3D gesture with GestIC Sensor (MGC3130).",
-    "issues": ["`package.json` issue: No repository field.", "No image found."],
-    "tags": ["flick", "board", "python"],
+    "issues": [
+      "`package.json` issue: No repository field.",
+      "No image found."
+    ],
+    "tags": [
+      "flick",
+      "board",
+      "python"
+    ],
     "license": "MIT"
   },
   {
@@ -3701,8 +4106,12 @@
     "maintainer": "kapsolas",
     "maintainerURL": "",
     "description": "Load last 20 images posted to user's Flickr photostream to mirror and animate them. API key required.",
-    "issues": ["No image found."],
-    "tags": ["flickr"],
+    "issues": [
+      "No image found."
+    ],
+    "tags": [
+      "flickr"
+    ],
     "license": "MIT"
   },
   {
@@ -3713,7 +4122,10 @@
     "maintainerURL": "https://github.com/jesmak",
     "description": "Module that tracks nearby planes based on Flightradar24 data.",
     "issues": [],
-    "tags": ["flights", "flightradar24"],
+    "tags": [
+      "flights",
+      "flightradar24"
+    ],
     "license": "MIT",
     "image": "screenshot_nearbyplanes.jpg"
   },
@@ -3725,7 +4137,11 @@
     "maintainerURL": "https://gitlab.com/karsten13",
     "description": "Displays current flights in a defined area with a map containing the plane positions.",
     "issues": [],
-    "tags": ["flight", "tracking", "radar"],
+    "tags": [
+      "flight",
+      "tracking",
+      "radar"
+    ],
     "license": "MIT",
     "image": "data-flights_mapbox.jpg"
   },
@@ -3737,7 +4153,11 @@
     "maintainerURL": "https://github.com/E3V3A",
     "description": "A flight radar that display airplane/flight details of what is currently flying in the airspace above some location.",
     "issues": [],
-    "tags": ["flights", "iata/icao", "airspace"],
+    "tags": [
+      "flights",
+      "iata/icao",
+      "airspace"
+    ],
     "license": "MIT",
     "image": "images-FlightsAbove1.jpg"
   },
@@ -3831,7 +4251,9 @@
     "maintainerURL": "",
     "description": "Display the driver standings from the current Formula 1 season.",
     "issues": [],
-    "tags": ["formula1"],
+    "tags": [
+      "formula1"
+    ],
     "license": "MIT",
     "image": ".github-example.jpg"
   },
@@ -3842,8 +4264,12 @@
     "maintainer": "retroflex",
     "maintainerURL": "",
     "description": "Shows Fortnite players' stats (score, matches played and kills).",
-    "issues": ["No image found."],
-    "tags": ["fortnite"],
+    "issues": [
+      "No image found."
+    ],
+    "tags": [
+      "fortnite"
+    ],
     "license": "MIT"
   },
   {
@@ -3903,7 +4329,10 @@
     "maintainerURL": "",
     "description": "Display data from your FreeBox v6 server (Revolution) from the french ISP free.",
     "issues": [],
-    "tags": ["freebox", "monitor"],
+    "tags": [
+      "freebox",
+      "monitor"
+    ],
     "license": "MIT",
     "image": "2016-06-30_14-34-46.jpg"
   },
@@ -3927,8 +4356,12 @@
     "maintainer": "drtorchwood",
     "maintainerURL": "",
     "description": "FRITZ!Box Callmonitor. Display an alert when someone is calling and offers a call history.",
-    "issues": ["No image found."],
-    "tags": ["callmonitor"],
+    "issues": [
+      "No image found."
+    ],
+    "tags": [
+      "callmonitor"
+    ],
     "license": "MIT"
   },
   {
@@ -3939,7 +4372,11 @@
     "maintainerURL": "https://github.com/eckonator",
     "description": "The module builds charts to your FRÖLING pellet boiler based on data from the FRÖLING Connect API. Inspiration and code base comes from <a target=\"_blank\" href=\"https://github.com/TA2k/ioBroker.froeling\">TA2k/ioBroker.froeling</a>.",
     "issues": [],
-    "tags": ["magicmirrir", "fröling connect", "fröling"],
+    "tags": [
+      "magicmirrir",
+      "fröling connect",
+      "fröling"
+    ],
     "license": "MIT",
     "image": "MMM-FroelingConnect.jpg"
   },
@@ -3962,7 +4399,13 @@
     "maintainerURL": "",
     "description": "Displays data from a Fronius Solar Inverter, supports auto-off inverters and can be used as a data source for <a target=\"_blank\" href=\"https://github.com/deg0nz/MMM-EnergyMonitor\">MMM-EnergyMonitor</a>.",
     "issues": [],
-    "tags": ["varta", "energy", "storage", "system", "modbus"],
+    "tags": [
+      "varta",
+      "energy",
+      "storage",
+      "system",
+      "modbus"
+    ],
     "license": "MIT",
     "image": "assets-screenshot-offline-converter.jpg"
   },
@@ -4001,7 +4444,10 @@
     "maintainerURL": "",
     "description": "Display Gas Station prices.",
     "issues": [],
-    "tags": ["fuel price", "gas station"],
+    "tags": [
+      "fuel price",
+      "gas station"
+    ],
     "license": "MIT",
     "image": ".github-example3.jpg"
   },
@@ -4013,7 +4459,9 @@
     "maintainerURL": "",
     "description": "Shows Today's and Tomorrow's \"funny\" holidays around world (datasource &lt;<a target=\"_blank\" href=\"http://www.webcal.fi%3E\">www.webcal.fi&gt;</a>).",
     "issues": [],
-    "tags": ["calendar"],
+    "tags": [
+      "calendar"
+    ],
     "license": "MIT",
     "image": "documentation-exampleui.jpg"
   },
@@ -4025,7 +4473,12 @@
     "maintainerURL": "https://github.com/balassy",
     "description": "Displays Budapest public transport information directly from the Futár webservice.",
     "issues": [],
-    "tags": ["futar", "transport", "public-transport", "budapest"],
+    "tags": [
+      "futar",
+      "transport",
+      "public-transport",
+      "budapest"
+    ],
     "license": "MIT",
     "image": "doc-screenshot-alerts.jpg"
   },
@@ -4037,7 +4490,9 @@
     "maintainerURL": "",
     "description": "Displays a grid simulating the <a target=\"_blank\" href=\"https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life\">Game of Life</a>.",
     "issues": [],
-    "tags": ["game of life"],
+    "tags": [
+      "game of life"
+    ],
     "license": "MIT",
     "image": "img-screenshot_1.jpg"
   },
@@ -4060,7 +4515,9 @@
     "maintainerURL": "https://github.com/mumblebaj",
     "description": "Monitor your gas tank level on your mirror.",
     "issues": [],
-    "tags": ["gasmonitor"],
+    "tags": [
+      "gasmonitor"
+    ],
     "license": "ISC",
     "image": "images-screenshot.jpg"
   },
@@ -4085,7 +4542,10 @@
     "maintainerURL": "",
     "description": "Track your GCP (Google Cloud Platform) activity.",
     "issues": [],
-    "tags": ["gcp", "billing"],
+    "tags": [
+      "gcp",
+      "billing"
+    ],
     "license": "MIT",
     "image": "MMM-GCPscreenshot0.1.jpg"
   },
@@ -4121,8 +4581,13 @@
     "maintainer": "thobach",
     "maintainerURL": "",
     "description": "Allows gesture control of compliments (only show when stepping in front of mirror), newsfeed (wave left / right, up for full-screen) and pages with two types of infrared sensors. Gestures can be up, down, left, right, far and close movements of the hand in front of a gesture sensor (APDS-9960) and present and away gestures in front of an IR distance sensor (GP2Y0A21YK).",
-    "issues": ["No image found."],
-    "tags": ["gesture", "gestures"],
+    "issues": [
+      "No image found."
+    ],
+    "tags": [
+      "gesture",
+      "gestures"
+    ],
     "license": "MIT"
   },
   {
@@ -4132,8 +4597,13 @@
     "maintainer": "C-Deck",
     "maintainerURL": "https://github.com/C-Deck",
     "description": "Display your official USGA Ghin handicap.",
-    "issues": ["No image found."],
-    "tags": ["ghin", "golf"],
+    "issues": [
+      "No image found."
+    ],
+    "tags": [
+      "ghin",
+      "golf"
+    ],
     "license": "MIT"
   },
   {
@@ -4176,14 +4646,15 @@
   },
   {
     "name": "MMM-Glance",
-    "url": "https://github.com/tttooommm56/MMM-Glance",
-    "id": "tttooommm56/MMM-Glance",
-    "maintainer": "tttooommm56",
-    "maintainerURL": "",
+    "url": "https://github.com/eouia/MMM-Glance",
+    "id": "eouia/MMM-Glance",
+    "maintainer": "eouia",
+    "maintainerURL": "https://github.com/eouia",
     "description": "Show specific module(s) and hide others for a some time by notification or command.",
     "issues": [
       "There is no `package.json`. We need this file to gather information about the module for the module list page."
-    ]
+    ],
+    "outdated": "Abandoned. Repo has been archived at 2020-06-10."
   },
   {
     "name": "MMM-Globe",
@@ -4207,7 +4678,9 @@
     "maintainerURL": "",
     "description": "Show a list of unread gmails.",
     "issues": [],
-    "tags": ["mirror email"],
+    "tags": [
+      "mirror email"
+    ],
     "license": "MIT",
     "image": "example1.jpg"
   },
@@ -4275,8 +4748,13 @@
     "maintainer": "randomBrainstormer",
     "maintainerURL": "https://github.com/randomBrainstormer",
     "description": "Get your Google Calendars in the shape of MagicMirror's default calendar.",
-    "issues": ["No image found."],
-    "tags": ["google", "calendar"],
+    "issues": [
+      "No image found."
+    ],
+    "tags": [
+      "google",
+      "calendar"
+    ],
     "license": "MIT"
   },
   {
@@ -4290,7 +4768,12 @@
       "`package.json` issue: license should be a valid SPDX license expression",
       "No compatible or wrong license field in 'package.json'. Without that, we can't use an image."
     ],
-    "tags": ["google", "google cast", "multimedia", "connected home"],
+    "tags": [
+      "google",
+      "google cast",
+      "multimedia",
+      "connected home"
+    ],
     "license": "GPL-3"
   },
   {
@@ -4327,9 +4810,24 @@
     "maintainerURL": "",
     "description": "Display google fit daily step count and weights.",
     "issues": [],
-    "tags": ["google fit"],
+    "tags": [
+      "google fit"
+    ],
     "license": "MIT",
     "image": "screenshots-RealSteps_and_DayLabels.jpg"
+  },
+  {
+    "name": "MMM-GoogleKeep",
+    "url": "https://github.com/taxilof/MMM-GoogleKeep",
+    "id": "taxilof/MMM-GoogleKeep",
+    "maintainer": "taxilof",
+    "maintainerURL": "",
+    "description": "Displays one list from Google Keep.",
+    "issues": [
+      "There are no keywords in 'package.json'. We would use them as tags on the module list page.",
+      "No image found."
+    ],
+    "license": "MIT"
   },
   {
     "name": "MMM-googlemaps",
@@ -4350,7 +4848,10 @@
     "maintainerURL": "https://github.com/MartinGris",
     "description": "Tracking of multiple objects on a google map. Position can be updated by a notification.",
     "issues": [],
-    "tags": ["google maps", "marker"],
+    "tags": [
+      "google maps",
+      "marker"
+    ],
     "license": "MIT",
     "image": "examples-screenshot.jpg"
   },
@@ -4407,35 +4908,15 @@
   },
   {
     "name": "MMM-GoogleTasks",
-    "url": "https://github.com/jayked/MMM-GoogleTasks",
-    "id": "jayked/MMM-GoogleTasks",
-    "maintainer": "jayked",
-    "maintainerURL": "",
-    "description": "Display Google Tasks.",
-    "issues": [
-      "There is no `package.json`. We need this file to gather information about the module for the module list page."
-    ]
-  },
-  {
-    "name": "MMM-GoogleTasks",
-    "url": "https://github.com/themox/MMM-GoogleTasks",
-    "id": "themox/MMM-GoogleTasks",
-    "maintainer": "themox",
-    "maintainerURL": "",
-    "description": "Updated Google Tasks display module.",
-    "issues": [
-      "There is no `package.json`. We need this file to gather information about the module for the module list page."
-    ]
-  },
-  {
-    "name": "MMM-GoogleTasks",
     "url": "https://github.com/spydersoft-consulting/MMM-GoogleTasks",
     "id": "spydersoft-consulting/MMM-GoogleTasks",
     "maintainer": "spydersoft-consulting",
     "maintainerURL": "https://github.com/spydersoft-consulting/",
-    "description": "Google Tasks with Planned View.",
+    "description": "Display Google Tasks with Planned View.",
     "issues": [],
-    "tags": ["scheduler"],
+    "tags": [
+      "scheduler"
+    ],
     "license": "MIT",
     "image": "images-sample.jpg"
   },
@@ -4475,7 +4956,11 @@
     "maintainerURL": "",
     "description": "Text-to-Speech module with Google Cloud TTS API. Give a voice to your Mirror.",
     "issues": [],
-    "tags": ["text-to-speech", "tts", "google"],
+    "tags": [
+      "text-to-speech",
+      "tts",
+      "google"
+    ],
     "license": "MIT",
     "image": ".github-TTS.jpg"
   },
@@ -4498,7 +4983,9 @@
     "maintainerURL": "https://github.com/Tom-Hirschberger",
     "description": "Send notifications based on GPIO events. Can be used as PIR module and with rotary encoders.",
     "issues": [],
-    "tags": ["gpio"],
+    "tags": [
+      "gpio"
+    ],
     "license": "MIT",
     "image": "examples-HC-SR501-HC-SR501-GPIO4.jpg"
   },
@@ -4546,7 +5033,11 @@
     "maintainerURL": "",
     "description": "Detecting 3D gesture with GroveGesture Sensor(PAJ7620u2).",
     "issues": [],
-    "tags": ["grove gesture", "gesture", "paj7620u2"],
+    "tags": [
+      "grove gesture",
+      "gesture",
+      "paj7620u2"
+    ],
     "license": "MIT",
     "image": "Gesture_sensor_3.jpg"
   },
@@ -4558,7 +5049,9 @@
     "maintainerURL": "https://github.com/mumblebaj",
     "description": "Display data from Growatt Inveter. Support multiple Growatt Inverter types.",
     "issues": [],
-    "tags": ["growatt"],
+    "tags": [
+      "growatt"
+    ],
     "license": "ISC",
     "image": "images-screenshot.jpg"
   },
@@ -4585,7 +5078,9 @@
     "maintainerURL": "https://github.com/mumblebaj",
     "description": "Display status data from Growatt Inveter. Support multiple Growatt Inverter types. Made to work in conjunction with <a target=\"_blank\" href=\"https://github.com/mumblebaj/MMM-Growatt\">MMM-Growatt</a> or independently.",
     "issues": [],
-    "tags": ["growatt"],
+    "tags": [
+      "growatt"
+    ],
     "license": "MIT",
     "image": "images-screenshot.jpg"
   },
@@ -4648,7 +5143,9 @@
     "maintainerURL": "",
     "description": "An alternate home-assistant integration.",
     "issues": [],
-    "tags": ["home-assistant"],
+    "tags": [
+      "home-assistant"
+    ],
     "license": "GPL-3.0",
     "image": "MMM-HASS.jpg"
   },
@@ -4682,7 +5179,10 @@
     "maintainerURL": "",
     "description": "Hide/Show individual modules and pages of modules with custom audio responses that you create.",
     "issues": [],
-    "tags": ["voice recognition", "speech to text"],
+    "tags": [
+      "voice recognition",
+      "speech to text"
+    ],
     "license": "MIT",
     "image": "images-1.jpg"
   },
@@ -4704,8 +5204,13 @@
     "maintainer": "georg90",
     "maintainerURL": "",
     "description": "Display local transport in Hamburg/Germany.",
-    "issues": ["No image found."],
-    "tags": ["localtransport", "hvv"],
+    "issues": [
+      "No image found."
+    ],
+    "tags": [
+      "localtransport",
+      "hvv"
+    ],
     "license": "MIT"
   },
   {
@@ -4715,8 +5220,14 @@
     "maintainer": "skuethe",
     "maintainerURL": "",
     "description": "Display local transport in Hamburg/Germany. Now up to date.",
-    "issues": ["No image found."],
-    "tags": ["localtransport", "hvv", "hamburg"],
+    "issues": [
+      "No image found."
+    ],
+    "tags": [
+      "localtransport",
+      "hvv",
+      "hamburg"
+    ],
     "license": "MIT"
   },
   {
@@ -4773,7 +5284,11 @@
     "maintainerURL": "https://github.com/winstonma",
     "description": "Display Estimated Time of Arrival (ETA) of Hong Kong public transport.",
     "issues": [],
-    "tags": ["kmb", "public transport", "local transit"],
+    "tags": [
+      "kmb",
+      "public transport",
+      "local transit"
+    ],
     "license": "AGPL-3.0-or-later",
     "image": "screenshots-screenshot.jpg"
   },
@@ -4845,7 +5360,10 @@
     "maintainerURL": "https://github.com/Snille",
     "description": "Fork of leinich module. Many new features added. Display information from Home Assistant using the home assistant REST API.",
     "issues": [],
-    "tags": ["home assistant", "ha"],
+    "tags": [
+      "home assistant",
+      "ha"
+    ],
     "license": "MIT",
     "image": ".github-screen01-advanced.jpg"
   },
@@ -4872,7 +5390,9 @@
     "maintainerURL": "https://github.com/wonderslug",
     "description": "Displays information from Home Assistant using Home Assistant Templates to render any HTML you want for the module. Includes support for Material Design Icons, Websockets for fast updating, and auto reconnect on Home Assistant restarts. Allows you to show or hide a whole module based on a Home Assistant Template as well.",
     "issues": [],
-    "tags": ["home assistant"],
+    "tags": [
+      "home assistant"
+    ],
     "license": "MIT",
     "image": "images-simpleExample.jpg"
   },
@@ -4908,7 +5428,10 @@
     "maintainerURL": "https://github.com/Sickboy78",
     "description": "Shows values and warnings from HomeMatic smart home components and system variables as text and/or icons. Highly flexible and customizable design.",
     "issues": [],
-    "tags": ["homematic", "smarthome"],
+    "tags": [
+      "homematic",
+      "smarthome"
+    ],
     "license": "GPL-3.0-only",
     "image": "screenshot_01.jpg"
   },
@@ -4920,7 +5443,11 @@
     "maintainerURL": "https://github.com/JFWenisch",
     "description": "Requests device information from the HomeMatic CCU and displays them grouped by the assigned room.",
     "issues": [],
-    "tags": ["homematic", "smarthome", "ccu2"],
+    "tags": [
+      "homematic",
+      "smarthome",
+      "ccu2"
+    ],
     "license": "MIT",
     "image": "readme_screenshot.jpg"
   },
@@ -4943,7 +5470,9 @@
     "maintainerURL": "",
     "description": "Displays Daily Horoscope.",
     "issues": [],
-    "tags": ["horoscope"],
+    "tags": [
+      "horoscope"
+    ],
     "license": "MIT",
     "image": "screenshot.jpg"
   },
@@ -5086,7 +5615,12 @@
       "`package.json` issue: license should be a valid SPDX license expression",
       "No compatible or wrong license field in 'package.json'. Without that, we can't use an image."
     ],
-    "tags": ["ica", "mat", "butik", "handel"],
+    "tags": [
+      "ica",
+      "mat",
+      "butik",
+      "handel"
+    ],
     "license": "GNU"
   },
   {
@@ -5109,8 +5643,12 @@
     "maintainer": "bitte-ein-bit",
     "maintainerURL": "",
     "description": "Load iCloud addressbook and provide birthday iCal feed for calendar module and addressbook for <a target=\"_blank\" href=\"https://github.com/paviro/MMM-FRITZ-Box-Callmonitor\">MMM-FRITZ-Box-Callmonitor</a>.",
-    "issues": ["No image found."],
-    "tags": ["icloud"],
+    "issues": [
+      "No image found."
+    ],
+    "tags": [
+      "icloud"
+    ],
     "license": "MIT"
   },
   {
@@ -5152,7 +5690,11 @@
     "maintainerURL": "https://github.com/FalseIlyu",
     "description": "Display next bus/tramway/metro/train in the Paris/Ile-de-France région in France using IDFM API.",
     "issues": [],
-    "tags": ["idf-transport", "public transport", "local transit"],
+    "tags": [
+      "idf-transport",
+      "public transport",
+      "local transit"
+    ],
     "license": "AGPL-3.0-or-later",
     "image": "screenshots-screenshot_en.jpg"
   },
@@ -5164,7 +5706,12 @@
     "maintainerURL": "https://github.com/soyrubio",
     "description": "Display estimated departures for public transport stops in the Czech Republic.",
     "issues": [],
-    "tags": ["bus stop", "tram stop", "czech republic", "public transport"],
+    "tags": [
+      "bus stop",
+      "tram stop",
+      "czech republic",
+      "public transport"
+    ],
     "license": "MIT",
     "image": "img-screenshot.jpg"
   },
@@ -5175,8 +5722,12 @@
     "maintainer": "alberttwong",
     "maintainerURL": "",
     "description": "A simple way to add an iFrame of any web content. Supports multiple URLs and will rotate between them. Works with static pages or streams like Nest Cam, D-Link Cameras, Twitch.tv, YouTube and more.",
-    "issues": ["No image found."],
-    "tags": ["iframe"],
+    "issues": [
+      "No image found."
+    ],
+    "tags": [
+      "iframe"
+    ],
     "license": "MIT"
   },
   {
@@ -5186,9 +5737,13 @@
     "maintainer": "desertblade",
     "maintainerURL": "",
     "description": "A simple way to add an iFrame of any web content.",
-    "issues": ["No image found."],
+    "issues": [
+      "No image found."
+    ],
     "outdated": "Abandoned. Repo has been archived at 2019-03-08.",
-    "tags": ["iframe"],
+    "tags": [
+      "iframe"
+    ],
     "license": "MIT"
   },
   {
@@ -5210,7 +5765,10 @@
     "maintainerURL": "https://github.com/AgP42",
     "description": "An iFrame module to display any web content to your MagicMirror² (including YouTube, IP cameras, etc.). Several functionalities like auto-refresh, Ping the URL before to display it and last update time display. See also <a target=\"_blank\" href=\"https://forum.magicmirror.builders/topic/9750/mmm-smartwebdisplay-display-web-contents-including-youtube-on-your-mm\">MMM-SmartWebDisplay</a>.",
     "issues": [],
-    "tags": ["iframe", "ping"],
+    "tags": [
+      "iframe",
+      "ping"
+    ],
     "license": "MIT",
     "image": "screenshot-MMM-iFrame-Ping.jpg"
   },
@@ -5233,7 +5791,11 @@
     "maintainerURL": "",
     "description": "time to the next buses, tramways from a list of stations / lines for Lille (Ilevia).",
     "issues": [],
-    "tags": ["localtransport", "lille", "ilevia"],
+    "tags": [
+      "localtransport",
+      "lille",
+      "ilevia"
+    ],
     "license": "MIT",
     "image": "MMM-Ilevia-Lille.jpg"
   },
@@ -5244,8 +5806,12 @@
     "maintainer": "basknol",
     "maintainerURL": "",
     "description": "Displays an image for a period of time when added/uploaded to a directory.",
-    "issues": ["No image found."],
-    "tags": ["imagefilewatcher"],
+    "issues": [
+      "No image found."
+    ],
+    "tags": [
+      "imagefilewatcher"
+    ],
     "license": "MIT"
   },
   {
@@ -5267,7 +5833,10 @@
     "maintainerURL": "",
     "description": "Show images and photos.",
     "issues": [],
-    "tags": ["photos", "images"],
+    "tags": [
+      "photos",
+      "images"
+    ],
     "license": "MIT",
     "image": ".github-animate.jpg"
   },
@@ -5279,7 +5848,12 @@
     "maintainerURL": "https://github.com/Adman",
     "description": "Display real-time estimations for public transport stops in Bratislava, Slovakia.",
     "issues": [],
-    "tags": ["bus stop", "tram stop", "bratislava", "public transport"],
+    "tags": [
+      "bus stop",
+      "tram stop",
+      "bratislava",
+      "public transport"
+    ],
     "license": "MIT",
     "image": "img-screenshoot.jpg"
   },
@@ -5303,8 +5877,13 @@
     "maintainer": "sebastianhodapp",
     "maintainerURL": "",
     "description": "The module emits the notification \"INDOOR_TEMPERATURE\" to display the indoor temperature received via a subscribed MQTT topic in the default <a target=\"_blank\" href=\"https://github.com/MagicMirrorOrg/MagicMirror/tree/develop/modules/default/currentweather\">Current Weather module</a>.",
-    "issues": ["No image found."],
-    "tags": ["mqtt", "indoor_temperature"],
+    "issues": [
+      "No image found."
+    ],
+    "tags": [
+      "mqtt",
+      "indoor_temperature"
+    ],
     "license": "MIT"
   },
   {
@@ -5325,8 +5904,12 @@
     "maintainer": "kapsolas",
     "maintainerURL": "",
     "description": "Load the images from a users Instagram feed. The images are displayed on the mirror and animated. API key required.",
-    "issues": ["No image found."],
-    "tags": ["traffic"],
+    "issues": [
+      "No image found."
+    ],
+    "tags": [
+      "traffic"
+    ],
     "license": "MIT"
   },
   {
@@ -5337,7 +5920,10 @@
     "maintainerURL": "https://github.com/AlexanderSalter",
     "description": "Display your Instagram photos and comments. It makes use of the new Facebook Instagram Graph API.",
     "issues": [],
-    "tags": ["instagram", "entertainment"],
+    "tags": [
+      "instagram",
+      "entertainment"
+    ],
     "license": "MIT",
     "image": "readme_images-Example.jpg"
   },
@@ -5349,7 +5935,10 @@
     "maintainerURL": "https://github.com/doctorfree",
     "description": "Display your Instagram photos, videos, multiple media postings, and post description. Makes use of the Facebook Instagram Graph API.",
     "issues": [],
-    "tags": ["instagram", "entertainment"],
+    "tags": [
+      "instagram",
+      "entertainment"
+    ],
     "license": "MIT",
     "image": "screenshots-Auth_Step_4.jpg"
   },
@@ -5386,7 +5975,10 @@
     "maintainerURL": "",
     "description": "Display internet statistics such as strength and speed information.",
     "issues": [],
-    "tags": ["internet", "speed"],
+    "tags": [
+      "internet",
+      "speed"
+    ],
     "license": "MIT",
     "image": ".previews-almost.jpg"
   },
@@ -5397,8 +5989,14 @@
     "maintainer": "ioBroker",
     "maintainerURL": "",
     "description": "Display ioBroker values.",
-    "issues": ["No image found."],
-    "tags": ["iobroker", "iot", "home automation"],
+    "issues": [
+      "No image found."
+    ],
+    "tags": [
+      "iobroker",
+      "iot",
+      "home automation"
+    ],
     "license": "MIT"
   },
   {
@@ -5423,7 +6021,10 @@
     "maintainerURL": "",
     "description": "Display IPv4/IPv6 Network Address.",
     "issues": [],
-    "tags": ["network interfaces", "ip"],
+    "tags": [
+      "network interfaces",
+      "ip"
+    ],
     "license": "MIT",
     "image": ".github-example.jpg"
   },
@@ -5503,7 +6104,10 @@
     "maintainerURL": "",
     "description": "Displays live video from the International Space Station.",
     "issues": [],
-    "tags": ["iss", "livestream"],
+    "tags": [
+      "iss",
+      "livestream"
+    ],
     "license": "MIT",
     "image": "images-i1.jpg"
   },
@@ -5595,7 +6199,9 @@
     "maintainerURL": "https://github.com/jirsis",
     "description": "This module shows the different ranges of electricity prices in Spain during the day.",
     "issues": [],
-    "tags": ["javascript"],
+    "tags": [
+      "javascript"
+    ],
     "license": "MIT",
     "image": "screenshot-green.jpg"
   },
@@ -5642,8 +6248,12 @@
     "maintainer": "aegis1980",
     "maintainerURL": "",
     "description": "Load random jokes from the web.",
-    "issues": ["No image found."],
-    "tags": ["jokes"],
+    "issues": [
+      "No image found."
+    ],
+    "tags": [
+      "jokes"
+    ],
     "license": "MIT"
   },
   {
@@ -5690,7 +6300,11 @@
     "maintainerURL": "",
     "description": "Display a True/False status from any JSON source (e.g. VPN Connected/Disconnected).",
     "issues": [],
-    "tags": ["status", "json", "api"],
+    "tags": [
+      "status",
+      "json",
+      "api"
+    ],
     "license": "MIT",
     "image": "screenshot.jpg"
   },
@@ -5702,7 +6316,10 @@
     "maintainerURL": "",
     "description": "Creates a table filled by a list gathered from a JSON request, and puts all variables of the object in its own table column.",
     "issues": [],
-    "tags": ["json", "table"],
+    "tags": [
+      "json",
+      "table"
+    ],
     "license": "MIT",
     "image": "example1.jpg"
   },
@@ -5714,7 +6331,12 @@
     "maintainerURL": "",
     "description": "Display data from any Web/REST API that return JSON.",
     "issues": [],
-    "tags": ["remote control", "control", "json", "rest"],
+    "tags": [
+      "remote control",
+      "control",
+      "json",
+      "rest"
+    ],
     "license": "MIT",
     "image": "doc-json_values.jpg"
   },
@@ -5764,7 +6386,11 @@
     "maintainerURL": "",
     "description": "A module for getting bluetooth remote control and keyboard inputs.",
     "issues": [],
-    "tags": ["fire stick", "remote control", "keyboard"],
+    "tags": [
+      "fire stick",
+      "remote control",
+      "keyboard"
+    ],
     "license": "MIT",
     "image": "img-fire_stick_remote.jpg"
   },
@@ -5797,8 +6423,14 @@
     "maintainer": "Alvinger",
     "maintainerURL": "",
     "description": "Replaced by MMM-Mashie-Skolmat! Show school lunch menus from Köket by Sodexo (based on MMM-Skolmaten with different source for menus).",
-    "issues": ["No image found."],
-    "tags": ["skolmat", "köket by sodexo", "sweden"],
+    "issues": [
+      "No image found."
+    ],
+    "tags": [
+      "skolmat",
+      "köket by sodexo",
+      "sweden"
+    ],
     "license": "MIT"
   },
   {
@@ -5819,8 +6451,12 @@
     "maintainer": "thomo",
     "maintainerURL": "",
     "description": "Compliment clone - allows to define when (at which hour) the used kudo(compliment) subset will change and you can define further subsets - up to one for each hour.",
-    "issues": ["No image found."],
-    "tags": ["screen"],
+    "issues": [
+      "No image found."
+    ],
+    "tags": [
+      "screen"
+    ],
     "license": "MIT"
   },
   {
@@ -5831,7 +6467,13 @@
     "maintainerURL": "",
     "description": "Station monitor for the Karlsruhe/Germany local transport (KVV) bus, tram and train system.",
     "issues": [],
-    "tags": ["kvv", "vbk", "karlsruhe", "public transport", "local transit"],
+    "tags": [
+      "kvv",
+      "vbk",
+      "karlsruhe",
+      "public transport",
+      "local transit"
+    ],
     "license": "MIT",
     "image": "screenshots-screenshot_de.jpg"
   },
@@ -5842,8 +6484,12 @@
     "maintainer": "pbuabthong",
     "maintainerURL": "https://github.com/pbuabthong",
     "description": "Shows real-time departures for LA Metro (Los Angeles, CA).",
-    "issues": ["`package.json` issue: No repository field."],
-    "tags": ["lametro"],
+    "issues": [
+      "`package.json` issue: No repository field."
+    ],
+    "tags": [
+      "lametro"
+    ],
     "license": "ISC",
     "image": "screenshots-Screenshot.jpg"
   },
@@ -5876,8 +6522,13 @@
     "maintainer": "Txukie",
     "maintainerURL": "",
     "description": "Turns on or off a device connected to GPIO (in my case, an LCD screen) based on the input of a PIR device. Integrates nicely with MMM-Assistant (for voice control) and MMM-TelegramBot (for Telegram control).",
-    "issues": ["No image found."],
-    "tags": ["lcd", "pir"],
+    "issues": [
+      "No image found."
+    ],
+    "tags": [
+      "lcd",
+      "pir"
+    ],
     "license": "MIT"
   },
   {
@@ -5901,7 +6552,11 @@
     "maintainerURL": "",
     "description": "Learn a (new foreign language) word every time you look in the mirror.",
     "issues": [],
-    "tags": ["learn", "language", "vocabulary"],
+    "tags": [
+      "learn",
+      "language",
+      "vocabulary"
+    ],
     "license": "ISC",
     "image": "screenshot-MMM-learnlanguage-1.jpg"
   },
@@ -5913,7 +6568,14 @@
     "maintainerURL": "https://github.com/Tom-Hirschberger",
     "description": "A module to control the color (and pong game parameters) of led strips via MQTT.",
     "issues": [],
-    "tags": ["led", "ws2801", "ws2813", "ws2812b", "pong", "mqtt"],
+    "tags": [
+      "led",
+      "ws2801",
+      "ws2813",
+      "ws2812b",
+      "pong",
+      "mqtt"
+    ],
     "license": "MIT",
     "image": "screenshots-led-control-all-options.jpg"
   },
@@ -5950,7 +6612,9 @@
     "maintainerURL": "",
     "description": "Display the song you are currently streaming on your <a target=\"_blank\" href=\"https://github.com/librespot-org/librespot-java\">Librespot Java</a> Spotify Speaker.",
     "issues": [],
-    "tags": ["spotify"],
+    "tags": [
+      "spotify"
+    ],
     "license": "MIT",
     "image": ".github-example1.jpg"
   },
@@ -6010,8 +6674,15 @@
     "maintainer": "djey47",
     "maintainerURL": "https://github.com/djey47",
     "description": "Module to display info about home power supply - FRANCE TELEINFO ENEDIS.",
-    "issues": ["`package.json` issue: No repository field."],
-    "tags": ["linky", "enedis", "tic", "teleinfo"],
+    "issues": [
+      "`package.json` issue: No repository field."
+    ],
+    "tags": [
+      "linky",
+      "enedis",
+      "tic",
+      "teleinfo"
+    ],
     "license": "MIT",
     "image": "doc-shots-Sample1.jpg"
   },
@@ -6088,8 +6759,13 @@
     "maintainer": "shbatm",
     "maintainerURL": "",
     "description": "More details and customization for MM's Node.js console logs.",
-    "issues": ["No image found."],
-    "tags": ["logging", "logs"],
+    "issues": [
+      "No image found."
+    ],
+    "tags": [
+      "logging",
+      "logs"
+    ],
     "license": "MIT"
   },
   {
@@ -6111,7 +6787,10 @@
     "maintainerURL": "https://github.com/xadamxk",
     "description": "Display League of Legends league schedules.",
     "issues": [],
-    "tags": ["esports", "league of legends"],
+    "tags": [
+      "esports",
+      "league of legends"
+    ],
     "license": "MIT",
     "image": "screenshots-default.jpg"
   },
@@ -6123,7 +6802,10 @@
     "maintainerURL": "https://github.com/xadamxk",
     "description": "Display League of Legends league standings.",
     "issues": [],
-    "tags": ["esports", "league of legends"],
+    "tags": [
+      "esports",
+      "league of legends"
+    ],
     "license": "MIT",
     "image": "screenshots-screenshot_default.jpg"
   },
@@ -6208,7 +6890,9 @@
     "maintainerURL": "",
     "description": "Displays the lunar date of today (Chinese Zodiac).",
     "issues": [],
-    "tags": ["lunar date"],
+    "tags": [
+      "lunar date"
+    ],
     "license": "MIT",
     "image": "screenshot.jpg"
   },
@@ -6221,7 +6905,10 @@
     "description": "Up to the minute information about our Lunar partner, with a splash of EyeCandy, to boot!",
     "issues": [],
     "outdated": "Deprecated. Doesn't work anymore (API is down).",
-    "tags": ["mirror ui", "modular"],
+    "tags": [
+      "mirror ui",
+      "modular"
+    ],
     "license": "MIT",
     "image": "pix-11.JPG"
   },
@@ -6255,7 +6942,10 @@
     "maintainerURL": "https://github.com/doctorfree",
     "description": "A module which determines the status of devices on the network based on their MAC address. It can also look up devices by IP addresses or hostnames. This module is an enhanced clone of the excellent MMM-NetworkScanner module by <a target=\"_blank\" href=\"https://github.com/ianperrin\">Ian Perrin</a>.",
     "issues": [],
-    "tags": ["network", "scanner"],
+    "tags": [
+      "network",
+      "scanner"
+    ],
     "license": "MIT",
     "image": "screenshots-example-columns2.jpg"
   },
@@ -6319,7 +7009,9 @@
     "maintainerURL": "",
     "description": "Displays a random quote from various movies, books, and people.",
     "issues": [],
-    "tags": ["quotes"],
+    "tags": [
+      "quotes"
+    ],
     "license": "MIT",
     "image": "example.jpg"
   },
@@ -6359,7 +7051,12 @@
       "`package.json` issue: No repository field.",
       "`package.json` issue: No license field."
     ],
-    "tags": ["email", "messages", "announcements", "mirror announcements"]
+    "tags": [
+      "email",
+      "messages",
+      "announcements",
+      "mirror announcements"
+    ]
   },
   {
     "name": "MMM-MarineWeather",
@@ -6391,8 +7088,13 @@
     "maintainer": "wmawhinney1990",
     "maintainerURL": "https://github.com/wmawhinney1990",
     "description": "Render markdown files on your MagicMirror².",
-    "issues": ["No image found."],
-    "tags": ["markdown", "productivity"],
+    "issues": [
+      "No image found."
+    ],
+    "tags": [
+      "markdown",
+      "productivity"
+    ],
     "license": "MIT"
   },
   {
@@ -6428,8 +7130,15 @@
     "maintainer": "Alvinger",
     "maintainerURL": "",
     "description": "Show school lunch menus from Mashie.com. (based on MMM-Skolmaten with different source for menus).",
-    "issues": ["No image found."],
-    "tags": ["skolmat", "mashie", "köket by sodexo", "sweden"],
+    "issues": [
+      "No image found."
+    ],
+    "tags": [
+      "skolmat",
+      "mashie",
+      "köket by sodexo",
+      "sweden"
+    ],
     "license": "MIT"
   },
   {
@@ -6519,8 +7228,13 @@
     "maintainer": "fuerst",
     "maintainerURL": "https://github.com/fuerst",
     "description": "Show the menu of german school lunch service provider MensaMax.",
-    "issues": ["No image found."],
-    "tags": ["mensmax", "speiseplan"],
+    "issues": [
+      "No image found."
+    ],
+    "tags": [
+      "mensmax",
+      "speiseplan"
+    ],
     "license": "MIT"
   },
   {
@@ -6529,7 +7243,7 @@
     "id": "wiesty/MMM-Mensamuc",
     "maintainer": "wiesty",
     "maintainerURL": "",
-    "description": "Module to display daily menu 🍔🥕 information from the canteens of the Studierendenwerk München Oberbayern as well as some other canteens.",
+    "description": "Display daily menu 🍔🥕 information from the canteens of the Studierendenwerk München Oberbayern as well as some other canteens.",
     "issues": [
       "There is no `package.json`. We need this file to gather information about the module for the module list page."
     ]
@@ -6542,7 +7256,9 @@
     "maintainerURL": "https://github.com/ashishtank",
     "description": "Displays EV/Fuel status and Range of Mercedes cars.",
     "issues": [],
-    "tags": ["mercedes"],
+    "tags": [
+      "mercedes"
+    ],
     "license": "MIT",
     "image": "screenshots-appregistration.jpg"
   },
@@ -6591,7 +7307,10 @@
     "maintainerURL": "",
     "description": "Displays your Microsoft To Do tasks on your mirror.",
     "issues": [],
-    "tags": ["todo", "microsoft"],
+    "tags": [
+      "todo",
+      "microsoft"
+    ],
     "license": "MIT",
     "image": "screenshots-microsoft todo magic mirror module.jpg"
   },
@@ -6614,7 +7333,9 @@
     "maintainerURL": "",
     "description": "Player status of Minecraft server.",
     "issues": [],
-    "tags": ["minecraft"],
+    "tags": [
+      "minecraft"
+    ],
     "license": "MIT",
     "image": "screenshot-failure.jpg"
   },
@@ -6636,7 +7357,9 @@
     "maintainer": "joanaz",
     "maintainerURL": "",
     "description": "Alexa voice control to show/hide modules, search for images or Youtube video, and display them with the search term on the mirror.",
-    "issues": ["No image found."],
+    "issues": [
+      "No image found."
+    ],
     "tags": [
       "alexa",
       "aws iot",
@@ -6724,8 +7447,12 @@
     "maintainer": "sthuber90",
     "maintainerURL": "",
     "description": "Amazon Photos as background images.",
-    "issues": ["`package.json` issue: No repository field."],
-    "tags": ["amazon-photos"],
+    "issues": [
+      "`package.json` issue: No repository field."
+    ],
+    "tags": [
+      "amazon-photos"
+    ],
     "license": "MIT",
     "image": "docs-example.jpg"
   },
@@ -6848,7 +7575,11 @@
     "maintainerURL": "https://github.com/cSharpBastard",
     "description": "Display current electrical spot prices in northen Europe (also works in Germany).",
     "issues": [],
-    "tags": ["eon", "electricity", "motion"],
+    "tags": [
+      "eon",
+      "electricity",
+      "motion"
+    ],
     "license": "MIT",
     "image": "images-screenshot.jpg"
   },
@@ -6870,8 +7601,13 @@
     "maintainer": "ptrbld",
     "maintainerURL": "",
     "description": "Triggers any specified rpi pins with different trigger notifications. All messages will be registered with the MMM-Remote Module automatically. It can also play sounds using MMM-Sounds module when a pin is toggled.",
-    "issues": ["`package.json` issue: No description", "No image found."],
-    "tags": ["pins"],
+    "issues": [
+      "`package.json` issue: No description",
+      "No image found."
+    ],
+    "tags": [
+      "pins"
+    ],
     "license": "MIT"
   },
   {
@@ -6896,8 +7632,13 @@
     "maintainer": "elaniobro",
     "maintainerURL": "",
     "description": "Display a scrolling stocks ticker.",
-    "issues": ["No image found."],
-    "tags": ["stock", "stocks"],
+    "issues": [
+      "No image found."
+    ],
+    "tags": [
+      "stock",
+      "stocks"
+    ],
     "license": "MIT"
   },
   {
@@ -6956,8 +7697,16 @@
     "maintainer": "szech",
     "maintainerURL": "",
     "description": "Displays pollen forecast for your area in the UK.",
-    "issues": ["`package.json` issue: No repository field."],
-    "tags": ["pollen", "count", "allergy", "grass", "tree"],
+    "issues": [
+      "`package.json` issue: No repository field."
+    ],
+    "tags": [
+      "pollen",
+      "count",
+      "allergy",
+      "grass",
+      "tree"
+    ],
     "license": "MIT",
     "image": "pollen_forecast.jpg"
   },
@@ -7014,8 +7763,14 @@
     "maintainer": "bee-mar",
     "maintainerURL": "",
     "description": "Companion module for MMPM to enable hiding/showing of MagicMirror² modules.",
-    "issues": ["No image found."],
-    "tags": ["mmpm", "magicmirror-package-manager", "package-manager"],
+    "issues": [
+      "No image found."
+    ],
+    "tags": [
+      "mmpm",
+      "magicmirror-package-manager",
+      "package-manager"
+    ],
     "license": "MIT"
   },
   {
@@ -7050,8 +7805,12 @@
     "maintainer": "MMRIZE",
     "maintainerURL": "",
     "description": "On running-time monkey patch for other module.",
-    "issues": ["No image found."],
-    "tags": ["monkeypatch"],
+    "issues": [
+      "No image found."
+    ],
+    "tags": [
+      "monkeypatch"
+    ],
     "license": "MIT"
   },
   {
@@ -7062,7 +7821,9 @@
     "maintainerURL": "",
     "description": "Create schedules to control when other modules are shown, hidden or dimmed and to send notifications to other modules.",
     "issues": [],
-    "tags": ["scheduler"],
+    "tags": [
+      "scheduler"
+    ],
     "license": "MIT",
     "image": ".github-example.jpg"
   },
@@ -7073,8 +7834,13 @@
     "maintainer": "balassy",
     "maintainerURL": "https://github.com/balassy",
     "description": "Shows or hides other modules when a momentary push button is pressed. Useful for development and maintenance after the module is deployed.",
-    "issues": ["No image found."],
-    "tags": ["button", "raspberry"],
+    "issues": [
+      "No image found."
+    ],
+    "tags": [
+      "button",
+      "raspberry"
+    ],
     "license": "MIT"
   },
   {
@@ -7121,7 +7887,12 @@
     "maintainerURL": "https://github.com/btastic",
     "description": "Moonraker API integration for Klipper powered 3D printers.",
     "issues": [],
-    "tags": ["moonraker", "klipper", "mainsail", "fluidd"],
+    "tags": [
+      "moonraker",
+      "klipper",
+      "mainsail",
+      "fluidd"
+    ],
     "license": "MIT",
     "image": ".github-example.jpg"
   },
@@ -7147,8 +7918,13 @@
     "maintainer": "nischi",
     "maintainerURL": "",
     "description": "Control HDMI TV if some movement are detected from 3rd Party modules.",
-    "issues": ["No image found."],
-    "tags": ["motion", "control"],
+    "issues": [
+      "No image found."
+    ],
+    "tags": [
+      "motion",
+      "control"
+    ],
     "license": "MIT"
   },
   {
@@ -7170,8 +7946,12 @@
     "maintainer": "rejas",
     "maintainerURL": "",
     "description": "Camera based motion detector that turns of your display after a while, updated fork of alexyaks version.",
-    "issues": ["No image found."],
-    "tags": ["motion detection"],
+    "issues": [
+      "No image found."
+    ],
+    "tags": [
+      "motion detection"
+    ],
     "license": "MIT"
   },
   {
@@ -7196,7 +7976,9 @@
     "maintainerURL": "",
     "description": "Display information about upcoming movies (title, cover, genre, rating, plot) or discover movies with custom filters.",
     "issues": [],
-    "tags": ["upcoming movies"],
+    "tags": [
+      "upcoming movies"
+    ],
     "license": "MIT",
     "image": ".github-example.jpg"
   },
@@ -7265,7 +8047,13 @@
     "maintainerURL": "https://github.com/Tom-Hirschberger",
     "description": "Play m3u radio streams. Controllable by touch and notification.",
     "issues": [],
-    "tags": ["sound", "radio", "stream", "audio", "mp3"],
+    "tags": [
+      "sound",
+      "radio",
+      "stream",
+      "audio",
+      "mp3"
+    ],
     "license": "MIT",
     "image": "examples-initialScreen.jpg"
   },
@@ -7276,8 +8064,13 @@
     "maintainer": "PatriceG",
     "maintainerURL": "",
     "description": "Connects multiple touch (capacitive) buttons via a MPR121 touch controller to send notifications to other modules (based on MMM-Buttons).",
-    "issues": ["No image found."],
-    "tags": ["buttons", "touch"],
+    "issues": [
+      "No image found."
+    ],
+    "tags": [
+      "buttons",
+      "touch"
+    ],
     "license": "MIT"
   },
   {
@@ -7299,7 +8092,11 @@
     "maintainerURL": "",
     "description": "A module that subscribes topics from MQTT message queues, and displays the payload values in a table, with configurable labels.",
     "issues": [],
-    "tags": ["smarthome", "home-automation", "mqtt"],
+    "tags": [
+      "smarthome",
+      "home-automation",
+      "mqtt"
+    ],
     "license": "MIT",
     "image": "doc-MQTT.jpg"
   },
@@ -7338,7 +8135,9 @@
     "maintainerURL": "",
     "description": "A module to subscribe to MQTT topics and forward the payload (as it is) as notification and vice versa. Features QoS, Clean Session, Retained Messages and Shortcuts.",
     "issues": [],
-    "tags": ["mqtt"],
+    "tags": [
+      "mqtt"
+    ],
     "license": "MIT",
     "image": "github-MQTTbind.jpg"
   },
@@ -7350,7 +8149,9 @@
     "maintainerURL": "https://github.com/Tom-Hirschberger",
     "description": "A powerful module that subscribes to MQTT broker and read/send MQTT messages and MM Notifications with a lot of individual setup/rules. Allows you to integrate MM into smart home like Home Assistant. Powerful automation with structured Noti and MQTT dictionaries rules (e.g. one mqtt message could trigger many predefined noti, and one mm-noti could trigger different predefined mqtt messages).",
     "issues": [],
-    "tags": ["mqtt"],
+    "tags": [
+      "mqtt"
+    ],
     "license": "MIT",
     "image": ".github-mqttbridge_logo.jpg"
   },
@@ -7380,6 +8181,17 @@
       "No image found."
     ],
     "license": "MIT"
+  },
+  {
+    "name": "MMM-MTG",
+    "url": "https://github.com/crisvdn/MMM-MTG",
+    "id": "crisvdn/MMM-MTG",
+    "maintainer": "crisvdn",
+    "maintainerURL": "https://github.com/crisvdn",
+    "description": "Fetches a random MTG card on a configured interval and displays this.",
+    "issues": [
+      "There is no `package.json`. We need this file to gather information about the module for the module list page."
+    ]
   },
   {
     "name": "MMM-Multimonth",
@@ -7422,7 +8234,11 @@
     "maintainerURL": "",
     "description": "Play music with deezer on a browser in the background.",
     "issues": [],
-    "tags": ["musicondemand", "music", "deezer"],
+    "tags": [
+      "musicondemand",
+      "music",
+      "deezer"
+    ],
     "license": "MIT",
     "image": "img-Example.jpg"
   },
@@ -7433,8 +8249,14 @@
     "maintainer": "mrVragec",
     "maintainerURL": "",
     "description": "Displays the public transport information for Munich - Germany.",
-    "issues": ["`package.json` issue: No description"],
-    "tags": ["public transport", "mvv", "mvg"],
+    "issues": [
+      "`package.json` issue: No description"
+    ],
+    "tags": [
+      "public transport",
+      "mvv",
+      "mvg"
+    ],
     "license": "MIT",
     "image": ".github-Example_1.jpg"
   },
@@ -7446,7 +8268,11 @@
     "maintainerURL": "",
     "description": "Module to display public transport 🚐 from Munich in Germany.",
     "issues": [],
-    "tags": ["public transport", "mvg", "mvv"],
+    "tags": [
+      "public transport",
+      "mvg",
+      "mvv"
+    ],
     "license": "MIT",
     "image": "assets-example.jpg"
   },
@@ -7469,7 +8295,10 @@
     "maintainerURL": "",
     "description": "Displays your commute times to several destinations. Highly configurable.",
     "issues": [],
-    "tags": ["traffic", "commute"],
+    "tags": [
+      "traffic",
+      "commute"
+    ],
     "license": "MIT",
     "image": "screenshots-MMM-MyCommute-screenshot.jpg"
   },
@@ -7503,7 +8332,11 @@
     "maintainerURL": "",
     "description": "Displays local Dutch weather from the KNMI 10-minutes netwerk.",
     "issues": [],
-    "tags": ["weer", "weerbericht", "knmi"],
+    "tags": [
+      "weer",
+      "weerbericht",
+      "knmi"
+    ],
     "license": "MIT",
     "image": "screenshot01.jpg"
   },
@@ -7528,7 +8361,10 @@
     "maintainerURL": "https://github.com/framboise-pi",
     "description": "Displays Minecraft server(s) informations.",
     "issues": [],
-    "tags": ["raspberry", "minecraft"],
+    "tags": [
+      "raspberry",
+      "minecraft"
+    ],
     "license": "MIT",
     "image": "Images-screenshot_MMM-MyMinecraft_01.jpg"
   },
@@ -7564,7 +8400,9 @@
     "maintainerURL": "",
     "description": "Module to display today's scores for your favourite teams across multiple sports.",
     "issues": [],
-    "tags": ["sports"],
+    "tags": [
+      "sports"
+    ],
     "license": "MIT",
     "image": "logos-NCAAF-CAL.jpg"
   },
@@ -7575,8 +8413,13 @@
     "maintainer": "framboise-pi",
     "maintainerURL": "https://github.com/framboise-pi",
     "description": "Raspberry Pi SenseHat Module. Show sensors values, display pixelart and more.",
-    "issues": ["No image found."],
-    "tags": ["raspberry", "sensehat"],
+    "issues": [
+      "No image found."
+    ],
+    "tags": [
+      "raspberry",
+      "sensehat"
+    ],
     "license": "MIT"
   },
   {
@@ -7587,7 +8430,9 @@
     "maintainerURL": "",
     "description": "Connect to a MySQL database, run a select query (one value) and display the result.",
     "issues": [],
-    "tags": ["mysql"],
+    "tags": [
+      "mysql"
+    ],
     "license": "MIT",
     "image": "screenshot.jpg"
   },
@@ -7599,7 +8444,9 @@
     "maintainerURL": "",
     "description": "Run a SQL SELECT against a MySQL database and display the results in an HTML table.",
     "issues": [],
-    "tags": ["mysql"],
+    "tags": [
+      "mysql"
+    ],
     "license": "MIT",
     "image": "screenshot-norows.jpg"
   },
@@ -7625,7 +8472,10 @@
     "maintainerURL": "",
     "description": "Displays upcoming classes, tasks and exams from the <a target=\"_blank\" href=\"https://www.mystudylife.com\">My Study Life</a> app and website.",
     "issues": [],
-    "tags": ["mystudylife", "study"],
+    "tags": [
+      "mystudylife",
+      "study"
+    ],
     "license": "MIT",
     "image": "Screenshot.PNG"
   },
@@ -7690,7 +8540,10 @@
     "maintainerURL": "",
     "description": "A video player with buttons to select a video to play.",
     "issues": [],
-    "tags": ["video", "player"],
+    "tags": [
+      "video",
+      "player"
+    ],
     "license": "ISC",
     "image": "Screenshot (1).jpg"
   },
@@ -7702,7 +8555,11 @@
     "maintainerURL": "https://github.com/mazim-co",
     "description": "Displays information about your Volvo from the Volvo Connect API.",
     "issues": [],
-    "tags": ["volvo", "myvolvo", "volvooncall"],
+    "tags": [
+      "volvo",
+      "myvolvo",
+      "volvooncall"
+    ],
     "license": "MIT",
     "image": "gallery-example.jpg"
   },
@@ -7728,7 +8585,12 @@
     "maintainerURL": "",
     "description": "Weather module based on the Weatherbit API.",
     "issues": [],
-    "tags": ["\"magic", "mirror\"", "\"weather", "module\""],
+    "tags": [
+      "\"magic",
+      "mirror\"",
+      "\"weather",
+      "module\""
+    ],
     "license": "MIT",
     "image": "img-VCloudsWeatherIcons-chanceflurries.jpg"
   },
@@ -7739,8 +8601,13 @@
     "maintainer": "framboise-pi",
     "maintainerURL": "https://github.com/framboise-pi",
     "description": "Display sentences built with randomed words.",
-    "issues": ["No image found."],
-    "tags": ["words", "random"],
+    "issues": [
+      "No image found."
+    ],
+    "tags": [
+      "words",
+      "random"
+    ],
     "license": "AGPL-3.0"
   },
   {
@@ -7751,7 +8618,9 @@
     "maintainerURL": "",
     "description": "A MagicMirror² Module for Nagios.",
     "issues": [],
-    "tags": ["nagios"],
+    "tags": [
+      "nagios"
+    ],
     "license": "ISC",
     "image": ".previews-nagios.jpg"
   },
@@ -7788,7 +8657,11 @@
     "maintainerURL": "",
     "description": "time to the next buses, tramways or navibus from a list of stations / lines for Nantes (TAN).",
     "issues": [],
-    "tags": ["localtransport", "paris", "ratp"],
+    "tags": [
+      "localtransport",
+      "paris",
+      "ratp"
+    ],
     "license": "MIT",
     "image": "MMM-Nantes-TAN.jpg"
   },
@@ -7814,7 +8687,11 @@
       "`package.json` issue: license should be a valid SPDX license expression",
       "No compatible or wrong license field in 'package.json'. Without that, we can't use an image."
     ],
-    "tags": ["nasa", "astronomy", "picture of the day"],
+    "tags": [
+      "nasa",
+      "astronomy",
+      "picture of the day"
+    ],
     "license": "Apache 2.0"
   },
   {
@@ -7874,7 +8751,10 @@
     "maintainerURL": "",
     "description": "Displays bus information for the Nottingham bus company, NCT.",
     "issues": [],
-    "tags": ["nct", "buses"],
+    "tags": [
+      "nct",
+      "buses"
+    ],
     "license": "MIT",
     "image": "assets-screenshot1.jpg"
   },
@@ -7885,8 +8765,13 @@
     "maintainer": "semox",
     "maintainerURL": "",
     "description": "Uses HC-SR04 sensors to measure distance and display compliments if USER_PRESENCE is detected by MMM-PIR-Sensor and user is near the MagicMirror².",
-    "issues": ["No image found."],
-    "tags": ["distance", "modules"],
+    "issues": [
+      "No image found."
+    ],
+    "tags": [
+      "distance",
+      "modules"
+    ],
     "license": "MIT"
   },
   {
@@ -7932,7 +8817,12 @@
     "maintainerURL": "https://github.com/sisimomo",
     "description": "Display a Nest Like thermostat from a remote sensor that is capable to POST values through HTTP protocol. It is designed to be generic. Useful when having Home Assistant and MagicMirror².",
     "issues": [],
-    "tags": ["temperature", "nest", "thermostat", "raspberrypi"],
+    "tags": [
+      "temperature",
+      "nest",
+      "thermostat",
+      "raspberrypi"
+    ],
     "license": "MIT",
     "image": "doc-screenshot-cooling-ambientTemperature.jpg"
   },
@@ -7944,7 +8834,10 @@
     "maintainerURL": "",
     "description": "Display your Netatmo in/outdoor weather station data.",
     "issues": [],
-    "tags": ["netatmo", "smarthome"],
+    "tags": [
+      "netatmo",
+      "smarthome"
+    ],
     "license": "MIT",
     "image": ".github-preview.bubbles.jpg"
   },
@@ -7956,7 +8849,11 @@
     "maintainerURL": "https://github.com/AgP42",
     "description": "Display live snapshot of Netatmo Presence and Welcome cameras and an events timeline of all your Netatmo Presence cameras.",
     "issues": [],
-    "tags": ["netatmo", "netatmo-presence", "camera"],
+    "tags": [
+      "netatmo",
+      "netatmo-presence",
+      "camera"
+    ],
     "license": "MIT",
     "image": "screenshot-2 lives in 1 instance.jpg"
   },
@@ -7982,7 +8879,9 @@
     "maintainerURL": "",
     "description": "Display a solid wifi logo as network signal based on ping speed.",
     "issues": [],
-    "tags": ["network"],
+    "tags": [
+      "network"
+    ],
     "license": "MIT",
     "image": "icons.jpg"
   },
@@ -7994,7 +8893,12 @@
     "maintainerURL": "https://github.com/slametps",
     "description": "Display network connection status (ping, download speed, upload speed).",
     "issues": [],
-    "tags": ["networkconnection", "network", "connection", "speedtest"],
+    "tags": [
+      "networkconnection",
+      "network",
+      "connection",
+      "speedtest"
+    ],
     "license": "MIT",
     "image": "others-MMM-NetworkConnection-screenshot-01.jpg"
   },
@@ -8006,7 +8910,10 @@
     "maintainerURL": "https://github.com/spitzlbergerj",
     "description": "Display the status of devices on the network based on their MAC address with nice columnview.",
     "issues": [],
-    "tags": ["network", "scanner"],
+    "tags": [
+      "network",
+      "scanner"
+    ],
     "license": "MIT",
     "image": ".github-example-columns2.jpg"
   },
@@ -8029,7 +8936,9 @@
     "maintainerURL": "https://github.com/mumblebaj",
     "description": "Module to to get news from <a target=\"_blank\" href=\"https://newsapi.org\">newsapi.org</a>.",
     "issues": [],
-    "tags": ["news"],
+    "tags": [
+      "news"
+    ],
     "license": "ISC",
     "image": "screen1.PNG"
   },
@@ -8055,7 +8964,11 @@
     "maintainerURL": "https://github.com/PierreGode",
     "description": "Display your upcomming show's and movies from your next-episode account.",
     "issues": [],
-    "tags": ["tvshows", "episodes", "movies"],
+    "tags": [
+      "tvshows",
+      "episodes",
+      "movies"
+    ],
     "license": "GPL-3.0-only",
     "image": "img-screenshot1.jpg"
   },
@@ -8081,7 +8994,10 @@
     "maintainerURL": "",
     "description": "Station monitor for the nextbike bike-sharing network.",
     "issues": [],
-    "tags": ["nextbike", "bike sharing"],
+    "tags": [
+      "nextbike",
+      "bike sharing"
+    ],
     "license": "MIT",
     "image": "screenshots-screenshot_de.jpg"
   },
@@ -8135,7 +9051,9 @@
     "maintainerURL": "",
     "description": "Display scores of National Football League (optional voice-control).",
     "issues": [],
-    "tags": ["nfl"],
+    "tags": [
+      "nfl"
+    ],
     "license": "MIT",
     "image": ".github-global.jpg"
   },
@@ -8162,7 +9080,10 @@
     "maintainerURL": "",
     "description": "Display scores of National Hockey League.",
     "issues": [],
-    "tags": ["nhl", "ice hockey"],
+    "tags": [
+      "nhl",
+      "ice hockey"
+    ],
     "license": "MIT",
     "image": ".github-example_nhl.jpg"
   },
@@ -8173,8 +9094,17 @@
     "maintainer": "mlbonniec",
     "maintainerURL": "https://github.com/mlbonniec",
     "description": "Display your NiceHash projected income and rigs highest temperature.",
-    "issues": ["`package.json` issue: No description", "No image found."],
-    "tags": ["crypto", "mining", "nicehash", "btc", "bitcoin"],
+    "issues": [
+      "`package.json` issue: No description",
+      "No image found."
+    ],
+    "tags": [
+      "crypto",
+      "mining",
+      "nicehash",
+      "btc",
+      "bitcoin"
+    ],
     "license": "Apache-2.0"
   },
   {
@@ -8234,7 +9164,10 @@
     "description": "Real-time bus tracking for NJ Transit.",
     "issues": [],
     "outdated": "Deprecated. Old API doesn't work anymore. There is a new API, but it's not clear if keys are available. 2023-12-01.",
-    "tags": ["public transport", "nj transit bus"],
+    "tags": [
+      "public transport",
+      "nj transit bus"
+    ],
     "license": "GPL-3.0-or-later",
     "image": "docs-preview1.jpg"
   },
@@ -8257,7 +9190,9 @@
     "maintainerURL": "https://github.com/Travelbacon",
     "description": "Shows departure times of Dutch public transport. Where you can sort on destination and group stops in one stop. Good for hubs where multiple lines and authorities merge, so yo have one stop instead of multiple.",
     "issues": [],
-    "tags": ["publictransport"],
+    "tags": [
+      "publictransport"
+    ],
     "license": "MIT",
     "image": "screenshot.jpg"
   },
@@ -8272,7 +9207,11 @@
       "`package.json` issue: license should be a valid SPDX license expression",
       "No compatible or wrong license field in 'package.json'. Without that, we can't use an image."
     ],
-    "tags": ["nmbs", "public transport belgium", "sncb"],
+    "tags": [
+      "nmbs",
+      "public transport belgium",
+      "sncb"
+    ],
     "license": "GPLv3"
   },
   {
@@ -8285,6 +9224,7 @@
     "issues": [
       "There are no specific keywords in 'package.json'. We would use them as tags on the module list page. Add a few meaningful terms to the keywords in the package.json. Not just “magicmirror” or “module”."
     ],
+    "outdated": "Abandoned. No reactions to issues and PRs since years. It no longer seems to work.",
     "license": "ISC",
     "image": "examples-1.jpg"
   },
@@ -8296,7 +9236,12 @@
     "maintainerURL": "https://github.com/crice009",
     "description": "Graph daily low and high tide predictions for a given NOAA tide station, and measured data as it is reported. Data is pulled from <a target=\"_blank\" href=\"https://tidesandcurrents.noaa.gov/map/index.html\">NOAA-tidesandcurrents</a>. Data is a free service - no API key.",
     "issues": [],
-    "tags": ["tide", "high water", "low water", "cool graphs"],
+    "tags": [
+      "tide",
+      "high water",
+      "low water",
+      "cool graphs"
+    ],
     "license": "MIT",
     "image": "Capture.PNG"
   },
@@ -8307,7 +9252,9 @@
     "maintainer": "joanaz",
     "maintainerURL": "",
     "description": "Display your notes stored by Alexa skill <a target=\"_blank\" href=\"https://github.com/joanaz/AS-NoteTaker\">Note Taker</a>.",
-    "issues": ["No image found."],
+    "issues": [
+      "No image found."
+    ],
     "tags": [
       "aws lambda",
       "alexa",
@@ -8352,7 +9299,9 @@
     "maintainerURL": "https://github.com/jesmak",
     "description": "Display the song you are currently listening to on AIMP.",
     "issues": [],
-    "tags": ["aimp"],
+    "tags": [
+      "aimp"
+    ],
     "license": "MIT",
     "image": "screenshot_nowplaying.jpg"
   },
@@ -8364,7 +9313,9 @@
     "maintainerURL": "",
     "description": "Display the song you are currently listening to on Spotify.",
     "issues": [],
-    "tags": ["spotify"],
+    "tags": [
+      "spotify"
+    ],
     "license": "MIT",
     "image": "img-readme-screenshot_authorize_app.jpg"
   },
@@ -8400,7 +9351,12 @@
     "maintainerURL": "https://github.com/elaniobro",
     "description": "Real-time MTA subway countdown clock for stations you choose. Configurable for marquee and or list view.",
     "issues": [],
-    "tags": ["nyc", "transit", "subway", "bus"],
+    "tags": [
+      "nyc",
+      "transit",
+      "subway",
+      "bus"
+    ],
     "license": "MIT",
     "image": "MMM-nyc-transit.jpg"
   },
@@ -8461,7 +9417,12 @@
     "maintainerURL": "https://github.com/btastic",
     "description": "Octoprint API integration.",
     "issues": [],
-    "tags": ["octoprint", "klipper", "mainsail", "fluidd"],
+    "tags": [
+      "octoprint",
+      "klipper",
+      "mainsail",
+      "fluidd"
+    ],
     "license": "MIT",
     "image": ".github-example.jpg"
   },
@@ -8473,7 +9434,10 @@
     "maintainerURL": "",
     "description": "Shows trains and other public transports for a configured ÖBB-Station.",
     "issues": [],
-    "tags": ["oebb", "öbb"],
+    "tags": [
+      "oebb",
+      "öbb"
+    ],
     "license": "MIT",
     "image": "assets-screenshot.jpg"
   },
@@ -8485,7 +9449,10 @@
     "maintainerURL": "https://github.com/eckonator",
     "description": "The module displays oil prices for the current year based on Chart.js and the API of heizoel24.de.",
     "issues": [],
-    "tags": ["oil", "chart"],
+    "tags": [
+      "oil",
+      "chart"
+    ],
     "license": "MIT",
     "image": "MMM-Oelpreise.jpg"
   },
@@ -8497,7 +9464,9 @@
     "maintainerURL": "",
     "description": "Displays the medals for olympic games.",
     "issues": [],
-    "tags": ["olympic games"],
+    "tags": [
+      "olympic games"
+    ],
     "license": "MIT",
     "image": ".github-countries.jpg"
   },
@@ -8531,7 +9500,9 @@
     "maintainerURL": "",
     "description": "Display current and forecast weather based on the Openweathermap OneCall API data with alternative formatting.",
     "issues": [],
-    "tags": ["weather"],
+    "tags": [
+      "weather"
+    ],
     "license": "MIT",
     "image": "OneCallWeather-Screenshot.jpg"
   },
@@ -8606,7 +9577,11 @@
     "maintainerURL": "",
     "description": "Simple On-Screen Menu for controlling the MagicMirror².",
     "issues": [],
-    "tags": ["menu", "remote control", "on-screen menu"],
+    "tags": [
+      "menu",
+      "remote control",
+      "on-screen menu"
+    ],
     "license": "MIT",
     "image": "img-screenshot.jpg"
   },
@@ -8618,7 +9593,10 @@
     "maintainerURL": "https://github.com/Fabrizz",
     "description": "Highly customizable module that displays what you are listening to in Spotify. Compatible with MMM-LiveLyrics and DynamicTheming.",
     "issues": [],
-    "tags": ["spotify", "spotify connect"],
+    "tags": [
+      "spotify",
+      "spotify connect"
+    ],
     "license": "MIT",
     "image": ".github-content-banner-social.jpg"
   },
@@ -8630,7 +9608,11 @@
     "maintainerURL": "https://github.com/nkl-kst",
     "description": "Display historical events from Wikipedia based on the current date.",
     "issues": [],
-    "tags": ["events", "history", "wikipedia"],
+    "tags": [
+      "events",
+      "history",
+      "wikipedia"
+    ],
     "license": "MIT",
     "image": "screenshot-module.jpg"
   },
@@ -8642,7 +9624,11 @@
     "maintainerURL": "https://github.com/slugmuffin",
     "description": "Display historical events from Wikipedia based on the current date using the Wikimedia API. Can display as list or newsfeed style.",
     "issues": [],
-    "tags": ["events", "history", "wikipedia"],
+    "tags": [
+      "events",
+      "history",
+      "wikipedia"
+    ],
     "license": "MIT",
     "image": "screenshot-show_as_list.jpg"
   },
@@ -8653,8 +9639,13 @@
     "maintainer": "santanachia",
     "maintainerURL": "",
     "description": "Shows current production status of your Opel/Vauxhall.",
-    "issues": ["No image found."],
-    "tags": ["opel", "status"],
+    "issues": [
+      "No image found."
+    ],
+    "tags": [
+      "opel",
+      "status"
+    ],
     "license": "MIT"
   },
   {
@@ -8801,8 +9792,12 @@
     "maintainer": "retroflex",
     "maintainerURL": "",
     "description": "Shows stats for Overwatch players.",
-    "issues": ["No image found."],
-    "tags": ["overwatch"],
+    "issues": [
+      "No image found."
+    ],
+    "tags": [
+      "overwatch"
+    ],
     "license": "MIT"
   },
   {
@@ -8868,7 +9863,10 @@
     "maintainerURL": "https://github.com/jboucly",
     "description": "Interface module between <a target=\"_blank\" href=\"https://github.com/edward-shen/MMM-pages\">MMM-pages</a> and <a target=\"_blank\" href=\"https://github.com/kevinatown/MMM-Screencast\">MMM-Screencast</a>. Module to automatically change page when a video is cast on the MagicMirror².",
     "issues": [],
-    "tags": ["pages", "screencast"],
+    "tags": [
+      "pages",
+      "screencast"
+    ],
     "license": "MIT",
     "image": "examples-cast-page.jpg"
   },
@@ -8917,7 +9915,11 @@
     "maintainerURL": "",
     "description": "Time to the next buses, metros, rers &amp; tramways for Paris Network (RATP), along with: the traffic status for selected lines, the risk of rain in the next hour, autolib and velib stations status.",
     "issues": [],
-    "tags": ["localtransport", "paris", "ratp"],
+    "tags": [
+      "localtransport",
+      "paris",
+      "ratp"
+    ],
     "license": "MIT",
     "image": "MMM-Paris-RATP-PG 2.3.jpg"
   },
@@ -8999,7 +10001,10 @@
     "maintainerURL": "https://github.com/eckonator",
     "description": "The module displays pellet prices for the current year based on Chart.js and the API of heizpellets24.de.",
     "issues": [],
-    "tags": ["pellet", "chart"],
+    "tags": [
+      "pellet",
+      "chart"
+    ],
     "license": "MIT",
     "image": "MMM-Pelletpreise.jpg"
   },
@@ -9082,7 +10087,10 @@
     "maintainerURL": "https://github.com/mumblebaj",
     "description": "Module to grab the status of your lights from your Hue Bridge with some updated features to display status of lights or groups.",
     "issues": [],
-    "tags": ["philipshue", "smart lights"],
+    "tags": [
+      "philipshue",
+      "smart lights"
+    ],
     "license": "ISC",
     "image": "images-screenshot.jpg"
   },
@@ -9097,7 +10105,10 @@
       "`package.json` issue: No repository field.",
       "`package.json` issue: No license field."
     ],
-    "tags": ["phone notification", "notification"]
+    "tags": [
+      "phone notification",
+      "notification"
+    ]
   },
   {
     "name": "MMM-PhoneDetect",
@@ -9107,7 +10118,11 @@
     "maintainerURL": "https://github.com/PierreGode",
     "description": "Automatically controls the screen's power based on the presence of specified phones or devices within the network.",
     "issues": [],
-    "tags": ["phone", "presence", "detection"],
+    "tags": [
+      "phone",
+      "presence",
+      "detection"
+    ],
     "license": "MIT",
     "image": "screenshot.jpg"
   },
@@ -9165,7 +10180,10 @@
     "maintainerURL": "https://github.com/SalekurPolas",
     "description": "Informational module to display mirror information like Raspberry Pi model, unique serial number, network information, IPv4, IPv6, MAC address, OS information, CPU information, and more.",
     "issues": [],
-    "tags": ["raspberrypi", "node"],
+    "tags": [
+      "raspberrypi",
+      "node"
+    ],
     "license": "MIT",
     "image": "res-img.jpg"
   },
@@ -9177,7 +10195,11 @@
     "maintainerURL": "",
     "description": "Display status from website/ip's.",
     "issues": [],
-    "tags": ["ping", "online", "offline"],
+    "tags": [
+      "ping",
+      "online",
+      "offline"
+    ],
     "license": "MIT",
     "image": ".github-example.jpg"
   },
@@ -9189,7 +10211,9 @@
     "maintainerURL": "",
     "description": "After a configurated time without any user interaction the display will turn off and hide all modules for economy mode.It will wake up with a PIR sensor. [Maintained].",
     "issues": [],
-    "tags": ["screen"],
+    "tags": [
+      "screen"
+    ],
     "license": "MIT",
     "image": "screenshot-screenshot.jpg"
   },
@@ -9215,8 +10239,13 @@
     "maintainer": "MarcLandis",
     "maintainerURL": "",
     "description": "This module can monitor a PIR motion sensor and put your mirror to sleep if nobody uses it.",
-    "issues": ["No image found."],
-    "tags": ["pir-sensor", "motion"],
+    "issues": [
+      "No image found."
+    ],
+    "tags": [
+      "pir-sensor",
+      "motion"
+    ],
     "license": "MIT"
   },
   {
@@ -9286,7 +10315,9 @@
     "maintainerURL": "",
     "description": "Displays a Polish Word of the Day with examples and the English translations.",
     "issues": [],
-    "tags": ["language"],
+    "tags": [
+      "language"
+    ],
     "license": "ISC",
     "image": "img-Word-of-the-Day-Example.jpg"
   },
@@ -9330,8 +10361,14 @@
     "maintainer": "gimdh",
     "maintainerURL": "https://github.com/gimdh",
     "description": "Displays air quality readings from Plantower PMSx003 series sensors.",
-    "issues": ["No image found."],
-    "tags": ["plantower", "pms", "dust"],
+    "issues": [
+      "No image found."
+    ],
+    "tags": [
+      "plantower",
+      "pms",
+      "dust"
+    ],
     "license": "ISC"
   },
   {
@@ -9342,7 +10379,9 @@
     "maintainerURL": "https://github.com/eckonator",
     "description": "The module connects to the API of the KOSTAL Plenticore inverter and reads the current data and brings it to the output.",
     "issues": [],
-    "tags": ["plenticore\u001b[hmagi\u001b[c\u001b[f"],
+    "tags": [
+      "plenticore\u001b[hmagi\u001b[c\u001b[f"
+    ],
     "license": "MIT",
     "image": "MMM-Plenticore.jpg"
   },
@@ -9402,8 +10441,13 @@
     "maintainer": "ptrbld",
     "maintainerURL": "",
     "description": "This module can show/hide a video downloaded from a Podcast or a private server (needs static file path). At the moment you can only display the video by clicking a button (use the MMM-Button module).",
-    "issues": ["No image found."],
-    "tags": ["podcast", "video"],
+    "issues": [
+      "No image found."
+    ],
+    "tags": [
+      "podcast",
+      "video"
+    ],
     "license": "MIT"
   },
   {
@@ -9425,7 +10469,12 @@
     "maintainerURL": "",
     "description": "Display a poem of the day, in the language(s) of your choice.",
     "issues": [],
-    "tags": ["poetry", "poem-of-the-day", "poemist", "multi-language"],
+    "tags": [
+      "poetry",
+      "poem-of-the-day",
+      "poemist",
+      "multi-language"
+    ],
     "license": "MIT",
     "image": "docs-images-MMM-screenshot.jpg"
   },
@@ -9508,7 +10557,9 @@
     "maintainer": "SikandAlex",
     "maintainerURL": "",
     "description": "Picovoice Porcupine hotword detection, works with MMM-AssistantMk2.",
-    "issues": ["No image found."],
+    "issues": [
+      "No image found."
+    ],
     "tags": [
       "hotword",
       "hotword detection",
@@ -9580,7 +10631,12 @@
     "maintainerURL": "https://github.com/slametps",
     "description": "Displays moslem praying time with Adhan recital.",
     "issues": [],
-    "tags": ["moslem", "islam", "prayertime", "adzan"],
+    "tags": [
+      "moslem",
+      "islam",
+      "prayertime",
+      "adzan"
+    ],
     "license": "MIT",
     "image": "screenshot-alert.jpg"
   },
@@ -9625,7 +10681,11 @@
     "maintainerURL": "https://github.com/Tom-Hirschberger",
     "description": "Indicator module for MMM-ProfileSwitcher.",
     "issues": [],
-    "tags": ["profiles", "pages", "touchable"],
+    "tags": [
+      "profiles",
+      "pages",
+      "touchable"
+    ],
     "license": "MIT",
     "image": "examples-page_one-profile_two.jpg"
   },
@@ -9659,7 +10719,9 @@
     "maintainerURL": "https://github.com/spydersoft-consulting",
     "description": "Display Prometheus Alerts.",
     "issues": [],
-    "tags": ["scheduler"],
+    "tags": [
+      "scheduler"
+    ],
     "license": "MIT",
     "image": ".github-example-screenshot.jpg"
   },
@@ -9684,8 +10746,13 @@
     "maintainer": "daxiang28",
     "maintainerURL": "https://github.com/daxiang28",
     "description": "Display basic auth images through a simple Express proxy.",
-    "issues": ["No image found."],
-    "tags": ["iframe", "notification"],
+    "issues": [
+      "No image found."
+    ],
+    "tags": [
+      "iframe",
+      "notification"
+    ],
     "license": "MIT"
   },
   {
@@ -9712,7 +10779,9 @@
     "maintainerURL": "",
     "description": "Displays departure information for public transportation in Germany and some other European countries. The <a target=\"_blank\" href=\"https://github.com/public-transport/hafas-client\">hafas-client</a> is used to query the information. The interface of the Deutsche Bahn is used as standard, this includes most of the local networks with buses, trams, etc. However, <a target=\"_blank\" href=\"https://github.com/public-transport/hafas-client/blob/main/p/readme.md\">other hafas interfaces</a> can also be used.",
     "issues": [],
-    "tags": ["public transport"],
+    "tags": [
+      "public transport"
+    ],
     "license": "MIT",
     "image": "img-Goerdelerring_all.jpg"
   },
@@ -9769,7 +10838,10 @@
     "maintainerURL": "",
     "description": "Another snow plugin to improve your winter experience.",
     "issues": [],
-    "tags": ["background", "snow"],
+    "tags": [
+      "background",
+      "snow"
+    ],
     "license": "MIT",
     "image": ".github-snow.jpg"
   },
@@ -9795,7 +10867,11 @@
     "maintainerURL": "",
     "description": "Display notifications from phone and PC and control your mirror using Pushbullet (API).",
     "issues": [],
-    "tags": ["pushbullet", "phone notification", "notification"],
+    "tags": [
+      "pushbullet",
+      "phone notification",
+      "notification"
+    ],
     "license": "MIT",
     "image": "screenshots-MagicMirror.PNG"
   },
@@ -9864,7 +10940,9 @@
     "maintainerURL": "",
     "description": "Show a random quote from an online collection of quotations by authors, celebrities, and newsmakers. Multi language supported.",
     "issues": [],
-    "tags": ["quotes"],
+    "tags": [
+      "quotes"
+    ],
     "license": "MIT",
     "image": "images-quote-of-the-day_english_example.jpg"
   },
@@ -9898,7 +10976,14 @@
     "maintainerURL": "https://github.com/jalibu",
     "description": "A rain radar map based on OpenStreetMap. Multiple location markers, option for alternating positions and zoom levels.",
     "issues": [],
-    "tags": ["weather", "rain", "leaflet", "map", "radar", "clouds"],
+    "tags": [
+      "weather",
+      "rain",
+      "leaflet",
+      "map",
+      "radar",
+      "clouds"
+    ],
     "license": "MIT",
     "image": "img-example.jpg"
   },
@@ -9921,7 +11006,10 @@
     "maintainerURL": "",
     "description": "2 hour Dutch rain forecast graph based on Buienradar.",
     "issues": [],
-    "tags": ["rain", "forecast"],
+    "tags": [
+      "rain",
+      "forecast"
+    ],
     "license": "MIT",
     "image": "screenshot2.jpg"
   },
@@ -9996,7 +11084,11 @@
     "maintainerURL": "https://github.com/slametps",
     "description": "Display ayah/verse of Qur'an randomly.",
     "issues": [],
-    "tags": ["moslem", "islam", "quran"],
+    "tags": [
+      "moslem",
+      "islam",
+      "quran"
+    ],
     "license": "MIT",
     "image": "screenshot.jpg"
   },
@@ -10068,7 +11160,10 @@
     "maintainerURL": "https://gitlab.com/FatTony404",
     "description": "Displays recycling calendar data from Stadt Zürich, Switzerland.",
     "issues": [],
-    "tags": ["recycling", "zurich"],
+    "tags": [
+      "recycling",
+      "zurich"
+    ],
     "license": "Apache-2.0",
     "image": "screenshot.jpg"
   },
@@ -10094,7 +11189,11 @@
     "maintainerURL": "https://github.com/hayseedbyte",
     "description": "Horizontal scrolling news ticker using reddit r/news titles to avoid clickbait.",
     "issues": [],
-    "tags": ["news", "ticker", "reddit"],
+    "tags": [
+      "news",
+      "ticker",
+      "reddit"
+    ],
     "license": "ISC",
     "image": "images-screenshot.jpg"
   },
@@ -10139,7 +11238,10 @@
     "maintainerURL": "",
     "description": "Cleanly shutdown (or reboot) your mirror, edit which modules are shown on your mirror and turn your monitor off and on from a simple website, i.e. from your smartphone.",
     "issues": [],
-    "tags": ["remote control", "control"],
+    "tags": [
+      "remote control",
+      "control"
+    ],
     "license": "MIT",
     "image": ".github-hide_show_module.jpg"
   },
@@ -10173,7 +11275,10 @@
     "maintainerURL": "https://github.com/balassy",
     "description": "Displays the temperature from a remote sensor that is capable to POST the measured value through HTTP protocol in JSON.",
     "issues": [],
-    "tags": ["temperature", "raspberrypi"],
+    "tags": [
+      "temperature",
+      "raspberrypi"
+    ],
     "license": "MIT",
     "image": "doc-screenshot-compact-multi-sensor.jpg"
   },
@@ -10216,7 +11321,10 @@
     "maintainerURL": "",
     "description": "Show your daily time spent using your digital devices with <a target=\"_blank\" href=\"https://www.rescuetime.com\">RescueTime</a>.",
     "issues": [],
-    "tags": ["rescuetime", "productivity"],
+    "tags": [
+      "rescuetime",
+      "productivity"
+    ],
     "license": "MIT",
     "image": "mmm-rescuetime-screenshot.jpg"
   },
@@ -10227,8 +11335,13 @@
     "maintainer": "Alvinger",
     "maintainerURL": "",
     "description": "Public transport information for Sweden.",
-    "issues": ["No image found."],
-    "tags": ["local transport", "sweden"],
+    "issues": [
+      "No image found."
+    ],
+    "tags": [
+      "local transport",
+      "sweden"
+    ],
     "license": "MIT"
   },
   {
@@ -10252,7 +11365,10 @@
     "maintainerURL": "",
     "description": "Module for Rijks Museum. This was developed using the Rijksmuseum API.",
     "issues": [],
-    "tags": ["art", "rijksmuseum"],
+    "tags": [
+      "art",
+      "rijksmuseum"
+    ],
     "license": "MIT",
     "image": "scr1.jpg"
   },
@@ -10291,7 +11407,9 @@
     "description": "RKI-Covid19 data for German counties.",
     "issues": [],
     "outdated": "Obsolete, no new data.",
-    "tags": ["rki"],
+    "tags": [
+      "rki"
+    ],
     "license": "MIT",
     "image": "screenshot.jpg"
   },
@@ -10303,7 +11421,12 @@
     "maintainerURL": "",
     "description": "Rhein-Main local transport system (RMV) - Departure Monitor.",
     "issues": [],
-    "tags": ["rmv", "frankfurt", "public transport", "local transit"],
+    "tags": [
+      "rmv",
+      "frankfurt",
+      "public transport",
+      "local transit"
+    ],
     "license": "MIT",
     "image": "screenshots-de.jpg"
   },
@@ -10343,8 +11466,12 @@
     "maintainer": "bogenpirat",
     "maintainerURL": "",
     "description": "Monitor a given station in the RNV traffic network.",
-    "issues": ["No image found."],
-    "tags": ["rnv"],
+    "issues": [
+      "No image found."
+    ],
+    "tags": [
+      "rnv"
+    ],
     "license": "MIT"
   },
   {
@@ -10355,7 +11482,9 @@
     "maintainerURL": "",
     "description": "Displays Rocket League Stats.",
     "issues": [],
-    "tags": ["rocket league"],
+    "tags": [
+      "rocket league"
+    ],
     "license": "MIT",
     "image": "MMM-RocketLeagueZ.jpg"
   },
@@ -10367,7 +11496,9 @@
     "maintainerURL": "",
     "description": "Display status of local Roomba.",
     "issues": [],
-    "tags": ["roomba"],
+    "tags": [
+      "roomba"
+    ],
     "license": "MIT",
     "image": "screenshots-charging_full.jpg"
   },
@@ -10466,7 +11597,9 @@
     "maintainerURL": "https://github.com/uncleLem",
     "description": "The total losses of the russian occupier since the full-scale invasion in Ukraine, per General Staff of the Armed Forces of Ukraine.",
     "issues": [],
-    "tags": ["russian invasion"],
+    "tags": [
+      "russian invasion"
+    ],
     "license": "MIT",
     "image": "img-example.jpg"
   },
@@ -10514,9 +11647,14 @@
     "maintainer": "MMRIZE",
     "maintainerURL": "",
     "description": "Module to change screen scenes by time and order with ANIMATION EFFECT.",
-    "issues": ["No image found."],
+    "issues": [
+      "No image found."
+    ],
     "outdated": "Deprecated. The successor is MMM-Scenes2.",
-    "tags": ["paging", "animation"],
+    "tags": [
+      "paging",
+      "animation"
+    ],
     "license": "MIT"
   },
   {
@@ -10541,7 +11679,9 @@
     "maintainerURL": "",
     "description": "Display scottish premiere league standings.",
     "issues": [],
-    "tags": ["scottish premier league"],
+    "tags": [
+      "scottish premier league"
+    ],
     "license": "MIT",
     "image": ".github-example.jpg"
   },
@@ -10553,7 +11693,10 @@
     "maintainerURL": "https://github.com/Tom-Hirschberger",
     "description": "Screensaver module which shuts the screen off if USER_PRESENCE is not received within specified timeout. Can be used as PIR module in combination with <a target=\"_blank\" href=\"https://github.com/Tom-Hirschberger/MMM-GPIO-Notifications\">MMM-GPIO-Notifications</a>.",
     "issues": [],
-    "tags": ["screensave", "pir"],
+    "tags": [
+      "screensave",
+      "pir"
+    ],
     "license": "MIT",
     "image": "example.jpg"
   },
@@ -10565,7 +11708,13 @@
     "maintainerURL": "",
     "description": "Cast a video from your phone to your mirror (currently can only cast YouTube).",
     "issues": [],
-    "tags": ["chromecast", "dial", "launch", "cast", "youtube"],
+    "tags": [
+      "chromecast",
+      "dial",
+      "launch",
+      "cast",
+      "youtube"
+    ],
     "license": "MIT",
     "image": "screenshots-screenshot.jpg"
   },
@@ -10590,7 +11739,11 @@
     "maintainerURL": "",
     "description": "Run a set of command-line scripts on a cron schedule and display an icon to differentiate.",
     "issues": [],
-    "tags": ["volume", "mute", "cron"],
+    "tags": [
+      "volume",
+      "mute",
+      "cron"
+    ],
     "license": "MIT",
     "image": "pics-example-icon-low.jpg"
   },
@@ -10648,8 +11801,12 @@
     "maintainer": "Txukie",
     "maintainerURL": "",
     "description": "Takes a Selfie with an official Raspberry Pi Cam and can publish it to Facebook or Twitter. Needs API keys. Integrates nicely with MMM-Assistant (for voice control) and MMM-TelegramBot (for Telegram control).",
-    "issues": ["No image found."],
-    "tags": ["selfie"],
+    "issues": [
+      "No image found."
+    ],
+    "tags": [
+      "selfie"
+    ],
     "license": "MIT"
   },
   {
@@ -10695,8 +11852,14 @@
     "maintainer": "mattileh",
     "maintainerURL": "",
     "description": "This module enables having live sensor data without touching the Pi hardware by utilizing the BLE advertisment beacons from sensors and routing that live info into MagicMirror² platform.",
-    "issues": ["`package.json` issue: No repository field."],
-    "tags": ["movesense", "ruuvitag", "iot"],
+    "issues": [
+      "`package.json` issue: No repository field."
+    ],
+    "tags": [
+      "movesense",
+      "ruuvitag",
+      "iot"
+    ],
     "license": "MIT",
     "image": "documentation-exampleui.jpg"
   },
@@ -10708,7 +11871,11 @@
     "maintainerURL": "https://github.com/Tom-Hirschberger",
     "description": "A module to send notifications based on messages received via one/multiple serial devices.",
     "issues": [],
-    "tags": ["serial console", "tty", "notifications"],
+    "tags": [
+      "serial console",
+      "tty",
+      "notifications"
+    ],
     "license": "MIT",
     "image": "examples-APDS-9960_Multi-VL53L0X-APDS-9960_Multi-VL53L0X.jpg"
   },
@@ -10720,7 +11887,11 @@
     "maintainerURL": "https://github.com/XBCreepinJesus",
     "description": "A module to check the up/down status of servers/devices on your network.",
     "issues": [],
-    "tags": ["ping", "server", "status"],
+    "tags": [
+      "ping",
+      "server",
+      "status"
+    ],
     "license": "MIT",
     "image": "screenshots-DeviceStatusExample.jpg"
   },
@@ -10746,7 +11917,11 @@
     "description": "Displays the ETA of San Francisco's MUNI Bus and Rail systems based on the given stops and routes.",
     "issues": [],
     "outdated": "Abandoned. The API used no longer works, there is a new API but the developer no longer seems to be active.",
-    "tags": ["muni", "sf", "bus times"],
+    "tags": [
+      "muni",
+      "sf",
+      "bus times"
+    ],
     "license": "GPL-3.0-or-later",
     "image": "screenshot.jpg"
   },
@@ -10770,8 +11945,14 @@
     "maintainer": "sheyabernstein",
     "maintainerURL": "",
     "description": "Display shabbat times for the current week and optionally hide all modules.",
-    "issues": ["No image found."],
-    "tags": ["shabbat", "hebrew", "jewish"],
+    "issues": [
+      "No image found."
+    ],
+    "tags": [
+      "shabbat",
+      "hebrew",
+      "jewish"
+    ],
     "license": "MIT"
   },
   {
@@ -10817,8 +11998,15 @@
     "maintainer": "mgarrix",
     "maintainerURL": "https://github.com/mgarrix",
     "description": "Display data from Shelly EM sensor.",
-    "issues": ["`package.json` issue: No repository field."],
-    "tags": ["shelly", "shellyem", "meter", "fv"],
+    "issues": [
+      "`package.json` issue: No repository field."
+    ],
+    "tags": [
+      "shelly",
+      "shellyem",
+      "meter",
+      "fv"
+    ],
     "license": "MIT",
     "image": "screenshot-NoProduction.jpg"
   },
@@ -10841,7 +12029,9 @@
     "maintainerURL": "",
     "description": "Display your shipment tracking status.",
     "issues": [],
-    "tags": ["shipment tracking"],
+    "tags": [
+      "shipment tracking"
+    ],
     "license": "MIT",
     "image": ".github-example.jpg"
   },
@@ -10890,7 +12080,10 @@
     "maintainerURL": "https://github.com/sabo10o29",
     "description": "Shows trash days with simple setup.",
     "issues": [],
-    "tags": ["trash day", "garbage"],
+    "tags": [
+      "trash day",
+      "garbage"
+    ],
     "license": "MIT",
     "image": "sc01.jpg"
   },
@@ -10913,7 +12106,9 @@
     "maintainerURL": "https://github.com/balassy",
     "description": "Displays the stock price of a single company without any fancy animation.",
     "issues": [],
-    "tags": ["stock"],
+    "tags": [
+      "stock"
+    ],
     "license": "MIT",
     "image": "doc-screenshot-companyname.jpg"
   },
@@ -10924,8 +12119,15 @@
     "maintainer": "retroflex",
     "maintainerURL": "",
     "description": "Shows this week's school timetable from the Swedish school system Skola24.",
-    "issues": ["No image found."],
-    "tags": ["schema", "skolschema", "skola24", "sweden"],
+    "issues": [
+      "No image found."
+    ],
+    "tags": [
+      "schema",
+      "skolschema",
+      "skola24",
+      "sweden"
+    ],
     "license": "MIT"
   },
   {
@@ -10935,8 +12137,14 @@
     "maintainer": "retroflex",
     "maintainerURL": "",
     "description": "Show school lunch menus in Sweden from skolmaten.se.",
-    "issues": ["No image found."],
-    "tags": ["skolmat", "skolmaten", "sweden"],
+    "issues": [
+      "No image found."
+    ],
+    "tags": [
+      "skolmat",
+      "skolmaten",
+      "sweden"
+    ],
     "license": "MIT"
   },
   {
@@ -10961,7 +12169,9 @@
     "maintainerURL": "",
     "description": "Display public transport in Stockholm/<strong>Sweden</strong>.",
     "issues": [],
-    "tags": ["publictransport"],
+    "tags": [
+      "publictransport"
+    ],
     "license": "MIT",
     "image": "docs-MMM-SL-Screenshot.PNG"
   },
@@ -10972,8 +12182,12 @@
     "maintainer": "Jupter1",
     "maintainerURL": "",
     "description": "Cycles through the newest messages of a Slack channel.",
-    "issues": ["No image found."],
-    "tags": ["slack"],
+    "issues": [
+      "No image found."
+    ],
+    "tags": [
+      "slack"
+    ],
     "license": "MIT"
   },
   {
@@ -10995,7 +12209,13 @@
     "maintainerURL": "https://github.com/ngnijland",
     "description": "Show what's currently playing now on the dutch radio station Slam!.",
     "issues": [],
-    "tags": ["slamfm!", "radio", "playing now", "song", "artist"],
+    "tags": [
+      "slamfm!",
+      "radio",
+      "playing now",
+      "song",
+      "artist"
+    ],
     "license": "MIT",
     "image": "screenshots-MMM-slamfm-playing-now-screenshot.jpg"
   },
@@ -11052,8 +12272,13 @@
     "maintainer": "AgP42",
     "maintainerURL": "https://github.com/AgP42",
     "description": "An iFrame module to display web content (including YouTube, IP cameras, etc.). Several rotating URL, autorefresh and remote control of the URL to display, Next/Prev/Play/Stop. <a target=\"_blank\" href=\"https://forum.magicmirror.builders/topic/9750/mmm-smartwebdisplay-display-web-contents-including-youtube-on-your-mm\">MMM-SmartWebDisplay forum</a>.",
-    "issues": ["No image found."],
-    "tags": ["iframe", "notification"],
+    "issues": [
+      "No image found."
+    ],
+    "tags": [
+      "iframe",
+      "notification"
+    ],
     "license": "MIT"
   },
   {
@@ -11064,9 +12289,22 @@
     "maintainerURL": "",
     "description": "Air pollution in Polish cities.",
     "issues": [],
-    "tags": ["air polution"],
+    "tags": [
+      "air polution"
+    ],
     "license": "MIT",
     "image": "screen.jpg"
+  },
+  {
+    "name": "MMM-Snake",
+    "url": "https://github.com/superuserx/MMM-Snake",
+    "id": "superuserx/MMM-Snake",
+    "maintainer": "superuserx",
+    "maintainerURL": "",
+    "description": "Play the retro game Snake on your mirror using your smartphone.",
+    "issues": [
+      "There is no `package.json`. We need this file to gather information about the module for the module list page."
+    ]
   },
   {
     "name": "MMM-SNCF",
@@ -11076,7 +12314,11 @@
     "maintainerURL": "",
     "description": "Display upcoming trains between 2 SNCF stations (France).",
     "issues": [],
-    "tags": ["localtransport", "sncf", "train"],
+    "tags": [
+      "localtransport",
+      "sncf",
+      "train"
+    ],
     "license": "MIT",
     "image": "screenshots-transilien.jpg"
   },
@@ -11088,7 +12330,10 @@
     "maintainerURL": "",
     "description": "Uses SNMP to display bandwidth usage from a network device interface.",
     "issues": [],
-    "tags": ["snmp", "bandwidth"],
+    "tags": [
+      "snmp",
+      "bandwidth"
+    ],
     "license": "MIT",
     "image": "screenshots-screenshot1.jpg"
   },
@@ -11111,7 +12356,9 @@
     "maintainerURL": "",
     "description": "Display standings from European Soccer (Football) leagues (optional voice-control).",
     "issues": [],
-    "tags": ["soccer standings"],
+    "tags": [
+      "soccer standings"
+    ],
     "license": "MIT",
     "image": ".github-modal.jpg"
   },
@@ -11123,7 +12370,10 @@
     "maintainerURL": "",
     "description": "Display live scores of your favorite soccer leagues/competitions.",
     "issues": [],
-    "tags": ["live score", "soccer"],
+    "tags": [
+      "live score",
+      "soccer"
+    ],
     "license": "MIT",
     "image": "screenshots-MMM-SoccerLiveScores-Scorers.jpg"
   },
@@ -11156,7 +12406,10 @@
     "maintainerURL": "",
     "description": "Station monitor for bicycle networks based on the Socialbicycles API/Infrastructure, e.g. Wavelo in Kraków, Poland.",
     "issues": [],
-    "tags": ["nextbike", "bike sharing"],
+    "tags": [
+      "nextbike",
+      "bike sharing"
+    ],
     "license": "MIT",
     "image": "screenshots-socialbicycles1.jpg"
   },
@@ -11349,7 +12602,11 @@
     "maintainerURL": "",
     "description": "Spotify Controller - with device and account switch buttons, easy volume change via touch and much more.",
     "issues": [],
-    "tags": ["magicmirrormodule", "spotify", "music"],
+    "tags": [
+      "magicmirrormodule",
+      "spotify",
+      "music"
+    ],
     "license": "MIT",
     "image": "screenshots-miniature_bar.PNG"
   },
@@ -11382,8 +12639,12 @@
     "maintainer": "Ruud14",
     "maintainerURL": "https://github.com/Ruud14",
     "description": "Displays the latest releases from your favorite spotify artists.",
-    "issues": ["No image found."],
-    "tags": ["spotify"],
+    "issues": [
+      "No image found."
+    ],
+    "tags": [
+      "spotify"
+    ],
     "license": "MIT"
   },
   {
@@ -11405,7 +12666,9 @@
     "maintainerURL": "https://github.com/spydersoft-consulting",
     "description": "Display incidents and component status from a StatusPage.io site.",
     "issues": [],
-    "tags": ["scheduler"],
+    "tags": [
+      "scheduler"
+    ],
     "license": "MIT",
     "image": ".github-example-screenshot.jpg"
   },
@@ -11465,7 +12728,10 @@
     "maintainerURL": "",
     "description": "Display a stoic quote at a given interval or time of day.",
     "issues": [],
-    "tags": ["quotes", "quote"],
+    "tags": [
+      "quotes",
+      "quote"
+    ],
     "license": "MIT",
     "image": "screenshot just module.jpg"
   },
@@ -11477,7 +12743,9 @@
     "maintainerURL": "https://github.com/Klettner",
     "description": "Display an alert-style timer or stopwatch. Controllable via notifications or the <a target=\"_blank\" href=\"https://github.com/Klettner/MM-Remote\">MM-Remote</a> android app.",
     "issues": [],
-    "tags": ["timer"],
+    "tags": [
+      "timer"
+    ],
     "license": "MIT",
     "image": "Timer.jpg"
   },
@@ -11503,7 +12771,9 @@
     "maintainerURL": "",
     "description": "Display your activity data from <a target=\"_blank\" href=\"https://www.strava.com\">Strava.com</a>.",
     "issues": [],
-    "tags": ["strava"],
+    "tags": [
+      "strava"
+    ],
     "license": "MIT",
     "image": ".github-example-chart-recent.jpg"
   },
@@ -11515,7 +12785,9 @@
     "maintainerURL": "",
     "description": "Displays last reading from your Dexcom G6 via the share API.",
     "issues": [],
-    "tags": ["dexcom"],
+    "tags": [
+      "dexcom"
+    ],
     "license": "MIT",
     "image": "screen.jpg"
   },
@@ -11551,7 +12823,9 @@
     "maintainerURL": "https://github.com/mumblebaj",
     "description": "Display a classic railway clock.",
     "issues": [],
-    "tags": ["sweepclock station clock"],
+    "tags": [
+      "sweepclock station clock"
+    ],
     "license": "ISC",
     "image": "image.jpg"
   },
@@ -11562,8 +12836,14 @@
     "maintainer": "mochman",
     "maintainerURL": "",
     "description": "Uses 2 HC-SR04 ultrasonic sensors to determing hand position to produce a \"Swipe Left\", \"Swipe Right\", or \"Press\".",
-    "issues": ["No image found."],
-    "tags": ["hand gestures", "swipe", "modules"],
+    "issues": [
+      "No image found."
+    ],
+    "tags": [
+      "hand gestures",
+      "swipe",
+      "modules"
+    ],
     "license": "MIT"
   },
   {
@@ -11623,8 +12903,13 @@
     "maintainer": "Thlb",
     "maintainerURL": "",
     "description": "Display Synology Download Station tasks.",
-    "issues": ["No image found."],
-    "tags": ["synology", "download satation"],
+    "issues": [
+      "No image found."
+    ],
+    "tags": [
+      "synology",
+      "download satation"
+    ],
     "license": "MIT"
   },
   {
@@ -11665,7 +12950,9 @@
     "maintainerURL": "https://github.com/btastic",
     "description": "Shows system stats similar to MMM-SystemStats.",
     "issues": [],
-    "tags": ["systemmonitor"],
+    "tags": [
+      "systemmonitor"
+    ],
     "license": "MIT",
     "image": ".github-example.jpg"
   },
@@ -11677,7 +12964,10 @@
     "maintainerURL": "",
     "description": "Shows Raspberry Pi system stats like CPU temperature, free Ram, System load, and Uptime.",
     "issues": [],
-    "tags": ["cpu temperature", "system load"],
+    "tags": [
+      "cpu temperature",
+      "system load"
+    ],
     "license": "MIT",
     "image": "screenshot.jpg"
   },
@@ -11689,7 +12979,11 @@
     "maintainerURL": "https://github.com/E3V3A",
     "description": "A Demo module for using <a target=\"_blank\" href=\"https://tabulator.info\">Tabulator</a> to directly parse JSON/XML into MM DHTML tables.",
     "issues": [],
-    "tags": ["tables", "json", "tabulator"],
+    "tags": [
+      "tables",
+      "json",
+      "tabulator"
+    ],
     "license": "MIT",
     "image": "demo1.jpg"
   },
@@ -11724,8 +13018,16 @@
     "maintainer": "sejka",
     "maintainerURL": "",
     "description": "Shows nearest scooters/cars/mopeds/bikes to rent in your area. Comes with direction and distance info.",
-    "issues": ["`package.json` issue: No repository field."],
-    "tags": ["carsharing", "scooters", "cars", "mopeds", "lime"],
+    "issues": [
+      "`package.json` issue: No repository field."
+    ],
+    "tags": [
+      "carsharing",
+      "scooters",
+      "cars",
+      "mopeds",
+      "lime"
+    ],
     "license": "MIT",
     "image": "screenshot.jpg"
   },
@@ -11737,7 +13039,10 @@
     "maintainerURL": "https://github.com/wiesty",
     "description": "Module to display the local gas prices in Germany (Tankstellen-Preise).",
     "issues": [],
-    "tags": ["gas", "germany"],
+    "tags": [
+      "gas",
+      "germany"
+    ],
     "license": "MIT",
     "image": "example.jpg"
   },
@@ -11759,8 +13064,13 @@
     "maintainer": "Thlb",
     "maintainerURL": "",
     "description": "Display client list of a Teamspeak3 server.",
-    "issues": ["No image found."],
-    "tags": ["teamspeak", "client list"],
+    "issues": [
+      "No image found."
+    ],
+    "tags": [
+      "teamspeak",
+      "client list"
+    ],
     "license": "MIT"
   },
   {
@@ -11770,8 +13080,13 @@
     "maintainer": "doctorfree",
     "maintainerURL": "https://github.com/doctorfree",
     "description": "Creates and manages Telegram commands to control a MagicMirror² via the MirrorCommandLine tools. MMM-TelegramCommands requires the installation and configuration of the <a target=\"_blank\" href=\"https://github.com/bugsounet/MMM-TelegramBot\">MMM-TelegramBot</a> module and the <a target=\"_blank\" href=\"https://gitlab.com/doctorfree/MirrorCommandLine\">MirrorCommandLine</a> suite of command line utilites for the MagicMirror².",
-    "issues": ["No image found."],
-    "tags": ["telegram", "commandline"],
+    "issues": [
+      "No image found."
+    ],
+    "tags": [
+      "telegram",
+      "commandline"
+    ],
     "license": "MIT"
   },
   {
@@ -11781,8 +13096,14 @@
     "maintainer": "Thlb",
     "maintainerURL": "",
     "description": "Display DS18B20 sensor's temperature.",
-    "issues": ["No image found."],
-    "tags": ["ds18b20", "temperature", "sensor"],
+    "issues": [
+      "No image found."
+    ],
+    "tags": [
+      "ds18b20",
+      "temperature",
+      "sensor"
+    ],
     "license": "MIT"
   },
   {
@@ -11814,7 +13135,11 @@
     "maintainerURL": "",
     "description": "Display Tesla data from either <a target=\"_blank\" href=\"https://teslafi.com\">TeslaFi</a> or <a target=\"_blank\" href=\"https://www.tessie.com\">Tessie</a>.",
     "issues": [],
-    "tags": ["tesla", "teslafi", "tessie"],
+    "tags": [
+      "tesla",
+      "teslafi",
+      "tessie"
+    ],
     "license": "MIT",
     "image": "doc-screenshot.jpg"
   },
@@ -11880,7 +13205,14 @@
     "maintainerURL": "https://github.com/ngnijland",
     "description": "A clock which shows the time as text.",
     "issues": [],
-    "tags": ["smar", "clock", "text", "clock", "word", "clock"],
+    "tags": [
+      "smar",
+      "clock",
+      "text",
+      "clock",
+      "word",
+      "clock"
+    ],
     "license": "MIT",
     "image": "screenshots-MMM-text-clock-screenshot-compact.jpg"
   },
@@ -11903,7 +13235,12 @@
     "maintainerURL": "",
     "description": "This module gets real time arrival predictions for specifc stops using the TfL API.",
     "issues": [],
-    "tags": ["transport", "london", "underground", "tfl"],
+    "tags": [
+      "transport",
+      "london",
+      "underground",
+      "tfl"
+    ],
     "license": "MIT",
     "image": "screenshots-due.jpg"
   },
@@ -11940,7 +13277,13 @@
     "maintainerURL": "",
     "description": "Show electricity related data for Tibber customers. Shows power, prices, consumption, voltage, current and more.",
     "issues": [],
-    "tags": ["tibber", "energy", "smarthome", "home-automation", "power"],
+    "tags": [
+      "tibber",
+      "energy",
+      "smarthome",
+      "home-automation",
+      "power"
+    ],
     "license": "MIT",
     "image": "doc-MMM-Tibber-screenshot-3phase.jpg"
   },
@@ -11976,7 +13319,10 @@
     "maintainerURL": "",
     "description": "Shows your TimeTree event.",
     "issues": [],
-    "tags": ["event", "timetree"],
+    "tags": [
+      "event",
+      "timetree"
+    ],
     "license": "MIT",
     "image": "sc01.jpg"
   },
@@ -12015,7 +13361,9 @@
     "maintainerURL": "https://github.com/JulienPeloton",
     "description": "Module to display latest new astronomical transients from <a target=\"_blank\" href=\"https://wis-tns.weizmann.ac.il\">TNS</a> such as <a target=\"_blank\" href=\"https://en.wikipedia.org/wiki/Supernova\">supernova</a> candidates.",
     "issues": [],
-    "tags": ["tns"],
+    "tags": [
+      "tns"
+    ],
     "license": "MIT",
     "image": "pic-scrnsht_w_cutouts.jpg"
   },
@@ -12027,7 +13375,9 @@
     "maintainerURL": "",
     "description": "Displays your todos from Todoist.",
     "issues": [],
-    "tags": ["wunderlist"],
+    "tags": [
+      "wunderlist"
+    ],
     "license": "MIT",
     "image": "1x1px.jpg"
   },
@@ -12096,7 +13446,13 @@
     "maintainerURL": "https://github.com/Tom-Hirschberger",
     "description": "Add clickable buttons to send notifications or run commands.",
     "issues": [],
-    "tags": ["touch", "button", "icon", "notifications", "scripts"],
+    "tags": [
+      "touch",
+      "button",
+      "icon",
+      "notifications",
+      "scripts"
+    ],
     "license": "MIT",
     "image": "examples-ShellyPlugs-shellies.jpg"
   },
@@ -12108,7 +13464,10 @@
     "maintainerURL": "https://github.com/LoneWanderer-GH",
     "description": "time to the next buses lines for Toulouse (Tisseo).",
     "issues": [],
-    "tags": ["localtransport", "toulouse"],
+    "tags": [
+      "localtransport",
+      "toulouse"
+    ],
     "license": "MIT",
     "image": "bus_schedules.jpg"
   },
@@ -12120,7 +13479,10 @@
     "maintainerURL": "https://github.com/slametps",
     "description": "Display the status of TPLink lights/plugs in your local network.",
     "issues": [],
-    "tags": ["tplink", "smarthome"],
+    "tags": [
+      "tplink",
+      "smarthome"
+    ],
     "license": "MIT",
     "image": "others-MMM-TPLink-screenshot-01.jpg"
   },
@@ -12146,7 +13508,9 @@
     "maintainerURL": "https://github.com/samlewis0602",
     "description": "Display commute travel time with current traffic conditions factored in. Can be used for driving, biking, walking, and public transit.",
     "issues": [],
-    "tags": ["traffic"],
+    "tags": [
+      "traffic"
+    ],
     "license": "MIT",
     "image": "screenshots-01-simple_config.jpg"
   },
@@ -12263,17 +13627,6 @@
     ]
   },
   {
-    "name": "MMM-TransporteCABA",
-    "url": "https://github.com/luccapolastri/MMM-TransporteCABA",
-    "id": "luccapolastri/MMM-TransporteCABA",
-    "maintainer": "luccapolastri",
-    "maintainerURL": "https://github.com/luccapolastri",
-    "description": "Module that displays real time information of the public transportation service in CABA, Buenos Aires, Argentina.",
-    "issues": [
-      "There is no `package.json`. We need this file to gather information about the module for the module list page."
-    ]
-  },
-  {
     "name": "MMM-Trello",
     "url": "https://github.com/Jopyth/MMM-Trello",
     "id": "Jopyth/MMM-Trello",
@@ -12281,7 +13634,9 @@
     "maintainerURL": "",
     "description": "This module can show <a target=\"_blank\" href=\"https://trello.com\">Trello</a> cards on your mirror.",
     "issues": [],
-    "tags": ["trello"],
+    "tags": [
+      "trello"
+    ],
     "license": "MIT",
     "image": ".github-mirrorcard.jpg"
   },
@@ -12316,8 +13671,12 @@
     "maintainer": "fewieden",
     "maintainerURL": "",
     "description": "Offline Text-To-Speech based on festival.",
-    "issues": ["No image found."],
-    "tags": ["text-to-speech"],
+    "issues": [
+      "No image found."
+    ],
+    "tags": [
+      "text-to-speech"
+    ],
     "license": "MIT"
   },
   {
@@ -12358,7 +13717,11 @@
     "maintainerURL": "https://github.com/rafagale",
     "description": "Get estimations for bus stops in the city of Zaragoza (Spain).",
     "issues": [],
-    "tags": ["bus stop", "tuzsa zaragoza", "public transport"],
+    "tags": [
+      "bus stop",
+      "tuzsa zaragoza",
+      "public transport"
+    ],
     "license": "MIT",
     "image": "tuzsa-magicmirror.PNG"
   },
@@ -12370,7 +13733,9 @@
     "maintainerURL": "https://github.com/XBCreepinJesus",
     "description": "Show your upcoming Tvheadend recordings.",
     "issues": [],
-    "tags": ["tvheadend"],
+    "tags": [
+      "tvheadend"
+    ],
     "license": "MIT",
     "image": "screenshots-demo.jpg"
   },
@@ -12440,7 +13805,9 @@
     "maintainerURL": "https://github.com/balassy",
     "description": "Displays Hungarian compliments from <a target=\"_blank\" href=\"https://udvaronc.hu\">Uvaronc</a>.",
     "issues": [],
-    "tags": ["udvaronc"],
+    "tags": [
+      "udvaronc"
+    ],
     "license": "MIT",
     "image": "doc-screenshot-bow.jpg"
   },
@@ -12476,7 +13843,11 @@
     "maintainerURL": "",
     "description": "Display weather warnings for the UK issued by UK Met Office.",
     "issues": [],
-    "tags": ["weather", "warnings", "uk met office"],
+    "tags": [
+      "weather",
+      "warnings",
+      "uk met office"
+    ],
     "license": "MIT",
     "image": "warnings-bw.jpg"
   },
@@ -12488,7 +13859,10 @@
     "maintainerURL": "",
     "description": "This module displays LIVE UK National Rail train arrivals &amp; departures from a specified station.",
     "issues": [],
-    "tags": ["national rail", "trains"],
+    "tags": [
+      "national rail",
+      "trains"
+    ],
     "license": "MIT",
     "image": "images-Current_version.jpg"
   },
@@ -12511,7 +13885,9 @@
     "maintainerURL": "",
     "description": "Displays UniFi hotspot vouchers.",
     "issues": [],
-    "tags": ["unifi"],
+    "tags": [
+      "unifi"
+    ],
     "license": "MIT",
     "image": "screenshot.jpg"
   },
@@ -12547,7 +13923,12 @@
     "maintainerURL": "",
     "description": "Display monitor data (online/offline detection) from selfhosted <a target=\"_blank\" href=\"https://github.com/louislam/uptime-kuma\">https://github.com/louislam/uptime-kuma</a>.",
     "issues": [],
-    "tags": ["uptimekuma", "uptime kuma", "uptime", "kuma"],
+    "tags": [
+      "uptimekuma",
+      "uptime kuma",
+      "uptime",
+      "kuma"
+    ],
     "license": "MIT",
     "image": ".github-icons_color_single.jpg"
   },
@@ -12559,7 +13940,12 @@
     "maintainerURL": "",
     "description": "Display monitor data (online/offline detection) from <a target=\"_blank\" href=\"https://uptimerobot.com/\">https://uptimerobot.com/</a>.",
     "issues": [],
-    "tags": ["uptimerobot", "uptime robot", "uptime", "robot"],
+    "tags": [
+      "uptimerobot",
+      "uptime robot",
+      "uptime",
+      "robot"
+    ],
     "license": "MIT",
     "image": ".github-icons.jpg"
   },
@@ -12586,7 +13972,13 @@
     "maintainerURL": "https://github.com/Tom-Hirschberger",
     "description": "Display the values of messages of notifications. Titles, icons, reformatting and parsing are supported.",
     "issues": [],
-    "tags": ["json", "jsonpath", "flexible", "thresholds", "conditions"],
+    "tags": [
+      "json",
+      "jsonpath",
+      "flexible",
+      "thresholds",
+      "conditions"
+    ],
     "license": "MIT",
     "image": "doc-screenshots-basicConfiguration.jpg"
   },
@@ -12597,8 +13989,16 @@
     "maintainer": "deg0nz",
     "maintainerURL": "",
     "description": "Displays data from Varta Energy Storage Systems and can be used as data source for <a target=\"_blank\" href=\"https://github.com/deg0nz/MMM-EnergyMonitor\">MMM-EnergyMonitor</a>.",
-    "issues": ["No image found."],
-    "tags": ["varta", "energy", "storage", "system", "modbus"],
+    "issues": [
+      "No image found."
+    ],
+    "tags": [
+      "varta",
+      "energy",
+      "storage",
+      "system",
+      "modbus"
+    ],
     "license": "MIT"
   },
   {
@@ -12634,8 +14034,16 @@
     "maintainer": "n-gao",
     "maintainerURL": "https://github.com/n-gao",
     "description": "Enables you to display birthdays from a contacts via a vCard.",
-    "issues": ["`package.json` issue: No repository field.", "No image found."],
-    "tags": ["\"magic", "mirror\"", "\"magic", "module\""],
+    "issues": [
+      "`package.json` issue: No repository field.",
+      "No image found."
+    ],
+    "tags": [
+      "\"magic",
+      "mirror\"",
+      "\"magic",
+      "module\""
+    ],
     "license": "MIT"
   },
   {
@@ -12740,7 +14148,9 @@
     "maintainerURL": "https://github.com/fewieden",
     "description": "Learn new languages on your MagicMirror².",
     "issues": [],
-    "tags": ["vocabulary trainer"],
+    "tags": [
+      "vocabulary trainer"
+    ],
     "license": "MIT",
     "image": ".github-example.jpg"
   },
@@ -12751,8 +14161,13 @@
     "maintainer": "fewieden",
     "maintainerURL": "",
     "description": "Offline Voice Recognition Module, with ability to control other modules, based on pocketsphinx.",
-    "issues": ["No image found."],
-    "tags": ["voice recognition", "speech to text"],
+    "issues": [
+      "No image found."
+    ],
+    "tags": [
+      "voice recognition",
+      "speech to text"
+    ],
     "license": "MIT"
   },
   {
@@ -12777,8 +14192,12 @@
     "maintainer": "dr4ke616",
     "maintainerURL": "",
     "description": "Voice control based on annyang.",
-    "issues": ["No image found."],
-    "tags": ["voice control"],
+    "issues": [
+      "No image found."
+    ],
+    "tags": [
+      "voice control"
+    ],
     "license": "MIT"
   },
   {
@@ -12825,7 +14244,10 @@
     "maintainerURL": "",
     "description": "Display Volvo car status and trip information by VolvoOnCall.",
     "issues": [],
-    "tags": ["volvo", "volvooncall"],
+    "tags": [
+      "volvo",
+      "volvooncall"
+    ],
     "license": "MIT",
     "image": "voc.jpg"
   },
@@ -12837,7 +14259,10 @@
     "maintainerURL": "https://github.com/Klizzy",
     "description": "Easy configuration module to display bus and train arrivals/departures with different display types for Germany (VRR and more EFA).",
     "issues": [],
-    "tags": ["vrr", "transportation"],
+    "tags": [
+      "vrr",
+      "transportation"
+    ],
     "license": "MIT",
     "image": "mmm-vrr-table.jpg"
   },
@@ -12849,7 +14274,12 @@
     "maintainerURL": "https://github.com/nigel-daniels",
     "description": "Updated: You can now monitor live arrival times at many CA, Bay Area transit stops. This covers BART, VTA, etc.",
     "issues": [],
-    "tags": ["vta", "transit", "live", "arrivals"],
+    "tags": [
+      "vta",
+      "transit",
+      "live",
+      "arrivals"
+    ],
     "license": "MIT",
     "image": "511SFBay_color_web.jpg"
   },
@@ -12874,7 +14304,10 @@
     "maintainerURL": "https://github.com/fhinder",
     "description": "Display departures for public transport in Stuttgart (Covers VVS Area). Based on MMM-vvsDebarture by Niklas Kappler, changed deprected request dependency.",
     "issues": [],
-    "tags": ["vvs", "public-transport"],
+    "tags": [
+      "vvs",
+      "public-transport"
+    ],
     "license": "MIT",
     "image": "example1.jpg"
   },
@@ -12973,7 +14406,10 @@
     "maintainerURL": "https://github.com/nigel-daniels",
     "description": "Simple clean display of the weather now, designed to go with MMM-3Day-Forecast. Now uses Open Weather as WeatherBit reduced the free service to an unusable level :( If you installed an older version ( &lt; 18 Oct 2022 ), please update and get a new api key!",
     "issues": [],
-    "tags": ["weather", "forecast"],
+    "tags": [
+      "weather",
+      "forecast"
+    ],
     "license": "MIT",
     "image": "images-01d.jpg"
   },
@@ -13090,8 +14526,13 @@
     "maintainer": "PjTewkesbury",
     "maintainerURL": "",
     "description": "Displays HTTP POST webhook notifications on screen and supports templates for alert message formatting.",
-    "issues": ["`package.json` issue: No repository field."],
-    "tags": ["web hooks", "alerts"],
+    "issues": [
+      "`package.json` issue: No repository field."
+    ],
+    "tags": [
+      "web hooks",
+      "alerts"
+    ],
     "license": "MIT",
     "image": "screenshot.jpg"
   },
@@ -13103,7 +14544,11 @@
     "maintainerURL": "",
     "description": "A Text-To-Speech module which uses the Web Speech API of the browser. It is in an early stage of development. So far only German is supported.",
     "issues": [],
-    "tags": ["text-to-speech", "tts", "webspeech"],
+    "tags": [
+      "text-to-speech",
+      "tts",
+      "webspeech"
+    ],
     "license": "MIT",
     "image": ".github-TTS.jpg"
   },
@@ -13114,8 +14559,12 @@
     "maintainer": "thyed",
     "maintainerURL": "",
     "description": "It allows you to display your kids' canceled and irregular lessons for schools using <a target=\"_blank\" href=\"https://www.untis.at\">Untis</a> software to organize school's timetables.",
-    "issues": ["`package.json` issue: No repository field."],
-    "tags": ["webuntis"],
+    "issues": [
+      "`package.json` issue: No repository field."
+    ],
+    "tags": [
+      "webuntis"
+    ],
     "license": "ISC",
     "image": "screenshot.jpg"
   },
@@ -13126,8 +14575,12 @@
     "maintainer": "Iketaki",
     "maintainerURL": "https://github.com/Iketaki",
     "description": "Embed any web pages by using a webview instead of an iframe.",
-    "issues": ["No image found."],
-    "tags": ["webview"],
+    "issues": [
+      "No image found."
+    ],
+    "tags": [
+      "webview"
+    ],
     "license": "MIT"
   },
   {
@@ -13227,7 +14680,12 @@
     "maintainerURL": "",
     "description": "Display Public Transport timetable of Vienna/Austria.",
     "issues": [],
-    "tags": ["vienna", "wien", "public transport", "öpnv"],
+    "tags": [
+      "vienna",
+      "wien",
+      "public transport",
+      "öpnv"
+    ],
     "license": "MIT",
     "image": ".github-example.jpg"
   },
@@ -13329,8 +14787,15 @@
     "maintainer": "yawnsde",
     "maintainerURL": "",
     "description": "Displays low and high water time predictions for a given tide station, derived from worldtides.info.",
-    "issues": ["No image found."],
-    "tags": ["tide", "high water", "low water", "flood"],
+    "issues": [
+      "No image found."
+    ],
+    "tags": [
+      "tide",
+      "high water",
+      "low water",
+      "flood"
+    ],
     "license": "MIT"
   },
   {
@@ -13340,8 +14805,14 @@
     "maintainer": "coderpussy",
     "maintainerURL": "",
     "description": "Have ws2812 LEDs on your mirror with <a target=\"_blank\" href=\"https://github.com/tom-2015/rpi-ws2812-server\">RPI-WS2812-Server</a>.",
-    "issues": ["No image found."],
-    "tags": ["led", "rgb", "neopixels"],
+    "issues": [
+      "No image found."
+    ],
+    "tags": [
+      "led",
+      "rgb",
+      "neopixels"
+    ],
     "license": "MIT"
   },
   {
@@ -13411,8 +14882,12 @@
     "maintainer": "mirko3000",
     "maintainerURL": "",
     "description": "Integrate temperature and humidity from your xiaomi smarthome system.",
-    "issues": ["No image found."],
-    "tags": ["wunderlist"],
+    "issues": [
+      "No image found."
+    ],
+    "tags": [
+      "wunderlist"
+    ],
     "license": "MIT"
   },
   {
@@ -13448,7 +14923,10 @@
     "maintainerURL": "https://github.com/slametps",
     "description": "Display the status of Yeelight bulbs in your local network.",
     "issues": [],
-    "tags": ["yeelight", "smarthome"],
+    "tags": [
+      "yeelight",
+      "smarthome"
+    ],
     "license": "MIT",
     "image": "others-MMM-Yeelight-screenshot-01.jpg"
   },
@@ -13486,7 +14964,9 @@
     "maintainerURL": "",
     "description": "This module reads from a YouLess energy meter in your network to display realtime energy usage information.",
     "issues": [],
-    "tags": ["youless\u001b[hmagi\u001b[c\u001b[f"],
+    "tags": [
+      "youless\u001b[hmagi\u001b[c\u001b[f"
+    ],
     "license": "MIT",
     "image": "images-module_ss_01.jpg"
   },
@@ -13498,7 +14978,9 @@
     "maintainerURL": "https://github.com/eckonator",
     "description": "This module reads from a YouLess energy meter in your network to display a gauge of realtime energy usage information. It´s a optimized fork from QNimbus first module.",
     "issues": [],
-    "tags": ["youless\u001b[hmagi\u001b[c\u001b[f"],
+    "tags": [
+      "youless\u001b[hmagi\u001b[c\u001b[f"
+    ],
     "license": "MIT",
     "image": "public-images-module_ss_01.jpg"
   },
@@ -13520,8 +15002,15 @@
     "maintainer": "ngnijland",
     "maintainerURL": "https://github.com/ngnijland",
     "description": "A module that checks if a YouTube channel if streaming. If it is, it plays the live stream.",
-    "issues": ["No image found."],
-    "tags": ["youtube", "live", "stream", "channel"],
+    "issues": [
+      "No image found."
+    ],
+    "tags": [
+      "youtube",
+      "live",
+      "stream",
+      "channel"
+    ],
     "license": "MIT"
   },
   {
@@ -13532,7 +15021,9 @@
     "maintainerURL": "https://github.com/doctorfree",
     "description": "Embed YouTube videos and playlists using the Electron webview tag rather than an iframe. May assist access to YouTube videos blocked in an iframe.",
     "issues": [],
-    "tags": ["webview"],
+    "tags": [
+      "webview"
+    ],
     "license": "MIT",
     "image": "ScreenShots-K-pop-1.jpg"
   },
@@ -13582,7 +15073,12 @@
       "`package.json` issue: license should be a valid SPDX license expression",
       "No compatible or wrong license field in 'package.json'. Without that, we can't use an image."
     ],
-    "tags": ["zaptec", "chargers", "electric", "ev"],
+    "tags": [
+      "zaptec",
+      "chargers",
+      "electric",
+      "ev"
+    ],
     "license": "GNU"
   },
   {

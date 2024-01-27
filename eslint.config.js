@@ -10,7 +10,7 @@ const config = [
     "ignores": [
       "modules/*",
       "modules_temp/*",
-      "docs/modules*.json",
+      "docs/data/modules*.json",
       "result.md"
     ]
   },
