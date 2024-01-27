@@ -1,6 +1,6 @@
 # Result of the module analysis
 
-Last update: 2024-01-27T16:30:01+01:00
+Last update: 2024-01-27T18:43:19+01:00
 
 ## Statistics
 
@@ -9,7 +9,7 @@ Last update: 2024-01-27T16:30:01+01:00
 | modules analyzed     |   1117   |
 | maintainer           |    627   |
 | modules with issues  |   1111   |
-| issues               |   7316   |
+| issues               |   7317   |
 | modules at github    |   1108   |
 | modules at gitlab    |      8   |
 | modules at bitbucket |      1   |
@@ -2266,8 +2266,8 @@ Last update: 2024-01-27T16:30:01+01:00
 1. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
 2. Information: There are updates for 3 dependencie(s):
    - @mapbox/node-pre-gyp   ^1.0.10  →   ^1.0.11
-   - @types/node           ^20.10.6  →  ^20.11.7
-   - esbuild               ^0.19.11  →  ^0.19.12
+   - @types/node           ^20.10.6  →  ^20.11.8
+   - esbuild               ^0.19.11  →   ^0.20.0
 
 
 ### [EXT-FreeboxTV by bugsounet](https://github.com/bugsounet/EXT-FreeboxTV)
@@ -3384,6 +3384,9 @@ Last update: 2024-01-27T16:30:01+01:00
 ### [MMM-Growatt by mumblebaj](https://github.com/mumblebaj/MMM-Growatt)
 
 1. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
+2. Information: There are updates for 1 dependencie(s):
+   - growatt  ^0.7.1  →  ^0.7.2
+
 
 ### [MMM-Growatt by dekinet](https://github.com/dekinet/MMM-Growatt)
 
@@ -3398,6 +3401,9 @@ Last update: 2024-01-27T16:30:01+01:00
 ### [MMM-Growatt-Stats by mumblebaj](https://github.com/mumblebaj/MMM-Growatt-Stats)
 
 1. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
+2. Information: There are updates for 1 dependencie(s):
+   - growatt  ^0.7.1  →  ^0.7.2
+
 
 ### [MMM-GyeonggiBus by iceship](https://github.com/iceship/MMM-GyeonggiBus)
 
@@ -5731,8 +5737,7 @@ Last update: 2024-01-27T16:30:01+01:00
 
 ### [MMM-MTG by crisvdn](https://github.com/crisvdn/MMM-MTG)
 
-1. There is no `package.json`. We need this file to gather information about the module for the module list page.
-2. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
+1. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
 
 ### [MMM-Multimonth by BKeyport](https://github.com/BKeyport/MMM-Multimonth)
 

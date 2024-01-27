@@ -4782,7 +4782,7 @@
     "maintainer": "mumblebaj",
     "maintainerURL": "https://github.com/mumblebaj",
     "description": "Display data from Growatt Inveter. Support multiple Growatt Inverter types.",
-    "issues": 1,
+    "issues": 2,
     "tags": [
       "growatt"
     ],
@@ -4808,7 +4808,7 @@
     "maintainer": "mumblebaj",
     "maintainerURL": "https://github.com/mumblebaj",
     "description": "Display status data from Growatt Inveter. Support multiple Growatt Inverter types. Made to work in conjunction with <a target=\"_blank\" href=\"https://github.com/mumblebaj/MMM-Growatt\">MMM-Growatt</a> or independently.",
-    "issues": 1,
+    "issues": 2,
     "tags": [
       "growatt"
     ],
@@ -7713,8 +7713,14 @@
     "maintainer": "crisvdn",
     "maintainerURL": "https://github.com/crisvdn",
     "description": "Fetches a random MTG card on a configured interval and displays this.",
-    "issues": 2,
-    "lastCommit": "2024-01-27T11:09:51+01:00"
+    "issues": 1,
+    "tags": [
+      "mtg",
+      "scryfall"
+    ],
+    "license": "MIT",
+    "image": "images-example.jpg",
+    "lastCommit": "2024-01-27T18:22:59+01:00"
   },
   {
     "name": "MMM-Multimonth",
