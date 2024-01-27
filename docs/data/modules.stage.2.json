@@ -1054,11 +1054,12 @@
     "maintainer": "jalibu",
     "maintainerURL": "https://github.com/jalibu/MMM-BoschSmartHome",
     "description": "A client interface for the Bosch Smart Home System. Supports rooms, Window/Door contacts, Room Climate Controls, Thermostats, Twinguards, Visualization of Temperature, Humidity and Purity, Bosch Home Connect Dishwashers, Philips Hue Bridge.",
-    "issues": [
-      "There are no keywords in 'package.json'. We would use them as tags on the module list page.",
-      "No image found."
+    "issues": [],
+    "tags": [
+      "bosch smart home"
     ],
-    "license": "MIT"
+    "license": "MIT",
+    "image": "screenshot.jpg"
   },
   {
     "name": "MMM-Bose-Soundtouch",

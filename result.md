@@ -1,6 +1,6 @@
 # Result of the module analysis
 
-Last update: 2024-01-27T18:43:19+01:00
+Last update: 2024-01-27T23:36:20+01:00
 
 ## Statistics
 
@@ -8,8 +8,8 @@ Last update: 2024-01-27T18:43:19+01:00
 |:---------------------|:--------:|
 | modules analyzed     |   1117   |
 | maintainer           |    627   |
-| modules with issues  |   1111   |
-| issues               |   7317   |
+| modules with issues  |   1112   |
+| issues               |   7325   |
 | modules at github    |   1108   |
 | modules at gitlab    |      8   |
 | modules at bitbucket |      1   |
@@ -752,10 +752,14 @@ Last update: 2024-01-27T18:43:19+01:00
 
 ### [MMM-BoschSmartHome by jalibu](https://github.com/jalibu/MMM-BoschSmartHome)
 
-1. There are no keywords in 'package.json'. We would use them as tags on the module list page.
-2. No image found.
-3. Typo: Found `Magic Mirror` in file `README.md`: Replace it with `MagicMirror²`.
-4. Recommendation: Replace eslintrc by new flat config.
+1. Recommendation: Replace eslintrc by new flat config.
+2. Information: There are updates for 5 dependencie(s):
+   - @stylistic/eslint-plugin      ^1.5.3  →    ^1.5.4
+   - @types/express              ^4.17.11  →  ^4.17.21
+   - @types/magicmirror-module    ^2.16.0  →   ^2.16.5
+   - @types/node                ^14.14.22  →  ^20.11.8
+   - rxjs                          ^7.5.5  →    ^7.8.1
+
 
 ### [MMM-Bose-Soundtouch by spoturdeal](https://github.com/spoturdeal/MMM-Bose-Soundtouch)
 
@@ -3301,10 +3305,11 @@ Last update: 2024-01-27T18:43:19+01:00
 1. Outdated: Found `MichMich/MagicMirror` in file `node.yml`: Replace it by `MagicMirrorOrg/MagicMirror`.
 2. Typo: Found `Magic Mirror` in file `CONTRIBUTING.md`: Replace it with `MagicMirror²`.
 3. Outdated: Found `MichMich/MagicMirror` in file `README.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
-4. Recommendation: Found `axios` in file `GoogleTaskService.ts`: Replace it with built-in fetch.
-5. Recommendation: Found `new Date()` in file `Display.ts`: Replace it by `new Date(Date.now())`: [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
-6. Recommendation: Found `axios` in file `node_helper.ts`: Replace it with built-in fetch.
-7. Recommendation: Replace eslintrc by new flat config.
+4. Outdated: Found `husky install` in file `package.json`: Since husky v9 you may not need this anymore.
+5. Recommendation: Found `axios` in file `GoogleTaskService.ts`: Replace it with built-in fetch.
+6. Recommendation: Found `new Date()` in file `Display.ts`: Replace it by `new Date(Date.now())`: [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
+7. Recommendation: Found `axios` in file `node_helper.ts`: Replace it with built-in fetch.
+8. Recommendation: Replace eslintrc by new flat config.
 
 ### [MMM-GoogleTrafficTimes by pjestico](https://github.com/pjestico/MMM-GoogleTrafficTimes)
 
@@ -4748,10 +4753,11 @@ Last update: 2024-01-27T18:43:19+01:00
 5. Deprecated: Found `stylelint-config-prettier` in file `package.json`: Update `stylelint` and remove `stylelint-config-prettier`.
 6. Recommendation: Found `"node-fetch"` in file `package.json`: Replace it with built-in fetch.
 7. Outdated: Found `MichMich/MagicMirror` in file `package.json`: Replace it by `MagicMirrorOrg/MagicMirror`.
-8. Typo: Found `Magic Mirror` in file `MMM-Lunartic.js`: Replace it with `MagicMirror²`.
-9. Recommendation: Found `new Date()` in file `MMM-Lunartic.js`: Replace it by `new Date(Date.now())`: [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
-10. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
-11. The branch name is 'master'. Consider renaming it to 'main'.
+8. Outdated: Found `husky install` in file `package.json`: Since husky v9 you may not need this anymore.
+9. Typo: Found `Magic Mirror` in file `MMM-Lunartic.js`: Replace it with `MagicMirror²`.
+10. Recommendation: Found `new Date()` in file `MMM-Lunartic.js`: Replace it by `new Date(Date.now())`: [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
+11. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
+12. The branch name is 'master'. Consider renaming it to 'main'.
 
 ### [MMM-Luxembourg-Public-Transport by MarinescuEvghenii](https://github.com/MarinescuEvghenii/MMM-Luxembourg-Public-Transport)
 
@@ -5178,15 +5184,17 @@ Last update: 2024-01-27T18:43:19+01:00
 
 1. `package.json` issue: No repository field.
 2. Recommendation: Module name doesn't follow the recommended pattern (it doesn't start with `MMM-`). Consider renaming your module.
-3. Typo: Found `Magic Mirror` in file `README.md`: Replace it with `MagicMirror²`.
-4. Typo: Found `Magic Mirror` in file `mmm-amazon-photos.js`: Replace it with `MagicMirror²`.
-5. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
-6. Recommendation: Found `axios` in file `node_helper.js`: Replace it with built-in fetch.
-7. Outdated: Found `MichMich/MagicMirror` in file `node_helper.js`: Replace it by `MagicMirrorOrg/MagicMirror`.
-8. Typo: Found `Magic Mirror` in file `package.json`: Replace it with `MagicMirror²`.
-9. Recommendation: Found `axios` in file `package.json`: Replace it with built-in fetch.
-10. Warning: No LICENSE file.
-11. Recommendation: Replace eslintrc by new flat config.
+3. Outdated: Found `/_/husky.sh` in file `pre-commit`: Since husky v9 you may not need this anymore.
+4. Typo: Found `Magic Mirror` in file `README.md`: Replace it with `MagicMirror²`.
+5. Typo: Found `Magic Mirror` in file `mmm-amazon-photos.js`: Replace it with `MagicMirror²`.
+6. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
+7. Recommendation: Found `axios` in file `node_helper.js`: Replace it with built-in fetch.
+8. Outdated: Found `MichMich/MagicMirror` in file `node_helper.js`: Replace it by `MagicMirrorOrg/MagicMirror`.
+9. Typo: Found `Magic Mirror` in file `package.json`: Replace it with `MagicMirror²`.
+10. Recommendation: Found `axios` in file `package.json`: Replace it with built-in fetch.
+11. Outdated: Found `husky install` in file `package.json`: Since husky v9 you may not need this anymore.
+12. Warning: No LICENSE file.
+13. Recommendation: Replace eslintrc by new flat config.
 
 ### [mmm-dropbox by michael5r](https://github.com/michael5r/mmm-dropbox)
 
@@ -7538,11 +7546,13 @@ Last update: 2024-01-27T18:43:19+01:00
 ### [MMM-PrometheusAlerts by spydersoft-consulting](https://github.com/spydersoft-consulting/MMM-PrometheusAlerts)
 
 1. Outdated: Found `MichMich/MagicMirror` in file `node.js.yml`: Replace it by `MagicMirrorOrg/MagicMirror`.
-2. Typo: Found `Magic Mirror` in file `CONTRIBUTING.md`: Replace it with `MagicMirror²`.
-3. Recommendation: Found `"node-fetch"` in file `package.json`: Replace it with built-in fetch.
-4. Recommendation: Found `"node-fetch"` in file `PrometheusService.test.ts`: Replace it with built-in fetch.
-5. Recommendation: Found `"node-fetch"` in file `PrometheusService.ts`: Replace it with built-in fetch.
-6. Recommendation: Replace eslintrc by new flat config.
+2. Outdated: Found `/_/husky.sh` in file `pre-commit`: Since husky v9 you may not need this anymore.
+3. Typo: Found `Magic Mirror` in file `CONTRIBUTING.md`: Replace it with `MagicMirror²`.
+4. Recommendation: Found `"node-fetch"` in file `package.json`: Replace it with built-in fetch.
+5. Outdated: Found `husky install` in file `package.json`: Since husky v9 you may not need this anymore.
+6. Recommendation: Found `"node-fetch"` in file `PrometheusService.test.ts`: Replace it with built-in fetch.
+7. Recommendation: Found `"node-fetch"` in file `PrometheusService.ts`: Replace it with built-in fetch.
+8. Recommendation: Replace eslintrc by new flat config.
 
 ### [MMM-Property-managed by stewartmckee](https://github.com/stewartmckee/MMM-Property-managed)
 
@@ -7573,6 +7583,11 @@ Last update: 2024-01-27T18:43:19+01:00
 3. Recommendation: Found `"eslint-plugin-json"` in file `package.json`: Replace it by `eslint-plugin-jsonc`.
 4. Recommendation: Replace eslintrc by new flat config.
 5. The branch name is 'master'. Consider renaming it to 'main'.
+
+### [MMM-PublicTransportHafas by KristjanESPERANTO](https://github.com/KristjanESPERANTO/MMM-PublicTransportHafas)
+
+1. Outdated: Found `/_/husky.sh` in file `pre-commit`: Since husky v9 you may not need this anymore.
+2. Outdated: Found `husky install` in file `package.json`: Since husky v9 you may not need this anymore.
 
 ### [MMM-PublicTransportVVO by ChristianGeie](https://github.com/ChristianGeie/MMM-PublicTransportVVO)
 
@@ -8937,11 +8952,13 @@ Last update: 2024-01-27T18:43:19+01:00
 ### [MMM-StatusPageIo by spydersoft-consulting](https://github.com/spydersoft-consulting/MMM-StatusPageIo)
 
 1. Outdated: Found `MichMich/MagicMirror` in file `node.js.yml`: Replace it by `MagicMirrorOrg/MagicMirror`.
-2. Typo: Found `Magic Mirror` in file `CONTRIBUTING.md`: Replace it with `MagicMirror²`.
-3. Recommendation: Found `"node-fetch"` in file `package.json`: Replace it with built-in fetch.
-4. Recommendation: Found `"node-fetch"` in file `StatusPageService.test.ts`: Replace it with built-in fetch.
-5. Recommendation: Found `"node-fetch"` in file `StatusPageService.ts`: Replace it with built-in fetch.
-6. Recommendation: Replace eslintrc by new flat config.
+2. Outdated: Found `/_/husky.sh` in file `pre-commit`: Since husky v9 you may not need this anymore.
+3. Typo: Found `Magic Mirror` in file `CONTRIBUTING.md`: Replace it with `MagicMirror²`.
+4. Recommendation: Found `"node-fetch"` in file `package.json`: Replace it with built-in fetch.
+5. Outdated: Found `husky install` in file `package.json`: Since husky v9 you may not need this anymore.
+6. Recommendation: Found `"node-fetch"` in file `StatusPageService.test.ts`: Replace it with built-in fetch.
+7. Recommendation: Found `"node-fetch"` in file `StatusPageService.ts`: Replace it with built-in fetch.
+8. Recommendation: Replace eslintrc by new flat config.
 
 ### [MMM-SteamPlaytime by buxxi](https://github.com/buxxi/MMM-SteamPlaytime)
 
