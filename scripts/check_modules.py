@@ -166,6 +166,14 @@ def check_modules():
             "name": "Replace it by `MagicMirrorOrg/MagicMirror`.",
             "category": "Outdated",
         },
+        "/_/husky.sh": {
+            "name": "Since husky v9 you may not need this anymore.",
+            "category": "Outdated",
+        },
+        "husky install": {
+            "name": "Since husky v9 you may not need this anymore.",
+            "category": "Outdated",
+        },
     }
 
     modules_json_file = open("./docs/data/modules.stage.2.json", encoding="utf-8")

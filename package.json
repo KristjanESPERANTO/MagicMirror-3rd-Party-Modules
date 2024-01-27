@@ -47,7 +47,7 @@
     "ownList": "rm -rf modules & node create_own_module_list.js && npm run getModules && npm run expandModuleList && npm run checkModules",
     "lint": "eslint . && stylelint **/docs/*.css && markdownlint README.md && prettier --check .",
     "lint:fix": "eslint . --fix && stylelint **/docs/*.css --fix && markdownlint README.md --fix && prettier . --write",
-    "prepare": "husky install",
+    "prepare": "husky",
     "test": "npm run lint",
     "updateGitHubData": "node scripts/updateGitHubApiData.js",
     "leaveMenu": ""
@@ -62,7 +62,7 @@
       "ownList": "Test only defined modules. See README.",
       "lint": "Check this repository for linter and formatting problems.",
       "lint:fix": "Fix automatically fixable linter or formatting problems of this repository.",
-      "prepare": "husky install",
+      "prepare": "husky",
       "updateGitHubData": "ATTENTION: NOT READY YET! Update the json file that collects the GitHub information of the modules.",
       "leaveMenu": "Leave this menu."
     }
