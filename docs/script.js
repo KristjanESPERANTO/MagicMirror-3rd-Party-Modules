@@ -1,5 +1,6 @@
 let allModules = [];
 let filteredModuleList = [];
+const cardTemplate = document.getElementById("card-template");
 const resetButton = document.getElementById("reset-button");
 const moduleCardContainer = document.getElementById("module-container");
 const searchInput = document.getElementById("search-input");
@@ -8,51 +9,46 @@ const sortDropdown = document.getElementById("sort-dropdown");
 const showOutdated = document.getElementById("show-outdated");
 
 function createCard (moduleData) {
-  const card = document.createElement("div");
-  card.className = "card";
-  card.innerHTML = `
-              <div class="card-header">
-                <a href="${moduleData.url}" target="_blank">${moduleData.name}</a>
-                <div class="maintainer">maintained by ${moduleData.maintainer}</div>
-                <div class="last-commit">last commit: ${moduleData.lastCommit.split("T")[0]}</div>
-              </div>
-            `;
-  if (moduleData.issues > 0) {
+  const card = document.importNode(cardTemplate.content, true);
+  card.querySelector(".name").href = moduleData.url;
+  card.querySelector(".name").textContent = moduleData.name;
+  card.querySelector(".maintainer").textContent = `maintained by ${moduleData.maintainer}`;
+  card.querySelector(".last-commit").textContent = `last commit: ${moduleData.lastCommit.split("T")[0]}`;
+
+  if (moduleData.issues > 0 && !(moduleData.maintainer === "KristjanESPERANTO" && moduleData.issues === 1)) {
     // To reduce imbalance in the default sort order, modules from KristjanESPERANTO get a fake-issue (look at the check_modules.py). This condition is here to avoid displaying the div incorrectly.
-    if (!(moduleData.maintainer === "KristjanESPERANTO" && moduleData.issues === 1)) {
-      const url = `https://github.com/KristjanESPERANTO/MagicMirror-3rd-Party-Modules/blob/main/result.md#${moduleData.name}-by-${moduleData.maintainer}`;
-      card.innerHTML += `<div class="issues"><a target="_blank" href="${url}">🗈</a></div>`;
-    }
+    const url = `https://github.com/KristjanESPERANTO/MagicMirror-3rd-Party-Modules/blob/main/result.md#${moduleData.name}-by-${moduleData.maintainer}`;
+    card.querySelector(".issues a").href = url;
+  } else {
+    card.querySelector(".issues").remove();
   }
 
   if (moduleData.image) {
     const imagePath = `./images/${moduleData.name}---${moduleData.maintainer}---${moduleData.image}`;
-    card.innerHTML += `
-      <div class="card-image-container">
-        <img src="${imagePath}" alt="Image">
-        <div class="card-image-license-info">Image from the repository. ©${moduleData.license}</div>
-      </div>
-        `;
+    card.querySelector(".card-image-container img").src = imagePath;
+    card.querySelector(".card-image-license-info").textContent = `Image from the repository. ©${moduleData.license}`;
+  } else {
+    card.querySelector(".card-image-container").remove();
   }
 
   if (moduleData.outdated) {
-    card.className += " outdated";
-    card.innerHTML += `
-      <p><b>⚠ This module is outdated:</b> ${moduleData.outdated}</p>
-      <hr>
-      `;
+    card.querySelector(".card").classList.add("outdated");
+    card.querySelector(".outdated-note").innerHTML = moduleData.outdated;
+  } else {
+    card.querySelector(".outdated-note").remove();
   }
 
-  card.innerHTML += `
-        <p>${moduleData.description}</p>
-        `;
+  card.querySelector(".description").innerHTML = moduleData.description;
+
   if (moduleData.tags) {
-    card.innerHTML += `
-                <p><b>Tags:</b> ${moduleData.tags
-    .map((tag) => `#${tag}`)
-    .join(" ")}</p>
-              `;
+    const tagsString = `${moduleData.tags
+      .map((tag) => `#${tag}`)
+      .join(" ")}`;
+    card.querySelector(".tags").textContent = tagsString;
+  } else {
+    card.querySelector(".tags").remove();
   }
+
   moduleCardContainer.appendChild(card);
 }
 

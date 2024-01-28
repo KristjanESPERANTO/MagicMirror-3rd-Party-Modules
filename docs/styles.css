@@ -198,6 +198,33 @@ main {
   border-radius: 5px;
 }
 
+.description {
+  padding: 0.5em 0;
+}
+
+.tags {
+  padding: 0.5em 0;
+}
+
+.tags::before {
+  content: "Tags: ";
+  font-weight: bold;
+}
+
+.outdated-note {
+  border: solid;
+  border-radius: 5px;
+  padding: 1em;
+  text-align: center;
+}
+
+.outdated-note::before {
+  content: "⚠ This module is outdated! ⚠";
+  display: block;
+  font-weight: bold;
+  text-align: center;
+}
+
 /* Give some tags an emoji */
 [data-tag]::before {
   padding-right: 0.3em;
