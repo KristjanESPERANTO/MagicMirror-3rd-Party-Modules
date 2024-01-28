@@ -7,6 +7,55 @@ const tagButtonContainer = document.getElementById("tag-buttons");
 const sortDropdown = document.getElementById("sort-dropdown");
 const showOutdated = document.getElementById("show-outdated");
 
+function createCard (moduleData) {
+  const card = document.createElement("div");
+  card.className = "card";
+  card.innerHTML = `
+              <div class="card-header">
+                <a href="${moduleData.url}" target="_blank">${moduleData.name}</a>
+                <div class="maintainer">maintained by ${moduleData.maintainer}</div>
+                <div class="last-commit">last commit: ${moduleData.lastCommit.split("T")[0]}</div>
+              </div>
+            `;
+  if (moduleData.issues > 0) {
+    // To reduce imbalance in the default sort order, modules from KristjanESPERANTO get a fake-issue (look at the check_modules.py). This condition is here to avoid displaying the div incorrectly.
+    if (!(moduleData.maintainer === "KristjanESPERANTO" && moduleData.issues === 1)) {
+      const url = `https://github.com/KristjanESPERANTO/MagicMirror-3rd-Party-Modules/blob/main/result.md#${moduleData.name}-by-${moduleData.maintainer}`;
+      card.innerHTML += `<div class="issues"><a target="_blank" href="${url}">🗈</a></div>`;
+    }
+  }
+
+  if (moduleData.image) {
+    const imagePath = `./images/${moduleData.name}---${moduleData.maintainer}---${moduleData.image}`;
+    card.innerHTML += `
+      <div class="card-image-container">
+        <img src="${imagePath}" alt="Image">
+        <div class="card-image-license-info">Image from the repository. ©${moduleData.license}</div>
+      </div>
+        `;
+  }
+
+  if (moduleData.outdated) {
+    card.className += " outdated";
+    card.innerHTML += `
+      <p><b>⚠ This module is outdated:</b> ${moduleData.outdated}</p>
+      <hr>
+      `;
+  }
+
+  card.innerHTML += `
+        <p>${moduleData.description}</p>
+        `;
+  if (moduleData.tags) {
+    card.innerHTML += `
+                <p><b>Tags:</b> ${moduleData.tags
+    .map((tag) => `#${tag}`)
+    .join(" ")}</p>
+              `;
+  }
+  moduleCardContainer.appendChild(card);
+}
+
 function updateModuleCardContainer () {
   moduleCardContainer.innerHTML = "";
 
@@ -14,52 +63,7 @@ function updateModuleCardContainer () {
 
   filteredModuleList.forEach((moduleData) => {
     if (!moduleData.outdated || showOutdated.checked) {
-      const card = document.createElement("div");
-      card.className = "card";
-      card.innerHTML = `
-              <div class="card-header">
-                <a href="${moduleData.url}" target="_blank">${moduleData.name}</a>
-                <div class="maintainer">maintained by ${moduleData.maintainer}</div>
-                <div class="last-commit">last commit: ${moduleData.lastCommit.split("T")[0]}</div>
-              </div>
-            `;
-      if (moduleData.issues > 0) {
-        // To reduce imbalance in the default sort order, modules from KristjanESPERANTO get a fake-issue (look at the check_modules.py). This condition is here to avoid displaying the div incorrectly.
-        if (!(moduleData.maintainer === "KristjanESPERANTO" && moduleData.issues === 1)) {
-          const url = `https://github.com/KristjanESPERANTO/MagicMirror-3rd-Party-Modules/blob/main/result.md#${moduleData.name}-by-${moduleData.maintainer}`;
-          card.innerHTML += `<div class="issues"><a target="_blank" href="${url}">🗈</a></div>`;
-        }
-      }
-
-      if (moduleData.image) {
-        const imagePath = `./images/${moduleData.name}---${moduleData.maintainer}---${moduleData.image}`;
-        card.innerHTML += `
-      <div class="card-image-container">
-        <img src="${imagePath}" alt="Image">
-        <div class="card-image-license-info">Image from the repository. ©${moduleData.license}</div>
-      </div>
-        `;
-      }
-
-      if (moduleData.outdated) {
-        card.className += " outdated";
-        card.innerHTML += `
-      <p><b>⚠ This module is outdated:</b> ${moduleData.outdated}</p>
-      <hr>
-      `;
-      }
-
-      card.innerHTML += `
-        <p>${moduleData.description}</p>
-        `;
-      if (moduleData.tags) {
-        card.innerHTML += `
-                <p><b>Tags:</b> ${moduleData.tags
-    .map((tag) => `#${tag}`)
-    .join(" ")}</p>
-              `;
-      }
-      moduleCardContainer.appendChild(card);
+      createCard(moduleData);
     } else {
       moduleCounter -= 1;
     }
