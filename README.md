@@ -109,7 +109,6 @@ How can you use it?
 
 ## Ideas / To do
 
-- Use [HTML template](https://www.w3schools.com/tags/tag_template.asp) for cards
 - Long-term goal: The website functions like an app store. The user only has to click on an install button and the module is installed and a basic configuration is inserted.
   - bugsounet did this for MMM-GoogleAssistant: <https://wiki.bugsounet.fr/MMM-GoogleAssistant/website>
 - Move ideas/todos to GitHub Issues and add proper tags.

@@ -4877,11 +4877,12 @@
     "maintainer": "hermanho",
     "maintainerURL": "https://github.com/hermanho",
     "description": "Image gallery or wallpaper with your Google Photos account.",
-    "issues": [
-      "There are no keywords in 'package.json'. We would use them as tags on the module list page."
+    "issues": [],
+    "tags": [
+      "googlephotos"
     ],
     "license": "MIT",
-    "image": "PublishAppScreen.jpg"
+    "image": "images-screenshot.jpg"
   },
   {
     "name": "MMM-GoogleSheets",
@@ -9506,7 +9507,8 @@
     "description": "Display current and forecast weather based on the Openweathermap OneCall API data with alternative formatting.",
     "issues": [],
     "tags": [
-      "weather"
+      "weather",
+      "openweathermap"
     ],
     "license": "MIT",
     "image": "OneCallWeather-Screenshot.jpg"
@@ -9518,11 +9520,12 @@
     "maintainer": "hermanho",
     "maintainerURL": "https://github.com/hermanho",
     "description": "Display your photos from Microsoft OneDrive.",
-    "issues": [
-      "There are no keywords in 'package.json'. We would use them as tags on the module list page."
+    "issues": [],
+    "tags": [
+      "onedrive"
     ],
     "license": "MIT",
-    "image": "images-authorize.jpg"
+    "image": "images-screenshot.jpg"
   },
   {
     "name": "MMM-OneTouchReveal",

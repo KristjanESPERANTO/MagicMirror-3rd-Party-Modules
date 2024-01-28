@@ -3244,7 +3244,7 @@
     ],
     "license": "MIT",
     "image": "example.jpg",
-    "lastCommit": "2024-01-03T16:31:49+01:00"
+    "lastCommit": "2024-01-28T17:28:50+01:00"
   },
   {
     "name": "EXT-Photos",
@@ -4621,10 +4621,13 @@
     "maintainer": "hermanho",
     "maintainerURL": "https://github.com/hermanho",
     "description": "Image gallery or wallpaper with your Google Photos account.",
-    "issues": 10,
+    "issues": 7,
+    "tags": [
+      "googlephotos"
+    ],
     "license": "MIT",
-    "image": "PublishAppScreen.jpg",
-    "lastCommit": "2024-01-09T06:01:51+00:00"
+    "image": "images-screenshot.jpg",
+    "lastCommit": "2024-01-28T14:56:12+00:00"
   },
   {
     "name": "MMM-GoogleSheets",
@@ -8979,11 +8982,12 @@
     "description": "Display current and forecast weather based on the Openweathermap OneCall API data with alternative formatting.",
     "issues": 1,
     "tags": [
-      "weather"
+      "weather",
+      "openweathermap"
     ],
     "license": "MIT",
     "image": "OneCallWeather-Screenshot.jpg",
-    "lastCommit": "2024-01-01T23:18:13+01:00"
+    "lastCommit": "2024-01-28T13:45:18+01:00"
   },
   {
     "name": "MMM-OneDrive",
@@ -8992,10 +8996,13 @@
     "maintainer": "hermanho",
     "maintainerURL": "https://github.com/hermanho",
     "description": "Display your photos from Microsoft OneDrive.",
-    "issues": 6,
+    "issues": 4,
+    "tags": [
+      "onedrive"
+    ],
     "license": "MIT",
-    "image": "images-authorize.jpg",
-    "lastCommit": "2024-01-26T13:00:18+00:00"
+    "image": "images-screenshot.jpg",
+    "lastCommit": "2024-01-28T14:55:57+00:00"
   },
   {
     "name": "MMM-OneTouchReveal",

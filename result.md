@@ -1,6 +1,6 @@
 # Result of the module analysis
 
-Last update: 2024-01-27T23:36:20+01:00
+Last update: 2024-01-28T22:54:58+01:00
 
 ## Statistics
 
@@ -9,7 +9,7 @@ Last update: 2024-01-27T23:36:20+01:00
 | modules analyzed     |   1117   |
 | maintainer           |    627   |
 | modules with issues  |   1112   |
-| issues               |   7325   |
+| issues               |   7320   |
 | modules at github    |   1108   |
 | modules at gitlab    |      8   |
 | modules at bitbucket |      1   |
@@ -754,11 +754,11 @@ Last update: 2024-01-27T23:36:20+01:00
 
 1. Recommendation: Replace eslintrc by new flat config.
 2. Information: There are updates for 5 dependencie(s):
-   - @stylistic/eslint-plugin      ^1.5.3  →    ^1.5.4
-   - @types/express              ^4.17.11  →  ^4.17.21
-   - @types/magicmirror-module    ^2.16.0  →   ^2.16.5
-   - @types/node                ^14.14.22  →  ^20.11.8
-   - rxjs                          ^7.5.5  →    ^7.8.1
+   - @stylistic/eslint-plugin      ^1.5.3  →     ^1.5.4
+   - @types/express              ^4.17.11  →   ^4.17.21
+   - @types/magicmirror-module    ^2.16.0  →    ^2.16.5
+   - @types/node                ^14.14.22  →  ^20.11.10
+   - rxjs                          ^7.5.5  →     ^7.8.1
 
 
 ### [MMM-Bose-Soundtouch by spoturdeal](https://github.com/spoturdeal/MMM-Bose-Soundtouch)
@@ -2269,9 +2269,9 @@ Last update: 2024-01-27T23:36:20+01:00
 
 1. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
 2. Information: There are updates for 3 dependencie(s):
-   - @mapbox/node-pre-gyp   ^1.0.10  →   ^1.0.11
-   - @types/node           ^20.10.6  →  ^20.11.8
-   - esbuild               ^0.19.11  →   ^0.20.0
+   - @mapbox/node-pre-gyp   ^1.0.10  →    ^1.0.11
+   - @types/node           ^20.10.6  →  ^20.11.10
+   - esbuild               ^0.19.11  →    ^0.20.0
 
 
 ### [EXT-FreeboxTV by bugsounet](https://github.com/bugsounet/EXT-FreeboxTV)
@@ -3272,16 +3272,13 @@ Last update: 2024-01-27T23:36:20+01:00
 
 ### [MMM-GooglePhotos by hermanho](https://github.com/hermanho/MMM-GooglePhotos)
 
-1. There are no keywords in 'package.json'. We would use them as tags on the module list page.
-2. Recommendation: Found `axios` in file `GPhotos.js`: Replace it with built-in fetch.
-3. Deprecated: Found ` electron-rebuild` in file `INSTALL.md`: Replace it with `@electron/rebuild`
-4. Recommendation: Found `new Date()` in file `MMM-GooglePhotos.js`: Replace it by `new Date(Date.now())`: [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
-5. Recommendation: Found `axios` in file `error_to_string.js`: Replace it with built-in fetch.
-6. Recommendation: Found `XMLHttpRequest` in file `error_to_string.js`: Replace it with built-in fetch.
-7. Deprecated: Found `"electron-rebuild"` in file `package.json`: Replace it with `@electron/rebuild`
-8. Recommendation: Found `axios` in file `package.json`: Replace it with built-in fetch.
-9. Recommendation: Replace eslintrc by new flat config.
-10. The branch name is 'master'. Consider renaming it to 'main'.
+1. Recommendation: Found `axios` in file `GPhotos.js`: Replace it with built-in fetch.
+2. Recommendation: Found `new Date()` in file `MMM-GooglePhotos.js`: Replace it by `new Date(Date.now())`: [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
+3. Recommendation: Found `axios` in file `error_to_string.js`: Replace it with built-in fetch.
+4. Recommendation: Found `XMLHttpRequest` in file `error_to_string.js`: Replace it with built-in fetch.
+5. Recommendation: Found `axios` in file `package.json`: Replace it with built-in fetch.
+6. Recommendation: Replace eslintrc by new flat config.
+7. The branch name is 'master'. Consider renaming it to 'main'.
 
 ### [MMM-GoogleSheets by ryan-d-williams](https://github.com/ryan-d-williams/MMM-GoogleSheets)
 
@@ -6687,12 +6684,10 @@ Last update: 2024-01-27T23:36:20+01:00
 
 ### [MMM-OneDrive by hermanho](https://github.com/hermanho/MMM-OneDrive)
 
-1. There are no keywords in 'package.json'. We would use them as tags on the module list page.
-2. Recommendation: Found `new Date()` in file `MMM-OneDrive.js`: Replace it by `new Date(Date.now())`: [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
-3. Recommendation: Found `XMLHttpRequest` in file `error_to_string.js`: Replace it with built-in fetch.
-4. Recommendation: Found `new Date()` in file `node_helper.js`: Replace it by `new Date(Date.now())`: [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
-5. Deprecated: Found `"electron-rebuild"` in file `package.json`: Replace it with `@electron/rebuild`
-6. Recommendation: Replace eslintrc by new flat config.
+1. Recommendation: Found `new Date()` in file `MMM-OneDrive.js`: Replace it by `new Date(Date.now())`: [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
+2. Recommendation: Found `XMLHttpRequest` in file `error_to_string.js`: Replace it with built-in fetch.
+3. Recommendation: Found `new Date()` in file `node_helper.js`: Replace it by `new Date(Date.now())`: [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
+4. Recommendation: Replace eslintrc by new flat config.
 
 ### [MMM-OneTouchReveal by Canonip](https://github.com/Canonip/MMM-OneTouchReveal)
 
