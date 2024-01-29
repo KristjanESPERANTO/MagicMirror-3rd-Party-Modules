@@ -1,6 +1,6 @@
 # Result of the module analysis
 
-Last update: 2024-01-28T22:54:58+01:00
+Last update: 2024-01-29T20:04:51+01:00
 
 ## Statistics
 
@@ -9,7 +9,7 @@ Last update: 2024-01-28T22:54:58+01:00
 | modules analyzed     |   1117   |
 | maintainer           |    627   |
 | modules with issues  |   1112   |
-| issues               |   7320   |
+| issues               |   7323   |
 | modules at github    |   1108   |
 | modules at gitlab    |      8   |
 | modules at bitbucket |      1   |
@@ -753,12 +753,14 @@ Last update: 2024-01-28T22:54:58+01:00
 ### [MMM-BoschSmartHome by jalibu](https://github.com/jalibu/MMM-BoschSmartHome)
 
 1. Recommendation: Replace eslintrc by new flat config.
-2. Information: There are updates for 5 dependencie(s):
-   - @stylistic/eslint-plugin      ^1.5.3  →     ^1.5.4
-   - @types/express              ^4.17.11  →   ^4.17.21
-   - @types/magicmirror-module    ^2.16.0  →    ^2.16.5
-   - @types/node                ^14.14.22  →  ^20.11.10
-   - rxjs                          ^7.5.5  →     ^7.8.1
+2. Information: There are updates for 7 dependencie(s):
+   - @stylistic/eslint-plugin             ^1.5.3  →     ^1.5.4
+   - @types/express                     ^4.17.11  →   ^4.17.21
+   - @types/magicmirror-module           ^2.16.0  →    ^2.16.5
+   - @types/node                       ^14.14.22  →  ^20.11.10
+   - @typescript-eslint/eslint-plugin    ^6.19.1  →    ^6.20.0
+   - @typescript-eslint/parser           ^6.19.1  →    ^6.20.0
+   - rxjs                                 ^7.5.5  →     ^7.8.1
 
 
 ### [MMM-Bose-Soundtouch by spoturdeal](https://github.com/spoturdeal/MMM-Bose-Soundtouch)
@@ -3160,7 +3162,7 @@ Last update: 2024-01-28T22:54:58+01:00
 
 ### [MMM-GoogleAssistant by bugsounet](https://github.com/bugsounet/MMM-GoogleAssistant)
 
-1. Recommendation: Found `require("http")` in file `Middleware.js`: Replace "http" by "node:http".
+1. Recommendation: Found `require("http")` in file `website.js`: Replace "http" by "node:http".
 2. Deprecated: Found `"grunt"` in file `fa-brands-400.svg`: Grunt is practically unmaintained. Move on to something better.
 3. Recommendation: Found `XMLHttpRequest` in file `jquery.min.js`: Replace it with built-in fetch.
 4. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
@@ -3479,6 +3481,7 @@ Last update: 2024-01-28T22:54:58+01:00
 
 ### [Hello-Lucy by mykle1](https://github.com/mykle1/Hello-Lucy)
 
+0. This module is outdated: Abandoned. No reactions to issues since years. The installation instructions do not work with up-to-date systems.
 1. Recommendation: Module name doesn't follow the recommended pattern (it doesn't start with `MMM-`). Consider renaming your module.
 2. Recommendation: Found `XMLHttpRequest` in file `Hello-Lucy.js`: Replace it with built-in fetch.
 3. Typo: Found `Magic Mirror` in file `dependencies.sh`: Replace it with `MagicMirror²`.
@@ -8854,6 +8857,7 @@ Last update: 2024-01-28T22:54:58+01:00
 
 ### [MMM-SORT by mykle1](https://github.com/mykle1/MMM-SORT)
 
+0. This module is outdated: Abandoned. No reactions to issues since years. Missing instructions to install 'request'.
 1. There is no `package.json`. We need this file to gather information about the module for the module list page.
 2. Typo: Found `Magic Mirror` in file `MMM-SORT.js`: Replace it with `MagicMirror²`.
 3. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
@@ -9051,6 +9055,7 @@ Last update: 2024-01-28T22:54:58+01:00
 
 ### [MMM-SunRiseSet by mykle1](https://github.com/mykle1/MMM-SunRiseSet)
 
+0. This module is outdated: Abandoned. No reactions to issues since years. Missing instructions to install 'request'.
 1. There is no `package.json`. We need this file to gather information about the module for the module list page.
 2. Typo: Found `Magic Mirror` in file `MMM-SunRiseSet.js`: Replace it with `MagicMirror²`.
 3. Recommendation: Found `new Date()` in file `MMM-SunRiseSet.js`: Replace it by `new Date(Date.now())`: [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).

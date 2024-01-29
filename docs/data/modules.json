@@ -183,7 +183,7 @@
     ],
     "license": "MIT",
     "image": ".github-preview-good.jpg",
-    "lastCommit": "2024-01-22T22:46:17+01:00"
+    "lastCommit": "2024-01-29T01:07:49+00:00"
   },
   {
     "name": "MMM-AirQuality",
@@ -4470,7 +4470,7 @@
     ],
     "license": "MIT",
     "image": "resources-previewFS.jpg",
-    "lastCommit": "2024-01-22T12:36:51+01:00"
+    "lastCommit": "2024-01-29T01:52:30+01:00"
   },
   {
     "name": "MMM-GoogleAssistant",
@@ -4909,6 +4909,7 @@
     "maintainerURL": "",
     "description": "Hide/Show individual modules and pages of modules with custom audio responses that you create.",
     "issues": 6,
+    "outdated": "Abandoned. No reactions to issues since years. The installation instructions do not work with up-to-date systems.",
     "tags": [
       "voice recognition",
       "speech to text"
@@ -11857,6 +11858,7 @@
     "maintainerURL": "",
     "description": "Static Or Rotating Tides module. Replaces/combines MMM-SimpleTides and MMM-StaticTides.",
     "issues": 6,
+    "outdated": "Abandoned. No reactions to issues since years. Missing instructions to install 'request'.",
     "lastCommit": "2020-04-11T21:13:37-04:00"
   },
   {
@@ -12112,6 +12114,7 @@
     "maintainerURL": "",
     "description": "More information than you ever wanted to know about the rising and setting of the sun.",
     "issues": 7,
+    "outdated": "Abandoned. No reactions to issues since years. Missing instructions to install 'request'.",
     "lastCommit": "2020-05-22T16:29:35-04:00"
   },
   {
@@ -13529,7 +13532,7 @@
     "id": "fhinder/MMM-vvsDeparture",
     "maintainer": "fhinder",
     "maintainerURL": "https://github.com/fhinder",
-    "description": "Display departures for public transport in Stuttgart (Covers VVS Area). Based on MMM-vvsDebarture by Niklas Kappler, changed deprected request dependency.",
+    "description": "Display departures for public transport in Stuttgart (Covers VVS Area).",
     "issues": 7,
     "tags": [
       "vvs",

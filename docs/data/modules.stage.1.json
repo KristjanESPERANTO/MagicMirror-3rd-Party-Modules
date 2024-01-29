@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "2024-01-28T21:45:28.499Z",
+  "lastUpdate": "2024-01-29T18:54:48.302Z",
   "modules": [
     {
       "name": "MMM-01ZM",
@@ -3481,7 +3481,8 @@
       "maintainer": "mykle1",
       "maintainerURL": "",
       "description": "Hide/Show individual modules and pages of modules with custom audio responses that you create.",
-      "issues": []
+      "issues": [],
+      "outdated": "Abandoned. No reactions to issues since years. The installation instructions do not work with up-to-date systems."
     },
     {
       "name": "MMM-Hello-Mirror",
@@ -8395,7 +8396,8 @@
       "maintainer": "mykle1",
       "maintainerURL": "",
       "description": "Static Or Rotating Tides module. Replaces/combines MMM-SimpleTides and MMM-StaticTides.",
-      "issues": []
+      "issues": [],
+      "outdated": "Abandoned. No reactions to issues since years. Missing instructions to install 'request'."
     },
     {
       "name": "MMM-Space",
@@ -8584,7 +8586,8 @@
       "maintainer": "mykle1",
       "maintainerURL": "",
       "description": "More information than you ever wanted to know about the rising and setting of the sun.",
-      "issues": []
+      "issues": [],
+      "outdated": "Abandoned. No reactions to issues since years. Missing instructions to install 'request'."
     },
     {
       "name": "MMM-SweepClock",
@@ -9546,7 +9549,7 @@
       "id": "fhinder/MMM-vvsDeparture",
       "maintainer": "fhinder",
       "maintainerURL": "https://github.com/fhinder",
-      "description": "Display departures for public transport in Stuttgart (Covers VVS Area). Based on MMM-vvsDebarture by Niklas Kappler, changed deprected request dependency.",
+      "description": "Display departures for public transport in Stuttgart (Covers VVS Area).",
       "issues": []
     },
     {

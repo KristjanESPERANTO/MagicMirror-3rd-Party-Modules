@@ -5181,6 +5181,7 @@
     "maintainerURL": "",
     "description": "Hide/Show individual modules and pages of modules with custom audio responses that you create.",
     "issues": [],
+    "outdated": "Abandoned. No reactions to issues since years. The installation instructions do not work with up-to-date systems.",
     "tags": [
       "voice recognition",
       "speech to text"
@@ -12553,7 +12554,8 @@
     "description": "Static Or Rotating Tides module. Replaces/combines MMM-SimpleTides and MMM-StaticTides.",
     "issues": [
       "There is no `package.json`. We need this file to gather information about the module for the module list page."
-    ]
+    ],
+    "outdated": "Abandoned. No reactions to issues since years. Missing instructions to install 'request'."
   },
   {
     "name": "MMM-Space",
@@ -12821,7 +12823,8 @@
     "description": "More information than you ever wanted to know about the rising and setting of the sun.",
     "issues": [
       "There is no `package.json`. We need this file to gather information about the module for the module list page."
-    ]
+    ],
+    "outdated": "Abandoned. No reactions to issues since years. Missing instructions to install 'request'."
   },
   {
     "name": "MMM-SweepClock",
@@ -14310,7 +14313,7 @@
     "id": "fhinder/MMM-vvsDeparture",
     "maintainer": "fhinder",
     "maintainerURL": "https://github.com/fhinder",
-    "description": "Display departures for public transport in Stuttgart (Covers VVS Area). Based on MMM-vvsDebarture by Niklas Kappler, changed deprected request dependency.",
+    "description": "Display departures for public transport in Stuttgart (Covers VVS Area).",
     "issues": [],
     "tags": [
       "vvs",
