@@ -39,7 +39,7 @@
   },
   "scripts": {
     "start": "ntl --autocomplete --size 50 --exclude start lint* prepare test",
-    "all": "npm run createModuleList && npm run getModules && npm run expandModuleList && npm run checkModules",
+    "all": "npm run createModuleList && npm run getModules && npm run expandModuleList && npm run checkModules && npm run updateGitHubData",
     "createModuleList": "node scripts/create_module_list.js",
     "getModules": "python3 scripts/get_modules.py",
     "expandModuleList": "node scripts/expand_module_list_with_repo_data.js",
