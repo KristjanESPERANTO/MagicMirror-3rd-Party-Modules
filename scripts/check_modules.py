@@ -176,7 +176,7 @@ def check_modules():
         },
     }
 
-    modules_json_file = open("./docs/data/modules.stage.2.json", encoding="utf-8")
+    modules_json_file = open("./docs/data/modules.stage.3.json", encoding="utf-8")
     modules = json.load(modules_json_file)
     stats = {
         "moduleCounter": 0,

@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "2024-01-29T18:54:48.302Z",
+  "lastUpdate": "2024-01-30T16:47:03.994Z",
   "modules": [
     {
       "name": "MMM-01ZM",
@@ -3128,7 +3128,7 @@
       "maintainerURL": "https://github.com/eouia",
       "description": "Show specific module(s) and hide others for a some time by notification or command.",
       "issues": [],
-      "outdated": "Abandoned. Repo has been archived at 2020-06-10."
+      "outdated": "Archived. Repo has been archived at 2020-06-10."
     },
     {
       "name": "MMM-Globe",

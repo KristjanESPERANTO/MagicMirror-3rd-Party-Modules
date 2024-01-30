@@ -81,6 +81,13 @@ function sortData (sortOption) {
       filteredModuleList.sort((a, b) =>
         b.lastCommit.localeCompare(a.lastCommit));
       break;
+    case "stars":
+      filteredModuleList.sort((a, b) => {
+        const starsA = a.stars || 0;
+        const starsB = b.stars || 0;
+        return starsB - starsA;
+      });
+      break;
     case "name":
       filteredModuleList.sort((a, b) => {
         const nameA = a.name.replace("MMM-", "");

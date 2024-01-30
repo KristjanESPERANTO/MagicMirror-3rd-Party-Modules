@@ -2,7 +2,7 @@ import fs from "node:fs";
 import process from "node:process";
 
 let queryCount = 0;
-let maxQueryCount = 300;
+let maxQueryCount = 100;
 let moduleCount = 0;
 
 function printProgress (count, total) {
@@ -25,7 +25,7 @@ function shouldFetch (repository, lastUpdate) {
         const now = new Date();
         const daysSinceLastUpdate = Math.round((now - new Date(lastUpdate)) / (1000 * 60 * 60 * 24));
         const lastCommitDate = repository.gitHubData ? new Date(repository.gitHubData.lastCommit) : new Date(-20);
-        const isUpdateLongAgo = daysSinceLastUpdate > 7;
+        const isUpdateLongAgo = daysSinceLastUpdate > 14;
         const wasLastUpdateBeforeLastCommit = lastUpdate < lastCommitDate.toISOString();
 
         retrieve = isUpdateLongAgo || wasLastUpdateBeforeLastCommit;
@@ -88,6 +88,7 @@ async function updateData () {
               "lastCommit": branchData.commit ? branchData.commit.author.date : null
             }
           };
+          module.stars = data.stargazers_count;
 
           results.push(repositoryData);
         } else {
@@ -98,6 +99,7 @@ async function updateData () {
         // Add the existing data without updating it
         const existingRepository = previousData.repositories?.find((repo) => repo.id === repositoryId);
         if (existingRepository) {
+          module.stars = existingRepository.gitHubData.stars;
           results.push(existingRepository);
         }
       }
@@ -109,6 +111,7 @@ async function updateData () {
     };
 
     fs.writeFileSync("docs/data/gitHubData.json", JSON.stringify(updateInfo, null, 2));
+    fs.writeFileSync("./docs/data/modules.stage.2.json", JSON.stringify(moduleList, null, 2));
     console.info("\nGitHub data update completed. queryCount:", queryCount, "maxQueryCount:", maxQueryCount, "results:", results.length, "modules:", moduleListLength);
   } catch (error) {
     console.error("Error fetching GitHub API data:", error);
@@ -116,17 +119,3 @@ async function updateData () {
 }
 
 updateData();
-
-
-// Funtion for testing purposes. Can be removed.
-// eslint-disable-next-line no-unused-vars
-function checkUpdate () {
-  const lastUpdate = new Date("2023-01-12T23:30:22.077Z");
-  const now = new Date();
-  const daysSinceLastUpdate = Math.round((now - lastUpdate) / (1000 * 60 * 60 * 24));
-
-  console.log(daysSinceLastUpdate);
-  console.log(daysSinceLastUpdate > 7);
-}
-
-// - checkUpdate();

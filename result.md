@@ -1,6 +1,6 @@
 # Result of the module analysis
 
-Last update: 2024-01-29T20:04:51+01:00
+Last update: 2024-01-30T17:57:27+01:00
 
 ## Statistics
 
@@ -9,7 +9,7 @@ Last update: 2024-01-29T20:04:51+01:00
 | modules analyzed     |   1117   |
 | maintainer           |    627   |
 | modules with issues  |   1112   |
-| issues               |   7323   |
+| issues               |   7322   |
 | modules at github    |   1108   |
 | modules at gitlab    |      8   |
 | modules at bitbucket |      1   |
@@ -3130,7 +3130,7 @@ Last update: 2024-01-29T20:04:51+01:00
 
 ### [MMM-Glance by eouia](https://github.com/eouia/MMM-Glance)
 
-0. This module is outdated: Abandoned. Repo has been archived at 2020-06-10.
+0. This module is outdated: Archived. Repo has been archived at 2020-06-10.
 1. There is no `package.json`. We need this file to gather information about the module for the module list page.
 2. Typo: Found `Magic Mirror` in file `MMM-Glance.js`: Replace it with `MagicMirror²`.
 3. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
@@ -7069,21 +7069,20 @@ Last update: 2024-01-29T20:04:51+01:00
 
 ### [MMM-PGA by mumblebaj](https://github.com/mumblebaj/MMM-PGA)
 
-1. There are no keywords in 'package.json'. We would use them as tags on the module list page.
-2. Deprecated: Found `require('request')` in file `ESPN.js`: Replace it with built-in fetch.
-3. Deprecated: Found `require('request')` in file `FEDEXCUP.js`: Replace it with built-in fetch.
-4. Typo: Found `Magic Mirror` in file `MMM-PGA.js`: Replace it with `MagicMirror²`.
-5. Recommendation: Found `XMLHttpRequest` in file `MMM-PGA.js`: Replace it with built-in fetch.
-6. Deprecated: Found `require('request')` in file `OWGR.js`: Replace it with built-in fetch.
-7. Typo: Found `Magic Mirror` in file `README.md`: Replace it with `MagicMirror²`.
-8. Outdated: Found `MichMich/MagicMirror` in file `README.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
-9. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
-10. Deprecated: Found `require('request')` in file `node_helper.js`: Replace it with built-in fetch.
-11. Outdated: Found `MichMich/MagicMirror` in file `package.json`: Replace it by `MagicMirrorOrg/MagicMirror`.
-12. Recommendation: Found `XMLHttpRequest` in file `favorites.js`: Replace it with built-in fetch.
-13. Recommendation: Found `new Date()` in file `favorites.js`: Replace it by `new Date(Date.now())`: [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
-14. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
-15. The branch name is 'master'. Consider renaming it to 'main'.
+1. Deprecated: Found `require('request')` in file `ESPN.js`: Replace it with built-in fetch.
+2. Deprecated: Found `require('request')` in file `FEDEXCUP.js`: Replace it with built-in fetch.
+3. Typo: Found `Magic Mirror` in file `MMM-PGA.js`: Replace it with `MagicMirror²`.
+4. Recommendation: Found `XMLHttpRequest` in file `MMM-PGA.js`: Replace it with built-in fetch.
+5. Deprecated: Found `require('request')` in file `OWGR.js`: Replace it with built-in fetch.
+6. Typo: Found `Magic Mirror` in file `README.md`: Replace it with `MagicMirror²`.
+7. Outdated: Found `MichMich/MagicMirror` in file `README.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
+8. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
+9. Deprecated: Found `require('request')` in file `node_helper.js`: Replace it with built-in fetch.
+10. Outdated: Found `MichMich/MagicMirror` in file `package.json`: Replace it by `MagicMirrorOrg/MagicMirror`.
+11. Recommendation: Found `XMLHttpRequest` in file `favorites.js`: Replace it with built-in fetch.
+12. Recommendation: Found `new Date()` in file `favorites.js`: Replace it by `new Date(Date.now())`: [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
+13. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
+14. The branch name is 'master'. Consider renaming it to 'main'.
 
 ### [MMM-PGHBus by yuhanx0728](https://github.com/yuhanx0728/MMM-PGHBus)
 
