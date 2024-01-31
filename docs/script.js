@@ -23,6 +23,12 @@ function createCard (moduleData) {
     card.querySelector(".issues").remove();
   }
 
+  if (moduleData.stars > 0) {
+    card.querySelector(".stars").textContent = moduleData.stars;
+  } else {
+    card.querySelector(".stars").remove();
+  }
+
   if (moduleData.image) {
     const imagePath = `./images/${moduleData.name}---${moduleData.maintainer}---${moduleData.image}`;
     card.querySelector(".card-image-container img").src = imagePath;

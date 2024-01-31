@@ -117,6 +117,18 @@ a {
   height: 0;
 }
 
+.stars {
+  color: var(--color-text-dimmed);
+  position: relative;
+  text-align: left;
+  bottom: 2em;
+  height: 0;
+}
+
+.stars::after {
+  content: " ⭐";
+}
+
 main {
   display: flex;
   flex-wrap: wrap;
