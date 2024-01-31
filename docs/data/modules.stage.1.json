@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "2024-01-30T16:47:03.994Z",
+  "lastUpdate": "2024-01-31T17:53:05.683Z",
   "modules": [
     {
       "name": "MMM-01ZM",
@@ -6174,7 +6174,7 @@
       "maintainerURL": "https://github.com/cowboysdude",
       "description": "Different providers for users to choose from. Shows current plus 3 day forecast. Mouseover shows forecast, with Air, UV, Humidity, Sunrise and Set.",
       "issues": [],
-      "outdated": "Abandoned. No reactions to issues and PRs since years. It no longer seems to work."
+      "outdated": "Abandoned. No reactions to issues and PRs since years."
     },
     {
       "name": "MMM-NOAATides",

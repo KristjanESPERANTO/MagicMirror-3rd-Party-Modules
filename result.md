@@ -1,6 +1,6 @@
 # Result of the module analysis
 
-Last update: 2024-01-30T17:57:27+01:00
+Last update: 2024-01-31T19:03:12+01:00
 
 ## Statistics
 
@@ -757,7 +757,7 @@ Last update: 2024-01-30T17:57:27+01:00
    - @stylistic/eslint-plugin             ^1.5.3  →     ^1.5.4
    - @types/express                     ^4.17.11  →   ^4.17.21
    - @types/magicmirror-module           ^2.16.0  →    ^2.16.5
-   - @types/node                       ^14.14.22  →  ^20.11.10
+   - @types/node                       ^14.14.22  →  ^20.11.13
    - @typescript-eslint/eslint-plugin    ^6.19.1  →    ^6.20.0
    - @typescript-eslint/parser           ^6.19.1  →    ^6.20.0
    - rxjs                                 ^7.5.5  →     ^7.8.1
@@ -2272,7 +2272,7 @@ Last update: 2024-01-30T17:57:27+01:00
 1. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
 2. Information: There are updates for 3 dependencie(s):
    - @mapbox/node-pre-gyp   ^1.0.10  →    ^1.0.11
-   - @types/node           ^20.10.6  →  ^20.11.10
+   - @types/node           ^20.10.6  →  ^20.11.13
    - esbuild               ^0.19.11  →    ^0.20.0
 
 

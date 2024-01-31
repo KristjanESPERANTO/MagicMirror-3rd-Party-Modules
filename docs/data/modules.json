@@ -1990,6 +1990,7 @@
     "maintainerURL": "",
     "description": "Keep track of Corona Virus (COVID-19) cases via rapidapi API.",
     "issues": 6,
+    "stars": 34,
     "lastCommit": "2020-04-28T14:59:27+02:00"
   },
   {
@@ -2000,6 +2001,7 @@
     "maintainerURL": "",
     "description": "German Ampel for Incidence Value for your City.",
     "issues": 7,
+    "stars": 12,
     "license": "ISC",
     "image": "screenshot.jpg",
     "lastCommit": "2023-02-09T09:36:43+01:00"
@@ -2013,6 +2015,7 @@
     "description": "Keep track of the covid19 vaccination progress for Germany/German states.",
     "issues": 6,
     "outdated": "Obsolete, no new data since 2022-04-27.",
+    "stars": 0,
     "lastCommit": "2021-05-17T20:39:24+02:00"
   },
   {
@@ -2024,6 +2027,7 @@
     "description": "This module displays a table of the 5 latest statistics for COVID-19 New Vaccinations as published by the UK Government.",
     "issues": 8,
     "outdated": "Obsolete, no new data since 2022-05-20.",
+    "stars": 0,
     "lastCommit": "2021-03-01T21:33:20+00:00"
   },
   {
@@ -2034,6 +2038,7 @@
     "maintainerURL": "",
     "description": "Real time tram departure from selected stop in Cracow (Poland).",
     "issues": 6,
+    "stars": 2,
     "lastCommit": "2019-11-11T11:16:45+01:00"
   },
   {
@@ -2044,6 +2049,7 @@
     "maintainerURL": "https://github.com/dsouzadrian",
     "description": "Display cicket scores for ongoing live cricket matches.",
     "issues": 4,
+    "stars": 2,
     "tags": [
       "cricket"
     ],
@@ -2059,6 +2065,7 @@
     "maintainerURL": "",
     "description": "News feed from the <strong>Swedish</strong> Government Crisis Information (Krisinformation.se).",
     "issues": 5,
+    "stars": 1,
     "tags": [
       "crisis"
     ],
@@ -2074,6 +2081,7 @@
     "maintainerURL": "https://github.com/timophey",
     "description": "Virtual model of physical Cronixie (Led Nixie) clock.",
     "issues": 6,
+    "stars": 4,
     "lastCommit": "2020-09-16T01:52:02+05:00"
   },
   {
@@ -2084,6 +2092,7 @@
     "maintainerURL": "",
     "description": "Display cryptocurrencies ticker price, with graphs and changes over time.",
     "issues": 6,
+    "stars": 93,
     "lastCommit": "2022-05-04T11:10:42+02:00"
   },
   {
@@ -2094,6 +2103,7 @@
     "maintainerURL": "https://github.com/NateDee",
     "description": "Displays arrival times for the Chicago Transit Authority 'L' system buses and trains.",
     "issues": 6,
+    "stars": 6,
     "lastCommit": "2018-03-26T09:09:03-05:00"
   },
   {
@@ -2104,6 +2114,7 @@
     "maintainerURL": "",
     "description": "Real time bus information from Rosario, Santa Fe, Argentina.",
     "issues": 6,
+    "stars": 2,
     "lastCommit": "2020-04-13T09:33:15-03:00"
   },
   {
@@ -2114,6 +2125,7 @@
     "maintainerURL": "",
     "description": "Display the dollar price in real time.",
     "issues": 5,
+    "stars": 2,
     "lastCommit": "2020-10-18T14:19:08-03:00"
   },
   {
@@ -2124,6 +2136,7 @@
     "maintainerURL": "https://github.com/spitzlbergerj",
     "description": "Extension of the standard module currentweather by the possibility to process and integrate MQTT telegrams of an own weather station.",
     "issues": 7,
+    "stars": 3,
     "license": "MIT",
     "image": "weather_screenshot.jpg",
     "lastCommit": "2022-03-26T13:28:12+01:00"
@@ -2136,6 +2149,7 @@
     "maintainerURL": "",
     "description": "Display cursor when user moves mouse and hide after delay.",
     "issues": 5,
+    "stars": 22,
     "tags": [
       "cursor",
       "mmm-cursor"
@@ -2151,6 +2165,7 @@
     "maintainerURL": "",
     "description": "Custom element <code>mm-time</code> launcher.",
     "issues": 3,
+    "stars": 2,
     "lastCommit": "2022-04-13T18:03:18+02:00"
   },
   {
@@ -2161,6 +2176,7 @@
     "maintainerURL": "",
     "description": "Post a message to your mirror either by MagicMirror API post or manual update (entering text onscreen).",
     "issues": 8,
+    "stars": 0,
     "lastCommit": "2023-10-27T15:13:30-04:00"
   },
   {
@@ -2171,6 +2187,7 @@
     "maintainerURL": "",
     "description": "Displays the daily Cyanide&amp;Happiness Comic.",
     "issues": 4,
+    "stars": 3,
     "tags": [
       "cyanide",
       "happiness",
@@ -2188,6 +2205,7 @@
     "maintainerURL": "https://github.com/gueguet",
     "description": "This module allows you to display the last news about CyberSecurity.",
     "issues": 4,
+    "stars": 8,
     "lastCommit": "2021-02-23T20:07:38+01:00"
   },
   {
@@ -2198,6 +2216,7 @@
     "maintainerURL": "",
     "description": "Display tracking information for parcels handled by Czech Post.",
     "issues": 6,
+    "stars": 1,
     "lastCommit": "2019-04-15T09:57:47+02:00"
   },
   {
@@ -2208,6 +2227,7 @@
     "maintainerURL": "",
     "description": "Displays information retreived from a D2L module for Linky.",
     "issues": 8,
+    "stars": 0,
     "license": "MIT",
     "image": "ui-d2l.jpg",
     "lastCommit": "2023-10-09T13:39:08+02:00"
@@ -2220,6 +2240,7 @@
     "maintainerURL": "",
     "description": "Simple display of dad jokes from icanhazdadjoke.com.",
     "issues": 11,
+    "stars": 0,
     "license": "MIT",
     "lastCommit": "2023-12-01T20:32:23+01:00"
   },
@@ -2231,6 +2252,7 @@
     "maintainerURL": "",
     "description": "Display the <strong>dutch</strong> verse of the day from &lt;<a target=\"_blank\" href=\"http://www.dagelijkswoord.nl%3E\">www.dagelijkswoord.nl&gt;</a>.",
     "issues": 9,
+    "stars": 0,
     "license": "MIT",
     "image": "images-screenshot.jpg",
     "lastCommit": "2023-10-04T16:11:56+02:00"
@@ -2243,6 +2265,7 @@
     "maintainerURL": "",
     "description": "Displays information retreived from a Daikin Air Conditioner Unit.",
     "issues": 7,
+    "stars": 2,
     "tags": [
       "daikin"
     ],
@@ -2258,6 +2281,7 @@
     "maintainerURL": "",
     "description": "Forked from MMM-Daikin to work with Daikin Airbase controllers (wifi air conditioner controllers used in Australia/New Zealand regions).",
     "issues": 8,
+    "stars": 0,
     "lastCommit": "2023-08-26T08:28:53+10:00"
   },
   {
@@ -2268,6 +2292,7 @@
     "maintainerURL": "https://github.com/Nickiroo",
     "description": "Displays a random AC villager with a picture and some traits. Inspired by MMM-DailyPokemon.",
     "issues": 4,
+    "stars": 2,
     "lastCommit": "2022-11-07T19:41:41-08:00"
   },
   {
@@ -2278,6 +2303,7 @@
     "maintainerURL": "",
     "description": "Module for daily recurrent event alarms.",
     "issues": 3,
+    "stars": 10,
     "lastCommit": "2018-10-23T14:44:43+02:00"
   },
   {
@@ -2288,6 +2314,7 @@
     "maintainerURL": "",
     "description": "Display the verse of the day from &lt;<a target=\"_blank\" href=\"http://www.biblegateway.com%3E\">www.biblegateway.com&gt;</a>.",
     "issues": 7,
+    "stars": 25,
     "license": "MIT",
     "lastCommit": "2020-04-14T22:58:43+02:00"
   },
@@ -2299,6 +2326,7 @@
     "maintainerURL": "",
     "description": "Display a daily bit of Buddhist wisdom from Thich Nhat Hanh's \"Your True Home\".",
     "issues": 6,
+    "stars": 3,
     "lastCommit": "2020-08-25T16:45:43-05:00"
   },
   {

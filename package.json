@@ -44,12 +44,12 @@
     "getModules": "python3 scripts/get_modules.py",
     "expandModuleList": "node scripts/expand_module_list_with_repo_data.js",
     "checkModules": "python3 scripts/check_modules.py",
+    "updateGitHubData": "node scripts/updateGitHubApiData.js",
     "ownList": "rm -rf modules & node create_own_module_list.js && npm run getModules && npm run expandModuleList && npm run checkModules",
     "lint": "eslint . && stylelint **/docs/*.css && markdownlint README.md && prettier --check .",
     "lint:fix": "eslint . --fix && stylelint **/docs/*.css --fix && markdownlint README.md --fix && prettier . --write",
     "prepare": "husky",
     "test": "npm run lint",
-    "updateGitHubData": "node scripts/updateGitHubApiData.js",
     "leaveMenu": ""
   },
   "ntl": {
@@ -59,11 +59,11 @@
       "getModules": "Script 2: Get all modules with `git cone`. Requires a lot of time and storage space!",
       "expandModuleList": "Script 3: Extend the module list with information from the package.json. And get an image if one is available and the license is okay.",
       "checkModules": "Script 4: Perform various checks on the modules.",
+      "updateGitHubData": "Script 5: Update the JSON file that collects the GitHub information of the modules.",
       "ownList": "Test only defined modules. See README.",
       "lint": "Check this repository for linter and formatting problems.",
       "lint:fix": "Fix automatically fixable linter or formatting problems of this repository.",
       "prepare": "husky",
-      "updateGitHubData": "ATTENTION: NOT READY YET! Update the json file that collects the GitHub information of the modules.",
       "leaveMenu": "Leave this menu."
     }
   },

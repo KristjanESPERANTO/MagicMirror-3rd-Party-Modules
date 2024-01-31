@@ -2102,7 +2102,8 @@
     "description": "Keep track of Corona Virus (COVID-19) cases via rapidapi API.",
     "issues": [
       "There is no `package.json`. We need this file to gather information about the module for the module list page."
-    ]
+    ],
+    "stars": 34
   },
   {
     "name": "MMM-COVID19-AMPEL",
@@ -2114,6 +2115,7 @@
     "issues": [
       "There are no specific keywords in 'package.json'. We would use them as tags on the module list page. Add a few meaningful terms to the keywords in the package.json. Not just “magicmirror” or “module”."
     ],
+    "stars": 12,
     "license": "ISC",
     "image": "screenshot.jpg"
   },
@@ -2127,7 +2129,8 @@
     "issues": [
       "There is no `package.json`. We need this file to gather information about the module for the module list page."
     ],
-    "outdated": "Obsolete, no new data since 2022-04-27."
+    "outdated": "Obsolete, no new data since 2022-04-27.",
+    "stars": 0
   },
   {
     "name": "MMM-covid19uk-stats",
@@ -2141,7 +2144,8 @@
       "`package.json` issue: No license field.",
       "There are no keywords in 'package.json'. We would use them as tags on the module list page."
     ],
-    "outdated": "Obsolete, no new data since 2022-05-20."
+    "outdated": "Obsolete, no new data since 2022-05-20.",
+    "stars": 0
   },
   {
     "name": "MMM-CracowMPK",
@@ -2152,7 +2156,8 @@
     "description": "Real time tram departure from selected stop in Cracow (Poland).",
     "issues": [
       "There is no `package.json`. We need this file to gather information about the module for the module list page."
-    ]
+    ],
+    "stars": 2
   },
   {
     "name": "MMM-CricketScores",
@@ -2162,6 +2167,7 @@
     "maintainerURL": "https://github.com/dsouzadrian",
     "description": "Display cicket scores for ongoing live cricket matches.",
     "issues": [],
+    "stars": 2,
     "tags": [
       "cricket"
     ],
@@ -2176,6 +2182,7 @@
     "maintainerURL": "",
     "description": "News feed from the <strong>Swedish</strong> Government Crisis Information (Krisinformation.se).",
     "issues": [],
+    "stars": 1,
     "tags": [
       "crisis"
     ],
@@ -2191,7 +2198,8 @@
     "description": "Virtual model of physical Cronixie (Led Nixie) clock.",
     "issues": [
       "There is no `package.json`. We need this file to gather information about the module for the module list page."
-    ]
+    ],
+    "stars": 4
   },
   {
     "name": "MMM-cryptocurrency",
@@ -2202,7 +2210,8 @@
     "description": "Display cryptocurrencies ticker price, with graphs and changes over time.",
     "issues": [
       "There is no `package.json`. We need this file to gather information about the module for the module list page."
-    ]
+    ],
+    "stars": 93
   },
   {
     "name": "MMM-CTA",
@@ -2213,7 +2222,8 @@
     "description": "Displays arrival times for the Chicago Transit Authority 'L' system buses and trains.",
     "issues": [
       "There is no `package.json`. We need this file to gather information about the module for the module list page."
-    ]
+    ],
+    "stars": 6
   },
   {
     "name": "MMM-CuandoLlega",
@@ -2224,7 +2234,8 @@
     "description": "Real time bus information from Rosario, Santa Fe, Argentina.",
     "issues": [
       "There is no `package.json`. We need this file to gather information about the module for the module list page."
-    ]
+    ],
+    "stars": 2
   },
   {
     "name": "MMM-CurrencyArg",
@@ -2235,7 +2246,8 @@
     "description": "Display the dollar price in real time.",
     "issues": [
       "There is no `package.json`. We need this file to gather information about the module for the module list page."
-    ]
+    ],
+    "stars": 2
   },
   {
     "name": "MMM-Currentweather-MQTT",
@@ -2247,6 +2259,7 @@
     "issues": [
       "There are no keywords in 'package.json'. We would use them as tags on the module list page."
     ],
+    "stars": 3,
     "license": "MIT",
     "image": "weather_screenshot.jpg"
   },
@@ -2260,6 +2273,7 @@
     "issues": [
       "No image found."
     ],
+    "stars": 22,
     "tags": [
       "cursor",
       "mmm-cursor"
@@ -2275,7 +2289,8 @@
     "description": "Custom element <code>mm-time</code> launcher.",
     "issues": [
       "There is no `package.json`. We need this file to gather information about the module for the module list page."
-    ]
+    ],
+    "stars": 2
   },
   {
     "name": "MMM-CustomMessage",
@@ -2286,7 +2301,8 @@
     "description": "Post a message to your mirror either by MagicMirror API post or manual update (entering text onscreen).",
     "issues": [
       "There is no `package.json`. We need this file to gather information about the module for the module list page."
-    ]
+    ],
+    "stars": 0
   },
   {
     "name": "MMM-CyanideHappiness",
@@ -2296,6 +2312,7 @@
     "maintainerURL": "",
     "description": "Displays the daily Cyanide&amp;Happiness Comic.",
     "issues": [],
+    "stars": 3,
     "tags": [
       "cyanide",
       "happiness",
@@ -2313,7 +2330,8 @@
     "description": "This module allows you to display the last news about CyberSecurity.",
     "issues": [
       "There is no `package.json`. We need this file to gather information about the module for the module list page."
-    ]
+    ],
+    "stars": 8
   },
   {
     "name": "MMM-CzechPost",
@@ -2324,7 +2342,8 @@
     "description": "Display tracking information for parcels handled by Czech Post.",
     "issues": [
       "There is no `package.json`. We need this file to gather information about the module for the module list page."
-    ]
+    ],
+    "stars": 1
   },
   {
     "name": "MMM-D2L",
@@ -2337,6 +2356,7 @@
       "`package.json` issue: No repository field.",
       "There are no keywords in 'package.json'. We would use them as tags on the module list page."
     ],
+    "stars": 0,
     "license": "MIT",
     "image": "ui-d2l.jpg"
   },
@@ -2352,6 +2372,7 @@
       "There are no keywords in 'package.json'. We would use them as tags on the module list page.",
       "No image found."
     ],
+    "stars": 0,
     "license": "MIT"
   },
   {
@@ -2364,6 +2385,7 @@
     "issues": [
       "There are no keywords in 'package.json'. We would use them as tags on the module list page."
     ],
+    "stars": 0,
     "license": "MIT",
     "image": "images-screenshot.jpg"
   },
@@ -2375,6 +2397,7 @@
     "maintainerURL": "",
     "description": "Displays information retreived from a Daikin Air Conditioner Unit.",
     "issues": [],
+    "stars": 2,
     "tags": [
       "daikin"
     ],
@@ -2390,7 +2413,8 @@
     "description": "Forked from MMM-Daikin to work with Daikin Airbase controllers (wifi air conditioner controllers used in Australia/New Zealand regions).",
     "issues": [
       "There is no `package.json`. We need this file to gather information about the module for the module list page."
-    ]
+    ],
+    "stars": 0
   },
   {
     "name": "MMM-DailyACVillager",
@@ -2401,7 +2425,8 @@
     "description": "Displays a random AC villager with a picture and some traits. Inspired by MMM-DailyPokemon.",
     "issues": [
       "There is no `package.json`. We need this file to gather information about the module for the module list page."
-    ]
+    ],
+    "stars": 2
   },
   {
     "name": "MMM-DailyAlarm",
@@ -2412,7 +2437,8 @@
     "description": "Module for daily recurrent event alarms.",
     "issues": [
       "There is no `package.json`. We need this file to gather information about the module for the module list page."
-    ]
+    ],
+    "stars": 10
   },
   {
     "name": "MMM-DailyBibleVerse",
@@ -2425,6 +2451,7 @@
       "There are no keywords in 'package.json'. We would use them as tags on the module list page.",
       "No image found."
     ],
+    "stars": 25,
     "license": "MIT"
   },
   {
@@ -2436,7 +2463,8 @@
     "description": "Display a daily bit of Buddhist wisdom from Thich Nhat Hanh's \"Your True Home\".",
     "issues": [
       "There is no `package.json`. We need this file to gather information about the module for the module list page."
-    ]
+    ],
+    "stars": 3
   },
   {
     "name": "MMM-DailyDilbert",
