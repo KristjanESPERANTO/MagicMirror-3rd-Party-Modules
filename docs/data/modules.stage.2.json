@@ -2619,7 +2619,8 @@
     "maintainer": "bugsounet",
     "maintainerURL": "https://wiki.bugsounet.fr",
     "description": "Take selfies from webcam.",
-    "issues": []
+    "issues": [],
+    "stars": 0
   },
   {
     "name": "EXT-SelfiesFlash",
@@ -2628,7 +2629,8 @@
     "maintainer": "bugsounet",
     "maintainerURL": "https://wiki.bugsounet.fr",
     "description": "Need a flash to take selfies?",
-    "issues": []
+    "issues": [],
+    "stars": 0
   },
   {
     "name": "EXT-SelfiesSender",
@@ -2637,7 +2639,8 @@
     "maintainer": "bugsounet",
     "maintainerURL": "https://wiki.bugsounet.fr",
     "description": "Send your selfies to Telegram, google photos or by mail.",
-    "issues": []
+    "issues": [],
+    "stars": 0
   },
   {
     "name": "EXT-SelfiesViewer",
@@ -2646,7 +2649,8 @@
     "maintainer": "bugsounet",
     "maintainerURL": "https://wiki.bugsounet.fr",
     "description": "Slideshow of your best selfies.",
-    "issues": []
+    "issues": [],
+    "stars": 0
   },
   {
     "name": "EXT-Spotify",
@@ -2655,7 +2659,8 @@
     "maintainer": "bugsounet",
     "maintainerURL": "https://wiki.bugsounet.fr",
     "description": "This plugin show current spotify playback of any devices.",
-    "issues": []
+    "issues": [],
+    "stars": 2
   },
   {
     "name": "EXT-SpotifyCanvasLyrics",
@@ -2664,7 +2669,8 @@
     "maintainer": "bugsounet",
     "maintainerURL": "https://wiki.bugsounet.fr",
     "description": "Create a server for displaying any Lyrics and Canvas from Spotify",
-    "issues": []
+    "issues": [],
+    "stars": 0
   },
   {
     "name": "EXT-StreamDeck",
@@ -2673,7 +2679,8 @@
     "maintainer": "bugsounet",
     "maintainerURL": "https://wiki.bugsounet.fr",
     "description": "Control your mirror with a StreamDeck by elgato©",
-    "issues": []
+    "issues": [],
+    "stars": 0
   },
   {
     "name": "EXT-TelegramBot",
@@ -2682,7 +2689,8 @@
     "maintainer": "bugsounet",
     "maintainerURL": "https://wiki.bugsounet.fr",
     "description": "You can remote-control plugins within Telegram.",
-    "issues": []
+    "issues": [],
+    "stars": 1
   },
   {
     "name": "EXT-Updates",
@@ -2691,7 +2699,8 @@
     "maintainer": "bugsounet",
     "maintainerURL": "https://wiki.bugsounet.fr",
     "description": "This plugin allow to auto-update if an update is detected.",
-    "issues": []
+    "issues": [],
+    "stars": 0
   },
   {
     "name": "EXT-Volume",
@@ -2700,7 +2709,8 @@
     "maintainer": "bugsounet",
     "maintainerURL": "https://wiki.bugsounet.fr",
     "description": "Control the sound volume level of your mirror.",
-    "issues": []
+    "issues": [],
+    "stars": 2
   },
   {
     "name": "EXT-Welcome",
@@ -2709,7 +2719,8 @@
     "maintainer": "bugsounet",
     "maintainerURL": "https://wiki.bugsounet.fr",
     "description": "Allow to send a welcome on start of MagicMirror².",
-    "issues": []
+    "issues": [],
+    "stars": 0
   },
   {
     "name": "EXT-YouTube",
@@ -2718,7 +2729,8 @@
     "maintainer": "bugsounet",
     "maintainerURL": "https://wiki.bugsounet.fr",
     "description": "This plugins allows to play YouTube video.",
-    "issues": []
+    "issues": [],
+    "stars": 3
   },
   {
     "name": "EXT-YouTubeCast",
@@ -2727,7 +2739,8 @@
     "maintainer": "bugsounet",
     "maintainerURL": "https://wiki.bugsounet.fr",
     "description": "Allow to cast a YouTube video on MagicMirror².",
-    "issues": []
+    "issues": [],
+    "stars": 2
   },
   {
     "name": "MMM-EyeCandy",
@@ -2736,7 +2749,8 @@
     "maintainer": "mykle1",
     "maintainerURL": "",
     "description": "Add some EyeCandy to your mirror. You can even choose your own local images or internet images.",
-    "issues": []
+    "issues": [],
+    "stars": 42
   },
   {
     "name": "MMM-F1",
@@ -2745,7 +2759,8 @@
     "maintainer": "jupadin",
     "maintainerURL": "https://github.com/jupadin",
     "description": "Displays the current driver standings of the current Formula 1 season.",
-    "issues": []
+    "issues": [],
+    "stars": 1
   },
   {
     "name": "MMM-FAA-Delay",
@@ -2754,7 +2769,8 @@
     "maintainer": "nigel-daniels",
     "maintainerURL": "https://github.com/nigel-daniels",
     "description": "Display information published by the FAA on delays and weather conditions at some US airports.",
-    "issues": []
+    "issues": [],
+    "stars": 2
   },
   {
     "name": "MMM-Face-Multi-User-Recognition-SMAI",
@@ -2763,7 +2779,8 @@
     "maintainer": "jimbydude",
     "maintainerURL": "https://github.com/jimbydude",
     "description": "This is a fork of Ebens module above. This version can handle multi-user and uses MMM-Face-Reco-DNN to hide/show modules based on user logged in.",
-    "issues": []
+    "issues": [],
+    "stars": 11
   },
   {
     "name": "MMM-Face-Reco-DNN",
@@ -2772,7 +2789,8 @@
     "maintainer": "nischi",
     "maintainerURL": "",
     "description": "All new version of Face Recognition with Open CV 4.1 and Deep Neural Network.",
-    "issues": []
+    "issues": [],
+    "stars": 90
   },
   {
     "name": "MMM-Face-Recognition-SMAI",
@@ -2781,7 +2799,8 @@
     "maintainer": "EbenKouao",
     "maintainerURL": "https://github.com/EbenKouao",
     "description": "This module allows you to access profiles using face recognition. This works on the back of OpenCV face recognition module. Program this script to control applicances e.g. Smart Plugs, or lights based on an individual's face profile being recognized.",
-    "issues": []
+    "issues": [],
+    "stars": 77
   },
   {
     "name": "MMM-Faces",
@@ -2790,7 +2809,8 @@
     "maintainer": "njwilliams",
     "maintainerURL": "",
     "description": "Yet Another Facial Recognition system, with admin tooling to make all the AI/ML easy to maintain and supporting hardware acceleration.",
-    "issues": []
+    "issues": [],
+    "stars": 10
   },
   {
     "name": "MMM-Facial-Recognition",
@@ -2799,7 +2819,8 @@
     "maintainer": "paviro",
     "maintainerURL": "",
     "description": "Facial recognition and module swapping based on the current user.",
-    "issues": []
+    "issues": [],
+    "stars": 175
   },
   {
     "name": "MMM-Facial-Recognition-OCV3",
@@ -2808,7 +2829,8 @@
     "maintainer": "normyx",
     "maintainerURL": "",
     "description": "Modified version of the above PaViRo one that works with OpenCV 3.3+, where training tools is merge in one project and code simplifications.",
-    "issues": []
+    "issues": [],
+    "stars": 49
   },
   {
     "name": "facts",
@@ -2817,7 +2839,8 @@
     "maintainer": "alanshen111",
     "maintainerURL": "https://github.com/alanshen111",
     "description": "Displays some ✨interesting✨ facts! Makes your mirror look like an RPG loading screen. Example screenshot included.",
-    "issues": []
+    "issues": [],
+    "stars": 12
   },
   {
     "name": "MMM-Farevarsel",
@@ -2826,7 +2849,8 @@
     "maintainer": "mabahj",
     "maintainerURL": "",
     "description": "Shows the text based weather alerts from the Norwegian Meteorological Institute (the Yr weather providers). Norwegian language only.",
-    "issues": []
+    "issues": [],
+    "stars": 3
   },
   {
     "name": "MMM-FastNotes",
@@ -2835,7 +2859,8 @@
     "maintainer": "polarbearjngl",
     "maintainerURL": "",
     "description": "Can be used for adding notes using fast and easy web interface.",
-    "issues": []
+    "issues": [],
+    "stars": 6
   },
   {
     "name": "MMM-fbPageCounter",
@@ -2844,7 +2869,8 @@
     "maintainer": "eouia",
     "maintainerURL": "",
     "description": "'Likes' counter of Facebook page.",
-    "issues": []
+    "issues": [],
+    "stars": 3
   },
   {
     "name": "MMM-FearAndGreedIndex",
@@ -2853,7 +2879,8 @@
     "maintainer": "Pip1405",
     "maintainerURL": "",
     "description": "Displays color-coded Fear &amp; Greed Index Values from CNBC for Stocks and from Alternative.me for Crypto.",
-    "issues": []
+    "issues": [],
+    "stars": 0
   },
   {
     "name": "MMM-FF-cht-sh",
@@ -2862,7 +2889,8 @@
     "maintainer": "shin10",
     "maintainerURL": "",
     "description": "Display random or your most treasured <a target=\"_blank\" href=\"https://cht.sh\">cheat sheets</a> and learn something new while you have your cup of coffee.",
-    "issues": []
+    "issues": [],
+    "stars": 0
   },
   {
     "name": "MMM-FF-code-injector",
@@ -2871,7 +2899,8 @@
     "maintainer": "shin10",
     "maintainerURL": "",
     "description": "Multi purpose module to inject code and mess around with your mirror without developing a complete new module.",
-    "issues": []
+    "issues": [],
+    "stars": 1
   },
   {
     "name": "MMM-FF-digital-rain",
@@ -2880,7 +2909,8 @@
     "maintainer": "shin10",
     "maintainerURL": "",
     "description": "Wake up, $USER... A module giving you the cyberpunk feeling in the morning that you deserve. The Matrix has you...",
-    "issues": []
+    "issues": [],
+    "stars": 3
   },
   {
     "name": "MMM-FF-Evan-Roth-Red-Lines",
@@ -2889,7 +2919,8 @@
     "maintainer": "shin10",
     "maintainerURL": "",
     "description": "Display Evan Roth's artwork \"Red Lines\" (2018) and participate in it's p2p ring. If you wonder what it is or why it's important, head to <a target=\"_blank\" href=\"https://www.redlines.network\">www.redlines.network</a> or check out installations and talks on <a target=\"_blank\" href=\"https://www.youtube.com/results?search_query=evan+roth+red+lines\">youtube</a>.",
-    "issues": []
+    "issues": [],
+    "stars": 0
   },
   {
     "name": "MMM-FF-Genius-Lyrics",
@@ -2898,7 +2929,8 @@
     "maintainer": "shin10",
     "maintainerURL": "",
     "description": "This module complements the <a target=\"_blank\" href=\"https://github.com/skuethe/MMM-Spotify\">MMM-Spotify module</a> and listens for it's song info notifications to automatically fetch the lyrics for the currently playing song. API key required.",
-    "issues": []
+    "issues": [],
+    "stars": 3
   },
   {
     "name": "MMM-FF-multigeiger",
@@ -2907,7 +2939,8 @@
     "maintainer": "shin10",
     "maintainerURL": "",
     "description": "Show radiation charts from <a target=\"_blank\" href=\"https://multigeiger.citysensor.de\">https://multigeiger.citysensor.de</a>.",
-    "issues": []
+    "issues": [],
+    "stars": 1
   },
   {
     "name": "MMM-FF-process-stats",
@@ -2916,7 +2949,8 @@
     "maintainer": "shin10",
     "maintainerURL": "",
     "description": "Display electron process information.",
-    "issues": []
+    "issues": [],
+    "stars": 1
   },
   {
     "name": "MMM-FF-StatsJS",
@@ -2925,7 +2959,8 @@
     "maintainer": "shin10",
     "maintainerURL": "",
     "description": "Inject Ricardo Cabello's (<a target=\"_blank\" href=\"https://github.com/mrdoob\">mrdoob</a>) <a target=\"_blank\" href=\"https://github.com/mrdoob/stats.js\">stats.js</a> to display FPS, MS and MEM consumption.",
-    "issues": []
+    "issues": [],
+    "stars": 0
   },
   {
     "name": "MMM-FF-tenor-gif",
@@ -2934,7 +2969,8 @@
     "maintainer": "shin10",
     "maintainerURL": "",
     "description": "Display random gifs by topic from <a target=\"_blank\" href=\"https://tenor.com\">tenor</a>. API key required.",
-    "issues": []
+    "issues": [],
+    "stars": 0
   },
   {
     "name": "MMM-FF-XKCD",
@@ -2943,7 +2979,8 @@
     "maintainer": "shin10",
     "maintainerURL": "",
     "description": "Show latest, random or your favourite <a target=\"_blank\" href=\"https://xkcd.com\">XKCD</a> comic. Navigate by events and read on where you left yesterday.",
-    "issues": []
+    "issues": [],
+    "stars": 0
   },
   {
     "name": "MMM-FHEM",
@@ -2952,7 +2989,8 @@
     "maintainer": "BenRoe",
     "maintainerURL": "",
     "description": "Display Readings/Values from your FHEM device like temperature or humidity.",
-    "issues": []
+    "issues": [],
+    "stars": 10
   },
   {
     "name": "MMM-FinParcel",
@@ -2961,7 +2999,8 @@
     "maintainer": "jesmak",
     "maintainerURL": "https://github.com/jesmak",
     "description": "Module that tracks packages from Finnish Posti and/or Matkahuolto.",
-    "issues": []
+    "issues": [],
+    "stars": 0
   },
   {
     "name": "MMM-Fish",
@@ -2970,7 +3009,8 @@
     "maintainer": "nigel-daniels",
     "maintainerURL": "https://github.com/nigel-daniels",
     "description": "Shows a fish every day, fish is good for you :)",
-    "issues": []
+    "issues": [],
+    "stars": 5
   },
   {
     "name": "MMM-fitbit",
@@ -2979,7 +3019,8 @@
     "maintainer": "SVendittelli",
     "maintainerURL": "",
     "description": "Display your Fitbit statistics.",
-    "issues": []
+    "issues": [],
+    "stars": 26
   },
   {
     "name": "MMM-FlagRise",
@@ -2988,7 +3029,8 @@
     "maintainer": "ItsMeBrille",
     "maintainerURL": "https://github.com/ItsMeBrille",
     "description": "A module to raise an image of a flag according to national flag rules. (Norwegian rules) Fetches sunrise and sunset times using <a target=\"_blank\" href=\"https://steder-api.no\">Steder-API</a>.",
-    "issues": []
+    "issues": [],
+    "stars": 1
   },
   {
     "name": "MMM-Flatastic",
@@ -2997,7 +3039,8 @@
     "maintainer": "joschi27",
     "maintainerURL": "",
     "description": "Displays information from the <a target=\"_blank\" href=\"https://www.flatastic-app.com\">flatastic</a> commune management app.",
-    "issues": []
+    "issues": [],
+    "stars": 4
   },
   {
     "name": "MMM-flicio",
@@ -3006,7 +3049,8 @@
     "maintainer": "nomis6432",
     "maintainerURL": "https://github.com/nomis6432",
     "description": "Send notifications to other modules with flic.io buttons.",
-    "issues": []
+    "issues": [],
+    "stars": 1
   },
   {
     "name": "MMM-flick-gestures",
@@ -3015,7 +3059,8 @@
     "maintainer": "jancalve",
     "maintainerURL": "",
     "description": "Detecting 3D gesture with GestIC Sensor (MGC3130).",
-    "issues": []
+    "issues": [],
+    "stars": 5
   },
   {
     "name": "MMM-Flickr",
@@ -3024,7 +3069,8 @@
     "maintainer": "kapsolas",
     "maintainerURL": "",
     "description": "Load last 20 images posted to user's Flickr photostream to mirror and animate them. API key required.",
-    "issues": []
+    "issues": [],
+    "stars": 12
   },
   {
     "name": "MMM-FlightRadarTracker",
@@ -3033,7 +3079,8 @@
     "maintainer": "jesmak",
     "maintainerURL": "https://github.com/jesmak",
     "description": "Module that tracks nearby planes based on Flightradar24 data.",
-    "issues": []
+    "issues": [],
+    "stars": 18
   },
   {
     "name": "MMM-Flights",
@@ -3051,7 +3098,8 @@
     "maintainer": "E3V3A",
     "maintainerURL": "https://github.com/E3V3A",
     "description": "A flight radar that display airplane/flight details of what is currently flying in the airspace above some location.",
-    "issues": []
+    "issues": [],
+    "stars": 19
   },
   {
     "name": "MMM-FlightTracker",
@@ -3060,7 +3108,8 @@
     "maintainer": "tbouron",
     "maintainerURL": "https://github.com/tbouron",
     "description": "Module that uses ADS-B systems to track and display nearby planes.",
-    "issues": []
+    "issues": [],
+    "stars": 10
   },
   {
     "name": "MMM-FlipClock",
@@ -3069,7 +3118,8 @@
     "maintainer": "MarcLandis",
     "maintainerURL": "",
     "description": "A classic flip clock that is powered by the awesome <a target=\"_blank\" href=\"https://pqina.nl/flip\">flip plugin</a>.",
-    "issues": []
+    "issues": [],
+    "stars": 16
   },
   {
     "name": "MMM-Flo",
@@ -3078,7 +3128,8 @@
     "maintainer": "kagjerde",
     "maintainerURL": "",
     "description": "Displays tide table for Norway.",
-    "issues": []
+    "issues": [],
+    "stars": 0
   },
   {
     "name": "MMM-FloGraph",
@@ -3087,7 +3138,8 @@
     "maintainer": "kagjerde",
     "maintainerURL": "",
     "description": "Displays tide graph for Norway.",
-    "issues": []
+    "issues": [],
+    "stars": 0
   },
   {
     "name": "MMM-FMI",
@@ -3096,7 +3148,8 @@
     "maintainer": "mykle1",
     "maintainerURL": "",
     "description": "Find My iPhone tells you the location of your iPhone and sends loud, beeping tones, even when muted.",
-    "issues": []
+    "issues": [],
+    "stars": 14
   },
   {
     "name": "MMM-forecast-io",
@@ -3105,7 +3158,8 @@
     "maintainer": "dmcinnes",
     "maintainerURL": "",
     "description": "Display weather based on forecast API.",
-    "issues": []
+    "issues": [],
+    "stars": 57
   },
   {
     "name": "MMM-forecast-io",
@@ -3114,7 +3168,8 @@
     "maintainer": "idoodler",
     "maintainerURL": "",
     "description": "Fork of <a target=\"_blank\" href=\"https://github.com/dmcinnes/MMM-forecast-io\">MMM-forecast-io</a> Display weather based on forecast API. Uses the <code>INDOOR_TEMPERATURE</code> notification to display the indoor temperature emitted by some modules.",
-    "issues": []
+    "issues": [],
+    "stars": 2
   },
   {
     "name": "MMM-Formula1",
@@ -3123,7 +3178,8 @@
     "maintainer": "ianperrin",
     "maintainerURL": "",
     "description": "Display the driver standings from the current Formula 1 season.",
-    "issues": []
+    "issues": [],
+    "stars": 28
   },
   {
     "name": "MMM-Fortnite",
@@ -3132,7 +3188,8 @@
     "maintainer": "retroflex",
     "maintainerURL": "",
     "description": "Shows Fortnite players' stats (score, matches played and kills).",
-    "issues": []
+    "issues": [],
+    "stars": 1
   },
   {
     "name": "MMM-FortniteStats",
@@ -3141,7 +3198,8 @@
     "maintainer": "yourdawi",
     "maintainerURL": "",
     "description": "Display Fortnite Stats.",
-    "issues": []
+    "issues": [],
+    "stars": 2
   },
   {
     "name": "MMM-Fortune",
@@ -3150,7 +3208,8 @@
     "maintainer": "mykle1",
     "maintainerURL": "",
     "description": "A fortune cookie for your MagicMirror².",
-    "issues": []
+    "issues": [],
+    "stars": 9
   },
   {
     "name": "MMM-FrameLight",
@@ -3159,7 +3218,8 @@
     "maintainer": "RaspiManu",
     "maintainerURL": "",
     "description": "Controlling an RGB-LED strip around a smart mirror with or without touch input. It provides features for static background lighting, highly customizable effects on notifications and party lighting.",
-    "issues": []
+    "issues": [],
+    "stars": 10
   },
   {
     "name": "MMM-FranceInfo",
