@@ -56,13 +56,13 @@ async function updateData () {
       const repositoryId = module.id;
       const repositoryApiUrl = `https://api.github.com/repos/${repositoryId}`;
       moduleCount += 1;
-      printProgress(moduleCount, moduleListLength);
 
       // Check whether the data should be retrieved again
       const lastUpdate = previousData.repositories?.find((repo) => repo.id === repositoryId)?.gitHubDataLastUpdate;
       const shouldFetchData = shouldFetch(module, lastUpdate);
 
       if (shouldFetchData) {
+        printProgress(moduleCount, moduleListLength);
         const response = await fetch(repositoryApiUrl);
         const data = await response.json();
         queryCount += 1;
