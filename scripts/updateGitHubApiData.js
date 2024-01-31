@@ -1,13 +1,11 @@
 import fs from "node:fs";
-import process from "node:process";
 
 let queryCount = 0;
 let maxQueryCount = 100;
 let moduleCount = 0;
 
 function printProgress (count, total) {
-  process.stdout.cursorTo(0);
-  process.stdout.write(`${count} / ${total}`);
+  console.log(`${count} / ${total}`);
 }
 
 function getJson (filePath) {
