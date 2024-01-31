@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "2024-01-31T17:53:05.683Z",
+  "lastUpdate": "2024-01-31T23:34:30.448Z",
   "modules": [
     {
       "name": "MMM-01ZM",
@@ -2497,7 +2497,8 @@
       "maintainer": "nigel-daniels",
       "maintainerURL": "https://github.com/nigel-daniels",
       "description": "Display information published by the FAA on delays and weather conditions at some US airports.",
-      "issues": []
+      "issues": [],
+      "outdated": "Deprecated. API changed (look at issue 3)."
     },
     {
       "name": "MMM-Face-Multi-User-Recognition-SMAI",

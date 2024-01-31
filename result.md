@@ -1,6 +1,6 @@
 # Result of the module analysis
 
-Last update: 2024-01-31T19:03:12+01:00
+Last update: 2024-02-01T00:44:40+01:00
 
 ## Statistics
 
@@ -757,7 +757,7 @@ Last update: 2024-01-31T19:03:12+01:00
    - @stylistic/eslint-plugin             ^1.5.3  →     ^1.5.4
    - @types/express                     ^4.17.11  →   ^4.17.21
    - @types/magicmirror-module           ^2.16.0  →    ^2.16.5
-   - @types/node                       ^14.14.22  →  ^20.11.13
+   - @types/node                       ^14.14.22  →  ^20.11.14
    - @typescript-eslint/eslint-plugin    ^6.19.1  →    ^6.20.0
    - @typescript-eslint/parser           ^6.19.1  →    ^6.20.0
    - rxjs                                 ^7.5.5  →     ^7.8.1
@@ -2272,7 +2272,7 @@ Last update: 2024-01-31T19:03:12+01:00
 1. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
 2. Information: There are updates for 3 dependencie(s):
    - @mapbox/node-pre-gyp   ^1.0.10  →    ^1.0.11
-   - @types/node           ^20.10.6  →  ^20.11.13
+   - @types/node           ^20.10.6  →  ^20.11.14
    - esbuild               ^0.19.11  →    ^0.20.0
 
 
@@ -6455,7 +6455,7 @@ Last update: 2024-01-31T19:03:12+01:00
 
 ### [MMM-NOAA3 by cowboysdude](https://github.com/cowboysdude/MMM-NOAA3)
 
-0. This module is outdated: Abandoned. No reactions to issues and PRs since years. It no longer seems to work.
+0. This module is outdated: Abandoned. No reactions to issues and PRs since years.
 1. There are no specific keywords in 'package.json'. We would use them as tags on the module list page. Add a few meaningful terms to the keywords in the package.json. Not just “magicmirror” or “module”.
 2. Typo: Found `Magic Mirror` in file `MMM-NOAA3.js`: Replace it with `MagicMirror²`.
 3. Recommendation: Found `new Date()` in file `MMM-NOAA3.js`: Replace it by `new Date(Date.now())`: [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
