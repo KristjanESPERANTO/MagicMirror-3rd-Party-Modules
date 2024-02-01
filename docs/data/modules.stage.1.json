@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "2024-01-31T23:34:30.448Z",
+  "lastUpdate": "2024-02-01T21:58:50.050Z",
   "modules": [
     {
       "name": "MMM-01ZM",
@@ -977,9 +977,9 @@
     },
     {
       "name": "camera",
-      "url": "https://github.com/alexyak/camera",
-      "id": "alexyak/camera",
-      "maintainer": "alexyak",
+      "url": "https://github.com/Rallymen007/camera",
+      "id": "Rallymen007/camera",
+      "maintainer": "Rallymen007",
       "maintainerURL": "",
       "description": "Display a webcamera video feed.",
       "issues": []
@@ -2538,9 +2538,9 @@
     },
     {
       "name": "MMM-Facial-Recognition",
-      "url": "https://github.com/paviro/MMM-Facial-Recognition",
-      "id": "paviro/MMM-Facial-Recognition",
-      "maintainer": "paviro",
+      "url": "https://github.com/JonasGoebel/MMM-Facial-Recognition",
+      "id": "JonasGoebel/MMM-Facial-Recognition",
+      "maintainer": "JonasGoebel",
       "maintainerURL": "",
       "description": "Facial recognition and module swapping based on the current user.",
       "issues": []
@@ -2551,8 +2551,9 @@
       "id": "normyx/MMM-Facial-Recognition-OCV3",
       "maintainer": "normyx",
       "maintainerURL": "",
-      "description": "Modified version of the above PaViRo one that works with OpenCV 3.3+, where training tools is merge in one project and code simplifications.",
-      "issues": []
+      "description": "Modified version of MMM-Facial-Recognition that works with OpenCV 3.3+, where training tools is merge in one project and code simplifications.",
+      "issues": [],
+      "outdated": "Abandoned. No reactions to issues since years. Seems not to work anymore."
     },
     {
       "name": "facts",
@@ -2848,17 +2849,9 @@
       "id": "dmcinnes/MMM-forecast-io",
       "maintainer": "dmcinnes",
       "maintainerURL": "",
-      "description": "Display weather based on forecast API.",
-      "issues": []
-    },
-    {
-      "name": "MMM-forecast-io",
-      "url": "https://github.com/idoodler/MMM-forecast-io",
-      "id": "idoodler/MMM-forecast-io",
-      "maintainer": "idoodler",
-      "maintainerURL": "",
-      "description": "Fork of <a target=\"_blank\" href=\"https://github.com/dmcinnes/MMM-forecast-io\">MMM-forecast-io</a> Display weather based on forecast API. Uses the <code>INDOOR_TEMPERATURE</code> notification to display the indoor temperature emitted by some modules.",
-      "issues": []
+      "description": "Display weather based on forecast API (DarkSky).",
+      "issues": [],
+      "outdated": "Deprecated. DarkSky API no longer works since 2023-03-31."
     },
     {
       "name": "MMM-Formula1",

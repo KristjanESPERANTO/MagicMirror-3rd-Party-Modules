@@ -1,16 +1,16 @@
 # Result of the module analysis
 
-Last update: 2024-02-01T00:44:40+01:00
+Last update: 2024-02-01T23:09:01+01:00
 
 ## Statistics
 
 |                      | number   |
 |:---------------------|:--------:|
-| modules analyzed     |   1117   |
-| maintainer           |    627   |
-| modules with issues  |   1112   |
-| issues               |   7322   |
-| modules at github    |   1108   |
+| modules analyzed     |   1116   |
+| maintainer           |    629   |
+| modules with issues  |   1111   |
+| issues               |   7318   |
+| modules at github    |   1107   |
 | modules at gitlab    |      8   |
 | modules at bitbucket |      1   |
 
@@ -757,7 +757,7 @@ Last update: 2024-02-01T00:44:40+01:00
    - @stylistic/eslint-plugin             ^1.5.3  →     ^1.5.4
    - @types/express                     ^4.17.11  →   ^4.17.21
    - @types/magicmirror-module           ^2.16.0  →    ^2.16.5
-   - @types/node                       ^14.14.22  →  ^20.11.14
+   - @types/node                       ^14.14.22  →  ^20.11.16
    - @typescript-eslint/eslint-plugin    ^6.19.1  →    ^6.20.0
    - @typescript-eslint/parser           ^6.19.1  →    ^6.20.0
    - rxjs                                 ^7.5.5  →     ^7.8.1
@@ -1023,7 +1023,7 @@ Last update: 2024-02-01T00:44:40+01:00
 7. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
 8. The branch name is 'master'. Consider renaming it to 'main'.
 
-### [camera by alexyak](https://github.com/alexyak/camera)
+### [camera by Rallymen007](https://github.com/Rallymen007/camera)
 
 1. No image found.
 2. Recommendation: Module name doesn't follow the recommended pattern (it doesn't start with `MMM-`). Consider renaming your module.
@@ -2270,10 +2270,11 @@ Last update: 2024-02-01T00:44:40+01:00
 ### [EXT-Detector by bugsounet](https://github.com/bugsounet/EXT-Detector)
 
 1. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
-2. Information: There are updates for 3 dependencie(s):
-   - @mapbox/node-pre-gyp   ^1.0.10  →    ^1.0.11
-   - @types/node           ^20.10.6  →  ^20.11.14
-   - esbuild               ^0.19.11  →    ^0.20.0
+2. Information: There are updates for 4 dependencie(s):
+   - @mapbox/node-pre-gyp        ^1.0.10  →    ^1.0.11
+   - @picovoice/porcupine-node    ^3.0.1  →     ^3.0.2
+   - @types/node                ^20.10.6  →  ^20.11.16
+   - esbuild                    ^0.19.11  →    ^0.20.0
 
 
 ### [EXT-FreeboxTV by bugsounet](https://github.com/bugsounet/EXT-FreeboxTV)
@@ -2451,6 +2452,7 @@ Last update: 2024-02-01T00:44:40+01:00
 
 ### [MMM-FAA-Delay by nigel-daniels](https://github.com/nigel-daniels/MMM-FAA-Delay)
 
+0. This module is outdated: Deprecated. API changed (look at issue 3).
 1. Typo: Found `Magic Mirror` in file `MMM-FAA-Delay.js`: Replace it with `MagicMirror²`.
 2. Typo: Found `MagicMirror2` in file `README.md`: Replace it with `MagicMirror²`.
 3. Outdated: Found `MichMich/MagicMirror` in file `README.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
@@ -2498,7 +2500,7 @@ Last update: 2024-02-01T00:44:40+01:00
 5. Recommendation: Found `new Date()` in file `main.js`: Replace it by `new Date(Date.now())`: [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
 6. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
 
-### [MMM-Facial-Recognition by paviro](https://github.com/paviro/MMM-Facial-Recognition)
+### [MMM-Facial-Recognition by JonasGoebel](https://github.com/JonasGoebel/MMM-Facial-Recognition)
 
 1. No image found.
 2. Typo: Found `Magic Mirror` in file `MMM-Facial-Recognition.js`: Replace it with `MagicMirror²`.
@@ -2510,6 +2512,7 @@ Last update: 2024-02-01T00:44:40+01:00
 
 ### [MMM-Facial-Recognition-OCV3 by normyx](https://github.com/normyx/MMM-Facial-Recognition-OCV3)
 
+0. This module is outdated: Abandoned. No reactions to issues since years. Seems not to work anymore.
 1. No image found.
 2. Typo: Found `Magic Mirror` in file `MMM-Facial-Recognition-OCV3.js`: Replace it with `MagicMirror²`.
 3. Typo: Found `Magic Mirror` in file `package.json`: Replace it with `MagicMirror²`.
@@ -2827,15 +2830,7 @@ Last update: 2024-02-01T00:44:40+01:00
 
 ### [MMM-forecast-io by dmcinnes](https://github.com/dmcinnes/MMM-forecast-io)
 
-1. There is no `package.json`. We need this file to gather information about the module for the module list page.
-2. Outdated: Found `MichMich/MagicMirror` in file `README.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
-3. Recommendation: Found `XMLHttpRequest` in file `d3.min.js`: Replace it with built-in fetch.
-4. Warning: No LICENSE file.
-5. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
-6. The branch name is 'master'. Consider renaming it to 'main'.
-
-### [MMM-forecast-io by idoodler](https://github.com/idoodler/MMM-forecast-io)
-
+0. This module is outdated: Deprecated. DarkSky API no longer works since 2023-03-31.
 1. There is no `package.json`. We need this file to gather information about the module for the module list page.
 2. Outdated: Found `MichMich/MagicMirror` in file `README.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
 3. Recommendation: Found `XMLHttpRequest` in file `d3.min.js`: Replace it with built-in fetch.
@@ -3389,7 +3384,7 @@ Last update: 2024-02-01T00:44:40+01:00
 
 1. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
 2. Information: There are updates for 1 dependencie(s):
-   - growatt  ^0.7.1  →  ^0.7.2
+   - growatt  ^0.7.1  →  ^0.7.3
 
 
 ### [MMM-Growatt by dekinet](https://github.com/dekinet/MMM-Growatt)
@@ -3406,7 +3401,7 @@ Last update: 2024-02-01T00:44:40+01:00
 
 1. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
 2. Information: There are updates for 1 dependencie(s):
-   - growatt  ^0.7.1  →  ^0.7.2
+   - growatt  ^0.7.1  →  ^0.7.3
 
 
 ### [MMM-GyeonggiBus by iceship](https://github.com/iceship/MMM-GyeonggiBus)
@@ -7987,10 +7982,9 @@ Last update: 2024-02-01T00:44:40+01:00
 3. Typo: Found `MagicMirror2` in file `README.md`: Replace it with `MagicMirror²`.
 4. Outdated: Found `MichMich/MagicMirror` in file `README.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
 5. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
-6. Recommendation: Found `"node-fetch"` in file `node_helper.js`: Replace it with built-in fetch.
-7. Warning: No LICENSE file.
-8. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
-9. The branch name is 'master'. Consider renaming it to 'main'.
+6. Warning: No LICENSE file.
+7. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
+8. The branch name is 'master'. Consider renaming it to 'main'.
 
 ### [MMM-Rest by Tuxdiver](https://github.com/Tuxdiver/MMM-Rest)
 
