@@ -23,10 +23,10 @@ function createCard (moduleData) {
     card.querySelector(".issues").remove();
   }
 
-  if (moduleData.stars > 0) {
-    card.querySelector(".stars").textContent = moduleData.stars;
-  } else {
+  if (typeof moduleData.stars === "undefined") {
     card.querySelector(".stars").remove();
+  } else {
+    card.querySelector(".stars").textContent = moduleData.stars;
   }
 
   if (moduleData.image) {
