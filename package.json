@@ -39,7 +39,7 @@
   },
   "scripts": {
     "start": "ntl --autocomplete --size 50 --exclude start lint* prepare test",
-    "all": "npm run createModuleList && npm run getModules && npm run expandModuleList && npm run checkModules && npm run updateGitHubData",
+    "all": "npm run createModuleList && npm run updateGitHubData && npm run getModules && npm run expandModuleList && npm run checkModules",
     "createModuleList": "node scripts/create_module_list.js",
     "getModules": "python3 scripts/get_modules.py",
     "expandModuleList": "node scripts/expand_module_list_with_repo_data.js",
@@ -56,10 +56,10 @@
     "descriptions": {
       "all": "Run all scripts (1 till 4) on all modules. Requires a lot of time and storage space!",
       "createModuleList": "Script 1: Convert the official module list from the wiki into a json file.",
-      "getModules": "Script 2: Get all modules with `git cone`. Requires a lot of time and storage space!",
-      "expandModuleList": "Script 3: Extend the module list with information from the package.json. And get an image if one is available and the license is okay.",
-      "checkModules": "Script 4: Perform various checks on the modules.",
-      "updateGitHubData": "Script 5: Update the JSON file that collects the GitHub information of the modules.",
+      "updateGitHubData": "Script 2: Update the JSON file that collects the GitHub information of the modules.",
+      "getModules": "Script 3: Get all modules with `git cone`. Requires a lot of time and storage space!",
+      "expandModuleList": "Script 4: Extend the module list with information from the package.json. And get an image if one is available and the license is okay.",
+      "checkModules": "Script 5: Perform various checks on the modules.",
       "ownList": "Test only defined modules. See README.",
       "lint": "Check this repository for linter and formatting problems.",
       "lint:fix": "Fix automatically fixable linter or formatting problems of this repository.",
