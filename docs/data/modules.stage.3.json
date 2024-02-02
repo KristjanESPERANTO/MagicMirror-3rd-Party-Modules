@@ -1894,6 +1894,7 @@
     "maintainerURL": "https://github.com/mlbonniec",
     "description": "Display your Bitcoin Coinbase balance.",
     "issues": [],
+    "outdated": "Abandoned. Repo has been archived at 2023-07-26.",
     "stars": 12,
     "tags": [
       "coinbase",
@@ -2032,6 +2033,7 @@
     "issues": [
       "There is no `package.json`. We need this file to gather information about the module for the module list page."
     ],
+    "outdated": "Abandoned. Repo has been archived at 2020-06-10.",
     "stars": 9
   },
   {
@@ -2438,6 +2440,7 @@
     "issues": [
       "There is no `package.json`. We need this file to gather information about the module for the module list page."
     ],
+    "outdated": "Abandoned. Repo has been archived at 2020-06-10.",
     "stars": 10
   },
   {
@@ -2844,6 +2847,7 @@
     "maintainerURL": "",
     "description": "A highly configurable module for displaying domoticz information and performing actions on Domoticz.",
     "issues": [],
+    "outdated": "Abandoned. Repo has been archived at 2023-07-05.",
     "stars": 0,
     "tags": [
       "domoticz"
@@ -2891,6 +2895,7 @@
       "`package.json` issue: No description",
       "There are no specific keywords in 'package.json'. We would use them as tags on the module list page. Add a few meaningful terms to the keywords in the package.json. Not just “magicmirror” or “module”."
     ],
+    "outdated": "Abandoned. Repo has been archived at 2023-10-24.",
     "stars": 1,
     "license": "ISC",
     "image": "media-01-developer.dribbble.com.jpg"
@@ -4134,6 +4139,7 @@
     "issues": [
       "There is no `package.json`. We need this file to gather information about the module for the module list page."
     ],
+    "outdated": "Abandoned. Repo has been archived at 2022-06-20.",
     "stars": 3
   },
   {
@@ -4311,6 +4317,7 @@
     "maintainerURL": "https://github.com/jesmak",
     "description": "Module that tracks packages from Finnish Posti and/or Matkahuolto.",
     "issues": [],
+    "outdated": "Abandoned. Repo has been archived at 2024-01-22.",
     "stars": 0,
     "tags": [
       "parcel",
@@ -4430,6 +4437,7 @@
     "maintainerURL": "https://github.com/jesmak",
     "description": "Module that tracks nearby planes based on Flightradar24 data.",
     "issues": [],
+    "outdated": "Abandoned. Repo has been archived at 2024-01-22.",
     "stars": 18,
     "tags": [
       "flights",
@@ -6894,6 +6902,7 @@
     "issues": [
       "No image found."
     ],
+    "outdated": "Abandoned. Repo has been archived at 2020-12-10.",
     "stars": 0,
     "tags": [
       "skolmat",
@@ -7093,6 +7102,7 @@
     "maintainerURL": "",
     "description": "Display the song you are currently streaming on your <a target=\"_blank\" href=\"https://github.com/librespot-org/librespot-java\">Librespot Java</a> Spotify Speaker.",
     "issues": [],
+    "outdated": "Abandoned. Repo has been archived at 2023-10-01.",
     "stars": 4,
     "tags": [
       "spotify"
@@ -7739,15 +7749,14 @@
   },
   {
     "name": "MMM-Meniny",
-    "url": "https://github.com/eouia/MMM-Meniny",
-    "id": "eouia/MMM-Meniny",
-    "maintainer": "eouia",
+    "url": "https://github.com/andersarstrand/MMM-Meniny",
+    "id": "andersarstrand/MMM-Meniny",
+    "maintainer": "andersarstrand",
     "maintainerURL": "",
-    "description": "Display Slovak name of day.",
+    "description": "Display Swedish name of day.",
     "issues": [
       "There is no `package.json`. We need this file to gather information about the module for the module list page."
-    ],
-    "stars": 4
+    ]
   },
   {
     "name": "MMM-MensaMax",
@@ -8094,6 +8103,7 @@
     "issues": [
       "There is no `package.json`. We need this file to gather information about the module for the module list page."
     ],
+    "outdated": "Abandoned. Repo has been archived at 2023-10-16.",
     "stars": 19
   },
   {
@@ -9250,6 +9260,7 @@
     "maintainerURL": "",
     "description": "A MagicMirror² Module for Nagios.",
     "issues": [],
+    "outdated": "Abandoned. Repo has been archived at 2023-03-09.",
     "stars": 6,
     "tags": [
       "nagios"
@@ -9763,6 +9774,7 @@
       "`package.json` issue: No description",
       "No image found."
     ],
+    "outdated": "Abandoned. Repo has been archived at 2023-07-23.",
     "stars": 0,
     "tags": [
       "crypto",
@@ -9978,6 +9990,7 @@
     "maintainerURL": "https://github.com/jesmak",
     "description": "Display the song you are currently listening to on AIMP.",
     "issues": [],
+    "outdated": "Abandoned. Repo has been archived at 2024-01-22.",
     "stars": 0,
     "tags": [
       "aimp"
@@ -9993,6 +10006,7 @@
     "maintainerURL": "",
     "description": "Display the song you are currently listening to on Spotify.",
     "issues": [],
+    "outdated": "Abandoned. No reactions to issues since years. No installation instructions. It no longer seems to work.",
     "stars": 204,
     "tags": [
       "spotify"
@@ -10069,6 +10083,7 @@
     "issues": [
       "There is no `package.json`. We need this file to gather information about the module for the module list page."
     ],
+    "outdated": "Abandoned. Repo has been archived at 2020-06-10.",
     "stars": 15
   },
   {
@@ -11722,7 +11737,8 @@
     "description": "Displays your Questrade positions.",
     "issues": [
       "There is no `package.json`. We need this file to gather information about the module for the module list page."
-    ]
+    ],
+    "stars": 1
   },
   {
     "name": "MMM-Quotable",
@@ -11733,7 +11749,8 @@
     "description": "Display random quotes using the <a target=\"_blank\" href=\"https://github.com/lukePeavey/quotable\">Quotable API</a>. Filters quotes by max length and tags.",
     "issues": [
       "There is no `package.json`. We need this file to gather information about the module for the module list page."
-    ]
+    ],
+    "stars": 0
   },
   {
     "name": "MMM-quote-of-the-day",
@@ -11743,6 +11760,7 @@
     "maintainerURL": "",
     "description": "Show a random quote from an online collection of quotations by authors, celebrities, and newsmakers. Multi language supported.",
     "issues": [],
+    "stars": 25,
     "tags": [
       "quotes"
     ],
@@ -11758,7 +11776,8 @@
     "description": "Module that displays Raider IO score for multiple characters over any realms or regions.",
     "issues": [
       "There is no `package.json`. We need this file to gather information about the module for the module list page."
-    ]
+    ],
+    "stars": 3
   },
   {
     "name": "MMM-rain-forecast",
@@ -11769,7 +11788,8 @@
     "description": "Graphical rain forecast for the Netherlands, no dependies or outside scripts needed. Superfast with scalable vector graphics in desired color.",
     "issues": [
       "There is no `package.json`. We need this file to gather information about the module for the module list page."
-    ]
+    ],
+    "stars": 9
   },
   {
     "name": "MMM-RAIN-MAP",
@@ -11779,6 +11799,7 @@
     "maintainerURL": "https://github.com/jalibu",
     "description": "A rain radar map based on OpenStreetMap. Multiple location markers, option for alternating positions and zoom levels.",
     "issues": [],
+    "stars": 35,
     "tags": [
       "weather",
       "rain",
@@ -11799,7 +11820,8 @@
     "description": "Displays a Precipitation Radar for your location.",
     "issues": [
       "There is no `package.json`. We need this file to gather information about the module for the module list page."
-    ]
+    ],
+    "stars": 13
   },
   {
     "name": "MMM-rainfc",
@@ -11809,6 +11831,7 @@
     "maintainerURL": "",
     "description": "2 hour Dutch rain forecast graph based on Buienradar.",
     "issues": [],
+    "stars": 7,
     "tags": [
       "rain",
       "forecast"
@@ -11828,7 +11851,8 @@
       "`package.json` issue: No repository field.",
       "`package.json` issue: No license field.",
       "There are no keywords in 'package.json'. We would use them as tags on the module list page."
-    ]
+    ],
+    "stars": 2
   },
   {
     "name": "MMM-RainForecast-FR",
@@ -11840,6 +11864,7 @@
     "issues": [
       "There are no keywords in 'package.json'. We would use them as tags on the module list page."
     ],
+    "stars": 7,
     "license": "MIT",
     "image": "screenshotRainForecast.jpg"
   },
@@ -11852,7 +11877,8 @@
     "description": "Display random quotes from brainyquote.",
     "issues": [
       "There is no `package.json`. We need this file to gather information about the module for the module list page."
-    ]
+    ],
+    "stars": 18
   },
   {
     "name": "MMM-RandomPhoto",
@@ -11866,6 +11892,7 @@
       "There are no keywords in 'package.json'. We would use them as tags on the module list page.",
       "No image found."
     ],
+    "stars": 5,
     "license": "ISC"
   },
   {
@@ -11877,7 +11904,8 @@
     "description": "Display a random quote from various authorship using Paperquote's API.",
     "issues": [
       "There is no `package.json`. We need this file to gather information about the module for the module list page."
-    ]
+    ],
+    "stars": 1
   },
   {
     "name": "MMM-RandomQuranAyah",
@@ -11887,6 +11915,7 @@
     "maintainerURL": "https://github.com/slametps",
     "description": "Display ayah/verse of Qur'an randomly.",
     "issues": [],
+    "stars": 11,
     "tags": [
       "moslem",
       "islam",
@@ -11904,7 +11933,8 @@
     "description": "Load a playlist into a YouTube player, AND shuffle the videos in the playlist.",
     "issues": [
       "There is no `package.json`. We need this file to gather information about the module for the module list page."
-    ]
+    ],
+    "stars": 14
   },
   {
     "name": "MMM-RBB-Weather",
@@ -11916,6 +11946,7 @@
     "issues": [
       "There are no keywords in 'package.json'. We would use them as tags on the module list page."
     ],
+    "stars": 5,
     "license": "MIT",
     "image": ".github-screen.jpg"
   },
@@ -11928,7 +11959,8 @@
     "description": "Displays the live timetable of the German pop culture TV/Streaming channel RocketBeansTV.",
     "issues": [
       "There is no `package.json`. We need this file to gather information about the module for the module list page."
-    ]
+    ],
+    "stars": 1
   },
   {
     "name": "MMM-RecentRainfall",
@@ -11939,7 +11971,8 @@
     "description": "Display recent US rainfall with a small map of your state.",
     "issues": [
       "There is no `package.json`. We need this file to gather information about the module for the module list page."
-    ]
+    ],
+    "stars": 2
   },
   {
     "name": "MMM-Recipe",
@@ -11952,6 +11985,7 @@
       "`package.json` issue: No description",
       "There are no keywords in 'package.json'. We would use them as tags on the module list page."
     ],
+    "stars": 9,
     "license": "MIT",
     "image": "pics-recipe1.jpg"
   },
@@ -11982,6 +12016,7 @@
       "There are no keywords in 'package.json'. We would use them as tags on the module list page.",
       "No image found."
     ],
+    "stars": 34,
     "license": "ISC"
   },
   {
@@ -11992,6 +12027,7 @@
     "maintainerURL": "https://github.com/hayseedbyte",
     "description": "Horizontal scrolling news ticker using reddit r/news titles to avoid clickbait.",
     "issues": [],
+    "stars": 4,
     "tags": [
       "news",
       "ticker",
@@ -12009,7 +12045,8 @@
     "description": "A simple module to display user karma from Reddit.com.",
     "issues": [
       "There is no `package.json`. We need this file to gather information about the module for the module list page."
-    ]
+    ],
+    "stars": 3
   },
   {
     "name": "MMM-Reddito",
@@ -12020,7 +12057,8 @@
     "description": "Shows specified subreddits(Text only), can have multiple instances.",
     "issues": [
       "There is no `package.json`. We need this file to gather information about the module for the module list page."
-    ]
+    ],
+    "stars": 0
   },
   {
     "name": "MMM-Regenradar",
@@ -12031,7 +12069,8 @@
     "description": "Rain radar for locations in Germany. The weather dates were provided by <a target=\"_blank\" href=\"https://morgenwirdes.de\">Morgenwirdes</a>.",
     "issues": [
       "There is no `package.json`. We need this file to gather information about the module for the module list page."
-    ]
+    ],
+    "stars": 2
   },
   {
     "name": "MMM-Remote-Control",
@@ -12041,6 +12080,7 @@
     "maintainerURL": "",
     "description": "Cleanly shutdown (or reboot) your mirror, edit which modules are shown on your mirror and turn your monitor off and on from a simple website, i.e. from your smartphone.",
     "issues": [],
+    "stars": 468,
     "tags": [
       "remote control",
       "control"
@@ -12057,7 +12097,8 @@
     "description": "Plugin for <code>MMM-Remote-Control</code> to update installable modules automatically.",
     "issues": [
       "There is no `package.json`. We need this file to gather information about the module for the module list page."
-    ]
+    ],
+    "stars": 24
   },
   {
     "name": "MMM-RemoteCompliments",
@@ -12068,7 +12109,8 @@
     "description": "Provides seamless integration with Google Drive™ to display compliments and images from Drive.",
     "issues": [
       "There is no `package.json`. We need this file to gather information about the module for the module list page."
-    ]
+    ],
+    "stars": 22
   },
   {
     "name": "MMM-RemoteTemperature",
@@ -12078,6 +12120,7 @@
     "maintainerURL": "https://github.com/balassy",
     "description": "Displays the temperature from a remote sensor that is capable to POST the measured value through HTTP protocol in JSON.",
     "issues": [],
+    "stars": 14,
     "tags": [
       "temperature",
       "raspberrypi"
@@ -12114,7 +12157,8 @@
     "description": "Display live info from your 3D printer running <a target=\"_blank\" href=\"https://github.com/dc42/RepRapFirmware\">RepRapFirmware</a>. This firmware is mainly used on <a target=\"_blank\" href=\"https://www.duet3d.com\">Duet3D control boards (Duet Wifi &amp; Ethernet)</a>.",
     "issues": [
       "There is no `package.json`. We need this file to gather information about the module for the module list page."
-    ]
+    ],
+    "stars": 0
   },
   {
     "name": "MMM-RescueTime",
@@ -12124,6 +12168,7 @@
     "maintainerURL": "",
     "description": "Show your daily time spent using your digital devices with <a target=\"_blank\" href=\"https://www.rescuetime.com\">RescueTime</a>.",
     "issues": [],
+    "stars": 6,
     "tags": [
       "rescuetime",
       "productivity"
@@ -12141,6 +12186,7 @@
     "issues": [
       "No image found."
     ],
+    "stars": 14,
     "tags": [
       "local transport",
       "sweden"
@@ -12158,6 +12204,7 @@
       "There are no keywords in 'package.json'. We would use them as tags on the module list page.",
       "No image found."
     ],
+    "stars": 16,
     "license": "ISC"
   },
   {
@@ -12168,6 +12215,7 @@
     "maintainerURL": "",
     "description": "Module for Rijks Museum. This was developed using the Rijksmuseum API.",
     "issues": [],
+    "stars": 6,
     "tags": [
       "art",
       "rijksmuseum"
@@ -12186,6 +12234,8 @@
       "There are no keywords in 'package.json'. We would use them as tags on the module list page.",
       "No image found."
     ],
+    "outdated": "Abandoned. Repo has been archived at 2022-08-25.",
+    "stars": 25,
     "license": "MIT"
   },
   {
@@ -12198,6 +12248,7 @@
     "issues": [
       "There are no keywords in 'package.json'. We would use them as tags on the module list page."
     ],
+    "stars": 0,
     "license": "MIT",
     "image": "screenshot.jpg"
   },
@@ -12210,6 +12261,7 @@
     "description": "RKI-Covid19 data for German counties.",
     "issues": [],
     "outdated": "Obsolete, no new data.",
+    "stars": 5,
     "tags": [
       "rki"
     ],
@@ -12224,6 +12276,7 @@
     "maintainerURL": "",
     "description": "Rhein-Main local transport system (RMV) - Departure Monitor.",
     "issues": [],
+    "stars": 20,
     "tags": [
       "rmv",
       "frankfurt",
@@ -12245,6 +12298,7 @@
       "There are no keywords in 'package.json'. We would use them as tags on the module list page.",
       "No image found."
     ],
+    "stars": 2,
     "license": "MIT"
   },
   {
@@ -12260,6 +12314,7 @@
       "There are no keywords in 'package.json'. We would use them as tags on the module list page.",
       "No image found."
     ],
+    "stars": 1,
     "license": "ISC"
   },
   {
@@ -12272,6 +12327,7 @@
     "issues": [
       "No image found."
     ],
+    "stars": 1,
     "tags": [
       "rnv"
     ],
@@ -12285,6 +12341,7 @@
     "maintainerURL": "",
     "description": "Displays Rocket League Stats.",
     "issues": [],
+    "stars": 1,
     "tags": [
       "rocket league"
     ],
@@ -12299,6 +12356,7 @@
     "maintainerURL": "",
     "description": "Display status of local Roomba.",
     "issues": [],
+    "stars": 10,
     "tags": [
       "roomba"
     ],
@@ -12314,7 +12372,8 @@
     "description": "Displays the Rotten Tomatoes meter score for the current box office and movies coming soon.",
     "issues": [
       "There is no `package.json`. We need this file to gather information about the module for the module list page."
-    ]
+    ],
+    "stars": 9
   },
   {
     "name": "MMM-ROVA-trashcalendar",
@@ -12325,7 +12384,8 @@
     "description": "Module which shows when and which type of trash will be collected by Dutch garbage service ROVA.",
     "issues": [
       "There is no `package.json`. We need this file to gather information about the module for the module list page."
-    ]
+    ],
+    "stars": 0
   },
   {
     "name": "MMM-RPI-LED",
@@ -12338,6 +12398,7 @@
       "There are no keywords in 'package.json'. We would use them as tags on the module list page.",
       "No image found."
     ],
+    "stars": 4,
     "license": "MIT"
   },
   {
@@ -12349,7 +12410,8 @@
     "description": "Display any RSS feed.",
     "issues": [
       "There is no `package.json`. We need this file to gather information about the module for the module list page."
-    ]
+    ],
+    "stars": 25
   },
   {
     "name": "MMM-RTSPStream",
@@ -12361,6 +12423,7 @@
     "issues": [
       "There are no keywords in 'package.json'. We would use them as tags on the module list page."
     ],
+    "stars": 69,
     "license": "MIT",
     "image": "screenshot.jpg"
   },
@@ -12376,6 +12439,7 @@
       "There are no keywords in 'package.json'. We would use them as tags on the module list page.",
       "No image found."
     ],
+    "stars": 11,
     "license": "ISC"
   },
   {
@@ -12389,6 +12453,7 @@
       "`package.json` issue: No repository field.",
       "There are no keywords in 'package.json'. We would use them as tags on the module list page."
     ],
+    "stars": 0,
     "license": "MIT",
     "image": "img-App_Shot.jpg"
   },
@@ -12400,6 +12465,7 @@
     "maintainerURL": "https://github.com/uncleLem",
     "description": "The total losses of the russian occupier since the full-scale invasion in Ukraine, per General Staff of the Armed Forces of Ukraine.",
     "issues": [],
+    "stars": 4,
     "tags": [
       "russian invasion"
     ],
@@ -12418,6 +12484,7 @@
       "There are no keywords in 'package.json'. We would use them as tags on the module list page."
     ],
     "outdated": "Abandoned. Repo has been archived at 2019-03-14. See <a href=\"https://github.com/Arve/MMM-Entur-tavle\">MMM-Entur-tavle</a> instead.",
+    "stars": 18,
     "license": "ISC",
     "image": "images-MMM-Ruter_Full.jpg"
   },
@@ -12430,7 +12497,8 @@
     "description": "Departure monitor for the RVV (Regensburger Verkehrsverbund) public transport (bus) system (Bavaria/Germany).",
     "issues": [
       "There is no `package.json`. We need this file to gather information about the module for the module list page."
-    ]
+    ],
+    "stars": 5
   },
   {
     "name": "MMM-Sbanken",
@@ -12441,7 +12509,8 @@
     "description": "Displaying transactions and account balance from Sbanken (Norway).",
     "issues": [
       "There is no `package.json`. We need this file to gather information about the module for the module list page."
-    ]
+    ],
+    "stars": 1
   },
   {
     "name": "MMM-Scenes",
@@ -12454,6 +12523,7 @@
       "No image found."
     ],
     "outdated": "Deprecated. The successor is MMM-Scenes2.",
+    "stars": 12,
     "tags": [
       "paging",
       "animation"
@@ -12472,6 +12542,7 @@
       "There are no keywords in 'package.json'. We would use them as tags on the module list page.",
       "No image found."
     ],
+    "stars": 2,
     "license": "MIT"
   },
   {
@@ -12482,6 +12553,8 @@
     "maintainerURL": "",
     "description": "Display scottish premiere league standings.",
     "issues": [],
+    "outdated": "Abandoned. Repo has been archived at 2020-05-09.",
+    "stars": 1,
     "tags": [
       "scottish premier league"
     ],
@@ -12496,6 +12569,7 @@
     "maintainerURL": "https://github.com/Tom-Hirschberger",
     "description": "Screensaver module which shuts the screen off if USER_PRESENCE is not received within specified timeout. Can be used as PIR module in combination with <a target=\"_blank\" href=\"https://github.com/Tom-Hirschberger/MMM-GPIO-Notifications\">MMM-GPIO-Notifications</a>.",
     "issues": [],
+    "stars": 0,
     "tags": [
       "screensave",
       "pir"
@@ -12511,6 +12585,7 @@
     "maintainerURL": "",
     "description": "Cast a video from your phone to your mirror (currently can only cast YouTube).",
     "issues": [],
+    "stars": 159,
     "tags": [
       "chromecast",
       "dial",
@@ -12531,6 +12606,7 @@
     "issues": [
       "There are no keywords in 'package.json'. We would use them as tags on the module list page."
     ],
+    "stars": 2,
     "license": "MIT",
     "image": "screenshot.jpg"
   },
@@ -12542,6 +12618,7 @@
     "maintainerURL": "",
     "description": "Run a set of command-line scripts on a cron schedule and display an icon to differentiate.",
     "issues": [],
+    "stars": 6,
     "tags": [
       "volume",
       "mute",
@@ -12559,7 +12636,8 @@
     "description": "Display the current playing song from Spotify, ITunes and Co.",
     "issues": [
       "There is no `package.json`. We need this file to gather information about the module for the module list page."
-    ]
+    ],
+    "stars": 38
   },
   {
     "name": "MMM-SE-Reputation",
@@ -12572,6 +12650,7 @@
       "`package.json` issue: No repository field.",
       "There are no keywords in 'package.json'. We would use them as tags on the module list page."
     ],
+    "stars": 1,
     "license": "MIT",
     "image": "docs-module_graph.jpg"
   },
@@ -12584,7 +12663,8 @@
     "description": "Screensaver.",
     "issues": [
       "There is no `package.json`. We need this file to gather information about the module for the module list page."
-    ]
+    ],
+    "stars": 1
   },
   {
     "name": "MMM-SeawayLockTraffic",
@@ -12595,7 +12675,8 @@
     "description": "Display order of turn information for ships transiting the St Lawrence Seaway Locks.",
     "issues": [
       "There is no `package.json`. We need this file to gather information about the module for the module list page."
-    ]
+    ],
+    "stars": 0
   },
   {
     "name": "MMM-Selfie",
@@ -12607,6 +12688,7 @@
     "issues": [
       "No image found."
     ],
+    "stars": 9,
     "tags": [
       "selfie"
     ],
@@ -12622,6 +12704,7 @@
     "issues": [
       "There are no keywords in 'package.json'. We would use them as tags on the module list page."
     ],
+    "stars": 8,
     "license": "MIT",
     "image": "screenshot.jpg"
   },
@@ -12634,7 +12717,8 @@
     "description": "Web form to send arbitrary messages via <code>this.sendNotification()</code>.",
     "issues": [
       "There is no `package.json`. We need this file to gather information about the module for the module list page."
-    ]
+    ],
+    "stars": 5
   },
   {
     "name": "MMM-Seneye",
@@ -12646,7 +12730,8 @@
     "issues": [
       "`package.json` issue: No repository field.",
       "There are no keywords in 'package.json'. We would use them as tags on the module list page."
-    ]
+    ],
+    "stars": 1
   },
   {
     "name": "MMM-SensorGateway",
@@ -12658,6 +12743,7 @@
     "issues": [
       "`package.json` issue: No repository field."
     ],
+    "stars": 2,
     "tags": [
       "movesense",
       "ruuvitag",
@@ -12674,6 +12760,7 @@
     "maintainerURL": "https://github.com/Tom-Hirschberger",
     "description": "A module to send notifications based on messages received via one/multiple serial devices.",
     "issues": [],
+    "stars": 6,
     "tags": [
       "serial console",
       "tty",
@@ -12690,6 +12777,7 @@
     "maintainerURL": "https://github.com/XBCreepinJesus",
     "description": "A module to check the up/down status of servers/devices on your network.",
     "issues": [],
+    "stars": 16,
     "tags": [
       "ping",
       "server",
@@ -12709,7 +12797,8 @@
       "`package.json` issue: No repository field.",
       "`package.json` issue: No license field.",
       "There are no keywords in 'package.json'. We would use them as tags on the module list page."
-    ]
+    ],
+    "stars": 1
   },
   {
     "name": "MMM-SFMuniBusTimes",
@@ -12720,6 +12809,7 @@
     "description": "Displays the ETA of San Francisco's MUNI Bus and Rail systems based on the given stops and routes.",
     "issues": [],
     "outdated": "Abandoned. The API used no longer works, there is a new API but the developer no longer seems to be active.",
+    "stars": 3,
     "tags": [
       "muni",
       "sf",
@@ -12738,6 +12828,7 @@
     "issues": [
       "There are no keywords in 'package.json'. We would use them as tags on the module list page."
     ],
+    "stars": 5,
     "license": "ISC",
     "image": "screenshots-screenshot.jpg"
   },
@@ -12751,6 +12842,7 @@
     "issues": [
       "No image found."
     ],
+    "stars": 3,
     "tags": [
       "shabbat",
       "hebrew",
@@ -12767,7 +12859,8 @@
     "description": "Integrate Apple AirTunes/Airplay metadata coming via shairport-sync into the MagicMirror². Does not work with video or mirroring.",
     "issues": [
       "There is no `package.json`. We need this file to gather information about the module for the module list page."
-    ]
+    ],
+    "stars": 16
   },
   {
     "name": "Shelly-HT",
@@ -12778,7 +12871,8 @@
     "description": "Display data from 1 Shelly HT sensor.",
     "issues": [
       "There is no `package.json`. We need this file to gather information about the module for the module list page."
-    ]
+    ],
+    "stars": 1
   },
   {
     "name": "MMM-Shelly-PM",
@@ -12792,6 +12886,7 @@
       "There are no keywords in 'package.json'. We would use them as tags on the module list page.",
       "No compatible or wrong license field in 'package.json'. Without that, we can't use an image."
     ],
+    "stars": 2,
     "license": "UNLICENSE"
   },
   {
@@ -12804,6 +12899,7 @@
     "issues": [
       "`package.json` issue: No repository field."
     ],
+    "stars": 0,
     "tags": [
       "shelly",
       "shellyem",
@@ -12822,7 +12918,8 @@
     "description": "Display data from Shelly+ HT sensor. Forked from Shelly-HT for Gen2 device Shelly Plus HT.",
     "issues": [
       "There is no `package.json`. We need this file to gather information about the module for the module list page."
-    ]
+    ],
+    "stars": 0
   },
   {
     "name": "MMM-ShipmentTracking",
@@ -12832,6 +12929,7 @@
     "maintainerURL": "",
     "description": "Display your shipment tracking status.",
     "issues": [],
+    "stars": 26,
     "tags": [
       "shipment tracking"
     ],
@@ -12848,6 +12946,7 @@
     "issues": [
       "There are no specific keywords in 'package.json'. We would use them as tags on the module list page. Add a few meaningful terms to the keywords in the package.json. Not just “magicmirror” or “module”."
     ],
+    "stars": 1,
     "license": "MIT",
     "image": "docs-screenshot.PNG"
   },
@@ -12861,6 +12960,8 @@
     "issues": [
       "There are no keywords in 'package.json'. We would use them as tags on the module list page."
     ],
+    "outdated": "Abandoned. Repo has been archived at 2022-05-22.",
+    "stars": 19,
     "license": "MIT",
     "image": "images-MMM-Simple-Swiper-Pin-Layout.jpg"
   },
@@ -12873,7 +12974,8 @@
     "description": "Simply displays logo with local image file path or url.",
     "issues": [
       "There is no `package.json`. We need this file to gather information about the module for the module list page."
-    ]
+    ],
+    "stars": 36
   },
   {
     "name": "MMM-SimpleNotifyTrashDay",
@@ -12883,6 +12985,7 @@
     "maintainerURL": "https://github.com/sabo10o29",
     "description": "Shows trash days with simple setup.",
     "issues": [],
+    "stars": 1,
     "tags": [
       "trash day",
       "garbage"
@@ -12899,7 +13002,8 @@
     "description": "Simple and plain text module with some minor formatting options. Can also display content from text files with multiple lines.",
     "issues": [
       "There is no `package.json`. We need this file to gather information about the module for the module list page."
-    ]
+    ],
+    "stars": 7
   },
   {
     "name": "MMM-SingleStock",
@@ -12909,6 +13013,7 @@
     "maintainerURL": "https://github.com/balassy",
     "description": "Displays the stock price of a single company without any fancy animation.",
     "issues": [],
+    "stars": 6,
     "tags": [
       "stock"
     ],
@@ -12925,6 +13030,7 @@
     "issues": [
       "No image found."
     ],
+    "stars": 3,
     "tags": [
       "schema",
       "skolschema",
@@ -12943,6 +13049,7 @@
     "issues": [
       "No image found."
     ],
+    "stars": 7,
     "tags": [
       "skolmat",
       "skolmaten",
@@ -12961,6 +13068,7 @@
       "`package.json` issue: No repository field.",
       "There are no keywords in 'package.json'. We would use them as tags on the module list page."
     ],
+    "stars": 6,
     "license": "ISC",
     "image": "images-MMM-Skyss-1.jpg"
   },
@@ -12972,6 +13080,7 @@
     "maintainerURL": "",
     "description": "Display public transport in Stockholm/<strong>Sweden</strong>.",
     "issues": [],
+    "stars": 12,
     "tags": [
       "publictransport"
     ],
@@ -12988,6 +13097,7 @@
     "issues": [
       "No image found."
     ],
+    "stars": 3,
     "tags": [
       "slack"
     ],
@@ -13002,7 +13112,8 @@
     "description": "Post announcements to your mirror from a designated Slack channel.",
     "issues": [
       "There is no `package.json`. We need this file to gather information about the module for the module list page."
-    ]
+    ],
+    "stars": 5
   },
   {
     "name": "MMM-slamfm-playing-now",
@@ -13012,6 +13123,7 @@
     "maintainerURL": "https://github.com/ngnijland",
     "description": "Show what's currently playing now on the dutch radio station Slam!.",
     "issues": [],
+    "stars": 0,
     "tags": [
       "slamfm!",
       "radio",
@@ -13031,7 +13143,8 @@
     "description": "Displays your <a target=\"_blank\" href=\"https://sleeper.com\">Sleeper</a> fantasy football matchup with live updating scores.",
     "issues": [
       "There is no `package.json`. We need this file to gather information about the module for the module list page."
-    ]
+    ],
+    "stars": 0
   },
   {
     "name": "MMM-SleepWake",
@@ -13042,7 +13155,8 @@
     "description": "Module that uses an external source for motion detection, like a web camera .",
     "issues": [
       "There is no `package.json`. We need this file to gather information about the module for the module list page."
-    ]
+    ],
+    "stars": 11
   },
   {
     "name": "MMM-Smappee",
@@ -13054,6 +13168,7 @@
     "issues": [
       "There are no keywords in 'package.json'. We would use them as tags on the module list page."
     ],
+    "stars": 2,
     "license": "MIT",
     "image": ".github-preview.jpg"
   },
@@ -13066,7 +13181,8 @@
     "description": "This module allows you to transform your MagicMirror² into a touchscreen interactive experience. This includes hiding all modules (Standby Mode) and Side Menu Option to shutdown your mirror via MagicMirror² UI.",
     "issues": [
       "There is no `package.json`. We need this file to gather information about the module for the module list page."
-    ]
+    ],
+    "stars": 78
   },
   {
     "name": "MMM-SmartWebDisplay",
@@ -13078,6 +13194,7 @@
     "issues": [
       "No image found."
     ],
+    "stars": 52,
     "tags": [
       "iframe",
       "notification"
@@ -13092,6 +13209,7 @@
     "maintainerURL": "",
     "description": "Air pollution in Polish cities.",
     "issues": [],
+    "stars": 3,
     "tags": [
       "air polution"
     ],
@@ -13107,7 +13225,8 @@
     "description": "Play the retro game Snake on your mirror using your smartphone.",
     "issues": [
       "There is no `package.json`. We need this file to gather information about the module for the module list page."
-    ]
+    ],
+    "stars": 23
   },
   {
     "name": "MMM-SNCF",
@@ -13117,6 +13236,7 @@
     "maintainerURL": "",
     "description": "Display upcoming trains between 2 SNCF stations (France).",
     "issues": [],
+    "stars": 5,
     "tags": [
       "localtransport",
       "sncf",
@@ -13133,6 +13253,7 @@
     "maintainerURL": "",
     "description": "Uses SNMP to display bandwidth usage from a network device interface.",
     "issues": [],
+    "stars": 4,
     "tags": [
       "snmp",
       "bandwidth"
@@ -13149,7 +13270,8 @@
     "description": "More realistic snow plugin to improve your winter experience.",
     "issues": [
       "There is no `package.json`. We need this file to gather information about the module for the module list page."
-    ]
+    ],
+    "stars": 54
   },
   {
     "name": "MMM-soccer",
@@ -13159,6 +13281,7 @@
     "maintainerURL": "",
     "description": "Display standings from European Soccer (Football) leagues (optional voice-control).",
     "issues": [],
+    "stars": 28,
     "tags": [
       "soccer standings"
     ],
@@ -13173,6 +13296,7 @@
     "maintainerURL": "",
     "description": "Display live scores of your favorite soccer leagues/competitions.",
     "issues": [],
+    "stars": 6,
     "tags": [
       "live score",
       "soccer"
@@ -13188,6 +13312,7 @@
     "maintainerURL": "https://github.com/ngnijland",
     "description": "Displays the follower count of a Twitter user of choice.",
     "issues": [],
+    "stars": 4,
     "tags": [
       "social",
       "counter",
@@ -13209,6 +13334,7 @@
     "maintainerURL": "",
     "description": "Station monitor for bicycle networks based on the Socialbicycles API/Infrastructure, e.g. Wavelo in Kraków, Poland.",
     "issues": [],
+    "stars": 0,
     "tags": [
       "nextbike",
       "bike sharing"
@@ -13225,7 +13351,8 @@
     "description": "Display statistics from your Enphase Energy microinverter PV system.",
     "issues": [
       "There is no `package.json`. We need this file to gather information about the module for the module list page."
-    ]
+    ],
+    "stars": 6
   },
   {
     "name": "MMM-SolarEdge",
@@ -13238,6 +13365,7 @@
       "`package.json` issue: No repository field.",
       "There are no keywords in 'package.json'. We would use them as tags on the module list page."
     ],
+    "stars": 1,
     "license": "MIT",
     "image": "docs-SolarEdgePv.jpg"
   },
@@ -13250,18 +13378,8 @@
     "description": "Display statistics from your SolarEdge PV inverter system.",
     "issues": [
       "There is no `package.json`. We need this file to gather information about the module for the module list page."
-    ]
-  },
-  {
-    "name": "MMM-SolarEdge",
-    "url": "https://github.com/pizidavi/MMM-SolarEdge",
-    "id": "pizidavi/MMM-SolarEdge",
-    "maintainer": "pizidavi",
-    "maintainerURL": "",
-    "description": "Displays, updated every minute, the energy produced, used and received/released to the grid by your SolarEdge System.",
-    "issues": [
-      "There is no `package.json`. We need this file to gather information about the module for the module list page."
-    ]
+    ],
+    "stars": 5
   },
   {
     "name": "MMM-SolarEdgeLite",
@@ -13272,7 +13390,8 @@
     "description": "Display simple statistics from your SolarEdge (based on bertieuk).",
     "issues": [
       "There is no `package.json`. We need this file to gather information about the module for the module list page."
-    ]
+    ],
+    "stars": 1
   },
   {
     "name": "MMM-Solarman",
@@ -13284,6 +13403,7 @@
     "issues": [
       "There are no specific keywords in 'package.json'. We would use them as tags on the module list page. Add a few meaningful terms to the keywords in the package.json. Not just “magicmirror” or “module”."
     ],
+    "stars": 2,
     "license": "MIT",
     "image": "screenshot.jpg"
   },
@@ -13296,7 +13416,8 @@
     "description": "Display the last Solar Dynamics Observatory (SDO) picture.",
     "issues": [
       "There is no `package.json`. We need this file to gather information about the module for the module list page."
-    ]
+    ],
+    "stars": 2
   },
   {
     "name": "MMM-Sonos",
@@ -13308,6 +13429,7 @@
     "issues": [
       "There are no specific keywords in 'package.json'. We would use them as tags on the module list page. Add a few meaningful terms to the keywords in the package.json. Not just “magicmirror” or “module”."
     ],
+    "stars": 40,
     "license": "MIT",
     "image": ".github-preview.jpg"
   },
@@ -13323,6 +13445,7 @@
       "There are no keywords in 'package.json'. We would use them as tags on the module list page.",
       "No compatible or wrong license field in 'package.json'. Without that, we can't use an image."
     ],
+    "stars": 12,
     "license": "Apache 2.0"
   },
   {
@@ -13337,7 +13460,8 @@
       "`package.json` issue: No repository field.",
       "`package.json` issue: No license field.",
       "There are no keywords in 'package.json'. We would use them as tags on the module list page."
-    ]
+    ],
+    "stars": 9
   },
   {
     "name": "MMM-SORT",
@@ -13349,7 +13473,8 @@
     "issues": [
       "There is no `package.json`. We need this file to gather information about the module for the module list page."
     ],
-    "outdated": "Abandoned. No reactions to issues since years. Missing instructions to install 'request'."
+    "outdated": "Abandoned. No reactions to issues since years. Missing instructions to install 'request'.",
+    "stars": 2
   },
   {
     "name": "MMM-Space",
@@ -13360,7 +13485,8 @@
     "description": "Adds vertical space (as HTML div) between modules.",
     "issues": [
       "There is no `package.json`. We need this file to gather information about the module for the module list page."
-    ]
+    ],
+    "stars": 9
   },
   {
     "name": "MMM-SpaceLaunchNow",
@@ -13371,7 +13497,8 @@
     "description": "Show the previous and upcoming launches of any rocket, bases on SpaceLaunchNow API.",
     "issues": [
       "There is no `package.json`. We need this file to gather information about the module for the module list page."
-    ]
+    ],
+    "stars": 3
   },
   {
     "name": "MMM-SpaceX",
@@ -13382,7 +13509,8 @@
     "description": "Show the previous and upcoming launches of SpaceX rockets.",
     "issues": [
       "There is no `package.json`. We need this file to gather information about the module for the module list page."
-    ]
+    ],
+    "stars": 10
   },
   {
     "name": "MMM-Speedway",
@@ -13396,7 +13524,8 @@
       "`package.json` issue: No repository field.",
       "`package.json` issue: No license field.",
       "There are no keywords in 'package.json'. We would use them as tags on the module list page."
-    ]
+    ],
+    "stars": 0
   },
   {
     "name": "MMM-Spotify",
@@ -13406,6 +13535,7 @@
     "maintainerURL": "",
     "description": "Spotify Controller - with device and account switch buttons, easy volume change via touch and much more.",
     "issues": [],
+    "stars": 60,
     "tags": [
       "magicmirrormodule",
       "spotify",
@@ -13423,7 +13553,8 @@
     "description": "Display information from Spotify Connect e.g. cover, artist and track information.",
     "issues": [
       "There is no `package.json`. We need this file to gather information about the module for the module list page."
-    ]
+    ],
+    "stars": 51
   },
   {
     "name": "MMM-SpotifyHelper",
@@ -13434,7 +13565,8 @@
     "description": "Add events to MMM-Spotify to manage volume and playlists.",
     "issues": [
       "There is no `package.json`. We need this file to gather information about the module for the module list page."
-    ]
+    ],
+    "stars": 1
   },
   {
     "name": "MMM-SpotifyReleases",
@@ -13446,6 +13578,7 @@
     "issues": [
       "No image found."
     ],
+    "stars": 3,
     "tags": [
       "spotify"
     ],
@@ -13460,7 +13593,8 @@
     "description": "Display upcoming metros in Rennes (France).",
     "issues": [
       "There is no `package.json`. We need this file to gather information about the module for the module list page."
-    ]
+    ],
+    "stars": 1
   },
   {
     "name": "MMM-StatusPageIo",
@@ -13470,6 +13604,7 @@
     "maintainerURL": "https://github.com/spydersoft-consulting",
     "description": "Display incidents and component status from a StatusPage.io site.",
     "issues": [],
+    "stars": 0,
     "tags": [
       "scheduler"
     ],
@@ -13486,6 +13621,7 @@
     "issues": [
       "There are no keywords in 'package.json'. We would use them as tags on the module list page."
     ],
+    "stars": 7,
     "license": "MIT",
     "image": "screenshot.jpg"
   },
@@ -13498,7 +13634,8 @@
     "description": "Display the next transports for any given STIB (Brussel/Belgium) station.",
     "issues": [
       "There is no `package.json`. We need this file to gather information about the module for the module list page."
-    ]
+    ],
+    "stars": 4
   },
   {
     "name": "MMM-stib2",
@@ -13510,6 +13647,7 @@
     "issues": [
       "There are no keywords in 'package.json'. We would use them as tags on the module list page."
     ],
+    "stars": 2,
     "license": "MIT",
     "image": "img-screenshot.jpg"
   },
@@ -13522,7 +13660,8 @@
     "description": "Displays current stock prices of companies using YAHOO FINANCE API.",
     "issues": [
       "There is no `package.json`. We need this file to gather information about the module for the module list page."
-    ]
+    ],
+    "stars": 15
   },
   {
     "name": "MMM-stoic-quotes",
@@ -13532,6 +13671,7 @@
     "maintainerURL": "",
     "description": "Display a stoic quote at a given interval or time of day.",
     "issues": [],
+    "stars": 1,
     "tags": [
       "quotes",
       "quote"
@@ -13547,6 +13687,7 @@
     "maintainerURL": "https://github.com/Klettner",
     "description": "Display an alert-style timer or stopwatch. Controllable via notifications or the <a target=\"_blank\" href=\"https://github.com/Klettner/MM-Remote\">MM-Remote</a> android app.",
     "issues": [],
+    "stars": 7,
     "tags": [
       "timer"
     ],
@@ -13564,6 +13705,7 @@
       "`package.json` issue: No repository field.",
       "There are no keywords in 'package.json'. We would use them as tags on the module list page."
     ],
+    "stars": 0,
     "license": "MIT",
     "image": "images-image.jpg"
   },
@@ -13575,6 +13717,7 @@
     "maintainerURL": "",
     "description": "Display your activity data from <a target=\"_blank\" href=\"https://www.strava.com\">Strava.com</a>.",
     "issues": [],
+    "stars": 49,
     "tags": [
       "strava"
     ],
@@ -13589,6 +13732,7 @@
     "maintainerURL": "",
     "description": "Displays last reading from your Dexcom G6 via the share API.",
     "issues": [],
+    "stars": 3,
     "tags": [
       "dexcom"
     ],
@@ -13605,6 +13749,7 @@
     "issues": [
       "There are no specific keywords in 'package.json'. We would use them as tags on the module list page. Add a few meaningful terms to the keywords in the package.json. Not just “magicmirror” or “module”."
     ],
+    "stars": 3,
     "license": "MIT",
     "image": "images-SunnyPortal1.jpg"
   },
@@ -13618,7 +13763,8 @@
     "issues": [
       "There is no `package.json`. We need this file to gather information about the module for the module list page."
     ],
-    "outdated": "Abandoned. No reactions to issues since years. Missing instructions to install 'request'."
+    "outdated": "Abandoned. No reactions to issues since years. Missing instructions to install 'request'.",
+    "stars": 16
   },
   {
     "name": "MMM-SweepClock",
@@ -13628,6 +13774,7 @@
     "maintainerURL": "https://github.com/mumblebaj",
     "description": "Display a classic railway clock.",
     "issues": [],
+    "stars": 3,
     "tags": [
       "sweepclock station clock"
     ],
@@ -13636,9 +13783,9 @@
   },
   {
     "name": "MMM-Swipe",
-    "url": "https://github.com/mochman/MMM-Swipe",
-    "id": "mochman/MMM-Swipe",
-    "maintainer": "mochman",
+    "url": "https://github.com/Simon089/MMM-Swipe",
+    "id": "Simon089/MMM-Swipe",
+    "maintainer": "Simon089",
     "maintainerURL": "",
     "description": "Uses 2 HC-SR04 ultrasonic sensors to determing hand position to produce a \"Swipe Left\", \"Swipe Right\", or \"Press\".",
     "issues": [
@@ -13663,6 +13810,7 @@
       "There are no keywords in 'package.json'. We would use them as tags on the module list page.",
       "No image found."
     ],
+    "stars": 8,
     "license": "MIT"
   },
   {
@@ -13674,7 +13822,8 @@
     "description": "Display the water temperature of a Swiss lake at a given point.",
     "issues": [
       "There is no `package.json`. We need this file to gather information about the module for the module list page."
-    ]
+    ],
+    "stars": 0
   },
   {
     "name": "MMM-SwissStationboard",
@@ -13687,6 +13836,7 @@
       "`package.json` issue: No repository field.",
       "There are no keywords in 'package.json'. We would use them as tags on the module list page."
     ],
+    "stars": 6,
     "license": "MIT",
     "image": "Stationboard.PNG"
   },
@@ -13699,7 +13849,8 @@
     "description": "Display train departures from your favourite train station.",
     "issues": [
       "There is no `package.json`. We need this file to gather information about the module for the module list page."
-    ]
+    ],
+    "stars": 7
   },
   {
     "name": "MMM-synology-ds",
@@ -13711,6 +13862,7 @@
     "issues": [
       "No image found."
     ],
+    "stars": 15,
     "tags": [
       "synology",
       "download satation"
@@ -13725,6 +13877,7 @@
     "maintainerURL": "https://github.com/Tom-Hirschberger",
     "description": "Display the video streams of cameras connected to your Synology Disc Stations and control their positions.",
     "issues": [],
+    "stars": 4,
     "tags": [
       "synology",
       "surveillancestation",
@@ -13738,9 +13891,9 @@
   },
   {
     "name": "MMM-syslog",
-    "url": "https://github.com/paviro/MMM-syslog",
-    "id": "paviro/MMM-syslog",
-    "maintainer": "paviro",
+    "url": "https://github.com/marcinomen/MMM-syslog",
+    "id": "marcinomen/MMM-syslog",
+    "maintainer": "marcinomen",
     "maintainerURL": "",
     "description": "API for sending notifications to your mirror.",
     "issues": [
@@ -13755,6 +13908,7 @@
     "maintainerURL": "https://github.com/btastic",
     "description": "Shows system stats similar to MMM-SystemStats.",
     "issues": [],
+    "stars": 3,
     "tags": [
       "systemmonitor"
     ],
@@ -13769,6 +13923,8 @@
     "maintainerURL": "",
     "description": "Shows Raspberry Pi system stats like CPU temperature, free Ram, System load, and Uptime.",
     "issues": [],
+    "outdated": "Abandoned. Repo has been archived at 2022-09-05.",
+    "stars": 90,
     "tags": [
       "cpu temperature",
       "system load"
@@ -13784,6 +13940,7 @@
     "maintainerURL": "https://github.com/E3V3A",
     "description": "A Demo module for using <a target=\"_blank\" href=\"https://tabulator.info\">Tabulator</a> to directly parse JSON/XML into MM DHTML tables.",
     "issues": [],
+    "stars": 10,
     "tags": [
       "tables",
       "json",
@@ -13802,6 +13959,7 @@
     "issues": [
       "There are no keywords in 'package.json'. We would use them as tags on the module list page."
     ],
+    "stars": 6,
     "license": "ISC",
     "image": "img-screenshot.jpg"
   },
@@ -13814,7 +13972,8 @@
     "description": "Display METAR and TAF data for airports world-wide.",
     "issues": [
       "There is no `package.json`. We need this file to gather information about the module for the module list page."
-    ]
+    ],
+    "stars": 1
   },
   {
     "name": "MMM-TakeAndDrive",
@@ -13826,6 +13985,7 @@
     "issues": [
       "`package.json` issue: No repository field."
     ],
+    "stars": 0,
     "tags": [
       "carsharing",
       "scooters",
@@ -13844,6 +14004,7 @@
     "maintainerURL": "https://github.com/wiesty",
     "description": "Module to display the local gas prices in Germany (Tankstellen-Preise).",
     "issues": [],
+    "stars": 6,
     "tags": [
       "gas",
       "germany"
@@ -13860,7 +14021,8 @@
     "description": "Displays the currently playing Plex stream activity from <a target=\"_blank\" href=\"https://tautulli.com\">Tautulli</a>.",
     "issues": [
       "There is no `package.json`. We need this file to gather information about the module for the module list page."
-    ]
+    ],
+    "stars": 10
   },
   {
     "name": "MMM-teamspeak3",
@@ -13872,6 +14034,7 @@
     "issues": [
       "No image found."
     ],
+    "stars": 7,
     "tags": [
       "teamspeak",
       "client list"
@@ -13888,6 +14051,7 @@
     "issues": [
       "No image found."
     ],
+    "stars": 3,
     "tags": [
       "telegram",
       "commandline"
@@ -13904,6 +14068,7 @@
     "issues": [
       "No image found."
     ],
+    "stars": 18,
     "tags": [
       "ds18b20",
       "temperature",
@@ -13919,6 +14084,7 @@
     "maintainerURL": "https://github.com/Tom-Hirschberger",
     "description": "Display tempature, humdity, and more of DHT11, DHT22, BMT280, HTU21, DS18B20 or other sensors.",
     "issues": [],
+    "stars": 4,
     "tags": [
       "temperature",
       "humidity",
@@ -13940,6 +14106,7 @@
     "maintainerURL": "",
     "description": "Display Tesla data from either <a target=\"_blank\" href=\"https://teslafi.com\">TeslaFi</a> or <a target=\"_blank\" href=\"https://www.tessie.com\">Tessie</a>.",
     "issues": [],
+    "stars": 4,
     "tags": [
       "tesla",
       "teslafi",
@@ -13959,6 +14126,7 @@
       "`package.json` issue: No repository field.",
       "There are no keywords in 'package.json'. We would use them as tags on the module list page."
     ],
+    "stars": 2,
     "license": "ISC",
     "image": "images-MMM-Tesla3.jpg"
   },
@@ -13972,6 +14140,7 @@
     "issues": [
       "There are no keywords in 'package.json'. We would use them as tags on the module list page."
     ],
+    "stars": 5,
     "license": "MIT",
     "image": "img-MMM-TeslaLogger-ScreenShot-image.jpg"
   },
@@ -13986,7 +14155,8 @@
       "`package.json` issue: No repository field.",
       "`package.json` issue: No license field.",
       "There are no keywords in 'package.json'. We would use them as tags on the module list page."
-    ]
+    ],
+    "stars": 50
   },
   {
     "name": "MMM-TeslaStatus",
@@ -14000,7 +14170,8 @@
       "`package.json` issue: No repository field.",
       "`package.json` issue: No license field.",
       "There are no keywords in 'package.json'. We would use them as tags on the module list page."
-    ]
+    ],
+    "stars": 1
   },
   {
     "name": "MMM-text-clock",
@@ -14010,6 +14181,7 @@
     "maintainerURL": "https://github.com/ngnijland",
     "description": "A clock which shows the time as text.",
     "issues": [],
+    "stars": 10,
     "tags": [
       "smar",
       "clock",
@@ -14030,7 +14202,8 @@
     "description": "Shows a different text each week.",
     "issues": [
       "There is no `package.json`. We need this file to gather information about the module for the module list page."
-    ]
+    ],
+    "stars": 1
   },
   {
     "name": "MMM-TFL-Arrivals",
@@ -14040,6 +14213,7 @@
     "maintainerURL": "",
     "description": "This module gets real time arrival predictions for specifc stops using the TfL API.",
     "issues": [],
+    "stars": 4,
     "tags": [
       "transport",
       "london",
@@ -14058,7 +14232,8 @@
     "description": "Status board for TFL (Transport For London) lines including London Tube, Elizabeth line, Tram, DLR, Bus, River Coach.",
     "issues": [
       "There is no `package.json`. We need this file to gather information about the module for the module list page."
-    ]
+    ],
+    "stars": 6
   },
   {
     "name": "MMM-Thingiverse",
@@ -14072,6 +14247,7 @@
       "There are no keywords in 'package.json'. We would use them as tags on the module list page.",
       "No image found."
     ],
+    "stars": 2,
     "license": "MIT"
   },
   {
@@ -14082,6 +14258,7 @@
     "maintainerURL": "",
     "description": "Show electricity related data for Tibber customers. Shows power, prices, consumption, voltage, current and more.",
     "issues": [],
+    "stars": 31,
     "tags": [
       "tibber",
       "energy",
@@ -14101,7 +14278,8 @@
     "description": "Fetch earth live image form Himawari #8 geostationary satellite and display images on screen.",
     "issues": [
       "There is no `package.json`. We need this file to gather information about the module for the module list page."
-    ]
+    ],
+    "stars": 1
   },
   {
     "name": "MMM-Timetagger",
@@ -14113,6 +14291,7 @@
     "issues": [
       "There are no keywords in 'package.json'. We would use them as tags on the module list page."
     ],
+    "stars": 2,
     "license": "MIT",
     "image": "doc-mmm-timetagger-screenshot-1.jpg"
   },
@@ -14124,6 +14303,7 @@
     "maintainerURL": "",
     "description": "Shows your TimeTree event.",
     "issues": [],
+    "stars": 5,
     "tags": [
       "event",
       "timetree"
@@ -14142,6 +14322,7 @@
       "`package.json` issue: No repository field.",
       "There are no keywords in 'package.json'. We would use them as tags on the module list page."
     ],
+    "stars": 6,
     "license": "ISC",
     "image": "docs-screenshot.jpg"
   },
@@ -14155,6 +14336,7 @@
     "issues": [
       "There are no specific keywords in 'package.json'. We would use them as tags on the module list page. Add a few meaningful terms to the keywords in the package.json. Not just “magicmirror” or “module”."
     ],
+    "stars": 2,
     "license": "MIT",
     "image": "images-screenshot.jpg"
   },
@@ -14166,6 +14348,7 @@
     "maintainerURL": "https://github.com/JulienPeloton",
     "description": "Module to display latest new astronomical transients from <a target=\"_blank\" href=\"https://wis-tns.weizmann.ac.il\">TNS</a> such as <a target=\"_blank\" href=\"https://en.wikipedia.org/wiki/Supernova\">supernova</a> candidates.",
     "issues": [],
+    "stars": 1,
     "tags": [
       "tns"
     ],
@@ -14180,6 +14363,7 @@
     "maintainerURL": "",
     "description": "Displays your todos from Todoist.",
     "issues": [],
+    "stars": 145,
     "tags": [
       "wunderlist"
     ],
@@ -14195,7 +14379,8 @@
     "description": "Calculate routes with TomTom API (free), and display travel time with traffic delays.",
     "issues": [
       "There is no `package.json`. We need this file to gather information about the module for the module list page."
-    ]
+    ],
+    "stars": 1
   },
   {
     "name": "MMM-TomTomTraffic",
@@ -14207,6 +14392,7 @@
     "issues": [
       "There are no keywords in 'package.json'. We would use them as tags on the module list page."
     ],
+    "stars": 11,
     "license": "MIT",
     "image": "img-screenshot.jpg"
   },
@@ -14219,7 +14405,8 @@
     "description": "Shows on a TomTom map of your location the current traffic and actual traffic incidents like crashes and road construction. You can choose if you want traffic delay/jam or traffic speed/flow to be displayed.",
     "issues": [
       "There is no `package.json`. We need this file to gather information about the module for the module list page."
-    ]
+    ],
+    "stars": 9
   },
   {
     "name": "MMM-Toon",
@@ -14230,7 +14417,8 @@
     "description": "A module for the Toon Thermostat.",
     "issues": [
       "There is no `package.json`. We need this file to gather information about the module for the module list page."
-    ]
+    ],
+    "stars": 12
   },
   {
     "name": "MMM-Touch",
@@ -14241,7 +14429,8 @@
     "description": "Module for universal touch gesture commander using touchscreen.",
     "issues": [
       "There is no `package.json`. We need this file to gather information about the module for the module list page."
-    ]
+    ],
+    "stars": 10
   },
   {
     "name": "MMM-TouchButton",
@@ -14251,6 +14440,7 @@
     "maintainerURL": "https://github.com/Tom-Hirschberger",
     "description": "Add clickable buttons to send notifications or run commands.",
     "issues": [],
+    "stars": 3,
     "tags": [
       "touch",
       "button",
@@ -14269,6 +14459,7 @@
     "maintainerURL": "https://github.com/LoneWanderer-GH",
     "description": "time to the next buses lines for Toulouse (Tisseo).",
     "issues": [],
+    "stars": 2,
     "tags": [
       "localtransport",
       "toulouse"
@@ -14284,6 +14475,7 @@
     "maintainerURL": "https://github.com/slametps",
     "description": "Display the status of TPLink lights/plugs in your local network.",
     "issues": [],
+    "stars": 4,
     "tags": [
       "tplink",
       "smarthome"
@@ -14302,6 +14494,7 @@
       "`package.json` issue: No repository field.",
       "There are no keywords in 'package.json'. We would use them as tags on the module list page."
     ],
+    "stars": 10,
     "license": "MIT",
     "image": "Capture.JPG"
   },
@@ -14313,6 +14506,7 @@
     "maintainerURL": "https://github.com/samlewis0602",
     "description": "Display commute travel time with current traffic conditions factored in. Can be used for driving, biking, walking, and public transit.",
     "issues": [],
+    "stars": 138,
     "tags": [
       "traffic"
     ],
@@ -14328,7 +14522,8 @@
     "description": "Display trains from your favorite departure station to any destination in Europe.",
     "issues": [
       "There is no `package.json`. We need this file to gather information about the module for the module list page."
-    ]
+    ],
+    "stars": 3
   },
   {
     "name": "MMM-Trains-Trafikverket",
@@ -14341,6 +14536,7 @@
       "`package.json` issue: No repository field.",
       "There are no keywords in 'package.json'. We would use them as tags on the module list page."
     ],
+    "stars": 0,
     "license": "MIT",
     "image": "screenshot.jpg"
   },
@@ -14357,6 +14553,7 @@
       "There are no specific keywords in 'package.json'. We would use them as tags on the module list page. Add a few meaningful terms to the keywords in the package.json. Not just “magicmirror” or “module”.",
       "No image found."
     ],
+    "stars": 0,
     "license": "ISC"
   },
   {
@@ -14369,6 +14566,7 @@
     "issues": [
       "There are no keywords in 'package.json'. We would use them as tags on the module list page."
     ],
+    "stars": 13,
     "license": "MIT",
     "image": "screenshot.jpg"
   },
@@ -14381,7 +14579,8 @@
     "description": "Upcoming departures for any transit agencies that publishes GTFS.",
     "issues": [
       "There is no `package.json`. We need this file to gather information about the module for the module list page."
-    ]
+    ],
+    "stars": 2
   },
   {
     "name": "MMM-TranslatedMessages",
@@ -14392,7 +14591,8 @@
     "description": "The MMM-Display a given list of messages translated to language inputted.",
     "issues": [
       "There is no `package.json`. We need this file to gather information about the module for the module list page."
-    ]
+    ],
+    "stars": 0
   },
   {
     "name": "MMM-TranslinkBrisbane",
@@ -14407,6 +14607,7 @@
       "There are no keywords in 'package.json'. We would use them as tags on the module list page.",
       "No image found."
     ],
+    "stars": 0,
     "license": "ISC"
   },
   {
@@ -14418,7 +14619,8 @@
     "description": "Display TransLoc locations for a bus stop, used by the Rider App.",
     "issues": [
       "There is no `package.json`. We need this file to gather information about the module for the module list page."
-    ]
+    ],
+    "stars": 2
   },
   {
     "name": "MMM-Transmission",
@@ -14429,7 +14631,8 @@
     "description": "Connect to the Transmission BitTorrent client and display current torrent list information.",
     "issues": [
       "There is no `package.json`. We need this file to gather information about the module for the module list page."
-    ]
+    ],
+    "stars": 0
   },
   {
     "name": "MMM-Trello",
@@ -14439,6 +14642,7 @@
     "maintainerURL": "",
     "description": "This module can show <a target=\"_blank\" href=\"https://trello.com\">Trello</a> cards on your mirror.",
     "issues": [],
+    "stars": 53,
     "tags": [
       "trello"
     ],
@@ -14456,6 +14660,7 @@
       "There are no specific keywords in 'package.json'. We would use them as tags on the module list page. Add a few meaningful terms to the keywords in the package.json. Not just “magicmirror” or “module”.",
       "No image found."
     ],
+    "stars": 2,
     "license": "MIT"
   },
   {
@@ -14467,7 +14672,8 @@
     "description": "Module for showing the waste plan for your destination in Trondheim, Norway.",
     "issues": [
       "There is no `package.json`. We need this file to gather information about the module for the module list page."
-    ]
+    ],
+    "stars": 7
   },
   {
     "name": "MMM-TTS",
@@ -14479,6 +14685,7 @@
     "issues": [
       "No image found."
     ],
+    "stars": 17,
     "tags": [
       "text-to-speech"
     ],
@@ -14493,7 +14700,8 @@
     "description": "Simple at-a-glance display of the London Underground system status. See <a target=\"_blank\" href=\"https://github.com/emanuele-albini/MMM-TFL-Status\">MMM-TFL-Status</a> for more modes (e.g., Elizabeth line, DLR, Buses, Tram, etc.).",
     "issues": [
       "There is no `package.json`. We need this file to gather information about the module for the module list page."
-    ]
+    ],
+    "stars": 3
   },
   {
     "name": "MMM-TuyaSL",
@@ -14503,6 +14711,7 @@
     "maintainerURL": "https://github.com/slametps",
     "description": "Display the status of smarthome devices based on Tuya IoT-Platform (managed by SmartLife app).",
     "issues": [],
+    "stars": 3,
     "tags": [
       "tuyasl",
       "smarthome",
@@ -14522,6 +14731,7 @@
     "maintainerURL": "https://github.com/rafagale",
     "description": "Get estimations for bus stops in the city of Zaragoza (Spain).",
     "issues": [],
+    "stars": 2,
     "tags": [
       "bus stop",
       "tuzsa zaragoza",
@@ -14538,6 +14748,7 @@
     "maintainerURL": "https://github.com/XBCreepinJesus",
     "description": "Show your upcoming Tvheadend recordings.",
     "issues": [],
+    "stars": 0,
     "tags": [
       "tvheadend"
     ],
@@ -14553,7 +14764,8 @@
     "description": "Displays tweets a few at a time from a user's home timeline or list.",
     "issues": [
       "There is no `package.json`. We need this file to gather information about the module for the module list page."
-    ]
+    ],
+    "stars": 13
   },
   {
     "name": "MMM-TwitchAlert",
@@ -14564,7 +14776,8 @@
     "description": "Get notified when your favourite Twitch streamers go live.",
     "issues": [
       "There is no `package.json`. We need this file to gather information about the module for the module list page."
-    ]
+    ],
+    "stars": 2
   },
   {
     "name": "twitControl",
@@ -14578,6 +14791,7 @@
       "There are no keywords in 'package.json'. We would use them as tags on the module list page.",
       "No image found."
     ],
+    "stars": 9,
     "license": "MIT"
   },
   {
@@ -14589,7 +14803,8 @@
     "description": "Displays the Twitter Trending Topics for a given place or city, as well as showing the tweet volume for each topic.",
     "issues": [
       "There is no `package.json`. We need this file to gather information about the module for the module list page."
-    ]
+    ],
+    "stars": 12
   },
   {
     "name": "MMM-uber",
@@ -14600,7 +14815,8 @@
     "description": "Estimated arrival times for UBER.",
     "issues": [
       "There is no `package.json`. We need this file to gather information about the module for the module list page."
-    ]
+    ],
+    "stars": 16
   },
   {
     "name": "MMM-Udvaronc",
@@ -14610,6 +14826,7 @@
     "maintainerURL": "https://github.com/balassy",
     "description": "Displays Hungarian compliments from <a target=\"_blank\" href=\"https://udvaronc.hu\">Uvaronc</a>.",
     "issues": [],
+    "stars": 4,
     "tags": [
       "udvaronc"
     ],
@@ -14626,6 +14843,7 @@
     "issues": [
       "There are no specific keywords in 'package.json'. We would use them as tags on the module list page. Add a few meaningful terms to the keywords in the package.json. Not just “magicmirror” or “module”."
     ],
+    "stars": 0,
     "license": "MIT",
     "image": "images-Current_version.jpg"
   },
@@ -14638,7 +14856,8 @@
     "description": "Show live train departure/arrival times for the UK's National Rail network.",
     "issues": [
       "There is no `package.json`. We need this file to gather information about the module for the module list page."
-    ]
+    ],
+    "stars": 0
   },
   {
     "name": "MMM-UKMOWeatherWarnings",
@@ -14648,6 +14867,7 @@
     "maintainerURL": "",
     "description": "Display weather warnings for the UK issued by UK Met Office.",
     "issues": [],
+    "stars": 2,
     "tags": [
       "weather",
       "warnings",
@@ -14664,6 +14884,7 @@
     "maintainerURL": "",
     "description": "This module displays LIVE UK National Rail train arrivals &amp; departures from a specified station.",
     "issues": [],
+    "stars": 1,
     "tags": [
       "national rail",
       "trains"
@@ -14680,7 +14901,8 @@
     "description": "Display tidal data in British Isles with free data from UKHO/Admiralty.",
     "issues": [
       "There is no `package.json`. We need this file to gather information about the module for the module list page."
-    ]
+    ],
+    "stars": 1
   },
   {
     "name": "MMM-UniFi-Voucher",
@@ -14690,6 +14912,7 @@
     "maintainerURL": "",
     "description": "Displays UniFi hotspot vouchers.",
     "issues": [],
+    "stars": 2,
     "tags": [
       "unifi"
     ],
@@ -14707,6 +14930,7 @@
       "There are no keywords in 'package.json'. We would use them as tags on the module list page.",
       "No image found."
     ],
+    "stars": 7,
     "license": "MIT"
   },
   {
@@ -14718,7 +14942,8 @@
     "description": "Display temperature readings from a USB DVB-T stick acting as a 433Mhz SDR, receiving input from a cheap wireless weather sensor (GT-WT-01).",
     "issues": [
       "There is no `package.json`. We need this file to gather information about the module for the module list page."
-    ]
+    ],
+    "stars": 2
   },
   {
     "name": "MMM-uptimekuma",
@@ -14728,6 +14953,7 @@
     "maintainerURL": "",
     "description": "Display monitor data (online/offline detection) from selfhosted <a target=\"_blank\" href=\"https://github.com/louislam/uptime-kuma\">https://github.com/louislam/uptime-kuma</a>.",
     "issues": [],
+    "stars": 0,
     "tags": [
       "uptimekuma",
       "uptime kuma",
@@ -14745,6 +14971,7 @@
     "maintainerURL": "",
     "description": "Display monitor data (online/offline detection) from <a target=\"_blank\" href=\"https://uptimerobot.com/\">https://uptimerobot.com/</a>.",
     "issues": [],
+    "stars": 15,
     "tags": [
       "uptimerobot",
       "uptime robot",
@@ -14767,6 +14994,7 @@
       "There are no keywords in 'package.json'. We would use them as tags on the module list page.",
       "No image found."
     ],
+    "stars": 3,
     "license": "ISC"
   },
   {
@@ -14777,6 +15005,7 @@
     "maintainerURL": "https://github.com/Tom-Hirschberger",
     "description": "Display the values of messages of notifications. Titles, icons, reformatting and parsing are supported.",
     "issues": [],
+    "stars": 5,
     "tags": [
       "json",
       "jsonpath",
@@ -14797,6 +15026,7 @@
     "issues": [
       "No image found."
     ],
+    "stars": 0,
     "tags": [
       "varta",
       "energy",
@@ -14816,6 +15046,7 @@
     "issues": [
       "There are no specific keywords in 'package.json'. We would use them as tags on the module list page. Add a few meaningful terms to the keywords in the package.json. Not just “magicmirror” or “module”."
     ],
+    "stars": 1,
     "license": "MIT",
     "image": "docs-screenshot.PNG"
   },
@@ -14829,6 +15060,7 @@
     "issues": [
       "There are no specific keywords in 'package.json'. We would use them as tags on the module list page. Add a few meaningful terms to the keywords in the package.json. Not just “magicmirror” or “module”."
     ],
+    "stars": 9,
     "license": "MIT",
     "image": "docs-screenshot.PNG"
   },
@@ -14843,6 +15075,7 @@
       "`package.json` issue: No repository field.",
       "No image found."
     ],
+    "stars": 1,
     "tags": [
       "\"magic",
       "mirror\"",
@@ -14860,7 +15093,8 @@
     "description": "Play a video file (from local folder or internet) in any region. The module will pause the video when hidden and resume when shown. You can also pause and play by using notifications.",
     "issues": [
       "There is no `package.json`. We need this file to gather information about the module for the module list page."
-    ]
+    ],
+    "stars": 9
   },
   {
     "name": "MMM-VideoPlayer",
@@ -14873,6 +15107,7 @@
       "`package.json` issue: No repository field.",
       "There are no keywords in 'package.json'. We would use them as tags on the module list page."
     ],
+    "stars": 7,
     "license": "MIT",
     "image": "App-Assets-background.jpg"
   },
@@ -14885,7 +15120,8 @@
     "description": "Display your google calendar, VietNam or your country events and your personal events.",
     "issues": [
       "There is no `package.json`. We need this file to gather information about the module for the module list page."
-    ]
+    ],
+    "stars": 0
   },
   {
     "name": "MMM-ViewNotifications",
@@ -14896,7 +15132,8 @@
     "description": "Display a list of notifications that have been broadcast to all the modules.",
     "issues": [
       "There is no `package.json`. We need this file to gather information about the module for the module list page."
-    ]
+    ],
+    "stars": 6
   },
   {
     "name": "MMM-VigiCrues",
@@ -14907,7 +15144,8 @@
     "description": "Display the last value of water level at a station in the Vigicrues network in France.",
     "issues": [
       "There is no `package.json`. We need this file to gather information about the module for the module list page."
-    ]
+    ],
+    "stars": 2
   },
   {
     "name": "MMM-VigilanceMeteoFrance",
@@ -14917,6 +15155,7 @@
     "maintainerURL": "",
     "description": "Display the current level of vigilance of weather phenomena and associated risks for France.",
     "issues": [],
+    "stars": 7,
     "tags": [
       "vigilance",
       "weather phenomena",
@@ -14942,6 +15181,7 @@
       "`package.json` issue: No repository field.",
       "There are no keywords in 'package.json'. We would use them as tags on the module list page."
     ],
+    "stars": 0,
     "license": "MIT",
     "image": "images-MMM-Vindsiden.jpg"
   },
@@ -14953,6 +15193,7 @@
     "maintainerURL": "https://github.com/fewieden",
     "description": "Learn new languages on your MagicMirror².",
     "issues": [],
+    "stars": 4,
     "tags": [
       "vocabulary trainer"
     ],
@@ -14969,6 +15210,7 @@
     "issues": [
       "No image found."
     ],
+    "stars": 72,
     "tags": [
       "voice recognition",
       "speech to text"
@@ -14988,6 +15230,7 @@
       "There are no keywords in 'package.json'. We would use them as tags on the module list page.",
       "No image found."
     ],
+    "stars": 18,
     "license": "ISC"
   },
   {
@@ -15000,6 +15243,7 @@
     "issues": [
       "No image found."
     ],
+    "stars": 18,
     "tags": [
       "voice control"
     ],
@@ -15014,7 +15258,8 @@
     "description": "Voice control based on snowboy.",
     "issues": [
       "There is no `package.json`. We need this file to gather information about the module for the module list page."
-    ]
+    ],
+    "stars": 41
   },
   {
     "name": "MMM-Volume",
@@ -15027,6 +15272,7 @@
       "`package.json` issue: No description",
       "There are no keywords in 'package.json'. We would use them as tags on the module list page."
     ],
+    "stars": 15,
     "license": "MIT",
     "image": "mmm-volume.jpg"
   },
@@ -15039,7 +15285,8 @@
     "description": "Displays what a Volumio device is currently playing.",
     "issues": [
       "There is no `package.json`. We need this file to gather information about the module for the module list page."
-    ]
+    ],
+    "stars": 4
   },
   {
     "name": "MMM-VolvoOnCall",
@@ -15049,6 +15296,8 @@
     "maintainerURL": "",
     "description": "Display Volvo car status and trip information by VolvoOnCall.",
     "issues": [],
+    "outdated": "Abandoned. Repo has been archived at 2022-03-28.",
+    "stars": 2,
     "tags": [
       "volvo",
       "volvooncall"
@@ -15064,6 +15313,7 @@
     "maintainerURL": "https://github.com/Klizzy",
     "description": "Easy configuration module to display bus and train arrivals/departures with different display types for Germany (VRR and more EFA).",
     "issues": [],
+    "stars": 15,
     "tags": [
       "vrr",
       "transportation"
@@ -15079,6 +15329,7 @@
     "maintainerURL": "https://github.com/nigel-daniels",
     "description": "Updated: You can now monitor live arrival times at many CA, Bay Area transit stops. This covers BART, VTA, etc.",
     "issues": [],
+    "stars": 0,
     "tags": [
       "vta",
       "transit",
@@ -15098,6 +15349,8 @@
     "issues": [
       "There are no keywords in 'package.json'. We would use them as tags on the module list page."
     ],
+    "outdated": "Abandoned. Repo has been archived at 2023-09-20.",
+    "stars": 1,
     "license": "MIT",
     "image": "sample.jpg"
   },
@@ -15109,6 +15362,7 @@
     "maintainerURL": "https://github.com/fhinder",
     "description": "Display departures for public transport in Stuttgart (Covers VVS Area).",
     "issues": [],
+    "stars": 0,
     "tags": [
       "vvs",
       "public-transport"
@@ -15125,7 +15379,8 @@
     "description": "Re-themes MagicMirror² to look like a beautiful digital photo wall display. It adds a new font, styles, redesigned clock and weather displays, and rotating background image pulled from unsplash.com.",
     "issues": [
       "There is no `package.json`. We need this file to gather information about the module for the module list page."
-    ]
+    ],
+    "stars": 93
   },
   {
     "name": "MMM-Wallpaper",
@@ -15138,6 +15393,7 @@
       "There are no keywords in 'package.json'. We would use them as tags on the module list page.",
       "No image found."
     ],
+    "stars": 89,
     "license": "MIT"
   },
   {
@@ -15152,7 +15408,8 @@
       "`package.json` issue: No repository field.",
       "`package.json` issue: No license field.",
       "There are no keywords in 'package.json'. We would use them as tags on the module list page."
-    ]
+    ],
+    "stars": 6
   },
   {
     "name": "MMM-WatchDog",
@@ -15163,7 +15420,8 @@
     "description": "Keeps an eye on your UI and quits app in case the UI crashes. If you combine this with the PM2 process manager, MM2 will automaticly restart after a UI failure.",
     "issues": [
       "There is no `package.json`. We need this file to gather information about the module for the module list page."
-    ]
+    ],
+    "stars": 45
   },
   {
     "name": "MMM-WaterReminder",
@@ -15174,7 +15432,8 @@
     "description": "A simple Water Reminder Module.",
     "issues": [
       "There is no `package.json`. We need this file to gather information about the module for the module list page."
-    ]
+    ],
+    "stars": 6
   },
   {
     "name": "MMM-Wattvision",
@@ -15188,7 +15447,8 @@
       "`package.json` issue: No repository field.",
       "`package.json` issue: No license field.",
       "There are no keywords in 'package.json'. We would use them as tags on the module list page."
-    ]
+    ],
+    "stars": 4
   },
   {
     "name": "MMM-WeasleyClock",
@@ -15200,6 +15460,7 @@
     "issues": [
       "There are no keywords in 'package.json'. We would use them as tags on the module list page."
     ],
+    "stars": 12,
     "license": "MIT",
     "image": "images-connection.jpg"
   },
@@ -15211,6 +15472,7 @@
     "maintainerURL": "https://github.com/nigel-daniels",
     "description": "Simple clean display of the weather now, designed to go with MMM-3Day-Forecast. Now uses Open Weather as WeatherBit reduced the free service to an unusable level :( If you installed an older version ( &lt; 18 Oct 2022 ), please update and get a new api key!",
     "issues": [],
+    "stars": 6,
     "tags": [
       "weather",
       "forecast"
@@ -15230,7 +15492,8 @@
       "`package.json` issue: No repository field.",
       "`package.json` issue: No license field.",
       "There are no keywords in 'package.json'. We would use them as tags on the module list page."
-    ]
+    ],
+    "stars": 2
   },
   {
     "name": "MMM-WeatherAlerts",
@@ -15243,6 +15506,7 @@
       "`package.json` issue: No repository field.",
       "There are no keywords in 'package.json'. We would use them as tags on the module list page."
     ],
+    "stars": 0,
     "license": "MIT",
     "image": "images-MMM-WeatherAlerts-default_example.jpg"
   },
@@ -15255,7 +15519,8 @@
     "description": "Dynamically loaded weather image background from Unsplash. This is a plugin of other weather modules.",
     "issues": [
       "There is no `package.json`. We need this file to gather information about the module for the module list page."
-    ]
+    ],
+    "stars": 13
   },
   {
     "name": "MMM-WeatherChart",
@@ -15266,7 +15531,8 @@
     "description": "Display a weather forecast chart using <a target=\"_blank\" href=\"https://openweathermap.org\">OpenWeather</a> API and <a target=\"_blank\" href=\"https://www.chartjs.org\">Chart.js</a>, an open-source library to plot data on charts.",
     "issues": [
       "There is no `package.json`. We need this file to gather information about the module for the module list page."
-    ]
+    ],
+    "stars": 21
   },
   {
     "name": "MMM-WeatherDependentClothes",
@@ -15277,7 +15543,8 @@
     "description": "Display clothing depending on the weather forecast and your personal preferences.",
     "issues": [
       "There is no `package.json`. We need this file to gather information about the module for the module list page."
-    ]
+    ],
+    "stars": 31
   },
   {
     "name": "MMM-weatherforecast",
@@ -15288,7 +15555,8 @@
     "description": "This is a new version of the weather forecast module. This one does not come as a default module. This version has been edited to allow the days of the week to span left to right, each with its own weather icon and details. Uses openweathermap.org API Key.",
     "issues": [
       "There is no `package.json`. We need this file to gather information about the module for the module list page."
-    ]
+    ],
+    "stars": 9
   },
   {
     "name": "MMM-WeatherGraph",
@@ -15299,7 +15567,8 @@
     "description": "Weather forecast with rain &amp; temp graphs. Lots of options to turn on &amp; off. Data from OpenWeatherMap API.",
     "issues": [
       "There is no `package.json`. We need this file to gather information about the module for the module list page."
-    ]
+    ],
+    "stars": 13
   },
   {
     "name": "MMM-WeatherHourlyByDay",
@@ -15310,7 +15579,8 @@
     "description": "Displays an hourly forecast table for multiple days. Allows you to specify what hours of the day to include and which forecast components will be displayed.",
     "issues": [
       "An error occurred while getting information from 'package.json': Error: Invalid version: \"1.0\""
-    ]
+    ],
+    "stars": 0
   },
   {
     "name": "MMM-WeatherOrNot",
@@ -15322,7 +15592,8 @@
     "issues": [
       "There is no `package.json`. We need this file to gather information about the module for the module list page."
     ],
-    "outdated": "Deprecated. DarkSky API no longer works since 2023-03-31."
+    "outdated": "Deprecated. DarkSky API no longer works since 2023-03-31.",
+    "stars": 19
   },
   {
     "name": "MMM-WebHookAlerts",
@@ -15334,6 +15605,7 @@
     "issues": [
       "`package.json` issue: No repository field."
     ],
+    "stars": 5,
     "tags": [
       "web hooks",
       "alerts"
@@ -15349,6 +15621,7 @@
     "maintainerURL": "",
     "description": "A Text-To-Speech module which uses the Web Speech API of the browser. It is in an early stage of development. So far only German is supported.",
     "issues": [],
+    "stars": 2,
     "tags": [
       "text-to-speech",
       "tts",
@@ -15367,6 +15640,7 @@
     "issues": [
       "`package.json` issue: No repository field."
     ],
+    "stars": 3,
     "tags": [
       "webuntis"
     ],
@@ -15383,6 +15657,7 @@
     "issues": [
       "No image found."
     ],
+    "stars": 15,
     "tags": [
       "webview"
     ],
@@ -15397,7 +15672,8 @@
     "description": "Shows Status of your VW ID Car based on We Connect.",
     "issues": [
       "An error occurred while getting information from 'package.json': Error: Invalid version: \"0.8\""
-    ]
+    ],
+    "stars": 2
   },
   {
     "name": "MMM-WeeklySchedule",
@@ -15409,6 +15685,7 @@
     "issues": [
       "There are no keywords in 'package.json'. We would use them as tags on the module list page."
     ],
+    "stars": 61,
     "license": "MIT",
     "image": "images-screenshot.jpg"
   },
@@ -15422,6 +15699,7 @@
     "issues": [
       "There are no keywords in 'package.json'. We would use them as tags on the module list page."
     ],
+    "stars": 0,
     "license": "MIT",
     "image": "screenshot.jpg"
   },
@@ -15435,6 +15713,7 @@
     "issues": [
       "There are no keywords in 'package.json'. We would use them as tags on the module list page."
     ],
+    "stars": 6,
     "license": "GPL-3.0",
     "image": ".github-preview.jpg"
   },
@@ -15449,6 +15728,7 @@
       "`package.json` issue: No repository field.",
       "There are no keywords in 'package.json'. We would use them as tags on the module list page."
     ],
+    "stars": 0,
     "license": "MIT",
     "image": "docs-WH2600.jpg"
   },
@@ -15464,6 +15744,7 @@
       "There are no keywords in 'package.json'. We would use them as tags on the module list page.",
       "No image found."
     ],
+    "stars": 21,
     "license": "MIT"
   },
   {
@@ -15475,7 +15756,8 @@
     "description": "Inserting, evaluating, excuting external web widgets on MM.",
     "issues": [
       "There is no `package.json`. We need this file to gather information about the module for the module list page."
-    ]
+    ],
+    "stars": 12
   },
   {
     "name": "MMM-WienerLinien",
@@ -15485,6 +15767,7 @@
     "maintainerURL": "",
     "description": "Display Public Transport timetable of Vienna/Austria.",
     "issues": [],
+    "stars": 24,
     "tags": [
       "vienna",
       "wien",
@@ -15503,7 +15786,8 @@
     "description": "Displays WiFi password and QRCode.",
     "issues": [
       "There is no `package.json`. We need this file to gather information about the module for the module list page."
-    ]
+    ],
+    "stars": 91
   },
   {
     "name": "MMM-wiki",
@@ -15514,7 +15798,8 @@
     "description": "Displays random Wikipedia snippets.",
     "issues": [
       "There is no `package.json`. We need this file to gather information about the module for the module list page."
-    ]
+    ],
+    "stars": 16
   },
   {
     "name": "MMM-windy",
@@ -15525,7 +15810,8 @@
     "description": "Adds the windy weather map which covers the whole screen.",
     "issues": [
       "There is no `package.json`. We need this file to gather information about the module for the module list page."
-    ]
+    ],
+    "stars": 9
   },
   {
     "name": "MMM-WordGenius",
@@ -15538,6 +15824,7 @@
       "`package.json` issue: No repository field.",
       "There are no specific keywords in 'package.json'. We would use them as tags on the module list page. Add a few meaningful terms to the keywords in the package.json. Not just “magicmirror” or “module”."
     ],
+    "stars": 1,
     "license": "MIT",
     "image": "MMM-WordGenius.jpg"
   },
@@ -15550,7 +15837,8 @@
     "description": "Get the word of the day, its definition, and origin.",
     "issues": [
       "There is no `package.json`. We need this file to gather information about the module for the module list page."
-    ]
+    ],
+    "stars": 18
   },
   {
     "name": "MMM-WordOfTheDay",
@@ -15561,7 +15849,8 @@
     "description": "Displays the Merriam-Webster word of the day along with its part of speech, pronunciation, definition, and an example.",
     "issues": [
       "There is no `package.json`. We need this file to gather information about the module for the module list page."
-    ]
+    ],
+    "stars": 3
   },
   {
     "name": "worldclock",
@@ -15572,7 +15861,8 @@
     "description": "Display local time of several locations.",
     "issues": [
       "There is no `package.json`. We need this file to gather information about the module for the module list page."
-    ]
+    ],
+    "stars": 31
   },
   {
     "name": "MMM-Worldclock",
@@ -15583,7 +15873,8 @@
     "description": "Fully supported version of worldclock.",
     "issues": [
       "An error occurred while getting information from 'package.json': Error: Invalid version: \"1.5\""
-    ]
+    ],
+    "stars": 10
   },
   {
     "name": "MMM-WorldTides",
@@ -15595,6 +15886,7 @@
     "issues": [
       "No image found."
     ],
+    "stars": 7,
     "tags": [
       "tide",
       "high water",
@@ -15613,6 +15905,7 @@
     "issues": [
       "No image found."
     ],
+    "stars": 5,
     "tags": [
       "led",
       "rgb",
@@ -15630,7 +15923,8 @@
     "issues": [
       "There is no `package.json`. We need this file to gather information about the module for the module list page."
     ],
-    "outdated": "Deprecated. Wunderground API isn't working anymore."
+    "outdated": "Deprecated. Wunderground API isn't working anymore.",
+    "stars": 11
   },
   {
     "name": "MMM-WunderGround",
@@ -15642,7 +15936,8 @@
     "issues": [
       "There is no `package.json`. We need this file to gather information about the module for the module list page."
     ],
-    "outdated": "Deprecated. Wunderground API isn't working anymore. Check out MMM-MyWeather which is a fork with another API."
+    "outdated": "Deprecated. Wunderground API isn't working anymore. Check out MMM-MyWeather which is a fork with another API.",
+    "stars": 29
   },
   {
     "name": "MMM-wundergroundBar",
@@ -15654,7 +15949,8 @@
     "issues": [
       "There is no `package.json`. We need this file to gather information about the module for the module list page."
     ],
-    "outdated": "Deprecated. Wunderground API isn't working anymore."
+    "outdated": "Deprecated. Wunderground API isn't working anymore.",
+    "stars": 1
   },
   {
     "name": "MMM-WWI",
@@ -15665,7 +15961,8 @@
     "description": "Nope! Not World War I. It's <strong>Weather Without Icons</strong>. Up to the minute weather. Full weather information, yet a small footprint.",
     "issues": [
       "There is no `package.json`. We need this file to gather information about the module for the module list page."
-    ]
+    ],
+    "stars": 0
   },
   {
     "name": "MMM-XDG-OPEN",
@@ -15678,7 +15975,8 @@
       "`package.json` issue: No repository field.",
       "`package.json` issue: No license field.",
       "There are no keywords in 'package.json'. We would use them as tags on the module list page."
-    ]
+    ],
+    "stars": 0
   },
   {
     "name": "MMM-xiaomi",
@@ -15690,6 +15988,7 @@
     "issues": [
       "No image found."
     ],
+    "stars": 25,
     "tags": [
       "wunderlist"
     ],
@@ -15707,7 +16006,8 @@
       "`package.json` issue: No repository field.",
       "`package.json` issue: No license field.",
       "There are no keywords in 'package.json'. We would use them as tags on the module list page."
-    ]
+    ],
+    "stars": 4
   },
   {
     "name": "MMM-yandex-route",
@@ -15718,7 +16018,8 @@
     "description": "Displays car routes on the map, using Yandex.Maps API.",
     "issues": [
       "There is no `package.json`. We need this file to gather information about the module for the module list page."
-    ]
+    ],
+    "stars": 1
   },
   {
     "name": "MMM-Yeelight",
@@ -15728,6 +16029,7 @@
     "maintainerURL": "https://github.com/slametps",
     "description": "Display the status of Yeelight bulbs in your local network.",
     "issues": [],
+    "stars": 4,
     "tags": [
       "yeelight",
       "smarthome"
@@ -15744,7 +16046,8 @@
     "description": "Instead of default compliments with classical poems, just supports Chinese.随机产生一句古诗词。.",
     "issues": [
       "There is no `package.json`. We need this file to gather information about the module for the module list page."
-    ]
+    ],
+    "stars": 2
   },
   {
     "name": "MMM-YNAB",
@@ -15758,6 +16061,7 @@
       "`package.json` issue: No repository field.",
       "There are no keywords in 'package.json'. We would use them as tags on the module list page."
     ],
+    "stars": 4,
     "license": "ISC",
     "image": "screenshot.jpg"
   },
@@ -15769,6 +16073,7 @@
     "maintainerURL": "",
     "description": "This module reads from a YouLess energy meter in your network to display realtime energy usage information.",
     "issues": [],
+    "stars": 2,
     "tags": [
       "youless\u001b[hmagi\u001b[c\u001b[f"
     ],
@@ -15783,6 +16088,7 @@
     "maintainerURL": "https://github.com/eckonator",
     "description": "This module reads from a YouLess energy meter in your network to display a gauge of realtime energy usage information. It´s a optimized fork from QNimbus first module.",
     "issues": [],
+    "stars": 3,
     "tags": [
       "youless\u001b[hmagi\u001b[c\u001b[f"
     ],
@@ -15798,7 +16104,8 @@
     "description": "Enables easy integration of YouTube videos.",
     "issues": [
       "There is no `package.json`. We need this file to gather information about the module for the module list page."
-    ]
+    ],
+    "stars": 21
   },
   {
     "name": "MMM-YouTube-Live-Stream",
@@ -15810,6 +16117,7 @@
     "issues": [
       "No image found."
     ],
+    "stars": 1,
     "tags": [
       "youtube",
       "live",
@@ -15841,7 +16149,8 @@
     "description": "The official Yr Nowcast module for MagicMirror², which displays data from <a target=\"_blank\" href=\"https://www.yr.no\">Yr</a>. Nowcast data is only available for some Norwegian locations covered by the Norwegian weather radars. Yr is a weather service from the Norwegian Broadcasting Corporation and the Norwegian Meteorological Institute.",
     "issues": [
       "There is no `package.json`. We need this file to gather information about the module for the module list page."
-    ]
+    ],
+    "stars": 22
   },
   {
     "name": "MMM-YrThen",
@@ -15852,7 +16161,8 @@
     "description": "Displays weather forecast from <a target=\"_blank\" href=\"https://www.yr.no\">Yr</a>. Yr is a weather service from the Norwegian Broadcasting Corporation and the Norwegian Meteorological Institute.",
     "issues": [
       "There is no `package.json`. We need this file to gather information about the module for the module list page."
-    ]
+    ],
+    "stars": 16
   },
   {
     "name": "MMM-YT-SubCount",
@@ -15864,6 +16174,7 @@
     "issues": [
       "There are no keywords in 'package.json'. We would use them as tags on the module list page."
     ],
+    "stars": 2,
     "license": "MIT",
     "image": "img-preshow.jpg"
   },
@@ -15878,6 +16189,7 @@
       "`package.json` issue: license should be a valid SPDX license expression",
       "No compatible or wrong license field in 'package.json'. Without that, we can't use an image."
     ],
+    "stars": 0,
     "tags": [
       "zaptec",
       "chargers",
@@ -15898,6 +16210,7 @@
       "`package.json` issue: No repository field.",
       "There are no specific keywords in 'package.json'. We would use them as tags on the module list page. Add a few meaningful terms to the keywords in the package.json. Not just “magicmirror” or “module”."
     ],
+    "stars": 0,
     "license": "ISC",
     "image": "alternateScreenshot.jpg"
   }

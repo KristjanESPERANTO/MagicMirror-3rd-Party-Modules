@@ -1791,6 +1791,7 @@
     "maintainerURL": "https://github.com/mlbonniec",
     "description": "Display your Bitcoin Coinbase balance.",
     "issues": 4,
+    "outdated": "Abandoned. Repo has been archived at 2023-07-26.",
     "stars": 12,
     "tags": [
       "coinbase",
@@ -1922,6 +1923,7 @@
     "maintainerURL": "",
     "description": "Countdown or countup for events.",
     "issues": 3,
+    "outdated": "Abandoned. Repo has been archived at 2020-06-10.",
     "stars": 9,
     "lastCommit": "2020-02-14T15:03:31+01:00"
   },
@@ -2303,6 +2305,7 @@
     "maintainerURL": "",
     "description": "Module for daily recurrent event alarms.",
     "issues": 3,
+    "outdated": "Abandoned. Repo has been archived at 2020-06-10.",
     "stars": 10,
     "lastCommit": "2018-10-23T14:44:43+02:00"
   },
@@ -2680,6 +2683,7 @@
     "maintainerURL": "",
     "description": "A highly configurable module for displaying domoticz information and performing actions on Domoticz.",
     "issues": 3,
+    "outdated": "Abandoned. Repo has been archived at 2023-07-05.",
     "stars": 0,
     "tags": [
       "domoticz"
@@ -2722,6 +2726,7 @@
     "maintainerURL": "",
     "description": "Module which shows the latest popular <a target=\"_blank\" href=\"https://dribbble.com\">dribbble</a> shots.",
     "issues": 4,
+    "outdated": "Abandoned. Repo has been archived at 2023-10-24.",
     "stars": 1,
     "license": "ISC",
     "image": "media-01-developer.dribbble.com.jpg",
@@ -3933,6 +3938,7 @@
     "maintainerURL": "",
     "description": "'Likes' counter of Facebook page.",
     "issues": 4,
+    "outdated": "Abandoned. Repo has been archived at 2022-06-20.",
     "stars": 3,
     "lastCommit": "2019-12-08T16:09:36+01:00"
   },
@@ -4104,6 +4110,7 @@
     "maintainerURL": "https://github.com/jesmak",
     "description": "Module that tracks packages from Finnish Posti and/or Matkahuolto.",
     "issues": 6,
+    "outdated": "Abandoned. Repo has been archived at 2024-01-22.",
     "stars": 0,
     "tags": [
       "parcel",
@@ -4210,6 +4217,7 @@
     "maintainerURL": "https://github.com/jesmak",
     "description": "Module that tracks nearby planes based on Flightradar24 data.",
     "issues": 4,
+    "outdated": "Abandoned. Repo has been archived at 2024-01-22.",
     "stars": 18,
     "tags": [
       "flights",
@@ -6562,6 +6570,7 @@
     "maintainerURL": "",
     "description": "Replaced by MMM-Mashie-Skolmat! Show school lunch menus from K\u00f6ket by Sodexo (based on MMM-Skolmaten with different source for menus).",
     "issues": 8,
+    "outdated": "Abandoned. Repo has been archived at 2020-12-10.",
     "stars": 0,
     "tags": [
       "skolmat",
@@ -6755,6 +6764,7 @@
     "maintainerURL": "",
     "description": "Display the song you are currently streaming on your <a target=\"_blank\" href=\"https://github.com/librespot-org/librespot-java\">Librespot Java</a> Spotify Speaker.",
     "issues": 6,
+    "outdated": "Abandoned. Repo has been archived at 2023-10-01.",
     "stars": 4,
     "tags": [
       "spotify"
@@ -7358,14 +7368,13 @@
   },
   {
     "name": "MMM-Meniny",
-    "url": "https://github.com/eouia/MMM-Meniny",
-    "id": "eouia/MMM-Meniny",
-    "maintainer": "eouia",
+    "url": "https://github.com/andersarstrand/MMM-Meniny",
+    "id": "andersarstrand/MMM-Meniny",
+    "maintainer": "andersarstrand",
     "maintainerURL": "",
-    "description": "Display Slovak name of day.",
+    "description": "Display Swedish name of day.",
     "issues": 3,
-    "stars": 4,
-    "lastCommit": "2018-08-05T09:18:56+02:00"
+    "lastCommit": "2020-12-29T14:51:40+01:00"
   },
   {
     "name": "MMM-MensaMax",
@@ -7684,6 +7693,7 @@
     "maintainerURL": "",
     "description": "Show an image of the current moon phase.",
     "issues": 10,
+    "outdated": "Abandoned. Repo has been archived at 2023-10-16.",
     "stars": 19,
     "lastCommit": "2023-10-16T10:30:39+02:00"
   },
@@ -8767,6 +8777,7 @@
     "maintainerURL": "",
     "description": "A MagicMirror\u00b2 Module for Nagios.",
     "issues": 6,
+    "outdated": "Abandoned. Repo has been archived at 2023-03-09.",
     "stars": 6,
     "tags": [
       "nagios"
@@ -9097,7 +9108,7 @@
     ],
     "license": "ISC",
     "image": "screen1.PNG",
-    "lastCommit": "2023-03-24T13:18:49+02:00"
+    "lastCommit": "2024-02-02T21:35:37+02:00"
   },
   {
     "name": "MMM-NewsFeedTicker",
@@ -9250,6 +9261,7 @@
     "maintainerURL": "https://github.com/mlbonniec",
     "description": "Display your NiceHash projected income and rigs highest temperature.",
     "issues": 14,
+    "outdated": "Abandoned. Repo has been archived at 2023-07-23.",
     "stars": 0,
     "tags": [
       "crypto",
@@ -9457,6 +9469,7 @@
     "maintainerURL": "https://github.com/jesmak",
     "description": "Display the song you are currently listening to on AIMP.",
     "issues": 5,
+    "outdated": "Abandoned. Repo has been archived at 2024-01-22.",
     "stars": 0,
     "tags": [
       "aimp"
@@ -9473,6 +9486,7 @@
     "maintainerURL": "",
     "description": "Display the song you are currently listening to on Spotify.",
     "issues": 9,
+    "outdated": "Abandoned. No reactions to issues since years. No installation instructions. It no longer seems to work.",
     "stars": 204,
     "tags": [
       "spotify"
@@ -9544,6 +9558,7 @@
     "maintainerURL": "",
     "description": "O-clock inspired by PolarClock Screensaver.",
     "issues": 3,
+    "outdated": "Abandoned. Repo has been archived at 2020-06-10.",
     "stars": 15,
     "lastCommit": "2020-01-04T20:03:31+01:00"
   },
@@ -11114,6 +11129,7 @@
     "maintainerURL": "",
     "description": "Displays your Questrade positions.",
     "issues": 5,
+    "stars": 1,
     "lastCommit": "2020-12-26T19:25:51-08:00"
   },
   {
@@ -11124,6 +11140,7 @@
     "maintainerURL": "",
     "description": "Display random quotes using the <a target=\"_blank\" href=\"https://github.com/lukePeavey/quotable\">Quotable API</a>. Filters quotes by max length and tags.",
     "issues": 5,
+    "stars": 0,
     "lastCommit": "2023-03-15T22:37:06+00:00"
   },
   {
@@ -11134,6 +11151,7 @@
     "maintainerURL": "",
     "description": "Show a random quote from an online collection of quotations by authors, celebrities, and newsmakers. Multi language supported.",
     "issues": 7,
+    "stars": 25,
     "tags": [
       "quotes"
     ],
@@ -11149,6 +11167,7 @@
     "maintainerURL": "",
     "description": "Module that displays Raider IO score for multiple characters over any realms or regions.",
     "issues": 6,
+    "stars": 3,
     "lastCommit": "2021-05-31T17:56:51+01:00"
   },
   {
@@ -11159,6 +11178,7 @@
     "maintainerURL": "",
     "description": "Graphical rain forecast for the Netherlands, no dependies or outside scripts needed. Superfast with scalable vector graphics in desired color.",
     "issues": 6,
+    "stars": 9,
     "lastCommit": "2023-11-29T08:52:54+01:00"
   },
   {
@@ -11169,6 +11189,7 @@
     "maintainerURL": "https://github.com/jalibu",
     "description": "A rain radar map based on OpenStreetMap. Multiple location markers, option for alternating positions and zoom levels.",
     "issues": 2,
+    "stars": 35,
     "tags": [
       "weather",
       "rain",
@@ -11189,6 +11210,7 @@
     "maintainerURL": "",
     "description": "Displays a Precipitation Radar for your location.",
     "issues": 5,
+    "stars": 13,
     "lastCommit": "2020-01-29T22:54:25-06:00"
   },
   {
@@ -11199,6 +11221,7 @@
     "maintainerURL": "",
     "description": "2 hour Dutch rain forecast graph based on Buienradar.",
     "issues": 8,
+    "stars": 7,
     "tags": [
       "rain",
       "forecast"
@@ -11215,6 +11238,7 @@
     "maintainerURL": "https://github.com/jupadin",
     "description": "Show rain forecast weather maps based on OpenStreeMap. Highlight multiple points of interest with colored markers.",
     "issues": 11,
+    "stars": 2,
     "lastCommit": "2021-10-21T18:23:01+02:00"
   },
   {
@@ -11225,6 +11249,7 @@
     "maintainerURL": "https://github.com/tttooommm56",
     "description": "Graphical and textual rain forecast for France.",
     "issues": 8,
+    "stars": 7,
     "license": "MIT",
     "image": "screenshotRainForecast.jpg",
     "lastCommit": "2024-01-17T13:09:30+01:00"
@@ -11237,6 +11262,7 @@
     "maintainerURL": "",
     "description": "Display random quotes from brainyquote.",
     "issues": 5,
+    "stars": 18,
     "lastCommit": "2016-06-22T13:13:10-06:00"
   },
   {
@@ -11247,6 +11273,7 @@
     "maintainerURL": "",
     "description": "Load a random photo from picsum. Originally by diego-vieira, now with support for local paths and NextCloud shares.",
     "issues": 11,
+    "stars": 5,
     "license": "ISC",
     "lastCommit": "2022-02-20T19:31:27+01:00"
   },
@@ -11258,6 +11285,7 @@
     "maintainerURL": "https://github.com/jacopo1891",
     "description": "Display a random quote from various authorship using Paperquote's API.",
     "issues": 5,
+    "stars": 1,
     "lastCommit": "2024-01-15T09:26:01+01:00"
   },
   {
@@ -11268,6 +11296,7 @@
     "maintainerURL": "https://github.com/slametps",
     "description": "Display ayah/verse of Qur'an randomly.",
     "issues": 4,
+    "stars": 11,
     "tags": [
       "moslem",
       "islam",
@@ -11285,6 +11314,7 @@
     "maintainerURL": "",
     "description": "Load a playlist into a YouTube player, AND shuffle the videos in the playlist.",
     "issues": 8,
+    "stars": 14,
     "lastCommit": "2019-03-05T12:09:00-06:00"
   },
   {
@@ -11295,6 +11325,7 @@
     "maintainerURL": "https://github.com/nkl-kst",
     "description": "Display RBB weather data.",
     "issues": 16,
+    "stars": 5,
     "license": "MIT",
     "image": ".github-screen.jpg",
     "lastCommit": "2022-01-25T20:11:27+01:00"
@@ -11307,6 +11338,7 @@
     "maintainerURL": "https://github.com/juliankern",
     "description": "Displays the live timetable of the German pop culture TV/Streaming channel RocketBeansTV.",
     "issues": 7,
+    "stars": 1,
     "lastCommit": "2020-06-04T00:46:05+02:00"
   },
   {
@@ -11317,6 +11349,7 @@
     "maintainerURL": "",
     "description": "Display recent US rainfall with a small map of your state.",
     "issues": 5,
+    "stars": 2,
     "lastCommit": "2019-04-07T08:53:40-05:00"
   },
   {
@@ -11327,6 +11360,7 @@
     "maintainerURL": "",
     "description": "Displays a new recipe everyday.",
     "issues": 12,
+    "stars": 9,
     "license": "MIT",
     "image": "pics-recipe1.jpg",
     "lastCommit": "2020-01-12T22:22:37-05:00"
@@ -11355,6 +11389,7 @@
     "maintainerURL": "",
     "description": "Displays top level content from Reddit in either headlines or image based display types.",
     "issues": 14,
+    "stars": 34,
     "license": "ISC",
     "lastCommit": "2020-06-25T17:03:18-04:00"
   },
@@ -11366,6 +11401,7 @@
     "maintainerURL": "https://github.com/hayseedbyte",
     "description": "Horizontal scrolling news ticker using reddit r/news titles to avoid clickbait.",
     "issues": 3,
+    "stars": 4,
     "tags": [
       "news",
       "ticker",
@@ -11383,6 +11419,7 @@
     "maintainerURL": "",
     "description": "A simple module to display user karma from Reddit.com.",
     "issues": 2,
+    "stars": 3,
     "lastCommit": "2022-07-22T17:20:07-04:00"
   },
   {
@@ -11393,6 +11430,7 @@
     "maintainerURL": "",
     "description": "Shows specified subreddits(Text only), can have multiple instances.",
     "issues": 5,
+    "stars": 0,
     "lastCommit": "2019-10-13T04:27:55-06:00"
   },
   {
@@ -11403,6 +11441,7 @@
     "maintainerURL": "",
     "description": "Rain radar for locations in Germany. The weather dates were provided by <a target=\"_blank\" href=\"https://morgenwirdes.de\">Morgenwirdes</a>.",
     "issues": 5,
+    "stars": 2,
     "lastCommit": "2023-11-08T23:51:37+01:00"
   },
   {
@@ -11413,6 +11452,7 @@
     "maintainerURL": "",
     "description": "Cleanly shutdown (or reboot) your mirror, edit which modules are shown on your mirror and turn your monitor off and on from a simple website, i.e. from your smartphone.",
     "issues": 18,
+    "stars": 468,
     "tags": [
       "remote control",
       "control"
@@ -11429,6 +11469,7 @@
     "maintainerURL": "",
     "description": "Plugin for <code>MMM-Remote-Control</code> to update installable modules automatically.",
     "issues": 6,
+    "stars": 24,
     "lastCommit": "2023-10-19T08:33:11+02:00"
   },
   {
@@ -11439,6 +11480,7 @@
     "maintainerURL": "",
     "description": "Provides seamless integration with Google Drive\u2122 to display compliments and images from Drive.",
     "issues": 7,
+    "stars": 22,
     "lastCommit": "2018-11-16T12:37:45-05:00"
   },
   {
@@ -11449,6 +11491,7 @@
     "maintainerURL": "https://github.com/balassy",
     "description": "Displays the temperature from a remote sensor that is capable to POST the measured value through HTTP protocol in JSON.",
     "issues": 5,
+    "stars": 14,
     "tags": [
       "temperature",
       "raspberrypi"
@@ -11486,6 +11529,7 @@
     "maintainerURL": "https://github.com/arirobinson",
     "description": "Display live info from your 3D printer running <a target=\"_blank\" href=\"https://github.com/dc42/RepRapFirmware\">RepRapFirmware</a>. This firmware is mainly used on <a target=\"_blank\" href=\"https://www.duet3d.com\">Duet3D control boards (Duet Wifi &amp; Ethernet)</a>.",
     "issues": 7,
+    "stars": 0,
     "lastCommit": "2019-11-22T00:39:38-08:00"
   },
   {
@@ -11496,6 +11540,7 @@
     "maintainerURL": "",
     "description": "Show your daily time spent using your digital devices with <a target=\"_blank\" href=\"https://www.rescuetime.com\">RescueTime</a>.",
     "issues": 4,
+    "stars": 6,
     "tags": [
       "rescuetime",
       "productivity"
@@ -11512,6 +11557,7 @@
     "maintainerURL": "",
     "description": "Public transport information for Sweden.",
     "issues": 8,
+    "stars": 14,
     "tags": [
       "local transport",
       "sweden"
@@ -11527,6 +11573,7 @@
     "maintainerURL": "",
     "description": "Fetching REST data and display them on the mirror.",
     "issues": 8,
+    "stars": 16,
     "license": "ISC",
     "lastCommit": "2022-10-13T13:20:50+02:00"
   },
@@ -11538,6 +11585,7 @@
     "maintainerURL": "",
     "description": "Module for Rijks Museum. This was developed using the Rijksmuseum API.",
     "issues": 4,
+    "stars": 6,
     "tags": [
       "art",
       "rijksmuseum"
@@ -11554,6 +11602,8 @@
     "maintainerURL": "",
     "description": "Displays a video stream of your Ring doorbell when someone rings your doorbell.",
     "issues": 8,
+    "outdated": "Abandoned. Repo has been archived at 2022-08-25.",
+    "stars": 25,
     "license": "MIT",
     "lastCommit": "2021-11-30T13:47:40-07:00"
   },
@@ -11565,6 +11615,7 @@
     "maintainerURL": "",
     "description": "Display status and allow arming/disarming of a Ring alarm system.",
     "issues": 5,
+    "stars": 0,
     "license": "MIT",
     "image": "screenshot.jpg",
     "lastCommit": "2024-01-11T09:30:57-06:00"
@@ -11578,6 +11629,7 @@
     "description": "RKI-Covid19 data for German counties.",
     "issues": 5,
     "outdated": "Obsolete, no new data.",
+    "stars": 5,
     "tags": [
       "rki"
     ],
@@ -11593,6 +11645,7 @@
     "maintainerURL": "",
     "description": "Rhein-Main local transport system (RMV) - Departure Monitor.",
     "issues": 8,
+    "stars": 20,
     "tags": [
       "rmv",
       "frankfurt",
@@ -11611,6 +11664,7 @@
     "maintainerURL": "https://github.com/jalibu",
     "description": "A departure monitor for stations within the Rhein-Neckar-Verkehr (RNV) public traffic network using the new API.",
     "issues": 9,
+    "stars": 2,
     "license": "MIT",
     "lastCommit": "2021-12-28T12:27:24+01:00"
   },
@@ -11622,6 +11676,7 @@
     "maintainerURL": "https://github.com/jupadin",
     "description": "Departure Monitor for stations in the Rhein-Neckar-Verkehr (RNV) public traffic network using the new API.",
     "issues": 14,
+    "stars": 1,
     "license": "ISC",
     "lastCommit": "2022-02-16T22:15:10+01:00"
   },
@@ -11633,6 +11688,7 @@
     "maintainerURL": "",
     "description": "Monitor a given station in the RNV traffic network.",
     "issues": 11,
+    "stars": 1,
     "tags": [
       "rnv"
     ],
@@ -11647,6 +11703,7 @@
     "maintainerURL": "",
     "description": "Displays Rocket League Stats.",
     "issues": 9,
+    "stars": 1,
     "tags": [
       "rocket league"
     ],
@@ -11662,6 +11719,7 @@
     "maintainerURL": "",
     "description": "Display status of local Roomba.",
     "issues": 6,
+    "stars": 10,
     "tags": [
       "roomba"
     ],
@@ -11677,6 +11735,7 @@
     "maintainerURL": "",
     "description": "Displays the Rotten Tomatoes meter score for the current box office and movies coming soon.",
     "issues": 6,
+    "stars": 9,
     "lastCommit": "2017-12-13T22:12:41-05:00"
   },
   {
@@ -11687,6 +11746,7 @@
     "maintainerURL": "https://github.com/jeroenpeters1986",
     "description": "Module which shows when and which type of trash will be collected by Dutch garbage service ROVA.",
     "issues": 8,
+    "stars": 0,
     "lastCommit": "2021-07-04T07:23:14+02:00"
   },
   {
@@ -11697,6 +11757,7 @@
     "maintainerURL": "",
     "description": "Control the built in LEDs of your Raspberry Pi.",
     "issues": 8,
+    "stars": 4,
     "license": "MIT",
     "lastCommit": "2019-12-05T12:38:26+01:00"
   },
@@ -11708,6 +11769,7 @@
     "maintainerURL": "",
     "description": "Display any RSS feed.",
     "issues": 6,
+    "stars": 25,
     "lastCommit": "2016-12-14T19:47:07+01:00"
   },
   {
@@ -11718,6 +11780,7 @@
     "maintainerURL": "",
     "description": "Show RTSP video stream(s) from one or more security cameras.",
     "issues": 22,
+    "stars": 69,
     "license": "MIT",
     "image": "screenshot.jpg",
     "lastCommit": "2022-10-06T09:33:51-05:00"
@@ -11730,6 +11793,7 @@
     "maintainerURL": "",
     "description": "Viewing IP cameras RTSP stream in real time using WebRTC technology.",
     "issues": 7,
+    "stars": 11,
     "license": "ISC",
     "lastCommit": "2022-10-05T16:14:36-05:00"
   },
@@ -11741,6 +11805,7 @@
     "maintainerURL": "https://github.com/nikobix",
     "description": "Module to skim council website and extract rubish collection times.",
     "issues": 11,
+    "stars": 0,
     "license": "MIT",
     "image": "img-App_Shot.jpg",
     "lastCommit": "2020-05-16T20:03:15+01:00"
@@ -11753,6 +11818,7 @@
     "maintainerURL": "https://github.com/uncleLem",
     "description": "The total losses of the russian occupier since the full-scale invasion in Ukraine, per General Staff of the Armed Forces of Ukraine.",
     "issues": 5,
+    "stars": 4,
     "tags": [
       "russian invasion"
     ],
@@ -11769,6 +11835,7 @@
     "description": "Display public transport information for Oslo and Akershus in Norway.",
     "issues": 6,
     "outdated": "Abandoned. Repo has been archived at 2019-03-14. See <a href=\"https://github.com/Arve/MMM-Entur-tavle\">MMM-Entur-tavle</a> instead.",
+    "stars": 18,
     "license": "ISC",
     "image": "images-MMM-Ruter_Full.jpg",
     "lastCommit": "2017-08-19T20:54:38+02:00"
@@ -11781,6 +11848,7 @@
     "maintainerURL": "https://github.com/sebikolon/MMM-RVV \"github.com/sebikolon\"",
     "description": "Departure monitor for the RVV (Regensburger Verkehrsverbund) public transport (bus) system (Bavaria/Germany).",
     "issues": 8,
+    "stars": 5,
     "lastCommit": "2021-01-21T09:04:08+01:00"
   },
   {
@@ -11791,6 +11859,7 @@
     "maintainerURL": "https://github.com/reidarw",
     "description": "Displaying transactions and account balance from Sbanken (Norway).",
     "issues": 8,
+    "stars": 1,
     "lastCommit": "2024-02-01T21:53:19+01:00"
   },
   {
@@ -11802,6 +11871,7 @@
     "description": "Module to change screen scenes by time and order with ANIMATION EFFECT.",
     "issues": 3,
     "outdated": "Deprecated. The successor is MMM-Scenes2.",
+    "stars": 12,
     "tags": [
       "paging",
       "animation"
@@ -11817,6 +11887,7 @@
     "maintainerURL": "",
     "description": "Module to change screen scenes by time and order with ANIMATION EFFECT. Successor of MMM-Scenes since MM 2.25 (AnimateCSS is introduced).",
     "issues": 6,
+    "stars": 2,
     "license": "MIT",
     "lastCommit": "2023-10-05T16:29:54+02:00"
   },
@@ -11828,6 +11899,8 @@
     "maintainerURL": "",
     "description": "Display scottish premiere league standings.",
     "issues": 8,
+    "outdated": "Abandoned. Repo has been archived at 2020-05-09.",
+    "stars": 1,
     "tags": [
       "scottish premier league"
     ],
@@ -11843,6 +11916,7 @@
     "maintainerURL": "https://github.com/Tom-Hirschberger",
     "description": "Screensaver module which shuts the screen off if USER_PRESENCE is not received within specified timeout. Can be used as PIR module in combination with <a target=\"_blank\" href=\"https://github.com/Tom-Hirschberger/MMM-GPIO-Notifications\">MMM-GPIO-Notifications</a>.",
     "issues": 3,
+    "stars": 0,
     "tags": [
       "screensave",
       "pir"
@@ -11859,6 +11933,7 @@
     "maintainerURL": "",
     "description": "Cast a video from your phone to your mirror (currently can only cast YouTube).",
     "issues": 6,
+    "stars": 159,
     "tags": [
       "chromecast",
       "dial",
@@ -11878,6 +11953,7 @@
     "maintainerURL": "",
     "description": "Module to read data from a Pentair ScreenLogic pool system.",
     "issues": 4,
+    "stars": 2,
     "license": "MIT",
     "image": "screenshot.jpg",
     "lastCommit": "2023-07-19T07:17:26-10:00"
@@ -11890,6 +11966,7 @@
     "maintainerURL": "",
     "description": "Run a set of command-line scripts on a cron schedule and display an icon to differentiate.",
     "issues": 6,
+    "stars": 6,
     "tags": [
       "volume",
       "mute",
@@ -11907,6 +11984,7 @@
     "maintainerURL": "",
     "description": "Display the current playing song from Spotify, ITunes and Co.",
     "issues": 5,
+    "stars": 38,
     "lastCommit": "2020-09-10T15:53:49+02:00"
   },
   {
@@ -11917,6 +11995,7 @@
     "maintainerURL": "https://github.com/ChielChiel",
     "description": "Display your reputation of a StackExchange site (such as StackOverflow).",
     "issues": 10,
+    "stars": 1,
     "license": "MIT",
     "image": "docs-module_graph.jpg",
     "lastCommit": "2023-12-06T00:05:33+01:00"
@@ -11929,6 +12008,7 @@
     "maintainerURL": "",
     "description": "Screensaver.",
     "issues": 4,
+    "stars": 1,
     "lastCommit": "2019-12-29T22:31:07-05:00"
   },
   {
@@ -11939,6 +12019,7 @@
     "maintainerURL": "",
     "description": "Display order of turn information for ships transiting the St Lawrence Seaway Locks.",
     "issues": 5,
+    "stars": 0,
     "lastCommit": "2020-12-22T18:48:21-05:00"
   },
   {
@@ -11949,6 +12030,7 @@
     "maintainerURL": "",
     "description": "Takes a Selfie with an official Raspberry Pi Cam and can publish it to Facebook or Twitter. Needs API keys. Integrates nicely with MMM-Assistant (for voice control) and MMM-TelegramBot (for Telegram control).",
     "issues": 6,
+    "stars": 9,
     "tags": [
       "selfie"
     ],
@@ -11963,6 +12045,7 @@
     "maintainerURL": "https://github.com/BrianHepler",
     "description": "Taking a Selfie with USB cam.",
     "issues": 4,
+    "stars": 8,
     "license": "MIT",
     "image": "screenshot.jpg",
     "lastCommit": "2022-09-27T20:49:46-04:00"
@@ -11975,6 +12058,7 @@
     "maintainerURL": "",
     "description": "Web form to send arbitrary messages via <code>this.sendNotification()</code>.",
     "issues": 4,
+    "stars": 5,
     "lastCommit": "2019-10-18T08:57:46-04:00"
   },
   {
@@ -11985,6 +12069,7 @@
     "maintainerURL": "",
     "description": "Connects to the Seneye Aquarium Monitor API and displays water parameters from the most recent test data.",
     "issues": 8,
+    "stars": 1,
     "lastCommit": "2018-10-26T17:47:28+01:00"
   },
   {
@@ -11995,6 +12080,7 @@
     "maintainerURL": "",
     "description": "This module enables having live sensor data without touching the Pi hardware by utilizing the BLE advertisment beacons from sensors and routing that live info into MagicMirror\u00b2 platform.",
     "issues": 7,
+    "stars": 2,
     "tags": [
       "movesense",
       "ruuvitag",
@@ -12012,6 +12098,7 @@
     "maintainerURL": "https://github.com/Tom-Hirschberger",
     "description": "A module to send notifications based on messages received via one/multiple serial devices.",
     "issues": 3,
+    "stars": 6,
     "tags": [
       "serial console",
       "tty",
@@ -12029,6 +12116,7 @@
     "maintainerURL": "https://github.com/XBCreepinJesus",
     "description": "A module to check the up/down status of servers/devices on your network.",
     "issues": 2,
+    "stars": 16,
     "tags": [
       "ping",
       "server",
@@ -12046,6 +12134,7 @@
     "maintainerURL": "https://github.com/cybex-dev",
     "description": "Displays all Bonjour/Avahi services on your local network in a readable format, also allowing some interaction with the services, works well with <a target=\"_blank\" href=\"https://github.com/cybex-dev/MMM-XDG-OPEN\">XMMM-Xdg-Open</a>.",
     "issues": 7,
+    "stars": 1,
     "lastCommit": "2020-01-24T03:56:14+02:00"
   },
   {
@@ -12057,6 +12146,7 @@
     "description": "Displays the ETA of San Francisco's MUNI Bus and Rail systems based on the given stops and routes.",
     "issues": 4,
     "outdated": "Abandoned. The API used no longer works, there is a new API but the developer no longer seems to be active.",
+    "stars": 3,
     "tags": [
       "muni",
       "sf",
@@ -12074,6 +12164,7 @@
     "maintainerURL": "https://github.com/mosesyong",
     "description": "Display bus transport info in Singapore.",
     "issues": 7,
+    "stars": 5,
     "license": "ISC",
     "image": "screenshots-screenshot.jpg",
     "lastCommit": "2021-01-31T20:42:36+08:00"
@@ -12086,6 +12177,7 @@
     "maintainerURL": "",
     "description": "Display shabbat times for the current week and optionally hide all modules.",
     "issues": 8,
+    "stars": 3,
     "tags": [
       "shabbat",
       "hebrew",
@@ -12102,6 +12194,7 @@
     "maintainerURL": "",
     "description": "Integrate Apple AirTunes/Airplay metadata coming via shairport-sync into the MagicMirror\u00b2. Does not work with video or mirroring.",
     "issues": 7,
+    "stars": 16,
     "lastCommit": "2020-07-08T03:58:55+05:30"
   },
   {
@@ -12112,6 +12205,7 @@
     "maintainerURL": "https://github.com/Medve01",
     "description": "Display data from 1 Shelly HT sensor.",
     "issues": 7,
+    "stars": 1,
     "lastCommit": "2020-04-21T12:31:27+02:00"
   },
   {
@@ -12122,6 +12216,7 @@
     "maintainerURL": "https://github.com/stefanjacobs",
     "description": "Display data from 1 Shelly PM sensor, forked and modified by <a target=\"_blank\" href=\"https://github.com/Medve01/Shelly-HT\">Shelly-HT</a>.",
     "issues": 8,
+    "stars": 2,
     "license": "UNLICENSE",
     "lastCommit": "2022-10-10T15:43:28+02:00"
   },
@@ -12133,6 +12228,7 @@
     "maintainerURL": "https://github.com/mgarrix",
     "description": "Display data from Shelly EM sensor.",
     "issues": 5,
+    "stars": 0,
     "tags": [
       "shelly",
       "shellyem",
@@ -12151,6 +12247,7 @@
     "maintainerURL": "https://github.com/IoT-Coder",
     "description": "Display data from Shelly+ HT sensor. Forked from Shelly-HT for Gen2 device Shelly Plus HT.",
     "issues": 6,
+    "stars": 0,
     "lastCommit": "2023-10-01T13:13:27+02:00"
   },
   {
@@ -12161,6 +12258,7 @@
     "maintainerURL": "",
     "description": "Display your shipment tracking status.",
     "issues": 16,
+    "stars": 26,
     "tags": [
       "shipment tracking"
     ],
@@ -12176,6 +12274,7 @@
     "maintainerURL": "",
     "description": "Display stands of Svenska Hockey Ligan (SHL).",
     "issues": 5,
+    "stars": 1,
     "license": "MIT",
     "image": "docs-screenshot.PNG",
     "lastCommit": "2019-10-06T14:29:49+02:00"
@@ -12188,6 +12287,8 @@
     "maintainerURL": "",
     "description": "Simple, multi-threaded interface for HC-SR04 ultra sonic sensors to be used with MMM-pages.",
     "issues": 10,
+    "outdated": "Abandoned. Repo has been archived at 2022-05-22.",
+    "stars": 19,
     "license": "MIT",
     "image": "images-MMM-Simple-Swiper-Pin-Layout.jpg",
     "lastCommit": "2022-01-16T09:43:22-05:00"
@@ -12200,6 +12301,7 @@
     "maintainerURL": "",
     "description": "Simply displays logo with local image file path or url.",
     "issues": 2,
+    "stars": 36,
     "lastCommit": "2019-08-01T11:00:03+07:00"
   },
   {
@@ -12210,6 +12312,7 @@
     "maintainerURL": "https://github.com/sabo10o29",
     "description": "Shows trash days with simple setup.",
     "issues": 5,
+    "stars": 1,
     "tags": [
       "trash day",
       "garbage"
@@ -12226,6 +12329,7 @@
     "maintainerURL": "",
     "description": "Simple and plain text module with some minor formatting options. Can also display content from text files with multiple lines.",
     "issues": 5,
+    "stars": 7,
     "lastCommit": "2021-07-26T18:30:40+02:00"
   },
   {
@@ -12236,6 +12340,7 @@
     "maintainerURL": "https://github.com/balassy",
     "description": "Displays the stock price of a single company without any fancy animation.",
     "issues": 6,
+    "stars": 6,
     "tags": [
       "stock"
     ],
@@ -12251,6 +12356,7 @@
     "maintainerURL": "",
     "description": "Shows this week's school timetable from the Swedish school system Skola24.",
     "issues": 8,
+    "stars": 3,
     "tags": [
       "schema",
       "skolschema",
@@ -12268,6 +12374,7 @@
     "maintainerURL": "",
     "description": "Show school lunch menus in Sweden from skolmaten.se.",
     "issues": 7,
+    "stars": 7,
     "tags": [
       "skolmat",
       "skolmaten",
@@ -12284,6 +12391,7 @@
     "maintainerURL": "",
     "description": "Based on MMM-Ruter, but for the municipality of Hordaland in Norway.",
     "issues": 8,
+    "stars": 6,
     "license": "ISC",
     "image": "images-MMM-Skyss-1.jpg",
     "lastCommit": "2018-05-01T12:36:21+02:00"
@@ -12296,6 +12404,7 @@
     "maintainerURL": "",
     "description": "Display public transport in Stockholm/<strong>Sweden</strong>.",
     "issues": 8,
+    "stars": 12,
     "tags": [
       "publictransport"
     ],
@@ -12311,6 +12420,7 @@
     "maintainerURL": "",
     "description": "Cycles through the newest messages of a Slack channel.",
     "issues": 4,
+    "stars": 3,
     "tags": [
       "slack"
     ],
@@ -12325,6 +12435,7 @@
     "maintainerURL": "",
     "description": "Post announcements to your mirror from a designated Slack channel.",
     "issues": 7,
+    "stars": 5,
     "lastCommit": "2018-10-17T23:19:31-07:00"
   },
   {
@@ -12335,6 +12446,7 @@
     "maintainerURL": "https://github.com/ngnijland",
     "description": "Show what's currently playing now on the dutch radio station Slam!.",
     "issues": 6,
+    "stars": 0,
     "tags": [
       "slamfm!",
       "radio",
@@ -12354,6 +12466,7 @@
     "maintainerURL": "",
     "description": "Displays your <a target=\"_blank\" href=\"https://sleeper.com\">Sleeper</a> fantasy football matchup with live updating scores.",
     "issues": 10,
+    "stars": 0,
     "lastCommit": "2023-09-08T10:15:10-07:00"
   },
   {
@@ -12364,6 +12477,7 @@
     "maintainerURL": "",
     "description": "Module that uses an external source for motion detection, like a web camera .",
     "issues": 6,
+    "stars": 11,
     "lastCommit": "2023-05-26T17:22:16-05:00"
   },
   {
@@ -12374,6 +12488,7 @@
     "maintainerURL": "",
     "description": "Module to integrate <a target=\"_blank\" href=\"https://www.smappee.com\">Smappee</a>s smart home energy consumption monitor.",
     "issues": 7,
+    "stars": 2,
     "license": "MIT",
     "image": ".github-preview.jpg",
     "lastCommit": "2018-03-06T18:18:49+01:00"
@@ -12386,6 +12501,7 @@
     "maintainerURL": "https://github.com/EbenKouao",
     "description": "This module allows you to transform your MagicMirror\u00b2 into a touchscreen interactive experience. This includes hiding all modules (Standby Mode) and Side Menu Option to shutdown your mirror via MagicMirror\u00b2 UI.",
     "issues": 7,
+    "stars": 78,
     "lastCommit": "2021-03-29T14:21:39+01:00"
   },
   {
@@ -12396,6 +12512,7 @@
     "maintainerURL": "https://github.com/AgP42",
     "description": "An iFrame module to display web content (including YouTube, IP cameras, etc.). Several rotating URL, autorefresh and remote control of the URL to display, Next/Prev/Play/Stop. <a target=\"_blank\" href=\"https://forum.magicmirror.builders/topic/9750/mmm-smartwebdisplay-display-web-contents-including-youtube-on-your-mm\">MMM-SmartWebDisplay forum</a>.",
     "issues": 9,
+    "stars": 52,
     "tags": [
       "iframe",
       "notification"
@@ -12411,6 +12528,7 @@
     "maintainerURL": "",
     "description": "Air pollution in Polish cities.",
     "issues": 6,
+    "stars": 3,
     "tags": [
       "air polution"
     ],
@@ -12426,6 +12544,7 @@
     "maintainerURL": "",
     "description": "Play the retro game Snake on your mirror using your smartphone.",
     "issues": 3,
+    "stars": 23,
     "lastCommit": "2021-05-04T21:46:59+02:00"
   },
   {
@@ -12436,6 +12555,7 @@
     "maintainerURL": "",
     "description": "Display upcoming trains between 2 SNCF stations (France).",
     "issues": 5,
+    "stars": 5,
     "tags": [
       "localtransport",
       "sncf",
@@ -12453,6 +12573,7 @@
     "maintainerURL": "",
     "description": "Uses SNMP to display bandwidth usage from a network device interface.",
     "issues": 6,
+    "stars": 4,
     "tags": [
       "snmp",
       "bandwidth"
@@ -12469,6 +12590,7 @@
     "maintainerURL": "",
     "description": "More realistic snow plugin to improve your winter experience.",
     "issues": 5,
+    "stars": 54,
     "lastCommit": "2018-02-13T22:37:11+01:00"
   },
   {
@@ -12479,6 +12601,7 @@
     "maintainerURL": "",
     "description": "Display standings from European Soccer (Football) leagues (optional voice-control).",
     "issues": 10,
+    "stars": 28,
     "tags": [
       "soccer standings"
     ],
@@ -12494,6 +12617,7 @@
     "maintainerURL": "",
     "description": "Display live scores of your favorite soccer leagues/competitions.",
     "issues": 3,
+    "stars": 6,
     "tags": [
       "live score",
       "soccer"
@@ -12510,6 +12634,7 @@
     "maintainerURL": "https://github.com/ngnijland",
     "description": "Displays the follower count of a Twitter user of choice.",
     "issues": 5,
+    "stars": 4,
     "tags": [
       "social",
       "counter",
@@ -12532,6 +12657,7 @@
     "maintainerURL": "",
     "description": "Station monitor for bicycle networks based on the Socialbicycles API/Infrastructure, e.g. Wavelo in Krak\u00f3w, Poland.",
     "issues": 8,
+    "stars": 0,
     "tags": [
       "nextbike",
       "bike sharing"
@@ -12548,6 +12674,7 @@
     "maintainerURL": "",
     "description": "Display statistics from your Enphase Energy microinverter PV system.",
     "issues": 8,
+    "stars": 6,
     "lastCommit": "2017-03-29T18:27:12-06:00"
   },
   {
@@ -12558,6 +12685,7 @@
     "maintainerURL": "https://github.com/st3v0rr",
     "description": "Display live data and statistics from your SolarEdge inverter system. PV and optional battery support.",
     "issues": 10,
+    "stars": 1,
     "license": "MIT",
     "image": "docs-SolarEdgePv.jpg",
     "lastCommit": "2022-03-08T18:31:12+01:00"
@@ -12570,17 +12698,8 @@
     "maintainerURL": "",
     "description": "Display statistics from your SolarEdge PV inverter system.",
     "issues": 8,
+    "stars": 5,
     "lastCommit": "2019-05-03T12:37:45+01:00"
-  },
-  {
-    "name": "MMM-SolarEdge",
-    "url": "https://github.com/pizidavi/MMM-SolarEdge",
-    "id": "pizidavi/MMM-SolarEdge",
-    "maintainer": "pizidavi",
-    "maintainerURL": "",
-    "description": "Displays, updated every minute, the energy produced, used and received/released to the grid by your SolarEdge System.",
-    "issues": 7,
-    "lastCommit": "2020-08-27T23:44:11+02:00"
   },
   {
     "name": "MMM-SolarEdgeLite",
@@ -12590,6 +12709,7 @@
     "maintainerURL": "https://github.com/jeroenpeters1986",
     "description": "Display simple statistics from your SolarEdge (based on bertieuk).",
     "issues": 6,
+    "stars": 1,
     "lastCommit": "2022-08-30T11:22:49+02:00"
   },
   {
@@ -12600,6 +12720,7 @@
     "maintainerURL": "",
     "description": "Display statistics from the Solarman API, e.g. from Bosswerk PV inverter.",
     "issues": 6,
+    "stars": 2,
     "license": "MIT",
     "image": "screenshot.jpg",
     "lastCommit": "2024-01-18T20:28:51+01:00"
@@ -12612,6 +12733,7 @@
     "maintainerURL": "",
     "description": "Display the last Solar Dynamics Observatory (SDO) picture.",
     "issues": 5,
+    "stars": 2,
     "lastCommit": "2020-01-02T01:16:39+01:00"
   },
   {
@@ -12622,6 +12744,7 @@
     "maintainerURL": "",
     "description": "Display the currently playing track of your Sonos system.",
     "issues": 7,
+    "stars": 40,
     "license": "MIT",
     "image": ".github-preview.jpg",
     "lastCommit": "2024-02-02T01:39:25+00:00"
@@ -12634,6 +12757,7 @@
     "maintainerURL": "https://github.com/tbouron",
     "description": "Module that displays playing tracks on your Sonos network.",
     "issues": 7,
+    "stars": 12,
     "license": "Apache 2.0",
     "lastCommit": "2020-10-01T11:25:43+01:00"
   },
@@ -12645,6 +12769,7 @@
     "maintainerURL": "https://github.com/Snille",
     "description": "A fork of CFenners module with new features. It's used to display informations about the currently playing songs on your Sonos system.",
     "issues": 11,
+    "stars": 9,
     "lastCommit": "2021-08-07T15:03:05+02:00"
   },
   {
@@ -12656,6 +12781,7 @@
     "description": "Static Or Rotating Tides module. Replaces/combines MMM-SimpleTides and MMM-StaticTides.",
     "issues": 6,
     "outdated": "Abandoned. No reactions to issues since years. Missing instructions to install 'request'.",
+    "stars": 2,
     "lastCommit": "2020-04-11T21:13:37-04:00"
   },
   {
@@ -12666,6 +12792,7 @@
     "maintainerURL": "",
     "description": "Adds vertical space (as HTML div) between modules.",
     "issues": 5,
+    "stars": 9,
     "lastCommit": "2019-08-15T23:13:58+02:00"
   },
   {
@@ -12676,6 +12803,7 @@
     "maintainerURL": "",
     "description": "Show the previous and upcoming launches of any rocket, bases on SpaceLaunchNow API.",
     "issues": 6,
+    "stars": 3,
     "lastCommit": "2020-06-05T16:19:36+02:00"
   },
   {
@@ -12686,6 +12814,7 @@
     "maintainerURL": "",
     "description": "Show the previous and upcoming launches of SpaceX rockets.",
     "issues": 6,
+    "stars": 10,
     "lastCommit": "2020-02-22T12:59:56+01:00"
   },
   {
@@ -12696,6 +12825,7 @@
     "maintainerURL": "https://github.com/LukasKlose",
     "description": "Display the tables of the Polish Speedway Leagues (PGE Ekstraliga, I. Liga \u017bu\u017clowa , II. Liga \u017bu\u017clowa).",
     "issues": 9,
+    "stars": 0,
     "lastCommit": "2020-09-04T17:14:47+02:00"
   },
   {
@@ -12706,6 +12836,7 @@
     "maintainerURL": "",
     "description": "Spotify Controller - with device and account switch buttons, easy volume change via touch and much more.",
     "issues": 4,
+    "stars": 60,
     "tags": [
       "magicmirrormodule",
       "spotify",
@@ -12723,6 +12854,7 @@
     "maintainerURL": "",
     "description": "Display information from Spotify Connect e.g. cover, artist and track information.",
     "issues": 6,
+    "stars": 51,
     "lastCommit": "2017-02-15T19:48:37+01:00"
   },
   {
@@ -12733,6 +12865,7 @@
     "maintainerURL": "",
     "description": "Add events to MMM-Spotify to manage volume and playlists.",
     "issues": 4,
+    "stars": 1,
     "lastCommit": "2020-04-08T04:49:02+02:00"
   },
   {
@@ -12743,6 +12876,7 @@
     "maintainerURL": "https://github.com/Ruud14",
     "description": "Displays the latest releases from your favorite spotify artists.",
     "issues": 10,
+    "stars": 3,
     "tags": [
       "spotify"
     ],
@@ -12757,6 +12891,7 @@
     "maintainerURL": "",
     "description": "Display upcoming metros in Rennes (France).",
     "issues": 6,
+    "stars": 1,
     "lastCommit": "2020-04-29T23:55:51+02:00"
   },
   {
@@ -12767,6 +12902,7 @@
     "maintainerURL": "https://github.com/spydersoft-consulting",
     "description": "Display incidents and component status from a StatusPage.io site.",
     "issues": 8,
+    "stars": 0,
     "tags": [
       "scheduler"
     ],
@@ -12782,6 +12918,7 @@
     "maintainerURL": "",
     "description": "Displays time spent on games on Steam for a specific user.",
     "issues": 5,
+    "stars": 7,
     "license": "MIT",
     "image": "screenshot.jpg",
     "lastCommit": "2023-12-28T15:12:54+01:00"
@@ -12794,6 +12931,7 @@
     "maintainerURL": "",
     "description": "Display the next transports for any given STIB (Brussel/Belgium) station.",
     "issues": 9,
+    "stars": 4,
     "lastCommit": "2016-08-22T17:35:49+02:00"
   },
   {
@@ -12804,6 +12942,7 @@
     "maintainerURL": "",
     "description": "STIB waiting times. Re-write of danito's MMM-stib, using the official STIB API and no XML parsing.",
     "issues": 7,
+    "stars": 2,
     "license": "MIT",
     "image": "img-screenshot.jpg",
     "lastCommit": "2020-09-11T22:07:09+02:00"
@@ -12816,6 +12955,7 @@
     "maintainerURL": "",
     "description": "Displays current stock prices of companies using YAHOO FINANCE API.",
     "issues": 5,
+    "stars": 15,
     "lastCommit": "2018-04-13T21:33:47+01:00"
   },
   {
@@ -12826,6 +12966,7 @@
     "maintainerURL": "",
     "description": "Display a stoic quote at a given interval or time of day.",
     "issues": 2,
+    "stars": 1,
     "tags": [
       "quotes",
       "quote"
@@ -12842,6 +12983,7 @@
     "maintainerURL": "https://github.com/Klettner",
     "description": "Display an alert-style timer or stopwatch. Controllable via notifications or the <a target=\"_blank\" href=\"https://github.com/Klettner/MM-Remote\">MM-Remote</a> android app.",
     "issues": 5,
+    "stars": 7,
     "tags": [
       "timer"
     ],
@@ -12857,6 +12999,7 @@
     "maintainerURL": "",
     "description": "A shopping list module for users of the StorH app.",
     "issues": 6,
+    "stars": 0,
     "license": "MIT",
     "image": "images-image.jpg",
     "lastCommit": "2017-07-13T20:48:20+02:00"
@@ -12869,6 +13012,7 @@
     "maintainerURL": "",
     "description": "Display your activity data from <a target=\"_blank\" href=\"https://www.strava.com\">Strava.com</a>.",
     "issues": 10,
+    "stars": 49,
     "tags": [
       "strava"
     ],
@@ -12884,6 +13028,7 @@
     "maintainerURL": "",
     "description": "Displays last reading from your Dexcom G6 via the share API.",
     "issues": 8,
+    "stars": 3,
     "tags": [
       "dexcom"
     ],
@@ -12899,6 +13044,7 @@
     "maintainerURL": "",
     "description": "Display the current, monthly and yearly power output of your SunnyPortal Solar Panels.(<a target=\"_blank\" href=\"https://www.sunnyportal.com\">https://www.sunnyportal.com</a>).",
     "issues": 7,
+    "stars": 3,
     "license": "MIT",
     "image": "images-SunnyPortal1.jpg",
     "lastCommit": "2021-01-03T17:12:00+01:00"
@@ -12912,6 +13058,7 @@
     "description": "More information than you ever wanted to know about the rising and setting of the sun.",
     "issues": 7,
     "outdated": "Abandoned. No reactions to issues since years. Missing instructions to install 'request'.",
+    "stars": 16,
     "lastCommit": "2020-05-22T16:29:35-04:00"
   },
   {
@@ -12922,6 +13069,7 @@
     "maintainerURL": "https://github.com/mumblebaj",
     "description": "Display a classic railway clock.",
     "issues": 3,
+    "stars": 3,
     "tags": [
       "sweepclock station clock"
     ],
@@ -12931,19 +13079,19 @@
   },
   {
     "name": "MMM-Swipe",
-    "url": "https://github.com/mochman/MMM-Swipe",
-    "id": "mochman/MMM-Swipe",
-    "maintainer": "mochman",
+    "url": "https://github.com/Simon089/MMM-Swipe",
+    "id": "Simon089/MMM-Swipe",
+    "maintainer": "Simon089",
     "maintainerURL": "",
     "description": "Uses 2 HC-SR04 ultrasonic sensors to determing hand position to produce a \"Swipe Left\", \"Swipe Right\", or \"Press\".",
-    "issues": 9,
+    "issues": 13,
     "tags": [
       "hand gestures",
       "swipe",
       "modules"
     ],
     "license": "MIT",
-    "lastCommit": "2018-01-16T19:19:15-05:00"
+    "lastCommit": "2018-03-16T10:31:46+01:00"
   },
   {
     "name": "MMM-SwissCommute",
@@ -12953,6 +13101,7 @@
     "maintainerURL": "",
     "description": "Display the next departures for your favorite (train) connection in Switzerland (SBB).",
     "issues": 10,
+    "stars": 8,
     "license": "MIT",
     "lastCommit": "2020-05-01T22:54:08+02:00"
   },
@@ -12964,6 +13113,7 @@
     "maintainerURL": "https://github.com/roufri",
     "description": "Display the water temperature of a Swiss lake at a given point.",
     "issues": 3,
+    "stars": 0,
     "lastCommit": "2021-08-05T15:22:30+02:00"
   },
   {
@@ -12974,6 +13124,7 @@
     "maintainerURL": "",
     "description": "Display the next departures in every direction for your favorite trainstation in Switzerland with delay information.",
     "issues": 8,
+    "stars": 6,
     "license": "MIT",
     "image": "Stationboard.PNG",
     "lastCommit": "2018-01-30T16:17:20+01:00"
@@ -12986,6 +13137,7 @@
     "maintainerURL": "",
     "description": "Display train departures from your favourite train station.",
     "issues": 7,
+    "stars": 7,
     "lastCommit": "2017-12-18T14:18:19+01:00"
   },
   {
@@ -12996,6 +13148,7 @@
     "maintainerURL": "",
     "description": "Display Synology Download Station tasks.",
     "issues": 7,
+    "stars": 15,
     "tags": [
       "synology",
       "download satation"
@@ -13011,6 +13164,7 @@
     "maintainerURL": "https://github.com/Tom-Hirschberger",
     "description": "Display the video streams of cameras connected to your Synology Disc Stations and control their positions.",
     "issues": 2,
+    "stars": 4,
     "tags": [
       "synology",
       "surveillancestation",
@@ -13025,13 +13179,13 @@
   },
   {
     "name": "MMM-syslog",
-    "url": "https://github.com/paviro/MMM-syslog",
-    "id": "paviro/MMM-syslog",
-    "maintainer": "paviro",
+    "url": "https://github.com/marcinomen/MMM-syslog",
+    "id": "marcinomen/MMM-syslog",
+    "maintainer": "marcinomen",
     "maintainerURL": "",
     "description": "API for sending notifications to your mirror.",
     "issues": 9,
-    "lastCommit": "2017-04-03T12:00:13+07:00"
+    "lastCommit": "2020-03-17T00:03:10+01:00"
   },
   {
     "name": "MMM-SystemMonitor",
@@ -13041,6 +13195,7 @@
     "maintainerURL": "https://github.com/btastic",
     "description": "Shows system stats similar to MMM-SystemStats.",
     "issues": 6,
+    "stars": 3,
     "tags": [
       "systemmonitor"
     ],
@@ -13056,6 +13211,8 @@
     "maintainerURL": "",
     "description": "Shows Raspberry Pi system stats like CPU temperature, free Ram, System load, and Uptime.",
     "issues": 8,
+    "outdated": "Abandoned. Repo has been archived at 2022-09-05.",
+    "stars": 90,
     "tags": [
       "cpu temperature",
       "system load"
@@ -13072,6 +13229,7 @@
     "maintainerURL": "https://github.com/E3V3A",
     "description": "A Demo module for using <a target=\"_blank\" href=\"https://tabulator.info\">Tabulator</a> to directly parse JSON/XML into MM DHTML tables.",
     "issues": 3,
+    "stars": 10,
     "tags": [
       "tables",
       "json",
@@ -13089,6 +13247,7 @@
     "maintainerURL": "https://github.com/WouterEekhout",
     "description": "Module for your Tado Smart Thermostat.",
     "issues": 3,
+    "stars": 6,
     "license": "ISC",
     "image": "img-screenshot.jpg",
     "lastCommit": "2021-09-13T14:05:05+02:00"
@@ -13101,6 +13260,7 @@
     "maintainerURL": "",
     "description": "Display METAR and TAF data for airports world-wide.",
     "issues": 9,
+    "stars": 1,
     "lastCommit": "2022-02-20T13:56:28-05:00"
   },
   {
@@ -13111,6 +13271,7 @@
     "maintainerURL": "",
     "description": "Shows nearest scooters/cars/mopeds/bikes to rent in your area. Comes with direction and distance info.",
     "issues": 6,
+    "stars": 0,
     "tags": [
       "carsharing",
       "scooters",
@@ -13130,6 +13291,7 @@
     "maintainerURL": "https://github.com/wiesty",
     "description": "Module to display the local gas prices in Germany (Tankstellen-Preise).",
     "issues": 2,
+    "stars": 6,
     "tags": [
       "gas",
       "germany"
@@ -13146,6 +13308,7 @@
     "maintainerURL": "",
     "description": "Displays the currently playing Plex stream activity from <a target=\"_blank\" href=\"https://tautulli.com\">Tautulli</a>.",
     "issues": 5,
+    "stars": 10,
     "lastCommit": "2023-10-18T11:19:58-05:00"
   },
   {
@@ -13156,6 +13319,7 @@
     "maintainerURL": "",
     "description": "Display client list of a Teamspeak3 server.",
     "issues": 7,
+    "stars": 7,
     "tags": [
       "teamspeak",
       "client list"
@@ -13171,6 +13335,7 @@
     "maintainerURL": "https://github.com/doctorfree",
     "description": "Creates and manages Telegram commands to control a MagicMirror\u00b2 via the MirrorCommandLine tools. MMM-TelegramCommands requires the installation and configuration of the <a target=\"_blank\" href=\"https://github.com/bugsounet/MMM-TelegramBot\">MMM-TelegramBot</a> module and the <a target=\"_blank\" href=\"https://gitlab.com/doctorfree/MirrorCommandLine\">MirrorCommandLine</a> suite of command line utilites for the MagicMirror\u00b2.",
     "issues": 8,
+    "stars": 3,
     "tags": [
       "telegram",
       "commandline"
@@ -13186,6 +13351,7 @@
     "maintainerURL": "",
     "description": "Display DS18B20 sensor's temperature.",
     "issues": 8,
+    "stars": 18,
     "tags": [
       "ds18b20",
       "temperature",
@@ -13202,6 +13368,7 @@
     "maintainerURL": "https://github.com/Tom-Hirschberger",
     "description": "Display tempature, humdity, and more of DHT11, DHT22, BMT280, HTU21, DS18B20 or other sensors.",
     "issues": 2,
+    "stars": 4,
     "tags": [
       "temperature",
       "humidity",
@@ -13224,6 +13391,7 @@
     "maintainerURL": "",
     "description": "Display Tesla data from either <a target=\"_blank\" href=\"https://teslafi.com\">TeslaFi</a> or <a target=\"_blank\" href=\"https://www.tessie.com\">Tessie</a>.",
     "issues": 12,
+    "stars": 4,
     "tags": [
       "tesla",
       "teslafi",
@@ -13241,6 +13409,7 @@
     "maintainerURL": "",
     "description": "Display Tesla data directly from Tesla API. Customizable GUI based on <a target=\"_blank\" href=\"https://github.com/denverquane/MMM-Teslamate\">MMM-TeslaMate</a>.",
     "issues": 10,
+    "stars": 2,
     "license": "ISC",
     "image": "images-MMM-Tesla3.jpg",
     "lastCommit": "2023-11-18T16:40:20-05:00"
@@ -13253,6 +13422,7 @@
     "maintainerURL": "https://github.com/spitzlbergerj",
     "description": "Displays data from <a target=\"_blank\" href=\"https://github.com/bassmaster187/TeslaLogger\">TeslaLogger</a> or/and <a target=\"_blank\" href=\"https://github.com/adriankumpf/teslamate\">TeslaMate</a> via MQTT.",
     "issues": 4,
+    "stars": 5,
     "license": "MIT",
     "image": "img-MMM-TeslaLogger-ScreenShot-image.jpg",
     "lastCommit": "2022-03-26T15:09:49+01:00"
@@ -13265,6 +13435,7 @@
     "maintainerURL": "",
     "description": "Display live Tesla status using the Teslamate self-hosted monitoring system and MQTT Broker.",
     "issues": 6,
+    "stars": 50,
     "lastCommit": "2023-02-04T20:33:44+01:00"
   },
   {
@@ -13275,6 +13446,7 @@
     "maintainerURL": "",
     "description": "Display my tesla status using data from firebase realtime database.",
     "issues": 7,
+    "stars": 1,
     "lastCommit": "2019-06-20T00:12:34-05:00"
   },
   {
@@ -13285,6 +13457,7 @@
     "maintainerURL": "https://github.com/ngnijland",
     "description": "A clock which shows the time as text.",
     "issues": 6,
+    "stars": 10,
     "tags": [
       "smar",
       "clock",
@@ -13305,6 +13478,7 @@
     "maintainerURL": "",
     "description": "Shows a different text each week.",
     "issues": 5,
+    "stars": 1,
     "lastCommit": "2020-02-10T13:59:01+01:00"
   },
   {
@@ -13315,6 +13489,7 @@
     "maintainerURL": "",
     "description": "This module gets real time arrival predictions for specifc stops using the TfL API.",
     "issues": 7,
+    "stars": 4,
     "tags": [
       "transport",
       "london",
@@ -13333,6 +13508,7 @@
     "maintainerURL": "https://www.emanuelealbini.com",
     "description": "Status board for TFL (Transport For London) lines including London Tube, Elizabeth line, Tram, DLR, Bus, River Coach.",
     "issues": 8,
+    "stars": 6,
     "lastCommit": "2023-09-30T15:04:49+02:00"
   },
   {
@@ -13343,6 +13519,7 @@
     "maintainerURL": "",
     "description": "View the latest popular things on Thingiverse.",
     "issues": 7,
+    "stars": 2,
     "license": "MIT",
     "lastCommit": "2021-08-04T19:55:03-05:00"
   },
@@ -13354,6 +13531,7 @@
     "maintainerURL": "",
     "description": "Show electricity related data for Tibber customers. Shows power, prices, consumption, voltage, current and more.",
     "issues": 8,
+    "stars": 31,
     "tags": [
       "tibber",
       "energy",
@@ -13373,6 +13551,7 @@
     "maintainerURL": "https://github.com/zhouxichun",
     "description": "Fetch earth live image form Himawari #8 geostationary satellite and display images on screen.",
     "issues": 5,
+    "stars": 1,
     "lastCommit": "2023-09-21T19:43:32+08:00"
   },
   {
@@ -13383,6 +13562,7 @@
     "maintainerURL": "",
     "description": "Shows the latest hours tracked by the time tracking application Timetagger.",
     "issues": 11,
+    "stars": 2,
     "license": "MIT",
     "image": "doc-mmm-timetagger-screenshot-1.jpg",
     "lastCommit": "2022-11-24T09:29:05+01:00"
@@ -13395,6 +13575,7 @@
     "maintainerURL": "",
     "description": "Shows your TimeTree event.",
     "issues": 8,
+    "stars": 5,
     "tags": [
       "event",
       "timetree"
@@ -13411,6 +13592,7 @@
     "maintainerURL": "",
     "description": "Retrieves school meal menus from the Titan Schools API (family.titank12.com).",
     "issues": 8,
+    "stars": 6,
     "license": "ISC",
     "image": "docs-screenshot.jpg",
     "lastCommit": "2023-10-09T22:50:56-06:00"
@@ -13423,6 +13605,7 @@
     "maintainerURL": "https://github.com/jaumebosch",
     "description": "Display Barcelona's TMB bus times by line and stop.",
     "issues": 9,
+    "stars": 2,
     "license": "MIT",
     "image": "images-screenshot.jpg",
     "lastCommit": "2024-01-09T19:40:23+01:00"
@@ -13435,6 +13618,7 @@
     "maintainerURL": "https://github.com/JulienPeloton",
     "description": "Module to display latest new astronomical transients from <a target=\"_blank\" href=\"https://wis-tns.weizmann.ac.il\">TNS</a> such as <a target=\"_blank\" href=\"https://en.wikipedia.org/wiki/Supernova\">supernova</a> candidates.",
     "issues": 8,
+    "stars": 1,
     "tags": [
       "tns"
     ],
@@ -13450,6 +13634,7 @@
     "maintainerURL": "",
     "description": "Displays your todos from Todoist.",
     "issues": 8,
+    "stars": 145,
     "tags": [
       "wunderlist"
     ],
@@ -13465,6 +13650,7 @@
     "maintainerURL": "https://github.com/teemoo7",
     "description": "Calculate routes with TomTom API (free), and display travel time with traffic delays.",
     "issues": 4,
+    "stars": 1,
     "lastCommit": "2023-12-14T21:05:48+01:00"
   },
   {
@@ -13475,6 +13661,7 @@
     "maintainerURL": "",
     "description": "Show a map of a given area with TomTom traffic information.",
     "issues": 6,
+    "stars": 11,
     "license": "MIT",
     "image": "img-screenshot.jpg",
     "lastCommit": "2020-03-20T09:26:00+01:00"
@@ -13487,6 +13674,7 @@
     "maintainerURL": "https://github.com/Travelbacon",
     "description": "Shows on a TomTom map of your location the current traffic and actual traffic incidents like crashes and road construction. You can choose if you want traffic delay/jam or traffic speed/flow to be displayed.",
     "issues": 9,
+    "stars": 9,
     "lastCommit": "2023-04-26T22:03:22+02:00"
   },
   {
@@ -13497,6 +13685,7 @@
     "maintainerURL": "",
     "description": "A module for the Toon Thermostat.",
     "issues": 7,
+    "stars": 12,
     "lastCommit": "2020-05-10T15:08:01+02:00"
   },
   {
@@ -13507,6 +13696,7 @@
     "maintainerURL": "",
     "description": "Module for universal touch gesture commander using touchscreen.",
     "issues": 3,
+    "stars": 10,
     "lastCommit": "2020-10-24T00:16:43+02:00"
   },
   {
@@ -13517,6 +13707,7 @@
     "maintainerURL": "https://github.com/Tom-Hirschberger",
     "description": "Add clickable buttons to send notifications or run commands.",
     "issues": 2,
+    "stars": 3,
     "tags": [
       "touch",
       "button",
@@ -13536,6 +13727,7 @@
     "maintainerURL": "https://github.com/LoneWanderer-GH",
     "description": "time to the next buses lines for Toulouse (Tisseo).",
     "issues": 5,
+    "stars": 2,
     "tags": [
       "localtransport",
       "toulouse"
@@ -13552,6 +13744,7 @@
     "maintainerURL": "https://github.com/slametps",
     "description": "Display the status of TPLink lights/plugs in your local network.",
     "issues": 6,
+    "stars": 4,
     "tags": [
       "tplink",
       "smarthome"
@@ -13568,6 +13761,7 @@
     "maintainerURL": "https://github.com/asimhsidd",
     "description": "Track moving objects through Traccar.org APIs on google maps. This is based on a websocket connection to the Traccar.org server over which the locations of all the registered users are received upon any update. Not only the markers are updated but also the map's center &amp; zoom level. All online users have a green icon, rest are red. Error handling is built in too.",
     "issues": 8,
+    "stars": 10,
     "license": "MIT",
     "image": "Capture.JPG",
     "lastCommit": "2018-12-05T15:05:00+04:00"
@@ -13580,6 +13774,7 @@
     "maintainerURL": "https://github.com/samlewis0602",
     "description": "Display commute travel time with current traffic conditions factored in. Can be used for driving, biking, walking, and public transit.",
     "issues": 7,
+    "stars": 138,
     "tags": [
       "traffic"
     ],
@@ -13595,6 +13790,7 @@
     "maintainerURL": "",
     "description": "Display trains from your favorite departure station to any destination in Europe.",
     "issues": 7,
+    "stars": 3,
     "lastCommit": "2017-02-06T14:49:57+01:00"
   },
   {
@@ -13605,6 +13801,7 @@
     "maintainerURL": "",
     "description": "Module to display train departure times for railway stations within Sweden, as supplied by the Swedish Transport Administration (Trafikverket).",
     "issues": 13,
+    "stars": 0,
     "license": "MIT",
     "image": "screenshot.jpg",
     "lastCommit": "2019-02-07T10:43:09+01:00"
@@ -13617,6 +13814,7 @@
     "maintainerURL": "https://github.com/tticehurst",
     "description": "Displays live train times making use of the <a target=\"_blank\" href=\"https://api.rtt.io\">RTT.io</a> api.",
     "issues": 9,
+    "stars": 0,
     "license": "ISC",
     "lastCommit": "2023-10-25T23:10:15+00:00"
   },
@@ -13628,6 +13826,7 @@
     "maintainerURL": "",
     "description": "Display your upcoming Shows from your <a target=\"_blank\" href=\"https://trakt.tv\">trakt.tv</a> account.",
     "issues": 5,
+    "stars": 13,
     "license": "MIT",
     "image": "screenshot.jpg",
     "lastCommit": "2021-06-13T03:02:13+02:00"
@@ -13640,6 +13839,7 @@
     "maintainerURL": "https://github.com/bnitkin",
     "description": "Upcoming departures for any transit agencies that publishes GTFS.",
     "issues": 6,
+    "stars": 2,
     "lastCommit": "2024-01-19T08:11:51-05:00"
   },
   {
@@ -13650,6 +13850,7 @@
     "maintainerURL": "https://github.com/ahmedwab",
     "description": "The MMM-Display a given list of messages translated to language inputted.",
     "issues": 4,
+    "stars": 0,
     "lastCommit": "2021-06-05T21:13:26-04:00"
   },
   {
@@ -13660,6 +13861,7 @@
     "maintainerURL": "",
     "description": "Simple display of train departure times for Brisbane (Australia).",
     "issues": 7,
+    "stars": 0,
     "license": "ISC",
     "lastCommit": "2023-11-25T15:31:14+10:00"
   },
@@ -13671,6 +13873,7 @@
     "maintainerURL": "",
     "description": "Display TransLoc locations for a bus stop, used by the Rider App.",
     "issues": 6,
+    "stars": 2,
     "lastCommit": "2019-06-09T19:14:09-04:00"
   },
   {
@@ -13681,6 +13884,7 @@
     "maintainerURL": "https://github.com/nikxif",
     "description": "Connect to the Transmission BitTorrent client and display current torrent list information.",
     "issues": 2,
+    "stars": 0,
     "lastCommit": "2022-08-06T19:25:56+03:00"
   },
   {
@@ -13691,6 +13895,7 @@
     "maintainerURL": "",
     "description": "This module can show <a target=\"_blank\" href=\"https://trello.com\">Trello</a> cards on your mirror.",
     "issues": 7,
+    "stars": 53,
     "tags": [
       "trello"
     ],
@@ -13706,6 +13911,7 @@
     "maintainerURL": "https://github.com/robotfishe",
     "description": "Pull charging and range data from your EV via Tronity Platform.",
     "issues": 5,
+    "stars": 2,
     "license": "MIT",
     "lastCommit": "2022-05-22T19:13:31+01:00"
   },
@@ -13717,6 +13923,7 @@
     "maintainerURL": "https://github.com/reidarw",
     "description": "Module for showing the waste plan for your destination in Trondheim, Norway.",
     "issues": 7,
+    "stars": 7,
     "lastCommit": "2023-06-24T23:55:55+02:00"
   },
   {
@@ -13727,6 +13934,7 @@
     "maintainerURL": "",
     "description": "Offline Text-To-Speech based on festival.",
     "issues": 8,
+    "stars": 17,
     "tags": [
       "text-to-speech"
     ],
@@ -13741,6 +13949,7 @@
     "maintainerURL": "https://github.com/nigel-daniels",
     "description": "Simple at-a-glance display of the London Underground system status. See <a target=\"_blank\" href=\"https://github.com/emanuele-albini/MMM-TFL-Status\">MMM-TFL-Status</a> for more modes (e.g., Elizabeth line, DLR, Buses, Tram, etc.).",
     "issues": 9,
+    "stars": 3,
     "lastCommit": "2018-08-17T13:59:59-07:00"
   },
   {
@@ -13751,6 +13960,7 @@
     "maintainerURL": "https://github.com/slametps",
     "description": "Display the status of smarthome devices based on Tuya IoT-Platform (managed by SmartLife app).",
     "issues": 8,
+    "stars": 3,
     "tags": [
       "tuyasl",
       "smarthome",
@@ -13771,6 +13981,7 @@
     "maintainerURL": "https://github.com/rafagale",
     "description": "Get estimations for bus stops in the city of Zaragoza (Spain).",
     "issues": 8,
+    "stars": 2,
     "tags": [
       "bus stop",
       "tuzsa zaragoza",
@@ -13788,6 +13999,7 @@
     "maintainerURL": "https://github.com/XBCreepinJesus",
     "description": "Show your upcoming Tvheadend recordings.",
     "issues": 2,
+    "stars": 0,
     "tags": [
       "tvheadend"
     ],
@@ -13803,6 +14015,7 @@
     "maintainerURL": "",
     "description": "Displays tweets a few at a time from a user's home timeline or list.",
     "issues": 6,
+    "stars": 13,
     "lastCommit": "2019-06-25T09:21:17-04:00"
   },
   {
@@ -13813,6 +14026,7 @@
     "maintainerURL": "https://github.com/WilliamFitzjohn",
     "description": "Get notified when your favourite Twitch streamers go live.",
     "issues": 3,
+    "stars": 2,
     "lastCommit": "2023-01-11T12:46:29-05:00"
   },
   {
@@ -13823,6 +14037,7 @@
     "maintainerURL": "",
     "description": "Display your Twitter feed.",
     "issues": 10,
+    "stars": 9,
     "license": "MIT",
     "lastCommit": "2017-01-30T16:55:39-05:00"
   },
@@ -13834,6 +14049,7 @@
     "maintainerURL": "",
     "description": "Displays the Twitter Trending Topics for a given place or city, as well as showing the tweet volume for each topic.",
     "issues": 6,
+    "stars": 12,
     "lastCommit": "2019-05-03T14:23:58-04:00"
   },
   {
@@ -13844,6 +14060,7 @@
     "maintainerURL": "",
     "description": "Estimated arrival times for UBER.",
     "issues": 8,
+    "stars": 16,
     "lastCommit": "2019-09-30T10:30:14-04:00"
   },
   {
@@ -13854,6 +14071,7 @@
     "maintainerURL": "https://github.com/balassy",
     "description": "Displays Hungarian compliments from <a target=\"_blank\" href=\"https://udvaronc.hu\">Uvaronc</a>.",
     "issues": 4,
+    "stars": 4,
     "tags": [
       "udvaronc"
     ],
@@ -13869,6 +14087,7 @@
     "maintainerURL": "",
     "description": "This module displays LIVE UK information about a specific bus stop and the routes that serve it.",
     "issues": 11,
+    "stars": 0,
     "license": "MIT",
     "image": "images-Current_version.jpg",
     "lastCommit": "2019-12-19T22:52:52+00:00"
@@ -13881,6 +14100,7 @@
     "maintainerURL": "https://github.com/XBCreepinJesus",
     "description": "Show live train departure/arrival times for the UK's National Rail network.",
     "issues": 2,
+    "stars": 0,
     "lastCommit": "2021-02-19T17:54:49+00:00"
   },
   {
@@ -13891,6 +14111,7 @@
     "maintainerURL": "",
     "description": "Display weather warnings for the UK issued by UK Met Office.",
     "issues": 11,
+    "stars": 2,
     "tags": [
       "weather",
       "warnings",
@@ -13908,6 +14129,7 @@
     "maintainerURL": "",
     "description": "This module displays LIVE UK National Rail train arrivals &amp; departures from a specified station.",
     "issues": 8,
+    "stars": 1,
     "tags": [
       "national rail",
       "trains"
@@ -13924,6 +14146,7 @@
     "maintainerURL": "",
     "description": "Display tidal data in British Isles with free data from UKHO/Admiralty.",
     "issues": 6,
+    "stars": 1,
     "lastCommit": "2021-04-16T20:30:15+01:00"
   },
   {
@@ -13934,6 +14157,7 @@
     "maintainerURL": "",
     "description": "Displays UniFi hotspot vouchers.",
     "issues": 5,
+    "stars": 2,
     "tags": [
       "unifi"
     ],
@@ -13949,6 +14173,7 @@
     "maintainerURL": "",
     "description": "Display a random image from Unsplash categories.",
     "issues": 6,
+    "stars": 7,
     "license": "MIT",
     "lastCommit": "2023-03-29T13:43:15+02:00"
   },
@@ -13960,6 +14185,7 @@
     "maintainerURL": "",
     "description": "Display temperature readings from a USB DVB-T stick acting as a 433Mhz SDR, receiving input from a cheap wireless weather sensor (GT-WT-01).",
     "issues": 6,
+    "stars": 2,
     "lastCommit": "2020-10-16T21:45:32+02:00"
   },
   {
@@ -13970,6 +14196,7 @@
     "maintainerURL": "",
     "description": "Display monitor data (online/offline detection) from selfhosted <a target=\"_blank\" href=\"https://github.com/louislam/uptime-kuma\">https://github.com/louislam/uptime-kuma</a>.",
     "issues": 8,
+    "stars": 0,
     "tags": [
       "uptimekuma",
       "uptime kuma",
@@ -13988,6 +14215,7 @@
     "maintainerURL": "",
     "description": "Display monitor data (online/offline detection) from <a target=\"_blank\" href=\"https://uptimerobot.com/\">https://uptimerobot.com/</a>.",
     "issues": 7,
+    "stars": 15,
     "tags": [
       "uptimerobot",
       "uptime robot",
@@ -14006,6 +14234,7 @@
     "maintainerURL": "",
     "description": "Publish USER_PRESENCE from PIR or motion detector modules to MQTT, allowing to use the mirror as a smart home presence sensor.",
     "issues": 7,
+    "stars": 3,
     "license": "ISC",
     "lastCommit": "2022-05-21T10:05:44+02:00"
   },
@@ -14017,6 +14246,7 @@
     "maintainerURL": "https://github.com/Tom-Hirschberger",
     "description": "Display the values of messages of notifications. Titles, icons, reformatting and parsing are supported.",
     "issues": 2,
+    "stars": 5,
     "tags": [
       "json",
       "jsonpath",
@@ -14036,6 +14266,7 @@
     "maintainerURL": "",
     "description": "Displays data from Varta Energy Storage Systems and can be used as data source for <a target=\"_blank\" href=\"https://github.com/deg0nz/MMM-EnergyMonitor\">MMM-EnergyMonitor</a>.",
     "issues": 6,
+    "stars": 0,
     "tags": [
       "varta",
       "energy",
@@ -14054,6 +14285,7 @@
     "maintainerURL": "",
     "description": "Display public transport operated by V\u00e4sttrafik for western part of Sweden, including Gothenburg. This version is updated to support multi-filtering and Vasttrafik's API version 4.",
     "issues": 8,
+    "stars": 1,
     "license": "MIT",
     "image": "docs-screenshot.PNG",
     "lastCommit": "2024-01-23T14:11:52+01:00"
@@ -14066,6 +14298,7 @@
     "maintainerURL": "",
     "description": "Display public transport operated by V\u00e4sttrafik for western part of Sweden, including Gothenburg. Uses Vasttrafik's API version 2.",
     "issues": 9,
+    "stars": 9,
     "license": "MIT",
     "image": "docs-screenshot.PNG",
     "lastCommit": "2021-05-22T11:00:21+02:00"
@@ -14078,6 +14311,7 @@
     "maintainerURL": "https://github.com/n-gao",
     "description": "Enables you to display birthdays from a contacts via a vCard.",
     "issues": 6,
+    "stars": 1,
     "tags": [
       "\"magic",
       "mirror\"",
@@ -14095,6 +14329,7 @@
     "maintainerURL": "https://github.com/Snille",
     "description": "Play a video file (from local folder or internet) in any region. The module will pause the video when hidden and resume when shown. You can also pause and play by using notifications.",
     "issues": 4,
+    "stars": 9,
     "lastCommit": "2021-05-04T14:36:09+02:00"
   },
   {
@@ -14105,6 +14340,7 @@
     "maintainerURL": "",
     "description": "A module for playing video from any device on the same network.",
     "issues": 8,
+    "stars": 7,
     "license": "MIT",
     "image": "App-Assets-background.jpg",
     "lastCommit": "2018-06-28T11:08:35+04:00"
@@ -14117,6 +14353,7 @@
     "maintainerURL": "https://github.com/phungorquan",
     "description": "Display your google calendar, VietNam or your country events and your personal events.",
     "issues": 8,
+    "stars": 0,
     "lastCommit": "2021-09-10T23:16:34+07:00"
   },
   {
@@ -14127,6 +14364,7 @@
     "maintainerURL": "",
     "description": "Display a list of notifications that have been broadcast to all the modules.",
     "issues": 6,
+    "stars": 6,
     "lastCommit": "2021-12-28T23:20:17-05:00"
   },
   {
@@ -14137,6 +14375,7 @@
     "maintainerURL": "",
     "description": "Display the last value of water level at a station in the Vigicrues network in France.",
     "issues": 6,
+    "stars": 2,
     "lastCommit": "2022-06-26T21:42:46+02:00"
   },
   {
@@ -14147,6 +14386,7 @@
     "maintainerURL": "",
     "description": "Display the current level of vigilance of weather phenomena and associated risks for France.",
     "issues": 8,
+    "stars": 7,
     "tags": [
       "vigilance",
       "weather phenomena",
@@ -14170,6 +14410,7 @@
     "maintainerURL": "",
     "description": "Display weather data from weather stations available at vindsiden.no (Norway).",
     "issues": 7,
+    "stars": 0,
     "license": "MIT",
     "image": "images-MMM-Vindsiden.jpg",
     "lastCommit": "2016-11-05T17:09:09+01:00"
@@ -14182,6 +14423,7 @@
     "maintainerURL": "https://github.com/fewieden",
     "description": "Learn new languages on your MagicMirror\u00b2.",
     "issues": 7,
+    "stars": 4,
     "tags": [
       "vocabulary trainer"
     ],
@@ -14197,6 +14439,7 @@
     "maintainerURL": "",
     "description": "Offline Voice Recognition Module, with ability to control other modules, based on pocketsphinx.",
     "issues": 9,
+    "stars": 72,
     "tags": [
       "voice recognition",
       "speech to text"
@@ -14212,6 +14455,7 @@
     "maintainerURL": "",
     "description": "Highly configurable voice control based on annyang.",
     "issues": 9,
+    "stars": 18,
     "license": "ISC",
     "lastCommit": "2019-03-05T22:24:16-05:00"
   },
@@ -14223,6 +14467,7 @@
     "maintainerURL": "",
     "description": "Voice control based on annyang.",
     "issues": 6,
+    "stars": 18,
     "tags": [
       "voice control"
     ],
@@ -14237,6 +14482,7 @@
     "maintainerURL": "",
     "description": "Voice control based on snowboy.",
     "issues": 7,
+    "stars": 41,
     "lastCommit": "2016-09-02T17:21:39-04:00"
   },
   {
@@ -14247,6 +14493,7 @@
     "maintainerURL": "",
     "description": "Control volume of MagicMirror\u00b2.",
     "issues": 6,
+    "stars": 15,
     "license": "MIT",
     "image": "mmm-volume.jpg",
     "lastCommit": "2020-03-31T14:06:02+02:00"
@@ -14259,6 +14506,7 @@
     "maintainerURL": "",
     "description": "Displays what a Volumio device is currently playing.",
     "issues": 5,
+    "stars": 4,
     "lastCommit": "2018-05-25T18:10:40+02:00"
   },
   {
@@ -14269,6 +14517,8 @@
     "maintainerURL": "",
     "description": "Display Volvo car status and trip information by VolvoOnCall.",
     "issues": 2,
+    "outdated": "Abandoned. Repo has been archived at 2022-03-28.",
+    "stars": 2,
     "tags": [
       "volvo",
       "volvooncall"
@@ -14285,6 +14535,7 @@
     "maintainerURL": "https://github.com/Klizzy",
     "description": "Easy configuration module to display bus and train arrivals/departures with different display types for Germany (VRR and more EFA).",
     "issues": 12,
+    "stars": 15,
     "tags": [
       "vrr",
       "transportation"
@@ -14301,6 +14552,7 @@
     "maintainerURL": "https://github.com/nigel-daniels",
     "description": "Updated: You can now monitor live arrival times at many CA, Bay Area transit stops. This covers BART, VTA, etc.",
     "issues": 6,
+    "stars": 0,
     "tags": [
       "vta",
       "transit",
@@ -14319,6 +14571,8 @@
     "maintainerURL": "",
     "description": "Get the menu of day of the VUB restaurant (Vrije Universiteit Brussel). Based on MMM-json.",
     "issues": 7,
+    "outdated": "Abandoned. Repo has been archived at 2023-09-20.",
+    "stars": 1,
     "license": "MIT",
     "image": "sample.jpg",
     "lastCommit": "2023-09-20T15:06:48+02:00"
@@ -14331,6 +14585,7 @@
     "maintainerURL": "https://github.com/fhinder",
     "description": "Display departures for public transport in Stuttgart (Covers VVS Area).",
     "issues": 7,
+    "stars": 0,
     "tags": [
       "vvs",
       "public-transport"
@@ -14347,6 +14602,7 @@
     "maintainerURL": "",
     "description": "Re-themes MagicMirror\u00b2 to look like a beautiful digital photo wall display. It adds a new font, styles, redesigned clock and weather displays, and rotating background image pulled from unsplash.com.",
     "issues": 17,
+    "stars": 93,
     "lastCommit": "2021-03-05T12:43:28-08:00"
   },
   {
@@ -14357,6 +14613,7 @@
     "maintainerURL": "",
     "description": "Rotates through wallpapers from Bing or Reddit.",
     "issues": 9,
+    "stars": 89,
     "license": "MIT",
     "lastCommit": "2024-01-16T19:26:18-05:00"
   },
@@ -14368,6 +14625,7 @@
     "maintainerURL": "https://github.com/jupadin",
     "description": "Display images from Unsplash as wallpapers.",
     "issues": 11,
+    "stars": 6,
     "lastCommit": "2021-11-02T22:44:24+01:00"
   },
   {
@@ -14378,6 +14636,7 @@
     "maintainerURL": "",
     "description": "Keeps an eye on your UI and quits app in case the UI crashes. If you combine this with the PM2 process manager, MM2 will automaticly restart after a UI failure.",
     "issues": 5,
+    "stars": 45,
     "lastCommit": "2016-11-21T12:57:59+01:00"
   },
   {
@@ -14388,6 +14647,7 @@
     "maintainerURL": "",
     "description": "A simple Water Reminder Module.",
     "issues": 6,
+    "stars": 6,
     "lastCommit": "2021-01-03T15:07:57-03:00"
   },
   {
@@ -14398,6 +14658,7 @@
     "maintainerURL": "",
     "description": "Displays energy consumption from Wattvision.",
     "issues": 9,
+    "stars": 4,
     "lastCommit": "2022-01-05T20:44:24-06:00"
   },
   {
@@ -14408,6 +14669,7 @@
     "maintainerURL": "https://github.com/BrianHepler",
     "description": "Displays a clock that shows your family's location via OwnTracks.",
     "issues": 11,
+    "stars": 12,
     "license": "MIT",
     "image": "images-connection.jpg",
     "lastCommit": "2022-08-08T09:51:03-04:00"
@@ -14420,6 +14682,7 @@
     "maintainerURL": "https://github.com/nigel-daniels",
     "description": "Simple clean display of the weather now, designed to go with MMM-3Day-Forecast. Now uses Open Weather as WeatherBit reduced the free service to an unusable level :( If you installed an older version ( &lt; 18 Oct 2022 ), please update and get a new api key!",
     "issues": 7,
+    "stars": 6,
     "tags": [
       "weather",
       "forecast"
@@ -14436,6 +14699,7 @@
     "maintainerURL": "https://github.com/Menturan",
     "description": "Displays weather from Swedish SMHI hourly.",
     "issues": 7,
+    "stars": 2,
     "lastCommit": "2022-05-16T10:36:10+02:00"
   },
   {
@@ -14446,6 +14710,7 @@
     "maintainerURL": "",
     "description": "Displays active weather alerts provided by <a target=\"_blank\" href=\"https://openweathermap.org/api/one-call-3#listsource\">OpenWeatherMap's onecall API</a>.",
     "issues": 14,
+    "stars": 0,
     "license": "MIT",
     "image": "images-MMM-WeatherAlerts-default_example.jpg",
     "lastCommit": "2023-01-17T20:22:00-05:00"
@@ -14458,6 +14723,7 @@
     "maintainerURL": "https://github.com/BrianHepler",
     "description": "Dynamically loaded weather image background from Unsplash. This is a plugin of other weather modules.",
     "issues": 5,
+    "stars": 13,
     "lastCommit": "2023-01-29T22:26:31-05:00"
   },
   {
@@ -14468,6 +14734,7 @@
     "maintainerURL": "https://github.com/mtatsuma",
     "description": "Display a weather forecast chart using <a target=\"_blank\" href=\"https://openweathermap.org\">OpenWeather</a> API and <a target=\"_blank\" href=\"https://www.chartjs.org\">Chart.js</a>, an open-source library to plot data on charts.",
     "issues": 4,
+    "stars": 21,
     "lastCommit": "2023-01-29T23:53:06+09:00"
   },
   {
@@ -14478,6 +14745,7 @@
     "maintainerURL": "https://github.com/fruestueck",
     "description": "Display clothing depending on the weather forecast and your personal preferences.",
     "issues": 8,
+    "stars": 31,
     "lastCommit": "2021-02-19T18:37:58+01:00"
   },
   {
@@ -14488,6 +14756,7 @@
     "maintainerURL": "",
     "description": "This is a new version of the weather forecast module. This one does not come as a default module. This version has been edited to allow the days of the week to span left to right, each with its own weather icon and details. Uses openweathermap.org API Key.",
     "issues": 5,
+    "stars": 9,
     "lastCommit": "2019-01-06T00:28:05-06:00"
   },
   {
@@ -14498,6 +14767,7 @@
     "maintainerURL": "",
     "description": "Weather forecast with rain &amp; temp graphs. Lots of options to turn on &amp; off. Data from OpenWeatherMap API.",
     "issues": 6,
+    "stars": 13,
     "lastCommit": "2023-02-21T11:28:52-05:00"
   },
   {
@@ -14508,6 +14778,7 @@
     "maintainerURL": "https://github.com/dWoolridge",
     "description": "Displays an hourly forecast table for multiple days. Allows you to specify what hours of the day to include and which forecast components will be displayed.",
     "issues": 4,
+    "stars": 0,
     "lastCommit": "2022-10-06T14:08:58-05:00"
   },
   {
@@ -14519,6 +14790,7 @@
     "description": "Squeeze or stretch it. Watch it respond by reformatting itself. Fully customizable. Also driven by Darksky API.",
     "issues": 5,
     "outdated": "Deprecated. DarkSky API no longer works since 2023-03-31.",
+    "stars": 19,
     "lastCommit": "2020-11-22T21:21:53-05:00"
   },
   {
@@ -14529,6 +14801,7 @@
     "maintainerURL": "",
     "description": "Displays HTTP POST webhook notifications on screen and supports templates for alert message formatting.",
     "issues": 5,
+    "stars": 5,
     "tags": [
       "web hooks",
       "alerts"
@@ -14545,6 +14818,7 @@
     "maintainerURL": "",
     "description": "A Text-To-Speech module which uses the Web Speech API of the browser. It is in an early stage of development. So far only German is supported.",
     "issues": 1,
+    "stars": 2,
     "tags": [
       "text-to-speech",
       "tts",
@@ -14562,6 +14836,7 @@
     "maintainerURL": "",
     "description": "It allows you to display your kids' canceled and irregular lessons for schools using <a target=\"_blank\" href=\"https://www.untis.at\">Untis</a> software to organize school's timetables.",
     "issues": 6,
+    "stars": 3,
     "tags": [
       "webuntis"
     ],
@@ -14577,6 +14852,7 @@
     "maintainerURL": "https://github.com/Iketaki",
     "description": "Embed any web pages by using a webview instead of an iframe.",
     "issues": 5,
+    "stars": 15,
     "tags": [
       "webview"
     ],
@@ -14591,6 +14867,7 @@
     "maintainerURL": "https://github.com/NikolasRupp",
     "description": "Shows Status of your VW ID Car based on We Connect.",
     "issues": 3,
+    "stars": 2,
     "lastCommit": "2024-01-15T10:13:53+01:00"
   },
   {
@@ -14601,6 +14878,7 @@
     "maintainerURL": "",
     "description": "Display weekly recurring timetables such as class schedules.",
     "issues": 6,
+    "stars": 61,
     "license": "MIT",
     "image": "images-screenshot.jpg",
     "lastCommit": "2021-09-11T17:02:34+02:00"
@@ -14613,6 +14891,7 @@
     "maintainerURL": "",
     "description": "Displays next refuse and recycling collections for West Berkshire (UK) houses based on Unique Property Reference Number.",
     "issues": 6,
+    "stars": 0,
     "license": "MIT",
     "image": "screenshot.jpg",
     "lastCommit": "2020-07-20T12:46:20+01:00"
@@ -14625,6 +14904,7 @@
     "maintainerURL": "",
     "description": "Display weather data from WetterOnline.",
     "issues": 6,
+    "stars": 6,
     "license": "GPL-3.0",
     "image": ".github-preview.jpg",
     "lastCommit": "2023-07-23T21:01:55+02:00"
@@ -14637,6 +14917,7 @@
     "maintainerURL": "https://github.com/st3v0rr",
     "description": "This module integrates a WH2600 System to display several statistics like temperature and humidity for all registered sensors, wind data, UV index and rain data.",
     "issues": 9,
+    "stars": 0,
     "license": "MIT",
     "image": "docs-WH2600.jpg",
     "lastCommit": "2022-03-08T18:11:40+01:00"
@@ -14649,6 +14930,7 @@
     "maintainerURL": "https://nikro.me",
     "description": "Adds a personal ChatGPT (3.5) voice-controlled (through PicoVoice, Whisper, Mimic3) assistant.",
     "issues": 10,
+    "stars": 21,
     "license": "MIT",
     "lastCommit": "2023-05-30T10:58:54+02:00"
   },
@@ -14660,6 +14942,7 @@
     "maintainerURL": "",
     "description": "Inserting, evaluating, excuting external web widgets on MM.",
     "issues": 4,
+    "stars": 12,
     "lastCommit": "2019-05-10T10:00:37+02:00"
   },
   {
@@ -14670,6 +14953,7 @@
     "maintainerURL": "",
     "description": "Display Public Transport timetable of Vienna/Austria.",
     "issues": 9,
+    "stars": 24,
     "tags": [
       "vienna",
       "wien",
@@ -14688,6 +14972,7 @@
     "maintainerURL": "",
     "description": "Displays WiFi password and QRCode.",
     "issues": 4,
+    "stars": 91,
     "lastCommit": "2022-09-26T13:37:23-05:00"
   },
   {
@@ -14698,6 +14983,7 @@
     "maintainerURL": "",
     "description": "Displays random Wikipedia snippets.",
     "issues": 5,
+    "stars": 16,
     "lastCommit": "2020-04-01T21:57:08+03:00"
   },
   {
@@ -14708,6 +14994,7 @@
     "maintainerURL": "",
     "description": "Adds the windy weather map which covers the whole screen.",
     "issues": 5,
+    "stars": 9,
     "lastCommit": "2020-08-24T15:48:15-05:00"
   },
   {
@@ -14718,6 +15005,7 @@
     "maintainerURL": "",
     "description": "Displays the WordGenius.com word of the day along with its part of speech, pronunciation, definition, and occasionally, its origin.",
     "issues": 7,
+    "stars": 1,
     "license": "MIT",
     "image": "MMM-WordGenius.jpg",
     "lastCommit": "2023-12-04T17:42:25-06:00"
@@ -14730,6 +15018,7 @@
     "maintainerURL": "",
     "description": "Get the word of the day, its definition, and origin.",
     "issues": 7,
+    "stars": 18,
     "lastCommit": "2019-02-10T19:35:19+00:00"
   },
   {
@@ -14740,6 +15029,7 @@
     "maintainerURL": "",
     "description": "Displays the Merriam-Webster word of the day along with its part of speech, pronunciation, definition, and an example.",
     "issues": 6,
+    "stars": 3,
     "lastCommit": "2020-11-15T00:16:51-06:00"
   },
   {
@@ -14750,6 +15040,7 @@
     "maintainerURL": "",
     "description": "Display local time of several locations.",
     "issues": 6,
+    "stars": 31,
     "lastCommit": "2020-02-21T15:20:11+01:00"
   },
   {
@@ -14760,6 +15051,7 @@
     "maintainerURL": "https://github.com/BKeyport",
     "description": "Fully supported version of worldclock.",
     "issues": 6,
+    "stars": 10,
     "lastCommit": "2022-09-07T18:49:58-07:00"
   },
   {
@@ -14770,6 +15062,7 @@
     "maintainerURL": "",
     "description": "Displays low and high water time predictions for a given tide station, derived from worldtides.info.",
     "issues": 8,
+    "stars": 7,
     "tags": [
       "tide",
       "high water",
@@ -14787,6 +15080,7 @@
     "maintainerURL": "",
     "description": "Have ws2812 LEDs on your mirror with <a target=\"_blank\" href=\"https://github.com/tom-2015/rpi-ws2812-server\">RPI-WS2812-Server</a>.",
     "issues": 5,
+    "stars": 5,
     "tags": [
       "led",
       "rgb",
@@ -14804,6 +15098,7 @@
     "description": "Weather Underground Forecast Module Retrieves forecast from Weather Underground. Also adds a percentage probability of precipitation to forecast display.",
     "issues": 7,
     "outdated": "Deprecated. Wunderground API isn't working anymore.",
+    "stars": 11,
     "lastCommit": "2016-05-20T12:11:59-04:00"
   },
   {
@@ -14815,6 +15110,7 @@
     "description": "Display weather based on wunderground API.",
     "issues": 9,
     "outdated": "Deprecated. Wunderground API isn't working anymore. Check out MMM-MyWeather which is a fork with another API.",
+    "stars": 29,
     "lastCommit": "2017-04-25T10:35:28+02:00"
   },
   {
@@ -14826,6 +15122,7 @@
     "description": "Minimalist Weather for the bottom_bar or thirds position of your mirror.",
     "issues": 6,
     "outdated": "Deprecated. Wunderground API isn't working anymore.",
+    "stars": 1,
     "lastCommit": "2022-07-02T18:55:46-04:00"
   },
   {
@@ -14836,6 +15133,7 @@
     "maintainerURL": "",
     "description": "Nope! Not World War I. It's <strong>Weather Without Icons</strong>. Up to the minute weather. Full weather information, yet a small footprint.",
     "issues": 6,
+    "stars": 0,
     "lastCommit": "2018-01-21T20:55:48-05:00"
   },
   {
@@ -14846,6 +15144,7 @@
     "maintainerURL": "https://github.com/cybex-dev",
     "description": "Opens a file, URL, etc using default applications for a particular MIME, all done by using the <a target=\"_blank\" href=\"https://github.com/MagicMirrorOrg/MagicMirror/wiki/notifications\">Notification Mechanism</a>.",
     "issues": 7,
+    "stars": 0,
     "lastCommit": "2020-01-24T05:16:43+02:00"
   },
   {
@@ -14856,6 +15155,7 @@
     "maintainerURL": "",
     "description": "Integrate temperature and humidity from your xiaomi smarthome system.",
     "issues": 11,
+    "stars": 25,
     "tags": [
       "wunderlist"
     ],
@@ -14870,6 +15170,7 @@
     "maintainerURL": "https://github.com/jupadin",
     "description": "Displays either the daily XKCD comic or a random XKCD comic.",
     "issues": 12,
+    "stars": 4,
     "lastCommit": "2022-02-23T19:14:36+01:00"
   },
   {
@@ -14880,6 +15181,7 @@
     "maintainerURL": "",
     "description": "Displays car routes on the map, using Yandex.Maps API.",
     "issues": 5,
+    "stars": 1,
     "lastCommit": "2020-05-12T12:32:51+03:00"
   },
   {
@@ -14890,6 +15192,7 @@
     "maintainerURL": "https://github.com/slametps",
     "description": "Display the status of Yeelight bulbs in your local network.",
     "issues": 6,
+    "stars": 4,
     "tags": [
       "yeelight",
       "smarthome"
@@ -14906,6 +15209,7 @@
     "maintainerURL": "",
     "description": "Instead of default compliments with classical poems, just supports Chinese.\u968f\u673a\u4ea7\u751f\u4e00\u53e5\u53e4\u8bd7\u8bcd\u3002.",
     "issues": 6,
+    "stars": 2,
     "lastCommit": "2020-04-11T16:03:58+08:00"
   },
   {
@@ -14916,6 +15220,7 @@
     "maintainerURL": "https://github.com/thesoftwarejedi",
     "description": "Displays categories of your choosing from your YNAB budget.",
     "issues": 7,
+    "stars": 4,
     "license": "ISC",
     "image": "screenshot.jpg",
     "lastCommit": "2022-01-20T22:39:30-05:00"
@@ -14928,6 +15233,7 @@
     "maintainerURL": "",
     "description": "This module reads from a YouLess energy meter in your network to display realtime energy usage information.",
     "issues": 8,
+    "stars": 2,
     "tags": [
       "youless\u001b[hmagi\u001b[c\u001b[f"
     ],
@@ -14943,6 +15249,7 @@
     "maintainerURL": "https://github.com/eckonator",
     "description": "This module reads from a YouLess energy meter in your network to display a gauge of realtime energy usage information. It\u00b4s a optimized fork from QNimbus first module.",
     "issues": 9,
+    "stars": 3,
     "tags": [
       "youless\u001b[hmagi\u001b[c\u001b[f"
     ],
@@ -14958,6 +15265,7 @@
     "maintainerURL": "",
     "description": "Enables easy integration of YouTube videos.",
     "issues": 5,
+    "stars": 21,
     "lastCommit": "2018-01-12T13:46:23+01:00"
   },
   {
@@ -14968,6 +15276,7 @@
     "maintainerURL": "https://github.com/ngnijland",
     "description": "A module that checks if a YouTube channel if streaming. If it is, it plays the live stream.",
     "issues": 5,
+    "stars": 1,
     "tags": [
       "youtube",
       "live",
@@ -15000,6 +15309,7 @@
     "maintainerURL": "",
     "description": "The official Yr Nowcast module for MagicMirror\u00b2, which displays data from <a target=\"_blank\" href=\"https://www.yr.no\">Yr</a>. Nowcast data is only available for some Norwegian locations covered by the Norwegian weather radars. Yr is a weather service from the Norwegian Broadcasting Corporation and the Norwegian Meteorological Institute.",
     "issues": 10,
+    "stars": 22,
     "lastCommit": "2023-01-23T10:53:33+01:00"
   },
   {
@@ -15010,6 +15320,7 @@
     "maintainerURL": "",
     "description": "Displays weather forecast from <a target=\"_blank\" href=\"https://www.yr.no\">Yr</a>. Yr is a weather service from the Norwegian Broadcasting Corporation and the Norwegian Meteorological Institute.",
     "issues": 10,
+    "stars": 16,
     "lastCommit": "2022-05-11T08:22:24+02:00"
   },
   {
@@ -15020,6 +15331,7 @@
     "maintainerURL": "https://github.com/choffmann",
     "description": "Show the subscription from Youtube Channel.",
     "issues": 12,
+    "stars": 2,
     "license": "MIT",
     "image": "img-preshow.jpg",
     "lastCommit": "2021-07-16T22:14:14+02:00"
@@ -15032,6 +15344,7 @@
     "maintainerURL": "https://github.com/PierreGode",
     "description": "Display ZAPTEC charging API.",
     "issues": 5,
+    "stars": 0,
     "tags": [
       "zaptec",
       "chargers",
@@ -15049,6 +15362,7 @@
     "maintainerURL": "",
     "description": "Displays daily Jewish calendar information.",
     "issues": 9,
+    "stars": 0,
     "license": "ISC",
     "image": "alternateScreenshot.jpg",
     "lastCommit": "2020-12-06T21:27:43-05:00"

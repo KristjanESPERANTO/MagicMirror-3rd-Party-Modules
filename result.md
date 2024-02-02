@@ -1,16 +1,16 @@
 # Result of the module analysis
 
-Last update: 2024-02-02T18:57:45+01:00
+Last update: 2024-02-02T21:49:42+01:00
 
 ## Statistics
 
 |                      | number   |
 |:---------------------|:--------:|
-| modules analyzed     |   1116   |
-| maintainer           |    629   |
-| modules with issues  |   1110   |
-| issues               |   7316   |
-| modules at github    |   1107   |
+| modules analyzed     |   1115   |
+| maintainer           |    630   |
+| modules with issues  |   1109   |
+| issues               |   7335   |
+| modules at github    |   1106   |
 | modules at gitlab    |      8   |
 | modules at bitbucket |      1   |
 
@@ -1224,6 +1224,7 @@ Last update: 2024-02-02T18:57:45+01:00
 
 ### [MMM-Coinbase by mlbonniec](https://github.com/mlbonniec/MMM-Coinbase)
 
+0. This module is outdated: Abandoned. Repo has been archived at 2023-07-26.
 1. Typo: Found `MagicMirror2` in file `README.md`: Replace it with `MagicMirror²`.
 2. Typo: Found `Magic Mirror` in file `styles.css`: Replace it with `MagicMirror²`.
 3. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
@@ -1306,6 +1307,7 @@ Last update: 2024-02-02T18:57:45+01:00
 
 ### [MMM-CountEvents by MMRIZE](https://github.com/MMRIZE/MMM-CountEvents)
 
+0. This module is outdated: Abandoned. Repo has been archived at 2020-06-10.
 1. There is no `package.json`. We need this file to gather information about the module for the module list page.
 2. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
 3. The branch name is 'master'. Consider renaming it to 'main'.
@@ -1582,6 +1584,7 @@ Last update: 2024-02-02T18:57:45+01:00
 
 ### [MMM-DailyAlarm by eouia](https://github.com/eouia/MMM-DailyAlarm)
 
+0. This module is outdated: Abandoned. Repo has been archived at 2020-06-10.
 1. There is no `package.json`. We need this file to gather information about the module for the module list page.
 2. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
 3. The branch name is 'master'. Consider renaming it to 'main'.
@@ -1871,6 +1874,7 @@ Last update: 2024-02-02T18:57:45+01:00
 
 ### [MMM-Domoticz-ext by goedh452](https://github.com/goedh452/MMM-Domoticz-ext)
 
+0. This module is outdated: Abandoned. Repo has been archived at 2023-07-05.
 1. Outdated: Found `MichMich/MagicMirror` in file `README.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
 2. Recommendation: Found `XMLHttpRequest` in file `node_helper.js`: Replace it with built-in fetch.
 3. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
@@ -1897,6 +1901,7 @@ Last update: 2024-02-02T18:57:45+01:00
 
 ### [MMM-dribbble by marcobiedermann](https://github.com/marcobiedermann/MMM-dribbble)
 
+0. This module is outdated: Abandoned. Repo has been archived at 2023-10-24.
 1. `package.json` issue: No description
 2. There are no specific keywords in 'package.json'. We would use them as tags on the module list page. Add a few meaningful terms to the keywords in the package.json. Not just “magicmirror” or “module”.
 3. Recommendation: Replace eslintrc by new flat config.
@@ -2549,6 +2554,7 @@ Last update: 2024-02-02T18:57:45+01:00
 
 ### [MMM-fbPageCounter by eouia](https://github.com/eouia/MMM-fbPageCounter)
 
+0. This module is outdated: Abandoned. Repo has been archived at 2022-06-20.
 1. There is no `package.json`. We need this file to gather information about the module for the module list page.
 2. Recommendation: Found `XMLHttpRequest` in file `MMM-fbPageCounter.js`: Replace it with built-in fetch.
 3. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
@@ -2680,6 +2686,7 @@ Last update: 2024-02-02T18:57:45+01:00
 
 ### [MMM-FinParcel by jesmak](https://github.com/jesmak/MMM-FinParcel)
 
+0. This module is outdated: Abandoned. Repo has been archived at 2024-01-22.
 1. Typo: Found `Magic Mirror` in file `README.md`: Replace it with `MagicMirror²`.
 2. Outdated: Found `MichMich/MagicMirror` in file `README.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
 3. Deprecated: Found `require('request')` in file `node_helper.js`: Replace it with built-in fetch.
@@ -2754,6 +2761,7 @@ Last update: 2024-02-02T18:57:45+01:00
 
 ### [MMM-FlightRadarTracker by jesmak](https://github.com/jesmak/MMM-FlightRadarTracker)
 
+0. This module is outdated: Abandoned. Repo has been archived at 2024-01-22.
 1. Typo: Found `Magic Mirror` in file `README.md`: Replace it with `MagicMirror²`.
 2. Outdated: Found `MichMich/MagicMirror` in file `README.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
 3. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
@@ -4400,6 +4408,7 @@ Last update: 2024-02-02T18:57:45+01:00
 
 ### [MMM-Koket-by-Sodexo by Alvinger](https://github.com/Alvinger/MMM-Koket-by-Sodexo)
 
+0. This module is outdated: Abandoned. Repo has been archived at 2020-12-10.
 1. No image found.
 2. Typo: Found `Magic Mirror` in file `MMM-Koket-by-Sodexo.js`: Replace it with `MagicMirror²`.
 3. Outdated: Found `MichMich/MagicMirror` in file `README.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
@@ -4517,6 +4526,7 @@ Last update: 2024-02-02T18:57:45+01:00
 
 ### [MMM-LibrespotJava by l3d00m](https://github.com/l3d00m/MMM-LibrespotJava)
 
+0. This module is outdated: Abandoned. Repo has been archived at 2023-10-01.
 1. Recommendation: Found `jshint` in file `.gitignore`: Replace "jshint" by "eslint".
 2. Typo: Found `Magic Mirror` in file `README.md`: Replace it with `MagicMirror²`.
 3. Outdated: Found `MichMich/MagicMirror` in file `README.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
@@ -4993,7 +5003,7 @@ Last update: 2024-02-02T18:57:45+01:00
 10. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
 11. The branch name is 'master'. Consider renaming it to 'main'.
 
-### [MMM-Meniny by eouia](https://github.com/eouia/MMM-Meniny)
+### [MMM-Meniny by andersarstrand](https://github.com/andersarstrand/MMM-Meniny)
 
 1. There is no `package.json`. We need this file to gather information about the module for the module list page.
 2. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
@@ -5259,6 +5269,7 @@ Last update: 2024-02-02T18:57:45+01:00
 
 ### [mmm-moon-phases by spectroman](https://github.com/spectroman/mmm-moon-phases)
 
+0. This module is outdated: Abandoned. Repo has been archived at 2023-10-16.
 1. There is no `package.json`. We need this file to gather information about the module for the module list page.
 2. Recommendation: Module name doesn't follow the recommended pattern (it doesn't start with `MMM-`). Consider renaming your module.
 3. Typo: Found `Magic Mirror` in file `README.md`: Replace it with `MagicMirror²`.
@@ -6020,6 +6031,7 @@ Last update: 2024-02-02T18:57:45+01:00
 
 ### [MMM-nagios by qistoph](https://github.com/qistoph/MMM-nagios)
 
+0. This module is outdated: Abandoned. Repo has been archived at 2023-03-09.
 1. Recommendation: Found `jshint` in file `Gruntfile.js`: Replace "jshint" by "eslint".
 2. Outdated: Found `MichMich/MagicMirror` in file `README.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
 3. Deprecated: Found `"grunt"` in file `package.json`: Grunt is practically unmaintained. Move on to something better.
@@ -6361,6 +6373,7 @@ Last update: 2024-02-02T18:57:45+01:00
 
 ### [MMM-NiceHash by mlbonniec](https://github.com/mlbonniec/MMM-NiceHash)
 
+0. This module is outdated: Abandoned. Repo has been archived at 2023-07-23.
 1. `package.json` issue: No description
 2. No image found.
 3. Recommendation: Found `uses: actions/checkout@v2` in file `build.yml`: Replace it with v4.
@@ -6523,6 +6536,7 @@ Last update: 2024-02-02T18:57:45+01:00
 
 ### [MMM-NowPlayingOnAIMP by jesmak](https://github.com/jesmak/MMM-NowPlayingOnAIMP)
 
+0. This module is outdated: Abandoned. Repo has been archived at 2024-01-22.
 1. Typo: Found `Magic Mirror` in file `README.md`: Replace it with `MagicMirror²`.
 2. Outdated: Found `MichMich/MagicMirror` in file `README.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
 3. Deprecated: Found `require('request')` in file `node_helper.js`: Replace it with built-in fetch.
@@ -6531,6 +6545,7 @@ Last update: 2024-02-02T18:57:45+01:00
 
 ### [MMM-NowPlayingOnSpotify by raywo](https://github.com/raywo/MMM-NowPlayingOnSpotify)
 
+0. This module is outdated: Abandoned. No reactions to issues since years. No installation instructions. It no longer seems to work.
 1. Recommendation: Found `jshint` in file `.gitignore`: Replace "jshint" by "eslint".
 2. Typo: Found `<sup>2</sup>` in file `README.md`: Replace it with `²`.`.
 3. Outdated: Found `MichMich/MagicMirror` in file `README.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
@@ -6593,6 +6608,7 @@ Last update: 2024-02-02T18:57:45+01:00
 
 ### [MMM-OClock by eouia](https://github.com/eouia/MMM-OClock)
 
+0. This module is outdated: Abandoned. Repo has been archived at 2020-06-10.
 1. There is no `package.json`. We need this file to gather information about the module for the module list page.
 2. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
 3. The branch name is 'master'. Consider renaming it to 'main'.
@@ -8001,6 +8017,7 @@ Last update: 2024-02-02T18:57:45+01:00
 
 ### [MMM-Ring by DustinBryant](https://github.com/DustinBryant/MMM-Ring)
 
+0. This module is outdated: Abandoned. Repo has been archived at 2022-08-25.
 1. There are no keywords in 'package.json'. We would use them as tags on the module list page.
 2. No image found.
 3. Typo: Found `Magic Mirror` in file `MMM-Ring.js`: Replace it with `MagicMirror²`.
@@ -8249,6 +8266,7 @@ Last update: 2024-02-02T18:57:45+01:00
 
 ### [MMM-ScottishPremierLeague by fewieden](https://github.com/fewieden/MMM-ScottishPremierLeague)
 
+0. This module is outdated: Abandoned. Repo has been archived at 2020-05-09.
 1. Typo: Found `Magic Mirror` in file `MMM-ScottishPremierLeague.js`: Replace it with `MagicMirror²`.
 2. Typo: Found `<sup>2</sup>` in file `README.md`: Replace it with `²`.`.
 3. Outdated: Found `MichMich/MagicMirror` in file `README.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
@@ -8496,6 +8514,7 @@ Last update: 2024-02-02T18:57:45+01:00
 
 ### [MMM-Simple-Swiper by Bee-Mar](https://github.com/Bee-Mar/MMM-Simple-Swiper)
 
+0. This module is outdated: Abandoned. Repo has been archived at 2022-05-22.
 1. There are no keywords in 'package.json'. We would use them as tags on the module list page.
 2. Typo: Found `Magic Mirror` in file `README.org`: Replace it with `MagicMirror²`.
 3. Deprecated: Found ` electron-rebuild` in file `README.org`: Replace it with `@electron/rebuild`
@@ -8773,16 +8792,6 @@ Last update: 2024-02-02T18:57:45+01:00
 7. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
 8. The branch name is 'master'. Consider renaming it to 'main'.
 
-### [MMM-SolarEdge by pizidavi](https://github.com/pizidavi/MMM-SolarEdge)
-
-1. There is no `package.json`. We need this file to gather information about the module for the module list page.
-2. Typo: Found `Magic Mirror` in file `MMM-SolarEdge.js`: Replace it with `MagicMirror²`.
-3. Typo: Found `<sup>2</sup>` in file `README.md`: Replace it with `²`.`.
-4. Outdated: Found `MichMich/MagicMirror` in file `README.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
-5. Deprecated: Found `require('request')` in file `node_helper.js`: Replace it with built-in fetch.
-6. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
-7. The branch name is 'master'. Consider renaming it to 'main'.
-
 ### [MMM-SolarEdgeLite by jeroenpeters1986](https://github.com/jeroenpeters1986/MMM-SolarEdgeLite)
 
 1. There is no `package.json`. We need this file to gather information about the module for the module list page.
@@ -9058,17 +9067,21 @@ Last update: 2024-02-02T18:57:45+01:00
 2. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
 3. The branch name is 'master'. Consider renaming it to 'main'.
 
-### [MMM-Swipe by mochman](https://github.com/mochman/MMM-Swipe)
+### [MMM-Swipe by Simon089](https://github.com/Simon089/MMM-Swipe)
 
 1. No image found.
 2. Typo: Found `Magic Mirror` in file `MMM-Swipe.js`: Replace it with `MagicMirror²`.
 3. Outdated: Found `MichMich/MagicMirror` in file `README.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
 4. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
-5. Typo: Found `Magic Mirror` in file `package.json`: Replace it with `MagicMirror²`.
-6. Deprecated: Found `"electron-rebuild"` in file `package.json`: Replace it with `@electron/rebuild`
-7. Warning: No LICENSE file.
-8. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
-9. The branch name is 'master'. Consider renaming it to 'main'.
+5. Recommendation: Found `jshint` in file `node_helper.js`: Replace "jshint" by "eslint".
+6. Typo: Found `Magic Mirror` in file `package.json`: Replace it with `MagicMirror²`.
+7. Deprecated: Found `"electron-rebuild"` in file `package.json`: Replace it with `@electron/rebuild`
+8. Recommendation: Found `jshint` in file `testingOnOff.js`: Replace "jshint" by "eslint".
+9. Recommendation: Found `jshint` in file `testingOnOff2Sensor.js`: Replace "jshint" by "eslint".
+10. Recommendation: Found `jshint` in file `testingPigpio2sensor.js`: Replace "jshint" by "eslint".
+11. Warning: No LICENSE file.
+12. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
+13. The branch name is 'master'. Consider renaming it to 'main'.
 
 ### [MMM-SwissCommute by nixnuex](https://github.com/nixnuex/MMM-SwissCommute)
 
@@ -9125,7 +9138,7 @@ Last update: 2024-02-02T18:57:45+01:00
 1. Recommendation: Replace eslintrc by new flat config.
 2. The branch name is 'master'. Consider renaming it to 'main'.
 
-### [MMM-syslog by paviro](https://github.com/paviro/MMM-syslog)
+### [MMM-syslog by marcinomen](https://github.com/marcinomen/MMM-syslog)
 
 1. There is no `package.json`. We need this file to gather information about the module for the module list page.
 2. Typo: Found `Magic Mirror` in file `MMM-syslog.js`: Replace it with `MagicMirror²`.
@@ -9148,6 +9161,7 @@ Last update: 2024-02-02T18:57:45+01:00
 
 ### [MMM-SystemStats by BenRoe](https://github.com/BenRoe/MMM-SystemStats)
 
+0. This module is outdated: Abandoned. Repo has been archived at 2022-09-05.
 1. Typo: Found `Magic Mirror` in file `MMM-SystemStats.js`: Replace it with `MagicMirror²`.
 2. Typo: Found `<sup>2</sup>` in file `README.md`: Replace it with `²`.`.
 3. Outdated: Found `MichMich/MagicMirror` in file `README.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
@@ -10037,6 +10051,7 @@ Last update: 2024-02-02T18:57:45+01:00
 
 ### [MMM-VolvoOnCall by eouia](https://github.com/eouia/MMM-VolvoOnCall)
 
+0. This module is outdated: Abandoned. Repo has been archived at 2022-03-28.
 1. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
 2. The branch name is 'master'. Consider renaming it to 'main'.
 
@@ -10066,6 +10081,7 @@ Last update: 2024-02-02T18:57:45+01:00
 
 ### [MMM-VUB-Resto by OscarVsp](https://github.com/OscarVsp/MMM-VUB-Resto)
 
+0. This module is outdated: Abandoned. Repo has been archived at 2023-09-20.
 1. There are no keywords in 'package.json'. We would use them as tags on the module list page.
 2. Typo: Found `Magic Mirror` in file `MMM-VUB-Resto.js`: Replace it with `MagicMirror²`.
 3. Recommendation: Found `new Date()` in file `MMM-VUB-Resto.js`: Replace it by `new Date(Date.now())`: [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).

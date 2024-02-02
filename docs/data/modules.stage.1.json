@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "2024-02-02T17:47:57.268Z",
+  "lastUpdate": "2024-02-02T20:39:44.935Z",
   "modules": [
     {
       "name": "MMM-01ZM",
@@ -1190,7 +1190,8 @@
       "maintainer": "mlbonniec",
       "maintainerURL": "https://github.com/mlbonniec",
       "description": "Display your Bitcoin Coinbase balance.",
-      "issues": []
+      "issues": [],
+      "outdated": "Abandoned. Repo has been archived at 2023-07-26."
     },
     {
       "name": "MMM-CoinMarketCap",
@@ -1271,7 +1272,8 @@
       "maintainer": "MMRIZE",
       "maintainerURL": "",
       "description": "Countdown or countup for events.",
-      "issues": []
+      "issues": [],
+      "outdated": "Abandoned. Repo has been archived at 2020-06-10."
     },
     {
       "name": "MMM-CountUP",
@@ -1543,7 +1545,8 @@
       "maintainer": "eouia",
       "maintainerURL": "",
       "description": "Module for daily recurrent event alarms.",
-      "issues": []
+      "issues": [],
+      "outdated": "Abandoned. Repo has been archived at 2020-06-10."
     },
     {
       "name": "MMM-DailyBibleVerse",
@@ -1818,7 +1821,8 @@
       "maintainer": "goedh452",
       "maintainerURL": "",
       "description": "A highly configurable module for displaying domoticz information and performing actions on Domoticz.",
-      "issues": []
+      "issues": [],
+      "outdated": "Abandoned. Repo has been archived at 2023-07-05."
     },
     {
       "name": "MMM-Dorba-Trails",
@@ -1845,7 +1849,8 @@
       "maintainer": "marcobiedermann",
       "maintainerURL": "",
       "description": "Module which shows the latest popular <a target=\"_blank\" href=\"https://dribbble.com\">dribbble</a> shots.",
-      "issues": []
+      "issues": [],
+      "outdated": "Abandoned. Repo has been archived at 2023-10-24."
     },
     {
       "name": "MMM-DropboxPictures",
@@ -2589,7 +2594,8 @@
       "maintainer": "eouia",
       "maintainerURL": "",
       "description": "'Likes' counter of Facebook page.",
-      "issues": []
+      "issues": [],
+      "outdated": "Abandoned. Repo has been archived at 2022-06-20."
     },
     {
       "name": "MMM-FearAndGreedIndex",
@@ -2706,7 +2712,8 @@
       "maintainer": "jesmak",
       "maintainerURL": "https://github.com/jesmak",
       "description": "Module that tracks packages from Finnish Posti and/or Matkahuolto.",
-      "issues": []
+      "issues": [],
+      "outdated": "Abandoned. Repo has been archived at 2024-01-22."
     },
     {
       "name": "MMM-Fish",
@@ -2778,7 +2785,8 @@
       "maintainer": "jesmak",
       "maintainerURL": "https://github.com/jesmak",
       "description": "Module that tracks nearby planes based on Flightradar24 data.",
-      "issues": []
+      "issues": [],
+      "outdated": "Abandoned. Repo has been archived at 2024-01-22."
     },
     {
       "name": "MMM-Flights",
@@ -4315,7 +4323,8 @@
       "maintainer": "Alvinger",
       "maintainerURL": "",
       "description": "Replaced by MMM-Mashie-Skolmat! Show school lunch menus from Köket by Sodexo (based on MMM-Skolmaten with different source for menus).",
-      "issues": []
+      "issues": [],
+      "outdated": "Abandoned. Repo has been archived at 2020-12-10."
     },
     {
       "name": "MMM-KudaGo",
@@ -4432,7 +4441,8 @@
       "maintainer": "l3d00m",
       "maintainerURL": "",
       "description": "Display the song you are currently streaming on your <a target=\"_blank\" href=\"https://github.com/librespot-org/librespot-java\">Librespot Java</a> Spotify Speaker.",
-      "issues": []
+      "issues": [],
+      "outdated": "Abandoned. Repo has been archived at 2023-10-01."
     },
     {
       "name": "MMM-LICE",
@@ -4844,11 +4854,11 @@
     },
     {
       "name": "MMM-Meniny",
-      "url": "https://github.com/eouia/MMM-Meniny",
-      "id": "eouia/MMM-Meniny",
-      "maintainer": "eouia",
+      "url": "https://github.com/andersarstrand/MMM-Meniny",
+      "id": "andersarstrand/MMM-Meniny",
+      "maintainer": "andersarstrand",
       "maintainerURL": "",
-      "description": "Display Slovak name of day.",
+      "description": "Display Swedish name of day.",
       "issues": []
     },
     {
@@ -5076,7 +5086,8 @@
       "maintainer": "spectroman",
       "maintainerURL": "",
       "description": "Show an image of the current moon phase.",
-      "issues": []
+      "issues": [],
+      "outdated": "Abandoned. Repo has been archived at 2023-10-16."
     },
     {
       "name": "mmm-nest-cameras",
@@ -5779,7 +5790,8 @@
       "maintainer": "qistoph",
       "maintainerURL": "",
       "description": "A MagicMirror² Module for Nagios.",
-      "issues": []
+      "issues": [],
+      "outdated": "Abandoned. Repo has been archived at 2023-03-09."
     },
     {
       "name": "MMM-NameDay",
@@ -6085,7 +6097,8 @@
       "maintainer": "mlbonniec",
       "maintainerURL": "https://github.com/mlbonniec",
       "description": "Display your NiceHash projected income and rigs highest temperature.",
-      "issues": []
+      "issues": [],
+      "outdated": "Abandoned. Repo has been archived at 2023-07-23."
     },
     {
       "name": "MMM-Nightscout",
@@ -6213,7 +6226,8 @@
       "maintainer": "jesmak",
       "maintainerURL": "https://github.com/jesmak",
       "description": "Display the song you are currently listening to on AIMP.",
-      "issues": []
+      "issues": [],
+      "outdated": "Abandoned. Repo has been archived at 2024-01-22."
     },
     {
       "name": "MMM-NowPlayingOnSpotify",
@@ -6222,7 +6236,8 @@
       "maintainer": "raywo",
       "maintainerURL": "",
       "description": "Display the song you are currently listening to on Spotify.",
-      "issues": []
+      "issues": [],
+      "outdated": "Abandoned. No reactions to issues since years. No installation instructions. It no longer seems to work."
     },
     {
       "name": "MMM-NsInfo",
@@ -6267,7 +6282,8 @@
       "maintainer": "eouia",
       "maintainerURL": "",
       "description": "O-clock inspired by PolarClock Screensaver.",
-      "issues": []
+      "issues": [],
+      "outdated": "Abandoned. Repo has been archived at 2020-06-10."
     },
     {
       "name": "octomirror-module",
@@ -7621,7 +7637,8 @@
       "maintainer": "DustinBryant",
       "maintainerURL": "",
       "description": "Displays a video stream of your Ring doorbell when someone rings your doorbell.",
-      "issues": []
+      "issues": [],
+      "outdated": "Abandoned. Repo has been archived at 2022-08-25."
     },
     {
       "name": "MMM-RingAlarm",
@@ -7822,7 +7839,8 @@
       "maintainer": "fewieden",
       "maintainerURL": "",
       "description": "Display scottish premiere league standings.",
-      "issues": []
+      "issues": [],
+      "outdated": "Abandoned. Repo has been archived at 2020-05-09."
     },
     {
       "name": "MMM-Screen-Powersave-Notification",
@@ -8066,7 +8084,8 @@
       "maintainer": "Bee-Mar",
       "maintainerURL": "",
       "description": "Simple, multi-threaded interface for HC-SR04 ultra sonic sensors to be used with MMM-pages.",
-      "issues": []
+      "issues": [],
+      "outdated": "Abandoned. Repo has been archived at 2022-05-22."
     },
     {
       "name": "MMM-SimpleLogo",
@@ -8318,15 +8337,6 @@
       "maintainer": "bertieuk",
       "maintainerURL": "",
       "description": "Display statistics from your SolarEdge PV inverter system.",
-      "issues": []
-    },
-    {
-      "name": "MMM-SolarEdge",
-      "url": "https://github.com/pizidavi/MMM-SolarEdge",
-      "id": "pizidavi/MMM-SolarEdge",
-      "maintainer": "pizidavi",
-      "maintainerURL": "",
-      "description": "Displays, updated every minute, the energy produced, used and received/released to the grid by your SolarEdge System.",
       "issues": []
     },
     {
@@ -8594,9 +8604,9 @@
     },
     {
       "name": "MMM-Swipe",
-      "url": "https://github.com/mochman/MMM-Swipe",
-      "id": "mochman/MMM-Swipe",
-      "maintainer": "mochman",
+      "url": "https://github.com/Simon089/MMM-Swipe",
+      "id": "Simon089/MMM-Swipe",
+      "maintainer": "Simon089",
       "maintainerURL": "",
       "description": "Uses 2 HC-SR04 ultrasonic sensors to determing hand position to produce a \"Swipe Left\", \"Swipe Right\", or \"Press\".",
       "issues": []
@@ -8657,9 +8667,9 @@
     },
     {
       "name": "MMM-syslog",
-      "url": "https://github.com/paviro/MMM-syslog",
-      "id": "paviro/MMM-syslog",
-      "maintainer": "paviro",
+      "url": "https://github.com/marcinomen/MMM-syslog",
+      "id": "marcinomen/MMM-syslog",
+      "maintainer": "marcinomen",
       "maintainerURL": "",
       "description": "API for sending notifications to your mirror.",
       "issues": []
@@ -8680,7 +8690,8 @@
       "maintainer": "BenRoe",
       "maintainerURL": "",
       "description": "Shows Raspberry Pi system stats like CPU temperature, free Ram, System load, and Uptime.",
-      "issues": []
+      "issues": [],
+      "outdated": "Abandoned. Repo has been archived at 2022-09-05."
     },
     {
       "name": "MMM-Tabulator",
@@ -9508,7 +9519,8 @@
       "maintainer": "eouia",
       "maintainerURL": "",
       "description": "Display Volvo car status and trip information by VolvoOnCall.",
-      "issues": []
+      "issues": [],
+      "outdated": "Abandoned. Repo has been archived at 2022-03-28."
     },
     {
       "name": "MMM-Vrr",
@@ -9535,7 +9547,8 @@
       "maintainer": "OscarVsp",
       "maintainerURL": "",
       "description": "Get the menu of day of the VUB restaurant (Vrije Universiteit Brussel). Based on MMM-json.",
-      "issues": []
+      "issues": [],
+      "outdated": "Abandoned. Repo has been archived at 2023-09-20."
     },
     {
       "name": "MMM-vvsDeparture",
