@@ -1,6 +1,6 @@
 # Result of the module analysis
 
-Last update: 2024-02-01T23:09:01+01:00
+Last update: 2024-02-02T18:57:45+01:00
 
 ## Statistics
 
@@ -8,8 +8,8 @@ Last update: 2024-02-01T23:09:01+01:00
 |:---------------------|:--------:|
 | modules analyzed     |   1116   |
 | maintainer           |    629   |
-| modules with issues  |   1111   |
-| issues               |   7318   |
+| modules with issues  |   1110   |
+| issues               |   7316   |
 | modules at github    |   1107   |
 | modules at gitlab    |      8   |
 | modules at bitbucket |      1   |
@@ -7575,11 +7575,6 @@ Last update: 2024-02-01T23:09:01+01:00
 3. Recommendation: Found `"eslint-plugin-json"` in file `package.json`: Replace it by `eslint-plugin-jsonc`.
 4. Recommendation: Replace eslintrc by new flat config.
 5. The branch name is 'master'. Consider renaming it to 'main'.
-
-### [MMM-PublicTransportHafas by KristjanESPERANTO](https://github.com/KristjanESPERANTO/MMM-PublicTransportHafas)
-
-1. Outdated: Found `/_/husky.sh` in file `pre-commit`: Since husky v9 you may not need this anymore.
-2. Outdated: Found `husky install` in file `package.json`: Since husky v9 you may not need this anymore.
 
 ### [MMM-PublicTransportVVO by ChristianGeie](https://github.com/ChristianGeie/MMM-PublicTransportVVO)
 
