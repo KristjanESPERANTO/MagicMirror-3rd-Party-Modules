@@ -1,6 +1,5 @@
 *.js
-docs/data/modules*.json
-docs/data/stats.json
+docs/data/*.json
 modules/
 result.md
 modules_temp/
