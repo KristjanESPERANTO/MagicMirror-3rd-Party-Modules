@@ -3162,13 +3162,14 @@
     "maintainer": "Arve",
     "maintainerURL": "",
     "description": "Display public transport information/departure boards for any public transport in Norway.",
-    "issues": 3,
+    "issues": 2,
     "stars": 15,
     "tags": [
       "entur",
       "public transport"
     ],
     "license": "LGPL-2.1-only",
+    "image": "images-screenshot.jpg",
     "lastCommit": "2024-02-04T15:02:13+01:00"
   },
   {

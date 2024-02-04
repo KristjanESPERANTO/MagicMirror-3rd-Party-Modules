@@ -3333,15 +3333,14 @@
     "maintainer": "Arve",
     "maintainerURL": "",
     "description": "Display public transport information/departure boards for any public transport in Norway.",
-    "issues": [
-      "No compatible or wrong license field in 'package.json'. Without that, we can't use an image."
-    ],
+    "issues": [],
     "stars": 15,
     "tags": [
       "entur",
       "public transport"
     ],
-    "license": "LGPL-2.1-only"
+    "license": "LGPL-2.1-only",
+    "image": "images-screenshot.jpg"
   },
   {
     "name": "MMM-EnvCanada",

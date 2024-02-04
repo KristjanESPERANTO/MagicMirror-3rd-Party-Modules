@@ -1,6 +1,6 @@
 # Result of the module analysis
 
-Last update: 2024-02-04T19:01:57+01:00
+Last update: 2024-02-04T19:16:59+01:00
 
 ## Statistics
 
@@ -9,7 +9,7 @@ Last update: 2024-02-04T19:01:57+01:00
 | modules analyzed     |   1117   |
 | maintainer           |    630   |
 | modules with issues  |   1111   |
-| issues               |   7359   |
+| issues               |   7358   |
 | modules at github    |   1108   |
 | modules at gitlab    |      8   |
 | modules at bitbucket |      1   |
@@ -2171,9 +2171,8 @@ Last update: 2024-02-04T19:01:57+01:00
 
 ### [MMM-Entur-tavle by Arve](https://github.com/Arve/MMM-Entur-tavle)
 
-1. No compatible or wrong license field in 'package.json'. Without that, we can't use an image.
-2. Recommendation: Replace eslintrc by new flat config.
-3. The branch name is 'master'. Consider renaming it to 'main'.
+1. Recommendation: Replace eslintrc by new flat config.
+2. The branch name is 'master'. Consider renaming it to 'main'.
 
 ### [MMM-EnvCanada by CharlesMorris78](https://github.com/CharlesMorris78/MMM-EnvCanada)
 
