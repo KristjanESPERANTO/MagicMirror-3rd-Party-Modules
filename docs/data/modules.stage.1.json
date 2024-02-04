@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "2024-02-04T12:59:02.978Z",
+  "lastUpdate": "2024-02-04T17:52:03.339Z",
   "modules": [
     {
       "name": "MMM-01ZM",
@@ -314,7 +314,8 @@
       "maintainer": "mykle1",
       "maintainerURL": "",
       "description": "A rotation of astronauts that are currently in space and the spacecraft they are on.",
-      "issues": []
+      "issues": [],
+      "outdated": "Abandoned. No reactions to issues since years. Missing instructions to install dependency 'request'."
     },
     {
       "name": "MMM-AT-Bus",
@@ -341,7 +342,8 @@
       "maintainer": "mykle1",
       "maintainerURL": "",
       "description": "Another Trivia Module? Really?",
-      "issues": []
+      "issues": [],
+      "outdated": "Abandoned. Developer is no longer active. Missing instructions to install dependency 'request'."
     },
     {
       "name": "MMM-August-Lock",
@@ -638,7 +640,8 @@
       "maintainer": "mykle1",
       "maintainerURL": "",
       "description": "Body Mass Index Calculator. For those seeking separation or divorce.",
-      "issues": []
+      "issues": [],
+      "outdated": "Abandoned. Developer is no longer active. Missing instructions to install dependency 'request'."
     },
     {
       "name": "MMM-BMW-CC",
@@ -667,7 +670,8 @@
       "maintainer": "mykle1",
       "maintainerURL": "",
       "description": "Weather designed for bottom bar position, now using the OpenWeather API.",
-      "issues": []
+      "issues": [],
+      "outdated": "Abandoned. No reactions to issues since years. Missing instructions to install dependency 'request'."
     },
     {
       "name": "MMM-BMWConnected",
@@ -1027,7 +1031,8 @@
       "maintainer": "mykle1",
       "maintainerURL": "",
       "description": "Play 5 Card Stud Poker against your mirror.",
-      "issues": []
+      "issues": [],
+      "outdated": "Abandoned. Developer is no longer active. Missing instructions to install dependency 'request'."
     },
     {
       "name": "MMM-Carousel",
@@ -1145,7 +1150,8 @@
       "maintainer": "mykle1",
       "maintainerURL": "",
       "description": "Hourly weather designed for bottom bar position using the Climacell API.",
-      "issues": []
+      "issues": [],
+      "outdated": "Abandoned. Developer is no longer active. Missing instructions to install dependency 'request'."
     },
     {
       "name": "MMM-Clockinese",
@@ -1181,7 +1187,8 @@
       "maintainer": "mykle1",
       "maintainerURL": "",
       "description": "How to make all kinds of mixed drinks - Instructions, ingredients and images.",
-      "issues": []
+      "issues": [],
+      "outdated": "Abandoned. No reactions to issues since years. Missing instructions to install dependency 'request'."
     },
     {
       "name": "MMM-Coinbase",
@@ -1941,7 +1948,8 @@
       "maintainer": "mykle1",
       "maintainerURL": "",
       "description": "Watch the sunlit side of Earth as it rotates.",
-      "issues": []
+      "issues": [],
+      "outdated": "Abandoned. Developer is no longer active. Missing instructions to install dependency 'request'."
     },
     {
       "name": "MMM-EARTH-Live",
@@ -2123,7 +2131,8 @@
       "maintainer": "mykle1",
       "maintainerURL": "",
       "description": "The Encyclopedia of Life.",
-      "issues": []
+      "issues": [],
+      "outdated": "Abandoned. Developer is no longer active. Missing instructions to install dependency 'request'."
     },
     {
       "name": "MMM-EskomSePush",
@@ -4083,21 +4092,22 @@
     },
     {
       "name": "MMM-ISS",
-      "url": "https://github.com/mykle1/MMM-ISS",
-      "id": "mykle1/MMM-ISS",
-      "maintainer": "mykle1",
-      "maintainerURL": "",
-      "description": "Know when the International Space Station is visible from your location. Can be seen with the naked eye.",
-      "issues": []
-    },
-    {
-      "name": "MMM-ISS",
       "url": "https://github.com/daterrell/MMM-ISS",
       "id": "daterrell/MMM-ISS",
       "maintainer": "daterrell",
       "maintainerURL": "",
       "description": "Display International Space Station fly-overs in your area.",
       "issues": []
+    },
+    {
+      "name": "MMM-ISS",
+      "url": "https://github.com/mykle1/MMM-ISS",
+      "id": "mykle1/MMM-ISS",
+      "maintainer": "mykle1",
+      "maintainerURL": "",
+      "description": "Know when the International Space Station is visible from your location. Can be seen with the naked eye.",
+      "issues": [],
+      "outdated": "Abandoned. Developer is no longer active. Missing instructions to install dependency 'request'."
     },
     {
       "name": "MMM-ISS-Live",
@@ -4378,7 +4388,8 @@
       "maintainer": "mykle1",
       "maintainerURL": "",
       "description": "Ever wonder just how often mankind is launching things into space? Once a year? Twice? WRONG! On a daily basis. Often, several times a day! Don’t believe it? Neither did I.",
-      "issues": []
+      "issues": [],
+      "outdated": "Abandoned. Developer is no longer active. Missing instructions to install dependency 'request'."
     },
     {
       "name": "MMM-LCDControl",
@@ -4452,7 +4463,7 @@
       "maintainerURL": "",
       "description": "Live International Currency Exchange.",
       "issues": [],
-      "outdated": "Abandoned. No reactions to issues since years. Missing instructions to install 'request'."
+      "outdated": "Abandoned. No reactions to issues since years. Missing instructions to install dependency 'request'."
     },
     {
       "name": "MMM-lichess-daily",
@@ -4614,7 +4625,8 @@
       "maintainer": "mykle1",
       "maintainerURL": "",
       "description": "Display truly random lottery numbers, coinciding with many International lotteries.",
-      "issues": []
+      "issues": [],
+      "outdated": "Abandoned. Developer is no longer active. Missing instructions to install dependency 'request'."
     },
     {
       "name": "MMM-Loxone",
@@ -4778,7 +4790,8 @@
       "maintainer": "mykle1",
       "maintainerURL": "",
       "description": "Mars Exploration Rover missions.",
-      "issues": []
+      "issues": [],
+      "outdated": "Abandoned. No reactions to issues since years. Missing instructions to install dependency 'request'."
     },
     {
       "name": "MMM-MarsWeather",
@@ -5827,7 +5840,8 @@
       "maintainer": "mykle1",
       "maintainerURL": "",
       "description": "Stunning imagery and information about your universe. Choose from a host of categories. Looks amazing on your mirror!",
-      "issues": []
+      "issues": [],
+      "outdated": "Abandoned. No reactions to issues since years. Missing instructions to install dependency 'request'."
     },
     {
       "name": "MMM-nasaastropic",
@@ -5899,7 +5913,8 @@
       "maintainer": "mykle1",
       "maintainerURL": "",
       "description": "Near Earth Objects passing by our planet this week. Be afraid. Be VERY afraid!",
-      "issues": []
+      "issues": [],
+      "outdated": "Abandoned. No reactions to issues since years. Missing instructions to install dependency 'request'."
     },
     {
       "name": "MMM-neoomAPI",
@@ -6814,7 +6829,8 @@
       "maintainer": "mykle1",
       "maintainerURL": "",
       "description": "Static or Rotating Weather for Pilots. International ICAO's.",
-      "issues": []
+      "issues": [],
+      "outdated": "Abandoned. No reactions to issues since years. Missing instructions to install dependency 'request'."
     },
     {
       "name": "MMM-PimaticFloorplan",
@@ -6887,7 +6903,7 @@
       "id": "dankerthrone/MMM-PirateSkyForecast",
       "maintainer": "dankerthrone",
       "maintainerURL": "",
-      "description": "Almost completely unchanged fork of the beautiful MMM-DarkSkyForecast but uses the <strong>pirateweather.net API since DarkSky is EOL</strong>.",
+      "description": "A weather module that displays current, hourly and daily forecast information using data from the pirateweather API.",
       "issues": []
     },
     {
@@ -8419,7 +8435,7 @@
       "maintainerURL": "",
       "description": "Static Or Rotating Tides module. Replaces/combines MMM-SimpleTides and MMM-StaticTides.",
       "issues": [],
-      "outdated": "Abandoned. No reactions to issues since years. Missing instructions to install 'request'."
+      "outdated": "Abandoned. No reactions to issues since years. Missing instructions to install dependency 'request'."
     },
     {
       "name": "MMM-Space",
@@ -8609,7 +8625,7 @@
       "maintainerURL": "",
       "description": "More information than you ever wanted to know about the rising and setting of the sun.",
       "issues": [],
-      "outdated": "Abandoned. No reactions to issues since years. Missing instructions to install 'request'."
+      "outdated": "Abandoned. No reactions to issues since years. Missing instructions to install dependency 'request'."
     },
     {
       "name": "MMM-SweepClock",
@@ -9966,7 +9982,8 @@
       "maintainer": "mykle1",
       "maintainerURL": "",
       "description": "Nope! Not World War I. It's <strong>Weather Without Icons</strong>. Up to the minute weather. Full weather information, yet a small footprint.",
-      "issues": []
+      "issues": [],
+      "outdated": "Deprecated. DarkSky API no longer works since 2023-03-31."
     },
     {
       "name": "MMM-XDG-OPEN",

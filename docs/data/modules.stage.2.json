@@ -347,6 +347,7 @@
     "maintainerURL": "",
     "description": "A rotation of astronauts that are currently in space and the spacecraft they are on.",
     "issues": [],
+    "outdated": "Abandoned. No reactions to issues since years. Missing instructions to install dependency 'request'.",
     "stars": 5
   },
   {
@@ -377,6 +378,7 @@
     "maintainerURL": "",
     "description": "Another Trivia Module? Really?",
     "issues": [],
+    "outdated": "Abandoned. Developer is no longer active. Missing instructions to install dependency 'request'.",
     "stars": 7
   },
   {
@@ -707,6 +709,7 @@
     "maintainerURL": "",
     "description": "Body Mass Index Calculator. For those seeking separation or divorce.",
     "issues": [],
+    "outdated": "Abandoned. Developer is no longer active. Missing instructions to install dependency 'request'.",
     "stars": 3
   },
   {
@@ -739,6 +742,7 @@
     "maintainerURL": "",
     "description": "Weather designed for bottom bar position, now using the OpenWeather API.",
     "issues": [],
+    "outdated": "Abandoned. No reactions to issues since years. Missing instructions to install dependency 'request'.",
     "stars": 3
   },
   {
@@ -1139,6 +1143,7 @@
     "maintainerURL": "",
     "description": "Play 5 Card Stud Poker against your mirror.",
     "issues": [],
+    "outdated": "Abandoned. Developer is no longer active. Missing instructions to install dependency 'request'.",
     "stars": 1
   },
   {
@@ -1270,6 +1275,7 @@
     "maintainerURL": "",
     "description": "Hourly weather designed for bottom bar position using the Climacell API.",
     "issues": [],
+    "outdated": "Abandoned. Developer is no longer active. Missing instructions to install dependency 'request'.",
     "stars": 1
   },
   {
@@ -1310,6 +1316,7 @@
     "maintainerURL": "",
     "description": "How to make all kinds of mixed drinks - Instructions, ingredients and images.",
     "issues": [],
+    "outdated": "Abandoned. No reactions to issues since years. Missing instructions to install dependency 'request'.",
     "stars": 11
   },
   {
@@ -2153,6 +2160,7 @@
     "maintainerURL": "",
     "description": "Watch the sunlit side of Earth as it rotates.",
     "issues": [],
+    "outdated": "Abandoned. Developer is no longer active. Missing instructions to install dependency 'request'.",
     "stars": 59
   },
   {
@@ -2355,6 +2363,7 @@
     "maintainerURL": "",
     "description": "The Encyclopedia of Life.",
     "issues": [],
+    "outdated": "Abandoned. Developer is no longer active. Missing instructions to install dependency 'request'.",
     "stars": 7
   },
   {
@@ -4531,16 +4540,6 @@
   },
   {
     "name": "MMM-ISS",
-    "url": "https://github.com/mykle1/MMM-ISS",
-    "id": "mykle1/MMM-ISS",
-    "maintainer": "mykle1",
-    "maintainerURL": "",
-    "description": "Know when the International Space Station is visible from your location. Can be seen with the naked eye.",
-    "issues": [],
-    "stars": 16
-  },
-  {
-    "name": "MMM-ISS",
     "url": "https://github.com/daterrell/MMM-ISS",
     "id": "daterrell/MMM-ISS",
     "maintainer": "daterrell",
@@ -4548,6 +4547,17 @@
     "description": "Display International Space Station fly-overs in your area.",
     "issues": [],
     "stars": 5
+  },
+  {
+    "name": "MMM-ISS",
+    "url": "https://github.com/mykle1/MMM-ISS",
+    "id": "mykle1/MMM-ISS",
+    "maintainer": "mykle1",
+    "maintainerURL": "",
+    "description": "Know when the International Space Station is visible from your location. Can be seen with the naked eye.",
+    "issues": [],
+    "outdated": "Abandoned. Developer is no longer active. Missing instructions to install dependency 'request'.",
+    "stars": 16
   },
   {
     "name": "MMM-ISS-Live",
@@ -4859,6 +4869,7 @@
     "maintainerURL": "",
     "description": "Ever wonder just how often mankind is launching things into space? Once a year? Twice? WRONG! On a daily basis. Often, several times a day! Don’t believe it? Neither did I.",
     "issues": [],
+    "outdated": "Abandoned. Developer is no longer active. Missing instructions to install dependency 'request'.",
     "stars": 16
   },
   {
@@ -4940,7 +4951,7 @@
     "maintainerURL": "",
     "description": "Live International Currency Exchange.",
     "issues": [],
-    "outdated": "Abandoned. No reactions to issues since years. Missing instructions to install 'request'.",
+    "outdated": "Abandoned. No reactions to issues since years. Missing instructions to install dependency 'request'.",
     "stars": 11
   },
   {
@@ -5121,6 +5132,7 @@
     "maintainerURL": "",
     "description": "Display truly random lottery numbers, coinciding with many International lotteries.",
     "issues": [],
+    "outdated": "Abandoned. Developer is no longer active. Missing instructions to install dependency 'request'.",
     "stars": 2
   },
   {
@@ -5303,6 +5315,7 @@
     "maintainerURL": "",
     "description": "Mars Exploration Rover missions.",
     "issues": [],
+    "outdated": "Abandoned. No reactions to issues since years. Missing instructions to install dependency 'request'.",
     "stars": 4
   },
   {
@@ -6468,6 +6481,7 @@
     "maintainerURL": "",
     "description": "Stunning imagery and information about your universe. Choose from a host of categories. Looks amazing on your mirror!",
     "issues": [],
+    "outdated": "Abandoned. No reactions to issues since years. Missing instructions to install dependency 'request'.",
     "stars": 12
   },
   {
@@ -6548,6 +6562,7 @@
     "maintainerURL": "",
     "description": "Near Earth Objects passing by our planet this week. Be afraid. Be VERY afraid!",
     "issues": [],
+    "outdated": "Abandoned. No reactions to issues since years. Missing instructions to install dependency 'request'.",
     "stars": 4
   },
   {
@@ -7564,6 +7579,7 @@
     "maintainerURL": "",
     "description": "Static or Rotating Weather for Pilots. International ICAO's.",
     "issues": [],
+    "outdated": "Abandoned. No reactions to issues since years. Missing instructions to install dependency 'request'.",
     "stars": 4
   },
   {
@@ -7644,7 +7660,7 @@
     "id": "dankerthrone/MMM-PirateSkyForecast",
     "maintainer": "dankerthrone",
     "maintainerURL": "",
-    "description": "Almost completely unchanged fork of the beautiful MMM-DarkSkyForecast but uses the <strong>pirateweather.net API since DarkSky is EOL</strong>.",
+    "description": "A weather module that displays current, hourly and daily forecast information using data from the pirateweather API.",
     "issues": [],
     "stars": 3
   },
@@ -9345,7 +9361,7 @@
     "maintainerURL": "",
     "description": "Static Or Rotating Tides module. Replaces/combines MMM-SimpleTides and MMM-StaticTides.",
     "issues": [],
-    "outdated": "Abandoned. No reactions to issues since years. Missing instructions to install 'request'.",
+    "outdated": "Abandoned. No reactions to issues since years. Missing instructions to install dependency 'request'.",
     "stars": 2
   },
   {
@@ -9556,7 +9572,7 @@
     "maintainerURL": "",
     "description": "More information than you ever wanted to know about the rising and setting of the sun.",
     "issues": [],
-    "outdated": "Abandoned. No reactions to issues since years. Missing instructions to install 'request'.",
+    "outdated": "Abandoned. No reactions to issues since years. Missing instructions to install dependency 'request'.",
     "stars": 16
   },
   {
@@ -11064,6 +11080,7 @@
     "maintainerURL": "",
     "description": "Nope! Not World War I. It's <strong>Weather Without Icons</strong>. Up to the minute weather. Full weather information, yet a small footprint.",
     "issues": [],
+    "outdated": "Deprecated. DarkSky API no longer works since 2023-03-31.",
     "stars": 0
   },
   {

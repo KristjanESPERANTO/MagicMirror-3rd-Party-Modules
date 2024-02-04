@@ -509,6 +509,7 @@
     "maintainerURL": "",
     "description": "A rotation of astronauts that are currently in space and the spacecraft they are on.",
     "issues": 6,
+    "outdated": "Abandoned. No reactions to issues since years. Missing instructions to install dependency 'request'.",
     "stars": 5,
     "lastCommit": "2017-07-10T20:57:44-04:00"
   },
@@ -542,6 +543,7 @@
     "maintainerURL": "",
     "description": "Another Trivia Module? Really?",
     "issues": 6,
+    "outdated": "Abandoned. Developer is no longer active. Missing instructions to install dependency 'request'.",
     "stars": 7,
     "lastCommit": "2018-01-12T20:40:45-05:00"
   },
@@ -978,6 +980,7 @@
     "maintainerURL": "",
     "description": "Body Mass Index Calculator. For those seeking separation or divorce.",
     "issues": 6,
+    "outdated": "Abandoned. Developer is no longer active. Missing instructions to install dependency 'request'.",
     "stars": 3,
     "license": "MIT",
     "image": "images-1.jpg",
@@ -1015,6 +1018,7 @@
     "maintainerURL": "",
     "description": "Weather designed for bottom bar position, now using the OpenWeather API.",
     "issues": 6,
+    "outdated": "Abandoned. No reactions to issues since years. Missing instructions to install dependency 'request'.",
     "stars": 3,
     "lastCommit": "2022-02-12T20:15:56-05:00"
   },
@@ -1560,6 +1564,7 @@
     "maintainerURL": "",
     "description": "Play 5 Card Stud Poker against your mirror.",
     "issues": 6,
+    "outdated": "Abandoned. Developer is no longer active. Missing instructions to install dependency 'request'.",
     "stars": 1,
     "lastCommit": "2018-01-12T20:32:50-05:00"
   },
@@ -1738,6 +1743,7 @@
     "maintainerURL": "",
     "description": "Hourly weather designed for bottom bar position using the Climacell API.",
     "issues": 6,
+    "outdated": "Abandoned. Developer is no longer active. Missing instructions to install dependency 'request'.",
     "stars": 1,
     "lastCommit": "2022-01-25T20:08:48-05:00"
   },
@@ -1782,6 +1788,7 @@
     "maintainerURL": "",
     "description": "How to make all kinds of mixed drinks - Instructions, ingredients and images.",
     "issues": 7,
+    "outdated": "Abandoned. No reactions to issues since years. Missing instructions to install dependency 'request'.",
     "stars": 11,
     "lastCommit": "2018-06-13T22:25:12-04:00"
   },
@@ -2875,6 +2882,7 @@
     "maintainerURL": "",
     "description": "Watch the sunlit side of Earth as it rotates.",
     "issues": 6,
+    "outdated": "Abandoned. Developer is no longer active. Missing instructions to install dependency 'request'.",
     "stars": 59,
     "tags": [
       "earth",
@@ -3154,9 +3162,14 @@
     "maintainer": "Arve",
     "maintainerURL": "",
     "description": "Display public transport information/departure boards for any public transport in Norway.",
-    "issues": 5,
+    "issues": 3,
     "stars": 15,
-    "lastCommit": "2024-01-17T15:17:41+01:00"
+    "tags": [
+      "entur",
+      "public transport"
+    ],
+    "license": "LGPL-2.1-only",
+    "lastCommit": "2024-02-04T15:02:13+01:00"
   },
   {
     "name": "MMM-EnvCanada",
@@ -3184,6 +3197,7 @@
     "maintainerURL": "",
     "description": "The Encyclopedia of Life.",
     "issues": 6,
+    "outdated": "Abandoned. Developer is no longer active. Missing instructions to install dependency 'request'.",
     "stars": 7,
     "lastCommit": "2022-01-31T20:23:08-05:00"
   },
@@ -3574,7 +3588,7 @@
     ],
     "license": "MIT",
     "image": "screenshot-screenshot.jpg",
-    "lastCommit": "2024-01-03T16:35:39+01:00"
+    "lastCommit": "2024-02-04T18:52:34+01:00"
   },
   {
     "name": "EXT-Selfies",
@@ -4821,7 +4835,7 @@
     ],
     "license": "MIT",
     "image": "resources-previewFS.jpg",
-    "lastCommit": "2024-01-29T01:52:30+01:00"
+    "lastCommit": "2024-02-04T18:45:24+01:00"
   },
   {
     "name": "MMM-GoogleAssistant",
@@ -6214,17 +6228,6 @@
   },
   {
     "name": "MMM-ISS",
-    "url": "https://github.com/mykle1/MMM-ISS",
-    "id": "mykle1/MMM-ISS",
-    "maintainer": "mykle1",
-    "maintainerURL": "",
-    "description": "Know when the International Space Station is visible from your location. Can be seen with the naked eye.",
-    "issues": 6,
-    "stars": 16,
-    "lastCommit": "2020-12-27T22:05:54-05:00"
-  },
-  {
-    "name": "MMM-ISS",
     "url": "https://github.com/daterrell/MMM-ISS",
     "id": "daterrell/MMM-ISS",
     "maintainer": "daterrell",
@@ -6233,6 +6236,18 @@
     "issues": 9,
     "stars": 5,
     "lastCommit": "2023-04-19T13:09:39-07:00"
+  },
+  {
+    "name": "MMM-ISS",
+    "url": "https://github.com/mykle1/MMM-ISS",
+    "id": "mykle1/MMM-ISS",
+    "maintainer": "mykle1",
+    "maintainerURL": "",
+    "description": "Know when the International Space Station is visible from your location. Can be seen with the naked eye.",
+    "issues": 6,
+    "outdated": "Abandoned. Developer is no longer active. Missing instructions to install dependency 'request'.",
+    "stars": 16,
+    "lastCommit": "2020-12-27T22:05:54-05:00"
   },
   {
     "name": "MMM-ISS-Live",
@@ -6665,6 +6680,7 @@
     "maintainerURL": "",
     "description": "Ever wonder just how often mankind is launching things into space? Once a year? Twice? WRONG! On a daily basis. Often, several times a day! Don\u2019t believe it? Neither did I.",
     "issues": 6,
+    "outdated": "Abandoned. Developer is no longer active. Missing instructions to install dependency 'request'.",
     "stars": 16,
     "lastCommit": "2021-01-01T21:09:05-05:00"
   },
@@ -6785,7 +6801,7 @@
     "maintainerURL": "",
     "description": "Live International Currency Exchange.",
     "issues": 6,
-    "outdated": "Abandoned. No reactions to issues since years. Missing instructions to install 'request'.",
+    "outdated": "Abandoned. No reactions to issues since years. Missing instructions to install dependency 'request'.",
     "stars": 11,
     "lastCommit": "2018-03-20T20:39:38-04:00"
   },
@@ -7017,6 +7033,7 @@
     "maintainerURL": "",
     "description": "Display truly random lottery numbers, coinciding with many International lotteries.",
     "issues": 6,
+    "outdated": "Abandoned. Developer is no longer active. Missing instructions to install dependency 'request'.",
     "stars": 2,
     "lastCommit": "2018-01-08T10:13:52-05:00"
   },
@@ -7269,6 +7286,7 @@
     "maintainerURL": "",
     "description": "Mars Exploration Rover missions.",
     "issues": 6,
+    "outdated": "Abandoned. No reactions to issues since years. Missing instructions to install dependency 'request'.",
     "stars": 4,
     "lastCommit": "2019-01-10T19:33:27-05:00"
   },
@@ -8841,6 +8859,7 @@
     "maintainerURL": "",
     "description": "Stunning imagery and information about your universe. Choose from a host of categories. Looks amazing on your mirror!",
     "issues": 6,
+    "outdated": "Abandoned. No reactions to issues since years. Missing instructions to install dependency 'request'.",
     "stars": 12,
     "lastCommit": "2019-03-02T21:42:53-05:00"
   },
@@ -8948,6 +8967,7 @@
     "maintainerURL": "",
     "description": "Near Earth Objects passing by our planet this week. Be afraid. Be VERY afraid!",
     "issues": 7,
+    "outdated": "Abandoned. No reactions to issues since years. Missing instructions to install dependency 'request'.",
     "stars": 4,
     "lastCommit": "2018-01-12T20:46:34-05:00"
   },
@@ -10366,6 +10386,7 @@
     "maintainerURL": "",
     "description": "Static or Rotating Weather for Pilots. International ICAO's.",
     "issues": 6,
+    "outdated": "Abandoned. No reactions to issues since years. Missing instructions to install dependency 'request'.",
     "stars": 4,
     "license": "MIT",
     "image": "images-1.PNG",
@@ -10492,7 +10513,7 @@
     "id": "dankerthrone/MMM-PirateSkyForecast",
     "maintainer": "dankerthrone",
     "maintainerURL": "",
-    "description": "Almost completely unchanged fork of the beautiful MMM-DarkSkyForecast but uses the <strong>pirateweather.net API since DarkSky is EOL</strong>.",
+    "description": "A weather module that displays current, hourly and daily forecast information using data from the pirateweather API.",
     "issues": 9,
     "stars": 3,
     "license": "MIT",
@@ -11118,7 +11139,7 @@
     "stars": 1,
     "license": "Apache-2.0",
     "image": "Sreenshot1.jpg",
-    "lastCommit": "2023-11-07T20:27:14-05:00"
+    "lastCommit": "2024-02-04T12:35:37-05:00"
   },
   {
     "name": "MMM-QRCode",
@@ -11296,7 +11317,7 @@
     "description": "Display a random quote from various authorship using Paperquote's API.",
     "issues": 5,
     "stars": 1,
-    "lastCommit": "2024-01-15T09:26:01+01:00"
+    "lastCommit": "2024-02-04T18:40:11+01:00"
   },
   {
     "name": "MMM-RandomQuranAyah",
@@ -12816,7 +12837,7 @@
     "maintainerURL": "",
     "description": "Static Or Rotating Tides module. Replaces/combines MMM-SimpleTides and MMM-StaticTides.",
     "issues": 6,
-    "outdated": "Abandoned. No reactions to issues since years. Missing instructions to install 'request'.",
+    "outdated": "Abandoned. No reactions to issues since years. Missing instructions to install dependency 'request'.",
     "stars": 2,
     "lastCommit": "2020-04-11T21:13:37-04:00"
   },
@@ -13093,7 +13114,7 @@
     "maintainerURL": "",
     "description": "More information than you ever wanted to know about the rising and setting of the sun.",
     "issues": 7,
-    "outdated": "Abandoned. No reactions to issues since years. Missing instructions to install 'request'.",
+    "outdated": "Abandoned. No reactions to issues since years. Missing instructions to install dependency 'request'.",
     "stars": 16,
     "lastCommit": "2020-05-22T16:29:35-04:00"
   },
@@ -15173,6 +15194,7 @@
     "maintainerURL": "",
     "description": "Nope! Not World War I. It's <strong>Weather Without Icons</strong>. Up to the minute weather. Full weather information, yet a small footprint.",
     "issues": 6,
+    "outdated": "Deprecated. DarkSky API no longer works since 2023-03-31.",
     "stars": 0,
     "lastCommit": "2018-01-21T20:55:48-05:00"
   },

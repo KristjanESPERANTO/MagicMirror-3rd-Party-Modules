@@ -526,6 +526,7 @@
     "issues": [
       "There is no `package.json`. We need this file to gather information about the module for the module list page."
     ],
+    "outdated": "Abandoned. No reactions to issues since years. Missing instructions to install dependency 'request'.",
     "stars": 5
   },
   {
@@ -562,6 +563,7 @@
     "issues": [
       "There is no `package.json`. We need this file to gather information about the module for the module list page."
     ],
+    "outdated": "Abandoned. Developer is no longer active. Missing instructions to install dependency 'request'.",
     "stars": 7
   },
   {
@@ -1033,6 +1035,7 @@
     "issues": [
       "There are no keywords in 'package.json'. We would use them as tags on the module list page."
     ],
+    "outdated": "Abandoned. Developer is no longer active. Missing instructions to install dependency 'request'.",
     "stars": 3,
     "license": "MIT",
     "image": "images-1.jpg"
@@ -1073,6 +1076,7 @@
     "issues": [
       "There is no `package.json`. We need this file to gather information about the module for the module list page."
     ],
+    "outdated": "Abandoned. No reactions to issues since years. Missing instructions to install dependency 'request'.",
     "stars": 3
   },
   {
@@ -1644,6 +1648,7 @@
     "issues": [
       "There is no `package.json`. We need this file to gather information about the module for the module list page."
     ],
+    "outdated": "Abandoned. Developer is no longer active. Missing instructions to install dependency 'request'.",
     "stars": 1
   },
   {
@@ -1837,6 +1842,7 @@
     "issues": [
       "There is no `package.json`. We need this file to gather information about the module for the module list page."
     ],
+    "outdated": "Abandoned. Developer is no longer active. Missing instructions to install dependency 'request'.",
     "stars": 1
   },
   {
@@ -1885,6 +1891,7 @@
     "issues": [
       "There is no `package.json`. We need this file to gather information about the module for the module list page."
     ],
+    "outdated": "Abandoned. No reactions to issues since years. Missing instructions to install dependency 'request'.",
     "stars": 11
   },
   {
@@ -3046,6 +3053,7 @@
     "maintainerURL": "",
     "description": "Watch the sunlit side of Earth as it rotates.",
     "issues": [],
+    "outdated": "Abandoned. Developer is no longer active. Missing instructions to install dependency 'request'.",
     "stars": 59,
     "tags": [
       "earth",
@@ -3326,9 +3334,14 @@
     "maintainerURL": "",
     "description": "Display public transport information/departure boards for any public transport in Norway.",
     "issues": [
-      "There is no `package.json`. We need this file to gather information about the module for the module list page."
+      "No compatible or wrong license field in 'package.json'. Without that, we can't use an image."
     ],
-    "stars": 15
+    "stars": 15,
+    "tags": [
+      "entur",
+      "public transport"
+    ],
+    "license": "LGPL-2.1-only"
   },
   {
     "name": "MMM-EnvCanada",
@@ -3357,6 +3370,7 @@
     "issues": [
       "There is no `package.json`. We need this file to gather information about the module for the module list page."
     ],
+    "outdated": "Abandoned. Developer is no longer active. Missing instructions to install dependency 'request'.",
     "stars": 7
   },
   {
@@ -6529,18 +6543,6 @@
   },
   {
     "name": "MMM-ISS",
-    "url": "https://github.com/mykle1/MMM-ISS",
-    "id": "mykle1/MMM-ISS",
-    "maintainer": "mykle1",
-    "maintainerURL": "",
-    "description": "Know when the International Space Station is visible from your location. Can be seen with the naked eye.",
-    "issues": [
-      "There is no `package.json`. We need this file to gather information about the module for the module list page."
-    ],
-    "stars": 16
-  },
-  {
-    "name": "MMM-ISS",
     "url": "https://github.com/daterrell/MMM-ISS",
     "id": "daterrell/MMM-ISS",
     "maintainer": "daterrell",
@@ -6550,6 +6552,19 @@
       "An error occurred while getting information from 'package.json': Error: Invalid version: \"1.0\""
     ],
     "stars": 5
+  },
+  {
+    "name": "MMM-ISS",
+    "url": "https://github.com/mykle1/MMM-ISS",
+    "id": "mykle1/MMM-ISS",
+    "maintainer": "mykle1",
+    "maintainerURL": "",
+    "description": "Know when the International Space Station is visible from your location. Can be seen with the naked eye.",
+    "issues": [
+      "There is no `package.json`. We need this file to gather information about the module for the module list page."
+    ],
+    "outdated": "Abandoned. Developer is no longer active. Missing instructions to install dependency 'request'.",
+    "stars": 16
   },
   {
     "name": "MMM-ISS-Live",
@@ -7000,6 +7015,7 @@
     "issues": [
       "There is no `package.json`. We need this file to gather information about the module for the module list page."
     ],
+    "outdated": "Abandoned. Developer is no longer active. Missing instructions to install dependency 'request'.",
     "stars": 16
   },
   {
@@ -7123,7 +7139,7 @@
     "issues": [
       "There is no `package.json`. We need this file to gather information about the module for the module list page."
     ],
-    "outdated": "Abandoned. No reactions to issues since years. Missing instructions to install 'request'.",
+    "outdated": "Abandoned. No reactions to issues since years. Missing instructions to install dependency 'request'.",
     "stars": 11
   },
   {
@@ -7370,6 +7386,7 @@
     "issues": [
       "There is no `package.json`. We need this file to gather information about the module for the module list page."
     ],
+    "outdated": "Abandoned. Developer is no longer active. Missing instructions to install dependency 'request'.",
     "stars": 2
   },
   {
@@ -7638,6 +7655,7 @@
     "issues": [
       "There is no `package.json`. We need this file to gather information about the module for the module list page."
     ],
+    "outdated": "Abandoned. No reactions to issues since years. Missing instructions to install dependency 'request'.",
     "stars": 4
   },
   {
@@ -9328,6 +9346,7 @@
     "issues": [
       "There is no `package.json`. We need this file to gather information about the module for the module list page."
     ],
+    "outdated": "Abandoned. No reactions to issues since years. Missing instructions to install dependency 'request'.",
     "stars": 12
   },
   {
@@ -9445,6 +9464,7 @@
     "issues": [
       "There is no `package.json`. We need this file to gather information about the module for the module list page."
     ],
+    "outdated": "Abandoned. No reactions to issues since years. Missing instructions to install dependency 'request'.",
     "stars": 4
   },
   {
@@ -10929,6 +10949,7 @@
     "issues": [
       "There are no keywords in 'package.json'. We would use them as tags on the module list page."
     ],
+    "outdated": "Abandoned. No reactions to issues since years. Missing instructions to install dependency 'request'.",
     "stars": 4,
     "license": "MIT",
     "image": "images-1.PNG"
@@ -11054,7 +11075,7 @@
     "id": "dankerthrone/MMM-PirateSkyForecast",
     "maintainer": "dankerthrone",
     "maintainerURL": "",
-    "description": "Almost completely unchanged fork of the beautiful MMM-DarkSkyForecast but uses the <strong>pirateweather.net API since DarkSky is EOL</strong>.",
+    "description": "A weather module that displays current, hourly and daily forecast information using data from the pirateweather API.",
     "issues": [
       "There are no keywords in 'package.json'. We would use them as tags on the module list page."
     ],
@@ -13510,7 +13531,7 @@
     "issues": [
       "There is no `package.json`. We need this file to gather information about the module for the module list page."
     ],
-    "outdated": "Abandoned. No reactions to issues since years. Missing instructions to install 'request'.",
+    "outdated": "Abandoned. No reactions to issues since years. Missing instructions to install dependency 'request'.",
     "stars": 2
   },
   {
@@ -13800,7 +13821,7 @@
     "issues": [
       "There is no `package.json`. We need this file to gather information about the module for the module list page."
     ],
-    "outdated": "Abandoned. No reactions to issues since years. Missing instructions to install 'request'.",
+    "outdated": "Abandoned. No reactions to issues since years. Missing instructions to install dependency 'request'.",
     "stars": 16
   },
   {
@@ -16003,6 +16024,7 @@
     "issues": [
       "There is no `package.json`. We need this file to gather information about the module for the module list page."
     ],
+    "outdated": "Deprecated. DarkSky API no longer works since 2023-03-31.",
     "stars": 0
   },
   {

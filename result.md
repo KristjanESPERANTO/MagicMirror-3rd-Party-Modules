@@ -1,6 +1,6 @@
 # Result of the module analysis
 
-Last update: 2024-02-04T14:08:53+01:00
+Last update: 2024-02-04T19:01:57+01:00
 
 ## Statistics
 
@@ -9,7 +9,7 @@ Last update: 2024-02-04T14:08:53+01:00
 | modules analyzed     |   1117   |
 | maintainer           |    630   |
 | modules with issues  |   1111   |
-| issues               |   7344   |
+| issues               |   7359   |
 | modules at github    |   1108   |
 | modules at gitlab    |      8   |
 | modules at bitbucket |      1   |
@@ -343,6 +343,7 @@ Last update: 2024-02-04T14:08:53+01:00
 
 ### [MMM-Astronauts by mykle1](https://github.com/mykle1/MMM-Astronauts)
 
+0. This module is outdated: Abandoned. No reactions to issues since years. Missing instructions to install dependency 'request'.
 1. There is no `package.json`. We need this file to gather information about the module for the module list page.
 2. Typo: Found `Magic Mirror` in file `MMM-Astronauts.js`: Replace it with `MagicMirror²`.
 3. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
@@ -372,6 +373,7 @@ Last update: 2024-02-04T14:08:53+01:00
 
 ### [MMM-ATM by mykle1](https://github.com/mykle1/MMM-ATM)
 
+0. This module is outdated: Abandoned. Developer is no longer active. Missing instructions to install dependency 'request'.
 1. There is no `package.json`. We need this file to gather information about the module for the module list page.
 2. Typo: Found `Magic Mirror` in file `MMM-ATM.js`: Replace it with `MagicMirror²`.
 3. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
@@ -672,6 +674,7 @@ Last update: 2024-02-04T14:08:53+01:00
 
 ### [MMM-BMI by mykle1](https://github.com/mykle1/MMM-BMI)
 
+0. This module is outdated: Abandoned. Developer is no longer active. Missing instructions to install dependency 'request'.
 1. There are no keywords in 'package.json'. We would use them as tags on the module list page.
 2. Typo: Found `Magic Mirror` in file `MMM-BMI.js`: Replace it with `MagicMirror²`.
 3. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
@@ -701,6 +704,7 @@ Last update: 2024-02-04T14:08:53+01:00
 
 ### [MMM-BMW-OW by mykle1](https://github.com/mykle1/MMM-BMW-OW)
 
+0. This module is outdated: Abandoned. No reactions to issues since years. Missing instructions to install dependency 'request'.
 1. There is no `package.json`. We need this file to gather information about the module for the module list page.
 2. Typo: Found `Magic Mirror` in file `MMM-BMW-OW.js`: Replace it with `MagicMirror²`.
 3. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
@@ -1067,6 +1071,7 @@ Last update: 2024-02-04T14:08:53+01:00
 
 ### [MMM-CARDS by mykle1](https://github.com/mykle1/MMM-CARDS)
 
+0. This module is outdated: Abandoned. Developer is no longer active. Missing instructions to install dependency 'request'.
 1. There is no `package.json`. We need this file to gather information about the module for the module list page.
 2. Typo: Found `Magic Mirror` in file `MMM-CARDS.js`: Replace it with `MagicMirror²`.
 3. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
@@ -1190,6 +1195,7 @@ Last update: 2024-02-04T14:08:53+01:00
 
 ### [MMM-Climacell-Hourly by mykle1](https://github.com/mykle1/MMM-Climacell-Hourly)
 
+0. This module is outdated: Abandoned. Developer is no longer active. Missing instructions to install dependency 'request'.
 1. There is no `package.json`. We need this file to gather information about the module for the module list page.
 2. Typo: Found `Magic Mirror` in file `MMM-Climacell-Hourly.js`: Replace it with `MagicMirror²`.
 3. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
@@ -1221,6 +1227,7 @@ Last update: 2024-02-04T14:08:53+01:00
 
 ### [MMM-Cocktails by mykle1](https://github.com/mykle1/MMM-Cocktails)
 
+0. This module is outdated: Abandoned. No reactions to issues since years. Missing instructions to install dependency 'request'.
 1. There is no `package.json`. We need this file to gather information about the module for the module list page.
 2. Typo: Found `Magic Mirror` in file `MMM-Cocktails.js`: Replace it with `MagicMirror²`.
 3. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
@@ -2014,6 +2021,7 @@ Last update: 2024-02-04T14:08:53+01:00
 
 ### [MMM-EARTH by mykle1](https://github.com/mykle1/MMM-EARTH)
 
+0. This module is outdated: Abandoned. Developer is no longer active. Missing instructions to install dependency 'request'.
 1. Typo: Found `Magic Mirror` in file `MMM-EARTH.js`: Replace it with `MagicMirror²`.
 2. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
 3. Deprecated: Found `require('request')` in file `node_helper.js`: Replace it with built-in fetch.
@@ -2163,11 +2171,9 @@ Last update: 2024-02-04T14:08:53+01:00
 
 ### [MMM-Entur-tavle by Arve](https://github.com/Arve/MMM-Entur-tavle)
 
-1. There is no `package.json`. We need this file to gather information about the module for the module list page.
-2. Recommendation: Found `'node-fetch'` in file `node_helper.js`: Replace it with built-in fetch.
-3. Recommendation: Found `"node-fetch"` in file `node_helper.js`: Replace it with built-in fetch.
-4. Recommendation: Replace eslintrc by new flat config.
-5. The branch name is 'master'. Consider renaming it to 'main'.
+1. No compatible or wrong license field in 'package.json'. Without that, we can't use an image.
+2. Recommendation: Replace eslintrc by new flat config.
+3. The branch name is 'master'. Consider renaming it to 'main'.
 
 ### [MMM-EnvCanada by CharlesMorris78](https://github.com/CharlesMorris78/MMM-EnvCanada)
 
@@ -2176,6 +2182,7 @@ Last update: 2024-02-04T14:08:53+01:00
 
 ### [MMM-EOL by mykle1](https://github.com/mykle1/MMM-EOL)
 
+0. This module is outdated: Abandoned. Developer is no longer active. Missing instructions to install dependency 'request'.
 1. There is no `package.json`. We need this file to gather information about the module for the module list page.
 2. Typo: Found `Magic Mirror` in file `MMM-EOL.js`: Replace it with `MagicMirror²`.
 3. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
@@ -4168,15 +4175,6 @@ Last update: 2024-02-04T14:08:53+01:00
 2. Typo: Found `Magic Mirror` in file `MMM-IronManGIF.js`: Replace it with `MagicMirror²`.
 3. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
 
-### [MMM-ISS by mykle1](https://github.com/mykle1/MMM-ISS)
-
-1. There is no `package.json`. We need this file to gather information about the module for the module list page.
-2. Typo: Found `Magic Mirror` in file `MMM-ISS.js`: Replace it with `MagicMirror²`.
-3. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
-4. Deprecated: Found `require('request')` in file `node_helper.js`: Replace it with built-in fetch.
-5. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
-6. The branch name is 'master'. Consider renaming it to 'main'.
-
 ### [MMM-ISS by daterrell](https://github.com/daterrell/MMM-ISS)
 
 1. An error occurred while getting information from 'package.json': Error: Invalid version: "1.0"
@@ -4188,6 +4186,16 @@ Last update: 2024-02-04T14:08:53+01:00
 7. Typo: Found `Magic Mirror` in file `package.json`: Replace it with `MagicMirror²`.
 8. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
 9. The branch name is 'master'. Consider renaming it to 'main'.
+
+### [MMM-ISS by mykle1](https://github.com/mykle1/MMM-ISS)
+
+0. This module is outdated: Abandoned. Developer is no longer active. Missing instructions to install dependency 'request'.
+1. There is no `package.json`. We need this file to gather information about the module for the module list page.
+2. Typo: Found `Magic Mirror` in file `MMM-ISS.js`: Replace it with `MagicMirror²`.
+3. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
+4. Deprecated: Found `require('request')` in file `node_helper.js`: Replace it with built-in fetch.
+5. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
+6. The branch name is 'master'. Consider renaming it to 'main'.
 
 ### [MMM-ISY by shbatm](https://github.com/shbatm/MMM-ISY)
 
@@ -4474,6 +4482,7 @@ Last update: 2024-02-04T14:08:53+01:00
 
 ### [MMM-Launch by mykle1](https://github.com/mykle1/MMM-Launch)
 
+0. This module is outdated: Abandoned. Developer is no longer active. Missing instructions to install dependency 'request'.
 1. There is no `package.json`. We need this file to gather information about the module for the module list page.
 2. Typo: Found `Magic Mirror` in file `MMM-Launch.js`: Replace it with `MagicMirror²`.
 3. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
@@ -4543,7 +4552,7 @@ Last update: 2024-02-04T14:08:53+01:00
 
 ### [MMM-LICE by mykle1](https://github.com/mykle1/MMM-LICE)
 
-0. This module is outdated: Abandoned. No reactions to issues since years. Missing instructions to install 'request'.
+0. This module is outdated: Abandoned. No reactions to issues since years. Missing instructions to install dependency 'request'.
 1. There is no `package.json`. We need this file to gather information about the module for the module list page.
 2. Typo: Found `Magic Mirror` in file `MMM-LICE.js`: Replace it with `MagicMirror²`.
 3. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
@@ -4723,6 +4732,7 @@ Last update: 2024-02-04T14:08:53+01:00
 
 ### [MMM-Lottery by mykle1](https://github.com/mykle1/MMM-Lottery)
 
+0. This module is outdated: Abandoned. Developer is no longer active. Missing instructions to install dependency 'request'.
 1. There is no `package.json`. We need this file to gather information about the module for the module list page.
 2. Typo: Found `Magic Mirror` in file `MMM-Lottery.js`: Replace it with `MagicMirror²`.
 3. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
@@ -4918,6 +4928,7 @@ Last update: 2024-02-04T14:08:53+01:00
 
 ### [MMM-MARS by mykle1](https://github.com/mykle1/MMM-MARS)
 
+0. This module is outdated: Abandoned. No reactions to issues since years. Missing instructions to install dependency 'request'.
 1. There is no `package.json`. We need this file to gather information about the module for the module list page.
 2. Typo: Found `Magic Mirror` in file `MMM-MARS.js`: Replace it with `MagicMirror²`.
 3. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
@@ -6077,6 +6088,7 @@ Last update: 2024-02-04T14:08:53+01:00
 
 ### [MMM-NASA by mykle1](https://github.com/mykle1/MMM-NASA)
 
+0. This module is outdated: Abandoned. No reactions to issues since years. Missing instructions to install dependency 'request'.
 1. There is no `package.json`. We need this file to gather information about the module for the module list page.
 2. Typo: Found `Magic Mirror` in file `MMM-NASA.js`: Replace it with `MagicMirror²`.
 3. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
@@ -6153,6 +6165,7 @@ Last update: 2024-02-04T14:08:53+01:00
 
 ### [MMM-NEO by mykle1](https://github.com/mykle1/MMM-NEO)
 
+0. This module is outdated: Abandoned. No reactions to issues since years. Missing instructions to install dependency 'request'.
 1. There is no `package.json`. We need this file to gather information about the module for the module list page.
 2. Typo: Found `Magic Mirror` in file `MMM-NEO.js`: Replace it with `MagicMirror²`.
 3. Recommendation: Found `new Date()` in file `MMM-NEO.js`: Replace it by `new Date(Date.now())`: [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
@@ -7155,6 +7168,7 @@ Last update: 2024-02-04T14:08:53+01:00
 
 ### [MMM-PilotWX by mykle1](https://github.com/mykle1/MMM-PilotWX)
 
+0. This module is outdated: Abandoned. No reactions to issues since years. Missing instructions to install dependency 'request'.
 1. There are no keywords in 'package.json'. We would use them as tags on the module list page.
 2. Typo: Found `Magic Mirror` in file `MMM-PilotWX.js`: Replace it with `MagicMirror²`.
 3. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
@@ -8876,7 +8890,7 @@ Last update: 2024-02-04T14:08:53+01:00
 
 ### [MMM-SORT by mykle1](https://github.com/mykle1/MMM-SORT)
 
-0. This module is outdated: Abandoned. No reactions to issues since years. Missing instructions to install 'request'.
+0. This module is outdated: Abandoned. No reactions to issues since years. Missing instructions to install dependency 'request'.
 1. There is no `package.json`. We need this file to gather information about the module for the module list page.
 2. Typo: Found `Magic Mirror` in file `MMM-SORT.js`: Replace it with `MagicMirror²`.
 3. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
@@ -9074,7 +9088,7 @@ Last update: 2024-02-04T14:08:53+01:00
 
 ### [MMM-SunRiseSet by mykle1](https://github.com/mykle1/MMM-SunRiseSet)
 
-0. This module is outdated: Abandoned. No reactions to issues since years. Missing instructions to install 'request'.
+0. This module is outdated: Abandoned. No reactions to issues since years. Missing instructions to install dependency 'request'.
 1. There is no `package.json`. We need this file to gather information about the module for the module list page.
 2. Typo: Found `Magic Mirror` in file `MMM-SunRiseSet.js`: Replace it with `MagicMirror²`.
 3. Recommendation: Found `new Date()` in file `MMM-SunRiseSet.js`: Replace it by `new Date(Date.now())`: [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
@@ -10534,6 +10548,7 @@ Last update: 2024-02-04T14:08:53+01:00
 
 ### [MMM-WWI by mykle1](https://github.com/mykle1/MMM-WWI)
 
+0. This module is outdated: Deprecated. DarkSky API no longer works since 2023-03-31.
 1. There is no `package.json`. We need this file to gather information about the module for the module list page.
 2. Typo: Found `Magic Mirror` in file `MMM-WWI.js`: Replace it with `MagicMirror²`.
 3. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
