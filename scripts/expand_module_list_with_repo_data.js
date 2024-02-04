@@ -127,7 +127,8 @@ async function addInformationFromPackageJson (moduleList) {
           "GPL-3.0-only",
           "GPL-3.0-or-later",
           "ISC",
-          "MIT"
+          "MIT",
+          "LGPL-2.1-only"
         ];
         if (useableLicenses.includes(moduleData.license)) {
           const {targetImageName, issues} = await findAndResizeImage(
