@@ -32,7 +32,7 @@
     "husky": "latest",
     "lint-staged": "latest",
     "markdownlint-cli": "latest",
-    "prettier": "^3.2.4",
+    "prettier": "^3.2.5",
     "stylelint": "latest",
     "stylelint-config-standard": "latest",
     "stylelint-prettier": "latest"
@@ -48,7 +48,7 @@
     "ownList": "rm -rf modules & node create_own_module_list.js && npm run getModules && npm run expandModuleList && npm run checkModules",
     "lint": "eslint . && stylelint **/docs/*.css && markdownlint README.md && prettier --check .",
     "lint:fix": "eslint . --fix && stylelint **/docs/*.css --fix && markdownlint README.md --fix && prettier . --write",
-    "prepare": "husky",
+    "prepare": "husky install",
     "test": "npm run lint",
     "leaveMenu": ""
   },
@@ -73,7 +73,7 @@
     "*": "prettier --ignore-unknown --write"
   },
   "dependencies": {
-    "marked": "^11.2.0",
+    "marked": "^12.0.0",
     "normalize-package-data": "^6.0.0",
     "npm-check-updates": "^16.14.14",
     "ntl": "^5.1.0",
