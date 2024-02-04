@@ -925,9 +925,9 @@
     "maintainer": "jschless",
     "maintainerURL": "https://github.com/jschless",
     "description": "Displays the number of available bikes at selected stations of the Boston public bike system (Bluebikes).",
-    "issues": 7,
+    "issues": 6,
     "stars": 0,
-    "lastCommit": "2020-07-11T10:35:50-04:00"
+    "lastCommit": "2024-02-04T14:16:15-05:00"
   },
   {
     "name": "MMM-Bluelinky",
@@ -8447,7 +8447,7 @@
     ],
     "license": "MIT",
     "image": "assets-example.jpg",
-    "lastCommit": "2023-12-18T02:45:29+01:00"
+    "lastCommit": "2024-02-04T20:48:07+01:00"
   },
   {
     "name": "MMM-MyCalendar",
@@ -11315,10 +11315,15 @@
     "id": "Jacopo1891/MMM-RandomQuotes",
     "maintainer": "Jacopo1891",
     "maintainerURL": "https://github.com/jacopo1891",
-    "description": "Display a random quote from various authorship using Paperquote's API.",
-    "issues": 5,
+    "description": "Display a random quote from various authorship using Ninjas API.",
+    "issues": 2,
     "stars": 1,
-    "lastCommit": "2024-02-04T18:40:11+01:00"
+    "tags": [
+      "quotes"
+    ],
+    "license": "MIT",
+    "image": "screen-01-quote_apex.jpg",
+    "lastCommit": "2024-02-04T23:46:17+01:00"
   },
   {
     "name": "MMM-RandomQuranAyah",
@@ -13900,9 +13905,9 @@
     "maintainer": "bnitkin",
     "maintainerURL": "https://github.com/bnitkin",
     "description": "Upcoming departures for any transit agencies that publishes GTFS.",
-    "issues": 6,
+    "issues": 5,
     "stars": 2,
-    "lastCommit": "2024-01-19T08:11:51-05:00"
+    "lastCommit": "2024-02-04T15:43:07-05:00"
   },
   {
     "name": "MMM-TranslatedMessages",

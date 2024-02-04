@@ -1,6 +1,6 @@
 # Result of the module analysis
 
-Last update: 2024-02-04T19:16:59+01:00
+Last update: 2024-02-05T00:01:17+01:00
 
 ## Statistics
 
@@ -9,7 +9,7 @@ Last update: 2024-02-04T19:16:59+01:00
 | modules analyzed     |   1117   |
 | maintainer           |    630   |
 | modules with issues  |   1111   |
-| issues               |   7358   |
+| issues               |   7353   |
 | modules at github    |   1108   |
 | modules at gitlab    |      8   |
 | modules at bitbucket |      1   |
@@ -639,9 +639,8 @@ Last update: 2024-02-04T19:16:59+01:00
 2. Typo: Found `Magic Mirror` in file `MMM-Bluebikes.js`: Replace it with `MagicMirror²`.
 3. Recommendation: Found `XMLHttpRequest` in file `MMM-Bluebikes.js`: Replace it with built-in fetch.
 4. Outdated: Found `MichMich/MagicMirror` in file `README.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
-5. Warning: No LICENSE file.
-6. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
-7. The branch name is 'master'. Consider renaming it to 'main'.
+5. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
+6. The branch name is 'master'. Consider renaming it to 'main'.
 
 ### [MMM-Bluelinky by Cyw00d](https://github.com/Cyw00d/MMM-Bluelinky)
 
@@ -7805,11 +7804,8 @@ Last update: 2024-02-04T19:16:59+01:00
 
 ### [MMM-RandomQuotes by Jacopo1891](https://github.com/Jacopo1891/MMM-RandomQuotes)
 
-1. There is no `package.json`. We need this file to gather information about the module for the module list page.
-2. Recommendation: Found `"node-fetch"` in file `node_helper.js`: Replace it with built-in fetch.
-3. Warning: No LICENSE file.
-4. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
-5. The branch name is 'master'. Consider renaming it to 'main'.
+1. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
+2. The branch name is 'master'. Consider renaming it to 'main'.
 
 ### [MMM-RandomQuranAyah by slametps](https://github.com/slametps/MMM-RandomQuranAyah)
 
@@ -9619,8 +9615,7 @@ Last update: 2024-02-04T19:16:59+01:00
 2. Typo: Found `Magic Mirror` in file `MMM-transitfeed.js`: Replace it with `MagicMirror²`.
 3. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
 4. Recommendation: Found `new Date()` in file `node_helper.js`: Replace it by `new Date(Date.now())`: [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
-5. Warning: No LICENSE file.
-6. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
+5. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
 
 ### [MMM-TranslatedMessages by ahmedwab](https://github.com/ahmedwab/MMM-TranslatedMessages)
 

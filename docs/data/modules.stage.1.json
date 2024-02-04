@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "2024-02-04T17:52:03.339Z",
+  "lastUpdate": "2024-02-04T22:51:28.759Z",
   "modules": [
     {
       "name": "MMM-01ZM",
@@ -7445,7 +7445,7 @@
       "id": "Jacopo1891/MMM-RandomQuotes",
       "maintainer": "Jacopo1891",
       "maintainerURL": "https://github.com/jacopo1891",
-      "description": "Display a random quote from various authorship using Paperquote's API.",
+      "description": "Display a random quote from various authorship using Ninjas API.",
       "issues": []
     },
     {

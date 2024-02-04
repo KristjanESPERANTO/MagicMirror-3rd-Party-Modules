@@ -11930,11 +11930,14 @@
     "id": "Jacopo1891/MMM-RandomQuotes",
     "maintainer": "Jacopo1891",
     "maintainerURL": "https://github.com/jacopo1891",
-    "description": "Display a random quote from various authorship using Paperquote's API.",
-    "issues": [
-      "There is no `package.json`. We need this file to gather information about the module for the module list page."
+    "description": "Display a random quote from various authorship using Ninjas API.",
+    "issues": [],
+    "stars": 1,
+    "tags": [
+      "quotes"
     ],
-    "stars": 1
+    "license": "MIT",
+    "image": "screen-01-quote_apex.jpg"
   },
   {
     "name": "MMM-RandomQuranAyah",
