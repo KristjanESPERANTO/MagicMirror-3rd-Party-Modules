@@ -103,6 +103,41 @@ async function updateData () {
           results.push(existingRepository);
         }
       }
+
+      // Quick-and-dirty way to include the number of stars for non-GitHub repositories.
+      if (!module.url.includes("github.com")) {
+        switch (module.name) {
+          case "MMM-bergfex":
+            module.stars = 1;
+            break;
+          case "MMM-Flights":
+            module.stars = 2;
+            break;
+          case "MMM-InstagramView":
+            module.stars = 1;
+            break;
+          case "mmm-ratp":
+            module.stars = 2;
+            break;
+          case "MMM-NCTtimes":
+            module.stars = 1;
+            break;
+          case "MMM-RecyclingCalendar":
+            module.stars = 1;
+            break;
+          case "MMM-RepoStats":
+            module.stars = 2;
+            break;
+          case "MMM-YouTubeWebView":
+            module.stars = 1;
+            break;
+          default:
+            module.stars = 1;
+            break;
+        }
+        // Since far fewer users have accounts with non-GitHub hosts, repos get a small star boost.
+        module.stars *= 3;
+      }
     }
 
     const updateInfo = {
