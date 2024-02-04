@@ -770,6 +770,7 @@
     "maintainerURL": "",
     "description": "Displays snow reports from bergfex.at, forked version. Countries provided by bergfex.at can be configured and set.",
     "issues": 3,
+    "stars": 3,
     "tags": [
       "bergfex",
       "weather",
@@ -852,10 +853,11 @@
     "maintainer": "amitchone",
     "maintainerURL": "https://github.com/amitchone",
     "description": "A simple, lightweight birthday reminder - specified either via simple JSON file or in <code>config.js</code>. Supports multiple languages.",
-    "issues": 4,
+    "issues": 3,
     "stars": 7,
     "license": "Apache-2.0",
-    "lastCommit": "2024-01-21T15:57:24+00:00"
+    "image": "example.jpg",
+    "lastCommit": "2024-02-03T21:57:39+00:00"
   },
   {
     "name": "MMM-bitcoin",
@@ -1309,7 +1311,7 @@
     "maintainer": "MMM-CalendarExt2",
     "maintainerURL": "",
     "description": "Extended calendar and event view.",
-    "issues": 1,
+    "issues": 2,
     "stars": 88,
     "tags": [
       "calendar"
@@ -4235,6 +4237,7 @@
     "maintainerURL": "https://gitlab.com/karsten13",
     "description": "Displays current flights in a defined area with a map containing the plane positions.",
     "issues": 4,
+    "stars": 6,
     "tags": [
       "flight",
       "tracking",
@@ -6068,6 +6071,7 @@
     "maintainerURL": "https://github.com/doctorfree",
     "description": "Display your Instagram photos, videos, multiple media postings, and post description. Makes use of the Facebook Instagram Graph API.",
     "issues": 7,
+    "stars": 3,
     "tags": [
       "instagram",
       "entertainment"
@@ -6245,7 +6249,7 @@
     ],
     "license": "MIT",
     "image": "images-i1.jpg",
-    "lastCommit": "2024-01-08T04:24:39+01:00"
+    "lastCommit": "2024-02-04T12:43:30+01:00"
   },
   {
     "name": "MMM-ISY",
@@ -7374,6 +7378,7 @@
     "maintainerURL": "",
     "description": "Display Swedish name of day.",
     "issues": 3,
+    "stars": 0,
     "lastCommit": "2020-12-29T14:51:40+01:00"
   },
   {
@@ -7773,6 +7778,7 @@
     "maintainerURL": "https://gitlab.com/closingin",
     "description": "Display next passing times and traffic information from the RATP for Metros, RERs, and Tramways of Paris, France. Fully featured.",
     "issues": 9,
+    "stars": 6,
     "license": "GPLv3",
     "lastCommit": "2021-05-27T13:07:01+00:00"
   },
@@ -7866,6 +7872,7 @@
     "maintainerURL": "https://bitbucket.org/rsperezn",
     "description": "Displays the current and forecasted UV Index for a given location given its longitude and latitude. It requires a free API token from <a target=\"_blank\" href=\"https://www.openuv.io/\">https://www.openuv.io/</a>.",
     "issues": 8,
+    "stars": 3,
     "lastCommit": "2019-12-14T21:46:27+11:00"
   },
   {
@@ -8908,6 +8915,7 @@
     "maintainerURL": "",
     "description": "Displays bus information for the Nottingham bus company, NCT.",
     "issues": 6,
+    "stars": 3,
     "tags": [
       "nct",
       "buses"
@@ -9486,7 +9494,7 @@
     "maintainerURL": "",
     "description": "Display the song you are currently listening to on Spotify.",
     "issues": 9,
-    "outdated": "Abandoned. No reactions to issues since years. No installation instructions. It no longer seems to work.",
+    "outdated": "Abandoned. No reactions to issues since years. Depends on deprecated modules. MMM-OnSpotify is an alternative.",
     "stars": 204,
     "tags": [
       "spotify"
@@ -10256,14 +10264,16 @@
     "maintainer": "mumblebaj",
     "maintainerURL": "https://github.com/mcl8on",
     "description": "Displays PGA tournaments scores.",
-    "issues": 14,
+    "issues": 15,
     "stars": 1,
     "tags": [
-      "pga"
+      "pga",
+      "golf",
+      "sport"
     ],
     "license": "ISC",
     "image": "images-screenshot-1.jpg",
-    "lastCommit": "2024-01-30T18:37:35+02:00"
+    "lastCommit": "2024-02-03T15:52:24+02:00"
   },
   {
     "name": "MMM-PGHBus",
@@ -11373,6 +11383,7 @@
     "maintainerURL": "https://gitlab.com/FatTony404",
     "description": "Displays recycling calendar data from Stadt Z\u00fcrich, Switzerland.",
     "issues": 4,
+    "stars": 3,
     "tags": [
       "recycling",
       "zurich"
@@ -11445,6 +11456,17 @@
     "lastCommit": "2023-11-08T23:51:37+01:00"
   },
   {
+    "name": "MMM-RelativeTime-i18n",
+    "url": "https://github.com/buxxi/MMM-RelativeTime-i18n",
+    "id": "buxxi/MMM-RelativeTime-i18n",
+    "maintainer": "buxxi",
+    "maintainerURL": "",
+    "description": "Module that makes it possible to customize all the relative times in the default module (and others) that depend on moment.js",
+    "issues": 4,
+    "stars": 0,
+    "lastCommit": "2023-11-16T21:46:40+01:00"
+  },
+  {
     "name": "MMM-Remote-Control",
     "url": "https://github.com/Jopyth/MMM-Remote-Control",
     "id": "Jopyth/MMM-Remote-Control",
@@ -11508,6 +11530,7 @@
     "maintainerURL": "https://gitlab.com/karsten13",
     "description": "Shows repository statistics for DockerHub, GitHub and GitLab.",
     "issues": 7,
+    "stars": 6,
     "tags": [
       "dockerhub",
       "docker",
@@ -11737,6 +11760,19 @@
     "issues": 6,
     "stars": 9,
     "lastCommit": "2017-12-13T22:12:41-05:00"
+  },
+  {
+    "name": "MMM-RouterClients",
+    "url": "https://github.com/buxxi/MMM-RouterClients",
+    "id": "buxxi/MMM-RouterClients",
+    "maintainer": "buxxi",
+    "maintainerURL": "",
+    "description": "Displays a list of clients connected to your router.",
+    "issues": 4,
+    "stars": 0,
+    "license": "MIT",
+    "image": "screenshot.jpg",
+    "lastCommit": "2024-02-04T11:30:32+01:00"
   },
   {
     "name": "MMM-ROVA-trashcalendar",
@@ -12478,7 +12514,7 @@
     "description": "Module that uses an external source for motion detection, like a web camera .",
     "issues": 6,
     "stars": 11,
-    "lastCommit": "2023-05-26T17:22:16-05:00"
+    "lastCommit": "2024-02-02T22:25:01-07:00"
   },
   {
     "name": "MMM-Smappee",
@@ -13071,11 +13107,13 @@
     "issues": 3,
     "stars": 3,
     "tags": [
-      "sweepclock station clock"
+      "clock",
+      "sweepclock",
+      "station clock"
     ],
     "license": "ISC",
     "image": "image.jpg",
-    "lastCommit": "2023-12-13T16:05:41+02:00"
+    "lastCommit": "2024-02-03T14:28:02+02:00"
   },
   {
     "name": "MMM-Swipe",
@@ -13085,6 +13123,7 @@
     "maintainerURL": "",
     "description": "Uses 2 HC-SR04 ultrasonic sensors to determing hand position to produce a \"Swipe Left\", \"Swipe Right\", or \"Press\".",
     "issues": 13,
+    "stars": 1,
     "tags": [
       "hand gestures",
       "swipe",
@@ -13185,6 +13224,7 @@
     "maintainerURL": "",
     "description": "API for sending notifications to your mirror.",
     "issues": 9,
+    "stars": 0,
     "lastCommit": "2020-03-17T00:03:10+01:00"
   },
   {
@@ -15294,6 +15334,7 @@
     "maintainerURL": "https://github.com/doctorfree",
     "description": "Embed YouTube videos and playlists using the Electron webview tag rather than an iframe. May assist access to YouTube videos blocked in an iframe.",
     "issues": 4,
+    "stars": 3,
     "tags": [
       "webview"
     ],

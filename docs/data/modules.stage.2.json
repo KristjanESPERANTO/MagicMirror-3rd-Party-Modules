@@ -546,7 +546,8 @@
     "maintainer": "FatTony404",
     "maintainerURL": "",
     "description": "Displays snow reports from bergfex.at, forked version. Countries provided by bergfex.at can be configured and set.",
-    "issues": []
+    "issues": [],
+    "stars": 3
   },
   {
     "name": "MMM-bernwordclock",
@@ -3099,7 +3100,8 @@
     "maintainer": "khassel",
     "maintainerURL": "https://gitlab.com/karsten13",
     "description": "Displays current flights in a defined area with a map containing the plane positions.",
-    "issues": []
+    "issues": [],
+    "stars": 6
   },
   {
     "name": "MMM-FlightsAbove",
@@ -4424,7 +4426,8 @@
     "maintainer": "doctorfree",
     "maintainerURL": "https://github.com/doctorfree",
     "description": "Display your Instagram photos, videos, multiple media postings, and post description. Makes use of the Facebook Instagram Graph API.",
-    "issues": []
+    "issues": [],
+    "stars": 3
   },
   {
     "name": "MMM-Insults",
@@ -5389,7 +5392,8 @@
     "maintainer": "andersarstrand",
     "maintainerURL": "",
     "description": "Display Swedish name of day.",
-    "issues": []
+    "issues": [],
+    "stars": 0
   },
   {
     "name": "MMM-MensaMax",
@@ -5701,7 +5705,8 @@
     "maintainer": "closingin",
     "maintainerURL": "https://gitlab.com/closingin",
     "description": "Display next passing times and traffic information from the RATP for Metros, RERs, and Tramways of Paris, France. Fully featured.",
-    "issues": []
+    "issues": [],
+    "stars": 6
   },
   {
     "name": "mmm-stocks",
@@ -5770,7 +5775,8 @@
     "maintainer": "rsperezn",
     "maintainerURL": "https://bitbucket.org/rsperezn",
     "description": "Displays the current and forecasted UV Index for a given location given its longitude and latitude. It requires a free API token from <a target=\"_blank\" href=\"https://www.openuv.io/\">https://www.openuv.io/</a>.",
-    "issues": []
+    "issues": [],
+    "stars": 3
   },
   {
     "name": "mmm-weatherchart",
@@ -6521,7 +6527,8 @@
     "maintainer": "dnmmrdr1",
     "maintainerURL": "",
     "description": "Displays bus information for the Nottingham bus company, NCT.",
-    "issues": []
+    "issues": [],
+    "stars": 3
   },
   {
     "name": "MMM-NearCompliments",
@@ -6915,7 +6922,7 @@
     "maintainerURL": "",
     "description": "Display the song you are currently listening to on Spotify.",
     "issues": [],
-    "outdated": "Abandoned. No reactions to issues since years. No installation instructions. It no longer seems to work.",
+    "outdated": "Abandoned. No reactions to issues since years. Depends on deprecated modules. MMM-OnSpotify is an alternative.",
     "stars": 204
   },
   {
@@ -8310,7 +8317,8 @@
     "maintainer": "FatTony404",
     "maintainerURL": "https://gitlab.com/FatTony404",
     "description": "Displays recycling calendar data from Stadt Zürich, Switzerland.",
-    "issues": []
+    "issues": [],
+    "stars": 3
   },
   {
     "name": "MMM-Reddit",
@@ -8363,6 +8371,16 @@
     "stars": 2
   },
   {
+    "name": "MMM-RelativeTime-i18n",
+    "url": "https://github.com/buxxi/MMM-RelativeTime-i18n",
+    "id": "buxxi/MMM-RelativeTime-i18n",
+    "maintainer": "buxxi",
+    "maintainerURL": "",
+    "description": "Module that makes it possible to customize all the relative times in the default module (and others) that depend on moment.js",
+    "issues": [],
+    "stars": 0
+  },
+  {
     "name": "MMM-Remote-Control",
     "url": "https://github.com/Jopyth/MMM-Remote-Control",
     "id": "Jopyth/MMM-Remote-Control",
@@ -8409,7 +8427,8 @@
     "maintainer": "khassel",
     "maintainerURL": "https://gitlab.com/karsten13",
     "description": "Shows repository statistics for DockerHub, GitHub and GitLab.",
-    "issues": []
+    "issues": [],
+    "stars": 6
   },
   {
     "name": "MMM-RepRapFirmware",
@@ -8562,6 +8581,16 @@
     "description": "Displays the Rotten Tomatoes meter score for the current box office and movies coming soon.",
     "issues": [],
     "stars": 9
+  },
+  {
+    "name": "MMM-RouterClients",
+    "url": "https://github.com/buxxi/MMM-RouterClients",
+    "id": "buxxi/MMM-RouterClients",
+    "maintainer": "buxxi",
+    "maintainerURL": "",
+    "description": "Displays a list of clients connected to your router.",
+    "issues": [],
+    "stars": 0
   },
   {
     "name": "MMM-ROVA-trashcalendar",
@@ -9547,7 +9576,8 @@
     "maintainer": "Simon089",
     "maintainerURL": "",
     "description": "Uses 2 HC-SR04 ultrasonic sensors to determing hand position to produce a \"Swipe Left\", \"Swipe Right\", or \"Press\".",
-    "issues": []
+    "issues": [],
+    "stars": 1
   },
   {
     "name": "MMM-SwissCommute",
@@ -9616,7 +9646,8 @@
     "maintainer": "marcinomen",
     "maintainerURL": "",
     "description": "API for sending notifications to your mirror.",
-    "issues": []
+    "issues": [],
+    "stars": 0
   },
   {
     "name": "MMM-SystemMonitor",
@@ -11152,7 +11183,8 @@
     "maintainer": "doctorfree",
     "maintainerURL": "https://github.com/doctorfree",
     "description": "Embed YouTube videos and playlists using the Electron webview tag rather than an iframe. May assist access to YouTube videos blocked in an iframe.",
-    "issues": []
+    "issues": [],
+    "stars": 3
   },
   {
     "name": "MMM-YrNow",

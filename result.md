@@ -1,16 +1,16 @@
 # Result of the module analysis
 
-Last update: 2024-02-02T21:49:42+01:00
+Last update: 2024-02-04T14:08:53+01:00
 
 ## Statistics
 
 |                      | number   |
 |:---------------------|:--------:|
-| modules analyzed     |   1115   |
+| modules analyzed     |   1117   |
 | maintainer           |    630   |
-| modules with issues  |   1109   |
-| issues               |   7335   |
-| modules at github    |   1106   |
+| modules with issues  |   1111   |
+| issues               |   7344   |
+| modules at github    |   1108   |
 | modules at gitlab    |      8   |
 | modules at bitbucket |      1   |
 
@@ -586,8 +586,7 @@ Last update: 2024-02-02T21:49:42+01:00
 
 1. `package.json` issue: No repository field.
 2. There are no keywords in 'package.json'. We would use them as tags on the module list page.
-3. No image found.
-4. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
+3. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
 
 ### [MMM-bitcoin by valmassoi](https://github.com/valmassoi/MMM-bitcoin)
 
@@ -753,13 +752,14 @@ Last update: 2024-02-02T21:49:42+01:00
 ### [MMM-BoschSmartHome by jalibu](https://github.com/jalibu/MMM-BoschSmartHome)
 
 1. Recommendation: Replace eslintrc by new flat config.
-2. Information: There are updates for 7 dependencie(s):
+2. Information: There are updates for 8 dependencie(s):
    - @stylistic/eslint-plugin             ^1.5.3  →     ^1.5.4
    - @types/express                     ^4.17.11  →   ^4.17.21
    - @types/magicmirror-module           ^2.16.0  →    ^2.16.5
    - @types/node                       ^14.14.22  →  ^20.11.16
    - @typescript-eslint/eslint-plugin    ^6.19.1  →    ^6.20.0
    - @typescript-eslint/parser           ^6.19.1  →    ^6.20.0
+   - prettier                             ^3.2.4  →     ^3.2.5
    - rxjs                                 ^7.5.5  →     ^7.8.1
 
 
@@ -924,6 +924,13 @@ Last update: 2024-02-02T21:49:42+01:00
 ### [MMM-CalendarExt2 by MMM-CalendarExt2](https://github.com/MMM-CalendarExt2/MMM-CalendarExt2)
 
 1. Recommendation: Replace eslintrc by new flat config.
+2. Information: There are updates for 5 dependencie(s):
+   - eslint-plugin-jsonc     ^2.11.2  →  ^2.13.0
+   - eslint-plugin-prettier   ^5.1.2  →   ^5.1.3
+   - moment-timezone         ^0.5.44  →  ^0.5.45
+   - prettier                 ^3.1.1  →   ^3.2.5
+   - stylelint               ^16.1.0  →  ^16.2.1
+
 
 ### [MMM-CalendarExt3 by MMRIZE](https://github.com/MMRIZE/MMM-CalendarExt3)
 
@@ -6545,7 +6552,7 @@ Last update: 2024-02-02T21:49:42+01:00
 
 ### [MMM-NowPlayingOnSpotify by raywo](https://github.com/raywo/MMM-NowPlayingOnSpotify)
 
-0. This module is outdated: Abandoned. No reactions to issues since years. No installation instructions. It no longer seems to work.
+0. This module is outdated: Abandoned. No reactions to issues since years. Depends on deprecated modules. MMM-OnSpotify is an alternative.
 1. Recommendation: Found `jshint` in file `.gitignore`: Replace "jshint" by "eslint".
 2. Typo: Found `<sup>2</sup>` in file `README.md`: Replace it with `²`.`.
 3. Outdated: Found `MichMich/MagicMirror` in file `README.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
@@ -7080,20 +7087,21 @@ Last update: 2024-02-02T21:49:42+01:00
 
 ### [MMM-PGA by mumblebaj](https://github.com/mumblebaj/MMM-PGA)
 
-1. Deprecated: Found `require('request')` in file `ESPN.js`: Replace it with built-in fetch.
-2. Deprecated: Found `require('request')` in file `FEDEXCUP.js`: Replace it with built-in fetch.
+1. Recommendation: Found `'node-fetch'` in file `ESPN.js`: Replace it with built-in fetch.
+2. Recommendation: Found `'node-fetch'` in file `FEDEXCUP.js`: Replace it with built-in fetch.
 3. Typo: Found `Magic Mirror` in file `MMM-PGA.js`: Replace it with `MagicMirror²`.
 4. Recommendation: Found `XMLHttpRequest` in file `MMM-PGA.js`: Replace it with built-in fetch.
-5. Deprecated: Found `require('request')` in file `OWGR.js`: Replace it with built-in fetch.
+5. Recommendation: Found `'node-fetch'` in file `OWGR.js`: Replace it with built-in fetch.
 6. Typo: Found `Magic Mirror` in file `README.md`: Replace it with `MagicMirror²`.
 7. Outdated: Found `MichMich/MagicMirror` in file `README.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
 8. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
 9. Deprecated: Found `require('request')` in file `node_helper.js`: Replace it with built-in fetch.
-10. Outdated: Found `MichMich/MagicMirror` in file `package.json`: Replace it by `MagicMirrorOrg/MagicMirror`.
-11. Recommendation: Found `XMLHttpRequest` in file `favorites.js`: Replace it with built-in fetch.
-12. Recommendation: Found `new Date()` in file `favorites.js`: Replace it by `new Date(Date.now())`: [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
-13. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
-14. The branch name is 'master'. Consider renaming it to 'main'.
+10. Recommendation: Found `"node-fetch"` in file `package.json`: Replace it with built-in fetch.
+11. Outdated: Found `MichMich/MagicMirror` in file `package.json`: Replace it by `MagicMirrorOrg/MagicMirror`.
+12. Recommendation: Found `XMLHttpRequest` in file `favorites.js`: Replace it with built-in fetch.
+13. Recommendation: Found `new Date()` in file `favorites.js`: Replace it by `new Date(Date.now())`: [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
+14. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
+15. The branch name is 'master'. Consider renaming it to 'main'.
 
 ### [MMM-PGHBus by yuhanx0728](https://github.com/yuhanx0728/MMM-PGHBus)
 
@@ -7911,6 +7919,13 @@ Last update: 2024-02-02T21:49:42+01:00
 4. Outdated: Found `MichMich/MagicMirror` in file `README.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
 5. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
 
+### [MMM-RelativeTime-i18n by buxxi](https://github.com/buxxi/MMM-RelativeTime-i18n)
+
+1. There is no `package.json`. We need this file to gather information about the module for the module list page.
+2. Typo: Found `Magic Mirror` in file `README.md`: Replace it with `MagicMirror²`.
+3. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
+4. The branch name is 'master'. Consider renaming it to 'main'.
+
 ### [MMM-Remote-Control by Jopyth](https://github.com/Jopyth/MMM-Remote-Control)
 
 1. Recommendation: Found `jshint` in file `api.js`: Replace "jshint" by "eslint".
@@ -8127,6 +8142,13 @@ Last update: 2024-02-02T21:49:42+01:00
 4. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
 5. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
 6. The branch name is 'master'. Consider renaming it to 'main'.
+
+### [MMM-RouterClients by buxxi](https://github.com/buxxi/MMM-RouterClients)
+
+1. There are no keywords in 'package.json'. We would use them as tags on the module list page.
+2. Typo: Found `Magic Mirror` in file `README.md`: Replace it with `MagicMirror²`.
+3. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
+4. The branch name is 'master'. Consider renaming it to 'main'.
 
 ### [MMM-ROVA-trashcalendar by jeroenpeters1986](https://github.com/jeroenpeters1986/MMM-ROVA-trashcalendar)
 

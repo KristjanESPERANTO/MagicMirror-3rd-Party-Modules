@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "2024-02-02T20:39:46.963Z",
+  "lastUpdate": "2024-02-04T12:59:04.761Z",
   "repositories": [
     {
       "id": "rubinho101/MMM-01ZM",
@@ -6918,6 +6918,19 @@
       }
     },
     {
+      "id": "andersarstrand/MMM-Meniny",
+      "gitHubDataLastUpdate": "2024-02-04T12:57:04.189Z",
+      "gitHubData": {
+        "issues": 0,
+        "stars": 0,
+        "license": "MIT",
+        "archived": false,
+        "disabled": false,
+        "defaultBranch": "master",
+        "lastCommit": "2020-12-29T13:51:40Z"
+      }
+    },
+    {
       "id": "fuerst/MMM-MensaMax",
       "gitHubDataLastUpdate": "2024-02-01T21:48:20.981Z",
       "gitHubData": {
@@ -10714,6 +10727,19 @@
       }
     },
     {
+      "id": "buxxi/MMM-RelativeTime-i18n",
+      "gitHubDataLastUpdate": "2024-02-04T12:59:04.220Z",
+      "gitHubData": {
+        "issues": 0,
+        "stars": 0,
+        "license": "MIT",
+        "archived": false,
+        "disabled": false,
+        "defaultBranch": "master",
+        "lastCommit": "2023-11-16T20:46:40Z"
+      }
+    },
+    {
       "id": "Jopyth/MMM-Remote-Control",
       "gitHubDataLastUpdate": "2024-02-02T19:12:57.714Z",
       "gitHubData": {
@@ -10958,6 +10984,19 @@
         "disabled": false,
         "defaultBranch": "master",
         "lastCommit": "2017-12-14T03:12:41Z"
+      }
+    },
+    {
+      "id": "buxxi/MMM-RouterClients",
+      "gitHubDataLastUpdate": "2024-02-04T12:59:04.739Z",
+      "gitHubData": {
+        "issues": 0,
+        "stars": 0,
+        "license": "MIT",
+        "archived": false,
+        "disabled": false,
+        "defaultBranch": "master",
+        "lastCommit": "2024-02-04T10:30:32Z"
       }
     },
     {
@@ -12222,6 +12261,19 @@
       }
     },
     {
+      "id": "Simon089/MMM-Swipe",
+      "gitHubDataLastUpdate": "2024-02-04T12:57:04.823Z",
+      "gitHubData": {
+        "issues": 0,
+        "stars": 1,
+        "license": null,
+        "archived": false,
+        "disabled": false,
+        "defaultBranch": "master",
+        "lastCommit": "2018-03-16T09:31:46Z"
+      }
+    },
+    {
       "id": "nixnuex/MMM-SwissCommute",
       "gitHubDataLastUpdate": "2024-02-02T20:16:55.794Z",
       "gitHubData": {
@@ -12297,6 +12349,19 @@
         "disabled": false,
         "defaultBranch": "master",
         "lastCommit": "2023-11-24T18:23:52Z"
+      }
+    },
+    {
+      "id": "marcinomen/MMM-syslog",
+      "gitHubDataLastUpdate": "2024-02-04T12:57:05.334Z",
+      "gitHubData": {
+        "issues": 0,
+        "stars": 0,
+        "license": null,
+        "archived": false,
+        "disabled": false,
+        "defaultBranch": "master",
+        "lastCommit": "2020-03-16T23:03:10Z"
       }
     },
     {

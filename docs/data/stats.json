@@ -1,11 +1,11 @@
 {
-  "moduleCounter": 1115,
-  "modulesWithImageCounter": 486,
-  "modulesWithIssuesCounter": 1109,
-  "issueCounter": 7335,
-  "lastUpdate": "2024-02-02T21:49:42+01:00",
+  "moduleCounter": 1117,
+  "modulesWithImageCounter": 488,
+  "modulesWithIssuesCounter": 1111,
+  "issueCounter": 7344,
+  "lastUpdate": "2024-02-04T14:08:53+01:00",
   "repositoryHoster": {
-    "github": 1106,
+    "github": 1108,
     "gitlab": 8,
     "bitbucket": 1
   },
@@ -29,6 +29,7 @@
     "KristjanESPERANTO": 6,
     "AdamMoses-GitHub": 6,
     "Snille": 6,
+    "buxxi": 6,
     "slametps": 6,
     "BrianHepler": 5,
     "jalibu": 5,
@@ -53,7 +54,6 @@
     "deg0nz": 4,
     "asimhsidd": 4,
     "PierreGode": 4,
-    "buxxi": 4,
     "doctorfree": 4,
     "ralberth": 4,
     "michael5r": 4,

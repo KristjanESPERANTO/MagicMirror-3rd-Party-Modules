@@ -808,6 +808,7 @@
     "maintainerURL": "",
     "description": "Displays snow reports from bergfex.at, forked version. Countries provided by bergfex.at can be configured and set.",
     "issues": [],
+    "stars": 3,
     "tags": [
       "bergfex",
       "weather",
@@ -894,11 +895,11 @@
     "description": "A simple, lightweight birthday reminder - specified either via simple JSON file or in <code>config.js</code>. Supports multiple languages.",
     "issues": [
       "`package.json` issue: No repository field.",
-      "There are no keywords in 'package.json'. We would use them as tags on the module list page.",
-      "No image found."
+      "There are no keywords in 'package.json'. We would use them as tags on the module list page."
     ],
     "stars": 7,
-    "license": "Apache-2.0"
+    "license": "Apache-2.0",
+    "image": "example.jpg"
   },
   {
     "name": "MMM-bitcoin",
@@ -4454,6 +4455,7 @@
     "maintainerURL": "https://gitlab.com/karsten13",
     "description": "Displays current flights in a defined area with a map containing the plane positions.",
     "issues": [],
+    "stars": 6,
     "tags": [
       "flight",
       "tracking",
@@ -6375,6 +6377,7 @@
     "maintainerURL": "https://github.com/doctorfree",
     "description": "Display your Instagram photos, videos, multiple media postings, and post description. Makes use of the Facebook Instagram Graph API.",
     "issues": [],
+    "stars": 3,
     "tags": [
       "instagram",
       "entertainment"
@@ -7756,7 +7759,8 @@
     "description": "Display Swedish name of day.",
     "issues": [
       "There is no `package.json`. We need this file to gather information about the module for the module list page."
-    ]
+    ],
+    "stars": 0
   },
   {
     "name": "MMM-MensaMax",
@@ -8191,6 +8195,7 @@
       "There are no specific keywords in 'package.json'. We would use them as tags on the module list page. Add a few meaningful terms to the keywords in the package.json. Not just “magicmirror” or “module”.",
       "No compatible or wrong license field in 'package.json'. Without that, we can't use an image."
     ],
+    "stars": 6,
     "license": "GPLv3"
   },
   {
@@ -8293,7 +8298,8 @@
     "description": "Displays the current and forecasted UV Index for a given location given its longitude and latitude. It requires a free API token from <a target=\"_blank\" href=\"https://www.openuv.io/\">https://www.openuv.io/</a>.",
     "issues": [
       "There is no `package.json`. We need this file to gather information about the module for the module list page."
-    ]
+    ],
+    "stars": 3
   },
   {
     "name": "mmm-weatherchart",
@@ -9404,6 +9410,7 @@
     "maintainerURL": "",
     "description": "Displays bus information for the Nottingham bus company, NCT.",
     "issues": [],
+    "stars": 3,
     "tags": [
       "nct",
       "buses"
@@ -10006,7 +10013,7 @@
     "maintainerURL": "",
     "description": "Display the song you are currently listening to on Spotify.",
     "issues": [],
-    "outdated": "Abandoned. No reactions to issues since years. No installation instructions. It no longer seems to work.",
+    "outdated": "Abandoned. No reactions to issues since years. Depends on deprecated modules. MMM-OnSpotify is an alternative.",
     "stars": 204,
     "tags": [
       "spotify"
@@ -10819,7 +10826,9 @@
     "issues": [],
     "stars": 1,
     "tags": [
-      "pga"
+      "pga",
+      "golf",
+      "sport"
     ],
     "license": "ISC",
     "image": "images-screenshot-1.jpg"
@@ -11997,6 +12006,7 @@
     "maintainerURL": "https://gitlab.com/FatTony404",
     "description": "Displays recycling calendar data from Stadt Zürich, Switzerland.",
     "issues": [],
+    "stars": 3,
     "tags": [
       "recycling",
       "zurich"
@@ -12073,6 +12083,18 @@
     "stars": 2
   },
   {
+    "name": "MMM-RelativeTime-i18n",
+    "url": "https://github.com/buxxi/MMM-RelativeTime-i18n",
+    "id": "buxxi/MMM-RelativeTime-i18n",
+    "maintainer": "buxxi",
+    "maintainerURL": "",
+    "description": "Module that makes it possible to customize all the relative times in the default module (and others) that depend on moment.js",
+    "issues": [
+      "There is no `package.json`. We need this file to gather information about the module for the module list page."
+    ],
+    "stars": 0
+  },
+  {
     "name": "MMM-Remote-Control",
     "url": "https://github.com/Jopyth/MMM-Remote-Control",
     "id": "Jopyth/MMM-Remote-Control",
@@ -12136,6 +12158,7 @@
     "maintainerURL": "https://gitlab.com/karsten13",
     "description": "Shows repository statistics for DockerHub, GitHub and GitLab.",
     "issues": [],
+    "stars": 6,
     "tags": [
       "dockerhub",
       "docker",
@@ -12374,6 +12397,20 @@
       "There is no `package.json`. We need this file to gather information about the module for the module list page."
     ],
     "stars": 9
+  },
+  {
+    "name": "MMM-RouterClients",
+    "url": "https://github.com/buxxi/MMM-RouterClients",
+    "id": "buxxi/MMM-RouterClients",
+    "maintainer": "buxxi",
+    "maintainerURL": "",
+    "description": "Displays a list of clients connected to your router.",
+    "issues": [
+      "There are no keywords in 'package.json'. We would use them as tags on the module list page."
+    ],
+    "stars": 0,
+    "license": "MIT",
+    "image": "screenshot.jpg"
   },
   {
     "name": "MMM-ROVA-trashcalendar",
@@ -13776,7 +13813,9 @@
     "issues": [],
     "stars": 3,
     "tags": [
-      "sweepclock station clock"
+      "clock",
+      "sweepclock",
+      "station clock"
     ],
     "license": "ISC",
     "image": "image.jpg"
@@ -13791,6 +13830,7 @@
     "issues": [
       "No image found."
     ],
+    "stars": 1,
     "tags": [
       "hand gestures",
       "swipe",
@@ -13898,7 +13938,8 @@
     "description": "API for sending notifications to your mirror.",
     "issues": [
       "There is no `package.json`. We need this file to gather information about the module for the module list page."
-    ]
+    ],
+    "stars": 0
   },
   {
     "name": "MMM-SystemMonitor",
@@ -16134,6 +16175,7 @@
     "maintainerURL": "https://github.com/doctorfree",
     "description": "Embed YouTube videos and playlists using the Electron webview tag rather than an iframe. May assist access to YouTube videos blocked in an iframe.",
     "issues": [],
+    "stars": 3,
     "tags": [
       "webview"
     ],
