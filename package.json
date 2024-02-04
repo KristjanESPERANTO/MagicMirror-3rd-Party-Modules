@@ -48,7 +48,7 @@
     "ownList": "rm -rf modules & node create_own_module_list.js && npm run getModules && npm run expandModuleList && npm run checkModules",
     "lint": "eslint . && stylelint **/docs/*.css && markdownlint README.md && prettier --check .",
     "lint:fix": "eslint . --fix && stylelint **/docs/*.css --fix && markdownlint README.md --fix && prettier . --write",
-    "prepare": "husky install",
+    "prepare": "husky",
     "test": "npm run lint",
     "leaveMenu": ""
   },
