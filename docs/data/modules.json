@@ -250,7 +250,7 @@
     "maintainer": "sakirtemel",
     "maintainerURL": "",
     "description": "Amazon Alexa integration with using JavaScript only.",
-    "issues": 10,
+    "issues": 9,
     "stars": 51,
     "license": "MIT",
     "lastCommit": "2016-11-08T21:32:41+01:00"
@@ -648,7 +648,7 @@
     "maintainer": "dolanmiu",
     "maintainerURL": "",
     "description": "Easy, hands free Amazon Alexa integration; activated, simply by saying \"Alexa\".",
-    "issues": 12,
+    "issues": 9,
     "stars": 150,
     "license": "MIT",
     "image": "styles-loading.jpg",
@@ -661,7 +661,7 @@
     "maintainer": "darickc",
     "maintainerURL": "",
     "description": "Show fullscreen slideshow in background from images in a local folder. Great for a photo frame.",
-    "issues": 2,
+    "issues": 0,
     "stars": 129,
     "tags": [
       "background",
@@ -743,7 +743,13 @@
     "description": "Display current fuel prices at your nearest gas station in Norway.",
     "issues": 4,
     "stars": 1,
-    "lastCommit": "2024-01-14T18:05:22+01:00"
+    "tags": [
+      "fuel",
+      "norway"
+    ],
+    "license": "MIT",
+    "image": "screenshot.jpg",
+    "lastCommit": "2024-02-05T18:38:18+01:00"
   },
   {
     "name": "MMM-bergfex",
@@ -1315,7 +1321,7 @@
     "maintainer": "MMM-CalendarExt2",
     "maintainerURL": "",
     "description": "Extended calendar and event view.",
-    "issues": 2,
+    "issues": 1,
     "stars": 88,
     "tags": [
       "calendar"
@@ -1440,7 +1446,7 @@
     "maintainer": "heskja",
     "maintainerURL": "",
     "description": "Display a weekly (n days) calendar view.",
-    "issues": 13,
+    "issues": 12,
     "stars": 50,
     "lastCommit": "2019-08-25T19:28:27+02:00"
   },
@@ -2102,7 +2108,7 @@
     "maintainer": "matteodanelli",
     "maintainerURL": "",
     "description": "Display cryptocurrencies ticker price, with graphs and changes over time.",
-    "issues": 6,
+    "issues": 5,
     "stars": 93,
     "lastCommit": "2022-05-04T11:10:42+02:00"
   },
@@ -2431,7 +2437,7 @@
     "maintainer": "jclarke0000",
     "maintainerURL": "",
     "description": "A weather module that displays current, hourly and daily forecast information using data from the Dark Sky API.",
-    "issues": 9,
+    "issues": 8,
     "outdated": "Deprecated. DarkSky API no longer works since 2023-03-31.",
     "stars": 82,
     "license": "MIT",
@@ -2841,7 +2847,7 @@
     "maintainer": "LukeSkywalker92",
     "maintainerURL": "",
     "description": "Displays weather warnings for Germany.",
-    "issues": 10,
+    "issues": 9,
     "stars": 61,
     "license": "ISC",
     "image": "screenshot.jpg",
@@ -2881,7 +2887,7 @@
     "maintainer": "mykle1",
     "maintainerURL": "",
     "description": "Watch the sunlit side of Earth as it rotates.",
-    "issues": 6,
+    "issues": 5,
     "outdated": "Abandoned. Developer is no longer active. Missing instructions to install dependency 'request'.",
     "stars": 59,
     "tags": [
@@ -3843,7 +3849,7 @@
     "maintainer": "nischi",
     "maintainerURL": "",
     "description": "All new version of Face Recognition with Open CV 4.1 and Deep Neural Network.",
-    "issues": 5,
+    "issues": 4,
     "stars": 90,
     "tags": [
       "face",
@@ -3862,7 +3868,7 @@
     "maintainer": "EbenKouao",
     "maintainerURL": "https://github.com/EbenKouao",
     "description": "This module allows you to access profiles using face recognition. This works on the back of OpenCV face recognition module. Program this script to control applicances e.g. Smart Plugs, or lights based on an individual's face profile being recognized.",
-    "issues": 6,
+    "issues": 5,
     "stars": 77,
     "lastCommit": "2020-06-12T11:58:46-07:00"
   },
@@ -4169,7 +4175,7 @@
     "description": "A module to raise an image of a flag according to national flag rules. (Norwegian rules) Fetches sunrise and sunset times using <a target=\"_blank\" href=\"https://steder-api.no\">Steder-API</a>.",
     "issues": 5,
     "stars": 1,
-    "lastCommit": "2023-08-27T12:39:20+02:00"
+    "lastCommit": "2024-02-05T18:42:41+01:00"
   },
   {
     "name": "MMM-Flatastic",
@@ -4346,7 +4352,7 @@
     "maintainer": "dmcinnes",
     "maintainerURL": "",
     "description": "Display weather based on forecast API (DarkSky).",
-    "issues": 6,
+    "issues": 5,
     "outdated": "Deprecated. DarkSky API no longer works since 2023-03-31.",
     "stars": 57,
     "lastCommit": "2021-01-04T20:03:24-08:00"
@@ -4556,7 +4562,7 @@
     "maintainer": "fewieden",
     "maintainerURL": "",
     "description": "Display Gas Station prices.",
-    "issues": 18,
+    "issues": 17,
     "stars": 56,
     "tags": [
       "fuel price",
@@ -4784,7 +4790,7 @@
     "maintainer": "LukeSkywalker92",
     "maintainerURL": "",
     "description": "Displays live image of our planet.",
-    "issues": 9,
+    "issues": 8,
     "stars": 66,
     "license": "MIT",
     "image": "screenshot.jpg",
@@ -4824,7 +4830,7 @@
     "maintainer": "bugsounet",
     "maintainerURL": "https://wiki.bugsounet.fr",
     "description": "MMM-GoogleAssistant is an real embedded Google assistant on MagicMirror\u00b2 with many <a target=\"_blank\" href=\"#extended-plugins-for-mmm-googleassistant-by-bugsounet\">plugins</a> . [Maintained].",
-    "issues": 4,
+    "issues": 3,
     "stars": 79,
     "tags": [
       "google assistant",
@@ -4845,7 +4851,7 @@
     "maintainer": "gauravsacc",
     "maintainerURL": "",
     "description": "Google Assistant integration using python library. Activated using hotword 'Ok Google'.",
-    "issues": 8,
+    "issues": 6,
     "outdated": "Abandoned. No reactions to issues since years. Seems not to work anymore.",
     "stars": 116,
     "lastCommit": "2018-04-19T13:21:19-04:00"
@@ -4870,7 +4876,7 @@
     "maintainer": "randomBrainstormer",
     "maintainerURL": "https://github.com/randomBrainstormer",
     "description": "Get your Google Calendars in the shape of MagicMirror's default calendar.",
-    "issues": 6,
+    "issues": 5,
     "stars": 52,
     "tags": [
       "google",
@@ -4985,7 +4991,7 @@
     "maintainer": "vicmora",
     "maintainerURL": "",
     "description": "Displays a Google map, centered at provided coordinates, with traffic information.",
-    "issues": 8,
+    "issues": 7,
     "stars": 85,
     "license": "MIT",
     "image": "img-coordinates.jpg",
@@ -4998,7 +5004,7 @@
     "maintainer": "hermanho",
     "maintainerURL": "https://github.com/hermanho",
     "description": "Image gallery or wallpaper with your Google Photos account.",
-    "issues": 7,
+    "issues": 4,
     "stars": 152,
     "tags": [
       "googlephotos"
@@ -5067,11 +5073,15 @@
     "maintainer": "Jacopo1891",
     "maintainerURL": "https://github.com/jacopo1891",
     "description": "Lists travel times to requested locations taking into account Google traffic information with \"classic view\".",
-    "issues": 6,
+    "issues": 3,
     "stars": 12,
+    "tags": [
+      "traffic",
+      "googlemap"
+    ],
     "license": "MIT",
     "image": "screen-01-minimal_look.jpg",
-    "lastCommit": "2024-01-15T09:25:22+01:00"
+    "lastCommit": "2024-02-05T01:28:29+01:00"
   },
   {
     "name": "MMM-GoogleTTS",
@@ -5480,7 +5490,7 @@
     "maintainer": "leinich",
     "maintainerURL": "",
     "description": "Display information from Home Assistant using the home assistant REST API.",
-    "issues": 5,
+    "issues": 4,
     "stars": 59,
     "lastCommit": "2021-07-15T18:54:44+02:00"
   },
@@ -5491,7 +5501,7 @@
     "maintainer": "Snille",
     "maintainerURL": "https://github.com/Snille",
     "description": "Fork of leinich module. Many new features added. Display information from Home Assistant using the home assistant REST API.",
-    "issues": 7,
+    "issues": 6,
     "stars": 59,
     "tags": [
       "home assistant",
@@ -5521,7 +5531,7 @@
     "maintainer": "wonderslug",
     "maintainerURL": "https://github.com/wonderslug",
     "description": "Displays information from Home Assistant using Home Assistant Templates to render any HTML you want for the module. Includes support for Material Design Icons, Websockets for fast updating, and auto reconnect on Home Assistant restarts. Allows you to show or hide a whole module based on a Home Assistant Template as well.",
-    "issues": 7,
+    "issues": 6,
     "stars": 77,
     "tags": [
       "home assistant"
@@ -5748,7 +5758,7 @@
     "maintainer": "PierreGode",
     "maintainerURL": "https://github.com/PierreGode",
     "description": "MMM-ICA is a module for connecting to the Swedish grocery store ICA API and get information.",
-    "issues": 6,
+    "issues": 5,
     "stars": 2,
     "tags": [
       "ica",
@@ -5756,8 +5766,8 @@
       "butik",
       "handel"
     ],
-    "license": "GNU",
-    "lastCommit": "2024-01-07T12:22:25+01:00"
+    "license": "MIT",
+    "lastCommit": "2024-02-05T02:26:58+01:00"
   },
   {
     "name": "MMM-iCal-ToDo",
@@ -5864,7 +5874,7 @@
     "maintainer": "alberttwong",
     "maintainerURL": "",
     "description": "A simple way to add an iFrame of any web content. Supports multiple URLs and will rotate between them. Works with static pages or streams like Nest Cam, D-Link Cameras, Twitch.tv, YouTube and more.",
-    "issues": 7,
+    "issues": 6,
     "stars": 52,
     "tags": [
       "iframe"
@@ -6298,7 +6308,7 @@
     "maintainer": "jalibu",
     "maintainerURL": "https://github.com/jalibu",
     "description": "A simple but powerful vertical, horizontal or static stock ticker based on Yahoo's finance API. Supports international stocks, crypto currencies and index symbols. No API key required.",
-    "issues": 2,
+    "issues": 1,
     "stars": 61,
     "tags": [
       "stock",
@@ -6578,9 +6588,15 @@
     "maintainer": "ItsMeBrille",
     "maintainerURL": "https://github.com/ItsMeBrille",
     "description": "A module for sending notifications to other modules based on keys pressed.",
-    "issues": 3,
+    "issues": 4,
     "stars": 3,
-    "lastCommit": "2023-11-14T22:26:18+01:00"
+    "tags": [
+      "numpad",
+      "remote control",
+      "keyboard"
+    ],
+    "license": "MIT",
+    "lastCommit": "2024-02-05T18:45:24+01:00"
   },
   {
     "name": "MMM-Koket-by-Sodexo",
@@ -7154,7 +7170,7 @@
     "maintainer": "roramirez",
     "maintainerURL": "",
     "description": "Module to help developers to start building their own modules for the MagicMirror\u00b2.",
-    "issues": 16,
+    "issues": 15,
     "stars": 68,
     "license": "MIT",
     "lastCommit": "2019-11-27T17:33:41-05:00"
@@ -7485,7 +7501,7 @@
     "maintainer": "thobach",
     "maintainerURL": "",
     "description": "Displays your Microsoft To Do tasks on your mirror.",
-    "issues": 8,
+    "issues": 7,
     "stars": 71,
     "tags": [
       "todo",
@@ -7540,7 +7556,7 @@
     "maintainer": "joanaz",
     "maintainerURL": "",
     "description": "Alexa voice control to show/hide modules, search for images or Youtube video, and display them with the search term on the mirror.",
-    "issues": 8,
+    "issues": 7,
     "stars": 88,
     "tags": [
       "alexa",
@@ -7594,7 +7610,7 @@
     "maintainer": "Klettner",
     "maintainerURL": "https://github.com/Klettner",
     "description": "Android \ud83d\udcf1 and Windows-desktop \ud83d\udcbb app to control your MagicMirror\u00b2 remotely. (Shutdown, reboot, toggle monitor on/off, change brightness of monitor, custom-commands, etc.).",
-    "issues": 5,
+    "issues": 4,
     "stars": 52,
     "lastCommit": "2021-05-27T16:42:41+02:00"
   },
@@ -7707,7 +7723,13 @@
     "description": "Display Minecraft server status and shows list of active players.",
     "issues": 5,
     "stars": 2,
-    "lastCommit": "2023-12-10T20:48:29+01:00"
+    "tags": [
+      "minecraft",
+      "game stats"
+    ],
+    "license": "MIT",
+    "image": "screenshot.jpg",
+    "lastCommit": "2024-02-05T18:47:27+01:00"
   },
   {
     "name": "mmm-moon-phases",
@@ -7925,7 +7947,7 @@
     "maintainer": "Bee-Mar",
     "maintainerURL": "https://github.com/Bee-Mar",
     "description": "An unofficial MagicMirror\u00b2 3rd Party Package Manager. Automates searching, installation, removal, updating, and upgrading of MagicMirror\u00b2 modules.",
-    "issues": 7,
+    "issues": 4,
     "stars": 161,
     "lastCommit": "2024-01-07T20:04:24-05:00"
   },
@@ -7992,7 +8014,7 @@
     "maintainer": "ianperrin",
     "maintainerURL": "",
     "description": "Create schedules to control when other modules are shown, hidden or dimmed and to send notifications to other modules.",
-    "issues": 9,
+    "issues": 8,
     "stars": 95,
     "tags": [
       "scheduler"
@@ -8257,7 +8279,7 @@
     "maintainer": "ottopaulsen",
     "maintainerURL": "",
     "description": "A module that subscribes topics from MQTT message queues, and displays the payload values in a table, with configurable labels.",
-    "issues": 4,
+    "issues": 3,
     "stars": 55,
     "tags": [
       "smarthome",
@@ -8456,7 +8478,7 @@
     "maintainer": "jclarke0000",
     "maintainerURL": "",
     "description": "Same functionality as the default Calendar app but different display formatting.",
-    "issues": 8,
+    "issues": 7,
     "stars": 57,
     "lastCommit": "2022-09-26T22:30:38-04:00"
   },
@@ -8578,7 +8600,7 @@
     "maintainer": "jclarke0000",
     "maintainerURL": "",
     "description": "Module to display today's scores for your favourite teams across multiple sports.",
-    "issues": 8,
+    "issues": 7,
     "stars": 63,
     "tags": [
       "sports"
@@ -9028,7 +9050,7 @@
     ],
     "license": "MIT",
     "image": ".github-preview.bubbles.jpg",
-    "lastCommit": "2024-02-01T15:04:44+00:00"
+    "lastCommit": "2024-02-05T15:47:26+00:00"
   },
   {
     "name": "MMM-Netatmo-Presence",
@@ -9322,10 +9344,17 @@
     "maintainer": "jalibu",
     "maintainerURL": "https://github.com/Jalibu",
     "description": "Client implementation for German NINA Warn API. Supports alerts of KatWarn, Biwapp and Mowas.",
-    "issues": 9,
+    "issues": 1,
     "stars": 19,
+    "tags": [
+      "nina",
+      "warning",
+      "notification",
+      "crisis"
+    ],
     "license": "MIT",
-    "lastCommit": "2024-01-19T09:27:51+01:00"
+    "image": "img-screenshot1.jpg",
+    "lastCommit": "2024-02-05T17:19:44+01:00"
   },
   {
     "name": "MMM-nixie-clock",
@@ -9514,7 +9543,7 @@
     "maintainer": "raywo",
     "maintainerURL": "",
     "description": "Display the song you are currently listening to on Spotify.",
-    "issues": 9,
+    "issues": 6,
     "outdated": "Abandoned. No reactions to issues since years. Depends on deprecated modules. MMM-OnSpotify is an alternative.",
     "stars": 204,
     "tags": [
@@ -9794,7 +9823,7 @@
     "maintainer": "shbatm",
     "maintainerURL": "",
     "description": "Simple On-Screen Menu for controlling the MagicMirror\u00b2.",
-    "issues": 7,
+    "issues": 6,
     "stars": 60,
     "tags": [
       "menu",
@@ -10070,7 +10099,7 @@
     "maintainer": "edward-shen",
     "maintainerURL": "",
     "description": "A module that allows you to rotate out pages of modules.",
-    "issues": 6,
+    "issues": 4,
     "stars": 102,
     "lastCommit": "2021-12-10T20:46:41-08:00"
   },
@@ -10331,7 +10360,7 @@
     "maintainer": "ronny3050",
     "maintainerURL": "",
     "description": "Displays and alerts mirror users on new phone notifications.",
-    "issues": 7,
+    "issues": 6,
     "stars": 59,
     "tags": [
       "phone notification",
@@ -10375,7 +10404,7 @@
     "maintainer": "sheyabernstein",
     "maintainerURL": "",
     "description": "Display stats from Pi-Hole DNS ad blocking.",
-    "issues": 8,
+    "issues": 7,
     "stars": 68,
     "lastCommit": "2023-08-23T01:02:09+01:00"
   },
@@ -11024,7 +11053,7 @@
     ],
     "license": "MIT",
     "image": "img-Goerdelerring_all.jpg",
-    "lastCommit": "2024-02-01T23:58:08+01:00"
+    "lastCommit": "2024-02-05T00:43:50+01:00"
   },
   {
     "name": "MMM-PublicTransportVVO",
@@ -11500,7 +11529,7 @@
     "maintainer": "Jopyth",
     "maintainerURL": "",
     "description": "Cleanly shutdown (or reboot) your mirror, edit which modules are shown on your mirror and turn your monitor off and on from a simple website, i.e. from your smartphone.",
-    "issues": 18,
+    "issues": 15,
     "stars": 468,
     "tags": [
       "remote control",
@@ -11799,7 +11828,7 @@
     "stars": 0,
     "license": "MIT",
     "image": "screenshot.jpg",
-    "lastCommit": "2024-02-04T11:30:32+01:00"
+    "lastCommit": "2024-02-05T20:54:09+01:00"
   },
   {
     "name": "MMM-ROVA-trashcalendar",
@@ -11842,7 +11871,7 @@
     "maintainer": "shbatm",
     "maintainerURL": "",
     "description": "Show RTSP video stream(s) from one or more security cameras.",
-    "issues": 22,
+    "issues": 21,
     "stars": 69,
     "license": "MIT",
     "image": "screenshot.jpg",
@@ -11995,7 +12024,7 @@
     "maintainer": "kevinatown",
     "maintainerURL": "",
     "description": "Cast a video from your phone to your mirror (currently can only cast YouTube).",
-    "issues": 6,
+    "issues": 3,
     "stars": 159,
     "tags": [
       "chromecast",
@@ -12563,7 +12592,7 @@
     "maintainer": "EbenKouao",
     "maintainerURL": "https://github.com/EbenKouao",
     "description": "This module allows you to transform your MagicMirror\u00b2 into a touchscreen interactive experience. This includes hiding all modules (Standby Mode) and Side Menu Option to shutdown your mirror via MagicMirror\u00b2 UI.",
-    "issues": 7,
+    "issues": 6,
     "stars": 78,
     "lastCommit": "2021-03-29T14:21:39+01:00"
   },
@@ -12574,7 +12603,7 @@
     "maintainer": "AgP42",
     "maintainerURL": "https://github.com/AgP42",
     "description": "An iFrame module to display web content (including YouTube, IP cameras, etc.). Several rotating URL, autorefresh and remote control of the URL to display, Next/Prev/Play/Stop. <a target=\"_blank\" href=\"https://forum.magicmirror.builders/topic/9750/mmm-smartwebdisplay-display-web-contents-including-youtube-on-your-mm\">MMM-SmartWebDisplay forum</a>.",
-    "issues": 9,
+    "issues": 8,
     "stars": 52,
     "tags": [
       "iframe",
@@ -12652,7 +12681,7 @@
     "maintainer": "MichMich",
     "maintainerURL": "",
     "description": "More realistic snow plugin to improve your winter experience.",
-    "issues": 5,
+    "issues": 4,
     "stars": 54,
     "lastCommit": "2018-02-13T22:37:11+01:00"
   },
@@ -12898,7 +12927,7 @@
     "maintainer": "skuethe",
     "maintainerURL": "",
     "description": "Spotify Controller - with device and account switch buttons, easy volume change via touch and much more.",
-    "issues": 4,
+    "issues": 3,
     "stars": 60,
     "tags": [
       "magicmirrormodule",
@@ -12916,7 +12945,7 @@
     "maintainer": "CatoAntonsen",
     "maintainerURL": "",
     "description": "Display information from Spotify Connect e.g. cover, artist and track information.",
-    "issues": 6,
+    "issues": 5,
     "stars": 51,
     "lastCommit": "2017-02-15T19:48:37+01:00"
   },
@@ -13277,7 +13306,7 @@
     "maintainer": "BenRoe",
     "maintainerURL": "",
     "description": "Shows Raspberry Pi system stats like CPU temperature, free Ram, System load, and Uptime.",
-    "issues": 8,
+    "issues": 7,
     "outdated": "Abandoned. Repo has been archived at 2022-09-05.",
     "stars": 90,
     "tags": [
@@ -13501,7 +13530,7 @@
     "maintainer": "denverquane",
     "maintainerURL": "",
     "description": "Display live Tesla status using the Teslamate self-hosted monitoring system and MQTT Broker.",
-    "issues": 6,
+    "issues": 5,
     "stars": 50,
     "lastCommit": "2023-02-04T20:33:44+01:00"
   },
@@ -13700,7 +13729,7 @@
     "maintainer": "cbrooker",
     "maintainerURL": "",
     "description": "Displays your todos from Todoist.",
-    "issues": 8,
+    "issues": 6,
     "stars": 145,
     "tags": [
       "wunderlist"
@@ -13840,7 +13869,7 @@
     "maintainer": "SamLewis0602",
     "maintainerURL": "https://github.com/samlewis0602",
     "description": "Display commute travel time with current traffic conditions factored in. Can be used for driving, biking, walking, and public transit.",
-    "issues": 7,
+    "issues": 5,
     "stars": 138,
     "tags": [
       "traffic"
@@ -13961,7 +13990,7 @@
     "maintainer": "Jopyth",
     "maintainerURL": "",
     "description": "This module can show <a target=\"_blank\" href=\"https://trello.com\">Trello</a> cards on your mirror.",
-    "issues": 7,
+    "issues": 6,
     "stars": 53,
     "tags": [
       "trello"
@@ -14505,7 +14534,7 @@
     "maintainer": "fewieden",
     "maintainerURL": "",
     "description": "Offline Voice Recognition Module, with ability to control other modules, based on pocketsphinx.",
-    "issues": 9,
+    "issues": 8,
     "stars": 72,
     "tags": [
       "voice recognition",
@@ -14668,7 +14697,7 @@
     "maintainer": "delightedCrow",
     "maintainerURL": "",
     "description": "Re-themes MagicMirror\u00b2 to look like a beautiful digital photo wall display. It adds a new font, styles, redesigned clock and weather displays, and rotating background image pulled from unsplash.com.",
-    "issues": 17,
+    "issues": 16,
     "stars": 93,
     "lastCommit": "2021-03-05T12:43:28-08:00"
   },
@@ -14679,7 +14708,7 @@
     "maintainer": "kolbyjack",
     "maintainerURL": "",
     "description": "Rotates through wallpapers from Bing or Reddit.",
-    "issues": 9,
+    "issues": 8,
     "stars": 89,
     "license": "MIT",
     "lastCommit": "2024-01-16T19:26:18-05:00"
@@ -14933,9 +14962,14 @@
     "maintainer": "NikolasRupp",
     "maintainerURL": "https://github.com/NikolasRupp",
     "description": "Shows Status of your VW ID Car based on We Connect.",
-    "issues": 3,
+    "issues": 2,
     "stars": 2,
-    "lastCommit": "2024-01-15T10:13:53+01:00"
+    "tags": [
+      "vw"
+    ],
+    "license": "MIT",
+    "image": "git-ProgressBar_fluent.jpg",
+    "lastCommit": "2024-02-05T07:22:04+01:00"
   },
   {
     "name": "MMM-WeeklySchedule",
@@ -14944,7 +14978,7 @@
     "maintainer": "pinsdorf",
     "maintainerURL": "",
     "description": "Display weekly recurring timetables such as class schedules.",
-    "issues": 6,
+    "issues": 5,
     "stars": 61,
     "license": "MIT",
     "image": "images-screenshot.jpg",
@@ -15038,7 +15072,7 @@
     "maintainer": "TeraTech",
     "maintainerURL": "",
     "description": "Displays WiFi password and QRCode.",
-    "issues": 4,
+    "issues": 3,
     "stars": 91,
     "lastCommit": "2022-09-26T13:37:23-05:00"
   },
@@ -15412,7 +15446,7 @@
     "maintainer": "PierreGode",
     "maintainerURL": "https://github.com/PierreGode",
     "description": "Display ZAPTEC charging API.",
-    "issues": 5,
+    "issues": 4,
     "stars": 0,
     "tags": [
       "zaptec",
@@ -15420,8 +15454,8 @@
       "electric",
       "ev"
     ],
-    "license": "GNU",
-    "lastCommit": "2024-01-07T21:00:14+01:00"
+    "license": "MIT",
+    "lastCommit": "2024-02-05T02:27:30+01:00"
   },
   {
     "name": "MMM-Zmanim",

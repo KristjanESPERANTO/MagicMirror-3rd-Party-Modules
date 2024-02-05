@@ -776,10 +776,14 @@
     "maintainer": "ItsMeBrille",
     "maintainerURL": "https://github.com/ItsMeBrille",
     "description": "Display current fuel prices at your nearest gas station in Norway.",
-    "issues": [
-      "There is no `package.json`. We need this file to gather information about the module for the module list page."
+    "issues": [],
+    "stars": 1,
+    "tags": [
+      "fuel",
+      "norway"
     ],
-    "stars": 1
+    "license": "MIT",
+    "image": "screenshot.jpg"
   },
   {
     "name": "MMM-bergfex",
@@ -5321,11 +5325,12 @@
     "maintainer": "Jacopo1891",
     "maintainerURL": "https://github.com/jacopo1891",
     "description": "Lists travel times to requested locations taking into account Google traffic information with \"classic view\".",
-    "issues": [
-      "`package.json` issue: No repository field.",
-      "There are no keywords in 'package.json'. We would use them as tags on the module list page."
-    ],
+    "issues": [],
     "stars": 12,
+    "tags": [
+      "traffic",
+      "googlemap"
+    ],
     "license": "MIT",
     "image": "screen-01-minimal_look.jpg"
   },
@@ -6045,8 +6050,7 @@
     "maintainerURL": "https://github.com/PierreGode",
     "description": "MMM-ICA is a module for connecting to the Swedish grocery store ICA API and get information.",
     "issues": [
-      "`package.json` issue: license should be a valid SPDX license expression",
-      "No compatible or wrong license field in 'package.json'. Without that, we can't use an image."
+      "No image found."
     ],
     "stars": 2,
     "tags": [
@@ -6055,7 +6059,7 @@
       "butik",
       "handel"
     ],
-    "license": "GNU"
+    "license": "MIT"
   },
   {
     "name": "MMM-iCal-ToDo",
@@ -6905,9 +6909,15 @@
     "maintainerURL": "https://github.com/ItsMeBrille",
     "description": "A module for sending notifications to other modules based on keys pressed.",
     "issues": [
-      "There is no `package.json`. We need this file to gather information about the module for the module list page."
+      "No image found."
     ],
-    "stars": 3
+    "stars": 3,
+    "tags": [
+      "numpad",
+      "remote control",
+      "keyboard"
+    ],
+    "license": "MIT"
   },
   {
     "name": "MMM-Koket-by-Sodexo",
@@ -8109,10 +8119,14 @@
     "maintainer": "ItsMeBrille",
     "maintainerURL": "https://github.com/ItsMeBrille",
     "description": "Display Minecraft server status and shows list of active players.",
-    "issues": [
-      "There is no `package.json`. We need this file to gather information about the module for the module list page."
+    "issues": [],
+    "stars": 2,
+    "tags": [
+      "minecraft",
+      "game stats"
     ],
-    "stars": 2
+    "license": "MIT",
+    "image": "screenshot.jpg"
   },
   {
     "name": "mmm-moon-phases",
@@ -9832,12 +9846,16 @@
     "maintainer": "jalibu",
     "maintainerURL": "https://github.com/Jalibu",
     "description": "Client implementation for German NINA Warn API. Supports alerts of KatWarn, Biwapp and Mowas.",
-    "issues": [
-      "There are no keywords in 'package.json'. We would use them as tags on the module list page.",
-      "No image found."
-    ],
+    "issues": [],
     "stars": 19,
-    "license": "MIT"
+    "tags": [
+      "nina",
+      "warning",
+      "notification",
+      "crisis"
+    ],
+    "license": "MIT",
+    "image": "img-screenshot1.jpg"
   },
   {
     "name": "MMM-nixie-clock",
@@ -15734,10 +15752,13 @@
     "maintainer": "NikolasRupp",
     "maintainerURL": "https://github.com/NikolasRupp",
     "description": "Shows Status of your VW ID Car based on We Connect.",
-    "issues": [
-      "An error occurred while getting information from 'package.json': Error: Invalid version: \"0.8\""
+    "issues": [],
+    "stars": 2,
+    "tags": [
+      "vw"
     ],
-    "stars": 2
+    "license": "MIT",
+    "image": "git-ProgressBar_fluent.jpg"
   },
   {
     "name": "MMM-WeeklySchedule",
@@ -16252,8 +16273,7 @@
     "maintainerURL": "https://github.com/PierreGode",
     "description": "Display ZAPTEC charging API.",
     "issues": [
-      "`package.json` issue: license should be a valid SPDX license expression",
-      "No compatible or wrong license field in 'package.json'. Without that, we can't use an image."
+      "No image found."
     ],
     "stars": 0,
     "tags": [
@@ -16262,7 +16282,7 @@
       "electric",
       "ev"
     ],
-    "license": "GNU"
+    "license": "MIT"
   },
   {
     "name": "MMM-Zmanim",
