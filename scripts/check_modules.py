@@ -176,7 +176,8 @@ def check_modules():
         },
     }
 
-    modules_json_file = open("./docs/data/modules.stage.3.json", encoding="utf-8")
+    modules_json_file = open(
+        "./docs/data/modules.stage.3.json", encoding="utf-8")
     modules = json.load(modules_json_file)
     stats = {
         "moduleCounter": 0,
@@ -290,6 +291,14 @@ def check_modules():
         if module['maintainer'] == "KristjanESPERANTO":
             if module["issues"] == 0:
                 module["issues"] = 1
+
+        # Lift modules with many stars in the default sort order.
+        if module['stars'] >= 150:
+            module['issues'] -= 3
+        elif module['stars'] >= 100:
+            module['issues'] -= 2
+        elif module['stars'] >= 50:
+            module['issues'] -= 1
 
     print(
         f"{stats['moduleCounter']} modules analyzed. For results see file result.md.           ")
