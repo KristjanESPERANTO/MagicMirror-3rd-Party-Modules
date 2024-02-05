@@ -293,12 +293,9 @@ def check_modules():
                 module["issues"] = 1
 
         # Lift modules with many stars in the default sort order.
-        if module['stars'] >= 150:
-            module['issues'] -= 3
-        elif module['stars'] >= 100:
-            module['issues'] -= 2
-        elif module['stars'] >= 50:
-            module['issues'] -= 1
+        if module['stars'] >= 50 and module["issues"] > 0:
+            module['issues'] = max(
+                1, module['issues'] - (module['stars'] // 50))
 
     print(
         f"{stats['moduleCounter']} modules analyzed. For results see file result.md.           ")
