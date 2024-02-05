@@ -661,7 +661,7 @@
     "maintainer": "darickc",
     "maintainerURL": "",
     "description": "Show fullscreen slideshow in background from images in a local folder. Great for a photo frame.",
-    "issues": 0,
+    "issues": 1,
     "stars": 129,
     "tags": [
       "background",
@@ -9543,7 +9543,7 @@
     "maintainer": "raywo",
     "maintainerURL": "",
     "description": "Display the song you are currently listening to on Spotify.",
-    "issues": 6,
+    "issues": 5,
     "outdated": "Abandoned. No reactions to issues since years. Depends on deprecated modules. MMM-OnSpotify is an alternative.",
     "stars": 204,
     "tags": [
@@ -11529,7 +11529,7 @@
     "maintainer": "Jopyth",
     "maintainerURL": "",
     "description": "Cleanly shutdown (or reboot) your mirror, edit which modules are shown on your mirror and turn your monitor off and on from a simple website, i.e. from your smartphone.",
-    "issues": 15,
+    "issues": 9,
     "stars": 468,
     "tags": [
       "remote control",
