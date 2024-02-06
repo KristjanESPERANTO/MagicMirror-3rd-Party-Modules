@@ -85,10 +85,15 @@ async function updateData () {
               "archived": data.archived,
               "disabled": data.disabled,
               "defaultBranch": data.default_branch,
+              "has_issues": data.has_issues,
               "lastCommit": branchData.commit ? branchData.commit.author.date : null
             }
           };
           module.stars = data.stargazers_count;
+
+          if (data.has_issues === false) {
+            module.issues.push("Issues are not enabled in the GitHub repository. So users cannot report bugs. Please enable issues in your repo.");
+          }
 
           results.push(repositoryData);
         } else {
@@ -100,6 +105,9 @@ async function updateData () {
         const existingRepository = previousData.repositories?.find((repo) => repo.id === repositoryId);
         if (existingRepository) {
           module.stars = existingRepository.gitHubData.stars;
+          if (existingRepository.gitHubData.has_issues === false) {
+            module.issues.push("Issues are not enabled in the GitHub repository. So users cannot report bugs. Please enable issues in your repo.");
+          }
           results.push(existingRepository);
         }
       }
