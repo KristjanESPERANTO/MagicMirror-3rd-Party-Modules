@@ -852,7 +852,9 @@
     "description": "Display submissions to BirdNET, Cornell University's machine learning project to identify birds by their song.",
     "issues": 9,
     "stars": 0,
-    "lastCommit": "2023-10-12T21:51:17-04:00"
+    "license": "MIT",
+    "image": "display.jpg",
+    "lastCommit": "2024-02-05T20:22:14-05:00"
   },
   {
     "name": "MMM-birthdays",
@@ -931,9 +933,15 @@
     "maintainer": "jschless",
     "maintainerURL": "https://github.com/jschless",
     "description": "Displays the number of available bikes at selected stations of the Boston public bike system (Bluebikes).",
-    "issues": 6,
+    "issues": 5,
     "stars": 0,
-    "lastCommit": "2024-02-04T14:16:15-05:00"
+    "tags": [
+      "bluebikes",
+      "transit"
+    ],
+    "license": "MIT",
+    "image": "demo.jpg",
+    "lastCommit": "2024-02-05T19:02:12-05:00"
   },
   {
     "name": "MMM-Bluelinky",
@@ -2256,10 +2264,14 @@
     "maintainer": "brucetony",
     "maintainerURL": "",
     "description": "Simple display of dad jokes from icanhazdadjoke.com.",
-    "issues": 11,
+    "issues": 4,
     "stars": 0,
+    "tags": [
+      "jokes",
+      "dad jokes"
+    ],
     "license": "MIT",
-    "lastCommit": "2023-12-01T20:32:23+01:00"
+    "lastCommit": "2024-02-06T09:25:42+01:00"
   },
   {
     "name": "MMM-DagelijksWoord",
@@ -9050,7 +9062,7 @@
     ],
     "license": "MIT",
     "image": ".github-preview.bubbles.jpg",
-    "lastCommit": "2024-02-05T15:47:26+00:00"
+    "lastCommit": "2024-02-06T10:50:54+00:00"
   },
   {
     "name": "MMM-Netatmo-Presence",
@@ -11053,7 +11065,7 @@
     ],
     "license": "MIT",
     "image": "img-Goerdelerring_all.jpg",
-    "lastCommit": "2024-02-05T00:43:50+01:00"
+    "lastCommit": "2024-02-05T23:19:21+01:00"
   },
   {
     "name": "MMM-PublicTransportVVO",

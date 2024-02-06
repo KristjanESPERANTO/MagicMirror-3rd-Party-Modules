@@ -888,9 +888,11 @@
     "maintainerURL": "https://github.com/BrianHepler",
     "description": "Display submissions to BirdNET, Cornell University's machine learning project to identify birds by their song.",
     "issues": [
-      "An error occurred while getting information from 'package.json': Error: Invalid version: \"1.1\""
+      "There are no keywords in 'package.json'. We would use them as tags on the module list page."
     ],
-    "stars": 0
+    "stars": 0,
+    "license": "MIT",
+    "image": "display.jpg"
   },
   {
     "name": "MMM-birthdays",
@@ -977,10 +979,14 @@
     "maintainer": "jschless",
     "maintainerURL": "https://github.com/jschless",
     "description": "Displays the number of available bikes at selected stations of the Boston public bike system (Bluebikes).",
-    "issues": [
-      "There is no `package.json`. We need this file to gather information about the module for the module list page."
+    "issues": [],
+    "stars": 0,
+    "tags": [
+      "bluebikes",
+      "transit"
     ],
-    "stars": 0
+    "license": "MIT",
+    "image": "demo.jpg"
   },
   {
     "name": "MMM-Bluelinky",
@@ -2382,11 +2388,13 @@
     "maintainerURL": "",
     "description": "Simple display of dad jokes from icanhazdadjoke.com.",
     "issues": [
-      "`package.json` issue: No repository field.",
-      "There are no keywords in 'package.json'. We would use them as tags on the module list page.",
       "No image found."
     ],
     "stars": 0,
+    "tags": [
+      "jokes",
+      "dad jokes"
+    ],
     "license": "MIT"
   },
   {

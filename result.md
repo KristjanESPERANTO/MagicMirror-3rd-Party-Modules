@@ -1,6 +1,6 @@
 # Result of the module analysis
 
-Last update: 2024-02-05T22:55:44+01:00
+Last update: 2024-02-06T13:45:46+01:00
 
 ## Statistics
 
@@ -9,7 +9,7 @@ Last update: 2024-02-05T22:55:44+01:00
 | modules analyzed     |   1117   |
 | maintainer           |    630   |
 | modules with issues  |   1111   |
-| issues               |   7340   |
+| issues               |   7332   |
 | modules at github    |   1108   |
 | modules at gitlab    |      8   |
 | modules at bitbucket |      1   |
@@ -574,7 +574,7 @@ Last update: 2024-02-05T22:55:44+01:00
 
 ### [MMM-BirdNET by BrianHepler](https://github.com/BrianHepler/MMM-BirdNET)
 
-1. An error occurred while getting information from 'package.json': Error: Invalid version: "1.1"
+1. There are no keywords in 'package.json'. We would use them as tags on the module list page.
 2. Recommendation: Found `XMLHttpRequest` in file `MMM-BirdNET.js`: Replace it with built-in fetch.
 3. Typo: Found `<sup>2</sup>` in file `README.md`: Replace it with `²`.`.
 4. Outdated: Found `MichMich/MagicMirror` in file `README.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
@@ -635,12 +635,11 @@ Last update: 2024-02-05T22:55:44+01:00
 
 ### [MMM-Bluebikes by jschless](https://github.com/jschless/MMM-Bluebikes)
 
-1. There is no `package.json`. We need this file to gather information about the module for the module list page.
-2. Typo: Found `Magic Mirror` in file `MMM-Bluebikes.js`: Replace it with `MagicMirror²`.
-3. Recommendation: Found `XMLHttpRequest` in file `MMM-Bluebikes.js`: Replace it with built-in fetch.
-4. Outdated: Found `MichMich/MagicMirror` in file `README.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
-5. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
-6. The branch name is 'master'. Consider renaming it to 'main'.
+1. Typo: Found `Magic Mirror` in file `MMM-Bluebikes.js`: Replace it with `MagicMirror²`.
+2. Recommendation: Found `XMLHttpRequest` in file `MMM-Bluebikes.js`: Replace it with built-in fetch.
+3. Outdated: Found `MichMich/MagicMirror` in file `README.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
+4. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
+5. The branch name is 'master'. Consider renaming it to 'main'.
 
 ### [MMM-Bluelinky by Cyw00d](https://github.com/Cyw00d/MMM-Bluelinky)
 
@@ -1543,17 +1542,10 @@ Last update: 2024-02-05T22:55:44+01:00
 
 ### [MMM-Dad-Jokes by brucetony](https://github.com/brucetony/MMM-Dad-Jokes)
 
-1. `package.json` issue: No repository field.
-2. There are no keywords in 'package.json'. We would use them as tags on the module list page.
-3. No image found.
-4. Recommendation: Found `jshint` in file `Gruntfile.js`: Replace "jshint" by "eslint".
-5. Typo: Found `Magic Mirror` in file `MMM-Dad-Jokes.js`: Replace it with `MagicMirror²`.
-6. Typo: Found `Magic Mirror` in file `README.md`: Replace it with `MagicMirror²`.
-7. Outdated: Found `MichMich/MagicMirror` in file `README.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
-8. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
-9. Deprecated: Found `"grunt"` in file `package.json`: Grunt is practically unmaintained. Move on to something better.
-10. Recommendation: Replace eslintrc by new flat config.
-11. The branch name is 'master'. Consider renaming it to 'main'.
+1. No image found.
+2. Outdated: Found `MichMich/MagicMirror` in file `README.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
+3. Recommendation: Replace eslintrc by new flat config.
+4. The branch name is 'master'. Consider renaming it to 'main'.
 
 ### [MMM-DagelijksWoord by wctimmer](https://github.com/wctimmer/MMM-DagelijksWoord)
 
