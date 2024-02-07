@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "2024-02-06T12:35:38.460Z",
+  "lastUpdate": "2024-02-07T20:25:23.643Z",
   "modules": [
     {
       "name": "MMM-01ZM",
@@ -6524,6 +6524,16 @@
       "maintainerURL": "",
       "description": "Display information from your OpenTherm gateway.",
       "issues": []
+    },
+    {
+      "name": "MMM-OpenWeatherForecast",
+      "url": "https://github.com/jclarke0000/MMM-OpenWeatherForecast",
+      "id": "jclarke0000/MMM-OpenWeatherForecast",
+      "maintainer": "jclarke0000",
+      "maintainerURL": "",
+      "description": "Displays current, hourly and daily forecast information using data from the OpenWeather One Call API.",
+      "issues": [],
+      "outdated": "Abandoned. No reactions to issues since years. Only works with API version 2.5!"
     },
     {
       "name": "MMM-OpenWeatherMapForecast",

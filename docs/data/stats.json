@@ -1,11 +1,11 @@
 {
-  "moduleCounter": 1117,
-  "modulesWithImageCounter": 496,
-  "modulesWithIssuesCounter": 1111,
-  "issueCounter": 7332,
-  "lastUpdate": "2024-02-06T13:45:46+01:00",
+  "moduleCounter": 1118,
+  "modulesWithImageCounter": 498,
+  "modulesWithIssuesCounter": 1112,
+  "issueCounter": 7341,
+  "lastUpdate": "2024-02-07T21:35:49+01:00",
   "repositoryHoster": {
-    "github": 1108,
+    "github": 1109,
     "gitlab": 8,
     "bitbucket": 1
   },
@@ -28,6 +28,7 @@
     "jupadin": 7,
     "KristjanESPERANTO": 6,
     "AdamMoses-GitHub": 6,
+    "jclarke0000": 6,
     "Snille": 6,
     "buxxi": 6,
     "slametps": 6,
@@ -36,7 +37,6 @@
     "MarcLandis": 5,
     "bibaldo": 5,
     "eouia": 5,
-    "jclarke0000": 5,
     "eckonator": 5,
     "htilburgs": 5,
     "cowboysdude": 4,

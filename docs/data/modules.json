@@ -298,7 +298,7 @@
     "maintainerURL": "",
     "description": "Shows the current standings of Allsvenskan (the top Swedish football league).",
     "issues": 8,
-    "stars": 0,
+    "stars": 1,
     "tags": [
       "allsvenskan",
       "football",
@@ -584,7 +584,7 @@
     "maintainerURL": "https://github.com/Fifteen15Studios",
     "description": "Set 1 or more schedules to dim and brighten your screen at specific times.",
     "issues": 4,
-    "stars": 23,
+    "stars": 24,
     "lastCommit": "2023-04-19T14:46:31-04:00"
   },
   {
@@ -742,7 +742,7 @@
     "maintainerURL": "https://github.com/ItsMeBrille",
     "description": "Display current fuel prices at your nearest gas station in Norway.",
     "issues": 4,
-    "stars": 1,
+    "stars": 2,
     "tags": [
       "fuel",
       "norway"
@@ -851,7 +851,7 @@
     "maintainerURL": "https://github.com/BrianHepler",
     "description": "Display submissions to BirdNET, Cornell University's machine learning project to identify birds by their song.",
     "issues": 9,
-    "stars": 0,
+    "stars": 2,
     "license": "MIT",
     "image": "display.jpg",
     "lastCommit": "2024-02-05T20:22:14-05:00"
@@ -912,7 +912,7 @@
     "maintainerURL": "https://github.com/pcurt",
     "description": "Module that shows french jokes from the BlaguesAPI <a target=\"_blank\" href=\"https://www.blagues-api.fr\">https://www.blagues-api.fr</a>.",
     "issues": 5,
-    "stars": 0,
+    "stars": 1,
     "lastCommit": "2024-01-08T09:48:54+01:00"
   },
   {
@@ -923,7 +923,7 @@
     "maintainerURL": "https://github.com/BKeyport",
     "description": "Quick Module to easily move modules up or down for blank space.",
     "issues": 6,
-    "stars": 3,
+    "stars": 4,
     "lastCommit": "2021-07-09T14:16:01-07:00"
   },
   {
@@ -1288,7 +1288,7 @@
     "maintainer": "MarcLandis",
     "maintainerURL": "https://github.com/MarcLandis",
     "description": "More complicated, but also more powerful: multiple buttons, configurable notifications, different actions on short and long press.",
-    "issues": 8,
+    "issues": 9,
     "stars": 2,
     "tags": [
       "buttons"
@@ -1465,7 +1465,7 @@
     "maintainer": "armybean",
     "maintainerURL": "",
     "description": "Extension for <a target=\"_blank\" href=\"https://github.com/paviro/MMM-FRITZ-Box-Callmonitor\">MMM-FRITZ-Box-Callmonitor</a>. Displays the currently active call.",
-    "issues": 6,
+    "issues": 7,
     "stars": 1,
     "lastCommit": "2020-04-21T23:05:01+02:00"
   },
@@ -2265,7 +2265,7 @@
     "maintainerURL": "",
     "description": "Simple display of dad jokes from icanhazdadjoke.com.",
     "issues": 4,
-    "stars": 0,
+    "stars": 2,
     "tags": [
       "jokes",
       "dad jokes"
@@ -6280,7 +6280,7 @@
     "maintainerURL": "",
     "description": "Displays live video from the International Space Station.",
     "issues": 1,
-    "stars": 1,
+    "stars": 3,
     "tags": [
       "iss",
       "livestream"
@@ -9861,7 +9861,7 @@
     ],
     "license": "MIT",
     "image": ".github-content-banner-social.jpg",
-    "lastCommit": "2024-01-15T14:48:11-03:00"
+    "lastCommit": "2024-02-06T16:12:48-03:00"
   },
   {
     "name": "MMM-OnThisDay",
@@ -9982,6 +9982,20 @@
     "issues": 6,
     "stars": 2,
     "lastCommit": "2016-11-06T15:55:12+01:00"
+  },
+  {
+    "name": "MMM-OpenWeatherForecast",
+    "url": "https://github.com/jclarke0000/MMM-OpenWeatherForecast",
+    "id": "jclarke0000/MMM-OpenWeatherForecast",
+    "maintainer": "jclarke0000",
+    "maintainerURL": "",
+    "description": "Displays current, hourly and daily forecast information using data from the OpenWeather One Call API.",
+    "issues": 10,
+    "outdated": "Abandoned. No reactions to issues since years. Only works with API version 2.5!",
+    "stars": 38,
+    "license": "MIT",
+    "image": "icons-iconsets.jpg",
+    "lastCommit": "2022-03-12T19:57:32-05:00"
   },
   {
     "name": "MMM-OpenWeatherMapForecast",
@@ -13946,9 +13960,20 @@
     "maintainer": "bnitkin",
     "maintainerURL": "https://github.com/bnitkin",
     "description": "Upcoming departures for any transit agencies that publishes GTFS.",
-    "issues": 5,
-    "stars": 2,
-    "lastCommit": "2024-02-04T15:43:07-05:00"
+    "issues": 1,
+    "stars": 3,
+    "tags": [
+      "transit",
+      "gtfs",
+      "travel",
+      "public transport",
+      "train",
+      "bus",
+      "subway"
+    ],
+    "license": "MIT",
+    "image": "res-screenshot.jpg",
+    "lastCommit": "2024-02-07T15:23:14-05:00"
   },
   {
     "name": "MMM-TranslatedMessages",

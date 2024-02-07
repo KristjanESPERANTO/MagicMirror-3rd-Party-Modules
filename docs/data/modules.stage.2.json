@@ -197,7 +197,7 @@
     "maintainerURL": "",
     "description": "Shows the current standings of Allsvenskan (the top Swedish football league).",
     "issues": [],
-    "stars": 0
+    "stars": 1
   },
   {
     "name": "MMM-AmbientBrightnessDetection",
@@ -409,7 +409,7 @@
     "maintainerURL": "https://github.com/Fifteen15Studios",
     "description": "Set 1 or more schedules to dim and brighten your screen at specific times.",
     "issues": [],
-    "stars": 23
+    "stars": 24
   },
   {
     "name": "MMM-AvfallshentingOslo",
@@ -529,7 +529,7 @@
     "maintainerURL": "https://github.com/ItsMeBrille",
     "description": "Display current fuel prices at your nearest gas station in Norway.",
     "issues": [],
-    "stars": 1
+    "stars": 2
   },
   {
     "name": "MMM-bergfex",
@@ -599,7 +599,7 @@
     "maintainerURL": "https://github.com/BrianHepler",
     "description": "Display submissions to BirdNET, Cornell University's machine learning project to identify birds by their song.",
     "issues": [],
-    "stars": 0
+    "stars": 2
   },
   {
     "name": "MMM-birthdays",
@@ -649,7 +649,7 @@
     "maintainerURL": "https://github.com/pcurt",
     "description": "Module that shows french jokes from the BlaguesAPI <a target=\"_blank\" href=\"https://www.blagues-api.fr\">https://www.blagues-api.fr</a>.",
     "issues": [],
-    "stars": 0
+    "stars": 1
   },
   {
     "name": "MMM-Block",
@@ -659,7 +659,7 @@
     "maintainerURL": "https://github.com/BKeyport",
     "description": "Quick Module to easily move modules up or down for blank space.",
     "issues": [],
-    "stars": 3
+    "stars": 4
   },
   {
     "name": "MMM-Bluebikes",
@@ -932,7 +932,9 @@
     "maintainer": "MarcLandis",
     "maintainerURL": "https://github.com/MarcLandis",
     "description": "More complicated, but also more powerful: multiple buttons, configurable notifications, different actions on short and long press.",
-    "issues": [],
+    "issues": [
+      "Issues are not enabled in the GitHub repository. So users cannot report bugs. Please enable issues in your repo."
+    ],
     "stars": 2
   },
   {
@@ -1062,7 +1064,9 @@
     "maintainer": "armybean",
     "maintainerURL": "",
     "description": "Extension for <a target=\"_blank\" href=\"https://github.com/paviro/MMM-FRITZ-Box-Callmonitor\">MMM-FRITZ-Box-Callmonitor</a>. Displays the currently active call.",
-    "issues": [],
+    "issues": [
+      "Issues are not enabled in the GitHub repository. So users cannot report bugs. Please enable issues in your repo."
+    ],
     "stars": 1
   },
   {
@@ -1671,7 +1675,7 @@
     "maintainerURL": "",
     "description": "Simple display of dad jokes from icanhazdadjoke.com.",
     "issues": [],
-    "stars": 0
+    "stars": 2
   },
   {
     "name": "MMM-DagelijksWoord",
@@ -4567,7 +4571,7 @@
     "maintainerURL": "",
     "description": "Displays live video from the International Space Station.",
     "issues": [],
-    "stars": 1
+    "stars": 3
   },
   {
     "name": "MMM-ISY",
@@ -7240,6 +7244,17 @@
     "description": "Display information from your OpenTherm gateway.",
     "issues": [],
     "stars": 2
+  },
+  {
+    "name": "MMM-OpenWeatherForecast",
+    "url": "https://github.com/jclarke0000/MMM-OpenWeatherForecast",
+    "id": "jclarke0000/MMM-OpenWeatherForecast",
+    "maintainer": "jclarke0000",
+    "maintainerURL": "",
+    "description": "Displays current, hourly and daily forecast information using data from the OpenWeather One Call API.",
+    "issues": [],
+    "outdated": "Abandoned. No reactions to issues since years. Only works with API version 2.5!",
+    "stars": 38
   },
   {
     "name": "MMM-OpenWeatherMapForecast",
@@ -10114,7 +10129,7 @@
     "maintainerURL": "https://github.com/bnitkin",
     "description": "Upcoming departures for any transit agencies that publishes GTFS.",
     "issues": [],
-    "stars": 2
+    "stars": 3
   },
   {
     "name": "MMM-TranslatedMessages",

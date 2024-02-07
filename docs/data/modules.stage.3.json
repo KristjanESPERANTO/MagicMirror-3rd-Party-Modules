@@ -304,7 +304,7 @@
     "issues": [
       "No image found."
     ],
-    "stars": 0,
+    "stars": 1,
     "tags": [
       "allsvenskan",
       "football",
@@ -606,7 +606,7 @@
     "issues": [
       "There is no `package.json`. We need this file to gather information about the module for the module list page."
     ],
-    "stars": 23
+    "stars": 24
   },
   {
     "name": "MMM-AvfallshentingOslo",
@@ -777,7 +777,7 @@
     "maintainerURL": "https://github.com/ItsMeBrille",
     "description": "Display current fuel prices at your nearest gas station in Norway.",
     "issues": [],
-    "stars": 1,
+    "stars": 2,
     "tags": [
       "fuel",
       "norway"
@@ -890,7 +890,7 @@
     "issues": [
       "There are no keywords in 'package.json'. We would use them as tags on the module list page."
     ],
-    "stars": 0,
+    "stars": 2,
     "license": "MIT",
     "image": "display.jpg"
   },
@@ -958,7 +958,7 @@
     "issues": [
       "There is no `package.json`. We need this file to gather information about the module for the module list page."
     ],
-    "stars": 0
+    "stars": 1
   },
   {
     "name": "MMM-Block",
@@ -970,7 +970,7 @@
     "issues": [
       "There is no `package.json`. We need this file to gather information about the module for the module list page."
     ],
-    "stars": 3
+    "stars": 4
   },
   {
     "name": "MMM-Bluebikes",
@@ -1352,6 +1352,7 @@
     "maintainerURL": "https://github.com/MarcLandis",
     "description": "More complicated, but also more powerful: multiple buttons, configurable notifications, different actions on short and long press.",
     "issues": [
+      "Issues are not enabled in the GitHub repository. So users cannot report bugs. Please enable issues in your repo.",
       "No image found."
     ],
     "stars": 2,
@@ -1540,6 +1541,7 @@
     "maintainerURL": "",
     "description": "Extension for <a target=\"_blank\" href=\"https://github.com/paviro/MMM-FRITZ-Box-Callmonitor\">MMM-FRITZ-Box-Callmonitor</a>. Displays the currently active call.",
     "issues": [
+      "Issues are not enabled in the GitHub repository. So users cannot report bugs. Please enable issues in your repo.",
       "There is no `package.json`. We need this file to gather information about the module for the module list page."
     ],
     "stars": 1
@@ -2390,7 +2392,7 @@
     "issues": [
       "No image found."
     ],
-    "stars": 0,
+    "stars": 2,
     "tags": [
       "jokes",
       "dad jokes"
@@ -6585,7 +6587,7 @@
     "maintainerURL": "",
     "description": "Displays live video from the International Space Station.",
     "issues": [],
-    "stars": 1,
+    "stars": 3,
     "tags": [
       "iss",
       "livestream"
@@ -10498,6 +10500,21 @@
       "There is no `package.json`. We need this file to gather information about the module for the module list page."
     ],
     "stars": 2
+  },
+  {
+    "name": "MMM-OpenWeatherForecast",
+    "url": "https://github.com/jclarke0000/MMM-OpenWeatherForecast",
+    "id": "jclarke0000/MMM-OpenWeatherForecast",
+    "maintainer": "jclarke0000",
+    "maintainerURL": "",
+    "description": "Displays current, hourly and daily forecast information using data from the OpenWeather One Call API.",
+    "issues": [
+      "There are no keywords in 'package.json'. We would use them as tags on the module list page."
+    ],
+    "outdated": "Abandoned. No reactions to issues since years. Only works with API version 2.5!",
+    "stars": 38,
+    "license": "MIT",
+    "image": "icons-iconsets.jpg"
   },
   {
     "name": "MMM-OpenWeatherMapForecast",
@@ -14667,10 +14684,19 @@
     "maintainer": "bnitkin",
     "maintainerURL": "https://github.com/bnitkin",
     "description": "Upcoming departures for any transit agencies that publishes GTFS.",
-    "issues": [
-      "There is no `package.json`. We need this file to gather information about the module for the module list page."
+    "issues": [],
+    "stars": 3,
+    "tags": [
+      "transit",
+      "gtfs",
+      "travel",
+      "public transport",
+      "train",
+      "bus",
+      "subway"
     ],
-    "stars": 2
+    "license": "MIT",
+    "image": "res-screenshot.jpg"
   },
   {
     "name": "MMM-TranslatedMessages",

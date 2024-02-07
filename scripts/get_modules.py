@@ -32,7 +32,7 @@ def get_modules():
             )
 
             if path.exists():
-                print("- I - path already exists: run `git pull`")
+                # print("- I - path already exists: run `git pull`")
                 subprocess.run(
                     f"cd {path} && git pull && cd ..", shell=True, check=False
                 )

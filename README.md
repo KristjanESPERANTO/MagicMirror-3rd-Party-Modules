@@ -75,7 +75,9 @@ _Note_: Running all scripts requires a lot of time (> 10 min) and space on your 
 
 ### create_module_list.js
 
-This script parses the list of modules from the wiki and writes it to a json file.
+This script reads the GitHub info of the modules from the respective GitHub repo and writes it to a json file.
+
+### updateGitHubApiData.js
 
 ### get_modules.py
 
@@ -149,6 +151,11 @@ How can you use it?
       ]
   }
   ```
+
+### Templates for the creation of issues
+
+- Missing keywords: <https://github.com/BrianHepler/MMM-BirdNET/issues/6>
+- Reference to the check results: <https://github.com/Fabrizz/MMM-OnSpotify/issues/48>
 
 ### Discarded ideas
 
