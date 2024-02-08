@@ -438,7 +438,7 @@
     "id": "grenagit/MMM-APOD",
     "maintainer": "grenagit",
     "maintainerURL": "",
-    "description": "Display the last Astronomy Picture Of the Day (APOD). This is an evolution of MMM-nasaastropic : supports image and video and display title, description and copyright.",
+    "description": "Display the last Astronomy Picture Of the Day (APOD). This is an evolution of MMM-nasaastropic. Supports image and video and display title, description and copyright.",
     "issues": [
       "There is no `package.json`. We need this file to gather information about the module for the module list page."
     ],
@@ -2322,9 +2322,10 @@
     "maintainerURL": "",
     "description": "Post a message to your mirror either by MagicMirror API post or manual update (entering text onscreen).",
     "issues": [
+      "Issues are not enabled in the GitHub repository. So users cannot report bugs. Please enable issues in your repo.",
       "There is no `package.json`. We need this file to gather information about the module for the module list page."
     ],
-    "stars": 0
+    "stars": 1
   },
   {
     "name": "MMM-CyanideHappiness",
@@ -2333,7 +2334,9 @@
     "maintainer": "werthdavid",
     "maintainerURL": "",
     "description": "Displays the daily Cyanide&amp;Happiness Comic.",
-    "issues": [],
+    "issues": [
+      "Issues are not enabled in the GitHub repository. So users cannot report bugs. Please enable issues in your repo."
+    ],
     "stars": 3,
     "tags": [
       "cyanide",
@@ -2436,6 +2439,7 @@
     "maintainerURL": "",
     "description": "Forked from MMM-Daikin to work with Daikin Airbase controllers (wifi air conditioner controllers used in Australia/New Zealand regions).",
     "issues": [
+      "Issues are not enabled in the GitHub repository. So users cannot report bugs. Please enable issues in your repo.",
       "There is no `package.json`. We need this file to gather information about the module for the module list page."
     ],
     "stars": 0
@@ -5144,10 +5148,7 @@
     "maintainer": "ferferga",
     "maintainerURL": "",
     "description": "See what's playing in your Google Cast device.",
-    "issues": [
-      "`package.json` issue: license should be a valid SPDX license expression",
-      "No compatible or wrong license field in 'package.json'. Without that, we can't use an image."
-    ],
+    "issues": [],
     "stars": 23,
     "tags": [
       "google",
@@ -5155,7 +5156,8 @@
       "multimedia",
       "connected home"
     ],
-    "license": "GPL-3"
+    "license": "GPL-3.0-only",
+    "image": "mockup-sample_cover.jpg"
   },
   {
     "name": "MMM-GoogleDocs-Notes",
@@ -8536,7 +8538,7 @@
     "id": "coderpussy/MMM-Mopidy-MPD",
     "maintainer": "coderpussy",
     "maintainerURL": "",
-    "description": "Same like MMM-MPD but restyled and additional with volume level and played time.",
+    "description": "Uses MPD to show the state and playlist of your music player. Fork of MMM-MPD but restyled and additional with volume level and played time.",
     "issues": [
       "`package.json` issue: No repository field.",
       "`package.json` issue: license should be a valid SPDX license expression",
@@ -8680,6 +8682,7 @@
       "There are no keywords in 'package.json'. We would use them as tags on the module list page.",
       "No compatible or wrong license field in 'package.json'. Without that, we can't use an image."
     ],
+    "outdated": "Abandoned. No reactions to issues since years. Seems not to work anymore. Use MMM-Mopidy-MPD instead.",
     "stars": 13,
     "license": "MIT License"
   },
@@ -9383,6 +9386,7 @@
       "`package.json` issue: license should be a valid SPDX license expression",
       "No compatible or wrong license field in 'package.json'. Without that, we can't use an image."
     ],
+    "outdated": "Abandoned. No reactions to issues and PRs since years. Uses deprecated package 'request'. Use MMM-APOD instead.",
     "stars": 9,
     "tags": [
       "nasa",

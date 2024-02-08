@@ -155,6 +155,7 @@ How can you use it?
 ### Templates for the creation of issues
 
 - Missing keywords: <https://github.com/BrianHepler/MMM-BirdNET/issues/6>
+- Missing license file: <https://github.com/grabenhenrich/MMM-Space/issues/1>
 - Reference to the check results: <https://github.com/Fabrizz/MMM-OnSpotify/issues/48>
 
 ### Discarded ideas

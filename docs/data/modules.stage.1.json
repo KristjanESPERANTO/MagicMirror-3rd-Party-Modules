@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "2024-02-07T20:25:23.643Z",
+  "lastUpdate": "2024-02-08T16:28:38.227Z",
   "modules": [
     {
       "name": "MMM-01ZM",
@@ -259,7 +259,7 @@
       "id": "grenagit/MMM-APOD",
       "maintainer": "grenagit",
       "maintainerURL": "",
-      "description": "Display the last Astronomy Picture Of the Day (APOD). This is an evolution of MMM-nasaastropic : supports image and video and display title, description and copyright.",
+      "description": "Display the last Astronomy Picture Of the Day (APOD). This is an evolution of MMM-nasaastropic. Supports image and video and display title, description and copyright.",
       "issues": []
     },
     {
@@ -5342,7 +5342,7 @@
       "id": "coderpussy/MMM-Mopidy-MPD",
       "maintainer": "coderpussy",
       "maintainerURL": "",
-      "description": "Same like MMM-MPD but restyled and additional with volume level and played time.",
+      "description": "Uses MPD to show the state and playlist of your music player. Fork of MMM-MPD but restyled and additional with volume level and played time.",
       "issues": []
     },
     {
@@ -5425,7 +5425,8 @@
       "maintainer": "timjong93",
       "maintainerURL": "",
       "description": "Uses MPD to show the state and playlist of your music player.",
-      "issues": []
+      "issues": [],
+      "outdated": "Abandoned. No reactions to issues since years. Seems not to work anymore. Use MMM-Mopidy-MPD instead."
     },
     {
       "name": "MMM-MplayerRadio",
@@ -5850,7 +5851,8 @@
       "maintainer": "nebulx29",
       "maintainerURL": "",
       "description": "Display NASA's astronomy picture of the day.",
-      "issues": []
+      "issues": [],
+      "outdated": "Abandoned. No reactions to issues and PRs since years. Uses deprecated package 'request'. Use MMM-APOD instead."
     },
     {
       "name": "MMM-NatureCalendar",

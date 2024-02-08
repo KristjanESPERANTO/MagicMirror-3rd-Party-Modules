@@ -426,7 +426,7 @@
     "id": "grenagit/MMM-APOD",
     "maintainer": "grenagit",
     "maintainerURL": "",
-    "description": "Display the last Astronomy Picture Of the Day (APOD). This is an evolution of MMM-nasaastropic : supports image and video and display title, description and copyright.",
+    "description": "Display the last Astronomy Picture Of the Day (APOD). This is an evolution of MMM-nasaastropic. Supports image and video and display title, description and copyright.",
     "issues": 6,
     "stars": 11,
     "lastCommit": "2020-07-07T12:24:07+02:00"
@@ -2200,8 +2200,8 @@
     "maintainer": "jpcaldwell30",
     "maintainerURL": "",
     "description": "Post a message to your mirror either by MagicMirror API post or manual update (entering text onscreen).",
-    "issues": 8,
-    "stars": 0,
+    "issues": 9,
+    "stars": 1,
     "lastCommit": "2023-10-27T15:13:30-04:00"
   },
   {
@@ -2211,7 +2211,7 @@
     "maintainer": "werthdavid",
     "maintainerURL": "",
     "description": "Displays the daily Cyanide&amp;Happiness Comic.",
-    "issues": 4,
+    "issues": 5,
     "stars": 3,
     "tags": [
       "cyanide",
@@ -2309,7 +2309,7 @@
     "maintainer": "matt-thurling",
     "maintainerURL": "",
     "description": "Forked from MMM-Daikin to work with Daikin Airbase controllers (wifi air conditioner controllers used in Australia/New Zealand regions).",
-    "issues": 8,
+    "issues": 9,
     "stars": 0,
     "lastCommit": "2023-08-26T08:28:53+10:00"
   },
@@ -4904,7 +4904,7 @@
     "maintainer": "ferferga",
     "maintainerURL": "",
     "description": "See what's playing in your Google Cast device.",
-    "issues": 5,
+    "issues": 3,
     "stars": 23,
     "tags": [
       "google",
@@ -4912,8 +4912,9 @@
       "multimedia",
       "connected home"
     ],
-    "license": "GPL-3",
-    "lastCommit": "2020-04-29T14:04:02+02:00"
+    "license": "GPL-3.0-only",
+    "image": "mockup-sample_cover.jpg",
+    "lastCommit": "2024-02-07T22:59:29+01:00"
   },
   {
     "name": "MMM-GoogleDocs-Notes",
@@ -5093,7 +5094,7 @@
     ],
     "license": "MIT",
     "image": "screen-01-minimal_look.jpg",
-    "lastCommit": "2024-02-05T01:28:29+01:00"
+    "lastCommit": "2024-02-08T00:22:18+01:00"
   },
   {
     "name": "MMM-GoogleTTS",
@@ -8111,7 +8112,7 @@
     "id": "coderpussy/MMM-Mopidy-MPD",
     "maintainer": "coderpussy",
     "maintainerURL": "",
-    "description": "Same like MMM-MPD but restyled and additional with volume level and played time.",
+    "description": "Uses MPD to show the state and playlist of your music player. Fork of MMM-MPD but restyled and additional with volume level and played time.",
     "issues": 9,
     "stars": 2,
     "license": "MIT License",
@@ -8233,6 +8234,7 @@
     "maintainerURL": "",
     "description": "Uses MPD to show the state and playlist of your music player.",
     "issues": 8,
+    "outdated": "Abandoned. No reactions to issues since years. Seems not to work anymore. Use MMM-Mopidy-MPD instead.",
     "stars": 13,
     "license": "MIT License",
     "lastCommit": "2018-12-23T11:53:47+01:00"
@@ -8906,6 +8908,7 @@
     "maintainerURL": "",
     "description": "Display NASA's astronomy picture of the day.",
     "issues": 8,
+    "outdated": "Abandoned. No reactions to issues and PRs since years. Uses deprecated package 'request'. Use MMM-APOD instead.",
     "stars": 9,
     "tags": [
       "nasa",
