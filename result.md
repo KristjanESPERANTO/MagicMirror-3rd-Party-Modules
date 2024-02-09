@@ -1,6 +1,6 @@
 # Result of the module analysis
 
-Last update: 2024-02-08T17:39:09+01:00
+Last update: 2024-02-09T20:35:06+01:00
 
 ## Statistics
 
@@ -9,7 +9,7 @@ Last update: 2024-02-08T17:39:09+01:00
 | modules analyzed     |   1118   |
 | maintainer           |    630   |
 | modules with issues  |   1112   |
-| issues               |   7344   |
+| issues               |   7346   |
 | modules at github    |   1109   |
 | modules at gitlab    |      8   |
 | modules at bitbucket |      1   |
@@ -755,10 +755,10 @@ Last update: 2024-02-08T17:39:09+01:00
 
 1. Recommendation: Replace eslintrc by new flat config.
 2. Information: There are updates for 8 dependencie(s):
-   - @stylistic/eslint-plugin             ^1.5.3  →     ^1.6.0
+   - @stylistic/eslint-plugin             ^1.5.3  →     ^1.6.1
    - @types/express                     ^4.17.11  →   ^4.17.21
    - @types/magicmirror-module           ^2.16.0  →    ^2.16.5
-   - @types/node                       ^14.14.22  →  ^20.11.16
+   - @types/node                       ^14.14.22  →  ^20.11.17
    - @typescript-eslint/eslint-plugin    ^6.19.1  →    ^6.21.0
    - @typescript-eslint/parser           ^6.19.1  →    ^6.21.0
    - prettier                             ^3.2.4  →     ^3.2.5
@@ -2283,13 +2283,8 @@ Last update: 2024-02-08T17:39:09+01:00
 
 ### [EXT-Detector by bugsounet](https://github.com/bugsounet/EXT-Detector)
 
-1. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
-2. Information: There are updates for 4 dependencie(s):
-   - @mapbox/node-pre-gyp        ^1.0.10  →    ^1.0.11
-   - @picovoice/porcupine-node    ^3.0.1  →     ^3.0.2
-   - @types/node                ^20.10.6  →  ^20.11.16
-   - esbuild                    ^0.19.11  →    ^0.20.0
-
+1. Deprecated: Found ` electron-rebuild` in file `postinstall.sh`: Replace it with `@electron/rebuild`
+2. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
 
 ### [EXT-FreeboxTV by bugsounet](https://github.com/bugsounet/EXT-FreeboxTV)
 
@@ -2349,8 +2344,9 @@ Last update: 2024-02-08T17:39:09+01:00
 ### [EXT-Pir by bugsounet](https://github.com/bugsounet/EXT-Pir)
 
 1. No image found.
-2. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
-3. The branch name is 'master'. Consider renaming it to 'main'.
+2. Deprecated: Found ` electron-rebuild` in file `postinstall.sh`: Replace it with `@electron/rebuild`
+3. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
+4. The branch name is 'master'. Consider renaming it to 'main'.
 
 ### [EXT-RadioPlayer by bugsounet](https://github.com/bugsounet/EXT-RadioPlayer)
 
@@ -3331,9 +3327,10 @@ Last update: 2024-02-08T17:39:09+01:00
 
 ### [MMM-GoogleTrafficTimes by Jacopo1891](https://github.com/Jacopo1891/MMM-GoogleTrafficTimes)
 
-1. Warning: No LICENSE file.
-2. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
-3. The branch name is 'master'. Consider renaming it to 'main'.
+1. Typo: Found `MagicMirror2` in file `README.md`: Replace it with `MagicMirror²`.
+2. Warning: No LICENSE file.
+3. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
+4. The branch name is 'master'. Consider renaming it to 'main'.
 
 ### [MMM-GoogleTTS by MMRIZE](https://github.com/MMRIZE/MMM-GoogleTTS)
 
@@ -3731,6 +3728,7 @@ Last update: 2024-02-08T17:39:09+01:00
 
 ### [MMM-HTTPRequestDisplay by Eunanibus](https://github.com/Eunanibus/MMM-HTTPRequestDisplay)
 
+0. This module is outdated: Abandoned. No reactions to issues since years. Seems not to work anymore.
 1. There is no `package.json`. We need this file to gather information about the module for the module list page.
 2. Typo: Found `Magic Mirror` in file `MMM-HTTPRequestDisplay.js`: Replace it with `MagicMirror²`.
 3. Recommendation: Found `XMLHttpRequest` in file `MMM-HTTPRequestDisplay.js`: Replace it with built-in fetch.
@@ -7203,8 +7201,11 @@ Last update: 2024-02-08T17:39:09+01:00
 
 ### [MMM-Pir by bugsounet](https://github.com/bugsounet/MMM-Pir)
 
-1. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
-2. The branch name is 'master'. Consider renaming it to 'main'.
+1. Recommendation: Found `new Date()` in file `long-press-event.js`: Replace it by `new Date(Date.now())`: [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
+2. Deprecated: Found `new Buffer(` in file `progressbar.js`: This is deprecated. Please update: <https://nodejs.org/api/buffer.html>.
+3. Deprecated: Found ` electron-rebuild` in file `postinstall.sh`: Replace it with `@electron/rebuild`
+4. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
+5. The branch name is 'master'. Consider renaming it to 'main'.
 
 ### [MMM-PIR by mboskamp](https://github.com/mboskamp/MMM-PIR)
 
@@ -8997,6 +8998,7 @@ Last update: 2024-02-08T17:39:09+01:00
 
 ### [MMM-stib by danito](https://github.com/danito/MMM-stib)
 
+0. This module is outdated: Deprecated. API no longer works. Depends on deprecated module. Not recommended installation instaructions (globally). Use module <strong>MMM-stib2</strong> instead.
 1. There is no `package.json`. We need this file to gather information about the module for the module list page.
 2. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
 3. Typo: Found `Magic Mirror` in file `stib.js`: Replace it with `MagicMirror²`.
@@ -10457,12 +10459,7 @@ Last update: 2024-02-08T17:39:09+01:00
 
 ### [MMM-WordOfTheDay by jmwyds](https://github.com/jmwyds/MMM-WordOfTheDay)
 
-1. There is no `package.json`. We need this file to gather information about the module for the module list page.
-2. Typo: Found `Magic Mirror` in file `README.md`: Replace it with `MagicMirror²`.
-3. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
-4. Deprecated: Found `require('request')` in file `node_helper.js`: Replace it with built-in fetch.
-5. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
-6. The branch name is 'master'. Consider renaming it to 'main'.
+1. The branch name is 'master'. Consider renaming it to 'main'.
 
 ### [worldclock by ulrichwisser](https://github.com/ulrichwisser/worldclock)
 

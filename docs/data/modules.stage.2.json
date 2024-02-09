@@ -4145,6 +4145,7 @@
     "maintainerURL": "",
     "description": "Display XML data from a HTTP response.",
     "issues": [],
+    "outdated": "Abandoned. No reactions to issues since years. Seems not to work anymore.",
     "stars": 18
   },
   {
@@ -9505,6 +9506,7 @@
     "maintainerURL": "",
     "description": "Display the next transports for any given STIB (Brussel/Belgium) station.",
     "issues": [],
+    "outdated": "Deprecated. API no longer works. Depends on deprecated module. Not recommended installation instaructions (globally). Use module <strong>MMM-stib2</strong> instead.",
     "stars": 4
   },
   {

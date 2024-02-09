@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "2024-02-08T16:28:38.227Z",
+  "lastUpdate": "2024-02-09T19:25:02.386Z",
   "modules": [
     {
       "name": "MMM-01ZM",
@@ -3727,7 +3727,8 @@
       "maintainer": "Eunanibus",
       "maintainerURL": "",
       "description": "Display XML data from a HTTP response.",
-      "issues": []
+      "issues": [],
+      "outdated": "Abandoned. No reactions to issues since years. Seems not to work anymore."
     },
     {
       "name": "MMM-Hue",
@@ -8555,7 +8556,8 @@
       "maintainer": "danito",
       "maintainerURL": "",
       "description": "Display the next transports for any given STIB (Brussel/Belgium) station.",
-      "issues": []
+      "issues": [],
+      "outdated": "Deprecated. API no longer works. Depends on deprecated module. Not recommended installation instaructions (globally). Use module <strong>MMM-stib2</strong> instead."
     },
     {
       "name": "MMM-stib2",
