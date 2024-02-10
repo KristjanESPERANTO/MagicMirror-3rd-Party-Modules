@@ -293,14 +293,14 @@ def check_modules():
                 module["issues"] = 1
 
         # Lift modules with many stars in the default sort order.
-        if module['stars'] >= 50 and module["issues"] > 0:
+        if module.get('stars', 0) >= 50 and module["issues"] > 0:
             module['issues'] = max(
                 1, module['issues'] - (module['stars'] // 50))
 
     print(
         f"{stats['moduleCounter']} modules analyzed. For results see file result.md.           ")
 
-    # Prepearing the markdown output
+    # Preparing the markdown output
     markdown_output = "# Result of the module analysis\n\n"
     markdown_output += f"Last update: {stats['lastUpdate']}\n\n"
     markdown_output += "## Statistics\n\n"
