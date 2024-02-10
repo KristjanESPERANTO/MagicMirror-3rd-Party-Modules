@@ -2051,7 +2051,8 @@
     "maintainer": "drventure",
     "maintainerURL": "https://github.com/drventure",
     "description": "Display status of mountain bike trails via the trailforks.com website.",
-    "issues": []
+    "issues": [],
+    "stars": 2
   },
   {
     "name": "MMM-Dreambox",
@@ -5005,7 +5006,8 @@
     "maintainer": "Fabrizz",
     "maintainerURL": "https://github.com/Fabrizz",
     "description": "Show the lyrics of your current Spotify track. Connects to <a target=\"_blank\" href=\"https://github.com/Fabrizz/MMM-OnSpotify\">MMM-OnSpotify</a>, customizable everything!",
-    "issues": []
+    "issues": [],
+    "stars": 6
   },
   {
     "name": "MMM-LKY-TIC",
@@ -9920,7 +9922,10 @@
     "maintainer": "vita10gy",
     "maintainerURL": "https://github.com/vita10gy",
     "description": "Display wait times and upcoming park hours from theme parks including Disney Parks, Universal Studios, SeaWorld, Six Flags, and dozens more.",
-    "issues": []
+    "issues": [
+      "Issues are not enabled in the GitHub repository. So users cannot report bugs. Please enable issues in your repo."
+    ],
+    "stars": 1
   },
   {
     "name": "MMM-Thingiverse",

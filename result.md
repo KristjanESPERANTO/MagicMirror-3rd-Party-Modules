@@ -1,6 +1,6 @@
 # Result of the module analysis
 
-Last update: 2024-02-10T12:04:11+01:00
+Last update: 2024-02-10T15:11:48+01:00
 
 ## Statistics
 
@@ -9,7 +9,7 @@ Last update: 2024-02-10T12:04:11+01:00
 | modules analyzed     |   1120   |
 | maintainer           |    631   |
 | modules with issues  |   1114   |
-| issues               |   7364   |
+| issues               |   7361   |
 | modules at github    |   1111   |
 | modules at gitlab    |      8   |
 | modules at bitbucket |      1   |
@@ -617,11 +617,9 @@ Last update: 2024-02-10T12:04:11+01:00
 
 ### [MMM-BlaguesAPI by pcurt](https://github.com/pcurt/MMM-BlaguesAPI)
 
-1. There is no `package.json`. We need this file to gather information about the module for the module list page.
-2. Outdated: Found `MichMich/MagicMirror` in file `README.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
-3. Warning: No LICENSE file.
-4. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
-5. The branch name is 'master'. Consider renaming it to 'main'.
+1. Outdated: Found `MichMich/MagicMirror` in file `README.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
+2. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
+3. The branch name is 'master'. Consider renaming it to 'main'.
 
 ### [MMM-Block by BKeyport](https://github.com/BKeyport/MMM-Block)
 
@@ -3173,9 +3171,10 @@ Last update: 2024-02-10T12:04:11+01:00
 ### [MMM-GoogleAssistant by bugsounet](https://github.com/bugsounet/MMM-GoogleAssistant)
 
 1. Recommendation: Found `require("http")` in file `website.js`: Replace "http" by "node:http".
-2. Deprecated: Found `"grunt"` in file `fa-brands-400.svg`: Grunt is practically unmaintained. Move on to something better.
-3. Recommendation: Found `XMLHttpRequest` in file `jquery.min.js`: Replace it with built-in fetch.
-4. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
+2. Deprecated: Found ` electron-rebuild` in file `postinstall.sh`: Replace it with `@electron/rebuild`
+3. Deprecated: Found `"grunt"` in file `fa-brands-400.svg`: Grunt is practically unmaintained. Move on to something better.
+4. Recommendation: Found `XMLHttpRequest` in file `jquery.min.js`: Replace it with built-in fetch.
+5. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
 
 ### [MMM-GoogleAssistant by gauravsacc](https://github.com/gauravsacc/MMM-GoogleAssistant)
 
@@ -7618,11 +7617,8 @@ Last update: 2024-02-10T12:04:11+01:00
 
 ### [MMM-PublicTransportBerlin by deg0nz](https://github.com/deg0nz/MMM-PublicTransportBerlin)
 
-1. Recommendation: Found `new Date()` in file `BvgFetcher.js`: Replace it by `new Date(Date.now())`: [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
-2. Outdated: Found `MichMich/MagicMirror` in file `README.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
-3. Recommendation: Found `"eslint-plugin-json"` in file `package.json`: Replace it by `eslint-plugin-jsonc`.
-4. Recommendation: Replace eslintrc by new flat config.
-5. The branch name is 'master'. Consider renaming it to 'main'.
+1. Recommendation: Replace eslintrc by new flat config.
+2. The branch name is 'master'. Consider renaming it to 'main'.
 
 ### [MMM-PublicTransportVVO by ChristianGeie](https://github.com/ChristianGeie/MMM-PublicTransportVVO)
 
@@ -9392,17 +9388,18 @@ Last update: 2024-02-10T12:04:11+01:00
 
 ### [MMM-ThemeParkWaitTimes by vita10gy](https://github.com/vita10gy/MMM-ThemeParkWaitTimes)
 
-1. `package.json` issue: No repository field.
-2. There are no keywords in 'package.json'. We would use them as tags on the module list page.
-3. Recommendation: Found `new Date()` in file `MMM-ThemeParkWaitTimes.js`: Replace it by `new Date(Date.now())`: [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
-4. Typo: Found `Magic Mirror` in file `README.md`: Replace it with `MagicMirror²`.
-5. Typo: Found `<sup>2</sup>` in file `README.md`: Replace it with `²`.`.
-6. Outdated: Found `MichMich/MagicMirror` in file `README.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
-7. Recommendation: Found `axios` in file `node_helper.js`: Replace it with built-in fetch.
-8. Typo: Found `MagicMirror2` in file `package.json`: Replace it with `MagicMirror²`.
-9. Recommendation: Found `axios` in file `package.json`: Replace it with built-in fetch.
-10. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
-11. The branch name is 'master'. Consider renaming it to 'main'.
+1. Issues are not enabled in the GitHub repository. So users cannot report bugs. Please enable issues in your repo.
+2. `package.json` issue: No repository field.
+3. There are no keywords in 'package.json'. We would use them as tags on the module list page.
+4. Recommendation: Found `new Date()` in file `MMM-ThemeParkWaitTimes.js`: Replace it by `new Date(Date.now())`: [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
+5. Typo: Found `Magic Mirror` in file `README.md`: Replace it with `MagicMirror²`.
+6. Typo: Found `<sup>2</sup>` in file `README.md`: Replace it with `²`.`.
+7. Outdated: Found `MichMich/MagicMirror` in file `README.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
+8. Recommendation: Found `axios` in file `node_helper.js`: Replace it with built-in fetch.
+9. Typo: Found `MagicMirror2` in file `package.json`: Replace it with `MagicMirror²`.
+10. Recommendation: Found `axios` in file `package.json`: Replace it with built-in fetch.
+11. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
+12. The branch name is 'master'. Consider renaming it to 'main'.
 
 ### [MMM-Thingiverse by appdevelopmentandsuch](https://github.com/appdevelopmentandsuch/MMM-Thingiverse)
 

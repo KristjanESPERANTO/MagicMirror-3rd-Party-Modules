@@ -911,9 +911,14 @@
     "maintainer": "pcurt",
     "maintainerURL": "https://github.com/pcurt",
     "description": "Module that shows french jokes from the BlaguesAPI <a target=\"_blank\" href=\"https://www.blagues-api.fr\">https://www.blagues-api.fr</a>.",
-    "issues": 5,
+    "issues": 3,
     "stars": 1,
-    "lastCommit": "2024-01-08T09:48:54+01:00"
+    "tags": [
+      "jokes"
+    ],
+    "license": "MIT",
+    "image": "screenshot.jpg",
+    "lastCommit": "2024-02-10T14:11:37+01:00"
   },
   {
     "name": "MMM-Block",
@@ -4842,7 +4847,7 @@
     "maintainer": "bugsounet",
     "maintainerURL": "https://wiki.bugsounet.fr",
     "description": "MMM-GoogleAssistant is an real embedded Google assistant on MagicMirror\u00b2 with many <a target=\"_blank\" href=\"#extended-plugins-for-mmm-googleassistant-by-bugsounet\">plugins</a> . [Maintained].",
-    "issues": 3,
+    "issues": 4,
     "stars": 79,
     "tags": [
       "google assistant",
@@ -4854,7 +4859,7 @@
     ],
     "license": "MIT",
     "image": "resources-previewFS.jpg",
-    "lastCommit": "2024-02-04T18:45:24+01:00"
+    "lastCommit": "2024-02-10T12:43:08+01:00"
   },
   {
     "name": "MMM-GoogleAssistant",
@@ -6881,6 +6886,7 @@
     "maintainerURL": "https://github.com/Fabrizz",
     "description": "Show the lyrics of your current Spotify track. Connects to <a target=\"_blank\" href=\"https://github.com/Fabrizz/MMM-OnSpotify\">MMM-OnSpotify</a>, customizable everything!",
     "issues": 6,
+    "stars": 6,
     "tags": [
       "spotify lyrics",
       "lyrics",
@@ -11075,7 +11081,7 @@
     "maintainer": "deg0nz",
     "maintainerURL": "",
     "description": "Display departures for public transport in Berlin and Brandenburg (Covers VBB Area).",
-    "issues": 5,
+    "issues": 2,
     "stars": 39,
     "tags": [
       "public transport",
@@ -11084,7 +11090,7 @@
     ],
     "license": "MIT",
     "image": "img-MMM-PublicTransport_screenshot.jpg",
-    "lastCommit": "2024-02-01T10:05:41+01:00"
+    "lastCommit": "2024-02-10T12:53:20+01:00"
   },
   {
     "name": "MMM-PublicTransportHafas",
@@ -13662,7 +13668,8 @@
     "maintainer": "vita10gy",
     "maintainerURL": "https://github.com/vita10gy",
     "description": "Display wait times and upcoming park hours from theme parks including Disney Parks, Universal Studios, SeaWorld, Six Flags, and dozens more.",
-    "issues": 11,
+    "issues": 12,
+    "stars": 1,
     "license": "MIT",
     "image": "wait-times-demo.jpg",
     "lastCommit": "2024-02-06T17:10:34-05:00"

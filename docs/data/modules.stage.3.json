@@ -955,10 +955,13 @@
     "maintainer": "pcurt",
     "maintainerURL": "https://github.com/pcurt",
     "description": "Module that shows french jokes from the BlaguesAPI <a target=\"_blank\" href=\"https://www.blagues-api.fr\">https://www.blagues-api.fr</a>.",
-    "issues": [
-      "There is no `package.json`. We need this file to gather information about the module for the module list page."
+    "issues": [],
+    "stars": 1,
+    "tags": [
+      "jokes"
     ],
-    "stars": 1
+    "license": "MIT",
+    "image": "screenshot.jpg"
   },
   {
     "name": "MMM-Block",
@@ -2895,6 +2898,7 @@
       "`package.json` issue: No repository field.",
       "There are no specific keywords in 'package.json'. We would use them as tags on the module list page. Add a few meaningful terms to the keywords in the package.json. Not just “magicmirror” or “module”."
     ],
+    "stars": 2,
     "license": "ISC",
     "image": "MMM-Dorba-Trails.jpg"
   },
@@ -7216,6 +7220,7 @@
     "issues": [
       "`package.json` issue: No description"
     ],
+    "stars": 6,
     "tags": [
       "spotify lyrics",
       "lyrics",
@@ -14376,9 +14381,11 @@
     "maintainerURL": "https://github.com/vita10gy",
     "description": "Display wait times and upcoming park hours from theme parks including Disney Parks, Universal Studios, SeaWorld, Six Flags, and dozens more.",
     "issues": [
+      "Issues are not enabled in the GitHub repository. So users cannot report bugs. Please enable issues in your repo.",
       "`package.json` issue: No repository field.",
       "There are no keywords in 'package.json'. We would use them as tags on the module list page."
     ],
+    "stars": 1,
     "license": "MIT",
     "image": "wait-times-demo.jpg"
   },
