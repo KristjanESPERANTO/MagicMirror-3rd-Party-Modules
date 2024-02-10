@@ -669,7 +669,7 @@
     "maintainerURL": "https://github.com/jschless",
     "description": "Displays the number of available bikes at selected stations of the Boston public bike system (Bluebikes).",
     "issues": [],
-    "stars": 0
+    "stars": 1
   },
   {
     "name": "MMM-Bluelinky",
@@ -1097,7 +1097,7 @@
     "maintainerURL": "",
     "description": "Display a webcamera video feed.",
     "issues": [],
-    "stars": 0
+    "stars": 1
   },
   {
     "name": "MMM-CanadianPublicWeatherAlerts",
@@ -1885,7 +1885,9 @@
     "maintainer": "kyle-kelly",
     "maintainerURL": "https://github.com/kyle-kelly",
     "description": "A fork of <a target=\"_blank\" href=\"https://github.com/AdamMoses-GitHub/MMM-DCMetroTrainTimes\">MMM-DCMetroTrainTimes</a> (above) that also displays arrival times for buses.",
-    "issues": [],
+    "issues": [
+      "Issues are not enabled in the GitHub repository. So users cannot report bugs. Please enable issues in your repo."
+    ],
     "stars": 0
   },
   {
@@ -1935,7 +1937,9 @@
     "maintainer": "grenagit",
     "maintainerURL": "",
     "description": "Display the current temperature and humidity from DHT11, DHT22 and AM2302 sensors.",
-    "issues": [],
+    "issues": [
+      "Issues are not enabled in the GitHub repository. So users cannot report bugs. Please enable issues in your repo."
+    ],
     "stars": 3
   },
   {
@@ -2047,8 +2051,7 @@
     "maintainer": "drventure",
     "maintainerURL": "https://github.com/drventure",
     "description": "Display status of mountain bike trails via the trailforks.com website.",
-    "issues": [],
-    "stars": 2
+    "issues": []
   },
   {
     "name": "MMM-Dreambox",
@@ -4996,6 +4999,15 @@
     "stars": 8
   },
   {
+    "name": "MMM-LiveLyrics",
+    "url": "https://github.com/Fabrizz/MMM-LiveLyrics",
+    "id": "Fabrizz/MMM-LiveLyrics",
+    "maintainer": "Fabrizz",
+    "maintainerURL": "https://github.com/Fabrizz",
+    "description": "Show the lyrics of your current Spotify track. Connects to <a target=\"_blank\" href=\"https://github.com/Fabrizz/MMM-OnSpotify\">MMM-OnSpotify</a>, customizable everything!",
+    "issues": []
+  },
+  {
     "name": "MMM-LKY-TIC",
     "url": "https://github.com/djey47/MMM-LKY-TIC",
     "id": "djey47/MMM-LKY-TIC",
@@ -7160,7 +7172,7 @@
     "id": "Fabrizz/MMM-OnSpotify",
     "maintainer": "Fabrizz",
     "maintainerURL": "https://github.com/Fabrizz",
-    "description": "Highly customizable module that displays what you are listening to in Spotify. Compatible with MMM-LiveLyrics and DynamicTheming.",
+    "description": "Highly customizable module that displays what you are listening to in Spotify. Works with <a target=\"_blank\" href=\"https://github.com/Fabrizz/MMM-LiveLyrics\">MMM-LiveLyrics</a> and allows theming other modules!.",
     "issues": [],
     "stars": 35
   },
@@ -8630,7 +8642,7 @@
     "maintainerURL": "",
     "description": "Displays a list of clients connected to your router.",
     "issues": [],
-    "stars": 0
+    "stars": 1
   },
   {
     "name": "MMM-ROVA-trashcalendar",
@@ -9900,6 +9912,15 @@
     "description": "Status board for TFL (Transport For London) lines including London Tube, Elizabeth line, Tram, DLR, Bus, River Coach.",
     "issues": [],
     "stars": 6
+  },
+  {
+    "name": "MMM-ThemeParkWaitTimes",
+    "url": "https://github.com/vita10gy/MMM-ThemeParkWaitTimes",
+    "id": "vita10gy/MMM-ThemeParkWaitTimes",
+    "maintainer": "vita10gy",
+    "maintainerURL": "https://github.com/vita10gy",
+    "description": "Display wait times and upcoming park hours from theme parks including Disney Parks, Universal Studios, SeaWorld, Six Flags, and dozens more.",
+    "issues": []
   },
   {
     "name": "MMM-Thingiverse",

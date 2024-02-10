@@ -980,7 +980,7 @@
     "maintainerURL": "https://github.com/jschless",
     "description": "Displays the number of available bikes at selected stations of the Boston public bike system (Bluebikes).",
     "issues": [],
-    "stars": 0,
+    "stars": 1,
     "tags": [
       "bluebikes",
       "transit"
@@ -1580,7 +1580,7 @@
     "issues": [
       "No image found."
     ],
-    "stars": 0,
+    "stars": 1,
     "tags": [
       "email",
       "camera",
@@ -2664,6 +2664,7 @@
     "maintainerURL": "https://github.com/kyle-kelly",
     "description": "A fork of <a target=\"_blank\" href=\"https://github.com/AdamMoses-GitHub/MMM-DCMetroTrainTimes\">MMM-DCMetroTrainTimes</a> (above) that also displays arrival times for buses.",
     "issues": [
+      "Issues are not enabled in the GitHub repository. So users cannot report bugs. Please enable issues in your repo.",
       "There is no `package.json`. We need this file to gather information about the module for the module list page."
     ],
     "stars": 0
@@ -2723,7 +2724,9 @@
     "maintainer": "grenagit",
     "maintainerURL": "",
     "description": "Display the current temperature and humidity from DHT11, DHT22 and AM2302 sensors.",
-    "issues": [],
+    "issues": [
+      "Issues are not enabled in the GitHub repository. So users cannot report bugs. Please enable issues in your repo."
+    ],
     "stars": 3,
     "tags": [
       "temperature",
@@ -2892,7 +2895,6 @@
       "`package.json` issue: No repository field.",
       "There are no specific keywords in 'package.json'. We would use them as tags on the module list page. Add a few meaningful terms to the keywords in the package.json. Not just “magicmirror” or “module”."
     ],
-    "stars": 2,
     "license": "ISC",
     "image": "MMM-Dorba-Trails.jpg"
   },
@@ -7205,6 +7207,24 @@
     "image": "Screenshots-Schematics-Potentiometer.jpg"
   },
   {
+    "name": "MMM-LiveLyrics",
+    "url": "https://github.com/Fabrizz/MMM-LiveLyrics",
+    "id": "Fabrizz/MMM-LiveLyrics",
+    "maintainer": "Fabrizz",
+    "maintainerURL": "https://github.com/Fabrizz",
+    "description": "Show the lyrics of your current Spotify track. Connects to <a target=\"_blank\" href=\"https://github.com/Fabrizz/MMM-OnSpotify\">MMM-OnSpotify</a>, customizable everything!",
+    "issues": [
+      "`package.json` issue: No description"
+    ],
+    "tags": [
+      "spotify lyrics",
+      "lyrics",
+      "song lyrics"
+    ],
+    "license": "MIT",
+    "image": ".github-content-banner-api.jpg"
+  },
+  {
     "name": "MMM-LKY-TIC",
     "url": "https://github.com/djey47/MMM-LKY-TIC",
     "id": "djey47/MMM-LKY-TIC",
@@ -10368,7 +10388,7 @@
     "id": "Fabrizz/MMM-OnSpotify",
     "maintainer": "Fabrizz",
     "maintainerURL": "https://github.com/Fabrizz",
-    "description": "Highly customizable module that displays what you are listening to in Spotify. Compatible with MMM-LiveLyrics and DynamicTheming.",
+    "description": "Highly customizable module that displays what you are listening to in Spotify. Works with <a target=\"_blank\" href=\"https://github.com/Fabrizz/MMM-LiveLyrics\">MMM-LiveLyrics</a> and allows theming other modules!.",
     "issues": [],
     "stars": 35,
     "tags": [
@@ -12479,7 +12499,7 @@
     "issues": [
       "There are no keywords in 'package.json'. We would use them as tags on the module list page."
     ],
-    "stars": 0,
+    "stars": 1,
     "license": "MIT",
     "image": "screenshot.jpg"
   },
@@ -14347,6 +14367,20 @@
       "There is no `package.json`. We need this file to gather information about the module for the module list page."
     ],
     "stars": 6
+  },
+  {
+    "name": "MMM-ThemeParkWaitTimes",
+    "url": "https://github.com/vita10gy/MMM-ThemeParkWaitTimes",
+    "id": "vita10gy/MMM-ThemeParkWaitTimes",
+    "maintainer": "vita10gy",
+    "maintainerURL": "https://github.com/vita10gy",
+    "description": "Display wait times and upcoming park hours from theme parks including Disney Parks, Universal Studios, SeaWorld, Six Flags, and dozens more.",
+    "issues": [
+      "`package.json` issue: No repository field.",
+      "There are no keywords in 'package.json'. We would use them as tags on the module list page."
+    ],
+    "license": "MIT",
+    "image": "wait-times-demo.jpg"
   },
   {
     "name": "MMM-Thingiverse",

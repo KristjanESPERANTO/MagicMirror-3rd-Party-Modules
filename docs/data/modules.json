@@ -520,9 +520,9 @@
     "maintainer": "Estanz0",
     "maintainerURL": "https://github.com/Estanz0",
     "description": "Displays arrival time in minutes or scheduled arrival for a selected bus or stop in Auckland, NZ.",
-    "issues": 9,
+    "issues": 8,
     "stars": 0,
-    "lastCommit": "2023-02-03T01:15:38+13:00"
+    "lastCommit": "2024-02-10T22:38:17+13:00"
   },
   {
     "name": "MMM-AtbSanntid",
@@ -934,7 +934,7 @@
     "maintainerURL": "https://github.com/jschless",
     "description": "Displays the number of available bikes at selected stations of the Boston public bike system (Bluebikes).",
     "issues": 5,
-    "stars": 0,
+    "stars": 1,
     "tags": [
       "bluebikes",
       "transit"
@@ -1499,7 +1499,7 @@
     "maintainerURL": "",
     "description": "Display a webcamera video feed.",
     "issues": 7,
-    "stars": 0,
+    "stars": 1,
     "tags": [
       "email",
       "camera",
@@ -2510,7 +2510,7 @@
     "maintainer": "kyle-kelly",
     "maintainerURL": "https://github.com/kyle-kelly",
     "description": "A fork of <a target=\"_blank\" href=\"https://github.com/AdamMoses-GitHub/MMM-DCMetroTrainTimes\">MMM-DCMetroTrainTimes</a> (above) that also displays arrival times for buses.",
-    "issues": 10,
+    "issues": 11,
     "stars": 0,
     "lastCommit": "2020-11-11T22:31:27-05:00"
   },
@@ -2565,7 +2565,7 @@
     "maintainer": "grenagit",
     "maintainerURL": "",
     "description": "Display the current temperature and humidity from DHT11, DHT22 and AM2302 sensors.",
-    "issues": 6,
+    "issues": 7,
     "stars": 3,
     "tags": [
       "temperature",
@@ -5575,7 +5575,7 @@
     "stars": 2,
     "license": "ISC",
     "image": "HomeConnectDeveloperApplicationConfiguration.jpg",
-    "lastCommit": "2023-05-08T16:33:19+02:00"
+    "lastCommit": "2024-02-09T23:32:21+01:00"
   },
   {
     "name": "MMM-Homematic",
@@ -6872,6 +6872,23 @@
     "license": "ISC",
     "image": "Screenshots-Schematics-Potentiometer.jpg",
     "lastCommit": "2022-08-19T23:35:25-04:00"
+  },
+  {
+    "name": "MMM-LiveLyrics",
+    "url": "https://github.com/Fabrizz/MMM-LiveLyrics",
+    "id": "Fabrizz/MMM-LiveLyrics",
+    "maintainer": "Fabrizz",
+    "maintainerURL": "https://github.com/Fabrizz",
+    "description": "Show the lyrics of your current Spotify track. Connects to <a target=\"_blank\" href=\"https://github.com/Fabrizz/MMM-OnSpotify\">MMM-OnSpotify</a>, customizable everything!",
+    "issues": 6,
+    "tags": [
+      "spotify lyrics",
+      "lyrics",
+      "song lyrics"
+    ],
+    "license": "MIT",
+    "image": ".github-content-banner-api.jpg",
+    "lastCommit": "2023-05-17T18:52:22-03:00"
   },
   {
     "name": "MMM-LKY-TIC",
@@ -9856,7 +9873,7 @@
     "id": "Fabrizz/MMM-OnSpotify",
     "maintainer": "Fabrizz",
     "maintainerURL": "https://github.com/Fabrizz",
-    "description": "Highly customizable module that displays what you are listening to in Spotify. Compatible with MMM-LiveLyrics and DynamicTheming.",
+    "description": "Highly customizable module that displays what you are listening to in Spotify. Works with <a target=\"_blank\" href=\"https://github.com/Fabrizz/MMM-LiveLyrics\">MMM-LiveLyrics</a> and allows theming other modules!.",
     "issues": 11,
     "stars": 35,
     "tags": [
@@ -11855,7 +11872,7 @@
     "maintainerURL": "",
     "description": "Displays a list of clients connected to your router.",
     "issues": 4,
-    "stars": 0,
+    "stars": 1,
     "license": "MIT",
     "image": "screenshot.jpg",
     "lastCommit": "2024-02-05T20:54:09+01:00"
@@ -13637,6 +13654,18 @@
     "issues": 8,
     "stars": 6,
     "lastCommit": "2023-09-30T15:04:49+02:00"
+  },
+  {
+    "name": "MMM-ThemeParkWaitTimes",
+    "url": "https://github.com/vita10gy/MMM-ThemeParkWaitTimes",
+    "id": "vita10gy/MMM-ThemeParkWaitTimes",
+    "maintainer": "vita10gy",
+    "maintainerURL": "https://github.com/vita10gy",
+    "description": "Display wait times and upcoming park hours from theme parks including Disney Parks, Universal Studios, SeaWorld, Six Flags, and dozens more.",
+    "issues": 11,
+    "license": "MIT",
+    "image": "wait-times-demo.jpg",
+    "lastCommit": "2024-02-06T17:10:34-05:00"
   },
   {
     "name": "MMM-Thingiverse",
