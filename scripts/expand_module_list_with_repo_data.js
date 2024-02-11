@@ -128,6 +128,7 @@ async function addInformationFromPackageJson (moduleList) {
           "GPL-3.0-or-later",
           "ISC",
           "MIT",
+          "MPL-2.0",
           "LGPL-2.1-only"
         ];
         if (useableLicenses.includes(moduleData.license)) {

@@ -521,7 +521,7 @@
     "maintainerURL": "https://github.com/Estanz0",
     "description": "Displays arrival time in minutes or scheduled arrival for a selected bus or stop in Auckland, NZ.",
     "issues": 7,
-    "stars": 0,
+    "stars": 1,
     "tags": [
       "transport",
       "new zealand",
@@ -2779,7 +2779,7 @@
     "maintainerURL": "",
     "description": "Presenting Pictures from Dropbox (Successor of MMM-DropboxWallpaper).",
     "issues": 7,
-    "stars": 0,
+    "stars": 1,
     "license": "MIT",
     "lastCommit": "2023-11-17T11:25:49+01:00"
   },
@@ -2856,7 +2856,7 @@
     "maintainer": "DavidLSmyth",
     "maintainerURL": "",
     "description": "Display Realtime Irish Rail data for a targeted station.",
-    "issues": 8,
+    "issues": 9,
     "stars": 1,
     "tags": [
       "irishrail"
@@ -2956,7 +2956,7 @@
     "maintainerURL": "",
     "description": "This module allows you to display global earthquake data from the USGS.",
     "issues": 4,
-    "stars": 0,
+    "stars": 1,
     "lastCommit": "2023-12-15T00:16:26-06:00"
   },
   {
@@ -4443,9 +4443,21 @@
     "maintainer": "RaspiManu",
     "maintainerURL": "",
     "description": "Controlling an RGB-LED strip around a smart mirror with or without touch input. It provides features for static background lighting, highly customizable effects on notifications and party lighting.",
-    "issues": 8,
+    "issues": 7,
     "stars": 10,
-    "lastCommit": "2024-01-01T11:52:28+01:00"
+    "tags": [
+      "led strip",
+      "ws2801",
+      "static background light",
+      "customizable effects",
+      "party lighting",
+      "touch input",
+      "non-touch input",
+      "system notification input"
+    ],
+    "license": "MPL-2.0",
+    "image": "MMM-FrameLight_presentation_picture.jpg",
+    "lastCommit": "2024-02-11T18:39:29+01:00"
   },
   {
     "name": "MMM-FranceInfo",
@@ -5106,7 +5118,7 @@
     ],
     "license": "MIT",
     "image": "screen-01-minimal_look.jpg",
-    "lastCommit": "2024-02-09T02:08:20+01:00"
+    "lastCommit": "2024-02-11T17:49:52+01:00"
   },
   {
     "name": "MMM-GoogleTTS",
@@ -5784,7 +5796,7 @@
     "maintainer": "PierreGode",
     "maintainerURL": "https://github.com/PierreGode",
     "description": "MMM-ICA is a module for connecting to the Swedish grocery store ICA API and get information.",
-    "issues": 5,
+    "issues": 6,
     "stars": 2,
     "tags": [
       "ica",
@@ -5793,7 +5805,7 @@
       "handel"
     ],
     "license": "MIT",
-    "lastCommit": "2024-02-05T02:26:58+01:00"
+    "lastCommit": "2024-02-11T19:15:39+01:00"
   },
   {
     "name": "MMM-iCal-ToDo",
@@ -9409,9 +9421,9 @@
     "maintainer": "Isaac-the-Man",
     "maintainerURL": "https://github.com/Isaac-the-Man",
     "description": "Retro nixie clock display.",
-    "issues": 4,
+    "issues": 5,
     "stars": 14,
-    "lastCommit": "2021-10-02T22:01:00+08:00"
+    "lastCommit": "2024-02-11T22:35:29+08:00"
   },
   {
     "name": "MMM-Nixie-Clock",

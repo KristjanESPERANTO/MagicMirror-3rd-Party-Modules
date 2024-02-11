@@ -537,7 +537,7 @@
     "maintainerURL": "https://github.com/Estanz0",
     "description": "Displays arrival time in minutes or scheduled arrival for a selected bus or stop in Auckland, NZ.",
     "issues": [],
-    "stars": 0,
+    "stars": 1,
     "tags": [
       "transport",
       "new zealand",
@@ -2948,7 +2948,7 @@
       "There are no keywords in 'package.json'. We would use them as tags on the module list page.",
       "No image found."
     ],
-    "stars": 0,
+    "stars": 1,
     "license": "MIT"
   },
   {
@@ -3025,6 +3025,7 @@
     "maintainerURL": "",
     "description": "Display Realtime Irish Rail data for a targeted station.",
     "issues": [
+      "Issues are not enabled in the GitHub repository. So users cannot report bugs. Please enable issues in your repo.",
       "No image found."
     ],
     "stars": 1,
@@ -3129,7 +3130,7 @@
     "issues": [
       "There is no `package.json`. We need this file to gather information about the module for the module list page."
     ],
-    "stars": 0
+    "stars": 1
   },
   {
     "name": "MMM-EasyPix",
@@ -4666,10 +4667,20 @@
     "maintainer": "RaspiManu",
     "maintainerURL": "",
     "description": "Controlling an RGB-LED strip around a smart mirror with or without touch input. It provides features for static background lighting, highly customizable effects on notifications and party lighting.",
-    "issues": [
-      "There is no `package.json`. We need this file to gather information about the module for the module list page."
+    "issues": [],
+    "stars": 10,
+    "tags": [
+      "led strip",
+      "ws2801",
+      "static background light",
+      "customizable effects",
+      "party lighting",
+      "touch input",
+      "non-touch input",
+      "system notification input"
     ],
-    "stars": 10
+    "license": "MPL-2.0",
+    "image": "MMM-FrameLight_presentation_picture.jpg"
   },
   {
     "name": "MMM-FranceInfo",

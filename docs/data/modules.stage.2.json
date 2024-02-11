@@ -358,7 +358,7 @@
     "maintainerURL": "https://github.com/Estanz0",
     "description": "Displays arrival time in minutes or scheduled arrival for a selected bus or stop in Auckland, NZ.",
     "issues": [],
-    "stars": 0
+    "stars": 1
   },
   {
     "name": "MMM-AtbSanntid",
@@ -2083,7 +2083,7 @@
     "maintainerURL": "",
     "description": "Presenting Pictures from Dropbox (Successor of MMM-DropboxWallpaper).",
     "issues": [],
-    "stars": 0
+    "stars": 1
   },
   {
     "name": "MMM-DropboxWallpaper",
@@ -2133,7 +2133,9 @@
     "maintainer": "DavidLSmyth",
     "maintainerURL": "",
     "description": "Display Realtime Irish Rail data for a targeted station.",
-    "issues": [],
+    "issues": [
+      "Issues are not enabled in the GitHub repository. So users cannot report bugs. Please enable issues in your repo."
+    ],
     "stars": 1
   },
   {
@@ -2207,7 +2209,7 @@
     "maintainerURL": "",
     "description": "This module allows you to display global earthquake data from the USGS.",
     "issues": [],
-    "stars": 0
+    "stars": 1
   },
   {
     "name": "MMM-EasyPix",
