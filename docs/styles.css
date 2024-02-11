@@ -297,9 +297,12 @@ main {
 }
 
 @media (0 <= width <= 800px) {
-  #top-left,
-  #sort-container {
+  #top-left {
     display: none;
+  }
+
+  #sort-container {
+    display: block;
   }
 
   #repo-link,
@@ -311,6 +314,7 @@ main {
     position: relative;
     right: 0;
     top: 0;
+    padding-bottom: 15px;
   }
 
   h1 {
@@ -319,5 +323,11 @@ main {
 
   #unofficial-comment {
     margin-top: -10px;
+  }
+}
+
+@media (0 <= width <= 664px) {
+  .card {
+    min-width: 100%;
   }
 }
