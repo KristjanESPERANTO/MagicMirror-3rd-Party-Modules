@@ -1,6 +1,6 @@
 # Result of the module analysis
 
-Last update: 2024-02-10T15:11:48+01:00
+Last update: 2024-02-11T11:55:40+01:00
 
 ## Statistics
 
@@ -9,7 +9,7 @@ Last update: 2024-02-10T15:11:48+01:00
 | modules analyzed     |   1120   |
 | maintainer           |    631   |
 | modules with issues  |   1114   |
-| issues               |   7361   |
+| issues               |   7360   |
 | modules at github    |   1111   |
 | modules at gitlab    |      8   |
 | modules at bitbucket |      1   |
@@ -353,14 +353,13 @@ Last update: 2024-02-10T15:11:48+01:00
 
 ### [MMM-AT-Bus by Estanz0](https://github.com/Estanz0/MMM-AT-Bus)
 
-1. There is no `package.json`. We need this file to gather information about the module for the module list page.
-2. Typo: Found `Magic Mirror` in file `README.md`: Replace it with `MagicMirror²`.
-3. Outdated: Found `MichMich/MagicMirror` in file `README.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
-4. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
-5. Recommendation: Found `"node-fetch"` in file `node_helper.js`: Replace it with built-in fetch.
-6. Recommendation: Found `new Date()` in file `node_helper.js`: Replace it by `new Date(Date.now())`: [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
-7. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
-8. The branch name is 'master'. Consider renaming it to 'main'.
+1. Typo: Found `Magic Mirror` in file `README.md`: Replace it with `MagicMirror²`.
+2. Outdated: Found `MichMich/MagicMirror` in file `README.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
+3. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
+4. Recommendation: Found `"node-fetch"` in file `node_helper.js`: Replace it with built-in fetch.
+5. Recommendation: Found `new Date()` in file `node_helper.js`: Replace it by `new Date(Date.now())`: [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
+6. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
+7. The branch name is 'master'. Consider renaming it to 'main'.
 
 ### [MMM-AtbSanntid by Springvar](https://github.com/Springvar/MMM-AtbSanntid)
 
@@ -9005,7 +9004,7 @@ Last update: 2024-02-10T15:11:48+01:00
 
 ### [MMM-stib by danito](https://github.com/danito/MMM-stib)
 
-0. This module is outdated: Deprecated. API no longer works. Depends on deprecated module. Not recommended installation instaructions (globally). Use module <strong>MMM-stib2</strong> instead.
+0. This module is outdated: Deprecated. API no longer works. Depends on deprecated module. Not recommended installation instructions (globally). Use module <strong>MMM-stib2</strong> instead.
 1. There is no `package.json`. We need this file to gather information about the module for the module list page.
 2. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
 3. Typo: Found `Magic Mirror` in file `stib.js`: Replace it with `MagicMirror²`.

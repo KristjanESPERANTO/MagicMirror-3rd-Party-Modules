@@ -7174,7 +7174,7 @@
     "id": "Fabrizz/MMM-OnSpotify",
     "maintainer": "Fabrizz",
     "maintainerURL": "https://github.com/Fabrizz",
-    "description": "Highly customizable module that displays what you are listening to in Spotify. Works with <a target=\"_blank\" href=\"https://github.com/Fabrizz/MMM-LiveLyrics\">MMM-LiveLyrics</a> and allows theming other modules!.",
+    "description": "Highly customizable module that displays what you are listening to in Spotify. Works with <a target=\"_blank\" href=\"https://github.com/Fabrizz/MMM-LiveLyrics\">MMM-LiveLyrics</a> and allows theming other modules!",
     "issues": [],
     "stars": 35
   },
@@ -9520,7 +9520,7 @@
     "maintainerURL": "",
     "description": "Display the next transports for any given STIB (Brussel/Belgium) station.",
     "issues": [],
-    "outdated": "Deprecated. API no longer works. Depends on deprecated module. Not recommended installation instaructions (globally). Use module <strong>MMM-stib2</strong> instead.",
+    "outdated": "Deprecated. API no longer works. Depends on deprecated module. Not recommended installation instructions (globally). Use module <strong>MMM-stib2</strong> instead.",
     "stars": 4
   },
   {

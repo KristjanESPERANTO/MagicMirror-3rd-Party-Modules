@@ -536,10 +536,15 @@
     "maintainer": "Estanz0",
     "maintainerURL": "https://github.com/Estanz0",
     "description": "Displays arrival time in minutes or scheduled arrival for a selected bus or stop in Auckland, NZ.",
-    "issues": [
-      "There is no `package.json`. We need this file to gather information about the module for the module list page."
+    "issues": [],
+    "stars": 0,
+    "tags": [
+      "transport",
+      "new zealand",
+      "auckland"
     ],
-    "stars": 0
+    "license": "MIT",
+    "image": "resources-AT_app.jpg"
   },
   {
     "name": "MMM-AtbSanntid",
@@ -10393,7 +10398,7 @@
     "id": "Fabrizz/MMM-OnSpotify",
     "maintainer": "Fabrizz",
     "maintainerURL": "https://github.com/Fabrizz",
-    "description": "Highly customizable module that displays what you are listening to in Spotify. Works with <a target=\"_blank\" href=\"https://github.com/Fabrizz/MMM-LiveLyrics\">MMM-LiveLyrics</a> and allows theming other modules!.",
+    "description": "Highly customizable module that displays what you are listening to in Spotify. Works with <a target=\"_blank\" href=\"https://github.com/Fabrizz/MMM-LiveLyrics\">MMM-LiveLyrics</a> and allows theming other modules!",
     "issues": [],
     "stars": 35,
     "tags": [
@@ -13768,7 +13773,7 @@
     "issues": [
       "There is no `package.json`. We need this file to gather information about the module for the module list page."
     ],
-    "outdated": "Deprecated. API no longer works. Depends on deprecated module. Not recommended installation instaructions (globally). Use module <strong>MMM-stib2</strong> instead.",
+    "outdated": "Deprecated. API no longer works. Depends on deprecated module. Not recommended installation instructions (globally). Use module <strong>MMM-stib2</strong> instead.",
     "stars": 4
   },
   {
