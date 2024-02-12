@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "2024-02-11T18:28:52.417Z",
+  "lastUpdate": "2024-02-12T17:45:21.421Z",
   "modules": [
     {
       "name": "MMM-01ZM",
@@ -2240,7 +2240,7 @@
       "id": "bugsounet/EXT-Browser",
       "maintainer": "bugsounet",
       "maintainerURL": "https://wiki.bugsounet.fr",
-      "description": "Display any internet web page like a real browser in fullscreen",
+      "description": "Display any internet web page like a real browser in fullscreen.",
       "issues": []
     },
     {
@@ -2249,7 +2249,7 @@
       "id": "bugsounet/EXT-Detector",
       "maintainer": "bugsounet",
       "maintainerURL": "https://wiki.bugsounet.fr",
-      "description": "Multi-keyword listener for MMM-GoogleAssistant",
+      "description": "Multi-keyword listener for MMM-GoogleAssistant.",
       "issues": []
     },
     {
@@ -2258,7 +2258,7 @@
       "id": "bugsounet/EXT-FreeboxTV",
       "maintainer": "bugsounet",
       "maintainerURL": "https://wiki.bugsounet.fr",
-      "description": "Display Channel from French Internet Provider: Free",
+      "description": "Display Channel from French Internet Provider: Free.",
       "issues": []
     },
     {
@@ -2267,7 +2267,7 @@
       "id": "bugsounet/EXT-GooglePhotos",
       "maintainer": "bugsounet",
       "maintainerURL": "https://wiki.bugsounet.fr",
-      "description": "Display your album directory with Google photos API in background or in MagicMirror² position",
+      "description": "Display your album directory with Google photos API in background or in MagicMirror² position.",
       "issues": []
     },
     {
@@ -2294,7 +2294,7 @@
       "id": "bugsounet/EXT-Keyboard",
       "maintainer": "bugsounet",
       "maintainerURL": "https://wiki.bugsounet.fr",
-      "description": "Control your mirror with a keyboard",
+      "description": "Control your mirror with a keyboard.",
       "issues": []
     },
     {
@@ -2312,7 +2312,7 @@
       "id": "bugsounet/EXT-Motion",
       "maintainer": "bugsounet",
       "maintainerURL": "https://wiki.bugsounet.fr",
-      "description": "Control your screen with a webcam (as motion detector)",
+      "description": "Control your screen with a webcam (as motion detector).",
       "issues": []
     },
     {
@@ -2330,7 +2330,7 @@
       "id": "bugsounet/EXT-Pages",
       "maintainer": "bugsounet",
       "maintainerURL": "https://wiki.bugsounet.fr",
-      "description": "This plugin allows you to have animated pages",
+      "description": "This plugin allows you to have animated pages.",
       "issues": []
     },
     {
@@ -2339,7 +2339,7 @@
       "id": "bugsounet/EXT-Photos",
       "maintainer": "bugsounet",
       "maintainerURL": "https://wiki.bugsounet.fr",
-      "description": "Displaying any photos discover by assistant in fullscreen",
+      "description": "Displaying any photos discover by assistant in fullscreen.",
       "issues": []
     },
     {
@@ -2420,7 +2420,7 @@
       "id": "bugsounet/EXT-SpotifyCanvasLyrics",
       "maintainer": "bugsounet",
       "maintainerURL": "https://wiki.bugsounet.fr",
-      "description": "Create a server for displaying any Lyrics and Canvas from Spotify",
+      "description": "Create a server for displaying any Lyrics and Canvas from Spotify.",
       "issues": []
     },
     {
@@ -2429,7 +2429,7 @@
       "id": "bugsounet/EXT-StreamDeck",
       "maintainer": "bugsounet",
       "maintainerURL": "https://wiki.bugsounet.fr",
-      "description": "Control your mirror with a StreamDeck by elgato©",
+      "description": "Control your mirror with a StreamDeck by elgato©.",
       "issues": []
     },
     {
@@ -3174,7 +3174,7 @@
       "id": "bugsounet/MMM-GoogleAssistant",
       "maintainer": "bugsounet",
       "maintainerURL": "https://wiki.bugsounet.fr",
-      "description": "MMM-GoogleAssistant is an real embedded Google assistant on MagicMirror² with many <a target=\"_blank\" href=\"#extended-plugins-for-mmm-googleassistant-by-bugsounet\">plugins</a> . [Maintained].",
+      "description": "MMM-GoogleAssistant is an real embedded Google assistant on MagicMirror² with many <a target=\"_blank\" href=\"#extended-plugins-for-mmm-googleassistant\">plugins</a> . [Maintained].",
       "issues": []
     },
     {

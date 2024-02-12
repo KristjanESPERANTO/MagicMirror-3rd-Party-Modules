@@ -1,6 +1,6 @@
 # Result of the module analysis
 
-Last update: 2024-02-11T19:38:52+01:00
+Last update: 2024-02-12T18:55:34+01:00
 
 ## Statistics
 
@@ -9,7 +9,7 @@ Last update: 2024-02-11T19:38:52+01:00
 | modules analyzed     |   1120   |
 | maintainer           |    631   |
 | modules with issues  |   1114   |
-| issues               |   7362   |
+| issues               |   7364   |
 | modules at github    |   1111   |
 | modules at gitlab    |      8   |
 | modules at bitbucket |      1   |
@@ -2295,8 +2295,10 @@ Last update: 2024-02-11T19:38:52+01:00
 ### [EXT-GooglePhotos by bugsounet](https://github.com/bugsounet/EXT-GooglePhotos)
 
 1. Recommendation: Found `require('https')` in file `GooglePhotosLib.js`: Replace 'https' by 'node:https'.
-2. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
-3. The branch name is 'master'. Consider renaming it to 'main'.
+2. Recommendation: Found `axios` in file `GooglePhotosLib.js`: Replace it with built-in fetch.
+3. Recommendation: Found `axios` in file `package.json`: Replace it with built-in fetch.
+4. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
+5. The branch name is 'master'. Consider renaming it to 'main'.
 
 ### [EXT-Governor by bugsounet](https://github.com/bugsounet/EXT-Governor)
 
@@ -2401,7 +2403,7 @@ Last update: 2024-02-11T19:38:52+01:00
 ### [EXT-TelegramBot by bugsounet](https://github.com/bugsounet/EXT-TelegramBot)
 
 1. Typo: Found `Magic Mirror` in file `EXT-TelegramBot.js`: Replace it with `MagicMirror²`.
-2. Recommendation: Found `new Date()` in file `ProcessTBMessager.js`: Replace it by `new Date(Date.now())`: [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
+2. Recommendation: Found `new Date()` in file `node_helper.js`: Replace it by `new Date(Date.now())`: [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
 3. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
 4. The branch name is 'master'. Consider renaming it to 'main'.
 

@@ -528,8 +528,8 @@
       "auckland"
     ],
     "license": "MIT",
-    "image": "resources-AT_app.jpg",
-    "lastCommit": "2024-02-11T16:21:36+13:00"
+    "image": "resources-MMM-AT-Bus_Stop_screenshot.jpg",
+    "lastCommit": "2024-02-12T21:52:37+13:00"
   },
   {
     "name": "MMM-AtbSanntid",
@@ -3379,7 +3379,7 @@
     "id": "bugsounet/EXT-Browser",
     "maintainer": "bugsounet",
     "maintainerURL": "https://wiki.bugsounet.fr",
-    "description": "Display any internet web page like a real browser in fullscreen This module have been defined to work only with MMM-GoogleAssistant.",
+    "description": "Display any internet web page like a real browser in fullscreen. This module have been defined to work only with MMM-GoogleAssistant.",
     "issues": 3,
     "stars": 0,
     "tags": [
@@ -3394,7 +3394,7 @@
     "id": "bugsounet/EXT-Detector",
     "maintainer": "bugsounet",
     "maintainerURL": "https://wiki.bugsounet.fr",
-    "description": "Multi-keyword listener for MMM-GoogleAssistant This module have been defined to work only with MMM-GoogleAssistant.",
+    "description": "Multi-keyword listener for MMM-GoogleAssistant. This module have been defined to work only with MMM-GoogleAssistant.",
     "issues": 2,
     "stars": 6,
     "tags": [
@@ -3415,7 +3415,7 @@
     "id": "bugsounet/EXT-FreeboxTV",
     "maintainer": "bugsounet",
     "maintainerURL": "https://wiki.bugsounet.fr",
-    "description": "Display Channel from French Internet Provider: Free This module have been defined to work only with MMM-GoogleAssistant.",
+    "description": "Display Channel from French Internet Provider: Free. This module have been defined to work only with MMM-GoogleAssistant.",
     "issues": 3,
     "stars": 0,
     "license": "MIT",
@@ -3428,8 +3428,8 @@
     "id": "bugsounet/EXT-GooglePhotos",
     "maintainer": "bugsounet",
     "maintainerURL": "https://wiki.bugsounet.fr",
-    "description": "Display your album directory with Google photos API in background or in MagicMirror\u00b2 position This module have been defined to work only with MMM-GoogleAssistant.",
-    "issues": 3,
+    "description": "Display your album directory with Google photos API in background or in MagicMirror\u00b2 position. This module have been defined to work only with MMM-GoogleAssistant.",
+    "issues": 5,
     "stars": 2,
     "tags": [
       "google",
@@ -3437,7 +3437,7 @@
     ],
     "license": "MIT",
     "image": "resources-GooglePhoto-Logo.jpg",
-    "lastCommit": "2024-01-03T16:21:14+01:00"
+    "lastCommit": "2024-02-11T20:25:53+01:00"
   },
   {
     "name": "EXT-Governor",
@@ -3479,7 +3479,7 @@
     "id": "bugsounet/EXT-Keyboard",
     "maintainer": "bugsounet",
     "maintainerURL": "https://wiki.bugsounet.fr",
-    "description": "Control your mirror with a keyboard This module have been defined to work only with MMM-GoogleAssistant.",
+    "description": "Control your mirror with a keyboard. This module have been defined to work only with MMM-GoogleAssistant.",
     "issues": 3,
     "stars": 1,
     "license": "MIT",
@@ -3508,7 +3508,7 @@
     "id": "bugsounet/EXT-Motion",
     "maintainer": "bugsounet",
     "maintainerURL": "https://wiki.bugsounet.fr",
-    "description": "Control your screen with a webcam (as motion detector) This module have been defined to work only with MMM-GoogleAssistant.",
+    "description": "Control your screen with a webcam (as motion detector). This module have been defined to work only with MMM-GoogleAssistant.",
     "issues": 2,
     "stars": 0,
     "tags": [
@@ -3543,7 +3543,7 @@
     "id": "bugsounet/EXT-Pages",
     "maintainer": "bugsounet",
     "maintainerURL": "https://wiki.bugsounet.fr",
-    "description": "This plugin allows you to have animated pages This module have been defined to work only with MMM-GoogleAssistant.",
+    "description": "This plugin allows you to have animated pages. This module have been defined to work only with MMM-GoogleAssistant.",
     "issues": 2,
     "stars": 2,
     "tags": [
@@ -3559,7 +3559,7 @@
     "id": "bugsounet/EXT-Photos",
     "maintainer": "bugsounet",
     "maintainerURL": "https://wiki.bugsounet.fr",
-    "description": "Displaying any photos discover by assistant in fullscreen This module have been defined to work only with MMM-GoogleAssistant.",
+    "description": "Displaying any photos discover by assistant in fullscreen. This module have been defined to work only with MMM-GoogleAssistant.",
     "issues": 2,
     "stars": 0,
     "tags": [
@@ -3693,7 +3693,7 @@
     "id": "bugsounet/EXT-SpotifyCanvasLyrics",
     "maintainer": "bugsounet",
     "maintainerURL": "https://wiki.bugsounet.fr",
-    "description": "Create a server for displaying any Lyrics and Canvas from Spotify This module have been defined to work only with MMM-GoogleAssistant.",
+    "description": "Create a server for displaying any Lyrics and Canvas from Spotify. This module have been defined to work only with MMM-GoogleAssistant.",
     "issues": 2,
     "stars": 0,
     "tags": [
@@ -3710,7 +3710,7 @@
     "id": "bugsounet/EXT-StreamDeck",
     "maintainer": "bugsounet",
     "maintainerURL": "https://wiki.bugsounet.fr",
-    "description": "Control your mirror with a StreamDeck by elgato\u00a9 This module have been defined to work only with MMM-GoogleAssistant.",
+    "description": "Control your mirror with a StreamDeck by elgato\u00a9. This module have been defined to work only with MMM-GoogleAssistant.",
     "issues": 2,
     "stars": 0,
     "license": "MIT",
@@ -3731,7 +3731,7 @@
     ],
     "license": "MIT",
     "image": "screenshot-sc_fullsize.jpg",
-    "lastCommit": "2024-01-03T16:38:46+01:00"
+    "lastCommit": "2024-02-11T20:54:36+01:00"
   },
   {
     "name": "EXT-Updates",
@@ -3744,7 +3744,7 @@
     "stars": 0,
     "license": "MIT",
     "image": "resources-update.jpg",
-    "lastCommit": "2024-02-02T14:07:40+01:00"
+    "lastCommit": "2024-02-11T21:00:51+01:00"
   },
   {
     "name": "EXT-Volume",
@@ -4865,7 +4865,7 @@
     "id": "bugsounet/MMM-GoogleAssistant",
     "maintainer": "bugsounet",
     "maintainerURL": "https://wiki.bugsounet.fr",
-    "description": "MMM-GoogleAssistant is an real embedded Google assistant on MagicMirror\u00b2 with many <a target=\"_blank\" href=\"#extended-plugins-for-mmm-googleassistant-by-bugsounet\">plugins</a> . [Maintained].",
+    "description": "MMM-GoogleAssistant is an real embedded Google assistant on MagicMirror\u00b2 with many <a target=\"_blank\" href=\"#extended-plugins-for-mmm-googleassistant\">plugins</a> . [Maintained].",
     "issues": 4,
     "stars": 79,
     "tags": [
@@ -5118,7 +5118,7 @@
     ],
     "license": "MIT",
     "image": "screen-01-minimal_look.jpg",
-    "lastCommit": "2024-02-11T17:49:52+01:00"
+    "lastCommit": "2024-02-11T21:05:49+01:00"
   },
   {
     "name": "MMM-GoogleTTS",
@@ -6362,7 +6362,7 @@
     ],
     "license": "MIT",
     "image": "docs-example.jpg",
-    "lastCommit": "2024-01-26T10:36:26+01:00"
+    "lastCommit": "2024-02-12T14:52:48+01:00"
   },
   {
     "name": "MMM-Jeedom",
@@ -8005,7 +8005,7 @@
     "description": "An unofficial MagicMirror\u00b2 3rd Party Package Manager. Automates searching, installation, removal, updating, and upgrading of MagicMirror\u00b2 modules.",
     "issues": 4,
     "stars": 161,
-    "lastCommit": "2024-01-07T20:04:24-05:00"
+    "lastCommit": "2024-02-11T18:11:25-05:00"
   },
   {
     "name": "MMM-mmpm",
@@ -9412,7 +9412,7 @@
     ],
     "license": "MIT",
     "image": "img-screenshot1.jpg",
-    "lastCommit": "2024-02-05T17:19:44+01:00"
+    "lastCommit": "2024-02-12T14:39:09+01:00"
   },
   {
     "name": "MMM-nixie-clock",
@@ -14056,7 +14056,7 @@
     "issues": 7,
     "stars": 0,
     "license": "ISC",
-    "lastCommit": "2023-11-25T15:31:14+10:00"
+    "lastCommit": "2024-02-12T08:59:03+10:00"
   },
   {
     "name": "MMM-TransLoc",
