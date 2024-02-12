@@ -6621,6 +6621,21 @@
     "image": "images-i1.jpg"
   },
   {
+    "name": "MMM-ISS-Map",
+    "url": "https://gitlab.com/khassel/MMM-ISS-Map",
+    "id": "khassel/MMM-ISS-Map",
+    "maintainer": "khassel",
+    "maintainerURL": "https://gitlab.com/karsten13",
+    "description": "Displays current position of the International Space Station on a map.",
+    "issues": [
+      "`package.json` issue: No repository field.",
+      "There are no keywords in 'package.json'. We would use them as tags on the module list page."
+    ],
+    "stars": 3,
+    "license": "MIT",
+    "image": "data-iss_mapbox.jpg"
+  },
+  {
     "name": "MMM-ISY",
     "url": "https://github.com/shbatm/MMM-ISY",
     "id": "shbatm/MMM-ISY",
@@ -8441,6 +8456,18 @@
       "package-manager"
     ],
     "license": "MIT"
+  },
+  {
+    "name": "MMM-ModInstall",
+    "url": "https://gitlab.com/khassel/MMM-ModInstall",
+    "id": "khassel/MMM-ModInstall",
+    "maintainer": "khassel",
+    "maintainerURL": "https://gitlab.com/karsten13",
+    "description": "Simplifies module installation in MagicMirror.",
+    "issues": [
+      "There is no `package.json`. We need this file to gather information about the module for the module list page."
+    ],
+    "stars": 3
   },
   {
     "name": "MMM-Modulebar",
@@ -13010,6 +13037,18 @@
       "There is no `package.json`. We need this file to gather information about the module for the module list page."
     ],
     "stars": 16
+  },
+  {
+    "name": "MMM-Shell-Output",
+    "url": "https://gitlab.com/khassel/MMM-Shell-Output",
+    "id": "khassel/MMM-Shell-Output",
+    "maintainer": "khassel",
+    "maintainerURL": "https://gitlab.com/karsten13",
+    "description": "Shows output of commands executed on the host.",
+    "issues": [
+      "There is no `package.json`. We need this file to gather information about the module for the module list page."
+    ],
+    "stars": 3
   },
   {
     "name": "Shelly-HT",

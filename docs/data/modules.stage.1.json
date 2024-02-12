@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "2024-02-12T17:45:21.421Z",
+  "lastUpdate": "2024-02-12T21:27:24.222Z",
   "modules": [
     {
       "name": "MMM-01ZM",
@@ -4120,6 +4120,15 @@
       "issues": []
     },
     {
+      "name": "MMM-ISS-Map",
+      "url": "https://gitlab.com/khassel/MMM-ISS-Map",
+      "id": "khassel/MMM-ISS-Map",
+      "maintainer": "khassel",
+      "maintainerURL": "https://gitlab.com/karsten13",
+      "description": "Displays current position of the International Space Station on a map.",
+      "issues": []
+    },
+    {
       "name": "MMM-ISY",
       "url": "https://github.com/shbatm/MMM-ISY",
       "id": "shbatm/MMM-ISY",
@@ -5263,6 +5272,15 @@
       "maintainer": "bee-mar",
       "maintainerURL": "",
       "description": "Companion module for MMPM to enable hiding/showing of MagicMirror² modules.",
+      "issues": []
+    },
+    {
+      "name": "MMM-ModInstall",
+      "url": "https://gitlab.com/khassel/MMM-ModInstall",
+      "id": "khassel/MMM-ModInstall",
+      "maintainer": "khassel",
+      "maintainerURL": "https://gitlab.com/karsten13",
+      "description": "Simplifies module installation in MagicMirror.",
       "issues": []
     },
     {
@@ -8077,6 +8095,15 @@
       "maintainer": "surekap",
       "maintainerURL": "",
       "description": "Integrate Apple AirTunes/Airplay metadata coming via shairport-sync into the MagicMirror². Does not work with video or mirroring.",
+      "issues": []
+    },
+    {
+      "name": "MMM-Shell-Output",
+      "url": "https://gitlab.com/khassel/MMM-Shell-Output",
+      "id": "khassel/MMM-Shell-Output",
+      "maintainer": "khassel",
+      "maintainerURL": "https://gitlab.com/karsten13",
+      "description": "Shows output of commands executed on the host.",
       "issues": []
     },
     {
