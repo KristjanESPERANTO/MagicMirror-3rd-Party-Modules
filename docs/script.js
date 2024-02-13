@@ -10,7 +10,6 @@ const sortDropdown = document.getElementById("sort-dropdown");
 const showOutdated = document.getElementById("show-outdated");
 
 /* [<name>, <icon>, <background>, <foreground>] */
-/* Add aliases to modules so similar can be found */
 const tagsList = [
   ["calendar", "📅", "#5bc7d9", "#022126"],
   ["news", "📰", "#e0fffe", "#141e1e"],
@@ -283,8 +282,6 @@ resetButton.addEventListener("click", () => {
   sortDropdown.value = "default";
   sortData(sortDropdown.value);
   root.style.setProperty("--color-accent-header", "var(--color-background)");
-
-  /* --color-accent-light: #ebf8ff; --color-accent-dark: #033454; */
   root.style.setProperty("--color-accent-light", "#ebf8ff");
   root.style.setProperty("--color-accent-dark", "#033454");
   updateModuleCardContainer();
