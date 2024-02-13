@@ -54,7 +54,15 @@ async function findAndResizeImage (moduleName, moduleMaintainer) {
     const sourcePath = `${sourceFolder}/${imageToProcess}`;
     const targetPath = `${imagesFolder}/${moduleName}---${moduleMaintainer}---${targetImageName}`;
 
-    await sharp(sourcePath).resize(300)
+    await sharp(sourcePath)
+      .resize(
+        350,
+        600,
+        {
+          "fit": sharp.fit.inside,
+          "withoutEnlargement": true
+        }
+      )
       .toFile(targetPath);
   } else {
     issues.push("No image found.");
