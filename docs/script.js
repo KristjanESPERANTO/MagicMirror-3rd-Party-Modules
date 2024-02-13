@@ -58,6 +58,16 @@ function createCard (moduleData) {
     const image = card.querySelector(".img-container img");
     image.src = imagePath;
     image.alt = `${moduleData.name} image`;
+
+    const overlay = image.nextElementSibling;
+    image.onclick = () => {
+      overlay.style.display = "block";
+      overlay.getElementsByTagName("img")[0].src = image.src;
+    };
+
+    overlay.onclick = () => {
+      overlay.style.display = "none";
+    };
   } else {
     card.querySelector(".img-container").remove();
   }
