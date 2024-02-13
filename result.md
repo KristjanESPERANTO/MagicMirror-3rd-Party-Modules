@@ -1,6 +1,6 @@
 # Result of the module analysis
 
-Last update: 2024-02-12T22:37:23+01:00
+Last update: 2024-02-13T19:50:59+01:00
 
 ## Statistics
 
@@ -9,7 +9,7 @@ Last update: 2024-02-12T22:37:23+01:00
 | modules analyzed     |   1123   |
 | maintainer           |    631   |
 | modules with issues  |   1117   |
-| issues               |   7382   |
+| issues               |   7379   |
 | modules at github    |   1111   |
 | modules at gitlab    |     11   |
 | modules at bitbucket |      1   |
@@ -3800,12 +3800,9 @@ Last update: 2024-02-12T22:37:23+01:00
 
 ### [MMM-ICA by PierreGode](https://github.com/PierreGode/MMM-ICA)
 
-1. No image found.
-2. Typo: Found `Magic Mirror` in file `README.md`: Replace it with `MagicMirror²`.
-3. Outdated: Found `MichMich/MagicMirror` in file `README.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
-4. Recommendation: Found `axios` in file `node_helper.js`: Replace it with built-in fetch.
-5. Recommendation: Found `new Date()` in file `node_helper.js`: Replace it by `new Date(Date.now())`: [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
-6. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
+1. Recommendation: Found `axios` in file `node_helper.js`: Replace it with built-in fetch.
+2. Recommendation: Found `new Date()` in file `node_helper.js`: Replace it by `new Date(Date.now())`: [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
+3. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
 
 ### [MMM-iCal-ToDo by nixnuex](https://github.com/nixnuex/MMM-iCal-ToDo)
 

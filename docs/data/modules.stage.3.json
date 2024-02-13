@@ -6084,9 +6084,7 @@
     "maintainer": "PierreGode",
     "maintainerURL": "https://github.com/PierreGode",
     "description": "MMM-ICA is a module for connecting to the Swedish grocery store ICA API and get information.",
-    "issues": [
-      "No image found."
-    ],
+    "issues": [],
     "stars": 2,
     "tags": [
       "ica",
@@ -6094,7 +6092,8 @@
       "butik",
       "handel"
     ],
-    "license": "MIT"
+    "license": "MIT",
+    "image": "screenshot.jpg"
   },
   {
     "name": "MMM-iCal-ToDo",
