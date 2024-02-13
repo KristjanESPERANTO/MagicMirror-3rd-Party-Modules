@@ -14821,11 +14821,11 @@
     "issues": [
       "`package.json` issue: No description",
       "`package.json` issue: No repository field.",
-      "There are no keywords in 'package.json'. We would use them as tags on the module list page.",
-      "No image found."
+      "There are no keywords in 'package.json'. We would use them as tags on the module list page."
     ],
     "stars": 0,
-    "license": "ISC"
+    "license": "ISC",
+    "image": "screenshot.jpg"
   },
   {
     "name": "MMM-TransLoc",

@@ -1,6 +1,6 @@
 # Result of the module analysis
 
-Last update: 2024-02-13T19:50:59+01:00
+Last update: 2024-02-14T00:51:47+01:00
 
 ## Statistics
 
@@ -9,7 +9,7 @@ Last update: 2024-02-13T19:50:59+01:00
 | modules analyzed     |   1123   |
 | maintainer           |    631   |
 | modules with issues  |   1117   |
-| issues               |   7379   |
+| issues               |   7378   |
 | modules at github    |   1111   |
 | modules at gitlab    |     11   |
 | modules at bitbucket |      1   |
@@ -9676,10 +9676,9 @@ Last update: 2024-02-13T19:50:59+01:00
 1. `package.json` issue: No description
 2. `package.json` issue: No repository field.
 3. There are no keywords in 'package.json'. We would use them as tags on the module list page.
-4. No image found.
-5. Outdated: Found `MichMich/MagicMirror` in file `README.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
-6. Recommendation: Found `require('https')` in file `node_helper.js`: Replace 'https' by 'node:https'.
-7. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
+4. Outdated: Found `MichMich/MagicMirror` in file `README.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
+5. Recommendation: Found `require('https')` in file `node_helper.js`: Replace 'https' by 'node:https'.
+6. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
 
 ### [MMM-TransLoc by OrangeHoopla](https://github.com/OrangeHoopla/MMM-TransLoc)
 

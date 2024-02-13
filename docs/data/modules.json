@@ -3407,7 +3407,7 @@
     ],
     "license": "MIT",
     "image": "resources-google.jpg",
-    "lastCommit": "2024-02-09T13:06:05+01:00"
+    "lastCommit": "2024-02-13T20:24:58+01:00"
   },
   {
     "name": "EXT-FreeboxTV",
@@ -3585,7 +3585,7 @@
       "googleassistant"
     ],
     "license": "MIT",
-    "lastCommit": "2024-02-09T13:12:34+01:00"
+    "lastCommit": "2024-02-13T20:32:29+01:00"
   },
   {
     "name": "EXT-RadioPlayer",
@@ -6327,7 +6327,7 @@
     "stars": 3,
     "license": "MIT",
     "image": "data-iss_mapbox.jpg",
-    "lastCommit": "2024-02-11T23:59:58+01:00"
+    "lastCommit": "2024-02-13T20:19:34+01:00"
   },
   {
     "name": "MMM-ISY",
@@ -14089,10 +14089,11 @@
     "maintainer": "dekinet",
     "maintainerURL": "",
     "description": "Simple display of train departure times for Brisbane (Australia).",
-    "issues": 7,
+    "issues": 6,
     "stars": 0,
     "license": "ISC",
-    "lastCommit": "2024-02-12T08:59:03+10:00"
+    "image": "screenshot.jpg",
+    "lastCommit": "2024-02-14T08:13:30+10:00"
   },
   {
     "name": "MMM-TransLoc",
