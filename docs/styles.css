@@ -401,4 +401,9 @@ main {
     padding: 0;
     justify-content: center;
   }
+
+  .large-image {
+    width: 97%;
+    height: 97%;
+  }
 }
