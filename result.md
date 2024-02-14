@@ -1,16 +1,16 @@
 # Result of the module analysis
 
-Last update: 2024-02-14T17:56:58+01:00
+Last update: 2024-02-14T19:42:12+01:00
 
 ## Statistics
 
 |                      | number   |
 |:---------------------|:--------:|
-| modules analyzed     |   1125   |
+| modules analyzed     |   1124   |
 | maintainer           |    632   |
-| modules with issues  |   1119   |
-| issues               |   7391   |
-| modules at github    |   1113   |
+| modules with issues  |   1118   |
+| issues               |   7382   |
+| modules at github    |   1112   |
 | modules at gitlab    |     11   |
 | modules at bitbucket |      1   |
 
@@ -9984,18 +9984,6 @@ Last update: 2024-02-14T17:56:58+01:00
 6. Warning: No LICENSE file.
 7. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
 8. The branch name is 'master'. Consider renaming it to 'main'.
-
-### [MMM-Vasttrafik-PublicTransport by bureus](https://github.com/bureus/MMM-Vasttrafik-PublicTransport)
-
-1. There are no specific keywords in 'package.json'. We would use them as tags on the module list page. Add a few meaningful terms to the keywords in the package.json. Not just “magicmirror” or “module”.
-2. Typo: Found `Magic Mirror` in file `MMM-Vasttrafik-PublicTransport.js`: Replace it with `MagicMirror²`.
-3. Typo: Found `Magic Mirror` in file `README.md`: Replace it with `MagicMirror²`.
-4. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
-5. Recommendation: Found `new Date()` in file `node_helper.js`: Replace it by `new Date(Date.now())`: [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
-6. Typo: Found `Magic Mirror` in file `package.json`: Replace it with `MagicMirror²`.
-7. Warning: No LICENSE file.
-8. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
-9. The branch name is 'master'. Consider renaming it to 'main'.
 
 ### [MMM-vCard2Calendar by n-gao](https://github.com/n-gao/MMM-vCard2Calendar)
 

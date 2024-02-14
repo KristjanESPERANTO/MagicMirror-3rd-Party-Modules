@@ -15302,20 +15302,6 @@
     "image": "docs-screenshot.jpg"
   },
   {
-    "name": "MMM-Vasttrafik-PublicTransport",
-    "url": "https://github.com/bureus/MMM-Vasttrafik-PublicTransport",
-    "id": "bureus/MMM-Vasttrafik-PublicTransport",
-    "maintainer": "bureus",
-    "maintainerURL": "",
-    "description": "Display public transport operated by Västtrafik for western part of Sweden, including Gothenburg. Uses Vasttrafik's API version 2.",
-    "issues": [
-      "There are no specific keywords in 'package.json'. We would use them as tags on the module list page. Add a few meaningful terms to the keywords in the package.json. Not just “magicmirror” or “module”."
-    ],
-    "stars": 9,
-    "license": "MIT",
-    "image": "docs-screenshot.jpg"
-  },
-  {
     "name": "MMM-vCard2Calendar",
     "url": "https://github.com/n-gao/MMM-vCard2Calendar",
     "id": "n-gao/MMM-vCard2Calendar",

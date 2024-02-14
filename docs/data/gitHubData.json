@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "2024-02-14T15:59:20.721Z",
+  "lastUpdate": "2024-02-14T18:32:02.452Z",
   "repositories": [
     {
       "id": "rubinho101/MMM-01ZM",
@@ -13603,19 +13603,6 @@
         "disabled": false,
         "defaultBranch": "master",
         "lastCommit": "2024-01-23T13:11:52Z"
-      }
-    },
-    {
-      "id": "bureus/MMM-Vasttrafik-PublicTransport",
-      "gitHubDataLastUpdate": "2024-02-02T20:22:01.583Z",
-      "gitHubData": {
-        "issues": 8,
-        "stars": 9,
-        "license": null,
-        "archived": false,
-        "disabled": false,
-        "defaultBranch": "master",
-        "lastCommit": "2021-05-22T09:00:21Z"
       }
     },
     {

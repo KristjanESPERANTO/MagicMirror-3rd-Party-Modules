@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "2024-02-14T15:59:18.401Z",
+  "lastUpdate": "2024-02-14T18:32:01.873Z",
   "modules": [
     {
       "name": "MMM-01ZM",
@@ -9477,15 +9477,6 @@
       "maintainer": "Xkhi",
       "maintainerURL": "",
       "description": "Display public transport operated by Västtrafik for western part of Sweden, including Gothenburg. This version is updated to support multi-filtering and Vasttrafik's API version 4.",
-      "issues": []
-    },
-    {
-      "name": "MMM-Vasttrafik-PublicTransport",
-      "url": "https://github.com/bureus/MMM-Vasttrafik-PublicTransport",
-      "id": "bureus/MMM-Vasttrafik-PublicTransport",
-      "maintainer": "bureus",
-      "maintainerURL": "",
-      "description": "Display public transport operated by Västtrafik for western part of Sweden, including Gothenburg. Uses Vasttrafik's API version 2.",
       "issues": []
     },
     {

@@ -1,11 +1,11 @@
 {
-  "moduleCounter": 1125,
-  "modulesWithImageCounter": 508,
-  "modulesWithIssuesCounter": 1119,
-  "issueCounter": 7391,
-  "lastUpdate": "2024-02-14T17:56:58+01:00",
+  "moduleCounter": 1124,
+  "modulesWithImageCounter": 507,
+  "modulesWithIssuesCounter": 1118,
+  "issueCounter": 7382,
+  "lastUpdate": "2024-02-14T19:42:12+01:00",
   "repositoryHoster": {
-    "github": 1113,
+    "github": 1112,
     "gitlab": 11,
     "bitbucket": 1
   },
@@ -59,7 +59,6 @@
     "ralberth": 4,
     "michael5r": 4,
     "MichMich": 4,
-    "bureus": 4,
     "ngnijland": 4,
     "Jopyth": 3,
     "Fifteen15Studios": 3,
@@ -102,6 +101,7 @@
     "qistoph": 3,
     "framboise-pi": 3,
     "Menturan": 3,
+    "bureus": 3,
     "reidarw": 3,
     "XBCreepinJesus": 3,
     "Thlb": 3,

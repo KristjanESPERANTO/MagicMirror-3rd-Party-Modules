@@ -14551,19 +14551,6 @@
     "lastCommit": "2024-01-23T14:11:52+01:00"
   },
   {
-    "name": "MMM-Vasttrafik-PublicTransport",
-    "url": "https://github.com/bureus/MMM-Vasttrafik-PublicTransport",
-    "id": "bureus/MMM-Vasttrafik-PublicTransport",
-    "maintainer": "bureus",
-    "maintainerURL": "",
-    "description": "Display public transport operated by V\u00e4sttrafik for western part of Sweden, including Gothenburg. Uses Vasttrafik's API version 2.",
-    "issues": 9,
-    "stars": 9,
-    "license": "MIT",
-    "image": "docs-screenshot.jpg",
-    "lastCommit": "2021-05-22T11:00:21+02:00"
-  },
-  {
     "name": "MMM-vCard2Calendar",
     "url": "https://github.com/n-gao/MMM-vCard2Calendar",
     "id": "n-gao/MMM-vCard2Calendar",

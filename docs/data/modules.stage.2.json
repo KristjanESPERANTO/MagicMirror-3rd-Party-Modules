@@ -10540,16 +10540,6 @@
     "stars": 1
   },
   {
-    "name": "MMM-Vasttrafik-PublicTransport",
-    "url": "https://github.com/bureus/MMM-Vasttrafik-PublicTransport",
-    "id": "bureus/MMM-Vasttrafik-PublicTransport",
-    "maintainer": "bureus",
-    "maintainerURL": "",
-    "description": "Display public transport operated by Västtrafik for western part of Sweden, including Gothenburg. Uses Vasttrafik's API version 2.",
-    "issues": [],
-    "stars": 9
-  },
-  {
     "name": "MMM-vCard2Calendar",
     "url": "https://github.com/n-gao/MMM-vCard2Calendar",
     "id": "n-gao/MMM-vCard2Calendar",
