@@ -238,11 +238,6 @@ main {
   padding: 0.5em 0 0;
 }
 
-.tags::-webkit-scrollbar {
-  width: 0;
-  background: transparent; /* Disable scrollbar Chrome/Safari/Webkit */
-}
-
 .tags div {
   text-transform: capitalize;
   background-color: var(--color-accent-dark);
