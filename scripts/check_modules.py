@@ -81,14 +81,6 @@ def check_modules():
             "name": "Replace 'https' by 'node:https'.",
             "category": "Recommendation",
         },
-        " electron-rebuild": {
-            "name": "Replace it with `@electron/rebuild`",
-            "category": "Deprecated",
-        },
-        '"electron-rebuild"': {
-            "name": "Replace it with `@electron/rebuild`",
-            "category": "Deprecated",
-        },
         '"grunt"': {
             "name": "Grunt is practically unmaintained. Move on to something better.",
             "category": "Deprecated",
@@ -176,6 +168,13 @@ def check_modules():
         },
     }
 
+    search_strings_package_json = {
+        '"electron-rebuild"': {
+            "name": "Replace it with `@electron/rebuild`",
+            "category": "Deprecated"
+        }
+    }
+
     modules_json_file = open(
         "./docs/data/modules.stage.3.json", encoding="utf-8")
     modules = json.load(modules_json_file)
@@ -230,6 +229,15 @@ def check_modules():
                             module["issues"].append(
                                 f"{value['category']}: Found `{search_string}` in file `{file_path.name}`: {value['name']}"
                             )
+
+                    if (file_path.name == "package.json"):
+                        for search_string, value in search_strings_package_json.items():
+                            found_string = search_in_file(file_path, search_string)
+                            if found_string:
+                                module["issues"].append(
+                                    f"{value['category']}: Found `{search_string}` in file `{file_path.name}`: {value['name']}"
+                                )
+
                 # if ".yml" in str(file_path).lower():
                 #    module["issues"].append(
                 #        f"`Recommendation: {file_path.name}`: Change file extention from `.yml` to `.yaml`: <https://yaml.org/faq.html>.")

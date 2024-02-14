@@ -655,7 +655,7 @@
     "maintainer": "dolanmiu",
     "maintainerURL": "",
     "description": "Easy, hands free Amazon Alexa integration; activated, simply by saying \"Alexa\".",
-    "issues": 9,
+    "issues": 8,
     "stars": 150,
     "license": "MIT",
     "image": "styles-loading.jpg",
@@ -3576,7 +3576,7 @@
     "maintainer": "bugsounet",
     "maintainerURL": "https://wiki.bugsounet.fr",
     "description": "Control your screen with a PIR Sensor. This module have been defined to work only with MMM-GoogleAssistant.",
-    "issues": 4,
+    "issues": 3,
     "stars": 2,
     "tags": [
       "sensor",
@@ -4747,7 +4747,7 @@
     "maintainer": "thobach",
     "maintainerURL": "",
     "description": "Allows gesture control of compliments (only show when stepping in front of mirror), newsfeed (wave left / right, up for full-screen) and pages with two types of infrared sensors. Gestures can be up, down, left, right, far and close movements of the hand in front of a gesture sensor (APDS-9960) and present and away gestures in front of an IR distance sensor (GP2Y0A21YK).",
-    "issues": 13,
+    "issues": 11,
     "stars": 40,
     "tags": [
       "gesture",
@@ -4866,7 +4866,7 @@
     "maintainer": "bugsounet",
     "maintainerURL": "https://wiki.bugsounet.fr",
     "description": "MMM-GoogleAssistant is an real embedded Google assistant on MagicMirror\u00b2 with many <a target=\"_blank\" href=\"#extended-plugins-for-mmm-googleassistant\">plugins</a> . [Maintained].",
-    "issues": 4,
+    "issues": 3,
     "stars": 79,
     "tags": [
       "google assistant",
@@ -9033,7 +9033,7 @@
     "maintainer": "Ax-LED",
     "maintainerURL": "",
     "description": "Connect a rotary encoder to MagicMirror\u00b2 and use it for navigation inside of MagicMirror\u00b2.",
-    "issues": 5,
+    "issues": 4,
     "stars": 10,
     "license": "MIT",
     "image": "MMM-Navigate_screenshot1.jpg",
@@ -10590,7 +10590,7 @@
     "maintainer": "bugsounet",
     "maintainerURL": "",
     "description": "After a configurated time without any user interaction the display will turn off and hide all modules for economy mode.It will wake up with a PIR sensor. [Maintained].",
-    "issues": 5,
+    "issues": 4,
     "stars": 10,
     "tags": [
       "screen"
@@ -12504,7 +12504,7 @@
     "maintainer": "Bee-Mar",
     "maintainerURL": "",
     "description": "Simple, multi-threaded interface for HC-SR04 ultra sonic sensors to be used with MMM-pages.",
-    "issues": 10,
+    "issues": 9,
     "outdated": "Abandoned. Repo has been archived at 2022-05-22.",
     "stars": 19,
     "license": "MIT",
@@ -12961,7 +12961,7 @@
     "maintainer": "dekinet",
     "maintainerURL": "",
     "description": "Display Soliscloud inverter data.",
-    "issues": 9,
+    "issues": 8,
     "stars": 2,
     "license": "ISC",
     "lastCommit": "2024-02-12T08:48:17+10:00"
