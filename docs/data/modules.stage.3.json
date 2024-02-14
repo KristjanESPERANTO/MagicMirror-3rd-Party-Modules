@@ -669,7 +669,7 @@
       "alphavantage"
     ],
     "license": "MIT",
-    "image": "avstock-grid.PNG"
+    "image": "avstock-grid.jpg"
   },
   {
     "name": "MMM-awesome-alexa",
@@ -1242,7 +1242,7 @@
     ],
     "stars": 11,
     "license": "MIT",
-    "image": "Screenshot.JPG"
+    "image": "Screenshot.jpg"
   },
   {
     "name": "MMM-Bubi",
@@ -2217,7 +2217,7 @@
       "crisis"
     ],
     "license": "MIT",
-    "image": "docs-ScreenShot1.PNG"
+    "image": "docs-ScreenShot1.jpg"
   },
   {
     "name": "MMM-Cronixie",
@@ -3118,7 +3118,7 @@
     "outdated": "Deprecated. API is disabled.",
     "stars": 6,
     "license": "MIT",
-    "image": "pix-1.JPG"
+    "image": "pix-1.jpg"
   },
   {
     "name": "MMM-EarthquakeMonitor",
@@ -3551,7 +3551,7 @@
     ],
     "stars": 2,
     "license": "MIT",
-    "image": "Screenshot.JPG"
+    "image": "Screenshot.jpg"
   },
   {
     "name": "EXT-Browser",
@@ -4658,7 +4658,7 @@
     ],
     "stars": 9,
     "license": "MIT",
-    "image": "Capture2.JPG"
+    "image": "Capture2.jpg"
   },
   {
     "name": "MMM-FrameLight",
@@ -4953,7 +4953,7 @@
     ],
     "stars": 8,
     "license": "MIT",
-    "image": "Capture.JPG"
+    "image": "Capture.jpg"
   },
   {
     "name": "MMM-germanwordclock",
@@ -6779,7 +6779,7 @@
     ],
     "stars": 1,
     "license": "MIT",
-    "image": "Example_de.PNG"
+    "image": "Example_de.jpg"
   },
   {
     "name": "MMM-JokeAPI",
@@ -7458,7 +7458,7 @@
     ],
     "stars": 2,
     "license": "ISC",
-    "image": "Example.JPG"
+    "image": "Example.jpg"
   },
   {
     "name": "MMM-LothianBuses",
@@ -7497,7 +7497,7 @@
     ],
     "stars": 9,
     "license": "MIT",
-    "image": "getControlUuid.PNG"
+    "image": "getControlUuid.jpg"
   },
   {
     "name": "MMM-Luftdaten",
@@ -7541,7 +7541,7 @@
       "modular"
     ],
     "license": "MIT",
-    "image": "pix-11.JPG"
+    "image": "pix-11.jpg"
   },
   {
     "name": "MMM-Luxembourg-Public-Transport",
@@ -8739,7 +8739,7 @@
     ],
     "stars": 10,
     "license": "MIT",
-    "image": "Capture1.JPG"
+    "image": "Capture1.jpg"
   },
   {
     "name": "MMM-MP3Player",
@@ -9247,7 +9247,7 @@
       "study"
     ],
     "license": "MIT",
-    "image": "Screenshot.PNG"
+    "image": "Screenshot.jpg"
   },
   {
     "name": "MMM-MyTraffic",
@@ -9747,7 +9747,7 @@
       "news"
     ],
     "license": "ISC",
-    "image": "screen1.PNG"
+    "image": "screen1.jpg"
   },
   {
     "name": "MMM-NewsFeedTicker",
@@ -9938,7 +9938,7 @@
     ],
     "stars": 12,
     "license": "MIT",
-    "image": "docs-screenshot-2.PNG"
+    "image": "docs-screenshot-2.jpg"
   },
   {
     "name": "MMM-NINA",
@@ -10076,7 +10076,7 @@
       "cool graphs"
     ],
     "license": "MIT",
-    "image": "Capture.PNG"
+    "image": "Capture.jpg"
   },
   {
     "name": "MMM-NoteTaker",
@@ -10390,7 +10390,7 @@
     ],
     "stars": 0,
     "license": "MIT",
-    "image": "screenshots-screenColor.PNG"
+    "image": "screenshots-screenColor.jpg"
   },
   {
     "name": "MMM-OneTracker",
@@ -10879,7 +10879,7 @@
     ],
     "stars": 5,
     "license": "MIT",
-    "image": "images-1.PNG"
+    "image": "images-1.jpg"
   },
   {
     "name": "MMM-pekavm",
@@ -11085,7 +11085,7 @@
     "outdated": "Abandoned. No reactions to issues since years. Missing instructions to install dependency 'request'.",
     "stars": 4,
     "license": "MIT",
-    "image": "images-1.PNG"
+    "image": "images-1.jpg"
   },
   {
     "name": "MMM-PimaticFloorplan",
@@ -11851,7 +11851,7 @@
       "notification"
     ],
     "license": "MIT",
-    "image": "screenshots-MagicMirror.PNG"
+    "image": "screenshots-MagicMirror.jpg"
   },
   {
     "name": "MMM-qnapDownloadStation",
@@ -13154,7 +13154,7 @@
     ],
     "stars": 1,
     "license": "MIT",
-    "image": "docs-screenshot.PNG"
+    "image": "docs-screenshot.jpg"
   },
   {
     "name": "MMM-Simple-Swiper",
@@ -13291,7 +13291,7 @@
       "publictransport"
     ],
     "license": "MIT",
-    "image": "docs-MMM-SL-Screenshot.PNG"
+    "image": "docs-MMM-SL-Screenshot.jpg"
   },
   {
     "name": "MMM-Slack2",
@@ -13763,7 +13763,7 @@
       "music"
     ],
     "license": "MIT",
-    "image": "screenshots-miniature_bar.PNG"
+    "image": "screenshots-miniature_bar.jpg"
   },
   {
     "name": "MMM-SpotifyConnectUI",
@@ -14063,7 +14063,7 @@
     ],
     "stars": 6,
     "license": "MIT",
-    "image": "Stationboard.PNG"
+    "image": "Stationboard.jpg"
   },
   {
     "name": "MMM-swisstransport",
@@ -14738,7 +14738,7 @@
     ],
     "stars": 10,
     "license": "MIT",
-    "image": "Capture.JPG"
+    "image": "Capture.jpg"
   },
   {
     "name": "MMM-Traffic",
@@ -14989,7 +14989,7 @@
       "public transport"
     ],
     "license": "MIT",
-    "image": "tuzsa-magicmirror.PNG"
+    "image": "tuzsa-magicmirror.jpg"
   },
   {
     "name": "MMM-TvheadendDVR",
@@ -15299,7 +15299,7 @@
     ],
     "stars": 1,
     "license": "MIT",
-    "image": "docs-screenshot.PNG"
+    "image": "docs-screenshot.jpg"
   },
   {
     "name": "MMM-Vasttrafik-PublicTransport",
@@ -15313,7 +15313,7 @@
     ],
     "stars": 9,
     "license": "MIT",
-    "image": "docs-screenshot.PNG"
+    "image": "docs-screenshot.jpg"
   },
   {
     "name": "MMM-vCard2Calendar",
