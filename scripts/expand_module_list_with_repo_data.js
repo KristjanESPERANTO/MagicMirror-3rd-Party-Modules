@@ -46,11 +46,7 @@ async function findAndResizeImage (moduleName, moduleMaintainer) {
   if (imageToProcess) {
     targetImageName = imageToProcess
       .replaceAll("/", "-")
-      .replace("bmp", "jpg")
-      .replace("gif", "jpg")
-      .replace("jepg", "jpg")
-      .replace("png", "jpg")
-      .replace("webp", "jpg");
+      .replace(/bmp|gif|jepg|jpg|png|webp/giu, "jpg");
     const sourcePath = `${sourceFolder}/${imageToProcess}`;
     const targetPath = `${imagesFolder}/${moduleName}---${moduleMaintainer}---${targetImageName}`;
 
