@@ -281,6 +281,7 @@ main {
   display: flex;
   justify-content: space-around;
   flex-flow: row nowrap;
+  flex-grow: 1;
   color: var(--color-background);
   align-items: flex-end;
   margin-top: 0.6em;
