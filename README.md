@@ -24,6 +24,7 @@ This is a list of information that we can display on the web page and where the 
   - If there are several images in your repository, one image is selected according to the following logic: First search for an image that contains 'screenshot' or 'example' in it's name and if none is found, take the first image that is found.
 - Description: Is taken from the [official list of modules](https://github.com/MagicMirrorOrg/MagicMirror/wiki/3rd-party-modules).
 - Tags: Are taken from the keywords in the `package.json`. Take a look at [this package.json](https://github.com/KristjanESPERANTO/MMM-PublicTransportHafas/blob/main/package.json) as an example.
+- License: Is taken from the keywords in the `package.json`. Take a look at [this package.json](https://github.com/KristjanESPERANTO/MMM-PublicTransportHafas/blob/main/package.json) as an example.
 
 Also check the [result file](result.md) to see if there are any notes on your module.
 
