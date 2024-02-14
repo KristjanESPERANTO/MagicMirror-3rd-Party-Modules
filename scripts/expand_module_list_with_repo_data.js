@@ -52,7 +52,7 @@ async function findAndResizeImage (moduleName, moduleMaintainer) {
 
     await sharp(sourcePath)
       .resize(
-        350,
+        500,
         600,
         {
           "fit": sharp.fit.inside,
