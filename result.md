@@ -1,16 +1,16 @@
 # Result of the module analysis
 
-Last update: 2024-02-14T00:51:47+01:00
+Last update: 2024-02-14T17:09:48+01:00
 
 ## Statistics
 
 |                      | number   |
 |:---------------------|:--------:|
-| modules analyzed     |   1123   |
-| maintainer           |    631   |
-| modules with issues  |   1117   |
-| issues               |   7378   |
-| modules at github    |   1111   |
+| modules analyzed     |   1125   |
+| maintainer           |    632   |
+| modules with issues  |   1119   |
+| issues               |   7391   |
+| modules at github    |   1113   |
 | modules at gitlab    |     11   |
 | modules at bitbucket |      1   |
 
@@ -4207,6 +4207,13 @@ Last update: 2024-02-14T00:51:47+01:00
 9. Recommendation: Found `jshint` in file `node_helper.js`: Replace "jshint" by "eslint".
 10. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
 11. The branch name is 'master'. Consider renaming it to 'main'.
+
+### [MMM-IT8951 by seb-ma](https://github.com/seb-ma/MMM-IT8951)
+
+1. No image found.
+2. Outdated: Found `MichMich/MagicMirror` in file `README.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
+3. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
+4. The branch name is 'master'. Consider renaming it to 'main'.
 
 ### [MMM-ITCH-IO by Xanthus1](https://github.com/Xanthus1/MMM-ITCH-IO)
 
@@ -8883,6 +8890,18 @@ Last update: 2024-02-14T00:51:47+01:00
 3. Outdated: Found `MichMich/MagicMirror` in file `README.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
 4. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
 5. The branch name is 'master'. Consider renaming it to 'main'.
+
+### [MMM-Soliscloud by dekinet](https://github.com/dekinet/MMM-Soliscloud)
+
+1. `package.json` issue: No repository field.
+2. There are no keywords in 'package.json'. We would use them as tags on the module list page.
+3. No image found.
+4. Typo: Found `Magic Mirror` in file `README.md`: Replace it with `MagicMirror²`.
+5. Outdated: Found `MichMich/MagicMirror` in file `README.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
+6. Recommendation: Found `require('https')` in file `node_helper.js`: Replace 'https' by 'node:https'.
+7. Recommendation: Found `new Date()` in file `node_helper.js`: Replace it by `new Date(Date.now())`: [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
+8. Deprecated: Found ` electron-rebuild` in file `postinstall`: Replace it with `@electron/rebuild`
+9. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
 
 ### [MMM-Sonos by CFenner](https://github.com/CFenner/MMM-Sonos)
 

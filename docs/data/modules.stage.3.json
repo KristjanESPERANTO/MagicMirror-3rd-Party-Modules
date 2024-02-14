@@ -6649,6 +6649,25 @@
     "image": "screenshots-floorplan_animated.jpg"
   },
   {
+    "name": "MMM-IT8951",
+    "url": "https://github.com/seb-ma/MMM-IT8951",
+    "id": "seb-ma/MMM-IT8951",
+    "maintainer": "seb-ma",
+    "maintainerURL": "",
+    "description": "This module communicates with a IT8951 card to display MagicMirror² on a e-ink screen using IT8951 drivers.",
+    "issues": [
+      "No image found."
+    ],
+    "stars": 4,
+    "tags": [
+      "magicmirror-module",
+      "eink",
+      "it8951",
+      "waveshare-eink"
+    ],
+    "license": "MIT"
+  },
+  {
     "name": "MMM-ITCH-IO",
     "url": "https://github.com/Xanthus1/MMM-ITCH-IO",
     "id": "Xanthus1/MMM-ITCH-IO",
@@ -13605,6 +13624,21 @@
       "There is no `package.json`. We need this file to gather information about the module for the module list page."
     ],
     "stars": 2
+  },
+  {
+    "name": "MMM-Soliscloud",
+    "url": "https://github.com/dekinet/MMM-Soliscloud",
+    "id": "dekinet/MMM-Soliscloud",
+    "maintainer": "dekinet",
+    "maintainerURL": "",
+    "description": "Display Soliscloud inverter data.",
+    "issues": [
+      "`package.json` issue: No repository field.",
+      "There are no keywords in 'package.json'. We would use them as tags on the module list page.",
+      "No image found."
+    ],
+    "stars": 2,
+    "license": "ISC"
   },
   {
     "name": "MMM-Sonos",

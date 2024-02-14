@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "2024-02-13T23:41:52.165Z",
+  "lastUpdate": "2024-02-14T15:59:18.401Z",
   "modules": [
     {
       "name": "MMM-01ZM",
@@ -4135,6 +4135,15 @@
       "maintainer": "shbatm",
       "maintainerURL": "",
       "description": "Display status of lights and variables on a floor plan connected to an ISY-994i Device.",
+      "issues": []
+    },
+    {
+      "name": "MMM-IT8951",
+      "url": "https://github.com/seb-ma/MMM-IT8951",
+      "id": "seb-ma/MMM-IT8951",
+      "maintainer": "seb-ma",
+      "maintainerURL": "",
+      "description": "This module communicates with a IT8951 card to display MagicMirror² on a e-ink screen using IT8951 drivers.",
       "issues": []
     },
     {
@@ -8447,6 +8456,15 @@
       "maintainer": "grenagit",
       "maintainerURL": "",
       "description": "Display the last Solar Dynamics Observatory (SDO) picture.",
+      "issues": []
+    },
+    {
+      "name": "MMM-Soliscloud",
+      "url": "https://github.com/dekinet/MMM-Soliscloud",
+      "id": "dekinet/MMM-Soliscloud",
+      "maintainer": "dekinet",
+      "maintainerURL": "",
+      "description": "Display Soliscloud inverter data.",
       "issues": []
     },
     {
