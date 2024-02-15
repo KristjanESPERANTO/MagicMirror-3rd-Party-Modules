@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "2024-02-14T18:32:02.452Z",
+  "lastUpdate": "2024-02-15T07:10:10.358Z",
   "repositories": [
     {
       "id": "rubinho101/MMM-01ZM",
@@ -3163,20 +3163,21 @@
     },
     {
       "id": "Arve/MMM-Entur-tavle",
-      "gitHubDataLastUpdate": "2024-01-31T18:53:14.422Z",
+      "gitHubDataLastUpdate": "2024-02-15T07:09:57.425Z",
       "gitHubData": {
-        "issues": 2,
+        "issues": 0,
         "stars": 15,
         "license": "LGPL-2.1",
         "archived": false,
         "disabled": false,
         "defaultBranch": "master",
-        "lastCommit": "2024-01-17T14:17:41Z"
+        "has_issues": true,
+        "lastCommit": "2024-02-04T14:02:13Z"
       }
     },
     {
       "id": "CharlesMorris78/MMM-EnvCanada",
-      "gitHubDataLastUpdate": "2024-01-31T18:53:14.973Z",
+      "gitHubDataLastUpdate": "2024-02-15T07:09:57.927Z",
       "gitHubData": {
         "issues": 0,
         "stars": 2,
@@ -3184,12 +3185,13 @@
         "archived": false,
         "disabled": false,
         "defaultBranch": "main",
+        "has_issues": true,
         "lastCommit": "2023-11-16T22:58:23Z"
       }
     },
     {
       "id": "mykle1/MMM-EOL",
-      "gitHubDataLastUpdate": "2024-01-31T18:53:15.458Z",
+      "gitHubDataLastUpdate": "2024-02-15T07:09:58.404Z",
       "gitHubData": {
         "issues": 1,
         "stars": 7,
@@ -3197,25 +3199,27 @@
         "archived": false,
         "disabled": false,
         "defaultBranch": "master",
+        "has_issues": true,
         "lastCommit": "2022-02-01T01:23:08Z"
       }
     },
     {
       "id": "mumblebaj/MMM-EskomSePush",
-      "gitHubDataLastUpdate": "2024-01-31T18:53:16.059Z",
+      "gitHubDataLastUpdate": "2024-02-15T07:09:58.829Z",
       "gitHubData": {
         "issues": 0,
-        "stars": 0,
+        "stars": 1,
         "license": "MIT",
         "archived": false,
         "disabled": false,
         "defaultBranch": "main",
+        "has_issues": true,
         "lastCommit": "2023-11-29T14:58:17Z"
       }
     },
     {
       "id": "daniel-windsor/MMM-eswordoftheday",
-      "gitHubDataLastUpdate": "2024-01-31T18:53:16.605Z",
+      "gitHubDataLastUpdate": "2024-02-15T07:09:59.286Z",
       "gitHubData": {
         "issues": 2,
         "stars": 8,
@@ -3223,12 +3227,13 @@
         "archived": false,
         "disabled": false,
         "defaultBranch": "main",
+        "has_issues": true,
         "lastCommit": "2023-09-14T10:04:07Z"
       }
     },
     {
       "id": "hansman84/MMM-ethereum",
-      "gitHubDataLastUpdate": "2024-01-31T18:53:17.076Z",
+      "gitHubDataLastUpdate": "2024-02-15T07:09:59.725Z",
       "gitHubData": {
         "issues": 0,
         "stars": 0,
@@ -3236,12 +3241,13 @@
         "archived": false,
         "disabled": false,
         "defaultBranch": "master",
+        "has_issues": false,
         "lastCommit": "2017-09-01T10:30:27Z"
       }
     },
     {
       "id": "AjaxCarroway/MMM-ethermine",
-      "gitHubDataLastUpdate": "2024-01-31T18:53:17.630Z",
+      "gitHubDataLastUpdate": "2024-02-15T07:10:00.221Z",
       "gitHubData": {
         "issues": 0,
         "stars": 0,
@@ -3249,12 +3255,13 @@
         "archived": false,
         "disabled": false,
         "defaultBranch": "main",
+        "has_issues": true,
         "lastCommit": "2021-08-19T21:31:57Z"
       }
     },
     {
       "id": "Helpi90/MMM-Ethos",
-      "gitHubDataLastUpdate": "2024-01-31T18:53:18.075Z",
+      "gitHubDataLastUpdate": "2024-02-15T07:10:00.608Z",
       "gitHubData": {
         "issues": 0,
         "stars": 1,
@@ -3262,12 +3269,13 @@
         "archived": false,
         "disabled": false,
         "defaultBranch": "master",
+        "has_issues": true,
         "lastCommit": "2020-09-10T11:37:41Z"
       }
     },
     {
       "id": "mykle1/MMM-EventHorizon",
-      "gitHubDataLastUpdate": "2024-01-31T18:53:18.526Z",
+      "gitHubDataLastUpdate": "2024-02-15T07:10:01.104Z",
       "gitHubData": {
         "issues": 2,
         "stars": 13,
@@ -3275,12 +3283,13 @@
         "archived": false,
         "disabled": false,
         "defaultBranch": "master",
+        "has_issues": true,
         "lastCommit": "2020-12-13T02:48:22Z"
       }
     },
     {
       "id": "mykle1/MMM-Events",
-      "gitHubDataLastUpdate": "2024-01-31T18:53:19.005Z",
+      "gitHubDataLastUpdate": "2024-02-15T07:10:01.550Z",
       "gitHubData": {
         "issues": 0,
         "stars": 23,
@@ -3288,25 +3297,27 @@
         "archived": false,
         "disabled": false,
         "defaultBranch": "master",
+        "has_issues": true,
         "lastCommit": "2022-01-25T00:56:12Z"
       }
     },
     {
       "id": "themox/MMM-EveryNews",
-      "gitHubDataLastUpdate": "2024-01-31T18:53:19.489Z",
+      "gitHubDataLastUpdate": "2024-02-15T07:10:01.976Z",
       "gitHubData": {
         "issues": 0,
-        "stars": 0,
+        "stars": 1,
         "license": "MIT",
         "archived": false,
         "disabled": false,
         "defaultBranch": "master",
+        "has_issues": false,
         "lastCommit": "2023-12-02T22:15:53Z"
       }
     },
     {
       "id": "bugsounet/EXT-Alert",
-      "gitHubDataLastUpdate": "2024-01-31T18:53:20.201Z",
+      "gitHubDataLastUpdate": "2024-02-15T07:10:02.410Z",
       "gitHubData": {
         "issues": 0,
         "stars": 2,
@@ -3314,12 +3325,13 @@
         "archived": false,
         "disabled": false,
         "defaultBranch": "master",
+        "has_issues": false,
         "lastCommit": "2024-01-03T15:18:43Z"
       }
     },
     {
       "id": "bugsounet/EXT-Background",
-      "gitHubDataLastUpdate": "2024-01-31T18:53:20.678Z",
+      "gitHubDataLastUpdate": "2024-02-15T07:10:02.866Z",
       "gitHubData": {
         "issues": 0,
         "stars": 0,
@@ -3327,12 +3339,13 @@
         "archived": false,
         "disabled": false,
         "defaultBranch": "master",
+        "has_issues": false,
         "lastCommit": "2024-01-03T15:19:08Z"
       }
     },
     {
       "id": "bugsounet/EXT-Bring",
-      "gitHubDataLastUpdate": "2024-01-31T18:53:21.160Z",
+      "gitHubDataLastUpdate": "2024-02-15T07:10:03.409Z",
       "gitHubData": {
         "issues": 0,
         "stars": 2,
@@ -3340,12 +3353,13 @@
         "archived": false,
         "disabled": false,
         "defaultBranch": "main",
+        "has_issues": false,
         "lastCommit": "2024-01-03T15:19:29Z"
       }
     },
     {
       "id": "bugsounet/EXT-Browser",
-      "gitHubDataLastUpdate": "2024-01-31T18:53:21.705Z",
+      "gitHubDataLastUpdate": "2024-02-15T07:10:03.864Z",
       "gitHubData": {
         "issues": 0,
         "stars": 0,
@@ -3353,12 +3367,13 @@
         "archived": false,
         "disabled": false,
         "defaultBranch": "master",
+        "has_issues": false,
         "lastCommit": "2024-01-03T15:19:52Z"
       }
     },
     {
       "id": "bugsounet/EXT-Detector",
-      "gitHubDataLastUpdate": "2024-01-31T18:53:22.216Z",
+      "gitHubDataLastUpdate": "2024-02-15T07:10:04.285Z",
       "gitHubData": {
         "issues": 0,
         "stars": 6,
@@ -3366,38 +3381,41 @@
         "archived": false,
         "disabled": false,
         "defaultBranch": "main",
-        "lastCommit": "2024-01-03T15:20:17Z"
+        "has_issues": false,
+        "lastCommit": "2024-02-13T19:24:58Z"
       }
     },
     {
       "id": "bugsounet/EXT-FreeboxTV",
-      "gitHubDataLastUpdate": "2024-01-31T18:53:23.857Z",
+      "gitHubDataLastUpdate": "2024-02-15T07:10:04.722Z",
       "gitHubData": {
         "issues": 0,
-        "stars": 0,
+        "stars": 1,
         "license": "MIT",
         "archived": false,
         "disabled": false,
         "defaultBranch": "main",
+        "has_issues": false,
         "lastCommit": "2024-01-03T15:20:42Z"
       }
     },
     {
       "id": "bugsounet/EXT-GooglePhotos",
-      "gitHubDataLastUpdate": "2024-01-31T18:53:24.368Z",
+      "gitHubDataLastUpdate": "2024-02-15T07:10:05.168Z",
       "gitHubData": {
-        "issues": 0,
+        "issues": 1,
         "stars": 2,
         "license": "MIT",
         "archived": false,
         "disabled": false,
         "defaultBranch": "master",
-        "lastCommit": "2024-01-03T15:21:14Z"
+        "has_issues": false,
+        "lastCommit": "2024-02-11T19:25:53Z"
       }
     },
     {
       "id": "bugsounet/EXT-Governor",
-      "gitHubDataLastUpdate": "2024-01-31T18:53:24.878Z",
+      "gitHubDataLastUpdate": "2024-02-15T07:10:05.696Z",
       "gitHubData": {
         "issues": 0,
         "stars": 2,
@@ -3405,12 +3423,13 @@
         "archived": false,
         "disabled": false,
         "defaultBranch": "master",
+        "has_issues": false,
         "lastCommit": "2024-01-03T15:21:39Z"
       }
     },
     {
       "id": "bugsounet/EXT-Internet",
-      "gitHubDataLastUpdate": "2024-01-31T18:53:25.494Z",
+      "gitHubDataLastUpdate": "2024-02-15T07:10:06.167Z",
       "gitHubData": {
         "issues": 0,
         "stars": 0,
@@ -3418,12 +3437,13 @@
         "archived": false,
         "disabled": false,
         "defaultBranch": "master",
+        "has_issues": false,
         "lastCommit": "2024-01-04T14:15:52Z"
       }
     },
     {
       "id": "bugsounet/EXT-Keyboard",
-      "gitHubDataLastUpdate": "2024-01-31T18:53:26.109Z",
+      "gitHubDataLastUpdate": "2024-02-15T07:10:06.637Z",
       "gitHubData": {
         "issues": 0,
         "stars": 1,
@@ -3431,12 +3451,13 @@
         "archived": false,
         "disabled": false,
         "defaultBranch": "main",
+        "has_issues": false,
         "lastCommit": "2024-01-03T15:29:57Z"
       }
     },
     {
       "id": "bugsounet/EXT-Librespot",
-      "gitHubDataLastUpdate": "2024-01-31T18:53:26.615Z",
+      "gitHubDataLastUpdate": "2024-02-15T07:10:07.060Z",
       "gitHubData": {
         "issues": 0,
         "stars": 0,
@@ -3444,12 +3465,13 @@
         "archived": false,
         "disabled": false,
         "defaultBranch": "master",
+        "has_issues": false,
         "lastCommit": "2024-01-12T00:42:36Z"
       }
     },
     {
       "id": "bugsounet/EXT-Motion",
-      "gitHubDataLastUpdate": "2024-01-31T18:53:27.106Z",
+      "gitHubDataLastUpdate": "2024-02-15T07:10:07.489Z",
       "gitHubData": {
         "issues": 0,
         "stars": 0,
@@ -3457,12 +3479,13 @@
         "archived": false,
         "disabled": false,
         "defaultBranch": "main",
+        "has_issues": false,
         "lastCommit": "2024-01-03T15:30:56Z"
       }
     },
     {
       "id": "bugsounet/EXT-MusicPlayer",
-      "gitHubDataLastUpdate": "2024-01-31T18:53:27.644Z",
+      "gitHubDataLastUpdate": "2024-02-15T07:10:07.924Z",
       "gitHubData": {
         "issues": 0,
         "stars": 1,
@@ -3470,12 +3493,13 @@
         "archived": false,
         "disabled": false,
         "defaultBranch": "master",
+        "has_issues": false,
         "lastCommit": "2024-01-03T15:31:20Z"
       }
     },
     {
       "id": "bugsounet/EXT-Pages",
-      "gitHubDataLastUpdate": "2024-01-31T18:53:28.272Z",
+      "gitHubDataLastUpdate": "2024-02-15T07:10:08.380Z",
       "gitHubData": {
         "issues": 0,
         "stars": 2,
@@ -3483,12 +3507,13 @@
         "archived": false,
         "disabled": false,
         "defaultBranch": "master",
-        "lastCommit": "2024-01-28T16:28:50Z"
+        "has_issues": false,
+        "lastCommit": "2024-02-02T12:49:03Z"
       }
     },
     {
       "id": "bugsounet/EXT-Photos",
-      "gitHubDataLastUpdate": "2024-01-31T18:53:29.908Z",
+      "gitHubDataLastUpdate": "2024-02-15T07:10:08.854Z",
       "gitHubData": {
         "issues": 0,
         "stars": 0,
@@ -3496,25 +3521,27 @@
         "archived": false,
         "disabled": false,
         "defaultBranch": "master",
+        "has_issues": false,
         "lastCommit": "2024-01-03T15:34:21Z"
       }
     },
     {
       "id": "bugsounet/EXT-Pir",
-      "gitHubDataLastUpdate": "2024-01-31T18:53:30.513Z",
+      "gitHubDataLastUpdate": "2024-02-15T07:10:09.369Z",
       "gitHubData": {
-        "issues": 0,
-        "stars": 2,
+        "issues": 1,
+        "stars": 3,
         "license": "MIT",
         "archived": false,
         "disabled": false,
         "defaultBranch": "master",
-        "lastCommit": "2024-01-03T15:34:44Z"
+        "has_issues": false,
+        "lastCommit": "2024-02-13T19:32:29Z"
       }
     },
     {
       "id": "bugsounet/EXT-RadioPlayer",
-      "gitHubDataLastUpdate": "2024-01-31T18:53:31.126Z",
+      "gitHubDataLastUpdate": "2024-02-15T07:10:09.862Z",
       "gitHubData": {
         "issues": 0,
         "stars": 2,
@@ -3522,12 +3549,13 @@
         "archived": false,
         "disabled": false,
         "defaultBranch": "master",
+        "has_issues": false,
         "lastCommit": "2024-01-03T15:35:09Z"
       }
     },
     {
       "id": "bugsounet/EXT-Screen",
-      "gitHubDataLastUpdate": "2024-01-31T18:53:31.737Z",
+      "gitHubDataLastUpdate": "2024-02-15T07:10:10.325Z",
       "gitHubData": {
         "issues": 0,
         "stars": 3,
@@ -3535,7 +3563,8 @@
         "archived": false,
         "disabled": false,
         "defaultBranch": "master",
-        "lastCommit": "2024-01-03T15:35:39Z"
+        "has_issues": false,
+        "lastCommit": "2024-02-04T17:52:34Z"
       }
     },
     {

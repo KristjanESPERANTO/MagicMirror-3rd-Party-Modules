@@ -230,7 +230,7 @@ def check_modules():
                                 f"{value['category']}: Found `{search_string}` in file `{file_path.name}`: {value['name']}"
                             )
 
-                    if (file_path.name == "package.json"):
+                    if file_path.name == "package.json":
                         for search_string, value in search_strings_package_json.items():
                             found_string = search_in_file(file_path, search_string)
                             if found_string:

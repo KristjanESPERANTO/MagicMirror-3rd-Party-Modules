@@ -3410,7 +3410,7 @@
     "maintainerURL": "https://github.com/mumblebaj",
     "description": "Display loadshedding schedule data for the South African users.",
     "issues": [],
-    "stars": 0,
+    "stars": 1,
     "tags": [
       "eskomsepush"
     ],
@@ -3441,6 +3441,7 @@
     "maintainerURL": "",
     "description": "Display ethereum ticker.",
     "issues": [
+      "Issues are not enabled in the GitHub repository. So users cannot report bugs. Please enable issues in your repo.",
       "There is no `package.json`. We need this file to gather information about the module for the module list page."
     ],
     "stars": 0
@@ -3504,9 +3505,10 @@
     "maintainerURL": "",
     "description": "Over 30,000 News sources! Up to 10 at once. Simplified addition to your config entry.",
     "issues": [
+      "Issues are not enabled in the GitHub repository. So users cannot report bugs. Please enable issues in your repo.",
       "There is no `package.json`. We need this file to gather information about the module for the module list page."
     ],
-    "stars": 0
+    "stars": 1
   },
   {
     "name": "EXT-Alert",
@@ -3515,7 +3517,9 @@
     "maintainer": "bugsounet",
     "maintainerURL": "https://wiki.bugsounet.fr",
     "description": "Display any warning, information or error on your screen about Assistant.",
-    "issues": [],
+    "issues": [
+      "Issues are not enabled in the GitHub repository. So users cannot report bugs. Please enable issues in your repo."
+    ],
     "stars": 2,
     "tags": [
       "notification",
@@ -3533,6 +3537,7 @@
     "maintainerURL": "https://wiki.bugsounet.fr",
     "description": "Change the default Google Assistant background to your own or with animated gifs for each status of the assistant.",
     "issues": [
+      "Issues are not enabled in the GitHub repository. So users cannot report bugs. Please enable issues in your repo.",
       "There are no keywords in 'package.json'. We would use them as tags on the module list page."
     ],
     "stars": 0,
@@ -3547,6 +3552,7 @@
     "maintainerURL": "https://wiki.bugsounet.fr",
     "description": "Show your current shopping list of Bring!",
     "issues": [
+      "Issues are not enabled in the GitHub repository. So users cannot report bugs. Please enable issues in your repo.",
       "There are no keywords in 'package.json'. We would use them as tags on the module list page."
     ],
     "stars": 2,
@@ -3561,6 +3567,7 @@
     "maintainerURL": "https://wiki.bugsounet.fr",
     "description": "Display any internet web page like a real browser in fullscreen.",
     "issues": [
+      "Issues are not enabled in the GitHub repository. So users cannot report bugs. Please enable issues in your repo.",
       "No image found."
     ],
     "stars": 0,
@@ -3576,7 +3583,9 @@
     "maintainer": "bugsounet",
     "maintainerURL": "https://wiki.bugsounet.fr",
     "description": "Multi-keyword listener for MMM-GoogleAssistant.",
-    "issues": [],
+    "issues": [
+      "Issues are not enabled in the GitHub repository. So users cannot report bugs. Please enable issues in your repo."
+    ],
     "stars": 6,
     "tags": [
       "hotword",
@@ -3597,9 +3606,10 @@
     "maintainerURL": "https://wiki.bugsounet.fr",
     "description": "Display Channel from French Internet Provider: Free.",
     "issues": [
+      "Issues are not enabled in the GitHub repository. So users cannot report bugs. Please enable issues in your repo.",
       "There are no keywords in 'package.json'. We would use them as tags on the module list page."
     ],
-    "stars": 0,
+    "stars": 1,
     "license": "MIT",
     "image": "resources-FreeboxTV.jpg"
   },
@@ -3610,7 +3620,9 @@
     "maintainer": "bugsounet",
     "maintainerURL": "https://wiki.bugsounet.fr",
     "description": "Display your album directory with Google photos API in background or in MagicMirror² position.",
-    "issues": [],
+    "issues": [
+      "Issues are not enabled in the GitHub repository. So users cannot report bugs. Please enable issues in your repo."
+    ],
     "stars": 2,
     "tags": [
       "google",
@@ -3627,6 +3639,7 @@
     "maintainerURL": "https://wiki.bugsounet.fr",
     "description": "CPU governor enables the operating system to scale the CPU frequency up or down in order to save power or improve performance.",
     "issues": [
+      "Issues are not enabled in the GitHub repository. So users cannot report bugs. Please enable issues in your repo.",
       "No image found."
     ],
     "stars": 2,
@@ -3644,7 +3657,9 @@
     "maintainer": "bugsounet",
     "maintainerURL": "https://wiki.bugsounet.fr",
     "description": "Check your internet connexion, display ping.",
-    "issues": [],
+    "issues": [
+      "Issues are not enabled in the GitHub repository. So users cannot report bugs. Please enable issues in your repo."
+    ],
     "stars": 0,
     "tags": [
       "internet",
@@ -3661,6 +3676,7 @@
     "maintainerURL": "https://wiki.bugsounet.fr",
     "description": "Control your mirror with a keyboard.",
     "issues": [
+      "Issues are not enabled in the GitHub repository. So users cannot report bugs. Please enable issues in your repo.",
       "There are no keywords in 'package.json'. We would use them as tags on the module list page.",
       "No image found."
     ],
@@ -3674,7 +3690,9 @@
     "maintainer": "bugsounet",
     "maintainerURL": "https://wiki.bugsounet.fr",
     "description": "Allow to play Spotify music on your mirror with Librespot.",
-    "issues": [],
+    "issues": [
+      "Issues are not enabled in the GitHub repository. So users cannot report bugs. Please enable issues in your repo."
+    ],
     "stars": 0,
     "tags": [
       "spotify",
@@ -3691,6 +3709,7 @@
     "maintainerURL": "https://wiki.bugsounet.fr",
     "description": "Control your screen with a webcam (as motion detector).",
     "issues": [
+      "Issues are not enabled in the GitHub repository. So users cannot report bugs. Please enable issues in your repo.",
       "No image found."
     ],
     "stars": 0,
@@ -3709,7 +3728,9 @@
     "maintainer": "bugsounet",
     "maintainerURL": "https://wiki.bugsounet.fr",
     "description": "Play any music found on a USB Key or in defined local directory.",
-    "issues": [],
+    "issues": [
+      "Issues are not enabled in the GitHub repository. So users cannot report bugs. Please enable issues in your repo."
+    ],
     "stars": 1,
     "tags": [
       "volume",
@@ -3725,7 +3746,9 @@
     "maintainer": "bugsounet",
     "maintainerURL": "https://wiki.bugsounet.fr",
     "description": "This plugin allows you to have animated pages.",
-    "issues": [],
+    "issues": [
+      "Issues are not enabled in the GitHub repository. So users cannot report bugs. Please enable issues in your repo."
+    ],
     "stars": 2,
     "tags": [
       "pages"
@@ -3740,7 +3763,9 @@
     "maintainer": "bugsounet",
     "maintainerURL": "https://wiki.bugsounet.fr",
     "description": "Displaying any photos discover by assistant in fullscreen.",
-    "issues": [],
+    "issues": [
+      "Issues are not enabled in the GitHub repository. So users cannot report bugs. Please enable issues in your repo."
+    ],
     "stars": 0,
     "tags": [
       "photos"
@@ -3756,9 +3781,10 @@
     "maintainerURL": "https://wiki.bugsounet.fr",
     "description": "Control your screen with a PIR Sensor.",
     "issues": [
+      "Issues are not enabled in the GitHub repository. So users cannot report bugs. Please enable issues in your repo.",
       "No image found."
     ],
-    "stars": 2,
+    "stars": 3,
     "tags": [
       "sensor",
       "pir",
@@ -3774,7 +3800,9 @@
     "maintainer": "bugsounet",
     "maintainerURL": "https://wiki.bugsounet.fr",
     "description": "Play radio station on MagicMirror².",
-    "issues": [],
+    "issues": [
+      "Issues are not enabled in the GitHub repository. So users cannot report bugs. Please enable issues in your repo."
+    ],
     "stars": 2,
     "tags": [
       "radio"
@@ -3789,7 +3817,9 @@
     "maintainer": "bugsounet",
     "maintainerURL": "https://wiki.bugsounet.fr",
     "description": "After a configurated time without any user interaction the display will turn off and hide all modules for economy mode.",
-    "issues": [],
+    "issues": [
+      "Issues are not enabled in the GitHub repository. So users cannot report bugs. Please enable issues in your repo."
+    ],
     "stars": 3,
     "tags": [
       "screen",
@@ -6632,7 +6662,7 @@
     ],
     "stars": 3,
     "license": "MIT",
-    "image": "data-iss_mapbox.jpg"
+    "image": "data-iss_cartodb.jpg"
   },
   {
     "name": "MMM-ISY",
@@ -14852,14 +14882,14 @@
     "maintainer": "dekinet",
     "maintainerURL": "",
     "description": "Simple display of train departure times for Brisbane (Australia).",
-    "issues": [
-      "`package.json` issue: No description",
-      "`package.json` issue: No repository field.",
-      "There are no keywords in 'package.json'. We would use them as tags on the module list page."
-    ],
+    "issues": [],
     "stars": 0,
-    "license": "ISC",
-    "image": "screenshot.jpg"
+    "tags": [
+      "public transport",
+      "brisbane"
+    ],
+    "license": "MIT",
+    "image": "screenshot1.jpg"
   },
   {
     "name": "MMM-TransLoc",

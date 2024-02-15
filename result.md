@@ -1,6 +1,6 @@
 # Result of the module analysis
 
-Last update: 2024-02-14T22:16:09+01:00
+Last update: 2024-02-15T08:20:04+01:00
 
 ## Statistics
 
@@ -8,8 +8,8 @@ Last update: 2024-02-14T22:16:09+01:00
 |:---------------------|:--------:|
 | modules analyzed     |   1124   |
 | maintainer           |    632   |
-| modules with issues  |   1118   |
-| issues               |   7373   |
+| modules with issues  |   1117   |
+| issues               |   7386   |
 | modules at github    |   1112   |
 | modules at gitlab    |     11   |
 | modules at bitbucket |      1   |
@@ -757,7 +757,7 @@ Last update: 2024-02-14T22:16:09+01:00
    - @typescript-eslint/eslint-plugin    ^6.19.1  →     ^7.0.1
    - @typescript-eslint/parser           ^6.19.1  →     ^7.0.1
    - prettier                             ^3.2.4  →     ^3.2.5
-   - rollup                               ^4.9.6  →    ^4.10.0
+   - rollup                               ^4.9.6  →    ^4.11.0
    - rxjs                                 ^7.5.5  →     ^7.8.1
 
 
@@ -2204,11 +2204,12 @@ Last update: 2024-02-14T22:16:09+01:00
 
 ### [MMM-ethereum by hansman84](https://github.com/hansman84/MMM-ethereum)
 
-1. There is no `package.json`. We need this file to gather information about the module for the module list page.
-2. Outdated: Found `MichMich/MagicMirror` in file `README.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
-3. Deprecated: Found `require('request')` in file `node_helper.js`: Replace it with built-in fetch.
-4. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
-5. The branch name is 'master'. Consider renaming it to 'main'.
+1. Issues are not enabled in the GitHub repository. So users cannot report bugs. Please enable issues in your repo.
+2. There is no `package.json`. We need this file to gather information about the module for the module list page.
+3. Outdated: Found `MichMich/MagicMirror` in file `README.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
+4. Deprecated: Found `require('request')` in file `node_helper.js`: Replace it with built-in fetch.
+5. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
+6. The branch name is 'master'. Consider renaming it to 'main'.
 
 ### [MMM-ethermine by AjaxCarroway](https://github.com/AjaxCarroway/MMM-ethermine)
 
@@ -2249,117 +2250,133 @@ Last update: 2024-02-14T22:16:09+01:00
 
 ### [MMM-EveryNews by themox](https://github.com/themox/MMM-EveryNews)
 
-1. There is no `package.json`. We need this file to gather information about the module for the module list page.
-2. Typo: Found `Magic Mirror` in file `MMM-EveryNews.js`: Replace it with `MagicMirror²`.
-3. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
-4. Deprecated: Found `require('request')` in file `node_helper.js`: Replace it with built-in fetch.
-5. Recommendation: Found `axios` in file `sources.json`: Replace it with built-in fetch.
-6. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
-7. The branch name is 'master'. Consider renaming it to 'main'.
+1. Issues are not enabled in the GitHub repository. So users cannot report bugs. Please enable issues in your repo.
+2. There is no `package.json`. We need this file to gather information about the module for the module list page.
+3. Typo: Found `Magic Mirror` in file `MMM-EveryNews.js`: Replace it with `MagicMirror²`.
+4. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
+5. Deprecated: Found `require('request')` in file `node_helper.js`: Replace it with built-in fetch.
+6. Recommendation: Found `axios` in file `sources.json`: Replace it with built-in fetch.
+7. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
+8. The branch name is 'master'. Consider renaming it to 'main'.
 
 ### [EXT-Alert by bugsounet](https://github.com/bugsounet/EXT-Alert)
 
-1. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
-2. The branch name is 'master'. Consider renaming it to 'main'.
+1. Issues are not enabled in the GitHub repository. So users cannot report bugs. Please enable issues in your repo.
+2. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
+3. The branch name is 'master'. Consider renaming it to 'main'.
 
 ### [EXT-Background by bugsounet](https://github.com/bugsounet/EXT-Background)
 
-1. There are no keywords in 'package.json'. We would use them as tags on the module list page.
-2. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
-3. The branch name is 'master'. Consider renaming it to 'main'.
+1. Issues are not enabled in the GitHub repository. So users cannot report bugs. Please enable issues in your repo.
+2. There are no keywords in 'package.json'. We would use them as tags on the module list page.
+3. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
+4. The branch name is 'master'. Consider renaming it to 'main'.
 
 ### [EXT-Bring by bugsounet](https://github.com/bugsounet/EXT-Bring)
 
-1. There are no keywords in 'package.json'. We would use them as tags on the module list page.
-2. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
-3. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
+1. Issues are not enabled in the GitHub repository. So users cannot report bugs. Please enable issues in your repo.
+2. There are no keywords in 'package.json'. We would use them as tags on the module list page.
+3. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
+4. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
 
 ### [EXT-Browser by bugsounet](https://github.com/bugsounet/EXT-Browser)
 
-1. No image found.
-2. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
-3. The branch name is 'master'. Consider renaming it to 'main'.
+1. Issues are not enabled in the GitHub repository. So users cannot report bugs. Please enable issues in your repo.
+2. No image found.
+3. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
+4. The branch name is 'master'. Consider renaming it to 'main'.
 
 ### [EXT-Detector by bugsounet](https://github.com/bugsounet/EXT-Detector)
 
-1. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
-2. Information: There are updates for 1 dependencie(s):
-   - @mapbox/node-pre-gyp  ^1.0.10  →  ^1.0.11
-
+1. Issues are not enabled in the GitHub repository. So users cannot report bugs. Please enable issues in your repo.
+2. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
 
 ### [EXT-FreeboxTV by bugsounet](https://github.com/bugsounet/EXT-FreeboxTV)
 
-1. There are no keywords in 'package.json'. We would use them as tags on the module list page.
-2. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
-3. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
+1. Issues are not enabled in the GitHub repository. So users cannot report bugs. Please enable issues in your repo.
+2. There are no keywords in 'package.json'. We would use them as tags on the module list page.
+3. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
+4. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
 
 ### [EXT-GooglePhotos by bugsounet](https://github.com/bugsounet/EXT-GooglePhotos)
 
-1. Recommendation: Found `require('https')` in file `GooglePhotosLib.js`: Replace 'https' by 'node:https'.
-2. Recommendation: Found `axios` in file `GooglePhotosLib.js`: Replace it with built-in fetch.
-3. Recommendation: Found `axios` in file `package.json`: Replace it with built-in fetch.
-4. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
-5. The branch name is 'master'. Consider renaming it to 'main'.
+1. Issues are not enabled in the GitHub repository. So users cannot report bugs. Please enable issues in your repo.
+2. Recommendation: Found `require('https')` in file `GooglePhotosLib.js`: Replace 'https' by 'node:https'.
+3. Recommendation: Found `axios` in file `GooglePhotosLib.js`: Replace it with built-in fetch.
+4. Recommendation: Found `axios` in file `package.json`: Replace it with built-in fetch.
+5. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
+6. The branch name is 'master'. Consider renaming it to 'main'.
 
 ### [EXT-Governor by bugsounet](https://github.com/bugsounet/EXT-Governor)
 
-1. No image found.
-2. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
-3. The branch name is 'master'. Consider renaming it to 'main'.
+1. Issues are not enabled in the GitHub repository. So users cannot report bugs. Please enable issues in your repo.
+2. No image found.
+3. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
+4. The branch name is 'master'. Consider renaming it to 'main'.
 
 ### [EXT-Internet by bugsounet](https://github.com/bugsounet/EXT-Internet)
 
-1. Outdated: Found `MichMich/MagicMirror` in file `README.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
-2. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
-3. The branch name is 'master'. Consider renaming it to 'main'.
+1. Issues are not enabled in the GitHub repository. So users cannot report bugs. Please enable issues in your repo.
+2. Outdated: Found `MichMich/MagicMirror` in file `README.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
+3. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
+4. The branch name is 'master'. Consider renaming it to 'main'.
 
 ### [EXT-Keyboard by bugsounet](https://github.com/bugsounet/EXT-Keyboard)
 
-1. There are no keywords in 'package.json'. We would use them as tags on the module list page.
-2. No image found.
-3. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
+1. Issues are not enabled in the GitHub repository. So users cannot report bugs. Please enable issues in your repo.
+2. There are no keywords in 'package.json'. We would use them as tags on the module list page.
+3. No image found.
+4. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
 
 ### [EXT-Librespot by bugsounet](https://github.com/bugsounet/EXT-Librespot)
 
-1. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
-2. The branch name is 'master'. Consider renaming it to 'main'.
+1. Issues are not enabled in the GitHub repository. So users cannot report bugs. Please enable issues in your repo.
+2. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
+3. The branch name is 'master'. Consider renaming it to 'main'.
 
 ### [EXT-Motion by bugsounet](https://github.com/bugsounet/EXT-Motion)
 
-1. No image found.
-2. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
+1. Issues are not enabled in the GitHub repository. So users cannot report bugs. Please enable issues in your repo.
+2. No image found.
+3. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
 
 ### [EXT-MusicPlayer by bugsounet](https://github.com/bugsounet/EXT-MusicPlayer)
 
-1. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
-2. The branch name is 'master'. Consider renaming it to 'main'.
+1. Issues are not enabled in the GitHub repository. So users cannot report bugs. Please enable issues in your repo.
+2. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
+3. The branch name is 'master'. Consider renaming it to 'main'.
 
 ### [EXT-Pages by bugsounet](https://github.com/bugsounet/EXT-Pages)
 
-1. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
-2. The branch name is 'master'. Consider renaming it to 'main'.
+1. Issues are not enabled in the GitHub repository. So users cannot report bugs. Please enable issues in your repo.
+2. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
+3. The branch name is 'master'. Consider renaming it to 'main'.
 
 ### [EXT-Photos by bugsounet](https://github.com/bugsounet/EXT-Photos)
 
-1. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
-2. The branch name is 'master'. Consider renaming it to 'main'.
+1. Issues are not enabled in the GitHub repository. So users cannot report bugs. Please enable issues in your repo.
+2. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
+3. The branch name is 'master'. Consider renaming it to 'main'.
 
 ### [EXT-Pir by bugsounet](https://github.com/bugsounet/EXT-Pir)
 
-1. No image found.
-2. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
-3. The branch name is 'master'. Consider renaming it to 'main'.
+1. Issues are not enabled in the GitHub repository. So users cannot report bugs. Please enable issues in your repo.
+2. No image found.
+3. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
+4. The branch name is 'master'. Consider renaming it to 'main'.
 
 ### [EXT-RadioPlayer by bugsounet](https://github.com/bugsounet/EXT-RadioPlayer)
 
-1. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
-2. The branch name is 'master'. Consider renaming it to 'main'.
+1. Issues are not enabled in the GitHub repository. So users cannot report bugs. Please enable issues in your repo.
+2. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
+3. The branch name is 'master'. Consider renaming it to 'main'.
 
 ### [EXT-Screen by bugsounet](https://github.com/bugsounet/EXT-Screen)
 
-1. Recommendation: Found `new Date()` in file `long-press-event.js`: Replace it by `new Date(Date.now())`: [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
-2. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
-3. The branch name is 'master'. Consider renaming it to 'main'.
+1. Issues are not enabled in the GitHub repository. So users cannot report bugs. Please enable issues in your repo.
+2. Recommendation: Found `new Date()` in file `long-press-event.js`: Replace it by `new Date(Date.now())`: [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
+3. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
+4. The branch name is 'master'. Consider renaming it to 'main'.
 
 ### [EXT-Selfies by bugsounet](https://github.com/bugsounet/EXT-Selfies)
 
@@ -9682,15 +9699,6 @@ Last update: 2024-02-14T22:16:09+01:00
 2. Typo: Found `Magic Mirror` in file `MMM-TranslatedMessages.js`: Replace it with `MagicMirror²`.
 3. Typo: Found `Magic Mirror` in file `README.md`: Replace it with `MagicMirror²`.
 4. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
-
-### [MMM-TranslinkBrisbane by dekinet](https://github.com/dekinet/MMM-TranslinkBrisbane)
-
-1. `package.json` issue: No description
-2. `package.json` issue: No repository field.
-3. There are no keywords in 'package.json'. We would use them as tags on the module list page.
-4. Outdated: Found `MichMich/MagicMirror` in file `README.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
-5. Recommendation: Found `require('https')` in file `node_helper.js`: Replace 'https' by 'node:https'.
-6. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
 
 ### [MMM-TransLoc by OrangeHoopla](https://github.com/OrangeHoopla/MMM-TransLoc)
 
