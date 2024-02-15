@@ -13,6 +13,7 @@ const showOutdated = document.getElementById("show-outdated");
 const tagsList = [
   ["calendar", "📅", "#5bc7d9", "#022126"],
   ["news", "📰", "#e0fffe", "#141e1e"],
+  ["motion detection", "🏃🏽", "#ff419e", "#220212"],
   ["public transport", "🚍", "#f9c376", "#231602"],
   ["smarthome", "💡", "#ef9531", "#2c1802"],
   ["soccer", "⚽", "#737ef7", "#01041f"],
