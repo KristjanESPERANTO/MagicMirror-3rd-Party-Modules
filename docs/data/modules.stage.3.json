@@ -3837,6 +3837,7 @@
     "maintainerURL": "https://wiki.bugsounet.fr",
     "description": "Take selfies from webcam.",
     "issues": [
+      "Issues are not enabled in the GitHub repository. So users cannot report bugs. Please enable issues in your repo.",
       "There are no keywords in 'package.json'. We would use them as tags on the module list page."
     ],
     "stars": 0,
@@ -3851,6 +3852,7 @@
     "maintainerURL": "https://wiki.bugsounet.fr",
     "description": "Need a flash to take selfies?",
     "issues": [
+      "Issues are not enabled in the GitHub repository. So users cannot report bugs. Please enable issues in your repo.",
       "There are no keywords in 'package.json'. We would use them as tags on the module list page.",
       "No image found."
     ],
@@ -3865,6 +3867,7 @@
     "maintainerURL": "https://wiki.bugsounet.fr",
     "description": "Send your selfies to Telegram, google photos or by mail.",
     "issues": [
+      "Issues are not enabled in the GitHub repository. So users cannot report bugs. Please enable issues in your repo.",
       "There are no keywords in 'package.json'. We would use them as tags on the module list page.",
       "No image found."
     ],
@@ -3879,6 +3882,7 @@
     "maintainerURL": "https://wiki.bugsounet.fr",
     "description": "Slideshow of your best selfies.",
     "issues": [
+      "Issues are not enabled in the GitHub repository. So users cannot report bugs. Please enable issues in your repo.",
       "There are no keywords in 'package.json'. We would use them as tags on the module list page."
     ],
     "stars": 0,
@@ -3892,7 +3896,9 @@
     "maintainer": "bugsounet",
     "maintainerURL": "https://wiki.bugsounet.fr",
     "description": "This plugin show current spotify playback of any devices.",
-    "issues": [],
+    "issues": [
+      "Issues are not enabled in the GitHub repository. So users cannot report bugs. Please enable issues in your repo."
+    ],
     "stars": 2,
     "tags": [
       "spotify"
@@ -3908,6 +3914,7 @@
     "maintainerURL": "https://wiki.bugsounet.fr",
     "description": "Create a server for displaying any Lyrics and Canvas from Spotify.",
     "issues": [
+      "Issues are not enabled in the GitHub repository. So users cannot report bugs. Please enable issues in your repo.",
       "No image found."
     ],
     "stars": 0,
@@ -3926,6 +3933,7 @@
     "maintainerURL": "https://wiki.bugsounet.fr",
     "description": "Control your mirror with a StreamDeck by elgato©.",
     "issues": [
+      "Issues are not enabled in the GitHub repository. So users cannot report bugs. Please enable issues in your repo.",
       "There are no keywords in 'package.json'. We would use them as tags on the module list page."
     ],
     "stars": 0,
@@ -3939,7 +3947,9 @@
     "maintainer": "bugsounet",
     "maintainerURL": "https://wiki.bugsounet.fr",
     "description": "You can remote-control plugins within Telegram.",
-    "issues": [],
+    "issues": [
+      "Issues are not enabled in the GitHub repository. So users cannot report bugs. Please enable issues in your repo."
+    ],
     "stars": 1,
     "tags": [
       "telegram"
@@ -3955,6 +3965,7 @@
     "maintainerURL": "https://wiki.bugsounet.fr",
     "description": "This plugin allow to auto-update if an update is detected.",
     "issues": [
+      "Issues are not enabled in the GitHub repository. So users cannot report bugs. Please enable issues in your repo.",
       "There are no keywords in 'package.json'. We would use them as tags on the module list page."
     ],
     "stars": 0,
@@ -3968,7 +3979,9 @@
     "maintainer": "bugsounet",
     "maintainerURL": "https://wiki.bugsounet.fr",
     "description": "Control the sound volume level of your mirror.",
-    "issues": [],
+    "issues": [
+      "Issues are not enabled in the GitHub repository. So users cannot report bugs. Please enable issues in your repo."
+    ],
     "stars": 2,
     "tags": [
       "volume",
@@ -3986,6 +3999,7 @@
     "maintainerURL": "https://wiki.bugsounet.fr",
     "description": "Allow to send a welcome on start of MagicMirror².",
     "issues": [
+      "Issues are not enabled in the GitHub repository. So users cannot report bugs. Please enable issues in your repo.",
       "No image found."
     ],
     "stars": 0,
@@ -4002,7 +4016,9 @@
     "maintainer": "bugsounet",
     "maintainerURL": "https://wiki.bugsounet.fr",
     "description": "This plugins allows to play YouTube video.",
-    "issues": [],
+    "issues": [
+      "Issues are not enabled in the GitHub repository. So users cannot report bugs. Please enable issues in your repo."
+    ],
     "stars": 3,
     "tags": [
       "youtube"
@@ -4017,7 +4033,9 @@
     "maintainer": "bugsounet",
     "maintainerURL": "https://wiki.bugsounet.fr",
     "description": "Allow to cast a YouTube video on MagicMirror².",
-    "issues": [],
+    "issues": [
+      "Issues are not enabled in the GitHub repository. So users cannot report bugs. Please enable issues in your repo."
+    ],
     "stars": 2,
     "tags": [
       "cast",
@@ -4078,6 +4096,7 @@
     "maintainerURL": "https://github.com/jimbydude",
     "description": "This is a fork of Ebens module above. This version can handle multi-user and uses MMM-Face-Reco-DNN to hide/show modules based on user logged in.",
     "issues": [
+      "Issues are not enabled in the GitHub repository. So users cannot report bugs. Please enable issues in your repo.",
       "`package.json` issue: No repository field.",
       "There are no keywords in 'package.json'. We would use them as tags on the module list page."
     ],
@@ -4115,7 +4134,7 @@
     "issues": [
       "There is no `package.json`. We need this file to gather information about the module for the module list page."
     ],
-    "stars": 77
+    "stars": 78
   },
   {
     "name": "MMM-Faces",
@@ -4226,7 +4245,7 @@
     "issues": [
       "There is no `package.json`. We need this file to gather information about the module for the module list page."
     ],
-    "stars": 0
+    "stars": 1
   },
   {
     "name": "MMM-FF-cht-sh",
@@ -6657,12 +6676,9 @@
     "maintainerURL": "https://gitlab.com/karsten13",
     "description": "Displays current position of the International Space Station on a map.",
     "issues": [
-      "`package.json` issue: No repository field.",
-      "There are no keywords in 'package.json'. We would use them as tags on the module list page."
+      "There is no `package.json`. We need this file to gather information about the module for the module list page."
     ],
-    "stars": 3,
-    "license": "MIT",
-    "image": "data-iss_cartodb.jpg"
+    "stars": 3
   },
   {
     "name": "MMM-ISY",
@@ -14883,7 +14899,7 @@
     "maintainerURL": "",
     "description": "Simple display of train departure times for Brisbane (Australia).",
     "issues": [],
-    "stars": 0,
+    "stars": 1,
     "tags": [
       "public transport",
       "brisbane"

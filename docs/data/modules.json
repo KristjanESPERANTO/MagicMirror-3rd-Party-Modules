@@ -3628,7 +3628,7 @@
     "maintainer": "bugsounet",
     "maintainerURL": "https://wiki.bugsounet.fr",
     "description": "Take selfies from webcam. This module have been defined to work only with MMM-GoogleAssistant.",
-    "issues": 4,
+    "issues": 5,
     "stars": 0,
     "license": "MIT",
     "image": "resources-screenshot.jpg",
@@ -3641,7 +3641,7 @@
     "maintainer": "bugsounet",
     "maintainerURL": "https://wiki.bugsounet.fr",
     "description": "Need a flash to take selfies? This module have been defined to work only with MMM-GoogleAssistant.",
-    "issues": 3,
+    "issues": 4,
     "stars": 0,
     "license": "MIT",
     "lastCommit": "2024-01-03T16:36:32+01:00"
@@ -3653,7 +3653,7 @@
     "maintainer": "bugsounet",
     "maintainerURL": "https://wiki.bugsounet.fr",
     "description": "Send your selfies to Telegram, google photos or by mail. This module have been defined to work only with MMM-GoogleAssistant.",
-    "issues": 3,
+    "issues": 4,
     "stars": 0,
     "license": "MIT",
     "lastCommit": "2024-01-03T16:36:53+01:00"
@@ -3665,7 +3665,7 @@
     "maintainer": "bugsounet",
     "maintainerURL": "https://wiki.bugsounet.fr",
     "description": "Slideshow of your best selfies. This module have been defined to work only with MMM-GoogleAssistant.",
-    "issues": 2,
+    "issues": 3,
     "stars": 0,
     "license": "MIT",
     "image": "resources-coming_soon.jpg",
@@ -3678,7 +3678,7 @@
     "maintainer": "bugsounet",
     "maintainerURL": "https://wiki.bugsounet.fr",
     "description": "This plugin show current spotify playback of any devices. This module have been defined to work only with MMM-GoogleAssistant.",
-    "issues": 2,
+    "issues": 3,
     "stars": 2,
     "tags": [
       "spotify"
@@ -3694,7 +3694,7 @@
     "maintainer": "bugsounet",
     "maintainerURL": "https://wiki.bugsounet.fr",
     "description": "Create a server for displaying any Lyrics and Canvas from Spotify. This module have been defined to work only with MMM-GoogleAssistant.",
-    "issues": 2,
+    "issues": 3,
     "stars": 0,
     "tags": [
       "spotify",
@@ -3711,7 +3711,7 @@
     "maintainer": "bugsounet",
     "maintainerURL": "https://wiki.bugsounet.fr",
     "description": "Control your mirror with a StreamDeck by elgato\u00a9. This module have been defined to work only with MMM-GoogleAssistant.",
-    "issues": 2,
+    "issues": 3,
     "stars": 0,
     "license": "MIT",
     "image": "icons-Sample-access_time.jpg",
@@ -3724,7 +3724,7 @@
     "maintainer": "bugsounet",
     "maintainerURL": "https://wiki.bugsounet.fr",
     "description": "You can remote-control plugins within Telegram. This module have been defined to work only with MMM-GoogleAssistant.",
-    "issues": 4,
+    "issues": 5,
     "stars": 1,
     "tags": [
       "telegram"
@@ -3740,7 +3740,7 @@
     "maintainer": "bugsounet",
     "maintainerURL": "https://wiki.bugsounet.fr",
     "description": "This plugin allow to auto-update if an update is detected. This module have been defined to work only with MMM-GoogleAssistant.",
-    "issues": 5,
+    "issues": 6,
     "stars": 0,
     "license": "MIT",
     "image": "resources-update.jpg",
@@ -3753,7 +3753,7 @@
     "maintainer": "bugsounet",
     "maintainerURL": "https://wiki.bugsounet.fr",
     "description": "Control the sound volume level of your mirror. This module have been defined to work only with MMM-GoogleAssistant.",
-    "issues": 2,
+    "issues": 3,
     "stars": 2,
     "tags": [
       "volume",
@@ -3771,7 +3771,7 @@
     "maintainer": "bugsounet",
     "maintainerURL": "https://wiki.bugsounet.fr",
     "description": "Allow to send a welcome on start of MagicMirror\u00b2. This module have been defined to work only with MMM-GoogleAssistant.",
-    "issues": 3,
+    "issues": 4,
     "stars": 0,
     "tags": [
       "notification",
@@ -3787,7 +3787,7 @@
     "maintainer": "bugsounet",
     "maintainerURL": "https://wiki.bugsounet.fr",
     "description": "This plugins allows to play YouTube video. This module have been defined to work only with MMM-GoogleAssistant.",
-    "issues": 5,
+    "issues": 6,
     "stars": 3,
     "tags": [
       "youtube"
@@ -3803,7 +3803,7 @@
     "maintainer": "bugsounet",
     "maintainerURL": "https://wiki.bugsounet.fr",
     "description": "Allow to cast a YouTube video on MagicMirror\u00b2. This module have been defined to work only with MMM-GoogleAssistant.",
-    "issues": 3,
+    "issues": 4,
     "stars": 2,
     "tags": [
       "cast",
@@ -3860,7 +3860,7 @@
     "maintainer": "jimbydude",
     "maintainerURL": "https://github.com/jimbydude",
     "description": "This is a fork of Ebens module above. This version can handle multi-user and uses MMM-Face-Reco-DNN to hide/show modules based on user logged in.",
-    "issues": 9,
+    "issues": 10,
     "stars": 11,
     "license": "MIT",
     "image": "img-readme-face-recognition-guest-smai.jpg",
@@ -3893,7 +3893,7 @@
     "maintainerURL": "https://github.com/EbenKouao",
     "description": "This module allows you to access profiles using face recognition. This works on the back of OpenCV face recognition module. Program this script to control applicances e.g. Smart Plugs, or lights based on an individual's face profile being recognized.",
     "issues": 5,
-    "stars": 77,
+    "stars": 78,
     "lastCommit": "2020-06-12T11:58:46-07:00"
   },
   {
@@ -3997,7 +3997,7 @@
     "maintainerURL": "",
     "description": "Displays color-coded Fear &amp; Greed Index Values from CNBC for Stocks and from Alternative.me for Crypto.",
     "issues": 4,
-    "stars": 0,
+    "stars": 1,
     "lastCommit": "2023-12-02T13:21:30+01:00"
   },
   {
@@ -6323,11 +6323,9 @@
     "maintainer": "khassel",
     "maintainerURL": "https://gitlab.com/karsten13",
     "description": "Displays current position of the International Space Station on a map.",
-    "issues": 7,
+    "issues": 4,
     "stars": 3,
-    "license": "MIT",
-    "image": "data-iss_cartodb.jpg",
-    "lastCommit": "2024-02-14T23:31:05+01:00"
+    "lastCommit": "2024-02-15T21:29:54+01:00"
   },
   {
     "name": "MMM-ISY",
@@ -9151,7 +9149,7 @@
     ],
     "license": "MIT",
     "image": ".github-preview.bubbles.jpg",
-    "lastCommit": "2024-02-12T18:52:40+00:00"
+    "lastCommit": "2024-02-15T18:18:29+00:00"
   },
   {
     "name": "MMM-Netatmo-Presence",
@@ -9260,7 +9258,7 @@
     ],
     "license": "ISC",
     "image": "screen1.jpg",
-    "lastCommit": "2024-02-02T21:35:37+02:00"
+    "lastCommit": "2024-02-15T19:22:41+02:00"
   },
   {
     "name": "MMM-NewsFeedTicker",
@@ -13888,7 +13886,7 @@
     ],
     "license": "MIT",
     "image": "1x1px.jpg",
-    "lastCommit": "2023-03-22T15:15:09-05:00"
+    "lastCommit": "2024-02-15T10:30:21-06:00"
   },
   {
     "name": "MMM-TomTomCalculateRouteTraffic",
@@ -14120,7 +14118,7 @@
     "maintainerURL": "",
     "description": "Simple display of train departure times for Brisbane (Australia).",
     "issues": 0,
-    "stars": 0,
+    "stars": 1,
     "tags": [
       "public transport",
       "brisbane"

@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "2024-02-15T07:10:10.358Z",
+  "lastUpdate": "2024-02-15T21:11:30.519Z",
   "repositories": [
     {
       "id": "rubinho101/MMM-01ZM",
@@ -3569,7 +3569,7 @@
     },
     {
       "id": "bugsounet/EXT-Selfies",
-      "gitHubDataLastUpdate": "2024-01-31T19:26:33.206Z",
+      "gitHubDataLastUpdate": "2024-02-15T21:11:16.906Z",
       "gitHubData": {
         "issues": 0,
         "stars": 0,
@@ -3577,12 +3577,13 @@
         "archived": false,
         "disabled": false,
         "defaultBranch": "master",
+        "has_issues": false,
         "lastCommit": "2024-01-03T15:36:02Z"
       }
     },
     {
       "id": "bugsounet/EXT-SelfiesFlash",
-      "gitHubDataLastUpdate": "2024-01-31T19:26:33.718Z",
+      "gitHubDataLastUpdate": "2024-02-15T21:11:17.456Z",
       "gitHubData": {
         "issues": 0,
         "stars": 0,
@@ -3590,12 +3591,13 @@
         "archived": false,
         "disabled": false,
         "defaultBranch": "main",
+        "has_issues": false,
         "lastCommit": "2024-01-03T15:36:32Z"
       }
     },
     {
       "id": "bugsounet/EXT-SelfiesSender",
-      "gitHubDataLastUpdate": "2024-01-31T19:26:34.187Z",
+      "gitHubDataLastUpdate": "2024-02-15T21:11:17.924Z",
       "gitHubData": {
         "issues": 2,
         "stars": 0,
@@ -3603,12 +3605,13 @@
         "archived": false,
         "disabled": false,
         "defaultBranch": "main",
+        "has_issues": false,
         "lastCommit": "2024-01-03T15:36:53Z"
       }
     },
     {
       "id": "bugsounet/EXT-SelfiesViewer",
-      "gitHubDataLastUpdate": "2024-01-31T19:26:34.624Z",
+      "gitHubDataLastUpdate": "2024-02-15T21:11:18.347Z",
       "gitHubData": {
         "issues": 0,
         "stars": 0,
@@ -3616,12 +3619,13 @@
         "archived": false,
         "disabled": false,
         "defaultBranch": "main",
+        "has_issues": false,
         "lastCommit": "2024-01-04T14:10:10Z"
       }
     },
     {
       "id": "bugsounet/EXT-Spotify",
-      "gitHubDataLastUpdate": "2024-01-31T19:26:35.138Z",
+      "gitHubDataLastUpdate": "2024-02-15T21:11:18.825Z",
       "gitHubData": {
         "issues": 0,
         "stars": 2,
@@ -3629,12 +3633,13 @@
         "archived": false,
         "disabled": false,
         "defaultBranch": "master",
+        "has_issues": false,
         "lastCommit": "2024-01-03T15:37:34Z"
       }
     },
     {
       "id": "bugsounet/EXT-SpotifyCanvasLyrics",
-      "gitHubDataLastUpdate": "2024-01-31T19:26:35.700Z",
+      "gitHubDataLastUpdate": "2024-02-15T21:11:19.330Z",
       "gitHubData": {
         "issues": 0,
         "stars": 0,
@@ -3642,12 +3647,13 @@
         "archived": false,
         "disabled": false,
         "defaultBranch": "main",
+        "has_issues": false,
         "lastCommit": "2024-01-03T15:38:02Z"
       }
     },
     {
       "id": "bugsounet/EXT-StreamDeck",
-      "gitHubDataLastUpdate": "2024-01-31T19:26:36.308Z",
+      "gitHubDataLastUpdate": "2024-02-15T21:11:19.776Z",
       "gitHubData": {
         "issues": 0,
         "stars": 0,
@@ -3655,12 +3661,13 @@
         "archived": false,
         "disabled": false,
         "defaultBranch": "main",
+        "has_issues": false,
         "lastCommit": "2024-01-12T00:41:46Z"
       }
     },
     {
       "id": "bugsounet/EXT-TelegramBot",
-      "gitHubDataLastUpdate": "2024-01-31T19:26:36.831Z",
+      "gitHubDataLastUpdate": "2024-02-15T21:11:20.314Z",
       "gitHubData": {
         "issues": 0,
         "stars": 1,
@@ -3668,12 +3675,13 @@
         "archived": false,
         "disabled": false,
         "defaultBranch": "master",
-        "lastCommit": "2024-01-03T15:38:46Z"
+        "has_issues": false,
+        "lastCommit": "2024-02-11T19:54:36Z"
       }
     },
     {
       "id": "bugsounet/EXT-Updates",
-      "gitHubDataLastUpdate": "2024-01-31T19:26:37.438Z",
+      "gitHubDataLastUpdate": "2024-02-15T21:11:20.757Z",
       "gitHubData": {
         "issues": 0,
         "stars": 0,
@@ -3681,12 +3689,13 @@
         "archived": false,
         "disabled": false,
         "defaultBranch": "master",
-        "lastCommit": "2024-01-03T15:39:12Z"
+        "has_issues": false,
+        "lastCommit": "2024-02-11T20:00:51Z"
       }
     },
     {
       "id": "bugsounet/EXT-Volume",
-      "gitHubDataLastUpdate": "2024-01-31T19:26:38.053Z",
+      "gitHubDataLastUpdate": "2024-02-15T21:11:21.231Z",
       "gitHubData": {
         "issues": 0,
         "stars": 2,
@@ -3694,12 +3703,13 @@
         "archived": false,
         "disabled": false,
         "defaultBranch": "master",
+        "has_issues": false,
         "lastCommit": "2024-01-03T15:39:36Z"
       }
     },
     {
       "id": "bugsounet/EXT-Welcome",
-      "gitHubDataLastUpdate": "2024-01-31T19:26:38.564Z",
+      "gitHubDataLastUpdate": "2024-02-15T21:11:21.667Z",
       "gitHubData": {
         "issues": 0,
         "stars": 0,
@@ -3707,12 +3717,13 @@
         "archived": false,
         "disabled": false,
         "defaultBranch": "master",
+        "has_issues": false,
         "lastCommit": "2024-01-03T15:40:04Z"
       }
     },
     {
       "id": "bugsounet/EXT-YouTube",
-      "gitHubDataLastUpdate": "2024-01-31T19:26:39.076Z",
+      "gitHubDataLastUpdate": "2024-02-15T21:11:22.127Z",
       "gitHubData": {
         "issues": 0,
         "stars": 3,
@@ -3720,12 +3731,13 @@
         "archived": false,
         "disabled": false,
         "defaultBranch": "master",
+        "has_issues": false,
         "lastCommit": "2024-01-12T00:42:23Z"
       }
     },
     {
       "id": "bugsounet/EXT-YouTubeCast",
-      "gitHubDataLastUpdate": "2024-01-31T19:26:39.589Z",
+      "gitHubDataLastUpdate": "2024-02-15T21:11:22.587Z",
       "gitHubData": {
         "issues": 0,
         "stars": 2,
@@ -3733,12 +3745,13 @@
         "archived": false,
         "disabled": false,
         "defaultBranch": "master",
+        "has_issues": false,
         "lastCommit": "2024-01-03T15:40:52Z"
       }
     },
     {
       "id": "mykle1/MMM-EyeCandy",
-      "gitHubDataLastUpdate": "2024-01-31T19:26:40.203Z",
+      "gitHubDataLastUpdate": "2024-02-15T21:11:23.072Z",
       "gitHubData": {
         "issues": 2,
         "stars": 42,
@@ -3746,12 +3759,13 @@
         "archived": false,
         "disabled": false,
         "defaultBranch": "master",
+        "has_issues": true,
         "lastCommit": "2020-05-11T01:37:36Z"
       }
     },
     {
       "id": "jupadin/MMM-F1",
-      "gitHubDataLastUpdate": "2024-01-31T19:26:40.630Z",
+      "gitHubDataLastUpdate": "2024-02-15T21:11:23.492Z",
       "gitHubData": {
         "issues": 0,
         "stars": 1,
@@ -3759,12 +3773,13 @@
         "archived": false,
         "disabled": false,
         "defaultBranch": "master",
+        "has_issues": true,
         "lastCommit": "2021-10-24T23:09:12Z"
       }
     },
     {
       "id": "nigel-daniels/MMM-FAA-Delay",
-      "gitHubDataLastUpdate": "2024-01-31T19:26:41.126Z",
+      "gitHubDataLastUpdate": "2024-02-15T21:11:23.889Z",
       "gitHubData": {
         "issues": 4,
         "stars": 2,
@@ -3772,12 +3787,13 @@
         "archived": false,
         "disabled": false,
         "defaultBranch": "master",
+        "has_issues": true,
         "lastCommit": "2019-07-18T19:05:32Z"
       }
     },
     {
       "id": "jimbydude/MMM-Face-Multi-User-Recognition-SMAI",
-      "gitHubDataLastUpdate": "2024-01-31T19:26:41.704Z",
+      "gitHubDataLastUpdate": "2024-02-15T21:11:24.506Z",
       "gitHubData": {
         "issues": 0,
         "stars": 11,
@@ -3785,12 +3801,13 @@
         "archived": false,
         "disabled": false,
         "defaultBranch": "master",
+        "has_issues": false,
         "lastCommit": "2021-07-18T20:57:00Z"
       }
     },
     {
       "id": "nischi/MMM-Face-Reco-DNN",
-      "gitHubDataLastUpdate": "2024-01-31T19:26:42.148Z",
+      "gitHubDataLastUpdate": "2024-02-15T21:11:24.914Z",
       "gitHubData": {
         "issues": 4,
         "stars": 90,
@@ -3798,25 +3815,27 @@
         "archived": false,
         "disabled": false,
         "defaultBranch": "master",
+        "has_issues": true,
         "lastCommit": "2023-11-20T05:30:00Z"
       }
     },
     {
       "id": "EbenKouao/MMM-Face-Recognition-SMAI",
-      "gitHubDataLastUpdate": "2024-01-31T19:26:42.658Z",
+      "gitHubDataLastUpdate": "2024-02-15T21:11:25.364Z",
       "gitHubData": {
         "issues": 6,
-        "stars": 77,
+        "stars": 78,
         "license": "MIT",
         "archived": false,
         "disabled": false,
         "defaultBranch": "master",
+        "has_issues": true,
         "lastCommit": "2020-06-12T18:58:46Z"
       }
     },
     {
       "id": "njwilliams/MMM-Faces",
-      "gitHubDataLastUpdate": "2024-01-31T19:26:43.150Z",
+      "gitHubDataLastUpdate": "2024-02-15T21:11:25.776Z",
       "gitHubData": {
         "issues": 4,
         "stars": 10,
@@ -3824,6 +3843,7 @@
         "archived": false,
         "disabled": false,
         "defaultBranch": "main",
+        "has_issues": true,
         "lastCommit": "2023-09-04T12:18:18Z"
       }
     },
@@ -3842,7 +3862,7 @@
     },
     {
       "id": "normyx/MMM-Facial-Recognition-OCV3",
-      "gitHubDataLastUpdate": "2024-01-31T19:26:44.037Z",
+      "gitHubDataLastUpdate": "2024-02-15T21:11:26.211Z",
       "gitHubData": {
         "issues": 26,
         "stars": 49,
@@ -3850,12 +3870,13 @@
         "archived": false,
         "disabled": false,
         "defaultBranch": "master",
+        "has_issues": true,
         "lastCommit": "2018-02-13T13:14:45Z"
       }
     },
     {
       "id": "alanshen111/facts",
-      "gitHubDataLastUpdate": "2024-01-31T19:26:44.631Z",
+      "gitHubDataLastUpdate": "2024-02-15T21:11:26.620Z",
       "gitHubData": {
         "issues": 0,
         "stars": 12,
@@ -3863,12 +3884,13 @@
         "archived": false,
         "disabled": false,
         "defaultBranch": "main",
+        "has_issues": true,
         "lastCommit": "2023-12-29T02:45:22Z"
       }
     },
     {
       "id": "mabahj/MMM-Farevarsel",
-      "gitHubDataLastUpdate": "2024-01-31T19:26:45.104Z",
+      "gitHubDataLastUpdate": "2024-02-15T21:11:27.168Z",
       "gitHubData": {
         "issues": 0,
         "stars": 3,
@@ -3876,12 +3898,13 @@
         "archived": false,
         "disabled": false,
         "defaultBranch": "master",
+        "has_issues": true,
         "lastCommit": "2022-05-10T09:12:50Z"
       }
     },
     {
       "id": "polarbearjngl/MMM-FastNotes",
-      "gitHubDataLastUpdate": "2024-01-31T19:26:45.654Z",
+      "gitHubDataLastUpdate": "2024-02-15T21:11:27.632Z",
       "gitHubData": {
         "issues": 1,
         "stars": 6,
@@ -3889,12 +3912,13 @@
         "archived": false,
         "disabled": false,
         "defaultBranch": "master",
+        "has_issues": true,
         "lastCommit": "2021-02-28T19:53:00Z"
       }
     },
     {
       "id": "eouia/MMM-fbPageCounter",
-      "gitHubDataLastUpdate": "2024-01-31T19:26:46.124Z",
+      "gitHubDataLastUpdate": "2024-02-15T21:11:28.073Z",
       "gitHubData": {
         "issues": 0,
         "stars": 3,
@@ -3902,25 +3926,27 @@
         "archived": true,
         "disabled": false,
         "defaultBranch": "master",
+        "has_issues": true,
         "lastCommit": "2019-12-08T15:09:36Z"
       }
     },
     {
       "id": "Pip1405/MMM-FearAndGreedIndex",
-      "gitHubDataLastUpdate": "2024-01-31T19:26:46.678Z",
+      "gitHubDataLastUpdate": "2024-02-15T21:11:28.602Z",
       "gitHubData": {
         "issues": 0,
-        "stars": 0,
+        "stars": 1,
         "license": null,
         "archived": false,
         "disabled": false,
         "defaultBranch": "main",
+        "has_issues": true,
         "lastCommit": "2023-12-02T12:21:30Z"
       }
     },
     {
       "id": "shin10/MMM-FF-cht-sh",
-      "gitHubDataLastUpdate": "2024-01-31T19:26:47.278Z",
+      "gitHubDataLastUpdate": "2024-02-15T21:11:29.039Z",
       "gitHubData": {
         "issues": 0,
         "stars": 0,
@@ -3928,12 +3954,13 @@
         "archived": false,
         "disabled": false,
         "defaultBranch": "main",
+        "has_issues": true,
         "lastCommit": "2022-06-05T10:50:48Z"
       }
     },
     {
       "id": "shin10/MMM-FF-code-injector",
-      "gitHubDataLastUpdate": "2024-01-31T19:26:47.882Z",
+      "gitHubDataLastUpdate": "2024-02-15T21:11:29.626Z",
       "gitHubData": {
         "issues": 0,
         "stars": 1,
@@ -3941,12 +3968,13 @@
         "archived": false,
         "disabled": false,
         "defaultBranch": "main",
+        "has_issues": true,
         "lastCommit": "2022-08-01T17:22:30Z"
       }
     },
     {
       "id": "shin10/MMM-FF-digital-rain",
-      "gitHubDataLastUpdate": "2024-01-31T19:26:48.496Z",
+      "gitHubDataLastUpdate": "2024-02-15T21:11:30.041Z",
       "gitHubData": {
         "issues": 0,
         "stars": 3,
@@ -3954,12 +3982,13 @@
         "archived": false,
         "disabled": false,
         "defaultBranch": "main",
+        "has_issues": true,
         "lastCommit": "2023-08-20T21:17:19Z"
       }
     },
     {
       "id": "shin10/MMM-FF-Evan-Roth-Red-Lines",
-      "gitHubDataLastUpdate": "2024-01-31T20:39:22.649Z",
+      "gitHubDataLastUpdate": "2024-02-15T21:11:30.491Z",
       "gitHubData": {
         "issues": 0,
         "stars": 0,
@@ -3967,6 +3996,7 @@
         "archived": false,
         "disabled": false,
         "defaultBranch": "main",
+        "has_issues": true,
         "lastCommit": "2022-06-05T10:51:42Z"
       }
     },
@@ -13236,7 +13266,7 @@
       "gitHubDataLastUpdate": "2024-02-02T20:20:43.130Z",
       "gitHubData": {
         "issues": 0,
-        "stars": 0,
+        "stars": 1,
         "license": "MIT",
         "archived": false,
         "disabled": false,
