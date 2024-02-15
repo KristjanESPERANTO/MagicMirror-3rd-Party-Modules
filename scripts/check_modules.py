@@ -166,6 +166,14 @@ def check_modules():
             "name": "Since husky v9 you may not need this anymore.",
             "category": "Outdated",
         },
+        "npm i electron-rebuild": {
+            "name": "Replace it with `@electron/rebuild`",
+            "category": "Deprecated",
+        },
+        "npm install electron-rebuild": {
+            "name": "Replace it with `@electron/rebuild`",
+            "category": "Deprecated",
+        },
     }
 
     search_strings_package_json = {
@@ -232,7 +240,8 @@ def check_modules():
 
                     if file_path.name == "package.json":
                         for search_string, value in search_strings_package_json.items():
-                            found_string = search_in_file(file_path, search_string)
+                            found_string = search_in_file(
+                                file_path, search_string)
                             if found_string:
                                 module["issues"].append(
                                     f"{value['category']}: Found `{search_string}` in file `{file_path.name}`: {value['name']}"
