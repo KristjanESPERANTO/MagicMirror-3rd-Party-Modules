@@ -3133,7 +3133,7 @@
     "maintainerURL": "https://github.com/ItsMeBrille",
     "description": "A module to raise an image of a flag according to national flag rules. (Norwegian rules) Fetches sunrise and sunset times using <a target=\"_blank\" href=\"https://steder-api.no\">Steder-API</a>.",
     "issues": [],
-    "stars": 1
+    "stars": 2
   },
   {
     "name": "MMM-Flatastic",
@@ -3163,7 +3163,7 @@
     "maintainerURL": "",
     "description": "Detecting 3D gesture with GestIC Sensor (MGC3130).",
     "issues": [],
-    "stars": 5
+    "stars": 6
   },
   {
     "name": "MMM-Flickr",
@@ -3315,7 +3315,7 @@
     "maintainerURL": "",
     "description": "Controlling an RGB-LED strip around a smart mirror with or without touch input. It provides features for static background lighting, highly customizable effects on notifications and party lighting.",
     "issues": [],
-    "stars": 10
+    "stars": 11
   },
   {
     "name": "MMM-FranceInfo",
@@ -3324,7 +3324,9 @@
     "maintainer": "bugsounet",
     "maintainerURL": "",
     "description": "[FR] Affiche les flux rss de <a target=\"_blank\" href=\"https://www.francetvinfo.fr/\">franceinfo</a> sur MagicMirror².",
-    "issues": [],
+    "issues": [
+      "Issues are not enabled in the GitHub repository. So users cannot report bugs. Please enable issues in your repo."
+    ],
     "stars": 0
   },
   {

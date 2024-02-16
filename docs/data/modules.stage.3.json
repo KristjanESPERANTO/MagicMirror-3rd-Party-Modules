@@ -4454,7 +4454,7 @@
     "issues": [
       "There is no `package.json`. We need this file to gather information about the module for the module list page."
     ],
-    "stars": 1
+    "stars": 2
   },
   {
     "name": "MMM-Flatastic",
@@ -4498,7 +4498,7 @@
       "`package.json` issue: No repository field.",
       "No image found."
     ],
-    "stars": 5,
+    "stars": 6,
     "tags": [
       "flick",
       "board",
@@ -4717,7 +4717,7 @@
     "maintainerURL": "",
     "description": "Controlling an RGB-LED strip around a smart mirror with or without touch input. It provides features for static background lighting, highly customizable effects on notifications and party lighting.",
     "issues": [],
-    "stars": 10,
+    "stars": 11,
     "tags": [
       "led strip",
       "ws2801",
@@ -4739,6 +4739,7 @@
     "maintainerURL": "",
     "description": "[FR] Affiche les flux rss de <a target=\"_blank\" href=\"https://www.francetvinfo.fr/\">franceinfo</a> sur MagicMirror².",
     "issues": [
+      "Issues are not enabled in the GitHub repository. So users cannot report bugs. Please enable issues in your repo.",
       "There are no keywords in 'package.json'. We would use them as tags on the module list page."
     ],
     "stars": 0,
