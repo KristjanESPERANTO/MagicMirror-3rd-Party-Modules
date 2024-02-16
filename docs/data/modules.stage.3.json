@@ -1586,6 +1586,7 @@
     "maintainerURL": "",
     "description": "Display a webcamera video feed.",
     "issues": [
+      "Issues are not enabled in the GitHub repository. So users cannot report bugs. Please enable issues in your repo.",
       "No image found."
     ],
     "stars": 1,
@@ -4159,9 +4160,10 @@
     "maintainerURL": "",
     "description": "Facial recognition and module swapping based on the current user.",
     "issues": [
+      "Issues are not enabled in the GitHub repository. So users cannot report bugs. Please enable issues in your repo.",
       "No image found."
     ],
-    "stars": 0,
+    "stars": 1,
     "tags": [
       "facial recognition"
     ],
@@ -4784,6 +4786,7 @@
     "maintainerURL": "",
     "description": "FRITZ!Box Callmonitor. Display an alert when someone is calling and offers a call history.",
     "issues": [
+      "Issues are not enabled in the GitHub repository. So users cannot report bugs. Please enable issues in your repo.",
       "No image found."
     ],
     "stars": 4,
@@ -4817,6 +4820,7 @@
     "maintainerURL": "",
     "description": "Fronius Solar Module. Display data from a Fronius Solar Inverter.",
     "issues": [
+      "Issues are not enabled in the GitHub repository. So users cannot report bugs. Please enable issues in your repo.",
       "There is no `package.json`. We need this file to gather information about the module for the module list page."
     ],
     "stars": 1
@@ -4953,7 +4957,7 @@
     "maintainerURL": "https://github.com/mumblebaj",
     "description": "Monitor your gas tank level on your mirror.",
     "issues": [],
-    "stars": 0,
+    "stars": 1,
     "tags": [
       "gasmonitor"
     ],
@@ -5013,6 +5017,7 @@
     "maintainerURL": "",
     "description": "Displays a Word Clock written in German.",
     "issues": [
+      "Issues are not enabled in the GitHub repository. So users cannot report bugs. Please enable issues in your repo.",
       "There is no `package.json`. We need this file to gather information about the module for the module list page."
     ],
     "stars": 7
@@ -5061,7 +5066,7 @@
     "issues": [
       "There is no `package.json`. We need this file to gather information about the module for the module list page."
     ],
-    "stars": 8
+    "stars": 9
   },
   {
     "name": "MMM-GitHub-Notifications",
@@ -5088,7 +5093,7 @@
       "`package.json` issue: No repository field.",
       "There are no keywords in 'package.json'. We would use them as tags on the module list page."
     ],
-    "stars": 0,
+    "stars": 1,
     "license": "MIT",
     "image": "Sample.jpg"
   },
@@ -5154,7 +5159,9 @@
     "maintainer": "bugsounet",
     "maintainerURL": "https://wiki.bugsounet.fr",
     "description": "MMM-GoogleAssistant is an real embedded Google assistant on MagicMirror² with many <a target=\"_blank\" href=\"#extended-plugins-for-mmm-googleassistant\">plugins</a> . [Maintained].",
-    "issues": [],
+    "issues": [
+      "Issues are not enabled in the GitHub repository. So users cannot report bugs. Please enable issues in your repo."
+    ],
     "stars": 79,
     "tags": [
       "google assistant",

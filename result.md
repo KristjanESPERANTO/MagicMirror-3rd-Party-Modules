@@ -1,6 +1,6 @@
 # Result of the module analysis
 
-Last update: 2024-02-16T08:35:17+01:00
+Last update: 2024-02-16T20:42:44+01:00
 
 ## Statistics
 
@@ -9,7 +9,7 @@ Last update: 2024-02-16T08:35:17+01:00
 | modules analyzed     |   1124   |
 | maintainer           |    632   |
 | modules with issues  |   1117   |
-| issues               |   7401   |
+| issues               |   7407   |
 | modules at github    |   1112   |
 | modules at gitlab    |     11   |
 | modules at bitbucket |      1   |
@@ -757,7 +757,7 @@ Last update: 2024-02-16T08:35:17+01:00
    - @typescript-eslint/eslint-plugin    ^6.19.1  →     ^7.0.1
    - @typescript-eslint/parser           ^6.19.1  →     ^7.0.1
    - prettier                             ^3.2.4  →     ^3.2.5
-   - rollup                               ^4.9.6  →    ^4.11.0
+   - rollup                               ^4.9.6  →    ^4.12.0
    - rxjs                                 ^7.5.5  →     ^7.8.1
 
 
@@ -1032,13 +1032,14 @@ Last update: 2024-02-16T08:35:17+01:00
 
 ### [camera by Rallymen007](https://github.com/Rallymen007/camera)
 
-1. No image found.
-2. Recommendation: Module name doesn't follow the recommended pattern (it doesn't start with `MMM-`). Consider renaming your module.
-3. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
-4. Recommendation: Found `XMLHttpRequest` in file `webcam.js`: Replace it with built-in fetch.
-5. Warning: No LICENSE file.
-6. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
-7. The branch name is 'master'. Consider renaming it to 'main'.
+1. Issues are not enabled in the GitHub repository. So users cannot report bugs. Please enable issues in your repo.
+2. No image found.
+3. Recommendation: Module name doesn't follow the recommended pattern (it doesn't start with `MMM-`). Consider renaming your module.
+4. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
+5. Recommendation: Found `XMLHttpRequest` in file `webcam.js`: Replace it with built-in fetch.
+6. Warning: No LICENSE file.
+7. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
+8. The branch name is 'master'. Consider renaming it to 'main'.
 
 ### [MMM-CanadianPublicWeatherAlerts by aSouchereau](https://github.com/aSouchereau/MMM-CanadianPublicWeatherAlerts)
 
@@ -2545,13 +2546,14 @@ Last update: 2024-02-16T08:35:17+01:00
 
 ### [MMM-Facial-Recognition by JonasGoebel](https://github.com/JonasGoebel/MMM-Facial-Recognition)
 
-1. No image found.
-2. Typo: Found `Magic Mirror` in file `MMM-Facial-Recognition.js`: Replace it with `MagicMirror²`.
-3. Outdated: Found `MichMich/MagicMirror` in file `README.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
-4. Typo: Found `Magic Mirror` in file `package.json`: Replace it with `MagicMirror²`.
-5. Warning: No LICENSE file.
-6. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
-7. The branch name is 'master'. Consider renaming it to 'main'.
+1. Issues are not enabled in the GitHub repository. So users cannot report bugs. Please enable issues in your repo.
+2. No image found.
+3. Typo: Found `Magic Mirror` in file `MMM-Facial-Recognition.js`: Replace it with `MagicMirror²`.
+4. Outdated: Found `MichMich/MagicMirror` in file `README.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
+5. Typo: Found `Magic Mirror` in file `package.json`: Replace it with `MagicMirror²`.
+6. Warning: No LICENSE file.
+7. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
+8. The branch name is 'master'. Consider renaming it to 'main'.
 
 ### [MMM-Facial-Recognition-OCV3 by normyx](https://github.com/normyx/MMM-Facial-Recognition-OCV3)
 
@@ -2965,13 +2967,14 @@ Last update: 2024-02-16T08:35:17+01:00
 
 ### [MMM-FRITZ-Box-Callmonitor-py3 by drtorchwood](https://github.com/drtorchwood/MMM-FRITZ-Box-Callmonitor-py3)
 
-1. No image found.
-2. Typo: Found `Magic Mirror` in file `MMM-FRITZ-Box-Callmonitor-py3.js`: Replace it with `MagicMirror²`.
-3. Outdated: Found `MichMich/MagicMirror` in file `README.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
-4. Typo: Found `Magic Mirror` in file `package.json`: Replace it with `MagicMirror²`.
-5. Warning: No LICENSE file.
-6. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
-7. The branch name is 'master'. Consider renaming it to 'main'.
+1. Issues are not enabled in the GitHub repository. So users cannot report bugs. Please enable issues in your repo.
+2. No image found.
+3. Typo: Found `Magic Mirror` in file `MMM-FRITZ-Box-Callmonitor-py3.js`: Replace it with `MagicMirror²`.
+4. Outdated: Found `MichMich/MagicMirror` in file `README.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
+5. Typo: Found `Magic Mirror` in file `package.json`: Replace it with `MagicMirror²`.
+6. Warning: No LICENSE file.
+7. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
+8. The branch name is 'master'. Consider renaming it to 'main'.
 
 ### [MMM-FroelingConnect by eckonator](https://github.com/eckonator/MMM-FroelingConnect)
 
@@ -2987,10 +2990,11 @@ Last update: 2024-02-16T08:35:17+01:00
 
 ### [MMM-fronius by peteyjaym](https://github.com/peteyjaym/MMM-fronius)
 
-1. There is no `package.json`. We need this file to gather information about the module for the module list page.
-2. Deprecated: Found `require("request")` in file `node_helper.js`: Replace it with built-in fetch.
-3. Recommendation: Replace eslintrc by new flat config.
-4. The branch name is 'master'. Consider renaming it to 'main'.
+1. Issues are not enabled in the GitHub repository. So users cannot report bugs. Please enable issues in your repo.
+2. There is no `package.json`. We need this file to gather information about the module for the module list page.
+3. Deprecated: Found `require("request")` in file `node_helper.js`: Replace it with built-in fetch.
+4. Recommendation: Replace eslintrc by new flat config.
+5. The branch name is 'master'. Consider renaming it to 'main'.
 
 ### [MMM-Fronius2 by deg0nz](https://github.com/deg0nz/MMM-Fronius2)
 
@@ -3109,11 +3113,12 @@ Last update: 2024-02-16T08:35:17+01:00
 
 ### [MMM-germanwordclock by alexBeuth](https://github.com/alexBeuth/MMM-germanwordclock)
 
-1. There is no `package.json`. We need this file to gather information about the module for the module list page.
-2. Typo: Found `Magic Mirror` in file `MMM-germanwordclock.js`: Replace it with `MagicMirror²`.
-3. Typo: Found `Magic Mirror` in file `README.md`: Replace it with `MagicMirror²`.
-4. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
-5. The branch name is 'master'. Consider renaming it to 'main'.
+1. Issues are not enabled in the GitHub repository. So users cannot report bugs. Please enable issues in your repo.
+2. There is no `package.json`. We need this file to gather information about the module for the module list page.
+3. Typo: Found `Magic Mirror` in file `MMM-germanwordclock.js`: Replace it with `MagicMirror²`.
+4. Typo: Found `Magic Mirror` in file `README.md`: Replace it with `MagicMirror²`.
+5. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
+6. The branch name is 'master'. Consider renaming it to 'main'.
 
 ### [MMM-Gestures by thobach](https://github.com/thobach/MMM-Gestures)
 
@@ -3202,10 +3207,11 @@ Last update: 2024-02-16T08:35:17+01:00
 
 ### [MMM-GoogleAssistant by bugsounet](https://github.com/bugsounet/MMM-GoogleAssistant)
 
-1. Recommendation: Found `require("http")` in file `website.js`: Replace "http" by "node:http".
-2. Deprecated: Found `"grunt"` in file `fa-brands-400.svg`: Grunt is practically unmaintained. Move on to something better.
-3. Recommendation: Found `XMLHttpRequest` in file `jquery.min.js`: Replace it with built-in fetch.
-4. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
+1. Issues are not enabled in the GitHub repository. So users cannot report bugs. Please enable issues in your repo.
+2. Recommendation: Found `require("http")` in file `website.js`: Replace "http" by "node:http".
+3. Deprecated: Found `"grunt"` in file `fa-brands-400.svg`: Grunt is practically unmaintained. Move on to something better.
+4. Recommendation: Found `XMLHttpRequest` in file `jquery.min.js`: Replace it with built-in fetch.
+5. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
 
 ### [MMM-GoogleAssistant by gauravsacc](https://github.com/gauravsacc/MMM-GoogleAssistant)
 

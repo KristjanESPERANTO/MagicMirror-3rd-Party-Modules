@@ -1096,7 +1096,9 @@
     "maintainer": "Rallymen007",
     "maintainerURL": "",
     "description": "Display a webcamera video feed.",
-    "issues": [],
+    "issues": [
+      "Issues are not enabled in the GitHub repository. So users cannot report bugs. Please enable issues in your repo."
+    ],
     "stars": 1
   },
   {
@@ -2919,8 +2921,10 @@
     "maintainer": "JonasGoebel",
     "maintainerURL": "",
     "description": "Facial recognition and module swapping based on the current user.",
-    "issues": [],
-    "stars": 0
+    "issues": [
+      "Issues are not enabled in the GitHub repository. So users cannot report bugs. Please enable issues in your repo."
+    ],
+    "stars": 1
   },
   {
     "name": "MMM-Facial-Recognition-OCV3",
@@ -3356,7 +3360,9 @@
     "maintainer": "drtorchwood",
     "maintainerURL": "",
     "description": "FRITZ!Box Callmonitor. Display an alert when someone is calling and offers a call history.",
-    "issues": [],
+    "issues": [
+      "Issues are not enabled in the GitHub repository. So users cannot report bugs. Please enable issues in your repo."
+    ],
     "stars": 4
   },
   {
@@ -3376,7 +3382,9 @@
     "maintainer": "peteyjaym",
     "maintainerURL": "",
     "description": "Fronius Solar Module. Display data from a Fronius Solar Inverter.",
-    "issues": [],
+    "issues": [
+      "Issues are not enabled in the GitHub repository. So users cannot report bugs. Please enable issues in your repo."
+    ],
     "stars": 1
   },
   {
@@ -3467,7 +3475,7 @@
     "maintainerURL": "https://github.com/mumblebaj",
     "description": "Monitor your gas tank level on your mirror.",
     "issues": [],
-    "stars": 0
+    "stars": 1
   },
   {
     "name": "MMM-GConnect",
@@ -3506,7 +3514,9 @@
     "maintainer": "alexBeuth",
     "maintainerURL": "",
     "description": "Displays a Word Clock written in German.",
-    "issues": [],
+    "issues": [
+      "Issues are not enabled in the GitHub repository. So users cannot report bugs. Please enable issues in your repo."
+    ],
     "stars": 7
   },
   {
@@ -3537,7 +3547,7 @@
     "maintainerURL": "",
     "description": "Displays GitHub repository information.",
     "issues": [],
-    "stars": 8
+    "stars": 9
   },
   {
     "name": "MMM-GitHub-Notifications",
@@ -3557,7 +3567,7 @@
     "maintainerURL": "",
     "description": "Displays merge requests from gitlab and their status.",
     "issues": [],
-    "stars": 0
+    "stars": 1
   },
   {
     "name": "MMM-Glance",
@@ -3607,7 +3617,9 @@
     "maintainer": "bugsounet",
     "maintainerURL": "https://wiki.bugsounet.fr",
     "description": "MMM-GoogleAssistant is an real embedded Google assistant on MagicMirror² with many <a target=\"_blank\" href=\"#extended-plugins-for-mmm-googleassistant\">plugins</a> . [Maintained].",
-    "issues": [],
+    "issues": [
+      "Issues are not enabled in the GitHub repository. So users cannot report bugs. Please enable issues in your repo."
+    ],
     "stars": 79
   },
   {

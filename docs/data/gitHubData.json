@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "2024-02-16T07:25:09.493Z",
+  "lastUpdate": "2024-02-16T19:32:47.938Z",
   "repositories": [
     {
       "id": "rubinho101/MMM-01ZM",
@@ -1443,7 +1443,7 @@
     },
     {
       "id": "Rallymen007/camera",
-      "gitHubDataLastUpdate": "2024-02-01T21:48:09.312Z",
+      "gitHubDataLastUpdate": "2024-02-16T19:32:32.749Z",
       "gitHubData": {
         "issues": 0,
         "stars": 1,
@@ -1451,6 +1451,7 @@
         "archived": false,
         "disabled": false,
         "defaultBranch": "master",
+        "has_issues": false,
         "lastCommit": "2024-02-01T08:07:53Z"
       }
     },
@@ -3849,14 +3850,15 @@
     },
     {
       "id": "JonasGoebel/MMM-Facial-Recognition",
-      "gitHubDataLastUpdate": "2024-02-01T21:48:09.822Z",
+      "gitHubDataLastUpdate": "2024-02-16T19:32:33.355Z",
       "gitHubData": {
         "issues": 0,
-        "stars": 0,
+        "stars": 1,
         "license": null,
         "archived": false,
         "disabled": false,
         "defaultBranch": "master",
+        "has_issues": false,
         "lastCommit": "2020-10-27T22:26:13Z"
       }
     },
@@ -4422,7 +4424,7 @@
     },
     {
       "id": "Amand-M/MMM-FrenchHoroscope",
-      "gitHubDataLastUpdate": "2024-01-31T21:29:44.455Z",
+      "gitHubDataLastUpdate": "2024-02-16T19:32:33.869Z",
       "gitHubData": {
         "issues": 0,
         "stars": 1,
@@ -4430,12 +4432,13 @@
         "archived": false,
         "disabled": false,
         "defaultBranch": "main",
+        "has_issues": true,
         "lastCommit": "2023-05-29T15:51:24Z"
       }
     },
     {
       "id": "drtorchwood/MMM-FRITZ-Box-Callmonitor-py3",
-      "gitHubDataLastUpdate": "2024-01-31T21:29:44.663Z",
+      "gitHubDataLastUpdate": "2024-02-16T19:32:34.380Z",
       "gitHubData": {
         "issues": 0,
         "stars": 4,
@@ -4443,12 +4446,13 @@
         "archived": false,
         "disabled": false,
         "defaultBranch": "master",
+        "has_issues": false,
         "lastCommit": "2023-02-18T12:21:55Z"
       }
     },
     {
       "id": "eckonator/MMM-FroelingConnect",
-      "gitHubDataLastUpdate": "2024-01-31T21:29:44.860Z",
+      "gitHubDataLastUpdate": "2024-02-16T19:32:34.995Z",
       "gitHubData": {
         "issues": 1,
         "stars": 1,
@@ -4456,12 +4460,13 @@
         "archived": false,
         "disabled": false,
         "defaultBranch": "master",
+        "has_issues": true,
         "lastCommit": "2023-08-18T06:56:23Z"
       }
     },
     {
       "id": "peteyjaym/MMM-fronius",
-      "gitHubDataLastUpdate": "2024-01-31T21:29:45.096Z",
+      "gitHubDataLastUpdate": "2024-02-16T19:32:35.504Z",
       "gitHubData": {
         "issues": 0,
         "stars": 1,
@@ -4469,12 +4474,13 @@
         "archived": false,
         "disabled": false,
         "defaultBranch": "master",
+        "has_issues": false,
         "lastCommit": "2019-02-20T05:17:06Z"
       }
     },
     {
       "id": "deg0nz/MMM-Fronius2",
-      "gitHubDataLastUpdate": "2024-01-31T21:29:45.256Z",
+      "gitHubDataLastUpdate": "2024-02-16T19:32:36.017Z",
       "gitHubData": {
         "issues": 4,
         "stars": 0,
@@ -4482,12 +4488,13 @@
         "archived": false,
         "disabled": false,
         "defaultBranch": "main",
+        "has_issues": true,
         "lastCommit": "2022-09-25T19:16:38Z"
       }
     },
     {
       "id": "MarcLandis/MMM-FSAPI",
-      "gitHubDataLastUpdate": "2024-01-31T21:29:45.487Z",
+      "gitHubDataLastUpdate": "2024-02-16T19:32:36.531Z",
       "gitHubData": {
         "issues": 0,
         "stars": 0,
@@ -4495,12 +4502,13 @@
         "archived": false,
         "disabled": false,
         "defaultBranch": "main",
+        "has_issues": true,
         "lastCommit": "2022-08-11T19:29:56Z"
       }
     },
     {
       "id": "jboucly/MMM-FTP-image",
-      "gitHubDataLastUpdate": "2024-01-31T21:29:45.738Z",
+      "gitHubDataLastUpdate": "2024-02-16T19:32:36.964Z",
       "gitHubData": {
         "issues": 0,
         "stars": 4,
@@ -4508,12 +4516,13 @@
         "archived": false,
         "disabled": false,
         "defaultBranch": "main",
+        "has_issues": true,
         "lastCommit": "2023-11-01T22:31:33Z"
       }
     },
     {
       "id": "fewieden/MMM-Fuel",
-      "gitHubDataLastUpdate": "2024-01-31T21:29:45.922Z",
+      "gitHubDataLastUpdate": "2024-02-16T19:32:37.372Z",
       "gitHubData": {
         "issues": 17,
         "stars": 56,
@@ -4521,12 +4530,13 @@
         "archived": false,
         "disabled": false,
         "defaultBranch": "master",
+        "has_issues": true,
         "lastCommit": "2022-08-13T06:26:55Z"
       }
     },
     {
       "id": "mattileh/MMM-FunnyHolidays",
-      "gitHubDataLastUpdate": "2024-01-31T21:29:46.151Z",
+      "gitHubDataLastUpdate": "2024-02-16T19:32:37.963Z",
       "gitHubData": {
         "issues": 1,
         "stars": 1,
@@ -4534,12 +4544,13 @@
         "archived": false,
         "disabled": false,
         "defaultBranch": "master",
+        "has_issues": true,
         "lastCommit": "2021-03-24T06:46:53Z"
       }
     },
     {
       "id": "balassy/MMM-Futar",
-      "gitHubDataLastUpdate": "2024-01-31T21:29:46.332Z",
+      "gitHubDataLastUpdate": "2024-02-16T19:32:38.474Z",
       "gitHubData": {
         "issues": 7,
         "stars": 5,
@@ -4547,12 +4558,13 @@
         "archived": false,
         "disabled": false,
         "defaultBranch": "master",
+        "has_issues": true,
         "lastCommit": "2021-09-20T04:15:52Z"
       }
     },
     {
       "id": "raywo/MMM-GameOfLife",
-      "gitHubDataLastUpdate": "2024-01-31T21:29:46.532Z",
+      "gitHubDataLastUpdate": "2024-02-16T19:32:38.964Z",
       "gitHubData": {
         "issues": 3,
         "stars": 11,
@@ -4560,12 +4572,13 @@
         "archived": false,
         "disabled": false,
         "defaultBranch": "master",
+        "has_issues": true,
         "lastCommit": "2018-02-23T17:36:59Z"
       }
     },
     {
       "id": "victor-paumier/MMM-GamepadEvents",
-      "gitHubDataLastUpdate": "2024-01-31T21:29:46.800Z",
+      "gitHubDataLastUpdate": "2024-02-16T19:32:39.499Z",
       "gitHubData": {
         "issues": 0,
         "stars": 0,
@@ -4573,25 +4586,27 @@
         "archived": false,
         "disabled": false,
         "defaultBranch": "master",
+        "has_issues": true,
         "lastCommit": "2020-04-08T01:51:26Z"
       }
     },
     {
       "id": "mumblebaj/MMM-GasMonitor",
-      "gitHubDataLastUpdate": "2024-01-31T21:29:46.965Z",
+      "gitHubDataLastUpdate": "2024-02-16T19:32:40.010Z",
       "gitHubData": {
         "issues": 0,
-        "stars": 0,
+        "stars": 1,
         "license": "MIT",
         "archived": false,
         "disabled": false,
         "defaultBranch": "main",
+        "has_issues": true,
         "lastCommit": "2023-12-13T14:03:23Z"
       }
     },
     {
       "id": "tderflinger/MMM-GConnect",
-      "gitHubDataLastUpdate": "2024-01-31T21:29:47.157Z",
+      "gitHubDataLastUpdate": "2024-02-16T19:32:40.520Z",
       "gitHubData": {
         "issues": 1,
         "stars": 4,
@@ -4599,12 +4614,13 @@
         "archived": false,
         "disabled": false,
         "defaultBranch": "master",
+        "has_issues": true,
         "lastCommit": "2024-01-05T17:00:33Z"
       }
     },
     {
       "id": "da4throux/MMM-GCP",
-      "gitHubDataLastUpdate": "2024-01-31T21:29:47.400Z",
+      "gitHubDataLastUpdate": "2024-02-16T19:32:41.038Z",
       "gitHubData": {
         "issues": 0,
         "stars": 4,
@@ -4612,12 +4628,13 @@
         "archived": false,
         "disabled": false,
         "defaultBranch": "master",
+        "has_issues": true,
         "lastCommit": "2018-03-04T19:26:11Z"
       }
     },
     {
       "id": "asimhsidd/MMM-GeoTracking",
-      "gitHubDataLastUpdate": "2024-01-31T21:29:47.600Z",
+      "gitHubDataLastUpdate": "2024-02-16T19:32:41.547Z",
       "gitHubData": {
         "issues": 0,
         "stars": 8,
@@ -4625,12 +4642,13 @@
         "archived": false,
         "disabled": false,
         "defaultBranch": "master",
+        "has_issues": true,
         "lastCommit": "2018-04-26T13:13:42Z"
       }
     },
     {
       "id": "alexBeuth/MMM-germanwordclock",
-      "gitHubDataLastUpdate": "2024-01-31T21:29:47.872Z",
+      "gitHubDataLastUpdate": "2024-02-16T19:32:42.161Z",
       "gitHubData": {
         "issues": 0,
         "stars": 7,
@@ -4638,12 +4656,13 @@
         "archived": false,
         "disabled": false,
         "defaultBranch": "master",
+        "has_issues": false,
         "lastCommit": "2019-02-25T10:08:21Z"
       }
     },
     {
       "id": "thobach/MMM-Gestures",
-      "gitHubDataLastUpdate": "2024-01-31T21:29:48.034Z",
+      "gitHubDataLastUpdate": "2024-02-16T19:32:42.672Z",
       "gitHubData": {
         "issues": 6,
         "stars": 40,
@@ -4651,12 +4670,13 @@
         "archived": false,
         "disabled": false,
         "defaultBranch": "master",
+        "has_issues": true,
         "lastCommit": "2022-12-17T15:40:29Z"
       }
     },
     {
       "id": "C-Deck/MMM-GHIN",
-      "gitHubDataLastUpdate": "2024-01-31T21:29:48.253Z",
+      "gitHubDataLastUpdate": "2024-02-16T19:32:43.172Z",
       "gitHubData": {
         "issues": 0,
         "stars": 0,
@@ -4664,25 +4684,27 @@
         "archived": false,
         "disabled": false,
         "defaultBranch": "main",
+        "has_issues": true,
         "lastCommit": "2021-04-02T01:40:28Z"
       }
     },
     {
       "id": "fpfuetsch/MMM-GitHub-Monitor",
-      "gitHubDataLastUpdate": "2024-01-31T21:29:48.469Z",
+      "gitHubDataLastUpdate": "2024-02-16T19:32:43.697Z",
       "gitHubData": {
         "issues": 0,
-        "stars": 8,
+        "stars": 9,
         "license": "MIT",
         "archived": false,
         "disabled": false,
         "defaultBranch": "main",
+        "has_issues": true,
         "lastCommit": "2023-01-17T10:17:54Z"
       }
     },
     {
       "id": "ByteExceptionM/MMM-GitHub-Notifications",
-      "gitHubDataLastUpdate": "2024-01-31T21:29:48.666Z",
+      "gitHubDataLastUpdate": "2024-02-16T19:32:44.209Z",
       "gitHubData": {
         "issues": 0,
         "stars": 0,
@@ -4690,25 +4712,27 @@
         "archived": false,
         "disabled": false,
         "defaultBranch": "main",
+        "has_issues": true,
         "lastCommit": "2023-01-06T23:45:21Z"
       }
     },
     {
       "id": "jkschoen/MMM-Gitlab-MergeRequests",
-      "gitHubDataLastUpdate": "2024-01-31T21:29:48.855Z",
+      "gitHubDataLastUpdate": "2024-02-16T19:32:44.823Z",
       "gitHubData": {
         "issues": 1,
-        "stars": 0,
+        "stars": 1,
         "license": "MIT",
         "archived": false,
         "disabled": false,
         "defaultBranch": "master",
+        "has_issues": true,
         "lastCommit": "2020-12-22T04:33:40Z"
       }
     },
     {
       "id": "eouia/MMM-Glance",
-      "gitHubDataLastUpdate": "2024-01-31T21:29:49.022Z",
+      "gitHubDataLastUpdate": "2024-02-16T19:32:45.333Z",
       "gitHubData": {
         "issues": 0,
         "stars": 12,
@@ -4716,12 +4740,13 @@
         "archived": true,
         "disabled": false,
         "defaultBranch": "master",
+        "has_issues": true,
         "lastCommit": "2017-10-02T13:36:53Z"
       }
     },
     {
       "id": "LukeSkywalker92/MMM-Globe",
-      "gitHubDataLastUpdate": "2024-01-31T21:29:49.214Z",
+      "gitHubDataLastUpdate": "2024-02-16T19:32:45.848Z",
       "gitHubData": {
         "issues": 9,
         "stars": 66,
@@ -4729,12 +4754,13 @@
         "archived": false,
         "disabled": false,
         "defaultBranch": "master",
+        "has_issues": true,
         "lastCommit": "2021-01-17T07:49:11Z"
       }
     },
     {
       "id": "shaneapowell/MMM-GmailFeed",
-      "gitHubDataLastUpdate": "2024-01-31T21:29:49.459Z",
+      "gitHubDataLastUpdate": "2024-02-16T19:32:46.386Z",
       "gitHubData": {
         "issues": 0,
         "stars": 9,
@@ -4742,12 +4768,13 @@
         "archived": false,
         "disabled": false,
         "defaultBranch": "master",
+        "has_issues": true,
         "lastCommit": "2024-01-18T17:21:58Z"
       }
     },
     {
       "id": "mrdis/MMM-google-route",
-      "gitHubDataLastUpdate": "2024-01-31T21:29:49.654Z",
+      "gitHubDataLastUpdate": "2024-02-16T19:32:46.871Z",
       "gitHubData": {
         "issues": 6,
         "stars": 44,
@@ -4755,25 +4782,27 @@
         "archived": false,
         "disabled": false,
         "defaultBranch": "master",
+        "has_issues": true,
         "lastCommit": "2022-08-10T13:30:35Z"
       }
     },
     {
       "id": "bugsounet/MMM-GoogleAssistant",
-      "gitHubDataLastUpdate": "2024-01-31T21:29:49.946Z",
+      "gitHubDataLastUpdate": "2024-02-16T19:32:47.386Z",
       "gitHubData": {
-        "issues": 2,
+        "issues": 3,
         "stars": 79,
         "license": "MIT",
         "archived": false,
         "disabled": false,
         "defaultBranch": "prod",
-        "lastCommit": "2024-01-29T00:52:30Z"
+        "has_issues": false,
+        "lastCommit": "2024-02-10T11:43:08Z"
       }
     },
     {
       "id": "gauravsacc/MMM-GoogleAssistant",
-      "gitHubDataLastUpdate": "2024-01-31T21:38:23.158Z",
+      "gitHubDataLastUpdate": "2024-02-16T19:32:47.896Z",
       "gitHubData": {
         "issues": 40,
         "stars": 116,
@@ -4781,6 +4810,7 @@
         "archived": false,
         "disabled": false,
         "defaultBranch": "master",
+        "has_issues": true,
         "lastCommit": "2018-04-19T17:21:19Z"
       }
     },
