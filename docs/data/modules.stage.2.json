@@ -3651,7 +3651,7 @@
     "maintainerURL": "https://github.com/randomBrainstormer",
     "description": "Get your Google Calendars in the shape of MagicMirror's default calendar.",
     "issues": [],
-    "stars": 52
+    "stars": 53
   },
   {
     "name": "MMM-GoogleCast",
@@ -3690,7 +3690,9 @@
     "maintainer": "fry0815",
     "maintainerURL": "",
     "description": "Display google fit daily step count and weights.",
-    "issues": [],
+    "issues": [
+      "Issues are not enabled in the GitHub repository. So users cannot report bugs. Please enable issues in your repo."
+    ],
     "stars": 1
   },
   {
@@ -3741,7 +3743,7 @@
     "maintainerURL": "https://github.com/hermanho",
     "description": "Image gallery or wallpaper with your Google Photos account.",
     "issues": [],
-    "stars": 152
+    "stars": 153
   },
   {
     "name": "MMM-GoogleSheets",
@@ -3771,7 +3773,7 @@
     "maintainerURL": "https://github.com/spydersoft-consulting/",
     "description": "Display Google Tasks with Planned View.",
     "issues": [],
-    "stars": 0
+    "stars": 1
   },
   {
     "name": "MMM-GoogleTrafficTimes",
@@ -3811,7 +3813,7 @@
     "maintainerURL": "https://github.com/Sjohn21",
     "description": "Handle GPIO, Inputs (Buttons, PIR, Other) and Outputs (including PWM), with notifications from and to other modules.",
     "issues": [],
-    "stars": 0
+    "stars": 1
   },
   {
     "name": "MMM-GPIO-Notifications",
@@ -3882,7 +3884,7 @@
     "maintainerURL": "",
     "description": "Simple display for data from a Growatt solar panel inverter.",
     "issues": [],
-    "stars": 1
+    "stars": 2
   },
   {
     "name": "MMM-Growatt-Stats",
@@ -3892,7 +3894,7 @@
     "maintainerURL": "https://github.com/mumblebaj",
     "description": "Display status data from Growatt Inveter. Support multiple Growatt Inverter types. Made to work in conjunction with <a target=\"_blank\" href=\"https://github.com/mumblebaj/MMM-Growatt\">MMM-Growatt</a> or independently.",
     "issues": [],
-    "stars": 0
+    "stars": 1
   },
   {
     "name": "MMM-GyeonggiBus",
@@ -3931,8 +3933,7 @@
     "maintainer": "aleckeller",
     "maintainerURL": "",
     "description": "A module that finds and displays local happy hours.",
-    "issues": [],
-    "stars": 2
+    "issues": []
   },
   {
     "name": "MMM-HASS",

@@ -315,8 +315,8 @@ def check_modules():
                 1, module['issues'] - (module['stars'] // 50))
 
         # Lower modules with few stars in the default sort order.
-        if module.get('stars', 0) < 3:
-            module['issues'] += 1
+        # if module.get('stars', 0) < 3:
+        #    module['issues'] += 1
 
     print(
         f"{stats['moduleCounter']} modules analyzed. For results see file result.md.           ")

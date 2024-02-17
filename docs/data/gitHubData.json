@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "2024-02-16T19:32:47.938Z",
+  "lastUpdate": "2024-02-17T20:16:42.353Z",
   "repositories": [
     {
       "id": "rubinho101/MMM-01ZM",
@@ -4816,7 +4816,7 @@
     },
     {
       "id": "PalatinCoder/MMM-GoogleBirthdaysProvider",
-      "gitHubDataLastUpdate": "2024-01-31T21:38:23.572Z",
+      "gitHubDataLastUpdate": "2024-02-17T20:16:27.969Z",
       "gitHubData": {
         "issues": 31,
         "stars": 27,
@@ -4824,25 +4824,27 @@
         "archived": false,
         "disabled": false,
         "defaultBranch": "master",
+        "has_issues": true,
         "lastCommit": "2019-01-13T15:50:07Z"
       }
     },
     {
       "id": "randomBrainstormer/MMM-GoogleCalendar",
-      "gitHubDataLastUpdate": "2024-01-31T21:38:24.052Z",
+      "gitHubDataLastUpdate": "2024-02-17T20:16:28.535Z",
       "gitHubData": {
         "issues": 21,
-        "stars": 52,
+        "stars": 53,
         "license": "MIT",
         "archived": false,
         "disabled": false,
         "defaultBranch": "main",
+        "has_issues": true,
         "lastCommit": "2023-10-27T21:19:02Z"
       }
     },
     {
       "id": "ferferga/MMM-GoogleCast",
-      "gitHubDataLastUpdate": "2024-01-31T21:38:24.612Z",
+      "gitHubDataLastUpdate": "2024-02-17T20:16:29.007Z",
       "gitHubData": {
         "issues": 11,
         "stars": 23,
@@ -4850,12 +4852,13 @@
         "archived": false,
         "disabled": false,
         "defaultBranch": "master",
-        "lastCommit": "2020-04-29T12:04:02Z"
+        "has_issues": true,
+        "lastCommit": "2024-02-07T21:59:29Z"
       }
     },
     {
       "id": "No3x/MMM-GoogleDocs-Notes",
-      "gitHubDataLastUpdate": "2024-01-31T21:38:25.203Z",
+      "gitHubDataLastUpdate": "2024-02-17T20:16:29.407Z",
       "gitHubData": {
         "issues": 7,
         "stars": 12,
@@ -4863,12 +4866,13 @@
         "archived": false,
         "disabled": false,
         "defaultBranch": "master",
+        "has_issues": true,
         "lastCommit": "2023-09-26T18:39:56Z"
       }
     },
     {
       "id": "clegallic/MMM-GoogleDriveSlideShow",
-      "gitHubDataLastUpdate": "2024-01-31T21:38:25.713Z",
+      "gitHubDataLastUpdate": "2024-02-17T20:16:29.894Z",
       "gitHubData": {
         "issues": 7,
         "stars": 9,
@@ -4876,12 +4880,13 @@
         "archived": false,
         "disabled": false,
         "defaultBranch": "master",
+        "has_issues": true,
         "lastCommit": "2023-12-07T10:33:30Z"
       }
     },
     {
       "id": "fry0815/MMM-GoogleFit",
-      "gitHubDataLastUpdate": "2024-01-31T21:38:26.225Z",
+      "gitHubDataLastUpdate": "2024-02-17T20:16:30.425Z",
       "gitHubData": {
         "issues": 0,
         "stars": 1,
@@ -4889,12 +4894,13 @@
         "archived": false,
         "disabled": false,
         "defaultBranch": "master",
+        "has_issues": false,
         "lastCommit": "2023-04-08T19:48:16Z"
       }
     },
     {
       "id": "taxilof/MMM-GoogleKeep",
-      "gitHubDataLastUpdate": "2024-01-31T21:38:26.837Z",
+      "gitHubDataLastUpdate": "2024-02-17T20:16:30.938Z",
       "gitHubData": {
         "issues": 6,
         "stars": 6,
@@ -4902,12 +4908,13 @@
         "archived": false,
         "disabled": false,
         "defaultBranch": "master",
+        "has_issues": true,
         "lastCommit": "2022-06-13T13:45:22Z"
       }
     },
     {
       "id": "sp4ceman/MMM-googlemaps",
-      "gitHubDataLastUpdate": "2024-01-31T21:38:27.349Z",
+      "gitHubDataLastUpdate": "2024-02-17T20:16:31.434Z",
       "gitHubData": {
         "issues": 0,
         "stars": 21,
@@ -4915,12 +4922,13 @@
         "archived": false,
         "disabled": false,
         "defaultBranch": "master",
+        "has_issues": true,
         "lastCommit": "2016-12-28T21:34:56Z"
       }
     },
     {
       "id": "MartinGris/MMM-GoogleMaps-Tracking",
-      "gitHubDataLastUpdate": "2024-01-31T21:38:27.864Z",
+      "gitHubDataLastUpdate": "2024-02-17T20:16:31.970Z",
       "gitHubData": {
         "issues": 1,
         "stars": 13,
@@ -4928,12 +4936,13 @@
         "archived": false,
         "disabled": false,
         "defaultBranch": "main",
+        "has_issues": true,
         "lastCommit": "2021-12-06T06:44:29Z"
       }
     },
     {
       "id": "vicmora/MMM-GoogleMapsTraffic",
-      "gitHubDataLastUpdate": "2024-01-31T21:38:28.318Z",
+      "gitHubDataLastUpdate": "2024-02-17T20:16:32.386Z",
       "gitHubData": {
         "issues": 35,
         "stars": 85,
@@ -4941,25 +4950,27 @@
         "archived": false,
         "disabled": false,
         "defaultBranch": "master",
+        "has_issues": true,
         "lastCommit": "2018-09-10T16:52:56Z"
       }
     },
     {
       "id": "hermanho/MMM-GooglePhotos",
-      "gitHubDataLastUpdate": "2024-01-31T21:38:28.993Z",
+      "gitHubDataLastUpdate": "2024-02-17T20:16:32.899Z",
       "gitHubData": {
         "issues": 26,
-        "stars": 152,
+        "stars": 153,
         "license": "MIT",
         "archived": false,
         "disabled": false,
         "defaultBranch": "master",
+        "has_issues": true,
         "lastCommit": "2024-01-28T14:56:12Z"
       }
     },
     {
       "id": "ryan-d-williams/MMM-GoogleSheets",
-      "gitHubDataLastUpdate": "2024-01-31T21:38:29.499Z",
+      "gitHubDataLastUpdate": "2024-02-17T20:16:33.346Z",
       "gitHubData": {
         "issues": 11,
         "stars": 22,
@@ -4967,12 +4978,13 @@
         "archived": false,
         "disabled": false,
         "defaultBranch": "master",
+        "has_issues": true,
         "lastCommit": "2021-12-12T00:15:06Z"
       }
     },
     {
       "id": "Gismo150/MMM-GoogleShoppingList",
-      "gitHubDataLastUpdate": "2024-01-31T21:38:30.014Z",
+      "gitHubDataLastUpdate": "2024-02-17T20:16:33.857Z",
       "gitHubData": {
         "issues": 6,
         "stars": 21,
@@ -4980,155 +4992,13 @@
         "archived": false,
         "disabled": false,
         "defaultBranch": "master",
+        "has_issues": true,
         "lastCommit": "2020-06-05T08:05:40Z"
       }
     },
     {
       "id": "spydersoft-consulting/MMM-GoogleTasks",
-      "gitHubDataLastUpdate": "2024-01-31T21:38:30.525Z",
-      "gitHubData": {
-        "issues": 2,
-        "stars": 0,
-        "license": "MIT",
-        "archived": false,
-        "disabled": false,
-        "defaultBranch": "main",
-        "lastCommit": "2023-11-29T20:43:01Z"
-      }
-    },
-    {
-      "id": "pjestico/MMM-GoogleTrafficTimes",
-      "gitHubDataLastUpdate": "2024-01-31T21:38:31.035Z",
-      "gitHubData": {
-        "issues": 8,
-        "stars": 7,
-        "license": null,
-        "archived": false,
-        "disabled": false,
-        "defaultBranch": "master",
-        "lastCommit": "2020-07-23T17:53:32Z"
-      }
-    },
-    {
-      "id": "Jacopo1891/MMM-GoogleTrafficTimes",
-      "gitHubDataLastUpdate": "2024-01-31T21:38:31.480Z",
-      "gitHubData": {
-        "issues": 0,
-        "stars": 12,
-        "license": null,
-        "archived": false,
-        "disabled": false,
-        "defaultBranch": "master",
-        "lastCommit": "2024-01-15T08:25:22Z"
-      }
-    },
-    {
-      "id": "MMRIZE/MMM-GoogleTTS",
-      "gitHubDataLastUpdate": "2024-01-31T21:38:32.063Z",
-      "gitHubData": {
-        "issues": 0,
-        "stars": 10,
-        "license": "MIT",
-        "archived": false,
-        "disabled": false,
-        "defaultBranch": "master",
-        "lastCommit": "2023-11-27T15:14:27Z"
-      }
-    },
-    {
-      "id": "Sjohn21/MMM-GPIO-HANDLER",
-      "gitHubDataLastUpdate": "2024-01-31T21:38:32.575Z",
-      "gitHubData": {
-        "issues": 0,
-        "stars": 0,
-        "license": "MIT",
-        "archived": false,
-        "disabled": false,
-        "defaultBranch": "main",
-        "lastCommit": "2024-01-16T20:54:37Z"
-      }
-    },
-    {
-      "id": "Tom-Hirschberger/MMM-GPIO-Notifications",
-      "gitHubDataLastUpdate": "2024-01-31T21:38:33.087Z",
-      "gitHubData": {
-        "issues": 0,
-        "stars": 9,
-        "license": "MIT",
-        "archived": false,
-        "disabled": false,
-        "defaultBranch": "master",
-        "lastCommit": "2023-11-24T18:02:13Z"
-      }
-    },
-    {
-      "id": "brentpabst/MMM-gpsd",
-      "gitHubDataLastUpdate": "2024-01-31T21:38:33.598Z",
-      "gitHubData": {
-        "issues": 0,
-        "stars": 0,
-        "license": "MIT",
-        "archived": false,
-        "disabled": false,
-        "defaultBranch": "main",
-        "lastCommit": "2021-06-13T18:37:23Z"
-      }
-    },
-    {
-      "id": "mochman/MMM-GPSWeather",
-      "gitHubDataLastUpdate": "2024-01-31T21:38:34.213Z",
-      "gitHubData": {
-        "issues": 0,
-        "stars": 2,
-        "license": null,
-        "archived": true,
-        "disabled": false,
-        "defaultBranch": "master",
-        "lastCommit": "2016-11-13T19:59:30Z"
-      }
-    },
-    {
-      "id": "SvenSommer/MMM-GrafanaChart",
-      "gitHubDataLastUpdate": "2024-01-31T21:38:35.340Z",
-      "gitHubData": {
-        "issues": 1,
-        "stars": 32,
-        "license": "MIT",
-        "archived": false,
-        "disabled": false,
-        "defaultBranch": "master",
-        "lastCommit": "2023-04-13T15:53:43Z"
-      }
-    },
-    {
-      "id": "MMRIZE/MMM-GroveGestures",
-      "gitHubDataLastUpdate": "2024-01-31T21:38:36.975Z",
-      "gitHubData": {
-        "issues": 1,
-        "stars": 33,
-        "license": "MIT",
-        "archived": false,
-        "disabled": false,
-        "defaultBranch": "master",
-        "lastCommit": "2020-02-14T11:28:52Z"
-      }
-    },
-    {
-      "id": "mumblebaj/MMM-Growatt",
-      "gitHubDataLastUpdate": "2024-01-31T21:38:37.488Z",
-      "gitHubData": {
-        "issues": 0,
-        "stars": 2,
-        "license": "MIT",
-        "archived": false,
-        "disabled": false,
-        "defaultBranch": "main",
-        "lastCommit": "2024-01-27T15:09:53Z"
-      }
-    },
-    {
-      "id": "dekinet/MMM-Growatt",
-      "gitHubDataLastUpdate": "2024-01-31T21:38:38.003Z",
+      "gitHubDataLastUpdate": "2024-02-17T20:16:34.370Z",
       "gitHubData": {
         "issues": 2,
         "stars": 1,
@@ -5136,25 +5006,181 @@
         "archived": false,
         "disabled": false,
         "defaultBranch": "main",
-        "lastCommit": "2023-06-24T00:26:35Z"
+        "has_issues": true,
+        "lastCommit": "2023-11-29T20:43:01Z"
       }
     },
     {
-      "id": "mumblebaj/MMM-Growatt-Stats",
-      "gitHubDataLastUpdate": "2024-01-31T21:38:38.443Z",
+      "id": "pjestico/MMM-GoogleTrafficTimes",
+      "gitHubDataLastUpdate": "2024-02-17T20:16:34.777Z",
+      "gitHubData": {
+        "issues": 8,
+        "stars": 7,
+        "license": null,
+        "archived": false,
+        "disabled": false,
+        "defaultBranch": "master",
+        "has_issues": true,
+        "lastCommit": "2020-07-23T17:53:32Z"
+      }
+    },
+    {
+      "id": "Jacopo1891/MMM-GoogleTrafficTimes",
+      "gitHubDataLastUpdate": "2024-02-17T20:16:35.230Z",
+      "gitHubData": {
+        "issues": 0,
+        "stars": 12,
+        "license": null,
+        "archived": false,
+        "disabled": false,
+        "defaultBranch": "master",
+        "has_issues": true,
+        "lastCommit": "2024-02-11T20:05:49Z"
+      }
+    },
+    {
+      "id": "MMRIZE/MMM-GoogleTTS",
+      "gitHubDataLastUpdate": "2024-02-17T20:16:35.804Z",
+      "gitHubData": {
+        "issues": 0,
+        "stars": 10,
+        "license": "MIT",
+        "archived": false,
+        "disabled": false,
+        "defaultBranch": "master",
+        "has_issues": true,
+        "lastCommit": "2023-11-27T15:14:27Z"
+      }
+    },
+    {
+      "id": "Sjohn21/MMM-GPIO-HANDLER",
+      "gitHubDataLastUpdate": "2024-02-17T20:16:36.314Z",
       "gitHubData": {
         "issues": 1,
+        "stars": 1,
+        "license": "MIT",
+        "archived": false,
+        "disabled": false,
+        "defaultBranch": "main",
+        "has_issues": true,
+        "lastCommit": "2024-01-16T20:54:37Z"
+      }
+    },
+    {
+      "id": "Tom-Hirschberger/MMM-GPIO-Notifications",
+      "gitHubDataLastUpdate": "2024-02-17T20:16:36.826Z",
+      "gitHubData": {
+        "issues": 1,
+        "stars": 9,
+        "license": "MIT",
+        "archived": false,
+        "disabled": false,
+        "defaultBranch": "master",
+        "has_issues": true,
+        "lastCommit": "2023-11-24T18:02:13Z"
+      }
+    },
+    {
+      "id": "brentpabst/MMM-gpsd",
+      "gitHubDataLastUpdate": "2024-02-17T20:16:37.341Z",
+      "gitHubData": {
+        "issues": 0,
         "stars": 0,
         "license": "MIT",
         "archived": false,
         "disabled": false,
         "defaultBranch": "main",
+        "has_issues": true,
+        "lastCommit": "2021-06-13T18:37:23Z"
+      }
+    },
+    {
+      "id": "mochman/MMM-GPSWeather",
+      "gitHubDataLastUpdate": "2024-02-17T20:16:37.848Z",
+      "gitHubData": {
+        "issues": 0,
+        "stars": 2,
+        "license": null,
+        "archived": true,
+        "disabled": false,
+        "defaultBranch": "master",
+        "has_issues": true,
+        "lastCommit": "2016-11-13T19:59:30Z"
+      }
+    },
+    {
+      "id": "SvenSommer/MMM-GrafanaChart",
+      "gitHubDataLastUpdate": "2024-02-17T20:16:38.982Z",
+      "gitHubData": {
+        "issues": 1,
+        "stars": 32,
+        "license": "MIT",
+        "archived": false,
+        "disabled": false,
+        "defaultBranch": "master",
+        "has_issues": true,
+        "lastCommit": "2023-04-13T15:53:43Z"
+      }
+    },
+    {
+      "id": "MMRIZE/MMM-GroveGestures",
+      "gitHubDataLastUpdate": "2024-02-17T20:16:39.490Z",
+      "gitHubData": {
+        "issues": 1,
+        "stars": 33,
+        "license": "MIT",
+        "archived": false,
+        "disabled": false,
+        "defaultBranch": "master",
+        "has_issues": true,
+        "lastCommit": "2020-02-14T11:28:52Z"
+      }
+    },
+    {
+      "id": "mumblebaj/MMM-Growatt",
+      "gitHubDataLastUpdate": "2024-02-17T20:16:40.002Z",
+      "gitHubData": {
+        "issues": 0,
+        "stars": 2,
+        "license": "MIT",
+        "archived": false,
+        "disabled": false,
+        "defaultBranch": "main",
+        "has_issues": true,
+        "lastCommit": "2024-01-27T15:09:53Z"
+      }
+    },
+    {
+      "id": "dekinet/MMM-Growatt",
+      "gitHubDataLastUpdate": "2024-02-17T20:16:40.414Z",
+      "gitHubData": {
+        "issues": 2,
+        "stars": 2,
+        "license": "MIT",
+        "archived": false,
+        "disabled": false,
+        "defaultBranch": "main",
+        "has_issues": true,
+        "lastCommit": "2023-06-24T00:26:35Z"
+      }
+    },
+    {
+      "id": "mumblebaj/MMM-Growatt-Stats",
+      "gitHubDataLastUpdate": "2024-02-17T20:16:40.921Z",
+      "gitHubData": {
+        "issues": 1,
+        "stars": 1,
+        "license": "MIT",
+        "archived": false,
+        "disabled": false,
+        "defaultBranch": "main",
+        "has_issues": true,
         "lastCommit": "2024-01-27T15:12:41Z"
       }
     },
     {
       "id": "iceship/MMM-GyeonggiBus",
-      "gitHubDataLastUpdate": "2024-01-31T21:38:39.124Z",
+      "gitHubDataLastUpdate": "2024-02-17T20:16:41.373Z",
       "gitHubData": {
         "issues": 1,
         "stars": 8,
@@ -5162,12 +5188,13 @@
         "archived": false,
         "disabled": false,
         "defaultBranch": "main",
+        "has_issues": true,
         "lastCommit": "2022-02-03T13:40:50Z"
       }
     },
     {
       "id": "delightedCrow/MMM-HabiticaStats",
-      "gitHubDataLastUpdate": "2024-01-31T21:38:39.691Z",
+      "gitHubDataLastUpdate": "2024-02-17T20:16:41.845Z",
       "gitHubData": {
         "issues": 0,
         "stars": 18,
@@ -5175,12 +5202,13 @@
         "archived": false,
         "disabled": false,
         "defaultBranch": "master",
+        "has_issues": true,
         "lastCommit": "2020-04-07T02:39:10Z"
       }
     },
     {
       "id": "tderflinger/MMM-Hanzi",
-      "gitHubDataLastUpdate": "2024-01-31T21:55:28.957Z",
+      "gitHubDataLastUpdate": "2024-02-17T20:16:42.264Z",
       "gitHubData": {
         "issues": 0,
         "stars": 3,
@@ -5188,20 +5216,8 @@
         "archived": false,
         "disabled": false,
         "defaultBranch": "master",
+        "has_issues": true,
         "lastCommit": "2022-07-17T22:05:52Z"
-      }
-    },
-    {
-      "id": "aleckeller/MMM-HappyHours",
-      "gitHubDataLastUpdate": "2024-01-31T21:55:29.302Z",
-      "gitHubData": {
-        "issues": 0,
-        "stars": 2,
-        "license": null,
-        "archived": false,
-        "disabled": false,
-        "defaultBranch": "master",
-        "lastCommit": "2018-04-09T03:20:27Z"
       }
     },
     {

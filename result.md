@@ -1,6 +1,6 @@
 # Result of the module analysis
 
-Last update: 2024-02-16T20:42:44+01:00
+Last update: 2024-02-17T21:26:27+01:00
 
 ## Statistics
 
@@ -9,7 +9,7 @@ Last update: 2024-02-16T20:42:44+01:00
 | modules analyzed     |   1124   |
 | maintainer           |    632   |
 | modules with issues  |   1117   |
-| issues               |   7407   |
+| issues               |   7410   |
 | modules at github    |   1112   |
 | modules at gitlab    |     11   |
 | modules at bitbucket |      1   |
@@ -2362,8 +2362,8 @@ Last update: 2024-02-16T20:42:44+01:00
 ### [EXT-Pir by bugsounet](https://github.com/bugsounet/EXT-Pir)
 
 1. Issues are not enabled in the GitHub repository. So users cannot report bugs. Please enable issues in your repo.
-2. No image found.
-3. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
+2. Recommendation: Found `uses: actions/checkout@v3` in file `eslint.yml`: Replace it with v4.
+3. Recommendation: Replace eslintrc by new flat config.
 4. The branch name is 'master'. Consider renaming it to 'main'.
 
 ### [EXT-RadioPlayer by bugsounet](https://github.com/bugsounet/EXT-RadioPlayer)
@@ -3208,10 +3208,11 @@ Last update: 2024-02-16T20:42:44+01:00
 ### [MMM-GoogleAssistant by bugsounet](https://github.com/bugsounet/MMM-GoogleAssistant)
 
 1. Issues are not enabled in the GitHub repository. So users cannot report bugs. Please enable issues in your repo.
-2. Recommendation: Found `require("http")` in file `website.js`: Replace "http" by "node:http".
-3. Deprecated: Found `"grunt"` in file `fa-brands-400.svg`: Grunt is practically unmaintained. Move on to something better.
-4. Recommendation: Found `XMLHttpRequest` in file `jquery.min.js`: Replace it with built-in fetch.
-5. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
+2. Recommendation: Found `uses: actions/checkout@v3` in file `eslint.yml`: Replace it with v4.
+3. Recommendation: Found `require("http")` in file `website.js`: Replace "http" by "node:http".
+4. Deprecated: Found `"grunt"` in file `fa-brands-400.svg`: Grunt is practically unmaintained. Move on to something better.
+5. Recommendation: Found `XMLHttpRequest` in file `jquery.min.js`: Replace it with built-in fetch.
+6. Recommendation: Replace eslintrc by new flat config.
 
 ### [MMM-GoogleAssistant by gauravsacc](https://github.com/gauravsacc/MMM-GoogleAssistant)
 
@@ -3273,12 +3274,13 @@ Last update: 2024-02-16T20:42:44+01:00
 
 ### [MMM-GoogleFit by fry0815](https://github.com/fry0815/MMM-GoogleFit)
 
-1. Outdated: Found `MichMich/MagicMirror` in file `README.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
-2. Deprecated: Found `require("request")` in file `node_helper.js`: Replace it with built-in fetch.
-3. Recommendation: Found `new Date()` in file `node_helper.js`: Replace it by `new Date(Date.now())`: [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
-4. Typo: Found `Magic Mirror` in file `package.json`: Replace it with `MagicMirror²`.
-5. Recommendation: Replace eslintrc by new flat config.
-6. The branch name is 'master'. Consider renaming it to 'main'.
+1. Issues are not enabled in the GitHub repository. So users cannot report bugs. Please enable issues in your repo.
+2. Outdated: Found `MichMich/MagicMirror` in file `README.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
+3. Deprecated: Found `require("request")` in file `node_helper.js`: Replace it with built-in fetch.
+4. Recommendation: Found `new Date()` in file `node_helper.js`: Replace it by `new Date(Date.now())`: [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
+5. Typo: Found `Magic Mirror` in file `package.json`: Replace it with `MagicMirror²`.
+6. Recommendation: Replace eslintrc by new flat config.
+7. The branch name is 'master'. Consider renaming it to 'main'.
 
 ### [MMM-GoogleKeep by taxilof](https://github.com/taxilof/MMM-GoogleKeep)
 
@@ -7268,10 +7270,11 @@ Last update: 2024-02-16T20:42:44+01:00
 
 ### [MMM-Pir by bugsounet](https://github.com/bugsounet/MMM-Pir)
 
-1. Recommendation: Found `new Date()` in file `long-press-event.js`: Replace it by `new Date(Date.now())`: [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
-2. Deprecated: Found `new Buffer(` in file `progressbar.js`: This is deprecated. Please update: <https://nodejs.org/api/buffer.html>.
-3. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
-4. The branch name is 'master'. Consider renaming it to 'main'.
+1. Recommendation: Found `uses: actions/checkout@v3` in file `eslint.yml`: Replace it with v4.
+2. Recommendation: Found `new Date()` in file `long-press-event.js`: Replace it by `new Date(Date.now())`: [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
+3. Deprecated: Found `new Buffer(` in file `progressbar.js`: This is deprecated. Please update: <https://nodejs.org/api/buffer.html>.
+4. Recommendation: Replace eslintrc by new flat config.
+5. The branch name is 'master'. Consider renaming it to 'main'.
 
 ### [MMM-PIR by mboskamp](https://github.com/mboskamp/MMM-PIR)
 

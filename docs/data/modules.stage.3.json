@@ -3782,17 +3782,18 @@
     "maintainerURL": "https://wiki.bugsounet.fr",
     "description": "Control your screen with a PIR Sensor.",
     "issues": [
-      "Issues are not enabled in the GitHub repository. So users cannot report bugs. Please enable issues in your repo.",
-      "No image found."
+      "Issues are not enabled in the GitHub repository. So users cannot report bugs. Please enable issues in your repo."
     ],
     "stars": 3,
     "tags": [
       "sensor",
+      "motion detection",
       "pir",
       "ext",
       "googleassistant"
     ],
-    "license": "MIT"
+    "license": "MIT",
+    "image": "img-motion_detection.jpg"
   },
   {
     "name": "EXT-RadioPlayer",
@@ -5213,7 +5214,7 @@
     "issues": [
       "No image found."
     ],
-    "stars": 52,
+    "stars": 53,
     "tags": [
       "google",
       "calendar"
@@ -5273,7 +5274,9 @@
     "maintainer": "fry0815",
     "maintainerURL": "",
     "description": "Display google fit daily step count and weights.",
-    "issues": [],
+    "issues": [
+      "Issues are not enabled in the GitHub repository. So users cannot report bugs. Please enable issues in your repo."
+    ],
     "stars": 1,
     "tags": [
       "google fit"
@@ -5346,7 +5349,7 @@
     "maintainerURL": "https://github.com/hermanho",
     "description": "Image gallery or wallpaper with your Google Photos account.",
     "issues": [],
-    "stars": 152,
+    "stars": 153,
     "tags": [
       "googlephotos"
     ],
@@ -5387,7 +5390,7 @@
     "maintainerURL": "https://github.com/spydersoft-consulting/",
     "description": "Display Google Tasks with Planned View.",
     "issues": [],
-    "stars": 0,
+    "stars": 1,
     "tags": [
       "scheduler"
     ],
@@ -5452,7 +5455,7 @@
     "issues": [
       "An error occurred while getting information from 'package.json': Error: Invalid version: \"0.1\""
     ],
-    "stars": 0
+    "stars": 1
   },
   {
     "name": "MMM-GPIO-Notifications",
@@ -5553,7 +5556,7 @@
       "There are no keywords in 'package.json'. We would use them as tags on the module list page.",
       "No image found."
     ],
-    "stars": 1,
+    "stars": 2,
     "license": "ISC"
   },
   {
@@ -5564,7 +5567,7 @@
     "maintainerURL": "https://github.com/mumblebaj",
     "description": "Display status data from Growatt Inveter. Support multiple Growatt Inverter types. Made to work in conjunction with <a target=\"_blank\" href=\"https://github.com/mumblebaj/MMM-Growatt\">MMM-Growatt</a> or independently.",
     "issues": [],
-    "stars": 0,
+    "stars": 1,
     "tags": [
       "growatt"
     ],
@@ -5623,8 +5626,7 @@
       "`package.json` issue: No repository field.",
       "`package.json` issue: No license field.",
       "There are no keywords in 'package.json'. We would use them as tags on the module list page."
-    ],
-    "stars": 2
+    ]
   },
   {
     "name": "MMM-HASS",
@@ -11196,7 +11198,8 @@
     "issues": [],
     "stars": 10,
     "tags": [
-      "screen"
+      "screen",
+      "motion detection"
     ],
     "license": "MIT",
     "image": "screenshot-screenshot.jpg"
