@@ -5626,7 +5626,8 @@
       "`package.json` issue: No repository field.",
       "`package.json` issue: No license field.",
       "There are no keywords in 'package.json'. We would use them as tags on the module list page."
-    ]
+    ],
+    "stars": 2
   },
   {
     "name": "MMM-HASS",
@@ -5739,6 +5740,7 @@
     "maintainerURL": "https://github.com/Snille",
     "description": "Module to hide everything on screen. With a lot of features and customizations.",
     "issues": [
+      "Issues are not enabled in the GitHub repository. So users cannot report bugs. Please enable issues in your repo.",
       "There is no `package.json`. We need this file to gather information about the module for the module list page."
     ],
     "stars": 2
@@ -5859,6 +5861,7 @@
     "maintainerURL": "",
     "description": "Display information from Home Assistant using the home assistant REST API.",
     "issues": [
+      "Issues are not enabled in the GitHub repository. So users cannot report bugs. Please enable issues in your repo.",
       "There is no `package.json`. We need this file to gather information about the module for the module list page."
     ],
     "stars": 59
@@ -5977,6 +5980,7 @@
     "maintainerURL": "https://github.com/spitzlbergerj",
     "description": "Shows values from HomeMatic smart home radiator and wall thermostats.",
     "issues": [
+      "Issues are not enabled in the GitHub repository. So users cannot report bugs. Please enable issues in your repo.",
       "There is no `package.json`. We need this file to gather information about the module for the module list page."
     ],
     "stars": 1
@@ -6031,8 +6035,7 @@
     "description": "Module to include arbitrary HTML snippets in an iframe (script tags work).",
     "issues": [
       "There is no `package.json`. We need this file to gather information about the module for the module list page."
-    ],
-    "stars": 10
+    ]
   },
   {
     "name": "MMM-HTTPRequestDisplay",
@@ -6685,10 +6688,15 @@
     "maintainer": "khassel",
     "maintainerURL": "https://gitlab.com/karsten13",
     "description": "Displays current position of the International Space Station on a map.",
-    "issues": [
-      "There is no `package.json`. We need this file to gather information about the module for the module list page."
+    "issues": [],
+    "stars": 3,
+    "tags": [
+      "iss",
+      "tracking",
+      "map"
     ],
-    "stars": 3
+    "license": "MIT",
+    "image": "data-iss_cartodb.jpg"
   },
   {
     "name": "MMM-ISY",

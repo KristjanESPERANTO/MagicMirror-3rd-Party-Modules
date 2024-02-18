@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "2024-02-17T20:16:42.353Z",
+  "lastUpdate": "2024-02-18T09:55:16.092Z",
   "repositories": [
     {
       "id": "rubinho101/MMM-01ZM",
@@ -5221,8 +5221,22 @@
       }
     },
     {
+      "id": "aleckeller/MMM-HappyHours",
+      "gitHubDataLastUpdate": "2024-02-18T09:55:02.236Z",
+      "gitHubData": {
+        "issues": 0,
+        "stars": 2,
+        "license": null,
+        "archived": false,
+        "disabled": false,
+        "defaultBranch": "master",
+        "has_issues": true,
+        "lastCommit": "2018-04-09T03:20:27Z"
+      }
+    },
+    {
       "id": "aserramonner/MMM-HASS",
-      "gitHubDataLastUpdate": "2024-01-31T21:55:29.588Z",
+      "gitHubDataLastUpdate": "2024-02-18T09:55:02.702Z",
       "gitHubData": {
         "issues": 10,
         "stars": 30,
@@ -5230,12 +5244,13 @@
         "archived": false,
         "disabled": false,
         "defaultBranch": "master",
+        "has_issues": true,
         "lastCommit": "2018-11-25T21:57:59Z"
       }
     },
     {
       "id": "MichaelF1/MMM-HDC1080",
-      "gitHubDataLastUpdate": "2024-01-31T21:55:30.203Z",
+      "gitHubDataLastUpdate": "2024-02-18T09:55:03.637Z",
       "gitHubData": {
         "issues": 2,
         "stars": 1,
@@ -5243,12 +5258,13 @@
         "archived": false,
         "disabled": false,
         "defaultBranch": "master",
+        "has_issues": true,
         "lastCommit": "2018-05-19T12:56:52Z"
       }
     },
     {
       "id": "neshkoli/MMM-HebrewCalendar",
-      "gitHubDataLastUpdate": "2024-01-31T21:55:30.534Z",
+      "gitHubDataLastUpdate": "2024-02-18T09:55:04.132Z",
       "gitHubData": {
         "issues": 0,
         "stars": 2,
@@ -5256,12 +5272,13 @@
         "archived": false,
         "disabled": false,
         "defaultBranch": "main",
+        "has_issues": true,
         "lastCommit": "2023-11-13T21:02:21Z"
       }
     },
     {
       "id": "mykle1/Hello-Lucy",
-      "gitHubDataLastUpdate": "2024-01-31T21:55:30.826Z",
+      "gitHubDataLastUpdate": "2024-02-18T09:55:04.554Z",
       "gitHubData": {
         "issues": 5,
         "stars": 45,
@@ -5269,12 +5286,13 @@
         "archived": false,
         "disabled": false,
         "defaultBranch": "master",
+        "has_issues": true,
         "lastCommit": "2021-04-29T00:19:57Z"
       }
     },
     {
       "id": "Matzefication/MMM-Hello-Mirror",
-      "gitHubDataLastUpdate": "2024-01-31T21:55:31.126Z",
+      "gitHubDataLastUpdate": "2024-02-18T09:55:05.959Z",
       "gitHubData": {
         "issues": 6,
         "stars": 23,
@@ -5282,12 +5300,13 @@
         "archived": false,
         "disabled": false,
         "defaultBranch": "master",
+        "has_issues": true,
         "lastCommit": "2017-03-02T08:05:02Z"
       }
     },
     {
       "id": "georg90/MMM-HH-LocalTransport",
-      "gitHubDataLastUpdate": "2024-01-31T21:55:31.420Z",
+      "gitHubDataLastUpdate": "2024-02-18T09:55:06.341Z",
       "gitHubData": {
         "issues": 4,
         "stars": 7,
@@ -5295,12 +5314,13 @@
         "archived": false,
         "disabled": false,
         "defaultBranch": "master",
+        "has_issues": true,
         "lastCommit": "2017-08-17T09:01:16Z"
       }
     },
     {
       "id": "skuethe/MMM-HH-LocalTransport",
-      "gitHubDataLastUpdate": "2024-01-31T21:55:31.742Z",
+      "gitHubDataLastUpdate": "2024-02-18T09:55:06.822Z",
       "gitHubData": {
         "issues": 4,
         "stars": 4,
@@ -5308,12 +5328,13 @@
         "archived": false,
         "disabled": false,
         "defaultBranch": "master",
+        "has_issues": true,
         "lastCommit": "2021-08-17T19:27:27Z"
       }
     },
     {
       "id": "Snille/MMM-HideAll",
-      "gitHubDataLastUpdate": "2024-01-31T21:55:32.091Z",
+      "gitHubDataLastUpdate": "2024-02-18T09:55:07.345Z",
       "gitHubData": {
         "issues": 0,
         "stars": 2,
@@ -5321,12 +5342,13 @@
         "archived": false,
         "disabled": false,
         "defaultBranch": "master",
+        "has_issues": false,
         "lastCommit": "2021-04-10T17:22:29Z"
       }
     },
     {
       "id": "cowboysdude/MMM-History",
-      "gitHubDataLastUpdate": "2024-01-31T21:55:32.386Z",
+      "gitHubDataLastUpdate": "2024-02-18T09:55:07.758Z",
       "gitHubData": {
         "issues": 4,
         "stars": 25,
@@ -5334,12 +5356,13 @@
         "archived": false,
         "disabled": false,
         "defaultBranch": "master",
+        "has_issues": true,
         "lastCommit": "2018-11-05T13:52:35Z"
       }
     },
     {
       "id": "NateBrownProjects/MMM-Hive",
-      "gitHubDataLastUpdate": "2024-01-31T21:55:32.723Z",
+      "gitHubDataLastUpdate": "2024-02-18T09:55:08.227Z",
       "gitHubData": {
         "issues": 0,
         "stars": 2,
@@ -5347,12 +5370,13 @@
         "archived": false,
         "disabled": false,
         "defaultBranch": "main",
+        "has_issues": true,
         "lastCommit": "2021-04-23T03:22:17Z"
       }
     },
     {
       "id": "flick116/MMM-Hive",
-      "gitHubDataLastUpdate": "2024-01-31T21:55:34.049Z",
+      "gitHubDataLastUpdate": "2024-02-18T09:55:08.643Z",
       "gitHubData": {
         "issues": 2,
         "stars": 3,
@@ -5360,12 +5384,13 @@
         "archived": false,
         "disabled": false,
         "defaultBranch": "master",
+        "has_issues": true,
         "lastCommit": "2021-04-03T06:21:00Z"
       }
     },
     {
       "id": "winstonma/MMM-HK-Transport-ETA",
-      "gitHubDataLastUpdate": "2024-01-31T21:55:34.354Z",
+      "gitHubDataLastUpdate": "2024-02-18T09:55:09.019Z",
       "gitHubData": {
         "issues": 2,
         "stars": 5,
@@ -5373,12 +5398,13 @@
         "archived": false,
         "disabled": false,
         "defaultBranch": "main",
+        "has_issues": true,
         "lastCommit": "2023-11-22T03:59:00Z"
       }
     },
     {
       "id": "Helpi90/MMM-HLTV",
-      "gitHubDataLastUpdate": "2024-01-31T21:55:34.732Z",
+      "gitHubDataLastUpdate": "2024-02-18T09:55:09.489Z",
       "gitHubData": {
         "issues": 2,
         "stars": 2,
@@ -5386,12 +5412,13 @@
         "archived": false,
         "disabled": false,
         "defaultBranch": "master",
+        "has_issues": true,
         "lastCommit": "2020-09-30T06:35:34Z"
       }
     },
     {
       "id": "justjim1220/MMM-HolidayLights",
-      "gitHubDataLastUpdate": "2024-01-31T21:55:35.024Z",
+      "gitHubDataLastUpdate": "2024-02-18T09:55:09.917Z",
       "gitHubData": {
         "issues": 1,
         "stars": 18,
@@ -5399,12 +5426,13 @@
         "archived": false,
         "disabled": false,
         "defaultBranch": "master",
+        "has_issues": true,
         "lastCommit": "2019-01-25T13:05:50Z"
       }
     },
     {
       "id": "tomgroenwoldt/MMM-home-presence",
-      "gitHubDataLastUpdate": "2024-01-31T21:55:35.451Z",
+      "gitHubDataLastUpdate": "2024-02-18T09:55:10.450Z",
       "gitHubData": {
         "issues": 0,
         "stars": 1,
@@ -5412,12 +5440,13 @@
         "archived": false,
         "disabled": false,
         "defaultBranch": "main",
+        "has_issues": true,
         "lastCommit": "2023-02-06T23:27:42Z"
       }
     },
     {
       "id": "zuo000/MMM-HomeAssistant",
-      "gitHubDataLastUpdate": "2024-01-31T21:55:35.718Z",
+      "gitHubDataLastUpdate": "2024-02-18T09:55:10.850Z",
       "gitHubData": {
         "issues": 0,
         "stars": 21,
@@ -5425,12 +5454,13 @@
         "archived": false,
         "disabled": false,
         "defaultBranch": "master",
+        "has_issues": true,
         "lastCommit": "2020-04-09T01:54:01Z"
       }
     },
     {
       "id": "leinich/MMM-homeassistant-sensors",
-      "gitHubDataLastUpdate": "2024-01-31T21:55:36.051Z",
+      "gitHubDataLastUpdate": "2024-02-18T09:55:11.292Z",
       "gitHubData": {
         "issues": 1,
         "stars": 59,
@@ -5438,12 +5468,13 @@
         "archived": false,
         "disabled": false,
         "defaultBranch": "master",
+        "has_issues": false,
         "lastCommit": "2021-07-15T16:54:44Z"
       }
     },
     {
       "id": "Snille/MMM-homeassistant-sensors",
-      "gitHubDataLastUpdate": "2024-01-31T21:55:36.357Z",
+      "gitHubDataLastUpdate": "2024-02-18T09:55:11.675Z",
       "gitHubData": {
         "issues": 9,
         "stars": 59,
@@ -5451,12 +5482,13 @@
         "archived": false,
         "disabled": false,
         "defaultBranch": "master",
+        "has_issues": true,
         "lastCommit": "2023-03-21T12:52:46Z"
       }
     },
     {
       "id": "mathewmeconry/MMM-HomeAssistant-Touch",
-      "gitHubDataLastUpdate": "2024-01-31T21:55:36.663Z",
+      "gitHubDataLastUpdate": "2024-02-18T09:55:12.119Z",
       "gitHubData": {
         "issues": 0,
         "stars": 6,
@@ -5464,12 +5496,13 @@
         "archived": false,
         "disabled": false,
         "defaultBranch": "master",
+        "has_issues": true,
         "lastCommit": "2021-09-17T23:44:14Z"
       }
     },
     {
       "id": "wonderslug/MMM-HomeAssistantDisplay",
-      "gitHubDataLastUpdate": "2024-01-31T21:55:36.961Z",
+      "gitHubDataLastUpdate": "2024-02-18T09:55:12.544Z",
       "gitHubData": {
         "issues": 7,
         "stars": 77,
@@ -5477,12 +5510,13 @@
         "archived": false,
         "disabled": false,
         "defaultBranch": "main",
+        "has_issues": true,
         "lastCommit": "2023-10-25T13:02:00Z"
       }
     },
     {
       "id": "john3300/MMM-HomeAutomationNotifications",
-      "gitHubDataLastUpdate": "2024-01-31T22:49:30.510Z",
+      "gitHubDataLastUpdate": "2024-02-18T09:55:13.023Z",
       "gitHubData": {
         "issues": 2,
         "stars": 10,
@@ -5490,12 +5524,13 @@
         "archived": false,
         "disabled": false,
         "defaultBranch": "master",
+        "has_issues": true,
         "lastCommit": "2021-12-14T21:03:21Z"
       }
     },
     {
       "id": "djerik/MMM-HomeConnect",
-      "gitHubDataLastUpdate": "2024-01-31T22:49:30.973Z",
+      "gitHubDataLastUpdate": "2024-02-18T09:55:13.429Z",
       "gitHubData": {
         "issues": 2,
         "stars": 2,
@@ -5503,12 +5538,13 @@
         "archived": false,
         "disabled": false,
         "defaultBranch": "master",
-        "lastCommit": "2023-05-08T14:33:19Z"
+        "has_issues": true,
+        "lastCommit": "2024-02-09T22:32:21Z"
       }
     },
     {
       "id": "Sickboy78/MMM-Homematic",
-      "gitHubDataLastUpdate": "2024-01-31T22:49:31.335Z",
+      "gitHubDataLastUpdate": "2024-02-18T09:55:13.859Z",
       "gitHubData": {
         "issues": 0,
         "stars": 12,
@@ -5516,12 +5552,13 @@
         "archived": false,
         "disabled": false,
         "defaultBranch": "master",
+        "has_issues": true,
         "lastCommit": "2023-11-16T15:47:40Z"
       }
     },
     {
       "id": "JFWenisch/MMM-Homematic-Rooms",
-      "gitHubDataLastUpdate": "2024-01-31T22:49:31.660Z",
+      "gitHubDataLastUpdate": "2024-02-18T09:55:14.261Z",
       "gitHubData": {
         "issues": 0,
         "stars": 2,
@@ -5529,12 +5566,13 @@
         "archived": false,
         "disabled": false,
         "defaultBranch": "master",
+        "has_issues": true,
         "lastCommit": "2019-10-26T13:04:37Z"
       }
     },
     {
       "id": "spitzlbergerj/MMM-Homematic-Thermostats",
-      "gitHubDataLastUpdate": "2024-01-31T22:49:32.185Z",
+      "gitHubDataLastUpdate": "2024-02-18T09:55:14.758Z",
       "gitHubData": {
         "issues": 0,
         "stars": 1,
@@ -5542,12 +5580,13 @@
         "archived": false,
         "disabled": false,
         "defaultBranch": "master",
+        "has_issues": false,
         "lastCommit": "2022-11-14T14:42:44Z"
       }
     },
     {
       "id": "morozgrafix/MMM-horoscope",
-      "gitHubDataLastUpdate": "2024-01-31T22:49:32.532Z",
+      "gitHubDataLastUpdate": "2024-02-18T09:55:15.147Z",
       "gitHubData": {
         "issues": 6,
         "stars": 4,
@@ -5555,12 +5594,13 @@
         "archived": false,
         "disabled": false,
         "defaultBranch": "master",
+        "has_issues": true,
         "lastCommit": "2017-01-30T08:48:52Z"
       }
     },
     {
       "id": "dancj/MMM-Hover",
-      "gitHubDataLastUpdate": "2024-01-31T22:49:33.055Z",
+      "gitHubDataLastUpdate": "2024-02-18T09:55:15.537Z",
       "gitHubData": {
         "issues": 2,
         "stars": 5,
@@ -5568,12 +5608,13 @@
         "archived": false,
         "disabled": false,
         "defaultBranch": "master",
+        "has_issues": true,
         "lastCommit": "2017-10-18T20:58:00Z"
       }
     },
     {
       "id": "maan75/MMM-HRS-PickupPlan",
-      "gitHubDataLastUpdate": "2024-01-31T22:49:33.491Z",
+      "gitHubDataLastUpdate": "2024-02-18T09:55:15.937Z",
       "gitHubData": {
         "issues": 0,
         "stars": 0,
@@ -5581,20 +5622,8 @@
         "archived": false,
         "disabled": false,
         "defaultBranch": "main",
+        "has_issues": true,
         "lastCommit": "2022-02-12T19:18:41Z"
-      }
-    },
-    {
-      "id": "ulrichwisser/MMM-HTMLSnippet",
-      "gitHubDataLastUpdate": "2024-01-31T22:49:34.079Z",
-      "gitHubData": {
-        "issues": 2,
-        "stars": 10,
-        "license": "GPL-3.0",
-        "archived": false,
-        "disabled": false,
-        "defaultBranch": "master",
-        "lastCommit": "2022-05-24T13:48:06Z"
       }
     },
     {

@@ -4292,7 +4292,7 @@
     ],
     "license": "MIT",
     "image": "data-flights_mapbox.jpg",
-    "lastCommit": "2023-10-16T17:27:25+00:00"
+    "lastCommit": "2024-02-18T00:15:14+01:00"
   },
   {
     "name": "MMM-FlightsAbove",
@@ -5309,6 +5309,7 @@
     "maintainerURL": "",
     "description": "A module that finds and displays local happy hours.",
     "issues": 14,
+    "stars": 2,
     "lastCommit": "2018-04-08T23:20:27-04:00"
   },
   {
@@ -5418,7 +5419,7 @@
     "maintainer": "Snille",
     "maintainerURL": "https://github.com/Snille",
     "description": "Module to hide everything on screen. With a lot of features and customizations.",
-    "issues": 7,
+    "issues": 8,
     "stars": 2,
     "lastCommit": "2021-04-10T19:22:29+02:00"
   },
@@ -5528,7 +5529,7 @@
     "maintainer": "leinich",
     "maintainerURL": "",
     "description": "Display information from Home Assistant using the home assistant REST API.",
-    "issues": 4,
+    "issues": 5,
     "stars": 59,
     "lastCommit": "2021-07-15T18:54:44+02:00"
   },
@@ -5644,7 +5645,7 @@
     "maintainer": "spitzlbergerj",
     "maintainerURL": "https://github.com/spitzlbergerj",
     "description": "Shows values from HomeMatic smart home radiator and wall thermostats.",
-    "issues": 8,
+    "issues": 9,
     "stars": 1,
     "lastCommit": "2022-11-14T15:42:44+01:00"
   },
@@ -6324,9 +6325,16 @@
     "maintainer": "khassel",
     "maintainerURL": "https://gitlab.com/karsten13",
     "description": "Displays current position of the International Space Station on a map.",
-    "issues": 4,
+    "issues": 3,
     "stars": 3,
-    "lastCommit": "2024-02-17T00:13:46+01:00"
+    "tags": [
+      "iss",
+      "tracking",
+      "map"
+    ],
+    "license": "MIT",
+    "image": "data-iss_cartodb.jpg",
+    "lastCommit": "2024-02-17T21:28:06+01:00"
   },
   {
     "name": "MMM-ISY",

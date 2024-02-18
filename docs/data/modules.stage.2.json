@@ -3933,7 +3933,8 @@
     "maintainer": "aleckeller",
     "maintainerURL": "",
     "description": "A module that finds and displays local happy hours.",
-    "issues": []
+    "issues": [],
+    "stars": 2
   },
   {
     "name": "MMM-HASS",
@@ -4013,7 +4014,9 @@
     "maintainer": "Snille",
     "maintainerURL": "https://github.com/Snille",
     "description": "Module to hide everything on screen. With a lot of features and customizations.",
-    "issues": [],
+    "issues": [
+      "Issues are not enabled in the GitHub repository. So users cannot report bugs. Please enable issues in your repo."
+    ],
     "stars": 2
   },
   {
@@ -4103,7 +4106,9 @@
     "maintainer": "leinich",
     "maintainerURL": "",
     "description": "Display information from Home Assistant using the home assistant REST API.",
-    "issues": [],
+    "issues": [
+      "Issues are not enabled in the GitHub repository. So users cannot report bugs. Please enable issues in your repo."
+    ],
     "stars": 59
   },
   {
@@ -4183,7 +4188,9 @@
     "maintainer": "spitzlbergerj",
     "maintainerURL": "https://github.com/spitzlbergerj",
     "description": "Shows values from HomeMatic smart home radiator and wall thermostats.",
-    "issues": [],
+    "issues": [
+      "Issues are not enabled in the GitHub repository. So users cannot report bugs. Please enable issues in your repo."
+    ],
     "stars": 1
   },
   {
@@ -4223,8 +4230,7 @@
     "maintainer": "ulrichwisser",
     "maintainerURL": "",
     "description": "Module to include arbitrary HTML snippets in an iframe (script tags work).",
-    "issues": [],
-    "stars": 10
+    "issues": []
   },
   {
     "name": "MMM-HTTPRequestDisplay",
