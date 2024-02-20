@@ -84,10 +84,8 @@ function createCard (moduleData) {
   /* Set the card footer */
   if (moduleData.lastCommit) {
     const commit = card.querySelector(".info .container.commit .text");
-
-    /* If is not github? */
     commit.href = `${moduleData.url}/commits/`;
-    commit.textContent = `${moduleData.lastCommit.split("T")[0].replaceAll("-", "/")}`;
+    commit.textContent = `${moduleData.lastCommit.split("T")[0]}`;
   } else {
     card.querySelector(".info .container.commit").remove();
   }
