@@ -117,6 +117,10 @@ async function addInformationFromPackageJson (moduleList) {
         module.issues.push("There are no keywords in 'package.json'. We would use them as tags on the module list page.");
       }
 
+      if (moduleData.bugs && moduleData.bugs.url && moduleData.bugs.url.includes("github.com") && module.hasGithubIssues === false) {
+        module.issues.push("Issues are not enabled in the GitHub repository. So users cannot report bugs. Please enable issues in your repo.");
+      }
+
       if (moduleData.license) {
         // Add license info to the module information
         module.license = moduleData.license;
@@ -154,6 +158,10 @@ async function addInformationFromPackageJson (moduleList) {
     } catch (error) {
       if (error.code === "ENOENT") {
         module.issues.push("There is no `package.json`. We need this file to gather information about the module for the module list page.");
+
+        if (module.hasGithubIssues === false) {
+          module.issues.push("Issues are not enabled in the GitHub repository. So users cannot report bugs. Please enable issues in your repo.");
+        }
       } else {
         module.issues.push(`An error occurred while getting information from 'package.json': ${error}`);
       }

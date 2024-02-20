@@ -90,11 +90,7 @@ async function updateData () {
             }
           };
           module.stars = data.stargazers_count;
-
-          if (data.has_issues === false) {
-            module.issues.push("Issues are not enabled in the GitHub repository. So users cannot report bugs. Please enable issues in your repo.");
-          }
-
+          module.hasGithubIssues = data.has_issues;
           results.push(repositoryData);
         } else {
           console.error("\nError fetching GitHub API data:", response.status, response.statusText);
@@ -105,9 +101,7 @@ async function updateData () {
         const existingRepository = previousData.repositories?.find((repo) => repo.id === repositoryId);
         if (existingRepository) {
           module.stars = existingRepository.gitHubData.stars;
-          if (existingRepository.gitHubData.has_issues === false) {
-            module.issues.push("Issues are not enabled in the GitHub repository. So users cannot report bugs. Please enable issues in your repo.");
-          }
+          module.hasGithubIssues = existingRepository.gitHubData.has_issues;
           results.push(existingRepository);
         }
       }
