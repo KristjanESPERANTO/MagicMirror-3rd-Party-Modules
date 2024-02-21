@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "2024-02-18T09:55:00.858Z",
+  "lastUpdate": "2024-02-21T19:45:31.471Z",
   "modules": [
     {
       "name": "MMM-01ZM",
@@ -7857,6 +7857,15 @@
       "maintainer": "nikobix",
       "maintainerURL": "https://github.com/nikobix",
       "description": "Module to skim council website and extract rubish collection times.",
+      "issues": []
+    },
+    {
+      "name": "MMM-Rugby",
+      "url": "https://github.com/mumblebaj/MMM-Rugby",
+      "id": "mumblebaj/MMM-Rugby",
+      "maintainer": "mumblebaj",
+      "maintainerURL": "",
+      "description": "Module to display Rugby World Rankings and Upcoming Matches and results",
       "issues": []
     },
     {

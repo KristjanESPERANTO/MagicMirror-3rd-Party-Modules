@@ -1,11 +1,11 @@
 {
-  "moduleCounter": 1124,
-  "modulesWithImageCounter": 508,
-  "modulesWithIssuesCounter": 1117,
-  "issueCounter": 7412,
-  "lastUpdate": "2024-02-18T11:04:53+01:00",
+  "moduleCounter": 1125,
+  "modulesWithImageCounter": 510,
+  "modulesWithIssuesCounter": 1118,
+  "issueCounter": 7394,
+  "lastUpdate": "2024-02-21T20:56:03+01:00",
   "repositoryHoster": {
-    "github": 1112,
+    "github": 1113,
     "gitlab": 11,
     "bitbucket": 1
   },
@@ -17,9 +17,9 @@
     "Tom-Hirschberger": 13,
     "shbatm": 10,
     "shin10": 10,
+    "mumblebaj": 9,
     "retroflex": 8,
     "grenagit": 8,
-    "mumblebaj": 8,
     "nigel-daniels": 7,
     "CFenner": 7,
     "vincep5": 7,
