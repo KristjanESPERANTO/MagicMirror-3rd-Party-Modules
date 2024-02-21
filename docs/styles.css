@@ -246,6 +246,7 @@ main {
   border-radius: 1em;
   font-size: 0.9rem;
   white-space: nowrap;
+  cursor: pointer;
 }
 
 .description {

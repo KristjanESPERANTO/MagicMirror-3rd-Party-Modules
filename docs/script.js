@@ -44,7 +44,15 @@ function createCard (moduleData) {
   if (moduleData.tags) {
     moduleData.tags.forEach((tag) => {
       const tagElement = document.createElement("div");
+      tagElement.setAttribute("data-tag", tag);
       tagElement.textContent = tag;
+
+      tagElement.addEventListener("click", () => {
+        // eslint-disable-next-line no-use-before-define
+        filterByTag(tag);
+        searchInput.value = "";
+      });
+
       card.querySelector(".tags").appendChild(tagElement);
     });
   } else {
@@ -261,11 +269,11 @@ function filterByTag (tag) {
 
   updateModuleCardContainer();
 
-  // Mark the selected tag
-  const selectedURL = document.querySelector(`.tag-button[data-tag="${tag}"]`);
-  if (selectedURL) {
-    selectedURL.classList.add("selected");
-  }
+  // Mark the selected tag container
+  const selectedTagContainers = document.querySelectorAll(`[data-tag="${tag}"]`);
+  selectedTagContainers.forEach((container) => {
+    container.classList.add("selected");
+  });
 }
 
 // Add an event listener for clicks on the cards

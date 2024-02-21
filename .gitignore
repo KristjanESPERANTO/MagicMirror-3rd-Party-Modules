@@ -2,3 +2,4 @@
 /modules_temp/*
 /node_modules/*
 .eslintcache
+.vscode/*
