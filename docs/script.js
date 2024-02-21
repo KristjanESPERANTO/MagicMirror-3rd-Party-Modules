@@ -32,7 +32,13 @@ function createCard (moduleData) {
   /* Set the header data */
   card.querySelector(".name").href = moduleData.url;
   card.querySelector(".name").textContent = moduleData.name;
-  card.querySelector(".maintainer").textContent = `${moduleData.maintainer}`;
+
+  const maintainerContainer = card.querySelector(".maintainer");
+  maintainerContainer.textContent = `${moduleData.maintainer}`;
+  maintainerContainer.addEventListener("click", () => {
+    // eslint-disable-next-line no-use-before-define
+    filterByMaintainer(moduleData.maintainer);
+  });
 
   if (typeof moduleData.stars === "undefined") {
     card.querySelector(".stars").remove();
@@ -50,7 +56,6 @@ function createCard (moduleData) {
       tagElement.addEventListener("click", () => {
         // eslint-disable-next-line no-use-before-define
         filterByTag(tag);
-        searchInput.value = "";
       });
 
       card.querySelector(".tags").appendChild(tagElement);
@@ -248,6 +253,16 @@ function filterBySearchText (searchText) {
       cardTags.some((tag) => tag.toLowerCase().includes(searchLower))
     );
   });
+
+  removeSelectedMarkingFromTagsAndCards();
+
+  updateModuleCardContainer();
+}
+
+function filterByMaintainer (maintainer) {
+  filteredModuleList = allModules.filter((card) => card.maintainer === maintainer);
+
+  searchInput.value = "";
 
   removeSelectedMarkingFromTagsAndCards();
 

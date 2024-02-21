@@ -249,6 +249,11 @@ main {
   cursor: pointer;
 }
 
+.maintainer:hover {
+  background-color: #9995;
+  cursor: alias;
+}
+
 .description {
   margin-top: 0.5em;
   padding: 0.1em;
