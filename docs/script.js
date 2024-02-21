@@ -1,4 +1,3 @@
-/* eslint-disable max-lines */
 let allModules = [];
 let filteredModuleList = [];
 const cardTemplate = document.getElementById("card-template");
@@ -9,20 +8,18 @@ const tagButtonContainer = document.getElementById("tag-buttons");
 const sortDropdown = document.getElementById("sort-dropdown");
 const showOutdated = document.getElementById("show-outdated");
 
-/* [<name>, <icon>, <background>, <foreground>] */
 const tagsList = [
-  ["calendar", "📅", "#5bc7d9", "#022126"],
-  ["news", "📰", "#e0fffe", "#141e1e"],
-  ["motion detection", "🏃🏽", "#ff419e", "#220212"],
-  ["public transport", "🚍", "#f9c376", "#231602"],
-  ["smarthome", "💡", "#ef9531", "#2c1802"],
-  ["soccer", "⚽", "#737ef7", "#01041f"],
-  ["text-to-speech", "🔉", "#ecff7b", "#1f2302"],
-  ["stock", "🗠", "#a9acb6", "#000"],
-  ["traffic", "⛕", "#86f58b", "#021603"],
-  ["voice control", "🎤", "#5fb2ff", "#021527"],
-  ["weather", "☁️", "#f74545", "#270202"]
-  // ["social media", "📱", "#ff419e", "#220212"]
+  "calendar",
+  "news",
+  "motion detection",
+  "public transport",
+  "smarthome",
+  "soccer",
+  "stock",
+  "text-to-speech",
+  "traffic",
+  "voice control",
+  "weather"
 ];
 
 
@@ -36,7 +33,6 @@ function createCard (moduleData) {
   const maintainerContainer = card.querySelector(".maintainer");
   maintainerContainer.textContent = `${moduleData.maintainer}`;
   maintainerContainer.addEventListener("click", () => {
-    // eslint-disable-next-line no-use-before-define
     filterByMaintainer(moduleData.maintainer);
   });
 
@@ -54,7 +50,6 @@ function createCard (moduleData) {
       tagElement.textContent = tag;
 
       tagElement.addEventListener("click", () => {
-        // eslint-disable-next-line no-use-before-define
         filterByTag(tag);
       });
 
@@ -182,34 +177,17 @@ function sortData (sortOption) {
 }
 
 function displayTagButtonContainer () {
-  const root = document.querySelector(":root");
   tagButtonContainer.innerHTML = "";
 
-  const sortedTags = tagsList.sort((a, b) => {
-    if (a[0] < b[0]) {
-      return -1;
-    }
-    return 1;
-  });
-
-  sortedTags.forEach((tag) => {
+  tagsList.forEach((tag) => {
     const button = document.createElement("a");
     button.className = "tag-button";
-    button.textContent = `${tag[1]} ${tag[0]}`;
-    button.setAttribute("data-tag", tag[0]);
-    if (tag[2] && tag[3]) {
-      const tagNameNormal = tag[0].replaceAll(" ", "");
+    button.textContent = tag;
+    button.setAttribute("data-tag", tag);
 
-      /*
-       * Once the .json file get chunked (instead of just loading everything) and loaded by parts,
-       * maybe we can put the tags in the cards with colors
-       */
-      root.style.setProperty(`--tags-bg-${tagNameNormal}`, tag[2]);
-      root.style.setProperty(`--tags-fg-${tagNameNormal}`, tag[3]);
-      button.style.backgroundColor = `var(--tags-bg-${tagNameNormal})`;
-      button.style.color = `var(--tags-fg-${tagNameNormal})`;
-      button.setAttribute("data-color", true);
-    }
+    button.addEventListener("click", () => {
+      filterByTag(tag);
+    });
     tagButtonContainer.appendChild(button);
   });
 }
@@ -317,22 +295,6 @@ resetButton.addEventListener("click", () => {
   root.style.setProperty("--color-accent-light", "#ebf8ff");
   root.style.setProperty("--color-accent-dark", "#033454");
   updateModuleCardContainer();
-});
-
-tagButtonContainer.addEventListener("click", (event) => {
-  if (event.target.tagName === "A") {
-    const root = document.querySelector(":root");
-    const tag = event.target.getAttribute("data-tag");
-    if (event.target.getAttribute("data-color")) {
-      const tagNameNormal = tag.replaceAll(" ", "");
-      root.style.setProperty("--color-accent-light", `var(--tags-bg-${tagNameNormal})`);
-      root.style.setProperty("--color-accent-dark", `var(--tags-fg-${tagNameNormal})`);
-      root.style.setProperty("--color-accent-header", `var(--tags-bg-${tagNameNormal})`);
-    }
-
-    filterByTag(tag);
-    searchInput.value = "";
-  }
 });
 
 searchInput.addEventListener("input", () => {

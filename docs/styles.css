@@ -84,6 +84,7 @@ header {
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
+  min-height: 40px;
 }
 
 #module-count {
@@ -91,13 +92,15 @@ header {
 }
 
 #reset-button {
+  align-self: center;
   color: var(--color-foreground-text);
   cursor: pointer;
   background-color: var(--color-background-gray);
   border-radius: 5px;
   transition: background-color 0.3s ease-in-out;
-  padding: 0.5em;
+  padding: 0.3em;
   margin-left: 1em;
+  height: fit-content;
 }
 
 #tag-buttons {
@@ -127,7 +130,7 @@ header {
 
 #search-input {
   padding: 0.5em;
-  margin-bottom: 1em;
+  margin-bottom: 0.3em;
   border: 1px solid #888;
   border-radius: 5px;
   background-color: #eee;
@@ -407,4 +410,111 @@ main {
     width: 97%;
     height: 97%;
   }
+}
+
+[data-tag].selected {
+  margin: 0 0.4em;
+}
+
+[data-tag]::before {
+  padding-right: 0.5em;
+}
+
+[data-tag="calendar"].tag-button::before {
+  content: "📅";
+}
+
+[data-tag="calendar"] {
+  color: #022126 !important;
+  background-color: #5bc7d9 !important;
+}
+
+[data-tag="news"].tag-button::before {
+  content: "📰";
+}
+
+[data-tag="news"] {
+  color: #141e1e !important;
+  background-color: #e0fffe !important;
+}
+
+[data-tag="motion detection"].tag-button::before {
+  content: "🏃🏽";
+}
+
+[data-tag="motion detection"] {
+  color: #220212 !important;
+  background-color: #ff419e !important;
+}
+
+[data-tag="public transport"].tag-button::before {
+  content: "🚍";
+}
+
+[data-tag="public transport"] {
+  color: #231602 !important;
+  background-color: #f9c376 !important;
+}
+
+[data-tag="smarthome"].tag-button::before {
+  content: "💡";
+}
+
+[data-tag="smarthome"] {
+  color: #2c1802 !important;
+  background-color: #ef9531 !important;
+}
+
+[data-tag="soccer"].tag-button::before {
+  content: "⚽";
+}
+
+[data-tag="soccer"] {
+  color: #01041f !important;
+  background-color: #737ef7 !important;
+}
+
+[data-tag="stock"].tag-button::before {
+  content: "🗠";
+}
+
+[data-tag="stock"] {
+  color: #000 !important;
+  background-color: #a9acb6 !important;
+}
+
+[data-tag="text-to-speech"].tag-button::before {
+  content: "🔉";
+}
+
+[data-tag="text-to-speech"] {
+  color: #1f2302 !important;
+  background-color: #cce060 !important;
+}
+
+[data-tag="traffic"].tag-button::before {
+  content: "⛕";
+}
+
+[data-tag="traffic"] {
+  color: #021603 !important;
+  background-color: #86f58b !important;
+}
+
+[data-tag="voice control"].tag-button::before {
+  content: "🎤";
+}
+
+[data-tag="voice control"] {
+  color: #021527 !important;
+  background-color: #5fb2ff !important;
+}
+
+[data-tag="weather"].tag-button::before {
+  content: "🌦️";
+}
+
+[data-tag="weather"] {
+  color: #270202 !important;
+  background-color: #f17272 !important;
 }
