@@ -7252,7 +7252,8 @@
     "description": "Near Earth Objects passing by our planet this week. Be afraid. Be VERY afraid!",
     "issues": [],
     "outdated": "Abandoned. No reactions to issues since years. Missing instructions to install dependency 'request'.",
-    "stars": 4
+    "stars": 4,
+    "hasGithubIssues": true
   },
   {
     "name": "MMM-neoomAPI",
@@ -7262,7 +7263,8 @@
     "maintainerURL": "https://github.com/MartinLoidolt",
     "description": "Display your photovoltaic statistics from neoom.",
     "issues": [],
-    "stars": 1
+    "stars": 1,
+    "hasGithubIssues": true
   },
   {
     "name": "MMM-NesteBussAtB",
@@ -7272,7 +7274,8 @@
     "maintainerURL": "",
     "description": "Show how many minutes until the next bus(es) goes from given bus stops.",
     "issues": [],
-    "stars": 9
+    "stars": 9,
+    "hasGithubIssues": true
   },
   {
     "name": "MMM-NestRemoteThermostat",
@@ -7282,7 +7285,8 @@
     "maintainerURL": "https://github.com/sisimomo",
     "description": "Display a Nest Like thermostat from a remote sensor that is capable to POST values through HTTP protocol. It is designed to be generic. Useful when having Home Assistant and MagicMirror².",
     "issues": [],
-    "stars": 1
+    "stars": 1,
+    "hasGithubIssues": true
   },
   {
     "name": "MMM-Netatmo",
@@ -7292,7 +7296,8 @@
     "maintainerURL": "",
     "description": "Display your Netatmo in/outdoor weather station data.",
     "issues": [],
-    "stars": 32
+    "stars": 32,
+    "hasGithubIssues": true
   },
   {
     "name": "MMM-Netatmo-Presence",
@@ -7302,7 +7307,8 @@
     "maintainerURL": "https://github.com/AgP42",
     "description": "Display live snapshot of Netatmo Presence and Welcome cameras and an events timeline of all your Netatmo Presence cameras.",
     "issues": [],
-    "stars": 4
+    "stars": 4,
+    "hasGithubIssues": true
   },
   {
     "name": "MMM-Netatmo-Thermostat",
@@ -7312,7 +7318,8 @@
     "maintainerURL": "",
     "description": "Netatmo thermostat module.",
     "issues": [],
-    "stars": 3
+    "stars": 3,
+    "hasGithubIssues": true
   },
   {
     "name": "MMM-network-signal",
@@ -7322,7 +7329,8 @@
     "maintainerURL": "",
     "description": "Display a solid wifi logo as network signal based on ping speed.",
     "issues": [],
-    "stars": 36
+    "stars": 36,
+    "hasGithubIssues": true
   },
   {
     "name": "MMM-NetworkConnection",
@@ -7332,7 +7340,8 @@
     "maintainerURL": "https://github.com/slametps",
     "description": "Display network connection status (ping, download speed, upload speed).",
     "issues": [],
-    "stars": 31
+    "stars": 31,
+    "hasGithubIssues": true
   },
   {
     "name": "MMM-NetworkScanner",
@@ -7342,7 +7351,8 @@
     "maintainerURL": "https://github.com/spitzlbergerj",
     "description": "Display the status of devices on the network based on their MAC address with nice columnview.",
     "issues": [],
-    "stars": 18
+    "stars": 18,
+    "hasGithubIssues": false
   },
   {
     "name": "MMM-News-QR",
@@ -7352,7 +7362,8 @@
     "maintainerURL": "",
     "description": "Add a QR Code with the link to the showing Newsfeed (Default Newsfeed Module).",
     "issues": [],
-    "stars": 10
+    "stars": 10,
+    "hasGithubIssues": true
   },
   {
     "name": "MMM-NewsAPI",
@@ -7362,7 +7373,8 @@
     "maintainerURL": "https://github.com/mumblebaj",
     "description": "Module to to get news from <a target=\"_blank\" href=\"https://newsapi.org\">newsapi.org</a>.",
     "issues": [],
-    "stars": 6
+    "stars": 6,
+    "hasGithubIssues": true
   },
   {
     "name": "MMM-NewsFeedTicker",
@@ -7372,7 +7384,8 @@
     "maintainerURL": "",
     "description": "Mod of the default newsfeed module - shows the logo and scrolls the headlines and brief description across the screen like those seen on the news channels.",
     "issues": [],
-    "stars": 22
+    "stars": 22,
+    "hasGithubIssues": true
   },
   {
     "name": "MMM-next-episode",
@@ -7382,7 +7395,8 @@
     "maintainerURL": "https://github.com/PierreGode",
     "description": "Display your upcomming show's and movies from your next-episode account.",
     "issues": [],
-    "stars": 2
+    "stars": 2,
+    "hasGithubIssues": true
   },
   {
     "name": "next-train-transilien",
@@ -7392,7 +7406,8 @@
     "maintainerURL": "https://github.com/trizome",
     "description": "Next trains / RER transilien (SNCF) Ile-de-France from a station.",
     "issues": [],
-    "stars": 0
+    "stars": 0,
+    "hasGithubIssues": true
   },
   {
     "name": "MMM-nextbike",
@@ -7402,7 +7417,8 @@
     "maintainerURL": "",
     "description": "Station monitor for the nextbike bike-sharing network.",
     "issues": [],
-    "stars": 7
+    "stars": 7,
+    "hasGithubIssues": true
   },
   {
     "name": "MMM-NextCloud-Tasks",
@@ -7412,7 +7428,8 @@
     "maintainerURL": "",
     "description": "Displays ToDo list(s) from NextCloud Tasks app.",
     "issues": [],
-    "stars": 2
+    "stars": 2,
+    "hasGithubIssues": false
   },
   {
     "name": "MMM-NextEvent",
@@ -7422,7 +7439,8 @@
     "maintainerURL": "",
     "description": "Display a count down to the next event from <a target=\"_blank\" href=\"https://github.com/MMM-CalendarExt2/MMM-CalendarExt2\">MMM-CalendarExt2</a>.",
     "issues": [],
-    "stars": 2
+    "stars": 2,
+    "hasGithubIssues": true
   },
   {
     "name": "MMM-NextTrains",
@@ -7432,7 +7450,8 @@
     "maintainerURL": "https://github.com/CptMeetKat",
     "description": "Display departures from Sydney train stations in NSW, Australia.",
     "issues": [],
-    "stars": 0
+    "stars": 0,
+    "hasGithubIssues": true
   },
   {
     "name": "MMM-NFL",
@@ -7442,7 +7461,8 @@
     "maintainerURL": "",
     "description": "Display scores of National Football League (optional voice-control).",
     "issues": [],
-    "stars": 25
+    "stars": 26,
+    "hasGithubIssues": true
   },
   {
     "name": "MMM-NFTcollections",
@@ -7452,7 +7472,8 @@
     "maintainerURL": "",
     "description": "Display details about a NFT collection.",
     "issues": [],
-    "stars": 2
+    "stars": 2,
+    "hasGithubIssues": true
   },
   {
     "name": "MMM-NHL",
@@ -7462,7 +7483,8 @@
     "maintainerURL": "",
     "description": "Display scores of National Hockey League.",
     "issues": [],
-    "stars": 9
+    "stars": 10,
+    "hasGithubIssues": true
   },
   {
     "name": "MMM-NiceHash",
@@ -7473,7 +7495,8 @@
     "description": "Display your NiceHash projected income and rigs highest temperature.",
     "issues": [],
     "outdated": "Abandoned. Repo has been archived at 2023-07-23.",
-    "stars": 0
+    "stars": 0,
+    "hasGithubIssues": true
   },
   {
     "name": "MMM-Nightscout",
@@ -7483,7 +7506,8 @@
     "maintainerURL": "",
     "description": "Keep track of blood glucose levels with ease thru your MagicMirror².",
     "issues": [],
-    "stars": 12
+    "stars": 13,
+    "hasGithubIssues": true
   },
   {
     "name": "MMM-NINA",
@@ -7493,7 +7517,8 @@
     "maintainerURL": "https://github.com/Jalibu",
     "description": "Client implementation for German NINA Warn API. Supports alerts of KatWarn, Biwapp and Mowas.",
     "issues": [],
-    "stars": 19
+    "stars": 19,
+    "hasGithubIssues": true
   },
   {
     "name": "MMM-nixie-clock",
@@ -7503,7 +7528,8 @@
     "maintainerURL": "https://github.com/Isaac-the-Man",
     "description": "Retro nixie clock display.",
     "issues": [],
-    "stars": 14
+    "stars": 15,
+    "hasGithubIssues": true
   },
   {
     "name": "MMM-Nixie-Clock",
@@ -7513,7 +7539,8 @@
     "maintainerURL": "",
     "description": "Simple virtual Nixie Clock.",
     "issues": [],
-    "stars": 7
+    "stars": 7,
+    "hasGithubIssues": true
   },
   {
     "name": "MMM-NJTransit",
@@ -7524,7 +7551,8 @@
     "description": "Real-time bus tracking for NJ Transit.",
     "issues": [],
     "outdated": "Deprecated. Old API doesn't work anymore. There is a new API, but it's not clear if keys are available. 2023-12-01.",
-    "stars": 7
+    "stars": 7,
+    "hasGithubIssues": true
   },
   {
     "name": "MMM-NL-rain-intensity",
@@ -7534,7 +7562,8 @@
     "maintainerURL": "",
     "description": "Do I need an umbrella when i go out, or shall i take my chances? Shows rainintensity for a location in the Netherlands in the next hour.",
     "issues": [],
-    "stars": 0
+    "stars": 0,
+    "hasGithubIssues": true
   },
   {
     "name": "MMM-NLDepartureTimes",
@@ -7543,8 +7572,7 @@
     "maintainer": "Travelbacon",
     "maintainerURL": "https://github.com/Travelbacon",
     "description": "Shows departure times of Dutch public transport. Where you can sort on destination and group stops in one stop. Good for hubs where multiple lines and authorities merge, so yo have one stop instead of multiple.",
-    "issues": [],
-    "stars": 0
+    "issues": []
   },
   {
     "name": "MMM-NMBS-Connection",

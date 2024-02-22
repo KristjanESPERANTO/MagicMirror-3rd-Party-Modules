@@ -1,6 +1,6 @@
 # Result of the module analysis
 
-Last update: 2024-02-22T18:57:47+01:00
+Last update: 2024-02-22T23:45:54+01:00
 
 ## Statistics
 
@@ -9,7 +9,7 @@ Last update: 2024-02-22T18:57:47+01:00
 | modules analyzed     |   1125   |
 | maintainer           |    632   |
 | modules with issues  |   1118   |
-| issues               |   7394   |
+| issues               |   7395   |
 | modules at github    |   1113   |
 | modules at gitlab    |     11   |
 | modules at bitbucket |      1   |
@@ -755,7 +755,7 @@ Last update: 2024-02-22T18:57:47+01:00
    - @stylistic/eslint-plugin             ^1.5.3  →     ^1.6.2
    - @types/express                     ^4.17.11  →   ^4.17.21
    - @types/magicmirror-module           ^2.16.0  →    ^2.16.5
-   - @types/node                       ^14.14.22  →  ^20.11.19
+   - @types/node                       ^14.14.22  →  ^20.11.20
    - @typescript-eslint/eslint-plugin    ^6.19.1  →     ^7.0.2
    - @typescript-eslint/parser           ^6.19.1  →     ^7.0.2
    - prettier                             ^3.2.4  →     ^3.2.5
@@ -2288,8 +2288,9 @@ Last update: 2024-02-22T18:57:47+01:00
 
 ### [EXT-Detector by bugsounet](https://github.com/bugsounet/EXT-Detector)
 
-1. Information: There are updates for 1 dependencie(s):
-   - esbuild  ^0.20.0  →  ^0.20.1
+1. Information: There are updates for 2 dependencie(s):
+   - @types/node  ^20.11.19  →  ^20.11.20
+   - esbuild        ^0.20.0  →    ^0.20.1
 
 
 ### [EXT-FreeboxTV by bugsounet](https://github.com/bugsounet/EXT-FreeboxTV)
@@ -6297,15 +6298,16 @@ Last update: 2024-02-22T18:57:47+01:00
 
 ### [MMM-NetworkScanner by spitzlbergerj](https://github.com/spitzlbergerj/MMM-NetworkScanner)
 
-1. Outdated: Found `MichMich/MagicMirror` in file `.travis.yml`: Replace it by `MagicMirrorOrg/MagicMirror`.
-2. Typo: Found `Magic Mirror` in file `MMM-NetworkScanner.js`: Replace it with `MagicMirror²`.
-3. Recommendation: Found `jshint` in file `gruntfile.js`: Replace "jshint" by "eslint".
-4. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
-5. Recommendation: Found `jshint` in file `node_helper.js`: Replace "jshint" by "eslint".
-6. Deprecated: Found `"grunt"` in file `package.json`: Grunt is practically unmaintained. Move on to something better.
-7. Recommendation: Found `jshint` in file `package.json`: Replace "jshint" by "eslint".
-8. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
-9. The branch name is 'master'. Consider renaming it to 'main'.
+1. Issues are not enabled in the GitHub repository. So users cannot report bugs. Please enable issues in your repo.
+2. Outdated: Found `MichMich/MagicMirror` in file `.travis.yml`: Replace it by `MagicMirrorOrg/MagicMirror`.
+3. Typo: Found `Magic Mirror` in file `MMM-NetworkScanner.js`: Replace it with `MagicMirror²`.
+4. Recommendation: Found `jshint` in file `gruntfile.js`: Replace "jshint" by "eslint".
+5. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
+6. Recommendation: Found `jshint` in file `node_helper.js`: Replace "jshint" by "eslint".
+7. Deprecated: Found `"grunt"` in file `package.json`: Grunt is practically unmaintained. Move on to something better.
+8. Recommendation: Found `jshint` in file `package.json`: Replace "jshint" by "eslint".
+9. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
+10. The branch name is 'master'. Consider renaming it to 'main'.
 
 ### [MMM-News-QR by nischi](https://github.com/nischi/MMM-News-QR)
 

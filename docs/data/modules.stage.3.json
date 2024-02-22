@@ -10259,7 +10259,8 @@
       "There is no `package.json`. We need this file to gather information about the module for the module list page."
     ],
     "outdated": "Abandoned. No reactions to issues since years. Missing instructions to install dependency 'request'.",
-    "stars": 4
+    "stars": 4,
+    "hasGithubIssues": true
   },
   {
     "name": "MMM-neoomAPI",
@@ -10271,7 +10272,8 @@
     "issues": [
       "There is no `package.json`. We need this file to gather information about the module for the module list page."
     ],
-    "stars": 1
+    "stars": 1,
+    "hasGithubIssues": true
   },
   {
     "name": "MMM-NesteBussAtB",
@@ -10285,7 +10287,8 @@
       "`package.json` issue: No license field.",
       "There are no keywords in 'package.json'. We would use them as tags on the module list page."
     ],
-    "stars": 9
+    "stars": 9,
+    "hasGithubIssues": true
   },
   {
     "name": "MMM-NestRemoteThermostat",
@@ -10296,6 +10299,7 @@
     "description": "Display a Nest Like thermostat from a remote sensor that is capable to POST values through HTTP protocol. It is designed to be generic. Useful when having Home Assistant and MagicMirror².",
     "issues": [],
     "stars": 1,
+    "hasGithubIssues": true,
     "tags": [
       "temperature",
       "nest",
@@ -10314,6 +10318,7 @@
     "description": "Display your Netatmo in/outdoor weather station data.",
     "issues": [],
     "stars": 32,
+    "hasGithubIssues": true,
     "tags": [
       "netatmo",
       "smarthome"
@@ -10330,6 +10335,7 @@
     "description": "Display live snapshot of Netatmo Presence and Welcome cameras and an events timeline of all your Netatmo Presence cameras.",
     "issues": [],
     "stars": 4,
+    "hasGithubIssues": true,
     "tags": [
       "netatmo",
       "netatmo-presence",
@@ -10351,6 +10357,7 @@
       "No image found."
     ],
     "stars": 3,
+    "hasGithubIssues": true,
     "license": "MIT"
   },
   {
@@ -10362,6 +10369,7 @@
     "description": "Display a solid wifi logo as network signal based on ping speed.",
     "issues": [],
     "stars": 36,
+    "hasGithubIssues": true,
     "tags": [
       "network"
     ],
@@ -10377,6 +10385,7 @@
     "description": "Display network connection status (ping, download speed, upload speed).",
     "issues": [],
     "stars": 31,
+    "hasGithubIssues": true,
     "tags": [
       "networkconnection",
       "network",
@@ -10393,8 +10402,11 @@
     "maintainer": "spitzlbergerj",
     "maintainerURL": "https://github.com/spitzlbergerj",
     "description": "Display the status of devices on the network based on their MAC address with nice columnview.",
-    "issues": [],
+    "issues": [
+      "Issues are not enabled in the GitHub repository. So users cannot report bugs. Please enable issues in your repo."
+    ],
     "stars": 18,
+    "hasGithubIssues": false,
     "tags": [
       "network",
       "scanner"
@@ -10412,7 +10424,8 @@
     "issues": [
       "There is no `package.json`. We need this file to gather information about the module for the module list page."
     ],
-    "stars": 10
+    "stars": 10,
+    "hasGithubIssues": true
   },
   {
     "name": "MMM-NewsAPI",
@@ -10423,6 +10436,7 @@
     "description": "Module to to get news from <a target=\"_blank\" href=\"https://newsapi.org\">newsapi.org</a>.",
     "issues": [],
     "stars": 6,
+    "hasGithubIssues": true,
     "tags": [
       "news"
     ],
@@ -10441,6 +10455,7 @@
       "There are no keywords in 'package.json'. We would use them as tags on the module list page."
     ],
     "stars": 22,
+    "hasGithubIssues": true,
     "license": "ISC",
     "image": "Screenshot (401).jpg"
   },
@@ -10453,6 +10468,7 @@
     "description": "Display your upcomming show's and movies from your next-episode account.",
     "issues": [],
     "stars": 2,
+    "hasGithubIssues": true,
     "tags": [
       "tvshows",
       "episodes",
@@ -10473,6 +10489,7 @@
       "There are no keywords in 'package.json'. We would use them as tags on the module list page."
     ],
     "stars": 0,
+    "hasGithubIssues": true,
     "license": "MIT",
     "image": "screenshot.jpg"
   },
@@ -10485,6 +10502,7 @@
     "description": "Station monitor for the nextbike bike-sharing network.",
     "issues": [],
     "stars": 7,
+    "hasGithubIssues": true,
     "tags": [
       "nextbike",
       "bike sharing"
@@ -10504,6 +10522,7 @@
       "There are no keywords in 'package.json'. We would use them as tags on the module list page."
     ],
     "stars": 2,
+    "hasGithubIssues": false,
     "license": "MIT",
     "image": "assets-demo_screenshot.jpg"
   },
@@ -10519,6 +10538,7 @@
       "There are no keywords in 'package.json'. We would use them as tags on the module list page."
     ],
     "stars": 2,
+    "hasGithubIssues": true,
     "license": "MIT",
     "image": "screenshots-screenshot1.jpg"
   },
@@ -10535,7 +10555,8 @@
       "`package.json` issue: No license field.",
       "There are no keywords in 'package.json'. We would use them as tags on the module list page."
     ],
-    "stars": 0
+    "stars": 0,
+    "hasGithubIssues": true
   },
   {
     "name": "MMM-NFL",
@@ -10545,7 +10566,8 @@
     "maintainerURL": "",
     "description": "Display scores of National Football League (optional voice-control).",
     "issues": [],
-    "stars": 25,
+    "stars": 26,
+    "hasGithubIssues": true,
     "tags": [
       "nfl"
     ],
@@ -10566,6 +10588,7 @@
       "No image found."
     ],
     "stars": 2,
+    "hasGithubIssues": true,
     "license": "ISC"
   },
   {
@@ -10576,7 +10599,8 @@
     "maintainerURL": "",
     "description": "Display scores of National Hockey League.",
     "issues": [],
-    "stars": 9,
+    "stars": 10,
+    "hasGithubIssues": true,
     "tags": [
       "nhl",
       "ice hockey"
@@ -10597,6 +10621,7 @@
     ],
     "outdated": "Abandoned. Repo has been archived at 2023-07-23.",
     "stars": 0,
+    "hasGithubIssues": true,
     "tags": [
       "crypto",
       "mining",
@@ -10616,7 +10641,8 @@
     "issues": [
       "There are no specific keywords in 'package.json'. We would use them as tags on the module list page. Add a few meaningful terms to the keywords in the package.json. Not just “magicmirror” or “module”."
     ],
-    "stars": 12,
+    "stars": 13,
+    "hasGithubIssues": true,
     "license": "MIT",
     "image": "docs-screenshot-2.jpg"
   },
@@ -10629,6 +10655,7 @@
     "description": "Client implementation for German NINA Warn API. Supports alerts of KatWarn, Biwapp and Mowas.",
     "issues": [],
     "stars": 19,
+    "hasGithubIssues": true,
     "tags": [
       "nina",
       "warning",
@@ -10648,7 +10675,8 @@
     "issues": [
       "There is no `package.json`. We need this file to gather information about the module for the module list page."
     ],
-    "stars": 14
+    "stars": 15,
+    "hasGithubIssues": true
   },
   {
     "name": "MMM-Nixie-Clock",
@@ -10660,7 +10688,8 @@
     "issues": [
       "There is no `package.json`. We need this file to gather information about the module for the module list page."
     ],
-    "stars": 7
+    "stars": 7,
+    "hasGithubIssues": true
   },
   {
     "name": "MMM-NJTransit",
@@ -10672,6 +10701,7 @@
     "issues": [],
     "outdated": "Deprecated. Old API doesn't work anymore. There is a new API, but it's not clear if keys are available. 2023-12-01.",
     "stars": 7,
+    "hasGithubIssues": true,
     "tags": [
       "public transport",
       "nj transit bus"
@@ -10689,7 +10719,8 @@
     "issues": [
       "There is no `package.json`. We need this file to gather information about the module for the module list page."
     ],
-    "stars": 0
+    "stars": 0,
+    "hasGithubIssues": true
   },
   {
     "name": "MMM-NLDepartureTimes",
@@ -10699,7 +10730,6 @@
     "maintainerURL": "https://github.com/Travelbacon",
     "description": "Shows departure times of Dutch public transport. Where you can sort on destination and group stops in one stop. Good for hubs where multiple lines and authorities merge, so yo have one stop instead of multiple.",
     "issues": [],
-    "stars": 0,
     "tags": [
       "publictransport"
     ],
@@ -14455,7 +14485,6 @@
     "issues": [],
     "stars": 60,
     "tags": [
-      "magicmirrormodule",
       "spotify",
       "music"
     ],

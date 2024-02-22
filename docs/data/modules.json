@@ -9747,6 +9747,7 @@
     "issues": 7,
     "outdated": "Abandoned. No reactions to issues since years. Missing instructions to install dependency 'request'.",
     "stars": 4,
+    "hasGithubIssues": true,
     "lastCommit": "2018-01-12T20:46:34-05:00"
   },
   {
@@ -9758,6 +9759,7 @@
     "description": "Display your photovoltaic statistics from neoom.",
     "issues": 4,
     "stars": 1,
+    "hasGithubIssues": true,
     "lastCommit": "2023-05-24T18:43:50+02:00"
   },
   {
@@ -9769,6 +9771,7 @@
     "description": "Show how many minutes until the next bus(es) goes from given bus stops.",
     "issues": 9,
     "stars": 9,
+    "hasGithubIssues": true,
     "lastCommit": "2019-09-18T22:29:41+02:00"
   },
   {
@@ -9780,6 +9783,7 @@
     "description": "Display a Nest Like thermostat from a remote sensor that is capable to POST values through HTTP protocol. It is designed to be generic. Useful when having Home Assistant and MagicMirror\u00b2.",
     "issues": 5,
     "stars": 1,
+    "hasGithubIssues": true,
     "tags": [
       "temperature",
       "nest",
@@ -9799,6 +9803,7 @@
     "description": "Display your Netatmo in/outdoor weather station data.",
     "issues": 1,
     "stars": 32,
+    "hasGithubIssues": true,
     "tags": [
       "netatmo",
       "smarthome"
@@ -9816,6 +9821,7 @@
     "description": "Display live snapshot of Netatmo Presence and Welcome cameras and an events timeline of all your Netatmo Presence cameras.",
     "issues": 11,
     "stars": 4,
+    "hasGithubIssues": true,
     "tags": [
       "netatmo",
       "netatmo-presence",
@@ -9834,6 +9840,7 @@
     "description": "Netatmo thermostat module.",
     "issues": 12,
     "stars": 3,
+    "hasGithubIssues": true,
     "license": "MIT",
     "lastCommit": "2019-03-11T16:26:54+01:00"
   },
@@ -9846,6 +9853,7 @@
     "description": "Display a solid wifi logo as network signal based on ping speed.",
     "issues": 6,
     "stars": 36,
+    "hasGithubIssues": true,
     "tags": [
       "network"
     ],
@@ -9862,6 +9870,7 @@
     "description": "Display network connection status (ping, download speed, upload speed).",
     "issues": 5,
     "stars": 31,
+    "hasGithubIssues": true,
     "tags": [
       "networkconnection",
       "network",
@@ -9879,8 +9888,9 @@
     "maintainer": "spitzlbergerj",
     "maintainerURL": "https://github.com/spitzlbergerj",
     "description": "Display the status of devices on the network based on their MAC address with nice columnview.",
-    "issues": 9,
+    "issues": 10,
     "stars": 18,
+    "hasGithubIssues": false,
     "tags": [
       "network",
       "scanner"
@@ -9898,6 +9908,7 @@
     "description": "Add a QR Code with the link to the showing Newsfeed (Default Newsfeed Module).",
     "issues": 5,
     "stars": 10,
+    "hasGithubIssues": true,
     "lastCommit": "2023-09-14T05:20:45+02:00"
   },
   {
@@ -9909,6 +9920,7 @@
     "description": "Module to to get news from <a target=\"_blank\" href=\"https://newsapi.org\">newsapi.org</a>.",
     "issues": 5,
     "stars": 6,
+    "hasGithubIssues": true,
     "tags": [
       "news"
     ],
@@ -9925,6 +9937,7 @@
     "description": "Mod of the default newsfeed module - shows the logo and scrolls the headlines and brief description across the screen like those seen on the news channels.",
     "issues": 9,
     "stars": 22,
+    "hasGithubIssues": true,
     "license": "ISC",
     "image": "Screenshot (401).jpg",
     "lastCommit": "2020-12-08T10:22:38-06:00"
@@ -9938,6 +9951,7 @@
     "description": "Display your upcomming show's and movies from your next-episode account.",
     "issues": 1,
     "stars": 2,
+    "hasGithubIssues": true,
     "tags": [
       "tvshows",
       "episodes",
@@ -9956,6 +9970,7 @@
     "description": "Next trains / RER transilien (SNCF) Ile-de-France from a station.",
     "issues": 9,
     "stars": 0,
+    "hasGithubIssues": true,
     "license": "MIT",
     "image": "screenshot.jpg",
     "lastCommit": "2020-10-14T17:41:12+02:00"
@@ -9969,6 +9984,7 @@
     "description": "Station monitor for the nextbike bike-sharing network.",
     "issues": 8,
     "stars": 7,
+    "hasGithubIssues": true,
     "tags": [
       "nextbike",
       "bike sharing"
@@ -9986,6 +10002,7 @@
     "description": "Displays ToDo list(s) from NextCloud Tasks app.",
     "issues": 9,
     "stars": 2,
+    "hasGithubIssues": false,
     "license": "MIT",
     "image": "assets-demo_screenshot.jpg",
     "lastCommit": "2022-12-19T10:59:57-05:00"
@@ -9999,6 +10016,7 @@
     "description": "Display a count down to the next event from <a target=\"_blank\" href=\"https://github.com/MMM-CalendarExt2/MMM-CalendarExt2\">MMM-CalendarExt2</a>.",
     "issues": 5,
     "stars": 2,
+    "hasGithubIssues": true,
     "license": "MIT",
     "image": "screenshots-screenshot1.jpg",
     "lastCommit": "2020-10-15T21:40:27-04:00"
@@ -10012,6 +10030,7 @@
     "description": "Display departures from Sydney train stations in NSW, Australia.",
     "issues": 11,
     "stars": 0,
+    "hasGithubIssues": true,
     "lastCommit": "2023-04-01T15:09:59+11:00"
   },
   {
@@ -10022,7 +10041,8 @@
     "maintainerURL": "",
     "description": "Display scores of National Football League (optional voice-control).",
     "issues": 12,
-    "stars": 25,
+    "stars": 26,
+    "hasGithubIssues": true,
     "tags": [
       "nfl"
     ],
@@ -10039,6 +10059,7 @@
     "description": "Display details about a NFT collection.",
     "issues": 7,
     "stars": 2,
+    "hasGithubIssues": true,
     "license": "ISC",
     "lastCommit": "2023-02-06T18:07:18+02:00"
   },
@@ -10050,7 +10071,8 @@
     "maintainerURL": "",
     "description": "Display scores of National Hockey League.",
     "issues": 11,
-    "stars": 9,
+    "stars": 10,
+    "hasGithubIssues": true,
     "tags": [
       "nhl",
       "ice hockey"
@@ -10069,6 +10091,7 @@
     "issues": 14,
     "outdated": "Abandoned. Repo has been archived at 2023-07-23.",
     "stars": 0,
+    "hasGithubIssues": true,
     "tags": [
       "crypto",
       "mining",
@@ -10087,7 +10110,8 @@
     "maintainerURL": "",
     "description": "Keep track of blood glucose levels with ease thru your MagicMirror\u00b2.",
     "issues": 6,
-    "stars": 12,
+    "stars": 13,
+    "hasGithubIssues": true,
     "license": "MIT",
     "image": "docs-screenshot-2.jpg",
     "lastCommit": "2024-01-09T23:03:51+01:00"
@@ -10101,6 +10125,7 @@
     "description": "Client implementation for German NINA Warn API. Supports alerts of KatWarn, Biwapp and Mowas.",
     "issues": 1,
     "stars": 19,
+    "hasGithubIssues": true,
     "tags": [
       "nina",
       "warning",
@@ -10119,7 +10144,8 @@
     "maintainerURL": "https://github.com/Isaac-the-Man",
     "description": "Retro nixie clock display.",
     "issues": 5,
-    "stars": 14,
+    "stars": 15,
+    "hasGithubIssues": true,
     "lastCommit": "2024-02-11T22:35:29+08:00"
   },
   {
@@ -10131,6 +10157,7 @@
     "description": "Simple virtual Nixie Clock.",
     "issues": 6,
     "stars": 7,
+    "hasGithubIssues": true,
     "lastCommit": "2020-07-29T07:45:59+01:00"
   },
   {
@@ -10143,6 +10170,7 @@
     "issues": 3,
     "outdated": "Deprecated. Old API doesn't work anymore. There is a new API, but it's not clear if keys are available. 2023-12-01.",
     "stars": 7,
+    "hasGithubIssues": true,
     "tags": [
       "public transport",
       "nj transit bus"
@@ -10160,6 +10188,7 @@
     "description": "Do I need an umbrella when i go out, or shall i take my chances? Shows rainintensity for a location in the Netherlands in the next hour.",
     "issues": 7,
     "stars": 0,
+    "hasGithubIssues": true,
     "lastCommit": "2020-06-15T23:56:53+02:00"
   },
   {
@@ -10170,7 +10199,6 @@
     "maintainerURL": "https://github.com/Travelbacon",
     "description": "Shows departure times of Dutch public transport. Where you can sort on destination and group stops in one stop. Good for hubs where multiple lines and authorities merge, so yo have one stop instead of multiple.",
     "issues": 6,
-    "stars": 0,
     "tags": [
       "publictransport"
     ],
@@ -13743,13 +13771,12 @@
     "issues": 3,
     "stars": 60,
     "tags": [
-      "magicmirrormodule",
       "spotify",
       "music"
     ],
     "license": "MIT",
     "image": "screenshots-miniature_bar.jpg",
-    "lastCommit": "2022-02-18T17:44:19+01:00"
+    "lastCommit": "2024-02-22T22:30:30+01:00"
   },
   {
     "name": "MMM-SpotifyConnectUI",
@@ -15800,7 +15827,7 @@
     ],
     "license": "MIT",
     "image": "git-normal_screenshot.jpg",
-    "lastCommit": "2024-02-21T16:17:53+01:00"
+    "lastCommit": "2024-02-22T22:15:30+01:00"
   },
   {
     "name": "MMM-WeeklySchedule",
