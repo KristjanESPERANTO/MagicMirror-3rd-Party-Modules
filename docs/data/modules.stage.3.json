@@ -1520,7 +1520,7 @@
     "issues": [
       "No image found."
     ],
-    "stars": 30,
+    "stars": 33,
     "hasGithubIssues": true,
     "tags": [
       "calendar",
@@ -1906,7 +1906,7 @@
     "issues": [
       "There is no `package.json`. We need this file to gather information about the module for the module list page."
     ],
-    "stars": 42,
+    "stars": 43,
     "hasGithubIssues": true
   },
   {
@@ -1937,7 +1937,7 @@
       "`package.json` issue: No repository field.",
       "There are no specific keywords in 'package.json'. We would use them as tags on the module list page. Add a few meaningful terms to the keywords in the package.json. Not just “magicmirror” or “module”."
     ],
-    "stars": 2,
+    "stars": 3,
     "hasGithubIssues": true,
     "license": "ISC",
     "image": "image-1.jpg"
@@ -2569,9 +2569,11 @@
     "maintainerURL": "",
     "description": "Simple display of dad jokes from icanhazdadjoke.com.",
     "issues": [
+      "Issues are not enabled in the GitHub repository. So users cannot report bugs. Please enable issues in your repo.",
       "No image found."
     ],
     "stars": 2,
+    "hasGithubIssues": false,
     "tags": [
       "jokes",
       "dad jokes"
@@ -4147,9 +4149,7 @@
     "maintainer": "bugsounet",
     "maintainerURL": "https://wiki.bugsounet.fr",
     "description": "Create a server for displaying any Lyrics and Canvas from Spotify.",
-    "issues": [
-      "No image found."
-    ],
+    "issues": [],
     "stars": 0,
     "hasGithubIssues": false,
     "tags": [
@@ -4157,7 +4157,8 @@
       "canvas",
       "lyrics"
     ],
-    "license": "MIT"
+    "license": "MIT",
+    "image": "screenshot-landscape.jpg"
   },
   {
     "name": "EXT-StreamDeck",
@@ -10179,7 +10180,8 @@
     "issues": [
       "There is no `package.json`. We need this file to gather information about the module for the module list page."
     ],
-    "stars": 1
+    "stars": 1,
+    "hasGithubIssues": true
   },
   {
     "name": "MMM-Navigate",
@@ -10192,6 +10194,7 @@
       "There are no keywords in 'package.json'. We would use them as tags on the module list page."
     ],
     "stars": 10,
+    "hasGithubIssues": true,
     "license": "MIT",
     "image": "MMM-Navigate_screenshot1.jpg"
   },
@@ -10208,7 +10211,8 @@
       "`package.json` issue: No license field.",
       "There are no keywords in 'package.json'. We would use them as tags on the module list page."
     ],
-    "stars": 6
+    "stars": 6,
+    "hasGithubIssues": true
   },
   {
     "name": "MMM-NCTtimes",
@@ -10237,6 +10241,7 @@
       "No image found."
     ],
     "stars": 4,
+    "hasGithubIssues": true,
     "tags": [
       "distance",
       "modules"

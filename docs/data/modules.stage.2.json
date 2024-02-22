@@ -1068,7 +1068,7 @@
     "maintainerURL": "",
     "description": "Extended calendar and event view.",
     "issues": [],
-    "stars": 30,
+    "stars": 33,
     "hasGithubIssues": true
   },
   {
@@ -1334,7 +1334,7 @@
     "maintainerURL": "",
     "description": "Directly cast from the MagicMirror² server to a chromecast.",
     "issues": [],
-    "stars": 42,
+    "stars": 43,
     "hasGithubIssues": true
   },
   {
@@ -1356,7 +1356,7 @@
     "maintainerURL": "",
     "description": "Display AI generated images from CivitAI.",
     "issues": [],
-    "stars": 2,
+    "stars": 3,
     "hasGithubIssues": true
   },
   {
@@ -1835,7 +1835,8 @@
     "maintainerURL": "",
     "description": "Simple display of dad jokes from icanhazdadjoke.com.",
     "issues": [],
-    "stars": 2
+    "stars": 2,
+    "hasGithubIssues": false
   },
   {
     "name": "MMM-DagelijksWoord",
@@ -7196,7 +7197,8 @@
     "maintainerURL": "https://github.com/mtatsuma",
     "description": "Displays sensor data collected by <a target=\"_blank\" href=\"https://en.nature.global\">Nature Remo</a> devices.",
     "issues": [],
-    "stars": 1
+    "stars": 1,
+    "hasGithubIssues": true
   },
   {
     "name": "MMM-Navigate",
@@ -7206,7 +7208,8 @@
     "maintainerURL": "",
     "description": "Connect a rotary encoder to MagicMirror² and use it for navigation inside of MagicMirror².",
     "issues": [],
-    "stars": 10
+    "stars": 10,
+    "hasGithubIssues": true
   },
   {
     "name": "MMM-NBA",
@@ -7216,7 +7219,8 @@
     "maintainerURL": "https://github.com/jupadin",
     "description": "Display scores of National Basketball Association.",
     "issues": [],
-    "stars": 6
+    "stars": 6,
+    "hasGithubIssues": true
   },
   {
     "name": "MMM-NCTtimes",
@@ -7236,7 +7240,8 @@
     "maintainerURL": "",
     "description": "Uses HC-SR04 sensors to measure distance and display compliments if USER_PRESENCE is detected by MMM-PIR-Sensor and user is near the MagicMirror².",
     "issues": [],
-    "stars": 4
+    "stars": 4,
+    "hasGithubIssues": true
   },
   {
     "name": "MMM-NEO",

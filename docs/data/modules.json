@@ -1453,7 +1453,7 @@
     "maintainerURL": "",
     "description": "Extended calendar and event view.",
     "issues": 3,
-    "stars": 30,
+    "stars": 33,
     "hasGithubIssues": true,
     "tags": [
       "calendar",
@@ -1818,7 +1818,7 @@
     "maintainerURL": "",
     "description": "Directly cast from the MagicMirror\u00b2 server to a chromecast.",
     "issues": 8,
-    "stars": 42,
+    "stars": 43,
     "hasGithubIssues": true,
     "lastCommit": "2023-03-05T20:51:52+01:00"
   },
@@ -1844,7 +1844,7 @@
     "maintainerURL": "",
     "description": "Display AI generated images from CivitAI.",
     "issues": 6,
-    "stars": 2,
+    "stars": 3,
     "hasGithubIssues": true,
     "license": "ISC",
     "image": "image-1.jpg",
@@ -2440,8 +2440,9 @@
     "maintainer": "brucetony",
     "maintainerURL": "",
     "description": "Simple display of dad jokes from icanhazdadjoke.com.",
-    "issues": 4,
+    "issues": 5,
     "stars": 2,
+    "hasGithubIssues": false,
     "tags": [
       "jokes",
       "dad jokes"
@@ -3959,7 +3960,7 @@
     "maintainer": "bugsounet",
     "maintainerURL": "https://wiki.bugsounet.fr",
     "description": "Create a server for displaying any Lyrics and Canvas from Spotify. This module have been defined to work only with MMM-GoogleAssistant.",
-    "issues": 2,
+    "issues": 1,
     "stars": 0,
     "hasGithubIssues": false,
     "tags": [
@@ -3968,7 +3969,8 @@
       "lyrics"
     ],
     "license": "MIT",
-    "lastCommit": "2024-02-21T19:12:46+01:00"
+    "image": "screenshot-landscape.jpg",
+    "lastCommit": "2024-02-22T18:17:21+01:00"
   },
   {
     "name": "EXT-StreamDeck",
@@ -4597,7 +4599,7 @@
     ],
     "license": "MIT",
     "image": "data-flights_mapbox.jpg",
-    "lastCommit": "2024-02-18T14:09:37+01:00"
+    "lastCommit": "2024-02-19T16:17:11+01:00"
   },
   {
     "name": "MMM-FlightsAbove",
@@ -5957,7 +5959,7 @@
     "hasGithubIssues": true,
     "license": "ISC",
     "image": "screenshots-1.jpg",
-    "lastCommit": "2021-09-18T01:44:14+02:00"
+    "lastCommit": "2024-02-22T13:57:56+01:00"
   },
   {
     "name": "MMM-HomeAssistantDisplay",
@@ -9672,6 +9674,7 @@
     "description": "Displays sensor data collected by <a target=\"_blank\" href=\"https://en.nature.global\">Nature Remo</a> devices.",
     "issues": 4,
     "stars": 1,
+    "hasGithubIssues": true,
     "lastCommit": "2020-11-29T00:03:26+09:00"
   },
   {
@@ -9683,6 +9686,7 @@
     "description": "Connect a rotary encoder to MagicMirror\u00b2 and use it for navigation inside of MagicMirror\u00b2.",
     "issues": 5,
     "stars": 10,
+    "hasGithubIssues": true,
     "license": "MIT",
     "image": "MMM-Navigate_screenshot1.jpg",
     "lastCommit": "2023-05-02T21:02:39+02:00"
@@ -9696,6 +9700,7 @@
     "description": "Display scores of National Basketball Association.",
     "issues": 11,
     "stars": 6,
+    "hasGithubIssues": true,
     "lastCommit": "2021-10-25T00:46:38+02:00"
   },
   {
@@ -9724,6 +9729,7 @@
     "description": "Uses HC-SR04 sensors to measure distance and display compliments if USER_PRESENCE is detected by MMM-PIR-Sensor and user is near the MagicMirror\u00b2.",
     "issues": 8,
     "stars": 4,
+    "hasGithubIssues": true,
     "tags": [
       "distance",
       "modules"
@@ -12464,7 +12470,7 @@
     "stars": 0,
     "license": "MIT",
     "image": "screenshot.jpg",
-    "lastCommit": "2024-01-11T09:30:57-06:00"
+    "lastCommit": "2024-02-22T06:58:53-06:00"
   },
   {
     "name": "MMM-RKI-Covid19",
@@ -12683,7 +12689,7 @@
     ],
     "license": "MIT",
     "image": "images-screenshot-2.jpg",
-    "lastCommit": "2024-02-21T19:33:41+02:00"
+    "lastCommit": "2024-02-22T17:02:21+02:00"
   },
   {
     "name": "MMM-Russianwarship",
