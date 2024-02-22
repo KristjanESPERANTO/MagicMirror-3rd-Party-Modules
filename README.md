@@ -92,7 +92,7 @@ _Note_: This script takes a long time (> 10 min) to download all modules and als
 
 This script expands the module list with information from the `package.json` files from the modules (if available).
 
-The script also adds an image. To do this, it searches the module's repo for an image that begins with "screenshot" or "example". If it doesn't find anything like that, it takes the first image it finds in the repo.
+The script also adds an image. To do this, it searches the module's repo for an image that contains "screenshot" or "example" in it's name. If it doesn't find anything like that, it takes the first image it finds in the repo.
 
 _Note_: Images will only be included if a free license is specified in the `package.json`.
 
