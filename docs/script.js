@@ -8,6 +8,7 @@ const tagButtonContainer = document.getElementById("tag-buttons");
 const sortDropdown = document.getElementById("sort-dropdown");
 const showOutdated = document.getElementById("show-outdated");
 const darkMode = document.getElementById("dark-mode");
+
 const tagsList = [
   "calendar",
   "news",
@@ -340,31 +341,30 @@ async function initiate () {
   }
 }
 
-
-function DarkMode(){
+// eslint-disable-next-line no-unused-vars
+function switchDarkMode () {
   const header = document.getElementsByTagName("header")[0];
   const body = document.getElementsByTagName("body")[0];
-  const reset_button = document.getElementById("reset-button");
-  const sort_button = document.getElementById("sort-dropdown");
-  if(darkMode.checked){
-    //console.log("enabled");
-    header.style. backgroundColor = "#222";
-    header.style.color = "#e9e9e9"
+  const root = document.querySelector(":root");
+  const sortButton = document.getElementById("sort-dropdown");
+  if (darkMode.checked) {
+    header.style.backgroundColor = "#222";
+    header.style.color = "#e9e9e9";
     body.style.backgroundColor = "#222";
-    sort_button.style.color = "#ddd";
-    sort_button.style.backgroundColor = "#555";
-    reset_button.style.color = "#ddd";
-    reset_button.style.backgroundColor  = "#555";
-  }
-  else{
-    //console.log("disbaled");
-    header.style. backgroundColor = "#e9e9e9";
+    sortButton.style.color = "#ddd";
+    sortButton.style.backgroundColor = "#555";
+    resetButton.style.color = "#ddd";
+    resetButton.style.backgroundColor = "#555";
+    root.style.setProperty("--color-card-background", "#ddd");
+  } else {
+    header.style.backgroundColor = "#e9e9e9";
     header.style.color = "#222";
     body.style.backgroundColor = "#e9e9e9";
-    sort_button.style.color = "#555";
-    sort_button.style.backgroundColor = "#ddd";
-    reset_button.style.color = "#555";
-    reset_button.style.backgroundColor  = "#ddd";
+    sortButton.style.color = "#555";
+    sortButton.style.backgroundColor = "#ddd";
+    resetButton.style.color = "#555";
+    resetButton.style.backgroundColor = "#ddd";
+    root.style.setProperty("--color-card-background", "#fff");
   }
 }
 

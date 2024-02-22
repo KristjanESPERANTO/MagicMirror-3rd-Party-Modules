@@ -35,7 +35,7 @@ const config = [
       // Until now this rule doesn't run in flat config
       "import/namespace": "off",
       "max-depth": ["warn", 5],
-      "max-lines": ["warn", 350],
+      "max-lines": ["warn", 400],
       "max-lines-per-function": ["warn", 150],
       "max-statements": "off",
       "no-await-in-loop": "off",
