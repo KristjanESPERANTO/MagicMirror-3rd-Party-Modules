@@ -3476,11 +3476,12 @@
     "stars": 1,
     "hasGithubIssues": true,
     "tags": [
-      "eskomsepush"
+      "eskomsepush",
+      "smarthome"
     ],
     "license": "ISC",
     "image": "images-image-1.jpg",
-    "lastCommit": "2023-11-29T16:58:17+02:00"
+    "lastCommit": "2024-02-23T19:55:33+02:00"
   },
   {
     "name": "MMM-eswordoftheday",
@@ -5604,11 +5605,12 @@
     "stars": 2,
     "hasGithubIssues": true,
     "tags": [
-      "growatt"
+      "growatt",
+      "smarthome"
     ],
     "license": "ISC",
     "image": "images-screenshot.jpg",
-    "lastCommit": "2024-01-27T17:09:53+02:00"
+    "lastCommit": "2024-02-23T19:54:27+02:00"
   },
   {
     "name": "MMM-Growatt",
@@ -5634,11 +5636,12 @@
     "stars": 1,
     "hasGithubIssues": true,
     "tags": [
-      "growatt"
+      "growatt",
+      "smarthome"
     ],
     "license": "MIT",
     "image": "images-screenshot.jpg",
-    "lastCommit": "2024-01-27T17:12:41+02:00"
+    "lastCommit": "2024-02-23T19:53:26+02:00"
   },
   {
     "name": "MMM-GyeonggiBus",
@@ -6541,6 +6544,7 @@
     "maintainerURL": "",
     "description": "Load the images from a users Instagram feed. The images are displayed on the mirror and animated. API key required.",
     "issues": 9,
+    "outdated": "Deprecated. Doesn't work anymore. Checkout issue 17.",
     "stars": 39,
     "hasGithubIssues": true,
     "tags": [
@@ -10199,6 +10203,8 @@
     "maintainerURL": "https://github.com/Travelbacon",
     "description": "Shows departure times of Dutch public transport. Where you can sort on destination and group stops in one stop. Good for hubs where multiple lines and authorities merge, so yo have one stop instead of multiple.",
     "issues": 6,
+    "stars": 1,
+    "hasGithubIssues": true,
     "tags": [
       "publictransport"
     ],
@@ -10215,6 +10221,7 @@
     "description": "Display upcoming trains between 2 NMBS/SNCB stations (Belgium).",
     "issues": 4,
     "stars": 1,
+    "hasGithubIssues": true,
     "tags": [
       "nmbs",
       "public transport",
@@ -13874,11 +13881,16 @@
     "maintainer": "bendardenne",
     "maintainerURL": "",
     "description": "STIB waiting times. Re-write of danito's MMM-stib, using the official STIB API and no XML parsing.",
-    "issues": 7,
+    "issues": 6,
     "stars": 2,
+    "tags": [
+      "stib",
+      "brussels",
+      "public transport"
+    ],
     "license": "MIT",
     "image": "img-screenshot.jpg",
-    "lastCommit": "2024-02-20T09:53:23+01:00"
+    "lastCommit": "2024-02-23T12:21:29+01:00"
   },
   {
     "name": "MMM-Stock",
@@ -15827,7 +15839,7 @@
     ],
     "license": "MIT",
     "image": "git-normal_screenshot.jpg",
-    "lastCommit": "2024-02-22T22:15:30+01:00"
+    "lastCommit": "2024-02-23T15:09:22+01:00"
   },
   {
     "name": "MMM-WeeklySchedule",

@@ -3651,7 +3651,8 @@
     "stars": 1,
     "hasGithubIssues": true,
     "tags": [
-      "eskomsepush"
+      "eskomsepush",
+      "smarthome"
     ],
     "license": "ISC",
     "image": "images-image-1.jpg"
@@ -5864,7 +5865,8 @@
     "stars": 2,
     "hasGithubIssues": true,
     "tags": [
-      "growatt"
+      "growatt",
+      "smarthome"
     ],
     "license": "ISC",
     "image": "images-screenshot.jpg"
@@ -5897,7 +5899,8 @@
     "stars": 1,
     "hasGithubIssues": true,
     "tags": [
-      "growatt"
+      "growatt",
+      "smarthome"
     ],
     "license": "MIT",
     "image": "images-screenshot.jpg"
@@ -6851,6 +6854,7 @@
     "issues": [
       "No image found."
     ],
+    "outdated": "Deprecated. Doesn't work anymore. Checkout issue 17.",
     "stars": 39,
     "hasGithubIssues": true,
     "tags": [
@@ -10730,6 +10734,8 @@
     "maintainerURL": "https://github.com/Travelbacon",
     "description": "Shows departure times of Dutch public transport. Where you can sort on destination and group stops in one stop. Good for hubs where multiple lines and authorities merge, so yo have one stop instead of multiple.",
     "issues": [],
+    "stars": 1,
+    "hasGithubIssues": true,
     "tags": [
       "publictransport"
     ],
@@ -10745,6 +10751,7 @@
     "description": "Display upcoming trains between 2 NMBS/SNCB stations (Belgium).",
     "issues": [],
     "stars": 1,
+    "hasGithubIssues": true,
     "tags": [
       "nmbs",
       "public transport",
@@ -10765,7 +10772,6 @@
       "There are no specific keywords in 'package.json'. We would use them as tags on the module list page. Add a few meaningful terms to the keywords in the package.json. Not just “magicmirror” or “module”."
     ],
     "outdated": "Abandoned. No reactions to issues and PRs since years.",
-    "stars": 1,
     "license": "ISC",
     "image": "examples-1.jpg"
   },
@@ -14592,10 +14598,13 @@
     "maintainer": "bendardenne",
     "maintainerURL": "",
     "description": "STIB waiting times. Re-write of danito's MMM-stib, using the official STIB API and no XML parsing.",
-    "issues": [
-      "There are no keywords in 'package.json'. We would use them as tags on the module list page."
-    ],
+    "issues": [],
     "stars": 2,
+    "tags": [
+      "stib",
+      "brussels",
+      "public transport"
+    ],
     "license": "MIT",
     "image": "img-screenshot.jpg"
   },

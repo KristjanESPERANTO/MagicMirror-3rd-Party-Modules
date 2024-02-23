@@ -1,6 +1,6 @@
 # Result of the module analysis
 
-Last update: 2024-02-22T23:45:54+01:00
+Last update: 2024-02-23T19:22:50+01:00
 
 ## Statistics
 
@@ -4054,6 +4054,7 @@ Last update: 2024-02-22T23:45:54+01:00
 
 ### [MMM-Instagram by kapsolas](https://github.com/kapsolas/MMM-Instagram)
 
+0. This module is outdated: Deprecated. Doesn't work anymore. Checkout issue 17.
 1. No image found.
 2. Typo: Found `Magic Mirror` in file `MMM-Instagram.js`: Replace it with `MagicMirror²`.
 3. Typo: Found `MagicMirror2` in file `README.md`: Replace it with `MagicMirror²`.
@@ -9091,13 +9092,12 @@ Last update: 2024-02-22T23:45:54+01:00
 
 ### [MMM-stib2 by bendardenne](https://github.com/bendardenne/MMM-stib2)
 
-1. There are no keywords in 'package.json'. We would use them as tags on the module list page.
-2. Recommendation: Found `jshint` in file `Gruntfile.js`: Replace "jshint" by "eslint".
-3. Recommendation: Found `new Date()` in file `MMM-stib2.js`: Replace it by `new Date(Date.now())`: [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
-4. Outdated: Found `MichMich/MagicMirror` in file `README.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
-5. Deprecated: Found `"grunt"` in file `package.json`: Grunt is practically unmaintained. Move on to something better.
-6. Recommendation: Replace eslintrc by new flat config.
-7. The branch name is 'master'. Consider renaming it to 'main'.
+1. Recommendation: Found `jshint` in file `Gruntfile.js`: Replace "jshint" by "eslint".
+2. Recommendation: Found `new Date()` in file `MMM-stib2.js`: Replace it by `new Date(Date.now())`: [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
+3. Outdated: Found `MichMich/MagicMirror` in file `README.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
+4. Deprecated: Found `"grunt"` in file `package.json`: Grunt is practically unmaintained. Move on to something better.
+5. Recommendation: Replace eslintrc by new flat config.
+6. The branch name is 'master'. Consider renaming it to 'main'.
 
 ### [MMM-Stock by hakanmhmd](https://github.com/hakanmhmd/MMM-Stock)
 

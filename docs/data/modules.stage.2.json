@@ -4852,6 +4852,7 @@
     "maintainerURL": "",
     "description": "Load the images from a users Instagram feed. The images are displayed on the mirror and animated. API key required.",
     "issues": [],
+    "outdated": "Deprecated. Doesn't work anymore. Checkout issue 17.",
     "stars": 39,
     "hasGithubIssues": true
   },
@@ -7572,7 +7573,9 @@
     "maintainer": "Travelbacon",
     "maintainerURL": "https://github.com/Travelbacon",
     "description": "Shows departure times of Dutch public transport. Where you can sort on destination and group stops in one stop. Good for hubs where multiple lines and authorities merge, so yo have one stop instead of multiple.",
-    "issues": []
+    "issues": [],
+    "stars": 1,
+    "hasGithubIssues": true
   },
   {
     "name": "MMM-NMBS-Connection",
@@ -7582,7 +7585,8 @@
     "maintainerURL": "",
     "description": "Display upcoming trains between 2 NMBS/SNCB stations (Belgium).",
     "issues": [],
-    "stars": 1
+    "stars": 1,
+    "hasGithubIssues": true
   },
   {
     "name": "MMM-NOAA3",
@@ -7592,8 +7596,7 @@
     "maintainerURL": "https://github.com/cowboysdude",
     "description": "Different providers for users to choose from. Shows current plus 3 day forecast. Mouseover shows forecast, with Air, UV, Humidity, Sunrise and Set.",
     "issues": [],
-    "outdated": "Abandoned. No reactions to issues and PRs since years.",
-    "stars": 1
+    "outdated": "Abandoned. No reactions to issues and PRs since years."
   },
   {
     "name": "MMM-NOAATides",
