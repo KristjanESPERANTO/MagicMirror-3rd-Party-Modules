@@ -247,7 +247,7 @@ main {
 
 .maintainer:hover {
   background-color: #9995;
-  cursor: alias;
+  cursor: pointer;
 }
 
 .description {
@@ -262,6 +262,7 @@ main {
 }
 
 .img-container > img {
+  cursor: pointer;
   display: block;
   margin-left: auto;
   margin-right: auto;
