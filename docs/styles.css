@@ -458,11 +458,11 @@ main {
   background-color: #ef9531 !important;
 }
 
-[data-tag="soccer"].tag-button::before {
-  content: "⚽";
+[data-tag="sport"].tag-button::before {
+  content: "🏀";
 }
 
-[data-tag="soccer"] {
+[data-tag="sport"] {
   color: #01041f !important;
   background-color: #737ef7 !important;
 }

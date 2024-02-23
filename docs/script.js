@@ -15,7 +15,7 @@ const tagsList = [
   "motion detection",
   "public transport",
   "smarthome",
-  "soccer",
+  "sport",
   "stock",
   "text-to-speech",
   "traffic",
