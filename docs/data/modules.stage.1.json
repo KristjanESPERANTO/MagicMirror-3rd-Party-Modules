@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "2024-02-23T18:12:27.541Z",
+  "lastUpdate": "2024-02-25T11:36:00.821Z",
   "modules": [
     {
       "name": "MMM-01ZM",
@@ -1265,12 +1265,22 @@
     },
     {
       "name": "MMM-CountDown",
+      "url": "https://github.com/daterrell/MMM-CountDown",
+      "id": "daterrell/MMM-CountDown",
+      "maintainer": "daterrell",
+      "maintainerURL": "",
+      "description": "Count down to or up from a datetime .",
+      "issues": []
+    },
+    {
+      "name": "MMM-CountDown",
       "url": "https://github.com/boazarad/MMM-CountDown",
       "id": "boazarad/MMM-CountDown",
       "maintainer": "boazarad",
       "maintainerURL": "",
       "description": "Display a count down to a date/event.",
-      "issues": []
+      "issues": [],
+      "outdated": "Abandoned. No reactions to issues since years. Seems not to work anymore. Try MMM-CountDown by daterrell instead."
     },
     {
       "name": "MMM-CountEvents",
@@ -5041,9 +5051,9 @@
     },
     {
       "name": "mm-tkl-timetable",
-      "url": "https://github.com/JurnetFIN/mm-tkl-timetable",
-      "id": "JurnetFIN/mm-tkl-timetable",
-      "maintainer": "JurnetFIN",
+      "url": "https://github.com/eerotal/mm-tkl-timetable",
+      "id": "eerotal/mm-tkl-timetable",
+      "maintainer": "eerotal",
       "maintainerURL": "",
       "description": "Display departures for public transport in Tampere region - Finland.",
       "issues": []
@@ -6365,6 +6375,15 @@
       "maintainer": "btastic",
       "maintainerURL": "https://github.com/btastic",
       "description": "Octoprint API integration.",
+      "issues": []
+    },
+    {
+      "name": "MMM-OddEven",
+      "url": "https://github.com/daterrell/MMM-OddEven",
+      "id": "daterrell/MMM-OddEven",
+      "maintainer": "daterrell",
+      "maintainerURL": "",
+      "description": "Shows something on odd, even, or both, days.",
       "issues": []
     },
     {
@@ -8493,15 +8512,6 @@
       "maintainer": "tbouron",
       "maintainerURL": "https://github.com/tbouron",
       "description": "Module that displays playing tracks on your Sonos network.",
-      "issues": []
-    },
-    {
-      "name": "MMM-Sonos",
-      "url": "https://github.com/Snille/MMM-Sonos",
-      "id": "Snille/MMM-Sonos",
-      "maintainer": "Snille",
-      "maintainerURL": "https://github.com/Snille",
-      "description": "A fork of CFenners module with new features. It's used to display informations about the currently playing songs on your Sonos system.",
       "issues": []
     },
     {

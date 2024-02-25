@@ -1540,12 +1540,24 @@
   },
   {
     "name": "MMM-CountDown",
+    "url": "https://github.com/daterrell/MMM-CountDown",
+    "id": "daterrell/MMM-CountDown",
+    "maintainer": "daterrell",
+    "maintainerURL": "",
+    "description": "Count down to or up from a datetime .",
+    "issues": [],
+    "stars": 1,
+    "hasGithubIssues": true
+  },
+  {
+    "name": "MMM-CountDown",
     "url": "https://github.com/boazarad/MMM-CountDown",
     "id": "boazarad/MMM-CountDown",
     "maintainer": "boazarad",
     "maintainerURL": "",
     "description": "Display a count down to a date/event.",
     "issues": [],
+    "outdated": "Abandoned. No reactions to issues since years. Seems not to work anymore. Try MMM-CountDown by daterrell instead.",
     "stars": 35,
     "hasGithubIssues": true
   },
@@ -2038,7 +2050,7 @@
     "maintainerURL": "",
     "description": "Shows the date without a clock (if you have one in another place).",
     "issues": [],
-    "stars": 4,
+    "stars": 5,
     "hasGithubIssues": true
   },
   {
@@ -2148,7 +2160,7 @@
     "maintainerURL": "",
     "description": "modified defult clock showing only the digital part.",
     "issues": [],
-    "stars": 6,
+    "stars": 7,
     "hasGithubIssues": true
   },
   {
@@ -2159,7 +2171,7 @@
     "maintainerURL": "",
     "description": "A vintage-style Digital Alarm Clock integrating MMM-DigClock and MMM-AlarmClock.",
     "issues": [],
-    "stars": 3,
+    "stars": 4,
     "hasGithubIssues": true
   },
   {
@@ -5505,9 +5517,7 @@
     "maintainer": "Fabrizz",
     "maintainerURL": "https://github.com/Fabrizz",
     "description": "Show the lyrics of your current Spotify track. Connects to <a target=\"_blank\" href=\"https://github.com/Fabrizz/MMM-OnSpotify\">MMM-OnSpotify</a>, customizable everything!",
-    "issues": [],
-    "stars": 6,
-    "hasGithubIssues": true
+    "issues": []
   },
   {
     "name": "MMM-LKY-TIC",
@@ -6143,9 +6153,9 @@
   },
   {
     "name": "mm-tkl-timetable",
-    "url": "https://github.com/JurnetFIN/mm-tkl-timetable",
-    "id": "JurnetFIN/mm-tkl-timetable",
-    "maintainer": "JurnetFIN",
+    "url": "https://github.com/eerotal/mm-tkl-timetable",
+    "id": "eerotal/mm-tkl-timetable",
+    "maintainer": "eerotal",
     "maintainerURL": "",
     "description": "Display departures for public transport in Tampere region - Finland.",
     "issues": [],
@@ -7596,7 +7606,9 @@
     "maintainerURL": "https://github.com/cowboysdude",
     "description": "Different providers for users to choose from. Shows current plus 3 day forecast. Mouseover shows forecast, with Air, UV, Humidity, Sunrise and Set.",
     "issues": [],
-    "outdated": "Abandoned. No reactions to issues and PRs since years."
+    "outdated": "Abandoned. No reactions to issues and PRs since years.",
+    "stars": 1,
+    "hasGithubIssues": true
   },
   {
     "name": "MMM-NOAATides",
@@ -7606,7 +7618,8 @@
     "maintainerURL": "https://github.com/crice009",
     "description": "Graph daily low and high tide predictions for a given NOAA tide station, and measured data as it is reported. Data is pulled from <a target=\"_blank\" href=\"https://tidesandcurrents.noaa.gov/map/index.html\">NOAA-tidesandcurrents</a>. Data is a free service - no API key.",
     "issues": [],
-    "stars": 3
+    "stars": 3,
+    "hasGithubIssues": true
   },
   {
     "name": "MMM-NoteTaker",
@@ -7616,7 +7629,8 @@
     "maintainerURL": "",
     "description": "Display your notes stored by Alexa skill <a target=\"_blank\" href=\"https://github.com/joanaz/AS-NoteTaker\">Note Taker</a>.",
     "issues": [],
-    "stars": 9
+    "stars": 9,
+    "hasGithubIssues": true
   },
   {
     "name": "MMM-NotificationTrigger",
@@ -7626,7 +7640,8 @@
     "maintainerURL": "",
     "description": "MMM-NotificationTrigger is a simple notification relay which can convert notifications from TRIGGER_NOTIFICATION to FIRE_NOTIFICATION.",
     "issues": [],
-    "stars": 18
+    "stars": 18,
+    "hasGithubIssues": true
   },
   {
     "name": "MMM-Notion",
@@ -7636,7 +7651,8 @@
     "maintainerURL": "https://github.com/choffmann",
     "description": "Display your Notion database.",
     "issues": [],
-    "stars": 4
+    "stars": 5,
+    "hasGithubIssues": true
   },
   {
     "name": "MMM-NowPlayingOnAIMP",
@@ -7647,7 +7663,8 @@
     "description": "Display the song you are currently listening to on AIMP.",
     "issues": [],
     "outdated": "Abandoned. Repo has been archived at 2024-01-22.",
-    "stars": 0
+    "stars": 1,
+    "hasGithubIssues": true
   },
   {
     "name": "MMM-NowPlayingOnSpotify",
@@ -7658,7 +7675,8 @@
     "description": "Display the song you are currently listening to on Spotify.",
     "issues": [],
     "outdated": "Abandoned. No reactions to issues since years. Depends on deprecated modules. MMM-OnSpotify is an alternative.",
-    "stars": 204
+    "stars": 204,
+    "hasGithubIssues": true
   },
   {
     "name": "MMM-NsInfo",
@@ -7668,7 +7686,8 @@
     "maintainerURL": "",
     "description": "Shows Dutch train departures from the NS (Dutch railways), based on a configurable train station.",
     "issues": [],
-    "stars": 1
+    "stars": 1,
+    "hasGithubIssues": true
   },
   {
     "name": "MMM-nstreinen",
@@ -7678,7 +7697,8 @@
     "maintainerURL": "",
     "description": "Shows information on trains departuring a configurable Dutch trainstation.",
     "issues": [],
-    "stars": 11
+    "stars": 11,
+    "hasGithubIssues": true
   },
   {
     "name": "MMM-nyc-transit",
@@ -7688,7 +7708,8 @@
     "maintainerURL": "https://github.com/elaniobro",
     "description": "Real-time MTA subway countdown clock for stations you choose. Configurable for marquee and or list view.",
     "issues": [],
-    "stars": 15
+    "stars": 15,
+    "hasGithubIssues": true
   },
   {
     "name": "MMM-ObjectBlocks",
@@ -7698,7 +7719,8 @@
     "maintainerURL": "",
     "description": "Module to talk to Arduino two-way via web-socket and ObjectBlocks platform.",
     "issues": [],
-    "stars": 0
+    "stars": 0,
+    "hasGithubIssues": true
   },
   {
     "name": "MMM-OClock",
@@ -7709,7 +7731,8 @@
     "description": "O-clock inspired by PolarClock Screensaver.",
     "issues": [],
     "outdated": "Abandoned. Repo has been archived at 2020-06-10.",
-    "stars": 15
+    "stars": 15,
+    "hasGithubIssues": true
   },
   {
     "name": "octomirror-module",
@@ -7719,7 +7742,8 @@
     "maintainerURL": "",
     "description": "View &amp; Control an OctoPrint 3d Printer Server Instance.",
     "issues": [],
-    "stars": 27
+    "stars": 27,
+    "hasGithubIssues": true
   },
   {
     "name": "MMM-OctoMon",
@@ -7729,7 +7753,8 @@
     "maintainerURL": "",
     "description": "Displays energy usage history for your Octopus Energy account.",
     "issues": [],
-    "stars": 4
+    "stars": 4,
+    "hasGithubIssues": true
   },
   {
     "name": "MMM-octoprint",
@@ -7739,7 +7764,19 @@
     "maintainerURL": "https://github.com/btastic",
     "description": "Octoprint API integration.",
     "issues": [],
-    "stars": 3
+    "stars": 3,
+    "hasGithubIssues": true
+  },
+  {
+    "name": "MMM-OddEven",
+    "url": "https://github.com/daterrell/MMM-OddEven",
+    "id": "daterrell/MMM-OddEven",
+    "maintainer": "daterrell",
+    "maintainerURL": "",
+    "description": "Shows something on odd, even, or both, days.",
+    "issues": [],
+    "stars": 1,
+    "hasGithubIssues": true
   },
   {
     "name": "MMM-oebb-station-board",
@@ -7749,7 +7786,8 @@
     "maintainerURL": "",
     "description": "Shows trains and other public transports for a configured ÖBB-Station.",
     "issues": [],
-    "stars": 5
+    "stars": 5,
+    "hasGithubIssues": true
   },
   {
     "name": "MMM-Oelpreise",
@@ -7759,7 +7797,8 @@
     "maintainerURL": "https://github.com/eckonator",
     "description": "The module displays oil prices for the current year based on Chart.js and the API of heizoel24.de.",
     "issues": [],
-    "stars": 0
+    "stars": 1,
+    "hasGithubIssues": true
   },
   {
     "name": "MMM-OlympicGames",
@@ -7769,7 +7808,8 @@
     "maintainerURL": "",
     "description": "Displays the medals for olympic games.",
     "issues": [],
-    "stars": 3
+    "stars": 3,
+    "hasGithubIssues": true
   },
   {
     "name": "on-this-day",
@@ -7779,7 +7819,8 @@
     "maintainerURL": "",
     "description": "Make mirrors great again (?): a daily historical fact.",
     "issues": [],
-    "stars": 20
+    "stars": 20,
+    "hasGithubIssues": true
   },
   {
     "name": "MMM-OneBusAway",
@@ -7789,7 +7830,8 @@
     "maintainerURL": "",
     "description": "Shows ETA for buses for a given stop using OneBusAway API.",
     "issues": [],
-    "stars": 2
+    "stars": 2,
+    "hasGithubIssues": true
   },
   {
     "name": "MMM-OneCallWeather",
@@ -7799,7 +7841,8 @@
     "maintainerURL": "",
     "description": "Display current and forecast weather based on the Openweathermap OneCall API data with alternative formatting.",
     "issues": [],
-    "stars": 1
+    "stars": 2,
+    "hasGithubIssues": true
   },
   {
     "name": "MMM-OneDrive",
@@ -7809,7 +7852,8 @@
     "maintainerURL": "https://github.com/hermanho",
     "description": "Display your photos from Microsoft OneDrive.",
     "issues": [],
-    "stars": 3
+    "stars": 3,
+    "hasGithubIssues": true
   },
   {
     "name": "MMM-OneTouchReveal",
@@ -7819,7 +7863,8 @@
     "maintainerURL": "",
     "description": "Keep track of blood glucose levels measured with your LifeScan OneTouch Glucose Meter.",
     "issues": [],
-    "stars": 0
+    "stars": 0,
+    "hasGithubIssues": true
   },
   {
     "name": "MMM-OneTracker",
@@ -7829,7 +7874,8 @@
     "maintainerURL": "",
     "description": "Use OneTracker app to deliveries/packages by forwarding from any email address.",
     "issues": [],
-    "stars": 15
+    "stars": 15,
+    "hasGithubIssues": true
   },
   {
     "name": "MMM-Online-State",
@@ -7839,7 +7885,8 @@
     "maintainerURL": "https://github.com/Legion2",
     "description": "Displays the network connection availability of the browser.",
     "issues": [],
-    "stars": 2
+    "stars": 2,
+    "hasGithubIssues": true
   },
   {
     "name": "MMM-OnlineImagesViewer",
@@ -7849,7 +7896,8 @@
     "maintainerURL": "https://github.com/NicholasRasi",
     "description": "Displays images from online URLs, useful for showing images from webcams.",
     "issues": [],
-    "stars": 0
+    "stars": 0,
+    "hasGithubIssues": true
   },
   {
     "name": "MMM-OnScreenMenu",
@@ -7859,7 +7907,8 @@
     "maintainerURL": "",
     "description": "Simple On-Screen Menu for controlling the MagicMirror².",
     "issues": [],
-    "stars": 60
+    "stars": 60,
+    "hasGithubIssues": true
   },
   {
     "name": "MMM-OnSpotify",
@@ -7869,7 +7918,8 @@
     "maintainerURL": "https://github.com/Fabrizz",
     "description": "Highly customizable module that displays what you are listening to in Spotify. Works with <a target=\"_blank\" href=\"https://github.com/Fabrizz/MMM-LiveLyrics\">MMM-LiveLyrics</a> and allows theming other modules!",
     "issues": [],
-    "stars": 35
+    "stars": 38,
+    "hasGithubIssues": true
   },
   {
     "name": "MMM-OnThisDay",
@@ -7879,7 +7929,8 @@
     "maintainerURL": "https://github.com/nkl-kst",
     "description": "Display historical events from Wikipedia based on the current date.",
     "issues": [],
-    "stars": 30
+    "stars": 32,
+    "hasGithubIssues": true
   },
   {
     "name": "MMM-OnThisDayWikiApi",
@@ -7889,7 +7940,8 @@
     "maintainerURL": "https://github.com/slugmuffin",
     "description": "Display historical events from Wikipedia based on the current date using the Wikimedia API. Can display as list or newsfeed style.",
     "issues": [],
-    "stars": 2
+    "stars": 2,
+    "hasGithubIssues": true
   },
   {
     "name": "MMM-OpelStatuses",
@@ -7899,7 +7951,8 @@
     "maintainerURL": "",
     "description": "Shows current production status of your Opel/Vauxhall.",
     "issues": [],
-    "stars": 1
+    "stars": 1,
+    "hasGithubIssues": true
   },
   {
     "name": "MMM-OpenHAB-Items",
@@ -7909,7 +7962,8 @@
     "maintainerURL": "",
     "description": "Show OpenHAB Items (label, values) in a list. Also supports touchscreen to toggle Switches or use RollerShutter items.",
     "issues": [],
-    "stars": 3
+    "stars": 3,
+    "hasGithubIssues": true
   },
   {
     "name": "MMM-openhabQuickWatch",
@@ -7919,7 +7973,8 @@
     "maintainerURL": "",
     "description": "Display item states from openhab.",
     "issues": [],
-    "stars": 1
+    "stars": 1,
+    "hasGithubIssues": true
   },
   {
     "name": "MMM-OpeningHours",
@@ -7929,7 +7984,8 @@
     "maintainerURL": "https://github.com/Menturan",
     "description": "Module that displays places opening hours.",
     "issues": [],
-    "stars": 11
+    "stars": 11,
+    "hasGithubIssues": true
   },
   {
     "name": "MMM-OpenmapWeather",
@@ -7939,7 +7995,8 @@
     "maintainerURL": "",
     "description": "Display current weather as image based on the Openmap Weather API data with different formatting.",
     "issues": [],
-    "stars": 24
+    "stars": 24,
+    "hasGithubIssues": true
   },
   {
     "name": "MMM-OpenSprinkler",
@@ -7949,7 +8006,8 @@
     "maintainerURL": "https://github.com/johnny-co",
     "description": "Display OpenSprinkler lawn care station and programs.",
     "issues": [],
-    "stars": 0
+    "stars": 0,
+    "hasGithubIssues": true
   },
   {
     "name": "MMM-OpenTherm",
@@ -7959,7 +8017,8 @@
     "maintainerURL": "",
     "description": "Display information from your OpenTherm gateway.",
     "issues": [],
-    "stars": 2
+    "stars": 2,
+    "hasGithubIssues": true
   },
   {
     "name": "MMM-OpenWeatherForecast",
@@ -7970,7 +8029,7 @@
     "description": "Displays current, hourly and daily forecast information using data from the OpenWeather One Call API.",
     "issues": [],
     "outdated": "Abandoned. No reactions to issues since years. Only works with API version 2.5!",
-    "stars": 38,
+    "stars": 39,
     "hasGithubIssues": true
   },
   {
@@ -7981,7 +8040,8 @@
     "maintainerURL": "",
     "description": "A weather module that displays current, hourly and daily forecast information using data from the OpenWeatherMap One Call API. This is based on the MMM-DarkSkyForecast module by jclarke0000.",
     "issues": [],
-    "stars": 24
+    "stars": 24,
+    "hasGithubIssues": false
   },
   {
     "name": "MMM-OsloCityBike",
@@ -7991,7 +8051,8 @@
     "maintainerURL": "",
     "description": "Shows nearby CityBike stations in Oslo, and the number of bikes available at each.",
     "issues": [],
-    "stars": 2
+    "stars": 2,
+    "hasGithubIssues": true
   },
   {
     "name": "MMM-OTIS",
@@ -8001,7 +8062,8 @@
     "maintainerURL": "",
     "description": "Machine learning AI to take input and pass it through the AI to get an answer, best use is when combined with other modules to have full control over MagicMirror² with voice.",
     "issues": [],
-    "stars": 2
+    "stars": 3,
+    "hasGithubIssues": true
   },
   {
     "name": "MMM-Oura",
@@ -8011,7 +8073,8 @@
     "maintainerURL": "https://github.com/erchenger",
     "description": "Allows you to see last night's sleep data from your Oura sleep tracker. WIP.",
     "issues": [],
-    "stars": 2
+    "stars": 2,
+    "hasGithubIssues": true
   },
   {
     "name": "MMM-Oura2",
@@ -8021,7 +8084,8 @@
     "maintainerURL": "https://github.com/themox",
     "description": "A more detailed Oura data display including readiness scores and heart rate data.",
     "issues": [],
-    "stars": 1
+    "stars": 1,
+    "hasGithubIssues": true
   },
   {
     "name": "MMM-Overwatch",
@@ -8031,7 +8095,8 @@
     "maintainerURL": "",
     "description": "Shows stats for Overwatch players.",
     "issues": [],
-    "stars": 1
+    "stars": 1,
+    "hasGithubIssues": true
   },
   {
     "name": "MMM-page-indicator",
@@ -8041,7 +8106,8 @@
     "maintainerURL": "",
     "description": "A helper module to display what page you're on. Intended to be used with other modules that rotate out modules.",
     "issues": [],
-    "stars": 39
+    "stars": 40,
+    "hasGithubIssues": true
   },
   {
     "name": "MMM-Page-Pusher",
@@ -8051,7 +8117,8 @@
     "maintainerURL": "",
     "description": "A module that uses 2 HCSR04 sensors to enable switching between pages by making a push gesture.",
     "issues": [],
-    "stars": 6
+    "stars": 6,
+    "hasGithubIssues": true
   },
   {
     "name": "MMM-Page-Selector",
@@ -8061,7 +8128,8 @@
     "maintainerURL": "",
     "description": "Configure location and visibity of modules on defined pages.",
     "issues": [],
-    "stars": 33
+    "stars": 34,
+    "hasGithubIssues": true
   },
   {
     "name": "MMM-PageReader",
@@ -8071,7 +8139,8 @@
     "maintainerURL": "",
     "description": "Loads a website and highlights each sentence in turn (timer or event-driven).",
     "issues": [],
-    "stars": 5
+    "stars": 5,
+    "hasGithubIssues": true
   },
   {
     "name": "MMM-pages",
@@ -8081,7 +8150,8 @@
     "maintainerURL": "",
     "description": "A module that allows you to rotate out pages of modules.",
     "issues": [],
-    "stars": 102
+    "stars": 102,
+    "hasGithubIssues": true
   },
   {
     "name": "MMM-Pages-Screencast",
@@ -8091,7 +8161,8 @@
     "maintainerURL": "https://github.com/jboucly",
     "description": "Interface module between <a target=\"_blank\" href=\"https://github.com/edward-shen/MMM-pages\">MMM-pages</a> and <a target=\"_blank\" href=\"https://github.com/kevinatown/MMM-Screencast\">MMM-Screencast</a>. Module to automatically change page when a video is cast on the MagicMirror².",
     "issues": [],
-    "stars": 7
+    "stars": 7,
+    "hasGithubIssues": true
   },
   {
     "name": "MMM-PandorasMirror",
@@ -8101,7 +8172,8 @@
     "maintainerURL": "",
     "description": "A module for streaming Pandora music.",
     "issues": [],
-    "stars": 3
+    "stars": 3,
+    "hasGithubIssues": true
   },
   {
     "name": "MMM-PaprikaMenu",
@@ -8111,7 +8183,8 @@
     "maintainerURL": "https://github.com/kaelspencer",
     "description": "Displays a weekly meal menu from the Paprika Recipe Manager app.",
     "issues": [],
-    "stars": 12
+    "stars": 12,
+    "hasGithubIssues": true
   },
   {
     "name": "MMM-Parcel",
@@ -8121,7 +8194,8 @@
     "maintainerURL": "",
     "description": "Glance over your parcel deliveries on your mirror, track your shipments. &gt;700 couriers supported (Integrating via Tracktry.com (free) or AfterShip.com (paid &amp; legacy free)). Various layout options depending on your need. With auto translate feature to your language.",
     "issues": [],
-    "stars": 24
+    "stars": 24,
+    "hasGithubIssues": true
   },
   {
     "name": "MMM-Paris-RATP-PG",
@@ -8131,7 +8205,8 @@
     "maintainerURL": "",
     "description": "Time to the next buses, metros, rers &amp; tramways for Paris Network (RATP), along with: the traffic status for selected lines, the risk of rain in the next hour, autolib and velib stations status.",
     "issues": [],
-    "stars": 13
+    "stars": 13,
+    "hasGithubIssues": true
   },
   {
     "name": "MMM-ParticleStatus",
@@ -8141,7 +8216,8 @@
     "maintainerURL": "https://github.com/NickEngmann",
     "description": "Display Particle.io device data.",
     "issues": [],
-    "stars": 3
+    "stars": 3,
+    "hasGithubIssues": false
   },
   {
     "name": "MMM-PasadenaTransit",
@@ -8151,7 +8227,8 @@
     "maintainerURL": "https://github.com/pbuabthong",
     "description": "Shows real-time departures for Pasadena Transit.",
     "issues": [],
-    "stars": 0
+    "stars": 0,
+    "hasGithubIssues": true
   },
   {
     "name": "MMM-pathtime",
@@ -8161,7 +8238,8 @@
     "maintainerURL": "",
     "description": "An unofficial module to show Port Autority Trans-Hudson(PATH) Train schedules.",
     "issues": [],
-    "stars": 1
+    "stars": 1,
+    "hasGithubIssues": true
   },
   {
     "name": "MMM-PC-Stats",
@@ -8171,7 +8249,8 @@
     "maintainerURL": "",
     "description": "A module to get system stats from a PC board. Supports multiple core CPU's.",
     "issues": [],
-    "stars": 5
+    "stars": 5,
+    "hasGithubIssues": true
   },
   {
     "name": "MMM-pekavm",
@@ -8181,7 +8260,8 @@
     "maintainerURL": "",
     "description": "Station monitor for tram and bus system in Poznań.",
     "issues": [],
-    "stars": 4
+    "stars": 4,
+    "hasGithubIssues": true
   },
   {
     "name": "MMM-Pelletpreise",
@@ -8191,7 +8271,8 @@
     "maintainerURL": "https://github.com/eckonator",
     "description": "The module displays pellet prices for the current year based on Chart.js and the API of heizpellets24.de.",
     "issues": [],
-    "stars": 0
+    "stars": 2,
+    "hasGithubIssues": true
   },
   {
     "name": "MMM-Peloton",
@@ -8201,7 +8282,8 @@
     "maintainerURL": "https://github.com/chicohernando",
     "description": "This will show you your Peloton information to keep you motivated to achieve your goals.",
     "issues": [],
-    "stars": 1
+    "stars": 1,
+    "hasGithubIssues": true
   },
   {
     "name": "MMM-PenPlotter",
@@ -8211,7 +8293,8 @@
     "maintainerURL": "https://github.com/jbamford",
     "description": "Render mesmerizing line animations on your mirror.",
     "issues": [],
-    "stars": 16
+    "stars": 16,
+    "hasGithubIssues": true
   },
   {
     "name": "MMM-PersonalConfig-Template",
@@ -8221,7 +8304,8 @@
     "maintainerURL": "",
     "description": "Module to version your personal config in a separate repository.",
     "issues": [],
-    "stars": 5
+    "stars": 5,
+    "hasGithubIssues": true
   },
   {
     "name": "MMM-PetFinder",
@@ -8231,7 +8315,8 @@
     "maintainerURL": "",
     "description": "All types of pets for adoption. Cat, dog, bird, horse, rabbit, reptile, smallfurry, barnyard.",
     "issues": [],
-    "stars": 1
+    "stars": 1,
+    "hasGithubIssues": false
   },
   {
     "name": "MMM-PGA",
@@ -8241,7 +8326,8 @@
     "maintainerURL": "https://github.com/mcl8on",
     "description": "Displays PGA tournaments scores.",
     "issues": [],
-    "stars": 1
+    "stars": 1,
+    "hasGithubIssues": true
   },
   {
     "name": "MMM-PGHBus",
@@ -8251,7 +8337,8 @@
     "maintainerURL": "",
     "description": "Real Time Pittsburgh bus information from Port Authority.",
     "issues": [],
-    "stars": 1
+    "stars": 1,
+    "hasGithubIssues": true
   },
   {
     "name": "MMM-PhilipsHue",
@@ -8261,7 +8348,8 @@
     "maintainerURL": "https://github.com/mumblebaj",
     "description": "Module to grab the status of your lights from your Hue Bridge with some updated features to display status of lights or groups.",
     "issues": [],
-    "stars": 4
+    "stars": 4,
+    "hasGithubIssues": true
   },
   {
     "name": "phone-notification-mirror",
@@ -8271,7 +8359,8 @@
     "maintainerURL": "",
     "description": "Displays and alerts mirror users on new phone notifications.",
     "issues": [],
-    "stars": 59
+    "stars": 60,
+    "hasGithubIssues": true
   },
   {
     "name": "MMM-PhoneDetect",
@@ -8281,7 +8370,8 @@
     "maintainerURL": "https://github.com/PierreGode",
     "description": "Automatically controls the screen's power based on the presence of specified phones or devices within the network.",
     "issues": [],
-    "stars": 2
+    "stars": 3,
+    "hasGithubIssues": true
   },
   {
     "name": "PiDisplaySleep",
@@ -8291,7 +8381,8 @@
     "maintainerURL": "",
     "description": "A python script that puts your display to sleep, if your smartphone/smartwatch is not connected to the WiFi network.",
     "issues": [],
-    "stars": 26
+    "stars": 27,
+    "hasGithubIssues": true
   },
   {
     "name": "MMM-pihole-stats",
@@ -8301,7 +8392,8 @@
     "maintainerURL": "",
     "description": "Display stats from Pi-Hole DNS ad blocking.",
     "issues": [],
-    "stars": 68
+    "stars": 68,
+    "hasGithubIssues": true
   },
   {
     "name": "MMM-PilotWX",
@@ -8312,7 +8404,8 @@
     "description": "Static or Rotating Weather for Pilots. International ICAO's.",
     "issues": [],
     "outdated": "Abandoned. No reactions to issues since years. Missing instructions to install dependency 'request'.",
-    "stars": 4
+    "stars": 4,
+    "hasGithubIssues": true
   },
   {
     "name": "MMM-PimaticFloorplan",
@@ -8322,7 +8415,8 @@
     "maintainerURL": "",
     "description": "Show lights and window states on a floorplan given from a pimatic server.",
     "issues": [],
-    "stars": 6
+    "stars": 6,
+    "hasGithubIssues": true
   },
   {
     "name": "MMM-Pinfo",
@@ -8332,7 +8426,8 @@
     "maintainerURL": "https://github.com/SalekurPolas",
     "description": "Informational module to display mirror information like Raspberry Pi model, unique serial number, network information, IPv4, IPv6, MAC address, OS information, CPU information, and more.",
     "issues": [],
-    "stars": 13
+    "stars": 13,
+    "hasGithubIssues": true
   },
   {
     "name": "MMM-ping",
@@ -8342,7 +8437,8 @@
     "maintainerURL": "",
     "description": "Display status from website/ip's.",
     "issues": [],
-    "stars": 8
+    "stars": 8,
+    "hasGithubIssues": true
   },
   {
     "name": "MMM-Pir",
@@ -8352,7 +8448,8 @@
     "maintainerURL": "",
     "description": "After a configurated time without any user interaction the display will turn off and hide all modules for economy mode.It will wake up with a PIR sensor. [Maintained].",
     "issues": [],
-    "stars": 10
+    "stars": 10,
+    "hasGithubIssues": false
   },
   {
     "name": "MMM-PIR",
@@ -8363,7 +8460,8 @@
     "description": "Another PIR monitoring module that allows you to run custom scripts and integrates MMM-TelegramBot commands.",
     "issues": [],
     "outdated": "Abandoned. Repo has been archived at 2022-08-26.",
-    "stars": 15
+    "stars": 15,
+    "hasGithubIssues": true
   },
   {
     "name": "MMM-PIR-Sensor",
@@ -8373,7 +8471,8 @@
     "maintainerURL": "",
     "description": "This module can monitor a PIR motion sensor and put your mirror to sleep if nobody uses it.",
     "issues": [],
-    "stars": 6
+    "stars": 7,
+    "hasGithubIssues": false
   },
   {
     "name": "MMM-PIR-Sensor-Lite",
@@ -8384,7 +8483,8 @@
     "description": "A module managing monitor with PIR motion sensor (automatic standby when presence isn't detected).",
     "issues": [],
     "outdated": "Abandoned. Repo has been archived at 2024-01-10. There seems to be <a href=\"https://github.com/hervidero/MMM-PIR-Sensor-Lite\">an active fork</a>, but the clone command has not yet been adapted.",
-    "stars": 16
+    "stars": 16,
+    "hasGithubIssues": true
   },
   {
     "name": "MMM-PirateSkyForecast",
@@ -8394,7 +8494,8 @@
     "maintainerURL": "",
     "description": "A weather module that displays current, hourly and daily forecast information using data from the pirateweather API.",
     "issues": [],
-    "stars": 3
+    "stars": 3,
+    "hasGithubIssues": false
   },
   {
     "name": "MMM-PiTemp",
@@ -8404,7 +8505,8 @@
     "maintainerURL": "",
     "description": "MMM-PiTemp works in conjunction with MagicMirror² and tells you the temperature of your raspberry pi's CPU. If the temperature is ever greater than 85 degrees then the pi shuts down.",
     "issues": [],
-    "stars": 12
+    "stars": 12,
+    "hasGithubIssues": true
   },
   {
     "name": "MMM-piwigo-photo-wheel",
@@ -8414,7 +8516,8 @@
     "maintainerURL": "https://github.com/nsieg",
     "description": "Display photos downloaded from a <a target=\"_blank\" href=\"https://piwigo.org\">Piwigo</a> photo library instance.",
     "issues": [],
-    "stars": 0
+    "stars": 0,
+    "hasGithubIssues": true
   },
   {
     "name": "MMM-PL_WOTD",
@@ -8424,7 +8527,8 @@
     "maintainerURL": "",
     "description": "Displays a Polish Word of the Day with examples and the English translations.",
     "issues": [],
-    "stars": 0
+    "stars": 0,
+    "hasGithubIssues": true
   },
   {
     "name": "MMM-PlaceInfo",
@@ -8434,7 +8538,8 @@
     "maintainerURL": "",
     "description": "Displays brief information (flag, weather, exchange rate) about multiple locations at once.",
     "issues": [],
-    "stars": 3
+    "stars": 3,
+    "hasGithubIssues": true
   },
   {
     "name": "MMM-Planetarium",
@@ -8444,7 +8549,8 @@
     "maintainerURL": "",
     "description": "Make your mirror to a Planetarium.",
     "issues": [],
-    "stars": 2
+    "stars": 2,
+    "hasGithubIssues": true
   },
   {
     "name": "planetrise",
@@ -8454,7 +8560,8 @@
     "maintainerURL": "",
     "description": "Display the rise and set times of the planets.",
     "issues": [],
-    "stars": 7
+    "stars": 7,
+    "hasGithubIssues": true
   },
   {
     "name": "MMM-Plantower",
@@ -8464,7 +8571,8 @@
     "maintainerURL": "https://github.com/gimdh",
     "description": "Displays air quality readings from Plantower PMSx003 series sensors.",
     "issues": [],
-    "stars": 0
+    "stars": 0,
+    "hasGithubIssues": true
   },
   {
     "name": "MMM-Plenticore",
@@ -8474,7 +8582,8 @@
     "maintainerURL": "https://github.com/eckonator",
     "description": "The module connects to the API of the KOSTAL Plenticore inverter and reads the current data and brings it to the output.",
     "issues": [],
-    "stars": 1
+    "stars": 1,
+    "hasGithubIssues": true
   },
   {
     "name": "MMM-PlexNowPlaying",
@@ -8484,7 +8593,8 @@
     "maintainerURL": "",
     "description": "Displays the list of playback sessions for a Plex Media Server.",
     "issues": [],
-    "stars": 24
+    "stars": 24,
+    "hasGithubIssues": true
   },
   {
     "name": "MMM-PlexSlideshow",
@@ -8494,7 +8604,8 @@
     "maintainerURL": "",
     "description": "Displays images in the background one at a time, pulling the images from a PLEX Media Server.",
     "issues": [],
-    "stars": 6
+    "stars": 6,
+    "hasGithubIssues": false
   },
   {
     "name": "MMM-PLOW",
@@ -8505,7 +8616,8 @@
     "description": "Pig Latin On Weather! Multiple views in a single module. Driven by Darksky API.",
     "issues": [],
     "outdated": "Deprecated. DarkSky API no longer works since 2023-03-31.",
-    "stars": 7
+    "stars": 7,
+    "hasGithubIssues": true
   },
   {
     "name": "PlutoTime",
@@ -8515,7 +8627,8 @@
     "maintainerURL": "",
     "description": "Display the next time on a clear morning or evening that you can go outside and experience the brightness of high noon on Pluto.",
     "issues": [],
-    "stars": 2
+    "stars": 3,
+    "hasGithubIssues": true
   },
   {
     "name": "MMM-Podcast",
@@ -8525,7 +8638,8 @@
     "maintainerURL": "",
     "description": "This module can show/hide a video downloaded from a Podcast or a private server (needs static file path). At the moment you can only display the video by clicking a button (use the MMM-Button module).",
     "issues": [],
-    "stars": 6
+    "stars": 6,
+    "hasGithubIssues": true
   },
   {
     "name": "MMM-Podcast2",
@@ -8535,7 +8649,8 @@
     "maintainerURL": "",
     "description": "This module can stream the video of 100 Sekunden Tagesschau by using omxplayer. It can be controlled by MM notification system.",
     "issues": [],
-    "stars": 2
+    "stars": 2,
+    "hasGithubIssues": true
   },
   {
     "name": "MMM-PoemOfTheDay",
@@ -8545,7 +8660,8 @@
     "maintainerURL": "",
     "description": "Display a poem of the day, in the language(s) of your choice.",
     "issues": [],
-    "stars": 4
+    "stars": 4,
+    "hasGithubIssues": true
   },
   {
     "name": "MMM-PokemonGOEvents",
@@ -8555,7 +8671,8 @@
     "maintainerURL": "https://github.com/bigfoott",
     "description": "Displays current or upcoming Pokemon GO Events. Event data is scraped from <a target=\"_blank\" href=\"https://www.leekduck.com/events\">LeekDuck</a>.",
     "issues": [],
-    "stars": 5
+    "stars": 5,
+    "hasGithubIssues": true
   },
   {
     "name": "MMM-pollen",
@@ -8565,7 +8682,8 @@
     "maintainerURL": "",
     "description": "Display 2 day pollen forecast based on DWD geoserver data.",
     "issues": [],
-    "stars": 10
+    "stars": 10,
+    "hasGithubIssues": true
   },
   {
     "name": "MMM-Pollen",
@@ -8575,7 +8693,8 @@
     "maintainerURL": "",
     "description": "Display pollen.com information for your US zipcode.",
     "issues": [],
-    "stars": 8
+    "stars": 8,
+    "hasGithubIssues": true
   },
   {
     "name": "MMM-Pollen-FR",
@@ -8585,7 +8704,8 @@
     "maintainerURL": "https://github.com/lekesako",
     "description": "Display pollen.fr information for your FR region code.",
     "issues": [],
-    "stars": 0
+    "stars": 0,
+    "hasGithubIssues": true
   },
   {
     "name": "MMM-Polly",
@@ -8595,7 +8715,8 @@
     "maintainerURL": "",
     "description": "Text-to-Speech using Amazon Polly.",
     "issues": [],
-    "stars": 3
+    "stars": 3,
+    "hasGithubIssues": true
   },
   {
     "name": "MMM-PopulationClock",
@@ -8605,7 +8726,8 @@
     "maintainerURL": "",
     "description": "Live World Population Clock.",
     "issues": [],
-    "stars": 4
+    "stars": 4,
+    "hasGithubIssues": true
   },
   {
     "name": "MMM-Porcupine",
@@ -8615,7 +8737,8 @@
     "maintainerURL": "",
     "description": "Picovoice Porcupine hotword detection, works with MMM-AssistantMk2.",
     "issues": [],
-    "stars": 1
+    "stars": 1,
+    "hasGithubIssues": false
   },
   {
     "name": "MMM-portscan",
@@ -8625,7 +8748,8 @@
     "maintainerURL": "",
     "description": "Track the status of your services with opened/closed ports.",
     "issues": [],
-    "stars": 5
+    "stars": 5,
+    "hasGithubIssues": true
   },
   {
     "name": "MMM-PostDelivery-Norway",
@@ -8635,7 +8759,8 @@
     "maintainerURL": "https://github.com/reidarw",
     "description": "Module for showing showing the next post delivery day for your zip code in Norway.",
     "issues": [],
-    "stars": 1
+    "stars": 2,
+    "hasGithubIssues": true
   },
   {
     "name": "MMM-Postnord",
@@ -8645,7 +8770,8 @@
     "maintainerURL": "",
     "description": "Automatically track and trace PostNords letters, parcels and pallets with your phone number or email.",
     "issues": [],
-    "stars": 3
+    "stars": 3,
+    "hasGithubIssues": true
   },
   {
     "name": "MMM-Powerwall",
@@ -8655,7 +8781,8 @@
     "maintainerURL": "",
     "description": "Display status of Tesla Powerwall &amp; Tesla vehicle charging.",
     "issues": [],
-    "stars": 21
+    "stars": 21,
+    "hasGithubIssues": true
   },
   {
     "name": "MMM-PrayerTime",
@@ -8665,7 +8792,8 @@
     "maintainerURL": "https://github.com/slametps",
     "description": "Displays moslem praying time with Adhan recital.",
     "issues": [],
-    "stars": 18
+    "stars": 18,
+    "hasGithubIssues": true
   },
   {
     "name": "MMM-PreciousMetals",
@@ -8675,7 +8803,8 @@
     "maintainerURL": "https://github.com/Fifteen15Studios",
     "description": "Displays prices of select precious metals and commodities, like gold and silver. Retrieves information from API provided by <a target=\"_blank\" href=\"https://api.metals.live\">api.metals.live</a>.",
     "issues": [],
-    "stars": 1
+    "stars": 1,
+    "hasGithubIssues": true
   },
   {
     "name": "MMM-Pregnancy",
@@ -8685,7 +8814,8 @@
     "maintainerURL": "",
     "description": "Allows you to get instant info of your developing pregnancy.",
     "issues": [],
-    "stars": 2
+    "stars": 2,
+    "hasGithubIssues": true
   },
   {
     "name": "MMM-profile",
@@ -8695,7 +8825,8 @@
     "maintainerURL": "https://github.com/kurtern84",
     "description": "A simple module to show a profilpicture with your name and wheater report for your MagicMirrorDisplays Swedish name of the day.",
     "issues": [],
-    "stars": 5
+    "stars": 5,
+    "hasGithubIssues": true
   },
   {
     "name": "MMM-ProfileControl",
@@ -8705,7 +8836,8 @@
     "maintainerURL": "https://github.com/Tom-Hirschberger",
     "description": "Indicator module for MMM-ProfileSwitcher.",
     "issues": [],
-    "stars": 2
+    "stars": 2,
+    "hasGithubIssues": true
   },
   {
     "name": "MMM-Profilepicture",
@@ -8715,7 +8847,8 @@
     "maintainerURL": "https://github.com/Snille",
     "description": "A module for adding a background picture to the current profile.",
     "issues": [],
-    "stars": 2
+    "stars": 2,
+    "hasGithubIssues": true
   },
   {
     "name": "MMM-ProfileSwitcher",
@@ -8725,7 +8858,8 @@
     "maintainerURL": "",
     "description": "This Module adds the ability to have different layouts for different profiles.",
     "issues": [],
-    "stars": 43
+    "stars": 43,
+    "hasGithubIssues": true
   },
   {
     "name": "MMM-PrometheusAlerts",
@@ -8735,7 +8869,8 @@
     "maintainerURL": "https://github.com/spydersoft-consulting",
     "description": "Display Prometheus Alerts.",
     "issues": [],
-    "stars": 1
+    "stars": 1,
+    "hasGithubIssues": true
   },
   {
     "name": "MMM-Property-managed",
@@ -8745,7 +8880,8 @@
     "maintainerURL": "",
     "description": "Integrates with landlord management site Property Managed to display upcoming actions.",
     "issues": [],
-    "stars": 1
+    "stars": 1,
+    "hasGithubIssues": true
   },
   {
     "name": "MMM-ProxyImage",
@@ -8755,7 +8891,8 @@
     "maintainerURL": "https://github.com/daxiang28",
     "description": "Display basic auth images through a simple Express proxy.",
     "issues": [],
-    "stars": 1
+    "stars": 1,
+    "hasGithubIssues": true
   },
   {
     "name": "MMM-PublicTransportBerlin",
@@ -8765,7 +8902,8 @@
     "maintainerURL": "",
     "description": "Display departures for public transport in Berlin and Brandenburg (Covers VBB Area).",
     "issues": [],
-    "stars": 39
+    "stars": 39,
+    "hasGithubIssues": true
   },
   {
     "name": "MMM-PublicTransportHafas",
@@ -8775,7 +8913,8 @@
     "maintainerURL": "",
     "description": "Displays departure information for public transportation in Germany and some other European countries. The <a target=\"_blank\" href=\"https://github.com/public-transport/hafas-client\">hafas-client</a> is used to query the information. The interface of the Deutsche Bahn is used as standard, this includes most of the local networks with buses, trams, etc. However, <a target=\"_blank\" href=\"https://github.com/public-transport/hafas-client/blob/main/p/readme.md\">other hafas interfaces</a> can also be used.",
     "issues": [],
-    "stars": 11
+    "stars": 12,
+    "hasGithubIssues": true
   },
   {
     "name": "MMM-PublicTransportVVO",
@@ -8785,7 +8924,8 @@
     "maintainerURL": "",
     "description": "Display live departures from public passenger transport service of the 'Verkehrsverbund Oberelbe' (VVO).",
     "issues": [],
-    "stars": 0
+    "stars": 1,
+    "hasGithubIssues": true
   },
   {
     "name": "publika",
@@ -8795,7 +8935,8 @@
     "maintainerURL": "",
     "description": "Display local transport for different regions of Finland (Helsinki, Hämeenlinna, Joensuu, Jyväskylä, Kajaani, Kotka, Kouvola, Kuopio, Lahti, Lappeenranta, Mikkeli, Tampere, Oulu, Rovaniemi, Turku, Vaasa)",
     "issues": [],
-    "stars": 4
+    "stars": 4,
+    "hasGithubIssues": true
   },
   {
     "name": "MMM-Pull",
@@ -8806,7 +8947,8 @@
     "description": "This module enables the user to pull updates for modules and/or MagicMirror² itself via Telegram commands.",
     "issues": [],
     "outdated": "Abandoned. Repo has been archived at 2022-08-26.",
-    "stars": 4
+    "stars": 4,
+    "hasGithubIssues": true
   },
   {
     "name": "MMM-Pure-Snow",
@@ -8816,7 +8958,8 @@
     "maintainerURL": "",
     "description": "Another snow plugin to improve your winter experience.",
     "issues": [],
-    "stars": 1
+    "stars": 1,
+    "hasGithubIssues": true
   },
   {
     "name": "MMM-PurpleAir",
@@ -8826,7 +8969,8 @@
     "maintainerURL": "https://github.com/ajones",
     "description": "Display air quality sensor data from <a target=\"_blank\" href=\"https://www2.purpleair.com\">Purple Air</a>.",
     "issues": [],
-    "stars": 1
+    "stars": 1,
+    "hasGithubIssues": true
   },
   {
     "name": "MMM-PushBulletNotifications",
@@ -8836,7 +8980,8 @@
     "maintainerURL": "",
     "description": "Display notifications from phone and PC and control your mirror using Pushbullet (API).",
     "issues": [],
-    "stars": 32
+    "stars": 32,
+    "hasGithubIssues": true
   },
   {
     "name": "MMM-qnapDownloadStation",
@@ -8846,7 +8991,8 @@
     "maintainerURL": "",
     "description": "Displays downloads from Download Station running on a QNAP NAS.",
     "issues": [],
-    "stars": 1
+    "stars": 1,
+    "hasGithubIssues": true
   },
   {
     "name": "MMM-QR-Remote-Link",
@@ -8856,7 +9002,8 @@
     "maintainerURL": "",
     "description": "Display a QR code with a link to a local module.",
     "issues": [],
-    "stars": 1
+    "stars": 1,
+    "hasGithubIssues": true
   },
   {
     "name": "MMM-QRCode",
@@ -8866,7 +9013,8 @@
     "maintainerURL": "",
     "description": "Show QRCode image of encoded text.",
     "issues": [],
-    "stars": 16
+    "stars": 16,
+    "hasGithubIssues": true
   },
   {
     "name": "MMM-Questrade",
@@ -8876,7 +9024,8 @@
     "maintainerURL": "",
     "description": "Displays your Questrade positions.",
     "issues": [],
-    "stars": 1
+    "stars": 1,
+    "hasGithubIssues": true
   },
   {
     "name": "MMM-Quotable",
@@ -8886,7 +9035,8 @@
     "maintainerURL": "",
     "description": "Display random quotes using the <a target=\"_blank\" href=\"https://github.com/lukePeavey/quotable\">Quotable API</a>. Filters quotes by max length and tags.",
     "issues": [],
-    "stars": 0
+    "stars": 1,
+    "hasGithubIssues": true
   },
   {
     "name": "MMM-quote-of-the-day",
@@ -8896,7 +9046,8 @@
     "maintainerURL": "",
     "description": "Show a random quote from an online collection of quotations by authors, celebrities, and newsmakers. Multi language supported.",
     "issues": [],
-    "stars": 25
+    "stars": 27,
+    "hasGithubIssues": true
   },
   {
     "name": "MMM-RaiderIO",
@@ -8906,7 +9057,8 @@
     "maintainerURL": "",
     "description": "Module that displays Raider IO score for multiple characters over any realms or regions.",
     "issues": [],
-    "stars": 3
+    "stars": 3,
+    "hasGithubIssues": true
   },
   {
     "name": "MMM-rain-forecast",
@@ -8916,7 +9068,8 @@
     "maintainerURL": "",
     "description": "Graphical rain forecast for the Netherlands, no dependies or outside scripts needed. Superfast with scalable vector graphics in desired color.",
     "issues": [],
-    "stars": 9
+    "stars": 9,
+    "hasGithubIssues": true
   },
   {
     "name": "MMM-RAIN-MAP",
@@ -8926,7 +9079,8 @@
     "maintainerURL": "https://github.com/jalibu",
     "description": "A rain radar map based on OpenStreetMap. Multiple location markers, option for alternating positions and zoom levels.",
     "issues": [],
-    "stars": 35
+    "stars": 35,
+    "hasGithubIssues": true
   },
   {
     "name": "MMM-RAIN-RADAR",
@@ -8936,7 +9090,8 @@
     "maintainerURL": "",
     "description": "Displays a Precipitation Radar for your location.",
     "issues": [],
-    "stars": 13
+    "stars": 13,
+    "hasGithubIssues": true
   },
   {
     "name": "MMM-rainfc",
@@ -8946,7 +9101,8 @@
     "maintainerURL": "",
     "description": "2 hour Dutch rain forecast graph based on Buienradar.",
     "issues": [],
-    "stars": 7
+    "stars": 7,
+    "hasGithubIssues": true
   },
   {
     "name": "MMM-RainForecast",
@@ -8956,7 +9112,8 @@
     "maintainerURL": "https://github.com/jupadin",
     "description": "Show rain forecast weather maps based on OpenStreeMap. Highlight multiple points of interest with colored markers.",
     "issues": [],
-    "stars": 2
+    "stars": 2,
+    "hasGithubIssues": true
   },
   {
     "name": "MMM-RainForecast-FR",
@@ -8966,7 +9123,8 @@
     "maintainerURL": "https://github.com/tttooommm56",
     "description": "Graphical and textual rain forecast for France.",
     "issues": [],
-    "stars": 7
+    "stars": 7,
+    "hasGithubIssues": true
   },
   {
     "name": "random_quotes",
@@ -8976,7 +9134,8 @@
     "maintainerURL": "",
     "description": "Display random quotes from brainyquote.",
     "issues": [],
-    "stars": 18
+    "stars": 19,
+    "hasGithubIssues": true
   },
   {
     "name": "MMM-RandomPhoto",
@@ -8986,7 +9145,8 @@
     "maintainerURL": "",
     "description": "Load a random photo from picsum. Originally by diego-vieira, now with support for local paths and NextCloud shares.",
     "issues": [],
-    "stars": 5
+    "stars": 5,
+    "hasGithubIssues": true
   },
   {
     "name": "MMM-RandomQuotes",
@@ -8996,7 +9156,8 @@
     "maintainerURL": "https://github.com/jacopo1891",
     "description": "Display a random quote from various authorship using Ninjas API.",
     "issues": [],
-    "stars": 1
+    "stars": 2,
+    "hasGithubIssues": true
   },
   {
     "name": "MMM-RandomQuranAyah",
@@ -9006,7 +9167,8 @@
     "maintainerURL": "https://github.com/slametps",
     "description": "Display ayah/verse of Qur'an randomly.",
     "issues": [],
-    "stars": 11
+    "stars": 11,
+    "hasGithubIssues": true
   },
   {
     "name": "MMM-RandomYouTubePlayer",
@@ -9016,7 +9178,8 @@
     "maintainerURL": "",
     "description": "Load a playlist into a YouTube player, AND shuffle the videos in the playlist.",
     "issues": [],
-    "stars": 14
+    "stars": 15,
+    "hasGithubIssues": true
   },
   {
     "name": "MMM-RBB-Weather",
@@ -9026,7 +9189,8 @@
     "maintainerURL": "https://github.com/nkl-kst",
     "description": "Display RBB weather data.",
     "issues": [],
-    "stars": 5
+    "stars": 5,
+    "hasGithubIssues": true
   },
   {
     "name": "MMM-rbtv-sendeplan",
@@ -9036,7 +9200,8 @@
     "maintainerURL": "https://github.com/juliankern",
     "description": "Displays the live timetable of the German pop culture TV/Streaming channel RocketBeansTV.",
     "issues": [],
-    "stars": 1
+    "stars": 1,
+    "hasGithubIssues": true
   },
   {
     "name": "MMM-RecentRainfall",
@@ -9046,7 +9211,8 @@
     "maintainerURL": "",
     "description": "Display recent US rainfall with a small map of your state.",
     "issues": [],
-    "stars": 2
+    "stars": 3,
+    "hasGithubIssues": true
   },
   {
     "name": "MMM-Recipe",
@@ -9056,7 +9222,8 @@
     "maintainerURL": "",
     "description": "Displays a new recipe everyday.",
     "issues": [],
-    "stars": 9
+    "stars": 9,
+    "hasGithubIssues": true
   },
   {
     "name": "MMM-RecyclingCalendar",
@@ -9076,7 +9243,8 @@
     "maintainerURL": "",
     "description": "Displays top level content from Reddit in either headlines or image based display types.",
     "issues": [],
-    "stars": 34
+    "stars": 34,
+    "hasGithubIssues": true
   },
   {
     "name": "MMM-Reddit-News-Ticker",
@@ -9086,7 +9254,8 @@
     "maintainerURL": "https://github.com/hayseedbyte",
     "description": "Horizontal scrolling news ticker using reddit r/news titles to avoid clickbait.",
     "issues": [],
-    "stars": 4
+    "stars": 4,
+    "hasGithubIssues": true
   },
   {
     "name": "MMM-RedditKarma",
@@ -9096,7 +9265,8 @@
     "maintainerURL": "",
     "description": "A simple module to display user karma from Reddit.com.",
     "issues": [],
-    "stars": 3
+    "stars": 3,
+    "hasGithubIssues": true
   },
   {
     "name": "MMM-Reddito",
@@ -9106,7 +9276,8 @@
     "maintainerURL": "",
     "description": "Shows specified subreddits(Text only), can have multiple instances.",
     "issues": [],
-    "stars": 0
+    "stars": 0,
+    "hasGithubIssues": true
   },
   {
     "name": "MMM-Regenradar",
@@ -9116,7 +9287,8 @@
     "maintainerURL": "",
     "description": "Rain radar for locations in Germany. The weather dates were provided by <a target=\"_blank\" href=\"https://morgenwirdes.de\">Morgenwirdes</a>.",
     "issues": [],
-    "stars": 2
+    "stars": 2,
+    "hasGithubIssues": true
   },
   {
     "name": "MMM-RelativeTime-i18n",
@@ -9126,7 +9298,8 @@
     "maintainerURL": "",
     "description": "Module that makes it possible to customize all the relative times in the default module (and others) that depend on moment.js",
     "issues": [],
-    "stars": 0
+    "stars": 1,
+    "hasGithubIssues": true
   },
   {
     "name": "MMM-Remote-Control",
@@ -9136,7 +9309,8 @@
     "maintainerURL": "",
     "description": "Cleanly shutdown (or reboot) your mirror, edit which modules are shown on your mirror and turn your monitor off and on from a simple website, i.e. from your smartphone.",
     "issues": [],
-    "stars": 468
+    "stars": 471,
+    "hasGithubIssues": true
   },
   {
     "name": "MMM-Remote-Control-Repository",
@@ -9146,7 +9320,8 @@
     "maintainerURL": "",
     "description": "Plugin for <code>MMM-Remote-Control</code> to update installable modules automatically.",
     "issues": [],
-    "stars": 24
+    "stars": 24,
+    "hasGithubIssues": true
   },
   {
     "name": "MMM-RemoteCompliments",
@@ -9156,7 +9331,8 @@
     "maintainerURL": "",
     "description": "Provides seamless integration with Google Drive™ to display compliments and images from Drive.",
     "issues": [],
-    "stars": 22
+    "stars": 22,
+    "hasGithubIssues": true
   },
   {
     "name": "MMM-RemoteTemperature",
@@ -9166,7 +9342,8 @@
     "maintainerURL": "https://github.com/balassy",
     "description": "Displays the temperature from a remote sensor that is capable to POST the measured value through HTTP protocol in JSON.",
     "issues": [],
-    "stars": 14
+    "stars": 14,
+    "hasGithubIssues": true
   },
   {
     "name": "MMM-RepoStats",
@@ -9186,7 +9363,8 @@
     "maintainerURL": "https://github.com/arirobinson",
     "description": "Display live info from your 3D printer running <a target=\"_blank\" href=\"https://github.com/dc42/RepRapFirmware\">RepRapFirmware</a>. This firmware is mainly used on <a target=\"_blank\" href=\"https://www.duet3d.com\">Duet3D control boards (Duet Wifi &amp; Ethernet)</a>.",
     "issues": [],
-    "stars": 0
+    "stars": 0,
+    "hasGithubIssues": true
   },
   {
     "name": "MMM-RescueTime",
@@ -9196,7 +9374,8 @@
     "maintainerURL": "",
     "description": "Show your daily time spent using your digital devices with <a target=\"_blank\" href=\"https://www.rescuetime.com\">RescueTime</a>.",
     "issues": [],
-    "stars": 6
+    "stars": 7,
+    "hasGithubIssues": true
   },
   {
     "name": "MMM-ResRobot",
@@ -9206,7 +9385,8 @@
     "maintainerURL": "",
     "description": "Public transport information for Sweden.",
     "issues": [],
-    "stars": 14
+    "stars": 13,
+    "hasGithubIssues": true
   },
   {
     "name": "MMM-Rest",
@@ -9216,7 +9396,8 @@
     "maintainerURL": "",
     "description": "Fetching REST data and display them on the mirror.",
     "issues": [],
-    "stars": 16
+    "stars": 17,
+    "hasGithubIssues": true
   },
   {
     "name": "MMM-Rijks",
@@ -9226,7 +9407,8 @@
     "maintainerURL": "",
     "description": "Module for Rijks Museum. This was developed using the Rijksmuseum API.",
     "issues": [],
-    "stars": 6
+    "stars": 6,
+    "hasGithubIssues": true
   },
   {
     "name": "MMM-Ring",
@@ -9237,7 +9419,8 @@
     "description": "Displays a video stream of your Ring doorbell when someone rings your doorbell.",
     "issues": [],
     "outdated": "Abandoned. Repo has been archived at 2022-08-25.",
-    "stars": 25
+    "stars": 25,
+    "hasGithubIssues": true
   },
   {
     "name": "MMM-RingAlarm",
@@ -9247,7 +9430,8 @@
     "maintainerURL": "",
     "description": "Display status and allow arming/disarming of a Ring alarm system.",
     "issues": [],
-    "stars": 0
+    "stars": 1,
+    "hasGithubIssues": true
   },
   {
     "name": "MMM-RKI-Covid19",
@@ -9258,7 +9442,8 @@
     "description": "RKI-Covid19 data for German counties.",
     "issues": [],
     "outdated": "Obsolete, no new data.",
-    "stars": 5
+    "stars": 5,
+    "hasGithubIssues": true
   },
   {
     "name": "MMM-RMV",
@@ -9268,7 +9453,8 @@
     "maintainerURL": "",
     "description": "Rhein-Main local transport system (RMV) - Departure Monitor.",
     "issues": [],
-    "stars": 20
+    "stars": 20,
+    "hasGithubIssues": true
   },
   {
     "name": "MMM-RNV",
@@ -9278,7 +9464,8 @@
     "maintainerURL": "https://github.com/jalibu",
     "description": "A departure monitor for stations within the Rhein-Neckar-Verkehr (RNV) public traffic network using the new API.",
     "issues": [],
-    "stars": 2
+    "stars": 3,
+    "hasGithubIssues": true
   },
   {
     "name": "MMM-RNV",
@@ -9288,7 +9475,8 @@
     "maintainerURL": "https://github.com/jupadin",
     "description": "Departure Monitor for stations in the Rhein-Neckar-Verkehr (RNV) public traffic network using the new API.",
     "issues": [],
-    "stars": 1
+    "stars": 2,
+    "hasGithubIssues": true
   },
   {
     "name": "MMM-RNV",
@@ -9298,7 +9486,8 @@
     "maintainerURL": "",
     "description": "Monitor a given station in the RNV traffic network.",
     "issues": [],
-    "stars": 1
+    "stars": 1,
+    "hasGithubIssues": false
   },
   {
     "name": "MMM-RocketLeagueZ",
@@ -9308,7 +9497,8 @@
     "maintainerURL": "",
     "description": "Displays Rocket League Stats.",
     "issues": [],
-    "stars": 1
+    "stars": 1,
+    "hasGithubIssues": true
   },
   {
     "name": "MMM-Roomba980",
@@ -9318,7 +9508,8 @@
     "maintainerURL": "",
     "description": "Display status of local Roomba.",
     "issues": [],
-    "stars": 10
+    "stars": 10,
+    "hasGithubIssues": true
   },
   {
     "name": "MMM-RottenTomatoes",
@@ -9328,7 +9519,8 @@
     "maintainerURL": "",
     "description": "Displays the Rotten Tomatoes meter score for the current box office and movies coming soon.",
     "issues": [],
-    "stars": 9
+    "stars": 9,
+    "hasGithubIssues": true
   },
   {
     "name": "MMM-RouterClients",
@@ -9337,8 +9529,7 @@
     "maintainer": "buxxi",
     "maintainerURL": "",
     "description": "Displays a list of clients connected to your router.",
-    "issues": [],
-    "stars": 1
+    "issues": []
   },
   {
     "name": "MMM-ROVA-trashcalendar",
@@ -10104,16 +10295,6 @@
     "description": "Module that displays playing tracks on your Sonos network.",
     "issues": [],
     "stars": 12
-  },
-  {
-    "name": "MMM-Sonos",
-    "url": "https://github.com/Snille/MMM-Sonos",
-    "id": "Snille/MMM-Sonos",
-    "maintainer": "Snille",
-    "maintainerURL": "https://github.com/Snille",
-    "description": "A fork of CFenners module with new features. It's used to display informations about the currently playing songs on your Sonos system.",
-    "issues": [],
-    "stars": 9
   },
   {
     "name": "MMM-SORT",
