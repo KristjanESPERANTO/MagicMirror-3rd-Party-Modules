@@ -14,7 +14,7 @@ const tagsList = [
   "news",
   "motion detection",
   "public transport",
-  "smarthome",
+  "smart home",
   "sport",
   "stock",
   "text-to-speech",

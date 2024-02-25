@@ -41,6 +41,7 @@ const config = [
       "no-await-in-loop": "off",
       "no-console": "off",
       "no-magic-numbers": "off",
+      "no-param-reassign": "off",
       "no-ternary": "off",
       "no-use-before-define": "off",
       "one-var": "off",

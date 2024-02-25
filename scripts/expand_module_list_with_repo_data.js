@@ -106,7 +106,14 @@ async function addInformationFromPackageJson (moduleList) {
         ];
 
         module.tags = moduleData.keywords
-          .map((tag) => tag.toLowerCase())
+          .map((tag) => {
+            tag = tag.toLowerCase();
+            if (tag === "smarthome") {
+              module.issues.push("Please use 'smart home' instead of 'smarthome' as a keyword in your package.json.");
+              return "smart home";
+            }
+            return tag;
+          })
           .filter((tag) => !tagsToRemove.includes(tag));
 
         if (module.tags.length === 0) {

@@ -3667,12 +3667,14 @@
     "maintainer": "mumblebaj",
     "maintainerURL": "https://github.com/mumblebaj",
     "description": "Display loadshedding schedule data for the South African users.",
-    "issues": [],
+    "issues": [
+      "Please use 'smart home' instead of 'smarthome' as a tag."
+    ],
     "stars": 1,
     "hasGithubIssues": true,
     "tags": [
       "eskomsepush",
-      "smarthome"
+      "smart home"
     ],
     "license": "ISC",
     "image": "images-image-1.jpg"
@@ -5486,7 +5488,9 @@
     "maintainer": "bugsounet",
     "maintainerURL": "https://wiki.bugsounet.fr",
     "description": "MMM-GoogleAssistant is an real embedded Google assistant on MagicMirror² with many <a target=\"_blank\" href=\"#extended-plugins-for-mmm-googleassistant\">plugins</a> . [Maintained].",
-    "issues": [],
+    "issues": [
+      "Please use 'smart home' instead of 'smarthome' as a tag."
+    ],
     "stars": 79,
     "hasGithubIssues": false,
     "tags": [
@@ -5495,7 +5499,7 @@
       "embedded",
       "assistant for device",
       "voice control",
-      "smarthome"
+      "smart home"
     ],
     "license": "MIT",
     "image": "resources-previewFS.jpg"
@@ -5884,12 +5888,14 @@
     "maintainer": "mumblebaj",
     "maintainerURL": "https://github.com/mumblebaj",
     "description": "Display data from Growatt Inveter. Support multiple Growatt Inverter types.",
-    "issues": [],
+    "issues": [
+      "Please use 'smart home' instead of 'smarthome' as a tag."
+    ],
     "stars": 2,
     "hasGithubIssues": true,
     "tags": [
       "growatt",
-      "smarthome"
+      "smart home"
     ],
     "license": "ISC",
     "image": "images-screenshot.jpg"
@@ -5918,12 +5924,14 @@
     "maintainer": "mumblebaj",
     "maintainerURL": "https://github.com/mumblebaj",
     "description": "Display status data from Growatt Inveter. Support multiple Growatt Inverter types. Made to work in conjunction with <a target=\"_blank\" href=\"https://github.com/mumblebaj/MMM-Growatt\">MMM-Growatt</a> or independently.",
-    "issues": [],
+    "issues": [
+      "Please use 'smart home' instead of 'smarthome' as a tag."
+    ],
     "stars": 1,
     "hasGithubIssues": true,
     "tags": [
       "growatt",
-      "smarthome"
+      "smart home"
     ],
     "license": "MIT",
     "image": "images-screenshot.jpg"
@@ -6326,12 +6334,14 @@
     "maintainer": "Sickboy78",
     "maintainerURL": "https://github.com/Sickboy78",
     "description": "Shows values and warnings from HomeMatic smart home components and system variables as text and/or icons. Highly flexible and customizable design.",
-    "issues": [],
+    "issues": [
+      "Please use 'smart home' instead of 'smarthome' as a tag."
+    ],
     "stars": 12,
     "hasGithubIssues": true,
     "tags": [
       "homematic",
-      "smarthome"
+      "smart home"
     ],
     "license": "GPL-3.0-only",
     "image": "screenshot_01.jpg"
@@ -6343,12 +6353,14 @@
     "maintainer": "JFWenisch",
     "maintainerURL": "https://github.com/JFWenisch",
     "description": "Requests device information from the HomeMatic CCU and displays them grouped by the assigned room.",
-    "issues": [],
+    "issues": [
+      "Please use 'smart home' instead of 'smarthome' as a tag."
+    ],
     "stars": 2,
     "hasGithubIssues": true,
     "tags": [
       "homematic",
-      "smarthome",
+      "smart home",
       "ccu2"
     ],
     "license": "MIT",
@@ -9487,11 +9499,13 @@
     "maintainer": "ottopaulsen",
     "maintainerURL": "",
     "description": "A module that subscribes topics from MQTT message queues, and displays the payload values in a table, with configurable labels.",
-    "issues": [],
+    "issues": [
+      "Please use 'smart home' instead of 'smarthome' as a tag."
+    ],
     "stars": 55,
     "hasGithubIssues": true,
     "tags": [
-      "smarthome",
+      "smart home",
       "home-automation",
       "mqtt"
     ],
@@ -10348,12 +10362,14 @@
     "maintainer": "CFenner",
     "maintainerURL": "",
     "description": "Display your Netatmo in/outdoor weather station data.",
-    "issues": [],
+    "issues": [
+      "Please use 'smart home' instead of 'smarthome' as a tag."
+    ],
     "stars": 32,
     "hasGithubIssues": true,
     "tags": [
       "netatmo",
-      "smarthome"
+      "smart home"
     ],
     "license": "MIT",
     "image": ".github-preview.bubbles.jpg"
@@ -15445,12 +15461,14 @@
     "maintainer": "ottopaulsen",
     "maintainerURL": "",
     "description": "Show electricity related data for Tibber customers. Shows power, prices, consumption, voltage, current and more.",
-    "issues": [],
+    "issues": [
+      "Please use 'smart home' instead of 'smarthome' as a tag."
+    ],
     "stars": 31,
     "tags": [
       "tibber",
       "energy",
-      "smarthome",
+      "smart home",
       "home-automation",
       "power"
     ],
@@ -15662,11 +15680,13 @@
     "maintainer": "slametps",
     "maintainerURL": "https://github.com/slametps",
     "description": "Display the status of TPLink lights/plugs in your local network.",
-    "issues": [],
+    "issues": [
+      "Please use 'smart home' instead of 'smarthome' as a tag."
+    ],
     "stars": 4,
     "tags": [
       "tplink",
-      "smarthome"
+      "smart home"
     ],
     "license": "MIT",
     "image": "others-MMM-TPLink-screenshot-01.jpg"
@@ -15907,11 +15927,13 @@
     "maintainer": "slametps",
     "maintainerURL": "https://github.com/slametps",
     "description": "Display the status of smarthome devices based on Tuya IoT-Platform (managed by SmartLife app).",
-    "issues": [],
+    "issues": [
+      "Please use 'smart home' instead of 'smarthome' as a tag."
+    ],
     "stars": 3,
     "tags": [
       "tuyasl",
-      "smarthome",
+      "smart home",
       "smartlife",
       "smart_life",
       "iot",
@@ -17222,11 +17244,13 @@
     "maintainer": "slametps",
     "maintainerURL": "https://github.com/slametps",
     "description": "Display the status of Yeelight bulbs in your local network.",
-    "issues": [],
+    "issues": [
+      "Please use 'smart home' instead of 'smarthome' as a tag."
+    ],
     "stars": 4,
     "tags": [
       "yeelight",
-      "smarthome"
+      "smart home"
     ],
     "license": "MIT",
     "image": "others-MMM-Yeelight-screenshot-01.jpg"
