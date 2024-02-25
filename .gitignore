@@ -1,5 +1,7 @@
 /modules/*
+/modules_/*
 /modules_temp/*
 /node_modules/*
 .eslintcache
 .vscode/*
+ownModuleList.json

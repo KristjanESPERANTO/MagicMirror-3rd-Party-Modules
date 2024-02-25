@@ -1,6 +1,11 @@
 import fs from "fs";
 
-const ownModuleList = JSON.parse(fs.readFileSync("./ownModuleList.json"));
+let ownModuleListPath = "./ownModuleList.json";
+if (!fs.existsSync(ownModuleListPath)) {
+  ownModuleListPath = "./ownModuleList_sample.json";
+  console.error("No ownModuleList.json found. Using ownModuleList_sample.json");
+}
+const ownModuleList = JSON.parse(fs.readFileSync(ownModuleListPath));
 
 // eslint-disable-next-line @stylistic/space-before-function-paren
 function sortByNameIgnoringPrefix(a, b) {
