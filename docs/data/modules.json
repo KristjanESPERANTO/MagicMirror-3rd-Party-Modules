@@ -489,7 +489,7 @@
     "stars": 13,
     "hasGithubIssues": true,
     "defaultSortWeight": 6,
-    "lastCommit": "2020-07-07T12:24:07+02:00"
+    "lastCommit": "2024-02-25T16:17:51+01:00"
   },
   {
     "name": "MMM-AQI",
@@ -3734,11 +3734,11 @@
     "hasGithubIssues": true,
     "tags": [
       "eskomsepush",
-      "smarthome"
+      "smart home"
     ],
     "license": "ISC",
     "image": "images-image-1.jpg",
-    "defaultSortWeight": 4,
+    "defaultSortWeight": 5,
     "lastCommit": "2024-02-23T19:55:33+02:00"
   },
   {
@@ -3940,13 +3940,18 @@
     "maintainer": "bugsounet",
     "maintainerURL": "https://wiki.bugsounet.fr",
     "description": "Display Channel from French Internet Provider: Free. This module have been defined to work only with MMM-GoogleAssistant.",
-    "issues": true,
+    "issues": false,
     "stars": 1,
     "hasGithubIssues": false,
+    "tags": [
+      "freebox",
+      "free",
+      "tv"
+    ],
     "license": "MIT",
     "image": "resources-FreeboxTV.jpg",
-    "defaultSortWeight": 6,
-    "lastCommit": "2024-01-03T16:20:42+01:00"
+    "defaultSortWeight": 2,
+    "lastCommit": "2024-02-25T13:56:41+01:00"
   },
   {
     "name": "EXT-GooglePhotos",
@@ -3983,8 +3988,8 @@
       "googleassistant"
     ],
     "license": "MIT",
-    "defaultSortWeight": 5,
-    "lastCommit": "2024-01-03T16:21:39+01:00"
+    "defaultSortWeight": 4,
+    "lastCommit": "2024-02-25T15:45:27+01:00"
   },
   {
     "name": "EXT-Internet",
@@ -4002,8 +4007,8 @@
     ],
     "license": "MIT",
     "image": "resources-Internet-Logo.jpg",
-    "defaultSortWeight": 5,
-    "lastCommit": "2024-01-04T15:15:52+01:00"
+    "defaultSortWeight": 3,
+    "lastCommit": "2024-02-25T16:56:05+01:00"
   },
   {
     "name": "EXT-Keyboard",
@@ -4015,9 +4020,12 @@
     "issues": true,
     "stars": 1,
     "hasGithubIssues": false,
+    "tags": [
+      "keyboard"
+    ],
     "license": "MIT",
-    "defaultSortWeight": 5,
-    "lastCommit": "2024-01-03T16:29:57+01:00"
+    "defaultSortWeight": 4,
+    "lastCommit": "2024-02-25T17:32:10+01:00"
   },
   {
     "name": "EXT-Librespot",
@@ -5603,11 +5611,11 @@
       "embedded",
       "assistant for device",
       "voice control",
-      "smarthome"
+      "smart home"
     ],
     "license": "MIT",
     "image": "resources-previewFS.jpg",
-    "defaultSortWeight": 0,
+    "defaultSortWeight": 1,
     "lastCommit": "2024-02-24T21:53:48+01:00"
   },
   {
@@ -6009,7 +6017,7 @@
     "hasGithubIssues": true,
     "tags": [
       "growatt",
-      "smarthome"
+      "smart home"
     ],
     "license": "ISC",
     "image": "images-screenshot.jpg",
@@ -6042,7 +6050,7 @@
     "hasGithubIssues": true,
     "tags": [
       "growatt",
-      "smarthome"
+      "smart home"
     ],
     "license": "MIT",
     "image": "images-screenshot.jpg",
@@ -6451,11 +6459,11 @@
     "hasGithubIssues": true,
     "tags": [
       "homematic",
-      "smarthome"
+      "smart home"
     ],
     "license": "GPL-3.0-only",
     "image": "screenshot_01.jpg",
-    "defaultSortWeight": 7,
+    "defaultSortWeight": 8,
     "lastCommit": "2023-11-16T16:47:40+01:00"
   },
   {
@@ -6470,12 +6478,12 @@
     "hasGithubIssues": true,
     "tags": [
       "homematic",
-      "smarthome",
+      "smart home",
       "ccu2"
     ],
     "license": "MIT",
     "image": "readme_screenshot.jpg",
-    "defaultSortWeight": 6,
+    "defaultSortWeight": 7,
     "lastCommit": "2019-10-26T15:04:37+02:00"
   },
   {
@@ -7973,6 +7981,8 @@
     "maintainerURL": "https://github.com/Fabrizz",
     "description": "Show the lyrics of your current Spotify track. Connects to <a target=\"_blank\" href=\"https://github.com/Fabrizz/MMM-OnSpotify\">MMM-OnSpotify</a>, customizable everything!",
     "issues": true,
+    "stars": 6,
+    "hasGithubIssues": true,
     "tags": [
       "spotify lyrics",
       "lyrics",
@@ -9635,13 +9645,13 @@
     "stars": 55,
     "hasGithubIssues": true,
     "tags": [
-      "smarthome",
+      "smart home",
       "home-automation",
       "mqtt"
     ],
     "license": "MIT",
     "image": "doc-MQTT.jpg",
-    "defaultSortWeight": 3,
+    "defaultSortWeight": 4,
     "lastCommit": "2024-01-31T21:20:43+01:00"
   },
   {
@@ -10507,11 +10517,11 @@
     "hasGithubIssues": true,
     "tags": [
       "netatmo",
-      "smarthome"
+      "smart home"
     ],
     "license": "MIT",
     "image": ".github-preview.bubbles.jpg",
-    "defaultSortWeight": 1,
+    "defaultSortWeight": 2,
     "lastCommit": "2024-02-23T22:07:56+00:00"
   },
   {
@@ -13720,6 +13730,8 @@
     "maintainerURL": "",
     "description": "Displays a list of clients connected to your router.",
     "issues": true,
+    "stars": 1,
+    "hasGithubIssues": true,
     "license": "MIT",
     "image": "screenshot.jpg",
     "defaultSortWeight": 4,
@@ -13734,6 +13746,7 @@
     "description": "Module which shows when and which type of trash will be collected by Dutch garbage service ROVA.",
     "issues": true,
     "stars": 0,
+    "hasGithubIssues": true,
     "defaultSortWeight": 8,
     "lastCommit": "2021-07-04T07:23:14+02:00"
   },
@@ -13746,6 +13759,7 @@
     "description": "Control the built in LEDs of your Raspberry Pi.",
     "issues": true,
     "stars": 4,
+    "hasGithubIssues": true,
     "license": "MIT",
     "defaultSortWeight": 8,
     "lastCommit": "2019-12-05T12:38:26+01:00"
@@ -13759,6 +13773,7 @@
     "description": "Display any RSS feed.",
     "issues": true,
     "stars": 25,
+    "hasGithubIssues": true,
     "defaultSortWeight": 6,
     "lastCommit": "2016-12-14T19:47:07+01:00"
   },
@@ -13771,6 +13786,7 @@
     "description": "Show RTSP video stream(s) from one or more security cameras.",
     "issues": true,
     "stars": 69,
+    "hasGithubIssues": true,
     "license": "MIT",
     "image": "screenshot.jpg",
     "defaultSortWeight": 21,
@@ -13784,7 +13800,8 @@
     "maintainerURL": "",
     "description": "Viewing IP cameras RTSP stream in real time using WebRTC technology.",
     "issues": true,
-    "stars": 11,
+    "stars": 12,
+    "hasGithubIssues": true,
     "license": "ISC",
     "defaultSortWeight": 7,
     "lastCommit": "2022-10-05T16:14:36-05:00"
@@ -13798,6 +13815,7 @@
     "description": "Module to skim council website and extract rubish collection times.",
     "issues": true,
     "stars": 0,
+    "hasGithubIssues": true,
     "license": "MIT",
     "image": "img-App_Shot.jpg",
     "defaultSortWeight": 11,
@@ -13811,6 +13829,8 @@
     "maintainerURL": "",
     "description": "Module to display Rugby World Rankings and Upcoming Matches and results",
     "issues": true,
+    "stars": 1,
+    "hasGithubIssues": true,
     "tags": [
       "rugby",
       "sport"
@@ -13829,6 +13849,7 @@
     "description": "The total losses of the russian occupier since the full-scale invasion in Ukraine, per General Staff of the Armed Forces of Ukraine.",
     "issues": true,
     "stars": 4,
+    "hasGithubIssues": true,
     "tags": [
       "russian invasion"
     ],
@@ -13846,7 +13867,8 @@
     "description": "Display public transport information for Oslo and Akershus in Norway.",
     "issues": true,
     "outdated": "Abandoned. Repo has been archived at 2019-03-14. See <a href=\"https://github.com/Arve/MMM-Entur-tavle\">MMM-Entur-tavle</a> instead.",
-    "stars": 18,
+    "stars": 19,
+    "hasGithubIssues": true,
     "license": "ISC",
     "image": "images-MMM-Ruter_Full.jpg",
     "defaultSortWeight": 906,
@@ -13861,6 +13883,7 @@
     "description": "Departure monitor for the RVV (Regensburger Verkehrsverbund) public transport (bus) system (Bavaria/Germany).",
     "issues": true,
     "stars": 5,
+    "hasGithubIssues": true,
     "defaultSortWeight": 8,
     "lastCommit": "2021-01-21T09:04:08+01:00"
   },
@@ -13873,6 +13896,7 @@
     "description": "Displaying transactions and account balance from Sbanken (Norway).",
     "issues": true,
     "stars": 1,
+    "hasGithubIssues": true,
     "defaultSortWeight": 8,
     "lastCommit": "2024-02-01T21:53:19+01:00"
   },
@@ -13886,6 +13910,7 @@
     "issues": true,
     "outdated": "Deprecated. The successor is MMM-Scenes2.",
     "stars": 12,
+    "hasGithubIssues": true,
     "tags": [
       "paging",
       "animation"
@@ -13903,6 +13928,7 @@
     "description": "Module to change screen scenes by time and order with ANIMATION EFFECT. Successor of MMM-Scenes since MM 2.25 (AnimateCSS is introduced).",
     "issues": true,
     "stars": 2,
+    "hasGithubIssues": true,
     "license": "MIT",
     "defaultSortWeight": 6,
     "lastCommit": "2023-10-05T16:29:54+02:00"
@@ -13917,6 +13943,7 @@
     "issues": true,
     "outdated": "Abandoned. Repo has been archived at 2020-05-09.",
     "stars": 1,
+    "hasGithubIssues": true,
     "tags": [
       "scottish premier league"
     ],
@@ -13933,7 +13960,8 @@
     "maintainerURL": "https://github.com/Tom-Hirschberger",
     "description": "Screensaver module which shuts the screen off if USER_PRESENCE is not received within specified timeout. Can be used as PIR module in combination with <a target=\"_blank\" href=\"https://github.com/Tom-Hirschberger/MMM-GPIO-Notifications\">MMM-GPIO-Notifications</a>.",
     "issues": true,
-    "stars": 0,
+    "stars": 1,
+    "hasGithubIssues": true,
     "tags": [
       "screensave",
       "pir"
@@ -13951,7 +13979,8 @@
     "maintainerURL": "",
     "description": "Cast a video from your phone to your mirror (currently can only cast YouTube).",
     "issues": true,
-    "stars": 159,
+    "stars": 160,
+    "hasGithubIssues": true,
     "tags": [
       "chromecast",
       "dial",
@@ -13973,6 +14002,7 @@
     "description": "Module to read data from a Pentair ScreenLogic pool system.",
     "issues": true,
     "stars": 2,
+    "hasGithubIssues": true,
     "license": "MIT",
     "image": "screenshot.jpg",
     "defaultSortWeight": 4,
@@ -13987,6 +14017,7 @@
     "description": "Run a set of command-line scripts on a cron schedule and display an icon to differentiate.",
     "issues": true,
     "stars": 6,
+    "hasGithubIssues": true,
     "tags": [
       "volume",
       "mute",
@@ -14005,7 +14036,8 @@
     "maintainerURL": "",
     "description": "Display the current playing song from Spotify, ITunes and Co.",
     "issues": true,
-    "stars": 38,
+    "stars": 39,
+    "hasGithubIssues": true,
     "defaultSortWeight": 5,
     "lastCommit": "2020-09-10T15:53:49+02:00"
   },
@@ -14018,6 +14050,7 @@
     "description": "Display your reputation of a StackExchange site (such as StackOverflow).",
     "issues": true,
     "stars": 1,
+    "hasGithubIssues": true,
     "license": "MIT",
     "image": "docs-module_graph.jpg",
     "defaultSortWeight": 10,
@@ -14032,6 +14065,7 @@
     "description": "Screensaver.",
     "issues": true,
     "stars": 1,
+    "hasGithubIssues": true,
     "defaultSortWeight": 4,
     "lastCommit": "2019-12-29T22:31:07-05:00"
   },
@@ -14044,6 +14078,7 @@
     "description": "Display order of turn information for ships transiting the St Lawrence Seaway Locks.",
     "issues": true,
     "stars": 0,
+    "hasGithubIssues": true,
     "defaultSortWeight": 5,
     "lastCommit": "2020-12-22T18:48:21-05:00"
   },
@@ -14056,6 +14091,7 @@
     "description": "Takes a Selfie with an official Raspberry Pi Cam and can publish it to Facebook or Twitter. Needs API keys. Integrates nicely with MMM-Assistant (for voice control) and MMM-TelegramBot (for Telegram control).",
     "issues": true,
     "stars": 9,
+    "hasGithubIssues": true,
     "tags": [
       "selfie"
     ],
@@ -14072,6 +14108,7 @@
     "description": "Taking a Selfie with USB cam.",
     "issues": true,
     "stars": 8,
+    "hasGithubIssues": true,
     "license": "MIT",
     "image": "screenshot.jpg",
     "defaultSortWeight": 4,
@@ -14086,6 +14123,7 @@
     "description": "Web form to send arbitrary messages via <code>this.sendNotification()</code>.",
     "issues": true,
     "stars": 5,
+    "hasGithubIssues": true,
     "defaultSortWeight": 4,
     "lastCommit": "2019-10-18T08:57:46-04:00"
   },
@@ -14098,6 +14136,7 @@
     "description": "Connects to the Seneye Aquarium Monitor API and displays water parameters from the most recent test data.",
     "issues": true,
     "stars": 1,
+    "hasGithubIssues": true,
     "defaultSortWeight": 8,
     "lastCommit": "2018-10-26T17:47:28+01:00"
   },
@@ -14110,6 +14149,7 @@
     "description": "This module enables having live sensor data without touching the Pi hardware by utilizing the BLE advertisment beacons from sensors and routing that live info into MagicMirror\u00b2 platform.",
     "issues": true,
     "stars": 2,
+    "hasGithubIssues": true,
     "tags": [
       "movesense",
       "ruuvitag",
@@ -14128,7 +14168,6 @@
     "maintainerURL": "https://github.com/Tom-Hirschberger",
     "description": "A module to send notifications based on messages received via one/multiple serial devices.",
     "issues": true,
-    "stars": 6,
     "tags": [
       "serial console",
       "tty",
@@ -15710,13 +15749,13 @@
     "tags": [
       "tibber",
       "energy",
-      "smarthome",
+      "smart home",
       "home-automation",
       "power"
     ],
     "license": "MIT",
     "image": "doc-MMM-Tibber-screenshot-3phase.jpg",
-    "defaultSortWeight": 8,
+    "defaultSortWeight": 9,
     "lastCommit": "2024-02-17T15:47:36+01:00"
   },
   {
@@ -15937,11 +15976,11 @@
     "stars": 4,
     "tags": [
       "tplink",
-      "smarthome"
+      "smart home"
     ],
     "license": "MIT",
     "image": "others-MMM-TPLink-screenshot-01.jpg",
-    "defaultSortWeight": 6,
+    "defaultSortWeight": 7,
     "lastCommit": "2020-09-22T17:30:41+07:00"
   },
   {
@@ -16186,7 +16225,7 @@
     "stars": 3,
     "tags": [
       "tuyasl",
-      "smarthome",
+      "smart home",
       "smartlife",
       "smart_life",
       "iot",
@@ -16194,7 +16233,7 @@
     ],
     "license": "MIT",
     "image": "others-MMM-TuyaSL-screenshot-01.jpg",
-    "defaultSortWeight": 8,
+    "defaultSortWeight": 9,
     "lastCommit": "2021-01-05T10:23:49+07:00"
   },
   {
@@ -17510,11 +17549,11 @@
     "stars": 4,
     "tags": [
       "yeelight",
-      "smarthome"
+      "smart home"
     ],
     "license": "MIT",
     "image": "others-MMM-Yeelight-screenshot-01.jpg",
-    "defaultSortWeight": 6,
+    "defaultSortWeight": 7,
     "lastCommit": "2018-05-29T14:38:38+07:00"
   },
   {

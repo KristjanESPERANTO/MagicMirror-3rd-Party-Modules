@@ -5517,7 +5517,9 @@
     "maintainer": "Fabrizz",
     "maintainerURL": "https://github.com/Fabrizz",
     "description": "Show the lyrics of your current Spotify track. Connects to <a target=\"_blank\" href=\"https://github.com/Fabrizz/MMM-OnSpotify\">MMM-OnSpotify</a>, customizable everything!",
-    "issues": []
+    "issues": [],
+    "stars": 6,
+    "hasGithubIssues": true
   },
   {
     "name": "MMM-LKY-TIC",
@@ -9529,7 +9531,9 @@
     "maintainer": "buxxi",
     "maintainerURL": "",
     "description": "Displays a list of clients connected to your router.",
-    "issues": []
+    "issues": [],
+    "stars": 1,
+    "hasGithubIssues": true
   },
   {
     "name": "MMM-ROVA-trashcalendar",
@@ -9539,7 +9543,8 @@
     "maintainerURL": "https://github.com/jeroenpeters1986",
     "description": "Module which shows when and which type of trash will be collected by Dutch garbage service ROVA.",
     "issues": [],
-    "stars": 0
+    "stars": 0,
+    "hasGithubIssues": true
   },
   {
     "name": "MMM-RPI-LED",
@@ -9549,7 +9554,8 @@
     "maintainerURL": "",
     "description": "Control the built in LEDs of your Raspberry Pi.",
     "issues": [],
-    "stars": 4
+    "stars": 4,
+    "hasGithubIssues": true
   },
   {
     "name": "MMM-RSS-FEED",
@@ -9559,7 +9565,8 @@
     "maintainerURL": "",
     "description": "Display any RSS feed.",
     "issues": [],
-    "stars": 25
+    "stars": 25,
+    "hasGithubIssues": true
   },
   {
     "name": "MMM-RTSPStream",
@@ -9569,7 +9576,8 @@
     "maintainerURL": "",
     "description": "Show RTSP video stream(s) from one or more security cameras.",
     "issues": [],
-    "stars": 69
+    "stars": 69,
+    "hasGithubIssues": true
   },
   {
     "name": "MMM-RTSPtoWeb",
@@ -9579,7 +9587,8 @@
     "maintainerURL": "",
     "description": "Viewing IP cameras RTSP stream in real time using WebRTC technology.",
     "issues": [],
-    "stars": 11
+    "stars": 12,
+    "hasGithubIssues": true
   },
   {
     "name": "MMM-RubbishCollection",
@@ -9589,7 +9598,8 @@
     "maintainerURL": "https://github.com/nikobix",
     "description": "Module to skim council website and extract rubish collection times.",
     "issues": [],
-    "stars": 0
+    "stars": 0,
+    "hasGithubIssues": true
   },
   {
     "name": "MMM-Rugby",
@@ -9598,7 +9608,9 @@
     "maintainer": "mumblebaj",
     "maintainerURL": "",
     "description": "Module to display Rugby World Rankings and Upcoming Matches and results",
-    "issues": []
+    "issues": [],
+    "stars": 1,
+    "hasGithubIssues": true
   },
   {
     "name": "MMM-Russianwarship",
@@ -9608,7 +9620,8 @@
     "maintainerURL": "https://github.com/uncleLem",
     "description": "The total losses of the russian occupier since the full-scale invasion in Ukraine, per General Staff of the Armed Forces of Ukraine.",
     "issues": [],
-    "stars": 4
+    "stars": 4,
+    "hasGithubIssues": true
   },
   {
     "name": "MMM-Ruter",
@@ -9619,7 +9632,8 @@
     "description": "Display public transport information for Oslo and Akershus in Norway.",
     "issues": [],
     "outdated": "Abandoned. Repo has been archived at 2019-03-14. See <a href=\"https://github.com/Arve/MMM-Entur-tavle\">MMM-Entur-tavle</a> instead.",
-    "stars": 18
+    "stars": 19,
+    "hasGithubIssues": true
   },
   {
     "name": "MMM-RVV",
@@ -9629,7 +9643,8 @@
     "maintainerURL": "https://github.com/sebikolon/MMM-RVV \"github.com/sebikolon\"",
     "description": "Departure monitor for the RVV (Regensburger Verkehrsverbund) public transport (bus) system (Bavaria/Germany).",
     "issues": [],
-    "stars": 5
+    "stars": 5,
+    "hasGithubIssues": true
   },
   {
     "name": "MMM-Sbanken",
@@ -9639,7 +9654,8 @@
     "maintainerURL": "https://github.com/reidarw",
     "description": "Displaying transactions and account balance from Sbanken (Norway).",
     "issues": [],
-    "stars": 1
+    "stars": 1,
+    "hasGithubIssues": true
   },
   {
     "name": "MMM-Scenes",
@@ -9650,7 +9666,8 @@
     "description": "Module to change screen scenes by time and order with ANIMATION EFFECT.",
     "issues": [],
     "outdated": "Deprecated. The successor is MMM-Scenes2.",
-    "stars": 12
+    "stars": 12,
+    "hasGithubIssues": true
   },
   {
     "name": "MMM-Scenes2",
@@ -9660,7 +9677,8 @@
     "maintainerURL": "",
     "description": "Module to change screen scenes by time and order with ANIMATION EFFECT. Successor of MMM-Scenes since MM 2.25 (AnimateCSS is introduced).",
     "issues": [],
-    "stars": 2
+    "stars": 2,
+    "hasGithubIssues": true
   },
   {
     "name": "MMM-ScottishPremierLeague",
@@ -9671,7 +9689,8 @@
     "description": "Display scottish premiere league standings.",
     "issues": [],
     "outdated": "Abandoned. Repo has been archived at 2020-05-09.",
-    "stars": 1
+    "stars": 1,
+    "hasGithubIssues": true
   },
   {
     "name": "MMM-Screen-Powersave-Notification",
@@ -9681,7 +9700,8 @@
     "maintainerURL": "https://github.com/Tom-Hirschberger",
     "description": "Screensaver module which shuts the screen off if USER_PRESENCE is not received within specified timeout. Can be used as PIR module in combination with <a target=\"_blank\" href=\"https://github.com/Tom-Hirschberger/MMM-GPIO-Notifications\">MMM-GPIO-Notifications</a>.",
     "issues": [],
-    "stars": 0
+    "stars": 1,
+    "hasGithubIssues": true
   },
   {
     "name": "MMM-Screencast",
@@ -9691,7 +9711,8 @@
     "maintainerURL": "",
     "description": "Cast a video from your phone to your mirror (currently can only cast YouTube).",
     "issues": [],
-    "stars": 159
+    "stars": 160,
+    "hasGithubIssues": true
   },
   {
     "name": "MMM-ScreenLogic",
@@ -9701,7 +9722,8 @@
     "maintainerURL": "",
     "description": "Module to read data from a Pentair ScreenLogic pool system.",
     "issues": [],
-    "stars": 2
+    "stars": 2,
+    "hasGithubIssues": true
   },
   {
     "name": "MMM-ScriptScheduler",
@@ -9711,7 +9733,8 @@
     "maintainerURL": "",
     "description": "Run a set of command-line scripts on a cron schedule and display an icon to differentiate.",
     "issues": [],
-    "stars": 6
+    "stars": 6,
+    "hasGithubIssues": true
   },
   {
     "name": "MMM-Scrobbler",
@@ -9721,7 +9744,8 @@
     "maintainerURL": "",
     "description": "Display the current playing song from Spotify, ITunes and Co.",
     "issues": [],
-    "stars": 38
+    "stars": 39,
+    "hasGithubIssues": true
   },
   {
     "name": "MMM-SE-Reputation",
@@ -9731,7 +9755,8 @@
     "maintainerURL": "https://github.com/ChielChiel",
     "description": "Display your reputation of a StackExchange site (such as StackOverflow).",
     "issues": [],
-    "stars": 1
+    "stars": 1,
+    "hasGithubIssues": true
   },
   {
     "name": "MMM-SearchLight",
@@ -9741,7 +9766,8 @@
     "maintainerURL": "",
     "description": "Screensaver.",
     "issues": [],
-    "stars": 1
+    "stars": 1,
+    "hasGithubIssues": true
   },
   {
     "name": "MMM-SeawayLockTraffic",
@@ -9751,7 +9777,8 @@
     "maintainerURL": "",
     "description": "Display order of turn information for ships transiting the St Lawrence Seaway Locks.",
     "issues": [],
-    "stars": 0
+    "stars": 0,
+    "hasGithubIssues": true
   },
   {
     "name": "MMM-Selfie",
@@ -9761,7 +9788,8 @@
     "maintainerURL": "",
     "description": "Takes a Selfie with an official Raspberry Pi Cam and can publish it to Facebook or Twitter. Needs API keys. Integrates nicely with MMM-Assistant (for voice control) and MMM-TelegramBot (for Telegram control).",
     "issues": [],
-    "stars": 9
+    "stars": 9,
+    "hasGithubIssues": true
   },
   {
     "name": "MMM-Selfieshot",
@@ -9771,7 +9799,8 @@
     "maintainerURL": "https://github.com/BrianHepler",
     "description": "Taking a Selfie with USB cam.",
     "issues": [],
-    "stars": 8
+    "stars": 8,
+    "hasGithubIssues": true
   },
   {
     "name": "MMM-SendNotificationButton",
@@ -9781,7 +9810,8 @@
     "maintainerURL": "",
     "description": "Web form to send arbitrary messages via <code>this.sendNotification()</code>.",
     "issues": [],
-    "stars": 5
+    "stars": 5,
+    "hasGithubIssues": true
   },
   {
     "name": "MMM-Seneye",
@@ -9791,7 +9821,8 @@
     "maintainerURL": "",
     "description": "Connects to the Seneye Aquarium Monitor API and displays water parameters from the most recent test data.",
     "issues": [],
-    "stars": 1
+    "stars": 1,
+    "hasGithubIssues": true
   },
   {
     "name": "MMM-SensorGateway",
@@ -9801,7 +9832,8 @@
     "maintainerURL": "",
     "description": "This module enables having live sensor data without touching the Pi hardware by utilizing the BLE advertisment beacons from sensors and routing that live info into MagicMirror² platform.",
     "issues": [],
-    "stars": 2
+    "stars": 2,
+    "hasGithubIssues": true
   },
   {
     "name": "MMM-Serial-Notifications",
@@ -9810,8 +9842,7 @@
     "maintainer": "Tom-Hirschberger",
     "maintainerURL": "https://github.com/Tom-Hirschberger",
     "description": "A module to send notifications based on messages received via one/multiple serial devices.",
-    "issues": [],
-    "stars": 6
+    "issues": []
   },
   {
     "name": "MMM-ServerStatus",

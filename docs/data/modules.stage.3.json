@@ -3668,7 +3668,7 @@
     "maintainerURL": "https://github.com/mumblebaj",
     "description": "Display loadshedding schedule data for the South African users.",
     "issues": [
-      "Please use 'smart home' instead of 'smarthome' as a tag."
+      "Please use 'smart home' instead of 'smarthome' as a keyword in your package.json."
     ],
     "stars": 1,
     "hasGithubIssues": true,
@@ -3875,12 +3875,14 @@
     "maintainer": "bugsounet",
     "maintainerURL": "https://wiki.bugsounet.fr",
     "description": "Display Channel from French Internet Provider: Free.",
-    "issues": [
-      "There are no keywords in 'package.json'. We would use them as tags on the module list page.",
-      "Issues are not enabled in the GitHub repository. So users cannot report bugs. Please enable issues in your repo."
-    ],
+    "issues": [],
     "stars": 1,
     "hasGithubIssues": false,
+    "tags": [
+      "freebox",
+      "free",
+      "tv"
+    ],
     "license": "MIT",
     "image": "resources-FreeboxTV.jpg"
   },
@@ -3945,11 +3947,13 @@
     "maintainerURL": "https://wiki.bugsounet.fr",
     "description": "Control your mirror with a keyboard.",
     "issues": [
-      "There are no keywords in 'package.json'. We would use them as tags on the module list page.",
       "No image found."
     ],
     "stars": 1,
     "hasGithubIssues": false,
+    "tags": [
+      "keyboard"
+    ],
     "license": "MIT"
   },
   {
@@ -5489,7 +5493,7 @@
     "maintainerURL": "https://wiki.bugsounet.fr",
     "description": "MMM-GoogleAssistant is an real embedded Google assistant on MagicMirror² with many <a target=\"_blank\" href=\"#extended-plugins-for-mmm-googleassistant\">plugins</a> . [Maintained].",
     "issues": [
-      "Please use 'smart home' instead of 'smarthome' as a tag."
+      "Please use 'smart home' instead of 'smarthome' as a keyword in your package.json."
     ],
     "stars": 79,
     "hasGithubIssues": false,
@@ -5889,7 +5893,7 @@
     "maintainerURL": "https://github.com/mumblebaj",
     "description": "Display data from Growatt Inveter. Support multiple Growatt Inverter types.",
     "issues": [
-      "Please use 'smart home' instead of 'smarthome' as a tag."
+      "Please use 'smart home' instead of 'smarthome' as a keyword in your package.json."
     ],
     "stars": 2,
     "hasGithubIssues": true,
@@ -5925,7 +5929,7 @@
     "maintainerURL": "https://github.com/mumblebaj",
     "description": "Display status data from Growatt Inveter. Support multiple Growatt Inverter types. Made to work in conjunction with <a target=\"_blank\" href=\"https://github.com/mumblebaj/MMM-Growatt\">MMM-Growatt</a> or independently.",
     "issues": [
-      "Please use 'smart home' instead of 'smarthome' as a tag."
+      "Please use 'smart home' instead of 'smarthome' as a keyword in your package.json."
     ],
     "stars": 1,
     "hasGithubIssues": true,
@@ -6335,7 +6339,7 @@
     "maintainerURL": "https://github.com/Sickboy78",
     "description": "Shows values and warnings from HomeMatic smart home components and system variables as text and/or icons. Highly flexible and customizable design.",
     "issues": [
-      "Please use 'smart home' instead of 'smarthome' as a tag."
+      "Please use 'smart home' instead of 'smarthome' as a keyword in your package.json."
     ],
     "stars": 12,
     "hasGithubIssues": true,
@@ -6354,7 +6358,7 @@
     "maintainerURL": "https://github.com/JFWenisch",
     "description": "Requests device information from the HomeMatic CCU and displays them grouped by the assigned room.",
     "issues": [
-      "Please use 'smart home' instead of 'smarthome' as a tag."
+      "Please use 'smart home' instead of 'smarthome' as a keyword in your package.json."
     ],
     "stars": 2,
     "hasGithubIssues": true,
@@ -7829,6 +7833,8 @@
     "issues": [
       "`package.json` issue: No description"
     ],
+    "stars": 6,
+    "hasGithubIssues": true,
     "tags": [
       "spotify lyrics",
       "lyrics",
@@ -9500,7 +9506,7 @@
     "maintainerURL": "",
     "description": "A module that subscribes topics from MQTT message queues, and displays the payload values in a table, with configurable labels.",
     "issues": [
-      "Please use 'smart home' instead of 'smarthome' as a tag."
+      "Please use 'smart home' instead of 'smarthome' as a keyword in your package.json."
     ],
     "stars": 55,
     "hasGithubIssues": true,
@@ -10363,7 +10369,7 @@
     "maintainerURL": "",
     "description": "Display your Netatmo in/outdoor weather station data.",
     "issues": [
-      "Please use 'smart home' instead of 'smarthome' as a tag."
+      "Please use 'smart home' instead of 'smarthome' as a keyword in your package.json."
     ],
     "stars": 32,
     "hasGithubIssues": true,
@@ -13523,6 +13529,8 @@
     "issues": [
       "There are no keywords in 'package.json'. We would use them as tags on the module list page."
     ],
+    "stars": 1,
+    "hasGithubIssues": true,
     "license": "MIT",
     "image": "screenshot.jpg"
   },
@@ -13536,7 +13544,8 @@
     "issues": [
       "There is no `package.json`. We need this file to gather information about the module for the module list page."
     ],
-    "stars": 0
+    "stars": 0,
+    "hasGithubIssues": true
   },
   {
     "name": "MMM-RPI-LED",
@@ -13550,6 +13559,7 @@
       "No image found."
     ],
     "stars": 4,
+    "hasGithubIssues": true,
     "license": "MIT"
   },
   {
@@ -13562,7 +13572,8 @@
     "issues": [
       "There is no `package.json`. We need this file to gather information about the module for the module list page."
     ],
-    "stars": 25
+    "stars": 25,
+    "hasGithubIssues": true
   },
   {
     "name": "MMM-RTSPStream",
@@ -13575,6 +13586,7 @@
       "There are no keywords in 'package.json'. We would use them as tags on the module list page."
     ],
     "stars": 69,
+    "hasGithubIssues": true,
     "license": "MIT",
     "image": "screenshot.jpg"
   },
@@ -13590,7 +13602,8 @@
       "There are no keywords in 'package.json'. We would use them as tags on the module list page.",
       "No image found."
     ],
-    "stars": 11,
+    "stars": 12,
+    "hasGithubIssues": true,
     "license": "ISC"
   },
   {
@@ -13605,6 +13618,7 @@
       "There are no keywords in 'package.json'. We would use them as tags on the module list page."
     ],
     "stars": 0,
+    "hasGithubIssues": true,
     "license": "MIT",
     "image": "img-App_Shot.jpg"
   },
@@ -13616,6 +13630,8 @@
     "maintainerURL": "",
     "description": "Module to display Rugby World Rankings and Upcoming Matches and results",
     "issues": [],
+    "stars": 1,
+    "hasGithubIssues": true,
     "tags": [
       "rugby",
       "sport"
@@ -13632,6 +13648,7 @@
     "description": "The total losses of the russian occupier since the full-scale invasion in Ukraine, per General Staff of the Armed Forces of Ukraine.",
     "issues": [],
     "stars": 4,
+    "hasGithubIssues": true,
     "tags": [
       "russian invasion"
     ],
@@ -13650,7 +13667,8 @@
       "There are no keywords in 'package.json'. We would use them as tags on the module list page."
     ],
     "outdated": "Abandoned. Repo has been archived at 2019-03-14. See <a href=\"https://github.com/Arve/MMM-Entur-tavle\">MMM-Entur-tavle</a> instead.",
-    "stars": 18,
+    "stars": 19,
+    "hasGithubIssues": true,
     "license": "ISC",
     "image": "images-MMM-Ruter_Full.jpg"
   },
@@ -13664,7 +13682,8 @@
     "issues": [
       "There is no `package.json`. We need this file to gather information about the module for the module list page."
     ],
-    "stars": 5
+    "stars": 5,
+    "hasGithubIssues": true
   },
   {
     "name": "MMM-Sbanken",
@@ -13676,7 +13695,8 @@
     "issues": [
       "There is no `package.json`. We need this file to gather information about the module for the module list page."
     ],
-    "stars": 1
+    "stars": 1,
+    "hasGithubIssues": true
   },
   {
     "name": "MMM-Scenes",
@@ -13690,6 +13710,7 @@
     ],
     "outdated": "Deprecated. The successor is MMM-Scenes2.",
     "stars": 12,
+    "hasGithubIssues": true,
     "tags": [
       "paging",
       "animation"
@@ -13709,6 +13730,7 @@
       "No image found."
     ],
     "stars": 2,
+    "hasGithubIssues": true,
     "license": "MIT"
   },
   {
@@ -13721,6 +13743,7 @@
     "issues": [],
     "outdated": "Abandoned. Repo has been archived at 2020-05-09.",
     "stars": 1,
+    "hasGithubIssues": true,
     "tags": [
       "scottish premier league"
     ],
@@ -13735,7 +13758,8 @@
     "maintainerURL": "https://github.com/Tom-Hirschberger",
     "description": "Screensaver module which shuts the screen off if USER_PRESENCE is not received within specified timeout. Can be used as PIR module in combination with <a target=\"_blank\" href=\"https://github.com/Tom-Hirschberger/MMM-GPIO-Notifications\">MMM-GPIO-Notifications</a>.",
     "issues": [],
-    "stars": 0,
+    "stars": 1,
+    "hasGithubIssues": true,
     "tags": [
       "screensave",
       "pir"
@@ -13751,7 +13775,8 @@
     "maintainerURL": "",
     "description": "Cast a video from your phone to your mirror (currently can only cast YouTube).",
     "issues": [],
-    "stars": 159,
+    "stars": 160,
+    "hasGithubIssues": true,
     "tags": [
       "chromecast",
       "dial",
@@ -13773,6 +13798,7 @@
       "There are no keywords in 'package.json'. We would use them as tags on the module list page."
     ],
     "stars": 2,
+    "hasGithubIssues": true,
     "license": "MIT",
     "image": "screenshot.jpg"
   },
@@ -13785,6 +13811,7 @@
     "description": "Run a set of command-line scripts on a cron schedule and display an icon to differentiate.",
     "issues": [],
     "stars": 6,
+    "hasGithubIssues": true,
     "tags": [
       "volume",
       "mute",
@@ -13803,7 +13830,8 @@
     "issues": [
       "There is no `package.json`. We need this file to gather information about the module for the module list page."
     ],
-    "stars": 38
+    "stars": 39,
+    "hasGithubIssues": true
   },
   {
     "name": "MMM-SE-Reputation",
@@ -13817,6 +13845,7 @@
       "There are no keywords in 'package.json'. We would use them as tags on the module list page."
     ],
     "stars": 1,
+    "hasGithubIssues": true,
     "license": "MIT",
     "image": "docs-module_graph.jpg"
   },
@@ -13830,7 +13859,8 @@
     "issues": [
       "There is no `package.json`. We need this file to gather information about the module for the module list page."
     ],
-    "stars": 1
+    "stars": 1,
+    "hasGithubIssues": true
   },
   {
     "name": "MMM-SeawayLockTraffic",
@@ -13842,7 +13872,8 @@
     "issues": [
       "There is no `package.json`. We need this file to gather information about the module for the module list page."
     ],
-    "stars": 0
+    "stars": 0,
+    "hasGithubIssues": true
   },
   {
     "name": "MMM-Selfie",
@@ -13855,6 +13886,7 @@
       "No image found."
     ],
     "stars": 9,
+    "hasGithubIssues": true,
     "tags": [
       "selfie"
     ],
@@ -13871,6 +13903,7 @@
       "There are no keywords in 'package.json'. We would use them as tags on the module list page."
     ],
     "stars": 8,
+    "hasGithubIssues": true,
     "license": "MIT",
     "image": "screenshot.jpg"
   },
@@ -13884,7 +13917,8 @@
     "issues": [
       "There is no `package.json`. We need this file to gather information about the module for the module list page."
     ],
-    "stars": 5
+    "stars": 5,
+    "hasGithubIssues": true
   },
   {
     "name": "MMM-Seneye",
@@ -13897,7 +13931,8 @@
       "`package.json` issue: No repository field.",
       "There are no keywords in 'package.json'. We would use them as tags on the module list page."
     ],
-    "stars": 1
+    "stars": 1,
+    "hasGithubIssues": true
   },
   {
     "name": "MMM-SensorGateway",
@@ -13910,6 +13945,7 @@
       "`package.json` issue: No repository field."
     ],
     "stars": 2,
+    "hasGithubIssues": true,
     "tags": [
       "movesense",
       "ruuvitag",
@@ -13926,7 +13962,6 @@
     "maintainerURL": "https://github.com/Tom-Hirschberger",
     "description": "A module to send notifications based on messages received via one/multiple serial devices.",
     "issues": [],
-    "stars": 6,
     "tags": [
       "serial console",
       "tty",
@@ -15462,7 +15497,7 @@
     "maintainerURL": "",
     "description": "Show electricity related data for Tibber customers. Shows power, prices, consumption, voltage, current and more.",
     "issues": [
-      "Please use 'smart home' instead of 'smarthome' as a tag."
+      "Please use 'smart home' instead of 'smarthome' as a keyword in your package.json."
     ],
     "stars": 31,
     "tags": [
@@ -15681,7 +15716,7 @@
     "maintainerURL": "https://github.com/slametps",
     "description": "Display the status of TPLink lights/plugs in your local network.",
     "issues": [
-      "Please use 'smart home' instead of 'smarthome' as a tag."
+      "Please use 'smart home' instead of 'smarthome' as a keyword in your package.json."
     ],
     "stars": 4,
     "tags": [
@@ -15928,7 +15963,7 @@
     "maintainerURL": "https://github.com/slametps",
     "description": "Display the status of smarthome devices based on Tuya IoT-Platform (managed by SmartLife app).",
     "issues": [
-      "Please use 'smart home' instead of 'smarthome' as a tag."
+      "Please use 'smart home' instead of 'smarthome' as a keyword in your package.json."
     ],
     "stars": 3,
     "tags": [
@@ -17245,7 +17280,7 @@
     "maintainerURL": "https://github.com/slametps",
     "description": "Display the status of Yeelight bulbs in your local network.",
     "issues": [
-      "Please use 'smart home' instead of 'smarthome' as a tag."
+      "Please use 'smart home' instead of 'smarthome' as a keyword in your package.json."
     ],
     "stars": 4,
     "tags": [
