@@ -199,6 +199,7 @@ def check_modules():
     markdown_output_modules = ""
 
     for module in modules:
+        module["defaultSortWeight"] = 0
         stats["moduleCounter"] += 1
 
         module_directory = module["name"] + "-----" + module["maintainer"]
@@ -208,12 +209,19 @@ def check_modules():
         print(progress, end="")
 
         if module["name"].startswith("EXT-"):
+            # Modules with a name starting with "EXT-" are only for MMM-GoogleAssistant. So we make them heavier for the default sort order.
+            module["defaultSortWeight"] += 2
+
             module["description"] += " This module have been defined to work only with MMM-GoogleAssistant."
 
         elif not module["name"].startswith("MMM-"):
             module["issues"].append(
                 "Recommendation: Module name doesn't follow the recommended pattern (it doesn't start with `MMM-`). Consider renaming your module."
             )
+
+        # Because we make EXT modules heavier we lift MMM-GoogleAssistant a bit up.
+        if module["name"] == ("MMM-GoogleAssistant"):
+            module["defaultSortWeight"] -= 2
 
         module_directory_path = Path("./modules/" + module_directory)
         for file_path in sorted(module_directory_path.rglob("*")):
@@ -275,6 +283,7 @@ def check_modules():
             markdown_output_modules += f"\n### [{module['name']} by {module['maintainer']}]({module['url']})\n\n"
 
             if "outdated" in module:
+                module["defaultSortWeight"] += 900
                 stats["issueCounter"] += 1
                 markdown_output_modules += (
                     f"0. This module is outdated: {module['outdated']}\n"
@@ -301,22 +310,26 @@ def check_modules():
         else:
             stats["maintainer"][module["maintainer"]] += 1
 
-        # Replace the issue array with the issue number. The issues were written to resuld.md and only the number of issues is relevant for the website. This reduces the size of modules.json by more than half.
-        module["issues"] = len(module["issues"])
+        module["defaultSortWeight"] += len(module["issues"])
+
+        # Replace the issue array with boolean. The issues were written to resuld.md and for the website is only relevant if the module has issues or not. This reduces the size of modules.json by more than half.
+        if len(module["issues"]) > 0:
+            module["issues"] = True
+        else:
+            module["issues"] = False
 
         # Just to reduce imbalance in the default sort order, modules from this developer get minimum one issue.
         if module['maintainer'] == "KristjanESPERANTO":
-            if module["issues"] == 0:
-                module["issues"] = 1
+            module["defaultSortWeight"] += 1
 
         # Lift modules with many stars in the default sort order.
-        if module.get('stars', 0) >= 50 and module["issues"] > 0:
-            module['issues'] = max(
-                1, module['issues'] - (module['stars'] // 50))
+        if module.get('stars', 0) >= 50 and module["defaultSortWeight"] > 0:
+            module["defaultSortWeight"] = max(
+                1, module["defaultSortWeight"] - (module['stars'] // 50))
 
         # Lower modules with few stars in the default sort order.
         # if module.get('stars', 0) < 3:
-        #    module['issues'] += 1
+        #    module["defaultSortWeight"] += 1
 
     print(
         f"{stats['moduleCounter']} modules analyzed. For results see file result.md.           ")

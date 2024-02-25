@@ -100,8 +100,7 @@ function createCard (moduleData) {
   }
 
 
-  if (moduleData.issues > 0 && !(moduleData.maintainer === "KristjanESPERANTO" && moduleData.issues === 1)) {
-    // To reduce imbalance in the default sort order, modules from KristjanESPERANTO get a fake-issue (look at the check_modules.py). This condition is here to avoid displaying the div incorrectly.
+  if (moduleData.issues) {
     const url = `https://github.com/KristjanESPERANTO/MagicMirror-3rd-Party-Modules/blob/main/result.md#${moduleData.name}-by-${moduleData.maintainer}`;
     card.querySelector(".info .container.issues .text").href = url;
   } else {
@@ -168,10 +167,8 @@ function sortData (sortOption) {
       break;
     default:
       filteredModuleList.sort((a, b) =>
-        // Put oudated to the end
-        Boolean(a.outdated) - Boolean(b.outdated) ||
-        // Sort by issue count
-        a.issues - b.issues ||
+        // Sort by defaultSortWeight (outdated at the end, rest by issue count)
+        a.defaultSortWeight - b.defaultSortWeight ||
         // Sort by last commit date
         b.lastCommit.localeCompare(a.lastCommit));
   }
