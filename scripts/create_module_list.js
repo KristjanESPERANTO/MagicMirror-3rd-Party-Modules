@@ -19,8 +19,8 @@ async function fetchMarkdownData () {
 }
 
 function sortByNameIgnoringPrefix (a, b) {
-  const nameA = a.name.replace("MMM-", "");
-  const nameB = b.name.replace("MMM-", "");
+  const nameA = a.name.replace("MMM-", "").replace("EXT-", "");
+  const nameB = b.name.replace("MMM-", "").replace("EXT-", "");
   return nameA.localeCompare(nameB);
 }
 
