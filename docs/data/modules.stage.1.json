@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "2024-02-25T16:52:21.935Z",
+  "lastUpdate": "2024-02-25T21:07:52.199Z",
   "modules": [
     {
       "name": "MMM-01ZM",
@@ -143,6 +143,15 @@
       "maintainer": "fewieden",
       "maintainerURL": "",
       "description": "Alarm Clock Module (touch and non-touch).",
+      "issues": []
+    },
+    {
+      "name": "EXT-Alert",
+      "url": "https://github.com/bugsounet/EXT-Alert",
+      "id": "bugsounet/EXT-Alert",
+      "maintainer": "bugsounet",
+      "maintainerURL": "https://wiki.bugsounet.fr",
+      "description": "Display any warning, information or error on your screen about Assistant.",
       "issues": []
     },
     {
@@ -415,6 +424,15 @@
       "maintainer": "dolanmiu",
       "maintainerURL": "",
       "description": "Easy, hands free Amazon Alexa integration; activated, simply by saying \"Alexa\".",
+      "issues": []
+    },
+    {
+      "name": "EXT-Background",
+      "url": "https://github.com/bugsounet/EXT-Background",
+      "id": "bugsounet/EXT-Background",
+      "maintainer": "bugsounet",
+      "maintainerURL": "https://wiki.bugsounet.fr",
+      "description": "Change the default Google Assistant background to your own or with animated gifs for each status of the assistant.",
       "issues": []
     },
     {
@@ -764,12 +782,30 @@
       "issues": []
     },
     {
+      "name": "EXT-Bring",
+      "url": "https://github.com/bugsounet/EXT-Bring",
+      "id": "bugsounet/EXT-Bring",
+      "maintainer": "bugsounet",
+      "maintainerURL": "https://wiki.bugsounet.fr",
+      "description": "Show your current shopping list of Bring!",
+      "issues": []
+    },
+    {
       "name": "MMM-bringList",
       "url": "https://github.com/rseidt/MMM-bringList",
       "id": "rseidt/MMM-bringList",
       "maintainer": "rseidt",
       "maintainerURL": "",
       "description": "Display a Bring! shopping list in a tabular view.",
+      "issues": []
+    },
+    {
+      "name": "EXT-Browser",
+      "url": "https://github.com/bugsounet/EXT-Browser",
+      "id": "bugsounet/EXT-Browser",
+      "maintainer": "bugsounet",
+      "maintainerURL": "https://wiki.bugsounet.fr",
+      "description": "Display any internet web page like a real browser in fullscreen.",
       "issues": []
     },
     {
@@ -1732,6 +1768,15 @@
       "issues": []
     },
     {
+      "name": "EXT-Detector",
+      "url": "https://github.com/bugsounet/EXT-Detector",
+      "id": "bugsounet/EXT-Detector",
+      "maintainer": "bugsounet",
+      "maintainerURL": "https://wiki.bugsounet.fr",
+      "description": "Multi-keyword listener for MMM-GoogleAssistant.",
+      "issues": []
+    },
+    {
       "name": "MMM-DHT",
       "url": "https://github.com/ckoutavas/MMM-DHT",
       "id": "ckoutavas/MMM-DHT",
@@ -2218,285 +2263,6 @@
       "issues": []
     },
     {
-      "name": "EXT-Alert",
-      "url": "https://github.com/bugsounet/EXT-Alert",
-      "id": "bugsounet/EXT-Alert",
-      "maintainer": "bugsounet",
-      "maintainerURL": "https://wiki.bugsounet.fr",
-      "description": "Display any warning, information or error on your screen about Assistant.",
-      "issues": []
-    },
-    {
-      "name": "EXT-Background",
-      "url": "https://github.com/bugsounet/EXT-Background",
-      "id": "bugsounet/EXT-Background",
-      "maintainer": "bugsounet",
-      "maintainerURL": "https://wiki.bugsounet.fr",
-      "description": "Change the default Google Assistant background to your own or with animated gifs for each status of the assistant.",
-      "issues": []
-    },
-    {
-      "name": "EXT-Bring",
-      "url": "https://github.com/bugsounet/EXT-Bring",
-      "id": "bugsounet/EXT-Bring",
-      "maintainer": "bugsounet",
-      "maintainerURL": "https://wiki.bugsounet.fr",
-      "description": "Show your current shopping list of Bring!",
-      "issues": []
-    },
-    {
-      "name": "EXT-Browser",
-      "url": "https://github.com/bugsounet/EXT-Browser",
-      "id": "bugsounet/EXT-Browser",
-      "maintainer": "bugsounet",
-      "maintainerURL": "https://wiki.bugsounet.fr",
-      "description": "Display any internet web page like a real browser in fullscreen.",
-      "issues": []
-    },
-    {
-      "name": "EXT-Detector",
-      "url": "https://github.com/bugsounet/EXT-Detector",
-      "id": "bugsounet/EXT-Detector",
-      "maintainer": "bugsounet",
-      "maintainerURL": "https://wiki.bugsounet.fr",
-      "description": "Multi-keyword listener for MMM-GoogleAssistant.",
-      "issues": []
-    },
-    {
-      "name": "EXT-FreeboxTV",
-      "url": "https://github.com/bugsounet/EXT-FreeboxTV",
-      "id": "bugsounet/EXT-FreeboxTV",
-      "maintainer": "bugsounet",
-      "maintainerURL": "https://wiki.bugsounet.fr",
-      "description": "Display Channel from French Internet Provider: Free.",
-      "issues": []
-    },
-    {
-      "name": "EXT-GooglePhotos",
-      "url": "https://github.com/bugsounet/EXT-GooglePhotos",
-      "id": "bugsounet/EXT-GooglePhotos",
-      "maintainer": "bugsounet",
-      "maintainerURL": "https://wiki.bugsounet.fr",
-      "description": "Display your album directory with Google photos API in background or in MagicMirror² position.",
-      "issues": []
-    },
-    {
-      "name": "EXT-Governor",
-      "url": "https://github.com/bugsounet/EXT-Governor",
-      "id": "bugsounet/EXT-Governor",
-      "maintainer": "bugsounet",
-      "maintainerURL": "https://wiki.bugsounet.fr",
-      "description": "CPU governor enables the operating system to scale the CPU frequency up or down in order to save power or improve performance.",
-      "issues": []
-    },
-    {
-      "name": "EXT-Internet",
-      "url": "https://github.com/bugsounet/EXT-Internet",
-      "id": "bugsounet/EXT-Internet",
-      "maintainer": "bugsounet",
-      "maintainerURL": "https://wiki.bugsounet.fr",
-      "description": "Check your internet connexion, display ping.",
-      "issues": []
-    },
-    {
-      "name": "EXT-Keyboard",
-      "url": "https://github.com/bugsounet/EXT-Keyboard",
-      "id": "bugsounet/EXT-Keyboard",
-      "maintainer": "bugsounet",
-      "maintainerURL": "https://wiki.bugsounet.fr",
-      "description": "Control your mirror with a keyboard.",
-      "issues": []
-    },
-    {
-      "name": "EXT-Librespot",
-      "url": "https://github.com/bugsounet/EXT-Librespot",
-      "id": "bugsounet/EXT-Librespot",
-      "maintainer": "bugsounet",
-      "maintainerURL": "https://wiki.bugsounet.fr",
-      "description": "Allow to play Spotify music on your mirror with Librespot.",
-      "issues": []
-    },
-    {
-      "name": "EXT-Motion",
-      "url": "https://github.com/bugsounet/EXT-Motion",
-      "id": "bugsounet/EXT-Motion",
-      "maintainer": "bugsounet",
-      "maintainerURL": "https://wiki.bugsounet.fr",
-      "description": "Control your screen with a webcam (as motion detector).",
-      "issues": []
-    },
-    {
-      "name": "EXT-MusicPlayer",
-      "url": "https://github.com/bugsounet/EXT-MusicPlayer",
-      "id": "bugsounet/EXT-MusicPlayer",
-      "maintainer": "bugsounet",
-      "maintainerURL": "https://wiki.bugsounet.fr",
-      "description": "Play any music found on a USB Key or in defined local directory.",
-      "issues": []
-    },
-    {
-      "name": "EXT-Pages",
-      "url": "https://github.com/bugsounet/EXT-Pages",
-      "id": "bugsounet/EXT-Pages",
-      "maintainer": "bugsounet",
-      "maintainerURL": "https://wiki.bugsounet.fr",
-      "description": "This plugin allows you to have animated pages.",
-      "issues": []
-    },
-    {
-      "name": "EXT-Photos",
-      "url": "https://github.com/bugsounet/EXT-Photos",
-      "id": "bugsounet/EXT-Photos",
-      "maintainer": "bugsounet",
-      "maintainerURL": "https://wiki.bugsounet.fr",
-      "description": "Displaying any photos discover by assistant in fullscreen.",
-      "issues": []
-    },
-    {
-      "name": "EXT-Pir",
-      "url": "https://github.com/bugsounet/EXT-Pir",
-      "id": "bugsounet/EXT-Pir",
-      "maintainer": "bugsounet",
-      "maintainerURL": "https://wiki.bugsounet.fr",
-      "description": "Control your screen with a PIR Sensor.",
-      "issues": []
-    },
-    {
-      "name": "EXT-RadioPlayer",
-      "url": "https://github.com/bugsounet/EXT-RadioPlayer",
-      "id": "bugsounet/EXT-RadioPlayer",
-      "maintainer": "bugsounet",
-      "maintainerURL": "https://wiki.bugsounet.fr",
-      "description": "Play radio station on MagicMirror².",
-      "issues": []
-    },
-    {
-      "name": "EXT-Screen",
-      "url": "https://github.com/bugsounet/EXT-Screen",
-      "id": "bugsounet/EXT-Screen",
-      "maintainer": "bugsounet",
-      "maintainerURL": "https://wiki.bugsounet.fr",
-      "description": "After a configurated time without any user interaction the display will turn off and hide all modules for economy mode.",
-      "issues": []
-    },
-    {
-      "name": "EXT-Selfies",
-      "url": "https://github.com/bugsounet/EXT-Selfies",
-      "id": "bugsounet/EXT-Selfies",
-      "maintainer": "bugsounet",
-      "maintainerURL": "https://wiki.bugsounet.fr",
-      "description": "Take selfies from webcam.",
-      "issues": []
-    },
-    {
-      "name": "EXT-SelfiesFlash",
-      "url": "https://github.com/bugsounet/EXT-SelfiesFlash",
-      "id": "bugsounet/EXT-SelfiesFlash",
-      "maintainer": "bugsounet",
-      "maintainerURL": "https://wiki.bugsounet.fr",
-      "description": "Need a flash to take selfies?",
-      "issues": []
-    },
-    {
-      "name": "EXT-SelfiesSender",
-      "url": "https://github.com/bugsounet/EXT-SelfiesSender",
-      "id": "bugsounet/EXT-SelfiesSender",
-      "maintainer": "bugsounet",
-      "maintainerURL": "https://wiki.bugsounet.fr",
-      "description": "Send your selfies to Telegram, google photos or by mail.",
-      "issues": []
-    },
-    {
-      "name": "EXT-SelfiesViewer",
-      "url": "https://github.com/bugsounet/EXT-SelfiesViewer",
-      "id": "bugsounet/EXT-SelfiesViewer",
-      "maintainer": "bugsounet",
-      "maintainerURL": "https://wiki.bugsounet.fr",
-      "description": "Slideshow of your best selfies.",
-      "issues": []
-    },
-    {
-      "name": "EXT-Spotify",
-      "url": "https://github.com/bugsounet/EXT-Spotify",
-      "id": "bugsounet/EXT-Spotify",
-      "maintainer": "bugsounet",
-      "maintainerURL": "https://wiki.bugsounet.fr",
-      "description": "This plugin show current spotify playback of any devices.",
-      "issues": []
-    },
-    {
-      "name": "EXT-SpotifyCanvasLyrics",
-      "url": "https://github.com/bugsounet/EXT-SpotifyCanvasLyrics",
-      "id": "bugsounet/EXT-SpotifyCanvasLyrics",
-      "maintainer": "bugsounet",
-      "maintainerURL": "https://wiki.bugsounet.fr",
-      "description": "Create a server for displaying any Lyrics and Canvas from Spotify.",
-      "issues": []
-    },
-    {
-      "name": "EXT-StreamDeck",
-      "url": "https://github.com/bugsounet/EXT-StreamDeck",
-      "id": "bugsounet/EXT-StreamDeck",
-      "maintainer": "bugsounet",
-      "maintainerURL": "https://wiki.bugsounet.fr",
-      "description": "Control your mirror with a StreamDeck by elgato©.",
-      "issues": []
-    },
-    {
-      "name": "EXT-TelegramBot",
-      "url": "https://github.com/bugsounet/EXT-TelegramBot",
-      "id": "bugsounet/EXT-TelegramBot",
-      "maintainer": "bugsounet",
-      "maintainerURL": "https://wiki.bugsounet.fr",
-      "description": "You can remote-control plugins within Telegram.",
-      "issues": []
-    },
-    {
-      "name": "EXT-Updates",
-      "url": "https://github.com/bugsounet/EXT-Updates",
-      "id": "bugsounet/EXT-Updates",
-      "maintainer": "bugsounet",
-      "maintainerURL": "https://wiki.bugsounet.fr",
-      "description": "This plugin allow to auto-update if an update is detected.",
-      "issues": []
-    },
-    {
-      "name": "EXT-Volume",
-      "url": "https://github.com/bugsounet/EXT-Volume",
-      "id": "bugsounet/EXT-Volume",
-      "maintainer": "bugsounet",
-      "maintainerURL": "https://wiki.bugsounet.fr",
-      "description": "Control the sound volume level of your mirror.",
-      "issues": []
-    },
-    {
-      "name": "EXT-Welcome",
-      "url": "https://github.com/bugsounet/EXT-Welcome",
-      "id": "bugsounet/EXT-Welcome",
-      "maintainer": "bugsounet",
-      "maintainerURL": "https://wiki.bugsounet.fr",
-      "description": "Allow to send a welcome on start of MagicMirror².",
-      "issues": []
-    },
-    {
-      "name": "EXT-YouTube",
-      "url": "https://github.com/bugsounet/EXT-YouTube",
-      "id": "bugsounet/EXT-YouTube",
-      "maintainer": "bugsounet",
-      "maintainerURL": "https://wiki.bugsounet.fr",
-      "description": "This plugins allows to play YouTube video.",
-      "issues": []
-    },
-    {
-      "name": "EXT-YouTubeCast",
-      "url": "https://github.com/bugsounet/EXT-YouTubeCast",
-      "id": "bugsounet/EXT-YouTubeCast",
-      "maintainer": "bugsounet",
-      "maintainerURL": "https://wiki.bugsounet.fr",
-      "description": "Allow to cast a YouTube video on MagicMirror².",
-      "issues": []
-    },
-    {
       "name": "MMM-EyeCandy",
       "url": "https://github.com/mykle1/MMM-EyeCandy",
       "id": "mykle1/MMM-EyeCandy",
@@ -2944,6 +2710,15 @@
       "issues": []
     },
     {
+      "name": "EXT-FreeboxTV",
+      "url": "https://github.com/bugsounet/EXT-FreeboxTV",
+      "id": "bugsounet/EXT-FreeboxTV",
+      "maintainer": "bugsounet",
+      "maintainerURL": "https://wiki.bugsounet.fr",
+      "description": "Display Channel from French Internet Provider: Free.",
+      "issues": []
+    },
+    {
       "name": "MMM-FrenchHoroscope",
       "url": "https://github.com/Amand-M/MMM-FrenchHoroscope",
       "id": "Amand-M/MMM-FrenchHoroscope",
@@ -3297,6 +3072,15 @@
       "issues": []
     },
     {
+      "name": "EXT-GooglePhotos",
+      "url": "https://github.com/bugsounet/EXT-GooglePhotos",
+      "id": "bugsounet/EXT-GooglePhotos",
+      "maintainer": "bugsounet",
+      "maintainerURL": "https://wiki.bugsounet.fr",
+      "description": "Display your album directory with Google photos API in background or in MagicMirror² position.",
+      "issues": []
+    },
+    {
       "name": "MMM-GoogleSheets",
       "url": "https://github.com/ryan-d-williams/MMM-GoogleSheets",
       "id": "ryan-d-williams/MMM-GoogleSheets",
@@ -3348,6 +3132,15 @@
       "maintainer": "MMRIZE",
       "maintainerURL": "",
       "description": "Text-to-Speech module with Google Cloud TTS API. Give a voice to your Mirror.",
+      "issues": []
+    },
+    {
+      "name": "EXT-Governor",
+      "url": "https://github.com/bugsounet/EXT-Governor",
+      "id": "bugsounet/EXT-Governor",
+      "maintainer": "bugsounet",
+      "maintainerURL": "https://wiki.bugsounet.fr",
+      "description": "CPU governor enables the operating system to scale the CPU frequency up or down in order to save power or improve performance.",
       "issues": []
     },
     {
@@ -4031,6 +3824,15 @@
       "issues": []
     },
     {
+      "name": "EXT-Internet",
+      "url": "https://github.com/bugsounet/EXT-Internet",
+      "id": "bugsounet/EXT-Internet",
+      "maintainer": "bugsounet",
+      "maintainerURL": "https://wiki.bugsounet.fr",
+      "description": "Check your internet connexion, display ping.",
+      "issues": []
+    },
+    {
       "name": "internet-monitor",
       "url": "https://github.com/BrianHepler/internet-monitor",
       "id": "BrianHepler/internet-monitor",
@@ -4339,6 +4141,15 @@
       "issues": []
     },
     {
+      "name": "EXT-Keyboard",
+      "url": "https://github.com/bugsounet/EXT-Keyboard",
+      "id": "bugsounet/EXT-Keyboard",
+      "maintainer": "bugsounet",
+      "maintainerURL": "https://wiki.bugsounet.fr",
+      "description": "Control your mirror with a keyboard.",
+      "issues": []
+    },
+    {
       "name": "KeyDisplayed",
       "url": "https://github.com/l0b5ter/KeyDisplayed",
       "id": "l0b5ter/KeyDisplayed",
@@ -4473,6 +4284,15 @@
       "maintainer": "tristanburke",
       "maintainerURL": "",
       "description": "Display recent Letterbox reviews from a list of users.",
+      "issues": []
+    },
+    {
+      "name": "EXT-Librespot",
+      "url": "https://github.com/bugsounet/EXT-Librespot",
+      "id": "bugsounet/EXT-Librespot",
+      "maintainer": "bugsounet",
+      "maintainerURL": "https://wiki.bugsounet.fr",
+      "description": "Allow to play Spotify music on your mirror with Librespot.",
       "issues": []
     },
     {
@@ -5394,6 +5214,15 @@
       "issues": []
     },
     {
+      "name": "EXT-Motion",
+      "url": "https://github.com/bugsounet/EXT-Motion",
+      "id": "bugsounet/EXT-Motion",
+      "maintainer": "bugsounet",
+      "maintainerURL": "https://wiki.bugsounet.fr",
+      "description": "Control your screen with a webcam (as motion detector).",
+      "issues": []
+    },
+    {
       "name": "MMM-MotionControl",
       "url": "https://github.com/nischi/MMM-MotionControl",
       "id": "nischi/MMM-MotionControl",
@@ -5609,6 +5438,15 @@
       "maintainer": "ptrk95",
       "maintainerURL": "",
       "description": "Play music with deezer on a browser in the background.",
+      "issues": []
+    },
+    {
+      "name": "EXT-MusicPlayer",
+      "url": "https://github.com/bugsounet/EXT-MusicPlayer",
+      "id": "bugsounet/EXT-MusicPlayer",
+      "maintainer": "bugsounet",
+      "maintainerURL": "https://wiki.bugsounet.fr",
+      "description": "Play any music found on a USB Key or in defined local directory.",
       "issues": []
     },
     {
@@ -6694,6 +6532,15 @@
       "issues": []
     },
     {
+      "name": "EXT-Pages",
+      "url": "https://github.com/bugsounet/EXT-Pages",
+      "id": "bugsounet/EXT-Pages",
+      "maintainer": "bugsounet",
+      "maintainerURL": "https://wiki.bugsounet.fr",
+      "description": "This plugin allows you to have animated pages.",
+      "issues": []
+    },
+    {
       "name": "MMM-Pages-Screencast",
       "url": "https://github.com/jboucly/MMM-Pages-Screencast",
       "id": "jboucly/MMM-Pages-Screencast",
@@ -6874,6 +6721,15 @@
       "issues": []
     },
     {
+      "name": "EXT-Photos",
+      "url": "https://github.com/bugsounet/EXT-Photos",
+      "id": "bugsounet/EXT-Photos",
+      "maintainer": "bugsounet",
+      "maintainerURL": "https://wiki.bugsounet.fr",
+      "description": "Displaying any photos discover by assistant in fullscreen.",
+      "issues": []
+    },
+    {
       "name": "PiDisplaySleep",
       "url": "https://github.com/RpDp-git/PiDisplaySleep",
       "id": "RpDp-git/PiDisplaySleep",
@@ -6935,6 +6791,15 @@
       "maintainer": "bugsounet",
       "maintainerURL": "",
       "description": "After a configurated time without any user interaction the display will turn off and hide all modules for economy mode.It will wake up with a PIR sensor. [Maintained].",
+      "issues": []
+    },
+    {
+      "name": "EXT-Pir",
+      "url": "https://github.com/bugsounet/EXT-Pir",
+      "id": "bugsounet/EXT-Pir",
+      "maintainer": "bugsounet",
+      "maintainerURL": "https://wiki.bugsounet.fr",
+      "description": "Control your screen with a PIR Sensor.",
       "issues": []
     },
     {
@@ -7425,6 +7290,15 @@
       "maintainer": "Sispheor",
       "maintainerURL": "",
       "description": "Show a random quote from an online collection of quotations by authors, celebrities, and newsmakers. Multi language supported.",
+      "issues": []
+    },
+    {
+      "name": "EXT-RadioPlayer",
+      "url": "https://github.com/bugsounet/EXT-RadioPlayer",
+      "id": "bugsounet/EXT-RadioPlayer",
+      "maintainer": "bugsounet",
+      "maintainerURL": "https://wiki.bugsounet.fr",
+      "description": "Play radio station on MagicMirror².",
       "issues": []
     },
     {
@@ -7955,6 +7829,15 @@
       "outdated": "Abandoned. Repo has been archived at 2020-05-09."
     },
     {
+      "name": "EXT-Screen",
+      "url": "https://github.com/bugsounet/EXT-Screen",
+      "id": "bugsounet/EXT-Screen",
+      "maintainer": "bugsounet",
+      "maintainerURL": "https://wiki.bugsounet.fr",
+      "description": "After a configurated time without any user interaction the display will turn off and hide all modules for economy mode.",
+      "issues": []
+    },
+    {
       "name": "MMM-Screen-Powersave-Notification",
       "url": "https://github.com/Tom-Hirschberger/MMM-Screen-Powersave-Notification",
       "id": "Tom-Hirschberger/MMM-Screen-Powersave-Notification",
@@ -8036,12 +7919,48 @@
       "issues": []
     },
     {
+      "name": "EXT-Selfies",
+      "url": "https://github.com/bugsounet/EXT-Selfies",
+      "id": "bugsounet/EXT-Selfies",
+      "maintainer": "bugsounet",
+      "maintainerURL": "https://wiki.bugsounet.fr",
+      "description": "Take selfies from webcam.",
+      "issues": []
+    },
+    {
+      "name": "EXT-SelfiesFlash",
+      "url": "https://github.com/bugsounet/EXT-SelfiesFlash",
+      "id": "bugsounet/EXT-SelfiesFlash",
+      "maintainer": "bugsounet",
+      "maintainerURL": "https://wiki.bugsounet.fr",
+      "description": "Need a flash to take selfies?",
+      "issues": []
+    },
+    {
       "name": "MMM-Selfieshot",
       "url": "https://github.com/BrianHepler/MMM-Selfieshot",
       "id": "BrianHepler/MMM-Selfieshot",
       "maintainer": "BrianHepler",
       "maintainerURL": "https://github.com/BrianHepler",
       "description": "Taking a Selfie with USB cam.",
+      "issues": []
+    },
+    {
+      "name": "EXT-SelfiesSender",
+      "url": "https://github.com/bugsounet/EXT-SelfiesSender",
+      "id": "bugsounet/EXT-SelfiesSender",
+      "maintainer": "bugsounet",
+      "maintainerURL": "https://wiki.bugsounet.fr",
+      "description": "Send your selfies to Telegram, google photos or by mail.",
+      "issues": []
+    },
+    {
+      "name": "EXT-SelfiesViewer",
+      "url": "https://github.com/bugsounet/EXT-SelfiesViewer",
+      "id": "bugsounet/EXT-SelfiesViewer",
+      "maintainer": "bugsounet",
+      "maintainerURL": "https://wiki.bugsounet.fr",
+      "description": "Slideshow of your best selfies.",
       "issues": []
     },
     {
@@ -8570,6 +8489,24 @@
       "issues": []
     },
     {
+      "name": "EXT-Spotify",
+      "url": "https://github.com/bugsounet/EXT-Spotify",
+      "id": "bugsounet/EXT-Spotify",
+      "maintainer": "bugsounet",
+      "maintainerURL": "https://wiki.bugsounet.fr",
+      "description": "This plugin show current spotify playback of any devices.",
+      "issues": []
+    },
+    {
+      "name": "EXT-SpotifyCanvasLyrics",
+      "url": "https://github.com/bugsounet/EXT-SpotifyCanvasLyrics",
+      "id": "bugsounet/EXT-SpotifyCanvasLyrics",
+      "maintainer": "bugsounet",
+      "maintainerURL": "https://wiki.bugsounet.fr",
+      "description": "Create a server for displaying any Lyrics and Canvas from Spotify.",
+      "issues": []
+    },
+    {
       "name": "MMM-SpotifyConnectUI",
       "url": "https://github.com/CatoAntonsen/MMM-SpotifyConnectUI",
       "id": "CatoAntonsen/MMM-SpotifyConnectUI",
@@ -8685,6 +8622,15 @@
       "maintainer": "ianperrin",
       "maintainerURL": "",
       "description": "Display your activity data from <a target=\"_blank\" href=\"https://www.strava.com\">Strava.com</a>.",
+      "issues": []
+    },
+    {
+      "name": "EXT-StreamDeck",
+      "url": "https://github.com/bugsounet/EXT-StreamDeck",
+      "id": "bugsounet/EXT-StreamDeck",
+      "maintainer": "bugsounet",
+      "maintainerURL": "https://wiki.bugsounet.fr",
+      "description": "Control your mirror with a StreamDeck by elgato©.",
       "issues": []
     },
     {
@@ -8876,6 +8822,15 @@
       "maintainer": "Thlb",
       "maintainerURL": "",
       "description": "Display client list of a Teamspeak3 server.",
+      "issues": []
+    },
+    {
+      "name": "EXT-TelegramBot",
+      "url": "https://github.com/bugsounet/EXT-TelegramBot",
+      "id": "bugsounet/EXT-TelegramBot",
+      "maintainer": "bugsounet",
+      "maintainerURL": "https://wiki.bugsounet.fr",
+      "description": "You can remote-control plugins within Telegram.",
       "issues": []
     },
     {
@@ -9446,6 +9401,15 @@
       "issues": []
     },
     {
+      "name": "EXT-Updates",
+      "url": "https://github.com/bugsounet/EXT-Updates",
+      "id": "bugsounet/EXT-Updates",
+      "maintainer": "bugsounet",
+      "maintainerURL": "https://wiki.bugsounet.fr",
+      "description": "This plugin allow to auto-update if an update is detected.",
+      "issues": []
+    },
+    {
       "name": "MMM-uptimekuma",
       "url": "https://github.com/MikeBishop/MMM-uptimekuma",
       "id": "MikeBishop/MMM-uptimekuma",
@@ -9623,6 +9587,15 @@
       "maintainer": "Anonym-tsk",
       "maintainerURL": "",
       "description": "Control volume of MagicMirror².",
+      "issues": []
+    },
+    {
+      "name": "EXT-Volume",
+      "url": "https://github.com/bugsounet/EXT-Volume",
+      "id": "bugsounet/EXT-Volume",
+      "maintainer": "bugsounet",
+      "maintainerURL": "https://wiki.bugsounet.fr",
+      "description": "Control the sound volume level of your mirror.",
       "issues": []
     },
     {
@@ -9887,6 +9860,15 @@
       "maintainer": "pinsdorf",
       "maintainerURL": "",
       "description": "Display weekly recurring timetables such as class schedules.",
+      "issues": []
+    },
+    {
+      "name": "EXT-Welcome",
+      "url": "https://github.com/bugsounet/EXT-Welcome",
+      "id": "bugsounet/EXT-Welcome",
+      "maintainer": "bugsounet",
+      "maintainerURL": "https://wiki.bugsounet.fr",
+      "description": "Allow to send a welcome on start of MagicMirror².",
       "issues": []
     },
     {
@@ -10155,6 +10137,15 @@
       "issues": []
     },
     {
+      "name": "EXT-YouTube",
+      "url": "https://github.com/bugsounet/EXT-YouTube",
+      "id": "bugsounet/EXT-YouTube",
+      "maintainer": "bugsounet",
+      "maintainerURL": "https://wiki.bugsounet.fr",
+      "description": "This plugins allows to play YouTube video.",
+      "issues": []
+    },
+    {
       "name": "MMM-YouTube-API",
       "url": "https://github.com/C4TFLY/MMM-YouTube-API",
       "id": "C4TFLY/MMM-YouTube-API",
@@ -10170,6 +10161,15 @@
       "maintainer": "ngnijland",
       "maintainerURL": "https://github.com/ngnijland",
       "description": "A module that checks if a YouTube channel if streaming. If it is, it plays the live stream.",
+      "issues": []
+    },
+    {
+      "name": "EXT-YouTubeCast",
+      "url": "https://github.com/bugsounet/EXT-YouTubeCast",
+      "id": "bugsounet/EXT-YouTubeCast",
+      "maintainer": "bugsounet",
+      "maintainerURL": "https://wiki.bugsounet.fr",
+      "description": "Allow to cast a YouTube video on MagicMirror².",
       "issues": []
     },
     {

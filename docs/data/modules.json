@@ -276,6 +276,26 @@
     "lastCommit": "2023-10-10T14:19:44+02:00"
   },
   {
+    "name": "EXT-Alert",
+    "url": "https://github.com/bugsounet/EXT-Alert",
+    "id": "bugsounet/EXT-Alert",
+    "maintainer": "bugsounet",
+    "maintainerURL": "https://wiki.bugsounet.fr",
+    "description": "Display any warning, information or error on your screen about Assistant. This module have been defined to work only with MMM-GoogleAssistant.",
+    "issues": true,
+    "stars": 2,
+    "hasGithubIssues": false,
+    "tags": [
+      "notification",
+      "warning",
+      "alert"
+    ],
+    "license": "MIT",
+    "image": "errorShot.jpg",
+    "defaultSortWeight": 3,
+    "lastCommit": "2024-02-24T21:56:18+01:00"
+  },
+  {
     "name": "MMM-alexa",
     "url": "https://github.com/sakirtemel/MMM-alexa",
     "id": "sakirtemel/MMM-alexa",
@@ -754,6 +774,24 @@
     "image": "styles-loading.jpg",
     "defaultSortWeight": 8,
     "lastCommit": "2019-05-26T16:17:03+01:00"
+  },
+  {
+    "name": "EXT-Background",
+    "url": "https://github.com/bugsounet/EXT-Background",
+    "id": "bugsounet/EXT-Background",
+    "maintainer": "bugsounet",
+    "maintainerURL": "https://wiki.bugsounet.fr",
+    "description": "Change the default Google Assistant background to your own or with animated gifs for each status of the assistant. This module have been defined to work only with MMM-GoogleAssistant.",
+    "issues": true,
+    "stars": 0,
+    "hasGithubIssues": false,
+    "tags": [
+      "background"
+    ],
+    "license": "MIT",
+    "image": "cortana-confirmation.jpg",
+    "defaultSortWeight": 3,
+    "lastCommit": "2024-02-24T22:23:33+01:00"
   },
   {
     "name": "MMM-BackgroundSlideshow",
@@ -1262,12 +1300,13 @@
     "stars": 18,
     "hasGithubIssues": true,
     "tags": [
-      "bosch smart home"
+      "bosch smart home",
+      "smart home"
     ],
     "license": "MIT",
     "image": "screenshot.jpg",
     "defaultSortWeight": 2,
-    "lastCommit": "2024-01-27T21:28:13+01:00"
+    "lastCommit": "2024-02-25T20:24:36+01:00"
   },
   {
     "name": "MMM-Bose-Soundtouch",
@@ -1344,6 +1383,25 @@
     "lastCommit": "2022-05-10T08:12:12+02:00"
   },
   {
+    "name": "EXT-Bring",
+    "url": "https://github.com/bugsounet/EXT-Bring",
+    "id": "bugsounet/EXT-Bring",
+    "maintainer": "bugsounet",
+    "maintainerURL": "https://wiki.bugsounet.fr",
+    "description": "Show your current shopping list of Bring! This module have been defined to work only with MMM-GoogleAssistant.",
+    "issues": false,
+    "stars": 2,
+    "hasGithubIssues": false,
+    "tags": [
+      "shopping list",
+      "google assistant"
+    ],
+    "license": "MIT",
+    "image": "Screenshot.jpg",
+    "defaultSortWeight": 2,
+    "lastCommit": "2024-02-24T22:07:03+01:00"
+  },
+  {
     "name": "MMM-bringList",
     "url": "https://github.com/rseidt/MMM-bringList",
     "id": "rseidt/MMM-bringList",
@@ -1357,6 +1415,23 @@
     "image": "Screenshot.jpg",
     "defaultSortWeight": 7,
     "lastCommit": "2021-11-01T12:58:07+01:00"
+  },
+  {
+    "name": "EXT-Browser",
+    "url": "https://github.com/bugsounet/EXT-Browser",
+    "id": "bugsounet/EXT-Browser",
+    "maintainer": "bugsounet",
+    "maintainerURL": "https://wiki.bugsounet.fr",
+    "description": "Display any internet web page like a real browser in fullscreen. This module have been defined to work only with MMM-GoogleAssistant.",
+    "issues": true,
+    "stars": 0,
+    "hasGithubIssues": false,
+    "tags": [
+      "browser"
+    ],
+    "license": "MIT",
+    "defaultSortWeight": 4,
+    "lastCommit": "2024-02-24T22:00:29+01:00"
   },
   {
     "name": "MMM-Bubi",
@@ -2960,6 +3035,29 @@
     "lastCommit": "2020-10-30T17:32:11+01:00"
   },
   {
+    "name": "EXT-Detector",
+    "url": "https://github.com/bugsounet/EXT-Detector",
+    "id": "bugsounet/EXT-Detector",
+    "maintainer": "bugsounet",
+    "maintainerURL": "https://wiki.bugsounet.fr",
+    "description": "Multi-keyword listener for MMM-GoogleAssistant. This module have been defined to work only with MMM-GoogleAssistant.",
+    "issues": false,
+    "stars": 6,
+    "hasGithubIssues": false,
+    "tags": [
+      "hotword",
+      "porcupine",
+      "snowboy",
+      "voice",
+      "jarvis",
+      "ok google"
+    ],
+    "license": "MIT",
+    "image": "resources-google.jpg",
+    "defaultSortWeight": 2,
+    "lastCommit": "2024-02-24T22:21:02+01:00"
+  },
+  {
     "name": "MMM-DHT",
     "url": "https://github.com/ckoutavas/MMM-DHT",
     "id": "ckoutavas/MMM-DHT",
@@ -3837,570 +3935,6 @@
     "lastCommit": "2023-12-02T17:15:53-05:00"
   },
   {
-    "name": "EXT-Alert",
-    "url": "https://github.com/bugsounet/EXT-Alert",
-    "id": "bugsounet/EXT-Alert",
-    "maintainer": "bugsounet",
-    "maintainerURL": "https://wiki.bugsounet.fr",
-    "description": "Display any warning, information or error on your screen about Assistant. This module have been defined to work only with MMM-GoogleAssistant.",
-    "issues": true,
-    "stars": 2,
-    "hasGithubIssues": false,
-    "tags": [
-      "notification",
-      "warning",
-      "alert"
-    ],
-    "license": "MIT",
-    "image": "errorShot.jpg",
-    "defaultSortWeight": 3,
-    "lastCommit": "2024-02-24T21:56:18+01:00"
-  },
-  {
-    "name": "EXT-Background",
-    "url": "https://github.com/bugsounet/EXT-Background",
-    "id": "bugsounet/EXT-Background",
-    "maintainer": "bugsounet",
-    "maintainerURL": "https://wiki.bugsounet.fr",
-    "description": "Change the default Google Assistant background to your own or with animated gifs for each status of the assistant. This module have been defined to work only with MMM-GoogleAssistant.",
-    "issues": true,
-    "stars": 0,
-    "hasGithubIssues": false,
-    "tags": [
-      "background"
-    ],
-    "license": "MIT",
-    "image": "cortana-confirmation.jpg",
-    "defaultSortWeight": 3,
-    "lastCommit": "2024-02-24T22:23:33+01:00"
-  },
-  {
-    "name": "EXT-Bring",
-    "url": "https://github.com/bugsounet/EXT-Bring",
-    "id": "bugsounet/EXT-Bring",
-    "maintainer": "bugsounet",
-    "maintainerURL": "https://wiki.bugsounet.fr",
-    "description": "Show your current shopping list of Bring! This module have been defined to work only with MMM-GoogleAssistant.",
-    "issues": false,
-    "stars": 2,
-    "hasGithubIssues": false,
-    "tags": [
-      "shopping list",
-      "google assistant"
-    ],
-    "license": "MIT",
-    "image": "Screenshot.jpg",
-    "defaultSortWeight": 2,
-    "lastCommit": "2024-02-24T22:07:03+01:00"
-  },
-  {
-    "name": "EXT-Browser",
-    "url": "https://github.com/bugsounet/EXT-Browser",
-    "id": "bugsounet/EXT-Browser",
-    "maintainer": "bugsounet",
-    "maintainerURL": "https://wiki.bugsounet.fr",
-    "description": "Display any internet web page like a real browser in fullscreen. This module have been defined to work only with MMM-GoogleAssistant.",
-    "issues": true,
-    "stars": 0,
-    "hasGithubIssues": false,
-    "tags": [
-      "browser"
-    ],
-    "license": "MIT",
-    "defaultSortWeight": 4,
-    "lastCommit": "2024-02-24T22:00:29+01:00"
-  },
-  {
-    "name": "EXT-Detector",
-    "url": "https://github.com/bugsounet/EXT-Detector",
-    "id": "bugsounet/EXT-Detector",
-    "maintainer": "bugsounet",
-    "maintainerURL": "https://wiki.bugsounet.fr",
-    "description": "Multi-keyword listener for MMM-GoogleAssistant. This module have been defined to work only with MMM-GoogleAssistant.",
-    "issues": false,
-    "stars": 6,
-    "hasGithubIssues": false,
-    "tags": [
-      "hotword",
-      "porcupine",
-      "snowboy",
-      "voice",
-      "jarvis",
-      "ok google"
-    ],
-    "license": "MIT",
-    "image": "resources-google.jpg",
-    "defaultSortWeight": 2,
-    "lastCommit": "2024-02-24T22:21:02+01:00"
-  },
-  {
-    "name": "EXT-FreeboxTV",
-    "url": "https://github.com/bugsounet/EXT-FreeboxTV",
-    "id": "bugsounet/EXT-FreeboxTV",
-    "maintainer": "bugsounet",
-    "maintainerURL": "https://wiki.bugsounet.fr",
-    "description": "Display Channel from French Internet Provider: Free. This module have been defined to work only with MMM-GoogleAssistant.",
-    "issues": false,
-    "stars": 1,
-    "hasGithubIssues": false,
-    "tags": [
-      "freebox",
-      "free",
-      "tv"
-    ],
-    "license": "MIT",
-    "image": "resources-FreeboxTV.jpg",
-    "defaultSortWeight": 2,
-    "lastCommit": "2024-02-25T13:56:41+01:00"
-  },
-  {
-    "name": "EXT-GooglePhotos",
-    "url": "https://github.com/bugsounet/EXT-GooglePhotos",
-    "id": "bugsounet/EXT-GooglePhotos",
-    "maintainer": "bugsounet",
-    "maintainerURL": "https://wiki.bugsounet.fr",
-    "description": "Display your album directory with Google photos API in background or in MagicMirror\u00b2 position. This module have been defined to work only with MMM-GoogleAssistant.",
-    "issues": true,
-    "stars": 2,
-    "hasGithubIssues": false,
-    "tags": [
-      "google",
-      "photo"
-    ],
-    "license": "MIT",
-    "image": "resources-GooglePhoto-Logo.jpg",
-    "defaultSortWeight": 5,
-    "lastCommit": "2024-02-24T22:40:42+01:00"
-  },
-  {
-    "name": "EXT-Governor",
-    "url": "https://github.com/bugsounet/EXT-Governor",
-    "id": "bugsounet/EXT-Governor",
-    "maintainer": "bugsounet",
-    "maintainerURL": "https://wiki.bugsounet.fr",
-    "description": "CPU governor enables the operating system to scale the CPU frequency up or down in order to save power or improve performance. This module have been defined to work only with MMM-GoogleAssistant.",
-    "issues": true,
-    "stars": 2,
-    "hasGithubIssues": false,
-    "tags": [
-      "governor",
-      "ext",
-      "googleassistant"
-    ],
-    "license": "MIT",
-    "defaultSortWeight": 4,
-    "lastCommit": "2024-02-25T15:45:27+01:00"
-  },
-  {
-    "name": "EXT-Internet",
-    "url": "https://github.com/bugsounet/EXT-Internet",
-    "id": "bugsounet/EXT-Internet",
-    "maintainer": "bugsounet",
-    "maintainerURL": "https://wiki.bugsounet.fr",
-    "description": "Check your internet connexion, display ping. This module have been defined to work only with MMM-GoogleAssistant.",
-    "issues": true,
-    "stars": 0,
-    "hasGithubIssues": false,
-    "tags": [
-      "internet",
-      "warning"
-    ],
-    "license": "MIT",
-    "image": "resources-Internet-Logo.jpg",
-    "defaultSortWeight": 3,
-    "lastCommit": "2024-02-25T16:56:05+01:00"
-  },
-  {
-    "name": "EXT-Keyboard",
-    "url": "https://github.com/bugsounet/EXT-Keyboard",
-    "id": "bugsounet/EXT-Keyboard",
-    "maintainer": "bugsounet",
-    "maintainerURL": "https://wiki.bugsounet.fr",
-    "description": "Control your mirror with a keyboard. This module have been defined to work only with MMM-GoogleAssistant.",
-    "issues": true,
-    "stars": 1,
-    "hasGithubIssues": false,
-    "tags": [
-      "keyboard"
-    ],
-    "license": "MIT",
-    "defaultSortWeight": 4,
-    "lastCommit": "2024-02-25T17:32:10+01:00"
-  },
-  {
-    "name": "EXT-Librespot",
-    "url": "https://github.com/bugsounet/EXT-Librespot",
-    "id": "bugsounet/EXT-Librespot",
-    "maintainer": "bugsounet",
-    "maintainerURL": "https://wiki.bugsounet.fr",
-    "description": "Allow to play Spotify music on your mirror with Librespot. This module have been defined to work only with MMM-GoogleAssistant.",
-    "issues": true,
-    "stars": 0,
-    "hasGithubIssues": false,
-    "tags": [
-      "spotify",
-      "librespot"
-    ],
-    "license": "MIT",
-    "image": "resources-Spotify-Logo.jpg",
-    "defaultSortWeight": 4,
-    "lastCommit": "2024-01-12T01:42:36+01:00"
-  },
-  {
-    "name": "EXT-Motion",
-    "url": "https://github.com/bugsounet/EXT-Motion",
-    "id": "bugsounet/EXT-Motion",
-    "maintainer": "bugsounet",
-    "maintainerURL": "https://wiki.bugsounet.fr",
-    "description": "Control your screen with a webcam (as motion detector). This module have been defined to work only with MMM-GoogleAssistant.",
-    "issues": true,
-    "stars": 0,
-    "hasGithubIssues": false,
-    "tags": [
-      "plugin",
-      "screen",
-      "ext",
-      "googleassistant"
-    ],
-    "license": "MIT",
-    "defaultSortWeight": 4,
-    "lastCommit": "2024-01-03T16:30:56+01:00"
-  },
-  {
-    "name": "EXT-MusicPlayer",
-    "url": "https://github.com/bugsounet/EXT-MusicPlayer",
-    "id": "bugsounet/EXT-MusicPlayer",
-    "maintainer": "bugsounet",
-    "maintainerURL": "https://wiki.bugsounet.fr",
-    "description": "Play any music found on a USB Key or in defined local directory. This module have been defined to work only with MMM-GoogleAssistant.",
-    "issues": true,
-    "stars": 1,
-    "hasGithubIssues": false,
-    "tags": [
-      "volume",
-      "warning"
-    ],
-    "license": "MIT",
-    "image": "resources-Screenshot.jpg",
-    "defaultSortWeight": 4,
-    "lastCommit": "2024-01-03T16:31:20+01:00"
-  },
-  {
-    "name": "EXT-Pages",
-    "url": "https://github.com/bugsounet/EXT-Pages",
-    "id": "bugsounet/EXT-Pages",
-    "maintainer": "bugsounet",
-    "maintainerURL": "https://wiki.bugsounet.fr",
-    "description": "This plugin allows you to have animated pages. This module have been defined to work only with MMM-GoogleAssistant.",
-    "issues": true,
-    "stars": 2,
-    "hasGithubIssues": false,
-    "tags": [
-      "pages"
-    ],
-    "license": "MIT",
-    "image": "example.jpg",
-    "defaultSortWeight": 4,
-    "lastCommit": "2024-02-02T13:49:03+01:00"
-  },
-  {
-    "name": "EXT-Photos",
-    "url": "https://github.com/bugsounet/EXT-Photos",
-    "id": "bugsounet/EXT-Photos",
-    "maintainer": "bugsounet",
-    "maintainerURL": "https://wiki.bugsounet.fr",
-    "description": "Displaying any photos discover by assistant in fullscreen. This module have been defined to work only with MMM-GoogleAssistant.",
-    "issues": true,
-    "stars": 0,
-    "hasGithubIssues": false,
-    "tags": [
-      "photos"
-    ],
-    "license": "MIT",
-    "image": "resources-Photos-Logo.jpg",
-    "defaultSortWeight": 4,
-    "lastCommit": "2024-01-03T16:34:21+01:00"
-  },
-  {
-    "name": "EXT-Pir",
-    "url": "https://github.com/bugsounet/EXT-Pir",
-    "id": "bugsounet/EXT-Pir",
-    "maintainer": "bugsounet",
-    "maintainerURL": "https://wiki.bugsounet.fr",
-    "description": "Control your screen with a PIR Sensor. This module have been defined to work only with MMM-GoogleAssistant.",
-    "issues": true,
-    "stars": 3,
-    "hasGithubIssues": false,
-    "tags": [
-      "sensor",
-      "motion detection",
-      "pir",
-      "ext",
-      "googleassistant"
-    ],
-    "license": "MIT",
-    "image": "img-motion_detection.jpg",
-    "defaultSortWeight": 5,
-    "lastCommit": "2024-02-17T15:47:05+01:00"
-  },
-  {
-    "name": "EXT-RadioPlayer",
-    "url": "https://github.com/bugsounet/EXT-RadioPlayer",
-    "id": "bugsounet/EXT-RadioPlayer",
-    "maintainer": "bugsounet",
-    "maintainerURL": "https://wiki.bugsounet.fr",
-    "description": "Play radio station on MagicMirror\u00b2. This module have been defined to work only with MMM-GoogleAssistant.",
-    "issues": true,
-    "stars": 2,
-    "hasGithubIssues": false,
-    "tags": [
-      "radio"
-    ],
-    "license": "MIT",
-    "image": "Logos-ES-Cadena_DIAL.jpg",
-    "defaultSortWeight": 4,
-    "lastCommit": "2024-01-03T16:35:09+01:00"
-  },
-  {
-    "name": "EXT-Screen",
-    "url": "https://github.com/bugsounet/EXT-Screen",
-    "id": "bugsounet/EXT-Screen",
-    "maintainer": "bugsounet",
-    "maintainerURL": "https://wiki.bugsounet.fr",
-    "description": "After a configurated time without any user interaction the display will turn off and hide all modules for economy mode. This module have been defined to work only with MMM-GoogleAssistant.",
-    "issues": true,
-    "stars": 3,
-    "hasGithubIssues": false,
-    "tags": [
-      "screen",
-      "ext",
-      "googleassistant"
-    ],
-    "license": "MIT",
-    "image": "screenshot-screenshot.jpg",
-    "defaultSortWeight": 5,
-    "lastCommit": "2024-02-04T18:52:34+01:00"
-  },
-  {
-    "name": "EXT-Selfies",
-    "url": "https://github.com/bugsounet/EXT-Selfies",
-    "id": "bugsounet/EXT-Selfies",
-    "maintainer": "bugsounet",
-    "maintainerURL": "https://wiki.bugsounet.fr",
-    "description": "Take selfies from webcam. This module have been defined to work only with MMM-GoogleAssistant.",
-    "issues": true,
-    "stars": 0,
-    "hasGithubIssues": false,
-    "license": "MIT",
-    "image": "resources-screenshot.jpg",
-    "defaultSortWeight": 6,
-    "lastCommit": "2024-01-03T16:36:02+01:00"
-  },
-  {
-    "name": "EXT-SelfiesFlash",
-    "url": "https://github.com/bugsounet/EXT-SelfiesFlash",
-    "id": "bugsounet/EXT-SelfiesFlash",
-    "maintainer": "bugsounet",
-    "maintainerURL": "https://wiki.bugsounet.fr",
-    "description": "Need a flash to take selfies? This module have been defined to work only with MMM-GoogleAssistant.",
-    "issues": true,
-    "stars": 0,
-    "hasGithubIssues": false,
-    "license": "MIT",
-    "defaultSortWeight": 5,
-    "lastCommit": "2024-01-03T16:36:32+01:00"
-  },
-  {
-    "name": "EXT-SelfiesSender",
-    "url": "https://github.com/bugsounet/EXT-SelfiesSender",
-    "id": "bugsounet/EXT-SelfiesSender",
-    "maintainer": "bugsounet",
-    "maintainerURL": "https://wiki.bugsounet.fr",
-    "description": "Send your selfies to Telegram, google photos or by mail. This module have been defined to work only with MMM-GoogleAssistant.",
-    "issues": true,
-    "stars": 0,
-    "hasGithubIssues": false,
-    "license": "MIT",
-    "defaultSortWeight": 5,
-    "lastCommit": "2024-01-03T16:36:53+01:00"
-  },
-  {
-    "name": "EXT-SelfiesViewer",
-    "url": "https://github.com/bugsounet/EXT-SelfiesViewer",
-    "id": "bugsounet/EXT-SelfiesViewer",
-    "maintainer": "bugsounet",
-    "maintainerURL": "https://wiki.bugsounet.fr",
-    "description": "Slideshow of your best selfies. This module have been defined to work only with MMM-GoogleAssistant.",
-    "issues": true,
-    "stars": 0,
-    "hasGithubIssues": false,
-    "license": "MIT",
-    "image": "resources-coming_soon.jpg",
-    "defaultSortWeight": 4,
-    "lastCommit": "2024-01-04T15:10:10+01:00"
-  },
-  {
-    "name": "EXT-Spotify",
-    "url": "https://github.com/bugsounet/EXT-Spotify",
-    "id": "bugsounet/EXT-Spotify",
-    "maintainer": "bugsounet",
-    "maintainerURL": "https://wiki.bugsounet.fr",
-    "description": "This plugin show current spotify playback of any devices. This module have been defined to work only with MMM-GoogleAssistant.",
-    "issues": true,
-    "stars": 2,
-    "hasGithubIssues": false,
-    "tags": [
-      "spotify"
-    ],
-    "license": "MIT",
-    "image": "components-Spotify-Logo.jpg",
-    "defaultSortWeight": 4,
-    "lastCommit": "2024-01-03T16:37:34+01:00"
-  },
-  {
-    "name": "EXT-SpotifyCanvasLyrics",
-    "url": "https://github.com/bugsounet/EXT-SpotifyCanvasLyrics",
-    "id": "bugsounet/EXT-SpotifyCanvasLyrics",
-    "maintainer": "bugsounet",
-    "maintainerURL": "https://wiki.bugsounet.fr",
-    "description": "Create a server for displaying any Lyrics and Canvas from Spotify. This module have been defined to work only with MMM-GoogleAssistant.",
-    "issues": true,
-    "stars": 0,
-    "hasGithubIssues": false,
-    "tags": [
-      "spotify",
-      "canvas",
-      "lyrics"
-    ],
-    "license": "MIT",
-    "image": "screenshot-landscape.jpg",
-    "defaultSortWeight": 3,
-    "lastCommit": "2024-02-22T18:17:21+01:00"
-  },
-  {
-    "name": "EXT-StreamDeck",
-    "url": "https://github.com/bugsounet/EXT-StreamDeck",
-    "id": "bugsounet/EXT-StreamDeck",
-    "maintainer": "bugsounet",
-    "maintainerURL": "https://wiki.bugsounet.fr",
-    "description": "Control your mirror with a StreamDeck by elgato\u00a9. This module have been defined to work only with MMM-GoogleAssistant.",
-    "issues": true,
-    "stars": 0,
-    "hasGithubIssues": false,
-    "license": "MIT",
-    "image": "icons-Sample-access_time.jpg",
-    "defaultSortWeight": 4,
-    "lastCommit": "2024-01-12T01:41:46+01:00"
-  },
-  {
-    "name": "EXT-TelegramBot",
-    "url": "https://github.com/bugsounet/EXT-TelegramBot",
-    "id": "bugsounet/EXT-TelegramBot",
-    "maintainer": "bugsounet",
-    "maintainerURL": "https://wiki.bugsounet.fr",
-    "description": "You can remote-control plugins within Telegram. This module have been defined to work only with MMM-GoogleAssistant.",
-    "issues": true,
-    "stars": 1,
-    "hasGithubIssues": false,
-    "tags": [
-      "telegram"
-    ],
-    "license": "MIT",
-    "image": "screenshot-sc_fullsize.jpg",
-    "defaultSortWeight": 6,
-    "lastCommit": "2024-02-11T20:54:36+01:00"
-  },
-  {
-    "name": "EXT-Updates",
-    "url": "https://github.com/bugsounet/EXT-Updates",
-    "id": "bugsounet/EXT-Updates",
-    "maintainer": "bugsounet",
-    "maintainerURL": "https://wiki.bugsounet.fr",
-    "description": "This plugin allow to auto-update if an update is detected. This module have been defined to work only with MMM-GoogleAssistant.",
-    "issues": true,
-    "stars": 0,
-    "hasGithubIssues": false,
-    "license": "MIT",
-    "image": "resources-update.jpg",
-    "defaultSortWeight": 7,
-    "lastCommit": "2024-02-11T21:00:51+01:00"
-  },
-  {
-    "name": "EXT-Volume",
-    "url": "https://github.com/bugsounet/EXT-Volume",
-    "id": "bugsounet/EXT-Volume",
-    "maintainer": "bugsounet",
-    "maintainerURL": "https://wiki.bugsounet.fr",
-    "description": "Control the sound volume level of your mirror. This module have been defined to work only with MMM-GoogleAssistant.",
-    "issues": true,
-    "stars": 2,
-    "hasGithubIssues": false,
-    "tags": [
-      "volume",
-      "warning",
-      "googleassistant"
-    ],
-    "license": "MIT",
-    "image": "resources-screenshot.jpg",
-    "defaultSortWeight": 4,
-    "lastCommit": "2024-01-03T16:39:36+01:00"
-  },
-  {
-    "name": "EXT-Welcome",
-    "url": "https://github.com/bugsounet/EXT-Welcome",
-    "id": "bugsounet/EXT-Welcome",
-    "maintainer": "bugsounet",
-    "maintainerURL": "https://wiki.bugsounet.fr",
-    "description": "Allow to send a welcome on start of MagicMirror\u00b2. This module have been defined to work only with MMM-GoogleAssistant.",
-    "issues": true,
-    "stars": 0,
-    "hasGithubIssues": false,
-    "tags": [
-      "notification",
-      "warning"
-    ],
-    "license": "MIT",
-    "defaultSortWeight": 5,
-    "lastCommit": "2024-01-03T16:40:04+01:00"
-  },
-  {
-    "name": "EXT-YouTube",
-    "url": "https://github.com/bugsounet/EXT-YouTube",
-    "id": "bugsounet/EXT-YouTube",
-    "maintainer": "bugsounet",
-    "maintainerURL": "https://wiki.bugsounet.fr",
-    "description": "This plugins allows to play YouTube video. This module have been defined to work only with MMM-GoogleAssistant.",
-    "issues": true,
-    "stars": 3,
-    "hasGithubIssues": false,
-    "tags": [
-      "youtube"
-    ],
-    "license": "MIT",
-    "image": "resources-Screenshot1.jpg",
-    "defaultSortWeight": 7,
-    "lastCommit": "2024-01-12T01:42:23+01:00"
-  },
-  {
-    "name": "EXT-YouTubeCast",
-    "url": "https://github.com/bugsounet/EXT-YouTubeCast",
-    "id": "bugsounet/EXT-YouTubeCast",
-    "maintainer": "bugsounet",
-    "maintainerURL": "https://wiki.bugsounet.fr",
-    "description": "Allow to cast a YouTube video on MagicMirror\u00b2. This module have been defined to work only with MMM-GoogleAssistant.",
-    "issues": true,
-    "stars": 2,
-    "hasGithubIssues": false,
-    "tags": [
-      "cast",
-      "youtube"
-    ],
-    "license": "MIT",
-    "image": "resources-Screenshot1.jpg",
-    "defaultSortWeight": 5,
-    "lastCommit": "2024-01-03T16:40:52+01:00"
-  },
-  {
     "name": "MMM-EyeCandy",
     "url": "https://github.com/mykle1/MMM-EyeCandy",
     "id": "mykle1/MMM-EyeCandy",
@@ -5174,6 +4708,26 @@
     "lastCommit": "2023-10-09T21:01:57+02:00"
   },
   {
+    "name": "EXT-FreeboxTV",
+    "url": "https://github.com/bugsounet/EXT-FreeboxTV",
+    "id": "bugsounet/EXT-FreeboxTV",
+    "maintainer": "bugsounet",
+    "maintainerURL": "https://wiki.bugsounet.fr",
+    "description": "Display Channel from French Internet Provider: Free. This module have been defined to work only with MMM-GoogleAssistant.",
+    "issues": false,
+    "stars": 1,
+    "hasGithubIssues": false,
+    "tags": [
+      "freebox",
+      "free",
+      "tv"
+    ],
+    "license": "MIT",
+    "image": "resources-FreeboxTV.jpg",
+    "defaultSortWeight": 2,
+    "lastCommit": "2024-02-25T13:56:41+01:00"
+  },
+  {
     "name": "MMM-FrenchHoroscope",
     "url": "https://github.com/Amand-M/MMM-FrenchHoroscope",
     "id": "Amand-M/MMM-FrenchHoroscope",
@@ -5813,6 +5367,25 @@
     "lastCommit": "2024-01-28T14:56:12+00:00"
   },
   {
+    "name": "EXT-GooglePhotos",
+    "url": "https://github.com/bugsounet/EXT-GooglePhotos",
+    "id": "bugsounet/EXT-GooglePhotos",
+    "maintainer": "bugsounet",
+    "maintainerURL": "https://wiki.bugsounet.fr",
+    "description": "Display your album directory with Google photos API in background or in MagicMirror\u00b2 position. This module have been defined to work only with MMM-GoogleAssistant.",
+    "issues": true,
+    "stars": 2,
+    "hasGithubIssues": false,
+    "tags": [
+      "google",
+      "photo"
+    ],
+    "license": "MIT",
+    "image": "resources-GooglePhoto-Logo.jpg",
+    "defaultSortWeight": 5,
+    "lastCommit": "2024-02-24T22:40:42+01:00"
+  },
+  {
     "name": "MMM-GoogleSheets",
     "url": "https://github.com/ryan-d-williams/MMM-GoogleSheets",
     "id": "ryan-d-williams/MMM-GoogleSheets",
@@ -5911,6 +5484,25 @@
     "image": ".github-TTS.jpg",
     "defaultSortWeight": 3,
     "lastCommit": "2023-11-27T16:14:27+01:00"
+  },
+  {
+    "name": "EXT-Governor",
+    "url": "https://github.com/bugsounet/EXT-Governor",
+    "id": "bugsounet/EXT-Governor",
+    "maintainer": "bugsounet",
+    "maintainerURL": "https://wiki.bugsounet.fr",
+    "description": "CPU governor enables the operating system to scale the CPU frequency up or down in order to save power or improve performance. This module have been defined to work only with MMM-GoogleAssistant.",
+    "issues": true,
+    "stars": 2,
+    "hasGithubIssues": false,
+    "tags": [
+      "governor",
+      "ext",
+      "googleassistant"
+    ],
+    "license": "MIT",
+    "defaultSortWeight": 4,
+    "lastCommit": "2024-02-25T15:45:27+01:00"
   },
   {
     "name": "MMM-GPIO-HANDLER",
@@ -7095,6 +6687,25 @@
     "lastCommit": "2023-04-12T05:45:27+01:00"
   },
   {
+    "name": "EXT-Internet",
+    "url": "https://github.com/bugsounet/EXT-Internet",
+    "id": "bugsounet/EXT-Internet",
+    "maintainer": "bugsounet",
+    "maintainerURL": "https://wiki.bugsounet.fr",
+    "description": "Check your internet connexion, display ping. This module have been defined to work only with MMM-GoogleAssistant.",
+    "issues": true,
+    "stars": 0,
+    "hasGithubIssues": false,
+    "tags": [
+      "internet",
+      "warning"
+    ],
+    "license": "MIT",
+    "image": "resources-Internet-Logo.jpg",
+    "defaultSortWeight": 3,
+    "lastCommit": "2024-02-25T16:56:05+01:00"
+  },
+  {
     "name": "internet-monitor",
     "url": "https://github.com/BrianHepler/internet-monitor",
     "id": "BrianHepler/internet-monitor",
@@ -7645,6 +7256,23 @@
     "lastCommit": "2022-01-31T18:02:15-06:00"
   },
   {
+    "name": "EXT-Keyboard",
+    "url": "https://github.com/bugsounet/EXT-Keyboard",
+    "id": "bugsounet/EXT-Keyboard",
+    "maintainer": "bugsounet",
+    "maintainerURL": "https://wiki.bugsounet.fr",
+    "description": "Control your mirror with a keyboard. This module have been defined to work only with MMM-GoogleAssistant.",
+    "issues": true,
+    "stars": 1,
+    "hasGithubIssues": false,
+    "tags": [
+      "keyboard"
+    ],
+    "license": "MIT",
+    "defaultSortWeight": 4,
+    "lastCommit": "2024-02-25T17:32:10+01:00"
+  },
+  {
     "name": "KeyDisplayed",
     "url": "https://github.com/l0b5ter/KeyDisplayed",
     "id": "l0b5ter/KeyDisplayed",
@@ -7896,6 +7524,25 @@
     "hasGithubIssues": true,
     "defaultSortWeight": 7,
     "lastCommit": "2022-10-31T19:56:21-04:00"
+  },
+  {
+    "name": "EXT-Librespot",
+    "url": "https://github.com/bugsounet/EXT-Librespot",
+    "id": "bugsounet/EXT-Librespot",
+    "maintainer": "bugsounet",
+    "maintainerURL": "https://wiki.bugsounet.fr",
+    "description": "Allow to play Spotify music on your mirror with Librespot. This module have been defined to work only with MMM-GoogleAssistant.",
+    "issues": true,
+    "stars": 0,
+    "hasGithubIssues": false,
+    "tags": [
+      "spotify",
+      "librespot"
+    ],
+    "license": "MIT",
+    "image": "resources-Spotify-Logo.jpg",
+    "defaultSortWeight": 4,
+    "lastCommit": "2024-01-12T01:42:36+01:00"
   },
   {
     "name": "MMM-LibrespotJava",
@@ -9443,6 +9090,26 @@
     "lastCommit": "2021-02-02T18:21:39+01:00"
   },
   {
+    "name": "EXT-Motion",
+    "url": "https://github.com/bugsounet/EXT-Motion",
+    "id": "bugsounet/EXT-Motion",
+    "maintainer": "bugsounet",
+    "maintainerURL": "https://wiki.bugsounet.fr",
+    "description": "Control your screen with a webcam (as motion detector). This module have been defined to work only with MMM-GoogleAssistant.",
+    "issues": true,
+    "stars": 0,
+    "hasGithubIssues": false,
+    "tags": [
+      "plugin",
+      "screen",
+      "ext",
+      "googleassistant"
+    ],
+    "license": "MIT",
+    "defaultSortWeight": 4,
+    "lastCommit": "2024-01-03T16:30:56+01:00"
+  },
+  {
     "name": "MMM-MotionControl",
     "url": "https://github.com/nischi/MMM-MotionControl",
     "id": "nischi/MMM-MotionControl",
@@ -9820,6 +9487,25 @@
     "image": "img-Example.jpg",
     "defaultSortWeight": 4,
     "lastCommit": "2020-04-16T21:55:21+02:00"
+  },
+  {
+    "name": "EXT-MusicPlayer",
+    "url": "https://github.com/bugsounet/EXT-MusicPlayer",
+    "id": "bugsounet/EXT-MusicPlayer",
+    "maintainer": "bugsounet",
+    "maintainerURL": "https://wiki.bugsounet.fr",
+    "description": "Play any music found on a USB Key or in defined local directory. This module have been defined to work only with MMM-GoogleAssistant.",
+    "issues": true,
+    "stars": 1,
+    "hasGithubIssues": false,
+    "tags": [
+      "volume",
+      "warning"
+    ],
+    "license": "MIT",
+    "image": "resources-Screenshot.jpg",
+    "defaultSortWeight": 4,
+    "lastCommit": "2024-01-03T16:31:20+01:00"
   },
   {
     "name": "MMM-mvgmunich",
@@ -11757,6 +11443,24 @@
     "lastCommit": "2021-12-10T20:46:41-08:00"
   },
   {
+    "name": "EXT-Pages",
+    "url": "https://github.com/bugsounet/EXT-Pages",
+    "id": "bugsounet/EXT-Pages",
+    "maintainer": "bugsounet",
+    "maintainerURL": "https://wiki.bugsounet.fr",
+    "description": "This plugin allows you to have animated pages. This module have been defined to work only with MMM-GoogleAssistant.",
+    "issues": true,
+    "stars": 2,
+    "hasGithubIssues": false,
+    "tags": [
+      "pages"
+    ],
+    "license": "MIT",
+    "image": "example.jpg",
+    "defaultSortWeight": 4,
+    "lastCommit": "2024-02-02T13:49:03+01:00"
+  },
+  {
     "name": "MMM-Pages-Screencast",
     "url": "https://github.com/jboucly/MMM-Pages-Screencast",
     "id": "jboucly/MMM-Pages-Screencast",
@@ -12080,6 +11784,24 @@
     "lastCommit": "2024-01-06T09:12:57+01:00"
   },
   {
+    "name": "EXT-Photos",
+    "url": "https://github.com/bugsounet/EXT-Photos",
+    "id": "bugsounet/EXT-Photos",
+    "maintainer": "bugsounet",
+    "maintainerURL": "https://wiki.bugsounet.fr",
+    "description": "Displaying any photos discover by assistant in fullscreen. This module have been defined to work only with MMM-GoogleAssistant.",
+    "issues": true,
+    "stars": 0,
+    "hasGithubIssues": false,
+    "tags": [
+      "photos"
+    ],
+    "license": "MIT",
+    "image": "resources-Photos-Logo.jpg",
+    "defaultSortWeight": 4,
+    "lastCommit": "2024-01-03T16:34:21+01:00"
+  },
+  {
     "name": "PiDisplaySleep",
     "url": "https://github.com/RpDp-git/PiDisplaySleep",
     "id": "RpDp-git/PiDisplaySleep",
@@ -12191,6 +11913,28 @@
     "image": "screenshot-screenshot.jpg",
     "defaultSortWeight": 3,
     "lastCommit": "2024-02-24T22:54:49+01:00"
+  },
+  {
+    "name": "EXT-Pir",
+    "url": "https://github.com/bugsounet/EXT-Pir",
+    "id": "bugsounet/EXT-Pir",
+    "maintainer": "bugsounet",
+    "maintainerURL": "https://wiki.bugsounet.fr",
+    "description": "Control your screen with a PIR Sensor. This module have been defined to work only with MMM-GoogleAssistant.",
+    "issues": true,
+    "stars": 3,
+    "hasGithubIssues": false,
+    "tags": [
+      "sensor",
+      "motion detection",
+      "pir",
+      "ext",
+      "googleassistant"
+    ],
+    "license": "MIT",
+    "image": "img-motion_detection.jpg",
+    "defaultSortWeight": 5,
+    "lastCommit": "2024-02-17T15:47:05+01:00"
   },
   {
     "name": "MMM-PIR",
@@ -12836,7 +12580,7 @@
     "maintainer": "KristjanESPERANTO",
     "maintainerURL": "",
     "description": "Displays departure information for public transportation in Germany and some other European countries. The <a target=\"_blank\" href=\"https://github.com/public-transport/hafas-client\">hafas-client</a> is used to query the information. The interface of the Deutsche Bahn is used as standard, this includes most of the local networks with buses, trams, etc. However, <a target=\"_blank\" href=\"https://github.com/public-transport/hafas-client/blob/main/p/readme.md\">other hafas interfaces</a> can also be used.",
-    "issues": false,
+    "issues": true,
     "stars": 12,
     "hasGithubIssues": true,
     "tags": [
@@ -12844,7 +12588,7 @@
     ],
     "license": "MIT",
     "image": "img-Goerdelerring_all.jpg",
-    "defaultSortWeight": 1,
+    "defaultSortWeight": 2,
     "lastCommit": "2024-02-05T23:19:21+01:00"
   },
   {
@@ -13035,6 +12779,24 @@
     "image": "images-quote-of-the-day_english_example.jpg",
     "defaultSortWeight": 7,
     "lastCommit": "2023-02-24T17:44:03+03:00"
+  },
+  {
+    "name": "EXT-RadioPlayer",
+    "url": "https://github.com/bugsounet/EXT-RadioPlayer",
+    "id": "bugsounet/EXT-RadioPlayer",
+    "maintainer": "bugsounet",
+    "maintainerURL": "https://wiki.bugsounet.fr",
+    "description": "Play radio station on MagicMirror\u00b2. This module have been defined to work only with MMM-GoogleAssistant.",
+    "issues": true,
+    "stars": 2,
+    "hasGithubIssues": false,
+    "tags": [
+      "radio"
+    ],
+    "license": "MIT",
+    "image": "Logos-ES-Cadena_DIAL.jpg",
+    "defaultSortWeight": 4,
+    "lastCommit": "2024-01-03T16:35:09+01:00"
   },
   {
     "name": "MMM-RaiderIO",
@@ -13953,6 +13715,26 @@
     "lastCommit": "2017-02-15T23:51:42+01:00"
   },
   {
+    "name": "EXT-Screen",
+    "url": "https://github.com/bugsounet/EXT-Screen",
+    "id": "bugsounet/EXT-Screen",
+    "maintainer": "bugsounet",
+    "maintainerURL": "https://wiki.bugsounet.fr",
+    "description": "After a configurated time without any user interaction the display will turn off and hide all modules for economy mode. This module have been defined to work only with MMM-GoogleAssistant.",
+    "issues": true,
+    "stars": 3,
+    "hasGithubIssues": false,
+    "tags": [
+      "screen",
+      "ext",
+      "googleassistant"
+    ],
+    "license": "MIT",
+    "image": "screenshot-screenshot.jpg",
+    "defaultSortWeight": 5,
+    "lastCommit": "2024-02-04T18:52:34+01:00"
+  },
+  {
     "name": "MMM-Screen-Powersave-Notification",
     "url": "https://github.com/Tom-Hirschberger/MMM-Screen-Powersave-Notification",
     "id": "Tom-Hirschberger/MMM-Screen-Powersave-Notification",
@@ -14100,6 +13882,35 @@
     "lastCommit": "2017-12-12T12:51:54+01:00"
   },
   {
+    "name": "EXT-Selfies",
+    "url": "https://github.com/bugsounet/EXT-Selfies",
+    "id": "bugsounet/EXT-Selfies",
+    "maintainer": "bugsounet",
+    "maintainerURL": "https://wiki.bugsounet.fr",
+    "description": "Take selfies from webcam. This module have been defined to work only with MMM-GoogleAssistant.",
+    "issues": true,
+    "stars": 0,
+    "hasGithubIssues": false,
+    "license": "MIT",
+    "image": "resources-screenshot.jpg",
+    "defaultSortWeight": 6,
+    "lastCommit": "2024-01-03T16:36:02+01:00"
+  },
+  {
+    "name": "EXT-SelfiesFlash",
+    "url": "https://github.com/bugsounet/EXT-SelfiesFlash",
+    "id": "bugsounet/EXT-SelfiesFlash",
+    "maintainer": "bugsounet",
+    "maintainerURL": "https://wiki.bugsounet.fr",
+    "description": "Need a flash to take selfies? This module have been defined to work only with MMM-GoogleAssistant.",
+    "issues": true,
+    "stars": 0,
+    "hasGithubIssues": false,
+    "license": "MIT",
+    "defaultSortWeight": 5,
+    "lastCommit": "2024-01-03T16:36:32+01:00"
+  },
+  {
     "name": "MMM-Selfieshot",
     "url": "https://github.com/BrianHepler/MMM-Selfieshot",
     "id": "BrianHepler/MMM-Selfieshot",
@@ -14113,6 +13924,35 @@
     "image": "screenshot.jpg",
     "defaultSortWeight": 4,
     "lastCommit": "2022-09-27T20:49:46-04:00"
+  },
+  {
+    "name": "EXT-SelfiesSender",
+    "url": "https://github.com/bugsounet/EXT-SelfiesSender",
+    "id": "bugsounet/EXT-SelfiesSender",
+    "maintainer": "bugsounet",
+    "maintainerURL": "https://wiki.bugsounet.fr",
+    "description": "Send your selfies to Telegram, google photos or by mail. This module have been defined to work only with MMM-GoogleAssistant.",
+    "issues": true,
+    "stars": 0,
+    "hasGithubIssues": false,
+    "license": "MIT",
+    "defaultSortWeight": 5,
+    "lastCommit": "2024-01-03T16:36:53+01:00"
+  },
+  {
+    "name": "EXT-SelfiesViewer",
+    "url": "https://github.com/bugsounet/EXT-SelfiesViewer",
+    "id": "bugsounet/EXT-SelfiesViewer",
+    "maintainer": "bugsounet",
+    "maintainerURL": "https://wiki.bugsounet.fr",
+    "description": "Slideshow of your best selfies. This module have been defined to work only with MMM-GoogleAssistant.",
+    "issues": true,
+    "stars": 0,
+    "hasGithubIssues": false,
+    "license": "MIT",
+    "image": "resources-coming_soon.jpg",
+    "defaultSortWeight": 4,
+    "lastCommit": "2024-01-04T15:10:10+01:00"
   },
   {
     "name": "MMM-SendNotificationButton",
@@ -14168,6 +14008,8 @@
     "maintainerURL": "https://github.com/Tom-Hirschberger",
     "description": "A module to send notifications based on messages received via one/multiple serial devices.",
     "issues": true,
+    "stars": 6,
+    "hasGithubIssues": true,
     "tags": [
       "serial console",
       "tty",
@@ -14187,6 +14029,7 @@
     "description": "A module to check the up/down status of servers/devices on your network.",
     "issues": true,
     "stars": 16,
+    "hasGithubIssues": true,
     "tags": [
       "ping",
       "server",
@@ -14206,6 +14049,7 @@
     "description": "Displays all Bonjour/Avahi services on your local network in a readable format, also allowing some interaction with the services, works well with <a target=\"_blank\" href=\"https://github.com/cybex-dev/MMM-XDG-OPEN\">XMMM-Xdg-Open</a>.",
     "issues": true,
     "stars": 1,
+    "hasGithubIssues": true,
     "defaultSortWeight": 7,
     "lastCommit": "2020-01-24T03:56:14+02:00"
   },
@@ -14219,6 +14063,7 @@
     "issues": true,
     "outdated": "Abandoned. The API used no longer works, there is a new API but the developer no longer seems to be active.",
     "stars": 3,
+    "hasGithubIssues": true,
     "tags": [
       "muni",
       "sf",
@@ -14238,6 +14083,7 @@
     "description": "Display bus transport info in Singapore.",
     "issues": true,
     "stars": 5,
+    "hasGithubIssues": true,
     "license": "ISC",
     "image": "screenshots-screenshot.jpg",
     "defaultSortWeight": 7,
@@ -14252,6 +14098,7 @@
     "description": "Display shabbat times for the current week and optionally hide all modules.",
     "issues": true,
     "stars": 3,
+    "hasGithubIssues": true,
     "tags": [
       "shabbat",
       "hebrew",
@@ -14269,7 +14116,8 @@
     "maintainerURL": "",
     "description": "Integrate Apple AirTunes/Airplay metadata coming via shairport-sync into the MagicMirror\u00b2. Does not work with video or mirroring.",
     "issues": true,
-    "stars": 16,
+    "stars": 17,
+    "hasGithubIssues": true,
     "defaultSortWeight": 7,
     "lastCommit": "2020-07-08T03:58:55+05:30"
   },
@@ -14294,6 +14142,7 @@
     "description": "Display data from 1 Shelly HT sensor.",
     "issues": true,
     "stars": 1,
+    "hasGithubIssues": true,
     "defaultSortWeight": 7,
     "lastCommit": "2020-04-21T12:31:27+02:00"
   },
@@ -14305,7 +14154,8 @@
     "maintainerURL": "https://github.com/stefanjacobs",
     "description": "Display data from 1 Shelly PM sensor, forked and modified by <a target=\"_blank\" href=\"https://github.com/Medve01/Shelly-HT\">Shelly-HT</a>.",
     "issues": true,
-    "stars": 2,
+    "stars": 3,
+    "hasGithubIssues": true,
     "license": "UNLICENSE",
     "defaultSortWeight": 8,
     "lastCommit": "2022-10-10T15:43:28+02:00"
@@ -14318,7 +14168,8 @@
     "maintainerURL": "https://github.com/mgarrix",
     "description": "Display data from Shelly EM sensor.",
     "issues": true,
-    "stars": 0,
+    "stars": 1,
+    "hasGithubIssues": true,
     "tags": [
       "shelly",
       "shellyem",
@@ -14339,6 +14190,7 @@
     "description": "Display data from Shelly+ HT sensor. Forked from Shelly-HT for Gen2 device Shelly Plus HT.",
     "issues": true,
     "stars": 0,
+    "hasGithubIssues": true,
     "defaultSortWeight": 6,
     "lastCommit": "2023-10-01T13:13:27+02:00"
   },
@@ -14351,6 +14203,7 @@
     "description": "Display your shipment tracking status.",
     "issues": true,
     "stars": 26,
+    "hasGithubIssues": true,
     "tags": [
       "shipment tracking"
     ],
@@ -14368,6 +14221,7 @@
     "description": "Display stands of Svenska Hockey Ligan (SHL).",
     "issues": true,
     "stars": 1,
+    "hasGithubIssues": true,
     "license": "MIT",
     "image": "docs-screenshot.jpg",
     "defaultSortWeight": 5,
@@ -14383,6 +14237,7 @@
     "issues": true,
     "outdated": "Abandoned. Repo has been archived at 2022-05-22.",
     "stars": 19,
+    "hasGithubIssues": true,
     "license": "MIT",
     "image": "images-MMM-Simple-Swiper-Pin-Layout.jpg",
     "defaultSortWeight": 909,
@@ -14397,6 +14252,7 @@
     "description": "Simply displays logo with local image file path or url.",
     "issues": true,
     "stars": 36,
+    "hasGithubIssues": true,
     "defaultSortWeight": 2,
     "lastCommit": "2019-08-01T11:00:03+07:00"
   },
@@ -14408,7 +14264,8 @@
     "maintainerURL": "https://github.com/sabo10o29",
     "description": "Shows trash days with simple setup.",
     "issues": true,
-    "stars": 1,
+    "stars": 2,
+    "hasGithubIssues": true,
     "tags": [
       "trash day",
       "garbage"
@@ -14427,6 +14284,7 @@
     "description": "Simple and plain text module with some minor formatting options. Can also display content from text files with multiple lines.",
     "issues": true,
     "stars": 7,
+    "hasGithubIssues": true,
     "defaultSortWeight": 5,
     "lastCommit": "2021-07-26T18:30:40+02:00"
   },
@@ -14439,6 +14297,7 @@
     "description": "Displays the stock price of a single company without any fancy animation.",
     "issues": true,
     "stars": 6,
+    "hasGithubIssues": true,
     "tags": [
       "stock"
     ],
@@ -14456,6 +14315,7 @@
     "description": "Shows this week's school timetable from the Swedish school system Skola24.",
     "issues": true,
     "stars": 3,
+    "hasGithubIssues": true,
     "tags": [
       "schema",
       "skolschema",
@@ -14475,6 +14335,7 @@
     "description": "Show school lunch menus in Sweden from skolmaten.se.",
     "issues": true,
     "stars": 7,
+    "hasGithubIssues": true,
     "tags": [
       "skolmat",
       "skolmaten",
@@ -14493,6 +14354,7 @@
     "description": "Based on MMM-Ruter, but for the municipality of Hordaland in Norway.",
     "issues": true,
     "stars": 6,
+    "hasGithubIssues": false,
     "license": "ISC",
     "image": "images-MMM-Skyss-1.jpg",
     "defaultSortWeight": 8,
@@ -14507,6 +14369,7 @@
     "description": "Display public transport in Stockholm/<strong>Sweden</strong>.",
     "issues": true,
     "stars": 12,
+    "hasGithubIssues": true,
     "tags": [
       "publictransport"
     ],
@@ -14523,7 +14386,8 @@
     "maintainerURL": "",
     "description": "Cycles through the newest messages of a Slack channel.",
     "issues": true,
-    "stars": 3,
+    "stars": 4,
+    "hasGithubIssues": true,
     "tags": [
       "slack"
     ],
@@ -14540,6 +14404,7 @@
     "description": "Post announcements to your mirror from a designated Slack channel.",
     "issues": true,
     "stars": 5,
+    "hasGithubIssues": true,
     "defaultSortWeight": 7,
     "lastCommit": "2018-10-17T23:19:31-07:00"
   },
@@ -14552,6 +14417,7 @@
     "description": "Show what's currently playing now on the dutch radio station Slam!.",
     "issues": true,
     "stars": 0,
+    "hasGithubIssues": true,
     "tags": [
       "slamfm!",
       "radio",
@@ -14573,6 +14439,7 @@
     "description": "Displays your <a target=\"_blank\" href=\"https://sleeper.com\">Sleeper</a> fantasy football matchup with live updating scores.",
     "issues": true,
     "stars": 0,
+    "hasGithubIssues": true,
     "defaultSortWeight": 10,
     "lastCommit": "2023-09-08T10:15:10-07:00"
   },
@@ -14585,6 +14452,7 @@
     "description": "Module that uses an external source for motion detection, like a web camera .",
     "issues": true,
     "stars": 11,
+    "hasGithubIssues": true,
     "defaultSortWeight": 6,
     "lastCommit": "2024-02-02T22:25:01-07:00"
   },
@@ -14597,6 +14465,7 @@
     "description": "Module to integrate <a target=\"_blank\" href=\"https://www.smappee.com\">Smappee</a>s smart home energy consumption monitor.",
     "issues": true,
     "stars": 2,
+    "hasGithubIssues": true,
     "license": "MIT",
     "image": ".github-preview.jpg",
     "defaultSortWeight": 7,
@@ -14610,7 +14479,8 @@
     "maintainerURL": "https://github.com/EbenKouao",
     "description": "This module allows you to transform your MagicMirror\u00b2 into a touchscreen interactive experience. This includes hiding all modules (Standby Mode) and Side Menu Option to shutdown your mirror via MagicMirror\u00b2 UI.",
     "issues": true,
-    "stars": 78,
+    "stars": 79,
+    "hasGithubIssues": true,
     "defaultSortWeight": 6,
     "lastCommit": "2021-03-29T14:21:39+01:00"
   },
@@ -14622,7 +14492,8 @@
     "maintainerURL": "https://github.com/AgP42",
     "description": "An iFrame module to display web content (including YouTube, IP cameras, etc.). Several rotating URL, autorefresh and remote control of the URL to display, Next/Prev/Play/Stop. <a target=\"_blank\" href=\"https://forum.magicmirror.builders/topic/9750/mmm-smartwebdisplay-display-web-contents-including-youtube-on-your-mm\">MMM-SmartWebDisplay forum</a>.",
     "issues": true,
-    "stars": 52,
+    "stars": 56,
+    "hasGithubIssues": true,
     "tags": [
       "iframe",
       "notification"
@@ -14640,6 +14511,7 @@
     "description": "Air pollution in Polish cities.",
     "issues": true,
     "stars": 3,
+    "hasGithubIssues": true,
     "tags": [
       "air polution"
     ],
@@ -14657,6 +14529,7 @@
     "description": "Play the retro game Snake on your mirror using your smartphone.",
     "issues": true,
     "stars": 23,
+    "hasGithubIssues": true,
     "defaultSortWeight": 3,
     "lastCommit": "2021-05-04T21:46:59+02:00"
   },
@@ -14669,6 +14542,7 @@
     "description": "Display upcoming trains between 2 SNCF stations (France).",
     "issues": true,
     "stars": 5,
+    "hasGithubIssues": true,
     "tags": [
       "localtransport",
       "sncf",
@@ -14688,6 +14562,7 @@
     "description": "Uses SNMP to display bandwidth usage from a network device interface.",
     "issues": true,
     "stars": 4,
+    "hasGithubIssues": true,
     "tags": [
       "snmp",
       "bandwidth"
@@ -14706,6 +14581,7 @@
     "description": "More realistic snow plugin to improve your winter experience.",
     "issues": true,
     "stars": 54,
+    "hasGithubIssues": true,
     "defaultSortWeight": 4,
     "lastCommit": "2018-02-13T22:37:11+01:00"
   },
@@ -14717,7 +14593,8 @@
     "maintainerURL": "",
     "description": "Display standings from European Soccer (Football) leagues (optional voice-control).",
     "issues": true,
-    "stars": 28,
+    "stars": 29,
+    "hasGithubIssues": true,
     "tags": [
       "soccer standings"
     ],
@@ -14734,7 +14611,8 @@
     "maintainerURL": "",
     "description": "Display live scores of your favorite soccer leagues/competitions.",
     "issues": true,
-    "stars": 6,
+    "stars": 7,
+    "hasGithubIssues": true,
     "tags": [
       "live score",
       "soccer",
@@ -14754,6 +14632,7 @@
     "description": "Displays the follower count of a Twitter user of choice.",
     "issues": true,
     "stars": 4,
+    "hasGithubIssues": true,
     "tags": [
       "social",
       "counter",
@@ -14778,13 +14657,14 @@
     "description": "Station monitor for bicycle networks based on the Socialbicycles API/Infrastructure, e.g. Wavelo in Krak\u00f3w, Poland.",
     "issues": true,
     "stars": 0,
+    "hasGithubIssues": false,
     "tags": [
       "nextbike",
       "bike sharing"
     ],
     "license": "MIT",
     "image": "screenshots-socialbicycles1.jpg",
-    "defaultSortWeight": 8,
+    "defaultSortWeight": 9,
     "lastCommit": "2018-01-15T14:27:53+01:00"
   },
   {
@@ -14796,6 +14676,7 @@
     "description": "Display statistics from your Enphase Energy microinverter PV system.",
     "issues": true,
     "stars": 6,
+    "hasGithubIssues": true,
     "defaultSortWeight": 8,
     "lastCommit": "2017-03-29T18:27:12-06:00"
   },
@@ -14808,6 +14689,7 @@
     "description": "Display live data and statistics from your SolarEdge inverter system. PV and optional battery support.",
     "issues": true,
     "stars": 1,
+    "hasGithubIssues": true,
     "license": "MIT",
     "image": "docs-SolarEdgePv.jpg",
     "defaultSortWeight": 10,
@@ -14822,7 +14704,8 @@
     "description": "Display statistics from your SolarEdge PV inverter system.",
     "issues": true,
     "stars": 5,
-    "defaultSortWeight": 8,
+    "hasGithubIssues": false,
+    "defaultSortWeight": 9,
     "lastCommit": "2019-05-03T12:37:45+01:00"
   },
   {
@@ -14834,7 +14717,8 @@
     "description": "Display simple statistics from your SolarEdge (based on bertieuk).",
     "issues": true,
     "stars": 1,
-    "defaultSortWeight": 6,
+    "hasGithubIssues": false,
+    "defaultSortWeight": 7,
     "lastCommit": "2022-08-30T11:22:49+02:00"
   },
   {
@@ -14846,6 +14730,7 @@
     "description": "Display statistics from the Solarman API, e.g. from Bosswerk PV inverter.",
     "issues": true,
     "stars": 2,
+    "hasGithubIssues": true,
     "license": "MIT",
     "image": "screenshot.jpg",
     "defaultSortWeight": 6,
@@ -14859,7 +14744,8 @@
     "maintainerURL": "",
     "description": "Display the last Solar Dynamics Observatory (SDO) picture.",
     "issues": true,
-    "stars": 2,
+    "stars": 3,
+    "hasGithubIssues": true,
     "defaultSortWeight": 5,
     "lastCommit": "2020-01-02T01:16:39+01:00"
   },
@@ -14886,6 +14772,7 @@
     "description": "Display the currently playing track of your Sonos system.",
     "issues": true,
     "stars": 40,
+    "hasGithubIssues": true,
     "license": "MIT",
     "image": ".github-preview.jpg",
     "defaultSortWeight": 7,
@@ -14899,7 +14786,8 @@
     "maintainerURL": "https://github.com/tbouron",
     "description": "Module that displays playing tracks on your Sonos network.",
     "issues": true,
-    "stars": 12,
+    "stars": 14,
+    "hasGithubIssues": true,
     "tags": [
       "sonos",
       "music"
@@ -14919,6 +14807,7 @@
     "issues": true,
     "outdated": "Abandoned. No reactions to issues since years. Missing instructions to install dependency 'request'.",
     "stars": 2,
+    "hasGithubIssues": true,
     "defaultSortWeight": 906,
     "lastCommit": "2020-04-11T21:13:37-04:00"
   },
@@ -14931,6 +14820,7 @@
     "description": "Adds vertical space (as HTML div) between modules.",
     "issues": true,
     "stars": 9,
+    "hasGithubIssues": true,
     "defaultSortWeight": 5,
     "lastCommit": "2019-08-15T23:13:58+02:00"
   },
@@ -14943,6 +14833,7 @@
     "description": "Show the previous and upcoming launches of any rocket, bases on SpaceLaunchNow API.",
     "issues": true,
     "stars": 3,
+    "hasGithubIssues": true,
     "defaultSortWeight": 6,
     "lastCommit": "2020-06-05T16:19:36+02:00"
   },
@@ -14955,6 +14846,7 @@
     "description": "Show the previous and upcoming launches of SpaceX rockets.",
     "issues": true,
     "stars": 10,
+    "hasGithubIssues": true,
     "defaultSortWeight": 6,
     "lastCommit": "2020-02-22T12:59:56+01:00"
   },
@@ -14987,6 +14879,44 @@
     "image": "screenshots-miniature_bar.jpg",
     "defaultSortWeight": 3,
     "lastCommit": "2024-02-22T22:30:30+01:00"
+  },
+  {
+    "name": "EXT-Spotify",
+    "url": "https://github.com/bugsounet/EXT-Spotify",
+    "id": "bugsounet/EXT-Spotify",
+    "maintainer": "bugsounet",
+    "maintainerURL": "https://wiki.bugsounet.fr",
+    "description": "This plugin show current spotify playback of any devices. This module have been defined to work only with MMM-GoogleAssistant.",
+    "issues": true,
+    "stars": 2,
+    "hasGithubIssues": false,
+    "tags": [
+      "spotify"
+    ],
+    "license": "MIT",
+    "image": "components-Spotify-Logo.jpg",
+    "defaultSortWeight": 4,
+    "lastCommit": "2024-01-03T16:37:34+01:00"
+  },
+  {
+    "name": "EXT-SpotifyCanvasLyrics",
+    "url": "https://github.com/bugsounet/EXT-SpotifyCanvasLyrics",
+    "id": "bugsounet/EXT-SpotifyCanvasLyrics",
+    "maintainer": "bugsounet",
+    "maintainerURL": "https://wiki.bugsounet.fr",
+    "description": "Create a server for displaying any Lyrics and Canvas from Spotify. This module have been defined to work only with MMM-GoogleAssistant.",
+    "issues": true,
+    "stars": 0,
+    "hasGithubIssues": false,
+    "tags": [
+      "spotify",
+      "canvas",
+      "lyrics"
+    ],
+    "license": "MIT",
+    "image": "screenshot-landscape.jpg",
+    "defaultSortWeight": 3,
+    "lastCommit": "2024-02-22T18:17:21+01:00"
   },
   {
     "name": "MMM-SpotifyConnectUI",
@@ -15180,6 +15110,21 @@
     "image": ".github-example-chart-recent.jpg",
     "defaultSortWeight": 10,
     "lastCommit": "2021-09-10T16:53:31+01:00"
+  },
+  {
+    "name": "EXT-StreamDeck",
+    "url": "https://github.com/bugsounet/EXT-StreamDeck",
+    "id": "bugsounet/EXT-StreamDeck",
+    "maintainer": "bugsounet",
+    "maintainerURL": "https://wiki.bugsounet.fr",
+    "description": "Control your mirror with a StreamDeck by elgato\u00a9. This module have been defined to work only with MMM-GoogleAssistant.",
+    "issues": true,
+    "stars": 0,
+    "hasGithubIssues": false,
+    "license": "MIT",
+    "image": "icons-Sample-access_time.jpg",
+    "defaultSortWeight": 4,
+    "lastCommit": "2024-01-12T01:41:46+01:00"
   },
   {
     "name": "MMM-SugarValue",
@@ -15512,6 +15457,24 @@
     "license": "MIT",
     "defaultSortWeight": 7,
     "lastCommit": "2017-04-13T01:45:58+02:00"
+  },
+  {
+    "name": "EXT-TelegramBot",
+    "url": "https://github.com/bugsounet/EXT-TelegramBot",
+    "id": "bugsounet/EXT-TelegramBot",
+    "maintainer": "bugsounet",
+    "maintainerURL": "https://wiki.bugsounet.fr",
+    "description": "You can remote-control plugins within Telegram. This module have been defined to work only with MMM-GoogleAssistant.",
+    "issues": true,
+    "stars": 1,
+    "hasGithubIssues": false,
+    "tags": [
+      "telegram"
+    ],
+    "license": "MIT",
+    "image": "screenshot-sc_fullsize.jpg",
+    "defaultSortWeight": 6,
+    "lastCommit": "2024-02-11T20:54:36+01:00"
   },
   {
     "name": "MMM-TelegramCommands",
@@ -16468,6 +16431,21 @@
     "lastCommit": "2020-10-16T21:45:32+02:00"
   },
   {
+    "name": "EXT-Updates",
+    "url": "https://github.com/bugsounet/EXT-Updates",
+    "id": "bugsounet/EXT-Updates",
+    "maintainer": "bugsounet",
+    "maintainerURL": "https://wiki.bugsounet.fr",
+    "description": "This plugin allow to auto-update if an update is detected. This module have been defined to work only with MMM-GoogleAssistant.",
+    "issues": true,
+    "stars": 0,
+    "hasGithubIssues": false,
+    "license": "MIT",
+    "image": "resources-update.jpg",
+    "defaultSortWeight": 7,
+    "lastCommit": "2024-02-11T21:00:51+01:00"
+  },
+  {
     "name": "MMM-uptimekuma",
     "url": "https://github.com/MikeBishop/MMM-uptimekuma",
     "id": "MikeBishop/MMM-uptimekuma",
@@ -16783,6 +16761,26 @@
     "image": "mmm-volume.jpg",
     "defaultSortWeight": 6,
     "lastCommit": "2020-03-31T14:06:02+02:00"
+  },
+  {
+    "name": "EXT-Volume",
+    "url": "https://github.com/bugsounet/EXT-Volume",
+    "id": "bugsounet/EXT-Volume",
+    "maintainer": "bugsounet",
+    "maintainerURL": "https://wiki.bugsounet.fr",
+    "description": "Control the sound volume level of your mirror. This module have been defined to work only with MMM-GoogleAssistant.",
+    "issues": true,
+    "stars": 2,
+    "hasGithubIssues": false,
+    "tags": [
+      "volume",
+      "warning",
+      "googleassistant"
+    ],
+    "license": "MIT",
+    "image": "resources-screenshot.jpg",
+    "defaultSortWeight": 4,
+    "lastCommit": "2024-01-03T16:39:36+01:00"
   },
   {
     "name": "MMM-volumio-playing",
@@ -17204,6 +17202,24 @@
     "lastCommit": "2021-09-11T17:02:34+02:00"
   },
   {
+    "name": "EXT-Welcome",
+    "url": "https://github.com/bugsounet/EXT-Welcome",
+    "id": "bugsounet/EXT-Welcome",
+    "maintainer": "bugsounet",
+    "maintainerURL": "https://wiki.bugsounet.fr",
+    "description": "Allow to send a welcome on start of MagicMirror\u00b2. This module have been defined to work only with MMM-GoogleAssistant.",
+    "issues": true,
+    "stars": 0,
+    "hasGithubIssues": false,
+    "tags": [
+      "notification",
+      "warning"
+    ],
+    "license": "MIT",
+    "defaultSortWeight": 5,
+    "lastCommit": "2024-01-03T16:40:04+01:00"
+  },
+  {
     "name": "MMM-WestBerksBinDay",
     "url": "https://github.com/hdurdle/MMM-WestBerksBinDay",
     "id": "hdurdle/MMM-WestBerksBinDay",
@@ -17617,6 +17633,24 @@
     "lastCommit": "2018-12-20T20:03:51+01:00"
   },
   {
+    "name": "EXT-YouTube",
+    "url": "https://github.com/bugsounet/EXT-YouTube",
+    "id": "bugsounet/EXT-YouTube",
+    "maintainer": "bugsounet",
+    "maintainerURL": "https://wiki.bugsounet.fr",
+    "description": "This plugins allows to play YouTube video. This module have been defined to work only with MMM-GoogleAssistant.",
+    "issues": true,
+    "stars": 3,
+    "hasGithubIssues": false,
+    "tags": [
+      "youtube"
+    ],
+    "license": "MIT",
+    "image": "resources-Screenshot1.jpg",
+    "defaultSortWeight": 7,
+    "lastCommit": "2024-01-12T01:42:23+01:00"
+  },
+  {
     "name": "MMM-YouTube-API",
     "url": "https://github.com/C4TFLY/MMM-YouTube-API",
     "id": "C4TFLY/MMM-YouTube-API",
@@ -17646,6 +17680,25 @@
     "license": "MIT",
     "defaultSortWeight": 5,
     "lastCommit": "2023-03-15T12:13:02+01:00"
+  },
+  {
+    "name": "EXT-YouTubeCast",
+    "url": "https://github.com/bugsounet/EXT-YouTubeCast",
+    "id": "bugsounet/EXT-YouTubeCast",
+    "maintainer": "bugsounet",
+    "maintainerURL": "https://wiki.bugsounet.fr",
+    "description": "Allow to cast a YouTube video on MagicMirror\u00b2. This module have been defined to work only with MMM-GoogleAssistant.",
+    "issues": true,
+    "stars": 2,
+    "hasGithubIssues": false,
+    "tags": [
+      "cast",
+      "youtube"
+    ],
+    "license": "MIT",
+    "image": "resources-Screenshot1.jpg",
+    "defaultSortWeight": 5,
+    "lastCommit": "2024-01-03T16:40:52+01:00"
   },
   {
     "name": "MMM-YouTubeWebView",

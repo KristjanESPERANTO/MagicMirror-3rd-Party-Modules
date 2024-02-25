@@ -264,6 +264,24 @@
     "image": ".github-example.jpg"
   },
   {
+    "name": "EXT-Alert",
+    "url": "https://github.com/bugsounet/EXT-Alert",
+    "id": "bugsounet/EXT-Alert",
+    "maintainer": "bugsounet",
+    "maintainerURL": "https://wiki.bugsounet.fr",
+    "description": "Display any warning, information or error on your screen about Assistant.",
+    "issues": [],
+    "stars": 2,
+    "hasGithubIssues": false,
+    "tags": [
+      "notification",
+      "warning",
+      "alert"
+    ],
+    "license": "MIT",
+    "image": "errorShot.jpg"
+  },
+  {
     "name": "MMM-alexa",
     "url": "https://github.com/sakirtemel/MMM-alexa",
     "id": "sakirtemel/MMM-alexa",
@@ -733,6 +751,22 @@
     "hasGithubIssues": true,
     "license": "MIT",
     "image": "styles-loading.jpg"
+  },
+  {
+    "name": "EXT-Background",
+    "url": "https://github.com/bugsounet/EXT-Background",
+    "id": "bugsounet/EXT-Background",
+    "maintainer": "bugsounet",
+    "maintainerURL": "https://wiki.bugsounet.fr",
+    "description": "Change the default Google Assistant background to your own or with animated gifs for each status of the assistant.",
+    "issues": [],
+    "stars": 0,
+    "hasGithubIssues": false,
+    "tags": [
+      "background"
+    ],
+    "license": "MIT",
+    "image": "cortana-confirmation.jpg"
   },
   {
     "name": "MMM-BackgroundSlideshow",
@@ -1238,7 +1272,8 @@
     "stars": 18,
     "hasGithubIssues": true,
     "tags": [
-      "bosch smart home"
+      "bosch smart home",
+      "smart home"
     ],
     "license": "MIT",
     "image": "screenshot.jpg"
@@ -1316,6 +1351,23 @@
     "image": "img-readme-example.jpg"
   },
   {
+    "name": "EXT-Bring",
+    "url": "https://github.com/bugsounet/EXT-Bring",
+    "id": "bugsounet/EXT-Bring",
+    "maintainer": "bugsounet",
+    "maintainerURL": "https://wiki.bugsounet.fr",
+    "description": "Show your current shopping list of Bring!",
+    "issues": [],
+    "stars": 2,
+    "hasGithubIssues": false,
+    "tags": [
+      "shopping list",
+      "google assistant"
+    ],
+    "license": "MIT",
+    "image": "Screenshot.jpg"
+  },
+  {
     "name": "MMM-bringList",
     "url": "https://github.com/rseidt/MMM-bringList",
     "id": "rseidt/MMM-bringList",
@@ -1330,6 +1382,23 @@
     "hasGithubIssues": true,
     "license": "MIT",
     "image": "Screenshot.jpg"
+  },
+  {
+    "name": "EXT-Browser",
+    "url": "https://github.com/bugsounet/EXT-Browser",
+    "id": "bugsounet/EXT-Browser",
+    "maintainer": "bugsounet",
+    "maintainerURL": "https://wiki.bugsounet.fr",
+    "description": "Display any internet web page like a real browser in fullscreen.",
+    "issues": [
+      "No image found."
+    ],
+    "stars": 0,
+    "hasGithubIssues": false,
+    "tags": [
+      "browser"
+    ],
+    "license": "MIT"
   },
   {
     "name": "MMM-Bubi",
@@ -2927,6 +2996,27 @@
     "hasGithubIssues": true
   },
   {
+    "name": "EXT-Detector",
+    "url": "https://github.com/bugsounet/EXT-Detector",
+    "id": "bugsounet/EXT-Detector",
+    "maintainer": "bugsounet",
+    "maintainerURL": "https://wiki.bugsounet.fr",
+    "description": "Multi-keyword listener for MMM-GoogleAssistant.",
+    "issues": [],
+    "stars": 6,
+    "hasGithubIssues": false,
+    "tags": [
+      "hotword",
+      "porcupine",
+      "snowboy",
+      "voice",
+      "jarvis",
+      "ok google"
+    ],
+    "license": "MIT",
+    "image": "resources-google.jpg"
+  },
+  {
     "name": "MMM-DHT",
     "url": "https://github.com/ckoutavas/MMM-DHT",
     "id": "ckoutavas/MMM-DHT",
@@ -3780,532 +3870,6 @@
     "hasGithubIssues": false
   },
   {
-    "name": "EXT-Alert",
-    "url": "https://github.com/bugsounet/EXT-Alert",
-    "id": "bugsounet/EXT-Alert",
-    "maintainer": "bugsounet",
-    "maintainerURL": "https://wiki.bugsounet.fr",
-    "description": "Display any warning, information or error on your screen about Assistant.",
-    "issues": [],
-    "stars": 2,
-    "hasGithubIssues": false,
-    "tags": [
-      "notification",
-      "warning",
-      "alert"
-    ],
-    "license": "MIT",
-    "image": "errorShot.jpg"
-  },
-  {
-    "name": "EXT-Background",
-    "url": "https://github.com/bugsounet/EXT-Background",
-    "id": "bugsounet/EXT-Background",
-    "maintainer": "bugsounet",
-    "maintainerURL": "https://wiki.bugsounet.fr",
-    "description": "Change the default Google Assistant background to your own or with animated gifs for each status of the assistant.",
-    "issues": [],
-    "stars": 0,
-    "hasGithubIssues": false,
-    "tags": [
-      "background"
-    ],
-    "license": "MIT",
-    "image": "cortana-confirmation.jpg"
-  },
-  {
-    "name": "EXT-Bring",
-    "url": "https://github.com/bugsounet/EXT-Bring",
-    "id": "bugsounet/EXT-Bring",
-    "maintainer": "bugsounet",
-    "maintainerURL": "https://wiki.bugsounet.fr",
-    "description": "Show your current shopping list of Bring!",
-    "issues": [],
-    "stars": 2,
-    "hasGithubIssues": false,
-    "tags": [
-      "shopping list",
-      "google assistant"
-    ],
-    "license": "MIT",
-    "image": "Screenshot.jpg"
-  },
-  {
-    "name": "EXT-Browser",
-    "url": "https://github.com/bugsounet/EXT-Browser",
-    "id": "bugsounet/EXT-Browser",
-    "maintainer": "bugsounet",
-    "maintainerURL": "https://wiki.bugsounet.fr",
-    "description": "Display any internet web page like a real browser in fullscreen.",
-    "issues": [
-      "No image found."
-    ],
-    "stars": 0,
-    "hasGithubIssues": false,
-    "tags": [
-      "browser"
-    ],
-    "license": "MIT"
-  },
-  {
-    "name": "EXT-Detector",
-    "url": "https://github.com/bugsounet/EXT-Detector",
-    "id": "bugsounet/EXT-Detector",
-    "maintainer": "bugsounet",
-    "maintainerURL": "https://wiki.bugsounet.fr",
-    "description": "Multi-keyword listener for MMM-GoogleAssistant.",
-    "issues": [],
-    "stars": 6,
-    "hasGithubIssues": false,
-    "tags": [
-      "hotword",
-      "porcupine",
-      "snowboy",
-      "voice",
-      "jarvis",
-      "ok google"
-    ],
-    "license": "MIT",
-    "image": "resources-google.jpg"
-  },
-  {
-    "name": "EXT-FreeboxTV",
-    "url": "https://github.com/bugsounet/EXT-FreeboxTV",
-    "id": "bugsounet/EXT-FreeboxTV",
-    "maintainer": "bugsounet",
-    "maintainerURL": "https://wiki.bugsounet.fr",
-    "description": "Display Channel from French Internet Provider: Free.",
-    "issues": [],
-    "stars": 1,
-    "hasGithubIssues": false,
-    "tags": [
-      "freebox",
-      "free",
-      "tv"
-    ],
-    "license": "MIT",
-    "image": "resources-FreeboxTV.jpg"
-  },
-  {
-    "name": "EXT-GooglePhotos",
-    "url": "https://github.com/bugsounet/EXT-GooglePhotos",
-    "id": "bugsounet/EXT-GooglePhotos",
-    "maintainer": "bugsounet",
-    "maintainerURL": "https://wiki.bugsounet.fr",
-    "description": "Display your album directory with Google photos API in background or in MagicMirror² position.",
-    "issues": [],
-    "stars": 2,
-    "hasGithubIssues": false,
-    "tags": [
-      "google",
-      "photo"
-    ],
-    "license": "MIT",
-    "image": "resources-GooglePhoto-Logo.jpg"
-  },
-  {
-    "name": "EXT-Governor",
-    "url": "https://github.com/bugsounet/EXT-Governor",
-    "id": "bugsounet/EXT-Governor",
-    "maintainer": "bugsounet",
-    "maintainerURL": "https://wiki.bugsounet.fr",
-    "description": "CPU governor enables the operating system to scale the CPU frequency up or down in order to save power or improve performance.",
-    "issues": [
-      "No image found."
-    ],
-    "stars": 2,
-    "hasGithubIssues": false,
-    "tags": [
-      "governor",
-      "ext",
-      "googleassistant"
-    ],
-    "license": "MIT"
-  },
-  {
-    "name": "EXT-Internet",
-    "url": "https://github.com/bugsounet/EXT-Internet",
-    "id": "bugsounet/EXT-Internet",
-    "maintainer": "bugsounet",
-    "maintainerURL": "https://wiki.bugsounet.fr",
-    "description": "Check your internet connexion, display ping.",
-    "issues": [],
-    "stars": 0,
-    "hasGithubIssues": false,
-    "tags": [
-      "internet",
-      "warning"
-    ],
-    "license": "MIT",
-    "image": "resources-Internet-Logo.jpg"
-  },
-  {
-    "name": "EXT-Keyboard",
-    "url": "https://github.com/bugsounet/EXT-Keyboard",
-    "id": "bugsounet/EXT-Keyboard",
-    "maintainer": "bugsounet",
-    "maintainerURL": "https://wiki.bugsounet.fr",
-    "description": "Control your mirror with a keyboard.",
-    "issues": [
-      "No image found."
-    ],
-    "stars": 1,
-    "hasGithubIssues": false,
-    "tags": [
-      "keyboard"
-    ],
-    "license": "MIT"
-  },
-  {
-    "name": "EXT-Librespot",
-    "url": "https://github.com/bugsounet/EXT-Librespot",
-    "id": "bugsounet/EXT-Librespot",
-    "maintainer": "bugsounet",
-    "maintainerURL": "https://wiki.bugsounet.fr",
-    "description": "Allow to play Spotify music on your mirror with Librespot.",
-    "issues": [],
-    "stars": 0,
-    "hasGithubIssues": false,
-    "tags": [
-      "spotify",
-      "librespot"
-    ],
-    "license": "MIT",
-    "image": "resources-Spotify-Logo.jpg"
-  },
-  {
-    "name": "EXT-Motion",
-    "url": "https://github.com/bugsounet/EXT-Motion",
-    "id": "bugsounet/EXT-Motion",
-    "maintainer": "bugsounet",
-    "maintainerURL": "https://wiki.bugsounet.fr",
-    "description": "Control your screen with a webcam (as motion detector).",
-    "issues": [
-      "No image found."
-    ],
-    "stars": 0,
-    "hasGithubIssues": false,
-    "tags": [
-      "plugin",
-      "screen",
-      "ext",
-      "googleassistant"
-    ],
-    "license": "MIT"
-  },
-  {
-    "name": "EXT-MusicPlayer",
-    "url": "https://github.com/bugsounet/EXT-MusicPlayer",
-    "id": "bugsounet/EXT-MusicPlayer",
-    "maintainer": "bugsounet",
-    "maintainerURL": "https://wiki.bugsounet.fr",
-    "description": "Play any music found on a USB Key or in defined local directory.",
-    "issues": [],
-    "stars": 1,
-    "hasGithubIssues": false,
-    "tags": [
-      "volume",
-      "warning"
-    ],
-    "license": "MIT",
-    "image": "resources-Screenshot.jpg"
-  },
-  {
-    "name": "EXT-Pages",
-    "url": "https://github.com/bugsounet/EXT-Pages",
-    "id": "bugsounet/EXT-Pages",
-    "maintainer": "bugsounet",
-    "maintainerURL": "https://wiki.bugsounet.fr",
-    "description": "This plugin allows you to have animated pages.",
-    "issues": [],
-    "stars": 2,
-    "hasGithubIssues": false,
-    "tags": [
-      "pages"
-    ],
-    "license": "MIT",
-    "image": "example.jpg"
-  },
-  {
-    "name": "EXT-Photos",
-    "url": "https://github.com/bugsounet/EXT-Photos",
-    "id": "bugsounet/EXT-Photos",
-    "maintainer": "bugsounet",
-    "maintainerURL": "https://wiki.bugsounet.fr",
-    "description": "Displaying any photos discover by assistant in fullscreen.",
-    "issues": [],
-    "stars": 0,
-    "hasGithubIssues": false,
-    "tags": [
-      "photos"
-    ],
-    "license": "MIT",
-    "image": "resources-Photos-Logo.jpg"
-  },
-  {
-    "name": "EXT-Pir",
-    "url": "https://github.com/bugsounet/EXT-Pir",
-    "id": "bugsounet/EXT-Pir",
-    "maintainer": "bugsounet",
-    "maintainerURL": "https://wiki.bugsounet.fr",
-    "description": "Control your screen with a PIR Sensor.",
-    "issues": [],
-    "stars": 3,
-    "hasGithubIssues": false,
-    "tags": [
-      "sensor",
-      "motion detection",
-      "pir",
-      "ext",
-      "googleassistant"
-    ],
-    "license": "MIT",
-    "image": "img-motion_detection.jpg"
-  },
-  {
-    "name": "EXT-RadioPlayer",
-    "url": "https://github.com/bugsounet/EXT-RadioPlayer",
-    "id": "bugsounet/EXT-RadioPlayer",
-    "maintainer": "bugsounet",
-    "maintainerURL": "https://wiki.bugsounet.fr",
-    "description": "Play radio station on MagicMirror².",
-    "issues": [],
-    "stars": 2,
-    "hasGithubIssues": false,
-    "tags": [
-      "radio"
-    ],
-    "license": "MIT",
-    "image": "Logos-ES-Cadena_DIAL.jpg"
-  },
-  {
-    "name": "EXT-Screen",
-    "url": "https://github.com/bugsounet/EXT-Screen",
-    "id": "bugsounet/EXT-Screen",
-    "maintainer": "bugsounet",
-    "maintainerURL": "https://wiki.bugsounet.fr",
-    "description": "After a configurated time without any user interaction the display will turn off and hide all modules for economy mode.",
-    "issues": [],
-    "stars": 3,
-    "hasGithubIssues": false,
-    "tags": [
-      "screen",
-      "ext",
-      "googleassistant"
-    ],
-    "license": "MIT",
-    "image": "screenshot-screenshot.jpg"
-  },
-  {
-    "name": "EXT-Selfies",
-    "url": "https://github.com/bugsounet/EXT-Selfies",
-    "id": "bugsounet/EXT-Selfies",
-    "maintainer": "bugsounet",
-    "maintainerURL": "https://wiki.bugsounet.fr",
-    "description": "Take selfies from webcam.",
-    "issues": [
-      "There are no keywords in 'package.json'. We would use them as tags on the module list page."
-    ],
-    "stars": 0,
-    "hasGithubIssues": false,
-    "license": "MIT",
-    "image": "resources-screenshot.jpg"
-  },
-  {
-    "name": "EXT-SelfiesFlash",
-    "url": "https://github.com/bugsounet/EXT-SelfiesFlash",
-    "id": "bugsounet/EXT-SelfiesFlash",
-    "maintainer": "bugsounet",
-    "maintainerURL": "https://wiki.bugsounet.fr",
-    "description": "Need a flash to take selfies?",
-    "issues": [
-      "There are no keywords in 'package.json'. We would use them as tags on the module list page.",
-      "No image found."
-    ],
-    "stars": 0,
-    "hasGithubIssues": false,
-    "license": "MIT"
-  },
-  {
-    "name": "EXT-SelfiesSender",
-    "url": "https://github.com/bugsounet/EXT-SelfiesSender",
-    "id": "bugsounet/EXT-SelfiesSender",
-    "maintainer": "bugsounet",
-    "maintainerURL": "https://wiki.bugsounet.fr",
-    "description": "Send your selfies to Telegram, google photos or by mail.",
-    "issues": [
-      "There are no keywords in 'package.json'. We would use them as tags on the module list page.",
-      "No image found."
-    ],
-    "stars": 0,
-    "hasGithubIssues": false,
-    "license": "MIT"
-  },
-  {
-    "name": "EXT-SelfiesViewer",
-    "url": "https://github.com/bugsounet/EXT-SelfiesViewer",
-    "id": "bugsounet/EXT-SelfiesViewer",
-    "maintainer": "bugsounet",
-    "maintainerURL": "https://wiki.bugsounet.fr",
-    "description": "Slideshow of your best selfies.",
-    "issues": [
-      "There are no keywords in 'package.json'. We would use them as tags on the module list page."
-    ],
-    "stars": 0,
-    "hasGithubIssues": false,
-    "license": "MIT",
-    "image": "resources-coming_soon.jpg"
-  },
-  {
-    "name": "EXT-Spotify",
-    "url": "https://github.com/bugsounet/EXT-Spotify",
-    "id": "bugsounet/EXT-Spotify",
-    "maintainer": "bugsounet",
-    "maintainerURL": "https://wiki.bugsounet.fr",
-    "description": "This plugin show current spotify playback of any devices.",
-    "issues": [],
-    "stars": 2,
-    "hasGithubIssues": false,
-    "tags": [
-      "spotify"
-    ],
-    "license": "MIT",
-    "image": "components-Spotify-Logo.jpg"
-  },
-  {
-    "name": "EXT-SpotifyCanvasLyrics",
-    "url": "https://github.com/bugsounet/EXT-SpotifyCanvasLyrics",
-    "id": "bugsounet/EXT-SpotifyCanvasLyrics",
-    "maintainer": "bugsounet",
-    "maintainerURL": "https://wiki.bugsounet.fr",
-    "description": "Create a server for displaying any Lyrics and Canvas from Spotify.",
-    "issues": [],
-    "stars": 0,
-    "hasGithubIssues": false,
-    "tags": [
-      "spotify",
-      "canvas",
-      "lyrics"
-    ],
-    "license": "MIT",
-    "image": "screenshot-landscape.jpg"
-  },
-  {
-    "name": "EXT-StreamDeck",
-    "url": "https://github.com/bugsounet/EXT-StreamDeck",
-    "id": "bugsounet/EXT-StreamDeck",
-    "maintainer": "bugsounet",
-    "maintainerURL": "https://wiki.bugsounet.fr",
-    "description": "Control your mirror with a StreamDeck by elgato©.",
-    "issues": [
-      "There are no keywords in 'package.json'. We would use them as tags on the module list page."
-    ],
-    "stars": 0,
-    "hasGithubIssues": false,
-    "license": "MIT",
-    "image": "icons-Sample-access_time.jpg"
-  },
-  {
-    "name": "EXT-TelegramBot",
-    "url": "https://github.com/bugsounet/EXT-TelegramBot",
-    "id": "bugsounet/EXT-TelegramBot",
-    "maintainer": "bugsounet",
-    "maintainerURL": "https://wiki.bugsounet.fr",
-    "description": "You can remote-control plugins within Telegram.",
-    "issues": [],
-    "stars": 1,
-    "hasGithubIssues": false,
-    "tags": [
-      "telegram"
-    ],
-    "license": "MIT",
-    "image": "screenshot-sc_fullsize.jpg"
-  },
-  {
-    "name": "EXT-Updates",
-    "url": "https://github.com/bugsounet/EXT-Updates",
-    "id": "bugsounet/EXT-Updates",
-    "maintainer": "bugsounet",
-    "maintainerURL": "https://wiki.bugsounet.fr",
-    "description": "This plugin allow to auto-update if an update is detected.",
-    "issues": [
-      "There are no keywords in 'package.json'. We would use them as tags on the module list page."
-    ],
-    "stars": 0,
-    "hasGithubIssues": false,
-    "license": "MIT",
-    "image": "resources-update.jpg"
-  },
-  {
-    "name": "EXT-Volume",
-    "url": "https://github.com/bugsounet/EXT-Volume",
-    "id": "bugsounet/EXT-Volume",
-    "maintainer": "bugsounet",
-    "maintainerURL": "https://wiki.bugsounet.fr",
-    "description": "Control the sound volume level of your mirror.",
-    "issues": [],
-    "stars": 2,
-    "hasGithubIssues": false,
-    "tags": [
-      "volume",
-      "warning",
-      "googleassistant"
-    ],
-    "license": "MIT",
-    "image": "resources-screenshot.jpg"
-  },
-  {
-    "name": "EXT-Welcome",
-    "url": "https://github.com/bugsounet/EXT-Welcome",
-    "id": "bugsounet/EXT-Welcome",
-    "maintainer": "bugsounet",
-    "maintainerURL": "https://wiki.bugsounet.fr",
-    "description": "Allow to send a welcome on start of MagicMirror².",
-    "issues": [
-      "No image found."
-    ],
-    "stars": 0,
-    "hasGithubIssues": false,
-    "tags": [
-      "notification",
-      "warning"
-    ],
-    "license": "MIT"
-  },
-  {
-    "name": "EXT-YouTube",
-    "url": "https://github.com/bugsounet/EXT-YouTube",
-    "id": "bugsounet/EXT-YouTube",
-    "maintainer": "bugsounet",
-    "maintainerURL": "https://wiki.bugsounet.fr",
-    "description": "This plugins allows to play YouTube video.",
-    "issues": [],
-    "stars": 3,
-    "hasGithubIssues": false,
-    "tags": [
-      "youtube"
-    ],
-    "license": "MIT",
-    "image": "resources-Screenshot1.jpg"
-  },
-  {
-    "name": "EXT-YouTubeCast",
-    "url": "https://github.com/bugsounet/EXT-YouTubeCast",
-    "id": "bugsounet/EXT-YouTubeCast",
-    "maintainer": "bugsounet",
-    "maintainerURL": "https://wiki.bugsounet.fr",
-    "description": "Allow to cast a YouTube video on MagicMirror².",
-    "issues": [],
-    "stars": 2,
-    "hasGithubIssues": false,
-    "tags": [
-      "cast",
-      "youtube"
-    ],
-    "license": "MIT",
-    "image": "resources-Screenshot1.jpg"
-  },
-  {
     "name": "MMM-EyeCandy",
     "url": "https://github.com/mykle1/MMM-EyeCandy",
     "id": "mykle1/MMM-EyeCandy",
@@ -5072,6 +4636,24 @@
     "image": "2016-06-30_14-34-46.jpg"
   },
   {
+    "name": "EXT-FreeboxTV",
+    "url": "https://github.com/bugsounet/EXT-FreeboxTV",
+    "id": "bugsounet/EXT-FreeboxTV",
+    "maintainer": "bugsounet",
+    "maintainerURL": "https://wiki.bugsounet.fr",
+    "description": "Display Channel from French Internet Provider: Free.",
+    "issues": [],
+    "stars": 1,
+    "hasGithubIssues": false,
+    "tags": [
+      "freebox",
+      "free",
+      "tv"
+    ],
+    "license": "MIT",
+    "image": "resources-FreeboxTV.jpg"
+  },
+  {
     "name": "MMM-FrenchHoroscope",
     "url": "https://github.com/Amand-M/MMM-FrenchHoroscope",
     "id": "Amand-M/MMM-FrenchHoroscope",
@@ -5702,6 +5284,23 @@
     "image": "images-screenshot.jpg"
   },
   {
+    "name": "EXT-GooglePhotos",
+    "url": "https://github.com/bugsounet/EXT-GooglePhotos",
+    "id": "bugsounet/EXT-GooglePhotos",
+    "maintainer": "bugsounet",
+    "maintainerURL": "https://wiki.bugsounet.fr",
+    "description": "Display your album directory with Google photos API in background or in MagicMirror² position.",
+    "issues": [],
+    "stars": 2,
+    "hasGithubIssues": false,
+    "tags": [
+      "google",
+      "photo"
+    ],
+    "license": "MIT",
+    "image": "resources-GooglePhoto-Logo.jpg"
+  },
+  {
     "name": "MMM-GoogleSheets",
     "url": "https://github.com/ryan-d-williams/MMM-GoogleSheets",
     "id": "ryan-d-williams/MMM-GoogleSheets",
@@ -5795,6 +5394,25 @@
     ],
     "license": "MIT",
     "image": ".github-TTS.jpg"
+  },
+  {
+    "name": "EXT-Governor",
+    "url": "https://github.com/bugsounet/EXT-Governor",
+    "id": "bugsounet/EXT-Governor",
+    "maintainer": "bugsounet",
+    "maintainerURL": "https://wiki.bugsounet.fr",
+    "description": "CPU governor enables the operating system to scale the CPU frequency up or down in order to save power or improve performance.",
+    "issues": [
+      "No image found."
+    ],
+    "stars": 2,
+    "hasGithubIssues": false,
+    "tags": [
+      "governor",
+      "ext",
+      "googleassistant"
+    ],
+    "license": "MIT"
   },
   {
     "name": "MMM-GPIO-HANDLER",
@@ -6964,6 +6582,23 @@
     "hasGithubIssues": true
   },
   {
+    "name": "EXT-Internet",
+    "url": "https://github.com/bugsounet/EXT-Internet",
+    "id": "bugsounet/EXT-Internet",
+    "maintainer": "bugsounet",
+    "maintainerURL": "https://wiki.bugsounet.fr",
+    "description": "Check your internet connexion, display ping.",
+    "issues": [],
+    "stars": 0,
+    "hasGithubIssues": false,
+    "tags": [
+      "internet",
+      "warning"
+    ],
+    "license": "MIT",
+    "image": "resources-Internet-Logo.jpg"
+  },
+  {
     "name": "internet-monitor",
     "url": "https://github.com/BrianHepler/internet-monitor",
     "id": "BrianHepler/internet-monitor",
@@ -7500,6 +7135,23 @@
     "image": "img-fire_stick_remote.jpg"
   },
   {
+    "name": "EXT-Keyboard",
+    "url": "https://github.com/bugsounet/EXT-Keyboard",
+    "id": "bugsounet/EXT-Keyboard",
+    "maintainer": "bugsounet",
+    "maintainerURL": "https://wiki.bugsounet.fr",
+    "description": "Control your mirror with a keyboard.",
+    "issues": [
+      "No image found."
+    ],
+    "stars": 1,
+    "hasGithubIssues": false,
+    "tags": [
+      "keyboard"
+    ],
+    "license": "MIT"
+  },
+  {
     "name": "KeyDisplayed",
     "url": "https://github.com/l0b5ter/KeyDisplayed",
     "id": "l0b5ter/KeyDisplayed",
@@ -7746,6 +7398,23 @@
     ],
     "stars": 2,
     "hasGithubIssues": true
+  },
+  {
+    "name": "EXT-Librespot",
+    "url": "https://github.com/bugsounet/EXT-Librespot",
+    "id": "bugsounet/EXT-Librespot",
+    "maintainer": "bugsounet",
+    "maintainerURL": "https://wiki.bugsounet.fr",
+    "description": "Allow to play Spotify music on your mirror with Librespot.",
+    "issues": [],
+    "stars": 0,
+    "hasGithubIssues": false,
+    "tags": [
+      "spotify",
+      "librespot"
+    ],
+    "license": "MIT",
+    "image": "resources-Spotify-Logo.jpg"
   },
   {
     "name": "MMM-LibrespotJava",
@@ -9300,6 +8969,26 @@
     "license": "MIT License"
   },
   {
+    "name": "EXT-Motion",
+    "url": "https://github.com/bugsounet/EXT-Motion",
+    "id": "bugsounet/EXT-Motion",
+    "maintainer": "bugsounet",
+    "maintainerURL": "https://wiki.bugsounet.fr",
+    "description": "Control your screen with a webcam (as motion detector).",
+    "issues": [
+      "No image found."
+    ],
+    "stars": 0,
+    "hasGithubIssues": false,
+    "tags": [
+      "plugin",
+      "screen",
+      "ext",
+      "googleassistant"
+    ],
+    "license": "MIT"
+  },
+  {
     "name": "MMM-MotionControl",
     "url": "https://github.com/nischi/MMM-MotionControl",
     "id": "nischi/MMM-MotionControl",
@@ -9685,6 +9374,23 @@
     ],
     "license": "MIT",
     "image": "img-Example.jpg"
+  },
+  {
+    "name": "EXT-MusicPlayer",
+    "url": "https://github.com/bugsounet/EXT-MusicPlayer",
+    "id": "bugsounet/EXT-MusicPlayer",
+    "maintainer": "bugsounet",
+    "maintainerURL": "https://wiki.bugsounet.fr",
+    "description": "Play any music found on a USB Key or in defined local directory.",
+    "issues": [],
+    "stars": 1,
+    "hasGithubIssues": false,
+    "tags": [
+      "volume",
+      "warning"
+    ],
+    "license": "MIT",
+    "image": "resources-Screenshot.jpg"
   },
   {
     "name": "MMM-mvgmunich",
@@ -11587,6 +11293,22 @@
     "hasGithubIssues": true
   },
   {
+    "name": "EXT-Pages",
+    "url": "https://github.com/bugsounet/EXT-Pages",
+    "id": "bugsounet/EXT-Pages",
+    "maintainer": "bugsounet",
+    "maintainerURL": "https://wiki.bugsounet.fr",
+    "description": "This plugin allows you to have animated pages.",
+    "issues": [],
+    "stars": 2,
+    "hasGithubIssues": false,
+    "tags": [
+      "pages"
+    ],
+    "license": "MIT",
+    "image": "example.jpg"
+  },
+  {
     "name": "MMM-Pages-Screencast",
     "url": "https://github.com/jboucly/MMM-Pages-Screencast",
     "id": "jboucly/MMM-Pages-Screencast",
@@ -11903,6 +11625,22 @@
     "image": "screenshot.jpg"
   },
   {
+    "name": "EXT-Photos",
+    "url": "https://github.com/bugsounet/EXT-Photos",
+    "id": "bugsounet/EXT-Photos",
+    "maintainer": "bugsounet",
+    "maintainerURL": "https://wiki.bugsounet.fr",
+    "description": "Displaying any photos discover by assistant in fullscreen.",
+    "issues": [],
+    "stars": 0,
+    "hasGithubIssues": false,
+    "tags": [
+      "photos"
+    ],
+    "license": "MIT",
+    "image": "resources-Photos-Logo.jpg"
+  },
+  {
     "name": "PiDisplaySleep",
     "url": "https://github.com/RpDp-git/PiDisplaySleep",
     "id": "RpDp-git/PiDisplaySleep",
@@ -12008,6 +11746,26 @@
     ],
     "license": "MIT",
     "image": "screenshot-screenshot.jpg"
+  },
+  {
+    "name": "EXT-Pir",
+    "url": "https://github.com/bugsounet/EXT-Pir",
+    "id": "bugsounet/EXT-Pir",
+    "maintainer": "bugsounet",
+    "maintainerURL": "https://wiki.bugsounet.fr",
+    "description": "Control your screen with a PIR Sensor.",
+    "issues": [],
+    "stars": 3,
+    "hasGithubIssues": false,
+    "tags": [
+      "sensor",
+      "motion detection",
+      "pir",
+      "ext",
+      "googleassistant"
+    ],
+    "license": "MIT",
+    "image": "img-motion_detection.jpg"
   },
   {
     "name": "MMM-PIR",
@@ -12848,6 +12606,22 @@
     ],
     "license": "MIT",
     "image": "images-quote-of-the-day_english_example.jpg"
+  },
+  {
+    "name": "EXT-RadioPlayer",
+    "url": "https://github.com/bugsounet/EXT-RadioPlayer",
+    "id": "bugsounet/EXT-RadioPlayer",
+    "maintainer": "bugsounet",
+    "maintainerURL": "https://wiki.bugsounet.fr",
+    "description": "Play radio station on MagicMirror².",
+    "issues": [],
+    "stars": 2,
+    "hasGithubIssues": false,
+    "tags": [
+      "radio"
+    ],
+    "license": "MIT",
+    "image": "Logos-ES-Cadena_DIAL.jpg"
   },
   {
     "name": "MMM-RaiderIO",
@@ -13751,6 +13525,24 @@
     "image": ".github-example.jpg"
   },
   {
+    "name": "EXT-Screen",
+    "url": "https://github.com/bugsounet/EXT-Screen",
+    "id": "bugsounet/EXT-Screen",
+    "maintainer": "bugsounet",
+    "maintainerURL": "https://wiki.bugsounet.fr",
+    "description": "After a configurated time without any user interaction the display will turn off and hide all modules for economy mode.",
+    "issues": [],
+    "stars": 3,
+    "hasGithubIssues": false,
+    "tags": [
+      "screen",
+      "ext",
+      "googleassistant"
+    ],
+    "license": "MIT",
+    "image": "screenshot-screenshot.jpg"
+  },
+  {
     "name": "MMM-Screen-Powersave-Notification",
     "url": "https://github.com/Tom-Hirschberger/MMM-Screen-Powersave-Notification",
     "id": "Tom-Hirschberger/MMM-Screen-Powersave-Notification",
@@ -13893,6 +13685,36 @@
     "license": "MIT"
   },
   {
+    "name": "EXT-Selfies",
+    "url": "https://github.com/bugsounet/EXT-Selfies",
+    "id": "bugsounet/EXT-Selfies",
+    "maintainer": "bugsounet",
+    "maintainerURL": "https://wiki.bugsounet.fr",
+    "description": "Take selfies from webcam.",
+    "issues": [
+      "There are no keywords in 'package.json'. We would use them as tags on the module list page."
+    ],
+    "stars": 0,
+    "hasGithubIssues": false,
+    "license": "MIT",
+    "image": "resources-screenshot.jpg"
+  },
+  {
+    "name": "EXT-SelfiesFlash",
+    "url": "https://github.com/bugsounet/EXT-SelfiesFlash",
+    "id": "bugsounet/EXT-SelfiesFlash",
+    "maintainer": "bugsounet",
+    "maintainerURL": "https://wiki.bugsounet.fr",
+    "description": "Need a flash to take selfies?",
+    "issues": [
+      "There are no keywords in 'package.json'. We would use them as tags on the module list page.",
+      "No image found."
+    ],
+    "stars": 0,
+    "hasGithubIssues": false,
+    "license": "MIT"
+  },
+  {
     "name": "MMM-Selfieshot",
     "url": "https://github.com/BrianHepler/MMM-Selfieshot",
     "id": "BrianHepler/MMM-Selfieshot",
@@ -13906,6 +13728,36 @@
     "hasGithubIssues": true,
     "license": "MIT",
     "image": "screenshot.jpg"
+  },
+  {
+    "name": "EXT-SelfiesSender",
+    "url": "https://github.com/bugsounet/EXT-SelfiesSender",
+    "id": "bugsounet/EXT-SelfiesSender",
+    "maintainer": "bugsounet",
+    "maintainerURL": "https://wiki.bugsounet.fr",
+    "description": "Send your selfies to Telegram, google photos or by mail.",
+    "issues": [
+      "There are no keywords in 'package.json'. We would use them as tags on the module list page.",
+      "No image found."
+    ],
+    "stars": 0,
+    "hasGithubIssues": false,
+    "license": "MIT"
+  },
+  {
+    "name": "EXT-SelfiesViewer",
+    "url": "https://github.com/bugsounet/EXT-SelfiesViewer",
+    "id": "bugsounet/EXT-SelfiesViewer",
+    "maintainer": "bugsounet",
+    "maintainerURL": "https://wiki.bugsounet.fr",
+    "description": "Slideshow of your best selfies.",
+    "issues": [
+      "There are no keywords in 'package.json'. We would use them as tags on the module list page."
+    ],
+    "stars": 0,
+    "hasGithubIssues": false,
+    "license": "MIT",
+    "image": "resources-coming_soon.jpg"
   },
   {
     "name": "MMM-SendNotificationButton",
@@ -13962,6 +13814,8 @@
     "maintainerURL": "https://github.com/Tom-Hirschberger",
     "description": "A module to send notifications based on messages received via one/multiple serial devices.",
     "issues": [],
+    "stars": 6,
+    "hasGithubIssues": true,
     "tags": [
       "serial console",
       "tty",
@@ -13979,6 +13833,7 @@
     "description": "A module to check the up/down status of servers/devices on your network.",
     "issues": [],
     "stars": 16,
+    "hasGithubIssues": true,
     "tags": [
       "ping",
       "server",
@@ -13999,7 +13854,8 @@
       "`package.json` issue: No license field.",
       "There are no keywords in 'package.json'. We would use them as tags on the module list page."
     ],
-    "stars": 1
+    "stars": 1,
+    "hasGithubIssues": true
   },
   {
     "name": "MMM-SFMuniBusTimes",
@@ -14011,6 +13867,7 @@
     "issues": [],
     "outdated": "Abandoned. The API used no longer works, there is a new API but the developer no longer seems to be active.",
     "stars": 3,
+    "hasGithubIssues": true,
     "tags": [
       "muni",
       "sf",
@@ -14030,6 +13887,7 @@
       "There are no keywords in 'package.json'. We would use them as tags on the module list page."
     ],
     "stars": 5,
+    "hasGithubIssues": true,
     "license": "ISC",
     "image": "screenshots-screenshot.jpg"
   },
@@ -14044,6 +13902,7 @@
       "No image found."
     ],
     "stars": 3,
+    "hasGithubIssues": true,
     "tags": [
       "shabbat",
       "hebrew",
@@ -14061,7 +13920,8 @@
     "issues": [
       "There is no `package.json`. We need this file to gather information about the module for the module list page."
     ],
-    "stars": 16
+    "stars": 17,
+    "hasGithubIssues": true
   },
   {
     "name": "MMM-Shell-Output",
@@ -14085,7 +13945,8 @@
     "issues": [
       "There is no `package.json`. We need this file to gather information about the module for the module list page."
     ],
-    "stars": 1
+    "stars": 1,
+    "hasGithubIssues": true
   },
   {
     "name": "MMM-Shelly-PM",
@@ -14099,7 +13960,8 @@
       "There are no keywords in 'package.json'. We would use them as tags on the module list page.",
       "No compatible or wrong license field in 'package.json'. Without that, we can't use an image."
     ],
-    "stars": 2,
+    "stars": 3,
+    "hasGithubIssues": true,
     "license": "UNLICENSE"
   },
   {
@@ -14112,7 +13974,8 @@
     "issues": [
       "`package.json` issue: No repository field."
     ],
-    "stars": 0,
+    "stars": 1,
+    "hasGithubIssues": true,
     "tags": [
       "shelly",
       "shellyem",
@@ -14132,7 +13995,8 @@
     "issues": [
       "There is no `package.json`. We need this file to gather information about the module for the module list page."
     ],
-    "stars": 0
+    "stars": 0,
+    "hasGithubIssues": true
   },
   {
     "name": "MMM-ShipmentTracking",
@@ -14143,6 +14007,7 @@
     "description": "Display your shipment tracking status.",
     "issues": [],
     "stars": 26,
+    "hasGithubIssues": true,
     "tags": [
       "shipment tracking"
     ],
@@ -14160,6 +14025,7 @@
       "There are no specific keywords in 'package.json'. We would use them as tags on the module list page. Add a few meaningful terms to the keywords in the package.json. Not just “magicmirror” or “module”."
     ],
     "stars": 1,
+    "hasGithubIssues": true,
     "license": "MIT",
     "image": "docs-screenshot.jpg"
   },
@@ -14175,6 +14041,7 @@
     ],
     "outdated": "Abandoned. Repo has been archived at 2022-05-22.",
     "stars": 19,
+    "hasGithubIssues": true,
     "license": "MIT",
     "image": "images-MMM-Simple-Swiper-Pin-Layout.jpg"
   },
@@ -14188,7 +14055,8 @@
     "issues": [
       "There is no `package.json`. We need this file to gather information about the module for the module list page."
     ],
-    "stars": 36
+    "stars": 36,
+    "hasGithubIssues": true
   },
   {
     "name": "MMM-SimpleNotifyTrashDay",
@@ -14198,7 +14066,8 @@
     "maintainerURL": "https://github.com/sabo10o29",
     "description": "Shows trash days with simple setup.",
     "issues": [],
-    "stars": 1,
+    "stars": 2,
+    "hasGithubIssues": true,
     "tags": [
       "trash day",
       "garbage"
@@ -14216,7 +14085,8 @@
     "issues": [
       "There is no `package.json`. We need this file to gather information about the module for the module list page."
     ],
-    "stars": 7
+    "stars": 7,
+    "hasGithubIssues": true
   },
   {
     "name": "MMM-SingleStock",
@@ -14227,6 +14097,7 @@
     "description": "Displays the stock price of a single company without any fancy animation.",
     "issues": [],
     "stars": 6,
+    "hasGithubIssues": true,
     "tags": [
       "stock"
     ],
@@ -14244,6 +14115,7 @@
       "No image found."
     ],
     "stars": 3,
+    "hasGithubIssues": true,
     "tags": [
       "schema",
       "skolschema",
@@ -14263,6 +14135,7 @@
       "No image found."
     ],
     "stars": 7,
+    "hasGithubIssues": true,
     "tags": [
       "skolmat",
       "skolmaten",
@@ -14282,6 +14155,7 @@
       "There are no keywords in 'package.json'. We would use them as tags on the module list page."
     ],
     "stars": 6,
+    "hasGithubIssues": false,
     "license": "ISC",
     "image": "images-MMM-Skyss-1.jpg"
   },
@@ -14294,6 +14168,7 @@
     "description": "Display public transport in Stockholm/<strong>Sweden</strong>.",
     "issues": [],
     "stars": 12,
+    "hasGithubIssues": true,
     "tags": [
       "publictransport"
     ],
@@ -14310,7 +14185,8 @@
     "issues": [
       "No image found."
     ],
-    "stars": 3,
+    "stars": 4,
+    "hasGithubIssues": true,
     "tags": [
       "slack"
     ],
@@ -14326,7 +14202,8 @@
     "issues": [
       "There is no `package.json`. We need this file to gather information about the module for the module list page."
     ],
-    "stars": 5
+    "stars": 5,
+    "hasGithubIssues": true
   },
   {
     "name": "MMM-slamfm-playing-now",
@@ -14337,6 +14214,7 @@
     "description": "Show what's currently playing now on the dutch radio station Slam!.",
     "issues": [],
     "stars": 0,
+    "hasGithubIssues": true,
     "tags": [
       "slamfm!",
       "radio",
@@ -14357,7 +14235,8 @@
     "issues": [
       "There is no `package.json`. We need this file to gather information about the module for the module list page."
     ],
-    "stars": 0
+    "stars": 0,
+    "hasGithubIssues": true
   },
   {
     "name": "MMM-SleepWake",
@@ -14369,7 +14248,8 @@
     "issues": [
       "There is no `package.json`. We need this file to gather information about the module for the module list page."
     ],
-    "stars": 11
+    "stars": 11,
+    "hasGithubIssues": true
   },
   {
     "name": "MMM-Smappee",
@@ -14382,6 +14262,7 @@
       "There are no keywords in 'package.json'. We would use them as tags on the module list page."
     ],
     "stars": 2,
+    "hasGithubIssues": true,
     "license": "MIT",
     "image": ".github-preview.jpg"
   },
@@ -14395,7 +14276,8 @@
     "issues": [
       "There is no `package.json`. We need this file to gather information about the module for the module list page."
     ],
-    "stars": 78
+    "stars": 79,
+    "hasGithubIssues": true
   },
   {
     "name": "MMM-SmartWebDisplay",
@@ -14407,7 +14289,8 @@
     "issues": [
       "No image found."
     ],
-    "stars": 52,
+    "stars": 56,
+    "hasGithubIssues": true,
     "tags": [
       "iframe",
       "notification"
@@ -14423,6 +14306,7 @@
     "description": "Air pollution in Polish cities.",
     "issues": [],
     "stars": 3,
+    "hasGithubIssues": true,
     "tags": [
       "air polution"
     ],
@@ -14439,7 +14323,8 @@
     "issues": [
       "There is no `package.json`. We need this file to gather information about the module for the module list page."
     ],
-    "stars": 23
+    "stars": 23,
+    "hasGithubIssues": true
   },
   {
     "name": "MMM-SNCF",
@@ -14450,6 +14335,7 @@
     "description": "Display upcoming trains between 2 SNCF stations (France).",
     "issues": [],
     "stars": 5,
+    "hasGithubIssues": true,
     "tags": [
       "localtransport",
       "sncf",
@@ -14467,6 +14353,7 @@
     "description": "Uses SNMP to display bandwidth usage from a network device interface.",
     "issues": [],
     "stars": 4,
+    "hasGithubIssues": true,
     "tags": [
       "snmp",
       "bandwidth"
@@ -14484,7 +14371,8 @@
     "issues": [
       "There is no `package.json`. We need this file to gather information about the module for the module list page."
     ],
-    "stars": 54
+    "stars": 54,
+    "hasGithubIssues": true
   },
   {
     "name": "MMM-soccer",
@@ -14494,7 +14382,8 @@
     "maintainerURL": "",
     "description": "Display standings from European Soccer (Football) leagues (optional voice-control).",
     "issues": [],
-    "stars": 28,
+    "stars": 29,
+    "hasGithubIssues": true,
     "tags": [
       "soccer standings"
     ],
@@ -14509,7 +14398,8 @@
     "maintainerURL": "",
     "description": "Display live scores of your favorite soccer leagues/competitions.",
     "issues": [],
-    "stars": 6,
+    "stars": 7,
+    "hasGithubIssues": true,
     "tags": [
       "live score",
       "soccer",
@@ -14527,6 +14417,7 @@
     "description": "Displays the follower count of a Twitter user of choice.",
     "issues": [],
     "stars": 4,
+    "hasGithubIssues": true,
     "tags": [
       "social",
       "counter",
@@ -14547,8 +14438,11 @@
     "maintainer": "0lek",
     "maintainerURL": "",
     "description": "Station monitor for bicycle networks based on the Socialbicycles API/Infrastructure, e.g. Wavelo in Kraków, Poland.",
-    "issues": [],
+    "issues": [
+      "Issues are not enabled in the GitHub repository. So users cannot report bugs. Please enable issues in your repo."
+    ],
     "stars": 0,
+    "hasGithubIssues": false,
     "tags": [
       "nextbike",
       "bike sharing"
@@ -14566,7 +14460,8 @@
     "issues": [
       "There is no `package.json`. We need this file to gather information about the module for the module list page."
     ],
-    "stars": 6
+    "stars": 6,
+    "hasGithubIssues": true
   },
   {
     "name": "MMM-SolarEdge",
@@ -14580,6 +14475,7 @@
       "There are no keywords in 'package.json'. We would use them as tags on the module list page."
     ],
     "stars": 1,
+    "hasGithubIssues": true,
     "license": "MIT",
     "image": "docs-SolarEdgePv.jpg"
   },
@@ -14591,9 +14487,11 @@
     "maintainerURL": "",
     "description": "Display statistics from your SolarEdge PV inverter system.",
     "issues": [
-      "There is no `package.json`. We need this file to gather information about the module for the module list page."
+      "There is no `package.json`. We need this file to gather information about the module for the module list page.",
+      "Issues are not enabled in the GitHub repository. So users cannot report bugs. Please enable issues in your repo."
     ],
-    "stars": 5
+    "stars": 5,
+    "hasGithubIssues": false
   },
   {
     "name": "MMM-SolarEdgeLite",
@@ -14603,9 +14501,11 @@
     "maintainerURL": "https://github.com/jeroenpeters1986",
     "description": "Display simple statistics from your SolarEdge (based on bertieuk).",
     "issues": [
-      "There is no `package.json`. We need this file to gather information about the module for the module list page."
+      "There is no `package.json`. We need this file to gather information about the module for the module list page.",
+      "Issues are not enabled in the GitHub repository. So users cannot report bugs. Please enable issues in your repo."
     ],
-    "stars": 1
+    "stars": 1,
+    "hasGithubIssues": false
   },
   {
     "name": "MMM-Solarman",
@@ -14618,6 +14518,7 @@
       "There are no specific keywords in 'package.json'. We would use them as tags on the module list page. Add a few meaningful terms to the keywords in the package.json. Not just “magicmirror” or “module”."
     ],
     "stars": 2,
+    "hasGithubIssues": true,
     "license": "MIT",
     "image": "screenshot.jpg"
   },
@@ -14631,7 +14532,8 @@
     "issues": [
       "There is no `package.json`. We need this file to gather information about the module for the module list page."
     ],
-    "stars": 2
+    "stars": 3,
+    "hasGithubIssues": true
   },
   {
     "name": "MMM-Soliscloud",
@@ -14660,6 +14562,7 @@
       "There are no specific keywords in 'package.json'. We would use them as tags on the module list page. Add a few meaningful terms to the keywords in the package.json. Not just “magicmirror” or “module”."
     ],
     "stars": 40,
+    "hasGithubIssues": true,
     "license": "MIT",
     "image": ".github-preview.jpg"
   },
@@ -14671,7 +14574,8 @@
     "maintainerURL": "https://github.com/tbouron",
     "description": "Module that displays playing tracks on your Sonos network.",
     "issues": [],
-    "stars": 12,
+    "stars": 14,
+    "hasGithubIssues": true,
     "tags": [
       "sonos",
       "music"
@@ -14690,7 +14594,8 @@
       "There is no `package.json`. We need this file to gather information about the module for the module list page."
     ],
     "outdated": "Abandoned. No reactions to issues since years. Missing instructions to install dependency 'request'.",
-    "stars": 2
+    "stars": 2,
+    "hasGithubIssues": true
   },
   {
     "name": "MMM-Space",
@@ -14702,7 +14607,8 @@
     "issues": [
       "There is no `package.json`. We need this file to gather information about the module for the module list page."
     ],
-    "stars": 9
+    "stars": 9,
+    "hasGithubIssues": true
   },
   {
     "name": "MMM-SpaceLaunchNow",
@@ -14714,7 +14620,8 @@
     "issues": [
       "There is no `package.json`. We need this file to gather information about the module for the module list page."
     ],
-    "stars": 3
+    "stars": 3,
+    "hasGithubIssues": true
   },
   {
     "name": "MMM-SpaceX",
@@ -14726,7 +14633,8 @@
     "issues": [
       "There is no `package.json`. We need this file to gather information about the module for the module list page."
     ],
-    "stars": 10
+    "stars": 10,
+    "hasGithubIssues": true
   },
   {
     "name": "MMM-Speedway",
@@ -14758,6 +14666,40 @@
     ],
     "license": "MIT",
     "image": "screenshots-miniature_bar.jpg"
+  },
+  {
+    "name": "EXT-Spotify",
+    "url": "https://github.com/bugsounet/EXT-Spotify",
+    "id": "bugsounet/EXT-Spotify",
+    "maintainer": "bugsounet",
+    "maintainerURL": "https://wiki.bugsounet.fr",
+    "description": "This plugin show current spotify playback of any devices.",
+    "issues": [],
+    "stars": 2,
+    "hasGithubIssues": false,
+    "tags": [
+      "spotify"
+    ],
+    "license": "MIT",
+    "image": "components-Spotify-Logo.jpg"
+  },
+  {
+    "name": "EXT-SpotifyCanvasLyrics",
+    "url": "https://github.com/bugsounet/EXT-SpotifyCanvasLyrics",
+    "id": "bugsounet/EXT-SpotifyCanvasLyrics",
+    "maintainer": "bugsounet",
+    "maintainerURL": "https://wiki.bugsounet.fr",
+    "description": "Create a server for displaying any Lyrics and Canvas from Spotify.",
+    "issues": [],
+    "stars": 0,
+    "hasGithubIssues": false,
+    "tags": [
+      "spotify",
+      "canvas",
+      "lyrics"
+    ],
+    "license": "MIT",
+    "image": "screenshot-landscape.jpg"
   },
   {
     "name": "MMM-SpotifyConnectUI",
@@ -14942,6 +14884,21 @@
     ],
     "license": "MIT",
     "image": ".github-example-chart-recent.jpg"
+  },
+  {
+    "name": "EXT-StreamDeck",
+    "url": "https://github.com/bugsounet/EXT-StreamDeck",
+    "id": "bugsounet/EXT-StreamDeck",
+    "maintainer": "bugsounet",
+    "maintainerURL": "https://wiki.bugsounet.fr",
+    "description": "Control your mirror with a StreamDeck by elgato©.",
+    "issues": [
+      "There are no keywords in 'package.json'. We would use them as tags on the module list page."
+    ],
+    "stars": 0,
+    "hasGithubIssues": false,
+    "license": "MIT",
+    "image": "icons-Sample-access_time.jpg"
   },
   {
     "name": "MMM-SugarValue",
@@ -15263,6 +15220,22 @@
       "client list"
     ],
     "license": "MIT"
+  },
+  {
+    "name": "EXT-TelegramBot",
+    "url": "https://github.com/bugsounet/EXT-TelegramBot",
+    "id": "bugsounet/EXT-TelegramBot",
+    "maintainer": "bugsounet",
+    "maintainerURL": "https://wiki.bugsounet.fr",
+    "description": "You can remote-control plugins within Telegram.",
+    "issues": [],
+    "stars": 1,
+    "hasGithubIssues": false,
+    "tags": [
+      "telegram"
+    ],
+    "license": "MIT",
+    "image": "screenshot-sc_fullsize.jpg"
   },
   {
     "name": "MMM-TelegramCommands",
@@ -16200,6 +16173,21 @@
     "stars": 2
   },
   {
+    "name": "EXT-Updates",
+    "url": "https://github.com/bugsounet/EXT-Updates",
+    "id": "bugsounet/EXT-Updates",
+    "maintainer": "bugsounet",
+    "maintainerURL": "https://wiki.bugsounet.fr",
+    "description": "This plugin allow to auto-update if an update is detected.",
+    "issues": [
+      "There are no keywords in 'package.json'. We would use them as tags on the module list page."
+    ],
+    "stars": 0,
+    "hasGithubIssues": false,
+    "license": "MIT",
+    "image": "resources-update.jpg"
+  },
+  {
     "name": "MMM-uptimekuma",
     "url": "https://github.com/MikeBishop/MMM-uptimekuma",
     "id": "MikeBishop/MMM-uptimekuma",
@@ -16515,6 +16503,24 @@
     "stars": 15,
     "license": "MIT",
     "image": "mmm-volume.jpg"
+  },
+  {
+    "name": "EXT-Volume",
+    "url": "https://github.com/bugsounet/EXT-Volume",
+    "id": "bugsounet/EXT-Volume",
+    "maintainer": "bugsounet",
+    "maintainerURL": "https://wiki.bugsounet.fr",
+    "description": "Control the sound volume level of your mirror.",
+    "issues": [],
+    "stars": 2,
+    "hasGithubIssues": false,
+    "tags": [
+      "volume",
+      "warning",
+      "googleassistant"
+    ],
+    "license": "MIT",
+    "image": "resources-screenshot.jpg"
   },
   {
     "name": "MMM-volumio-playing",
@@ -16933,6 +16939,24 @@
     "image": "images-screenshot.jpg"
   },
   {
+    "name": "EXT-Welcome",
+    "url": "https://github.com/bugsounet/EXT-Welcome",
+    "id": "bugsounet/EXT-Welcome",
+    "maintainer": "bugsounet",
+    "maintainerURL": "https://wiki.bugsounet.fr",
+    "description": "Allow to send a welcome on start of MagicMirror².",
+    "issues": [
+      "No image found."
+    ],
+    "stars": 0,
+    "hasGithubIssues": false,
+    "tags": [
+      "notification",
+      "warning"
+    ],
+    "license": "MIT"
+  },
+  {
     "name": "MMM-WestBerksBinDay",
     "url": "https://github.com/hdurdle/MMM-WestBerksBinDay",
     "id": "hdurdle/MMM-WestBerksBinDay",
@@ -17349,6 +17373,22 @@
     "image": "public-images-module_ss_01.jpg"
   },
   {
+    "name": "EXT-YouTube",
+    "url": "https://github.com/bugsounet/EXT-YouTube",
+    "id": "bugsounet/EXT-YouTube",
+    "maintainer": "bugsounet",
+    "maintainerURL": "https://wiki.bugsounet.fr",
+    "description": "This plugins allows to play YouTube video.",
+    "issues": [],
+    "stars": 3,
+    "hasGithubIssues": false,
+    "tags": [
+      "youtube"
+    ],
+    "license": "MIT",
+    "image": "resources-Screenshot1.jpg"
+  },
+  {
     "name": "MMM-YouTube-API",
     "url": "https://github.com/C4TFLY/MMM-YouTube-API",
     "id": "C4TFLY/MMM-YouTube-API",
@@ -17378,6 +17418,23 @@
       "channel"
     ],
     "license": "MIT"
+  },
+  {
+    "name": "EXT-YouTubeCast",
+    "url": "https://github.com/bugsounet/EXT-YouTubeCast",
+    "id": "bugsounet/EXT-YouTubeCast",
+    "maintainer": "bugsounet",
+    "maintainerURL": "https://wiki.bugsounet.fr",
+    "description": "Allow to cast a YouTube video on MagicMirror².",
+    "issues": [],
+    "stars": 2,
+    "hasGithubIssues": false,
+    "tags": [
+      "cast",
+      "youtube"
+    ],
+    "license": "MIT",
+    "image": "resources-Screenshot1.jpg"
   },
   {
     "name": "MMM-YouTubeWebView",

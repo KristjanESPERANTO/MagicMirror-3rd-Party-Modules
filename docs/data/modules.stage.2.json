@@ -176,6 +176,17 @@
     "hasGithubIssues": true
   },
   {
+    "name": "EXT-Alert",
+    "url": "https://github.com/bugsounet/EXT-Alert",
+    "id": "bugsounet/EXT-Alert",
+    "maintainer": "bugsounet",
+    "maintainerURL": "https://wiki.bugsounet.fr",
+    "description": "Display any warning, information or error on your screen about Assistant.",
+    "issues": [],
+    "stars": 2,
+    "hasGithubIssues": false
+  },
+  {
     "name": "MMM-alexa",
     "url": "https://github.com/sakirtemel/MMM-alexa",
     "id": "sakirtemel/MMM-alexa",
@@ -506,6 +517,17 @@
     "issues": [],
     "stars": 152,
     "hasGithubIssues": true
+  },
+  {
+    "name": "EXT-Background",
+    "url": "https://github.com/bugsounet/EXT-Background",
+    "id": "bugsounet/EXT-Background",
+    "maintainer": "bugsounet",
+    "maintainerURL": "https://wiki.bugsounet.fr",
+    "description": "Change the default Google Assistant background to your own or with animated gifs for each status of the assistant.",
+    "issues": [],
+    "stars": 0,
+    "hasGithubIssues": false
   },
   {
     "name": "MMM-BackgroundSlideshow",
@@ -929,6 +951,17 @@
     "hasGithubIssues": true
   },
   {
+    "name": "EXT-Bring",
+    "url": "https://github.com/bugsounet/EXT-Bring",
+    "id": "bugsounet/EXT-Bring",
+    "maintainer": "bugsounet",
+    "maintainerURL": "https://wiki.bugsounet.fr",
+    "description": "Show your current shopping list of Bring!",
+    "issues": [],
+    "stars": 2,
+    "hasGithubIssues": false
+  },
+  {
     "name": "MMM-bringList",
     "url": "https://github.com/rseidt/MMM-bringList",
     "id": "rseidt/MMM-bringList",
@@ -938,6 +971,17 @@
     "issues": [],
     "stars": 11,
     "hasGithubIssues": true
+  },
+  {
+    "name": "EXT-Browser",
+    "url": "https://github.com/bugsounet/EXT-Browser",
+    "id": "bugsounet/EXT-Browser",
+    "maintainer": "bugsounet",
+    "maintainerURL": "https://wiki.bugsounet.fr",
+    "description": "Display any internet web page like a real browser in fullscreen.",
+    "issues": [],
+    "stars": 0,
+    "hasGithubIssues": false
   },
   {
     "name": "MMM-Bubi",
@@ -2109,6 +2153,17 @@
     "hasGithubIssues": true
   },
   {
+    "name": "EXT-Detector",
+    "url": "https://github.com/bugsounet/EXT-Detector",
+    "id": "bugsounet/EXT-Detector",
+    "maintainer": "bugsounet",
+    "maintainerURL": "https://wiki.bugsounet.fr",
+    "description": "Multi-keyword listener for MMM-GoogleAssistant.",
+    "issues": [],
+    "stars": 6,
+    "hasGithubIssues": false
+  },
+  {
     "name": "MMM-DHT",
     "url": "https://github.com/ckoutavas/MMM-DHT",
     "id": "ckoutavas/MMM-DHT",
@@ -2701,347 +2756,6 @@
     "hasGithubIssues": false
   },
   {
-    "name": "EXT-Alert",
-    "url": "https://github.com/bugsounet/EXT-Alert",
-    "id": "bugsounet/EXT-Alert",
-    "maintainer": "bugsounet",
-    "maintainerURL": "https://wiki.bugsounet.fr",
-    "description": "Display any warning, information or error on your screen about Assistant.",
-    "issues": [],
-    "stars": 2,
-    "hasGithubIssues": false
-  },
-  {
-    "name": "EXT-Background",
-    "url": "https://github.com/bugsounet/EXT-Background",
-    "id": "bugsounet/EXT-Background",
-    "maintainer": "bugsounet",
-    "maintainerURL": "https://wiki.bugsounet.fr",
-    "description": "Change the default Google Assistant background to your own or with animated gifs for each status of the assistant.",
-    "issues": [],
-    "stars": 0,
-    "hasGithubIssues": false
-  },
-  {
-    "name": "EXT-Bring",
-    "url": "https://github.com/bugsounet/EXT-Bring",
-    "id": "bugsounet/EXT-Bring",
-    "maintainer": "bugsounet",
-    "maintainerURL": "https://wiki.bugsounet.fr",
-    "description": "Show your current shopping list of Bring!",
-    "issues": [],
-    "stars": 2,
-    "hasGithubIssues": false
-  },
-  {
-    "name": "EXT-Browser",
-    "url": "https://github.com/bugsounet/EXT-Browser",
-    "id": "bugsounet/EXT-Browser",
-    "maintainer": "bugsounet",
-    "maintainerURL": "https://wiki.bugsounet.fr",
-    "description": "Display any internet web page like a real browser in fullscreen.",
-    "issues": [],
-    "stars": 0,
-    "hasGithubIssues": false
-  },
-  {
-    "name": "EXT-Detector",
-    "url": "https://github.com/bugsounet/EXT-Detector",
-    "id": "bugsounet/EXT-Detector",
-    "maintainer": "bugsounet",
-    "maintainerURL": "https://wiki.bugsounet.fr",
-    "description": "Multi-keyword listener for MMM-GoogleAssistant.",
-    "issues": [],
-    "stars": 6,
-    "hasGithubIssues": false
-  },
-  {
-    "name": "EXT-FreeboxTV",
-    "url": "https://github.com/bugsounet/EXT-FreeboxTV",
-    "id": "bugsounet/EXT-FreeboxTV",
-    "maintainer": "bugsounet",
-    "maintainerURL": "https://wiki.bugsounet.fr",
-    "description": "Display Channel from French Internet Provider: Free.",
-    "issues": [],
-    "stars": 1,
-    "hasGithubIssues": false
-  },
-  {
-    "name": "EXT-GooglePhotos",
-    "url": "https://github.com/bugsounet/EXT-GooglePhotos",
-    "id": "bugsounet/EXT-GooglePhotos",
-    "maintainer": "bugsounet",
-    "maintainerURL": "https://wiki.bugsounet.fr",
-    "description": "Display your album directory with Google photos API in background or in MagicMirror² position.",
-    "issues": [],
-    "stars": 2,
-    "hasGithubIssues": false
-  },
-  {
-    "name": "EXT-Governor",
-    "url": "https://github.com/bugsounet/EXT-Governor",
-    "id": "bugsounet/EXT-Governor",
-    "maintainer": "bugsounet",
-    "maintainerURL": "https://wiki.bugsounet.fr",
-    "description": "CPU governor enables the operating system to scale the CPU frequency up or down in order to save power or improve performance.",
-    "issues": [],
-    "stars": 2,
-    "hasGithubIssues": false
-  },
-  {
-    "name": "EXT-Internet",
-    "url": "https://github.com/bugsounet/EXT-Internet",
-    "id": "bugsounet/EXT-Internet",
-    "maintainer": "bugsounet",
-    "maintainerURL": "https://wiki.bugsounet.fr",
-    "description": "Check your internet connexion, display ping.",
-    "issues": [],
-    "stars": 0,
-    "hasGithubIssues": false
-  },
-  {
-    "name": "EXT-Keyboard",
-    "url": "https://github.com/bugsounet/EXT-Keyboard",
-    "id": "bugsounet/EXT-Keyboard",
-    "maintainer": "bugsounet",
-    "maintainerURL": "https://wiki.bugsounet.fr",
-    "description": "Control your mirror with a keyboard.",
-    "issues": [],
-    "stars": 1,
-    "hasGithubIssues": false
-  },
-  {
-    "name": "EXT-Librespot",
-    "url": "https://github.com/bugsounet/EXT-Librespot",
-    "id": "bugsounet/EXT-Librespot",
-    "maintainer": "bugsounet",
-    "maintainerURL": "https://wiki.bugsounet.fr",
-    "description": "Allow to play Spotify music on your mirror with Librespot.",
-    "issues": [],
-    "stars": 0,
-    "hasGithubIssues": false
-  },
-  {
-    "name": "EXT-Motion",
-    "url": "https://github.com/bugsounet/EXT-Motion",
-    "id": "bugsounet/EXT-Motion",
-    "maintainer": "bugsounet",
-    "maintainerURL": "https://wiki.bugsounet.fr",
-    "description": "Control your screen with a webcam (as motion detector).",
-    "issues": [],
-    "stars": 0,
-    "hasGithubIssues": false
-  },
-  {
-    "name": "EXT-MusicPlayer",
-    "url": "https://github.com/bugsounet/EXT-MusicPlayer",
-    "id": "bugsounet/EXT-MusicPlayer",
-    "maintainer": "bugsounet",
-    "maintainerURL": "https://wiki.bugsounet.fr",
-    "description": "Play any music found on a USB Key or in defined local directory.",
-    "issues": [],
-    "stars": 1,
-    "hasGithubIssues": false
-  },
-  {
-    "name": "EXT-Pages",
-    "url": "https://github.com/bugsounet/EXT-Pages",
-    "id": "bugsounet/EXT-Pages",
-    "maintainer": "bugsounet",
-    "maintainerURL": "https://wiki.bugsounet.fr",
-    "description": "This plugin allows you to have animated pages.",
-    "issues": [],
-    "stars": 2,
-    "hasGithubIssues": false
-  },
-  {
-    "name": "EXT-Photos",
-    "url": "https://github.com/bugsounet/EXT-Photos",
-    "id": "bugsounet/EXT-Photos",
-    "maintainer": "bugsounet",
-    "maintainerURL": "https://wiki.bugsounet.fr",
-    "description": "Displaying any photos discover by assistant in fullscreen.",
-    "issues": [],
-    "stars": 0,
-    "hasGithubIssues": false
-  },
-  {
-    "name": "EXT-Pir",
-    "url": "https://github.com/bugsounet/EXT-Pir",
-    "id": "bugsounet/EXT-Pir",
-    "maintainer": "bugsounet",
-    "maintainerURL": "https://wiki.bugsounet.fr",
-    "description": "Control your screen with a PIR Sensor.",
-    "issues": [],
-    "stars": 3,
-    "hasGithubIssues": false
-  },
-  {
-    "name": "EXT-RadioPlayer",
-    "url": "https://github.com/bugsounet/EXT-RadioPlayer",
-    "id": "bugsounet/EXT-RadioPlayer",
-    "maintainer": "bugsounet",
-    "maintainerURL": "https://wiki.bugsounet.fr",
-    "description": "Play radio station on MagicMirror².",
-    "issues": [],
-    "stars": 2,
-    "hasGithubIssues": false
-  },
-  {
-    "name": "EXT-Screen",
-    "url": "https://github.com/bugsounet/EXT-Screen",
-    "id": "bugsounet/EXT-Screen",
-    "maintainer": "bugsounet",
-    "maintainerURL": "https://wiki.bugsounet.fr",
-    "description": "After a configurated time without any user interaction the display will turn off and hide all modules for economy mode.",
-    "issues": [],
-    "stars": 3,
-    "hasGithubIssues": false
-  },
-  {
-    "name": "EXT-Selfies",
-    "url": "https://github.com/bugsounet/EXT-Selfies",
-    "id": "bugsounet/EXT-Selfies",
-    "maintainer": "bugsounet",
-    "maintainerURL": "https://wiki.bugsounet.fr",
-    "description": "Take selfies from webcam.",
-    "issues": [],
-    "stars": 0,
-    "hasGithubIssues": false
-  },
-  {
-    "name": "EXT-SelfiesFlash",
-    "url": "https://github.com/bugsounet/EXT-SelfiesFlash",
-    "id": "bugsounet/EXT-SelfiesFlash",
-    "maintainer": "bugsounet",
-    "maintainerURL": "https://wiki.bugsounet.fr",
-    "description": "Need a flash to take selfies?",
-    "issues": [],
-    "stars": 0,
-    "hasGithubIssues": false
-  },
-  {
-    "name": "EXT-SelfiesSender",
-    "url": "https://github.com/bugsounet/EXT-SelfiesSender",
-    "id": "bugsounet/EXT-SelfiesSender",
-    "maintainer": "bugsounet",
-    "maintainerURL": "https://wiki.bugsounet.fr",
-    "description": "Send your selfies to Telegram, google photos or by mail.",
-    "issues": [],
-    "stars": 0,
-    "hasGithubIssues": false
-  },
-  {
-    "name": "EXT-SelfiesViewer",
-    "url": "https://github.com/bugsounet/EXT-SelfiesViewer",
-    "id": "bugsounet/EXT-SelfiesViewer",
-    "maintainer": "bugsounet",
-    "maintainerURL": "https://wiki.bugsounet.fr",
-    "description": "Slideshow of your best selfies.",
-    "issues": [],
-    "stars": 0,
-    "hasGithubIssues": false
-  },
-  {
-    "name": "EXT-Spotify",
-    "url": "https://github.com/bugsounet/EXT-Spotify",
-    "id": "bugsounet/EXT-Spotify",
-    "maintainer": "bugsounet",
-    "maintainerURL": "https://wiki.bugsounet.fr",
-    "description": "This plugin show current spotify playback of any devices.",
-    "issues": [],
-    "stars": 2,
-    "hasGithubIssues": false
-  },
-  {
-    "name": "EXT-SpotifyCanvasLyrics",
-    "url": "https://github.com/bugsounet/EXT-SpotifyCanvasLyrics",
-    "id": "bugsounet/EXT-SpotifyCanvasLyrics",
-    "maintainer": "bugsounet",
-    "maintainerURL": "https://wiki.bugsounet.fr",
-    "description": "Create a server for displaying any Lyrics and Canvas from Spotify.",
-    "issues": [],
-    "stars": 0,
-    "hasGithubIssues": false
-  },
-  {
-    "name": "EXT-StreamDeck",
-    "url": "https://github.com/bugsounet/EXT-StreamDeck",
-    "id": "bugsounet/EXT-StreamDeck",
-    "maintainer": "bugsounet",
-    "maintainerURL": "https://wiki.bugsounet.fr",
-    "description": "Control your mirror with a StreamDeck by elgato©.",
-    "issues": [],
-    "stars": 0,
-    "hasGithubIssues": false
-  },
-  {
-    "name": "EXT-TelegramBot",
-    "url": "https://github.com/bugsounet/EXT-TelegramBot",
-    "id": "bugsounet/EXT-TelegramBot",
-    "maintainer": "bugsounet",
-    "maintainerURL": "https://wiki.bugsounet.fr",
-    "description": "You can remote-control plugins within Telegram.",
-    "issues": [],
-    "stars": 1,
-    "hasGithubIssues": false
-  },
-  {
-    "name": "EXT-Updates",
-    "url": "https://github.com/bugsounet/EXT-Updates",
-    "id": "bugsounet/EXT-Updates",
-    "maintainer": "bugsounet",
-    "maintainerURL": "https://wiki.bugsounet.fr",
-    "description": "This plugin allow to auto-update if an update is detected.",
-    "issues": [],
-    "stars": 0,
-    "hasGithubIssues": false
-  },
-  {
-    "name": "EXT-Volume",
-    "url": "https://github.com/bugsounet/EXT-Volume",
-    "id": "bugsounet/EXT-Volume",
-    "maintainer": "bugsounet",
-    "maintainerURL": "https://wiki.bugsounet.fr",
-    "description": "Control the sound volume level of your mirror.",
-    "issues": [],
-    "stars": 2,
-    "hasGithubIssues": false
-  },
-  {
-    "name": "EXT-Welcome",
-    "url": "https://github.com/bugsounet/EXT-Welcome",
-    "id": "bugsounet/EXT-Welcome",
-    "maintainer": "bugsounet",
-    "maintainerURL": "https://wiki.bugsounet.fr",
-    "description": "Allow to send a welcome on start of MagicMirror².",
-    "issues": [],
-    "stars": 0,
-    "hasGithubIssues": false
-  },
-  {
-    "name": "EXT-YouTube",
-    "url": "https://github.com/bugsounet/EXT-YouTube",
-    "id": "bugsounet/EXT-YouTube",
-    "maintainer": "bugsounet",
-    "maintainerURL": "https://wiki.bugsounet.fr",
-    "description": "This plugins allows to play YouTube video.",
-    "issues": [],
-    "stars": 3,
-    "hasGithubIssues": false
-  },
-  {
-    "name": "EXT-YouTubeCast",
-    "url": "https://github.com/bugsounet/EXT-YouTubeCast",
-    "id": "bugsounet/EXT-YouTubeCast",
-    "maintainer": "bugsounet",
-    "maintainerURL": "https://wiki.bugsounet.fr",
-    "description": "Allow to cast a YouTube video on MagicMirror².",
-    "issues": [],
-    "stars": 2,
-    "hasGithubIssues": false
-  },
-  {
     "name": "MMM-EyeCandy",
     "url": "https://github.com/mykle1/MMM-EyeCandy",
     "id": "mykle1/MMM-EyeCandy",
@@ -3586,6 +3300,17 @@
     "hasGithubIssues": true
   },
   {
+    "name": "EXT-FreeboxTV",
+    "url": "https://github.com/bugsounet/EXT-FreeboxTV",
+    "id": "bugsounet/EXT-FreeboxTV",
+    "maintainer": "bugsounet",
+    "maintainerURL": "https://wiki.bugsounet.fr",
+    "description": "Display Channel from French Internet Provider: Free.",
+    "issues": [],
+    "stars": 1,
+    "hasGithubIssues": false
+  },
+  {
     "name": "MMM-FrenchHoroscope",
     "url": "https://github.com/Amand-M/MMM-FrenchHoroscope",
     "id": "Amand-M/MMM-FrenchHoroscope",
@@ -4017,6 +3742,17 @@
     "hasGithubIssues": true
   },
   {
+    "name": "EXT-GooglePhotos",
+    "url": "https://github.com/bugsounet/EXT-GooglePhotos",
+    "id": "bugsounet/EXT-GooglePhotos",
+    "maintainer": "bugsounet",
+    "maintainerURL": "https://wiki.bugsounet.fr",
+    "description": "Display your album directory with Google photos API in background or in MagicMirror² position.",
+    "issues": [],
+    "stars": 2,
+    "hasGithubIssues": false
+  },
+  {
     "name": "MMM-GoogleSheets",
     "url": "https://github.com/ryan-d-williams/MMM-GoogleSheets",
     "id": "ryan-d-williams/MMM-GoogleSheets",
@@ -4081,6 +3817,17 @@
     "issues": [],
     "stars": 10,
     "hasGithubIssues": true
+  },
+  {
+    "name": "EXT-Governor",
+    "url": "https://github.com/bugsounet/EXT-Governor",
+    "id": "bugsounet/EXT-Governor",
+    "maintainer": "bugsounet",
+    "maintainerURL": "https://wiki.bugsounet.fr",
+    "description": "CPU governor enables the operating system to scale the CPU frequency up or down in order to save power or improve performance.",
+    "issues": [],
+    "stars": 2,
+    "hasGithubIssues": false
   },
   {
     "name": "MMM-GPIO-HANDLER",
@@ -4912,6 +4659,17 @@
     "hasGithubIssues": true
   },
   {
+    "name": "EXT-Internet",
+    "url": "https://github.com/bugsounet/EXT-Internet",
+    "id": "bugsounet/EXT-Internet",
+    "maintainer": "bugsounet",
+    "maintainerURL": "https://wiki.bugsounet.fr",
+    "description": "Check your internet connexion, display ping.",
+    "issues": [],
+    "stars": 0,
+    "hasGithubIssues": false
+  },
+  {
     "name": "internet-monitor",
     "url": "https://github.com/BrianHepler/internet-monitor",
     "id": "BrianHepler/internet-monitor",
@@ -5287,6 +5045,17 @@
     "hasGithubIssues": true
   },
   {
+    "name": "EXT-Keyboard",
+    "url": "https://github.com/bugsounet/EXT-Keyboard",
+    "id": "bugsounet/EXT-Keyboard",
+    "maintainer": "bugsounet",
+    "maintainerURL": "https://wiki.bugsounet.fr",
+    "description": "Control your mirror with a keyboard.",
+    "issues": [],
+    "stars": 1,
+    "hasGithubIssues": false
+  },
+  {
     "name": "KeyDisplayed",
     "url": "https://github.com/l0b5ter/KeyDisplayed",
     "id": "l0b5ter/KeyDisplayed",
@@ -5452,6 +5221,17 @@
     "issues": [],
     "stars": 2,
     "hasGithubIssues": true
+  },
+  {
+    "name": "EXT-Librespot",
+    "url": "https://github.com/bugsounet/EXT-Librespot",
+    "id": "bugsounet/EXT-Librespot",
+    "maintainer": "bugsounet",
+    "maintainerURL": "https://wiki.bugsounet.fr",
+    "description": "Allow to play Spotify music on your mirror with Librespot.",
+    "issues": [],
+    "stars": 0,
+    "hasGithubIssues": false
   },
   {
     "name": "MMM-LibrespotJava",
@@ -6571,6 +6351,17 @@
     "hasGithubIssues": true
   },
   {
+    "name": "EXT-Motion",
+    "url": "https://github.com/bugsounet/EXT-Motion",
+    "id": "bugsounet/EXT-Motion",
+    "maintainer": "bugsounet",
+    "maintainerURL": "https://wiki.bugsounet.fr",
+    "description": "Control your screen with a webcam (as motion detector).",
+    "issues": [],
+    "stars": 0,
+    "hasGithubIssues": false
+  },
+  {
     "name": "MMM-MotionControl",
     "url": "https://github.com/nischi/MMM-MotionControl",
     "id": "nischi/MMM-MotionControl",
@@ -6835,6 +6626,17 @@
     "issues": [],
     "stars": 7,
     "hasGithubIssues": true
+  },
+  {
+    "name": "EXT-MusicPlayer",
+    "url": "https://github.com/bugsounet/EXT-MusicPlayer",
+    "id": "bugsounet/EXT-MusicPlayer",
+    "maintainer": "bugsounet",
+    "maintainerURL": "https://wiki.bugsounet.fr",
+    "description": "Play any music found on a USB Key or in defined local directory.",
+    "issues": [],
+    "stars": 1,
+    "hasGithubIssues": false
   },
   {
     "name": "MMM-mvgmunich",
@@ -8156,6 +7958,17 @@
     "hasGithubIssues": true
   },
   {
+    "name": "EXT-Pages",
+    "url": "https://github.com/bugsounet/EXT-Pages",
+    "id": "bugsounet/EXT-Pages",
+    "maintainer": "bugsounet",
+    "maintainerURL": "https://wiki.bugsounet.fr",
+    "description": "This plugin allows you to have animated pages.",
+    "issues": [],
+    "stars": 2,
+    "hasGithubIssues": false
+  },
+  {
     "name": "MMM-Pages-Screencast",
     "url": "https://github.com/jboucly/MMM-Pages-Screencast",
     "id": "jboucly/MMM-Pages-Screencast",
@@ -8376,6 +8189,17 @@
     "hasGithubIssues": true
   },
   {
+    "name": "EXT-Photos",
+    "url": "https://github.com/bugsounet/EXT-Photos",
+    "id": "bugsounet/EXT-Photos",
+    "maintainer": "bugsounet",
+    "maintainerURL": "https://wiki.bugsounet.fr",
+    "description": "Displaying any photos discover by assistant in fullscreen.",
+    "issues": [],
+    "stars": 0,
+    "hasGithubIssues": false
+  },
+  {
     "name": "PiDisplaySleep",
     "url": "https://github.com/RpDp-git/PiDisplaySleep",
     "id": "RpDp-git/PiDisplaySleep",
@@ -8451,6 +8275,17 @@
     "description": "After a configurated time without any user interaction the display will turn off and hide all modules for economy mode.It will wake up with a PIR sensor. [Maintained].",
     "issues": [],
     "stars": 10,
+    "hasGithubIssues": false
+  },
+  {
+    "name": "EXT-Pir",
+    "url": "https://github.com/bugsounet/EXT-Pir",
+    "id": "bugsounet/EXT-Pir",
+    "maintainer": "bugsounet",
+    "maintainerURL": "https://wiki.bugsounet.fr",
+    "description": "Control your screen with a PIR Sensor.",
+    "issues": [],
+    "stars": 3,
     "hasGithubIssues": false
   },
   {
@@ -9050,6 +8885,17 @@
     "issues": [],
     "stars": 27,
     "hasGithubIssues": true
+  },
+  {
+    "name": "EXT-RadioPlayer",
+    "url": "https://github.com/bugsounet/EXT-RadioPlayer",
+    "id": "bugsounet/EXT-RadioPlayer",
+    "maintainer": "bugsounet",
+    "maintainerURL": "https://wiki.bugsounet.fr",
+    "description": "Play radio station on MagicMirror².",
+    "issues": [],
+    "stars": 2,
+    "hasGithubIssues": false
   },
   {
     "name": "MMM-RaiderIO",
@@ -9693,6 +9539,17 @@
     "hasGithubIssues": true
   },
   {
+    "name": "EXT-Screen",
+    "url": "https://github.com/bugsounet/EXT-Screen",
+    "id": "bugsounet/EXT-Screen",
+    "maintainer": "bugsounet",
+    "maintainerURL": "https://wiki.bugsounet.fr",
+    "description": "After a configurated time without any user interaction the display will turn off and hide all modules for economy mode.",
+    "issues": [],
+    "stars": 3,
+    "hasGithubIssues": false
+  },
+  {
     "name": "MMM-Screen-Powersave-Notification",
     "url": "https://github.com/Tom-Hirschberger/MMM-Screen-Powersave-Notification",
     "id": "Tom-Hirschberger/MMM-Screen-Powersave-Notification",
@@ -9792,6 +9649,28 @@
     "hasGithubIssues": true
   },
   {
+    "name": "EXT-Selfies",
+    "url": "https://github.com/bugsounet/EXT-Selfies",
+    "id": "bugsounet/EXT-Selfies",
+    "maintainer": "bugsounet",
+    "maintainerURL": "https://wiki.bugsounet.fr",
+    "description": "Take selfies from webcam.",
+    "issues": [],
+    "stars": 0,
+    "hasGithubIssues": false
+  },
+  {
+    "name": "EXT-SelfiesFlash",
+    "url": "https://github.com/bugsounet/EXT-SelfiesFlash",
+    "id": "bugsounet/EXT-SelfiesFlash",
+    "maintainer": "bugsounet",
+    "maintainerURL": "https://wiki.bugsounet.fr",
+    "description": "Need a flash to take selfies?",
+    "issues": [],
+    "stars": 0,
+    "hasGithubIssues": false
+  },
+  {
     "name": "MMM-Selfieshot",
     "url": "https://github.com/BrianHepler/MMM-Selfieshot",
     "id": "BrianHepler/MMM-Selfieshot",
@@ -9801,6 +9680,28 @@
     "issues": [],
     "stars": 8,
     "hasGithubIssues": true
+  },
+  {
+    "name": "EXT-SelfiesSender",
+    "url": "https://github.com/bugsounet/EXT-SelfiesSender",
+    "id": "bugsounet/EXT-SelfiesSender",
+    "maintainer": "bugsounet",
+    "maintainerURL": "https://wiki.bugsounet.fr",
+    "description": "Send your selfies to Telegram, google photos or by mail.",
+    "issues": [],
+    "stars": 0,
+    "hasGithubIssues": false
+  },
+  {
+    "name": "EXT-SelfiesViewer",
+    "url": "https://github.com/bugsounet/EXT-SelfiesViewer",
+    "id": "bugsounet/EXT-SelfiesViewer",
+    "maintainer": "bugsounet",
+    "maintainerURL": "https://wiki.bugsounet.fr",
+    "description": "Slideshow of your best selfies.",
+    "issues": [],
+    "stars": 0,
+    "hasGithubIssues": false
   },
   {
     "name": "MMM-SendNotificationButton",
@@ -9842,7 +9743,9 @@
     "maintainer": "Tom-Hirschberger",
     "maintainerURL": "https://github.com/Tom-Hirschberger",
     "description": "A module to send notifications based on messages received via one/multiple serial devices.",
-    "issues": []
+    "issues": [],
+    "stars": 6,
+    "hasGithubIssues": true
   },
   {
     "name": "MMM-ServerStatus",
@@ -9852,7 +9755,8 @@
     "maintainerURL": "https://github.com/XBCreepinJesus",
     "description": "A module to check the up/down status of servers/devices on your network.",
     "issues": [],
-    "stars": 16
+    "stars": 16,
+    "hasGithubIssues": true
   },
   {
     "name": "MMM-ServiceViewer",
@@ -9862,7 +9766,8 @@
     "maintainerURL": "https://github.com/cybex-dev",
     "description": "Displays all Bonjour/Avahi services on your local network in a readable format, also allowing some interaction with the services, works well with <a target=\"_blank\" href=\"https://github.com/cybex-dev/MMM-XDG-OPEN\">XMMM-Xdg-Open</a>.",
     "issues": [],
-    "stars": 1
+    "stars": 1,
+    "hasGithubIssues": true
   },
   {
     "name": "MMM-SFMuniBusTimes",
@@ -9873,7 +9778,8 @@
     "description": "Displays the ETA of San Francisco's MUNI Bus and Rail systems based on the given stops and routes.",
     "issues": [],
     "outdated": "Abandoned. The API used no longer works, there is a new API but the developer no longer seems to be active.",
-    "stars": 3
+    "stars": 3,
+    "hasGithubIssues": true
   },
   {
     "name": "MMM-SG-Transport-V2",
@@ -9883,7 +9789,8 @@
     "maintainerURL": "https://github.com/mosesyong",
     "description": "Display bus transport info in Singapore.",
     "issues": [],
-    "stars": 5
+    "stars": 5,
+    "hasGithubIssues": true
   },
   {
     "name": "MMM-shabbat",
@@ -9893,7 +9800,8 @@
     "maintainerURL": "",
     "description": "Display shabbat times for the current week and optionally hide all modules.",
     "issues": [],
-    "stars": 3
+    "stars": 3,
+    "hasGithubIssues": true
   },
   {
     "name": "MMM-ShairportMetadata",
@@ -9903,7 +9811,8 @@
     "maintainerURL": "",
     "description": "Integrate Apple AirTunes/Airplay metadata coming via shairport-sync into the MagicMirror². Does not work with video or mirroring.",
     "issues": [],
-    "stars": 16
+    "stars": 17,
+    "hasGithubIssues": true
   },
   {
     "name": "MMM-Shell-Output",
@@ -9923,7 +9832,8 @@
     "maintainerURL": "https://github.com/Medve01",
     "description": "Display data from 1 Shelly HT sensor.",
     "issues": [],
-    "stars": 1
+    "stars": 1,
+    "hasGithubIssues": true
   },
   {
     "name": "MMM-Shelly-PM",
@@ -9933,7 +9843,8 @@
     "maintainerURL": "https://github.com/stefanjacobs",
     "description": "Display data from 1 Shelly PM sensor, forked and modified by <a target=\"_blank\" href=\"https://github.com/Medve01/Shelly-HT\">Shelly-HT</a>.",
     "issues": [],
-    "stars": 2
+    "stars": 3,
+    "hasGithubIssues": true
   },
   {
     "name": "MMM-ShellyEMMeter",
@@ -9943,7 +9854,8 @@
     "maintainerURL": "https://github.com/mgarrix",
     "description": "Display data from Shelly EM sensor.",
     "issues": [],
-    "stars": 0
+    "stars": 1,
+    "hasGithubIssues": true
   },
   {
     "name": "MMM-ShellyPlus-HT",
@@ -9953,7 +9865,8 @@
     "maintainerURL": "https://github.com/IoT-Coder",
     "description": "Display data from Shelly+ HT sensor. Forked from Shelly-HT for Gen2 device Shelly Plus HT.",
     "issues": [],
-    "stars": 0
+    "stars": 0,
+    "hasGithubIssues": true
   },
   {
     "name": "MMM-ShipmentTracking",
@@ -9963,7 +9876,8 @@
     "maintainerURL": "",
     "description": "Display your shipment tracking status.",
     "issues": [],
-    "stars": 26
+    "stars": 26,
+    "hasGithubIssues": true
   },
   {
     "name": "MMM-SHL",
@@ -9973,7 +9887,8 @@
     "maintainerURL": "",
     "description": "Display stands of Svenska Hockey Ligan (SHL).",
     "issues": [],
-    "stars": 1
+    "stars": 1,
+    "hasGithubIssues": true
   },
   {
     "name": "MMM-Simple-Swiper",
@@ -9984,7 +9899,8 @@
     "description": "Simple, multi-threaded interface for HC-SR04 ultra sonic sensors to be used with MMM-pages.",
     "issues": [],
     "outdated": "Abandoned. Repo has been archived at 2022-05-22.",
-    "stars": 19
+    "stars": 19,
+    "hasGithubIssues": true
   },
   {
     "name": "MMM-SimpleLogo",
@@ -9994,7 +9910,8 @@
     "maintainerURL": "",
     "description": "Simply displays logo with local image file path or url.",
     "issues": [],
-    "stars": 36
+    "stars": 36,
+    "hasGithubIssues": true
   },
   {
     "name": "MMM-SimpleNotifyTrashDay",
@@ -10004,7 +9921,8 @@
     "maintainerURL": "https://github.com/sabo10o29",
     "description": "Shows trash days with simple setup.",
     "issues": [],
-    "stars": 1
+    "stars": 2,
+    "hasGithubIssues": true
   },
   {
     "name": "MMM-SimpleText",
@@ -10014,7 +9932,8 @@
     "maintainerURL": "",
     "description": "Simple and plain text module with some minor formatting options. Can also display content from text files with multiple lines.",
     "issues": [],
-    "stars": 7
+    "stars": 7,
+    "hasGithubIssues": true
   },
   {
     "name": "MMM-SingleStock",
@@ -10024,7 +9943,8 @@
     "maintainerURL": "https://github.com/balassy",
     "description": "Displays the stock price of a single company without any fancy animation.",
     "issues": [],
-    "stars": 6
+    "stars": 6,
+    "hasGithubIssues": true
   },
   {
     "name": "MMM-Skola24",
@@ -10034,7 +9954,8 @@
     "maintainerURL": "",
     "description": "Shows this week's school timetable from the Swedish school system Skola24.",
     "issues": [],
-    "stars": 3
+    "stars": 3,
+    "hasGithubIssues": true
   },
   {
     "name": "MMM-Skolmaten",
@@ -10044,7 +9965,8 @@
     "maintainerURL": "",
     "description": "Show school lunch menus in Sweden from skolmaten.se.",
     "issues": [],
-    "stars": 7
+    "stars": 7,
+    "hasGithubIssues": true
   },
   {
     "name": "MMM-Skyss",
@@ -10054,7 +9976,8 @@
     "maintainerURL": "",
     "description": "Based on MMM-Ruter, but for the municipality of Hordaland in Norway.",
     "issues": [],
-    "stars": 6
+    "stars": 6,
+    "hasGithubIssues": false
   },
   {
     "name": "MMM-SL-PublicTransport",
@@ -10064,7 +9987,8 @@
     "maintainerURL": "",
     "description": "Display public transport in Stockholm/<strong>Sweden</strong>.",
     "issues": [],
-    "stars": 12
+    "stars": 12,
+    "hasGithubIssues": true
   },
   {
     "name": "MMM-Slack2",
@@ -10074,7 +9998,8 @@
     "maintainerURL": "",
     "description": "Cycles through the newest messages of a Slack channel.",
     "issues": [],
-    "stars": 3
+    "stars": 4,
+    "hasGithubIssues": true
   },
   {
     "name": "MMM-SlackAnnouncements",
@@ -10084,7 +10009,8 @@
     "maintainerURL": "",
     "description": "Post announcements to your mirror from a designated Slack channel.",
     "issues": [],
-    "stars": 5
+    "stars": 5,
+    "hasGithubIssues": true
   },
   {
     "name": "MMM-slamfm-playing-now",
@@ -10094,7 +10020,8 @@
     "maintainerURL": "https://github.com/ngnijland",
     "description": "Show what's currently playing now on the dutch radio station Slam!.",
     "issues": [],
-    "stars": 0
+    "stars": 0,
+    "hasGithubIssues": true
   },
   {
     "name": "MMM-SleeperNFL",
@@ -10104,7 +10031,8 @@
     "maintainerURL": "",
     "description": "Displays your <a target=\"_blank\" href=\"https://sleeper.com\">Sleeper</a> fantasy football matchup with live updating scores.",
     "issues": [],
-    "stars": 0
+    "stars": 0,
+    "hasGithubIssues": true
   },
   {
     "name": "MMM-SleepWake",
@@ -10114,7 +10042,8 @@
     "maintainerURL": "",
     "description": "Module that uses an external source for motion detection, like a web camera .",
     "issues": [],
-    "stars": 11
+    "stars": 11,
+    "hasGithubIssues": true
   },
   {
     "name": "MMM-Smappee",
@@ -10124,7 +10053,8 @@
     "maintainerURL": "",
     "description": "Module to integrate <a target=\"_blank\" href=\"https://www.smappee.com\">Smappee</a>s smart home energy consumption monitor.",
     "issues": [],
-    "stars": 2
+    "stars": 2,
+    "hasGithubIssues": true
   },
   {
     "name": "MMM-SmartTouch",
@@ -10134,7 +10064,8 @@
     "maintainerURL": "https://github.com/EbenKouao",
     "description": "This module allows you to transform your MagicMirror² into a touchscreen interactive experience. This includes hiding all modules (Standby Mode) and Side Menu Option to shutdown your mirror via MagicMirror² UI.",
     "issues": [],
-    "stars": 78
+    "stars": 79,
+    "hasGithubIssues": true
   },
   {
     "name": "MMM-SmartWebDisplay",
@@ -10144,7 +10075,8 @@
     "maintainerURL": "https://github.com/AgP42",
     "description": "An iFrame module to display web content (including YouTube, IP cameras, etc.). Several rotating URL, autorefresh and remote control of the URL to display, Next/Prev/Play/Stop. <a target=\"_blank\" href=\"https://forum.magicmirror.builders/topic/9750/mmm-smartwebdisplay-display-web-contents-including-youtube-on-your-mm\">MMM-SmartWebDisplay forum</a>.",
     "issues": [],
-    "stars": 52
+    "stars": 56,
+    "hasGithubIssues": true
   },
   {
     "name": "MMM-SmokedMirror",
@@ -10154,7 +10086,8 @@
     "maintainerURL": "",
     "description": "Air pollution in Polish cities.",
     "issues": [],
-    "stars": 3
+    "stars": 3,
+    "hasGithubIssues": true
   },
   {
     "name": "MMM-Snake",
@@ -10164,7 +10097,8 @@
     "maintainerURL": "",
     "description": "Play the retro game Snake on your mirror using your smartphone.",
     "issues": [],
-    "stars": 23
+    "stars": 23,
+    "hasGithubIssues": true
   },
   {
     "name": "MMM-SNCF",
@@ -10174,7 +10108,8 @@
     "maintainerURL": "",
     "description": "Display upcoming trains between 2 SNCF stations (France).",
     "issues": [],
-    "stars": 5
+    "stars": 5,
+    "hasGithubIssues": true
   },
   {
     "name": "MMM-SnmpIntSpeed",
@@ -10184,7 +10119,8 @@
     "maintainerURL": "",
     "description": "Uses SNMP to display bandwidth usage from a network device interface.",
     "issues": [],
-    "stars": 4
+    "stars": 4,
+    "hasGithubIssues": true
   },
   {
     "name": "MMM-Snow",
@@ -10194,7 +10130,8 @@
     "maintainerURL": "",
     "description": "More realistic snow plugin to improve your winter experience.",
     "issues": [],
-    "stars": 54
+    "stars": 54,
+    "hasGithubIssues": true
   },
   {
     "name": "MMM-soccer",
@@ -10204,7 +10141,8 @@
     "maintainerURL": "",
     "description": "Display standings from European Soccer (Football) leagues (optional voice-control).",
     "issues": [],
-    "stars": 28
+    "stars": 29,
+    "hasGithubIssues": true
   },
   {
     "name": "MMM-SoccerLiveScore",
@@ -10214,7 +10152,8 @@
     "maintainerURL": "",
     "description": "Display live scores of your favorite soccer leagues/competitions.",
     "issues": [],
-    "stars": 6
+    "stars": 7,
+    "hasGithubIssues": true
   },
   {
     "name": "MMM-social-counter",
@@ -10224,7 +10163,8 @@
     "maintainerURL": "https://github.com/ngnijland",
     "description": "Displays the follower count of a Twitter user of choice.",
     "issues": [],
-    "stars": 4
+    "stars": 4,
+    "hasGithubIssues": true
   },
   {
     "name": "MMM-socialbicycles",
@@ -10234,7 +10174,8 @@
     "maintainerURL": "",
     "description": "Station monitor for bicycle networks based on the Socialbicycles API/Infrastructure, e.g. Wavelo in Kraków, Poland.",
     "issues": [],
-    "stars": 0
+    "stars": 0,
+    "hasGithubIssues": false
   },
   {
     "name": "MMM-Solar",
@@ -10244,7 +10185,8 @@
     "maintainerURL": "",
     "description": "Display statistics from your Enphase Energy microinverter PV system.",
     "issues": [],
-    "stars": 6
+    "stars": 6,
+    "hasGithubIssues": true
   },
   {
     "name": "MMM-SolarEdge",
@@ -10254,7 +10196,8 @@
     "maintainerURL": "https://github.com/st3v0rr",
     "description": "Display live data and statistics from your SolarEdge inverter system. PV and optional battery support.",
     "issues": [],
-    "stars": 1
+    "stars": 1,
+    "hasGithubIssues": true
   },
   {
     "name": "MMM-SolarEdge",
@@ -10264,7 +10207,8 @@
     "maintainerURL": "",
     "description": "Display statistics from your SolarEdge PV inverter system.",
     "issues": [],
-    "stars": 5
+    "stars": 5,
+    "hasGithubIssues": false
   },
   {
     "name": "MMM-SolarEdgeLite",
@@ -10274,7 +10218,8 @@
     "maintainerURL": "https://github.com/jeroenpeters1986",
     "description": "Display simple statistics from your SolarEdge (based on bertieuk).",
     "issues": [],
-    "stars": 1
+    "stars": 1,
+    "hasGithubIssues": false
   },
   {
     "name": "MMM-Solarman",
@@ -10284,7 +10229,8 @@
     "maintainerURL": "",
     "description": "Display statistics from the Solarman API, e.g. from Bosswerk PV inverter.",
     "issues": [],
-    "stars": 2
+    "stars": 2,
+    "hasGithubIssues": true
   },
   {
     "name": "MMM-SolarPicture",
@@ -10294,7 +10240,8 @@
     "maintainerURL": "",
     "description": "Display the last Solar Dynamics Observatory (SDO) picture.",
     "issues": [],
-    "stars": 2
+    "stars": 3,
+    "hasGithubIssues": true
   },
   {
     "name": "MMM-Soliscloud",
@@ -10315,7 +10262,8 @@
     "maintainerURL": "",
     "description": "Display the currently playing track of your Sonos system.",
     "issues": [],
-    "stars": 40
+    "stars": 40,
+    "hasGithubIssues": true
   },
   {
     "name": "MMM-Sonos",
@@ -10325,7 +10273,8 @@
     "maintainerURL": "https://github.com/tbouron",
     "description": "Module that displays playing tracks on your Sonos network.",
     "issues": [],
-    "stars": 12
+    "stars": 14,
+    "hasGithubIssues": true
   },
   {
     "name": "MMM-SORT",
@@ -10336,7 +10285,8 @@
     "description": "Static Or Rotating Tides module. Replaces/combines MMM-SimpleTides and MMM-StaticTides.",
     "issues": [],
     "outdated": "Abandoned. No reactions to issues since years. Missing instructions to install dependency 'request'.",
-    "stars": 2
+    "stars": 2,
+    "hasGithubIssues": true
   },
   {
     "name": "MMM-Space",
@@ -10346,7 +10296,8 @@
     "maintainerURL": "",
     "description": "Adds vertical space (as HTML div) between modules.",
     "issues": [],
-    "stars": 9
+    "stars": 9,
+    "hasGithubIssues": true
   },
   {
     "name": "MMM-SpaceLaunchNow",
@@ -10356,7 +10307,8 @@
     "maintainerURL": "",
     "description": "Show the previous and upcoming launches of any rocket, bases on SpaceLaunchNow API.",
     "issues": [],
-    "stars": 3
+    "stars": 3,
+    "hasGithubIssues": true
   },
   {
     "name": "MMM-SpaceX",
@@ -10366,7 +10318,8 @@
     "maintainerURL": "",
     "description": "Show the previous and upcoming launches of SpaceX rockets.",
     "issues": [],
-    "stars": 10
+    "stars": 10,
+    "hasGithubIssues": true
   },
   {
     "name": "MMM-Speedway",
@@ -10387,6 +10340,28 @@
     "description": "Spotify Controller - with device and account switch buttons, easy volume change via touch and much more.",
     "issues": [],
     "stars": 60
+  },
+  {
+    "name": "EXT-Spotify",
+    "url": "https://github.com/bugsounet/EXT-Spotify",
+    "id": "bugsounet/EXT-Spotify",
+    "maintainer": "bugsounet",
+    "maintainerURL": "https://wiki.bugsounet.fr",
+    "description": "This plugin show current spotify playback of any devices.",
+    "issues": [],
+    "stars": 2,
+    "hasGithubIssues": false
+  },
+  {
+    "name": "EXT-SpotifyCanvasLyrics",
+    "url": "https://github.com/bugsounet/EXT-SpotifyCanvasLyrics",
+    "id": "bugsounet/EXT-SpotifyCanvasLyrics",
+    "maintainer": "bugsounet",
+    "maintainerURL": "https://wiki.bugsounet.fr",
+    "description": "Create a server for displaying any Lyrics and Canvas from Spotify.",
+    "issues": [],
+    "stars": 0,
+    "hasGithubIssues": false
   },
   {
     "name": "MMM-SpotifyConnectUI",
@@ -10518,6 +10493,17 @@
     "description": "Display your activity data from <a target=\"_blank\" href=\"https://www.strava.com\">Strava.com</a>.",
     "issues": [],
     "stars": 49
+  },
+  {
+    "name": "EXT-StreamDeck",
+    "url": "https://github.com/bugsounet/EXT-StreamDeck",
+    "id": "bugsounet/EXT-StreamDeck",
+    "maintainer": "bugsounet",
+    "maintainerURL": "https://wiki.bugsounet.fr",
+    "description": "Control your mirror with a StreamDeck by elgato©.",
+    "issues": [],
+    "stars": 0,
+    "hasGithubIssues": false
   },
   {
     "name": "MMM-SugarValue",
@@ -10730,6 +10716,17 @@
     "description": "Display client list of a Teamspeak3 server.",
     "issues": [],
     "stars": 7
+  },
+  {
+    "name": "EXT-TelegramBot",
+    "url": "https://github.com/bugsounet/EXT-TelegramBot",
+    "id": "bugsounet/EXT-TelegramBot",
+    "maintainer": "bugsounet",
+    "maintainerURL": "https://wiki.bugsounet.fr",
+    "description": "You can remote-control plugins within Telegram.",
+    "issues": [],
+    "stars": 1,
+    "hasGithubIssues": false
   },
   {
     "name": "MMM-TelegramCommands",
@@ -11363,6 +11360,17 @@
     "stars": 2
   },
   {
+    "name": "EXT-Updates",
+    "url": "https://github.com/bugsounet/EXT-Updates",
+    "id": "bugsounet/EXT-Updates",
+    "maintainer": "bugsounet",
+    "maintainerURL": "https://wiki.bugsounet.fr",
+    "description": "This plugin allow to auto-update if an update is detected.",
+    "issues": [],
+    "stars": 0,
+    "hasGithubIssues": false
+  },
+  {
     "name": "MMM-uptimekuma",
     "url": "https://github.com/MikeBishop/MMM-uptimekuma",
     "id": "MikeBishop/MMM-uptimekuma",
@@ -11561,6 +11569,17 @@
     "description": "Control volume of MagicMirror².",
     "issues": [],
     "stars": 15
+  },
+  {
+    "name": "EXT-Volume",
+    "url": "https://github.com/bugsounet/EXT-Volume",
+    "id": "bugsounet/EXT-Volume",
+    "maintainer": "bugsounet",
+    "maintainerURL": "https://wiki.bugsounet.fr",
+    "description": "Control the sound volume level of your mirror.",
+    "issues": [],
+    "stars": 2,
+    "hasGithubIssues": false
   },
   {
     "name": "MMM-volumio-playing",
@@ -11854,6 +11873,17 @@
     "description": "Display weekly recurring timetables such as class schedules.",
     "issues": [],
     "stars": 61
+  },
+  {
+    "name": "EXT-Welcome",
+    "url": "https://github.com/bugsounet/EXT-Welcome",
+    "id": "bugsounet/EXT-Welcome",
+    "maintainer": "bugsounet",
+    "maintainerURL": "https://wiki.bugsounet.fr",
+    "description": "Allow to send a welcome on start of MagicMirror².",
+    "issues": [],
+    "stars": 0,
+    "hasGithubIssues": false
   },
   {
     "name": "MMM-WestBerksBinDay",
@@ -12150,6 +12180,17 @@
     "stars": 3
   },
   {
+    "name": "EXT-YouTube",
+    "url": "https://github.com/bugsounet/EXT-YouTube",
+    "id": "bugsounet/EXT-YouTube",
+    "maintainer": "bugsounet",
+    "maintainerURL": "https://wiki.bugsounet.fr",
+    "description": "This plugins allows to play YouTube video.",
+    "issues": [],
+    "stars": 3,
+    "hasGithubIssues": false
+  },
+  {
     "name": "MMM-YouTube-API",
     "url": "https://github.com/C4TFLY/MMM-YouTube-API",
     "id": "C4TFLY/MMM-YouTube-API",
@@ -12168,6 +12209,17 @@
     "description": "A module that checks if a YouTube channel if streaming. If it is, it plays the live stream.",
     "issues": [],
     "stars": 1
+  },
+  {
+    "name": "EXT-YouTubeCast",
+    "url": "https://github.com/bugsounet/EXT-YouTubeCast",
+    "id": "bugsounet/EXT-YouTubeCast",
+    "maintainer": "bugsounet",
+    "maintainerURL": "https://wiki.bugsounet.fr",
+    "description": "Allow to cast a YouTube video on MagicMirror².",
+    "issues": [],
+    "stars": 2,
+    "hasGithubIssues": false
   },
   {
     "name": "MMM-YouTubeWebView",
