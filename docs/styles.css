@@ -450,11 +450,11 @@ main {
   background-color: #f9c376 !important;
 }
 
-[data-tag="smarthome"].tag-button::before {
+[data-tag="smart home"].tag-button::before {
   content: "💡";
 }
 
-[data-tag="smarthome"] {
+[data-tag="smart home"] {
   color: #2c1802 !important;
   background-color: #ef9531 !important;
 }
