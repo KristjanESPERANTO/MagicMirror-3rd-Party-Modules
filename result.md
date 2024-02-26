@@ -1,6 +1,6 @@
 # Result of the module analysis
 
-Last update: 2024-02-25T22:24:44+01:00
+Last update: 2024-02-26T09:57:07+01:00
 
 ## Statistics
 
@@ -8,8 +8,8 @@ Last update: 2024-02-25T22:24:44+01:00
 |:---------------------|:--------:|
 | modules analyzed     |   1126   |
 | maintainer           |    632   |
-| modules with issues  |   1117   |
-| issues               |   7375   |
+| modules with issues  |   1116   |
+| issues               |   7371   |
 | modules at github    |   1114   |
 | modules at gitlab    |     11   |
 | modules at bitbucket |      1   |
@@ -4524,13 +4524,10 @@ Last update: 2024-02-25T22:24:44+01:00
 
 ### [MMM-LocalTransport by CFenner](https://github.com/CFenner/MMM-LocalTransport)
 
-1. There is no `package.json`. We need this file to gather information about the module for the module list page.
-2. Typo: Found `Magic Mirror` in file `MMM-LocalTransport.js`: Replace it with `MagicMirror²`.
-3. Recommendation: Found `new Date()` in file `MMM-LocalTransport.js`: Replace it by `new Date(Date.now())`: [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
-4. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
-5. Deprecated: Found `require('request')` in file `node_helper.js`: Replace it with built-in fetch.
-6. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
-7. The branch name is 'master'. Consider renaming it to 'main'.
+1. Recommendation: Found `new Date()` in file `MMM-LocalTransport.js`: Replace it by `new Date(Date.now())`: [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
+2. Deprecated: Found `require('request')` in file `node_helper.js`: Replace it with built-in fetch.
+3. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
+4. The branch name is 'master'. Consider renaming it to 'main'.
 
 ### [MMM-LocalVideoPlayer by RayTCosgrove](https://github.com/RayTCosgrove/MMM-LocalVideoPlayer)
 
@@ -7557,17 +7554,6 @@ Last update: 2024-02-25T22:24:44+01:00
 
 1. Recommendation: Replace eslintrc by new flat config.
 2. The branch name is 'master'. Consider renaming it to 'main'.
-
-### [MMM-PublicTransportHafas by KristjanESPERANTO](https://github.com/KristjanESPERANTO/MMM-PublicTransportHafas)
-
-1. Information: There are updates for 6 dependencie(s):
-   - @eslint/js                 ^8.56.0  →  ^8.57.0
-   - @stylistic/eslint-plugin    ^1.6.0  →   ^1.6.2
-   - eslint                     ^8.56.0  →  ^8.57.0
-   - globals                   ^13.24.0  →  ^14.0.0
-   - hafas-client                ^6.2.1  →   ^6.2.2
-   - husky                      ^9.0.10  →  ^9.0.11
-
 
 ### [MMM-PublicTransportVVO by ChristianGeie](https://github.com/ChristianGeie/MMM-PublicTransportVVO)
 

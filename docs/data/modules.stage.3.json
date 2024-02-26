@@ -3471,7 +3471,7 @@
     "maintainerURL": "",
     "description": "The easiest way to show pictures on your mirror.",
     "issues": [],
-    "stars": 1,
+    "stars": 4,
     "hasGithubIssues": true,
     "tags": [
       "picture"
@@ -3556,7 +3556,7 @@
     "issues": [
       "No image found."
     ],
-    "stars": 0,
+    "stars": 1,
     "hasGithubIssues": true,
     "tags": [
       "efa",
@@ -3697,9 +3697,7 @@
     "description": "Display live data and cumulative daily totals of energy produced from an Enphase Solar system by reading data from the local Enphase gateway (firmware 7.0+).",
     "issues": [
       "There is no `package.json`. We need this file to gather information about the module for the module list page."
-    ],
-    "stars": 3,
-    "hasGithubIssues": true
+    ]
   },
   {
     "name": "MMM-Entur-tavle",
@@ -7579,11 +7577,14 @@
     "maintainer": "CFenner",
     "maintainerURL": "",
     "description": "Display the next public transport connections for a certain route.",
-    "issues": [
-      "There is no `package.json`. We need this file to gather information about the module for the module list page."
-    ],
+    "issues": [],
     "stars": 40,
-    "hasGithubIssues": true
+    "hasGithubIssues": true,
+    "tags": [
+      "public transport"
+    ],
+    "license": "MIT",
+    "image": ".github-preview-Berlin.jpg"
   },
   {
     "name": "MMM-LocalVideoPlayer",
@@ -12417,7 +12418,8 @@
     "stars": 12,
     "hasGithubIssues": true,
     "tags": [
-      "public transport"
+      "public transport",
+      "hafas"
     ],
     "license": "MIT",
     "image": "img-Goerdelerring_all.jpg"

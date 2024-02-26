@@ -2486,7 +2486,7 @@
     "maintainerURL": "",
     "description": "The easiest way to show pictures on your mirror.",
     "issues": [],
-    "stars": 1,
+    "stars": 4,
     "hasGithubIssues": true
   },
   {
@@ -2541,7 +2541,7 @@
     "maintainerURL": "",
     "description": "Station monitor for local transport companies using the EFA system.",
     "issues": [],
-    "stars": 0,
+    "stars": 1,
     "hasGithubIssues": true
   },
   {
@@ -2628,9 +2628,7 @@
     "maintainer": "matt-thurling",
     "maintainerURL": "",
     "description": "Display live data and cumulative daily totals of energy produced from an Enphase Solar system by reading data from the local Enphase gateway (firmware 7.0+).",
-    "issues": [],
-    "stars": 3,
-    "hasGithubIssues": true
+    "issues": []
   },
   {
     "name": "MMM-Entur-tavle",

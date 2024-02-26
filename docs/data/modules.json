@@ -3521,7 +3521,7 @@
     "maintainerURL": "",
     "description": "The easiest way to show pictures on your mirror.",
     "issues": false,
-    "stars": 1,
+    "stars": 4,
     "hasGithubIssues": true,
     "tags": [
       "picture"
@@ -3612,7 +3612,7 @@
     "maintainerURL": "",
     "description": "Station monitor for local transport companies using the EFA system.",
     "issues": true,
-    "stars": 0,
+    "stars": 1,
     "hasGithubIssues": true,
     "tags": [
       "efa",
@@ -3762,8 +3762,6 @@
     "maintainerURL": "",
     "description": "Display live data and cumulative daily totals of energy produced from an Enphase Solar system by reading data from the local Enphase gateway (firmware 7.0+).",
     "issues": true,
-    "stars": 3,
-    "hasGithubIssues": true,
     "defaultSortWeight": 6,
     "lastCommit": "2023-08-20T13:25:29+10:00"
   },
@@ -7710,8 +7708,13 @@
     "issues": true,
     "stars": 40,
     "hasGithubIssues": true,
-    "defaultSortWeight": 7,
-    "lastCommit": "2022-01-10T17:10:55+01:00"
+    "tags": [
+      "public transport"
+    ],
+    "license": "MIT",
+    "image": ".github-preview-Berlin.jpg",
+    "defaultSortWeight": 4,
+    "lastCommit": "2024-02-26T09:19:18+01:00"
   },
   {
     "name": "MMM-LocalVideoPlayer",
@@ -12571,7 +12574,7 @@
     "license": "MIT",
     "image": "img-MMM-PublicTransport_screenshot.jpg",
     "defaultSortWeight": 2,
-    "lastCommit": "2024-02-18T13:35:05+01:00"
+    "lastCommit": "2024-02-25T23:16:34+01:00"
   },
   {
     "name": "MMM-PublicTransportHafas",
@@ -12580,16 +12583,17 @@
     "maintainer": "KristjanESPERANTO",
     "maintainerURL": "",
     "description": "Displays departure information for public transportation in Germany and some other European countries. The <a target=\"_blank\" href=\"https://github.com/public-transport/hafas-client\">hafas-client</a> is used to query the information. The interface of the Deutsche Bahn is used as standard, this includes most of the local networks with buses, trams, etc. However, <a target=\"_blank\" href=\"https://github.com/public-transport/hafas-client/blob/main/p/readme.md\">other hafas interfaces</a> can also be used.",
-    "issues": true,
+    "issues": false,
     "stars": 12,
     "hasGithubIssues": true,
     "tags": [
-      "public transport"
+      "public transport",
+      "hafas"
     ],
     "license": "MIT",
     "image": "img-Goerdelerring_all.jpg",
-    "defaultSortWeight": 2,
-    "lastCommit": "2024-02-05T23:19:21+01:00"
+    "defaultSortWeight": 1,
+    "lastCommit": "2024-02-25T23:00:34+01:00"
   },
   {
     "name": "MMM-PublicTransportVVO",
