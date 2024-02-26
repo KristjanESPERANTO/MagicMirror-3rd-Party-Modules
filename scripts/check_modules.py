@@ -323,9 +323,10 @@ def check_modules():
             module["defaultSortWeight"] += 1
 
         # Lift modules with many stars in the default sort order.
-        if module.get('stars', 0) >= 50 and module["defaultSortWeight"] > 0:
-            module["defaultSortWeight"] = max(
-                1, module["defaultSortWeight"] - (module['stars'] // 50))
+        if module.get('stars', 0) > 50:
+            module["defaultSortWeight"] = module["defaultSortWeight"] - (module['stars'] // 50)
+        elif module.get('stars', 0) > 10:
+            module["defaultSortWeight"] = module["defaultSortWeight"] - 1
 
         # Lower modules with few stars in the default sort order.
         # if module.get('stars', 0) < 3:
