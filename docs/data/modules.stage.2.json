@@ -2628,7 +2628,9 @@
     "maintainer": "matt-thurling",
     "maintainerURL": "",
     "description": "Display live data and cumulative daily totals of energy produced from an Enphase Solar system by reading data from the local Enphase gateway (firmware 7.0+).",
-    "issues": []
+    "issues": [],
+    "stars": 3,
+    "hasGithubIssues": true
   },
   {
     "name": "MMM-Entur-tavle",
@@ -10327,7 +10329,8 @@
     "maintainerURL": "https://github.com/LukasKlose",
     "description": "Display the tables of the Polish Speedway Leagues (PGE Ekstraliga, I. Liga Żużlowa , II. Liga Żużlowa).",
     "issues": [],
-    "stars": 0
+    "stars": 0,
+    "hasGithubIssues": true
   },
   {
     "name": "MMM-Spotify",
@@ -10337,7 +10340,8 @@
     "maintainerURL": "",
     "description": "Spotify Controller - with device and account switch buttons, easy volume change via touch and much more.",
     "issues": [],
-    "stars": 60
+    "stars": 60,
+    "hasGithubIssues": true
   },
   {
     "name": "EXT-Spotify",
@@ -10369,7 +10373,8 @@
     "maintainerURL": "",
     "description": "Display information from Spotify Connect e.g. cover, artist and track information.",
     "issues": [],
-    "stars": 51
+    "stars": 51,
+    "hasGithubIssues": true
   },
   {
     "name": "MMM-SpotifyHelper",
@@ -10379,7 +10384,8 @@
     "maintainerURL": "",
     "description": "Add events to MMM-Spotify to manage volume and playlists.",
     "issues": [],
-    "stars": 1
+    "stars": 1,
+    "hasGithubIssues": true
   },
   {
     "name": "MMM-SpotifyReleases",
@@ -10389,7 +10395,8 @@
     "maintainerURL": "https://github.com/Ruud14",
     "description": "Displays the latest releases from your favorite spotify artists.",
     "issues": [],
-    "stars": 3
+    "stars": 3,
+    "hasGithubIssues": true
   },
   {
     "name": "MMM-Star-Metro",
@@ -10399,7 +10406,8 @@
     "maintainerURL": "",
     "description": "Display upcoming metros in Rennes (France).",
     "issues": [],
-    "stars": 1
+    "stars": 1,
+    "hasGithubIssues": true
   },
   {
     "name": "MMM-StatusPageIo",
@@ -10409,7 +10417,8 @@
     "maintainerURL": "https://github.com/spydersoft-consulting",
     "description": "Display incidents and component status from a StatusPage.io site.",
     "issues": [],
-    "stars": 0
+    "stars": 1,
+    "hasGithubIssues": true
   },
   {
     "name": "MMM-SteamPlaytime",
@@ -10419,7 +10428,8 @@
     "maintainerURL": "",
     "description": "Displays time spent on games on Steam for a specific user.",
     "issues": [],
-    "stars": 7
+    "stars": 7,
+    "hasGithubIssues": true
   },
   {
     "name": "MMM-stib",
@@ -10430,7 +10440,8 @@
     "description": "Display the next transports for any given STIB (Brussel/Belgium) station.",
     "issues": [],
     "outdated": "Deprecated. API no longer works. Depends on deprecated module. Not recommended installation instructions (globally). Use module <strong>MMM-stib2</strong> instead.",
-    "stars": 4
+    "stars": 4,
+    "hasGithubIssues": true
   },
   {
     "name": "MMM-stib2",
@@ -10440,7 +10451,8 @@
     "maintainerURL": "",
     "description": "STIB waiting times. Re-write of danito's MMM-stib, using the official STIB API and no XML parsing.",
     "issues": [],
-    "stars": 2
+    "stars": 4,
+    "hasGithubIssues": true
   },
   {
     "name": "MMM-Stock",
@@ -10450,7 +10462,8 @@
     "maintainerURL": "",
     "description": "Displays current stock prices of companies using YAHOO FINANCE API.",
     "issues": [],
-    "stars": 15
+    "stars": 15,
+    "hasGithubIssues": true
   },
   {
     "name": "MMM-stoic-quotes",
@@ -10460,7 +10473,8 @@
     "maintainerURL": "",
     "description": "Display a stoic quote at a given interval or time of day.",
     "issues": [],
-    "stars": 1
+    "stars": 1,
+    "hasGithubIssues": true
   },
   {
     "name": "MMM-StopwatchTimer",
@@ -10470,7 +10484,8 @@
     "maintainerURL": "https://github.com/Klettner",
     "description": "Display an alert-style timer or stopwatch. Controllable via notifications or the <a target=\"_blank\" href=\"https://github.com/Klettner/MM-Remote\">MM-Remote</a> android app.",
     "issues": [],
-    "stars": 7
+    "stars": 8,
+    "hasGithubIssues": true
   },
   {
     "name": "MMM-StorH",
@@ -10480,7 +10495,8 @@
     "maintainerURL": "",
     "description": "A shopping list module for users of the StorH app.",
     "issues": [],
-    "stars": 0
+    "stars": 0,
+    "hasGithubIssues": true
   },
   {
     "name": "MMM-Strava",
@@ -10490,7 +10506,8 @@
     "maintainerURL": "",
     "description": "Display your activity data from <a target=\"_blank\" href=\"https://www.strava.com\">Strava.com</a>.",
     "issues": [],
-    "stars": 49
+    "stars": 48,
+    "hasGithubIssues": true
   },
   {
     "name": "EXT-StreamDeck",
@@ -10511,7 +10528,8 @@
     "maintainerURL": "",
     "description": "Displays last reading from your Dexcom G6 via the share API.",
     "issues": [],
-    "stars": 3
+    "stars": 3,
+    "hasGithubIssues": true
   },
   {
     "name": "MMM-SunnyPortal",
@@ -10521,7 +10539,8 @@
     "maintainerURL": "",
     "description": "Display the current, monthly and yearly power output of your SunnyPortal Solar Panels.(<a target=\"_blank\" href=\"https://www.sunnyportal.com\">https://www.sunnyportal.com</a>).",
     "issues": [],
-    "stars": 3
+    "stars": 4,
+    "hasGithubIssues": true
   },
   {
     "name": "MMM-SunRiseSet",
@@ -10532,7 +10551,8 @@
     "description": "More information than you ever wanted to know about the rising and setting of the sun.",
     "issues": [],
     "outdated": "Abandoned. No reactions to issues since years. Missing instructions to install dependency 'request'.",
-    "stars": 16
+    "stars": 16,
+    "hasGithubIssues": true
   },
   {
     "name": "MMM-SweepClock",
@@ -10542,7 +10562,8 @@
     "maintainerURL": "https://github.com/mumblebaj",
     "description": "Display a classic railway clock.",
     "issues": [],
-    "stars": 3
+    "stars": 3,
+    "hasGithubIssues": true
   },
   {
     "name": "MMM-Swipe",
@@ -10552,7 +10573,8 @@
     "maintainerURL": "",
     "description": "Uses 2 HC-SR04 ultrasonic sensors to determing hand position to produce a \"Swipe Left\", \"Swipe Right\", or \"Press\".",
     "issues": [],
-    "stars": 1
+    "stars": 1,
+    "hasGithubIssues": false
   },
   {
     "name": "MMM-SwissCommute",
@@ -10562,7 +10584,8 @@
     "maintainerURL": "",
     "description": "Display the next departures for your favorite (train) connection in Switzerland (SBB).",
     "issues": [],
-    "stars": 8
+    "stars": 8,
+    "hasGithubIssues": true
   },
   {
     "name": "MMM-SwissLakeTemperature",
@@ -10572,7 +10595,8 @@
     "maintainerURL": "https://github.com/roufri",
     "description": "Display the water temperature of a Swiss lake at a given point.",
     "issues": [],
-    "stars": 0
+    "stars": 0,
+    "hasGithubIssues": true
   },
   {
     "name": "MMM-SwissStationboard",
@@ -10582,7 +10606,8 @@
     "maintainerURL": "",
     "description": "Display the next departures in every direction for your favorite trainstation in Switzerland with delay information.",
     "issues": [],
-    "stars": 6
+    "stars": 6,
+    "hasGithubIssues": true
   },
   {
     "name": "MMM-swisstransport",
@@ -10592,7 +10617,8 @@
     "maintainerURL": "",
     "description": "Display train departures from your favourite train station.",
     "issues": [],
-    "stars": 7
+    "stars": 7,
+    "hasGithubIssues": true
   },
   {
     "name": "MMM-synology-ds",
@@ -10602,7 +10628,8 @@
     "maintainerURL": "",
     "description": "Display Synology Download Station tasks.",
     "issues": [],
-    "stars": 15
+    "stars": 15,
+    "hasGithubIssues": true
   },
   {
     "name": "MMM-SynologySurveillance",
@@ -10612,7 +10639,8 @@
     "maintainerURL": "https://github.com/Tom-Hirschberger",
     "description": "Display the video streams of cameras connected to your Synology Disc Stations and control their positions.",
     "issues": [],
-    "stars": 4
+    "stars": 4,
+    "hasGithubIssues": true
   },
   {
     "name": "MMM-syslog",
@@ -10622,7 +10650,8 @@
     "maintainerURL": "",
     "description": "API for sending notifications to your mirror.",
     "issues": [],
-    "stars": 0
+    "stars": 2,
+    "hasGithubIssues": false
   },
   {
     "name": "MMM-SystemMonitor",
@@ -10632,7 +10661,8 @@
     "maintainerURL": "https://github.com/btastic",
     "description": "Shows system stats similar to MMM-SystemStats.",
     "issues": [],
-    "stars": 3
+    "stars": 3,
+    "hasGithubIssues": true
   },
   {
     "name": "MMM-SystemStats",
@@ -10643,7 +10673,8 @@
     "description": "Shows Raspberry Pi system stats like CPU temperature, free Ram, System load, and Uptime.",
     "issues": [],
     "outdated": "Abandoned. Repo has been archived at 2022-09-05.",
-    "stars": 90
+    "stars": 90,
+    "hasGithubIssues": true
   },
   {
     "name": "MMM-Tabulator",

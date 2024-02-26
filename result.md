@@ -1,6 +1,6 @@
 # Result of the module analysis
 
-Last update: 2024-02-26T09:57:07+01:00
+Last update: 2024-02-26T20:13:03+01:00
 
 ## Statistics
 
@@ -9,7 +9,7 @@ Last update: 2024-02-26T09:57:07+01:00
 | modules analyzed     |   1126   |
 | maintainer           |    632   |
 | modules with issues  |   1116   |
-| issues               |   7371   |
+| issues               |   7372   |
 | modules at github    |   1114   |
 | modules at gitlab    |     11   |
 | modules at bitbucket |      1   |
@@ -753,12 +753,14 @@ Last update: 2024-02-26T09:57:07+01:00
 ### [MMM-BoschSmartHome by jalibu](https://github.com/jalibu/MMM-BoschSmartHome)
 
 1. Recommendation: Replace eslintrc by new flat config.
-2. Information: There are updates for 5 dependencie(s):
-   - @types/express              ^4.17.11  →   ^4.17.21
-   - @types/magicmirror-module    ^2.16.0  →    ^2.16.5
-   - @types/node                ^14.14.22  →  ^20.11.20
-   - rollup                        ^4.9.6  →    ^4.12.0
-   - rxjs                          ^7.5.5  →     ^7.8.1
+2. Information: There are updates for 7 dependencie(s):
+   - @types/express                     ^4.17.11  →   ^4.17.21
+   - @types/magicmirror-module           ^2.16.0  →    ^2.16.5
+   - @types/node                       ^14.14.22  →  ^20.11.20
+   - @typescript-eslint/eslint-plugin     ^7.0.2  →     ^7.1.0
+   - @typescript-eslint/parser            ^7.0.2  →     ^7.1.0
+   - rollup                               ^4.9.6  →    ^4.12.0
+   - rxjs                                 ^7.5.5  →     ^7.8.1
 
 
 ### [MMM-Bose-Soundtouch by spoturdeal](https://github.com/spoturdeal/MMM-Bose-Soundtouch)
@@ -4662,15 +4664,14 @@ Last update: 2024-02-26T09:57:07+01:00
 
 ### [MMM-Luxembourg-Public-Transport by MarinescuEvghenii](https://github.com/MarinescuEvghenii/MMM-Luxembourg-Public-Transport)
 
-1. There is no `package.json`. We need this file to gather information about the module for the module list page.
-2. Typo: Found `Magic Mirror` in file `MMM-Luxembourg-Public-Transport.js`: Replace it with `MagicMirror²`.
-3. Recommendation: Found `new Date()` in file `MMM-Luxembourg-Public-Transport.js`: Replace it by `new Date(Date.now())`: [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
-4. Outdated: Found `MichMich/MagicMirror` in file `README.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
-5. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
-6. Recommendation: Found `require('https')` in file `node_helper.js`: Replace 'https' by 'node:https'.
-7. Warning: No LICENSE file.
-8. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
-9. The branch name is 'master'. Consider renaming it to 'main'.
+1. Typo: Found `Magic Mirror` in file `MMM-Luxembourg-Public-Transport.js`: Replace it with `MagicMirror²`.
+2. Recommendation: Found `new Date()` in file `MMM-Luxembourg-Public-Transport.js`: Replace it by `new Date(Date.now())`: [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
+3. Outdated: Found `MichMich/MagicMirror` in file `README.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
+4. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
+5. Recommendation: Found `require('https')` in file `node_helper.js`: Replace 'https' by 'node:https'.
+6. Warning: No LICENSE file.
+7. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
+8. The branch name is 'master'. Consider renaming it to 'main'.
 
 ### [MMM-lyft by kyle-kelly](https://github.com/kyle-kelly/MMM-lyft)
 
@@ -9104,19 +9105,20 @@ Last update: 2024-02-26T09:57:07+01:00
 
 ### [MMM-Swipe by Simon089](https://github.com/Simon089/MMM-Swipe)
 
-1. No image found.
-2. Typo: Found `Magic Mirror` in file `MMM-Swipe.js`: Replace it with `MagicMirror²`.
-3. Outdated: Found `MichMich/MagicMirror` in file `README.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
-4. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
-5. Recommendation: Found `jshint` in file `node_helper.js`: Replace "jshint" by "eslint".
-6. Typo: Found `Magic Mirror` in file `package.json`: Replace it with `MagicMirror²`.
-7. Deprecated: Found `"electron-rebuild"` in file `package.json`: Replace it with `@electron/rebuild`
-8. Recommendation: Found `jshint` in file `testingOnOff.js`: Replace "jshint" by "eslint".
-9. Recommendation: Found `jshint` in file `testingOnOff2Sensor.js`: Replace "jshint" by "eslint".
-10. Recommendation: Found `jshint` in file `testingPigpio2sensor.js`: Replace "jshint" by "eslint".
-11. Warning: No LICENSE file.
-12. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
-13. The branch name is 'master'. Consider renaming it to 'main'.
+1. Issues are not enabled in the GitHub repository. So users cannot report bugs. Please enable issues in your repo.
+2. No image found.
+3. Typo: Found `Magic Mirror` in file `MMM-Swipe.js`: Replace it with `MagicMirror²`.
+4. Outdated: Found `MichMich/MagicMirror` in file `README.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
+5. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
+6. Recommendation: Found `jshint` in file `node_helper.js`: Replace "jshint" by "eslint".
+7. Typo: Found `Magic Mirror` in file `package.json`: Replace it with `MagicMirror²`.
+8. Deprecated: Found `"electron-rebuild"` in file `package.json`: Replace it with `@electron/rebuild`
+9. Recommendation: Found `jshint` in file `testingOnOff.js`: Replace "jshint" by "eslint".
+10. Recommendation: Found `jshint` in file `testingOnOff2Sensor.js`: Replace "jshint" by "eslint".
+11. Recommendation: Found `jshint` in file `testingPigpio2sensor.js`: Replace "jshint" by "eslint".
+12. Warning: No LICENSE file.
+13. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
+14. The branch name is 'master'. Consider renaming it to 'main'.
 
 ### [MMM-SwissCommute by nixnuex](https://github.com/nixnuex/MMM-SwissCommute)
 
@@ -9176,14 +9178,15 @@ Last update: 2024-02-26T09:57:07+01:00
 ### [MMM-syslog by marcinomen](https://github.com/marcinomen/MMM-syslog)
 
 1. There is no `package.json`. We need this file to gather information about the module for the module list page.
-2. Typo: Found `Magic Mirror` in file `MMM-syslog.js`: Replace it with `MagicMirror²`.
-3. Typo: Found `<sup>2</sup>` in file `README.md`: Replace it with `²`.`.
-4. Outdated: Found `MichMich/MagicMirror` in file `README.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
-5. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
-6. Recommendation: Found `new Date()` in file `node_helper.js`: Replace it by `new Date(Date.now())`: [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
-7. Warning: No LICENSE file.
-8. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
-9. The branch name is 'master'. Consider renaming it to 'main'.
+2. Issues are not enabled in the GitHub repository. So users cannot report bugs. Please enable issues in your repo.
+3. Typo: Found `Magic Mirror` in file `MMM-syslog.js`: Replace it with `MagicMirror²`.
+4. Typo: Found `<sup>2</sup>` in file `README.md`: Replace it with `²`.`.
+5. Outdated: Found `MichMich/MagicMirror` in file `README.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
+6. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
+7. Recommendation: Found `new Date()` in file `node_helper.js`: Replace it by `new Date(Date.now())`: [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
+8. Warning: No LICENSE file.
+9. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
+10. The branch name is 'master'. Consider renaming it to 'main'.
 
 ### [MMM-SystemMonitor by btastic](https://github.com/btastic/MMM-SystemMonitor)
 

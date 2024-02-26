@@ -3697,7 +3697,9 @@
     "description": "Display live data and cumulative daily totals of energy produced from an Enphase Solar system by reading data from the local Enphase gateway (firmware 7.0+).",
     "issues": [
       "There is no `package.json`. We need this file to gather information about the module for the module list page."
-    ]
+    ],
+    "stars": 3,
+    "hasGithubIssues": true
   },
   {
     "name": "MMM-Entur-tavle",
@@ -7804,11 +7806,15 @@
     "maintainer": "MarinescuEvghenii",
     "maintainerURL": "",
     "description": "Luxembourg public transport departures in real time.",
-    "issues": [
-      "There is no `package.json`. We need this file to gather information about the module for the module list page."
-    ],
+    "issues": [],
     "stars": 5,
-    "hasGithubIssues": true
+    "hasGithubIssues": true,
+    "tags": [
+      "luxembourg",
+      "public transport"
+    ],
+    "license": "MIT",
+    "image": ".github-example.jpg"
   },
   {
     "name": "MMM-lyft",
@@ -14651,7 +14657,8 @@
       "`package.json` issue: No license field.",
       "There are no keywords in 'package.json'. We would use them as tags on the module list page."
     ],
-    "stars": 0
+    "stars": 0,
+    "hasGithubIssues": true
   },
   {
     "name": "MMM-Spotify",
@@ -14662,6 +14669,7 @@
     "description": "Spotify Controller - with device and account switch buttons, easy volume change via touch and much more.",
     "issues": [],
     "stars": 60,
+    "hasGithubIssues": true,
     "tags": [
       "spotify",
       "music"
@@ -14713,7 +14721,8 @@
     "issues": [
       "There is no `package.json`. We need this file to gather information about the module for the module list page."
     ],
-    "stars": 51
+    "stars": 51,
+    "hasGithubIssues": true
   },
   {
     "name": "MMM-SpotifyHelper",
@@ -14725,7 +14734,8 @@
     "issues": [
       "There is no `package.json`. We need this file to gather information about the module for the module list page."
     ],
-    "stars": 1
+    "stars": 1,
+    "hasGithubIssues": true
   },
   {
     "name": "MMM-SpotifyReleases",
@@ -14738,6 +14748,7 @@
       "No image found."
     ],
     "stars": 3,
+    "hasGithubIssues": true,
     "tags": [
       "spotify"
     ],
@@ -14753,7 +14764,8 @@
     "issues": [
       "There is no `package.json`. We need this file to gather information about the module for the module list page."
     ],
-    "stars": 1
+    "stars": 1,
+    "hasGithubIssues": true
   },
   {
     "name": "MMM-StatusPageIo",
@@ -14763,7 +14775,8 @@
     "maintainerURL": "https://github.com/spydersoft-consulting",
     "description": "Display incidents and component status from a StatusPage.io site.",
     "issues": [],
-    "stars": 0,
+    "stars": 1,
+    "hasGithubIssues": true,
     "tags": [
       "scheduler"
     ],
@@ -14781,6 +14794,7 @@
       "There are no keywords in 'package.json'. We would use them as tags on the module list page."
     ],
     "stars": 7,
+    "hasGithubIssues": true,
     "license": "MIT",
     "image": "screenshot.jpg"
   },
@@ -14795,7 +14809,8 @@
       "There is no `package.json`. We need this file to gather information about the module for the module list page."
     ],
     "outdated": "Deprecated. API no longer works. Depends on deprecated module. Not recommended installation instructions (globally). Use module <strong>MMM-stib2</strong> instead.",
-    "stars": 4
+    "stars": 4,
+    "hasGithubIssues": true
   },
   {
     "name": "MMM-stib2",
@@ -14805,7 +14820,8 @@
     "maintainerURL": "",
     "description": "STIB waiting times. Re-write of danito's MMM-stib, using the official STIB API and no XML parsing.",
     "issues": [],
-    "stars": 2,
+    "stars": 4,
+    "hasGithubIssues": true,
     "tags": [
       "stib",
       "brussels",
@@ -14824,7 +14840,8 @@
     "issues": [
       "There is no `package.json`. We need this file to gather information about the module for the module list page."
     ],
-    "stars": 15
+    "stars": 15,
+    "hasGithubIssues": true
   },
   {
     "name": "MMM-stoic-quotes",
@@ -14835,6 +14852,7 @@
     "description": "Display a stoic quote at a given interval or time of day.",
     "issues": [],
     "stars": 1,
+    "hasGithubIssues": true,
     "tags": [
       "quotes",
       "quote"
@@ -14850,7 +14868,8 @@
     "maintainerURL": "https://github.com/Klettner",
     "description": "Display an alert-style timer or stopwatch. Controllable via notifications or the <a target=\"_blank\" href=\"https://github.com/Klettner/MM-Remote\">MM-Remote</a> android app.",
     "issues": [],
-    "stars": 7,
+    "stars": 8,
+    "hasGithubIssues": true,
     "tags": [
       "timer"
     ],
@@ -14869,6 +14888,7 @@
       "There are no keywords in 'package.json'. We would use them as tags on the module list page."
     ],
     "stars": 0,
+    "hasGithubIssues": true,
     "license": "MIT",
     "image": "images-image.jpg"
   },
@@ -14880,7 +14900,8 @@
     "maintainerURL": "",
     "description": "Display your activity data from <a target=\"_blank\" href=\"https://www.strava.com\">Strava.com</a>.",
     "issues": [],
-    "stars": 49,
+    "stars": 48,
+    "hasGithubIssues": true,
     "tags": [
       "strava"
     ],
@@ -14911,6 +14932,7 @@
     "description": "Displays last reading from your Dexcom G6 via the share API.",
     "issues": [],
     "stars": 3,
+    "hasGithubIssues": true,
     "tags": [
       "dexcom"
     ],
@@ -14927,7 +14949,8 @@
     "issues": [
       "There are no specific keywords in 'package.json'. We would use them as tags on the module list page. Add a few meaningful terms to the keywords in the package.json. Not just “magicmirror” or “module”."
     ],
-    "stars": 3,
+    "stars": 4,
+    "hasGithubIssues": true,
     "license": "MIT",
     "image": "images-SunnyPortal1.jpg"
   },
@@ -14942,7 +14965,8 @@
       "There is no `package.json`. We need this file to gather information about the module for the module list page."
     ],
     "outdated": "Abandoned. No reactions to issues since years. Missing instructions to install dependency 'request'.",
-    "stars": 16
+    "stars": 16,
+    "hasGithubIssues": true
   },
   {
     "name": "MMM-SweepClock",
@@ -14953,6 +14977,7 @@
     "description": "Display a classic railway clock.",
     "issues": [],
     "stars": 3,
+    "hasGithubIssues": true,
     "tags": [
       "clock",
       "sweepclock",
@@ -14969,9 +14994,11 @@
     "maintainerURL": "",
     "description": "Uses 2 HC-SR04 ultrasonic sensors to determing hand position to produce a \"Swipe Left\", \"Swipe Right\", or \"Press\".",
     "issues": [
+      "Issues are not enabled in the GitHub repository. So users cannot report bugs. Please enable issues in your repo.",
       "No image found."
     ],
     "stars": 1,
+    "hasGithubIssues": false,
     "tags": [
       "hand gestures",
       "swipe",
@@ -14992,6 +15019,7 @@
       "No image found."
     ],
     "stars": 8,
+    "hasGithubIssues": true,
     "license": "MIT"
   },
   {
@@ -15004,7 +15032,8 @@
     "issues": [
       "There is no `package.json`. We need this file to gather information about the module for the module list page."
     ],
-    "stars": 0
+    "stars": 0,
+    "hasGithubIssues": true
   },
   {
     "name": "MMM-SwissStationboard",
@@ -15018,6 +15047,7 @@
       "There are no keywords in 'package.json'. We would use them as tags on the module list page."
     ],
     "stars": 6,
+    "hasGithubIssues": true,
     "license": "MIT",
     "image": "Stationboard.jpg"
   },
@@ -15031,7 +15061,8 @@
     "issues": [
       "There is no `package.json`. We need this file to gather information about the module for the module list page."
     ],
-    "stars": 7
+    "stars": 7,
+    "hasGithubIssues": true
   },
   {
     "name": "MMM-synology-ds",
@@ -15044,6 +15075,7 @@
       "No image found."
     ],
     "stars": 15,
+    "hasGithubIssues": true,
     "tags": [
       "synology",
       "download satation"
@@ -15059,6 +15091,7 @@
     "description": "Display the video streams of cameras connected to your Synology Disc Stations and control their positions.",
     "issues": [],
     "stars": 4,
+    "hasGithubIssues": true,
     "tags": [
       "synology",
       "surveillancestation",
@@ -15078,9 +15111,11 @@
     "maintainerURL": "",
     "description": "API for sending notifications to your mirror.",
     "issues": [
-      "There is no `package.json`. We need this file to gather information about the module for the module list page."
+      "There is no `package.json`. We need this file to gather information about the module for the module list page.",
+      "Issues are not enabled in the GitHub repository. So users cannot report bugs. Please enable issues in your repo."
     ],
-    "stars": 0
+    "stars": 2,
+    "hasGithubIssues": false
   },
   {
     "name": "MMM-SystemMonitor",
@@ -15091,6 +15126,7 @@
     "description": "Shows system stats similar to MMM-SystemStats.",
     "issues": [],
     "stars": 3,
+    "hasGithubIssues": true,
     "tags": [
       "systemmonitor"
     ],
@@ -15107,6 +15143,7 @@
     "issues": [],
     "outdated": "Abandoned. Repo has been archived at 2022-09-05.",
     "stars": 90,
+    "hasGithubIssues": true,
     "tags": [
       "cpu temperature",
       "system load"
