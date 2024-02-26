@@ -54,7 +54,7 @@
   },
   "ntl": {
     "descriptions": {
-      "all": "Run all scripts (1 till 4) on all modules. Requires a lot of time and storage space!",
+      "all": "Run all scripts (1 till 5) on all modules. Requires a lot of time and storage space!",
       "createModuleList": "Script 1: Convert the official module list from the wiki into a json file.",
       "updateGitHubData": "Script 2: Update the JSON file that collects the GitHub information of the modules.",
       "getModules": "Script 3: Get all modules with `git cone`. Requires a lot of time and storage space!",
