@@ -1,6 +1,6 @@
 # Result of the module analysis
 
-Last update: 2024-02-26T20:13:03+01:00
+Last update: 2024-02-27T21:11:04+01:00
 
 ## Statistics
 
@@ -9,7 +9,7 @@ Last update: 2024-02-26T20:13:03+01:00
 | modules analyzed     |   1126   |
 | maintainer           |    632   |
 | modules with issues  |   1116   |
-| issues               |   7372   |
+| issues               |   7371   |
 | modules at github    |   1114   |
 | modules at gitlab    |     11   |
 | modules at bitbucket |      1   |
@@ -4311,11 +4311,10 @@ Last update: 2024-02-26T20:13:03+01:00
 
 ### [MMM-kudos by thomo](https://github.com/thomo/MMM-kudos)
 
-1. No image found.
-2. Typo: Found `Magic Mirror` in file `MMM-kudos.js`: Replace it with `MagicMirror²`.
-3. Outdated: Found `MichMich/MagicMirror` in file `README.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
-4. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
-5. The branch name is 'master'. Consider renaming it to 'main'.
+1. Typo: Found `Magic Mirror` in file `MMM-kudos.js`: Replace it with `MagicMirror²`.
+2. Outdated: Found `MichMich/MagicMirror` in file `README.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
+3. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
+4. The branch name is 'master'. Consider renaming it to 'main'.
 
 ### [MMM-KVV by yo-less](https://github.com/yo-less/MMM-KVV)
 
@@ -7092,12 +7091,12 @@ Last update: 2024-02-26T20:13:03+01:00
 
 ### [MMM-pihole-stats by sheyabernstein](https://github.com/sheyabernstein/MMM-pihole-stats)
 
-1. There is no `package.json`. We need this file to gather information about the module for the module list page.
-2. Recommendation: Found `uses: actions/checkout@v2` in file `format-code.yml`: Replace it with v4.
-3. Typo: Found `Magic Mirror` in file `MMM-pihole-stats.js`: Replace it with `MagicMirror²`.
-4. Typo: Found `<sup>2</sup>` in file `README.md`: Replace it with `²`.`.
-5. Outdated: Found `MichMich/MagicMirror` in file `README.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
-6. Recommendation: Found `"node-fetch"` in file `node_helper.js`: Replace it with built-in fetch.
+1. Recommendation: Found `uses: actions/checkout@v2` in file `format-code.yml`: Replace it with v4.
+2. Typo: Found `Magic Mirror` in file `MMM-pihole-stats.js`: Replace it with `MagicMirror²`.
+3. Typo: Found `<sup>2</sup>` in file `README.md`: Replace it with `²`.`.
+4. Outdated: Found `MichMich/MagicMirror` in file `README.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
+5. Deprecated: Found `require("request")` in file `node_helper.js`: Replace it with built-in fetch.
+6. Typo: Found `MagicMirror2` in file `package.json`: Replace it with `MagicMirror²`.
 7. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
 8. The branch name is 'master'. Consider renaming it to 'main'.
 

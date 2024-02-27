@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "2024-02-26T18:36:40.073Z",
+  "lastUpdate": "2024-02-27T20:01:06.737Z",
   "repositories": [
     {
       "id": "rubinho101/MMM-01ZM",
@@ -13345,7 +13345,7 @@
     },
     {
       "id": "E3V3A/MMM-Tabulator",
-      "gitHubDataLastUpdate": "2024-02-02T20:18:15.645Z",
+      "gitHubDataLastUpdate": "2024-02-27T05:57:25.592Z",
       "gitHubData": {
         "issues": 7,
         "stars": 10,
@@ -13353,12 +13353,13 @@
         "archived": false,
         "disabled": false,
         "defaultBranch": "master",
+        "has_issues": true,
         "lastCommit": "2018-03-05T07:37:57Z"
       }
     },
     {
       "id": "WouterEekhout/MMM-Tado",
-      "gitHubDataLastUpdate": "2024-02-02T20:18:16.284Z",
+      "gitHubDataLastUpdate": "2024-02-27T05:57:26.173Z",
       "gitHubData": {
         "issues": 1,
         "stars": 6,
@@ -13366,12 +13367,13 @@
         "archived": false,
         "disabled": false,
         "defaultBranch": "master",
+        "has_issues": true,
         "lastCommit": "2021-09-13T12:05:05Z"
       }
     },
     {
       "id": "imperian/MMM-TAF",
-      "gitHubDataLastUpdate": "2024-02-02T20:18:16.840Z",
+      "gitHubDataLastUpdate": "2024-02-27T05:57:26.636Z",
       "gitHubData": {
         "issues": 4,
         "stars": 1,
@@ -13379,12 +13381,13 @@
         "archived": false,
         "disabled": false,
         "defaultBranch": "master",
+        "has_issues": true,
         "lastCommit": "2022-02-20T18:56:28Z"
       }
     },
     {
       "id": "sejka/MMM-TakeAndDrive",
-      "gitHubDataLastUpdate": "2024-02-02T20:18:17.377Z",
+      "gitHubDataLastUpdate": "2024-02-27T05:57:27.184Z",
       "gitHubData": {
         "issues": 0,
         "stars": 0,
@@ -13392,12 +13395,13 @@
         "archived": false,
         "disabled": false,
         "defaultBranch": "main",
+        "has_issues": true,
         "lastCommit": "2021-12-02T23:37:26Z"
       }
     },
     {
       "id": "wiesty/MMM-Tankerkoenig",
-      "gitHubDataLastUpdate": "2024-02-02T20:18:18.183Z",
+      "gitHubDataLastUpdate": "2024-02-27T05:57:27.704Z",
       "gitHubData": {
         "issues": 0,
         "stars": 6,
@@ -13405,12 +13409,13 @@
         "archived": false,
         "disabled": false,
         "defaultBranch": "main",
+        "has_issues": true,
         "lastCommit": "2023-11-03T16:59:11Z"
       }
     },
     {
       "id": "derekn/MMM-TautulliActivity",
-      "gitHubDataLastUpdate": "2024-02-02T20:18:18.843Z",
+      "gitHubDataLastUpdate": "2024-02-27T05:57:28.214Z",
       "gitHubData": {
         "issues": 0,
         "stars": 10,
@@ -13418,12 +13423,13 @@
         "archived": false,
         "disabled": false,
         "defaultBranch": "master",
+        "has_issues": true,
         "lastCommit": "2023-10-18T16:19:58Z"
       }
     },
     {
       "id": "Thlb/MMM-teamspeak3",
-      "gitHubDataLastUpdate": "2024-02-02T20:18:19.613Z",
+      "gitHubDataLastUpdate": "2024-02-27T05:57:28.649Z",
       "gitHubData": {
         "issues": 2,
         "stars": 7,
@@ -13431,6 +13437,7 @@
         "archived": false,
         "disabled": false,
         "defaultBranch": "master",
+        "has_issues": true,
         "lastCommit": "2017-04-12T23:45:58Z"
       }
     },
@@ -13450,7 +13457,7 @@
     },
     {
       "id": "doctorfree/MMM-TelegramCommands",
-      "gitHubDataLastUpdate": "2024-02-02T20:18:20.474Z",
+      "gitHubDataLastUpdate": "2024-02-27T05:57:29.138Z",
       "gitHubData": {
         "issues": 0,
         "stars": 3,
@@ -13458,12 +13465,13 @@
         "archived": false,
         "disabled": false,
         "defaultBranch": "master",
+        "has_issues": true,
         "lastCommit": "2022-03-19T18:46:12Z"
       }
     },
     {
       "id": "Thlb/MMM-temp-ds18b20",
-      "gitHubDataLastUpdate": "2024-02-02T20:18:21.042Z",
+      "gitHubDataLastUpdate": "2024-02-27T05:57:29.542Z",
       "gitHubData": {
         "issues": 3,
         "stars": 18,
@@ -13471,12 +13479,13 @@
         "archived": false,
         "disabled": false,
         "defaultBranch": "master",
+        "has_issues": true,
         "lastCommit": "2017-04-13T00:10:05Z"
       }
     },
     {
       "id": "Tom-Hirschberger/MMM-Temperature",
-      "gitHubDataLastUpdate": "2024-02-02T20:18:21.480Z",
+      "gitHubDataLastUpdate": "2024-02-27T05:57:29.957Z",
       "gitHubData": {
         "issues": 0,
         "stars": 4,
@@ -13484,12 +13493,13 @@
         "archived": false,
         "disabled": false,
         "defaultBranch": "master",
+        "has_issues": true,
         "lastCommit": "2023-11-24T18:34:16Z"
       }
     },
     {
       "id": "mattdy/MMM-Tesla",
-      "gitHubDataLastUpdate": "2024-02-02T20:18:22.381Z",
+      "gitHubDataLastUpdate": "2024-02-27T05:57:30.445Z",
       "gitHubData": {
         "issues": 4,
         "stars": 4,
@@ -13497,12 +13507,13 @@
         "archived": false,
         "disabled": false,
         "defaultBranch": "master",
+        "has_issues": true,
         "lastCommit": "2023-02-27T10:29:46Z"
       }
     },
     {
       "id": "usncahill/MMM-Tesla3",
-      "gitHubDataLastUpdate": "2024-02-02T20:18:23.240Z",
+      "gitHubDataLastUpdate": "2024-02-27T05:57:31.084Z",
       "gitHubData": {
         "issues": 2,
         "stars": 2,
@@ -13510,12 +13521,13 @@
         "archived": false,
         "disabled": false,
         "defaultBranch": "master",
+        "has_issues": true,
         "lastCommit": "2023-11-18T21:40:20Z"
       }
     },
     {
       "id": "spitzlbergerj/MMM-TeslaLogger",
-      "gitHubDataLastUpdate": "2024-02-02T20:18:23.859Z",
+      "gitHubDataLastUpdate": "2024-02-27T05:57:31.534Z",
       "gitHubData": {
         "issues": 5,
         "stars": 5,
@@ -13523,12 +13535,13 @@
         "archived": false,
         "disabled": false,
         "defaultBranch": "master",
+        "has_issues": true,
         "lastCommit": "2022-03-26T14:09:49Z"
       }
     },
     {
       "id": "denverquane/MMM-Teslamate",
-      "gitHubDataLastUpdate": "2024-02-02T20:18:24.879Z",
+      "gitHubDataLastUpdate": "2024-02-27T05:57:32.007Z",
       "gitHubData": {
         "issues": 6,
         "stars": 50,
@@ -13536,12 +13549,13 @@
         "archived": false,
         "disabled": false,
         "defaultBranch": "master",
+        "has_issues": true,
         "lastCommit": "2023-02-04T19:33:44Z"
       }
     },
     {
       "id": "aduyng/MMM-TeslaStatus",
-      "gitHubDataLastUpdate": "2024-02-02T20:18:25.859Z",
+      "gitHubDataLastUpdate": "2024-02-27T05:57:32.447Z",
       "gitHubData": {
         "issues": 0,
         "stars": 1,
@@ -13549,25 +13563,27 @@
         "archived": false,
         "disabled": false,
         "defaultBranch": "master",
+        "has_issues": true,
         "lastCommit": "2019-06-20T05:12:34Z"
       }
     },
     {
       "id": "ngnijland/MMM-text-clock",
-      "gitHubDataLastUpdate": "2024-02-02T20:18:26.774Z",
+      "gitHubDataLastUpdate": "2024-02-27T05:57:32.877Z",
       "gitHubData": {
-        "issues": 8,
+        "issues": 9,
         "stars": 10,
         "license": "MIT",
         "archived": false,
         "disabled": false,
         "defaultBranch": "master",
+        "has_issues": true,
         "lastCommit": "2023-12-14T22:21:40Z"
       }
     },
     {
       "id": "retroflex/MMM-TextPerWeek",
-      "gitHubDataLastUpdate": "2024-02-02T20:18:27.627Z",
+      "gitHubDataLastUpdate": "2024-02-27T05:57:33.422Z",
       "gitHubData": {
         "issues": 0,
         "stars": 1,
@@ -13575,12 +13591,13 @@
         "archived": false,
         "disabled": false,
         "defaultBranch": "master",
+        "has_issues": true,
         "lastCommit": "2020-02-10T12:59:01Z"
       }
     },
     {
       "id": "ryck/MMM-TFL-Arrivals",
-      "gitHubDataLastUpdate": "2024-02-02T20:18:28.419Z",
+      "gitHubDataLastUpdate": "2024-02-27T05:57:33.840Z",
       "gitHubData": {
         "issues": 1,
         "stars": 4,
@@ -13588,12 +13605,13 @@
         "archived": false,
         "disabled": false,
         "defaultBranch": "master",
+        "has_issues": true,
         "lastCommit": "2022-04-25T11:39:55Z"
       }
     },
     {
       "id": "emanuele-albini/MMM-TFL-Status",
-      "gitHubDataLastUpdate": "2024-02-02T20:18:29.129Z",
+      "gitHubDataLastUpdate": "2024-02-27T05:57:34.362Z",
       "gitHubData": {
         "issues": 0,
         "stars": 6,
@@ -13601,12 +13619,13 @@
         "archived": false,
         "disabled": false,
         "defaultBranch": "master",
+        "has_issues": true,
         "lastCommit": "2023-09-30T13:04:49Z"
       }
     },
     {
       "id": "vita10gy/MMM-ThemeParkWaitTimes",
-      "gitHubDataLastUpdate": "2024-02-10T14:01:52.899Z",
+      "gitHubDataLastUpdate": "2024-02-27T05:57:34.872Z",
       "gitHubData": {
         "issues": 0,
         "stars": 1,
@@ -13620,7 +13639,7 @@
     },
     {
       "id": "appdevelopmentandsuch/MMM-Thingiverse",
-      "gitHubDataLastUpdate": "2024-02-02T20:18:30.050Z",
+      "gitHubDataLastUpdate": "2024-02-27T05:57:35.314Z",
       "gitHubData": {
         "issues": 0,
         "stars": 2,
@@ -13628,25 +13647,27 @@
         "archived": false,
         "disabled": false,
         "defaultBranch": "main",
+        "has_issues": true,
         "lastCommit": "2021-08-05T00:55:03Z"
       }
     },
     {
       "id": "ottopaulsen/MMM-Tibber",
-      "gitHubDataLastUpdate": "2024-02-02T20:18:30.767Z",
+      "gitHubDataLastUpdate": "2024-02-27T05:57:35.729Z",
       "gitHubData": {
-        "issues": 10,
+        "issues": 9,
         "stars": 31,
         "license": "MIT",
         "archived": false,
         "disabled": false,
         "defaultBranch": "master",
-        "lastCommit": "2024-01-21T14:46:40Z"
+        "has_issues": true,
+        "lastCommit": "2024-02-17T14:47:36Z"
       }
     },
     {
       "id": "zhouxichun/MMM-TiHimawari8Earth",
-      "gitHubDataLastUpdate": "2024-02-02T20:18:31.697Z",
+      "gitHubDataLastUpdate": "2024-02-27T05:57:36.213Z",
       "gitHubData": {
         "issues": 0,
         "stars": 1,
@@ -13654,25 +13675,27 @@
         "archived": false,
         "disabled": false,
         "defaultBranch": "main",
+        "has_issues": true,
         "lastCommit": "2023-09-21T11:43:32Z"
       }
     },
     {
       "id": "tderflinger/MMM-Timetagger",
-      "gitHubDataLastUpdate": "2024-02-02T20:18:32.313Z",
+      "gitHubDataLastUpdate": "2024-02-27T05:57:36.767Z",
       "gitHubData": {
         "issues": 0,
-        "stars": 2,
+        "stars": 3,
         "license": null,
         "archived": false,
         "disabled": false,
         "defaultBranch": "main",
+        "has_issues": true,
         "lastCommit": "2022-11-24T08:29:05Z"
       }
     },
     {
       "id": "sabo10o29/MMM-TimeTreeEvent",
-      "gitHubDataLastUpdate": "2024-02-02T20:18:32.921Z",
+      "gitHubDataLastUpdate": "2024-02-27T05:57:37.221Z",
       "gitHubData": {
         "issues": 8,
         "stars": 5,
@@ -13680,12 +13703,13 @@
         "archived": false,
         "disabled": false,
         "defaultBranch": "master",
+        "has_issues": true,
         "lastCommit": "2022-10-27T08:07:29Z"
       }
     },
     {
       "id": "evanhsu/MMM-TitanSchoolMealMenu",
-      "gitHubDataLastUpdate": "2024-02-02T20:18:33.530Z",
+      "gitHubDataLastUpdate": "2024-02-27T05:57:37.697Z",
       "gitHubData": {
         "issues": 1,
         "stars": 6,
@@ -13693,25 +13717,27 @@
         "archived": false,
         "disabled": false,
         "defaultBranch": "main",
+        "has_issues": true,
         "lastCommit": "2023-10-10T04:50:56Z"
       }
     },
     {
       "id": "jaumebosch/MMM-TMB",
-      "gitHubDataLastUpdate": "2024-02-02T20:18:34.279Z",
+      "gitHubDataLastUpdate": "2024-02-27T05:57:38.216Z",
       "gitHubData": {
-        "issues": 0,
-        "stars": 2,
+        "issues": 1,
+        "stars": 3,
         "license": "MIT",
         "archived": false,
         "disabled": false,
         "defaultBranch": "master",
+        "has_issues": true,
         "lastCommit": "2024-01-09T18:40:23Z"
       }
     },
     {
       "id": "JulienPeloton/MMM-tns",
-      "gitHubDataLastUpdate": "2024-02-02T20:18:34.976Z",
+      "gitHubDataLastUpdate": "2024-02-27T05:57:38.711Z",
       "gitHubData": {
         "issues": 0,
         "stars": 1,
@@ -13719,25 +13745,27 @@
         "archived": false,
         "disabled": false,
         "defaultBranch": "master",
+        "has_issues": true,
         "lastCommit": "2019-12-31T14:43:29Z"
       }
     },
     {
       "id": "cbrooker/MMM-Todoist",
-      "gitHubDataLastUpdate": "2024-02-02T20:20:33.332Z",
+      "gitHubDataLastUpdate": "2024-02-27T05:57:39.161Z",
       "gitHubData": {
-        "issues": 30,
-        "stars": 145,
+        "issues": 31,
+        "stars": 146,
         "license": "MIT",
         "archived": false,
         "disabled": false,
         "defaultBranch": "master",
-        "lastCommit": "2023-03-22T20:15:09Z"
+        "has_issues": true,
+        "lastCommit": "2024-02-15T16:30:21Z"
       }
     },
     {
       "id": "teemoo7/MMM-TomTomCalculateRouteTraffic",
-      "gitHubDataLastUpdate": "2024-02-02T20:20:33.902Z",
+      "gitHubDataLastUpdate": "2024-02-27T05:57:39.605Z",
       "gitHubData": {
         "issues": 0,
         "stars": 1,
@@ -13745,38 +13773,41 @@
         "archived": false,
         "disabled": false,
         "defaultBranch": "main",
+        "has_issues": true,
         "lastCommit": "2023-12-14T20:05:48Z"
       }
     },
     {
       "id": "bendardenne/MMM-TomTomTraffic",
-      "gitHubDataLastUpdate": "2024-02-02T20:20:34.415Z",
+      "gitHubDataLastUpdate": "2024-02-27T20:00:52.660Z",
       "gitHubData": {
         "issues": 0,
-        "stars": 11,
+        "stars": 12,
         "license": "MIT",
         "archived": false,
         "disabled": false,
         "defaultBranch": "master",
+        "has_issues": true,
         "lastCommit": "2020-03-20T08:26:00Z"
       }
     },
     {
       "id": "Travelbacon/MMM-TomTomTrafficIncidents",
-      "gitHubDataLastUpdate": "2024-02-02T20:20:34.925Z",
+      "gitHubDataLastUpdate": "2024-02-27T20:00:53.079Z",
       "gitHubData": {
         "issues": 4,
-        "stars": 9,
+        "stars": 10,
         "license": "MIT",
         "archived": false,
         "disabled": false,
         "defaultBranch": "master",
+        "has_issues": true,
         "lastCommit": "2023-04-26T20:03:22Z"
       }
     },
     {
       "id": "MichMich/MMM-Toon",
-      "gitHubDataLastUpdate": "2024-02-02T20:20:35.450Z",
+      "gitHubDataLastUpdate": "2024-02-27T20:00:53.569Z",
       "gitHubData": {
         "issues": 2,
         "stars": 12,
@@ -13784,38 +13815,41 @@
         "archived": false,
         "disabled": false,
         "defaultBranch": "master",
+        "has_issues": true,
         "lastCommit": "2020-05-10T13:08:01Z"
       }
     },
     {
       "id": "gfischershaw/MMM-Touch",
-      "gitHubDataLastUpdate": "2024-02-02T20:20:36.000Z",
+      "gitHubDataLastUpdate": "2024-02-27T20:00:54.011Z",
       "gitHubData": {
         "issues": 5,
-        "stars": 10,
+        "stars": 12,
         "license": "MIT",
         "archived": false,
         "disabled": false,
         "defaultBranch": "master",
+        "has_issues": true,
         "lastCommit": "2020-10-23T22:16:43Z"
       }
     },
     {
       "id": "Tom-Hirschberger/MMM-TouchButton",
-      "gitHubDataLastUpdate": "2024-02-02T20:20:36.447Z",
+      "gitHubDataLastUpdate": "2024-02-27T20:00:54.459Z",
       "gitHubData": {
         "issues": 0,
-        "stars": 3,
+        "stars": 4,
         "license": "MIT",
         "archived": false,
         "disabled": false,
         "defaultBranch": "master",
+        "has_issues": true,
         "lastCommit": "2023-11-24T18:33:35Z"
       }
     },
     {
       "id": "LoneWanderer-GH/MMM-Toulouse-Transports",
-      "gitHubDataLastUpdate": "2024-02-02T20:20:36.985Z",
+      "gitHubDataLastUpdate": "2024-02-27T20:00:54.951Z",
       "gitHubData": {
         "issues": 1,
         "stars": 2,
@@ -13823,12 +13857,13 @@
         "archived": false,
         "disabled": false,
         "defaultBranch": "master",
+        "has_issues": true,
         "lastCommit": "2023-11-04T07:26:20Z"
       }
     },
     {
       "id": "slametps/MMM-TPLink",
-      "gitHubDataLastUpdate": "2024-02-02T20:20:37.436Z",
+      "gitHubDataLastUpdate": "2024-02-27T20:00:55.575Z",
       "gitHubData": {
         "issues": 1,
         "stars": 4,
@@ -13836,12 +13871,13 @@
         "archived": false,
         "disabled": false,
         "defaultBranch": "master",
+        "has_issues": true,
         "lastCommit": "2020-09-22T10:30:41Z"
       }
     },
     {
       "id": "asimhsidd/MMM-TracCar",
-      "gitHubDataLastUpdate": "2024-02-02T20:20:37.943Z",
+      "gitHubDataLastUpdate": "2024-02-27T20:00:56.041Z",
       "gitHubData": {
         "issues": 1,
         "stars": 10,
@@ -13849,25 +13885,27 @@
         "archived": false,
         "disabled": false,
         "defaultBranch": "master",
+        "has_issues": true,
         "lastCommit": "2018-12-05T11:05:00Z"
       }
     },
     {
       "id": "SamLewis0602/MMM-Traffic",
-      "gitHubDataLastUpdate": "2024-02-02T20:20:38.882Z",
+      "gitHubDataLastUpdate": "2024-02-27T20:00:56.909Z",
       "gitHubData": {
         "issues": 0,
-        "stars": 138,
+        "stars": 139,
         "license": null,
         "archived": false,
         "disabled": false,
         "defaultBranch": "master",
+        "has_issues": true,
         "lastCommit": "2021-05-10T01:25:54Z"
       }
     },
     {
       "id": "Bangee44/MMM-TrainConnections",
-      "gitHubDataLastUpdate": "2024-02-02T20:20:39.480Z",
+      "gitHubDataLastUpdate": "2024-02-27T20:00:57.377Z",
       "gitHubData": {
         "issues": 2,
         "stars": 3,
@@ -13875,12 +13913,13 @@
         "archived": false,
         "disabled": false,
         "defaultBranch": "master",
+        "has_issues": true,
         "lastCommit": "2017-02-06T13:49:57Z"
       }
     },
     {
       "id": "per-garden/MMM-Trains-Trafikverket",
-      "gitHubDataLastUpdate": "2024-02-02T20:20:40.246Z",
+      "gitHubDataLastUpdate": "2024-02-27T20:00:57.827Z",
       "gitHubData": {
         "issues": 1,
         "stars": 0,
@@ -13888,25 +13927,27 @@
         "archived": false,
         "disabled": false,
         "defaultBranch": "master",
+        "has_issues": true,
         "lastCommit": "2019-02-07T09:43:09Z"
       }
     },
     {
       "id": "tticehurst/MMM-TrainTimesRTT",
-      "gitHubDataLastUpdate": "2024-02-02T20:20:40.863Z",
+      "gitHubDataLastUpdate": "2024-02-27T20:00:58.327Z",
       "gitHubData": {
         "issues": 0,
-        "stars": 0,
+        "stars": 1,
         "license": "GPL-3.0",
         "archived": false,
         "disabled": false,
         "defaultBranch": "master",
+        "has_issues": true,
         "lastCommit": "2023-10-25T23:10:15Z"
       }
     },
     {
       "id": "Kiina/MMM-trakt",
-      "gitHubDataLastUpdate": "2024-02-02T20:20:41.387Z",
+      "gitHubDataLastUpdate": "2024-02-27T20:00:58.796Z",
       "gitHubData": {
         "issues": 6,
         "stars": 13,
@@ -13914,25 +13955,27 @@
         "archived": false,
         "disabled": false,
         "defaultBranch": "master",
+        "has_issues": true,
         "lastCommit": "2021-06-13T01:02:13Z"
       }
     },
     {
       "id": "bnitkin/MMM-transitfeed",
-      "gitHubDataLastUpdate": "2024-02-02T20:20:41.988Z",
+      "gitHubDataLastUpdate": "2024-02-27T20:00:59.268Z",
       "gitHubData": {
         "issues": 0,
         "stars": 3,
-        "license": null,
+        "license": "MIT",
         "archived": false,
         "disabled": false,
         "defaultBranch": "main",
-        "lastCommit": "2024-01-19T13:11:51Z"
+        "has_issues": true,
+        "lastCommit": "2024-02-07T20:23:14Z"
       }
     },
     {
       "id": "ahmedwab/MMM-TranslatedMessages",
-      "gitHubDataLastUpdate": "2024-02-02T20:20:42.547Z",
+      "gitHubDataLastUpdate": "2024-02-27T20:00:59.880Z",
       "gitHubData": {
         "issues": 0,
         "stars": 0,
@@ -13940,12 +13983,13 @@
         "archived": false,
         "disabled": false,
         "defaultBranch": "main",
+        "has_issues": true,
         "lastCommit": "2021-06-06T01:13:26Z"
       }
     },
     {
       "id": "dekinet/MMM-TranslinkBrisbane",
-      "gitHubDataLastUpdate": "2024-02-02T20:20:43.130Z",
+      "gitHubDataLastUpdate": "2024-02-27T20:01:00.412Z",
       "gitHubData": {
         "issues": 0,
         "stars": 1,
@@ -13953,12 +13997,13 @@
         "archived": false,
         "disabled": false,
         "defaultBranch": "main",
-        "lastCommit": "2023-11-25T05:31:14Z"
+        "has_issues": true,
+        "lastCommit": "2024-02-15T00:11:51Z"
       }
     },
     {
       "id": "OrangeHoopla/MMM-TransLoc",
-      "gitHubDataLastUpdate": "2024-02-02T20:20:43.786Z",
+      "gitHubDataLastUpdate": "2024-02-27T20:01:00.873Z",
       "gitHubData": {
         "issues": 3,
         "stars": 2,
@@ -13966,12 +14011,13 @@
         "archived": false,
         "disabled": false,
         "defaultBranch": "master",
+        "has_issues": true,
         "lastCommit": "2019-06-09T23:14:09Z"
       }
     },
     {
       "id": "nikxif/MMM-Transmission",
-      "gitHubDataLastUpdate": "2024-02-02T20:20:44.989Z",
+      "gitHubDataLastUpdate": "2024-02-27T20:01:01.322Z",
       "gitHubData": {
         "issues": 0,
         "stars": 0,
@@ -13979,12 +14025,13 @@
         "archived": false,
         "disabled": false,
         "defaultBranch": "main",
+        "has_issues": true,
         "lastCommit": "2022-08-06T16:25:56Z"
       }
     },
     {
       "id": "Jopyth/MMM-Trello",
-      "gitHubDataLastUpdate": "2024-02-02T20:20:45.479Z",
+      "gitHubDataLastUpdate": "2024-02-27T20:01:01.763Z",
       "gitHubData": {
         "issues": 24,
         "stars": 53,
@@ -13992,12 +14039,13 @@
         "archived": false,
         "disabled": false,
         "defaultBranch": "master",
+        "has_issues": true,
         "lastCommit": "2020-10-27T17:01:48Z"
       }
     },
     {
       "id": "robotfishe/MMM-Tronity",
-      "gitHubDataLastUpdate": "2024-02-02T20:20:46.079Z",
+      "gitHubDataLastUpdate": "2024-02-27T20:01:02.239Z",
       "gitHubData": {
         "issues": 3,
         "stars": 2,
@@ -14005,12 +14053,13 @@
         "archived": false,
         "disabled": false,
         "defaultBranch": "main",
+        "has_issues": true,
         "lastCommit": "2022-05-22T18:13:31Z"
       }
     },
     {
       "id": "reidarw/MMM-TRV-WastePlan",
-      "gitHubDataLastUpdate": "2024-02-02T20:20:46.748Z",
+      "gitHubDataLastUpdate": "2024-02-27T20:01:02.753Z",
       "gitHubData": {
         "issues": 0,
         "stars": 7,
@@ -14018,12 +14067,13 @@
         "archived": false,
         "disabled": false,
         "defaultBranch": "main",
+        "has_issues": true,
         "lastCommit": "2023-06-24T21:55:55Z"
       }
     },
     {
       "id": "fewieden/MMM-TTS",
-      "gitHubDataLastUpdate": "2024-02-02T20:20:47.324Z",
+      "gitHubDataLastUpdate": "2024-02-27T20:01:03.175Z",
       "gitHubData": {
         "issues": 1,
         "stars": 17,
@@ -14031,12 +14081,13 @@
         "archived": false,
         "disabled": false,
         "defaultBranch": "master",
+        "has_issues": true,
         "lastCommit": "2017-02-26T21:40:11Z"
       }
     },
     {
       "id": "nigel-daniels/MMM-Tube-Status",
-      "gitHubDataLastUpdate": "2024-02-02T20:20:47.938Z",
+      "gitHubDataLastUpdate": "2024-02-27T20:01:03.619Z",
       "gitHubData": {
         "issues": 0,
         "stars": 3,
@@ -14044,12 +14095,13 @@
         "archived": false,
         "disabled": false,
         "defaultBranch": "master",
+        "has_issues": true,
         "lastCommit": "2018-08-17T20:59:59Z"
       }
     },
     {
       "id": "slametps/MMM-TuyaSL",
-      "gitHubDataLastUpdate": "2024-02-02T20:20:48.451Z",
+      "gitHubDataLastUpdate": "2024-02-27T20:01:04.070Z",
       "gitHubData": {
         "issues": 9,
         "stars": 3,
@@ -14057,12 +14109,13 @@
         "archived": false,
         "disabled": false,
         "defaultBranch": "master",
+        "has_issues": true,
         "lastCommit": "2021-01-05T03:23:49Z"
       }
     },
     {
       "id": "rafagale/MMM-TUZSAZaragoza",
-      "gitHubDataLastUpdate": "2024-02-02T20:20:49.065Z",
+      "gitHubDataLastUpdate": "2024-02-27T20:01:04.556Z",
       "gitHubData": {
         "issues": 0,
         "stars": 2,
@@ -14070,12 +14123,13 @@
         "archived": false,
         "disabled": false,
         "defaultBranch": "main",
+        "has_issues": true,
         "lastCommit": "2021-08-07T10:23:19Z"
       }
     },
     {
       "id": "XBCreepinJesus/MMM-TvheadendDVR",
-      "gitHubDataLastUpdate": "2024-02-02T20:20:49.785Z",
+      "gitHubDataLastUpdate": "2024-02-27T20:01:05.006Z",
       "gitHubData": {
         "issues": 0,
         "stars": 0,
@@ -14083,12 +14137,13 @@
         "archived": false,
         "disabled": false,
         "defaultBranch": "main",
+        "has_issues": true,
         "lastCommit": "2021-03-28T17:18:02Z"
       }
     },
     {
       "id": "AdamMoses-GitHub/MMM-TweetsByTimelineOrList",
-      "gitHubDataLastUpdate": "2024-02-02T20:20:50.396Z",
+      "gitHubDataLastUpdate": "2024-02-27T20:01:05.465Z",
       "gitHubData": {
         "issues": 4,
         "stars": 13,
@@ -14096,12 +14151,13 @@
         "archived": false,
         "disabled": false,
         "defaultBranch": "master",
+        "has_issues": true,
         "lastCommit": "2019-06-25T13:21:17Z"
       }
     },
     {
       "id": "WilliamFitzjohn/MMM-TwitchAlert",
-      "gitHubDataLastUpdate": "2024-02-02T20:21:49.950Z",
+      "gitHubDataLastUpdate": "2024-02-27T20:01:06.121Z",
       "gitHubData": {
         "issues": 3,
         "stars": 2,
@@ -14109,12 +14165,13 @@
         "archived": false,
         "disabled": false,
         "defaultBranch": "main",
+        "has_issues": true,
         "lastCommit": "2023-01-11T17:46:29Z"
       }
     },
     {
       "id": "Blastitt/twitControl",
-      "gitHubDataLastUpdate": "2024-02-02T20:21:50.481Z",
+      "gitHubDataLastUpdate": "2024-02-27T20:01:06.593Z",
       "gitHubData": {
         "issues": 6,
         "stars": 9,
@@ -14122,20 +14179,8 @@
         "archived": false,
         "disabled": false,
         "defaultBranch": "master",
+        "has_issues": true,
         "lastCommit": "2017-01-30T21:55:39Z"
-      }
-    },
-    {
-      "id": "AdamMoses-GitHub/MMM-TwitterTrendsByPlace",
-      "gitHubDataLastUpdate": "2024-02-02T20:21:51.027Z",
-      "gitHubData": {
-        "issues": 1,
-        "stars": 12,
-        "license": "MIT",
-        "archived": false,
-        "disabled": false,
-        "defaultBranch": "master",
-        "lastCommit": "2019-05-03T18:23:58Z"
       }
     },
     {

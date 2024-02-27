@@ -7223,15 +7223,14 @@
     "maintainer": "thomo",
     "maintainerURL": "",
     "description": "Compliment clone - allows to define when (at which hour) the used kudo(compliment) subset will change and you can define further subsets - up to one for each hour.",
-    "issues": [
-      "No image found."
-    ],
+    "issues": [],
     "stars": 8,
     "hasGithubIssues": true,
     "tags": [
       "screen"
     ],
-    "license": "MIT"
+    "license": "MIT",
+    "image": "screenshot.jpg"
   },
   {
     "name": "MMM-KVV",
@@ -11667,11 +11666,14 @@
     "maintainer": "sheyabernstein",
     "maintainerURL": "",
     "description": "Display stats from Pi-Hole DNS ad blocking.",
-    "issues": [
-      "There is no `package.json`. We need this file to gather information about the module for the module list page."
-    ],
+    "issues": [],
     "stars": 68,
-    "hasGithubIssues": true
+    "hasGithubIssues": true,
+    "tags": [
+      "pi-hole"
+    ],
+    "license": "MIT",
+    "image": "docs-preview-showSources.jpg"
   },
   {
     "name": "MMM-PilotWX",
@@ -15160,6 +15162,7 @@
     "description": "A Demo module for using <a target=\"_blank\" href=\"https://tabulator.info\">Tabulator</a> to directly parse JSON/XML into MM DHTML tables.",
     "issues": [],
     "stars": 10,
+    "hasGithubIssues": true,
     "tags": [
       "tables",
       "json",
@@ -15179,6 +15182,7 @@
       "There are no keywords in 'package.json'. We would use them as tags on the module list page."
     ],
     "stars": 6,
+    "hasGithubIssues": true,
     "license": "ISC",
     "image": "img-screenshot.jpg"
   },
@@ -15192,7 +15196,8 @@
     "issues": [
       "There is no `package.json`. We need this file to gather information about the module for the module list page."
     ],
-    "stars": 1
+    "stars": 1,
+    "hasGithubIssues": true
   },
   {
     "name": "MMM-TakeAndDrive",
@@ -15205,6 +15210,7 @@
       "`package.json` issue: No repository field."
     ],
     "stars": 0,
+    "hasGithubIssues": true,
     "tags": [
       "carsharing",
       "scooters",
@@ -15224,6 +15230,7 @@
     "description": "Module to display the local gas prices in Germany (Tankstellen-Preise).",
     "issues": [],
     "stars": 6,
+    "hasGithubIssues": true,
     "tags": [
       "gas",
       "germany"
@@ -15241,7 +15248,8 @@
     "issues": [
       "There is no `package.json`. We need this file to gather information about the module for the module list page."
     ],
-    "stars": 10
+    "stars": 10,
+    "hasGithubIssues": true
   },
   {
     "name": "MMM-teamspeak3",
@@ -15254,6 +15262,7 @@
       "No image found."
     ],
     "stars": 7,
+    "hasGithubIssues": true,
     "tags": [
       "teamspeak",
       "client list"
@@ -15287,6 +15296,7 @@
       "No image found."
     ],
     "stars": 3,
+    "hasGithubIssues": true,
     "tags": [
       "telegram",
       "commandline"
@@ -15304,6 +15314,7 @@
       "No image found."
     ],
     "stars": 18,
+    "hasGithubIssues": true,
     "tags": [
       "ds18b20",
       "temperature",
@@ -15320,6 +15331,7 @@
     "description": "Display tempature, humdity, and more of DHT11, DHT22, BMT280, HTU21, DS18B20 or other sensors.",
     "issues": [],
     "stars": 4,
+    "hasGithubIssues": true,
     "tags": [
       "temperature",
       "humidity",
@@ -15342,6 +15354,7 @@
     "description": "Display Tesla data from either <a target=\"_blank\" href=\"https://teslafi.com\">TeslaFi</a> or <a target=\"_blank\" href=\"https://www.tessie.com\">Tessie</a>.",
     "issues": [],
     "stars": 4,
+    "hasGithubIssues": true,
     "tags": [
       "tesla",
       "teslafi",
@@ -15362,6 +15375,7 @@
       "There are no keywords in 'package.json'. We would use them as tags on the module list page."
     ],
     "stars": 2,
+    "hasGithubIssues": true,
     "license": "ISC",
     "image": "images-MMM-Tesla3.jpg"
   },
@@ -15376,6 +15390,7 @@
       "There are no keywords in 'package.json'. We would use them as tags on the module list page."
     ],
     "stars": 5,
+    "hasGithubIssues": true,
     "license": "MIT",
     "image": "img-MMM-TeslaLogger-ScreenShot-image.jpg"
   },
@@ -15391,7 +15406,8 @@
       "`package.json` issue: No license field.",
       "There are no keywords in 'package.json'. We would use them as tags on the module list page."
     ],
-    "stars": 50
+    "stars": 50,
+    "hasGithubIssues": true
   },
   {
     "name": "MMM-TeslaStatus",
@@ -15406,7 +15422,8 @@
       "`package.json` issue: No license field.",
       "There are no keywords in 'package.json'. We would use them as tags on the module list page."
     ],
-    "stars": 1
+    "stars": 1,
+    "hasGithubIssues": true
   },
   {
     "name": "MMM-text-clock",
@@ -15417,6 +15434,7 @@
     "description": "A clock which shows the time as text.",
     "issues": [],
     "stars": 10,
+    "hasGithubIssues": true,
     "tags": [
       "smar",
       "clock",
@@ -15438,7 +15456,8 @@
     "issues": [
       "There is no `package.json`. We need this file to gather information about the module for the module list page."
     ],
-    "stars": 1
+    "stars": 1,
+    "hasGithubIssues": true
   },
   {
     "name": "MMM-TFL-Arrivals",
@@ -15449,6 +15468,7 @@
     "description": "This module gets real time arrival predictions for specifc stops using the TfL API.",
     "issues": [],
     "stars": 4,
+    "hasGithubIssues": true,
     "tags": [
       "transport",
       "london",
@@ -15468,7 +15488,8 @@
     "issues": [
       "There is no `package.json`. We need this file to gather information about the module for the module list page."
     ],
-    "stars": 6
+    "stars": 6,
+    "hasGithubIssues": true
   },
   {
     "name": "MMM-ThemeParkWaitTimes",
@@ -15499,6 +15520,7 @@
       "No image found."
     ],
     "stars": 2,
+    "hasGithubIssues": true,
     "license": "MIT"
   },
   {
@@ -15512,6 +15534,7 @@
       "Please use 'smart home' instead of 'smarthome' as a keyword in your package.json."
     ],
     "stars": 31,
+    "hasGithubIssues": true,
     "tags": [
       "tibber",
       "energy",
@@ -15532,7 +15555,8 @@
     "issues": [
       "There is no `package.json`. We need this file to gather information about the module for the module list page."
     ],
-    "stars": 1
+    "stars": 1,
+    "hasGithubIssues": true
   },
   {
     "name": "MMM-Timetagger",
@@ -15544,7 +15568,8 @@
     "issues": [
       "There are no keywords in 'package.json'. We would use them as tags on the module list page."
     ],
-    "stars": 2,
+    "stars": 3,
+    "hasGithubIssues": true,
     "license": "MIT",
     "image": "doc-mmm-timetagger-screenshot-1.jpg"
   },
@@ -15557,6 +15582,7 @@
     "description": "Shows your TimeTree event.",
     "issues": [],
     "stars": 5,
+    "hasGithubIssues": true,
     "tags": [
       "event",
       "timetree"
@@ -15576,6 +15602,7 @@
       "There are no keywords in 'package.json'. We would use them as tags on the module list page."
     ],
     "stars": 6,
+    "hasGithubIssues": true,
     "license": "ISC",
     "image": "docs-screenshot.jpg"
   },
@@ -15589,7 +15616,8 @@
     "issues": [
       "There are no specific keywords in 'package.json'. We would use them as tags on the module list page. Add a few meaningful terms to the keywords in the package.json. Not just “magicmirror” or “module”."
     ],
-    "stars": 2,
+    "stars": 3,
+    "hasGithubIssues": true,
     "license": "MIT",
     "image": "images-screenshot.jpg"
   },
@@ -15602,6 +15630,7 @@
     "description": "Module to display latest new astronomical transients from <a target=\"_blank\" href=\"https://wis-tns.weizmann.ac.il\">TNS</a> such as <a target=\"_blank\" href=\"https://en.wikipedia.org/wiki/Supernova\">supernova</a> candidates.",
     "issues": [],
     "stars": 1,
+    "hasGithubIssues": true,
     "tags": [
       "tns"
     ],
@@ -15616,7 +15645,8 @@
     "maintainerURL": "",
     "description": "Displays your todos from Todoist.",
     "issues": [],
-    "stars": 145,
+    "stars": 146,
+    "hasGithubIssues": true,
     "tags": [
       "wunderlist"
     ],
@@ -15633,7 +15663,8 @@
     "issues": [
       "There is no `package.json`. We need this file to gather information about the module for the module list page."
     ],
-    "stars": 1
+    "stars": 1,
+    "hasGithubIssues": true
   },
   {
     "name": "MMM-TomTomTraffic",
@@ -15645,7 +15676,8 @@
     "issues": [
       "There are no keywords in 'package.json'. We would use them as tags on the module list page."
     ],
-    "stars": 11,
+    "stars": 12,
+    "hasGithubIssues": true,
     "license": "MIT",
     "image": "img-screenshot.jpg"
   },
@@ -15659,7 +15691,8 @@
     "issues": [
       "There is no `package.json`. We need this file to gather information about the module for the module list page."
     ],
-    "stars": 9
+    "stars": 10,
+    "hasGithubIssues": true
   },
   {
     "name": "MMM-Toon",
@@ -15671,7 +15704,8 @@
     "issues": [
       "There is no `package.json`. We need this file to gather information about the module for the module list page."
     ],
-    "stars": 12
+    "stars": 12,
+    "hasGithubIssues": true
   },
   {
     "name": "MMM-Touch",
@@ -15683,7 +15717,8 @@
     "issues": [
       "There is no `package.json`. We need this file to gather information about the module for the module list page."
     ],
-    "stars": 10
+    "stars": 12,
+    "hasGithubIssues": true
   },
   {
     "name": "MMM-TouchButton",
@@ -15693,7 +15728,8 @@
     "maintainerURL": "https://github.com/Tom-Hirschberger",
     "description": "Add clickable buttons to send notifications or run commands.",
     "issues": [],
-    "stars": 3,
+    "stars": 4,
+    "hasGithubIssues": true,
     "tags": [
       "touch",
       "button",
@@ -15713,6 +15749,7 @@
     "description": "time to the next buses lines for Toulouse (Tisseo).",
     "issues": [],
     "stars": 2,
+    "hasGithubIssues": true,
     "tags": [
       "localtransport",
       "toulouse"
@@ -15731,6 +15768,7 @@
       "Please use 'smart home' instead of 'smarthome' as a keyword in your package.json."
     ],
     "stars": 4,
+    "hasGithubIssues": true,
     "tags": [
       "tplink",
       "smart home"
@@ -15750,6 +15788,7 @@
       "There are no keywords in 'package.json'. We would use them as tags on the module list page."
     ],
     "stars": 10,
+    "hasGithubIssues": true,
     "license": "MIT",
     "image": "Capture.jpg"
   },
@@ -15761,7 +15800,8 @@
     "maintainerURL": "https://github.com/samlewis0602",
     "description": "Display commute travel time with current traffic conditions factored in. Can be used for driving, biking, walking, and public transit.",
     "issues": [],
-    "stars": 138,
+    "stars": 139,
+    "hasGithubIssues": true,
     "tags": [
       "traffic"
     ],
@@ -15778,7 +15818,8 @@
     "issues": [
       "There is no `package.json`. We need this file to gather information about the module for the module list page."
     ],
-    "stars": 3
+    "stars": 3,
+    "hasGithubIssues": true
   },
   {
     "name": "MMM-Trains-Trafikverket",
@@ -15792,6 +15833,7 @@
       "There are no keywords in 'package.json'. We would use them as tags on the module list page."
     ],
     "stars": 0,
+    "hasGithubIssues": true,
     "license": "MIT",
     "image": "screenshot.jpg"
   },
@@ -15808,7 +15850,8 @@
       "There are no specific keywords in 'package.json'. We would use them as tags on the module list page. Add a few meaningful terms to the keywords in the package.json. Not just “magicmirror” or “module”.",
       "No image found."
     ],
-    "stars": 0,
+    "stars": 1,
+    "hasGithubIssues": true,
     "license": "ISC"
   },
   {
@@ -15822,6 +15865,7 @@
       "There are no keywords in 'package.json'. We would use them as tags on the module list page."
     ],
     "stars": 13,
+    "hasGithubIssues": true,
     "license": "MIT",
     "image": "screenshot.jpg"
   },
@@ -15834,6 +15878,7 @@
     "description": "Upcoming departures for any transit agencies that publishes GTFS.",
     "issues": [],
     "stars": 3,
+    "hasGithubIssues": true,
     "tags": [
       "transit",
       "gtfs",
@@ -15856,7 +15901,8 @@
     "issues": [
       "There is no `package.json`. We need this file to gather information about the module for the module list page."
     ],
-    "stars": 0
+    "stars": 0,
+    "hasGithubIssues": true
   },
   {
     "name": "MMM-TranslinkBrisbane",
@@ -15867,6 +15913,7 @@
     "description": "Simple display of train departure times for Brisbane (Australia).",
     "issues": [],
     "stars": 1,
+    "hasGithubIssues": true,
     "tags": [
       "public transport",
       "brisbane"
@@ -15884,7 +15931,8 @@
     "issues": [
       "There is no `package.json`. We need this file to gather information about the module for the module list page."
     ],
-    "stars": 2
+    "stars": 2,
+    "hasGithubIssues": true
   },
   {
     "name": "MMM-Transmission",
@@ -15896,7 +15944,8 @@
     "issues": [
       "There is no `package.json`. We need this file to gather information about the module for the module list page."
     ],
-    "stars": 0
+    "stars": 0,
+    "hasGithubIssues": true
   },
   {
     "name": "MMM-Trello",
@@ -15907,6 +15956,7 @@
     "description": "This module can show <a target=\"_blank\" href=\"https://trello.com\">Trello</a> cards on your mirror.",
     "issues": [],
     "stars": 53,
+    "hasGithubIssues": true,
     "tags": [
       "trello"
     ],
@@ -15925,6 +15975,7 @@
       "No image found."
     ],
     "stars": 2,
+    "hasGithubIssues": true,
     "license": "MIT"
   },
   {
@@ -15937,7 +15988,8 @@
     "issues": [
       "There is no `package.json`. We need this file to gather information about the module for the module list page."
     ],
-    "stars": 7
+    "stars": 7,
+    "hasGithubIssues": true
   },
   {
     "name": "MMM-TTS",
@@ -15950,6 +16002,7 @@
       "No image found."
     ],
     "stars": 17,
+    "hasGithubIssues": true,
     "tags": [
       "text-to-speech"
     ],
@@ -15965,7 +16018,8 @@
     "issues": [
       "There is no `package.json`. We need this file to gather information about the module for the module list page."
     ],
-    "stars": 3
+    "stars": 3,
+    "hasGithubIssues": true
   },
   {
     "name": "MMM-TuyaSL",
@@ -15978,6 +16032,7 @@
       "Please use 'smart home' instead of 'smarthome' as a keyword in your package.json."
     ],
     "stars": 3,
+    "hasGithubIssues": true,
     "tags": [
       "tuyasl",
       "smart home",
@@ -15998,6 +16053,7 @@
     "description": "Get estimations for bus stops in the city of Zaragoza (Spain).",
     "issues": [],
     "stars": 2,
+    "hasGithubIssues": true,
     "tags": [
       "bus stop",
       "tuzsa zaragoza",
@@ -16015,6 +16071,7 @@
     "description": "Show your upcoming Tvheadend recordings.",
     "issues": [],
     "stars": 0,
+    "hasGithubIssues": true,
     "tags": [
       "tvheadend"
     ],
@@ -16031,7 +16088,8 @@
     "issues": [
       "There is no `package.json`. We need this file to gather information about the module for the module list page."
     ],
-    "stars": 13
+    "stars": 13,
+    "hasGithubIssues": true
   },
   {
     "name": "MMM-TwitchAlert",
@@ -16043,7 +16101,8 @@
     "issues": [
       "There is no `package.json`. We need this file to gather information about the module for the module list page."
     ],
-    "stars": 2
+    "stars": 2,
+    "hasGithubIssues": true
   },
   {
     "name": "twitControl",
@@ -16058,6 +16117,7 @@
       "No image found."
     ],
     "stars": 9,
+    "hasGithubIssues": true,
     "license": "MIT"
   },
   {
@@ -16069,8 +16129,7 @@
     "description": "Displays the Twitter Trending Topics for a given place or city, as well as showing the tweet volume for each topic.",
     "issues": [
       "There is no `package.json`. We need this file to gather information about the module for the module list page."
-    ],
-    "stars": 12
+    ]
   },
   {
     "name": "MMM-uber",

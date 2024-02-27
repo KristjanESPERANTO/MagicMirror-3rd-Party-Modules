@@ -10684,7 +10684,8 @@
     "maintainerURL": "https://github.com/E3V3A",
     "description": "A Demo module for using <a target=\"_blank\" href=\"https://tabulator.info\">Tabulator</a> to directly parse JSON/XML into MM DHTML tables.",
     "issues": [],
-    "stars": 10
+    "stars": 10,
+    "hasGithubIssues": true
   },
   {
     "name": "MMM-Tado",
@@ -10694,7 +10695,8 @@
     "maintainerURL": "https://github.com/WouterEekhout",
     "description": "Module for your Tado Smart Thermostat.",
     "issues": [],
-    "stars": 6
+    "stars": 6,
+    "hasGithubIssues": true
   },
   {
     "name": "MMM-TAF",
@@ -10704,7 +10706,8 @@
     "maintainerURL": "",
     "description": "Display METAR and TAF data for airports world-wide.",
     "issues": [],
-    "stars": 1
+    "stars": 1,
+    "hasGithubIssues": true
   },
   {
     "name": "MMM-TakeAndDrive",
@@ -10714,7 +10717,8 @@
     "maintainerURL": "",
     "description": "Shows nearest scooters/cars/mopeds/bikes to rent in your area. Comes with direction and distance info.",
     "issues": [],
-    "stars": 0
+    "stars": 0,
+    "hasGithubIssues": true
   },
   {
     "name": "MMM-Tankerkoenig",
@@ -10724,7 +10728,8 @@
     "maintainerURL": "https://github.com/wiesty",
     "description": "Module to display the local gas prices in Germany (Tankstellen-Preise).",
     "issues": [],
-    "stars": 6
+    "stars": 6,
+    "hasGithubIssues": true
   },
   {
     "name": "MMM-TautulliActivity",
@@ -10734,7 +10739,8 @@
     "maintainerURL": "",
     "description": "Displays the currently playing Plex stream activity from <a target=\"_blank\" href=\"https://tautulli.com\">Tautulli</a>.",
     "issues": [],
-    "stars": 10
+    "stars": 10,
+    "hasGithubIssues": true
   },
   {
     "name": "MMM-teamspeak3",
@@ -10744,7 +10750,8 @@
     "maintainerURL": "",
     "description": "Display client list of a Teamspeak3 server.",
     "issues": [],
-    "stars": 7
+    "stars": 7,
+    "hasGithubIssues": true
   },
   {
     "name": "EXT-TelegramBot",
@@ -10765,7 +10772,8 @@
     "maintainerURL": "https://github.com/doctorfree",
     "description": "Creates and manages Telegram commands to control a MagicMirror² via the MirrorCommandLine tools. MMM-TelegramCommands requires the installation and configuration of the <a target=\"_blank\" href=\"https://github.com/bugsounet/MMM-TelegramBot\">MMM-TelegramBot</a> module and the <a target=\"_blank\" href=\"https://gitlab.com/doctorfree/MirrorCommandLine\">MirrorCommandLine</a> suite of command line utilites for the MagicMirror².",
     "issues": [],
-    "stars": 3
+    "stars": 3,
+    "hasGithubIssues": true
   },
   {
     "name": "MMM-temp-ds18b20",
@@ -10775,7 +10783,8 @@
     "maintainerURL": "",
     "description": "Display DS18B20 sensor's temperature.",
     "issues": [],
-    "stars": 18
+    "stars": 18,
+    "hasGithubIssues": true
   },
   {
     "name": "MMM-Temperature",
@@ -10785,7 +10794,8 @@
     "maintainerURL": "https://github.com/Tom-Hirschberger",
     "description": "Display tempature, humdity, and more of DHT11, DHT22, BMT280, HTU21, DS18B20 or other sensors.",
     "issues": [],
-    "stars": 4
+    "stars": 4,
+    "hasGithubIssues": true
   },
   {
     "name": "MMM-Tesla",
@@ -10795,7 +10805,8 @@
     "maintainerURL": "",
     "description": "Display Tesla data from either <a target=\"_blank\" href=\"https://teslafi.com\">TeslaFi</a> or <a target=\"_blank\" href=\"https://www.tessie.com\">Tessie</a>.",
     "issues": [],
-    "stars": 4
+    "stars": 4,
+    "hasGithubIssues": true
   },
   {
     "name": "MMM-Tesla3",
@@ -10805,7 +10816,8 @@
     "maintainerURL": "",
     "description": "Display Tesla data directly from Tesla API. Customizable GUI based on <a target=\"_blank\" href=\"https://github.com/denverquane/MMM-Teslamate\">MMM-TeslaMate</a>.",
     "issues": [],
-    "stars": 2
+    "stars": 2,
+    "hasGithubIssues": true
   },
   {
     "name": "MMM-TeslaLogger",
@@ -10815,7 +10827,8 @@
     "maintainerURL": "https://github.com/spitzlbergerj",
     "description": "Displays data from <a target=\"_blank\" href=\"https://github.com/bassmaster187/TeslaLogger\">TeslaLogger</a> or/and <a target=\"_blank\" href=\"https://github.com/adriankumpf/teslamate\">TeslaMate</a> via MQTT.",
     "issues": [],
-    "stars": 5
+    "stars": 5,
+    "hasGithubIssues": true
   },
   {
     "name": "MMM-Teslamate",
@@ -10825,7 +10838,8 @@
     "maintainerURL": "",
     "description": "Display live Tesla status using the Teslamate self-hosted monitoring system and MQTT Broker.",
     "issues": [],
-    "stars": 50
+    "stars": 50,
+    "hasGithubIssues": true
   },
   {
     "name": "MMM-TeslaStatus",
@@ -10835,7 +10849,8 @@
     "maintainerURL": "",
     "description": "Display my tesla status using data from firebase realtime database.",
     "issues": [],
-    "stars": 1
+    "stars": 1,
+    "hasGithubIssues": true
   },
   {
     "name": "MMM-text-clock",
@@ -10845,7 +10860,8 @@
     "maintainerURL": "https://github.com/ngnijland",
     "description": "A clock which shows the time as text.",
     "issues": [],
-    "stars": 10
+    "stars": 10,
+    "hasGithubIssues": true
   },
   {
     "name": "MMM-TextPerWeek",
@@ -10855,7 +10871,8 @@
     "maintainerURL": "",
     "description": "Shows a different text each week.",
     "issues": [],
-    "stars": 1
+    "stars": 1,
+    "hasGithubIssues": true
   },
   {
     "name": "MMM-TFL-Arrivals",
@@ -10865,7 +10882,8 @@
     "maintainerURL": "",
     "description": "This module gets real time arrival predictions for specifc stops using the TfL API.",
     "issues": [],
-    "stars": 4
+    "stars": 4,
+    "hasGithubIssues": true
   },
   {
     "name": "MMM-TFL-Status",
@@ -10875,7 +10893,8 @@
     "maintainerURL": "https://www.emanuelealbini.com",
     "description": "Status board for TFL (Transport For London) lines including London Tube, Elizabeth line, Tram, DLR, Bus, River Coach.",
     "issues": [],
-    "stars": 6
+    "stars": 6,
+    "hasGithubIssues": true
   },
   {
     "name": "MMM-ThemeParkWaitTimes",
@@ -10896,7 +10915,8 @@
     "maintainerURL": "",
     "description": "View the latest popular things on Thingiverse.",
     "issues": [],
-    "stars": 2
+    "stars": 2,
+    "hasGithubIssues": true
   },
   {
     "name": "MMM-Tibber",
@@ -10906,7 +10926,8 @@
     "maintainerURL": "",
     "description": "Show electricity related data for Tibber customers. Shows power, prices, consumption, voltage, current and more.",
     "issues": [],
-    "stars": 31
+    "stars": 31,
+    "hasGithubIssues": true
   },
   {
     "name": "MMM-TiHimawari8Earth",
@@ -10916,7 +10937,8 @@
     "maintainerURL": "https://github.com/zhouxichun",
     "description": "Fetch earth live image form Himawari #8 geostationary satellite and display images on screen.",
     "issues": [],
-    "stars": 1
+    "stars": 1,
+    "hasGithubIssues": true
   },
   {
     "name": "MMM-Timetagger",
@@ -10926,7 +10948,8 @@
     "maintainerURL": "",
     "description": "Shows the latest hours tracked by the time tracking application Timetagger.",
     "issues": [],
-    "stars": 2
+    "stars": 3,
+    "hasGithubIssues": true
   },
   {
     "name": "MMM-TimeTreeEvent",
@@ -10936,7 +10959,8 @@
     "maintainerURL": "",
     "description": "Shows your TimeTree event.",
     "issues": [],
-    "stars": 5
+    "stars": 5,
+    "hasGithubIssues": true
   },
   {
     "name": "MMM-TitanSchoolMealMenu",
@@ -10946,7 +10970,8 @@
     "maintainerURL": "",
     "description": "Retrieves school meal menus from the Titan Schools API (family.titank12.com).",
     "issues": [],
-    "stars": 6
+    "stars": 6,
+    "hasGithubIssues": true
   },
   {
     "name": "MMM-TMB",
@@ -10956,7 +10981,8 @@
     "maintainerURL": "https://github.com/jaumebosch",
     "description": "Display Barcelona's TMB bus times by line and stop.",
     "issues": [],
-    "stars": 2
+    "stars": 3,
+    "hasGithubIssues": true
   },
   {
     "name": "MMM-tns",
@@ -10966,7 +10992,8 @@
     "maintainerURL": "https://github.com/JulienPeloton",
     "description": "Module to display latest new astronomical transients from <a target=\"_blank\" href=\"https://wis-tns.weizmann.ac.il\">TNS</a> such as <a target=\"_blank\" href=\"https://en.wikipedia.org/wiki/Supernova\">supernova</a> candidates.",
     "issues": [],
-    "stars": 1
+    "stars": 1,
+    "hasGithubIssues": true
   },
   {
     "name": "MMM-Todoist",
@@ -10976,7 +11003,8 @@
     "maintainerURL": "",
     "description": "Displays your todos from Todoist.",
     "issues": [],
-    "stars": 145
+    "stars": 146,
+    "hasGithubIssues": true
   },
   {
     "name": "MMM-TomTomCalculateRouteTraffic",
@@ -10986,7 +11014,8 @@
     "maintainerURL": "https://github.com/teemoo7",
     "description": "Calculate routes with TomTom API (free), and display travel time with traffic delays.",
     "issues": [],
-    "stars": 1
+    "stars": 1,
+    "hasGithubIssues": true
   },
   {
     "name": "MMM-TomTomTraffic",
@@ -10996,7 +11025,8 @@
     "maintainerURL": "",
     "description": "Show a map of a given area with TomTom traffic information.",
     "issues": [],
-    "stars": 11
+    "stars": 12,
+    "hasGithubIssues": true
   },
   {
     "name": "MMM-TomTomTrafficIncidents",
@@ -11006,7 +11036,8 @@
     "maintainerURL": "https://github.com/Travelbacon",
     "description": "Shows on a TomTom map of your location the current traffic and actual traffic incidents like crashes and road construction. You can choose if you want traffic delay/jam or traffic speed/flow to be displayed.",
     "issues": [],
-    "stars": 9
+    "stars": 10,
+    "hasGithubIssues": true
   },
   {
     "name": "MMM-Toon",
@@ -11016,7 +11047,8 @@
     "maintainerURL": "",
     "description": "A module for the Toon Thermostat.",
     "issues": [],
-    "stars": 12
+    "stars": 12,
+    "hasGithubIssues": true
   },
   {
     "name": "MMM-Touch",
@@ -11026,7 +11058,8 @@
     "maintainerURL": "",
     "description": "Module for universal touch gesture commander using touchscreen.",
     "issues": [],
-    "stars": 10
+    "stars": 12,
+    "hasGithubIssues": true
   },
   {
     "name": "MMM-TouchButton",
@@ -11036,7 +11069,8 @@
     "maintainerURL": "https://github.com/Tom-Hirschberger",
     "description": "Add clickable buttons to send notifications or run commands.",
     "issues": [],
-    "stars": 3
+    "stars": 4,
+    "hasGithubIssues": true
   },
   {
     "name": "MMM-Toulouse-Transports",
@@ -11046,7 +11080,8 @@
     "maintainerURL": "https://github.com/LoneWanderer-GH",
     "description": "time to the next buses lines for Toulouse (Tisseo).",
     "issues": [],
-    "stars": 2
+    "stars": 2,
+    "hasGithubIssues": true
   },
   {
     "name": "MMM-TPLink",
@@ -11056,7 +11091,8 @@
     "maintainerURL": "https://github.com/slametps",
     "description": "Display the status of TPLink lights/plugs in your local network.",
     "issues": [],
-    "stars": 4
+    "stars": 4,
+    "hasGithubIssues": true
   },
   {
     "name": "MMM-TracCar",
@@ -11066,7 +11102,8 @@
     "maintainerURL": "https://github.com/asimhsidd",
     "description": "Track moving objects through Traccar.org APIs on google maps. This is based on a websocket connection to the Traccar.org server over which the locations of all the registered users are received upon any update. Not only the markers are updated but also the map's center &amp; zoom level. All online users have a green icon, rest are red. Error handling is built in too.",
     "issues": [],
-    "stars": 10
+    "stars": 10,
+    "hasGithubIssues": true
   },
   {
     "name": "MMM-Traffic",
@@ -11076,7 +11113,8 @@
     "maintainerURL": "https://github.com/samlewis0602",
     "description": "Display commute travel time with current traffic conditions factored in. Can be used for driving, biking, walking, and public transit.",
     "issues": [],
-    "stars": 138
+    "stars": 139,
+    "hasGithubIssues": true
   },
   {
     "name": "MMM-TrainConnections",
@@ -11086,7 +11124,8 @@
     "maintainerURL": "",
     "description": "Display trains from your favorite departure station to any destination in Europe.",
     "issues": [],
-    "stars": 3
+    "stars": 3,
+    "hasGithubIssues": true
   },
   {
     "name": "MMM-Trains-Trafikverket",
@@ -11096,7 +11135,8 @@
     "maintainerURL": "",
     "description": "Module to display train departure times for railway stations within Sweden, as supplied by the Swedish Transport Administration (Trafikverket).",
     "issues": [],
-    "stars": 0
+    "stars": 0,
+    "hasGithubIssues": true
   },
   {
     "name": "MMM-TrainTimesRTT",
@@ -11106,7 +11146,8 @@
     "maintainerURL": "https://github.com/tticehurst",
     "description": "Displays live train times making use of the <a target=\"_blank\" href=\"https://api.rtt.io\">RTT.io</a> api.",
     "issues": [],
-    "stars": 0
+    "stars": 1,
+    "hasGithubIssues": true
   },
   {
     "name": "MMM-trakt",
@@ -11116,7 +11157,8 @@
     "maintainerURL": "",
     "description": "Display your upcoming Shows from your <a target=\"_blank\" href=\"https://trakt.tv\">trakt.tv</a> account.",
     "issues": [],
-    "stars": 13
+    "stars": 13,
+    "hasGithubIssues": true
   },
   {
     "name": "MMM-transitfeed",
@@ -11126,7 +11168,8 @@
     "maintainerURL": "https://github.com/bnitkin",
     "description": "Upcoming departures for any transit agencies that publishes GTFS.",
     "issues": [],
-    "stars": 3
+    "stars": 3,
+    "hasGithubIssues": true
   },
   {
     "name": "MMM-TranslatedMessages",
@@ -11136,7 +11179,8 @@
     "maintainerURL": "https://github.com/ahmedwab",
     "description": "The MMM-Display a given list of messages translated to language inputted.",
     "issues": [],
-    "stars": 0
+    "stars": 0,
+    "hasGithubIssues": true
   },
   {
     "name": "MMM-TranslinkBrisbane",
@@ -11146,7 +11190,8 @@
     "maintainerURL": "",
     "description": "Simple display of train departure times for Brisbane (Australia).",
     "issues": [],
-    "stars": 1
+    "stars": 1,
+    "hasGithubIssues": true
   },
   {
     "name": "MMM-TransLoc",
@@ -11156,7 +11201,8 @@
     "maintainerURL": "",
     "description": "Display TransLoc locations for a bus stop, used by the Rider App.",
     "issues": [],
-    "stars": 2
+    "stars": 2,
+    "hasGithubIssues": true
   },
   {
     "name": "MMM-Transmission",
@@ -11166,7 +11212,8 @@
     "maintainerURL": "https://github.com/nikxif",
     "description": "Connect to the Transmission BitTorrent client and display current torrent list information.",
     "issues": [],
-    "stars": 0
+    "stars": 0,
+    "hasGithubIssues": true
   },
   {
     "name": "MMM-Trello",
@@ -11176,7 +11223,8 @@
     "maintainerURL": "",
     "description": "This module can show <a target=\"_blank\" href=\"https://trello.com\">Trello</a> cards on your mirror.",
     "issues": [],
-    "stars": 53
+    "stars": 53,
+    "hasGithubIssues": true
   },
   {
     "name": "MMM-Tronity",
@@ -11186,7 +11234,8 @@
     "maintainerURL": "https://github.com/robotfishe",
     "description": "Pull charging and range data from your EV via Tronity Platform.",
     "issues": [],
-    "stars": 2
+    "stars": 2,
+    "hasGithubIssues": true
   },
   {
     "name": "MMM-TRV-WastePlan",
@@ -11196,7 +11245,8 @@
     "maintainerURL": "https://github.com/reidarw",
     "description": "Module for showing the waste plan for your destination in Trondheim, Norway.",
     "issues": [],
-    "stars": 7
+    "stars": 7,
+    "hasGithubIssues": true
   },
   {
     "name": "MMM-TTS",
@@ -11206,7 +11256,8 @@
     "maintainerURL": "",
     "description": "Offline Text-To-Speech based on festival.",
     "issues": [],
-    "stars": 17
+    "stars": 17,
+    "hasGithubIssues": true
   },
   {
     "name": "MMM-Tube-Status",
@@ -11216,7 +11267,8 @@
     "maintainerURL": "https://github.com/nigel-daniels",
     "description": "Simple at-a-glance display of the London Underground system status. See <a target=\"_blank\" href=\"https://github.com/emanuele-albini/MMM-TFL-Status\">MMM-TFL-Status</a> for more modes (e.g., Elizabeth line, DLR, Buses, Tram, etc.).",
     "issues": [],
-    "stars": 3
+    "stars": 3,
+    "hasGithubIssues": true
   },
   {
     "name": "MMM-TuyaSL",
@@ -11226,7 +11278,8 @@
     "maintainerURL": "https://github.com/slametps",
     "description": "Display the status of smarthome devices based on Tuya IoT-Platform (managed by SmartLife app).",
     "issues": [],
-    "stars": 3
+    "stars": 3,
+    "hasGithubIssues": true
   },
   {
     "name": "MMM-TUZSAZaragoza",
@@ -11236,7 +11289,8 @@
     "maintainerURL": "https://github.com/rafagale",
     "description": "Get estimations for bus stops in the city of Zaragoza (Spain).",
     "issues": [],
-    "stars": 2
+    "stars": 2,
+    "hasGithubIssues": true
   },
   {
     "name": "MMM-TvheadendDVR",
@@ -11246,7 +11300,8 @@
     "maintainerURL": "https://github.com/XBCreepinJesus",
     "description": "Show your upcoming Tvheadend recordings.",
     "issues": [],
-    "stars": 0
+    "stars": 0,
+    "hasGithubIssues": true
   },
   {
     "name": "MMM-TweetsByTimelineOrList",
@@ -11256,7 +11311,8 @@
     "maintainerURL": "",
     "description": "Displays tweets a few at a time from a user's home timeline or list.",
     "issues": [],
-    "stars": 13
+    "stars": 13,
+    "hasGithubIssues": true
   },
   {
     "name": "MMM-TwitchAlert",
@@ -11266,7 +11322,8 @@
     "maintainerURL": "https://github.com/WilliamFitzjohn",
     "description": "Get notified when your favourite Twitch streamers go live.",
     "issues": [],
-    "stars": 2
+    "stars": 2,
+    "hasGithubIssues": true
   },
   {
     "name": "twitControl",
@@ -11276,7 +11333,8 @@
     "maintainerURL": "",
     "description": "Display your Twitter feed.",
     "issues": [],
-    "stars": 9
+    "stars": 9,
+    "hasGithubIssues": true
   },
   {
     "name": "MMM-TwitterTrendsByPlace",
@@ -11285,8 +11343,7 @@
     "maintainer": "AdamMoses-GitHub",
     "maintainerURL": "",
     "description": "Displays the Twitter Trending Topics for a given place or city, as well as showing the tweet volume for each topic.",
-    "issues": [],
-    "stars": 12
+    "issues": []
   },
   {
     "name": "MMM-uber",
