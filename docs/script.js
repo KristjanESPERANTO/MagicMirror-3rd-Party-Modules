@@ -11,8 +11,8 @@ const darkMode = document.getElementById("dark-mode");
 
 const tagsList = [
   "calendar",
-  "news",
   "motion detection",
+  "news",
   "public transport",
   "smart home",
   "sport",
