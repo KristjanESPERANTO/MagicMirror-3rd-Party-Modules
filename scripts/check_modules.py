@@ -2,10 +2,9 @@
 """Function to run some checks to all downloaded modules."""
 
 from pathlib import Path
-from datetime import datetime
+from datetime import datetime, timezone
 import json
 import subprocess
-
 
 def search_in_file(path, searchstring):
     """Function to search a string in a file."""
@@ -395,6 +394,12 @@ def get_last_commit_date(module, module_directory_path):
         .stdout.decode()
         .rstrip()
     )
+
+    # If the last commit is older than two years, we make the module heavier for the default sort order.
+    last_commit_date = datetime.strptime(module["lastCommit"], '%Y-%m-%dT%H:%M:%S%z')
+    current_datetime = datetime.now(timezone.utc)
+    if (current_datetime - last_commit_date).days > 365 * 2:
+        module["defaultSortWeight"] += 1
 
 
 def check_dependency_updates(module, module_directory_path):
