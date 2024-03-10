@@ -26,7 +26,7 @@
   "homepage": "https://github.com/KristjanESPERANTO/MagicMirror-3rd-Party-Modules#readme",
   "devDependencies": {
     "@eslint/js": "^8.57.0",
-    "@stylistic/eslint-plugin": "^1.6.2",
+    "@stylistic/eslint-plugin": "^1.6.3",
     "eslint": "^8.57.0",
     "eslint-plugin-import": "^2.29.1",
     "husky": "^9.0.11",
@@ -73,7 +73,7 @@
     "*": "prettier --ignore-unknown --write"
   },
   "dependencies": {
-    "marked": "^12.0.0",
+    "marked": "^12.0.1",
     "normalize-package-data": "^6.0.0",
     "npm-check-updates": "^16.14.15",
     "ntl": "^5.1.0",
