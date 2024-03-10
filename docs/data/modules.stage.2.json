@@ -29,7 +29,7 @@
     "maintainerURL": "https://github.com/jinserk",
     "description": "Show 4 consecutive 12-hr forecast, provided by <a target=\"_blank\" href=\"https://www.weather.gov/documentation/services-web-api\">NOAA National Weather Service API</a>. No user registration nor API-key required.",
     "issues": [],
-    "stars": 3,
+    "stars": 4,
     "hasGithubIssues": true
   },
   {
@@ -40,7 +40,7 @@
     "maintainerURL": "https://github.com/nigel-daniels",
     "description": "Simple display of today, tomorrow &amp; next-day, designed to work with MMM-Weather-Now. Now uses Open Weather as WeatherBit reduced the free service to an unusable level :( If you installed an older version ( &lt; 18 Oct 2022 ), please update and get a new api key!",
     "issues": [],
-    "stars": 32,
+    "stars": 33,
     "hasGithubIssues": true
   },
   {
@@ -74,7 +74,7 @@
     "description": "Display weather information using the AccuWeather API.",
     "issues": [],
     "stars": 3,
-    "hasGithubIssues": false
+    "hasGithubIssues": true
   },
   {
     "name": "MMM-Advent",
@@ -85,6 +85,17 @@
     "description": "Display a candle burning down towards a specific date (e.g. an advent candle).",
     "issues": [],
     "stars": 11,
+    "hasGithubIssues": true
+  },
+  {
+    "name": "MMM-AfvalWijzer",
+    "url": "https://github.com/gertperdZA/MMM-AfvalWijzer",
+    "id": "gertperdZA/MMM-AfvalWijzer",
+    "maintainer": "gertperdZA",
+    "maintainerURL": "",
+    "description": "Display trashcollection days of the Afvalwijzer service in the Netherlands.",
+    "issues": [],
+    "stars": 0,
     "hasGithubIssues": true
   },
   {
@@ -187,6 +198,17 @@
     "hasGithubIssues": false
   },
   {
+    "name": "MMM-AlertExt",
+    "url": "https://github.com/MMRIZE/MMM-AlertExt",
+    "id": "MMRIZE/MMM-AlertExt",
+    "maintainer": "MMRIZE",
+    "maintainerURL": "",
+    "description": "Alternative programmable alert/notification presenter.",
+    "issues": [],
+    "stars": 2,
+    "hasGithubIssues": true
+  },
+  {
     "name": "MMM-alexa",
     "url": "https://github.com/sakirtemel/MMM-alexa",
     "id": "sakirtemel/MMM-alexa",
@@ -194,7 +216,7 @@
     "maintainerURL": "",
     "description": "Amazon Alexa integration with using JavaScript only.",
     "issues": [],
-    "stars": 51,
+    "stars": 52,
     "hasGithubIssues": true
   },
   {
@@ -205,7 +227,7 @@
     "maintainerURL": "",
     "description": "The MMM-AlexaControl module allows you to control your Mirror with Alexa (every device that support Wemos devices). You can turn it on and off, change the page and send notifications to other modules.",
     "issues": [],
-    "stars": 41,
+    "stars": 42,
     "hasGithubIssues": true
   },
   {
@@ -315,7 +337,7 @@
     "maintainerURL": "",
     "description": "A somewhat RESTful(ish) API.",
     "issues": [],
-    "stars": 18,
+    "stars": 19,
     "hasGithubIssues": true
   },
   {
@@ -460,7 +482,7 @@
     "maintainerURL": "https://github.com/Fifteen15Studios",
     "description": "Set 1 or more schedules to dim and brighten your screen at specific times.",
     "issues": [],
-    "stars": 25,
+    "stars": 26,
     "hasGithubIssues": true
   },
   {
@@ -515,7 +537,8 @@
     "maintainerURL": "",
     "description": "Easy, hands free Amazon Alexa integration; activated, simply by saying \"Alexa\".",
     "issues": [],
-    "stars": 152,
+    "outdated": "Abandoned. No reactions to issues since years. The documentation currently available does not work any more (<a href=\"https://github.com/MagicMirrorOrg/MagicMirror/issues/3398\">#3398</a>).",
+    "stars": 154,
     "hasGithubIssues": true
   },
   {
@@ -870,7 +893,7 @@
     "maintainerURL": "https://github.com/CptMeetKat",
     "description": "Display ideas for when you're bored to keep your boring life fresh.",
     "issues": [],
-    "stars": 4,
+    "stars": 5,
     "hasGithubIssues": true
   },
   {
@@ -1035,7 +1058,7 @@
     "maintainerURL": "https://github.com/werthdavid",
     "description": "A module that flickers the whole screen to prevent a burn-in effect on your display.",
     "issues": [],
-    "stars": 23,
+    "stars": 25,
     "hasGithubIssues": true
   },
   {
@@ -1046,7 +1069,7 @@
     "maintainerURL": "",
     "description": "Display Dutch bus and some other public transports for a targeted set of bus stops.",
     "issues": [],
-    "stars": 2,
+    "stars": 3,
     "hasGithubIssues": true
   },
   {
@@ -1090,7 +1113,7 @@
     "maintainerURL": "",
     "description": "CalDav Parser to convert to iCal format.",
     "issues": [],
-    "stars": 6,
+    "stars": 7,
     "hasGithubIssues": true
   },
   {
@@ -1112,7 +1135,7 @@
     "maintainerURL": "",
     "description": "Extended calendar and event view.",
     "issues": [],
-    "stars": 33,
+    "stars": 36,
     "hasGithubIssues": true
   },
   {
@@ -1123,7 +1146,7 @@
     "maintainerURL": "",
     "description": "Extended calendar and event view. Show calendar as agenda.",
     "issues": [],
-    "stars": 9,
+    "stars": 10,
     "hasGithubIssues": true
   },
   {
@@ -1311,7 +1334,7 @@
     "maintainerURL": "https://github.com/shbatm",
     "description": "Rotate modules, to save space on screen.",
     "issues": [],
-    "stars": 36,
+    "stars": 38,
     "hasGithubIssues": true
   },
   {
@@ -1389,7 +1412,7 @@
     "maintainerURL": "https://toddsantoro.com",
     "description": "Displays a random Chuck Norris fact using a free public API.",
     "issues": [],
-    "stars": 4,
+    "stars": 5,
     "hasGithubIssues": true
   },
   {
@@ -1513,7 +1536,7 @@
     "maintainerURL": "",
     "description": "Display cryptocurrency information from the Coin Market Cap website. Ticker Price, Logos, Sparkline Graphs, etc.",
     "issues": [],
-    "stars": 35,
+    "stars": 36,
     "hasGithubIssues": true
   },
   {
@@ -1568,7 +1591,7 @@
     "maintainerURL": "",
     "description": "Display internet connection status.",
     "issues": [],
-    "stars": 27,
+    "stars": 28,
     "hasGithubIssues": true
   },
   {
@@ -1602,7 +1625,7 @@
     "description": "Display a count down to a date/event.",
     "issues": [],
     "outdated": "Abandoned. No reactions to issues since years. Seems not to work anymore. Try MMM-CountDown by daterrell instead.",
-    "stars": 35,
+    "stars": 36,
     "hasGithubIssues": true
   },
   {
@@ -2640,7 +2663,7 @@
     "maintainerURL": "",
     "description": "Display public transport information/departure boards for any public transport in Norway.",
     "issues": [],
-    "stars": 15,
+    "stars": 16,
     "hasGithubIssues": true
   },
   {
@@ -2651,7 +2674,7 @@
     "maintainerURL": "",
     "description": "Module to display weather forecast information from Environment Canada.",
     "issues": [],
-    "stars": 2,
+    "stars": 3,
     "hasGithubIssues": true
   },
   {
@@ -2729,7 +2752,7 @@
     "maintainerURL": "",
     "description": "Simple countdown timer for events. Birthdays, weddings, anniversaries, vacations, etc.",
     "issues": [],
-    "stars": 13,
+    "stars": 14,
     "hasGithubIssues": true
   },
   {
@@ -2763,7 +2786,7 @@
     "maintainerURL": "",
     "description": "Add some EyeCandy to your mirror. You can even choose your own local images or internet images.",
     "issues": [],
-    "stars": 42,
+    "stars": 44,
     "hasGithubIssues": true
   },
   {
@@ -2864,7 +2887,7 @@
     "maintainerURL": "https://github.com/alanshen111",
     "description": "Displays some ✨interesting✨ facts! Makes your mirror look like an RPG loading screen. Example screenshot included.",
     "issues": [],
-    "stars": 12,
+    "stars": 13,
     "hasGithubIssues": true
   },
   {
@@ -2875,7 +2898,7 @@
     "maintainerURL": "",
     "description": "Shows the text based weather alerts from the Norwegian Meteorological Institute (the Yr weather providers). Norwegian language only.",
     "issues": [],
-    "stars": 3,
+    "stars": 4,
     "hasGithubIssues": true
   },
   {
@@ -2886,7 +2909,7 @@
     "maintainerURL": "",
     "description": "Can be used for adding notes using fast and easy web interface.",
     "issues": [],
-    "stars": 6,
+    "stars": 7,
     "hasGithubIssues": true
   },
   {
@@ -2920,7 +2943,7 @@
     "maintainerURL": "",
     "description": "Display random or your most treasured <a target=\"_blank\" href=\"https://cht.sh\">cheat sheets</a> and learn something new while you have your cup of coffee.",
     "issues": [],
-    "stars": 0,
+    "stars": 1,
     "hasGithubIssues": true
   },
   {
@@ -2942,7 +2965,7 @@
     "maintainerURL": "",
     "description": "Wake up, $USER... A module giving you the cyberpunk feeling in the morning that you deserve. The Matrix has you...",
     "issues": [],
-    "stars": 3,
+    "stars": 4,
     "hasGithubIssues": true
   },
   {
@@ -3131,7 +3154,7 @@
     "description": "Module that tracks nearby planes based on Flightradar24 data.",
     "issues": [],
     "outdated": "Abandoned. Repo has been archived at 2024-01-22.",
-    "stars": 18,
+    "stars": 19,
     "hasGithubIssues": true
   },
   {
@@ -3163,7 +3186,7 @@
     "maintainerURL": "https://github.com/tbouron",
     "description": "Module that uses ADS-B systems to track and display nearby planes.",
     "issues": [],
-    "stars": 10,
+    "stars": 11,
     "hasGithubIssues": true
   },
   {
@@ -3207,7 +3230,7 @@
     "maintainerURL": "",
     "description": "Find My iPhone tells you the location of your iPhone and sends loud, beeping tones, even when muted.",
     "issues": [],
-    "stars": 14,
+    "stars": 15,
     "hasGithubIssues": true
   },
   {
@@ -3395,7 +3418,7 @@
     "maintainerURL": "",
     "description": "Display Gas Station prices.",
     "issues": [],
-    "stars": 56,
+    "stars": 57,
     "hasGithubIssues": true
   },
   {
@@ -3428,7 +3451,7 @@
     "maintainerURL": "",
     "description": "Displays a grid simulating the <a target=\"_blank\" href=\"https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life\">Game of Life</a>.",
     "issues": [],
-    "stars": 11,
+    "stars": 12,
     "hasGithubIssues": true
   },
   {
@@ -3566,6 +3589,17 @@
   },
   {
     "name": "MMM-Globe",
+    "url": "https://github.com/Eunanibus/MMM-Globe",
+    "id": "Eunanibus/MMM-Globe",
+    "maintainer": "Eunanibus",
+    "maintainerURL": "",
+    "description": "Displays a rotating globe constructed of Hexadecimal shapes specifically formatted to look great on a MagicMirror.",
+    "issues": [],
+    "stars": 39,
+    "hasGithubIssues": true
+  },
+  {
+    "name": "MMM-Globe",
     "url": "https://github.com/LukeSkywalker92/MMM-Globe",
     "id": "LukeSkywalker92/MMM-Globe",
     "maintainer": "LukeSkywalker92",
@@ -3583,7 +3617,7 @@
     "maintainerURL": "",
     "description": "Show a list of unread gmails.",
     "issues": [],
-    "stars": 9,
+    "stars": 10,
     "hasGithubIssues": true
   },
   {
@@ -3605,7 +3639,7 @@
     "maintainerURL": "https://wiki.bugsounet.fr",
     "description": "MMM-GoogleAssistant is an real embedded Google assistant on MagicMirror² with many <a target=\"_blank\" href=\"#extended-plugins-for-mmm-googleassistant\">plugins</a> . [Maintained].",
     "issues": [],
-    "stars": 79,
+    "stars": 81,
     "hasGithubIssues": false
   },
   {
@@ -3639,7 +3673,7 @@
     "maintainerURL": "https://github.com/randomBrainstormer",
     "description": "Get your Google Calendars in the shape of MagicMirror's default calendar.",
     "issues": [],
-    "stars": 53,
+    "stars": 56,
     "hasGithubIssues": true
   },
   {
@@ -3661,7 +3695,7 @@
     "maintainerURL": "https://github.com/No3x",
     "description": "Display notes from a Google Doc.",
     "issues": [],
-    "stars": 12,
+    "stars": 14,
     "hasGithubIssues": true
   },
   {
@@ -3705,7 +3739,7 @@
     "maintainerURL": "",
     "description": "Displays a google map of an origin and destination.",
     "issues": [],
-    "stars": 21,
+    "stars": 22,
     "hasGithubIssues": true
   },
   {
@@ -3716,7 +3750,7 @@
     "maintainerURL": "https://github.com/MartinGris",
     "description": "Tracking of multiple objects on a google map. Position can be updated by a notification.",
     "issues": [],
-    "stars": 13,
+    "stars": 14,
     "hasGithubIssues": true
   },
   {
@@ -3738,7 +3772,7 @@
     "maintainerURL": "https://github.com/hermanho",
     "description": "Image gallery or wallpaper with your Google Photos account.",
     "issues": [],
-    "stars": 153,
+    "stars": 154,
     "hasGithubIssues": true
   },
   {
@@ -3815,7 +3849,7 @@
     "maintainerURL": "",
     "description": "Text-to-Speech module with Google Cloud TTS API. Give a voice to your Mirror.",
     "issues": [],
-    "stars": 10,
+    "stars": 11,
     "hasGithubIssues": true
   },
   {
@@ -3848,7 +3882,7 @@
     "maintainerURL": "https://github.com/Tom-Hirschberger",
     "description": "Send notifications based on GPIO events. Can be used as PIR module and with rotary encoders.",
     "issues": [],
-    "stars": 9,
+    "stars": 10,
     "hasGithubIssues": true
   },
   {
@@ -4026,7 +4060,7 @@
     "maintainerURL": "",
     "description": "Voice-Control module based on Google Speech Recognizer (annyang). Send a notification to all other modules on voice detection.",
     "issues": [],
-    "stars": 23,
+    "stars": 25,
     "hasGithubIssues": true
   },
   {
@@ -4147,7 +4181,7 @@
     "maintainerURL": "https://github.com/zuo000",
     "description": "HomeAssistant frontend module using HA REST API, including Light, Switch, Sensor.",
     "issues": [],
-    "stars": 21,
+    "stars": 22,
     "hasGithubIssues": true
   },
   {
@@ -4180,7 +4214,7 @@
     "maintainerURL": "https://github.com/mathewmeconry",
     "description": "Displays information from HomeAssistant via Rest API. Litens for State changes with Websockets. Touch control for Entities.",
     "issues": [],
-    "stars": 6,
+    "stars": 7,
     "hasGithubIssues": true
   },
   {
@@ -4191,7 +4225,7 @@
     "maintainerURL": "https://github.com/wonderslug",
     "description": "Displays information from Home Assistant using Home Assistant Templates to render any HTML you want for the module. Includes support for Material Design Icons, Websockets for fast updating, and auto reconnect on Home Assistant restarts. Allows you to show or hide a whole module based on a Home Assistant Template as well.",
     "issues": [],
-    "stars": 77,
+    "stars": 80,
     "hasGithubIssues": true
   },
   {
@@ -4202,7 +4236,7 @@
     "maintainerURL": "https://github.com/john3300",
     "description": "Displays notifications sent with a simple HTTP POST request.",
     "issues": [],
-    "stars": 10,
+    "stars": 11,
     "hasGithubIssues": true
   },
   {
@@ -4257,7 +4291,7 @@
     "maintainerURL": "",
     "description": "Displays Daily Horoscope.",
     "issues": [],
-    "stars": 4,
+    "stars": 5,
     "hasGithubIssues": true
   },
   {
@@ -4302,7 +4336,7 @@
     "description": "Display XML data from a HTTP response.",
     "issues": [],
     "outdated": "Abandoned. No reactions to issues since years. Seems not to work anymore.",
-    "stars": 18,
+    "stars": 17,
     "hasGithubIssues": true
   },
   {
@@ -5746,6 +5780,15 @@
     "hasGithubIssues": true
   },
   {
+    "name": "MMM-MealieMenu",
+    "url": "https://github.com/zanix/MMM-MealieMenu",
+    "id": "zanix/MMM-MealieMenu",
+    "maintainer": "zanix",
+    "maintainerURL": "https://github.com/zanix",
+    "description": "Displays a weekly meal menu from the <a target=\"_blank\" href=\"https://mealie.io\">Mealie</a> recipe management app.",
+    "issues": []
+  },
+  {
     "name": "MMM-Memo",
     "url": "https://github.com/schnibel/MMM-Memo",
     "id": "schnibel/MMM-Memo",
@@ -5965,6 +6008,15 @@
     "issues": [],
     "stars": 3,
     "hasGithubIssues": true
+  },
+  {
+    "name": "mmm-cta",
+    "url": "https://github.com/jhwelch/mmm-cta",
+    "id": "jhwelch/mmm-cta",
+    "maintainer": "jhwelch",
+    "maintainerURL": "https://github.com/jhwelch",
+    "description": "Arrival times for Chicago Transit Authority buses and trains. Supports multiple bus and/or train stops.",
+    "issues": []
   },
   {
     "name": "mmm-dropbox",
@@ -8772,6 +8824,7 @@
     "maintainerURL": "",
     "description": "Display local transport for different regions of Finland (Helsinki, Hämeenlinna, Joensuu, Jyväskylä, Kajaani, Kotka, Kouvola, Kuopio, Lahti, Lappeenranta, Mikkeli, Tampere, Oulu, Rovaniemi, Turku, Vaasa)",
     "issues": [],
+    "outdated": "Abandoned. No reactions to issues since years. Missing instructions to install dependency 'node-fetch'. API not working without API key anymore.",
     "stars": 4,
     "hasGithubIssues": true
   },
@@ -9453,7 +9506,7 @@
     "id": "mumblebaj/MMM-Rugby",
     "maintainer": "mumblebaj",
     "maintainerURL": "",
-    "description": "Module to display Rugby World Rankings and Upcoming Matches and results",
+    "description": "Module to display Rugby World Rankings and Upcoming Matches and results.",
     "issues": [],
     "stars": 1,
     "hasGithubIssues": true
@@ -9901,6 +9954,15 @@
     "outdated": "Abandoned. Repo has been archived at 2022-05-22.",
     "stars": 19,
     "hasGithubIssues": true
+  },
+  {
+    "name": "MMM-SimpleBackgroundSlideshow",
+    "url": "https://github.com/muhammedsaidckr/MMM-SimpleBackgroundSlideshow",
+    "id": "muhammedsaidckr/MMM-SimpleBackgroundSlideshow",
+    "maintainer": "muhammedsaidckr",
+    "maintainerURL": "https://github.com/muhammedsaidckr",
+    "description": "is a module for MagicMirror² that allows you to display a simple, customizable background slideshow on your MagicMirror².",
+    "issues": []
   },
   {
     "name": "MMM-SimpleLogo",

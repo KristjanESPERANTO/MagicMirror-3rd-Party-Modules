@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "2024-02-27T20:00:51.330Z",
+  "lastUpdate": "2024-03-10T21:03:06.725Z",
   "modules": [
     {
       "name": "MMM-01ZM",
@@ -71,6 +71,15 @@
       "maintainer": "Jopyth",
       "maintainerURL": "",
       "description": "Display a candle burning down towards a specific date (e.g. an advent candle).",
+      "issues": []
+    },
+    {
+      "name": "MMM-AfvalWijzer",
+      "url": "https://github.com/gertperdZA/MMM-AfvalWijzer",
+      "id": "gertperdZA/MMM-AfvalWijzer",
+      "maintainer": "gertperdZA",
+      "maintainerURL": "",
+      "description": "Display trashcollection days of the Afvalwijzer service in the Netherlands.",
       "issues": []
     },
     {
@@ -152,6 +161,15 @@
       "maintainer": "bugsounet",
       "maintainerURL": "https://wiki.bugsounet.fr",
       "description": "Display any warning, information or error on your screen about Assistant.",
+      "issues": []
+    },
+    {
+      "name": "MMM-AlertExt",
+      "url": "https://github.com/MMRIZE/MMM-AlertExt",
+      "id": "MMRIZE/MMM-AlertExt",
+      "maintainer": "MMRIZE",
+      "maintainerURL": "",
+      "description": "Alternative programmable alert/notification presenter.",
       "issues": []
     },
     {
@@ -424,7 +442,8 @@
       "maintainer": "dolanmiu",
       "maintainerURL": "",
       "description": "Easy, hands free Amazon Alexa integration; activated, simply by saying \"Alexa\".",
-      "issues": []
+      "issues": [],
+      "outdated": "Abandoned. No reactions to issues since years. The documentation currently available does not work any more (<a href=\"https://github.com/MagicMirrorOrg/MagicMirror/issues/3398\">#3398</a>)."
     },
     {
       "name": "EXT-Background",
@@ -2928,6 +2947,15 @@
     },
     {
       "name": "MMM-Globe",
+      "url": "https://github.com/Eunanibus/MMM-Globe",
+      "id": "Eunanibus/MMM-Globe",
+      "maintainer": "Eunanibus",
+      "maintainerURL": "",
+      "description": "Displays a rotating globe constructed of Hexadecimal shapes specifically formatted to look great on a MagicMirror.",
+      "issues": []
+    },
+    {
+      "name": "MMM-Globe",
       "url": "https://github.com/LukeSkywalker92/MMM-Globe",
       "id": "LukeSkywalker92/MMM-Globe",
       "maintainer": "LukeSkywalker92",
@@ -4716,6 +4744,15 @@
       "issues": []
     },
     {
+      "name": "MMM-MealieMenu",
+      "url": "https://github.com/zanix/MMM-MealieMenu",
+      "id": "zanix/MMM-MealieMenu",
+      "maintainer": "zanix",
+      "maintainerURL": "https://github.com/zanix",
+      "description": "Displays a weekly meal menu from the <a target=\"_blank\" href=\"https://mealie.io\">Mealie</a> recipe management app.",
+      "issues": []
+    },
+    {
       "name": "MMM-Memo",
       "url": "https://github.com/schnibel/MMM-Memo",
       "id": "schnibel/MMM-Memo",
@@ -4894,6 +4931,15 @@
       "maintainer": "sthuber90",
       "maintainerURL": "",
       "description": "Amazon Photos as background images.",
+      "issues": []
+    },
+    {
+      "name": "mmm-cta",
+      "url": "https://github.com/jhwelch/mmm-cta",
+      "id": "jhwelch/mmm-cta",
+      "maintainer": "jhwelch",
+      "maintainerURL": "https://github.com/jhwelch",
+      "description": "Arrival times for Chicago Transit Authority buses and trains. Supports multiple bus and/or train stops.",
       "issues": []
     },
     {
@@ -7199,7 +7245,8 @@
       "maintainer": "alonsourbano",
       "maintainerURL": "",
       "description": "Display local transport for different regions of Finland (Helsinki, Hämeenlinna, Joensuu, Jyväskylä, Kajaani, Kotka, Kouvola, Kuopio, Lahti, Lappeenranta, Mikkeli, Tampere, Oulu, Rovaniemi, Turku, Vaasa)",
-      "issues": []
+      "issues": [],
+      "outdated": "Abandoned. No reactions to issues since years. Missing instructions to install dependency 'node-fetch'. API not working without API key anymore."
     },
     {
       "name": "MMM-Pull",
@@ -7759,7 +7806,7 @@
       "id": "mumblebaj/MMM-Rugby",
       "maintainer": "mumblebaj",
       "maintainerURL": "",
-      "description": "Module to display Rugby World Rankings and Upcoming Matches and results",
+      "description": "Module to display Rugby World Rankings and Upcoming Matches and results.",
       "issues": []
     },
     {
@@ -8126,6 +8173,15 @@
       "description": "Simple, multi-threaded interface for HC-SR04 ultra sonic sensors to be used with MMM-pages.",
       "issues": [],
       "outdated": "Abandoned. Repo has been archived at 2022-05-22."
+    },
+    {
+      "name": "MMM-SimpleBackgroundSlideshow",
+      "url": "https://github.com/muhammedsaidckr/MMM-SimpleBackgroundSlideshow",
+      "id": "muhammedsaidckr/MMM-SimpleBackgroundSlideshow",
+      "maintainer": "muhammedsaidckr",
+      "maintainerURL": "https://github.com/muhammedsaidckr",
+      "description": "is a module for MagicMirror² that allows you to display a simple, customizable background slideshow on your MagicMirror².",
+      "issues": []
     },
     {
       "name": "MMM-SimpleLogo",
