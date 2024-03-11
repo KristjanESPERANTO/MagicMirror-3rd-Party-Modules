@@ -49,6 +49,7 @@ Here are some test results:
 - _Typo: Found 'MagicMirror2' in file `README.md`: Replace it with `MagicMirror²`._
 - _Recommendation: Found 'uses: actions/checkout@v3' in file `nodejs.yml`: Replace it with v4._
 - _Deprecated: Found 'node-version: [16' in file `nodejs.yml`: Update to current version._
+- _Issue: The license in the package.json (ISC) doesn't match the license file (MIT)._
 
 ## Prerequisites
 
@@ -121,7 +122,6 @@ How can you use it?
 - Show and sort by GitHub Star #1.
 - Move `result.md` to docs.
 - Show results in popup on the page.
-- Check if license in package.json matches the version in LICENSE file (I've seen some mismatches)
 - Check if ESLint is in use. If not, recommend it.
 - Statistics per module
   - last update date

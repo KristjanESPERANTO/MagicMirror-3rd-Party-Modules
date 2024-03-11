@@ -91,6 +91,9 @@ async function updateData () {
           };
           module.stars = data.stargazers_count;
           module.hasGithubIssues = data.has_issues;
+          if (data.license) {
+            module.license = data.license.spdx_id;
+          }
           results.push(repositoryData);
         } else {
           console.error("\nError fetching GitHub API data:", response.status, response.statusText);
@@ -102,6 +105,9 @@ async function updateData () {
         if (existingRepository) {
           module.stars = existingRepository.gitHubData.stars;
           module.hasGithubIssues = existingRepository.gitHubData.has_issues;
+          if (existingRepository.gitHubData.license) {
+            module.license = existingRepository.gitHubData.license;
+          }
           results.push(existingRepository);
         }
       }

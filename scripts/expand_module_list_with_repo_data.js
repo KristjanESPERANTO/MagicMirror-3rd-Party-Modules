@@ -70,10 +70,11 @@ async function findAndResizeImage (moduleName, moduleMaintainer) {
 async function addInformationFromPackageJson (moduleList) {
   for (const module of moduleList) {
     console.log(`+++ ${module.name} by ${module.maintainer}`);
+    let moduleData = {};
     try {
       // Get package.json
       const filePath = `./modules/${module.name}-----${module.maintainer}/package.json`;
-      const moduleData = await getJson(filePath);
+      moduleData = await getJson(filePath);
 
       // Normalize package.json
       const warnFn = (msg) => {
@@ -127,41 +128,6 @@ async function addInformationFromPackageJson (moduleList) {
       if (moduleData.bugs && moduleData.bugs.url && moduleData.bugs.url.includes("github.com") && module.hasGithubIssues === false) {
         module.issues.push("Issues are not enabled in the GitHub repository. So users cannot report bugs. Please enable issues in your repo.");
       }
-
-      if (moduleData.license) {
-        // Add license info to the module information
-        module.license = moduleData.license;
-
-        // Use license information to determain if we can use an image
-        const useableLicenses = [
-          "AGPL-3.0",
-          "AGPL-3.0-or-later",
-          "Apache-2.0",
-          "BSD-3-Clause",
-          "GPL-3.0",
-          "GPL-3.0-only",
-          "GPL-3.0-or-later",
-          "ISC",
-          "MIT",
-          "MPL-2.0",
-          "LGPL-2.1-only"
-        ];
-        if (useableLicenses.includes(moduleData.license)) {
-          const {targetImageName, issues} = await findAndResizeImage(
-            module.name,
-            module.maintainer
-          );
-          const imagePath = targetImageName;
-          if (imagePath) {
-            module.image = imagePath;
-          }
-          if (issues) {
-            module.issues = [...module.issues, ...issues];
-          }
-        } else {
-          module.issues.push("No compatible or wrong license field in 'package.json'. Without that, we can't use an image.");
-        }
-      }
     } catch (error) {
       if (error.code === "ENOENT") {
         module.issues.push("There is no `package.json`. We need this file to gather information about the module for the module list page.");
@@ -173,8 +139,54 @@ async function addInformationFromPackageJson (moduleList) {
         module.issues.push(`An error occurred while getting information from 'package.json': ${error}`);
       }
     }
+    await checkLicenseAndHandleScreenshot(moduleData, module);
   }
   return moduleList;
+}
+
+async function checkLicenseAndHandleScreenshot (moduleData, module) {
+  if (moduleData.license && moduleData.license !== "NOASSERTION" || module.license) {
+    if (!module.license) {
+      // If license info is not set from the GitHub data use the one from package.json.
+      module.license = moduleData.license;
+    } else if (module.license && moduleData.license && !moduleData.license.includes(module.license)) {
+      // If license info exists from the GitHub data and package.json, but they don't match, add an issue.
+      const issueText = `Issue: The license in the package.json (${moduleData.license}) doesn't match the license file (${module.license}).`;
+      module.issues.push(issueText);
+    }
+
+    const useableLicenses = [
+      "AGPL-3.0",
+      "AGPL-3.0-or-later",
+      "Apache-2.0",
+      "BSD-3-Clause",
+      "GPL-3.0",
+      "GPL-3.0-only",
+      "GPL-3.0-or-later",
+      "ISC",
+      "MIT",
+      "MPL-2.0",
+      "LGPL-2.1",
+      "LGPL-2.1-only"
+    ];
+
+    // Use license information to determain if we can use an image
+    if (useableLicenses.includes(module.license)) {
+      const {targetImageName, issues} = await findAndResizeImage(
+        module.name,
+        module.maintainer
+      );
+      const imagePath = targetImageName;
+      if (imagePath) {
+        module.image = imagePath;
+      }
+      if (issues) {
+        module.issues = [...module.issues, ...issues];
+      }
+    } else {
+      module.issues.push("No compatible or wrong license field in 'package.json' or LICENSE file. Without that, we can't use an image.");
+    }
+  }
 }
 
 async function expandModuleList () {
