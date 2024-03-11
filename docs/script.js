@@ -311,10 +311,19 @@ sortDropdown.addEventListener("change", () => {
 });
 
 showOutdated.addEventListener("change", () => {
+  const urlParams = new URLSearchParams(window.location.search);
+  urlParams.set("showOutdated", showOutdated.checked);
+  window.history.replaceState({}, "", `${window.location.pathname}?${urlParams}`);
   updateModuleCardContainer();
 });
 
 async function initiate () {
+  const urlParams = new URLSearchParams(window.location.search);
+  if (urlParams.has("showOutdated")) {
+    const showOutdatedParam = urlParams.get("showOutdated");
+    showOutdated.checked = showOutdatedParam === "true";
+  }
+
   const modulesFile = "data/modules.min.json";
   try {
     const response = await fetch(modulesFile);
