@@ -1,11 +1,11 @@
 {
-  "moduleCounter": 1132,
-  "modulesWithImageCounter": 535,
-  "modulesWithIssuesCounter": 1119,
-  "issueCounter": 8003,
-  "lastUpdate": "2024-03-10T22:13:08+01:00",
+  "moduleCounter": 1133,
+  "modulesWithImageCounter": 761,
+  "modulesWithIssuesCounter": 1120,
+  "issueCounter": 8138,
+  "lastUpdate": "2024-03-11T21:36:21+01:00",
   "repositoryHoster": {
-    "github": 1120,
+    "github": 1121,
     "gitlab": 11,
     "bitbucket": 1
   },
@@ -114,6 +114,7 @@
     "ryck": 2,
     "relm923": 2,
     "blixhavn": 2,
+    "lavolp3": 2,
     "FatTony404": 2,
     "awitwicki": 2,
     "CptMeetKat": 2,
@@ -218,7 +219,6 @@
     "Springvar": 1,
     "JockeyDoe": 1,
     "stuloh": 1,
-    "lavolp3": 1,
     "dolanmiu": 1,
     "darickc": 1,
     "falafel2222": 1,

@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "2024-03-10T21:03:06.725Z",
+  "lastUpdate": "2024-03-11T20:25:52.245Z",
   "modules": [
     {
       "name": "MMM-01ZM",
@@ -4166,6 +4166,15 @@
       "maintainer": "shbatm",
       "maintainerURL": "",
       "description": "A module for getting bluetooth remote control and keyboard inputs.",
+      "issues": []
+    },
+    {
+      "name": "MMM-Keyboard",
+      "url": "https://github.com/lavolp3/MMM-Keyboard",
+      "id": "lavolp3/MMM-Keyboard",
+      "maintainer": "lavolp3",
+      "maintainerURL": "",
+      "description": "Creates a virtual keyboard to be used to send commands or text to other modules.",
       "issues": []
     },
     {
