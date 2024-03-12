@@ -98,18 +98,10 @@ async function updateData () {
         } else {
           console.error("\nError fetching GitHub API data:", response.status, response.statusText);
           maxQueryCount = 0;
+          useHistoricalData(previousData, repositoryId, module, results);
         }
       } else {
-        // Add the existing data without updating it
-        const existingRepository = previousData.repositories?.find((repo) => repo.id === repositoryId);
-        if (existingRepository) {
-          module.stars = existingRepository.gitHubData.stars;
-          module.hasGithubIssues = existingRepository.gitHubData.has_issues;
-          if (existingRepository.gitHubData.license) {
-            module.license = existingRepository.gitHubData.license;
-          }
-          results.push(existingRepository);
-        }
+        useHistoricalData(previousData, repositoryId, module, results);
       }
 
       // Quick-and-dirty way to include the number of stars for non-GitHub repositories.
@@ -158,6 +150,19 @@ async function updateData () {
     console.info("\nGitHub data update completed. queryCount:", queryCount, "maxQueryCount:", maxQueryCount, "results:", results.length, "modules:", moduleListLength);
   } catch (error) {
     console.error("Error fetching GitHub API data:", error);
+  }
+}
+
+function useHistoricalData (previousData, repositoryId, module, results) {
+  // Add the existing data without updating it
+  const existingRepository = previousData.repositories?.find((repo) => repo.id === repositoryId);
+  if (existingRepository) {
+    module.stars = existingRepository.gitHubData.stars;
+    module.hasGithubIssues = existingRepository.gitHubData.has_issues;
+    if (existingRepository.gitHubData.license) {
+      module.license = existingRepository.gitHubData.license;
+    }
+    results.push(existingRepository);
   }
 }
 

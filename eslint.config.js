@@ -37,6 +37,7 @@ const config = [
       "max-depth": ["warn", 5],
       "max-lines": ["warn", 400],
       "max-lines-per-function": ["warn", 150],
+      "max-params": ["warn", 5],
       "max-statements": "off",
       "no-await-in-loop": "off",
       "no-console": "off",
