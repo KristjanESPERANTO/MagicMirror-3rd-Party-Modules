@@ -1,16 +1,16 @@
 # Result of the module analysis
 
-Last update: 2024-03-11T21:36:21+01:00
+Last update: 2024-03-13T21:09:15+01:00
 
 ## Statistics
 
 |                      | number   |
 |:---------------------|:--------:|
-| modules analyzed     |   1133   |
-| maintainer           |    636   |
-| modules with issues  |   1120   |
-| issues               |   8138   |
-| modules at github    |   1121   |
+| modules analyzed     |   1131   |
+| maintainer           |    634   |
+| modules with issues  |   1118   |
+| issues               |   8125   |
+| modules at github    |   1119   |
 | modules at gitlab    |     11   |
 | modules at bitbucket |      1   |
 
@@ -87,13 +87,12 @@ Last update: 2024-03-11T21:36:21+01:00
 
 ### [MMM-AfvalWijzer by gertperdZA](https://github.com/gertperdZA/MMM-AfvalWijzer)
 
-1. There is no `package.json`. We need this file to gather information about the module for the module list page.
-2. Typo: Found `<sup>2</sup>` in file `README.md`: Replace it with `²`.`.
-3. Outdated: Found `MichMich/MagicMirror` in file `README.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
-4. Recommendation: The README seems not to have an update instruction (the word 'update' is missing). Please add one.
-5. Deprecated: Found `require("request")` in file `node_helper.js`: Replace it with built-in fetch.
-6. Warning: No LICENSE file.
-7. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
+1. Typo: Found `<sup>2</sup>` in file `README.md`: Replace it with `²`.`.
+2. Outdated: Found `MichMich/MagicMirror` in file `README.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
+3. Recommendation: The README seems not to have an update instruction (the word 'update' is missing). Please add one.
+4. Deprecated: Found `require("request")` in file `node_helper.js`: Replace it with built-in fetch.
+5. Warning: No LICENSE file.
+6. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
 
 ### [MMM-air-raid-monitor-ua by PavlenkoM](https://github.com/PavlenkoM/MMM-air-raid-monitor-ua)
 
@@ -5204,12 +5203,13 @@ Last update: 2024-03-11T21:36:21+01:00
 ### [MMM-max by mirko3000](https://github.com/mirko3000/MMM-max)
 
 1. There is no `package.json`. We need this file to gather information about the module for the module list page.
-2. Typo: Found `Magic Mirror` in file `.gitignore`: Replace it with `MagicMirror²`.
-3. Typo: Found `Magic Mirror` in file `MMM-max.js`: Replace it with `MagicMirror²`.
-4. Outdated: Found `MichMich/MagicMirror` in file `README.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
-5. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
-6. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
-7. The branch name is 'master'. Consider renaming it to 'main'.
+2. No image found.
+3. Typo: Found `Magic Mirror` in file `.gitignore`: Replace it with `MagicMirror²`.
+4. Typo: Found `Magic Mirror` in file `MMM-max.js`: Replace it with `MagicMirror²`.
+5. Outdated: Found `MichMich/MagicMirror` in file `README.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
+6. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
+7. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
+8. The branch name is 'master'. Consider renaming it to 'main'.
 
 ### [MMM-MBTA by edward-shen](https://github.com/edward-shen/MMM-MBTA)
 
@@ -5233,10 +5233,12 @@ Last update: 2024-03-11T21:36:21+01:00
 
 ### [MMM-MealieMenu by zanix](https://github.com/zanix/MMM-MealieMenu)
 
-1. Information: There are updates for 3 dependencie(s):
-   - @stylistic/eslint-plugin    ^1.6.2  →   ^1.6.3
-   - moment                     ^2.29.4  →  ^2.30.1
-   - semantic-release          ^22.0.12  →  ^23.0.2
+1. Information: There are updates for 5 dependencie(s):
+   - @commitlint/cli                   ^19.0.3  →  ^19.1.0
+   - @commitlint/config-conventional   ^19.0.3  →  ^19.1.0
+   - @stylistic/eslint-plugin           ^1.6.2  →   ^1.6.3
+   - moment                            ^2.29.4  →  ^2.30.1
+   - semantic-release                 ^22.0.12  →  ^23.0.2
 
 
 ### [MMM-Memo by schnibel](https://github.com/schnibel/MMM-Memo)
@@ -7196,16 +7198,6 @@ Last update: 2024-03-11T21:36:21+01:00
 1. Recommendation: Found `new Date()` in file `MMM-OnThisDayWikiApi.js`: Replace it by `new Date(Date.now())`: [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
 2. Outdated: Found `MichMich/MagicMirror` in file `README.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
 3. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
-
-### [MMM-OpelStatuses by santanachia](https://github.com/santanachia/MMM-OpelStatuses)
-
-1. No image found.
-2. Recommendation: Found `new Date()` in file `MMM-OpelStatuses.js`: Replace it by `new Date(Date.now())`: [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
-3. Outdated: Found `MichMich/MagicMirror` in file `README.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
-4. Recommendation: The README seems not to have an update instruction (the word 'update' is missing). Please add one.
-5. Deprecated: Found `require('request')` in file `node_helper.js`: Replace it with built-in fetch.
-6. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
-7. The branch name is 'master'. Consider renaming it to 'main'.
 
 ### [MMM-OpenHAB-Items by hggh](https://github.com/hggh/MMM-OpenHAB-Items)
 
@@ -9348,15 +9340,6 @@ Last update: 2024-03-11T21:36:21+01:00
 7. Warning: No LICENSE file.
 8. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
 9. The branch name is 'master'. Consider renaming it to 'main'.
-
-### [MMM-SmokedMirror by Santanachia](https://github.com/Santanachia/MMM-SmokedMirror)
-
-1. Outdated: Found `MichMich/MagicMirror` in file `README.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
-2. Recommendation: Found `require('https')` in file `node_helper.js`: Replace 'https' by 'node:https'.
-3. Typo: Found `Magic Mirror` in file `package.json`: Replace it with `MagicMirror²`.
-4. Warning: No LICENSE file.
-5. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
-6. The branch name is 'master'. Consider renaming it to 'main'.
 
 ### [MMM-Snake by superuserx](https://github.com/superuserx/MMM-Snake)
 

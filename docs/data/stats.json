@@ -1,11 +1,11 @@
 {
-  "moduleCounter": 1133,
+  "moduleCounter": 1131,
   "modulesWithImageCounter": 761,
-  "modulesWithIssuesCounter": 1120,
-  "issueCounter": 8138,
-  "lastUpdate": "2024-03-11T21:36:21+01:00",
+  "modulesWithIssuesCounter": 1118,
+  "issueCounter": 8125,
+  "lastUpdate": "2024-03-13T21:09:15+01:00",
   "repositoryHoster": {
-    "github": 1121,
+    "github": 1119,
     "gitlab": 11,
     "bitbucket": 1
   },
@@ -478,7 +478,6 @@
     "Legion2": 1,
     "NicholasRasi": 1,
     "slugmuffin": 1,
-    "santanachia": 1,
     "hggh": 1,
     "steve415": 1,
     "sathyarajv": 1,
@@ -559,7 +558,6 @@
     "Monkeyanator": 1,
     "jackmeyer": 1,
     "sdetweil": 1,
-    "Santanachia": 1,
     "superuserx": 1,
     "jvanoost": 1,
     "irsheep": 1,

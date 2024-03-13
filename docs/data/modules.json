@@ -153,8 +153,13 @@
     "issues": true,
     "stars": 0,
     "hasGithubIssues": true,
-    "defaultSortWeight": 7,
-    "lastCommit": "2024-03-05T21:07:44+01:00"
+    "tags": [
+      "trashcollection"
+    ],
+    "license": "MIT",
+    "image": "AfvalwijzerScreenshot.jpg",
+    "defaultSortWeight": 6,
+    "lastCommit": "2024-03-13T18:03:30+01:00"
   },
   {
     "name": "MMM-air-raid-monitor-ua",
@@ -3530,7 +3535,7 @@
     "maintainerURL": "",
     "description": "Station monitor for the Dresden/Germany local transport (DVB) bus, tram and train system.",
     "issues": true,
-    "stars": 11,
+    "stars": 12,
     "hasGithubIssues": true,
     "license": "MIT",
     "tags": [
@@ -5404,7 +5409,7 @@
     "id": "bugsounet/MMM-GoogleAssistant",
     "maintainer": "bugsounet",
     "maintainerURL": "https://wiki.bugsounet.fr",
-    "description": "MMM-GoogleAssistant is an real embedded Google assistant on MagicMirror\u00b2 with many <a target=\"_blank\" href=\"#extended-plugins-for-mmm-googleassistant\">plugins</a> . [Maintained].",
+    "description": "MMM-GoogleAssistant is an real embedded Google assistant on MagicMirror\u00b2 with many <a target=\"_blank\" href=\"#extended-plugins-for-mmm-googleassistant\">plugins</a>. [Maintained].",
     "issues": true,
     "stars": 81,
     "hasGithubIssues": false,
@@ -8587,7 +8592,7 @@
     "stars": 1,
     "hasGithubIssues": true,
     "license": "MIT",
-    "defaultSortWeight": 8,
+    "defaultSortWeight": 9,
     "lastCommit": "2019-11-10T17:23:33+01:00"
   },
   {
@@ -8628,14 +8633,16 @@
     "maintainerURL": "https://github.com/zanix",
     "description": "Displays a weekly meal menu from the <a target=\"_blank\" href=\"https://mealie.io\">Mealie</a> recipe management app.",
     "issues": true,
+    "stars": 2,
+    "hasGithubIssues": true,
+    "license": "MIT",
     "tags": [
       "mealie",
       "recipie"
     ],
-    "license": "MIT",
     "image": "MMM-MealieMenu-screenshot.jpg",
     "defaultSortWeight": 1,
-    "lastCommit": "2024-03-10T00:01:24-07:00"
+    "lastCommit": "2024-03-12T20:00:57+00:00"
   },
   {
     "name": "MMM-Memo",
@@ -8768,7 +8775,7 @@
     "maintainerURL": "",
     "description": "Displays your Microsoft To Do tasks on your mirror.",
     "issues": true,
-    "stars": 71,
+    "stars": 74,
     "hasGithubIssues": true,
     "license": "MIT",
     "tags": [
@@ -8818,7 +8825,7 @@
     "maintainerURL": "",
     "description": "Show opening hours for mobile recycling stations in Oslo, Norway. API free, so if it looks intresting, check to see if you can use it for your city too!",
     "issues": true,
-    "stars": 1,
+    "stars": 2,
     "hasGithubIssues": true,
     "license": "MIT",
     "image": "img-example.jpg",
@@ -8870,7 +8877,7 @@
     "maintainerURL": "",
     "description": "Display departures for public transport in Helsinki region - Finland.",
     "issues": true,
-    "stars": 4,
+    "stars": 5,
     "hasGithubIssues": true,
     "tags": [
       "public transport"
@@ -8902,7 +8909,7 @@
     "maintainerURL": "https://github.com/Klettner",
     "description": "Android \ud83d\udcf1 and Windows-desktop \ud83d\udcbb app to control your MagicMirror\u00b2 remotely. (Shutdown, reboot, toggle monitor on/off, change brightness of monitor, custom-commands, etc.).",
     "issues": true,
-    "stars": 54,
+    "stars": 55,
     "hasGithubIssues": true,
     "license": "MIT",
     "image": "LauncherIcon-MMM-Remote-LauncherIcon.jpg",
@@ -8963,13 +8970,15 @@
     "maintainerURL": "https://github.com/jhwelch",
     "description": "Arrival times for Chicago Transit Authority buses and trains. Supports multiple bus and/or train stops.",
     "issues": true,
+    "stars": 0,
+    "hasGithubIssues": true,
+    "license": "MIT",
     "tags": [
       "cta",
       "train",
       "bus",
       "tracker"
     ],
-    "license": "MIT",
     "image": "screenshot.jpg",
     "defaultSortWeight": 13,
     "lastCommit": "2024-03-03T21:24:39-06:00"
@@ -9054,7 +9063,7 @@
     "maintainerURL": "https://github.com/ItsMeBrille",
     "description": "Display Minecraft server status and shows list of active players.",
     "issues": true,
-    "stars": 2,
+    "stars": 3,
     "hasGithubIssues": true,
     "tags": [
       "minecraft",
@@ -9118,7 +9127,7 @@
     "maintainerURL": "https://github.com/cSharpBastard",
     "description": "Display current electrical spot prices in northen Europe (also works in Germany).",
     "issues": true,
-    "stars": 2,
+    "stars": 3,
     "hasGithubIssues": true,
     "tags": [
       "eon",
@@ -9215,7 +9224,7 @@
     "maintainerURL": "",
     "description": "Shows/hides modules and turns on/off hdmi display based on mqtt command.",
     "issues": true,
-    "stars": 2,
+    "stars": 3,
     "hasGithubIssues": true,
     "license": "MIT",
     "defaultSortWeight": 13,
@@ -9293,7 +9302,7 @@
     "maintainerURL": "",
     "description": "Display a weather diagram provided by yr.no.",
     "issues": true,
-    "stars": 29,
+    "stars": 30,
     "hasGithubIssues": true,
     "license": "MIT",
     "image": "Screenshot1.jpg",
@@ -9321,7 +9330,7 @@
     "maintainerURL": "https://github.com/Bee-Mar",
     "description": "An unofficial MagicMirror\u00b2 3rd Party Package Manager. Automates searching, installation, removal, updating, and upgrading of MagicMirror\u00b2 modules.",
     "issues": true,
-    "stars": 164,
+    "stars": 168,
     "hasGithubIssues": true,
     "license": "MIT",
     "image": "ui-src-assets-MagicMirror-Package-Manager-Icon.jpg",
@@ -9414,7 +9423,7 @@
     "maintainerURL": "",
     "description": "Create schedules to control when other modules are shown, hidden or dimmed and to send notifications to other modules.",
     "issues": true,
-    "stars": 95,
+    "stars": 96,
     "hasGithubIssues": true,
     "license": "MIT",
     "tags": [
@@ -9432,7 +9441,7 @@
     "maintainerURL": "https://github.com/balassy",
     "description": "Shows or hides other modules when a momentary push button is pressed. Useful for development and maintenance after the module is deployed.",
     "issues": true,
-    "stars": 5,
+    "stars": 6,
     "hasGithubIssues": true,
     "license": "MIT",
     "tags": [
@@ -9581,7 +9590,7 @@
     "maintainerURL": "",
     "description": "Camera based motion detector that turns of your display after a while, updated fork of alexyaks version.",
     "issues": true,
-    "stars": 46,
+    "stars": 47,
     "hasGithubIssues": true,
     "license": "MIT",
     "tags": [
@@ -9659,7 +9668,7 @@
     "maintainerURL": "",
     "description": "Play music from folder. It's a remade asimhsidd's MMM-MP3Player module.",
     "issues": true,
-    "stars": 2,
+    "stars": 4,
     "hasGithubIssues": false,
     "license": "GPL-3.0",
     "tags": [
@@ -9945,7 +9954,7 @@
     "maintainerURL": "https://wiki.bugsounet.fr",
     "description": "Play any music found on a USB Key or in defined local directory. This module have been defined to work only with MMM-GoogleAssistant.",
     "issues": true,
-    "stars": 1,
+    "stars": 2,
     "hasGithubIssues": false,
     "license": "MIT",
     "tags": [
@@ -10005,7 +10014,7 @@
     "maintainerURL": "",
     "description": "Same functionality as the default Calendar app but different display formatting.",
     "issues": true,
-    "stars": 57,
+    "stars": 58,
     "hasGithubIssues": true,
     "defaultSortWeight": 7,
     "lastCommit": "2022-09-26T22:30:38-04:00"
@@ -10052,7 +10061,7 @@
     "maintainerURL": "https://github.com/smartgic",
     "description": "When a Mycroft AI wake word is detected, an image is displayed and when the recording is done the image disappears.",
     "issues": true,
-    "stars": 1,
+    "stars": 2,
     "hasGithubIssues": false,
     "license": "MIT",
     "image": "docs-screenshot.jpg",
@@ -10356,7 +10365,7 @@
     "hasGithubIssues": true,
     "license": "MIT",
     "image": "node_modules-npm-node_modules-read-node_modules-mute-stream-coverage-lcov-report-sort-arrow-sprite.jpg",
-    "defaultSortWeight": 7,
+    "defaultSortWeight": 8,
     "lastCommit": "2022-03-12T21:41:36-05:00"
   },
   {
@@ -10679,7 +10688,7 @@
     ],
     "image": ".github-preview.bubbles.jpg",
     "defaultSortWeight": 2,
-    "lastCommit": "2024-03-06T15:16:55+00:00"
+    "lastCommit": "2024-03-13T18:23:04+00:00"
   },
   {
     "name": "MMM-Netatmo-Presence",
@@ -10723,7 +10732,7 @@
     "maintainerURL": "",
     "description": "Display a solid wifi logo as network signal based on ping speed.",
     "issues": true,
-    "stars": 36,
+    "stars": 37,
     "hasGithubIssues": true,
     "license": "MIT",
     "tags": [
@@ -10741,7 +10750,7 @@
     "maintainerURL": "https://github.com/slametps",
     "description": "Display network connection status (ping, download speed, upload speed).",
     "issues": true,
-    "stars": 31,
+    "stars": 32,
     "hasGithubIssues": true,
     "tags": [
       "networkconnection",
@@ -10781,11 +10790,11 @@
     "maintainerURL": "",
     "description": "Add a QR Code with the link to the showing Newsfeed (Default Newsfeed Module).",
     "issues": true,
-    "stars": 10,
+    "stars": 11,
     "hasGithubIssues": true,
     "license": "MIT",
     "image": "news-qr.jpg",
-    "defaultSortWeight": 5,
+    "defaultSortWeight": 4,
     "lastCommit": "2023-09-14T05:20:45+02:00"
   },
   {
@@ -10814,7 +10823,7 @@
     "maintainerURL": "",
     "description": "Mod of the default newsfeed module - shows the logo and scrolls the headlines and brief description across the screen like those seen on the news channels.",
     "issues": true,
-    "stars": 22,
+    "stars": 23,
     "hasGithubIssues": true,
     "license": "GPL-3.0",
     "image": "Screenshot (401).jpg",
@@ -11214,7 +11223,7 @@
     "maintainerURL": "https://github.com/choffmann",
     "description": "Display your Notion database.",
     "issues": true,
-    "stars": 5,
+    "stars": 6,
     "hasGithubIssues": true,
     "license": "MIT",
     "image": "img-mmm-notion-showcase.jpg",
@@ -11249,7 +11258,7 @@
     "description": "Display the song you are currently listening to on Spotify.",
     "issues": true,
     "outdated": "Abandoned. No reactions to issues since years. Depends on deprecated modules. MMM-OnSpotify is an alternative.",
-    "stars": 204,
+    "stars": 203,
     "hasGithubIssues": true,
     "license": "MIT",
     "tags": [
@@ -11319,7 +11328,7 @@
     "maintainerURL": "",
     "description": "Module to talk to Arduino two-way via web-socket and ObjectBlocks platform.",
     "issues": true,
-    "stars": 0,
+    "stars": 1,
     "hasGithubIssues": true,
     "license": "MIT",
     "defaultSortWeight": 17,
@@ -11379,7 +11388,7 @@
     "maintainerURL": "https://github.com/btastic",
     "description": "Octoprint API integration.",
     "issues": true,
-    "stars": 3,
+    "stars": 4,
     "hasGithubIssues": true,
     "license": "MIT",
     "tags": [
@@ -11670,24 +11679,6 @@
     "lastCommit": "2023-12-12T21:56:55-05:00"
   },
   {
-    "name": "MMM-OpelStatuses",
-    "url": "https://github.com/santanachia/MMM-OpelStatuses",
-    "id": "santanachia/MMM-OpelStatuses",
-    "maintainer": "santanachia",
-    "maintainerURL": "",
-    "description": "Shows current production status of your Opel/Vauxhall.",
-    "issues": true,
-    "stars": 1,
-    "hasGithubIssues": true,
-    "license": "MIT",
-    "tags": [
-      "opel",
-      "status"
-    ],
-    "defaultSortWeight": 8,
-    "lastCommit": "2018-10-22T16:33:15+02:00"
-  },
-  {
     "name": "MMM-OpenHAB-Items",
     "url": "https://github.com/hggh/MMM-OpenHAB-Items",
     "id": "hggh/MMM-OpenHAB-Items",
@@ -11788,7 +11779,7 @@
     "hasGithubIssues": true,
     "license": "MIT",
     "image": "icons-iconsets.jpg",
-    "defaultSortWeight": 909,
+    "defaultSortWeight": 910,
     "lastCommit": "2022-03-12T19:57:32-05:00"
   },
   {
@@ -14181,7 +14172,7 @@
     ],
     "image": "images-screenshot-2.jpg",
     "defaultSortWeight": 5,
-    "lastCommit": "2024-03-11T17:53:13+02:00"
+    "lastCommit": "2024-03-13T16:25:37+02:00"
   },
   {
     "name": "MMM-Russianwarship",
@@ -14336,7 +14327,7 @@
     ],
     "image": "example.jpg",
     "defaultSortWeight": 3,
-    "lastCommit": "2024-03-10T16:40:30+01:00"
+    "lastCommit": "2024-03-12T19:04:18+01:00"
   },
   {
     "name": "MMM-Screencast",
@@ -15151,24 +15142,6 @@
     "license": "MIT",
     "defaultSortWeight": 9,
     "lastCommit": "2020-01-10T12:09:14+01:00"
-  },
-  {
-    "name": "MMM-SmokedMirror",
-    "url": "https://github.com/Santanachia/MMM-SmokedMirror",
-    "id": "Santanachia/MMM-SmokedMirror",
-    "maintainer": "Santanachia",
-    "maintainerURL": "",
-    "description": "Air pollution in Polish cities.",
-    "issues": true,
-    "stars": 3,
-    "hasGithubIssues": true,
-    "tags": [
-      "air polution"
-    ],
-    "license": "MIT",
-    "image": "screen.jpg",
-    "defaultSortWeight": 7,
-    "lastCommit": "2021-01-29T11:26:34+01:00"
   },
   {
     "name": "MMM-Snake",
@@ -16516,7 +16489,7 @@
     "id": "evanhsu/MMM-TitanSchoolMealMenu",
     "maintainer": "evanhsu",
     "maintainerURL": "",
-    "description": "Retrieves school meal menus from the Titan Schools API (family.titank12.com).",
+    "description": "Retrieves school meal menus from the LinqConnect (formerly Titan Schools) API (api.linqconnect.com).",
     "issues": true,
     "stars": 6,
     "hasGithubIssues": true,

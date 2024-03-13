@@ -141,11 +141,14 @@
     "maintainer": "gertperdZA",
     "maintainerURL": "",
     "description": "Display trashcollection days of the Afvalwijzer service in the Netherlands.",
-    "issues": [
-      "There is no `package.json`. We need this file to gather information about the module for the module list page."
-    ],
+    "issues": [],
     "stars": 0,
-    "hasGithubIssues": true
+    "hasGithubIssues": true,
+    "tags": [
+      "trashcollection"
+    ],
+    "license": "MIT",
+    "image": "AfvalwijzerScreenshot.jpg"
   },
   {
     "name": "MMM-air-raid-monitor-ua",
@@ -3503,7 +3506,7 @@
     "maintainerURL": "",
     "description": "Station monitor for the Dresden/Germany local transport (DVB) bus, tram and train system.",
     "issues": [],
-    "stars": 11,
+    "stars": 12,
     "hasGithubIssues": true,
     "license": "MIT",
     "tags": [
@@ -5365,7 +5368,7 @@
     "id": "bugsounet/MMM-GoogleAssistant",
     "maintainer": "bugsounet",
     "maintainerURL": "https://wiki.bugsounet.fr",
-    "description": "MMM-GoogleAssistant is an real embedded Google assistant on MagicMirror² with many <a target=\"_blank\" href=\"#extended-plugins-for-mmm-googleassistant\">plugins</a> . [Maintained].",
+    "description": "MMM-GoogleAssistant is an real embedded Google assistant on MagicMirror² with many <a target=\"_blank\" href=\"#extended-plugins-for-mmm-googleassistant\">plugins</a>. [Maintained].",
     "issues": [
       "Please use 'smart home' instead of 'smarthome' as a keyword in your package.json."
     ],
@@ -8510,8 +8513,12 @@
     "maintainerURL": "",
     "description": "Displays the status of you MAX! radiator thermostats via the MAX! cube gateway.",
     "issues": [
-      "There is no `package.json`. We need this file to gather information about the module for the module list page."
-    ]
+      "There is no `package.json`. We need this file to gather information about the module for the module list page.",
+      "No image found."
+    ],
+    "stars": 1,
+    "hasGithubIssues": true,
+    "license": "MIT"
   },
   {
     "name": "MMM-MBTA",
@@ -8551,11 +8558,13 @@
     "maintainerURL": "https://github.com/zanix",
     "description": "Displays a weekly meal menu from the <a target=\"_blank\" href=\"https://mealie.io\">Mealie</a> recipe management app.",
     "issues": [],
+    "stars": 2,
+    "hasGithubIssues": true,
+    "license": "MIT",
     "tags": [
       "mealie",
       "recipie"
     ],
-    "license": "MIT",
     "image": "MMM-MealieMenu-screenshot.jpg"
   },
   {
@@ -8691,7 +8700,7 @@
     "maintainerURL": "",
     "description": "Displays your Microsoft To Do tasks on your mirror.",
     "issues": [],
-    "stars": 71,
+    "stars": 74,
     "hasGithubIssues": true,
     "license": "MIT",
     "tags": [
@@ -8739,7 +8748,7 @@
     "issues": [
       "There is no `package.json`. We need this file to gather information about the module for the module list page."
     ],
-    "stars": 1,
+    "stars": 2,
     "hasGithubIssues": true,
     "license": "MIT",
     "image": "img-example.jpg"
@@ -8789,7 +8798,7 @@
     "maintainerURL": "",
     "description": "Display departures for public transport in Helsinki region - Finland.",
     "issues": [],
-    "stars": 4,
+    "stars": 5,
     "hasGithubIssues": true,
     "tags": [
       "public transport"
@@ -8821,7 +8830,7 @@
     "issues": [
       "There is no `package.json`. We need this file to gather information about the module for the module list page."
     ],
-    "stars": 54,
+    "stars": 55,
     "hasGithubIssues": true,
     "license": "MIT",
     "image": "LauncherIcon-MMM-Remote-LauncherIcon.jpg"
@@ -8884,13 +8893,15 @@
     "maintainerURL": "https://github.com/jhwelch",
     "description": "Arrival times for Chicago Transit Authority buses and trains. Supports multiple bus and/or train stops.",
     "issues": [],
+    "stars": 0,
+    "hasGithubIssues": true,
+    "license": "MIT",
     "tags": [
       "cta",
       "train",
       "bus",
       "tracker"
     ],
-    "license": "MIT",
     "image": "screenshot.jpg"
   },
   {
@@ -8976,7 +8987,7 @@
     "maintainerURL": "https://github.com/ItsMeBrille",
     "description": "Display Minecraft server status and shows list of active players.",
     "issues": [],
-    "stars": 2,
+    "stars": 3,
     "hasGithubIssues": true,
     "tags": [
       "minecraft",
@@ -9040,7 +9051,7 @@
     "maintainerURL": "https://github.com/cSharpBastard",
     "description": "Display current electrical spot prices in northen Europe (also works in Germany).",
     "issues": [],
-    "stars": 2,
+    "stars": 3,
     "hasGithubIssues": true,
     "tags": [
       "eon",
@@ -9145,7 +9156,7 @@
       "There are no specific keywords in 'package.json'. We would use them as tags on the module list page. Add a few meaningful terms to the keywords in the package.json. Not just “magicmirror” or “module”.",
       "No image found."
     ],
-    "stars": 2,
+    "stars": 3,
     "hasGithubIssues": true,
     "license": "MIT"
   },
@@ -9224,7 +9235,7 @@
       "There are no specific keywords in 'package.json'. We would use them as tags on the module list page. Add a few meaningful terms to the keywords in the package.json. Not just “magicmirror” or “module”.",
       "Issue: The license in the package.json (ISC) doesn't match the license file (MIT)."
     ],
-    "stars": 29,
+    "stars": 30,
     "hasGithubIssues": true,
     "license": "MIT",
     "image": "Screenshot1.jpg"
@@ -9252,7 +9263,7 @@
     "issues": [
       "There is no `package.json`. We need this file to gather information about the module for the module list page."
     ],
-    "stars": 164,
+    "stars": 168,
     "hasGithubIssues": true,
     "license": "MIT",
     "image": "ui-src-assets-MagicMirror-Package-Manager-Icon.jpg"
@@ -9344,7 +9355,7 @@
     "maintainerURL": "",
     "description": "Create schedules to control when other modules are shown, hidden or dimmed and to send notifications to other modules.",
     "issues": [],
-    "stars": 95,
+    "stars": 96,
     "hasGithubIssues": true,
     "license": "MIT",
     "tags": [
@@ -9362,7 +9373,7 @@
     "issues": [
       "No image found."
     ],
-    "stars": 5,
+    "stars": 6,
     "hasGithubIssues": true,
     "license": "MIT",
     "tags": [
@@ -9513,7 +9524,7 @@
     "issues": [
       "No image found."
     ],
-    "stars": 46,
+    "stars": 47,
     "hasGithubIssues": true,
     "license": "MIT",
     "tags": [
@@ -9594,7 +9605,7 @@
     "issues": [
       "Issues are not enabled in the GitHub repository. So users cannot report bugs. Please enable issues in your repo."
     ],
-    "stars": 2,
+    "stars": 4,
     "hasGithubIssues": false,
     "license": "GPL-3.0",
     "tags": [
@@ -9882,7 +9893,7 @@
     "maintainerURL": "https://wiki.bugsounet.fr",
     "description": "Play any music found on a USB Key or in defined local directory.",
     "issues": [],
-    "stars": 1,
+    "stars": 2,
     "hasGithubIssues": false,
     "license": "MIT",
     "tags": [
@@ -9940,7 +9951,7 @@
     "issues": [
       "There is no `package.json`. We need this file to gather information about the module for the module list page."
     ],
-    "stars": 57,
+    "stars": 58,
     "hasGithubIssues": true
   },
   {
@@ -9986,7 +9997,7 @@
       "There is no `package.json`. We need this file to gather information about the module for the module list page.",
       "Issues are not enabled in the GitHub repository. So users cannot report bugs. Please enable issues in your repo."
     ],
-    "stars": 1,
+    "stars": 2,
     "hasGithubIssues": false,
     "license": "MIT",
     "image": "docs-screenshot.jpg"
@@ -10656,7 +10667,7 @@
     "maintainerURL": "",
     "description": "Display a solid wifi logo as network signal based on ping speed.",
     "issues": [],
-    "stars": 36,
+    "stars": 37,
     "hasGithubIssues": true,
     "license": "MIT",
     "tags": [
@@ -10672,7 +10683,7 @@
     "maintainerURL": "https://github.com/slametps",
     "description": "Display network connection status (ping, download speed, upload speed).",
     "issues": [],
-    "stars": 31,
+    "stars": 32,
     "hasGithubIssues": true,
     "tags": [
       "networkconnection",
@@ -10712,7 +10723,7 @@
     "issues": [
       "There is no `package.json`. We need this file to gather information about the module for the module list page."
     ],
-    "stars": 10,
+    "stars": 11,
     "hasGithubIssues": true,
     "license": "MIT",
     "image": "news-qr.jpg"
@@ -10747,7 +10758,7 @@
       "There are no keywords in 'package.json'. We would use them as tags on the module list page.",
       "Issue: The license in the package.json (ISC) doesn't match the license file (GPL-3.0)."
     ],
-    "stars": 22,
+    "stars": 23,
     "hasGithubIssues": true,
     "license": "GPL-3.0",
     "image": "Screenshot (401).jpg"
@@ -11141,7 +11152,7 @@
     "issues": [
       "There are no keywords in 'package.json'. We would use them as tags on the module list page."
     ],
-    "stars": 5,
+    "stars": 6,
     "hasGithubIssues": true,
     "license": "MIT",
     "image": "img-mmm-notion-showcase.jpg"
@@ -11172,7 +11183,7 @@
     "description": "Display the song you are currently listening to on Spotify.",
     "issues": [],
     "outdated": "Abandoned. No reactions to issues since years. Depends on deprecated modules. MMM-OnSpotify is an alternative.",
-    "stars": 204,
+    "stars": 203,
     "hasGithubIssues": true,
     "license": "MIT",
     "tags": [
@@ -11242,7 +11253,7 @@
       "There are no keywords in 'package.json'. We would use them as tags on the module list page.",
       "No image found."
     ],
-    "stars": 0,
+    "stars": 1,
     "hasGithubIssues": true,
     "license": "MIT"
   },
@@ -11300,7 +11311,7 @@
     "maintainerURL": "https://github.com/btastic",
     "description": "Octoprint API integration.",
     "issues": [],
-    "stars": 3,
+    "stars": 4,
     "hasGithubIssues": true,
     "license": "MIT",
     "tags": [
@@ -11569,24 +11580,6 @@
       "wikipedia"
     ],
     "image": "screenshot-show_as_list.jpg"
-  },
-  {
-    "name": "MMM-OpelStatuses",
-    "url": "https://github.com/santanachia/MMM-OpelStatuses",
-    "id": "santanachia/MMM-OpelStatuses",
-    "maintainer": "santanachia",
-    "maintainerURL": "",
-    "description": "Shows current production status of your Opel/Vauxhall.",
-    "issues": [
-      "No image found."
-    ],
-    "stars": 1,
-    "hasGithubIssues": true,
-    "license": "MIT",
-    "tags": [
-      "opel",
-      "status"
-    ]
   },
   {
     "name": "MMM-OpenHAB-Items",
@@ -15027,22 +15020,6 @@
     "license": "MIT"
   },
   {
-    "name": "MMM-SmokedMirror",
-    "url": "https://github.com/Santanachia/MMM-SmokedMirror",
-    "id": "Santanachia/MMM-SmokedMirror",
-    "maintainer": "Santanachia",
-    "maintainerURL": "",
-    "description": "Air pollution in Polish cities.",
-    "issues": [],
-    "stars": 3,
-    "hasGithubIssues": true,
-    "tags": [
-      "air polution"
-    ],
-    "license": "MIT",
-    "image": "screen.jpg"
-  },
-  {
     "name": "MMM-Snake",
     "url": "https://github.com/superuserx/MMM-Snake",
     "id": "superuserx/MMM-Snake",
@@ -16364,7 +16341,7 @@
     "id": "evanhsu/MMM-TitanSchoolMealMenu",
     "maintainer": "evanhsu",
     "maintainerURL": "",
-    "description": "Retrieves school meal menus from the Titan Schools API (family.titank12.com).",
+    "description": "Retrieves school meal menus from the LinqConnect (formerly Titan Schools) API (api.linqconnect.com).",
     "issues": [
       "`package.json` issue: No repository field.",
       "There are no keywords in 'package.json'. We would use them as tags on the module list page."
