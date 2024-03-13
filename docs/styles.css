@@ -361,7 +361,10 @@ main {
 
 @media (0 <= width <= 800px) {
   #top-left {
-    display: none;
+    top: 5px;
+    right: 5px;
+    text-align: right;
+    color: var(--color-background-gray);
   }
 
   #sort-container {
