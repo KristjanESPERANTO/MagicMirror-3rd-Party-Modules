@@ -140,6 +140,7 @@ header {
 
 #top-right {
   position: absolute;
+  text-align: right;
   right: 20px;
   top: 20px;
 }
@@ -147,6 +148,7 @@ header {
 #repo-link,
 #repo-link a {
   text-align: right;
+  padding-right: 5px;
   color: #999;
 }
 
@@ -378,6 +380,7 @@ main {
 
   #top-right {
     position: relative;
+    text-align: center;
     right: 0;
     top: 0;
     padding-bottom: 15px;
