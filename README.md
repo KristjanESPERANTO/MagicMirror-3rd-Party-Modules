@@ -116,16 +116,11 @@ How can you use it?
 ## Ideas / To do
 
 - Long-term goal: The website functions like an app store. The user only has to click on an install button and the module is installed and a basic configuration is inserted.
-  - bugsounet did this for MMM-GoogleAssistant: <https://wiki.bugsounet.fr/MMM-GoogleAssistant/website>
+  - bugsounet did this for MMM-GoogleAssistant and it's modules: <https://wiki.bugsounet.fr/MMM-GoogleAssistant/website>
 - Move ideas/todos to GitHub Issues and add proper tags.
 - Add exceptions for 3rd-Party stuff like jquery or fontwaesome? <https://github.com/bugsounet/MMM-GoogleAssistant/pull/386>
-- Show and sort by GitHub Star #1.
 - Move `result.md` to docs.
 - Show results in popup on the page.
-- Check if ESLint is in use. If not, recommend it.
-- Statistics per module
-  - last update date
-  - number of unresolved GitHub issues to guess the module’s activation level or popularity
 - Compatibility with:
   - the module list of `MMM-Remote-Control`: <https://github.com/Jopyth/MMM-Remote-Control/blob/master/modules.json> / `MMM-Remote-Control-Repository` <https://github.com/MMRIZE/MMM-Remote-Control-Repository>
   - and mmpm <https://github.com/Bee-Mar/mmpm>
@@ -142,7 +137,10 @@ How can you use it?
 
   ```json
     "MagicMirror": {
-      "screenshot": "https://somewhere.com/screenshot.png",
+      "screenshot": {
+        "license": "MIT",
+        "url": "https://somewhere.com/screenshot.png"
+      },
       "required": {
         "mm": "2.25",
         "node": "18.0",
@@ -150,7 +148,7 @@ How can you use it?
       },
       "notice" : [
         "This will not work in Windows.",
-        "Pre-dependency required. Please readme."
+        "Pre-dependency required. Please read README."
       ]
   }
   ```
