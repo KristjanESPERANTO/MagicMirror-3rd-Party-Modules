@@ -306,6 +306,11 @@ def check_modules():
                 markdown_output_modules += (
                     f"0. This module is outdated: {module['outdated']}\n"
                 )
+            elif "isArchived" in module:
+                module["defaultSortWeight"] += 800
+                stats["issueCounter"] += 1
+                module["issues"].append(
+                "Module is archived, but not marked as outdated in the official module list.")
 
             if len(module["issues"]) > 0:
                 stats["issueCounter"] += len(module["issues"])

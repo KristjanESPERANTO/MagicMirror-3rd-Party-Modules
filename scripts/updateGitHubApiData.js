@@ -90,7 +90,12 @@ async function updateData () {
             }
           };
           module.stars = data.stargazers_count;
-          module.hasGithubIssues = data.has_issues;
+          if (data.has_issues === false) {
+            module.hasGithubIssues = false;
+          }
+          if (data.archived === true) {
+            module.isArchived = true;
+          }
           if (data.license) {
             module.license = data.license.spdx_id;
           }
@@ -158,7 +163,14 @@ function useHistoricalData (previousData, repositoryId, module, results) {
   const existingRepository = previousData.repositories?.find((repo) => repo.id === repositoryId);
   if (existingRepository) {
     module.stars = existingRepository.gitHubData.stars;
-    module.hasGithubIssues = existingRepository.gitHubData.has_issues;
+
+    if (existingRepository.gitHubData.has_issues === false) {
+      module.hasGithubIssues = false;
+    }
+
+    if (existingRepository.gitHubData.archived === true) {
+      module.isArchived = true;
+    }
     if (existingRepository.gitHubData.license) {
       module.license = existingRepository.gitHubData.license;
     }
