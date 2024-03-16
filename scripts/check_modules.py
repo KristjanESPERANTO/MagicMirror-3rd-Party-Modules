@@ -121,6 +121,10 @@ def check_modules():
             "name": "Replace it with v4.",
             "category": "Recommendation",
         },
+        "uses: actions/setup-node@v3": {
+            "name": "Replace it with v4.",
+            "category": "Recommendation",
+        },
         "node-version: 14": {
             "name": "Update to current version.",
             "category": "Deprecated",
