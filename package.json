@@ -7,10 +7,7 @@
   "directories": {
     "doc": "docs"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/KristjanESPERANTO/MagicMirror-3rd-Party-Modules.git"
-  },
+  "repository": "KristjanESPERANTO/MagicMirror-3rd-Party-Modules",
   "keywords": [
     "MagicMirror²",
     "Modules"
@@ -29,7 +26,9 @@
     "@stylistic/eslint-plugin": "^1.7.0",
     "eslint": "^8.57.0",
     "eslint-plugin-import": "^2.29.1",
+    "eslint-plugin-package-json": "^0.11.0",
     "husky": "^9.0.11",
+    "jsonc-eslint-parser": "^2.4.0",
     "lint-staged": "^15.2.2",
     "markdownlint-cli": "^0.39.0",
     "prettier": "^3.2.5",

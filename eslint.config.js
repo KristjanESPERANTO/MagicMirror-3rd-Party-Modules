@@ -2,6 +2,8 @@ import * as fs from "fs";
 
 import eslintPlugin from "@eslint/js";
 import eslintPluginImport from "eslint-plugin-import";
+// eslint-disable-next-line import/no-unresolved
+import eslintPluginPackageJson from "eslint-plugin-package-json/configs/recommended";
 import eslintPluginStylistic from "@stylistic/eslint-plugin";
 import globals from "globals";
 
@@ -58,6 +60,14 @@ const config = [
       "@stylistic/multiline-ternary": "off",
       "@stylistic/object-property-newline": "off",
       "@stylistic/padded-blocks": ["error", "never"]
+    }
+  },
+  {
+    "files": ["**/package.json"],
+    ...eslintPluginPackageJson,
+    "rules": {
+      ...eslintPluginPackageJson.rules,
+      "package-json/sort-collections": "off"
     }
   }
 ];
