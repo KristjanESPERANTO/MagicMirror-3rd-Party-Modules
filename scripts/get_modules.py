@@ -33,9 +33,20 @@ def get_modules():
 
             if path.exists():
                 # print("- I - path already exists: run `git pull`")
-                subprocess.run(
-                    f"cd {path} && git pull && cd ..", shell=True, check=False
-                )
+                try:
+                    subprocess.run(
+                        f"cd {path} && git pull && cd ..", shell=True, check=True
+                    )
+                except subprocess.CalledProcessError as e:
+                    # If an error occurs while trying to pull the module, delete the module directory and re-run the git clone command
+                    # An error like this can occur, for example, if the branch of the module has been changed.
+                    print(f"- E - An error occured while trying to pull the module: {e}")
+                    print(f"- I - Deleting the module directory: {path}")
+                    shutil.rmtree(path)
+                    print("- I - Re-running the git clone command")
+                    subprocess.run(
+                        f"git clone {module_url} {path} --depth 1", shell=True, check=False
+                    )
             elif "branch" in module:
                 print(f"- I - run `git clone --branch {module['branch']}` ")
                 subprocess.run(
