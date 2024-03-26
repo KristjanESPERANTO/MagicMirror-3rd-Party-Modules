@@ -113,6 +113,9 @@ async function addInformationFromPackageJson (moduleList) {
               module.issues.push("Please use 'smart home' instead of 'smarthome' as a keyword in your package.json.");
               return "smart home";
             }
+            if (tag === "sport") {
+              return "sports";
+            }
             return tag;
           })
           .filter((tag) => !tagsToRemove.includes(tag));
