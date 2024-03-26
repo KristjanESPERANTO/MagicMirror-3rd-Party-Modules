@@ -150,7 +150,7 @@ def check_modules():
             "category": "Recommendation",
         },
         "new Date()": {
-            "name": "Replace it by `new Date(Date.now())`: [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).",
+            "name": "Consider replacing it by `new Date(Date.now())`. It's helpfull for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).",
             "category": "Recommendation",
         },
         "getYear()": {
