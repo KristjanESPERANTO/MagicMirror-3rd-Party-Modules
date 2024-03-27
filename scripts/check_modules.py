@@ -80,10 +80,6 @@ def check_modules():
             "name": "Replace 'https' by 'node:https'.",
             "category": "Recommendation",
         },
-        '"grunt"': {
-            "name": "Grunt is practically unmaintained. Move on to something better.",
-            "category": "Deprecated",
-        },
         "'node-fetch'": {
             "name": "Replace it with built-in fetch.",
             "category": "Recommendation",
@@ -183,7 +179,11 @@ def check_modules():
         '"electron-rebuild"': {
             "name": "Replace it with `@electron/rebuild`",
             "category": "Deprecated"
-        }
+        },
+        '"grunt"': {
+            "name": "Grunt is practically unmaintained. Move on to something better.",
+            "category": "Deprecated",
+        },
     }
 
     modules_json_file = open(
@@ -224,7 +224,7 @@ def check_modules():
 
         # Because we make EXT modules heavier we lift MMM-GoogleAssistant a bit up.
         if module["name"] == ("MMM-GoogleAssistant"):
-            module["defaultSortWeight"] -= 2
+            module["defaultSortWeight"] -= 1
 
         module_directory_path = Path("./modules/" + module_directory)
         for file_path in sorted(module_directory_path.rglob("*")):
