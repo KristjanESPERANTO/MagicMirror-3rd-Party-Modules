@@ -242,40 +242,54 @@ def check_modules():
                     "changelog" not in str(file_path).lower()
                     and "package-lock.json" not in str(file_path).lower()
                 ):
-                    for search_string, value in search_strings.items():
-                        found_update_string = search_in_file(file_path, search_string)
-                        if found_update_string:
-                            module["issues"].append(
-                                f"{value['category']}: Found `{search_string}` in file `{file_path.name}`: {value['name']}"
-                            )
+                    if file_path.name == "jquery.js" or file_path.name == "jquery.min.js":
+                        module["issues"].append(
+                            f"Recommendation: Found local copy of `{file_path.name}`. Instead of a local copy, it would be better to add jQuery to the dependencies in `package.json`."
+                        )
 
-                    if file_path.name == "package.json":
-                        for search_string, value in search_strings_package_json.items():
-                            found_update_string = search_in_file(
-                                file_path, search_string)
-                            if found_update_string:
+                        found_string = any(
+                            search_in_file(file_path, version)
+                            for version in ["jQuery v3.7", "jQuery v3.8", "jQuery v3.9", "jQuery v4"]
+                        )
+                        if found_string is False:
+                            module["issues"].append(
+                                f"Outdated: Local jQuery file `{file_path.name}` seems to be outdated. jQuery v3.7 or higher is recommended."
+                            )
+                    else:
+                        for search_string, value in search_strings.items():
+                            found_string = search_in_file(file_path, search_string)
+                            if found_string:
                                 module["issues"].append(
                                     f"{value['category']}: Found `{search_string}` in file `{file_path.name}`: {value['name']}"
                                 )
 
-                    if file_path.name.startswith("README"):
-                        # Search for "update" or "Update" in README
-                        found_update_string = search_in_file(file_path, "Update")
-                        if not found_update_string:
-                            found_update_string = search_in_file(file_path, "update")
-                        if not found_update_string:
-                            module["issues"].append(
-                                "Recommendation: The README seems not to have an update instruction (the word 'update' is missing). Please add one."
-                            )
+                        if file_path.name == "package.json":
+                            for search_string, value in search_strings_package_json.items():
+                                found_string = search_in_file(
+                                    file_path, search_string)
+                                if found_string:
+                                    module["issues"].append(
+                                        f"{value['category']}: Found `{search_string}` in file `{file_path.name}`: {value['name']}"
+                                    )
 
-                        # Search for "install" in README
-                        found_clone_string = search_in_file(file_path, "Install")
-                        if not found_clone_string:
-                            found_clone_string = search_in_file(file_path, "install")
-                        if not found_clone_string:
-                            module["issues"].append(
-                                "Recommendation: The README seems not to have an install instruction (the words 'install' or 'installation' are missing). Please add one."
-                            )
+                        if file_path.name.startswith("README"):
+                            # Search for "update" or "Update" in README
+                            found_update_string = search_in_file(file_path, "Update")
+                            if not found_update_string:
+                                found_update_string = search_in_file(file_path, "update")
+                            if not found_update_string:
+                                module["issues"].append(
+                                    "Recommendation: The README seems not to have an update instruction (the word 'update' is missing). Please add one."
+                                )
+
+                            # Search for "install" in README
+                            found_clone_string = search_in_file(file_path, "Install")
+                            if not found_clone_string:
+                                found_clone_string = search_in_file(file_path, "install")
+                            if not found_clone_string:
+                                module["issues"].append(
+                                    "Recommendation: The README seems not to have an install instruction (the words 'install' or 'installation' are missing). Please add one."
+                                )
 
                 # if ".yml" in str(file_path).lower():
                 #    module["issues"].append(
