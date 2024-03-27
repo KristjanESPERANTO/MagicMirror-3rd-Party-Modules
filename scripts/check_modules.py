@@ -493,6 +493,9 @@ def check_branch_name(module, module_directory_path):
     # if "* master" in branch:
     #    module["issues"].append(
     #        "The branch name is 'master'. Consider renaming it to 'main'.")
+    # Instead lift modules with a branch name other than master
+    if "master" not in branch:
+        module["defaultSortWeight"] -= 1
 
 
 check_modules()
