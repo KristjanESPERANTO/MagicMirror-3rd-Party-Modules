@@ -82,12 +82,13 @@ function createCard (moduleData) {
     card.querySelector(".img-container").remove();
   }
 
+  const license = card.querySelector(".info .container.license .text");
   if (moduleData.license) {
-    const license = card.querySelector(".info .container.license .text");
     license.href = `${moduleData.url}`;
     license.textContent = `©${moduleData.license}`;
   } else {
-    card.querySelector(".info .container.license").remove();
+    license.style.color = "red";
+    license.textContent = "unknown";
   }
 
   /* Set the card footer */
