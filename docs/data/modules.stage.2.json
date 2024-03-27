@@ -86,9 +86,9 @@
     "stars": 11
   },
   {
-    "name": "MMM-AfvalWijzer",
-    "url": "https://github.com/gertperdZA/MMM-AfvalWijzer",
-    "id": "gertperdZA/MMM-AfvalWijzer",
+    "name": "MMM-Afvalwijzer",
+    "url": "https://github.com/gertperdZA/MMM-Afvalwijzer",
+    "id": "gertperdZA/MMM-Afvalwijzer",
     "maintainer": "gertperdZA",
     "maintainerURL": "",
     "description": "Display trashcollection days of the Afvalwijzer service in the Netherlands.",
@@ -280,6 +280,16 @@
     "description": "Show a table of upcoming birthdays for a list of people you provided. Nice not to forget birthdays.",
     "issues": [],
     "stars": 5
+  },
+  {
+    "name": "MMM-anotherNewsFeed",
+    "url": "https://github.com/MMRIZE/MMM-anotherNewsFeed",
+    "id": "MMRIZE/MMM-anotherNewsFeed",
+    "maintainer": "MMRIZE",
+    "maintainerURL": "",
+    "description": "Modified version of the default newsfeed module.",
+    "issues": [],
+    "stars": 0
   },
   {
     "name": "MMM-AnyList",
@@ -855,6 +865,7 @@
     "maintainerURL": "https://github.com/jannekalliola",
     "description": "Displays information about your BMW from the BMW Connected Drive API.",
     "issues": [],
+    "outdated": "No longer works, per README.",
     "stars": 9,
     "license": "MIT"
   },
@@ -1026,7 +1037,7 @@
     "url": "https://github.com/choffmann/MMM-bunq",
     "id": "choffmann/MMM-bunq",
     "maintainer": "choffmann",
-    "maintainerURL": "https://github.com/choffmann",
+    "maintainerURL": "",
     "description": "Display your bunq account balance.",
     "issues": [],
     "stars": 5,
@@ -1729,7 +1740,7 @@
     "id": "boghammar/MMM-CrisisInformationSweden",
     "maintainer": "boghammar",
     "maintainerURL": "",
-    "description": "News feed from the <strong>Swedish</strong> Government Crisis Information (Krisinformation.se).",
+    "description": "News feed from the <strong>Swedish</strong> Government Crisis Information (krisinformation.se).",
     "issues": [],
     "stars": 1,
     "license": "MIT"
@@ -1849,7 +1860,7 @@
     "id": "gueguet/MMM-CyberSecurityNews",
     "maintainer": "gueguet",
     "maintainerURL": "https://github.com/gueguet",
-    "description": "This module allows you to display the last news about CyberSecurity.",
+    "description": "This module allows you to display the last news about Cyber Security.",
     "issues": [],
     "stars": 8,
     "license": "MIT"
@@ -1917,8 +1928,9 @@
     "maintainerURL": "",
     "description": "Forked from MMM-Daikin to work with Daikin Airbase controllers (wifi air conditioner controllers used in Australia/New Zealand regions).",
     "issues": [],
-    "stars": 0,
-    "hasGithubIssues": false
+    "stars": 1,
+    "hasGithubIssues": false,
+    "license": "MIT"
   },
   {
     "name": "MMM-DailyACVillager",
@@ -2373,7 +2385,7 @@
     "maintainerURL": "",
     "description": "Displays Pollen data from DWD for Germany.",
     "issues": [],
-    "stars": 11,
+    "stars": 12,
     "license": "MIT"
   },
   {
@@ -2396,7 +2408,7 @@
     "maintainerURL": "",
     "description": "Displays weather warnings for Germany.",
     "issues": [],
-    "stars": 61,
+    "stars": 62,
     "license": "MIT"
   },
   {
@@ -2417,7 +2429,7 @@
     "maintainerURL": "",
     "description": "A heavily configurable module to display different animations based on current weather and show customized event effects.",
     "issues": [],
-    "stars": 26,
+    "stars": 27,
     "license": "MIT"
   },
   {
@@ -2453,7 +2465,7 @@
     "description": "The probability of an earthquake in your city. You'll be surprised!",
     "issues": [],
     "outdated": "Deprecated. API is disabled.",
-    "stars": 6,
+    "stars": 7,
     "license": "MIT"
   },
   {
@@ -2486,7 +2498,7 @@
     "maintainerURL": "",
     "description": "Display data from ecobee thermostats and remote sensors.",
     "issues": [],
-    "stars": 3,
+    "stars": 4,
     "license": "MIT"
   },
   {
@@ -2708,6 +2720,17 @@
     "issues": [],
     "stars": 1,
     "license": "MIT"
+  },
+  {
+    "name": "MMM-EUElectricityPrice",
+    "url": "https://github.com/late4marshmellow/MMM-EUElectricityPrice",
+    "id": "late4marshmellow/MMM-EUElectricityPrice",
+    "maintainer": "late4marshmellow",
+    "maintainerURL": "",
+    "description": "Display EU electricity prices from Nord Pool.",
+    "issues": [],
+    "stars": 2,
+    "hasGithubIssues": false
   },
   {
     "name": "MMM-EventHorizon",
@@ -3022,6 +3045,16 @@
     "issues": [],
     "stars": 10,
     "license": "MIT"
+  },
+  {
+    "name": "MMM-FiElectricityPrice",
+    "url": "https://github.com/jannekalliola/MMM-FiElectricityPrice",
+    "id": "jannekalliola/MMM-FiElectricityPrice",
+    "maintainer": "jannekalliola",
+    "maintainerURL": "",
+    "description": "Display Finnish electricity prices from Nord Pool.",
+    "issues": [],
+    "stars": 4
   },
   {
     "name": "MMM-FinParcel",
@@ -3880,7 +3913,7 @@
     "maintainerURL": "",
     "description": "Display a diagram generated by Grafana.",
     "issues": [],
-    "stars": 32,
+    "stars": 34,
     "license": "MIT"
   },
   {
@@ -4120,7 +4153,7 @@
     "maintainerURL": "",
     "description": "Modified from cowboydude's MMM-Xmas for different holidays, events, et.al.",
     "issues": [],
-    "stars": 18,
+    "stars": 19,
     "license": "MIT"
   },
   {
@@ -4185,7 +4218,7 @@
     "maintainerURL": "https://github.com/wonderslug",
     "description": "Displays information from Home Assistant using Home Assistant Templates to render any HTML you want for the module. Includes support for Material Design Icons, Websockets for fast updating, and auto reconnect on Home Assistant restarts. Allows you to show or hide a whole module based on a Home Assistant Template as well.",
     "issues": [],
-    "stars": 80,
+    "stars": 82,
     "license": "MIT"
   },
   {
@@ -4434,7 +4467,7 @@
     "maintainerURL": "https://github.com/FalseIlyu",
     "description": "Display next bus/tramway/metro/train in the Paris/Ile-de-France région in France using IDFM API.",
     "issues": [],
-    "stars": 4,
+    "stars": 5,
     "license": "AGPL-3.0"
   },
   {
@@ -4541,7 +4574,7 @@
     "maintainerURL": "",
     "description": "Show images and photos.",
     "issues": [],
-    "stars": 39,
+    "stars": 40,
     "license": "MIT"
   },
   {
@@ -5294,7 +5327,7 @@
     "url": "https://github.com/djey47/MMM-LKY-TIC",
     "id": "djey47/MMM-LKY-TIC",
     "maintainer": "djey47",
-    "maintainerURL": "https://github.com/djey47",
+    "maintainerURL": "",
     "description": "Display info about home power supply - FRANCE TELEINFO ENEDIS.",
     "issues": [],
     "stars": 1,
@@ -5361,7 +5394,7 @@
     "maintainerURL": "",
     "description": "Deliver the logs from Frontend to Backend and more features.",
     "issues": [],
-    "stars": 0,
+    "stars": 1,
     "license": "MIT"
   },
   {
@@ -5458,7 +5491,7 @@
     "maintainerURL": "",
     "description": "MMM-Loxone connects to your Loxone Miniserver and lets it communicate to your MagicMirror².",
     "issues": [],
-    "stars": 9,
+    "stars": 10,
     "license": "MIT"
   },
   {
@@ -5513,14 +5546,14 @@
     "maintainerURL": "",
     "description": "Estimated arrival times for lyft.",
     "issues": [],
-    "stars": 8
+    "stars": 9
   },
   {
     "name": "MMM-MacAddressScan",
     "url": "https://github.com/doctorfree/MMM-MacAddressScan",
     "id": "doctorfree/MMM-MacAddressScan",
     "maintainer": "doctorfree",
-    "maintainerURL": "https://github.com/doctorfree",
+    "maintainerURL": "",
     "description": "Determine the status of devices on the network based on their MAC address. It can also look up devices by IP addresses or hostnames. This module is an enhanced clone of the excellent MMM-NetworkScanner module by <a target=\"_blank\" href=\"https://github.com/ianperrin\">Ian Perrin</a>.",
     "issues": [],
     "stars": 6,
@@ -5536,6 +5569,17 @@
     "issues": [],
     "stars": 17,
     "license": "NOASSERTION"
+  },
+  {
+    "name": "MMM-MagicHexClock",
+    "url": "https://github.com/Lavve/MMM-MagicHexClock",
+    "id": "Lavve/MMM-MagicHexClock",
+    "maintainer": "Lavve",
+    "maintainerURL": "",
+    "description": "Shows a clock in cool hexadecimal colors.",
+    "issues": [],
+    "stars": 1,
+    "license": "MIT"
   },
   {
     "name": "MagicMirror-Module-Template",
@@ -5732,7 +5776,7 @@
     "maintainerURL": "https://github.com/zanix",
     "description": "Displays a weekly meal menu from the <a target=\"_blank\" href=\"https://mealie.io\">Mealie</a> recipe management app.",
     "issues": [],
-    "stars": 2,
+    "stars": 4,
     "license": "MIT"
   },
   {
@@ -5830,7 +5874,7 @@
     "maintainerURL": "",
     "description": "Displays your Microsoft To Do tasks on your mirror.",
     "issues": [],
-    "stars": 74,
+    "stars": 73,
     "license": "MIT"
   },
   {
@@ -5989,8 +6033,8 @@
     "url": "https://github.com/hayseedbyte/mmm-helium-wallet",
     "id": "hayseedbyte/mmm-helium-wallet",
     "maintainer": "hayseedbyte",
-    "maintainerURL": "https://github.com/hayseedbyte",
-    "description": "Display your helium wallet balance and value (in your chosen currency) on your mirror.",
+    "maintainerURL": "",
+    "description": "Display your helium wallet balance and value (in your chosen currency).",
     "issues": [],
     "stars": 1,
     "license": "MIT"
@@ -9957,8 +10001,11 @@
     "id": "ulrichwisser/MMM-SL-PublicTransport",
     "maintainer": "ulrichwisser",
     "maintainerURL": "",
-    "description": "Display public transport in Stockholm in Sweden.",
-    "issues": []
+    "description": "Display public transport in Stockholm in Sweden. Updates to use latest API (mandatory from April 2024)! Please provide feedback if things don't work as expected.",
+    "issues": [],
+    "stars": 1,
+    "hasGithubIssues": false,
+    "license": "MIT"
   },
   {
     "name": "MMM-Slack2",
@@ -11905,6 +11952,15 @@
     "license": "MIT"
   },
   {
+    "name": "MMM-WeatherOutfit",
+    "url": "https://github.com/Lavve/MMM-WeatherOutfit",
+    "id": "Lavve/MMM-WeatherOutfit",
+    "maintainer": "Lavve",
+    "maintainerURL": "",
+    "description": "Presents appropriate outfit depending on current outside temperature received from Otto Paulsen's outstanding <a target=\"_blank\" href=\"https://github.com/ottopaulsen/MMM-MQTT\">MQTT module</a>.",
+    "issues": []
+  },
+  {
     "name": "MMM-WebHookAlerts",
     "url": "https://github.com/PjTewkesbury/MMM-WebHookAlerts",
     "id": "PjTewkesbury/MMM-WebHookAlerts",
@@ -12118,20 +12174,9 @@
     "id": "ulrichwisser/MMM-Worldclock",
     "maintainer": "ulrichwisser",
     "maintainerURL": "",
-    "description": "Display local time of several locations.",
+    "description": "Display local time of several locations. Fully supported and updated.",
     "issues": [],
     "stars": 33
-  },
-  {
-    "name": "MMM-Worldclock",
-    "url": "https://github.com/BKeyport/MMM-Worldclock",
-    "id": "BKeyport/MMM-Worldclock",
-    "maintainer": "BKeyport",
-    "maintainerURL": "",
-    "description": "Fully supported version of worldclock.",
-    "issues": [],
-    "stars": 11,
-    "hasGithubIssues": false
   },
   {
     "name": "MMM-WorldTides",
@@ -12337,7 +12382,7 @@
     "maintainerURL": "https://wiki.bugsounet.fr",
     "description": "Allow to cast a YouTube video on MagicMirror².",
     "issues": [],
-    "stars": 2,
+    "stars": 3,
     "hasGithubIssues": false,
     "license": "MIT"
   },
@@ -12369,7 +12414,8 @@
     "maintainerURL": "",
     "description": "Displays weather forecast from <a target=\"_blank\" href=\"https://www.yr.no\">Yr</a>. Yr is a weather service from the Norwegian Broadcasting Corporation and the Norwegian Meteorological Institute.",
     "issues": [],
-    "stars": 16
+    "stars": 16,
+    "hasGithubIssues": false
   },
   {
     "name": "MMM-YT-SubCount",
@@ -12390,7 +12436,7 @@
     "maintainerURL": "",
     "description": "Display ZAPTEC charging API.",
     "issues": [],
-    "stars": 0,
+    "stars": 2,
     "license": "MIT"
   },
   {
@@ -12401,6 +12447,7 @@
     "maintainerURL": "",
     "description": "Displays daily Jewish calendar information.",
     "issues": [],
-    "stars": 0
+    "stars": 0,
+    "hasGithubIssues": false
   }
 ]

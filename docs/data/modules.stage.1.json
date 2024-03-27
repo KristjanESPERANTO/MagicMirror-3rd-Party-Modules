@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "2024-03-23T23:32:58.022Z",
+  "lastUpdate": "2024-03-27T20:33:14.089Z",
   "modules": [
     {
       "name": "MMM-01ZM",
@@ -74,9 +74,9 @@
       "issues": []
     },
     {
-      "name": "MMM-AfvalWijzer",
-      "url": "https://github.com/gertperdZA/MMM-AfvalWijzer",
-      "id": "gertperdZA/MMM-AfvalWijzer",
+      "name": "MMM-Afvalwijzer",
+      "url": "https://github.com/gertperdZA/MMM-Afvalwijzer",
+      "id": "gertperdZA/MMM-Afvalwijzer",
       "maintainer": "gertperdZA",
       "maintainerURL": "",
       "description": "Display trashcollection days of the Afvalwijzer service in the Netherlands.",
@@ -233,6 +233,15 @@
       "maintainer": "marcomerens",
       "maintainerURL": "",
       "description": "Show a table of upcoming birthdays for a list of people you provided. Nice not to forget birthdays.",
+      "issues": []
+    },
+    {
+      "name": "MMM-anotherNewsFeed",
+      "url": "https://github.com/MMRIZE/MMM-anotherNewsFeed",
+      "id": "MMRIZE/MMM-anotherNewsFeed",
+      "maintainer": "MMRIZE",
+      "maintainerURL": "",
+      "description": "Modified version of the default newsfeed module.",
       "issues": []
     },
     {
@@ -717,7 +726,8 @@
       "maintainer": "jannekalliola",
       "maintainerURL": "https://github.com/jannekalliola",
       "description": "Displays information about your BMW from the BMW Connected Drive API.",
-      "issues": []
+      "issues": [],
+      "outdated": "No longer works, per README."
     },
     {
       "name": "MMM-Bob-Ross",
@@ -859,7 +869,7 @@
       "url": "https://github.com/choffmann/MMM-bunq",
       "id": "choffmann/MMM-bunq",
       "maintainer": "choffmann",
-      "maintainerURL": "https://github.com/choffmann",
+      "maintainerURL": "",
       "description": "Display your bunq account balance.",
       "issues": []
     },
@@ -1445,7 +1455,7 @@
       "id": "boghammar/MMM-CrisisInformationSweden",
       "maintainer": "boghammar",
       "maintainerURL": "",
-      "description": "News feed from the <strong>Swedish</strong> Government Crisis Information (Krisinformation.se).",
+      "description": "News feed from the <strong>Swedish</strong> Government Crisis Information (krisinformation.se).",
       "issues": []
     },
     {
@@ -1544,7 +1554,7 @@
       "id": "gueguet/MMM-CyberSecurityNews",
       "maintainer": "gueguet",
       "maintainerURL": "https://github.com/gueguet",
-      "description": "This module allows you to display the last news about CyberSecurity.",
+      "description": "This module allows you to display the last news about Cyber Security.",
       "issues": []
     },
     {
@@ -2254,6 +2264,15 @@
       "issues": []
     },
     {
+      "name": "MMM-EUElectricityPrice",
+      "url": "https://github.com/late4marshmellow/MMM-EUElectricityPrice",
+      "id": "late4marshmellow/MMM-EUElectricityPrice",
+      "maintainer": "late4marshmellow",
+      "maintainerURL": "",
+      "description": "Display EU electricity prices from Nord Pool.",
+      "issues": []
+    },
+    {
       "name": "MMM-EventHorizon",
       "url": "https://github.com/mykle1/MMM-EventHorizon",
       "id": "mykle1/MMM-EventHorizon",
@@ -2507,6 +2526,15 @@
       "maintainer": "BenRoe",
       "maintainerURL": "",
       "description": "Display Readings/Values from your FHEM device like temperature or humidity.",
+      "issues": []
+    },
+    {
+      "name": "MMM-FiElectricityPrice",
+      "url": "https://github.com/jannekalliola/MMM-FiElectricityPrice",
+      "id": "jannekalliola/MMM-FiElectricityPrice",
+      "maintainer": "jannekalliola",
+      "maintainerURL": "",
+      "description": "Display Finnish electricity prices from Nord Pool.",
       "issues": []
     },
     {
@@ -4393,7 +4421,7 @@
       "url": "https://github.com/djey47/MMM-LKY-TIC",
       "id": "djey47/MMM-LKY-TIC",
       "maintainer": "djey47",
-      "maintainerURL": "https://github.com/djey47",
+      "maintainerURL": "",
       "description": "Display info about home power supply - FRANCE TELEINFO ENEDIS.",
       "issues": []
     },
@@ -4584,7 +4612,7 @@
       "url": "https://github.com/doctorfree/MMM-MacAddressScan",
       "id": "doctorfree/MMM-MacAddressScan",
       "maintainer": "doctorfree",
-      "maintainerURL": "https://github.com/doctorfree",
+      "maintainerURL": "",
       "description": "Determine the status of devices on the network based on their MAC address. It can also look up devices by IP addresses or hostnames. This module is an enhanced clone of the excellent MMM-NetworkScanner module by <a target=\"_blank\" href=\"https://github.com/ianperrin\">Ian Perrin</a>.",
       "issues": []
     },
@@ -4595,6 +4623,15 @@
       "maintainer": "whyjustin",
       "maintainerURL": "",
       "description": "Voice control based on based on Sphinx and Alexa.",
+      "issues": []
+    },
+    {
+      "name": "MMM-MagicHexClock",
+      "url": "https://github.com/Lavve/MMM-MagicHexClock",
+      "id": "Lavve/MMM-MagicHexClock",
+      "maintainer": "Lavve",
+      "maintainerURL": "",
+      "description": "Shows a clock in cool hexadecimal colors.",
       "issues": []
     },
     {
@@ -4975,8 +5012,8 @@
       "url": "https://github.com/hayseedbyte/mmm-helium-wallet",
       "id": "hayseedbyte/mmm-helium-wallet",
       "maintainer": "hayseedbyte",
-      "maintainerURL": "https://github.com/hayseedbyte",
-      "description": "Display your helium wallet balance and value (in your chosen currency) on your mirror.",
+      "maintainerURL": "",
+      "description": "Display your helium wallet balance and value (in your chosen currency).",
       "issues": []
     },
     {
@@ -8261,7 +8298,7 @@
       "id": "ulrichwisser/MMM-SL-PublicTransport",
       "maintainer": "ulrichwisser",
       "maintainerURL": "",
-      "description": "Display public transport in Stockholm in Sweden.",
+      "description": "Display public transport in Stockholm in Sweden. Updates to use latest API (mandatory from April 2024)! Please provide feedback if things don't work as expected.",
       "issues": []
     },
     {
@@ -9874,6 +9911,15 @@
       "outdated": "Deprecated. DarkSky API no longer works since 2023-03-31."
     },
     {
+      "name": "MMM-WeatherOutfit",
+      "url": "https://github.com/Lavve/MMM-WeatherOutfit",
+      "id": "Lavve/MMM-WeatherOutfit",
+      "maintainer": "Lavve",
+      "maintainerURL": "",
+      "description": "Presents appropriate outfit depending on current outside temperature received from Otto Paulsen's outstanding <a target=\"_blank\" href=\"https://github.com/ottopaulsen/MMM-MQTT\">MQTT module</a>.",
+      "issues": []
+    },
+    {
       "name": "MMM-WebHookAlerts",
       "url": "https://github.com/PjTewkesbury/MMM-WebHookAlerts",
       "id": "PjTewkesbury/MMM-WebHookAlerts",
@@ -10050,16 +10096,7 @@
       "id": "ulrichwisser/MMM-Worldclock",
       "maintainer": "ulrichwisser",
       "maintainerURL": "",
-      "description": "Display local time of several locations.",
-      "issues": []
-    },
-    {
-      "name": "MMM-Worldclock",
-      "url": "https://github.com/BKeyport/MMM-Worldclock",
-      "id": "BKeyport/MMM-Worldclock",
-      "maintainer": "BKeyport",
-      "maintainerURL": "",
-      "description": "Fully supported version of worldclock.",
+      "description": "Display local time of several locations. Fully supported and updated.",
       "issues": []
     },
     {
