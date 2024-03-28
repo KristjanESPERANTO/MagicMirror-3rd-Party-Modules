@@ -302,7 +302,7 @@ main {
 }
 
 .outdated {
-  background-color: var(--color-foreground-error) !important;
+  background-image: repeating-linear-gradient(50deg, #0000, #f002 2%);
 
   --color-background: var(--color-background-error) !important;
   --color-background-gray: var(--color-background-error-gray) !important;
