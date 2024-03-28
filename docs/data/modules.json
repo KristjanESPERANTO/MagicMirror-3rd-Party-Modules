@@ -8912,7 +8912,7 @@
     "maintainerURL": "https://github.com/Bee-Mar",
     "description": "An unofficial MagicMirror\u00b2 3rd Party Package Manager. Automates searching, installation, removal, updating, and upgrading of MagicMirror\u00b2 modules.",
     "issues": true,
-    "stars": 168,
+    "stars": 169,
     "license": "MIT",
     "image": "ui-src-assets-MagicMirror-Package-Manager-Icon.jpg",
     "defaultSortWeight": 7,
@@ -9000,7 +9000,7 @@
     "maintainerURL": "",
     "description": "Create schedules to control when other modules are shown, hidden or dimmed and to send notifications to other modules.",
     "issues": true,
-    "stars": 96,
+    "stars": 97,
     "license": "MIT",
     "tags": [
       "scheduler"
@@ -9034,7 +9034,7 @@
     "maintainerURL": "",
     "description": "Display your calendar events in a monthly calendar view.",
     "issues": true,
-    "stars": 21,
+    "stars": 22,
     "license": "MIT",
     "image": "screenshot.jpg",
     "defaultSortWeight": 3,

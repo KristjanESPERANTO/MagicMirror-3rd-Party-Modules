@@ -8840,7 +8840,7 @@
     "issues": [
       "There is no `package.json`. We need this file to gather information about the module for the module list page."
     ],
-    "stars": 168,
+    "stars": 169,
     "license": "MIT",
     "image": "ui-src-assets-MagicMirror-Package-Manager-Icon.jpg"
   },
@@ -8927,7 +8927,7 @@
     "maintainerURL": "",
     "description": "Create schedules to control when other modules are shown, hidden or dimmed and to send notifications to other modules.",
     "issues": [],
-    "stars": 96,
+    "stars": 97,
     "license": "MIT",
     "tags": [
       "scheduler"
@@ -8961,7 +8961,7 @@
     "issues": [
       "There is no `package.json`. We need this file to gather information about the module for the module list page."
     ],
-    "stars": 21,
+    "stars": 22,
     "license": "MIT",
     "image": "screenshot.jpg"
   },
