@@ -27,8 +27,14 @@ function sortByNameIgnoringPrefix (a, b) {
 async function createModuleList () {
   const markdown = await fetchMarkdownData();
   const moduleList = [];
+  let category = "";
+
   // eslint-disable-next-line no-restricted-syntax
   for (const line of markdown.split("\n")) {
+    if (line.startsWith("### ")) {
+      category = line.replace("### ", "").trim();
+    }
+
     if (
       line.includes("](https://github.com/") ||
       line.includes("](https://gitlab.com/") ||
@@ -72,6 +78,7 @@ async function createModuleList () {
 
         const module = {
           name,
+          category,
           url,
           id,
           maintainer,
