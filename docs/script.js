@@ -186,9 +186,15 @@ function displayTagButtonContainer () {
 
     button.addEventListener("click", () => {
       filterByTag(tag);
+      resetCategoryFilter();
     });
     tagButtonContainer.appendChild(button);
   });
+}
+
+function resetCategoryFilter () {
+  const categoryFilter = document.getElementById("category-filter");
+  categoryFilter.value = "all";
 }
 
 function removeSelectedMarkingFromTagsAndCards () {
@@ -268,6 +274,35 @@ function filterByTag (tag) {
   });
 }
 
+function addCategoryFilter () {
+  const categoryFilter = document.getElementById("category-filter");
+  const categories = [...new Set(allModules.map((module) => module.category))];
+
+  categories.sort();
+
+  categories.forEach((category) => {
+    const option = document.createElement("option");
+    option.value = category;
+    option.textContent = category;
+    categoryFilter.appendChild(option);
+  });
+
+  categoryFilter.addEventListener("change", () => {
+    const selectedCategory = categoryFilter.value;
+    if (selectedCategory === "all") {
+      filteredModuleList = allModules;
+    } else {
+      filteredModuleList = allModules.filter((module) => module.category === selectedCategory);
+    }
+
+    searchInput.value = "";
+
+    removeSelectedMarkingFromTagsAndCards();
+
+    updateModuleCardContainer();
+  });
+}
+
 // Add an event listener for clicks on the cards
 moduleCardContainer.addEventListener("click", (event) => {
   // Check if the clicked element is a card
@@ -283,6 +318,7 @@ moduleCardContainer.addEventListener("click", (event) => {
 });
 
 resetButton.addEventListener("click", () => {
+  resetCategoryFilter();
   const root = document.querySelector(":root");
   filteredModuleList = allModules;
   searchInput.value = "";
@@ -334,6 +370,7 @@ async function initiate () {
     sortData(sortDropdown.value);
     updateModuleCardContainer();
     displayTagButtonContainer();
+    addCategoryFilter();
   } catch (error) {
     console.error("Error fetching data:", error);
   }
