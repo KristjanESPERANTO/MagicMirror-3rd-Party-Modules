@@ -272,7 +272,7 @@ def check_modules():
                                         f"{value['category']}: Found `{search_string}` in file `{file_path.name}`: {value['name']}"
                                     )
 
-                        if file_path.name.startswith("README"):
+                        if file_path.name.startswith("README") and file_path.parent == module_directory_path:
                             # Search for "update" or "Update" in README
                             found_update_string = search_in_file(file_path, "Update")
                             if not found_update_string:
