@@ -16,7 +16,6 @@ function sortByNameIgnoringPrefix(a, b) {
 
 function createModuleList () {
   const moduleList = [];
-  // eslint-disable-next-line no-restricted-syntax, guard-for-in
   ownModuleList.forEach((module) => {
     module.issues = [];
     module.id = module.url

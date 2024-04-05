@@ -18,7 +18,6 @@ async function findAndResizeImage (moduleName, moduleMaintainer) {
   const sourceFolder = `./modules/${moduleName}-----${moduleMaintainer}/`;
   const files = await fs.promises.readdir(sourceFolder, {"recursive": true});
   files.sort();
-  let imageToProcess = null;
   let targetImageName = null;
   const issues = [];
 
@@ -41,7 +40,7 @@ async function findAndResizeImage (moduleName, moduleMaintainer) {
     }
   }
 
-  imageToProcess = firstScreenshotImage || firstImage;
+  const imageToProcess = firstScreenshotImage || firstImage;
 
   if (imageToProcess) {
     targetImageName = imageToProcess

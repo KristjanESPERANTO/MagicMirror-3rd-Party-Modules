@@ -129,7 +129,7 @@ function updateModuleCardContainer () {
       try {
         createCard(moduleData);
       } catch (error) {
-        console.error("Error creating module", moduleData);
+        console.error("Error creating module", moduleData, error);
       }
     } else {
       moduleCounter -= 1;

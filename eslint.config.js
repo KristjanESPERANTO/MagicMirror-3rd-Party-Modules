@@ -1,13 +1,16 @@
 import * as fs from "fs";
 
-import eslintPlugin from "@eslint/js";
 import eslintPluginImport from "eslint-plugin-import";
-// eslint-disable-next-line import/no-unresolved
+import eslintPluginJs from "@eslint/js";
+import eslintPluginJsonc from "eslint-plugin-jsonc";
 import eslintPluginPackageJson from "eslint-plugin-package-json/configs/recommended";
 import eslintPluginStylistic from "@stylistic/eslint-plugin";
 import globals from "globals";
 
+console.log("⚠\n⚠ Disabled ...eslintPluginImport.configs.recommended.rules because it's not working with ESLint 9.0.0 ⚠\n⚠\n");
+
 const config = [
+  ...eslintPluginJsonc.configs["flat/recommended-with-json"],
   {
     "ignores": [
       "modules/*",
@@ -28,8 +31,8 @@ const config = [
       "import": eslintPluginImport
     },
     "rules": {
-      ...eslintPlugin.configs.all.rules,
-      ...eslintPluginImport.configs.recommended.rules,
+      // ...eslintPluginImport.configs.recommended.rules,
+      ...eslintPluginJs.configs.all.rules,
       ...eslintPluginStylistic.configs["all-flat"].rules,
       "complexity": "off",
       "func-style": "off",
@@ -37,7 +40,7 @@ const config = [
       // Until now this rule doesn't run in flat config
       "import/namespace": "off",
       "max-depth": ["warn", 5],
-      "max-lines": ["warn", 400],
+      "max-lines": ["warn", 450],
       "max-lines-per-function": ["warn", 150],
       "max-params": ["warn", 5],
       "max-statements": "off",

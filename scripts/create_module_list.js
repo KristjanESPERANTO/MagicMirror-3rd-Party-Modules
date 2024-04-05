@@ -29,7 +29,6 @@ async function createModuleList () {
   const moduleList = [];
   let category = "";
 
-  // eslint-disable-next-line no-restricted-syntax
   for (const line of markdown.split("\n")) {
     if (line.startsWith("### ")) {
       category = line.replace("### ", "").trim();
