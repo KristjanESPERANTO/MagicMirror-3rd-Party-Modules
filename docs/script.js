@@ -83,8 +83,8 @@ function createCard (moduleData) {
   }
 
   const license = card.querySelector(".info .container.license .text");
+  license.href = `${moduleData.url}`;
   if (moduleData.license) {
-    license.href = `${moduleData.url}`;
     license.textContent = `©${moduleData.license}`;
   } else {
     license.style.color = "red";
