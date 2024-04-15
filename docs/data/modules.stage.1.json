@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "2024-03-30T21:55:43.018Z",
+  "lastUpdate": "2024-04-15T15:30:06.725Z",
   "modules": [
     {
       "name": "MMM-01ZM",
@@ -108,7 +108,7 @@
       "id": "ryanzor/MMM-AirbarHelper",
       "maintainer": "ryanzor",
       "maintainerURL": "",
-      "description": "Add touch input to your mirror using a ~$50 usb plug and play sensor.",
+      "description": "Add touch input to your mirror using a ~$50 USB plug and play sensor.",
       "issues": []
     },
     {
@@ -797,17 +797,6 @@
       "description": "Weather designed for bottom bar position, now using the OpenWeather API.",
       "issues": [],
       "outdated": "Abandoned. No reactions to issues since years. Missing instructions to install dependency 'request'."
-    },
-    {
-      "name": "MMM-BMWConnected",
-      "category": "Outdated Modules",
-      "url": "https://github.com/jannekalliola/MMM-BMWConnected",
-      "id": "jannekalliola/MMM-BMWConnected",
-      "maintainer": "jannekalliola",
-      "maintainerURL": "",
-      "description": "Displays information about your BMW from the BMW Connected Drive API.",
-      "issues": [],
-      "outdated": "No longer works, per README."
     },
     {
       "name": "MMM-Bob-Ross",
@@ -1715,7 +1704,7 @@
       "id": "dathbe/MMM-CustomText",
       "maintainer": "dathbe",
       "maintainerURL": "",
-      "description": "Display a custom message on your mirror.  Similar to MMM-CustomMessage, but allows multiple instances.",
+      "description": "Display a custom message on your mirror, updatable via notification.  Similar to MMM-CustomMessage, but allows multiple instances.",
       "issues": []
     },
     {
@@ -2376,7 +2365,7 @@
       "url": "https://github.com/balassy/MMM-Elvira",
       "id": "balassy/MMM-Elvira",
       "maintainer": "balassy",
-      "maintainerURL": "https://github.com/balassy",
+      "maintainerURL": "",
       "description": "Displays Hungarian public train departure times using real-time data from the \"Elvira\" service provided by the Hungarian national railway company (MÁV).",
       "issues": []
     },
@@ -2529,6 +2518,16 @@
       "maintainer": "late4marshmellow",
       "maintainerURL": "",
       "description": "Display EU electricity prices from Nord Pool.",
+      "issues": []
+    },
+    {
+      "name": "MMM-euro2024",
+      "category": "Sports",
+      "url": "https://github.com/0m4r/MMM-euro2024",
+      "id": "0m4r/MMM-euro2024",
+      "maintainer": "0m4r",
+      "maintainerURL": "",
+      "description": "Display live scores of Euro 2024 football games.",
       "issues": []
     },
     {
@@ -3732,6 +3731,16 @@
       "issues": []
     },
     {
+      "name": "MMM-Helium-Wallet",
+      "category": "Finance",
+      "url": "https://github.com/hayseedbyte/MMM-Helium-Wallet",
+      "id": "hayseedbyte/MMM-Helium-Wallet",
+      "maintainer": "hayseedbyte",
+      "maintainerURL": "",
+      "description": "Display your helium wallet balance and value (in your chosen currency).",
+      "issues": []
+    },
+    {
       "name": "Hello-Lucy",
       "category": "Outdated Modules",
       "url": "https://github.com/mykle1/Hello-Lucy",
@@ -4201,7 +4210,7 @@
       "id": "Jilano5/MMM-Ilevia-Lille",
       "maintainer": "Jilano5",
       "maintainerURL": "",
-      "description": "time to the next buses, tramways from a list of stations / lines for Lille (Ilevia).",
+      "description": "Time to the next buses, tramways from a list of stations / lines for Lille (Ilevia).",
       "issues": []
     },
     {
@@ -5391,7 +5400,7 @@
       "url": "https://github.com/ashishtank/MMM-MercedesMe",
       "id": "ashishtank/MMM-MercedesMe",
       "maintainer": "ashishtank",
-      "maintainerURL": "https://github.com/ashishtank",
+      "maintainerURL": "",
       "description": "Displays EV/Fuel status and Range of Mercedes cars.",
       "issues": []
     },
@@ -5403,6 +5412,16 @@
       "maintainer": "Bangee44",
       "maintainerURL": "",
       "description": "Display current weather based on the Meteoblue.com API.",
+      "issues": []
+    },
+    {
+      "name": "MMM-MeteoFrance",
+      "category": "Weather",
+      "url": "https://github.com/bugsounet/MMM-MeteoFrance",
+      "id": "bugsounet/MMM-MeteoFrance",
+      "maintainer": "bugsounet",
+      "maintainerURL": "",
+      "description": "[FR] Affiche les informations de prévisions actuelles, horaires et quotidiennes à l'aide des données de l'API MétéoFrance.<br />[EN] Displays current, hourly and daily forecast information using data from MeteoFrance API.",
       "issues": []
     },
     {
@@ -5473,6 +5492,16 @@
       "maintainer": "joanaz",
       "maintainerURL": "",
       "description": "Alexa voice control to show/hide modules, search for images or Youtube video, and display them with the search term on the mirror.",
+      "issues": []
+    },
+    {
+      "name": "MMM-MktIndex",
+      "category": "Finance",
+      "url": "https://github.com/thess/MMM-MktIndex",
+      "id": "thess/MMM-MktIndex",
+      "maintainer": "thess",
+      "maintainerURL": "",
+      "description": "Display market indicies using (free) Yahoo Finance API.",
       "issues": []
     },
     {
@@ -5576,16 +5605,6 @@
       "description": "Fetches one recipe type per day from food2fork API and display as a small menu.",
       "issues": [],
       "outdated": "Deprecated. food2fork API isn't reachable anymore."
-    },
-    {
-      "name": "mmm-helium-wallet",
-      "category": "Finance",
-      "url": "https://github.com/hayseedbyte/mmm-helium-wallet",
-      "id": "hayseedbyte/mmm-helium-wallet",
-      "maintainer": "hayseedbyte",
-      "maintainerURL": "",
-      "description": "Display your helium wallet balance and value (in your chosen currency).",
-      "issues": []
     },
     {
       "name": "mmm-hue-lights",
@@ -5791,9 +5810,9 @@
     {
       "name": "MMM-mmpm",
       "category": "Utility / IOT / 3rd Party / Integration",
-      "url": "https://github.com/bee-mar/MMM-mmpm",
-      "id": "bee-mar/MMM-mmpm",
-      "maintainer": "bee-mar",
+      "url": "https://github.com/Bee-Mar/MMM-mmpm",
+      "id": "Bee-Mar/MMM-mmpm",
+      "maintainer": "Bee-Mar",
       "maintainerURL": "",
       "description": "Companion module for MMPM to enable hiding/showing of MagicMirror² modules.",
       "issues": []
@@ -6198,6 +6217,16 @@
       "maintainer": "wiesty",
       "maintainerURL": "",
       "description": "Display public transport 🚐 from Munich in Germany.",
+      "issues": []
+    },
+    {
+      "name": "MMM-MyBMW",
+      "category": "Transport / Travel",
+      "url": "https://github.com/Jargendas/MMM-MyBMW",
+      "id": "Jargendas/MMM-MyBMW",
+      "maintainer": "Jargendas",
+      "maintainerURL": "",
+      "description": "Display data from MyBMW for your car.",
       "issues": []
     },
     {
@@ -6852,7 +6881,7 @@
       "url": "https://github.com/Travelbacon/MMM-NLDepartureTimes",
       "id": "Travelbacon/MMM-NLDepartureTimes",
       "maintainer": "Travelbacon",
-      "maintainerURL": "https://github.com/Travelbacon",
+      "maintainerURL": "",
       "description": "Shows departure times of Dutch public transport. Where you can sort on destination and group stops in one stop. Good for hubs where multiple lines and authorities merge, so yo have one stop instead of multiple.",
       "issues": []
     },
@@ -6975,7 +7004,7 @@
       "url": "https://github.com/elaniobro/MMM-nyc-transit",
       "id": "elaniobro/MMM-nyc-transit",
       "maintainer": "elaniobro",
-      "maintainerURL": "https://github.com/elaniobro",
+      "maintainerURL": "",
       "description": "Real-time MTA subway countdown clock for stations you choose. Configurable for marquee and or list view.",
       "issues": []
     },
@@ -7136,7 +7165,7 @@
       "url": "https://github.com/Legion2/MMM-Online-State",
       "id": "Legion2/MMM-Online-State",
       "maintainer": "Legion2",
-      "maintainerURL": "https://github.com/Legion2",
+      "maintainerURL": "",
       "description": "Displays the network connection availability of the browser.",
       "issues": []
     },
@@ -9391,7 +9420,7 @@
       "id": "0m4r/MMM-SoccerLiveScore",
       "maintainer": "0m4r",
       "maintainerURL": "",
-      "description": "Display live scores of your favorite soccer leagues/competitions.",
+      "description": "Display live scores of your favorite football leagues/competitions.",
       "issues": []
     },
     {
@@ -9714,6 +9743,16 @@
       "maintainer": "ianperrin",
       "maintainerURL": "",
       "description": "Display your activity data from <a target=\"_blank\" href=\"https://www.strava.com\">Strava.com</a>.",
+      "issues": []
+    },
+    {
+      "name": "MMM-StravaWeekInBike",
+      "category": "Utility / IOT / 3rd Party / Integration",
+      "url": "https://github.com/tylerstambaugh/MMM-StravaWeekInBike",
+      "id": "tylerstambaugh/MMM-StravaWeekInBike",
+      "maintainer": "tylerstambaugh",
+      "maintainerURL": "https://github.com/tylerstambaugh",
+      "description": "Simple display of basic ride stats from <a target=\"_blank\" href=\"https://www.strava.com\">Strava</a> for a rolling window of time.",
       "issues": []
     },
     {
