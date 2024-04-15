@@ -213,9 +213,9 @@ def check_modules():
 
         if module["name"].startswith("EXT-"):
             # Modules with a name starting with "EXT-" are only for MMM-GoogleAssistant. So we make them heavier for the default sort order.
-            module["defaultSortWeight"] += 2
+            module["defaultSortWeight"] += 3
 
-            module["description"] += "<br /><br />This module have been defined to work only with MMM-GoogleAssistant."
+            module["description"] += "<br /><br />This module has been defined to work only with MMM-GoogleAssistant."
 
         elif not module["name"].startswith("MMM-"):
             module["issues"].append(

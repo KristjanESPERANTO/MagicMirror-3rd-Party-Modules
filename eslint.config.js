@@ -1,6 +1,6 @@
 import * as fs from "fs";
 
-import eslintPluginImport from "eslint-plugin-import";
+// Import eslintPluginImport from "eslint-plugin-import";
 import eslintPluginJs from "@eslint/js";
 import eslintPluginJsonc from "eslint-plugin-jsonc";
 import eslintPluginPackageJson from "eslint-plugin-package-json/configs/recommended";
@@ -27,8 +27,8 @@ const config = [
       }
     },
     "plugins": {
-      ...eslintPluginStylistic.configs["all-flat"].plugins,
-      "import": eslintPluginImport
+      ...eslintPluginStylistic.configs["all-flat"].plugins
+      // "import": eslintPluginImport
     },
     "rules": {
       // ...eslintPluginImport.configs.recommended.rules,
