@@ -173,6 +173,10 @@ def check_modules():
             "name": "Replace it with `@electron/rebuild`",
             "category": "Deprecated",
         },
+        "api.openweathermap.org/data/2.5": {
+            "name": "OpenWeather API 2.5 will be deprecated in June 2024. Please update to 3.0.",
+            "category": "Deprecated",
+        },
     }
 
     search_strings_package_json = {
