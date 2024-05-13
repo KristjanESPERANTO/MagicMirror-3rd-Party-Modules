@@ -167,6 +167,7 @@ async function checkLicenseAndHandleScreenshot (moduleData, module) {
       "GPL-3.0-or-later",
       "ISC",
       "MIT",
+      "MIT-Modern-Variant",
       "MPL-2.0",
       "LGPL-2.1",
       "LGPL-2.1-only"
