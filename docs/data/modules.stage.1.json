@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "2024-04-15T15:30:06.725Z",
+  "lastUpdate": "2024-05-13T15:30:06.811Z",
   "modules": [
     {
       "name": "MMM-01ZM",
@@ -37,8 +37,8 @@
       "url": "https://github.com/nigel-daniels/MMM-3Day-Forecast",
       "id": "nigel-daniels/MMM-3Day-Forecast",
       "maintainer": "nigel-daniels",
-      "maintainerURL": "",
-      "description": "Simple display of today, tomorrow &amp; next-day, designed to work with MMM-Weather-Now. Now uses Open Weather as WeatherBit reduced the free service to an unusable level :( If you installed an older version ( &lt; 18 Oct 2022 ), please update and get a new api key!",
+      "maintainerURL": "https://github.com/nigel-daniels",
+      "description": "Simple display of today, tomorrow &amp; next-day, designed to work with MMM-Weather-Now. Now uses WeatherAPI as Open Weather reduced the free service :( If you installed an older version ( &lt; 6 May 2024 ), please update and get a new api key!",
       "issues": []
     },
     {
@@ -69,6 +69,16 @@
       "maintainer": "maxbethge",
       "maintainerURL": "",
       "description": "Display weather information using the AccuWeather API.",
+      "issues": []
+    },
+    {
+      "name": "MMM-AccuWeatherForecastDeluxe",
+      "category": "Weather",
+      "url": "https://github.com/BigBot89/MMM-AccuWeatherForecastDeluxe",
+      "id": "BigBot89/MMM-AccuWeatherForecastDeluxe",
+      "maintainer": "BigBot89",
+      "maintainerURL": "",
+      "description": "A fork of maxbethge's weather module. This version fixes the hourly forecast and includes a missing icon for \"hot\" weather. It also disables a few options that break the layout.",
       "issues": []
     },
     {
@@ -1890,17 +1900,6 @@
       "outdated": "Deprecated. DarkSky API no longer works since 2023-03-31."
     },
     {
-      "name": "MMM-DarkSky24Hours",
-      "category": "Outdated Modules",
-      "url": "https://github.com/thobach/MMM-DarkSky24Hours",
-      "id": "thobach/MMM-DarkSky24Hours",
-      "maintainer": "thobach",
-      "maintainerURL": "",
-      "description": "Shows weather information for the next 24 hours using the Dark Sky API. The idea of this module is to give you confidence on what to wear when you go outside / to work, or what transport mode you should take (in case you are a good weather-only biker). The hourly forecast gives you a good decision basis based on the weather condition at the times you go to work and return home.",
-      "issues": [],
-      "outdated": "Deprecated. DarkSky API no longer works since 2023-03-31."
-    },
-    {
       "name": "MMM-DarkSkyForecast",
       "category": "Outdated Modules",
       "url": "https://github.com/jclarke0000/MMM-DarkSkyForecast",
@@ -3317,6 +3316,16 @@
       "description": "Show specific module(s) and hide others for a some time by notification or command.",
       "issues": [],
       "outdated": "Archived. Repo has been archived at 2020-06-10."
+    },
+    {
+      "name": "MMM-Glassy",
+      "category": "Development / Core MagicMirror²",
+      "url": "https://github.com/bugsounet/MMM-Glassy",
+      "id": "bugsounet/MMM-Glassy",
+      "maintainer": "bugsounet",
+      "maintainerURL": "",
+      "description": "This module allows to add a glass effect to MagicMirror² modules.",
+      "issues": []
     },
     {
       "name": "MMM-Globe",
@@ -5505,6 +5514,16 @@
       "issues": []
     },
     {
+      "name": "MMM-MLB-Scoreboard",
+      "category": "Sports",
+      "url": "https://github.com/jclarke54/MMM-MLB-Scoreboard",
+      "id": "jclarke54/MMM-MLB-Scoreboard",
+      "maintainer": "jclarke54",
+      "maintainerURL": "https://github.com/jclarke54",
+      "description": "Display the days Major League Baseball games.",
+      "issues": []
+    },
+    {
       "name": "MM-concert-calendar",
       "category": "Entertainment / Misc",
       "url": "https://github.com/muilpp/MM-concert-calendar",
@@ -6232,9 +6251,9 @@
     {
       "name": "MMM-MyCalendar",
       "category": "Utility / IOT / 3rd Party / Integration",
-      "url": "https://github.com/jclarke0000/MMM-MyCalendar",
-      "id": "jclarke0000/MMM-MyCalendar",
-      "maintainer": "jclarke0000",
+      "url": "https://github.com/dbeltjr/MMM-MyCalendar",
+      "id": "dbeltjr/MMM-MyCalendar",
+      "maintainer": "dbeltjr",
       "maintainerURL": "",
       "description": "Same functionality as the default Calendar app but different display formatting.",
       "issues": []
@@ -6654,6 +6673,16 @@
       "issues": []
     },
     {
+      "name": "MMM-NetatmoThermostat",
+      "category": "Utility / IOT / 3rd Party / Integration",
+      "url": "https://github.com/bugsounet/MMM-NetatmoThermostat",
+      "id": "bugsounet/MMM-NetatmoThermostat",
+      "maintainer": "bugsounet",
+      "maintainerURL": "",
+      "description": "This module display your Netatmo Thermostat informations.",
+      "issues": []
+    },
+    {
       "name": "MMM-network-signal",
       "category": "Development / Core MagicMirror²",
       "url": "https://github.com/PoOwAa/MMM-network-signal",
@@ -6771,6 +6800,16 @@
       "maintainer": "CptMeetKat",
       "maintainerURL": "https://github.com/CptMeetKat",
       "description": "Display departures from Sydney train stations in NSW, Australia.",
+      "issues": []
+    },
+    {
+      "name": "MMM-NexusMetroRTI",
+      "category": "Transport / Travel",
+      "url": "https://github.com/jcktwd/MMM-NexusMetroRTI",
+      "id": "jcktwd/MMM-NexusMetroRTI",
+      "maintainer": "jcktwd",
+      "maintainerURL": "",
+      "description": "Shows live estimates of train arrival times at stations along the Nexus Tyne and Wear Metro, located in the North-East of the UK.",
       "issues": []
     },
     {
@@ -7277,6 +7316,16 @@
       "maintainer": "RedNax67",
       "maintainerURL": "",
       "description": "Display information from your OpenTherm gateway.",
+      "issues": []
+    },
+    {
+      "name": "MMM-OpenWeather24Hours",
+      "category": "Weather",
+      "url": "https://github.com/thobach/MMM-OpenWeather24Hours",
+      "id": "thobach/MMM-OpenWeather24Hours",
+      "maintainer": "thobach",
+      "maintainerURL": "",
+      "description": "Shows weather information for the next 24 hours using the OpenWeather API. The idea of this module is to give you confidence on what to wear when you go outside / to work, or what transport mode you should take (in case you are a good weather-only biker). The hourly forecast gives you a good decision basis based on the weather condition at the times you go to work and return home.",
       "issues": []
     },
     {
@@ -9280,7 +9329,7 @@
       "id": "ulrichwisser/MMM-SL-PublicTransport",
       "maintainer": "ulrichwisser",
       "maintainerURL": "",
-      "description": "Display public transport in Stockholm in Sweden. Updates to use latest API (mandatory from April 2024)! Please provide feedback if things don't work as expected.",
+      "description": "Display public transport in Stockholm in Sweden. Updated to use latest API (mandatory from April 2024)!",
       "issues": []
     },
     {
@@ -9837,6 +9886,16 @@
       "issues": []
     },
     {
+      "name": "MMM-SwissSmartUrbanHeatMap",
+      "category": "Weather",
+      "url": "https://github.com/git-pesche/MMM-SwissSmartUrbanHeatMap",
+      "id": "git-pesche/MMM-SwissSmartUrbanHeatMap",
+      "maintainer": "git-pesche",
+      "maintainerURL": "",
+      "description": "Allows you to view climatic data from stations of the measuring network <a target=\"_blank\" href=\"https://smart-urban-heat-map.ch/\">Smart Urban Heat Map Bern</a> (temperature &amp; humidity)",
+      "issues": []
+    },
+    {
       "name": "MMM-SwissStationboard",
       "category": "Transport / Travel",
       "url": "https://github.com/vanhoekd/MMM-SwissStationboard",
@@ -9884,6 +9943,16 @@
       "maintainer": "marcinomen",
       "maintainerURL": "",
       "description": "API for sending notifications to your mirror.",
+      "issues": []
+    },
+    {
+      "name": "MMM-SystemInfo",
+      "category": "Utility / IOT / 3rd Party / Integration",
+      "url": "https://github.com/dientuki/MMM-SystemInfo",
+      "id": "dientuki/MMM-SystemInfo",
+      "maintainer": "dientuki",
+      "maintainerURL": "https://github.com/dientuki",
+      "description": "Get a lot of system stats from a PC board like Cpu usage, ram usage, disk usage, Cpu temperature, volume, internet status and private ip and status, beside that you can configure your WiFi network to create a QR code",
       "issues": []
     },
     {
@@ -10410,9 +10479,9 @@
     {
       "name": "MMM-Trello",
       "category": "Utility / IOT / 3rd Party / Integration",
-      "url": "https://github.com/Jopyth/MMM-Trello",
-      "id": "Jopyth/MMM-Trello",
-      "maintainer": "Jopyth",
+      "url": "https://github.com/benjaminflessner/MMM-Trello",
+      "id": "benjaminflessner/MMM-Trello",
+      "maintainer": "benjaminflessner",
       "maintainerURL": "",
       "description": "This module can show <a target=\"_blank\" href=\"https://trello.com\">Trello</a> cards on your mirror.",
       "issues": []
@@ -10996,7 +11065,7 @@
       "id": "nigel-daniels/MMM-Weather-Now",
       "maintainer": "nigel-daniels",
       "maintainerURL": "https://github.com/nigel-daniels",
-      "description": "Simple clean display of the weather now, designed to go with MMM-3Day-Forecast. Now uses Open Weather as WeatherBit reduced the free service to an unusable level :( If you installed an older version ( &lt; 18 Oct 2022 ), please update and get a new api key!",
+      "description": "Simple clean display of the weather now, designed to go with MMM-3Day-Forecast. Now uses WetherAPI as Open Weather reduced the free service :( If you installed an older version ( &lt; 6 May 2024 ), please update and get a new api key!",
       "issues": []
     },
     {
