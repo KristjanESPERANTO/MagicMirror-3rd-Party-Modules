@@ -68,7 +68,7 @@
     "maintainerURL": "https://github.com/nigel-daniels",
     "description": "Simple display of today, tomorrow &amp; next-day, designed to work with MMM-Weather-Now. Now uses WeatherAPI as Open Weather reduced the free service :( If you installed an older version ( &lt; 6 May 2024 ), please update and get a new api key!",
     "issues": true,
-    "stars": 34,
+    "stars": 35,
     "license": "MIT",
     "tags": [
       "weather",
@@ -253,7 +253,7 @@
     "maintainerURL": "",
     "description": "Display the air quality index for a certain location.",
     "issues": true,
-    "stars": 33,
+    "stars": 34,
     "license": "MIT",
     "tags": [
       "aqi",
@@ -364,7 +364,7 @@
     "maintainerURL": "",
     "description": "The MMM-AlexaControl module allows you to control your Mirror with Alexa (every device that support Wemos devices). You can turn it on and off, change the page and send notifications to other modules.",
     "issues": true,
-    "stars": 42,
+    "stars": 43,
     "license": "MIT",
     "tags": [
       "alexacontrol",
@@ -2572,7 +2572,7 @@
     ],
     "image": "docs-screenshot.jpg",
     "defaultSortWeight": 0,
-    "lastCommit": "2024-02-24T18:52:54+01:00"
+    "lastCommit": "2024-06-22T11:07:40+02:00"
   },
   {
     "name": "MMM-covid19",
