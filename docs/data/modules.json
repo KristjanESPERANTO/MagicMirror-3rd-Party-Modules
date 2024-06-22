@@ -5795,17 +5795,23 @@
   {
     "name": "MMM-GoogleMapsTraffic",
     "category": "Transport / Travel",
-    "url": "https://github.com/vicmora/MMM-GoogleMapsTraffic",
-    "id": "vicmora/MMM-GoogleMapsTraffic",
-    "maintainer": "vicmora",
+    "url": "https://github.com/doctorfree/MMM-GoogleMapsTraffic",
+    "id": "doctorfree/MMM-GoogleMapsTraffic",
+    "maintainer": "doctorfree",
     "maintainerURL": "",
     "description": "Displays a Google map, centered at provided coordinates, with traffic information.",
     "issues": true,
-    "stars": 85,
+    "stars": 0,
+    "hasGithubIssues": false,
     "license": "MIT",
+    "tags": [
+      "google",
+      "traffic",
+      "maps"
+    ],
     "image": "img-coordinates.jpg",
     "defaultSortWeight": 7,
-    "lastCommit": "2018-09-10T09:52:56-07:00"
+    "lastCommit": "2022-03-16T17:53:17-07:00"
   },
   {
     "name": "MMM-GooglePhotos",
@@ -9201,7 +9207,7 @@
     "stars": 6,
     "license": "MIT",
     "image": "mm concerts calendar.jpg",
-    "defaultSortWeight": 7,
+    "defaultSortWeight": 8,
     "lastCommit": "2022-06-21T21:05:46+02:00"
   },
   {
@@ -9999,7 +10005,7 @@
     "maintainerURL": "",
     "description": "Displays the currently airing top movies in theaters around you.",
     "issues": true,
-    "stars": 17,
+    "stars": 18,
     "license": "MIT",
     "image": "MMM-MovieListings_left.jpg",
     "defaultSortWeight": 6,
@@ -10119,7 +10125,7 @@
     "maintainerURL": "",
     "description": "Subscribe topics from MQTT message queues, and displays the payload values in a table, with configurable labels.",
     "issues": true,
-    "stars": 55,
+    "stars": 57,
     "license": "MIT",
     "tags": [
       "smart home",
@@ -10187,7 +10193,7 @@
     "maintainerURL": "https://github.com/Tom-Hirschberger",
     "description": "A powerful module that subscribes to MQTT broker and read/send MQTT messages and MM Notifications with a lot of individual setup/rules. Allows you to integrate MM into smart home like Home Assistant. Powerful automation with structured Noti and MQTT dictionaries rules (e.g. one mqtt message could trigger many predefined noti, and one mm-noti could trigger different predefined mqtt messages).",
     "issues": true,
-    "stars": 23,
+    "stars": 24,
     "license": "MIT",
     "tags": [
       "mqtt"
@@ -10253,7 +10259,7 @@
     "maintainerURL": "https://github.com/BKeyport",
     "description": "Display multiple mini-calendars at the same time.",
     "issues": true,
-    "stars": 11,
+    "stars": 12,
     "license": "MIT",
     "tags": [
       "calendar"
@@ -11060,7 +11066,7 @@
     ],
     "image": ".github-preview.bubbles.jpg",
     "defaultSortWeight": 0,
-    "lastCommit": "2024-05-28T14:48:23+00:00"
+    "lastCommit": "2024-06-21T07:17:27+00:00"
   },
   {
     "name": "MMM-Netatmo-Presence",
@@ -14453,7 +14459,7 @@
     "license": "MIT",
     "image": "screenshot.jpg",
     "defaultSortWeight": 6,
-    "lastCommit": "2024-04-11T08:29:15-05:00"
+    "lastCommit": "2024-06-21T07:03:40-05:00"
   },
   {
     "name": "MMM-RKI-Covid19",
@@ -16795,7 +16801,7 @@
     "id": "MMRIZE/MMM-TelegramBot",
     "maintainer": "MMRIZE",
     "maintainerURL": "",
-    "description": "Interact with MagicMirror via Telegram. (Revamped)",
+    "description": "Interact with your mirror via Telegram. (Revamped)",
     "issues": true,
     "tags": [
       "telegram"
@@ -16832,7 +16838,7 @@
     "id": "doctorfree/MMM-TelegramCommands",
     "maintainer": "doctorfree",
     "maintainerURL": "https://github.com/doctorfree",
-    "description": "Creates and manages Telegram commands to control a MagicMirror\u00b2 via the MirrorCommandLine tools. MMM-TelegramCommands requires the installation and configuration of the <a target=\"_blank\" href=\"https://github.com/bugsounet/MMM-TelegramBot\">MMM-TelegramBot</a> module and the <a target=\"_blank\" href=\"https://gitlab.com/doctorfree/MirrorCommandLine\">MirrorCommandLine</a> suite of command line utilites for the MagicMirror\u00b2.",
+    "description": "Creates and manages Telegram commands to control a MagicMirror\u00b2 via the MirrorCommandLine tools. MMM-TelegramCommands requires the installation and configuration of the <a target=\"_blank\" href=\"https://github.com/MMRIZE/MMM-TelegramBot\">MMM-TelegramBot</a> module and the <a target=\"_blank\" href=\"https://gitlab.com/doctorfree/MirrorCommandLine\">MirrorCommandLine</a> suite of command line utilites for the MagicMirror\u00b2.",
     "issues": true,
     "stars": 3,
     "license": "MIT",

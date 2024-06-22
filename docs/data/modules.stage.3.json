@@ -5747,17 +5747,22 @@
   {
     "name": "MMM-GoogleMapsTraffic",
     "category": "Transport / Travel",
-    "url": "https://github.com/vicmora/MMM-GoogleMapsTraffic",
-    "id": "vicmora/MMM-GoogleMapsTraffic",
-    "maintainer": "vicmora",
+    "url": "https://github.com/doctorfree/MMM-GoogleMapsTraffic",
+    "id": "doctorfree/MMM-GoogleMapsTraffic",
+    "maintainer": "doctorfree",
     "maintainerURL": "",
     "description": "Displays a Google map, centered at provided coordinates, with traffic information.",
     "issues": [
-      "`package.json` issue: No repository field.",
-      "There are no keywords in 'package.json'. We would use them as tags on the module list page."
+      "Issues are not enabled in the GitHub repository. So users cannot report bugs. Please enable issues in your repo."
     ],
-    "stars": 85,
+    "stars": 0,
+    "hasGithubIssues": false,
     "license": "MIT",
+    "tags": [
+      "google",
+      "traffic",
+      "maps"
+    ],
     "image": "img-coordinates.jpg"
   },
   {
@@ -9913,7 +9918,7 @@
       "`package.json` issue: No repository field.",
       "There are no keywords in 'package.json'. We would use them as tags on the module list page."
     ],
-    "stars": 17,
+    "stars": 18,
     "license": "MIT",
     "image": "MMM-MovieListings_left.jpg"
   },
@@ -10035,7 +10040,7 @@
     "issues": [
       "Please use 'smart home' instead of 'smarthome' as a keyword in your package.json."
     ],
-    "stars": 55,
+    "stars": 57,
     "license": "MIT",
     "tags": [
       "smart home",
@@ -10105,7 +10110,7 @@
     "maintainerURL": "https://github.com/Tom-Hirschberger",
     "description": "A powerful module that subscribes to MQTT broker and read/send MQTT messages and MM Notifications with a lot of individual setup/rules. Allows you to integrate MM into smart home like Home Assistant. Powerful automation with structured Noti and MQTT dictionaries rules (e.g. one mqtt message could trigger many predefined noti, and one mm-noti could trigger different predefined mqtt messages).",
     "issues": [],
-    "stars": 23,
+    "stars": 24,
     "license": "MIT",
     "tags": [
       "mqtt"
@@ -10171,7 +10176,7 @@
     "maintainerURL": "https://github.com/BKeyport",
     "description": "Display multiple mini-calendars at the same time.",
     "issues": [],
-    "stars": 11,
+    "stars": 12,
     "license": "MIT",
     "tags": [
       "calendar"
@@ -16612,7 +16617,7 @@
     "id": "MMRIZE/MMM-TelegramBot",
     "maintainer": "MMRIZE",
     "maintainerURL": "",
-    "description": "Interact with MagicMirror via Telegram. (Revamped)",
+    "description": "Interact with your mirror via Telegram. (Revamped)",
     "issues": [],
     "tags": [
       "telegram"
@@ -16645,7 +16650,7 @@
     "id": "doctorfree/MMM-TelegramCommands",
     "maintainer": "doctorfree",
     "maintainerURL": "https://github.com/doctorfree",
-    "description": "Creates and manages Telegram commands to control a MagicMirror² via the MirrorCommandLine tools. MMM-TelegramCommands requires the installation and configuration of the <a target=\"_blank\" href=\"https://github.com/bugsounet/MMM-TelegramBot\">MMM-TelegramBot</a> module and the <a target=\"_blank\" href=\"https://gitlab.com/doctorfree/MirrorCommandLine\">MirrorCommandLine</a> suite of command line utilites for the MagicMirror².",
+    "description": "Creates and manages Telegram commands to control a MagicMirror² via the MirrorCommandLine tools. MMM-TelegramCommands requires the installation and configuration of the <a target=\"_blank\" href=\"https://github.com/MMRIZE/MMM-TelegramBot\">MMM-TelegramBot</a> module and the <a target=\"_blank\" href=\"https://gitlab.com/doctorfree/MirrorCommandLine\">MirrorCommandLine</a> suite of command line utilites for the MagicMirror².",
     "issues": [
       "No image found."
     ],

@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "2024-06-21T03:30:07.317Z",
+  "lastUpdate": "2024-06-22T03:30:07.172Z",
   "modules": [
     {
       "name": "MMM-01ZM",
@@ -3501,9 +3501,9 @@
     {
       "name": "MMM-GoogleMapsTraffic",
       "category": "Transport / Travel",
-      "url": "https://github.com/vicmora/MMM-GoogleMapsTraffic",
-      "id": "vicmora/MMM-GoogleMapsTraffic",
-      "maintainer": "vicmora",
+      "url": "https://github.com/doctorfree/MMM-GoogleMapsTraffic",
+      "id": "doctorfree/MMM-GoogleMapsTraffic",
+      "maintainer": "doctorfree",
       "maintainerURL": "",
       "description": "Displays a Google map, centered at provided coordinates, with traffic information.",
       "issues": []
@@ -10132,7 +10132,7 @@
       "id": "MMRIZE/MMM-TelegramBot",
       "maintainer": "MMRIZE",
       "maintainerURL": "",
-      "description": "Interact with MagicMirror via Telegram. (Revamped)",
+      "description": "Interact with your mirror via Telegram. (Revamped)",
       "issues": []
     },
     {
@@ -10152,7 +10152,7 @@
       "id": "doctorfree/MMM-TelegramCommands",
       "maintainer": "doctorfree",
       "maintainerURL": "https://github.com/doctorfree",
-      "description": "Creates and manages Telegram commands to control a MagicMirror² via the MirrorCommandLine tools. MMM-TelegramCommands requires the installation and configuration of the <a target=\"_blank\" href=\"https://github.com/bugsounet/MMM-TelegramBot\">MMM-TelegramBot</a> module and the <a target=\"_blank\" href=\"https://gitlab.com/doctorfree/MirrorCommandLine\">MirrorCommandLine</a> suite of command line utilites for the MagicMirror².",
+      "description": "Creates and manages Telegram commands to control a MagicMirror² via the MirrorCommandLine tools. MMM-TelegramCommands requires the installation and configuration of the <a target=\"_blank\" href=\"https://github.com/MMRIZE/MMM-TelegramBot\">MMM-TelegramBot</a> module and the <a target=\"_blank\" href=\"https://gitlab.com/doctorfree/MirrorCommandLine\">MirrorCommandLine</a> suite of command line utilites for the MagicMirror².",
       "issues": []
     },
     {
