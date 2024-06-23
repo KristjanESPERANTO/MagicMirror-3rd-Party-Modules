@@ -10315,7 +10315,7 @@
       "There is no `package.json`. We need this file to gather information about the module for the module list page.",
       "Issues are not enabled in the GitHub repository. So users cannot report bugs. Please enable issues in your repo."
     ],
-    "stars": 3,
+    "stars": 4,
     "hasGithubIssues": false
   },
   {
@@ -10443,7 +10443,7 @@
     "maintainerURL": "",
     "description": "Display today's scores for your favourite teams across multiple sports.",
     "issues": [],
-    "stars": 64,
+    "stars": 65,
     "license": "MIT",
     "tags": [
       "sports"

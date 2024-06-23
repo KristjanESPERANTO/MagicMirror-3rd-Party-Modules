@@ -7457,7 +7457,7 @@
     "maintainerURL": "",
     "description": "Same functionality as the default Calendar app but different display formatting.",
     "issues": [],
-    "stars": 3,
+    "stars": 4,
     "hasGithubIssues": false
   },
   {
@@ -7553,7 +7553,7 @@
     "maintainerURL": "",
     "description": "Display today's scores for your favourite teams across multiple sports.",
     "issues": [],
-    "stars": 64,
+    "stars": 65,
     "license": "MIT"
   },
   {

@@ -10403,7 +10403,7 @@
     "maintainerURL": "",
     "description": "Same functionality as the default Calendar app but different display formatting.",
     "issues": true,
-    "stars": 3,
+    "stars": 4,
     "hasGithubIssues": false,
     "defaultSortWeight": 7,
     "lastCommit": "2023-12-12T10:15:56-05:00"
@@ -10535,7 +10535,7 @@
     "maintainerURL": "",
     "description": "Display today's scores for your favourite teams across multiple sports.",
     "issues": true,
-    "stars": 64,
+    "stars": 65,
     "license": "MIT",
     "tags": [
       "sports"
@@ -11066,7 +11066,7 @@
     ],
     "image": ".github-preview.bubbles.jpg",
     "defaultSortWeight": 0,
-    "lastCommit": "2024-06-22T21:05:53+02:00"
+    "lastCommit": "2024-06-23T12:16:05+02:00"
   },
   {
     "name": "MMM-Netatmo-Presence",

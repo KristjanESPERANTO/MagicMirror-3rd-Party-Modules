@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "2024-06-23T03:30:20.969Z",
+  "lastUpdate": "2024-06-23T15:30:19.409Z",
   "repositories": [
     {
       "id": "rubinho101/MMM-01ZM",
@@ -8627,10 +8627,10 @@
     },
     {
       "id": "dbeltjr/MMM-MyCalendar",
-      "gitHubDataLastUpdate": "2024-05-20T03:30:07.565Z",
+      "gitHubDataLastUpdate": "2024-06-23T15:30:07.016Z",
       "gitHubData": {
         "issues": 0,
-        "stars": 3,
+        "stars": 4,
         "license": null,
         "archived": false,
         "disabled": false,
@@ -8641,7 +8641,7 @@
     },
     {
       "id": "qistoph/MMM-MyCommute",
-      "gitHubDataLastUpdate": "2024-05-31T15:30:18.573Z",
+      "gitHubDataLastUpdate": "2024-06-23T15:30:07.433Z",
       "gitHubData": {
         "issues": 9,
         "stars": 37,
@@ -8655,7 +8655,7 @@
     },
     {
       "id": "oenstrom/MMM-mycroft-bridge",
-      "gitHubDataLastUpdate": "2024-05-31T15:30:18.990Z",
+      "gitHubDataLastUpdate": "2024-06-23T15:30:07.838Z",
       "gitHubData": {
         "issues": 0,
         "stars": 1,
@@ -8669,7 +8669,7 @@
     },
     {
       "id": "htilburgs/MMM-MyDutchWeather",
-      "gitHubDataLastUpdate": "2024-05-31T15:30:19.422Z",
+      "gitHubDataLastUpdate": "2024-06-23T15:30:08.215Z",
       "gitHubData": {
         "issues": 1,
         "stars": 4,
@@ -8683,7 +8683,7 @@
     },
     {
       "id": "htilburgs/MMM-MyGarbage",
-      "gitHubDataLastUpdate": "2024-05-31T15:30:19.836Z",
+      "gitHubDataLastUpdate": "2024-06-23T15:30:08.604Z",
       "gitHubData": {
         "issues": 0,
         "stars": 31,
@@ -8697,7 +8697,7 @@
     },
     {
       "id": "framboise-pi/MMM-MyMinecraft",
-      "gitHubDataLastUpdate": "2024-05-31T15:30:20.282Z",
+      "gitHubDataLastUpdate": "2024-06-23T15:30:09.013Z",
       "gitHubData": {
         "issues": 5,
         "stars": 1,
@@ -8711,7 +8711,7 @@
     },
     {
       "id": "htilburgs/MMM-MyMonthlyCalendar",
-      "gitHubDataLastUpdate": "2024-06-01T03:30:08.830Z",
+      "gitHubDataLastUpdate": "2024-06-23T15:30:09.478Z",
       "gitHubData": {
         "issues": 0,
         "stars": 1,
@@ -8725,7 +8725,7 @@
     },
     {
       "id": "htilburgs/MMM-MyPrayerTimes",
-      "gitHubDataLastUpdate": "2024-06-01T03:30:09.208Z",
+      "gitHubDataLastUpdate": "2024-06-23T15:30:09.836Z",
       "gitHubData": {
         "issues": 0,
         "stars": 9,
@@ -8734,15 +8734,15 @@
         "disabled": false,
         "defaultBranch": "master",
         "has_issues": true,
-        "lastCommit": "2020-04-03T00:43:51Z"
+        "lastCommit": "2024-06-20T17:29:03Z"
       }
     },
     {
       "id": "jclarke0000/MMM-MyScoreboard",
-      "gitHubDataLastUpdate": "2024-06-01T03:30:09.588Z",
+      "gitHubDataLastUpdate": "2024-06-23T15:30:10.215Z",
       "gitHubData": {
-        "issues": 30,
-        "stars": 64,
+        "issues": 31,
+        "stars": 65,
         "license": "MIT",
         "archived": false,
         "disabled": false,
@@ -8753,7 +8753,7 @@
     },
     {
       "id": "framboise-pi/MMM-MySenseHat",
-      "gitHubDataLastUpdate": "2024-06-01T03:30:10.016Z",
+      "gitHubDataLastUpdate": "2024-06-23T15:30:10.686Z",
       "gitHubData": {
         "issues": 2,
         "stars": 9,
@@ -8767,7 +8767,7 @@
     },
     {
       "id": "tabsl/MMM-MySQLData",
-      "gitHubDataLastUpdate": "2024-06-01T03:30:10.473Z",
+      "gitHubDataLastUpdate": "2024-06-23T15:30:11.143Z",
       "gitHubData": {
         "issues": 0,
         "stars": 2,
@@ -8781,7 +8781,7 @@
     },
     {
       "id": "ralberth/MMM-MysqlQuery",
-      "gitHubDataLastUpdate": "2024-06-01T03:30:10.861Z",
+      "gitHubDataLastUpdate": "2024-06-23T15:30:11.518Z",
       "gitHubData": {
         "issues": 4,
         "stars": 8,
@@ -8795,7 +8795,7 @@
     },
     {
       "id": "vincep5/MMM-MyStandings",
-      "gitHubDataLastUpdate": "2024-06-01T03:30:11.216Z",
+      "gitHubDataLastUpdate": "2024-06-23T15:30:11.867Z",
       "gitHubData": {
         "issues": 15,
         "stars": 13,
@@ -8809,7 +8809,7 @@
     },
     {
       "id": "ethanpartida/MMM-MyStudyLife",
-      "gitHubDataLastUpdate": "2024-06-01T03:30:11.686Z",
+      "gitHubDataLastUpdate": "2024-06-23T15:30:12.265Z",
       "gitHubData": {
         "issues": 1,
         "stars": 9,
@@ -8823,7 +8823,7 @@
     },
     {
       "id": "htilburgs/MMM-MyTraffic",
-      "gitHubDataLastUpdate": "2024-06-01T03:30:12.094Z",
+      "gitHubDataLastUpdate": "2024-06-23T15:30:12.703Z",
       "gitHubData": {
         "issues": 0,
         "stars": 1,
@@ -8837,7 +8837,7 @@
     },
     {
       "id": "TheVieiraAkA/MMM-MyTraktSeries",
-      "gitHubDataLastUpdate": "2024-06-01T03:30:12.480Z",
+      "gitHubDataLastUpdate": "2024-06-23T15:30:13.135Z",
       "gitHubData": {
         "issues": 3,
         "stars": 1,
@@ -8851,7 +8851,7 @@
     },
     {
       "id": "SageBrushes/MMM-MyTransitTime",
-      "gitHubDataLastUpdate": "2024-06-01T03:30:12.916Z",
+      "gitHubDataLastUpdate": "2024-06-23T15:30:13.555Z",
       "gitHubData": {
         "issues": 0,
         "stars": 1,
@@ -8865,7 +8865,7 @@
     },
     {
       "id": "jclarke0000/MMM-MyTTC",
-      "gitHubDataLastUpdate": "2024-06-01T03:30:13.332Z",
+      "gitHubDataLastUpdate": "2024-06-23T15:30:13.992Z",
       "gitHubData": {
         "issues": 5,
         "stars": 7,
@@ -8879,7 +8879,7 @@
     },
     {
       "id": "justjim1220/MMM-MyVideoPlayer",
-      "gitHubDataLastUpdate": "2024-06-01T03:30:13.766Z",
+      "gitHubDataLastUpdate": "2024-06-23T15:30:14.444Z",
       "gitHubData": {
         "issues": 5,
         "stars": 2,
@@ -8893,9 +8893,9 @@
     },
     {
       "id": "mazim-co/MMM-MyVolvo",
-      "gitHubDataLastUpdate": "2024-06-01T03:30:14.212Z",
+      "gitHubDataLastUpdate": "2024-06-23T15:30:14.886Z",
       "gitHubData": {
-        "issues": 1,
+        "issues": 2,
         "stars": 1,
         "license": null,
         "archived": false,
@@ -8907,7 +8907,7 @@
     },
     {
       "id": "jclarke0000/MMM-MyWastePickup",
-      "gitHubDataLastUpdate": "2024-06-01T03:30:14.647Z",
+      "gitHubDataLastUpdate": "2024-06-23T15:30:15.286Z",
       "gitHubData": {
         "issues": 14,
         "stars": 11,
@@ -8921,7 +8921,7 @@
     },
     {
       "id": "martinkooij/MMM-MyWeather",
-      "gitHubDataLastUpdate": "2024-06-01T03:30:15.098Z",
+      "gitHubDataLastUpdate": "2024-06-23T15:30:15.705Z",
       "gitHubData": {
         "issues": 2,
         "stars": 4,
@@ -8935,7 +8935,7 @@
     },
     {
       "id": "framboise-pi/MMM-MyWordsRandomed",
-      "gitHubDataLastUpdate": "2024-06-01T03:30:15.552Z",
+      "gitHubDataLastUpdate": "2024-06-23T15:30:16.133Z",
       "gitHubData": {
         "issues": 1,
         "stars": 0,
@@ -8949,7 +8949,7 @@
     },
     {
       "id": "qistoph/MMM-nagios",
-      "gitHubDataLastUpdate": "2024-06-01T03:30:15.974Z",
+      "gitHubDataLastUpdate": "2024-06-23T15:30:16.568Z",
       "gitHubData": {
         "issues": 9,
         "stars": 7,
@@ -8963,21 +8963,21 @@
     },
     {
       "id": "RichieCZ/MMM-NameDay",
-      "gitHubDataLastUpdate": "2024-06-01T03:30:16.733Z",
+      "gitHubDataLastUpdate": "2024-06-23T15:30:17.621Z",
       "gitHubData": {
-        "issues": 2,
+        "issues": 1,
         "stars": 5,
         "license": "MIT",
         "archived": false,
         "disabled": false,
         "defaultBranch": "master",
         "has_issues": true,
-        "lastCommit": "2021-08-11T19:56:05Z"
+        "lastCommit": "2024-06-03T06:12:56Z"
       }
     },
     {
       "id": "Menturan/MMM-Namnsdag",
-      "gitHubDataLastUpdate": "2024-06-01T03:30:17.187Z",
+      "gitHubDataLastUpdate": "2024-06-23T15:30:18.031Z",
       "gitHubData": {
         "issues": 0,
         "stars": 0,
@@ -8991,7 +8991,7 @@
     },
     {
       "id": "normyx/MMM-Nantes-TAN",
-      "gitHubDataLastUpdate": "2024-06-01T03:30:17.650Z",
+      "gitHubDataLastUpdate": "2024-06-23T15:30:18.478Z",
       "gitHubData": {
         "issues": 2,
         "stars": 3,
@@ -9005,7 +9005,7 @@
     },
     {
       "id": "mykle1/MMM-NASA",
-      "gitHubDataLastUpdate": "2024-06-01T03:30:18.111Z",
+      "gitHubDataLastUpdate": "2024-06-23T15:30:18.897Z",
       "gitHubData": {
         "issues": 3,
         "stars": 12,
@@ -9019,7 +9019,7 @@
     },
     {
       "id": "nebulx29/MMM-nasaastropic",
-      "gitHubDataLastUpdate": "2024-06-01T03:30:18.473Z",
+      "gitHubDataLastUpdate": "2024-06-23T15:30:19.361Z",
       "gitHubData": {
         "issues": 2,
         "stars": 9,
