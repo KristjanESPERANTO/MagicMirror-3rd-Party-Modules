@@ -1,6 +1,6 @@
 # Result of the module analysis
 
-Last update: 2024-06-23T17:36:42+02:00
+Last update: 2024-06-24T17:43:38+02:00
 
 ## Statistics
 
@@ -9,7 +9,7 @@ Last update: 2024-06-23T17:36:42+02:00
 | modules analyzed     |   1166   |
 | maintainer           |    650   |
 | modules with issues  |   1154   |
-| issues               |   7212   |
+| issues               |   7210   |
 | modules at github    |   1154   |
 | modules at gitlab    |     11   |
 | modules at bitbucket |      1   |
@@ -6180,7 +6180,6 @@ Last update: 2024-06-23T17:36:42+02:00
 ### [MMM-Netatmo by CFenner](https://github.com/CFenner/MMM-Netatmo)
 
 1. Please use 'smart home' instead of 'smarthome' as a keyword in your package.json.
-2. Recommendation: Replace eslintrc by new flat config.
 
 ### [MMM-Netatmo-Presence by AgP42](https://github.com/AgP42/MMM-Netatmo-Presence)
 
@@ -6197,6 +6196,7 @@ Last update: 2024-06-23T17:36:42+02:00
 
 ### [MMM-Netatmo-Thermostat by overflOw11](https://github.com/overflOw11/MMM-Netatmo-Thermostat)
 
+0. This module is outdated: Abandoned. No reactions to issues since years. API Change and The author no longer has a Netatmo thermostat.
 1. `package.json` issue: No repository field.
 2. There are no keywords in 'package.json'. We would use them as tags on the module list page.
 3. No image found.
@@ -6964,13 +6964,11 @@ Last update: 2024-06-23T17:36:42+02:00
 5. Deprecated: Found `require("request")` in file `node_helper.js`: Replace it with built-in fetch.
 6. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
 
-### [MMM-pages by edward-shen](https://github.com/edward-shen/MMM-pages)
+### [MMM-pages by sdetweil](https://github.com/sdetweil/MMM-pages)
 
 1. There is no `package.json`. We need this file to gather information about the module for the module list page.
 2. Typo: Found `Magic Mirror` in file `Bug_report.md`: Replace it with `MagicMirror²`.
-3. Typo: Found `Magic Mirror` in file `readme.md`: Replace it with `MagicMirror²`.
-4. Outdated: Found `MichMich/MagicMirror` in file `readme.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
-5. Recommendation: Replace eslintrc by new flat config.
+3. Recommendation: Replace eslintrc by new flat config.
 
 ### [EXT-Pages by bugsounet](https://github.com/bugsounet/EXT-Pages)
 

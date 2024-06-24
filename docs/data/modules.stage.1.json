@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "2024-06-23T15:30:05.864Z",
+  "lastUpdate": "2024-06-24T15:30:06.597Z",
   "modules": [
     {
       "name": "MMM-01ZM",
@@ -6704,13 +6704,14 @@
     },
     {
       "name": "MMM-Netatmo-Thermostat",
-      "category": "Utility / IOT / 3rd Party / Integration",
+      "category": "Outdated Modules",
       "url": "https://github.com/overflOw11/MMM-Netatmo-Thermostat",
       "id": "overflOw11/MMM-Netatmo-Thermostat",
       "maintainer": "overflOw11",
       "maintainerURL": "",
       "description": "Netatmo thermostat module.",
-      "issues": []
+      "issues": [],
+      "outdated": "Abandoned. No reactions to issues since years. API Change and The author no longer has a Netatmo thermostat."
     },
     {
       "name": "MMM-NetatmoThermostat",
@@ -7501,9 +7502,9 @@
     {
       "name": "MMM-pages",
       "category": "Development / Core MagicMirror²",
-      "url": "https://github.com/edward-shen/MMM-pages",
-      "id": "edward-shen/MMM-pages",
-      "maintainer": "edward-shen",
+      "url": "https://github.com/sdetweil/MMM-pages",
+      "id": "sdetweil/MMM-pages",
+      "maintainer": "sdetweil",
       "maintainerURL": "",
       "description": "Rotate out pages of modules.",
       "issues": []

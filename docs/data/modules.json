@@ -3330,7 +3330,7 @@
       "bcm2835"
     ],
     "image": "MMM-DHT-Sensor_screenshot.jpg",
-    "defaultSortWeight": 6,
+    "defaultSortWeight": 7,
     "lastCommit": "2022-06-23T20:48:41+02:00"
   },
   {
@@ -9777,7 +9777,7 @@
     "issues": true,
     "stars": 1,
     "defaultSortWeight": 3,
-    "lastCommit": "2024-05-17T18:07:30-04:00"
+    "lastCommit": "2024-06-24T10:08:43-04:00"
   },
   {
     "name": "MMM-ModuleToggleButton",
@@ -11065,8 +11065,8 @@
       "smart home"
     ],
     "image": ".github-preview.bubbles.jpg",
-    "defaultSortWeight": 0,
-    "lastCommit": "2024-06-23T12:16:05+02:00"
+    "defaultSortWeight": -1,
+    "lastCommit": "2024-06-24T14:53:40+02:00"
   },
   {
     "name": "MMM-Netatmo-Presence",
@@ -11090,16 +11090,17 @@
   },
   {
     "name": "MMM-Netatmo-Thermostat",
-    "category": "Utility / IOT / 3rd Party / Integration",
+    "category": "Outdated Modules",
     "url": "https://github.com/overflOw11/MMM-Netatmo-Thermostat",
     "id": "overflOw11/MMM-Netatmo-Thermostat",
     "maintainer": "overflOw11",
     "maintainerURL": "",
     "description": "Netatmo thermostat module.",
     "issues": true,
+    "outdated": "Abandoned. No reactions to issues since years. API Change and The author no longer has a Netatmo thermostat.",
     "stars": 3,
     "license": "MIT",
-    "defaultSortWeight": 12,
+    "defaultSortWeight": 912,
     "lastCommit": "2019-03-11T16:26:54+01:00"
   },
   {
@@ -12415,17 +12416,14 @@
   {
     "name": "MMM-pages",
     "category": "Development / Core MagicMirror\u00b2",
-    "url": "https://github.com/edward-shen/MMM-pages",
-    "id": "edward-shen/MMM-pages",
-    "maintainer": "edward-shen",
+    "url": "https://github.com/sdetweil/MMM-pages",
+    "id": "sdetweil/MMM-pages",
+    "maintainer": "sdetweil",
     "maintainerURL": "",
     "description": "Rotate out pages of modules.",
     "issues": true,
-    "stars": 105,
-    "license": "MIT",
-    "image": "example.jpg",
-    "defaultSortWeight": 4,
-    "lastCommit": "2021-12-10T20:46:41-08:00"
+    "defaultSortWeight": 3,
+    "lastCommit": "2024-06-24T08:01:18-05:00"
   },
   {
     "name": "EXT-Pages",
@@ -13079,8 +13077,8 @@
     "description": "Displays brief information (flag, weather, exchange rate) about multiple locations at once.",
     "issues": true,
     "stars": 3,
-    "defaultSortWeight": 7,
-    "lastCommit": "2021-06-26T15:02:31-04:00"
+    "defaultSortWeight": 6,
+    "lastCommit": "2024-06-24T11:02:16-04:00"
   },
   {
     "name": "MMM-Planetarium",
