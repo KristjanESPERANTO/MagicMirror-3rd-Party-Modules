@@ -1,6 +1,6 @@
 # Result of the module analysis
 
-Last update: 2024-06-24T17:43:38+02:00
+Last update: 2024-06-25T05:37:39+02:00
 
 ## Statistics
 
@@ -9,7 +9,7 @@ Last update: 2024-06-24T17:43:38+02:00
 | modules analyzed     |   1166   |
 | maintainer           |    650   |
 | modules with issues  |   1154   |
-| issues               |   7210   |
+| issues               |   7208   |
 | modules at github    |   1154   |
 | modules at gitlab    |     11   |
 | modules at bitbucket |      1   |
@@ -3053,14 +3053,15 @@ Last update: 2024-06-24T17:43:38+02:00
 
 ### [MMM-GoogleAssistant by bugsounet](https://github.com/bugsounet/MMM-GoogleAssistant)
 
-1. Information: There are updates for 7 dependencie(s):
-   - @eslint/js                ^8.57.0  →   ^9.5.0
-   - @stylistic/eslint-plugin   ^1.8.1  →   ^2.2.2
-   - eslint                    ^8.57.0  →   ^9.5.0
-   - glob                      ^10.4.1  →  ^10.4.2
-   - google-auth-library       ^9.10.0  →  ^9.11.0
-   - pm2                        ^5.4.0  →   ^5.4.1
-   - protobufjs                 ^7.3.0  →   ^7.3.2
+1. Information: There are updates for 8 dependencie(s):
+   - @eslint/js                ^8.57.0  →    ^9.5.0
+   - @grpc/grpc-js             ^1.10.9  →  ^1.10.10
+   - @stylistic/eslint-plugin   ^1.8.1  →    ^2.2.2
+   - eslint                    ^8.57.0  →    ^9.5.0
+   - glob                      ^10.4.1  →   ^10.4.2
+   - google-auth-library       ^9.10.0  →   ^9.11.0
+   - pm2                        ^5.4.0  →    ^5.4.1
+   - protobufjs                 ^7.3.0  →    ^7.3.2
 
 
 ### [MMM-GoogleAssistant by gauravsacc](https://github.com/gauravsacc/MMM-GoogleAssistant)
@@ -5878,11 +5879,9 @@ Last update: 2024-06-24T17:43:38+02:00
 
 ### [MMM-MyPrayerTimes by htilburgs](https://github.com/htilburgs/MMM-MyPrayerTimes)
 
-1. There are no keywords in 'package.json'. We would use them as tags on the module list page.
+1. An error occurred while getting information from 'package.json': Error: Invalid version: "1.1"
 2. Recommendation: Found `new Date()` in file `MMM-MyPrayerTimes.js`: Consider replacing it by `new Date(Date.now())`. It's helpfull for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
-3. Recommendation: The README seems not to have an update instruction (the word 'update' is missing). Please add one.
-4. Deprecated: Found `require('request')` in file `node_helper.js`: Replace it with built-in fetch.
-5. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
+3. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
 
 ### [MMM-MyScoreboard by jclarke0000](https://github.com/jclarke0000/MMM-MyScoreboard)
 

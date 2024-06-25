@@ -1805,7 +1805,7 @@
     "maintainerURL": "",
     "description": "Presenting events as daily/weekly journal style.",
     "issues": true,
-    "stars": 3,
+    "stars": 4,
     "license": "MIT",
     "tags": [
       "cx3j",
@@ -2069,7 +2069,7 @@
     "maintainerURL": "https://github.com/shbatm",
     "description": "Rotate modules, to save space on screen.",
     "issues": false,
-    "stars": 37,
+    "stars": 38,
     "license": "MIT",
     "tags": [
       "carousel",
@@ -10523,8 +10523,8 @@
     "stars": 9,
     "license": "MIT",
     "image": "screenshot.jpg",
-    "defaultSortWeight": 5,
-    "lastCommit": "2024-06-20T19:29:03+02:00"
+    "defaultSortWeight": 3,
+    "lastCommit": "2024-06-24T23:19:49+02:00"
   },
   {
     "name": "MMM-MyScoreboard",

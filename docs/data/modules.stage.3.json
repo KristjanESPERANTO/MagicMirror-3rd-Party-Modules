@@ -1763,7 +1763,7 @@
     "issues": [
       "No image found."
     ],
-    "stars": 3,
+    "stars": 4,
     "license": "MIT",
     "tags": [
       "cx3j",
@@ -2021,7 +2021,7 @@
     "maintainerURL": "https://github.com/shbatm",
     "description": "Rotate modules, to save space on screen.",
     "issues": [],
-    "stars": 37,
+    "stars": 38,
     "license": "MIT",
     "tags": [
       "carousel",
@@ -10428,7 +10428,7 @@
     "maintainerURL": "",
     "description": "MyPrayerTimes is a simple module, that calculate prayer times for any location around the world, based on a variety of calculation methods currently used in Muslim communities using the Aladhan API.",
     "issues": [
-      "There are no keywords in 'package.json'. We would use them as tags on the module list page."
+      "An error occurred while getting information from 'package.json': Error: Invalid version: \"1.1\""
     ],
     "stars": 9,
     "license": "MIT",
