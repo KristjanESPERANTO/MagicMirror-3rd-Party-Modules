@@ -162,7 +162,7 @@
     "maintainerURL": "",
     "description": "Display trashcollection days of the Afvalwijzer service in the Netherlands.",
     "issues": [],
-    "stars": 3,
+    "stars": 4,
     "license": "MIT",
     "tags": [
       "trashcollection"
@@ -2885,7 +2885,7 @@
     "issues": [
       "Issues are not enabled in the GitHub repository. So users cannot report bugs. Please enable issues in your repo."
     ],
-    "stars": 5,
+    "stars": 6,
     "hasGithubIssues": false,
     "license": "MIT",
     "tags": [

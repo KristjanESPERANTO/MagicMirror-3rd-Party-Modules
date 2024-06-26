@@ -1,6 +1,6 @@
 # Result of the module analysis
 
-Last update: 2024-06-26T05:37:29+02:00
+Last update: 2024-06-26T17:37:09+02:00
 
 ## Statistics
 
@@ -2742,12 +2742,13 @@ Last update: 2024-06-26T05:37:29+02:00
 ### [MMM-FranceInfo by bugsounet](https://github.com/bugsounet/MMM-FranceInfo)
 
 1. Issues are not enabled in the GitHub repository. So users cannot report bugs. Please enable issues in your repo.
-2. Information: There are updates for 5 dependencie(s):
+2. Information: There are updates for 6 dependencie(s):
    - @eslint/js                ^8.57.0  →   ^9.5.0
    - @stylistic/eslint-plugin   ^1.8.1  →   ^2.3.0
    - esbuild                   ^0.21.4  →  ^0.21.5
    - eslint                    ^8.57.0  →   ^9.5.0
    - glob                      ^10.4.1  →  ^10.4.2
+   - stream                     ^0.0.2  →   ^0.0.3
 
 
 ### [MMM-Freebox by bugsounet](https://github.com/bugsounet/MMM-Freebox)
@@ -5712,7 +5713,7 @@ Last update: 2024-06-26T05:37:29+02:00
 1. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
 2. Information: There are updates for 2 dependencie(s):
    - jsonpath-plus  5.0.1  →  9.0.0
-   - mqtt           4.3.7  →  5.7.2
+   - mqtt           4.3.7  →  5.7.3
 
 
 ### [MMM-MQTTfloorplan by DMailMan](https://github.com/DMailMan/MMM-MQTTfloorplan)
