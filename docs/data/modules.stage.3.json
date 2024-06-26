@@ -10969,7 +10969,7 @@
     "issues": [
       "Please use 'smart home' instead of 'smarthome' as a keyword in your package.json."
     ],
-    "stars": 34,
+    "stars": 36,
     "license": "MIT",
     "tags": [
       "netatmo",
@@ -11021,7 +11021,7 @@
     "maintainerURL": "",
     "description": "This module display your Netatmo Thermostat informations.",
     "issues": [],
-    "stars": 0,
+    "stars": 2,
     "license": "MIT",
     "tags": [
       "netatmo",
@@ -11111,7 +11111,7 @@
     "issues": [
       "Issue: The license in the package.json (ISC) doesn't match the license file (MIT)."
     ],
-    "stars": 6,
+    "stars": 7,
     "license": "MIT",
     "tags": [
       "news"
@@ -11127,7 +11127,7 @@
     "maintainerURL": "",
     "description": "Mod of the default newsfeed module - shows the logo and scrolls the headlines and brief description across the screen like those seen on the news channels.",
     "issues": [],
-    "stars": 23,
+    "stars": 25,
     "license": "GPL-3.0",
     "tags": [
       "news",
@@ -11262,7 +11262,7 @@
     "maintainerURL": "",
     "description": "Display scores of National Football League (optional voice-control).",
     "issues": [],
-    "stars": 26,
+    "stars": 27,
     "license": "MIT",
     "tags": [
       "nfl"
