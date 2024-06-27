@@ -3183,7 +3183,7 @@
       "There is no `package.json`. We need this file to gather information about the module for the module list page.",
       "Issues are not enabled in the GitHub repository. So users cannot report bugs. Please enable issues in your repo."
     ],
-    "stars": 1,
+    "stars": 2,
     "hasGithubIssues": false,
     "license": "MIT",
     "image": "images-example1.jpg"
@@ -3199,7 +3199,7 @@
     "issues": [
       "There is no `package.json`. We need this file to gather information about the module for the module list page."
     ],
-    "stars": 15,
+    "stars": 16,
     "license": "MIT",
     "image": "images-example1.jpg"
   },
