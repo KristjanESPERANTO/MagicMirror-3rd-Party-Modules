@@ -3929,7 +3929,7 @@
     "maintainerURL": "https://github.com/Tom-Hirschberger",
     "description": "Embed one or multiple websites with there URL.",
     "issues": true,
-    "stars": 19,
+    "stars": 20,
     "license": "MIT",
     "tags": [
       "embed",
@@ -11066,7 +11066,7 @@
     ],
     "image": ".github-preview.bubbles.jpg",
     "defaultSortWeight": -1,
-    "lastCommit": "2024-06-26T10:41:18+00:00"
+    "lastCommit": "2024-06-27T15:29:02+00:00"
   },
   {
     "name": "MMM-Netatmo-Presence",
