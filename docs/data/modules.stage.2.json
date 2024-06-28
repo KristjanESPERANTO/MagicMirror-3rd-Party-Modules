@@ -3762,7 +3762,7 @@
     "maintainerURL": "",
     "description": "Display Gas Station prices.",
     "issues": [],
-    "stars": 62,
+    "stars": 63,
     "license": "MIT"
   },
   {
@@ -3822,6 +3822,18 @@
     "issues": [],
     "stars": 1,
     "license": "MIT"
+  },
+  {
+    "name": "MMM-GasPricesPT",
+    "category": "Transport / Travel",
+    "url": "https://github.com/Fneves7/MMM-GasPricesPT",
+    "id": "Fneves7/MMM-GasPricesPT",
+    "maintainer": "Fneves7",
+    "maintainerURL": "https://github.com/Fneves7/",
+    "description": "Display the cheapest Gas Station prices in Portugal.",
+    "issues": [],
+    "stars": 0,
+    "license": "GPL-3.0"
   },
   {
     "name": "MMM-GConnect",

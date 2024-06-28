@@ -1,16 +1,16 @@
 # Result of the module analysis
 
-Last update: 2024-06-27T17:37:14+02:00
+Last update: 2024-06-28T05:37:36+02:00
 
 ## Statistics
 
 |                      | number   |
 |:---------------------|:--------:|
-| modules analyzed     |   1166   |
-| maintainer           |    650   |
-| modules with issues  |   1154   |
-| issues               |   7208   |
-| modules at github    |   1154   |
+| modules analyzed     |   1167   |
+| maintainer           |    651   |
+| modules with issues  |   1155   |
+| issues               |   7211   |
+| modules at github    |   1155   |
 | modules at gitlab    |     11   |
 | modules at bitbucket |      1   |
 
@@ -2904,6 +2904,12 @@ Last update: 2024-06-27T17:37:14+02:00
 
 1. Issue: The license in the package.json (ISC) doesn't match the license file (MIT).
 2. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
+
+### [MMM-GasPricesPT by Fneves7](https://github.com/Fneves7/MMM-GasPricesPT)
+
+1. There is no `package.json`. We need this file to gather information about the module for the module list page.
+2. Outdated: Found `MichMich/MagicMirror` in file `README.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
+3. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
 
 ### [MMM-GConnect by tderflinger](https://github.com/tderflinger/MMM-GConnect)
 

@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "2024-06-27T15:30:06.105Z",
+  "lastUpdate": "2024-06-28T03:30:07.775Z",
   "modules": [
     {
       "name": "MMM-01ZM",
@@ -3224,6 +3224,16 @@
       "maintainer": "mumblebaj",
       "maintainerURL": "https://github.com/mumblebaj",
       "description": "Monitor your gas tank level on your mirror.",
+      "issues": []
+    },
+    {
+      "name": "MMM-GasPricesPT",
+      "category": "Transport / Travel",
+      "url": "https://github.com/Fneves7/MMM-GasPricesPT",
+      "id": "Fneves7/MMM-GasPricesPT",
+      "maintainer": "Fneves7",
+      "maintainerURL": "https://github.com/Fneves7/",
+      "description": "Display the cheapest Gas Station prices in Portugal.",
       "issues": []
     },
     {
