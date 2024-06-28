@@ -475,7 +475,7 @@
     "stars": 0,
     "license": "MIT",
     "defaultSortWeight": 7,
-    "lastCommit": "2022-07-01T21:36:02+02:00"
+    "lastCommit": "2024-06-28T09:31:58+02:00"
   },
   {
     "name": "MMM-AnyList",
@@ -5625,7 +5625,7 @@
     "maintainerURL": "https://wiki.bugsounet.fr",
     "description": "MMM-GoogleAssistant is an real embedded Google assistant on MagicMirror\u00b2 with many <a target=\"_blank\" href=\"#extended-plugins-for-mmm-googleassistant\">plugins</a>.",
     "issues": true,
-    "stars": 85,
+    "stars": 86,
     "hasGithubIssues": false,
     "license": "MIT",
     "tags": [
@@ -5681,7 +5681,7 @@
     "maintainerURL": "https://github.com/randomBrainstormer",
     "description": "Get your Google Calendars in the shape of MagicMirror's default calendar.",
     "issues": true,
-    "stars": 62,
+    "stars": 63,
     "license": "MIT",
     "tags": [
       "google",
@@ -5876,7 +5876,7 @@
     "maintainerURL": "",
     "description": "Display Google Sheets data. Highly customizable.",
     "issues": true,
-    "stars": 22,
+    "stars": 23,
     "tags": [
       "googlesheets"
     ],
@@ -5942,7 +5942,7 @@
     "maintainerURL": "https://github.com/jacopo1891",
     "description": "Lists travel times to requested locations taking into account Google traffic information with \"classic view\".",
     "issues": true,
-    "stars": 12,
+    "stars": 13,
     "tags": [
       "traffic",
       "googlemap"
