@@ -11615,6 +11615,19 @@
     "lastCommit": "2021-07-29T16:04:14-04:00"
   },
   {
+    "name": "MMM-NOKElectricityForecast",
+    "category": "News / Information",
+    "url": "https://github.com/AndreasHagman/MMM-NOKElectricityForecast",
+    "id": "AndreasHagman/MMM-NOKElectricityForecast",
+    "maintainer": "AndreasHagman",
+    "maintainerURL": "",
+    "description": "Norwegian Electricity Prices Forecast",
+    "issues": true,
+    "stars": 0,
+    "defaultSortWeight": 6,
+    "lastCommit": "2024-06-29T17:14:59+02:00"
+  },
+  {
     "name": "MMM-NoteTaker",
     "category": "Utility / IOT / 3rd Party / Integration",
     "url": "https://github.com/joanaz/MMM-NoteTaker",
@@ -12081,7 +12094,7 @@
     "maintainerURL": "https://github.com/Fabrizz",
     "description": "Highly customizable module that displays what you are listening to in Spotify. Works with <a target=\"_blank\" href=\"https://github.com/Fabrizz/MMM-LiveLyrics\">MMM-LiveLyrics</a> and allows theming other modules!",
     "issues": true,
-    "stars": 47,
+    "stars": 50,
     "license": "MIT",
     "tags": [
       "spotify",
@@ -12100,7 +12113,7 @@
     "maintainerURL": "https://github.com/mezderman",
     "description": "The Dude from The Big Lebowski providing some laid-back commentary on the currently playing song on Spotify. Using OpenAI LLM.",
     "issues": true,
-    "stars": 1,
+    "stars": 2,
     "license": "MIT",
     "image": "screenshots-screenshot2.jpg",
     "defaultSortWeight": 5,
@@ -12115,7 +12128,7 @@
     "maintainerURL": "https://github.com/nkl-kst",
     "description": "Display historical events from Wikipedia based on the current date.",
     "issues": true,
-    "stars": 32,
+    "stars": 33,
     "license": "MIT",
     "tags": [
       "events",
@@ -12135,7 +12148,7 @@
     "maintainerURL": "https://github.com/slugmuffin",
     "description": "Display historical events from Wikipedia based on the current date using the Wikimedia API. Can display as list or newsfeed style.",
     "issues": true,
-    "stars": 2,
+    "stars": 3,
     "license": "MIT",
     "tags": [
       "events",
@@ -12256,7 +12269,7 @@
     "maintainerURL": "",
     "description": "Displays current, hourly and daily forecast information using data from the OpenWeather One Call API.",
     "issues": true,
-    "stars": 0,
+    "stars": 2,
     "license": "MIT",
     "image": "MMM-OpenWeatherForecast.jpg",
     "defaultSortWeight": 12,
@@ -12271,7 +12284,7 @@
     "maintainerURL": "",
     "description": "A weather module that displays current, hourly and daily forecast information using data from the OpenWeatherMap One Call API. This is based on the MMM-DarkSkyForecast module by jclarke0000.",
     "issues": true,
-    "stars": 27,
+    "stars": 28,
     "hasGithubIssues": false,
     "tags": [
       "weather",

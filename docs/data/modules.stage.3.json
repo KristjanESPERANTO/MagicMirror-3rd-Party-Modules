@@ -11509,6 +11509,19 @@
     "image": "Capture.jpg"
   },
   {
+    "name": "MMM-NOKElectricityForecast",
+    "category": "News / Information",
+    "url": "https://github.com/AndreasHagman/MMM-NOKElectricityForecast",
+    "id": "AndreasHagman/MMM-NOKElectricityForecast",
+    "maintainer": "AndreasHagman",
+    "maintainerURL": "",
+    "description": "Norwegian Electricity Prices Forecast",
+    "issues": [
+      "There is no `package.json`. We need this file to gather information about the module for the module list page."
+    ],
+    "stars": 0
+  },
+  {
     "name": "MMM-NoteTaker",
     "category": "Utility / IOT / 3rd Party / Integration",
     "url": "https://github.com/joanaz/MMM-NoteTaker",
@@ -11960,7 +11973,7 @@
     "maintainerURL": "https://github.com/Fabrizz",
     "description": "Highly customizable module that displays what you are listening to in Spotify. Works with <a target=\"_blank\" href=\"https://github.com/Fabrizz/MMM-LiveLyrics\">MMM-LiveLyrics</a> and allows theming other modules!",
     "issues": [],
-    "stars": 47,
+    "stars": 50,
     "license": "MIT",
     "tags": [
       "spotify",
@@ -11981,7 +11994,7 @@
       "`package.json` issue: No repository field.",
       "There are no keywords in 'package.json'. We would use them as tags on the module list page."
     ],
-    "stars": 1,
+    "stars": 2,
     "license": "MIT",
     "image": "screenshots-screenshot2.jpg"
   },
@@ -11994,7 +12007,7 @@
     "maintainerURL": "https://github.com/nkl-kst",
     "description": "Display historical events from Wikipedia based on the current date.",
     "issues": [],
-    "stars": 32,
+    "stars": 33,
     "license": "MIT",
     "tags": [
       "events",
@@ -12012,7 +12025,7 @@
     "maintainerURL": "https://github.com/slugmuffin",
     "description": "Display historical events from Wikipedia based on the current date using the Wikimedia API. Can display as list or newsfeed style.",
     "issues": [],
-    "stars": 2,
+    "stars": 3,
     "license": "MIT",
     "tags": [
       "events",
@@ -12136,7 +12149,7 @@
     "issues": [
       "There are no keywords in 'package.json'. We would use them as tags on the module list page."
     ],
-    "stars": 0,
+    "stars": 2,
     "license": "MIT",
     "image": "MMM-OpenWeatherForecast.jpg"
   },
@@ -12151,7 +12164,7 @@
     "issues": [
       "Issues are not enabled in the GitHub repository. So users cannot report bugs. Please enable issues in your repo."
     ],
-    "stars": 27,
+    "stars": 28,
     "hasGithubIssues": false,
     "tags": [
       "weather",

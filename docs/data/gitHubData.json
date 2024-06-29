@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "2024-06-29T03:30:20.095Z",
+  "lastUpdate": "2024-06-29T15:30:18.647Z",
   "repositories": [
     {
       "id": "rubinho101/MMM-01ZM",
@@ -9606,6 +9606,20 @@
       }
     },
     {
+      "id": "AndreasHagman/MMM-NOKElectricityForecast",
+      "gitHubDataLastUpdate": "2024-06-29T15:30:07.258Z",
+      "gitHubData": {
+        "issues": 0,
+        "stars": 0,
+        "license": null,
+        "archived": false,
+        "disabled": false,
+        "defaultBranch": "main",
+        "has_issues": true,
+        "lastCommit": "2024-06-29T15:14:59Z"
+      }
+    },
+    {
       "id": "joanaz/MMM-NoteTaker",
       "gitHubDataLastUpdate": "2024-06-29T03:30:12.637Z",
       "gitHubData": {
@@ -9859,7 +9873,7 @@
     },
     {
       "id": "elliefairholm/on-this-day",
-      "gitHubDataLastUpdate": "2024-06-02T03:30:17.391Z",
+      "gitHubDataLastUpdate": "2024-06-29T15:30:07.642Z",
       "gitHubData": {
         "issues": 4,
         "stars": 20,
@@ -9873,7 +9887,7 @@
     },
     {
       "id": "jugler/MMM-OneBusAway",
-      "gitHubDataLastUpdate": "2024-06-02T03:30:17.779Z",
+      "gitHubDataLastUpdate": "2024-06-29T15:30:08.058Z",
       "gitHubData": {
         "issues": 0,
         "stars": 2,
@@ -9887,7 +9901,7 @@
     },
     {
       "id": "KristjanESPERANTO/MMM-OneCallWeather",
-      "gitHubDataLastUpdate": "2024-06-02T03:30:18.184Z",
+      "gitHubDataLastUpdate": "2024-06-29T15:30:08.519Z",
       "gitHubData": {
         "issues": 3,
         "stars": 3,
@@ -9901,7 +9915,7 @@
     },
     {
       "id": "hermanho/MMM-OneDrive",
-      "gitHubDataLastUpdate": "2024-06-02T03:30:18.629Z",
+      "gitHubDataLastUpdate": "2024-06-29T15:30:08.892Z",
       "gitHubData": {
         "issues": 0,
         "stars": 3,
@@ -9910,12 +9924,12 @@
         "disabled": false,
         "defaultBranch": "main",
         "has_issues": true,
-        "lastCommit": "2024-01-28T14:55:57Z"
+        "lastCommit": "2024-06-16T01:28:16Z"
       }
     },
     {
       "id": "Canonip/MMM-OneTouchReveal",
-      "gitHubDataLastUpdate": "2024-06-02T03:30:19.071Z",
+      "gitHubDataLastUpdate": "2024-06-29T15:30:09.331Z",
       "gitHubData": {
         "issues": 10,
         "stars": 0,
@@ -9929,7 +9943,7 @@
     },
     {
       "id": "seeshaughnessy/MMM-OneTracker",
-      "gitHubDataLastUpdate": "2024-06-03T03:30:07.462Z",
+      "gitHubDataLastUpdate": "2024-06-29T15:30:09.745Z",
       "gitHubData": {
         "issues": 3,
         "stars": 15,
@@ -9943,7 +9957,7 @@
     },
     {
       "id": "Legion2/MMM-Online-State",
-      "gitHubDataLastUpdate": "2024-06-03T03:30:07.878Z",
+      "gitHubDataLastUpdate": "2024-06-29T15:30:10.106Z",
       "gitHubData": {
         "issues": 0,
         "stars": 2,
@@ -9957,7 +9971,7 @@
     },
     {
       "id": "NicholasRasi/MMM-OnlineImagesViewer",
-      "gitHubDataLastUpdate": "2024-06-03T03:30:08.291Z",
+      "gitHubDataLastUpdate": "2024-06-29T15:30:10.522Z",
       "gitHubData": {
         "issues": 0,
         "stars": 1,
@@ -9971,7 +9985,7 @@
     },
     {
       "id": "shbatm/MMM-OnScreenMenu",
-      "gitHubDataLastUpdate": "2024-06-03T03:30:08.666Z",
+      "gitHubDataLastUpdate": "2024-06-29T15:30:10.872Z",
       "gitHubData": {
         "issues": 27,
         "stars": 60,
@@ -9985,10 +9999,10 @@
     },
     {
       "id": "Fabrizz/MMM-OnSpotify",
-      "gitHubDataLastUpdate": "2024-06-03T03:30:09.095Z",
+      "gitHubDataLastUpdate": "2024-06-29T15:30:11.274Z",
       "gitHubData": {
         "issues": 7,
-        "stars": 47,
+        "stars": 50,
         "license": "MIT",
         "archived": false,
         "disabled": false,
@@ -9999,10 +10013,10 @@
     },
     {
       "id": "mezderman/MMM-OnSpotifyDude",
-      "gitHubDataLastUpdate": "2024-05-31T03:30:07.905Z",
+      "gitHubDataLastUpdate": "2024-06-29T15:30:11.653Z",
       "gitHubData": {
         "issues": 0,
-        "stars": 1,
+        "stars": 2,
         "license": null,
         "archived": false,
         "disabled": false,
@@ -10013,10 +10027,10 @@
     },
     {
       "id": "nkl-kst/MMM-OnThisDay",
-      "gitHubDataLastUpdate": "2024-06-03T03:30:09.604Z",
+      "gitHubDataLastUpdate": "2024-06-29T15:30:12.104Z",
       "gitHubData": {
         "issues": 6,
-        "stars": 32,
+        "stars": 33,
         "license": "MIT",
         "archived": false,
         "disabled": false,
@@ -10027,10 +10041,10 @@
     },
     {
       "id": "slugmuffin/MMM-OnThisDayWikiApi",
-      "gitHubDataLastUpdate": "2024-06-03T03:30:10.020Z",
+      "gitHubDataLastUpdate": "2024-06-29T15:30:12.527Z",
       "gitHubData": {
         "issues": 3,
-        "stars": 2,
+        "stars": 3,
         "license": "MIT",
         "archived": false,
         "disabled": false,
@@ -10041,7 +10055,7 @@
     },
     {
       "id": "hggh/MMM-OpenHAB-Items",
-      "gitHubDataLastUpdate": "2024-06-03T03:30:10.412Z",
+      "gitHubDataLastUpdate": "2024-06-29T15:30:12.895Z",
       "gitHubData": {
         "issues": 2,
         "stars": 4,
@@ -10055,7 +10069,7 @@
     },
     {
       "id": "steve415/MMM-openhabQuickWatch",
-      "gitHubDataLastUpdate": "2024-06-03T03:30:11.187Z",
+      "gitHubDataLastUpdate": "2024-06-29T15:30:13.552Z",
       "gitHubData": {
         "issues": 1,
         "stars": 1,
@@ -10069,7 +10083,7 @@
     },
     {
       "id": "Menturan/MMM-OpeningHours",
-      "gitHubDataLastUpdate": "2024-06-03T03:30:11.556Z",
+      "gitHubDataLastUpdate": "2024-06-29T15:30:13.933Z",
       "gitHubData": {
         "issues": 12,
         "stars": 11,
@@ -10083,7 +10097,7 @@
     },
     {
       "id": "sathyarajv/MMM-OpenmapWeather",
-      "gitHubDataLastUpdate": "2024-06-03T03:30:11.983Z",
+      "gitHubDataLastUpdate": "2024-06-29T15:30:14.302Z",
       "gitHubData": {
         "issues": 4,
         "stars": 26,
@@ -10097,7 +10111,7 @@
     },
     {
       "id": "johnny-co/MMM-OpenSprinkler",
-      "gitHubDataLastUpdate": "2024-06-03T03:30:12.429Z",
+      "gitHubDataLastUpdate": "2024-06-29T15:30:14.700Z",
       "gitHubData": {
         "issues": 2,
         "stars": 0,
@@ -10111,7 +10125,7 @@
     },
     {
       "id": "RedNax67/MMM-OpenTherm",
-      "gitHubDataLastUpdate": "2024-06-03T03:30:12.867Z",
+      "gitHubDataLastUpdate": "2024-06-29T15:30:15.110Z",
       "gitHubData": {
         "issues": 0,
         "stars": 2,
@@ -10125,7 +10139,7 @@
     },
     {
       "id": "thobach/MMM-OpenWeather24Hours",
-      "gitHubDataLastUpdate": "2024-05-20T03:30:07.950Z",
+      "gitHubDataLastUpdate": "2024-06-29T15:30:15.516Z",
       "gitHubData": {
         "issues": 0,
         "stars": 10,
@@ -10139,10 +10153,10 @@
     },
     {
       "id": "Tom-Hirschberger/MMM-OpenWeatherForecast",
-      "gitHubDataLastUpdate": "2024-05-22T03:30:19.925Z",
+      "gitHubDataLastUpdate": "2024-06-29T15:30:15.902Z",
       "gitHubData": {
         "issues": 0,
-        "stars": 0,
+        "stars": 2,
         "license": null,
         "archived": false,
         "disabled": false,
@@ -10153,10 +10167,10 @@
     },
     {
       "id": "MarcLandis/MMM-OpenWeatherMapForecast",
-      "gitHubDataLastUpdate": "2024-06-03T03:30:13.309Z",
+      "gitHubDataLastUpdate": "2024-06-29T15:30:16.335Z",
       "gitHubData": {
         "issues": 1,
-        "stars": 27,
+        "stars": 28,
         "license": null,
         "archived": false,
         "disabled": false,
@@ -10167,7 +10181,7 @@
     },
     {
       "id": "TobbenTM/MMM-OsloCityBike",
-      "gitHubDataLastUpdate": "2024-06-03T03:30:13.737Z",
+      "gitHubDataLastUpdate": "2024-06-29T15:30:16.728Z",
       "gitHubData": {
         "issues": 0,
         "stars": 2,
@@ -10181,7 +10195,7 @@
     },
     {
       "id": "Gomez0015/MMM-OTIS",
-      "gitHubDataLastUpdate": "2024-06-03T03:30:14.437Z",
+      "gitHubDataLastUpdate": "2024-06-29T15:30:17.388Z",
       "gitHubData": {
         "issues": 0,
         "stars": 3,
@@ -10195,7 +10209,7 @@
     },
     {
       "id": "erchenger/MMM-Oura",
-      "gitHubDataLastUpdate": "2024-06-03T03:30:14.809Z",
+      "gitHubDataLastUpdate": "2024-06-29T15:30:17.762Z",
       "gitHubData": {
         "issues": 2,
         "stars": 4,
@@ -10209,7 +10223,7 @@
     },
     {
       "id": "themox/MMM-Oura2",
-      "gitHubDataLastUpdate": "2024-06-03T03:30:15.240Z",
+      "gitHubDataLastUpdate": "2024-06-29T15:30:18.165Z",
       "gitHubData": {
         "issues": 3,
         "stars": 3,
@@ -10223,7 +10237,7 @@
     },
     {
       "id": "retroflex/MMM-Overwatch",
-      "gitHubDataLastUpdate": "2024-06-03T03:30:15.680Z",
+      "gitHubDataLastUpdate": "2024-06-29T15:30:18.606Z",
       "gitHubData": {
         "issues": 0,
         "stars": 1,

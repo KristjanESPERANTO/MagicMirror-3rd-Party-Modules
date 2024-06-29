@@ -1,16 +1,16 @@
 # Result of the module analysis
 
-Last update: 2024-06-29T05:37:30+02:00
+Last update: 2024-06-29T17:36:38+02:00
 
 ## Statistics
 
 |                      | number   |
 |:---------------------|:--------:|
-| modules analyzed     |   1167   |
-| maintainer           |    651   |
-| modules with issues  |   1155   |
-| issues               |   7211   |
-| modules at github    |   1155   |
+| modules analyzed     |   1168   |
+| maintainer           |    652   |
+| modules with issues  |   1156   |
+| issues               |   7218   |
+| modules at github    |   1156   |
 | modules at gitlab    |     11   |
 | modules at bitbucket |      1   |
 
@@ -6507,6 +6507,16 @@ Last update: 2024-06-29T05:37:30+02:00
 10. Typo: Found `MagicMirror2` in file `package.json`: Replace it with `MagicMirror²`.
 11. Recommendation: Found `"node-fetch"` in file `package.json`: Replace it with built-in fetch.
 12. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
+
+### [MMM-NOKElectricityForecast by AndreasHagman](https://github.com/AndreasHagman/MMM-NOKElectricityForecast)
+
+1. There is no `package.json`. We need this file to gather information about the module for the module list page.
+2. Recommendation: Found `new Date()` in file `MMM-NOKElectricityForecast.js`: Consider replacing it by `new Date(Date.now())`. It's helpfull for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
+3. Recommendation: The README seems not to have an install instruction (the words 'install' or 'installation' are missing). Please add one.
+4. Recommendation: Found `axios` in file `node_helper.js`: Replace it with built-in fetch.
+5. Recommendation: Found `new Date()` in file `node_helper.js`: Consider replacing it by `new Date(Date.now())`. It's helpfull for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
+6. Warning: No LICENSE file.
+7. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
 
 ### [MMM-NoteTaker by joanaz](https://github.com/joanaz/MMM-NoteTaker)
 

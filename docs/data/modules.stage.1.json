@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "2024-06-29T03:30:07.147Z",
+  "lastUpdate": "2024-06-29T15:30:06.213Z",
   "modules": [
     {
       "name": "MMM-01ZM",
@@ -7004,6 +7004,16 @@
       "maintainer": "crice009",
       "maintainerURL": "https://github.com/crice009",
       "description": "Graph daily low and high tide predictions for a given NOAA tide station, and measured data as it is reported. Data is pulled from <a target=\"_blank\" href=\"https://tidesandcurrents.noaa.gov/map/index.html\">NOAA-tidesandcurrents</a>. Data is a free service - no API key.",
+      "issues": []
+    },
+    {
+      "name": "MMM-NOKElectricityForecast",
+      "category": "News / Information",
+      "url": "https://github.com/AndreasHagman/MMM-NOKElectricityForecast",
+      "id": "AndreasHagman/MMM-NOKElectricityForecast",
+      "maintainer": "AndreasHagman",
+      "maintainerURL": "",
+      "description": "Norwegian Electricity Prices Forecast",
       "issues": []
     },
     {
