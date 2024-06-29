@@ -8185,7 +8185,7 @@
     "maintainerURL": "",
     "description": "Keep track of blood glucose levels with ease thru your MagicMirror².",
     "issues": [],
-    "stars": 13
+    "stars": 14
   },
   {
     "name": "MMM-NINA",
@@ -8402,7 +8402,7 @@
     "maintainerURL": "",
     "description": "Real-time MTA subway countdown clock for stations you choose. Configurable for marquee and or list view.",
     "issues": [],
-    "stars": 17,
+    "stars": 18,
     "license": "MIT"
   },
   {

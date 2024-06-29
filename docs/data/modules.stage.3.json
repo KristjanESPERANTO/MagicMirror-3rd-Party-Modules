@@ -11354,7 +11354,7 @@
     "issues": [
       "There are no specific keywords in 'package.json'. We would use them as tags on the module list page. Add a few meaningful terms to the keywords in the package.json. Not just “magicmirror” or “module”."
     ],
-    "stars": 13,
+    "stars": 14,
     "license": "MIT",
     "image": "docs-screenshot-2.jpg"
   },
@@ -11652,7 +11652,7 @@
     "maintainerURL": "",
     "description": "Real-time MTA subway countdown clock for stations you choose. Configurable for marquee and or list view.",
     "issues": [],
-    "stars": 17,
+    "stars": 18,
     "license": "MIT",
     "tags": [
       "nyc",

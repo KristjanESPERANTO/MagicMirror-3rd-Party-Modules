@@ -11448,7 +11448,7 @@
     "maintainerURL": "",
     "description": "Keep track of blood glucose levels with ease thru your MagicMirror\u00b2.",
     "issues": true,
-    "stars": 13,
+    "stars": 14,
     "license": "MIT",
     "image": "docs-screenshot-2.jpg",
     "defaultSortWeight": 4,
@@ -11759,7 +11759,7 @@
     "maintainerURL": "",
     "description": "Real-time MTA subway countdown clock for stations you choose. Configurable for marquee and or list view.",
     "issues": true,
-    "stars": 17,
+    "stars": 18,
     "license": "MIT",
     "tags": [
       "nyc",
@@ -12491,7 +12491,7 @@
     "stars": 3,
     "license": "MIT",
     "image": "images-example.jpg",
-    "defaultSortWeight": 6,
+    "defaultSortWeight": 7,
     "lastCommit": "2022-06-28T18:01:38-05:00"
   },
   {
