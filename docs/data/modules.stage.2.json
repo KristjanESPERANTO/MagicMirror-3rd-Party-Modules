@@ -8910,7 +8910,9 @@
     "maintainer": "sdetweil",
     "maintainerURL": "",
     "description": "Rotate out pages of modules.",
-    "issues": []
+    "issues": [],
+    "stars": 1,
+    "license": "MIT"
   },
   {
     "name": "EXT-Pages",
@@ -8970,7 +8972,7 @@
     "maintainerURL": "",
     "description": "Glance over your parcel deliveries on your mirror, track your shipments. &gt;700 couriers supported (Integrating via Tracktry.com (free) or AfterShip.com (paid &amp; legacy free)). Various layout options depending on your need. With auto translate feature to your language.",
     "issues": [],
-    "stars": 24,
+    "stars": 25,
     "license": "MIT"
   },
   {
@@ -9078,7 +9080,7 @@
     "maintainerURL": "https://github.com/jbamford",
     "description": "Render mesmerizing line animations on your mirror.",
     "issues": [],
-    "stars": 16,
+    "stars": 17,
     "license": "MIT"
   },
   {

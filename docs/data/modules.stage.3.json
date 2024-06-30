@@ -12336,7 +12336,10 @@
     "description": "Rotate out pages of modules.",
     "issues": [
       "There is no `package.json`. We need this file to gather information about the module for the module list page."
-    ]
+    ],
+    "stars": 1,
+    "license": "MIT",
+    "image": "example.jpg"
   },
   {
     "name": "EXT-Pages",
@@ -12414,7 +12417,7 @@
     "issues": [
       "There are no keywords in 'package.json'. We would use them as tags on the module list page."
     ],
-    "stars": 24,
+    "stars": 25,
     "license": "MIT",
     "image": "pictures-1.jpg"
   },
@@ -12565,7 +12568,7 @@
       "There is no `package.json`. We need this file to gather information about the module for the module list page.",
       "No image found."
     ],
-    "stars": 16,
+    "stars": 17,
     "license": "MIT"
   },
   {
