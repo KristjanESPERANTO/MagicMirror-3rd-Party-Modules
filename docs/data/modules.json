@@ -12940,7 +12940,7 @@
     "maintainerURL": "",
     "description": "After a configurated time without any user interaction the display will turn off and hide all modules for economy mode. It will wake up with a PIR sensor.",
     "issues": true,
-    "stars": 21,
+    "stars": 25,
     "license": "MIT",
     "tags": [
       "screen",
@@ -12984,7 +12984,7 @@
     "description": "Another PIR monitoring module that allows you to run custom scripts and integrates MMM-TelegramBot commands.",
     "issues": true,
     "outdated": "Abandoned. Repo has been archived at 2022-08-26.",
-    "stars": 15,
+    "stars": 16,
     "isArchived": true,
     "license": "ISC",
     "image": "screenshot.jpg",
@@ -13000,7 +13000,7 @@
     "maintainerURL": "",
     "description": "This module can monitor a PIR motion sensor and put your mirror to sleep if nobody uses it.",
     "issues": true,
-    "stars": 8,
+    "stars": 9,
     "hasGithubIssues": false,
     "tags": [
       "pir-sensor",
@@ -13020,7 +13020,7 @@
     "description": "Managing monitor with PIR motion sensor (automatic standby when presence isn't detected).",
     "issues": true,
     "outdated": "Abandoned. Repo has been archived at 2024-01-10. There seems to be <a href=\"https://github.com/hervidero/MMM-PIR-Sensor-Lite\">an active fork</a>, but the clone command has not yet been adapted.",
-    "stars": 16,
+    "stars": 15,
     "isArchived": true,
     "license": "MIT",
     "tags": [
@@ -13120,7 +13120,7 @@
     "maintainerURL": "",
     "description": "Make your mirror to a Planetarium.",
     "issues": true,
-    "stars": 2,
+    "stars": 3,
     "license": "MIT",
     "defaultSortWeight": 6,
     "lastCommit": "2023-07-05T10:55:29+02:00"
@@ -13184,7 +13184,7 @@
     "maintainerURL": "",
     "description": "Displays the list of playback sessions for a Plex Media Server.",
     "issues": true,
-    "stars": 25,
+    "stars": 26,
     "license": "MIT",
     "image": "images-sample.jpg",
     "defaultSortWeight": 8,
@@ -13296,7 +13296,7 @@
     "maintainerURL": "https://github.com/bigfoott",
     "description": "Displays current or upcoming Pokemon GO Events. Event data is scraped from <a target=\"_blank\" href=\"https://www.leekduck.com/events\">LeekDuck</a>.",
     "issues": true,
-    "stars": 5,
+    "stars": 6,
     "license": "MIT",
     "image": "docs-preview.jpg",
     "defaultSortWeight": 6,
@@ -13326,8 +13326,8 @@
     "maintainerURL": "",
     "description": "Display pollen.com information for your US zipcode.",
     "issues": true,
-    "stars": 10,
-    "defaultSortWeight": 9,
+    "stars": 11,
+    "defaultSortWeight": 8,
     "lastCommit": "2022-01-05T20:44:18-06:00"
   },
   {

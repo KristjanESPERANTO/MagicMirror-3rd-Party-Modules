@@ -9260,7 +9260,7 @@
     "maintainerURL": "",
     "description": "After a configurated time without any user interaction the display will turn off and hide all modules for economy mode. It will wake up with a PIR sensor.",
     "issues": [],
-    "stars": 21,
+    "stars": 25,
     "license": "MIT"
   },
   {
@@ -9286,7 +9286,7 @@
     "description": "Another PIR monitoring module that allows you to run custom scripts and integrates MMM-TelegramBot commands.",
     "issues": [],
     "outdated": "Abandoned. Repo has been archived at 2022-08-26.",
-    "stars": 15,
+    "stars": 16,
     "isArchived": true
   },
   {
@@ -9298,7 +9298,7 @@
     "maintainerURL": "",
     "description": "This module can monitor a PIR motion sensor and put your mirror to sleep if nobody uses it.",
     "issues": [],
-    "stars": 8,
+    "stars": 9,
     "hasGithubIssues": false
   },
   {
@@ -9311,7 +9311,7 @@
     "description": "Managing monitor with PIR motion sensor (automatic standby when presence isn't detected).",
     "issues": [],
     "outdated": "Abandoned. Repo has been archived at 2024-01-10. There seems to be <a href=\"https://github.com/hervidero/MMM-PIR-Sensor-Lite\">an active fork</a>, but the clone command has not yet been adapted.",
-    "stars": 16,
+    "stars": 15,
     "isArchived": true,
     "license": "MIT"
   },
@@ -9381,7 +9381,7 @@
     "maintainerURL": "",
     "description": "Make your mirror to a Planetarium.",
     "issues": [],
-    "stars": 2,
+    "stars": 3,
     "license": "MIT"
   },
   {
@@ -9427,7 +9427,7 @@
     "maintainerURL": "",
     "description": "Displays the list of playback sessions for a Plex Media Server.",
     "issues": [],
-    "stars": 25,
+    "stars": 26,
     "license": "MIT"
   },
   {
@@ -9510,7 +9510,7 @@
     "maintainerURL": "https://github.com/bigfoott",
     "description": "Displays current or upcoming Pokemon GO Events. Event data is scraped from <a target=\"_blank\" href=\"https://www.leekduck.com/events\">LeekDuck</a>.",
     "issues": [],
-    "stars": 5,
+    "stars": 6,
     "license": "MIT"
   },
   {
@@ -9534,7 +9534,7 @@
     "maintainerURL": "",
     "description": "Display pollen.com information for your US zipcode.",
     "issues": [],
-    "stars": 10
+    "stars": 11
   },
   {
     "name": "MMM-Pollen-FR",

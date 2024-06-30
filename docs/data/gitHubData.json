@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "2024-06-30T03:30:20.628Z",
+  "lastUpdate": "2024-06-30T15:30:19.118Z",
   "repositories": [
     {
       "id": "rubinho101/MMM-01ZM",
@@ -10657,7 +10657,7 @@
     },
     {
       "id": "sheyabernstein/MMM-pihole-stats",
-      "gitHubDataLastUpdate": "2024-05-20T03:30:17.228Z",
+      "gitHubDataLastUpdate": "2024-06-30T15:30:07.461Z",
       "gitHubData": {
         "issues": 0,
         "stars": 71,
@@ -10671,7 +10671,7 @@
     },
     {
       "id": "mykle1/MMM-PilotWX",
-      "gitHubDataLastUpdate": "2024-05-20T03:30:17.646Z",
+      "gitHubDataLastUpdate": "2024-06-30T15:30:07.882Z",
       "gitHubData": {
         "issues": 1,
         "stars": 4,
@@ -10685,7 +10685,7 @@
     },
     {
       "id": "marcelwinh/MMM-PimaticFloorplan",
-      "gitHubDataLastUpdate": "2024-05-20T03:30:18.059Z",
+      "gitHubDataLastUpdate": "2024-06-30T15:30:08.328Z",
       "gitHubData": {
         "issues": 0,
         "stars": 6,
@@ -10699,7 +10699,7 @@
     },
     {
       "id": "SalekurPolas/MMM-Pinfo",
-      "gitHubDataLastUpdate": "2024-05-20T03:30:18.453Z",
+      "gitHubDataLastUpdate": "2024-06-30T15:30:08.745Z",
       "gitHubData": {
         "issues": 2,
         "stars": 14,
@@ -10713,7 +10713,7 @@
     },
     {
       "id": "fewieden/MMM-ping",
-      "gitHubDataLastUpdate": "2024-05-20T03:30:18.813Z",
+      "gitHubDataLastUpdate": "2024-06-30T15:30:09.111Z",
       "gitHubData": {
         "issues": 3,
         "stars": 8,
@@ -10727,10 +10727,10 @@
     },
     {
       "id": "bugsounet/MMM-Pir",
-      "gitHubDataLastUpdate": "2024-05-20T03:30:19.185Z",
+      "gitHubDataLastUpdate": "2024-06-30T15:30:09.501Z",
       "gitHubData": {
         "issues": 2,
-        "stars": 21,
+        "stars": 25,
         "license": "MIT",
         "archived": false,
         "disabled": false,
@@ -10741,9 +10741,9 @@
     },
     {
       "id": "bugsounet/EXT-Pir",
-      "gitHubDataLastUpdate": "2024-05-20T03:30:19.565Z",
+      "gitHubDataLastUpdate": "2024-06-30T15:30:09.925Z",
       "gitHubData": {
-        "issues": 0,
+        "issues": 1,
         "stars": 4,
         "license": "MIT",
         "archived": false,
@@ -10755,10 +10755,10 @@
     },
     {
       "id": "mboskamp/MMM-PIR",
-      "gitHubDataLastUpdate": "2024-05-23T15:30:07.864Z",
+      "gitHubDataLastUpdate": "2024-06-30T15:30:10.344Z",
       "gitHubData": {
         "issues": 12,
-        "stars": 15,
+        "stars": 16,
         "license": null,
         "archived": true,
         "disabled": false,
@@ -10769,10 +10769,10 @@
     },
     {
       "id": "MarcLandis/MMM-PIR-Sensor",
-      "gitHubDataLastUpdate": "2024-05-23T15:30:08.277Z",
+      "gitHubDataLastUpdate": "2024-06-30T15:30:10.722Z",
       "gitHubData": {
         "issues": 1,
-        "stars": 8,
+        "stars": 9,
         "license": null,
         "archived": false,
         "disabled": false,
@@ -10783,10 +10783,10 @@
     },
     {
       "id": "grenagit/MMM-PIR-Sensor-Lite",
-      "gitHubDataLastUpdate": "2024-05-23T15:30:08.635Z",
+      "gitHubDataLastUpdate": "2024-06-30T15:30:11.076Z",
       "gitHubData": {
         "issues": 7,
-        "stars": 16,
+        "stars": 15,
         "license": "MIT",
         "archived": true,
         "disabled": false,
@@ -10797,7 +10797,7 @@
     },
     {
       "id": "dankerthrone/MMM-PirateSkyForecast",
-      "gitHubDataLastUpdate": "2024-05-23T15:30:09.117Z",
+      "gitHubDataLastUpdate": "2024-06-30T15:30:11.468Z",
       "gitHubData": {
         "issues": 1,
         "stars": 3,
@@ -10811,7 +10811,7 @@
     },
     {
       "id": "ckoutavas/MMM-PiTemp",
-      "gitHubDataLastUpdate": "2024-05-23T15:30:09.570Z",
+      "gitHubDataLastUpdate": "2024-06-30T15:30:11.873Z",
       "gitHubData": {
         "issues": 1,
         "stars": 12,
@@ -10825,7 +10825,7 @@
     },
     {
       "id": "nsieg/MMM-piwigo-photo-wheel",
-      "gitHubDataLastUpdate": "2024-05-23T15:30:09.998Z",
+      "gitHubDataLastUpdate": "2024-06-30T15:30:12.239Z",
       "gitHubData": {
         "issues": 0,
         "stars": 0,
@@ -10839,7 +10839,7 @@
     },
     {
       "id": "mjb527/MMM-PL_WOTD",
-      "gitHubDataLastUpdate": "2024-05-23T15:30:10.432Z",
+      "gitHubDataLastUpdate": "2024-06-30T15:30:12.634Z",
       "gitHubData": {
         "issues": 4,
         "stars": 0,
@@ -10853,7 +10853,7 @@
     },
     {
       "id": "njwilliams/MMM-PlaceInfo",
-      "gitHubDataLastUpdate": "2024-05-23T15:30:10.871Z",
+      "gitHubDataLastUpdate": "2024-06-30T15:30:12.991Z",
       "gitHubData": {
         "issues": 2,
         "stars": 3,
@@ -10862,15 +10862,15 @@
         "disabled": false,
         "defaultBranch": "master",
         "has_issues": true,
-        "lastCommit": "2021-06-26T19:02:31Z"
+        "lastCommit": "2024-06-24T15:02:16Z"
       }
     },
     {
       "id": "MMRIZE/MMM-Planetarium",
-      "gitHubDataLastUpdate": "2024-05-23T15:30:11.317Z",
+      "gitHubDataLastUpdate": "2024-06-30T15:30:13.352Z",
       "gitHubData": {
         "issues": 0,
-        "stars": 2,
+        "stars": 3,
         "license": "MIT",
         "archived": false,
         "disabled": false,
@@ -10881,7 +10881,7 @@
     },
     {
       "id": "croxis/planetrise",
-      "gitHubDataLastUpdate": "2024-05-23T15:30:11.754Z",
+      "gitHubDataLastUpdate": "2024-06-30T15:30:13.749Z",
       "gitHubData": {
         "issues": 1,
         "stars": 8,
@@ -10895,7 +10895,7 @@
     },
     {
       "id": "gimdh/MMM-Plantower",
-      "gitHubDataLastUpdate": "2024-05-23T15:30:12.230Z",
+      "gitHubDataLastUpdate": "2024-06-30T15:30:14.279Z",
       "gitHubData": {
         "issues": 0,
         "stars": 0,
@@ -10909,7 +10909,7 @@
     },
     {
       "id": "eckonator/MMM-Plenticore",
-      "gitHubDataLastUpdate": "2024-05-23T15:30:12.627Z",
+      "gitHubDataLastUpdate": "2024-06-30T15:30:14.678Z",
       "gitHubData": {
         "issues": 0,
         "stars": 1,
@@ -10923,10 +10923,10 @@
     },
     {
       "id": "glitch452/MMM-PlexNowPlaying",
-      "gitHubDataLastUpdate": "2024-05-23T15:30:13.012Z",
+      "gitHubDataLastUpdate": "2024-06-30T15:30:15.049Z",
       "gitHubData": {
         "issues": 6,
-        "stars": 25,
+        "stars": 26,
         "license": "MIT",
         "archived": false,
         "disabled": false,
@@ -10937,7 +10937,7 @@
     },
     {
       "id": "PjTewkesbury/MMM-PlexSlideshow",
-      "gitHubDataLastUpdate": "2024-05-23T15:30:13.528Z",
+      "gitHubDataLastUpdate": "2024-06-30T15:30:15.474Z",
       "gitHubData": {
         "issues": 2,
         "stars": 6,
@@ -10951,7 +10951,7 @@
     },
     {
       "id": "mykle1/MMM-PLOW",
-      "gitHubDataLastUpdate": "2024-05-23T15:30:13.958Z",
+      "gitHubDataLastUpdate": "2024-06-30T15:30:15.905Z",
       "gitHubData": {
         "issues": 3,
         "stars": 7,
@@ -10965,7 +10965,7 @@
     },
     {
       "id": "croxis/PlutoTime",
-      "gitHubDataLastUpdate": "2024-05-23T15:30:14.441Z",
+      "gitHubDataLastUpdate": "2024-06-30T15:30:16.388Z",
       "gitHubData": {
         "issues": 1,
         "stars": 3,
@@ -10979,7 +10979,7 @@
     },
     {
       "id": "ptrbld/MMM-Podcast",
-      "gitHubDataLastUpdate": "2024-05-23T15:30:14.874Z",
+      "gitHubDataLastUpdate": "2024-06-30T15:30:16.817Z",
       "gitHubData": {
         "issues": 4,
         "stars": 6,
@@ -10993,7 +10993,7 @@
     },
     {
       "id": "Ax-LED/MMM-Podcast2",
-      "gitHubDataLastUpdate": "2024-05-23T15:30:15.292Z",
+      "gitHubDataLastUpdate": "2024-06-30T15:30:17.213Z",
       "gitHubData": {
         "issues": 2,
         "stars": 2,
@@ -11007,7 +11007,7 @@
     },
     {
       "id": "Steven-Gassert/MMM-PoemOfTheDay",
-      "gitHubDataLastUpdate": "2024-05-23T15:30:15.766Z",
+      "gitHubDataLastUpdate": "2024-06-30T15:30:17.638Z",
       "gitHubData": {
         "issues": 8,
         "stars": 5,
@@ -11021,10 +11021,10 @@
     },
     {
       "id": "bigfoott/MMM-PokemonGOEvents",
-      "gitHubDataLastUpdate": "2024-05-23T15:30:16.141Z",
+      "gitHubDataLastUpdate": "2024-06-30T15:30:18.026Z",
       "gitHubData": {
         "issues": 0,
-        "stars": 5,
+        "stars": 6,
         "license": "MIT",
         "archived": false,
         "disabled": false,
@@ -11035,7 +11035,7 @@
     },
     {
       "id": "devduisburg/MMM-pollen",
-      "gitHubDataLastUpdate": "2024-05-23T15:30:16.741Z",
+      "gitHubDataLastUpdate": "2024-06-30T15:30:18.397Z",
       "gitHubData": {
         "issues": 3,
         "stars": 10,
@@ -11049,10 +11049,10 @@
     },
     {
       "id": "vincep5/MMM-Pollen",
-      "gitHubDataLastUpdate": "2024-05-23T15:30:17.151Z",
+      "gitHubDataLastUpdate": "2024-06-30T15:30:18.750Z",
       "gitHubData": {
         "issues": 2,
-        "stars": 10,
+        "stars": 11,
         "license": null,
         "archived": false,
         "disabled": false,
@@ -11063,7 +11063,7 @@
     },
     {
       "id": "lekesako/MMM-Pollen-FR",
-      "gitHubDataLastUpdate": "2024-05-23T15:30:17.602Z",
+      "gitHubDataLastUpdate": "2024-06-30T15:30:19.105Z",
       "gitHubData": {
         "issues": 1,
         "stars": 0,
