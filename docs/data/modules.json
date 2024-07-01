@@ -9682,7 +9682,7 @@
     "license": "MIT",
     "image": "assets-MMPM-UI-Homepage.jpg",
     "defaultSortWeight": 0,
-    "lastCommit": "2024-04-14T11:36:03-04:00"
+    "lastCommit": "2024-06-30T21:06:45-04:00"
   },
   {
     "name": "MMM-mmpm",
@@ -13843,7 +13843,7 @@
     "maintainerURL": "",
     "description": "Show QRCode image of encoded text.",
     "issues": true,
-    "stars": 17,
+    "stars": 16,
     "defaultSortWeight": 5,
     "lastCommit": "2022-04-19T17:50:21+02:00"
   },
