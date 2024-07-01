@@ -4352,7 +4352,7 @@
     "maintainerURL": "",
     "description": "Detecting 3D gesture with GroveGesture Sensor(PAJ7620u2).",
     "issues": [],
-    "stars": 34,
+    "stars": 35,
     "license": "MIT"
   },
   {
@@ -4436,7 +4436,7 @@
     "maintainerURL": "",
     "description": "Find and display local happy hours.",
     "issues": [],
-    "stars": 2
+    "stars": 3
   },
   {
     "name": "MMM-HASS",
@@ -4543,7 +4543,7 @@
     "maintainerURL": "https://github.com/Snille",
     "description": "Hide everything on screen. With a lot of features and customizations.",
     "issues": [],
-    "stars": 2,
+    "stars": 3,
     "hasGithubIssues": false
   },
   {

@@ -1,6 +1,6 @@
 # Result of the module analysis
 
-Last update: 2024-07-01T05:37:15+02:00
+Last update: 2024-07-01T17:37:22+02:00
 
 ## Statistics
 
@@ -8,8 +8,8 @@ Last update: 2024-07-01T05:37:15+02:00
 |:---------------------|:--------:|
 | modules analyzed     |   1168   |
 | maintainer           |    652   |
-| modules with issues  |   1156   |
-| issues               |   7218   |
+| modules with issues  |   1148   |
+| issues               |   7207   |
 | modules at github    |   1156   |
 | modules at gitlab    |     11   |
 | modules at bitbucket |      1   |
@@ -154,14 +154,7 @@ Last update: 2024-07-01T05:37:15+02:00
 
 ### [EXT-Alert by bugsounet](https://github.com/bugsounet/EXT-Alert)
 
-1. Information: There are updates for 6 dependencie(s):
-   - @eslint/js                 ^8.57.0  →    ^9.6.0
-   - @stylistic/eslint-plugin    ^1.8.1  →    ^2.3.0
-   - esbuild                    ^0.21.4  →   ^0.22.0
-   - eslint                     ^8.57.0  →    ^9.6.0
-   - glob                       ^10.4.1  →   ^10.4.2
-   - sweetalert2               ^11.11.0  →  ^11.12.1
-
+1. Issues are not enabled in the GitHub repository. So users cannot report bugs. Please enable issues in your repo.
 
 ### [MMM-AlertExt by MMRIZE](https://github.com/MMRIZE/MMM-AlertExt)
 
@@ -243,10 +236,8 @@ Last update: 2024-07-01T05:37:15+02:00
 2. No image found.
 3. Recommendation: The README seems not to have an update instruction (the word 'update' is missing). Please add one.
 4. Recommendation: The README seems not to have an install instruction (the words 'install' or 'installation' are missing). Please add one.
-5. Recommendation: Found `"node-fetch"` in file `newsfeedfetcher.js`: Replace it with built-in fetch.
-6. Recommendation: Found `"node-fetch"` in file `package.json`: Replace it with built-in fetch.
-7. Warning: No LICENSE file.
-8. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
+5. Warning: No LICENSE file.
+6. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
 
 ### [MMM-AnyList by codetheweb](https://github.com/codetheweb/MMM-AnyList)
 
@@ -453,16 +444,6 @@ Last update: 2024-07-01T05:37:15+02:00
 9. Typo: Found `Magic Mirror` in file `package.json`: Replace it with `MagicMirror²`.
 10. Recommendation: Found `new Date()` in file `index.ts`: Consider replacing it by `new Date(Date.now())`. It's helpfull for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
 11. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
-
-### [EXT-Background by bugsounet](https://github.com/bugsounet/EXT-Background)
-
-1. Information: There are updates for 5 dependencie(s):
-   - @eslint/js                 ^8.57.0  →   ^9.6.0
-   - @stylistic/eslint-plugin    ^1.6.3  →   ^2.3.0
-   - esbuild                    ^0.20.1  →  ^0.22.0
-   - eslint                     ^8.57.0  →   ^9.6.0
-   - glob                      ^10.3.10  →  ^10.4.2
-
 
 ### [MMM-BackgroundSlideshow by darickc](https://github.com/darickc/MMM-BackgroundSlideshow)
 
@@ -799,13 +780,7 @@ Last update: 2024-07-01T05:37:15+02:00
 
 ### [EXT-Bring by bugsounet](https://github.com/bugsounet/EXT-Bring)
 
-1. Information: There are updates for 5 dependencie(s):
-   - @eslint/js                 ^8.57.0  →   ^9.6.0
-   - @stylistic/eslint-plugin    ^1.7.2  →   ^2.3.0
-   - esbuild                    ^0.20.2  →  ^0.22.0
-   - eslint                     ^8.57.0  →   ^9.6.0
-   - glob                      ^10.3.12  →  ^10.4.2
-
+1. Issues are not enabled in the GitHub repository. So users cannot report bugs. Please enable issues in your repo.
 
 ### [MMM-bringList by rseidt](https://github.com/rseidt/MMM-bringList)
 
@@ -818,13 +793,7 @@ Last update: 2024-07-01T05:37:15+02:00
 
 ### [EXT-Browser by bugsounet](https://github.com/bugsounet/EXT-Browser)
 
-1. Information: There are updates for 5 dependencie(s):
-   - @eslint/js                 ^8.56.0  →   ^9.6.0
-   - @stylistic/eslint-plugin    ^1.8.0  →   ^2.3.0
-   - esbuild                    ^0.21.3  →  ^0.22.0
-   - eslint                     ^8.56.0  →   ^9.6.0
-   - glob                      ^10.3.15  →  ^10.4.2
-
+1. Issues are not enabled in the GitHub repository. So users cannot report bugs. Please enable issues in your repo.
 
 ### [MMM-Bubi by balassy](https://github.com/balassy/MMM-Bubi)
 
@@ -1757,8 +1726,9 @@ Last update: 2024-07-01T05:37:15+02:00
 
 ### [EXT-Detector by bugsounet](https://github.com/bugsounet/EXT-Detector)
 
-1. Recommendation: The README seems not to have an update instruction (the word 'update' is missing). Please add one.
-2. Recommendation: The README seems not to have an install instruction (the words 'install' or 'installation' are missing). Please add one.
+1. Issues are not enabled in the GitHub repository. So users cannot report bugs. Please enable issues in your repo.
+2. Recommendation: The README seems not to have an update instruction (the word 'update' is missing). Please add one.
+3. Recommendation: The README seems not to have an install instruction (the words 'install' or 'installation' are missing). Please add one.
 
 ### [MMM-DHT by ckoutavas](https://github.com/ckoutavas/MMM-DHT)
 
@@ -2742,14 +2712,6 @@ Last update: 2024-07-01T05:37:15+02:00
 ### [MMM-FranceInfo by bugsounet](https://github.com/bugsounet/MMM-FranceInfo)
 
 1. Issues are not enabled in the GitHub repository. So users cannot report bugs. Please enable issues in your repo.
-2. Information: There are updates for 6 dependencie(s):
-   - @eslint/js                ^8.57.0  →   ^9.6.0
-   - @stylistic/eslint-plugin   ^1.8.1  →   ^2.3.0
-   - esbuild                   ^0.21.4  →  ^0.22.0
-   - eslint                    ^8.57.0  →   ^9.6.0
-   - glob                      ^10.4.1  →  ^10.4.2
-   - stream                     ^0.0.2  →   ^0.0.3
-
 
 ### [MMM-Freebox by bugsounet](https://github.com/bugsounet/MMM-Freebox)
 
@@ -2770,16 +2732,6 @@ Last update: 2024-07-01T05:37:15+02:00
 10. Recommendation: Found `jshint` in file `progressbar.js`: Replace "jshint" by "eslint".
 11. Recommendation: Found `new Date()` in file `progressbar.js`: Consider replacing it by `new Date(Date.now())`. It's helpfull for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
 12. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
-
-### [EXT-FreeboxTV by bugsounet](https://github.com/bugsounet/EXT-FreeboxTV)
-
-1. Information: There are updates for 5 dependencie(s):
-   - @eslint/js                 ^8.57.0  →   ^9.6.0
-   - @stylistic/eslint-plugin     1.8.0  →    2.3.0
-   - esbuild                    ^0.21.2  →  ^0.22.0
-   - eslint                     ^8.57.0  →   ^9.6.0
-   - glob                      ^10.3.15  →  ^10.4.2
-
 
 ### [MMM-FrenchHoroscope by Amand-M](https://github.com/Amand-M/MMM-FrenchHoroscope)
 
@@ -3009,16 +2961,6 @@ Last update: 2024-07-01T05:37:15+02:00
 4. Recommendation: The README seems not to have an update instruction (the word 'update' is missing). Please add one.
 5. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
 
-### [MMM-Glassy by bugsounet](https://github.com/bugsounet/MMM-Glassy)
-
-1. Information: There are updates for 5 dependencie(s):
-   - @eslint/js                ^8.57.0  →   ^9.6.0
-   - @stylistic/eslint-plugin   ^1.8.1  →   ^2.3.0
-   - esbuild                   ^0.21.4  →  ^0.22.0
-   - eslint                    ^8.57.0  →   ^9.6.0
-   - glob                      ^10.4.1  →  ^10.4.2
-
-
 ### [MMM-Globe by Eunanibus](https://github.com/Eunanibus/MMM-Globe)
 
 1. There is no `package.json`. We need this file to gather information about the module for the module list page.
@@ -3060,17 +3002,7 @@ Last update: 2024-07-01T05:37:15+02:00
 
 ### [MMM-GoogleAssistant by bugsounet](https://github.com/bugsounet/MMM-GoogleAssistant)
 
-1. Information: There are updates for 9 dependencie(s):
-   - @eslint/js                ^8.57.0  →    ^9.6.0
-   - @grpc/grpc-js             ^1.10.9  →  ^1.10.10
-   - @stylistic/eslint-plugin   ^1.8.1  →    ^2.3.0
-   - esbuild                   ^0.21.5  →   ^0.22.0
-   - eslint                    ^8.57.0  →    ^9.6.0
-   - glob                      ^10.4.1  →   ^10.4.2
-   - google-auth-library       ^9.10.0  →   ^9.11.0
-   - pm2                        ^5.4.0  →    ^5.4.1
-   - protobufjs                 ^7.3.0  →    ^7.3.2
-
+1. Issues are not enabled in the GitHub repository. So users cannot report bugs. Please enable issues in your repo.
 
 ### [MMM-GoogleAssistant by gauravsacc](https://github.com/gauravsacc/MMM-GoogleAssistant)
 
@@ -3183,8 +3115,9 @@ Last update: 2024-07-01T05:37:15+02:00
 
 ### [EXT-GooglePhotos by bugsounet](https://github.com/bugsounet/EXT-GooglePhotos)
 
-1. Recommendation: Found `axios` in file `GooglePhotosLib.js`: Replace it with built-in fetch.
-2. Recommendation: Found `axios` in file `package.json`: Replace it with built-in fetch.
+1. Issues are not enabled in the GitHub repository. So users cannot report bugs. Please enable issues in your repo.
+2. Recommendation: Found `axios` in file `GooglePhotosLib.js`: Replace it with built-in fetch.
+3. Recommendation: Found `axios` in file `package.json`: Replace it with built-in fetch.
 
 ### [MMM-GoogleSheets by ryan-d-williams](https://github.com/ryan-d-williams/MMM-GoogleSheets)
 
@@ -3232,16 +3165,6 @@ Last update: 2024-07-01T05:37:15+02:00
 
 1. Recommendation: Found `new Date()` in file `node_helper.js`: Consider replacing it by `new Date(Date.now())`. It's helpfull for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
 2. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
-
-### [EXT-Governor by bugsounet](https://github.com/bugsounet/EXT-Governor)
-
-1. Information: There are updates for 5 dependencie(s):
-   - @eslint/js                 ^8.57.0  →   ^9.6.0
-   - @stylistic/eslint-plugin    ^1.6.3  →   ^2.3.0
-   - esbuild                    ^0.20.1  →  ^0.22.0
-   - eslint                     ^8.57.0  →   ^9.6.0
-   - glob                      ^10.3.10  →  ^10.4.2
-
 
 ### [MMM-GPIO-HANDLER by Sjohn21](https://github.com/Sjohn21/MMM-GPIO-HANDLER)
 
@@ -4006,13 +3929,7 @@ Last update: 2024-07-01T05:37:15+02:00
 
 ### [EXT-Internet by bugsounet](https://github.com/bugsounet/EXT-Internet)
 
-1. Information: There are updates for 5 dependencie(s):
-   - @eslint/js                 ^8.57.0  →   ^9.6.0
-   - @stylistic/eslint-plugin    ^1.6.3  →   ^2.3.0
-   - esbuild                    ^0.20.1  →  ^0.22.0
-   - eslint                     ^8.57.0  →   ^9.6.0
-   - glob                      ^10.3.10  →  ^10.4.2
-
+1. Issues are not enabled in the GitHub repository. So users cannot report bugs. Please enable issues in your repo.
 
 ### [internet-monitor by BrianHepler](https://github.com/BrianHepler/internet-monitor)
 
@@ -4323,16 +4240,6 @@ Last update: 2024-07-01T05:37:15+02:00
 5. Recommendation: The README seems not to have an update instruction (the word 'update' is missing). Please add one.
 6. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
 
-### [EXT-Keyboard by bugsounet](https://github.com/bugsounet/EXT-Keyboard)
-
-1. Information: There are updates for 5 dependencie(s):
-   - @eslint/js                 ^8.57.0  →   ^9.6.0
-   - @stylistic/eslint-plugin    ^1.7.0  →   ^2.3.0
-   - esbuild                    ^0.20.2  →  ^0.22.0
-   - eslint                     ^8.57.0  →   ^9.6.0
-   - glob                      ^10.3.10  →  ^10.4.2
-
-
 ### [KeyDisplayed by l0b5ter](https://github.com/l0b5ter/KeyDisplayed)
 
 1. There is no `package.json`. We need this file to gather information about the module for the module list page.
@@ -4463,14 +4370,7 @@ Last update: 2024-07-01T05:37:15+02:00
 
 ### [EXT-Librespot by bugsounet](https://github.com/bugsounet/EXT-Librespot)
 
-1. Information: There are updates for 6 dependencie(s):
-   - @eslint/js                 ^8.57.0  →   ^9.6.0
-   - @stylistic/eslint-plugin    ^1.7.0  →   ^2.3.0
-   - esbuild                    ^0.20.2  →  ^0.22.0
-   - eslint                     ^8.57.0  →   ^9.6.0
-   - glob                      ^10.3.10  →  ^10.4.2
-   - pm2                         ^5.3.1  →   ^5.4.1
-
+1. Issues are not enabled in the GitHub repository. So users cannot report bugs. Please enable issues in your repo.
 
 ### [MMM-LibrespotJava by l3d00m](https://github.com/l3d00m/MMM-LibrespotJava)
 
@@ -5010,16 +4910,6 @@ Last update: 2024-07-01T05:37:15+02:00
 9. Warning: No LICENSE file.
 10. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
 
-### [MMM-MeteoFrance by bugsounet](https://github.com/bugsounet/MMM-MeteoFrance)
-
-1. Information: There are updates for 5 dependencie(s):
-   - @eslint/js                ^8.57.0  →   ^9.6.0
-   - @stylistic/eslint-plugin   ^1.8.1  →   ^2.3.0
-   - esbuild                   ^0.21.4  →  ^0.22.0
-   - eslint                    ^8.57.0  →   ^9.6.0
-   - glob                      ^10.4.1  →  ^10.4.2
-
-
 ### [MMM-MHZ19 by awitwicki](https://github.com/awitwicki/MMM-MHZ19)
 
 1. `package.json` issue: No description
@@ -5546,14 +5436,8 @@ Last update: 2024-07-01T05:37:15+02:00
 
 ### [EXT-Motion by bugsounet](https://github.com/bugsounet/EXT-Motion)
 
-1. No image found.
-2. Information: There are updates for 5 dependencie(s):
-   - @eslint/js                 ^8.57.0  →   ^9.6.0
-   - @stylistic/eslint-plugin    ^1.6.3  →   ^2.3.0
-   - esbuild                    ^0.20.1  →  ^0.22.0
-   - eslint                     ^8.57.0  →   ^9.6.0
-   - glob                      ^10.3.10  →  ^10.4.2
-
+1. Issues are not enabled in the GitHub repository. So users cannot report bugs. Please enable issues in your repo.
+2. No image found.
 
 ### [MMM-Motion-Camera by yusinv](https://github.com/yusinv/MMM-Motion-Camera)
 
@@ -5783,14 +5667,7 @@ Last update: 2024-07-01T05:37:15+02:00
 
 ### [EXT-MusicPlayer by bugsounet](https://github.com/bugsounet/EXT-MusicPlayer)
 
-1. Information: There are updates for 6 dependencie(s):
-   - @eslint/js                 ^8.57.0  →   ^9.6.0
-   - @stylistic/eslint-plugin     1.8.0  →    2.3.0
-   - esbuild                    ^0.21.2  →  ^0.22.0
-   - eslint                     ^8.57.0  →   ^9.6.0
-   - glob                      ^10.3.15  →  ^10.4.2
-   - usb                        ^2.12.1  →  ^2.13.0
-
+1. Issues are not enabled in the GitHub repository. So users cannot report bugs. Please enable issues in your repo.
 
 ### [MMM-mvgmunich by mrVragec](https://github.com/mrVragec/MMM-mvgmunich)
 
@@ -6215,16 +6092,6 @@ Last update: 2024-07-01T05:37:15+02:00
 9. Recommendation: Found `new Date()` in file `node_helper.js`: Consider replacing it by `new Date(Date.now())`. It's helpfull for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
 10. Deprecated: Found `"grunt"` in file `package.json`: Grunt is practically unmaintained. Move on to something better.
 11. Recommendation: Replace eslintrc by new flat config.
-
-### [MMM-NetatmoThermostat by bugsounet](https://github.com/bugsounet/MMM-NetatmoThermostat)
-
-1. Information: There are updates for 5 dependencie(s):
-   - @eslint/js                ^8.57.0  →   ^9.6.0
-   - @stylistic/eslint-plugin   ^1.8.1  →   ^2.3.0
-   - esbuild                   ^0.21.5  →  ^0.22.0
-   - eslint                    ^8.57.0  →   ^9.6.0
-   - glob                      ^10.4.1  →  ^10.4.2
-
 
 ### [MMM-network-signal by PoOwAa](https://github.com/PoOwAa/MMM-network-signal)
 
@@ -6990,13 +6857,7 @@ Last update: 2024-07-01T05:37:15+02:00
 
 ### [EXT-Pages by bugsounet](https://github.com/bugsounet/EXT-Pages)
 
-1. Information: There are updates for 5 dependencie(s):
-   - @eslint/js                ^8.57.0  →   ^9.6.0
-   - @stylistic/eslint-plugin   ^1.8.1  →   ^2.3.0
-   - esbuild                   ^0.21.4  →  ^0.22.0
-   - eslint                    ^8.57.0  →   ^9.6.0
-   - glob                      ^10.4.1  →  ^10.4.2
-
+1. Issues are not enabled in the GitHub repository. So users cannot report bugs. Please enable issues in your repo.
 
 ### [MMM-Pages-Screencast by jboucly](https://github.com/jboucly/MMM-Pages-Screencast)
 
@@ -7190,13 +7051,7 @@ Last update: 2024-07-01T05:37:15+02:00
 
 ### [EXT-Photos by bugsounet](https://github.com/bugsounet/EXT-Photos)
 
-1. Information: There are updates for 5 dependencie(s):
-   - @eslint/js                 ^8.57.0  →   ^9.6.0
-   - @stylistic/eslint-plugin    ^1.6.3  →   ^2.3.0
-   - esbuild                    ^0.20.1  →  ^0.22.0
-   - eslint                     ^8.57.0  →   ^9.6.0
-   - glob                      ^10.3.10  →  ^10.4.2
-
+1. Issues are not enabled in the GitHub repository. So users cannot report bugs. Please enable issues in your repo.
 
 ### [PiDisplaySleep by RpDp-git](https://github.com/RpDp-git/PiDisplaySleep)
 
@@ -7249,25 +7104,10 @@ Last update: 2024-07-01T05:37:15+02:00
 ### [MMM-Pir by bugsounet](https://github.com/bugsounet/MMM-Pir)
 
 1. Deprecated: Found `new Buffer(` in file `progressbar.js`: This is deprecated. Please update: <https://nodejs.org/api/buffer.html>.
-2. Information: There are updates for 6 dependencie(s):
-   - @eslint/js                 ^8.57.0  →   ^9.6.0
-   - @stylistic/eslint-plugin    ^1.7.0  →   ^2.3.0
-   - esbuild                    ^0.20.2  →  ^0.22.0
-   - eslint                     ^8.57.0  →   ^9.6.0
-   - glob                      ^10.3.12  →  ^10.4.2
-   - long-press-event            ^2.4.6  →   ^2.5.0
-
 
 ### [EXT-Pir by bugsounet](https://github.com/bugsounet/EXT-Pir)
 
-1. Information: There are updates for 6 dependencie(s):
-   - @eslint/js                 ^8.57.0  →   ^9.6.0
-   - @stylistic/eslint-plugin    ^1.7.0  →   ^2.3.0
-   - esbuild                    ^0.20.2  →  ^0.22.0
-   - eslint                     ^8.57.0  →   ^9.6.0
-   - glob                      ^10.3.10  →  ^10.4.2
-   - nan                        ^2.19.0  →  ^2.20.0
-
+1. Issues are not enabled in the GitHub repository. So users cannot report bugs. Please enable issues in your repo.
 
 ### [MMM-PIR by mboskamp](https://github.com/mboskamp/MMM-PIR)
 
@@ -7784,13 +7624,7 @@ Last update: 2024-07-01T05:37:15+02:00
 
 ### [EXT-RadioPlayer by bugsounet](https://github.com/bugsounet/EXT-RadioPlayer)
 
-1. Information: There are updates for 5 dependencie(s):
-   - @eslint/js                 ^8.57.0  →   ^9.6.0
-   - @stylistic/eslint-plugin     1.8.0  →    2.3.0
-   - esbuild                    ^0.21.2  →  ^0.22.0
-   - eslint                     ^8.57.0  →   ^9.6.0
-   - glob                      ^10.3.15  →  ^10.4.2
-
+1. Issues are not enabled in the GitHub repository. So users cannot report bugs. Please enable issues in your repo.
 
 ### [MMM-RaiderIO by jwcnewton](https://github.com/jwcnewton/MMM-RaiderIO)
 
@@ -8330,13 +8164,6 @@ Last update: 2024-07-01T05:37:15+02:00
 ### [MMM-Saint by bugsounet](https://github.com/bugsounet/MMM-Saint)
 
 1. Typo: Found `Magic Mirror` in file `MMM-Saint.css`: Replace it with `MagicMirror²`.
-2. Information: There are updates for 5 dependencie(s):
-   - @eslint/js                ^8.57.0  →   ^9.6.0
-   - @stylistic/eslint-plugin   ^1.8.1  →   ^2.3.0
-   - esbuild                   ^0.21.4  →  ^0.22.0
-   - eslint                    ^8.57.0  →   ^9.6.0
-   - glob                      ^10.4.1  →  ^10.4.2
-
 
 ### [MMM-Sbanken by reidarw](https://github.com/reidarw/MMM-Sbanken)
 
@@ -8379,14 +8206,8 @@ Last update: 2024-07-01T05:37:15+02:00
 
 ### [EXT-Screen by bugsounet](https://github.com/bugsounet/EXT-Screen)
 
-1. Deprecated: Found `new Buffer(` in file `progressbar.js`: This is deprecated. Please update: <https://nodejs.org/api/buffer.html>.
-2. Information: There are updates for 5 dependencie(s):
-   - @eslint/js                 ^8.57.0  →   ^9.6.0
-   - @stylistic/eslint-plugin    ^1.8.0  →   ^2.3.0
-   - esbuild                    ^0.20.2  →  ^0.22.0
-   - eslint                     ^8.57.0  →   ^9.6.0
-   - glob                      ^10.3.12  →  ^10.4.2
-
+1. Issues are not enabled in the GitHub repository. So users cannot report bugs. Please enable issues in your repo.
+2. Deprecated: Found `new Buffer(` in file `progressbar.js`: This is deprecated. Please update: <https://nodejs.org/api/buffer.html>.
 
 ### [MMM-Screen-Powersave-Notification by Tom-Hirschberger](https://github.com/Tom-Hirschberger/MMM-Screen-Powersave-Notification)
 
@@ -8463,26 +8284,13 @@ Last update: 2024-07-01T05:37:15+02:00
 
 ### [EXT-Selfies by bugsounet](https://github.com/bugsounet/EXT-Selfies)
 
-1. Recommendation: Found `XMLHttpRequest` in file `webcam.js`: Replace it with built-in fetch.
-2. Information: There are updates for 5 dependencie(s):
-   - @eslint/js                 ^8.57.0  →   ^9.6.0
-   - @stylistic/eslint-plugin    ^1.6.3  →   ^2.3.0
-   - esbuild                    ^0.20.1  →  ^0.22.0
-   - eslint                     ^8.57.0  →   ^9.6.0
-   - glob                      ^10.3.10  →  ^10.4.2
-
+1. Issues are not enabled in the GitHub repository. So users cannot report bugs. Please enable issues in your repo.
+2. Recommendation: Found `XMLHttpRequest` in file `webcam.js`: Replace it with built-in fetch.
 
 ### [EXT-SelfiesFlash by bugsounet](https://github.com/bugsounet/EXT-SelfiesFlash)
 
-1. No image found.
-2. Information: There are updates for 6 dependencie(s):
-   - @eslint/js                 ^8.57.0  →   ^9.6.0
-   - @stylistic/eslint-plugin    ^1.6.3  →   ^2.3.0
-   - esbuild                    ^0.20.1  →  ^0.22.0
-   - eslint                     ^8.57.0  →   ^9.6.0
-   - glob                      ^10.3.10  →  ^10.4.2
-   - nan                        ^2.19.0  →  ^2.20.0
-
+1. Issues are not enabled in the GitHub repository. So users cannot report bugs. Please enable issues in your repo.
+2. No image found.
 
 ### [MMM-Selfieshot by BrianHepler](https://github.com/BrianHepler/MMM-Selfieshot)
 
@@ -8492,25 +8300,12 @@ Last update: 2024-07-01T05:37:15+02:00
 
 ### [EXT-SelfiesSender by bugsounet](https://github.com/bugsounet/EXT-SelfiesSender)
 
-1. No image found.
-2. Information: There are updates for 6 dependencie(s):
-   - @eslint/js                 ^8.57.0  →   ^9.6.0
-   - @stylistic/eslint-plugin    ^1.6.3  →   ^2.3.0
-   - esbuild                    ^0.20.1  →  ^0.22.0
-   - eslint                     ^8.57.0  →   ^9.6.0
-   - glob                      ^10.3.10  →  ^10.4.2
-   - nodemailer                 ^6.9.11  →  ^6.9.14
-
+1. Issues are not enabled in the GitHub repository. So users cannot report bugs. Please enable issues in your repo.
+2. No image found.
 
 ### [EXT-SelfiesViewer by bugsounet](https://github.com/bugsounet/EXT-SelfiesViewer)
 
-1. Information: There are updates for 5 dependencie(s):
-   - @eslint/js                 ^8.57.0  →   ^9.6.0
-   - @stylistic/eslint-plugin    ^1.7.0  →   ^2.3.0
-   - esbuild                    ^0.20.2  →  ^0.22.0
-   - eslint                     ^8.57.0  →   ^9.6.0
-   - glob                      ^10.3.12  →  ^10.4.2
-
+1. Issues are not enabled in the GitHub repository. So users cannot report bugs. Please enable issues in your repo.
 
 ### [MMM-SendNotificationButton by ralberth](https://github.com/ralberth/MMM-SendNotificationButton)
 
@@ -9060,24 +8855,11 @@ Last update: 2024-07-01T05:37:15+02:00
 
 ### [EXT-Spotify by bugsounet](https://github.com/bugsounet/EXT-Spotify)
 
-1. Information: There are updates for 5 dependencie(s):
-   - @eslint/js                ^8.57.0  →   ^9.6.0
-   - @stylistic/eslint-plugin   ^1.8.1  →   ^2.3.0
-   - esbuild                   ^0.21.5  →  ^0.22.0
-   - eslint                    ^8.57.0  →   ^9.6.0
-   - glob                      ^10.4.1  →  ^10.4.2
-
+1. Issues are not enabled in the GitHub repository. So users cannot report bugs. Please enable issues in your repo.
 
 ### [EXT-SpotifyCanvasLyrics by bugsounet](https://github.com/bugsounet/EXT-SpotifyCanvasLyrics)
 
-1. Information: There are updates for 6 dependencie(s):
-   - @eslint/js                ^8.57.0  →   ^9.6.0
-   - @stylistic/eslint-plugin   ^1.8.1  →   ^2.3.0
-   - esbuild                   ^0.21.4  →  ^0.22.0
-   - eslint                    ^8.57.0  →   ^9.6.0
-   - glob                      ^10.4.1  →  ^10.4.2
-   - protobufjs                 ^7.3.0  →   ^7.3.2
-
+1. Issues are not enabled in the GitHub repository. So users cannot report bugs. Please enable issues in your repo.
 
 ### [MMM-SpotifyConnectUI by CatoAntonsen](https://github.com/CatoAntonsen/MMM-SpotifyConnectUI)
 
@@ -9218,14 +9000,7 @@ Last update: 2024-07-01T05:37:15+02:00
 
 ### [EXT-StreamDeck by bugsounet](https://github.com/bugsounet/EXT-StreamDeck)
 
-1. Information: There are updates for 6 dependencie(s):
-   - @elgato-stream-deck/node    ^6.0.0  →   ^6.2.0
-   - @eslint/js                 ^8.57.0  →   ^9.6.0
-   - @stylistic/eslint-plugin    ^1.7.0  →   ^2.3.0
-   - esbuild                    ^0.20.2  →  ^0.22.0
-   - eslint                     ^8.57.0  →   ^9.6.0
-   - glob                      ^10.3.10  →  ^10.4.2
-
+1. Issues are not enabled in the GitHub repository. So users cannot report bugs. Please enable issues in your repo.
 
 ### [MMM-SugarValue by balharrie](https://github.com/balharrie/MMM-SugarValue)
 
@@ -9453,14 +9228,8 @@ Last update: 2024-07-01T05:37:15+02:00
 
 ### [EXT-TelegramBot by bugsounet](https://github.com/bugsounet/EXT-TelegramBot)
 
-1. Recommendation: The README seems not to have an update instruction (the word 'update' is missing). Please add one.
-2. Information: There are updates for 5 dependencie(s):
-   - @eslint/js                ^8.57.0  →   ^9.6.0
-   - @stylistic/eslint-plugin   ^1.8.1  →   ^2.3.0
-   - esbuild                   ^0.21.4  →  ^0.22.0
-   - eslint                    ^8.57.0  →   ^9.6.0
-   - glob                      ^10.4.1  →  ^10.4.2
-
+1. Issues are not enabled in the GitHub repository. So users cannot report bugs. Please enable issues in your repo.
+2. Recommendation: The README seems not to have an update instruction (the word 'update' is missing). Please add one.
 
 ### [MMM-TelegramCommands by doctorfree](https://github.com/doctorfree/MMM-TelegramCommands)
 
@@ -10063,13 +9832,7 @@ Last update: 2024-07-01T05:37:15+02:00
 
 ### [EXT-Updates by bugsounet](https://github.com/bugsounet/EXT-Updates)
 
-1. Information: There are updates for 5 dependencie(s):
-   - @eslint/js                 ^8.57.0  →   ^9.6.0
-   - @stylistic/eslint-plugin    ^1.7.0  →   ^2.3.0
-   - esbuild                    ^0.20.2  →  ^0.22.0
-   - eslint                     ^8.57.0  →   ^9.6.0
-   - glob                      ^10.3.10  →  ^10.4.2
-
+1. Issues are not enabled in the GitHub repository. So users cannot report bugs. Please enable issues in your repo.
 
 ### [MMM-uptimekuma by MikeBishop](https://github.com/MikeBishop/MMM-uptimekuma)
 
@@ -10218,17 +9981,6 @@ Last update: 2024-07-01T05:37:15+02:00
 6. Recommendation: Found `require("http")` in file `node_helper.js`: Replace "http" by "node:http".
 7. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
 
-### [EXT-VLCServer by bugsounet](https://github.com/bugsounet/EXT-VLCServer)
-
-1. Information: There are updates for 6 dependencie(s):
-   - @eslint/js                 ^8.57.0  →   ^9.6.0
-   - @stylistic/eslint-plugin     1.8.0  →    2.3.0
-   - esbuild                    ^0.21.3  →  ^0.22.0
-   - eslint                     ^8.57.0  →   ^9.6.0
-   - glob                      ^10.3.15  →  ^10.4.2
-   - pm2                         ^5.3.1  →   ^5.4.1
-
-
 ### [MMM-VocabularyTrainer by fewieden](https://github.com/fewieden/MMM-VocabularyTrainer)
 
 1. Outdated: Found `MichMich/MagicMirror` in file `MMM-VocabularyTrainer.js`: Replace it by `MagicMirrorOrg/MagicMirror`.
@@ -10293,13 +10045,7 @@ Last update: 2024-07-01T05:37:15+02:00
 
 ### [EXT-Volume by bugsounet](https://github.com/bugsounet/EXT-Volume)
 
-1. Information: There are updates for 5 dependencie(s):
-   - @eslint/js                 ^8.57.0  →   ^9.6.0
-   - @stylistic/eslint-plugin    ^1.8.0  →   ^2.3.0
-   - esbuild                    ^0.20.2  →  ^0.22.0
-   - eslint                     ^8.57.0  →   ^9.6.0
-   - glob                      ^10.3.12  →  ^10.4.2
-
+1. Issues are not enabled in the GitHub repository. So users cannot report bugs. Please enable issues in your repo.
 
 ### [MMM-volumio-playing by mrdis](https://github.com/mrdis/MMM-volumio-playing)
 
@@ -10588,14 +10334,8 @@ Last update: 2024-07-01T05:37:15+02:00
 
 ### [EXT-Welcome by bugsounet](https://github.com/bugsounet/EXT-Welcome)
 
-1. No image found.
-2. Information: There are updates for 5 dependencie(s):
-   - @eslint/js                 ^8.57.0  →   ^9.6.0
-   - @stylistic/eslint-plugin    ^1.6.3  →   ^2.3.0
-   - esbuild                    ^0.20.1  →  ^0.22.0
-   - eslint                     ^8.57.0  →   ^9.6.0
-   - glob                      ^10.3.10  →  ^10.4.2
-
+1. Issues are not enabled in the GitHub repository. So users cannot report bugs. Please enable issues in your repo.
+2. No image found.
 
 ### [MMM-WestBerksBinDay by hdurdle](https://github.com/hdurdle/MMM-WestBerksBinDay)
 
@@ -10875,13 +10615,7 @@ Last update: 2024-07-01T05:37:15+02:00
 
 ### [EXT-YouTube by bugsounet](https://github.com/bugsounet/EXT-YouTube)
 
-1. Information: There are updates for 5 dependencie(s):
-   - @eslint/js                 ^8.57.0  →   ^9.6.0
-   - @stylistic/eslint-plugin    ^1.7.2  →   ^2.3.0
-   - esbuild                    ^0.20.2  →  ^0.22.0
-   - eslint                     ^8.57.0  →   ^9.6.0
-   - glob                      ^10.3.12  →  ^10.4.2
-
+1. Issues are not enabled in the GitHub repository. So users cannot report bugs. Please enable issues in your repo.
 
 ### [MMM-YouTube-API by C4TFLY](https://github.com/C4TFLY/MMM-YouTube-API)
 
@@ -10902,14 +10636,7 @@ Last update: 2024-07-01T05:37:15+02:00
 
 ### [EXT-YouTubeCast by bugsounet](https://github.com/bugsounet/EXT-YouTubeCast)
 
-1. Information: There are updates for 6 dependencie(s):
-   - @eslint/js                 ^8.57.0  →   ^9.6.0
-   - @stylistic/eslint-plugin    ^1.7.0  →   ^2.3.0
-   - esbuild                    ^0.20.2  →  ^0.22.0
-   - eslint                     ^8.57.0  →   ^9.6.0
-   - glob                      ^10.3.12  →  ^10.4.2
-   - uuid                        ^9.0.1  →  ^10.0.0
-
+1. Issues are not enabled in the GitHub repository. So users cannot report bugs. Please enable issues in your repo.
 
 ### [MMM-YouTubeWebView by doctorfree](https://gitlab.com/doctorfree/MMM-YouTubeWebView)
 
