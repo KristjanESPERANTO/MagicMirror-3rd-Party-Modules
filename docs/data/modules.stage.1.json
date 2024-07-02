@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "2024-05-13T15:30:06.811Z",
+  "lastUpdate": "2024-07-01T15:30:06.108Z",
   "modules": [
     {
       "name": "MMM-01ZM",
@@ -149,16 +149,6 @@
       "maintainer": "CFenner",
       "maintainerURL": "",
       "description": "Display the air quality index for a certain location.",
-      "issues": []
-    },
-    {
-      "name": "MMM-AirQuality",
-      "category": "Weather",
-      "url": "https://github.com/cslev/MMM-AirQuality",
-      "id": "cslev/MMM-AirQuality",
-      "maintainer": "cslev",
-      "maintainerURL": "",
-      "description": "Fork from CFenner's repo and extended with a new layout setting to print location data as a header.",
       "issues": []
     },
     {
@@ -542,6 +532,16 @@
       "maintainer": "falafel2222",
       "maintainerURL": "",
       "description": "Bay Area Rapid Transit (BART) departure times.",
+      "issues": []
+    },
+    {
+      "name": "MMM-Bash",
+      "category": "Development / Core MagicMirror²",
+      "url": "https://github.com/mathew-fleisch/MMM-Bash",
+      "id": "mathew-fleisch/MMM-Bash",
+      "maintainer": "mathew-fleisch",
+      "maintainerURL": "",
+      "description": "A simple module to run a bash/terminal command on a loop, displaying stdout/stderr to screen.",
       "issues": []
     },
     {
@@ -2814,6 +2814,16 @@
       "issues": []
     },
     {
+      "name": "MMM-FieldHockey-FFH",
+      "category": "Sports",
+      "url": "https://github.com/mmourcia/MMM-FieldHockey-FFH",
+      "id": "mmourcia/MMM-FieldHockey-FFH",
+      "maintainer": "mmourcia",
+      "maintainerURL": "https://github.com/mmourcia",
+      "description": "Display field hockey french rankings.",
+      "issues": []
+    },
+    {
       "name": "MMM-FiElectricityPrice",
       "category": "Finance",
       "url": "https://github.com/jannekalliola/MMM-FiElectricityPrice",
@@ -3217,6 +3227,16 @@
       "issues": []
     },
     {
+      "name": "MMM-GasPricesPT",
+      "category": "Transport / Travel",
+      "url": "https://github.com/Fneves7/MMM-GasPricesPT",
+      "id": "Fneves7/MMM-GasPricesPT",
+      "maintainer": "Fneves7",
+      "maintainerURL": "https://github.com/Fneves7/",
+      "description": "Display the cheapest Gas Station prices in Portugal.",
+      "issues": []
+    },
+    {
       "name": "MMM-GConnect",
       "category": "Sports",
       "url": "https://github.com/tderflinger/MMM-GConnect",
@@ -3358,6 +3378,16 @@
       "issues": []
     },
     {
+      "name": "MMM-GmailNotifier",
+      "category": "Utility / IOT / 3rd Party / Integration",
+      "url": "https://github.com/kurtern84/MMM-GmailNotifier",
+      "id": "kurtern84/MMM-GmailNotifier",
+      "maintainer": "kurtern84",
+      "maintainerURL": "https://github.com/kurtern84",
+      "description": "Displays the user's Gmail profile picture and name, and checks for unread emails in the inbox.",
+      "issues": []
+    },
+    {
       "name": "MMM-google-route",
       "category": "Transport / Travel",
       "url": "https://github.com/mrdis/MMM-google-route",
@@ -3481,9 +3511,9 @@
     {
       "name": "MMM-GoogleMapsTraffic",
       "category": "Transport / Travel",
-      "url": "https://github.com/vicmora/MMM-GoogleMapsTraffic",
-      "id": "vicmora/MMM-GoogleMapsTraffic",
-      "maintainer": "vicmora",
+      "url": "https://github.com/doctorfree/MMM-GoogleMapsTraffic",
+      "id": "doctorfree/MMM-GoogleMapsTraffic",
+      "maintainer": "doctorfree",
       "maintainerURL": "",
       "description": "Displays a Google map, centered at provided coordinates, with traffic information.",
       "issues": []
@@ -5414,6 +5444,16 @@
       "issues": []
     },
     {
+      "name": "MMM-Metar",
+      "category": "Weather",
+      "url": "https://github.com/calonmerc/MMM-Metar",
+      "id": "calonmerc/MMM-Metar",
+      "maintainer": "calonmerc",
+      "maintainerURL": "https://github.com/calonmerc",
+      "description": "Display raw METAR data for airports world-wide. (no formatting)",
+      "issues": []
+    },
+    {
       "name": "MMM-meteoblueCurrent",
       "category": "Weather",
       "url": "https://github.com/Bangee44/MMM-meteoblueCurrent",
@@ -5884,6 +5924,16 @@
       "maintainer": "ianperrin",
       "maintainerURL": "",
       "description": "Create schedules to control when other modules are shown, hidden or dimmed and to send notifications to other modules.",
+      "issues": []
+    },
+    {
+      "name": "MMM-ModulesGroupsRotation",
+      "category": "Utility / IOT / 3rd Party / Integration",
+      "url": "https://github.com/mezderman/MMM-ModulesGroupsRotation",
+      "id": "mezderman/MMM-ModulesGroupsRotation",
+      "maintainer": "mezderman",
+      "maintainerURL": "https://github.com/mezderman",
+      "description": "Group modules and toggle their visibility over time.",
       "issues": []
     },
     {
@@ -6664,13 +6714,14 @@
     },
     {
       "name": "MMM-Netatmo-Thermostat",
-      "category": "Utility / IOT / 3rd Party / Integration",
+      "category": "Outdated Modules",
       "url": "https://github.com/overflOw11/MMM-Netatmo-Thermostat",
       "id": "overflOw11/MMM-Netatmo-Thermostat",
       "maintainer": "overflOw11",
       "maintainerURL": "",
       "description": "Netatmo thermostat module.",
-      "issues": []
+      "issues": [],
+      "outdated": "Abandoned. No reactions to issues since years. API Change and The author no longer has a Netatmo thermostat."
     },
     {
       "name": "MMM-NetatmoThermostat",
@@ -6953,6 +7004,16 @@
       "maintainer": "crice009",
       "maintainerURL": "https://github.com/crice009",
       "description": "Graph daily low and high tide predictions for a given NOAA tide station, and measured data as it is reported. Data is pulled from <a target=\"_blank\" href=\"https://tidesandcurrents.noaa.gov/map/index.html\">NOAA-tidesandcurrents</a>. Data is a free service - no API key.",
+      "issues": []
+    },
+    {
+      "name": "MMM-NOKElectricityForecast",
+      "category": "News / Information",
+      "url": "https://github.com/AndreasHagman/MMM-NOKElectricityForecast",
+      "id": "AndreasHagman/MMM-NOKElectricityForecast",
+      "maintainer": "AndreasHagman",
+      "maintainerURL": "",
+      "description": "Norwegian Electricity Prices Forecast",
       "issues": []
     },
     {
@@ -7239,6 +7300,16 @@
       "issues": []
     },
     {
+      "name": "MMM-OnSpotifyDude",
+      "category": "Entertainment / Misc",
+      "url": "https://github.com/mezderman/MMM-OnSpotifyDude",
+      "id": "mezderman/MMM-OnSpotifyDude",
+      "maintainer": "mezderman",
+      "maintainerURL": "https://github.com/mezderman",
+      "description": "The Dude from The Big Lebowski providing some laid-back commentary on the currently playing song on Spotify. Using OpenAI LLM.",
+      "issues": []
+    },
+    {
       "name": "MMM-OnThisDay",
       "category": "News / Information",
       "url": "https://github.com/nkl-kst/MMM-OnThisDay",
@@ -7330,14 +7401,13 @@
     },
     {
       "name": "MMM-OpenWeatherForecast",
-      "category": "Outdated Modules",
-      "url": "https://github.com/jclarke0000/MMM-OpenWeatherForecast",
-      "id": "jclarke0000/MMM-OpenWeatherForecast",
-      "maintainer": "jclarke0000",
+      "category": "Weather",
+      "url": "https://github.com/Tom-Hirschberger/MMM-OpenWeatherForecast",
+      "id": "Tom-Hirschberger/MMM-OpenWeatherForecast",
+      "maintainer": "Tom-Hirschberger",
       "maintainerURL": "",
       "description": "Displays current, hourly and daily forecast information using data from the OpenWeather One Call API.",
-      "issues": [],
-      "outdated": "Abandoned. No reactions to issues since years. Only works with API version 2.5!"
+      "issues": []
     },
     {
       "name": "MMM-OpenWeatherMapForecast",
@@ -7452,9 +7522,9 @@
     {
       "name": "MMM-pages",
       "category": "Development / Core MagicMirror²",
-      "url": "https://github.com/edward-shen/MMM-pages",
-      "id": "edward-shen/MMM-pages",
-      "maintainer": "edward-shen",
+      "url": "https://github.com/sdetweil/MMM-pages",
+      "id": "sdetweil/MMM-pages",
+      "maintainer": "sdetweil",
       "maintainerURL": "",
       "description": "Rotate out pages of modules.",
       "issues": []
@@ -8094,13 +8164,33 @@
       "issues": []
     },
     {
+      "name": "MMM-PrixCarburants",
+      "category": "Transport / Travel",
+      "url": "https://github.com/bugsounet/MMM-PrixCarburants",
+      "id": "bugsounet/MMM-PrixCarburants",
+      "maintainer": "bugsounet",
+      "maintainerURL": "",
+      "description": "[FR] Ce module permet d'afficher les prix des carburants des stations francaise.<br />[EN] Display fuel prices (France only).",
+      "issues": []
+    },
+    {
       "name": "MMM-profile",
       "category": "Entertainment / Misc",
       "url": "https://github.com/kurtern84/MMM-profile",
       "id": "kurtern84/MMM-profile",
       "maintainer": "kurtern84",
       "maintainerURL": "https://github.com/kurtern84",
-      "description": "A simple module to show a profilpicture with your name and wheater report for your MagicMirrorDisplays Swedish name of the day.",
+      "description": "A simple module to show a profilpicture with your name and wheater report.",
+      "issues": []
+    },
+    {
+      "name": "MMM-ProfileAndWeatherAlerts",
+      "category": "Weather",
+      "url": "https://github.com/kurtern84/MMM-ProfileAndWeatherAlerts",
+      "id": "kurtern84/MMM-ProfileAndWeatherAlerts",
+      "maintainer": "kurtern84",
+      "maintainerURL": "https://github.com/kurtern84",
+      "description": "A module  that shows profile picture (optional), name (optional) and shows extream weather warnings from metalerts 2.0 (Yr.no.).",
       "issues": []
     },
     {
@@ -9795,6 +9885,16 @@
       "issues": []
     },
     {
+      "name": "MMM-Strava-Last-Activity-Map",
+      "category": "Utility / IOT / 3rd Party / Integration",
+      "url": "https://github.com/tylerstambaugh/MMM-Strava-Last-Activity-Map",
+      "id": "tylerstambaugh/MMM-Strava-Last-Activity-Map",
+      "maintainer": "tylerstambaugh",
+      "maintainerURL": "https://github.com/tylerstambaugh",
+      "description": "Shows the map of your last public activity uploaded to <a target=\"_blank\" href=\"https://www.strava.com\">Strava</a> along with the title, date, distance and time.",
+      "issues": []
+    },
+    {
       "name": "MMM-StravaWeekInBike",
       "category": "Utility / IOT / 3rd Party / Integration",
       "url": "https://github.com/tylerstambaugh/MMM-StravaWeekInBike",
@@ -9892,7 +9992,7 @@
       "id": "git-pesche/MMM-SwissSmartUrbanHeatMap",
       "maintainer": "git-pesche",
       "maintainerURL": "",
-      "description": "Allows you to view climatic data from stations of the measuring network <a target=\"_blank\" href=\"https://smart-urban-heat-map.ch/\">Smart Urban Heat Map Bern</a> (temperature &amp; humidity)",
+      "description": "Allows you to view climatic data from stations of the measuring network <a target=\"_blank\" href=\"https://smart-urban-heat-map.ch/\">Smart Urban Heat Map Bern</a> (temperature &amp; humidity).",
       "issues": []
     },
     {
@@ -9952,7 +10052,7 @@
       "id": "dientuki/MMM-SystemInfo",
       "maintainer": "dientuki",
       "maintainerURL": "https://github.com/dientuki",
-      "description": "Get a lot of system stats from a PC board like Cpu usage, ram usage, disk usage, Cpu temperature, volume, internet status and private ip and status, beside that you can configure your WiFi network to create a QR code",
+      "description": "Get a lot of system stats from a PC board like CPU usage, ram usage, disk usage, CPU temperature, volume, internet status and private IP and status, beside that you can configure your WiFi network to create a QR code.",
       "issues": []
     },
     {
@@ -10047,6 +10147,16 @@
       "issues": []
     },
     {
+      "name": "MMM-TelegramBot",
+      "category": "Utility / IOT / 3rd Party / Integration",
+      "url": "https://github.com/MMRIZE/MMM-TelegramBot",
+      "id": "MMRIZE/MMM-TelegramBot",
+      "maintainer": "MMRIZE",
+      "maintainerURL": "",
+      "description": "Interact with your mirror via Telegram. (Revamped)",
+      "issues": []
+    },
+    {
       "name": "EXT-TelegramBot",
       "category": "Extended plugins for MMM-GoogleAssistant",
       "url": "https://github.com/bugsounet/EXT-TelegramBot",
@@ -10063,7 +10173,7 @@
       "id": "doctorfree/MMM-TelegramCommands",
       "maintainer": "doctorfree",
       "maintainerURL": "https://github.com/doctorfree",
-      "description": "Creates and manages Telegram commands to control a MagicMirror² via the MirrorCommandLine tools. MMM-TelegramCommands requires the installation and configuration of the <a target=\"_blank\" href=\"https://github.com/bugsounet/MMM-TelegramBot\">MMM-TelegramBot</a> module and the <a target=\"_blank\" href=\"https://gitlab.com/doctorfree/MirrorCommandLine\">MirrorCommandLine</a> suite of command line utilites for the MagicMirror².",
+      "description": "Creates and manages Telegram commands to control a MagicMirror² via the MirrorCommandLine tools. MMM-TelegramCommands requires the installation and configuration of the <a target=\"_blank\" href=\"https://github.com/MMRIZE/MMM-TelegramBot\">MMM-TelegramBot</a> module and the <a target=\"_blank\" href=\"https://gitlab.com/doctorfree/MirrorCommandLine\">MirrorCommandLine</a> suite of command line utilites for the MagicMirror².",
       "issues": []
     },
     {
@@ -10747,6 +10857,16 @@
       "issues": []
     },
     {
+      "name": "MMM-VALORANTESPORTS-SCHEDULES",
+      "category": "Sports",
+      "url": "https://github.com/xadamxk/MMM-VALORANTESPORTS-SCHEDULES",
+      "id": "xadamxk/MMM-VALORANTESPORTS-SCHEDULES",
+      "maintainer": "xadamxk",
+      "maintainerURL": "https://github.com/xadamxk",
+      "description": "Display Valorant Esports league schedules on your magic mirror.",
+      "issues": []
+    },
+    {
       "name": "MMM-ValuesByNotification",
       "category": "Utility / IOT / 3rd Party / Integration",
       "url": "https://github.com/Tom-Hirschberger/MMM-ValuesByNotification",
@@ -10854,6 +10974,16 @@
       "maintainer": "erikmohn",
       "maintainerURL": "",
       "description": "Display weather data from weather stations available at vindsiden.no (Norway).",
+      "issues": []
+    },
+    {
+      "name": "EXT-VLCServer",
+      "category": "Extended plugins for MMM-GoogleAssistant",
+      "url": "https://github.com/bugsounet/EXT-VLCServer",
+      "id": "bugsounet/EXT-VLCServer",
+      "maintainer": "bugsounet",
+      "maintainerURL": "https://wiki.bugsounet.fr",
+      "description": "This plugin play wanted media on MagicMirror² with VLC.",
       "issues": []
     },
     {
@@ -11177,6 +11307,16 @@
       "maintainer": "PjTewkesbury",
       "maintainerURL": "",
       "description": "Displays HTTP POST webhook notifications on screen and supports templates for alert message formatting.",
+      "issues": []
+    },
+    {
+      "name": "EXT-Website",
+      "category": "Extended plugins for MMM-GoogleAssistant",
+      "url": "https://github.com/bugsounet/EXT-Website",
+      "id": "bugsounet/EXT-Website",
+      "maintainer": "bugsounet",
+      "maintainerURL": "https://wiki.bugsounet.fr",
+      "description": "Application to configure MMM-GoogleAssistant from your browser.",
       "issues": []
     },
     {
