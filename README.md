@@ -1,8 +1,8 @@
 # MagicMirror² Modules List & Checks
 
-_This project is still in a early stage. Feedback and pull requests are very welcome._
+The goals of this project are to **create a nice looking and useful list of modules** for [MagicMirror²](https://magicmirror.builders/) and to **do some rudimentary testing** of the modules (to generate improvement suggestions for the developers).
 
-The goals of this project are to **create a nice list of modules** for [MagicMirror²](https://magicmirror.builders/) and **do some rudimentary tests** on the modules (to generate suggestions for improvements for the developers).
+Feedback and pull requests are very welcome.
 
 ## List of modules
 
@@ -62,7 +62,7 @@ For running the scripts and developing you need:
 
 1. Clone this repository:
    `git clone https://github.com/KristjanESPERANTO/MagicMirror-3rd-Party-Modules`
-2. Change into the created folder:
+2. Change into the created directory:
    `cd MagicMirror-3rd-Party-Modules`
 3. Install dependencies:
    `npm install`
