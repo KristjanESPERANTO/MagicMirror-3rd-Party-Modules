@@ -1,43 +1,28 @@
 {
   "name": "magicmirror-3rd-party-modules",
   "version": "0.1.0",
-  "type": "module",
   "description": "This project provides an overview of all MagicMirror² modules and puts the modules through a few tests.",
-  "main": "scripts/create_module_list.js",
-  "directories": {
-    "doc": "docs"
+  "keywords": [
+    "MagicMirror²",
+    "Modules"
+  ],
+  "homepage": "https://github.com/KristjanESPERANTO/MagicMirror-3rd-Party-Modules#readme",
+  "bugs": {
+    "url": "https://github.com/KristjanESPERANTO/MagicMirror-3rd-Party-Modules/issues"
   },
   "repository": {
     "type": "git",
     "url": "https://github.com/KristjanESPERANTO/MagicMirror-3rd-Party-Modules"
   },
-  "keywords": [
-    "MagicMirror²",
-    "Modules"
-  ],
+  "license": "MIT",
   "author": {
     "name": "Kristjan ESPERANTO",
     "url": "https://github.com/KristjanESPERANTO"
   },
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/KristjanESPERANTO/MagicMirror-3rd-Party-Modules/issues"
-  },
-  "homepage": "https://github.com/KristjanESPERANTO/MagicMirror-3rd-Party-Modules#readme",
-  "devDependencies": {
-    "@eslint/js": "^9.6.0",
-    "@stylistic/eslint-plugin": "^2.3.0",
-    "eslint": "^9.6.0",
-    "eslint-plugin-jsonc": "^2.16.0",
-    "eslint-plugin-package-json": "^0.15.0",
-    "husky": "^9.0.11",
-    "jsonc-eslint-parser": "^2.4.0",
-    "lint-staged": "^15.2.7",
-    "markdownlint-cli": "^0.41.0",
-    "prettier": "^3.3.2",
-    "stylelint": "^16.6.1",
-    "stylelint-config-standard": "^36.0.1",
-    "stylelint-prettier": "^5.0.0"
+  "type": "module",
+  "main": "scripts/create_module_list.js",
+  "directories": {
+    "doc": "docs"
   },
   "scripts": {
     "start": "ntl --autocomplete --size 50 --exclude start lint* prepare test automated",
@@ -55,6 +40,34 @@
     "leaveMenu": "",
     "automated": "git fetch origin main && git reset --hard origin/main && git pull && npm run all && python3 scripts/upload.py"
   },
+  "lint-staged": {
+    "*.js": "eslint --cache --fix",
+    "*.css": "stylelint --fix",
+    "*": "prettier --ignore-unknown --write"
+  },
+  "dependencies": {
+    "marked": "^13.0.1",
+    "normalize-package-data": "^6.0.2",
+    "npm-check-updates": "^16.14.20",
+    "ntl": "^5.1.0",
+    "sanitize-html": "^2.13.0",
+    "sharp": "^0.33.4"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.6.0",
+    "@stylistic/eslint-plugin": "^2.3.0",
+    "eslint": "^9.6.0",
+    "eslint-plugin-jsonc": "^2.16.0",
+    "eslint-plugin-package-json": "^0.15.0",
+    "husky": "^9.0.11",
+    "jsonc-eslint-parser": "^2.4.0",
+    "lint-staged": "^15.2.7",
+    "markdownlint-cli": "^0.41.0",
+    "prettier": "^3.3.2",
+    "stylelint": "^16.6.1",
+    "stylelint-config-standard": "^36.0.1",
+    "stylelint-prettier": "^5.0.0"
+  },
   "ntl": {
     "descriptions": {
       "all": "Run all scripts (1 till 5) on all modules. Requires a lot of time and storage space!",
@@ -69,18 +82,5 @@
       "prepare": "husky",
       "leaveMenu": "Leave this menu."
     }
-  },
-  "lint-staged": {
-    "*.js": "eslint --cache --fix",
-    "*.css": "stylelint --fix",
-    "*": "prettier --ignore-unknown --write"
-  },
-  "dependencies": {
-    "marked": "^13.0.1",
-    "normalize-package-data": "^6.0.2",
-    "npm-check-updates": "^16.14.20",
-    "ntl": "^5.1.0",
-    "sanitize-html": "^2.13.0",
-    "sharp": "^0.33.4"
   }
 }
