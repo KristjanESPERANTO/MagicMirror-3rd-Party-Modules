@@ -372,7 +372,7 @@
     "maintainerURL": "",
     "description": "A somewhat RESTful(ish) API.",
     "issues": [],
-    "stars": 20,
+    "stars": 21,
     "license": "MIT"
   },
   {
@@ -574,7 +574,7 @@
     "maintainerURL": "",
     "description": "Display stock prices and charts using Yahoo Finance API.",
     "issues": [],
-    "stars": 37,
+    "stars": 38,
     "license": "MIT"
   },
   {
@@ -587,7 +587,7 @@
     "description": "Easy, hands free Amazon Alexa integration; activated, simply by saying \"Alexa\".",
     "issues": [],
     "outdated": "Abandoned. No reactions to issues since years. The documentation currently available does not work any more (<a href=\"https://github.com/MagicMirrorOrg/MagicMirror/issues/3398\">#3398</a>).",
-    "stars": 155,
+    "stars": 154,
     "license": "MIT"
   },
   {
@@ -600,7 +600,6 @@
     "description": "Change the default Google Assistant background to your own or with animated gifs for each status of the assistant.",
     "issues": [],
     "stars": 1,
-    "hasGithubIssues": false,
     "license": "MIT"
   },
   {

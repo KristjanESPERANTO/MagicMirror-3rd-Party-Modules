@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "2024-07-08T03:30:20.233Z",
+  "lastUpdate": "2024-07-08T15:30:21.536Z",
   "repositories": [
     {
       "id": "rubinho101/MMM-01ZM",
@@ -437,10 +437,10 @@
     },
     {
       "id": "juzim/MMM-Api",
-      "gitHubDataLastUpdate": "2024-06-22T15:30:18.691Z",
+      "gitHubDataLastUpdate": "2024-07-08T15:30:08.551Z",
       "gitHubData": {
         "issues": 2,
-        "stars": 20,
+        "stars": 21,
         "license": "MIT",
         "archived": false,
         "disabled": false,
@@ -451,7 +451,7 @@
     },
     {
       "id": "grenagit/MMM-APOD",
-      "gitHubDataLastUpdate": "2024-06-22T15:30:19.063Z",
+      "gitHubDataLastUpdate": "2024-07-08T15:30:08.956Z",
       "gitHubData": {
         "issues": 0,
         "stars": 13,
@@ -465,9 +465,9 @@
     },
     {
       "id": "ryck/MMM-AQI",
-      "gitHubDataLastUpdate": "2024-06-23T03:30:08.802Z",
+      "gitHubDataLastUpdate": "2024-07-08T15:30:09.363Z",
       "gitHubData": {
-        "issues": 0,
+        "issues": 1,
         "stars": 11,
         "license": "MIT",
         "archived": false,
@@ -479,7 +479,7 @@
     },
     {
       "id": "gpailler/MMM-aqicn",
-      "gitHubDataLastUpdate": "2024-06-23T03:30:09.275Z",
+      "gitHubDataLastUpdate": "2024-07-08T15:30:09.806Z",
       "gitHubData": {
         "issues": 1,
         "stars": 7,
@@ -493,7 +493,7 @@
     },
     {
       "id": "martinburheimtingstad/MMM-AquareaSmartCloud",
-      "gitHubDataLastUpdate": "2024-06-23T03:30:09.736Z",
+      "gitHubDataLastUpdate": "2024-07-08T15:30:10.245Z",
       "gitHubData": {
         "issues": 0,
         "stars": 2,
@@ -507,7 +507,7 @@
     },
     {
       "id": "Dentrax/MMM-ArduPort",
-      "gitHubDataLastUpdate": "2024-06-23T03:30:10.161Z",
+      "gitHubDataLastUpdate": "2024-07-08T15:30:10.696Z",
       "gitHubData": {
         "issues": 7,
         "stars": 17,
@@ -521,7 +521,7 @@
     },
     {
       "id": "cowboysdude/MMM-Astrology",
-      "gitHubDataLastUpdate": "2024-06-23T03:30:10.566Z",
+      "gitHubDataLastUpdate": "2024-07-08T15:30:11.156Z",
       "gitHubData": {
         "issues": 4,
         "stars": 8,
@@ -535,7 +535,7 @@
     },
     {
       "id": "mykle1/MMM-Astronauts",
-      "gitHubDataLastUpdate": "2024-06-23T03:30:10.990Z",
+      "gitHubDataLastUpdate": "2024-07-08T15:30:11.625Z",
       "gitHubData": {
         "issues": 3,
         "stars": 5,
@@ -549,7 +549,7 @@
     },
     {
       "id": "Estanz0/MMM-AT-Bus",
-      "gitHubDataLastUpdate": "2024-06-23T03:30:11.364Z",
+      "gitHubDataLastUpdate": "2024-07-08T15:30:12.035Z",
       "gitHubData": {
         "issues": 1,
         "stars": 1,
@@ -563,7 +563,7 @@
     },
     {
       "id": "Springvar/MMM-AtbSanntid",
-      "gitHubDataLastUpdate": "2024-06-23T03:30:11.816Z",
+      "gitHubDataLastUpdate": "2024-07-08T15:30:12.459Z",
       "gitHubData": {
         "issues": 1,
         "stars": 1,
@@ -577,7 +577,7 @@
     },
     {
       "id": "mykle1/MMM-ATM",
-      "gitHubDataLastUpdate": "2024-06-23T03:30:12.240Z",
+      "gitHubDataLastUpdate": "2024-07-08T15:30:12.906Z",
       "gitHubData": {
         "issues": 1,
         "stars": 7,
@@ -591,7 +591,7 @@
     },
     {
       "id": "relm923/MMM-August-Lock",
-      "gitHubDataLastUpdate": "2024-06-23T03:30:12.660Z",
+      "gitHubDataLastUpdate": "2024-07-08T15:30:13.337Z",
       "gitHubData": {
         "issues": 1,
         "stars": 1,
@@ -605,7 +605,7 @@
     },
     {
       "id": "JockeyDoe/MMM-Autobahn",
-      "gitHubDataLastUpdate": "2024-06-23T03:30:13.002Z",
+      "gitHubDataLastUpdate": "2024-07-08T15:30:13.735Z",
       "gitHubData": {
         "issues": 2,
         "stars": 5,
@@ -619,7 +619,7 @@
     },
     {
       "id": "Fifteen15Studios/MMM-AutoDimmer",
-      "gitHubDataLastUpdate": "2024-06-23T03:30:13.401Z",
+      "gitHubDataLastUpdate": "2024-07-08T15:30:14.163Z",
       "gitHubData": {
         "issues": 1,
         "stars": 27,
@@ -633,7 +633,7 @@
     },
     {
       "id": "blixhavn/MMM-AvfallshentingOslo",
-      "gitHubDataLastUpdate": "2024-06-23T03:30:13.768Z",
+      "gitHubDataLastUpdate": "2024-07-08T15:30:14.579Z",
       "gitHubData": {
         "issues": 1,
         "stars": 1,
@@ -647,7 +647,7 @@
     },
     {
       "id": "stuloh/MMM-aviationwx",
-      "gitHubDataLastUpdate": "2024-06-23T03:30:14.201Z",
+      "gitHubDataLastUpdate": "2024-07-08T15:30:15.051Z",
       "gitHubData": {
         "issues": 6,
         "stars": 4,
@@ -661,7 +661,7 @@
     },
     {
       "id": "kagjerde/MMM-Avinor",
-      "gitHubDataLastUpdate": "2024-06-23T03:30:14.640Z",
+      "gitHubDataLastUpdate": "2024-07-08T15:30:15.541Z",
       "gitHubData": {
         "issues": 1,
         "stars": 0,
@@ -675,10 +675,10 @@
     },
     {
       "id": "lavolp3/MMM-AVStock",
-      "gitHubDataLastUpdate": "2024-06-23T03:30:15.084Z",
+      "gitHubDataLastUpdate": "2024-07-08T15:30:16.004Z",
       "gitHubData": {
         "issues": 3,
-        "stars": 37,
+        "stars": 38,
         "license": "MIT",
         "archived": false,
         "disabled": false,
@@ -689,10 +689,10 @@
     },
     {
       "id": "dolanmiu/MMM-awesome-alexa",
-      "gitHubDataLastUpdate": "2024-06-23T03:30:15.517Z",
+      "gitHubDataLastUpdate": "2024-07-08T15:30:16.428Z",
       "gitHubData": {
         "issues": 67,
-        "stars": 155,
+        "stars": 154,
         "license": "MIT",
         "archived": false,
         "disabled": false,
@@ -703,21 +703,21 @@
     },
     {
       "id": "bugsounet/EXT-Background",
-      "gitHubDataLastUpdate": "2024-06-17T03:30:09.195Z",
+      "gitHubDataLastUpdate": "2024-07-08T15:30:16.875Z",
       "gitHubData": {
-        "issues": 1,
+        "issues": 2,
         "stars": 1,
         "license": "MIT",
         "archived": false,
         "disabled": false,
         "defaultBranch": "master",
-        "has_issues": false,
-        "lastCommit": "2024-03-08T15:02:29Z"
+        "has_issues": true,
+        "lastCommit": "2024-07-01T14:58:55Z"
       }
     },
     {
       "id": "darickc/MMM-BackgroundSlideshow",
-      "gitHubDataLastUpdate": "2024-06-23T03:30:15.909Z",
+      "gitHubDataLastUpdate": "2024-07-08T15:30:17.355Z",
       "gitHubData": {
         "issues": 58,
         "stars": 135,
@@ -731,7 +731,7 @@
     },
     {
       "id": "falafel2222/MMM-BartTimes",
-      "gitHubDataLastUpdate": "2024-06-23T03:30:16.365Z",
+      "gitHubDataLastUpdate": "2024-07-08T15:30:17.812Z",
       "gitHubData": {
         "issues": 0,
         "stars": 1,
@@ -759,7 +759,7 @@
     },
     {
       "id": "stonecrown/MMM-BCFerries",
-      "gitHubDataLastUpdate": "2024-06-23T03:30:16.797Z",
+      "gitHubDataLastUpdate": "2024-07-08T15:30:18.331Z",
       "gitHubData": {
         "issues": 1,
         "stars": 1,
@@ -773,7 +773,7 @@
     },
     {
       "id": "kuitin/MMM-BdxBus",
-      "gitHubDataLastUpdate": "2024-06-23T03:30:17.182Z",
+      "gitHubDataLastUpdate": "2024-07-08T15:30:18.738Z",
       "gitHubData": {
         "issues": 3,
         "stars": 2,
@@ -787,7 +787,7 @@
     },
     {
       "id": "vincep5/MMM-Beestat",
-      "gitHubDataLastUpdate": "2024-06-23T03:30:17.521Z",
+      "gitHubDataLastUpdate": "2024-07-08T15:30:19.149Z",
       "gitHubData": {
         "issues": 1,
         "stars": 5,
@@ -801,7 +801,7 @@
     },
     {
       "id": "ethanwang4/MMM-Bengali",
-      "gitHubDataLastUpdate": "2024-06-23T03:30:17.907Z",
+      "gitHubDataLastUpdate": "2024-07-08T15:30:19.604Z",
       "gitHubData": {
         "issues": 1,
         "stars": 0,
@@ -815,7 +815,7 @@
     },
     {
       "id": "ItsMeBrille/MMM-Bensinpriser",
-      "gitHubDataLastUpdate": "2024-06-23T03:30:18.428Z",
+      "gitHubDataLastUpdate": "2024-07-08T15:30:20.019Z",
       "gitHubData": {
         "issues": 0,
         "stars": 2,
@@ -829,7 +829,7 @@
     },
     {
       "id": "nebulx29/MMM-bergfex",
-      "gitHubDataLastUpdate": "2024-06-23T03:30:18.792Z",
+      "gitHubDataLastUpdate": "2024-07-08T15:30:20.463Z",
       "gitHubData": {
         "issues": 2,
         "stars": 8,
@@ -843,7 +843,7 @@
     },
     {
       "id": "splattner/MMM-bernwordclock",
-      "gitHubDataLastUpdate": "2024-06-23T03:30:19.280Z",
+      "gitHubDataLastUpdate": "2024-07-08T15:30:20.988Z",
       "gitHubData": {
         "issues": 1,
         "stars": 9,
@@ -857,7 +857,7 @@
     },
     {
       "id": "grenagit/MMM-BiathlonResults",
-      "gitHubDataLastUpdate": "2024-06-23T03:30:19.674Z",
+      "gitHubDataLastUpdate": "2024-07-08T15:30:21.484Z",
       "gitHubData": {
         "issues": 0,
         "stars": 2,

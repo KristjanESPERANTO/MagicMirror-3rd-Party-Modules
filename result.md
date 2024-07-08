@@ -1,6 +1,6 @@
 # Result of the module analysis
 
-Last update: 2024-07-08T05:37:44+02:00
+Last update: 2024-07-08T17:37:48+02:00
 
 ## Statistics
 
@@ -3078,12 +3078,13 @@ Last update: 2024-07-08T05:37:44+02:00
 ### [MMM-GoogleAssistant by bugsounet](https://github.com/bugsounet/MMM-GoogleAssistant)
 
 1. Issues are not enabled in the GitHub repository. So users cannot report bugs. Please enable issues in your repo.
-2. Information: There are updates for 5 dependencie(s):
+2. Information: There are updates for 6 dependencie(s):
    - @eslint/js                ^8.57.0  →   ^9.6.0
    - @stylistic/eslint-plugin   ^1.8.1  →   ^2.3.0
    - esbuild                   ^0.22.0  →  ^0.23.0
    - eslint                    ^8.57.0  →   ^9.6.0
    - glob                      ^10.4.2  →  ^10.4.3
+   - pm2                        ^5.4.1  →   ^5.4.2
 
 
 ### [MMM-GoogleAssistant by gauravsacc](https://github.com/gauravsacc/MMM-GoogleAssistant)
@@ -4479,12 +4480,13 @@ Last update: 2024-07-08T05:37:44+02:00
 ### [EXT-Librespot by bugsounet](https://github.com/bugsounet/EXT-Librespot)
 
 1. Issues are not enabled in the GitHub repository. So users cannot report bugs. Please enable issues in your repo.
-2. Information: There are updates for 5 dependencie(s):
+2. Information: There are updates for 6 dependencie(s):
    - @eslint/js                ^8.57.0  →   ^9.6.0
    - @stylistic/eslint-plugin   ^1.8.1  →   ^2.3.0
    - esbuild                   ^0.22.0  →  ^0.23.0
    - eslint                    ^8.57.0  →   ^9.6.0
    - glob                      ^10.4.2  →  ^10.4.3
+   - pm2                        ^5.4.1  →   ^5.4.2
 
 
 ### [MMM-LibrespotJava by l3d00m](https://github.com/l3d00m/MMM-LibrespotJava)
@@ -10210,12 +10212,13 @@ Last update: 2024-07-08T05:37:44+02:00
 
 ### [EXT-VLCServer by bugsounet](https://github.com/bugsounet/EXT-VLCServer)
 
-1. Information: There are updates for 5 dependencie(s):
+1. Information: There are updates for 6 dependencie(s):
    - @eslint/js                ^8.57.0  →   ^9.6.0
    - @stylistic/eslint-plugin   ^1.8.1  →   ^2.3.0
    - esbuild                   ^0.22.0  →  ^0.23.0
    - eslint                    ^8.57.0  →   ^9.6.0
    - glob                      ^10.4.2  →  ^10.4.3
+   - pm2                        ^5.4.1  →   ^5.4.2
 
 
 ### [MMM-VocabularyTrainer by fewieden](https://github.com/fewieden/MMM-VocabularyTrainer)
