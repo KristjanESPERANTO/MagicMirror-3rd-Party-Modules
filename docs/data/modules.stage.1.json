@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "2024-07-01T15:30:06.108Z",
+  "lastUpdate": "2024-07-08T03:30:07.026Z",
   "modules": [
     {
       "name": "MMM-01ZM",
@@ -1444,6 +1444,16 @@
       "issues": []
     },
     {
+      "name": "MMM-ComEdPricing",
+      "category": "Utility / IOT / 3rd Party / Integration",
+      "url": "https://github.com/skruglov2023/MMM-ComEdPricing/",
+      "id": "skruglov2023/MMM-ComEdPricing/",
+      "maintainer": "skruglov2023",
+      "maintainerURL": "",
+      "description": "Displays ComEd 5 Minute and Hourly Average, the above repo (MMM-ComEdPrice) has not been updated in a while.",
+      "issues": []
+    },
+    {
       "name": "MMM-CommandToNotification",
       "category": "Utility / IOT / 3rd Party / Integration",
       "url": "https://github.com/Tom-Hirschberger/MMM-CommandToNotification",
@@ -2110,6 +2120,16 @@
       "maintainer": "aaron64",
       "maintainerURL": "",
       "description": "See your docker swarm running in real time through docker-swarm-visualizer.",
+      "issues": []
+    },
+    {
+      "name": "MMM-Dogbrew",
+      "category": "News / Information",
+      "url": "https://github.com/phpwun/MMM-Dogbrew",
+      "id": "phpwun/MMM-Dogbrew",
+      "maintainer": "phpwun",
+      "maintainerURL": "",
+      "description": "Rewrite of MMM-Brewdog, using new API and more info.",
       "issues": []
     },
     {
@@ -6721,7 +6741,7 @@
       "maintainerURL": "",
       "description": "Netatmo thermostat module.",
       "issues": [],
-      "outdated": "Abandoned. No reactions to issues since years. API Change and The author no longer has a Netatmo thermostat."
+      "outdated": "Abandoned. No reactions to issues since years. API change and the author no longer has a Netatmo thermostat."
     },
     {
       "name": "MMM-NetatmoThermostat",
@@ -7013,7 +7033,7 @@
       "id": "AndreasHagman/MMM-NOKElectricityForecast",
       "maintainer": "AndreasHagman",
       "maintainerURL": "",
-      "description": "Norwegian Electricity Prices Forecast",
+      "description": "Norwegian electricity prices forecast.",
       "issues": []
     },
     {
@@ -9480,6 +9500,16 @@
       "maintainer": "CFenner",
       "maintainerURL": "",
       "description": "Integrate <a target=\"_blank\" href=\"https://www.smappee.com\">Smappee</a>s smart home energy consumption monitor.",
+      "issues": []
+    },
+    {
+      "name": "EXT-SmartHome",
+      "category": "Extended plugins for MMM-GoogleAssistant",
+      "url": "https://github.com/bugsounet/EXT-SmartHome",
+      "id": "bugsounet/EXT-SmartHome",
+      "maintainer": "bugsounet",
+      "maintainerURL": "https://wiki.bugsounet.fr",
+      "description": "Control MMM-GoogleAssistant with your smartphone from Google Home app.",
       "issues": []
     },
     {

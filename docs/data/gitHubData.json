@@ -1,9 +1,9 @@
 {
-  "lastUpdate": "2024-07-01T15:30:20.605Z",
+  "lastUpdate": "2024-07-08T03:30:20.233Z",
   "repositories": [
     {
       "id": "rubinho101/MMM-01ZM",
-      "gitHubDataLastUpdate": "2024-06-22T15:30:07.288Z",
+      "gitHubDataLastUpdate": "2024-07-08T03:30:08.255Z",
       "gitHubData": {
         "issues": 3,
         "stars": 4,
@@ -17,7 +17,7 @@
     },
     {
       "id": "GaryLChew/MMM-1-Second-A-Day",
-      "gitHubDataLastUpdate": "2024-06-22T15:30:07.655Z",
+      "gitHubDataLastUpdate": "2024-07-08T03:30:08.703Z",
       "gitHubData": {
         "issues": 5,
         "stars": 9,
@@ -31,9 +31,9 @@
     },
     {
       "id": "jinserk/MMM-2Day-NOAA-Forecast",
-      "gitHubDataLastUpdate": "2024-06-22T15:30:08.061Z",
+      "gitHubDataLastUpdate": "2024-07-08T03:30:09.119Z",
       "gitHubData": {
-        "issues": 0,
+        "issues": 2,
         "stars": 7,
         "license": "MIT",
         "archived": false,
@@ -45,7 +45,7 @@
     },
     {
       "id": "nigel-daniels/MMM-3Day-Forecast",
-      "gitHubDataLastUpdate": "2024-06-22T15:30:08.434Z",
+      "gitHubDataLastUpdate": "2024-07-08T03:30:09.488Z",
       "gitHubData": {
         "issues": 10,
         "stars": 35,
@@ -59,7 +59,7 @@
     },
     {
       "id": "buge/MMM-AareGuru",
-      "gitHubDataLastUpdate": "2024-06-22T15:30:08.819Z",
+      "gitHubDataLastUpdate": "2024-07-08T03:30:09.919Z",
       "gitHubData": {
         "issues": 0,
         "stars": 11,
@@ -73,7 +73,7 @@
     },
     {
       "id": "j-hiller/MMM-AC-aseag",
-      "gitHubDataLastUpdate": "2024-06-22T15:30:09.305Z",
+      "gitHubDataLastUpdate": "2024-07-08T03:30:10.345Z",
       "gitHubData": {
         "issues": 3,
         "stars": 2,
@@ -87,7 +87,7 @@
     },
     {
       "id": "maxbethge/MMM-AccuWeatherForecastDeluxe",
-      "gitHubDataLastUpdate": "2024-06-22T15:30:09.707Z",
+      "gitHubDataLastUpdate": "2024-07-08T03:30:10.742Z",
       "gitHubData": {
         "issues": 1,
         "stars": 5,
@@ -115,7 +115,7 @@
     },
     {
       "id": "Jopyth/MMM-Advent",
-      "gitHubDataLastUpdate": "2024-06-22T15:30:10.069Z",
+      "gitHubDataLastUpdate": "2024-07-08T03:30:11.094Z",
       "gitHubData": {
         "issues": 2,
         "stars": 12,
@@ -143,7 +143,7 @@
     },
     {
       "id": "PavlenkoM/MMM-air-raid-monitor-ua",
-      "gitHubDataLastUpdate": "2024-06-22T15:30:10.475Z",
+      "gitHubDataLastUpdate": "2024-07-08T03:30:11.492Z",
       "gitHubData": {
         "issues": 1,
         "stars": 7,
@@ -157,7 +157,7 @@
     },
     {
       "id": "ryanzor/MMM-AirbarHelper",
-      "gitHubDataLastUpdate": "2024-06-22T15:30:10.853Z",
+      "gitHubDataLastUpdate": "2024-07-08T03:30:11.885Z",
       "gitHubData": {
         "issues": 5,
         "stars": 6,
@@ -171,7 +171,7 @@
     },
     {
       "id": "mstarzec386/MMM-Airly",
-      "gitHubDataLastUpdate": "2024-06-22T15:30:11.278Z",
+      "gitHubDataLastUpdate": "2024-07-08T03:30:12.273Z",
       "gitHubData": {
         "issues": 4,
         "stars": 1,
@@ -185,7 +185,7 @@
     },
     {
       "id": "nigel-daniels/MMM-AirNow",
-      "gitHubDataLastUpdate": "2024-06-22T15:30:11.759Z",
+      "gitHubDataLastUpdate": "2024-07-08T03:30:12.693Z",
       "gitHubData": {
         "issues": 3,
         "stars": 9,
@@ -199,7 +199,7 @@
     },
     {
       "id": "CFenner/MMM-AirQuality",
-      "gitHubDataLastUpdate": "2024-06-22T15:30:12.184Z",
+      "gitHubDataLastUpdate": "2024-07-08T03:30:13.104Z",
       "gitHubData": {
         "issues": 4,
         "stars": 34,
@@ -213,7 +213,7 @@
     },
     {
       "id": "yashatgit/MMM-Airtable",
-      "gitHubDataLastUpdate": "2024-06-22T15:30:12.530Z",
+      "gitHubDataLastUpdate": "2024-07-08T03:30:13.457Z",
       "gitHubData": {
         "issues": 7,
         "stars": 13,
@@ -227,7 +227,7 @@
     },
     {
       "id": "fewieden/MMM-AlarmClock",
-      "gitHubDataLastUpdate": "2024-06-22T15:30:12.976Z",
+      "gitHubDataLastUpdate": "2024-07-08T03:30:13.872Z",
       "gitHubData": {
         "issues": 10,
         "stars": 47,
@@ -241,7 +241,7 @@
     },
     {
       "id": "bugsounet/EXT-Alert",
-      "gitHubDataLastUpdate": "2024-06-17T03:30:08.361Z",
+      "gitHubDataLastUpdate": "2024-07-08T03:30:14.294Z",
       "gitHubData": {
         "issues": 0,
         "stars": 2,
@@ -249,13 +249,13 @@
         "archived": false,
         "disabled": false,
         "defaultBranch": "master",
-        "has_issues": false,
-        "lastCommit": "2024-05-28T18:02:05Z"
+        "has_issues": true,
+        "lastCommit": "2024-07-01T14:58:34Z"
       }
     },
     {
       "id": "MMRIZE/MMM-AlertExt",
-      "gitHubDataLastUpdate": "2024-06-17T03:30:08.829Z",
+      "gitHubDataLastUpdate": "2024-07-08T03:30:14.682Z",
       "gitHubData": {
         "issues": 0,
         "stars": 3,
@@ -269,7 +269,7 @@
     },
     {
       "id": "sakirtemel/MMM-alexa",
-      "gitHubDataLastUpdate": "2024-06-22T15:30:13.350Z",
+      "gitHubDataLastUpdate": "2024-07-08T03:30:15.048Z",
       "gitHubData": {
         "issues": 11,
         "stars": 51,
@@ -283,10 +283,10 @@
     },
     {
       "id": "JoChef2/MMM-AlexaControl",
-      "gitHubDataLastUpdate": "2024-06-22T15:30:14.029Z",
+      "gitHubDataLastUpdate": "2024-07-08T03:30:15.750Z",
       "gitHubData": {
         "issues": 2,
-        "stars": 43,
+        "stars": 44,
         "license": "MIT",
         "archived": false,
         "disabled": false,
@@ -297,7 +297,7 @@
     },
     {
       "id": "shbatm/MMM-AlexaOnOff",
-      "gitHubDataLastUpdate": "2024-06-22T15:30:14.420Z",
+      "gitHubDataLastUpdate": "2024-07-08T03:30:16.124Z",
       "gitHubData": {
         "issues": 1,
         "stars": 17,
@@ -311,7 +311,7 @@
     },
     {
       "id": "retroflex/MMM-AllsvenskanStandings",
-      "gitHubDataLastUpdate": "2024-06-22T15:30:14.888Z",
+      "gitHubDataLastUpdate": "2024-07-08T03:30:16.571Z",
       "gitHubData": {
         "issues": 0,
         "stars": 1,
@@ -325,10 +325,10 @@
     },
     {
       "id": "eric-h-st/MMM-AmbientBrightnessDetection",
-      "gitHubDataLastUpdate": "2024-06-22T15:30:15.253Z",
+      "gitHubDataLastUpdate": "2024-07-08T03:30:16.942Z",
       "gitHubData": {
         "issues": 2,
-        "stars": 10,
+        "stars": 11,
         "license": "MIT",
         "archived": false,
         "disabled": false,
@@ -339,7 +339,7 @@
     },
     {
       "id": "diyeverythingvn/MMM-AmLich",
-      "gitHubDataLastUpdate": "2024-06-22T15:30:15.742Z",
+      "gitHubDataLastUpdate": "2024-07-08T03:30:17.443Z",
       "gitHubData": {
         "issues": 1,
         "stars": 2,
@@ -353,7 +353,7 @@
     },
     {
       "id": "marcomerens/anniversarymodule",
-      "gitHubDataLastUpdate": "2024-06-22T15:30:16.236Z",
+      "gitHubDataLastUpdate": "2024-07-08T03:30:17.915Z",
       "gitHubData": {
         "issues": 7,
         "stars": 5,
@@ -367,21 +367,21 @@
     },
     {
       "id": "MMRIZE/MMM-anotherNewsFeed",
-      "gitHubDataLastUpdate": "2024-06-22T15:30:16.643Z",
+      "gitHubDataLastUpdate": "2024-07-08T03:30:18.439Z",
       "gitHubData": {
-        "issues": 1,
+        "issues": 0,
         "stars": 0,
         "license": null,
         "archived": false,
         "disabled": false,
         "defaultBranch": "main",
         "has_issues": true,
-        "lastCommit": "2022-07-01T19:36:02Z"
+        "lastCommit": "2024-07-01T11:54:21Z"
       }
     },
     {
       "id": "codetheweb/MMM-AnyList",
-      "gitHubDataLastUpdate": "2024-06-22T15:30:17.064Z",
+      "gitHubDataLastUpdate": "2024-07-08T03:30:18.835Z",
       "gitHubData": {
         "issues": 16,
         "stars": 11,
@@ -395,7 +395,7 @@
     },
     {
       "id": "JonasTriki/MMM-AoC",
-      "gitHubDataLastUpdate": "2024-06-22T15:30:17.459Z",
+      "gitHubDataLastUpdate": "2024-07-08T03:30:19.311Z",
       "gitHubData": {
         "issues": 0,
         "stars": 3,
@@ -409,7 +409,7 @@
     },
     {
       "id": "FabianNiehaus89/MMM-AOE2-STATS",
-      "gitHubDataLastUpdate": "2024-06-22T15:30:17.854Z",
+      "gitHubDataLastUpdate": "2024-07-08T03:30:19.707Z",
       "gitHubData": {
         "issues": 0,
         "stars": 0,
@@ -423,7 +423,7 @@
     },
     {
       "id": "retroflex/MMM-ApexLegends",
-      "gitHubDataLastUpdate": "2024-06-22T15:30:18.279Z",
+      "gitHubDataLastUpdate": "2024-07-08T03:30:20.144Z",
       "gitHubData": {
         "issues": 1,
         "stars": 1,
