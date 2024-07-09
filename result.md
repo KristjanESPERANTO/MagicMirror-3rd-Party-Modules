@@ -1,6 +1,6 @@
 # Result of the module analysis
 
-Last update: 2024-07-09T05:37:58+02:00
+Last update: 2024-07-09T17:37:53+02:00
 
 ## Statistics
 
@@ -9,7 +9,7 @@ Last update: 2024-07-09T05:37:58+02:00
 | modules analyzed     |   1172   |
 | maintainer           |    655   |
 | modules with issues  |   1160   |
-| issues               |   7248   |
+| issues               |   7247   |
 | modules at github    |   1160   |
 | modules at gitlab    |     11   |
 | modules at bitbucket |      1   |
@@ -816,8 +816,7 @@ Last update: 2024-07-09T05:37:58+02:00
 
 ### [EXT-Browser by bugsounet](https://github.com/bugsounet/EXT-Browser)
 
-1. Issues are not enabled in the GitHub repository. So users cannot report bugs. Please enable issues in your repo.
-2. Information: There are updates for 5 dependencie(s):
+1. Information: There are updates for 5 dependencie(s):
    - @eslint/js                ^8.56.0  →   ^9.6.0
    - @stylistic/eslint-plugin   ^1.8.1  →   ^2.3.0
    - esbuild                   ^0.22.0  →  ^0.23.0

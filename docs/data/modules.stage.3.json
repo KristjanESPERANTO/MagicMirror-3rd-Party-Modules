@@ -1517,11 +1517,8 @@
     "maintainer": "bugsounet",
     "maintainerURL": "https://wiki.bugsounet.fr",
     "description": "Display any internet web page like a real browser in fullscreen.",
-    "issues": [
-      "Issues are not enabled in the GitHub repository. So users cannot report bugs. Please enable issues in your repo."
-    ],
+    "issues": [],
     "stars": 0,
-    "hasGithubIssues": false,
     "license": "MIT",
     "tags": [
       "mmm-googleassistant",
@@ -1602,7 +1599,7 @@
     "maintainerURL": "",
     "description": "Flicker the whole screen to prevent a burn-in effect on your display.",
     "issues": [],
-    "stars": 27,
+    "stars": 28,
     "license": "MIT",
     "tags": [
       "lcd",
@@ -1660,7 +1657,7 @@
       "Issues are not enabled in the GitHub repository. So users cannot report bugs. Please enable issues in your repo.",
       "No image found."
     ],
-    "stars": 3,
+    "stars": 4,
     "hasGithubIssues": false,
     "tags": [
       "buttons"
@@ -1708,7 +1705,7 @@
     "maintainerURL": "",
     "description": "Extended calendar and event view.",
     "issues": [],
-    "stars": 94,
+    "stars": 95,
     "license": "MIT",
     "tags": [
       "calendar"
@@ -1726,7 +1723,7 @@
     "issues": [
       "No image found."
     ],
-    "stars": 46,
+    "stars": 45,
     "license": "MIT",
     "tags": [
       "calendar",
@@ -1744,7 +1741,7 @@
     "issues": [
       "No image found."
     ],
-    "stars": 12,
+    "stars": 13,
     "license": "MIT",
     "tags": [
       "calendar",
@@ -1857,7 +1854,7 @@
     "issues": [
       "There is no `package.json`. We need this file to gather information about the module for the module list page."
     ],
-    "stars": 51,
+    "stars": 52,
     "license": "MIT",
     "image": "screenshots-With calendar title.jpg"
   },

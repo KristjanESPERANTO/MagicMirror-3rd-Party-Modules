@@ -1085,7 +1085,6 @@
     "description": "Display any internet web page like a real browser in fullscreen.",
     "issues": [],
     "stars": 0,
-    "hasGithubIssues": false,
     "license": "MIT"
   },
   {
@@ -1144,7 +1143,7 @@
     "maintainerURL": "",
     "description": "Flicker the whole screen to prevent a burn-in effect on your display.",
     "issues": [],
-    "stars": 27,
+    "stars": 28,
     "license": "MIT"
   },
   {
@@ -1179,7 +1178,7 @@
     "maintainerURL": "",
     "description": "More complicated, but also more powerful: multiple buttons, configurable notifications, different actions on short and long press.",
     "issues": [],
-    "stars": 3,
+    "stars": 4,
     "hasGithubIssues": false
   },
   {
@@ -1215,7 +1214,7 @@
     "maintainerURL": "",
     "description": "Extended calendar and event view.",
     "issues": [],
-    "stars": 94,
+    "stars": 95,
     "license": "MIT"
   },
   {
@@ -1227,7 +1226,7 @@
     "maintainerURL": "",
     "description": "Extended calendar and event view.",
     "issues": [],
-    "stars": 46,
+    "stars": 45,
     "license": "MIT"
   },
   {
@@ -1239,7 +1238,7 @@
     "maintainerURL": "",
     "description": "Extended calendar and event view. Show calendar as agenda.",
     "issues": [],
-    "stars": 12,
+    "stars": 13,
     "license": "MIT"
   },
   {
@@ -1322,7 +1321,7 @@
     "maintainerURL": "",
     "description": "Display a weekly (n days) calendar view.",
     "issues": [],
-    "stars": 51,
+    "stars": 52,
     "license": "MIT"
   },
   {
