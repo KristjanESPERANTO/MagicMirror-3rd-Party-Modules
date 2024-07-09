@@ -1483,11 +1483,8 @@
     "maintainer": "bugsounet",
     "maintainerURL": "https://wiki.bugsounet.fr",
     "description": "Show your current shopping list of Bring!",
-    "issues": [
-      "Issues are not enabled in the GitHub repository. So users cannot report bugs. Please enable issues in your repo."
-    ],
+    "issues": [],
     "stars": 2,
-    "hasGithubIssues": false,
     "license": "MIT",
     "tags": [
       "mmm-googleassistant",
@@ -16996,6 +16993,18 @@
     "hasGithubIssues": false,
     "license": "MIT",
     "image": "wait-times-demo.jpg"
+  },
+  {
+    "name": "MMM-TheSpaceDevs",
+    "category": "Entertainment / Misc",
+    "url": "https://github.com/AlexMNet/MMM-TheSpaceDevs",
+    "id": "AlexMNet/MMM-TheSpaceDevs",
+    "maintainer": "AlexMNet",
+    "maintainerURL": "https://github.com/AlexMNet",
+    "description": "Display upcoming rocket launch data from TheSpaceDevs API in a table or detail view.",
+    "issues": [
+      "There is no `package.json`. We need this file to gather information about the module for the module list page."
+    ]
   },
   {
     "name": "MMM-Thingiverse",

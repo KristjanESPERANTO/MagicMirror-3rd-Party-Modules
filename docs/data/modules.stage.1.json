@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "2024-07-08T15:30:07.282Z",
+  "lastUpdate": "2024-07-09T03:30:07.646Z",
   "modules": [
     {
       "name": "MMM-01ZM",
@@ -10324,6 +10324,16 @@
       "maintainer": "vita10gy",
       "maintainerURL": "https://github.com/vita10gy",
       "description": "Display wait times and upcoming park hours from theme parks including Disney Parks, Universal Studios, SeaWorld, Six Flags, and dozens more.",
+      "issues": []
+    },
+    {
+      "name": "MMM-TheSpaceDevs",
+      "category": "Entertainment / Misc",
+      "url": "https://github.com/AlexMNet/MMM-TheSpaceDevs",
+      "id": "AlexMNet/MMM-TheSpaceDevs",
+      "maintainer": "AlexMNet",
+      "maintainerURL": "https://github.com/AlexMNet",
+      "description": "Display upcoming rocket launch data from TheSpaceDevs API in a table or detail view.",
       "issues": []
     },
     {

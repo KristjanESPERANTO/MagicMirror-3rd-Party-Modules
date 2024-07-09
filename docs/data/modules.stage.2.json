@@ -1061,7 +1061,6 @@
     "description": "Show your current shopping list of Bring!",
     "issues": [],
     "stars": 2,
-    "hasGithubIssues": false,
     "license": "MIT"
   },
   {
@@ -12230,6 +12229,16 @@
     "stars": 1,
     "hasGithubIssues": false,
     "license": "MIT"
+  },
+  {
+    "name": "MMM-TheSpaceDevs",
+    "category": "Entertainment / Misc",
+    "url": "https://github.com/AlexMNet/MMM-TheSpaceDevs",
+    "id": "AlexMNet/MMM-TheSpaceDevs",
+    "maintainer": "AlexMNet",
+    "maintainerURL": "https://github.com/AlexMNet",
+    "description": "Display upcoming rocket launch data from TheSpaceDevs API in a table or detail view.",
+    "issues": []
   },
   {
     "name": "MMM-Thingiverse",

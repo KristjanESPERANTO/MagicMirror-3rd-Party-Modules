@@ -1522,7 +1522,6 @@
     "description": "Show your current shopping list of Bring!<br /><br />This module has been defined to work only with MMM-GoogleAssistant.",
     "issues": true,
     "stars": 2,
-    "hasGithubIssues": false,
     "license": "MIT",
     "tags": [
       "mmm-googleassistant",
@@ -1530,7 +1529,7 @@
       "google assistant"
     ],
     "image": "Screenshot.jpg",
-    "defaultSortWeight": 4,
+    "defaultSortWeight": 3,
     "lastCommit": "2024-07-01T16:59:14+02:00"
   },
   {
@@ -17144,6 +17143,18 @@
     "image": "wait-times-demo.jpg",
     "defaultSortWeight": 10,
     "lastCommit": "2024-02-06T17:10:34-05:00"
+  },
+  {
+    "name": "MMM-TheSpaceDevs",
+    "category": "Entertainment / Misc",
+    "url": "https://github.com/AlexMNet/MMM-TheSpaceDevs",
+    "id": "AlexMNet/MMM-TheSpaceDevs",
+    "maintainer": "AlexMNet",
+    "maintainerURL": "https://github.com/AlexMNet",
+    "description": "Display upcoming rocket launch data from TheSpaceDevs API in a table or detail view.",
+    "issues": true,
+    "defaultSortWeight": 3,
+    "lastCommit": "2024-07-08T18:33:34-07:00"
   },
   {
     "name": "MMM-Thingiverse",

@@ -1,16 +1,16 @@
 # Result of the module analysis
 
-Last update: 2024-07-08T17:37:48+02:00
+Last update: 2024-07-09T05:37:58+02:00
 
 ## Statistics
 
 |                      | number   |
 |:---------------------|:--------:|
-| modules analyzed     |   1171   |
-| maintainer           |    654   |
-| modules with issues  |   1159   |
-| issues               |   7245   |
-| modules at github    |   1159   |
+| modules analyzed     |   1172   |
+| maintainer           |    655   |
+| modules with issues  |   1160   |
+| issues               |   7248   |
+| modules at github    |   1160   |
 | modules at gitlab    |     11   |
 | modules at bitbucket |      1   |
 
@@ -159,7 +159,7 @@ Last update: 2024-07-08T17:37:48+02:00
    - @stylistic/eslint-plugin    ^1.8.1  →    ^2.3.0
    - esbuild                    ^0.22.0  →   ^0.23.0
    - eslint                     ^8.57.0  →    ^9.6.0
-   - glob                       ^10.4.2  →   ^10.4.3
+   - glob                       ^10.4.2  →   ^11.0.0
    - sweetalert2               ^11.12.1  →  ^11.12.2
 
 
@@ -459,7 +459,7 @@ Last update: 2024-07-08T17:37:48+02:00
    - @stylistic/eslint-plugin   ^1.8.1  →   ^2.3.0
    - esbuild                   ^0.22.0  →  ^0.23.0
    - eslint                    ^8.57.0  →   ^9.6.0
-   - glob                      ^10.4.2  →  ^10.4.3
+   - glob                      ^10.4.2  →  ^11.0.0
 
 
 ### [MMM-BackgroundSlideshow by darickc](https://github.com/darickc/MMM-BackgroundSlideshow)
@@ -797,13 +797,12 @@ Last update: 2024-07-08T17:37:48+02:00
 
 ### [EXT-Bring by bugsounet](https://github.com/bugsounet/EXT-Bring)
 
-1. Issues are not enabled in the GitHub repository. So users cannot report bugs. Please enable issues in your repo.
-2. Information: There are updates for 5 dependencie(s):
+1. Information: There are updates for 5 dependencie(s):
    - @eslint/js                ^8.57.0  →   ^9.6.0
    - @stylistic/eslint-plugin   ^1.8.1  →   ^2.3.0
    - esbuild                   ^0.22.0  →  ^0.23.0
    - eslint                    ^8.57.0  →   ^9.6.0
-   - glob                      ^10.4.2  →  ^10.4.3
+   - glob                      ^10.4.2  →  ^11.0.0
 
 
 ### [MMM-bringList by rseidt](https://github.com/rseidt/MMM-bringList)
@@ -823,7 +822,7 @@ Last update: 2024-07-08T17:37:48+02:00
    - @stylistic/eslint-plugin   ^1.8.1  →   ^2.3.0
    - esbuild                   ^0.22.0  →  ^0.23.0
    - eslint                    ^8.56.0  →   ^9.6.0
-   - glob                      ^10.4.2  →  ^10.4.3
+   - glob                      ^10.4.2  →  ^11.0.0
 
 
 ### [MMM-Bubi by balassy](https://github.com/balassy/MMM-Bubi)
@@ -2765,7 +2764,7 @@ Last update: 2024-07-08T17:37:48+02:00
    - @stylistic/eslint-plugin   ^1.8.1  →   ^2.3.0
    - esbuild                   ^0.22.0  →  ^0.23.0
    - eslint                    ^8.57.0  →   ^9.6.0
-   - glob                      ^10.4.2  →  ^10.4.3
+   - glob                      ^10.4.2  →  ^11.0.0
 
 
 ### [MMM-Freebox by bugsounet](https://github.com/bugsounet/MMM-Freebox)
@@ -2795,7 +2794,7 @@ Last update: 2024-07-08T17:37:48+02:00
    - @stylistic/eslint-plugin   ^1.8.1  →   ^2.3.0
    - esbuild                   ^0.22.0  →  ^0.23.0
    - eslint                    ^8.57.0  →   ^9.6.0
-   - glob                      ^10.4.2  →  ^10.4.3
+   - glob                      ^10.4.2  →  ^11.0.0
 
 
 ### [MMM-FrenchHoroscope by Amand-M](https://github.com/Amand-M/MMM-FrenchHoroscope)
@@ -3033,7 +3032,7 @@ Last update: 2024-07-08T17:37:48+02:00
    - @stylistic/eslint-plugin   ^1.8.1  →   ^2.3.0
    - esbuild                   ^0.22.0  →  ^0.23.0
    - eslint                    ^8.57.0  →   ^9.6.0
-   - glob                      ^10.4.2  →  ^10.4.3
+   - glob                      ^10.4.2  →  ^11.0.0
 
 
 ### [MMM-Globe by Eunanibus](https://github.com/Eunanibus/MMM-Globe)
@@ -3083,7 +3082,7 @@ Last update: 2024-07-08T17:37:48+02:00
    - @stylistic/eslint-plugin   ^1.8.1  →   ^2.3.0
    - esbuild                   ^0.22.0  →  ^0.23.0
    - eslint                    ^8.57.0  →   ^9.6.0
-   - glob                      ^10.4.2  →  ^10.4.3
+   - glob                      ^10.4.2  →  ^11.0.0
    - pm2                        ^5.4.1  →   ^5.4.2
 
 
@@ -3256,7 +3255,7 @@ Last update: 2024-07-08T17:37:48+02:00
    - @stylistic/eslint-plugin   ^1.8.1  →   ^2.3.0
    - esbuild                   ^0.22.0  →  ^0.23.0
    - eslint                    ^8.57.0  →   ^9.6.0
-   - glob                      ^10.4.2  →  ^10.4.3
+   - glob                      ^10.4.2  →  ^11.0.0
 
 
 ### [MMM-GPIO-HANDLER by Sjohn21](https://github.com/Sjohn21/MMM-GPIO-HANDLER)
@@ -4028,7 +4027,7 @@ Last update: 2024-07-08T17:37:48+02:00
    - @stylistic/eslint-plugin   ^1.8.1  →   ^2.3.0
    - esbuild                   ^0.22.0  →  ^0.23.0
    - eslint                    ^8.57.0  →   ^9.6.0
-   - glob                      ^10.4.2  →  ^10.4.3
+   - glob                      ^10.4.2  →  ^11.0.0
 
 
 ### [internet-monitor by BrianHepler](https://github.com/BrianHepler/internet-monitor)
@@ -4347,7 +4346,7 @@ Last update: 2024-07-08T17:37:48+02:00
    - @stylistic/eslint-plugin   ^1.8.1  →   ^2.3.0
    - esbuild                   ^0.22.0  →  ^0.23.0
    - eslint                    ^8.57.0  →   ^9.6.0
-   - glob                      ^10.4.2  →  ^10.4.3
+   - glob                      ^10.4.2  →  ^11.0.0
 
 
 ### [KeyDisplayed by l0b5ter](https://github.com/l0b5ter/KeyDisplayed)
@@ -4485,7 +4484,7 @@ Last update: 2024-07-08T17:37:48+02:00
    - @stylistic/eslint-plugin   ^1.8.1  →   ^2.3.0
    - esbuild                   ^0.22.0  →  ^0.23.0
    - eslint                    ^8.57.0  →   ^9.6.0
-   - glob                      ^10.4.2  →  ^10.4.3
+   - glob                      ^10.4.2  →  ^11.0.0
    - pm2                        ^5.4.1  →   ^5.4.2
 
 
@@ -5034,7 +5033,7 @@ Last update: 2024-07-08T17:37:48+02:00
    - @stylistic/eslint-plugin   ^1.8.1  →   ^2.3.0
    - esbuild                   ^0.22.0  →  ^0.23.0
    - eslint                    ^8.57.0  →   ^9.6.0
-   - glob                      ^10.4.2  →  ^10.4.3
+   - glob                      ^10.4.2  →  ^11.0.0
 
 
 ### [MMM-MHZ19 by awitwicki](https://github.com/awitwicki/MMM-MHZ19)
@@ -5800,7 +5799,7 @@ Last update: 2024-07-08T17:37:48+02:00
    - @stylistic/eslint-plugin   ^1.8.1  →   ^2.3.0
    - esbuild                   ^0.22.0  →  ^0.23.0
    - eslint                    ^8.57.0  →   ^9.6.0
-   - glob                      ^10.4.2  →  ^10.4.3
+   - glob                      ^10.4.2  →  ^11.0.0
 
 
 ### [MMM-mvgmunich by mrVragec](https://github.com/mrVragec/MMM-mvgmunich)
@@ -6232,7 +6231,7 @@ Last update: 2024-07-08T17:37:48+02:00
    - @stylistic/eslint-plugin   ^1.8.1  →   ^2.3.0
    - esbuild                   ^0.22.0  →  ^0.23.0
    - eslint                    ^8.57.0  →   ^9.6.0
-   - glob                      ^10.4.2  →  ^10.4.3
+   - glob                      ^10.4.2  →  ^11.0.0
 
 
 ### [MMM-network-signal by PoOwAa](https://github.com/PoOwAa/MMM-network-signal)
@@ -7005,7 +7004,7 @@ Last update: 2024-07-08T17:37:48+02:00
    - @stylistic/eslint-plugin   ^1.8.1  →   ^2.3.0
    - esbuild                   ^0.22.0  →  ^0.23.0
    - eslint                    ^8.57.0  →   ^9.6.0
-   - glob                      ^10.4.2  →  ^10.4.3
+   - glob                      ^10.4.2  →  ^11.0.0
 
 
 ### [MMM-Pages-Screencast by jboucly](https://github.com/jboucly/MMM-Pages-Screencast)
@@ -7206,7 +7205,7 @@ Last update: 2024-07-08T17:37:48+02:00
    - @stylistic/eslint-plugin   ^1.8.1  →   ^2.3.0
    - esbuild                   ^0.22.0  →  ^0.23.0
    - eslint                    ^8.57.0  →   ^9.6.0
-   - glob                      ^10.4.2  →  ^10.4.3
+   - glob                      ^10.4.2  →  ^11.0.0
 
 
 ### [PiDisplaySleep by RpDp-git](https://github.com/RpDp-git/PiDisplaySleep)
@@ -7265,7 +7264,7 @@ Last update: 2024-07-08T17:37:48+02:00
    - @stylistic/eslint-plugin    1.8.1  →    2.3.0
    - esbuild                   ^0.22.0  →  ^0.23.0
    - eslint                    ^8.57.0  →   ^9.6.0
-   - glob                      ^10.4.2  →  ^10.4.3
+   - glob                      ^10.4.2  →  ^11.0.0
 
 
 ### [EXT-Pir by bugsounet](https://github.com/bugsounet/EXT-Pir)
@@ -7276,7 +7275,7 @@ Last update: 2024-07-08T17:37:48+02:00
    - @stylistic/eslint-plugin   ^1.8.1  →   ^2.3.0
    - esbuild                   ^0.22.0  →  ^0.23.0
    - eslint                    ^8.57.0  →   ^9.6.0
-   - glob                      ^10.4.2  →  ^10.4.3
+   - glob                      ^10.4.2  →  ^11.0.0
 
 
 ### [MMM-PIR by mboskamp](https://github.com/mboskamp/MMM-PIR)
@@ -7800,7 +7799,7 @@ Last update: 2024-07-08T17:37:48+02:00
    - @stylistic/eslint-plugin   ^1.8.1  →   ^2.3.0
    - esbuild                   ^0.22.0  →  ^0.23.0
    - eslint                    ^8.57.0  →   ^9.6.0
-   - glob                      ^10.4.2  →  ^10.4.3
+   - glob                      ^10.4.2  →  ^11.0.0
 
 
 ### [MMM-RaiderIO by jwcnewton](https://github.com/jwcnewton/MMM-RaiderIO)
@@ -8346,7 +8345,7 @@ Last update: 2024-07-08T17:37:48+02:00
    - @stylistic/eslint-plugin   ^1.8.1  →   ^2.3.0
    - esbuild                   ^0.22.0  →  ^0.23.0
    - eslint                    ^8.57.0  →   ^9.6.0
-   - glob                      ^10.4.2  →  ^10.4.3
+   - glob                      ^10.4.2  →  ^11.0.0
 
 
 ### [MMM-Sbanken by reidarw](https://github.com/reidarw/MMM-Sbanken)
@@ -8495,7 +8494,7 @@ Last update: 2024-07-08T17:37:48+02:00
    - @stylistic/eslint-plugin   ^1.8.1  →   ^2.3.0
    - esbuild                   ^0.22.0  →  ^0.23.0
    - eslint                    ^8.57.0  →   ^9.6.0
-   - glob                      ^10.4.2  →  ^10.4.3
+   - glob                      ^10.4.2  →  ^11.0.0
 
 
 ### [MMM-SendNotificationButton by ralberth](https://github.com/ralberth/MMM-SendNotificationButton)
@@ -8811,7 +8810,7 @@ Last update: 2024-07-08T17:37:48+02:00
    - @stylistic/eslint-plugin   ^1.8.1  →   ^2.3.0
    - esbuild                   ^0.21.5  →  ^0.23.0
    - eslint                    ^8.57.0  →   ^9.6.0
-   - glob                      ^10.4.2  →  ^10.4.3
+   - glob                      ^10.4.2  →  ^11.0.0
 
 
 ### [MMM-SmartTouch by EbenKouao](https://github.com/EbenKouao/MMM-SmartTouch)
@@ -9062,7 +9061,7 @@ Last update: 2024-07-08T17:37:48+02:00
    - @stylistic/eslint-plugin   ^1.8.1  →   ^2.3.0
    - esbuild                   ^0.22.0  →  ^0.23.0
    - eslint                    ^8.57.0  →   ^9.6.0
-   - glob                      ^10.4.2  →  ^10.4.3
+   - glob                      ^10.4.2  →  ^11.0.0
 
 
 ### [EXT-SpotifyCanvasLyrics by bugsounet](https://github.com/bugsounet/EXT-SpotifyCanvasLyrics)
@@ -9073,7 +9072,7 @@ Last update: 2024-07-08T17:37:48+02:00
    - @stylistic/eslint-plugin   ^1.8.1  →   ^2.3.0
    - esbuild                   ^0.22.0  →  ^0.23.0
    - eslint                    ^8.57.0  →   ^9.6.0
-   - glob                      ^10.4.2  →  ^10.4.3
+   - glob                      ^10.4.2  →  ^11.0.0
 
 
 ### [MMM-SpotifyConnectUI by CatoAntonsen](https://github.com/CatoAntonsen/MMM-SpotifyConnectUI)
@@ -9221,7 +9220,7 @@ Last update: 2024-07-08T17:37:48+02:00
    - @stylistic/eslint-plugin   ^1.8.1  →   ^2.3.0
    - esbuild                   ^0.22.0  →  ^0.23.0
    - eslint                    ^8.57.0  →   ^9.6.0
-   - glob                      ^10.4.2  →  ^10.4.3
+   - glob                      ^10.4.2  →  ^11.0.0
 
 
 ### [MMM-SugarValue by balharrie](https://github.com/balharrie/MMM-SugarValue)
@@ -9579,6 +9578,13 @@ Last update: 2024-07-08T17:37:48+02:00
 8. Typo: Found `MagicMirror2` in file `package.json`: Replace it with `MagicMirror²`.
 9. Recommendation: Found `axios` in file `package.json`: Replace it with built-in fetch.
 10. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
+
+### [MMM-TheSpaceDevs by AlexMNet](https://github.com/AlexMNet/MMM-TheSpaceDevs)
+
+1. There is no `package.json`. We need this file to gather information about the module for the module list page.
+2. Outdated: Found `MichMich/MagicMirror` in file `README.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
+3. Warning: No LICENSE file.
+4. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
 
 ### [MMM-Thingiverse by appdevelopmentandsuch](https://github.com/appdevelopmentandsuch/MMM-Thingiverse)
 
@@ -10060,7 +10066,7 @@ Last update: 2024-07-08T17:37:48+02:00
    - @stylistic/eslint-plugin   ^1.8.1  →   ^2.3.0
    - esbuild                   ^0.22.0  →  ^0.23.0
    - eslint                    ^8.57.0  →   ^9.6.0
-   - glob                      ^10.4.2  →  ^10.4.3
+   - glob                      ^10.4.2  →  ^11.0.0
 
 
 ### [MMM-uptimekuma by MikeBishop](https://github.com/MikeBishop/MMM-uptimekuma)
@@ -10217,7 +10223,7 @@ Last update: 2024-07-08T17:37:48+02:00
    - @stylistic/eslint-plugin   ^1.8.1  →   ^2.3.0
    - esbuild                   ^0.22.0  →  ^0.23.0
    - eslint                    ^8.57.0  →   ^9.6.0
-   - glob                      ^10.4.2  →  ^10.4.3
+   - glob                      ^10.4.2  →  ^11.0.0
    - pm2                        ^5.4.1  →   ^5.4.2
 
 
@@ -10291,7 +10297,7 @@ Last update: 2024-07-08T17:37:48+02:00
    - @stylistic/eslint-plugin   ^1.8.1  →   ^2.3.0
    - esbuild                   ^0.22.0  →  ^0.23.0
    - eslint                    ^8.57.0  →   ^9.6.0
-   - glob                      ^10.4.2  →  ^10.4.3
+   - glob                      ^10.4.2  →  ^11.0.0
 
 
 ### [MMM-volumio-playing by mrdis](https://github.com/mrdis/MMM-volumio-playing)
@@ -10868,7 +10874,7 @@ Last update: 2024-07-08T17:37:48+02:00
    - @stylistic/eslint-plugin   ^1.8.1  →   ^2.3.0
    - esbuild                   ^0.22.0  →  ^0.23.0
    - eslint                    ^8.57.0  →   ^9.6.0
-   - glob                      ^10.4.2  →  ^10.4.3
+   - glob                      ^10.4.2  →  ^11.0.0
 
 
 ### [MMM-YouTube-API by C4TFLY](https://github.com/C4TFLY/MMM-YouTube-API)
@@ -10896,7 +10902,7 @@ Last update: 2024-07-08T17:37:48+02:00
    - @stylistic/eslint-plugin   ^1.8.1  →   ^2.3.0
    - esbuild                   ^0.22.0  →  ^0.23.0
    - eslint                    ^8.57.0  →   ^9.6.0
-   - glob                      ^10.4.2  →  ^10.4.3
+   - glob                      ^10.4.2  →  ^11.0.0
 
 
 ### [MMM-YouTubeWebView by doctorfree](https://gitlab.com/doctorfree/MMM-YouTubeWebView)
