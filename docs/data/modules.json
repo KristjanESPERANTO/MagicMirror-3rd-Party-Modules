@@ -2065,7 +2065,7 @@
     "maintainerURL": "https://github.com/shbatm",
     "description": "Rotate modules, to save space on screen.",
     "issues": false,
-    "stars": 38,
+    "stars": 40,
     "license": "MIT",
     "tags": [
       "carousel",
@@ -2146,7 +2146,7 @@
     "maintainerURL": "",
     "description": "Chart module. This is a simple wrapper for <a target=\"_blank\" href=\"https://www.chartjs.org\">Chart.js</a>.",
     "issues": true,
-    "stars": 8,
+    "stars": 9,
     "license": "MIT",
     "image": ".github-example.jpg",
     "defaultSortWeight": 9,
@@ -9714,7 +9714,7 @@
     "license": "MIT",
     "image": "assets-MMPM-UI-Homepage.jpg",
     "defaultSortWeight": 0,
-    "lastCommit": "2024-06-30T21:06:45-04:00"
+    "lastCommit": "2024-07-09T22:43:30-04:00"
   },
   {
     "name": "MMM-mmpm",
@@ -17153,7 +17153,7 @@
     "description": "Display upcoming rocket launch data from TheSpaceDevs API in a table or detail view.",
     "issues": true,
     "defaultSortWeight": 3,
-    "lastCommit": "2024-07-08T18:33:34-07:00"
+    "lastCommit": "2024-07-09T20:23:11-07:00"
   },
   {
     "name": "MMM-Thingiverse",

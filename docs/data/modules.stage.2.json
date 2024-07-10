@@ -1440,7 +1440,7 @@
     "maintainerURL": "https://github.com/shbatm",
     "description": "Rotate modules, to save space on screen.",
     "issues": [],
-    "stars": 38,
+    "stars": 40,
     "license": "MIT"
   },
   {
@@ -1488,7 +1488,7 @@
     "maintainerURL": "",
     "description": "Chart module. This is a simple wrapper for <a target=\"_blank\" href=\"https://www.chartjs.org\">Chart.js</a>.",
     "issues": [],
-    "stars": 8
+    "stars": 9
   },
   {
     "name": "MMM-Chess-Daily",
