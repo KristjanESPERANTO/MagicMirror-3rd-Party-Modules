@@ -17153,7 +17153,7 @@
     "description": "Display upcoming rocket launch data from TheSpaceDevs API in a table or detail view.",
     "issues": true,
     "defaultSortWeight": 3,
-    "lastCommit": "2024-07-09T20:23:11-07:00"
+    "lastCommit": "2024-07-09T22:42:34-07:00"
   },
   {
     "name": "MMM-Thingiverse",
