@@ -4776,6 +4776,16 @@
     "license": "MIT"
   },
   {
+    "name": "MMM-Hotword2",
+    "category": "Voice Control",
+    "url": "https://github.com/MMRIZE/MMM-Hotword2",
+    "id": "MMRIZE/MMM-Hotword2",
+    "maintainer": "MMRIZE",
+    "maintainerURL": "",
+    "description": "Hotword detector / Voice Commander / Utterance recorder with Picovoice.",
+    "issues": []
+  },
+  {
     "name": "MMM-Hover",
     "category": "Utility / IOT / 3rd Party / Integration",
     "url": "https://github.com/dancj/MMM-Hover",

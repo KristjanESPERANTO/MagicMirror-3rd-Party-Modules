@@ -6658,6 +6658,24 @@
     "lastCommit": "2017-01-30T00:48:52-08:00"
   },
   {
+    "name": "MMM-Hotword2",
+    "category": "Voice Control",
+    "url": "https://github.com/MMRIZE/MMM-Hotword2",
+    "id": "MMRIZE/MMM-Hotword2",
+    "maintainer": "MMRIZE",
+    "maintainerURL": "",
+    "description": "Hotword detector / Voice Commander / Utterance recorder with Picovoice.",
+    "issues": true,
+    "tags": [
+      "hotword",
+      "porcupine"
+    ],
+    "license": "MIT",
+    "image": "screenshot.jpg",
+    "defaultSortWeight": 4,
+    "lastCommit": "2024-07-11T00:50:36+02:00"
+  },
+  {
     "name": "MMM-Hover",
     "category": "Utility / IOT / 3rd Party / Integration",
     "url": "https://github.com/dancj/MMM-Hover",
@@ -16798,8 +16816,8 @@
     "stars": 1,
     "license": "Apache-2.0",
     "image": "preview.jpg",
-    "defaultSortWeight": 9,
-    "lastCommit": "2022-02-20T13:56:28-05:00"
+    "defaultSortWeight": 10,
+    "lastCommit": "2024-07-10T22:11:18-04:00"
   },
   {
     "name": "MMM-TakeAndDrive",
@@ -17153,7 +17171,7 @@
     "description": "Display upcoming rocket launch data from TheSpaceDevs API in a table or detail view.",
     "issues": true,
     "defaultSortWeight": 3,
-    "lastCommit": "2024-07-09T22:42:34-07:00"
+    "lastCommit": "2024-07-10T13:55:38-07:00"
   },
   {
     "name": "MMM-Thingiverse",

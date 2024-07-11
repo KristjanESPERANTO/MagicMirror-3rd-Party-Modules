@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "2024-07-10T15:30:06.358Z",
+  "lastUpdate": "2024-07-11T03:30:08.071Z",
   "modules": [
     {
       "name": "MMM-01ZM",
@@ -4028,6 +4028,16 @@
       "maintainer": "morozgrafix",
       "maintainerURL": "",
       "description": "Displays Daily Horoscope.",
+      "issues": []
+    },
+    {
+      "name": "MMM-Hotword2",
+      "category": "Voice Control",
+      "url": "https://github.com/MMRIZE/MMM-Hotword2",
+      "id": "MMRIZE/MMM-Hotword2",
+      "maintainer": "MMRIZE",
+      "maintainerURL": "",
+      "description": "Hotword detector / Voice Commander / Utterance recorder with Picovoice.",
       "issues": []
     },
     {

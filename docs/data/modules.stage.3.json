@@ -6611,6 +6611,22 @@
     "image": "screenshot.jpg"
   },
   {
+    "name": "MMM-Hotword2",
+    "category": "Voice Control",
+    "url": "https://github.com/MMRIZE/MMM-Hotword2",
+    "id": "MMRIZE/MMM-Hotword2",
+    "maintainer": "MMRIZE",
+    "maintainerURL": "",
+    "description": "Hotword detector / Voice Commander / Utterance recorder with Picovoice.",
+    "issues": [],
+    "tags": [
+      "hotword",
+      "porcupine"
+    ],
+    "license": "MIT",
+    "image": "screenshot.jpg"
+  },
+  {
     "name": "MMM-Hover",
     "category": "Utility / IOT / 3rd Party / Integration",
     "url": "https://github.com/dancj/MMM-Hover",
@@ -16646,7 +16662,10 @@
     "maintainerURL": "",
     "description": "Display METAR and TAF data for airports world-wide.",
     "issues": [
-      "There is no `package.json`. We need this file to gather information about the module for the module list page."
+      "`package.json` issue: No description",
+      "`package.json` issue: No repository field.",
+      "`package.json` issue: No license field.",
+      "There are no keywords in 'package.json'. We would use them as tags on the module list page."
     ],
     "stars": 1,
     "license": "Apache-2.0",

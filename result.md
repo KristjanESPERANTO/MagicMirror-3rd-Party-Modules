@@ -1,16 +1,16 @@
 # Result of the module analysis
 
-Last update: 2024-07-10T17:37:27+02:00
+Last update: 2024-07-11T05:37:31+02:00
 
 ## Statistics
 
 |                      | number   |
 |:---------------------|:--------:|
-| modules analyzed     |   1172   |
+| modules analyzed     |   1173   |
 | maintainer           |    655   |
-| modules with issues  |   1160   |
-| issues               |   7247   |
-| modules at github    |   1160   |
+| modules with issues  |   1161   |
+| issues               |   7254   |
+| modules at github    |   1161   |
 | modules at gitlab    |     11   |
 | modules at bitbucket |      1   |
 
@@ -3076,13 +3076,14 @@ Last update: 2024-07-10T17:37:27+02:00
 ### [MMM-GoogleAssistant by bugsounet](https://github.com/bugsounet/MMM-GoogleAssistant)
 
 1. Issues are not enabled in the GitHub repository. So users cannot report bugs. Please enable issues in your repo.
-2. Information: There are updates for 6 dependencie(s):
-   - @eslint/js                ^8.57.0  →   ^9.6.0
-   - @stylistic/eslint-plugin   ^1.8.1  →   ^2.3.0
-   - esbuild                   ^0.22.0  →  ^0.23.0
-   - eslint                    ^8.57.0  →   ^9.6.0
-   - glob                      ^10.4.2  →  ^11.0.0
-   - pm2                        ^5.4.1  →   ^5.4.2
+2. Information: There are updates for 7 dependencie(s):
+   - @eslint/js                 ^8.57.0  →    ^9.6.0
+   - @grpc/grpc-js             ^1.10.10  →  ^1.10.11
+   - @stylistic/eslint-plugin    ^1.8.1  →    ^2.3.0
+   - esbuild                    ^0.22.0  →   ^0.23.0
+   - eslint                     ^8.57.0  →    ^9.6.0
+   - glob                       ^10.4.2  →   ^11.0.0
+   - pm2                         ^5.4.1  →    ^5.4.2
 
 
 ### [MMM-GoogleAssistant by gauravsacc](https://github.com/gauravsacc/MMM-GoogleAssistant)
@@ -3623,6 +3624,14 @@ Last update: 2024-07-10T17:37:27+02:00
 2. Outdated: Found `MichMich/MagicMirror` in file `README.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
 3. Deprecated: Found `require("request")` in file `node_helper.js`: Replace it with built-in fetch.
 4. Typo: Found `MagicMirror2` in file `package.json`: Replace it with `MagicMirror²`.
+5. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
+
+### [MMM-Hotword2 by MMRIZE](https://github.com/MMRIZE/MMM-Hotword2)
+
+1. Recommendation: Found `new Date()` in file `MMM-Hotword2.js`: Consider replacing it by `new Date(Date.now())`. It's helpfull for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
+2. Recommendation: The README seems not to have an update instruction (the word 'update' is missing). Please add one.
+3. Recommendation: The README seems not to have an install instruction (the words 'install' or 'installation' are missing). Please add one.
+4. Recommendation: Found `new Date()` in file `node_helper.js`: Consider replacing it by `new Date(Date.now())`. It's helpfull for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
 5. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
 
 ### [MMM-Hover by dancj](https://github.com/dancj/MMM-Hover)
@@ -9396,14 +9405,16 @@ Last update: 2024-07-10T17:37:27+02:00
 
 ### [MMM-TAF by imperian](https://github.com/imperian/MMM-TAF)
 
-1. There is no `package.json`. We need this file to gather information about the module for the module list page.
-2. Typo: Found `MagicMirror2` in file `MMM-TAF.js`: Replace it with `MagicMirror²`.
-3. Recommendation: Found `new Date()` in file `MMM-TAF.js`: Consider replacing it by `new Date(Date.now())`. It's helpfull for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
-4. Typo: Found `Magic Mirror` in file `README.md`: Replace it with `MagicMirror²`.
-5. Outdated: Found `MichMich/MagicMirror` in file `README.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
-6. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
-7. Deprecated: Found `require("request")` in file `node_helper.js`: Replace it with built-in fetch.
-8. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
+1. `package.json` issue: No description
+2. `package.json` issue: No repository field.
+3. `package.json` issue: No license field.
+4. There are no keywords in 'package.json'. We would use them as tags on the module list page.
+5. Typo: Found `MagicMirror2` in file `MMM-TAF.js`: Replace it with `MagicMirror²`.
+6. Recommendation: Found `new Date()` in file `MMM-TAF.js`: Consider replacing it by `new Date(Date.now())`. It's helpfull for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
+7. Typo: Found `Magic Mirror` in file `README.md`: Replace it with `MagicMirror²`.
+8. Outdated: Found `MichMich/MagicMirror` in file `README.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
+9. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
+10. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
 
 ### [MMM-TakeAndDrive by sejka](https://github.com/sejka/MMM-TakeAndDrive)
 
