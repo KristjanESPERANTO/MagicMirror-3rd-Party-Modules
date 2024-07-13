@@ -6044,7 +6044,7 @@
     ],
     "image": "examples-HC-SR501-HC-SR501-GPIO4.jpg",
     "defaultSortWeight": 2,
-    "lastCommit": "2024-06-19T18:15:53+02:00"
+    "lastCommit": "2024-07-13T09:59:47+02:00"
   },
   {
     "name": "MMM-gpsd",
@@ -16632,7 +16632,7 @@
     "description": "Allows you to view climatic data from stations of the measuring network <a target=\"_blank\" href=\"https://smart-urban-heat-map.ch/\">Smart Urban Heat Map Bern</a> (temperature &amp; humidity).",
     "issues": true,
     "defaultSortWeight": 3,
-    "lastCommit": "2024-05-12T13:31:12+02:00"
+    "lastCommit": "2024-07-13T09:41:19+02:00"
   },
   {
     "name": "MMM-SwissStationboard",
