@@ -1,6 +1,6 @@
 # Result of the module analysis
 
-Last update: 2024-07-16T05:37:55+02:00
+Last update: 2024-07-16T17:37:35+02:00
 
 ## Statistics
 
@@ -1056,7 +1056,7 @@ Last update: 2024-07-16T05:37:55+02:00
    - ical-generator   ^1.4.3  →   ^7.1.0
    - moment          ^2.23.0  →  ^2.30.1
    - prettier         ^3.0.3  →   ^3.3.3
-   - tsdav            ^2.0.3  →   ^2.0.9
+   - tsdav            ^2.0.3  →   ^2.1.0
 
 
 ### [MMM-CARDS by mykle1](https://github.com/mykle1/MMM-CARDS)
