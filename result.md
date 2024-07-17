@@ -1,6 +1,6 @@
 # Result of the module analysis
 
-Last update: 2024-07-16T17:37:35+02:00
+Last update: 2024-07-17T05:37:35+02:00
 
 ## Statistics
 
@@ -3078,7 +3078,7 @@ Last update: 2024-07-16T17:37:35+02:00
 1. Issues are not enabled in the GitHub repository. So users cannot report bugs. Please enable issues in your repo.
 2. Information: There are updates for 7 dependencie(s):
    - @eslint/js                 ^8.57.0  →   ^9.7.0
-   - @grpc/grpc-js             ^1.10.10  →  ^1.11.0
+   - @grpc/grpc-js             ^1.10.10  →  ^1.11.1
    - @stylistic/eslint-plugin    ^1.8.1  →   ^2.3.0
    - esbuild                    ^0.22.0  →  ^0.23.0
    - eslint                     ^8.57.0  →   ^9.7.0
