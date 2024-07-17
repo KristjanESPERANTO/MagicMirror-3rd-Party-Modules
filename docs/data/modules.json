@@ -19,8 +19,8 @@
       "sds011"
     ],
     "image": "img-MMM-01ZM.jpg",
-    "defaultSortWeight": 3,
-    "lastCommit": "2021-01-04T13:53:39+01:00"
+    "defaultSortWeight": 2,
+    "lastCommit": "2024-07-17T16:08:35+02:00"
   },
   {
     "name": "MMM-1-Second-A-Day",
@@ -12980,6 +12980,18 @@
     "image": ".github-example.jpg",
     "defaultSortWeight": 7,
     "lastCommit": "2020-05-12T19:14:00+02:00"
+  },
+  {
+    "name": "MMM-PingTime",
+    "category": "Utility / IOT / 3rd Party / Integration",
+    "url": "https://github.com/Protonosgit/MMM-PingTime",
+    "id": "Protonosgit/MMM-PingTime",
+    "maintainer": "Protonosgit",
+    "maintainerURL": "",
+    "description": "Show the ping time based on a websocket connection",
+    "issues": true,
+    "defaultSortWeight": 2,
+    "lastCommit": "2024-07-16T16:09:12+02:00"
   },
   {
     "name": "MMM-Pir",

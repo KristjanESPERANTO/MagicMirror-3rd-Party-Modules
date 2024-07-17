@@ -1,16 +1,16 @@
 # Result of the module analysis
 
-Last update: 2024-07-17T05:37:35+02:00
+Last update: 2024-07-17T17:37:39+02:00
 
 ## Statistics
 
 |                      | number   |
 |:---------------------|:--------:|
-| modules analyzed     |   1173   |
-| maintainer           |    655   |
-| modules with issues  |   1161   |
-| issues               |   7254   |
-| modules at github    |   1161   |
+| modules analyzed     |   1174   |
+| maintainer           |    656   |
+| modules with issues  |   1162   |
+| issues               |   7257   |
+| modules at github    |   1162   |
 | modules at gitlab    |     11   |
 | modules at bitbucket |      1   |
 
@@ -18,8 +18,10 @@ Last update: 2024-07-17T05:37:35+02:00
 
 ### [MMM-01ZM by rubinho101](https://github.com/rubinho101/MMM-01ZM)
 
-1. Typo: Found `MagicMirror2` in file `readme.md`: Replace it with `MagicMirror²`.
-2. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
+1. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
+2. Information: There are updates for 1 dependencie(s):
+   - get-json  ^1.0.1  →  ^1.1.0
+
 
 ### [MMM-1-Second-A-Day by GaryLChew](https://github.com/GaryLChew/MMM-1-Second-A-Day)
 
@@ -7263,6 +7265,12 @@ Last update: 2024-07-17T05:37:35+02:00
 4. Outdated: Found `MichMich/MagicMirror` in file `node_helper.js`: Replace it by `MagicMirrorOrg/MagicMirror`.
 5. Typo: Found `MagicMirror2` in file `package.json`: Replace it with `MagicMirror²`.
 6. Recommendation: Replace eslintrc by new flat config.
+
+### [MMM-PingTime by Protonosgit](https://github.com/Protonosgit/MMM-PingTime)
+
+1. There is no `package.json`. We need this file to gather information about the module for the module list page.
+2. Recommendation: The README seems not to have an install instruction (the words 'install' or 'installation' are missing). Please add one.
+3. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
 
 ### [MMM-Pir by bugsounet](https://github.com/bugsounet/MMM-Pir)
 

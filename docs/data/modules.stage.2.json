@@ -9278,6 +9278,16 @@
     "license": "MIT"
   },
   {
+    "name": "MMM-PingTime",
+    "category": "Utility / IOT / 3rd Party / Integration",
+    "url": "https://github.com/Protonosgit/MMM-PingTime",
+    "id": "Protonosgit/MMM-PingTime",
+    "maintainer": "Protonosgit",
+    "maintainerURL": "",
+    "description": "Show the ping time based on a websocket connection",
+    "issues": []
+  },
+  {
     "name": "MMM-Pir",
     "category": "Utility / IOT / 3rd Party / Integration",
     "url": "https://github.com/bugsounet/MMM-Pir",

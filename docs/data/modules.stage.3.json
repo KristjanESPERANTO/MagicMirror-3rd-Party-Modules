@@ -12872,6 +12872,18 @@
     "image": ".github-example.jpg"
   },
   {
+    "name": "MMM-PingTime",
+    "category": "Utility / IOT / 3rd Party / Integration",
+    "url": "https://github.com/Protonosgit/MMM-PingTime",
+    "id": "Protonosgit/MMM-PingTime",
+    "maintainer": "Protonosgit",
+    "maintainerURL": "",
+    "description": "Show the ping time based on a websocket connection",
+    "issues": [
+      "There is no `package.json`. We need this file to gather information about the module for the module list page."
+    ]
+  },
+  {
     "name": "MMM-Pir",
     "category": "Utility / IOT / 3rd Party / Integration",
     "url": "https://github.com/bugsounet/MMM-Pir",

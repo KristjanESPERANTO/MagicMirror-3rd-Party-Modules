@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "2024-07-17T03:30:08.571Z",
+  "lastUpdate": "2024-07-17T15:30:07.765Z",
   "modules": [
     {
       "name": "MMM-01ZM",
@@ -7838,6 +7838,16 @@
       "maintainer": "fewieden",
       "maintainerURL": "",
       "description": "Display status from website/ip's.",
+      "issues": []
+    },
+    {
+      "name": "MMM-PingTime",
+      "category": "Utility / IOT / 3rd Party / Integration",
+      "url": "https://github.com/Protonosgit/MMM-PingTime",
+      "id": "Protonosgit/MMM-PingTime",
+      "maintainer": "Protonosgit",
+      "maintainerURL": "",
+      "description": "Show the ping time based on a websocket connection",
       "issues": []
     },
     {
