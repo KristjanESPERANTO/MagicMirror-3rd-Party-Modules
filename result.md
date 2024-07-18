@@ -1,6 +1,6 @@
 # Result of the module analysis
 
-Last update: 2024-07-18T05:37:33+02:00
+Last update: 2024-07-18T17:37:37+02:00
 
 ## Statistics
 
@@ -8,8 +8,8 @@ Last update: 2024-07-18T05:37:33+02:00
 |:---------------------|:--------:|
 | modules analyzed     |   1174   |
 | maintainer           |    656   |
-| modules with issues  |   1162   |
-| issues               |   7257   |
+| modules with issues  |   1163   |
+| issues               |   7258   |
 | modules at github    |   1162   |
 | modules at gitlab    |     11   |
 | modules at bitbucket |      1   |
@@ -5740,7 +5740,7 @@ Last update: 2024-07-18T05:37:33+02:00
 1. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
 2. Information: There are updates for 2 dependencie(s):
    - jsonpath-plus  5.0.1  →  9.0.0
-   - mqtt           4.3.7  →  5.8.0
+   - mqtt           4.3.7  →  5.8.1
 
 
 ### [MMM-MQTTfloorplan by DMailMan](https://github.com/DMailMan/MMM-MQTTfloorplan)
@@ -7703,6 +7703,23 @@ Last update: 2024-07-18T05:37:33+02:00
 ### [MMM-PublicTransportBerlin by deg0nz](https://github.com/deg0nz/MMM-PublicTransportBerlin)
 
 1. Recommendation: Replace eslintrc by new flat config.
+
+### [MMM-PublicTransportHafas by KristjanESPERANTO](https://github.com/KristjanESPERANTO/MMM-PublicTransportHafas)
+
+1. Information: There are updates for 12 dependencie(s):
+   - @eslint/js                  ^8.57.0  →    ^9.7.0
+   - @stylistic/eslint-plugin     ^2.1.0  →    ^2.3.0
+   - dayjs                      ^1.11.11  →  ^1.11.12
+   - eslint                      ^8.57.0  →    ^9.7.0
+   - globals                     ^15.3.0  →   ^15.8.0
+   - husky                       ^9.0.11  →    ^9.1.1
+   - lint-staged                 ^15.2.2  →   ^15.2.7
+   - markdownlint-cli            ^0.40.0  →   ^0.41.0
+   - prettier                     ^3.2.5  →    ^3.3.3
+   - stylelint                   ^16.5.0  →   ^16.7.0
+   - stylelint-config-standard   ^36.0.0  →   ^36.0.1
+   - stylelint-prettier           ^5.0.0  →    ^5.0.2
+
 
 ### [MMM-PublicTransportVVO by ChristianGeie](https://github.com/ChristianGeie/MMM-PublicTransportVVO)
 

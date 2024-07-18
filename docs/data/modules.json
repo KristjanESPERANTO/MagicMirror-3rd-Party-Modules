@@ -12991,7 +12991,7 @@
     "description": "Show the ping time based on a websocket connection",
     "issues": true,
     "defaultSortWeight": 2,
-    "lastCommit": "2024-07-17T18:21:52+02:00"
+    "lastCommit": "2024-07-18T11:52:16+02:00"
   },
   {
     "name": "MMM-Pir",
@@ -13749,7 +13749,7 @@
     "maintainer": "KristjanESPERANTO",
     "maintainerURL": "",
     "description": "Displays departure information for public transportation in Germany and some other European countries. The <a target=\"_blank\" href=\"https://github.com/public-transport/hafas-client\">hafas-client</a> is used to query the information. The interface of the Deutsche Bahn is used as standard, this includes most of the local networks with buses, trams, etc. However, <a target=\"_blank\" href=\"https://github.com/public-transport/hafas-client/blob/main/p/readme.md\">other hafas interfaces</a> can also be used.",
-    "issues": false,
+    "issues": true,
     "stars": 16,
     "license": "MIT",
     "tags": [
@@ -17183,7 +17183,7 @@
     "description": "Display upcoming rocket launch data from TheSpaceDevs API in a table or detail view.",
     "issues": true,
     "defaultSortWeight": 3,
-    "lastCommit": "2024-07-10T13:55:38-07:00"
+    "lastCommit": "2024-07-17T21:36:17-07:00"
   },
   {
     "name": "MMM-Thingiverse",
