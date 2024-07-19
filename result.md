@@ -1,6 +1,6 @@
 # Result of the module analysis
 
-Last update: 2024-07-19T05:37:54+02:00
+Last update: 2024-07-19T17:37:32+02:00
 
 ## Statistics
 
@@ -162,7 +162,7 @@ Last update: 2024-07-19T05:37:54+02:00
    - esbuild                    ^0.22.0  →   ^0.23.0
    - eslint                     ^8.57.0  →    ^9.7.0
    - glob                       ^10.4.2  →   ^11.0.0
-   - sweetalert2               ^11.12.1  →  ^11.12.2
+   - sweetalert2               ^11.12.1  →  ^11.12.3
 
 
 ### [MMM-AlertExt by MMRIZE](https://github.com/MMRIZE/MMM-AlertExt)
