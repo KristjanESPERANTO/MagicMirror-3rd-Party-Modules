@@ -12400,7 +12400,7 @@
     "description": "A more detailed Oura data display including readiness scores and heart rate data.",
     "issues": true,
     "stars": 3,
-    "defaultSortWeight": 3,
+    "defaultSortWeight": 4,
     "lastCommit": "2022-07-20T06:33:59-04:00"
   },
   {
@@ -16014,8 +16014,8 @@
     "stars": 2,
     "license": "MIT",
     "image": "docs-SolarEdgePv.jpg",
-    "defaultSortWeight": 10,
-    "lastCommit": "2024-04-29T09:33:58+02:00"
+    "defaultSortWeight": 11,
+    "lastCommit": "2024-07-20T13:18:39+02:00"
   },
   {
     "name": "MMM-SolarEdge",

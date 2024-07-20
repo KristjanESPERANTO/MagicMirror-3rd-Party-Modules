@@ -1,6 +1,6 @@
 # Result of the module analysis
 
-Last update: 2024-07-20T05:37:50+02:00
+Last update: 2024-07-20T17:37:43+02:00
 
 ## Statistics
 
@@ -9,7 +9,7 @@ Last update: 2024-07-20T05:37:50+02:00
 | modules analyzed     |   1174   |
 | maintainer           |    656   |
 | modules with issues  |   1163   |
-| issues               |   7258   |
+| issues               |   7259   |
 | modules at github    |   1162   |
 | modules at gitlab    |     11   |
 | modules at bitbucket |      1   |
@@ -8959,8 +8959,9 @@ Last update: 2024-07-20T05:37:50+02:00
 7. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
 8. Recommendation: Found `require("http")` in file `node_helper.js`: Replace "http" by "node:http".
 9. Recommendation: Found `require("https")` in file `node_helper.js`: Replace "https" by "node:https".
-10. Deprecated: Found `"grunt"` in file `package.json`: Grunt is practically unmaintained. Move on to something better.
-11. Recommendation: Replace eslintrc by new flat config.
+10. Recommendation: Found `new Date()` in file `node_helper.js`: Consider replacing it by `new Date(Date.now())`. It's helpfull for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
+11. Deprecated: Found `"grunt"` in file `package.json`: Grunt is practically unmaintained. Move on to something better.
+12. Recommendation: Replace eslintrc by new flat config.
 
 ### [MMM-SolarEdge by bertieuk](https://github.com/bertieuk/MMM-SolarEdge)
 
