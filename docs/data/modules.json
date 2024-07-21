@@ -12991,7 +12991,7 @@
     "description": "Show the ping time based on a websocket connection",
     "issues": true,
     "defaultSortWeight": 2,
-    "lastCommit": "2024-07-18T18:44:14+02:00"
+    "lastCommit": "2024-07-20T19:00:09+02:00"
   },
   {
     "name": "MMM-Pir",
@@ -18011,7 +18011,7 @@
     "stars": 7,
     "license": "MIT",
     "defaultSortWeight": 5,
-    "lastCommit": "2024-07-04T23:06:58-04:00"
+    "lastCommit": "2024-07-20T12:49:46-05:00"
   },
   {
     "name": "MMM-updateFromStdOut",
