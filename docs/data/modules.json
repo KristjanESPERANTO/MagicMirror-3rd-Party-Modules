@@ -68,7 +68,7 @@
     "maintainerURL": "https://github.com/nigel-daniels",
     "description": "Simple display of today, tomorrow &amp; next-day, designed to work with MMM-Weather-Now. Now uses WeatherAPI as Open Weather reduced the free service :( If you installed an older version ( &lt; 6 May 2024 ), please update and get a new api key!",
     "issues": true,
-    "stars": 35,
+    "stars": 36,
     "license": "MIT",
     "tags": [
       "weather",
@@ -14295,7 +14295,7 @@
     "stars": 3,
     "license": "MIT",
     "image": "MMM-RedditKarma example.jpg",
-    "defaultSortWeight": 2,
+    "defaultSortWeight": 3,
     "lastCommit": "2022-07-22T17:20:07-04:00"
   },
   {
