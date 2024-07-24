@@ -1730,7 +1730,7 @@
     "maintainerURL": "",
     "description": "CalDav Parser to convert to iCal format.",
     "issues": true,
-    "stars": 7,
+    "stars": 8,
     "license": "MIT",
     "tags": [
       "caldav"
@@ -1747,7 +1747,7 @@
     "maintainerURL": "",
     "description": "Extended calendar and event view.",
     "issues": true,
-    "stars": 95,
+    "stars": 96,
     "license": "MIT",
     "tags": [
       "calendar"
@@ -1765,7 +1765,7 @@
     "maintainerURL": "",
     "description": "Extended calendar and event view.",
     "issues": true,
-    "stars": 45,
+    "stars": 47,
     "license": "MIT",
     "tags": [
       "calendar",
@@ -11969,6 +11969,24 @@
     "image": "MMM-Oelpreise.jpg",
     "defaultSortWeight": 5,
     "lastCommit": "2023-11-07T12:27:27+01:00"
+  },
+  {
+    "name": "MMM-OLYMPIC-MEDALS",
+    "category": "Sports",
+    "url": "https://github.com/taylornoss/MMM-OLYMPIC-MEDALS",
+    "id": "taylornoss/MMM-OLYMPIC-MEDALS",
+    "maintainer": "taylornoss",
+    "maintainerURL": "https://github.com/taylornoss",
+    "description": "Displays the medals for the Olympic games. Works for both summer and winter Olympics.",
+    "issues": true,
+    "tags": [
+      "olympic",
+      "medal"
+    ],
+    "license": "MIT",
+    "image": "images-Abbreviations.jpg",
+    "defaultSortWeight": 5,
+    "lastCommit": "2024-07-24T10:29:05-04:00"
   },
   {
     "name": "MMM-OlympicGames",

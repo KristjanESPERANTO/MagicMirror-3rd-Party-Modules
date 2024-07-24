@@ -1,16 +1,16 @@
 # Result of the module analysis
 
-Last update: 2024-07-24T05:45:36+02:00
+Last update: 2024-07-24T17:37:51+02:00
 
 ## Statistics
 
 |                      | number   |
 |:---------------------|:--------:|
-| modules analyzed     |   1174   |
-| maintainer           |    656   |
-| modules with issues  |   1163   |
-| issues               |   7259   |
-| modules at github    |   1162   |
+| modules analyzed     |   1175   |
+| maintainer           |    657   |
+| modules with issues  |   1164   |
+| issues               |   7264   |
+| modules at github    |   1163   |
 | modules at gitlab    |     11   |
 | modules at bitbucket |      1   |
 
@@ -6707,6 +6707,14 @@ Last update: 2024-07-24T05:45:36+02:00
 2. Outdated: Found `MichMich/MagicMirror` in file `README.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
 3. Deprecated: Found `require('request')` in file `node_helper.js`: Replace it with built-in fetch.
 4. Outdated: Found `MichMich/MagicMirror` in file `package.json`: Replace it by `MagicMirrorOrg/MagicMirror`.
+5. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
+
+### [MMM-OLYMPIC-MEDALS by taylornoss](https://github.com/taylornoss/MMM-OLYMPIC-MEDALS)
+
+1. Typo: Found `Magic Mirror` in file `MMM-OLYMPIC-MEDALS.js`: Replace it with `MagicMirror²`.
+2. Typo: Found `<sup>2</sup>` in file `README.md`: Replace it with `²`.`.
+3. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
+4. Typo: Found `MagicMirror2` in file `package.json`: Replace it with `MagicMirror²`.
 5. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
 
 ### [MMM-OlympicGames by fewieden](https://github.com/fewieden/MMM-OlympicGames)

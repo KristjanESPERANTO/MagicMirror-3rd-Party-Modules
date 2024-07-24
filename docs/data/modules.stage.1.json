@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "2024-07-24T03:30:07.347Z",
+  "lastUpdate": "2024-07-24T15:30:08.127Z",
   "modules": [
     {
       "name": "MMM-01ZM",
@@ -7217,6 +7217,16 @@
       "maintainer": "eckonator",
       "maintainerURL": "https://github.com/eckonator",
       "description": "The module displays oil prices for the current year based on Chart.js and the API of heizoel24.de.",
+      "issues": []
+    },
+    {
+      "name": "MMM-OLYMPIC-MEDALS",
+      "category": "Sports",
+      "url": "https://github.com/taylornoss/MMM-OLYMPIC-MEDALS",
+      "id": "taylornoss/MMM-OLYMPIC-MEDALS",
+      "maintainer": "taylornoss",
+      "maintainerURL": "https://github.com/taylornoss",
+      "description": "Displays the medals for the Olympic games. Works for both summer and winter Olympics.",
       "issues": []
     },
     {
