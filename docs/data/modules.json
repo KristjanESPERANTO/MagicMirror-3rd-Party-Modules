@@ -1884,7 +1884,7 @@
     "description": "This calendar module functions the same as the default calendar app, but it only displays Today and Tomorrows events.",
     "issues": true,
     "stars": 1,
-    "defaultSortWeight": 8,
+    "defaultSortWeight": 9,
     "lastCommit": "2022-07-23T23:22:57+02:00"
   },
   {
