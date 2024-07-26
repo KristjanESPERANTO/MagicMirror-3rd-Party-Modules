@@ -171,7 +171,7 @@
     "maintainerURL": "",
     "description": "Display trashcollection days of the Afvalwijzer service in the Netherlands.",
     "issues": true,
-    "stars": 4,
+    "stars": 3,
     "license": "MIT",
     "tags": [
       "trashcollection"
