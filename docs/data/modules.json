@@ -2477,7 +2477,7 @@
     "description": "CookieCutter template for generating MagicMirror\u00b2 modules.",
     "issues": true,
     "stars": 3,
-    "defaultSortWeight": 6,
+    "defaultSortWeight": 7,
     "lastCommit": "2022-07-25T23:06:15-05:00"
   },
   {
