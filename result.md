@@ -1,6 +1,6 @@
 # Result of the module analysis
 
-Last update: 2024-07-27T05:37:49+02:00
+Last update: 2024-07-27T17:37:22+02:00
 
 ## Statistics
 
@@ -3078,13 +3078,14 @@ Last update: 2024-07-27T05:37:49+02:00
 ### [MMM-GoogleAssistant by bugsounet](https://github.com/bugsounet/MMM-GoogleAssistant)
 
 1. Issues are not enabled in the GitHub repository. So users cannot report bugs. Please enable issues in your repo.
-2. Information: There are updates for 7 dependencie(s):
+2. Information: There are updates for 8 dependencie(s):
    - @eslint/js                 ^8.57.0  →   ^9.8.0
    - @grpc/grpc-js             ^1.10.10  →  ^1.11.1
    - @stylistic/eslint-plugin    ^1.8.1  →   ^2.3.0
    - esbuild                    ^0.22.0  →  ^0.23.0
    - eslint                     ^8.57.0  →   ^9.8.0
    - glob                       ^10.4.2  →  ^11.0.0
+   - google-auth-library        ^9.11.0  →  ^9.12.0
    - pm2                         ^5.4.1  →   ^5.4.2
 
 
@@ -8846,12 +8847,13 @@ Last update: 2024-07-27T05:37:49+02:00
 
 ### [EXT-SmartHome by bugsounet](https://github.com/bugsounet/EXT-SmartHome)
 
-1. Information: There are updates for 5 dependencie(s):
+1. Information: There are updates for 6 dependencie(s):
    - @eslint/js                ^8.57.0  →   ^9.8.0
    - @stylistic/eslint-plugin   ^1.8.1  →   ^2.3.0
    - esbuild                   ^0.21.5  →  ^0.23.0
    - eslint                    ^8.57.0  →   ^9.8.0
    - glob                      ^10.4.2  →  ^11.0.0
+   - google-auth-library       ^9.11.0  →  ^9.12.0
 
 
 ### [MMM-SmartTouch by EbenKouao](https://github.com/EbenKouao/MMM-SmartTouch)
