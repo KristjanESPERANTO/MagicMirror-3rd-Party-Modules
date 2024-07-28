@@ -1,6 +1,6 @@
 # Result of the module analysis
 
-Last update: 2024-07-28T05:37:34+02:00
+Last update: 2024-07-28T17:37:26+02:00
 
 ## Statistics
 
@@ -9,7 +9,7 @@ Last update: 2024-07-28T05:37:34+02:00
 | modules analyzed     |   1175   |
 | maintainer           |    657   |
 | modules with issues  |   1164   |
-| issues               |   7264   |
+| issues               |   7263   |
 | modules at github    |   1163   |
 | modules at gitlab    |     11   |
 | modules at bitbucket |      1   |
@@ -6726,8 +6726,7 @@ Last update: 2024-07-28T05:37:34+02:00
 4. Recommendation: Found `"node-fetch"` in file `package.json`: Replace it with built-in fetch.
 5. Recommendation: Found `'node-fetch'` in file `bloomberg.js`: Replace it with built-in fetch.
 6. Recommendation: Found `'node-fetch'` in file `nbc.js`: Replace it with built-in fetch.
-7. Recommendation: Found `'node-fetch'` in file `paralympic.js`: Replace it with built-in fetch.
-8. Recommendation: Replace eslintrc by new flat config.
+7. Recommendation: Replace eslintrc by new flat config.
 
 ### [on-this-day by elliefairholm](https://github.com/elliefairholm/on-this-day)
 
