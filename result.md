@@ -1,6 +1,6 @@
 # Result of the module analysis
 
-Last update: 2024-07-29T05:37:33+02:00
+Last update: 2024-07-29T17:37:47+02:00
 
 ## Statistics
 
@@ -7720,11 +7720,11 @@ Last update: 2024-07-29T05:37:33+02:00
    - dayjs                      ^1.11.11  →  ^1.11.12
    - eslint                      ^8.57.0  →    ^9.8.0
    - globals                     ^15.3.0  →   ^15.8.0
-   - husky                       ^9.0.11  →    ^9.1.3
+   - husky                       ^9.0.11  →    ^9.1.4
    - lint-staged                 ^15.2.2  →   ^15.2.7
    - markdownlint-cli            ^0.40.0  →   ^0.41.0
    - prettier                     ^3.2.5  →    ^3.3.3
-   - stylelint                   ^16.5.0  →   ^16.7.0
+   - stylelint                   ^16.5.0  →   ^16.8.0
    - stylelint-config-standard   ^36.0.0  →   ^36.0.1
    - stylelint-prettier           ^5.0.0  →    ^5.0.2
 
