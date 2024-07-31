@@ -1,6 +1,6 @@
 # Result of the module analysis
 
-Last update: 2024-07-31T05:44:29+02:00
+Last update: 2024-07-31T17:37:28+02:00
 
 ## Statistics
 
@@ -9,7 +9,7 @@ Last update: 2024-07-31T05:44:29+02:00
 | modules analyzed     |   1175   |
 | maintainer           |    657   |
 | modules with issues  |   1164   |
-| issues               |   7263   |
+| issues               |   7262   |
 | modules at github    |   1163   |
 | modules at gitlab    |     11   |
 | modules at bitbucket |      1   |
@@ -1489,8 +1489,7 @@ Last update: 2024-07-31T05:44:29+02:00
 
 1. There is no `package.json`. We need this file to gather information about the module for the module list page.
 2. No image found.
-3. Recommendation: Found `new Date()` in file `MMM-CustomElementTime.js`: Consider replacing it by `new Date(Date.now())`. It's helpfull for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
-4. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
+3. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
 
 ### [MMM-CustomMessage by jpcaldwell30](https://github.com/jpcaldwell30/MMM-CustomMessage)
 
