@@ -1,6 +1,6 @@
 # Result of the module analysis
 
-Last update: 2024-07-30T05:37:59+02:00
+Last update: 2024-07-31T05:44:29+02:00
 
 ## Statistics
 
@@ -7724,7 +7724,7 @@ Last update: 2024-07-30T05:37:59+02:00
    - lint-staged                 ^15.2.2  →   ^15.2.7
    - markdownlint-cli            ^0.40.0  →   ^0.41.0
    - prettier                     ^3.2.5  →    ^3.3.3
-   - stylelint                   ^16.5.0  →   ^16.8.0
+   - stylelint                   ^16.5.0  →   ^16.8.1
    - stylelint-config-standard   ^36.0.0  →   ^36.0.1
    - stylelint-prettier           ^5.0.0  →    ^5.0.2
 
