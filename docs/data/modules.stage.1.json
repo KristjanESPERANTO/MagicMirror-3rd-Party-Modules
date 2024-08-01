@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "2024-08-01T03:30:07.685Z",
+  "lastUpdate": "2024-08-01T15:30:07.532Z",
   "modules": [
     {
       "name": "MMM-01ZM",
@@ -7857,7 +7857,7 @@
       "id": "Protonosgit/MMM-PingTime",
       "maintainer": "Protonosgit",
       "maintainerURL": "",
-      "description": "Show the ping time based on a websocket connection",
+      "description": "Show the ping time based on a websocket connection.",
       "issues": []
     },
     {

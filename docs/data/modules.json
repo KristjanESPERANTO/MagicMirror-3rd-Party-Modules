@@ -11131,7 +11131,7 @@
     ],
     "image": ".github-preview.bubbles.jpg",
     "defaultSortWeight": -1,
-    "lastCommit": "2024-07-30T09:59:48+00:00"
+    "lastCommit": "2024-08-01T10:45:06+00:00"
   },
   {
     "name": "MMM-Netatmo-Presence",
@@ -13006,7 +13006,7 @@
     "id": "Protonosgit/MMM-PingTime",
     "maintainer": "Protonosgit",
     "maintainerURL": "",
-    "description": "Show the ping time based on a websocket connection",
+    "description": "Show the ping time based on a websocket connection.",
     "issues": true,
     "defaultSortWeight": 2,
     "lastCommit": "2024-07-31T09:13:37+02:00"
@@ -13757,7 +13757,7 @@
     ],
     "image": "img-MMM-PublicTransport_screenshot.jpg",
     "defaultSortWeight": 0,
-    "lastCommit": "2024-07-01T07:08:11+02:00"
+    "lastCommit": "2024-08-01T09:02:15+02:00"
   },
   {
     "name": "MMM-PublicTransportHafas",

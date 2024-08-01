@@ -9294,7 +9294,7 @@
     "id": "Protonosgit/MMM-PingTime",
     "maintainer": "Protonosgit",
     "maintainerURL": "",
-    "description": "Show the ping time based on a websocket connection",
+    "description": "Show the ping time based on a websocket connection.",
     "issues": []
   },
   {
