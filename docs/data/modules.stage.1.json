@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "2024-07-01T15:30:06.108Z",
+  "lastUpdate": "2024-08-12T20:40:41.864Z",
   "modules": [
     {
       "name": "MMM-01ZM",
@@ -607,9 +607,9 @@
     {
       "name": "MMM-bergfex",
       "category": "Weather",
-      "url": "https://gitlab.com/FatTony404/MMM-bergfex",
-      "id": "FatTony404/MMM-bergfex",
-      "maintainer": "FatTony404",
+      "url": "https://gitlab.com/MajorChris1983/MMM-bergfex",
+      "id": "MajorChris1983/MMM-bergfex",
+      "maintainer": "MajorChris1983",
       "maintainerURL": "",
       "description": "Displays snow reports from bergfex.at, forked version. Countries provided by bergfex.at can be configured and set.",
       "issues": []
@@ -1444,6 +1444,16 @@
       "issues": []
     },
     {
+      "name": "MMM-ComEdPricing",
+      "category": "Utility / IOT / 3rd Party / Integration",
+      "url": "https://github.com/skruglov2023/MMM-ComEdPricing/",
+      "id": "skruglov2023/MMM-ComEdPricing/",
+      "maintainer": "skruglov2023",
+      "maintainerURL": "",
+      "description": "Displays ComEd 5 Minute and Hourly Average, the above repo (MMM-ComEdPrice) has not been updated in a while.",
+      "issues": []
+    },
+    {
       "name": "MMM-CommandToNotification",
       "category": "Utility / IOT / 3rd Party / Integration",
       "url": "https://github.com/Tom-Hirschberger/MMM-CommandToNotification",
@@ -1480,7 +1490,7 @@
       "id": "daterrell/MMM-CountDown",
       "maintainer": "daterrell",
       "maintainerURL": "",
-      "description": "Count down to or up from a datetime .",
+      "description": "Count down to or up from a datetime.",
       "issues": []
     },
     {
@@ -1496,14 +1506,13 @@
     },
     {
       "name": "MMM-CountEvents",
-      "category": "Outdated Modules",
+      "category": "Utility / IOT / 3rd Party / Integration",
       "url": "https://github.com/MMRIZE/MMM-CountEvents",
       "id": "MMRIZE/MMM-CountEvents",
       "maintainer": "MMRIZE",
       "maintainerURL": "",
-      "description": "Countdown or countup for events.",
-      "issues": [],
-      "outdated": "Abandoned. Repo has been archived at 2020-06-10."
+      "description": "Countdown or countup for events. Revamped 2024.",
+      "issues": []
     },
     {
       "name": "MMM-CountUP",
@@ -2110,6 +2119,16 @@
       "maintainer": "aaron64",
       "maintainerURL": "",
       "description": "See your docker swarm running in real time through docker-swarm-visualizer.",
+      "issues": []
+    },
+    {
+      "name": "MMM-Dogbrew",
+      "category": "News / Information",
+      "url": "https://github.com/phpwun/MMM-Dogbrew",
+      "id": "phpwun/MMM-Dogbrew",
+      "maintainer": "phpwun",
+      "maintainerURL": "",
+      "description": "Rewrite of MMM-Brewdog, using new API and more info.",
       "issues": []
     },
     {
@@ -4008,6 +4027,16 @@
       "maintainer": "morozgrafix",
       "maintainerURL": "",
       "description": "Displays Daily Horoscope.",
+      "issues": []
+    },
+    {
+      "name": "MMM-Hotword2",
+      "category": "Voice Control",
+      "url": "https://github.com/MMRIZE/MMM-Hotword2",
+      "id": "MMRIZE/MMM-Hotword2",
+      "maintainer": "MMRIZE",
+      "maintainerURL": "",
+      "description": "Hotword detector / Voice Commander / Utterance recorder with Picovoice.",
       "issues": []
     },
     {
@@ -6013,7 +6042,7 @@
       "id": "yusinv/MMM-Motion-Camera",
       "maintainer": "yusinv",
       "maintainerURL": "",
-      "description": "Show video from motion camera feed .",
+      "description": "Show video from motion camera feed.",
       "issues": []
     },
     {
@@ -6721,7 +6750,7 @@
       "maintainerURL": "",
       "description": "Netatmo thermostat module.",
       "issues": [],
-      "outdated": "Abandoned. No reactions to issues since years. API Change and The author no longer has a Netatmo thermostat."
+      "outdated": "Abandoned. No reactions to issues since years. API change and the author no longer has a Netatmo thermostat."
     },
     {
       "name": "MMM-NetatmoThermostat",
@@ -7013,7 +7042,7 @@
       "id": "AndreasHagman/MMM-NOKElectricityForecast",
       "maintainer": "AndreasHagman",
       "maintainerURL": "",
-      "description": "Norwegian Electricity Prices Forecast",
+      "description": "Norwegian electricity prices forecast.",
       "issues": []
     },
     {
@@ -7187,6 +7216,16 @@
       "maintainer": "eckonator",
       "maintainerURL": "https://github.com/eckonator",
       "description": "The module displays oil prices for the current year based on Chart.js and the API of heizoel24.de.",
+      "issues": []
+    },
+    {
+      "name": "MMM-OLYMPIC-MEDALS",
+      "category": "Sports",
+      "url": "https://github.com/taylornoss/MMM-OLYMPIC-MEDALS",
+      "id": "taylornoss/MMM-OLYMPIC-MEDALS",
+      "maintainer": "taylornoss",
+      "maintainerURL": "https://github.com/taylornoss",
+      "description": "Displays the medals for the Olympic games. Works for both summer and winter Olympics.",
       "issues": []
     },
     {
@@ -7808,6 +7847,16 @@
       "maintainer": "fewieden",
       "maintainerURL": "",
       "description": "Display status from website/ip's.",
+      "issues": []
+    },
+    {
+      "name": "MMM-PingTime",
+      "category": "Utility / IOT / 3rd Party / Integration",
+      "url": "https://github.com/Protonosgit/MMM-PingTime",
+      "id": "Protonosgit/MMM-PingTime",
+      "maintainer": "Protonosgit",
+      "maintainerURL": "",
+      "description": "Show the ping time based on a websocket connection.",
       "issues": []
     },
     {
@@ -8563,16 +8612,6 @@
       "maintainer": "cowboysdude",
       "maintainerURL": "",
       "description": "Displays a new recipe everyday.",
-      "issues": []
-    },
-    {
-      "name": "MMM-RecyclingCalendar",
-      "category": "Utility / IOT / 3rd Party / Integration",
-      "url": "https://gitlab.com/FatTony404/MMM-RecyclingCalendar",
-      "id": "FatTony404/MMM-RecyclingCalendar",
-      "maintainer": "FatTony404",
-      "maintainerURL": "https://gitlab.com/FatTony404",
-      "description": "Displays recycling calendar data from Stadt Zürich, Switzerland.",
       "issues": []
     },
     {
@@ -9469,7 +9508,7 @@
       "id": "sdetweil/MMM-SleepWake",
       "maintainer": "sdetweil",
       "maintainerURL": "",
-      "description": "Use an external source for motion detection, like a web camera .",
+      "description": "Use an external source for motion detection, like a web camera.",
       "issues": []
     },
     {
@@ -9480,6 +9519,16 @@
       "maintainer": "CFenner",
       "maintainerURL": "",
       "description": "Integrate <a target=\"_blank\" href=\"https://www.smappee.com\">Smappee</a>s smart home energy consumption monitor.",
+      "issues": []
+    },
+    {
+      "name": "EXT-SmartHome",
+      "category": "Extended plugins for MMM-GoogleAssistant",
+      "url": "https://github.com/bugsounet/EXT-SmartHome",
+      "id": "bugsounet/EXT-SmartHome",
+      "maintainer": "bugsounet",
+      "maintainerURL": "https://wiki.bugsounet.fr",
+      "description": "Control MMM-GoogleAssistant with your smartphone from Google Home app.",
       "issues": []
     },
     {
@@ -10153,7 +10202,7 @@
       "id": "MMRIZE/MMM-TelegramBot",
       "maintainer": "MMRIZE",
       "maintainerURL": "",
-      "description": "Interact with your mirror via Telegram. (Revamped)",
+      "description": "Interact with your mirror via Telegram. Revamped 2024.",
       "issues": []
     },
     {
@@ -10294,6 +10343,16 @@
       "maintainer": "vita10gy",
       "maintainerURL": "https://github.com/vita10gy",
       "description": "Display wait times and upcoming park hours from theme parks including Disney Parks, Universal Studios, SeaWorld, Six Flags, and dozens more.",
+      "issues": []
+    },
+    {
+      "name": "MMM-TheSpaceDevs",
+      "category": "Entertainment / Misc",
+      "url": "https://github.com/AlexMNet/MMM-TheSpaceDevs",
+      "id": "AlexMNet/MMM-TheSpaceDevs",
+      "maintainer": "AlexMNet",
+      "maintainerURL": "https://github.com/AlexMNet",
+      "description": "Display upcoming rocket launch data from TheSpaceDevs API in a table or detail view.",
       "issues": []
     },
     {
