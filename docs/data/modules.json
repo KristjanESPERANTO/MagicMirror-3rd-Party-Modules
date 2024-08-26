@@ -893,7 +893,7 @@
     "maintainerURL": "",
     "description": "Show fullscreen slideshow in background from images in a local folder. Great for a photo frame.",
     "issues": true,
-    "stars": 136,
+    "stars": 140,
     "license": "MIT",
     "tags": [
       "background",
@@ -1002,7 +1002,7 @@
     "maintainerURL": "https://github.com/ItsMeBrille",
     "description": "Display current fuel prices at your nearest gas station in Norway.",
     "issues": true,
-    "stars": 2,
+    "stars": 3,
     "license": "MIT",
     "tags": [
       "fuel",
@@ -1101,7 +1101,7 @@
     "maintainerURL": "",
     "description": "Display cryptocurrency information from the Binance website.",
     "issues": true,
-    "stars": 2,
+    "stars": 3,
     "defaultSortWeight": 4,
     "lastCommit": "2022-11-05T20:46:22+03:00"
   },
@@ -1150,7 +1150,7 @@
     "maintainerURL": "https://github.com/amitchone",
     "description": "A simple, lightweight birthday reminder - specified either via simple JSON file or in <code>config.js</code>. Supports multiple languages.",
     "issues": true,
-    "stars": 8,
+    "stars": 9,
     "license": "Apache-2.0",
     "image": "example.jpg",
     "defaultSortWeight": 2,
@@ -1783,7 +1783,7 @@
     "maintainerURL": "",
     "description": "Extended calendar and event view. Show calendar as agenda.",
     "issues": true,
-    "stars": 13,
+    "stars": 12,
     "license": "MIT",
     "tags": [
       "calendar",
@@ -1868,7 +1868,7 @@
     "maintainerURL": "",
     "description": "Display current timeline schedules. This is a plugin module for <code>MMM-CalendarExt2</code>.",
     "issues": true,
-    "stars": 16,
+    "stars": 17,
     "license": "MIT",
     "image": "timeline_static.jpg",
     "defaultSortWeight": 2,
@@ -2017,7 +2017,7 @@
     "maintainerURL": "https://github.com/chase-cromwell",
     "description": "Display upcoming assignments from Canvas LMS platform.",
     "issues": true,
-    "stars": 6,
+    "stars": 7,
     "defaultSortWeight": 8,
     "lastCommit": "2021-03-02T17:42:46+00:00"
   },
@@ -2176,7 +2176,7 @@
     "maintainerURL": "",
     "description": "Directly cast from the MagicMirror\u00b2 server to a chromecast.",
     "issues": true,
-    "stars": 42,
+    "stars": 43,
     "license": "MIT",
     "defaultSortWeight": 8,
     "lastCommit": "2023-03-05T20:51:52+01:00"
@@ -2447,7 +2447,7 @@
     ],
     "image": "examples-bash-curl.jpg",
     "defaultSortWeight": 0,
-    "lastCommit": "2024-05-04T08:55:04+02:00"
+    "lastCommit": "2024-08-21T13:27:58+02:00"
   },
   {
     "name": "MMM-connection-status",
@@ -4867,7 +4867,7 @@
     "license": "MIT",
     "image": "data-flights_mapbox.jpg",
     "defaultSortWeight": 3,
-    "lastCommit": "2024-07-28T19:34:56+00:00"
+    "lastCommit": "2024-08-25T20:40:12+00:00"
   },
   {
     "name": "MMM-FlightsAbove",
@@ -5662,7 +5662,7 @@
     ],
     "image": "resources-previewFS.jpg",
     "defaultSortWeight": -1,
-    "lastCommit": "2024-07-01T16:54:21+02:00"
+    "lastCommit": "2024-08-15T14:53:40+02:00"
   },
   {
     "name": "MMM-GoogleAssistant",
@@ -5712,7 +5712,7 @@
     ],
     "image": "screenshot.jpg",
     "defaultSortWeight": 3,
-    "lastCommit": "2024-03-15T11:44:15+01:00"
+    "lastCommit": "2024-08-25T15:28:15+02:00"
   },
   {
     "name": "MMM-GoogleCast",
@@ -5866,8 +5866,8 @@
       "googlephotos"
     ],
     "image": "images-screenshot.jpg",
-    "defaultSortWeight": 4,
-    "lastCommit": "2024-03-19T11:04:45+08:00"
+    "defaultSortWeight": 3,
+    "lastCommit": "2024-08-16T00:55:56+01:00"
   },
   {
     "name": "EXT-GooglePhotos",
@@ -7496,7 +7496,7 @@
     "license": "MIT",
     "image": "data-iss_cartodb.jpg",
     "defaultSortWeight": 2,
-    "lastCommit": "2024-07-28T19:23:25+00:00"
+    "lastCommit": "2024-08-25T20:34:05+00:00"
   },
   {
     "name": "MMM-ISY",
@@ -8266,7 +8266,7 @@
     "stars": 8,
     "license": "ISC",
     "image": "Screenshots-Schematics-Potentiometer.jpg",
-    "defaultSortWeight": 13,
+    "defaultSortWeight": 14,
     "lastCommit": "2022-08-19T23:35:25-04:00"
   },
   {
@@ -9042,7 +9042,7 @@
     "stars": 6,
     "license": "MIT",
     "defaultSortWeight": 4,
-    "lastCommit": "2023-07-15T17:36:02+02:00"
+    "lastCommit": "2024-08-19T10:24:44+02:00"
   },
   {
     "name": "MMM-MercedesMe",
@@ -9680,7 +9680,7 @@
       "tree"
     ],
     "image": "pollen_forecast.jpg",
-    "defaultSortWeight": 7,
+    "defaultSortWeight": 8,
     "lastCommit": "2022-08-13T12:20:39+01:00"
   },
   {
@@ -10336,7 +10336,7 @@
     ],
     "image": "screenshot-horizontal.jpg",
     "defaultSortWeight": 2,
-    "lastCommit": "2024-08-13T00:06:32-07:00"
+    "lastCommit": "2024-08-20T15:43:13-07:00"
   },
   {
     "name": "MMM-mumble",
@@ -10447,7 +10447,7 @@
     ],
     "image": "assets-example.jpg",
     "defaultSortWeight": 2,
-    "lastCommit": "2024-04-09T18:56:34+02:00"
+    "lastCommit": "2024-08-19T09:41:34+02:00"
   },
   {
     "name": "MMM-MyBMW",
@@ -10509,7 +10509,7 @@
     "stars": 1,
     "license": "GPL-3.0",
     "image": "wakeword.jpg",
-    "defaultSortWeight": 3,
+    "defaultSortWeight": 4,
     "lastCommit": "2022-08-25T14:49:28+02:00"
   },
   {
@@ -11136,7 +11136,7 @@
     ],
     "image": ".github-preview.bubbles.jpg",
     "defaultSortWeight": -1,
-    "lastCommit": "2024-08-12T20:09:04+00:00"
+    "lastCommit": "2024-08-23T21:28:53+00:00"
   },
   {
     "name": "MMM-Netatmo-Presence",
@@ -11283,7 +11283,7 @@
     ],
     "image": "screen1.jpg",
     "defaultSortWeight": 5,
-    "lastCommit": "2024-04-25T19:27:40+02:00"
+    "lastCommit": "2024-08-16T16:07:12+02:00"
   },
   {
     "name": "MMM-NewsFeedTicker",
@@ -11435,7 +11435,7 @@
       "nfl"
     ],
     "image": ".github-global.jpg",
-    "defaultSortWeight": 11,
+    "defaultSortWeight": 12,
     "lastCommit": "2022-08-13T06:57:02+02:00"
   },
   {
@@ -12072,7 +12072,7 @@
     ],
     "image": "images-screenshot.jpg",
     "defaultSortWeight": 3,
-    "lastCommit": "2024-06-16T02:28:16+01:00"
+    "lastCommit": "2024-08-16T01:02:29+01:00"
   },
   {
     "name": "MMM-OneTouchReveal",
@@ -12497,8 +12497,8 @@
     "description": "Configure location and visibity of modules on defined pages.",
     "issues": true,
     "stars": 35,
-    "defaultSortWeight": 6,
-    "lastCommit": "2021-02-04T16:57:37-05:00"
+    "defaultSortWeight": 4,
+    "lastCommit": "2024-08-17T11:23:09-04:00"
   },
   {
     "name": "MMM-PageReader",
@@ -13033,7 +13033,7 @@
     ],
     "image": "screenshot-screenshot.jpg",
     "defaultSortWeight": 1,
-    "lastCommit": "2024-07-02T18:01:18+02:00"
+    "lastCommit": "2024-08-24T21:50:15+02:00"
   },
   {
     "name": "EXT-Pir",
@@ -13167,12 +13167,12 @@
   },
   {
     "name": "MMM-PL_WOTD",
-    "category": "Entertainment / Misc",
+    "category": "Education",
     "url": "https://github.com/mjb527/MMM-PL_WOTD",
     "id": "mjb527/MMM-PL_WOTD",
     "maintainer": "mjb527",
     "maintainerURL": "",
-    "description": "Displays a Polish Word of the Day with examples and the English translations.",
+    "description": "Displays a Polish word of the day with examples and the English translations.",
     "issues": true,
     "stars": 0,
     "tags": [
@@ -13180,8 +13180,8 @@
     ],
     "license": "ISC",
     "image": "img-Word-of-the-Day-Example.jpg",
-    "defaultSortWeight": 8,
-    "lastCommit": "2021-03-15T23:10:36-04:00"
+    "defaultSortWeight": 7,
+    "lastCommit": "2024-08-16T15:00:01-04:00"
   },
   {
     "name": "MMM-PlaceInfo",
@@ -13511,8 +13511,8 @@
     "stars": 2,
     "license": "MIT",
     "image": "MMM-PostDelivery-Norway.jpg",
-    "defaultSortWeight": 10,
-    "lastCommit": "2024-01-15T09:44:37+01:00"
+    "defaultSortWeight": 11,
+    "lastCommit": "2024-08-21T12:05:17+02:00"
   },
   {
     "name": "MMM-Postnord",
@@ -13781,7 +13781,7 @@
     ],
     "image": "img-Goerdelerring_all.jpg",
     "defaultSortWeight": 1,
-    "lastCommit": "2024-05-20T12:43:32+02:00"
+    "lastCommit": "2024-08-12T23:21:12+02:00"
   },
   {
     "name": "MMM-PublicTransportVVO",
@@ -13866,7 +13866,7 @@
     "stars": 1,
     "license": "MIT",
     "image": "screenshot.jpg",
-    "defaultSortWeight": 5,
+    "defaultSortWeight": 6,
     "lastCommit": "2022-08-17T09:10:56-07:00"
   },
   {
@@ -13944,6 +13944,18 @@
     "stars": 1,
     "defaultSortWeight": 5,
     "lastCommit": "2020-12-26T19:25:51-08:00"
+  },
+  {
+    "name": "MMM-Quiz",
+    "category": "Entertainment / Misc",
+    "url": "https://github.com/Dennis-Rosenbaum/MMM-Quiz",
+    "id": "Dennis-Rosenbaum/MMM-Quiz",
+    "maintainer": "Dennis-Rosenbaum",
+    "maintainerURL": "",
+    "description": "Add a multiple choice quiz. Random questions are loaded usng the <a target=\"_blank\" href=\"https://the-trivia-api.com/\">Trivia API</a>.",
+    "issues": true,
+    "defaultSortWeight": 2,
+    "lastCommit": "2024-05-14T12:53:23+02:00"
   },
   {
     "name": "MMM-Quotable",
@@ -14553,8 +14565,8 @@
     "stars": 1,
     "license": "MIT",
     "image": "screenshot.jpg",
-    "defaultSortWeight": 6,
-    "lastCommit": "2024-07-23T08:12:38-05:00"
+    "defaultSortWeight": 5,
+    "lastCommit": "2024-08-20T15:11:15-05:00"
   },
   {
     "name": "MMM-RKI-Covid19",
@@ -15601,7 +15613,7 @@
     "license": "MIT",
     "image": "demo_screenshot.jpg",
     "defaultSortWeight": 5,
-    "lastCommit": "2024-04-18T20:11:46+02:00"
+    "lastCommit": "2024-08-13T16:30:31+02:00"
   },
   {
     "name": "MMM-SingleStock",
@@ -16134,7 +16146,7 @@
     ],
     "image": "screenshot.jpg",
     "defaultSortWeight": 3,
-    "lastCommit": "2024-02-24T14:01:55+01:00"
+    "lastCommit": "2024-08-22T11:18:17+01:00"
   },
   {
     "name": "MMM-SORT",
@@ -16541,7 +16553,7 @@
     ],
     "image": "screen.jpg",
     "defaultSortWeight": 8,
-    "lastCommit": "2023-05-01T16:46:24+01:00"
+    "lastCommit": "2024-08-24T17:31:00+01:00"
   },
   {
     "name": "MMM-SunnyPortal",
@@ -17011,7 +17023,7 @@
     ],
     "image": "examples-htu21-htu21.jpg",
     "defaultSortWeight": 1,
-    "lastCommit": "2024-06-19T11:14:15+02:00"
+    "lastCommit": "2024-08-21T13:31:17+02:00"
   },
   {
     "name": "MMM-Tesla",
@@ -17164,7 +17176,7 @@
     "license": "MIT",
     "image": "tube.jpg",
     "defaultSortWeight": 7,
-    "lastCommit": "2023-09-30T15:04:49+02:00"
+    "lastCommit": "2024-08-26T02:31:13+02:00"
   },
   {
     "name": "MMM-ThemeParkWaitTimes",
@@ -17350,7 +17362,7 @@
     ],
     "image": "1x1px.jpg",
     "defaultSortWeight": 5,
-    "lastCommit": "2024-02-15T10:30:21-06:00"
+    "lastCommit": "2024-08-14T13:43:32-05:00"
   },
   {
     "name": "MMM-TomTomCalculateRouteTraffic",
@@ -18428,6 +18440,27 @@
     "lastCommit": "2017-03-26T20:05:46+01:00"
   },
   {
+    "name": "MMM-VoiceCompanion",
+    "category": "Voice Control",
+    "url": "https://github.com/LeonardSEO/MMM-VoiceCompanion",
+    "id": "LeonardSEO/MMM-VoiceCompanion",
+    "maintainer": "LeonardSEO",
+    "maintainerURL": "",
+    "description": "A voice-activated assistant module using OpenAI's Whisper for speech recognition and GPT for natural language processing. This module allows users to interact with their MagicMirror using voice commands, enhancing the smart mirror experience with AI-powered conversations and information retrieval.",
+    "issues": false,
+    "tags": [
+      "voice assistant",
+      "openai",
+      "whisper",
+      "gpt",
+      "porcupine"
+    ],
+    "license": "MIT",
+    "image": "screenshot-logo.jpg",
+    "defaultSortWeight": -1,
+    "lastCommit": "2024-08-22T19:23:16+02:00"
+  },
+  {
     "name": "voicecontrol",
     "category": "Voice Control",
     "url": "https://github.com/alexyak/voicecontrol",
@@ -18769,7 +18802,7 @@
     "stars": 24,
     "license": "MIT",
     "defaultSortWeight": 3,
-    "lastCommit": "2024-03-29T23:13:15+09:00"
+    "lastCommit": "2024-08-26T23:25:29+09:00"
   },
   {
     "name": "MMM-WeatherDependentClothes",
@@ -18893,7 +18926,7 @@
     "license": "MIT",
     "image": "website-assets-img-FavIcon.jpg",
     "defaultSortWeight": 5,
-    "lastCommit": "2024-07-01T17:06:53+02:00"
+    "lastCommit": "2024-08-15T14:53:13+02:00"
   },
   {
     "name": "MMM-WebSpeechTTS",
@@ -19161,7 +19194,7 @@
   },
   {
     "name": "MMM-wordnik",
-    "category": "Utility / IOT / 3rd Party / Integration",
+    "category": "Education",
     "url": "https://github.com/SVendittelli/MMM-wordnik",
     "id": "SVendittelli/MMM-wordnik",
     "maintainer": "SVendittelli",
@@ -19174,7 +19207,7 @@
   },
   {
     "name": "MMM-WordOfTheDay",
-    "category": "Entertainment / Misc",
+    "category": "Education",
     "url": "https://github.com/jmwyds/MMM-WordOfTheDay",
     "id": "jmwyds/MMM-WordOfTheDay",
     "maintainer": "jmwyds",
@@ -19231,6 +19264,20 @@
     "license": "MIT",
     "defaultSortWeight": 9,
     "lastCommit": "2017-10-05T09:49:38+02:00"
+  },
+  {
+    "name": "MMM-WOTD",
+    "category": "Education",
+    "url": "https://github.com/mumblebaj/MMM-WOTD",
+    "id": "mumblebaj/MMM-WOTD",
+    "maintainer": "mumblebaj",
+    "maintainerURL": "",
+    "description": "Yet another word of the day module. The special feature of this module is that you can select multiple languages and it will display as a carousel.",
+    "issues": true,
+    "license": "MIT",
+    "image": "image-1.jpg",
+    "defaultSortWeight": 5,
+    "lastCommit": "2024-02-22T20:47:34+02:00"
   },
   {
     "name": "MMM-WS281X-Server",

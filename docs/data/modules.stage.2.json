@@ -611,7 +611,7 @@
     "maintainerURL": "",
     "description": "Show fullscreen slideshow in background from images in a local folder. Great for a photo frame.",
     "issues": [],
-    "stars": 136,
+    "stars": 140,
     "license": "MIT"
   },
   {
@@ -693,7 +693,7 @@
     "maintainerURL": "https://github.com/ItsMeBrille",
     "description": "Display current fuel prices at your nearest gas station in Norway.",
     "issues": [],
-    "stars": 2,
+    "stars": 3,
     "license": "MIT"
   },
   {
@@ -752,7 +752,7 @@
     "maintainerURL": "",
     "description": "Display cryptocurrency information from the Binance website.",
     "issues": [],
-    "stars": 2
+    "stars": 3
   },
   {
     "name": "MMM-BinaryClock",
@@ -786,7 +786,7 @@
     "maintainerURL": "https://github.com/amitchone",
     "description": "A simple, lightweight birthday reminder - specified either via simple JSON file or in <code>config.js</code>. Supports multiple languages.",
     "issues": [],
-    "stars": 8,
+    "stars": 9,
     "license": "Apache-2.0"
   },
   {
@@ -1238,7 +1238,7 @@
     "maintainerURL": "",
     "description": "Extended calendar and event view. Show calendar as agenda.",
     "issues": [],
-    "stars": 13,
+    "stars": 12,
     "license": "MIT"
   },
   {
@@ -1298,7 +1298,7 @@
     "maintainerURL": "",
     "description": "Display current timeline schedules. This is a plugin module for <code>MMM-CalendarExt2</code>.",
     "issues": [],
-    "stars": 16,
+    "stars": 17,
     "license": "MIT"
   },
   {
@@ -1404,7 +1404,7 @@
     "maintainerURL": "https://github.com/chase-cromwell",
     "description": "Display upcoming assignments from Canvas LMS platform.",
     "issues": [],
-    "stars": 6
+    "stars": 7
   },
   {
     "name": "MMM-CardDavBirthdaysProvider",
@@ -1511,7 +1511,7 @@
     "maintainerURL": "",
     "description": "Directly cast from the MagicMirror² server to a chromecast.",
     "issues": [],
-    "stars": 42,
+    "stars": 43,
     "license": "MIT"
   },
   {
@@ -9397,12 +9397,12 @@
   },
   {
     "name": "MMM-PL_WOTD",
-    "category": "Entertainment / Misc",
+    "category": "Education",
     "url": "https://github.com/mjb527/MMM-PL_WOTD",
     "id": "mjb527/MMM-PL_WOTD",
     "maintainer": "mjb527",
     "maintainerURL": "",
-    "description": "Displays a Polish Word of the Day with examples and the English translations.",
+    "description": "Displays a Polish word of the day with examples and the English translations.",
     "issues": [],
     "stars": 0
   },
@@ -9965,6 +9965,16 @@
     "description": "Displays your Questrade positions.",
     "issues": [],
     "stars": 1
+  },
+  {
+    "name": "MMM-Quiz",
+    "category": "Entertainment / Misc",
+    "url": "https://github.com/Dennis-Rosenbaum/MMM-Quiz",
+    "id": "Dennis-Rosenbaum/MMM-Quiz",
+    "maintainer": "Dennis-Rosenbaum",
+    "maintainerURL": "",
+    "description": "Add a multiple choice quiz. Random questions are loaded usng the <a target=\"_blank\" href=\"https://the-trivia-api.com/\">Trivia API</a>.",
+    "issues": []
   },
   {
     "name": "MMM-Quotable",
@@ -13114,6 +13124,16 @@
     "license": "MIT"
   },
   {
+    "name": "MMM-VoiceCompanion",
+    "category": "Voice Control",
+    "url": "https://github.com/LeonardSEO/MMM-VoiceCompanion",
+    "id": "LeonardSEO/MMM-VoiceCompanion",
+    "maintainer": "LeonardSEO",
+    "maintainerURL": "",
+    "description": "A voice-activated assistant module using OpenAI's Whisper for speech recognition and GPT for natural language processing. This module allows users to interact with their MagicMirror using voice commands, enhancing the smart mirror experience with AI-powered conversations and information retrieval.",
+    "issues": []
+  },
+  {
     "name": "voicecontrol",
     "category": "Voice Control",
     "url": "https://github.com/alexyak/voicecontrol",
@@ -13654,7 +13674,7 @@
   },
   {
     "name": "MMM-wordnik",
-    "category": "Utility / IOT / 3rd Party / Integration",
+    "category": "Education",
     "url": "https://github.com/SVendittelli/MMM-wordnik",
     "id": "SVendittelli/MMM-wordnik",
     "maintainer": "SVendittelli",
@@ -13665,7 +13685,7 @@
   },
   {
     "name": "MMM-WordOfTheDay",
-    "category": "Entertainment / Misc",
+    "category": "Education",
     "url": "https://github.com/jmwyds/MMM-WordOfTheDay",
     "id": "jmwyds/MMM-WordOfTheDay",
     "maintainer": "jmwyds",
@@ -13696,6 +13716,16 @@
     "description": "Displays low and high water time predictions for a given tide station, derived from worldtides.info.",
     "issues": [],
     "stars": 7
+  },
+  {
+    "name": "MMM-WOTD",
+    "category": "Education",
+    "url": "https://github.com/mumblebaj/MMM-WOTD",
+    "id": "mumblebaj/MMM-WOTD",
+    "maintainer": "mumblebaj",
+    "maintainerURL": "",
+    "description": "Yet another word of the day module. The special feature of this module is that you can select multiple languages and it will display as a carousel.",
+    "issues": []
   },
   {
     "name": "MMM-WS281X-Server",

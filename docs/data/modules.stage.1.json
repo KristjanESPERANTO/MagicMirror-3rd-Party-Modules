@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "2024-08-12T20:40:41.864Z",
+  "lastUpdate": "2024-08-26T15:30:07.967Z",
   "modules": [
     {
       "name": "MMM-01ZM",
@@ -7943,12 +7943,12 @@
     },
     {
       "name": "MMM-PL_WOTD",
-      "category": "Entertainment / Misc",
+      "category": "Education",
       "url": "https://github.com/mjb527/MMM-PL_WOTD",
       "id": "mjb527/MMM-PL_WOTD",
       "maintainer": "mjb527",
       "maintainerURL": "",
-      "description": "Displays a Polish Word of the Day with examples and the English translations.",
+      "description": "Displays a Polish word of the day with examples and the English translations.",
       "issues": []
     },
     {
@@ -8422,6 +8422,16 @@
       "maintainer": "Daniel1145",
       "maintainerURL": "",
       "description": "Displays your Questrade positions.",
+      "issues": []
+    },
+    {
+      "name": "MMM-Quiz",
+      "category": "Entertainment / Misc",
+      "url": "https://github.com/Dennis-Rosenbaum/MMM-Quiz",
+      "id": "Dennis-Rosenbaum/MMM-Quiz",
+      "maintainer": "Dennis-Rosenbaum",
+      "maintainerURL": "",
+      "description": "Add a multiple choice quiz. Random questions are loaded usng the <a target=\"_blank\" href=\"https://the-trivia-api.com/\">Trivia API</a>.",
       "issues": []
     },
     {
@@ -11086,6 +11096,16 @@
       "issues": []
     },
     {
+      "name": "MMM-VoiceCompanion",
+      "category": "Voice Control",
+      "url": "https://github.com/LeonardSEO/MMM-VoiceCompanion",
+      "id": "LeonardSEO/MMM-VoiceCompanion",
+      "maintainer": "LeonardSEO",
+      "maintainerURL": "",
+      "description": "A voice-activated assistant module using OpenAI's Whisper for speech recognition and GPT for natural language processing. This module allows users to interact with their MagicMirror using voice commands, enhancing the smart mirror experience with AI-powered conversations and information retrieval.",
+      "issues": []
+    },
+    {
       "name": "voicecontrol",
       "category": "Voice Control",
       "url": "https://github.com/alexyak/voicecontrol",
@@ -11540,7 +11560,7 @@
     },
     {
       "name": "MMM-wordnik",
-      "category": "Utility / IOT / 3rd Party / Integration",
+      "category": "Education",
       "url": "https://github.com/SVendittelli/MMM-wordnik",
       "id": "SVendittelli/MMM-wordnik",
       "maintainer": "SVendittelli",
@@ -11550,7 +11570,7 @@
     },
     {
       "name": "MMM-WordOfTheDay",
-      "category": "Entertainment / Misc",
+      "category": "Education",
       "url": "https://github.com/jmwyds/MMM-WordOfTheDay",
       "id": "jmwyds/MMM-WordOfTheDay",
       "maintainer": "jmwyds",
@@ -11576,6 +11596,16 @@
       "maintainer": "yawnsde",
       "maintainerURL": "",
       "description": "Displays low and high water time predictions for a given tide station, derived from worldtides.info.",
+      "issues": []
+    },
+    {
+      "name": "MMM-WOTD",
+      "category": "Education",
+      "url": "https://github.com/mumblebaj/MMM-WOTD",
+      "id": "mumblebaj/MMM-WOTD",
+      "maintainer": "mumblebaj",
+      "maintainerURL": "",
+      "description": "Yet another word of the day module. The special feature of this module is that you can select multiple languages and it will display as a carousel.",
       "issues": []
     },
     {

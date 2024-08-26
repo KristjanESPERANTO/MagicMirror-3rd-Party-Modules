@@ -861,7 +861,7 @@
     "maintainerURL": "",
     "description": "Show fullscreen slideshow in background from images in a local folder. Great for a photo frame.",
     "issues": [],
-    "stars": 136,
+    "stars": 140,
     "license": "MIT",
     "tags": [
       "background",
@@ -977,7 +977,7 @@
     "maintainerURL": "https://github.com/ItsMeBrille",
     "description": "Display current fuel prices at your nearest gas station in Norway.",
     "issues": [],
-    "stars": 2,
+    "stars": 3,
     "license": "MIT",
     "tags": [
       "fuel",
@@ -1074,7 +1074,7 @@
     "issues": [
       "There is no `package.json`. We need this file to gather information about the module for the module list page."
     ],
-    "stars": 2
+    "stars": 3
   },
   {
     "name": "MMM-BinaryClock",
@@ -1122,7 +1122,7 @@
       "`package.json` issue: No repository field.",
       "There are no keywords in 'package.json'. We would use them as tags on the module list page."
     ],
-    "stars": 8,
+    "stars": 9,
     "license": "Apache-2.0",
     "image": "example.jpg"
   },
@@ -1741,7 +1741,7 @@
     "issues": [
       "No image found."
     ],
-    "stars": 13,
+    "stars": 12,
     "license": "MIT",
     "tags": [
       "calendar",
@@ -1826,7 +1826,7 @@
     "issues": [
       "There is no `package.json`. We need this file to gather information about the module for the module list page."
     ],
-    "stars": 16,
+    "stars": 17,
     "license": "MIT",
     "image": "timeline_static.jpg"
   },
@@ -1973,7 +1973,7 @@
     "issues": [
       "There is no `package.json`. We need this file to gather information about the module for the module list page."
     ],
-    "stars": 6
+    "stars": 7
   },
   {
     "name": "MMM-CardDavBirthdaysProvider",
@@ -2130,7 +2130,7 @@
       "There is no `package.json`. We need this file to gather information about the module for the module list page.",
       "No image found."
     ],
-    "stars": 42,
+    "stars": 43,
     "license": "MIT"
   },
   {
@@ -13055,12 +13055,12 @@
   },
   {
     "name": "MMM-PL_WOTD",
-    "category": "Entertainment / Misc",
+    "category": "Education",
     "url": "https://github.com/mjb527/MMM-PL_WOTD",
     "id": "mjb527/MMM-PL_WOTD",
     "maintainer": "mjb527",
     "maintainerURL": "",
-    "description": "Displays a Polish Word of the Day with examples and the English translations.",
+    "description": "Displays a Polish word of the day with examples and the English translations.",
     "issues": [],
     "stars": 0,
     "tags": [
@@ -13834,6 +13834,18 @@
       "There is no `package.json`. We need this file to gather information about the module for the module list page."
     ],
     "stars": 1
+  },
+  {
+    "name": "MMM-Quiz",
+    "category": "Entertainment / Misc",
+    "url": "https://github.com/Dennis-Rosenbaum/MMM-Quiz",
+    "id": "Dennis-Rosenbaum/MMM-Quiz",
+    "maintainer": "Dennis-Rosenbaum",
+    "maintainerURL": "",
+    "description": "Add a multiple choice quiz. Random questions are loaded usng the <a target=\"_blank\" href=\"https://the-trivia-api.com/\">Trivia API</a>.",
+    "issues": [
+      "There is no `package.json`. We need this file to gather information about the module for the module list page."
+    ]
   },
   {
     "name": "MMM-Quotable",
@@ -18245,6 +18257,25 @@
     ]
   },
   {
+    "name": "MMM-VoiceCompanion",
+    "category": "Voice Control",
+    "url": "https://github.com/LeonardSEO/MMM-VoiceCompanion",
+    "id": "LeonardSEO/MMM-VoiceCompanion",
+    "maintainer": "LeonardSEO",
+    "maintainerURL": "",
+    "description": "A voice-activated assistant module using OpenAI's Whisper for speech recognition and GPT for natural language processing. This module allows users to interact with their MagicMirror using voice commands, enhancing the smart mirror experience with AI-powered conversations and information retrieval.",
+    "issues": [],
+    "tags": [
+      "voice assistant",
+      "openai",
+      "whisper",
+      "gpt",
+      "porcupine"
+    ],
+    "license": "MIT",
+    "image": "screenshot-logo.jpg"
+  },
+  {
     "name": "voicecontrol",
     "category": "Voice Control",
     "url": "https://github.com/alexyak/voicecontrol",
@@ -18978,7 +19009,7 @@
   },
   {
     "name": "MMM-wordnik",
-    "category": "Utility / IOT / 3rd Party / Integration",
+    "category": "Education",
     "url": "https://github.com/SVendittelli/MMM-wordnik",
     "id": "SVendittelli/MMM-wordnik",
     "maintainer": "SVendittelli",
@@ -18991,7 +19022,7 @@
   },
   {
     "name": "MMM-WordOfTheDay",
-    "category": "Entertainment / Misc",
+    "category": "Education",
     "url": "https://github.com/jmwyds/MMM-WordOfTheDay",
     "id": "jmwyds/MMM-WordOfTheDay",
     "maintainer": "jmwyds",
@@ -19044,6 +19075,20 @@
       "flood"
     ],
     "license": "MIT"
+  },
+  {
+    "name": "MMM-WOTD",
+    "category": "Education",
+    "url": "https://github.com/mumblebaj/MMM-WOTD",
+    "id": "mumblebaj/MMM-WOTD",
+    "maintainer": "mumblebaj",
+    "maintainerURL": "",
+    "description": "Yet another word of the day module. The special feature of this module is that you can select multiple languages and it will display as a carousel.",
+    "issues": [
+      "There are no specific keywords in 'package.json'. We would use them as tags on the module list page. Add a few meaningful terms to the keywords in the package.json. Not just “magicmirror” or “module”."
+    ],
+    "license": "MIT",
+    "image": "image-1.jpg"
   },
   {
     "name": "MMM-WS281X-Server",

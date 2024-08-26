@@ -8,7 +8,11 @@ Feedback and pull requests are very welcome.
 
 [The official list in the wiki](https://github.com/MagicMirrorOrg/MagicMirror/wiki/3rd-party-modules) is a simple text list without filters and images. This list now contains over 1000 modules, so it is not so easy for users to pick out modules.
 
-With a few scripts we create a web page with filter function and integrated images. This website still needs some fine tuning, but is already in a usable state. You can check it out here: <https://kristjanesperanto.github.io/MagicMirror-3rd-Party-Modules/>
+Based on the official list, we automatically create a website with filter functions and integrated images. You can check it out here: <https://kristjanesperanto.github.io/MagicMirror-3rd-Party-Modules/>
+
+### How do I get my module presented in the new list?
+
+Add your module to [the official list in the wiki](https://github.com/MagicMirrorOrg/MagicMirror/wiki/3rd-party-modules). Twice a day the new list will be updated based on the offical list.
 
 ### How do I get my module presented perfectly in the new list?
 
