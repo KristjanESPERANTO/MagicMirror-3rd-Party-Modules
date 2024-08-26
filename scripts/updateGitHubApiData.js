@@ -23,7 +23,7 @@ function shouldFetch (repository, lastUpdate) {
         const now = new Date();
         const daysSinceLastUpdate = Math.round((now - new Date(lastUpdate)) / (1000 * 60 * 60 * 24));
         const lastCommitDate = repository.gitHubData ? new Date(repository.gitHubData.lastCommit) : new Date(-20);
-        const isUpdateLongAgo = daysSinceLastUpdate > 14;
+        const isUpdateLongAgo = daysSinceLastUpdate > 28;
 
         // I am no longer so sure whether this makes sense, as it means that the number of stars is only updated when there are commits. Probably "isUpdateLongAgo" is sufficient. TODO: Investigate again when the moment of need arises.
         const wasLastUpdateBeforeLastCommit = lastUpdate < lastCommitDate.toISOString();
