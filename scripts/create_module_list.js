@@ -54,12 +54,10 @@ async function createModuleList () {
           issues.push(`URL: Neither a valid GitHub nor a valid GitLab URL: ${url}.`);
         }
 
-        const id = url
-          .replace("https://github.com/", "")
-          .replace("https://gitlab.com/", "");
-
         const maintainer = url.split("/")[3];
         const name = url.split("/")[4];
+
+        const id = `${maintainer}/${name}`;
 
         const maintainerLinked = parts[2].match(/\[(.*?)\]\((.*?)\)/u);
         let maintainerURL = "";
