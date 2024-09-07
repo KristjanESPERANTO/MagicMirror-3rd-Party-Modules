@@ -699,6 +699,17 @@
   {
     "name": "MMM-bergfex",
     "category": "Weather",
+    "url": "https://gitlab.com/MajorChris1983/MMM-bergfex",
+    "id": "MajorChris1983/MMM-bergfex",
+    "maintainer": "MajorChris1983",
+    "maintainerURL": "",
+    "description": "Displays snow reports from bergfex.at, forked version. Countries provided by bergfex.at can be configured and set.",
+    "issues": [],
+    "stars": 3
+  },
+  {
+    "name": "MMM-bergfex",
+    "category": "Weather",
     "url": "https://github.com/nebulx29/MMM-bergfex",
     "id": "nebulx29/MMM-bergfex",
     "maintainer": "nebulx29",
@@ -707,17 +718,6 @@
     "issues": [],
     "stars": 8,
     "license": "Apache-2.0"
-  },
-  {
-    "name": "MMM-bergfex",
-    "category": "Weather",
-    "url": "https://gitlab.com/MajorChris1983/MMM-bergfex",
-    "id": "MajorChris1983/MMM-bergfex",
-    "maintainer": "MajorChris1983",
-    "maintainerURL": "",
-    "description": "Displays snow reports from bergfex.at, forked version. Countries provided by bergfex.at can be configured and set.",
-    "issues": [],
-    "stars": 3
   },
   {
     "name": "MMM-bernwordclock",
@@ -8568,7 +8568,9 @@
     "maintainer": "taylornoss",
     "maintainerURL": "https://github.com/taylornoss",
     "description": "Displays the medals for the Olympic games. Works for both summer and winter Olympics.",
-    "issues": []
+    "issues": [],
+    "stars": 2,
+    "license": "MIT"
   },
   {
     "name": "MMM-OlympicGames",
@@ -9315,7 +9317,9 @@
     "maintainer": "Protonosgit",
     "maintainerURL": "",
     "description": "Show the ping time based on a websocket connection.",
-    "issues": []
+    "issues": [],
+    "stars": 1,
+    "license": "MIT"
   },
   {
     "name": "MMM-Pir",
@@ -9995,7 +9999,9 @@
     "maintainer": "Dennis-Rosenbaum",
     "maintainerURL": "https://github.com/Dennis-Rosenbaum",
     "description": "Add a multiple choice quiz. Random questions are loaded usng the <a target=\"_blank\" href=\"https://the-trivia-api.com\">Trivia API</a>.",
-    "issues": []
+    "issues": [],
+    "stars": 0,
+    "license": "MIT"
   },
   {
     "name": "MMM-Quotable",
@@ -10027,7 +10033,9 @@
     "maintainer": "gravitykillseverything",
     "maintainerURL": "",
     "description": "Displays recent downloads and upcoming monitored movies from Radarr.",
-    "issues": []
+    "issues": [],
+    "stars": 0,
+    "license": "MIT"
   },
   {
     "name": "EXT-RadioPlayer",
@@ -11321,7 +11329,9 @@
     "maintainer": "bugsounet",
     "maintainerURL": "https://wiki.bugsounet.fr",
     "description": "Control MMM-GoogleAssistant with your smartphone from Google Home app.",
-    "issues": []
+    "issues": [],
+    "stars": 1,
+    "license": "MIT"
   },
   {
     "name": "MMM-SmartTouch",
@@ -11535,7 +11545,9 @@
     "maintainer": "gravitykillseverything",
     "maintainerURL": "",
     "description": "Displays recent downloads and upcoming monitored TV Shows from Sonarr.",
-    "issues": []
+    "issues": [],
+    "stars": 0,
+    "license": "MIT"
   },
   {
     "name": "MMM-Sonos",
@@ -11818,7 +11830,9 @@
     "maintainer": "tylerstambaugh",
     "maintainerURL": "https://github.com/tylerstambaugh",
     "description": "Shows the map of your last public activity uploaded to <a target=\"_blank\" href=\"https://www.strava.com\">Strava</a> along with the title, date, distance and time.",
-    "issues": []
+    "issues": [],
+    "stars": 1,
+    "license": "MIT"
   },
   {
     "name": "MMM-StravaWeekInBike",
@@ -11914,7 +11928,9 @@
     "maintainer": "lbartk",
     "maintainerURL": "https://github.com/lbartk",
     "description": "Customized module for displaying water temperature in Swiss lakes based on updated API.",
-    "issues": []
+    "issues": [],
+    "stars": 0,
+    "license": "MIT"
   },
   {
     "name": "MMM-SwissCommute",
@@ -11948,7 +11964,9 @@
     "maintainer": "git-pesche",
     "maintainerURL": "",
     "description": "Allows you to view climatic data from stations of the measuring network <a target=\"_blank\" href=\"https://smart-urban-heat-map.ch\">Smart Urban Heat Map Bern</a> (temperature &amp; humidity).",
-    "issues": []
+    "issues": [],
+    "stars": 1,
+    "license": "Apache-2.0"
   },
   {
     "name": "MMM-SwissStationboard",
@@ -12018,7 +12036,8 @@
     "maintainer": "dientuki",
     "maintainerURL": "https://github.com/dientuki",
     "description": "Get a lot of system stats from a PC board like CPU usage, ram usage, disk usage, CPU temperature, volume, internet status and private IP and status, beside that you can configure your WiFi network to create a QR code.",
-    "issues": []
+    "issues": [],
+    "stars": 4
   },
   {
     "name": "MMM-SystemMonitor",
@@ -12137,7 +12156,9 @@
     "maintainer": "MMRIZE",
     "maintainerURL": "",
     "description": "Interact with your mirror via Telegram. Revamped 2024.",
-    "issues": []
+    "issues": [],
+    "stars": 26,
+    "license": "MIT"
   },
   {
     "name": "EXT-TelegramBot",
@@ -12316,7 +12337,8 @@
     "maintainer": "AlexMNet",
     "maintainerURL": "https://github.com/AlexMNet",
     "description": "Display upcoming rocket launch data from TheSpaceDevs API in a table or detail view.",
-    "issues": []
+    "issues": [],
+    "stars": 0
   },
   {
     "name": "MMM-Thingiverse",
@@ -12470,18 +12492,6 @@
     "stars": 12
   },
   {
-    "name": "MMM-Touch",
-    "category": "Utility / IOT / 3rd Party / Integration",
-    "url": "https://github.com/gfischershaw/MMM-Touch",
-    "id": "gfischershaw/MMM-Touch",
-    "maintainer": "gfischershaw",
-    "maintainerURL": "",
-    "description": "Universal touch gesture commander using touchscreen.",
-    "issues": [],
-    "stars": 12,
-    "license": "MIT"
-  },
-  {
     "name": "EXT-Touch",
     "category": "Extended plugins for MMM-GoogleAssistant",
     "url": "https://github.com/bugsounet/EXT-Touch",
@@ -12491,6 +12501,18 @@
     "description": "Activate MMM-GoogleAssistant with a Touch Screen by Touching the Google Icon.",
     "issues": [],
     "stars": 0,
+    "license": "MIT"
+  },
+  {
+    "name": "MMM-Touch",
+    "category": "Utility / IOT / 3rd Party / Integration",
+    "url": "https://github.com/gfischershaw/MMM-Touch",
+    "id": "gfischershaw/MMM-Touch",
+    "maintainer": "gfischershaw",
+    "maintainerURL": "",
+    "description": "Universal touch gesture commander using touchscreen.",
+    "issues": [],
+    "stars": 12,
     "license": "MIT"
   },
   {
@@ -12665,7 +12687,9 @@
     "maintainer": "benjaminflessner",
     "maintainerURL": "",
     "description": "This module can show <a target=\"_blank\" href=\"https://trello.com\">Trello</a> cards on your mirror.",
-    "issues": []
+    "issues": [],
+    "stars": 2,
+    "hasGithubIssues": false
   },
   {
     "name": "MMM-Tronity",
@@ -12984,7 +13008,8 @@
     "maintainer": "xadamxk",
     "maintainerURL": "https://github.com/xadamxk",
     "description": "Display Valorant Esports league schedules on your magic mirror.",
-    "issues": []
+    "issues": [],
+    "stars": 0
   },
   {
     "name": "MMM-ValuesByNotification",
@@ -13125,7 +13150,9 @@
     "maintainer": "bugsounet",
     "maintainerURL": "https://wiki.bugsounet.fr",
     "description": "This plugin play wanted media on MagicMirror² with VLC.",
-    "issues": []
+    "issues": [],
+    "stars": 0,
+    "license": "MIT"
   },
   {
     "name": "MMM-VocabularyTrainer",
@@ -13182,7 +13209,9 @@
     "maintainer": "LeonardSEO",
     "maintainerURL": "",
     "description": "A voice-activated assistant module using OpenAI's Whisper for speech recognition and GPT for natural language processing. This module allows users to interact with their MagicMirror using voice commands, enhancing the smart mirror experience with AI-powered conversations and information retrieval.",
-    "issues": []
+    "issues": [],
+    "stars": 3,
+    "license": "MIT"
   },
   {
     "name": "voicecontrol",
@@ -13529,7 +13558,9 @@
     "maintainer": "bugsounet",
     "maintainerURL": "https://wiki.bugsounet.fr",
     "description": "Application to configure MMM-GoogleAssistant from your browser.",
-    "issues": []
+    "issues": [],
+    "stars": 0,
+    "license": "MIT"
   },
   {
     "name": "MMM-WebSpeechTTS",
@@ -13660,7 +13691,8 @@
     "maintainer": "yedidiaklein",
     "maintainerURL": "",
     "description": "Get info about who is home, based on ping to cell phone. Like Mrs. Weasley clock.",
-    "issues": []
+    "issues": [],
+    "stars": 3
   },
   {
     "name": "MMM-Widget",
@@ -13786,7 +13818,9 @@
     "maintainer": "mumblebaj",
     "maintainerURL": "",
     "description": "Yet another word of the day module. The special feature of this module is that you can select multiple languages and it will display as a carousel.",
-    "issues": []
+    "issues": [],
+    "stars": 4,
+    "license": "MIT"
   },
   {
     "name": "MMM-WS281X-Server",
@@ -13883,7 +13917,7 @@
     "maintainerURL": "https://github.com/jupadin",
     "description": "Displays either the daily XKCD comic or a random XKCD comic.",
     "issues": [],
-    "stars": 4,
+    "stars": 5,
     "license": "MIT"
   },
   {
@@ -13930,7 +13964,7 @@
     "maintainerURL": "",
     "description": "Instead of default compliments with classical poems, just supports Chinese.随机产生一句古诗词。.",
     "issues": [],
-    "stars": 2
+    "stars": 3
   },
   {
     "name": "MMM-YNAB",
@@ -13941,7 +13975,7 @@
     "maintainerURL": "",
     "description": "Displays categories of your choosing from your YNAB budget.",
     "issues": [],
-    "stars": 4
+    "stars": 5
   },
   {
     "name": "MMM-YouLess",
@@ -13977,7 +14011,6 @@
     "description": "This plugins allows to play YouTube video.",
     "issues": [],
     "stars": 3,
-    "hasGithubIssues": false,
     "license": "MIT"
   },
   {
@@ -13989,7 +14022,7 @@
     "maintainerURL": "",
     "description": "Enables easy integration of YouTube videos.",
     "issues": [],
-    "stars": 21
+    "stars": 22
   },
   {
     "name": "MMM-YouTube-Live-Stream",

@@ -38,6 +38,28 @@ function shouldFetch (repository, lastUpdate) {
   return retrieve;
 }
 
+function sortModuleListByLastUpdate (previousData, moduleList) {
+  moduleList.sort((a, b) => {
+    const lastUpdateA = previousData.repositories?.find((repo) => repo.id === a.id)?.gitHubDataLastUpdate;
+    const lastUpdateB = previousData.repositories?.find((repo) => repo.id === b.id)?.gitHubDataLastUpdate;
+
+    if (!lastUpdateA && !lastUpdateB) {
+      return 0;
+    } else if (!lastUpdateA) {
+      return -1;
+    } else if (!lastUpdateB) {
+      return 1;
+    }
+    return new Date(lastUpdateA) - new Date(lastUpdateB);
+  });
+}
+
+function sortByNameIgnoringPrefix (a, b) {
+  const nameA = a.name.replace("MMM-", "").replace("EXT-", "");
+  const nameB = b.name.replace("MMM-", "").replace("EXT-", "");
+  return nameA.localeCompare(nameB);
+}
+
 async function updateData () {
   try {
     // Read the previous version of the data
@@ -53,6 +75,8 @@ async function updateData () {
     const moduleListLength = moduleList.length;
 
     const results = [];
+
+    sortModuleListByLastUpdate(previousData, moduleList);
 
     for (const module of moduleList) {
       const repositoryId = module.id;
@@ -145,13 +169,17 @@ async function updateData () {
       }
     }
 
+    results.sort((a, b) => a.id.localeCompare(b.id));
+
     const updateInfo = {
       "lastUpdate": new Date().toISOString(),
       "repositories": results
     };
 
+    const sortedModuleList = moduleList.sort(sortByNameIgnoringPrefix);
+
     fs.writeFileSync("docs/data/gitHubData.json", JSON.stringify(updateInfo, null, 2));
-    fs.writeFileSync("./docs/data/modules.stage.2.json", JSON.stringify(moduleList, null, 2));
+    fs.writeFileSync("./docs/data/modules.stage.2.json", JSON.stringify(sortedModuleList, null, 2));
     console.info("\nGitHub data update completed. queryCount:", queryCount, "maxQueryCount:", maxQueryCount, "results:", results.length, "modules:", moduleListLength);
   } catch (error) {
     console.error("Error fetching GitHub API data:", error);
