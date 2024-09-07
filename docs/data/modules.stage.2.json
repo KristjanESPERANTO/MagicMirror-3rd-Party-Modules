@@ -147,7 +147,7 @@
     "id": "mstarzec386/MMM-Airly",
     "maintainer": "mstarzec386",
     "maintainerURL": "",
-    "description": "Air pollution in Polish cities. Data from <a target=\"_blank\" href=\"https://airly.eu/\">airly</a>.",
+    "description": "Air pollution in Polish cities. Data from <a target=\"_blank\" href=\"https://airly.eu\">airly</a>.",
     "issues": [],
     "stars": 1,
     "license": "MIT"
@@ -1697,12 +1697,13 @@
   {
     "name": "MMM-ComEdPricing",
     "category": "Utility / IOT / 3rd Party / Integration",
-    "url": "https://github.com/skruglov2023/MMM-ComEdPricing/",
-    "id": "skruglov2023/MMM-ComEdPricing/",
+    "url": "https://github.com/skruglov2023/MMM-ComEdPricing",
+    "id": "skruglov2023/MMM-ComEdPricing",
     "maintainer": "skruglov2023",
     "maintainerURL": "",
     "description": "Displays ComEd 5 Minute and Hourly Average, the above repo (MMM-ComEdPrice) has not been updated in a while.",
-    "issues": []
+    "issues": [],
+    "stars": 0
   },
   {
     "name": "MMM-CommandToNotification",
@@ -1713,7 +1714,7 @@
     "maintainerURL": "https://github.com/Tom-Hirschberger",
     "description": "Calls configurable scripts periodically and send the output as notification(s).",
     "issues": [],
-    "stars": 3,
+    "stars": 4,
     "license": "MIT"
   },
   {
@@ -1761,7 +1762,7 @@
     "description": "Display a count down to a date/event.",
     "issues": [],
     "outdated": "Abandoned. No reactions to issues since years. Seems not to work anymore. Try MMM-CountDown by daterrell instead.",
-    "stars": 35,
+    "stars": 36,
     "license": "MIT"
   },
   {
@@ -1774,7 +1775,6 @@
     "description": "Countdown or countup for events. Revamped 2024.",
     "issues": [],
     "stars": 9,
-    "isArchived": true,
     "license": "MIT"
   },
   {
@@ -1810,7 +1810,7 @@
     "maintainerURL": "https://github.com/wiesty",
     "description": "Display the number of days, weeks, months, and years since a specified date, serving as a romantic reminder for couples 💌. Can also be used for Birthdays 📆.",
     "issues": [],
-    "stars": 8,
+    "stars": 9,
     "license": "MIT"
   },
   {
@@ -1886,13 +1886,25 @@
     "stars": 2
   },
   {
+    "name": "MMM-Cricket-Scores",
+    "category": "Sports",
+    "url": "https://github.com/Dennis-Rosenbaum/MMM-Cricket-Scores",
+    "id": "Dennis-Rosenbaum/MMM-Cricket-Scores",
+    "maintainer": "Dennis-Rosenbaum",
+    "maintainerURL": "https://github.com/Dennis-Rosenbaum",
+    "description": "Display cricket scores and automatically loop through them.",
+    "issues": [],
+    "stars": 0,
+    "license": "MIT"
+  },
+  {
     "name": "MMM-CricketScores",
     "category": "Sports",
     "url": "https://github.com/dsouzadrian/MMM-CricketScores",
     "id": "dsouzadrian/MMM-CricketScores",
     "maintainer": "dsouzadrian",
     "maintainerURL": "https://github.com/dsouzadrian",
-    "description": "Display cicket scores for ongoing live cricket matches.",
+    "description": "Display cricket scores for ongoing live cricket matches.",
     "issues": [],
     "stars": 2,
     "license": "MIT"
@@ -1929,7 +1941,7 @@
     "maintainerURL": "",
     "description": "Display cryptocurrencies ticker price, with graphs and changes over time.",
     "issues": [],
-    "stars": 94,
+    "stars": 95,
     "license": "MIT"
   },
   {
@@ -2085,7 +2097,7 @@
     "maintainerURL": "",
     "description": "Simple display of dad jokes from icanhazdadjoke.com.",
     "issues": [],
-    "stars": 6,
+    "stars": 7,
     "hasGithubIssues": false,
     "license": "MIT"
   },
@@ -2160,7 +2172,7 @@
     "maintainerURL": "",
     "description": "Display the verse of the day from &lt;<a target=\"_blank\" href=\"http://www.biblegateway.com%3E\">www.biblegateway.com&gt;</a>.",
     "issues": [],
-    "stars": 25,
+    "stars": 26,
     "license": "MIT"
   },
   {
@@ -2231,7 +2243,7 @@
     "maintainerURL": "",
     "description": "Displays the daily XKCD web comic.",
     "issues": [],
-    "stars": 51,
+    "stars": 52,
     "license": "MIT"
   },
   {
@@ -2313,7 +2325,7 @@
     "maintainerURL": "https://github.com/kyle-kelly",
     "description": "A fork of <a target=\"_blank\" href=\"https://github.com/AdamMoses-GitHub/MMM-DCMetroTrainTimes\">MMM-DCMetroTrainTimes</a> (above) that also displays arrival times for buses.",
     "issues": [],
-    "stars": 2,
+    "stars": 3,
     "hasGithubIssues": false,
     "license": "MIT"
   },
@@ -2338,7 +2350,7 @@
     "maintainerURL": "",
     "description": "Adds animated icons and changes layout of default weather plugin.",
     "issues": [],
-    "stars": 14,
+    "stars": 15,
     "license": "MIT"
   },
   {
@@ -2361,8 +2373,7 @@
     "maintainerURL": "https://wiki.bugsounet.fr",
     "description": "Multi-keyword listener for MMM-GoogleAssistant.",
     "issues": [],
-    "stars": 7,
-    "hasGithubIssues": false,
+    "stars": 8,
     "license": "MIT"
   },
   {
@@ -2484,7 +2495,7 @@
     "maintainerURL": "https://github.com/gberg927",
     "description": "Displays ride wait times at the Disney World Parks.",
     "issues": [],
-    "stars": 4,
+    "stars": 6,
     "license": "MIT"
   },
   {
@@ -2507,7 +2518,9 @@
     "maintainer": "phpwun",
     "maintainerURL": "",
     "description": "Rewrite of MMM-Brewdog, using new API and more info.",
-    "issues": []
+    "issues": [],
+    "stars": 0,
+    "hasGithubIssues": false
   },
   {
     "name": "MMM-Domoticz-ext",
@@ -2582,7 +2595,7 @@
     "description": "Show photos from <code>Dropbox</code> as wallpaper.",
     "issues": [],
     "outdated": "Successor is MMM-DropboxPictures.",
-    "stars": 17
+    "stars": 18
   },
   {
     "name": "MMM-DublinRTPI",
@@ -2654,7 +2667,7 @@
     "maintainerURL": "",
     "description": "Change positions of modules.",
     "issues": [],
-    "stars": 11
+    "stars": 12
   },
   {
     "name": "MMM-DynamicWeather",
@@ -2665,7 +2678,7 @@
     "maintainerURL": "",
     "description": "A heavily configurable module to display different animations based on current weather and show customized event effects.",
     "issues": [],
-    "stars": 29,
+    "stars": 30,
     "license": "MIT"
   },
   {
@@ -2678,7 +2691,7 @@
     "description": "Watch the sunlit side of Earth as it rotates.",
     "issues": [],
     "outdated": "Abandoned. Developer is no longer active. Missing instructions to install dependency 'request'.",
-    "stars": 59,
+    "stars": 60,
     "license": "MIT"
   },
   {
@@ -2728,7 +2741,7 @@
     "maintainerURL": "",
     "description": "The easiest way to show pictures on your mirror.",
     "issues": [],
-    "stars": 6,
+    "stars": 7,
     "license": "MIT"
   },
   {
@@ -2740,7 +2753,7 @@
     "maintainerURL": "",
     "description": "Display data from ecobee thermostats and remote sensors.",
     "issues": [],
-    "stars": 4,
+    "stars": 5,
     "license": "MIT"
   },
   {
@@ -2823,7 +2836,7 @@
     "maintainerURL": "https://github.com/Tom-Hirschberger",
     "description": "Embed one or multiple websites with there URL.",
     "issues": [],
-    "stars": 20,
+    "stars": 21,
     "license": "MIT"
   },
   {
@@ -2835,7 +2848,7 @@
     "maintainerURL": "",
     "description": "Embed youtube video and playlist.",
     "issues": [],
-    "stars": 33,
+    "stars": 35,
     "license": "MIT"
   },
   {
@@ -2894,7 +2907,7 @@
     "maintainerURL": "",
     "description": "Display public transport information/departure boards for any public transport in Norway.",
     "issues": [],
-    "stars": 16,
+    "stars": 17,
     "license": "LGPL-2.1"
   },
   {
@@ -2931,7 +2944,7 @@
     "maintainerURL": "https://github.com/mumblebaj",
     "description": "Display loadshedding schedule data for the South African users.",
     "issues": [],
-    "stars": 3,
+    "stars": 4,
     "license": "MIT"
   },
   {
@@ -3115,7 +3128,7 @@
     "maintainerURL": "https://github.com/EbenKouao",
     "description": "This module allows you to access profiles using face recognition. This works on the back of OpenCV face recognition module. Program this script to control applicances e.g. Smart Plugs, or lights based on an individual's face profile being recognized.",
     "issues": [],
-    "stars": 82,
+    "stars": 83,
     "license": "MIT"
   },
   {
@@ -3152,17 +3165,17 @@
     "description": "Modified version of MMM-Facial-Recognition that works with OpenCV 3.3+, where training tools is merge in one project and code simplifications.",
     "issues": [],
     "outdated": "Abandoned. No reactions to issues since years. Seems not to work anymore.",
-    "stars": 49,
+    "stars": 51,
     "license": "MIT"
   },
   {
-    "name": "facts",
+    "name": "MMM-Facts",
     "category": "Education",
-    "url": "https://github.com/alanshen111/facts",
-    "id": "alanshen111/facts",
+    "url": "https://github.com/alanshen111/MMM-Facts",
+    "id": "alanshen111/MMM-Facts",
     "maintainer": "alanshen111",
     "maintainerURL": "https://github.com/alanshen111",
-    "description": "Displays some ✨interesting✨ facts! Makes your mirror look like an RPG loading screen. Example screenshot included.",
+    "description": "Displays some interesting facts! Makes your mirror look like an RPG loading screen.",
     "issues": [],
     "stars": 13,
     "license": "MIT"
@@ -3273,7 +3286,7 @@
     "maintainerURL": "",
     "description": "This module complements the <a target=\"_blank\" href=\"https://github.com/skuethe/MMM-Spotify\">MMM-Spotify module</a> and listens for it's song info notifications to automatically fetch the lyrics for the currently playing song. API key required.",
     "issues": [],
-    "stars": 4,
+    "stars": 5,
     "license": "ISC"
   },
   {
@@ -3393,7 +3406,7 @@
     "maintainerURL": "https://github.com/nigel-daniels",
     "description": "Shows a fish every day, fish is good for you :)",
     "issues": [],
-    "stars": 5,
+    "stars": 6,
     "license": "MIT"
   },
   {
@@ -3428,7 +3441,7 @@
     "maintainerURL": "",
     "description": "Displays information from the <a target=\"_blank\" href=\"https://www.flatastic-app.com\">flatastic</a> commune management app.",
     "issues": [],
-    "stars": 4,
+    "stars": 5,
     "license": "MIT"
   },
   {
@@ -3477,7 +3490,7 @@
     "description": "Track nearby planes based on Flightradar24 data.",
     "issues": [],
     "outdated": "Abandoned. Repo has been archived at 2024-01-22.",
-    "stars": 19,
+    "stars": 20,
     "isArchived": true,
     "license": "MIT"
   },
@@ -3501,7 +3514,7 @@
     "maintainerURL": "https://github.com/E3V3A",
     "description": "A flight radar that display airplane/flight details of what is currently flying in the airspace above some location.",
     "issues": [],
-    "stars": 21,
+    "stars": 23,
     "license": "MIT"
   },
   {
@@ -3513,7 +3526,7 @@
     "maintainerURL": "https://github.com/tbouron",
     "description": "Use ADS-B systems to track and display nearby planes.",
     "issues": [],
-    "stars": 12,
+    "stars": 13,
     "license": "Apache-2.0"
   },
   {
@@ -3525,7 +3538,7 @@
     "maintainerURL": "",
     "description": "A classic flip clock that is powered by the awesome <a target=\"_blank\" href=\"https://pqina.nl/flip\">flip plugin</a>.",
     "issues": [],
-    "stars": 17,
+    "stars": 18,
     "license": "MIT"
   },
   {
@@ -3572,7 +3585,7 @@
     "description": "Display weather based on forecast API (DarkSky).",
     "issues": [],
     "outdated": "Deprecated. DarkSky API no longer works since 2023-03-31.",
-    "stars": 58
+    "stars": 59
   },
   {
     "name": "MMM-Formula1",
@@ -3583,7 +3596,7 @@
     "maintainerURL": "",
     "description": "Display the driver standings from the current Formula 1 season.",
     "issues": [],
-    "stars": 29,
+    "stars": 31,
     "license": "MIT"
   },
   {
@@ -3595,7 +3608,7 @@
     "maintainerURL": "",
     "description": "Shows Fortnite players' stats (score, matches played and kills).",
     "issues": [],
-    "stars": 1,
+    "stars": 2,
     "license": "MIT"
   },
   {
@@ -3631,7 +3644,7 @@
     "maintainerURL": "",
     "description": "Controlling an RGB-LED strip around a smart mirror with or without touch input. It provides features for static background lighting, highly customizable effects on notifications and party lighting.",
     "issues": [],
-    "stars": 11,
+    "stars": 12,
     "license": "MPL-2.0"
   },
   {
@@ -3641,9 +3654,9 @@
     "id": "bugsounet/MMM-FranceInfo",
     "maintainer": "bugsounet",
     "maintainerURL": "",
-    "description": "[FR] Affiche les flux rss de <a target=\"_blank\" href=\"https://www.francetvinfo.fr/\">franceinfo</a>. <br />[EN] Displays rss feeds from franceinfo.",
+    "description": "[FR] Affiche les flux rss de <a target=\"_blank\" href=\"https://www.francetvinfo.fr\">franceinfo</a>. <br />[EN] Displays rss feeds from franceinfo.",
     "issues": [],
-    "stars": 0,
+    "stars": 1,
     "hasGithubIssues": false,
     "license": "MIT"
   },
@@ -3656,7 +3669,7 @@
     "maintainerURL": "",
     "description": "[FR] Affiche les informations de votre Freebox en temps réél.<br />[EN] Displays information from your Freebox in real time.",
     "issues": [],
-    "stars": 1,
+    "stars": 2,
     "license": "MIT"
   },
   {
@@ -3681,7 +3694,6 @@
     "description": "Display Channel from French Internet Provider: Free.",
     "issues": [],
     "stars": 1,
-    "hasGithubIssues": false,
     "license": "MIT"
   },
   {
@@ -3765,7 +3777,7 @@
     "maintainerURL": "https://github.com/jboucly",
     "description": "Displays images from an FTP server with a display delay.",
     "issues": [],
-    "stars": 5,
+    "stars": 6,
     "license": "MIT"
   },
   {
@@ -3777,7 +3789,7 @@
     "maintainerURL": "",
     "description": "Display Gas Station prices.",
     "issues": [],
-    "stars": 63,
+    "stars": 62,
     "license": "MIT"
   },
   {
@@ -3844,7 +3856,7 @@
     "url": "https://github.com/Fneves7/MMM-GasPricesPT",
     "id": "Fneves7/MMM-GasPricesPT",
     "maintainer": "Fneves7",
-    "maintainerURL": "https://github.com/Fneves7/",
+    "maintainerURL": "https://github.com/Fneves7",
     "description": "Display the cheapest Gas Station prices in Portugal.",
     "issues": [],
     "stars": 0,
@@ -3907,7 +3919,7 @@
     "maintainerURL": "",
     "description": "Allows gesture control of compliments (only show when stepping in front of mirror), newsfeed (wave left / right, up for full-screen) and pages with two types of infrared sensors. Gestures can be up, down, left, right, far and close movements of the hand in front of a gesture sensor (APDS-9960) and present and away gestures in front of an IR distance sensor (GP2Y0A21YK).",
     "issues": [],
-    "stars": 39
+    "stars": 41
   },
   {
     "name": "MMM-GHIN",
@@ -3979,7 +3991,7 @@
     "maintainerURL": "",
     "description": "This module allows to add a glass effect to MagicMirror² modules.",
     "issues": [],
-    "stars": 4,
+    "stars": 7,
     "license": "MIT"
   },
   {
@@ -4003,7 +4015,7 @@
     "maintainerURL": "",
     "description": "Displays live image of our planet.",
     "issues": [],
-    "stars": 68,
+    "stars": 69,
     "license": "MIT"
   },
   {
@@ -4039,7 +4051,7 @@
     "maintainerURL": "",
     "description": "Displays the two best routes from an origin to a destination, using Google Directions API.",
     "issues": [],
-    "stars": 44,
+    "stars": 46,
     "license": "MIT"
   },
   {
@@ -4052,7 +4064,6 @@
     "description": "MMM-GoogleAssistant is an real embedded Google assistant on MagicMirror² with many <a target=\"_blank\" href=\"#extended-plugins-for-mmm-googleassistant\">plugins</a>.",
     "issues": [],
     "stars": 92,
-    "hasGithubIssues": false,
     "license": "MIT"
   },
   {
@@ -4089,7 +4100,7 @@
     "maintainerURL": "https://github.com/randomBrainstormer",
     "description": "Get your Google Calendars in the shape of MagicMirror's default calendar.",
     "issues": [],
-    "stars": 63,
+    "stars": 67,
     "license": "MIT"
   },
   {
@@ -4113,7 +4124,7 @@
     "maintainerURL": "https://github.com/No3x",
     "description": "Display notes from a Google Doc.",
     "issues": [],
-    "stars": 16,
+    "stars": 18,
     "license": "MIT"
   },
   {
@@ -4125,7 +4136,7 @@
     "maintainerURL": "",
     "description": "Slideshow of photos stored in Google Drive.",
     "issues": [],
-    "stars": 9,
+    "stars": 11,
     "license": "MIT"
   },
   {
@@ -4150,7 +4161,7 @@
     "maintainerURL": "",
     "description": "Displays one list from Google Keep.",
     "issues": [],
-    "stars": 7,
+    "stars": 9,
     "license": "MIT"
   },
   {
@@ -4162,7 +4173,7 @@
     "maintainerURL": "",
     "description": "Displays a google map of an origin and destination.",
     "issues": [],
-    "stars": 21,
+    "stars": 22,
     "license": "GPL-3.0"
   },
   {
@@ -4199,7 +4210,7 @@
     "maintainerURL": "https://github.com/hermanho",
     "description": "Image gallery or wallpaper with your Google Photos account.",
     "issues": [],
-    "stars": 162,
+    "stars": 168,
     "license": "MIT"
   },
   {
@@ -4212,7 +4223,6 @@
     "description": "Display your album directory with Google photos API in background or in MagicMirror² position.",
     "issues": [],
     "stars": 2,
-    "hasGithubIssues": false,
     "license": "MIT"
   },
   {
@@ -4224,7 +4234,8 @@
     "maintainerURL": "",
     "description": "Display Google Sheets data. Highly customizable.",
     "issues": [],
-    "stars": 23
+    "stars": 24,
+    "license": "MIT"
   },
   {
     "name": "MMM-GoogleShoppingList",
@@ -4244,10 +4255,10 @@
     "url": "https://github.com/spydersoft-consulting/MMM-GoogleTasks",
     "id": "spydersoft-consulting/MMM-GoogleTasks",
     "maintainer": "spydersoft-consulting",
-    "maintainerURL": "https://github.com/spydersoft-consulting/",
+    "maintainerURL": "https://github.com/spydersoft-consulting",
     "description": "Display Google Tasks with Planned View.",
     "issues": [],
-    "stars": 2,
+    "stars": 3,
     "license": "MIT"
   },
   {
@@ -4281,7 +4292,7 @@
     "maintainerURL": "",
     "description": "Text-to-Speech module with Google Cloud TTS API. Give a voice to your Mirror.",
     "issues": [],
-    "stars": 11,
+    "stars": 12,
     "license": "MIT"
   },
   {
@@ -4294,7 +4305,6 @@
     "description": "CPU governor enables the operating system to scale the CPU frequency up or down in order to save power or improve performance.",
     "issues": [],
     "stars": 3,
-    "hasGithubIssues": false,
     "license": "MIT"
   },
   {
@@ -4306,7 +4316,7 @@
     "maintainerURL": "https://github.com/Sjohn21",
     "description": "Handle GPIO, Inputs (Buttons, PIR, Other) and Outputs (including PWM), with notifications from and to other modules.",
     "issues": [],
-    "stars": 1,
+    "stars": 2,
     "license": "MIT"
   },
   {
@@ -4318,7 +4328,7 @@
     "maintainerURL": "https://github.com/Tom-Hirschberger",
     "description": "Send notifications based on GPIO events. Can be used as PIR module and with rotary encoders.",
     "issues": [],
-    "stars": 11,
+    "stars": 12,
     "license": "MIT"
   },
   {
@@ -4356,6 +4366,18 @@
     "description": "Display a diagram generated by Grafana.",
     "issues": [],
     "stars": 35,
+    "license": "MIT"
+  },
+  {
+    "name": "MMM-Grocy",
+    "category": "Utility / IOT / 3rd Party / Integration",
+    "url": "https://github.com/ooohfascinating/MMM-Grocy",
+    "id": "ooohfascinating/MMM-Grocy",
+    "maintainer": "ooohfascinating",
+    "maintainerURL": "",
+    "description": "Shows your meal plan for the week from grocy.",
+    "issues": [],
+    "stars": 0,
     "license": "MIT"
   },
   {
@@ -4462,7 +4484,7 @@
     "maintainerURL": "",
     "description": "An alternate home-assistant integration.",
     "issues": [],
-    "stars": 29,
+    "stars": 32,
     "license": "GPL-3.0"
   },
   {
@@ -4641,7 +4663,7 @@
     "maintainerURL": "https://github.com/tomgroenwoldt",
     "description": "Monitors reachability of local IP addresses.",
     "issues": [],
-    "stars": 1
+    "stars": 2
   },
   {
     "name": "MMM-HomeAssistant",
@@ -4652,7 +4674,7 @@
     "maintainerURL": "https://github.com/zuo000",
     "description": "HomeAssistant frontend module using HA REST API, including Light, Switch, Sensor.",
     "issues": [],
-    "stars": 22,
+    "stars": 25,
     "license": "MIT"
   },
   {
@@ -4664,7 +4686,7 @@
     "maintainerURL": "",
     "description": "Display information from Home Assistant using the home assistant REST API.",
     "issues": [],
-    "stars": 61,
+    "stars": 62,
     "hasGithubIssues": false,
     "license": "MIT"
   },
@@ -4677,7 +4699,7 @@
     "maintainerURL": "https://github.com/Snille",
     "description": "Fork of leinich module. Many new features added. Display information from Home Assistant using the home assistant REST API.",
     "issues": [],
-    "stars": 60,
+    "stars": 62,
     "license": "MIT"
   },
   {
@@ -4689,7 +4711,7 @@
     "maintainerURL": "https://github.com/mathewmeconry",
     "description": "Displays information from HomeAssistant via Rest API. Litens for State changes with Websockets. Touch control for Entities.",
     "issues": [],
-    "stars": 7
+    "stars": 8
   },
   {
     "name": "MMM-HomeAssistantDisplay",
@@ -4700,7 +4722,7 @@
     "maintainerURL": "https://github.com/wonderslug",
     "description": "Displays information from Home Assistant using Home Assistant Templates to render any HTML you want for the module. Includes support for Material Design Icons, Websockets for fast updating, and auto reconnect on Home Assistant restarts. Allows you to show or hide a whole module based on a Home Assistant Template as well.",
     "issues": [],
-    "stars": 83,
+    "stars": 86,
     "license": "MIT"
   },
   {
@@ -4712,7 +4734,7 @@
     "maintainerURL": "https://github.com/john3300",
     "description": "Displays notifications sent with a simple HTTP POST request.",
     "issues": [],
-    "stars": 11,
+    "stars": 13,
     "license": "MIT"
   },
   {
@@ -4782,7 +4804,9 @@
     "maintainer": "MMRIZE",
     "maintainerURL": "",
     "description": "Hotword detector / Voice Commander / Utterance recorder with Picovoice.",
-    "issues": []
+    "issues": [],
+    "stars": 1,
+    "license": "MIT"
   },
   {
     "name": "MMM-Hover",
@@ -5063,7 +5087,7 @@
     "maintainerURL": "",
     "description": "Time to the next buses, tramways from a list of stations / lines for Lille (Ilevia).",
     "issues": [],
-    "stars": 3,
+    "stars": 5,
     "license": "MIT"
   },
   {
@@ -5081,13 +5105,14 @@
   {
     "name": "MMM-ImageSlideshow",
     "category": "Entertainment / Misc",
-    "url": "https://github.com/AdamMoses-GitHub/MMM-ImageSlideshow",
-    "id": "AdamMoses-GitHub/MMM-ImageSlideshow",
-    "maintainer": "AdamMoses-GitHub",
+    "url": "https://github.com/mihanich/MMM-ImageSlideshow",
+    "id": "mihanich/MMM-ImageSlideshow",
+    "maintainer": "mihanich",
     "maintainerURL": "",
     "description": "Displays images one-at-a-time from local folders.",
     "issues": [],
-    "stars": 43,
+    "stars": 1,
+    "hasGithubIssues": false,
     "license": "MIT"
   },
   {
@@ -5099,7 +5124,7 @@
     "maintainerURL": "",
     "description": "Show images and photos.",
     "issues": [],
-    "stars": 40,
+    "stars": 44,
     "license": "MIT"
   },
   {
@@ -5193,7 +5218,7 @@
     "maintainerURL": "",
     "description": "Alternative to the compliments module.",
     "issues": [],
-    "stars": 5,
+    "stars": 6,
     "license": "MIT"
   },
   {
@@ -5218,7 +5243,6 @@
     "description": "Check your internet connexion, display ping.",
     "issues": [],
     "stars": 0,
-    "hasGithubIssues": false,
     "license": "MIT"
   },
   {
@@ -5350,7 +5374,7 @@
     "maintainerURL": "",
     "description": "Displays live video from the International Space Station.",
     "issues": [],
-    "stars": 4,
+    "stars": 6,
     "license": "MIT"
   },
   {
@@ -5385,7 +5409,7 @@
     "maintainerURL": "",
     "description": "This module communicates with a IT8951 card to display MagicMirror² on a e-ink screen using IT8951 drivers.",
     "issues": [],
-    "stars": 4,
+    "stars": 5,
     "license": "MIT"
   },
   {
@@ -5408,7 +5432,7 @@
     "maintainerURL": "https://github.com/jalibu",
     "description": "A simple but powerful vertical, horizontal or static stock ticker based on Yahoo's finance API. Supports international stocks, crypto currencies and index symbols. No API key required.",
     "issues": [],
-    "stars": 64,
+    "stars": 67,
     "license": "MIT"
   },
   {
@@ -5420,7 +5444,7 @@
     "maintainerURL": "",
     "description": "Display values from Home automation software <a target=\"_blank\" href=\"https://www.jeedom.com\">JEEDOM</a>.",
     "issues": [],
-    "stars": 19,
+    "stars": 18,
     "license": "GPL-3.0"
   },
   {
@@ -5491,7 +5515,7 @@
     "maintainerURL": "",
     "description": "Show jokes from the JokeAPI.",
     "issues": [],
-    "stars": 10
+    "stars": 11
   },
   {
     "name": "MMM-jokes",
@@ -5563,7 +5587,7 @@
     "maintainerURL": "",
     "description": "Creates a table filled by a list gathered from a JSON request, and puts all variables of the object in its own table column.",
     "issues": [],
-    "stars": 24,
+    "stars": 25,
     "license": "MIT"
   },
   {
@@ -5575,7 +5599,7 @@
     "maintainerURL": "",
     "description": "Display data from any Web/REST API that return JSON.",
     "issues": [],
-    "stars": 10,
+    "stars": 11,
     "license": "MIT"
   },
   {
@@ -5621,7 +5645,7 @@
     "maintainerURL": "",
     "description": "Getting bluetooth remote control and keyboard inputs.",
     "issues": [],
-    "stars": 15,
+    "stars": 17,
     "license": "MIT"
   },
   {
@@ -5646,7 +5670,6 @@
     "description": "Control your mirror with a keyboard.",
     "issues": [],
     "stars": 2,
-    "hasGithubIssues": false,
     "license": "MIT"
   },
   {
@@ -5742,7 +5765,7 @@
     "maintainerURL": "https://github.com/RineshRamadhin",
     "description": "Displays the Last.fm scrobble currently playing. Supports Spotify, YouTube, Tidal, SoundCloud, MixCloud and <a target=\"_blank\" href=\"https://www.last.fm/about/trackmymusic\">many others</a>.",
     "issues": [],
-    "stars": 3
+    "stars": 4
   },
   {
     "name": "MMM-Launch",
@@ -5838,7 +5861,6 @@
     "description": "Allow to play Spotify music on your mirror with Librespot.",
     "issues": [],
     "stars": 1,
-    "hasGithubIssues": false,
     "license": "MIT"
   },
   {
@@ -5994,7 +6016,7 @@
     "maintainerURL": "",
     "description": "Deliver the logs from Frontend to Backend and more features.",
     "issues": [],
-    "stars": 1,
+    "stars": 2,
     "license": "MIT"
   },
   {
@@ -6100,7 +6122,7 @@
     "maintainerURL": "",
     "description": "MMM-Loxone connects to your Loxone Miniserver and lets it communicate to your MagicMirror².",
     "issues": [],
-    "stars": 10,
+    "stars": 11,
     "license": "MIT"
   },
   {
@@ -6207,7 +6229,7 @@
     "maintainerURL": "",
     "description": "Module to help developers to start building their own modules for the MagicMirror².",
     "issues": [],
-    "stars": 71,
+    "stars": 74,
     "license": "MIT"
   },
   {
@@ -6411,7 +6433,7 @@
     "maintainerURL": "https://github.com/zanix",
     "description": "Displays a weekly meal menu from the <a target=\"_blank\" href=\"https://mealie.io\">Mealie</a> recipe management app.",
     "issues": [],
-    "stars": 8,
+    "stars": 10,
     "license": "MIT"
   },
   {
@@ -6423,7 +6445,7 @@
     "maintainerURL": "",
     "description": "Add one to many memo notes (\"post-it look &amp; feel\"). Content is manageable through HTTP get requests.",
     "issues": [],
-    "stars": 33,
+    "stars": 34,
     "license": "MIT"
   },
   {
@@ -6506,7 +6528,7 @@
     "maintainerURL": "",
     "description": "[FR] Affiche les informations de prévisions actuelles, horaires et quotidiennes à l'aide des données de l'API MétéoFrance.<br />[EN] Displays current, hourly and daily forecast information using data from MeteoFrance API.",
     "issues": [],
-    "stars": 0,
+    "stars": 1,
     "license": "MIT"
   },
   {
@@ -6541,7 +6563,7 @@
     "maintainerURL": "",
     "description": "Displays your Microsoft To Do tasks on your mirror.",
     "issues": [],
-    "stars": 73,
+    "stars": 75,
     "license": "MIT"
   },
   {
@@ -6588,7 +6610,7 @@
     "maintainerURL": "",
     "description": "Alexa voice control to show/hide modules, search for images or Youtube video, and display them with the search term on the mirror.",
     "issues": [],
-    "stars": 89,
+    "stars": 92,
     "license": "MIT"
   },
   {
@@ -6600,7 +6622,7 @@
     "maintainerURL": "",
     "description": "Display market indicies using (free) Yahoo Finance API.",
     "issues": [],
-    "stars": 2,
+    "stars": 4,
     "license": "MIT"
   },
   {
@@ -6612,7 +6634,7 @@
     "maintainerURL": "https://github.com/jclarke54",
     "description": "Display the days Major League Baseball games.",
     "issues": [],
-    "stars": 1,
+    "stars": 2,
     "license": "MIT"
   },
   {
@@ -6660,7 +6682,7 @@
     "maintainerURL": "https://github.com/Klettner",
     "description": "Android 📱 and Windows-desktop 💻 app to control your MagicMirror² remotely. (Shutdown, reboot, toggle monitor on/off, change brightness of monitor, custom-commands, etc.).",
     "issues": [],
-    "stars": 58,
+    "stars": 59,
     "license": "MIT"
   },
   {
@@ -6767,7 +6789,7 @@
     "maintainerURL": "https://github.com/ItsMeBrille",
     "description": "Display Minecraft server status and shows list of active players.",
     "issues": [],
-    "stars": 5
+    "stars": 7
   },
   {
     "name": "mmm-moon-phases",
@@ -6793,7 +6815,7 @@
     "maintainerURL": "https://github.com/michael5r",
     "description": "Displays your <a target=\"_blank\" href=\"https://www.nest.com\">Nest</a> cameras on your MagicMirror² and gives you the option to show either live streams or constantly-updated snapshots.",
     "issues": [],
-    "stars": 9,
+    "stars": 10,
     "license": "MIT"
   },
   {
@@ -6929,7 +6951,7 @@
     "name": "mmm-uvindex",
     "category": "Weather",
     "url": "https://bitbucket.org/rsperezn/mmm-uvindex",
-    "id": "https://bitbucket.org/rsperezn/mmm-uvindex",
+    "id": "rsperezn/mmm-uvindex",
     "maintainer": "rsperezn",
     "maintainerURL": "",
     "description": "Displays the current and forecasted UV Index for a given location given its longitude and latitude. It requires a free API token from <a target=\"_blank\" href=\"https://www.openuv.io/\">https://www.openuv.io/</a>.",
@@ -6968,7 +6990,7 @@
     "maintainerURL": "https://github.com/Bee-Mar",
     "description": "An unofficial MagicMirror² 3rd Party Package Manager. Automates searching, installation, removal, updating, and upgrading of MagicMirror² modules.",
     "issues": [],
-    "stars": 179,
+    "stars": 191,
     "license": "MIT"
   },
   {
@@ -6980,7 +7002,7 @@
     "maintainerURL": "",
     "description": "Companion module for MMPM to enable hiding/showing of MagicMirror² modules.",
     "issues": [],
-    "stars": 4,
+    "stars": 5,
     "license": "MIT"
   },
   {
@@ -7039,7 +7061,7 @@
     "maintainerURL": "",
     "description": "Create schedules to control when other modules are shown, hidden or dimmed and to send notifications to other modules.",
     "issues": [],
-    "stars": 96,
+    "stars": 99,
     "license": "MIT"
   },
   {
@@ -7051,7 +7073,7 @@
     "maintainerURL": "https://github.com/mezderman",
     "description": "Group modules and toggle their visibility over time.",
     "issues": [],
-    "stars": 1
+    "stars": 2
   },
   {
     "name": "MMM-ModuleToggleButton",
@@ -7074,7 +7096,7 @@
     "maintainerURL": "",
     "description": "Display your calendar events in a monthly calendar view.",
     "issues": [],
-    "stars": 23,
+    "stars": 25,
     "license": "MIT"
   },
   {
@@ -7086,7 +7108,8 @@
     "maintainerURL": "",
     "description": "Displays moonrise, moonset, and an image of the moon using AstronomyAPI.",
     "issues": [],
-    "stars": 3
+    "stars": 3,
+    "license": "ISC"
   },
   {
     "name": "MMM-MoonPhase",
@@ -7097,7 +7120,7 @@
     "maintainerURL": "",
     "description": "Presents the real-time moon phase.",
     "issues": [],
-    "stars": 49,
+    "stars": 52,
     "license": "MIT"
   },
   {
@@ -7133,7 +7156,6 @@
     "description": "Control your screen with a webcam (as motion detector).",
     "issues": [],
     "stars": 0,
-    "hasGithubIssues": false,
     "license": "MIT"
   },
   {
@@ -7181,7 +7203,7 @@
     "maintainerURL": "",
     "description": "Camera based motion detector that turns of your display after a while, updated fork of alexyaks version.",
     "issues": [],
-    "stars": 50,
+    "stars": 51,
     "license": "MIT"
   },
   {
@@ -7216,7 +7238,7 @@
     "maintainerURL": "",
     "description": "Displays the currently airing top movies in theaters around you.",
     "issues": [],
-    "stars": 18,
+    "stars": 19,
     "license": "MIT"
   },
   {
@@ -7265,7 +7287,7 @@
     "maintainerURL": "https://github.com/Tom-Hirschberger",
     "description": "Play m3u radio streams. Controllable by touch and notification.",
     "issues": [],
-    "stars": 8,
+    "stars": 7,
     "license": "MIT"
   },
   {
@@ -7300,7 +7322,7 @@
     "maintainerURL": "",
     "description": "Subscribe topics from MQTT message queues, and displays the payload values in a table, with configurable labels.",
     "issues": [],
-    "stars": 57,
+    "stars": 56,
     "license": "MIT"
   },
   {
@@ -7397,7 +7419,7 @@
     "maintainerURL": "https://github.com/BKeyport",
     "description": "Display multiple mini-calendars at the same time.",
     "issues": [],
-    "stars": 12,
+    "stars": 15,
     "license": "MIT"
   },
   {
@@ -7446,7 +7468,6 @@
     "description": "Play any music found on a USB Key or in defined local directory.",
     "issues": [],
     "stars": 3,
-    "hasGithubIssues": false,
     "license": "MIT"
   },
   {
@@ -7494,7 +7515,7 @@
     "maintainerURL": "",
     "description": "Same functionality as the default Calendar app but different display formatting.",
     "issues": [],
-    "stars": 4,
+    "stars": 5,
     "hasGithubIssues": false
   },
   {
@@ -7506,7 +7527,7 @@
     "maintainerURL": "",
     "description": "Displays your commute times to several destinations. Highly configurable.",
     "issues": [],
-    "stars": 37
+    "stars": 38
   },
   {
     "name": "MMM-mycroft-bridge",
@@ -7529,7 +7550,7 @@
     "maintainerURL": "",
     "description": "Displays local Dutch weather from the KNMI 10-minutes netwerk.",
     "issues": [],
-    "stars": 4,
+    "stars": 5,
     "license": "MIT"
   },
   {
@@ -7541,7 +7562,7 @@
     "maintainerURL": "",
     "description": "Displays your Custom Garbage Calendar.",
     "issues": [],
-    "stars": 31,
+    "stars": 32,
     "license": "MIT"
   },
   {
@@ -7590,7 +7611,7 @@
     "maintainerURL": "",
     "description": "Display today's scores for your favourite teams across multiple sports.",
     "issues": [],
-    "stars": 65,
+    "stars": 69,
     "license": "MIT"
   },
   {
@@ -7638,7 +7659,7 @@
     "maintainerURL": "",
     "description": "Display ESPN standings for major US Sports and international soccer leagues.",
     "issues": [],
-    "stars": 13
+    "stars": 14
   },
   {
     "name": "MMM-MyStudyLife",
@@ -7649,7 +7670,7 @@
     "maintainerURL": "",
     "description": "Displays upcoming classes, tasks and exams from the <a target=\"_blank\" href=\"https://www.mystudylife.com\">My Study Life</a> app and website.",
     "issues": [],
-    "stars": 9,
+    "stars": 11,
     "license": "MIT"
   },
   {
@@ -7851,7 +7872,7 @@
     "maintainerURL": "https://github.com/mtatsuma",
     "description": "Displays sensor data collected by <a target=\"_blank\" href=\"https://en.nature.global\">Nature Remo</a> devices.",
     "issues": [],
-    "stars": 1,
+    "stars": 2,
     "license": "MIT"
   },
   {
@@ -9972,8 +9993,8 @@
     "url": "https://github.com/Dennis-Rosenbaum/MMM-Quiz",
     "id": "Dennis-Rosenbaum/MMM-Quiz",
     "maintainer": "Dennis-Rosenbaum",
-    "maintainerURL": "",
-    "description": "Add a multiple choice quiz. Random questions are loaded usng the <a target=\"_blank\" href=\"https://the-trivia-api.com/\">Trivia API</a>.",
+    "maintainerURL": "https://github.com/Dennis-Rosenbaum",
+    "description": "Add a multiple choice quiz. Random questions are loaded usng the <a target=\"_blank\" href=\"https://the-trivia-api.com\">Trivia API</a>.",
     "issues": []
   },
   {
@@ -9997,6 +10018,16 @@
     "description": "Show a random quote from an online collection of quotations by authors, celebrities, and newsmakers. Multi language supported.",
     "issues": [],
     "stars": 28
+  },
+  {
+    "name": "MMM-Radarr",
+    "category": "Utility / IOT / 3rd Party / Integration",
+    "url": "https://github.com/gravitykillseverything/MMM-Radarr",
+    "id": "gravitykillseverything/MMM-Radarr",
+    "maintainer": "gravitykillseverything",
+    "maintainerURL": "",
+    "description": "Displays recent downloads and upcoming monitored movies from Radarr.",
+    "issues": []
   },
   {
     "name": "EXT-RadioPlayer",
@@ -11497,6 +11528,16 @@
     "license": "MIT"
   },
   {
+    "name": "MMM-Sonarr",
+    "category": "Utility / IOT / 3rd Party / Integration",
+    "url": "https://github.com/gravitykillseverything/MMM-Sonarr",
+    "id": "gravitykillseverything/MMM-Sonarr",
+    "maintainer": "gravitykillseverything",
+    "maintainerURL": "",
+    "description": "Displays recent downloads and upcoming monitored TV Shows from Sonarr.",
+    "issues": []
+  },
+  {
     "name": "MMM-Sonos",
     "category": "Utility / IOT / 3rd Party / Integration",
     "url": "https://github.com/CFenner/MMM-Sonos",
@@ -11866,6 +11907,16 @@
     "hasGithubIssues": false
   },
   {
+    "name": "MMM-SwissAlpLakes",
+    "category": "Weather",
+    "url": "https://github.com/lbartk/MMM-SwissAlpLakes",
+    "id": "lbartk/MMM-SwissAlpLakes",
+    "maintainer": "lbartk",
+    "maintainerURL": "https://github.com/lbartk",
+    "description": "Customized module for displaying water temperature in Swiss lakes based on updated API.",
+    "issues": []
+  },
+  {
     "name": "MMM-SwissCommute",
     "category": "Transport / Travel",
     "url": "https://github.com/nixnuex/MMM-SwissCommute",
@@ -11896,7 +11947,7 @@
     "id": "git-pesche/MMM-SwissSmartUrbanHeatMap",
     "maintainer": "git-pesche",
     "maintainerURL": "",
-    "description": "Allows you to view climatic data from stations of the measuring network <a target=\"_blank\" href=\"https://smart-urban-heat-map.ch/\">Smart Urban Heat Map Bern</a> (temperature &amp; humidity).",
+    "description": "Allows you to view climatic data from stations of the measuring network <a target=\"_blank\" href=\"https://smart-urban-heat-map.ch\">Smart Urban Heat Map Bern</a> (temperature &amp; humidity).",
     "issues": []
   },
   {
@@ -13600,6 +13651,16 @@
     "issues": [],
     "stars": 26,
     "license": "MIT"
+  },
+  {
+    "name": "MMM-whoshome",
+    "category": "Utility / IOT / 3rd Party / Integration",
+    "url": "https://github.com/yedidiaklein/MMM-whoshome",
+    "id": "yedidiaklein/MMM-whoshome",
+    "maintainer": "yedidiaklein",
+    "maintainerURL": "",
+    "description": "Get info about who is home, based on ping to cell phone. Like Mrs. Weasley clock.",
+    "issues": []
   },
   {
     "name": "MMM-Widget",
