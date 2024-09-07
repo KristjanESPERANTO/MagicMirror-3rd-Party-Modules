@@ -988,6 +988,28 @@
   {
     "name": "MMM-bergfex",
     "category": "Weather",
+    "url": "https://gitlab.com/MajorChris1983/MMM-bergfex",
+    "id": "MajorChris1983/MMM-bergfex",
+    "maintainer": "MajorChris1983",
+    "maintainerURL": "",
+    "description": "Displays snow reports from bergfex.at, forked version. Countries provided by bergfex.at can be configured and set.",
+    "issues": [],
+    "stars": 3,
+    "tags": [
+      "bergfex",
+      "weather",
+      "forecast",
+      "snow",
+      "forecast",
+      "skiing",
+      "snowboarding"
+    ],
+    "license": "Apache-2.0",
+    "image": "screenshot.jpg"
+  },
+  {
+    "name": "MMM-bergfex",
+    "category": "Weather",
     "url": "https://github.com/nebulx29/MMM-bergfex",
     "id": "nebulx29/MMM-bergfex",
     "maintainer": "nebulx29",
@@ -1007,28 +1029,6 @@
       "skiing",
       "austria"
     ]
-  },
-  {
-    "name": "MMM-bergfex",
-    "category": "Weather",
-    "url": "https://gitlab.com/MajorChris1983/MMM-bergfex",
-    "id": "MajorChris1983/MMM-bergfex",
-    "maintainer": "MajorChris1983",
-    "maintainerURL": "",
-    "description": "Displays snow reports from bergfex.at, forked version. Countries provided by bergfex.at can be configured and set.",
-    "issues": [],
-    "stars": 3,
-    "tags": [
-      "bergfex",
-      "weather",
-      "forecast",
-      "snow",
-      "forecast",
-      "skiing",
-      "snowboarding"
-    ],
-    "license": "Apache-2.0",
-    "image": "screenshot.jpg"
   },
   {
     "name": "MMM-bernwordclock",
@@ -11902,11 +11902,12 @@
     "maintainerURL": "https://github.com/taylornoss",
     "description": "Displays the medals for the Olympic games. Works for both summer and winter Olympics.",
     "issues": [],
+    "stars": 2,
+    "license": "MIT",
     "tags": [
       "olympic",
       "medal"
     ],
-    "license": "MIT",
     "image": "images-Abbreviations.jpg"
   },
   {
@@ -12921,7 +12922,10 @@
     "description": "Show the ping time based on a websocket connection.",
     "issues": [
       "There is no `package.json`. We need this file to gather information about the module for the module list page."
-    ]
+    ],
+    "stars": 1,
+    "license": "MIT",
+    "image": ".github-discon-preview.jpg"
   },
   {
     "name": "MMM-Pir",
@@ -13865,12 +13869,13 @@
     "maintainerURL": "https://github.com/Dennis-Rosenbaum",
     "description": "Add a multiple choice quiz. Random questions are loaded usng the <a target=\"_blank\" href=\"https://the-trivia-api.com\">Trivia API</a>.",
     "issues": [],
+    "stars": 0,
+    "license": "MIT",
     "tags": [
       "quiz",
       "entertainment",
       "interactive"
     ],
-    "license": "MIT",
     "image": "example_1.jpg"
   },
   {
@@ -13911,8 +13916,11 @@
     "maintainerURL": "",
     "description": "Displays recent downloads and upcoming monitored movies from Radarr.",
     "issues": [
-      "There is no `package.json`. We need this file to gather information about the module for the module list page."
-    ]
+      "There is no `package.json`. We need this file to gather information about the module for the module list page.",
+      "No image found."
+    ],
+    "stars": 0,
+    "license": "MIT"
   },
   {
     "name": "EXT-RadioPlayer",
@@ -15715,13 +15723,14 @@
     "maintainerURL": "https://wiki.bugsounet.fr",
     "description": "Control MMM-GoogleAssistant with your smartphone from Google Home app.",
     "issues": [],
+    "stars": 1,
+    "license": "MIT",
     "tags": [
       "mmm-googleassistant",
       "interface",
       "smart home",
       "ext"
     ],
-    "license": "MIT",
     "image": "website-assets-img-google-home.jpg"
   },
   {
@@ -16018,8 +16027,11 @@
     "maintainerURL": "",
     "description": "Displays recent downloads and upcoming monitored TV Shows from Sonarr.",
     "issues": [
-      "There is no `package.json`. We need this file to gather information about the module for the module list page."
-    ]
+      "There is no `package.json`. We need this file to gather information about the module for the module list page.",
+      "No image found."
+    ],
+    "stars": 0,
+    "license": "MIT"
   },
   {
     "name": "MMM-Sonos",
@@ -16398,7 +16410,10 @@
     "description": "Shows the map of your last public activity uploaded to <a target=\"_blank\" href=\"https://www.strava.com\">Strava</a> along with the title, date, distance and time.",
     "issues": [
       "There is no `package.json`. We need this file to gather information about the module for the module list page."
-    ]
+    ],
+    "stars": 1,
+    "license": "MIT",
+    "image": "public-assets-images-StravaLastActivityMapScreenshot.jpg"
   },
   {
     "name": "MMM-StravaWeekInBike",
@@ -16533,8 +16548,11 @@
     "maintainerURL": "https://github.com/lbartk",
     "description": "Customized module for displaying water temperature in Swiss lakes based on updated API.",
     "issues": [
-      "There is no `package.json`. We need this file to gather information about the module for the module list page."
-    ]
+      "There is no `package.json`. We need this file to gather information about the module for the module list page.",
+      "No image found."
+    ],
+    "stars": 0,
+    "license": "MIT"
   },
   {
     "name": "MMM-SwissCommute",
@@ -16577,7 +16595,10 @@
     "description": "Allows you to view climatic data from stations of the measuring network <a target=\"_blank\" href=\"https://smart-urban-heat-map.ch\">Smart Urban Heat Map Bern</a> (temperature &amp; humidity).",
     "issues": [
       "There is no `package.json`. We need this file to gather information about the module for the module list page."
-    ]
+    ],
+    "stars": 1,
+    "license": "Apache-2.0",
+    "image": "display.jpg"
   },
   {
     "name": "MMM-SwissStationboard",
@@ -16674,7 +16695,8 @@
     "description": "Get a lot of system stats from a PC board like CPU usage, ram usage, disk usage, CPU temperature, volume, internet status and private IP and status, beside that you can configure your WiFi network to create a QR code.",
     "issues": [
       "There is no `package.json`. We need this file to gather information about the module for the module list page."
-    ]
+    ],
+    "stars": 4
   },
   {
     "name": "MMM-SystemMonitor",
@@ -16844,10 +16866,11 @@
     "maintainerURL": "",
     "description": "Interact with your mirror via Telegram. Revamped 2024.",
     "issues": [],
+    "stars": 26,
+    "license": "MIT",
     "tags": [
       "telegram"
     ],
-    "license": "MIT",
     "image": "sc_fullsize.jpg"
   },
   {
@@ -17112,7 +17135,8 @@
     "description": "Display upcoming rocket launch data from TheSpaceDevs API in a table or detail view.",
     "issues": [
       "There is no `package.json`. We need this file to gather information about the module for the module list page."
-    ]
+    ],
+    "stars": 0
   },
   {
     "name": "MMM-Thingiverse",
@@ -17323,21 +17347,6 @@
     "stars": 12
   },
   {
-    "name": "MMM-Touch",
-    "category": "Utility / IOT / 3rd Party / Integration",
-    "url": "https://github.com/gfischershaw/MMM-Touch",
-    "id": "gfischershaw/MMM-Touch",
-    "maintainer": "gfischershaw",
-    "maintainerURL": "",
-    "description": "Universal touch gesture commander using touchscreen.",
-    "issues": [
-      "There is no `package.json`. We need this file to gather information about the module for the module list page."
-    ],
-    "stars": 12,
-    "license": "MIT",
-    "image": "MMM-Touch.jpg"
-  },
-  {
     "name": "EXT-Touch",
     "category": "Extended plugins for MMM-GoogleAssistant",
     "url": "https://github.com/bugsounet/EXT-Touch",
@@ -17353,6 +17362,21 @@
       "touch"
     ],
     "image": "resources-google.jpg"
+  },
+  {
+    "name": "MMM-Touch",
+    "category": "Utility / IOT / 3rd Party / Integration",
+    "url": "https://github.com/gfischershaw/MMM-Touch",
+    "id": "gfischershaw/MMM-Touch",
+    "maintainer": "gfischershaw",
+    "maintainerURL": "",
+    "description": "Universal touch gesture commander using touchscreen.",
+    "issues": [
+      "There is no `package.json`. We need this file to gather information about the module for the module list page."
+    ],
+    "stars": 12,
+    "license": "MIT",
+    "image": "MMM-Touch.jpg"
   },
   {
     "name": "MMM-TouchButton",
@@ -17594,7 +17618,11 @@
     "maintainer": "benjaminflessner",
     "maintainerURL": "",
     "description": "This module can show <a target=\"_blank\" href=\"https://trello.com\">Trello</a> cards on your mirror.",
-    "issues": [],
+    "issues": [
+      "Issues are not enabled in the GitHub repository. So users cannot report bugs. Please enable issues in your repo."
+    ],
+    "stars": 2,
+    "hasGithubIssues": false,
     "tags": [
       "trello"
     ],
@@ -18034,6 +18062,7 @@
     "maintainerURL": "https://github.com/xadamxk",
     "description": "Display Valorant Esports league schedules on your magic mirror.",
     "issues": [],
+    "stars": 0,
     "tags": [
       "esports",
       "valorant"
@@ -18244,13 +18273,14 @@
     "maintainerURL": "https://wiki.bugsounet.fr",
     "description": "This plugin play wanted media on MagicMirror² with VLC.",
     "issues": [],
+    "stars": 0,
+    "license": "MIT",
     "tags": [
       "mmm-googleassistant",
       "vlc",
       "media",
       "player"
     ],
-    "license": "MIT",
     "image": "vlc-logo.jpg"
   },
   {
@@ -18330,6 +18360,8 @@
     "maintainerURL": "",
     "description": "A voice-activated assistant module using OpenAI's Whisper for speech recognition and GPT for natural language processing. This module allows users to interact with their MagicMirror using voice commands, enhancing the smart mirror experience with AI-powered conversations and information retrieval.",
     "issues": [],
+    "stars": 3,
+    "license": "MIT",
     "tags": [
       "voice assistant",
       "voice control",
@@ -18338,7 +18370,6 @@
       "gpt",
       "porcupine"
     ],
-    "license": "MIT",
     "image": "screenshot-logo.jpg"
   },
   {
@@ -18802,13 +18833,14 @@
     "maintainerURL": "https://wiki.bugsounet.fr",
     "description": "Application to configure MMM-GoogleAssistant from your browser.",
     "issues": [],
+    "stars": 0,
+    "license": "MIT",
     "tags": [
       "mmm-googleassistant",
       "interface",
       "website",
       "ext"
     ],
-    "license": "MIT",
     "image": "website-assets-img-FavIcon.jpg"
   },
   {
@@ -18993,7 +19025,8 @@
       "`package.json` issue: No repository field.",
       "`package.json` issue: No license field.",
       "There are no keywords in 'package.json'. We would use them as tags on the module list page."
-    ]
+    ],
+    "stars": 3
   },
   {
     "name": "MMM-Widget",
@@ -19168,6 +19201,7 @@
     "issues": [
       "There are no specific keywords in 'package.json'. We would use them as tags on the module list page. Add a few meaningful terms to the keywords in the package.json. Not just “magicmirror” or “module”."
     ],
+    "stars": 4,
     "license": "MIT",
     "image": "image-1.jpg"
   },
@@ -19301,7 +19335,7 @@
       "There are no keywords in 'package.json'. We would use them as tags on the module list page.",
       "No image found."
     ],
-    "stars": 4,
+    "stars": 5,
     "license": "MIT"
   },
   {
@@ -19368,7 +19402,7 @@
     "issues": [
       "There is no `package.json`. We need this file to gather information about the module for the module list page."
     ],
-    "stars": 2
+    "stars": 3
   },
   {
     "name": "MMM-YNAB",
@@ -19383,7 +19417,7 @@
       "`package.json` issue: No repository field.",
       "There are no keywords in 'package.json'. We would use them as tags on the module list page."
     ],
-    "stars": 4,
+    "stars": 5,
     "license": "ISC",
     "image": "screenshot.jpg"
   },
@@ -19427,11 +19461,8 @@
     "maintainer": "bugsounet",
     "maintainerURL": "https://wiki.bugsounet.fr",
     "description": "This plugins allows to play YouTube video.",
-    "issues": [
-      "Issues are not enabled in the GitHub repository. So users cannot report bugs. Please enable issues in your repo."
-    ],
+    "issues": [],
     "stars": 3,
-    "hasGithubIssues": false,
     "license": "MIT",
     "tags": [
       "mmm-googleassistant",
@@ -19450,7 +19481,7 @@
     "issues": [
       "There is no `package.json`. We need this file to gather information about the module for the module list page."
     ],
-    "stars": 21
+    "stars": 22
   },
   {
     "name": "MMM-YouTube-Live-Stream",

@@ -1015,27 +1015,6 @@
   {
     "name": "MMM-bergfex",
     "category": "Weather",
-    "url": "https://github.com/nebulx29/MMM-bergfex",
-    "id": "nebulx29/MMM-bergfex",
-    "maintainer": "nebulx29",
-    "maintainerURL": "",
-    "description": "Displays snow reports from bergfex.at.",
-    "issues": true,
-    "stars": 8,
-    "license": "Apache-2.0",
-    "tags": [
-      "bergfex",
-      "weather forecast",
-      "snow forecast",
-      "skiing",
-      "austria"
-    ],
-    "defaultSortWeight": 8,
-    "lastCommit": "2019-01-31T20:52:58+01:00"
-  },
-  {
-    "name": "MMM-bergfex",
-    "category": "Weather",
     "url": "https://gitlab.com/MajorChris1983/MMM-bergfex",
     "id": "MajorChris1983/MMM-bergfex",
     "maintainer": "MajorChris1983",
@@ -1056,6 +1035,27 @@
     "image": "screenshot.jpg",
     "defaultSortWeight": 3,
     "lastCommit": "2021-08-25T21:58:19+02:00"
+  },
+  {
+    "name": "MMM-bergfex",
+    "category": "Weather",
+    "url": "https://github.com/nebulx29/MMM-bergfex",
+    "id": "nebulx29/MMM-bergfex",
+    "maintainer": "nebulx29",
+    "maintainerURL": "",
+    "description": "Displays snow reports from bergfex.at.",
+    "issues": true,
+    "stars": 8,
+    "license": "Apache-2.0",
+    "tags": [
+      "bergfex",
+      "weather forecast",
+      "snow forecast",
+      "skiing",
+      "austria"
+    ],
+    "defaultSortWeight": 8,
+    "lastCommit": "2019-01-31T20:52:58+01:00"
   },
   {
     "name": "MMM-bernwordclock",
@@ -5683,7 +5683,7 @@
     ],
     "image": "resources-previewFS.jpg",
     "defaultSortWeight": -2,
-    "lastCommit": "2024-08-15T14:53:40+02:00"
+    "lastCommit": "2024-09-07T13:04:38+02:00"
   },
   {
     "name": "MMM-GoogleAssistant",
@@ -12024,11 +12024,12 @@
     "maintainerURL": "https://github.com/taylornoss",
     "description": "Displays the medals for the Olympic games. Works for both summer and winter Olympics.",
     "issues": true,
+    "stars": 2,
+    "license": "MIT",
     "tags": [
       "olympic",
       "medal"
     ],
-    "license": "MIT",
     "image": "images-Abbreviations.jpg",
     "defaultSortWeight": 5,
     "lastCommit": "2024-07-24T10:29:05-04:00"
@@ -13053,6 +13054,9 @@
     "maintainerURL": "",
     "description": "Show the ping time based on a websocket connection.",
     "issues": true,
+    "stars": 1,
+    "license": "MIT",
+    "image": ".github-discon-preview.jpg",
     "defaultSortWeight": 2,
     "lastCommit": "2024-08-08T11:57:14+02:00"
   },
@@ -13994,12 +13998,13 @@
     "maintainerURL": "https://github.com/Dennis-Rosenbaum",
     "description": "Add a multiple choice quiz. Random questions are loaded usng the <a target=\"_blank\" href=\"https://the-trivia-api.com\">Trivia API</a>.",
     "issues": false,
+    "stars": 0,
+    "license": "MIT",
     "tags": [
       "quiz",
       "entertainment",
       "interactive"
     ],
-    "license": "MIT",
     "image": "example_1.jpg",
     "defaultSortWeight": -1,
     "lastCommit": "2024-09-07T08:30:06+02:00"
@@ -14044,7 +14049,9 @@
     "maintainerURL": "",
     "description": "Displays recent downloads and upcoming monitored movies from Radarr.",
     "issues": true,
-    "defaultSortWeight": 4,
+    "stars": 0,
+    "license": "MIT",
+    "defaultSortWeight": 5,
     "lastCommit": "2024-08-28T19:37:38-04:00"
   },
   {
@@ -15878,13 +15885,14 @@
     "maintainerURL": "https://wiki.bugsounet.fr",
     "description": "Control MMM-GoogleAssistant with your smartphone from Google Home app.<br /><br />This module has been defined to work only with MMM-GoogleAssistant.",
     "issues": true,
+    "stars": 1,
+    "license": "MIT",
     "tags": [
       "mmm-googleassistant",
       "interface",
       "smart home",
       "ext"
     ],
-    "license": "MIT",
     "image": "website-assets-img-google-home.jpg",
     "defaultSortWeight": 3,
     "lastCommit": "2024-07-01T16:56:54+02:00"
@@ -16187,7 +16195,9 @@
     "maintainerURL": "",
     "description": "Displays recent downloads and upcoming monitored TV Shows from Sonarr.",
     "issues": true,
-    "defaultSortWeight": 4,
+    "stars": 0,
+    "license": "MIT",
+    "defaultSortWeight": 5,
     "lastCommit": "2024-08-28T19:36:21-04:00"
   },
   {
@@ -16574,6 +16584,9 @@
     "maintainerURL": "https://github.com/tylerstambaugh",
     "description": "Shows the map of your last public activity uploaded to <a target=\"_blank\" href=\"https://www.strava.com\">Strava</a> along with the title, date, distance and time.",
     "issues": true,
+    "stars": 1,
+    "license": "MIT",
+    "image": "public-assets-images-StravaLastActivityMapScreenshot.jpg",
     "defaultSortWeight": 4,
     "lastCommit": "2024-06-01T16:11:36-04:00"
   },
@@ -16711,7 +16724,9 @@
     "maintainerURL": "https://github.com/lbartk",
     "description": "Customized module for displaying water temperature in Swiss lakes based on updated API.",
     "issues": true,
-    "defaultSortWeight": 3,
+    "stars": 0,
+    "license": "MIT",
+    "defaultSortWeight": 4,
     "lastCommit": "2024-08-30T23:40:58+02:00"
   },
   {
@@ -16752,6 +16767,9 @@
     "maintainerURL": "",
     "description": "Allows you to view climatic data from stations of the measuring network <a target=\"_blank\" href=\"https://smart-urban-heat-map.ch\">Smart Urban Heat Map Bern</a> (temperature &amp; humidity).",
     "issues": true,
+    "stars": 1,
+    "license": "Apache-2.0",
+    "image": "display.jpg",
     "defaultSortWeight": 3,
     "lastCommit": "2024-07-13T09:41:19+02:00"
   },
@@ -16848,6 +16866,7 @@
     "maintainerURL": "https://github.com/dientuki",
     "description": "Get a lot of system stats from a PC board like CPU usage, ram usage, disk usage, CPU temperature, volume, internet status and private IP and status, beside that you can configure your WiFi network to create a QR code.",
     "issues": true,
+    "stars": 4,
     "defaultSortWeight": 4,
     "lastCommit": "2024-05-03T19:54:54-03:00"
   },
@@ -17023,12 +17042,13 @@
     "maintainerURL": "",
     "description": "Interact with your mirror via Telegram. Revamped 2024.",
     "issues": true,
+    "stars": 26,
+    "license": "MIT",
     "tags": [
       "telegram"
     ],
-    "license": "MIT",
     "image": "sc_fullsize.jpg",
-    "defaultSortWeight": 6,
+    "defaultSortWeight": 5,
     "lastCommit": "2024-06-18T20:34:01+02:00"
   },
   {
@@ -17291,6 +17311,7 @@
     "maintainerURL": "https://github.com/AlexMNet",
     "description": "Display upcoming rocket launch data from TheSpaceDevs API in a table or detail view.",
     "issues": true,
+    "stars": 0,
     "defaultSortWeight": 3,
     "lastCommit": "2024-07-17T21:36:17-07:00"
   },
@@ -17511,21 +17532,6 @@
     "lastCommit": "2020-05-10T15:08:01+02:00"
   },
   {
-    "name": "MMM-Touch",
-    "category": "Utility / IOT / 3rd Party / Integration",
-    "url": "https://github.com/gfischershaw/MMM-Touch",
-    "id": "gfischershaw/MMM-Touch",
-    "maintainer": "gfischershaw",
-    "maintainerURL": "",
-    "description": "Universal touch gesture commander using touchscreen.",
-    "issues": true,
-    "stars": 12,
-    "license": "MIT",
-    "image": "MMM-Touch.jpg",
-    "defaultSortWeight": 3,
-    "lastCommit": "2020-10-24T00:16:43+02:00"
-  },
-  {
     "name": "EXT-Touch",
     "category": "Extended plugins for MMM-GoogleAssistant",
     "url": "https://github.com/bugsounet/EXT-Touch",
@@ -17543,6 +17549,21 @@
     "image": "resources-google.jpg",
     "defaultSortWeight": 4,
     "lastCommit": "2024-07-01T16:55:27+02:00"
+  },
+  {
+    "name": "MMM-Touch",
+    "category": "Utility / IOT / 3rd Party / Integration",
+    "url": "https://github.com/gfischershaw/MMM-Touch",
+    "id": "gfischershaw/MMM-Touch",
+    "maintainer": "gfischershaw",
+    "maintainerURL": "",
+    "description": "Universal touch gesture commander using touchscreen.",
+    "issues": true,
+    "stars": 12,
+    "license": "MIT",
+    "image": "MMM-Touch.jpg",
+    "defaultSortWeight": 3,
+    "lastCommit": "2020-10-24T00:16:43+02:00"
   },
   {
     "name": "MMM-TouchButton",
@@ -17789,12 +17810,14 @@
     "maintainerURL": "",
     "description": "This module can show <a target=\"_blank\" href=\"https://trello.com\">Trello</a> cards on your mirror.",
     "issues": true,
+    "stars": 2,
+    "hasGithubIssues": false,
     "tags": [
       "trello"
     ],
     "license": "MIT",
     "image": ".github-mirrorcard.jpg",
-    "defaultSortWeight": 6,
+    "defaultSortWeight": 7,
     "lastCommit": "2024-05-01T15:43:18-05:00"
   },
   {
@@ -18236,6 +18259,7 @@
     "maintainerURL": "https://github.com/xadamxk",
     "description": "Display Valorant Esports league schedules on your magic mirror.",
     "issues": true,
+    "stars": 0,
     "tags": [
       "esports",
       "valorant"
@@ -18449,13 +18473,14 @@
     "maintainerURL": "https://wiki.bugsounet.fr",
     "description": "This plugin play wanted media on MagicMirror\u00b2 with VLC.<br /><br />This module has been defined to work only with MMM-GoogleAssistant.",
     "issues": true,
+    "stars": 0,
+    "license": "MIT",
     "tags": [
       "mmm-googleassistant",
       "vlc",
       "media",
       "player"
     ],
-    "license": "MIT",
     "image": "vlc-logo.jpg",
     "defaultSortWeight": 3,
     "lastCommit": "2024-07-01T17:06:25+02:00"
@@ -18536,6 +18561,8 @@
     "maintainerURL": "",
     "description": "A voice-activated assistant module using OpenAI's Whisper for speech recognition and GPT for natural language processing. This module allows users to interact with their MagicMirror using voice commands, enhancing the smart mirror experience with AI-powered conversations and information retrieval.",
     "issues": false,
+    "stars": 3,
+    "license": "MIT",
     "tags": [
       "voice assistant",
       "voice control",
@@ -18544,7 +18571,6 @@
       "gpt",
       "porcupine"
     ],
-    "license": "MIT",
     "image": "screenshot-logo.jpg",
     "defaultSortWeight": -1,
     "lastCommit": "2024-08-30T15:13:45+02:00"
@@ -19006,13 +19032,14 @@
     "maintainerURL": "https://wiki.bugsounet.fr",
     "description": "Application to configure MMM-GoogleAssistant from your browser.<br /><br />This module has been defined to work only with MMM-GoogleAssistant.",
     "issues": true,
+    "stars": 0,
+    "license": "MIT",
     "tags": [
       "mmm-googleassistant",
       "interface",
       "website",
       "ext"
     ],
-    "license": "MIT",
     "image": "website-assets-img-FavIcon.jpg",
     "defaultSortWeight": 5,
     "lastCommit": "2024-08-15T14:53:13+02:00"
@@ -19196,6 +19223,7 @@
     "maintainerURL": "",
     "description": "Get info about who is home, based on ping to cell phone. Like Mrs. Weasley clock.",
     "issues": true,
+    "stars": 3,
     "defaultSortWeight": 8,
     "lastCommit": "2024-09-02T08:20:06+03:00"
   },
@@ -19375,6 +19403,7 @@
     "maintainerURL": "",
     "description": "Yet another word of the day module. The special feature of this module is that you can select multiple languages and it will display as a carousel.",
     "issues": true,
+    "stars": 4,
     "license": "MIT",
     "image": "image-1.jpg",
     "defaultSortWeight": 5,
@@ -19500,7 +19529,7 @@
     "maintainerURL": "https://github.com/jupadin",
     "description": "Displays either the daily XKCD comic or a random XKCD comic.",
     "issues": true,
-    "stars": 4,
+    "stars": 5,
     "license": "MIT",
     "defaultSortWeight": 13,
     "lastCommit": "2022-02-23T19:14:36+01:00"
@@ -19569,7 +19598,7 @@
     "maintainerURL": "",
     "description": "Instead of default compliments with classical poems, just supports Chinese.\u968f\u673a\u4ea7\u751f\u4e00\u53e5\u53e4\u8bd7\u8bcd\u3002.",
     "issues": true,
-    "stars": 2,
+    "stars": 3,
     "defaultSortWeight": 6,
     "lastCommit": "2020-04-11T16:03:58+08:00"
   },
@@ -19582,7 +19611,7 @@
     "maintainerURL": "",
     "description": "Displays categories of your choosing from your YNAB budget.",
     "issues": true,
-    "stars": 4,
+    "stars": 5,
     "license": "ISC",
     "image": "screenshot.jpg",
     "defaultSortWeight": 8,
@@ -19634,14 +19663,13 @@
     "description": "This plugins allows to play YouTube video.<br /><br />This module has been defined to work only with MMM-GoogleAssistant.",
     "issues": true,
     "stars": 3,
-    "hasGithubIssues": false,
     "license": "MIT",
     "tags": [
       "mmm-googleassistant",
       "youtube"
     ],
     "image": "resources-Screenshot1.jpg",
-    "defaultSortWeight": 5,
+    "defaultSortWeight": 4,
     "lastCommit": "2024-07-01T17:07:42+02:00"
   },
   {
@@ -19653,7 +19681,7 @@
     "maintainerURL": "",
     "description": "Enables easy integration of YouTube videos.",
     "issues": true,
-    "stars": 21,
+    "stars": 22,
     "defaultSortWeight": 6,
     "lastCommit": "2018-01-12T13:46:23+01:00"
   },

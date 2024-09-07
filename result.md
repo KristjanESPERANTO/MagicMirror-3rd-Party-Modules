@@ -1,6 +1,6 @@
 # Result of the module analysis
 
-Last update: 2024-09-07T12:22:56+02:00
+Last update: 2024-09-07T13:17:00+02:00
 
 ## Statistics
 
@@ -9,7 +9,7 @@ Last update: 2024-09-07T12:22:56+02:00
 | modules analyzed     |   1183   |
 | maintainer           |    664   |
 | modules with issues  |   1164   |
-| issues               |   7254   |
+| issues               |   7257   |
 | modules at github    |   1172   |
 | modules at gitlab    |     10   |
 | modules at bitbucket |      1   |
@@ -537,6 +537,11 @@ Last update: 2024-09-07T12:22:56+02:00
 3. Typo: Found `Magic Mirror` in file `package.json`: Replace it with `MagicMirror²`.
 4. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
 
+### [MMM-bergfex by MajorChris1983](https://gitlab.com/MajorChris1983/MMM-bergfex)
+
+1. Deprecated: Found `require('request')` in file `node_helper.js`: Replace it with built-in fetch.
+2. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
+
 ### [MMM-bergfex by nebulx29](https://github.com/nebulx29/MMM-bergfex)
 
 1. `package.json` issue: license should be a valid SPDX license expression
@@ -546,11 +551,6 @@ Last update: 2024-09-07T12:22:56+02:00
 5. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
 6. Deprecated: Found `require('request')` in file `node_helper.js`: Replace it with built-in fetch.
 7. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
-
-### [MMM-bergfex by MajorChris1983](https://gitlab.com/MajorChris1983/MMM-bergfex)
-
-1. Deprecated: Found `require('request')` in file `node_helper.js`: Replace it with built-in fetch.
-2. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
 
 ### [MMM-bernwordclock by splattner](https://github.com/splattner/MMM-bernwordclock)
 
@@ -3072,16 +3072,12 @@ Last update: 2024-09-07T12:22:56+02:00
 
 ### [MMM-GoogleAssistant by bugsounet](https://github.com/bugsounet/MMM-GoogleAssistant)
 
-1. Information: There are updates for 9 dependencie(s):
+1. Information: There are updates for 5 dependencie(s):
    - @eslint/js                ^8.57.0  →  ^9.10.0
-   - @grpc/grpc-js             ^1.11.1  →  ^1.11.2
    - @stylistic/eslint-plugin   ^1.8.1  →   ^2.7.2
-   - esbuild                   ^0.23.0  →  ^0.23.1
    - eslint                    ^8.57.0  →  ^9.10.0
    - eslint-plugin-import      ^2.29.1  →  ^2.30.0
    - glob                      ^10.4.5  →  ^11.0.0
-   - google-auth-library       ^9.13.0  →  ^9.14.1
-   - protobufjs                 ^7.3.2  →   ^7.4.0
 
 
 ### [MMM-GoogleAssistant by gauravsacc](https://github.com/gauravsacc/MMM-GoogleAssistant)
@@ -7818,10 +7814,11 @@ Last update: 2024-09-07T12:22:56+02:00
 ### [MMM-Radarr by gravitykillseverything](https://github.com/gravitykillseverything/MMM-Radarr)
 
 1. There is no `package.json`. We need this file to gather information about the module for the module list page.
-2. Recommendation: Found `require("http")` in file `node_helper.js`: Replace "http" by "node:http".
-3. Recommendation: Found `require("https")` in file `node_helper.js`: Replace "https" by "node:https".
-4. Recommendation: Found `new Date()` in file `node_helper.js`: Consider replacing it by `new Date(Date.now())`. It's helpfull for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
-5. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
+2. No image found.
+3. Recommendation: Found `require("http")` in file `node_helper.js`: Replace "http" by "node:http".
+4. Recommendation: Found `require("https")` in file `node_helper.js`: Replace "https" by "node:https".
+5. Recommendation: Found `new Date()` in file `node_helper.js`: Consider replacing it by `new Date(Date.now())`. It's helpfull for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
+6. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
 
 ### [EXT-RadioPlayer by bugsounet](https://github.com/bugsounet/EXT-RadioPlayer)
 
@@ -8997,10 +8994,11 @@ Last update: 2024-09-07T12:22:56+02:00
 ### [MMM-Sonarr by gravitykillseverything](https://github.com/gravitykillseverything/MMM-Sonarr)
 
 1. There is no `package.json`. We need this file to gather information about the module for the module list page.
-2. Recommendation: Found `require("http")` in file `node_helper.js`: Replace "http" by "node:http".
-3. Recommendation: Found `require("https")` in file `node_helper.js`: Replace "https" by "node:https".
-4. Recommendation: Found `new Date()` in file `node_helper.js`: Consider replacing it by `new Date(Date.now())`. It's helpfull for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
-5. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
+2. No image found.
+3. Recommendation: Found `require("http")` in file `node_helper.js`: Replace "http" by "node:http".
+4. Recommendation: Found `require("https")` in file `node_helper.js`: Replace "https" by "node:https".
+5. Recommendation: Found `new Date()` in file `node_helper.js`: Consider replacing it by `new Date(Date.now())`. It's helpfull for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
+6. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
 
 ### [MMM-Sonos by CFenner](https://github.com/CFenner/MMM-Sonos)
 
@@ -9306,9 +9304,10 @@ Last update: 2024-09-07T12:22:56+02:00
 ### [MMM-SwissAlpLakes by lbartk](https://github.com/lbartk/MMM-SwissAlpLakes)
 
 1. There is no `package.json`. We need this file to gather information about the module for the module list page.
-2. Recommendation: Found `new Date()` in file `MMM-SwissAlpLakes.js`: Consider replacing it by `new Date(Date.now())`. It's helpfull for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
-3. Deprecated: Found `require("request")` in file `node_helper.js`: Replace it with built-in fetch.
-4. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
+2. No image found.
+3. Recommendation: Found `new Date()` in file `MMM-SwissAlpLakes.js`: Consider replacing it by `new Date(Date.now())`. It's helpfull for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
+4. Deprecated: Found `require("request")` in file `node_helper.js`: Replace it with built-in fetch.
+5. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
 
 ### [MMM-SwissCommute by nixnuex](https://github.com/nixnuex/MMM-SwissCommute)
 
@@ -9757,16 +9756,16 @@ Last update: 2024-09-07T12:22:56+02:00
 6. Warning: No LICENSE file.
 7. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
 
+### [EXT-Touch by bugsounet](https://github.com/bugsounet/EXT-Touch)
+
+1. Recommendation: The README seems not to have an update instruction (the word 'update' is missing). Please add one.
+2. Recommendation: The README seems not to have an install instruction (the words 'install' or 'installation' are missing). Please add one.
+
 ### [MMM-Touch by gfischershaw](https://github.com/gfischershaw/MMM-Touch)
 
 1. There is no `package.json`. We need this file to gather information about the module for the module list page.
 2. Recommendation: The README seems not to have an update instruction (the word 'update' is missing). Please add one.
 3. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
-
-### [EXT-Touch by bugsounet](https://github.com/bugsounet/EXT-Touch)
-
-1. Recommendation: The README seems not to have an update instruction (the word 'update' is missing). Please add one.
-2. Recommendation: The README seems not to have an install instruction (the words 'install' or 'installation' are missing). Please add one.
 
 ### [MMM-TouchButton by Tom-Hirschberger](https://github.com/Tom-Hirschberger/MMM-TouchButton)
 
@@ -9891,12 +9890,13 @@ Last update: 2024-09-07T12:22:56+02:00
 
 ### [MMM-Trello by benjaminflessner](https://github.com/benjaminflessner/MMM-Trello)
 
-1. Typo: Found `Magic Mirror` in file `MMM-Trello.js`: Replace it with `MagicMirror²`.
-2. Outdated: Found `MichMich/MagicMirror` in file `README.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
-3. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
-4. Typo: Found `Magic Mirror` in file `package.json`: Replace it with `MagicMirror²`.
-5. Warning: No LICENSE file.
-6. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
+1. Issues are not enabled in the GitHub repository. So users cannot report bugs. Please enable issues in your repo.
+2. Typo: Found `Magic Mirror` in file `MMM-Trello.js`: Replace it with `MagicMirror²`.
+3. Outdated: Found `MichMich/MagicMirror` in file `README.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
+4. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
+5. Typo: Found `Magic Mirror` in file `package.json`: Replace it with `MagicMirror²`.
+6. Warning: No LICENSE file.
+7. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
 
 ### [MMM-Tronity by robotfishe](https://github.com/robotfishe/MMM-Tronity)
 
@@ -10928,8 +10928,7 @@ Last update: 2024-09-07T12:22:56+02:00
 
 ### [EXT-YouTube by bugsounet](https://github.com/bugsounet/EXT-YouTube)
 
-1. Issues are not enabled in the GitHub repository. So users cannot report bugs. Please enable issues in your repo.
-2. Information: There are updates for 6 dependencie(s):
+1. Information: There are updates for 6 dependencie(s):
    - @eslint/js                ^8.57.0  →  ^9.10.0
    - @stylistic/eslint-plugin   ^1.8.1  →   ^2.7.2
    - esbuild                   ^0.22.0  →  ^0.23.1
