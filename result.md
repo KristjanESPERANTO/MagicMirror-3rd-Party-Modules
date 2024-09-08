@@ -1,6 +1,6 @@
 # Result of the module analysis
 
-Last update: 2024-09-07T13:17:00+02:00
+Last update: 2024-09-08T19:34:15+02:00
 
 ## Statistics
 
@@ -9,7 +9,7 @@ Last update: 2024-09-07T13:17:00+02:00
 | modules analyzed     |   1183   |
 | maintainer           |    664   |
 | modules with issues  |   1164   |
-| issues               |   7257   |
+| issues               |   7254   |
 | modules at github    |   1172   |
 | modules at gitlab    |     10   |
 | modules at bitbucket |      1   |
@@ -8478,13 +8478,27 @@ Last update: 2024-09-07T13:17:00+02:00
 
 ### [EXT-Selfies by bugsounet](https://github.com/bugsounet/EXT-Selfies)
 
-1. Issues are not enabled in the GitHub repository. So users cannot report bugs. Please enable issues in your repo.
-2. Recommendation: Found `XMLHttpRequest` in file `webcam.js`: Replace it with built-in fetch.
+1. Recommendation: Found `XMLHttpRequest` in file `webcam.js`: Replace it with built-in fetch.
+2. Information: There are updates for 6 dependencie(s):
+   - @eslint/js                ^8.57.0  →  ^9.10.0
+   - @stylistic/eslint-plugin   ^1.8.1  →   ^2.7.2
+   - esbuild                   ^0.22.0  →  ^0.23.1
+   - eslint                    ^8.57.0  →  ^9.10.0
+   - eslint-plugin-import      ^2.29.1  →  ^2.30.0
+   - glob                      ^10.4.2  →  ^11.0.0
+
 
 ### [EXT-SelfiesFlash by bugsounet](https://github.com/bugsounet/EXT-SelfiesFlash)
 
-1. Issues are not enabled in the GitHub repository. So users cannot report bugs. Please enable issues in your repo.
-2. No image found.
+1. No image found.
+2. Information: There are updates for 6 dependencie(s):
+   - @eslint/js                ^8.57.0  →  ^9.10.0
+   - @stylistic/eslint-plugin   ^1.8.1  →   ^2.7.2
+   - esbuild                   ^0.22.0  →  ^0.23.1
+   - eslint                    ^8.57.0  →  ^9.10.0
+   - eslint-plugin-import      ^2.29.1  →  ^2.30.0
+   - glob                      ^10.4.2  →  ^11.0.0
+
 
 ### [MMM-Selfieshot by BrianHepler](https://github.com/BrianHepler/MMM-Selfieshot)
 
@@ -9245,7 +9259,7 @@ Last update: 2024-09-07T13:17:00+02:00
    - eslint                     ^8.57.0  →  ^9.10.0
    - eslint-plugin-import       ^2.29.1  →  ^2.30.0
    - glob                       ^10.4.2  →  ^11.0.0
-   - jimp                      ^0.22.12  →   ^1.3.0
+   - jimp                      ^0.22.12  →   ^1.4.0
 
 
 ### [MMM-SugarValue by balharrie](https://github.com/balharrie/MMM-SugarValue)
@@ -9473,6 +9487,11 @@ Last update: 2024-09-07T13:17:00+02:00
 6. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
 7. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
 
+### [EXT-TelegramBot by bugsounet](https://github.com/bugsounet/EXT-TelegramBot)
+
+1. Issues are not enabled in the GitHub repository. So users cannot report bugs. Please enable issues in your repo.
+2. Recommendation: The README seems not to have an update instruction (the word 'update' is missing). Please add one.
+
 ### [MMM-TelegramBot by MMRIZE](https://github.com/MMRIZE/MMM-TelegramBot)
 
 1. Typo: Found `Magic Mirror` in file `MMM-TelegramBot.js`: Replace it with `MagicMirror²`.
@@ -9481,11 +9500,6 @@ Last update: 2024-09-07T13:17:00+02:00
 4. Recommendation: Found `require('https')` in file `node_helper.js`: Replace 'https' by 'node:https'.
 5. Recommendation: Found `new Date()` in file `node_helper.js`: Consider replacing it by `new Date(Date.now())`. It's helpfull for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
 6. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
-
-### [EXT-TelegramBot by bugsounet](https://github.com/bugsounet/EXT-TelegramBot)
-
-1. Issues are not enabled in the GitHub repository. So users cannot report bugs. Please enable issues in your repo.
-2. Recommendation: The README seems not to have an update instruction (the word 'update' is missing). Please add one.
 
 ### [MMM-TelegramCommands by doctorfree](https://github.com/doctorfree/MMM-TelegramCommands)
 
@@ -9618,8 +9632,7 @@ Last update: 2024-09-07T13:17:00+02:00
 
 1. There is no `package.json`. We need this file to gather information about the module for the module list page.
 2. Outdated: Found `MichMich/MagicMirror` in file `README.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
-3. Warning: No LICENSE file.
-4. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
+3. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
 
 ### [MMM-Thingiverse by appdevelopmentandsuch](https://github.com/appdevelopmentandsuch/MMM-Thingiverse)
 
@@ -9756,16 +9769,16 @@ Last update: 2024-09-07T13:17:00+02:00
 6. Warning: No LICENSE file.
 7. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
 
-### [EXT-Touch by bugsounet](https://github.com/bugsounet/EXT-Touch)
-
-1. Recommendation: The README seems not to have an update instruction (the word 'update' is missing). Please add one.
-2. Recommendation: The README seems not to have an install instruction (the words 'install' or 'installation' are missing). Please add one.
-
 ### [MMM-Touch by gfischershaw](https://github.com/gfischershaw/MMM-Touch)
 
 1. There is no `package.json`. We need this file to gather information about the module for the module list page.
 2. Recommendation: The README seems not to have an update instruction (the word 'update' is missing). Please add one.
 3. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
+
+### [EXT-Touch by bugsounet](https://github.com/bugsounet/EXT-Touch)
+
+1. Recommendation: The README seems not to have an update instruction (the word 'update' is missing). Please add one.
+2. Recommendation: The README seems not to have an install instruction (the words 'install' or 'installation' are missing). Please add one.
 
 ### [MMM-TouchButton by Tom-Hirschberger](https://github.com/Tom-Hirschberger/MMM-TouchButton)
 
@@ -10097,13 +10110,12 @@ Last update: 2024-09-07T13:17:00+02:00
 ### [EXT-Updates by bugsounet](https://github.com/bugsounet/EXT-Updates)
 
 1. Issues are not enabled in the GitHub repository. So users cannot report bugs. Please enable issues in your repo.
-2. Information: There are updates for 6 dependencie(s):
+2. Information: There are updates for 5 dependencie(s):
    - @eslint/js                ^8.57.0  →  ^9.10.0
    - @stylistic/eslint-plugin   ^1.8.1  →   ^2.7.2
-   - esbuild                   ^0.22.0  →  ^0.23.1
    - eslint                    ^8.57.0  →  ^9.10.0
    - eslint-plugin-import      ^2.29.1  →  ^2.30.0
-   - glob                      ^10.4.2  →  ^11.0.0
+   - glob                      ^10.4.5  →  ^11.0.0
 
 
 ### [MMM-uptimekuma by MikeBishop](https://github.com/MikeBishop/MMM-uptimekuma)
@@ -10329,8 +10341,7 @@ Last update: 2024-09-07T13:17:00+02:00
 
 ### [EXT-Volume by bugsounet](https://github.com/bugsounet/EXT-Volume)
 
-1. Issues are not enabled in the GitHub repository. So users cannot report bugs. Please enable issues in your repo.
-2. Information: There are updates for 6 dependencie(s):
+1. Information: There are updates for 6 dependencie(s):
    - @eslint/js                ^8.57.0  →  ^9.10.0
    - @stylistic/eslint-plugin   ^1.8.1  →   ^2.7.2
    - esbuild                   ^0.22.0  →  ^0.23.1
@@ -10626,8 +10637,15 @@ Last update: 2024-09-07T13:17:00+02:00
 
 ### [EXT-Welcome by bugsounet](https://github.com/bugsounet/EXT-Welcome)
 
-1. Issues are not enabled in the GitHub repository. So users cannot report bugs. Please enable issues in your repo.
-2. No image found.
+1. No image found.
+2. Information: There are updates for 6 dependencie(s):
+   - @eslint/js                ^8.57.0  →  ^9.10.0
+   - @stylistic/eslint-plugin   ^1.8.1  →   ^2.7.2
+   - esbuild                   ^0.22.0  →  ^0.23.1
+   - eslint                    ^8.57.0  →  ^9.10.0
+   - eslint-plugin-import      ^2.29.1  →  ^2.30.0
+   - glob                      ^10.4.2  →  ^11.0.0
+
 
 ### [MMM-WestBerksBinDay by hdurdle](https://github.com/hdurdle/MMM-WestBerksBinDay)
 
@@ -10956,8 +10974,7 @@ Last update: 2024-09-07T13:17:00+02:00
 
 ### [EXT-YouTubeCast by bugsounet](https://github.com/bugsounet/EXT-YouTubeCast)
 
-1. Issues are not enabled in the GitHub repository. So users cannot report bugs. Please enable issues in your repo.
-2. Information: There are updates for 6 dependencie(s):
+1. Information: There are updates for 6 dependencie(s):
    - @eslint/js                ^8.57.0  →  ^9.10.0
    - @stylistic/eslint-plugin   ^1.8.1  →   ^2.7.2
    - esbuild                   ^0.22.0  →  ^0.23.1

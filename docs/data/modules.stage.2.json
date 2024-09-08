@@ -10000,7 +10000,7 @@
     "maintainerURL": "https://github.com/Dennis-Rosenbaum",
     "description": "Add a multiple choice quiz. Random questions are loaded usng the <a target=\"_blank\" href=\"https://the-trivia-api.com\">Trivia API</a>.",
     "issues": [],
-    "stars": 0,
+    "stars": 1,
     "license": "MIT"
   },
   {
@@ -10778,7 +10778,7 @@
     "maintainerURL": "",
     "description": "Cast a video from your phone to your mirror (currently can only cast YouTube).",
     "issues": [],
-    "stars": 160,
+    "stars": 165,
     "license": "MIT"
   },
   {
@@ -10875,7 +10875,6 @@
     "description": "Take selfies from webcam.",
     "issues": [],
     "stars": 0,
-    "hasGithubIssues": false,
     "license": "MIT"
   },
   {
@@ -10888,7 +10887,6 @@
     "description": "Need a flash to take selfies?",
     "issues": [],
     "stars": 0,
-    "hasGithubIssues": false,
     "license": "MIT"
   },
   {
@@ -11843,7 +11841,7 @@
     "maintainerURL": "https://github.com/tylerstambaugh",
     "description": "Simple display of basic ride stats from <a target=\"_blank\" href=\"https://www.strava.com\">Strava</a> for a rolling window of time.",
     "issues": [],
-    "stars": 1,
+    "stars": 2,
     "license": "MIT"
   },
   {
@@ -12149,18 +12147,6 @@
     "license": "MIT"
   },
   {
-    "name": "MMM-TelegramBot",
-    "category": "Utility / IOT / 3rd Party / Integration",
-    "url": "https://github.com/MMRIZE/MMM-TelegramBot",
-    "id": "MMRIZE/MMM-TelegramBot",
-    "maintainer": "MMRIZE",
-    "maintainerURL": "",
-    "description": "Interact with your mirror via Telegram. Revamped 2024.",
-    "issues": [],
-    "stars": 26,
-    "license": "MIT"
-  },
-  {
     "name": "EXT-TelegramBot",
     "category": "Extended plugins for MMM-GoogleAssistant",
     "url": "https://github.com/bugsounet/EXT-TelegramBot",
@@ -12171,6 +12157,18 @@
     "issues": [],
     "stars": 2,
     "hasGithubIssues": false,
+    "license": "MIT"
+  },
+  {
+    "name": "MMM-TelegramBot",
+    "category": "Utility / IOT / 3rd Party / Integration",
+    "url": "https://github.com/MMRIZE/MMM-TelegramBot",
+    "id": "MMRIZE/MMM-TelegramBot",
+    "maintainer": "MMRIZE",
+    "maintainerURL": "",
+    "description": "Interact with your mirror via Telegram. Revamped 2024.",
+    "issues": [],
+    "stars": 26,
     "license": "MIT"
   },
   {
@@ -12338,7 +12336,8 @@
     "maintainerURL": "https://github.com/AlexMNet",
     "description": "Display upcoming rocket launch data from TheSpaceDevs API in a table or detail view.",
     "issues": [],
-    "stars": 0
+    "stars": 1,
+    "license": "MIT"
   },
   {
     "name": "MMM-Thingiverse",
@@ -12492,18 +12491,6 @@
     "stars": 12
   },
   {
-    "name": "EXT-Touch",
-    "category": "Extended plugins for MMM-GoogleAssistant",
-    "url": "https://github.com/bugsounet/EXT-Touch",
-    "id": "bugsounet/EXT-Touch",
-    "maintainer": "bugsounet",
-    "maintainerURL": "https://wiki.bugsounet.fr",
-    "description": "Activate MMM-GoogleAssistant with a Touch Screen by Touching the Google Icon.",
-    "issues": [],
-    "stars": 0,
-    "license": "MIT"
-  },
-  {
     "name": "MMM-Touch",
     "category": "Utility / IOT / 3rd Party / Integration",
     "url": "https://github.com/gfischershaw/MMM-Touch",
@@ -12513,6 +12500,18 @@
     "description": "Universal touch gesture commander using touchscreen.",
     "issues": [],
     "stars": 12,
+    "license": "MIT"
+  },
+  {
+    "name": "EXT-Touch",
+    "category": "Extended plugins for MMM-GoogleAssistant",
+    "url": "https://github.com/bugsounet/EXT-Touch",
+    "id": "bugsounet/EXT-Touch",
+    "maintainer": "bugsounet",
+    "maintainerURL": "https://wiki.bugsounet.fr",
+    "description": "Activate MMM-GoogleAssistant with a Touch Screen by Touching the Google Icon.",
+    "issues": [],
+    "stars": 0,
     "license": "MIT"
   },
   {
@@ -12724,7 +12723,7 @@
     "maintainerURL": "",
     "description": "Offline Text-To-Speech based on festival.",
     "issues": [],
-    "stars": 17,
+    "stars": 19,
     "license": "MIT"
   },
   {
@@ -12818,7 +12817,7 @@
     "maintainerURL": "",
     "description": "Displays the Twitter Trending Topics for a given place or city, as well as showing the tweet volume for each topic.",
     "issues": [],
-    "stars": 12,
+    "stars": 11,
     "license": "MIT"
   },
   {
@@ -12890,7 +12889,7 @@
     "maintainerURL": "",
     "description": "This module displays LIVE UK National Rail train arrivals &amp; departures from a specified station.",
     "issues": [],
-    "stars": 1,
+    "stars": 4,
     "license": "MIT"
   },
   {
@@ -12924,7 +12923,7 @@
     "maintainerURL": "",
     "description": "Display a random image from Unsplash categories.",
     "issues": [],
-    "stars": 7,
+    "stars": 8,
     "license": "MIT"
   },
   {
@@ -12972,7 +12971,7 @@
     "maintainerURL": "",
     "description": "Display monitor data (online/offline detection) from <a target=\"_blank\" href=\"https://uptimerobot.com/\">https://uptimerobot.com/</a>.",
     "issues": [],
-    "stars": 15,
+    "stars": 16,
     "license": "MIT"
   },
   {
@@ -12984,7 +12983,7 @@
     "maintainerURL": "",
     "description": "Publish USER_PRESENCE from PIR or motion detector modules to MQTT, allowing to use the mirror as a smart home presence sensor.",
     "issues": [],
-    "stars": 3,
+    "stars": 4,
     "license": "MIT"
   },
   {
@@ -13066,7 +13065,7 @@
     "maintainerURL": "https://github.com/Snille",
     "description": "Play a video file (from local folder or internet) in any region. The module will pause the video when hidden and resume when shown. You can also pause and play by using notifications.",
     "issues": [],
-    "stars": 9,
+    "stars": 11,
     "license": "MIT"
   },
   {
@@ -13175,7 +13174,7 @@
     "maintainerURL": "",
     "description": "Offline Voice Recognition Module, with ability to control other modules, based on pocketsphinx.",
     "issues": [],
-    "stars": 73,
+    "stars": 74,
     "license": "MIT"
   },
   {
@@ -13198,7 +13197,7 @@
     "maintainerURL": "",
     "description": "Voice control based on annyang.",
     "issues": [],
-    "stars": 18,
+    "stars": 17,
     "license": "MIT"
   },
   {
@@ -13222,7 +13221,7 @@
     "maintainerURL": "",
     "description": "Voice control based on snowboy.",
     "issues": [],
-    "stars": 42
+    "stars": 41
   },
   {
     "name": "MMM-Volume",
@@ -13233,7 +13232,7 @@
     "maintainerURL": "",
     "description": "Control volume of MagicMirror².",
     "issues": [],
-    "stars": 15,
+    "stars": 16,
     "license": "MIT"
   },
   {
@@ -13245,8 +13244,7 @@
     "maintainerURL": "https://wiki.bugsounet.fr",
     "description": "Control the sound volume level of your mirror.",
     "issues": [],
-    "stars": 3,
-    "hasGithubIssues": false,
+    "stars": 4,
     "license": "MIT"
   },
   {
@@ -13335,7 +13333,7 @@
     "maintainerURL": "",
     "description": "Re-themes MagicMirror² to look like a beautiful digital photo wall display. It adds a new font, styles, redesigned clock and weather displays, and rotating background image pulled from unsplash.com.",
     "issues": [],
-    "stars": 94,
+    "stars": 98,
     "license": "MIT"
   },
   {
@@ -13347,7 +13345,7 @@
     "maintainerURL": "",
     "description": "Rotates through wallpapers from Bing or Reddit.",
     "issues": [],
-    "stars": 93,
+    "stars": 102,
     "license": "MIT"
   },
   {
@@ -13371,7 +13369,7 @@
     "maintainerURL": "",
     "description": "Keeps an eye on your UI and quits app in case the UI crashes. If you combine this with the PM2 process manager, MM2 will automaticly restart after a UI failure.",
     "issues": [],
-    "stars": 46,
+    "stars": 47,
     "license": "MIT"
   },
   {
@@ -13383,7 +13381,7 @@
     "maintainerURL": "",
     "description": "A simple Water Reminder Module.",
     "issues": [],
-    "stars": 6
+    "stars": 7
   },
   {
     "name": "MMM-Wattvision",
@@ -13441,7 +13439,7 @@
     "maintainerURL": "",
     "description": "Displays active weather alerts provided by <a target=\"_blank\" href=\"https://openweathermap.org/api/one-call-3#listsource\">OpenWeatherMap's onecall API</a>.",
     "issues": [],
-    "stars": 0,
+    "stars": 2,
     "license": "MIT"
   },
   {
@@ -13453,7 +13451,7 @@
     "maintainerURL": "https://github.com/BrianHepler",
     "description": "Dynamically loaded weather image background from Unsplash. This is a plugin of other weather modules.",
     "issues": [],
-    "stars": 15,
+    "stars": 16,
     "license": "MIT"
   },
   {
@@ -13465,7 +13463,7 @@
     "maintainerURL": "https://github.com/mtatsuma",
     "description": "Display a weather forecast chart using <a target=\"_blank\" href=\"https://openweathermap.org\">OpenWeather</a> API and <a target=\"_blank\" href=\"https://www.chartjs.org\">Chart.js</a>, an open-source library to plot data on charts.",
     "issues": [],
-    "stars": 24,
+    "stars": 27,
     "license": "MIT"
   },
   {
@@ -13477,7 +13475,7 @@
     "maintainerURL": "https://github.com/fruestueck",
     "description": "Display clothing depending on the weather forecast and your personal preferences.",
     "issues": [],
-    "stars": 33
+    "stars": 37
   },
   {
     "name": "MMM-weatherforecast",
@@ -13488,7 +13486,7 @@
     "maintainerURL": "",
     "description": "This is a new version of the weather forecast module. This one does not come as a default module. This version has been edited to allow the days of the week to span left to right, each with its own weather icon and details. Uses openweathermap.org API Key.",
     "issues": [],
-    "stars": 9,
+    "stars": 10,
     "license": "GPL-3.0"
   },
   {
@@ -13500,7 +13498,7 @@
     "maintainerURL": "",
     "description": "Weather forecast with rain &amp; temp graphs. Lots of options to turn on &amp; off. Data from OpenWeatherMap API.",
     "issues": [],
-    "stars": 14
+    "stars": 17
   },
   {
     "name": "MMM-WeatherHourlyByDay",
@@ -13524,7 +13522,7 @@
     "description": "Squeeze or stretch it. Watch it respond by reformatting itself. Fully customizable. Also driven by Darksky API.",
     "issues": [],
     "outdated": "Deprecated. DarkSky API no longer works since 2023-03-31.",
-    "stars": 19,
+    "stars": 20,
     "license": "MIT"
   },
   {
@@ -13571,7 +13569,7 @@
     "maintainerURL": "",
     "description": "A Text-To-Speech module which uses the Web Speech API of the browser. It is in an early stage of development. So far only German is supported.",
     "issues": [],
-    "stars": 2,
+    "stars": 3,
     "license": "MIT"
   },
   {
@@ -13583,7 +13581,7 @@
     "maintainerURL": "",
     "description": "It allows you to display your kids' canceled and irregular lessons for schools using <a target=\"_blank\" href=\"https://www.untis.at\">Untis</a> software to organize school's timetables.",
     "issues": [],
-    "stars": 4,
+    "stars": 5,
     "license": "MIT"
   },
   {
@@ -13619,7 +13617,7 @@
     "maintainerURL": "",
     "description": "Display weekly recurring timetables such as class schedules.",
     "issues": [],
-    "stars": 63,
+    "stars": 64,
     "license": "MIT"
   },
   {
@@ -13632,7 +13630,6 @@
     "description": "Allow to send a welcome on start of MagicMirror².",
     "issues": [],
     "stars": 0,
-    "hasGithubIssues": false,
     "license": "MIT"
   },
   {
@@ -13656,7 +13653,7 @@
     "maintainerURL": "",
     "description": "Display weather data from WetterOnline.",
     "issues": [],
-    "stars": 7,
+    "stars": 9,
     "license": "GPL-3.0"
   },
   {
@@ -13680,7 +13677,7 @@
     "maintainerURL": "",
     "description": "Adds a personal ChatGPT (3.5) voice-controlled (through PicoVoice, Whisper, Mimic3) assistant.",
     "issues": [],
-    "stars": 26,
+    "stars": 30,
     "license": "MIT"
   },
   {
@@ -13703,7 +13700,7 @@
     "maintainerURL": "",
     "description": "Inserting, evaluating, excuting external web widgets on MM.",
     "issues": [],
-    "stars": 13,
+    "stars": 14,
     "license": "MIT"
   },
   {
@@ -13727,7 +13724,7 @@
     "maintainerURL": "",
     "description": "Displays WiFi password and QRCode.",
     "issues": [],
-    "stars": 96,
+    "stars": 100,
     "license": "MIT"
   },
   {
@@ -13739,7 +13736,7 @@
     "maintainerURL": "",
     "description": "Displays random Wikipedia snippets.",
     "issues": [],
-    "stars": 16,
+    "stars": 17,
     "license": "MIT"
   },
   {
@@ -13762,7 +13759,7 @@
     "maintainerURL": "",
     "description": "Displays the WordGenius.com word of the day along with its part of speech, pronunciation, definition, and occasionally, its origin.",
     "issues": [],
-    "stars": 1,
+    "stars": 3,
     "license": "MIT"
   },
   {
@@ -13785,7 +13782,7 @@
     "maintainerURL": "",
     "description": "Displays the Merriam-Webster word of the day along with its part of speech, pronunciation, definition, and an example.",
     "issues": [],
-    "stars": 3,
+    "stars": 4,
     "license": "MIT"
   },
   {
@@ -13797,7 +13794,7 @@
     "maintainerURL": "",
     "description": "Display local time of several locations. Fully supported and updated.",
     "issues": [],
-    "stars": 34
+    "stars": 35
   },
   {
     "name": "MMM-WorldTides",
@@ -13941,7 +13938,7 @@
     "maintainerURL": "",
     "description": "Track the progress of the current year / month.",
     "issues": [],
-    "stars": 8,
+    "stars": 9,
     "license": "MIT"
   },
   {
@@ -14046,7 +14043,6 @@
     "description": "Allow to cast a YouTube video on MagicMirror².",
     "issues": [],
     "stars": 3,
-    "hasGithubIssues": false,
     "license": "MIT"
   },
   {
@@ -14069,7 +14065,7 @@
     "maintainerURL": "",
     "description": "The official Yr Nowcast module for MagicMirror², which displays data from <a target=\"_blank\" href=\"https://www.yr.no\">Yr</a>. Nowcast data is only available for some Norwegian locations covered by the Norwegian weather radars. Yr is a weather service from the Norwegian Broadcasting Corporation and the Norwegian Meteorological Institute.",
     "issues": [],
-    "stars": 22
+    "stars": 23
   },
   {
     "name": "MMM-YrThen",

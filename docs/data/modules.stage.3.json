@@ -13869,7 +13869,7 @@
     "maintainerURL": "https://github.com/Dennis-Rosenbaum",
     "description": "Add a multiple choice quiz. Random questions are loaded usng the <a target=\"_blank\" href=\"https://the-trivia-api.com\">Trivia API</a>.",
     "issues": [],
-    "stars": 0,
+    "stars": 1,
     "license": "MIT",
     "tags": [
       "quiz",
@@ -14939,7 +14939,7 @@
     "maintainerURL": "",
     "description": "Cast a video from your phone to your mirror (currently can only cast YouTube).",
     "issues": [],
-    "stars": 160,
+    "stars": 165,
     "license": "MIT",
     "tags": [
       "chromecast",
@@ -15069,11 +15069,8 @@
     "maintainer": "bugsounet",
     "maintainerURL": "https://wiki.bugsounet.fr",
     "description": "Take selfies from webcam.",
-    "issues": [
-      "Issues are not enabled in the GitHub repository. So users cannot report bugs. Please enable issues in your repo."
-    ],
+    "issues": [],
     "stars": 0,
-    "hasGithubIssues": false,
     "license": "MIT",
     "tags": [
       "mmm-googleassistant",
@@ -15090,11 +15087,9 @@
     "maintainerURL": "https://wiki.bugsounet.fr",
     "description": "Need a flash to take selfies?",
     "issues": [
-      "Issues are not enabled in the GitHub repository. So users cannot report bugs. Please enable issues in your repo.",
       "No image found."
     ],
     "stars": 0,
-    "hasGithubIssues": false,
     "license": "MIT",
     "tags": [
       "mmm-googleassistant",
@@ -16426,7 +16421,7 @@
     "issues": [
       "There is no `package.json`. We need this file to gather information about the module for the module list page."
     ],
-    "stars": 1,
+    "stars": 2,
     "license": "MIT",
     "image": "public-assets-images-StravaWeekInBike.jpg"
   },
@@ -16858,22 +16853,6 @@
     ]
   },
   {
-    "name": "MMM-TelegramBot",
-    "category": "Utility / IOT / 3rd Party / Integration",
-    "url": "https://github.com/MMRIZE/MMM-TelegramBot",
-    "id": "MMRIZE/MMM-TelegramBot",
-    "maintainer": "MMRIZE",
-    "maintainerURL": "",
-    "description": "Interact with your mirror via Telegram. Revamped 2024.",
-    "issues": [],
-    "stars": 26,
-    "license": "MIT",
-    "tags": [
-      "telegram"
-    ],
-    "image": "sc_fullsize.jpg"
-  },
-  {
     "name": "EXT-TelegramBot",
     "category": "Extended plugins for MMM-GoogleAssistant",
     "url": "https://github.com/bugsounet/EXT-TelegramBot",
@@ -16892,6 +16871,22 @@
       "telegram"
     ],
     "image": "screenshot-sc_fullsize.jpg"
+  },
+  {
+    "name": "MMM-TelegramBot",
+    "category": "Utility / IOT / 3rd Party / Integration",
+    "url": "https://github.com/MMRIZE/MMM-TelegramBot",
+    "id": "MMRIZE/MMM-TelegramBot",
+    "maintainer": "MMRIZE",
+    "maintainerURL": "",
+    "description": "Interact with your mirror via Telegram. Revamped 2024.",
+    "issues": [],
+    "stars": 26,
+    "license": "MIT",
+    "tags": [
+      "telegram"
+    ],
+    "image": "sc_fullsize.jpg"
   },
   {
     "name": "MMM-TelegramCommands",
@@ -17136,7 +17131,9 @@
     "issues": [
       "There is no `package.json`. We need this file to gather information about the module for the module list page."
     ],
-    "stars": 0
+    "stars": 1,
+    "license": "MIT",
+    "image": "detail_view.jpg"
   },
   {
     "name": "MMM-Thingiverse",
@@ -17347,6 +17344,21 @@
     "stars": 12
   },
   {
+    "name": "MMM-Touch",
+    "category": "Utility / IOT / 3rd Party / Integration",
+    "url": "https://github.com/gfischershaw/MMM-Touch",
+    "id": "gfischershaw/MMM-Touch",
+    "maintainer": "gfischershaw",
+    "maintainerURL": "",
+    "description": "Universal touch gesture commander using touchscreen.",
+    "issues": [
+      "There is no `package.json`. We need this file to gather information about the module for the module list page."
+    ],
+    "stars": 12,
+    "license": "MIT",
+    "image": "MMM-Touch.jpg"
+  },
+  {
     "name": "EXT-Touch",
     "category": "Extended plugins for MMM-GoogleAssistant",
     "url": "https://github.com/bugsounet/EXT-Touch",
@@ -17362,21 +17374,6 @@
       "touch"
     ],
     "image": "resources-google.jpg"
-  },
-  {
-    "name": "MMM-Touch",
-    "category": "Utility / IOT / 3rd Party / Integration",
-    "url": "https://github.com/gfischershaw/MMM-Touch",
-    "id": "gfischershaw/MMM-Touch",
-    "maintainer": "gfischershaw",
-    "maintainerURL": "",
-    "description": "Universal touch gesture commander using touchscreen.",
-    "issues": [
-      "There is no `package.json`. We need this file to gather information about the module for the module list page."
-    ],
-    "stars": 12,
-    "license": "MIT",
-    "image": "MMM-Touch.jpg"
   },
   {
     "name": "MMM-TouchButton",
@@ -17670,7 +17667,7 @@
     "issues": [
       "No image found."
     ],
-    "stars": 17,
+    "stars": 19,
     "license": "MIT",
     "tags": [
       "text-to-speech"
@@ -17803,7 +17800,7 @@
     "issues": [
       "There is no `package.json`. We need this file to gather information about the module for the module list page."
     ],
-    "stars": 12,
+    "stars": 11,
     "license": "MIT",
     "image": "images-example.jpg"
   },
@@ -17895,7 +17892,7 @@
     "maintainerURL": "",
     "description": "This module displays LIVE UK National Rail train arrivals &amp; departures from a specified station.",
     "issues": [],
-    "stars": 1,
+    "stars": 4,
     "license": "MIT",
     "tags": [
       "national rail",
@@ -17944,7 +17941,7 @@
       "There are no keywords in 'package.json'. We would use them as tags on the module list page.",
       "No image found."
     ],
-    "stars": 7,
+    "stars": 8,
     "license": "MIT"
   },
   {
@@ -18008,7 +18005,7 @@
     "maintainerURL": "",
     "description": "Display monitor data (online/offline detection) from <a target=\"_blank\" href=\"https://uptimerobot.com/\">https://uptimerobot.com/</a>.",
     "issues": [],
-    "stars": 15,
+    "stars": 16,
     "license": "MIT",
     "tags": [
       "uptimerobot",
@@ -18033,7 +18030,7 @@
       "Issue: The license in the package.json (ISC) doesn't match the license file (MIT).",
       "No image found."
     ],
-    "stars": 3,
+    "stars": 4,
     "license": "MIT"
   },
   {
@@ -18158,7 +18155,7 @@
     "issues": [
       "There is no `package.json`. We need this file to gather information about the module for the module list page."
     ],
-    "stars": 9,
+    "stars": 11,
     "license": "MIT",
     "image": "screenshot.jpg"
   },
@@ -18310,7 +18307,7 @@
     "issues": [
       "No image found."
     ],
-    "stars": 73,
+    "stars": 74,
     "license": "MIT",
     "tags": [
       "voice recognition",
@@ -18345,7 +18342,7 @@
     "issues": [
       "No image found."
     ],
-    "stars": 18,
+    "stars": 17,
     "license": "MIT",
     "tags": [
       "voice control"
@@ -18383,7 +18380,7 @@
     "issues": [
       "There is no `package.json`. We need this file to gather information about the module for the module list page."
     ],
-    "stars": 42
+    "stars": 41
   },
   {
     "name": "MMM-Volume",
@@ -18397,7 +18394,7 @@
       "`package.json` issue: No description",
       "There are no keywords in 'package.json'. We would use them as tags on the module list page."
     ],
-    "stars": 15,
+    "stars": 16,
     "license": "MIT",
     "image": "mmm-volume.jpg"
   },
@@ -18409,11 +18406,8 @@
     "maintainer": "bugsounet",
     "maintainerURL": "https://wiki.bugsounet.fr",
     "description": "Control the sound volume level of your mirror.",
-    "issues": [
-      "Issues are not enabled in the GitHub repository. So users cannot report bugs. Please enable issues in your repo."
-    ],
-    "stars": 3,
-    "hasGithubIssues": false,
+    "issues": [],
+    "stars": 4,
     "license": "MIT",
     "tags": [
       "mmm-googleassistant",
@@ -18541,7 +18535,7 @@
     "issues": [
       "There is no `package.json`. We need this file to gather information about the module for the module list page."
     ],
-    "stars": 94,
+    "stars": 98,
     "license": "MIT",
     "image": "WB-weather-screenshots-wb-weather-wallberry-classic.jpg"
   },
@@ -18557,7 +18551,7 @@
       "There are no keywords in 'package.json'. We would use them as tags on the module list page.",
       "No image found."
     ],
-    "stars": 93,
+    "stars": 102,
     "license": "MIT"
   },
   {
@@ -18590,7 +18584,7 @@
       "There is no `package.json`. We need this file to gather information about the module for the module list page.",
       "No image found."
     ],
-    "stars": 46,
+    "stars": 47,
     "license": "MIT"
   },
   {
@@ -18604,7 +18598,7 @@
     "issues": [
       "There is no `package.json`. We need this file to gather information about the module for the module list page."
     ],
-    "stars": 6
+    "stars": 7
   },
   {
     "name": "MMM-Wattvision",
@@ -18681,7 +18675,7 @@
     "maintainerURL": "",
     "description": "Displays active weather alerts provided by <a target=\"_blank\" href=\"https://openweathermap.org/api/one-call-3#listsource\">OpenWeatherMap's onecall API</a>.",
     "issues": [],
-    "stars": 0,
+    "stars": 2,
     "license": "MIT",
     "tags": [
       "weather",
@@ -18701,7 +18695,7 @@
     "issues": [
       "There is no `package.json`. We need this file to gather information about the module for the module list page."
     ],
-    "stars": 15,
+    "stars": 16,
     "license": "MIT",
     "image": "scr.jpg"
   },
@@ -18717,7 +18711,7 @@
       "There is no `package.json`. We need this file to gather information about the module for the module list page.",
       "No image found."
     ],
-    "stars": 24,
+    "stars": 27,
     "license": "MIT"
   },
   {
@@ -18731,7 +18725,7 @@
     "issues": [
       "There is no `package.json`. We need this file to gather information about the module for the module list page."
     ],
-    "stars": 33
+    "stars": 37
   },
   {
     "name": "MMM-weatherforecast",
@@ -18744,7 +18738,7 @@
     "issues": [
       "There is no `package.json`. We need this file to gather information about the module for the module list page."
     ],
-    "stars": 9,
+    "stars": 10,
     "license": "GPL-3.0",
     "image": "icon-0.jpg"
   },
@@ -18759,7 +18753,7 @@
     "issues": [
       "There is no `package.json`. We need this file to gather information about the module for the module list page."
     ],
-    "stars": 14
+    "stars": 17
   },
   {
     "name": "MMM-WeatherHourlyByDay",
@@ -18788,7 +18782,7 @@
       "There is no `package.json`. We need this file to gather information about the module for the module list page."
     ],
     "outdated": "Deprecated. DarkSky API no longer works since 2023-03-31.",
-    "stars": 19,
+    "stars": 20,
     "license": "MIT",
     "image": "images-1.jpg"
   },
@@ -18852,7 +18846,7 @@
     "maintainerURL": "",
     "description": "A Text-To-Speech module which uses the Web Speech API of the browser. It is in an early stage of development. So far only German is supported.",
     "issues": [],
-    "stars": 2,
+    "stars": 3,
     "license": "MIT",
     "tags": [
       "text-to-speech",
@@ -18873,7 +18867,7 @@
       "`package.json` issue: No repository field.",
       "Issue: The license in the package.json (ISC) doesn't match the license file (MIT)."
     ],
-    "stars": 4,
+    "stars": 5,
     "license": "MIT",
     "tags": [
       "webuntis"
@@ -18924,7 +18918,7 @@
     "issues": [
       "There are no keywords in 'package.json'. We would use them as tags on the module list page."
     ],
-    "stars": 63,
+    "stars": 64,
     "license": "MIT",
     "image": "images-screenshot.jpg"
   },
@@ -18937,11 +18931,9 @@
     "maintainerURL": "https://wiki.bugsounet.fr",
     "description": "Allow to send a welcome on start of MagicMirror².",
     "issues": [
-      "Issues are not enabled in the GitHub repository. So users cannot report bugs. Please enable issues in your repo.",
       "No image found."
     ],
     "stars": 0,
-    "hasGithubIssues": false,
     "license": "MIT",
     "tags": [
       "mmm-googleassistant",
@@ -18973,7 +18965,7 @@
     "maintainerURL": "",
     "description": "Display weather data from WetterOnline.",
     "issues": [],
-    "stars": 7,
+    "stars": 9,
     "license": "GPL-3.0",
     "tags": [
       "weather"
@@ -19009,7 +19001,7 @@
       "There are no keywords in 'package.json'. We would use them as tags on the module list page.",
       "No image found."
     ],
-    "stars": 26,
+    "stars": 30,
     "license": "MIT"
   },
   {
@@ -19039,7 +19031,7 @@
     "issues": [
       "There is no `package.json`. We need this file to gather information about the module for the module list page."
     ],
-    "stars": 13,
+    "stars": 14,
     "license": "MIT",
     "image": "screenshot.jpg"
   },
@@ -19073,7 +19065,7 @@
     "issues": [
       "There is no `package.json`. We need this file to gather information about the module for the module list page."
     ],
-    "stars": 96,
+    "stars": 100,
     "license": "MIT",
     "image": "mm.jpg"
   },
@@ -19088,7 +19080,7 @@
     "issues": [
       "There is no `package.json`. We need this file to gather information about the module for the module list page."
     ],
-    "stars": 16,
+    "stars": 17,
     "license": "MIT",
     "image": "MMM-wiki.jpg"
   },
@@ -19117,7 +19109,7 @@
       "`package.json` issue: No repository field.",
       "There are no specific keywords in 'package.json'. We would use them as tags on the module list page. Add a few meaningful terms to the keywords in the package.json. Not just “magicmirror” or “module”."
     ],
-    "stars": 1,
+    "stars": 3,
     "license": "MIT",
     "image": "MMM-WordGenius.jpg"
   },
@@ -19143,7 +19135,7 @@
     "maintainerURL": "",
     "description": "Displays the Merriam-Webster word of the day along with its part of speech, pronunciation, definition, and an example.",
     "issues": [],
-    "stars": 3,
+    "stars": 4,
     "license": "MIT",
     "tags": [
       "word",
@@ -19163,7 +19155,7 @@
     "maintainerURL": "",
     "description": "Display local time of several locations. Fully supported and updated.",
     "issues": [],
-    "stars": 34,
+    "stars": 35,
     "tags": [
       "clock"
     ],
@@ -19362,7 +19354,7 @@
     "maintainerURL": "",
     "description": "Track the progress of the current year / month.",
     "issues": [],
-    "stars": 8,
+    "stars": 9,
     "license": "MIT",
     "tags": [
       "human",
@@ -19511,11 +19503,8 @@
     "maintainer": "bugsounet",
     "maintainerURL": "https://wiki.bugsounet.fr",
     "description": "Allow to cast a YouTube video on MagicMirror².",
-    "issues": [
-      "Issues are not enabled in the GitHub repository. So users cannot report bugs. Please enable issues in your repo."
-    ],
+    "issues": [],
     "stars": 3,
-    "hasGithubIssues": false,
     "license": "MIT",
     "tags": [
       "mmm-googleassistant",
@@ -19551,7 +19540,7 @@
     "issues": [
       "There is no `package.json`. We need this file to gather information about the module for the module list page."
     ],
-    "stars": 22
+    "stars": 23
   },
   {
     "name": "MMM-YrThen",

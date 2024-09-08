@@ -1,7 +1,7 @@
 import fs from "node:fs";
 
 let queryCount = 0;
-let maxQueryCount = 60;
+let maxQueryCount = 58;
 let moduleCount = 0;
 
 function printProgress (count, total) {
