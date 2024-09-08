@@ -40,6 +40,10 @@ def check_modules():
             "name": "Replace it with `MagicMirror²`.",
             "category": "Typo",
         },
+        "[MagicMirror]": {
+            "name": "Replace it with `[MagicMirror²]`.",
+            "category": "Typo",
+        },
         "<sub>2</sub>": {
             "name": "Replace it with `²`.`.",
             "category": "Typo"
