@@ -15,24 +15,11 @@ function getJson (filePath) {
 }
 
 // Function to check whether new data should be retrieved.
-function shouldFetch (repository, lastUpdate) {
+function shouldFetch (repository) {
   let retrieve = false;
   if (repository.url.includes("github.com")) {
     if (queryCount < maxQueryCount) {
-      if (lastUpdate) {
-        const now = new Date();
-        const daysSinceLastUpdate = Math.round((now - new Date(lastUpdate)) / (1000 * 60 * 60 * 24));
-        const lastCommitDate = repository.gitHubData ? new Date(repository.gitHubData.lastCommit) : new Date(-20);
-        const isUpdateLongAgo = daysSinceLastUpdate > 28;
-
-        // I am no longer so sure whether this makes sense, as it means that the number of stars is only updated when there are commits. Probably "isUpdateLongAgo" is sufficient. TODO: Investigate again when the moment of need arises.
-        const wasLastUpdateBeforeLastCommit = lastUpdate < lastCommitDate.toISOString();
-
-        retrieve = isUpdateLongAgo || wasLastUpdateBeforeLastCommit;
-      } else {
-        // If there is no previous data, always retrieve.
-        retrieve = true;
-      }
+      retrieve = true;
     }
   }
   return retrieve;
@@ -84,8 +71,7 @@ async function updateData () {
       moduleCount += 1;
 
       // Check whether the data should be retrieved again
-      const lastUpdate = previousData.repositories?.find((repo) => repo.id === repositoryId)?.gitHubDataLastUpdate;
-      const shouldFetchData = shouldFetch(module, lastUpdate);
+      const shouldFetchData = shouldFetch(module);
 
       if (shouldFetchData) {
         printProgress(moduleCount, moduleListLength);
@@ -179,7 +165,7 @@ async function updateData () {
     const sortedModuleList = moduleList.sort(sortByNameIgnoringPrefix);
 
     fs.writeFileSync("docs/data/gitHubData.json", JSON.stringify(updateInfo, null, 2));
-    fs.writeFileSync("./docs/data/modules.stage.2.json", JSON.stringify(sortedModuleList, null, 2));
+    fs.writeFileSync("docs/data/modules.stage.2.json", JSON.stringify(sortedModuleList, null, 2));
     console.info("\nGitHub data update completed. queryCount:", queryCount, "maxQueryCount:", maxQueryCount, "results:", results.length, "modules:", moduleListLength);
   } catch (error) {
     console.error("Error fetching GitHub API data:", error);
