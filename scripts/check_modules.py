@@ -461,7 +461,8 @@ def check_dependency_updates(module, module_directory_path):
         If there are only development updates, no issue will be created. 
     """
     package_json = Path(f"{module_directory_path}/package.json")
-    if len(module["issues"]) < 2 and package_json.is_file():
+    prod_updates_list = []
+    if len(module["issues"]) in [2, 3] and package_json.is_file():
 
         prod_updates_string = (
             subprocess.run(
@@ -477,21 +478,22 @@ def check_dependency_updates(module, module_directory_path):
         prod_updates_list = [
             line for line in prod_updates_string if "→" in line]
 
-        if len(prod_updates_list) > 0:
+    if len(prod_updates_list) > 0 or (len(module["issues"]) == 1 and package_json.is_file()):
 
-            updates_string = (
-                subprocess.run(
-                    f"ncu --cwd {module_directory_path}",
-                    capture_output=True,
-                    shell=True,
-                    check=False
-                )
-                .stdout.decode()
-                .rstrip()
+        updates_string = (
+            subprocess.run(
+                f"ncu --cwd {module_directory_path}",
+                capture_output=True,
+                shell=True,
+                check=False
             )
-            updates_list = updates_string.splitlines()
-            updates_list = [line for line in updates_list if "→" in line]
+            .stdout.decode()
+            .rstrip()
+        )
+        updates_list = updates_string.splitlines()
+        updates_list = [line for line in updates_list if "→" in line]
 
+        if len(updates_list) > 0:
             issue_text = f"Information: There are updates for {len(updates_list)} dependencie(s):\n"
             for update in updates_list:
                 issue_text += f"   -{update}\n"
