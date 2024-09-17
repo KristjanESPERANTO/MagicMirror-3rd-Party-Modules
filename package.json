@@ -46,7 +46,7 @@
     "*": "prettier --ignore-unknown --write"
   },
   "dependencies": {
-    "marked": "^14.1.0",
+    "marked": "^14.1.2",
     "normalize-package-data": "^6.0.2",
     "npm-check-updates": "^17.1.1",
     "ntl": "^5.1.0",
@@ -54,12 +54,12 @@
     "sharp": "^0.33.5"
   },
   "devDependencies": {
-    "@eslint/js": "^9.9.1",
-    "@stylistic/eslint-plugin": "^2.7.2",
-    "eslint": "^9.9.1",
+    "@eslint/js": "^9.10.0",
+    "@stylistic/eslint-plugin": "^2.8.0",
+    "eslint": "^9.10.0",
     "eslint-plugin-jsonc": "^2.16.0",
-    "eslint-plugin-package-json": "^0.15.2",
-    "husky": "^9.1.5",
+    "eslint-plugin-package-json": "^0.15.3",
+    "husky": "^9.1.6",
     "jsonc-eslint-parser": "^2.4.0",
     "lint-staged": "^15.2.10",
     "markdownlint-cli": "^0.41.0",
