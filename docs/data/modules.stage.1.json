@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "2024-09-08T17:22:52.625Z",
+  "lastUpdate": "2024-09-17T21:16:22.398Z",
   "modules": [
     {
       "name": "MMM-01ZM",
@@ -299,6 +299,16 @@
       "maintainer": "FabianNiehaus89",
       "maintainerURL": "",
       "description": "Display Age of Empire stats by player ID.",
+      "issues": []
+    },
+    {
+      "name": "MMM-ApexCharts",
+      "category": "Utility / IOT / 3rd Party / Integration",
+      "url": "https://github.com/sharmstr/MMM-ApexCharts",
+      "id": "sharmstr/MMM-ApexCharts",
+      "maintainer": "sharmstr",
+      "maintainerURL": "",
+      "description": "Chart data. Data can be supplied in config or pulled from JSON API.",
       "issues": []
     },
     {
@@ -1263,9 +1273,9 @@
     {
       "name": "MMM-Chart",
       "category": "Utility / IOT / 3rd Party / Integration",
-      "url": "https://github.com/MarinescuEvghenii/MMM-Chart",
-      "id": "MarinescuEvghenii/MMM-Chart",
-      "maintainer": "MarinescuEvghenii",
+      "url": "https://github.com/uxigene/MMM-Chart",
+      "id": "uxigene/MMM-Chart",
+      "maintainer": "uxigene",
       "maintainerURL": "",
       "description": "Chart module. This is a simple wrapper for <a target=\"_blank\" href=\"https://www.chartjs.org\">Chart.js</a>.",
       "issues": []
@@ -1699,9 +1709,9 @@
     {
       "name": "MMM-Cursor",
       "category": "Utility / IOT / 3rd Party / Integration",
-      "url": "https://github.com/MarinescuEvghenii/MMM-Cursor",
-      "id": "MarinescuEvghenii/MMM-Cursor",
-      "maintainer": "MarinescuEvghenii",
+      "url": "https://github.com/uxigene/MMM-Cursor",
+      "id": "uxigene/MMM-Cursor",
+      "maintainer": "uxigene",
       "maintainerURL": "",
       "description": "Display cursor when user moves mouse and hide after delay.",
       "issues": []
@@ -5213,9 +5223,9 @@
     {
       "name": "MMM-Luxembourg-Public-Transport",
       "category": "Transport / Travel",
-      "url": "https://github.com/MarinescuEvghenii/MMM-Luxembourg-Public-Transport",
-      "id": "MarinescuEvghenii/MMM-Luxembourg-Public-Transport",
-      "maintainer": "MarinescuEvghenii",
+      "url": "https://github.com/uxigene/MMM-Luxembourg-Public-Transport",
+      "id": "uxigene/MMM-Luxembourg-Public-Transport",
+      "maintainer": "uxigene",
       "maintainerURL": "",
       "description": "Luxembourg public transport departures in real time.",
       "issues": []
@@ -5262,13 +5272,14 @@
     },
     {
       "name": "MagicMirror-Module-Template",
-      "category": "Development / Core MagicMirror²",
+      "category": "Outdated Modules",
       "url": "https://github.com/roramirez/MagicMirror-Module-Template",
       "id": "roramirez/MagicMirror-Module-Template",
       "maintainer": "roramirez",
       "maintainerURL": "",
       "description": "Module to help developers to start building their own modules for the MagicMirror².",
-      "issues": []
+      "issues": [],
+      "outdated": "No changes since years. It's not a good start anymore. Use <a href=\"https://github.com/Dennis-Rosenbaum/MMM-Template\">MMM-Template</a> instead."
     },
     {
       "name": "MagicMirror-Olympia-Module",
@@ -7912,13 +7923,14 @@
     },
     {
       "name": "MMM-PIR-Sensor",
-      "category": "Utility / IOT / 3rd Party / Integration",
+      "category": "Outdated Modules",
       "url": "https://github.com/MarcLandis/MMM-PIR-Sensor",
       "id": "MarcLandis/MMM-PIR-Sensor",
       "maintainer": "MarcLandis",
       "maintainerURL": "",
       "description": "This module can monitor a PIR motion sensor and put your mirror to sleep if nobody uses it.",
-      "issues": []
+      "issues": [],
+      "outdated": "Deprecated. The author no longer works on it and recommends using <a href=\"https://github.com/bugsounet/MMM-Pir\">MMM-Pir</a> instead."
     },
     {
       "name": "MMM-PIR-Sensor-Lite",
@@ -8427,9 +8439,9 @@
     {
       "name": "MMM-QRCode",
       "category": "Utility / IOT / 3rd Party / Integration",
-      "url": "https://github.com/MarinescuEvghenii/MMM-QRCode",
-      "id": "MarinescuEvghenii/MMM-QRCode",
-      "maintainer": "MarinescuEvghenii",
+      "url": "https://github.com/uxigene/MMM-QRCode",
+      "id": "uxigene/MMM-QRCode",
+      "maintainer": "uxigene",
       "maintainerURL": "",
       "description": "Show QRCode image of encoded text.",
       "issues": []
@@ -9794,13 +9806,14 @@
     },
     {
       "name": "MMM-SpaceLaunchNow",
-      "category": "Entertainment / Misc",
+      "category": "Outdated Modules",
       "url": "https://github.com/koxm/MMM-SpaceLaunchNow",
       "id": "koxm/MMM-SpaceLaunchNow",
       "maintainer": "koxm",
       "maintainerURL": "",
       "description": "Show the previous and upcoming launches of any rocket, bases on SpaceLaunchNow API.",
-      "issues": []
+      "issues": [],
+      "outdated": "Deprecated. Doesn't work anymore. Successor is <a href=\"https://github.com/AlexMNet/MMM-TheSpaceDevs\">MMM-TheSpaceDevs</a>."
     },
     {
       "name": "MMM-SpaceX",
@@ -10306,6 +10319,16 @@
       "issues": []
     },
     {
+      "name": "MMM-Template",
+      "category": "Development / Core MagicMirror²",
+      "url": "https://github.com/Dennis-Rosenbaum/MMM-Template",
+      "id": "Dennis-Rosenbaum/MMM-Template",
+      "maintainer": "Dennis-Rosenbaum",
+      "maintainerURL": "",
+      "description": "A template for creating new MagicMirror² modules.",
+      "issues": []
+    },
+    {
       "name": "MMM-Tesla",
       "category": "Transport / Travel",
       "url": "https://github.com/mattdy/MMM-Tesla",
@@ -10317,13 +10340,14 @@
     },
     {
       "name": "MMM-Tesla3",
-      "category": "Transport / Travel",
+      "category": "Outdated Modules",
       "url": "https://github.com/usncahill/MMM-Tesla3",
       "id": "usncahill/MMM-Tesla3",
       "maintainer": "usncahill",
       "maintainerURL": "",
       "description": "Display Tesla data directly from Tesla API. Customizable GUI based on <a target=\"_blank\" href=\"https://github.com/denverquane/MMM-Teslamate\">MMM-TeslaMate</a>.",
-      "issues": []
+      "issues": [],
+      "outdated": "Abandoned. Repo has been archived at 2024-05-16."
     },
     {
       "name": "MMM-TeslaLogger",

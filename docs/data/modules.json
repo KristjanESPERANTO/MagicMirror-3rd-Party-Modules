@@ -48,7 +48,7 @@
     "maintainerURL": "",
     "description": "Show 4 consecutive 12-hr forecast, provided by <a target=\"_blank\" href=\"https://www.weather.gov/documentation/services-web-api\">NOAA National Weather Service API</a>. No user registration nor API-key required.",
     "issues": true,
-    "stars": 7,
+    "stars": 8,
     "license": "MIT",
     "tags": [
       "weather",
@@ -56,7 +56,7 @@
       "noaa"
     ],
     "image": "example1.jpg",
-    "defaultSortWeight": 1,
+    "defaultSortWeight": 2,
     "lastCommit": "2024-07-21T12:29:15-04:00"
   },
   {
@@ -116,13 +116,13 @@
     "maintainerURL": "",
     "description": "Display weather information using the AccuWeather API.",
     "issues": true,
-    "stars": 6,
+    "stars": 5,
     "tags": [
       "weather"
     ],
     "license": "MIT",
     "image": "screenshots-layout-bars-daily.jpg",
-    "defaultSortWeight": 1,
+    "defaultSortWeight": 2,
     "lastCommit": "2024-04-18T16:01:12-07:00"
   },
   {
@@ -134,14 +134,14 @@
     "maintainerURL": "",
     "description": "A fork of maxbethge's weather module. This version fixes the hourly forecast and includes a missing icon for \"hot\" weather. It also disables a few options that break the layout.",
     "issues": true,
-    "stars": 1,
+    "stars": 2,
     "hasGithubIssues": false,
     "tags": [
       "weather"
     ],
     "license": "MIT",
     "image": "screenshots-layout-bars-daily.jpg",
-    "defaultSortWeight": 2,
+    "defaultSortWeight": 3,
     "lastCommit": "2024-05-07T16:38:39-05:00"
   },
   {
@@ -253,7 +253,7 @@
     "maintainerURL": "",
     "description": "Display the air quality index for a certain location.",
     "issues": true,
-    "stars": 34,
+    "stars": 35,
     "license": "MIT",
     "tags": [
       "aqi",
@@ -261,7 +261,7 @@
     ],
     "image": ".github-preview-good.jpg",
     "defaultSortWeight": 0,
-    "lastCommit": "2024-08-29T04:42:53+00:00"
+    "lastCommit": "2024-09-16T15:22:23+00:00"
   },
   {
     "name": "MMM-Airtable",
@@ -309,7 +309,7 @@
     "maintainer": "bugsounet",
     "maintainerURL": "https://wiki.bugsounet.fr",
     "description": "Display any warning, information or error on your screen about Assistant.<br /><br />This module has been defined to work only with MMM-GoogleAssistant.",
-    "issues": true,
+    "issues": false,
     "stars": 2,
     "license": "MIT",
     "tags": [
@@ -319,7 +319,7 @@
       "alert"
     ],
     "image": "screenshot-ErrorStyle1.jpg",
-    "defaultSortWeight": 4,
+    "defaultSortWeight": 3,
     "lastCommit": "2024-07-01T16:58:34+02:00"
   },
   {
@@ -331,7 +331,7 @@
     "maintainerURL": "",
     "description": "Alternative programmable alert/notification presenter.",
     "issues": true,
-    "stars": 3,
+    "stars": 4,
     "license": "MIT",
     "tags": [
       "alert"
@@ -363,7 +363,7 @@
     "maintainerURL": "",
     "description": "The MMM-AlexaControl module allows you to control your Mirror with Alexa (every device that support Wemos devices). You can turn it on and off, change the page and send notifications to other modules.",
     "issues": true,
-    "stars": 44,
+    "stars": 45,
     "license": "MIT",
     "tags": [
       "alexacontrol",
@@ -526,6 +526,21 @@
     "lastCommit": "2020-11-05T08:48:08+01:00"
   },
   {
+    "name": "MMM-ApexCharts",
+    "category": "Utility / IOT / 3rd Party / Integration",
+    "url": "https://github.com/sharmstr/MMM-ApexCharts",
+    "id": "sharmstr/MMM-ApexCharts",
+    "maintainer": "sharmstr",
+    "maintainerURL": "",
+    "description": "Chart data. Data can be supplied in config or pulled from JSON API.",
+    "issues": true,
+    "stars": 4,
+    "license": "MIT",
+    "image": ".github-sampleA.jpg",
+    "defaultSortWeight": 7,
+    "lastCommit": "2023-05-29T09:40:38-07:00"
+  },
+  {
     "name": "MMM-ApexLegends",
     "category": "Entertainment / Misc",
     "url": "https://github.com/retroflex/MMM-ApexLegends",
@@ -551,7 +566,7 @@
     "maintainerURL": "",
     "description": "A somewhat RESTful(ish) API.",
     "issues": true,
-    "stars": 21,
+    "stars": 22,
     "license": "MIT",
     "tags": [
       "remote control",
@@ -570,7 +585,7 @@
     "maintainerURL": "",
     "description": "Display the last Astronomy Picture Of the Day (APOD). This is an evolution of MMM-nasaastropic. Supports image and video and display title, description and copyright.",
     "issues": true,
-    "stars": 13,
+    "stars": 14,
     "license": "MIT",
     "tags": [
       "nasa",
@@ -595,7 +610,7 @@
     "maintainerURL": "",
     "description": "Get the Air Quality Index (AQI) using the World Air Quality Index project API.",
     "issues": true,
-    "stars": 11,
+    "stars": 12,
     "license": "MIT",
     "tags": [
       "transport",
@@ -615,7 +630,7 @@
     "maintainerURL": "https://github.com/gpailler",
     "description": "Display the air quality index from <a target=\"_blank\" href=\"https://aqicn.org\">aqicn</a> project.",
     "issues": true,
-    "stars": 7,
+    "stars": 8,
     "license": "MIT",
     "defaultSortWeight": 7,
     "lastCommit": "2021-05-04T09:51:34+08:00"
@@ -839,14 +854,14 @@
     "maintainerURL": "",
     "description": "Display stock prices and charts using Yahoo Finance API.",
     "issues": true,
-    "stars": 38,
+    "stars": 39,
     "license": "MIT",
     "tags": [
       "stock",
       "alphavantage"
     ],
     "image": "avstock-grid.jpg",
-    "defaultSortWeight": 1,
+    "defaultSortWeight": 2,
     "lastCommit": "2024-08-07T12:33:25+02:00"
   },
   {
@@ -859,7 +874,7 @@
     "description": "Easy, hands free Amazon Alexa integration; activated, simply by saying \"Alexa\".",
     "issues": true,
     "outdated": "Abandoned. No reactions to issues since years. The documentation currently available does not work any more (<a href=\"https://github.com/MagicMirrorOrg/MagicMirror/issues/3398\">#3398</a>).",
-    "stars": 155,
+    "stars": 157,
     "license": "MIT",
     "image": "styles-loading.jpg",
     "defaultSortWeight": 909,
@@ -873,7 +888,7 @@
     "maintainer": "bugsounet",
     "maintainerURL": "https://wiki.bugsounet.fr",
     "description": "Change the default Google Assistant background to your own or with animated gifs for each status of the assistant.<br /><br />This module has been defined to work only with MMM-GoogleAssistant.",
-    "issues": true,
+    "issues": false,
     "stars": 1,
     "license": "MIT",
     "tags": [
@@ -881,7 +896,7 @@
       "background"
     ],
     "image": "cortana-confirmation.jpg",
-    "defaultSortWeight": 4,
+    "defaultSortWeight": 3,
     "lastCommit": "2024-07-01T16:58:55+02:00"
   },
   {
@@ -893,15 +908,15 @@
     "maintainerURL": "",
     "description": "Show fullscreen slideshow in background from images in a local folder. Great for a photo frame.",
     "issues": true,
-    "stars": 140,
+    "stars": 144,
     "license": "MIT",
     "tags": [
       "background",
       "slideshow"
     ],
     "image": "exampleImages-1.jpg",
-    "defaultSortWeight": -1,
-    "lastCommit": "2024-09-06T23:49:46-06:00"
+    "defaultSortWeight": 0,
+    "lastCommit": "2024-09-14T09:07:42-06:00"
   },
   {
     "name": "MMM-BartTimes",
@@ -964,7 +979,7 @@
     "issues": true,
     "stars": 2,
     "license": "NOASSERTION",
-    "defaultSortWeight": 12,
+    "defaultSortWeight": 13,
     "lastCommit": "2022-09-15T22:47:06+02:00"
   },
   {
@@ -1033,7 +1048,7 @@
     ],
     "license": "Apache-2.0",
     "image": "screenshot.jpg",
-    "defaultSortWeight": 3,
+    "defaultSortWeight": 4,
     "lastCommit": "2021-08-25T21:58:19+02:00"
   },
   {
@@ -1433,7 +1448,7 @@
       "smart home"
     ],
     "image": "screenshot.jpg",
-    "defaultSortWeight": 0,
+    "defaultSortWeight": 1,
     "lastCommit": "2024-02-25T20:24:36+01:00"
   },
   {
@@ -1503,7 +1518,7 @@
     "maintainerURL": "",
     "description": "Display a Bring! shopping list in a flexible view and touch support.",
     "issues": true,
-    "stars": 28,
+    "stars": 29,
     "license": "MIT",
     "tags": [
       "bring"
@@ -1520,7 +1535,7 @@
     "maintainer": "bugsounet",
     "maintainerURL": "https://wiki.bugsounet.fr",
     "description": "Show your current shopping list of Bring!<br /><br />This module has been defined to work only with MMM-GoogleAssistant.",
-    "issues": true,
+    "issues": false,
     "stars": 2,
     "license": "MIT",
     "tags": [
@@ -1529,7 +1544,7 @@
       "google assistant"
     ],
     "image": "Screenshot.jpg",
-    "defaultSortWeight": 3,
+    "defaultSortWeight": 2,
     "lastCommit": "2024-07-01T16:59:14+02:00"
   },
   {
@@ -1555,15 +1570,15 @@
     "maintainer": "bugsounet",
     "maintainerURL": "https://wiki.bugsounet.fr",
     "description": "Display any internet web page like a real browser in fullscreen.<br /><br />This module has been defined to work only with MMM-GoogleAssistant.",
-    "issues": true,
-    "stars": 0,
+    "issues": false,
+    "stars": 1,
     "license": "MIT",
     "tags": [
       "mmm-googleassistant",
       "browser"
     ],
     "image": "EXT-Browser.jpg",
-    "defaultSortWeight": 4,
+    "defaultSortWeight": 3,
     "lastCommit": "2024-07-01T16:59:33+02:00"
   },
   {
@@ -1704,7 +1719,7 @@
     ],
     "license": "MIT",
     "defaultSortWeight": 8,
-    "lastCommit": "2023-01-04T08:31:18+01:00"
+    "lastCommit": "2024-09-13T21:55:13+02:00"
   },
   {
     "name": "MMM-Bysykkel",
@@ -1735,7 +1750,7 @@
     "tags": [
       "caldav"
     ],
-    "defaultSortWeight": 2,
+    "defaultSortWeight": 3,
     "lastCommit": "2023-12-29T21:34:11+01:00"
   },
   {
@@ -1765,7 +1780,7 @@
     "maintainerURL": "",
     "description": "Extended calendar and event view.",
     "issues": true,
-    "stars": 47,
+    "stars": 48,
     "license": "MIT",
     "tags": [
       "calendar",
@@ -1783,7 +1798,7 @@
     "maintainerURL": "",
     "description": "Extended calendar and event view. Show calendar as agenda.",
     "issues": true,
-    "stars": 12,
+    "stars": 13,
     "license": "MIT",
     "tags": [
       "calendar",
@@ -1801,7 +1816,7 @@
     "maintainerURL": "",
     "description": "Presenting events as daily/weekly journal style.",
     "issues": true,
-    "stars": 4,
+    "stars": 6,
     "license": "MIT",
     "tags": [
       "cx3j",
@@ -1820,7 +1835,7 @@
     "maintainerURL": "",
     "description": "Extended calendar and event view. Show calendar timeline.",
     "issues": true,
-    "stars": 7,
+    "stars": 9,
     "license": "MIT",
     "tags": [
       "timeline",
@@ -1896,7 +1911,7 @@
     "maintainerURL": "",
     "description": "Display a weekly (n days) calendar view.",
     "issues": true,
-    "stars": 52,
+    "stars": 53,
     "license": "MIT",
     "image": "screenshots-With calendar title.jpg",
     "defaultSortWeight": 12,
@@ -2017,7 +2032,7 @@
     "maintainerURL": "https://github.com/chase-cromwell",
     "description": "Display upcoming assignments from Canvas LMS platform.",
     "issues": true,
-    "stars": 7,
+    "stars": 8,
     "defaultSortWeight": 8,
     "lastCommit": "2021-03-02T17:42:46+00:00"
   },
@@ -2140,9 +2155,9 @@
   {
     "name": "MMM-Chart",
     "category": "Utility / IOT / 3rd Party / Integration",
-    "url": "https://github.com/MarinescuEvghenii/MMM-Chart",
-    "id": "MarinescuEvghenii/MMM-Chart",
-    "maintainer": "MarinescuEvghenii",
+    "url": "https://github.com/uxigene/MMM-Chart",
+    "id": "uxigene/MMM-Chart",
+    "maintainer": "uxigene",
     "maintainerURL": "",
     "description": "Chart module. This is a simple wrapper for <a target=\"_blank\" href=\"https://www.chartjs.org\">Chart.js</a>.",
     "issues": true,
@@ -2176,7 +2191,7 @@
     "maintainerURL": "",
     "description": "Directly cast from the MagicMirror\u00b2 server to a chromecast.",
     "issues": true,
-    "stars": 43,
+    "stars": 44,
     "license": "MIT",
     "defaultSortWeight": 8,
     "lastCommit": "2023-03-05T20:51:52+01:00"
@@ -2521,7 +2536,7 @@
     "maintainerURL": "",
     "description": "Countdown or countup for events. Revamped 2024.",
     "issues": true,
-    "stars": 9,
+    "stars": 10,
     "license": "MIT",
     "tags": [
       "count",
@@ -2575,14 +2590,14 @@
     "maintainer": "wiesty",
     "maintainerURL": "https://github.com/wiesty",
     "description": "Display the number of days, weeks, months, and years since a specified date, serving as a romantic reminder for couples \ud83d\udc8c. Can also be used for Birthdays \ud83d\udcc6.",
-    "issues": true,
+    "issues": false,
     "stars": 9,
     "license": "MIT",
     "tags": [
       "reminder"
     ],
     "image": "docs-screenshot.jpg",
-    "defaultSortWeight": 0,
+    "defaultSortWeight": -1,
     "lastCommit": "2024-06-26T12:40:53+02:00"
   },
   {
@@ -2819,9 +2834,9 @@
   {
     "name": "MMM-Cursor",
     "category": "Utility / IOT / 3rd Party / Integration",
-    "url": "https://github.com/MarinescuEvghenii/MMM-Cursor",
-    "id": "MarinescuEvghenii/MMM-Cursor",
-    "maintainer": "MarinescuEvghenii",
+    "url": "https://github.com/uxigene/MMM-Cursor",
+    "id": "uxigene/MMM-Cursor",
+    "maintainer": "uxigene",
     "maintainerURL": "",
     "description": "Display cursor when user moves mouse and hide after delay.",
     "issues": true,
@@ -3207,9 +3222,11 @@
     "maintainerURL": "",
     "description": "Shows either the time remaining to an event, or the time since an event. This module also supports having a supporting image.",
     "issues": true,
-    "stars": 6,
-    "defaultSortWeight": 5,
-    "lastCommit": "2024-04-19T16:03:16-05:00"
+    "stars": 7,
+    "license": "MIT",
+    "image": "screenshots-default-moment-fromNow-no-icon.jpg",
+    "defaultSortWeight": 4,
+    "lastCommit": "2024-09-09T16:16:02-05:00"
   },
   {
     "name": "MMM-DateOnly",
@@ -3319,7 +3336,7 @@
       "ok google"
     ],
     "image": "resources-google.jpg",
-    "defaultSortWeight": 4,
+    "defaultSortWeight": 5,
     "lastCommit": "2024-07-01T16:59:55+02:00"
   },
   {
@@ -3476,7 +3493,7 @@
       "notifications"
     ],
     "image": "docs-images-module_preview.jpg",
-    "defaultSortWeight": 4,
+    "defaultSortWeight": 5,
     "lastCommit": "2021-05-15T10:55:42+02:00"
   },
   {
@@ -3971,7 +3988,7 @@
     "maintainer": "Tom-Hirschberger",
     "maintainerURL": "https://github.com/Tom-Hirschberger",
     "description": "Embed one or multiple websites with there URL.",
-    "issues": true,
+    "issues": false,
     "stars": 21,
     "license": "MIT",
     "tags": [
@@ -3982,8 +3999,8 @@
       "videostream"
     ],
     "image": "doc-screenshots-SomeGrafanaPanels.jpg",
-    "defaultSortWeight": -1,
-    "lastCommit": "2024-03-09T13:38:52+01:00"
+    "defaultSortWeight": -2,
+    "lastCommit": "2024-09-15T21:03:49+02:00"
   },
   {
     "name": "MMM-EmbedYoutube",
@@ -4087,7 +4104,7 @@
       "public transport"
     ],
     "image": "images-screenshot.jpg",
-    "defaultSortWeight": 0,
+    "defaultSortWeight": 1,
     "lastCommit": "2024-02-04T15:02:13+01:00"
   },
   {
@@ -4466,8 +4483,14 @@
     "issues": true,
     "stars": 5,
     "license": "MIT",
-    "defaultSortWeight": 9,
-    "lastCommit": "2022-05-10T11:12:50+02:00"
+    "tags": [
+      "weather",
+      "alerts",
+      "norwegian"
+    ],
+    "image": "screenshot.jpg",
+    "defaultSortWeight": 1,
+    "lastCommit": "2024-09-14T08:26:30+02:00"
   },
   {
     "name": "MMM-FastNotes",
@@ -5123,7 +5146,7 @@
       "french"
     ],
     "image": "screenshot.jpg",
-    "defaultSortWeight": 2,
+    "defaultSortWeight": 3,
     "lastCommit": "2024-07-01T16:53:26+02:00"
   },
   {
@@ -5153,7 +5176,7 @@
     "maintainer": "bugsounet",
     "maintainerURL": "https://wiki.bugsounet.fr",
     "description": "Display Channel from French Internet Provider: Free.<br /><br />This module has been defined to work only with MMM-GoogleAssistant.",
-    "issues": true,
+    "issues": false,
     "stars": 1,
     "license": "MIT",
     "tags": [
@@ -5163,7 +5186,7 @@
       "tv"
     ],
     "image": "resources-FreeboxTV.jpg",
-    "defaultSortWeight": 3,
+    "defaultSortWeight": 2,
     "lastCommit": "2024-07-01T17:00:16+02:00"
   },
   {
@@ -5573,7 +5596,7 @@
     "maintainer": "bugsounet",
     "maintainerURL": "",
     "description": "This module allows to add a glass effect to MagicMirror\u00b2 modules.",
-    "issues": true,
+    "issues": false,
     "stars": 7,
     "license": "MIT",
     "tags": [
@@ -5581,7 +5604,7 @@
       "background"
     ],
     "image": "Screenshot.jpg",
-    "defaultSortWeight": 0,
+    "defaultSortWeight": -1,
     "lastCommit": "2024-07-01T16:51:33+02:00"
   },
   {
@@ -5669,7 +5692,7 @@
     "maintainer": "bugsounet",
     "maintainerURL": "https://wiki.bugsounet.fr",
     "description": "MMM-GoogleAssistant is an real embedded Google assistant on MagicMirror\u00b2 with many <a target=\"_blank\" href=\"#extended-plugins-for-mmm-googleassistant\">plugins</a>.",
-    "issues": true,
+    "issues": false,
     "stars": 92,
     "license": "MIT",
     "tags": [
@@ -5682,7 +5705,7 @@
       "smart home"
     ],
     "image": "resources-previewFS.jpg",
-    "defaultSortWeight": -2,
+    "defaultSortWeight": -3,
     "lastCommit": "2024-09-07T13:04:38+02:00"
   },
   {
@@ -5907,7 +5930,7 @@
       "photo"
     ],
     "image": "resources-GooglePhoto-Logo.jpg",
-    "defaultSortWeight": 5,
+    "defaultSortWeight": 6,
     "lastCommit": "2024-07-01T17:00:38+02:00"
   },
   {
@@ -5942,7 +5965,7 @@
     "stars": 22,
     "license": "MIT",
     "image": "screenshot.jpg",
-    "defaultSortWeight": 3,
+    "defaultSortWeight": 4,
     "lastCommit": "2020-06-05T10:05:40+02:00"
   },
   {
@@ -6014,7 +6037,7 @@
       "google"
     ],
     "image": ".github-TTS.jpg",
-    "defaultSortWeight": 1,
+    "defaultSortWeight": 2,
     "lastCommit": "2023-11-27T16:14:27+01:00"
   },
   {
@@ -6025,7 +6048,7 @@
     "maintainer": "bugsounet",
     "maintainerURL": "https://wiki.bugsounet.fr",
     "description": "CPU governor enables the operating system to scale the CPU frequency up or down in order to save power or improve performance.<br /><br />This module has been defined to work only with MMM-GoogleAssistant.",
-    "issues": true,
+    "issues": false,
     "stars": 3,
     "license": "MIT",
     "tags": [
@@ -6035,7 +6058,7 @@
       "googleassistant"
     ],
     "image": "EXT-Governor.jpg",
-    "defaultSortWeight": 4,
+    "defaultSortWeight": 3,
     "lastCommit": "2024-07-01T17:00:57+02:00"
   },
   {
@@ -6169,7 +6192,7 @@
       "smart home"
     ],
     "image": "images-screenshot.jpg",
-    "defaultSortWeight": 2,
+    "defaultSortWeight": 3,
     "lastCommit": "2024-07-04T10:04:43+02:00"
   },
   {
@@ -6202,7 +6225,7 @@
       "smart home"
     ],
     "image": "images-screenshot.jpg",
-    "defaultSortWeight": 1,
+    "defaultSortWeight": 2,
     "lastCommit": "2024-07-05T15:50:06+02:00"
   },
   {
@@ -7158,7 +7181,7 @@
       "images"
     ],
     "image": ".github-animate.jpg",
-    "defaultSortWeight": 2,
+    "defaultSortWeight": 3,
     "lastCommit": "2023-12-29T10:57:27-03:00"
   },
   {
@@ -7322,7 +7345,7 @@
     "maintainer": "bugsounet",
     "maintainerURL": "https://wiki.bugsounet.fr",
     "description": "Check your internet connexion, display ping.<br /><br />This module has been defined to work only with MMM-GoogleAssistant.",
-    "issues": true,
+    "issues": false,
     "stars": 0,
     "license": "MIT",
     "tags": [
@@ -7331,7 +7354,7 @@
       "warning"
     ],
     "image": "resources-Internet-Logo.jpg",
-    "defaultSortWeight": 4,
+    "defaultSortWeight": 3,
     "lastCommit": "2024-07-01T17:01:16+02:00"
   },
   {
@@ -7351,7 +7374,7 @@
       "speed"
     ],
     "image": ".previews-almost.jpg",
-    "defaultSortWeight": 2,
+    "defaultSortWeight": 3,
     "lastCommit": "2024-01-08T18:27:41-05:00"
   },
   {
@@ -7568,7 +7591,7 @@
       "it8951",
       "waveshare-eink"
     ],
-    "defaultSortWeight": 3,
+    "defaultSortWeight": 4,
     "lastCommit": "2024-08-03T21:56:19+02:00"
   },
   {
@@ -7608,7 +7631,7 @@
       "shares"
     ],
     "image": "docs-example.jpg",
-    "defaultSortWeight": 0,
+    "defaultSortWeight": 1,
     "lastCommit": "2024-06-04T15:32:59+02:00"
   },
   {
@@ -7923,7 +7946,7 @@
     "maintainer": "bugsounet",
     "maintainerURL": "https://wiki.bugsounet.fr",
     "description": "Control your mirror with a keyboard.<br /><br />This module has been defined to work only with MMM-GoogleAssistant.",
-    "issues": true,
+    "issues": false,
     "stars": 2,
     "license": "MIT",
     "tags": [
@@ -7931,7 +7954,7 @@
       "keyboard"
     ],
     "image": "resources-keyboard.jpg",
-    "defaultSortWeight": 3,
+    "defaultSortWeight": 2,
     "lastCommit": "2024-07-01T17:01:34+02:00"
   },
   {
@@ -8152,7 +8175,7 @@
     ],
     "image": "screenshot-MMM-learnlanguage-1.jpg",
     "defaultSortWeight": 2,
-    "lastCommit": "2023-11-18T23:13:22+01:00"
+    "lastCommit": "2024-09-11T17:52:57+02:00"
   },
   {
     "name": "MMM-LEDStripControl",
@@ -8213,7 +8236,7 @@
     "maintainer": "bugsounet",
     "maintainerURL": "https://wiki.bugsounet.fr",
     "description": "Allow to play Spotify music on your mirror with Librespot.<br /><br />This module has been defined to work only with MMM-GoogleAssistant.",
-    "issues": true,
+    "issues": false,
     "stars": 1,
     "license": "MIT",
     "tags": [
@@ -8222,7 +8245,7 @@
       "librespot"
     ],
     "image": "resources-Spotify-Logo.jpg",
-    "defaultSortWeight": 4,
+    "defaultSortWeight": 3,
     "lastCommit": "2024-07-01T17:01:54+02:00"
   },
   {
@@ -8288,7 +8311,7 @@
     "license": "MIT",
     "image": "screenshot.jpg",
     "defaultSortWeight": 6,
-    "lastCommit": "2023-12-28T15:04:31+01:00"
+    "lastCommit": "2024-09-10T22:49:08+02:00"
   },
   {
     "name": "MMM-Live-Stream-TV",
@@ -8638,9 +8661,9 @@
   {
     "name": "MMM-Luxembourg-Public-Transport",
     "category": "Transport / Travel",
-    "url": "https://github.com/MarinescuEvghenii/MMM-Luxembourg-Public-Transport",
-    "id": "MarinescuEvghenii/MMM-Luxembourg-Public-Transport",
-    "maintainer": "MarinescuEvghenii",
+    "url": "https://github.com/uxigene/MMM-Luxembourg-Public-Transport",
+    "id": "uxigene/MMM-Luxembourg-Public-Transport",
+    "maintainer": "uxigene",
     "maintainerURL": "",
     "description": "Luxembourg public transport departures in real time.",
     "issues": true,
@@ -8717,16 +8740,17 @@
   },
   {
     "name": "MagicMirror-Module-Template",
-    "category": "Development / Core MagicMirror\u00b2",
+    "category": "Outdated Modules",
     "url": "https://github.com/roramirez/MagicMirror-Module-Template",
     "id": "roramirez/MagicMirror-Module-Template",
     "maintainer": "roramirez",
     "maintainerURL": "",
     "description": "Module to help developers to start building their own modules for the MagicMirror\u00b2.",
     "issues": true,
+    "outdated": "No changes since years. It's not a good start anymore. Use <a href=\"https://github.com/Dennis-Rosenbaum/MMM-Template\">MMM-Template</a> instead.",
     "stars": 74,
     "license": "MIT",
-    "defaultSortWeight": 17,
+    "defaultSortWeight": 917,
     "lastCommit": "2019-11-27T17:33:41-05:00"
   },
   {
@@ -9132,7 +9156,7 @@
     "maintainer": "bugsounet",
     "maintainerURL": "",
     "description": "[FR] Affiche les informations de pr\u00e9visions actuelles, horaires et quotidiennes \u00e0 l'aide des donn\u00e9es de l'API M\u00e9t\u00e9oFrance.<br />[EN] Displays current, hourly and daily forecast information using data from MeteoFrance API.",
-    "issues": true,
+    "issues": false,
     "stars": 1,
     "license": "MIT",
     "tags": [
@@ -9141,7 +9165,7 @@
       "french"
     ],
     "image": "screenshot.jpg",
-    "defaultSortWeight": 1,
+    "defaultSortWeight": 0,
     "lastCommit": "2024-07-01T16:53:47+02:00"
   },
   {
@@ -9277,7 +9301,7 @@
       "yahoo finance"
     ],
     "image": "idx_table.jpg",
-    "defaultSortWeight": 2,
+    "defaultSortWeight": 3,
     "lastCommit": "2024-06-07T11:41:50-04:00"
   },
   {
@@ -9298,7 +9322,7 @@
       "baseball"
     ],
     "image": "MMM-MLB-Scoreboard-Preview.jpg",
-    "defaultSortWeight": 2,
+    "defaultSortWeight": 3,
     "lastCommit": "2024-04-29T18:15:43-04:00"
   },
   {
@@ -9955,7 +9979,7 @@
     ],
     "image": "images-2023-09-15-example-moons.jpg",
     "defaultSortWeight": 0,
-    "lastCommit": "2024-05-13T19:59:54-04:00"
+    "lastCommit": "2024-09-09T21:52:01-04:00"
   },
   {
     "name": "MMM-moonraker",
@@ -10292,7 +10316,7 @@
       "mqtt"
     ],
     "image": "github-MQTTbind.jpg",
-    "defaultSortWeight": 3,
+    "defaultSortWeight": 4,
     "lastCommit": "2020-05-21T21:22:42+02:00"
   },
   {
@@ -10437,7 +10461,7 @@
     "maintainer": "bugsounet",
     "maintainerURL": "https://wiki.bugsounet.fr",
     "description": "Play any music found on a USB Key or in defined local directory.<br /><br />This module has been defined to work only with MMM-GoogleAssistant.",
-    "issues": true,
+    "issues": false,
     "stars": 3,
     "license": "MIT",
     "tags": [
@@ -10446,7 +10470,7 @@
       "warning"
     ],
     "image": "resources-Screenshot.jpg",
-    "defaultSortWeight": 4,
+    "defaultSortWeight": 3,
     "lastCommit": "2024-07-01T17:02:31+02:00"
   },
   {
@@ -10569,7 +10593,7 @@
       "knmi"
     ],
     "image": "screenshot01.jpg",
-    "defaultSortWeight": 3,
+    "defaultSortWeight": 4,
     "lastCommit": "2024-07-01T21:28:32+02:00"
   },
   {
@@ -10633,7 +10657,7 @@
     "stars": 9,
     "license": "MIT",
     "image": "screenshot.jpg",
-    "defaultSortWeight": 3,
+    "defaultSortWeight": 4,
     "lastCommit": "2024-07-01T21:23:19+02:00"
   },
   {
@@ -10835,7 +10859,7 @@
     ],
     "license": "MIT",
     "image": "gallery-example.jpg",
-    "defaultSortWeight": 2,
+    "defaultSortWeight": 3,
     "lastCommit": "2023-11-13T10:06:04+01:00"
   },
   {
@@ -11167,7 +11191,7 @@
     "maintainer": "CFenner",
     "maintainerURL": "",
     "description": "Display your Netatmo in/outdoor weather station data.",
-    "issues": true,
+    "issues": false,
     "stars": 36,
     "license": "MIT",
     "tags": [
@@ -11175,8 +11199,8 @@
       "smart home"
     ],
     "image": ".github-preview.bubbles.jpg",
-    "defaultSortWeight": 0,
-    "lastCommit": "2024-09-06T21:56:39+00:00"
+    "defaultSortWeight": -2,
+    "lastCommit": "2024-09-12T17:37:48+02:00"
   },
   {
     "name": "MMM-Netatmo-Presence",
@@ -11221,7 +11245,7 @@
     "maintainer": "bugsounet",
     "maintainerURL": "",
     "description": "This module display your Netatmo Thermostat informations.",
-    "issues": true,
+    "issues": false,
     "stars": 2,
     "license": "MIT",
     "tags": [
@@ -11230,7 +11254,7 @@
       "smart home"
     ],
     "image": "resources-A_Screenshot_0.jpg",
-    "defaultSortWeight": 0,
+    "defaultSortWeight": -1,
     "lastCommit": "2024-07-01T16:52:57+02:00"
   },
   {
@@ -11260,7 +11284,7 @@
     "maintainerURL": "https://github.com/slametps",
     "description": "Display network connection status (ping, download speed, upload speed).",
     "issues": true,
-    "stars": 32,
+    "stars": 33,
     "tags": [
       "networkconnection",
       "network",
@@ -11281,7 +11305,7 @@
     "maintainerURL": "https://github.com/spitzlbergerj",
     "description": "Display the status of devices on the network based on their MAC address with nice columnview.",
     "issues": true,
-    "stars": 18,
+    "stars": 19,
     "hasGithubIssues": false,
     "license": "MIT",
     "tags": [
@@ -11354,7 +11378,7 @@
     "maintainerURL": "https://github.com/PierreGode",
     "description": "Display your upcomming show's and movies from your next-episode account.",
     "issues": true,
-    "stars": 4,
+    "stars": 5,
     "license": "GPL-3.0",
     "tags": [
       "tvshows",
@@ -11558,7 +11582,7 @@
     "maintainerURL": "https://github.com/Jalibu",
     "description": "Client implementation for German NINA Warn API. Supports alerts of KatWarn, Biwapp and Mowas.",
     "issues": true,
-    "stars": 22,
+    "stars": 21,
     "license": "MIT",
     "tags": [
       "nina",
@@ -11567,7 +11591,7 @@
       "crisis"
     ],
     "image": "img-screenshot1.jpg",
-    "defaultSortWeight": -1,
+    "defaultSortWeight": 0,
     "lastCommit": "2024-02-12T14:39:09+01:00"
   },
   {
@@ -11579,7 +11603,7 @@
     "maintainerURL": "https://github.com/Isaac-the-Man",
     "description": "Retro nixie clock display.",
     "issues": true,
-    "stars": 15,
+    "stars": 16,
     "license": "MIT",
     "image": "screenshots-digit-reset.jpg",
     "defaultSortWeight": 5,
@@ -11617,7 +11641,7 @@
       "nj transit bus"
     ],
     "image": "docs-preview1.jpg",
-    "defaultSortWeight": 904,
+    "defaultSortWeight": 905,
     "lastCommit": "2018-12-15T17:41:14-05:00"
   },
   {
@@ -11682,7 +11706,7 @@
     "description": "Different providers for users to choose from. Shows current plus 3 day forecast. Mouseover shows forecast, with Air, UV, Humidity, Sunrise and Set.",
     "issues": true,
     "outdated": "Abandoned. No reactions to issues and PRs since years.",
-    "stars": 1,
+    "stars": 2,
     "license": "ISC",
     "image": "examples-1.jpg",
     "defaultSortWeight": 927,
@@ -11769,7 +11793,7 @@
     "maintainerURL": "",
     "description": "MMM-NotificationTrigger is a simple notification relay which can convert notifications from TRIGGER_NOTIFICATION to FIRE_NOTIFICATION.",
     "issues": true,
-    "stars": 18,
+    "stars": 19,
     "license": "MIT",
     "defaultSortWeight": 3,
     "lastCommit": "2021-10-11T20:19:17+02:00"
@@ -11819,7 +11843,7 @@
     "description": "Display the song you are currently listening to on Spotify.",
     "issues": true,
     "outdated": "Abandoned. No reactions to issues since years. Depends on deprecated modules. MMM-OnSpotify is an alternative.",
-    "stars": 203,
+    "stars": 205,
     "license": "MIT",
     "tags": [
       "spotify"
@@ -11867,7 +11891,7 @@
     "maintainerURL": "",
     "description": "Real-time MTA subway countdown clock for stations you choose. Configurable for marquee and or list view.",
     "issues": true,
-    "stars": 18,
+    "stars": 21,
     "license": "MIT",
     "tags": [
       "nyc",
@@ -11935,7 +11959,7 @@
     "maintainerURL": "",
     "description": "Displays energy usage history for your Octopus Energy account.",
     "issues": true,
-    "stars": 4,
+    "stars": 5,
     "license": "MIT",
     "image": "screenshot.jpg",
     "defaultSortWeight": 8,
@@ -11950,7 +11974,7 @@
     "maintainerURL": "https://github.com/btastic",
     "description": "Octoprint API integration.",
     "issues": true,
-    "stars": 4,
+    "stars": 5,
     "license": "MIT",
     "tags": [
       "octoprint",
@@ -12043,7 +12067,7 @@
     "maintainerURL": "",
     "description": "Displays the medals for olympic games.",
     "issues": true,
-    "stars": 3,
+    "stars": 4,
     "license": "MIT",
     "tags": [
       "olympic games"
@@ -12106,7 +12130,7 @@
     "maintainerURL": "https://github.com/hermanho",
     "description": "Display your photos from Microsoft OneDrive.",
     "issues": true,
-    "stars": 3,
+    "stars": 4,
     "license": "MIT",
     "tags": [
       "onedrive"
@@ -12139,7 +12163,7 @@
     "maintainerURL": "",
     "description": "Use OneTracker app to deliveries/packages by forwarding from any email address.",
     "issues": true,
-    "stars": 15,
+    "stars": 18,
     "license": "MIT",
     "image": "images-1.jpg",
     "defaultSortWeight": 4,
@@ -12169,7 +12193,7 @@
     "maintainerURL": "https://github.com/NicholasRasi",
     "description": "Displays images from online URLs, useful for showing images from webcams.",
     "issues": true,
-    "stars": 1,
+    "stars": 2,
     "license": "MIT",
     "tags": [
       "images",
@@ -12188,7 +12212,7 @@
     "maintainerURL": "",
     "description": "Simple On-Screen Menu for controlling the MagicMirror\u00b2.",
     "issues": true,
-    "stars": 60,
+    "stars": 63,
     "license": "MIT",
     "tags": [
       "menu",
@@ -12208,7 +12232,7 @@
     "maintainerURL": "https://github.com/Fabrizz",
     "description": "Highly customizable module that displays what you are listening to in Spotify. Works with <a target=\"_blank\" href=\"https://github.com/Fabrizz/MMM-LiveLyrics\">MMM-LiveLyrics</a> and allows theming other modules!",
     "issues": true,
-    "stars": 50,
+    "stars": 59,
     "license": "MIT",
     "tags": [
       "spotify",
@@ -12242,7 +12266,7 @@
     "maintainerURL": "https://github.com/nkl-kst",
     "description": "Display historical events from Wikipedia based on the current date.",
     "issues": true,
-    "stars": 33,
+    "stars": 35,
     "license": "MIT",
     "tags": [
       "events",
@@ -12262,7 +12286,7 @@
     "maintainerURL": "https://github.com/slugmuffin",
     "description": "Display historical events from Wikipedia based on the current date using the Wikimedia API. Can display as list or newsfeed style.",
     "issues": true,
-    "stars": 3,
+    "stars": 4,
     "license": "MIT",
     "tags": [
       "events",
@@ -12312,7 +12336,7 @@
     "maintainerURL": "https://github.com/Menturan",
     "description": "Display places opening hours.",
     "issues": true,
-    "stars": 11,
+    "stars": 12,
     "license": "GPL-3.0",
     "image": "screenshot.jpg",
     "defaultSortWeight": 7,
@@ -12327,7 +12351,7 @@
     "maintainerURL": "",
     "description": "Display current weather as image based on the Openmap Weather API data with different formatting.",
     "issues": true,
-    "stars": 26,
+    "stars": 29,
     "license": "MIT",
     "image": "MMM-OpenmapWeather-display.jpg",
     "defaultSortWeight": 6,
@@ -12383,11 +12407,16 @@
     "maintainerURL": "",
     "description": "Displays current, hourly and daily forecast information using data from the OpenWeather One Call API.",
     "issues": true,
-    "stars": 2,
+    "stars": 4,
+    "tags": [
+      "openweathermap",
+      "weather",
+      "forecast"
+    ],
     "license": "MIT",
     "image": "MMM-OpenWeatherForecast.jpg",
-    "defaultSortWeight": 12,
-    "lastCommit": "2024-05-20T21:19:35+02:00"
+    "defaultSortWeight": 5,
+    "lastCommit": "2024-09-17T21:01:24+02:00"
   },
   {
     "name": "MMM-OpenWeatherMapForecast",
@@ -12398,7 +12427,7 @@
     "maintainerURL": "",
     "description": "A weather module that displays current, hourly and daily forecast information using data from the OpenWeatherMap One Call API. This is based on the MMM-DarkSkyForecast module by jclarke0000.",
     "issues": true,
-    "stars": 28,
+    "stars": 29,
     "hasGithubIssues": false,
     "tags": [
       "weather",
@@ -12408,7 +12437,7 @@
     "license": "MIT",
     "image": "screenshots-MMM-OpenWeatherMapForecast.jpg",
     "defaultSortWeight": 4,
-    "lastCommit": "2024-05-28T11:59:52+02:00"
+    "lastCommit": "2024-09-11T16:51:55+02:00"
   },
   {
     "name": "MMM-OsloCityBike",
@@ -12538,7 +12567,8 @@
     "description": "Configure location and visibity of modules on defined pages.",
     "issues": true,
     "stars": 35,
-    "defaultSortWeight": 4,
+    "license": "MIT",
+    "defaultSortWeight": 5,
     "lastCommit": "2024-08-17T11:23:09-04:00"
   },
   {
@@ -12564,11 +12594,11 @@
     "maintainerURL": "",
     "description": "Rotate out pages of modules.",
     "issues": true,
-    "stars": 1,
+    "stars": 2,
     "license": "MIT",
     "image": "example.jpg",
     "defaultSortWeight": 3,
-    "lastCommit": "2024-06-24T08:01:18-05:00"
+    "lastCommit": "2024-09-13T08:02:14-05:00"
   },
   {
     "name": "EXT-Pages",
@@ -12578,16 +12608,15 @@
     "maintainer": "bugsounet",
     "maintainerURL": "https://wiki.bugsounet.fr",
     "description": "This plugin allows you to have animated pages.<br /><br />This module has been defined to work only with MMM-GoogleAssistant.",
-    "issues": true,
-    "stars": 3,
-    "hasGithubIssues": false,
+    "issues": false,
+    "stars": 4,
     "license": "MIT",
     "tags": [
       "mmm-googleassistant",
       "pages"
     ],
     "image": "example.jpg",
-    "defaultSortWeight": 5,
+    "defaultSortWeight": 3,
     "lastCommit": "2024-07-01T17:02:49+02:00"
   },
   {
@@ -12728,7 +12757,7 @@
     "maintainerURL": "",
     "description": "Get system stats from a PC board. Supports multiple core CPU's.",
     "issues": true,
-    "stars": 5,
+    "stars": 6,
     "license": "MIT",
     "image": "images-1.jpg",
     "defaultSortWeight": 5,
@@ -12813,7 +12842,7 @@
     "maintainerURL": "",
     "description": "Module to version your personal config in a separate repository.",
     "issues": true,
-    "stars": 5,
+    "stars": 7,
     "license": "MIT",
     "defaultSortWeight": 8,
     "lastCommit": "2024-01-04T16:31:32+01:00"
@@ -12896,7 +12925,7 @@
     "maintainerURL": "",
     "description": "Displays and alerts mirror users on new phone notifications.",
     "issues": true,
-    "stars": 60,
+    "stars": 61,
     "tags": [
       "phone notification",
       "notification"
@@ -12913,7 +12942,7 @@
     "maintainerURL": "https://github.com/PierreGode",
     "description": "Automatically controls the screen's power based on the presence of specified phones or devices within the network.",
     "issues": true,
-    "stars": 4,
+    "stars": 6,
     "license": "MIT",
     "tags": [
       "phone",
@@ -12932,16 +12961,15 @@
     "maintainer": "bugsounet",
     "maintainerURL": "https://wiki.bugsounet.fr",
     "description": "Displaying any photos discover by assistant in fullscreen.<br /><br />This module has been defined to work only with MMM-GoogleAssistant.",
-    "issues": true,
+    "issues": false,
     "stars": 0,
-    "hasGithubIssues": false,
     "license": "MIT",
     "tags": [
       "mmm-googleassistant",
       "photos"
     ],
     "image": "resources-Photos-Logo.jpg",
-    "defaultSortWeight": 5,
+    "defaultSortWeight": 3,
     "lastCommit": "2024-07-01T16:58:08+02:00"
   },
   {
@@ -12966,7 +12994,7 @@
     "maintainerURL": "",
     "description": "Display stats from Pi-Hole DNS ad blocking.",
     "issues": true,
-    "stars": 71,
+    "stars": 72,
     "license": "MIT",
     "tags": [
       "pi-hole"
@@ -13022,7 +13050,7 @@
       "node"
     ],
     "image": "res-img.jpg",
-    "defaultSortWeight": 1,
+    "defaultSortWeight": 2,
     "lastCommit": "2024-09-05T11:08:15+06:00"
   },
   {
@@ -13069,7 +13097,8 @@
     "maintainerURL": "",
     "description": "After a configurated time without any user interaction the display will turn off and hide all modules for economy mode. It will wake up with a PIR sensor.",
     "issues": true,
-    "stars": 25,
+    "stars": 31,
+    "hasGithubIssues": false,
     "license": "MIT",
     "tags": [
       "screen",
@@ -13101,7 +13130,7 @@
     ],
     "image": "img-motion_detection.jpg",
     "defaultSortWeight": 5,
-    "lastCommit": "2024-09-08T13:12:38+02:00"
+    "lastCommit": "2024-09-13T11:34:01+02:00"
   },
   {
     "name": "MMM-PIR",
@@ -13122,22 +13151,25 @@
   },
   {
     "name": "MMM-PIR-Sensor",
-    "category": "Utility / IOT / 3rd Party / Integration",
+    "category": "Outdated Modules",
     "url": "https://github.com/MarcLandis/MMM-PIR-Sensor",
     "id": "MarcLandis/MMM-PIR-Sensor",
     "maintainer": "MarcLandis",
     "maintainerURL": "",
     "description": "This module can monitor a PIR motion sensor and put your mirror to sleep if nobody uses it.",
     "issues": true,
+    "outdated": "Deprecated. The author no longer works on it and recommends using <a href=\"https://github.com/bugsounet/MMM-Pir\">MMM-Pir</a> instead.",
     "stars": 9,
     "hasGithubIssues": false,
-    "tags": [
-      "pir-sensor",
-      "motion"
-    ],
+    "isArchived": true,
     "license": "MIT",
-    "defaultSortWeight": 9,
-    "lastCommit": "2023-01-04T08:30:06+01:00"
+    "tags": [
+      "pir sensor",
+      "motion detection"
+    ],
+    "image": "img-motion_detection.jpg",
+    "defaultSortWeight": 903,
+    "lastCommit": "2024-09-12T11:24:33+02:00"
   },
   {
     "name": "MMM-PIR-Sensor-Lite",
@@ -13190,7 +13222,7 @@
     "maintainerURL": "",
     "description": "MMM-PiTemp works in conjunction with MagicMirror\u00b2 and tells you the temperature of your raspberry pi's CPU. If the temperature is ever greater than 85 degrees then the pi shuts down.",
     "issues": true,
-    "stars": 12,
+    "stars": 14,
     "license": "MIT",
     "image": "PiTemp.jpg",
     "defaultSortWeight": 2,
@@ -13313,7 +13345,7 @@
     "maintainerURL": "",
     "description": "Displays the list of playback sessions for a Plex Media Server.",
     "issues": true,
-    "stars": 26,
+    "stars": 27,
     "license": "MIT",
     "image": "images-sample.jpg",
     "defaultSortWeight": 8,
@@ -13360,8 +13392,13 @@
     "description": "Display the next time on a clear morning or evening that you can go outside and experience the brightness of high noon on Pluto.",
     "issues": true,
     "stars": 3,
-    "defaultSortWeight": 7,
-    "lastCommit": "2024-03-18T10:17:28-07:00"
+    "tags": [
+      "astronomy"
+    ],
+    "license": "MIT",
+    "image": "screenshot.jpg",
+    "defaultSortWeight": 4,
+    "lastCommit": "2024-09-11T19:40:46-07:00"
   },
   {
     "name": "MMM-Podcast",
@@ -13440,10 +13477,10 @@
     "maintainerURL": "",
     "description": "Display 2 day pollen forecast based on DWD geoserver data.",
     "issues": true,
-    "stars": 10,
+    "stars": 11,
     "license": "MIT",
     "image": "preview.jpg",
-    "defaultSortWeight": 7,
+    "defaultSortWeight": 6,
     "lastCommit": "2020-03-21T10:56:51+01:00"
   },
   {
@@ -13567,7 +13604,7 @@
     "maintainerURL": "",
     "description": "Automatically track and trace PostNords letters, parcels and pallets with your phone number or email.",
     "issues": true,
-    "stars": 3,
+    "stars": 4,
     "license": "ISC",
     "image": "docs-screenshot.jpg",
     "defaultSortWeight": 8,
@@ -13656,7 +13693,7 @@
       "carburant"
     ],
     "image": "screenshot.jpg",
-    "defaultSortWeight": 2,
+    "defaultSortWeight": 3,
     "lastCommit": "2024-07-01T16:51:57+02:00"
   },
   {
@@ -13698,7 +13735,7 @@
     "maintainerURL": "https://github.com/Tom-Hirschberger",
     "description": "Indicator module for MMM-ProfileSwitcher.",
     "issues": true,
-    "stars": 3,
+    "stars": 4,
     "license": "MIT",
     "tags": [
       "profiles",
@@ -13733,7 +13770,7 @@
     "maintainerURL": "",
     "description": "This Module adds the ability to have different layouts for different profiles.",
     "issues": true,
-    "stars": 44,
+    "stars": 45,
     "license": "MIT",
     "defaultSortWeight": 5,
     "lastCommit": "2020-04-06T15:34:47+02:00"
@@ -13747,7 +13784,7 @@
     "maintainerURL": "https://github.com/spydersoft-consulting",
     "description": "Display Prometheus Alerts.",
     "issues": true,
-    "stars": 1,
+    "stars": 2,
     "license": "MIT",
     "tags": [
       "scheduler"
@@ -13817,7 +13854,7 @@
     "maintainerURL": "",
     "description": "Displays departure information for public transportation in Germany and some other European countries. The <a target=\"_blank\" href=\"https://github.com/public-transport/hafas-client\">hafas-client</a> is used to query the information. The interface of the Deutsche Bahn is used as standard, this includes most of the local networks with buses, trams, etc. However, <a target=\"_blank\" href=\"https://github.com/public-transport/hafas-client/blob/main/p/readme.md\">other hafas interfaces</a> can also be used.",
     "issues": false,
-    "stars": 16,
+    "stars": 17,
     "license": "MIT",
     "tags": [
       "public transport",
@@ -13922,7 +13959,7 @@
     "maintainerURL": "",
     "description": "Display notifications from phone and PC and control your mirror using Pushbullet (API).",
     "issues": true,
-    "stars": 32,
+    "stars": 34,
     "license": "MIT",
     "tags": [
       "pushbullet",
@@ -13960,19 +13997,19 @@
     "stars": 1,
     "license": "Apache-2.0",
     "image": "Sreenshot1.jpg",
-    "defaultSortWeight": 2,
+    "defaultSortWeight": 3,
     "lastCommit": "2024-02-04T12:35:37-05:00"
   },
   {
     "name": "MMM-QRCode",
     "category": "Utility / IOT / 3rd Party / Integration",
-    "url": "https://github.com/MarinescuEvghenii/MMM-QRCode",
-    "id": "MarinescuEvghenii/MMM-QRCode",
-    "maintainer": "MarinescuEvghenii",
+    "url": "https://github.com/uxigene/MMM-QRCode",
+    "id": "uxigene/MMM-QRCode",
+    "maintainer": "uxigene",
     "maintainerURL": "",
     "description": "Show QRCode image of encoded text.",
     "issues": true,
-    "stars": 16,
+    "stars": 17,
     "defaultSortWeight": 5,
     "lastCommit": "2022-04-19T17:50:21+02:00"
   },
@@ -14062,16 +14099,15 @@
     "maintainer": "bugsounet",
     "maintainerURL": "https://wiki.bugsounet.fr",
     "description": "Play radio station on MagicMirror\u00b2.<br /><br />This module has been defined to work only with MMM-GoogleAssistant.",
-    "issues": true,
+    "issues": false,
     "stars": 2,
-    "hasGithubIssues": false,
     "license": "MIT",
     "tags": [
       "mmm-googleassistant",
       "radio"
     ],
     "image": "radio.jpg",
-    "defaultSortWeight": 5,
+    "defaultSortWeight": 3,
     "lastCommit": "2024-07-01T16:57:50+02:00"
   },
   {
@@ -14111,7 +14147,7 @@
     "maintainerURL": "https://github.com/jalibu",
     "description": "A rain radar map based on OpenStreetMap. Multiple location markers, option for alternating positions and zoom levels.",
     "issues": false,
-    "stars": 36,
+    "stars": 40,
     "license": "MIT",
     "tags": [
       "weather",
@@ -14149,7 +14185,7 @@
     "maintainerURL": "",
     "description": "2 hour Dutch rain forecast graph based on Buienradar.",
     "issues": true,
-    "stars": 7,
+    "stars": 8,
     "license": "MIT",
     "tags": [
       "rain",
@@ -14197,7 +14233,7 @@
     "maintainerURL": "",
     "description": "Display random quotes from brainyquote.",
     "issues": true,
-    "stars": 19,
+    "stars": 20,
     "license": "MIT",
     "defaultSortWeight": 5,
     "lastCommit": "2016-06-22T13:13:10-06:00"
@@ -14211,7 +14247,7 @@
     "maintainerURL": "",
     "description": "Load a random photo from picsum. Originally by diego-vieira, now with support for local paths and NextCloud shares.",
     "issues": true,
-    "stars": 6,
+    "stars": 7,
     "tags": [
       "photo",
       "image",
@@ -14220,7 +14256,7 @@
     ],
     "license": "ISC",
     "image": "example1.jpg",
-    "defaultSortWeight": 2,
+    "defaultSortWeight": 3,
     "lastCommit": "2024-03-29T10:11:25-07:00"
   },
   {
@@ -14250,7 +14286,7 @@
     "maintainerURL": "https://github.com/slametps",
     "description": "Display ayah/verse of Qur'an randomly.",
     "issues": true,
-    "stars": 11,
+    "stars": 10,
     "license": "MIT",
     "tags": [
       "moslem",
@@ -14258,7 +14294,7 @@
       "quran"
     ],
     "image": "screenshot.jpg",
-    "defaultSortWeight": 4,
+    "defaultSortWeight": 5,
     "lastCommit": "2022-05-17T15:12:06+07:00"
   },
   {
@@ -14270,7 +14306,7 @@
     "maintainerURL": "",
     "description": "Load a playlist into a YouTube player, AND shuffle the videos in the playlist.",
     "issues": true,
-    "stars": 15,
+    "stars": 16,
     "license": "Unlicense",
     "defaultSortWeight": 9,
     "lastCommit": "2019-03-05T12:09:00-06:00"
@@ -14433,7 +14469,7 @@
     "maintainerURL": "",
     "description": "Cleanly shutdown (or reboot) your mirror, edit which modules are shown on your mirror and turn your monitor off and on from a simple website, i.e. from your smartphone.",
     "issues": true,
-    "stars": 482,
+    "stars": 497,
     "license": "MIT",
     "tags": [
       "remote control",
@@ -14452,7 +14488,7 @@
     "maintainerURL": "",
     "description": "Plugin for <code>MMM-Remote-Control</code> to update installable modules automatically.",
     "issues": true,
-    "stars": 23,
+    "stars": 24,
     "license": "MIT",
     "defaultSortWeight": 5,
     "lastCommit": "2023-10-19T08:33:11+02:00"
@@ -14513,7 +14549,7 @@
     "license": "MIT",
     "image": "img-example_3_types.jpg",
     "defaultSortWeight": 6,
-    "lastCommit": "2024-06-06T21:42:09+02:00"
+    "lastCommit": "2024-09-16T20:58:12+02:00"
   },
   {
     "name": "MMM-RepRapFirmware",
@@ -14556,7 +14592,7 @@
     "maintainerURL": "",
     "description": "Public transport information for Sweden.",
     "issues": true,
-    "stars": 13,
+    "stars": 14,
     "tags": [
       "local transport",
       "sweden"
@@ -14628,7 +14664,7 @@
     "maintainerURL": "",
     "description": "Display status and allow arming/disarming of a Ring alarm system.",
     "issues": true,
-    "stars": 1,
+    "stars": 2,
     "license": "MIT",
     "image": "screenshot.jpg",
     "defaultSortWeight": 5,
@@ -14788,7 +14824,7 @@
     "stars": 1,
     "license": "MIT",
     "image": "screenshot.jpg",
-    "defaultSortWeight": 3,
+    "defaultSortWeight": 4,
     "lastCommit": "2024-02-05T20:54:09+01:00"
   },
   {
@@ -14843,7 +14879,7 @@
     "maintainerURL": "",
     "description": "Show RTSP video stream(s) from one or more security cameras.",
     "issues": true,
-    "stars": 69,
+    "stars": 71,
     "license": "MIT",
     "image": "screenshot.jpg",
     "defaultSortWeight": 20,
@@ -14991,7 +15027,7 @@
     "description": "Change screen scenes by time and order with animation effect.",
     "issues": true,
     "outdated": "Deprecated. The successor is MMM-Scenes2.",
-    "stars": 13,
+    "stars": 14,
     "license": "MIT",
     "tags": [
       "paging",
@@ -15009,7 +15045,7 @@
     "maintainerURL": "",
     "description": "Change screen scenes by time and order with animation effect. Successor of MMM-Scenes since MM 2.25 (AnimateCSS is introduced).",
     "issues": false,
-    "stars": 5,
+    "stars": 8,
     "license": "MIT",
     "tags": [
       "page",
@@ -15049,7 +15085,6 @@
     "description": "After a configurated time without any user interaction the display will turn off and hide all modules for economy mode.<br /><br />This module has been defined to work only with MMM-GoogleAssistant.",
     "issues": true,
     "stars": 4,
-    "hasGithubIssues": false,
     "license": "MIT",
     "tags": [
       "mmm-googleassistant",
@@ -15069,7 +15104,7 @@
     "maintainerURL": "https://github.com/Tom-Hirschberger",
     "description": "Screensaver module which shuts the screen off if USER_PRESENCE is not received within specified timeout. Can be used as PIR module in combination with <a target=\"_blank\" href=\"https://github.com/Tom-Hirschberger/MMM-GPIO-Notifications\">MMM-GPIO-Notifications</a>.",
     "issues": true,
-    "stars": 3,
+    "stars": 4,
     "license": "MIT",
     "tags": [
       "screensave",
@@ -15077,7 +15112,7 @@
     ],
     "image": "example.jpg",
     "defaultSortWeight": 3,
-    "lastCommit": "2024-03-12T19:04:18+01:00"
+    "lastCommit": "2024-09-14T20:02:50+02:00"
   },
   {
     "name": "MMM-Screencast",
@@ -15098,8 +15133,8 @@
       "youtube"
     ],
     "image": "screenshots-screenshot.jpg",
-    "defaultSortWeight": 3,
-    "lastCommit": "2022-02-03T17:24:31-05:00"
+    "defaultSortWeight": 2,
+    "lastCommit": "2024-09-11T14:37:32-04:00"
   },
   {
     "name": "MMM-ScreenLogic",
@@ -15262,7 +15297,7 @@
     "stars": 8,
     "license": "MIT",
     "image": "screenshot.jpg",
-    "defaultSortWeight": 3,
+    "defaultSortWeight": 4,
     "lastCommit": "2022-09-27T20:49:46-04:00"
   },
   {
@@ -15275,7 +15310,6 @@
     "description": "Send your selfies to Telegram, google photos or by mail.<br /><br />This module has been defined to work only with MMM-GoogleAssistant.",
     "issues": true,
     "stars": 0,
-    "hasGithubIssues": false,
     "license": "MIT",
     "tags": [
       "mmm-googleassistant",
@@ -15293,9 +15327,8 @@
     "maintainer": "bugsounet",
     "maintainerURL": "https://wiki.bugsounet.fr",
     "description": "Slideshow of your best selfies.<br /><br />This module has been defined to work only with MMM-GoogleAssistant.",
-    "issues": true,
+    "issues": false,
     "stars": 0,
-    "hasGithubIssues": false,
     "license": "MIT",
     "tags": [
       "mmm-googleassistant",
@@ -15303,7 +15336,7 @@
       "show"
     ],
     "image": "resources-coming_soon.jpg",
-    "defaultSortWeight": 4,
+    "defaultSortWeight": 2,
     "lastCommit": "2024-07-01T17:04:51+02:00"
   },
   {
@@ -15385,7 +15418,7 @@
     "maintainerURL": "https://github.com/XBCreepinJesus",
     "description": "Check the up/down status of servers/devices on your network.",
     "issues": true,
-    "stars": 16,
+    "stars": 17,
     "tags": [
       "ping",
       "server",
@@ -15393,7 +15426,7 @@
     ],
     "license": "MIT",
     "image": "screenshots-DeviceStatusExample.jpg",
-    "defaultSortWeight": 2,
+    "defaultSortWeight": 3,
     "lastCommit": "2021-03-28T18:18:07+01:00"
   },
   {
@@ -15421,7 +15454,7 @@
     "description": "Displays the ETA of San Francisco's MUNI Bus and Rail systems based on the given stops and routes.",
     "issues": true,
     "outdated": "Abandoned. The API used no longer works, there is a new API but the developer no longer seems to be active.",
-    "stars": 3,
+    "stars": 4,
     "license": "GPL-3.0",
     "tags": [
       "muni",
@@ -15475,7 +15508,7 @@
     "maintainerURL": "",
     "description": "Integrate Apple AirTunes/Airplay metadata coming via shairport-sync into the MagicMirror\u00b2. Does not work with video or mirroring.",
     "issues": true,
-    "stars": 17,
+    "stars": 18,
     "license": "MIT",
     "image": "preview.jpg",
     "defaultSortWeight": 8,
@@ -15522,7 +15555,7 @@
     "maintainerURL": "https://github.com/stefanjacobs",
     "description": "Display data from 1 Shelly PM sensor, forked and modified by <a target=\"_blank\" href=\"https://github.com/Medve01/Shelly-HT\">Shelly-HT</a>.",
     "issues": true,
-    "stars": 3,
+    "stars": 4,
     "license": "Unlicense",
     "defaultSortWeight": 9,
     "lastCommit": "2022-10-10T15:43:28+02:00"
@@ -15558,8 +15591,10 @@
     "description": "Display data from Shelly+ HT sensor. Forked from Shelly-HT for Gen2 device Shelly Plus HT.",
     "issues": true,
     "stars": 0,
-    "defaultSortWeight": 5,
-    "lastCommit": "2023-10-01T13:13:27+02:00"
+    "license": "MIT",
+    "image": "images-ShellyHTPlus.jpg",
+    "defaultSortWeight": 4,
+    "lastCommit": "2024-09-13T07:44:24+02:00"
   },
   {
     "name": "MMM-ShipmentTracking",
@@ -15620,7 +15655,7 @@
     "maintainerURL": "https://github.com/muhammedsaidckr",
     "description": "Display a simple, customizable background slideshow.",
     "issues": true,
-    "stars": 1,
+    "stars": 2,
     "tags": [
       "magicmirror-module",
       "background-slideshow",
@@ -15644,7 +15679,7 @@
     "maintainerURL": "",
     "description": "Simply displays logo with local image file path or url.",
     "issues": true,
-    "stars": 37,
+    "stars": 39,
     "license": "MIT",
     "image": "public-logo.jpg",
     "defaultSortWeight": 3,
@@ -15693,7 +15728,7 @@
     "maintainerURL": "",
     "description": "Displays the stock price of a single company without any fancy animation.",
     "issues": true,
-    "stars": 6,
+    "stars": 7,
     "license": "MIT",
     "tags": [
       "stock"
@@ -15855,7 +15890,7 @@
     "maintainerURL": "",
     "description": "Use an external source for motion detection, like a web camera.",
     "issues": true,
-    "stars": 13,
+    "stars": 16,
     "defaultSortWeight": 5,
     "lastCommit": "2024-02-02T22:25:01-07:00"
   },
@@ -15882,7 +15917,7 @@
     "maintainer": "bugsounet",
     "maintainerURL": "https://wiki.bugsounet.fr",
     "description": "Control MMM-GoogleAssistant with your smartphone from Google Home app.<br /><br />This module has been defined to work only with MMM-GoogleAssistant.",
-    "issues": true,
+    "issues": false,
     "stars": 1,
     "license": "MIT",
     "tags": [
@@ -15892,7 +15927,7 @@
       "ext"
     ],
     "image": "website-assets-img-google-home.jpg",
-    "defaultSortWeight": 3,
+    "defaultSortWeight": 2,
     "lastCommit": "2024-07-01T16:56:54+02:00"
   },
   {
@@ -15904,7 +15939,7 @@
     "maintainerURL": "https://github.com/EbenKouao",
     "description": "This module allows you to transform your MagicMirror\u00b2 into a touchscreen interactive experience. This includes hiding all modules (Standby Mode) and Side Menu Option to shutdown your mirror via MagicMirror\u00b2 UI.",
     "issues": true,
-    "stars": 81,
+    "stars": 86,
     "license": "MIT",
     "image": "img-readme-default-ui.jpg",
     "defaultSortWeight": 8,
@@ -15919,7 +15954,7 @@
     "maintainerURL": "https://github.com/AgP42",
     "description": "An iFrame module to display web content (including YouTube, IP cameras, etc.). Several rotating URL, autorefresh and remote control of the URL to display, Next/Prev/Play/Stop. <a target=\"_blank\" href=\"https://forum.magicmirror.builders/topic/9750/mmm-smartwebdisplay-display-web-contents-including-youtube-on-your-mm\">MMM-SmartWebDisplay forum</a>.",
     "issues": true,
-    "stars": 57,
+    "stars": 58,
     "tags": [
       "iframe",
       "notification"
@@ -15952,7 +15987,7 @@
     "maintainerURL": "",
     "description": "Display upcoming trains between 2 SNCF stations (France).",
     "issues": true,
-    "stars": 5,
+    "stars": 6,
     "license": "MIT",
     "tags": [
       "public transport",
@@ -15991,7 +16026,7 @@
     "maintainerURL": "",
     "description": "More realistic snow plugin to improve your winter experience.",
     "issues": true,
-    "stars": 55,
+    "stars": 54,
     "defaultSortWeight": 5,
     "lastCommit": "2018-02-13T22:37:11+01:00"
   },
@@ -16004,7 +16039,7 @@
     "maintainerURL": "",
     "description": "Display standings from European Soccer (Football) leagues (optional voice-control).",
     "issues": true,
-    "stars": 31,
+    "stars": 32,
     "license": "MIT",
     "tags": [
       "soccer standings"
@@ -16102,7 +16137,7 @@
     "maintainerURL": "https://github.com/st3v0rr",
     "description": "Display live data and statistics from your SolarEdge inverter system. PV and optional battery support.",
     "issues": true,
-    "stars": 2,
+    "stars": 3,
     "license": "MIT",
     "image": "docs-SolarEdgePv.jpg",
     "defaultSortWeight": 11,
@@ -16207,7 +16242,7 @@
     "maintainerURL": "",
     "description": "Display the currently playing track of your Sonos system.",
     "issues": true,
-    "stars": 41,
+    "stars": 44,
     "license": "MIT",
     "image": ".github-preview.jpg",
     "defaultSortWeight": 6,
@@ -16257,21 +16292,22 @@
     "maintainerURL": "",
     "description": "Adds vertical space (as HTML div) between modules.",
     "issues": true,
-    "stars": 9,
+    "stars": 10,
     "defaultSortWeight": 7,
     "lastCommit": "2019-08-15T23:13:58+02:00"
   },
   {
     "name": "MMM-SpaceLaunchNow",
-    "category": "Entertainment / Misc",
+    "category": "Outdated Modules",
     "url": "https://github.com/koxm/MMM-SpaceLaunchNow",
     "id": "koxm/MMM-SpaceLaunchNow",
     "maintainer": "koxm",
     "maintainerURL": "",
     "description": "Show the previous and upcoming launches of any rocket, bases on SpaceLaunchNow API.",
     "issues": true,
+    "outdated": "Deprecated. Doesn't work anymore. Successor is <a href=\"https://github.com/AlexMNet/MMM-TheSpaceDevs\">MMM-TheSpaceDevs</a>.",
     "stars": 3,
-    "defaultSortWeight": 7,
+    "defaultSortWeight": 907,
     "lastCommit": "2020-06-05T16:19:36+02:00"
   },
   {
@@ -16309,14 +16345,14 @@
     "maintainerURL": "",
     "description": "Spotify Controller - with device and account switch buttons, easy volume change via touch and much more.",
     "issues": true,
-    "stars": 63,
+    "stars": 66,
     "license": "MIT",
     "tags": [
       "spotify",
       "music"
     ],
     "image": "screenshots-miniature_bar.jpg",
-    "defaultSortWeight": 2,
+    "defaultSortWeight": 3,
     "lastCommit": "2024-03-19T19:04:00+00:00"
   },
   {
@@ -16327,16 +16363,15 @@
     "maintainer": "bugsounet",
     "maintainerURL": "https://wiki.bugsounet.fr",
     "description": "This plugin show current spotify playback of any devices.<br /><br />This module has been defined to work only with MMM-GoogleAssistant.",
-    "issues": true,
+    "issues": false,
     "stars": 2,
-    "hasGithubIssues": false,
     "license": "MIT",
     "tags": [
       "mmm-googleassistant",
       "spotify"
     ],
     "image": "components-Spotify-Logo.jpg",
-    "defaultSortWeight": 5,
+    "defaultSortWeight": 3,
     "lastCommit": "2024-07-01T16:56:24+02:00"
   },
   {
@@ -16347,9 +16382,8 @@
     "maintainer": "bugsounet",
     "maintainerURL": "https://wiki.bugsounet.fr",
     "description": "Create a server for displaying any Lyrics and Canvas from Spotify.<br /><br />This module has been defined to work only with MMM-GoogleAssistant.",
-    "issues": true,
-    "stars": 2,
-    "hasGithubIssues": false,
+    "issues": false,
+    "stars": 4,
     "license": "MIT",
     "tags": [
       "mmm-googleassistant",
@@ -16358,7 +16392,7 @@
       "lyrics"
     ],
     "image": "screenshot-landscape.jpg",
-    "defaultSortWeight": 4,
+    "defaultSortWeight": 2,
     "lastCommit": "2024-07-01T16:56:07+02:00"
   },
   {
@@ -16448,7 +16482,7 @@
     "maintainerURL": "",
     "description": "Displays time spent on games on Steam for a specific user.",
     "issues": true,
-    "stars": 7,
+    "stars": 10,
     "license": "MIT",
     "image": "screenshot.jpg",
     "defaultSortWeight": 4,
@@ -16512,7 +16546,7 @@
     "maintainerURL": "",
     "description": "Display a stoic quote at a given interval or time of day.",
     "issues": true,
-    "stars": 1,
+    "stars": 2,
     "license": "MIT",
     "tags": [
       "quotes",
@@ -16564,7 +16598,7 @@
     "maintainerURL": "",
     "description": "Display your activity data from <a target=\"_blank\" href=\"https://www.strava.com\">Strava.com</a>.",
     "issues": true,
-    "stars": 48,
+    "stars": 50,
     "license": "MIT",
     "tags": [
       "strava"
@@ -16611,9 +16645,8 @@
     "maintainer": "bugsounet",
     "maintainerURL": "https://wiki.bugsounet.fr",
     "description": "Control your mirror with a StreamDeck by elgato\u00a9.<br /><br />This module has been defined to work only with MMM-GoogleAssistant.",
-    "issues": true,
+    "issues": false,
     "stars": 0,
-    "hasGithubIssues": false,
     "license": "MIT",
     "tags": [
       "mmm-googleassistant",
@@ -16621,7 +16654,7 @@
       "elgato"
     ],
     "image": "icons-Sample-access_time.jpg",
-    "defaultSortWeight": 4,
+    "defaultSortWeight": 2,
     "lastCommit": "2024-07-01T17:15:57+02:00"
   },
   {
@@ -16682,7 +16715,7 @@
     "maintainerURL": "https://github.com/mumblebaj",
     "description": "Display a classic railway clock.",
     "issues": true,
-    "stars": 3,
+    "stars": 4,
     "license": "MIT",
     "tags": [
       "clock",
@@ -16724,8 +16757,9 @@
     "issues": true,
     "stars": 0,
     "license": "MIT",
-    "defaultSortWeight": 4,
-    "lastCommit": "2024-08-30T23:40:58+02:00"
+    "image": "Scrennshot.jpg",
+    "defaultSortWeight": 3,
+    "lastCommit": "2024-09-10T10:11:43+02:00"
   },
   {
     "name": "MMM-SwissCommute",
@@ -16809,7 +16843,7 @@
     "maintainerURL": "",
     "description": "Display Synology Download Station tasks.",
     "issues": true,
-    "stars": 15,
+    "stars": 16,
     "license": "MIT",
     "tags": [
       "synology",
@@ -16877,7 +16911,7 @@
     "maintainerURL": "https://github.com/btastic",
     "description": "Shows system stats similar to MMM-SystemStats.",
     "issues": true,
-    "stars": 3,
+    "stars": 4,
     "license": "MIT",
     "tags": [
       "systemmonitor"
@@ -16896,7 +16930,7 @@
     "description": "Shows Raspberry Pi system stats like CPU temperature, free Ram, System load, and Uptime.",
     "issues": true,
     "outdated": "Abandoned. Repo has been archived at 2022-09-05.",
-    "stars": 89,
+    "stars": 91,
     "isArchived": true,
     "license": "MIT",
     "tags": [
@@ -16924,7 +16958,7 @@
       "tabulator"
     ],
     "image": "demo1.jpg",
-    "defaultSortWeight": 4,
+    "defaultSortWeight": 5,
     "lastCommit": "2018-03-05T09:37:57+02:00"
   },
   {
@@ -16939,7 +16973,7 @@
     "stars": 6,
     "license": "MIT",
     "image": "img-screenshot.jpg",
-    "defaultSortWeight": 4,
+    "defaultSortWeight": 5,
     "lastCommit": "2021-09-13T14:05:05+02:00"
   },
   {
@@ -17032,26 +17066,6 @@
     "lastCommit": "2017-04-13T01:45:58+02:00"
   },
   {
-    "name": "EXT-TelegramBot",
-    "category": "Extended plugins for MMM-GoogleAssistant",
-    "url": "https://github.com/bugsounet/EXT-TelegramBot",
-    "id": "bugsounet/EXT-TelegramBot",
-    "maintainer": "bugsounet",
-    "maintainerURL": "https://wiki.bugsounet.fr",
-    "description": "You can remote-control plugins within Telegram.<br /><br />This module has been defined to work only with MMM-GoogleAssistant.",
-    "issues": true,
-    "stars": 2,
-    "hasGithubIssues": false,
-    "license": "MIT",
-    "tags": [
-      "mmm-googleassistant",
-      "telegram"
-    ],
-    "image": "screenshot-sc_fullsize.jpg",
-    "defaultSortWeight": 5,
-    "lastCommit": "2024-07-01T16:55:45+02:00"
-  },
-  {
     "name": "MMM-TelegramBot",
     "category": "Utility / IOT / 3rd Party / Integration",
     "url": "https://github.com/MMRIZE/MMM-TelegramBot",
@@ -17068,6 +17082,25 @@
     "image": "sc_fullsize.jpg",
     "defaultSortWeight": 5,
     "lastCommit": "2024-06-18T20:34:01+02:00"
+  },
+  {
+    "name": "EXT-TelegramBot",
+    "category": "Extended plugins for MMM-GoogleAssistant",
+    "url": "https://github.com/bugsounet/EXT-TelegramBot",
+    "id": "bugsounet/EXT-TelegramBot",
+    "maintainer": "bugsounet",
+    "maintainerURL": "https://wiki.bugsounet.fr",
+    "description": "You can remote-control plugins within Telegram.<br /><br />This module has been defined to work only with MMM-GoogleAssistant.",
+    "issues": true,
+    "stars": 2,
+    "license": "MIT",
+    "tags": [
+      "mmm-googleassistant",
+      "telegram"
+    ],
+    "image": "screenshot-sc_fullsize.jpg",
+    "defaultSortWeight": 5,
+    "lastCommit": "2024-07-01T16:55:45+02:00"
   },
   {
     "name": "MMM-TelegramCommands",
@@ -17115,7 +17148,7 @@
     "maintainerURL": "https://github.com/Tom-Hirschberger",
     "description": "Display tempature, humdity, and more of DHT11, DHT22, BMT280, HTU21, DS18B20 or other sensors.",
     "issues": true,
-    "stars": 4,
+    "stars": 3,
     "license": "MIT",
     "tags": [
       "temperature",
@@ -17132,6 +17165,24 @@
     "lastCommit": "2024-08-21T13:31:17+02:00"
   },
   {
+    "name": "MMM-Template",
+    "category": "Development / Core MagicMirror\u00b2",
+    "url": "https://github.com/Dennis-Rosenbaum/MMM-Template",
+    "id": "Dennis-Rosenbaum/MMM-Template",
+    "maintainer": "Dennis-Rosenbaum",
+    "maintainerURL": "",
+    "description": "A template for creating new MagicMirror\u00b2 modules.",
+    "issues": true,
+    "stars": 1,
+    "license": "MIT",
+    "tags": [
+      "template"
+    ],
+    "image": "example_1.jpg",
+    "defaultSortWeight": 1,
+    "lastCommit": "2024-09-08T09:31:20+02:00"
+  },
+  {
     "name": "MMM-Tesla",
     "category": "Transport / Travel",
     "url": "https://github.com/mattdy/MMM-Tesla",
@@ -17140,7 +17191,7 @@
     "maintainerURL": "",
     "description": "Display Tesla data from either <a target=\"_blank\" href=\"https://teslafi.com\">TeslaFi</a> or <a target=\"_blank\" href=\"https://www.tessie.com\">Tessie</a>.",
     "issues": true,
-    "stars": 3,
+    "stars": 5,
     "license": "MIT",
     "tags": [
       "tesla",
@@ -17153,17 +17204,19 @@
   },
   {
     "name": "MMM-Tesla3",
-    "category": "Transport / Travel",
+    "category": "Outdated Modules",
     "url": "https://github.com/usncahill/MMM-Tesla3",
     "id": "usncahill/MMM-Tesla3",
     "maintainer": "usncahill",
     "maintainerURL": "",
     "description": "Display Tesla data directly from Tesla API. Customizable GUI based on <a target=\"_blank\" href=\"https://github.com/denverquane/MMM-Teslamate\">MMM-TeslaMate</a>.",
     "issues": true,
-    "stars": 2,
+    "outdated": "Abandoned. Repo has been archived at 2024-05-16.",
+    "stars": 3,
+    "isArchived": true,
     "license": "ISC",
     "image": "images-MMM-Tesla3.jpg",
-    "defaultSortWeight": 10,
+    "defaultSortWeight": 910,
     "lastCommit": "2024-05-15T21:28:11-04:00"
   },
   {
@@ -17190,7 +17243,7 @@
     "maintainerURL": "",
     "description": "Display live Tesla status using the Teslamate self-hosted monitoring system and MQTT Broker.",
     "issues": true,
-    "stars": 50,
+    "stars": 52,
     "license": "MIT",
     "image": "doc-charge_starting.jpg",
     "defaultSortWeight": 4,
@@ -17220,7 +17273,7 @@
     "maintainerURL": "https://github.com/ngnijland",
     "description": "A clock which shows the time as text.",
     "issues": true,
-    "stars": 10,
+    "stars": 11,
     "license": "MIT",
     "tags": [
       "smar",
@@ -17231,7 +17284,7 @@
       "clock"
     ],
     "image": "screenshots-MMM-text-clock-screenshot-compact.jpg",
-    "defaultSortWeight": 6,
+    "defaultSortWeight": 5,
     "lastCommit": "2023-12-14T23:21:40+01:00"
   },
   {
@@ -17257,7 +17310,7 @@
     "maintainerURL": "",
     "description": "This module gets real time arrival predictions for specifc stops using the TfL API.",
     "issues": true,
-    "stars": 4,
+    "stars": 5,
     "license": "MIT",
     "tags": [
       "transport",
@@ -17278,7 +17331,7 @@
     "maintainerURL": "",
     "description": "Status board for TFL (Transport For London) lines including London Tube, Elizabeth line, Tram, DLR, Bus, River Coach.",
     "issues": true,
-    "stars": 6,
+    "stars": 7,
     "license": "MIT",
     "image": "tube.jpg",
     "defaultSortWeight": 8,
@@ -17293,7 +17346,7 @@
     "maintainerURL": "https://github.com/vita10gy",
     "description": "Display wait times and upcoming park hours from theme parks including Disney Parks, Universal Studios, SeaWorld, Six Flags, and dozens more.",
     "issues": true,
-    "stars": 1,
+    "stars": 4,
     "hasGithubIssues": false,
     "license": "MIT",
     "image": "wait-times-demo.jpg",
@@ -17311,9 +17364,14 @@
     "issues": true,
     "stars": 1,
     "license": "MIT",
+    "tags": [
+      "rocket",
+      "launch",
+      "space"
+    ],
     "image": "detail_view.jpg",
-    "defaultSortWeight": 2,
-    "lastCommit": "2024-09-07T13:35:51-07:00"
+    "defaultSortWeight": 0,
+    "lastCommit": "2024-09-08T14:06:50-07:00"
   },
   {
     "name": "MMM-Thingiverse",
@@ -17338,7 +17396,7 @@
     "maintainerURL": "",
     "description": "Show electricity related data for Tibber customers. Shows power, prices, consumption, voltage, current and more.",
     "issues": true,
-    "stars": 31,
+    "stars": 33,
     "license": "MIT",
     "tags": [
       "tibber",
@@ -17360,7 +17418,7 @@
     "maintainerURL": "https://github.com/zhouxichun",
     "description": "Fetch earth live image form Himawari #8 geostationary satellite and display images on screen.",
     "issues": true,
-    "stars": 2,
+    "stars": 3,
     "defaultSortWeight": 5,
     "lastCommit": "2023-09-21T19:43:32+08:00"
   },
@@ -17464,13 +17522,13 @@
     "maintainerURL": "",
     "description": "Displays your todos from Todoist.",
     "issues": true,
-    "stars": 147,
+    "stars": 151,
     "license": "MIT",
     "tags": [
       "wunderlist"
     ],
     "image": "1x1px.jpg",
-    "defaultSortWeight": 6,
+    "defaultSortWeight": 5,
     "lastCommit": "2024-08-14T13:43:32-05:00"
   },
   {
@@ -17482,7 +17540,7 @@
     "maintainerURL": "https://github.com/teemoo7",
     "description": "Calculate routes with TomTom API (free), and display travel time with traffic delays.",
     "issues": true,
-    "stars": 1,
+    "stars": 3,
     "license": "MIT",
     "image": "screenshots-route.jpg",
     "defaultSortWeight": 4,
@@ -17532,21 +17590,6 @@
     "lastCommit": "2020-05-10T15:08:01+02:00"
   },
   {
-    "name": "MMM-Touch",
-    "category": "Utility / IOT / 3rd Party / Integration",
-    "url": "https://github.com/gfischershaw/MMM-Touch",
-    "id": "gfischershaw/MMM-Touch",
-    "maintainer": "gfischershaw",
-    "maintainerURL": "",
-    "description": "Universal touch gesture commander using touchscreen.",
-    "issues": true,
-    "stars": 12,
-    "license": "MIT",
-    "image": "MMM-Touch.jpg",
-    "defaultSortWeight": 3,
-    "lastCommit": "2020-10-24T00:16:43+02:00"
-  },
-  {
     "name": "EXT-Touch",
     "category": "Extended plugins for MMM-GoogleAssistant",
     "url": "https://github.com/bugsounet/EXT-Touch",
@@ -17562,8 +17605,23 @@
       "touch"
     ],
     "image": "resources-google.jpg",
-    "defaultSortWeight": 4,
+    "defaultSortWeight": 5,
     "lastCommit": "2024-07-01T16:55:27+02:00"
+  },
+  {
+    "name": "MMM-Touch",
+    "category": "Utility / IOT / 3rd Party / Integration",
+    "url": "https://github.com/gfischershaw/MMM-Touch",
+    "id": "gfischershaw/MMM-Touch",
+    "maintainer": "gfischershaw",
+    "maintainerURL": "",
+    "description": "Universal touch gesture commander using touchscreen.",
+    "issues": true,
+    "stars": 12,
+    "license": "MIT",
+    "image": "MMM-Touch.jpg",
+    "defaultSortWeight": 3,
+    "lastCommit": "2020-10-24T00:16:43+02:00"
   },
   {
     "name": "MMM-TouchButton",
@@ -17574,7 +17632,7 @@
     "maintainerURL": "https://github.com/Tom-Hirschberger",
     "description": "Add clickable buttons to send notifications or run commands.",
     "issues": true,
-    "stars": 4,
+    "stars": 7,
     "license": "MIT",
     "tags": [
       "touch",
@@ -17649,7 +17707,7 @@
     "maintainerURL": "https://github.com/samlewis0602",
     "description": "Display commute travel time with current traffic conditions factored in. Can be used for driving, biking, walking, and public transit.",
     "issues": true,
-    "stars": 139,
+    "stars": 141,
     "tags": [
       "traffic"
     ],
@@ -17709,7 +17767,7 @@
     "maintainerURL": "",
     "description": "Display your upcoming Shows from your <a target=\"_blank\" href=\"https://trakt.tv\">trakt.tv</a> account.",
     "issues": true,
-    "stars": 13,
+    "stars": 14,
     "license": "MIT",
     "image": "screenshot.jpg",
     "defaultSortWeight": 6,
@@ -17724,7 +17782,7 @@
     "maintainerURL": "https://github.com/bnitkin",
     "description": "Upcoming departures for any transit agencies that publishes GTFS.",
     "issues": true,
-    "stars": 3,
+    "stars": 5,
     "license": "MIT",
     "tags": [
       "transit",
@@ -17762,7 +17820,7 @@
     "maintainer": "dekinet",
     "maintainerURL": "",
     "description": "Simple display of train departure times for Brisbane (Australia).",
-    "issues": true,
+    "issues": false,
     "stars": 1,
     "license": "MIT",
     "tags": [
@@ -17770,7 +17828,7 @@
       "brisbane"
     ],
     "image": "screenshot1.jpg",
-    "defaultSortWeight": 0,
+    "defaultSortWeight": -1,
     "lastCommit": "2024-02-15T10:11:51+10:00"
   },
   {
@@ -18472,7 +18530,7 @@
     "maintainer": "bugsounet",
     "maintainerURL": "https://wiki.bugsounet.fr",
     "description": "This plugin play wanted media on MagicMirror\u00b2 with VLC.<br /><br />This module has been defined to work only with MMM-GoogleAssistant.",
-    "issues": true,
+    "issues": false,
     "stars": 0,
     "license": "MIT",
     "tags": [
@@ -18482,7 +18540,7 @@
       "player"
     ],
     "image": "vlc-logo.jpg",
-    "defaultSortWeight": 3,
+    "defaultSortWeight": 2,
     "lastCommit": "2024-07-01T17:06:25+02:00"
   },
   {
@@ -18573,7 +18631,7 @@
     ],
     "image": "screenshot-logo.jpg",
     "defaultSortWeight": -1,
-    "lastCommit": "2024-08-30T15:13:45+02:00"
+    "lastCommit": "2024-09-10T21:00:41+02:00"
   },
   {
     "name": "voicecontrol",
@@ -18611,7 +18669,7 @@
     "maintainer": "bugsounet",
     "maintainerURL": "https://wiki.bugsounet.fr",
     "description": "Control the sound volume level of your mirror.<br /><br />This module has been defined to work only with MMM-GoogleAssistant.",
-    "issues": true,
+    "issues": false,
     "stars": 4,
     "license": "MIT",
     "tags": [
@@ -18621,7 +18679,7 @@
       "googleassistant"
     ],
     "image": "resources-screenshot.jpg",
-    "defaultSortWeight": 4,
+    "defaultSortWeight": 3,
     "lastCommit": "2024-07-01T16:55:04+02:00"
   },
   {
@@ -19040,7 +19098,7 @@
       "ext"
     ],
     "image": "website-assets-img-FavIcon.jpg",
-    "defaultSortWeight": 5,
+    "defaultSortWeight": 6,
     "lastCommit": "2024-08-15T14:53:13+02:00"
   },
   {
@@ -19659,7 +19717,7 @@
     "maintainer": "bugsounet",
     "maintainerURL": "https://wiki.bugsounet.fr",
     "description": "This plugins allows to play YouTube video.<br /><br />This module has been defined to work only with MMM-GoogleAssistant.",
-    "issues": true,
+    "issues": false,
     "stars": 3,
     "license": "MIT",
     "tags": [
@@ -19667,7 +19725,7 @@
       "youtube"
     ],
     "image": "resources-Screenshot1.jpg",
-    "defaultSortWeight": 4,
+    "defaultSortWeight": 3,
     "lastCommit": "2024-07-01T17:07:42+02:00"
   },
   {
@@ -19711,7 +19769,7 @@
     "maintainer": "bugsounet",
     "maintainerURL": "https://wiki.bugsounet.fr",
     "description": "Allow to cast a YouTube video on MagicMirror\u00b2.<br /><br />This module has been defined to work only with MMM-GoogleAssistant.",
-    "issues": true,
+    "issues": false,
     "stars": 3,
     "license": "MIT",
     "tags": [
@@ -19720,7 +19778,7 @@
       "youtube"
     ],
     "image": "resources-Screenshot1.jpg",
-    "defaultSortWeight": 4,
+    "defaultSortWeight": 3,
     "lastCommit": "2024-07-01T16:54:45+02:00"
   },
   {
