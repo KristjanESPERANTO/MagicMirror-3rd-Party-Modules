@@ -1,0 +1,30 @@
+{
+  "version": "0.2",
+  "language": "en",
+  "words": [
+    "hoster",
+    "NOASSERTION",
+    "magicmirror",
+    "smarthome",
+    "Kristjan",
+    "openweathermap",
+    "omxplayer",
+    "ratp",
+    "bergfex",
+    "axios",
+    "MMRIZE",
+    "depandabot",
+    "mmpm",
+    "fontwaesome",
+    "bugsounet",
+    "dependencie"
+  ],
+  "ignorePaths": [
+    "node_modules/**",
+    "modules/**",
+    "docs/**",
+    "result.md",
+    "eslint-config-DEBUG.json"
+  ],
+  "dictionaries": ["node"]
+}
