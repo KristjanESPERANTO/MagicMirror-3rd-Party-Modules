@@ -6,11 +6,11 @@ from datetime import datetime, timezone
 import json
 import subprocess
 
-def search_in_file(path, searchstring):
+def search_in_file(path, search_string):
     """Function to search a string in a file."""
     try:
         with open(path, "r", encoding="utf-8") as file:
-            if searchstring in file.read():
+            if search_string in file.read():
                 return True
     except UnicodeDecodeError:
         pass
@@ -150,7 +150,7 @@ def check_modules():
             "category": "Recommendation",
         },
         "new Date()": {
-            "name": "Consider replacing it by `new Date(Date.now())`. It's helpfull for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).",
+            "name": "Consider replacing it by `new Date(Date.now())`. It's helpful for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).",
             "category": "Recommendation",
         },
         "getYear()": {
@@ -301,7 +301,7 @@ def check_modules():
 
                 # if ".yml" in str(file_path).lower():
                 #    module["issues"].append(
-                #        f"`Recommendation: {file_path.name}`: Change file extention from `.yml` to `.yaml`: <https://yaml.org/faq.html>.")
+                #        f"`Recommendation: {file_path.name}`: Change file extension from `.yml` to `.yaml`: <https://yaml.org/faq.html>.")
 
         if "LICENSE" not in str(sorted(module_directory_path.rglob("*"))):
             module["issues"].append("Warning: No LICENSE file.")
@@ -361,7 +361,7 @@ def check_modules():
 
         module["defaultSortWeight"] += len(module["issues"])
 
-        # Replace the issue array with boolean. The issues were written to resuld.md and for the website is only relevant if the module has issues or not. This reduces the size of modules.json by more than half.
+        # Replace the issue array with boolean. The issues were written to result.md and for the website is only relevant if the module has issues or not. This reduces the size of modules.json by more than half.
         if len(module["issues"]) > 0:
             module["issues"] = True
         else:
@@ -406,8 +406,8 @@ def check_modules():
     )
 
     # Writing to markdown
-    with open("result.md", "w", encoding="utf-8") as outputfile:
-        outputfile.write(markdown_output)
+    with open("result.md", "w", encoding="utf-8") as output_file:
+        output_file.write(markdown_output)
 
     # Serializing json
     json_object = json.dumps(modules, indent=2)
@@ -462,7 +462,7 @@ def check_dependency_updates(module, module_directory_path):
     """
     package_json = Path(f"{module_directory_path}/package.json")
     prod_updates_list = []
-    if len(module["issues"]) in [2, 3] and package_json.is_file():
+    if len(module["issues"]) in [1, 2, 3] and package_json.is_file():
 
         prod_updates_string = (
             subprocess.run(
@@ -478,7 +478,7 @@ def check_dependency_updates(module, module_directory_path):
         prod_updates_list = [
             line for line in prod_updates_string if "→" in line]
 
-    if len(prod_updates_list) > 0 or (len(module["issues"]) == 1 and package_json.is_file()):
+    if len(prod_updates_list) > 0 or (len(module["issues"]) == 0 and package_json.is_file()):
 
         updates_string = (
             subprocess.run(

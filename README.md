@@ -12,7 +12,7 @@ Based on the official list, we automatically create a website with filter functi
 
 ### How do I get my module presented in the new list?
 
-Add your module to [the official list in the wiki](https://github.com/MagicMirrorOrg/MagicMirror/wiki/3rd-party-modules). Twice a day the new list will be updated based on the offical list.
+Add your module to [the official list in the wiki](https://github.com/MagicMirrorOrg/MagicMirror/wiki/3rd-party-modules). Twice a day the new list will be updated based on the official list.
 
 ### How do I get my module presented perfectly in the new list?
 
@@ -71,7 +71,7 @@ For running the scripts and developing you need:
 3. Install dependencies:
    `npm install`
 
-## Skripts
+## Scripts
 
 With `npm start` you can call up a cli menu that offers you options for execution.
 
@@ -122,7 +122,7 @@ How can you use it?
 - Long-term goal: The website functions like an app store. The user only has to click on an install button and the module is installed and a basic configuration is inserted.
   - bugsounet did this for MMM-GoogleAssistant and it's modules: <https://wiki.bugsounet.fr/MMM-GoogleAssistant/website>
 - Move ideas/todos to GitHub Issues and add proper tags.
-- Add exceptions for 3rd-Party stuff like jquery or fontwaesome? <https://github.com/bugsounet/MMM-GoogleAssistant/pull/386>
+- Add exceptions for 3rd-Party stuff like jquery or fontawesome? <https://github.com/bugsounet/MMM-GoogleAssistant/pull/386>
 - Move `result.md` to docs.
 - Show results in popup on the page.
 - Compatibility with:
@@ -131,7 +131,7 @@ How can you use it?
 - optimize progress information while running `npm run all`
 - Also run the tests on MagicMirror² core?
 - Tests
-  - Is repository reachable? Now the get_modules skript interupts if a repo isn't reachable.
+  - Is repository reachable? Now the get_modules script interrupts if a repo isn't reachable.
   - If a module isn't marked as outdated, but has no commits since years: Check if the module is set to archived on GitHub/GitLab.
   - Is depandabot there?
     - Is it set to monthly?

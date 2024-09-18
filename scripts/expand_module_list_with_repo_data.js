@@ -45,7 +45,7 @@ async function findAndResizeImage (moduleName, moduleMaintainer) {
   if (imageToProcess) {
     targetImageName = imageToProcess
       .replaceAll("/", "-")
-      .replace(/bmp|gif|jepg|jpg|png|webp/giu, "jpg");
+      .replace(/bmp|gif|jpeg|jpg|png|webp/giu, "jpg");
     const sourcePath = `${sourceFolder}/${imageToProcess}`;
     const targetPath = `${imagesFolder}/${moduleName}---${moduleMaintainer}---${targetImageName}`;
 
@@ -173,7 +173,7 @@ async function checkLicenseAndHandleScreenshot (moduleData, module) {
       "LGPL-2.1-only"
     ];
 
-    // Use license information to determain if we can use an image
+    // Use license information to determine if we can use an image
     if (useableLicenses.includes(module.license)) {
       const {targetImageName, issues} = await findAndResizeImage(
         module.name,
