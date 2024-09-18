@@ -1,6 +1,6 @@
 # Result of the module analysis
 
-Last update: 2024-09-17T23:27:10+02:00
+Last update: 2024-09-18T04:20:46+02:00
 
 ## Statistics
 
@@ -8,8 +8,8 @@ Last update: 2024-09-17T23:27:10+02:00
 |:---------------------|:--------:|
 | modules analyzed     |   1185   |
 | maintainer           |    665   |
-| modules with issues  |   1136   |
-| issues               |   7449   |
+| modules with issues  |   1182   |
+| issues               |   7492   |
 | modules at github    |   1174   |
 | modules at gitlab    |     10   |
 | modules at bitbucket |      1   |
@@ -65,7 +65,7 @@ Last update: 2024-09-17T23:27:10+02:00
 1. There are no keywords in 'package.json'. We would use them as tags on the module list page.
 2. No image found.
 3. Typo: Found `Magic Mirror` in file `MMM-AC-aseag.js`: Replace it with `MagicMirror²`.
-4. Recommendation: Found `new Date()` in file `MMM-AC-aseag.js`: Consider replacing it by `new Date(Date.now())`. It's helpfull for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
+4. Recommendation: Found `new Date()` in file `MMM-AC-aseag.js`: Consider replacing it by `new Date(Date.now())`. It's helpful for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
 5. Outdated: Found `MichMich/MagicMirror` in file `README.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
 6. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
 7. Recommendation: Found `axios` in file `node_helper.js`: Replace it with built-in fetch.
@@ -93,7 +93,7 @@ Last update: 2024-09-17T23:27:10+02:00
 ### [MMM-Advent by Jopyth](https://github.com/Jopyth/MMM-Advent)
 
 1. Typo: Found `Magic Mirror` in file `MMM-Advent.js`: Replace it with `MagicMirror²`.
-2. Recommendation: Found `new Date()` in file `MMM-Advent.js`: Consider replacing it by `new Date(Date.now())`. It's helpfull for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
+2. Recommendation: Found `new Date()` in file `MMM-Advent.js`: Consider replacing it by `new Date(Date.now())`. It's helpful for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
 3. Typo: Found `Magic Mirror` in file `README.md`: Replace it with `MagicMirror²`.
 4. Typo: Found `[MagicMirror]` in file `README.md`: Replace it with `[MagicMirror²]`.
 5. Outdated: Found `MichMich/MagicMirror` in file `README.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
@@ -102,7 +102,7 @@ Last update: 2024-09-17T23:27:10+02:00
 
 ### [MMM-Afvalwijzer by gertperdZA](https://github.com/gertperdZA/MMM-Afvalwijzer)
 
-1. Recommendation: Found `new Date()` in file `node_helper.js`: Consider replacing it by `new Date(Date.now())`. It's helpfull for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
+1. Recommendation: Found `new Date()` in file `node_helper.js`: Consider replacing it by `new Date(Date.now())`. It's helpful for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
 2. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
 
 ### [MMM-air-raid-monitor-ua by PavlenkoM](https://github.com/PavlenkoM/MMM-air-raid-monitor-ua)
@@ -122,7 +122,7 @@ Last update: 2024-09-17T23:27:10+02:00
 3. No image found.
 4. Recommendation: Found `jshint` in file `Gruntfile.js`: Replace "jshint" by "eslint".
 5. Typo: Found `Magic Mirror` in file `MMM-AirbarHelper.js`: Replace it with `MagicMirror²`.
-6. Recommendation: Found `new Date()` in file `MMM-AirbarHelper.js`: Consider replacing it by `new Date(Date.now())`. It's helpfull for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
+6. Recommendation: Found `new Date()` in file `MMM-AirbarHelper.js`: Consider replacing it by `new Date(Date.now())`. It's helpful for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
 7. Outdated: Found `MichMich/MagicMirror` in file `README.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
 8. Recommendation: The README seems not to have an update instruction (the word 'update' is missing). Please add one.
 9. Recommendation: The README seems not to have an install instruction (the words 'install' or 'installation' are missing). Please add one.
@@ -172,6 +172,18 @@ Last update: 2024-09-17T23:27:10+02:00
 5. Typo: Found `MagicMirror2` in file `package.json`: Replace it with `MagicMirror²`.
 6. Recommendation: Replace eslintrc by new flat config.
 
+### [EXT-Alert by bugsounet](https://github.com/bugsounet/EXT-Alert)
+
+1. Information: There are updates for 7 dependencie(s):
+   - @eslint/js                 ^8.57.0  →   ^9.10.0
+   - @stylistic/eslint-plugin    ^1.8.1  →    ^2.8.0
+   - esbuild                    ^0.22.0  →   ^0.23.1
+   - eslint                     ^8.57.0  →   ^9.10.0
+   - eslint-plugin-import       ^2.29.1  →   ^2.30.0
+   - glob                       ^10.4.2  →   ^11.0.0
+   - sweetalert2               ^11.12.1  →  ^11.14.0
+
+
 ### [MMM-AlertExt by MMRIZE](https://github.com/MMRIZE/MMM-AlertExt)
 
 1. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
@@ -185,7 +197,7 @@ Last update: 2024-09-17T23:27:10+02:00
 5. Recommendation: The README seems not to have an update instruction (the word 'update' is missing). Please add one.
 6. Deprecated: Found `new Buffer(` in file `alexaRunner.babel.js`: This is deprecated. Please update: <https://nodejs.org/api/buffer.html>.
 7. Recommendation: Found `XMLHttpRequest` in file `alexaRunner.babel.js`: Replace it with built-in fetch.
-8. Recommendation: Found `new Date()` in file `node_helper.js`: Consider replacing it by `new Date(Date.now())`. It's helpfull for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
+8. Recommendation: Found `new Date()` in file `node_helper.js`: Consider replacing it by `new Date(Date.now())`. It's helpful for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
 9. Recommendation: Found `XMLHttpRequest` in file `runDirectives.js`: Replace it with built-in fetch.
 10. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
 
@@ -226,7 +238,7 @@ Last update: 2024-09-17T23:27:10+02:00
 ### [MMM-AmLich by diyeverythingvn](https://github.com/diyeverythingvn/MMM-AmLich)
 
 1. There is no `package.json`. We need this file to gather information about the module for the module list page.
-2. Recommendation: Found `new Date()` in file `AmLich.js`: Consider replacing it by `new Date(Date.now())`. It's helpfull for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
+2. Recommendation: Found `new Date()` in file `AmLich.js`: Consider replacing it by `new Date(Date.now())`. It's helpful for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
 3. Recommendation: The README seems not to have an update instruction (the word 'update' is missing). Please add one.
 4. Warning: No LICENSE file.
 5. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
@@ -236,9 +248,9 @@ Last update: 2024-09-17T23:27:10+02:00
 1. There is no `package.json`. We need this file to gather information about the module for the module list page.
 2. Recommendation: Module name doesn't follow the recommended pattern (it doesn't start with `MMM-`). Consider renaming your module.
 3. Typo: Found `Magic Mirror` in file `MMM-Birthdays.js`: Replace it with `MagicMirror²`.
-4. Recommendation: Found `new Date()` in file `MMM-Birthdays.js`: Consider replacing it by `new Date(Date.now())`. It's helpfull for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
+4. Recommendation: Found `new Date()` in file `MMM-Birthdays.js`: Consider replacing it by `new Date(Date.now())`. It's helpful for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
 5. Typo: Found `Magic Mirror` in file `BIRTHDAYS.js`: Replace it with `MagicMirror²`.
-6. Recommendation: Found `new Date()` in file `BIRTHDAYS.js`: Consider replacing it by `new Date(Date.now())`. It's helpfull for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
+6. Recommendation: Found `new Date()` in file `BIRTHDAYS.js`: Consider replacing it by `new Date(Date.now())`. It's helpful for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
 7. Typo: Found `Magic Mirror` in file `README.md`: Replace it with `MagicMirror²`.
 8. Typo: Found `[MagicMirror]` in file `README.md`: Replace it with `[MagicMirror²]`.
 9. Outdated: Found `MichMich/MagicMirror` in file `README.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
@@ -270,7 +282,7 @@ Last update: 2024-09-17T23:27:10+02:00
 ### [MMM-AoC by JonasTriki](https://github.com/JonasTriki/MMM-AoC)
 
 1. There is no `package.json`. We need this file to gather information about the module for the module list page.
-2. Recommendation: Found `new Date()` in file `MMM-AoC.js`: Consider replacing it by `new Date(Date.now())`. It's helpfull for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
+2. Recommendation: Found `new Date()` in file `MMM-AoC.js`: Consider replacing it by `new Date(Date.now())`. It's helpful for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
 3. Deprecated: Found `require("request")` in file `aoc.js`: Replace it with built-in fetch.
 4. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
 
@@ -282,7 +294,7 @@ Last update: 2024-09-17T23:27:10+02:00
 4. Outdated: Found `MichMich/MagicMirror` in file `README.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
 5. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
 6. Deprecated: Found `require('request')` in file `node_helper.js`: Replace it with built-in fetch.
-7. Recommendation: Found `new Date()` in file `node_helper.js`: Consider replacing it by `new Date(Date.now())`. It's helpfull for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
+7. Recommendation: Found `new Date()` in file `node_helper.js`: Consider replacing it by `new Date(Date.now())`. It's helpful for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
 8. Typo: Found `MagicMirror2` in file `package.json`: Replace it with `MagicMirror²`.
 9. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
 
@@ -342,7 +354,7 @@ Last update: 2024-09-17T23:27:10+02:00
 
 ### [MMM-ArduPort by Dentrax](https://github.com/Dentrax/MMM-ArduPort)
 
-1. Recommendation: Found `new Date()` in file `MMM-ArduPort.js`: Consider replacing it by `new Date(Date.now())`. It's helpfull for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
+1. Recommendation: Found `new Date()` in file `MMM-ArduPort.js`: Consider replacing it by `new Date(Date.now())`. It's helpful for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
 2. Outdated: Found `MichMich/MagicMirror` in file `README.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
 3. Warning: No LICENSE file.
 4. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
@@ -376,7 +388,7 @@ Last update: 2024-09-17T23:27:10+02:00
 4. Recommendation: The README seems not to have an update instruction (the word 'update' is missing). Please add one.
 5. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
 6. Recommendation: Found `"node-fetch"` in file `node_helper.js`: Replace it with built-in fetch.
-7. Recommendation: Found `new Date()` in file `node_helper.js`: Consider replacing it by `new Date(Date.now())`. It's helpfull for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
+7. Recommendation: Found `new Date()` in file `node_helper.js`: Consider replacing it by `new Date(Date.now())`. It's helpful for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
 8. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
 
 ### [MMM-AtbSanntid by Springvar](https://github.com/Springvar/MMM-AtbSanntid)
@@ -420,7 +432,7 @@ Last update: 2024-09-17T23:27:10+02:00
 
 1. There is no `package.json`. We need this file to gather information about the module for the module list page.
 2. No image found.
-3. Recommendation: Found `new Date()` in file `MMM-AutoDimmer.js`: Consider replacing it by `new Date(Date.now())`. It's helpfull for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
+3. Recommendation: Found `new Date()` in file `MMM-AutoDimmer.js`: Consider replacing it by `new Date(Date.now())`. It's helpful for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
 4. Recommendation: The README seems not to have an update instruction (the word 'update' is missing). Please add one.
 5. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
 
@@ -447,7 +459,7 @@ Last update: 2024-09-17T23:27:10+02:00
 2. There are no keywords in 'package.json'. We would use them as tags on the module list page.
 3. Issue: The license in the package.json (MIT) doesn't match the license file (Apache-2.0).
 4. Typo: Found `Magic Mirror` in file `MMM-Avinor.js`: Replace it with `MagicMirror²`.
-5. Recommendation: Found `new Date()` in file `MMM-Avinor.js`: Consider replacing it by `new Date(Date.now())`. It's helpfull for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
+5. Recommendation: Found `new Date()` in file `MMM-Avinor.js`: Consider replacing it by `new Date(Date.now())`. It's helpful for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
 6. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
 7. Deprecated: Found `require("request")` in file `node_helper.js`: Replace it with built-in fetch.
 8. Deprecated: Found `"grunt"` in file `package.json`: Grunt is practically unmaintained. Move on to something better.
@@ -477,15 +489,23 @@ Last update: 2024-09-17T23:27:10+02:00
 7. Outdated: Found `MichMich/MagicMirror` in file `installation.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
 8. Deprecated: Found `require("request")` in file `node_helper.js`: Replace it with built-in fetch.
 9. Typo: Found `Magic Mirror` in file `package.json`: Replace it with `MagicMirror²`.
-10. Recommendation: Found `new Date()` in file `index.ts`: Consider replacing it by `new Date(Date.now())`. It's helpfull for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
+10. Recommendation: Found `new Date()` in file `index.ts`: Consider replacing it by `new Date(Date.now())`. It's helpful for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
 11. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
+
+### [EXT-Background by bugsounet](https://github.com/bugsounet/EXT-Background)
+
+1. Information: There are updates for 6 dependencie(s):
+   - @eslint/js                ^8.57.0  →  ^9.10.0
+   - @stylistic/eslint-plugin   ^1.8.1  →   ^2.8.0
+   - esbuild                   ^0.22.0  →  ^0.23.1
+   - eslint                    ^8.57.0  →  ^9.10.0
+   - eslint-plugin-import      ^2.29.1  →  ^2.30.0
+   - glob                      ^10.4.2  →  ^11.0.0
+
 
 ### [MMM-BackgroundSlideshow by darickc](https://github.com/darickc/MMM-BackgroundSlideshow)
 
 1. Deprecated: Found `omxplayer` in file `node_helper.js`: Try to replace it with `vlc`.
-2. Information: There are updates for 1 dependencie(s):
-   - eslint  ^8.57.0  →  ^9.10.0
-
 
 ### [MMM-BartTimes by falafel2222](https://github.com/falafel2222/MMM-BartTimes)
 
@@ -521,7 +541,7 @@ Last update: 2024-09-17T23:27:10+02:00
 2. `package.json` issue: No license field.
 3. There are no keywords in 'package.json'. We would use them as tags on the module list page.
 4. No compatible or wrong license field in 'package.json' or LICENSE file. Without that, we can't use an image.
-5. Recommendation: Found `new Date()` in file `MMM-BdxBus.js`: Consider replacing it by `new Date(Date.now())`. It's helpfull for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
+5. Recommendation: Found `new Date()` in file `MMM-BdxBus.js`: Consider replacing it by `new Date(Date.now())`. It's helpful for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
 6. Typo: Found `[MagicMirror]` in file `README.md`: Replace it with `[MagicMirror²]`.
 7. Outdated: Found `MichMich/MagicMirror` in file `README.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
 8. Recommendation: The README seems not to have an update instruction (the word 'update' is missing). Please add one.
@@ -552,7 +572,7 @@ Last update: 2024-09-17T23:27:10+02:00
 ### [MMM-Bensinpriser by ItsMeBrille](https://github.com/ItsMeBrille/MMM-Bensinpriser)
 
 1. Recommendation: Found `XMLHttpRequest` in file `MMM-Bensinpriser.js`: Replace it with built-in fetch.
-2. Recommendation: Found `new Date()` in file `MMM-Bensinpriser.js`: Consider replacing it by `new Date(Date.now())`. It's helpfull for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
+2. Recommendation: Found `new Date()` in file `MMM-Bensinpriser.js`: Consider replacing it by `new Date(Date.now())`. It's helpful for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
 3. Typo: Found `Magic Mirror` in file `package.json`: Replace it with `MagicMirror²`.
 4. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
 
@@ -614,8 +634,8 @@ Last update: 2024-09-17T23:27:10+02:00
 1. Recommendation: Found `XMLHttpRequest` in file `MMM-BirdNET.js`: Replace it with built-in fetch.
 2. Typo: Found `<sup>2</sup>` in file `README.md`: Replace it with `²`.`.
 3. Outdated: Found `MichMich/MagicMirror` in file `README.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
-4. Recommendation: Found `new Date()` in file `leaflet-providers.js`: Consider replacing it by `new Date(Date.now())`. It's helpfull for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
-5. Recommendation: Found `new Date()` in file `leaflet-src.js`: Consider replacing it by `new Date(Date.now())`. It's helpfull for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
+4. Recommendation: Found `new Date()` in file `leaflet-providers.js`: Consider replacing it by `new Date(Date.now())`. It's helpful for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
+5. Recommendation: Found `new Date()` in file `leaflet-src.js`: Consider replacing it by `new Date(Date.now())`. It's helpful for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
 6. Warning: No LICENSE file.
 7. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
 
@@ -685,8 +705,8 @@ Last update: 2024-09-17T23:27:10+02:00
 
 1. Recommendation: Found `uses: actions/checkout@v2` in file `nodejs.yml`: Replace it with v4.
 2. Recommendation: The README seems not to have an update instruction (the word 'update' is missing). Please add one.
-3. Recommendation: Found `new Date()` in file `Device.js`: Consider replacing it by `new Date(Date.now())`. It's helpfull for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
-4. Recommendation: Found `new Date()` in file `CurrentTimeService.js`: Consider replacing it by `new Date(Date.now())`. It's helpfull for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
+3. Recommendation: Found `new Date()` in file `Device.js`: Consider replacing it by `new Date(Date.now())`. It's helpful for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
+4. Recommendation: Found `new Date()` in file `CurrentTimeService.js`: Consider replacing it by `new Date(Date.now())`. It's helpful for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
 5. Warning: No LICENSE file.
 6. Recommendation: Replace eslintrc by new flat config.
 
@@ -829,12 +849,23 @@ Last update: 2024-09-17T23:27:10+02:00
 
 1. Recommendation: Found `require("https")` in file `BringClient.js`: Replace "https" by "node:https".
 2. Recommendation: Found `axios` in file `BringClient.js`: Replace it with built-in fetch.
-3. Recommendation: Found `new Date()` in file `BringClient.js`: Consider replacing it by `new Date(Date.now())`. It's helpfull for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
+3. Recommendation: Found `new Date()` in file `BringClient.js`: Consider replacing it by `new Date(Date.now())`. It's helpful for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
 4. Recommendation: Found `jshint` in file `MMM-Bring.js`: Replace "jshint" by "eslint".
 5. Outdated: Found `MichMich/MagicMirror` in file `README.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
 6. Typo: Found `Magic Mirror` in file `styles.css`: Replace it with `MagicMirror²`.
 7. Recommendation: Found `axios` in file `package.json`: Replace it with built-in fetch.
 8. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
+
+### [EXT-Bring by bugsounet](https://github.com/bugsounet/EXT-Bring)
+
+1. Information: There are updates for 6 dependencie(s):
+   - @eslint/js                ^8.57.0  →  ^9.10.0
+   - @stylistic/eslint-plugin   ^1.8.1  →   ^2.8.0
+   - esbuild                   ^0.22.0  →  ^0.23.1
+   - eslint                    ^8.57.0  →  ^9.10.0
+   - eslint-plugin-import      ^2.29.1  →  ^2.30.0
+   - glob                      ^10.4.2  →  ^11.0.0
+
 
 ### [MMM-bringList by rseidt](https://github.com/rseidt/MMM-bringList)
 
@@ -844,6 +875,17 @@ Last update: 2024-09-17T23:27:10+02:00
 4. Deprecated: Found `require("request")` in file `bring-profile.js`: Replace it with built-in fetch.
 5. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
 6. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
+
+### [EXT-Browser by bugsounet](https://github.com/bugsounet/EXT-Browser)
+
+1. Information: There are updates for 6 dependencie(s):
+   - @eslint/js                ^8.56.0  →  ^9.10.0
+   - @stylistic/eslint-plugin   ^1.8.1  →   ^2.8.0
+   - esbuild                   ^0.22.0  →  ^0.23.1
+   - eslint                    ^8.56.0  →  ^9.10.0
+   - eslint-plugin-import      ^2.29.1  →  ^2.30.0
+   - glob                      ^10.4.2  →  ^11.0.0
+
 
 ### [MMM-Bubi by balassy](https://github.com/balassy/MMM-Bubi)
 
@@ -868,7 +910,7 @@ Last update: 2024-09-17T23:27:10+02:00
 
 1. An error occurred while getting information from 'package.json': Error: Invalid version: "1.0"
 2. Typo: Found `Magic Mirror` in file `MMM-Buller.js`: Replace it with `MagicMirror²`.
-3. Recommendation: Found `new Date()` in file `MMM-Buller.js`: Consider replacing it by `new Date(Date.now())`. It's helpfull for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
+3. Recommendation: Found `new Date()` in file `MMM-Buller.js`: Consider replacing it by `new Date(Date.now())`. It's helpful for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
 4. Outdated: Found `MichMich/MagicMirror` in file `README.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
 5. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
 6. Outdated: Found `MichMich/MagicMirror` in file `node_helper.js`: Replace it by `MagicMirrorOrg/MagicMirror`.
@@ -921,7 +963,7 @@ Last update: 2024-09-17T23:27:10+02:00
 4. Typo: Found `Magic Mirror` in file `README.md`: Replace it with `MagicMirror²`.
 5. Outdated: Found `MichMich/MagicMirror` in file `README.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
 6. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
-7. Recommendation: Found `new Date()` in file `node_helper.js`: Consider replacing it by `new Date(Date.now())`. It's helpfull for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
+7. Recommendation: Found `new Date()` in file `node_helper.js`: Consider replacing it by `new Date(Date.now())`. It's helpful for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
 8. Warning: No LICENSE file.
 9. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
 
@@ -935,7 +977,7 @@ Last update: 2024-09-17T23:27:10+02:00
 ### [MMM-CalDAV by MMRIZE](https://github.com/MMRIZE/MMM-CalDAV)
 
 1. No image found.
-2. Recommendation: Found `new Date()` in file `node_helper.js`: Consider replacing it by `new Date(Date.now())`. It's helpfull for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
+2. Recommendation: Found `new Date()` in file `node_helper.js`: Consider replacing it by `new Date(Date.now())`. It's helpful for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
 3. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
 4. Information: There are updates for 4 dependencie(s):
    - dotenv       ^16.3.1  →   ^16.4.5
@@ -944,29 +986,38 @@ Last update: 2024-09-17T23:27:10+02:00
    - tsdav         ^2.0.7  →    ^2.1.2
 
 
+### [MMM-CalendarExt2 by MMM-CalendarExt2](https://github.com/MMM-CalendarExt2/MMM-CalendarExt2)
+
+1. Information: There are updates for 4 dependencie(s):
+   - @eslint/js                 ^9.9.1  →  ^9.10.0
+   - @stylistic/eslint-plugin   ^2.6.4  →   ^2.8.0
+   - eslint                     ^9.9.1  →  ^9.10.0
+   - stylelint                 ^16.8.2  →  ^16.9.0
+
+
 ### [MMM-CalendarExt3 by MMRIZE](https://github.com/MMRIZE/MMM-CalendarExt3)
 
 1. No image found.
-2. Recommendation: Found `new Date()` in file `MMM-CalendarExt3.js`: Consider replacing it by `new Date(Date.now())`. It's helpfull for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
+2. Recommendation: Found `new Date()` in file `MMM-CalendarExt3.js`: Consider replacing it by `new Date(Date.now())`. It's helpful for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
 3. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
 
 ### [MMM-CalendarExt3Agenda by MMRIZE](https://github.com/MMRIZE/MMM-CalendarExt3Agenda)
 
 1. No image found.
-2. Recommendation: Found `new Date()` in file `MMM-CalendarExt3Agenda.js`: Consider replacing it by `new Date(Date.now())`. It's helpfull for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
+2. Recommendation: Found `new Date()` in file `MMM-CalendarExt3Agenda.js`: Consider replacing it by `new Date(Date.now())`. It's helpful for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
 3. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
 
 ### [MMM-CalendarExt3Journal by MMRIZE](https://github.com/MMRIZE/MMM-CalendarExt3Journal)
 
 1. No image found.
-2. Recommendation: Found `new Date()` in file `MMM-CalendarExt3Journal.js`: Consider replacing it by `new Date(Date.now())`. It's helpfull for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
+2. Recommendation: Found `new Date()` in file `MMM-CalendarExt3Journal.js`: Consider replacing it by `new Date(Date.now())`. It's helpful for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
 3. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
 
 ### [MMM-CalendarExt3Timeline by MMRIZE](https://github.com/MMRIZE/MMM-CalendarExt3Timeline)
 
 1. No image found.
-2. Recommendation: Found `new Date()` in file `CX3_shared.mjs`: Consider replacing it by `new Date(Date.now())`. It's helpfull for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
-3. Recommendation: Found `new Date()` in file `MMM-CalendarExt3Timeline.js`: Consider replacing it by `new Date(Date.now())`. It's helpfull for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
+2. Recommendation: Found `new Date()` in file `CX3_shared.mjs`: Consider replacing it by `new Date(Date.now())`. It's helpful for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
+3. Recommendation: Found `new Date()` in file `MMM-CalendarExt3Timeline.js`: Consider replacing it by `new Date(Date.now())`. It's helpful for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
 4. Recommendation: The README seems not to have an update instruction (the word 'update' is missing). Please add one.
 5. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
 
@@ -993,12 +1044,12 @@ Last update: 2024-09-17T23:27:10+02:00
 ### [MMM-CalendarTodayTomorrow by qunu](https://github.com/qunu/MMM-CalendarTodayTomorrow)
 
 1. There is no `package.json`. We need this file to gather information about the module for the module list page.
-2. Recommendation: Found `new Date()` in file `MMM-CalendarTodayTomorrow.js`: Consider replacing it by `new Date(Date.now())`. It's helpfull for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
+2. Recommendation: Found `new Date()` in file `MMM-CalendarTodayTomorrow.js`: Consider replacing it by `new Date(Date.now())`. It's helpful for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
 3. Outdated: Found `MichMich/MagicMirror` in file `MMM-CalendarTodayTomorrow.js`: Replace it by `MagicMirrorOrg/MagicMirror`.
 4. Recommendation: The README seems not to have an update instruction (the word 'update' is missing). Please add one.
 5. Recommendation: Found `require("https")` in file `calendarfetcher.js`: Replace "https" by "node:https".
 6. Recommendation: Found `"node-fetch"` in file `calendarfetcher.js`: Replace it with built-in fetch.
-7. Recommendation: Found `new Date()` in file `calendarutils.js`: Consider replacing it by `new Date(Date.now())`. It's helpfull for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
+7. Recommendation: Found `new Date()` in file `calendarutils.js`: Consider replacing it by `new Date(Date.now())`. It's helpful for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
 8. Warning: No LICENSE file.
 9. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
 
@@ -1006,12 +1057,12 @@ Last update: 2024-09-17T23:27:10+02:00
 
 1. There is no `package.json`. We need this file to gather information about the module for the module list page.
 2. Typo: Found `Magic Mirror` in file `MMM-CalendarWeek.js`: Replace it with `MagicMirror²`.
-3. Recommendation: Found `new Date()` in file `MMM-CalendarWeek.js`: Consider replacing it by `new Date(Date.now())`. It's helpfull for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
+3. Recommendation: Found `new Date()` in file `MMM-CalendarWeek.js`: Consider replacing it by `new Date(Date.now())`. It's helpful for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
 4. Outdated: Found `MichMich/MagicMirror` in file `MMM-CalendarWeek.js`: Replace it by `MagicMirrorOrg/MagicMirror`.
 5. Typo: Found `Magic Mirror` in file `README.md`: Replace it with `MagicMirror²`.
 6. Outdated: Found `MichMich/MagicMirror` in file `README.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
 7. Typo: Found `Magic Mirror` in file `calendarfetcher.js`: Replace it with `MagicMirror²`.
-8. Recommendation: Found `new Date()` in file `calendarfetcher.js`: Consider replacing it by `new Date(Date.now())`. It's helpfull for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
+8. Recommendation: Found `new Date()` in file `calendarfetcher.js`: Consider replacing it by `new Date(Date.now())`. It's helpful for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
 9. Outdated: Found `MichMich/MagicMirror` in file `calendarfetcher.js`: Replace it by `MagicMirrorOrg/MagicMirror`.
 10. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
 11. Deprecated: Found `require('request')` in file `node-ical.js`: Replace it with built-in fetch.
@@ -1041,7 +1092,7 @@ Last update: 2024-09-17T23:27:10+02:00
 2. Typo: Found `Magic Mirror` in file `MMM-Caltrain.js`: Replace it with `MagicMirror²`.
 3. Typo: Found `Magic Mirror` in file `README.md`: Replace it with `MagicMirror²`.
 4. Recommendation: Found `'node-fetch'` in file `node_helper.js`: Replace it with built-in fetch.
-5. Recommendation: Found `new Date()` in file `node_helper.js`: Consider replacing it by `new Date(Date.now())`. It's helpfull for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
+5. Recommendation: Found `new Date()` in file `node_helper.js`: Consider replacing it by `new Date(Date.now())`. It's helpful for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
 6. Warning: No LICENSE file.
 7. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
 
@@ -1063,6 +1114,13 @@ Last update: 2024-09-17T23:27:10+02:00
 4. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
 5. Recommendation: Found `require('https')` in file `node_helper.js`: Replace 'https' by 'node:https'.
 6. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
+
+### [MMM-Canteen by KristjanESPERANTO](https://github.com/KristjanESPERANTO/MMM-Canteen)
+
+1. Information: There are updates for 2 dependencie(s):
+   - eslint    ^8.57.0  →  ^9.10.0
+   - prettier   ^3.2.5  →   ^3.3.3
+
 
 ### [MMM-Canvas by chase-cromwell](https://github.com/chase-cromwell/MMM-Canvas)
 
@@ -1095,6 +1153,21 @@ Last update: 2024-09-17T23:27:10+02:00
 5. Deprecated: Found `require('request')` in file `node_helper.js`: Replace it with built-in fetch.
 6. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
 
+### [MMM-Carousel by shbatm](https://github.com/shbatm/MMM-Carousel)
+
+1. Information: There are updates for 10 dependencie(s):
+   - @eslint/js                  ^8.56.0  →  ^9.10.0
+   - @stylistic/eslint-plugin     ^1.5.1  →   ^2.8.0
+   - eslint                      ^8.56.0  →  ^9.10.0
+   - eslint-plugin-import        ^2.29.1  →  ^2.30.0
+   - globals                    ^13.24.0  →  ^15.9.0
+   - markdownlint-cli            ^0.38.0  →  ^0.41.0
+   - prettier                     ^3.1.1  →   ^3.3.3
+   - stylelint                   ^16.1.0  →  ^16.9.0
+   - stylelint-config-standard   ^36.0.0  →  ^36.0.1
+   - stylelint-prettier           ^5.0.0  →   ^5.0.2
+
+
 ### [MMM-CECControl by nischi](https://github.com/nischi/MMM-CECControl)
 
 1. No image found.
@@ -1115,7 +1188,7 @@ Last update: 2024-09-17T23:27:10+02:00
 
 ### [MMM-CHAMPIONSQUEUE-LEADERBOARD by xadamxk](https://github.com/xadamxk/MMM-CHAMPIONSQUEUE-LEADERBOARD)
 
-1. Recommendation: Found `new Date()` in file `MMM-CHAMPIONSQUEUE-LEADERBOARD.js`: Consider replacing it by `new Date(Date.now())`. It's helpfull for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
+1. Recommendation: Found `new Date()` in file `MMM-CHAMPIONSQUEUE-LEADERBOARD.js`: Consider replacing it by `new Date(Date.now())`. It's helpful for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
 2. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
 3. Recommendation: Found `"node-fetch"` in file `node_helper.js`: Replace it with built-in fetch.
 4. Recommendation: Found `"node-fetch"` in file `package.json`: Replace it with built-in fetch.
@@ -1167,7 +1240,7 @@ Last update: 2024-09-17T23:27:10+02:00
 6. Typo: Found `Magic Mirror` in file `README.md`: Replace it with `MagicMirror²`.
 7. Outdated: Found `MichMich/MagicMirror` in file `README.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
 8. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
-9. Recommendation: Found `new Date()` in file `node_helper.js`: Consider replacing it by `new Date(Date.now())`. It's helpfull for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
+9. Recommendation: Found `new Date()` in file `node_helper.js`: Consider replacing it by `new Date(Date.now())`. It's helpful for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
 10. Typo: Found `Magic Mirror` in file `package.json`: Replace it with `MagicMirror²`.
 11. Deprecated: Found `"grunt"` in file `package.json`: Grunt is practically unmaintained. Move on to something better.
 12. Recommendation: Replace eslintrc by new flat config.
@@ -1257,7 +1330,7 @@ Last update: 2024-09-17T23:27:10+02:00
 
 1. Typo: Found `Magic Mirror` in file `MMM-CoinMarketCap.js`: Replace it with `MagicMirror²`.
 2. Recommendation: Found `XMLHttpRequest` in file `MMM-CoinMarketCap.js`: Replace it with built-in fetch.
-3. Recommendation: Found `new Date()` in file `MMM-CoinMarketCap.js`: Consider replacing it by `new Date(Date.now())`. It's helpfull for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
+3. Recommendation: Found `new Date()` in file `MMM-CoinMarketCap.js`: Consider replacing it by `new Date(Date.now())`. It's helpful for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
 4. Outdated: Found `MichMich/MagicMirror` in file `README.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
 5. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
 6. Deprecated: Found `require("request")` in file `node_helper.js`: Replace it with built-in fetch.
@@ -1351,7 +1424,7 @@ Last update: 2024-09-17T23:27:10+02:00
 
 1. There is no `package.json`. We need this file to gather information about the module for the module list page.
 2. Typo: Found `Magic Mirror` in file `MMM-CountUP.js`: Replace it with `MagicMirror²`.
-3. Recommendation: Found `new Date()` in file `MMM-CountUP.js`: Consider replacing it by `new Date(Date.now())`. It's helpfull for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
+3. Recommendation: Found `new Date()` in file `MMM-CountUP.js`: Consider replacing it by `new Date(Date.now())`. It's helpful for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
 4. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
 
 ### [MMM-CoupEscooters by bogomips](https://github.com/bogomips/MMM-CoupEscooters)
@@ -1362,6 +1435,14 @@ Last update: 2024-09-17T23:27:10+02:00
 4. Deprecated: Found `require('request')` in file `node_helper.js`: Replace it with built-in fetch.
 5. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
 
+### [MMM-CoupleDays by wiesty](https://github.com/wiesty/MMM-CoupleDays)
+
+1. Information: There are updates for 3 dependencie(s):
+   - eslint    ^8.56.0  →  ^9.10.0
+   - moment    ^2.29.4  →  ^2.30.1
+   - prettier   ^3.1.1  →   ^3.3.3
+
+
 ### [MMM-covid19 by 0m4r](https://github.com/0m4r/MMM-covid19)
 
 1. `package.json` issue: No license field.
@@ -1371,7 +1452,7 @@ Last update: 2024-09-17T23:27:10+02:00
 5. Typo: Found `Magic Mirror` in file `README.md`: Replace it with `MagicMirror²`.
 6. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
 7. Recommendation: Found `'node-fetch'` in file `node_helper.js`: Replace it with built-in fetch.
-8. Recommendation: Found `new Date()` in file `node_helper.js`: Consider replacing it by `new Date(Date.now())`. It's helpfull for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
+8. Recommendation: Found `new Date()` in file `node_helper.js`: Consider replacing it by `new Date(Date.now())`. It's helpful for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
 9. Typo: Found `Magic Mirror` in file `package.json`: Replace it with `MagicMirror²`.
 10. Recommendation: Found `"node-fetch"` in file `package.json`: Replace it with built-in fetch.
 11. Warning: No LICENSE file.
@@ -1432,7 +1513,7 @@ Last update: 2024-09-17T23:27:10+02:00
 
 ### [MMM-CricketScores by dsouzadrian](https://github.com/dsouzadrian/MMM-CricketScores)
 
-1. Recommendation: Found `new Date()` in file `MMM-CricketScores.js`: Consider replacing it by `new Date(Date.now())`. It's helpfull for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
+1. Recommendation: Found `new Date()` in file `MMM-CricketScores.js`: Consider replacing it by `new Date(Date.now())`. It's helpful for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
 2. Outdated: Found `MichMich/MagicMirror` in file `README.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
 3. Deprecated: Found `require('request')` in file `node_helper.js`: Replace it with built-in fetch.
 4. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
@@ -1491,7 +1572,7 @@ Last update: 2024-09-17T23:27:10+02:00
 1. There are no keywords in 'package.json'. We would use them as tags on the module list page.
 2. Typo: Found `Magic Mirror` in file `MMM-Currentweather-MQTT.js`: Replace it with `MagicMirror²`.
 3. Recommendation: Found `XMLHttpRequest` in file `MMM-Currentweather-MQTT.js`: Replace it with built-in fetch.
-4. Recommendation: Found `new Date()` in file `MMM-Currentweather-MQTT.js`: Consider replacing it by `new Date(Date.now())`. It's helpfull for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
+4. Recommendation: Found `new Date()` in file `MMM-Currentweather-MQTT.js`: Consider replacing it by `new Date(Date.now())`. It's helpful for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
 5. Outdated: Found `MichMich/MagicMirror` in file `MMM-Currentweather-MQTT.js`: Replace it by `MagicMirrorOrg/MagicMirror`.
 6. Recommendation: The README seems not to have an update instruction (the word 'update' is missing). Please add one.
 7. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
@@ -1519,7 +1600,7 @@ Last update: 2024-09-17T23:27:10+02:00
 5. Recommendation: Found `XMLHttpRequest` in file `MMM-CustomMessage.js`: Replace it with built-in fetch.
 6. Typo: Found `Magic Mirror` in file `README.md`: Replace it with `MagicMirror²`.
 7. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
-8. Recommendation: Found `new Date()` in file `node_helper.js`: Consider replacing it by `new Date(Date.now())`. It's helpfull for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
+8. Recommendation: Found `new Date()` in file `node_helper.js`: Consider replacing it by `new Date(Date.now())`. It's helpful for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
 9. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
 
 ### [MMM-CustomText by dathbe](https://github.com/dathbe/MMM-CustomText)
@@ -1545,7 +1626,7 @@ Last update: 2024-09-17T23:27:10+02:00
 
 1. There is no `package.json`. We need this file to gather information about the module for the module list page.
 2. Recommendation: Found `XMLHttpRequest` in file `MMM-CzechPost.js`: Replace it with built-in fetch.
-3. Recommendation: Found `new Date()` in file `MMM-CzechPost.js`: Consider replacing it by `new Date(Date.now())`. It's helpfull for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
+3. Recommendation: Found `new Date()` in file `MMM-CzechPost.js`: Consider replacing it by `new Date(Date.now())`. It's helpful for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
 4. Typo: Found `MagicMirror2` in file `README.md`: Replace it with `MagicMirror²`.
 5. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
 
@@ -1553,10 +1634,10 @@ Last update: 2024-09-17T23:27:10+02:00
 
 1. `package.json` issue: No repository field.
 2. There are no keywords in 'package.json'. We would use them as tags on the module list page.
-3. Recommendation: Found `new Date()` in file `d2l.js`: Consider replacing it by `new Date(Date.now())`. It's helpfull for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
-4. Recommendation: Found `new Date()` in file `index.html`: Consider replacing it by `new Date(Date.now())`. It's helpfull for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
+3. Recommendation: Found `new Date()` in file `d2l.js`: Consider replacing it by `new Date(Date.now())`. It's helpful for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
+4. Recommendation: Found `new Date()` in file `index.html`: Consider replacing it by `new Date(Date.now())`. It's helpful for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
 5. Recommendation: Found `XMLHttpRequest` in file `node_helper.js`: Replace it with built-in fetch.
-6. Recommendation: Found `new Date()` in file `node_helper.js`: Consider replacing it by `new Date(Date.now())`. It's helpfull for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
+6. Recommendation: Found `new Date()` in file `node_helper.js`: Consider replacing it by `new Date(Date.now())`. It's helpful for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
 7. Typo: Found `MagicMirror2` in file `package.json`: Replace it with `MagicMirror²`.
 8. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
 
@@ -1571,7 +1652,7 @@ Last update: 2024-09-17T23:27:10+02:00
 2. Recommendation: Found `uses: actions/checkout@v3` in file `lint.yml`: Replace it with v4.
 3. Recommendation: Found `uses: actions/setup-node@v3` in file `lint.yml`: Replace it with v4.
 4. Typo: Found `Magic Mirror` in file `MMM-DagelijksWoord.js`: Replace it with `MagicMirror²`.
-5. Recommendation: Found `new Date()` in file `MMM-DagelijksWoord.js`: Consider replacing it by `new Date(Date.now())`. It's helpfull for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
+5. Recommendation: Found `new Date()` in file `MMM-DagelijksWoord.js`: Consider replacing it by `new Date(Date.now())`. It's helpful for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
 6. Typo: Found `[MagicMirror]` in file `README.md`: Replace it with `[MagicMirror²]`.
 7. Outdated: Found `MichMich/MagicMirror` in file `README.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
 8. Recommendation: The README seems not to have an update instruction (the word 'update' is missing). Please add one.
@@ -1653,7 +1734,7 @@ Last update: 2024-09-17T23:27:10+02:00
 3. Outdated: Found `MichMich/MagicMirror` in file `README.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
 4. Recommendation: The README seems not to have an update instruction (the word 'update' is missing). Please add one.
 5. Recommendation: Found `require('https')` in file `node_helper.js`: Replace 'https' by 'node:https'.
-6. Recommendation: Found `new Date()` in file `node_helper.js`: Consider replacing it by `new Date(Date.now())`. It's helpfull for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
+6. Recommendation: Found `new Date()` in file `node_helper.js`: Consider replacing it by `new Date(Date.now())`. It's helpful for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
 7. Warning: No LICENSE file.
 8. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
 
@@ -1678,7 +1759,7 @@ Last update: 2024-09-17T23:27:10+02:00
 4. Typo: Found `<sup>2</sup>` in file `README.md`: Replace it with `²`.`.
 5. Outdated: Found `MichMich/MagicMirror` in file `README.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
 6. Recommendation: Found `require('https')` in file `node_helper.js`: Replace 'https' by 'node:https'.
-7. Recommendation: Found `new Date()` in file `node_helper.js`: Consider replacing it by `new Date(Date.now())`. It's helpfull for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
+7. Recommendation: Found `new Date()` in file `node_helper.js`: Consider replacing it by `new Date(Date.now())`. It's helpful for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
 8. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
 
 ### [MMM-darksky-hourly by jacquesCedric](https://github.com/jacquesCedric/MMM-darksky-hourly)
@@ -1734,10 +1815,10 @@ Last update: 2024-09-17T23:27:10+02:00
 1. There are no keywords in 'package.json'. We would use them as tags on the module list page.
 2. Typo: Found `Magic Mirror` in file `MMM-DBF.js`: Replace it with `MagicMirror²`.
 3. Recommendation: Found `XMLHttpRequest` in file `MMM-DBF.js`: Replace it with built-in fetch.
-4. Recommendation: Found `new Date()` in file `MMM-DBF.js`: Consider replacing it by `new Date(Date.now())`. It's helpfull for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
+4. Recommendation: Found `new Date()` in file `MMM-DBF.js`: Consider replacing it by `new Date(Date.now())`. It's helpful for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
 5. Outdated: Found `MichMich/MagicMirror` in file `README.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
 6. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
-7. Recommendation: Found `new Date()` in file `node_helper.js`: Consider replacing it by `new Date(Date.now())`. It's helpfull for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
+7. Recommendation: Found `new Date()` in file `node_helper.js`: Consider replacing it by `new Date(Date.now())`. It's helpful for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
 8. Deprecated: Found `"grunt"` in file `package.json`: Grunt is practically unmaintained. Move on to something better.
 9. Warning: No LICENSE file.
 10. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
@@ -1754,7 +1835,7 @@ Last update: 2024-09-17T23:27:10+02:00
 8. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
 9. Recommendation: Found `require('https')` in file `node_helper.js`: Replace 'https' by 'node:https'.
 10. Recommendation: Found `require('https')` in file `getStationCodes.js`: Replace 'https' by 'node:https'.
-11. Recommendation: Found `new Date()` in file `getStationCodes.js`: Consider replacing it by `new Date(Date.now())`. It's helpfull for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
+11. Recommendation: Found `new Date()` in file `getStationCodes.js`: Consider replacing it by `new Date(Date.now())`. It's helpful for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
 12. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
 
 ### [MMM-DCMetroTrainTimes by AdamMoses-GitHub](https://github.com/AdamMoses-GitHub/MMM-DCMetroTrainTimes)
@@ -1766,7 +1847,7 @@ Last update: 2024-09-17T23:27:10+02:00
 5. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
 6. Recommendation: Found `require('https')` in file `node_helper.js`: Replace 'https' by 'node:https'.
 7. Recommendation: Found `require('https')` in file `getStationCodes.js`: Replace 'https' by 'node:https'.
-8. Recommendation: Found `new Date()` in file `getStationCodes.js`: Consider replacing it by `new Date(Date.now())`. It's helpfull for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
+8. Recommendation: Found `new Date()` in file `getStationCodes.js`: Consider replacing it by `new Date(Date.now())`. It's helpful for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
 9. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
 
 ### [MMM-DefaultWeatherAnimated by MatthiPi](https://github.com/MatthiPi/MMM-DefaultWeatherAnimated)
@@ -1780,7 +1861,7 @@ Last update: 2024-09-17T23:27:10+02:00
 
 1. There is no `package.json`. We need this file to gather information about the module for the module list page.
 2. Recommendation: Found `XMLHttpRequest` in file `MMM-DeLijn.js`: Replace it with built-in fetch.
-3. Recommendation: Found `new Date()` in file `MMM-DeLijn.js`: Consider replacing it by `new Date(Date.now())`. It's helpfull for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
+3. Recommendation: Found `new Date()` in file `MMM-DeLijn.js`: Consider replacing it by `new Date(Date.now())`. It's helpful for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
 4. Typo: Found `Magic Mirror` in file `README.md`: Replace it with `MagicMirror²`.
 5. Recommendation: The README seems not to have an update instruction (the word 'update' is missing). Please add one.
 6. Warning: No LICENSE file.
@@ -1996,7 +2077,7 @@ Last update: 2024-09-17T23:27:10+02:00
 ### [MMM-DWD-Pollen by carstendirks](https://github.com/carstendirks/MMM-DWD-Pollen)
 
 1. There are no keywords in 'package.json'. We would use them as tags on the module list page.
-2. Recommendation: Found `new Date()` in file `MMM-DWD-Pollen.js`: Consider replacing it by `new Date(Date.now())`. It's helpfull for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
+2. Recommendation: Found `new Date()` in file `MMM-DWD-Pollen.js`: Consider replacing it by `new Date(Date.now())`. It's helpful for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
 3. Typo: Found `Magic Mirror` in file `README.md`: Replace it with `MagicMirror²`.
 4. Outdated: Found `MichMich/MagicMirror` in file `README.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
 5. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
@@ -2042,11 +2123,11 @@ Last update: 2024-09-17T23:27:10+02:00
 ### [MMM-DynamicWeather by scottcl88](https://github.com/scottcl88/MMM-DynamicWeather)
 
 1. Recommendation: Found `uses: actions/checkout@v2` in file `codeql-analysis.yml`: Replace it with v4.
-2. Recommendation: Found `new Date()` in file `MMM-DynamicWeather.js`: Consider replacing it by `new Date(Date.now())`. It's helpfull for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
+2. Recommendation: Found `new Date()` in file `MMM-DynamicWeather.js`: Consider replacing it by `new Date(Date.now())`. It's helpful for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
 3. Deprecated: Found `getYear()` in file `MMM-DynamicWeather.js`: Replace `getYear()` by `getFullYear()`.
 4. Deprecated: Found `api.openweathermap.org/data/2.5` in file `MMM-DynamicWeather.js`: OpenWeather API 2.5 will be deprecated in June 2024. Please update to 3.0.
 5. Typo: Found `Magic Mirror` in file `MMM-DynamicWeather.ts`: Replace it with `MagicMirror²`.
-6. Recommendation: Found `new Date()` in file `MMM-DynamicWeather.ts`: Consider replacing it by `new Date(Date.now())`. It's helpfull for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
+6. Recommendation: Found `new Date()` in file `MMM-DynamicWeather.ts`: Consider replacing it by `new Date(Date.now())`. It's helpful for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
 7. Deprecated: Found `getYear()` in file `MMM-DynamicWeather.ts`: Replace `getYear()` by `getFullYear()`.
 8. Deprecated: Found `api.openweathermap.org/data/2.5` in file `MMM-DynamicWeather.ts`: OpenWeather API 2.5 will be deprecated in June 2024. Please update to 3.0.
 9. Typo: Found `Magic Mirror` in file `README.md`: Replace it with `MagicMirror²`.
@@ -2088,9 +2169,16 @@ Last update: 2024-09-17T23:27:10+02:00
 1. There is no `package.json`. We need this file to gather information about the module for the module list page.
 2. No image found.
 3. Recommendation: Found `XMLHttpRequest` in file `MMM-EarthquakeMonitor.js`: Replace it with built-in fetch.
-4. Recommendation: Found `new Date()` in file `MMM-EarthquakeMonitor.js`: Consider replacing it by `new Date(Date.now())`. It's helpfull for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
+4. Recommendation: Found `new Date()` in file `MMM-EarthquakeMonitor.js`: Consider replacing it by `new Date(Date.now())`. It's helpful for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
 5. Recommendation: The README seems not to have an install instruction (the words 'install' or 'installation' are missing). Please add one.
 6. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
+
+### [MMM-EasyPix by KristjanESPERANTO](https://github.com/KristjanESPERANTO/MMM-EasyPix)
+
+1. Information: There are updates for 2 dependencie(s):
+   - eslint    ^8.57.0  →  ^9.10.0
+   - prettier   ^3.2.5  →   ^3.3.3
+
 
 ### [MMM-Ecobee by parnic](https://github.com/parnic/MMM-Ecobee)
 
@@ -2101,7 +2189,7 @@ Last update: 2024-09-17T23:27:10+02:00
 5. Typo: Found `Magic Mirror` in file `README.md`: Replace it with `MagicMirror²`.
 6. Outdated: Found `MichMich/MagicMirror` in file `README.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
 7. Recommendation: Found `require("https")` in file `node_helper.js`: Replace "https" by "node:https".
-8. Recommendation: Found `new Date()` in file `node_helper.js`: Consider replacing it by `new Date(Date.now())`. It's helpfull for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
+8. Recommendation: Found `new Date()` in file `node_helper.js`: Consider replacing it by `new Date(Date.now())`. It's helpful for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
 9. Typo: Found `MagicMirror2` in file `package.json`: Replace it with `MagicMirror²`.
 10. Recommendation: Replace eslintrc by new flat config.
 
@@ -2143,7 +2231,7 @@ Last update: 2024-09-17T23:27:10+02:00
 
 1. There is no `package.json`. We need this file to gather information about the module for the module list page.
 2. Recommendation: Found `XMLHttpRequest` in file `MMM-ELMPrayerTime.js`: Replace it with built-in fetch.
-3. Recommendation: Found `new Date()` in file `MMM-ELMPrayerTime.js`: Consider replacing it by `new Date(Date.now())`. It's helpfull for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
+3. Recommendation: Found `new Date()` in file `MMM-ELMPrayerTime.js`: Consider replacing it by `new Date(Date.now())`. It's helpful for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
 4. Typo: Found `<sup>2</sup>` in file `README.md`: Replace it with `²`.`.
 5. Outdated: Found `MichMich/MagicMirror` in file `README.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
 6. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
@@ -2155,7 +2243,7 @@ Last update: 2024-09-17T23:27:10+02:00
 1. Typo: Found `Magic Mirror` in file `MMM-Elvira.js`: Replace it with `MagicMirror²`.
 2. Outdated: Found `MichMich/MagicMirror` in file `README.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
 3. Deprecated: Found `require('request')` in file `node_helper.js`: Replace it with built-in fetch.
-4. Recommendation: Found `new Date()` in file `node_helper.js`: Consider replacing it by `new Date(Date.now())`. It's helpfull for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
+4. Recommendation: Found `new Date()` in file `node_helper.js`: Consider replacing it by `new Date(Date.now())`. It's helpful for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
 5. Recommendation: Replace eslintrc by new flat config.
 
 ### [MMM-EmbedYoutube by nitpum](https://github.com/nitpum/MMM-EmbedYoutube)
@@ -2181,7 +2269,7 @@ Last update: 2024-09-17T23:27:10+02:00
 
 ### [MMM-EMTValencia by TheRaulXP](https://github.com/TheRaulXP/MMM-EMTValencia)
 
-1. Recommendation: Found `new Date()` in file `MMM-EMTValencia.js`: Consider replacing it by `new Date(Date.now())`. It's helpfull for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
+1. Recommendation: Found `new Date()` in file `MMM-EMTValencia.js`: Consider replacing it by `new Date(Date.now())`. It's helpful for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
 2. Typo: Found `[MagicMirror]` in file `README.md`: Replace it with `[MagicMirror²]`.
 3. Typo: Found `<sup>2</sup>` in file `README.md`: Replace it with `²`.`.
 4. Outdated: Found `MichMich/MagicMirror` in file `README.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
@@ -2209,14 +2297,10 @@ Last update: 2024-09-17T23:27:10+02:00
 ### [MMM-Entur-tavle by Arve](https://github.com/Arve/MMM-Entur-tavle)
 
 1. Recommendation: Replace eslintrc by new flat config.
-2. Information: There are updates for 2 dependencie(s):
-   - @stylistic/eslint-plugin   ^1.5.4  →   ^2.8.0
-   - eslint                    ^8.56.0  →  ^9.10.0
-
 
 ### [MMM-EnvCanada by CharlesMorris78](https://github.com/CharlesMorris78/MMM-EnvCanada)
 
-1. Recommendation: Found `new Date()` in file `MMM-EnvCanada.js`: Consider replacing it by `new Date(Date.now())`. It's helpfull for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
+1. Recommendation: Found `new Date()` in file `MMM-EnvCanada.js`: Consider replacing it by `new Date(Date.now())`. It's helpful for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
 2. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
 
 ### [MMM-EOL by mykle1](https://github.com/mykle1/MMM-EOL)
@@ -2233,7 +2317,7 @@ Last update: 2024-09-17T23:27:10+02:00
 
 1. Please use 'smart home' instead of 'smarthome' as a keyword in your package.json.
 2. Issue: The license in the package.json (ISC) doesn't match the license file (MIT).
-3. Recommendation: Found `new Date()` in file `MMM-EskomSePush.js`: Consider replacing it by `new Date(Date.now())`. It's helpfull for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
+3. Recommendation: Found `new Date()` in file `MMM-EskomSePush.js`: Consider replacing it by `new Date(Date.now())`. It's helpful for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
 4. Recommendation: Found `'node-fetch'` in file `node_helper.js`: Replace it with built-in fetch.
 5. Recommendation: Found `"node-fetch"` in file `package.json`: Replace it with built-in fetch.
 6. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
@@ -2274,7 +2358,7 @@ Last update: 2024-09-17T23:27:10+02:00
 3. Recommendation: Found `XMLHttpRequest` in file `MMM-Ethos.js`: Replace it with built-in fetch.
 4. Outdated: Found `MichMich/MagicMirror` in file `README.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
 5. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
-6. Recommendation: Found `new Date()` in file `node_helper.js`: Consider replacing it by `new Date(Date.now())`. It's helpfull for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
+6. Recommendation: Found `new Date()` in file `node_helper.js`: Consider replacing it by `new Date(Date.now())`. It's helpful for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
 7. Deprecated: Found `"grunt"` in file `package.json`: Grunt is practically unmaintained. Move on to something better.
 8. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
 
@@ -2283,11 +2367,11 @@ Last update: 2024-09-17T23:27:10+02:00
 1. `package.json` issue: No repository field.
 2. There are no keywords in 'package.json'. We would use them as tags on the module list page.
 3. Typo: Found `Magic Mirror` in file `MMM-EUElectricityPrice.js`: Replace it with `MagicMirror²`.
-4. Recommendation: Found `new Date()` in file `MMM-EUElectricityPrice.js`: Consider replacing it by `new Date(Date.now())`. It's helpfull for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
+4. Recommendation: Found `new Date()` in file `MMM-EUElectricityPrice.js`: Consider replacing it by `new Date(Date.now())`. It's helpful for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
 5. Typo: Found `Magic Mirror` in file `README.md`: Replace it with `MagicMirror²`.
 6. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
 7. Recommendation: Found `require('https')` in file `node_helper.js`: Replace 'https' by 'node:https'.
-8. Recommendation: Found `new Date()` in file `node_helper.js`: Consider replacing it by `new Date(Date.now())`. It's helpfull for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
+8. Recommendation: Found `new Date()` in file `node_helper.js`: Consider replacing it by `new Date(Date.now())`. It's helpful for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
 9. Warning: No LICENSE file.
 10. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
 
@@ -2297,7 +2381,7 @@ Last update: 2024-09-17T23:27:10+02:00
 2. Typo: Found `Magic Mirror` in file `MMM-euro2024.js`: Replace it with `MagicMirror²`.
 3. Typo: Found `Magic Mirror` in file `README.md`: Replace it with `MagicMirror²`.
 4. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
-5. Recommendation: Found `new Date()` in file `node_helper.js`: Consider replacing it by `new Date(Date.now())`. It's helpfull for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
+5. Recommendation: Found `new Date()` in file `node_helper.js`: Consider replacing it by `new Date(Date.now())`. It's helpful for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
 6. Typo: Found `Magic Mirror` in file `package.json`: Replace it with `MagicMirror²`.
 7. Warning: No LICENSE file.
 8. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
@@ -2314,7 +2398,7 @@ Last update: 2024-09-17T23:27:10+02:00
 0. This module is outdated: Deprecated. Eventful API discontinued. This module needs updated.
 1. There is no `package.json`. We need this file to gather information about the module for the module list page.
 2. Typo: Found `Magic Mirror` in file `MMM-Events.js`: Replace it with `MagicMirror²`.
-3. Recommendation: Found `new Date()` in file `MMM-Events.js`: Consider replacing it by `new Date(Date.now())`. It's helpfull for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
+3. Recommendation: Found `new Date()` in file `MMM-Events.js`: Consider replacing it by `new Date(Date.now())`. It's helpful for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
 4. Recommendation: The README seems not to have an update instruction (the word 'update' is missing). Please add one.
 5. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
 6. Deprecated: Found `require('request')` in file `node_helper.js`: Replace it with built-in fetch.
@@ -2335,7 +2419,7 @@ Last update: 2024-09-17T23:27:10+02:00
 
 1. There is no `package.json`. We need this file to gather information about the module for the module list page.
 2. Typo: Found `Magic Mirror` in file `MMM-EyeCandy.js`: Replace it with `MagicMirror²`.
-3. Recommendation: Found `new Date()` in file `MMM-EyeCandy.js`: Consider replacing it by `new Date(Date.now())`. It's helpfull for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
+3. Recommendation: Found `new Date()` in file `MMM-EyeCandy.js`: Consider replacing it by `new Date(Date.now())`. It's helpful for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
 4. Recommendation: The README seems not to have an update instruction (the word 'update' is missing). Please add one.
 5. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
 
@@ -2405,7 +2489,7 @@ Last update: 2024-09-17T23:27:10+02:00
 5. Typo: Found `[MagicMirror]` in file `README.md`: Replace it with `[MagicMirror²]`.
 6. Outdated: Found `MichMich/MagicMirror` in file `README.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
 7. Typo: Found `Magic Mirror` in file `package.json`: Replace it with `MagicMirror²`.
-8. Recommendation: Found `new Date()` in file `main.js`: Consider replacing it by `new Date(Date.now())`. It's helpfull for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
+8. Recommendation: Found `new Date()` in file `main.js`: Consider replacing it by `new Date(Date.now())`. It's helpful for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
 9. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
 
 ### [MMM-Facial-Recognition by JonasGoebel](https://github.com/JonasGoebel/MMM-Facial-Recognition)
@@ -2521,10 +2605,10 @@ Last update: 2024-09-17T23:27:10+02:00
 
 ### [MMM-FF-multigeiger by shin10](https://github.com/shin10/MMM-FF-multigeiger)
 
-1. Recommendation: Found `new Date()` in file `MMM-FF-multigeiger.js`: Consider replacing it by `new Date(Date.now())`. It's helpfull for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
+1. Recommendation: Found `new Date()` in file `MMM-FF-multigeiger.js`: Consider replacing it by `new Date(Date.now())`. It's helpful for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
 2. Outdated: Found `MichMich/MagicMirror` in file `README.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
 3. Recommendation: Found `axios` in file `dataFetcher.js`: Replace it with built-in fetch.
-4. Recommendation: Found `new Date()` in file `dataFetcher.js`: Consider replacing it by `new Date(Date.now())`. It's helpfull for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
+4. Recommendation: Found `new Date()` in file `dataFetcher.js`: Consider replacing it by `new Date(Date.now())`. It's helpful for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
 5. Recommendation: Found `axios` in file `package.json`: Replace it with built-in fetch.
 6. Recommendation: Replace eslintrc by new flat config.
 
@@ -2598,7 +2682,7 @@ Last update: 2024-09-17T23:27:10+02:00
 1. `package.json` issue: No repository field.
 2. There are no keywords in 'package.json'. We would use them as tags on the module list page.
 3. Typo: Found `Magic Mirror` in file `MMM-FiElectricityPrice.js`: Replace it with `MagicMirror²`.
-4. Recommendation: Found `new Date()` in file `MMM-FiElectricityPrice.js`: Consider replacing it by `new Date(Date.now())`. It's helpfull for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
+4. Recommendation: Found `new Date()` in file `MMM-FiElectricityPrice.js`: Consider replacing it by `new Date(Date.now())`. It's helpful for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
 5. Typo: Found `Magic Mirror` in file `README.md`: Replace it with `MagicMirror²`.
 6. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
 7. Recommendation: Found `require('https')` in file `node_helper.js`: Replace 'https' by 'node:https'.
@@ -2612,7 +2696,7 @@ Last update: 2024-09-17T23:27:10+02:00
 2. Typo: Found `[MagicMirror]` in file `README.md`: Replace it with `[MagicMirror²]`.
 3. Outdated: Found `MichMich/MagicMirror` in file `README.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
 4. Deprecated: Found `require('request')` in file `node_helper.js`: Replace it with built-in fetch.
-5. Recommendation: Found `new Date()` in file `node_helper.js`: Consider replacing it by `new Date(Date.now())`. It's helpfull for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
+5. Recommendation: Found `new Date()` in file `node_helper.js`: Consider replacing it by `new Date(Date.now())`. It's helpful for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
 6. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
 
 ### [MMM-Fish by nigel-daniels](https://github.com/nigel-daniels/MMM-Fish)
@@ -2637,7 +2721,7 @@ Last update: 2024-09-17T23:27:10+02:00
 ### [MMM-FlagRise by ItsMeBrille](https://github.com/ItsMeBrille/MMM-FlagRise)
 
 1. There is no `package.json`. We need this file to gather information about the module for the module list page.
-2. Recommendation: Found `new Date()` in file `MMM-FlagRise.js`: Consider replacing it by `new Date(Date.now())`. It's helpfull for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
+2. Recommendation: Found `new Date()` in file `MMM-FlagRise.js`: Consider replacing it by `new Date(Date.now())`. It's helpful for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
 3. Typo: Found `MagicMirror2` in file `README.md`: Replace it with `MagicMirror²`.
 4. Recommendation: The README seems not to have an update instruction (the word 'update' is missing). Please add one.
 5. Warning: No LICENSE file.
@@ -2650,7 +2734,7 @@ Last update: 2024-09-17T23:27:10+02:00
 3. There are no specific keywords in 'package.json'. We would use them as tags on the module list page. Add a few meaningful terms to the keywords in the package.json. Not just “magicmirror” or “module”.
 4. Issue: The license in the package.json (ISC) doesn't match the license file (MIT).
 5. No image found.
-6. Recommendation: Found `new Date()` in file `MMM-flatastic.js`: Consider replacing it by `new Date(Date.now())`. It's helpfull for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
+6. Recommendation: Found `new Date()` in file `MMM-flatastic.js`: Consider replacing it by `new Date(Date.now())`. It's helpful for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
 7. Deprecated: Found `require('request')` in file `node_helper.js`: Replace it with built-in fetch.
 8. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
 
@@ -2721,20 +2805,20 @@ Last update: 2024-09-17T23:27:10+02:00
 5. Outdated: Found `MichMich/MagicMirror` in file `README.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
 6. Recommendation: The README seems not to have an update instruction (the word 'update' is missing). Please add one.
 7. Recommendation: Found `XMLHttpRequest` in file `flip.js`: Replace it with built-in fetch.
-8. Recommendation: Found `new Date()` in file `flip.js`: Consider replacing it by `new Date(Date.now())`. It's helpfull for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
+8. Recommendation: Found `new Date()` in file `flip.js`: Consider replacing it by `new Date(Date.now())`. It's helpful for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
 9. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
 
 ### [MMM-Flo by kagjerde](https://github.com/kagjerde/MMM-Flo)
 
 1. There is no `package.json`. We need this file to gather information about the module for the module list page.
 2. Typo: Found `Magic Mirror` in file `MMM-Flo.js`: Replace it with `MagicMirror²`.
-3. Recommendation: Found `new Date()` in file `MMM-Flo.js`: Consider replacing it by `new Date(Date.now())`. It's helpfull for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
+3. Recommendation: Found `new Date()` in file `MMM-Flo.js`: Consider replacing it by `new Date(Date.now())`. It's helpful for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
 4. Typo: Found `Magic Mirror` in file `README.md`: Replace it with `MagicMirror²`.
 5. Outdated: Found `MichMich/MagicMirror` in file `README.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
 6. Recommendation: The README seems not to have an update instruction (the word 'update' is missing). Please add one.
 7. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
 8. Deprecated: Found `require("request")` in file `node_helper.js`: Replace it with built-in fetch.
-9. Recommendation: Found `new Date()` in file `node_helper.js`: Consider replacing it by `new Date(Date.now())`. It's helpfull for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
+9. Recommendation: Found `new Date()` in file `node_helper.js`: Consider replacing it by `new Date(Date.now())`. It's helpful for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
 10. Warning: No LICENSE file.
 11. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
 
@@ -2742,13 +2826,13 @@ Last update: 2024-09-17T23:27:10+02:00
 
 1. There is no `package.json`. We need this file to gather information about the module for the module list page.
 2. Typo: Found `Magic Mirror` in file `MMM-FloGraph.js`: Replace it with `MagicMirror²`.
-3. Recommendation: Found `new Date()` in file `MMM-FloGraph.js`: Consider replacing it by `new Date(Date.now())`. It's helpfull for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
+3. Recommendation: Found `new Date()` in file `MMM-FloGraph.js`: Consider replacing it by `new Date(Date.now())`. It's helpful for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
 4. Typo: Found `Magic Mirror` in file `README.md`: Replace it with `MagicMirror²`.
 5. Outdated: Found `MichMich/MagicMirror` in file `README.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
 6. Recommendation: The README seems not to have an update instruction (the word 'update' is missing). Please add one.
 7. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
 8. Deprecated: Found `require("request")` in file `node_helper.js`: Replace it with built-in fetch.
-9. Recommendation: Found `new Date()` in file `node_helper.js`: Consider replacing it by `new Date(Date.now())`. It's helpfull for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
+9. Recommendation: Found `new Date()` in file `node_helper.js`: Consider replacing it by `new Date(Date.now())`. It's helpful for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
 10. Warning: No LICENSE file.
 11. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
 
@@ -2774,7 +2858,7 @@ Last update: 2024-09-17T23:27:10+02:00
 
 1. Recommendation: Found `XMLHttpRequest` in file `MMM-Formula1.js`: Replace it with built-in fetch.
 2. Recommendation: Found `axios` in file `node_helper.js`: Replace it with built-in fetch.
-3. Recommendation: Found `new Date()` in file `node_helper.js`: Consider replacing it by `new Date(Date.now())`. It's helpfull for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
+3. Recommendation: Found `new Date()` in file `node_helper.js`: Consider replacing it by `new Date(Date.now())`. It's helpful for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
 4. Recommendation: Found `axios` in file `package.json`: Replace it with built-in fetch.
 5. Recommendation: Replace eslintrc by new flat config.
 
@@ -2804,13 +2888,13 @@ Last update: 2024-09-17T23:27:10+02:00
 3. Typo: Found `Magic Mirror` in file `MMM-Fortune.js`: Replace it with `MagicMirror²`.
 4. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
 5. Deprecated: Found `require('request')` in file `node_helper.js`: Replace it with built-in fetch.
-6. Recommendation: Found `new Date()` in file `node_helper.js`: Consider replacing it by `new Date(Date.now())`. It's helpfull for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
+6. Recommendation: Found `new Date()` in file `node_helper.js`: Consider replacing it by `new Date(Date.now())`. It's helpful for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
 7. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
 
 ### [MMM-FrameLight by RaspiManu](https://github.com/RaspiManu/MMM-FrameLight)
 
 1. Typo: Found `Magic Mirror` in file `MMM-FrameLight.js`: Replace it with `MagicMirror²`.
-2. Recommendation: Found `new Date()` in file `MMM-FrameLight.js`: Consider replacing it by `new Date(Date.now())`. It's helpfull for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
+2. Recommendation: Found `new Date()` in file `MMM-FrameLight.js`: Consider replacing it by `new Date(Date.now())`. It's helpful for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
 3. Typo: Found `Magic Mirror` in file `color_picker.js`: Replace it with `MagicMirror²`.
 4. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
 5. Recommendation: Found `"node-fetch"` in file `node_helper.js`: Replace it with built-in fetch.
@@ -2849,13 +2933,24 @@ Last update: 2024-09-17T23:27:10+02:00
 3. Typo: Found `Magic Mirror` in file `README.md`: Replace it with `MagicMirror²`.
 4. Outdated: Found `MichMich/MagicMirror` in file `README.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
 5. Recommendation: The README seems not to have an update instruction (the word 'update' is missing). Please add one.
-6. Recommendation: Found `new Date()` in file `freeboxapi.js`: Consider replacing it by `new Date(Date.now())`. It's helpfull for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
+6. Recommendation: Found `new Date()` in file `freeboxapi.js`: Consider replacing it by `new Date(Date.now())`. It's helpful for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
 7. Typo: Found `Magic Mirror` in file `config.js`: Replace it with `MagicMirror²`.
 8. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
 9. Typo: Found `Magic Mirror` in file `package.json`: Replace it with `MagicMirror²`.
 10. Recommendation: Found `jshint` in file `progressbar.js`: Replace "jshint" by "eslint".
-11. Recommendation: Found `new Date()` in file `progressbar.js`: Consider replacing it by `new Date(Date.now())`. It's helpfull for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
+11. Recommendation: Found `new Date()` in file `progressbar.js`: Consider replacing it by `new Date(Date.now())`. It's helpful for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
 12. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
+
+### [EXT-FreeboxTV by bugsounet](https://github.com/bugsounet/EXT-FreeboxTV)
+
+1. Information: There are updates for 6 dependencie(s):
+   - @eslint/js                ^8.57.0  →  ^9.10.0
+   - @stylistic/eslint-plugin   ^1.8.1  →   ^2.8.0
+   - esbuild                   ^0.22.0  →  ^0.23.1
+   - eslint                    ^8.57.0  →  ^9.10.0
+   - eslint-plugin-import      ^2.29.1  →  ^2.30.0
+   - glob                      ^10.4.2  →  ^11.0.0
+
 
 ### [MMM-FrenchHoroscope by Amand-M](https://github.com/Amand-M/MMM-FrenchHoroscope)
 
@@ -2947,7 +3042,7 @@ Last update: 2024-09-17T23:27:10+02:00
 ### [MMM-FunnyHolidays by mattileh](https://github.com/mattileh/MMM-FunnyHolidays)
 
 1. Typo: Found `Magic Mirror` in file `MMM-FunnyHolidays.js`: Replace it with `MagicMirror²`.
-2. Recommendation: Found `new Date()` in file `MMM-FunnyHolidays.js`: Consider replacing it by `new Date(Date.now())`. It's helpfull for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
+2. Recommendation: Found `new Date()` in file `MMM-FunnyHolidays.js`: Consider replacing it by `new Date(Date.now())`. It's helpful for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
 3. Outdated: Found `MichMich/MagicMirror` in file `README.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
 4. Recommendation: The README seems not to have an update instruction (the word 'update' is missing). Please add one.
 5. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
@@ -2995,16 +3090,16 @@ Last update: 2024-09-17T23:27:10+02:00
 1. There are no keywords in 'package.json'. We would use them as tags on the module list page.
 2. Typo: Found `Magic Mirror` in file `README.md`: Replace it with `MagicMirror²`.
 3. Recommendation: The README seems not to have an update instruction (the word 'update' is missing). Please add one.
-4. Recommendation: Found `new Date()` in file `node_helper.js`: Consider replacing it by `new Date(Date.now())`. It's helpfull for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
+4. Recommendation: Found `new Date()` in file `node_helper.js`: Consider replacing it by `new Date(Date.now())`. It's helpful for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
 5. Typo: Found `Magic Mirror` in file `package.json`: Replace it with `MagicMirror²`.
 6. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
 
 ### [MMM-GCP by da4throux](https://github.com/da4throux/MMM-GCP)
 
 1. Typo: Found `Magic Mirror` in file `MMM-GCP.js`: Replace it with `MagicMirror²`.
-2. Recommendation: Found `new Date()` in file `MMM-GCP.js`: Consider replacing it by `new Date(Date.now())`. It's helpfull for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
+2. Recommendation: Found `new Date()` in file `MMM-GCP.js`: Consider replacing it by `new Date(Date.now())`. It's helpful for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
 3. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
-4. Recommendation: Found `new Date()` in file `node_helper.js`: Consider replacing it by `new Date(Date.now())`. It's helpfull for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
+4. Recommendation: Found `new Date()` in file `node_helper.js`: Consider replacing it by `new Date(Date.now())`. It's helpful for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
 5. Warning: No LICENSE file.
 6. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
 
@@ -3037,7 +3132,7 @@ Last update: 2024-09-17T23:27:10+02:00
 5. Typo: Found `Magic Mirror` in file `README.MD`: Replace it with `MagicMirror²`.
 6. Typo: Found `[MagicMirror]` in file `README.MD`: Replace it with `[MagicMirror²]`.
 7. Outdated: Found `MichMich/MagicMirror` in file `README.MD`: Replace it by `MagicMirrorOrg/MagicMirror`.
-8. Recommendation: Found `new Date()` in file `node_helper.js`: Consider replacing it by `new Date(Date.now())`. It's helpfull for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
+8. Recommendation: Found `new Date()` in file `node_helper.js`: Consider replacing it by `new Date(Date.now())`. It's helpful for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
 9. Typo: Found `Magic Mirror` in file `package.json`: Replace it with `MagicMirror²`.
 10. Deprecated: Found `npm install electron-rebuild` in file `postinstall`: Replace it with `@electron/rebuild`
 11. Warning: No LICENSE file.
@@ -3047,7 +3142,7 @@ Last update: 2024-09-17T23:27:10+02:00
 
 1. No image found.
 2. Recommendation: Found `axios` in file `GHINApi.js`: Replace it with built-in fetch.
-3. Recommendation: Found `new Date()` in file `GHINApi.js`: Consider replacing it by `new Date(Date.now())`. It's helpfull for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
+3. Recommendation: Found `new Date()` in file `GHINApi.js`: Consider replacing it by `new Date(Date.now())`. It's helpful for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
 4. Typo: Found `Magic Mirror` in file `MMM-GHIN.js`: Replace it with `MagicMirror²`.
 5. Typo: Found `Magic Mirror` in file `README.md`: Replace it with `MagicMirror²`.
 6. Outdated: Found `MichMich/MagicMirror` in file `README.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
@@ -3090,6 +3185,17 @@ Last update: 2024-09-17T23:27:10+02:00
 4. Recommendation: The README seems not to have an update instruction (the word 'update' is missing). Please add one.
 5. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
 
+### [MMM-Glassy by bugsounet](https://github.com/bugsounet/MMM-Glassy)
+
+1. Information: There are updates for 6 dependencie(s):
+   - @eslint/js                ^8.57.0  →  ^9.10.0
+   - @stylistic/eslint-plugin   ^1.8.1  →   ^2.8.0
+   - esbuild                   ^0.22.0  →  ^0.23.1
+   - eslint                    ^8.57.0  →  ^9.10.0
+   - eslint-plugin-import      ^2.29.1  →  ^2.30.0
+   - glob                      ^10.4.2  →  ^11.0.0
+
+
 ### [MMM-Globe by Eunanibus](https://github.com/Eunanibus/MMM-Globe)
 
 1. There is no `package.json`. We need this file to gather information about the module for the module list page.
@@ -3100,7 +3206,7 @@ Last update: 2024-09-17T23:27:10+02:00
 6. Outdated: Found `MichMich/MagicMirror` in file `README.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
 7. Recommendation: The README seems not to have an update instruction (the word 'update' is missing). Please add one.
 8. Recommendation: Found `XMLHttpRequest` in file `encom-globe.js`: Replace it with built-in fetch.
-9. Recommendation: Found `new Date()` in file `encom-globe.js`: Consider replacing it by `new Date(Date.now())`. It's helpfull for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
+9. Recommendation: Found `new Date()` in file `encom-globe.js`: Consider replacing it by `new Date(Date.now())`. It's helpful for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
 10. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
 
 ### [MMM-Globe by LukeSkywalker92](https://github.com/LukeSkywalker92/MMM-Globe)
@@ -3108,12 +3214,19 @@ Last update: 2024-09-17T23:27:10+02:00
 1. `package.json` issue: No description
 2. There are no keywords in 'package.json'. We would use them as tags on the module list page.
 3. Typo: Found `Magic Mirror` in file `MMM-Globe.js`: Replace it with `MagicMirror²`.
-4. Recommendation: Found `new Date()` in file `MMM-Globe.js`: Consider replacing it by `new Date(Date.now())`. It's helpfull for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
+4. Recommendation: Found `new Date()` in file `MMM-Globe.js`: Consider replacing it by `new Date(Date.now())`. It's helpful for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
 5. Typo: Found `MagicMirror2` in file `README.md`: Replace it with `MagicMirror²`.
 6. Typo: Found `[MagicMirror]` in file `README.md`: Replace it with `[MagicMirror²]`.
 7. Outdated: Found `MichMich/MagicMirror` in file `README.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
 8. Warning: No LICENSE file.
 9. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
+
+### [MMM-GmailFeed by shaneapowell](https://github.com/shaneapowell/MMM-GmailFeed)
+
+1. Information: There are updates for 2 dependencie(s):
+   - eslint    ^8.56.0  →  ^9.10.0
+   - prettier   ^3.1.1  →   ^3.3.3
+
 
 ### [MMM-GmailNotifier by kurtern84](https://github.com/kurtern84/MMM-GmailNotifier)
 
@@ -3130,6 +3243,17 @@ Last update: 2024-09-17T23:27:10+02:00
 3. Recommendation: The README seems not to have an install instruction (the words 'install' or 'installation' are missing). Please add one.
 4. Warning: No LICENSE file.
 5. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
+
+### [MMM-GoogleAssistant by bugsounet](https://github.com/bugsounet/MMM-GoogleAssistant)
+
+1. Information: There are updates for 6 dependencie(s):
+   - @eslint/js                ^8.57.0  →  ^9.10.0
+   - @grpc/grpc-js             ^1.11.2  →  ^1.11.3
+   - @stylistic/eslint-plugin   ^1.8.1  →   ^2.8.0
+   - eslint                    ^8.57.0  →  ^9.10.0
+   - eslint-plugin-import      ^2.29.1  →  ^2.30.0
+   - glob                      ^10.4.5  →  ^11.0.0
+
 
 ### [MMM-GoogleAssistant by gauravsacc](https://github.com/gauravsacc/MMM-GoogleAssistant)
 
@@ -3152,9 +3276,9 @@ Last update: 2024-09-17T23:27:10+02:00
 ### [MMM-GoogleCalendar by randomBrainstormer](https://github.com/randomBrainstormer/MMM-GoogleCalendar)
 
 1. Typo: Found `Magic Mirror` in file `MMM-GoogleCalendar.js`: Replace it with `MagicMirror²`.
-2. Recommendation: Found `new Date()` in file `MMM-GoogleCalendar.js`: Consider replacing it by `new Date(Date.now())`. It's helpfull for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
-3. Recommendation: Found `new Date()` in file `authorize.js`: Consider replacing it by `new Date(Date.now())`. It's helpfull for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
-4. Recommendation: Found `new Date()` in file `node_helper.js`: Consider replacing it by `new Date(Date.now())`. It's helpfull for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
+2. Recommendation: Found `new Date()` in file `MMM-GoogleCalendar.js`: Consider replacing it by `new Date(Date.now())`. It's helpful for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
+3. Recommendation: Found `new Date()` in file `authorize.js`: Consider replacing it by `new Date(Date.now())`. It's helpful for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
+4. Recommendation: Found `new Date()` in file `node_helper.js`: Consider replacing it by `new Date(Date.now())`. It's helpful for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
 5. Recommendation: Replace eslintrc by new flat config.
 
 ### [MMM-GoogleCast by ferferga](https://github.com/ferferga/MMM-GoogleCast)
@@ -3185,7 +3309,7 @@ Last update: 2024-09-17T23:27:10+02:00
 
 1. There are no keywords in 'package.json'. We would use them as tags on the module list page.
 2. Recommendation: Found `require("https")` in file `node_helper.js`: Replace "https" by "node:https".
-3. Recommendation: Found `new Date()` in file `node_helper.js`: Consider replacing it by `new Date(Date.now())`. It's helpfull for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
+3. Recommendation: Found `new Date()` in file `node_helper.js`: Consider replacing it by `new Date(Date.now())`. It's helpful for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
 4. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
 
 ### [MMM-GoogleFit by fry0815](https://github.com/fry0815/MMM-GoogleFit)
@@ -3193,7 +3317,7 @@ Last update: 2024-09-17T23:27:10+02:00
 1. Issues are not enabled in the GitHub repository. So users cannot report bugs. Please enable issues in your repo.
 2. Outdated: Found `MichMich/MagicMirror` in file `README.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
 3. Deprecated: Found `require("request")` in file `node_helper.js`: Replace it with built-in fetch.
-4. Recommendation: Found `new Date()` in file `node_helper.js`: Consider replacing it by `new Date(Date.now())`. It's helpfull for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
+4. Recommendation: Found `new Date()` in file `node_helper.js`: Consider replacing it by `new Date(Date.now())`. It's helpful for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
 5. Typo: Found `Magic Mirror` in file `package.json`: Replace it with `MagicMirror²`.
 6. Recommendation: Replace eslintrc by new flat config.
 
@@ -3235,9 +3359,9 @@ Last update: 2024-09-17T23:27:10+02:00
 
 1. Recommendation: Found `axios` in file `GPhotos.js`: Replace it with built-in fetch.
 2. Typo: Found `Magic Mirror` in file `INSTALL.md`: Replace it with `MagicMirror²`.
-3. Recommendation: Found `new Date()` in file `MMM-GooglePhotos.js`: Consider replacing it by `new Date(Date.now())`. It's helpfull for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
+3. Recommendation: Found `new Date()` in file `MMM-GooglePhotos.js`: Consider replacing it by `new Date(Date.now())`. It's helpful for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
 4. Recommendation: Found `XMLHttpRequest` in file `error_to_string.js`: Replace it with built-in fetch.
-5. Recommendation: Found `new Date()` in file `node_helper.js`: Consider replacing it by `new Date(Date.now())`. It's helpfull for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
+5. Recommendation: Found `new Date()` in file `node_helper.js`: Consider replacing it by `new Date(Date.now())`. It's helpful for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
 6. Recommendation: Found `axios` in file `package.json`: Replace it with built-in fetch.
 
 ### [EXT-GooglePhotos by bugsounet](https://github.com/bugsounet/EXT-GooglePhotos)
@@ -3253,6 +3377,13 @@ Last update: 2024-09-17T23:27:10+02:00
    - eslint-plugin-import      ^2.29.1  →  ^2.30.0
    - glob                      ^10.4.2  →  ^11.0.0
    - google-auth-library       ^9.11.0  →  ^9.14.1
+
+
+### [MMM-GoogleSheets by ryan-d-williams](https://github.com/ryan-d-williams/MMM-GoogleSheets)
+
+1. Information: There are updates for 2 dependencie(s):
+   - @eslint/js  ^9.9.0  →  ^9.10.0
+   - eslint      ^9.9.0  →  ^9.10.0
 
 
 ### [MMM-GoogleShoppingList by Gismo150](https://github.com/Gismo150/MMM-GoogleShoppingList)
@@ -3272,7 +3403,7 @@ Last update: 2024-09-17T23:27:10+02:00
 3. Outdated: Found `MichMich/MagicMirror` in file `README.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
 4. Outdated: Found `husky install` in file `package.json`: Since husky v9 you may not need this anymore.
 5. Recommendation: Found `axios` in file `GoogleTaskService.ts`: Replace it with built-in fetch.
-6. Recommendation: Found `new Date()` in file `Display.ts`: Consider replacing it by `new Date(Date.now())`. It's helpfull for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
+6. Recommendation: Found `new Date()` in file `Display.ts`: Consider replacing it by `new Date(Date.now())`. It's helpful for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
 7. Recommendation: Found `axios` in file `node_helper.ts`: Replace it with built-in fetch.
 8. Recommendation: Replace eslintrc by new flat config.
 
@@ -3287,18 +3418,29 @@ Last update: 2024-09-17T23:27:10+02:00
 
 ### [MMM-GoogleTrafficTimes by Jacopo1891](https://github.com/Jacopo1891/MMM-GoogleTrafficTimes)
 
-1. Recommendation: Found `new Date()` in file `MMM-GoogleTrafficTimes.js`: Consider replacing it by `new Date(Date.now())`. It's helpfull for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
+1. Recommendation: Found `new Date()` in file `MMM-GoogleTrafficTimes.js`: Consider replacing it by `new Date(Date.now())`. It's helpful for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
 2. Typo: Found `MagicMirror2` in file `README.md`: Replace it with `MagicMirror²`.
 3. Warning: No LICENSE file.
 4. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
 
 ### [MMM-GoogleTTS by MMRIZE](https://github.com/MMRIZE/MMM-GoogleTTS)
 
-1. Recommendation: Found `new Date()` in file `node_helper.js`: Consider replacing it by `new Date(Date.now())`. It's helpfull for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
+1. Recommendation: Found `new Date()` in file `node_helper.js`: Consider replacing it by `new Date(Date.now())`. It's helpful for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
 2. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
 3. Information: There are updates for 2 dependencie(s):
    - @electron/rebuild             ^3.3.1  →  ^3.6.0
    - @google-cloud/text-to-speech  ^3.3.1  →  ^5.4.0
+
+
+### [EXT-Governor by bugsounet](https://github.com/bugsounet/EXT-Governor)
+
+1. Information: There are updates for 6 dependencie(s):
+   - @eslint/js                ^8.57.0  →  ^9.10.0
+   - @stylistic/eslint-plugin   ^1.8.1  →   ^2.8.0
+   - esbuild                   ^0.22.0  →  ^0.23.1
+   - eslint                    ^8.57.0  →  ^9.10.0
+   - eslint-plugin-import      ^2.29.1  →  ^2.30.0
+   - glob                      ^10.4.2  →  ^11.0.0
 
 
 ### [MMM-GPIO-HANDLER by Sjohn21](https://github.com/Sjohn21/MMM-GPIO-HANDLER)
@@ -3310,7 +3452,7 @@ Last update: 2024-09-17T23:27:10+02:00
 5. Typo: Found `MagicMirror2` in file `README.md`: Replace it with `MagicMirror²`.
 6. Outdated: Found `MichMich/MagicMirror` in file `README.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
 7. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
-8. Recommendation: Found `new Date()` in file `node_helper.js`: Consider replacing it by `new Date(Date.now())`. It's helpfull for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
+8. Recommendation: Found `new Date()` in file `node_helper.js`: Consider replacing it by `new Date(Date.now())`. It's helpful for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
 9. Typo: Found `Magic Mirror` in file `package.json`: Replace it with `MagicMirror²`.
 10. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
 
@@ -3336,7 +3478,7 @@ Last update: 2024-09-17T23:27:10+02:00
 1. There is no `package.json`. We need this file to gather information about the module for the module list page.
 2. Typo: Found `Magic Mirror` in file `MMM-GPSWeather.js`: Replace it with `MagicMirror²`.
 3. Recommendation: Found `XMLHttpRequest` in file `MMM-GPSWeather.js`: Replace it with built-in fetch.
-4. Recommendation: Found `new Date()` in file `MMM-GPSWeather.js`: Consider replacing it by `new Date(Date.now())`. It's helpfull for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
+4. Recommendation: Found `new Date()` in file `MMM-GPSWeather.js`: Consider replacing it by `new Date(Date.now())`. It's helpful for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
 5. Outdated: Found `MichMich/MagicMirror` in file `README.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
 6. Recommendation: The README seems not to have an install instruction (the words 'install' or 'installation' are missing). Please add one.
 7. Warning: No LICENSE file.
@@ -3345,9 +3487,15 @@ Last update: 2024-09-17T23:27:10+02:00
 ### [MMM-GrafanaChart by SvenSommer](https://github.com/SvenSommer/MMM-GrafanaChart)
 
 1. There is no `package.json`. We need this file to gather information about the module for the module list page.
-2. Recommendation: Found `new Date()` in file `MMM-GrafanaChart.js`: Consider replacing it by `new Date(Date.now())`. It's helpfull for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
+2. Recommendation: Found `new Date()` in file `MMM-GrafanaChart.js`: Consider replacing it by `new Date(Date.now())`. It's helpful for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
 3. Typo: Found `Magic Mirror` in file `README.md`: Replace it with `MagicMirror²`.
 4. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
+
+### [MMM-Grocy by ooohfascinating](https://github.com/ooohfascinating/MMM-Grocy)
+
+1. Information: There are updates for 1 dependencie(s):
+   - eslint  ^8.57.0  →  ^9.10.0
+
 
 ### [MMM-GroveGestures by MMRIZE](https://github.com/MMRIZE/MMM-GroveGestures)
 
@@ -3420,7 +3568,7 @@ Last update: 2024-09-17T23:27:10+02:00
 3. There are no keywords in 'package.json'. We would use them as tags on the module list page.
 4. Typo: Found `Magic Mirror` in file `MMM-HappyHours.css`: Replace it with `MagicMirror²`.
 5. Typo: Found `Magic Mirror` in file `MMM-HappyHours.js`: Replace it with `MagicMirror²`.
-6. Recommendation: Found `new Date()` in file `MMM-HappyHours.js`: Consider replacing it by `new Date(Date.now())`. It's helpfull for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
+6. Recommendation: Found `new Date()` in file `MMM-HappyHours.js`: Consider replacing it by `new Date(Date.now())`. It's helpful for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
 7. Typo: Found `Magic Mirror` in file `README.md`: Replace it with `MagicMirror²`.
 8. Typo: Found `[MagicMirror]` in file `README.md`: Replace it with `[MagicMirror²]`.
 9. Outdated: Found `MichMich/MagicMirror` in file `README.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
@@ -3453,7 +3601,7 @@ Last update: 2024-09-17T23:27:10+02:00
 ### [MMM-HebrewCalendar by neshkoli](https://github.com/neshkoli/MMM-HebrewCalendar)
 
 1. There is no `package.json`. We need this file to gather information about the module for the module list page.
-2. Recommendation: Found `new Date()` in file `MMM-HebrewCalendar.js`: Consider replacing it by `new Date(Date.now())`. It's helpfull for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
+2. Recommendation: Found `new Date()` in file `MMM-HebrewCalendar.js`: Consider replacing it by `new Date(Date.now())`. It's helpful for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
 3. Recommendation: The README seems not to have an update instruction (the word 'update' is missing). Please add one.
 4. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
 
@@ -3542,14 +3690,14 @@ Last update: 2024-09-17T23:27:10+02:00
 
 1. There is no `package.json`. We need this file to gather information about the module for the module list page.
 2. Typo: Found `Magic Mirror` in file `MMM-Hive.js`: Replace it with `MagicMirror²`.
-3. Recommendation: Found `new Date()` in file `MMM-Hive.js`: Consider replacing it by `new Date(Date.now())`. It's helpfull for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
+3. Recommendation: Found `new Date()` in file `MMM-Hive.js`: Consider replacing it by `new Date(Date.now())`. It's helpful for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
 4. Typo: Found `MagicMirror2` in file `README.md`: Replace it with `MagicMirror²`.
 5. Recommendation: Found `axios` in file `README.md`: Replace it with built-in fetch.
 6. Outdated: Found `MichMich/MagicMirror` in file `README.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
 7. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
 8. Deprecated: Found `require('request')` in file `node_helper.js`: Replace it with built-in fetch.
 9. Recommendation: Found `axios` in file `index.js`: Replace it with built-in fetch.
-10. Recommendation: Found `new Date()` in file `index.js`: Consider replacing it by `new Date(Date.now())`. It's helpfull for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
+10. Recommendation: Found `new Date()` in file `index.js`: Consider replacing it by `new Date(Date.now())`. It's helpful for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
 11. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
 
 ### [MMM-HK-Transport-ETA by winstonma](https://github.com/winstonma/MMM-HK-Transport-ETA)
@@ -3646,7 +3794,7 @@ Last update: 2024-09-17T23:27:10+02:00
 
 1. Please use 'smart home' instead of 'smarthome' as a keyword in your package.json.
 2. Typo: Found `Magic Mirror` in file `MMM-Homematic.js`: Replace it with `MagicMirror²`.
-3. Recommendation: Found `new Date()` in file `MMM-Homematic.js`: Consider replacing it by `new Date(Date.now())`. It's helpfull for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
+3. Recommendation: Found `new Date()` in file `MMM-Homematic.js`: Consider replacing it by `new Date(Date.now())`. It's helpful for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
 4. Typo: Found `Magic Mirror` in file `README.md`: Replace it with `MagicMirror²`.
 5. Typo: Found `[MagicMirror]` in file `README.md`: Replace it with `[MagicMirror²]`.
 6. Outdated: Found `MichMich/MagicMirror` in file `README.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
@@ -3676,7 +3824,7 @@ Last update: 2024-09-17T23:27:10+02:00
 
 ### [MMM-horoscope by morozgrafix](https://github.com/morozgrafix/MMM-horoscope)
 
-1. Recommendation: Found `new Date()` in file `MMM-horoscope.js`: Consider replacing it by `new Date(Date.now())`. It's helpfull for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
+1. Recommendation: Found `new Date()` in file `MMM-horoscope.js`: Consider replacing it by `new Date(Date.now())`. It's helpful for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
 2. Outdated: Found `MichMich/MagicMirror` in file `README.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
 3. Deprecated: Found `require("request")` in file `node_helper.js`: Replace it with built-in fetch.
 4. Typo: Found `MagicMirror2` in file `package.json`: Replace it with `MagicMirror²`.
@@ -3684,10 +3832,10 @@ Last update: 2024-09-17T23:27:10+02:00
 
 ### [MMM-Hotword2 by MMRIZE](https://github.com/MMRIZE/MMM-Hotword2)
 
-1. Recommendation: Found `new Date()` in file `MMM-Hotword2.js`: Consider replacing it by `new Date(Date.now())`. It's helpfull for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
+1. Recommendation: Found `new Date()` in file `MMM-Hotword2.js`: Consider replacing it by `new Date(Date.now())`. It's helpful for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
 2. Recommendation: The README seems not to have an update instruction (the word 'update' is missing). Please add one.
 3. Recommendation: The README seems not to have an install instruction (the words 'install' or 'installation' are missing). Please add one.
-4. Recommendation: Found `new Date()` in file `node_helper.js`: Consider replacing it by `new Date(Date.now())`. It's helpfull for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
+4. Recommendation: Found `new Date()` in file `node_helper.js`: Consider replacing it by `new Date(Date.now())`. It's helpful for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
 5. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
 
 ### [MMM-Hover by dancj](https://github.com/dancj/MMM-Hover)
@@ -3710,7 +3858,7 @@ Last update: 2024-09-17T23:27:10+02:00
 1. There is no `package.json`. We need this file to gather information about the module for the module list page.
 2. No compatible or wrong license field in 'package.json' or LICENSE file. Without that, we can't use an image.
 3. Typo: Found `Magic Mirror` in file `MMM-HRS-PickupPlan.js`: Replace it with `MagicMirror²`.
-4. Recommendation: Found `new Date()` in file `MMM-HRS-PickupPlan.js`: Consider replacing it by `new Date(Date.now())`. It's helpfull for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
+4. Recommendation: Found `new Date()` in file `MMM-HRS-PickupPlan.js`: Consider replacing it by `new Date(Date.now())`. It's helpful for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
 5. Recommendation: Found `axios` in file `README.md`: Replace it with built-in fetch.
 6. Outdated: Found `MichMich/MagicMirror` in file `README.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
 7. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
@@ -3721,7 +3869,7 @@ Last update: 2024-09-17T23:27:10+02:00
 
 1. There is no `package.json`. We need this file to gather information about the module for the module list page.
 2. Typo: Found `Magic Mirror` in file `MMM-HTMLSnippet.js`: Replace it with `MagicMirror²`.
-3. Recommendation: Found `new Date()` in file `MMM-HTMLSnippet.js`: Consider replacing it by `new Date(Date.now())`. It's helpfull for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
+3. Recommendation: Found `new Date()` in file `MMM-HTMLSnippet.js`: Consider replacing it by `new Date(Date.now())`. It's helpful for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
 4. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
 
 ### [MMM-HTTPRequestDisplay by Eunanibus](https://github.com/Eunanibus/MMM-HTTPRequestDisplay)
@@ -3759,7 +3907,7 @@ Last update: 2024-09-17T23:27:10+02:00
 1. There are no keywords in 'package.json'. We would use them as tags on the module list page.
 2. Typo: Found `MagicMirror2` in file `README.md`: Replace it with `MagicMirror²`.
 3. Recommendation: The README seems not to have an update instruction (the word 'update' is missing). Please add one.
-4. Recommendation: Found `new Date()` in file `slider.js`: Consider replacing it by `new Date(Date.now())`. It's helpfull for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
+4. Recommendation: Found `new Date()` in file `slider.js`: Consider replacing it by `new Date(Date.now())`. It's helpful for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
 5. Recommendation: Found `'node-fetch'` in file `node_helper.js`: Replace it with built-in fetch.
 6. Recommendation: Found `"node-fetch"` in file `package.json`: Replace it with built-in fetch.
 7. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
@@ -3798,18 +3946,18 @@ Last update: 2024-09-17T23:27:10+02:00
 ### [MMM-ICA by PierreGode](https://github.com/PierreGode/MMM-ICA)
 
 1. Recommendation: Found `axios` in file `node_helper.js`: Replace it with built-in fetch.
-2. Recommendation: Found `new Date()` in file `node_helper.js`: Consider replacing it by `new Date(Date.now())`. It's helpfull for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
+2. Recommendation: Found `new Date()` in file `node_helper.js`: Consider replacing it by `new Date(Date.now())`. It's helpful for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
 3. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
 
 ### [MMM-iCal-ToDo by nixnuex](https://github.com/nixnuex/MMM-iCal-ToDo)
 
 1. There are no specific keywords in 'package.json'. We would use them as tags on the module list page. Add a few meaningful terms to the keywords in the package.json. Not just “magicmirror” or “module”.
 2. Typo: Found `Magic Mirror` in file `MMM-iCal-ToDo.js`: Replace it with `MagicMirror²`.
-3. Recommendation: Found `new Date()` in file `MMM-iCal-ToDo.js`: Consider replacing it by `new Date(Date.now())`. It's helpfull for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
+3. Recommendation: Found `new Date()` in file `MMM-iCal-ToDo.js`: Consider replacing it by `new Date(Date.now())`. It's helpful for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
 4. Outdated: Found `MichMich/MagicMirror` in file `MMM-iCal-ToDo.js`: Replace it by `MagicMirrorOrg/MagicMirror`.
 5. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
 6. Typo: Found `Magic Mirror` in file `todofetcher.js`: Replace it with `MagicMirror²`.
-7. Recommendation: Found `new Date()` in file `todofetcher.js`: Consider replacing it by `new Date(Date.now())`. It's helpfull for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
+7. Recommendation: Found `new Date()` in file `todofetcher.js`: Consider replacing it by `new Date(Date.now())`. It's helpful for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
 8. Outdated: Found `MichMich/MagicMirror` in file `todofetcher.js`: Replace it by `MagicMirrorOrg/MagicMirror`.
 9. Deprecated: Found `require('request')` in file `node-ical.js`: Replace it with built-in fetch.
 10. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
@@ -3819,7 +3967,7 @@ Last update: 2024-09-17T23:27:10+02:00
 1. No image found.
 2. Outdated: Found `MichMich/MagicMirror` in file `README.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
 3. Recommendation: The README seems not to have an update instruction (the word 'update' is missing). Please add one.
-4. Recommendation: Found `new Date()` in file `node_helper.js`: Consider replacing it by `new Date(Date.now())`. It's helpfull for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
+4. Recommendation: Found `new Date()` in file `node_helper.js`: Consider replacing it by `new Date(Date.now())`. It's helpful for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
 5. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
 
 ### [MMM-IconDisplayer by wiedsee](https://github.com/wiedsee/MMM-IconDisplayer)
@@ -3841,11 +3989,11 @@ Last update: 2024-09-17T23:27:10+02:00
 4. Recommendation: Found `axios` in file `axios_v0.16.x.js`: Replace it with built-in fetch.
 5. Recommendation: Found `XMLHttpRequest` in file `axios_v0.16.x.js`: Replace it with built-in fetch.
 6. Recommendation: Found `axios` in file `package.json`: Replace it with built-in fetch.
-7. Recommendation: Found `new Date()` in file `renderer.js`: Consider replacing it by `new Date(Date.now())`. It's helpfull for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
+7. Recommendation: Found `new Date()` in file `renderer.js`: Consider replacing it by `new Date(Date.now())`. It's helpful for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
 8. Typo: Found `Magic Mirror` in file `module.js`: Replace it with `MagicMirror²`.
 9. Typo: Found `Magic Mirror` in file `helper.js`: Replace it with `MagicMirror²`.
 10. Recommendation: Found `axios` in file `helper_impl.js`: Replace it with built-in fetch.
-11. Recommendation: Found `new Date()` in file `helper_impl.js`: Consider replacing it by `new Date(Date.now())`. It's helpfull for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
+11. Recommendation: Found `new Date()` in file `helper_impl.js`: Consider replacing it by `new Date(Date.now())`. It's helpful for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
 12. Recommendation: Found `axios` in file `helper_impl.spec.js`: Replace it with built-in fetch.
 13. Recommendation: Found `axios` in file `railwayRepository.js`: Replace it with built-in fetch.
 14. Recommendation: Found `axios` in file `yarn.lock`: Replace it with built-in fetch.
@@ -3865,12 +4013,12 @@ Last update: 2024-09-17T23:27:10+02:00
 
 1. Typo: Found `Magic Mirror` in file `MMM-idos.css`: Replace it with `MagicMirror²`.
 2. Typo: Found `Magic Mirror` in file `MMM-idos.js`: Replace it with `MagicMirror²`.
-3. Recommendation: Found `new Date()` in file `MMM-idos.js`: Consider replacing it by `new Date(Date.now())`. It's helpfull for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
+3. Recommendation: Found `new Date()` in file `MMM-idos.js`: Consider replacing it by `new Date(Date.now())`. It's helpful for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
 4. Typo: Found `Magic Mirror` in file `README.md`: Replace it with `MagicMirror²`.
 5. Outdated: Found `MichMich/MagicMirror` in file `README.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
 6. Recommendation: The README seems not to have an update instruction (the word 'update' is missing). Please add one.
 7. Typo: Found `Magic Mirror` in file `node-idos.js`: Replace it with `MagicMirror²`.
-8. Recommendation: Found `new Date()` in file `node-idos.js`: Consider replacing it by `new Date(Date.now())`. It's helpfull for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
+8. Recommendation: Found `new Date()` in file `node-idos.js`: Consider replacing it by `new Date(Date.now())`. It's helpful for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
 9. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
 10. Warning: No LICENSE file.
 11. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
@@ -3919,7 +4067,7 @@ Last update: 2024-09-17T23:27:10+02:00
 4. Outdated: Found `MichMich/MagicMirror` in file `README.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
 5. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
 6. Deprecated: Found `require('request')` in file `node_helper.js`: Replace it with built-in fetch.
-7. Recommendation: Found `new Date()` in file `node_helper.js`: Consider replacing it by `new Date(Date.now())`. It's helpfull for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
+7. Recommendation: Found `new Date()` in file `node_helper.js`: Consider replacing it by `new Date(Date.now())`. It's helpful for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
 8. Typo: Found `Magic Mirror` in file `package.json`: Replace it with `MagicMirror²`.
 9. Warning: No LICENSE file.
 10. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
@@ -3935,43 +4083,43 @@ Last update: 2024-09-17T23:27:10+02:00
 7. Recommendation: Found `XMLHttpRequest` in file `ammap_amcharts_extension.js`: Replace it with built-in fetch.
 8. Recommendation: Found `XMLHttpRequest` in file `dataloader.js`: Replace it with built-in fetch.
 9. Recommendation: Found `jshint` in file `dataloader.js`: Replace "jshint" by "eslint".
-10. Recommendation: Found `new Date()` in file `dataloader.js`: Consider replacing it by `new Date(Date.now())`. It's helpfull for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
+10. Recommendation: Found `new Date()` in file `dataloader.js`: Consider replacing it by `new Date(Date.now())`. It's helpful for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
 11. Recommendation: Found `XMLHttpRequest` in file `dataloader.min.js`: Replace it with built-in fetch.
-12. Recommendation: Found `new Date()` in file `index.html`: Consider replacing it by `new Date(Date.now())`. It's helpfull for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
-13. Recommendation: Found `new Date()` in file `serial3.html`: Consider replacing it by `new Date(Date.now())`. It's helpfull for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
-14. Recommendation: Found `new Date()` in file `stock.html`: Consider replacing it by `new Date(Date.now())`. It's helpfull for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
-15. Recommendation: Found `new Date()` in file `export.js`: Consider replacing it by `new Date(Date.now())`. It's helpfull for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
+12. Recommendation: Found `new Date()` in file `index.html`: Consider replacing it by `new Date(Date.now())`. It's helpful for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
+13. Recommendation: Found `new Date()` in file `serial3.html`: Consider replacing it by `new Date(Date.now())`. It's helpful for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
+14. Recommendation: Found `new Date()` in file `stock.html`: Consider replacing it by `new Date(Date.now())`. It's helpful for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
+15. Recommendation: Found `new Date()` in file `export.js`: Consider replacing it by `new Date(Date.now())`. It's helpful for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
 16. Deprecated: Found `new Buffer(` in file `fabric.js`: This is deprecated. Please update: <https://nodejs.org/api/buffer.html>.
 17. Recommendation: Found `require('http')` in file `fabric.js`: Replace 'http' by 'node:http'.
 18. Recommendation: Found `require('https')` in file `fabric.js`: Replace 'https' by 'node:https'.
 19. Recommendation: Found `XMLHttpRequest` in file `fabric.js`: Replace it with built-in fetch.
 20. Recommendation: Found `jshint` in file `fabric.js`: Replace "jshint" by "eslint".
-21. Recommendation: Found `new Date()` in file `fabric.js`: Consider replacing it by `new Date(Date.now())`. It's helpfull for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
+21. Recommendation: Found `new Date()` in file `fabric.js`: Consider replacing it by `new Date(Date.now())`. It's helpful for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
 22. Deprecated: Found `new Buffer(` in file `fabric.min.js`: This is deprecated. Please update: <https://nodejs.org/api/buffer.html>.
 23. Recommendation: Found `require("http")` in file `fabric.min.js`: Replace "http" by "node:http".
 24. Recommendation: Found `require("https")` in file `fabric.min.js`: Replace "https" by "node:https".
 25. Recommendation: Found `XMLHttpRequest` in file `fabric.min.js`: Replace it with built-in fetch.
 26. Deprecated: Found `new Buffer(` in file `jszip.js`: This is deprecated. Please update: <https://nodejs.org/api/buffer.html>.
 27. Recommendation: Found `jshint` in file `jszip.js`: Replace "jshint" by "eslint".
-28. Recommendation: Found `new Date()` in file `jszip.js`: Consider replacing it by `new Date(Date.now())`. It's helpfull for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
+28. Recommendation: Found `new Date()` in file `jszip.js`: Consider replacing it by `new Date(Date.now())`. It's helpful for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
 29. Deprecated: Found `new Buffer(` in file `pdfmake.js`: This is deprecated. Please update: <https://nodejs.org/api/buffer.html>.
 30. Recommendation: Found `jshint` in file `pdfmake.js`: Replace "jshint" by "eslint".
-31. Recommendation: Found `new Date()` in file `pdfmake.js`: Consider replacing it by `new Date(Date.now())`. It's helpfull for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
+31. Recommendation: Found `new Date()` in file `pdfmake.js`: Consider replacing it by `new Date(Date.now())`. It's helpful for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
 32. Deprecated: Found `new Buffer(` in file `pdfmake.min.js.map`: This is deprecated. Please update: <https://nodejs.org/api/buffer.html>.
 33. Recommendation: Found `jshint` in file `pdfmake.min.js.map`: Replace "jshint" by "eslint".
-34. Recommendation: Found `new Date()` in file `pdfmake.min.js.map`: Consider replacing it by `new Date(Date.now())`. It's helpfull for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
+34. Recommendation: Found `new Date()` in file `pdfmake.min.js.map`: Consider replacing it by `new Date(Date.now())`. It's helpful for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
 35. Deprecated: Found `new Buffer(` in file `xlsx.js`: This is deprecated. Please update: <https://nodejs.org/api/buffer.html>.
 36. Recommendation: Found `jshint` in file `xlsx.js`: Replace "jshint" by "eslint".
 37. Deprecated: Found `new Buffer(` in file `xlsx.min.js`: This is deprecated. Please update: <https://nodejs.org/api/buffer.html>.
-38. Recommendation: Found `new Date()` in file `serial3.html`: Consider replacing it by `new Date(Date.now())`. It's helpfull for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
-39. Recommendation: Found `new Date()` in file `stock.html`: Consider replacing it by `new Date(Date.now())`. It's helpfull for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
+38. Recommendation: Found `new Date()` in file `serial3.html`: Consider replacing it by `new Date(Date.now())`. It's helpful for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
+39. Recommendation: Found `new Date()` in file `stock.html`: Consider replacing it by `new Date(Date.now())`. It's helpful for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
 40. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
 
 ### [MMM-Ilevia-Lille by Jilano5](https://github.com/Jilano5/MMM-Ilevia-Lille)
 
-1. Recommendation: Found `new Date()` in file `MMM-Ilevia-Lille.js`: Consider replacing it by `new Date(Date.now())`. It's helpfull for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
+1. Recommendation: Found `new Date()` in file `MMM-Ilevia-Lille.js`: Consider replacing it by `new Date(Date.now())`. It's helpful for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
 2. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
-3. Recommendation: Found `new Date()` in file `node_helper.js`: Consider replacing it by `new Date(Date.now())`. It's helpfull for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
+3. Recommendation: Found `new Date()` in file `node_helper.js`: Consider replacing it by `new Date(Date.now())`. It's helpful for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
 4. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
 
 ### [MMM-ImageFileWatcher by basknol](https://github.com/basknol/MMM-ImageFileWatcher)
@@ -4093,10 +4241,21 @@ Last update: 2024-09-17T23:27:10+02:00
 1. There is no `package.json`. We need this file to gather information about the module for the module list page.
 2. Typo: Found `Magic Mirror` in file `MMM-IntelligentOctopus.js`: Replace it with `MagicMirror²`.
 3. Recommendation: Found `XMLHttpRequest` in file `MMM-IntelligentOctopus.js`: Replace it with built-in fetch.
-4. Recommendation: Found `new Date()` in file `MMM-IntelligentOctopus.js`: Consider replacing it by `new Date(Date.now())`. It's helpfull for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
+4. Recommendation: Found `new Date()` in file `MMM-IntelligentOctopus.js`: Consider replacing it by `new Date(Date.now())`. It's helpful for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
 5. Typo: Found `<sup>2</sup>` in file `README.md`: Replace it with `²`.`.
 6. Outdated: Found `MichMich/MagicMirror` in file `README.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
 7. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
+
+### [EXT-Internet by bugsounet](https://github.com/bugsounet/EXT-Internet)
+
+1. Information: There are updates for 6 dependencie(s):
+   - @eslint/js                ^8.57.0  →  ^9.10.0
+   - @stylistic/eslint-plugin   ^1.8.1  →   ^2.8.0
+   - esbuild                   ^0.22.0  →  ^0.23.1
+   - eslint                    ^8.57.0  →  ^9.10.0
+   - eslint-plugin-import      ^2.29.1  →  ^2.30.0
+   - glob                      ^10.4.2  →  ^11.0.0
+
 
 ### [internet-monitor by BrianHepler](https://github.com/BrianHepler/internet-monitor)
 
@@ -4157,7 +4316,7 @@ Last update: 2024-09-17T23:27:10+02:00
 
 1. There is no `package.json`. We need this file to gather information about the module for the module list page.
 2. Recommendation: Found `XMLHttpRequest` in file `MMM-IPT.js`: Replace it with built-in fetch.
-3. Recommendation: Found `new Date()` in file `MMM-IPT.js`: Consider replacing it by `new Date(Date.now())`. It's helpfull for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
+3. Recommendation: Found `new Date()` in file `MMM-IPT.js`: Consider replacing it by `new Date(Date.now())`. It's helpful for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
 4. Typo: Found `Magic Mirror` in file `README.md`: Replace it with `MagicMirror²`.
 5. Warning: No LICENSE file.
 6. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
@@ -4186,7 +4345,7 @@ Last update: 2024-09-17T23:27:10+02:00
 3. Outdated: Found `MichMich/MagicMirror` in file `README.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
 4. Recommendation: The README seems not to have an update instruction (the word 'update' is missing). Please add one.
 5. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
-6. Recommendation: Found `new Date()` in file `node_helper.js`: Consider replacing it by `new Date(Date.now())`. It's helpfull for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
+6. Recommendation: Found `new Date()` in file `node_helper.js`: Consider replacing it by `new Date(Date.now())`. It's helpful for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
 7. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
 
 ### [MMM-ISS by mykle1](https://github.com/mykle1/MMM-ISS)
@@ -4197,6 +4356,13 @@ Last update: 2024-09-17T23:27:10+02:00
 3. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
 4. Deprecated: Found `require('request')` in file `node_helper.js`: Replace it with built-in fetch.
 5. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
+
+### [MMM-ISS-Live by KristjanESPERANTO](https://github.com/KristjanESPERANTO/MMM-ISS-Live)
+
+1. Information: There are updates for 2 dependencie(s):
+   - eslint    ^8.57.0  →  ^9.10.0
+   - prettier   ^3.2.5  →   ^3.3.3
+
 
 ### [MMM-ISS-Map by khassel](https://gitlab.com/khassel/MMM-ISS-Map)
 
@@ -4212,7 +4378,7 @@ Last update: 2024-09-17T23:27:10+02:00
 5. Recommendation: Found `XMLHttpRequest` in file `jquery-3.2.1.min.js`: Replace it with built-in fetch.
 6. Recommendation: Found local copy of `jquery.min.js`. Instead of a local copy, it would be better to add jQuery to the dependencies in `package.json`.
 7. Outdated: Local jQuery file `jquery.min.js` seems to be outdated. jQuery v3.7 or higher is recommended.
-8. Recommendation: Found `new Date()` in file `jquery.svg.min.js`: Consider replacing it by `new Date(Date.now())`. It's helpfull for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
+8. Recommendation: Found `new Date()` in file `jquery.svg.min.js`: Consider replacing it by `new Date(Date.now())`. It's helpful for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
 9. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
 10. Recommendation: Found `jshint` in file `node_helper.js`: Replace "jshint" by "eslint".
 11. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
@@ -4240,7 +4406,7 @@ Last update: 2024-09-17T23:27:10+02:00
 
 ### [MMM-Jast by jalibu](https://github.com/jalibu/MMM-Jast)
 
-1. Recommendation: Found `new Date()` in file `JastBackendUtils.ts`: Consider replacing it by `new Date(Date.now())`. It's helpfull for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
+1. Recommendation: Found `new Date()` in file `JastBackendUtils.ts`: Consider replacing it by `new Date(Date.now())`. It's helpful for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
 2. Recommendation: Replace eslintrc by new flat config.
 3. Information: There are updates for 10 dependencie(s):
    - @rollup/plugin-commonjs           ^25.0.7  →  ^26.0.1
@@ -4372,6 +4538,20 @@ Last update: 2024-09-17T23:27:10+02:00
 5. Recommendation: Found `jshint` in file `node_helper.js`: Replace "jshint" by "eslint".
 6. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
 
+### [MMM-JsonTable by timdows](https://github.com/timdows/MMM-JsonTable)
+
+1. Information: There are updates for 9 dependencie(s):
+   - @eslint/js                       ^8.57.0  →  ^9.10.0
+   - @pilaton/eslint-config-markdown   ^1.2.0  →   ^1.3.0
+   - @stylistic/eslint-plugin          ^1.7.0  →   ^2.8.0
+   - eslint                           ^8.57.0  →  ^9.10.0
+   - eslint-plugin-import             ^2.29.1  →  ^2.30.0
+   - eslint-plugin-jsonc              ^2.15.0  →  ^2.16.0
+   - globals                          ^15.0.0  →  ^15.9.0
+   - markdownlint-cli                 ^0.39.0  →  ^0.41.0
+   - prettier                          ^3.2.5  →   ^3.3.3
+
+
 ### [MMM-JsonValue by c-klinger](https://github.com/c-klinger/MMM-JsonValue)
 
 1. Typo: Found `Magic Mirror` in file `MMM-JsonValue.js`: Replace it with `MagicMirror²`.
@@ -4396,14 +4576,14 @@ Last update: 2024-09-17T23:27:10+02:00
 9. Recommendation: The README seems not to have an update instruction (the word 'update' is missing). Please add one.
 10. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
 11. Deprecated: Found `require("request")` in file `node_helper.js`: Replace it with built-in fetch.
-12. Recommendation: Found `new Date()` in file `node_helper.js`: Consider replacing it by `new Date(Date.now())`. It's helpfull for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
+12. Recommendation: Found `new Date()` in file `node_helper.js`: Consider replacing it by `new Date(Date.now())`. It's helpful for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
 13. Deprecated: Found `"grunt"` in file `package.json`: Grunt is practically unmaintained. Move on to something better.
 14. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
 
 ### [MMM-kalliope by kalliope-project](https://github.com/kalliope-project/MMM-kalliope)
 
 1. There is no `package.json`. We need this file to gather information about the module for the module list page.
-2. Recommendation: Found `new Date()` in file `MMM-kalliope.js`: Consider replacing it by `new Date(Date.now())`. It's helpfull for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
+2. Recommendation: Found `new Date()` in file `MMM-kalliope.js`: Consider replacing it by `new Date(Date.now())`. It's helpful for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
 3. Typo: Found `Magic Mirror` in file `README.md`: Replace it with `MagicMirror²`.
 4. Recommendation: The README seems not to have an update instruction (the word 'update' is missing). Please add one.
 5. Warning: No LICENSE file.
@@ -4438,6 +4618,17 @@ Last update: 2024-09-17T23:27:10+02:00
 4. Outdated: Found `MichMich/MagicMirror` in file `README.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
 5. Recommendation: The README seems not to have an update instruction (the word 'update' is missing). Please add one.
 6. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
+
+### [EXT-Keyboard by bugsounet](https://github.com/bugsounet/EXT-Keyboard)
+
+1. Information: There are updates for 6 dependencie(s):
+   - @eslint/js                ^8.57.0  →  ^9.10.0
+   - @stylistic/eslint-plugin   ^1.8.1  →   ^2.8.0
+   - esbuild                   ^0.22.0  →  ^0.23.1
+   - eslint                    ^8.57.0  →  ^9.10.0
+   - eslint-plugin-import      ^2.29.1  →  ^2.30.0
+   - glob                      ^10.4.2  →  ^11.0.0
+
 
 ### [KeyDisplayed by l0b5ter](https://github.com/l0b5ter/KeyDisplayed)
 
@@ -4569,6 +4760,18 @@ Last update: 2024-09-17T23:27:10+02:00
 7. Warning: No LICENSE file.
 8. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
 
+### [EXT-Librespot by bugsounet](https://github.com/bugsounet/EXT-Librespot)
+
+1. Information: There are updates for 7 dependencie(s):
+   - @eslint/js                ^8.57.0  →  ^9.10.0
+   - @stylistic/eslint-plugin   ^1.8.1  →   ^2.8.0
+   - esbuild                   ^0.22.0  →  ^0.23.1
+   - eslint                    ^8.57.0  →  ^9.10.0
+   - eslint-plugin-import      ^2.29.1  →  ^2.30.0
+   - glob                      ^10.4.2  →  ^11.0.0
+   - pm2                        ^5.4.1  →   ^5.4.2
+
+
 ### [MMM-LibrespotJava by l3d00m](https://github.com/l3d00m/MMM-LibrespotJava)
 
 0. This module is outdated: Abandoned. Repo has been archived at 2023-10-01.
@@ -4599,9 +4802,9 @@ Last update: 2024-09-17T23:27:10+02:00
 ### [MMM-Liquipedia-Matches by buxxi](https://github.com/buxxi/MMM-Liquipedia-Matches)
 
 1. There are no keywords in 'package.json'. We would use them as tags on the module list page.
-2. Recommendation: Found `new Date()` in file `MMM-Liquipedia-Matches.js`: Consider replacing it by `new Date(Date.now())`. It's helpfull for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
+2. Recommendation: Found `new Date()` in file `MMM-Liquipedia-Matches.js`: Consider replacing it by `new Date(Date.now())`. It's helpful for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
 3. Typo: Found `Magic Mirror` in file `README.md`: Replace it with `MagicMirror²`.
-4. Recommendation: Found `new Date()` in file `node_helper.js`: Consider replacing it by `new Date(Date.now())`. It's helpfull for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
+4. Recommendation: Found `new Date()` in file `node_helper.js`: Consider replacing it by `new Date(Date.now())`. It's helpful for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
 5. Typo: Found `Magic Mirror` in file `package.json`: Replace it with `MagicMirror²`.
 6. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
 
@@ -4609,7 +4812,7 @@ Last update: 2024-09-17T23:27:10+02:00
 
 1. There are no keywords in 'package.json'. We would use them as tags on the module list page.
 2. Recommendation: Found `axios` in file `MMM-Live-Stream-TV.js`: Replace it with built-in fetch.
-3. Recommendation: Found `new Date()` in file `MMM-Live-Stream-TV.js`: Consider replacing it by `new Date(Date.now())`. It's helpfull for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
+3. Recommendation: Found `new Date()` in file `MMM-Live-Stream-TV.js`: Consider replacing it by `new Date(Date.now())`. It's helpful for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
 4. Typo: Found `Magic Mirror` in file `README.md`: Replace it with `MagicMirror²`.
 5. Outdated: Found `MichMich/MagicMirror` in file `README.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
 6. Recommendation: The README seems not to have an update instruction (the word 'update' is missing). Please add one.
@@ -4617,7 +4820,7 @@ Last update: 2024-09-17T23:27:10+02:00
 8. Typo: Found `Magic Mirror` in file `package.json`: Replace it with `MagicMirror²`.
 9. Recommendation: Found `axios` in file `package.json`: Replace it with built-in fetch.
 10. Recommendation: Found `XMLHttpRequest` in file `response.json`: Replace it with built-in fetch.
-11. Recommendation: Found `new Date()` in file `response.json`: Consider replacing it by `new Date(Date.now())`. It's helpfull for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
+11. Recommendation: Found `new Date()` in file `response.json`: Consider replacing it by `new Date(Date.now())`. It's helpful for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
 12. Recommendation: Found `axios` in file `test-scrape.js`: Replace it with built-in fetch.
 13. Recommendation: Replace eslintrc by new flat config.
 
@@ -4641,14 +4844,14 @@ Last update: 2024-09-17T23:27:10+02:00
 6. Typo: Found `Magic Mirror` in file `module.ts`: Replace it with `MagicMirror²`.
 7. Typo: Found `Magic Mirror` in file `helper.ts`: Replace it with `MagicMirror²`.
 8. Typo: Found `Magic Mirror` in file `helper_impl.ts`: Replace it with `MagicMirror²`.
-9. Recommendation: Found `new Date()` in file `data-enhancer.ts`: Consider replacing it by `new Date(Date.now())`. It's helpfull for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
-10. Recommendation: Found `new Date()` in file `instance-store-keys.ts`: Consider replacing it by `new Date(Date.now())`. It's helpfull for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
-11. Recommendation: Found `new Date()` in file `instance-store.ts`: Consider replacing it by `new Date(Date.now())`. It's helpfull for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
-12. Recommendation: Found `new Date()` in file `reader.ts`: Consider replacing it by `new Date(Date.now())`. It's helpfull for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
-13. Recommendation: Found `new Date()` in file `stats.ts`: Consider replacing it by `new Date(Date.now())`. It's helpfull for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
-14. Recommendation: Found `new Date()` in file `teleinfo-processor.ts`: Consider replacing it by `new Date(Date.now())`. It's helpfull for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
+9. Recommendation: Found `new Date()` in file `data-enhancer.ts`: Consider replacing it by `new Date(Date.now())`. It's helpful for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
+10. Recommendation: Found `new Date()` in file `instance-store-keys.ts`: Consider replacing it by `new Date(Date.now())`. It's helpful for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
+11. Recommendation: Found `new Date()` in file `instance-store.ts`: Consider replacing it by `new Date(Date.now())`. It's helpful for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
+12. Recommendation: Found `new Date()` in file `reader.ts`: Consider replacing it by `new Date(Date.now())`. It's helpful for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
+13. Recommendation: Found `new Date()` in file `stats.ts`: Consider replacing it by `new Date(Date.now())`. It's helpful for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
+14. Recommendation: Found `new Date()` in file `teleinfo-processor.ts`: Consider replacing it by `new Date(Date.now())`. It's helpful for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
 15. Typo: Found `MagicMirror2` in file `init-mmm.ts`: Replace it with `MagicMirror²`.
-16. Recommendation: Found `new Date()` in file `teleinfo-reader.ts`: Consider replacing it by `new Date(Date.now())`. It's helpfull for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
+16. Recommendation: Found `new Date()` in file `teleinfo-reader.ts`: Consider replacing it by `new Date(Date.now())`. It's helpful for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
 17. Recommendation: Replace eslintrc by new flat config.
 
 ### [MMM-LoadShedding by qunu](https://github.com/qunu/MMM-LoadShedding)
@@ -4666,7 +4869,7 @@ Last update: 2024-09-17T23:27:10+02:00
 2. Recommendation: Found `axios` in file `ProviderDevelopment.md`: Replace it with built-in fetch.
 3. Recommendation: Found `XMLHttpRequest` in file `eventprovider.js`: Replace it with built-in fetch.
 4. Recommendation: Found `axios` in file `node_helper.js`: Replace it with built-in fetch.
-5. Recommendation: Found `new Date()` in file `google.js`: Consider replacing it by `new Date(Date.now())`. It's helpfull for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
+5. Recommendation: Found `new Date()` in file `google.js`: Consider replacing it by `new Date(Date.now())`. It's helpful for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
 6. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
 
 ### [MMM-LocalTemperature by glitch452](https://github.com/glitch452/MMM-LocalTemperature)
@@ -4674,14 +4877,14 @@ Last update: 2024-09-17T23:27:10+02:00
 1. There is no `package.json`. We need this file to gather information about the module for the module list page.
 2. Typo: Found `Magic Mirror` in file `MMM-LocalTemperature.css`: Replace it with `MagicMirror²`.
 3. Typo: Found `Magic Mirror` in file `MMM-LocalTemperature.js`: Replace it with `MagicMirror²`.
-4. Recommendation: Found `new Date()` in file `MMM-LocalTemperature.js`: Consider replacing it by `new Date(Date.now())`. It's helpfull for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
+4. Recommendation: Found `new Date()` in file `MMM-LocalTemperature.js`: Consider replacing it by `new Date(Date.now())`. It's helpful for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
 5. Outdated: Found `MichMich/MagicMirror` in file `README.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
 6. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
 7. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
 
 ### [MMM-LocalTransport by CFenner](https://github.com/CFenner/MMM-LocalTransport)
 
-1. Recommendation: Found `new Date()` in file `MMM-LocalTransport.js`: Consider replacing it by `new Date(Date.now())`. It's helpfull for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
+1. Recommendation: Found `new Date()` in file `MMM-LocalTransport.js`: Consider replacing it by `new Date(Date.now())`. It's helpful for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
 2. Deprecated: Found `require('request')` in file `node_helper.js`: Replace it with built-in fetch.
 3. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
 
@@ -4717,7 +4920,7 @@ Last update: 2024-09-17T23:27:10+02:00
 
 ### [MMM-LOLESPORTS-SCHEDULES by xadamxk](https://github.com/xadamxk/MMM-LOLESPORTS-SCHEDULES)
 
-1. Recommendation: Found `new Date()` in file `MMM-LOLESPORTS-SCHEDULES.js`: Consider replacing it by `new Date(Date.now())`. It's helpfull for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
+1. Recommendation: Found `new Date()` in file `MMM-LOLESPORTS-SCHEDULES.js`: Consider replacing it by `new Date(Date.now())`. It's helpful for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
 2. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
 3. Outdated: Found `MichMich/MagicMirror` in file `readme.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
 4. Warning: No LICENSE file.
@@ -4737,7 +4940,7 @@ Last update: 2024-09-17T23:27:10+02:00
 3. Recommendation: Found `jshint` in file `Gruntfile.js`: Replace "jshint" by "eslint".
 4. Typo: Found `Magic Mirror` in file `MMM-Looko2-aq.js`: Replace it with `MagicMirror²`.
 5. Recommendation: Found `XMLHttpRequest` in file `MMM-Looko2-aq.js`: Replace it with built-in fetch.
-6. Recommendation: Found `new Date()` in file `MMM-Looko2-aq.js`: Consider replacing it by `new Date(Date.now())`. It's helpfull for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
+6. Recommendation: Found `new Date()` in file `MMM-Looko2-aq.js`: Consider replacing it by `new Date(Date.now())`. It's helpful for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
 7. Outdated: Found `MichMich/MagicMirror` in file `README.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
 8. Recommendation: The README seems not to have an update instruction (the word 'update' is missing). Please add one.
 9. Recommendation: The README seems not to have an install instruction (the words 'install' or 'installation' are missing). Please add one.
@@ -4747,7 +4950,7 @@ Last update: 2024-09-17T23:27:10+02:00
 ### [MMM-Losung by Dobherrmann](https://github.com/Dobherrmann/MMM-Losung)
 
 1. There are no specific keywords in 'package.json'. We would use them as tags on the module list page. Add a few meaningful terms to the keywords in the package.json. Not just “magicmirror” or “module”.
-2. Recommendation: Found `new Date()` in file `MMM-Losung.js`: Consider replacing it by `new Date(Date.now())`. It's helpfull for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
+2. Recommendation: Found `new Date()` in file `MMM-Losung.js`: Consider replacing it by `new Date(Date.now())`. It's helpful for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
 3. Deprecated: Found `getYear()` in file `MMM-Losung.js`: Replace `getYear()` by `getFullYear()`.
 4. Outdated: Found `MichMich/MagicMirror` in file `README.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
 5. Recommendation: Found `'node-fetch'` in file `node_helper.js`: Replace it with built-in fetch.
@@ -4760,7 +4963,7 @@ Last update: 2024-09-17T23:27:10+02:00
 
 1. There is no `package.json`. We need this file to gather information about the module for the module list page.
 2. Recommendation: Found `uses: actions/checkout@v2` in file `codeql-analysis.yml`: Replace it with v4.
-3. Recommendation: Found `new Date()` in file `MMM-LothianBuses.js`: Consider replacing it by `new Date(Date.now())`. It's helpfull for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
+3. Recommendation: Found `new Date()` in file `MMM-LothianBuses.js`: Consider replacing it by `new Date(Date.now())`. It's helpful for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
 4. Typo: Found `[MagicMirror]` in file `README.md`: Replace it with `[MagicMirror²]`.
 5. Outdated: Found `MichMich/MagicMirror` in file `README.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
 6. Recommendation: The README seems not to have an update instruction (the word 'update' is missing). Please add one.
@@ -4792,7 +4995,7 @@ Last update: 2024-09-17T23:27:10+02:00
 1. There is no `package.json`. We need this file to gather information about the module for the module list page.
 2. Typo: Found `Magic Mirror` in file `README.md`: Replace it with `MagicMirror²`.
 3. Recommendation: The README seems not to have an install instruction (the words 'install' or 'installation' are missing). Please add one.
-4. Recommendation: Found `new Date()` in file `node_helper.js`: Consider replacing it by `new Date(Date.now())`. It's helpfull for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
+4. Recommendation: Found `new Date()` in file `node_helper.js`: Consider replacing it by `new Date(Date.now())`. It's helpful for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
 5. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
 
 ### [MMM-LunarDate by MMRIZE](https://github.com/MMRIZE/MMM-LunarDate)
@@ -4805,7 +5008,7 @@ Last update: 2024-09-17T23:27:10+02:00
 
 0. This module is outdated: Deprecated. Doesn't work anymore (API is down).
 1. Typo: Found `Magic Mirror` in file `MMM-Lunartic.js`: Replace it with `MagicMirror²`.
-2. Recommendation: Found `new Date()` in file `MMM-Lunartic.js`: Consider replacing it by `new Date(Date.now())`. It's helpfull for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
+2. Recommendation: Found `new Date()` in file `MMM-Lunartic.js`: Consider replacing it by `new Date(Date.now())`. It's helpful for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
 3. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
 4. Deprecated: Found `require('request')` in file `node_helper.js`: Replace it with built-in fetch.
 5. Deprecated: Found `stylelint-config-prettier` in file `package.json`: Update `stylelint` and remove `stylelint-config-prettier`.
@@ -4813,13 +5016,13 @@ Last update: 2024-09-17T23:27:10+02:00
 7. Outdated: Found `MichMich/MagicMirror` in file `package.json`: Replace it by `MagicMirrorOrg/MagicMirror`.
 8. Outdated: Found `husky install` in file `package.json`: Since husky v9 you may not need this anymore.
 9. Typo: Found `Magic Mirror` in file `MMM-Lunartic.js`: Replace it with `MagicMirror²`.
-10. Recommendation: Found `new Date()` in file `MMM-Lunartic.js`: Consider replacing it by `new Date(Date.now())`. It's helpfull for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
+10. Recommendation: Found `new Date()` in file `MMM-Lunartic.js`: Consider replacing it by `new Date(Date.now())`. It's helpful for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
 11. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
 
 ### [MMM-Luxembourg-Public-Transport by uxigene](https://github.com/uxigene/MMM-Luxembourg-Public-Transport)
 
 1. Typo: Found `Magic Mirror` in file `MMM-Luxembourg-Public-Transport.js`: Replace it with `MagicMirror²`.
-2. Recommendation: Found `new Date()` in file `MMM-Luxembourg-Public-Transport.js`: Consider replacing it by `new Date(Date.now())`. It's helpfull for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
+2. Recommendation: Found `new Date()` in file `MMM-Luxembourg-Public-Transport.js`: Consider replacing it by `new Date(Date.now())`. It's helpful for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
 3. Outdated: Found `MichMich/MagicMirror` in file `README.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
 4. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
 5. Recommendation: Found `require('https')` in file `node_helper.js`: Replace 'https' by 'node:https'.
@@ -4861,7 +5064,7 @@ Last update: 2024-09-17T23:27:10+02:00
 9. Recommendation: Found `require('https')` in file `alexa-authentication.js`: Replace 'https' by 'node:https'.
 10. Recommendation: Found `require('https')` in file `alexa-companion-service.js`: Replace 'https' by 'node:https'.
 11. Typo: Found `Magic Mirror` in file `pom.xml`: Replace it with `MagicMirror²`.
-12. Recommendation: Found `new Date()` in file `OAuth2AccessToken.java`: Consider replacing it by `new Date(Date.now())`. It's helpfull for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
+12. Recommendation: Found `new Date()` in file `OAuth2AccessToken.java`: Consider replacing it by `new Date(Date.now())`. It's helpful for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
 13. Typo: Found `Magic Mirror` in file `CompanionServiceAuthenticator.java`: Replace it with `MagicMirror²`.
 14. Deprecated: Found `"electron-rebuild"` in file `package.json`: Replace it with `@electron/rebuild`
 15. Typo: Found `Magic Mirror` in file `sphinx-model-generator.js`: Replace it with `MagicMirror²`.
@@ -4870,7 +5073,7 @@ Last update: 2024-09-17T23:27:10+02:00
 ### [MMM-MagicHexClock by Lavve](https://github.com/Lavve/MMM-MagicHexClock)
 
 1. There is no `package.json`. We need this file to gather information about the module for the module list page.
-2. Recommendation: Found `new Date()` in file `MMM-MagicHexClock.js`: Consider replacing it by `new Date(Date.now())`. It's helpfull for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
+2. Recommendation: Found `new Date()` in file `MMM-MagicHexClock.js`: Consider replacing it by `new Date(Date.now())`. It's helpful for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
 3. Outdated: Found `MichMich/MagicMirror` in file `README.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
 4. Recommendation: The README seems not to have an update instruction (the word 'update' is missing). Please add one.
 5. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
@@ -4890,7 +5093,7 @@ Last update: 2024-09-17T23:27:10+02:00
 10. Recommendation: The README seems not to have an update instruction (the word 'update' is missing). Please add one.
 11. Outdated: Found `MichMich/MagicMirror` in file `create_module.sh`: Replace it by `MagicMirrorOrg/MagicMirror`.
 12. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
-13. Recommendation: Found `new Date()` in file `node_helper.js`: Consider replacing it by `new Date(Date.now())`. It's helpfull for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
+13. Recommendation: Found `new Date()` in file `node_helper.js`: Consider replacing it by `new Date(Date.now())`. It's helpful for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
 14. Deprecated: Found `"grunt"` in file `package.json`: Grunt is practically unmaintained. Move on to something better.
 15. Outdated: Found `MichMich/MagicMirror` in file `README.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
 16. Deprecated: Found `"grunt"` in file `package.json`: Grunt is practically unmaintained. Move on to something better.
@@ -4916,7 +5119,7 @@ Last update: 2024-09-17T23:27:10+02:00
 2. Recommendation: Module name doesn't follow the recommended pattern (it doesn't start with `MMM-`). Consider renaming your module.
 3. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
 4. Deprecated: Found `require('request')` in file `node_helper.js`: Replace it with built-in fetch.
-5. Recommendation: Found `new Date()` in file `node_helper.js`: Consider replacing it by `new Date(Date.now())`. It's helpfull for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
+5. Recommendation: Found `new Date()` in file `node_helper.js`: Consider replacing it by `new Date(Date.now())`. It's helpful for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
 6. Typo: Found `Magic Mirror` in file `ping.js`: Replace it with `MagicMirror²`.
 7. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
 
@@ -4924,6 +5127,15 @@ Last update: 2024-09-17T23:27:10+02:00
 
 1. Recommendation: Module name doesn't follow the recommended pattern (it doesn't start with `MMM-`). Consider renaming your module.
 2. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
+
+### [MMM-MagicMover by Lavve](https://github.com/Lavve/MMM-MagicMover)
+
+1. Information: There are updates for 4 dependencie(s):
+   - @eslint/js                ^8.57.0  →  ^9.10.0
+   - @stylistic/eslint-plugin   ^1.7.0  →   ^2.8.0
+   - eslint                    ^8.57.0  →  ^9.10.0
+   - globals                   ^15.0.0  →  ^15.9.0
+
 
 ### [MMM-MagicSuperHero by Lavve](https://github.com/Lavve/MMM-MagicSuperHero)
 
@@ -5042,6 +5254,22 @@ Last update: 2024-09-17T23:27:10+02:00
 8. Recommendation: Found `jshint` in file `helpers.js`: Replace "jshint" by "eslint".
 9. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
 
+### [MMM-MealieMenu by zanix](https://github.com/zanix/MMM-MealieMenu)
+
+1. Information: There are updates for 11 dependencie(s):
+   - @commitlint/cli                  ^19.3.0  →   ^19.5.0
+   - @commitlint/config-conventional  ^19.2.2  →   ^19.5.0
+   - @eslint/js                       ^8.57.0  →   ^9.10.0
+   - @stylistic/eslint-plugin          ^2.7.2  →    ^2.8.0
+   - eslint                           ^8.57.0  →   ^9.10.0
+   - eslint-plugin-import             ^2.29.1  →   ^2.30.0
+   - husky                            ^9.0.11  →    ^9.1.6
+   - lint-staged                      ^15.2.9  →  ^15.2.10
+   - semantic-release                 ^24.1.0  →   ^24.1.1
+   - stylelint-config-standard        ^36.0.0  →   ^36.0.1
+   - stylelint-prettier                ^5.0.0  →    ^5.0.2
+
+
 ### [MMM-Memo by schnibel](https://github.com/schnibel/MMM-Memo)
 
 1. There is no `package.json`. We need this file to gather information about the module for the module list page.
@@ -5053,7 +5281,7 @@ Last update: 2024-09-17T23:27:10+02:00
 7. Outdated: Found `MichMich/MagicMirror` in file `README.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
 8. Recommendation: The README seems not to have an update instruction (the word 'update' is missing). Please add one.
 9. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
-10. Recommendation: Found `new Date()` in file `node_helper.js`: Consider replacing it by `new Date(Date.now())`. It's helpfull for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
+10. Recommendation: Found `new Date()` in file `node_helper.js`: Consider replacing it by `new Date(Date.now())`. It's helpful for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
 11. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
 
 ### [MMM-Meniny by andersarstrand](https://github.com/andersarstrand/MMM-Meniny)
@@ -5084,7 +5312,7 @@ Last update: 2024-09-17T23:27:10+02:00
 
 1. Typo: Found `Magic Mirror` in file `MMM-MercedesMe.js`: Replace it with `MagicMirror²`.
 2. Deprecated: Found `require('request')` in file `OAuth.js`: Replace it with built-in fetch.
-3. Recommendation: Found `new Date()` in file `OAuth.js`: Consider replacing it by `new Date(Date.now())`. It's helpfull for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
+3. Recommendation: Found `new Date()` in file `OAuth.js`: Consider replacing it by `new Date(Date.now())`. It's helpful for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
 4. Typo: Found `Magic Mirror` in file `README.md`: Replace it with `MagicMirror²`.
 5. Typo: Found `[MagicMirror]` in file `README.md`: Replace it with `[MagicMirror²]`.
 6. Typo: Found `<sup>2</sup>` in file `README.md`: Replace it with `²`.`.
@@ -5105,7 +5333,7 @@ Last update: 2024-09-17T23:27:10+02:00
 1. There is no `package.json`. We need this file to gather information about the module for the module list page.
 2. Typo: Found `Magic Mirror` in file `MMM-meteoblueCurrent.js`: Replace it with `MagicMirror²`.
 3. Recommendation: Found `XMLHttpRequest` in file `MMM-meteoblueCurrent.js`: Replace it with built-in fetch.
-4. Recommendation: Found `new Date()` in file `MMM-meteoblueCurrent.js`: Consider replacing it by `new Date(Date.now())`. It's helpfull for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
+4. Recommendation: Found `new Date()` in file `MMM-meteoblueCurrent.js`: Consider replacing it by `new Date(Date.now())`. It's helpful for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
 5. Outdated: Found `MichMich/MagicMirror` in file `MMM-meteoblueCurrent.js`: Replace it by `MagicMirrorOrg/MagicMirror`.
 6. Outdated: Found `MichMich/MagicMirror` in file `README.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
 7. Recommendation: The README seems not to have an update instruction (the word 'update' is missing). Please add one.
@@ -5113,13 +5341,24 @@ Last update: 2024-09-17T23:27:10+02:00
 9. Warning: No LICENSE file.
 10. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
 
+### [MMM-MeteoFrance by bugsounet](https://github.com/bugsounet/MMM-MeteoFrance)
+
+1. Information: There are updates for 6 dependencie(s):
+   - @eslint/js                ^8.57.0  →  ^9.10.0
+   - @stylistic/eslint-plugin   ^1.8.1  →   ^2.8.0
+   - esbuild                   ^0.22.0  →  ^0.23.1
+   - eslint                    ^8.57.0  →  ^9.10.0
+   - eslint-plugin-import      ^2.29.1  →  ^2.30.0
+   - glob                      ^10.4.2  →  ^11.0.0
+
+
 ### [MMM-MHZ19 by awitwicki](https://github.com/awitwicki/MMM-MHZ19)
 
 1. `package.json` issue: No description
 2. `package.json` issue: No repository field.
 3. There are no keywords in 'package.json'. We would use them as tags on the module list page.
 4. Typo: Found `Magic Mirror` in file `MMM-MHZ19.js`: Replace it with `MagicMirror²`.
-5. Recommendation: Found `new Date()` in file `MMM-MHZ19.js`: Consider replacing it by `new Date(Date.now())`. It's helpfull for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
+5. Recommendation: Found `new Date()` in file `MMM-MHZ19.js`: Consider replacing it by `new Date(Date.now())`. It's helpful for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
 6. Outdated: Found `MichMich/MagicMirror` in file `README.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
 7. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
 8. Warning: No LICENSE file.
@@ -5149,7 +5388,7 @@ Last update: 2024-09-17T23:27:10+02:00
 1. There is no `package.json`. We need this file to gather information about the module for the module list page.
 2. Outdated: Found `MichMich/MagicMirror` in file `README.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
 3. Deprecated: Found `require("request")` in file `mieleathome.js`: Replace it with built-in fetch.
-4. Recommendation: Found `new Date()` in file `mieleathome.js`: Consider replacing it by `new Date(Date.now())`. It's helpfull for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
+4. Recommendation: Found `new Date()` in file `mieleathome.js`: Consider replacing it by `new Date(Date.now())`. It's helpful for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
 5. Warning: No LICENSE file.
 6. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
 
@@ -5159,7 +5398,7 @@ Last update: 2024-09-17T23:27:10+02:00
 2. Typo: Found `Magic Mirror` in file `MMM-MinecraftStatus.js`: Replace it with `MagicMirror²`.
 3. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
 4. Recommendation: Found `jshint` in file `node_helper.js`: Replace "jshint" by "eslint".
-5. Recommendation: Found `new Date()` in file `node_helper.js`: Consider replacing it by `new Date(Date.now())`. It's helpfull for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
+5. Recommendation: Found `new Date()` in file `node_helper.js`: Consider replacing it by `new Date(Date.now())`. It's helpful for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
 6. Deprecated: Found `"electron-rebuild"` in file `package.json`: Replace it with `@electron/rebuild`
 7. Deprecated: Found `"grunt"` in file `package.json`: Grunt is practically unmaintained. Move on to something better.
 8. Recommendation: Replace eslintrc by new flat config.
@@ -5173,7 +5412,7 @@ Last update: 2024-09-17T23:27:10+02:00
 
 1. No image found.
 2. Typo: Found `Magic Mirror` in file `MMM-MirrorMirrorOnTheWall.js`: Replace it with `MagicMirror²`.
-3. Recommendation: Found `new Date()` in file `MirrorMirror.js`: Consider replacing it by `new Date(Date.now())`. It's helpfull for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
+3. Recommendation: Found `new Date()` in file `MirrorMirror.js`: Consider replacing it by `new Date(Date.now())`. It's helpful for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
 4. Typo: Found `Magic Mirror` in file `README.md`: Replace it with `MagicMirror²`.
 5. Typo: Found `[MagicMirror]` in file `README.md`: Replace it with `[MagicMirror²]`.
 6. Outdated: Found `MichMich/MagicMirror` in file `README.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
@@ -5183,7 +5422,7 @@ Last update: 2024-09-17T23:27:10+02:00
 
 ### [MMM-MktIndex by thess](https://github.com/thess/MMM-MktIndex)
 
-1. Recommendation: Found `new Date()` in file `MMM-MktIndex.js`: Consider replacing it by `new Date(Date.now())`. It's helpfull for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
+1. Recommendation: Found `new Date()` in file `MMM-MktIndex.js`: Consider replacing it by `new Date(Date.now())`. It's helpful for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
 2. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
 3. Information: There are updates for 1 dependencie(s):
    - yahoo-finance2  ^2.11.3  →  ^2.12.2
@@ -5252,9 +5491,9 @@ Last update: 2024-09-17T23:27:10+02:00
 5. Recommendation: The README seems not to have an update instruction (the word 'update' is missing). Please add one.
 6. Recommendation: The README seems not to have an install instruction (the words 'install' or 'installation' are missing). Please add one.
 7. Typo: Found `Magic Mirror` in file `mm-tkl-timetable.js`: Replace it with `MagicMirror²`.
-8. Recommendation: Found `new Date()` in file `mm-tkl-timetable.js`: Consider replacing it by `new Date(Date.now())`. It's helpfull for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
+8. Recommendation: Found `new Date()` in file `mm-tkl-timetable.js`: Consider replacing it by `new Date(Date.now())`. It's helpful for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
 9. Recommendation: Found `require('https')` in file `node_helper.js`: Replace 'https' by 'node:https'.
-10. Recommendation: Found `new Date()` in file `node_helper.js`: Consider replacing it by `new Date(Date.now())`. It's helpfull for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
+10. Recommendation: Found `new Date()` in file `node_helper.js`: Consider replacing it by `new Date(Date.now())`. It's helpful for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
 11. Warning: No LICENSE file.
 12. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
 
@@ -5292,10 +5531,10 @@ Last update: 2024-09-17T23:27:10+02:00
 2. Recommendation: Found `uses: actions/checkout@v3` in file `qc-check.yml`: Replace it with v4.
 3. Recommendation: Found `uses: actions/setup-node@v3` in file `qc-check.yml`: Replace it with v4.
 4. Typo: Found `Magic Mirror` in file `MMM-CTA.js`: Replace it with `MagicMirror²`.
-5. Recommendation: Found `new Date()` in file `MMM-CTA.js`: Consider replacing it by `new Date(Date.now())`. It's helpfull for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
+5. Recommendation: Found `new Date()` in file `MMM-CTA.js`: Consider replacing it by `new Date(Date.now())`. It's helpful for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
 6. Outdated: Found `MichMich/MagicMirror` in file `README.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
 7. Recommendation: Found `'node-fetch'` in file `node-fetch.js`: Replace it with built-in fetch.
-8. Recommendation: Found `new Date()` in file `MMM-CTA.spec.js`: Consider replacing it by `new Date(Date.now())`. It's helpfull for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
+8. Recommendation: Found `new Date()` in file `MMM-CTA.spec.js`: Consider replacing it by `new Date(Date.now())`. It's helpful for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
 9. Recommendation: Found `'node-fetch'` in file `node_helper.spec.js`: Replace it with built-in fetch.
 10. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
 11. Recommendation: Found `'node-fetch'` in file `node_helper.js`: Replace it with built-in fetch.
@@ -5323,7 +5562,7 @@ Last update: 2024-09-17T23:27:10+02:00
 4. Typo: Found `MagicMirror2` in file `README.md`: Replace it with `MagicMirror²`.
 5. Outdated: Found `MichMich/MagicMirror` in file `README.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
 6. Recommendation: The README seems not to have an update instruction (the word 'update' is missing). Please add one.
-7. Recommendation: Found `new Date()` in file `mmm-food2fork-recipes.js`: Consider replacing it by `new Date(Date.now())`. It's helpfull for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
+7. Recommendation: Found `new Date()` in file `mmm-food2fork-recipes.js`: Consider replacing it by `new Date(Date.now())`. It's helpful for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
 8. Deprecated: Found `require('request')` in file `node_helper.js`: Replace it with built-in fetch.
 9. Warning: No LICENSE file.
 10. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
@@ -5370,7 +5609,7 @@ Last update: 2024-09-17T23:27:10+02:00
 7. Outdated: Found `MichMich/MagicMirror` in file `README.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
 8. Deprecated: Found `require('request')` in file `node_helper.js`: Replace it with built-in fetch.
 9. Recommendation: Found `require('https')` in file `node_helper.js`: Replace 'https' by 'node:https'.
-10. Recommendation: Found `new Date()` in file `node_helper.js`: Consider replacing it by `new Date(Date.now())`. It's helpfull for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
+10. Recommendation: Found `new Date()` in file `node_helper.js`: Consider replacing it by `new Date(Date.now())`. It's helpful for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
 11. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
 
 ### [mmm-nest-cameras by michael5r](https://github.com/michael5r/mmm-nest-cameras)
@@ -5381,7 +5620,7 @@ Last update: 2024-09-17T23:27:10+02:00
 4. Typo: Found `[MagicMirror]` in file `README.md`: Replace it with `[MagicMirror²]`.
 5. Outdated: Found `MichMich/MagicMirror` in file `README.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
 6. Typo: Found `Magic Mirror` in file `mmm-nest-cameras.js`: Replace it with `MagicMirror²`.
-7. Recommendation: Found `new Date()` in file `mmm-nest-cameras.js`: Consider replacing it by `new Date(Date.now())`. It's helpfull for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
+7. Recommendation: Found `new Date()` in file `mmm-nest-cameras.js`: Consider replacing it by `new Date(Date.now())`. It's helpful for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
 8. Deprecated: Found `require('request')` in file `node_helper.js`: Replace it with built-in fetch.
 9. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
 
@@ -5394,7 +5633,7 @@ Last update: 2024-09-17T23:27:10+02:00
 5. Outdated: Found `MichMich/MagicMirror` in file `README.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
 6. Typo: Found `Magic Mirror` in file `mmm-nest-status.js`: Replace it with `MagicMirror²`.
 7. Recommendation: Found `axios` in file `node_helper.js`: Replace it with built-in fetch.
-8. Recommendation: Found `new Date()` in file `node_helper.js`: Consider replacing it by `new Date(Date.now())`. It's helpfull for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
+8. Recommendation: Found `new Date()` in file `node_helper.js`: Consider replacing it by `new Date(Date.now())`. It's helpful for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
 9. Recommendation: Found `axios` in file `package.json`: Replace it with built-in fetch.
 10. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
 
@@ -5402,9 +5641,9 @@ Last update: 2024-09-17T23:27:10+02:00
 
 1. Recommendation: Module name doesn't follow the recommended pattern (it doesn't start with `MMM-`). Consider renaming your module.
 2. Recommendation: Found `jshint` in file `canvasjs.min.js`: Replace "jshint" by "eslint".
-3. Recommendation: Found `new Date()` in file `mmm-nordic-electrical-spot-prices.js`: Consider replacing it by `new Date(Date.now())`. It's helpfull for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
+3. Recommendation: Found `new Date()` in file `mmm-nordic-electrical-spot-prices.js`: Consider replacing it by `new Date(Date.now())`. It's helpful for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
 4. Deprecated: Found `require('request')` in file `node_helper.js`: Replace it with built-in fetch.
-5. Recommendation: Found `new Date()` in file `node_helper.js`: Consider replacing it by `new Date(Date.now())`. It's helpfull for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
+5. Recommendation: Found `new Date()` in file `node_helper.js`: Consider replacing it by `new Date(Date.now())`. It's helpful for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
 6. Typo: Found `Magic Mirror` in file `package.json`: Replace it with `MagicMirror²`.
 7. Warning: No LICENSE file.
 8. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
@@ -5418,7 +5657,7 @@ Last update: 2024-09-17T23:27:10+02:00
 5. Outdated: Found `MichMich/MagicMirror` in file `README.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
 6. Deprecated: Found `new Buffer(` in file `node_helper.js`: This is deprecated. Please update: <https://nodejs.org/api/buffer.html>.
 7. Deprecated: Found `require("request")` in file `node_helper.js`: Replace it with built-in fetch.
-8. Recommendation: Found `new Date()` in file `node_helper.js`: Consider replacing it by `new Date(Date.now())`. It's helpfull for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
+8. Recommendation: Found `new Date()` in file `node_helper.js`: Consider replacing it by `new Date(Date.now())`. It's helpful for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
 9. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
 
 ### [mmm-pins by ptrbld](https://github.com/ptrbld/mmm-pins)
@@ -5441,8 +5680,8 @@ Last update: 2024-09-17T23:27:10+02:00
 3. There are no specific keywords in 'package.json'. We would use them as tags on the module list page. Add a few meaningful terms to the keywords in the package.json. Not just “magicmirror” or “module”.
 4. No compatible or wrong license field in 'package.json' or LICENSE file. Without that, we can't use an image.
 5. Recommendation: Module name doesn't follow the recommended pattern (it doesn't start with `MMM-`). Consider renaming your module.
-6. Recommendation: Found `new Date()` in file `MMM-RATP.js`: Consider replacing it by `new Date(Date.now())`. It's helpfull for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
-7. Recommendation: Found `new Date()` in file `ratp_helper.js`: Consider replacing it by `new Date(Date.now())`. It's helpfull for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
+6. Recommendation: Found `new Date()` in file `MMM-RATP.js`: Consider replacing it by `new Date(Date.now())`. It's helpful for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
+7. Recommendation: Found `new Date()` in file `ratp_helper.js`: Consider replacing it by `new Date(Date.now())`. It's helpful for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
 8. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
 
 ### [mmm-stocks by elaniobro](https://github.com/elaniobro/mmm-stocks)
@@ -5494,7 +5733,7 @@ Last update: 2024-09-17T23:27:10+02:00
 
 1. There is no `package.json`. We need this file to gather information about the module for the module list page.
 2. Recommendation: Module name doesn't follow the recommended pattern (it doesn't start with `MMM-`). Consider renaming your module.
-3. Recommendation: Found `new Date()` in file `node_helper.js`: Consider replacing it by `new Date(Date.now())`. It's helpfull for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
+3. Recommendation: Found `new Date()` in file `node_helper.js`: Consider replacing it by `new Date(Date.now())`. It's helpful for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
 4. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
 
 ### [mmm-uk-pollen-forecast by szech](https://github.com/szech/mmm-uk-pollen-forecast)
@@ -5503,7 +5742,7 @@ Last update: 2024-09-17T23:27:10+02:00
 2. Recommendation: Module name doesn't follow the recommended pattern (it doesn't start with `MMM-`). Consider renaming your module.
 3. Typo: Found `<sup>2</sup>` in file `README.md`: Replace it with `²`.`.
 4. Deprecated: Found `require('request')` in file `node_helper.js`: Replace it with built-in fetch.
-5. Recommendation: Found `new Date()` in file `node_helper.js`: Consider replacing it by `new Date(Date.now())`. It's helpfull for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
+5. Recommendation: Found `new Date()` in file `node_helper.js`: Consider replacing it by `new Date(Date.now())`. It's helpful for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
 6. Typo: Found `<sup>2</sup>` in file `package.json`: Replace it with `²`.`.
 7. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
 
@@ -5513,7 +5752,7 @@ Last update: 2024-09-17T23:27:10+02:00
 2. Recommendation: Module name doesn't follow the recommended pattern (it doesn't start with `MMM-`). Consider renaming your module.
 3. Typo: Found `Magic Mirror` in file `MMM-UVIndex.js`: Replace it with `MagicMirror²`.
 4. Recommendation: Found `XMLHttpRequest` in file `MMM-UVIndex.js`: Replace it with built-in fetch.
-5. Recommendation: Found `new Date()` in file `MMM-UVIndex.js`: Consider replacing it by `new Date(Date.now())`. It's helpfull for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
+5. Recommendation: Found `new Date()` in file `MMM-UVIndex.js`: Consider replacing it by `new Date(Date.now())`. It's helpful for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
 6. Recommendation: The README seems not to have an install instruction (the words 'install' or 'installation' are missing). Please add one.
 7. Warning: No LICENSE file.
 8. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
@@ -5528,7 +5767,7 @@ Last update: 2024-09-17T23:27:10+02:00
 6. Outdated: Found `MichMich/MagicMirror` in file `README.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
 7. Deprecated: Found `require('request')` in file `node_helper.js`: Replace it with built-in fetch.
 8. Recommendation: Found `require('https')` in file `node_helper.js`: Replace 'https' by 'node:https'.
-9. Recommendation: Found `new Date()` in file `node_helper.js`: Consider replacing it by `new Date(Date.now())`. It's helpfull for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
+9. Recommendation: Found `new Date()` in file `node_helper.js`: Consider replacing it by `new Date(Date.now())`. It's helpful for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
 10. Typo: Found `MagicMirror2` in file `package.json`: Replace it with `MagicMirror²`.
 11. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
 
@@ -5548,7 +5787,7 @@ Last update: 2024-09-17T23:27:10+02:00
 
 1. There is no `package.json`. We need this file to gather information about the module for the module list page.
 2. Recommendation: Module name doesn't follow the recommended pattern (it doesn't start with `MMM-`). Consider renaming your module.
-3. Recommendation: Found `new Date()` in file `log-stream-viewer.component.ts`: Consider replacing it by `new Date(Date.now())`. It's helpfull for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
+3. Recommendation: Found `new Date()` in file `log-stream-viewer.component.ts`: Consider replacing it by `new Date(Date.now())`. It's helpful for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
 4. Recommendation: Replace eslintrc by new flat config.
 
 ### [MMM-mmpm by Bee-Mar](https://github.com/Bee-Mar/MMM-mmpm)
@@ -5598,7 +5837,7 @@ Last update: 2024-09-17T23:27:10+02:00
 4. Typo: Found `Magic Mirror` in file `README.md`: Replace it with `MagicMirror²`.
 5. Outdated: Found `MichMich/MagicMirror` in file `README.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
 6. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
-7. Recommendation: Found `new Date()` in file `node_helper.js`: Consider replacing it by `new Date(Date.now())`. It's helpfull for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
+7. Recommendation: Found `new Date()` in file `node_helper.js`: Consider replacing it by `new Date(Date.now())`. It's helpful for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
 8. Recommendation: Replace eslintrc by new flat config.
 
 ### [MMM-ModulesGroupsRotation by mezderman](https://github.com/mezderman/MMM-ModulesGroupsRotation)
@@ -5617,13 +5856,13 @@ Last update: 2024-09-17T23:27:10+02:00
 ### [MMM-MonthlyCalendar by kolbyjack](https://github.com/kolbyjack/MMM-MonthlyCalendar)
 
 1. There is no `package.json`. We need this file to gather information about the module for the module list page.
-2. Recommendation: Found `new Date()` in file `MMM-MonthlyCalendar.js`: Consider replacing it by `new Date(Date.now())`. It's helpfull for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
+2. Recommendation: Found `new Date()` in file `MMM-MonthlyCalendar.js`: Consider replacing it by `new Date(Date.now())`. It's helpful for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
 3. Recommendation: The README seems not to have an update instruction (the word 'update' is missing). Please add one.
 4. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
 
 ### [MMM-Moon by EnderFlop](https://github.com/EnderFlop/MMM-Moon)
 
-1. Recommendation: Found `new Date()` in file `MMM-Moon.js`: Consider replacing it by `new Date(Date.now())`. It's helpfull for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
+1. Recommendation: Found `new Date()` in file `MMM-Moon.js`: Consider replacing it by `new Date(Date.now())`. It's helpful for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
 2. Outdated: Found `MichMich/MagicMirror` in file `README.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
 3. Recommendation: The README seems not to have an update instruction (the word 'update' is missing). Please add one.
 4. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
@@ -5692,7 +5931,7 @@ Last update: 2024-09-17T23:27:10+02:00
 0. This module is outdated: Abandoned. No reactions to issues since years. No installation instructions.
 1. There is no `package.json`. We need this file to gather information about the module for the module list page.
 2. Recommendation: Module name doesn't follow the recommended pattern (it doesn't start with `MMM-`). Consider renaming your module.
-3. Recommendation: Found `new Date()` in file `motiondetector.js`: Consider replacing it by `new Date(Date.now())`. It's helpfull for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
+3. Recommendation: Found `new Date()` in file `motiondetector.js`: Consider replacing it by `new Date(Date.now())`. It's helpful for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
 4. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
 5. Warning: No LICENSE file.
 6. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
@@ -5700,7 +5939,7 @@ Last update: 2024-09-17T23:27:10+02:00
 ### [MMM-MotionDetector by rejas](https://github.com/rejas/MMM-MotionDetector)
 
 1. No image found.
-2. Recommendation: Found `new Date()` in file `MMM-MotionDetector.js`: Consider replacing it by `new Date(Date.now())`. It's helpfull for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
+2. Recommendation: Found `new Date()` in file `MMM-MotionDetector.js`: Consider replacing it by `new Date(Date.now())`. It's helpful for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
 3. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
 
 ### [MMM-MotionDisplay by pjestico](https://github.com/pjestico/MMM-MotionDisplay)
@@ -5711,7 +5950,7 @@ Last update: 2024-09-17T23:27:10+02:00
 4. There are no keywords in 'package.json'. We would use them as tags on the module list page.
 5. Recommendation: The README seems not to have an update instruction (the word 'update' is missing). Please add one.
 6. Deprecated: Found `require('request')` in file `node_helper.js`: Replace it with built-in fetch.
-7. Recommendation: Found `new Date()` in file `node_helper.js`: Consider replacing it by `new Date(Date.now())`. It's helpfull for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
+7. Recommendation: Found `new Date()` in file `node_helper.js`: Consider replacing it by `new Date(Date.now())`. It's helpful for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
 8. Warning: No LICENSE file.
 9. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
 
@@ -5776,7 +6015,7 @@ Last update: 2024-09-17T23:27:10+02:00
 3. Typo: Found `Magic Mirror` in file `README.md`: Replace it with `MagicMirror²`.
 4. Outdated: Found `MichMich/MagicMirror` in file `README.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
 5. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
-6. Recommendation: Found `new Date()` in file `node_helper.js`: Consider replacing it by `new Date(Date.now())`. It's helpfull for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
+6. Recommendation: Found `new Date()` in file `node_helper.js`: Consider replacing it by `new Date(Date.now())`. It's helpful for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
 7. Deprecated: Found `"electron-rebuild"` in file `package.json`: Replace it with `@electron/rebuild`
 8. Warning: No LICENSE file.
 9. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
@@ -5794,7 +6033,7 @@ Last update: 2024-09-17T23:27:10+02:00
 2. Typo: Found `[MagicMirror]` in file `README.md`: Replace it with `[MagicMirror²]`.
 3. Outdated: Found `MichMich/MagicMirror` in file `README.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
 4. Recommendation: The README seems not to have an update instruction (the word 'update' is missing). Please add one.
-5. Recommendation: Found `new Date()` in file `module.test.js`: Consider replacing it by `new Date(Date.now())`. It's helpfull for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
+5. Recommendation: Found `new Date()` in file `module.test.js`: Consider replacing it by `new Date(Date.now())`. It's helpful for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
 6. Recommendation: Replace eslintrc by new flat config.
 
 ### [MMM-MQTT by jupadin](https://github.com/jupadin/MMM-MQTT)
@@ -5872,7 +6111,7 @@ Last update: 2024-09-17T23:27:10+02:00
 
 ### [MMM-Multimonth by BKeyport](https://github.com/BKeyport/MMM-Multimonth)
 
-1. Recommendation: Found `new Date()` in file `MMM-Multimonth.js`: Consider replacing it by `new Date(Date.now())`. It's helpfull for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
+1. Recommendation: Found `new Date()` in file `MMM-Multimonth.js`: Consider replacing it by `new Date(Date.now())`. It's helpful for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
 2. Typo: Found `Magic Mirror` in file `README.md`: Replace it with `MagicMirror²`.
 3. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
 
@@ -5898,17 +6137,29 @@ Last update: 2024-09-17T23:27:10+02:00
 3. Typo: Found `Magic Mirror` in file `package.json`: Replace it with `MagicMirror²`.
 4. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
 
+### [EXT-MusicPlayer by bugsounet](https://github.com/bugsounet/EXT-MusicPlayer)
+
+1. Information: There are updates for 7 dependencie(s):
+   - @eslint/js                ^8.57.0  →  ^9.10.0
+   - @stylistic/eslint-plugin   ^1.8.1  →   ^2.8.0
+   - esbuild                   ^0.22.0  →  ^0.23.1
+   - eslint                    ^8.57.0  →  ^9.10.0
+   - eslint-plugin-import      ^2.29.1  →  ^2.30.0
+   - glob                      ^10.4.2  →  ^11.0.0
+   - usb                       ^2.13.0  →  ^2.14.0
+
+
 ### [MMM-mvgmunich by mrVragec](https://github.com/mrVragec/MMM-mvgmunich)
 
 1. `package.json` issue: No description
 2. Recommendation: Found `jshint` in file `Gruntfile.js`: Replace "jshint" by "eslint".
 3. Outdated: Found `MichMich/MagicMirror` in file `README.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
 4. Typo: Found `Magic Mirror` in file `mvgmunich.js`: Replace it with `MagicMirror²`.
-5. Recommendation: Found `new Date()` in file `mvgmunich.js`: Consider replacing it by `new Date(Date.now())`. It's helpfull for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
+5. Recommendation: Found `new Date()` in file `mvgmunich.js`: Consider replacing it by `new Date(Date.now())`. It's helpful for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
 6. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
 7. Deprecated: Found `require("request")` in file `node_helper.js`: Replace it with built-in fetch.
 8. Recommendation: Found `XMLHttpRequest` in file `node_helper.js`: Replace it with built-in fetch.
-9. Recommendation: Found `new Date()` in file `node_helper.js`: Consider replacing it by `new Date(Date.now())`. It's helpfull for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
+9. Recommendation: Found `new Date()` in file `node_helper.js`: Consider replacing it by `new Date(Date.now())`. It's helpful for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
 10. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
 
 ### [MMM-MVVWiesty by wiesty](https://github.com/wiesty/MMM-MVVWiesty)
@@ -5929,9 +6180,9 @@ Last update: 2024-09-17T23:27:10+02:00
 
 1. There is no `package.json`. We need this file to gather information about the module for the module list page.
 2. Issues are not enabled in the GitHub repository. So users cannot report bugs. Please enable issues in your repo.
-3. Recommendation: Found `new Date()` in file `MMM-MyCalendar.js`: Consider replacing it by `new Date(Date.now())`. It's helpfull for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
+3. Recommendation: Found `new Date()` in file `MMM-MyCalendar.js`: Consider replacing it by `new Date(Date.now())`. It's helpful for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
 4. Recommendation: Found `require("https")` in file `calendarfetcher.js`: Replace "https" by "node:https".
-5. Recommendation: Found `new Date()` in file `calendarutils.js`: Consider replacing it by `new Date(Date.now())`. It's helpfull for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
+5. Recommendation: Found `new Date()` in file `calendarutils.js`: Consider replacing it by `new Date(Date.now())`. It's helpful for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
 6. Deprecated: Found `require('request')` in file `node-ical.js`: Replace it with built-in fetch.
 7. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
 
@@ -5939,7 +6190,7 @@ Last update: 2024-09-17T23:27:10+02:00
 
 1. Recommendation: Found `jshint` in file `Gruntfile.js`: Replace "jshint" by "eslint".
 2. Typo: Found `Magic Mirror` in file `MMM-MyCommute.js`: Replace it with `MagicMirror²`.
-3. Recommendation: Found `new Date()` in file `MMM-MyCommute.js`: Consider replacing it by `new Date(Date.now())`. It's helpfull for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
+3. Recommendation: Found `new Date()` in file `MMM-MyCommute.js`: Consider replacing it by `new Date(Date.now())`. It's helpful for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
 4. Typo: Found `MagicMirror2` in file `README.md`: Replace it with `MagicMirror²`.
 5. Typo: Found `[MagicMirror]` in file `README.md`: Replace it with `[MagicMirror²]`.
 6. Outdated: Found `MichMich/MagicMirror` in file `README.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
@@ -5998,7 +6249,7 @@ Last update: 2024-09-17T23:27:10+02:00
 ### [MMM-MyPrayerTimes by htilburgs](https://github.com/htilburgs/MMM-MyPrayerTimes)
 
 1. An error occurred while getting information from 'package.json': Error: Invalid version: "1.1"
-2. Recommendation: Found `new Date()` in file `MMM-MyPrayerTimes.js`: Consider replacing it by `new Date(Date.now())`. It's helpfull for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
+2. Recommendation: Found `new Date()` in file `MMM-MyPrayerTimes.js`: Consider replacing it by `new Date(Date.now())`. It's helpful for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
 3. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
 4. Information: There are updates for 2 dependencie(s):
    - moment           ^2.24.0  →  ^2.30.1
@@ -6055,7 +6306,7 @@ Last update: 2024-09-17T23:27:10+02:00
 ### [MMM-MyStudyLife by ethanpartida](https://github.com/ethanpartida/MMM-MyStudyLife)
 
 1. Typo: Found `Magic Mirror` in file `MMM-MyStudyLife.js`: Replace it with `MagicMirror²`.
-2. Recommendation: Found `new Date()` in file `MMM-MyStudyLife.js`: Consider replacing it by `new Date(Date.now())`. It's helpfull for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
+2. Recommendation: Found `new Date()` in file `MMM-MyStudyLife.js`: Consider replacing it by `new Date(Date.now())`. It's helpful for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
 3. Typo: Found `MagicMirror2` in file `README.md`: Replace it with `MagicMirror²`.
 4. Typo: Found `[MagicMirror]` in file `README.md`: Replace it with `[MagicMirror²]`.
 5. Outdated: Found `MichMich/MagicMirror` in file `README.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
@@ -6136,7 +6387,7 @@ Last update: 2024-09-17T23:27:10+02:00
 
 1. Issues are not enabled in the GitHub repository. So users cannot report bugs. Please enable issues in your repo.
 2. Typo: Found `Magic Mirror` in file `MMM-MyWeather.js`: Replace it with `MagicMirror²`.
-3. Recommendation: Found `new Date()` in file `MMM-MyWeather.js`: Consider replacing it by `new Date(Date.now())`. It's helpfull for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
+3. Recommendation: Found `new Date()` in file `MMM-MyWeather.js`: Consider replacing it by `new Date(Date.now())`. It's helpful for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
 4. Outdated: Found `MichMich/MagicMirror` in file `MMM-MyWeather.js`: Replace it by `MagicMirrorOrg/MagicMirror`.
 5. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
 6. Deprecated: Found `require('request')` in file `node_helper.js`: Replace it with built-in fetch.
@@ -6166,7 +6417,7 @@ Last update: 2024-09-17T23:27:10+02:00
 
 1. There is no `package.json`. We need this file to gather information about the module for the module list page.
 2. Recommendation: Found `XMLHttpRequest` in file `MMM-NameDay.js`: Replace it with built-in fetch.
-3. Recommendation: Found `new Date()` in file `MMM-NameDay.js`: Consider replacing it by `new Date(Date.now())`. It's helpfull for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
+3. Recommendation: Found `new Date()` in file `MMM-NameDay.js`: Consider replacing it by `new Date(Date.now())`. It's helpful for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
 4. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
 
 ### [MMM-Namnsdag by Menturan](https://github.com/Menturan/MMM-Namnsdag)
@@ -6184,9 +6435,9 @@ Last update: 2024-09-17T23:27:10+02:00
 ### [MMM-Nantes-TAN by normyx](https://github.com/normyx/MMM-Nantes-TAN)
 
 1. Typo: Found `Magic Mirror` in file `MMM-Nantes-TAN.js`: Replace it with `MagicMirror²`.
-2. Recommendation: Found `new Date()` in file `MMM-Nantes-TAN.js`: Consider replacing it by `new Date(Date.now())`. It's helpfull for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
+2. Recommendation: Found `new Date()` in file `MMM-Nantes-TAN.js`: Consider replacing it by `new Date(Date.now())`. It's helpful for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
 3. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
-4. Recommendation: Found `new Date()` in file `node_helper.js`: Consider replacing it by `new Date(Date.now())`. It's helpfull for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
+4. Recommendation: Found `new Date()` in file `node_helper.js`: Consider replacing it by `new Date(Date.now())`. It's helpful for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
 5. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
 
 ### [MMM-NASA by mykle1](https://github.com/mykle1/MMM-NASA)
@@ -6276,7 +6527,7 @@ Last update: 2024-09-17T23:27:10+02:00
 0. This module is outdated: Abandoned. No reactions to issues since years. Missing instructions to install dependency 'request'.
 1. There is no `package.json`. We need this file to gather information about the module for the module list page.
 2. Typo: Found `Magic Mirror` in file `MMM-NEO.js`: Replace it with `MagicMirror²`.
-3. Recommendation: Found `new Date()` in file `MMM-NEO.js`: Consider replacing it by `new Date(Date.now())`. It's helpfull for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
+3. Recommendation: Found `new Date()` in file `MMM-NEO.js`: Consider replacing it by `new Date(Date.now())`. It's helpful for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
 4. Recommendation: The README seems not to have an update instruction (the word 'update' is missing). Please add one.
 5. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
 6. Deprecated: Found `require('request')` in file `node_helper.js`: Replace it with built-in fetch.
@@ -6293,12 +6544,12 @@ Last update: 2024-09-17T23:27:10+02:00
 1. `package.json` issue: No repository field.
 2. `package.json` issue: No license field.
 3. There are no keywords in 'package.json'. We would use them as tags on the module list page.
-4. Recommendation: Found `new Date()` in file `MMM-NesteBussAtB.js`: Consider replacing it by `new Date(Date.now())`. It's helpfull for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
+4. Recommendation: Found `new Date()` in file `MMM-NesteBussAtB.js`: Consider replacing it by `new Date(Date.now())`. It's helpful for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
 5. Typo: Found `[MagicMirror]` in file `README.md`: Replace it with `[MagicMirror²]`.
 6. Outdated: Found `MichMich/MagicMirror` in file `README.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
 7. Recommendation: The README seems not to have an update instruction (the word 'update' is missing). Please add one.
 8. Deprecated: Found `require('request')` in file `node_helper.js`: Replace it with built-in fetch.
-9. Recommendation: Found `new Date()` in file `node_helper.js`: Consider replacing it by `new Date(Date.now())`. It's helpfull for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
+9. Recommendation: Found `new Date()` in file `node_helper.js`: Consider replacing it by `new Date(Date.now())`. It's helpful for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
 10. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
 
 ### [MMM-NestRemoteThermostat by sisimomo](https://github.com/sisimomo/MMM-NestRemoteThermostat)
@@ -6317,7 +6568,7 @@ Last update: 2024-09-17T23:27:10+02:00
 5. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
 6. Deprecated: Found `require('request')` in file `node_helper.js`: Replace it with built-in fetch.
 7. Recommendation: Found `require("https")` in file `node_helper.js`: Replace "https" by "node:https".
-8. Recommendation: Found `new Date()` in file `node_helper.js`: Consider replacing it by `new Date(Date.now())`. It's helpfull for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
+8. Recommendation: Found `new Date()` in file `node_helper.js`: Consider replacing it by `new Date(Date.now())`. It's helpful for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
 9. Typo: Found `Magic Mirror` in file `package.json`: Replace it with `MagicMirror²`.
 10. Warning: No LICENSE file.
 11. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
@@ -6333,9 +6584,20 @@ Last update: 2024-09-17T23:27:10+02:00
 6. Outdated: Found `MichMich/MagicMirror` in file `README.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
 7. Recommendation: Found `XMLHttpRequest` in file `jquery-3.2.1.min.js`: Replace it with built-in fetch.
 8. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
-9. Recommendation: Found `new Date()` in file `node_helper.js`: Consider replacing it by `new Date(Date.now())`. It's helpfull for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
+9. Recommendation: Found `new Date()` in file `node_helper.js`: Consider replacing it by `new Date(Date.now())`. It's helpful for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
 10. Deprecated: Found `"grunt"` in file `package.json`: Grunt is practically unmaintained. Move on to something better.
 11. Recommendation: Replace eslintrc by new flat config.
+
+### [MMM-NetatmoThermostat by bugsounet](https://github.com/bugsounet/MMM-NetatmoThermostat)
+
+1. Information: There are updates for 6 dependencie(s):
+   - @eslint/js                ^8.57.0  →  ^9.10.0
+   - @stylistic/eslint-plugin   ^1.8.1  →   ^2.8.0
+   - esbuild                   ^0.22.0  →  ^0.23.1
+   - eslint                    ^8.57.0  →  ^9.10.0
+   - eslint-plugin-import      ^2.29.1  →  ^2.30.0
+   - glob                      ^10.4.2  →  ^11.0.0
+
 
 ### [MMM-network-signal by PoOwAa](https://github.com/PoOwAa/MMM-network-signal)
 
@@ -6445,12 +6707,12 @@ Last update: 2024-09-17T23:27:10+02:00
 3. `package.json` issue: No license field.
 4. There are no keywords in 'package.json'. We would use them as tags on the module list page.
 5. Typo: Found `Magic Mirror` in file `NextTrains.js`: Replace it with `MagicMirror²`.
-6. Recommendation: Found `new Date()` in file `NextTrains.js`: Consider replacing it by `new Date(Date.now())`. It's helpfull for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
+6. Recommendation: Found `new Date()` in file `NextTrains.js`: Consider replacing it by `new Date(Date.now())`. It's helpful for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
 7. Typo: Found `<sup>2</sup>` in file `README.md`: Replace it with `²`.`.
 8. Outdated: Found `MichMich/MagicMirror` in file `README.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
 9. Recommendation: The README seems not to have an update instruction (the word 'update' is missing). Please add one.
 10. Recommendation: Found `require('https')` in file `node_helper.js`: Replace 'https' by 'node:https'.
-11. Recommendation: Found `new Date()` in file `node_helper.js`: Consider replacing it by `new Date(Date.now())`. It's helpfull for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
+11. Recommendation: Found `new Date()` in file `node_helper.js`: Consider replacing it by `new Date(Date.now())`. It's helpful for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
 12. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
 
 ### [MMM-NexusMetroRTI by jcktwd](https://github.com/jcktwd/MMM-NexusMetroRTI)
@@ -6463,13 +6725,13 @@ Last update: 2024-09-17T23:27:10+02:00
 
 1. Recommendation: Found `uses: actions/checkout@v2` in file `build.yml`: Replace it with v4.
 2. Typo: Found `Magic Mirror` in file `MMM-NFL.js`: Replace it with `MagicMirror²`.
-3. Recommendation: Found `new Date()` in file `MMM-NFL.js`: Consider replacing it by `new Date(Date.now())`. It's helpfull for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
+3. Recommendation: Found `new Date()` in file `MMM-NFL.js`: Consider replacing it by `new Date(Date.now())`. It's helpful for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
 4. Typo: Found `<sup>2</sup>` in file `README.md`: Replace it with `²`.`.
 5. Outdated: Found `MichMich/MagicMirror` in file `README.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
 6. Recommendation: The README seems not to have an update instruction (the word 'update' is missing). Please add one.
 7. Recommendation: Found `'node-fetch'` in file `espn.js`: Replace it with built-in fetch.
 8. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
-9. Recommendation: Found `new Date()` in file `node_helper.js`: Consider replacing it by `new Date(Date.now())`. It's helpfull for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
+9. Recommendation: Found `new Date()` in file `node_helper.js`: Consider replacing it by `new Date(Date.now())`. It's helpful for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
 10. Typo: Found `MagicMirror2` in file `package.json`: Replace it with `MagicMirror²`.
 11. Recommendation: Found `"node-fetch"` in file `package.json`: Replace it with built-in fetch.
 12. Recommendation: Replace eslintrc by new flat config.
@@ -6489,12 +6751,12 @@ Last update: 2024-09-17T23:27:10+02:00
 
 1. Recommendation: Found `uses: actions/checkout@v2` in file `build.yml`: Replace it with v4.
 2. Deprecated: Found `node-version: 16` in file `build.yml`: Update to current version.
-3. Recommendation: Found `new Date()` in file `MMM-NHL.js`: Consider replacing it by `new Date(Date.now())`. It's helpfull for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
+3. Recommendation: Found `new Date()` in file `MMM-NHL.js`: Consider replacing it by `new Date(Date.now())`. It's helpful for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
 4. Outdated: Found `MichMich/MagicMirror` in file `MMM-NHL.js`: Replace it by `MagicMirrorOrg/MagicMirror`.
 5. Outdated: Found `MichMich/MagicMirror` in file `README.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
 6. Recommendation: The README seems not to have an update instruction (the word 'update' is missing). Please add one.
 7. Recommendation: Found `'node-fetch'` in file `node_helper.js`: Replace it with built-in fetch.
-8. Recommendation: Found `new Date()` in file `node_helper.js`: Consider replacing it by `new Date(Date.now())`. It's helpfull for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
+8. Recommendation: Found `new Date()` in file `node_helper.js`: Consider replacing it by `new Date(Date.now())`. It's helpful for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
 9. Outdated: Found `MichMich/MagicMirror` in file `node_helper.js`: Replace it by `MagicMirrorOrg/MagicMirror`.
 10. Recommendation: Found `"node-fetch"` in file `package.json`: Replace it with built-in fetch.
 11. Recommendation: Replace eslintrc by new flat config.
@@ -6507,12 +6769,12 @@ Last update: 2024-09-17T23:27:10+02:00
 3. Recommendation: Found `uses: actions/checkout@v2` in file `build.yml`: Replace it with v4.
 4. Recommendation: Found `axios` in file `MMM-NiceHash.js`: Replace it with built-in fetch.
 5. Recommendation: Found `XMLHttpRequest` in file `MMM-NiceHash.js`: Replace it with built-in fetch.
-6. Recommendation: Found `new Date()` in file `MMM-NiceHash.js`: Consider replacing it by `new Date(Date.now())`. It's helpfull for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
+6. Recommendation: Found `new Date()` in file `MMM-NiceHash.js`: Consider replacing it by `new Date(Date.now())`. It's helpful for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
 7. Recommendation: The README seems not to have an update instruction (the word 'update' is missing). Please add one.
 8. Recommendation: Found `axios` in file `node_helper.js`: Replace it with built-in fetch.
 9. Recommendation: Found `axios` in file `package.json`: Replace it with built-in fetch.
 10. Recommendation: Found `axios` in file `conversions.ts`: Replace it with built-in fetch.
-11. Recommendation: Found `new Date()` in file `conversions.ts`: Consider replacing it by `new Date(Date.now())`. It's helpfull for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
+11. Recommendation: Found `new Date()` in file `conversions.ts`: Consider replacing it by `new Date(Date.now())`. It's helpful for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
 12. Recommendation: Found `axios` in file `nicehash.ts`: Replace it with built-in fetch.
 13. Warning: No LICENSE file.
 14. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
@@ -6528,16 +6790,6 @@ Last update: 2024-09-17T23:27:10+02:00
 ### [MMM-NINA by jalibu](https://github.com/jalibu/MMM-NINA)
 
 1. Recommendation: Replace eslintrc by new flat config.
-2. Information: There are updates for 8 dependencie(s):
-   - @rollup/plugin-commonjs           ^25.0.7  →  ^26.0.1
-   - @stylistic/eslint-plugin           ^1.5.4  →   ^2.8.0
-   - @typescript-eslint/eslint-plugin  ^6.20.0  →   ^8.6.0
-   - eslint                            ^8.56.0  →  ^9.10.0
-   - prettier                           ^3.2.5  →   ^3.3.3
-   - rollup                             ^4.9.6  →  ^4.21.3
-   - rollup-plugin-banner2              ^1.2.2  →   ^1.3.0
-   - typescript                         ^5.3.3  →   ^5.6.2
-
 
 ### [MMM-nixie-clock by Isaac-the-Man](https://github.com/Isaac-the-Man/MMM-nixie-clock)
 
@@ -6545,7 +6797,7 @@ Last update: 2024-09-17T23:27:10+02:00
 2. Outdated: Found `MichMich/MagicMirror` in file `README.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
 3. Recommendation: The README seems not to have an update instruction (the word 'update' is missing). Please add one.
 4. Recommendation: The README seems not to have an install instruction (the words 'install' or 'installation' are missing). Please add one.
-5. Recommendation: Found `new Date()` in file `moment-timezone-with-data.js`: Consider replacing it by `new Date(Date.now())`. It's helpfull for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
+5. Recommendation: Found `new Date()` in file `moment-timezone-with-data.js`: Consider replacing it by `new Date(Date.now())`. It's helpful for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
 6. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
 
 ### [MMM-Nixie-Clock by nikobix](https://github.com/nikobix/MMM-Nixie-Clock)
@@ -6612,7 +6864,7 @@ Last update: 2024-09-17T23:27:10+02:00
 0. This module is outdated: Abandoned. No reactions to issues and PRs since years.
 1. There are no specific keywords in 'package.json'. We would use them as tags on the module list page. Add a few meaningful terms to the keywords in the package.json. Not just “magicmirror” or “module”.
 2. Typo: Found `Magic Mirror` in file `MMM-NOAA3.js`: Replace it with `MagicMirror²`.
-3. Recommendation: Found `new Date()` in file `MMM-NOAA3.js`: Consider replacing it by `new Date(Date.now())`. It's helpfull for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
+3. Recommendation: Found `new Date()` in file `MMM-NOAA3.js`: Consider replacing it by `new Date(Date.now())`. It's helpful for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
 4. Typo: Found `MagicMirror2` in file `README.md`: Replace it with `MagicMirror²`.
 5. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
 6. Deprecated: Found `require('request')` in file `node_helper.js`: Replace it with built-in fetch.
@@ -6625,7 +6877,7 @@ Last update: 2024-09-17T23:27:10+02:00
 13. Deprecated: Found `require('request')` in file `ds.js`: Replace it with built-in fetch.
 14. Typo: Found `Magic Mirror` in file `ms.js`: Replace it with `MagicMirror²`.
 15. Deprecated: Found `require('request')` in file `ms.js`: Replace it with built-in fetch.
-16. Recommendation: Found `new Date()` in file `ms.js`: Consider replacing it by `new Date(Date.now())`. It's helpfull for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
+16. Recommendation: Found `new Date()` in file `ms.js`: Consider replacing it by `new Date(Date.now())`. It's helpful for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
 17. Typo: Found `Magic Mirror` in file `ow.js`: Replace it with `MagicMirror²`.
 18. Deprecated: Found `require('request')` in file `ow.js`: Replace it with built-in fetch.
 19. Deprecated: Found `api.openweathermap.org/data/2.5` in file `ow.js`: OpenWeather API 2.5 will be deprecated in June 2024. Please update to 3.0.
@@ -6641,7 +6893,7 @@ Last update: 2024-09-17T23:27:10+02:00
 ### [MMM-NOAATides by crice009](https://github.com/crice009/MMM-NOAATides)
 
 1. Typo: Found `Magic Mirror` in file `MMM-NOAATides.js`: Replace it with `MagicMirror²`.
-2. Recommendation: Found `new Date()` in file `MMM-NOAATides.js`: Consider replacing it by `new Date(Date.now())`. It's helpfull for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
+2. Recommendation: Found `new Date()` in file `MMM-NOAATides.js`: Consider replacing it by `new Date(Date.now())`. It's helpful for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
 3. Typo: Found `Magic Mirror` in file `README.md`: Replace it with `MagicMirror²`.
 4. Typo: Found `[MagicMirror]` in file `README.md`: Replace it with `[MagicMirror²]`.
 5. Typo: Found `<sup>2</sup>` in file `README.md`: Replace it with `²`.`.
@@ -6649,7 +6901,7 @@ Last update: 2024-09-17T23:27:10+02:00
 7. Recommendation: The README seems not to have an update instruction (the word 'update' is missing). Please add one.
 8. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
 9. Recommendation: Found `"node-fetch"` in file `node_helper.js`: Replace it with built-in fetch.
-10. Recommendation: Found `new Date()` in file `node_helper.js`: Consider replacing it by `new Date(Date.now())`. It's helpfull for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
+10. Recommendation: Found `new Date()` in file `node_helper.js`: Consider replacing it by `new Date(Date.now())`. It's helpful for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
 11. Typo: Found `MagicMirror2` in file `package.json`: Replace it with `MagicMirror²`.
 12. Recommendation: Found `"node-fetch"` in file `package.json`: Replace it with built-in fetch.
 13. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
@@ -6657,10 +6909,10 @@ Last update: 2024-09-17T23:27:10+02:00
 ### [MMM-NOKElectricityForecast by AndreasHagman](https://github.com/AndreasHagman/MMM-NOKElectricityForecast)
 
 1. There is no `package.json`. We need this file to gather information about the module for the module list page.
-2. Recommendation: Found `new Date()` in file `MMM-NOKElectricityForecast.js`: Consider replacing it by `new Date(Date.now())`. It's helpfull for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
+2. Recommendation: Found `new Date()` in file `MMM-NOKElectricityForecast.js`: Consider replacing it by `new Date(Date.now())`. It's helpful for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
 3. Recommendation: The README seems not to have an install instruction (the words 'install' or 'installation' are missing). Please add one.
 4. Recommendation: Found `axios` in file `node_helper.js`: Replace it with built-in fetch.
-5. Recommendation: Found `new Date()` in file `node_helper.js`: Consider replacing it by `new Date(Date.now())`. It's helpfull for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
+5. Recommendation: Found `new Date()` in file `node_helper.js`: Consider replacing it by `new Date(Date.now())`. It's helpful for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
 6. Warning: No LICENSE file.
 7. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
 
@@ -6701,7 +6953,7 @@ Last update: 2024-09-17T23:27:10+02:00
 4. Recommendation: The README seems not to have an install instruction (the words 'install' or 'installation' are missing). Please add one.
 5. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
 6. Typo: Found `Magic Mirror` in file `DateFormat.js`: Replace it with `MagicMirror²`.
-7. Recommendation: Found `new Date()` in file `DateFormat.js`: Consider replacing it by `new Date(Date.now())`. It's helpfull for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
+7. Recommendation: Found `new Date()` in file `DateFormat.js`: Consider replacing it by `new Date(Date.now())`. It's helpful for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
 8. Typo: Found `Magic Mirror` in file `PropertiesView.js`: Replace it with `MagicMirror²`.
 9. Typo: Found `Magic Mirror` in file `ListView.js`: Replace it with `MagicMirror²`.
 10. Typo: Found `Magic Mirror` in file `ListViewElement.js`: Replace it with `MagicMirror²`.
@@ -6742,7 +6994,7 @@ Last update: 2024-09-17T23:27:10+02:00
 
 1. There are no keywords in 'package.json'. We would use them as tags on the module list page.
 2. Recommendation: Found `jshint` in file `Gruntfile.js`: Replace "jshint" by "eslint".
-3. Recommendation: Found `new Date()` in file `NsFetcher.js`: Consider replacing it by `new Date(Date.now())`. It's helpfull for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
+3. Recommendation: Found `new Date()` in file `NsFetcher.js`: Consider replacing it by `new Date(Date.now())`. It's helpful for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
 4. Outdated: Found `MichMich/MagicMirror` in file `README.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
 5. Deprecated: Found `"grunt"` in file `package.json`: Grunt is practically unmaintained. Move on to something better.
 6. Warning: No LICENSE file.
@@ -6757,7 +7009,7 @@ Last update: 2024-09-17T23:27:10+02:00
 5. Recommendation: Found `uses: actions/checkout@v2` in file `npm-publish.yml`: Replace it with v4.
 6. Deprecated: Found `node-version: 16` in file `npm-publish.yml`: Update to current version.
 7. Outdated: Found `MichMich/MagicMirror` in file `README.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
-8. Recommendation: Found `new Date()` in file `node_helper.js`: Consider replacing it by `new Date(Date.now())`. It's helpfull for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
+8. Recommendation: Found `new Date()` in file `node_helper.js`: Consider replacing it by `new Date(Date.now())`. It's helpful for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
 9. Recommendation: Replace eslintrc by new flat config.
 
 ### [MMM-ObjectBlocks by jimmykh](https://github.com/jimmykh/MMM-ObjectBlocks)
@@ -6792,7 +7044,7 @@ Last update: 2024-09-17T23:27:10+02:00
 6. Recommendation: Found `jshint` in file `octomirror-module.js`: Replace "jshint" by "eslint".
 7. Typo: Found `Magic Mirror` in file `package.json`: Replace it with `MagicMirror²`.
 8. Recommendation: Found `XMLHttpRequest` in file `packed_client.js`: Replace it with built-in fetch.
-9. Recommendation: Found `new Date()` in file `packed_client.js`: Consider replacing it by `new Date(Date.now())`. It's helpfull for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
+9. Recommendation: Found `new Date()` in file `packed_client.js`: Consider replacing it by `new Date(Date.now())`. It's helpful for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
 10. Recommendation: Replace eslintrc by new flat config.
 
 ### [MMM-OctoMon by christopherpthomas](https://github.com/christopherpthomas/MMM-OctoMon)
@@ -6800,7 +7052,7 @@ Last update: 2024-09-17T23:27:10+02:00
 1. There is no `package.json`. We need this file to gather information about the module for the module list page.
 2. Typo: Found `Magic Mirror` in file `MMM-OctoMon.js`: Replace it with `MagicMirror²`.
 3. Recommendation: Found `XMLHttpRequest` in file `MMM-OctoMon.js`: Replace it with built-in fetch.
-4. Recommendation: Found `new Date()` in file `MMM-OctoMon.js`: Consider replacing it by `new Date(Date.now())`. It's helpfull for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
+4. Recommendation: Found `new Date()` in file `MMM-OctoMon.js`: Consider replacing it by `new Date(Date.now())`. It's helpful for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
 5. Typo: Found `<sup>2</sup>` in file `README.md`: Replace it with `²`.`.
 6. Outdated: Found `MichMich/MagicMirror` in file `README.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
 7. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
@@ -6825,15 +7077,15 @@ Last update: 2024-09-17T23:27:10+02:00
 
 ### [MMM-oebb-station-board by mscharl](https://github.com/mscharl/MMM-oebb-station-board)
 
-1. Recommendation: Found `new Date()` in file `MMM-oebb-station-board.js`: Consider replacing it by `new Date(Date.now())`. It's helpfull for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
+1. Recommendation: Found `new Date()` in file `MMM-oebb-station-board.js`: Consider replacing it by `new Date(Date.now())`. It's helpful for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
 2. Recommendation: The README seems not to have an update instruction (the word 'update' is missing). Please add one.
 3. Typo: Found `MagicMirror2` in file `package.json`: Replace it with `MagicMirror²`.
-4. Recommendation: Found `new Date()` in file `MMM-oebb-station-board.ts`: Consider replacing it by `new Date(Date.now())`. It's helpfull for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
+4. Recommendation: Found `new Date()` in file `MMM-oebb-station-board.ts`: Consider replacing it by `new Date(Date.now())`. It's helpful for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
 5. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
 
 ### [MMM-Oelpreise by eckonator](https://github.com/eckonator/MMM-Oelpreise)
 
-1. Recommendation: Found `new Date()` in file `MMM-Oelpreise.js`: Consider replacing it by `new Date(Date.now())`. It's helpfull for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
+1. Recommendation: Found `new Date()` in file `MMM-Oelpreise.js`: Consider replacing it by `new Date(Date.now())`. It's helpful for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
 2. Outdated: Found `MichMich/MagicMirror` in file `README.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
 3. Deprecated: Found `require('request')` in file `node_helper.js`: Replace it with built-in fetch.
 4. Outdated: Found `MichMich/MagicMirror` in file `package.json`: Replace it by `MagicMirrorOrg/MagicMirror`.
@@ -6869,19 +7121,31 @@ Last update: 2024-09-17T23:27:10+02:00
 ### [MMM-OneBusAway by jugler](https://github.com/jugler/MMM-OneBusAway)
 
 1. There is no `package.json`. We need this file to gather information about the module for the module list page.
-2. Recommendation: Found `new Date()` in file `MMM-OneBusAway.js`: Consider replacing it by `new Date(Date.now())`. It's helpfull for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
+2. Recommendation: Found `new Date()` in file `MMM-OneBusAway.js`: Consider replacing it by `new Date(Date.now())`. It's helpful for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
 3. Typo: Found `Magic Mirror` in file `README.md`: Replace it with `MagicMirror²`.
 4. Recommendation: The README seems not to have an update instruction (the word 'update' is missing). Please add one.
 5. Deprecated: Found `require('request')` in file `node_helper.js`: Replace it with built-in fetch.
 6. Warning: No LICENSE file.
 7. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
 
+### [MMM-OneCallWeather by KristjanESPERANTO](https://github.com/KristjanESPERANTO/MMM-OneCallWeather)
+
+1. Information: There are updates for 7 dependencie(s):
+   - @eslint/js                ^8.57.0  →  ^9.10.0
+   - @stylistic/eslint-plugin   ^1.7.0  →   ^2.8.0
+   - eslint                    ^8.57.0  →  ^9.10.0
+   - eslint-plugin-import      ^2.29.1  →  ^2.30.0
+   - globals                   ^14.0.0  →  ^15.9.0
+   - markdownlint-cli          ^0.39.0  →  ^0.41.0
+   - prettier                   ^3.2.5  →   ^3.3.3
+
+
 ### [MMM-OneDrive by hermanho](https://github.com/hermanho/MMM-OneDrive)
 
 1. Typo: Found `Magic Mirror` in file `INSTALL.md`: Replace it with `MagicMirror²`.
-2. Recommendation: Found `new Date()` in file `MMM-OneDrive.js`: Consider replacing it by `new Date(Date.now())`. It's helpfull for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
+2. Recommendation: Found `new Date()` in file `MMM-OneDrive.js`: Consider replacing it by `new Date(Date.now())`. It's helpful for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
 3. Recommendation: Found `XMLHttpRequest` in file `error_to_string.js`: Replace it with built-in fetch.
-4. Recommendation: Found `new Date()` in file `node_helper.js`: Consider replacing it by `new Date(Date.now())`. It's helpfull for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
+4. Recommendation: Found `new Date()` in file `node_helper.js`: Consider replacing it by `new Date(Date.now())`. It's helpful for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
 
 ### [MMM-OneTouchReveal by Canonip](https://github.com/Canonip/MMM-OneTouchReveal)
 
@@ -6902,7 +7166,7 @@ Last update: 2024-09-17T23:27:10+02:00
 2. Typo: Found `Magic Mirror` in file `MMM-OneTracker.js`: Replace it with `MagicMirror²`.
 3. Typo: Found `Magic Mirror` in file `README.md`: Replace it with `MagicMirror²`.
 4. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
-5. Recommendation: Found `new Date()` in file `node_helper.js`: Consider replacing it by `new Date(Date.now())`. It's helpfull for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
+5. Recommendation: Found `new Date()` in file `node_helper.js`: Consider replacing it by `new Date(Date.now())`. It's helpful for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
 6. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
 
 ### [MMM-Online-State by Legion2](https://github.com/Legion2/MMM-Online-State)
@@ -6913,7 +7177,7 @@ Last update: 2024-09-17T23:27:10+02:00
 
 ### [MMM-OnlineImagesViewer by NicholasRasi](https://github.com/NicholasRasi/MMM-OnlineImagesViewer)
 
-1. Recommendation: Found `new Date()` in file `MMM-OnlineImagesViewer.js`: Consider replacing it by `new Date(Date.now())`. It's helpfull for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
+1. Recommendation: Found `new Date()` in file `MMM-OnlineImagesViewer.js`: Consider replacing it by `new Date(Date.now())`. It's helpful for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
 2. Typo: Found `[MagicMirror]` in file `README.md`: Replace it with `[MagicMirror²]`.
 3. Outdated: Found `MichMich/MagicMirror` in file `README.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
 4. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
@@ -6958,7 +7222,7 @@ Last update: 2024-09-17T23:27:10+02:00
 
 ### [MMM-OnThisDayWikiApi by slugmuffin](https://github.com/slugmuffin/MMM-OnThisDayWikiApi)
 
-1. Recommendation: Found `new Date()` in file `MMM-OnThisDayWikiApi.js`: Consider replacing it by `new Date(Date.now())`. It's helpfull for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
+1. Recommendation: Found `new Date()` in file `MMM-OnThisDayWikiApi.js`: Consider replacing it by `new Date(Date.now())`. It's helpful for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
 2. Outdated: Found `MichMich/MagicMirror` in file `README.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
 3. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
 
@@ -6991,7 +7255,7 @@ Last update: 2024-09-17T23:27:10+02:00
 1. There is no `package.json`. We need this file to gather information about the module for the module list page.
 2. Typo: Found `Magic Mirror` in file `MMM-OpenmapWeather.js`: Replace it with `MagicMirror²`.
 3. Recommendation: Found `XMLHttpRequest` in file `MMM-OpenmapWeather.js`: Replace it with built-in fetch.
-4. Recommendation: Found `new Date()` in file `MMM-OpenmapWeather.js`: Consider replacing it by `new Date(Date.now())`. It's helpfull for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
+4. Recommendation: Found `new Date()` in file `MMM-OpenmapWeather.js`: Consider replacing it by `new Date(Date.now())`. It's helpful for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
 5. Outdated: Found `MichMich/MagicMirror` in file `MMM-OpenmapWeather.js`: Replace it by `MagicMirrorOrg/MagicMirror`.
 6. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
 
@@ -7000,7 +7264,7 @@ Last update: 2024-09-17T23:27:10+02:00
 1. An error occurred while getting information from 'package.json': SyntaxError: Unexpected token ']', ..."dule",
   ],
   "aut"... is not valid JSON
-2. Recommendation: Found `new Date()` in file `MMM-OS-Utilities.js`: Consider replacing it by `new Date(Date.now())`. It's helpfull for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
+2. Recommendation: Found `new Date()` in file `MMM-OS-Utilities.js`: Consider replacing it by `new Date(Date.now())`. It's helpful for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
 3. Typo: Found `Magic Mirror` in file `MMM-OpenSprinkler.js`: Replace it with `MagicMirror²`.
 4. Typo: Found `[MagicMirror]` in file `README.md`: Replace it with `[MagicMirror²]`.
 5. Outdated: Found `MichMich/MagicMirror` in file `README.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
@@ -7062,7 +7326,7 @@ Last update: 2024-09-17T23:27:10+02:00
 5. Typo: Found `[MagicMirror]` in file `README.md`: Replace it with `[MagicMirror²]`.
 6. Outdated: Found `MichMich/MagicMirror` in file `README.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
 7. Recommendation: The README seems not to have an update instruction (the word 'update' is missing). Please add one.
-8. Recommendation: Found `new Date()` in file `node_helper.js`: Consider replacing it by `new Date(Date.now())`. It's helpfull for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
+8. Recommendation: Found `new Date()` in file `node_helper.js`: Consider replacing it by `new Date(Date.now())`. It's helpful for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
 9. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
 
 ### [MMM-Oura by erchenger](https://github.com/erchenger/MMM-Oura)
@@ -7074,7 +7338,7 @@ Last update: 2024-09-17T23:27:10+02:00
 5. Outdated: Found `MichMich/MagicMirror` in file `README.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
 6. Recommendation: The README seems not to have an update instruction (the word 'update' is missing). Please add one.
 7. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
-8. Recommendation: Found `new Date()` in file `node_helper.js`: Consider replacing it by `new Date(Date.now())`. It's helpfull for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
+8. Recommendation: Found `new Date()` in file `node_helper.js`: Consider replacing it by `new Date(Date.now())`. It's helpful for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
 9. Deprecated: Found `"grunt"` in file `package.json`: Grunt is practically unmaintained. Move on to something better.
 10. Recommendation: Replace eslintrc by new flat config.
 
@@ -7141,6 +7405,17 @@ Last update: 2024-09-17T23:27:10+02:00
 2. Typo: Found `Magic Mirror` in file `Bug_report.md`: Replace it with `MagicMirror²`.
 3. Recommendation: Replace eslintrc by new flat config.
 
+### [EXT-Pages by bugsounet](https://github.com/bugsounet/EXT-Pages)
+
+1. Information: There are updates for 6 dependencie(s):
+   - @eslint/js                ^8.57.0  →  ^9.10.0
+   - @stylistic/eslint-plugin   ^1.8.1  →   ^2.8.0
+   - esbuild                   ^0.22.0  →  ^0.23.1
+   - eslint                    ^8.57.0  →  ^9.10.0
+   - eslint-plugin-import      ^2.29.1  →  ^2.30.0
+   - glob                      ^10.4.2  →  ^11.0.0
+
+
 ### [MMM-Pages-Screencast by jboucly](https://github.com/jboucly/MMM-Pages-Screencast)
 
 1. Typo: Found `MagicMirror2` in file `README.md`: Replace it with `MagicMirror²`.
@@ -7169,7 +7444,7 @@ Last update: 2024-09-17T23:27:10+02:00
 
 1. There are no keywords in 'package.json'. We would use them as tags on the module list page.
 2. Typo: Found `Magic Mirror` in file `MMM-Parcel.js`: Replace it with `MagicMirror²`.
-3. Recommendation: Found `new Date()` in file `MMM-Parcel.js`: Consider replacing it by `new Date(Date.now())`. It's helpfull for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
+3. Recommendation: Found `new Date()` in file `MMM-Parcel.js`: Consider replacing it by `new Date(Date.now())`. It's helpful for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
 4. Typo: Found `Magic Mirror` in file `README.md`: Replace it with `MagicMirror²`.
 5. Recommendation: Found `"node-fetch"` in file `README.md`: Replace it with built-in fetch.
 6. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
@@ -7183,9 +7458,9 @@ Last update: 2024-09-17T23:27:10+02:00
 ### [MMM-Paris-RATP-PG by da4throux](https://github.com/da4throux/MMM-Paris-RATP-PG)
 
 1. Typo: Found `Magic Mirror` in file `MMM-Paris-RATP-PG.js`: Replace it with `MagicMirror²`.
-2. Recommendation: Found `new Date()` in file `MMM-Paris-RATP-PG.js`: Consider replacing it by `new Date(Date.now())`. It's helpfull for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
+2. Recommendation: Found `new Date()` in file `MMM-Paris-RATP-PG.js`: Consider replacing it by `new Date(Date.now())`. It's helpful for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
 3. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
-4. Recommendation: Found `new Date()` in file `node_helper.js`: Consider replacing it by `new Date(Date.now())`. It's helpfull for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
+4. Recommendation: Found `new Date()` in file `node_helper.js`: Consider replacing it by `new Date(Date.now())`. It's helpful for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
 5. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
 
 ### [MMM-ParticleStatus by NickEngmann](https://github.com/NickEngmann/MMM-ParticleStatus)
@@ -7237,7 +7512,7 @@ Last update: 2024-09-17T23:27:10+02:00
 ### [MMM-Pelletpreise by eckonator](https://github.com/eckonator/MMM-Pelletpreise)
 
 1. Typo: Found `Magic Mirror` in file `MMM-Pelletpreise.js`: Replace it with `MagicMirror²`.
-2. Recommendation: Found `new Date()` in file `MMM-Pelletpreise.js`: Consider replacing it by `new Date(Date.now())`. It's helpfull for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
+2. Recommendation: Found `new Date()` in file `MMM-Pelletpreise.js`: Consider replacing it by `new Date(Date.now())`. It's helpful for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
 3. Outdated: Found `MichMich/MagicMirror` in file `README.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
 4. Deprecated: Found `require('request')` in file `node_helper.js`: Replace it with built-in fetch.
 5. Outdated: Found `MichMich/MagicMirror` in file `package.json`: Replace it by `MagicMirrorOrg/MagicMirror`.
@@ -7300,7 +7575,7 @@ Last update: 2024-09-17T23:27:10+02:00
 11. Recommendation: Found `"node-fetch"` in file `package.json`: Replace it with built-in fetch.
 12. Outdated: Found `MichMich/MagicMirror` in file `package.json`: Replace it by `MagicMirrorOrg/MagicMirror`.
 13. Recommendation: Found `XMLHttpRequest` in file `favorites.js`: Replace it with built-in fetch.
-14. Recommendation: Found `new Date()` in file `favorites.js`: Consider replacing it by `new Date(Date.now())`. It's helpfull for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
+14. Recommendation: Found `new Date()` in file `favorites.js`: Consider replacing it by `new Date(Date.now())`. It's helpful for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
 15. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
 
 ### [MMM-PGHBus by yuhanx0728](https://github.com/yuhanx0728/MMM-PGHBus)
@@ -7331,8 +7606,19 @@ Last update: 2024-09-17T23:27:10+02:00
 
 ### [MMM-PhoneDetect by PierreGode](https://github.com/PierreGode/MMM-PhoneDetect)
 
-1. Recommendation: Found `new Date()` in file `node_helper.js`: Consider replacing it by `new Date(Date.now())`. It's helpfull for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
+1. Recommendation: Found `new Date()` in file `node_helper.js`: Consider replacing it by `new Date(Date.now())`. It's helpful for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
 2. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
+
+### [EXT-Photos by bugsounet](https://github.com/bugsounet/EXT-Photos)
+
+1. Information: There are updates for 6 dependencie(s):
+   - @eslint/js                ^8.57.0  →  ^9.10.0
+   - @stylistic/eslint-plugin   ^1.8.1  →   ^2.8.0
+   - esbuild                   ^0.22.0  →  ^0.23.1
+   - eslint                    ^8.57.0  →  ^9.10.0
+   - eslint-plugin-import      ^2.29.1  →  ^2.30.0
+   - glob                      ^10.4.2  →  ^11.0.0
+
 
 ### [PiDisplaySleep by RpDp-git](https://github.com/RpDp-git/PiDisplaySleep)
 
@@ -7498,8 +7784,8 @@ Last update: 2024-09-17T23:27:10+02:00
 2. No image found.
 3. Recommendation: The README seems not to have an update instruction (the word 'update' is missing). Please add one.
 4. Recommendation: Found `XMLHttpRequest` in file `stuquery.min.js`: Replace it with built-in fetch.
-5. Recommendation: Found `new Date()` in file `stuquery.min.js`: Consider replacing it by `new Date(Date.now())`. It's helpfull for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
-6. Recommendation: Found `new Date()` in file `virtualsky-planets.js`: Consider replacing it by `new Date(Date.now())`. It's helpfull for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
+5. Recommendation: Found `new Date()` in file `stuquery.min.js`: Consider replacing it by `new Date(Date.now())`. It's helpful for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
+6. Recommendation: Found `new Date()` in file `virtualsky-planets.js`: Consider replacing it by `new Date(Date.now())`. It's helpful for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
 7. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
 
 ### [planetrise by croxis](https://github.com/croxis/planetrise)
@@ -7509,8 +7795,8 @@ Last update: 2024-09-17T23:27:10+02:00
 3. Typo: Found `Magic Mirror` in file `README.md`: Replace it with `MagicMirror²`.
 4. Recommendation: The README seems not to have an update instruction (the word 'update' is missing). Please add one.
 5. Recommendation: The README seems not to have an install instruction (the words 'install' or 'installation' are missing). Please add one.
-6. Recommendation: Found `new Date()` in file `astronomy.js`: Consider replacing it by `new Date(Date.now())`. It's helpfull for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
-7. Recommendation: Found `new Date()` in file `planetrise.js`: Consider replacing it by `new Date(Date.now())`. It's helpfull for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
+6. Recommendation: Found `new Date()` in file `astronomy.js`: Consider replacing it by `new Date(Date.now())`. It's helpful for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
+7. Recommendation: Found `new Date()` in file `planetrise.js`: Consider replacing it by `new Date(Date.now())`. It's helpful for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
 8. Warning: No LICENSE file.
 9. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
 
@@ -7537,9 +7823,9 @@ Last update: 2024-09-17T23:27:10+02:00
 2. Typo: Found `Magic Mirror` in file `MMM-PlexNowPlaying.css`: Replace it with `MagicMirror²`.
 3. Typo: Found `Magic Mirror` in file `MMM-PlexNowPlaying.js`: Replace it with `MagicMirror²`.
 4. Recommendation: Found `XMLHttpRequest` in file `MMM-PlexNowPlaying.js`: Replace it with built-in fetch.
-5. Recommendation: Found `new Date()` in file `MMM-PlexNowPlaying.js`: Consider replacing it by `new Date(Date.now())`. It's helpfull for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
+5. Recommendation: Found `new Date()` in file `MMM-PlexNowPlaying.js`: Consider replacing it by `new Date(Date.now())`. It's helpful for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
 6. Outdated: Found `MichMich/MagicMirror` in file `README.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
-7. Recommendation: Found `new Date()` in file `axis.js`: Consider replacing it by `new Date(Date.now())`. It's helpfull for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
+7. Recommendation: Found `new Date()` in file `axis.js`: Consider replacing it by `new Date(Date.now())`. It's helpful for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
 8. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
 
 ### [MMM-PlexSlideshow by PjTewkesbury](https://github.com/PjTewkesbury/MMM-PlexSlideshow)
@@ -7559,20 +7845,20 @@ Last update: 2024-09-17T23:27:10+02:00
 0. This module is outdated: Deprecated. DarkSky API no longer works since 2023-03-31.
 1. There is no `package.json`. We need this file to gather information about the module for the module list page.
 2. Typo: Found `Magic Mirror` in file `MMM-PLOW.js`: Replace it with `MagicMirror²`.
-3. Recommendation: Found `new Date()` in file `MMM-PLOW.js`: Consider replacing it by `new Date(Date.now())`. It's helpfull for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
+3. Recommendation: Found `new Date()` in file `MMM-PLOW.js`: Consider replacing it by `new Date(Date.now())`. It's helpful for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
 4. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
 
 ### [PlutoTime by croxis](https://github.com/croxis/PlutoTime)
 
 1. Recommendation: Module name doesn't follow the recommended pattern (it doesn't start with `MMM-`). Consider renaming your module.
-2. Recommendation: Found `new Date()` in file `PlutoTime.js`: Consider replacing it by `new Date(Date.now())`. It's helpfull for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
+2. Recommendation: Found `new Date()` in file `PlutoTime.js`: Consider replacing it by `new Date(Date.now())`. It's helpful for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
 3. Warning: No LICENSE file.
 4. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
 
 ### [MMM-Podcast by ptrbld](https://github.com/ptrbld/MMM-Podcast)
 
 1. No image found.
-2. Recommendation: Found `new Date()` in file `MMM-Podcast.js`: Consider replacing it by `new Date(Date.now())`. It's helpfull for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
+2. Recommendation: Found `new Date()` in file `MMM-Podcast.js`: Consider replacing it by `new Date(Date.now())`. It's helpful for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
 3. Typo: Found `[MagicMirror]` in file `README.md`: Replace it with `[MagicMirror²]`.
 4. Deprecated: Found `omxplayer` in file `README.md`: Try to replace it with `vlc`.
 5. Outdated: Found `MichMich/MagicMirror` in file `README.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
@@ -7611,14 +7897,14 @@ Last update: 2024-09-17T23:27:10+02:00
 2. There are no keywords in 'package.json'. We would use them as tags on the module list page.
 3. Outdated: Found `MichMich/MagicMirror` in file `README.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
 4. Deprecated: Found `require('request')` in file `node_helper.js`: Replace it with built-in fetch.
-5. Recommendation: Found `new Date()` in file `node_helper.js`: Consider replacing it by `new Date(Date.now())`. It's helpfull for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
+5. Recommendation: Found `new Date()` in file `node_helper.js`: Consider replacing it by `new Date(Date.now())`. It's helpful for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
 6. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
 
 ### [MMM-pollen by devduisburg](https://github.com/devduisburg/MMM-pollen)
 
 1. There is no `package.json`. We need this file to gather information about the module for the module list page.
 2. Recommendation: Found `XMLHttpRequest` in file `MMM-pollen.js`: Replace it with built-in fetch.
-3. Recommendation: Found `new Date()` in file `MMM-pollen.js`: Consider replacing it by `new Date(Date.now())`. It's helpfull for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
+3. Recommendation: Found `new Date()` in file `MMM-pollen.js`: Consider replacing it by `new Date(Date.now())`. It's helpful for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
 4. Outdated: Found `MichMich/MagicMirror` in file `README.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
 5. Recommendation: The README seems not to have an update instruction (the word 'update' is missing). Please add one.
 6. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
@@ -7678,7 +7964,7 @@ Last update: 2024-09-17T23:27:10+02:00
 1. `package.json` issue: No repository field.
 2. There are no specific keywords in 'package.json'. We would use them as tags on the module list page. Add a few meaningful terms to the keywords in the package.json. Not just “magicmirror” or “module”.
 3. Typo: Found `Magic Mirror` in file `MMM-PostDelivery-Norway.js`: Replace it with `MagicMirror²`.
-4. Recommendation: Found `new Date()` in file `MMM-PostDelivery-Norway.js`: Consider replacing it by `new Date(Date.now())`. It's helpfull for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
+4. Recommendation: Found `new Date()` in file `MMM-PostDelivery-Norway.js`: Consider replacing it by `new Date(Date.now())`. It's helpful for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
 5. Typo: Found `MagicMirror2` in file `README.md`: Replace it with `MagicMirror²`.
 6. Typo: Found `<sup>2</sup>` in file `README.md`: Replace it with `²`.`.
 7. Outdated: Found `MichMich/MagicMirror` in file `README.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
@@ -7704,7 +7990,7 @@ Last update: 2024-09-17T23:27:10+02:00
 2. There are no keywords in 'package.json'. We would use them as tags on the module list page.
 3. Recommendation: Found `jshint` in file `Gruntfile.js`: Replace "jshint" by "eslint".
 4. Typo: Found `Magic Mirror` in file `MMM-Powerwall.js`: Replace it with `MagicMirror²`.
-5. Recommendation: Found `new Date()` in file `MMM-Powerwall.js`: Consider replacing it by `new Date(Date.now())`. It's helpfull for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
+5. Recommendation: Found `new Date()` in file `MMM-Powerwall.js`: Consider replacing it by `new Date(Date.now())`. It's helpful for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
 6. Typo: Found `Magic Mirror` in file `README.md`: Replace it with `MagicMirror²`.
 7. Outdated: Found `MichMich/MagicMirror` in file `README.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
 8. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
@@ -7738,7 +8024,7 @@ Last update: 2024-09-17T23:27:10+02:00
 
 1. There is no `package.json`. We need this file to gather information about the module for the module list page.
 2. Typo: Found `Magic Mirror` in file `MMM-Pregnancy.js`: Replace it with `MagicMirror²`.
-3. Recommendation: Found `new Date()` in file `MMM-Pregnancy.js`: Consider replacing it by `new Date(Date.now())`. It's helpfull for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
+3. Recommendation: Found `new Date()` in file `MMM-Pregnancy.js`: Consider replacing it by `new Date(Date.now())`. It's helpful for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
 4. Deprecated: Found `getYear()` in file `MMM-Pregnancy.js`: Replace `getYear()` by `getFullYear()`.
 5. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
 
@@ -7746,7 +8032,7 @@ Last update: 2024-09-17T23:27:10+02:00
 
 1. `package.json` issue: No repository field.
 2. Issues are not enabled in the GitHub repository. So users cannot report bugs. Please enable issues in your repo.
-3. Recommendation: Found `new Date()` in file `MMM-PrixCarburants.js`: Consider replacing it by `new Date(Date.now())`. It's helpfull for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
+3. Recommendation: Found `new Date()` in file `MMM-PrixCarburants.js`: Consider replacing it by `new Date(Date.now())`. It's helpful for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
 4. Information: There are updates for 8 dependencie(s):
    - @eslint/js                ^8.57.0  →  ^9.10.0
    - @stylistic/eslint-plugin   ^1.8.1  →   ^2.8.0
@@ -7784,7 +8070,7 @@ Last update: 2024-09-17T23:27:10+02:00
 
 1. There is no `package.json`. We need this file to gather information about the module for the module list page.
 2. Typo: Found `Magic Mirror` in file `MMM-Profilepicture.js`: Replace it with `MagicMirror²`.
-3. Recommendation: Found `new Date()` in file `MMM-Profilepicture.js`: Consider replacing it by `new Date(Date.now())`. It's helpfull for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
+3. Recommendation: Found `new Date()` in file `MMM-Profilepicture.js`: Consider replacing it by `new Date(Date.now())`. It's helpful for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
 4. Outdated: Found `MichMich/MagicMirror` in file `README.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
 5. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
 
@@ -7825,7 +8111,7 @@ Last update: 2024-09-17T23:27:10+02:00
 
 1. Issue: The license in the package.json (MIT) doesn't match the license file (GPL-3.0).
 2. No image found.
-3. Recommendation: Found `new Date()` in file `MMM-ProxyImage.js`: Consider replacing it by `new Date(Date.now())`. It's helpfull for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
+3. Recommendation: Found `new Date()` in file `MMM-ProxyImage.js`: Consider replacing it by `new Date(Date.now())`. It's helpful for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
 4. Typo: Found `Magic Mirror` in file `README.md`: Replace it with `MagicMirror²`.
 5. Typo: Found `Magic Mirror` in file `package.json`: Replace it with `MagicMirror²`.
 6. Recommendation: Replace eslintrc by new flat config.
@@ -7835,10 +8121,22 @@ Last update: 2024-09-17T23:27:10+02:00
 1. Typo: Found `[MagicMirror]` in file `README.md`: Replace it with `[MagicMirror²]`.
 2. Recommendation: Replace eslintrc by new flat config.
 
+### [MMM-PublicTransportHafas by KristjanESPERANTO](https://github.com/KristjanESPERANTO/MMM-PublicTransportHafas)
+
+1. Information: There are updates for 7 dependencie(s):
+   - @eslint/js                ^8.57.0  →   ^9.10.0
+   - @stylistic/eslint-plugin   ^2.6.4  →    ^2.8.0
+   - eslint                    ^8.57.0  →   ^9.10.0
+   - eslint-plugin-import      ^2.29.1  →   ^2.30.0
+   - husky                      ^9.1.5  →    ^9.1.6
+   - lint-staged               ^15.2.9  →  ^15.2.10
+   - stylelint                 ^16.8.2  →   ^16.9.0
+
+
 ### [MMM-PublicTransportVVO by ChristianGeie](https://github.com/ChristianGeie/MMM-PublicTransportVVO)
 
 1. Recommendation: Found `XMLHttpRequest` in file `MMM-PublicTransportVVO.js`: Replace it with built-in fetch.
-2. Recommendation: Found `new Date()` in file `MMM-PublicTransportVVO.js`: Consider replacing it by `new Date(Date.now())`. It's helpfull for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
+2. Recommendation: Found `new Date()` in file `MMM-PublicTransportVVO.js`: Consider replacing it by `new Date(Date.now())`. It's helpful for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
 3. Typo: Found `[MagicMirror]` in file `README.md`: Replace it with `[MagicMirror²]`.
 4. Outdated: Found `MichMich/MagicMirror` in file `README.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
 5. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
@@ -7883,13 +8181,13 @@ Last update: 2024-09-17T23:27:10+02:00
 
 1. Typo: Found `Magic Mirror` in file `MMM-PushBulletNotifications.css`: Replace it with `MagicMirror²`.
 2. Typo: Found `Magic Mirror` in file `MMM-PushBulletNotifications.js`: Replace it with `MagicMirror²`.
-3. Recommendation: Found `new Date()` in file `MMM-PushBulletNotifications.js`: Consider replacing it by `new Date(Date.now())`. It's helpfull for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
+3. Recommendation: Found `new Date()` in file `MMM-PushBulletNotifications.js`: Consider replacing it by `new Date(Date.now())`. It's helpful for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
 4. Recommendation: The README seems not to have an update instruction (the word 'update' is missing). Please add one.
 5. Recommendation: The README seems not to have an install instruction (the words 'install' or 'installation' are missing). Please add one.
 6. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
 7. Recommendation: Found `require('https')` in file `node_helper.js`: Replace 'https' by 'node:https'.
 8. Deprecated: Found `omxplayer` in file `node_helper.js`: Try to replace it with `vlc`.
-9. Recommendation: Found `new Date()` in file `node_helper.js`: Consider replacing it by `new Date(Date.now())`. It's helpfull for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
+9. Recommendation: Found `new Date()` in file `node_helper.js`: Consider replacing it by `new Date(Date.now())`. It's helpful for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
 10. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
 
 ### [MMM-qnapDownloadStation by flick116](https://github.com/flick116/MMM-qnapDownloadStation)
@@ -7926,6 +8224,12 @@ Last update: 2024-09-17T23:27:10+02:00
 3. Warning: No LICENSE file.
 4. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
 
+### [MMM-Quiz by Dennis-Rosenbaum](https://github.com/Dennis-Rosenbaum/MMM-Quiz)
+
+1. Information: There are updates for 1 dependencie(s):
+   - @stylistic/eslint-plugin  ^2.7.2  →  ^2.8.0
+
+
 ### [MMM-Quotable by dfanica](https://github.com/dfanica/MMM-Quotable)
 
 1. There is no `package.json`. We need this file to gather information about the module for the module list page.
@@ -7949,8 +8253,19 @@ Last update: 2024-09-17T23:27:10+02:00
 2. No image found.
 3. Recommendation: Found `require("http")` in file `node_helper.js`: Replace "http" by "node:http".
 4. Recommendation: Found `require("https")` in file `node_helper.js`: Replace "https" by "node:https".
-5. Recommendation: Found `new Date()` in file `node_helper.js`: Consider replacing it by `new Date(Date.now())`. It's helpfull for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
+5. Recommendation: Found `new Date()` in file `node_helper.js`: Consider replacing it by `new Date(Date.now())`. It's helpful for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
 6. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
+
+### [EXT-RadioPlayer by bugsounet](https://github.com/bugsounet/EXT-RadioPlayer)
+
+1. Information: There are updates for 6 dependencie(s):
+   - @eslint/js                ^8.57.0  →  ^9.10.0
+   - @stylistic/eslint-plugin   ^1.8.1  →   ^2.8.0
+   - esbuild                   ^0.22.0  →  ^0.23.1
+   - eslint                    ^8.57.0  →  ^9.10.0
+   - eslint-plugin-import      ^2.29.1  →  ^2.30.0
+   - glob                      ^10.4.2  →  ^11.0.0
+
 
 ### [MMM-RaiderIO by jwcnewton](https://github.com/jwcnewton/MMM-RaiderIO)
 
@@ -7969,6 +8284,16 @@ Last update: 2024-09-17T23:27:10+02:00
 3. Outdated: Found `MichMich/MagicMirror` in file `README.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
 4. Deprecated: Found `require('request')` in file `node_helper.js`: Replace it with built-in fetch.
 5. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
+
+### [MMM-RAIN-MAP by jalibu](https://github.com/jalibu/MMM-RAIN-MAP)
+
+1. Information: There are updates for 5 dependencie(s):
+   - @eslint/js          ^9.9.1  →  ^9.10.0
+   - eslint              ^9.9.1  →  ^9.10.0
+   - rollup             ^4.21.1  →  ^4.21.3
+   - typescript          ^5.5.4  →   ^5.6.2
+   - typescript-eslint   ^8.3.0  →   ^8.6.0
+
 
 ### [MMM-RAIN-RADAR by jojoduquartier](https://github.com/jojoduquartier/MMM-RAIN-RADAR)
 
@@ -8049,7 +8374,7 @@ Last update: 2024-09-17T23:27:10+02:00
 5. Outdated: Found `MichMich/MagicMirror` in file `README.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
 6. Recommendation: The README seems not to have an update instruction (the word 'update' is missing). Please add one.
 7. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
-8. Recommendation: Found `new Date()` in file `node_helper.js`: Consider replacing it by `new Date(Date.now())`. It's helpfull for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
+8. Recommendation: Found `new Date()` in file `node_helper.js`: Consider replacing it by `new Date(Date.now())`. It's helpful for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
 9. Recommendation: Replace eslintrc by new flat config.
 
 ### [MMM-RBB-Weather by nkl-kst](https://github.com/nkl-kst/MMM-RBB-Weather)
@@ -8057,7 +8382,7 @@ Last update: 2024-09-17T23:27:10+02:00
 1. There are no keywords in 'package.json'. We would use them as tags on the module list page.
 2. Typo: Found `Magic Mirror` in file `IconMapper.js`: Replace it with `MagicMirror²`.
 3. Typo: Found `Magic Mirror` in file `Logger.js`: Replace it with `MagicMirror²`.
-4. Recommendation: Found `new Date()` in file `Logger.js`: Consider replacing it by `new Date(Date.now())`. It's helpfull for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
+4. Recommendation: Found `new Date()` in file `Logger.js`: Consider replacing it by `new Date(Date.now())`. It's helpful for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
 5. Typo: Found `Magic Mirror` in file `MMM-RBB-Weather.css`: Replace it with `MagicMirror²`.
 6. Typo: Found `Magic Mirror` in file `MMM-RBB-Weather.js`: Replace it with `MagicMirror²`.
 7. Outdated: Found `MichMich/MagicMirror` in file `README.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
@@ -8108,7 +8433,7 @@ Last update: 2024-09-17T23:27:10+02:00
 2. There are no keywords in 'package.json'. We would use them as tags on the module list page.
 3. No image found.
 4. Typo: Found `Magic Mirror` in file `MMM-Reddit.js`: Replace it with `MagicMirror²`.
-5. Recommendation: Found `new Date()` in file `MMM-Reddit.js`: Consider replacing it by `new Date(Date.now())`. It's helpfull for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
+5. Recommendation: Found `new Date()` in file `MMM-Reddit.js`: Consider replacing it by `new Date(Date.now())`. It's helpful for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
 6. Typo: Found `Magic Mirror` in file `README.md`: Replace it with `MagicMirror²`.
 7. Typo: Found `<sup>2</sup>` in file `README.md`: Replace it with `²`.`.
 8. Outdated: Found `MichMich/MagicMirror` in file `README.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
@@ -8146,7 +8471,7 @@ Last update: 2024-09-17T23:27:10+02:00
 
 1. There is no `package.json`. We need this file to gather information about the module for the module list page.
 2. Typo: Found `Magic Mirror` in file `MMM-Regenradar.js`: Replace it with `MagicMirror²`.
-3. Recommendation: Found `new Date()` in file `MMM-Regenradar.js`: Consider replacing it by `new Date(Date.now())`. It's helpfull for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
+3. Recommendation: Found `new Date()` in file `MMM-Regenradar.js`: Consider replacing it by `new Date(Date.now())`. It's helpful for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
 4. Outdated: Found `MichMich/MagicMirror` in file `README.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
 5. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
 
@@ -8174,7 +8499,7 @@ Last update: 2024-09-17T23:27:10+02:00
 12. Recommendation: Found `jshint` in file `remote.js`: Replace "jshint" by "eslint".
 13. Recommendation: Found `"node-fetch"` in file `download_modules.js`: Replace it with built-in fetch.
 14. Recommendation: Found `jshint` in file `download_modules.js`: Replace "jshint" by "eslint".
-15. Recommendation: Found `new Date()` in file `download_modules.js`: Consider replacing it by `new Date(Date.now())`. It's helpfull for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
+15. Recommendation: Found `new Date()` in file `download_modules.js`: Consider replacing it by `new Date(Date.now())`. It's helpful for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
 16. Outdated: Found `MichMich/MagicMirror` in file `download_modules.js`: Replace it by `MagicMirrorOrg/MagicMirror`.
 17. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
 
@@ -8208,7 +8533,7 @@ Last update: 2024-09-17T23:27:10+02:00
 1. Outdated: Found `MichMich/MagicMirror` in file `MMM-RepoStats.js`: Replace it by `MagicMirrorOrg/MagicMirror`.
 2. Outdated: Found `MichMich/MagicMirror` in file `README.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
 3. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
-4. Recommendation: Found `new Date()` in file `node_helper.js`: Consider replacing it by `new Date(Date.now())`. It's helpfull for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
+4. Recommendation: Found `new Date()` in file `node_helper.js`: Consider replacing it by `new Date(Date.now())`. It's helpful for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
 5. Typo: Found `MagicMirror2` in file `package.json`: Replace it with `MagicMirror²`.
 6. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
 
@@ -8226,7 +8551,7 @@ Last update: 2024-09-17T23:27:10+02:00
 1. Typo: Found `[MagicMirror]` in file `README.md`: Replace it with `[MagicMirror²]`.
 2. Outdated: Found `MichMich/MagicMirror` in file `README.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
 3. Recommendation: The README seems not to have an update instruction (the word 'update' is missing). Please add one.
-4. Recommendation: Found `new Date()` in file `fetcher.js`: Consider replacing it by `new Date(Date.now())`. It's helpfull for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
+4. Recommendation: Found `new Date()` in file `fetcher.js`: Consider replacing it by `new Date(Date.now())`. It's helpful for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
 5. Recommendation: Replace eslintrc by new flat config.
 
 ### [MMM-ResRobot by Alvinger](https://github.com/Alvinger/MMM-ResRobot)
@@ -8242,7 +8567,7 @@ Last update: 2024-09-17T23:27:10+02:00
 
 ### [MMM-Rest by Tuxdiver](https://github.com/Tuxdiver/MMM-Rest)
 
-1. Recommendation: Found `new Date()` in file `README.md`: Consider replacing it by `new Date(Date.now())`. It's helpfull for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
+1. Recommendation: Found `new Date()` in file `README.md`: Consider replacing it by `new Date(Date.now())`. It's helpful for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
 2. Deprecated: Found `require('request')` in file `node_helper.js`: Replace it with built-in fetch.
 3. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
 
@@ -8262,7 +8587,7 @@ Last update: 2024-09-17T23:27:10+02:00
 4. Outdated: Found `MichMich/MagicMirror` in file `README.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
 5. Recommendation: The README seems not to have an update instruction (the word 'update' is missing). Please add one.
 6. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
-7. Recommendation: Found `new Date()` in file `node_helper.js`: Consider replacing it by `new Date(Date.now())`. It's helpfull for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
+7. Recommendation: Found `new Date()` in file `node_helper.js`: Consider replacing it by `new Date(Date.now())`. It's helpful for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
 8. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
 
 ### [MMM-RingAlarm by parnic](https://github.com/parnic/MMM-RingAlarm)
@@ -8285,7 +8610,7 @@ Last update: 2024-09-17T23:27:10+02:00
 ### [MMM-RMV by Com-Lum](https://github.com/Com-Lum/MMM-RMV)
 
 1. Typo: Found `Magic Mirror` in file `MMM-RMV.js`: Replace it with `MagicMirror²`.
-2. Recommendation: Found `new Date()` in file `MMM-RMV.js`: Consider replacing it by `new Date(Date.now())`. It's helpfull for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
+2. Recommendation: Found `new Date()` in file `MMM-RMV.js`: Consider replacing it by `new Date(Date.now())`. It's helpful for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
 3. Typo: Found `<sup>2</sup>` in file `README.md`: Replace it with `²`.`.
 4. Outdated: Found `MichMich/MagicMirror` in file `README.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
 5. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
@@ -8315,7 +8640,7 @@ Last update: 2024-09-17T23:27:10+02:00
 10. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
 11. Deprecated: Found `require('request')` in file `node_helper.js`: Replace it with built-in fetch.
 12. Recommendation: Found `'node-fetch'` in file `node_helper.js`: Replace it with built-in fetch.
-13. Recommendation: Found `new Date()` in file `node_helper.js`: Consider replacing it by `new Date(Date.now())`. It's helpfull for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
+13. Recommendation: Found `new Date()` in file `node_helper.js`: Consider replacing it by `new Date(Date.now())`. It's helpful for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
 14. Recommendation: Found `"node-fetch"` in file `package.json`: Replace it with built-in fetch.
 15. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
 
@@ -8324,7 +8649,7 @@ Last update: 2024-09-17T23:27:10+02:00
 1. Issues are not enabled in the GitHub repository. So users cannot report bugs. Please enable issues in your repo.
 2. No image found.
 3. Typo: Found `Magic Mirror` in file `MMM-RNV.js`: Replace it with `MagicMirror²`.
-4. Recommendation: Found `new Date()` in file `MMM-RNV.js`: Consider replacing it by `new Date(Date.now())`. It's helpfull for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
+4. Recommendation: Found `new Date()` in file `MMM-RNV.js`: Consider replacing it by `new Date(Date.now())`. It's helpful for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
 5. Typo: Found `[MagicMirror]` in file `README.md`: Replace it with `[MagicMirror²]`.
 6. Outdated: Found `MichMich/MagicMirror` in file `README.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
 7. Recommendation: The README seems not to have an update instruction (the word 'update' is missing). Please add one.
@@ -8398,7 +8723,7 @@ Last update: 2024-09-17T23:27:10+02:00
 1. There is no `package.json`. We need this file to gather information about the module for the module list page.
 2. No image found.
 3. Recommendation: Found `XMLHttpRequest` in file `feednami.js`: Replace it with built-in fetch.
-4. Recommendation: Found `new Date()` in file `feednami.js`: Consider replacing it by `new Date(Date.now())`. It's helpfull for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
+4. Recommendation: Found `new Date()` in file `feednami.js`: Consider replacing it by `new Date(Date.now())`. It's helpful for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
 5. Recommendation: Found `XMLHttpRequest` in file `jquery-3.1.1.min.js`: Replace it with built-in fetch.
 6. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
 
@@ -8447,7 +8772,7 @@ Last update: 2024-09-17T23:27:10+02:00
 4. Typo: Found `Magic Mirror` in file `README.md`: Replace it with `MagicMirror²`.
 5. Recommendation: The README seems not to have an install instruction (the words 'install' or 'installation' are missing). Please add one.
 6. Typo: Found `Magic Mirror` in file `RubishCollection.js`: Replace it with `MagicMirror²`.
-7. Recommendation: Found `new Date()` in file `RubishCollection.js`: Consider replacing it by `new Date(Date.now())`. It's helpfull for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
+7. Recommendation: Found `new Date()` in file `RubishCollection.js`: Consider replacing it by `new Date(Date.now())`. It's helpful for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
 8. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
 9. Deprecated: Found `require('request')` in file `node_helper.js`: Replace it with built-in fetch.
 10. Deprecated: Found `"grunt"` in file `package.json`: Grunt is practically unmaintained. Move on to something better.
@@ -8455,7 +8780,7 @@ Last update: 2024-09-17T23:27:10+02:00
 
 ### [MMM-Rugby by mumblebaj](https://github.com/mumblebaj/MMM-Rugby)
 
-1. Recommendation: Found `new Date()` in file `MMM-Rugby.js`: Consider replacing it by `new Date(Date.now())`. It's helpfull for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
+1. Recommendation: Found `new Date()` in file `MMM-Rugby.js`: Consider replacing it by `new Date(Date.now())`. It's helpful for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
 2. Recommendation: Found `"node-fetch"` in file `README.md`: Replace it with built-in fetch.
 3. Recommendation: Found `'node-fetch'` in file `node_helper.js`: Replace it with built-in fetch.
 4. Recommendation: Found `"node-fetch"` in file `package.json`: Replace it with built-in fetch.
@@ -8484,7 +8809,7 @@ Last update: 2024-09-17T23:27:10+02:00
 2. Typo: Found `<sup>2</sup>` in file `README.md`: Replace it with `²`.`.
 3. Outdated: Found `MichMich/MagicMirror` in file `README.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
 4. Typo: Found `Magic Mirror` in file `RVVHelper.js`: Replace it with `MagicMirror²`.
-5. Recommendation: Found `new Date()` in file `RVVHelper.js`: Consider replacing it by `new Date(Date.now())`. It's helpfull for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
+5. Recommendation: Found `new Date()` in file `RVVHelper.js`: Consider replacing it by `new Date(Date.now())`. It's helpful for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
 6. Deprecated: Found `require("request")` in file `node_helper.js`: Replace it with built-in fetch.
 7. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
 
@@ -8504,7 +8829,7 @@ Last update: 2024-09-17T23:27:10+02:00
 
 1. There is no `package.json`. We need this file to gather information about the module for the module list page.
 2. Typo: Found `Magic Mirror` in file `MMM-Sbanken.js`: Replace it with `MagicMirror²`.
-3. Recommendation: Found `new Date()` in file `MMM-Sbanken.js`: Consider replacing it by `new Date(Date.now())`. It's helpfull for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
+3. Recommendation: Found `new Date()` in file `MMM-Sbanken.js`: Consider replacing it by `new Date(Date.now())`. It's helpful for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
 4. Typo: Found `Magic Mirror` in file `README.md`: Replace it with `MagicMirror²`.
 5. Typo: Found `<sup>2</sup>` in file `README.md`: Replace it with `²`.`.
 6. Outdated: Found `MichMich/MagicMirror` in file `README.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
@@ -8518,6 +8843,14 @@ Last update: 2024-09-17T23:27:10+02:00
 2. Recommendation: The README seems not to have an update instruction (the word 'update' is missing). Please add one.
 3. Typo: Found `Magic Mirror` in file `config.js`: Replace it with `MagicMirror²`.
 4. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
+
+### [MMM-Scenes2 by MMRIZE](https://github.com/MMRIZE/MMM-Scenes2)
+
+1. Information: There are updates for 3 dependencie(s):
+   - @eslint/js    ^9.8.0  →  ^9.10.0
+   - body-parser  ^1.20.2  →  ^1.20.3
+   - eslint        ^9.8.0  →  ^9.10.0
+
 
 ### [MMM-ScottishPremierLeague by fewieden](https://github.com/fewieden/MMM-ScottishPremierLeague)
 
@@ -8588,7 +8921,7 @@ Last update: 2024-09-17T23:27:10+02:00
 3. Recommendation: Found `jshint` in file `Gruntfile.js`: Replace "jshint" by "eslint".
 4. Typo: Found `Magic Mirror` in file `MMM-SE-Reputation.js`: Replace it with `MagicMirror²`.
 5. Recommendation: Found `XMLHttpRequest` in file `MMM-SE-Reputation.js`: Replace it with built-in fetch.
-6. Recommendation: Found `new Date()` in file `MMM-SE-Reputation.js`: Consider replacing it by `new Date(Date.now())`. It's helpfull for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
+6. Recommendation: Found `new Date()` in file `MMM-SE-Reputation.js`: Consider replacing it by `new Date(Date.now())`. It's helpful for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
 7. Outdated: Found `MichMich/MagicMirror` in file `README.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
 8. Deprecated: Found `"grunt"` in file `package.json`: Grunt is practically unmaintained. Move on to something better.
 9. Recommendation: Replace eslintrc by new flat config.
@@ -8665,6 +8998,17 @@ Last update: 2024-09-17T23:27:10+02:00
    - nodemailer                ^6.9.14  →  ^6.9.15
 
 
+### [EXT-SelfiesViewer by bugsounet](https://github.com/bugsounet/EXT-SelfiesViewer)
+
+1. Information: There are updates for 6 dependencie(s):
+   - @eslint/js                ^8.57.0  →  ^9.10.0
+   - @stylistic/eslint-plugin   ^1.8.1  →   ^2.8.0
+   - esbuild                   ^0.22.0  →  ^0.23.1
+   - eslint                    ^8.57.0  →  ^9.10.0
+   - eslint-plugin-import      ^2.29.1  →  ^2.30.0
+   - glob                      ^10.4.2  →  ^11.0.0
+
+
 ### [MMM-SendNotificationButton by ralberth](https://github.com/ralberth/MMM-SendNotificationButton)
 
 1. There is no `package.json`. We need this file to gather information about the module for the module list page.
@@ -8732,7 +9076,7 @@ Last update: 2024-09-17T23:27:10+02:00
 
 1. There are no keywords in 'package.json'. We would use them as tags on the module list page.
 2. Typo: Found `Magic Mirror` in file `MMM-SG-Transport-V2.js`: Replace it with `MagicMirror²`.
-3. Recommendation: Found `new Date()` in file `MMM-SG-Transport-V2.js`: Consider replacing it by `new Date(Date.now())`. It's helpfull for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
+3. Recommendation: Found `new Date()` in file `MMM-SG-Transport-V2.js`: Consider replacing it by `new Date(Date.now())`. It's helpful for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
 4. Typo: Found `<sup>2</sup>` in file `README.md`: Replace it with `²`.`.
 5. Outdated: Found `MichMich/MagicMirror` in file `README.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
 6. Recommendation: The README seems not to have an update instruction (the word 'update' is missing). Please add one.
@@ -8753,7 +9097,7 @@ Last update: 2024-09-17T23:27:10+02:00
 
 1. There is no `package.json`. We need this file to gather information about the module for the module list page.
 2. Typo: Found `Magic Mirror` in file `MMM-ShairportMetadata.js`: Replace it with `MagicMirror²`.
-3. Recommendation: Found `new Date()` in file `MMM-ShairportMetadata.js`: Consider replacing it by `new Date(Date.now())`. It's helpfull for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
+3. Recommendation: Found `new Date()` in file `MMM-ShairportMetadata.js`: Consider replacing it by `new Date(Date.now())`. It's helpful for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
 4. Outdated: Found `MichMich/MagicMirror` in file `README.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
 5. Recommendation: The README seems not to have an update instruction (the word 'update' is missing). Please add one.
 6. Recommendation: The README seems not to have an install instruction (the words 'install' or 'installation' are missing). Please add one.
@@ -8772,7 +9116,7 @@ Last update: 2024-09-17T23:27:10+02:00
 4. Typo: Found `Magic Mirror` in file `README.md`: Replace it with `MagicMirror²`.
 5. Recommendation: The README seems not to have an update instruction (the word 'update' is missing). Please add one.
 6. Deprecated: Found `require('request')` in file `node_helper.js`: Replace it with built-in fetch.
-7. Recommendation: Found `new Date()` in file `node_helper.js`: Consider replacing it by `new Date(Date.now())`. It's helpfull for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
+7. Recommendation: Found `new Date()` in file `node_helper.js`: Consider replacing it by `new Date(Date.now())`. It's helpful for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
 8. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
 
 ### [MMM-Shelly-PM by stefanjacobs](https://github.com/stefanjacobs/MMM-Shelly-PM)
@@ -8784,7 +9128,7 @@ Last update: 2024-09-17T23:27:10+02:00
 5. Typo: Found `Magic Mirror` in file `README.md`: Replace it with `MagicMirror²`.
 6. Recommendation: The README seems not to have an update instruction (the word 'update' is missing). Please add one.
 7. Deprecated: Found `require('request')` in file `node_helper.js`: Replace it with built-in fetch.
-8. Recommendation: Found `new Date()` in file `node_helper.js`: Consider replacing it by `new Date(Date.now())`. It's helpfull for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
+8. Recommendation: Found `new Date()` in file `node_helper.js`: Consider replacing it by `new Date(Date.now())`. It's helpful for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
 9. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
 
 ### [MMM-ShellyEMMeter by mgarrix](https://github.com/mgarrix/MMM-ShellyEMMeter)
@@ -8801,7 +9145,7 @@ Last update: 2024-09-17T23:27:10+02:00
 1. There is no `package.json`. We need this file to gather information about the module for the module list page.
 2. Typo: Found `Magic Mirror` in file `README.md`: Replace it with `MagicMirror²`.
 3. Deprecated: Found `require('request')` in file `node_helper.js`: Replace it with built-in fetch.
-4. Recommendation: Found `new Date()` in file `node_helper.js`: Consider replacing it by `new Date(Date.now())`. It's helpfull for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
+4. Recommendation: Found `new Date()` in file `node_helper.js`: Consider replacing it by `new Date(Date.now())`. It's helpful for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
 5. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
 
 ### [MMM-ShipmentTracking by fewieden](https://github.com/fewieden/MMM-ShipmentTracking)
@@ -8813,11 +9157,11 @@ Last update: 2024-09-17T23:27:10+02:00
 5. Typo: Found `Magic Mirror` in file `17track.js`: Replace it with `MagicMirror²`.
 6. Deprecated: Found `require('request')` in file `17track.js`: Replace it with built-in fetch.
 7. Recommendation: Found `XMLHttpRequest` in file `17track.js`: Replace it with built-in fetch.
-8. Recommendation: Found `new Date()` in file `17track.js`: Consider replacing it by `new Date(Date.now())`. It's helpfull for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
+8. Recommendation: Found `new Date()` in file `17track.js`: Consider replacing it by `new Date(Date.now())`. It's helpful for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
 9. Typo: Found `Magic Mirror` in file `DHL.js`: Replace it with `MagicMirror²`.
-10. Recommendation: Found `new Date()` in file `DHL.js`: Consider replacing it by `new Date(Date.now())`. It's helpfull for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
+10. Recommendation: Found `new Date()` in file `DHL.js`: Consider replacing it by `new Date(Date.now())`. It's helpful for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
 11. Typo: Found `Magic Mirror` in file `Landmark.js`: Replace it with `MagicMirror²`.
-12. Recommendation: Found `new Date()` in file `Landmark.js`: Consider replacing it by `new Date(Date.now())`. It's helpfull for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
+12. Recommendation: Found `new Date()` in file `Landmark.js`: Consider replacing it by `new Date(Date.now())`. It's helpful for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
 13. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
 14. Typo: Found `MagicMirror2` in file `package.json`: Replace it with `MagicMirror²`.
 15. Recommendation: Replace eslintrc by new flat config.
@@ -8857,7 +9201,7 @@ Last update: 2024-09-17T23:27:10+02:00
 ### [MMM-SimpleNotifyTrashDay by sabo10o29](https://github.com/sabo10o29/MMM-SimpleNotifyTrashDay)
 
 1. Typo: Found `Magic Mirror` in file `MMM-SimpleNotifyTrashDay.js`: Replace it with `MagicMirror²`.
-2. Recommendation: Found `new Date()` in file `MMM-SimpleNotifyTrashDay.js`: Consider replacing it by `new Date(Date.now())`. It's helpfull for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
+2. Recommendation: Found `new Date()` in file `MMM-SimpleNotifyTrashDay.js`: Consider replacing it by `new Date(Date.now())`. It's helpful for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
 3. Recommendation: The README seems not to have an update instruction (the word 'update' is missing). Please add one.
 4. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
 5. Found directory `node_modules`. This shouldn't be uploaded. Add `node_modules/`to `.gitignore`.
@@ -8902,17 +9246,17 @@ Last update: 2024-09-17T23:27:10+02:00
 3. Issue: The license in the package.json (ISC) doesn't match the license file (MIT).
 4. Typo: Found `Magic Mirror` in file `MMM-Skyss.js`: Replace it with `MagicMirror²`.
 5. Recommendation: Found `XMLHttpRequest` in file `MMM-Skyss.js`: Replace it with built-in fetch.
-6. Recommendation: Found `new Date()` in file `MMM-Skyss.js`: Consider replacing it by `new Date(Date.now())`. It's helpfull for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
+6. Recommendation: Found `new Date()` in file `MMM-Skyss.js`: Consider replacing it by `new Date(Date.now())`. It's helpful for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
 7. Recommendation: Found `require("https")` in file `node_helper.js`: Replace "https" by "node:https".
 8. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
 
 ### [MMM-SL-PublicTransport by ulrichwisser](https://github.com/ulrichwisser/MMM-SL-PublicTransport)
 
 1. Typo: Found `Magic Mirror` in file `MMM-SL-PublicTransport.js`: Replace it with `MagicMirror²`.
-2. Recommendation: Found `new Date()` in file `MMM-SL-PublicTransport.js`: Consider replacing it by `new Date(Date.now())`. It's helpfull for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
+2. Recommendation: Found `new Date()` in file `MMM-SL-PublicTransport.js`: Consider replacing it by `new Date(Date.now())`. It's helpful for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
 3. Typo: Found `Magic Mirror` in file `README.md`: Replace it with `MagicMirror²`.
 4. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
-5. Recommendation: Found `new Date()` in file `node_helper.js`: Consider replacing it by `new Date(Date.now())`. It's helpfull for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
+5. Recommendation: Found `new Date()` in file `node_helper.js`: Consider replacing it by `new Date(Date.now())`. It's helpful for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
 6. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
 
 ### [MMM-Slack2 by Jupter1](https://github.com/Jupter1/MMM-Slack2)
@@ -8947,10 +9291,10 @@ Last update: 2024-09-17T23:27:10+02:00
 3. Typo: Found `<sup>2</sup>` in file `README.md`: Replace it with `²`.`.
 4. Outdated: Found `MichMich/MagicMirror` in file `README.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
 5. Recommendation: Found `'node-fetch'` in file `SleeperAPI.js`: Replace it with built-in fetch.
-6. Recommendation: Found `new Date()` in file `SleeperAPI.js`: Consider replacing it by `new Date(Date.now())`. It's helpfull for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
+6. Recommendation: Found `new Date()` in file `SleeperAPI.js`: Consider replacing it by `new Date(Date.now())`. It's helpful for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
 7. Recommendation: Found `'node-fetch'` in file `espn.js`: Replace it with built-in fetch.
 8. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
-9. Recommendation: Found `new Date()` in file `node_helper.js`: Consider replacing it by `new Date(Date.now())`. It's helpfull for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
+9. Recommendation: Found `new Date()` in file `node_helper.js`: Consider replacing it by `new Date(Date.now())`. It's helpful for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
 10. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
 
 ### [MMM-SleepWake by sdetweil](https://github.com/sdetweil/MMM-SleepWake)
@@ -8968,9 +9312,23 @@ Last update: 2024-09-17T23:27:10+02:00
 2. Typo: Found `Magic Mirror` in file `MMM-Smappee.js`: Replace it with `MagicMirror²`.
 3. Recommendation: The README seems not to have an update instruction (the word 'update' is missing). Please add one.
 4. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
-5. Recommendation: Found `new Date()` in file `node_helper.js`: Consider replacing it by `new Date(Date.now())`. It's helpfull for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
+5. Recommendation: Found `new Date()` in file `node_helper.js`: Consider replacing it by `new Date(Date.now())`. It's helpful for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
 6. Typo: Found `Magic Mirror` in file `package.json`: Replace it with `MagicMirror²`.
 7. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
+
+### [EXT-SmartHome by bugsounet](https://github.com/bugsounet/EXT-SmartHome)
+
+1. Information: There are updates for 9 dependencie(s):
+   - @eslint/js                 ^8.57.0  →   ^9.10.0
+   - @stylistic/eslint-plugin    ^1.8.1  →    ^2.8.0
+   - body-parser                ^1.20.2  →   ^1.20.3
+   - esbuild                    ^0.21.5  →   ^0.23.1
+   - eslint                     ^8.57.0  →   ^9.10.0
+   - eslint-plugin-import       ^2.29.1  →   ^2.30.0
+   - glob                       ^10.4.2  →   ^11.0.0
+   - google-auth-library        ^9.11.0  →   ^9.14.1
+   - googleapis                ^140.0.1  →  ^144.0.0
+
 
 ### [MMM-SmartTouch by EbenKouao](https://github.com/EbenKouao/MMM-SmartTouch)
 
@@ -8987,7 +9345,7 @@ Last update: 2024-09-17T23:27:10+02:00
 
 1. No image found.
 2. Typo: Found `Magic Mirror` in file `MMM-SmartWebDisplay.js`: Replace it with `MagicMirror²`.
-3. Recommendation: Found `new Date()` in file `MMM-SmartWebDisplay.js`: Consider replacing it by `new Date(Date.now())`. It's helpfull for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
+3. Recommendation: Found `new Date()` in file `MMM-SmartWebDisplay.js`: Consider replacing it by `new Date(Date.now())`. It's helpful for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
 4. Typo: Found `Magic Mirror` in file `README.md`: Replace it with `MagicMirror²`.
 5. Typo: Found `[MagicMirror]` in file `README.md`: Replace it with `[MagicMirror²]`.
 6. Outdated: Found `MichMich/MagicMirror` in file `README.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
@@ -9017,7 +9375,7 @@ Last update: 2024-09-17T23:27:10+02:00
 3. Recommendation: The README seems not to have an update instruction (the word 'update' is missing). Please add one.
 4. Recommendation: Found local copy of `jquery.js`. Instead of a local copy, it would be better to add jQuery to the dependencies in `package.json`.
 5. Outdated: Local jQuery file `jquery.js` seems to be outdated. jQuery v3.7 or higher is recommended.
-6. Recommendation: Found `new Date()` in file `node_helper.js`: Consider replacing it by `new Date(Date.now())`. It's helpfull for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
+6. Recommendation: Found `new Date()` in file `node_helper.js`: Consider replacing it by `new Date(Date.now())`. It's helpful for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
 7. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
 
 ### [MMM-Snow by MichMich](https://github.com/MichMich/MMM-Snow)
@@ -9044,7 +9402,7 @@ Last update: 2024-09-17T23:27:10+02:00
 ### [MMM-SoccerLiveScore by 0m4r](https://github.com/0m4r/MMM-SoccerLiveScore)
 
 1. Recommendation: The README seems not to have an update instruction (the word 'update' is missing). Please add one.
-2. Recommendation: Found `new Date()` in file `node_helper.js`: Consider replacing it by `new Date(Date.now())`. It's helpfull for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
+2. Recommendation: Found `new Date()` in file `node_helper.js`: Consider replacing it by `new Date(Date.now())`. It's helpful for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
 3. Recommendation: Replace eslintrc by new flat config.
 
 ### [MMM-social-counter by ngnijland](https://github.com/ngnijland/MMM-social-counter)
@@ -9088,7 +9446,7 @@ Last update: 2024-09-17T23:27:10+02:00
 7. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
 8. Recommendation: Found `require("http")` in file `node_helper.js`: Replace "http" by "node:http".
 9. Recommendation: Found `require("https")` in file `node_helper.js`: Replace "https" by "node:https".
-10. Recommendation: Found `new Date()` in file `node_helper.js`: Consider replacing it by `new Date(Date.now())`. It's helpfull for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
+10. Recommendation: Found `new Date()` in file `node_helper.js`: Consider replacing it by `new Date(Date.now())`. It's helpful for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
 11. Deprecated: Found `"grunt"` in file `package.json`: Grunt is practically unmaintained. Move on to something better.
 12. Recommendation: Replace eslintrc by new flat config.
 
@@ -9141,7 +9499,7 @@ Last update: 2024-09-17T23:27:10+02:00
 6. Typo: Found `[MagicMirror]` in file `README.md`: Replace it with `[MagicMirror²]`.
 7. Outdated: Found `MichMich/MagicMirror` in file `README.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
 8. Recommendation: Found `require('https')` in file `node_helper.js`: Replace 'https' by 'node:https'.
-9. Recommendation: Found `new Date()` in file `node_helper.js`: Consider replacing it by `new Date(Date.now())`. It's helpfull for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
+9. Recommendation: Found `new Date()` in file `node_helper.js`: Consider replacing it by `new Date(Date.now())`. It's helpful for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
 10. Deprecated: Found `npm install electron-rebuild` in file `postinstall`: Replace it with `@electron/rebuild`
 11. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
 
@@ -9151,7 +9509,7 @@ Last update: 2024-09-17T23:27:10+02:00
 2. No image found.
 3. Recommendation: Found `require("http")` in file `node_helper.js`: Replace "http" by "node:http".
 4. Recommendation: Found `require("https")` in file `node_helper.js`: Replace "https" by "node:https".
-5. Recommendation: Found `new Date()` in file `node_helper.js`: Consider replacing it by `new Date(Date.now())`. It's helpfull for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
+5. Recommendation: Found `new Date()` in file `node_helper.js`: Consider replacing it by `new Date(Date.now())`. It's helpful for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
 6. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
 
 ### [MMM-Sonos by CFenner](https://github.com/CFenner/MMM-Sonos)
@@ -9234,6 +9592,30 @@ Last update: 2024-09-17T23:27:10+02:00
    - open   ^6.4.0  →  ^10.1.0
 
 
+### [EXT-Spotify by bugsounet](https://github.com/bugsounet/EXT-Spotify)
+
+1. Information: There are updates for 7 dependencie(s):
+   - @eslint/js                ^8.57.0  →  ^9.10.0
+   - @stylistic/eslint-plugin   ^1.8.1  →   ^2.8.0
+   - esbuild                   ^0.22.0  →  ^0.23.1
+   - eslint                    ^8.57.0  →  ^9.10.0
+   - eslint-plugin-import      ^2.29.1  →  ^2.30.0
+   - express                   ^4.19.2  →  ^4.21.0
+   - glob                      ^10.4.2  →  ^11.0.0
+
+
+### [EXT-SpotifyCanvasLyrics by bugsounet](https://github.com/bugsounet/EXT-SpotifyCanvasLyrics)
+
+1. Information: There are updates for 7 dependencie(s):
+   - @eslint/js                ^8.57.0  →  ^9.10.0
+   - @stylistic/eslint-plugin   ^1.8.1  →   ^2.8.0
+   - esbuild                   ^0.22.0  →  ^0.23.1
+   - eslint                    ^8.57.0  →  ^9.10.0
+   - eslint-plugin-import      ^2.29.1  →  ^2.30.0
+   - glob                      ^10.4.2  →  ^11.0.0
+   - protobufjs                 ^7.3.2  →   ^7.4.0
+
+
 ### [MMM-SpotifyConnectUI by CatoAntonsen](https://github.com/CatoAntonsen/MMM-SpotifyConnectUI)
 
 1. There is no `package.json`. We need this file to gather information about the module for the module list page.
@@ -9253,7 +9635,7 @@ Last update: 2024-09-17T23:27:10+02:00
 ### [MMM-SpotifyReleases by Ruud14](https://github.com/Ruud14/MMM-SpotifyReleases)
 
 1. No image found.
-2. Recommendation: Found `new Date()` in file `MMM-SpotifyReleases.js`: Consider replacing it by `new Date(Date.now())`. It's helpfull for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
+2. Recommendation: Found `new Date()` in file `MMM-SpotifyReleases.js`: Consider replacing it by `new Date(Date.now())`. It's helpful for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
 3. Deprecated: Found `new Buffer(` in file `SpotifyConnector.js`: This is deprecated. Please update: <https://nodejs.org/api/buffer.html>.
 4. Recommendation: Found `XMLHttpRequest` in file `SpotifyConnector.js`: Replace it with built-in fetch.
 5. Deprecated: Found `new Buffer(` in file `app.js`: This is deprecated. Please update: <https://nodejs.org/api/buffer.html>.
@@ -9265,7 +9647,7 @@ Last update: 2024-09-17T23:27:10+02:00
 ### [MMM-Star-Metro by alexandreLavenant](https://github.com/alexandreLavenant/MMM-Star-Metro)
 
 1. There is no `package.json`. We need this file to gather information about the module for the module list page.
-2. Recommendation: Found `new Date()` in file `MMM-Star-Metro.js`: Consider replacing it by `new Date(Date.now())`. It's helpfull for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
+2. Recommendation: Found `new Date()` in file `MMM-Star-Metro.js`: Consider replacing it by `new Date(Date.now())`. It's helpful for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
 3. Outdated: Found `MichMich/MagicMirror` in file `README.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
 4. Warning: No LICENSE file.
 5. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
@@ -9305,7 +9687,7 @@ Last update: 2024-09-17T23:27:10+02:00
 ### [MMM-stib2 by bendardenne](https://github.com/bendardenne/MMM-stib2)
 
 1. Recommendation: Found `jshint` in file `Gruntfile.js`: Replace "jshint" by "eslint".
-2. Recommendation: Found `new Date()` in file `MMM-stib2.js`: Consider replacing it by `new Date(Date.now())`. It's helpfull for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
+2. Recommendation: Found `new Date()` in file `MMM-stib2.js`: Consider replacing it by `new Date(Date.now())`. It's helpful for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
 3. Outdated: Found `MichMich/MagicMirror` in file `README.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
 4. Recommendation: The README seems not to have an update instruction (the word 'update' is missing). Please add one.
 5. Recommendation: The README seems not to have an install instruction (the words 'install' or 'installation' are missing). Please add one.
@@ -9323,7 +9705,7 @@ Last update: 2024-09-17T23:27:10+02:00
 
 ### [MMM-stoic-quotes by pal-thomassen](https://github.com/pal-thomassen/MMM-stoic-quotes)
 
-1. Recommendation: Found `new Date()` in file `MMM-stoic-quotes.js`: Consider replacing it by `new Date(Date.now())`. It's helpfull for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
+1. Recommendation: Found `new Date()` in file `MMM-stoic-quotes.js`: Consider replacing it by `new Date(Date.now())`. It's helpful for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
 2. Recommendation: The README seems not to have an update instruction (the word 'update' is missing). Please add one.
 3. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
 
@@ -9347,12 +9729,12 @@ Last update: 2024-09-17T23:27:10+02:00
 
 1. Recommendation: Found `uses: actions/checkout@v2` in file `node.js.yml`: Replace it with v4.
 2. Outdated: Found `MichMich/MagicMirror` in file `node.js.yml`: Replace it by `MagicMirrorOrg/MagicMirror`.
-3. Recommendation: Found `new Date()` in file `MMM-Strava.js`: Consider replacing it by `new Date(Date.now())`. It's helpfull for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
+3. Recommendation: Found `new Date()` in file `MMM-Strava.js`: Consider replacing it by `new Date(Date.now())`. It's helpful for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
 4. Typo: Found `Magic Mirror` in file `README.md`: Replace it with `MagicMirror²`.
 5. Outdated: Found `MichMich/MagicMirror` in file `node_helper.js`: Replace it by `MagicMirrorOrg/MagicMirror`.
 6. Deprecated: Found `stylelint-config-prettier` in file `package.json`: Update `stylelint` and remove `stylelint-config-prettier`.
 7. Recommendation: Found `XMLHttpRequest` in file `index.html`: Replace it with built-in fetch.
-8. Recommendation: Found `new Date()` in file `MMM-Strava.test.js`: Consider replacing it by `new Date(Date.now())`. It's helpfull for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
+8. Recommendation: Found `new Date()` in file `MMM-Strava.test.js`: Consider replacing it by `new Date(Date.now())`. It's helpful for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
 9. Recommendation: Replace eslintrc by new flat config.
 
 ### [MMM-Strava-Last-Activity-Map by tylerstambaugh](https://github.com/tylerstambaugh/MMM-Strava-Last-Activity-Map)
@@ -9371,9 +9753,22 @@ Last update: 2024-09-17T23:27:10+02:00
 4. Recommendation: Found `axios` in file `node_helper.js`: Replace it with built-in fetch.
 5. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
 
+### [EXT-StreamDeck by bugsounet](https://github.com/bugsounet/EXT-StreamDeck)
+
+1. Information: There are updates for 8 dependencie(s):
+   - @elgato-stream-deck/node    ^6.2.0  →   ^7.0.2
+   - @eslint/js                 ^8.57.0  →  ^9.10.0
+   - @stylistic/eslint-plugin    ^1.8.1  →   ^2.8.0
+   - esbuild                    ^0.22.0  →  ^0.23.1
+   - eslint                     ^8.57.0  →  ^9.10.0
+   - eslint-plugin-import       ^2.29.1  →  ^2.30.0
+   - glob                       ^10.4.2  →  ^11.0.0
+   - jimp                      ^0.22.12  →   ^1.6.0
+
+
 ### [MMM-SugarValue by balharrie](https://github.com/balharrie/MMM-SugarValue)
 
-1. Recommendation: Found `new Date()` in file `MMM-SugarValue.js`: Consider replacing it by `new Date(Date.now())`. It's helpfull for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
+1. Recommendation: Found `new Date()` in file `MMM-SugarValue.js`: Consider replacing it by `new Date(Date.now())`. It's helpful for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
 2. Typo: Found `Magic Mirror` in file `README.md`: Replace it with `MagicMirror²`.
 3. Recommendation: The README seems not to have an update instruction (the word 'update' is missing). Please add one.
 4. Deprecated: Found `require('request')` in file `node_helper.js`: Replace it with built-in fetch.
@@ -9389,7 +9784,7 @@ Last update: 2024-09-17T23:27:10+02:00
 3. Typo: Found `[MagicMirror]` in file `Readme.md`: Replace it with `[MagicMirror²]`.
 4. Outdated: Found `MichMich/MagicMirror` in file `Readme.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
 5. Deprecated: Found `require('request')` in file `node_helper.js`: Replace it with built-in fetch.
-6. Recommendation: Found `new Date()` in file `node_helper.js`: Consider replacing it by `new Date(Date.now())`. It's helpfull for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
+6. Recommendation: Found `new Date()` in file `node_helper.js`: Consider replacing it by `new Date(Date.now())`. It's helpful for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
 7. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
 
 ### [MMM-SunRiseSet by mykle1](https://github.com/mykle1/MMM-SunRiseSet)
@@ -9397,7 +9792,7 @@ Last update: 2024-09-17T23:27:10+02:00
 0. This module is outdated: Abandoned. No reactions to issues since years. Missing instructions to install dependency 'request'. Also, source has altered API.
 1. There is no `package.json`. We need this file to gather information about the module for the module list page.
 2. Typo: Found `Magic Mirror` in file `MMM-SunRiseSet.js`: Replace it with `MagicMirror²`.
-3. Recommendation: Found `new Date()` in file `MMM-SunRiseSet.js`: Consider replacing it by `new Date(Date.now())`. It's helpfull for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
+3. Recommendation: Found `new Date()` in file `MMM-SunRiseSet.js`: Consider replacing it by `new Date(Date.now())`. It's helpful for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
 4. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
 5. Deprecated: Found `require('request')` in file `node_helper.js`: Replace it with built-in fetch.
 6. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
@@ -9405,7 +9800,7 @@ Last update: 2024-09-17T23:27:10+02:00
 ### [MMM-SweepClock by mumblebaj](https://github.com/mumblebaj/MMM-SweepClock)
 
 1. Issue: The license in the package.json (ISC) doesn't match the license file (MIT).
-2. Recommendation: Found `new Date()` in file `MMM-SweepClock.js`: Consider replacing it by `new Date(Date.now())`. It's helpfull for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
+2. Recommendation: Found `new Date()` in file `MMM-SweepClock.js`: Consider replacing it by `new Date(Date.now())`. It's helpful for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
 3. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
 
 ### [MMM-Swipe by Simon089](https://github.com/Simon089/MMM-Swipe)
@@ -9428,7 +9823,7 @@ Last update: 2024-09-17T23:27:10+02:00
 ### [MMM-SwissAlpLakes by lbartk](https://github.com/lbartk/MMM-SwissAlpLakes)
 
 1. There is no `package.json`. We need this file to gather information about the module for the module list page.
-2. Recommendation: Found `new Date()` in file `MMM-SwissAlpLakes.js`: Consider replacing it by `new Date(Date.now())`. It's helpfull for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
+2. Recommendation: Found `new Date()` in file `MMM-SwissAlpLakes.js`: Consider replacing it by `new Date(Date.now())`. It's helpful for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
 3. Deprecated: Found `require("request")` in file `node_helper.js`: Replace it with built-in fetch.
 4. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
 
@@ -9510,7 +9905,7 @@ Last update: 2024-09-17T23:27:10+02:00
 5. Outdated: Found `MichMich/MagicMirror` in file `README.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
 6. Recommendation: The README seems not to have an update instruction (the word 'update' is missing). Please add one.
 7. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
-8. Recommendation: Found `new Date()` in file `node_helper.js`: Consider replacing it by `new Date(Date.now())`. It's helpfull for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
+8. Recommendation: Found `new Date()` in file `node_helper.js`: Consider replacing it by `new Date(Date.now())`. It's helpful for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
 9. Warning: No LICENSE file.
 10. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
 
@@ -9570,7 +9965,7 @@ Last update: 2024-09-17T23:27:10+02:00
 3. `package.json` issue: No license field.
 4. There are no keywords in 'package.json'. We would use them as tags on the module list page.
 5. Typo: Found `MagicMirror2` in file `MMM-TAF.js`: Replace it with `MagicMirror²`.
-6. Recommendation: Found `new Date()` in file `MMM-TAF.js`: Consider replacing it by `new Date(Date.now())`. It's helpfull for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
+6. Recommendation: Found `new Date()` in file `MMM-TAF.js`: Consider replacing it by `new Date(Date.now())`. It's helpful for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
 7. Typo: Found `Magic Mirror` in file `README.md`: Replace it with `MagicMirror²`.
 8. Outdated: Found `MichMich/MagicMirror` in file `README.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
 9. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
@@ -9615,7 +10010,7 @@ Last update: 2024-09-17T23:27:10+02:00
 2. Recommendation: The README seems not to have an update instruction (the word 'update' is missing). Please add one.
 3. Recommendation: The README seems not to have an install instruction (the words 'install' or 'installation' are missing). Please add one.
 4. Recommendation: Found `require('https')` in file `node_helper.js`: Replace 'https' by 'node:https'.
-5. Recommendation: Found `new Date()` in file `node_helper.js`: Consider replacing it by `new Date(Date.now())`. It's helpfull for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
+5. Recommendation: Found `new Date()` in file `node_helper.js`: Consider replacing it by `new Date(Date.now())`. It's helpful for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
 6. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
 
 ### [EXT-TelegramBot by bugsounet](https://github.com/bugsounet/EXT-TelegramBot)
@@ -9685,7 +10080,7 @@ Last update: 2024-09-17T23:27:10+02:00
 5. Recommendation: The README seems not to have an update instruction (the word 'update' is missing). Please add one.
 6. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
 7. Deprecated: Found `require('request')` in file `node_helper.js`: Replace it with built-in fetch.
-8. Recommendation: Found `new Date()` in file `node_helper.js`: Consider replacing it by `new Date(Date.now())`. It's helpfull for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
+8. Recommendation: Found `new Date()` in file `node_helper.js`: Consider replacing it by `new Date(Date.now())`. It's helpful for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
 9. Warning: No LICENSE file.
 10. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
 
@@ -9721,7 +10116,7 @@ Last update: 2024-09-17T23:27:10+02:00
 1. Recommendation: Found `uses: actions/checkout@v2` in file `nodejs.yml`: Replace it with v4.
 2. Outdated: Found `MichMich/MagicMirror` in file `CONTRIBUTING.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
 3. Typo: Found `Magic Mirror` in file `MMM-text-clock.js`: Replace it with `MagicMirror²`.
-4. Recommendation: Found `new Date()` in file `MMM-text-clock.js`: Consider replacing it by `new Date(Date.now())`. It's helpfull for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
+4. Recommendation: Found `new Date()` in file `MMM-text-clock.js`: Consider replacing it by `new Date(Date.now())`. It's helpful for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
 5. Recommendation: The README seems not to have an update instruction (the word 'update' is missing). Please add one.
 6. Recommendation: Replace eslintrc by new flat config.
 
@@ -9761,7 +10156,7 @@ Last update: 2024-09-17T23:27:10+02:00
 
 1. `package.json` issue: No repository field.
 2. There are no keywords in 'package.json'. We would use them as tags on the module list page.
-3. Recommendation: Found `new Date()` in file `MMM-ThemeParkWaitTimes.js`: Consider replacing it by `new Date(Date.now())`. It's helpfull for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
+3. Recommendation: Found `new Date()` in file `MMM-ThemeParkWaitTimes.js`: Consider replacing it by `new Date(Date.now())`. It's helpful for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
 4. Typo: Found `Magic Mirror` in file `README.md`: Replace it with `MagicMirror²`.
 5. Typo: Found `<sup>2</sup>` in file `README.md`: Replace it with `²`.`.
 6. Outdated: Found `MichMich/MagicMirror` in file `README.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
@@ -9791,8 +10186,8 @@ Last update: 2024-09-17T23:27:10+02:00
 2. Typo: Found `[MagicMirror]` in file `README.md`: Replace it with `[MagicMirror²]`.
 3. Outdated: Found `MichMich/MagicMirror` in file `README.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
 4. Recommendation: Found `"node-fetch"` in file `consumptions.js`: Replace it with built-in fetch.
-5. Recommendation: Found `new Date()` in file `consumptions.js`: Consider replacing it by `new Date(Date.now())`. It's helpfull for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
-6. Recommendation: Found `new Date()` in file `draw-graphs.js`: Consider replacing it by `new Date(Date.now())`. It's helpfull for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
+5. Recommendation: Found `new Date()` in file `consumptions.js`: Consider replacing it by `new Date(Date.now())`. It's helpful for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
+6. Recommendation: Found `new Date()` in file `draw-graphs.js`: Consider replacing it by `new Date(Date.now())`. It's helpful for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
 7. Recommendation: Found `"node-fetch"` in file `package.json`: Replace it with built-in fetch.
 8. Recommendation: Found `"node-fetch"` in file `tibber.js`: Replace it with built-in fetch.
 9. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
@@ -9817,7 +10212,7 @@ Last update: 2024-09-17T23:27:10+02:00
 7. Recommendation: The README seems not to have an update instruction (the word 'update' is missing). Please add one.
 8. Recommendation: The README seems not to have an install instruction (the words 'install' or 'installation' are missing). Please add one.
 9. Recommendation: Found `axios` in file `node_helper.js`: Replace it with built-in fetch.
-10. Recommendation: Found `new Date()` in file `node_helper.js`: Consider replacing it by `new Date(Date.now())`. It's helpfull for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
+10. Recommendation: Found `new Date()` in file `node_helper.js`: Consider replacing it by `new Date(Date.now())`. It's helpful for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
 11. Typo: Found `Magic Mirror` in file `package.json`: Replace it with `MagicMirror²`.
 12. Recommendation: Found `axios` in file `package.json`: Replace it with built-in fetch.
 13. Warning: No LICENSE file.
@@ -9863,7 +10258,7 @@ Last update: 2024-09-17T23:27:10+02:00
 ### [MMM-Todoist by cbrooker](https://github.com/cbrooker/MMM-Todoist)
 
 1. Typo: Found `Magic Mirror` in file `MMM-Todoist.js`: Replace it with `MagicMirror²`.
-2. Recommendation: Found `new Date()` in file `MMM-Todoist.js`: Consider replacing it by `new Date(Date.now())`. It's helpfull for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
+2. Recommendation: Found `new Date()` in file `MMM-Todoist.js`: Consider replacing it by `new Date(Date.now())`. It's helpful for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
 3. Typo: Found `[MagicMirror]` in file `README.md`: Replace it with `[MagicMirror²]`.
 4. Outdated: Found `MichMich/MagicMirror` in file `README.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
 5. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
@@ -9940,7 +10335,7 @@ Last update: 2024-09-17T23:27:10+02:00
 
 ### [MMM-Toulouse-Transports by LoneWanderer-GH](https://github.com/LoneWanderer-GH/MMM-Toulouse-Transports)
 
-1. Recommendation: Found `new Date()` in file `MMM-Toulouse-Transports.js`: Consider replacing it by `new Date(Date.now())`. It's helpfull for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
+1. Recommendation: Found `new Date()` in file `MMM-Toulouse-Transports.js`: Consider replacing it by `new Date(Date.now())`. It's helpful for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
 2. Typo: Found `Magic Mirror` in file `README.md`: Replace it with `MagicMirror²`.
 3. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
 4. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
@@ -9990,10 +10385,10 @@ Last update: 2024-09-17T23:27:10+02:00
 2. There are no keywords in 'package.json'. We would use them as tags on the module list page.
 3. Recommendation: Found `jshint` in file `Gruntfile.js`: Replace "jshint" by "eslint".
 4. Typo: Found `Magic Mirror` in file `MMM-Trains-Trafikverket.js`: Replace it with `MagicMirror²`.
-5. Recommendation: Found `new Date()` in file `MMM-Trains-Trafikverket.js`: Consider replacing it by `new Date(Date.now())`. It's helpfull for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
+5. Recommendation: Found `new Date()` in file `MMM-Trains-Trafikverket.js`: Consider replacing it by `new Date(Date.now())`. It's helpful for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
 6. Outdated: Found `MichMich/MagicMirror` in file `create_module.sh`: Replace it by `MagicMirrorOrg/MagicMirror`.
 7. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
-8. Recommendation: Found `new Date()` in file `node_helper.js`: Consider replacing it by `new Date(Date.now())`. It's helpfull for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
+8. Recommendation: Found `new Date()` in file `node_helper.js`: Consider replacing it by `new Date(Date.now())`. It's helpful for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
 9. Deprecated: Found `"grunt"` in file `package.json`: Grunt is practically unmaintained. Move on to something better.
 10. Outdated: Found `MichMich/MagicMirror` in file `README.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
 11. Deprecated: Found `"grunt"` in file `package.json`: Grunt is practically unmaintained. Move on to something better.
@@ -10032,11 +10427,20 @@ Last update: 2024-09-17T23:27:10+02:00
 4. Recommendation: The README seems not to have an update instruction (the word 'update' is missing). Please add one.
 5. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
 
+### [MMM-TranslinkBrisbane by dekinet](https://github.com/dekinet/MMM-TranslinkBrisbane)
+
+1. Information: There are updates for 4 dependencie(s):
+   - @eslint/js                ^8.56.0  →  ^9.10.0
+   - @stylistic/eslint-plugin   ^1.6.0  →   ^2.8.0
+   - eslint                    ^8.56.0  →  ^9.10.0
+   - node-html-parser          ^6.1.12  →  ^6.1.13
+
+
 ### [MMM-TransLoc by OrangeHoopla](https://github.com/OrangeHoopla/MMM-TransLoc)
 
 1. There is no `package.json`. We need this file to gather information about the module for the module list page.
-2. Recommendation: Found `new Date()` in file `MMM-Transloc.js`: Consider replacing it by `new Date(Date.now())`. It's helpfull for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
-3. Recommendation: Found `new Date()` in file `node_helper.js`: Consider replacing it by `new Date(Date.now())`. It's helpfull for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
+2. Recommendation: Found `new Date()` in file `MMM-Transloc.js`: Consider replacing it by `new Date(Date.now())`. It's helpful for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
+3. Recommendation: Found `new Date()` in file `node_helper.js`: Consider replacing it by `new Date(Date.now())`. It's helpful for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
 4. Warning: No LICENSE file.
 5. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
 
@@ -10115,7 +10519,7 @@ Last update: 2024-09-17T23:27:10+02:00
 4. Recommendation: Found `axios` in file `README.md`: Replace it with built-in fetch.
 5. Outdated: Found `MichMich/MagicMirror` in file `README.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
 6. Recommendation: Found `axios` in file `node_helper.js`: Replace it with built-in fetch.
-7. Recommendation: Found `new Date()` in file `node_helper.js`: Consider replacing it by `new Date(Date.now())`. It's helpfull for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
+7. Recommendation: Found `new Date()` in file `node_helper.js`: Consider replacing it by `new Date(Date.now())`. It's helpful for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
 8. Recommendation: Found `axios` in file `package.json`: Replace it with built-in fetch.
 9. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
 
@@ -10150,7 +10554,7 @@ Last update: 2024-09-17T23:27:10+02:00
 6. Outdated: Found `MichMich/MagicMirror` in file `README.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
 7. Recommendation: The README seems not to have an update instruction (the word 'update' is missing). Please add one.
 8. Typo: Found `MagicMirror2` in file `package.json`: Replace it with `MagicMirror²`.
-9. Recommendation: Found `new Date()` in file `twitControl.js`: Consider replacing it by `new Date(Date.now())`. It's helpfull for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
+9. Recommendation: Found `new Date()` in file `twitControl.js`: Consider replacing it by `new Date(Date.now())`. It's helpful for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
 10. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
 
 ### [MMM-TwitterTrendsByPlace by AdamMoses-GitHub](https://github.com/AdamMoses-GitHub/MMM-TwitterTrendsByPlace)
@@ -10184,13 +10588,13 @@ Last update: 2024-09-17T23:27:10+02:00
 1. There are no specific keywords in 'package.json'. We would use them as tags on the module list page. Add a few meaningful terms to the keywords in the package.json. Not just “magicmirror” or “module”.
 2. Issues are not enabled in the GitHub repository. So users cannot report bugs. Please enable issues in your repo.
 3. Typo: Found `Magic Mirror` in file `MMM-UKLiveBusStopInfo.js`: Replace it with `MagicMirror²`.
-4. Recommendation: Found `new Date()` in file `MMM-UKLiveBusStopInfo.js`: Consider replacing it by `new Date(Date.now())`. It's helpfull for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
+4. Recommendation: Found `new Date()` in file `MMM-UKLiveBusStopInfo.js`: Consider replacing it by `new Date(Date.now())`. It's helpful for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
 5. Typo: Found `Magic Mirror` in file `README.md`: Replace it with `MagicMirror²`.
 6. Outdated: Found `MichMich/MagicMirror` in file `README.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
 7. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
 8. Deprecated: Found `require('request')` in file `node_helper.js`: Replace it with built-in fetch.
 9. Deprecated: Found `require('request')` in file `test-UKLiveBusStopInfo.js`: Replace it with built-in fetch.
-10. Recommendation: Found `new Date()` in file `test-UKLiveBusStopInfo.js`: Consider replacing it by `new Date(Date.now())`. It's helpfull for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
+10. Recommendation: Found `new Date()` in file `test-UKLiveBusStopInfo.js`: Consider replacing it by `new Date(Date.now())`. It's helpful for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
 11. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
 
 ### [MMM-UKLiveTrainDepartures by XBCreepinJesus](https://github.com/XBCreepinJesus/MMM-UKLiveTrainDepartures)
@@ -10214,7 +10618,7 @@ Last update: 2024-09-17T23:27:10+02:00
 ### [MMM-UKNationalRail by mattdy](https://github.com/mattdy/MMM-UKNationalRail)
 
 1. Typo: Found `Magic Mirror` in file `MMM-UKNationalRail.js`: Replace it with `MagicMirror²`.
-2. Recommendation: Found `new Date()` in file `MMM-UKNationalRail.js`: Consider replacing it by `new Date(Date.now())`. It's helpfull for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
+2. Recommendation: Found `new Date()` in file `MMM-UKNationalRail.js`: Consider replacing it by `new Date(Date.now())`. It's helpful for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
 3. Typo: Found `Magic Mirror` in file `README.md`: Replace it with `MagicMirror²`.
 4. Outdated: Found `MichMich/MagicMirror` in file `README.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
 5. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
@@ -10307,7 +10711,7 @@ Last update: 2024-09-17T23:27:10+02:00
 
 ### [MMM-VALORANTESPORTS-SCHEDULES by xadamxk](https://github.com/xadamxk/MMM-VALORANTESPORTS-SCHEDULES)
 
-1. Recommendation: Found `new Date()` in file `MMM-VALORANTESPORTS-SCHEDULES.js`: Consider replacing it by `new Date(Date.now())`. It's helpfull for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
+1. Recommendation: Found `new Date()` in file `MMM-VALORANTESPORTS-SCHEDULES.js`: Consider replacing it by `new Date(Date.now())`. It's helpful for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
 2. Recommendation: Found `require("https")` in file `node_helper.js`: Replace "https" by "node:https".
 3. Outdated: Found `MichMich/MagicMirror` in file `readme.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
 4. Warning: No LICENSE file.
@@ -10371,11 +10775,11 @@ Last update: 2024-09-17T23:27:10+02:00
 ### [MMM-VietNamEventsCalendar by phungorquan](https://github.com/phungorquan/MMM-VietNamEventsCalendar)
 
 1. There is no `package.json`. We need this file to gather information about the module for the module list page.
-2. Recommendation: Found `new Date()` in file `MMM-VietNamEventsCalendar.js`: Consider replacing it by `new Date(Date.now())`. It's helpfull for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
+2. Recommendation: Found `new Date()` in file `MMM-VietNamEventsCalendar.js`: Consider replacing it by `new Date(Date.now())`. It's helpful for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
 3. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
-4. Recommendation: Found `new Date()` in file `VietNamCal.js`: Consider replacing it by `new Date(Date.now())`. It's helpfull for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
+4. Recommendation: Found `new Date()` in file `VietNamCal.js`: Consider replacing it by `new Date(Date.now())`. It's helpful for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
 5. Typo: Found `Magic Mirror` in file `calendarfetcher.js`: Replace it with `MagicMirror²`.
-6. Recommendation: Found `new Date()` in file `calendarfetcher.js`: Consider replacing it by `new Date(Date.now())`. It's helpfull for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
+6. Recommendation: Found `new Date()` in file `calendarfetcher.js`: Consider replacing it by `new Date(Date.now())`. It's helpful for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
 7. Outdated: Found `MichMich/MagicMirror` in file `calendarfetcher.js`: Replace it by `MagicMirrorOrg/MagicMirror`.
 8. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
 
@@ -10383,7 +10787,7 @@ Last update: 2024-09-17T23:27:10+02:00
 
 1. There is no `package.json`. We need this file to gather information about the module for the module list page.
 2. Typo: Found `Magic Mirror` in file `MMM-ViewNotifications.js`: Replace it with `MagicMirror²`.
-3. Recommendation: Found `new Date()` in file `MMM-ViewNotifications.js`: Consider replacing it by `new Date(Date.now())`. It's helpfull for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
+3. Recommendation: Found `new Date()` in file `MMM-ViewNotifications.js`: Consider replacing it by `new Date(Date.now())`. It's helpful for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
 4. Outdated: Found `MichMich/MagicMirror` in file `README.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
 5. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
 
@@ -10411,6 +10815,18 @@ Last update: 2024-09-17T23:27:10+02:00
 5. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
 6. Recommendation: Found `require("http")` in file `node_helper.js`: Replace "http" by "node:http".
 7. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
+
+### [EXT-VLCServer by bugsounet](https://github.com/bugsounet/EXT-VLCServer)
+
+1. Information: There are updates for 7 dependencie(s):
+   - @eslint/js                ^8.57.0  →  ^9.10.0
+   - @stylistic/eslint-plugin   ^1.8.1  →   ^2.8.0
+   - esbuild                   ^0.22.0  →  ^0.23.1
+   - eslint                    ^8.57.0  →  ^9.10.0
+   - eslint-plugin-import      ^2.29.1  →  ^2.30.0
+   - glob                      ^10.4.2  →  ^11.0.0
+   - pm2                        ^5.4.1  →   ^5.4.2
+
 
 ### [MMM-VocabularyTrainer by fewieden](https://github.com/fewieden/MMM-VocabularyTrainer)
 
@@ -10475,6 +10891,17 @@ Last update: 2024-09-17T23:27:10+02:00
 5. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
 6. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
 
+### [EXT-Volume by bugsounet](https://github.com/bugsounet/EXT-Volume)
+
+1. Information: There are updates for 6 dependencie(s):
+   - @eslint/js                ^8.57.0  →  ^9.10.0
+   - @stylistic/eslint-plugin   ^1.8.1  →   ^2.8.0
+   - esbuild                   ^0.22.0  →  ^0.23.1
+   - eslint                    ^8.57.0  →  ^9.10.0
+   - eslint-plugin-import      ^2.29.1  →  ^2.30.0
+   - glob                      ^10.4.2  →  ^11.0.0
+
+
 ### [MMM-volumio-playing by mrdis](https://github.com/mrdis/MMM-volumio-playing)
 
 1. There is no `package.json`. We need this file to gather information about the module for the module list page.
@@ -10520,11 +10947,11 @@ Last update: 2024-09-17T23:27:10+02:00
 0. This module is outdated: Abandoned. Repo has been archived at 2023-09-20.
 1. There are no keywords in 'package.json'. We would use them as tags on the module list page.
 2. Typo: Found `Magic Mirror` in file `MMM-VUB-Resto.js`: Replace it with `MagicMirror²`.
-3. Recommendation: Found `new Date()` in file `MMM-VUB-Resto.js`: Consider replacing it by `new Date(Date.now())`. It's helpfull for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
+3. Recommendation: Found `new Date()` in file `MMM-VUB-Resto.js`: Consider replacing it by `new Date(Date.now())`. It's helpful for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
 4. Typo: Found `[MagicMirror]` in file `README.md`: Replace it with `[MagicMirror²]`.
 5. Outdated: Found `MichMich/MagicMirror` in file `README.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
-6. Recommendation: Found `new Date()` in file `node_helper.js`: Consider replacing it by `new Date(Date.now())`. It's helpfull for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
-7. Recommendation: Found `new Date()` in file `example.html`: Consider replacing it by `new Date(Date.now())`. It's helpfull for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
+6. Recommendation: Found `new Date()` in file `node_helper.js`: Consider replacing it by `new Date(Date.now())`. It's helpful for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
+7. Recommendation: Found `new Date()` in file `example.html`: Consider replacing it by `new Date(Date.now())`. It's helpful for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
 8. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
 
 ### [MMM-vvsDeparture by fhinder](https://github.com/fhinder/MMM-vvsDeparture)
@@ -10534,7 +10961,7 @@ Last update: 2024-09-17T23:27:10+02:00
 3. Typo: Found `MagicMirror2` in file `README.md`: Replace it with `MagicMirror²`.
 4. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
 5. Recommendation: Found `axios` in file `node_helper.js`: Replace it with built-in fetch.
-6. Recommendation: Found `new Date()` in file `node_helper.js`: Consider replacing it by `new Date(Date.now())`. It's helpfull for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
+6. Recommendation: Found `new Date()` in file `node_helper.js`: Consider replacing it by `new Date(Date.now())`. It's helpful for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
 7. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
 
 ### [WallberryTheme by delightedCrow](https://github.com/delightedCrow/WallberryTheme)
@@ -10565,7 +10992,7 @@ Last update: 2024-09-17T23:27:10+02:00
 3. Recommendation: Found `require("http")` in file `node_helper.js`: Replace "http" by "node:http".
 4. Recommendation: Found `require("https")` in file `node_helper.js`: Replace "https" by "node:https".
 5. Recommendation: Found `require("fetch")` in file `node_helper.js`: Replace it with built-in fetch.
-6. Recommendation: Found `new Date()` in file `node_helper.js`: Consider replacing it by `new Date(Date.now())`. It's helpfull for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
+6. Recommendation: Found `new Date()` in file `node_helper.js`: Consider replacing it by `new Date(Date.now())`. It's helpful for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
 7. Typo: Found `MagicMirror2` in file `package.json`: Replace it with `MagicMirror²`.
 8. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
 
@@ -10590,7 +11017,7 @@ Last update: 2024-09-17T23:27:10+02:00
 2. No image found.
 3. Outdated: Found `MichMich/MagicMirror` in file `README.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
 4. Recommendation: The README seems not to have an update instruction (the word 'update' is missing). Please add one.
-5. Recommendation: Found `new Date()` in file `node_helper.js`: Consider replacing it by `new Date(Date.now())`. It's helpfull for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
+5. Recommendation: Found `new Date()` in file `node_helper.js`: Consider replacing it by `new Date(Date.now())`. It's helpful for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
 6. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
 
 ### [MMM-WaterReminder by thiagomides](https://github.com/thiagomides/MMM-WaterReminder)
@@ -10657,7 +11084,7 @@ Last update: 2024-09-17T23:27:10+02:00
 ### [MMM-WeatherBackground by BrianHepler](https://github.com/BrianHepler/MMM-WeatherBackground)
 
 1. There is no `package.json`. We need this file to gather information about the module for the module list page.
-2. Recommendation: Found `new Date()` in file `MMM-WeatherBackground.js`: Consider replacing it by `new Date(Date.now())`. It's helpfull for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
+2. Recommendation: Found `new Date()` in file `MMM-WeatherBackground.js`: Consider replacing it by `new Date(Date.now())`. It's helpful for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
 3. Typo: Found `Magic Mirror` in file `README.md`: Replace it with `MagicMirror²`.
 4. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
 
@@ -10690,7 +11117,7 @@ Last update: 2024-09-17T23:27:10+02:00
 ### [MMM-WeatherGraph by FlatPepsi17](https://github.com/FlatPepsi17/MMM-WeatherGraph)
 
 1. There is no `package.json`. We need this file to gather information about the module for the module list page.
-2. Recommendation: Found `new Date()` in file `MMM-WeatherGraph.js`: Consider replacing it by `new Date(Date.now())`. It's helpfull for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
+2. Recommendation: Found `new Date()` in file `MMM-WeatherGraph.js`: Consider replacing it by `new Date(Date.now())`. It's helpful for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
 3. Deprecated: Found `api.openweathermap.org/data/2.5` in file `MMM-WeatherGraph.js`: OpenWeather API 2.5 will be deprecated in June 2024. Please update to 3.0.
 4. Typo: Found `[MagicMirror]` in file `README.md`: Replace it with `[MagicMirror²]`.
 5. Outdated: Found `MichMich/MagicMirror` in file `README.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
@@ -10701,9 +11128,9 @@ Last update: 2024-09-17T23:27:10+02:00
 ### [MMM-WeatherHourlyByDay by dWoolridge](https://github.com/dWoolridge/MMM-WeatherHourlyByDay)
 
 1. An error occurred while getting information from 'package.json': Error: Invalid version: "1.0"
-2. Recommendation: Found `new Date()` in file `MMM-WeatherHourlyByDay.js`: Consider replacing it by `new Date(Date.now())`. It's helpfull for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
+2. Recommendation: Found `new Date()` in file `MMM-WeatherHourlyByDay.js`: Consider replacing it by `new Date(Date.now())`. It's helpful for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
 3. Recommendation: The README seems not to have an update instruction (the word 'update' is missing). Please add one.
-4. Recommendation: Found `new Date()` in file `weatherobjecthourlybyday.js`: Consider replacing it by `new Date(Date.now())`. It's helpfull for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
+4. Recommendation: Found `new Date()` in file `weatherobjecthourlybyday.js`: Consider replacing it by `new Date(Date.now())`. It's helpful for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
 5. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
 
 ### [MMM-WeatherOrNot by mykle1](https://github.com/mykle1/MMM-WeatherOrNot)
@@ -10711,7 +11138,7 @@ Last update: 2024-09-17T23:27:10+02:00
 0. This module is outdated: Deprecated. DarkSky API no longer works since 2023-03-31.
 1. There is no `package.json`. We need this file to gather information about the module for the module list page.
 2. Typo: Found `Magic Mirror` in file `MMM-WeatherOrNot.js`: Replace it with `MagicMirror²`.
-3. Recommendation: Found `new Date()` in file `MMM-WeatherOrNot.js`: Consider replacing it by `new Date(Date.now())`. It's helpfull for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
+3. Recommendation: Found `new Date()` in file `MMM-WeatherOrNot.js`: Consider replacing it by `new Date(Date.now())`. It's helpful for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
 4. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
 
 ### [MMM-WeatherOutfit by Lavve](https://github.com/Lavve/MMM-WeatherOutfit)
@@ -10749,15 +11176,22 @@ Last update: 2024-09-17T23:27:10+02:00
    - systeminformation         ^5.23.4  →  ^5.23.5
 
 
+### [MMM-WebSpeechTTS by KristjanESPERANTO](https://github.com/KristjanESPERANTO/MMM-WebSpeechTTS)
+
+1. Information: There are updates for 2 dependencie(s):
+   - eslint    ^8.57.0  →  ^9.10.0
+   - prettier   ^3.2.5  →   ^3.3.3
+
+
 ### [MMM-Webuntis by thyed](https://github.com/thyed/MMM-Webuntis)
 
 1. `package.json` issue: No repository field.
 2. Issue: The license in the package.json (ISC) doesn't match the license file (MIT).
-3. Recommendation: Found `new Date()` in file `MMM-Webuntis.js`: Consider replacing it by `new Date(Date.now())`. It's helpfull for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
+3. Recommendation: Found `new Date()` in file `MMM-Webuntis.js`: Consider replacing it by `new Date(Date.now())`. It's helpful for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
 4. Typo: Found `[MagicMirror]` in file `README.md`: Replace it with `[MagicMirror²]`.
 5. Outdated: Found `MichMich/MagicMirror` in file `README.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
 6. Recommendation: The README seems not to have an update instruction (the word 'update' is missing). Please add one.
-7. Recommendation: Found `new Date()` in file `node_helper.js`: Consider replacing it by `new Date(Date.now())`. It's helpfull for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
+7. Recommendation: Found `new Date()` in file `node_helper.js`: Consider replacing it by `new Date(Date.now())`. It's helpful for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
 8. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
 
 ### [MMM-WebView by Iketaki](https://github.com/Iketaki/MMM-WebView)
@@ -10873,7 +11307,7 @@ Last update: 2024-09-17T23:27:10+02:00
 ### [MMM-wiki by mihairinzis](https://github.com/mihairinzis/MMM-wiki)
 
 1. There is no `package.json`. We need this file to gather information about the module for the module list page.
-2. Recommendation: Found `new Date()` in file `MMM-wiki.js`: Consider replacing it by `new Date(Date.now())`. It's helpfull for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
+2. Recommendation: Found `new Date()` in file `MMM-wiki.js`: Consider replacing it by `new Date(Date.now())`. It's helpful for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
 3. Typo: Found `[MagicMirror]` in file `README.md`: Replace it with `[MagicMirror²]`.
 4. Outdated: Found `MichMich/MagicMirror` in file `README.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
 5. Recommendation: The README seems not to have an install instruction (the words 'install' or 'installation' are missing). Please add one.
@@ -10908,6 +11342,13 @@ Last update: 2024-09-17T23:27:10+02:00
 6. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
 7. Warning: No LICENSE file.
 8. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
+
+### [MMM-WordOfTheDay by jmwyds](https://github.com/jmwyds/MMM-WordOfTheDay)
+
+1. Information: There are updates for 2 dependencie(s):
+   - eslint    ^8.56.0  →  ^9.10.0
+   - prettier   ^3.1.1  →   ^3.3.3
+
 
 ### [MMM-Worldclock by ulrichwisser](https://github.com/ulrichwisser/MMM-Worldclock)
 
@@ -10959,7 +11400,7 @@ Last update: 2024-09-17T23:27:10+02:00
 0. This module is outdated: Deprecated. Wunderground API isn't working anymore. Check out MMM-MyWeather which is a fork with another API.
 1. There is no `package.json`. We need this file to gather information about the module for the module list page.
 2. Typo: Found `Magic Mirror` in file `MMM-WunderGround.js`: Replace it with `MagicMirror²`.
-3. Recommendation: Found `new Date()` in file `MMM-WunderGround.js`: Consider replacing it by `new Date(Date.now())`. It's helpfull for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
+3. Recommendation: Found `new Date()` in file `MMM-WunderGround.js`: Consider replacing it by `new Date(Date.now())`. It's helpful for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
 4. Outdated: Found `MichMich/MagicMirror` in file `MMM-WunderGround.js`: Replace it by `MagicMirrorOrg/MagicMirror`.
 5. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
 6. Deprecated: Found `require('request')` in file `node_helper.js`: Replace it with built-in fetch.
@@ -11003,11 +11444,11 @@ Last update: 2024-09-17T23:27:10+02:00
 1. No image found.
 2. Typo: Found `Magic Mirror` in file `.gitignore`: Replace it with `MagicMirror²`.
 3. Typo: Found `Magic Mirror` in file `MMM-xiaomi.js`: Replace it with `MagicMirror²`.
-4. Recommendation: Found `new Date()` in file `MMM-xiaomi.js`: Consider replacing it by `new Date(Date.now())`. It's helpfull for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
+4. Recommendation: Found `new Date()` in file `MMM-xiaomi.js`: Consider replacing it by `new Date(Date.now())`. It's helpful for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
 5. Outdated: Found `MichMich/MagicMirror` in file `README.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
 6. Recommendation: The README seems not to have an update instruction (the word 'update' is missing). Please add one.
 7. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
-8. Recommendation: Found `new Date()` in file `node_helper.js`: Consider replacing it by `new Date(Date.now())`. It's helpfull for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
+8. Recommendation: Found `new Date()` in file `node_helper.js`: Consider replacing it by `new Date(Date.now())`. It's helpful for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
 9. Typo: Found `Magic Mirror` in file `package.json`: Replace it with `MagicMirror²`.
 10. Warning: No LICENSE file.
 11. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
@@ -11025,7 +11466,7 @@ Last update: 2024-09-17T23:27:10+02:00
 9. Outdated: Found `MichMich/MagicMirror` in file `README.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
 10. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
 11. Deprecated: Found `require('request')` in file `node_helper.js`: Replace it with built-in fetch.
-12. Recommendation: Found `new Date()` in file `node_helper.js`: Consider replacing it by `new Date(Date.now())`. It's helpfull for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
+12. Recommendation: Found `new Date()` in file `node_helper.js`: Consider replacing it by `new Date(Date.now())`. It's helpful for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
 13. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
 
 ### [MMM-yandex-route by DimmanT](https://github.com/DimmanT/MMM-yandex-route)
@@ -11044,7 +11485,7 @@ Last update: 2024-09-17T23:27:10+02:00
 ### [MMM-Year-Progress by ryck](https://github.com/ryck/MMM-Year-Progress)
 
 1. Typo: Found `Magic Mirror` in file `MMM-Year-Progress.js`: Replace it with `MagicMirror²`.
-2. Recommendation: Found `new Date()` in file `MMM-Year-Progress.js`: Consider replacing it by `new Date(Date.now())`. It's helpfull for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
+2. Recommendation: Found `new Date()` in file `MMM-Year-Progress.js`: Consider replacing it by `new Date(Date.now())`. It's helpful for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
 3. Typo: Found `MagicMirror2` in file `README.md`: Replace it with `MagicMirror²`.
 4. Typo: Found `[MagicMirror]` in file `README.md`: Replace it with `[MagicMirror²]`.
 5. Outdated: Found `MichMich/MagicMirror` in file `README.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
@@ -11092,12 +11533,23 @@ Last update: 2024-09-17T23:27:10+02:00
 
 1. Typo: Found `Magic Mirror` in file `.gitignore`: Replace it with `MagicMirror²`.
 2. Typo: Found `Magic Mirror` in file `MMM-YouLess2.js`: Replace it with `MagicMirror²`.
-3. Recommendation: Found `new Date()` in file `MMM-YouLess2.js`: Consider replacing it by `new Date(Date.now())`. It's helpfull for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
+3. Recommendation: Found `new Date()` in file `MMM-YouLess2.js`: Consider replacing it by `new Date(Date.now())`. It's helpful for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
 4. Outdated: Found `MichMich/MagicMirror` in file `README.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
 5. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
 6. Deprecated: Found `require("request")` in file `node_helper.js`: Replace it with built-in fetch.
 7. Typo: Found `Magic Mirror` in file `styles.css`: Replace it with `MagicMirror²`.
 8. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
+
+### [EXT-YouTube by bugsounet](https://github.com/bugsounet/EXT-YouTube)
+
+1. Information: There are updates for 6 dependencie(s):
+   - @eslint/js                ^8.57.0  →  ^9.10.0
+   - @stylistic/eslint-plugin   ^1.8.1  →   ^2.8.0
+   - esbuild                   ^0.22.0  →  ^0.23.1
+   - eslint                    ^8.57.0  →  ^9.10.0
+   - eslint-plugin-import      ^2.29.1  →  ^2.30.0
+   - glob                      ^10.4.2  →  ^11.0.0
+
 
 ### [MMM-YouTube-API by C4TFLY](https://github.com/C4TFLY/MMM-YouTube-API)
 
@@ -11117,6 +11569,17 @@ Last update: 2024-09-17T23:27:10+02:00
 4. Typo: Found `Magic Mirror` in file `README.md`: Replace it with `MagicMirror²`.
 5. Recommendation: Replace eslintrc by new flat config.
 
+### [EXT-YouTubeCast by bugsounet](https://github.com/bugsounet/EXT-YouTubeCast)
+
+1. Information: There are updates for 6 dependencie(s):
+   - @eslint/js                ^8.57.0  →  ^9.10.0
+   - @stylistic/eslint-plugin   ^1.8.1  →   ^2.8.0
+   - esbuild                   ^0.22.0  →  ^0.23.1
+   - eslint                    ^8.57.0  →  ^9.10.0
+   - eslint-plugin-import      ^2.29.1  →  ^2.30.0
+   - glob                      ^10.4.2  →  ^11.0.0
+
+
 ### [MMM-YouTubeWebView by doctorfree](https://gitlab.com/doctorfree/MMM-YouTubeWebView)
 
 1. Typo: Found `Magic Mirror` in file `MMM-YouTubeWebView.js`: Replace it with `MagicMirror²`.
@@ -11127,7 +11590,7 @@ Last update: 2024-09-17T23:27:10+02:00
 
 1. There is no `package.json`. We need this file to gather information about the module for the module list page.
 2. Recommendation: Found `XMLHttpRequest` in file `MMM-YrNow.js`: Replace it with built-in fetch.
-3. Recommendation: Found `new Date()` in file `MMM-YrNow.js`: Consider replacing it by `new Date(Date.now())`. It's helpfull for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
+3. Recommendation: Found `new Date()` in file `MMM-YrNow.js`: Consider replacing it by `new Date(Date.now())`. It's helpful for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
 4. Typo: Found `Magic Mirror` in file `README.md`: Replace it with `MagicMirror²`.
 5. Outdated: Found `MichMich/MagicMirror` in file `README.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
 6. Recommendation: The README seems not to have an update instruction (the word 'update' is missing). Please add one.
@@ -11144,7 +11607,7 @@ Last update: 2024-09-17T23:27:10+02:00
 4. Typo: Found `MagicMirror2` in file `README.md`: Replace it with `MagicMirror²`.
 5. Outdated: Found `MichMich/MagicMirror` in file `README.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
 6. Deprecated: Found `require('request')` in file `node_helper.js`: Replace it with built-in fetch.
-7. Recommendation: Found `new Date()` in file `node_helper.js`: Consider replacing it by `new Date(Date.now())`. It's helpfull for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
+7. Recommendation: Found `new Date()` in file `node_helper.js`: Consider replacing it by `new Date(Date.now())`. It's helpful for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
 8. Recommendation: Found `XMLHttpRequest` in file `readTextFile.js`: Replace it with built-in fetch.
 9. Warning: No LICENSE file.
 10. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
@@ -11172,10 +11635,10 @@ Last update: 2024-09-17T23:27:10+02:00
 1. `package.json` issue: No description
 2. `package.json` issue: No repository field.
 3. There are no specific keywords in 'package.json'. We would use them as tags on the module list page. Add a few meaningful terms to the keywords in the package.json. Not just “magicmirror” or “module”.
-4. Recommendation: Found `new Date()` in file `MMM-Zmanim.js`: Consider replacing it by `new Date(Date.now())`. It's helpfull for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
+4. Recommendation: Found `new Date()` in file `MMM-Zmanim.js`: Consider replacing it by `new Date(Date.now())`. It's helpful for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
 5. Typo: Found `[MagicMirror]` in file `README.md`: Replace it with `[MagicMirror²]`.
 6. Outdated: Found `MichMich/MagicMirror` in file `README.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
 7. Recommendation: The README seems not to have an update instruction (the word 'update' is missing). Please add one.
-8. Recommendation: Found `new Date()` in file `node_helper.js`: Consider replacing it by `new Date(Date.now())`. It's helpfull for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
+8. Recommendation: Found `new Date()` in file `node_helper.js`: Consider replacing it by `new Date(Date.now())`. It's helpful for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
 9. Found directory `node_modules`. This shouldn't be uploaded. Add `node_modules/`to `.gitignore`.
 10. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
