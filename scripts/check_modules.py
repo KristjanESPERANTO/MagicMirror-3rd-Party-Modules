@@ -462,7 +462,7 @@ def check_dependency_updates(module, module_directory_path):
     """
     package_json = Path(f"{module_directory_path}/package.json")
     prod_updates_list = []
-    if len(module["issues"]) in [1, 2, 3] and package_json.is_file():
+    if len(module["issues"]) in [2, 3] and package_json.is_file():
 
         prod_updates_string = (
             subprocess.run(
@@ -478,7 +478,7 @@ def check_dependency_updates(module, module_directory_path):
         prod_updates_list = [
             line for line in prod_updates_string if "→" in line]
 
-    if len(prod_updates_list) > 0 or (len(module["issues"]) == 0 and package_json.is_file()):
+    if len(prod_updates_list) > 0 or (len(module["issues"]) in [0, 1] and package_json.is_file()):
 
         updates_string = (
             subprocess.run(
