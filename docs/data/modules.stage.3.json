@@ -3482,7 +3482,7 @@
       "There is no `package.json`. We need this file to gather information about the module for the module list page.",
       "No image found."
     ],
-    "stars": 3,
+    "stars": 4,
     "license": "MIT"
   },
   {
@@ -4008,7 +4008,7 @@
     "maintainerURL": "",
     "description": "Visualizes production and consumption of electrical energy in your home. Is meant to be used with solar energy converters and (optional) energy storage systems.",
     "issues": [],
-    "stars": 2,
+    "stars": 3,
     "license": "MIT",
     "tags": [
       "energy",
@@ -4060,7 +4060,7 @@
     "maintainerURL": "",
     "description": "Display weather forecast information from Environment Canada.",
     "issues": [],
-    "stars": 3,
+    "stars": 4,
     "license": "MIT",
     "tags": [
       "canada",
@@ -5163,7 +5163,7 @@
       "Issues are not enabled in the GitHub repository. So users cannot report bugs. Please enable issues in your repo.",
       "No image found."
     ],
-    "stars": 5,
+    "stars": 4,
     "hasGithubIssues": false,
     "tags": [
       "callmonitor"
@@ -5317,7 +5317,7 @@
     "maintainerURL": "",
     "description": "Displays a grid simulating the <a target=\"_blank\" href=\"https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life\">Game of Life</a>.",
     "issues": [],
-    "stars": 12,
+    "stars": 13,
     "license": "MIT",
     "tags": [
       "game of life"
@@ -5591,7 +5591,7 @@
     "maintainerURL": "",
     "description": "Show a list of unread gmails.",
     "issues": [],
-    "stars": 10,
+    "stars": 11,
     "license": "MIT",
     "tags": [
       "mirror email"
@@ -5639,8 +5639,11 @@
     "maintainer": "bugsounet",
     "maintainerURL": "https://wiki.bugsounet.fr",
     "description": "MMM-GoogleAssistant is an real embedded Google assistant on MagicMirror² with many <a target=\"_blank\" href=\"#extended-plugins-for-mmm-googleassistant\">plugins</a>.",
-    "issues": [],
+    "issues": [
+      "Issues are not enabled in the GitHub repository. So users cannot report bugs. Please enable issues in your repo."
+    ],
     "stars": 92,
+    "hasGithubIssues": false,
     "license": "MIT",
     "tags": [
       "mmm-googleassistant",
@@ -5682,7 +5685,7 @@
     "issues": [
       "There are no keywords in 'package.json'. We would use them as tags on the module list page."
     ],
-    "stars": 28,
+    "stars": 29,
     "license": "BSD-3-Clause",
     "image": "screenshot.jpg"
   },
@@ -5695,7 +5698,7 @@
     "maintainerURL": "https://github.com/randomBrainstormer",
     "description": "Get your Google Calendars in the shape of MagicMirror's default calendar.",
     "issues": [],
-    "stars": 67,
+    "stars": 69,
     "license": "MIT",
     "tags": [
       "google",
@@ -5850,7 +5853,7 @@
     "maintainerURL": "https://github.com/hermanho",
     "description": "Image gallery or wallpaper with your Google Photos account.",
     "issues": [],
-    "stars": 168,
+    "stars": 170,
     "license": "MIT",
     "tags": [
       "googlephotos"
@@ -5884,7 +5887,7 @@
     "maintainerURL": "",
     "description": "Display Google Sheets data. Highly customizable.",
     "issues": [],
-    "stars": 24,
+    "stars": 26,
     "license": "MIT",
     "tags": [
       "googlesheets",
@@ -6095,7 +6098,7 @@
     "maintainerURL": "",
     "description": "Detecting 3D gesture with GroveGesture Sensor(PAJ7620u2).",
     "issues": [],
-    "stars": 35,
+    "stars": 36,
     "license": "MIT",
     "tags": [
       "grove gesture",
@@ -11214,11 +11217,13 @@
     "maintainer": "nischi",
     "maintainerURL": "",
     "description": "Add a QR Code with the link to the showing Newsfeed (Default Newsfeed Module).",
-    "issues": [
-      "There is no `package.json`. We need this file to gather information about the module for the module list page."
-    ],
+    "issues": [],
     "stars": 11,
     "license": "MIT",
+    "tags": [
+      "newsfeed",
+      "qr-code"
+    ],
     "image": "news-qr.jpg"
   },
   {
@@ -16023,12 +16028,16 @@
     "description": "Display Soliscloud inverter data.",
     "issues": [
       "`package.json` issue: No repository field.",
-      "There are no keywords in 'package.json'. We would use them as tags on the module list page.",
       "Issue: The license in the package.json (ISC) doesn't match the license file (MIT).",
       "No image found."
     ],
     "stars": 2,
-    "license": "MIT"
+    "license": "MIT",
+    "tags": [
+      "soliscloud",
+      "solis",
+      "solar"
+    ]
   },
   {
     "name": "MMM-Sonarr",
@@ -19048,7 +19057,9 @@
       "`package.json` issue: No license field.",
       "There are no keywords in 'package.json'. We would use them as tags on the module list page."
     ],
-    "stars": 3
+    "stars": 3,
+    "license": "MIT",
+    "image": "whoshome.jpg"
   },
   {
     "name": "MMM-Widget",
