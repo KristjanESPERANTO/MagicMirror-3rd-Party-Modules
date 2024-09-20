@@ -48,16 +48,16 @@
   "dependencies": {
     "marked": "^14.1.2",
     "normalize-package-data": "^6.0.2",
-    "npm-check-updates": "^17.1.1",
+    "npm-check-updates": "^17.1.2",
     "ntl": "^5.1.0",
     "sanitize-html": "^2.13.0",
     "sharp": "^0.33.5"
   },
   "devDependencies": {
-    "@eslint/js": "^9.10.0",
+    "@eslint/js": "^9.11.0",
     "@stylistic/eslint-plugin": "^2.8.0",
-    "cspell": "^8.14.3",
-    "eslint": "^9.10.0",
+    "cspell": "^8.14.4",
+    "eslint": "^9.11.0",
     "eslint-plugin-jsonc": "^2.16.0",
     "eslint-plugin-package-json": "^0.15.3",
     "husky": "^9.1.6",
