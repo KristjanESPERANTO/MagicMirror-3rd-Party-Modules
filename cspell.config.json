@@ -20,8 +20,9 @@
     "dependencie"
   ],
   "ignorePaths": [
-    "node_modules/**",
-    "modules/**",
+    "node_modules/",
+    "modules/",
+    "modules_temp/",
     "docs/**",
     "result.md",
     "eslint-config-DEBUG.json"
