@@ -214,172 +214,172 @@ def check_modules():
         stats["moduleCounter"] += 1
 
         module_directory = module["name"] + "-----" + module["maintainer"]
+        module_directory_path = Path("./modules/" + module_directory)
 
         # Print progress
         progress = f"{stats['moduleCounter']:4}/{len(modules)}\r"
         print(progress, end="")
-
-        if module["name"].startswith("EXT-"):
-            # Modules with a name starting with "EXT-" are only for MMM-GoogleAssistant. So we make them heavier for the default sort order.
-            module["defaultSortWeight"] += 3
-
-            module["description"] += "<br /><br />This module has been defined to work only with MMM-GoogleAssistant."
-
-        elif not module["name"].startswith("MMM-"):
-            module["issues"].append(
-                "Recommendation: Module name doesn't follow the recommended pattern (it doesn't start with `MMM-`). Consider renaming your module."
-            )
-
-        # Because we make EXT modules heavier we lift MMM-GoogleAssistant a bit up.
-        if module["name"] == ("MMM-GoogleAssistant"):
-            module["defaultSortWeight"] -= 1
-
-        module_directory_path = Path("./modules/" + module_directory)
-        for file_path in sorted(module_directory_path.rglob("*")):
-            if file_path.is_dir():
-                # Explanation for .count("node_modules") == 1: If there is a node_modules directory, there are probably others in it with that name. There does not have to be an additional message for this.
-                if (
-                    file_path.name == "node_modules"
-                    and str(file_path).count("node_modules") == 1
-                ):
-                    module["issues"].append(
-                        "Found directory `node_modules`. This shouldn't be uploaded. Add `node_modules/`to `.gitignore`."
-                    )
-            elif not file_path.is_symlink() and "node_modules" not in str(file_path):
-                if (
-                    "changelog" not in str(file_path).lower()
-                    and "package-lock.json" not in str(file_path).lower()
-                ):
-                    if file_path.name == "jquery.js" or file_path.name == "jquery.min.js":
-                        module["issues"].append(
-                            f"Recommendation: Found local copy of `{file_path.name}`. Instead of a local copy, it would be better to add jQuery to the dependencies in `package.json`."
-                        )
-
-                        found_string = any(
-                            search_in_file(file_path, version)
-                            for version in ["jQuery v3.7", "jQuery v3.8", "jQuery v3.9", "jQuery v4"]
-                        )
-                        if found_string is False:
-                            module["issues"].append(
-                                f"Outdated: Local jQuery file `{file_path.name}` seems to be outdated. jQuery v3.7 or higher is recommended."
-                            )
-                    else:
-                        for search_string, value in search_strings.items():
-                            found_string = search_in_file(file_path, search_string)
-                            if found_string:
-                                module["issues"].append(
-                                    f"{value['category']}: Found `{search_string}` in file `{file_path.name}`: {value['name']}"
-                                )
-
-                        if file_path.name == "package.json":
-                            for search_string, value in search_strings_package_json.items():
-                                found_string = search_in_file(
-                                    file_path, search_string)
-                                if found_string:
-                                    module["issues"].append(
-                                        f"{value['category']}: Found `{search_string}` in file `{file_path.name}`: {value['name']}"
-                                    )
-
-                        if file_path.name.startswith("README") and file_path.parent == module_directory_path:
-                            # Search for "update" or "Update" in README
-                            found_update_string = search_in_file(file_path, "Update")
-                            if not found_update_string:
-                                found_update_string = search_in_file(file_path, "update")
-                            if not found_update_string:
-                                module["issues"].append(
-                                    "Recommendation: The README seems not to have an update instruction (the word 'update' is missing). Please add one."
-                                )
-
-                            # Search for "install" in README
-                            found_clone_string = search_in_file(file_path, "Install")
-                            if not found_clone_string:
-                                found_clone_string = search_in_file(file_path, "install")
-                            if not found_clone_string:
-                                module["issues"].append(
-                                    "Recommendation: The README seems not to have an install instruction (the words 'install' or 'installation' are missing). Please add one."
-                                )
-
-                # if ".yml" in str(file_path).lower():
-                #    module["issues"].append(
-                #        f"`Recommendation: {file_path.name}`: Change file extension from `.yml` to `.yaml`: <https://yaml.org/faq.html>.")
-
-        if "LICENSE" not in str(sorted(module_directory_path.rglob("*"))):
-            module["issues"].append("Warning: No LICENSE file.")
-
-        if "eslintrc" in str(sorted(module_directory_path.rglob("*"))):
-            module["issues"].append(
-                "Recommendation: Replace eslintrc by new flat config.")
-        elif "eslint.config" not in str(sorted(module_directory_path.rglob("*"))):
-            module["issues"].append(
-                "Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.")
-
-        if not module_directory_path.is_dir():
-            module["issues"] = [
-                "Error: It appears that the repository could not be cloned. Check the URL."
-            ]
-
-        check_branch_name(module, module_directory_path)
-
-        check_dependency_updates(module, module_directory_path)
-
-        if "outdated" in module or len(module["issues"]) > 0:
-            stats["modulesWithIssuesCounter"] += 1
-            markdown_output_modules += f"\n### [{module['name']} by {module['maintainer']}]({module['url']})\n\n"
-
-            if "outdated" in module:
-                module["defaultSortWeight"] += 900
-                stats["issueCounter"] += 1
-                markdown_output_modules += (
-                    f"0. This module is outdated: {module['outdated']}\n"
-                )
-            elif "isArchived" in module:
-                module["defaultSortWeight"] += 800
-                stats["issueCounter"] += 1
-                module["issues"].append(
-                "Module is archived, but not marked as outdated in the official module list.")
-
-            if len(module["issues"]) > 0:
-                stats["issueCounter"] += len(module["issues"])
-                for idx, issue in enumerate(module["issues"]):
-                    markdown_output_modules += f"{idx+1}. {issue}\n"
 
         get_last_commit_date(module, module_directory_path)
 
         if "image" in module:
             stats["modulesWithImageCounter"] += 1
 
-        repository_hoster = module["url"].split(".")[0].split("/")[2]
-        if repository_hoster not in stats["repositoryHoster"]:
-            stats["repositoryHoster"][repository_hoster] = 1
-        else:
-            stats["repositoryHoster"][repository_hoster] += 1
-
-        if module["maintainer"] not in stats["maintainer"]:
-            stats["maintainer"][module["maintainer"]] = 1
-        else:
-            stats["maintainer"][module["maintainer"]] += 1
-
-        module["defaultSortWeight"] += len(module["issues"])
-
-        # Replace the issue array with boolean. The issues were written to result.md and for the website is only relevant if the module has issues or not. This reduces the size of modules.json by more than half.
-        if len(module["issues"]) > 0:
+        if "outdated" in module:
+            module["defaultSortWeight"] += 900
             module["issues"] = True
+            stats["issueCounter"] += 1
+            stats["modulesWithIssuesCounter"] += 1
+
         else:
-            module["issues"] = False
+            if "isArchived" in module:
+                module["defaultSortWeight"] += 800
+                stats["issueCounter"] += 1
+                module["issues"].append(
+                "Module is archived, but not marked as outdated in the official module list.")
 
-        # Lift modules with many stars in the default sort order.
-        if module.get('stars', 0) > 50:
-            module["defaultSortWeight"] = module["defaultSortWeight"] - (module['stars'] // 50)
-        elif module.get('stars', 0) > 10:
-            module["defaultSortWeight"] = module["defaultSortWeight"] - 1
+            if module["name"].startswith("EXT-"):
+                # Modules with a name starting with "EXT-" are only for MMM-GoogleAssistant. So we make them heavier for the default sort order.
+                module["defaultSortWeight"] += 3
 
-        # Lower modules with few stars in the default sort order.
-        # if module.get('stars', 0) < 3:
-        #    module["defaultSortWeight"] += 1
+                module["description"] += "<br /><br />This module has been defined to work only with MMM-GoogleAssistant."
 
-        # Just to reduce imbalance in the default sort order, modules from this developer get a minimum value of one.
-        if module['maintainer'] == "KristjanESPERANTO":
-            module["defaultSortWeight"] = max(module["defaultSortWeight"], 1)
+            elif not module["name"].startswith("MMM-"):
+                module["issues"].append(
+                    "Recommendation: Module name doesn't follow the recommended pattern (it doesn't start with `MMM-`). Consider renaming your module."
+                )
+
+            # Because we make EXT modules heavier we lift MMM-GoogleAssistant a bit up.
+            if module["name"] == ("MMM-GoogleAssistant"):
+                module["defaultSortWeight"] -= 1
+
+            for file_path in sorted(module_directory_path.rglob("*")):
+                if file_path.is_dir():
+                    # Explanation for .count("node_modules") == 1: If there is a node_modules directory, there are probably others in it with that name. There does not have to be an additional message for this.
+                    if (
+                        file_path.name == "node_modules"
+                        and str(file_path).count("node_modules") == 1
+                    ):
+                        module["issues"].append(
+                            "Found directory `node_modules`. This shouldn't be uploaded. Add `node_modules/`to `.gitignore`."
+                        )
+                elif not file_path.is_symlink() and "node_modules" not in str(file_path):
+                    if (
+                        "changelog" not in str(file_path).lower()
+                        and "package-lock.json" not in str(file_path).lower()
+                    ):
+                        if file_path.name == "jquery.js" or file_path.name == "jquery.min.js":
+                            module["issues"].append(
+                                f"Recommendation: Found local copy of `{file_path.name}`. Instead of a local copy, it would be better to add jQuery to the dependencies in `package.json`."
+                            )
+
+                            found_string = any(
+                                search_in_file(file_path, version)
+                                for version in ["jQuery v3.7", "jQuery v3.8", "jQuery v3.9", "jQuery v4"]
+                            )
+                            if found_string is False:
+                                module["issues"].append(
+                                    f"Outdated: Local jQuery file `{file_path.name}` seems to be outdated. jQuery v3.7 or higher is recommended."
+                                )
+                        else:
+                            for search_string, value in search_strings.items():
+                                found_string = search_in_file(file_path, search_string)
+                                if found_string:
+                                    module["issues"].append(
+                                        f"{value['category']}: Found `{search_string}` in file `{file_path.name}`: {value['name']}"
+                                    )
+
+                            if file_path.name == "package.json":
+                                for search_string, value in search_strings_package_json.items():
+                                    found_string = search_in_file(
+                                        file_path, search_string)
+                                    if found_string:
+                                        module["issues"].append(
+                                            f"{value['category']}: Found `{search_string}` in file `{file_path.name}`: {value['name']}"
+                                        )
+
+                            if file_path.name.startswith("README") and file_path.parent == module_directory_path:
+                                # Search for "update" or "Update" in README
+                                found_update_string = search_in_file(file_path, "Update")
+                                if not found_update_string:
+                                    found_update_string = search_in_file(file_path, "update")
+                                if not found_update_string:
+                                    module["issues"].append(
+                                        "Recommendation: The README seems not to have an update instruction (the word 'update' is missing). Please add one."
+                                    )
+
+                                # Search for "install" in README
+                                found_clone_string = search_in_file(file_path, "Install")
+                                if not found_clone_string:
+                                    found_clone_string = search_in_file(file_path, "install")
+                                if not found_clone_string:
+                                    module["issues"].append(
+                                        "Recommendation: The README seems not to have an install instruction (the words 'install' or 'installation' are missing). Please add one."
+                                    )
+
+                    # if ".yml" in str(file_path).lower():
+                    #    module["issues"].append(
+                    #        f"`Recommendation: {file_path.name}`: Change file extension from `.yml` to `.yaml`: <https://yaml.org/faq.html>.")
+
+            if "LICENSE" not in str(sorted(module_directory_path.rglob("*"))):
+                module["issues"].append("Warning: No LICENSE file.")
+
+            if "eslintrc" in str(sorted(module_directory_path.rglob("*"))):
+                module["issues"].append(
+                    "Recommendation: Replace eslintrc by new flat config.")
+            elif "eslint.config" not in str(sorted(module_directory_path.rglob("*"))):
+                module["issues"].append(
+                    "Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.")
+
+            if not module_directory_path.is_dir():
+                module["issues"] = [
+                    "Error: It appears that the repository could not be cloned. Check the URL."
+                ]
+
+            check_branch_name(module, module_directory_path)
+
+            check_dependency_updates(module, module_directory_path)
+
+            if len(module["issues"]) > 0:
+                stats["modulesWithIssuesCounter"] += 1
+                markdown_output_modules += f"\n### [{module['name']} by {module['maintainer']}]({module['url']})\n\n"
+
+                stats["issueCounter"] += len(module["issues"])
+                for idx, issue in enumerate(module["issues"]):
+                    markdown_output_modules += f"{idx+1}. {issue}\n"
+
+            repository_hoster = module["url"].split(".")[0].split("/")[2]
+            if repository_hoster not in stats["repositoryHoster"]:
+                stats["repositoryHoster"][repository_hoster] = 1
+            else:
+                stats["repositoryHoster"][repository_hoster] += 1
+
+            if module["maintainer"] not in stats["maintainer"]:
+                stats["maintainer"][module["maintainer"]] = 1
+            else:
+                stats["maintainer"][module["maintainer"]] += 1
+
+            module["defaultSortWeight"] += len(module["issues"])
+
+            # Replace the issue array with boolean. The issues were written to result.md and for the website is only relevant if the module has issues or not. This reduces the size of modules.json by more than half.
+            if len(module["issues"]) > 0:
+                module["issues"] = True
+            else:
+                module["issues"] = False
+
+            # Lift modules with many stars in the default sort order.
+            if module.get('stars', 0) > 50:
+                module["defaultSortWeight"] = module["defaultSortWeight"] - (module['stars'] // 50)
+            elif module.get('stars', 0) > 10:
+                module["defaultSortWeight"] = module["defaultSortWeight"] - 1
+
+            # Lower modules with few stars in the default sort order.
+            # if module.get('stars', 0) < 3:
+            #    module["defaultSortWeight"] += 1
+
+            # Just to reduce imbalance in the default sort order, modules from this developer get a minimum value of one.
+            if module['maintainer'] == "KristjanESPERANTO":
+                module["defaultSortWeight"] = max(module["defaultSortWeight"], 1)
 
     print(
         f"{stats['moduleCounter']} modules analyzed. For results see file result.md.           ")
