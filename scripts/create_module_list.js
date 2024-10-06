@@ -1,4 +1,5 @@
 import fs from "fs";
+// eslint-disable-next-line import-x/namespace
 import {marked} from "marked";
 import sanitizeHtml from "sanitize-html";
 
