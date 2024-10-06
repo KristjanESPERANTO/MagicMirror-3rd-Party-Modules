@@ -280,7 +280,7 @@
       "air-quality"
     ],
     "image": ".github-preview-good.jpg",
-    "defaultSortWeight": 0,
+    "defaultSortWeight": 1,
     "lastCommit": "2024-09-24T02:18:45+00:00"
   },
   {
@@ -2965,7 +2965,7 @@
     "stars": 0,
     "license": "MIT",
     "image": "ui-d2l.jpg",
-    "defaultSortWeight": 7,
+    "defaultSortWeight": 9,
     "lastCommit": "2023-10-09T13:39:08+02:00"
   },
   {
@@ -3409,7 +3409,7 @@
     "issues": true,
     "stars": 4,
     "license": "MIT",
-    "defaultSortWeight": 2,
+    "defaultSortWeight": 3,
     "lastCommit": "2023-09-27T12:27:55+02:00"
   },
   {
@@ -4427,7 +4427,7 @@
     "tags": [
       "facial recognition"
     ],
-    "defaultSortWeight": 8,
+    "defaultSortWeight": 10,
     "lastCommit": "2023-09-04T13:18:18+01:00"
   },
   {
@@ -4516,7 +4516,7 @@
     "stars": 7,
     "license": "MIT",
     "image": "preview-preview.jpg",
-    "defaultSortWeight": 8,
+    "defaultSortWeight": 9,
     "lastCommit": "2021-02-28T22:53:00+03:00"
   },
   {
@@ -4924,7 +4924,7 @@
     ],
     "license": "MIT",
     "image": "data-flights_mapbox.jpg",
-    "defaultSortWeight": 3,
+    "defaultSortWeight": 4,
     "lastCommit": "2024-09-29T19:05:30+02:00"
   },
   {
@@ -5399,7 +5399,7 @@
       "game of life"
     ],
     "image": "img-screenshot_1.jpg",
-    "defaultSortWeight": 7,
+    "defaultSortWeight": 8,
     "lastCommit": "2018-02-23T18:36:59+01:00"
   },
   {
@@ -7407,7 +7407,7 @@
     "stars": 10,
     "license": "MIT",
     "image": "docs-images-all-devices-green.jpg",
-    "defaultSortWeight": 9,
+    "defaultSortWeight": 10,
     "lastCommit": "2019-06-15T16:56:25-05:00"
   },
   {
@@ -7466,7 +7466,7 @@
     "description": "Air quality widget based on <a target=\"_blank\" href=\"https://www.iqair.com\">IQAir API</a>.",
     "issues": true,
     "stars": 1,
-    "defaultSortWeight": 7,
+    "defaultSortWeight": 8,
     "lastCommit": "2022-10-07T00:52:57+03:00"
   },
   {
@@ -7555,7 +7555,7 @@
     ],
     "license": "MIT",
     "image": "data-iss_cartodb.jpg",
-    "defaultSortWeight": 2,
+    "defaultSortWeight": 4,
     "lastCommit": "2024-09-29T19:02:37+02:00"
   },
   {
@@ -8324,7 +8324,7 @@
     "stars": 8,
     "license": "ISC",
     "image": "Screenshots-Schematics-Potentiometer.jpg",
-    "defaultSortWeight": 14,
+    "defaultSortWeight": 16,
     "lastCommit": "2022-08-19T23:35:25-04:00"
   },
   {
@@ -8830,7 +8830,7 @@
     "issues": true,
     "stars": 0,
     "license": "MIT",
-    "defaultSortWeight": 8,
+    "defaultSortWeight": 9,
     "lastCommit": "2022-02-18T12:51:42+01:00"
   },
   {
@@ -9018,7 +9018,7 @@
     "stars": 2,
     "license": "MIT",
     "image": "public-AndreaGrandieri_pp.jpg",
-    "defaultSortWeight": 8,
+    "defaultSortWeight": 10,
     "lastCommit": "2023-09-06T00:07:21+02:00"
   },
   {
@@ -9281,7 +9281,7 @@
       "skill",
       "google search engine"
     ],
-    "defaultSortWeight": 9,
+    "defaultSortWeight": 10,
     "lastCommit": "2018-09-22T22:41:16-04:00"
   },
   {
@@ -10449,7 +10449,7 @@
       "warning"
     ],
     "image": "resources-Screenshot.jpg",
-    "defaultSortWeight": 4,
+    "defaultSortWeight": 5,
     "lastCommit": "2024-07-01T17:02:31+02:00"
   },
   {
@@ -12352,7 +12352,7 @@
     "stars": 0,
     "license": "MIT",
     "image": "doc-screenshot.jpg",
-    "defaultSortWeight": 11,
+    "defaultSortWeight": 12,
     "lastCommit": "2020-05-19T14:27:29-05:00"
   },
   {
@@ -12378,7 +12378,7 @@
     "description": "Shows weather information for the next 24 hours using the OpenWeather API. The idea of this module is to give you confidence on what to wear when you go outside / to work, or what transport mode you should take (in case you are a good weather-only biker). The hourly forecast gives you a good decision basis based on the weather condition at the times you go to work and return home.",
     "issues": true,
     "stars": 11,
-    "defaultSortWeight": 5,
+    "defaultSortWeight": 6,
     "lastCommit": "2024-04-21T15:40:24+02:00"
   },
   {
@@ -12475,7 +12475,7 @@
     "description": "A more detailed Oura data display including readiness scores and heart rate data.",
     "issues": true,
     "stars": 3,
-    "defaultSortWeight": 4,
+    "defaultSortWeight": 5,
     "lastCommit": "2022-07-20T06:33:59-04:00"
   },
   {
@@ -12701,7 +12701,7 @@
     "stars": 3,
     "hasGithubIssues": false,
     "license": "MIT",
-    "defaultSortWeight": 8,
+    "defaultSortWeight": 9,
     "lastCommit": "2020-05-26T09:40:12-04:00"
   },
   {
@@ -13255,7 +13255,7 @@
     "description": "Displays brief information (flag, weather, exchange rate) about multiple locations at once.",
     "issues": true,
     "stars": 3,
-    "defaultSortWeight": 7,
+    "defaultSortWeight": 8,
     "lastCommit": "2024-06-24T11:02:16-04:00"
   },
   {
@@ -13792,7 +13792,7 @@
     "issues": true,
     "stars": 1,
     "license": "MIT",
-    "defaultSortWeight": 12,
+    "defaultSortWeight": 13,
     "lastCommit": "2018-03-27T22:05:47+00:00"
   },
   {
@@ -14194,7 +14194,7 @@
     "issues": true,
     "stars": 2,
     "license": "MIT",
-    "defaultSortWeight": 13,
+    "defaultSortWeight": 14,
     "lastCommit": "2021-10-21T18:23:01+02:00"
   },
   {
@@ -14464,7 +14464,7 @@
       "control"
     ],
     "image": ".github-hide_show_module.jpg",
-    "defaultSortWeight": 8,
+    "defaultSortWeight": 9,
     "lastCommit": "2023-10-03T19:43:50-03:00"
   },
   {
@@ -16288,7 +16288,7 @@
       "spotify"
     ],
     "image": "components-Spotify-Logo.jpg",
-    "defaultSortWeight": 4,
+    "defaultSortWeight": 6,
     "lastCommit": "2024-07-01T16:56:24+02:00"
   },
   {
@@ -16467,7 +16467,7 @@
     ],
     "license": "MIT",
     "image": "Timer.jpg",
-    "defaultSortWeight": 5,
+    "defaultSortWeight": 6,
     "lastCommit": "2021-12-08T09:49:32+01:00"
   },
   {
@@ -17097,7 +17097,7 @@
       "tessie"
     ],
     "image": "doc-screenshot.jpg",
-    "defaultSortWeight": 9,
+    "defaultSortWeight": 10,
     "lastCommit": "2024-05-07T12:45:14+01:00"
   },
   {
@@ -17144,7 +17144,7 @@
     "stars": 52,
     "license": "MIT",
     "image": "doc-charge_starting.jpg",
-    "defaultSortWeight": 4,
+    "defaultSortWeight": 5,
     "lastCommit": "2024-06-18T15:02:51+02:00"
   },
   {
@@ -17159,7 +17159,7 @@
     "stars": 1,
     "license": "MIT",
     "image": "docs-images-all-devices-green.jpg",
-    "defaultSortWeight": 9,
+    "defaultSortWeight": 10,
     "lastCommit": "2019-06-20T00:12:34-05:00"
   },
   {
@@ -17653,7 +17653,7 @@
     "issues": true,
     "stars": 1,
     "license": "GPL-3.0",
-    "defaultSortWeight": 9,
+    "defaultSortWeight": 10,
     "lastCommit": "2023-10-25T23:10:15+00:00"
   },
   {
@@ -17707,7 +17707,7 @@
     "stars": 0,
     "license": "MIT",
     "image": "images-screenshot.jpg",
-    "defaultSortWeight": 5,
+    "defaultSortWeight": 6,
     "lastCommit": "2021-06-05T21:13:26-04:00"
   },
   {
@@ -18890,7 +18890,7 @@
     "issues": true,
     "stars": 27,
     "license": "MIT",
-    "defaultSortWeight": 3,
+    "defaultSortWeight": 4,
     "lastCommit": "2024-08-28T22:28:30+09:00"
   },
   {
@@ -18946,7 +18946,7 @@
     "stars": 0,
     "license": "MIT",
     "image": "images-WeatherHourlyByDay.jpg",
-    "defaultSortWeight": 4,
+    "defaultSortWeight": 5,
     "lastCommit": "2022-10-06T14:08:58-05:00"
   },
   {
@@ -19015,7 +19015,7 @@
       "ext"
     ],
     "image": "website-assets-img-FavIcon.jpg",
-    "defaultSortWeight": 6,
+    "defaultSortWeight": 9,
     "lastCommit": "2024-08-15T14:53:13+02:00"
   },
   {
@@ -19351,7 +19351,7 @@
     ],
     "license": "MIT",
     "image": "screenshot.jpg",
-    "defaultSortWeight": 2,
+    "defaultSortWeight": 3,
     "lastCommit": "2024-03-25T13:44:32+01:00"
   },
   {
@@ -19612,7 +19612,7 @@
       "youless\u001b[hmagi\u001b[c\u001b[f"
     ],
     "image": "images-module_ss_01.jpg",
-    "defaultSortWeight": 8,
+    "defaultSortWeight": 9,
     "lastCommit": "2017-07-04T12:49:25+02:00"
   },
   {
@@ -19630,7 +19630,7 @@
       "youless"
     ],
     "image": "public-images-module_ss_01.jpg",
-    "defaultSortWeight": 8,
+    "defaultSortWeight": 9,
     "lastCommit": "2024-09-27T18:37:04+02:00"
   },
   {
@@ -19762,7 +19762,7 @@
     "stars": 2,
     "license": "MIT",
     "image": "img-preshow.jpg",
-    "defaultSortWeight": 7,
+    "defaultSortWeight": 8,
     "lastCommit": "2024-04-13T18:14:48+02:00"
   },
   {
