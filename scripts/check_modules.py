@@ -178,8 +178,16 @@ def check_modules():
             "category": "Deprecated",
         },
         "api.openweathermap.org/data/2.5": {
-            "name": "OpenWeather API 2.5 will be deprecated in June 2024. Please update to 3.0.",
+            "name": "OpenWeather API 2.5 is deprecated since June 2024. Please update to 3.0.",
             "category": "Deprecated",
+        },
+        "https://cdnjs.cloudflare.com": {
+            "name": "It looks like a package is loaded via CDN. It would be better if the package were installed locally via npm.",
+            "category": "Recommendation",
+        },
+        "https://cdn.jsdelivr.net": {
+            "name": "It looks like a package is loaded via CDN. It would be better if the package were installed locally via npm.",
+            "category": "Recommendation",
         },
     }
 
