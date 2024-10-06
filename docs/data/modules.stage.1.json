@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "2024-09-19T21:01:14.387Z",
+  "lastUpdate": "2024-10-06T18:47:55.023Z",
   "modules": [
     {
       "name": "MMM-01ZM",
@@ -139,6 +139,16 @@
       "maintainer": "nigel-daniels",
       "maintainerURL": "https://github.com/nigel-daniels",
       "description": "Simple display of air quality based on the US AirNow API.",
+      "issues": []
+    },
+    {
+      "name": "MMM-airquality",
+      "category": "Weather",
+      "url": "https://github.com/PierreGode/MMM-airquality",
+      "id": "PierreGode/MMM-airquality",
+      "maintainer": "PierreGode",
+      "maintainerURL": "",
+      "description": "Display air quality and Pollen information using data from the ambee API.<br /><strong>Note:</strong> API key is only available with a business email address.",
       "issues": []
     },
     {
@@ -909,16 +919,6 @@
       "issues": []
     },
     {
-      "name": "EXT-Bring",
-      "category": "Extended plugins for MMM-GoogleAssistant",
-      "url": "https://github.com/bugsounet/EXT-Bring",
-      "id": "bugsounet/EXT-Bring",
-      "maintainer": "bugsounet",
-      "maintainerURL": "https://wiki.bugsounet.fr",
-      "description": "Show your current shopping list of Bring!",
-      "issues": []
-    },
-    {
       "name": "MMM-bringList",
       "category": "Utility / IOT / 3rd Party / Integration",
       "url": "https://github.com/rseidt/MMM-bringList",
@@ -1015,7 +1015,7 @@
       "id": "MarcLandis/MMM-Buttons",
       "maintainer": "MarcLandis",
       "maintainerURL": "",
-      "description": "More complicated, but also more powerful: multiple buttons, configurable notifications, different actions on short and long press.",
+      "description": "Allows you to enhance your setup by integrating physical buttons via GPIO. This module supports multiple buttons, each of which can be individually configured to perform different actions based on short or long presses. With configurable notifications and versatile functionality, MMM-Buttons provides a powerful way to interact with your MagicMirror².",
       "issues": []
     },
     {
@@ -3212,7 +3212,7 @@
       "id": "fewieden/MMM-Fuel",
       "maintainer": "fewieden",
       "maintainerURL": "",
-      "description": "Display Gas Station prices.",
+      "description": "Display gas station prices.",
       "issues": []
     },
     {
@@ -3256,6 +3256,16 @@
       "issues": []
     },
     {
+      "name": "MMM-Gas",
+      "category": "Transport / Travel",
+      "url": "https://github.com/cowboysdude/MMM-Gas",
+      "id": "cowboysdude/MMM-Gas",
+      "maintainer": "cowboysdude",
+      "maintainerURL": "",
+      "description": "Display gas station prices in the USA.",
+      "issues": []
+    },
+    {
       "name": "MMM-GasMonitor",
       "category": "Utility / IOT / 3rd Party / Integration",
       "url": "https://github.com/mumblebaj/MMM-GasMonitor",
@@ -3272,7 +3282,7 @@
       "id": "Fneves7/MMM-GasPricesPT",
       "maintainer": "Fneves7",
       "maintainerURL": "https://github.com/Fneves7",
-      "description": "Display the cheapest Gas Station prices in Portugal.",
+      "description": "Display the cheapest gas station prices in Portugal.",
       "issues": []
     },
     {
@@ -3519,13 +3529,14 @@
     },
     {
       "name": "MMM-GoogleKeep",
-      "category": "Utility / IOT / 3rd Party / Integration",
+      "category": "Outdated Modules",
       "url": "https://github.com/taxilof/MMM-GoogleKeep",
       "id": "taxilof/MMM-GoogleKeep",
       "maintainer": "taxilof",
       "maintainerURL": "",
       "description": "Displays one list from Google Keep.",
-      "issues": []
+      "issues": [],
+      "outdated": "Abandoned. No reactions to issues since years. Seems not to work anymore."
     },
     {
       "name": "MMM-googlemaps",
@@ -3852,21 +3863,11 @@
     {
       "name": "MMM-HH-LocalTransport",
       "category": "Transport / Travel",
-      "url": "https://github.com/georg90/MMM-HH-LocalTransport",
-      "id": "georg90/MMM-HH-LocalTransport",
-      "maintainer": "georg90",
-      "maintainerURL": "",
-      "description": "Display local transport in Hamburg/Germany.",
-      "issues": []
-    },
-    {
-      "name": "MMM-HH-LocalTransport",
-      "category": "Transport / Travel",
       "url": "https://github.com/skuethe/MMM-HH-LocalTransport",
       "id": "skuethe/MMM-HH-LocalTransport",
       "maintainer": "skuethe",
       "maintainerURL": "",
-      "description": "Display local transport in Hamburg/Germany. Now up to date.",
+      "description": "Display local transport in Hamburg/Germany.",
       "issues": []
     },
     {
@@ -4430,16 +4431,6 @@
       "maintainer": "ianmccon",
       "maintainerURL": "",
       "description": "Displays energy usage history for your Octopus Energy account. For use if you are on the Intelligent Octopus tarrif. Based on MMM-OctoMon.",
-      "issues": []
-    },
-    {
-      "name": "EXT-Internet",
-      "category": "Extended plugins for MMM-GoogleAssistant",
-      "url": "https://github.com/bugsounet/EXT-Internet",
-      "id": "bugsounet/EXT-Internet",
-      "maintainer": "bugsounet",
-      "maintainerURL": "https://wiki.bugsounet.fr",
-      "description": "Check your internet connexion, display ping.",
       "issues": []
     },
     {
@@ -6057,16 +6048,6 @@
       "issues": []
     },
     {
-      "name": "EXT-Motion",
-      "category": "Extended plugins for MMM-GoogleAssistant",
-      "url": "https://github.com/bugsounet/EXT-Motion",
-      "id": "bugsounet/EXT-Motion",
-      "maintainer": "bugsounet",
-      "maintainerURL": "https://wiki.bugsounet.fr",
-      "description": "Control your screen with a webcam (as motion detector).",
-      "issues": []
-    },
-    {
       "name": "MMM-Motion-Camera",
       "category": "Utility / IOT / 3rd Party / Integration",
       "url": "https://github.com/yusinv/MMM-Motion-Camera",
@@ -6130,9 +6111,9 @@
     {
       "name": "MMM-MovieListings",
       "category": "Entertainment / Misc",
-      "url": "https://github.com/Tueti/MMM-MovieListings",
-      "id": "Tueti/MMM-MovieListings",
-      "maintainer": "Tueti",
+      "url": "https://github.com/mumblebaj/MMM-MovieListings",
+      "id": "mumblebaj/MMM-MovieListings",
+      "maintainer": "mumblebaj",
       "maintainerURL": "",
       "description": "Displays the currently airing top movies in theaters around you.",
       "issues": []
@@ -6946,9 +6927,9 @@
     {
       "name": "MMM-NHL",
       "category": "Sports",
-      "url": "https://github.com/fewieden/MMM-NHL",
-      "id": "fewieden/MMM-NHL",
-      "maintainer": "fewieden",
+      "url": "https://github.com/parnic/MMM-NHL",
+      "id": "parnic/MMM-NHL",
+      "maintainer": "parnic",
       "maintainerURL": "",
       "description": "Display scores of National Hockey League.",
       "issues": []
@@ -7486,7 +7467,7 @@
       "id": "MarcLandis/MMM-OpenWeatherMapForecast",
       "maintainer": "MarcLandis",
       "maintainerURL": "",
-      "description": "A weather module that displays current, hourly and daily forecast information using data from the OpenWeatherMap One Call API. This is based on the MMM-DarkSkyForecast module by jclarke0000.",
+      "description": "A weather module that displays current, hourly and daily forecast information using data from the OpenWeatherMap One Call API.",
       "issues": []
     },
     {
@@ -8523,7 +8504,7 @@
       "id": "spoturdeal/MMM-rain-forecast",
       "maintainer": "spoturdeal",
       "maintainerURL": "",
-      "description": "Graphical rain forecast for the Netherlands, no dependies or outside scripts needed. Superfast with scalable vector graphics in desired color.",
+      "description": "Graphical rain forecast for the Netherlands. Superfast with scalable vector graphics in desired color.",
       "issues": []
     },
     {
@@ -9192,26 +9173,6 @@
       "issues": []
     },
     {
-      "name": "EXT-Selfies",
-      "category": "Extended plugins for MMM-GoogleAssistant",
-      "url": "https://github.com/bugsounet/EXT-Selfies",
-      "id": "bugsounet/EXT-Selfies",
-      "maintainer": "bugsounet",
-      "maintainerURL": "https://wiki.bugsounet.fr",
-      "description": "Take selfies from webcam.",
-      "issues": []
-    },
-    {
-      "name": "EXT-SelfiesFlash",
-      "category": "Extended plugins for MMM-GoogleAssistant",
-      "url": "https://github.com/bugsounet/EXT-SelfiesFlash",
-      "id": "bugsounet/EXT-SelfiesFlash",
-      "maintainer": "bugsounet",
-      "maintainerURL": "https://wiki.bugsounet.fr",
-      "description": "Need a flash to take selfies?",
-      "issues": []
-    },
-    {
       "name": "MMM-Selfieshot",
       "category": "Utility / IOT / 3rd Party / Integration",
       "url": "https://github.com/BrianHepler/MMM-Selfieshot",
@@ -9219,26 +9180,6 @@
       "maintainer": "BrianHepler",
       "maintainerURL": "https://github.com/BrianHepler",
       "description": "Taking a Selfie with USB cam.",
-      "issues": []
-    },
-    {
-      "name": "EXT-SelfiesSender",
-      "category": "Extended plugins for MMM-GoogleAssistant",
-      "url": "https://github.com/bugsounet/EXT-SelfiesSender",
-      "id": "bugsounet/EXT-SelfiesSender",
-      "maintainer": "bugsounet",
-      "maintainerURL": "https://wiki.bugsounet.fr",
-      "description": "Send your selfies to Telegram, google photos or by mail.",
-      "issues": []
-    },
-    {
-      "name": "EXT-SelfiesViewer",
-      "category": "Extended plugins for MMM-GoogleAssistant",
-      "url": "https://github.com/bugsounet/EXT-SelfiesViewer",
-      "id": "bugsounet/EXT-SelfiesViewer",
-      "maintainer": "bugsounet",
-      "maintainerURL": "https://wiki.bugsounet.fr",
-      "description": "Slideshow of your best selfies.",
       "issues": []
     },
     {
@@ -9853,16 +9794,6 @@
       "maintainer": "bugsounet",
       "maintainerURL": "https://wiki.bugsounet.fr",
       "description": "This plugin show current spotify playback of any devices.",
-      "issues": []
-    },
-    {
-      "name": "EXT-SpotifyCanvasLyrics",
-      "category": "Extended plugins for MMM-GoogleAssistant",
-      "url": "https://github.com/bugsounet/EXT-SpotifyCanvasLyrics",
-      "id": "bugsounet/EXT-SpotifyCanvasLyrics",
-      "maintainer": "bugsounet",
-      "maintainerURL": "https://wiki.bugsounet.fr",
-      "description": "Create a server for displaying any Lyrics and Canvas from Spotify.",
       "issues": []
     },
     {
@@ -11299,6 +11230,16 @@
       "maintainer": "jupadin",
       "maintainerURL": "https://github.com/jupadin",
       "description": "Display images from Unsplash as wallpapers.",
+      "issues": []
+    },
+    {
+      "name": "MMM-WasteCollectionWuerzburg",
+      "category": "Utility / IOT / 3rd Party / Integration",
+      "url": "https://github.com/mercredo/MMM-WasteCollectionWuerzburg",
+      "id": "mercredo/MMM-WasteCollectionWuerzburg",
+      "maintainer": "mercredo",
+      "maintainerURL": "https://github.com/mercredo",
+      "description": "Keep track of Würzburg (and surrounding areas) waste collection dates so you know when to put your garbage out.",
       "issues": []
     },
     {
