@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "2024-10-06T18:47:55.023Z",
+  "lastUpdate": "2024-10-07T11:13:14.347Z",
   "modules": [
     {
       "name": "MMM-01ZM",
@@ -11426,9 +11426,9 @@
     {
       "name": "MMM-Webuntis",
       "category": "Education",
-      "url": "https://github.com/thyed/MMM-Webuntis",
-      "id": "thyed/MMM-Webuntis",
-      "maintainer": "thyed",
+      "url": "https://github.com/HeikoGr/MMM-Webuntis",
+      "id": "HeikoGr/MMM-Webuntis",
+      "maintainer": "HeikoGr",
       "maintainerURL": "",
       "description": "It allows you to display your kids' canceled and irregular lessons for schools using <a target=\"_blank\" href=\"https://www.untis.at\">Untis</a> software to organize school's timetables.",
       "issues": []

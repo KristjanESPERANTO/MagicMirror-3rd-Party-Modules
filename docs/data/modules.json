@@ -122,7 +122,7 @@
     ],
     "license": "MIT",
     "image": "screenshots-layout-bars-daily.jpg",
-    "defaultSortWeight": 2,
+    "defaultSortWeight": 3,
     "lastCommit": "2024-04-18T16:01:12-07:00"
   },
   {
@@ -141,7 +141,7 @@
     ],
     "license": "MIT",
     "image": "screenshots-layout-bars-daily.jpg",
-    "defaultSortWeight": 3,
+    "defaultSortWeight": 4,
     "lastCommit": "2024-05-07T16:38:39-05:00"
   },
   {
@@ -261,8 +261,8 @@
       "weather"
     ],
     "image": "img-pollens.jpg",
-    "defaultSortWeight": 3,
-    "lastCommit": "2024-10-04T15:15:01+02:00"
+    "defaultSortWeight": 1,
+    "lastCommit": "2024-10-07T06:53:19+02:00"
   },
   {
     "name": "MMM-AirQuality",
@@ -1025,7 +1025,7 @@
     "description": "Cyclically displays Bengali Words and Bengali Pronunciations with English Translations.",
     "issues": true,
     "stars": 0,
-    "defaultSortWeight": 3,
+    "defaultSortWeight": 4,
     "lastCommit": "2023-03-11T16:24:26-06:00"
   },
   {
@@ -2651,7 +2651,7 @@
     "stars": 12,
     "license": "MIT",
     "image": "screenshot.jpg",
-    "defaultSortWeight": 6,
+    "defaultSortWeight": 8,
     "lastCommit": "2023-02-09T09:36:43+01:00"
   },
   {
@@ -4545,7 +4545,7 @@
     "maintainerURL": "",
     "description": "Displays color-coded Fear &amp; Greed Index Values from CNBC for Stocks and from Alternative.me for Crypto.",
     "issues": true,
-    "stars": 1,
+    "stars": 2,
     "defaultSortWeight": 3,
     "lastCommit": "2023-12-02T13:21:30+01:00"
   },
@@ -5308,7 +5308,7 @@
       "music"
     ],
     "image": "example_dab.jpg",
-    "defaultSortWeight": 0,
+    "defaultSortWeight": 2,
     "lastCommit": "2024-09-26T16:18:14+02:00"
   },
   {
@@ -5320,7 +5320,7 @@
     "maintainerURL": "https://github.com/jboucly",
     "description": "Displays images from an FTP server with a display delay.",
     "issues": true,
-    "stars": 6,
+    "stars": 7,
     "license": "MIT",
     "image": "examples-example.jpg",
     "defaultSortWeight": 6,
@@ -5506,7 +5506,7 @@
     "maintainerURL": "https://github.com/asimhsidd",
     "description": "Geo-track a moving object on the map by continuously listening to a pubnub channel where the publisher (example file attached) has to publish the new location (lat, lon) as and when moves.",
     "issues": true,
-    "stars": 8,
+    "stars": 9,
     "license": "MIT",
     "image": "Capture.jpg",
     "defaultSortWeight": 7,
@@ -5536,7 +5536,7 @@
     "maintainerURL": "",
     "description": "Allows gesture control of compliments (only show when stepping in front of mirror), newsfeed (wave left / right, up for full-screen) and pages with two types of infrared sensors. Gestures can be up, down, left, right, far and close movements of the hand in front of a gesture sensor (APDS-9960) and present and away gestures in front of an IR distance sensor (GP2Y0A21YK).",
     "issues": true,
-    "stars": 41,
+    "stars": 42,
     "tags": [
       "gesture",
       "gestures"
@@ -13821,7 +13821,7 @@
     "maintainer": "deg0nz",
     "maintainerURL": "",
     "description": "Display departures for public transport in Berlin and Brandenburg (Covers VBB Area).",
-    "issues": true,
+    "issues": false,
     "stars": 40,
     "license": "MIT",
     "tags": [
@@ -13830,8 +13830,8 @@
       "brandenburg"
     ],
     "image": "img-MMM-PublicTransport_screenshot.jpg",
-    "defaultSortWeight": 0,
-    "lastCommit": "2024-09-27T17:23:39+02:00"
+    "defaultSortWeight": -1,
+    "lastCommit": "2024-10-07T00:56:57+02:00"
   },
   {
     "name": "MMM-PublicTransportHafas",
@@ -19041,20 +19041,21 @@
   {
     "name": "MMM-Webuntis",
     "category": "Education",
-    "url": "https://github.com/thyed/MMM-Webuntis",
-    "id": "thyed/MMM-Webuntis",
-    "maintainer": "thyed",
+    "url": "https://github.com/HeikoGr/MMM-Webuntis",
+    "id": "HeikoGr/MMM-Webuntis",
+    "maintainer": "HeikoGr",
     "maintainerURL": "",
     "description": "It allows you to display your kids' canceled and irregular lessons for schools using <a target=\"_blank\" href=\"https://www.untis.at\">Untis</a> software to organize school's timetables.",
     "issues": true,
-    "stars": 5,
+    "stars": 2,
+    "hasGithubIssues": false,
     "license": "MIT",
     "tags": [
       "webuntis"
     ],
     "image": "screenshot.jpg",
-    "defaultSortWeight": 8,
-    "lastCommit": "2023-02-27T21:04:03+01:00"
+    "defaultSortWeight": 9,
+    "lastCommit": "2024-10-07T09:59:53+02:00"
   },
   {
     "name": "MMM-WebView",
@@ -19205,7 +19206,7 @@
     ],
     "image": "whoshome.jpg",
     "defaultSortWeight": 2,
-    "lastCommit": "2024-10-01T17:28:03+03:00"
+    "lastCommit": "2024-10-07T08:34:44+03:00"
   },
   {
     "name": "MMM-Widget",

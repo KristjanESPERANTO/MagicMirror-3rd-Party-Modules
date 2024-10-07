@@ -3239,7 +3239,7 @@
     "maintainerURL": "",
     "description": "Displays color-coded Fear &amp; Greed Index Values from CNBC for Stocks and from Alternative.me for Crypto.",
     "issues": [],
-    "stars": 1
+    "stars": 2
   },
   {
     "name": "MMM-FF-cht-sh",
@@ -3789,7 +3789,7 @@
     "maintainerURL": "https://github.com/jboucly",
     "description": "Displays images from an FTP server with a display delay.",
     "issues": [],
-    "stars": 6,
+    "stars": 7,
     "license": "MIT"
   },
   {
@@ -3917,7 +3917,7 @@
     "maintainerURL": "https://github.com/asimhsidd",
     "description": "Geo-track a moving object on the map by continuously listening to a pubnub channel where the publisher (example file attached) has to publish the new location (lat, lon) as and when moves.",
     "issues": [],
-    "stars": 8,
+    "stars": 9,
     "license": "MIT"
   },
   {
@@ -3942,7 +3942,7 @@
     "maintainerURL": "",
     "description": "Allows gesture control of compliments (only show when stepping in front of mirror), newsfeed (wave left / right, up for full-screen) and pages with two types of infrared sensors. Gestures can be up, down, left, right, far and close movements of the hand in front of a gesture sensor (APDS-9960) and present and away gestures in front of an IR distance sensor (GP2Y0A21YK).",
     "issues": [],
-    "stars": 41
+    "stars": 42
   },
   {
     "name": "MMM-GHIN",
@@ -13531,13 +13531,14 @@
   {
     "name": "MMM-Webuntis",
     "category": "Education",
-    "url": "https://github.com/thyed/MMM-Webuntis",
-    "id": "thyed/MMM-Webuntis",
-    "maintainer": "thyed",
+    "url": "https://github.com/HeikoGr/MMM-Webuntis",
+    "id": "HeikoGr/MMM-Webuntis",
+    "maintainer": "HeikoGr",
     "maintainerURL": "",
     "description": "It allows you to display your kids' canceled and irregular lessons for schools using <a target=\"_blank\" href=\"https://www.untis.at\">Untis</a> software to organize school's timetables.",
     "issues": [],
-    "stars": 5,
+    "stars": 2,
+    "hasGithubIssues": false,
     "license": "MIT"
   },
   {

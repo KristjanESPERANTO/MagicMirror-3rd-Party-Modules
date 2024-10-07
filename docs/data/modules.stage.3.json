@@ -4484,7 +4484,7 @@
     "issues": [
       "There is no `package.json`. We need this file to gather information about the module for the module list page."
     ],
-    "stars": 1
+    "stars": 2
   },
   {
     "name": "MMM-FF-cht-sh",
@@ -5253,7 +5253,7 @@
       "There are no keywords in 'package.json'. We would use them as tags on the module list page.",
       "Issue: The license in the package.json (ISC) doesn't match the license file (MIT)."
     ],
-    "stars": 6,
+    "stars": 7,
     "license": "MIT",
     "image": "examples-example.jpg"
   },
@@ -5430,7 +5430,7 @@
       "`package.json` issue: No repository field.",
       "There are no keywords in 'package.json'. We would use them as tags on the module list page."
     ],
-    "stars": 8,
+    "stars": 9,
     "license": "MIT",
     "image": "Capture.jpg"
   },
@@ -5462,7 +5462,7 @@
     "issues": [
       "No image found."
     ],
-    "stars": 41,
+    "stars": 42,
     "tags": [
       "gesture",
       "gestures"
@@ -18782,16 +18782,17 @@
   {
     "name": "MMM-Webuntis",
     "category": "Education",
-    "url": "https://github.com/thyed/MMM-Webuntis",
-    "id": "thyed/MMM-Webuntis",
-    "maintainer": "thyed",
+    "url": "https://github.com/HeikoGr/MMM-Webuntis",
+    "id": "HeikoGr/MMM-Webuntis",
+    "maintainer": "HeikoGr",
     "maintainerURL": "",
     "description": "It allows you to display your kids' canceled and irregular lessons for schools using <a target=\"_blank\" href=\"https://www.untis.at\">Untis</a> software to organize school's timetables.",
     "issues": [
       "`package.json` issue: No repository field.",
       "Issue: The license in the package.json (ISC) doesn't match the license file (MIT)."
     ],
-    "stars": 5,
+    "stars": 2,
+    "hasGithubIssues": false,
     "license": "MIT",
     "tags": [
       "webuntis"

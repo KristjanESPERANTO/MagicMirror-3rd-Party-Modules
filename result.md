@@ -1,6 +1,6 @@
 # Result of the module analysis
 
-Last update: 2024-10-07T01:20:34+02:00
+Last update: 2024-10-07T13:25:29+02:00
 
 ## Statistics
 
@@ -8,8 +8,8 @@ Last update: 2024-10-07T01:20:34+02:00
 |:---------------------|:--------:|
 | modules analyzed     |   1179   |
 | maintainer           |    634   |
-| modules with issues  |   1176   |
-| issues               |   6797   |
+| modules with issues  |   1175   |
+| issues               |   6802   |
 | modules at github    |   1072   |
 | modules at gitlab    |     10   |
 | modules at bitbucket |      1   |
@@ -73,22 +73,18 @@ Last update: 2024-10-07T01:20:34+02:00
 
 ### [MMM-AccuWeatherForecastDeluxe by maxbethge](https://github.com/maxbethge/MMM-AccuWeatherForecastDeluxe)
 
-1. Warning: No LICENSE file.
-2. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
-3. Information: There are updates for 2 dependencie(s):
-   - moment  ^2.28.0  →  ^2.30.1
-   - needle   ^2.5.2  →   ^3.3.1
-
+1. Recommendation: Found `"needle"` in file `node_helper.js`: Replace it with built-in fetch.
+2. Recommendation: Found `"needle"` in file `package.json`: Replace it with built-in fetch.
+3. Warning: No LICENSE file.
+4. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
 
 ### [MMM-AccuWeatherForecastDeluxe by BigBot89](https://github.com/BigBot89/MMM-AccuWeatherForecastDeluxe)
 
 1. Issues are not enabled in the GitHub repository. So users cannot report bugs. Please enable issues in your repo.
-2. Warning: No LICENSE file.
-3. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
-4. Information: There are updates for 2 dependencie(s):
-   - moment  ^2.28.0  →  ^2.30.1
-   - needle   ^2.5.2  →   ^3.3.1
-
+2. Recommendation: Found `"needle"` in file `node_helper.js`: Replace it with built-in fetch.
+3. Recommendation: Found `"needle"` in file `package.json`: Replace it with built-in fetch.
+4. Warning: No LICENSE file.
+5. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
 
 ### [MMM-Advent by Jopyth](https://github.com/Jopyth/MMM-Advent)
 
@@ -151,9 +147,7 @@ Last update: 2024-10-07T01:20:34+02:00
 ### [MMM-airquality by PierreGode](https://github.com/PierreGode/MMM-airquality)
 
 1. Recommendation: Found `new Date()` in file `MMM-airquality.js`: Consider replacing it by `new Date(Date.now())`. It's helpful for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
-2. Recommendation: Found `"node-fetch"` in file `node_helper.js`: Replace it with built-in fetch.
-3. Recommendation: Found `"node-fetch"` in file `package.json`: Replace it with built-in fetch.
-4. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
+2. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
 
 ### [MMM-AirQuality by CFenner](https://github.com/CFenner/MMM-AirQuality)
 
@@ -541,8 +535,9 @@ Last update: 2024-10-07T01:20:34+02:00
 
 1. There is no `package.json`. We need this file to gather information about the module for the module list page.
 2. Typo: Found `MagicMirror2` in file `README.md`: Replace it with `MagicMirror²`.
-3. Warning: No LICENSE file.
-4. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
+3. Recommendation: Found `"needle"` in file `seven.json`: Replace it with built-in fetch.
+4. Warning: No LICENSE file.
+5. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
 
 ### [MMM-Bensinpriser by ItsMeBrille](https://github.com/ItsMeBrille/MMM-Bensinpriser)
 
@@ -1328,8 +1323,10 @@ Last update: 2024-10-07T01:20:34+02:00
 3. Typo: Found `Magic Mirror` in file `MMM-COVID19-AMPEL.js`: Replace it with `MagicMirror²`.
 4. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
 5. Recommendation: Found `'node-fetch'` in file `node_helper.js`: Replace it with built-in fetch.
-6. Recommendation: Found `"node-fetch"` in file `package.json`: Replace it with built-in fetch.
-7. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
+6. Recommendation: Found `'needle'` in file `node_helper.js`: Replace it with built-in fetch.
+7. Recommendation: Found `"node-fetch"` in file `package.json`: Replace it with built-in fetch.
+8. Recommendation: Found `"needle"` in file `package.json`: Replace it with built-in fetch.
+9. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
 
 ### [MMM-CracowMPK by wkra](https://github.com/wkra/MMM-CracowMPK)
 
@@ -2659,7 +2656,9 @@ Last update: 2024-10-07T01:20:34+02:00
 
 ### [MMM-FSAPI by MarcLandis](https://github.com/MarcLandis/MMM-FSAPI)
 
-1. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
+1. Recommendation: Found `"needle"` in file `node_helper.js`: Replace it with built-in fetch.
+2. Recommendation: Found `"needle"` in file `package.json`: Replace it with built-in fetch.
+3. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
 
 ### [MMM-FTP-image by jboucly](https://github.com/jboucly/MMM-FTP-image)
 
@@ -7272,16 +7271,6 @@ Last update: 2024-10-07T01:20:34+02:00
 5. Typo: Found `Magic Mirror` in file `package.json`: Replace it with `MagicMirror²`.
 6. Recommendation: Replace eslintrc by new flat config.
 
-### [MMM-PublicTransportBerlin by deg0nz](https://github.com/deg0nz/MMM-PublicTransportBerlin)
-
-1. Information: There are updates for 5 dependencie(s):
-   - @eslint/js                ^8.57.1  →   ^9.12.0
-   - @stylistic/eslint-plugin   ^2.8.0  →    ^2.9.0
-   - eslint                    ^8.57.1  →   ^9.12.0
-   - eslint-plugin-import      ^2.30.0  →   ^2.31.0
-   - globals                   ^15.9.0  →  ^15.10.0
-
-
 ### [MMM-PublicTransportVVO by ChristianGeie](https://github.com/ChristianGeie/MMM-PublicTransportVVO)
 
 1. Recommendation: Found `XMLHttpRequest` in file `MMM-PublicTransportVVO.js`: Replace it with built-in fetch.
@@ -10093,16 +10082,17 @@ Last update: 2024-10-07T01:20:34+02:00
    - prettier   ^3.2.5  →   ^3.3.3
 
 
-### [MMM-Webuntis by thyed](https://github.com/thyed/MMM-Webuntis)
+### [MMM-Webuntis by HeikoGr](https://github.com/HeikoGr/MMM-Webuntis)
 
 1. `package.json` issue: No repository field.
 2. Issue: The license in the package.json (ISC) doesn't match the license file (MIT).
 3. Recommendation: Found `new Date()` in file `MMM-Webuntis.js`: Consider replacing it by `new Date(Date.now())`. It's helpful for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
-4. Typo: Found `[MagicMirror]` in file `README.md`: Replace it with `[MagicMirror²]`.
-5. Outdated: Found `MichMich/MagicMirror` in file `README.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
-6. Recommendation: The README seems not to have an update instruction (the word 'update' is missing). Please add one.
-7. Recommendation: Found `new Date()` in file `node_helper.js`: Consider replacing it by `new Date(Date.now())`. It's helpful for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
-8. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
+4. Typo: Found `Magic Mirror` in file `README.md`: Replace it with `MagicMirror²`.
+5. Typo: Found `[MagicMirror]` in file `README.md`: Replace it with `[MagicMirror²]`.
+6. Outdated: Found `MichMich/MagicMirror` in file `README.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
+7. Recommendation: The README seems not to have an update instruction (the word 'update' is missing). Please add one.
+8. Recommendation: Found `new Date()` in file `node_helper.js`: Consider replacing it by `new Date(Date.now())`. It's helpful for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
+9. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
 
 ### [MMM-WebView by Iketaki](https://github.com/Iketaki/MMM-WebView)
 
