@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "2024-10-07T11:13:14.347Z",
+  "lastUpdate": "2024-10-09T15:30:07.707Z",
   "modules": [
     {
       "name": "MMM-01ZM",
@@ -1639,9 +1639,9 @@
     {
       "name": "MMM-CrisisInformationSweden",
       "category": "News / Information",
-      "url": "https://github.com/boghammar/MMM-CrisisInformationSweden",
-      "id": "boghammar/MMM-CrisisInformationSweden",
-      "maintainer": "boghammar",
+      "url": "https://github.com/Pejjo/MMM-CrisisInformationSweden",
+      "id": "Pejjo/MMM-CrisisInformationSweden",
+      "maintainer": "Pejjo",
       "maintainerURL": "",
       "description": "News feed from the <strong>Swedish</strong> Government Crisis Information (krisinformation.se).",
       "issues": []

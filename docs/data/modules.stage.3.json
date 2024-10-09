@@ -2680,13 +2680,16 @@
   {
     "name": "MMM-CrisisInformationSweden",
     "category": "News / Information",
-    "url": "https://github.com/boghammar/MMM-CrisisInformationSweden",
-    "id": "boghammar/MMM-CrisisInformationSweden",
-    "maintainer": "boghammar",
+    "url": "https://github.com/Pejjo/MMM-CrisisInformationSweden",
+    "id": "Pejjo/MMM-CrisisInformationSweden",
+    "maintainer": "Pejjo",
     "maintainerURL": "",
     "description": "News feed from the <strong>Swedish</strong> Government Crisis Information (krisinformation.se).",
-    "issues": [],
+    "issues": [
+      "Issues are not enabled in the GitHub repository. So users cannot report bugs. Please enable issues in your repo."
+    ],
     "stars": 1,
+    "hasGithubIssues": false,
     "license": "MIT",
     "tags": [
       "crisis"
@@ -2785,14 +2788,13 @@
     "maintainer": "uxigene",
     "maintainerURL": "",
     "description": "Display cursor when user moves mouse and hide after delay.",
-    "issues": [
-      "No image found."
-    ],
+    "issues": [],
     "stars": 23,
     "license": "MIT",
     "tags": [
       "cursor"
-    ]
+    ],
+    "image": "screenshot.jpg"
   },
   {
     "name": "MMM-CustomElementTime",
@@ -5559,7 +5561,7 @@
     "maintainerURL": "",
     "description": "This module allows to add a glass effect to MagicMirror² modules.",
     "issues": [],
-    "stars": 7,
+    "stars": 8,
     "license": "MIT",
     "tags": [
       "glassy",
@@ -5579,7 +5581,7 @@
       "There is no `package.json`. We need this file to gather information about the module for the module list page.",
       "No image found."
     ],
-    "stars": 39,
+    "stars": 40,
     "license": "MIT"
   },
   {
@@ -5643,7 +5645,7 @@
     "issues": [
       "There is no `package.json`. We need this file to gather information about the module for the module list page."
     ],
-    "stars": 46,
+    "stars": 47,
     "license": "MIT",
     "image": "screenshot.jpg"
   },
@@ -5714,7 +5716,7 @@
     "maintainerURL": "https://github.com/randomBrainstormer",
     "description": "Get your Google Calendars in the shape of MagicMirror's default calendar.",
     "issues": [],
-    "stars": 69,
+    "stars": 70,
     "license": "MIT",
     "tags": [
       "google",
@@ -5755,7 +5757,7 @@
       "There are no keywords in 'package.json'. We would use them as tags on the module list page.",
       "No image found."
     ],
-    "stars": 18,
+    "stars": 19,
     "license": "MIT"
   },
   {
@@ -5832,7 +5834,7 @@
     "maintainerURL": "https://github.com/MartinGris",
     "description": "Tracking of multiple objects on a google map. Position can be updated by a notification.",
     "issues": [],
-    "stars": 14,
+    "stars": 15,
     "license": "MIT",
     "tags": [
       "google maps",
@@ -5851,7 +5853,7 @@
     "issues": [
       "Issues are not enabled in the GitHub repository. So users cannot report bugs. Please enable issues in your repo."
     ],
-    "stars": 0,
+    "stars": 1,
     "hasGithubIssues": false,
     "license": "MIT",
     "tags": [
@@ -5904,7 +5906,7 @@
     "maintainerURL": "",
     "description": "Display Google Sheets data. Highly customizable.",
     "issues": [],
-    "stars": 26,
+    "stars": 27,
     "license": "MIT",
     "tags": [
       "googlesheets",
@@ -5924,7 +5926,7 @@
     "issues": [
       "There are no keywords in 'package.json'. We would use them as tags on the module list page."
     ],
-    "stars": 22,
+    "stars": 23,
     "license": "MIT",
     "image": "screenshot.jpg"
   },
@@ -5937,7 +5939,7 @@
     "maintainerURL": "https://github.com/spydersoft-consulting",
     "description": "Display Google Tasks with Planned View.",
     "issues": [],
-    "stars": 3,
+    "stars": 5,
     "license": "MIT",
     "tags": [
       "scheduler"
@@ -5969,7 +5971,7 @@
     "maintainerURL": "https://github.com/jacopo1891",
     "description": "Lists travel times to requested locations taking into account Google traffic information with \"classic view\".",
     "issues": [],
-    "stars": 13,
+    "stars": 15,
     "tags": [
       "traffic",
       "googlemap"
@@ -6026,7 +6028,7 @@
       "An error occurred while getting information from 'package.json': Error: Invalid version: \"0.1\"",
       "No image found."
     ],
-    "stars": 2,
+    "stars": 3,
     "license": "MIT"
   },
   {
@@ -6038,7 +6040,7 @@
     "maintainerURL": "https://github.com/Tom-Hirschberger",
     "description": "Send notifications based on GPIO events. Can be used as PIR module and with rotary encoders.",
     "issues": [],
-    "stars": 12,
+    "stars": 13,
     "license": "MIT",
     "tags": [
       "gpio"
@@ -6086,7 +6088,7 @@
     "issues": [
       "There is no `package.json`. We need this file to gather information about the module for the module list page."
     ],
-    "stars": 35,
+    "stars": 36,
     "license": "MIT",
     "image": "EmbedURL_from_Grafana.jpg"
   },
@@ -6099,7 +6101,7 @@
     "maintainerURL": "",
     "description": "Shows your meal plan for the week from grocy.",
     "issues": [],
-    "stars": 0,
+    "stars": 2,
     "license": "MIT",
     "tags": [
       "grocy"
@@ -6347,7 +6349,7 @@
     "issues": [
       "No image found."
     ],
-    "stars": 5,
+    "stars": 6,
     "license": "MIT",
     "tags": [
       "localtransport",
@@ -6490,7 +6492,7 @@
     "issues": [
       "There is no `package.json`. We need this file to gather information about the module for the module list page."
     ],
-    "stars": 25,
+    "stars": 26,
     "license": "MIT",
     "image": "screenshot.jpg"
   },
@@ -6507,7 +6509,7 @@
       "Issues are not enabled in the GitHub repository. So users cannot report bugs. Please enable issues in your repo.",
       "No image found."
     ],
-    "stars": 63,
+    "stars": 64,
     "hasGithubIssues": false,
     "license": "MIT"
   },
@@ -6541,7 +6543,7 @@
       "`package.json` issue: No repository field.",
       "There are no keywords in 'package.json'. We would use them as tags on the module list page."
     ],
-    "stars": 8,
+    "stars": 9,
     "license": "ISC",
     "image": "screenshots-1.jpg"
   },
@@ -6554,7 +6556,7 @@
     "maintainerURL": "https://github.com/wonderslug",
     "description": "Displays information from Home Assistant using Home Assistant Templates to render any HTML you want for the module. Includes support for Material Design Icons, Websockets for fast updating, and auto reconnect on Home Assistant restarts. Allows you to show or hide a whole module based on a Home Assistant Template as well.",
     "issues": [],
-    "stars": 86,
+    "stars": 88,
     "license": "MIT",
     "tags": [
       "home assistant"
@@ -7279,7 +7281,7 @@
     "issues": [
       "Issues are not enabled in the GitHub repository. So users cannot report bugs. Please enable issues in your repo."
     ],
-    "stars": 8,
+    "stars": 9,
     "hasGithubIssues": false,
     "license": "MIT",
     "tags": [
@@ -7299,7 +7301,7 @@
     "issues": [
       "No image found."
     ],
-    "stars": 18,
+    "stars": 19,
     "license": "MIT",
     "tags": [
       "iobroker",
@@ -7321,7 +7323,7 @@
       "`package.json` issue: No license field.",
       "There are no keywords in 'package.json'. We would use them as tags on the module list page."
     ],
-    "stars": 10,
+    "stars": 11,
     "license": "MIT",
     "image": "docs-images-all-devices-green.jpg"
   },
@@ -7427,7 +7429,7 @@
       "There is no `package.json`. We need this file to gather information about the module for the module list page."
     ],
     "outdated": "Abandoned. Developer is no longer active. Missing instructions to install dependency 'request'.",
-    "stars": 16,
+    "stars": 15,
     "license": "MIT",
     "image": "images-1.jpg"
   },
@@ -16385,9 +16387,7 @@
     "maintainer": "mumblebaj",
     "maintainerURL": "https://github.com/mumblebaj",
     "description": "Display a classic railway clock.",
-    "issues": [
-      "Issue: The license in the package.json (ISC) doesn't match the license file (MIT)."
-    ],
+    "issues": [],
     "stars": 4,
     "license": "MIT",
     "tags": [
@@ -18787,12 +18787,8 @@
     "maintainer": "HeikoGr",
     "maintainerURL": "",
     "description": "It allows you to display your kids' canceled and irregular lessons for schools using <a target=\"_blank\" href=\"https://www.untis.at\">Untis</a> software to organize school's timetables.",
-    "issues": [
-      "`package.json` issue: No repository field.",
-      "Issue: The license in the package.json (ISC) doesn't match the license file (MIT)."
-    ],
+    "issues": [],
     "stars": 2,
-    "hasGithubIssues": false,
     "license": "MIT",
     "tags": [
       "webuntis"
