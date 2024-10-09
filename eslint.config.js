@@ -13,6 +13,7 @@ const config = [
       "modules/*",
       "modules_temp/*",
       "docs/data/modules*.json",
+      "docs/fonts/*",
       "result.md"
     ]
   },

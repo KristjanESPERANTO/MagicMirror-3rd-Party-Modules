@@ -6,5 +6,5 @@
   "rules": {
     "prettier/prettier": true
   },
-  "ignoreFiles": "modules/"
+  "ignoreFiles": ["modules/", "docs/fonts/"]
 }
