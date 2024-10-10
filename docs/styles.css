@@ -564,7 +564,7 @@ input:checked + .slider::before {
 
 #nav-menu {
   color: #fff;
-  position: fixed;
+  position: absolute;
   right: -100%;
   top: 0;
   padding: 0.5rem;
