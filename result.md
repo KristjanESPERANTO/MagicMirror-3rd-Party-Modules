@@ -1,6 +1,6 @@
 # Result of the module analysis
 
-Last update: 2024-10-10T05:37:24+02:00
+Last update: 2024-10-10T17:38:14+02:00
 
 ## Statistics
 
@@ -889,8 +889,9 @@ Last update: 2024-10-10T05:37:24+02:00
 ### [MMM-Buttons by MarcLandis](https://github.com/MarcLandis/MMM-Buttons)
 
 1. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
-2. Information: There are updates for 1 dependencie(s):
-   - @electron/rebuild  ^3.6.2  →  ^3.7.0
+2. Information: There are updates for 2 dependencie(s):
+   - @electron/rebuild   ^3.6.2  →   ^3.7.0
+   - nan                ^2.20.0  →  ^2.21.0
 
 
 ### [MMM-Bysykkel by JonasTriki](https://github.com/JonasTriki/MMM-Bysykkel)
@@ -1668,7 +1669,7 @@ Last update: 2024-10-10T05:37:24+02:00
 
 1. Recommendation: The README seems not to have an update instruction (the word 'update' is missing). Please add one.
 2. Recommendation: The README seems not to have an install instruction (the words 'install' or 'installation' are missing). Please add one.
-3. Information: There are updates for 10 dependencie(s):
+3. Information: There are updates for 11 dependencie(s):
    - @electron/rebuild            ^3.6.0  →   ^3.7.0
    - @eslint/js                  ^8.57.0  →  ^9.12.0
    - @picovoice/porcupine-node    ^3.0.2  →   ^3.0.4
@@ -1678,6 +1679,7 @@ Last update: 2024-10-10T05:37:24+02:00
    - eslint                      ^8.57.0  →  ^9.12.0
    - eslint-plugin-import        ^2.29.1  →  ^2.31.0
    - glob                        ^10.4.2  →  ^11.0.0
+   - nan                         ^2.20.0  →  ^2.21.0
    - typescript                   ^5.5.2  →   ^5.6.3
 
 
@@ -3035,7 +3037,7 @@ Last update: 2024-10-10T05:37:24+02:00
 3. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
 4. Information: There are updates for 2 dependencie(s):
    - fs-extra   ^7.0.0  →  ^11.2.0
-   - puppeteer  ^2.0.0  →  ^23.5.1
+   - puppeteer  ^2.0.0  →  ^23.5.2
 
 
 ### [MMM-GoogleTasks by spydersoft-consulting](https://github.com/spydersoft-consulting/MMM-GoogleTasks)
@@ -3947,7 +3949,7 @@ Last update: 2024-10-10T05:37:24+02:00
 4. Information: There are updates for 4 dependencie(s):
    - @electron/rebuild    ^3.6.0  →   ^3.7.0
    - node-abi            ^3.65.0  →  ^3.68.0
-   - puppeteer          ^22.15.0  →  ^23.5.1
+   - puppeteer          ^22.15.0  →  ^23.5.2
    - sharp               ^0.33.4  →  ^0.33.5
 
 
@@ -4161,6 +4163,15 @@ Last update: 2024-10-10T05:37:24+02:00
 5. Recommendation: Found `jshint` in file `node_helper.js`: Replace "jshint" by "eslint".
 6. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
 
+### [MMM-Keyboard by lavolp3](https://github.com/lavolp3/MMM-Keyboard)
+
+1. There are no keywords in 'package.json'. We would use them as tags on the module list page.
+2. Recommendation: Found `XMLHttpRequest` in file `MMM-Keyboard.js`: Replace it with built-in fetch.
+3. Recommendation: Found `jshint` in file `MMM-Keyboard.js`: Replace "jshint" by "eslint".
+4. Outdated: Found `MichMich/MagicMirror` in file `README.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
+5. Recommendation: The README seems not to have an update instruction (the word 'update' is missing). Please add one.
+6. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
+
 ### [EXT-Keyboard by bugsounet](https://github.com/bugsounet/EXT-Keyboard)
 
 1. Information: There are updates for 6 dependencie(s):
@@ -4171,15 +4182,6 @@ Last update: 2024-10-10T05:37:24+02:00
    - eslint-plugin-import      ^2.29.1  →  ^2.31.0
    - glob                      ^10.4.2  →  ^11.0.0
 
-
-### [MMM-Keyboard by lavolp3](https://github.com/lavolp3/MMM-Keyboard)
-
-1. There are no keywords in 'package.json'. We would use them as tags on the module list page.
-2. Recommendation: Found `XMLHttpRequest` in file `MMM-Keyboard.js`: Replace it with built-in fetch.
-3. Recommendation: Found `jshint` in file `MMM-Keyboard.js`: Replace "jshint" by "eslint".
-4. Outdated: Found `MichMich/MagicMirror` in file `README.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
-5. Recommendation: The README seems not to have an update instruction (the word 'update' is missing). Please add one.
-6. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
 
 ### [KeyDisplayed by l0b5ter](https://github.com/l0b5ter/KeyDisplayed)
 
@@ -6879,7 +6881,7 @@ Last update: 2024-10-10T05:37:24+02:00
 ### [MMM-Pir by bugsounet](https://github.com/bugsounet/MMM-Pir)
 
 1. Deprecated: Found `new Buffer(` in file `progressbar.js`: This is deprecated. Please update: <https://nodejs.org/api/buffer.html>.
-2. Information: There are updates for 7 dependencie(s):
+2. Information: There are updates for 8 dependencie(s):
    - @electron/rebuild          ^3.6.0  →   ^3.7.0
    - @eslint/js                ^8.57.0  →  ^9.12.0
    - @stylistic/eslint-plugin    1.8.1  →    2.9.0
@@ -6887,14 +6889,16 @@ Last update: 2024-10-10T05:37:24+02:00
    - eslint                    ^8.57.0  →  ^9.12.0
    - eslint-plugin-import      ^2.29.1  →  ^2.31.0
    - glob                      ^10.4.5  →  ^11.0.0
+   - nan                       ^2.20.0  →  ^2.21.0
 
 
 ### [EXT-Pir by bugsounet](https://github.com/bugsounet/EXT-Pir)
 
 1. Issues are not enabled in the GitHub repository. So users cannot report bugs. Please enable issues in your repo.
-2. Information: There are updates for 2 dependencie(s):
+2. Information: There are updates for 3 dependencie(s):
    - @electron/rebuild   ^3.6.0  →   ^3.7.0
    - glob               ^10.4.5  →  ^11.0.0
+   - nan                ^2.20.0  →  ^2.21.0
 
 
 ### [MMM-PirateSkyForecast by dankerthrone](https://github.com/dankerthrone/MMM-PirateSkyForecast)

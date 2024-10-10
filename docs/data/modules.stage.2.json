@@ -5653,18 +5653,6 @@
     "license": "MIT"
   },
   {
-    "name": "EXT-Keyboard",
-    "category": "Extended plugins for MMM-GoogleAssistant",
-    "url": "https://github.com/bugsounet/EXT-Keyboard",
-    "id": "bugsounet/EXT-Keyboard",
-    "maintainer": "bugsounet",
-    "maintainerURL": "https://wiki.bugsounet.fr",
-    "description": "Control your mirror with a keyboard.",
-    "issues": [],
-    "stars": 2,
-    "license": "MIT"
-  },
-  {
     "name": "MMM-Keyboard",
     "category": "Utility / IOT / 3rd Party / Integration",
     "url": "https://github.com/lavolp3/MMM-Keyboard",
@@ -5674,6 +5662,18 @@
     "description": "Creates a virtual keyboard to be used to send commands or text to other modules.",
     "issues": [],
     "stars": 4,
+    "license": "MIT"
+  },
+  {
+    "name": "EXT-Keyboard",
+    "category": "Extended plugins for MMM-GoogleAssistant",
+    "url": "https://github.com/bugsounet/EXT-Keyboard",
+    "id": "bugsounet/EXT-Keyboard",
+    "maintainer": "bugsounet",
+    "maintainerURL": "https://wiki.bugsounet.fr",
+    "description": "Control your mirror with a keyboard.",
+    "issues": [],
+    "stars": 2,
     "license": "MIT"
   },
   {
@@ -6056,7 +6056,7 @@
     "maintainerURL": "https://github.com/xadamxk",
     "description": "Display League of Legends league schedules.",
     "issues": [],
-    "stars": 4
+    "stars": 3
   },
   {
     "name": "MMM-LOLESPORTS-STANDINGS",
@@ -6235,7 +6235,7 @@
     "description": "Module to help developers to start building their own modules for the MagicMirror².",
     "issues": [],
     "outdated": "No changes since years. It's not a good start anymore. Use <a href=\"https://github.com/Dennis-Rosenbaum/MMM-Template\">MMM-Template</a> instead.",
-    "stars": 74,
+    "stars": 75,
     "license": "MIT"
   },
   {
@@ -6283,7 +6283,7 @@
     "maintainerURL": "",
     "description": "Prevent screen burn-in on your MagicMirror².",
     "issues": [],
-    "stars": 44,
+    "stars": 46,
     "license": "MIT"
   },
   {

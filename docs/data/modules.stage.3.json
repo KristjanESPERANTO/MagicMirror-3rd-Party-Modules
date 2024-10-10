@@ -7829,6 +7829,21 @@
     "image": "img-fire_stick_remote.jpg"
   },
   {
+    "name": "MMM-Keyboard",
+    "category": "Utility / IOT / 3rd Party / Integration",
+    "url": "https://github.com/lavolp3/MMM-Keyboard",
+    "id": "lavolp3/MMM-Keyboard",
+    "maintainer": "lavolp3",
+    "maintainerURL": "",
+    "description": "Creates a virtual keyboard to be used to send commands or text to other modules.",
+    "issues": [
+      "There are no keywords in 'package.json'. We would use them as tags on the module list page."
+    ],
+    "stars": 4,
+    "license": "MIT",
+    "image": "keyboard-example.jpg"
+  },
+  {
     "name": "EXT-Keyboard",
     "category": "Extended plugins for MMM-GoogleAssistant",
     "url": "https://github.com/bugsounet/EXT-Keyboard",
@@ -7844,21 +7859,6 @@
       "keyboard"
     ],
     "image": "resources-keyboard.jpg"
-  },
-  {
-    "name": "MMM-Keyboard",
-    "category": "Utility / IOT / 3rd Party / Integration",
-    "url": "https://github.com/lavolp3/MMM-Keyboard",
-    "id": "lavolp3/MMM-Keyboard",
-    "maintainer": "lavolp3",
-    "maintainerURL": "",
-    "description": "Creates a virtual keyboard to be used to send commands or text to other modules.",
-    "issues": [
-      "There are no keywords in 'package.json'. We would use them as tags on the module list page."
-    ],
-    "stars": 4,
-    "license": "MIT",
-    "image": "keyboard-example.jpg"
   },
   {
     "name": "KeyDisplayed",
@@ -8392,7 +8392,7 @@
     "maintainerURL": "https://github.com/xadamxk",
     "description": "Display League of Legends league schedules.",
     "issues": [],
-    "stars": 4,
+    "stars": 3,
     "tags": [
       "esports",
       "league of legends"
@@ -8637,7 +8637,7 @@
       "No image found."
     ],
     "outdated": "No changes since years. It's not a good start anymore. Use <a href=\"https://github.com/Dennis-Rosenbaum/MMM-Template\">MMM-Template</a> instead.",
-    "stars": 74,
+    "stars": 75,
     "license": "MIT"
   },
   {
@@ -8694,7 +8694,7 @@
     "maintainerURL": "",
     "description": "Prevent screen burn-in on your MagicMirror².",
     "issues": [],
-    "stars": 44,
+    "stars": 46,
     "license": "MIT",
     "tags": [
       "screensaver",

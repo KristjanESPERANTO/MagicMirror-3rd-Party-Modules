@@ -7926,6 +7926,21 @@
     "lastCommit": "2024-02-28T04:48:49-06:00"
   },
   {
+    "name": "MMM-Keyboard",
+    "category": "Utility / IOT / 3rd Party / Integration",
+    "url": "https://github.com/lavolp3/MMM-Keyboard",
+    "id": "lavolp3/MMM-Keyboard",
+    "maintainer": "lavolp3",
+    "maintainerURL": "",
+    "description": "Creates a virtual keyboard to be used to send commands or text to other modules.",
+    "issues": true,
+    "stars": 4,
+    "license": "MIT",
+    "image": "keyboard-example.jpg",
+    "defaultSortWeight": 7,
+    "lastCommit": "2020-06-11T23:49:01+02:00"
+  },
+  {
     "name": "EXT-Keyboard",
     "category": "Extended plugins for MMM-GoogleAssistant",
     "url": "https://github.com/bugsounet/EXT-Keyboard",
@@ -7943,21 +7958,6 @@
     "image": "resources-keyboard.jpg",
     "defaultSortWeight": 3,
     "lastCommit": "2024-07-01T17:01:34+02:00"
-  },
-  {
-    "name": "MMM-Keyboard",
-    "category": "Utility / IOT / 3rd Party / Integration",
-    "url": "https://github.com/lavolp3/MMM-Keyboard",
-    "id": "lavolp3/MMM-Keyboard",
-    "maintainer": "lavolp3",
-    "maintainerURL": "",
-    "description": "Creates a virtual keyboard to be used to send commands or text to other modules.",
-    "issues": true,
-    "stars": 4,
-    "license": "MIT",
-    "image": "keyboard-example.jpg",
-    "defaultSortWeight": 7,
-    "lastCommit": "2020-06-11T23:49:01+02:00"
   },
   {
     "name": "KeyDisplayed",
@@ -8502,7 +8502,7 @@
     "maintainerURL": "https://github.com/xadamxk",
     "description": "Display League of Legends league schedules.",
     "issues": true,
-    "stars": 4,
+    "stars": 3,
     "tags": [
       "esports",
       "league of legends"
@@ -8750,7 +8750,7 @@
     "description": "Module to help developers to start building their own modules for the MagicMirror\u00b2.",
     "issues": true,
     "outdated": "No changes since years. It's not a good start anymore. Use <a href=\"https://github.com/Dennis-Rosenbaum/MMM-Template\">MMM-Template</a> instead.",
-    "stars": 74,
+    "stars": 75,
     "license": "MIT",
     "defaultSortWeight": 901,
     "lastCommit": "2019-11-27T17:33:41-05:00"
@@ -8811,7 +8811,7 @@
     "maintainerURL": "",
     "description": "Prevent screen burn-in on your MagicMirror\u00b2.",
     "issues": true,
-    "stars": 44,
+    "stars": 46,
     "license": "MIT",
     "tags": [
       "screensaver",
@@ -15471,7 +15471,7 @@
     "issues": true,
     "stars": 4,
     "license": "Unlicense",
-    "defaultSortWeight": 9,
+    "defaultSortWeight": 10,
     "lastCommit": "2022-10-10T15:43:28+02:00"
   },
   {
