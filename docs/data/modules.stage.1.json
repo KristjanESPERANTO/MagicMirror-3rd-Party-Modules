@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "2024-10-09T15:30:07.707Z",
+  "lastUpdate": "2024-10-10T03:30:06.579Z",
   "modules": [
     {
       "name": "MMM-01ZM",
@@ -3710,11 +3710,11 @@
       "issues": []
     },
     {
-      "name": "MMM-Grocy",
+      "name": "MMM-Grocy-Mealplan",
       "category": "Utility / IOT / 3rd Party / Integration",
-      "url": "https://github.com/ooohfascinating/MMM-Grocy",
-      "id": "ooohfascinating/MMM-Grocy",
-      "maintainer": "ooohfascinating",
+      "url": "https://github.com/B0neD0ct0r/MMM-Grocy-Mealplan",
+      "id": "B0neD0ct0r/MMM-Grocy-Mealplan",
+      "maintainer": "B0neD0ct0r",
       "maintainerURL": "",
       "description": "Shows your meal plan for the week from grocy.",
       "issues": []

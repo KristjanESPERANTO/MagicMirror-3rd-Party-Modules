@@ -4395,15 +4395,16 @@
     "license": "MIT"
   },
   {
-    "name": "MMM-Grocy",
+    "name": "MMM-Grocy-Mealplan",
     "category": "Utility / IOT / 3rd Party / Integration",
-    "url": "https://github.com/ooohfascinating/MMM-Grocy",
-    "id": "ooohfascinating/MMM-Grocy",
-    "maintainer": "ooohfascinating",
+    "url": "https://github.com/B0neD0ct0r/MMM-Grocy-Mealplan",
+    "id": "B0neD0ct0r/MMM-Grocy-Mealplan",
+    "maintainer": "B0neD0ct0r",
     "maintainerURL": "",
     "description": "Shows your meal plan for the week from grocy.",
     "issues": [],
-    "stars": 2,
+    "stars": 1,
+    "hasGithubIssues": false,
     "license": "MIT"
   },
   {
@@ -5652,18 +5653,6 @@
     "license": "MIT"
   },
   {
-    "name": "MMM-Keyboard",
-    "category": "Utility / IOT / 3rd Party / Integration",
-    "url": "https://github.com/lavolp3/MMM-Keyboard",
-    "id": "lavolp3/MMM-Keyboard",
-    "maintainer": "lavolp3",
-    "maintainerURL": "",
-    "description": "Creates a virtual keyboard to be used to send commands or text to other modules.",
-    "issues": [],
-    "stars": 4,
-    "license": "MIT"
-  },
-  {
     "name": "EXT-Keyboard",
     "category": "Extended plugins for MMM-GoogleAssistant",
     "url": "https://github.com/bugsounet/EXT-Keyboard",
@@ -5673,6 +5662,18 @@
     "description": "Control your mirror with a keyboard.",
     "issues": [],
     "stars": 2,
+    "license": "MIT"
+  },
+  {
+    "name": "MMM-Keyboard",
+    "category": "Utility / IOT / 3rd Party / Integration",
+    "url": "https://github.com/lavolp3/MMM-Keyboard",
+    "id": "lavolp3/MMM-Keyboard",
+    "maintainer": "lavolp3",
+    "maintainerURL": "",
+    "description": "Creates a virtual keyboard to be used to send commands or text to other modules.",
+    "issues": [],
+    "stars": 4,
     "license": "MIT"
   },
   {
@@ -5695,7 +5696,7 @@
     "maintainerURL": "https://github.com/ItsMeBrille",
     "description": "Sending notifications to other modules based on keys pressed.",
     "issues": [],
-    "stars": 5,
+    "stars": 6,
     "license": "MIT"
   },
   {
@@ -5768,7 +5769,7 @@
     "maintainerURL": "https://github.com/RineshRamadhin",
     "description": "Displays the Last.fm scrobble currently playing. Supports Spotify, YouTube, Tidal, SoundCloud, MixCloud and <a target=\"_blank\" href=\"https://www.last.fm/about/trackmymusic\">many others</a>.",
     "issues": [],
-    "stars": 4
+    "stars": 5
   },
   {
     "name": "MMM-Launch",

@@ -6093,15 +6093,18 @@
     "image": "EmbedURL_from_Grafana.jpg"
   },
   {
-    "name": "MMM-Grocy",
+    "name": "MMM-Grocy-Mealplan",
     "category": "Utility / IOT / 3rd Party / Integration",
-    "url": "https://github.com/ooohfascinating/MMM-Grocy",
-    "id": "ooohfascinating/MMM-Grocy",
-    "maintainer": "ooohfascinating",
+    "url": "https://github.com/B0neD0ct0r/MMM-Grocy-Mealplan",
+    "id": "B0neD0ct0r/MMM-Grocy-Mealplan",
+    "maintainer": "B0neD0ct0r",
     "maintainerURL": "",
     "description": "Shows your meal plan for the week from grocy.",
-    "issues": [],
-    "stars": 2,
+    "issues": [
+      "Issues are not enabled in the GitHub repository. So users cannot report bugs. Please enable issues in your repo."
+    ],
+    "stars": 1,
+    "hasGithubIssues": false,
     "license": "MIT",
     "tags": [
       "grocy"
@@ -7826,21 +7829,6 @@
     "image": "img-fire_stick_remote.jpg"
   },
   {
-    "name": "MMM-Keyboard",
-    "category": "Utility / IOT / 3rd Party / Integration",
-    "url": "https://github.com/lavolp3/MMM-Keyboard",
-    "id": "lavolp3/MMM-Keyboard",
-    "maintainer": "lavolp3",
-    "maintainerURL": "",
-    "description": "Creates a virtual keyboard to be used to send commands or text to other modules.",
-    "issues": [
-      "There are no keywords in 'package.json'. We would use them as tags on the module list page."
-    ],
-    "stars": 4,
-    "license": "MIT",
-    "image": "keyboard-example.jpg"
-  },
-  {
     "name": "EXT-Keyboard",
     "category": "Extended plugins for MMM-GoogleAssistant",
     "url": "https://github.com/bugsounet/EXT-Keyboard",
@@ -7856,6 +7844,21 @@
       "keyboard"
     ],
     "image": "resources-keyboard.jpg"
+  },
+  {
+    "name": "MMM-Keyboard",
+    "category": "Utility / IOT / 3rd Party / Integration",
+    "url": "https://github.com/lavolp3/MMM-Keyboard",
+    "id": "lavolp3/MMM-Keyboard",
+    "maintainer": "lavolp3",
+    "maintainerURL": "",
+    "description": "Creates a virtual keyboard to be used to send commands or text to other modules.",
+    "issues": [
+      "There are no keywords in 'package.json'. We would use them as tags on the module list page."
+    ],
+    "stars": 4,
+    "license": "MIT",
+    "image": "keyboard-example.jpg"
   },
   {
     "name": "KeyDisplayed",
@@ -7881,7 +7884,7 @@
     "issues": [
       "No image found."
     ],
-    "stars": 5,
+    "stars": 6,
     "license": "MIT",
     "tags": [
       "numpad",
@@ -7990,7 +7993,7 @@
     "issues": [
       "`package.json` issue: No license field."
     ],
-    "stars": 4,
+    "stars": 5,
     "tags": [
       "spotify",
       "last.fm",
