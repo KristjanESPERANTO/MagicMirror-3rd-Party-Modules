@@ -570,7 +570,7 @@ input:checked + .slider::before {
   padding: 0.5rem;
   z-index: 10000;
   background-color: #303030;
-  transition: right 2.5s ease;
+  transition: right 0.5s ease;
 }
 
 #nav-menu.visible {
