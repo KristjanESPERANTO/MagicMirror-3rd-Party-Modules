@@ -60,6 +60,14 @@ def check_modules():
             "name": "Replace it with built-in fetch.",
             "category": "Deprecated",
         },
+        'require("request-promise")': {
+            "name": "Replace it with built-in fetch.",
+            "category": "Deprecated",
+        },
+        "require('request-promise')": {
+            "name": "Replace it with built-in fetch.",
+            "category": "Deprecated",
+        },
         'require("native-request")': {
             "name": "Replace it with built-in fetch.",
             "category": "Deprecated",
