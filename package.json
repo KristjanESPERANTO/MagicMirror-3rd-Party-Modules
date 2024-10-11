@@ -42,7 +42,7 @@
   },
   "lint-staged": {
     "*.js": "eslint --cache --fix",
-    "*.css": "stylelint --fix",
+    "*.css": "stylelint **/docs/*.css --ignore-pattern **/docs/fonts/ --fix",
     "*": "prettier --ignore-unknown --write"
   },
   "dependencies": {

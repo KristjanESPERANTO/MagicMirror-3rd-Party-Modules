@@ -6,20 +6,73 @@
     <title>MagicMirror² 3rd Party Modules</title>
     <link rel="icon" type="image/x-icon" href="favicon.svg" />
     <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="fonts/line-awesome-1.3.0/css/line-awesome.min.css"
+    />
   </head>
   <body>
-    <header>
-      <h1>MagicMirror² 3rd Party Modules</h1>
-      <div id="top-right">
-        <div id="repo-link">
-          <a
-            href="https://github.com/KristjanESPERANTO/MagicMirror-3rd-Party-Modules#readme"
-            target="_blank"
-            >GitHub</a
-          >
+    <nav id="nav-menu">
+      <section class="menu-section" data-section="navigation">
+        <div id="close-menu" onclick="toggleMenu()">
+          <i class="las la-fw la-times"></i>
         </div>
-        <div id="sort-container">
-          <label for="sort-dropdown">Sort:</label>
+        <ul class="menu-section-list">
+          <li class="nav-item">
+            <a
+              href="https://github.com/KristjanESPERANTO/MagicMirror-3rd-Party-Modules#readme"
+              target="_blank"
+            >
+              <i class="lab la-fw la-github" aria-hidden="true"></i>
+              <span>GitHub Repository - 3rd Party Modules</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a
+              href="https://github.com/MagicMirrorOrg/MagicMirror"
+              target="_blank"
+            >
+              <i class="lab la-fw la-github" aria-hidden="true"></i>
+              <span>GitHub Repository - MagicMirror²</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="https://forum.magicmirror.builders/" target="_blank">
+              <i class="las la-fw la-comments" aria-hidden="true"></i>
+              <span>Forum</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a
+              href="https://github.com/MagicMirrorOrg/MagicMirror/wiki/3rd-party-modules"
+              target="_blank"
+            >
+              <i class="las la-fw la-list" aria-hidden="true"></i>
+              <span>Official Module List</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="https://docs.magicmirror.builders" target="_blank">
+              <i class="las la-fw la-book" aria-hidden="true"></i>
+              <span>Documentation</span>
+            </a>
+          </li>
+          <li class="nav-item" title="Donate">
+            <a href="https://magicmirror.builders/donate" target="_blank">
+              <i class="las la-fw la-gem" aria-hidden="true"></i>
+              <span>Donate</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="https://discord.gg/AmGBBwPph5" target="_blank">
+              <i class="lab la-fw la-simplybuilt" aria-hidden="true"></i>
+              <span>Discord</span>
+            </a>
+          </li>
+        </ul>
+
+        <div id="sort-container" class="nav-item">
+          <label for="sort-dropdown" id="sort-label">Sort:</label>
           <select id="sort-dropdown">
             <option value="default" selected>default</option>
             <option value="lastcommit">last commit</option>
@@ -27,13 +80,15 @@
             <option value="stars">stars</option>
           </select>
         </div>
-        <div id="category-container">
-          <label for="category-dropdown">Category:</label>
+
+        <div id="category-container" class="nav-item">
+          <label for="category-dropdown" id="category-label">Category:</label>
           <select id="category-filter">
             <option value="all" selected>all</option>
           </select>
         </div>
-        <div id="outdated-checkbox-container">
+
+        <div id="outdated-checkbox-container" class="nav-item">
           <label for="show-outdated">Show outdated modules</label>
           <label class="switch">
             <input type="checkbox" id="show-outdated" checked />
@@ -41,16 +96,26 @@
           </label>
         </div>
 
-        <label for="dark-mode">Dark Mode</label>
-        <label class="switch">
-          <input
-            id="dark-mode"
-            onclick="switchDarkMode()"
-            type="checkbox"
-            checked
-          />
-          <span class="slider round"></span>
-        </label>
+        <div id="darkmode-container" class="nav-item">
+          <label for="dark-mode">Dark Mode</label>
+          <label class="switch">
+            <input
+              id="dark-mode"
+              onclick="switchDarkMode()"
+              type="checkbox"
+              checked
+            />
+            <span class="slider round"></span>
+          </label>
+        </div>
+      </section>
+    </nav>
+    <header>
+      <h1>MagicMirror² 3rd Party Modules</h1>
+      <div id="top-right">
+        <div type="button" id="nav-toggler" onclick="toggleMenu()">
+          <i class="las la-2x la-fw la-bars"></i>
+        </div>
       </div>
       <div id="top-left">
         <div id="last-update"></div>

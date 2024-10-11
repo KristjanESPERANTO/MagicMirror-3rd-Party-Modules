@@ -13,6 +13,7 @@ const config = [
       "modules/*",
       "modules_temp/*",
       "docs/data/modules*.json",
+      "docs/fonts/*",
       "result.md"
     ]
   },
@@ -36,7 +37,7 @@ const config = [
       "id-length": ["error", {"exceptions": ["a", "b"]}],
       "import-x/no-unresolved": ["error", {"ignore": ["eslint-plugin-package-json/configs/recommended"]}],
       "max-depth": ["warn", 5],
-      "max-lines": ["warn", 450],
+      "max-lines": ["warn", 500],
       "max-lines-per-function": ["warn", 150],
       "max-params": ["warn", 5],
       "max-statements": "off",

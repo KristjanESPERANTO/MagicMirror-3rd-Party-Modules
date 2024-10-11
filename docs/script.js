@@ -24,6 +24,11 @@ const tagsList = [
 ];
 
 
+function toggleMenu () {
+  const navMenu = document.getElementById("nav-menu");
+  navMenu.classList.toggle("visible");
+}
+
 function createCard (moduleData) {
   const card = document.importNode(cardTemplate.content, true);
 
@@ -143,6 +148,11 @@ function updateModuleCardContainer () {
     resetButton.style.display = "none";
   } else {
     resetButton.style.display = "block";
+  }
+
+  const navMenu = document.getElementById("nav-menu");
+  if (navMenu.classList.contains("visible")) {
+    toggleMenu();
   }
 }
 
@@ -354,6 +364,28 @@ showOutdated.addEventListener("change", () => {
   updateModuleCardContainer();
 });
 
+// Add Event-Listener to close the navMenu when clicking outside of it
+document.addEventListener("click", (event) => {
+  const navMenu = document.getElementById("nav-menu");
+  const navToggler = document.getElementById("nav-toggler");
+  if (navMenu.classList.contains("visible")) {
+    if (!navMenu.contains(event.target) && !navToggler.contains(event.target)) {
+      toggleMenu();
+    }
+  }
+});
+
+// Add Event-Listener to close the navMenu when clicking on a link
+const navLinks = document.querySelectorAll("#nav-menu a");
+navLinks.forEach((link) => {
+  link.addEventListener("click", () => {
+    const navMenu = document.getElementById("nav-menu");
+    if (navMenu.classList.contains("visible")) {
+      toggleMenu();
+    }
+  });
+});
+
 async function initiate () {
   const urlParams = new URLSearchParams(window.location.search);
   if (urlParams.has("showOutdated")) {
@@ -409,6 +441,11 @@ function switchDarkMode () {
     resetButton.style.color = "#555";
     resetButton.style.backgroundColor = "#ddd";
     root.style.setProperty("--color-card-background", "#fff");
+  }
+
+  const navMenu = document.getElementById("nav-menu");
+  if (navMenu.classList.contains("visible")) {
+    toggleMenu();
   }
 }
 

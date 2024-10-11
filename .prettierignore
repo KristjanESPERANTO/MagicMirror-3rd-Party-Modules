@@ -1,5 +1,6 @@
 *.js
 docs/data/*.json
+docs/fonts/
 modules/
 result.md
 modules_temp/
