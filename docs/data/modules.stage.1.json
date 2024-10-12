@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "2024-10-07T11:13:14.347Z",
+  "lastUpdate": "2024-10-12T09:38:29.003Z",
   "modules": [
     {
       "name": "MMM-01ZM",
@@ -1639,9 +1639,9 @@
     {
       "name": "MMM-CrisisInformationSweden",
       "category": "News / Information",
-      "url": "https://github.com/boghammar/MMM-CrisisInformationSweden",
-      "id": "boghammar/MMM-CrisisInformationSweden",
-      "maintainer": "boghammar",
+      "url": "https://github.com/Pejjo/MMM-CrisisInformationSweden",
+      "id": "Pejjo/MMM-CrisisInformationSweden",
+      "maintainer": "Pejjo",
       "maintainerURL": "",
       "description": "News feed from the <strong>Swedish</strong> Government Crisis Information (krisinformation.se).",
       "issues": []
@@ -3710,11 +3710,11 @@
       "issues": []
     },
     {
-      "name": "MMM-Grocy",
+      "name": "MMM-Grocy-Mealplan",
       "category": "Utility / IOT / 3rd Party / Integration",
-      "url": "https://github.com/ooohfascinating/MMM-Grocy",
-      "id": "ooohfascinating/MMM-Grocy",
-      "maintainer": "ooohfascinating",
+      "url": "https://github.com/B0neD0ct0r/MMM-Grocy-Mealplan",
+      "id": "B0neD0ct0r/MMM-Grocy-Mealplan",
+      "maintainer": "B0neD0ct0r",
       "maintainerURL": "",
       "description": "Shows your meal plan for the week from grocy.",
       "issues": []
@@ -6045,6 +6045,16 @@
       "maintainer": "coderpussy",
       "maintainerURL": "",
       "description": "Uses MPD to show the state and playlist of your music player. Fork of MMM-MPD but restyled and additional with volume level and played time.",
+      "issues": []
+    },
+    {
+      "name": "MMM-MortgageCountdown",
+      "category": "Utility / IOT / 3rd Party / Integration",
+      "url": "https://github.com/TouaregWarrior/MMM-MortgageCountdown",
+      "id": "TouaregWarrior/MMM-MortgageCountdown",
+      "maintainer": "TouaregWarrior",
+      "maintainerURL": "",
+      "description": "Tracks the number of mortgage payments left.",
       "issues": []
     },
     {

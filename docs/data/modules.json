@@ -177,8 +177,8 @@
       "trashcollection"
     ],
     "image": "AfvalwijzerScreenshot.jpg",
-    "defaultSortWeight": 1,
-    "lastCommit": "2024-09-08T19:10:42+02:00"
+    "defaultSortWeight": 0,
+    "lastCommit": "2024-10-09T17:55:17+02:00"
   },
   {
     "name": "MMM-air-raid-monitor-ua",
@@ -190,7 +190,7 @@
     "description": "This module shows the current status of air raid sirens in Ukraine.",
     "issues": true,
     "stars": 7,
-    "defaultSortWeight": 6,
+    "defaultSortWeight": 7,
     "lastCommit": "2022-10-11T19:29:43+03:00"
   },
   {
@@ -574,7 +574,7 @@
     "tags": [
       "apex legends"
     ],
-    "defaultSortWeight": 8,
+    "defaultSortWeight": 9,
     "lastCommit": "2019-05-10T15:24:53+02:00"
   },
   {
@@ -672,8 +672,8 @@
       "panasonic"
     ],
     "image": "example.jpg",
-    "defaultSortWeight": 2,
-    "lastCommit": "2024-03-30T22:44:35+01:00"
+    "defaultSortWeight": 4,
+    "lastCommit": "2024-10-08T22:37:16+02:00"
   },
   {
     "name": "MMM-ArduPort",
@@ -985,7 +985,7 @@
       "vancouver",
       "british columbia"
     ],
-    "defaultSortWeight": 7,
+    "defaultSortWeight": 8,
     "lastCommit": "2022-10-10T11:38:02-07:00"
   },
   {
@@ -1500,7 +1500,7 @@
     "tags": [
       "brawl stars"
     ],
-    "defaultSortWeight": 7,
+    "defaultSortWeight": 8,
     "lastCommit": "2021-09-10T23:19:52+02:00"
   },
   {
@@ -1719,7 +1719,7 @@
     ],
     "image": "symbolization.jpg",
     "defaultSortWeight": 1,
-    "lastCommit": "2024-09-25T10:07:46+02:00"
+    "lastCommit": "2024-10-07T20:29:43+02:00"
   },
   {
     "name": "MMM-Bysykkel",
@@ -2738,20 +2738,21 @@
   {
     "name": "MMM-CrisisInformationSweden",
     "category": "News / Information",
-    "url": "https://github.com/boghammar/MMM-CrisisInformationSweden",
-    "id": "boghammar/MMM-CrisisInformationSweden",
-    "maintainer": "boghammar",
+    "url": "https://github.com/Pejjo/MMM-CrisisInformationSweden",
+    "id": "Pejjo/MMM-CrisisInformationSweden",
+    "maintainer": "Pejjo",
     "maintainerURL": "",
     "description": "News feed from the <strong>Swedish</strong> Government Crisis Information (krisinformation.se).",
     "issues": true,
     "stars": 1,
+    "hasGithubIssues": false,
     "license": "MIT",
     "tags": [
       "crisis"
     ],
     "image": "docs-ScreenShot1.jpg",
-    "defaultSortWeight": 5,
-    "lastCommit": "2018-10-17T21:48:41+02:00"
+    "defaultSortWeight": 6,
+    "lastCommit": "2023-12-19T16:05:09+01:00"
   },
   {
     "name": "MMM-Cronixie",
@@ -2851,8 +2852,9 @@
     "tags": [
       "cursor"
     ],
-    "defaultSortWeight": 1,
-    "lastCommit": "2024-09-20T21:53:50+02:00"
+    "image": "screenshot.jpg",
+    "defaultSortWeight": 0,
+    "lastCommit": "2024-10-08T09:52:40+02:00"
   },
   {
     "name": "MMM-CustomElementTime",
@@ -4082,8 +4084,8 @@
       "energymonitor"
     ],
     "image": "assets-screenshot-energy-monitor.jpg",
-    "defaultSortWeight": 3,
-    "lastCommit": "2024-09-02T21:25:25+02:00"
+    "defaultSortWeight": 0,
+    "lastCommit": "2024-10-09T22:29:26+02:00"
   },
   {
     "name": "MMM-EnphaseSolar",
@@ -4979,7 +4981,7 @@
     ],
     "image": "example.jpg",
     "defaultSortWeight": 0,
-    "lastCommit": "2024-09-24T09:20:23+02:00"
+    "lastCommit": "2024-10-11T11:50:19+02:00"
   },
   {
     "name": "MMM-Flo",
@@ -5068,7 +5070,7 @@
     "tags": [
       "fortnite"
     ],
-    "defaultSortWeight": 8,
+    "defaultSortWeight": 9,
     "lastCommit": "2019-05-09T21:43:52+02:00"
   },
   {
@@ -5309,7 +5311,7 @@
     ],
     "image": "example_dab.jpg",
     "defaultSortWeight": 2,
-    "lastCommit": "2024-09-26T16:18:14+02:00"
+    "lastCommit": "2024-10-11T11:49:32+02:00"
   },
   {
     "name": "MMM-FTP-image",
@@ -5631,7 +5633,7 @@
     "maintainerURL": "",
     "description": "This module allows to add a glass effect to MagicMirror\u00b2 modules.",
     "issues": true,
-    "stars": 7,
+    "stars": 8,
     "license": "MIT",
     "tags": [
       "glassy",
@@ -5650,7 +5652,7 @@
     "maintainerURL": "",
     "description": "Displays a rotating globe constructed of Hexadecimal shapes specifically formatted to look great on a MagicMirror.",
     "issues": true,
-    "stars": 39,
+    "stars": 40,
     "license": "MIT",
     "defaultSortWeight": 10,
     "lastCommit": "2020-09-15T14:01:40-07:00"
@@ -5712,7 +5714,7 @@
     "maintainerURL": "",
     "description": "Displays the two best routes from an origin to a destination, using Google Directions API.",
     "issues": true,
-    "stars": 46,
+    "stars": 47,
     "license": "MIT",
     "image": "screenshot.jpg",
     "defaultSortWeight": 5,
@@ -5783,7 +5785,7 @@
     "maintainerURL": "https://github.com/randomBrainstormer",
     "description": "Get your Google Calendars in the shape of MagicMirror's default calendar.",
     "issues": true,
-    "stars": 69,
+    "stars": 70,
     "license": "MIT",
     "tags": [
       "google",
@@ -5823,7 +5825,7 @@
     "maintainerURL": "https://github.com/No3x",
     "description": "Display notes from a Google Doc.",
     "issues": true,
-    "stars": 18,
+    "stars": 19,
     "license": "MIT",
     "defaultSortWeight": 12,
     "lastCommit": "2023-09-26T20:39:56+02:00"
@@ -5900,7 +5902,7 @@
     "maintainerURL": "https://github.com/MartinGris",
     "description": "Tracking of multiple objects on a google map. Position can be updated by a notification.",
     "issues": true,
-    "stars": 14,
+    "stars": 15,
     "license": "MIT",
     "tags": [
       "google maps",
@@ -5919,7 +5921,7 @@
     "maintainerURL": "",
     "description": "Displays a Google map, centered at provided coordinates, with traffic information.",
     "issues": true,
-    "stars": 0,
+    "stars": 1,
     "hasGithubIssues": false,
     "license": "MIT",
     "tags": [
@@ -5978,7 +5980,7 @@
     "maintainerURL": "",
     "description": "Display Google Sheets data. Highly customizable.",
     "issues": true,
-    "stars": 26,
+    "stars": 27,
     "license": "MIT",
     "tags": [
       "googlesheets",
@@ -5998,7 +6000,7 @@
     "maintainerURL": "",
     "description": "Display a google shoppinglist items.",
     "issues": true,
-    "stars": 22,
+    "stars": 23,
     "license": "MIT",
     "image": "screenshot.jpg",
     "defaultSortWeight": 4,
@@ -6013,7 +6015,7 @@
     "maintainerURL": "https://github.com/spydersoft-consulting",
     "description": "Display Google Tasks with Planned View.",
     "issues": true,
-    "stars": 3,
+    "stars": 5,
     "license": "MIT",
     "tags": [
       "scheduler"
@@ -6046,7 +6048,7 @@
     "maintainerURL": "https://github.com/jacopo1891",
     "description": "Lists travel times to requested locations taking into account Google traffic information with \"classic view\".",
     "issues": true,
-    "stars": 13,
+    "stars": 15,
     "tags": [
       "traffic",
       "googlemap"
@@ -6106,7 +6108,7 @@
     "maintainerURL": "https://github.com/Sjohn21",
     "description": "Handle GPIO, Inputs (Buttons, PIR, Other) and Outputs (including PWM), with notifications from and to other modules.",
     "issues": true,
-    "stars": 2,
+    "stars": 3,
     "license": "MIT",
     "defaultSortWeight": 9,
     "lastCommit": "2024-01-16T21:54:37+01:00"
@@ -6120,7 +6122,7 @@
     "maintainerURL": "https://github.com/Tom-Hirschberger",
     "description": "Send notifications based on GPIO events. Can be used as PIR module and with rotary encoders.",
     "issues": true,
-    "stars": 12,
+    "stars": 13,
     "license": "MIT",
     "tags": [
       "gpio"
@@ -6168,29 +6170,30 @@
     "maintainerURL": "",
     "description": "Display a diagram generated by Grafana.",
     "issues": true,
-    "stars": 35,
+    "stars": 36,
     "license": "MIT",
     "image": "EmbedURL_from_Grafana.jpg",
     "defaultSortWeight": 3,
     "lastCommit": "2023-04-13T17:53:43+02:00"
   },
   {
-    "name": "MMM-Grocy",
+    "name": "MMM-Grocy-Mealplan",
     "category": "Utility / IOT / 3rd Party / Integration",
-    "url": "https://github.com/ooohfascinating/MMM-Grocy",
-    "id": "ooohfascinating/MMM-Grocy",
-    "maintainer": "ooohfascinating",
+    "url": "https://github.com/B0neD0ct0r/MMM-Grocy-Mealplan",
+    "id": "B0neD0ct0r/MMM-Grocy-Mealplan",
+    "maintainer": "B0neD0ct0r",
     "maintainerURL": "",
     "description": "Shows your meal plan for the week from grocy.",
     "issues": true,
-    "stars": 0,
+    "stars": 1,
+    "hasGithubIssues": false,
     "license": "MIT",
     "tags": [
       "grocy"
     ],
     "image": "docs-Screenshot.jpg",
-    "defaultSortWeight": 0,
-    "lastCommit": "2024-09-03T10:54:43-05:00"
+    "defaultSortWeight": 1,
+    "lastCommit": "2024-09-11T17:54:30+01:00"
   },
   {
     "name": "MMM-GroveGestures",
@@ -6425,7 +6428,7 @@
     "maintainerURL": "",
     "description": "Display local transport in Hamburg/Germany.",
     "issues": true,
-    "stars": 5,
+    "stars": 6,
     "license": "MIT",
     "tags": [
       "localtransport",
@@ -6565,7 +6568,7 @@
     "maintainerURL": "https://github.com/zuo000",
     "description": "HomeAssistant frontend module using HA REST API, including Light, Switch, Sensor.",
     "issues": true,
-    "stars": 25,
+    "stars": 26,
     "license": "MIT",
     "image": "screenshot.jpg",
     "defaultSortWeight": 4,
@@ -6580,7 +6583,7 @@
     "maintainerURL": "",
     "description": "Display information from Home Assistant using the home assistant REST API.",
     "issues": true,
-    "stars": 63,
+    "stars": 64,
     "hasGithubIssues": false,
     "license": "MIT",
     "defaultSortWeight": 7,
@@ -6614,7 +6617,7 @@
     "maintainerURL": "https://github.com/mathewmeconry",
     "description": "Displays information from HomeAssistant via Rest API. Litens for State changes with Websockets. Touch control for Entities.",
     "issues": true,
-    "stars": 8,
+    "stars": 9,
     "license": "ISC",
     "image": "screenshots-1.jpg",
     "defaultSortWeight": 5,
@@ -6629,7 +6632,7 @@
     "maintainerURL": "https://github.com/wonderslug",
     "description": "Displays information from Home Assistant using Home Assistant Templates to render any HTML you want for the module. Includes support for Material Design Icons, Websockets for fast updating, and auto reconnect on Home Assistant restarts. Allows you to show or hide a whole module based on a Home Assistant Template as well.",
     "issues": true,
-    "stars": 86,
+    "stars": 88,
     "license": "MIT",
     "tags": [
       "home assistant"
@@ -7365,7 +7368,7 @@
     "maintainerURL": "",
     "description": "Display internet statistics such as strength and speed information.",
     "issues": true,
-    "stars": 8,
+    "stars": 9,
     "hasGithubIssues": false,
     "license": "MIT",
     "tags": [
@@ -7385,7 +7388,7 @@
     "maintainerURL": "",
     "description": "Display ioBroker values.",
     "issues": true,
-    "stars": 18,
+    "stars": 19,
     "license": "MIT",
     "tags": [
       "iobroker",
@@ -7404,10 +7407,10 @@
     "maintainerURL": "",
     "description": "Show my Smartthings Home automation device status using firebase realtime database.",
     "issues": true,
-    "stars": 10,
+    "stars": 11,
     "license": "MIT",
     "image": "docs-images-all-devices-green.jpg",
-    "defaultSortWeight": 10,
+    "defaultSortWeight": 9,
     "lastCommit": "2019-06-15T16:56:25-05:00"
   },
   {
@@ -7513,7 +7516,7 @@
     "description": "Know when the International Space Station is visible from your location. Can be seen with the naked eye.",
     "issues": true,
     "outdated": "Abandoned. Developer is no longer active. Missing instructions to install dependency 'request'.",
-    "stars": 16,
+    "stars": 15,
     "license": "MIT",
     "image": "images-1.jpg",
     "defaultSortWeight": 901,
@@ -7978,7 +7981,7 @@
     "maintainerURL": "https://github.com/ItsMeBrille",
     "description": "Sending notifications to other modules based on keys pressed.",
     "issues": true,
-    "stars": 5,
+    "stars": 6,
     "license": "MIT",
     "tags": [
       "numpad",
@@ -8091,7 +8094,7 @@
     "maintainerURL": "https://github.com/RineshRamadhin",
     "description": "Displays the Last.fm scrobble currently playing. Supports Spotify, YouTube, Tidal, SoundCloud, MixCloud and <a target=\"_blank\" href=\"https://www.last.fm/about/trackmymusic\">many others</a>.",
     "issues": true,
-    "stars": 4,
+    "stars": 5,
     "tags": [
       "spotify",
       "last.fm",
@@ -8499,7 +8502,7 @@
     "maintainerURL": "https://github.com/xadamxk",
     "description": "Display League of Legends league schedules.",
     "issues": true,
-    "stars": 4,
+    "stars": 3,
     "tags": [
       "esports",
       "league of legends"
@@ -8747,7 +8750,7 @@
     "description": "Module to help developers to start building their own modules for the MagicMirror\u00b2.",
     "issues": true,
     "outdated": "No changes since years. It's not a good start anymore. Use <a href=\"https://github.com/Dennis-Rosenbaum/MMM-Template\">MMM-Template</a> instead.",
-    "stars": 74,
+    "stars": 75,
     "license": "MIT",
     "defaultSortWeight": 901,
     "lastCommit": "2019-11-27T17:33:41-05:00"
@@ -8808,7 +8811,7 @@
     "maintainerURL": "",
     "description": "Prevent screen burn-in on your MagicMirror\u00b2.",
     "issues": true,
-    "stars": 44,
+    "stars": 46,
     "license": "MIT",
     "tags": [
       "screensaver",
@@ -9293,7 +9296,7 @@
     "maintainerURL": "",
     "description": "Display market indicies using (free) Yahoo Finance API.",
     "issues": true,
-    "stars": 4,
+    "stars": 5,
     "license": "MIT",
     "tags": [
       "stock",
@@ -9380,7 +9383,7 @@
     "maintainerURL": "https://github.com/Klettner",
     "description": "Android \ud83d\udcf1 and Windows-desktop \ud83d\udcbb app to control your MagicMirror\u00b2 remotely. (Shutdown, reboot, toggle monitor on/off, change brightness of monitor, custom-commands, etc.).",
     "issues": true,
-    "stars": 59,
+    "stars": 60,
     "license": "MIT",
     "image": "LauncherIcon-MMM-Remote-LauncherIcon.jpg",
     "defaultSortWeight": 5,
@@ -9491,7 +9494,7 @@
     "maintainerURL": "https://github.com/michael5r",
     "description": "Display the status of your Philips Hue lights and light groups. Supports multiple view types and modes.",
     "issues": true,
-    "stars": 42,
+    "stars": 41,
     "license": "MIT",
     "defaultSortWeight": 10,
     "lastCommit": "2022-03-15T15:39:35-05:00"
@@ -9571,7 +9574,7 @@
     "maintainerURL": "https://github.com/michael5r",
     "description": "Displays both your <a target=\"_blank\" href=\"https://www.nest.com\">Nest</a> thermostats and protect smoke detectors. Supports multiple designs &amp; sizes.",
     "issues": true,
-    "stars": 37,
+    "stars": 38,
     "license": "MIT",
     "image": "icons-icon-fan-white.jpg",
     "defaultSortWeight": 10,
@@ -9764,7 +9767,7 @@
     "maintainerURL": "",
     "description": "Display a weather diagram provided by yr.no.",
     "issues": true,
-    "stars": 30,
+    "stars": 29,
     "license": "MIT",
     "image": "Screenshot1.jpg",
     "defaultSortWeight": 11,
@@ -9779,7 +9782,7 @@
     "maintainerURL": "",
     "description": "Show the status of triggers from Zabbix via API calls.",
     "issues": true,
-    "stars": 0,
+    "stars": 1,
     "defaultSortWeight": 10,
     "lastCommit": "2019-06-03T21:17:08+02:00"
   },
@@ -9792,7 +9795,7 @@
     "maintainerURL": "https://github.com/Bee-Mar",
     "description": "An unofficial MagicMirror\u00b2 3rd Party Package Manager. Automates searching, installation, removal, updating, and upgrading of MagicMirror\u00b2 modules.",
     "issues": true,
-    "stars": 193,
+    "stars": 196,
     "license": "MIT",
     "image": "assets-MMPM-UI-Homepage.jpg",
     "defaultSortWeight": 0,
@@ -9807,7 +9810,7 @@
     "maintainerURL": "",
     "description": "Companion module for MMPM to enable hiding/showing of MagicMirror\u00b2 modules.",
     "issues": true,
-    "stars": 5,
+    "stars": 6,
     "license": "MIT",
     "tags": [
       "mmpm",
@@ -9886,13 +9889,13 @@
     "maintainerURL": "",
     "description": "Create schedules to control when other modules are shown, hidden or dimmed and to send notifications to other modules.",
     "issues": true,
-    "stars": 99,
+    "stars": 100,
     "license": "MIT",
     "tags": [
       "scheduler"
     ],
     "image": ".github-example.jpg",
-    "defaultSortWeight": 8,
+    "defaultSortWeight": 7,
     "lastCommit": "2021-04-16T14:54:55+01:00"
   },
   {
@@ -10016,6 +10019,20 @@
     "lastCommit": "2021-02-02T18:21:39+01:00"
   },
   {
+    "name": "MMM-MortgageCountdown",
+    "category": "Utility / IOT / 3rd Party / Integration",
+    "url": "https://github.com/TouaregWarrior/MMM-MortgageCountdown",
+    "id": "TouaregWarrior/MMM-MortgageCountdown",
+    "maintainer": "TouaregWarrior",
+    "maintainerURL": "",
+    "description": "Tracks the number of mortgage payments left.",
+    "issues": true,
+    "stars": 0,
+    "license": "CC0-1.0",
+    "defaultSortWeight": 5,
+    "lastCommit": "2024-10-11T16:53:08+01:00"
+  },
+  {
     "name": "MMM-Motion-Camera",
     "category": "Utility / IOT / 3rd Party / Integration",
     "url": "https://github.com/yusinv/MMM-Motion-Camera",
@@ -10123,7 +10140,7 @@
     "license": "MIT",
     "image": "image-1.jpg",
     "defaultSortWeight": 5,
-    "lastCommit": "2024-10-04T18:10:39+02:00"
+    "lastCommit": "2024-10-08T16:28:22+02:00"
   },
   {
     "name": "MMM-MP3Player",
@@ -10170,7 +10187,7 @@
     "description": "Uses MPD to show the state and playlist of your music player.",
     "issues": true,
     "outdated": "Abandoned. No reactions to issues since years. Seems not to work anymore. Use MMM-Mopidy-MPD instead.",
-    "stars": 13,
+    "stars": 12,
     "license": "MIT License",
     "defaultSortWeight": 901,
     "lastCommit": "2018-12-23T11:53:47+01:00"
@@ -10461,7 +10478,7 @@
     "maintainerURL": "",
     "description": "Displays the public transport information for Munich - Germany.",
     "issues": true,
-    "stars": 28,
+    "stars": 27,
     "license": "MIT",
     "tags": [
       "public transport",
@@ -10481,7 +10498,7 @@
     "maintainerURL": "",
     "description": "Display public transport \ud83d\ude90 from Munich in Germany.",
     "issues": true,
-    "stars": 7,
+    "stars": 8,
     "license": "MIT",
     "tags": [
       "public transport",
@@ -10516,7 +10533,7 @@
     "maintainerURL": "",
     "description": "Same functionality as the default Calendar app but different display formatting.",
     "issues": true,
-    "stars": 6,
+    "stars": 7,
     "hasGithubIssues": false,
     "defaultSortWeight": 7,
     "lastCommit": "2023-12-12T10:15:56-05:00"
@@ -10530,7 +10547,7 @@
     "maintainerURL": "",
     "description": "Displays your commute times to several destinations. Highly configurable.",
     "issues": true,
-    "stars": 38,
+    "stars": 39,
     "tags": [
       "traffic",
       "commute"
@@ -10584,7 +10601,7 @@
     "maintainerURL": "",
     "description": "Displays your Custom Garbage Calendar.",
     "issues": true,
-    "stars": 32,
+    "stars": 31,
     "license": "MIT",
     "image": "screenshot.jpg",
     "defaultSortWeight": 4,
@@ -10654,7 +10671,7 @@
       "sports"
     ],
     "image": "logos-NCAAF-CAL.jpg",
-    "defaultSortWeight": 6,
+    "defaultSortWeight": 7,
     "lastCommit": "2022-10-09T10:17:02-04:00"
   },
   {
@@ -10684,7 +10701,7 @@
     "maintainerURL": "",
     "description": "Connect to a MySQL database, run a select query (one value) and display the result.",
     "issues": true,
-    "stars": 2,
+    "stars": 3,
     "license": "MIT",
     "tags": [
       "mysql"
@@ -10782,7 +10799,7 @@
     "maintainerURL": "",
     "description": "Display step by step directions to a location and provide an estimated time of arrival using Google Maps API.",
     "issues": true,
-    "stars": 1,
+    "stars": 2,
     "license": "ISC",
     "image": "example.jpg",
     "defaultSortWeight": 5,
@@ -11179,7 +11196,7 @@
     ],
     "image": ".github-preview.bubbles.jpg",
     "defaultSortWeight": -1,
-    "lastCommit": "2024-10-04T21:23:57+00:00"
+    "lastCommit": "2024-10-11T19:45:57+00:00"
   },
   {
     "name": "MMM-Netatmo-Presence",
@@ -11515,8 +11532,8 @@
       "ice hockey"
     ],
     "image": ".github-example_nhl.jpg",
-    "defaultSortWeight": 9,
-    "lastCommit": "2024-10-01T19:32:21-05:00"
+    "defaultSortWeight": 2,
+    "lastCommit": "2024-10-11T10:46:52-05:00"
   },
   {
     "name": "MMM-NiceHash",
@@ -11553,7 +11570,7 @@
     "stars": 14,
     "license": "MIT",
     "image": "docs-screenshot-2.jpg",
-    "defaultSortWeight": 4,
+    "defaultSortWeight": 5,
     "lastCommit": "2024-01-09T23:03:51+01:00"
   },
   {
@@ -12120,7 +12137,7 @@
     ],
     "image": "images-screenshot.jpg",
     "defaultSortWeight": 3,
-    "lastCommit": "2024-08-16T01:02:29+01:00"
+    "lastCommit": "2024-10-09T01:14:41+01:00"
   },
   {
     "name": "MMM-OneTouchReveal",
@@ -12419,7 +12436,7 @@
     "license": "MIT",
     "image": "screenshots-MMM-OpenWeatherMapForecast.jpg",
     "defaultSortWeight": 0,
-    "lastCommit": "2024-09-25T10:35:19+02:00"
+    "lastCommit": "2024-10-11T11:50:40+02:00"
   },
   {
     "name": "MMM-OsloCityBike",
@@ -12492,7 +12509,7 @@
     "tags": [
       "overwatch"
     ],
-    "defaultSortWeight": 8,
+    "defaultSortWeight": 9,
     "lastCommit": "2020-05-06T09:57:16+02:00"
   },
   {
@@ -13072,7 +13089,7 @@
     "license": "MIT",
     "image": ".github-discon-preview.jpg",
     "defaultSortWeight": 3,
-    "lastCommit": "2024-08-08T11:57:14+02:00"
+    "lastCommit": "2024-10-08T01:24:38+02:00"
   },
   {
     "name": "MMM-Pir",
@@ -13595,7 +13612,7 @@
     "stars": 4,
     "license": "ISC",
     "image": "docs-screenshot.jpg",
-    "defaultSortWeight": 8,
+    "defaultSortWeight": 10,
     "lastCommit": "2021-05-22T10:58:08+02:00"
   },
   {
@@ -13821,7 +13838,7 @@
     "maintainer": "deg0nz",
     "maintainerURL": "",
     "description": "Display departures for public transport in Berlin and Brandenburg (Covers VBB Area).",
-    "issues": false,
+    "issues": true,
     "stars": 40,
     "license": "MIT",
     "tags": [
@@ -13830,7 +13847,7 @@
       "brandenburg"
     ],
     "image": "img-MMM-PublicTransport_screenshot.jpg",
-    "defaultSortWeight": -1,
+    "defaultSortWeight": 0,
     "lastCommit": "2024-10-07T00:56:57+02:00"
   },
   {
@@ -13841,7 +13858,7 @@
     "maintainer": "KristjanESPERANTO",
     "maintainerURL": "",
     "description": "Displays departure information for public transportation in Germany and some other European countries. The <a target=\"_blank\" href=\"https://github.com/public-transport/hafas-client\">hafas-client</a> is used to query the information. The interface of the Deutsche Bahn is used as standard, this includes most of the local networks with buses, trams, etc. However, <a target=\"_blank\" href=\"https://github.com/public-transport/hafas-client/blob/main/p/readme.md\">other hafas interfaces</a> can also be used.",
-    "issues": false,
+    "issues": true,
     "stars": 17,
     "license": "MIT",
     "tags": [
@@ -13850,7 +13867,7 @@
     ],
     "image": "img-Goerdelerring_all.jpg",
     "defaultSortWeight": 1,
-    "lastCommit": "2024-10-05T23:40:00+02:00"
+    "lastCommit": "2024-10-09T12:09:04+02:00"
   },
   {
     "name": "MMM-PublicTransportVVO",
@@ -14464,8 +14481,8 @@
       "control"
     ],
     "image": ".github-hide_show_module.jpg",
-    "defaultSortWeight": 9,
-    "lastCommit": "2023-10-03T19:43:50-03:00"
+    "defaultSortWeight": 5,
+    "lastCommit": "2024-10-08T10:04:05+02:00"
   },
   {
     "name": "MMM-Remote-Control-Repository",
@@ -15122,7 +15139,7 @@
     ],
     "image": "screenshots-screenshot.jpg",
     "defaultSortWeight": 2,
-    "lastCommit": "2024-09-11T14:37:32-04:00"
+    "lastCommit": "2024-10-09T11:18:50-04:00"
   },
   {
     "name": "MMM-ScreenLogic",
@@ -15468,7 +15485,7 @@
     "issues": true,
     "stars": 4,
     "license": "Unlicense",
-    "defaultSortWeight": 9,
+    "defaultSortWeight": 10,
     "lastCommit": "2022-10-10T15:43:28+02:00"
   },
   {
@@ -15537,7 +15554,7 @@
     "stars": 1,
     "license": "MIT",
     "image": "docs-screenshot.jpg",
-    "defaultSortWeight": 5,
+    "defaultSortWeight": 6,
     "lastCommit": "2019-10-06T14:29:49+02:00"
   },
   {
@@ -15720,7 +15737,7 @@
       "stockholm"
     ],
     "image": "docs-MMM-SL-Screenshot.jpg",
-    "defaultSortWeight": 6,
+    "defaultSortWeight": 7,
     "lastCommit": "2024-03-25T13:48:17+01:00"
   },
   {
@@ -15817,7 +15834,7 @@
     "stars": 2,
     "license": "MIT",
     "image": ".github-preview.jpg",
-    "defaultSortWeight": 8,
+    "defaultSortWeight": 9,
     "lastCommit": "2018-03-06T18:18:49+01:00"
   },
   {
@@ -16619,8 +16636,8 @@
       "station clock"
     ],
     "image": "image.jpg",
-    "defaultSortWeight": 3,
-    "lastCommit": "2024-10-06T15:45:36+02:00"
+    "defaultSortWeight": 2,
+    "lastCommit": "2024-10-07T18:16:14+02:00"
   },
   {
     "name": "MMM-Swipe",
@@ -16798,7 +16815,7 @@
     "license": "MIT",
     "image": "screenshots-screenshot-compact.jpg",
     "defaultSortWeight": 3,
-    "lastCommit": "2024-10-05T19:38:15-03:00"
+    "lastCommit": "2024-10-07T14:34:10-03:00"
   },
   {
     "name": "MMM-SystemMonitor",
@@ -18284,7 +18301,7 @@
     ],
     "license": "MIT",
     "image": "docs-screenshot.jpg",
-    "defaultSortWeight": 5,
+    "defaultSortWeight": 6,
     "lastCommit": "2024-10-03T08:11:32+02:00"
   },
   {
@@ -18827,7 +18844,7 @@
     ],
     "image": "images-day-0000.jpg",
     "defaultSortWeight": 7,
-    "lastCommit": "2024-05-05T17:02:09-07:00"
+    "lastCommit": "2024-10-07T13:35:49-07:00"
   },
   {
     "name": "MMM-Weather-SMHI-Hourly",
@@ -18841,7 +18858,7 @@
     "stars": 2,
     "license": "GPL-3.0",
     "image": "screenshot.jpg",
-    "defaultSortWeight": 7,
+    "defaultSortWeight": 8,
     "lastCommit": "2022-05-16T10:36:10+02:00"
   },
   {
@@ -19048,14 +19065,13 @@
     "description": "It allows you to display your kids' canceled and irregular lessons for schools using <a target=\"_blank\" href=\"https://www.untis.at\">Untis</a> software to organize school's timetables.",
     "issues": true,
     "stars": 2,
-    "hasGithubIssues": false,
     "license": "MIT",
     "tags": [
       "webuntis"
     ],
     "image": "screenshot.jpg",
-    "defaultSortWeight": 9,
-    "lastCommit": "2024-10-07T09:59:53+02:00"
+    "defaultSortWeight": 1,
+    "lastCommit": "2024-10-09T11:41:00+02:00"
   },
   {
     "name": "MMM-WebView",
