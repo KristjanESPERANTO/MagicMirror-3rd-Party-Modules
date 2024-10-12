@@ -6455,6 +6455,21 @@
     "image": "docs-result.jpg"
   },
   {
+    "name": "MMM-HolidayCountdown",
+    "category": "Utility / IOT / 3rd Party / Integration",
+    "url": "https://github.com/TouaregWarrior/MMM-HolidayCountdown",
+    "id": "TouaregWarrior/MMM-HolidayCountdown",
+    "maintainer": "TouaregWarrior",
+    "maintainerURL": "",
+    "description": "Displays the number of days until a Holiday/Trip. Displays the next 4 trips from a configured list.",
+    "issues": [
+      "There is no `package.json`. We need this file to gather information about the module for the module list page.",
+      "No image found."
+    ],
+    "stars": 0,
+    "license": "GPL-3.0"
+  },
+  {
     "name": "MMM-HolidayLights",
     "category": "Entertainment / Misc",
     "url": "https://github.com/justjim1220/MMM-HolidayLights",
@@ -11822,11 +11837,26 @@
     "id": "christopherpthomas/MMM-OctoMon",
     "maintainer": "christopherpthomas",
     "maintainerURL": "",
-    "description": "Displays energy usage history for your Octopus Energy account.",
+    "description": "A modified version of Chris Thomas (christopherpthomas)'s Octopus Energy display monitor module for MagicMirror. This version has added functionality to include an extra column data to show exported energy calculations.",
     "issues": [
       "There is no `package.json`. We need this file to gather information about the module for the module list page."
     ],
     "stars": 5,
+    "license": "MIT",
+    "image": "screenshot.jpg"
+  },
+  {
+    "name": "MMM-OctoMonV2",
+    "category": "Utility / IOT / 3rd Party / Integration",
+    "url": "https://github.com/TouaregWarrior/MMM-OctoMonV2",
+    "id": "TouaregWarrior/MMM-OctoMonV2",
+    "maintainer": "TouaregWarrior",
+    "maintainerURL": "",
+    "description": "Displays energy usage history for your Octopus Energy account.",
+    "issues": [
+      "There is no `package.json`. We need this file to gather information about the module for the module list page."
+    ],
+    "stars": 0,
     "license": "MIT",
     "image": "screenshot.jpg"
   },
@@ -12927,7 +12957,7 @@
     "issues": [
       "There is no `package.json`. We need this file to gather information about the module for the module list page."
     ],
-    "stars": 1,
+    "stars": 3,
     "license": "MIT",
     "image": ".github-discon-preview.jpg"
   },

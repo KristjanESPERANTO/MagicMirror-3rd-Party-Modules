@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "2024-10-12T09:38:29.003Z",
+  "lastUpdate": "2024-10-12T15:30:06.978Z",
   "modules": [
     {
       "name": "MMM-01ZM",
@@ -3931,6 +3931,16 @@
       "issues": []
     },
     {
+      "name": "MMM-HolidayCountdown",
+      "category": "Utility / IOT / 3rd Party / Integration",
+      "url": "https://github.com/TouaregWarrior/MMM-HolidayCountdown",
+      "id": "TouaregWarrior/MMM-HolidayCountdown",
+      "maintainer": "TouaregWarrior",
+      "maintainerURL": "",
+      "description": "Displays the number of days until a Holiday/Trip. Displays the next 4 trips from a configured list.",
+      "issues": []
+    },
+    {
       "name": "MMM-HolidayLights",
       "category": "Entertainment / Misc",
       "url": "https://github.com/justjim1220/MMM-HolidayLights",
@@ -7196,6 +7206,16 @@
       "url": "https://github.com/christopherpthomas/MMM-OctoMon",
       "id": "christopherpthomas/MMM-OctoMon",
       "maintainer": "christopherpthomas",
+      "maintainerURL": "",
+      "description": "A modified version of Chris Thomas (christopherpthomas)'s Octopus Energy display monitor module for MagicMirror. This version has added functionality to include an extra column data to show exported energy calculations.",
+      "issues": []
+    },
+    {
+      "name": "MMM-OctoMonV2",
+      "category": "Utility / IOT / 3rd Party / Integration",
+      "url": "https://github.com/TouaregWarrior/MMM-OctoMonV2",
+      "id": "TouaregWarrior/MMM-OctoMonV2",
+      "maintainer": "TouaregWarrior",
       "maintainerURL": "",
       "description": "Displays energy usage history for your Octopus Energy account.",
       "issues": []

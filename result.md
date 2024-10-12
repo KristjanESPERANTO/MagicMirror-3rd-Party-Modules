@@ -1,16 +1,16 @@
 # Result of the module analysis
 
-Last update: 2024-10-12T11:50:06+02:00
+Last update: 2024-10-12T17:38:02+02:00
 
 ## Statistics
 
 |                      | number   |
 |:---------------------|:--------:|
-| modules analyzed     |   1180   |
+| modules analyzed     |   1182   |
 | maintainer           |    635   |
-| modules with issues  |   1178   |
-| issues               |   6802   |
-| modules at github    |   1073   |
+| modules with issues  |   1179   |
+| issues               |   6814   |
+| modules at github    |   1075   |
 | modules at gitlab    |     10   |
 | modules at bitbucket |      1   |
 
@@ -3328,6 +3328,15 @@ Last update: 2024-10-12T11:50:06+02:00
 4. Typo: Found `MagicMirror2` in file `package.json`: Replace it with `MagicMirror²`.
 5. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
 
+### [MMM-HolidayCountdown by TouaregWarrior](https://github.com/TouaregWarrior/MMM-HolidayCountdown)
+
+1. There is no `package.json`. We need this file to gather information about the module for the module list page.
+2. No image found.
+3. Recommendation: Found `new Date()` in file `MMM-HolidayCountdown.js`: Consider replacing it by `new Date(Date.now())`. It's helpful for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
+4. Recommendation: The README seems not to have an update instruction (the word 'update' is missing). Please add one.
+5. Recommendation: The README seems not to have an install instruction (the words 'install' or 'installation' are missing). Please add one.
+6. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
+
 ### [MMM-HolidayLights by justjim1220](https://github.com/justjim1220/MMM-HolidayLights)
 
 1. There is no `package.json`. We need this file to gather information about the module for the module list page.
@@ -3913,13 +3922,6 @@ Last update: 2024-10-12T11:50:06+02:00
 5. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
 6. Recommendation: Found `new Date()` in file `node_helper.js`: Consider replacing it by `new Date(Date.now())`. It's helpful for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
 7. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
-
-### [MMM-ISS-Live by KristjanESPERANTO](https://github.com/KristjanESPERANTO/MMM-ISS-Live)
-
-1. Information: There are updates for 2 dependencie(s):
-   - eslint    ^8.57.0  →  ^9.12.0
-   - prettier   ^3.2.5  →   ^3.3.3
-
 
 ### [MMM-ISS-Map by khassel](https://gitlab.com/khassel/MMM-ISS-Map)
 
@@ -6274,6 +6276,16 @@ Last update: 2024-10-12T11:50:06+02:00
 4. Recommendation: Found `new Date()` in file `MMM-OctoMon.js`: Consider replacing it by `new Date(Date.now())`. It's helpful for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
 5. Typo: Found `<sup>2</sup>` in file `README.md`: Replace it with `²`.`.
 6. Outdated: Found `MichMich/MagicMirror` in file `README.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
+7. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
+
+### [MMM-OctoMonV2 by TouaregWarrior](https://github.com/TouaregWarrior/MMM-OctoMonV2)
+
+1. There is no `package.json`. We need this file to gather information about the module for the module list page.
+2. Typo: Found `Magic Mirror` in file `MMM-OctoMonV2.js`: Replace it with `MagicMirror²`.
+3. Recommendation: Found `XMLHttpRequest` in file `MMM-OctoMonV2.js`: Replace it with built-in fetch.
+4. Recommendation: Found `new Date()` in file `MMM-OctoMonV2.js`: Consider replacing it by `new Date(Date.now())`. It's helpful for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
+5. Recommendation: The README seems not to have an update instruction (the word 'update' is missing). Please add one.
+6. Recommendation: The README seems not to have an install instruction (the words 'install' or 'installation' are missing). Please add one.
 7. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
 
 ### [MMM-octoprint by btastic](https://github.com/btastic/MMM-octoprint)
@@ -8910,7 +8922,7 @@ Last update: 2024-10-12T11:50:06+02:00
 4. Information: There are updates for 3 dependencie(s):
    - jquery             ^3.3.1  →   ^3.7.1
    - jquery-ui-dist    ^1.12.1  →  ^1.13.3
-   - jquery.tabulator   ^3.4.3  →   ^3.5.3
+   - jquery.tabulator   ^3.4.3  →   ^3.4.6
 
 
 ### [MMM-Tado by WouterEekhout](https://github.com/WouterEekhout/MMM-Tado)

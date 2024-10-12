@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "2024-10-12T09:38:45.174Z",
+  "lastUpdate": "2024-10-12T15:30:21.358Z",
   "repositories": [
     {
       "id": "0lek/MMM-socialbicycles",
@@ -283,7 +283,7 @@
     },
     {
       "id": "AgP42/MMM-Netatmo-Presence",
-      "gitHubDataLastUpdate": "2024-09-24T03:30:21.036Z",
+      "gitHubDataLastUpdate": "2024-10-12T15:30:18.340Z",
       "gitHubData": {
         "issues": 2,
         "stars": 4,
@@ -927,7 +927,7 @@
     },
     {
       "id": "Ax-LED/MMM-Navigate",
-      "gitHubDataLastUpdate": "2024-09-24T03:30:17.313Z",
+      "gitHubDataLastUpdate": "2024-10-12T15:30:14.877Z",
       "gitHubData": {
         "issues": 0,
         "stars": 10,
@@ -2229,9 +2229,9 @@
     },
     {
       "id": "bugsounet/MMM-NetatmoThermostat",
-      "gitHubDataLastUpdate": "2024-09-24T03:30:22.260Z",
+      "gitHubDataLastUpdate": "2024-10-12T15:30:19.503Z",
       "gitHubData": {
-        "issues": 3,
+        "issues": 0,
         "stars": 2,
         "license": "MIT",
         "archived": false,
@@ -2607,16 +2607,16 @@
     },
     {
       "id": "CFenner/MMM-Netatmo",
-      "gitHubDataLastUpdate": "2024-09-24T03:30:20.585Z",
+      "gitHubDataLastUpdate": "2024-10-12T15:30:17.924Z",
       "gitHubData": {
-        "issues": 10,
+        "issues": 11,
         "stars": 36,
         "license": "MIT",
         "archived": false,
         "disabled": false,
         "defaultBranch": "main",
         "has_issues": true,
-        "lastCommit": "2024-09-23T22:54:37Z"
+        "lastCommit": "2024-10-11T19:45:57Z"
       }
     },
     {
@@ -3587,7 +3587,7 @@
     },
     {
       "id": "Dennis-Rosenbaum/MMM-Quiz",
-      "gitHubDataLastUpdate": "2024-09-24T15:30:10.209Z",
+      "gitHubDataLastUpdate": "2024-10-12T15:30:20.804Z",
       "gitHubData": {
         "issues": 0,
         "stars": 1,
@@ -5001,7 +5001,7 @@
     },
     {
       "id": "framboise-pi/MMM-MyWordsRandomed",
-      "gitHubDataLastUpdate": "2024-09-24T03:30:12.859Z",
+      "gitHubDataLastUpdate": "2024-10-12T15:30:10.143Z",
       "gitHubData": {
         "issues": 1,
         "stars": 0,
@@ -5351,7 +5351,7 @@
     },
     {
       "id": "gravitykillseverything/MMM-Radarr",
-      "gitHubDataLastUpdate": "2024-09-24T15:30:10.633Z",
+      "gitHubDataLastUpdate": "2024-10-12T15:30:21.288Z",
       "gitHubData": {
         "issues": 1,
         "stars": 0,
@@ -6429,7 +6429,7 @@
     },
     {
       "id": "jclarke0000/MMM-MyWastePickup",
-      "gitHubDataLastUpdate": "2024-09-24T03:30:11.860Z",
+      "gitHubDataLastUpdate": "2024-10-12T15:30:09.298Z",
       "gitHubData": {
         "issues": 15,
         "stars": 11,
@@ -7073,7 +7073,7 @@
     },
     {
       "id": "jupadin/MMM-NBA",
-      "gitHubDataLastUpdate": "2024-09-24T03:30:17.733Z",
+      "gitHubDataLastUpdate": "2024-10-12T15:30:15.248Z",
       "gitHubData": {
         "issues": 2,
         "stars": 6,
@@ -8305,7 +8305,7 @@
     },
     {
       "id": "martinkooij/MMM-MyWeather",
-      "gitHubDataLastUpdate": "2024-09-24T03:30:12.347Z",
+      "gitHubDataLastUpdate": "2024-10-12T15:30:09.701Z",
       "gitHubData": {
         "issues": 2,
         "stars": 4,
@@ -8333,7 +8333,7 @@
     },
     {
       "id": "MartinLoidolt/MMM-neoomAPI",
-      "gitHubDataLastUpdate": "2024-09-24T03:30:19.173Z",
+      "gitHubDataLastUpdate": "2024-10-12T15:30:16.571Z",
       "gitHubData": {
         "issues": 1,
         "stars": 1,
@@ -8627,7 +8627,7 @@
     },
     {
       "id": "Menturan/MMM-Namnsdag",
-      "gitHubDataLastUpdate": "2024-09-24T03:30:14.605Z",
+      "gitHubDataLastUpdate": "2024-10-12T15:30:11.953Z",
       "gitHubData": {
         "issues": 0,
         "stars": 0,
@@ -9649,7 +9649,7 @@
     },
     {
       "id": "mtatsuma/MMM-NatureRemo",
-      "gitHubDataLastUpdate": "2024-09-24T03:30:16.889Z",
+      "gitHubDataLastUpdate": "2024-10-12T15:30:14.469Z",
       "gitHubData": {
         "issues": 0,
         "stars": 2,
@@ -10279,7 +10279,7 @@
     },
     {
       "id": "mykle1/MMM-NASA",
-      "gitHubDataLastUpdate": "2024-09-24T03:30:15.523Z",
+      "gitHubDataLastUpdate": "2024-10-12T15:30:13.008Z",
       "gitHubData": {
         "issues": 3,
         "stars": 12,
@@ -10293,7 +10293,7 @@
     },
     {
       "id": "mykle1/MMM-NatureCalendar",
-      "gitHubDataLastUpdate": "2024-09-24T03:30:16.381Z",
+      "gitHubDataLastUpdate": "2024-10-12T15:30:13.938Z",
       "gitHubData": {
         "issues": 0,
         "stars": 1,
@@ -10307,7 +10307,7 @@
     },
     {
       "id": "mykle1/MMM-NEO",
-      "gitHubDataLastUpdate": "2024-09-24T03:30:18.713Z",
+      "gitHubDataLastUpdate": "2024-10-12T15:30:16.143Z",
       "gitHubData": {
         "issues": 1,
         "stars": 4,
@@ -10517,7 +10517,7 @@
     },
     {
       "id": "nebulx29/MMM-nasaastropic",
-      "gitHubDataLastUpdate": "2024-09-24T03:30:15.942Z",
+      "gitHubDataLastUpdate": "2024-10-12T15:30:13.465Z",
       "gitHubData": {
         "issues": 2,
         "stars": 9,
@@ -11091,7 +11091,7 @@
     },
     {
       "id": "normyx/MMM-Nantes-TAN",
-      "gitHubDataLastUpdate": "2024-09-24T03:30:15.079Z",
+      "gitHubDataLastUpdate": "2024-10-12T15:30:12.482Z",
       "gitHubData": {
         "issues": 2,
         "stars": 3,
@@ -11231,7 +11231,7 @@
     },
     {
       "id": "ottopaulsen/MMM-NesteBussAtB",
-      "gitHubDataLastUpdate": "2024-09-24T03:30:19.636Z",
+      "gitHubDataLastUpdate": "2024-10-12T15:30:17.000Z",
       "gitHubData": {
         "issues": 9,
         "stars": 9,
@@ -11259,7 +11259,7 @@
     },
     {
       "id": "overflOw11/MMM-Netatmo-Thermostat",
-      "gitHubDataLastUpdate": "2024-09-24T03:30:21.852Z",
+      "gitHubDataLastUpdate": "2024-10-12T15:30:19.090Z",
       "gitHubData": {
         "issues": 5,
         "stars": 3,
@@ -11805,16 +11805,16 @@
     },
     {
       "id": "Protonosgit/MMM-PingTime",
-      "gitHubDataLastUpdate": "2024-09-24T15:30:09.496Z",
+      "gitHubDataLastUpdate": "2024-10-12T15:30:20.328Z",
       "gitHubData": {
         "issues": 0,
-        "stars": 1,
+        "stars": 3,
         "license": "MIT",
         "archived": false,
         "disabled": false,
         "defaultBranch": "main",
         "has_issues": true,
-        "lastCommit": "2024-08-08T09:57:14Z"
+        "lastCommit": "2024-10-07T23:24:38Z"
       }
     },
     {
@@ -11931,7 +11931,7 @@
     },
     {
       "id": "qistoph/MMM-nagios",
-      "gitHubDataLastUpdate": "2024-09-24T03:30:13.327Z",
+      "gitHubDataLastUpdate": "2024-10-12T15:30:10.636Z",
       "gitHubData": {
         "issues": 9,
         "stars": 7,
@@ -12477,7 +12477,7 @@
     },
     {
       "id": "RichieCZ/MMM-NameDay",
-      "gitHubDataLastUpdate": "2024-09-24T03:30:14.138Z",
+      "gitHubDataLastUpdate": "2024-10-12T15:30:11.402Z",
       "gitHubData": {
         "issues": 1,
         "stars": 5,
@@ -12981,7 +12981,7 @@
     },
     {
       "id": "semox/MMM-NearCompliments",
-      "gitHubDataLastUpdate": "2024-09-24T03:30:18.216Z",
+      "gitHubDataLastUpdate": "2024-10-12T15:30:15.692Z",
       "gitHubData": {
         "issues": 1,
         "stars": 4,
@@ -13415,7 +13415,7 @@
     },
     {
       "id": "sisimomo/MMM-NestRemoteThermostat",
-      "gitHubDataLastUpdate": "2024-09-24T03:30:20.096Z",
+      "gitHubDataLastUpdate": "2024-10-12T15:30:17.437Z",
       "gitHubData": {
         "issues": 3,
         "stars": 1,
@@ -14283,7 +14283,7 @@
     },
     {
       "id": "taylornoss/MMM-OLYMPIC-MEDALS",
-      "gitHubDataLastUpdate": "2024-09-24T15:30:09.048Z",
+      "gitHubDataLastUpdate": "2024-10-12T15:30:19.909Z",
       "gitHubData": {
         "issues": 0,
         "stars": 2,
@@ -15080,6 +15080,20 @@
       }
     },
     {
+      "id": "TouaregWarrior/MMM-HolidayCountdown",
+      "gitHubDataLastUpdate": "2024-10-12T15:30:08.503Z",
+      "gitHubData": {
+        "issues": 0,
+        "stars": 0,
+        "license": "GPL-3.0",
+        "archived": false,
+        "disabled": false,
+        "defaultBranch": "main",
+        "has_issues": true,
+        "lastCommit": "2024-10-12T11:49:47Z"
+      }
+    },
+    {
       "id": "TouaregWarrior/MMM-MortgageCountdown",
       "gitHubDataLastUpdate": "2024-10-12T03:30:08.479Z",
       "gitHubData": {
@@ -15091,6 +15105,20 @@
         "defaultBranch": "main",
         "has_issues": true,
         "lastCommit": "2024-10-11T15:53:08Z"
+      }
+    },
+    {
+      "id": "TouaregWarrior/MMM-OctoMonV2",
+      "gitHubDataLastUpdate": "2024-10-12T15:30:08.897Z",
+      "gitHubData": {
+        "issues": 0,
+        "stars": 0,
+        "license": "MIT",
+        "archived": false,
+        "disabled": false,
+        "defaultBranch": "main",
+        "has_issues": true,
+        "lastCommit": "2024-10-12T12:13:28Z"
       }
     },
     {

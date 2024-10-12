@@ -6531,6 +6531,20 @@
     "lastCommit": "2020-09-30T08:35:34+02:00"
   },
   {
+    "name": "MMM-HolidayCountdown",
+    "category": "Utility / IOT / 3rd Party / Integration",
+    "url": "https://github.com/TouaregWarrior/MMM-HolidayCountdown",
+    "id": "TouaregWarrior/MMM-HolidayCountdown",
+    "maintainer": "TouaregWarrior",
+    "maintainerURL": "",
+    "description": "Displays the number of days until a Holiday/Trip. Displays the next 4 trips from a configured list.",
+    "issues": true,
+    "stars": 0,
+    "license": "GPL-3.0",
+    "defaultSortWeight": 5,
+    "lastCommit": "2024-10-12T12:49:47+01:00"
+  },
+  {
     "name": "MMM-HolidayLights",
     "category": "Entertainment / Misc",
     "url": "https://github.com/justjim1220/MMM-HolidayLights",
@@ -7530,7 +7544,7 @@
     "maintainer": "KristjanESPERANTO",
     "maintainerURL": "",
     "description": "Displays live video from the International Space Station.",
-    "issues": true,
+    "issues": false,
     "stars": 6,
     "license": "MIT",
     "tags": [
@@ -7539,7 +7553,7 @@
     ],
     "image": "images-i1.jpg",
     "defaultSortWeight": 1,
-    "lastCommit": "2024-03-16T15:07:39+01:00"
+    "lastCommit": "2024-10-12T13:47:58+02:00"
   },
   {
     "name": "MMM-ISS-Map",
@@ -11957,13 +11971,28 @@
     "id": "christopherpthomas/MMM-OctoMon",
     "maintainer": "christopherpthomas",
     "maintainerURL": "",
-    "description": "Displays energy usage history for your Octopus Energy account.",
+    "description": "A modified version of Chris Thomas (christopherpthomas)'s Octopus Energy display monitor module for MagicMirror. This version has added functionality to include an extra column data to show exported energy calculations.",
     "issues": true,
     "stars": 5,
     "license": "MIT",
     "image": "screenshot.jpg",
     "defaultSortWeight": 8,
     "lastCommit": "2022-03-04T16:20:20+00:00"
+  },
+  {
+    "name": "MMM-OctoMonV2",
+    "category": "Utility / IOT / 3rd Party / Integration",
+    "url": "https://github.com/TouaregWarrior/MMM-OctoMonV2",
+    "id": "TouaregWarrior/MMM-OctoMonV2",
+    "maintainer": "TouaregWarrior",
+    "maintainerURL": "",
+    "description": "Displays energy usage history for your Octopus Energy account.",
+    "issues": true,
+    "stars": 0,
+    "license": "MIT",
+    "image": "screenshot.jpg",
+    "defaultSortWeight": 6,
+    "lastCommit": "2024-10-12T13:13:28+01:00"
   },
   {
     "name": "MMM-octoprint",
@@ -13085,7 +13114,7 @@
     "maintainerURL": "",
     "description": "Show the ping time based on a websocket connection.",
     "issues": true,
-    "stars": 1,
+    "stars": 3,
     "license": "MIT",
     "image": ".github-discon-preview.jpg",
     "defaultSortWeight": 3,
