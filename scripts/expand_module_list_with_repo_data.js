@@ -162,6 +162,7 @@ async function checkLicenseAndHandleScreenshot (moduleData, module) {
       "AGPL-3.0-or-later",
       "Apache-2.0",
       "BSD-3-Clause",
+      "CC0-1.0",
       "GPL-3.0",
       "GPL-3.0-only",
       "GPL-3.0-or-later",
@@ -170,7 +171,8 @@ async function checkLicenseAndHandleScreenshot (moduleData, module) {
       "MIT-Modern-Variant",
       "MPL-2.0",
       "LGPL-2.1",
-      "LGPL-2.1-only"
+      "LGPL-2.1-only",
+      "Unlicense"
     ];
 
     // Use license information to determine if we can use an image
