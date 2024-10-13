@@ -8526,7 +8526,7 @@
     "id": "christopherpthomas/MMM-OctoMon",
     "maintainer": "christopherpthomas",
     "maintainerURL": "",
-    "description": "A modified version of Chris Thomas (christopherpthomas)'s Octopus Energy display monitor module for MagicMirror. This version has added functionality to include an extra column data to show exported energy calculations.",
+    "description": "Displays energy usage history for your Octopus Energy account.",
     "issues": [],
     "stars": 5,
     "license": "MIT"
@@ -8538,7 +8538,7 @@
     "id": "TouaregWarrior/MMM-OctoMonV2",
     "maintainer": "TouaregWarrior",
     "maintainerURL": "",
-    "description": "Displays energy usage history for your Octopus Energy account.",
+    "description": "A modified version of Chris Thomas (christopherpthomas)'s Octopus Energy module. This version has added functionality to include an extra column data to show exported energy calculations.",
     "issues": [],
     "stars": 0,
     "license": "MIT"
@@ -12117,18 +12117,6 @@
     "license": "MIT"
   },
   {
-    "name": "MMM-TelegramBot",
-    "category": "Utility / IOT / 3rd Party / Integration",
-    "url": "https://github.com/MMRIZE/MMM-TelegramBot",
-    "id": "MMRIZE/MMM-TelegramBot",
-    "maintainer": "MMRIZE",
-    "maintainerURL": "",
-    "description": "Interact with your mirror via Telegram. Revamped 2024.",
-    "issues": [],
-    "stars": 26,
-    "license": "MIT"
-  },
-  {
     "name": "EXT-TelegramBot",
     "category": "Extended plugins for MMM-GoogleAssistant",
     "url": "https://github.com/bugsounet/EXT-TelegramBot",
@@ -12138,6 +12126,18 @@
     "description": "You can remote-control plugins within Telegram.",
     "issues": [],
     "stars": 2,
+    "license": "MIT"
+  },
+  {
+    "name": "MMM-TelegramBot",
+    "category": "Utility / IOT / 3rd Party / Integration",
+    "url": "https://github.com/MMRIZE/MMM-TelegramBot",
+    "id": "MMRIZE/MMM-TelegramBot",
+    "maintainer": "MMRIZE",
+    "maintainerURL": "",
+    "description": "Interact with your mirror via Telegram. Revamped 2024.",
+    "issues": [],
+    "stars": 26,
     "license": "MIT"
   },
   {
@@ -12764,7 +12764,7 @@
     "maintainerURL": "",
     "description": "Displays tweets a few at a time from a user's home timeline or list.",
     "issues": [],
-    "stars": 13,
+    "stars": 14,
     "license": "MIT"
   },
   {
@@ -12800,7 +12800,7 @@
     "maintainerURL": "",
     "description": "Displays the Twitter Trending Topics for a given place or city, as well as showing the tweet volume for each topic.",
     "issues": [],
-    "stars": 11,
+    "stars": 12,
     "license": "MIT"
   },
   {

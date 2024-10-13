@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "2024-10-13T03:30:06.112Z",
+  "lastUpdate": "2024-10-13T15:30:05.790Z",
   "modules": [
     {
       "name": "MMM-01ZM",
@@ -7207,7 +7207,7 @@
       "id": "christopherpthomas/MMM-OctoMon",
       "maintainer": "christopherpthomas",
       "maintainerURL": "",
-      "description": "A modified version of Chris Thomas (christopherpthomas)'s Octopus Energy display monitor module for MagicMirror. This version has added functionality to include an extra column data to show exported energy calculations.",
+      "description": "Displays energy usage history for your Octopus Energy account.",
       "issues": []
     },
     {
@@ -7217,7 +7217,7 @@
       "id": "TouaregWarrior/MMM-OctoMonV2",
       "maintainer": "TouaregWarrior",
       "maintainerURL": "",
-      "description": "Displays energy usage history for your Octopus Energy account.",
+      "description": "A modified version of Chris Thomas (christopherpthomas)'s Octopus Energy module. This version has added functionality to include an extra column data to show exported energy calculations.",
       "issues": []
     },
     {

@@ -11971,7 +11971,7 @@
     "id": "christopherpthomas/MMM-OctoMon",
     "maintainer": "christopherpthomas",
     "maintainerURL": "",
-    "description": "A modified version of Chris Thomas (christopherpthomas)'s Octopus Energy display monitor module for MagicMirror. This version has added functionality to include an extra column data to show exported energy calculations.",
+    "description": "Displays energy usage history for your Octopus Energy account.",
     "issues": true,
     "stars": 5,
     "license": "MIT",
@@ -11986,7 +11986,7 @@
     "id": "TouaregWarrior/MMM-OctoMonV2",
     "maintainer": "TouaregWarrior",
     "maintainerURL": "",
-    "description": "Displays energy usage history for your Octopus Energy account.",
+    "description": "A modified version of Chris Thomas (christopherpthomas)'s Octopus Energy module. This version has added functionality to include an extra column data to show exported energy calculations.",
     "issues": true,
     "stars": 0,
     "license": "MIT",
@@ -14873,8 +14873,8 @@
     "stars": 0,
     "license": "MIT",
     "image": "MMM-ROVA-trashcalendar.jpg",
-    "defaultSortWeight": 8,
-    "lastCommit": "2021-07-04T07:23:14+02:00"
+    "defaultSortWeight": 6,
+    "lastCommit": "2024-10-13T10:18:48+02:00"
   },
   {
     "name": "MMM-RPI-LED",
@@ -17010,24 +17010,6 @@
     "lastCommit": "2017-04-13T01:45:58+02:00"
   },
   {
-    "name": "MMM-TelegramBot",
-    "category": "Utility / IOT / 3rd Party / Integration",
-    "url": "https://github.com/MMRIZE/MMM-TelegramBot",
-    "id": "MMRIZE/MMM-TelegramBot",
-    "maintainer": "MMRIZE",
-    "maintainerURL": "",
-    "description": "Interact with your mirror via Telegram. Revamped 2024.",
-    "issues": true,
-    "stars": 26,
-    "license": "MIT",
-    "tags": [
-      "telegram"
-    ],
-    "image": "sc_fullsize.jpg",
-    "defaultSortWeight": 5,
-    "lastCommit": "2024-06-18T20:34:01+02:00"
-  },
-  {
     "name": "EXT-TelegramBot",
     "category": "Extended plugins for MMM-GoogleAssistant",
     "url": "https://github.com/bugsounet/EXT-TelegramBot",
@@ -17045,6 +17027,24 @@
     "image": "screenshot-sc_fullsize.jpg",
     "defaultSortWeight": 5,
     "lastCommit": "2024-07-01T16:55:45+02:00"
+  },
+  {
+    "name": "MMM-TelegramBot",
+    "category": "Utility / IOT / 3rd Party / Integration",
+    "url": "https://github.com/MMRIZE/MMM-TelegramBot",
+    "id": "MMRIZE/MMM-TelegramBot",
+    "maintainer": "MMRIZE",
+    "maintainerURL": "",
+    "description": "Interact with your mirror via Telegram. Revamped 2024.",
+    "issues": true,
+    "stars": 26,
+    "license": "MIT",
+    "tags": [
+      "telegram"
+    ],
+    "image": "sc_fullsize.jpg",
+    "defaultSortWeight": 5,
+    "lastCommit": "2024-06-18T20:34:01+02:00"
   },
   {
     "name": "MMM-TelegramCommands",
@@ -17951,7 +17951,7 @@
     "maintainerURL": "",
     "description": "Displays tweets a few at a time from a user's home timeline or list.",
     "issues": true,
-    "stars": 13,
+    "stars": 14,
     "license": "MIT",
     "image": "images-example.jpg",
     "defaultSortWeight": 5,
@@ -17995,7 +17995,7 @@
     "maintainerURL": "",
     "description": "Displays the Twitter Trending Topics for a given place or city, as well as showing the tweet volume for each topic.",
     "issues": true,
-    "stars": 11,
+    "stars": 12,
     "license": "MIT",
     "image": "images-example.jpg",
     "defaultSortWeight": 5,
@@ -19100,7 +19100,7 @@
     ],
     "image": "screenshot.jpg",
     "defaultSortWeight": 1,
-    "lastCommit": "2024-10-09T11:41:00+02:00"
+    "lastCommit": "2024-10-13T11:07:56+02:00"
   },
   {
     "name": "MMM-WebView",

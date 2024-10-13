@@ -11837,7 +11837,7 @@
     "id": "christopherpthomas/MMM-OctoMon",
     "maintainer": "christopherpthomas",
     "maintainerURL": "",
-    "description": "A modified version of Chris Thomas (christopherpthomas)'s Octopus Energy display monitor module for MagicMirror. This version has added functionality to include an extra column data to show exported energy calculations.",
+    "description": "Displays energy usage history for your Octopus Energy account.",
     "issues": [
       "There is no `package.json`. We need this file to gather information about the module for the module list page."
     ],
@@ -11852,7 +11852,7 @@
     "id": "TouaregWarrior/MMM-OctoMonV2",
     "maintainer": "TouaregWarrior",
     "maintainerURL": "",
-    "description": "Displays energy usage history for your Octopus Energy account.",
+    "description": "A modified version of Chris Thomas (christopherpthomas)'s Octopus Energy module. This version has added functionality to include an extra column data to show exported energy calculations.",
     "issues": [
       "There is no `package.json`. We need this file to gather information about the module for the module list page."
     ],
@@ -16787,22 +16787,6 @@
     ]
   },
   {
-    "name": "MMM-TelegramBot",
-    "category": "Utility / IOT / 3rd Party / Integration",
-    "url": "https://github.com/MMRIZE/MMM-TelegramBot",
-    "id": "MMRIZE/MMM-TelegramBot",
-    "maintainer": "MMRIZE",
-    "maintainerURL": "",
-    "description": "Interact with your mirror via Telegram. Revamped 2024.",
-    "issues": [],
-    "stars": 26,
-    "license": "MIT",
-    "tags": [
-      "telegram"
-    ],
-    "image": "sc_fullsize.jpg"
-  },
-  {
     "name": "EXT-TelegramBot",
     "category": "Extended plugins for MMM-GoogleAssistant",
     "url": "https://github.com/bugsounet/EXT-TelegramBot",
@@ -16818,6 +16802,22 @@
       "telegram"
     ],
     "image": "screenshot-sc_fullsize.jpg"
+  },
+  {
+    "name": "MMM-TelegramBot",
+    "category": "Utility / IOT / 3rd Party / Integration",
+    "url": "https://github.com/MMRIZE/MMM-TelegramBot",
+    "id": "MMRIZE/MMM-TelegramBot",
+    "maintainer": "MMRIZE",
+    "maintainerURL": "",
+    "description": "Interact with your mirror via Telegram. Revamped 2024.",
+    "issues": [],
+    "stars": 26,
+    "license": "MIT",
+    "tags": [
+      "telegram"
+    ],
+    "image": "sc_fullsize.jpg"
   },
   {
     "name": "MMM-TelegramCommands",
@@ -17709,7 +17709,7 @@
     "issues": [
       "There is no `package.json`. We need this file to gather information about the module for the module list page."
     ],
-    "stars": 13,
+    "stars": 14,
     "license": "MIT",
     "image": "images-example.jpg"
   },
@@ -17755,7 +17755,7 @@
     "issues": [
       "There is no `package.json`. We need this file to gather information about the module for the module list page."
     ],
-    "stars": 11,
+    "stars": 12,
     "license": "MIT",
     "image": "images-example.jpg"
   },

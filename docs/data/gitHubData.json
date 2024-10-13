@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "2024-10-13T03:30:20.360Z",
+  "lastUpdate": "2024-10-13T15:30:19.321Z",
   "repositories": [
     {
       "id": "0lek/MMM-socialbicycles",
@@ -171,10 +171,10 @@
     },
     {
       "id": "AdamMoses-GitHub/MMM-TweetsByTimelineOrList",
-      "gitHubDataLastUpdate": "2024-09-24T18:01:08.448Z",
+      "gitHubDataLastUpdate": "2024-10-13T15:30:13.888Z",
       "gitHubData": {
         "issues": 4,
-        "stars": 13,
+        "stars": 14,
         "license": "MIT",
         "archived": false,
         "disabled": false,
@@ -185,10 +185,10 @@
     },
     {
       "id": "AdamMoses-GitHub/MMM-TwitterTrendsByPlace",
-      "gitHubDataLastUpdate": "2024-09-24T18:01:10.291Z",
+      "gitHubDataLastUpdate": "2024-10-13T15:30:15.319Z",
       "gitHubData": {
         "issues": 1,
-        "stars": 11,
+        "stars": 12,
         "license": "MIT",
         "archived": false,
         "disabled": false,
@@ -675,7 +675,7 @@
     },
     {
       "id": "AndyHazz/MMM-UKLiveBusStopInfo",
-      "gitHubDataLastUpdate": "2024-09-24T18:01:12.339Z",
+      "gitHubDataLastUpdate": "2024-10-13T15:30:16.801Z",
       "gitHubData": {
         "issues": 0,
         "stars": 0,
@@ -969,7 +969,7 @@
     },
     {
       "id": "bacherd/MMM-UniFi-Voucher",
-      "gitHubDataLastUpdate": "2024-09-25T03:30:11.165Z",
+      "gitHubDataLastUpdate": "2024-10-13T15:30:18.868Z",
       "gitHubData": {
         "issues": 0,
         "stars": 2,
@@ -1067,7 +1067,7 @@
     },
     {
       "id": "balassy/MMM-Udvaronc",
-      "gitHubDataLastUpdate": "2024-09-24T18:01:11.608Z",
+      "gitHubDataLastUpdate": "2024-10-13T15:30:16.146Z",
       "gitHubData": {
         "issues": 0,
         "stars": 4,
@@ -1487,7 +1487,7 @@
     },
     {
       "id": "Blastitt/twitControl",
-      "gitHubDataLastUpdate": "2024-09-24T18:01:09.679Z",
+      "gitHubDataLastUpdate": "2024-10-13T15:30:14.833Z",
       "gitHubData": {
         "issues": 6,
         "stars": 9,
@@ -2145,9 +2145,9 @@
     },
     {
       "id": "bugsounet/EXT-YouTubeCast",
-      "gitHubDataLastUpdate": "2024-09-24T18:00:58.851Z",
+      "gitHubDataLastUpdate": "2024-10-13T15:30:07.044Z",
       "gitHubData": {
-        "issues": 1,
+        "issues": 0,
         "stars": 3,
         "license": "MIT",
         "archived": false,
@@ -2495,7 +2495,7 @@
     },
     {
       "id": "Captsi/MMM-UKTide",
-      "gitHubDataLastUpdate": "2024-09-25T03:30:10.739Z",
+      "gitHubDataLastUpdate": "2024-10-13T15:30:18.435Z",
       "gitHubData": {
         "issues": 0,
         "stars": 1,
@@ -2761,7 +2761,7 @@
     },
     {
       "id": "choffmann/MMM-YT-SubCount",
-      "gitHubDataLastUpdate": "2024-09-24T18:01:00.767Z",
+      "gitHubDataLastUpdate": "2024-10-13T15:30:08.415Z",
       "gitHubData": {
         "issues": 0,
         "stars": 2,
@@ -4735,7 +4735,7 @@
     },
     {
       "id": "fewieden/MMM-TTS",
-      "gitHubDataLastUpdate": "2024-09-24T18:01:05.580Z",
+      "gitHubDataLastUpdate": "2024-10-13T15:30:11.792Z",
       "gitHubData": {
         "issues": 1,
         "stars": 19,
@@ -4931,7 +4931,7 @@
     },
     {
       "id": "fmandal/MMM-YrThen",
-      "gitHubDataLastUpdate": "2024-09-24T18:01:00.050Z",
+      "gitHubDataLastUpdate": "2024-10-13T15:30:07.912Z",
       "gitHubData": {
         "issues": 0,
         "stars": 16,
@@ -7731,7 +7731,7 @@
     },
     {
       "id": "kyle-kelly/MMM-uber",
-      "gitHubDataLastUpdate": "2024-09-24T18:01:11.008Z",
+      "gitHubDataLastUpdate": "2024-10-13T15:30:15.743Z",
       "gitHubData": {
         "issues": 1,
         "stars": 17,
@@ -7871,7 +7871,7 @@
     },
     {
       "id": "Lavve/MMM-WeatherOutfit",
-      "gitHubDataLastUpdate": "2024-09-24T18:01:03.122Z",
+      "gitHubDataLastUpdate": "2024-10-13T15:30:10.123Z",
       "gitHubData": {
         "issues": 0,
         "stars": 1,
@@ -8109,7 +8109,7 @@
     },
     {
       "id": "maloakes/MMM-UKMOWeatherWarnings",
-      "gitHubDataLastUpdate": "2024-09-24T18:01:13.442Z",
+      "gitHubDataLastUpdate": "2024-10-13T15:30:17.548Z",
       "gitHubData": {
         "issues": 3,
         "stars": 2,
@@ -8118,7 +8118,7 @@
         "disabled": false,
         "defaultBranch": "master",
         "has_issues": true,
-        "lastCommit": null
+        "lastCommit": "2019-03-27T09:57:31Z"
       }
     },
     {
@@ -8431,7 +8431,7 @@
     },
     {
       "id": "mattdy/MMM-UKNationalRail",
-      "gitHubDataLastUpdate": "2024-09-25T03:30:10.273Z",
+      "gitHubDataLastUpdate": "2024-10-13T15:30:17.974Z",
       "gitHubData": {
         "issues": 1,
         "stars": 4,
@@ -10713,7 +10713,7 @@
     },
     {
       "id": "nigel-daniels/MMM-Tube-Status",
-      "gitHubDataLastUpdate": "2024-09-24T18:01:06.183Z",
+      "gitHubDataLastUpdate": "2024-10-13T15:30:12.193Z",
       "gitHubData": {
         "issues": 0,
         "stars": 3,
@@ -11399,7 +11399,7 @@
     },
     {
       "id": "parnic/MMM-Unsplash",
-      "gitHubDataLastUpdate": "2024-09-25T03:30:11.796Z",
+      "gitHubDataLastUpdate": "2024-10-13T15:30:19.283Z",
       "gitHubData": {
         "issues": 0,
         "stars": 8,
@@ -11637,7 +11637,7 @@
     },
     {
       "id": "PierreGode/MMM-ZAPTEC",
-      "gitHubDataLastUpdate": "2024-09-24T18:01:01.301Z",
+      "gitHubDataLastUpdate": "2024-10-13T15:30:08.866Z",
       "gitHubData": {
         "issues": 0,
         "stars": 2,
@@ -11646,7 +11646,7 @@
         "disabled": false,
         "defaultBranch": "main",
         "has_issues": true,
-        "lastCommit": "2024-02-05T01:27:30Z"
+        "lastCommit": "2024-10-02T19:17:15Z"
       }
     },
     {
@@ -12001,7 +12001,7 @@
     },
     {
       "id": "rafagale/MMM-TUZSAZaragoza",
-      "gitHubDataLastUpdate": "2024-09-24T18:01:07.322Z",
+      "gitHubDataLastUpdate": "2024-10-13T15:30:13.018Z",
       "gitHubData": {
         "issues": 0,
         "stars": 2,
@@ -12295,7 +12295,7 @@
     },
     {
       "id": "reidarw/MMM-TRV-WastePlan",
-      "gitHubDataLastUpdate": "2024-09-24T18:01:05.067Z",
+      "gitHubDataLastUpdate": "2024-10-13T15:30:11.394Z",
       "gitHubData": {
         "issues": 0,
         "stars": 7,
@@ -12505,7 +12505,7 @@
     },
     {
       "id": "robotfishe/MMM-Tronity",
-      "gitHubDataLastUpdate": "2024-09-24T18:01:04.350Z",
+      "gitHubDataLastUpdate": "2024-10-13T15:30:10.951Z",
       "gitHubData": {
         "issues": 3,
         "stars": 2,
@@ -12687,7 +12687,7 @@
     },
     {
       "id": "ryck/MMM-Year-Progress",
-      "gitHubDataLastUpdate": "2024-09-24T18:01:03.633Z",
+      "gitHubDataLastUpdate": "2024-10-13T15:30:10.511Z",
       "gitHubData": {
         "issues": 3,
         "stars": 9,
@@ -13345,7 +13345,7 @@
     },
     {
       "id": "shmulyeng/MMM-Zmanim",
-      "gitHubDataLastUpdate": "2024-09-24T18:01:01.996Z",
+      "gitHubDataLastUpdate": "2024-10-13T15:30:09.255Z",
       "gitHubData": {
         "issues": 0,
         "stars": 0,
@@ -13597,7 +13597,7 @@
     },
     {
       "id": "slametps/MMM-TuyaSL",
-      "gitHubDataLastUpdate": "2024-09-24T18:01:06.714Z",
+      "gitHubDataLastUpdate": "2024-10-13T15:30:12.608Z",
       "gitHubData": {
         "issues": 9,
         "stars": 3,
@@ -14423,9 +14423,9 @@
     },
     {
       "id": "thariq-shanavas/MMM-uv-index",
-      "gitHubDataLastUpdate": "2024-09-24T18:01:02.568Z",
+      "gitHubDataLastUpdate": "2024-10-13T15:30:09.712Z",
       "gitHubData": {
-        "issues": 0,
+        "issues": 1,
         "stars": 1,
         "license": "MIT",
         "archived": false,
@@ -15865,7 +15865,7 @@
     },
     {
       "id": "WilliamFitzjohn/MMM-TwitchAlert",
-      "gitHubDataLastUpdate": "2024-09-24T18:01:09.062Z",
+      "gitHubDataLastUpdate": "2024-10-13T15:30:14.404Z",
       "gitHubData": {
         "issues": 3,
         "stars": 2,
@@ -16089,7 +16089,7 @@
     },
     {
       "id": "XBCreepinJesus/MMM-TvheadendDVR",
-      "gitHubDataLastUpdate": "2024-09-24T18:01:07.939Z",
+      "gitHubDataLastUpdate": "2024-10-13T15:30:13.459Z",
       "gitHubData": {
         "issues": 0,
         "stars": 0,
@@ -16103,7 +16103,7 @@
     },
     {
       "id": "XBCreepinJesus/MMM-UKLiveTrainDepartures",
-      "gitHubDataLastUpdate": "2024-09-24T18:01:12.951Z",
+      "gitHubDataLastUpdate": "2024-10-13T15:30:17.170Z",
       "gitHubData": {
         "issues": 1,
         "stars": 1,
@@ -16243,7 +16243,7 @@
     },
     {
       "id": "Yr/MMM-YrNow",
-      "gitHubDataLastUpdate": "2024-09-24T18:00:59.418Z",
+      "gitHubDataLastUpdate": "2024-10-13T15:30:07.462Z",
       "gitHubData": {
         "issues": 8,
         "stars": 23,
