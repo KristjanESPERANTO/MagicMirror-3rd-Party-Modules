@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "2024-10-12T15:30:21.358Z",
+  "lastUpdate": "2024-10-13T03:30:20.360Z",
   "repositories": [
     {
       "id": "0lek/MMM-socialbicycles",
@@ -1249,7 +1249,7 @@
     },
     {
       "id": "benjaminflessner/MMM-Trello",
-      "gitHubDataLastUpdate": "2024-09-24T15:30:14.675Z",
+      "gitHubDataLastUpdate": "2024-10-13T03:30:10.814Z",
       "gitHubData": {
         "issues": 0,
         "stars": 2,
@@ -1991,9 +1991,9 @@
     },
     {
       "id": "bugsounet/EXT-SmartHome",
-      "gitHubDataLastUpdate": "2024-09-24T15:30:11.172Z",
+      "gitHubDataLastUpdate": "2024-10-13T03:30:07.561Z",
       "gitHubData": {
-        "issues": 1,
+        "issues": 0,
         "stars": 1,
         "license": "MIT",
         "archived": false,
@@ -2075,9 +2075,9 @@
     },
     {
       "id": "bugsounet/EXT-VLCServer",
-      "gitHubDataLastUpdate": "2024-09-24T15:30:15.681Z",
+      "gitHubDataLastUpdate": "2024-10-13T03:30:11.692Z",
       "gitHubData": {
-        "issues": 3,
+        "issues": 0,
         "stars": 0,
         "license": "MIT",
         "archived": false,
@@ -2103,9 +2103,9 @@
     },
     {
       "id": "bugsounet/EXT-Website",
-      "gitHubDataLastUpdate": "2024-09-24T15:30:16.720Z",
+      "gitHubDataLastUpdate": "2024-10-13T03:30:12.519Z",
       "gitHubData": {
-        "issues": 2,
+        "issues": 1,
         "stars": 0,
         "license": "MIT",
         "archived": false,
@@ -2131,9 +2131,9 @@
     },
     {
       "id": "bugsounet/EXT-YouTube",
-      "gitHubDataLastUpdate": "2024-09-24T15:30:21.913Z",
+      "gitHubDataLastUpdate": "2024-10-13T03:30:17.440Z",
       "gitHubData": {
-        "issues": 1,
+        "issues": 0,
         "stars": 3,
         "license": "MIT",
         "archived": false,
@@ -2453,7 +2453,7 @@
     },
     {
       "id": "C4TFLY/MMM-YouTube-API",
-      "gitHubDataLastUpdate": "2024-09-24T15:30:22.679Z",
+      "gitHubDataLastUpdate": "2024-10-13T03:30:18.161Z",
       "gitHubData": {
         "issues": 5,
         "stars": 22,
@@ -3181,7 +3181,7 @@
     },
     {
       "id": "cybex-dev/MMM-XDG-OPEN",
-      "gitHubDataLastUpdate": "2024-09-24T15:30:17.681Z",
+      "gitHubDataLastUpdate": "2024-10-13T03:30:13.461Z",
       "gitHubData": {
         "issues": 0,
         "stars": 0,
@@ -3727,16 +3727,16 @@
     },
     {
       "id": "dientuki/MMM-SystemInfo",
-      "gitHubDataLastUpdate": "2024-09-24T15:30:13.462Z",
+      "gitHubDataLastUpdate": "2024-10-13T03:30:09.905Z",
       "gitHubData": {
-        "issues": 1,
+        "issues": 2,
         "stars": 4,
         "license": "MIT",
         "archived": false,
         "disabled": false,
         "defaultBranch": "master",
         "has_issues": true,
-        "lastCommit": "2024-05-03T22:54:54Z"
+        "lastCommit": "2024-10-07T17:34:10Z"
       }
     },
     {
@@ -3755,7 +3755,7 @@
     },
     {
       "id": "DimmanT/MMM-yandex-route",
-      "gitHubDataLastUpdate": "2024-09-24T15:30:19.041Z",
+      "gitHubDataLastUpdate": "2024-10-13T03:30:14.808Z",
       "gitHubData": {
         "issues": 1,
         "stars": 1,
@@ -4161,7 +4161,7 @@
     },
     {
       "id": "eckonator/MMM-YouLess2",
-      "gitHubDataLastUpdate": "2024-09-24T15:30:21.449Z",
+      "gitHubDataLastUpdate": "2024-10-13T03:30:17.024Z",
       "gitHubData": {
         "issues": 0,
         "stars": 3,
@@ -4170,7 +4170,7 @@
         "disabled": false,
         "defaultBranch": "master",
         "has_issues": true,
-        "lastCommit": "2018-12-20T19:03:51Z"
+        "lastCommit": "2024-09-27T16:37:04Z"
       }
     },
     {
@@ -5197,7 +5197,7 @@
     },
     {
       "id": "git-pesche/MMM-SwissSmartUrbanHeatMap",
-      "gitHubDataLastUpdate": "2024-09-24T15:30:13.077Z",
+      "gitHubDataLastUpdate": "2024-10-13T03:30:09.491Z",
       "gitHubData": {
         "issues": 0,
         "stars": 1,
@@ -5365,7 +5365,7 @@
     },
     {
       "id": "gravitykillseverything/MMM-Sonarr",
-      "gitHubDataLastUpdate": "2024-09-24T15:30:11.743Z",
+      "gitHubDataLastUpdate": "2024-10-13T03:30:08.066Z",
       "gitHubData": {
         "issues": 1,
         "stars": 0,
@@ -6457,7 +6457,7 @@
     },
     {
       "id": "jdonge/MMM-yijv",
-      "gitHubDataLastUpdate": "2024-09-24T15:30:20.040Z",
+      "gitHubDataLastUpdate": "2024-10-13T03:30:15.746Z",
       "gitHubData": {
         "issues": 2,
         "stars": 3,
@@ -7129,7 +7129,7 @@
     },
     {
       "id": "jupadin/MMM-XKCD",
-      "gitHubDataLastUpdate": "2024-09-24T15:30:18.563Z",
+      "gitHubDataLastUpdate": "2024-10-13T03:30:14.392Z",
       "gitHubData": {
         "issues": 1,
         "stars": 5,
@@ -7885,7 +7885,7 @@
     },
     {
       "id": "lbartk/MMM-SwissAlpLakes",
-      "gitHubDataLastUpdate": "2024-09-24T15:30:12.656Z",
+      "gitHubDataLastUpdate": "2024-10-13T03:30:09.040Z",
       "gitHubData": {
         "issues": 0,
         "stars": 0,
@@ -7955,7 +7955,7 @@
     },
     {
       "id": "LeonardSEO/MMM-VoiceCompanion",
-      "gitHubDataLastUpdate": "2024-09-24T15:30:16.113Z",
+      "gitHubDataLastUpdate": "2024-10-13T03:30:12.081Z",
       "gitHubData": {
         "issues": 2,
         "stars": 3,
@@ -8151,7 +8151,7 @@
     },
     {
       "id": "MarcLandis/MMM-Buttons",
-      "gitHubDataLastUpdate": "2024-09-24T18:00:58.106Z",
+      "gitHubDataLastUpdate": "2024-10-13T03:30:20.327Z",
       "gitHubData": {
         "issues": 0,
         "stars": 4,
@@ -8160,26 +8160,26 @@
         "disabled": false,
         "defaultBranch": "main",
         "has_issues": true,
-        "lastCommit": "2024-09-24T07:19:31Z"
+        "lastCommit": "2024-10-07T18:29:43Z"
       }
     },
     {
       "id": "MarcLandis/MMM-FlipClock",
-      "gitHubDataLastUpdate": "2024-09-24T18:00:56.365Z",
+      "gitHubDataLastUpdate": "2024-10-13T03:30:18.967Z",
       "gitHubData": {
         "issues": 1,
-        "stars": 18,
+        "stars": 19,
         "license": "MIT",
         "archived": false,
         "disabled": false,
         "defaultBranch": "master",
         "has_issues": true,
-        "lastCommit": "2024-09-24T07:20:23Z"
+        "lastCommit": "2024-10-11T09:50:19Z"
       }
     },
     {
       "id": "MarcLandis/MMM-FSAPI",
-      "gitHubDataLastUpdate": "2024-09-24T18:00:56.984Z",
+      "gitHubDataLastUpdate": "2024-10-13T03:30:19.419Z",
       "gitHubData": {
         "issues": 0,
         "stars": 0,
@@ -8188,21 +8188,21 @@
         "disabled": false,
         "defaultBranch": "main",
         "has_issues": true,
-        "lastCommit": "2024-09-24T07:18:14Z"
+        "lastCommit": "2024-10-11T09:49:32Z"
       }
     },
     {
       "id": "MarcLandis/MMM-OpenWeatherMapForecast",
-      "gitHubDataLastUpdate": "2024-09-24T18:00:57.493Z",
+      "gitHubDataLastUpdate": "2024-10-13T03:30:19.864Z",
       "gitHubData": {
-        "issues": 1,
+        "issues": 3,
         "stars": 30,
-        "license": null,
+        "license": "MIT",
         "archived": false,
         "disabled": false,
         "defaultBranch": "master",
         "has_issues": true,
-        "lastCommit": "2024-09-24T07:36:45Z"
+        "lastCommit": "2024-10-11T09:50:40Z"
       }
     },
     {
@@ -8949,7 +8949,7 @@
     },
     {
       "id": "mirko3000/MMM-xiaomi",
-      "gitHubDataLastUpdate": "2024-09-24T15:30:18.084Z",
+      "gitHubDataLastUpdate": "2024-10-13T03:30:13.929Z",
       "gitHubData": {
         "issues": 9,
         "stars": 26,
@@ -9397,7 +9397,7 @@
     },
     {
       "id": "MMRIZE/MMM-TelegramBot",
-      "gitHubDataLastUpdate": "2024-09-24T15:30:14.086Z",
+      "gitHubDataLastUpdate": "2024-10-13T03:30:10.313Z",
       "gitHubData": {
         "issues": 4,
         "stars": 26,
@@ -9845,7 +9845,7 @@
     },
     {
       "id": "mumblebaj/MMM-WOTD",
-      "gitHubDataLastUpdate": "2024-09-24T15:30:17.173Z",
+      "gitHubDataLastUpdate": "2024-10-13T03:30:13.016Z",
       "gitHubData": {
         "issues": 0,
         "stars": 4,
@@ -10587,7 +10587,7 @@
     },
     {
       "id": "ngnijland/MMM-YouTube-Live-Stream",
-      "gitHubDataLastUpdate": "2024-09-24T15:30:23.231Z",
+      "gitHubDataLastUpdate": "2024-10-13T03:30:18.604Z",
       "gitHubData": {
         "issues": 3,
         "stars": 1,
@@ -11959,7 +11959,7 @@
     },
     {
       "id": "QNimbus/MMM-YouLess",
-      "gitHubDataLastUpdate": "2024-09-24T15:30:21.013Z",
+      "gitHubDataLastUpdate": "2024-10-13T03:30:16.590Z",
       "gitHubData": {
         "issues": 1,
         "stars": 2,
@@ -13611,7 +13611,7 @@
     },
     {
       "id": "slametps/MMM-Yeelight",
-      "gitHubDataLastUpdate": "2024-09-24T15:30:19.531Z",
+      "gitHubDataLastUpdate": "2024-10-13T03:30:15.240Z",
       "gitHubData": {
         "issues": 2,
         "stars": 4,
@@ -14521,7 +14521,7 @@
     },
     {
       "id": "thesoftwarejedi/MMM-YNAB",
-      "gitHubDataLastUpdate": "2024-09-24T15:30:20.527Z",
+      "gitHubDataLastUpdate": "2024-10-13T03:30:16.171Z",
       "gitHubData": {
         "issues": 2,
         "stars": 5,
@@ -15263,9 +15263,9 @@
     },
     {
       "id": "tylerstambaugh/MMM-Strava-Last-Activity-Map",
-      "gitHubDataLastUpdate": "2024-09-24T15:30:12.205Z",
+      "gitHubDataLastUpdate": "2024-10-13T03:30:08.560Z",
       "gitHubData": {
-        "issues": 0,
+        "issues": 1,
         "stars": 1,
         "license": "MIT",
         "archived": false,
@@ -16047,7 +16047,7 @@
     },
     {
       "id": "xadamxk/MMM-VALORANTESPORTS-SCHEDULES",
-      "gitHubDataLastUpdate": "2024-09-24T15:30:15.206Z",
+      "gitHubDataLastUpdate": "2024-10-13T03:30:11.239Z",
       "gitHubData": {
         "issues": 0,
         "stars": 0,

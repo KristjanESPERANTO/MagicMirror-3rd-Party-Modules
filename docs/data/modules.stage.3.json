@@ -4911,7 +4911,7 @@
     "maintainerURL": "",
     "description": "A classic flip clock that is powered by the awesome <a target=\"_blank\" href=\"https://pqina.nl/flip\">flip plugin</a>.",
     "issues": [],
-    "stars": 18,
+    "stars": 19,
     "license": "MIT",
     "tags": [
       "date",
@@ -12304,12 +12304,12 @@
     "description": "A weather module that displays current, hourly and daily forecast information using data from the OpenWeatherMap One Call API.",
     "issues": [],
     "stars": 30,
+    "license": "MIT",
     "tags": [
       "weather",
       "openweathermap",
       "forecast"
     ],
-    "license": "MIT",
     "image": "screenshots-MMM-OpenWeatherMapForecast.jpg"
   },
   {
