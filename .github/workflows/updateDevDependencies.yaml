@@ -1,0 +1,36 @@
+name: Update dev dependencies
+
+on:
+  schedule:
+    - cron: "0 18 * * *"
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Update dev dependencies
+        run: npx npm-check-updates -u '/devDependencies/'
+
+      - name: Install dev dependencies
+        run: npm install --only=dev
+
+      - name: Run tests
+        run: npm test
+
+      - name: Commit changes
+        run: |
+          git config --global user.name "Kristjan ESPERANTO"
+          git config --global user.email '35647502+KristjanESPERANTO@users.noreply.github.com'
+          git add -A
+          git commit -m "Automated dependency update"
+          git push
