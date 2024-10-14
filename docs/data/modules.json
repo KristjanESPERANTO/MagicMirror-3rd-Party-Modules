@@ -2014,7 +2014,7 @@
     "maintainer": "KristjanESPERANTO",
     "maintainerURL": "",
     "description": "Show meals from canteens (Germany and Switzerland).",
-    "issues": true,
+    "issues": false,
     "stars": 5,
     "license": "MIT",
     "tags": [
@@ -2023,7 +2023,7 @@
     ],
     "image": "img-example1.jpg",
     "defaultSortWeight": 1,
-    "lastCommit": "2024-03-22T22:36:10+01:00"
+    "lastCommit": "2024-10-13T20:31:36+02:00"
   },
   {
     "name": "MMM-Canvas",
@@ -3481,7 +3481,8 @@
     "tags": [
       "discord"
     ],
-    "defaultSortWeight": 9,
+    "image": "readme_assets-preview.jpg",
+    "defaultSortWeight": 8,
     "lastCommit": "2022-01-31T11:10:29+02:00"
   },
   {
@@ -3846,7 +3847,7 @@
     "maintainer": "KristjanESPERANTO",
     "maintainerURL": "",
     "description": "The easiest way to show pictures on your mirror.",
-    "issues": true,
+    "issues": false,
     "stars": 7,
     "license": "MIT",
     "tags": [
@@ -3856,7 +3857,7 @@
     ],
     "image": "pix-earth.jpg",
     "defaultSortWeight": 1,
-    "lastCommit": "2024-03-16T15:21:39+01:00"
+    "lastCommit": "2024-10-13T20:23:20+02:00"
   },
   {
     "name": "MMM-Ecobee",
@@ -5310,7 +5311,7 @@
       "music"
     ],
     "image": "example_dab.jpg",
-    "defaultSortWeight": 2,
+    "defaultSortWeight": 3,
     "lastCommit": "2024-10-11T11:49:32+02:00"
   },
   {
@@ -6542,7 +6543,7 @@
     "stars": 0,
     "license": "GPL-3.0",
     "defaultSortWeight": 5,
-    "lastCommit": "2024-10-12T12:49:47+01:00"
+    "lastCommit": "2024-10-13T20:00:37+01:00"
   },
   {
     "name": "MMM-HolidayLights",
@@ -7553,7 +7554,7 @@
     ],
     "image": "images-i1.jpg",
     "defaultSortWeight": 1,
-    "lastCommit": "2024-10-12T13:47:58+02:00"
+    "lastCommit": "2024-10-13T20:06:56+02:00"
   },
   {
     "name": "MMM-ISS-Map",
@@ -10044,7 +10045,7 @@
     "stars": 0,
     "license": "CC0-1.0",
     "defaultSortWeight": 5,
-    "lastCommit": "2024-10-11T16:53:08+01:00"
+    "lastCommit": "2024-10-13T19:59:39+01:00"
   },
   {
     "name": "MMM-Motion-Camera",
@@ -12139,7 +12140,7 @@
     "maintainer": "KristjanESPERANTO",
     "maintainerURL": "",
     "description": "Display current and forecast weather based on the Openweathermap OneCall API data with alternative formatting.",
-    "issues": true,
+    "issues": false,
     "stars": 3,
     "license": "MIT",
     "tags": [
@@ -12148,7 +12149,7 @@
     ],
     "image": "OneCallWeather-Screenshot.jpg",
     "defaultSortWeight": 1,
-    "lastCommit": "2024-04-19T23:00:23+02:00"
+    "lastCommit": "2024-10-13T20:49:37+02:00"
   },
   {
     "name": "MMM-OneDrive",
@@ -13887,7 +13888,7 @@
     "maintainer": "KristjanESPERANTO",
     "maintainerURL": "",
     "description": "Displays departure information for public transportation in Germany and some other European countries. The <a target=\"_blank\" href=\"https://github.com/public-transport/hafas-client\">hafas-client</a> is used to query the information. The interface of the Deutsche Bahn is used as standard, this includes most of the local networks with buses, trams, etc. However, <a target=\"_blank\" href=\"https://github.com/public-transport/hafas-client/blob/main/p/readme.md\">other hafas interfaces</a> can also be used.",
-    "issues": true,
+    "issues": false,
     "stars": 17,
     "license": "MIT",
     "tags": [
@@ -13896,7 +13897,7 @@
     ],
     "image": "img-Goerdelerring_all.jpg",
     "defaultSortWeight": 1,
-    "lastCommit": "2024-10-09T12:09:04+02:00"
+    "lastCommit": "2024-10-13T21:11:36+02:00"
   },
   {
     "name": "MMM-PublicTransportVVO",
@@ -15514,7 +15515,8 @@
     "issues": true,
     "stars": 4,
     "license": "Unlicense",
-    "defaultSortWeight": 10,
+    "image": "pic-MMM-Shelly-PM.jpg",
+    "defaultSortWeight": 9,
     "lastCommit": "2022-10-10T15:43:28+02:00"
   },
   {
@@ -18189,7 +18191,7 @@
     "maintainerURL": "",
     "description": "Display monitor data (online/offline detection) from selfhosted <a target=\"_blank\" href=\"https://github.com/louislam/uptime-kuma\">https://github.com/louislam/uptime-kuma</a>.",
     "issues": true,
-    "stars": 0,
+    "stars": 1,
     "license": "MIT",
     "tags": [
       "uptimekuma",
@@ -18407,7 +18409,7 @@
     "maintainerURL": "",
     "description": "Display a list of notifications that have been broadcast to all the modules.",
     "issues": true,
-    "stars": 6,
+    "stars": 7,
     "license": "MIT",
     "image": "images-sample.jpg",
     "defaultSortWeight": 6,
@@ -18865,7 +18867,7 @@
     "maintainerURL": "https://github.com/nigel-daniels",
     "description": "Simple clean display of the weather now, designed to go with MMM-3Day-Forecast. Now uses WetherAPI as Open Weather reduced the free service :( If you installed an older version ( &lt; 6 May 2024 ), please update and get a new api key!",
     "issues": true,
-    "stars": 6,
+    "stars": 7,
     "license": "MIT",
     "tags": [
       "weather",
@@ -19072,7 +19074,7 @@
     "maintainer": "KristjanESPERANTO",
     "maintainerURL": "",
     "description": "A Text-To-Speech module which uses the Web Speech API of the browser. It is in an early stage of development. So far only German is supported.",
-    "issues": true,
+    "issues": false,
     "stars": 3,
     "license": "MIT",
     "tags": [
@@ -19082,7 +19084,7 @@
     ],
     "image": ".github-TTS.jpg",
     "defaultSortWeight": 1,
-    "lastCommit": "2024-03-16T15:16:14+01:00"
+    "lastCommit": "2024-10-13T20:13:15+02:00"
   },
   {
     "name": "MMM-Webuntis",
@@ -19111,7 +19113,7 @@
     "maintainerURL": "https://github.com/Iketaki",
     "description": "Embed any web pages by using a webview instead of an iframe.",
     "issues": true,
-    "stars": 16,
+    "stars": 17,
     "license": "MIT",
     "tags": [
       "webview"

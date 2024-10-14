@@ -12942,7 +12942,7 @@
     "maintainerURL": "",
     "description": "Display monitor data (online/offline detection) from selfhosted <a target=\"_blank\" href=\"https://github.com/louislam/uptime-kuma\">https://github.com/louislam/uptime-kuma</a>.",
     "issues": [],
-    "stars": 0,
+    "stars": 1,
     "license": "MIT"
   },
   {
@@ -13084,7 +13084,7 @@
     "maintainerURL": "",
     "description": "Display a list of notifications that have been broadcast to all the modules.",
     "issues": [],
-    "stars": 6,
+    "stars": 7,
     "license": "MIT"
   },
   {
@@ -13410,7 +13410,7 @@
     "maintainerURL": "https://github.com/nigel-daniels",
     "description": "Simple clean display of the weather now, designed to go with MMM-3Day-Forecast. Now uses WetherAPI as Open Weather reduced the free service :( If you installed an older version ( &lt; 6 May 2024 ), please update and get a new api key!",
     "issues": [],
-    "stars": 6,
+    "stars": 7,
     "license": "MIT"
   },
   {
@@ -13588,7 +13588,7 @@
     "maintainerURL": "https://github.com/Iketaki",
     "description": "Embed any web pages by using a webview instead of an iframe.",
     "issues": [],
-    "stars": 16,
+    "stars": 17,
     "license": "MIT"
   },
   {

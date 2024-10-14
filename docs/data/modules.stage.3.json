@@ -3424,14 +3424,14 @@
     "issues": [
       "`package.json` issue: No repository field.",
       "`package.json` issue: license should be a valid SPDX license expression",
-      "Issue: The license in the package.json (CC Zero) doesn't match the license file (CC0-1.0).",
-      "No compatible or wrong license field in 'package.json' or LICENSE file. Without that, we can't use an image."
+      "Issue: The license in the package.json (CC Zero) doesn't match the license file (CC0-1.0)."
     ],
     "stars": 9,
     "license": "CC0-1.0",
     "tags": [
       "discord"
-    ]
+    ],
+    "image": "readme_assets-preview.jpg"
   },
   {
     "name": "MMM-Discourse-notifications",
@@ -9927,7 +9927,7 @@
     "description": "Tracks the number of mortgage payments left.",
     "issues": [
       "There is no `package.json`. We need this file to gather information about the module for the module list page.",
-      "No compatible or wrong license field in 'package.json' or LICENSE file. Without that, we can't use an image."
+      "No image found."
     ],
     "stars": 0,
     "license": "CC0-1.0"
@@ -14173,7 +14173,7 @@
     "description": "Load a playlist into a YouTube player, AND shuffle the videos in the playlist.",
     "issues": [
       "There is no `package.json`. We need this file to gather information about the module for the module list page.",
-      "No compatible or wrong license field in 'package.json' or LICENSE file. Without that, we can't use an image."
+      "No image found."
     ],
     "stars": 16,
     "license": "Unlicense"
@@ -15310,7 +15310,7 @@
     "description": "Display data from 1 Shelly HT sensor.",
     "issues": [
       "There is no `package.json`. We need this file to gather information about the module for the module list page.",
-      "No compatible or wrong license field in 'package.json' or LICENSE file. Without that, we can't use an image."
+      "No image found."
     ],
     "stars": 1,
     "license": "Unlicense"
@@ -15326,11 +15326,11 @@
     "issues": [
       "`package.json` issue: license should be a valid SPDX license expression",
       "There are no keywords in 'package.json'. We would use them as tags on the module list page.",
-      "Issue: The license in the package.json (UNLICENSE) doesn't match the license file (Unlicense).",
-      "No compatible or wrong license field in 'package.json' or LICENSE file. Without that, we can't use an image."
+      "Issue: The license in the package.json (UNLICENSE) doesn't match the license file (Unlicense)."
     ],
     "stars": 4,
-    "license": "Unlicense"
+    "license": "Unlicense",
+    "image": "pic-MMM-Shelly-PM.jpg"
   },
   {
     "name": "MMM-ShellyEMMeter",
@@ -17941,7 +17941,7 @@
     "maintainerURL": "",
     "description": "Display monitor data (online/offline detection) from selfhosted <a target=\"_blank\" href=\"https://github.com/louislam/uptime-kuma\">https://github.com/louislam/uptime-kuma</a>.",
     "issues": [],
-    "stars": 0,
+    "stars": 1,
     "license": "MIT",
     "tags": [
       "uptimekuma",
@@ -18158,7 +18158,7 @@
     "issues": [
       "There is no `package.json`. We need this file to gather information about the module for the module list page."
     ],
-    "stars": 6,
+    "stars": 7,
     "license": "MIT",
     "image": "images-sample.jpg"
   },
@@ -18612,7 +18612,7 @@
     "maintainerURL": "https://github.com/nigel-daniels",
     "description": "Simple clean display of the weather now, designed to go with MMM-3Day-Forecast. Now uses WetherAPI as Open Weather reduced the free service :( If you installed an older version ( &lt; 6 May 2024 ), please update and get a new api key!",
     "issues": [],
-    "stars": 6,
+    "stars": 7,
     "license": "MIT",
     "tags": [
       "weather",
@@ -18854,7 +18854,7 @@
     "issues": [
       "No image found."
     ],
-    "stars": 16,
+    "stars": 17,
     "license": "MIT",
     "tags": [
       "webview"
