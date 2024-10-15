@@ -1,6 +1,6 @@
 name: Update dev dependencies
 
-permissions: write
+permissions: write-all
 
 on:
   schedule:
