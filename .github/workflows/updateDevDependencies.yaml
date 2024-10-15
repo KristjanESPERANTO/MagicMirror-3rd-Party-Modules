@@ -32,5 +32,5 @@ jobs:
           git config --global user.name "Kristjan ESPERANTO"
           git config --global user.email '35647502+KristjanESPERANTO@users.noreply.github.com'
           git add -A
-          git commit -m "Automated dependency update"
+          git diff-index --quiet HEAD || git commit -m "Automated dependency update"
           git push
