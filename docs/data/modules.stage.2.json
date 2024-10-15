@@ -8319,7 +8319,7 @@
     "id": "Travelbacon/MMM-NLDepartureTimes",
     "maintainer": "Travelbacon",
     "maintainerURL": "",
-    "description": "Shows departure times of Dutch public transport. Where you can sort on destination and group stops in one stop. Good for hubs where multiple lines and authorities merge, so yo have one stop instead of multiple.",
+    "description": "2024 - I have archived this module, because I have no public transport around me anymore. Shows departure times of Dutch public transport. Where you can sort on destination and group stops in one stop. Good for hubs where multiple lines and authorities merge, so yo have one stop instead of multiple.",
     "issues": [],
     "stars": 1,
     "license": "MIT"
@@ -12474,18 +12474,6 @@
     "stars": 12
   },
   {
-    "name": "EXT-Touch",
-    "category": "Extended plugins for MMM-GoogleAssistant",
-    "url": "https://github.com/bugsounet/EXT-Touch",
-    "id": "bugsounet/EXT-Touch",
-    "maintainer": "bugsounet",
-    "maintainerURL": "https://wiki.bugsounet.fr",
-    "description": "Activate MMM-GoogleAssistant with a Touch Screen by Touching the Google Icon.",
-    "issues": [],
-    "stars": 0,
-    "license": "MIT"
-  },
-  {
     "name": "MMM-Touch",
     "category": "Utility / IOT / 3rd Party / Integration",
     "url": "https://github.com/gfischershaw/MMM-Touch",
@@ -12495,6 +12483,18 @@
     "description": "Universal touch gesture commander using touchscreen.",
     "issues": [],
     "stars": 12,
+    "license": "MIT"
+  },
+  {
+    "name": "EXT-Touch",
+    "category": "Extended plugins for MMM-GoogleAssistant",
+    "url": "https://github.com/bugsounet/EXT-Touch",
+    "id": "bugsounet/EXT-Touch",
+    "maintainer": "bugsounet",
+    "maintainerURL": "https://wiki.bugsounet.fr",
+    "description": "Activate MMM-GoogleAssistant with a Touch Screen by Touching the Google Icon.",
+    "issues": [],
+    "stars": 0,
     "license": "MIT"
   },
   {
@@ -13672,7 +13672,7 @@
     "maintainerURL": "",
     "description": "Adds a personal ChatGPT (3.5) voice-controlled (through PicoVoice, Whisper, Mimic3) assistant.",
     "issues": [],
-    "stars": 31,
+    "stars": 32,
     "license": "MIT"
   },
   {

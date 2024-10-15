@@ -11551,7 +11551,7 @@
     "id": "Travelbacon/MMM-NLDepartureTimes",
     "maintainer": "Travelbacon",
     "maintainerURL": "",
-    "description": "Shows departure times of Dutch public transport. Where you can sort on destination and group stops in one stop. Good for hubs where multiple lines and authorities merge, so yo have one stop instead of multiple.",
+    "description": "2024 - I have archived this module, because I have no public transport around me anymore. Shows departure times of Dutch public transport. Where you can sort on destination and group stops in one stop. Good for hubs where multiple lines and authorities merge, so yo have one stop instead of multiple.",
     "issues": [],
     "stars": 1,
     "license": "MIT",
@@ -17299,6 +17299,21 @@
     "stars": 12
   },
   {
+    "name": "MMM-Touch",
+    "category": "Utility / IOT / 3rd Party / Integration",
+    "url": "https://github.com/gfischershaw/MMM-Touch",
+    "id": "gfischershaw/MMM-Touch",
+    "maintainer": "gfischershaw",
+    "maintainerURL": "",
+    "description": "Universal touch gesture commander using touchscreen.",
+    "issues": [
+      "There is no `package.json`. We need this file to gather information about the module for the module list page."
+    ],
+    "stars": 12,
+    "license": "MIT",
+    "image": "MMM-Touch.jpg"
+  },
+  {
     "name": "EXT-Touch",
     "category": "Extended plugins for MMM-GoogleAssistant",
     "url": "https://github.com/bugsounet/EXT-Touch",
@@ -17314,21 +17329,6 @@
       "touch"
     ],
     "image": "resources-google.jpg"
-  },
-  {
-    "name": "MMM-Touch",
-    "category": "Utility / IOT / 3rd Party / Integration",
-    "url": "https://github.com/gfischershaw/MMM-Touch",
-    "id": "gfischershaw/MMM-Touch",
-    "maintainer": "gfischershaw",
-    "maintainerURL": "",
-    "description": "Universal touch gesture commander using touchscreen.",
-    "issues": [
-      "There is no `package.json`. We need this file to gather information about the module for the module list page."
-    ],
-    "stars": 12,
-    "license": "MIT",
-    "image": "MMM-Touch.jpg"
   },
   {
     "name": "MMM-TouchButton",
@@ -18970,7 +18970,7 @@
       "There are no keywords in 'package.json'. We would use them as tags on the module list page.",
       "No image found."
     ],
-    "stars": 31,
+    "stars": 32,
     "license": "MIT"
   },
   {

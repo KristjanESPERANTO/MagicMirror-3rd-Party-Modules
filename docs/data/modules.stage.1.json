@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "2024-10-14T15:30:06.670Z",
+  "lastUpdate": "2024-10-15T03:30:06.265Z",
   "modules": [
     {
       "name": "MMM-01ZM",
@@ -7033,7 +7033,7 @@
       "id": "Travelbacon/MMM-NLDepartureTimes",
       "maintainer": "Travelbacon",
       "maintainerURL": "",
-      "description": "Shows departure times of Dutch public transport. Where you can sort on destination and group stops in one stop. Good for hubs where multiple lines and authorities merge, so yo have one stop instead of multiple.",
+      "description": "2024 - I have archived this module, because I have no public transport around me anymore. Shows departure times of Dutch public transport. Where you can sort on destination and group stops in one stop. Good for hubs where multiple lines and authorities merge, so yo have one stop instead of multiple.",
       "issues": []
     },
     {

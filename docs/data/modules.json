@@ -11679,7 +11679,7 @@
     "id": "Travelbacon/MMM-NLDepartureTimes",
     "maintainer": "Travelbacon",
     "maintainerURL": "",
-    "description": "Shows departure times of Dutch public transport. Where you can sort on destination and group stops in one stop. Good for hubs where multiple lines and authorities merge, so yo have one stop instead of multiple.",
+    "description": "2024 - I have archived this module, because I have no public transport around me anymore. Shows departure times of Dutch public transport. Where you can sort on destination and group stops in one stop. Good for hubs where multiple lines and authorities merge, so yo have one stop instead of multiple.",
     "issues": true,
     "stars": 1,
     "license": "MIT",
@@ -11688,7 +11688,7 @@
     ],
     "image": "screenshot.jpg",
     "defaultSortWeight": 4,
-    "lastCommit": "2024-07-21T20:33:26+02:00"
+    "lastCommit": "2024-10-14T22:37:02+02:00"
   },
   {
     "name": "MMM-NMBS-Connection",
@@ -13897,7 +13897,7 @@
     ],
     "image": "img-Goerdelerring_all.jpg",
     "defaultSortWeight": 1,
-    "lastCommit": "2024-10-13T21:11:36+02:00"
+    "lastCommit": "2024-10-14T20:33:50+02:00"
   },
   {
     "name": "MMM-PublicTransportVVO",
@@ -17536,6 +17536,21 @@
     "lastCommit": "2020-05-10T15:08:01+02:00"
   },
   {
+    "name": "MMM-Touch",
+    "category": "Utility / IOT / 3rd Party / Integration",
+    "url": "https://github.com/gfischershaw/MMM-Touch",
+    "id": "gfischershaw/MMM-Touch",
+    "maintainer": "gfischershaw",
+    "maintainerURL": "",
+    "description": "Universal touch gesture commander using touchscreen.",
+    "issues": true,
+    "stars": 12,
+    "license": "MIT",
+    "image": "MMM-Touch.jpg",
+    "defaultSortWeight": 3,
+    "lastCommit": "2020-10-24T00:16:43+02:00"
+  },
+  {
     "name": "EXT-Touch",
     "category": "Extended plugins for MMM-GoogleAssistant",
     "url": "https://github.com/bugsounet/EXT-Touch",
@@ -17553,21 +17568,6 @@
     "image": "resources-google.jpg",
     "defaultSortWeight": 5,
     "lastCommit": "2024-07-01T16:55:27+02:00"
-  },
-  {
-    "name": "MMM-Touch",
-    "category": "Utility / IOT / 3rd Party / Integration",
-    "url": "https://github.com/gfischershaw/MMM-Touch",
-    "id": "gfischershaw/MMM-Touch",
-    "maintainer": "gfischershaw",
-    "maintainerURL": "",
-    "description": "Universal touch gesture commander using touchscreen.",
-    "issues": true,
-    "stars": 12,
-    "license": "MIT",
-    "image": "MMM-Touch.jpg",
-    "defaultSortWeight": 3,
-    "lastCommit": "2020-10-24T00:16:43+02:00"
   },
   {
     "name": "MMM-TouchButton",
@@ -19230,7 +19230,7 @@
     "maintainerURL": "",
     "description": "Adds a personal ChatGPT (3.5) voice-controlled (through PicoVoice, Whisper, Mimic3) assistant.",
     "issues": true,
-    "stars": 31,
+    "stars": 32,
     "license": "MIT",
     "defaultSortWeight": 9,
     "lastCommit": "2023-05-30T10:58:54+02:00"

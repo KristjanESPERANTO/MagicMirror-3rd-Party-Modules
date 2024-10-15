@@ -1,6 +1,6 @@
 # Result of the module analysis
 
-Last update: 2024-10-14T17:37:50+02:00
+Last update: 2024-10-15T05:37:35+02:00
 
 ## Statistics
 
@@ -736,8 +736,8 @@ Last update: 2024-10-14T17:37:50+02:00
    - @types/express                     ^4.17.11  →   ^5.0.0
    - @types/magicmirror-module           ^2.16.0  →  ^2.16.5
    - @types/node                       ^14.14.22  →  ^22.7.5
-   - @typescript-eslint/eslint-plugin     ^7.0.2  →   ^8.8.1
-   - @typescript-eslint/parser            ^7.0.2  →   ^8.8.1
+   - @typescript-eslint/eslint-plugin     ^7.0.2  →   ^8.9.0
+   - @typescript-eslint/parser            ^7.0.2  →   ^8.9.0
    - bosch-smart-home-bridge              ^1.4.1  →   ^1.6.0
    - eslint                              ^8.57.0  →  ^9.12.0
    - eslint-plugin-prettier               ^5.1.3  →   ^5.2.1
@@ -3939,7 +3939,7 @@ Last update: 2024-10-14T17:37:50+02:00
 3. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
 4. Information: There are updates for 4 dependencie(s):
    - @electron/rebuild    ^3.6.0  →   ^3.7.0
-   - node-abi            ^3.65.0  →  ^3.68.0
+   - node-abi            ^3.65.0  →  ^3.69.0
    - puppeteer          ^22.15.0  →  ^23.5.3
    - sharp               ^0.33.4  →  ^0.33.5
 
@@ -3962,8 +3962,8 @@ Last update: 2024-10-14T17:37:50+02:00
    - @rollup/plugin-commonjs           ^25.0.7  →  ^28.0.0
    - @rollup/plugin-node-resolve       ^15.2.3  →  ^15.3.0
    - @rollup/plugin-typescript         ^11.1.6  →  ^12.1.0
-   - @typescript-eslint/eslint-plugin  ^6.19.1  →   ^8.8.1
-   - @typescript-eslint/parser         ^6.19.1  →   ^8.8.1
+   - @typescript-eslint/eslint-plugin  ^6.19.1  →   ^8.9.0
+   - @typescript-eslint/parser         ^6.19.1  →   ^8.9.0
    - eslint                            ^8.56.0  →  ^9.12.0
    - eslint-plugin-prettier             ^5.1.3  →   ^5.2.1
    - prettier                           ^3.2.4  →   ^3.3.3
@@ -6077,7 +6077,7 @@ Last update: 2024-10-14T17:37:50+02:00
    - @rollup/plugin-node-resolve       ^15.2.3  →  ^15.3.0
    - @rollup/plugin-typescript         ^11.1.6  →  ^12.1.0
    - @stylistic/eslint-plugin           ^1.5.4  →   ^2.9.0
-   - @typescript-eslint/eslint-plugin  ^6.20.0  →   ^8.8.1
+   - @typescript-eslint/eslint-plugin  ^6.20.0  →   ^8.9.0
    - eslint                            ^8.56.0  →  ^9.12.0
    - prettier                           ^3.2.5  →   ^3.3.3
    - rollup                             ^4.9.6  →  ^4.24.0
@@ -7428,7 +7428,7 @@ Last update: 2024-10-14T17:37:50+02:00
    - eslint                        ^9.9.1  →  ^9.12.0
    - rollup                       ^4.21.1  →  ^4.24.0
    - typescript                    ^5.5.4  →   ^5.6.3
-   - typescript-eslint             ^8.3.0  →   ^8.8.1
+   - typescript-eslint             ^8.3.0  →   ^8.9.0
 
 
 ### [MMM-RAIN-RADAR by jojoduquartier](https://github.com/jojoduquartier/MMM-RAIN-RADAR)
@@ -9240,6 +9240,12 @@ Last update: 2024-10-14T17:37:50+02:00
 6. Warning: No LICENSE file.
 7. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
 
+### [MMM-Touch by gfischershaw](https://github.com/gfischershaw/MMM-Touch)
+
+1. There is no `package.json`. We need this file to gather information about the module for the module list page.
+2. Recommendation: The README seems not to have an update instruction (the word 'update' is missing). Please add one.
+3. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
+
 ### [EXT-Touch by bugsounet](https://github.com/bugsounet/EXT-Touch)
 
 1. Recommendation: The README seems not to have an update instruction (the word 'update' is missing). Please add one.
@@ -9252,12 +9258,6 @@ Last update: 2024-10-14T17:37:50+02:00
    - eslint-plugin-import      ^2.29.1  →  ^2.31.0
    - glob                      ^10.4.2  →  ^11.0.0
 
-
-### [MMM-Touch by gfischershaw](https://github.com/gfischershaw/MMM-Touch)
-
-1. There is no `package.json`. We need this file to gather information about the module for the module list page.
-2. Recommendation: The README seems not to have an update instruction (the word 'update' is missing). Please add one.
-3. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
 
 ### [MMM-TouchButton by Tom-Hirschberger](https://github.com/Tom-Hirschberger/MMM-TouchButton)
 
