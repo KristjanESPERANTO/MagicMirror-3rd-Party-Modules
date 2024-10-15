@@ -1,5 +1,7 @@
 name: Update dev dependencies
 
+permissions: write
+
 on:
   schedule:
     - cron: "0 18 * * *"
