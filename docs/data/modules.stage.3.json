@@ -4185,7 +4185,7 @@
     "stars": 2,
     "hasGithubIssues": false,
     "license": "MIT",
-    "image": "fielectricityprice.jpg"
+    "image": "barchart.jpg"
   },
   {
     "name": "MMM-euro2024",
@@ -7515,7 +7515,6 @@
     "stars": 5,
     "license": "MIT",
     "tags": [
-      "magicmirror-module",
       "eink",
       "it8951",
       "waveshare-eink"
@@ -8221,6 +8220,25 @@
     "stars": 1,
     "license": "MIT",
     "image": "screenshot.jpg"
+  },
+  {
+    "name": "MMM-LittleBockFermentationLog",
+    "category": "Utility / IOT / 3rd Party / Integration",
+    "url": "https://github.com/SBrendan/MMM-LittleBockFermentationLog",
+    "id": "SBrendan/MMM-LittleBockFermentationLog",
+    "maintainer": "SBrendan",
+    "maintainerURL": "https://github.com/SBrendan",
+    "description": "🍺Display beer fermentation log from <a target=\"_blank\" href=\"https://www.littlebock.fr\">LittleBock</a> API",
+    "issues": [],
+    "stars": 0,
+    "tags": [
+      "beer",
+      "brew",
+      "littlebock",
+      "smart home"
+    ],
+    "license": "MIT",
+    "image": "screenshots-screenshot_1.jpg"
   },
   {
     "name": "MMM-Live-Stream-TV",
@@ -8944,6 +8962,24 @@
       "recipie"
     ],
     "image": "MMM-MealieMenu-screenshot.jpg"
+  },
+  {
+    "name": "MMM-MealViewer",
+    "category": "Utility / IOT / 3rd Party / Integration",
+    "url": "https://github.com/ElliAndDad/MMM-MealViewer",
+    "id": "ElliAndDad/MMM-MealViewer",
+    "maintainer": "ElliAndDad",
+    "maintainerURL": "",
+    "description": "Displays school breakfast and lunch menus from MealViewer.",
+    "issues": [],
+    "stars": 2,
+    "license": "MIT",
+    "tags": [
+      "mealviewer",
+      "school",
+      "menu"
+    ],
+    "image": "screenshots-multiple-instance.jpg"
   },
   {
     "name": "MMM-Memo",
@@ -9910,12 +9946,14 @@
     "description": "Uses MPD to show the state and playlist of your music player. Fork of MMM-MPD but restyled and additional with volume level and played time.",
     "issues": [
       "`package.json` issue: No repository field.",
-      "`package.json` issue: license should be a valid SPDX license expression",
-      "There are no keywords in 'package.json'. We would use them as tags on the module list page.",
-      "No compatible or wrong license field in 'package.json' or LICENSE file. Without that, we can't use an image."
+      "No image found."
     ],
     "stars": 2,
-    "license": "MIT License"
+    "tags": [
+      "mpd",
+      "music"
+    ],
+    "license": "MIT"
   },
   {
     "name": "MMM-MortgageCountdown",
@@ -11546,13 +11584,14 @@
   },
   {
     "name": "MMM-NLDepartureTimes",
-    "category": "Transport / Travel",
+    "category": "Outdated Modules",
     "url": "https://github.com/Travelbacon/MMM-NLDepartureTimes",
     "id": "Travelbacon/MMM-NLDepartureTimes",
     "maintainer": "Travelbacon",
     "maintainerURL": "",
-    "description": "2024 - I have archived this module, because I have no public transport around me anymore. Shows departure times of Dutch public transport. Where you can sort on destination and group stops in one stop. Good for hubs where multiple lines and authorities merge, so yo have one stop instead of multiple.",
+    "description": "Shows departure times of Dutch public transport. Where you can sort on destination and group stops in one stop. Good for hubs where multiple lines and authorities merge, so yo have one stop instead of multiple.",
     "issues": [],
+    "outdated": "Abandoned. Repo has been archived at 2024-10-14.",
     "stars": 1,
     "license": "MIT",
     "tags": [
@@ -14119,7 +14158,7 @@
     "maintainerURL": "",
     "description": "Load a random photo from picsum. Originally by diego-vieira, now with support for local paths and NextCloud shares.",
     "issues": [],
-    "stars": 7,
+    "stars": 8,
     "tags": [
       "photo",
       "image",
@@ -14340,7 +14379,7 @@
     "maintainerURL": "",
     "description": "Cleanly shutdown (or reboot) your mirror, edit which modules are shown on your mirror and turn your monitor off and on from a simple website, i.e. from your smartphone.",
     "issues": [],
-    "stars": 498,
+    "stars": 497,
     "license": "MIT",
     "tags": [
       "remote control",
@@ -14557,7 +14596,7 @@
     "maintainerURL": "",
     "description": "Rhein-Main local transport system (RMV) - Departure Monitor.",
     "issues": [],
-    "stars": 20,
+    "stars": 21,
     "license": "MIT",
     "tags": [
       "rmv",
@@ -15154,7 +15193,7 @@
     "issues": [
       "`package.json` issue: No repository field."
     ],
-    "stars": 2,
+    "stars": 3,
     "license": "MIT",
     "tags": [
       "movesense",
@@ -15190,7 +15229,7 @@
     "maintainerURL": "https://github.com/XBCreepinJesus",
     "description": "Check the up/down status of servers/devices on your network.",
     "issues": [],
-    "stars": 18,
+    "stars": 19,
     "tags": [
       "ping",
       "server",
@@ -15427,7 +15466,6 @@
     "issues": [],
     "stars": 2,
     "tags": [
-      "magicmirror-module",
       "background-slideshow",
       "slideshow",
       "background-images",
@@ -15652,7 +15690,7 @@
     "issues": [
       "There is no `package.json`. We need this file to gather information about the module for the module list page."
     ],
-    "stars": 16
+    "stars": 17
   },
   {
     "name": "MMM-Smappee",
@@ -15714,7 +15752,7 @@
     "issues": [
       "No image found."
     ],
-    "stars": 59,
+    "stars": 60,
     "tags": [
       "iframe",
       "notification"
@@ -15763,7 +15801,7 @@
     "maintainerURL": "",
     "description": "Uses SNMP to display bandwidth usage from a network device interface.",
     "issues": [],
-    "stars": 4,
+    "stars": 5,
     "license": "MIT",
     "tags": [
       "snmp",
@@ -16138,7 +16176,7 @@
     "issues": [
       "There is no `package.json`. We need this file to gather information about the module for the module list page."
     ],
-    "stars": 52,
+    "stars": 53,
     "license": "MIT",
     "image": "images-Example.jpg"
   },
@@ -16196,7 +16234,7 @@
     "maintainerURL": "https://github.com/spydersoft-consulting",
     "description": "Display incidents and component status from a StatusPage.io site.",
     "issues": [],
-    "stars": 1,
+    "stars": 2,
     "license": "MIT",
     "tags": [
       "scheduler"
@@ -16264,7 +16302,7 @@
       "There is no `package.json`. We need this file to gather information about the module for the module list page.",
       "No image found."
     ],
-    "stars": 15,
+    "stars": 16,
     "license": "MIT"
   },
   {
@@ -16276,7 +16314,7 @@
     "maintainerURL": "",
     "description": "Display a stoic quote at a given interval or time of day.",
     "issues": [],
-    "stars": 2,
+    "stars": 3,
     "license": "MIT",
     "tags": [
       "quotes",
@@ -16325,7 +16363,7 @@
     "maintainerURL": "",
     "description": "Display your activity data from <a target=\"_blank\" href=\"https://www.strava.com\">Strava.com</a>.",
     "issues": [],
-    "stars": 50,
+    "stars": 51,
     "license": "MIT",
     "tags": [
       "strava"
@@ -16436,7 +16474,7 @@
     "maintainerURL": "https://github.com/mumblebaj",
     "description": "Display a classic railway clock.",
     "issues": [],
-    "stars": 4,
+    "stars": 6,
     "license": "MIT",
     "tags": [
       "clock",
@@ -16585,7 +16623,7 @@
     "maintainerURL": "https://github.com/Tom-Hirschberger",
     "description": "Display the video streams of cameras connected to your Synology Disc Stations and control their positions.",
     "issues": [],
-    "stars": 5,
+    "stars": 6,
     "license": "MIT",
     "tags": [
       "synology",
@@ -16636,7 +16674,7 @@
     "maintainerURL": "https://github.com/btastic",
     "description": "Shows system stats similar to MMM-SystemStats.",
     "issues": [],
-    "stars": 4,
+    "stars": 5,
     "license": "MIT",
     "tags": [
       "systemmonitor"
@@ -16787,6 +16825,22 @@
     ]
   },
   {
+    "name": "MMM-TelegramBot",
+    "category": "Utility / IOT / 3rd Party / Integration",
+    "url": "https://github.com/MMRIZE/MMM-TelegramBot",
+    "id": "MMRIZE/MMM-TelegramBot",
+    "maintainer": "MMRIZE",
+    "maintainerURL": "",
+    "description": "Interact with your mirror via Telegram. Revamped 2024.",
+    "issues": [],
+    "stars": 26,
+    "license": "MIT",
+    "tags": [
+      "telegram"
+    ],
+    "image": "sc_fullsize.jpg"
+  },
+  {
     "name": "EXT-TelegramBot",
     "category": "Extended plugins for MMM-GoogleAssistant",
     "url": "https://github.com/bugsounet/EXT-TelegramBot",
@@ -16802,22 +16856,6 @@
       "telegram"
     ],
     "image": "screenshot-sc_fullsize.jpg"
-  },
-  {
-    "name": "MMM-TelegramBot",
-    "category": "Utility / IOT / 3rd Party / Integration",
-    "url": "https://github.com/MMRIZE/MMM-TelegramBot",
-    "id": "MMRIZE/MMM-TelegramBot",
-    "maintainer": "MMRIZE",
-    "maintainerURL": "",
-    "description": "Interact with your mirror via Telegram. Revamped 2024.",
-    "issues": [],
-    "stars": 26,
-    "license": "MIT",
-    "tags": [
-      "telegram"
-    ],
-    "image": "sc_fullsize.jpg"
   },
   {
     "name": "MMM-TelegramCommands",
@@ -16963,7 +17001,7 @@
       "`package.json` issue: No license field.",
       "There are no keywords in 'package.json'. We would use them as tags on the module list page."
     ],
-    "stars": 52,
+    "stars": 53,
     "license": "MIT",
     "image": "doc-charge_starting.jpg"
   },
@@ -17030,7 +17068,7 @@
     "maintainerURL": "",
     "description": "This module gets real time arrival predictions for specifc stops using the TfL API.",
     "issues": [],
-    "stars": 5,
+    "stars": 6,
     "license": "MIT",
     "tags": [
       "transport",
@@ -17299,21 +17337,6 @@
     "stars": 12
   },
   {
-    "name": "MMM-Touch",
-    "category": "Utility / IOT / 3rd Party / Integration",
-    "url": "https://github.com/gfischershaw/MMM-Touch",
-    "id": "gfischershaw/MMM-Touch",
-    "maintainer": "gfischershaw",
-    "maintainerURL": "",
-    "description": "Universal touch gesture commander using touchscreen.",
-    "issues": [
-      "There is no `package.json`. We need this file to gather information about the module for the module list page."
-    ],
-    "stars": 12,
-    "license": "MIT",
-    "image": "MMM-Touch.jpg"
-  },
-  {
     "name": "EXT-Touch",
     "category": "Extended plugins for MMM-GoogleAssistant",
     "url": "https://github.com/bugsounet/EXT-Touch",
@@ -17331,6 +17354,21 @@
     "image": "resources-google.jpg"
   },
   {
+    "name": "MMM-Touch",
+    "category": "Utility / IOT / 3rd Party / Integration",
+    "url": "https://github.com/gfischershaw/MMM-Touch",
+    "id": "gfischershaw/MMM-Touch",
+    "maintainer": "gfischershaw",
+    "maintainerURL": "",
+    "description": "Universal touch gesture commander using touchscreen.",
+    "issues": [
+      "There is no `package.json`. We need this file to gather information about the module for the module list page."
+    ],
+    "stars": 12,
+    "license": "MIT",
+    "image": "MMM-Touch.jpg"
+  },
+  {
     "name": "MMM-TouchButton",
     "category": "Utility / IOT / 3rd Party / Integration",
     "url": "https://github.com/Tom-Hirschberger/MMM-TouchButton",
@@ -17339,7 +17377,7 @@
     "maintainerURL": "https://github.com/Tom-Hirschberger",
     "description": "Add clickable buttons to send notifications or run commands.",
     "issues": [],
-    "stars": 7,
+    "stars": 8,
     "license": "MIT",
     "tags": [
       "touch",
@@ -17411,7 +17449,7 @@
     "maintainerURL": "https://github.com/samlewis0602",
     "description": "Display commute travel time with current traffic conditions factored in. Can be used for driving, biking, walking, and public transit.",
     "issues": [],
-    "stars": 141,
+    "stars": 142,
     "tags": [
       "traffic"
     ],
@@ -17558,7 +17596,7 @@
     "issues": [
       "There is no `package.json`. We need this file to gather information about the module for the module list page."
     ],
-    "stars": 0,
+    "stars": 1,
     "license": "MIT",
     "image": "MMM-Transmission.jpg"
   },
@@ -18328,15 +18366,16 @@
   },
   {
     "name": "voicecontrol",
-    "category": "Voice Control",
+    "category": "Outdated Modules",
     "url": "https://github.com/alexyak/voicecontrol",
     "id": "alexyak/voicecontrol",
     "maintainer": "alexyak",
     "maintainerURL": "",
-    "description": "Voice control based on snowboy.",
+    "description": "Abandoned. Repo has been archived at 2024-05-16.",
     "issues": [
       "There is no `package.json`. We need this file to gather information about the module for the module list page."
     ],
+    "outdated": "Abandoned. No reactions to issues since years. Seems not to work anymore.",
     "stars": 41
   },
   {
@@ -19194,7 +19233,7 @@
     "id": "MattLugar/wuforecast",
     "maintainer": "MattLugar",
     "maintainerURL": "",
-    "description": "Weather Underground Forecast Module Retrieves forecast from Weather Underground. Also adds a percentage probability of precipitation to forecast display.",
+    "description": "Weather Underground Forecast Module retrieves forecast from Weather Underground. Also adds a percentage probability of precipitation to forecast display.",
     "issues": [
       "There is no `package.json`. We need this file to gather information about the module for the module list page."
     ],

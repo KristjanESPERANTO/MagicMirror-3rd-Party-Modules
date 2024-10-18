@@ -5931,6 +5931,17 @@
     "license": "MIT"
   },
   {
+    "name": "MMM-LittleBockFermentationLog",
+    "category": "Utility / IOT / 3rd Party / Integration",
+    "url": "https://github.com/SBrendan/MMM-LittleBockFermentationLog",
+    "id": "SBrendan/MMM-LittleBockFermentationLog",
+    "maintainer": "SBrendan",
+    "maintainerURL": "https://github.com/SBrendan",
+    "description": "🍺Display beer fermentation log from <a target=\"_blank\" href=\"https://www.littlebock.fr\">LittleBock</a> API",
+    "issues": [],
+    "stars": 0
+  },
+  {
     "name": "MMM-Live-Stream-TV",
     "category": "Utility / IOT / 3rd Party / Integration",
     "url": "https://github.com/mcintyrehh/MMM-Live-Stream-TV",
@@ -6452,6 +6463,18 @@
     "description": "Displays a weekly meal menu from the <a target=\"_blank\" href=\"https://mealie.io\">Mealie</a> recipe management app.",
     "issues": [],
     "stars": 10,
+    "license": "MIT"
+  },
+  {
+    "name": "MMM-MealViewer",
+    "category": "Utility / IOT / 3rd Party / Integration",
+    "url": "https://github.com/ElliAndDad/MMM-MealViewer",
+    "id": "ElliAndDad/MMM-MealViewer",
+    "maintainer": "ElliAndDad",
+    "maintainerURL": "",
+    "description": "Displays school breakfast and lunch menus from MealViewer.",
+    "issues": [],
+    "stars": 2,
     "license": "MIT"
   },
   {
@@ -8314,13 +8337,14 @@
   },
   {
     "name": "MMM-NLDepartureTimes",
-    "category": "Transport / Travel",
+    "category": "Outdated Modules",
     "url": "https://github.com/Travelbacon/MMM-NLDepartureTimes",
     "id": "Travelbacon/MMM-NLDepartureTimes",
     "maintainer": "Travelbacon",
     "maintainerURL": "",
-    "description": "2024 - I have archived this module, because I have no public transport around me anymore. Shows departure times of Dutch public transport. Where you can sort on destination and group stops in one stop. Good for hubs where multiple lines and authorities merge, so yo have one stop instead of multiple.",
+    "description": "Shows departure times of Dutch public transport. Where you can sort on destination and group stops in one stop. Good for hubs where multiple lines and authorities merge, so yo have one stop instead of multiple.",
     "issues": [],
+    "outdated": "Abandoned. Repo has been archived at 2024-10-14.",
     "stars": 1,
     "license": "MIT"
   },
@@ -10187,7 +10211,7 @@
     "maintainerURL": "",
     "description": "Load a random photo from picsum. Originally by diego-vieira, now with support for local paths and NextCloud shares.",
     "issues": [],
-    "stars": 7
+    "stars": 8
   },
   {
     "name": "MMM-RandomQuotes",
@@ -10350,7 +10374,7 @@
     "maintainerURL": "",
     "description": "Cleanly shutdown (or reboot) your mirror, edit which modules are shown on your mirror and turn your monitor off and on from a simple website, i.e. from your smartphone.",
     "issues": [],
-    "stars": 498,
+    "stars": 497,
     "license": "MIT"
   },
   {
@@ -10506,7 +10530,7 @@
     "maintainerURL": "",
     "description": "Rhein-Main local transport system (RMV) - Departure Monitor.",
     "issues": [],
-    "stars": 20,
+    "stars": 21,
     "license": "MIT"
   },
   {
@@ -10942,7 +10966,7 @@
     "maintainerURL": "",
     "description": "This module enables having live sensor data without touching the Pi hardware by utilizing the BLE advertisment beacons from sensors and routing that live info into MagicMirror² platform.",
     "issues": [],
-    "stars": 2,
+    "stars": 3,
     "license": "MIT"
   },
   {
@@ -10966,7 +10990,7 @@
     "maintainerURL": "https://github.com/XBCreepinJesus",
     "description": "Check the up/down status of servers/devices on your network.",
     "issues": [],
-    "stars": 18
+    "stars": 19
   },
   {
     "name": "MMM-ServiceViewer",
@@ -11288,7 +11312,7 @@
     "maintainerURL": "",
     "description": "Use an external source for motion detection, like a web camera.",
     "issues": [],
-    "stars": 16
+    "stars": 17
   },
   {
     "name": "MMM-Smappee",
@@ -11335,7 +11359,7 @@
     "maintainerURL": "https://github.com/AgP42",
     "description": "An iFrame module to display web content (including YouTube, IP cameras, etc.). Several rotating URL, autorefresh and remote control of the URL to display, Next/Prev/Play/Stop. <a target=\"_blank\" href=\"https://forum.magicmirror.builders/topic/9750/mmm-smartwebdisplay-display-web-contents-including-youtube-on-your-mm\">MMM-SmartWebDisplay forum</a>.",
     "issues": [],
-    "stars": 59
+    "stars": 60
   },
   {
     "name": "MMM-Snake",
@@ -11370,7 +11394,7 @@
     "maintainerURL": "",
     "description": "Uses SNMP to display bandwidth usage from a network device interface.",
     "issues": [],
-    "stars": 4,
+    "stars": 5,
     "license": "MIT"
   },
   {
@@ -11645,7 +11669,7 @@
     "maintainerURL": "",
     "description": "Display information from Spotify Connect e.g. cover, artist and track information.",
     "issues": [],
-    "stars": 52,
+    "stars": 53,
     "license": "MIT"
   },
   {
@@ -11691,7 +11715,7 @@
     "maintainerURL": "https://github.com/spydersoft-consulting",
     "description": "Display incidents and component status from a StatusPage.io site.",
     "issues": [],
-    "stars": 1,
+    "stars": 2,
     "license": "MIT"
   },
   {
@@ -11740,7 +11764,7 @@
     "maintainerURL": "",
     "description": "Displays current stock prices of companies using YAHOO FINANCE API.",
     "issues": [],
-    "stars": 15,
+    "stars": 16,
     "license": "MIT"
   },
   {
@@ -11752,7 +11776,7 @@
     "maintainerURL": "",
     "description": "Display a stoic quote at a given interval or time of day.",
     "issues": [],
-    "stars": 2,
+    "stars": 3,
     "license": "MIT"
   },
   {
@@ -11787,7 +11811,7 @@
     "maintainerURL": "",
     "description": "Display your activity data from <a target=\"_blank\" href=\"https://www.strava.com\">Strava.com</a>.",
     "issues": [],
-    "stars": 50,
+    "stars": 51,
     "license": "MIT"
   },
   {
@@ -11872,7 +11896,7 @@
     "maintainerURL": "https://github.com/mumblebaj",
     "description": "Display a classic railway clock.",
     "issues": [],
-    "stars": 4,
+    "stars": 6,
     "license": "MIT"
   },
   {
@@ -11980,7 +12004,7 @@
     "maintainerURL": "https://github.com/Tom-Hirschberger",
     "description": "Display the video streams of cameras connected to your Synology Disc Stations and control their positions.",
     "issues": [],
-    "stars": 5,
+    "stars": 6,
     "license": "MIT"
   },
   {
@@ -12016,7 +12040,7 @@
     "maintainerURL": "https://github.com/btastic",
     "description": "Shows system stats similar to MMM-SystemStats.",
     "issues": [],
-    "stars": 4,
+    "stars": 5,
     "license": "MIT"
   },
   {
@@ -12117,18 +12141,6 @@
     "license": "MIT"
   },
   {
-    "name": "EXT-TelegramBot",
-    "category": "Extended plugins for MMM-GoogleAssistant",
-    "url": "https://github.com/bugsounet/EXT-TelegramBot",
-    "id": "bugsounet/EXT-TelegramBot",
-    "maintainer": "bugsounet",
-    "maintainerURL": "https://wiki.bugsounet.fr",
-    "description": "You can remote-control plugins within Telegram.",
-    "issues": [],
-    "stars": 2,
-    "license": "MIT"
-  },
-  {
     "name": "MMM-TelegramBot",
     "category": "Utility / IOT / 3rd Party / Integration",
     "url": "https://github.com/MMRIZE/MMM-TelegramBot",
@@ -12138,6 +12150,18 @@
     "description": "Interact with your mirror via Telegram. Revamped 2024.",
     "issues": [],
     "stars": 26,
+    "license": "MIT"
+  },
+  {
+    "name": "EXT-TelegramBot",
+    "category": "Extended plugins for MMM-GoogleAssistant",
+    "url": "https://github.com/bugsounet/EXT-TelegramBot",
+    "id": "bugsounet/EXT-TelegramBot",
+    "maintainer": "bugsounet",
+    "maintainerURL": "https://wiki.bugsounet.fr",
+    "description": "You can remote-control plugins within Telegram.",
+    "issues": [],
+    "stars": 2,
     "license": "MIT"
   },
   {
@@ -12234,7 +12258,7 @@
     "maintainerURL": "",
     "description": "Display live Tesla status using the Teslamate self-hosted monitoring system and MQTT Broker.",
     "issues": [],
-    "stars": 52,
+    "stars": 53,
     "license": "MIT"
   },
   {
@@ -12282,7 +12306,7 @@
     "maintainerURL": "",
     "description": "This module gets real time arrival predictions for specifc stops using the TfL API.",
     "issues": [],
-    "stars": 5,
+    "stars": 6,
     "license": "MIT"
   },
   {
@@ -12474,18 +12498,6 @@
     "stars": 12
   },
   {
-    "name": "MMM-Touch",
-    "category": "Utility / IOT / 3rd Party / Integration",
-    "url": "https://github.com/gfischershaw/MMM-Touch",
-    "id": "gfischershaw/MMM-Touch",
-    "maintainer": "gfischershaw",
-    "maintainerURL": "",
-    "description": "Universal touch gesture commander using touchscreen.",
-    "issues": [],
-    "stars": 12,
-    "license": "MIT"
-  },
-  {
     "name": "EXT-Touch",
     "category": "Extended plugins for MMM-GoogleAssistant",
     "url": "https://github.com/bugsounet/EXT-Touch",
@@ -12498,6 +12510,18 @@
     "license": "MIT"
   },
   {
+    "name": "MMM-Touch",
+    "category": "Utility / IOT / 3rd Party / Integration",
+    "url": "https://github.com/gfischershaw/MMM-Touch",
+    "id": "gfischershaw/MMM-Touch",
+    "maintainer": "gfischershaw",
+    "maintainerURL": "",
+    "description": "Universal touch gesture commander using touchscreen.",
+    "issues": [],
+    "stars": 12,
+    "license": "MIT"
+  },
+  {
     "name": "MMM-TouchButton",
     "category": "Utility / IOT / 3rd Party / Integration",
     "url": "https://github.com/Tom-Hirschberger/MMM-TouchButton",
@@ -12506,7 +12530,7 @@
     "maintainerURL": "https://github.com/Tom-Hirschberger",
     "description": "Add clickable buttons to send notifications or run commands.",
     "issues": [],
-    "stars": 7,
+    "stars": 8,
     "license": "MIT"
   },
   {
@@ -12553,7 +12577,7 @@
     "maintainerURL": "https://github.com/samlewis0602",
     "description": "Display commute travel time with current traffic conditions factored in. Can be used for driving, biking, walking, and public transit.",
     "issues": [],
-    "stars": 141
+    "stars": 142
   },
   {
     "name": "MMM-TrainConnections",
@@ -12658,7 +12682,7 @@
     "maintainerURL": "https://github.com/nikxif",
     "description": "Connect to the Transmission BitTorrent client and display current torrent list information.",
     "issues": [],
-    "stars": 0,
+    "stars": 1,
     "license": "MIT"
   },
   {
@@ -13197,13 +13221,14 @@
   },
   {
     "name": "voicecontrol",
-    "category": "Voice Control",
+    "category": "Outdated Modules",
     "url": "https://github.com/alexyak/voicecontrol",
     "id": "alexyak/voicecontrol",
     "maintainer": "alexyak",
     "maintainerURL": "",
-    "description": "Voice control based on snowboy.",
+    "description": "Abandoned. Repo has been archived at 2024-05-16.",
     "issues": [],
+    "outdated": "Abandoned. No reactions to issues since years. Seems not to work anymore.",
     "stars": 41
   },
   {
@@ -13834,7 +13859,7 @@
     "id": "MattLugar/wuforecast",
     "maintainer": "MattLugar",
     "maintainerURL": "",
-    "description": "Weather Underground Forecast Module Retrieves forecast from Weather Underground. Also adds a percentage probability of precipitation to forecast display.",
+    "description": "Weather Underground Forecast Module retrieves forecast from Weather Underground. Also adds a percentage probability of precipitation to forecast display.",
     "issues": [],
     "outdated": "Deprecated. Wunderground API isn't working anymore.",
     "stars": 11

@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "2024-10-15T03:30:06.265Z",
+  "lastUpdate": "2024-10-18T15:30:06.432Z",
   "modules": [
     {
       "name": "MMM-01ZM",
@@ -5010,6 +5010,16 @@
       "issues": []
     },
     {
+      "name": "MMM-LittleBockFermentationLog",
+      "category": "Utility / IOT / 3rd Party / Integration",
+      "url": "https://github.com/SBrendan/MMM-LittleBockFermentationLog",
+      "id": "SBrendan/MMM-LittleBockFermentationLog",
+      "maintainer": "SBrendan",
+      "maintainerURL": "https://github.com/SBrendan",
+      "description": "🍺Display beer fermentation log from <a target=\"_blank\" href=\"https://www.littlebock.fr\">LittleBock</a> API",
+      "issues": []
+    },
+    {
       "name": "MMM-Live-Stream-TV",
       "category": "Utility / IOT / 3rd Party / Integration",
       "url": "https://github.com/mcintyrehh/MMM-Live-Stream-TV",
@@ -5452,6 +5462,16 @@
       "maintainer": "zanix",
       "maintainerURL": "https://github.com/zanix",
       "description": "Displays a weekly meal menu from the <a target=\"_blank\" href=\"https://mealie.io\">Mealie</a> recipe management app.",
+      "issues": []
+    },
+    {
+      "name": "MMM-MealViewer",
+      "category": "Utility / IOT / 3rd Party / Integration",
+      "url": "https://github.com/ElliAndDad/MMM-MealViewer",
+      "id": "ElliAndDad/MMM-MealViewer",
+      "maintainer": "ElliAndDad",
+      "maintainerURL": "",
+      "description": "Displays school breakfast and lunch menus from MealViewer.",
       "issues": []
     },
     {
@@ -7028,13 +7048,14 @@
     },
     {
       "name": "MMM-NLDepartureTimes",
-      "category": "Transport / Travel",
+      "category": "Outdated Modules",
       "url": "https://github.com/Travelbacon/MMM-NLDepartureTimes",
       "id": "Travelbacon/MMM-NLDepartureTimes",
       "maintainer": "Travelbacon",
       "maintainerURL": "",
-      "description": "2024 - I have archived this module, because I have no public transport around me anymore. Shows departure times of Dutch public transport. Where you can sort on destination and group stops in one stop. Good for hubs where multiple lines and authorities merge, so yo have one stop instead of multiple.",
-      "issues": []
+      "description": "Shows departure times of Dutch public transport. Where you can sort on destination and group stops in one stop. Good for hubs where multiple lines and authorities merge, so yo have one stop instead of multiple.",
+      "issues": [],
+      "outdated": "Abandoned. Repo has been archived at 2024-10-14."
     },
     {
       "name": "MMM-NMBS-Connection",
@@ -11142,13 +11163,14 @@
     },
     {
       "name": "voicecontrol",
-      "category": "Voice Control",
+      "category": "Outdated Modules",
       "url": "https://github.com/alexyak/voicecontrol",
       "id": "alexyak/voicecontrol",
       "maintainer": "alexyak",
       "maintainerURL": "",
-      "description": "Voice control based on snowboy.",
-      "issues": []
+      "description": "Abandoned. Repo has been archived at 2024-05-16.",
+      "issues": [],
+      "outdated": "Abandoned. No reactions to issues since years. Seems not to work anymore."
     },
     {
       "name": "MMM-Volume",
@@ -11680,7 +11702,7 @@
       "id": "MattLugar/wuforecast",
       "maintainer": "MattLugar",
       "maintainerURL": "",
-      "description": "Weather Underground Forecast Module Retrieves forecast from Weather Underground. Also adds a percentage probability of precipitation to forecast display.",
+      "description": "Weather Underground Forecast Module retrieves forecast from Weather Underground. Also adds a percentage probability of precipitation to forecast display.",
       "issues": [],
       "outdated": "Deprecated. Wunderground API isn't working anymore."
     },
