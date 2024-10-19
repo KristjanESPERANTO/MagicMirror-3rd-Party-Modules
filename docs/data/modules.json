@@ -2014,7 +2014,7 @@
     "maintainer": "KristjanESPERANTO",
     "maintainerURL": "",
     "description": "Show meals from canteens (Germany and Switzerland).",
-    "issues": false,
+    "issues": true,
     "stars": 5,
     "license": "MIT",
     "tags": [
@@ -3847,7 +3847,7 @@
     "maintainer": "KristjanESPERANTO",
     "maintainerURL": "",
     "description": "The easiest way to show pictures on your mirror.",
-    "issues": false,
+    "issues": true,
     "stars": 7,
     "license": "MIT",
     "tags": [
@@ -7545,7 +7545,7 @@
     "maintainer": "KristjanESPERANTO",
     "maintainerURL": "",
     "description": "Displays live video from the International Space Station.",
-    "issues": false,
+    "issues": true,
     "stars": 6,
     "license": "MIT",
     "tags": [
@@ -8336,7 +8336,7 @@
     "id": "SBrendan/MMM-LittleBockFermentationLog",
     "maintainer": "SBrendan",
     "maintainerURL": "https://github.com/SBrendan",
-    "description": "\ud83c\udf7aDisplay beer fermentation log from <a target=\"_blank\" href=\"https://www.littlebock.fr\">LittleBock</a> API",
+    "description": "\ud83c\udf7a Display beer fermentation log from <a target=\"_blank\" href=\"https://www.littlebock.fr\">LittleBock</a> API.",
     "issues": true,
     "stars": 0,
     "tags": [
@@ -10089,7 +10089,7 @@
     "stars": 0,
     "license": "CC0-1.0",
     "defaultSortWeight": 5,
-    "lastCommit": "2024-10-13T19:59:39+01:00"
+    "lastCommit": "2024-10-18T20:40:35+01:00"
   },
   {
     "name": "MMM-Motion-Camera",
@@ -11255,7 +11255,7 @@
     ],
     "image": ".github-preview.bubbles.jpg",
     "defaultSortWeight": -1,
-    "lastCommit": "2024-10-11T19:45:57+00:00"
+    "lastCommit": "2024-10-18T22:14:51+00:00"
   },
   {
     "name": "MMM-Netatmo-Presence",
@@ -11360,7 +11360,7 @@
     "maintainerURL": "https://github.com/spitzlbergerj",
     "description": "Display the status of devices on the network based on their MAC address with nice columnview.",
     "issues": true,
-    "stars": 20,
+    "stars": 21,
     "hasGithubIssues": false,
     "license": "MIT",
     "tags": [
@@ -11727,6 +11727,7 @@
     "issues": true,
     "outdated": "Abandoned. Repo has been archived at 2024-10-14.",
     "stars": 1,
+    "isArchived": true,
     "license": "MIT",
     "tags": [
       "public transport"
@@ -12185,7 +12186,7 @@
     "maintainer": "KristjanESPERANTO",
     "maintainerURL": "",
     "description": "Display current and forecast weather based on the Openweathermap OneCall API data with alternative formatting.",
-    "issues": false,
+    "issues": true,
     "stars": 3,
     "license": "MIT",
     "tags": [
@@ -15154,6 +15155,21 @@
     "image": ".github-example.jpg",
     "defaultSortWeight": 901,
     "lastCommit": "2017-02-15T23:51:42+01:00"
+  },
+  {
+    "name": "MMM-Scrapey",
+    "category": "Utility / IOT / 3rd Party / Integration",
+    "url": "https://github.com/AndyHazz/MMM-Scrapey",
+    "id": "AndyHazz/MMM-Scrapey",
+    "maintainer": "AndyHazz",
+    "maintainerURL": "",
+    "description": "Scrape a table from any webpage, choose which columns and rows you want and how often to refresh.",
+    "issues": true,
+    "stars": 2,
+    "license": "ISC",
+    "image": "img-demo-2.jpg",
+    "defaultSortWeight": 5,
+    "lastCommit": "2024-10-18T21:05:20+01:00"
   },
   {
     "name": "EXT-Screen",
@@ -19119,7 +19135,7 @@
     "maintainer": "KristjanESPERANTO",
     "maintainerURL": "",
     "description": "A Text-To-Speech module which uses the Web Speech API of the browser. It is in an early stage of development. So far only German is supported.",
-    "issues": false,
+    "issues": true,
     "stars": 3,
     "license": "MIT",
     "tags": [

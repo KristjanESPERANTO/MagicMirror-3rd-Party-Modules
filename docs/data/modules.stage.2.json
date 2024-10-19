@@ -5937,7 +5937,7 @@
     "id": "SBrendan/MMM-LittleBockFermentationLog",
     "maintainer": "SBrendan",
     "maintainerURL": "https://github.com/SBrendan",
-    "description": "🍺Display beer fermentation log from <a target=\"_blank\" href=\"https://www.littlebock.fr\">LittleBock</a> API",
+    "description": "🍺 Display beer fermentation log from <a target=\"_blank\" href=\"https://www.littlebock.fr\">LittleBock</a> API.",
     "issues": [],
     "stars": 0
   },
@@ -8091,7 +8091,7 @@
     "maintainerURL": "https://github.com/spitzlbergerj",
     "description": "Display the status of devices on the network based on their MAC address with nice columnview.",
     "issues": [],
-    "stars": 20,
+    "stars": 21,
     "hasGithubIssues": false,
     "license": "MIT"
   },
@@ -8346,6 +8346,7 @@
     "issues": [],
     "outdated": "Abandoned. Repo has been archived at 2024-10-14.",
     "stars": 1,
+    "isArchived": true,
     "license": "MIT"
   },
   {
@@ -10800,6 +10801,17 @@
     "stars": 1,
     "isArchived": true,
     "license": "MIT"
+  },
+  {
+    "name": "MMM-Scrapey",
+    "category": "Utility / IOT / 3rd Party / Integration",
+    "url": "https://github.com/AndyHazz/MMM-Scrapey",
+    "id": "AndyHazz/MMM-Scrapey",
+    "maintainer": "AndyHazz",
+    "maintainerURL": "",
+    "description": "Scrape a table from any webpage, choose which columns and rows you want and how often to refresh.",
+    "issues": [],
+    "stars": 2
   },
   {
     "name": "EXT-Screen",

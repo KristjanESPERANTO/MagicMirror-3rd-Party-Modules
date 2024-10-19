@@ -1,11 +1,11 @@
 {
-  "moduleCounter": 1184,
-  "modulesWithImageCounter": 832,
-  "modulesWithIssuesCounter": 1177,
-  "issueCounter": 6798,
-  "lastUpdate": "2024-10-18T17:38:03+02:00",
+  "moduleCounter": 1185,
+  "modulesWithImageCounter": 833,
+  "modulesWithIssuesCounter": 1183,
+  "issueCounter": 6809,
+  "lastUpdate": "2024-10-19T05:38:01+02:00",
   "repositoryHoster": {
-    "github": 1075,
+    "github": 1076,
     "gitlab": 10,
     "bitbucket": 1
   },
@@ -179,6 +179,7 @@
     "MikeBishop": 2,
     "gravitykillseverything": 2,
     "bogenpirat": 2,
+    "AndyHazz": 2,
     "sabo10o29": 2,
     "st3v0rr": 2,
     "bendardenne": 2,
@@ -604,7 +605,6 @@
     "robotfishe": 1,
     "rafagale": 1,
     "WilliamFitzjohn": 1,
-    "AndyHazz": 1,
     "maloakes": 1,
     "Captsi": 1,
     "bacherd": 1,

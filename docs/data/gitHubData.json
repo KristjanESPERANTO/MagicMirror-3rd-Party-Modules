@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "2024-10-18T15:30:21.402Z",
+  "lastUpdate": "2024-10-19T03:30:22.282Z",
   "repositories": [
     {
       "id": "0lek/MMM-socialbicycles",
@@ -671,6 +671,20 @@
         "defaultBranch": "master",
         "has_issues": true,
         "lastCommit": "2021-10-13T08:50:40Z"
+      }
+    },
+    {
+      "id": "AndyHazz/MMM-Scrapey",
+      "gitHubDataLastUpdate": "2024-10-19T03:30:09.484Z",
+      "gitHubData": {
+        "issues": 0,
+        "stars": 2,
+        "license": null,
+        "archived": false,
+        "disabled": false,
+        "defaultBranch": "main",
+        "has_issues": true,
+        "lastCommit": "2024-10-18T20:05:20Z"
       }
     },
     {
@@ -2285,7 +2299,7 @@
     },
     {
       "id": "bureus/MMM-Nightscout",
-      "gitHubDataLastUpdate": "2024-09-30T15:30:17.353Z",
+      "gitHubDataLastUpdate": "2024-10-19T03:30:16.408Z",
       "gitHubData": {
         "issues": 1,
         "stars": 14,
@@ -2747,7 +2761,7 @@
     },
     {
       "id": "choffmann/MMM-Notion",
-      "gitHubDataLastUpdate": "2024-10-01T03:30:10.074Z",
+      "gitHubDataLastUpdate": "2024-10-19T03:30:22.239Z",
       "gitHubData": {
         "issues": 3,
         "stars": 9,
@@ -2985,7 +2999,7 @@
     },
     {
       "id": "cowboysdude/MMM-NOAA3",
-      "gitHubDataLastUpdate": "2024-09-30T15:30:21.177Z",
+      "gitHubDataLastUpdate": "2024-10-19T03:30:20.107Z",
       "gitHubData": {
         "issues": 13,
         "stars": 2,
@@ -3027,7 +3041,7 @@
     },
     {
       "id": "CptMeetKat/MMM-NextTrains",
-      "gitHubDataLastUpdate": "2024-09-30T15:30:14.231Z",
+      "gitHubDataLastUpdate": "2024-10-19T03:30:14.249Z",
       "gitHubData": {
         "issues": 1,
         "stars": 0,
@@ -3041,7 +3055,7 @@
     },
     {
       "id": "crice009/MMM-NOAATides",
-      "gitHubDataLastUpdate": "2024-09-30T15:30:21.659Z",
+      "gitHubDataLastUpdate": "2024-10-19T03:30:20.535Z",
       "gitHubData": {
         "issues": 2,
         "stars": 4,
@@ -3139,7 +3153,7 @@
     },
     {
       "id": "cure/MMM-NextEvent",
-      "gitHubDataLastUpdate": "2024-09-30T15:30:13.777Z",
+      "gitHubDataLastUpdate": "2024-10-19T03:30:13.739Z",
       "gitHubData": {
         "issues": 2,
         "stars": 2,
@@ -3741,7 +3755,7 @@
     },
     {
       "id": "dimitrystd/MMM-NJTransit",
-      "gitHubDataLastUpdate": "2024-09-30T15:30:19.231Z",
+      "gitHubDataLastUpdate": "2024-10-19T03:30:18.252Z",
       "gitHubData": {
         "issues": 1,
         "stars": 7,
@@ -4665,7 +4679,7 @@
     },
     {
       "id": "fewieden/MMM-NFL",
-      "gitHubDataLastUpdate": "2024-09-30T15:30:15.240Z",
+      "gitHubDataLastUpdate": "2024-10-19T03:30:15.078Z",
       "gitHubData": {
         "issues": 4,
         "stars": 28,
@@ -5995,7 +6009,7 @@
     },
     {
       "id": "Isaac-the-Man/MMM-nixie-clock",
-      "gitHubDataLastUpdate": "2024-09-30T15:30:18.251Z",
+      "gitHubDataLastUpdate": "2024-10-19T03:30:17.324Z",
       "gitHubData": {
         "issues": 1,
         "stars": 16,
@@ -6191,7 +6205,7 @@
     },
     {
       "id": "jalibu/MMM-NINA",
-      "gitHubDataLastUpdate": "2024-09-30T15:30:17.775Z",
+      "gitHubDataLastUpdate": "2024-10-19T03:30:16.835Z",
       "gitHubData": {
         "issues": 1,
         "stars": 21,
@@ -6233,7 +6247,7 @@
     },
     {
       "id": "Jan-Bart/MMM-NMBS-Connection",
-      "gitHubDataLastUpdate": "2024-09-30T15:30:20.690Z",
+      "gitHubDataLastUpdate": "2024-10-19T03:30:19.601Z",
       "gitHubData": {
         "issues": 4,
         "stars": 1,
@@ -6387,7 +6401,7 @@
     },
     {
       "id": "jcktwd/MMM-NexusMetroRTI",
-      "gitHubDataLastUpdate": "2024-09-30T15:30:14.716Z",
+      "gitHubDataLastUpdate": "2024-10-19T03:30:14.648Z",
       "gitHubData": {
         "issues": 0,
         "stars": 0,
@@ -6751,7 +6765,7 @@
     },
     {
       "id": "joanaz/MMM-NoteTaker",
-      "gitHubDataLastUpdate": "2024-09-30T15:30:22.222Z",
+      "gitHubDataLastUpdate": "2024-10-19T03:30:20.964Z",
       "gitHubData": {
         "issues": 1,
         "stars": 9,
@@ -7241,7 +7255,7 @@
     },
     {
       "id": "justjim1220/MMM-NewsFeedTicker",
-      "gitHubDataLastUpdate": "2024-09-30T15:30:11.235Z",
+      "gitHubDataLastUpdate": "2024-10-19T03:30:11.419Z",
       "gitHubData": {
         "issues": 5,
         "stars": 26,
@@ -9033,7 +9047,7 @@
     },
     {
       "id": "mlbonniec/MMM-NiceHash",
-      "gitHubDataLastUpdate": "2024-09-30T15:30:16.819Z",
+      "gitHubDataLastUpdate": "2024-10-19T03:30:15.999Z",
       "gitHubData": {
         "issues": 3,
         "stars": 0,
@@ -9341,7 +9355,7 @@
     },
     {
       "id": "MMRIZE/MMM-NotificationTrigger",
-      "gitHubDataLastUpdate": "2024-10-01T03:30:09.578Z",
+      "gitHubDataLastUpdate": "2024-10-19T03:30:21.865Z",
       "gitHubData": {
         "issues": 0,
         "stars": 19,
@@ -9789,7 +9803,7 @@
     },
     {
       "id": "mumblebaj/MMM-NewsAPI",
-      "gitHubDataLastUpdate": "2024-09-30T15:30:10.753Z",
+      "gitHubDataLastUpdate": "2024-10-19T03:30:10.953Z",
       "gitHubData": {
         "issues": 1,
         "stars": 9,
@@ -10783,7 +10797,7 @@
     },
     {
       "id": "nikobix/MMM-Nixie-Clock",
-      "gitHubDataLastUpdate": "2024-09-30T15:30:18.694Z",
+      "gitHubDataLastUpdate": "2024-10-19T03:30:17.798Z",
       "gitHubData": {
         "issues": 0,
         "stars": 7,
@@ -10895,7 +10909,7 @@
     },
     {
       "id": "nischi/MMM-News-QR",
-      "gitHubDataLastUpdate": "2024-09-30T15:30:10.223Z",
+      "gitHubDataLastUpdate": "2024-10-19T03:30:10.484Z",
       "gitHubData": {
         "issues": 1,
         "stars": 13,
@@ -11623,7 +11637,7 @@
     },
     {
       "id": "PierreGode/MMM-next-episode",
-      "gitHubDataLastUpdate": "2024-09-30T15:30:11.792Z",
+      "gitHubDataLastUpdate": "2024-10-19T03:30:11.916Z",
       "gitHubData": {
         "issues": 0,
         "stars": 5,
@@ -13891,10 +13905,10 @@
     },
     {
       "id": "spitzlbergerj/MMM-NetworkScanner",
-      "gitHubDataLastUpdate": "2024-09-30T15:30:09.717Z",
+      "gitHubDataLastUpdate": "2024-10-19T03:30:09.986Z",
       "gitHubData": {
         "issues": 0,
-        "stars": 20,
+        "stars": 21,
         "license": "MIT",
         "archived": false,
         "disabled": false,
@@ -14045,7 +14059,7 @@
     },
     {
       "id": "starlingfire/MMM-NextCloud-Tasks",
-      "gitHubDataLastUpdate": "2024-09-30T15:30:13.361Z",
+      "gitHubDataLastUpdate": "2024-10-19T03:30:13.229Z",
       "gitHubData": {
         "issues": 1,
         "stars": 2,
@@ -14423,7 +14437,7 @@
     },
     {
       "id": "TemianMihai/MMM-NFTcollections",
-      "gitHubDataLastUpdate": "2024-09-30T15:30:15.798Z",
+      "gitHubDataLastUpdate": "2024-10-19T03:30:15.555Z",
       "gitHubData": {
         "issues": 0,
         "stars": 2,
@@ -14479,7 +14493,7 @@
     },
     {
       "id": "thekampany/MMM-NL-rain-intensity",
-      "gitHubDataLastUpdate": "2024-09-30T15:30:19.701Z",
+      "gitHubDataLastUpdate": "2024-10-19T03:30:18.673Z",
       "gitHubData": {
         "issues": 0,
         "stars": 0,
@@ -14913,7 +14927,7 @@
     },
     {
       "id": "Tom-Hirschberger/MMM-Notification-To-Command",
-      "gitHubDataLastUpdate": "2024-10-01T03:30:09.096Z",
+      "gitHubDataLastUpdate": "2024-10-19T03:30:21.431Z",
       "gitHubData": {
         "issues": 0,
         "stars": 2,
@@ -15151,16 +15165,16 @@
     },
     {
       "id": "Travelbacon/MMM-NLDepartureTimes",
-      "gitHubDataLastUpdate": "2024-09-30T15:30:20.232Z",
+      "gitHubDataLastUpdate": "2024-10-19T03:30:19.183Z",
       "gitHubData": {
         "issues": 0,
         "stars": 1,
         "license": "MIT",
-        "archived": false,
+        "archived": true,
         "disabled": false,
         "defaultBranch": "master",
         "has_issues": true,
-        "lastCommit": "2024-07-21T18:33:26Z"
+        "lastCommit": "2024-10-14T20:37:02Z"
       }
     },
     {
@@ -15193,7 +15207,7 @@
     },
     {
       "id": "trizome/next-train-transilien",
-      "gitHubDataLastUpdate": "2024-09-30T15:30:12.322Z",
+      "gitHubDataLastUpdate": "2024-10-19T03:30:12.367Z",
       "gitHubData": {
         "issues": 2,
         "stars": 0,
@@ -16229,7 +16243,7 @@
     },
     {
       "id": "yo-less/MMM-nextbike",
-      "gitHubDataLastUpdate": "2024-09-30T15:30:12.826Z",
+      "gitHubDataLastUpdate": "2024-10-19T03:30:12.776Z",
       "gitHubData": {
         "issues": 4,
         "stars": 8,

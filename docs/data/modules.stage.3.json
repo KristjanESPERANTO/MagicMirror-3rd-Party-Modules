@@ -8228,7 +8228,7 @@
     "id": "SBrendan/MMM-LittleBockFermentationLog",
     "maintainer": "SBrendan",
     "maintainerURL": "https://github.com/SBrendan",
-    "description": "🍺Display beer fermentation log from <a target=\"_blank\" href=\"https://www.littlebock.fr\">LittleBock</a> API",
+    "description": "🍺 Display beer fermentation log from <a target=\"_blank\" href=\"https://www.littlebock.fr\">LittleBock</a> API.",
     "issues": [],
     "stars": 0,
     "tags": [
@@ -11235,7 +11235,7 @@
     "issues": [
       "Issues are not enabled in the GitHub repository. So users cannot report bugs. Please enable issues in your repo."
     ],
-    "stars": 20,
+    "stars": 21,
     "hasGithubIssues": false,
     "license": "MIT",
     "tags": [
@@ -11593,6 +11593,7 @@
     "issues": [],
     "outdated": "Abandoned. Repo has been archived at 2024-10-14.",
     "stars": 1,
+    "isArchived": true,
     "license": "MIT",
     "tags": [
       "public transport"
@@ -14969,6 +14970,22 @@
       "scottish premier league"
     ],
     "image": ".github-example.jpg"
+  },
+  {
+    "name": "MMM-Scrapey",
+    "category": "Utility / IOT / 3rd Party / Integration",
+    "url": "https://github.com/AndyHazz/MMM-Scrapey",
+    "id": "AndyHazz/MMM-Scrapey",
+    "maintainer": "AndyHazz",
+    "maintainerURL": "",
+    "description": "Scrape a table from any webpage, choose which columns and rows you want and how often to refresh.",
+    "issues": [
+      "`package.json` issue: No repository field.",
+      "There are no specific keywords in 'package.json'. We would use them as tags on the module list page. Add a few meaningful terms to the keywords in the package.json. Not just “magicmirror” or “module”."
+    ],
+    "stars": 2,
+    "license": "ISC",
+    "image": "img-demo-2.jpg"
   },
   {
     "name": "EXT-Screen",

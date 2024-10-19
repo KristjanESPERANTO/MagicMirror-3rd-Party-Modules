@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "2024-10-18T15:30:06.432Z",
+  "lastUpdate": "2024-10-19T03:30:08.238Z",
   "modules": [
     {
       "name": "MMM-01ZM",
@@ -5016,7 +5016,7 @@
       "id": "SBrendan/MMM-LittleBockFermentationLog",
       "maintainer": "SBrendan",
       "maintainerURL": "https://github.com/SBrendan",
-      "description": "🍺Display beer fermentation log from <a target=\"_blank\" href=\"https://www.littlebock.fr\">LittleBock</a> API",
+      "description": "🍺 Display beer fermentation log from <a target=\"_blank\" href=\"https://www.littlebock.fr\">LittleBock</a> API.",
       "issues": []
     },
     {
@@ -9122,6 +9122,16 @@
       "description": "Display scottish premiere league standings.",
       "issues": [],
       "outdated": "Abandoned. Repo has been archived at 2020-05-09."
+    },
+    {
+      "name": "MMM-Scrapey",
+      "category": "Utility / IOT / 3rd Party / Integration",
+      "url": "https://github.com/AndyHazz/MMM-Scrapey",
+      "id": "AndyHazz/MMM-Scrapey",
+      "maintainer": "AndyHazz",
+      "maintainerURL": "",
+      "description": "Scrape a table from any webpage, choose which columns and rows you want and how often to refresh.",
+      "issues": []
     },
     {
       "name": "EXT-Screen",
