@@ -1,16 +1,16 @@
 # Result of the module analysis
 
-Last update: 2024-10-19T05:38:01+02:00
+Last update: 2024-10-19T17:38:05+02:00
 
 ## Statistics
 
 |                      | number   |
 |:---------------------|:--------:|
-| modules analyzed     |   1185   |
-| maintainer           |    636   |
-| modules with issues  |   1183   |
-| issues               |   6809   |
-| modules at github    |   1076   |
+| modules analyzed     |   1186   |
+| maintainer           |    637   |
+| modules with issues  |   1184   |
+| issues               |   6813   |
+| modules at github    |   1077   |
 | modules at gitlab    |     10   |
 | modules at bitbucket |      1   |
 
@@ -734,7 +734,7 @@ Last update: 2024-10-19T05:38:01+02:00
    - @stylistic/eslint-plugin             ^1.6.2  →   ^2.9.0
    - @types/express                     ^4.17.11  →   ^5.0.0
    - @types/magicmirror-module           ^2.16.0  →  ^2.16.5
-   - @types/node                       ^14.14.22  →  ^22.7.6
+   - @types/node                       ^14.14.22  →  ^22.7.7
    - @typescript-eslint/eslint-plugin     ^7.0.2  →  ^8.10.0
    - @typescript-eslint/parser            ^7.0.2  →  ^8.10.0
    - bosch-smart-home-bridge              ^1.4.1  →   ^1.6.0
@@ -1567,6 +1567,13 @@ Last update: 2024-10-19T05:38:01+02:00
 7. Warning: No LICENSE file.
 8. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
 
+### [MMM-DailyStoic by SmolinskiP](https://github.com/SmolinskiP/MMM-DailyStoic)
+
+1. There is no `package.json`. We need this file to gather information about the module for the module list page.
+2. No image found.
+3. Deprecated: Found `require("request")` in file `node_helper.js`: Replace it with built-in fetch.
+4. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
+
 ### [MMM-DailyUnreachedPeopleGroup by MStoltzfus](https://github.com/MStoltzfus/MMM-DailyUnreachedPeopleGroup)
 
 1. `package.json` issue: No repository field.
@@ -1667,9 +1674,10 @@ Last update: 2024-10-19T05:38:01+02:00
 
 1. Recommendation: The README seems not to have an update instruction (the word 'update' is missing). Please add one.
 2. Recommendation: The README seems not to have an install instruction (the words 'install' or 'installation' are missing). Please add one.
-3. Information: There are updates for 5 dependencie(s):
+3. Information: There are updates for 6 dependencie(s):
    - @eslint/js                ^8.57.1  →  ^9.13.0
    - @stylistic/eslint-plugin   ^1.8.1  →   ^2.9.0
+   - @types/node               ^22.7.6  →  ^22.7.7
    - eslint                    ^8.57.1  →  ^9.13.0
    - eslint-plugin-import      ^2.29.1  →  ^2.31.0
    - glob                      ^10.4.5  →  ^11.0.0

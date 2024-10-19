@@ -2235,6 +2235,18 @@
     "stars": 1
   },
   {
+    "name": "MMM-DailyStoic",
+    "category": "News / Information",
+    "url": "https://github.com/SmolinskiP/MMM-DailyStoic",
+    "id": "SmolinskiP/MMM-DailyStoic",
+    "maintainer": "SmolinskiP",
+    "maintainerURL": "",
+    "description": "Your everyday stoic quote",
+    "issues": [],
+    "stars": 0,
+    "license": "MIT"
+  },
+  {
     "name": "MMM-DailyUnreachedPeopleGroup",
     "category": "Religion",
     "url": "https://github.com/MStoltzfus/MMM-DailyUnreachedPeopleGroup",
@@ -8468,7 +8480,7 @@
     "description": "Display the song you are currently listening to on Spotify.",
     "issues": [],
     "outdated": "Abandoned. No reactions to issues since years. Depends on deprecated modules. MMM-OnSpotify is an alternative.",
-    "stars": 205,
+    "stars": 206,
     "license": "MIT"
   },
   {
@@ -8743,7 +8755,7 @@
     "maintainerURL": "",
     "description": "Simple On-Screen Menu for controlling the MagicMirror².",
     "issues": [],
-    "stars": 63,
+    "stars": 64,
     "license": "MIT"
   },
   {
@@ -8755,7 +8767,7 @@
     "maintainerURL": "https://github.com/Fabrizz",
     "description": "Highly customizable module that displays what you are listening to in Spotify. Works with <a target=\"_blank\" href=\"https://github.com/Fabrizz/MMM-LiveLyrics\">MMM-LiveLyrics</a> and allows theming other modules!",
     "issues": [],
-    "stars": 62,
+    "stars": 64,
     "license": "MIT"
   },
   {
