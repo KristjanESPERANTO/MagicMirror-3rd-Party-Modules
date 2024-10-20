@@ -253,7 +253,7 @@
     "maintainerURL": "",
     "description": "Display air quality and Pollen information using data from the ambee API.<br /><strong>Note:</strong> API key is only available with a business email address.",
     "issues": true,
-    "stars": 0,
+    "stars": 1,
     "license": "MIT",
     "tags": [
       "airquality",
@@ -12497,7 +12497,7 @@
     "maintainerURL": "",
     "description": "Displays current, hourly and daily forecast information using data from the OpenWeather One Call API.",
     "issues": true,
-    "stars": 5,
+    "stars": 7,
     "tags": [
       "openweathermap",
       "weather",
@@ -12627,7 +12627,7 @@
     "maintainerURL": "",
     "description": "A helper module to display what page you're on. Intended to be used with other modules that rotate out modules.",
     "issues": true,
-    "stars": 39,
+    "stars": 40,
     "license": "MIT",
     "image": "example_picture.jpg",
     "defaultSortWeight": 2,
@@ -12683,7 +12683,7 @@
     "maintainerURL": "",
     "description": "Rotate out pages of modules.",
     "issues": true,
-    "stars": 3,
+    "stars": 4,
     "license": "MIT",
     "tags": [
       "pages",

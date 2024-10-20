@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "2024-10-19T15:30:20.918Z",
+  "lastUpdate": "2024-10-20T03:30:21.872Z",
   "repositories": [
     {
       "id": "0lek/MMM-socialbicycles",
@@ -1935,7 +1935,7 @@
     },
     {
       "id": "bugsounet/EXT-Pages",
-      "gitHubDataLastUpdate": "2024-10-01T15:30:19.512Z",
+      "gitHubDataLastUpdate": "2024-10-20T03:30:17.970Z",
       "gitHubData": {
         "issues": 0,
         "stars": 4,
@@ -3251,7 +3251,7 @@
     },
     {
       "id": "da4throux/MMM-Paris-RATP-PG",
-      "gitHubDataLastUpdate": "2024-10-01T15:30:22.540Z",
+      "gitHubDataLastUpdate": "2024-10-20T03:30:20.361Z",
       "gitHubData": {
         "issues": 2,
         "stars": 14,
@@ -3713,7 +3713,7 @@
     },
     {
       "id": "dgburr/MMM-PageReader",
-      "gitHubDataLastUpdate": "2024-10-01T15:30:18.513Z",
+      "gitHubDataLastUpdate": "2024-10-20T03:30:16.927Z",
       "gitHubData": {
         "issues": 2,
         "stars": 5,
@@ -4203,10 +4203,10 @@
     },
     {
       "id": "edward-shen/MMM-page-indicator",
-      "gitHubDataLastUpdate": "2024-10-01T15:30:16.998Z",
+      "gitHubDataLastUpdate": "2024-10-20T03:30:15.574Z",
       "gitHubData": {
         "issues": 1,
-        "stars": 39,
+        "stars": 40,
         "license": "MIT",
         "archived": false,
         "disabled": false,
@@ -4399,7 +4399,7 @@
     },
     {
       "id": "erchenger/MMM-Oura",
-      "gitHubDataLastUpdate": "2024-10-01T15:30:14.919Z",
+      "gitHubDataLastUpdate": "2024-10-20T03:30:13.805Z",
       "gitHubData": {
         "issues": 2,
         "stars": 4,
@@ -5323,7 +5323,7 @@
     },
     {
       "id": "Gomez0015/MMM-OTIS",
-      "gitHubDataLastUpdate": "2024-10-01T15:30:14.464Z",
+      "gitHubDataLastUpdate": "2024-10-20T03:30:13.396Z",
       "gitHubData": {
         "issues": 0,
         "stars": 3,
@@ -5743,7 +5743,7 @@
     },
     {
       "id": "hggh/MMM-OpenHAB-Items",
-      "gitHubDataLastUpdate": "2024-10-01T15:30:09.918Z",
+      "gitHubDataLastUpdate": "2024-10-20T03:30:08.748Z",
       "gitHubData": {
         "issues": 2,
         "stars": 4,
@@ -6387,7 +6387,7 @@
     },
     {
       "id": "jboucly/MMM-Pages-Screencast",
-      "gitHubDataLastUpdate": "2024-10-01T15:30:19.934Z",
+      "gitHubDataLastUpdate": "2024-10-20T03:30:18.384Z",
       "gitHubData": {
         "issues": 0,
         "stars": 7,
@@ -6821,7 +6821,7 @@
     },
     {
       "id": "johnny-co/MMM-OpenSprinkler",
-      "gitHubDataLastUpdate": "2024-10-01T15:30:11.942Z",
+      "gitHubDataLastUpdate": "2024-10-20T03:30:10.952Z",
       "gitHubData": {
         "issues": 2,
         "stars": 0,
@@ -7325,7 +7325,7 @@
     },
     {
       "id": "kaelspencer/MMM-PaprikaMenu",
-      "gitHubDataLastUpdate": "2024-10-01T15:30:21.474Z",
+      "gitHubDataLastUpdate": "2024-10-20T03:30:19.377Z",
       "gitHubData": {
         "issues": 3,
         "stars": 13,
@@ -8347,7 +8347,7 @@
     },
     {
       "id": "martinkooij/MMM-Parcel",
-      "gitHubDataLastUpdate": "2024-10-01T15:30:22.012Z",
+      "gitHubDataLastUpdate": "2024-10-20T03:30:19.851Z",
       "gitHubData": {
         "issues": 4,
         "stars": 25,
@@ -8669,7 +8669,7 @@
     },
     {
       "id": "Menturan/MMM-OpeningHours",
-      "gitHubDataLastUpdate": "2024-10-01T15:30:11.078Z",
+      "gitHubDataLastUpdate": "2024-10-20T03:30:10.045Z",
       "gitHubData": {
         "issues": 12,
         "stars": 12,
@@ -10643,7 +10643,7 @@
     },
     {
       "id": "NickEngmann/MMM-ParticleStatus",
-      "gitHubDataLastUpdate": "2024-10-01T15:30:23.024Z",
+      "gitHubDataLastUpdate": "2024-10-20T03:30:20.893Z",
       "gitHubData": {
         "issues": 0,
         "stars": 3,
@@ -11497,7 +11497,7 @@
     },
     {
       "id": "pbuabthong/MMM-PasadenaTransit",
-      "gitHubDataLastUpdate": "2024-10-02T03:30:07.362Z",
+      "gitHubDataLastUpdate": "2024-10-20T03:30:21.764Z",
       "gitHubData": {
         "issues": 0,
         "stars": 0,
@@ -11609,16 +11609,16 @@
     },
     {
       "id": "PierreGode/MMM-airquality",
-      "gitHubDataLastUpdate": "2024-10-02T03:30:06.917Z",
+      "gitHubDataLastUpdate": "2024-10-20T03:30:21.354Z",
       "gitHubData": {
         "issues": 0,
-        "stars": 0,
+        "stars": 1,
         "license": "MIT",
         "archived": false,
         "disabled": false,
         "defaultBranch": "main",
         "has_issues": true,
-        "lastCommit": "2024-10-01T20:11:44Z"
+        "lastCommit": "2024-10-07T04:53:19Z"
       }
     },
     {
@@ -12253,7 +12253,7 @@
     },
     {
       "id": "RedNax67/MMM-OpenTherm",
-      "gitHubDataLastUpdate": "2024-10-01T15:30:12.345Z",
+      "gitHubDataLastUpdate": "2024-10-20T03:30:11.369Z",
       "gitHubData": {
         "issues": 0,
         "stars": 2,
@@ -12435,7 +12435,7 @@
     },
     {
       "id": "retroflex/MMM-Overwatch",
-      "gitHubDataLastUpdate": "2024-10-01T15:30:15.968Z",
+      "gitHubDataLastUpdate": "2024-10-20T03:30:14.716Z",
       "gitHubData": {
         "issues": 0,
         "stars": 1,
@@ -12869,7 +12869,7 @@
     },
     {
       "id": "sathyarajv/MMM-OpenmapWeather",
-      "gitHubDataLastUpdate": "2024-10-01T15:30:11.504Z",
+      "gitHubDataLastUpdate": "2024-10-20T03:30:10.483Z",
       "gitHubData": {
         "issues": 4,
         "stars": 30,
@@ -12925,10 +12925,10 @@
     },
     {
       "id": "sdetweil/MMM-pages",
-      "gitHubDataLastUpdate": "2024-10-01T15:30:19.064Z",
+      "gitHubDataLastUpdate": "2024-10-20T03:30:17.411Z",
       "gitHubData": {
-        "issues": 0,
-        "stars": 3,
+        "issues": 1,
+        "stars": 4,
         "license": "MIT",
         "archived": false,
         "disabled": false,
@@ -13681,7 +13681,7 @@
     },
     {
       "id": "smartgic/MMM-ovos-wakeword",
-      "gitHubDataLastUpdate": "2024-10-01T15:30:16.574Z",
+      "gitHubDataLastUpdate": "2024-10-20T03:30:15.204Z",
       "gitHubData": {
         "issues": 0,
         "stars": 3,
@@ -13877,7 +13877,7 @@
     },
     {
       "id": "spelinski/MMM-PandorasMirror",
-      "gitHubDataLastUpdate": "2024-10-01T15:30:20.437Z",
+      "gitHubDataLastUpdate": "2024-10-20T03:30:18.913Z",
       "gitHubData": {
         "issues": 2,
         "stars": 3,
@@ -14115,7 +14115,7 @@
     },
     {
       "id": "steve415/MMM-openhabQuickWatch",
-      "gitHubDataLastUpdate": "2024-10-01T15:30:10.663Z",
+      "gitHubDataLastUpdate": "2024-10-20T03:30:09.539Z",
       "gitHubData": {
         "issues": 1,
         "stars": 1,
@@ -14535,7 +14535,7 @@
     },
     {
       "id": "themox/MMM-Oura2",
-      "gitHubDataLastUpdate": "2024-10-01T15:30:15.375Z",
+      "gitHubDataLastUpdate": "2024-10-20T03:30:14.217Z",
       "gitHubData": {
         "issues": 3,
         "stars": 3,
@@ -14703,7 +14703,7 @@
     },
     {
       "id": "thobach/MMM-OpenWeather24Hours",
-      "gitHubDataLastUpdate": "2024-10-01T15:30:12.774Z",
+      "gitHubDataLastUpdate": "2024-10-20T03:30:11.778Z",
       "gitHubData": {
         "issues": 0,
         "stars": 11,
@@ -14829,7 +14829,7 @@
     },
     {
       "id": "TobbenTM/MMM-OsloCityBike",
-      "gitHubDataLastUpdate": "2024-10-01T15:30:13.715Z",
+      "gitHubDataLastUpdate": "2024-10-20T03:30:12.655Z",
       "gitHubData": {
         "issues": 0,
         "stars": 2,
@@ -14955,16 +14955,16 @@
     },
     {
       "id": "Tom-Hirschberger/MMM-OpenWeatherForecast",
-      "gitHubDataLastUpdate": "2024-10-01T15:30:13.261Z",
+      "gitHubDataLastUpdate": "2024-10-20T03:30:12.189Z",
       "gitHubData": {
         "issues": 0,
-        "stars": 5,
+        "stars": 7,
         "license": null,
         "archived": false,
         "disabled": false,
         "defaultBranch": "master",
         "has_issues": true,
-        "lastCommit": "2024-09-17T19:01:24Z"
+        "lastCommit": "2024-10-04T19:35:28Z"
       }
     },
     {
@@ -15585,7 +15585,7 @@
     },
     {
       "id": "Veldrovive/MMM-Page-Selector",
-      "gitHubDataLastUpdate": "2024-10-01T15:30:17.995Z",
+      "gitHubDataLastUpdate": "2024-10-20T03:30:16.496Z",
       "gitHubData": {
         "issues": 11,
         "stars": 35,
@@ -16397,7 +16397,7 @@
     },
     {
       "id": "zerosamski/MMM-Page-Pusher",
-      "gitHubDataLastUpdate": "2024-10-01T15:30:17.437Z",
+      "gitHubDataLastUpdate": "2024-10-20T03:30:16.077Z",
       "gitHubData": {
         "issues": 0,
         "stars": 6,

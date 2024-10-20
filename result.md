@@ -1,6 +1,6 @@
 # Result of the module analysis
 
-Last update: 2024-10-19T17:38:05+02:00
+Last update: 2024-10-20T05:37:55+02:00
 
 ## Statistics
 
@@ -5467,7 +5467,7 @@ Last update: 2024-10-19T17:38:05+02:00
 
 1. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
 2. Information: There are updates for 1 dependencie(s):
-   - jsonpath-plus  10.0.1  →  10.0.7
+   - jsonpath-plus  10.0.1  →  10.1.0
 
 
 ### [MMM-MQTTfloorplan by DMailMan](https://github.com/DMailMan/MMM-MQTTfloorplan)
@@ -9313,7 +9313,7 @@ Last update: 2024-10-19T17:38:05+02:00
 
 1. Recommendation: Replace eslintrc by new flat config.
 2. Information: There are updates for 1 dependencie(s):
-   - jsonpath-plus  10.0.4  →  10.0.7
+   - jsonpath-plus  10.0.4  →  10.1.0
 
 
 ### [MMM-Toulouse-Transports by LoneWanderer-GH](https://github.com/LoneWanderer-GH/MMM-Toulouse-Transports)
@@ -9707,7 +9707,7 @@ Last update: 2024-10-19T17:38:05+02:00
 
 1. Recommendation: Replace eslintrc by new flat config.
 2. Information: There are updates for 1 dependencie(s):
-   - jsonpath-plus  10.0.4  →  10.0.7
+   - jsonpath-plus  10.0.4  →  10.1.0
 
 
 ### [MMM-VartaESS by deg0nz](https://github.com/deg0nz/MMM-VartaESS)
