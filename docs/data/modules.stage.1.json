@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "2024-10-20T03:30:06.980Z",
+  "lastUpdate": "2024-10-20T15:30:07.258Z",
   "modules": [
     {
       "name": "MMM-01ZM",
@@ -451,6 +451,16 @@
       "maintainer": "relm923",
       "maintainerURL": "",
       "description": "This module pulls data (lock and door status) from August Locks connected to the configured account using august-connect.",
+      "issues": []
+    },
+    {
+      "name": "MMM-AuroraWatchUK",
+      "category": "Weather",
+      "url": "https://github.com/AndyHazz/MMM-AuroraWatchUK",
+      "id": "AndyHazz/MMM-AuroraWatchUK",
+      "maintainer": "AndyHazz",
+      "maintainerURL": "",
+      "description": "Display Aurora alerts when visibility is likely in the UK",
       "issues": []
     },
     {
@@ -2028,6 +2038,16 @@
       "maintainer": "wouter-heerwegh",
       "maintainerURL": "https://github.com/wouter-heerwegh",
       "description": "Retrieves live timings of busses for a specific bus stop.",
+      "issues": []
+    },
+    {
+      "name": "MMM-DenHaag-TrashCalendar",
+      "category": "Utility / IOT / 3rd Party / Integration",
+      "url": "https://github.com/cokceken/MMM-DenHaag-TrashCalendar",
+      "id": "cokceken/MMM-DenHaag-TrashCalendar",
+      "maintainer": "cokceken",
+      "maintainerURL": "",
+      "description": "Display trash collection days in Den Haag / the Netherlands.",
       "issues": []
     },
     {

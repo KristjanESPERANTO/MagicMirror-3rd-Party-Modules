@@ -792,6 +792,21 @@
     "lastCommit": "2021-06-28T23:16:27-04:00"
   },
   {
+    "name": "MMM-AuroraWatchUK",
+    "category": "Weather",
+    "url": "https://github.com/AndyHazz/MMM-AuroraWatchUK",
+    "id": "AndyHazz/MMM-AuroraWatchUK",
+    "maintainer": "AndyHazz",
+    "maintainerURL": "",
+    "description": "Display Aurora alerts when visibility is likely in the UK",
+    "issues": true,
+    "stars": 1,
+    "license": "ISC",
+    "image": "img-demo.jpg",
+    "defaultSortWeight": 9,
+    "lastCommit": "2024-10-20T10:11:02+01:00"
+  },
+  {
     "name": "MMM-Autobahn",
     "category": "Transport / Travel",
     "url": "https://github.com/JockeyDoe/MMM-Autobahn",
@@ -3335,6 +3350,21 @@
     "stars": 2,
     "defaultSortWeight": 8,
     "lastCommit": "2020-10-30T17:32:11+01:00"
+  },
+  {
+    "name": "MMM-DenHaag-TrashCalendar",
+    "category": "Utility / IOT / 3rd Party / Integration",
+    "url": "https://github.com/cokceken/MMM-DenHaag-TrashCalendar",
+    "id": "cokceken/MMM-DenHaag-TrashCalendar",
+    "maintainer": "cokceken",
+    "maintainerURL": "",
+    "description": "Display trash collection days in Den Haag / the Netherlands.",
+    "issues": true,
+    "stars": 0,
+    "license": "ISC",
+    "image": "MMM-DenHaag-trashcalendar.jpg",
+    "defaultSortWeight": 9,
+    "lastCommit": "2024-10-20T15:06:28+02:00"
   },
   {
     "name": "EXT-Detector",
@@ -13190,7 +13220,7 @@
     "maintainerURL": "",
     "description": "After a configurated time without any user interaction the display will turn off and hide all modules for economy mode. It will wake up with a PIR sensor.",
     "issues": true,
-    "stars": 31,
+    "stars": 32,
     "hasGithubIssues": false,
     "license": "MIT",
     "tags": [
@@ -18121,8 +18151,8 @@
     "hasGithubIssues": false,
     "license": "MIT",
     "image": "images-Current_version.jpg",
-    "defaultSortWeight": 12,
-    "lastCommit": "2019-12-19T22:52:52+00:00"
+    "defaultSortWeight": 11,
+    "lastCommit": "2024-10-20T09:20:40+01:00"
   },
   {
     "name": "MMM-UKLiveTrainDepartures",

@@ -1,16 +1,16 @@
 # Result of the module analysis
 
-Last update: 2024-10-20T05:37:55+02:00
+Last update: 2024-10-20T17:38:13+02:00
 
 ## Statistics
 
 |                      | number   |
 |:---------------------|:--------:|
-| modules analyzed     |   1186   |
-| maintainer           |    637   |
-| modules with issues  |   1184   |
-| issues               |   6813   |
-| modules at github    |   1077   |
+| modules analyzed     |   1188   |
+| maintainer           |    638   |
+| modules with issues  |   1186   |
+| issues               |   6833   |
+| modules at github    |   1079   |
 | modules at gitlab    |     10   |
 | modules at bitbucket |      1   |
 
@@ -404,6 +404,19 @@ Last update: 2024-10-20T05:37:55+02:00
 4. Typo: Found `Magic Mirror` in file `package.json`: Replace it with `MagicMirror²`.
 5. Warning: No LICENSE file.
 6. Recommendation: Replace eslintrc by new flat config.
+
+### [MMM-AuroraWatchUK by AndyHazz](https://github.com/AndyHazz/MMM-AuroraWatchUK)
+
+1. `package.json` issue: No repository field.
+2. There are no specific keywords in 'package.json'. We would use them as tags on the module list page. Add a few meaningful terms to the keywords in the package.json. Not just “magicmirror” or “module”.
+3. Recommendation: Found `new Date()` in file `MMM-AuroraWatchUK.js`: Consider replacing it by `new Date(Date.now())`. It's helpful for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
+4. Deprecated: Found `api.openweathermap.org/data/2.5` in file `MMM-AuroraWatchUK.js`: OpenWeather API 2.5 is deprecated since June 2024. Please update to 3.0.
+5. Outdated: Found `MichMich/MagicMirror` in file `README.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
+6. Recommendation: The README seems not to have an update instruction (the word 'update' is missing). Please add one.
+7. Recommendation: Found `axios` in file `node_helper.js`: Replace it with built-in fetch.
+8. Recommendation: Found `axios` in file `package.json`: Replace it with built-in fetch.
+9. Warning: No LICENSE file.
+10. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
 
 ### [MMM-Autobahn by JockeyDoe](https://github.com/JockeyDoe/MMM-Autobahn)
 
@@ -1669,6 +1682,19 @@ Last update: 2024-10-20T05:37:55+02:00
 5. Recommendation: The README seems not to have an update instruction (the word 'update' is missing). Please add one.
 6. Warning: No LICENSE file.
 7. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
+
+### [MMM-DenHaag-TrashCalendar by cokceken](https://github.com/cokceken/MMM-DenHaag-TrashCalendar)
+
+1. `package.json` issue: No repository field.
+2. There are no specific keywords in 'package.json'. We would use them as tags on the module list page. Add a few meaningful terms to the keywords in the package.json. Not just “magicmirror” or “module”.
+3. Typo: Found `MagicMirror2` in file `README.md`: Replace it with `MagicMirror²`.
+4. Typo: Found `<sup>2</sup>` in file `README.md`: Replace it with `²`.`.
+5. Outdated: Found `MichMich/MagicMirror` in file `README.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
+6. Deprecated: Found `require('request')` in file `node_helper.js`: Replace it with built-in fetch.
+7. Recommendation: Found `new Date()` in file `node_helper.js`: Consider replacing it by `new Date(Date.now())`. It's helpful for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
+8. Typo: Found `MagicMirror2` in file `package.json`: Replace it with `MagicMirror²`.
+9. Warning: No LICENSE file.
+10. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
 
 ### [EXT-Detector by bugsounet](https://github.com/bugsounet/EXT-Detector)
 

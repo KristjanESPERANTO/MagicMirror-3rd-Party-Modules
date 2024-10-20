@@ -530,6 +530,17 @@
     "stars": 1
   },
   {
+    "name": "MMM-AuroraWatchUK",
+    "category": "Weather",
+    "url": "https://github.com/AndyHazz/MMM-AuroraWatchUK",
+    "id": "AndyHazz/MMM-AuroraWatchUK",
+    "maintainer": "AndyHazz",
+    "maintainerURL": "",
+    "description": "Display Aurora alerts when visibility is likely in the UK",
+    "issues": [],
+    "stars": 1
+  },
+  {
     "name": "MMM-Autobahn",
     "category": "Transport / Travel",
     "url": "https://github.com/JockeyDoe/MMM-Autobahn",
@@ -2388,6 +2399,17 @@
     "description": "Retrieves live timings of busses for a specific bus stop.",
     "issues": [],
     "stars": 2
+  },
+  {
+    "name": "MMM-DenHaag-TrashCalendar",
+    "category": "Utility / IOT / 3rd Party / Integration",
+    "url": "https://github.com/cokceken/MMM-DenHaag-TrashCalendar",
+    "id": "cokceken/MMM-DenHaag-TrashCalendar",
+    "maintainer": "cokceken",
+    "maintainerURL": "",
+    "description": "Display trash collection days in Den Haag / the Netherlands.",
+    "issues": [],
+    "stars": 0
   },
   {
     "name": "EXT-Detector",
@@ -9397,7 +9419,7 @@
     "maintainerURL": "",
     "description": "After a configurated time without any user interaction the display will turn off and hide all modules for economy mode. It will wake up with a PIR sensor.",
     "issues": [],
-    "stars": 31,
+    "stars": 32,
     "hasGithubIssues": false,
     "license": "MIT"
   },

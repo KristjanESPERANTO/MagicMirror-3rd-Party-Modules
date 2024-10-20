@@ -759,6 +759,22 @@
     "image": "screenshots-example.jpg"
   },
   {
+    "name": "MMM-AuroraWatchUK",
+    "category": "Weather",
+    "url": "https://github.com/AndyHazz/MMM-AuroraWatchUK",
+    "id": "AndyHazz/MMM-AuroraWatchUK",
+    "maintainer": "AndyHazz",
+    "maintainerURL": "",
+    "description": "Display Aurora alerts when visibility is likely in the UK",
+    "issues": [
+      "`package.json` issue: No repository field.",
+      "There are no specific keywords in 'package.json'. We would use them as tags on the module list page. Add a few meaningful terms to the keywords in the package.json. Not just “magicmirror” or “module”."
+    ],
+    "stars": 1,
+    "license": "ISC",
+    "image": "img-demo.jpg"
+  },
+  {
     "name": "MMM-Autobahn",
     "category": "Transport / Travel",
     "url": "https://github.com/JockeyDoe/MMM-Autobahn",
@@ -3286,6 +3302,22 @@
       "There is no `package.json`. We need this file to gather information about the module for the module list page."
     ],
     "stars": 2
+  },
+  {
+    "name": "MMM-DenHaag-TrashCalendar",
+    "category": "Utility / IOT / 3rd Party / Integration",
+    "url": "https://github.com/cokceken/MMM-DenHaag-TrashCalendar",
+    "id": "cokceken/MMM-DenHaag-TrashCalendar",
+    "maintainer": "cokceken",
+    "maintainerURL": "",
+    "description": "Display trash collection days in Den Haag / the Netherlands.",
+    "issues": [
+      "`package.json` issue: No repository field.",
+      "There are no specific keywords in 'package.json'. We would use them as tags on the module list page. Add a few meaningful terms to the keywords in the package.json. Not just “magicmirror” or “module”."
+    ],
+    "stars": 0,
+    "license": "ISC",
+    "image": "MMM-DenHaag-trashcalendar.jpg"
   },
   {
     "name": "EXT-Detector",
@@ -13025,7 +13057,7 @@
     "maintainerURL": "",
     "description": "After a configurated time without any user interaction the display will turn off and hide all modules for economy mode. It will wake up with a PIR sensor.",
     "issues": [],
-    "stars": 31,
+    "stars": 32,
     "hasGithubIssues": false,
     "license": "MIT",
     "tags": [
