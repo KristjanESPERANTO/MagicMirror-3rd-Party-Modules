@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "2024-10-21T03:30:22.458Z",
+  "lastUpdate": "2024-10-21T15:30:24.299Z",
   "repositories": [
     {
       "id": "0lek/MMM-socialbicycles",
@@ -353,7 +353,7 @@
     },
     {
       "id": "ajones/MMM-PurpleAir",
-      "gitHubDataLastUpdate": "2024-10-02T15:30:16.867Z",
+      "gitHubDataLastUpdate": "2024-10-21T15:30:17.795Z",
       "gitHubData": {
         "issues": 0,
         "stars": 1,
@@ -507,7 +507,7 @@
     },
     {
       "id": "alonsourbano/publika",
-      "gitHubDataLastUpdate": "2024-10-02T15:30:15.539Z",
+      "gitHubDataLastUpdate": "2024-10-21T15:30:16.373Z",
       "gitHubData": {
         "issues": 4,
         "stars": 5,
@@ -1179,7 +1179,7 @@
     },
     {
       "id": "basknol/MMM-PushBulletNotifications",
-      "gitHubDataLastUpdate": "2024-10-02T15:30:17.309Z",
+      "gitHubDataLastUpdate": "2024-10-21T15:30:18.245Z",
       "gitHubData": {
         "issues": 0,
         "stars": 34,
@@ -1417,7 +1417,7 @@
     },
     {
       "id": "BigBot89/MMM-AccuWeatherForecastDeluxe",
-      "gitHubDataLastUpdate": "2024-10-02T15:30:22.043Z",
+      "gitHubDataLastUpdate": "2024-10-21T15:30:23.217Z",
       "gitHubData": {
         "issues": 0,
         "stars": 2,
@@ -1795,7 +1795,7 @@
     },
     {
       "id": "buge/MMM-AareGuru",
-      "gitHubDataLastUpdate": "2024-10-02T15:30:20.532Z",
+      "gitHubDataLastUpdate": "2024-10-21T15:30:21.746Z",
       "gitHubData": {
         "issues": 0,
         "stars": 12,
@@ -2285,7 +2285,7 @@
     },
     {
       "id": "bugsounet/MMM-PrixCarburants",
-      "gitHubDataLastUpdate": "2024-10-02T15:30:09.647Z",
+      "gitHubDataLastUpdate": "2024-10-21T15:30:08.927Z",
       "gitHubData": {
         "issues": 0,
         "stars": 2,
@@ -2803,7 +2803,7 @@
     },
     {
       "id": "ChristianGeie/MMM-PublicTransportVVO",
-      "gitHubDataLastUpdate": "2024-10-02T15:30:15.111Z",
+      "gitHubDataLastUpdate": "2024-10-21T15:30:15.799Z",
       "gitHubData": {
         "issues": 2,
         "stars": 1,
@@ -3461,7 +3461,7 @@
     },
     {
       "id": "daxiang28/MMM-ProxyImage",
-      "gitHubDataLastUpdate": "2024-10-02T15:30:13.806Z",
+      "gitHubDataLastUpdate": "2024-10-21T15:30:14.192Z",
       "gitHubData": {
         "issues": 1,
         "stars": 1,
@@ -3517,16 +3517,16 @@
     },
     {
       "id": "deg0nz/MMM-PublicTransportBerlin",
-      "gitHubDataLastUpdate": "2024-10-02T15:30:14.253Z",
+      "gitHubDataLastUpdate": "2024-10-21T15:30:14.734Z",
       "gitHubData": {
-        "issues": 6,
+        "issues": 5,
         "stars": 40,
         "license": "MIT",
         "archived": false,
         "disabled": false,
         "defaultBranch": "master",
         "has_issues": true,
-        "lastCommit": "2024-09-27T15:23:39Z"
+        "lastCommit": "2024-10-06T22:56:57Z"
       }
     },
     {
@@ -4959,7 +4959,7 @@
     },
     {
       "id": "flick116/MMM-qnapDownloadStation",
-      "gitHubDataLastUpdate": "2024-10-02T15:30:17.774Z",
+      "gitHubDataLastUpdate": "2024-10-21T15:30:18.703Z",
       "gitHubData": {
         "issues": 0,
         "stars": 0,
@@ -5141,7 +5141,7 @@
     },
     {
       "id": "GaryLChew/MMM-1-Second-A-Day",
-      "gitHubDataLastUpdate": "2024-10-02T15:30:19.156Z",
+      "gitHubDataLastUpdate": "2024-10-21T15:30:20.279Z",
       "gitHubData": {
         "issues": 5,
         "stars": 9,
@@ -5183,16 +5183,16 @@
     },
     {
       "id": "gertperdZA/MMM-Afvalwijzer",
-      "gitHubDataLastUpdate": "2024-10-03T03:30:08.502Z",
+      "gitHubDataLastUpdate": "2024-10-21T15:30:24.267Z",
       "gitHubData": {
-        "issues": 1,
+        "issues": 0,
         "stars": 3,
         "license": "MIT",
         "archived": false,
         "disabled": false,
         "defaultBranch": "main",
         "has_issues": true,
-        "lastCommit": "2024-09-08T17:10:42Z"
+        "lastCommit": "2024-10-09T15:55:17Z"
       }
     },
     {
@@ -6121,7 +6121,7 @@
     },
     {
       "id": "j-hiller/MMM-AC-aseag",
-      "gitHubDataLastUpdate": "2024-10-02T15:30:21.105Z",
+      "gitHubDataLastUpdate": "2024-10-21T15:30:22.243Z",
       "gitHubData": {
         "issues": 3,
         "stars": 2,
@@ -6345,7 +6345,7 @@
     },
     {
       "id": "JasonVonKrueger/MMM-QR-Remote-Link",
-      "gitHubDataLastUpdate": "2024-10-02T15:30:18.254Z",
+      "gitHubDataLastUpdate": "2024-10-21T15:30:19.249Z",
       "gitHubData": {
         "issues": 0,
         "stars": 1,
@@ -6709,7 +6709,7 @@
     },
     {
       "id": "jinserk/MMM-2Day-NOAA-Forecast",
-      "gitHubDataLastUpdate": "2024-10-02T15:30:19.570Z",
+      "gitHubDataLastUpdate": "2024-10-21T15:30:20.727Z",
       "gitHubData": {
         "issues": 0,
         "stars": 9,
@@ -6933,7 +6933,7 @@
     },
     {
       "id": "Jopyth/MMM-Advent",
-      "gitHubDataLastUpdate": "2024-10-03T03:30:08.047Z",
+      "gitHubDataLastUpdate": "2024-10-21T15:30:23.696Z",
       "gitHubData": {
         "issues": 2,
         "stars": 12,
@@ -7675,16 +7675,16 @@
     },
     {
       "id": "KristjanESPERANTO/MMM-PublicTransportHafas",
-      "gitHubDataLastUpdate": "2024-10-02T15:30:14.631Z",
+      "gitHubDataLastUpdate": "2024-10-21T15:30:15.269Z",
       "gitHubData": {
-        "issues": 6,
-        "stars": 17,
+        "issues": 4,
+        "stars": 20,
         "license": "MIT",
         "archived": false,
         "disabled": false,
         "defaultBranch": "main",
         "has_issues": true,
-        "lastCommit": "2024-10-02T15:24:52Z"
+        "lastCommit": "2024-10-14T18:33:50Z"
       }
     },
     {
@@ -7731,7 +7731,7 @@
     },
     {
       "id": "kurtern84/MMM-profile",
-      "gitHubDataLastUpdate": "2024-10-02T15:30:10.180Z",
+      "gitHubDataLastUpdate": "2024-10-21T15:30:09.432Z",
       "gitHubData": {
         "issues": 0,
         "stars": 5,
@@ -7745,7 +7745,7 @@
     },
     {
       "id": "kurtern84/MMM-ProfileAndWeatherAlerts",
-      "gitHubDataLastUpdate": "2024-10-02T15:30:10.706Z",
+      "gitHubDataLastUpdate": "2024-10-21T15:30:09.987Z",
       "gitHubData": {
         "issues": 0,
         "stars": 0,
@@ -8585,7 +8585,7 @@
     },
     {
       "id": "maxbethge/MMM-AccuWeatherForecastDeluxe",
-      "gitHubDataLastUpdate": "2024-10-02T15:30:21.592Z",
+      "gitHubDataLastUpdate": "2024-10-21T15:30:22.748Z",
       "gitHubData": {
         "issues": 2,
         "stars": 5,
@@ -8641,7 +8641,7 @@
     },
     {
       "id": "mboskamp/MMM-Pull",
-      "gitHubDataLastUpdate": "2024-10-02T15:30:15.965Z",
+      "gitHubDataLastUpdate": "2024-10-21T15:30:16.827Z",
       "gitHubData": {
         "issues": 0,
         "stars": 4,
@@ -10713,7 +10713,7 @@
     },
     {
       "id": "nigel-daniels/MMM-3Day-Forecast",
-      "gitHubDataLastUpdate": "2024-10-02T15:30:20.012Z",
+      "gitHubDataLastUpdate": "2024-10-21T15:30:21.237Z",
       "gitHubData": {
         "issues": 9,
         "stars": 36,
@@ -11889,7 +11889,7 @@
     },
     {
       "id": "ptornhult/MMM-Pure-Snow",
-      "gitHubDataLastUpdate": "2024-10-02T15:30:16.462Z",
+      "gitHubDataLastUpdate": "2024-10-21T15:30:17.288Z",
       "gitHubData": {
         "issues": 1,
         "stars": 3,
@@ -12659,7 +12659,7 @@
     },
     {
       "id": "rubinho101/MMM-01ZM",
-      "gitHubDataLastUpdate": "2024-10-02T15:30:18.729Z",
+      "gitHubDataLastUpdate": "2024-10-21T15:30:19.764Z",
       "gitHubData": {
         "issues": 2,
         "stars": 4,
@@ -13793,7 +13793,7 @@
     },
     {
       "id": "Snille/MMM-Profilepicture",
-      "gitHubDataLastUpdate": "2024-10-02T15:30:11.690Z",
+      "gitHubDataLastUpdate": "2024-10-21T15:30:11.013Z",
       "gitHubData": {
         "issues": 0,
         "stars": 2,
@@ -14045,7 +14045,7 @@
     },
     {
       "id": "spydersoft-consulting/MMM-PrometheusAlerts",
-      "gitHubDataLastUpdate": "2024-10-02T15:30:12.776Z",
+      "gitHubDataLastUpdate": "2024-10-21T15:30:12.440Z",
       "gitHubData": {
         "issues": 3,
         "stars": 3,
@@ -14171,7 +14171,7 @@
     },
     {
       "id": "stewartmckee/MMM-Property-managed",
-      "gitHubDataLastUpdate": "2024-10-02T15:30:13.281Z",
+      "gitHubDataLastUpdate": "2024-10-21T15:30:12.878Z",
       "gitHubData": {
         "issues": 0,
         "stars": 1,
@@ -14997,7 +14997,7 @@
     },
     {
       "id": "Tom-Hirschberger/MMM-ProfileControl",
-      "gitHubDataLastUpdate": "2024-10-02T15:30:11.189Z",
+      "gitHubDataLastUpdate": "2024-10-21T15:30:10.531Z",
       "gitHubData": {
         "issues": 0,
         "stars": 4,
@@ -15151,7 +15151,7 @@
     },
     {
       "id": "tosti007/MMM-ProfileSwitcher",
-      "gitHubDataLastUpdate": "2024-10-02T15:30:12.185Z",
+      "gitHubDataLastUpdate": "2024-10-21T15:30:11.439Z",
       "gitHubData": {
         "issues": 7,
         "stars": 45,

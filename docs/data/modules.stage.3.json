@@ -10011,11 +10011,11 @@
     "maintainerURL": "",
     "description": "Tracks the number of mortgage payments left.",
     "issues": [
-      "There is no `package.json`. We need this file to gather information about the module for the module list page.",
-      "No image found."
+      "There is no `package.json`. We need this file to gather information about the module for the module list page."
     ],
     "stars": 0,
-    "license": "CC0-1.0"
+    "license": "CC0-1.0",
+    "image": "MMM-MortgageCountdown.jpg"
   },
   {
     "name": "MMM-Motion-Camera",
@@ -13821,7 +13821,7 @@
     "maintainerURL": "",
     "description": "Displays departure information for public transportation in Germany and some other European countries. The <a target=\"_blank\" href=\"https://github.com/public-transport/hafas-client\">hafas-client</a> is used to query the information. The interface of the Deutsche Bahn is used as standard, this includes most of the local networks with buses, trams, etc. However, <a target=\"_blank\" href=\"https://github.com/public-transport/hafas-client/blob/main/p/readme.md\">other hafas interfaces</a> can also be used.",
     "issues": [],
-    "stars": 17,
+    "stars": 20,
     "license": "MIT",
     "tags": [
       "public transport",
@@ -15429,13 +15429,13 @@
     "maintainer": "stefanjacobs",
     "maintainerURL": "https://github.com/stefanjacobs",
     "description": "Display data from 1 Shelly PM sensor, forked and modified by <a target=\"_blank\" href=\"https://github.com/Medve01/Shelly-HT\">Shelly-HT</a>.",
-    "issues": [
-      "`package.json` issue: license should be a valid SPDX license expression",
-      "There are no keywords in 'package.json'. We would use them as tags on the module list page.",
-      "Issue: The license in the package.json (UNLICENSE) doesn't match the license file (Unlicense)."
-    ],
+    "issues": [],
     "stars": 4,
     "license": "Unlicense",
+    "tags": [
+      "shelly",
+      "sensor"
+    ],
     "image": "pic-MMM-Shelly-PM.jpg"
   },
   {

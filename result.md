@@ -1,6 +1,6 @@
 # Result of the module analysis
 
-Last update: 2024-10-21T05:37:48+02:00
+Last update: 2024-10-21T17:38:16+02:00
 
 ## Statistics
 
@@ -9,7 +9,7 @@ Last update: 2024-10-21T05:37:48+02:00
 | modules analyzed     |   1188   |
 | maintainer           |    638   |
 | modules with issues  |   1186   |
-| issues               |   6821   |
+| issues               |   6816   |
 | modules at github    |   1079   |
 | modules at gitlab    |     10   |
 | modules at bitbucket |      1   |
@@ -5334,11 +5334,10 @@ Last update: 2024-10-21T05:37:48+02:00
 ### [MMM-MortgageCountdown by TouaregWarrior](https://github.com/TouaregWarrior/MMM-MortgageCountdown)
 
 1. There is no `package.json`. We need this file to gather information about the module for the module list page.
-2. No image found.
-3. Recommendation: Found `new Date()` in file `MMM-MortgageCountdown.js`: Consider replacing it by `new Date(Date.now())`. It's helpful for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
-4. Recommendation: The README seems not to have an update instruction (the word 'update' is missing). Please add one.
-5. Recommendation: The README seems not to have an install instruction (the words 'install' or 'installation' are missing). Please add one.
-6. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
+2. Recommendation: Found `new Date()` in file `MMM-MortgageCountdown.js`: Consider replacing it by `new Date(Date.now())`. It's helpful for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
+3. Recommendation: The README seems not to have an update instruction (the word 'update' is missing). Please add one.
+4. Recommendation: The README seems not to have an install instruction (the words 'install' or 'installation' are missing). Please add one.
+5. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
 
 ### [MMM-Motion-Camera by yusinv](https://github.com/yusinv/MMM-Motion-Camera)
 
@@ -8214,14 +8213,10 @@ Last update: 2024-10-21T05:37:48+02:00
 
 ### [MMM-Shelly-PM by stefanjacobs](https://github.com/stefanjacobs/MMM-Shelly-PM)
 
-1. `package.json` issue: license should be a valid SPDX license expression
-2. There are no keywords in 'package.json'. We would use them as tags on the module list page.
-3. Issue: The license in the package.json (UNLICENSE) doesn't match the license file (Unlicense).
-4. Typo: Found `Magic Mirror` in file `README.md`: Replace it with `MagicMirror²`.
-5. Recommendation: The README seems not to have an update instruction (the word 'update' is missing). Please add one.
-6. Deprecated: Found `require('request')` in file `node_helper.js`: Replace it with built-in fetch.
-7. Recommendation: Found `new Date()` in file `node_helper.js`: Consider replacing it by `new Date(Date.now())`. It's helpful for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
-8. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
+1. Recommendation: The README seems not to have an update instruction (the word 'update' is missing). Please add one.
+2. Deprecated: Found `require('request')` in file `node_helper.js`: Replace it with built-in fetch.
+3. Recommendation: Found `new Date()` in file `node_helper.js`: Consider replacing it by `new Date(Date.now())`. It's helpful for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
+4. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
 
 ### [MMM-ShellyEMMeter by mgarrix](https://github.com/mgarrix/MMM-ShellyEMMeter)
 
