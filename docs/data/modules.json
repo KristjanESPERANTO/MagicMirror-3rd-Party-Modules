@@ -6586,8 +6586,9 @@
     "issues": true,
     "stars": 0,
     "license": "GPL-3.0",
-    "defaultSortWeight": 5,
-    "lastCommit": "2024-10-13T20:00:37+01:00"
+    "image": "MMM-HolidayCountdown.jpg",
+    "defaultSortWeight": 2,
+    "lastCommit": "2024-10-21T19:19:03+01:00"
   },
   {
     "name": "MMM-HolidayLights",
@@ -9120,7 +9121,7 @@
     ],
     "image": "MMM-MealieMenu-screenshot.jpg",
     "defaultSortWeight": 0,
-    "lastCommit": "2024-09-03T15:01:45+00:00"
+    "lastCommit": "2024-10-21T13:16:21-06:00"
   },
   {
     "name": "MMM-MealViewer",
@@ -10132,9 +10133,14 @@
     "issues": true,
     "stars": 0,
     "license": "CC0-1.0",
+    "tags": [
+      "mortage",
+      "finance",
+      "countdown"
+    ],
     "image": "MMM-MortgageCountdown.jpg",
-    "defaultSortWeight": 4,
-    "lastCommit": "2024-10-21T14:58:40+01:00"
+    "defaultSortWeight": 3,
+    "lastCommit": "2024-10-21T18:57:43+01:00"
   },
   {
     "name": "MMM-Motion-Camera",

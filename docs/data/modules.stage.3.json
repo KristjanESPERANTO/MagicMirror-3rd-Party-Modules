@@ -6510,11 +6510,11 @@
     "maintainerURL": "",
     "description": "Displays the number of days until a Holiday/Trip. Displays the next 4 trips from a configured list.",
     "issues": [
-      "There is no `package.json`. We need this file to gather information about the module for the module list page.",
-      "No image found."
+      "There is no `package.json`. We need this file to gather information about the module for the module list page."
     ],
     "stars": 0,
-    "license": "GPL-3.0"
+    "license": "GPL-3.0",
+    "image": "MMM-HolidayCountdown.jpg"
   },
   {
     "name": "MMM-HolidayLights",
@@ -10011,10 +10011,16 @@
     "maintainerURL": "",
     "description": "Tracks the number of mortgage payments left.",
     "issues": [
-      "There is no `package.json`. We need this file to gather information about the module for the module list page."
+      "`package.json` issue: No repository field.",
+      "Issue: The license in the package.json (MIT) doesn't match the license file (CC0-1.0)."
     ],
     "stars": 0,
     "license": "CC0-1.0",
+    "tags": [
+      "mortage",
+      "finance",
+      "countdown"
+    ],
     "image": "MMM-MortgageCountdown.jpg"
   },
   {

@@ -1,4 +1,4 @@
-import fs from "fs";
+import fs from "node:fs";
 
 let ownModuleListPath = "./ownModuleList.json";
 if (!fs.existsSync(ownModuleListPath)) {

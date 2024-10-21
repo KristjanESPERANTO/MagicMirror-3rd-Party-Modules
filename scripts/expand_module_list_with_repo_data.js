@@ -1,14 +1,10 @@
-import fs from "fs";
+import fs from "node:fs";
+// eslint-disable-next-line import-x/namespace
+import {getJson} from "./utils.js";
 import normalizeData from "normalize-package-data";
 import sharp from "sharp";
 
 const imagesFolder = "./docs/images";
-
-function getJson (filePath) {
-  const data = fs.readFileSync(filePath, "utf8");
-  const json = JSON.parse(data);
-  return json;
-}
 
 function isImageFile (filename) {
   return (/\.(bmp|gif|jpg|jpeg|png|webp)$/iu).test(filename);

@@ -1,4 +1,6 @@
 import fs from "node:fs";
+// eslint-disable-next-line import-x/namespace
+import {getJson} from "./utils.js";
 
 let queryCount = 0;
 let maxQueryCount = 58;
@@ -6,12 +8,6 @@ let moduleCount = 0;
 
 function printProgress (count, total) {
   console.log(`${count} / ${total}`);
-}
-
-function getJson (filePath) {
-  const data = fs.readFileSync(filePath, "utf8");
-  const json = JSON.parse(data);
-  return json;
 }
 
 // Function to check whether new data should be retrieved.

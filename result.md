@@ -1,6 +1,6 @@
 # Result of the module analysis
 
-Last update: 2024-10-21T17:38:16+02:00
+Last update: 2024-10-21T23:36:10+02:00
 
 ## Statistics
 
@@ -9,7 +9,7 @@ Last update: 2024-10-21T17:38:16+02:00
 | modules analyzed     |   1188   |
 | maintainer           |    638   |
 | modules with issues  |   1186   |
-| issues               |   6816   |
+| issues               |   6812   |
 | modules at github    |   1079   |
 | modules at gitlab    |     10   |
 | modules at bitbucket |      1   |
@@ -748,8 +748,8 @@ Last update: 2024-10-21T17:38:16+02:00
    - @types/express                     ^4.17.11  →   ^5.0.0
    - @types/magicmirror-module           ^2.16.0  →  ^2.16.5
    - @types/node                       ^14.14.22  →  ^22.7.7
-   - @typescript-eslint/eslint-plugin     ^7.0.2  →  ^8.10.0
-   - @typescript-eslint/parser            ^7.0.2  →  ^8.10.0
+   - @typescript-eslint/eslint-plugin     ^7.0.2  →  ^8.11.0
+   - @typescript-eslint/parser            ^7.0.2  →  ^8.11.0
    - bosch-smart-home-bridge              ^1.4.1  →   ^1.6.0
    - eslint                              ^8.57.0  →  ^9.13.0
    - eslint-plugin-prettier               ^5.1.3  →   ^5.2.1
@@ -3359,11 +3359,8 @@ Last update: 2024-10-21T17:38:16+02:00
 ### [MMM-HolidayCountdown by TouaregWarrior](https://github.com/TouaregWarrior/MMM-HolidayCountdown)
 
 1. There is no `package.json`. We need this file to gather information about the module for the module list page.
-2. No image found.
-3. Recommendation: Found `new Date()` in file `MMM-HolidayCountdown.js`: Consider replacing it by `new Date(Date.now())`. It's helpful for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
-4. Recommendation: The README seems not to have an update instruction (the word 'update' is missing). Please add one.
-5. Recommendation: The README seems not to have an install instruction (the words 'install' or 'installation' are missing). Please add one.
-6. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
+2. Recommendation: Found `new Date()` in file `MMM-HolidayCountdown.js`: Consider replacing it by `new Date(Date.now())`. It's helpful for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
+3. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
 
 ### [MMM-HolidayLights by justjim1220](https://github.com/justjim1220/MMM-HolidayLights)
 
@@ -4009,8 +4006,8 @@ Last update: 2024-10-21T17:38:16+02:00
    - @rollup/plugin-commonjs           ^25.0.7  →  ^28.0.1
    - @rollup/plugin-node-resolve       ^15.2.3  →  ^15.3.0
    - @rollup/plugin-typescript         ^11.1.6  →  ^12.1.1
-   - @typescript-eslint/eslint-plugin  ^6.19.1  →  ^8.10.0
-   - @typescript-eslint/parser         ^6.19.1  →  ^8.10.0
+   - @typescript-eslint/eslint-plugin  ^6.19.1  →  ^8.11.0
+   - @typescript-eslint/parser         ^6.19.1  →  ^8.11.0
    - eslint                            ^8.56.0  →  ^9.13.0
    - eslint-plugin-prettier             ^5.1.3  →   ^5.2.1
    - prettier                           ^3.2.4  →   ^3.3.3
@@ -4740,21 +4737,18 @@ Last update: 2024-10-21T17:38:16+02:00
 
 ### [MMM-MealieMenu by zanix](https://github.com/zanix/MMM-MealieMenu)
 
-1. Information: There are updates for 14 dependencie(s):
-   - @commitlint/cli                  ^19.3.0  →   ^19.5.0
-   - @commitlint/config-conventional  ^19.2.2  →   ^19.5.0
-   - @eslint/js                       ^8.57.0  →   ^9.13.0
-   - @stylistic/eslint-plugin          ^2.7.2  →    ^2.9.0
-   - eslint                           ^8.57.0  →   ^9.13.0
-   - eslint-plugin-import             ^2.29.1  →   ^2.31.0
-   - globals                          ^15.9.0  →  ^15.11.0
-   - husky                            ^9.0.11  →    ^9.1.6
-   - lint-staged                      ^15.2.9  →  ^15.2.10
-   - markdownlint-cli                 ^0.41.0  →   ^0.42.0
-   - semantic-release                 ^24.1.0  →   ^24.1.3
-   - stylelint                        ^16.9.0  →  ^16.10.0
-   - stylelint-config-standard        ^36.0.0  →   ^36.0.1
-   - stylelint-prettier                ^5.0.0  →    ^5.0.2
+1. Information: There are updates for 11 dependencie(s):
+   - @commitlint/cli            ^19.3.0  →   ^19.5.0
+   - @eslint/js                 ^8.57.0  →   ^9.13.0
+   - @stylistic/eslint-plugin    ^2.7.2  →    ^2.9.0
+   - eslint                     ^8.57.0  →   ^9.13.0
+   - eslint-plugin-import       ^2.29.1  →   ^2.31.0
+   - globals                    ^15.9.0  →  ^15.11.0
+   - husky                      ^9.0.11  →    ^9.1.6
+   - markdownlint-cli           ^0.41.0  →   ^0.42.0
+   - semantic-release           ^24.1.0  →   ^24.1.3
+   - stylelint                  ^16.9.0  →  ^16.10.0
+   - stylelint-config-standard  ^36.0.0  →   ^36.0.1
 
 
 ### [MMM-MealViewer by ElliAndDad](https://github.com/ElliAndDad/MMM-MealViewer)
@@ -5333,11 +5327,9 @@ Last update: 2024-10-21T17:38:16+02:00
 
 ### [MMM-MortgageCountdown by TouaregWarrior](https://github.com/TouaregWarrior/MMM-MortgageCountdown)
 
-1. There is no `package.json`. We need this file to gather information about the module for the module list page.
-2. Recommendation: Found `new Date()` in file `MMM-MortgageCountdown.js`: Consider replacing it by `new Date(Date.now())`. It's helpful for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
-3. Recommendation: The README seems not to have an update instruction (the word 'update' is missing). Please add one.
-4. Recommendation: The README seems not to have an install instruction (the words 'install' or 'installation' are missing). Please add one.
-5. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
+1. `package.json` issue: No repository field.
+3. Recommendation: Found `new Date()` in file `MMM-MortgageCountdown.js`: Consider replacing it by `new Date(Date.now())`. It's helpful for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
+4. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
 
 ### [MMM-Motion-Camera by yusinv](https://github.com/yusinv/MMM-Motion-Camera)
 
@@ -6125,7 +6117,7 @@ Last update: 2024-10-21T17:38:16+02:00
    - @rollup/plugin-node-resolve       ^15.2.3  →  ^15.3.0
    - @rollup/plugin-typescript         ^11.1.6  →  ^12.1.1
    - @stylistic/eslint-plugin           ^1.5.4  →   ^2.9.0
-   - @typescript-eslint/eslint-plugin  ^6.20.0  →  ^8.10.0
+   - @typescript-eslint/eslint-plugin  ^6.20.0  →  ^8.11.0
    - eslint                            ^8.56.0  →  ^9.13.0
    - prettier                           ^3.2.5  →   ^3.3.3
    - rollup                             ^4.9.6  →  ^4.24.0
@@ -7487,7 +7479,7 @@ Last update: 2024-10-21T17:38:16+02:00
    - eslint                        ^9.9.1  →  ^9.13.0
    - rollup                       ^4.21.1  →  ^4.24.0
    - typescript                    ^5.5.4  →   ^5.6.3
-   - typescript-eslint             ^8.3.0  →  ^8.10.0
+   - typescript-eslint             ^8.3.0  →  ^8.11.0
 
 
 ### [MMM-RAIN-RADAR by jojoduquartier](https://github.com/jojoduquartier/MMM-RAIN-RADAR)
