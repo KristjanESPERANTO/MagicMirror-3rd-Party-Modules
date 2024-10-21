@@ -5,6 +5,7 @@ from pathlib import Path
 from datetime import datetime, timezone
 import json
 import subprocess
+import deprecation_check
 
 def search_in_file(path, search_string):
     """Function to search a string in a file."""
@@ -523,6 +524,10 @@ def check_dependency_updates(module, module_directory_path):
                 issue_text += f"   -{update}\n"
             module["issues"].append(issue_text)
 
+    if len(module["issues"]) in [0, 1] and package_json.is_file():
+        deprecation = deprecation_check.check_deprecated_packages(module_directory_path)
+        if deprecation:
+            module["issues"].append(deprecation)
 
 def check_branch_name(module, module_directory_path):
     """Function to check the branch name."""

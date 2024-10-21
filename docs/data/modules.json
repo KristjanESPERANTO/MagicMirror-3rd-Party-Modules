@@ -339,7 +339,7 @@
       "alert"
     ],
     "image": "screenshot-ErrorStyle1.jpg",
-    "defaultSortWeight": 4,
+    "defaultSortWeight": 5,
     "lastCommit": "2024-07-01T16:58:34+02:00"
   },
   {
@@ -931,7 +931,7 @@
       "background"
     ],
     "image": "cortana-confirmation.jpg",
-    "defaultSortWeight": 4,
+    "defaultSortWeight": 5,
     "lastCommit": "2024-07-01T16:58:55+02:00"
   },
   {
@@ -1593,7 +1593,7 @@
       "browser"
     ],
     "image": "EXT-Browser.jpg",
-    "defaultSortWeight": 4,
+    "defaultSortWeight": 5,
     "lastCommit": "2024-07-01T16:59:33+02:00"
   },
   {
@@ -2109,7 +2109,7 @@
       "pages"
     ],
     "image": "img-example1-slide.jpg",
-    "defaultSortWeight": 0,
+    "defaultSortWeight": 1,
     "lastCommit": "2024-03-25T16:37:53-07:00"
   },
   {
@@ -2618,7 +2618,7 @@
       "reminder"
     ],
     "image": "docs-screenshot.jpg",
-    "defaultSortWeight": 0,
+    "defaultSortWeight": 1,
     "lastCommit": "2024-06-26T12:40:53+02:00"
   },
   {
@@ -4058,7 +4058,7 @@
       "videostream"
     ],
     "image": "doc-screenshots-SomeGrafanaPanels.jpg",
-    "defaultSortWeight": -1,
+    "defaultSortWeight": 0,
     "lastCommit": "2024-09-15T21:03:49+02:00"
   },
   {
@@ -5249,7 +5249,7 @@
       "tv"
     ],
     "image": "resources-FreeboxTV.jpg",
-    "defaultSortWeight": 3,
+    "defaultSortWeight": 4,
     "lastCommit": "2024-07-01T17:00:16+02:00"
   },
   {
@@ -5685,7 +5685,7 @@
       "background"
     ],
     "image": "Screenshot.jpg",
-    "defaultSortWeight": 0,
+    "defaultSortWeight": 1,
     "lastCommit": "2024-07-01T16:51:33+02:00"
   },
   {
@@ -5732,7 +5732,7 @@
       "mirror email"
     ],
     "image": "example1.jpg",
-    "defaultSortWeight": 0,
+    "defaultSortWeight": 1,
     "lastCommit": "2024-01-18T11:21:58-06:00"
   },
   {
@@ -6141,7 +6141,7 @@
       "googleassistant"
     ],
     "image": "EXT-Governor.jpg",
-    "defaultSortWeight": 4,
+    "defaultSortWeight": 5,
     "lastCommit": "2024-07-01T17:00:57+02:00"
   },
   {
@@ -7897,7 +7897,7 @@
       "table"
     ],
     "image": "example1.jpg",
-    "defaultSortWeight": 0,
+    "defaultSortWeight": 1,
     "lastCommit": "2024-07-16T10:59:50+02:00"
   },
   {
@@ -8015,7 +8015,7 @@
       "keyboard"
     ],
     "image": "resources-keyboard.jpg",
-    "defaultSortWeight": 3,
+    "defaultSortWeight": 4,
     "lastCommit": "2024-07-01T17:01:34+02:00"
   },
   {
@@ -8306,7 +8306,7 @@
       "librespot"
     ],
     "image": "resources-Spotify-Logo.jpg",
-    "defaultSortWeight": 4,
+    "defaultSortWeight": 5,
     "lastCommit": "2024-07-01T17:01:54+02:00"
   },
   {
@@ -8899,7 +8899,7 @@
       "mover"
     ],
     "image": "img-screen-burn-in.jpg",
-    "defaultSortWeight": 0,
+    "defaultSortWeight": 1,
     "lastCommit": "2024-04-16T13:59:34+02:00"
   },
   {
@@ -9120,7 +9120,7 @@
       "recipie"
     ],
     "image": "MMM-MealieMenu-screenshot.jpg",
-    "defaultSortWeight": 0,
+    "defaultSortWeight": 1,
     "lastCommit": "2024-10-21T13:16:21-06:00"
   },
   {
@@ -9267,7 +9267,7 @@
       "french"
     ],
     "image": "screenshot.jpg",
-    "defaultSortWeight": 1,
+    "defaultSortWeight": 2,
     "lastCommit": "2024-07-01T16:53:47+02:00"
   },
   {
@@ -11360,7 +11360,7 @@
       "smart home"
     ],
     "image": "resources-A_Screenshot_0.jpg",
-    "defaultSortWeight": 0,
+    "defaultSortWeight": 1,
     "lastCommit": "2024-07-01T16:52:57+02:00"
   },
   {
@@ -12746,7 +12746,7 @@
       "pages"
     ],
     "image": "example.jpg",
-    "defaultSortWeight": 4,
+    "defaultSortWeight": 5,
     "lastCommit": "2024-07-01T17:02:49+02:00"
   },
   {
@@ -13099,7 +13099,7 @@
       "photos"
     ],
     "image": "resources-Photos-Logo.jpg",
-    "defaultSortWeight": 4,
+    "defaultSortWeight": 5,
     "lastCommit": "2024-07-01T16:58:08+02:00"
   },
   {
@@ -14239,7 +14239,7 @@
       "radio"
     ],
     "image": "radio.jpg",
-    "defaultSortWeight": 4,
+    "defaultSortWeight": 5,
     "lastCommit": "2024-07-01T16:57:50+02:00"
   },
   {
@@ -16006,7 +16006,7 @@
       "ext"
     ],
     "image": "website-assets-img-google-home.jpg",
-    "defaultSortWeight": 3,
+    "defaultSortWeight": 4,
     "lastCommit": "2024-07-01T16:56:54+02:00"
   },
   {
@@ -16718,7 +16718,7 @@
       "elgato"
     ],
     "image": "icons-Sample-access_time.jpg",
-    "defaultSortWeight": 3,
+    "defaultSortWeight": 4,
     "lastCommit": "2024-07-01T17:15:57+02:00"
   },
   {
@@ -17894,7 +17894,7 @@
       "brisbane"
     ],
     "image": "screenshot1.jpg",
-    "defaultSortWeight": 0,
+    "defaultSortWeight": 1,
     "lastCommit": "2024-02-15T10:11:51+10:00"
   },
   {
@@ -18610,7 +18610,7 @@
       "player"
     ],
     "image": "vlc-logo.jpg",
-    "defaultSortWeight": 3,
+    "defaultSortWeight": 4,
     "lastCommit": "2024-07-01T17:06:25+02:00"
   },
   {
@@ -18750,7 +18750,7 @@
       "googleassistant"
     ],
     "image": "resources-screenshot.jpg",
-    "defaultSortWeight": 4,
+    "defaultSortWeight": 5,
     "lastCommit": "2024-07-01T16:55:04+02:00"
   },
   {
@@ -19502,7 +19502,7 @@
       "vocabulary"
     ],
     "image": "wotdPic.jpg",
-    "defaultSortWeight": 1,
+    "defaultSortWeight": 2,
     "lastCommit": "2024-02-09T13:30:05-06:00"
   },
   {
@@ -19818,7 +19818,7 @@
       "youtube"
     ],
     "image": "resources-Screenshot1.jpg",
-    "defaultSortWeight": 4,
+    "defaultSortWeight": 5,
     "lastCommit": "2024-07-01T17:07:42+02:00"
   },
   {
@@ -19871,7 +19871,7 @@
       "youtube"
     ],
     "image": "resources-Screenshot1.jpg",
-    "defaultSortWeight": 4,
+    "defaultSortWeight": 5,
     "lastCommit": "2024-07-01T16:54:45+02:00"
   },
   {
