@@ -798,13 +798,13 @@
     "id": "AndyHazz/MMM-AuroraWatchUK",
     "maintainer": "AndyHazz",
     "maintainerURL": "",
-    "description": "Display Aurora alerts when visibility is likely in the UK",
+    "description": "Display Aurora alerts when visibility is likely in the UK.",
     "issues": true,
     "stars": 1,
     "license": "ISC",
     "image": "img-demo.jpg",
     "defaultSortWeight": 9,
-    "lastCommit": "2024-10-20T10:11:02+01:00"
+    "lastCommit": "2024-10-20T17:55:25+01:00"
   },
   {
     "name": "MMM-Autobahn",
@@ -3168,7 +3168,7 @@
     "id": "SmolinskiP/MMM-DailyStoic",
     "maintainer": "SmolinskiP",
     "maintainerURL": "",
-    "description": "Your everyday stoic quote",
+    "description": "Your everyday stoic quote.",
     "issues": true,
     "stars": 0,
     "license": "MIT",
@@ -9553,8 +9553,8 @@
       "tracker"
     ],
     "image": "screenshot.jpg",
-    "defaultSortWeight": 13,
-    "lastCommit": "2024-05-26T15:25:44-05:00"
+    "defaultSortWeight": 6,
+    "lastCommit": "2024-10-20T15:15:29-05:00"
   },
   {
     "name": "mmm-dropbox",
@@ -11628,7 +11628,7 @@
     "maintainerURL": "",
     "description": "Display scores of National Hockey League.",
     "issues": true,
-    "stars": 0,
+    "stars": 1,
     "license": "MIT",
     "tags": [
       "nhl",
@@ -14963,9 +14963,14 @@
     "issues": true,
     "stars": 0,
     "license": "MIT",
+    "tags": [
+      "afval",
+      "rova",
+      "trash"
+    ],
     "image": "MMM-ROVA-trashcalendar.jpg",
-    "defaultSortWeight": 6,
-    "lastCommit": "2024-10-13T10:18:48+02:00"
+    "defaultSortWeight": 1,
+    "lastCommit": "2024-10-21T01:25:36+02:00"
   },
   {
     "name": "MMM-RPI-LED",
@@ -19030,7 +19035,7 @@
     "license": "MIT",
     "image": "scr.jpg",
     "defaultSortWeight": 3,
-    "lastCommit": "2023-01-29T22:26:31-05:00"
+    "lastCommit": "2024-10-20T19:19:25-04:00"
   },
   {
     "name": "MMM-WeatherChart",

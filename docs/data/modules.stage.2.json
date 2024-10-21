@@ -536,7 +536,7 @@
     "id": "AndyHazz/MMM-AuroraWatchUK",
     "maintainer": "AndyHazz",
     "maintainerURL": "",
-    "description": "Display Aurora alerts when visibility is likely in the UK",
+    "description": "Display Aurora alerts when visibility is likely in the UK.",
     "issues": [],
     "stars": 1
   },
@@ -2252,7 +2252,7 @@
     "id": "SmolinskiP/MMM-DailyStoic",
     "maintainer": "SmolinskiP",
     "maintainerURL": "",
-    "description": "Your everyday stoic quote",
+    "description": "Your everyday stoic quote.",
     "issues": [],
     "stars": 0,
     "license": "MIT"
@@ -8282,7 +8282,7 @@
     "maintainerURL": "",
     "description": "Display scores of National Hockey League.",
     "issues": [],
-    "stars": 0,
+    "stars": 1,
     "license": "MIT"
   },
   {

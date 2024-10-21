@@ -1,6 +1,6 @@
 # Result of the module analysis
 
-Last update: 2024-10-20T17:38:13+02:00
+Last update: 2024-10-21T05:37:48+02:00
 
 ## Statistics
 
@@ -9,7 +9,7 @@ Last update: 2024-10-20T17:38:13+02:00
 | modules analyzed     |   1188   |
 | maintainer           |    638   |
 | modules with issues  |   1186   |
-| issues               |   6833   |
+| issues               |   6821   |
 | modules at github    |   1079   |
 | modules at gitlab    |     10   |
 | modules at bitbucket |      1   |
@@ -187,7 +187,7 @@ Last update: 2024-10-20T17:38:13+02:00
    - eslint                     ^8.57.0  →   ^9.13.0
    - eslint-plugin-import       ^2.29.1  →   ^2.31.0
    - glob                       ^10.4.2  →   ^11.0.0
-   - sweetalert2               ^11.12.1  →  ^11.14.3
+   - sweetalert2               ^11.12.1  →  ^11.14.4
 
 
 ### [MMM-AlertExt by MMRIZE](https://github.com/MMRIZE/MMM-AlertExt)
@@ -5005,19 +5005,12 @@ Last update: 2024-10-20T17:38:13+02:00
 ### [mmm-cta by jhwelch](https://github.com/jhwelch/mmm-cta)
 
 1. Recommendation: Module name doesn't follow the recommended pattern (it doesn't start with `MMM-`). Consider renaming your module.
-2. Recommendation: Found `uses: actions/checkout@v3` in file `qc-check.yml`: Replace it with v4.
-3. Recommendation: Found `uses: actions/setup-node@v3` in file `qc-check.yml`: Replace it with v4.
-4. Typo: Found `Magic Mirror` in file `MMM-CTA.js`: Replace it with `MagicMirror²`.
-5. Recommendation: Found `new Date()` in file `MMM-CTA.js`: Consider replacing it by `new Date(Date.now())`. It's helpful for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
-6. Outdated: Found `MichMich/MagicMirror` in file `README.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
-7. Recommendation: Found `'node-fetch'` in file `node-fetch.js`: Replace it with built-in fetch.
-8. Recommendation: Found `new Date()` in file `MMM-CTA.spec.js`: Consider replacing it by `new Date(Date.now())`. It's helpful for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
-9. Recommendation: Found `'node-fetch'` in file `node_helper.spec.js`: Replace it with built-in fetch.
-10. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
-11. Recommendation: Found `'node-fetch'` in file `node_helper.js`: Replace it with built-in fetch.
-12. Typo: Found `Magic Mirror` in file `package.json`: Replace it with `MagicMirror²`.
-13. Recommendation: Found `"node-fetch"` in file `package.json`: Replace it with built-in fetch.
-14. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
+2. Typo: Found `Magic Mirror` in file `MMM-CTA.js`: Replace it with `MagicMirror²`.
+3. Recommendation: Found `new Date()` in file `MMM-CTA.js`: Consider replacing it by `new Date(Date.now())`. It's helpful for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
+4. Outdated: Found `MichMich/MagicMirror` in file `README.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
+5. Recommendation: Found `new Date()` in file `MMM-CTA.spec.js`: Consider replacing it by `new Date(Date.now())`. It's helpful for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
+6. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
+7. Typo: Found `Magic Mirror` in file `package.json`: Replace it with `MagicMirror²`.
 
 ### [mmm-dropbox by michael5r](https://github.com/michael5r/mmm-dropbox)
 
@@ -7881,12 +7874,7 @@ Last update: 2024-10-20T17:38:13+02:00
 
 ### [MMM-ROVA-trashcalendar by jeroenpeters1986](https://github.com/jeroenpeters1986/MMM-ROVA-trashcalendar)
 
-1. There is no `package.json`. We need this file to gather information about the module for the module list page.
-2. Typo: Found `Magic Mirror` in file `MMM-ROVA-trashcalendar.js`: Replace it with `MagicMirror²`.
-3. Typo: Found `MagicMirror2` in file `README.md`: Replace it with `MagicMirror²`.
-4. Typo: Found `<sup>2</sup>` in file `README.md`: Replace it with `²`.`.
-5. Outdated: Found `MichMich/MagicMirror` in file `README.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
-6. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
+1. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
 
 ### [MMM-RPI-LED by idoodler](https://github.com/idoodler/MMM-RPI-LED)
 

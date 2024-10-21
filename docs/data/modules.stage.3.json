@@ -765,7 +765,7 @@
     "id": "AndyHazz/MMM-AuroraWatchUK",
     "maintainer": "AndyHazz",
     "maintainerURL": "",
-    "description": "Display Aurora alerts when visibility is likely in the UK",
+    "description": "Display Aurora alerts when visibility is likely in the UK.",
     "issues": [
       "`package.json` issue: No repository field.",
       "There are no specific keywords in 'package.json'. We would use them as tags on the module list page. Add a few meaningful terms to the keywords in the package.json. Not just “magicmirror” or “module”."
@@ -3113,7 +3113,7 @@
     "id": "SmolinskiP/MMM-DailyStoic",
     "maintainer": "SmolinskiP",
     "maintainerURL": "",
-    "description": "Your everyday stoic quote",
+    "description": "Your everyday stoic quote.",
     "issues": [
       "There is no `package.json`. We need this file to gather information about the module for the module list page.",
       "No image found."
@@ -11502,7 +11502,7 @@
     "maintainerURL": "",
     "description": "Display scores of National Hockey League.",
     "issues": [],
-    "stars": 0,
+    "stars": 1,
     "license": "MIT",
     "tags": [
       "nhl",
@@ -14780,11 +14780,14 @@
     "maintainer": "jeroenpeters1986",
     "maintainerURL": "https://github.com/jeroenpeters1986",
     "description": "Display when and which type of trash will be collected by Dutch garbage service ROVA.",
-    "issues": [
-      "There is no `package.json`. We need this file to gather information about the module for the module list page."
-    ],
+    "issues": [],
     "stars": 0,
     "license": "MIT",
+    "tags": [
+      "afval",
+      "rova",
+      "trash"
+    ],
     "image": "MMM-ROVA-trashcalendar.jpg"
   },
   {
