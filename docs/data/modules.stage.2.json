@@ -621,7 +621,7 @@
     "description": "Easy, hands free Amazon Alexa integration; activated, simply by saying \"Alexa\".",
     "issues": [],
     "outdated": "Abandoned. No reactions to issues since years. The documentation currently available does not work any more (<a href=\"https://github.com/MagicMirrorOrg/MagicMirror/issues/3398\">#3398</a>).",
-    "stars": 158,
+    "stars": 157,
     "license": "MIT"
   },
   {
@@ -645,7 +645,7 @@
     "maintainerURL": "",
     "description": "Show fullscreen slideshow in background from images in a local folder. Great for a photo frame.",
     "issues": [],
-    "stars": 144,
+    "stars": 146,
     "license": "MIT"
   },
   {
@@ -820,7 +820,7 @@
     "maintainerURL": "https://github.com/amitchone",
     "description": "A simple, lightweight birthday reminder - specified either via simple JSON file or in <code>config.js</code>. Supports multiple languages.",
     "issues": [],
-    "stars": 10,
+    "stars": 11,
     "license": "Apache-2.0"
   },
   {
@@ -1248,7 +1248,7 @@
     "maintainerURL": "",
     "description": "Extended calendar and event view.",
     "issues": [],
-    "stars": 53,
+    "stars": 56,
     "license": "MIT"
   },
   {
@@ -1260,7 +1260,7 @@
     "maintainerURL": "",
     "description": "Extended calendar and event view. Show calendar as agenda.",
     "issues": [],
-    "stars": 14,
+    "stars": 16,
     "license": "MIT"
   },
   {
@@ -1272,7 +1272,7 @@
     "maintainerURL": "",
     "description": "Presenting events as daily/weekly journal style.",
     "issues": [],
-    "stars": 6,
+    "stars": 7,
     "license": "MIT"
   },
   {
@@ -1343,7 +1343,7 @@
     "maintainerURL": "",
     "description": "Display a weekly (n days) calendar view.",
     "issues": [],
-    "stars": 53,
+    "stars": 54,
     "license": "MIT"
   },
   {
@@ -1402,7 +1402,7 @@
     "maintainerURL": "",
     "description": "Gets weather watches, warnings, and advisories for user specified regions. Using alert data published by Environment Canada.",
     "issues": [],
-    "stars": 2,
+    "stars": 3,
     "license": "MIT"
   },
   {
@@ -1462,7 +1462,7 @@
     "maintainerURL": "https://github.com/shbatm",
     "description": "Rotate modules, to save space on screen.",
     "issues": [],
-    "stars": 40,
+    "stars": 42,
     "license": "MIT"
   },
   {
@@ -1964,7 +1964,7 @@
     "maintainerURL": "",
     "description": "Display cryptocurrencies ticker price, with graphs and changes over time.",
     "issues": [],
-    "stars": 95,
+    "stars": 96,
     "license": "MIT"
   },
   {
@@ -2022,7 +2022,7 @@
     "maintainerURL": "",
     "description": "Display cursor when user moves mouse and hide after delay.",
     "issues": [],
-    "stars": 23,
+    "stars": 24,
     "license": "MIT"
   },
   {
@@ -4512,6 +4512,18 @@
     "issues": [],
     "stars": 18,
     "license": "MIT"
+  },
+  {
+    "name": "MMM-Halloween",
+    "category": "Entertainment / Misc",
+    "url": "https://github.com/SLFaleiro/MMM-Halloween",
+    "id": "SLFaleiro/MMM-Halloween",
+    "maintainer": "SLFaleiro",
+    "maintainerURL": "https://github.com/SLFaleiro",
+    "description": "🎃 Adds a spooky Halloween theme to your display by animating ghosts across the screen.",
+    "issues": [],
+    "stars": 4,
+    "license": "GPL-2.0"
   },
   {
     "name": "MMM-Hanzi",
@@ -7230,8 +7242,8 @@
     "maintainerURL": "",
     "description": "Tracks the number of mortgage payments left.",
     "issues": [],
-    "stars": 0,
-    "license": "CC0-1.0"
+    "stars": 1,
+    "license": "MIT"
   },
   {
     "name": "MMM-Motion-Camera",
@@ -7313,7 +7325,7 @@
     "maintainerURL": "",
     "description": "Displays the currently airing top movies in theaters around you.",
     "issues": [],
-    "stars": 0,
+    "stars": 1,
     "hasGithubIssues": false,
     "license": "MIT"
   },
@@ -10736,6 +10748,18 @@
     "license": "MIT"
   },
   {
+    "name": "MMM-RunningForecast",
+    "category": "Weather",
+    "url": "https://github.com/supermem613/MMM-RunningForecast",
+    "id": "supermem613/MMM-RunningForecast",
+    "maintainer": "supermem613",
+    "maintainerURL": "",
+    "description": "Displays running forecasts from weather.com.",
+    "issues": [],
+    "stars": 0,
+    "license": "MIT"
+  },
+  {
     "name": "MMM-Russianwarship",
     "category": "News / Information",
     "url": "https://github.com/uncleLem/MMM-Russianwarship",
@@ -11179,6 +11203,18 @@
     "description": "Display stands of Svenska Hockey Ligan (SHL).",
     "issues": [],
     "stars": 1,
+    "license": "MIT"
+  },
+  {
+    "name": "MMM-ShulSchedule",
+    "category": "Religion",
+    "url": "https://github.com/supermem613/MMM-ShulSchedule",
+    "id": "supermem613/MMM-ShulSchedule",
+    "maintainer": "supermem613",
+    "maintainerURL": "",
+    "description": "Displays a Shul's schedule from ShulCloud.",
+    "issues": [],
+    "stars": 0,
     "license": "MIT"
   },
   {
@@ -11647,6 +11683,18 @@
     "description": "Adds vertical space (as HTML div) between modules.",
     "issues": [],
     "stars": 10
+  },
+  {
+    "name": "MMM-SpaceLaunch",
+    "category": "Utility / IOT / 3rd Party / Integration",
+    "url": "https://github.com/TouaregWarrior/MMM-SpaceLaunch",
+    "id": "TouaregWarrior/MMM-SpaceLaunch",
+    "maintainer": "TouaregWarrior",
+    "maintainerURL": "",
+    "description": "Displays the next scheduled spacecraft launch - Global launches.",
+    "issues": [],
+    "stars": 0,
+    "license": "MIT"
   },
   {
     "name": "MMM-SpaceLaunchNow",
@@ -13985,6 +14033,18 @@
     "license": "MIT"
   },
   {
+    "name": "MMM-Yahrzeit",
+    "category": "Religion",
+    "url": "https://github.com/supermem613/MMM-Yahrzeit",
+    "id": "supermem613/MMM-Yahrzeit",
+    "maintainer": "supermem613",
+    "maintainerURL": "",
+    "description": "Displays Yahrzeit (anniversary of a death according to the Jewish calendar).",
+    "issues": [],
+    "stars": 0,
+    "license": "MIT"
+  },
+  {
     "name": "MMM-yandex-route",
     "category": "Transport / Travel",
     "url": "https://github.com/DimmanT/MMM-yandex-route",
@@ -14178,6 +14238,18 @@
     "maintainer": "shmulyeng",
     "maintainerURL": "",
     "description": "Displays daily Jewish calendar information.",
+    "issues": [],
+    "stars": 0,
+    "hasGithubIssues": false
+  },
+  {
+    "name": "MMM-Zmanim",
+    "category": "Religion",
+    "url": "https://github.com/supermem613/MMM-Zmanim",
+    "id": "supermem613/MMM-Zmanim",
+    "maintainer": "supermem613",
+    "maintainerURL": "",
+    "description": "Displays Zmanim (Jewish calendar information).",
     "issues": [],
     "stars": 0,
     "hasGithubIssues": false

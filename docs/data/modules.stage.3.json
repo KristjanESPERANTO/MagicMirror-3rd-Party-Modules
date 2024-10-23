@@ -882,7 +882,7 @@
       "There are no keywords in 'package.json'. We would use them as tags on the module list page."
     ],
     "outdated": "Abandoned. No reactions to issues since years. The documentation currently available does not work any more (<a href=\"https://github.com/MagicMirrorOrg/MagicMirror/issues/3398\">#3398</a>).",
-    "stars": 158,
+    "stars": 157,
     "license": "MIT",
     "image": "styles-loading.jpg"
   },
@@ -912,7 +912,7 @@
     "maintainerURL": "",
     "description": "Show fullscreen slideshow in background from images in a local folder. Great for a photo frame.",
     "issues": [],
-    "stars": 144,
+    "stars": 146,
     "license": "MIT",
     "tags": [
       "background",
@@ -1173,7 +1173,7 @@
       "`package.json` issue: No repository field.",
       "There are no keywords in 'package.json'. We would use them as tags on the module list page."
     ],
-    "stars": 10,
+    "stars": 11,
     "license": "Apache-2.0",
     "image": "example.jpg"
   },
@@ -1751,7 +1751,7 @@
     "maintainerURL": "",
     "description": "Extended calendar and event view.",
     "issues": [],
-    "stars": 53,
+    "stars": 56,
     "license": "MIT",
     "tags": [
       "calendar",
@@ -1768,7 +1768,7 @@
     "maintainerURL": "",
     "description": "Extended calendar and event view. Show calendar as agenda.",
     "issues": [],
-    "stars": 14,
+    "stars": 16,
     "license": "MIT",
     "tags": [
       "calendar",
@@ -1787,7 +1787,7 @@
     "issues": [
       "No image found."
     ],
-    "stars": 6,
+    "stars": 7,
     "license": "MIT",
     "tags": [
       "cx3j",
@@ -1882,7 +1882,7 @@
     "issues": [
       "There is no `package.json`. We need this file to gather information about the module for the module list page."
     ],
-    "stars": 53,
+    "stars": 54,
     "license": "MIT",
     "image": "screenshots-With calendar title.jpg"
   },
@@ -1959,7 +1959,7 @@
     "maintainerURL": "",
     "description": "Gets weather watches, warnings, and advisories for user specified regions. Using alert data published by Environment Canada.",
     "issues": [],
-    "stars": 2,
+    "stars": 3,
     "license": "MIT",
     "tags": [
       "canada",
@@ -2045,7 +2045,7 @@
     "maintainerURL": "https://github.com/shbatm",
     "description": "Rotate modules, to save space on screen.",
     "issues": [],
-    "stars": 40,
+    "stars": 42,
     "license": "MIT",
     "tags": [
       "carousel",
@@ -2736,7 +2736,7 @@
     "issues": [
       "There is no `package.json`. We need this file to gather information about the module for the module list page."
     ],
-    "stars": 95,
+    "stars": 96,
     "license": "MIT",
     "image": "MMM-cryptocurrency.jpg"
   },
@@ -2805,7 +2805,7 @@
     "maintainerURL": "",
     "description": "Display cursor when user moves mouse and hide after delay.",
     "issues": [],
-    "stars": 23,
+    "stars": 24,
     "license": "MIT",
     "tags": [
       "cursor"
@@ -6264,6 +6264,21 @@
     "stars": 18,
     "license": "MIT",
     "image": "screenshots-MM_landscape_DefaultTheme.jpg"
+  },
+  {
+    "name": "MMM-Halloween",
+    "category": "Entertainment / Misc",
+    "url": "https://github.com/SLFaleiro/MMM-Halloween",
+    "id": "SLFaleiro/MMM-Halloween",
+    "maintainer": "SLFaleiro",
+    "maintainerURL": "https://github.com/SLFaleiro",
+    "description": "🎃 Adds a spooky Halloween theme to your display by animating ghosts across the screen.",
+    "issues": [
+      "There is no `package.json`. We need this file to gather information about the module for the module list page."
+    ],
+    "stars": 4,
+    "license": "GPL-2.0",
+    "image": "screenshot.jpg"
   },
   {
     "name": "MMM-Hanzi",
@@ -10011,11 +10026,10 @@
     "maintainerURL": "",
     "description": "Tracks the number of mortgage payments left.",
     "issues": [
-      "`package.json` issue: No repository field.",
-      "Issue: The license in the package.json (MIT) doesn't match the license file (CC0-1.0)."
+      "`package.json` issue: No repository field."
     ],
-    "stars": 0,
-    "license": "CC0-1.0",
+    "stars": 1,
+    "license": "MIT",
     "tags": [
       "mortage",
       "finance",
@@ -10132,7 +10146,7 @@
       "`package.json` issue: No repository field.",
       "There are no keywords in 'package.json'. We would use them as tags on the module list page."
     ],
-    "stars": 0,
+    "stars": 1,
     "hasGithubIssues": false,
     "license": "MIT",
     "image": "image-1.jpg"
@@ -14892,6 +14906,23 @@
     "image": "images-screenshot-2.jpg"
   },
   {
+    "name": "MMM-RunningForecast",
+    "category": "Weather",
+    "url": "https://github.com/supermem613/MMM-RunningForecast",
+    "id": "supermem613/MMM-RunningForecast",
+    "maintainer": "supermem613",
+    "maintainerURL": "",
+    "description": "Displays running forecasts from weather.com.",
+    "issues": [
+      "`package.json` issue: No repository field.",
+      "`package.json` issue: No license field.",
+      "There are no keywords in 'package.json'. We would use them as tags on the module list page."
+    ],
+    "stars": 0,
+    "license": "MIT",
+    "image": "image.jpg"
+  },
+  {
     "name": "MMM-Russianwarship",
     "category": "News / Information",
     "url": "https://github.com/uncleLem/MMM-Russianwarship",
@@ -15510,6 +15541,21 @@
     "stars": 1,
     "license": "MIT",
     "image": "docs-screenshot.jpg"
+  },
+  {
+    "name": "MMM-ShulSchedule",
+    "category": "Religion",
+    "url": "https://github.com/supermem613/MMM-ShulSchedule",
+    "id": "supermem613/MMM-ShulSchedule",
+    "maintainer": "supermem613",
+    "maintainerURL": "",
+    "description": "Displays a Shul's schedule from ShulCloud.",
+    "issues": [
+      "There is no `package.json`. We need this file to gather information about the module for the module list page."
+    ],
+    "stars": 0,
+    "license": "MIT",
+    "image": "image.jpg"
   },
   {
     "name": "MMM-Simple-Swiper",
@@ -16160,6 +16206,21 @@
       "There is no `package.json`. We need this file to gather information about the module for the module list page."
     ],
     "stars": 10
+  },
+  {
+    "name": "MMM-SpaceLaunch",
+    "category": "Utility / IOT / 3rd Party / Integration",
+    "url": "https://github.com/TouaregWarrior/MMM-SpaceLaunch",
+    "id": "TouaregWarrior/MMM-SpaceLaunch",
+    "maintainer": "TouaregWarrior",
+    "maintainerURL": "",
+    "description": "Displays the next scheduled spacecraft launch - Global launches.",
+    "issues": [
+      "There is no `package.json`. We need this file to gather information about the module for the module list page."
+    ],
+    "stars": 0,
+    "license": "MIT",
+    "image": "MMM-SpaceLaunch.jpg"
   },
   {
     "name": "MMM-SpaceLaunchNow",
@@ -19414,6 +19475,23 @@
     "license": "MIT"
   },
   {
+    "name": "MMM-Yahrzeit",
+    "category": "Religion",
+    "url": "https://github.com/supermem613/MMM-Yahrzeit",
+    "id": "supermem613/MMM-Yahrzeit",
+    "maintainer": "supermem613",
+    "maintainerURL": "",
+    "description": "Displays Yahrzeit (anniversary of a death according to the Jewish calendar).",
+    "issues": [
+      "`package.json` issue: No repository field.",
+      "`package.json` issue: No license field.",
+      "There are no keywords in 'package.json'. We would use them as tags on the module list page."
+    ],
+    "stars": 0,
+    "license": "MIT",
+    "image": "image.jpg"
+  },
+  {
     "name": "MMM-yandex-route",
     "category": "Transport / Travel",
     "url": "https://github.com/DimmanT/MMM-yandex-route",
@@ -19682,6 +19760,24 @@
     "maintainer": "shmulyeng",
     "maintainerURL": "",
     "description": "Displays daily Jewish calendar information.",
+    "issues": [
+      "`package.json` issue: No description",
+      "`package.json` issue: No repository field.",
+      "There are no specific keywords in 'package.json'. We would use them as tags on the module list page. Add a few meaningful terms to the keywords in the package.json. Not just “magicmirror” or “module”."
+    ],
+    "stars": 0,
+    "hasGithubIssues": false,
+    "license": "ISC",
+    "image": "alternateScreenshot.jpg"
+  },
+  {
+    "name": "MMM-Zmanim",
+    "category": "Religion",
+    "url": "https://github.com/supermem613/MMM-Zmanim",
+    "id": "supermem613/MMM-Zmanim",
+    "maintainer": "supermem613",
+    "maintainerURL": "",
+    "description": "Displays Zmanim (Jewish calendar information).",
     "issues": [
       "`package.json` issue: No description",
       "`package.json` issue: No repository field.",

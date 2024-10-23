@@ -804,7 +804,7 @@
     "license": "ISC",
     "image": "img-demo.jpg",
     "defaultSortWeight": 9,
-    "lastCommit": "2024-10-20T17:55:25+01:00"
+    "lastCommit": "2024-10-22T19:41:55+01:00"
   },
   {
     "name": "MMM-Autobahn",
@@ -909,7 +909,7 @@
     "description": "Easy, hands free Amazon Alexa integration; activated, simply by saying \"Alexa\".",
     "issues": true,
     "outdated": "Abandoned. No reactions to issues since years. The documentation currently available does not work any more (<a href=\"https://github.com/MagicMirrorOrg/MagicMirror/issues/3398\">#3398</a>).",
-    "stars": 158,
+    "stars": 157,
     "license": "MIT",
     "image": "styles-loading.jpg",
     "defaultSortWeight": 901,
@@ -943,7 +943,7 @@
     "maintainerURL": "",
     "description": "Show fullscreen slideshow in background from images in a local folder. Great for a photo frame.",
     "issues": true,
-    "stars": 144,
+    "stars": 146,
     "license": "MIT",
     "tags": [
       "background",
@@ -1200,10 +1200,10 @@
     "maintainerURL": "https://github.com/amitchone",
     "description": "A simple, lightweight birthday reminder - specified either via simple JSON file or in <code>config.js</code>. Supports multiple languages.",
     "issues": true,
-    "stars": 10,
+    "stars": 11,
     "license": "Apache-2.0",
     "image": "example.jpg",
-    "defaultSortWeight": 3,
+    "defaultSortWeight": 2,
     "lastCommit": "2024-02-03T21:57:39+00:00"
   },
   {
@@ -1733,8 +1733,8 @@
       "buttons"
     ],
     "image": "symbolization.jpg",
-    "defaultSortWeight": 1,
-    "lastCommit": "2024-10-07T20:29:43+02:00"
+    "defaultSortWeight": 0,
+    "lastCommit": "2024-10-22T10:17:52+02:00"
   },
   {
     "name": "MMM-Bysykkel",
@@ -1795,7 +1795,7 @@
     "maintainerURL": "",
     "description": "Extended calendar and event view.",
     "issues": true,
-    "stars": 53,
+    "stars": 56,
     "license": "MIT",
     "tags": [
       "calendar",
@@ -1814,7 +1814,7 @@
     "maintainerURL": "",
     "description": "Extended calendar and event view. Show calendar as agenda.",
     "issues": false,
-    "stars": 14,
+    "stars": 16,
     "license": "MIT",
     "tags": [
       "calendar",
@@ -1833,7 +1833,7 @@
     "maintainerURL": "",
     "description": "Presenting events as daily/weekly journal style.",
     "issues": true,
-    "stars": 6,
+    "stars": 7,
     "license": "MIT",
     "tags": [
       "cx3j",
@@ -1928,7 +1928,7 @@
     "maintainerURL": "",
     "description": "Display a weekly (n days) calendar view.",
     "issues": true,
-    "stars": 53,
+    "stars": 54,
     "license": "MIT",
     "image": "screenshots-With calendar title.jpg",
     "defaultSortWeight": 12,
@@ -2005,7 +2005,7 @@
     "maintainerURL": "",
     "description": "Gets weather watches, warnings, and advisories for user specified regions. Using alert data published by Environment Canada.",
     "issues": true,
-    "stars": 2,
+    "stars": 3,
     "license": "MIT",
     "tags": [
       "canada",
@@ -2096,8 +2096,8 @@
     "maintainer": "shbatm",
     "maintainerURL": "https://github.com/shbatm",
     "description": "Rotate modules, to save space on screen.",
-    "issues": true,
-    "stars": 40,
+    "issues": false,
+    "stars": 42,
     "license": "MIT",
     "tags": [
       "carousel",
@@ -2109,8 +2109,8 @@
       "pages"
     ],
     "image": "img-example1-slide.jpg",
-    "defaultSortWeight": 1,
-    "lastCommit": "2024-03-25T16:37:53-07:00"
+    "defaultSortWeight": -1,
+    "lastCommit": "2024-10-23T00:41:14+02:00"
   },
   {
     "name": "MMM-CECControl",
@@ -2791,7 +2791,7 @@
     "maintainerURL": "",
     "description": "Display cryptocurrencies ticker price, with graphs and changes over time.",
     "issues": true,
-    "stars": 95,
+    "stars": 96,
     "license": "MIT",
     "image": "MMM-cryptocurrency.jpg",
     "defaultSortWeight": 5,
@@ -2862,7 +2862,7 @@
     "maintainerURL": "",
     "description": "Display cursor when user moves mouse and hide after delay.",
     "issues": true,
-    "stars": 23,
+    "stars": 24,
     "license": "MIT",
     "tags": [
       "cursor"
@@ -5355,8 +5355,8 @@
       "music"
     ],
     "image": "example_dab.jpg",
-    "defaultSortWeight": 3,
-    "lastCommit": "2024-10-11T11:49:32+02:00"
+    "defaultSortWeight": 2,
+    "lastCommit": "2024-10-22T10:16:47+02:00"
   },
   {
     "name": "MMM-FTP-image",
@@ -6342,6 +6342,21 @@
     "lastCommit": "2020-04-06T19:39:10-07:00"
   },
   {
+    "name": "MMM-Halloween",
+    "category": "Entertainment / Misc",
+    "url": "https://github.com/SLFaleiro/MMM-Halloween",
+    "id": "SLFaleiro/MMM-Halloween",
+    "maintainer": "SLFaleiro",
+    "maintainerURL": "https://github.com/SLFaleiro",
+    "description": "\ud83c\udf83 Adds a spooky Halloween theme to your display by animating ghosts across the screen.",
+    "issues": true,
+    "stars": 4,
+    "license": "GPL-2.0",
+    "image": "screenshot.jpg",
+    "defaultSortWeight": 2,
+    "lastCommit": "2024-10-23T11:32:57+01:00"
+  },
+  {
     "name": "MMM-Hanzi",
     "category": "Education",
     "url": "https://github.com/tderflinger/MMM-Hanzi",
@@ -6587,8 +6602,8 @@
     "stars": 0,
     "license": "GPL-3.0",
     "image": "MMM-HolidayCountdown.jpg",
-    "defaultSortWeight": 2,
-    "lastCommit": "2024-10-21T19:19:03+01:00"
+    "defaultSortWeight": 3,
+    "lastCommit": "2024-10-21T22:57:26+01:00"
   },
   {
     "name": "MMM-HolidayLights",
@@ -9121,7 +9136,7 @@
     ],
     "image": "MMM-MealieMenu-screenshot.jpg",
     "defaultSortWeight": 1,
-    "lastCommit": "2024-10-21T13:16:21-06:00"
+    "lastCommit": "2024-10-23T05:05:54+00:00"
   },
   {
     "name": "MMM-MealViewer",
@@ -10131,8 +10146,8 @@
     "maintainerURL": "",
     "description": "Tracks the number of mortgage payments left.",
     "issues": true,
-    "stars": 0,
-    "license": "CC0-1.0",
+    "stars": 1,
+    "license": "MIT",
     "tags": [
       "mortage",
       "finance",
@@ -10140,7 +10155,7 @@
     ],
     "image": "MMM-MortgageCountdown.jpg",
     "defaultSortWeight": 3,
-    "lastCommit": "2024-10-21T18:57:43+01:00"
+    "lastCommit": "2024-10-21T22:57:46+01:00"
   },
   {
     "name": "MMM-Motion-Camera",
@@ -10245,7 +10260,7 @@
     "maintainerURL": "",
     "description": "Displays the currently airing top movies in theaters around you.",
     "issues": true,
-    "stars": 0,
+    "stars": 1,
     "hasGithubIssues": false,
     "license": "MIT",
     "image": "image-1.jpg",
@@ -13985,7 +14000,7 @@
     "maintainer": "KristjanESPERANTO",
     "maintainerURL": "",
     "description": "Displays departure information for public transportation in Germany and some other European countries. The <a target=\"_blank\" href=\"https://github.com/public-transport/hafas-client\">hafas-client</a> is used to query the information. The interface of the Deutsche Bahn is used as standard, this includes most of the local networks with buses, trams, etc. However, <a target=\"_blank\" href=\"https://github.com/public-transport/hafas-client/blob/main/p/readme.md\">other hafas interfaces</a> can also be used.",
-    "issues": true,
+    "issues": false,
     "stars": 20,
     "license": "MIT",
     "tags": [
@@ -13994,7 +14009,7 @@
     ],
     "image": "img-Goerdelerring_all.jpg",
     "defaultSortWeight": 1,
-    "lastCommit": "2024-10-14T20:33:50+02:00"
+    "lastCommit": "2024-10-22T23:41:13+02:00"
   },
   {
     "name": "MMM-PublicTransportVVO",
@@ -15071,6 +15086,21 @@
     "lastCommit": "2024-10-17T14:24:45+02:00"
   },
   {
+    "name": "MMM-RunningForecast",
+    "category": "Weather",
+    "url": "https://github.com/supermem613/MMM-RunningForecast",
+    "id": "supermem613/MMM-RunningForecast",
+    "maintainer": "supermem613",
+    "maintainerURL": "",
+    "description": "Displays running forecasts from weather.com.",
+    "issues": true,
+    "stars": 0,
+    "license": "MIT",
+    "image": "image.jpg",
+    "defaultSortWeight": 6,
+    "lastCommit": "2024-10-20T21:11:45-04:00"
+  },
+  {
     "name": "MMM-Russianwarship",
     "category": "News / Information",
     "url": "https://github.com/uncleLem/MMM-Russianwarship",
@@ -15708,6 +15738,21 @@
     "image": "docs-screenshot.jpg",
     "defaultSortWeight": 6,
     "lastCommit": "2019-10-06T14:29:49+02:00"
+  },
+  {
+    "name": "MMM-ShulSchedule",
+    "category": "Religion",
+    "url": "https://github.com/supermem613/MMM-ShulSchedule",
+    "id": "supermem613/MMM-ShulSchedule",
+    "maintainer": "supermem613",
+    "maintainerURL": "",
+    "description": "Displays a Shul's schedule from ShulCloud.",
+    "issues": true,
+    "stars": 0,
+    "license": "MIT",
+    "image": "image.jpg",
+    "defaultSortWeight": 6,
+    "lastCommit": "2024-10-21T10:57:24-04:00"
   },
   {
     "name": "MMM-Simple-Swiper",
@@ -16380,6 +16425,21 @@
     "stars": 10,
     "defaultSortWeight": 7,
     "lastCommit": "2019-08-15T23:13:58+02:00"
+  },
+  {
+    "name": "MMM-SpaceLaunch",
+    "category": "Utility / IOT / 3rd Party / Integration",
+    "url": "https://github.com/TouaregWarrior/MMM-SpaceLaunch",
+    "id": "TouaregWarrior/MMM-SpaceLaunch",
+    "maintainer": "TouaregWarrior",
+    "maintainerURL": "",
+    "description": "Displays the next scheduled spacecraft launch - Global launches.",
+    "issues": true,
+    "stars": 0,
+    "license": "MIT",
+    "image": "MMM-SpaceLaunch.jpg",
+    "defaultSortWeight": 2,
+    "lastCommit": "2024-10-21T22:51:16+01:00"
   },
   {
     "name": "MMM-SpaceLaunchNow",
@@ -19684,6 +19744,21 @@
     "lastCommit": "2022-02-23T19:14:36+01:00"
   },
   {
+    "name": "MMM-Yahrzeit",
+    "category": "Religion",
+    "url": "https://github.com/supermem613/MMM-Yahrzeit",
+    "id": "supermem613/MMM-Yahrzeit",
+    "maintainer": "supermem613",
+    "maintainerURL": "",
+    "description": "Displays Yahrzeit (anniversary of a death according to the Jewish calendar).",
+    "issues": true,
+    "stars": 0,
+    "license": "MIT",
+    "image": "image.jpg",
+    "defaultSortWeight": 5,
+    "lastCommit": "2024-10-21T20:14:57-04:00"
+  },
+  {
     "name": "MMM-yandex-route",
     "category": "Transport / Travel",
     "url": "https://github.com/DimmanT/MMM-yandex-route",
@@ -19970,5 +20045,21 @@
     "image": "alternateScreenshot.jpg",
     "defaultSortWeight": 11,
     "lastCommit": "2020-12-06T21:27:43-05:00"
+  },
+  {
+    "name": "MMM-Zmanim",
+    "category": "Religion",
+    "url": "https://github.com/supermem613/MMM-Zmanim",
+    "id": "supermem613/MMM-Zmanim",
+    "maintainer": "supermem613",
+    "maintainerURL": "",
+    "description": "Displays Zmanim (Jewish calendar information).",
+    "issues": true,
+    "stars": 0,
+    "hasGithubIssues": false,
+    "license": "ISC",
+    "image": "alternateScreenshot.jpg",
+    "defaultSortWeight": 10,
+    "lastCommit": "2024-10-20T20:56:37-04:00"
   }
 ]
