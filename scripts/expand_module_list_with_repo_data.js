@@ -160,6 +160,7 @@ async function checkLicenseAndHandleScreenshot (moduleData, module) {
       "Apache-2.0",
       "BSD-3-Clause",
       "CC0-1.0",
+      "GPL-2.0",
       "GPL-3.0",
       "GPL-3.0-only",
       "GPL-3.0-or-later",
