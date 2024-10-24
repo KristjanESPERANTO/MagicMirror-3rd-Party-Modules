@@ -355,6 +355,23 @@ def check_modules():
             elif "eslint.config" not in str(sorted(module_directory_path.rglob("*"))):
                 module["issues"].append(
                     "Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.")
+            else:
+                # Check if ESLint is in the dependencies or devDependencies
+                package_json = Path(f"{module_directory_path}/package.json")
+                if package_json.is_file():
+                    with open(package_json, "r", encoding="utf-8") as file:
+                        package_json_content = json.load(file)
+                        if "eslint" not in package_json_content.get("dependencies", {}) and "eslint" not in package_json_content.get("devDependencies", {}):
+                            module["issues"].append(
+                                "Recommendation: ESLint is not in the dependencies or devDependencies. It is recommended to add it to one of them.")
+                        # Check if there is a script for ESLint
+                        if "scripts" in package_json_content:
+                            if "lint" not in package_json_content["scripts"]:
+                                module["issues"].append(
+                                    "Recommendation: No lint script found in package.json. It is recommended to add one.")
+                            elif "eslint" not in package_json_content["scripts"]["lint"]:
+                                module["issues"].append(
+                                    "Recommendation: The lint script in package.json does not contain `eslint`. It is recommended to add it.")
 
             if not module_directory_path.is_dir():
                 module["issues"] = [
