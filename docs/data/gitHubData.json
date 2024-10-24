@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "2024-10-24T03:30:21.450Z",
+  "lastUpdate": "2024-10-24T15:30:24.816Z",
   "repositories": [
     {
       "id": "0lek/MMM-socialbicycles",
@@ -115,7 +115,7 @@
     },
     {
       "id": "aaron64/MMM-DockerVisualizer",
-      "gitHubDataLastUpdate": "2024-10-06T03:30:19.143Z",
+      "gitHubDataLastUpdate": "2024-10-24T15:30:11.008Z",
       "gitHubData": {
         "issues": 0,
         "stars": 4,
@@ -941,7 +941,7 @@
     },
     {
       "id": "Ax-LED/MMM-Dreambox",
-      "gitHubDataLastUpdate": "2024-10-06T15:30:08.045Z",
+      "gitHubDataLastUpdate": "2024-10-24T15:30:13.100Z",
       "gitHubData": {
         "issues": 2,
         "stars": 3,
@@ -2537,7 +2537,7 @@
     },
     {
       "id": "carstendirks/MMM-DWD-Pollen",
-      "gitHubDataLastUpdate": "2024-10-06T15:30:10.645Z",
+      "gitHubDataLastUpdate": "2024-10-24T15:30:15.931Z",
       "gitHubData": {
         "issues": 0,
         "stars": 12,
@@ -3447,7 +3447,7 @@
     },
     {
       "id": "DavidLSmyth/DWD-RealtimeIrishRail",
-      "gitHubDataLastUpdate": "2024-10-06T15:30:11.196Z",
+      "gitHubDataLastUpdate": "2024-10-24T15:30:18.420Z",
       "gitHubData": {
         "issues": 1,
         "stars": 1,
@@ -3993,7 +3993,7 @@
     },
     {
       "id": "drventure/MMM-Dorba-Trails",
-      "gitHubDataLastUpdate": "2024-10-06T15:30:07.441Z",
+      "gitHubDataLastUpdate": "2024-10-24T15:30:12.611Z",
       "gitHubData": {
         "issues": 1,
         "stars": 2,
@@ -5127,7 +5127,7 @@
     },
     {
       "id": "galaktor/MMM-DublinRTPI",
-      "gitHubDataLastUpdate": "2024-10-06T15:30:09.798Z",
+      "gitHubDataLastUpdate": "2024-10-24T15:30:15.031Z",
       "gitHubData": {
         "issues": 2,
         "stars": 1,
@@ -5169,7 +5169,7 @@
     },
     {
       "id": "gberg927/MMM-DisneyWaitTimes",
-      "gitHubDataLastUpdate": "2024-10-06T03:30:18.725Z",
+      "gitHubDataLastUpdate": "2024-10-24T15:30:10.549Z",
       "gitHubData": {
         "issues": 3,
         "stars": 6,
@@ -5337,7 +5337,7 @@
     },
     {
       "id": "goedh452/MMM-Domoticz-ext",
-      "gitHubDataLastUpdate": "2024-10-06T15:30:06.972Z",
+      "gitHubDataLastUpdate": "2024-10-24T15:30:12.073Z",
       "gitHubData": {
         "issues": 0,
         "stars": 0,
@@ -6135,7 +6135,7 @@
     },
     {
       "id": "J0n4e/MMM-DHT22",
-      "gitHubDataLastUpdate": "2024-10-06T03:30:16.040Z",
+      "gitHubDataLastUpdate": "2024-10-24T15:30:07.491Z",
       "gitHubData": {
         "issues": 1,
         "stars": 4,
@@ -6961,7 +6961,7 @@
     },
     {
       "id": "jordy-u/MMM-Discourse-notifications",
-      "gitHubDataLastUpdate": "2024-10-06T03:30:18.295Z",
+      "gitHubDataLastUpdate": "2024-10-24T15:30:10.017Z",
       "gitHubData": {
         "issues": 5,
         "stars": 3,
@@ -7227,7 +7227,7 @@
     },
     {
       "id": "justjim1220/MMM-DigClock",
-      "gitHubDataLastUpdate": "2024-10-06T03:30:16.487Z",
+      "gitHubDataLastUpdate": "2024-10-24T15:30:07.943Z",
       "gitHubData": {
         "issues": 4,
         "stars": 7,
@@ -7241,7 +7241,7 @@
     },
     {
       "id": "justjim1220/MMM-DigitalAlarmClock",
-      "gitHubDataLastUpdate": "2024-10-06T03:30:16.914Z",
+      "gitHubDataLastUpdate": "2024-10-24T15:30:08.564Z",
       "gitHubData": {
         "issues": 1,
         "stars": 4,
@@ -7633,7 +7633,7 @@
     },
     {
       "id": "KristjanESPERANTO/MMM-EasyPix",
-      "gitHubDataLastUpdate": "2024-10-06T15:30:16.729Z",
+      "gitHubDataLastUpdate": "2024-10-24T15:30:23.809Z",
       "gitHubData": {
         "issues": 0,
         "stars": 7,
@@ -7642,7 +7642,7 @@
         "disabled": false,
         "defaultBranch": "main",
         "has_issues": true,
-        "lastCommit": "2024-03-16T14:21:39Z"
+        "lastCommit": "2024-10-23T22:45:27Z"
       }
     },
     {
@@ -8081,7 +8081,7 @@
     },
     {
       "id": "LukeSkywalker92/MMM-DWD-WarnWeather",
-      "gitHubDataLastUpdate": "2024-10-06T15:30:11.597Z",
+      "gitHubDataLastUpdate": "2024-10-24T15:30:18.889Z",
       "gitHubData": {
         "issues": 12,
         "stars": 63,
@@ -8277,7 +8277,7 @@
     },
     {
       "id": "marcobiedermann/MMM-dribbble",
-      "gitHubDataLastUpdate": "2024-10-06T15:30:08.469Z",
+      "gitHubDataLastUpdate": "2024-10-24T15:30:13.558Z",
       "gitHubData": {
         "issues": 2,
         "stars": 1,
@@ -8613,7 +8613,7 @@
     },
     {
       "id": "mboskamp/MMM-Discogs",
-      "gitHubDataLastUpdate": "2024-10-06T03:30:17.392Z",
+      "gitHubDataLastUpdate": "2024-10-24T15:30:09.057Z",
       "gitHubData": {
         "issues": 1,
         "stars": 3,
@@ -9285,7 +9285,7 @@
     },
     {
       "id": "MMRIZE/MMM-DropboxPictures",
-      "gitHubDataLastUpdate": "2024-10-06T15:30:08.953Z",
+      "gitHubDataLastUpdate": "2024-10-24T15:30:14.055Z",
       "gitHubData": {
         "issues": 0,
         "stars": 1,
@@ -9509,7 +9509,7 @@
     },
     {
       "id": "Mong-ni/MMM-DropboxWallpaper",
-      "gitHubDataLastUpdate": "2024-10-06T15:30:09.366Z",
+      "gitHubDataLastUpdate": "2024-10-24T15:30:14.565Z",
       "gitHubData": {
         "issues": 4,
         "stars": 18,
@@ -10083,7 +10083,7 @@
     },
     {
       "id": "mykle1/MMM-EARTH",
-      "gitHubDataLastUpdate": "2024-10-06T15:30:14.840Z",
+      "gitHubDataLastUpdate": "2024-10-24T15:30:21.826Z",
       "gitHubData": {
         "issues": 1,
         "stars": 60,
@@ -10097,7 +10097,7 @@
     },
     {
       "id": "mykle1/MMM-EARTH-Live",
-      "gitHubDataLastUpdate": "2024-10-06T15:30:15.263Z",
+      "gitHubDataLastUpdate": "2024-10-24T15:30:22.371Z",
       "gitHubData": {
         "issues": 0,
         "stars": 26,
@@ -10111,7 +10111,7 @@
     },
     {
       "id": "mykle1/MMM-Earthquake",
-      "gitHubDataLastUpdate": "2024-10-06T15:30:15.766Z",
+      "gitHubDataLastUpdate": "2024-10-24T15:30:22.814Z",
       "gitHubData": {
         "issues": 0,
         "stars": 7,
@@ -11399,7 +11399,7 @@
     },
     {
       "id": "parnic/MMM-Ecobee",
-      "gitHubDataLastUpdate": "2024-10-06T15:30:17.200Z",
+      "gitHubDataLastUpdate": "2024-10-24T15:30:24.303Z",
       "gitHubData": {
         "issues": 0,
         "stars": 5,
@@ -11609,7 +11609,7 @@
     },
     {
       "id": "phpwun/MMM-Dogbrew",
-      "gitHubDataLastUpdate": "2024-10-06T03:30:19.650Z",
+      "gitHubDataLastUpdate": "2024-10-24T15:30:11.585Z",
       "gitHubData": {
         "issues": 0,
         "stars": 0,
@@ -12239,7 +12239,7 @@
     },
     {
       "id": "rcollie/MMM-EarthquakeMonitor",
-      "gitHubDataLastUpdate": "2024-10-06T15:30:16.165Z",
+      "gitHubDataLastUpdate": "2024-10-24T15:30:23.299Z",
       "gitHubData": {
         "issues": 1,
         "stars": 1,
@@ -12309,7 +12309,7 @@
     },
     {
       "id": "rehne/MMM-Ecosia-Tree-Counter",
-      "gitHubDataLastUpdate": "2024-10-06T15:30:17.619Z",
+      "gitHubDataLastUpdate": "2024-10-24T15:30:24.775Z",
       "gitHubData": {
         "issues": 0,
         "stars": 2,
@@ -12939,7 +12939,7 @@
     },
     {
       "id": "scottcl88/MMM-DynamicWeather",
-      "gitHubDataLastUpdate": "2024-10-06T15:30:14.405Z",
+      "gitHubDataLastUpdate": "2024-10-24T15:30:21.333Z",
       "gitHubData": {
         "issues": 4,
         "stars": 30,
@@ -13527,7 +13527,7 @@
     },
     {
       "id": "skastenholz/MMM-DVB",
-      "gitHubDataLastUpdate": "2024-10-06T15:30:10.226Z",
+      "gitHubDataLastUpdate": "2024-10-24T15:30:15.494Z",
       "gitHubData": {
         "issues": 1,
         "stars": 13,
@@ -13737,7 +13737,7 @@
     },
     {
       "id": "Smiche/MMM-DiscordWatch",
-      "gitHubDataLastUpdate": "2024-10-06T03:30:17.842Z",
+      "gitHubDataLastUpdate": "2024-10-24T15:30:09.543Z",
       "gitHubData": {
         "issues": 5,
         "stars": 9,
@@ -15207,7 +15207,7 @@
     },
     {
       "id": "Toreke/MMM-Dynamic-Modules",
-      "gitHubDataLastUpdate": "2024-10-06T15:30:11.953Z",
+      "gitHubDataLastUpdate": "2024-10-24T15:30:19.362Z",
       "gitHubData": {
         "issues": 1,
         "stars": 13,
