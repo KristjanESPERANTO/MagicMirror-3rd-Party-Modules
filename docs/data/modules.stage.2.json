@@ -2120,7 +2120,7 @@
     "maintainerURL": "",
     "description": "Simple display of dad jokes from icanhazdadjoke.com.",
     "issues": [],
-    "stars": 7,
+    "stars": 8,
     "hasGithubIssues": false,
     "license": "MIT"
   },
@@ -2195,7 +2195,7 @@
     "maintainerURL": "",
     "description": "Display the verse of the day from &lt;<a target=\"_blank\" href=\"http://www.biblegateway.com%3E\">www.biblegateway.com&gt;</a>.",
     "issues": [],
-    "stars": 26,
+    "stars": 27,
     "license": "MIT"
   },
   {
@@ -2231,7 +2231,7 @@
     "maintainerURL": "",
     "description": "Displays a random Pokemon, it's type, and stats daily.",
     "issues": [],
-    "stars": 21,
+    "stars": 24,
     "license": "MIT"
   },
   {

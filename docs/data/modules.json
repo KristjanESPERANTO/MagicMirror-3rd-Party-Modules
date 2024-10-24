@@ -2029,7 +2029,7 @@
     "maintainer": "KristjanESPERANTO",
     "maintainerURL": "",
     "description": "Show meals from canteens (Germany and Switzerland).",
-    "issues": true,
+    "issues": false,
     "stars": 5,
     "license": "MIT",
     "tags": [
@@ -2038,7 +2038,7 @@
     ],
     "image": "img-example1.jpg",
     "defaultSortWeight": 1,
-    "lastCommit": "2024-10-13T20:31:36+02:00"
+    "lastCommit": "2024-10-24T00:33:50+02:00"
   },
   {
     "name": "MMM-Canvas",
@@ -2994,7 +2994,7 @@
     "maintainerURL": "",
     "description": "Simple display of dad jokes from icanhazdadjoke.com.",
     "issues": true,
-    "stars": 7,
+    "stars": 8,
     "hasGithubIssues": false,
     "license": "MIT",
     "tags": [
@@ -3098,7 +3098,7 @@
     "maintainerURL": "",
     "description": "Display the verse of the day from &lt;<a target=\"_blank\" href=\"http://www.biblegateway.com%3E\">www.biblegateway.com&gt;</a>.",
     "issues": true,
-    "stars": 26,
+    "stars": 27,
     "license": "MIT",
     "defaultSortWeight": 8,
     "lastCommit": "2020-04-14T22:58:43+02:00"
@@ -3142,7 +3142,7 @@
     "maintainerURL": "",
     "description": "Displays a random Pokemon, it's type, and stats daily.",
     "issues": true,
-    "stars": 21,
+    "stars": 24,
     "license": "MIT",
     "image": "images-demo.jpg",
     "defaultSortWeight": 6,
@@ -3891,7 +3891,7 @@
     "maintainer": "KristjanESPERANTO",
     "maintainerURL": "",
     "description": "The easiest way to show pictures on your mirror.",
-    "issues": true,
+    "issues": false,
     "stars": 7,
     "license": "MIT",
     "tags": [
@@ -3901,7 +3901,7 @@
     ],
     "image": "pix-earth.jpg",
     "defaultSortWeight": 1,
-    "lastCommit": "2024-10-13T20:23:20+02:00"
+    "lastCommit": "2024-10-24T00:45:27+02:00"
   },
   {
     "name": "MMM-Ecobee",
@@ -6034,7 +6034,7 @@
     ],
     "image": "screenshots-Orders_Custom.jpg",
     "defaultSortWeight": 0,
-    "lastCommit": "2024-10-21T10:54:54-04:00"
+    "lastCommit": "2024-10-23T22:24:31-04:00"
   },
   {
     "name": "MMM-GoogleShoppingList",
@@ -7605,7 +7605,7 @@
     "maintainer": "KristjanESPERANTO",
     "maintainerURL": "",
     "description": "Displays live video from the International Space Station.",
-    "issues": true,
+    "issues": false,
     "stars": 6,
     "license": "MIT",
     "tags": [
@@ -7614,7 +7614,7 @@
     ],
     "image": "images-i1.jpg",
     "defaultSortWeight": 1,
-    "lastCommit": "2024-10-13T20:06:56+02:00"
+    "lastCommit": "2024-10-24T00:50:04+02:00"
   },
   {
     "name": "MMM-ISS-Map",
@@ -11321,7 +11321,7 @@
     ],
     "image": ".github-preview.bubbles.jpg",
     "defaultSortWeight": -1,
-    "lastCommit": "2024-10-18T22:14:51+00:00"
+    "lastCommit": "2024-10-23T19:08:28+00:00"
   },
   {
     "name": "MMM-Netatmo-Presence",
@@ -12252,7 +12252,7 @@
     "maintainer": "KristjanESPERANTO",
     "maintainerURL": "",
     "description": "Display current and forecast weather based on the Openweathermap OneCall API data with alternative formatting.",
-    "issues": true,
+    "issues": false,
     "stars": 3,
     "license": "MIT",
     "tags": [
@@ -12261,7 +12261,7 @@
     ],
     "image": "OneCallWeather-Screenshot.jpg",
     "defaultSortWeight": 1,
-    "lastCommit": "2024-10-13T20:49:37+02:00"
+    "lastCommit": "2024-10-24T00:58:36+02:00"
   },
   {
     "name": "MMM-OneDrive",
@@ -19255,7 +19255,7 @@
     "maintainer": "KristjanESPERANTO",
     "maintainerURL": "",
     "description": "A Text-To-Speech module which uses the Web Speech API of the browser. It is in an early stage of development. So far only German is supported.",
-    "issues": true,
+    "issues": false,
     "stars": 3,
     "license": "MIT",
     "tags": [
@@ -19265,7 +19265,7 @@
     ],
     "image": ".github-TTS.jpg",
     "defaultSortWeight": 1,
-    "lastCommit": "2024-10-13T20:13:15+02:00"
+    "lastCommit": "2024-10-24T00:53:51+02:00"
   },
   {
     "name": "MMM-Webuntis",

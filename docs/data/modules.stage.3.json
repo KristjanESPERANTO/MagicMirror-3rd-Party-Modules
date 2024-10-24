@@ -2940,7 +2940,7 @@
     "issues": [
       "Issues are not enabled in the GitHub repository. So users cannot report bugs. Please enable issues in your repo."
     ],
-    "stars": 7,
+    "stars": 8,
     "hasGithubIssues": false,
     "license": "MIT",
     "tags": [
@@ -3044,7 +3044,7 @@
       "There are no keywords in 'package.json'. We would use them as tags on the module list page.",
       "No image found."
     ],
-    "stars": 26,
+    "stars": 27,
     "license": "MIT"
   },
   {
@@ -3089,7 +3089,7 @@
       "`package.json` issue: No repository field.",
       "There are no keywords in 'package.json'. We would use them as tags on the module list page."
     ],
-    "stars": 21,
+    "stars": 24,
     "license": "MIT",
     "image": "images-demo.jpg"
   },

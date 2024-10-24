@@ -1,6 +1,6 @@
 # Result of the module analysis
 
-Last update: 2024-10-23T18:49:29+02:00
+Last update: 2024-10-24T05:48:03+02:00
 
 ## Statistics
 
@@ -8,8 +8,8 @@ Last update: 2024-10-23T18:49:29+02:00
 |:---------------------|:--------:|
 | modules analyzed     |   1194   |
 | maintainer           |    640   |
-| modules with issues  |   1190   |
-| issues               |   6872   |
+| modules with issues  |   1185   |
+| issues               |   6867   |
 | modules at github    |   1085   |
 | modules at gitlab    |     10   |
 | modules at bitbucket |      1   |
@@ -1050,13 +1050,6 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
 5. Recommendation: Found `require('https')` in file `node_helper.js`: Replace 'https' by 'node:https'.
 6. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
 
-### [MMM-Canteen by KristjanESPERANTO](https://github.com/KristjanESPERANTO/MMM-Canteen)
-
-1. Information: There are updates for 2 dependencie(s):
-   - @eslint/js   9.12.0  →   9.13.0
-   - eslint      ^9.12.0  →  ^9.13.0
-
-
 ### [MMM-Canvas by chase-cromwell](https://github.com/chase-cromwell/MMM-Canvas)
 
 1. There is no `package.json`. We need this file to gather information about the module for the module list page.
@@ -1920,13 +1913,6 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
 4. Recommendation: Found `new Date()` in file `MMM-EarthquakeMonitor.js`: Consider replacing it by `new Date(Date.now())`. It's helpful for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
 5. Recommendation: The README seems not to have an install instruction (the words 'install' or 'installation' are missing). Please add one.
 6. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
-
-### [MMM-EasyPix by KristjanESPERANTO](https://github.com/KristjanESPERANTO/MMM-EasyPix)
-
-1. Information: There are updates for 2 dependencie(s):
-   - @eslint/js  ^9.12.0  →  ^9.13.0
-   - eslint      ^9.12.0  →  ^9.13.0
-
 
 ### [MMM-Ecobee by parnic](https://github.com/parnic/MMM-Ecobee)
 
@@ -3950,13 +3936,6 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
 5. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
 6. Recommendation: Found `new Date()` in file `node_helper.js`: Consider replacing it by `new Date(Date.now())`. It's helpful for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
 7. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
-
-### [MMM-ISS-Live by KristjanESPERANTO](https://github.com/KristjanESPERANTO/MMM-ISS-Live)
-
-1. Information: There are updates for 2 dependencie(s):
-   - @eslint/js  ^9.12.0  →  ^9.13.0
-   - eslint      ^9.12.0  →  ^9.13.0
-
 
 ### [MMM-ISS-Map by khassel](https://gitlab.com/khassel/MMM-ISS-Map)
 
@@ -6397,13 +6376,6 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
 5. Deprecated: Found `require('request')` in file `node_helper.js`: Replace it with built-in fetch.
 6. Warning: No LICENSE file.
 7. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
-
-### [MMM-OneCallWeather by KristjanESPERANTO](https://github.com/KristjanESPERANTO/MMM-OneCallWeather)
-
-1. Information: There are updates for 2 dependencie(s):
-   - @eslint/js  ^9.12.0  →  ^9.13.0
-   - eslint      ^9.12.0  →  ^9.13.0
-
 
 ### [MMM-OneDrive by hermanho](https://github.com/hermanho/MMM-OneDrive)
 
@@ -10179,13 +10151,6 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
 5. Recommendation: Found local copy of `jquery.min.js`. Instead of a local copy, it would be better to add jQuery to the dependencies in `package.json`.
 6. Outdated: Local jQuery file `jquery.min.js` seems to be outdated. jQuery v3.7 or higher is recommended.
 7. Recommendation: Found `https://cdnjs.cloudflare.com` in file `system.html`: It looks like a package is loaded via CDN. It would be better if the package were installed locally via npm.
-
-### [MMM-WebSpeechTTS by KristjanESPERANTO](https://github.com/KristjanESPERANTO/MMM-WebSpeechTTS)
-
-1. Information: There are updates for 2 dependencie(s):
-   - @eslint/js  ^9.12.0  →  ^9.13.0
-   - eslint      ^9.12.0  →  ^9.13.0
-
 
 ### [MMM-Webuntis by HeikoGr](https://github.com/HeikoGr/MMM-Webuntis)
 
