@@ -122,6 +122,8 @@ How can you use it?
 - Long-term goal: The website functions like an app store. The user only has to click on an install button and the module is installed and a basic configuration is inserted.
   - bugsounet did this for MMM-GoogleAssistant and it's modules: <https://wiki.bugsounet.fr/MMM-GoogleAssistant/website>
 - Move ideas/todos to GitHub Issues and add proper tags.
+- Add test which runs ESLint only with import plugin to check modules
+- `package.json` is handled in different scripts. This could be done in one.
 - Add exceptions for 3rd-Party stuff like jquery or fontawesome? <https://github.com/bugsounet/MMM-GoogleAssistant/pull/386>
 - Move `result.md` to docs.
 - Show results in popup on the page.
