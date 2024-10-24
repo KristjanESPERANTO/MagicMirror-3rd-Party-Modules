@@ -1,13 +1,13 @@
-import eslintPluginImportX from "eslint-plugin-import-x";
+import eslintPluginImport from "eslint-plugin-import";
 import eslintPluginJs from "@eslint/js";
-import eslintPluginJsonc from "eslint-plugin-jsonc";
+import eslintPluginJson from "@eslint/json";
 import eslintPluginPackageJson from "eslint-plugin-package-json/configs/recommended";
 import eslintPluginStylistic from "@stylistic/eslint-plugin";
 import globals from "globals";
 
 const config = [
-  eslintPluginImportX.flatConfigs.recommended,
-  ...eslintPluginJsonc.configs["flat/recommended-with-json"],
+  eslintPluginImport.flatConfigs.recommended,
+  eslintPluginJs.configs.all,
   {
     "ignores": [
       "modules/*",
@@ -16,6 +16,17 @@ const config = [
       "docs/fonts/*",
       "result.md"
     ]
+  },
+  {
+    "files": ["**/*.json"],
+    "ignores": ["package-lock.json"],
+    "language": "json/json",
+    ...eslintPluginJson.configs.recommended,
+    "rules": {
+      "logical-assignment-operators": "off",
+      "max-lines-per-function": "off",
+      "no-irregular-whitespace": "off"
+    }
   },
   {
     "files": ["**/*.js"],
@@ -35,7 +46,7 @@ const config = [
       "complexity": "off",
       "func-style": "off",
       "id-length": ["error", {"exceptions": ["a", "b"]}],
-      "import-x/no-unresolved": ["error", {"ignore": ["eslint-plugin-package-json/configs/recommended"]}],
+      "import/no-unresolved": "off",
       "max-depth": ["warn", 5],
       "max-lines": ["warn", 500],
       "max-lines-per-function": ["warn", 150],

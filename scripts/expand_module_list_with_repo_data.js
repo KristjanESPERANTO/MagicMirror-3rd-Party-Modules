@@ -1,5 +1,4 @@
 import fs from "node:fs";
-// eslint-disable-next-line import-x/namespace
 import {getJson} from "./utils.js";
 import normalizeData from "normalize-package-data";
 import sharp from "sharp";
