@@ -1802,7 +1802,7 @@
       "calext3"
     ],
     "image": "screenshot.jpg",
-    "defaultSortWeight": -1,
+    "defaultSortWeight": 1,
     "lastCommit": "2024-09-25T16:36:10+02:00"
   },
   {
@@ -1813,7 +1813,7 @@
     "maintainer": "MMRIZE",
     "maintainerURL": "",
     "description": "Extended calendar and event view. Show calendar as agenda.",
-    "issues": false,
+    "issues": true,
     "stars": 16,
     "license": "MIT",
     "tags": [
@@ -1821,7 +1821,7 @@
       "agenda"
     ],
     "image": "screenshot.jpg",
-    "defaultSortWeight": -2,
+    "defaultSortWeight": 0,
     "lastCommit": "2024-10-02T00:10:30+02:00"
   },
   {
@@ -3676,7 +3676,7 @@
       "image"
     ],
     "image": "screenshot.jpg",
-    "defaultSortWeight": 2,
+    "defaultSortWeight": 4,
     "lastCommit": "2024-09-26T08:53:22+02:00"
   },
   {
@@ -4290,7 +4290,7 @@
     "maintainerURL": "",
     "description": "Display EU electricity prices from Nord Pool.",
     "issues": true,
-    "stars": 2,
+    "stars": 3,
     "hasGithubIssues": false,
     "license": "MIT",
     "image": "barchart.jpg",
@@ -5993,7 +5993,7 @@
       "googlephotos"
     ],
     "image": "images-screenshot.jpg",
-    "defaultSortWeight": 3,
+    "defaultSortWeight": 4,
     "lastCommit": "2024-08-16T00:55:56+01:00"
   },
   {
@@ -6237,7 +6237,7 @@
       "grocy"
     ],
     "image": "docs-Screenshot.jpg",
-    "defaultSortWeight": 1,
+    "defaultSortWeight": 2,
     "lastCommit": "2024-09-11T17:54:30+01:00"
   },
   {
@@ -9282,8 +9282,8 @@
       "french"
     ],
     "image": "screenshot.jpg",
-    "defaultSortWeight": 2,
-    "lastCommit": "2024-07-01T16:53:47+02:00"
+    "defaultSortWeight": 1,
+    "lastCommit": "2024-10-24T23:34:42+02:00"
   },
   {
     "name": "MMM-MHZ19",
@@ -11320,7 +11320,7 @@
       "smart home"
     ],
     "image": ".github-preview.bubbles.jpg",
-    "defaultSortWeight": -1,
+    "defaultSortWeight": 0,
     "lastCommit": "2024-10-23T19:08:28+00:00"
   },
   {
@@ -12278,7 +12278,7 @@
       "onedrive"
     ],
     "image": "images-screenshot.jpg",
-    "defaultSortWeight": 3,
+    "defaultSortWeight": 4,
     "lastCommit": "2024-10-09T01:14:41+01:00"
   },
   {
@@ -15219,7 +15219,7 @@
       "scene"
     ],
     "image": "screenshot.jpg",
-    "defaultSortWeight": 0,
+    "defaultSortWeight": 1,
     "lastCommit": "2024-09-19T10:42:12+02:00"
   },
   {
@@ -17325,7 +17325,7 @@
       "tessie"
     ],
     "image": "doc-screenshot.jpg",
-    "defaultSortWeight": 10,
+    "defaultSortWeight": 12,
     "lastCommit": "2024-05-07T12:45:14+01:00"
   },
   {
@@ -19282,7 +19282,7 @@
       "webuntis"
     ],
     "image": "screenshot.jpg",
-    "defaultSortWeight": 1,
+    "defaultSortWeight": 2,
     "lastCommit": "2024-10-13T11:07:56+02:00"
   },
   {

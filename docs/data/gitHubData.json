@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "2024-10-24T15:30:24.816Z",
+  "lastUpdate": "2024-10-25T03:30:27.324Z",
   "repositories": [
     {
       "id": "0lek/MMM-socialbicycles",
@@ -31,7 +31,7 @@
     },
     {
       "id": "0m4r/MMM-euro2024",
-      "gitHubDataLastUpdate": "2024-10-06T18:14:30.625Z",
+      "gitHubDataLastUpdate": "2024-10-25T03:30:23.992Z",
       "gitHubData": {
         "issues": 0,
         "stars": 2,
@@ -339,7 +339,7 @@
     },
     {
       "id": "AjaxCarroway/MMM-ethermine",
-      "gitHubDataLastUpdate": "2024-10-06T18:14:29.297Z",
+      "gitHubDataLastUpdate": "2024-10-25T03:30:22.741Z",
       "gitHubData": {
         "issues": 0,
         "stars": 0,
@@ -801,7 +801,7 @@
     },
     {
       "id": "Arve/MMM-Entur-tavle",
-      "gitHubDataLastUpdate": "2024-10-06T18:14:25.526Z",
+      "gitHubDataLastUpdate": "2024-10-25T03:30:19.769Z",
       "gitHubData": {
         "issues": 0,
         "stars": 17,
@@ -1025,7 +1025,7 @@
     },
     {
       "id": "balassy/MMM-Elvira",
-      "gitHubDataLastUpdate": "2024-10-06T15:30:19.809Z",
+      "gitHubDataLastUpdate": "2024-10-25T03:30:16.361Z",
       "gitHubData": {
         "issues": 0,
         "stars": 0,
@@ -2691,7 +2691,7 @@
     },
     {
       "id": "CharlesMorris78/MMM-EnvCanada",
-      "gitHubDataLastUpdate": "2024-10-06T18:14:26.101Z",
+      "gitHubDataLastUpdate": "2024-10-25T03:30:20.221Z",
       "gitHubData": {
         "issues": 0,
         "stars": 4,
@@ -3307,7 +3307,7 @@
     },
     {
       "id": "daniel-windsor/MMM-eswordoftheday",
-      "gitHubDataLastUpdate": "2024-10-06T18:14:27.803Z",
+      "gitHubDataLastUpdate": "2024-10-25T03:30:21.541Z",
       "gitHubData": {
         "issues": 2,
         "stars": 8,
@@ -3489,16 +3489,16 @@
     },
     {
       "id": "deg0nz/MMM-EnergyMonitor",
-      "gitHubDataLastUpdate": "2024-10-06T18:14:24.269Z",
+      "gitHubDataLastUpdate": "2024-10-25T03:30:18.867Z",
       "gitHubData": {
-        "issues": 4,
+        "issues": 3,
         "stars": 3,
         "license": "MIT",
         "archived": false,
         "disabled": false,
         "defaultBranch": "main",
         "has_issues": true,
-        "lastCommit": "2024-09-02T19:25:25Z"
+        "lastCommit": "2024-10-09T20:29:26Z"
       }
     },
     {
@@ -5589,7 +5589,7 @@
     },
     {
       "id": "hansman84/MMM-ethereum",
-      "gitHubDataLastUpdate": "2024-10-06T18:14:28.356Z",
+      "gitHubDataLastUpdate": "2024-10-25T03:30:21.998Z",
       "gitHubData": {
         "issues": 0,
         "stars": 0,
@@ -5701,7 +5701,7 @@
     },
     {
       "id": "Helpi90/MMM-Ethos",
-      "gitHubDataLastUpdate": "2024-10-06T18:14:29.706Z",
+      "gitHubDataLastUpdate": "2024-10-25T03:30:23.115Z",
       "gitHubData": {
         "issues": 0,
         "stars": 1,
@@ -6681,7 +6681,7 @@
     },
     {
       "id": "jimbydude/MMM-Face-Multi-User-Recognition-SMAI",
-      "gitHubDataLastUpdate": "2024-10-06T18:14:34.502Z",
+      "gitHubDataLastUpdate": "2024-10-25T03:30:27.201Z",
       "gitHubData": {
         "issues": 0,
         "stars": 11,
@@ -6723,7 +6723,7 @@
     },
     {
       "id": "jirsis/emt",
-      "gitHubDataLastUpdate": "2024-10-06T15:30:21.120Z",
+      "gitHubDataLastUpdate": "2024-10-25T03:30:17.639Z",
       "gitHubData": {
         "issues": 2,
         "stars": 1,
@@ -7101,7 +7101,7 @@
     },
     {
       "id": "jupadin/MMM-F1",
-      "gitHubDataLastUpdate": "2024-10-06T18:14:33.479Z",
+      "gitHubDataLastUpdate": "2024-10-25T03:30:26.205Z",
       "gitHubData": {
         "issues": 0,
         "stars": 1,
@@ -7843,16 +7843,16 @@
     },
     {
       "id": "late4marshmellow/MMM-EUElectricityPrice",
-      "gitHubDataLastUpdate": "2024-10-06T18:14:30.195Z",
+      "gitHubDataLastUpdate": "2024-10-25T03:30:23.567Z",
       "gitHubData": {
         "issues": 0,
-        "stars": 2,
+        "stars": 3,
         "license": null,
         "archived": false,
         "disabled": false,
         "defaultBranch": "main",
         "has_issues": false,
-        "lastCommit": "2023-10-29T15:25:36Z"
+        "lastCommit": "2024-10-17T12:38:29Z"
       }
     },
     {
@@ -8459,9 +8459,9 @@
     },
     {
       "id": "matt-thurling/MMM-EnphaseSolar",
-      "gitHubDataLastUpdate": "2024-10-06T18:14:24.877Z",
+      "gitHubDataLastUpdate": "2024-10-25T03:30:19.298Z",
       "gitHubData": {
-        "issues": 1,
+        "issues": 2,
         "stars": 3,
         "license": "MIT",
         "archived": false,
@@ -9495,7 +9495,7 @@
     },
     {
       "id": "moinahmed001/MMM-ELMPrayerTime",
-      "gitHubDataLastUpdate": "2024-10-06T15:30:19.388Z",
+      "gitHubDataLastUpdate": "2024-10-25T03:30:15.928Z",
       "gitHubData": {
         "issues": 2,
         "stars": 0,
@@ -9635,7 +9635,7 @@
     },
     {
       "id": "mscharl/MMM-edgerouter-throughput",
-      "gitHubDataLastUpdate": "2024-10-06T15:30:18.424Z",
+      "gitHubDataLastUpdate": "2024-10-25T03:30:14.914Z",
       "gitHubData": {
         "issues": 4,
         "stars": 3,
@@ -9761,7 +9761,7 @@
     },
     {
       "id": "mumblebaj/MMM-EskomSePush",
-      "gitHubDataLastUpdate": "2024-10-06T18:14:27.314Z",
+      "gitHubDataLastUpdate": "2024-10-25T03:30:21.127Z",
       "gitHubData": {
         "issues": 0,
         "stars": 5,
@@ -10125,7 +10125,7 @@
     },
     {
       "id": "mykle1/MMM-EOL",
-      "gitHubDataLastUpdate": "2024-10-06T18:14:26.825Z",
+      "gitHubDataLastUpdate": "2024-10-25T03:30:20.691Z",
       "gitHubData": {
         "issues": 1,
         "stars": 7,
@@ -10139,7 +10139,7 @@
     },
     {
       "id": "mykle1/MMM-EventHorizon",
-      "gitHubDataLastUpdate": "2024-10-06T18:14:31.123Z",
+      "gitHubDataLastUpdate": "2024-10-25T03:30:24.442Z",
       "gitHubData": {
         "issues": 2,
         "stars": 15,
@@ -10153,7 +10153,7 @@
     },
     {
       "id": "mykle1/MMM-Events",
-      "gitHubDataLastUpdate": "2024-10-06T18:14:31.840Z",
+      "gitHubDataLastUpdate": "2024-10-25T03:30:24.874Z",
       "gitHubData": {
         "issues": 0,
         "stars": 23,
@@ -10167,7 +10167,7 @@
     },
     {
       "id": "mykle1/MMM-EyeCandy",
-      "gitHubDataLastUpdate": "2024-10-06T18:14:32.963Z",
+      "gitHubDataLastUpdate": "2024-10-25T03:30:25.780Z",
       "gitHubData": {
         "issues": 3,
         "stars": 45,
@@ -10741,7 +10741,7 @@
     },
     {
       "id": "nigel-daniels/MMM-FAA-Delay",
-      "gitHubDataLastUpdate": "2024-10-06T18:14:33.988Z",
+      "gitHubDataLastUpdate": "2024-10-25T03:30:26.715Z",
       "gitHubData": {
         "issues": 4,
         "stars": 2,
@@ -10951,7 +10951,7 @@
     },
     {
       "id": "nitpum/MMM-EmbedYoutube",
-      "gitHubDataLastUpdate": "2024-10-06T15:30:20.623Z",
+      "gitHubDataLastUpdate": "2024-10-25T03:30:17.196Z",
       "gitHubData": {
         "issues": 9,
         "stars": 35,
@@ -13835,7 +13835,7 @@
     },
     {
       "id": "sourceforge807/MMM-EFA-departures",
-      "gitHubDataLastUpdate": "2024-10-06T15:30:18.964Z",
+      "gitHubDataLastUpdate": "2024-10-25T03:30:15.478Z",
       "gitHubData": {
         "issues": 2,
         "stars": 1,
@@ -14619,7 +14619,7 @@
     },
     {
       "id": "themox/MMM-EveryNews",
-      "gitHubDataLastUpdate": "2024-10-06T18:14:32.452Z",
+      "gitHubDataLastUpdate": "2024-10-25T03:30:25.373Z",
       "gitHubData": {
         "issues": 0,
         "stars": 2,
@@ -14661,7 +14661,7 @@
     },
     {
       "id": "TheRaulXP/MMM-EMTValencia",
-      "gitHubDataLastUpdate": "2024-10-06T15:30:21.962Z",
+      "gitHubDataLastUpdate": "2024-10-25T03:30:18.442Z",
       "gitHubData": {
         "issues": 0,
         "stars": 4,
@@ -14969,7 +14969,7 @@
     },
     {
       "id": "Tom-Hirschberger/MMM-EmbedURL",
-      "gitHubDataLastUpdate": "2024-10-06T15:30:20.249Z",
+      "gitHubDataLastUpdate": "2024-10-25T03:30:16.798Z",
       "gitHubData": {
         "issues": 0,
         "stars": 21,
@@ -15361,7 +15361,7 @@
     },
     {
       "id": "tttooommm56/MMM-Ecowatt",
-      "gitHubDataLastUpdate": "2024-10-06T15:30:17.999Z",
+      "gitHubDataLastUpdate": "2024-10-25T03:30:14.457Z",
       "gitHubData": {
         "issues": 0,
         "stars": 2,

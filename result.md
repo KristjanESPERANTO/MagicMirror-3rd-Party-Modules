@@ -1,6 +1,6 @@
 # Result of the module analysis
 
-Last update: 2024-10-24T17:48:14+02:00
+Last update: 2024-10-25T05:48:30+02:00
 
 ## Statistics
 
@@ -8,8 +8,8 @@ Last update: 2024-10-24T17:48:14+02:00
 |:---------------------|:--------:|
 | modules analyzed     |   1194   |
 | maintainer           |    640   |
-| modules with issues  |   1185   |
-| issues               |   6867   |
+| modules with issues  |   1186   |
+| issues               |   6880   |
 | modules at github    |   1085   |
 | modules at gitlab    |     10   |
 | modules at bitbucket |      1   |
@@ -941,6 +941,13 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
 ### [MMM-CalendarExt3 by MMRIZE](https://github.com/MMRIZE/MMM-CalendarExt3)
 
 1. Recommendation: Found `new Date()` in file `MMM-CalendarExt3.js`: Consider replacing it by `new Date(Date.now())`. It's helpful for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
+2. Recommendation: ESLint is not in the dependencies or devDependencies. It is recommended to add it to one of them.
+3. Recommendation: No lint script found in package.json. It is recommended to add one.
+
+### [MMM-CalendarExt3Agenda by MMRIZE](https://github.com/MMRIZE/MMM-CalendarExt3Agenda)
+
+1. Recommendation: ESLint is not in the dependencies or devDependencies. It is recommended to add it to one of them.
+2. Recommendation: No lint script found in package.json. It is recommended to add one.
 
 ### [MMM-CalendarExt3Journal by MMRIZE](https://github.com/MMRIZE/MMM-CalendarExt3Journal)
 
@@ -1291,13 +1298,12 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
 
 ### [MMM-CoupleDays by wiesty](https://github.com/wiesty/MMM-CoupleDays)
 
-1. Information: There are updates for 3 dependencie(s):
+1. Recommendation: No lint script found in package.json. It is recommended to add one.
+2. Information: There are updates for 3 dependencie(s):
    - eslint    ^8.56.0  →  ^9.13.0
    - moment    ^2.29.4  →  ^2.30.1
    - prettier   ^3.1.1  →   ^3.3.3
 
-2.  WARN  eslint@8.56.0: 2023-12-15T22:55:11.833Z
-deprecated: This version is no longer supported. Please see https://eslint.org/version-support for other options.
 
 ### [MMM-covid19 by 0m4r](https://github.com/0m4r/MMM-covid19)
 
@@ -1825,6 +1831,8 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
 1. Recommendation: Found `"node-fetch"` in file `auth.js`: Replace it with built-in fetch.
 2. Recommendation: Found `'node-fetch'` in file `node_helper.js`: Replace it with built-in fetch.
 3. Recommendation: Found `"node-fetch"` in file `package.json`: Replace it with built-in fetch.
+4. Recommendation: ESLint is not in the dependencies or devDependencies. It is recommended to add it to one of them.
+5. Recommendation: No lint script found in package.json. It is recommended to add one.
 
 ### [MMM-DublinRTPI by galaktor](https://github.com/galaktor/MMM-DublinRTPI)
 
@@ -3015,6 +3023,7 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
 4. Recommendation: Found `XMLHttpRequest` in file `error_to_string.js`: Replace it with built-in fetch.
 5. Recommendation: Found `new Date()` in file `node_helper.js`: Consider replacing it by `new Date(Date.now())`. It's helpful for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
 6. Recommendation: Found `axios` in file `package.json`: Replace it with built-in fetch.
+7. Recommendation: No lint script found in package.json. It is recommended to add one.
 
 ### [EXT-GooglePhotos by bugsounet](https://github.com/bugsounet/EXT-GooglePhotos)
 
@@ -3138,6 +3147,7 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
 
 1. Issues are not enabled in the GitHub repository. So users cannot report bugs. Please enable issues in your repo.
 2. Recommendation: Found `new Date()` in file `MMM-Grocy.js`: Consider replacing it by `new Date(Date.now())`. It's helpful for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
+3. Recommendation: No lint script found in package.json. It is recommended to add one.
 
 ### [MMM-GroveGestures by MMRIZE](https://github.com/MMRIZE/MMM-GroveGestures)
 
@@ -4823,16 +4833,10 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
 
 ### [MMM-MeteoFrance by bugsounet](https://github.com/bugsounet/MMM-MeteoFrance)
 
-1. Information: There are updates for 6 dependencie(s):
-   - @eslint/js                ^8.57.0  →  ^9.13.0
-   - @stylistic/eslint-plugin   ^1.8.1  →   ^2.9.0
-   - esbuild                   ^0.22.0  →  ^0.24.0
-   - eslint                    ^8.57.0  →  ^9.13.0
-   - eslint-plugin-import      ^2.29.1  →  ^2.31.0
-   - glob                      ^10.4.2  →  ^11.0.0
+1. Information: There are updates for 2 dependencie(s):
+   - @eslint/js  ^8.57.1  →  ^9.13.0
+   - glob        ^10.4.5  →  ^11.0.0
 
-2.  WARN  eslint@8.57.0: 2024-02-23T20:39:43.282Z
-deprecated: This version is no longer supported. Please see https://eslint.org/version-support for other options.
 
 ### [MMM-MHZ19 by awitwicki](https://github.com/awitwicki/MMM-MHZ19)
 
@@ -5918,7 +5922,8 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
 
 ### [MMM-Netatmo by CFenner](https://github.com/CFenner/MMM-Netatmo)
 
-1. Information: There are updates for 1 dependencie(s):
+1. Recommendation: No lint script found in package.json. It is recommended to add one.
+2. Information: There are updates for 1 dependencie(s):
    - neostandard  0.11.5  →  0.11.7
 
 
@@ -6383,6 +6388,7 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
 2. Recommendation: Found `new Date()` in file `MMM-OneDrive.js`: Consider replacing it by `new Date(Date.now())`. It's helpful for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
 3. Recommendation: Found `XMLHttpRequest` in file `error_to_string.js`: Replace it with built-in fetch.
 4. Recommendation: Found `new Date()` in file `node_helper.js`: Consider replacing it by `new Date(Date.now())`. It's helpful for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
+5. Recommendation: No lint script found in package.json. It is recommended to add one.
 
 ### [MMM-OneTouchReveal by Canonip](https://github.com/Canonip/MMM-OneTouchReveal)
 
@@ -7985,7 +7991,8 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
 
 ### [MMM-Scenes2 by MMRIZE](https://github.com/MMRIZE/MMM-Scenes2)
 
-1. Information: There are updates for 4 dependencie(s):
+1. Recommendation: No lint script found in package.json. It is recommended to add one.
+2. Information: There are updates for 4 dependencie(s):
    - @eslint/js    ^9.8.0  →   ^9.13.0
    - body-parser  ^1.20.2  →   ^1.20.3
    - eslint        ^9.8.0  →   ^9.13.0
@@ -9083,6 +9090,8 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
 8. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
 9. Deprecated: Found `require("request")` in file `node_helper.js`: Replace it with built-in fetch.
 10. Typo: Found `MagicMirror2` in file `package.json`: Replace it with `MagicMirror²`.
+11. Recommendation: ESLint is not in the dependencies or devDependencies. It is recommended to add it to one of them.
+12. Recommendation: No lint script found in package.json. It is recommended to add one.
 
 ### [MMM-TeslaLogger by spitzlbergerj](https://github.com/spitzlbergerj/MMM-TeslaLogger)
 
@@ -10154,7 +10163,8 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
 
 ### [MMM-Webuntis by HeikoGr](https://github.com/HeikoGr/MMM-Webuntis)
 
-1. Information: There are updates for 3 dependencie(s):
+1. Recommendation: No lint script found in package.json. It is recommended to add one.
+2. Information: There are updates for 3 dependencie(s):
    - @eslint/js   ^9.12.0  →   ^9.13.0
    - eslint       ^9.12.0  →   ^9.13.0
    - globals     ^15.10.0  →  ^15.11.0
