@@ -1,6 +1,6 @@
 # Result of the module analysis
 
-Last update: 2024-10-25T05:48:30+02:00
+Last update: 2024-10-25T17:48:09+02:00
 
 ## Statistics
 
@@ -751,7 +751,7 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
    - @stylistic/eslint-plugin             ^1.6.2  →   ^2.9.0
    - @types/express                     ^4.17.11  →   ^5.0.0
    - @types/magicmirror-module           ^2.16.0  →  ^2.16.5
-   - @types/node                       ^14.14.22  →  ^22.7.9
+   - @types/node                       ^14.14.22  →  ^22.8.0
    - @typescript-eslint/eslint-plugin     ^7.0.2  →  ^8.11.0
    - @typescript-eslint/parser            ^7.0.2  →  ^8.11.0
    - bosch-smart-home-bridge              ^1.4.1  →   ^1.6.0
@@ -1691,7 +1691,7 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
 3. Information: There are updates for 6 dependencie(s):
    - @eslint/js                ^8.57.1  →  ^9.13.0
    - @stylistic/eslint-plugin   ^1.8.1  →   ^2.9.0
-   - @types/node               ^22.7.6  →  ^22.7.9
+   - @types/node               ^22.7.6  →  ^22.8.0
    - eslint                    ^8.57.1  →  ^9.13.0
    - eslint-plugin-import      ^2.29.1  →  ^2.31.0
    - glob                      ^10.4.5  →  ^11.0.0
@@ -3162,7 +3162,7 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
 2. Issue: The license in the package.json (ISC) doesn't match the license file (MIT).
 3. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
 4. Information: There are updates for 1 dependencie(s):
-   - growatt  ^0.7.4  →  ^0.7.5
+   - growatt  ^0.7.4  →  ^0.7.6
 
 
 ### [MMM-Growatt by dekinet](https://github.com/dekinet/MMM-Growatt)
@@ -3182,7 +3182,7 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
 1. Please use 'smart home' instead of 'smarthome' as a keyword in your package.json.
 2. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
 3. Information: There are updates for 1 dependencie(s):
-   - growatt  ^0.7.4  →  ^0.7.5
+   - growatt  ^0.7.4  →  ^0.7.6
 
 
 ### [MMM-GyeonggiBus by iceship](https://github.com/iceship/MMM-GyeonggiBus)
