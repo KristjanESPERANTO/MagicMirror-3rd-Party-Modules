@@ -1,6 +1,6 @@
 # Result of the module analysis
 
-Last update: 2024-10-25T17:48:09+02:00
+Last update: 2024-10-26T05:50:29+02:00
 
 ## Statistics
 
@@ -751,7 +751,7 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
    - @stylistic/eslint-plugin             ^1.6.2  →   ^2.9.0
    - @types/express                     ^4.17.11  →   ^5.0.0
    - @types/magicmirror-module           ^2.16.0  →  ^2.16.5
-   - @types/node                       ^14.14.22  →  ^22.8.0
+   - @types/node                       ^14.14.22  →  ^22.8.1
    - @typescript-eslint/eslint-plugin     ^7.0.2  →  ^8.11.0
    - @typescript-eslint/parser            ^7.0.2  →  ^8.11.0
    - bosch-smart-home-bridge              ^1.4.1  →   ^1.6.0
@@ -1691,7 +1691,7 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
 3. Information: There are updates for 6 dependencie(s):
    - @eslint/js                ^8.57.1  →  ^9.13.0
    - @stylistic/eslint-plugin   ^1.8.1  →   ^2.9.0
-   - @types/node               ^22.7.6  →  ^22.8.0
+   - @types/node               ^22.7.6  →  ^22.8.1
    - eslint                    ^8.57.1  →  ^9.13.0
    - eslint-plugin-import      ^2.29.1  →  ^2.31.0
    - glob                      ^10.4.5  →  ^11.0.0
@@ -4746,7 +4746,7 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
    - globals                    ^15.9.0  →  ^15.11.0
    - husky                      ^9.0.11  →    ^9.1.6
    - markdownlint-cli           ^0.41.0  →   ^0.42.0
-   - semantic-release           ^24.1.0  →   ^24.1.3
+   - semantic-release           ^24.1.0  →   ^24.2.0
    - stylelint                  ^16.9.0  →  ^16.10.0
    - stylelint-config-standard  ^36.0.0  →   ^36.0.1
 
@@ -5923,8 +5923,9 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
 ### [MMM-Netatmo by CFenner](https://github.com/CFenner/MMM-Netatmo)
 
 1. Recommendation: No lint script found in package.json. It is recommended to add one.
-2. Information: There are updates for 1 dependencie(s):
-   - neostandard  0.11.5  →  0.11.7
+2. Information: There are updates for 2 dependencie(s):
+   - markdownlint  0.35.0  →  0.36.0
+   - neostandard   0.11.5  →  0.11.7
 
 
 ### [MMM-Netatmo-Presence by AgP42](https://github.com/AgP42/MMM-Netatmo-Presence)

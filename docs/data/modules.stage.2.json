@@ -3643,7 +3643,7 @@
     "maintainerURL": "",
     "description": "Display the driver standings from the current Formula 1 season.",
     "issues": [],
-    "stars": 31,
+    "stars": 33,
     "license": "MIT"
   },
   {
@@ -3836,7 +3836,7 @@
     "maintainerURL": "",
     "description": "Display gas station prices.",
     "issues": [],
-    "stars": 62,
+    "stars": 63,
     "license": "MIT"
   },
   {

@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "2024-10-25T15:30:21.536Z",
+  "lastUpdate": "2024-10-26T03:30:21.083Z",
   "repositories": [
     {
       "id": "0lek/MMM-socialbicycles",
@@ -563,7 +563,7 @@
     },
     {
       "id": "Amand-M/MMM-FrenchHoroscope",
-      "gitHubDataLastUpdate": "2024-10-07T11:13:21.705Z",
+      "gitHubDataLastUpdate": "2024-10-26T03:30:16.837Z",
       "gitHubData": {
         "issues": 1,
         "stars": 1,
@@ -1039,7 +1039,7 @@
     },
     {
       "id": "balassy/MMM-Futar",
-      "gitHubDataLastUpdate": "2024-10-07T11:13:26.410Z",
+      "gitHubDataLastUpdate": "2024-10-26T03:30:20.496Z",
       "gitHubData": {
         "issues": 3,
         "stars": 5,
@@ -1865,7 +1865,7 @@
     },
     {
       "id": "bugsounet/EXT-FreeboxTV",
-      "gitHubDataLastUpdate": "2024-10-07T11:13:21.149Z",
+      "gitHubDataLastUpdate": "2024-10-26T03:30:16.367Z",
       "gitHubData": {
         "issues": 0,
         "stars": 1,
@@ -2187,7 +2187,7 @@
     },
     {
       "id": "bugsounet/MMM-FranceInfo",
-      "gitHubDataLastUpdate": "2024-10-07T11:13:19.578Z",
+      "gitHubDataLastUpdate": "2024-10-26T03:30:15.077Z",
       "gitHubData": {
         "issues": 0,
         "stars": 1,
@@ -2201,7 +2201,7 @@
     },
     {
       "id": "bugsounet/MMM-Freebox",
-      "gitHubDataLastUpdate": "2024-10-07T11:13:20.116Z",
+      "gitHubDataLastUpdate": "2024-10-26T03:30:15.531Z",
       "gitHubData": {
         "issues": 0,
         "stars": 2,
@@ -3503,7 +3503,7 @@
     },
     {
       "id": "deg0nz/MMM-Fronius2",
-      "gitHubDataLastUpdate": "2024-10-07T11:13:24.286Z",
+      "gitHubDataLastUpdate": "2024-10-26T03:30:18.778Z",
       "gitHubData": {
         "issues": 2,
         "stars": 0,
@@ -3881,7 +3881,7 @@
     },
     {
       "id": "dmcinnes/MMM-forecast-io",
-      "gitHubDataLastUpdate": "2024-10-07T11:13:16.318Z",
+      "gitHubDataLastUpdate": "2024-10-26T03:30:12.495Z",
       "gitHubData": {
         "issues": 6,
         "stars": 59,
@@ -3979,7 +3979,7 @@
     },
     {
       "id": "drtorchwood/MMM-FRITZ-Box-Callmonitor-py3",
-      "gitHubDataLastUpdate": "2024-10-07T11:13:22.271Z",
+      "gitHubDataLastUpdate": "2024-10-26T03:30:17.284Z",
       "gitHubData": {
         "issues": 1,
         "stars": 4,
@@ -4091,7 +4091,7 @@
     },
     {
       "id": "E3V3A/MMM-FlightsAbove",
-      "gitHubDataLastUpdate": "2024-10-07T03:30:19.229Z",
+      "gitHubDataLastUpdate": "2024-10-26T03:30:09.628Z",
       "gitHubData": {
         "issues": 18,
         "stars": 23,
@@ -4147,7 +4147,7 @@
     },
     {
       "id": "eckonator/MMM-FroelingConnect",
-      "gitHubDataLastUpdate": "2024-10-07T11:13:22.989Z",
+      "gitHubDataLastUpdate": "2024-10-26T03:30:17.862Z",
       "gitHubData": {
         "issues": 0,
         "stars": 1,
@@ -4665,10 +4665,10 @@
     },
     {
       "id": "fewieden/MMM-Fuel",
-      "gitHubDataLastUpdate": "2024-10-07T11:13:25.328Z",
+      "gitHubDataLastUpdate": "2024-10-26T03:30:19.729Z",
       "gitHubData": {
         "issues": 17,
-        "stars": 62,
+        "stars": 63,
         "license": "MIT",
         "archived": false,
         "disabled": false,
@@ -5673,16 +5673,16 @@
     },
     {
       "id": "HeikoGr/MMM-Webuntis",
-      "gitHubDataLastUpdate": "2024-10-07T11:13:15.618Z",
+      "gitHubDataLastUpdate": "2024-10-26T03:30:12.035Z",
       "gitHubData": {
-        "issues": 0,
+        "issues": 1,
         "stars": 2,
         "license": "MIT",
         "archived": false,
         "disabled": false,
         "defaultBranch": "master",
         "has_issues": true,
-        "lastCommit": "2024-10-07T07:59:53Z"
+        "lastCommit": "2024-10-13T09:07:56Z"
       }
     },
     {
@@ -5883,16 +5883,16 @@
     },
     {
       "id": "ianperrin/MMM-Formula1",
-      "gitHubDataLastUpdate": "2024-10-07T11:13:16.946Z",
+      "gitHubDataLastUpdate": "2024-10-26T03:30:12.911Z",
       "gitHubData": {
         "issues": 10,
-        "stars": 31,
+        "stars": 33,
         "license": "MIT",
         "archived": false,
         "disabled": false,
         "defaultBranch": "master",
         "has_issues": true,
-        "lastCommit": "2024-07-07T12:40:28Z"
+        "lastCommit": "2024-10-25T19:34:07Z"
       }
     },
     {
@@ -6289,7 +6289,7 @@
     },
     {
       "id": "jancalve/MMM-flick-gestures",
-      "gitHubDataLastUpdate": "2024-10-07T03:30:17.934Z",
+      "gitHubDataLastUpdate": "2024-10-26T03:30:08.368Z",
       "gitHubData": {
         "issues": 2,
         "stars": 6,
@@ -6387,7 +6387,7 @@
     },
     {
       "id": "jboucly/MMM-FTP-image",
-      "gitHubDataLastUpdate": "2024-10-07T11:13:24.829Z",
+      "gitHubDataLastUpdate": "2024-10-26T03:30:19.230Z",
       "gitHubData": {
         "issues": 0,
         "stars": 7,
@@ -6583,7 +6583,7 @@
     },
     {
       "id": "jesmak/MMM-FlightRadarTracker",
-      "gitHubDataLastUpdate": "2024-10-07T03:30:18.838Z",
+      "gitHubDataLastUpdate": "2024-10-26T03:30:09.242Z",
       "gitHubData": {
         "issues": 6,
         "stars": 20,
@@ -7381,7 +7381,7 @@
     },
     {
       "id": "kagjerde/MMM-Flo",
-      "gitHubDataLastUpdate": "2024-10-07T03:30:20.125Z",
+      "gitHubDataLastUpdate": "2024-10-26T03:30:10.534Z",
       "gitHubData": {
         "issues": 1,
         "stars": 0,
@@ -7395,7 +7395,7 @@
     },
     {
       "id": "kagjerde/MMM-FloGraph",
-      "gitHubDataLastUpdate": "2024-10-07T03:30:20.566Z",
+      "gitHubDataLastUpdate": "2024-10-26T03:30:11.126Z",
       "gitHubData": {
         "issues": 1,
         "stars": 0,
@@ -7423,7 +7423,7 @@
     },
     {
       "id": "kapsolas/MMM-Flickr",
-      "gitHubDataLastUpdate": "2024-10-07T03:30:18.420Z",
+      "gitHubDataLastUpdate": "2024-10-26T03:30:08.817Z",
       "gitHubData": {
         "issues": 5,
         "stars": 11,
@@ -8529,7 +8529,7 @@
     },
     {
       "id": "mattileh/MMM-FunnyHolidays",
-      "gitHubDataLastUpdate": "2024-10-07T11:13:25.956Z",
+      "gitHubDataLastUpdate": "2024-10-26T03:30:20.141Z",
       "gitHubData": {
         "issues": 1,
         "stars": 1,
@@ -10181,7 +10181,7 @@
     },
     {
       "id": "mykle1/MMM-FMI",
-      "gitHubDataLastUpdate": "2024-10-07T03:30:20.984Z",
+      "gitHubDataLastUpdate": "2024-10-26T03:30:11.564Z",
       "gitHubData": {
         "issues": 0,
         "stars": 15,
@@ -10195,7 +10195,7 @@
     },
     {
       "id": "mykle1/MMM-Fortune",
-      "gitHubDataLastUpdate": "2024-10-07T11:13:18.598Z",
+      "gitHubDataLastUpdate": "2024-10-26T03:30:14.190Z",
       "gitHubData": {
         "issues": 1,
         "stars": 9,
@@ -11581,7 +11581,7 @@
     },
     {
       "id": "peteyjaym/MMM-fronius",
-      "gitHubDataLastUpdate": "2024-10-07T11:13:23.593Z",
+      "gitHubDataLastUpdate": "2024-10-26T03:30:18.340Z",
       "gitHubData": {
         "issues": 0,
         "stars": 1,
@@ -12155,7 +12155,7 @@
     },
     {
       "id": "RaspiManu/MMM-FrameLight",
-      "gitHubDataLastUpdate": "2024-10-07T11:13:19.115Z",
+      "gitHubDataLastUpdate": "2024-10-26T03:30:14.628Z",
       "gitHubData": {
         "issues": 1,
         "stars": 12,
@@ -12183,7 +12183,7 @@
     },
     {
       "id": "raywo/MMM-GameOfLife",
-      "gitHubDataLastUpdate": "2024-10-07T11:13:26.877Z",
+      "gitHubDataLastUpdate": "2024-10-26T03:30:21.024Z",
       "gitHubData": {
         "issues": 3,
         "stars": 13,
@@ -12449,7 +12449,7 @@
     },
     {
       "id": "retroflex/MMM-Fortnite",
-      "gitHubDataLastUpdate": "2024-10-07T11:13:17.492Z",
+      "gitHubDataLastUpdate": "2024-10-26T03:30:13.374Z",
       "gitHubData": {
         "issues": 0,
         "stars": 2,
@@ -14409,7 +14409,7 @@
     },
     {
       "id": "tataille/MMM-FreeBox-Monitor",
-      "gitHubDataLastUpdate": "2024-10-07T11:13:20.582Z",
+      "gitHubDataLastUpdate": "2024-10-26T03:30:15.921Z",
       "gitHubData": {
         "issues": 0,
         "stars": 4,
@@ -14451,7 +14451,7 @@
     },
     {
       "id": "tbouron/MMM-FlightTracker",
-      "gitHubDataLastUpdate": "2024-10-07T03:30:19.681Z",
+      "gitHubDataLastUpdate": "2024-10-26T03:30:10.068Z",
       "gitHubData": {
         "issues": 8,
         "stars": 13,
@@ -16397,7 +16397,7 @@
     },
     {
       "id": "yourdawi/MMM-FortniteStats",
-      "gitHubDataLastUpdate": "2024-10-07T11:13:18.069Z",
+      "gitHubDataLastUpdate": "2024-10-26T03:30:13.808Z",
       "gitHubData": {
         "issues": 0,
         "stars": 2,
