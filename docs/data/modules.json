@@ -281,7 +281,7 @@
     ],
     "image": ".github-preview-good.jpg",
     "defaultSortWeight": 1,
-    "lastCommit": "2024-09-24T02:18:45+00:00"
+    "lastCommit": "2024-10-26T03:50:47+00:00"
   },
   {
     "name": "MMM-Airtable",
@@ -5355,7 +5355,7 @@
       "music"
     ],
     "image": "example_dab.jpg",
-    "defaultSortWeight": 2,
+    "defaultSortWeight": 3,
     "lastCommit": "2024-10-22T10:16:47+02:00"
   },
   {
@@ -5774,7 +5774,7 @@
     "maintainerURL": "https://wiki.bugsounet.fr",
     "description": "MMM-GoogleAssistant is an real embedded Google assistant on MagicMirror\u00b2 with many <a target=\"_blank\" href=\"#extended-plugins-for-mmm-googleassistant\">plugins</a>.",
     "issues": true,
-    "stars": 92,
+    "stars": 93,
     "hasGithubIssues": false,
     "license": "MIT",
     "tags": [
@@ -5830,7 +5830,7 @@
     "maintainerURL": "https://github.com/randomBrainstormer",
     "description": "Get your Google Calendars in the shape of MagicMirror's default calendar.",
     "issues": true,
-    "stars": 70,
+    "stars": 72,
     "license": "MIT",
     "tags": [
       "google",
@@ -11321,7 +11321,7 @@
     ],
     "image": ".github-preview.bubbles.jpg",
     "defaultSortWeight": 0,
-    "lastCommit": "2024-10-23T19:08:28+00:00"
+    "lastCommit": "2024-10-26T06:36:45+00:00"
   },
   {
     "name": "MMM-Netatmo-Presence",
@@ -19425,7 +19425,7 @@
     "maintainerURL": "",
     "description": "Get info about who is home, based on ping to cell phone. Like Mrs. Weasley clock.",
     "issues": true,
-    "stars": 3,
+    "stars": 5,
     "license": "MIT",
     "tags": [
       "phone",

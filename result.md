@@ -1,6 +1,6 @@
 # Result of the module analysis
 
-Last update: 2024-10-26T05:50:29+02:00
+Last update: 2024-10-26T17:48:05+02:00
 
 ## Statistics
 
@@ -9,7 +9,7 @@ Last update: 2024-10-26T05:50:29+02:00
 | modules analyzed     |   1194   |
 | maintainer           |    640   |
 | modules with issues  |   1186   |
-| issues               |   6880   |
+| issues               |   6881   |
 | modules at github    |   1085   |
 | modules at gitlab    |     10   |
 | modules at bitbucket |      1   |
@@ -2680,6 +2680,9 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
 1. Recommendation: Found `"needle"` in file `node_helper.js`: Replace it with built-in fetch.
 2. Recommendation: Found `"needle"` in file `package.json`: Replace it with built-in fetch.
 3. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
+4. Information: There are updates for 1 dependencie(s):
+   - @xmldom/xmldom  ^0.9.4  →  ^0.9.5
+
 
 ### [MMM-FTP-image by jboucly](https://github.com/jboucly/MMM-FTP-image)
 
@@ -3162,7 +3165,7 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
 2. Issue: The license in the package.json (ISC) doesn't match the license file (MIT).
 3. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
 4. Information: There are updates for 1 dependencie(s):
-   - growatt  ^0.7.4  →  ^0.7.6
+   - growatt  ^0.7.4  →  ^0.7.7
 
 
 ### [MMM-Growatt by dekinet](https://github.com/dekinet/MMM-Growatt)
@@ -3182,7 +3185,7 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
 1. Please use 'smart home' instead of 'smarthome' as a keyword in your package.json.
 2. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
 3. Information: There are updates for 1 dependencie(s):
-   - growatt  ^0.7.4  →  ^0.7.6
+   - growatt  ^0.7.4  →  ^0.7.7
 
 
 ### [MMM-GyeonggiBus by iceship](https://github.com/iceship/MMM-GyeonggiBus)
@@ -5923,9 +5926,8 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
 ### [MMM-Netatmo by CFenner](https://github.com/CFenner/MMM-Netatmo)
 
 1. Recommendation: No lint script found in package.json. It is recommended to add one.
-2. Information: There are updates for 2 dependencie(s):
-   - markdownlint  0.35.0  →  0.36.0
-   - neostandard   0.11.5  →  0.11.7
+2. Information: There are updates for 1 dependencie(s):
+   - neostandard  0.11.5  →  0.11.7
 
 
 ### [MMM-Netatmo-Presence by AgP42](https://github.com/AgP42/MMM-Netatmo-Presence)
@@ -8976,7 +8978,7 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
 3. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
 4. Information: There are updates for 2 dependencie(s):
    - mocha-logger      ^1.0.7  →   ^1.0.8
-   - node-tado-client  ^0.9.3  →  ^0.16.0
+   - node-tado-client  ^0.9.3  →  ^0.17.1
 
 
 ### [MMM-TAF by imperian](https://github.com/imperian/MMM-TAF)
