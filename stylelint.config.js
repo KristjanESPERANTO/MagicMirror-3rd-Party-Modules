@@ -1,10 +1,13 @@
-{
+const config = {
+  "configBasedir": "./",
   "extends": ["stylelint-config-standard"],
+  "ignoreFiles": ["modules/", "docs/fonts/"],
   "plugins": ["stylelint-prettier"],
   "root": true,
-  "configBasedir": "./",
   "rules": {
     "prettier/prettier": true
-  },
-  "ignoreFiles": ["modules/", "docs/fonts/"]
-}
+  }
+};
+
+export default config;
+
