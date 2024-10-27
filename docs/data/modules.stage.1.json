@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "2024-10-26T15:30:06.667Z",
+  "lastUpdate": "2024-10-27T04:30:16.517Z",
   "modules": [
     {
       "name": "MMM-01ZM",
@@ -6391,13 +6391,14 @@
     },
     {
       "name": "MMM-mvgmunich",
-      "category": "Transport / Travel",
+      "category": "Outdated Modules",
       "url": "https://github.com/mrVragec/MMM-mvgmunich",
       "id": "mrVragec/MMM-mvgmunich",
       "maintainer": "mrVragec",
       "maintainerURL": "",
       "description": "Displays the public transport information for Munich - Germany.",
-      "issues": []
+      "issues": [],
+      "outdated": "Abandoned. Doesnt' work anymore. No reactions to issues and PRs since years."
     },
     {
       "name": "MMM-MVVWiesty",

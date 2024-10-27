@@ -1,6 +1,6 @@
 # Result of the module analysis
 
-Last update: 2024-10-26T17:48:05+02:00
+Last update: 2024-10-27T05:48:17+01:00
 
 ## Statistics
 
@@ -9,8 +9,8 @@ Last update: 2024-10-26T17:48:05+02:00
 | modules analyzed     |   1194   |
 | maintainer           |    640   |
 | modules with issues  |   1186   |
-| issues               |   6881   |
-| modules at github    |   1085   |
+| issues               |   6872   |
+| modules at github    |   1084   |
 | modules at gitlab    |     10   |
 | modules at bitbucket |      1   |
 
@@ -5554,19 +5554,6 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
    - glob                      ^10.4.2  →  ^11.0.0
    - usb                       ^2.13.0  →  ^2.14.0
 
-
-### [MMM-mvgmunich by mrVragec](https://github.com/mrVragec/MMM-mvgmunich)
-
-1. `package.json` issue: No description
-2. Recommendation: Found `jshint` in file `Gruntfile.js`: Replace "jshint" by "eslint".
-3. Outdated: Found `MichMich/MagicMirror` in file `README.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
-4. Typo: Found `Magic Mirror` in file `mvgmunich.js`: Replace it with `MagicMirror²`.
-5. Recommendation: Found `new Date()` in file `mvgmunich.js`: Consider replacing it by `new Date(Date.now())`. It's helpful for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
-6. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
-7. Deprecated: Found `require("request")` in file `node_helper.js`: Replace it with built-in fetch.
-8. Recommendation: Found `XMLHttpRequest` in file `node_helper.js`: Replace it with built-in fetch.
-9. Recommendation: Found `new Date()` in file `node_helper.js`: Consider replacing it by `new Date(Date.now())`. It's helpful for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
-10. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
 
 ### [MMM-MVVWiesty by wiesty](https://github.com/wiesty/MMM-MVVWiesty)
 
