@@ -1,6 +1,6 @@
 # Result of the module analysis
 
-Last update: 2024-10-27T05:48:17+01:00
+Last update: 2024-10-27T17:48:53+01:00
 
 ## Statistics
 
@@ -758,7 +758,7 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
    - eslint                              ^8.57.0  →  ^9.13.0
    - eslint-plugin-prettier               ^5.1.3  →   ^5.2.1
    - prettier                             ^3.2.5  →   ^3.3.3
-   - rollup                               ^4.9.6  →  ^4.24.0
+   - rollup                               ^4.9.6  →  ^4.24.2
    - rollup-plugin-banner2                ^1.2.2  →   ^1.3.0
    - rxjs                                 ^7.5.5  →   ^7.8.1
    - typescript                           ^5.3.3  →   ^5.6.3
@@ -4006,7 +4006,7 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
    - eslint                            ^8.56.0  →  ^9.13.0
    - eslint-plugin-prettier             ^5.1.3  →   ^5.2.1
    - prettier                           ^3.2.4  →   ^3.3.3
-   - rollup                             ^4.9.6  →  ^4.24.0
+   - rollup                             ^4.9.6  →  ^4.24.2
    - rollup-plugin-banner2              ^1.2.2  →   ^1.3.0
    - typescript                         ^5.3.3  →   ^5.6.3
    - yahoo-finance2                    ^2.11.3  →  ^2.13.2
@@ -5994,7 +5994,7 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
 1. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
 2. Information: There are updates for 2 dependencie(s):
    - qrcode  ^1.5.3  →   ^1.5.4
-   - uuid    ^9.0.1  →  ^10.0.0
+   - uuid    ^9.0.1  →  ^11.0.0
 
 
 ### [next-train-transilien by trizome](https://github.com/trizome/next-train-transilien)
@@ -6112,7 +6112,7 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
    - @typescript-eslint/eslint-plugin  ^6.20.0  →  ^8.11.0
    - eslint                            ^8.56.0  →  ^9.13.0
    - prettier                           ^3.2.5  →   ^3.3.3
-   - rollup                             ^4.9.6  →  ^4.24.0
+   - rollup                             ^4.9.6  →  ^4.24.2
    - rollup-plugin-banner2              ^1.2.2  →   ^1.3.0
    - typescript                         ^5.3.3  →   ^5.6.3
 
@@ -7461,7 +7461,7 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
    - @rollup/plugin-node-resolve  ^15.2.3  →  ^15.3.0
    - @rollup/plugin-typescript    ^11.1.6  →  ^12.1.1
    - eslint                        ^9.9.1  →  ^9.13.0
-   - rollup                       ^4.21.1  →  ^4.24.0
+   - rollup                       ^4.21.1  →  ^4.24.2
    - typescript                    ^5.5.4  →   ^5.6.3
    - typescript-eslint             ^8.3.0  →  ^8.11.0
 
@@ -10506,13 +10506,14 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
 
 ### [EXT-YouTubeCast by bugsounet](https://github.com/bugsounet/EXT-YouTubeCast)
 
-1. Information: There are updates for 6 dependencie(s):
+1. Information: There are updates for 7 dependencie(s):
    - @eslint/js                ^8.57.0  →  ^9.13.0
    - @stylistic/eslint-plugin   ^1.8.1  →   ^2.9.0
    - esbuild                   ^0.22.0  →  ^0.24.0
    - eslint                    ^8.57.0  →  ^9.13.0
    - eslint-plugin-import      ^2.29.1  →  ^2.31.0
    - glob                      ^10.4.2  →  ^11.0.0
+   - uuid                      ^10.0.0  →  ^11.0.0
 
 2.  WARN  eslint@8.57.0: 2024-02-23T20:39:43.282Z
 deprecated: This version is no longer supported. Please see https://eslint.org/version-support for other options.

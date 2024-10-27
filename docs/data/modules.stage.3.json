@@ -6380,7 +6380,7 @@
     "description": "Hide/Show individual modules and pages of modules with custom audio responses that you create.",
     "issues": [],
     "outdated": "Abandoned. No reactions to issues since years. The installation instructions do not work with up-to-date systems.",
-    "stars": 45,
+    "stars": 44,
     "license": "MIT",
     "tags": [
       "voice recognition",
@@ -6589,7 +6589,7 @@
       "Issues are not enabled in the GitHub repository. So users cannot report bugs. Please enable issues in your repo.",
       "No image found."
     ],
-    "stars": 64,
+    "stars": 63,
     "hasGithubIssues": false,
     "license": "MIT"
   },
@@ -6636,7 +6636,7 @@
     "maintainerURL": "https://github.com/wonderslug",
     "description": "Displays information from Home Assistant using Home Assistant Templates to render any HTML you want for the module. Includes support for Material Design Icons, Websockets for fast updating, and auto reconnect on Home Assistant restarts. Allows you to show or hide a whole module based on a Home Assistant Template as well.",
     "issues": [],
-    "stars": 88,
+    "stars": 90,
     "license": "MIT",
     "tags": [
       "home assistant"
