@@ -1952,7 +1952,6 @@
     "description": "News feed from the <strong>Swedish</strong> Government Crisis Information (krisinformation.se).",
     "issues": [],
     "stars": 1,
-    "hasGithubIssues": false,
     "license": "MIT"
   },
   {
@@ -5410,7 +5409,7 @@
     "maintainerURL": "https://github.com/2hdlockness",
     "description": "Nice gifs on the theme of \"IronMan\".",
     "issues": [],
-    "stars": 3,
+    "stars": 4,
     "license": "MIT"
   },
   {

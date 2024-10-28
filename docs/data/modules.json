@@ -281,7 +281,7 @@
     ],
     "image": ".github-preview-good.jpg",
     "defaultSortWeight": 1,
-    "lastCommit": "2024-10-26T03:50:47+00:00"
+    "lastCommit": "2024-10-28T08:21:14+00:00"
   },
   {
     "name": "MMM-Airtable",
@@ -2499,7 +2499,7 @@
     "license": "ISC",
     "image": "doc_images-MMM-Config base.jpg",
     "defaultSortWeight": 9,
-    "lastCommit": "2024-10-27T14:32:23-05:00"
+    "lastCommit": "2024-10-28T06:37:06-05:00"
   },
   {
     "name": "MMM-connection-status",
@@ -2775,13 +2775,12 @@
     "description": "News feed from the <strong>Swedish</strong> Government Crisis Information (krisinformation.se).",
     "issues": true,
     "stars": 1,
-    "hasGithubIssues": false,
     "license": "MIT",
     "tags": [
       "crisis"
     ],
     "image": "docs-ScreenShot1.jpg",
-    "defaultSortWeight": 2,
+    "defaultSortWeight": 1,
     "lastCommit": "2024-10-16T20:27:33+02:00"
   },
   {
@@ -2912,8 +2911,13 @@
     "stars": 1,
     "hasGithubIssues": false,
     "license": "MIT",
-    "defaultSortWeight": 9,
-    "lastCommit": "2023-10-27T15:13:30-04:00"
+    "tags": [
+      "text",
+      "message"
+    ],
+    "image": "example1.jpg",
+    "defaultSortWeight": 3,
+    "lastCommit": "2024-10-28T10:45:09-04:00"
   },
   {
     "name": "MMM-CustomText",
@@ -7571,7 +7575,7 @@
     "maintainerURL": "https://github.com/2hdlockness",
     "description": "Nice gifs on the theme of \"IronMan\".",
     "issues": true,
-    "stars": 3,
+    "stars": 4,
     "license": "MIT",
     "image": "Resources-screenshot.jpg",
     "defaultSortWeight": 3,
@@ -11337,7 +11341,7 @@
     ],
     "image": ".github-preview.bubbles.jpg",
     "defaultSortWeight": 0,
-    "lastCommit": "2024-10-26T06:36:45+00:00"
+    "lastCommit": "2024-10-28T06:40:20+00:00"
   },
   {
     "name": "MMM-Netatmo-Presence",

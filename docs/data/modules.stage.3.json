@@ -2718,11 +2718,8 @@
     "maintainer": "Pejjo",
     "maintainerURL": "",
     "description": "News feed from the <strong>Swedish</strong> Government Crisis Information (krisinformation.se).",
-    "issues": [
-      "Issues are not enabled in the GitHub repository. So users cannot report bugs. Please enable issues in your repo."
-    ],
+    "issues": [],
     "stars": 1,
-    "hasGithubIssues": false,
     "license": "MIT",
     "tags": [
       "crisis"
@@ -2853,13 +2850,16 @@
     "maintainerURL": "",
     "description": "Post a message to your mirror either by MagicMirror API post or manual update (entering text onscreen).",
     "issues": [
-      "There is no `package.json`. We need this file to gather information about the module for the module list page.",
-      "Issues are not enabled in the GitHub repository. So users cannot report bugs. Please enable issues in your repo.",
-      "No image found."
+      "Issues are not enabled in the GitHub repository. So users cannot report bugs. Please enable issues in your repo."
     ],
     "stars": 1,
     "hasGithubIssues": false,
-    "license": "MIT"
+    "license": "MIT",
+    "tags": [
+      "text",
+      "message"
+    ],
+    "image": "example1.jpg"
   },
   {
     "name": "MMM-CustomText",
@@ -7493,7 +7493,7 @@
     "issues": [
       "There are no keywords in 'package.json'. We would use them as tags on the module list page."
     ],
-    "stars": 3,
+    "stars": 4,
     "license": "MIT",
     "image": "Resources-screenshot.jpg"
   },

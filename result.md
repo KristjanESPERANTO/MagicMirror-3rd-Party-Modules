@@ -1,6 +1,6 @@
 # Result of the module analysis
 
-Last update: 2024-10-28T05:46:50+01:00
+Last update: 2024-10-28T17:38:33+01:00
 
 ## Statistics
 
@@ -9,7 +9,7 @@ Last update: 2024-10-28T05:46:50+01:00
 | modules analyzed     |   1195   |
 | maintainer           |    640   |
 | modules with issues  |   1187   |
-| issues               |   6883   |
+| issues               |   6876   |
 | modules at github    |   1085   |
 | modules at gitlab    |     10   |
 | modules at bitbucket |      1   |
@@ -1102,7 +1102,7 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
 2. Warning: No LICENSE file.
 3. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
 4. Information: There are updates for 1 dependencie(s):
-   - chart.js  ^4.4.4  →  ^4.4.5
+   - chart.js  ^4.4.4  →  ^4.4.6
 
 
 ### [MMM-Chess-Daily by nout-kleef](https://github.com/nout-kleef/MMM-Chess-Daily)
@@ -1375,8 +1375,7 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
 
 ### [MMM-CrisisInformationSweden by Pejjo](https://github.com/Pejjo/MMM-CrisisInformationSweden)
 
-1. Issues are not enabled in the GitHub repository. So users cannot report bugs. Please enable issues in your repo.
-2. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
+1. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
 
 ### [MMM-Cronixie by timophey](https://github.com/timophey/MMM-Cronixie)
 
@@ -1442,15 +1441,9 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
 
 ### [MMM-CustomMessage by jpcaldwell30](https://github.com/jpcaldwell30/MMM-CustomMessage)
 
-1. There is no `package.json`. We need this file to gather information about the module for the module list page.
-2. Issues are not enabled in the GitHub repository. So users cannot report bugs. Please enable issues in your repo.
-3. No image found.
-4. Typo: Found `Magic Mirror` in file `MMM-CustomMessage.js`: Replace it with `MagicMirror²`.
-5. Recommendation: Found `XMLHttpRequest` in file `MMM-CustomMessage.js`: Replace it with built-in fetch.
-6. Typo: Found `Magic Mirror` in file `README.md`: Replace it with `MagicMirror²`.
-7. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
-8. Recommendation: Found `new Date()` in file `node_helper.js`: Consider replacing it by `new Date(Date.now())`. It's helpful for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
-9. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
+1. Issues are not enabled in the GitHub repository. So users cannot report bugs. Please enable issues in your repo.
+2. Recommendation: Found `XMLHttpRequest` in file `MMM-CustomMessage.js`: Replace it with built-in fetch.
+3. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
 
 ### [MMM-CustomText by dathbe](https://github.com/dathbe/MMM-CustomText)
 
@@ -3072,7 +3065,7 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
 3. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
 4. Information: There are updates for 2 dependencie(s):
    - fs-extra   ^7.0.0  →  ^11.2.0
-   - puppeteer  ^2.0.0  →  ^23.6.0
+   - puppeteer  ^2.0.0  →  ^23.6.1
 
 
 ### [MMM-GoogleTasks by spydersoft-consulting](https://github.com/spydersoft-consulting/MMM-GoogleTasks)
@@ -3993,7 +3986,7 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
 4. Information: There are updates for 4 dependencie(s):
    - @electron/rebuild    ^3.6.0  →   ^3.7.0
    - node-abi            ^3.65.0  →  ^3.71.0
-   - puppeteer          ^22.15.0  →  ^23.6.0
+   - puppeteer          ^22.15.0  →  ^23.6.1
    - sharp               ^0.33.4  →  ^0.33.5
 
 
@@ -8107,7 +8100,7 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
 3. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
 4. Information: There are updates for 2 dependencie(s):
    - node-webcam  ^0.5.0  →   ^0.8.2
-   - nodemailer   ^6.4.4  →  ^6.9.15
+   - nodemailer   ^6.4.4  →  ^6.9.16
 
 
 ### [MMM-SendNotificationButton by ralberth](https://github.com/ralberth/MMM-SendNotificationButton)
