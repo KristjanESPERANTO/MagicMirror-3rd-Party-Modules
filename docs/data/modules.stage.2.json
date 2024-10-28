@@ -1723,7 +1723,7 @@
     "id": "skruglov2023/MMM-ComEdPricing",
     "maintainer": "skruglov2023",
     "maintainerURL": "",
-    "description": "Displays ComEd 5 Minute and Hourly Average, the above repo (MMM-ComEdPrice) has not been updated in a while.",
+    "description": "Displays ComEd 5 Minute and Hourly Average, the other repo (MMM-ComEdPrice) has not been updated in a while.",
     "issues": [],
     "stars": 0
   },
@@ -1738,6 +1738,17 @@
     "issues": [],
     "stars": 4,
     "license": "MIT"
+  },
+  {
+    "name": "MMM-Config",
+    "category": "Utility / IOT / 3rd Party / Integration",
+    "url": "https://github.com/sdetweil/MMM-Config",
+    "id": "sdetweil/MMM-Config",
+    "maintainer": "sdetweil",
+    "maintainerURL": "",
+    "description": "Form based (in browser) configuration for MagicMirror and modules.",
+    "issues": [],
+    "stars": 30
   },
   {
     "name": "MMM-connection-status",
@@ -5161,7 +5172,7 @@
     "maintainerURL": "",
     "description": "Time to the next buses, tramways from a list of stations / lines for Lille (Ilevia).",
     "issues": [],
-    "stars": 5,
+    "stars": 6,
     "license": "MIT"
   },
   {
@@ -5185,7 +5196,7 @@
     "maintainerURL": "",
     "description": "Displays images one-at-a-time from local folders.",
     "issues": [],
-    "stars": 1,
+    "stars": 2,
     "hasGithubIssues": false,
     "license": "MIT"
   },

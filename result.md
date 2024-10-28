@@ -1,16 +1,16 @@
 # Result of the module analysis
 
-Last update: 2024-10-27T17:48:53+01:00
+Last update: 2024-10-28T05:46:50+01:00
 
 ## Statistics
 
 |                      | number   |
 |:---------------------|:--------:|
-| modules analyzed     |   1194   |
+| modules analyzed     |   1195   |
 | maintainer           |    640   |
-| modules with issues  |   1186   |
-| issues               |   6872   |
-| modules at github    |   1084   |
+| modules with issues  |   1187   |
+| issues               |   6883   |
+| modules at github    |   1085   |
 | modules at gitlab    |     10   |
 | modules at bitbucket |      1   |
 
@@ -1248,6 +1248,20 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
 ### [MMM-CommandToNotification by Tom-Hirschberger](https://github.com/Tom-Hirschberger/MMM-CommandToNotification)
 
 1. Recommendation: Replace eslintrc by new flat config.
+
+### [MMM-Config by sdetweil](https://github.com/sdetweil/MMM-Config)
+
+1. `package.json` issue: No description
+2. `package.json` issue: No repository field.
+3. There are no keywords in 'package.json'. We would use them as tags on the module list page.
+4. Typo: Found `<sup>2</sup>` in file `README.md`: Replace it with `²`.`.
+5. Recommendation: Found `new Date()` in file `README.md`: Consider replacing it by `new Date(Date.now())`. It's helpful for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
+6. Outdated: Found `MichMich/MagicMirror` in file `README.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
+7. Recommendation: Found `require("http")` in file `node_helper.js`: Replace "http" by "node:http".
+8. Recommendation: Found `new Date()` in file `MMM-WeatherBackground.schema.json`: Consider replacing it by `new Date(Date.now())`. It's helpful for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
+9. Recommendation: Found `new Date()` in file `compliments_extension.js`: Consider replacing it by `new Date(Date.now())`. It's helpful for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
+10. Warning: No LICENSE file.
+11. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
 
 ### [MMM-connection-status by sheyabernstein](https://github.com/sheyabernstein/MMM-connection-status)
 
@@ -5994,7 +6008,7 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
 1. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
 2. Information: There are updates for 2 dependencie(s):
    - qrcode  ^1.5.3  →   ^1.5.4
-   - uuid    ^9.0.1  →  ^11.0.0
+   - uuid    ^9.0.1  →  ^11.0.1
 
 
 ### [next-train-transilien by trizome](https://github.com/trizome/next-train-transilien)
@@ -10513,7 +10527,7 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
    - eslint                    ^8.57.0  →  ^9.13.0
    - eslint-plugin-import      ^2.29.1  →  ^2.31.0
    - glob                      ^10.4.2  →  ^11.0.0
-   - uuid                      ^10.0.0  →  ^11.0.0
+   - uuid                      ^10.0.0  →  ^11.0.1
 
 2.  WARN  eslint@8.57.0: 2024-02-23T20:39:43.282Z
 deprecated: This version is no longer supported. Please see https://eslint.org/version-support for other options.

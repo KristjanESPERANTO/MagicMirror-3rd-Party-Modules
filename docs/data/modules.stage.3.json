@@ -2404,7 +2404,7 @@
     "id": "skruglov2023/MMM-ComEdPricing",
     "maintainer": "skruglov2023",
     "maintainerURL": "",
-    "description": "Displays ComEd 5 Minute and Hourly Average, the above repo (MMM-ComEdPrice) has not been updated in a while.",
+    "description": "Displays ComEd 5 Minute and Hourly Average, the other repo (MMM-ComEdPrice) has not been updated in a while.",
     "issues": [
       "There is no `package.json`. We need this file to gather information about the module for the module list page."
     ],
@@ -2432,6 +2432,23 @@
       "sensors"
     ],
     "image": "examples-bash-curl.jpg"
+  },
+  {
+    "name": "MMM-Config",
+    "category": "Utility / IOT / 3rd Party / Integration",
+    "url": "https://github.com/sdetweil/MMM-Config",
+    "id": "sdetweil/MMM-Config",
+    "maintainer": "sdetweil",
+    "maintainerURL": "",
+    "description": "Form based (in browser) configuration for MagicMirror and modules.",
+    "issues": [
+      "`package.json` issue: No description",
+      "`package.json` issue: No repository field.",
+      "There are no keywords in 'package.json'. We would use them as tags on the module list page."
+    ],
+    "stars": 30,
+    "license": "ISC",
+    "image": "doc_images-MMM-Config base.jpg"
   },
   {
     "name": "MMM-connection-status",
@@ -7139,7 +7156,7 @@
     "maintainerURL": "",
     "description": "Time to the next buses, tramways from a list of stations / lines for Lille (Ilevia).",
     "issues": [],
-    "stars": 5,
+    "stars": 6,
     "license": "MIT",
     "tags": [
       "localtransport",
@@ -7177,7 +7194,7 @@
       "There is no `package.json`. We need this file to gather information about the module for the module list page.",
       "Issues are not enabled in the GitHub repository. So users cannot report bugs. Please enable issues in your repo."
     ],
-    "stars": 1,
+    "stars": 2,
     "hasGithubIssues": false,
     "license": "MIT",
     "image": "exampleImages-jurassicpark.jpg"

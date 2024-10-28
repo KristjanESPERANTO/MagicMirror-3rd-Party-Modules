@@ -1,11 +1,11 @@
 {
-  "moduleCounter": 1194,
-  "modulesWithImageCounter": 843,
-  "modulesWithIssuesCounter": 1186,
-  "issueCounter": 6872,
-  "lastUpdate": "2024-10-27T17:48:53+01:00",
+  "moduleCounter": 1195,
+  "modulesWithImageCounter": 844,
+  "modulesWithIssuesCounter": 1187,
+  "issueCounter": 6883,
+  "lastUpdate": "2024-10-28T05:46:50+01:00",
   "repositoryHoster": {
-    "github": 1084,
+    "github": 1085,
     "gitlab": 10,
     "bitbucket": 1
   },
@@ -72,6 +72,7 @@
     "choffmann": 3,
     "73cirdan": 3,
     "ptrbld": 3,
+    "sdetweil": 3,
     "sheyabernstein": 3,
     "daterrell": 3,
     "0m4r": 3,
@@ -174,7 +175,6 @@
     "mtatsuma": 2,
     "nkl-kst": 2,
     "dgburr": 2,
-    "sdetweil": 2,
     "croxis": 2,
     "PjTewkesbury": 2,
     "MikeBishop": 2,
