@@ -8084,9 +8084,11 @@
     "maintainerURL": "https://github.com/RineshRamadhin",
     "description": "Displays the Last.fm scrobble currently playing. Supports Spotify, YouTube, Tidal, SoundCloud, MixCloud and <a target=\"_blank\" href=\"https://www.last.fm/about/trackmymusic\">many others</a>.",
     "issues": [
-      "`package.json` issue: No license field."
+      "`package.json` issue: No license field.",
+      "No compatible or wrong license field in 'package.json' or LICENSE file. Without that, we can't use an image."
     ],
     "stars": 5,
+    "license": "NOASSERTION",
     "tags": [
       "spotify",
       "last.fm",
@@ -8296,7 +8298,7 @@
     "issues": [
       "There are no keywords in 'package.json'. We would use them as tags on the module list page."
     ],
-    "stars": 1,
+    "stars": 2,
     "license": "MIT",
     "image": "screenshot.jpg"
   },
@@ -16172,11 +16174,13 @@
     "maintainer": "CFenner",
     "maintainerURL": "",
     "description": "Display the currently playing track of your Sonos system.",
-    "issues": [
-      "There are no specific keywords in 'package.json'. We would use them as tags on the module list page. Add a few meaningful terms to the keywords in the package.json. Not just “magicmirror” or “module”."
-    ],
+    "issues": [],
     "stars": 44,
     "license": "MIT",
+    "tags": [
+      "sonos",
+      "music"
+    ],
     "image": ".github-preview.jpg"
   },
   {

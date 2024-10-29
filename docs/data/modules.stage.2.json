@@ -5837,7 +5837,8 @@
     "maintainerURL": "https://github.com/RineshRamadhin",
     "description": "Displays the Last.fm scrobble currently playing. Supports Spotify, YouTube, Tidal, SoundCloud, MixCloud and <a target=\"_blank\" href=\"https://www.last.fm/about/trackmymusic\">many others</a>.",
     "issues": [],
-    "stars": 5
+    "stars": 5,
+    "license": "NOASSERTION"
   },
   {
     "name": "MMM-Launch",
@@ -5983,7 +5984,7 @@
     "maintainerURL": "",
     "description": "Displays current and upcoming pro matches in different e-sport games from Liquipedia (dota2, cs, lol etc).",
     "issues": [],
-    "stars": 1,
+    "stars": 2,
     "license": "MIT"
   },
   {

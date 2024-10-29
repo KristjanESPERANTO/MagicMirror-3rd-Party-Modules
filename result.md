@@ -1,6 +1,6 @@
 # Result of the module analysis
 
-Last update: 2024-10-28T17:38:33+01:00
+Last update: 2024-10-29T18:59:30+01:00
 
 ## Statistics
 
@@ -8,8 +8,8 @@ Last update: 2024-10-28T17:38:33+01:00
 |:---------------------|:--------:|
 | modules analyzed     |   1195   |
 | maintainer           |    640   |
-| modules with issues  |   1187   |
-| issues               |   6876   |
+| modules with issues  |   1190   |
+| issues               |   6906   |
 | modules at github    |   1085   |
 | modules at gitlab    |     10   |
 | modules at bitbucket |      1   |
@@ -104,6 +104,9 @@ Last update: 2024-10-28T17:38:33+01:00
    - eslint                    ^9.10.0  →   ^9.13.0
    - globals                   ^15.9.0  →  ^15.11.0
 
+2. ESLint issues:
+   - node_helper.js: Line 80, Column 13: Unused eslint-disable directive (no problems were reported from 'no-return-assign'). (rule: None)
+
 
 ### [MMM-air-raid-monitor-ua by PavlenkoM](https://github.com/PavlenkoM/MMM-air-raid-monitor-ua)
 
@@ -195,6 +198,19 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
 ### [MMM-AlertExt by MMRIZE](https://github.com/MMRIZE/MMM-AlertExt)
 
 1. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
+2. ESLint issues:
+   - MMM-AlertExt.js: Line 17, Column 28: 'sender' is defined but never used. (rule: no-unused-vars)
+   - MMM-AlertExt.js: Line 25, Column 28: 'sender' is defined but never used. (rule: no-unused-vars)
+   - MMM-AlertExt.js: Line 52, Column 28: 'sender' is defined but never used. (rule: no-unused-vars)
+   - MMM-AlertExt.js: Line 149, Column 13: 'context' is assigned a value but never used. (rule: no-unused-vars)
+   - MMM-AlertExt.js: Line 162, Column 11: 'logLevel' is assigned a value but never used. (rule: no-unused-vars)
+   - MMM-AlertExt.js: Line 165, Column 5: Read-only global 'Log' should not be modified. (rule: no-global-assign)
+   - MMM-AlertExt.js: Line 166, Column 27: 'receiver' is defined but never used. (rule: no-unused-vars)
+   - MMM-AlertExt.js: Line 316, Column 45: 'event' is defined but never used. (rule: no-unused-vars)
+   - MMM-AlertExt.js: Line 438, Column 21: 'popover' is defined but never used. (rule: no-unused-vars)
+   - MMM-AlertExt.js: Line 450, Column 38: 'event' is defined but never used. (rule: no-unused-vars)
+   - config/config.mjs: Line 7, Column 30: 'sender' is defined but never used. (rule: no-unused-vars)
+
 
 ### [MMM-alexa by sakirtemel](https://github.com/sakirtemel/MMM-alexa)
 
@@ -346,6 +362,9 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
 ### [MMM-AQI by ryck](https://github.com/ryck/MMM-AQI)
 
 1. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
+2. ESLint issues:
+   - node_helper.js: Line 32, Column 14: 'error' is defined but never used. (rule: no-unused-vars)
+
 
 ### [MMM-aqicn by gpailler](https://github.com/gpailler/MMM-aqicn)
 
@@ -751,14 +770,14 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
    - @stylistic/eslint-plugin             ^1.6.2  →   ^2.9.0
    - @types/express                     ^4.17.11  →   ^5.0.0
    - @types/magicmirror-module           ^2.16.0  →  ^2.16.5
-   - @types/node                       ^14.14.22  →  ^22.8.1
-   - @typescript-eslint/eslint-plugin     ^7.0.2  →  ^8.11.0
-   - @typescript-eslint/parser            ^7.0.2  →  ^8.11.0
+   - @types/node                       ^14.14.22  →  ^22.8.4
+   - @typescript-eslint/eslint-plugin     ^7.0.2  →  ^8.12.2
+   - @typescript-eslint/parser            ^7.0.2  →  ^8.12.2
    - bosch-smart-home-bridge              ^1.4.1  →   ^1.6.0
    - eslint                              ^8.57.0  →  ^9.13.0
    - eslint-plugin-prettier               ^5.1.3  →   ^5.2.1
    - prettier                             ^3.2.5  →   ^3.3.3
-   - rollup                               ^4.9.6  →  ^4.24.2
+   - rollup                               ^4.9.6  →  ^4.24.3
    - rollup-plugin-banner2                ^1.2.2  →   ^1.3.0
    - rxjs                                 ^7.5.5  →   ^7.8.1
    - typescript                           ^5.3.3  →   ^5.6.3
@@ -907,6 +926,10 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
 ### [MMM-Buttons by MarcLandis](https://github.com/MarcLandis/MMM-Buttons)
 
 1. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
+2. ESLint issues:
+   - node_helper.js: Line 78, Column 18: 'e' is defined but never used. (rule: no-unused-vars)
+   - node_helper.js: Line 78, Column 21: Empty block statement. (rule: no-empty)
+
 
 ### [MMM-Bysykkel by JonasTriki](https://github.com/JonasTriki/MMM-Bysykkel)
 
@@ -929,13 +952,26 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
 
 ### [MMM-CalendarExt2 by MMM-CalendarExt2](https://github.com/MMM-CalendarExt2/MMM-CalendarExt2)
 
-1. Information: There are updates for 6 dependencie(s):
-   - @eslint/js                 ^9.9.1  →   ^9.13.0
-   - @stylistic/eslint-plugin   ^2.6.4  →    ^2.9.0
-   - eslint                     ^9.9.1  →   ^9.13.0
-   - globals                   ^15.9.0  →  ^15.11.0
-   - moment-timezone           ^0.5.45  →   ^0.5.46
-   - stylelint                 ^16.8.2  →  ^16.10.0
+1. ESLint issues:
+   - CALEXT2_View.js: Line 290, Column 3: Unused eslint-disable directive (no problems were reported from 'class-methods-use-this'). (rule: None)
+   - CALEXT2_View.js: Line 295, Column 3: Unused eslint-disable directive (no problems were reported from 'class-methods-use-this'). (rule: None)
+   - CALEXT2_ViewAgenda.js: Line 1, Column 1: Unused eslint-disable directive (no problems were reported from 'no-undef'). (rule: None)
+   - CALEXT2_ViewAgenda.js: Line 14, Column 3: Unused eslint-disable directive (no problems were reported from 'class-methods-use-this'). (rule: None)
+   - CALEXT2_ViewCell.js: Line 70, Column 3: Unused eslint-disable directive (no problems were reported from 'class-methods-use-this'). (rule: None)
+   - CALEXT2_ViewCell.js: Line 113, Column 3: Unused eslint-disable directive (no problems were reported from 'class-methods-use-this'). (rule: None)
+   - CALEXT2_ViewCurrent.js: Line 1, Column 1: Unused eslint-disable directive (no problems were reported from 'no-undef'). (rule: None)
+   - CALEXT2_ViewMonthly.js: Line 1, Column 1: Unused eslint-disable directive (no problems were reported from 'no-undef'). (rule: None)
+   - CALEXT2_ViewPeriod.js: Line 1, Column 1: Unused eslint-disable directive (no problems were reported from 'no-undef'). (rule: None)
+   - CALEXT2_ViewUpcoming.js: Line 1, Column 1: Unused eslint-disable directive (no problems were reported from 'no-undef'). (rule: None)
+   - CALEXT2_ViewWeek.js: Line 1, Column 1: Unused eslint-disable directive (no problems were reported from 'no-undef'). (rule: None)
+   - CALEXT2_ViewWeekly.js: Line 1, Column 1: Unused eslint-disable directive (no problems were reported from 'no-undef'). (rule: None)
+   - CALEXT2_WeekSlot.js: Line 137, Column 11: Unused eslint-disable directive (no problems were reported from 'no-bitwise'). (rule: None)
+   - CALEXT2_WeekSlot.js: Line 141, Column 13: Unused eslint-disable directive (no problems were reported from 'no-bitwise' or 'operator-assignment'). (rule: None)
+   - MMM-CalendarExt2.js: Line 1, Column 1: Unused eslint-disable directive (no problems were reported from 'no-eval'). (rule: None)
+   - eslint.config.mjs: Line 3, Column 31: Unable to resolve path to module 'eslint-plugin-jsonc'. (rule: import/no-unresolved)
+   - node_helper.js: Line 14, Column 3: Unused eslint-disable directive (no problems were reported from 'no-empty-function'). (rule: None)
+   - node_helper.js: Line 156, Column 9: Unused eslint-disable directive (no problems were reported from 'no-eq-null' or 'eqeqeq'). (rule: None)
+   - node_helper.js: Line 220, Column 60: Unused eslint-disable directive (no problems were reported from 'no-new-func'). (rule: None)
 
 
 ### [MMM-CalendarExt3 by MMRIZE](https://github.com/MMRIZE/MMM-CalendarExt3)
@@ -1248,6 +1284,24 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
 ### [MMM-CommandToNotification by Tom-Hirschberger](https://github.com/Tom-Hirschberger/MMM-CommandToNotification)
 
 1. Recommendation: Replace eslintrc by new flat config.
+2. ESLint issues:
+   - MMM-CommandToNotification.js: Line 1, Column 1: 'CommandToNotification' is not a valid configuration for a global (use 'readonly', 'writable', or 'off') (rule: None)
+   - MMM-CommandToNotification.js: Line 3, Column 1: '/*' is defined but never used. (rule: no-unused-vars)
+   - MMM-CommandToNotification.js: Line 3, Column 4: 'MagicMirror²' is defined but never used. (rule: no-unused-vars)
+   - MMM-CommandToNotification.js: Line 4, Column 2: '*' is defined but never used. (rule: no-unused-vars)
+   - MMM-CommandToNotification.js: Line 6, Column 4: 'By' is defined but never used. (rule: no-unused-vars)
+   - MMM-CommandToNotification.js: Line 6, Column 7: 'Tom' is defined but never used. (rule: no-unused-vars)
+   - MMM-CommandToNotification.js: Line 6, Column 11: 'Hirschberger' is defined but never used. (rule: no-unused-vars)
+   - MMM-CommandToNotification.js: Line 7, Column 4: 'MIT' is defined but never used. (rule: no-unused-vars)
+   - MMM-CommandToNotification.js: Line 7, Column 8: 'Licensed.' is defined but never used. (rule: no-unused-vars)
+   - MMM-CommandToNotification.js: Line 23, Column 35: 'notification' is defined but never used. (rule: no-unused-vars)
+   - MMM-CommandToNotification.js: Line 23, Column 49: 'payload' is defined but never used. (rule: no-unused-vars)
+   - MMM-CommandToNotification.js: Line 24, Column 11: 'self' is assigned a value but never used. (rule: no-unused-vars)
+   - node_helper.js: Line 140, Column 20: 'testPath' is assigned to itself. (rule: no-self-assign)
+   - node_helper.js: Line 168, Column 23: 'err' is defined but never used. (rule: no-unused-vars)
+   - scripts/randomInteger.js: Line 21, Column 5: Do not use the '===' operator to compare against -0. (rule: no-compare-neg-zero)
+   - scripts/randomNumberJson.js: Line 21, Column 5: Do not use the '===' operator to compare against -0. (rule: no-compare-neg-zero)
+
 
 ### [MMM-Config by sdetweil](https://github.com/sdetweil/MMM-Config)
 
@@ -1294,6 +1348,13 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
 ### [MMM-CountEvents by MMRIZE](https://github.com/MMRIZE/MMM-CountEvents)
 
 1. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
+2. ESLint issues:
+   - MMM-CountEvents.js: Line 55, Column 13: 'events' is assigned a value but never used. (rule: no-unused-vars)
+   - MMM-CountEvents.js: Line 55, Column 21: 'identifier' is assigned a value but never used. (rule: no-unused-vars)
+   - MMM-CountEvents.js: Line 87, Column 11: Unexpected lexical declaration in case block. (rule: no-case-declarations)
+   - MMM-CountEvents.js: Line 123, Column 21: 'ev' is defined but never used. (rule: no-unused-vars)
+   - MMM-CountEvents.js: Line 131, Column 22: 'ev' is defined but never used. (rule: no-unused-vars)
+
 
 ### [MMM-CountUP by bibaldo](https://github.com/bibaldo/MMM-CountUP)
 
@@ -1698,7 +1759,7 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
 3. Information: There are updates for 6 dependencie(s):
    - @eslint/js                ^8.57.1  →  ^9.13.0
    - @stylistic/eslint-plugin   ^1.8.1  →   ^2.9.0
-   - @types/node               ^22.7.6  →  ^22.8.1
+   - @types/node               ^22.7.6  →  ^22.8.4
    - eslint                    ^8.57.1  →  ^9.13.0
    - eslint-plugin-import      ^2.29.1  →  ^2.31.0
    - glob                      ^10.4.5  →  ^11.0.0
@@ -2040,6 +2101,9 @@ deprecated: no longer maintained, switch to modern iconify-icon web component
 ### [MMM-EnergyMonitor by deg0nz](https://github.com/deg0nz/MMM-EnergyMonitor)
 
 1. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
+2. ESLint issues:
+   - MMM-EnergyMonitor.js: Line 64, Column 35: Do not access Object.prototype method 'hasOwnProperty' from target object. (rule: no-prototype-builtins)
+
 
 ### [MMM-EnphaseSolar by matt-thurling](https://github.com/matt-thurling/MMM-EnphaseSolar)
 
@@ -2241,6 +2305,11 @@ deprecated: no longer maintained, switch to modern iconify-icon web component
 ### [MMM-Farevarsel by mabahj](https://github.com/mabahj/MMM-Farevarsel)
 
 1. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
+2. ESLint issues:
+   - MMM-Farevarsel.js: Line 87, Column 19: Expected a 'break' statement before 'case'. (rule: no-fallthrough)
+   - MMM-Farevarsel.js: Line 90, Column 19: Expected a 'break' statement before 'case'. (rule: no-fallthrough)
+   - node_helper.js: Line 35, Column 27: 'alertTitle' is assigned a value but never used. (rule: no-unused-vars)
+
 
 ### [MMM-FastNotes by polarbearjngl](https://github.com/polarbearjngl/MMM-FastNotes)
 
@@ -2498,6 +2567,9 @@ deprecated: no longer maintained, switch to modern iconify-icon web component
 ### [MMM-FlipClock by MarcLandis](https://github.com/MarcLandis/MMM-FlipClock)
 
 1. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
+2. ESLint issues:
+   - MMM-FlipClock.js: Line 225, Column 13: 'tick' is assigned a value but never used. (rule: no-unused-vars)
+
 
 ### [MMM-Flo by kagjerde](https://github.com/kagjerde/MMM-Flo)
 
@@ -3056,6 +3128,9 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
    - @eslint/js   ^9.9.0  →   ^9.13.0
    - eslint       ^9.9.0  →   ^9.13.0
    - globals     ^15.9.0  →  ^15.11.0
+
+2. ESLint issues:
+   - MMM-GoogleSheets.js: Line 1, Column 1: Unused eslint-disable directive (no problems were reported from 'no-undef'). (rule: None)
 
 
 ### [MMM-GoogleShoppingList by Gismo150](https://github.com/Gismo150/MMM-GoogleShoppingList)
@@ -4008,12 +4083,12 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
    - @rollup/plugin-commonjs           ^25.0.7  →  ^28.0.1
    - @rollup/plugin-node-resolve       ^15.2.3  →  ^15.3.0
    - @rollup/plugin-typescript         ^11.1.6  →  ^12.1.1
-   - @typescript-eslint/eslint-plugin  ^6.19.1  →  ^8.11.0
-   - @typescript-eslint/parser         ^6.19.1  →  ^8.11.0
+   - @typescript-eslint/eslint-plugin  ^6.19.1  →  ^8.12.2
+   - @typescript-eslint/parser         ^6.19.1  →  ^8.12.2
    - eslint                            ^8.56.0  →  ^9.13.0
    - eslint-plugin-prettier             ^5.1.3  →   ^5.2.1
    - prettier                           ^3.2.4  →   ^3.3.3
-   - rollup                             ^4.9.6  →  ^4.24.2
+   - rollup                             ^4.9.6  →  ^4.24.3
    - rollup-plugin-banner2              ^1.2.2  →   ^1.3.0
    - typescript                         ^5.3.3  →   ^5.6.3
    - yahoo-finance2                    ^2.11.3  →  ^2.13.2
@@ -4278,9 +4353,10 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
 ### [MMM-Lastfm by RineshRamadhin](https://github.com/RineshRamadhin/MMM-Lastfm)
 
 1. `package.json` issue: No license field.
-2. Recommendation: Found `uses: actions/checkout@v3` in file `codeql-analysis.yml`: Replace it with v4.
-3. Outdated: Found `MichMich/MagicMirror` in file `README.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
-4. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
+2. No compatible or wrong license field in 'package.json' or LICENSE file. Without that, we can't use an image.
+3. Recommendation: Found `uses: actions/checkout@v3` in file `codeql-analysis.yml`: Replace it with v4.
+4. Outdated: Found `MichMich/MagicMirror` in file `README.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
+5. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
 
 ### [MMM-LCDControl by Txukie](https://github.com/Txukie/MMM-LCDControl)
 
@@ -4308,6 +4384,20 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
 ### [MMM-LEDStripControl by Tom-Hirschberger](https://github.com/Tom-Hirschberger/MMM-LEDStripControl)
 
 1. Recommendation: Replace eslintrc by new flat config.
+2. ESLint issues:
+   - MMM-LEDStripControl.js: Line 1, Column 1: 'LEDStripControl' is not a valid configuration for a global (use 'readonly', 'writable', or 'off') (rule: None)
+   - MMM-LEDStripControl.js: Line 3, Column 1: '/*' is defined but never used. (rule: no-unused-vars)
+   - MMM-LEDStripControl.js: Line 3, Column 4: 'MagicMirror²' is defined but never used. (rule: no-unused-vars)
+   - MMM-LEDStripControl.js: Line 4, Column 2: '*' is defined but never used. (rule: no-unused-vars)
+   - MMM-LEDStripControl.js: Line 6, Column 4: 'By' is defined but never used. (rule: no-unused-vars)
+   - MMM-LEDStripControl.js: Line 6, Column 7: 'Tom' is defined but never used. (rule: no-unused-vars)
+   - MMM-LEDStripControl.js: Line 6, Column 11: 'Hirschberger' is defined but never used. (rule: no-unused-vars)
+   - MMM-LEDStripControl.js: Line 7, Column 4: 'MIT' is defined but never used. (rule: no-unused-vars)
+   - MMM-LEDStripControl.js: Line 7, Column 8: 'Licensed.' is defined but never used. (rule: no-unused-vars)
+   - MMM-LEDStripControl.js: Line 577, Column 41: 'notification' is defined but never used. (rule: no-unused-vars)
+   - MMM-LEDStripControl.js: Line 577, Column 55: 'payload' is defined but never used. (rule: no-unused-vars)
+   - MMM-LEDStripControl.js: Line 578, Column 11: 'self' is assigned a value but never used. (rule: no-unused-vars)
+
 
 ### [MMM-LesJoiesDuCode by Tomadelostacos](https://github.com/Tomadelostacos/MMM-LesJoiesDuCode)
 
@@ -4559,6 +4649,10 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
 ### [MMM-Luxembourg-Public-Transport by uxigene](https://github.com/uxigene/MMM-Luxembourg-Public-Transport)
 
 1. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
+2. ESLint issues:
+   - node_helper.js: Line 40, Column 18: 'err' is defined but never used. (rule: no-unused-vars)
+   - template-engine.js: Line 14, Column 15: Expected a conditional expression and instead saw an assignment. (rule: no-cond-assign)
+
 
 ### [MMM-lyft by kyle-kelly](https://github.com/kyle-kelly/MMM-lyft)
 
@@ -4846,6 +4940,13 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
 1. Information: There are updates for 2 dependencie(s):
    - @eslint/js  ^8.57.1  →  ^9.13.0
    - glob        ^10.4.5  →  ^11.0.0
+
+2. ESLint issues:
+   - MMM-MeteoFrance.js: Line 45, Column 25: 'args' is defined but never used. (rule: no-unused-vars)
+   - MMM-MeteoFrance.js: Line 97, Column 39: 'payload' is defined but never used. (rule: no-unused-vars)
+   - installer/minify.js: Line 47, Column 7: 'error' is assigned a value but never used. (rule: no-unused-vars)
+   - installer/minify.js: Line 64, Column 14: 'e' is defined but never used. (rule: no-unused-vars)
+   - node_helper.js: Line 13, Column 15: 'args' is defined but never used. (rule: no-unused-vars)
 
 
 ### [MMM-MHZ19 by awitwicki](https://github.com/awitwicki/MMM-MHZ19)
@@ -5313,6 +5414,15 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
 ### [MMM-MoonPhase by NolanKingdon](https://github.com/NolanKingdon/MMM-MoonPhase)
 
 1. Recommendation: Replace eslintrc by new flat config.
+2. ESLint issues:
+   - node_helper.js: Line 9, Column 7: 'moment' is assigned a value but never used. (rule: no-unused-vars)
+   - node_helper.js: Line 15, Column 5: Unexpected lexical declaration in case block. (rule: no-case-declarations)
+   - node_helper.js: Line 19, Column 17: Unexpected lexical declaration in case block. (rule: no-case-declarations)
+   - node_helper.js: Line 131, Column 2: Duplicate key 'rotate'. (rule: no-dupe-keys)
+   - node_helper.js: Line 213, Column 13: 'sglong' is defined but never used. (rule: no-unused-vars)
+   - node_helper.js: Line 213, Column 64: 'j' is defined but never used. (rule: no-unused-vars)
+   - node_helper.js: Line 214, Column 47: 'iobj' is defined but never used. (rule: no-unused-vars)
+
 
 ### [MMM-moonraker by btastic](https://github.com/btastic/MMM-moonraker)
 
@@ -5419,6 +5529,19 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
 ### [MMM-MplayerRadio by Tom-Hirschberger](https://github.com/Tom-Hirschberger/MMM-MplayerRadio)
 
 1. Recommendation: Replace eslintrc by new flat config.
+2. ESLint issues:
+   - MMM-MplayerRadio.js: Line 1, Column 1: 'MplayerRadio' is not a valid configuration for a global (use 'readonly', 'writable', or 'off') (rule: None)
+   - MMM-MplayerRadio.js: Line 3, Column 1: '/*' is defined but never used. (rule: no-unused-vars)
+   - MMM-MplayerRadio.js: Line 3, Column 4: 'MagicMirror²' is defined but never used. (rule: no-unused-vars)
+   - MMM-MplayerRadio.js: Line 4, Column 2: '*' is defined but never used. (rule: no-unused-vars)
+   - MMM-MplayerRadio.js: Line 6, Column 4: 'By' is defined but never used. (rule: no-unused-vars)
+   - MMM-MplayerRadio.js: Line 6, Column 7: 'Tom' is defined but never used. (rule: no-unused-vars)
+   - MMM-MplayerRadio.js: Line 6, Column 11: 'Hirschberger' is defined but never used. (rule: no-unused-vars)
+   - MMM-MplayerRadio.js: Line 7, Column 4: 'MIT' is defined but never used. (rule: no-unused-vars)
+   - MMM-MplayerRadio.js: Line 7, Column 8: 'Licensed.' is defined but never used. (rule: no-unused-vars)
+   - MMM-MplayerRadio.js: Line 467, Column 11: 'self' is assigned a value but never used. (rule: no-unused-vars)
+   - node_helper.js: Line 207, Column 42: 'err' is defined but never used. (rule: no-unused-vars)
+
 
 ### [MMM-MPR121 by PatriceG](https://github.com/PatriceG/MMM-MPR121)
 
@@ -5681,6 +5804,10 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
 ### [MMM-MySQLData by tabsl](https://github.com/tabsl/MMM-MySQLData)
 
 1. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
+2. ESLint issues:
+   - MMM-MySQLData.js: Line 47, Column 48: 'key' is defined but never used. (rule: no-unused-vars)
+   - node_helper.js: Line 46, Column 68: 'fields' is defined but never used. (rule: no-unused-vars)
+
 
 ### [MMM-MysqlQuery by ralberth](https://github.com/ralberth/MMM-MysqlQuery)
 
@@ -5988,6 +6115,9 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
 ### [MMM-NewsAPI by mumblebaj](https://github.com/mumblebaj/MMM-NewsAPI)
 
 1. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
+2. ESLint issues:
+   - MMM-NewsAPI.js: Line 164, Column 23: 'qr' is assigned a value but never used. (rule: no-unused-vars)
+
 
 ### [MMM-NewsFeedTicker by justjim1220](https://github.com/justjim1220/MMM-NewsFeedTicker)
 
@@ -6001,7 +6131,7 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
 1. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
 2. Information: There are updates for 2 dependencie(s):
    - qrcode  ^1.5.3  →   ^1.5.4
-   - uuid    ^9.0.1  →  ^11.0.1
+   - uuid    ^9.0.1  →  ^11.0.2
 
 
 ### [next-train-transilien by trizome](https://github.com/trizome/next-train-transilien)
@@ -6116,10 +6246,10 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
    - @rollup/plugin-node-resolve       ^15.2.3  →  ^15.3.0
    - @rollup/plugin-typescript         ^11.1.6  →  ^12.1.1
    - @stylistic/eslint-plugin           ^1.5.4  →   ^2.9.0
-   - @typescript-eslint/eslint-plugin  ^6.20.0  →  ^8.11.0
+   - @typescript-eslint/eslint-plugin  ^6.20.0  →  ^8.12.2
    - eslint                            ^8.56.0  →  ^9.13.0
    - prettier                           ^3.2.5  →   ^3.3.3
-   - rollup                             ^4.9.6  →  ^4.24.2
+   - rollup                             ^4.9.6  →  ^4.24.3
    - rollup-plugin-banner2              ^1.2.2  →   ^1.3.0
    - typescript                         ^5.3.3  →   ^5.6.3
 
@@ -6379,6 +6509,14 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
 6. Warning: No LICENSE file.
 7. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
 
+### [MMM-OneCallWeather by KristjanESPERANTO](https://github.com/KristjanESPERANTO/MMM-OneCallWeather)
+
+1. ESLint issues:
+   - MMM-OneCallWeather.js: Line 360, Column 5: Unused eslint-disable directive (no problems were reported from 'default-case'). (rule: None)
+   - MMM-OneCallWeather.js: Line 394, Column 9: Unused eslint-disable directive (no problems were reported from 'prefer-destructuring'). (rule: None)
+   - MMM-OneCallWeather.js: Line 580, Column 9: Unused eslint-disable directive (no problems were reported from 'prefer-destructuring'). (rule: None)
+
+
 ### [MMM-OneDrive by hermanho](https://github.com/hermanho/MMM-OneDrive)
 
 1. Typo: Found `Magic Mirror` in file `INSTALL.md`: Replace it with `MagicMirror²`.
@@ -6543,6 +6681,13 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
 ### [MMM-OpenWeatherMapForecast by MarcLandis](https://github.com/MarcLandis/MMM-OpenWeatherMapForecast)
 
 1. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
+2. ESLint issues:
+   - skycons.js: Line 21, Column 38: 'delay' is defined but never used. (rule: no-unused-vars)
+   - skycons.js: Line 268, Column 9: 'b' is assigned a value but never used. (rule: no-unused-vars)
+   - skycons.js: Line 269, Column 9: 'c' is assigned a value but never used. (rule: no-unused-vars)
+   - skycons.js: Line 718, Column 24: 'canvas.width' is assigned to itself. (rule: no-self-assign)
+   - skycons.js: Line 738, Column 11: 'i' is defined but never used. (rule: no-unused-vars)
+
 
 ### [MMM-OsloCityBike by TobbenTM](https://github.com/TobbenTM/MMM-OsloCityBike)
 
@@ -7021,6 +7166,21 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
 ### [MMM-Plenticore by eckonator](https://github.com/eckonator/MMM-Plenticore)
 
 1. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
+2. ESLint issues:
+   - MMM-Plenticore.js: Line 135, Column 15: 'self' is assigned a value but never used. (rule: no-unused-vars)
+   - lib/kostal.js: Line 493, Column 27: 'e' is defined but never used. (rule: no-unused-vars)
+   - node_helper.js: Line 634, Column 82: 'headers' is defined but never used. (rule: no-unused-vars)
+   - node_helper.js: Line 673, Column 87: 'headers' is defined but never used. (rule: no-unused-vars)
+   - node_helper.js: Line 723, Column 99: 'headers' is defined but never used. (rule: no-unused-vars)
+   - node_helper.js: Line 757, Column 65: 'code' is defined but never used. (rule: no-unused-vars)
+   - node_helper.js: Line 757, Column 71: 'headers' is defined but never used. (rule: no-unused-vars)
+   - node_helper.js: Line 763, Column 71: 'headers' is defined but never used. (rule: no-unused-vars)
+   - node_helper.js: Line 852, Column 79: 'headers' is defined but never used. (rule: no-unused-vars)
+   - node_helper.js: Line 1155, Column 82: 'headers' is defined but never used. (rule: no-unused-vars)
+   - node_helper.js: Line 1164, Column 21: 'polling' is assigned a value but never used. (rule: no-unused-vars)
+   - node_helper.js: Line 1311, Column 29: 'callback' is defined but never used. (rule: no-unused-vars)
+   - node_helper.js: Line 1313, Column 77: 'headers' is defined but never used. (rule: no-unused-vars)
+
 
 ### [MMM-PlexNowPlaying by glitch452](https://github.com/glitch452/MMM-PlexNowPlaying)
 
@@ -7324,6 +7484,27 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
    - globals     ^15.10.0  →  ^15.11.0
    - stylelint    ^16.9.0  →  ^16.10.0
 
+2. ESLint issues:
+   - BvgFetcher.js: Line 11, Column 41: Unable to resolve path to module 'hafas-client'. (rule: import/no-unresolved)
+   - BvgFetcher.js: Line 12, Column 36: Unable to resolve path to module 'hafas-client/p/bvg/index.js'. (rule: import/no-unresolved)
+   - convenience/query_stations.mjs: Line 97, Column 27: Parsing error: Unexpected token import (rule: None)
+   - eslint.config.mjs: Line 1, Column 33: Unable to resolve path to module 'eslint-plugin-import-x'. (rule: import/no-unresolved)
+   - eslint.config.mjs: Line 3, Column 31: Unable to resolve path to module 'eslint-plugin-jsonc'. (rule: import/no-unresolved)
+
+
+### [MMM-PublicTransportHafas by KristjanESPERANTO](https://github.com/KristjanESPERANTO/MMM-PublicTransportHafas)
+
+1. ESLint issues:
+   - MMM-PublicTransportHafas.js: Line 1, Column 1: Definition for rule '@stylistic/no-multi-spaces' was not found. (rule: @stylistic/no-multi-spaces)
+   - MMM-PublicTransportHafas.js: Line 9, Column 1: Unused eslint-disable directive (no problems were reported from 'no-var'). (rule: None)
+   - convenience/query_stations.mjs: Line 95, Column 27: Parsing error: Unexpected token import (rule: None)
+   - core/HafasFetcher.js: Line 42, Column 41: Unable to resolve path to module 'hafas-client'. (rule: import/no-unresolved)
+   - eslint.config.mjs: Line 3, Column 30: Parse errors in imported module '@eslint/json': Unexpected token = (45:9) (rule: import/namespace)
+   - eslint.config.mjs: Line 3, Column 30: Parse errors in imported module '@eslint/json': Unexpected token = (45:9) (rule: import/default)
+   - eslint.config.mjs: Line 3, Column 30: Parse errors in imported module '@eslint/json': Unexpected token = (45:9) (rule: import/no-named-as-default)
+   - eslint.config.mjs: Line 3, Column 30: Parse errors in imported module '@eslint/json': Unexpected token = (45:9) (rule: import/no-named-as-default-member)
+   - eslint.config.mjs: Line 4, Column 34: Unable to resolve path to module '@eslint/markdown'. (rule: import/no-unresolved)
+
 
 ### [MMM-PublicTransportVVO by ChristianGeie](https://github.com/ChristianGeie/MMM-PublicTransportVVO)
 
@@ -7468,9 +7649,22 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
    - @rollup/plugin-node-resolve  ^15.2.3  →  ^15.3.0
    - @rollup/plugin-typescript    ^11.1.6  →  ^12.1.1
    - eslint                        ^9.9.1  →  ^9.13.0
-   - rollup                       ^4.21.1  →  ^4.24.2
+   - rollup                       ^4.21.1  →  ^4.24.3
    - typescript                    ^5.5.4  →   ^5.6.3
-   - typescript-eslint             ^8.3.0  →  ^8.11.0
+   - typescript-eslint             ^8.3.0  →  ^8.12.2
+
+2. ESLint issues:
+   - MMM-RAIN-MAP.js: Line 28, Column 17081: Expected to return a value in method 'get'. (rule: getter-return)
+   - MMM-RAIN-MAP.js: Line 28, Column 17223: 't' is defined but never used. (rule: no-unused-vars)
+   - MMM-RAIN-MAP.js: Line 28, Column 17225: Empty block statement. (rule: no-empty)
+   - MMM-RAIN-MAP.js: Line 28, Column 17669: 't' is defined but never used. (rule: no-unused-vars)
+   - MMM-RAIN-MAP.js: Line 28, Column 21801: 't' is defined but never used. (rule: no-unused-vars)
+   - MMM-RAIN-MAP.js: Line 28, Column 26420: 't' is defined but never used. (rule: no-unused-vars)
+   - MMM-RAIN-MAP.js: Line 28, Column 35686: 't' is defined but never used. (rule: no-unused-vars)
+   - MMM-RAIN-MAP.js: Line 28, Column 130360: 't' is defined but never used. (rule: no-unused-vars)
+   - MMM-RAIN-MAP.js: Line 28, Column 130362: Empty block statement. (rule: no-empty)
+   - eslint.config.mjs: Line 2, Column 22: Unable to resolve path to module 'typescript-eslint'. (rule: import/no-unresolved)
+   - rollup.config.mjs: Line 6, Column 34: Parsing error: Unexpected token assert (rule: None)
 
 
 ### [MMM-RAIN-RADAR by jojoduquartier](https://github.com/jojoduquartier/MMM-RAIN-RADAR)
@@ -7536,6 +7730,9 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
 ### [MMM-RandomQuotes by Jacopo1891](https://github.com/Jacopo1891/MMM-RandomQuotes)
 
 1. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
+2. ESLint issues:
+   - MMM-RandomQuotes.js: Line 1, Column 5: 'self' is assigned a value but never used. (rule: no-unused-vars)
+
 
 ### [MMM-RandomQuranAyah by slametps](https://github.com/slametps/MMM-RandomQuranAyah)
 
@@ -7857,6 +8054,9 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
 ### [MMM-ROVA-trashcalendar by jeroenpeters1986](https://github.com/jeroenpeters1986/MMM-ROVA-trashcalendar)
 
 1. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
+2. ESLint issues:
+   - node_helper.js: Line 22, Column 12: 'error' is defined but never used. (rule: no-unused-vars)
+
 
 ### [MMM-RPI-LED by idoodler](https://github.com/idoodler/MMM-RPI-LED)
 
@@ -8590,14 +8790,13 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
 
 ### [MMM-Sonos by CFenner](https://github.com/CFenner/MMM-Sonos)
 
-1. There are no specific keywords in 'package.json'. We would use them as tags on the module list page. Add a few meaningful terms to the keywords in the package.json. Not just “magicmirror” or “module”.
-2. Typo: Found `Magic Mirror` in file `MMM-Sonos.js`: Replace it with `MagicMirror²`.
-3. Deprecated: Found `new Buffer(` in file `README.md`: This is deprecated. Please update: <https://nodejs.org/api/buffer.html>.
-4. Outdated: Found `MichMich/MagicMirror` in file `README.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
-5. Recommendation: The README seems not to have an update instruction (the word 'update' is missing). Please add one.
-6. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
-7. Deprecated: Found `require('request')` in file `node_helper.js`: Replace it with built-in fetch.
-8. Recommendation: Replace eslintrc by new flat config.
+1. Typo: Found `Magic Mirror` in file `MMM-Sonos.js`: Replace it with `MagicMirror²`.
+2. Deprecated: Found `new Buffer(` in file `README.md`: This is deprecated. Please update: <https://nodejs.org/api/buffer.html>.
+3. Outdated: Found `MichMich/MagicMirror` in file `README.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
+4. Recommendation: The README seems not to have an update instruction (the word 'update' is missing). Please add one.
+5. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
+6. Deprecated: Found `require('request')` in file `node_helper.js`: Replace it with built-in fetch.
+7. Recommendation: Replace eslintrc by new flat config.
 
 ### [MMM-Sonos by tbouron](https://github.com/tbouron/MMM-Sonos)
 
@@ -8972,7 +9171,7 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
 3. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
 4. Information: There are updates for 2 dependencie(s):
    - mocha-logger      ^1.0.7  →   ^1.0.8
-   - node-tado-client  ^0.9.3  →  ^0.17.1
+   - node-tado-client  ^0.9.3  →  ^0.18.0
 
 
 ### [MMM-TAF by imperian](https://github.com/imperian/MMM-TAF)
@@ -9069,6 +9268,21 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
 ### [MMM-Temperature by Tom-Hirschberger](https://github.com/Tom-Hirschberger/MMM-Temperature)
 
 1. Recommendation: Replace eslintrc by new flat config.
+2. ESLint issues:
+   - MMM-Temperature.js: Line 1, Column 1: 'Temperature' is not a valid configuration for a global (use 'readonly', 'writable', or 'off') (rule: None)
+   - MMM-Temperature.js: Line 3, Column 1: '/*' is defined but never used. (rule: no-unused-vars)
+   - MMM-Temperature.js: Line 3, Column 4: 'MagicMirror²' is defined but never used. (rule: no-unused-vars)
+   - MMM-Temperature.js: Line 4, Column 2: '*' is defined but never used. (rule: no-unused-vars)
+   - MMM-Temperature.js: Line 6, Column 4: 'By' is defined but never used. (rule: no-unused-vars)
+   - MMM-Temperature.js: Line 6, Column 7: 'Tom' is defined but never used. (rule: no-unused-vars)
+   - MMM-Temperature.js: Line 6, Column 11: 'Hirschberger' is defined but never used. (rule: no-unused-vars)
+   - MMM-Temperature.js: Line 7, Column 4: 'MIT' is defined but never used. (rule: no-unused-vars)
+   - MMM-Temperature.js: Line 7, Column 8: 'Licensed.' is defined but never used. (rule: no-unused-vars)
+   - examples/MQTT/bme280OnESP8266MQTT/MMM-MQTTbridge.config.js: Line 3, Column 12: Parsing error: Unexpected token : (rule: None)
+   - examples/MQTT/bme280OnESP8266MQTT/MMM-Temperature.config.js: Line 3, Column 12: Parsing error: Unexpected token : (rule: None)
+   - node_helper.js: Line 9, Column 7: 'fs' is assigned a value but never used. (rule: no-unused-vars)
+   - node_helper.js: Line 90, Column 22: 'err' is defined but never used. (rule: no-unused-vars)
+
 
 ### [MMM-Template by Dennis-Rosenbaum](https://github.com/Dennis-Rosenbaum/MMM-Template)
 
@@ -9176,6 +9390,12 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
 ### [MMM-TheSpaceDevs by AlexMNet](https://github.com/AlexMNet/MMM-TheSpaceDevs)
 
 1. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
+2. ESLint issues:
+   - MMM-TheSpaceDevs.js: Line 112, Column 11: 'infoColor' is assigned a value but never used. (rule: no-unused-vars)
+   - helpers.js: Line 1, Column 7: 'formatLaunchWindow' is assigned a value but never used. (rule: no-unused-vars)
+   - helpers.js: Line 21, Column 7: 'formatDate' is assigned a value but never used. (rule: no-unused-vars)
+   - helpers.js: Line 36, Column 7: 'getLocationIds' is assigned a value but never used. (rule: no-unused-vars)
+
 
 ### [MMM-Thingiverse by appdevelopmentandsuch](https://github.com/appdevelopmentandsuch/MMM-Thingiverse)
 
@@ -9427,6 +9647,13 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
 ### [MMM-transitfeed by bnitkin](https://github.com/bnitkin/MMM-transitfeed)
 
 1. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
+2. ESLint issues:
+   - node_helper.js: Line 18, Column 63: Unused eslint-disable directive (no problems were reported). (rule: None)
+   - node_helper.js: Line 41, Column 34: Unable to resolve path to module 'gtfs'. (rule: import/no-unresolved)
+   - node_helper.js: Line 78, Column 22: Read-only global 'stop' should not be modified. (rule: no-global-assign)
+   - node_helper.js: Line 95, Column 25: '_stop_id' is assigned a value but never used. (rule: no-unused-vars)
+   - node_helper.js: Line 96, Column 29: '_route_id' is assigned a value but never used. (rule: no-unused-vars)
+
 
 ### [MMM-TranslatedMessages by ahmedwab](https://github.com/ahmedwab/MMM-TranslatedMessages)
 
@@ -9886,6 +10113,15 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
 6. Typo: Found `Magic Mirror` in file `package.json`: Replace it with `MagicMirror²`.
 7. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
 
+### [MMM-VoiceCompanion by LeonardSEO](https://github.com/LeonardSEO/MMM-VoiceCompanion)
+
+1. ESLint issues:
+   - MMM-VoiceCompanion.js: Line 78, Column 50: 'payload' is defined but never used. (rule: no-unused-vars)
+   - MMM-VoiceCompanion.js: Line 78, Column 59: 'sender' is defined but never used. (rule: no-unused-vars)
+   - node_helper.js: Line 190, Column 51: 'stdout' is defined but never used. (rule: no-unused-vars)
+   - node_helper.js: Line 190, Column 59: 'stderr' is defined but never used. (rule: no-unused-vars)
+
+
 ### [MMM-Volume by Anonym-tsk](https://github.com/Anonym-tsk/MMM-Volume)
 
 1. `package.json` issue: No description
@@ -10161,10 +10397,11 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
 ### [MMM-Webuntis by HeikoGr](https://github.com/HeikoGr/MMM-Webuntis)
 
 1. Recommendation: No lint script found in package.json. It is recommended to add one.
-2. Information: There are updates for 3 dependencie(s):
-   - @eslint/js   ^9.12.0  →   ^9.13.0
-   - eslint       ^9.12.0  →   ^9.13.0
-   - globals     ^15.10.0  →  ^15.11.0
+2. ESLint issues:
+   - MMM-Webuntis.js: Line 202, Column 48: 'payload' is defined but never used. (rule: no-unused-vars)
+   - MMM-Webuntis.js: Line 205, Column 9: 'timer' is assigned a value but never used. (rule: no-unused-vars)
+   - node_helper.js: Line 6, Column 7: 'Log' is assigned a value but never used. (rule: no-unused-vars)
+   - node_helper.js: Line 54, Column 10: 'response' is defined but never used. (rule: no-unused-vars)
 
 
 ### [MMM-WebView by Iketaki](https://github.com/Iketaki/MMM-WebView)
@@ -10177,6 +10414,9 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
 ### [MMM-weconnectid by NikolasRupp](https://github.com/NikolasRupp/MMM-weconnectid)
 
 1. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
+2. ESLint issues:
+   - node_helper.js: Line 3, Column 7: 'once' is assigned a value but never used. (rule: no-unused-vars)
+
 
 ### [MMM-WeeklySchedule by pinsdorf](https://github.com/pinsdorf/MMM-WeeklySchedule)
 
@@ -10520,7 +10760,7 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
    - eslint                    ^8.57.0  →  ^9.13.0
    - eslint-plugin-import      ^2.29.1  →  ^2.31.0
    - glob                      ^10.4.2  →  ^11.0.0
-   - uuid                      ^10.0.0  →  ^11.0.1
+   - uuid                      ^10.0.0  →  ^11.0.2
 
 2.  WARN  eslint@8.57.0: 2024-02-23T20:39:43.282Z
 deprecated: This version is no longer supported. Please see https://eslint.org/version-support for other options.

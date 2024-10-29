@@ -177,7 +177,7 @@
       "trashcollection"
     ],
     "image": "AfvalwijzerScreenshot.jpg",
-    "defaultSortWeight": 0,
+    "defaultSortWeight": 1,
     "lastCommit": "2024-10-09T17:55:17+02:00"
   },
   {
@@ -357,7 +357,7 @@
       "alert"
     ],
     "image": "screenshot-MMM-AlertExt.jpg",
-    "defaultSortWeight": 0,
+    "defaultSortWeight": 1,
     "lastCommit": "2024-03-06T16:03:02+01:00"
   },
   {
@@ -638,7 +638,7 @@
       "aqi"
     ],
     "image": "screenshots-screenshot_01.jpg",
-    "defaultSortWeight": 0,
+    "defaultSortWeight": 1,
     "lastCommit": "2024-04-04T09:45:43+01:00"
   },
   {
@@ -1733,7 +1733,7 @@
       "buttons"
     ],
     "image": "symbolization.jpg",
-    "defaultSortWeight": 0,
+    "defaultSortWeight": 1,
     "lastCommit": "2024-10-22T10:17:52+02:00"
   },
   {
@@ -1784,7 +1784,7 @@
     ],
     "image": "docs-Configuration-Views-legend-full-example.jpg",
     "defaultSortWeight": -1,
-    "lastCommit": "2024-08-27T22:03:42+02:00"
+    "lastCommit": "2024-10-29T01:14:15+01:00"
   },
   {
     "name": "MMM-CalendarExt3",
@@ -2483,7 +2483,7 @@
       "sensors"
     ],
     "image": "examples-bash-curl.jpg",
-    "defaultSortWeight": 0,
+    "defaultSortWeight": 1,
     "lastCommit": "2024-08-21T13:27:58+02:00"
   },
   {
@@ -2579,7 +2579,7 @@
       "customelementtime"
     ],
     "image": "screenshot.jpg",
-    "defaultSortWeight": 1,
+    "defaultSortWeight": 2,
     "lastCommit": "2024-08-09T10:21:40+02:00"
   },
   {
@@ -4148,7 +4148,7 @@
       "energymonitor"
     ],
     "image": "assets-screenshot-energy-monitor.jpg",
-    "defaultSortWeight": 0,
+    "defaultSortWeight": 1,
     "lastCommit": "2024-10-09T22:29:26+02:00"
   },
   {
@@ -4567,7 +4567,7 @@
       "norwegian"
     ],
     "image": "screenshot.jpg",
-    "defaultSortWeight": 1,
+    "defaultSortWeight": 2,
     "lastCommit": "2024-09-14T08:26:30+02:00"
   },
   {
@@ -5044,7 +5044,7 @@
       "time"
     ],
     "image": "example.jpg",
-    "defaultSortWeight": 0,
+    "defaultSortWeight": 1,
     "lastCommit": "2024-10-11T11:50:19+02:00"
   },
   {
@@ -6052,7 +6052,7 @@
       "spreadsheet"
     ],
     "image": "screenshots-Orders_Custom.jpg",
-    "defaultSortWeight": 0,
+    "defaultSortWeight": 1,
     "lastCommit": "2024-10-25T22:47:10-04:00"
   },
   {
@@ -8188,6 +8188,7 @@
     "description": "Displays the Last.fm scrobble currently playing. Supports Spotify, YouTube, Tidal, SoundCloud, MixCloud and <a target=\"_blank\" href=\"https://www.last.fm/about/trackmymusic\">many others</a>.",
     "issues": true,
     "stars": 5,
+    "license": "NOASSERTION",
     "tags": [
       "spotify",
       "last.fm",
@@ -8200,7 +8201,7 @@
       "bandcamp",
       "pandora"
     ],
-    "defaultSortWeight": 3,
+    "defaultSortWeight": 4,
     "lastCommit": "2024-10-18T15:49:25+02:00"
   },
   {
@@ -8292,7 +8293,7 @@
       "mqtt"
     ],
     "image": "screenshots-led-control-all-options.jpg",
-    "defaultSortWeight": 1,
+    "defaultSortWeight": 2,
     "lastCommit": "2023-11-24T19:37:50+01:00"
   },
   {
@@ -8402,7 +8403,7 @@
     "maintainerURL": "",
     "description": "Displays current and upcoming pro matches in different e-sport games from Liquipedia (dota2, cs, lol etc).",
     "issues": true,
-    "stars": 1,
+    "stars": 2,
     "license": "MIT",
     "image": "screenshot.jpg",
     "defaultSortWeight": 6,
@@ -8790,7 +8791,7 @@
       "public transport"
     ],
     "image": ".github-example.jpg",
-    "defaultSortWeight": 1,
+    "defaultSortWeight": 2,
     "lastCommit": "2024-09-20T13:45:00+02:00"
   },
   {
@@ -9301,7 +9302,7 @@
       "french"
     ],
     "image": "screenshot.jpg",
-    "defaultSortWeight": 1,
+    "defaultSortWeight": 2,
     "lastCommit": "2024-10-24T23:34:42+02:00"
   },
   {
@@ -10114,7 +10115,7 @@
       "astronomy"
     ],
     "image": "images-2023-09-15-example-moons.jpg",
-    "defaultSortWeight": 0,
+    "defaultSortWeight": 1,
     "lastCommit": "2024-09-09T21:52:01-04:00"
   },
   {
@@ -10355,7 +10356,7 @@
       "mp3"
     ],
     "image": "examples-initialScreen.jpg",
-    "defaultSortWeight": 1,
+    "defaultSortWeight": 2,
     "lastCommit": "2024-08-10T18:54:04+02:00"
   },
   {
@@ -10852,7 +10853,7 @@
       "mysql"
     ],
     "image": "screenshot.jpg",
-    "defaultSortWeight": 0,
+    "defaultSortWeight": 1,
     "lastCommit": "2024-05-12T11:43:05+02:00"
   },
   {
@@ -11491,7 +11492,7 @@
       "news"
     ],
     "image": "screenshot1.jpg",
-    "defaultSortWeight": 0,
+    "defaultSortWeight": 1,
     "lastCommit": "2024-09-29T13:44:39+02:00"
   },
   {
@@ -12272,7 +12273,7 @@
     "maintainer": "KristjanESPERANTO",
     "maintainerURL": "",
     "description": "Display current and forecast weather based on the Openweathermap OneCall API data with alternative formatting.",
-    "issues": false,
+    "issues": true,
     "stars": 3,
     "license": "MIT",
     "tags": [
@@ -12597,7 +12598,7 @@
       "forecast"
     ],
     "image": "screenshots-MMM-OpenWeatherMapForecast.jpg",
-    "defaultSortWeight": 0,
+    "defaultSortWeight": 1,
     "lastCommit": "2024-10-11T11:50:40+02:00"
   },
   {
@@ -13500,7 +13501,7 @@
       "smart home"
     ],
     "image": "MMM-Plenticore.jpg",
-    "defaultSortWeight": 1,
+    "defaultSortWeight": 2,
     "lastCommit": "2024-10-03T21:07:26+02:00"
   },
   {
@@ -14009,7 +14010,7 @@
       "brandenburg"
     ],
     "image": "img-MMM-PublicTransport_screenshot.jpg",
-    "defaultSortWeight": 0,
+    "defaultSortWeight": 1,
     "lastCommit": "2024-10-07T00:56:57+02:00"
   },
   {
@@ -14020,7 +14021,7 @@
     "maintainer": "KristjanESPERANTO",
     "maintainerURL": "",
     "description": "Displays departure information for public transportation in Germany and some other European countries. The <a target=\"_blank\" href=\"https://github.com/public-transport/hafas-client\">hafas-client</a> is used to query the information. The interface of the Deutsche Bahn is used as standard, this includes most of the local networks with buses, trams, etc. However, <a target=\"_blank\" href=\"https://github.com/public-transport/hafas-client/blob/main/p/readme.md\">other hafas interfaces</a> can also be used.",
-    "issues": false,
+    "issues": true,
     "stars": 20,
     "license": "MIT",
     "tags": [
@@ -14029,7 +14030,7 @@
     ],
     "image": "img-Goerdelerring_all.jpg",
     "defaultSortWeight": 1,
-    "lastCommit": "2024-10-22T23:41:13+02:00"
+    "lastCommit": "2024-10-29T00:52:51+01:00"
   },
   {
     "name": "MMM-PublicTransportVVO",
@@ -14325,7 +14326,7 @@
       "clouds"
     ],
     "image": "img-example.jpg",
-    "defaultSortWeight": -1,
+    "defaultSortWeight": 0,
     "lastCommit": "2024-08-28T20:10:53+02:00"
   },
   {
@@ -14441,7 +14442,7 @@
       "quotes"
     ],
     "image": "screen-01-quote_apex.jpg",
-    "defaultSortWeight": 1,
+    "defaultSortWeight": 2,
     "lastCommit": "2024-09-05T01:16:14+02:00"
   },
   {
@@ -15011,7 +15012,7 @@
       "trash"
     ],
     "image": "MMM-ROVA-trashcalendar.jpg",
-    "defaultSortWeight": 1,
+    "defaultSortWeight": 2,
     "lastCommit": "2024-10-21T01:25:36+02:00"
   },
   {
@@ -16394,9 +16395,13 @@
     "issues": true,
     "stars": 44,
     "license": "MIT",
+    "tags": [
+      "sonos",
+      "music"
+    ],
     "image": ".github-preview.jpg",
-    "defaultSortWeight": 6,
-    "lastCommit": "2024-02-24T02:12:22+00:00"
+    "defaultSortWeight": 5,
+    "lastCommit": "2024-10-28T18:26:05+01:00"
   },
   {
     "name": "MMM-Sonos",
@@ -17307,7 +17312,7 @@
       "sht31d"
     ],
     "image": "examples-htu21-htu21.jpg",
-    "defaultSortWeight": 1,
+    "defaultSortWeight": 2,
     "lastCommit": "2024-08-21T13:31:17+02:00"
   },
   {
@@ -17516,7 +17521,7 @@
       "space"
     ],
     "image": "detail_view.jpg",
-    "defaultSortWeight": 0,
+    "defaultSortWeight": 1,
     "lastCommit": "2024-09-08T14:06:50-07:00"
   },
   {
@@ -17940,7 +17945,7 @@
       "subway"
     ],
     "image": "res-screenshot.jpg",
-    "defaultSortWeight": 0,
+    "defaultSortWeight": 1,
     "lastCommit": "2024-07-09T10:26:57-04:00"
   },
   {
@@ -18768,7 +18773,7 @@
     "maintainer": "LeonardSEO",
     "maintainerURL": "",
     "description": "A voice-activated assistant module using OpenAI's Whisper for speech recognition and GPT for natural language processing. This module allows users to interact with their MagicMirror using voice commands, enhancing the smart mirror experience with AI-powered conversations and information retrieval.",
-    "issues": false,
+    "issues": true,
     "stars": 3,
     "license": "MIT",
     "tags": [
@@ -18780,7 +18785,7 @@
       "porcupine"
     ],
     "image": "screenshot-logo.jpg",
-    "defaultSortWeight": -1,
+    "defaultSortWeight": 0,
     "lastCommit": "2024-09-10T21:00:41+02:00"
   },
   {
@@ -19303,7 +19308,7 @@
     ],
     "image": "screenshot.jpg",
     "defaultSortWeight": 2,
-    "lastCommit": "2024-10-13T11:07:56+02:00"
+    "lastCommit": "2024-10-28T21:53:34+01:00"
   },
   {
     "name": "MMM-WebView",
@@ -19337,7 +19342,7 @@
       "vw"
     ],
     "image": "git-normal_screenshot.jpg",
-    "defaultSortWeight": 0,
+    "defaultSortWeight": 1,
     "lastCommit": "2024-05-21T16:21:44+02:00"
   },
   {
