@@ -2,6 +2,7 @@
   "version": "0.2",
   "language": "en",
   "words": [
+    "anniversarymodule",
     "axios",
     "bergfex",
     "bugsounet",
@@ -11,6 +12,7 @@
     "hoster",
     "Kristjan",
     "magicmirror",
+    "marcomerens",
     "mmpm",
     "MMRIZE",
     "NOASSERTION",
@@ -18,7 +20,8 @@
     "openweathermap",
     "ptrbld",
     "ratp",
-    "smarthome"
+    "smarthome",
+    "testconfig"
   ],
   "ignorePaths": [
     "node_modules/",
