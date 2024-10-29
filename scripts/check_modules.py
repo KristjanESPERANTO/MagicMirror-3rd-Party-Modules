@@ -6,6 +6,7 @@ from datetime import datetime, timezone
 import json
 import subprocess
 import deprecation_check
+import eslint_checks
 
 def search_in_file(path, search_string):
     """Function to search a string in a file."""
@@ -545,6 +546,14 @@ def check_dependency_updates(module, module_directory_path):
         deprecation = deprecation_check.check_deprecated_packages(module_directory_path)
         if deprecation:
             module["issues"].append(deprecation)
+
+    if len(module["issues"]) in [0, 1] and package_json.is_file():
+        eslint_issues = eslint_checks.eslint_check(module_directory_path)
+        if eslint_issues:
+            eslint_issues_text = "ESLint issues:\n"
+            for issue in eslint_issues:
+                eslint_issues_text += f"   - {issue}\n"
+            module["issues"].append(eslint_issues_text)
 
 def check_branch_name(module, module_directory_path):
     """Function to check the branch name."""
