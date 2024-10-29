@@ -38,7 +38,7 @@
     "prepare": "husky",
     "test": "npm run lint",
     "leaveMenu": "",
-    "automated": "git fetch origin main && git reset --hard origin/main && git pull && npm run all && python3 scripts/upload.py"
+    "automated": "git fetch origin main && git reset --hard origin/main && git pull && npm i && npm run all && python3 scripts/upload.py"
   },
   "lint-staged": {
     "*.js": "eslint --cache --fix",
