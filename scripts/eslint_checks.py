@@ -22,7 +22,9 @@ def eslint_check(directory_path):
         for entry in result_dict:
             file = entry["filePath"].split(str(directory_path))[1].strip("/")
             for message in entry["messages"]:
-                issue_list.append(f"{file}: Line {message['line']}, Column {message['column']}: {message['message']} (rule: {message['ruleId']})")
+                if "Definition for rule" not in message['message']:
+                    # print(f"{file}: Line {message['line']}, Column {message['column']}: {message['message']} (rule: {message['ruleId']})")
+                    issue_list.append(f"{file}: Line {message['line']}, Column {message['column']}: {message['message']} (rule: {message['ruleId']})")
         if len(issue_list) == 0:
             # print("No ESLint issues found.")
             return False
@@ -32,4 +34,4 @@ def eslint_check(directory_path):
         print(f"Error: {error}")
 
 
-# eslint_check("modules/anniversarymodule-----marcomerens")
+# eslint_check("modules/MMM-CalendarExt2-----MMM-CalendarExt2")

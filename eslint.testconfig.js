@@ -20,9 +20,29 @@ const config = [
       },
       "sourceType": "commonjs"
     },
+    "linterOptions": {
+      "reportUnusedDisableDirectives": "off"
+    },
     "rules": {
+      "no-prototype-builtins": "off",
       "no-redeclare": "off",
       "no-undef": "off"
+    }
+  },
+  {
+    "files": ["**/*.mjs"],
+    "languageOptions": {
+      "ecmaVersion": "latest",
+      "globals": {
+        ...globals.node
+      },
+      "sourceType": "module"
+    },
+    "linterOptions": {
+      "reportUnusedDisableDirectives": "off"
+    },
+    "rules": {
+      "import/no-unresolved": "off"
     }
   }
 ];
