@@ -22,7 +22,7 @@ def check_deprecated_packages(directory_path):
             check=False
         )
 
-        deprecated_packages = result.stdout.decode()
+        deprecated_packages = result.stderr.decode()
 
         if "There are no deprecated dependencies." in deprecated_packages:
             # print("No deprecated packages found.")
