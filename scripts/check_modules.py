@@ -253,7 +253,7 @@ def check_modules():
 
         if "outdated" in module:
             module["defaultSortWeight"] += 900
-            module["issues"] = True
+            module["issues"] = False # Set this to False to prevent showing dev hints on the website..
             stats["issueCounter"] += 1
             stats["modulesWithIssuesCounter"] += 1
 
