@@ -1,16 +1,16 @@
 # Result of the module analysis
 
-Last update: 2024-10-29T18:59:30+01:00
+Last update: 2024-11-13T21:14:04+01:00
 
 ## Statistics
 
 |                      | number   |
 |:---------------------|:--------:|
-| modules analyzed     |   1195   |
-| maintainer           |    640   |
-| modules with issues  |   1190   |
-| issues               |   6906   |
-| modules at github    |   1085   |
+| modules analyzed     |   1199   |
+| maintainer           |    645   |
+| modules with issues  |   1199   |
+| issues               |   6929   |
+| modules at github    |   1090   |
 | modules at gitlab    |     10   |
 | modules at bitbucket |      1   |
 
@@ -99,13 +99,10 @@ Last update: 2024-10-29T18:59:30+01:00
 ### [MMM-Afvalwijzer by gertperdZA](https://github.com/gertperdZA/MMM-Afvalwijzer)
 
 1. Information: There are updates for 4 dependencie(s):
-   - @eslint/js                ^9.10.0  →   ^9.13.0
-   - @stylistic/eslint-plugin   ^2.8.0  →    ^2.9.0
-   - eslint                    ^9.10.0  →   ^9.13.0
-   - globals                   ^15.9.0  →  ^15.11.0
-
-2. ESLint issues:
-   - node_helper.js: Line 80, Column 13: Unused eslint-disable directive (no problems were reported from 'no-return-assign'). (rule: None)
+   - @eslint/js                ^9.10.0  →   ^9.14.0
+   - @stylistic/eslint-plugin   ^2.8.0  →   ^2.10.1
+   - eslint                    ^9.10.0  →   ^9.14.0
+   - globals                   ^15.9.0  →  ^15.12.0
 
 
 ### [MMM-air-raid-monitor-ua by PavlenkoM](https://github.com/PavlenkoM/MMM-air-raid-monitor-ua)
@@ -180,20 +177,6 @@ Last update: 2024-10-29T18:59:30+01:00
 4. Recommendation: The README seems not to have an update instruction (the word 'update' is missing). Please add one.
 5. Typo: Found `MagicMirror2` in file `package.json`: Replace it with `MagicMirror²`.
 6. Recommendation: Replace eslintrc by new flat config.
-
-### [EXT-Alert by bugsounet](https://github.com/bugsounet/EXT-Alert)
-
-1. Information: There are updates for 7 dependencie(s):
-   - @eslint/js                 ^8.57.0  →   ^9.13.0
-   - @stylistic/eslint-plugin    ^1.8.1  →    ^2.9.0
-   - esbuild                    ^0.22.0  →   ^0.24.0
-   - eslint                     ^8.57.0  →   ^9.13.0
-   - eslint-plugin-import       ^2.29.1  →   ^2.31.0
-   - glob                       ^10.4.2  →   ^11.0.0
-   - sweetalert2               ^11.12.1  →  ^11.14.4
-
-2.  WARN  eslint@8.57.0: 2024-02-23T20:39:43.282Z
-deprecated: This version is no longer supported. Please see https://eslint.org/version-support for other options.
 
 ### [MMM-AlertExt by MMRIZE](https://github.com/MMRIZE/MMM-AlertExt)
 
@@ -500,22 +483,22 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
 
 ### [EXT-Background by bugsounet](https://github.com/bugsounet/EXT-Background)
 
-1. Information: There are updates for 6 dependencie(s):
-   - @eslint/js                ^8.57.0  →  ^9.13.0
-   - @stylistic/eslint-plugin   ^1.8.1  →   ^2.9.0
-   - esbuild                   ^0.22.0  →  ^0.24.0
-   - eslint                    ^8.57.0  →  ^9.13.0
-   - eslint-plugin-import      ^2.29.1  →  ^2.31.0
-   - glob                      ^10.4.2  →  ^11.0.0
+1. Information: There are updates for 3 dependencie(s):
+   - @stylistic/eslint-plugin  ^2.10.0  →  ^2.10.1
+   - eslint                    ^9.13.0  →  ^9.14.0
+   - glob                      ^10.4.5  →  ^11.0.0
 
-2.  WARN  eslint@8.57.0: 2024-02-23T20:39:43.282Z
-deprecated: This version is no longer supported. Please see https://eslint.org/version-support for other options.
+2. ESLint issues:
+   - installer/minify.js: Line 47, Column 7: 'error' is assigned a value but never used. (rule: no-unused-vars)
+   - installer/minify.js: Line 64, Column 14: 'e' is defined but never used. (rule: no-unused-vars)
+   - node_helper.js: Line 9, Column 45: 'payload' is defined but never used. (rule: no-unused-vars)
+
 
 ### [MMM-BackgroundSlideshow by darickc](https://github.com/darickc/MMM-BackgroundSlideshow)
 
 1. Deprecated: Found `omxplayer` in file `node_helper.js`: Try to replace it with `vlc`.
 2. Information: There are updates for 1 dependencie(s):
-   - eslint  ^8.57.0  →  ^9.13.0
+   - eslint  ^8.57.0  →  ^9.14.0
 
 
 ### [MMM-BartTimes by falafel2222](https://github.com/falafel2222/MMM-BartTimes)
@@ -767,17 +750,17 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
    - @rollup/plugin-commonjs             ^25.0.7  →  ^28.0.1
    - @rollup/plugin-node-resolve         ^15.2.3  →  ^15.3.0
    - @rollup/plugin-typescript           ^11.1.6  →  ^12.1.1
-   - @stylistic/eslint-plugin             ^1.6.2  →   ^2.9.0
+   - @stylistic/eslint-plugin             ^1.6.2  →  ^2.10.1
    - @types/express                     ^4.17.11  →   ^5.0.0
    - @types/magicmirror-module           ^2.16.0  →  ^2.16.5
-   - @types/node                       ^14.14.22  →  ^22.8.4
-   - @typescript-eslint/eslint-plugin     ^7.0.2  →  ^8.12.2
-   - @typescript-eslint/parser            ^7.0.2  →  ^8.12.2
+   - @types/node                       ^14.14.22  →  ^22.9.0
+   - @typescript-eslint/eslint-plugin     ^7.0.2  →  ^8.14.0
+   - @typescript-eslint/parser            ^7.0.2  →  ^8.14.0
    - bosch-smart-home-bridge              ^1.4.1  →   ^1.6.0
-   - eslint                              ^8.57.0  →  ^9.13.0
+   - eslint                              ^8.57.0  →  ^9.14.0
    - eslint-plugin-prettier               ^5.1.3  →   ^5.2.1
    - prettier                             ^3.2.5  →   ^3.3.3
-   - rollup                               ^4.9.6  →  ^4.24.3
+   - rollup                               ^4.9.6  →  ^4.26.0
    - rollup-plugin-banner2                ^1.2.2  →   ^1.3.0
    - rxjs                                 ^7.5.5  →   ^7.8.1
    - typescript                           ^5.3.3  →   ^5.6.3
@@ -844,16 +827,20 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
 
 ### [EXT-Browser by bugsounet](https://github.com/bugsounet/EXT-Browser)
 
-1. Information: There are updates for 6 dependencie(s):
-   - @eslint/js                ^8.56.0  →  ^9.13.0
-   - @stylistic/eslint-plugin   ^1.8.1  →   ^2.9.0
-   - esbuild                   ^0.22.0  →  ^0.24.0
-   - eslint                    ^8.56.0  →  ^9.13.0
-   - eslint-plugin-import      ^2.29.1  →  ^2.31.0
-   - glob                      ^10.4.2  →  ^11.0.0
+1. Information: There are updates for 3 dependencie(s):
+   - @stylistic/eslint-plugin   ^2.9.0  →  ^2.10.1
+   - eslint                    ^9.13.0  →  ^9.14.0
+   - glob                      ^10.4.5  →  ^11.0.0
 
-2.  WARN  eslint@8.57.0: 2024-02-23T20:39:43.282Z
-deprecated: This version is no longer supported. Please see https://eslint.org/version-support for other options.
+2. ESLint issues:
+   - EXT-Browser.js: Line 8, Column 18: 'args' is defined but never used. (rule: no-unused-vars)
+   - components/BrowserDisplay.js: Line 1, Column 7: 'BrowserDisplay' is defined but never used. (rule: no-unused-vars)
+   - installer/minify.js: Line 47, Column 7: 'error' is assigned a value but never used. (rule: no-unused-vars)
+   - installer/minify.js: Line 64, Column 14: 'e' is defined but never used. (rule: no-unused-vars)
+   - node_helper.js: Line 5, Column 5: 'log' is assigned a value but never used. (rule: no-unused-vars)
+   - node_helper.js: Line 5, Column 15: 'args' is defined but never used. (rule: no-unused-vars)
+   - node_helper.js: Line 8, Column 37: 'payload' is defined but never used. (rule: no-unused-vars)
+
 
 ### [MMM-Bubi by balassy](https://github.com/balassy/MMM-Bubi)
 
@@ -926,9 +913,8 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
 ### [MMM-Buttons by MarcLandis](https://github.com/MarcLandis/MMM-Buttons)
 
 1. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
-2. ESLint issues:
-   - node_helper.js: Line 78, Column 18: 'e' is defined but never used. (rule: no-unused-vars)
-   - node_helper.js: Line 78, Column 21: Empty block statement. (rule: no-empty)
+2. Information: There are updates for 1 dependencie(s):
+   - @electron/rebuild  ^3.7.0  →  ^3.7.1
 
 
 ### [MMM-Bysykkel by JonasTriki](https://github.com/JonasTriki/MMM-Bysykkel)
@@ -952,26 +938,10 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
 
 ### [MMM-CalendarExt2 by MMM-CalendarExt2](https://github.com/MMM-CalendarExt2/MMM-CalendarExt2)
 
-1. ESLint issues:
-   - CALEXT2_View.js: Line 290, Column 3: Unused eslint-disable directive (no problems were reported from 'class-methods-use-this'). (rule: None)
-   - CALEXT2_View.js: Line 295, Column 3: Unused eslint-disable directive (no problems were reported from 'class-methods-use-this'). (rule: None)
-   - CALEXT2_ViewAgenda.js: Line 1, Column 1: Unused eslint-disable directive (no problems were reported from 'no-undef'). (rule: None)
-   - CALEXT2_ViewAgenda.js: Line 14, Column 3: Unused eslint-disable directive (no problems were reported from 'class-methods-use-this'). (rule: None)
-   - CALEXT2_ViewCell.js: Line 70, Column 3: Unused eslint-disable directive (no problems were reported from 'class-methods-use-this'). (rule: None)
-   - CALEXT2_ViewCell.js: Line 113, Column 3: Unused eslint-disable directive (no problems were reported from 'class-methods-use-this'). (rule: None)
-   - CALEXT2_ViewCurrent.js: Line 1, Column 1: Unused eslint-disable directive (no problems were reported from 'no-undef'). (rule: None)
-   - CALEXT2_ViewMonthly.js: Line 1, Column 1: Unused eslint-disable directive (no problems were reported from 'no-undef'). (rule: None)
-   - CALEXT2_ViewPeriod.js: Line 1, Column 1: Unused eslint-disable directive (no problems were reported from 'no-undef'). (rule: None)
-   - CALEXT2_ViewUpcoming.js: Line 1, Column 1: Unused eslint-disable directive (no problems were reported from 'no-undef'). (rule: None)
-   - CALEXT2_ViewWeek.js: Line 1, Column 1: Unused eslint-disable directive (no problems were reported from 'no-undef'). (rule: None)
-   - CALEXT2_ViewWeekly.js: Line 1, Column 1: Unused eslint-disable directive (no problems were reported from 'no-undef'). (rule: None)
-   - CALEXT2_WeekSlot.js: Line 137, Column 11: Unused eslint-disable directive (no problems were reported from 'no-bitwise'). (rule: None)
-   - CALEXT2_WeekSlot.js: Line 141, Column 13: Unused eslint-disable directive (no problems were reported from 'no-bitwise' or 'operator-assignment'). (rule: None)
-   - MMM-CalendarExt2.js: Line 1, Column 1: Unused eslint-disable directive (no problems were reported from 'no-eval'). (rule: None)
-   - eslint.config.mjs: Line 3, Column 31: Unable to resolve path to module 'eslint-plugin-jsonc'. (rule: import/no-unresolved)
-   - node_helper.js: Line 14, Column 3: Unused eslint-disable directive (no problems were reported from 'no-empty-function'). (rule: None)
-   - node_helper.js: Line 156, Column 9: Unused eslint-disable directive (no problems were reported from 'no-eq-null' or 'eqeqeq'). (rule: None)
-   - node_helper.js: Line 220, Column 60: Unused eslint-disable directive (no problems were reported from 'no-new-func'). (rule: None)
+1. Information: There are updates for 3 dependencie(s):
+   - eslint-plugin-jsonc   ^2.16.0  →   ^2.18.1
+   - globals              ^15.11.0  →  ^15.12.0
+   - markdownlint-cli2     ^0.14.0  →   ^0.15.0
 
 
 ### [MMM-CalendarExt3 by MMRIZE](https://github.com/MMRIZE/MMM-CalendarExt3)
@@ -1093,6 +1063,12 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
 5. Recommendation: Found `require('https')` in file `node_helper.js`: Replace 'https' by 'node:https'.
 6. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
 
+### [MMM-Canteen by KristjanESPERANTO](https://github.com/KristjanESPERANTO/MMM-Canteen)
+
+1. Information: There are updates for 1 dependencie(s):
+   - cspell  ^8.15.7  →  ^8.16.0
+
+
 ### [MMM-Canvas by chase-cromwell](https://github.com/chase-cromwell/MMM-Canvas)
 
 1. There is no `package.json`. We need this file to gather information about the module for the module list page.
@@ -1112,6 +1088,12 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
    - moment          ^2.23.0  →  ^2.30.1
    - prettier         ^3.0.3  →   ^3.3.3
    - tsdav            ^2.0.3  →   ^2.1.2
+
+
+### [MMM-Carousel by shbatm](https://github.com/shbatm/MMM-Carousel)
+
+1. Information: There are updates for 1 dependencie(s):
+   - cspell  ^8.15.7  →  ^8.16.0
 
 
 ### [MMM-CECControl by nischi](https://github.com/nischi/MMM-CECControl)
@@ -1283,24 +1265,11 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
 
 ### [MMM-CommandToNotification by Tom-Hirschberger](https://github.com/Tom-Hirschberger/MMM-CommandToNotification)
 
-1. Recommendation: Replace eslintrc by new flat config.
-2. ESLint issues:
-   - MMM-CommandToNotification.js: Line 1, Column 1: 'CommandToNotification' is not a valid configuration for a global (use 'readonly', 'writable', or 'off') (rule: None)
-   - MMM-CommandToNotification.js: Line 3, Column 1: '/*' is defined but never used. (rule: no-unused-vars)
-   - MMM-CommandToNotification.js: Line 3, Column 4: 'MagicMirror²' is defined but never used. (rule: no-unused-vars)
-   - MMM-CommandToNotification.js: Line 4, Column 2: '*' is defined but never used. (rule: no-unused-vars)
-   - MMM-CommandToNotification.js: Line 6, Column 4: 'By' is defined but never used. (rule: no-unused-vars)
-   - MMM-CommandToNotification.js: Line 6, Column 7: 'Tom' is defined but never used. (rule: no-unused-vars)
-   - MMM-CommandToNotification.js: Line 6, Column 11: 'Hirschberger' is defined but never used. (rule: no-unused-vars)
-   - MMM-CommandToNotification.js: Line 7, Column 4: 'MIT' is defined but never used. (rule: no-unused-vars)
-   - MMM-CommandToNotification.js: Line 7, Column 8: 'Licensed.' is defined but never used. (rule: no-unused-vars)
-   - MMM-CommandToNotification.js: Line 23, Column 35: 'notification' is defined but never used. (rule: no-unused-vars)
-   - MMM-CommandToNotification.js: Line 23, Column 49: 'payload' is defined but never used. (rule: no-unused-vars)
-   - MMM-CommandToNotification.js: Line 24, Column 11: 'self' is assigned a value but never used. (rule: no-unused-vars)
-   - node_helper.js: Line 140, Column 20: 'testPath' is assigned to itself. (rule: no-self-assign)
-   - node_helper.js: Line 168, Column 23: 'err' is defined but never used. (rule: no-unused-vars)
-   - scripts/randomInteger.js: Line 21, Column 5: Do not use the '===' operator to compare against -0. (rule: no-compare-neg-zero)
-   - scripts/randomNumberJson.js: Line 21, Column 5: Do not use the '===' operator to compare against -0. (rule: no-compare-neg-zero)
+1. Information: There are updates for 4 dependencie(s):
+   - @eslint/js                 ^9.13.0  →   ^9.14.0
+   - @stylistic/eslint-plugin    ^2.9.0  →   ^2.10.1
+   - eslint                     ^9.13.0  →   ^9.14.0
+   - globals                   ^15.11.0  →  ^15.12.0
 
 
 ### [MMM-Config by sdetweil](https://github.com/sdetweil/MMM-Config)
@@ -1375,7 +1344,7 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
 
 1. Recommendation: No lint script found in package.json. It is recommended to add one.
 2. Information: There are updates for 3 dependencie(s):
-   - eslint    ^8.56.0  →  ^9.13.0
+   - eslint    ^8.56.0  →  ^9.14.0
    - moment    ^2.29.4  →  ^2.30.1
    - prettier   ^3.1.1  →   ^3.3.3
 
@@ -1502,7 +1471,7 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
 
 ### [MMM-CustomMessage by jpcaldwell30](https://github.com/jpcaldwell30/MMM-CustomMessage)
 
-1. Issues are not enabled in the GitHub repository. So users cannot report bugs. Please enable issues in your repo.
+1. Typo: Found `Magic Mirror` in file `MMM-CustomMessage.js`: Replace it with `MagicMirror²`.
 2. Recommendation: Found `XMLHttpRequest` in file `MMM-CustomMessage.js`: Replace it with built-in fetch.
 3. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
 
@@ -1756,12 +1725,10 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
 
 1. Recommendation: The README seems not to have an update instruction (the word 'update' is missing). Please add one.
 2. Recommendation: The README seems not to have an install instruction (the words 'install' or 'installation' are missing). Please add one.
-3. Information: There are updates for 6 dependencie(s):
-   - @eslint/js                ^8.57.1  →  ^9.13.0
-   - @stylistic/eslint-plugin   ^1.8.1  →   ^2.9.0
-   - @types/node               ^22.7.6  →  ^22.8.4
-   - eslint                    ^8.57.1  →  ^9.13.0
-   - eslint-plugin-import      ^2.29.1  →  ^2.31.0
+3. Information: There are updates for 4 dependencie(s):
+   - @electron/rebuild          ^3.7.0  →   ^3.7.1
+   - @stylistic/eslint-plugin   ^2.9.0  →  ^2.10.1
+   - eslint                    ^9.13.0  →  ^9.14.0
    - glob                      ^10.4.5  →  ^11.0.0
 
 
@@ -1830,7 +1797,7 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
 2. Recommendation: Found `"node-fetch"` in file `package.json`: Replace it with built-in fetch.
 3. Recommendation: Replace eslintrc by new flat config.
 4. Information: There are updates for 7 dependencie(s):
-   - eslint                  ^7.2.0  →  ^9.13.0
+   - eslint                  ^7.2.0  →  ^9.14.0
    - eslint-plugin-jasmine   ^4.1.1  →   ^4.2.2
    - karma                   ^6.3.2  →   ^6.4.4
    - karma-chrome-launcher   ^3.1.0  →   ^3.2.0
@@ -1990,6 +1957,12 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
 5. Recommendation: The README seems not to have an install instruction (the words 'install' or 'installation' are missing). Please add one.
 6. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
 
+### [MMM-EasyPix by KristjanESPERANTO](https://github.com/KristjanESPERANTO/MMM-EasyPix)
+
+1. Information: There are updates for 1 dependencie(s):
+   - cspell  ^8.15.7  →  ^8.16.0
+
+
 ### [MMM-Ecobee by parnic](https://github.com/parnic/MMM-Ecobee)
 
 1. Recommendation: Found `uses: actions/checkout@v3` in file `nodejs.yml`: Replace it with v4.
@@ -2059,13 +2032,14 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
 ### [MMM-EmbedURL by Tom-Hirschberger](https://github.com/Tom-Hirschberger/MMM-EmbedURL)
 
 1. Information: There are updates for 4 dependencie(s):
-   - @eslint/js                ^9.10.0  →   ^9.13.0
-   - @stylistic/eslint-plugin   ^2.8.0  →    ^2.9.0
-   - eslint                    ^9.10.0  →   ^9.13.0
-   - globals                   ^15.9.0  →  ^15.11.0
+   - @eslint/js                ^9.10.0  →   ^9.14.0
+   - @stylistic/eslint-plugin   ^2.8.0  →   ^2.10.1
+   - eslint                    ^9.10.0  →   ^9.14.0
+   - globals                   ^15.9.0  →  ^15.12.0
 
-2.  WARN  @iconify/iconify@3.1.1: 2023-06-22T08:45:25.335Z
-deprecated: no longer maintained, switch to modern iconify-icon web component
+2. ESLint issues:
+   - doc/configs/webcam-config.js: Line 3, Column 13: Parsing error: Unexpected token : (rule: None)
+
 
 ### [MMM-EmbedYoutube by nitpum](https://github.com/nitpum/MMM-EmbedYoutube)
 
@@ -2101,9 +2075,6 @@ deprecated: no longer maintained, switch to modern iconify-icon web component
 ### [MMM-EnergyMonitor by deg0nz](https://github.com/deg0nz/MMM-EnergyMonitor)
 
 1. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
-2. ESLint issues:
-   - MMM-EnergyMonitor.js: Line 64, Column 35: Do not access Object.prototype method 'hasOwnProperty' from target object. (rule: no-prototype-builtins)
-
 
 ### [MMM-EnphaseSolar by matt-thurling](https://github.com/matt-thurling/MMM-EnphaseSolar)
 
@@ -2119,8 +2090,8 @@ deprecated: no longer maintained, switch to modern iconify-icon web component
 
 1. Recommendation: Replace eslintrc by new flat config.
 2. Information: There are updates for 2 dependencie(s):
-   - @stylistic/eslint-plugin   ^1.5.4  →   ^2.9.0
-   - eslint                    ^8.56.0  →  ^9.13.0
+   - @stylistic/eslint-plugin   ^1.5.4  →  ^2.10.1
+   - eslint                    ^8.56.0  →  ^9.14.0
 
 
 ### [MMM-EnvCanada by CharlesMorris78](https://github.com/CharlesMorris78/MMM-EnvCanada)
@@ -2644,6 +2615,10 @@ deprecated: no longer maintained, switch to modern iconify-icon web component
 6. Recommendation: Found `new Date()` in file `node_helper.js`: Consider replacing it by `new Date(Date.now())`. It's helpful for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
 7. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
 
+### [MMM-Forum by KristjanESPERANTO](https://github.com/KristjanESPERANTO/MMM-Forum)
+
+1. `package.json` issue: No repository field.
+
 ### [MMM-FrameLight by RaspiManu](https://github.com/RaspiManu/MMM-FrameLight)
 
 1. Typo: Found `Magic Mirror` in file `MMM-FrameLight.js`: Replace it with `MagicMirror²`.
@@ -2657,10 +2632,10 @@ deprecated: no longer maintained, switch to modern iconify-icon web component
 
 1. Issues are not enabled in the GitHub repository. So users cannot report bugs. Please enable issues in your repo.
 2. Information: There are updates for 6 dependencie(s):
-   - @eslint/js                ^8.57.0  →  ^9.13.0
-   - @stylistic/eslint-plugin   ^1.8.1  →   ^2.9.0
+   - @eslint/js                ^8.57.0  →  ^9.14.0
+   - @stylistic/eslint-plugin   ^1.8.1  →  ^2.10.1
    - esbuild                   ^0.22.0  →  ^0.24.0
-   - eslint                    ^8.57.0  →  ^9.13.0
+   - eslint                    ^8.57.0  →  ^9.14.0
    - eslint-plugin-import      ^2.29.1  →  ^2.31.0
    - glob                      ^10.4.2  →  ^11.0.0
 
@@ -2669,15 +2644,6 @@ deprecated: no longer maintained, switch to modern iconify-icon web component
 
 1. Recommendation: Found `axios` in file `freebox.js`: Replace it with built-in fetch.
 2. Recommendation: Found `axios` in file `package.json`: Replace it with built-in fetch.
-3. Information: There are updates for 7 dependencie(s):
-   - @eslint/js                ^8.57.0  →  ^9.13.0
-   - @stylistic/eslint-plugin   ^1.8.1  →   ^2.9.0
-   - axios                      ^1.7.2  →   ^1.7.7
-   - esbuild                   ^0.22.0  →  ^0.24.0
-   - eslint                    ^8.57.0  →  ^9.13.0
-   - eslint-plugin-import      ^2.29.1  →  ^2.31.0
-   - glob                      ^10.4.2  →  ^11.0.0
-
 
 ### [MMM-FreeBox-Monitor by tataille](https://github.com/tataille/MMM-FreeBox-Monitor)
 
@@ -2696,16 +2662,17 @@ deprecated: no longer maintained, switch to modern iconify-icon web component
 
 ### [EXT-FreeboxTV by bugsounet](https://github.com/bugsounet/EXT-FreeboxTV)
 
-1. Information: There are updates for 6 dependencie(s):
-   - @eslint/js                ^8.57.0  →  ^9.13.0
-   - @stylistic/eslint-plugin   ^1.8.1  →   ^2.9.0
-   - esbuild                   ^0.22.0  →  ^0.24.0
-   - eslint                    ^8.57.0  →  ^9.13.0
-   - eslint-plugin-import      ^2.29.1  →  ^2.31.0
-   - glob                      ^10.4.2  →  ^11.0.0
+1. Information: There are updates for 3 dependencie(s):
+   - @stylistic/eslint-plugin   ^2.9.0  →  ^2.10.1
+   - eslint                    ^9.13.0  →  ^9.14.0
+   - glob                      ^10.4.5  →  ^11.0.0
 
-2.  WARN  eslint@8.57.0: 2024-02-23T20:39:43.282Z
-deprecated: This version is no longer supported. Please see https://eslint.org/version-support for other options.
+2. ESLint issues:
+   - EXT-FreeboxTV.js: Line 99, Column 9: Unexpected lexical declaration in case block. (rule: no-case-declarations)
+   - installer/minify.js: Line 47, Column 7: 'error' is assigned a value but never used. (rule: no-unused-vars)
+   - installer/minify.js: Line 64, Column 14: 'e' is defined but never used. (rule: no-unused-vars)
+   - node_helper.js: Line 10, Column 15: 'args' is defined but never used. (rule: no-unused-vars)
+
 
 ### [MMM-FrenchHoroscope by Amand-M](https://github.com/Amand-M/MMM-FrenchHoroscope)
 
@@ -2945,15 +2912,20 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
 ### [MMM-Glassy by bugsounet](https://github.com/bugsounet/MMM-Glassy)
 
 1. Information: There are updates for 6 dependencie(s):
-   - @eslint/js                ^8.57.0  →  ^9.13.0
-   - @stylistic/eslint-plugin   ^1.8.1  →   ^2.9.0
+   - @eslint/js                ^8.57.0  →  ^9.14.0
+   - @stylistic/eslint-plugin   ^1.8.1  →  ^2.10.1
    - esbuild                   ^0.22.0  →  ^0.24.0
-   - eslint                    ^8.57.0  →  ^9.13.0
+   - eslint                    ^8.57.0  →  ^9.14.0
    - eslint-plugin-import      ^2.29.1  →  ^2.31.0
    - glob                      ^10.4.2  →  ^11.0.0
 
-2.  WARN  eslint@8.57.0: 2024-02-23T20:39:43.282Z
-deprecated: This version is no longer supported. Please see https://eslint.org/version-support for other options.
+2. ESLint issues:
+   - MMM-Glassy.js: Line 36, Column 39: 'payload' is defined but never used. (rule: no-unused-vars)
+   - MMM-Glassy.js: Line 36, Column 48: 'sender' is defined but never used. (rule: no-unused-vars)
+   - eslint.config.js: Line 2, Column 18: 'eslintConfigs' is assigned a value but never used. (rule: no-unused-vars)
+   - installer/minify.js: Line 47, Column 7: 'error' is assigned a value but never used. (rule: no-unused-vars)
+   - installer/minify.js: Line 64, Column 14: 'e' is defined but never used. (rule: no-unused-vars)
+
 
 ### [MMM-Globe by Eunanibus](https://github.com/Eunanibus/MMM-Globe)
 
@@ -2983,11 +2955,9 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
 ### [MMM-GmailFeed by shaneapowell](https://github.com/shaneapowell/MMM-GmailFeed)
 
 1. Information: There are updates for 2 dependencie(s):
-   - eslint    ^8.56.0  →  ^9.13.0
+   - eslint    ^8.56.0  →  ^9.14.0
    - prettier   ^3.1.1  →   ^3.3.3
 
-2.  WARN  eslint@8.56.0: 2023-12-15T22:55:11.833Z
-deprecated: This version is no longer supported. Please see https://eslint.org/version-support for other options.
 
 ### [MMM-GmailNotifier by kurtern84](https://github.com/kurtern84/MMM-GmailNotifier)
 
@@ -3007,17 +2977,84 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
 
 ### [MMM-GoogleAssistant by bugsounet](https://github.com/bugsounet/MMM-GoogleAssistant)
 
-1. Issues are not enabled in the GitHub repository. So users cannot report bugs. Please enable issues in your repo.
-2. Information: There are updates for 9 dependencie(s):
-   - @eslint/js                ^8.57.0  →  ^9.13.0
-   - @grpc/grpc-js             ^1.11.2  →  ^1.12.2
-   - @stylistic/eslint-plugin   ^1.8.1  →   ^2.9.0
-   - esbuild                   ^0.23.1  →  ^0.24.0
-   - eslint                    ^8.57.0  →  ^9.13.0
-   - eslint-plugin-import      ^2.29.1  →  ^2.31.0
+1. Information: There are updates for 4 dependencie(s):
+   - @stylistic/eslint-plugin   ^2.9.0  →  ^2.10.1
+   - eslint                    ^9.13.0  →  ^9.14.0
    - glob                      ^10.4.5  →  ^11.0.0
-   - google-auth-library       ^9.14.1  →  ^9.14.2
-   - press-any-key              ^1.0.0  →   ^1.1.0
+   - pm2                        ^5.4.2  →   ^5.4.3
+
+2. ESLint issues:
+   - MMM-GoogleAssistant.js: Line 8, Column 17: 'args' is defined but never used. (rule: no-unused-vars)
+   - components/AlertCommander.js: Line 1, Column 7: 'AlertCommander' is defined but never used. (rule: no-unused-vars)
+   - components/AssistantSDK/auth.js: Line 116, Column 16: 'error' is defined but never used. (rule: no-unused-vars)
+   - components/AssistantSDK/auth.js: Line 130, Column 31: Unable to resolve path to module 'open'. (rule: import/no-unresolved)
+   - components/AssistantSDK/conversation.js: Line 16, Column 7: 'DialogStateIn' is assigned a value but never used. (rule: no-unused-vars)
+   - components/AssistantSDK/conversation.js: Line 24, Column 7: 'CLOSE_MICROPHONE' is assigned a value but never used. (rule: no-unused-vars)
+   - components/BufferToMP3.js: Line 4, Column 15: 'args' is defined but never used. (rule: no-unused-vars)
+   - components/BufferToMP3.js: Line 20, Column 103: 'se' is defined but never used. (rule: no-unused-vars)
+   - components/EXTs.js: Line 5, Column 7: 'EXTs' is defined but never used. (rule: no-unused-vars)
+   - components/EXTs.js: Line 181, Column 43: Irregular whitespace not allowed. (rule: no-irregular-whitespace)
+   - components/EXTs.js: Line 281, Column 79: 'module' is defined but never used. (rule: no-unused-vars)
+   - components/EXTs.js: Line 289, Column 66: 'module' is defined but never used. (rule: no-unused-vars)
+   - components/EXTs.js: Line 297, Column 57: 'module' is defined but never used. (rule: no-unused-vars)
+   - components/EXTs.js: Line 466, Column 41: Irregular whitespace not allowed. (rule: no-irregular-whitespace)
+   - components/EXTs.js: Line 514, Column 42: Unnecessary escape character: \.. (rule: no-useless-escape)
+   - components/EXTs.js: Line 514, Column 47: Unnecessary escape character: \/. (rule: no-useless-escape)
+   - components/EXTs.js: Line 514, Column 68: Unnecessary escape character: \=. (rule: no-useless-escape)
+   - components/EXTs.js: Line 514, Column 81: Unnecessary escape character: \-. (rule: no-useless-escape)
+   - components/EXTs.js: Line 514, Column 83: Unnecessary escape character: \_. (rule: no-useless-escape)
+   - components/EXTs.js: Line 540, Column 39: Unnecessary escape character: \.. (rule: no-useless-escape)
+   - components/EXTs.js: Line 540, Column 48: Unnecessary escape character: \.. (rule: no-useless-escape)
+   - components/EXTs.js: Line 540, Column 53: Unnecessary escape character: \/. (rule: no-useless-escape)
+   - components/EXTs.js: Line 540, Column 63: Unnecessary escape character: \/. (rule: no-useless-escape)
+   - components/EXTs.js: Line 540, Column 76: Unnecessary escape character: \-. (rule: no-useless-escape)
+   - components/EXTs.js: Line 540, Column 78: Unnecessary escape character: \_. (rule: no-useless-escape)
+   - components/assistant.js: Line 2, Column 17: 'args' is defined but never used. (rule: no-unused-vars)
+   - components/assistant.js: Line 45, Column 16: 'e' is defined but never used. (rule: no-unused-vars)
+   - components/assistant.js: Line 86, Column 21: 'error' is defined but never used. (rule: no-unused-vars)
+   - components/assistant.js: Line 91, Column 67: 'response' is defined but never used. (rule: no-unused-vars)
+   - components/assistant.js: Line 200, Column 11: 's' is assigned a value but never used. (rule: no-unused-vars)
+   - components/assistantResponse.js: Line 4, Column 7: 'AssistantResponse' is defined but never used. (rule: no-unused-vars)
+   - components/assistantResponse.js: Line 257, Column 11: 'so' is assigned a value but never used. (rule: no-unused-vars)
+   - components/assistantSearch.js: Line 13, Column 7: 'AssistantSearch' is defined but never used. (rule: no-unused-vars)
+   - components/checker.js: Line 11, Column 72: 'se' is defined but never used. (rule: no-unused-vars)
+   - components/controler.js: Line 55, Column 42: 'proc' is defined but never used. (rule: no-unused-vars)
+   - components/controler.js: Line 76, Column 39: 'proc' is defined but never used. (rule: no-unused-vars)
+   - components/controler.js: Line 88, Column 35: 'stdout' is defined but never used. (rule: no-unused-vars)
+   - components/controler.js: Line 88, Column 43: 'stderr' is defined but never used. (rule: no-unused-vars)
+   - components/controler.js: Line 95, Column 37: 'stdout' is defined but never used. (rule: no-unused-vars)
+   - components/controler.js: Line 95, Column 45: 'stderr' is defined but never used. (rule: no-unused-vars)
+   - components/googleSearch.js: Line 2, Column 17: 'args' is defined but never used. (rule: no-unused-vars)
+   - components/lpcm16.js: Line 148, Column 31: 'signal' is defined but never used. (rule: no-unused-vars)
+   - components/screenParser.js: Line 2, Column 17: 'args' is defined but never used. (rule: no-unused-vars)
+   - components/screenParser.js: Line 21, Column 67: 'x' is defined but never used. (rule: no-unused-vars)
+   - components/screenParser.js: Line 44, Column 11: 'contents' is assigned a value but never used. (rule: no-unused-vars)
+   - components/screenParser.js: Line 64, Column 17: Unnecessary escape character: \". (rule: no-useless-escape)
+   - components/screenParser.js: Line 64, Column 22: Unnecessary escape character: \". (rule: no-useless-escape)
+   - components/screenParser.js: Line 64, Column 27: Unnecessary escape character: \". (rule: no-useless-escape)
+   - components/screenParser.js: Line 65, Column 18: Unnecessary escape character: \:. (rule: no-useless-escape)
+   - components/screenParser.js: Line 65, Column 27: Unnecessary escape character: \). (rule: no-useless-escape)
+   - components/screenParser.js: Line 66, Column 8: Unnecessary escape character: \:. (rule: no-useless-escape)
+   - components/screenParser.js: Line 66, Column 20: Unnecessary escape character: \:. (rule: no-useless-escape)
+   - installer/auth_GoogleAssistant.js: Line 19, Column 26: 'continueConversation' is defined but never used. (rule: no-unused-vars)
+   - installer/delete.js: Line 21, Column 31: Unable to resolve path to module 'open'. (rule: import/no-unresolved)
+   - installer/delete.js: Line 27, Column 28: 'rej' is defined but never used. (rule: no-unused-vars)
+   - installer/delete.js: Line 96, Column 13: 'modelId' is assigned a value but never used. (rule: no-unused-vars)
+   - installer/list.js: Line 21, Column 31: Unable to resolve path to module 'open'. (rule: import/no-unresolved)
+   - installer/list.js: Line 27, Column 28: 'rej' is defined but never used. (rule: no-unused-vars)
+   - installer/list.js: Line 92, Column 28: 'rej' is defined but never used. (rule: no-unused-vars)
+   - installer/list.js: Line 96, Column 13: 'modelId' is assigned a value but never used. (rule: no-unused-vars)
+   - installer/list.js: Line 97, Column 13: 'deviceId' is assigned a value but never used. (rule: no-unused-vars)
+   - installer/minify.js: Line 53, Column 7: 'error' is assigned a value but never used. (rule: no-unused-vars)
+   - installer/minify.js: Line 70, Column 14: 'e' is defined but never used. (rule: no-unused-vars)
+   - installer/refresh.js: Line 36, Column 37: 'data' is defined but never used. (rule: no-unused-vars)
+   - installer/register.js: Line 21, Column 31: Unable to resolve path to module 'open'. (rule: import/no-unresolved)
+   - installer/register.js: Line 27, Column 28: 'rej' is defined but never used. (rule: no-unused-vars)
+   - installer/register.js: Line 97, Column 13: 'deviceId' is assigned a value but never used. (rule: no-unused-vars)
+   - node_helper.js: Line 10, Column 17: 'args' is defined but never used. (rule: no-unused-vars)
+   - node_helper.js: Line 187, Column 13: 'error' is assigned a value but never used. (rule: no-unused-vars)
+   - node_helper.js: Line 239, Column 9: 'result' is assigned a value but never used. (rule: no-unused-vars)
+   - recipes/with-MMM-Selfieshot.js: Line 17, Column 19: 'params' is defined but never used. (rule: no-unused-vars)
 
 
 ### [MMM-GoogleBirthdaysProvider by PalatinCoder](https://github.com/PalatinCoder/MMM-GoogleBirthdaysProvider)
@@ -3075,6 +3112,18 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
 5. Typo: Found `Magic Mirror` in file `package.json`: Replace it with `MagicMirror²`.
 6. Recommendation: Replace eslintrc by new flat config.
 
+### [MMM-GoogleKeep by taxilof](https://github.com/taxilof/MMM-GoogleKeep)
+
+1. There are no keywords in 'package.json'. We would use them as tags on the module list page.
+2. No image found.
+3. Recommendation: Found `jshint` in file `Gruntfile.js`: Replace "jshint" by "eslint".
+4. Typo: Found `Magic Mirror` in file `MMM-GoogleKeep.js`: Replace it with `MagicMirror²`.
+5. Typo: Found `Magic Mirror` in file `README.md`: Replace it with `MagicMirror²`.
+6. Outdated: Found `MichMich/MagicMirror` in file `README.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
+7. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
+8. Deprecated: Found `"grunt"` in file `package.json`: Grunt is practically unmaintained. Move on to something better.
+9. Recommendation: Replace eslintrc by new flat config.
+
 ### [MMM-googlemaps by sp4ceman](https://github.com/sp4ceman/MMM-googlemaps)
 
 1. There is no `package.json`. We need this file to gather information about the module for the module list page.
@@ -3111,26 +3160,13 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
 
 1. Recommendation: Found `axios` in file `GooglePhotosLib.js`: Replace it with built-in fetch.
 2. Recommendation: Found `axios` in file `package.json`: Replace it with built-in fetch.
-3. Information: There are updates for 8 dependencie(s):
-   - @eslint/js                ^8.57.0  →  ^9.13.0
-   - @stylistic/eslint-plugin   ^1.8.1  →   ^2.9.0
-   - axios                      ^1.7.2  →   ^1.7.7
-   - esbuild                   ^0.22.0  →  ^0.24.0
-   - eslint                    ^8.57.0  →  ^9.13.0
-   - eslint-plugin-import      ^2.29.1  →  ^2.31.0
-   - glob                      ^10.4.2  →  ^11.0.0
-   - google-auth-library       ^9.11.0  →  ^9.14.2
-
 
 ### [MMM-GoogleSheets by ryan-d-williams](https://github.com/ryan-d-williams/MMM-GoogleSheets)
 
 1. Information: There are updates for 3 dependencie(s):
-   - @eslint/js   ^9.9.0  →   ^9.13.0
-   - eslint       ^9.9.0  →   ^9.13.0
-   - globals     ^15.9.0  →  ^15.11.0
-
-2. ESLint issues:
-   - MMM-GoogleSheets.js: Line 1, Column 1: Unused eslint-disable directive (no problems were reported from 'no-undef'). (rule: None)
+   - @eslint/js   ^9.9.0  →   ^9.14.0
+   - eslint       ^9.9.0  →   ^9.14.0
+   - globals     ^15.9.0  →  ^15.12.0
 
 
 ### [MMM-GoogleShoppingList by Gismo150](https://github.com/Gismo150/MMM-GoogleShoppingList)
@@ -3140,7 +3176,7 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
 3. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
 4. Information: There are updates for 2 dependencie(s):
    - fs-extra   ^7.0.0  →  ^11.2.0
-   - puppeteer  ^2.0.0  →  ^23.6.1
+   - puppeteer  ^2.0.0  →  ^23.8.0
 
 
 ### [MMM-GoogleTasks by spydersoft-consulting](https://github.com/spydersoft-consulting/MMM-GoogleTasks)
@@ -3175,22 +3211,9 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
 1. Recommendation: Found `new Date()` in file `node_helper.js`: Consider replacing it by `new Date(Date.now())`. It's helpful for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
 2. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
 3. Information: There are updates for 2 dependencie(s):
-   - @electron/rebuild             ^3.3.1  →  ^3.7.0
-   - @google-cloud/text-to-speech  ^3.3.1  →  ^5.5.0
+   - @electron/rebuild             ^3.3.1  →  ^3.7.1
+   - @google-cloud/text-to-speech  ^3.3.1  →  ^5.6.0
 
-
-### [EXT-Governor by bugsounet](https://github.com/bugsounet/EXT-Governor)
-
-1. Information: There are updates for 6 dependencie(s):
-   - @eslint/js                ^8.57.0  →  ^9.13.0
-   - @stylistic/eslint-plugin   ^1.8.1  →   ^2.9.0
-   - esbuild                   ^0.22.0  →  ^0.24.0
-   - eslint                    ^8.57.0  →  ^9.13.0
-   - eslint-plugin-import      ^2.29.1  →  ^2.31.0
-   - glob                      ^10.4.2  →  ^11.0.0
-
-2.  WARN  eslint@8.57.0: 2024-02-23T20:39:43.282Z
-deprecated: This version is no longer supported. Please see https://eslint.org/version-support for other options.
 
 ### [MMM-GPIO-HANDLER by Sjohn21](https://github.com/Sjohn21/MMM-GPIO-HANDLER)
 
@@ -3370,6 +3393,16 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
 6. Recommendation: The README seems not to have an update instruction (the word 'update' is missing). Please add one.
 7. Typo: Found `Magic Mirror` in file `MMM-Hello-Mirror.css`: Replace it with `MagicMirror²`.
 8. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
+
+### [MMM-Hevy by wathmal](https://github.com/wathmal/MMM-Hevy)
+
+1. `package.json` issue: No description
+2. `package.json` issue: No repository field.
+3. There are no keywords in 'package.json'. We would use them as tags on the module list page.
+4. Typo: Found `Magic Mirror` in file `README.md`: Replace it with `MagicMirror²`.
+5. Recommendation: Found `new Date()` in file `node_helper.js`: Consider replacing it by `new Date(Date.now())`. It's helpful for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
+6. Warning: No LICENSE file.
+7. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
 
 ### [MMM-HH-LocalTransport by skuethe](https://github.com/skuethe/MMM-HH-LocalTransport)
 
@@ -3945,11 +3978,11 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
 1. Issues are not enabled in the GitHub repository. So users cannot report bugs. Please enable issues in your repo.
 2. Recommendation: Module name doesn't follow the recommended pattern (it doesn't start with `MMM-`). Consider renaming your module.
 3. Information: There are updates for 6 dependencie(s):
-   - @eslint/js                 ^8.56.0  →   ^9.13.0
-   - @stylistic/eslint-plugin    ^1.5.3  →    ^2.9.0
-   - eslint                     ^8.56.0  →   ^9.13.0
+   - @eslint/js                 ^8.56.0  →   ^9.14.0
+   - @stylistic/eslint-plugin    ^1.5.3  →   ^2.10.1
+   - eslint                     ^8.56.0  →   ^9.14.0
    - eslint-plugin-import       ^2.29.1  →   ^2.31.0
-   - globals                   ^13.24.0  →  ^15.11.0
+   - globals                   ^13.24.0  →  ^15.12.0
    - justgage                    ^1.6.1  →    ^1.7.0
 
 
@@ -4032,6 +4065,12 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
 6. Recommendation: Found `new Date()` in file `node_helper.js`: Consider replacing it by `new Date(Date.now())`. It's helpful for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
 7. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
 
+### [MMM-ISS-Live by KristjanESPERANTO](https://github.com/KristjanESPERANTO/MMM-ISS-Live)
+
+1. Information: There are updates for 1 dependencie(s):
+   - cspell  ^8.15.7  →  ^8.16.0
+
+
 ### [MMM-ISS-Map by khassel](https://gitlab.com/khassel/MMM-ISS-Map)
 
 1. Recommendation: Found `https://cdn.jsdelivr.net` in file `MMM-ISS-Map.js`: It looks like a package is loaded via CDN. It would be better if the package were installed locally via npm.
@@ -4059,9 +4098,9 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
 2. Outdated: Found `MichMich/MagicMirror` in file `README.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
 3. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
 4. Information: There are updates for 4 dependencie(s):
-   - @electron/rebuild    ^3.6.0  →   ^3.7.0
+   - @electron/rebuild    ^3.6.0  →   ^3.7.1
    - node-abi            ^3.65.0  →  ^3.71.0
-   - puppeteer          ^22.15.0  →  ^23.6.1
+   - puppeteer          ^22.15.0  →  ^23.8.0
    - sharp               ^0.33.4  →  ^0.33.5
 
 
@@ -4083,12 +4122,12 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
    - @rollup/plugin-commonjs           ^25.0.7  →  ^28.0.1
    - @rollup/plugin-node-resolve       ^15.2.3  →  ^15.3.0
    - @rollup/plugin-typescript         ^11.1.6  →  ^12.1.1
-   - @typescript-eslint/eslint-plugin  ^6.19.1  →  ^8.12.2
-   - @typescript-eslint/parser         ^6.19.1  →  ^8.12.2
-   - eslint                            ^8.56.0  →  ^9.13.0
+   - @typescript-eslint/eslint-plugin  ^6.19.1  →  ^8.14.0
+   - @typescript-eslint/parser         ^6.19.1  →  ^8.14.0
+   - eslint                            ^8.56.0  →  ^9.14.0
    - eslint-plugin-prettier             ^5.1.3  →   ^5.2.1
    - prettier                           ^3.2.4  →   ^3.3.3
-   - rollup                             ^4.9.6  →  ^4.24.3
+   - rollup                             ^4.9.6  →  ^4.26.0
    - rollup-plugin-banner2              ^1.2.2  →   ^1.3.0
    - typescript                         ^5.3.3  →   ^5.6.3
    - yahoo-finance2                    ^2.11.3  →  ^2.13.2
@@ -4206,18 +4245,16 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
 ### [MMM-JsonTable by timdows](https://github.com/timdows/MMM-JsonTable)
 
 1. Information: There are updates for 9 dependencie(s):
-   - @eslint/js                       ^8.57.0  →   ^9.13.0
+   - @eslint/js                       ^8.57.0  →   ^9.14.0
    - @pilaton/eslint-config-markdown   ^1.2.0  →    ^1.3.0
-   - @stylistic/eslint-plugin          ^1.7.0  →    ^2.9.0
-   - eslint                           ^8.57.0  →   ^9.13.0
+   - @stylistic/eslint-plugin          ^1.7.0  →   ^2.10.1
+   - eslint                           ^8.57.0  →   ^9.14.0
    - eslint-plugin-import             ^2.29.1  →   ^2.31.0
-   - eslint-plugin-jsonc              ^2.15.0  →   ^2.16.0
-   - globals                          ^15.0.0  →  ^15.11.0
+   - eslint-plugin-jsonc              ^2.15.0  →   ^2.18.1
+   - globals                          ^15.0.0  →  ^15.12.0
    - markdownlint-cli                 ^0.39.0  →   ^0.42.0
    - prettier                          ^3.2.5  →    ^3.3.3
 
-2.  WARN  eslint@8.57.0: 2024-02-23T20:39:43.282Z
-deprecated: This version is no longer supported. Please see https://eslint.org/version-support for other options.
 
 ### [MMM-JsonValue by c-klinger](https://github.com/c-klinger/MMM-JsonValue)
 
@@ -4288,16 +4325,16 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
 
 ### [EXT-Keyboard by bugsounet](https://github.com/bugsounet/EXT-Keyboard)
 
-1. Information: There are updates for 6 dependencie(s):
-   - @eslint/js                ^8.57.0  →  ^9.13.0
-   - @stylistic/eslint-plugin   ^1.8.1  →   ^2.9.0
-   - esbuild                   ^0.22.0  →  ^0.24.0
-   - eslint                    ^8.57.0  →  ^9.13.0
-   - eslint-plugin-import      ^2.29.1  →  ^2.31.0
-   - glob                      ^10.4.2  →  ^11.0.0
+1. Information: There are updates for 3 dependencie(s):
+   - @stylistic/eslint-plugin   ^2.9.0  →  ^2.10.1
+   - eslint                    ^9.13.0  →  ^9.14.0
+   - glob                      ^10.4.5  →  ^11.0.0
 
-2.  WARN  eslint@8.57.0: 2024-02-23T20:39:43.282Z
-deprecated: This version is no longer supported. Please see https://eslint.org/version-support for other options.
+2. ESLint issues:
+   - installer/minify.js: Line 47, Column 7: 'error' is assigned a value but never used. (rule: no-unused-vars)
+   - installer/minify.js: Line 64, Column 14: 'e' is defined but never used. (rule: no-unused-vars)
+   - node_helper.js: Line 33, Column 9: Unexpected lexical declaration in case block. (rule: no-case-declarations)
+
 
 ### [KeyDisplayed by l0b5ter](https://github.com/l0b5ter/KeyDisplayed)
 
@@ -4424,16 +4461,24 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
 ### [EXT-Librespot by bugsounet](https://github.com/bugsounet/EXT-Librespot)
 
 1. Information: There are updates for 7 dependencie(s):
-   - @eslint/js                ^8.57.0  →  ^9.13.0
-   - @stylistic/eslint-plugin   ^1.8.1  →   ^2.9.0
+   - @eslint/js                ^8.57.0  →  ^9.14.0
+   - @stylistic/eslint-plugin   ^1.8.1  →  ^2.10.1
    - esbuild                   ^0.22.0  →  ^0.24.0
-   - eslint                    ^8.57.0  →  ^9.13.0
+   - eslint                    ^8.57.0  →  ^9.14.0
    - eslint-plugin-import      ^2.29.1  →  ^2.31.0
    - glob                      ^10.4.2  →  ^11.0.0
-   - pm2                        ^5.4.1  →   ^5.4.2
+   - pm2                        ^5.4.1  →   ^5.4.3
 
-2.  WARN  eslint@8.57.0: 2024-02-23T20:39:43.282Z
-deprecated: This version is no longer supported. Please see https://eslint.org/version-support for other options.
+2. ESLint issues:
+   - eslint.config.js: Line 2, Column 18: 'eslintConfigs' is assigned a value but never used. (rule: no-unused-vars)
+   - installer/minify.js: Line 47, Column 7: 'error' is assigned a value but never used. (rule: no-unused-vars)
+   - installer/minify.js: Line 64, Column 14: 'e' is defined but never used. (rule: no-unused-vars)
+   - node_helper.js: Line 8, Column 24: 'args' is defined but never used. (rule: no-unused-vars)
+   - node_helper.js: Line 17, Column 35: 'p' is defined but never used. (rule: no-unused-vars)
+   - node_helper.js: Line 73, Column 21: 'item' is assigned a value but never used. (rule: no-unused-vars)
+   - node_helper.js: Line 113, Column 18: 'proc' is defined but never used. (rule: no-unused-vars)
+   - node_helper.js: Line 126, Column 41: 'proc' is defined but never used. (rule: no-unused-vars)
+
 
 ### [MMM-lichess-daily by tonymorris](https://github.com/tonymorris/MMM-lichess-daily)
 
@@ -4721,13 +4766,11 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
 ### [MMM-MagicMover by Lavve](https://github.com/Lavve/MMM-MagicMover)
 
 1. Information: There are updates for 4 dependencie(s):
-   - @eslint/js                ^8.57.0  →   ^9.13.0
-   - @stylistic/eslint-plugin   ^1.7.0  →    ^2.9.0
-   - eslint                    ^8.57.0  →   ^9.13.0
-   - globals                   ^15.0.0  →  ^15.11.0
+   - @eslint/js                ^8.57.0  →   ^9.14.0
+   - @stylistic/eslint-plugin   ^1.7.0  →   ^2.10.1
+   - eslint                    ^8.57.0  →   ^9.14.0
+   - globals                   ^15.0.0  →  ^15.12.0
 
-2.  WARN  eslint@8.57.0: 2024-02-23T20:39:43.282Z
-deprecated: This version is no longer supported. Please see https://eslint.org/version-support for other options.
 
 ### [MMM-MagicSuperHero by Lavve](https://github.com/Lavve/MMM-MagicSuperHero)
 
@@ -4843,19 +4886,20 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
 
 1. Information: There are updates for 11 dependencie(s):
    - @commitlint/cli            ^19.3.0  →   ^19.5.0
-   - @eslint/js                 ^8.57.0  →   ^9.13.0
-   - @stylistic/eslint-plugin    ^2.7.2  →    ^2.9.0
-   - eslint                     ^8.57.0  →   ^9.13.0
+   - @eslint/js                 ^8.57.0  →   ^9.14.0
+   - @stylistic/eslint-plugin    ^2.7.2  →   ^2.10.1
+   - eslint                     ^8.57.0  →   ^9.14.0
    - eslint-plugin-import       ^2.29.1  →   ^2.31.0
-   - globals                    ^15.9.0  →  ^15.11.0
+   - globals                    ^15.9.0  →  ^15.12.0
    - husky                      ^9.0.11  →    ^9.1.6
    - markdownlint-cli           ^0.41.0  →   ^0.42.0
    - semantic-release           ^24.1.0  →   ^24.2.0
    - stylelint                  ^16.9.0  →  ^16.10.0
    - stylelint-config-standard  ^36.0.0  →   ^36.0.1
 
-2.  WARN  eslint@8.57.0: 2024-02-23T20:39:43.282Z
-deprecated: This version is no longer supported. Please see https://eslint.org/version-support for other options.
+2. ESLint issues:
+   - MMM-MealieMenu.js: Line 432, Column 14: 'err' is defined but never used. (rule: no-unused-vars)
+
 
 ### [MMM-MealViewer by ElliAndDad](https://github.com/ElliAndDad/MMM-MealViewer)
 
@@ -4937,9 +4981,11 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
 
 ### [MMM-MeteoFrance by bugsounet](https://github.com/bugsounet/MMM-MeteoFrance)
 
-1. Information: There are updates for 2 dependencie(s):
-   - @eslint/js  ^8.57.1  →  ^9.13.0
-   - glob        ^10.4.5  →  ^11.0.0
+1. Information: There are updates for 4 dependencie(s):
+   - @eslint/js                ^8.57.1  →  ^9.14.0
+   - @stylistic/eslint-plugin   ^2.9.0  →  ^2.10.1
+   - eslint                    ^9.13.0  →  ^9.14.0
+   - glob                      ^10.4.5  →  ^11.0.0
 
 2. ESLint issues:
    - MMM-MeteoFrance.js: Line 45, Column 25: 'args' is defined but never used. (rule: no-unused-vars)
@@ -5184,8 +5230,8 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
 ### [mmm-nordic-electrical-spot-prices by cSharpBastard](https://github.com/cSharpBastard/mmm-nordic-electrical-spot-prices)
 
 1. Recommendation: Module name doesn't follow the recommended pattern (it doesn't start with `MMM-`). Consider renaming your module.
-2. Recommendation: Found `jshint` in file `canvasjs.min.js`: Replace "jshint" by "eslint".
-3. Recommendation: Found `new Date()` in file `mmm-nordic-electrical-spot-prices.js`: Consider replacing it by `new Date(Date.now())`. It's helpful for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
+2. Deprecated: Found `require('request')` in file `getData.test.js`: Replace it with built-in fetch.
+3. Recommendation: Found `jshint` in file `canvasjs.min.js`: Replace "jshint" by "eslint".
 4. Deprecated: Found `require('request')` in file `node_helper.js`: Replace it with built-in fetch.
 5. Recommendation: Found `new Date()` in file `node_helper.js`: Consider replacing it by `new Date(Date.now())`. It's helpful for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
 6. Typo: Found `Magic Mirror` in file `package.json`: Replace it with `MagicMirror²`.
@@ -5602,14 +5648,15 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
 1. Recommendation: The README seems not to have an update instruction (the word 'update' is missing). Please add one.
 2. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
 3. Information: There are updates for 1 dependencie(s):
-   - mqtt  ^1.10.0  →  ^5.10.1
+   - mqtt  ^1.10.0  →  ^5.10.2
 
 
 ### [MMM-MQTTbridge by Tom-Hirschberger](https://github.com/Tom-Hirschberger/MMM-MQTTbridge)
 
 1. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
-2. Information: There are updates for 1 dependencie(s):
+2. Information: There are updates for 2 dependencie(s):
    - jsonpath-plus  10.0.1  →  10.1.0
+   - mqtt           5.10.1  →  5.10.2
 
 
 ### [MMM-MQTTfloorplan by DMailMan](https://github.com/DMailMan/MMM-MQTTfloorplan)
@@ -5674,22 +5721,17 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
 ### [EXT-MusicPlayer by bugsounet](https://github.com/bugsounet/EXT-MusicPlayer)
 
 1. Recommendation: Found `https://cdnjs.cloudflare.com` in file `EXT-MusicPlayer.js`: It looks like a package is loaded via CDN. It would be better if the package were installed locally via npm.
-2. Information: There are updates for 8 dependencie(s):
-   - @electron/rebuild          ^3.6.0  →   ^3.7.0
-   - @eslint/js                ^8.57.0  →  ^9.13.0
-   - @stylistic/eslint-plugin   ^1.8.1  →   ^2.9.0
-   - esbuild                   ^0.22.0  →  ^0.24.0
-   - eslint                    ^8.57.0  →  ^9.13.0
-   - eslint-plugin-import      ^2.29.1  →  ^2.31.0
-   - glob                      ^10.4.2  →  ^11.0.0
-   - usb                       ^2.13.0  →  ^2.14.0
+2. Information: There are updates for 4 dependencie(s):
+   - @electron/rebuild          ^3.7.0  →   ^3.7.1
+   - @stylistic/eslint-plugin   ^2.9.0  →  ^2.10.1
+   - eslint                    ^9.13.0  →  ^9.14.0
+   - glob                      ^10.4.5  →  ^11.0.0
 
 
 ### [MMM-MVVWiesty by wiesty](https://github.com/wiesty/MMM-MVVWiesty)
 
-1. Recommendation: Found `XMLHttpRequest` in file `MMM-MVVWiesty.js`: Replace it with built-in fetch.
-2. Outdated: Found `MichMich/MagicMirror` in file `README.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
-3. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
+1. Recommendation: Found `new Date()` in file `MMM-MVVWiesty.js`: Consider replacing it by `new Date(Date.now())`. It's helpful for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
+2. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
 
 ### [MMM-MyBMW by Jargendas](https://github.com/Jargendas/MMM-MyBMW)
 
@@ -6048,7 +6090,7 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
 
 1. Recommendation: No lint script found in package.json. It is recommended to add one.
 2. Information: There are updates for 1 dependencie(s):
-   - neostandard  0.11.5  →  0.11.7
+   - neostandard  0.11.5  →  0.11.8
 
 
 ### [MMM-Netatmo-Presence by AgP42](https://github.com/AgP42/MMM-Netatmo-Presence)
@@ -6068,15 +6110,27 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
 ### [MMM-NetatmoThermostat by bugsounet](https://github.com/bugsounet/MMM-NetatmoThermostat)
 
 1. Information: There are updates for 6 dependencie(s):
-   - @eslint/js                ^8.57.0  →  ^9.13.0
-   - @stylistic/eslint-plugin   ^1.8.1  →   ^2.9.0
+   - @eslint/js                ^8.57.0  →  ^9.14.0
+   - @stylistic/eslint-plugin   ^1.8.1  →  ^2.10.1
    - esbuild                   ^0.22.0  →  ^0.24.0
-   - eslint                    ^8.57.0  →  ^9.13.0
+   - eslint                    ^8.57.0  →  ^9.14.0
    - eslint-plugin-import      ^2.29.1  →  ^2.31.0
    - glob                      ^10.4.2  →  ^11.0.0
 
-2.  WARN  eslint@8.57.0: 2024-02-23T20:39:43.282Z
-deprecated: This version is no longer supported. Please see https://eslint.org/version-support for other options.
+2. ESLint issues:
+   - MMM-NetatmoThermostat.js: Line 7, Column 13: 'args' is defined but never used. (rule: no-unused-vars)
+   - MMM-NetatmoThermostat.js: Line 150, Column 31: 'payload' is defined but never used. (rule: no-unused-vars)
+   - components/netatmo.js: Line 11, Column 5: 'moment' is assigned a value but never used. (rule: no-unused-vars)
+   - components/netatmo.js: Line 133, Column 11: 'token' is assigned a value but never used. (rule: no-unused-vars)
+   - components/netatmo.js: Line 185, Column 11: 'token' is assigned a value but never used. (rule: no-unused-vars)
+   - eslint.config.js: Line 2, Column 18: 'eslintConfigs' is assigned a value but never used. (rule: no-unused-vars)
+   - installer/minify.js: Line 47, Column 7: 'error' is assigned a value but never used. (rule: no-unused-vars)
+   - installer/minify.js: Line 64, Column 14: 'e' is defined but never used. (rule: no-unused-vars)
+   - installer/setup.js: Line 10, Column 5: 'config' is assigned a value but never used. (rule: no-unused-vars)
+   - installer/setup.js: Line 20, Column 11: 'nb' is assigned a value but never used. (rule: no-unused-vars)
+   - node_helper.js: Line 12, Column 13: 'args' is defined but never used. (rule: no-unused-vars)
+   - node_helper.js: Line 153, Column 35: 'reject' is defined but never used. (rule: no-unused-vars)
+
 
 ### [MMM-network-signal by PoOwAa](https://github.com/PoOwAa/MMM-network-signal)
 
@@ -6131,7 +6185,7 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
 1. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
 2. Information: There are updates for 2 dependencie(s):
    - qrcode  ^1.5.3  →   ^1.5.4
-   - uuid    ^9.0.1  →  ^11.0.2
+   - uuid    ^9.0.1  →  ^11.0.3
 
 
 ### [next-train-transilien by trizome](https://github.com/trizome/next-train-transilien)
@@ -6245,11 +6299,11 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
    - @rollup/plugin-commonjs           ^25.0.7  →  ^28.0.1
    - @rollup/plugin-node-resolve       ^15.2.3  →  ^15.3.0
    - @rollup/plugin-typescript         ^11.1.6  →  ^12.1.1
-   - @stylistic/eslint-plugin           ^1.5.4  →   ^2.9.0
-   - @typescript-eslint/eslint-plugin  ^6.20.0  →  ^8.12.2
-   - eslint                            ^8.56.0  →  ^9.13.0
+   - @stylistic/eslint-plugin           ^1.5.4  →  ^2.10.1
+   - @typescript-eslint/eslint-plugin  ^6.20.0  →  ^8.14.0
+   - eslint                            ^8.56.0  →  ^9.14.0
    - prettier                           ^3.2.5  →   ^3.3.3
-   - rollup                             ^4.9.6  →  ^4.24.3
+   - rollup                             ^4.9.6  →  ^4.26.0
    - rollup-plugin-banner2              ^1.2.2  →   ^1.3.0
    - typescript                         ^5.3.3  →   ^5.6.3
 
@@ -6511,10 +6565,8 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
 
 ### [MMM-OneCallWeather by KristjanESPERANTO](https://github.com/KristjanESPERANTO/MMM-OneCallWeather)
 
-1. ESLint issues:
-   - MMM-OneCallWeather.js: Line 360, Column 5: Unused eslint-disable directive (no problems were reported from 'default-case'). (rule: None)
-   - MMM-OneCallWeather.js: Line 394, Column 9: Unused eslint-disable directive (no problems were reported from 'prefer-destructuring'). (rule: None)
-   - MMM-OneCallWeather.js: Line 580, Column 9: Unused eslint-disable directive (no problems were reported from 'prefer-destructuring'). (rule: None)
+1. Information: There are updates for 1 dependencie(s):
+   - cspell  ^8.15.7  →  ^8.16.0
 
 
 ### [MMM-OneDrive by hermanho](https://github.com/hermanho/MMM-OneDrive)
@@ -6784,24 +6836,27 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
 ### [MMM-pages by sdetweil](https://github.com/sdetweil/MMM-pages)
 
 1. Information: There are updates for 4 dependencie(s):
-   - @eslint/js                ^9.10.0  →   ^9.13.0
-   - @stylistic/eslint-plugin   ^2.8.0  →    ^2.9.0
-   - eslint                    ^9.10.0  →   ^9.13.0
-   - globals                   ^15.9.0  →  ^15.11.0
+   - @eslint/js                ^9.10.0  →   ^9.14.0
+   - @stylistic/eslint-plugin   ^2.8.0  →   ^2.10.1
+   - eslint                    ^9.10.0  →   ^9.14.0
+   - globals                   ^15.9.0  →  ^15.12.0
 
 
 ### [EXT-Pages by bugsounet](https://github.com/bugsounet/EXT-Pages)
 
-1. Information: There are updates for 6 dependencie(s):
-   - @eslint/js                ^8.57.0  →  ^9.13.0
-   - @stylistic/eslint-plugin   ^1.8.1  →   ^2.9.0
-   - esbuild                   ^0.22.0  →  ^0.24.0
-   - eslint                    ^8.57.0  →  ^9.13.0
-   - eslint-plugin-import      ^2.29.1  →  ^2.31.0
-   - glob                      ^10.4.2  →  ^11.0.0
+1. Information: There are updates for 3 dependencie(s):
+   - @stylistic/eslint-plugin   ^2.9.0  →  ^2.10.1
+   - eslint                    ^9.13.0  →  ^9.14.0
+   - glob                      ^10.4.5  →  ^11.0.0
 
-2.  WARN  eslint@8.57.0: 2024-02-23T20:39:43.282Z
-deprecated: This version is no longer supported. Please see https://eslint.org/version-support for other options.
+2. ESLint issues:
+   - EXT-Pages.js: Line 55, Column 20: 'args' is defined but never used. (rule: no-unused-vars)
+   - EXT-Pages.js: Line 143, Column 9: Unexpected lexical declaration in case block. (rule: no-case-declarations)
+   - EXT-Pages.js: Line 521, Column 22: 'value' is assigned a value but never used. (rule: no-unused-vars)
+   - installer/minify.js: Line 47, Column 7: 'error' is assigned a value but never used. (rule: no-unused-vars)
+   - installer/minify.js: Line 64, Column 14: 'e' is defined but never used. (rule: no-unused-vars)
+   - node_helper.js: Line 6, Column 37: 'payload' is defined but never used. (rule: no-unused-vars)
+
 
 ### [MMM-Pages-Screencast by jboucly](https://github.com/jboucly/MMM-Pages-Screencast)
 
@@ -6999,16 +7054,18 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
 
 ### [EXT-Photos by bugsounet](https://github.com/bugsounet/EXT-Photos)
 
-1. Information: There are updates for 6 dependencie(s):
-   - @eslint/js                ^8.57.0  →  ^9.13.0
-   - @stylistic/eslint-plugin   ^1.8.1  →   ^2.9.0
-   - esbuild                   ^0.22.0  →  ^0.24.0
-   - eslint                    ^8.57.0  →  ^9.13.0
-   - eslint-plugin-import      ^2.29.1  →  ^2.31.0
-   - glob                      ^10.4.2  →  ^11.0.0
+1. Information: There are updates for 3 dependencie(s):
+   - @stylistic/eslint-plugin   ^2.9.0  →  ^2.10.1
+   - eslint                    ^9.13.0  →  ^9.14.0
+   - glob                      ^10.4.5  →  ^11.0.0
 
-2.  WARN  eslint@8.57.0: 2024-02-23T20:39:43.282Z
-deprecated: This version is no longer supported. Please see https://eslint.org/version-support for other options.
+2. ESLint issues:
+   - EXT-Photos.js: Line 8, Column 17: 'args' is defined but never used. (rule: no-unused-vars)
+   - EXT-Photos.js: Line 173, Column 11: 'dom' is assigned a value but never used. (rule: no-unused-vars)
+   - installer/minify.js: Line 47, Column 7: 'error' is assigned a value but never used. (rule: no-unused-vars)
+   - installer/minify.js: Line 64, Column 14: 'e' is defined but never used. (rule: no-unused-vars)
+   - node_helper.js: Line 6, Column 37: 'payload' is defined but never used. (rule: no-unused-vars)
+
 
 ### [PiDisplaySleep by RpDp-git](https://github.com/RpDp-git/PiDisplaySleep)
 
@@ -7061,26 +7118,66 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
 
 ### [MMM-Pir by bugsounet](https://github.com/bugsounet/MMM-Pir)
 
-1. Deprecated: Found `new Buffer(` in file `progressbar.js`: This is deprecated. Please update: <https://nodejs.org/api/buffer.html>.
-2. Information: There are updates for 8 dependencie(s):
-   - @electron/rebuild          ^3.6.0  →   ^3.7.0
-   - @eslint/js                ^8.57.0  →  ^9.13.0
-   - @stylistic/eslint-plugin    1.8.1  →    2.9.0
-   - esbuild                   ^0.23.1  →  ^0.24.0
-   - eslint                    ^8.57.0  →  ^9.13.0
-   - eslint-plugin-import      ^2.29.1  →  ^2.31.0
-   - glob                      ^10.4.5  →  ^11.0.0
-   - nan                       ^2.20.0  →  ^2.22.0
+1. Information: There are updates for 1 dependencie(s):
+   - @electron/rebuild  ^3.7.0  →  ^3.7.1
 
-
-### [EXT-Pir by bugsounet](https://github.com/bugsounet/EXT-Pir)
-
-1. Issues are not enabled in the GitHub repository. So users cannot report bugs. Please enable issues in your repo.
-2. Information: There are updates for 4 dependencie(s):
-   - @electron/rebuild   ^3.6.0  →   ^3.7.0
-   - eslint             ^9.12.0  →  ^9.13.0
-   - glob               ^10.4.5  →  ^11.0.0
-   - nan                ^2.20.0  →  ^2.22.0
+2. ESLint issues:
+   - MMM-Pir.js: Line 7, Column 19: 'args' is defined but never used. (rule: no-unused-vars)
+   - MMM-Pir.js: Line 166, Column 39: 'payload' is defined but never used. (rule: no-unused-vars)
+   - MMM-Pir.js: Line 166, Column 48: 'sender' is defined but never used. (rule: no-unused-vars)
+   - components/cronJob.js: Line 1, Column 15: 'args' is defined but never used. (rule: no-unused-vars)
+   - components/governorLib.js: Line 6, Column 15: 'args' is defined but never used. (rule: no-unused-vars)
+   - components/governorLib.js: Line 45, Column 87: 'stderr' is defined but never used. (rule: no-unused-vars)
+   - components/motionLib.js: Line 6, Column 7: 'motionLib' is defined but never used. (rule: no-unused-vars)
+   - components/pirLib.js: Line 4, Column 15: 'args' is defined but never used. (rule: no-unused-vars)
+   - components/pirLib.js: Line 110, Column 15: 'version' is assigned a value but never used. (rule: no-unused-vars)
+   - components/screenDisplayer.js: Line 6, Column 7: 'screenDisplayer' is defined but never used. (rule: no-unused-vars)
+   - components/screenDisplayer.js: Line 202, Column 9: 'speed' is assigned a value but never used. (rule: no-unused-vars)
+   - components/screenLib.js: Line 8, Column 7: 'path' is assigned a value but never used. (rule: no-unused-vars)
+   - components/screenLib.js: Line 11, Column 15: 'args' is defined but never used. (rule: no-unused-vars)
+   - components/screenLib.js: Line 286, Column 64: 'stderr' is defined but never used. (rule: no-unused-vars)
+   - components/screenLib.js: Line 302, Column 25: 'stderr' is defined but never used. (rule: no-unused-vars)
+   - components/screenLib.js: Line 321, Column 25: 'stderr' is defined but never used. (rule: no-unused-vars)
+   - components/screenLib.js: Line 329, Column 31: 'stderr' is defined but never used. (rule: no-unused-vars)
+   - components/screenLib.js: Line 345, Column 65: 'stderr' is defined but never used. (rule: no-unused-vars)
+   - components/screenLib.js: Line 361, Column 49: 'stderr' is defined but never used. (rule: no-unused-vars)
+   - components/screenLib.js: Line 376, Column 53: 'stderr' is defined but never used. (rule: no-unused-vars)
+   - components/screenLib.js: Line 392, Column 25: 'stderr' is defined but never used. (rule: no-unused-vars)
+   - components/screenLib.js: Line 443, Column 55: 'stdout' is defined but never used. (rule: no-unused-vars)
+   - components/screenLib.js: Line 443, Column 63: 'stderr' is defined but never used. (rule: no-unused-vars)
+   - components/screenLib.js: Line 450, Column 56: 'stdout' is defined but never used. (rule: no-unused-vars)
+   - components/screenLib.js: Line 450, Column 64: 'stderr' is defined but never used. (rule: no-unused-vars)
+   - components/screenLib.js: Line 460, Column 111: 'stdout' is defined but never used. (rule: no-unused-vars)
+   - components/screenLib.js: Line 460, Column 119: 'stderr' is defined but never used. (rule: no-unused-vars)
+   - components/screenLib.js: Line 467, Column 71: 'stdout' is defined but never used. (rule: no-unused-vars)
+   - components/screenLib.js: Line 467, Column 79: 'stderr' is defined but never used. (rule: no-unused-vars)
+   - components/screenLib.js: Line 486, Column 102: 'stdout' is defined but never used. (rule: no-unused-vars)
+   - components/screenLib.js: Line 486, Column 110: 'stderr' is defined but never used. (rule: no-unused-vars)
+   - components/screenLib.js: Line 494, Column 124: 'stdout' is defined but never used. (rule: no-unused-vars)
+   - components/screenLib.js: Line 494, Column 132: 'stderr' is defined but never used. (rule: no-unused-vars)
+   - components/screenLib.js: Line 504, Column 53: 'stdout' is defined but never used. (rule: no-unused-vars)
+   - components/screenLib.js: Line 504, Column 61: 'stderr' is defined but never used. (rule: no-unused-vars)
+   - components/screenLib.js: Line 511, Column 58: 'stdout' is defined but never used. (rule: no-unused-vars)
+   - components/screenLib.js: Line 511, Column 66: 'stderr' is defined but never used. (rule: no-unused-vars)
+   - components/screenLib.js: Line 521, Column 56: 'stdout' is defined but never used. (rule: no-unused-vars)
+   - components/screenLib.js: Line 521, Column 64: 'stderr' is defined but never used. (rule: no-unused-vars)
+   - components/screenLib.js: Line 528, Column 57: 'stderr' is defined but never used. (rule: no-unused-vars)
+   - components/screenLib.js: Line 546, Column 56: 'stdout' is defined but never used. (rule: no-unused-vars)
+   - components/screenLib.js: Line 546, Column 64: 'stderr' is defined but never used. (rule: no-unused-vars)
+   - components/screenLib.js: Line 553, Column 57: 'stderr' is defined but never used. (rule: no-unused-vars)
+   - components/screenLib.js: Line 574, Column 44: 'stdout' is defined but never used. (rule: no-unused-vars)
+   - components/screenLib.js: Line 574, Column 52: 'stderr' is defined but never used. (rule: no-unused-vars)
+   - components/screenLib.js: Line 581, Column 45: 'stdout' is defined but never used. (rule: no-unused-vars)
+   - components/screenLib.js: Line 581, Column 53: 'stderr' is defined but never used. (rule: no-unused-vars)
+   - components/screenLib.js: Line 591, Column 110: 'stdout' is defined but never used. (rule: no-unused-vars)
+   - components/screenLib.js: Line 591, Column 118: 'stderr' is defined but never used. (rule: no-unused-vars)
+   - components/screenLib.js: Line 598, Column 111: 'stdout' is defined but never used. (rule: no-unused-vars)
+   - components/screenLib.js: Line 598, Column 119: 'stderr' is defined but never used. (rule: no-unused-vars)
+   - components/screenTouch.js: Line 8, Column 7: 'screenTouch' is defined but never used. (rule: no-unused-vars)
+   - installer/minify.js: Line 35, Column 7: 'error' is assigned a value but never used. (rule: no-unused-vars)
+   - installer/minify.js: Line 52, Column 14: 'e' is defined but never used. (rule: no-unused-vars)
+   - node_helper.js: Line 6, Column 15: 'args' is defined but never used. (rule: no-unused-vars)
+   - node_helper.js: Line 77, Column 10: Irregular whitespace not allowed. (rule: no-irregular-whitespace)
 
 
 ### [MMM-PirateSkyForecast by dankerthrone](https://github.com/dankerthrone/MMM-PirateSkyForecast)
@@ -7167,7 +7264,7 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
 
 1. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
 2. ESLint issues:
-   - MMM-Plenticore.js: Line 135, Column 15: 'self' is assigned a value but never used. (rule: no-unused-vars)
+   - MMM-Plenticore.js: Line 133, Column 15: 'self' is assigned a value but never used. (rule: no-unused-vars)
    - lib/kostal.js: Line 493, Column 27: 'e' is defined but never used. (rule: no-unused-vars)
    - node_helper.js: Line 634, Column 82: 'headers' is defined but never used. (rule: no-unused-vars)
    - node_helper.js: Line 673, Column 87: 'headers' is defined but never used. (rule: no-unused-vars)
@@ -7176,10 +7273,10 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
    - node_helper.js: Line 757, Column 71: 'headers' is defined but never used. (rule: no-unused-vars)
    - node_helper.js: Line 763, Column 71: 'headers' is defined but never used. (rule: no-unused-vars)
    - node_helper.js: Line 852, Column 79: 'headers' is defined but never used. (rule: no-unused-vars)
-   - node_helper.js: Line 1155, Column 82: 'headers' is defined but never used. (rule: no-unused-vars)
-   - node_helper.js: Line 1164, Column 21: 'polling' is assigned a value but never used. (rule: no-unused-vars)
-   - node_helper.js: Line 1311, Column 29: 'callback' is defined but never used. (rule: no-unused-vars)
-   - node_helper.js: Line 1313, Column 77: 'headers' is defined but never used. (rule: no-unused-vars)
+   - node_helper.js: Line 1161, Column 82: 'headers' is defined but never used. (rule: no-unused-vars)
+   - node_helper.js: Line 1170, Column 21: 'polling' is assigned a value but never used. (rule: no-unused-vars)
+   - node_helper.js: Line 1317, Column 29: 'callback' is defined but never used. (rule: no-unused-vars)
+   - node_helper.js: Line 1319, Column 77: 'headers' is defined but never used. (rule: no-unused-vars)
 
 
 ### [MMM-PlexNowPlaying by glitch452](https://github.com/glitch452/MMM-PlexNowPlaying)
@@ -7393,10 +7490,10 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
 2. Issues are not enabled in the GitHub repository. So users cannot report bugs. Please enable issues in your repo.
 3. Recommendation: Found `new Date()` in file `MMM-PrixCarburants.js`: Consider replacing it by `new Date(Date.now())`. It's helpful for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
 4. Information: There are updates for 8 dependencie(s):
-   - @eslint/js                ^8.57.0  →  ^9.13.0
-   - @stylistic/eslint-plugin   ^1.8.1  →   ^2.9.0
+   - @eslint/js                ^8.57.0  →  ^9.14.0
+   - @stylistic/eslint-plugin   ^1.8.1  →  ^2.10.1
    - esbuild                   ^0.22.0  →  ^0.24.0
-   - eslint                    ^8.57.0  →  ^9.13.0
+   - eslint                    ^8.57.0  →  ^9.14.0
    - eslint-plugin-import      ^2.29.1  →  ^2.31.0
    - glob                      ^10.4.2  →  ^11.0.0
    - simple-xml-to-json         ^1.2.2  →   ^1.2.3
@@ -7478,32 +7575,26 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
 
 ### [MMM-PublicTransportBerlin by deg0nz](https://github.com/deg0nz/MMM-PublicTransportBerlin)
 
-1. Information: There are updates for 4 dependencie(s):
-   - @eslint/js   ^9.12.0  →   ^9.13.0
-   - eslint       ^9.12.0  →   ^9.13.0
-   - globals     ^15.10.0  →  ^15.11.0
-   - stylelint    ^16.9.0  →  ^16.10.0
+1. Information: There are updates for 6 dependencie(s):
+   - @eslint/js                 ^9.12.0  →   ^9.14.0
+   - @stylistic/eslint-plugin   ^2.10.0  →   ^2.10.1
+   - eslint                     ^9.13.0  →   ^9.14.0
+   - eslint-plugin-import-x      ^4.4.0  →    ^4.4.2
+   - eslint-plugin-jsonc        ^2.16.0  →   ^2.18.1
+   - globals                   ^15.10.0  →  ^15.12.0
 
 2. ESLint issues:
    - BvgFetcher.js: Line 11, Column 41: Unable to resolve path to module 'hafas-client'. (rule: import/no-unresolved)
    - BvgFetcher.js: Line 12, Column 36: Unable to resolve path to module 'hafas-client/p/bvg/index.js'. (rule: import/no-unresolved)
-   - convenience/query_stations.mjs: Line 97, Column 27: Parsing error: Unexpected token import (rule: None)
-   - eslint.config.mjs: Line 1, Column 33: Unable to resolve path to module 'eslint-plugin-import-x'. (rule: import/no-unresolved)
-   - eslint.config.mjs: Line 3, Column 31: Unable to resolve path to module 'eslint-plugin-jsonc'. (rule: import/no-unresolved)
 
 
 ### [MMM-PublicTransportHafas by KristjanESPERANTO](https://github.com/KristjanESPERANTO/MMM-PublicTransportHafas)
 
-1. ESLint issues:
-   - MMM-PublicTransportHafas.js: Line 1, Column 1: Definition for rule '@stylistic/no-multi-spaces' was not found. (rule: @stylistic/no-multi-spaces)
-   - MMM-PublicTransportHafas.js: Line 9, Column 1: Unused eslint-disable directive (no problems were reported from 'no-var'). (rule: None)
-   - convenience/query_stations.mjs: Line 95, Column 27: Parsing error: Unexpected token import (rule: None)
+1. Information: There are updates for 1 dependencie(s):
+   - cspell  ^8.15.7  →  ^8.16.0
+
+2. ESLint issues:
    - core/HafasFetcher.js: Line 42, Column 41: Unable to resolve path to module 'hafas-client'. (rule: import/no-unresolved)
-   - eslint.config.mjs: Line 3, Column 30: Parse errors in imported module '@eslint/json': Unexpected token = (45:9) (rule: import/namespace)
-   - eslint.config.mjs: Line 3, Column 30: Parse errors in imported module '@eslint/json': Unexpected token = (45:9) (rule: import/default)
-   - eslint.config.mjs: Line 3, Column 30: Parse errors in imported module '@eslint/json': Unexpected token = (45:9) (rule: import/no-named-as-default)
-   - eslint.config.mjs: Line 3, Column 30: Parse errors in imported module '@eslint/json': Unexpected token = (45:9) (rule: import/no-named-as-default-member)
-   - eslint.config.mjs: Line 4, Column 34: Unable to resolve path to module '@eslint/markdown'. (rule: import/no-unresolved)
 
 
 ### [MMM-PublicTransportVVO by ChristianGeie](https://github.com/ChristianGeie/MMM-PublicTransportVVO)
@@ -7578,10 +7669,10 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
 ### [MMM-Quiz by Dennis-Rosenbaum](https://github.com/Dennis-Rosenbaum/MMM-Quiz)
 
 1. Information: There are updates for 4 dependencie(s):
-   - @eslint/js                ^9.10.0  →   ^9.13.0
-   - @stylistic/eslint-plugin   ^2.7.2  →    ^2.9.0
-   - eslint                    ^9.10.0  →   ^9.13.0
-   - globals                   ^15.9.0  →  ^15.11.0
+   - @eslint/js                ^9.10.0  →   ^9.14.0
+   - @stylistic/eslint-plugin   ^2.7.2  →   ^2.10.1
+   - eslint                    ^9.10.0  →   ^9.14.0
+   - globals                   ^15.9.0  →  ^15.12.0
 
 
 ### [MMM-Quotable by dfanica](https://github.com/dfanica/MMM-Quotable)
@@ -7612,16 +7703,18 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
 
 ### [EXT-RadioPlayer by bugsounet](https://github.com/bugsounet/EXT-RadioPlayer)
 
-1. Information: There are updates for 6 dependencie(s):
-   - @eslint/js                ^8.57.0  →  ^9.13.0
-   - @stylistic/eslint-plugin   ^1.8.1  →   ^2.9.0
-   - esbuild                   ^0.22.0  →  ^0.24.0
-   - eslint                    ^8.57.0  →  ^9.13.0
-   - eslint-plugin-import      ^2.29.1  →  ^2.31.0
-   - glob                      ^10.4.2  →  ^11.0.0
+1. Information: There are updates for 3 dependencie(s):
+   - @stylistic/eslint-plugin   ^2.9.0  →  ^2.10.1
+   - eslint                    ^9.13.0  →  ^9.14.0
+   - glob                      ^10.4.5  →  ^11.0.0
 
-2.  WARN  eslint@8.57.0: 2024-02-23T20:39:43.282Z
-deprecated: This version is no longer supported. Please see https://eslint.org/version-support for other options.
+2. ESLint issues:
+   - EXT-RadioPlayer.js: Line 211, Column 11: 'container' is assigned a value but never used. (rule: no-unused-vars)
+   - EXT-RadioPlayer.js: Line 219, Column 11: 'backOffSet' is assigned a value but never used. (rule: no-unused-vars)
+   - installer/minify.js: Line 27, Column 7: 'error' is assigned a value but never used. (rule: no-unused-vars)
+   - installer/minify.js: Line 38, Column 14: 'e' is defined but never used. (rule: no-unused-vars)
+   - node_helper.js: Line 8, Column 15: 'args' is defined but never used. (rule: no-unused-vars)
+
 
 ### [MMM-RaiderIO by jwcnewton](https://github.com/jwcnewton/MMM-RaiderIO)
 
@@ -7644,14 +7737,14 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
 ### [MMM-RAIN-MAP by jalibu](https://github.com/jalibu/MMM-RAIN-MAP)
 
 1. Information: There are updates for 8 dependencie(s):
-   - @eslint/js                    ^9.9.1  →  ^9.13.0
+   - @eslint/js                    ^9.9.1  →  ^9.14.0
    - @rollup/plugin-commonjs      ^26.0.1  →  ^28.0.1
    - @rollup/plugin-node-resolve  ^15.2.3  →  ^15.3.0
    - @rollup/plugin-typescript    ^11.1.6  →  ^12.1.1
-   - eslint                        ^9.9.1  →  ^9.13.0
-   - rollup                       ^4.21.1  →  ^4.24.3
+   - eslint                        ^9.9.1  →  ^9.14.0
+   - rollup                       ^4.21.1  →  ^4.26.0
    - typescript                    ^5.5.4  →   ^5.6.3
-   - typescript-eslint             ^8.3.0  →  ^8.12.2
+   - typescript-eslint             ^8.3.0  →  ^8.14.0
 
 2. ESLint issues:
    - MMM-RAIN-MAP.js: Line 28, Column 17081: Expected to return a value in method 'get'. (rule: getter-return)
@@ -7663,7 +7756,6 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
    - MMM-RAIN-MAP.js: Line 28, Column 35686: 't' is defined but never used. (rule: no-unused-vars)
    - MMM-RAIN-MAP.js: Line 28, Column 130360: 't' is defined but never used. (rule: no-unused-vars)
    - MMM-RAIN-MAP.js: Line 28, Column 130362: Empty block statement. (rule: no-empty)
-   - eslint.config.mjs: Line 2, Column 22: Unable to resolve path to module 'typescript-eslint'. (rule: import/no-unresolved)
    - rollup.config.mjs: Line 6, Column 34: Parsing error: Unexpected token assert (rule: None)
 
 
@@ -8163,14 +8255,22 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
 6. Deprecated: Found `require("request")` in file `node_helper.js`: Replace it with built-in fetch.
 7. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
 
+### [MMM-S3Photos by uphillcheddar](https://github.com/uphillcheddar/MMM-S3Photos)
+
+1. Recommendation: Found `new Date()` in file `delete_samples.js`: Consider replacing it by `new Date(Date.now())`. It's helpful for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
+2. Recommendation: Found `new Date()` in file `node_helper.js`: Consider replacing it by `new Date(Date.now())`. It's helpful for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
+3. Typo: Found `Magic Mirror` in file `readme.md`: Replace it with `MagicMirror²`.
+4. Recommendation: Found `new Date()` in file `upload_from_usb.js`: Consider replacing it by `new Date(Date.now())`. It's helpful for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
+5. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
+
 ### [MMM-Saint by bugsounet](https://github.com/bugsounet/MMM-Saint)
 
 1. Typo: Found `Magic Mirror` in file `MMM-Saint.css`: Replace it with `MagicMirror²`.
 2. Information: There are updates for 6 dependencie(s):
-   - @eslint/js                ^8.57.0  →  ^9.13.0
-   - @stylistic/eslint-plugin   ^1.8.1  →   ^2.9.0
+   - @eslint/js                ^8.57.0  →  ^9.14.0
+   - @stylistic/eslint-plugin   ^1.8.1  →  ^2.10.1
    - esbuild                   ^0.22.0  →  ^0.24.0
-   - eslint                    ^8.57.0  →  ^9.13.0
+   - eslint                    ^8.57.0  →  ^9.14.0
    - eslint-plugin-import      ^2.29.1  →  ^2.31.0
    - glob                      ^10.4.2  →  ^11.0.0
 
@@ -8190,10 +8290,10 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
 
 1. Recommendation: No lint script found in package.json. It is recommended to add one.
 2. Information: There are updates for 4 dependencie(s):
-   - @eslint/js    ^9.8.0  →   ^9.13.0
+   - @eslint/js    ^9.8.0  →   ^9.14.0
    - body-parser  ^1.20.2  →   ^1.20.3
-   - eslint        ^9.8.0  →   ^9.13.0
-   - globals      ^15.9.0  →  ^15.11.0
+   - eslint        ^9.8.0  →   ^9.14.0
+   - globals      ^15.9.0  →  ^15.12.0
 
 
 ### [MMM-Scrapey by AndyHazz](https://github.com/AndyHazz/MMM-Scrapey)
@@ -8207,14 +8307,20 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
 
 ### [EXT-Screen by bugsounet](https://github.com/bugsounet/EXT-Screen)
 
-1. Deprecated: Found `new Buffer(` in file `progressbar.js`: This is deprecated. Please update: <https://nodejs.org/api/buffer.html>.
-2. Information: There are updates for 6 dependencie(s):
-   - @eslint/js                ^8.57.0  →  ^9.13.0
-   - @stylistic/eslint-plugin   ^1.8.1  →   ^2.9.0
-   - esbuild                   ^0.22.0  →  ^0.24.0
-   - eslint                    ^8.57.0  →  ^9.13.0
-   - eslint-plugin-import      ^2.29.1  →  ^2.31.0
-   - glob                      ^10.4.2  →  ^11.0.0
+1. Information: There are updates for 3 dependencie(s):
+   - @stylistic/eslint-plugin   ^2.9.0  →  ^2.10.1
+   - eslint                    ^9.13.0  →  ^9.14.0
+   - glob                      ^10.4.5  →  ^11.0.0
+
+2. ESLint issues:
+   - EXT-Screen.js: Line 6, Column 5: 'logScreen' is assigned a value but never used. (rule: no-unused-vars)
+   - EXT-Screen.js: Line 6, Column 21: 'args' is defined but never used. (rule: no-unused-vars)
+   - EXT-Screen.js: Line 30, Column 45: 'payload' is defined but never used. (rule: no-unused-vars)
+   - EXT-Screen.js: Line 157, Column 55: 'module' is defined but never used. (rule: no-unused-vars)
+   - EXT-Screen.js: Line 174, Column 11: 'params' is assigned a value but never used. (rule: no-unused-vars)
+   - installer/minify.js: Line 47, Column 7: 'error' is assigned a value but never used. (rule: no-unused-vars)
+   - installer/minify.js: Line 64, Column 14: 'e' is defined but never used. (rule: no-unused-vars)
+   - node_helper.js: Line 9, Column 45: 'payload' is defined but never used. (rule: no-unused-vars)
 
 
 ### [MMM-Screen-Powersave-Notification by Tom-Hirschberger](https://github.com/Tom-Hirschberger/MMM-Screen-Powersave-Notification)
@@ -8322,6 +8428,16 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
 7. Recommendation: The README seems not to have an update instruction (the word 'update' is missing). Please add one.
 8. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
 
+### [MMM-Sensibo by wlans](https://github.com/wlans/MMM-Sensibo)
+
+1. `package.json` issue: No repository field.
+2. There are no keywords in 'package.json'. We would use them as tags on the module list page.
+3. No image found.
+4. Typo: Found `[MagicMirror]` in file `README.md`: Replace it with `[MagicMirror²]`.
+5. Outdated: Found `MichMich/MagicMirror` in file `README.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
+6. Recommendation: Found `require("https")` in file `node_helper.js`: Replace "https" by "node:https".
+7. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
+
 ### [MMM-SensorGateway by mattileh](https://github.com/mattileh/MMM-SensorGateway)
 
 1. `package.json` issue: No repository field.
@@ -8428,6 +8544,19 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
 3. Deprecated: Found `require('request')` in file `node_helper.js`: Replace it with built-in fetch.
 4. Recommendation: Found `new Date()` in file `node_helper.js`: Consider replacing it by `new Date(Date.now())`. It's helpful for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
 5. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
+
+### [ShellyPV by ChrisF1976](https://github.com/ChrisF1976/ShellyPV)
+
+1. There is no `package.json`. We need this file to gather information about the module for the module list page.
+2. Recommendation: Module name doesn't follow the recommended pattern (it doesn't start with `MMM-`). Consider renaming your module.
+3. Recommendation: Found `axios` in file `node_helper.js`: Replace it with built-in fetch.
+4. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
+
+### [MMM-ShellyStatusTable by ChrisF1976](https://github.com/ChrisF1976/MMM-ShellyStatusTable)
+
+1. There is no `package.json`. We need this file to gather information about the module for the module list page.
+2. Recommendation: Found `axios` in file `node_helper.js`: Replace it with built-in fetch.
+3. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
 
 ### [MMM-ShipmentTracking by fewieden](https://github.com/fewieden/MMM-ShipmentTracking)
 
@@ -8600,19 +8729,134 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
 
 ### [EXT-SmartHome by bugsounet](https://github.com/bugsounet/EXT-SmartHome)
 
-1. Information: There are updates for 9 dependencie(s):
-   - @eslint/js                 ^8.57.0  →   ^9.13.0
-   - @stylistic/eslint-plugin    ^1.8.1  →    ^2.9.0
-   - body-parser                ^1.20.2  →   ^1.20.3
-   - esbuild                    ^0.21.5  →   ^0.24.0
-   - eslint                     ^8.57.0  →   ^9.13.0
-   - eslint-plugin-import       ^2.29.1  →   ^2.31.0
-   - glob                       ^10.4.2  →   ^11.0.0
-   - google-auth-library        ^9.11.0  →   ^9.14.2
-   - googleapis                ^140.0.1  →  ^144.0.0
+1. Information: There are updates for 3 dependencie(s):
+   - @stylistic/eslint-plugin   ^2.9.0  →  ^2.10.1
+   - eslint                    ^9.13.0  →  ^9.14.0
+   - glob                      ^10.4.5  →  ^11.0.0
 
-2.  WARN  eslint@8.57.0: 2024-02-23T20:39:43.282Z
-deprecated: This version is no longer supported. Please see https://eslint.org/version-support for other options.
+2. ESLint issues:
+   - components/smarthome.js: Line 13, Column 15: 'args' is defined but never used. (rule: no-unused-vars)
+   - components/smarthome.js: Line 76, Column 18: 'e' is defined but never used. (rule: no-unused-vars)
+   - components/smarthome.js: Line 110, Column 9: 'urlencodedParser' is assigned a value but never used. (rule: no-unused-vars)
+   - components/smarthome.js: Line 735, Column 13: 'res' is assigned a value but never used. (rule: no-unused-vars)
+   - components/systemd.js: Line 25, Column 21: 'stderr' is assigned a value but never used. (rule: no-unused-vars)
+   - components/systemd.js: Line 34, Column 15: 'stdout' is assigned a value but never used. (rule: no-unused-vars)
+   - components/systemd.js: Line 34, Column 23: 'stderr' is assigned a value but never used. (rule: no-unused-vars)
+   - components/systemd.js: Line 53, Column 15: 'stdout' is assigned a value but never used. (rule: no-unused-vars)
+   - components/systemd.js: Line 53, Column 23: 'stderr' is assigned a value but never used. (rule: no-unused-vars)
+   - installer/minify.js: Line 53, Column 7: 'error' is assigned a value but never used. (rule: no-unused-vars)
+   - installer/minify.js: Line 70, Column 14: 'e' is defined but never used. (rule: no-unused-vars)
+   - installer/setup.js: Line 41, Column 32: 'reject' is defined but never used. (rule: no-unused-vars)
+   - installer/setup.js: Line 69, Column 64: 'data' is defined but never used. (rule: no-unused-vars)
+   - installer/setup.js: Line 86, Column 76: 'data' is defined but never used. (rule: no-unused-vars)
+   - node_helper.js: Line 7, Column 15: 'args' is defined but never used. (rule: no-unused-vars)
+   - website/assets/bootstrap/js/bootstrap.min.js: Line 6, Column 5560: 'e' is defined but never used. (rule: no-unused-vars)
+   - website/assets/bootstrap/js/bootstrap.min.js: Line 6, Column 6207: 'e' is defined but never used. (rule: no-unused-vars)
+   - website/assets/bootstrap/js/bootstrap.min.js: Line 6, Column 60285: Expected a conditional expression and instead saw an assignment. (rule: no-cond-assign)
+   - website/assets/js/aos.min.js: Line 1, Column 1163: 't' is defined but never used. (rule: no-unused-vars)
+   - website/assets/js/aos.min.js: Line 1, Column 2693: 'e' is defined but never used. (rule: no-unused-vars)
+   - website/assets/js/aos.min.js: Line 1, Column 2695: 't' is defined but never used. (rule: no-unused-vars)
+   - website/assets/js/aos.min.js: Line 1, Column 2700: Unexpected comma in middle of array. (rule: no-sparse-arrays)
+   - website/assets/js/aos.min.js: Line 1, Column 2701: Unexpected comma in middle of array. (rule: no-sparse-arrays)
+   - website/assets/js/aos.min.js: Line 1, Column 2702: Unexpected comma in middle of array. (rule: no-sparse-arrays)
+   - website/assets/js/aos.min.js: Line 1, Column 2703: Unexpected comma in middle of array. (rule: no-sparse-arrays)
+   - website/assets/js/aos.min.js: Line 1, Column 7260: Expected a conditional expression and instead saw an assignment. (rule: no-cond-assign)
+   - website/assets/js/aos.min.js: Line 1, Column 7260: 'i' is assigned a value but never used. (rule: no-unused-vars)
+   - website/assets/js/aos.min.js: Line 1, Column 8712: Unnecessary escape character: \-. (rule: no-useless-escape)
+   - website/assets/js/aos.min.js: Line 1, Column 8793: Unnecessary escape character: \-. (rule: no-useless-escape)
+   - website/assets/js/aos.min.js: Line 1, Column 8858: Unnecessary escape character: \-. (rule: no-useless-escape)
+   - website/assets/js/aos.min.js: Line 1, Column 8885: Unnecessary escape character: \-. (rule: no-useless-escape)
+   - website/assets/js/aos.min.js: Line 1, Column 8906: Unnecessary escape character: \-. (rule: no-useless-escape)
+   - website/assets/js/aos.min.js: Line 1, Column 8944: Unnecessary escape character: \-. (rule: no-useless-escape)
+   - website/assets/js/aos.min.js: Line 1, Column 8978: Unnecessary escape character: \-. (rule: no-useless-escape)
+   - website/assets/js/aos.min.js: Line 1, Column 9047: Unnecessary escape character: \-. (rule: no-useless-escape)
+   - website/assets/js/aos.min.js: Line 1, Column 9070: Unnecessary escape character: \-. (rule: no-useless-escape)
+   - website/assets/js/aos.min.js: Line 1, Column 9075: Unnecessary escape character: \-. (rule: no-useless-escape)
+   - website/assets/js/aos.min.js: Line 1, Column 9113: Unnecessary escape character: \-. (rule: no-useless-escape)
+   - website/assets/js/aos.min.js: Line 1, Column 9126: Unnecessary escape character: \-. (rule: no-useless-escape)
+   - website/assets/js/aos.min.js: Line 1, Column 9151: Unnecessary escape character: \-. (rule: no-useless-escape)
+   - website/assets/js/aos.min.js: Line 1, Column 9160: Unnecessary escape character: \-. (rule: no-useless-escape)
+   - website/assets/js/aos.min.js: Line 1, Column 9193: Unnecessary escape character: \-. (rule: no-useless-escape)
+   - website/assets/js/aos.min.js: Line 1, Column 9217: Unnecessary escape character: \-. (rule: no-useless-escape)
+   - website/assets/js/aos.min.js: Line 1, Column 9321: Unnecessary escape character: \-. (rule: no-useless-escape)
+   - website/assets/js/aos.min.js: Line 1, Column 9365: Unnecessary escape character: \-. (rule: no-useless-escape)
+   - website/assets/js/aos.min.js: Line 1, Column 9386: Unnecessary escape character: \-. (rule: no-useless-escape)
+   - website/assets/js/aos.min.js: Line 1, Column 9428: Unnecessary escape character: \-. (rule: no-useless-escape)
+   - website/assets/js/aos.min.js: Line 1, Column 9481: Unnecessary escape character: \-. (rule: no-useless-escape)
+   - website/assets/js/aos.min.js: Line 1, Column 9578: Unnecessary escape character: \-. (rule: no-useless-escape)
+   - website/assets/js/aos.min.js: Line 1, Column 9663: Unnecessary escape character: \-. (rule: no-useless-escape)
+   - website/assets/js/aos.min.js: Line 1, Column 9698: Unnecessary escape character: \-. (rule: no-useless-escape)
+   - website/assets/js/aos.min.js: Line 1, Column 9727: Unnecessary escape character: \-. (rule: no-useless-escape)
+   - website/assets/js/aos.min.js: Line 1, Column 9733: Unnecessary escape character: \-. (rule: no-useless-escape)
+   - website/assets/js/aos.min.js: Line 1, Column 9755: Unnecessary escape character: \-. (rule: no-useless-escape)
+   - website/assets/js/aos.min.js: Line 1, Column 9764: Unnecessary escape character: \-. (rule: no-useless-escape)
+   - website/assets/js/aos.min.js: Line 1, Column 9838: Unnecessary escape character: \-. (rule: no-useless-escape)
+   - website/assets/js/aos.min.js: Line 1, Column 9845: Unnecessary escape character: \-. (rule: no-useless-escape)
+   - website/assets/js/aos.min.js: Line 1, Column 9860: Unnecessary escape character: \-. (rule: no-useless-escape)
+   - website/assets/js/aos.min.js: Line 1, Column 9884: Unnecessary escape character: \-. (rule: no-useless-escape)
+   - website/assets/js/aos.min.js: Line 1, Column 9896: Unnecessary escape character: \-. (rule: no-useless-escape)
+   - website/assets/js/aos.min.js: Line 1, Column 9904: Unnecessary escape character: \-. (rule: no-useless-escape)
+   - website/assets/js/aos.min.js: Line 1, Column 9954: Unnecessary escape character: \-. (rule: no-useless-escape)
+   - website/assets/js/aos.min.js: Line 1, Column 9958: Unnecessary escape character: \-. (rule: no-useless-escape)
+   - website/assets/js/aos.min.js: Line 1, Column 10011: Unnecessary escape character: \-. (rule: no-useless-escape)
+   - website/assets/js/aos.min.js: Line 1, Column 10017: Unnecessary escape character: \-. (rule: no-useless-escape)
+   - website/assets/js/aos.min.js: Line 1, Column 10032: Unnecessary escape character: \-. (rule: no-useless-escape)
+   - website/assets/js/aos.min.js: Line 1, Column 10036: Unnecessary escape character: \-. (rule: no-useless-escape)
+   - website/assets/js/aos.min.js: Line 1, Column 10058: Unnecessary escape character: \-. (rule: no-useless-escape)
+   - website/assets/js/aos.min.js: Line 1, Column 10070: Unnecessary escape character: \-. (rule: no-useless-escape)
+   - website/assets/js/aos.min.js: Line 1, Column 10131: Unnecessary escape character: \-. (rule: no-useless-escape)
+   - website/assets/js/aos.min.js: Line 1, Column 10189: Unnecessary escape character: \-. (rule: no-useless-escape)
+   - website/assets/js/aos.min.js: Line 1, Column 10236: Unnecessary escape character: \-. (rule: no-useless-escape)
+   - website/assets/js/aos.min.js: Line 1, Column 10252: Unnecessary escape character: \-. (rule: no-useless-escape)
+   - website/assets/js/aos.min.js: Line 1, Column 10668: Unnecessary escape character: \-. (rule: no-useless-escape)
+   - website/assets/js/aos.min.js: Line 1, Column 10749: Unnecessary escape character: \-. (rule: no-useless-escape)
+   - website/assets/js/aos.min.js: Line 1, Column 10814: Unnecessary escape character: \-. (rule: no-useless-escape)
+   - website/assets/js/aos.min.js: Line 1, Column 10841: Unnecessary escape character: \-. (rule: no-useless-escape)
+   - website/assets/js/aos.min.js: Line 1, Column 10862: Unnecessary escape character: \-. (rule: no-useless-escape)
+   - website/assets/js/aos.min.js: Line 1, Column 10900: Unnecessary escape character: \-. (rule: no-useless-escape)
+   - website/assets/js/aos.min.js: Line 1, Column 10934: Unnecessary escape character: \-. (rule: no-useless-escape)
+   - website/assets/js/aos.min.js: Line 1, Column 11003: Unnecessary escape character: \-. (rule: no-useless-escape)
+   - website/assets/js/aos.min.js: Line 1, Column 11026: Unnecessary escape character: \-. (rule: no-useless-escape)
+   - website/assets/js/aos.min.js: Line 1, Column 11031: Unnecessary escape character: \-. (rule: no-useless-escape)
+   - website/assets/js/aos.min.js: Line 1, Column 11069: Unnecessary escape character: \-. (rule: no-useless-escape)
+   - website/assets/js/aos.min.js: Line 1, Column 11082: Unnecessary escape character: \-. (rule: no-useless-escape)
+   - website/assets/js/aos.min.js: Line 1, Column 11107: Unnecessary escape character: \-. (rule: no-useless-escape)
+   - website/assets/js/aos.min.js: Line 1, Column 11116: Unnecessary escape character: \-. (rule: no-useless-escape)
+   - website/assets/js/aos.min.js: Line 1, Column 11149: Unnecessary escape character: \-. (rule: no-useless-escape)
+   - website/assets/js/aos.min.js: Line 1, Column 11173: Unnecessary escape character: \-. (rule: no-useless-escape)
+   - website/assets/js/aos.min.js: Line 1, Column 11277: Unnecessary escape character: \-. (rule: no-useless-escape)
+   - website/assets/js/aos.min.js: Line 1, Column 11321: Unnecessary escape character: \-. (rule: no-useless-escape)
+   - website/assets/js/aos.min.js: Line 1, Column 11342: Unnecessary escape character: \-. (rule: no-useless-escape)
+   - website/assets/js/aos.min.js: Line 1, Column 11384: Unnecessary escape character: \-. (rule: no-useless-escape)
+   - website/assets/js/aos.min.js: Line 1, Column 11437: Unnecessary escape character: \-. (rule: no-useless-escape)
+   - website/assets/js/aos.min.js: Line 1, Column 11534: Unnecessary escape character: \-. (rule: no-useless-escape)
+   - website/assets/js/aos.min.js: Line 1, Column 11619: Unnecessary escape character: \-. (rule: no-useless-escape)
+   - website/assets/js/aos.min.js: Line 1, Column 11654: Unnecessary escape character: \-. (rule: no-useless-escape)
+   - website/assets/js/aos.min.js: Line 1, Column 11683: Unnecessary escape character: \-. (rule: no-useless-escape)
+   - website/assets/js/aos.min.js: Line 1, Column 11689: Unnecessary escape character: \-. (rule: no-useless-escape)
+   - website/assets/js/aos.min.js: Line 1, Column 11711: Unnecessary escape character: \-. (rule: no-useless-escape)
+   - website/assets/js/aos.min.js: Line 1, Column 11720: Unnecessary escape character: \-. (rule: no-useless-escape)
+   - website/assets/js/aos.min.js: Line 1, Column 11794: Unnecessary escape character: \-. (rule: no-useless-escape)
+   - website/assets/js/aos.min.js: Line 1, Column 11801: Unnecessary escape character: \-. (rule: no-useless-escape)
+   - website/assets/js/aos.min.js: Line 1, Column 11816: Unnecessary escape character: \-. (rule: no-useless-escape)
+   - website/assets/js/aos.min.js: Line 1, Column 11840: Unnecessary escape character: \-. (rule: no-useless-escape)
+   - website/assets/js/aos.min.js: Line 1, Column 11852: Unnecessary escape character: \-. (rule: no-useless-escape)
+   - website/assets/js/aos.min.js: Line 1, Column 11860: Unnecessary escape character: \-. (rule: no-useless-escape)
+   - website/assets/js/aos.min.js: Line 1, Column 11910: Unnecessary escape character: \-. (rule: no-useless-escape)
+   - website/assets/js/aos.min.js: Line 1, Column 11914: Unnecessary escape character: \-. (rule: no-useless-escape)
+   - website/assets/js/aos.min.js: Line 1, Column 11967: Unnecessary escape character: \-. (rule: no-useless-escape)
+   - website/assets/js/aos.min.js: Line 1, Column 11973: Unnecessary escape character: \-. (rule: no-useless-escape)
+   - website/assets/js/aos.min.js: Line 1, Column 11988: Unnecessary escape character: \-. (rule: no-useless-escape)
+   - website/assets/js/aos.min.js: Line 1, Column 11992: Unnecessary escape character: \-. (rule: no-useless-escape)
+   - website/assets/js/aos.min.js: Line 1, Column 12014: Unnecessary escape character: \-. (rule: no-useless-escape)
+   - website/assets/js/aos.min.js: Line 1, Column 12026: Unnecessary escape character: \-. (rule: no-useless-escape)
+   - website/assets/js/aos.min.js: Line 1, Column 12087: Unnecessary escape character: \-. (rule: no-useless-escape)
+   - website/assets/js/aos.min.js: Line 1, Column 12145: Unnecessary escape character: \-. (rule: no-useless-escape)
+   - website/assets/js/aos.min.js: Line 1, Column 12192: Unnecessary escape character: \-. (rule: no-useless-escape)
+   - website/assets/js/aos.min.js: Line 1, Column 12208: Unnecessary escape character: \-. (rule: no-useless-escape)
+   - website/assets/js/aos.min.js: Line 1, Column 12894: 'r' is defined but never used. (rule: no-unused-vars)
+   - website/assets/js/aos.min.js: Line 1, Column 13116: 'n' is defined but never used. (rule: no-unused-vars)
+
 
 ### [MMM-SmartTouch by EbenKouao](https://github.com/EbenKouao/MMM-SmartTouch)
 
@@ -8856,15 +9100,10 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
 ### [EXT-Spotify by bugsounet](https://github.com/bugsounet/EXT-Spotify)
 
 1. Recommendation: Found `https://cdnjs.cloudflare.com` in file `EXT-Spotify.js`: It looks like a package is loaded via CDN. It would be better if the package were installed locally via npm.
-2. Recommendation: Found `https://cdn.jsdelivr.net` in file `EXT-Spotify.js`: It looks like a package is loaded via CDN. It would be better if the package were installed locally via npm.
-3. Information: There are updates for 7 dependencie(s):
-   - @eslint/js                ^8.57.0  →  ^9.13.0
-   - @stylistic/eslint-plugin   ^1.8.1  →   ^2.9.0
-   - esbuild                   ^0.22.0  →  ^0.24.0
-   - eslint                    ^8.57.0  →  ^9.13.0
-   - eslint-plugin-import      ^2.29.1  →  ^2.31.0
-   - express                   ^4.19.2  →  ^4.21.1
-   - glob                      ^10.4.2  →  ^11.0.0
+2. Information: There are updates for 3 dependencie(s):
+   - @stylistic/eslint-plugin   ^2.9.0  →  ^2.10.1
+   - eslint                    ^9.13.0  →  ^9.14.0
+   - glob                      ^10.4.5  →  ^11.0.0
 
 
 ### [MMM-SpotifyConnectUI by CatoAntonsen](https://github.com/CatoAntonsen/MMM-SpotifyConnectUI)
@@ -8993,18 +9232,18 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
 
 ### [EXT-StreamDeck by bugsounet](https://github.com/bugsounet/EXT-StreamDeck)
 
-1. Information: There are updates for 8 dependencie(s):
+1. Information: There are updates for 5 dependencie(s):
    - @elgato-stream-deck/node    ^6.2.0  →   ^7.0.2
-   - @eslint/js                 ^8.57.0  →  ^9.13.0
-   - @stylistic/eslint-plugin    ^1.8.1  →   ^2.9.0
-   - esbuild                    ^0.22.0  →  ^0.24.0
-   - eslint                     ^8.57.0  →  ^9.13.0
-   - eslint-plugin-import       ^2.29.1  →  ^2.31.0
-   - glob                       ^10.4.2  →  ^11.0.0
+   - @stylistic/eslint-plugin    ^2.9.0  →  ^2.10.1
+   - eslint                     ^9.13.0  →  ^9.14.0
+   - glob                       ^10.4.5  →  ^11.0.0
    - jimp                      ^0.22.12  →   ^1.6.0
 
-2.  WARN  eslint@8.57.0: 2024-02-23T20:39:43.282Z
-deprecated: This version is no longer supported. Please see https://eslint.org/version-support for other options.
+2. ESLint issues:
+   - installer/minify.js: Line 47, Column 7: 'error' is assigned a value but never used. (rule: no-unused-vars)
+   - installer/minify.js: Line 64, Column 14: 'e' is defined but never used. (rule: no-unused-vars)
+   - node_helper.js: Line 68, Column 24: Promise executor functions should not be async. (rule: no-async-promise-executor)
+
 
 ### [MMM-SugarValue by balharrie](https://github.com/balharrie/MMM-SugarValue)
 
@@ -9073,9 +9312,10 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
 ### [MMM-SwissLakeTemperature by roufri](https://github.com/roufri/MMM-SwissLakeTemperature)
 
 1. There is no `package.json`. We need this file to gather information about the module for the module list page.
-2. Recommendation: The README seems not to have an update instruction (the word 'update' is missing). Please add one.
-3. Deprecated: Found `require("request")` in file `node_helper.js`: Replace it with built-in fetch.
-4. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
+2. Recommendation: Found `new Date()` in file `MMM-SwissLakeTemperature.js`: Consider replacing it by `new Date(Date.now())`. It's helpful for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
+3. Recommendation: The README seems not to have an update instruction (the word 'update' is missing). Please add one.
+4. Deprecated: Found `require("request")` in file `node_helper.js`: Replace it with built-in fetch.
+5. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
 
 ### [MMM-SwissSmartUrbanHeatMap by git-pesche](https://github.com/git-pesche/MMM-SwissSmartUrbanHeatMap)
 
@@ -9171,7 +9411,7 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
 3. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
 4. Information: There are updates for 2 dependencie(s):
    - mocha-logger      ^1.0.7  →   ^1.0.8
-   - node-tado-client  ^0.9.3  →  ^0.18.0
+   - node-tado-client  ^0.9.3  →  ^0.19.0
 
 
 ### [MMM-TAF by imperian](https://github.com/imperian/MMM-TAF)
@@ -9232,13 +9472,10 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
 ### [EXT-TelegramBot by bugsounet](https://github.com/bugsounet/EXT-TelegramBot)
 
 1. Recommendation: The README seems not to have an update instruction (the word 'update' is missing). Please add one.
-2. Information: There are updates for 6 dependencie(s):
-   - @eslint/js                ^8.57.0  →  ^9.13.0
-   - @stylistic/eslint-plugin   ^1.8.1  →   ^2.9.0
-   - esbuild                   ^0.22.0  →  ^0.24.0
-   - eslint                    ^8.57.0  →  ^9.13.0
-   - eslint-plugin-import      ^2.29.1  →  ^2.31.0
-   - glob                      ^10.4.2  →  ^11.0.0
+2. Information: There are updates for 3 dependencie(s):
+   - @stylistic/eslint-plugin   ^2.9.0  →  ^2.10.1
+   - eslint                    ^9.13.0  →  ^9.14.0
+   - glob                      ^10.4.5  →  ^11.0.0
 
 
 ### [MMM-TelegramCommands by doctorfree](https://github.com/doctorfree/MMM-TelegramCommands)
@@ -9539,13 +9776,10 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
 
 1. Recommendation: The README seems not to have an update instruction (the word 'update' is missing). Please add one.
 2. Recommendation: The README seems not to have an install instruction (the words 'install' or 'installation' are missing). Please add one.
-3. Information: There are updates for 6 dependencie(s):
-   - @eslint/js                ^8.57.0  →  ^9.13.0
-   - @stylistic/eslint-plugin   ^1.8.1  →   ^2.9.0
-   - esbuild                   ^0.22.0  →  ^0.24.0
-   - eslint                    ^8.57.0  →  ^9.13.0
-   - eslint-plugin-import      ^2.29.1  →  ^2.31.0
-   - glob                      ^10.4.2  →  ^11.0.0
+3. Information: There are updates for 3 dependencie(s):
+   - @stylistic/eslint-plugin   ^2.9.0  →  ^2.10.1
+   - eslint                    ^9.13.0  →  ^9.14.0
+   - glob                      ^10.4.5  →  ^11.0.0
 
 
 ### [MMM-Touch by gfischershaw](https://github.com/gfischershaw/MMM-Touch)
@@ -9648,7 +9882,6 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
 
 1. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
 2. ESLint issues:
-   - node_helper.js: Line 18, Column 63: Unused eslint-disable directive (no problems were reported). (rule: None)
    - node_helper.js: Line 41, Column 34: Unable to resolve path to module 'gtfs'. (rule: import/no-unresolved)
    - node_helper.js: Line 78, Column 22: Read-only global 'stop' should not be modified. (rule: no-global-assign)
    - node_helper.js: Line 95, Column 25: '_stop_id' is assigned a value but never used. (rule: no-unused-vars)
@@ -9667,13 +9900,11 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
 ### [MMM-TranslinkBrisbane by dekinet](https://github.com/dekinet/MMM-TranslinkBrisbane)
 
 1. Information: There are updates for 4 dependencie(s):
-   - @eslint/js                ^8.56.0  →  ^9.13.0
-   - @stylistic/eslint-plugin   ^1.6.0  →   ^2.9.0
-   - eslint                    ^8.56.0  →  ^9.13.0
+   - @eslint/js                ^8.56.0  →  ^9.14.0
+   - @stylistic/eslint-plugin   ^1.6.0  →  ^2.10.1
+   - eslint                    ^8.56.0  →  ^9.14.0
    - node-html-parser          ^6.1.12  →  ^6.1.13
 
-2.  WARN  eslint@8.56.0: 2023-12-15T22:55:11.833Z
-deprecated: This version is no longer supported. Please see https://eslint.org/version-support for other options.
 
 ### [MMM-TransLoc by OrangeHoopla](https://github.com/OrangeHoopla/MMM-TransLoc)
 
@@ -9899,12 +10130,9 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
 ### [EXT-Updates by bugsounet](https://github.com/bugsounet/EXT-Updates)
 
 1. Issues are not enabled in the GitHub repository. So users cannot report bugs. Please enable issues in your repo.
-2. Information: There are updates for 6 dependencie(s):
-   - @eslint/js                ^8.57.0  →  ^9.13.0
-   - @stylistic/eslint-plugin   ^1.8.1  →   ^2.9.0
-   - esbuild                   ^0.23.1  →  ^0.24.0
-   - eslint                    ^8.57.0  →  ^9.13.0
-   - eslint-plugin-import      ^2.29.1  →  ^2.31.0
+2. Information: There are updates for 3 dependencie(s):
+   - @stylistic/eslint-plugin   ^2.9.0  →  ^2.10.1
+   - eslint                    ^9.13.0  →  ^9.14.0
    - glob                      ^10.4.5  →  ^11.0.0
 
 
@@ -9927,6 +10155,12 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
 5. Deprecated: Found `"grunt"` in file `package.json`: Grunt is practically unmaintained. Move on to something better.
 6. Typo: Found `Magic Mirror` in file `uptimerobot.js`: Replace it with `MagicMirror²`.
 7. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
+
+### [MMM-UselessFacts by yourdawi](https://github.com/yourdawi/MMM-UselessFacts)
+
+1. There is no `package.json`. We need this file to gather information about the module for the module list page.
+2. No image found.
+3. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
 
 ### [MMM-UserPresenceToMQTT by olexs](https://github.com/olexs/MMM-UserPresenceToMQTT)
 
@@ -10057,17 +10291,20 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
 
 ### [EXT-VLCServer by bugsounet](https://github.com/bugsounet/EXT-VLCServer)
 
-1. Information: There are updates for 7 dependencie(s):
-   - @eslint/js                ^8.57.0  →  ^9.13.0
-   - @stylistic/eslint-plugin   ^1.8.1  →   ^2.9.0
-   - esbuild                   ^0.22.0  →  ^0.24.0
-   - eslint                    ^8.57.0  →  ^9.13.0
-   - eslint-plugin-import      ^2.29.1  →  ^2.31.0
-   - glob                      ^10.4.2  →  ^11.0.0
-   - pm2                        ^5.4.1  →   ^5.4.2
+1. Information: There are updates for 4 dependencie(s):
+   - @stylistic/eslint-plugin   ^2.9.0  →  ^2.10.1
+   - eslint                    ^9.13.0  →  ^9.14.0
+   - glob                      ^10.4.5  →  ^11.0.0
+   - pm2                        ^5.4.2  →   ^5.4.3
 
-2.  WARN  eslint@8.57.0: 2024-02-23T20:39:43.282Z
-deprecated: This version is no longer supported. Please see https://eslint.org/version-support for other options.
+2. ESLint issues:
+   - installer/minify.js: Line 47, Column 7: 'error' is assigned a value but never used. (rule: no-unused-vars)
+   - installer/minify.js: Line 64, Column 14: 'e' is defined but never used. (rule: no-unused-vars)
+   - node_helper.js: Line 8, Column 15: 'args' is defined but never used. (rule: no-unused-vars)
+   - node_helper.js: Line 19, Column 35: 'p' is defined but never used. (rule: no-unused-vars)
+   - node_helper.js: Line 110, Column 14: 'proc' is defined but never used. (rule: no-unused-vars)
+   - node_helper.js: Line 121, Column 41: 'proc' is defined but never used. (rule: no-unused-vars)
+
 
 ### [MMM-VocabularyTrainer by fewieden](https://github.com/fewieden/MMM-VocabularyTrainer)
 
@@ -10118,8 +10355,9 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
 1. ESLint issues:
    - MMM-VoiceCompanion.js: Line 78, Column 50: 'payload' is defined but never used. (rule: no-unused-vars)
    - MMM-VoiceCompanion.js: Line 78, Column 59: 'sender' is defined but never used. (rule: no-unused-vars)
-   - node_helper.js: Line 190, Column 51: 'stdout' is defined but never used. (rule: no-unused-vars)
-   - node_helper.js: Line 190, Column 59: 'stderr' is defined but never used. (rule: no-unused-vars)
+   - node_helper.js: Line 183, Column 17: 'silenceFrames' is assigned a value but never used. (rule: no-unused-vars)
+   - node_helper.js: Line 299, Column 51: 'stdout' is defined but never used. (rule: no-unused-vars)
+   - node_helper.js: Line 299, Column 59: 'stderr' is defined but never used. (rule: no-unused-vars)
 
 
 ### [MMM-Volume by Anonym-tsk](https://github.com/Anonym-tsk/MMM-Volume)
@@ -10133,16 +10371,25 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
 
 ### [EXT-Volume by bugsounet](https://github.com/bugsounet/EXT-Volume)
 
-1. Information: There are updates for 6 dependencie(s):
-   - @eslint/js                ^8.57.0  →  ^9.13.0
-   - @stylistic/eslint-plugin   ^1.8.1  →   ^2.9.0
-   - esbuild                   ^0.22.0  →  ^0.24.0
-   - eslint                    ^8.57.0  →  ^9.13.0
-   - eslint-plugin-import      ^2.29.1  →  ^2.31.0
-   - glob                      ^10.4.2  →  ^11.0.0
+1. Information: There are updates for 3 dependencie(s):
+   - @stylistic/eslint-plugin   ^2.9.0  →  ^2.10.1
+   - eslint                    ^9.13.0  →  ^9.14.0
+   - glob                      ^10.4.5  →  ^11.0.0
 
-2.  WARN  eslint@8.57.0: 2024-02-23T20:39:43.282Z
-deprecated: This version is no longer supported. Please see https://eslint.org/version-support for other options.
+2. ESLint issues:
+   - EXT-Volume.js: Line 75, Column 9: Unexpected lexical declaration in case block. (rule: no-case-declarations)
+   - EXT-Volume.js: Line 93, Column 9: Unexpected lexical declaration in case block. (rule: no-case-declarations)
+   - components/VolumeDisplayer.js: Line 1, Column 7: 'VolumeDisplayer' is defined but never used. (rule: no-unused-vars)
+   - installer/minify.js: Line 47, Column 7: 'error' is assigned a value but never used. (rule: no-unused-vars)
+   - installer/minify.js: Line 64, Column 14: 'e' is defined but never used. (rule: no-unused-vars)
+   - node_helper.js: Line 5, Column 15: 'args' is defined but never used. (rule: no-unused-vars)
+   - node_helper.js: Line 74, Column 25: 'stdout' is defined but never used. (rule: no-unused-vars)
+   - node_helper.js: Line 74, Column 33: 'stderr' is defined but never used. (rule: no-unused-vars)
+   - node_helper.js: Line 111, Column 25: 'stdout' is defined but never used. (rule: no-unused-vars)
+   - node_helper.js: Line 111, Column 33: 'stderr' is defined but never used. (rule: no-unused-vars)
+   - node_helper.js: Line 141, Column 51: 'stderr' is defined but never used. (rule: no-unused-vars)
+   - node_helper.js: Line 166, Column 53: 'stderr' is defined but never used. (rule: no-unused-vars)
+
 
 ### [MMM-volumio-playing by mrdis](https://github.com/mrdis/MMM-volumio-playing)
 
@@ -10235,12 +10482,10 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
 
 ### [MMM-WasteCollectionWuerzburg by mercredo](https://github.com/mercredo/MMM-WasteCollectionWuerzburg)
 
-1. An error occurred while getting information from 'package.json': Error: Invalid version: "0.8"
-2. Typo: Found `Magic Mirror` in file `Readme.md`: Replace it with `MagicMirror²`.
-3. Deprecated: Found `require('request')` in file `node_helper.js`: Replace it with built-in fetch.
-4. Recommendation: Found `new Date()` in file `node_helper.js`: Consider replacing it by `new Date(Date.now())`. It's helpful for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
-5. Typo: Found `Magic Mirror` in file `package.json`: Replace it with `MagicMirror²`.
-6. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
+1. Typo: Found `Magic Mirror` in file `Readme.md`: Replace it with `MagicMirror²`.
+2. Deprecated: Found `require('request')` in file `node_helper.js`: Replace it with built-in fetch.
+3. Recommendation: Found `new Date()` in file `node_helper.js`: Consider replacing it by `new Date(Date.now())`. It's helpful for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
+4. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
 
 ### [MMM-WatchDog by MichMich](https://github.com/MichMich/MMM-WatchDog)
 
@@ -10351,12 +10596,11 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
 
 1. There is no `package.json`. We need this file to gather information about the module for the module list page.
 2. Recommendation: Found `new Date()` in file `MMM-WeatherGraph.js`: Consider replacing it by `new Date(Date.now())`. It's helpful for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
-3. Deprecated: Found `api.openweathermap.org/data/2.5` in file `MMM-WeatherGraph.js`: OpenWeather API 2.5 is deprecated since June 2024. Please update to 3.0.
-4. Typo: Found `[MagicMirror]` in file `README.md`: Replace it with `[MagicMirror²]`.
-5. Outdated: Found `MichMich/MagicMirror` in file `README.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
-6. Recommendation: Found `XMLHttpRequest` in file `d3.min.js`: Replace it with built-in fetch.
-7. Warning: No LICENSE file.
-8. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
+3. Typo: Found `[MagicMirror]` in file `README.md`: Replace it with `[MagicMirror²]`.
+4. Outdated: Found `MichMich/MagicMirror` in file `README.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
+5. Recommendation: Found `XMLHttpRequest` in file `d3.min.js`: Replace it with built-in fetch.
+6. Warning: No LICENSE file.
+7. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
 
 ### [MMM-WeatherHourlyByDay by dWoolridge](https://github.com/dWoolridge/MMM-WeatherHourlyByDay)
 
@@ -10394,14 +10638,19 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
 6. Outdated: Local jQuery file `jquery.min.js` seems to be outdated. jQuery v3.7 or higher is recommended.
 7. Recommendation: Found `https://cdnjs.cloudflare.com` in file `system.html`: It looks like a package is loaded via CDN. It would be better if the package were installed locally via npm.
 
+### [MMM-WebSpeechTTS by KristjanESPERANTO](https://github.com/KristjanESPERANTO/MMM-WebSpeechTTS)
+
+1. Information: There are updates for 1 dependencie(s):
+   - cspell  ^8.15.7  →  ^8.16.0
+
+
 ### [MMM-Webuntis by HeikoGr](https://github.com/HeikoGr/MMM-Webuntis)
 
 1. Recommendation: No lint script found in package.json. It is recommended to add one.
-2. ESLint issues:
-   - MMM-Webuntis.js: Line 202, Column 48: 'payload' is defined but never used. (rule: no-unused-vars)
-   - MMM-Webuntis.js: Line 205, Column 9: 'timer' is assigned a value but never used. (rule: no-unused-vars)
-   - node_helper.js: Line 6, Column 7: 'Log' is assigned a value but never used. (rule: no-unused-vars)
-   - node_helper.js: Line 54, Column 10: 'response' is defined but never used. (rule: no-unused-vars)
+2. Information: There are updates for 3 dependencie(s):
+   - @eslint/js   ^9.13.0  →   ^9.14.0
+   - eslint       ^9.13.0  →   ^9.14.0
+   - globals     ^15.11.0  →  ^15.12.0
 
 
 ### [MMM-WebView by Iketaki](https://github.com/Iketaki/MMM-WebView)
@@ -10430,13 +10679,10 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
 ### [EXT-Welcome by bugsounet](https://github.com/bugsounet/EXT-Welcome)
 
 1. No image found.
-2. Information: There are updates for 6 dependencie(s):
-   - @eslint/js                ^8.57.0  →  ^9.13.0
-   - @stylistic/eslint-plugin   ^1.8.1  →   ^2.9.0
-   - esbuild                   ^0.22.0  →  ^0.24.0
-   - eslint                    ^8.57.0  →  ^9.13.0
-   - eslint-plugin-import      ^2.29.1  →  ^2.31.0
-   - glob                      ^10.4.2  →  ^11.0.0
+2. Information: There are updates for 3 dependencie(s):
+   - @stylistic/eslint-plugin   ^2.9.0  →  ^2.10.1
+   - eslint                    ^9.13.0  →  ^9.14.0
+   - glob                      ^10.4.5  →  ^11.0.0
 
 
 ### [MMM-WestBerksBinDay by hdurdle](https://github.com/hdurdle/MMM-WestBerksBinDay)
@@ -10553,11 +10799,9 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
 ### [MMM-WordOfTheDay by jmwyds](https://github.com/jmwyds/MMM-WordOfTheDay)
 
 1. Information: There are updates for 2 dependencie(s):
-   - eslint    ^8.56.0  →  ^9.13.0
+   - eslint    ^8.56.0  →  ^9.14.0
    - prettier   ^3.1.1  →   ^3.3.3
 
-2.  WARN  eslint@8.57.1: 2024-09-16T15:20:44.208Z
-deprecated: This version is no longer supported. Please see https://eslint.org/version-support for other options.
 
 ### [MMM-Worldclock by ulrichwisser](https://github.com/ulrichwisser/MMM-Worldclock)
 
@@ -10722,16 +10966,17 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
 
 ### [EXT-YouTube by bugsounet](https://github.com/bugsounet/EXT-YouTube)
 
-1. Information: There are updates for 6 dependencie(s):
-   - @eslint/js                ^8.57.0  →  ^9.13.0
-   - @stylistic/eslint-plugin   ^1.8.1  →   ^2.9.0
-   - esbuild                   ^0.22.0  →  ^0.24.0
-   - eslint                    ^8.57.0  →  ^9.13.0
-   - eslint-plugin-import      ^2.29.1  →  ^2.31.0
-   - glob                      ^10.4.2  →  ^11.0.0
+1. Information: There are updates for 3 dependencie(s):
+   - @stylistic/eslint-plugin   ^2.9.0  →  ^2.10.1
+   - eslint                    ^9.13.0  →  ^9.14.0
+   - glob                      ^10.4.5  →  ^11.0.0
 
-2.  WARN  eslint@8.57.0: 2024-02-23T20:39:43.282Z
-deprecated: This version is no longer supported. Please see https://eslint.org/version-support for other options.
+2. ESLint issues:
+   - EXT-YouTube.js: Line 5, Column 13: 'args' is defined but never used. (rule: no-unused-vars)
+   - EXT-YouTube.js: Line 201, Column 11: Unexpected lexical declaration in case block. (rule: no-case-declarations)
+   - installer/minify.js: Line 47, Column 7: 'error' is assigned a value but never used. (rule: no-unused-vars)
+   - installer/minify.js: Line 64, Column 14: 'e' is defined but never used. (rule: no-unused-vars)
+
 
 ### [MMM-YouTube-API by C4TFLY](https://github.com/C4TFLY/MMM-YouTube-API)
 
@@ -10753,17 +10998,27 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
 
 ### [EXT-YouTubeCast by bugsounet](https://github.com/bugsounet/EXT-YouTubeCast)
 
-1. Information: There are updates for 7 dependencie(s):
-   - @eslint/js                ^8.57.0  →  ^9.13.0
-   - @stylistic/eslint-plugin   ^1.8.1  →   ^2.9.0
-   - esbuild                   ^0.22.0  →  ^0.24.0
-   - eslint                    ^8.57.0  →  ^9.13.0
-   - eslint-plugin-import      ^2.29.1  →  ^2.31.0
-   - glob                      ^10.4.2  →  ^11.0.0
-   - uuid                      ^10.0.0  →  ^11.0.2
+1. Information: There are updates for 4 dependencie(s):
+   - @stylistic/eslint-plugin   ^2.9.0  →  ^2.10.1
+   - eslint                    ^9.13.0  →  ^9.14.0
+   - glob                      ^10.4.5  →  ^11.0.0
+   - uuid                      ^11.0.2  →  ^11.0.3
 
-2.  WARN  eslint@8.57.0: 2024-02-23T20:39:43.282Z
-deprecated: This version is no longer supported. Please see https://eslint.org/version-support for other options.
+2. ESLint issues:
+   - EXT-YouTubeCast.js: Line 8, Column 15: 'args' is defined but never used. (rule: no-unused-vars)
+   - components/castLib.js: Line 43, Column 19: 'port' is defined but never used. (rule: no-unused-vars)
+   - components/castLib.js: Line 60, Column 15: 'pid' is assigned a value but never used. (rule: no-unused-vars)
+   - components/peer-dial.js: Line 44, Column 7: 'appStates' is assigned a value but never used. (rule: no-unused-vars)
+   - components/peer-dial.js: Line 68, Column 9: 'baseURL' is assigned a value but never used. (rule: no-unused-vars)
+   - components/peer-dial.js: Line 119, Column 9: 'baseURL' is assigned a value but never used. (rule: no-unused-vars)
+   - components/peer-dial.js: Line 135, Column 9: 'baseURL' is assigned a value but never used. (rule: no-unused-vars)
+   - components/peer-dial.js: Line 295, Column 28: 'options' is defined but never used. (rule: no-unused-vars)
+   - components/peer-dial.js: Line 304, Column 36: 'address' is defined but never used. (rule: no-unused-vars)
+   - components/peer-dial.js: Line 310, Column 37: 'address' is defined but never used. (rule: no-unused-vars)
+   - installer/minify.js: Line 47, Column 7: 'error' is assigned a value but never used. (rule: no-unused-vars)
+   - installer/minify.js: Line 64, Column 14: 'e' is defined but never used. (rule: no-unused-vars)
+   - node_helper.js: Line 5, Column 15: 'args' is defined but never used. (rule: no-unused-vars)
+
 
 ### [MMM-YouTubeWebView by doctorfree](https://gitlab.com/doctorfree/MMM-YouTubeWebView)
 

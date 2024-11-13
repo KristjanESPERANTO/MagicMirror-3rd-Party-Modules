@@ -1,9 +1,9 @@
 {
-  "lastUpdate": "2024-10-29T17:50:20.511Z",
+  "lastUpdate": "2024-11-13T19:39:17.402Z",
   "modules": [
     {
       "name": "MMM-01ZM",
-      "category": "Utility / IOT / 3rd Party / Integration",
+      "category": "Utility / IoT / 3rd Party / Integration",
       "url": "https://github.com/rubinho101/MMM-01ZM",
       "id": "rubinho101/MMM-01ZM",
       "maintainer": "rubinho101",
@@ -83,7 +83,7 @@
     },
     {
       "name": "MMM-Advent",
-      "category": "Utility / IOT / 3rd Party / Integration",
+      "category": "Utility / IoT / 3rd Party / Integration",
       "url": "https://github.com/Jopyth/MMM-Advent",
       "id": "Jopyth/MMM-Advent",
       "maintainer": "Jopyth",
@@ -93,7 +93,7 @@
     },
     {
       "name": "MMM-Afvalwijzer",
-      "category": "Utility / IOT / 3rd Party / Integration",
+      "category": "Utility / IoT / 3rd Party / Integration",
       "url": "https://github.com/gertperdZA/MMM-Afvalwijzer",
       "id": "gertperdZA/MMM-Afvalwijzer",
       "maintainer": "gertperdZA",
@@ -113,7 +113,7 @@
     },
     {
       "name": "MMM-AirbarHelper",
-      "category": "Utility / IOT / 3rd Party / Integration",
+      "category": "Utility / IoT / 3rd Party / Integration",
       "url": "https://github.com/ryanzor/MMM-AirbarHelper",
       "id": "ryanzor/MMM-AirbarHelper",
       "maintainer": "ryanzor",
@@ -163,7 +163,7 @@
     },
     {
       "name": "MMM-Airtable",
-      "category": "Utility / IOT / 3rd Party / Integration",
+      "category": "Utility / IoT / 3rd Party / Integration",
       "url": "https://github.com/yashatgit/MMM-Airtable",
       "id": "yashatgit/MMM-Airtable",
       "maintainer": "yashatgit",
@@ -173,22 +173,12 @@
     },
     {
       "name": "MMM-AlarmClock",
-      "category": "Utility / IOT / 3rd Party / Integration",
+      "category": "Utility / IoT / 3rd Party / Integration",
       "url": "https://github.com/fewieden/MMM-AlarmClock",
       "id": "fewieden/MMM-AlarmClock",
       "maintainer": "fewieden",
       "maintainerURL": "",
       "description": "Alarm Clock Module (touch and non-touch).",
-      "issues": []
-    },
-    {
-      "name": "EXT-Alert",
-      "category": "Extended plugins for MMM-GoogleAssistant",
-      "url": "https://github.com/bugsounet/EXT-Alert",
-      "id": "bugsounet/EXT-Alert",
-      "maintainer": "bugsounet",
-      "maintainerURL": "https://wiki.bugsounet.fr",
-      "description": "Display any warning, information or error on your screen about Assistant.",
       "issues": []
     },
     {
@@ -243,7 +233,7 @@
     },
     {
       "name": "MMM-AmbientBrightnessDetection",
-      "category": "Utility / IOT / 3rd Party / Integration",
+      "category": "Utility / IoT / 3rd Party / Integration",
       "url": "https://github.com/eric-h-st/MMM-AmbientBrightnessDetection",
       "id": "eric-h-st/MMM-AmbientBrightnessDetection",
       "maintainer": "eric-h-st",
@@ -283,7 +273,7 @@
     },
     {
       "name": "MMM-AnyList",
-      "category": "Utility / IOT / 3rd Party / Integration",
+      "category": "Utility / IoT / 3rd Party / Integration",
       "url": "https://github.com/codetheweb/MMM-AnyList",
       "id": "codetheweb/MMM-AnyList",
       "maintainer": "codetheweb",
@@ -303,7 +293,7 @@
     },
     {
       "name": "MMM-AOE2-STATS",
-      "category": "Utility / IOT / 3rd Party / Integration",
+      "category": "Utility / IoT / 3rd Party / Integration",
       "url": "https://github.com/FabianNiehaus89/MMM-AOE2-STATS",
       "id": "FabianNiehaus89/MMM-AOE2-STATS",
       "maintainer": "FabianNiehaus89",
@@ -313,7 +303,7 @@
     },
     {
       "name": "MMM-ApexCharts",
-      "category": "Utility / IOT / 3rd Party / Integration",
+      "category": "Utility / IoT / 3rd Party / Integration",
       "url": "https://github.com/sharmstr/MMM-ApexCharts",
       "id": "sharmstr/MMM-ApexCharts",
       "maintainer": "sharmstr",
@@ -333,7 +323,7 @@
     },
     {
       "name": "MMM-Api",
-      "category": "Utility / IOT / 3rd Party / Integration",
+      "category": "Utility / IoT / 3rd Party / Integration",
       "url": "https://github.com/juzim/MMM-Api",
       "id": "juzim/MMM-Api",
       "maintainer": "juzim",
@@ -373,7 +363,7 @@
     },
     {
       "name": "MMM-AquareaSmartCloud",
-      "category": "Utility / IOT / 3rd Party / Integration",
+      "category": "Utility / IoT / 3rd Party / Integration",
       "url": "https://github.com/martinburheimtingstad/MMM-AquareaSmartCloud",
       "id": "martinburheimtingstad/MMM-AquareaSmartCloud",
       "maintainer": "martinburheimtingstad",
@@ -383,7 +373,7 @@
     },
     {
       "name": "MMM-ArduPort",
-      "category": "Utility / IOT / 3rd Party / Integration",
+      "category": "Utility / IoT / 3rd Party / Integration",
       "url": "https://github.com/Dentrax/MMM-ArduPort",
       "id": "Dentrax/MMM-ArduPort",
       "maintainer": "Dentrax",
@@ -445,7 +435,7 @@
     },
     {
       "name": "MMM-August-Lock",
-      "category": "Utility / IOT / 3rd Party / Integration",
+      "category": "Utility / IoT / 3rd Party / Integration",
       "url": "https://github.com/relm923/MMM-August-Lock",
       "id": "relm923/MMM-August-Lock",
       "maintainer": "relm923",
@@ -596,7 +586,7 @@
     },
     {
       "name": "MMM-Beestat",
-      "category": "Utility / IOT / 3rd Party / Integration",
+      "category": "Utility / IoT / 3rd Party / Integration",
       "url": "https://github.com/vincep5/MMM-Beestat",
       "id": "vincep5/MMM-Beestat",
       "maintainer": "vincep5",
@@ -696,7 +686,7 @@
     },
     {
       "name": "MMM-birthdays",
-      "category": "Utility / IOT / 3rd Party / Integration",
+      "category": "Utility / IoT / 3rd Party / Integration",
       "url": "https://github.com/amitchone/MMM-birthdays",
       "id": "amitchone/MMM-birthdays",
       "maintainer": "amitchone",
@@ -746,7 +736,7 @@
     },
     {
       "name": "MMM-Block",
-      "category": "Utility / IOT / 3rd Party / Integration",
+      "category": "Utility / IoT / 3rd Party / Integration",
       "url": "https://github.com/BKeyport/MMM-Block",
       "id": "BKeyport/MMM-Block",
       "maintainer": "BKeyport",
@@ -776,7 +766,7 @@
     },
     {
       "name": "MMM-BluetoothDevices",
-      "category": "Utility / IOT / 3rd Party / Integration",
+      "category": "Utility / IoT / 3rd Party / Integration",
       "url": "https://github.com/timodejong95/MMM-BluetoothDevices",
       "id": "timodejong95/MMM-BluetoothDevices",
       "maintainer": "timodejong95",
@@ -786,7 +776,7 @@
     },
     {
       "name": "MMM-BME280",
-      "category": "Utility / IOT / 3rd Party / Integration",
+      "category": "Utility / IoT / 3rd Party / Integration",
       "url": "https://github.com/awitwicki/MMM-BME280",
       "id": "awitwicki/MMM-BME280",
       "maintainer": "awitwicki",
@@ -860,7 +850,7 @@
     },
     {
       "name": "MMM-BornBeforeDate",
-      "category": "Utility / IOT / 3rd Party / Integration",
+      "category": "Utility / IoT / 3rd Party / Integration",
       "url": "https://github.com/justjim1220/MMM-BornBeforeDate",
       "id": "justjim1220/MMM-BornBeforeDate",
       "maintainer": "justjim1220",
@@ -870,7 +860,7 @@
     },
     {
       "name": "MMM-BoschSmartHome",
-      "category": "Utility / IOT / 3rd Party / Integration",
+      "category": "Utility / IoT / 3rd Party / Integration",
       "url": "https://github.com/jalibu/MMM-BoschSmartHome",
       "id": "jalibu/MMM-BoschSmartHome",
       "maintainer": "jalibu",
@@ -880,7 +870,7 @@
     },
     {
       "name": "MMM-Bose-Soundtouch",
-      "category": "Utility / IOT / 3rd Party / Integration",
+      "category": "Utility / IoT / 3rd Party / Integration",
       "url": "https://github.com/spoturdeal/MMM-Bose-Soundtouch",
       "id": "spoturdeal/MMM-Bose-Soundtouch",
       "maintainer": "spoturdeal",
@@ -920,7 +910,7 @@
     },
     {
       "name": "MMM-Bring",
-      "category": "Utility / IOT / 3rd Party / Integration",
+      "category": "Utility / IoT / 3rd Party / Integration",
       "url": "https://github.com/werthdavid/MMM-Bring",
       "id": "werthdavid/MMM-Bring",
       "maintainer": "werthdavid",
@@ -930,7 +920,7 @@
     },
     {
       "name": "MMM-bringList",
-      "category": "Utility / IOT / 3rd Party / Integration",
+      "category": "Utility / IoT / 3rd Party / Integration",
       "url": "https://github.com/rseidt/MMM-bringList",
       "id": "rseidt/MMM-bringList",
       "maintainer": "rseidt",
@@ -970,7 +960,7 @@
     },
     {
       "name": "MMM-Buller",
-      "category": "Utility / IOT / 3rd Party / Integration",
+      "category": "Utility / IoT / 3rd Party / Integration",
       "url": "https://github.com/da4throux/MMM-Buller",
       "id": "da4throux/MMM-Buller",
       "maintainer": "da4throux",
@@ -1040,7 +1030,7 @@
     },
     {
       "name": "MMM-CalDAV",
-      "category": "Utility / IOT / 3rd Party / Integration",
+      "category": "Utility / IoT / 3rd Party / Integration",
       "url": "https://github.com/MMRIZE/MMM-CalDAV",
       "id": "MMRIZE/MMM-CalDAV",
       "maintainer": "MMRIZE",
@@ -1050,7 +1040,7 @@
     },
     {
       "name": "MMM-CalendarExt2",
-      "category": "Utility / IOT / 3rd Party / Integration",
+      "category": "Utility / IoT / 3rd Party / Integration",
       "url": "https://github.com/MMM-CalendarExt2/MMM-CalendarExt2",
       "id": "MMM-CalendarExt2/MMM-CalendarExt2",
       "maintainer": "MMM-CalendarExt2",
@@ -1060,7 +1050,7 @@
     },
     {
       "name": "MMM-CalendarExt3",
-      "category": "Utility / IOT / 3rd Party / Integration",
+      "category": "Utility / IoT / 3rd Party / Integration",
       "url": "https://github.com/MMRIZE/MMM-CalendarExt3",
       "id": "MMRIZE/MMM-CalendarExt3",
       "maintainer": "MMRIZE",
@@ -1070,7 +1060,7 @@
     },
     {
       "name": "MMM-CalendarExt3Agenda",
-      "category": "Utility / IOT / 3rd Party / Integration",
+      "category": "Utility / IoT / 3rd Party / Integration",
       "url": "https://github.com/MMRIZE/MMM-CalendarExt3Agenda",
       "id": "MMRIZE/MMM-CalendarExt3Agenda",
       "maintainer": "MMRIZE",
@@ -1080,7 +1070,7 @@
     },
     {
       "name": "MMM-CalendarExt3Journal",
-      "category": "Utility / IOT / 3rd Party / Integration",
+      "category": "Utility / IoT / 3rd Party / Integration",
       "url": "https://github.com/MMRIZE/MMM-CalendarExt3Journal",
       "id": "MMRIZE/MMM-CalendarExt3Journal",
       "maintainer": "MMRIZE",
@@ -1090,7 +1080,7 @@
     },
     {
       "name": "MMM-CalendarExt3Timeline",
-      "category": "Utility / IOT / 3rd Party / Integration",
+      "category": "Utility / IoT / 3rd Party / Integration",
       "url": "https://github.com/MMRIZE/MMM-CalendarExt3Timeline",
       "id": "MMRIZE/MMM-CalendarExt3Timeline",
       "maintainer": "MMRIZE",
@@ -1100,7 +1090,7 @@
     },
     {
       "name": "MMM-CalendarExtMinimonth",
-      "category": "Utility / IOT / 3rd Party / Integration",
+      "category": "Utility / IoT / 3rd Party / Integration",
       "url": "https://github.com/MMM-CalendarExt2/MMM-CalendarExtMinimonth",
       "id": "MMM-CalendarExt2/MMM-CalendarExtMinimonth",
       "maintainer": "MMM-CalendarExt2",
@@ -1110,7 +1100,7 @@
     },
     {
       "name": "MMM-CalendarExtPlan",
-      "category": "Utility / IOT / 3rd Party / Integration",
+      "category": "Utility / IoT / 3rd Party / Integration",
       "url": "https://github.com/MMM-CalendarExt2/MMM-CalendarExtPlan",
       "id": "MMM-CalendarExt2/MMM-CalendarExtPlan",
       "maintainer": "MMM-CalendarExt2",
@@ -1120,7 +1110,7 @@
     },
     {
       "name": "MMM-CalendarExtTimeline",
-      "category": "Utility / IOT / 3rd Party / Integration",
+      "category": "Utility / IoT / 3rd Party / Integration",
       "url": "https://github.com/MMM-CalendarExt2/MMM-CalendarExtTimeline",
       "id": "MMM-CalendarExt2/MMM-CalendarExtTimeline",
       "maintainer": "MMM-CalendarExt2",
@@ -1140,7 +1130,7 @@
     },
     {
       "name": "MMM-CalendarWeek",
-      "category": "Utility / IOT / 3rd Party / Integration",
+      "category": "Utility / IoT / 3rd Party / Integration",
       "url": "https://github.com/heskja/MMM-CalendarWeek",
       "id": "heskja/MMM-CalendarWeek",
       "maintainer": "heskja",
@@ -1150,7 +1140,7 @@
     },
     {
       "name": "MMM-Callmonitor-Current-Call",
-      "category": "Utility / IOT / 3rd Party / Integration",
+      "category": "Utility / IoT / 3rd Party / Integration",
       "url": "https://github.com/armybean/MMM-Callmonitor-Current-Call",
       "id": "armybean/MMM-Callmonitor-Current-Call",
       "maintainer": "armybean",
@@ -1180,7 +1170,7 @@
     },
     {
       "name": "camera",
-      "category": "Utility / IOT / 3rd Party / Integration",
+      "category": "Utility / IoT / 3rd Party / Integration",
       "url": "https://github.com/Rallymen007/camera",
       "id": "Rallymen007/camera",
       "maintainer": "Rallymen007",
@@ -1220,7 +1210,7 @@
     },
     {
       "name": "MMM-CardDavBirthdaysProvider",
-      "category": "Utility / IOT / 3rd Party / Integration",
+      "category": "Utility / IoT / 3rd Party / Integration",
       "url": "https://github.com/ulrichwisser/MMM-CardDavBirthdaysProvider",
       "id": "ulrichwisser/MMM-CardDavBirthdaysProvider",
       "maintainer": "ulrichwisser",
@@ -1282,7 +1272,7 @@
     },
     {
       "name": "MMM-Chart",
-      "category": "Utility / IOT / 3rd Party / Integration",
+      "category": "Utility / IoT / 3rd Party / Integration",
       "url": "https://github.com/uxigene/MMM-Chart",
       "id": "uxigene/MMM-Chart",
       "maintainer": "uxigene",
@@ -1302,7 +1292,7 @@
     },
     {
       "name": "MMM-chromecast",
-      "category": "Utility / IOT / 3rd Party / Integration",
+      "category": "Utility / IoT / 3rd Party / Integration",
       "url": "https://github.com/flo80/MMM-chromecast",
       "id": "flo80/MMM-chromecast",
       "maintainer": "flo80",
@@ -1455,7 +1445,7 @@
     },
     {
       "name": "MMM-ComEdPrice",
-      "category": "Utility / IOT / 3rd Party / Integration",
+      "category": "Utility / IoT / 3rd Party / Integration",
       "url": "https://github.com/vincep5/MMM-ComEdPrice",
       "id": "vincep5/MMM-ComEdPrice",
       "maintainer": "vincep5",
@@ -1465,7 +1455,7 @@
     },
     {
       "name": "MMM-ComEdPricing",
-      "category": "Utility / IOT / 3rd Party / Integration",
+      "category": "Utility / IoT / 3rd Party / Integration",
       "url": "https://github.com/skruglov2023/MMM-ComEdPricing",
       "id": "skruglov2023/MMM-ComEdPricing",
       "maintainer": "skruglov2023",
@@ -1475,7 +1465,7 @@
     },
     {
       "name": "MMM-CommandToNotification",
-      "category": "Utility / IOT / 3rd Party / Integration",
+      "category": "Utility / IoT / 3rd Party / Integration",
       "url": "https://github.com/Tom-Hirschberger/MMM-CommandToNotification",
       "id": "Tom-Hirschberger/MMM-CommandToNotification",
       "maintainer": "Tom-Hirschberger",
@@ -1485,7 +1475,7 @@
     },
     {
       "name": "MMM-Config",
-      "category": "Utility / IOT / 3rd Party / Integration",
+      "category": "Utility / IoT / 3rd Party / Integration",
       "url": "https://github.com/sdetweil/MMM-Config",
       "id": "sdetweil/MMM-Config",
       "maintainer": "sdetweil",
@@ -1515,7 +1505,7 @@
     },
     {
       "name": "MMM-CountDown",
-      "category": "Utility / IOT / 3rd Party / Integration",
+      "category": "Utility / IoT / 3rd Party / Integration",
       "url": "https://github.com/daterrell/MMM-CountDown",
       "id": "daterrell/MMM-CountDown",
       "maintainer": "daterrell",
@@ -1536,7 +1526,7 @@
     },
     {
       "name": "MMM-CountEvents",
-      "category": "Utility / IOT / 3rd Party / Integration",
+      "category": "Utility / IoT / 3rd Party / Integration",
       "url": "https://github.com/MMRIZE/MMM-CountEvents",
       "id": "MMRIZE/MMM-CountEvents",
       "maintainer": "MMRIZE",
@@ -1728,7 +1718,7 @@
     },
     {
       "name": "MMM-Cursor",
-      "category": "Utility / IOT / 3rd Party / Integration",
+      "category": "Utility / IoT / 3rd Party / Integration",
       "url": "https://github.com/uxigene/MMM-Cursor",
       "id": "uxigene/MMM-Cursor",
       "maintainer": "uxigene",
@@ -1748,7 +1738,7 @@
     },
     {
       "name": "MMM-CustomMessage",
-      "category": "Utility / IOT / 3rd Party / Integration",
+      "category": "Utility / IoT / 3rd Party / Integration",
       "url": "https://github.com/jpcaldwell30/MMM-CustomMessage",
       "id": "jpcaldwell30/MMM-CustomMessage",
       "maintainer": "jpcaldwell30",
@@ -1758,7 +1748,7 @@
     },
     {
       "name": "MMM-CustomText",
-      "category": "Utility / IOT / 3rd Party / Integration",
+      "category": "Utility / IoT / 3rd Party / Integration",
       "url": "https://github.com/dathbe/MMM-CustomText",
       "id": "dathbe/MMM-CustomText",
       "maintainer": "dathbe",
@@ -1788,7 +1778,7 @@
     },
     {
       "name": "MMM-CzechPost",
-      "category": "Utility / IOT / 3rd Party / Integration",
+      "category": "Utility / IoT / 3rd Party / Integration",
       "url": "https://github.com/RichieCZ/MMM-CzechPost",
       "id": "RichieCZ/MMM-CzechPost",
       "maintainer": "RichieCZ",
@@ -1798,7 +1788,7 @@
     },
     {
       "name": "MMM-D2L",
-      "category": "Utility / IOT / 3rd Party / Integration",
+      "category": "Utility / IoT / 3rd Party / Integration",
       "url": "https://github.com/berryerlouis/MMM-D2L",
       "id": "berryerlouis/MMM-D2L",
       "maintainer": "berryerlouis",
@@ -1828,7 +1818,7 @@
     },
     {
       "name": "MMM-daikin",
-      "category": "Utility / IOT / 3rd Party / Integration",
+      "category": "Utility / IoT / 3rd Party / Integration",
       "url": "https://github.com/kymeyer/MMM-daikin",
       "id": "kymeyer/MMM-daikin",
       "maintainer": "kymeyer",
@@ -1838,7 +1828,7 @@
     },
     {
       "name": "MMM-DaikinAirbase",
-      "category": "Utility / IOT / 3rd Party / Integration",
+      "category": "Utility / IoT / 3rd Party / Integration",
       "url": "https://github.com/matt-thurling/MMM-DaikinAirbase",
       "id": "matt-thurling/MMM-DaikinAirbase",
       "maintainer": "matt-thurling",
@@ -1982,7 +1972,7 @@
     },
     {
       "name": "MMM-DateCounter",
-      "category": "Utility / IOT / 3rd Party / Integration",
+      "category": "Utility / IoT / 3rd Party / Integration",
       "url": "https://github.com/alltopafi/MMM-DateCounter",
       "id": "alltopafi/MMM-DateCounter",
       "maintainer": "alltopafi",
@@ -2052,7 +2042,7 @@
     },
     {
       "name": "MMM-DenHaag-TrashCalendar",
-      "category": "Utility / IOT / 3rd Party / Integration",
+      "category": "Utility / IoT / 3rd Party / Integration",
       "url": "https://github.com/cokceken/MMM-DenHaag-TrashCalendar",
       "id": "cokceken/MMM-DenHaag-TrashCalendar",
       "maintainer": "cokceken",
@@ -2143,7 +2133,7 @@
     },
     {
       "name": "MMM-DiscordWatch",
-      "category": "Utility / IOT / 3rd Party / Integration",
+      "category": "Utility / IoT / 3rd Party / Integration",
       "url": "https://github.com/Smiche/MMM-DiscordWatch",
       "id": "Smiche/MMM-DiscordWatch",
       "maintainer": "Smiche",
@@ -2153,7 +2143,7 @@
     },
     {
       "name": "MMM-Discourse-notifications",
-      "category": "Utility / IOT / 3rd Party / Integration",
+      "category": "Utility / IoT / 3rd Party / Integration",
       "url": "https://github.com/jordy-u/MMM-Discourse-notifications",
       "id": "jordy-u/MMM-Discourse-notifications",
       "maintainer": "jordy-u",
@@ -2173,7 +2163,7 @@
     },
     {
       "name": "MMM-DockerVisualizer",
-      "category": "Utility / IOT / 3rd Party / Integration",
+      "category": "Utility / IoT / 3rd Party / Integration",
       "url": "https://github.com/aaron64/MMM-DockerVisualizer",
       "id": "aaron64/MMM-DockerVisualizer",
       "maintainer": "aaron64",
@@ -2379,7 +2369,7 @@
     },
     {
       "name": "MMM-Ecobee",
-      "category": "Utility / IOT / 3rd Party / Integration",
+      "category": "Utility / IoT / 3rd Party / Integration",
       "url": "https://github.com/parnic/MMM-Ecobee",
       "id": "parnic/MMM-Ecobee",
       "maintainer": "parnic",
@@ -2409,7 +2399,7 @@
     },
     {
       "name": "MMM-edgerouter-throughput",
-      "category": "Utility / IOT / 3rd Party / Integration",
+      "category": "Utility / IoT / 3rd Party / Integration",
       "url": "https://github.com/mscharl/MMM-edgerouter-throughput",
       "id": "mscharl/MMM-edgerouter-throughput",
       "maintainer": "mscharl",
@@ -2449,7 +2439,7 @@
     },
     {
       "name": "MMM-EmbedURL",
-      "category": "Utility / IOT / 3rd Party / Integration",
+      "category": "Utility / IoT / 3rd Party / Integration",
       "url": "https://github.com/Tom-Hirschberger/MMM-EmbedURL",
       "id": "Tom-Hirschberger/MMM-EmbedURL",
       "maintainer": "Tom-Hirschberger",
@@ -2459,7 +2449,7 @@
     },
     {
       "name": "MMM-EmbedYoutube",
-      "category": "Utility / IOT / 3rd Party / Integration",
+      "category": "Utility / IoT / 3rd Party / Integration",
       "url": "https://github.com/nitpum/MMM-EmbedYoutube",
       "id": "nitpum/MMM-EmbedYoutube",
       "maintainer": "nitpum",
@@ -2489,7 +2479,7 @@
     },
     {
       "name": "MMM-EnergyMonitor",
-      "category": "Utility / IOT / 3rd Party / Integration",
+      "category": "Utility / IoT / 3rd Party / Integration",
       "url": "https://github.com/deg0nz/MMM-EnergyMonitor",
       "id": "deg0nz/MMM-EnergyMonitor",
       "maintainer": "deg0nz",
@@ -2499,7 +2489,7 @@
     },
     {
       "name": "MMM-EnphaseSolar",
-      "category": "Utility / IOT / 3rd Party / Integration",
+      "category": "Utility / IoT / 3rd Party / Integration",
       "url": "https://github.com/matt-thurling/MMM-EnphaseSolar",
       "id": "matt-thurling/MMM-EnphaseSolar",
       "maintainer": "matt-thurling",
@@ -2540,7 +2530,7 @@
     },
     {
       "name": "MMM-EskomSePush",
-      "category": "Utility / IOT / 3rd Party / Integration",
+      "category": "Utility / IoT / 3rd Party / Integration",
       "url": "https://github.com/mumblebaj/MMM-EskomSePush",
       "id": "mumblebaj/MMM-EskomSePush",
       "maintainer": "mumblebaj",
@@ -2753,7 +2743,7 @@
     },
     {
       "name": "MMM-FastNotes",
-      "category": "Utility / IOT / 3rd Party / Integration",
+      "category": "Utility / IoT / 3rd Party / Integration",
       "url": "https://github.com/polarbearjngl/MMM-FastNotes",
       "id": "polarbearjngl/MMM-FastNotes",
       "maintainer": "polarbearjngl",
@@ -2844,7 +2834,7 @@
     },
     {
       "name": "MMM-FF-process-stats",
-      "category": "Utility / IOT / 3rd Party / Integration",
+      "category": "Utility / IoT / 3rd Party / Integration",
       "url": "https://github.com/shin10/MMM-FF-process-stats",
       "id": "shin10/MMM-FF-process-stats",
       "maintainer": "shin10",
@@ -2854,7 +2844,7 @@
     },
     {
       "name": "MMM-FF-StatsJS",
-      "category": "Utility / IOT / 3rd Party / Integration",
+      "category": "Utility / IoT / 3rd Party / Integration",
       "url": "https://github.com/shin10/MMM-FF-StatsJS",
       "id": "shin10/MMM-FF-StatsJS",
       "maintainer": "shin10",
@@ -2935,7 +2925,7 @@
     },
     {
       "name": "MMM-fitbit",
-      "category": "Utility / IOT / 3rd Party / Integration",
+      "category": "Utility / IoT / 3rd Party / Integration",
       "url": "https://github.com/SVendittelli/MMM-fitbit",
       "id": "SVendittelli/MMM-fitbit",
       "maintainer": "SVendittelli",
@@ -2965,7 +2955,7 @@
     },
     {
       "name": "MMM-flicio",
-      "category": "Utility / IOT / 3rd Party / Integration",
+      "category": "Utility / IoT / 3rd Party / Integration",
       "url": "https://github.com/nomis6432/MMM-flicio",
       "id": "nomis6432/MMM-flicio",
       "maintainer": "nomis6432",
@@ -3107,7 +3097,7 @@
     },
     {
       "name": "MMM-FortniteStats",
-      "category": "Utility / IOT / 3rd Party / Integration",
+      "category": "Utility / IoT / 3rd Party / Integration",
       "url": "https://github.com/yourdawi/MMM-FortniteStats",
       "id": "yourdawi/MMM-FortniteStats",
       "maintainer": "yourdawi",
@@ -3126,8 +3116,18 @@
       "issues": []
     },
     {
+      "name": "MMM-Forum",
+      "category": "Development / Core MagicMirror²",
+      "url": "https://github.com/KristjanESPERANTO/MMM-Forum",
+      "id": "KristjanESPERANTO/MMM-Forum",
+      "maintainer": "KristjanESPERANTO",
+      "maintainerURL": "",
+      "description": "Displays information from the MagicMirror² forum. Like latest posts, unread posts, etc. The module should also work for other NodeBB forums, but it is not tested.",
+      "issues": []
+    },
+    {
       "name": "MMM-FrameLight",
-      "category": "Utility / IOT / 3rd Party / Integration",
+      "category": "Utility / IoT / 3rd Party / Integration",
       "url": "https://github.com/RaspiManu/MMM-FrameLight",
       "id": "RaspiManu/MMM-FrameLight",
       "maintainer": "RaspiManu",
@@ -3147,7 +3147,7 @@
     },
     {
       "name": "MMM-Freebox",
-      "category": "Utility / IOT / 3rd Party / Integration",
+      "category": "Utility / IoT / 3rd Party / Integration",
       "url": "https://github.com/bugsounet/MMM-Freebox",
       "id": "bugsounet/MMM-Freebox",
       "maintainer": "bugsounet",
@@ -3157,7 +3157,7 @@
     },
     {
       "name": "MMM-FreeBox-Monitor",
-      "category": "Utility / IOT / 3rd Party / Integration",
+      "category": "Utility / IoT / 3rd Party / Integration",
       "url": "https://github.com/tataille/MMM-FreeBox-Monitor",
       "id": "tataille/MMM-FreeBox-Monitor",
       "maintainer": "tataille",
@@ -3187,7 +3187,7 @@
     },
     {
       "name": "MMM-FRITZ-Box-Callmonitor-py3",
-      "category": "Utility / IOT / 3rd Party / Integration",
+      "category": "Utility / IoT / 3rd Party / Integration",
       "url": "https://github.com/drtorchwood/MMM-FRITZ-Box-Callmonitor-py3",
       "id": "drtorchwood/MMM-FRITZ-Box-Callmonitor-py3",
       "maintainer": "drtorchwood",
@@ -3197,7 +3197,7 @@
     },
     {
       "name": "MMM-FroelingConnect",
-      "category": "Utility / IOT / 3rd Party / Integration",
+      "category": "Utility / IoT / 3rd Party / Integration",
       "url": "https://github.com/eckonator/MMM-FroelingConnect",
       "id": "eckonator/MMM-FroelingConnect",
       "maintainer": "eckonator",
@@ -3207,7 +3207,7 @@
     },
     {
       "name": "MMM-fronius",
-      "category": "Utility / IOT / 3rd Party / Integration",
+      "category": "Utility / IoT / 3rd Party / Integration",
       "url": "https://github.com/peteyjaym/MMM-fronius",
       "id": "peteyjaym/MMM-fronius",
       "maintainer": "peteyjaym",
@@ -3217,7 +3217,7 @@
     },
     {
       "name": "MMM-Fronius2",
-      "category": "Utility / IOT / 3rd Party / Integration",
+      "category": "Utility / IoT / 3rd Party / Integration",
       "url": "https://github.com/deg0nz/MMM-Fronius2",
       "id": "deg0nz/MMM-Fronius2",
       "maintainer": "deg0nz",
@@ -3237,7 +3237,7 @@
     },
     {
       "name": "MMM-FTP-image",
-      "category": "Utility / IOT / 3rd Party / Integration",
+      "category": "Utility / IoT / 3rd Party / Integration",
       "url": "https://github.com/jboucly/MMM-FTP-image",
       "id": "jboucly/MMM-FTP-image",
       "maintainer": "jboucly",
@@ -3287,7 +3287,7 @@
     },
     {
       "name": "MMM-GamepadEvents",
-      "category": "Utility / IOT / 3rd Party / Integration",
+      "category": "Utility / IoT / 3rd Party / Integration",
       "url": "https://github.com/victor-paumier/MMM-GamepadEvents",
       "id": "victor-paumier/MMM-GamepadEvents",
       "maintainer": "victor-paumier",
@@ -3307,7 +3307,7 @@
     },
     {
       "name": "MMM-GasMonitor",
-      "category": "Utility / IOT / 3rd Party / Integration",
+      "category": "Utility / IoT / 3rd Party / Integration",
       "url": "https://github.com/mumblebaj/MMM-GasMonitor",
       "id": "mumblebaj/MMM-GasMonitor",
       "maintainer": "mumblebaj",
@@ -3337,7 +3337,7 @@
     },
     {
       "name": "MMM-GCP",
-      "category": "Utility / IOT / 3rd Party / Integration",
+      "category": "Utility / IoT / 3rd Party / Integration",
       "url": "https://github.com/da4throux/MMM-GCP",
       "id": "da4throux/MMM-GCP",
       "maintainer": "da4throux",
@@ -3458,7 +3458,7 @@
     },
     {
       "name": "MMM-GmailFeed",
-      "category": "Utility / IOT / 3rd Party / Integration",
+      "category": "Utility / IoT / 3rd Party / Integration",
       "url": "https://github.com/shaneapowell/MMM-GmailFeed",
       "id": "shaneapowell/MMM-GmailFeed",
       "maintainer": "shaneapowell",
@@ -3468,7 +3468,7 @@
     },
     {
       "name": "MMM-GmailNotifier",
-      "category": "Utility / IOT / 3rd Party / Integration",
+      "category": "Utility / IoT / 3rd Party / Integration",
       "url": "https://github.com/kurtern84/MMM-GmailNotifier",
       "id": "kurtern84/MMM-GmailNotifier",
       "maintainer": "kurtern84",
@@ -3509,7 +3509,7 @@
     },
     {
       "name": "MMM-GoogleBirthdaysProvider",
-      "category": "Utility / IOT / 3rd Party / Integration",
+      "category": "Utility / IoT / 3rd Party / Integration",
       "url": "https://github.com/PalatinCoder/MMM-GoogleBirthdaysProvider",
       "id": "PalatinCoder/MMM-GoogleBirthdaysProvider",
       "maintainer": "PalatinCoder",
@@ -3539,7 +3539,7 @@
     },
     {
       "name": "MMM-GoogleDocs-Notes",
-      "category": "Utility / IOT / 3rd Party / Integration",
+      "category": "Utility / IoT / 3rd Party / Integration",
       "url": "https://github.com/No3x/MMM-GoogleDocs-Notes",
       "id": "No3x/MMM-GoogleDocs-Notes",
       "maintainer": "No3x",
@@ -3569,18 +3569,17 @@
     },
     {
       "name": "MMM-GoogleKeep",
-      "category": "Outdated Modules",
+      "category": "Utility / IoT / 3rd Party / Integration",
       "url": "https://github.com/taxilof/MMM-GoogleKeep",
       "id": "taxilof/MMM-GoogleKeep",
       "maintainer": "taxilof",
       "maintainerURL": "",
       "description": "Displays one list from Google Keep.",
-      "issues": [],
-      "outdated": "Abandoned. No reactions to issues since years. Seems not to work anymore."
+      "issues": []
     },
     {
       "name": "MMM-googlemaps",
-      "category": "Utility / IOT / 3rd Party / Integration",
+      "category": "Utility / IoT / 3rd Party / Integration",
       "url": "https://github.com/sp4ceman/MMM-googlemaps",
       "id": "sp4ceman/MMM-googlemaps",
       "maintainer": "sp4ceman",
@@ -3630,7 +3629,7 @@
     },
     {
       "name": "MMM-GoogleSheets",
-      "category": "Utility / IOT / 3rd Party / Integration",
+      "category": "Utility / IoT / 3rd Party / Integration",
       "url": "https://github.com/ryan-d-williams/MMM-GoogleSheets",
       "id": "ryan-d-williams/MMM-GoogleSheets",
       "maintainer": "ryan-d-williams",
@@ -3640,7 +3639,7 @@
     },
     {
       "name": "MMM-GoogleShoppingList",
-      "category": "Utility / IOT / 3rd Party / Integration",
+      "category": "Utility / IoT / 3rd Party / Integration",
       "url": "https://github.com/Gismo150/MMM-GoogleShoppingList",
       "id": "Gismo150/MMM-GoogleShoppingList",
       "maintainer": "Gismo150",
@@ -3650,7 +3649,7 @@
     },
     {
       "name": "MMM-GoogleTasks",
-      "category": "Utility / IOT / 3rd Party / Integration",
+      "category": "Utility / IoT / 3rd Party / Integration",
       "url": "https://github.com/spydersoft-consulting/MMM-GoogleTasks",
       "id": "spydersoft-consulting/MMM-GoogleTasks",
       "maintainer": "spydersoft-consulting",
@@ -3689,16 +3688,6 @@
       "issues": []
     },
     {
-      "name": "EXT-Governor",
-      "category": "Extended plugins for MMM-GoogleAssistant",
-      "url": "https://github.com/bugsounet/EXT-Governor",
-      "id": "bugsounet/EXT-Governor",
-      "maintainer": "bugsounet",
-      "maintainerURL": "https://wiki.bugsounet.fr",
-      "description": "CPU governor enables the operating system to scale the CPU frequency up or down in order to save power or improve performance.",
-      "issues": []
-    },
-    {
       "name": "MMM-GPIO-HANDLER",
       "category": "Development / Core MagicMirror²",
       "url": "https://github.com/Sjohn21/MMM-GPIO-HANDLER",
@@ -3710,7 +3699,7 @@
     },
     {
       "name": "MMM-GPIO-Notifications",
-      "category": "Utility / IOT / 3rd Party / Integration",
+      "category": "Utility / IoT / 3rd Party / Integration",
       "url": "https://github.com/Tom-Hirschberger/MMM-GPIO-Notifications",
       "id": "Tom-Hirschberger/MMM-GPIO-Notifications",
       "maintainer": "Tom-Hirschberger",
@@ -3720,7 +3709,7 @@
     },
     {
       "name": "MMM-gpsd",
-      "category": "Utility / IOT / 3rd Party / Integration",
+      "category": "Utility / IoT / 3rd Party / Integration",
       "url": "https://github.com/brentpabst/MMM-gpsd",
       "id": "brentpabst/MMM-gpsd",
       "maintainer": "brentpabst",
@@ -3741,7 +3730,7 @@
     },
     {
       "name": "MMM-GrafanaChart",
-      "category": "Utility / IOT / 3rd Party / Integration",
+      "category": "Utility / IoT / 3rd Party / Integration",
       "url": "https://github.com/SvenSommer/MMM-GrafanaChart",
       "id": "SvenSommer/MMM-GrafanaChart",
       "maintainer": "SvenSommer",
@@ -3751,7 +3740,7 @@
     },
     {
       "name": "MMM-Grocy-Mealplan",
-      "category": "Utility / IOT / 3rd Party / Integration",
+      "category": "Utility / IoT / 3rd Party / Integration",
       "url": "https://github.com/B0neD0ct0r/MMM-Grocy-Mealplan",
       "id": "B0neD0ct0r/MMM-Grocy-Mealplan",
       "maintainer": "B0neD0ct0r",
@@ -3771,7 +3760,7 @@
     },
     {
       "name": "MMM-Growatt",
-      "category": "Utility / IOT / 3rd Party / Integration",
+      "category": "Utility / IoT / 3rd Party / Integration",
       "url": "https://github.com/mumblebaj/MMM-Growatt",
       "id": "mumblebaj/MMM-Growatt",
       "maintainer": "mumblebaj",
@@ -3781,7 +3770,7 @@
     },
     {
       "name": "MMM-Growatt",
-      "category": "Utility / IOT / 3rd Party / Integration",
+      "category": "Utility / IoT / 3rd Party / Integration",
       "url": "https://github.com/dekinet/MMM-Growatt",
       "id": "dekinet/MMM-Growatt",
       "maintainer": "dekinet",
@@ -3791,7 +3780,7 @@
     },
     {
       "name": "MMM-Growatt-Stats",
-      "category": "Utility / IOT / 3rd Party / Integration",
+      "category": "Utility / IoT / 3rd Party / Integration",
       "url": "https://github.com/mumblebaj/MMM-Growatt-Stats",
       "id": "mumblebaj/MMM-Growatt-Stats",
       "maintainer": "mumblebaj",
@@ -3811,7 +3800,7 @@
     },
     {
       "name": "MMM-HabiticaStats",
-      "category": "Utility / IOT / 3rd Party / Integration",
+      "category": "Utility / IoT / 3rd Party / Integration",
       "url": "https://github.com/delightedCrow/MMM-HabiticaStats",
       "id": "delightedCrow/MMM-HabiticaStats",
       "maintainer": "delightedCrow",
@@ -3851,7 +3840,7 @@
     },
     {
       "name": "MMM-HASS",
-      "category": "Utility / IOT / 3rd Party / Integration",
+      "category": "Utility / IoT / 3rd Party / Integration",
       "url": "https://github.com/aserramonner/MMM-HASS",
       "id": "aserramonner/MMM-HASS",
       "maintainer": "aserramonner",
@@ -3871,7 +3860,7 @@
     },
     {
       "name": "MMM-HebrewCalendar",
-      "category": "Utility / IOT / 3rd Party / Integration",
+      "category": "Utility / IoT / 3rd Party / Integration",
       "url": "https://github.com/neshkoli/MMM-HebrewCalendar",
       "id": "neshkoli/MMM-HebrewCalendar",
       "maintainer": "neshkoli",
@@ -3911,6 +3900,16 @@
       "issues": []
     },
     {
+      "name": "MMM-Hevy",
+      "category": "Health",
+      "url": "https://github.com/wathmal/MMM-Hevy",
+      "id": "wathmal/MMM-Hevy",
+      "maintainer": "wathmal",
+      "maintainerURL": "https://github.com/wathmal",
+      "description": "Display strength training workout details and muscle split from Hevy workout tracker App.",
+      "issues": []
+    },
+    {
       "name": "MMM-HH-LocalTransport",
       "category": "Transport / Travel",
       "url": "https://github.com/skuethe/MMM-HH-LocalTransport",
@@ -3922,7 +3921,7 @@
     },
     {
       "name": "MMM-HideAll",
-      "category": "Utility / IOT / 3rd Party / Integration",
+      "category": "Utility / IoT / 3rd Party / Integration",
       "url": "https://github.com/Snille/MMM-HideAll",
       "id": "Snille/MMM-HideAll",
       "maintainer": "Snille",
@@ -3952,7 +3951,7 @@
     },
     {
       "name": "MMM-Hive",
-      "category": "Utility / IOT / 3rd Party / Integration",
+      "category": "Utility / IoT / 3rd Party / Integration",
       "url": "https://github.com/flick116/MMM-Hive",
       "id": "flick116/MMM-Hive",
       "maintainer": "flick116",
@@ -3982,7 +3981,7 @@
     },
     {
       "name": "MMM-HolidayCountdown",
-      "category": "Utility / IOT / 3rd Party / Integration",
+      "category": "Utility / IoT / 3rd Party / Integration",
       "url": "https://github.com/TouaregWarrior/MMM-HolidayCountdown",
       "id": "TouaregWarrior/MMM-HolidayCountdown",
       "maintainer": "TouaregWarrior",
@@ -4002,7 +4001,7 @@
     },
     {
       "name": "MMM-home-presence",
-      "category": "Utility / IOT / 3rd Party / Integration",
+      "category": "Utility / IoT / 3rd Party / Integration",
       "url": "https://github.com/tomgroenwoldt/MMM-home-presence",
       "id": "tomgroenwoldt/MMM-home-presence",
       "maintainer": "tomgroenwoldt",
@@ -4012,7 +4011,7 @@
     },
     {
       "name": "MMM-HomeAssistant",
-      "category": "Utility / IOT / 3rd Party / Integration",
+      "category": "Utility / IoT / 3rd Party / Integration",
       "url": "https://github.com/zuo000/MMM-HomeAssistant",
       "id": "zuo000/MMM-HomeAssistant",
       "maintainer": "zuo000",
@@ -4022,7 +4021,7 @@
     },
     {
       "name": "MMM-homeassistant-sensors",
-      "category": "Utility / IOT / 3rd Party / Integration",
+      "category": "Utility / IoT / 3rd Party / Integration",
       "url": "https://github.com/leinich/MMM-homeassistant-sensors",
       "id": "leinich/MMM-homeassistant-sensors",
       "maintainer": "leinich",
@@ -4032,7 +4031,7 @@
     },
     {
       "name": "MMM-homeassistant-sensors",
-      "category": "Utility / IOT / 3rd Party / Integration",
+      "category": "Utility / IoT / 3rd Party / Integration",
       "url": "https://github.com/Snille/MMM-homeassistant-sensors",
       "id": "Snille/MMM-homeassistant-sensors",
       "maintainer": "Snille",
@@ -4042,7 +4041,7 @@
     },
     {
       "name": "MMM-HomeAssistant-Touch",
-      "category": "Utility / IOT / 3rd Party / Integration",
+      "category": "Utility / IoT / 3rd Party / Integration",
       "url": "https://github.com/mathewmeconry/MMM-HomeAssistant-Touch",
       "id": "mathewmeconry/MMM-HomeAssistant-Touch",
       "maintainer": "mathewmeconry",
@@ -4052,7 +4051,7 @@
     },
     {
       "name": "MMM-HomeAssistantDisplay",
-      "category": "Utility / IOT / 3rd Party / Integration",
+      "category": "Utility / IoT / 3rd Party / Integration",
       "url": "https://github.com/wonderslug/MMM-HomeAssistantDisplay",
       "id": "wonderslug/MMM-HomeAssistantDisplay",
       "maintainer": "wonderslug",
@@ -4062,7 +4061,7 @@
     },
     {
       "name": "MMM-HomeAutomationNotifications",
-      "category": "Utility / IOT / 3rd Party / Integration",
+      "category": "Utility / IoT / 3rd Party / Integration",
       "url": "https://github.com/john3300/MMM-HomeAutomationNotifications",
       "id": "john3300/MMM-HomeAutomationNotifications",
       "maintainer": "john3300",
@@ -4072,7 +4071,7 @@
     },
     {
       "name": "MMM-HomeConnect",
-      "category": "Utility / IOT / 3rd Party / Integration",
+      "category": "Utility / IoT / 3rd Party / Integration",
       "url": "https://github.com/djerik/MMM-HomeConnect",
       "id": "djerik/MMM-HomeConnect",
       "maintainer": "djerik",
@@ -4082,7 +4081,7 @@
     },
     {
       "name": "MMM-Homematic",
-      "category": "Utility / IOT / 3rd Party / Integration",
+      "category": "Utility / IoT / 3rd Party / Integration",
       "url": "https://github.com/Sickboy78/MMM-Homematic",
       "id": "Sickboy78/MMM-Homematic",
       "maintainer": "Sickboy78",
@@ -4092,7 +4091,7 @@
     },
     {
       "name": "MMM-Homematic-Rooms",
-      "category": "Utility / IOT / 3rd Party / Integration",
+      "category": "Utility / IoT / 3rd Party / Integration",
       "url": "https://github.com/JFWenisch/MMM-Homematic-Rooms",
       "id": "JFWenisch/MMM-Homematic-Rooms",
       "maintainer": "JFWenisch",
@@ -4102,7 +4101,7 @@
     },
     {
       "name": "MMM-Homematic-Thermostats",
-      "category": "Utility / IOT / 3rd Party / Integration",
+      "category": "Utility / IoT / 3rd Party / Integration",
       "url": "https://github.com/spitzlbergerj/MMM-Homematic-Thermostats",
       "id": "spitzlbergerj/MMM-Homematic-Thermostats",
       "maintainer": "spitzlbergerj",
@@ -4132,7 +4131,7 @@
     },
     {
       "name": "MMM-Hover",
-      "category": "Utility / IOT / 3rd Party / Integration",
+      "category": "Utility / IoT / 3rd Party / Integration",
       "url": "https://github.com/dancj/MMM-Hover",
       "id": "dancj/MMM-Hover",
       "maintainer": "dancj",
@@ -4142,7 +4141,7 @@
     },
     {
       "name": "MMM-HRS-PickupPlan",
-      "category": "Utility / IOT / 3rd Party / Integration",
+      "category": "Utility / IoT / 3rd Party / Integration",
       "url": "https://github.com/maan75/MMM-HRS-PickupPlan",
       "id": "maan75/MMM-HRS-PickupPlan",
       "maintainer": "maan75",
@@ -4173,7 +4172,7 @@
     },
     {
       "name": "MMM-Hue",
-      "category": "Utility / IOT / 3rd Party / Integration",
+      "category": "Utility / IoT / 3rd Party / Integration",
       "url": "https://github.com/MitchSS/MMM-Hue",
       "id": "MitchSS/MMM-Hue",
       "maintainer": "MitchSS",
@@ -4183,7 +4182,7 @@
     },
     {
       "name": "MMM-Hue-Controller",
-      "category": "Utility / IOT / 3rd Party / Integration",
+      "category": "Utility / IoT / 3rd Party / Integration",
       "url": "https://github.com/gueguet/MMM-Hue-Controller",
       "id": "gueguet/MMM-Hue-Controller",
       "maintainer": "gueguet",
@@ -4193,7 +4192,7 @@
     },
     {
       "name": "MMM-Hue-Controller-2",
-      "category": "Utility / IOT / 3rd Party / Integration",
+      "category": "Utility / IoT / 3rd Party / Integration",
       "url": "https://github.com/jboucly/MMM-Hue-Controller-2",
       "id": "jboucly/MMM-Hue-Controller-2",
       "maintainer": "jboucly",
@@ -4233,7 +4232,7 @@
     },
     {
       "name": "MMM-HVIEW-Snapshot",
-      "category": "Utility / IOT / 3rd Party / Integration",
+      "category": "Utility / IoT / 3rd Party / Integration",
       "url": "https://github.com/coderpussy/MMM-HVIEW-Snapshot",
       "id": "coderpussy/MMM-HVIEW-Snapshot",
       "maintainer": "coderpussy",
@@ -4243,7 +4242,7 @@
     },
     {
       "name": "MMM-ICA",
-      "category": "Utility / IOT / 3rd Party / Integration",
+      "category": "Utility / IoT / 3rd Party / Integration",
       "url": "https://github.com/PierreGode/MMM-ICA",
       "id": "PierreGode/MMM-ICA",
       "maintainer": "PierreGode",
@@ -4253,7 +4252,7 @@
     },
     {
       "name": "MMM-iCal-ToDo",
-      "category": "Utility / IOT / 3rd Party / Integration",
+      "category": "Utility / IoT / 3rd Party / Integration",
       "url": "https://github.com/nixnuex/MMM-iCal-ToDo",
       "id": "nixnuex/MMM-iCal-ToDo",
       "maintainer": "nixnuex",
@@ -4263,7 +4262,7 @@
     },
     {
       "name": "MMM-iCloud-Client",
-      "category": "Utility / IOT / 3rd Party / Integration",
+      "category": "Utility / IoT / 3rd Party / Integration",
       "url": "https://github.com/bitte-ein-bit/MMM-iCloud-Client",
       "id": "bitte-ein-bit/MMM-iCloud-Client",
       "maintainer": "bitte-ein-bit",
@@ -4273,7 +4272,7 @@
     },
     {
       "name": "MMM-IconDisplayer",
-      "category": "Utility / IOT / 3rd Party / Integration",
+      "category": "Utility / IoT / 3rd Party / Integration",
       "url": "https://github.com/wiedsee/MMM-IconDisplayer",
       "id": "wiedsee/MMM-IconDisplayer",
       "maintainer": "wiedsee",
@@ -4313,7 +4312,7 @@
     },
     {
       "name": "MMM-iFrame",
-      "category": "Utility / IOT / 3rd Party / Integration",
+      "category": "Utility / IoT / 3rd Party / Integration",
       "url": "https://github.com/alberttwong/MMM-iFrame",
       "id": "alberttwong/MMM-iFrame",
       "maintainer": "alberttwong",
@@ -4334,7 +4333,7 @@
     },
     {
       "name": "MMM-iFrame-GSlides",
-      "category": "Utility / IOT / 3rd Party / Integration",
+      "category": "Utility / IoT / 3rd Party / Integration",
       "url": "https://github.com/jharttech/MMM-iFrame-GSlides",
       "id": "jharttech/MMM-iFrame-GSlides",
       "maintainer": "jharttech",
@@ -4344,7 +4343,7 @@
     },
     {
       "name": "MMM-iFrame-Ping",
-      "category": "Utility / IOT / 3rd Party / Integration",
+      "category": "Utility / IoT / 3rd Party / Integration",
       "url": "https://github.com/AgP42/MMM-iFrame-Ping",
       "id": "AgP42/MMM-iFrame-Ping",
       "maintainer": "AgP42",
@@ -4485,7 +4484,7 @@
     },
     {
       "name": "MMM-IntelligentOctopus",
-      "category": "Utility / IOT / 3rd Party / Integration",
+      "category": "Utility / IoT / 3rd Party / Integration",
       "url": "https://github.com/ianmccon/MMM-IntelligentOctopus",
       "id": "ianmccon/MMM-IntelligentOctopus",
       "maintainer": "ianmccon",
@@ -4495,7 +4494,7 @@
     },
     {
       "name": "internet-monitor",
-      "category": "Utility / IOT / 3rd Party / Integration",
+      "category": "Utility / IoT / 3rd Party / Integration",
       "url": "https://github.com/BrianHepler/internet-monitor",
       "id": "BrianHepler/internet-monitor",
       "maintainer": "BrianHepler",
@@ -4505,7 +4504,7 @@
     },
     {
       "name": "MMM-ioBroker",
-      "category": "Utility / IOT / 3rd Party / Integration",
+      "category": "Utility / IoT / 3rd Party / Integration",
       "url": "https://github.com/ioBroker/MMM-ioBroker",
       "id": "ioBroker/MMM-ioBroker",
       "maintainer": "ioBroker",
@@ -4515,7 +4514,7 @@
     },
     {
       "name": "MMM-IOTStatus",
-      "category": "Utility / IOT / 3rd Party / Integration",
+      "category": "Utility / IoT / 3rd Party / Integration",
       "url": "https://github.com/aduyng/MMM-IOTStatus",
       "id": "aduyng/MMM-IOTStatus",
       "maintainer": "aduyng",
@@ -4525,7 +4524,7 @@
     },
     {
       "name": "MMM-ip",
-      "category": "Utility / IOT / 3rd Party / Integration",
+      "category": "Utility / IoT / 3rd Party / Integration",
       "url": "https://github.com/fewieden/MMM-ip",
       "id": "fewieden/MMM-ip",
       "maintainer": "fewieden",
@@ -4535,7 +4534,7 @@
     },
     {
       "name": "MMM-IPCam",
-      "category": "Utility / IOT / 3rd Party / Integration",
+      "category": "Utility / IoT / 3rd Party / Integration",
       "url": "https://github.com/RedNax67/MMM-IPCam",
       "id": "RedNax67/MMM-IPCam",
       "maintainer": "RedNax67",
@@ -4616,7 +4615,7 @@
     },
     {
       "name": "MMM-ISY",
-      "category": "Utility / IOT / 3rd Party / Integration",
+      "category": "Utility / IoT / 3rd Party / Integration",
       "url": "https://github.com/shbatm/MMM-ISY",
       "id": "shbatm/MMM-ISY",
       "maintainer": "shbatm",
@@ -4626,7 +4625,7 @@
     },
     {
       "name": "MMM-IT8951",
-      "category": "Utility / IOT / 3rd Party / Integration",
+      "category": "Utility / IoT / 3rd Party / Integration",
       "url": "https://github.com/seb-ma/MMM-IT8951",
       "id": "seb-ma/MMM-IT8951",
       "maintainer": "seb-ma",
@@ -4656,7 +4655,7 @@
     },
     {
       "name": "MMM-Jeedom",
-      "category": "Utility / IOT / 3rd Party / Integration",
+      "category": "Utility / IoT / 3rd Party / Integration",
       "url": "https://github.com/prysme01/MMM-Jeedom",
       "id": "prysme01/MMM-Jeedom",
       "maintainer": "prysme01",
@@ -4696,7 +4695,7 @@
     },
     {
       "name": "MMM-jitsi",
-      "category": "Utility / IOT / 3rd Party / Integration",
+      "category": "Utility / IoT / 3rd Party / Integration",
       "url": "https://github.com/nomis6432/MMM-jitsi",
       "id": "nomis6432/MMM-jitsi",
       "maintainer": "nomis6432",
@@ -4736,7 +4735,7 @@
     },
     {
       "name": "MMM-json",
-      "category": "Utility / IOT / 3rd Party / Integration",
+      "category": "Utility / IoT / 3rd Party / Integration",
       "url": "https://github.com/DanielHabenicht/MMM-json",
       "id": "DanielHabenicht/MMM-json",
       "maintainer": "DanielHabenicht",
@@ -4757,7 +4756,7 @@
     },
     {
       "name": "MMM-JsonGraph",
-      "category": "Utility / IOT / 3rd Party / Integration",
+      "category": "Utility / IoT / 3rd Party / Integration",
       "url": "https://github.com/timdows/MMM-JsonGraph",
       "id": "timdows/MMM-JsonGraph",
       "maintainer": "timdows",
@@ -4767,7 +4766,7 @@
     },
     {
       "name": "MMM-JSONStatusChecker",
-      "category": "Utility / IOT / 3rd Party / Integration",
+      "category": "Utility / IoT / 3rd Party / Integration",
       "url": "https://github.com/shbatm/MMM-JSONStatusChecker",
       "id": "shbatm/MMM-JSONStatusChecker",
       "maintainer": "shbatm",
@@ -4777,7 +4776,7 @@
     },
     {
       "name": "MMM-JsonTable",
-      "category": "Utility / IOT / 3rd Party / Integration",
+      "category": "Utility / IoT / 3rd Party / Integration",
       "url": "https://github.com/timdows/MMM-JsonTable",
       "id": "timdows/MMM-JsonTable",
       "maintainer": "timdows",
@@ -4787,7 +4786,7 @@
     },
     {
       "name": "MMM-JsonValue",
-      "category": "Utility / IOT / 3rd Party / Integration",
+      "category": "Utility / IoT / 3rd Party / Integration",
       "url": "https://github.com/c-klinger/MMM-JsonValue",
       "id": "c-klinger/MMM-JsonValue",
       "maintainer": "c-klinger",
@@ -4827,7 +4826,7 @@
     },
     {
       "name": "MMM-KeyBindings",
-      "category": "Utility / IOT / 3rd Party / Integration",
+      "category": "Utility / IoT / 3rd Party / Integration",
       "url": "https://github.com/shbatm/MMM-KeyBindings",
       "id": "shbatm/MMM-KeyBindings",
       "maintainer": "shbatm",
@@ -4837,7 +4836,7 @@
     },
     {
       "name": "MMM-Keyboard",
-      "category": "Utility / IOT / 3rd Party / Integration",
+      "category": "Utility / IoT / 3rd Party / Integration",
       "url": "https://github.com/lavolp3/MMM-Keyboard",
       "id": "lavolp3/MMM-Keyboard",
       "maintainer": "lavolp3",
@@ -4857,7 +4856,7 @@
     },
     {
       "name": "KeyDisplayed",
-      "category": "Utility / IOT / 3rd Party / Integration",
+      "category": "Utility / IoT / 3rd Party / Integration",
       "url": "https://github.com/l0b5ter/KeyDisplayed",
       "id": "l0b5ter/KeyDisplayed",
       "maintainer": "l0b5ter",
@@ -4867,7 +4866,7 @@
     },
     {
       "name": "MMM-Keypress",
-      "category": "Utility / IOT / 3rd Party / Integration",
+      "category": "Utility / IoT / 3rd Party / Integration",
       "url": "https://github.com/ItsMeBrille/MMM-Keypress",
       "id": "ItsMeBrille/MMM-Keypress",
       "maintainer": "ItsMeBrille",
@@ -4949,7 +4948,7 @@
     },
     {
       "name": "MMM-LCDControl",
-      "category": "Utility / IOT / 3rd Party / Integration",
+      "category": "Utility / IoT / 3rd Party / Integration",
       "url": "https://github.com/Txukie/MMM-LCDControl",
       "id": "Txukie/MMM-LCDControl",
       "maintainer": "Txukie",
@@ -4979,7 +4978,7 @@
     },
     {
       "name": "MMM-LEDStripControl",
-      "category": "Utility / IOT / 3rd Party / Integration",
+      "category": "Utility / IoT / 3rd Party / Integration",
       "url": "https://github.com/Tom-Hirschberger/MMM-LEDStripControl",
       "id": "Tom-Hirschberger/MMM-LEDStripControl",
       "maintainer": "Tom-Hirschberger",
@@ -5061,7 +5060,7 @@
     },
     {
       "name": "MMM-LittleBockFermentationLog",
-      "category": "Utility / IOT / 3rd Party / Integration",
+      "category": "Utility / IoT / 3rd Party / Integration",
       "url": "https://github.com/SBrendan/MMM-LittleBockFermentationLog",
       "id": "SBrendan/MMM-LittleBockFermentationLog",
       "maintainer": "SBrendan",
@@ -5071,7 +5070,7 @@
     },
     {
       "name": "MMM-Live-Stream-TV",
-      "category": "Utility / IOT / 3rd Party / Integration",
+      "category": "Utility / IoT / 3rd Party / Integration",
       "url": "https://github.com/mcintyrehh/MMM-Live-Stream-TV",
       "id": "mcintyrehh/MMM-Live-Stream-TV",
       "maintainer": "mcintyrehh",
@@ -5091,7 +5090,7 @@
     },
     {
       "name": "MMM-LKY-TIC",
-      "category": "Utility / IOT / 3rd Party / Integration",
+      "category": "Utility / IoT / 3rd Party / Integration",
       "url": "https://github.com/djey47/MMM-LKY-TIC",
       "id": "djey47/MMM-LKY-TIC",
       "maintainer": "djey47",
@@ -5141,7 +5140,7 @@
     },
     {
       "name": "MMM-LocalVideoPlayer",
-      "category": "Utility / IOT / 3rd Party / Integration",
+      "category": "Utility / IoT / 3rd Party / Integration",
       "url": "https://github.com/RayTCosgrove/MMM-LocalVideoPlayer",
       "id": "RayTCosgrove/MMM-LocalVideoPlayer",
       "maintainer": "RayTCosgrove",
@@ -5242,7 +5241,7 @@
     },
     {
       "name": "MMM-Loxone",
-      "category": "Utility / IOT / 3rd Party / Integration",
+      "category": "Utility / IoT / 3rd Party / Integration",
       "url": "https://github.com/idoodler/MMM-Loxone",
       "id": "idoodler/MMM-Loxone",
       "maintainer": "idoodler",
@@ -5303,7 +5302,7 @@
     },
     {
       "name": "MMM-MacAddressScan",
-      "category": "Utility / IOT / 3rd Party / Integration",
+      "category": "Utility / IoT / 3rd Party / Integration",
       "url": "https://github.com/doctorfree/MMM-MacAddressScan",
       "id": "doctorfree/MMM-MacAddressScan",
       "maintainer": "doctorfree",
@@ -5323,7 +5322,7 @@
     },
     {
       "name": "MMM-MagicHexClock",
-      "category": "Utility / IOT / 3rd Party / Integration",
+      "category": "Utility / IoT / 3rd Party / Integration",
       "url": "https://github.com/Lavve/MMM-MagicHexClock",
       "id": "Lavve/MMM-MagicHexClock",
       "maintainer": "Lavve",
@@ -5355,7 +5354,7 @@
     },
     {
       "name": "MagicMirror-Ping-Module",
-      "category": "Utility / IOT / 3rd Party / Integration",
+      "category": "Utility / IoT / 3rd Party / Integration",
       "url": "https://github.com/CFenner/MagicMirror-Ping-Module",
       "id": "CFenner/MagicMirror-Ping-Module",
       "maintainer": "CFenner",
@@ -5395,7 +5394,7 @@
     },
     {
       "name": "MMM-MailMessage",
-      "category": "Utility / IOT / 3rd Party / Integration",
+      "category": "Utility / IoT / 3rd Party / Integration",
       "url": "https://github.com/Unclearogre/MMM-MailMessage",
       "id": "Unclearogre/MMM-MailMessage",
       "maintainer": "Unclearogre",
@@ -5446,7 +5445,7 @@
     },
     {
       "name": "MMM-Mashie-Skolmat",
-      "category": "Utility / IOT / 3rd Party / Integration",
+      "category": "Utility / IoT / 3rd Party / Integration",
       "url": "https://github.com/Alvinger/MMM-Mashie-Skolmat",
       "id": "Alvinger/MMM-Mashie-Skolmat",
       "maintainer": "Alvinger",
@@ -5466,7 +5465,7 @@
     },
     {
       "name": "MMM-Mattermost",
-      "category": "Utility / IOT / 3rd Party / Integration",
+      "category": "Utility / IoT / 3rd Party / Integration",
       "url": "https://github.com/O5ten/MMM-Mattermost",
       "id": "O5ten/MMM-Mattermost",
       "maintainer": "O5ten",
@@ -5476,7 +5475,7 @@
     },
     {
       "name": "MMM-max",
-      "category": "Utility / IOT / 3rd Party / Integration",
+      "category": "Utility / IoT / 3rd Party / Integration",
       "url": "https://github.com/mirko3000/MMM-max",
       "id": "mirko3000/MMM-max",
       "maintainer": "mirko3000",
@@ -5516,7 +5515,7 @@
     },
     {
       "name": "MMM-MealViewer",
-      "category": "Utility / IOT / 3rd Party / Integration",
+      "category": "Utility / IoT / 3rd Party / Integration",
       "url": "https://github.com/ElliAndDad/MMM-MealViewer",
       "id": "ElliAndDad/MMM-MealViewer",
       "maintainer": "ElliAndDad",
@@ -5526,7 +5525,7 @@
     },
     {
       "name": "MMM-Memo",
-      "category": "Utility / IOT / 3rd Party / Integration",
+      "category": "Utility / IoT / 3rd Party / Integration",
       "url": "https://github.com/schnibel/MMM-Memo",
       "id": "schnibel/MMM-Memo",
       "maintainer": "schnibel",
@@ -5546,7 +5545,7 @@
     },
     {
       "name": "MMM-MensaMax",
-      "category": "Utility / IOT / 3rd Party / Integration",
+      "category": "Utility / IoT / 3rd Party / Integration",
       "url": "https://github.com/fuerst/MMM-MensaMax",
       "id": "fuerst/MMM-MensaMax",
       "maintainer": "fuerst",
@@ -5606,7 +5605,7 @@
     },
     {
       "name": "MMM-MHZ19",
-      "category": "Utility / IOT / 3rd Party / Integration",
+      "category": "Utility / IoT / 3rd Party / Integration",
       "url": "https://github.com/awitwicki/MMM-MHZ19",
       "id": "awitwicki/MMM-MHZ19",
       "maintainer": "awitwicki",
@@ -5626,7 +5625,7 @@
     },
     {
       "name": "MMM-MicrosoftToDo",
-      "category": "Utility / IOT / 3rd Party / Integration",
+      "category": "Utility / IoT / 3rd Party / Integration",
       "url": "https://github.com/thobach/MMM-MicrosoftToDo",
       "id": "thobach/MMM-MicrosoftToDo",
       "maintainer": "thobach",
@@ -5636,7 +5635,7 @@
     },
     {
       "name": "MMM-MieleAtHome",
-      "category": "Utility / IOT / 3rd Party / Integration",
+      "category": "Utility / IoT / 3rd Party / Integration",
       "url": "https://github.com/SAR71/MMM-MieleAtHome",
       "id": "SAR71/MMM-MieleAtHome",
       "maintainer": "SAR71",
@@ -5747,7 +5746,7 @@
     },
     {
       "name": "MMM_ncdeck",
-      "category": "Utility / IOT / 3rd Party / Integration",
+      "category": "Utility / IoT / 3rd Party / Integration",
       "url": "https://github.com/motey/MMM_ncdeck",
       "id": "motey/MMM_ncdeck",
       "maintainer": "motey",
@@ -5798,7 +5797,7 @@
     },
     {
       "name": "mmm-hue-lights",
-      "category": "Utility / IOT / 3rd Party / Integration",
+      "category": "Utility / IoT / 3rd Party / Integration",
       "url": "https://github.com/michael5r/mmm-hue-lights",
       "id": "michael5r/mmm-hue-lights",
       "maintainer": "michael5r",
@@ -5818,7 +5817,7 @@
     },
     {
       "name": "MMm-MinecraftServer",
-      "category": "Utility / IOT / 3rd Party / Integration",
+      "category": "Utility / IoT / 3rd Party / Integration",
       "url": "https://github.com/ItsMeBrille/MMm-MinecraftServer",
       "id": "ItsMeBrille/MMm-MinecraftServer",
       "maintainer": "ItsMeBrille",
@@ -5839,7 +5838,7 @@
     },
     {
       "name": "mmm-nest-cameras",
-      "category": "Utility / IOT / 3rd Party / Integration",
+      "category": "Utility / IoT / 3rd Party / Integration",
       "url": "https://github.com/michael5r/mmm-nest-cameras",
       "id": "michael5r/mmm-nest-cameras",
       "maintainer": "michael5r",
@@ -5849,7 +5848,7 @@
     },
     {
       "name": "mmm-nest-status",
-      "category": "Utility / IOT / 3rd Party / Integration",
+      "category": "Utility / IoT / 3rd Party / Integration",
       "url": "https://github.com/michael5r/mmm-nest-status",
       "id": "michael5r/mmm-nest-status",
       "maintainer": "michael5r",
@@ -5869,7 +5868,7 @@
     },
     {
       "name": "mmm-openhabfloorplan",
-      "category": "Utility / IOT / 3rd Party / Integration",
+      "category": "Utility / IoT / 3rd Party / Integration",
       "url": "https://github.com/paphko/mmm-openhabfloorplan",
       "id": "paphko/mmm-openhabfloorplan",
       "maintainer": "paphko",
@@ -5879,7 +5878,7 @@
     },
     {
       "name": "mmm-pins",
-      "category": "Utility / IOT / 3rd Party / Integration",
+      "category": "Utility / IoT / 3rd Party / Integration",
       "url": "https://github.com/ptrbld/mmm-pins",
       "id": "ptrbld/mmm-pins",
       "maintainer": "ptrbld",
@@ -5909,7 +5908,7 @@
     },
     {
       "name": "mmm-systemtemperature",
-      "category": "Utility / IOT / 3rd Party / Integration",
+      "category": "Utility / IoT / 3rd Party / Integration",
       "url": "https://github.com/MichMich/mmm-systemtemperature",
       "id": "MichMich/mmm-systemtemperature",
       "maintainer": "MichMich",
@@ -5919,7 +5918,7 @@
     },
     {
       "name": "mmm-toggle-by-mqtt",
-      "category": "Utility / IOT / 3rd Party / Integration",
+      "category": "Utility / IoT / 3rd Party / Integration",
       "url": "https://github.com/moejetz/mmm-toggle-by-mqtt",
       "id": "moejetz/mmm-toggle-by-mqtt",
       "maintainer": "moejetz",
@@ -5939,7 +5938,7 @@
     },
     {
       "name": "mmm-udr",
-      "category": "Utility / IOT / 3rd Party / Integration",
+      "category": "Utility / IoT / 3rd Party / Integration",
       "url": "https://github.com/crimsonclyde/mmm-udr",
       "id": "crimsonclyde/mmm-udr",
       "maintainer": "crimsonclyde",
@@ -5979,7 +5978,7 @@
     },
     {
       "name": "mmm-zabbix-alerts",
-      "category": "Utility / IOT / 3rd Party / Integration",
+      "category": "Utility / IoT / 3rd Party / Integration",
       "url": "https://github.com/spectroman/mmm-zabbix-alerts",
       "id": "spectroman/mmm-zabbix-alerts",
       "maintainer": "spectroman",
@@ -5999,7 +5998,7 @@
     },
     {
       "name": "MMM-mmpm",
-      "category": "Utility / IOT / 3rd Party / Integration",
+      "category": "Utility / IoT / 3rd Party / Integration",
       "url": "https://github.com/Bee-Mar/MMM-mmpm",
       "id": "Bee-Mar/MMM-mmpm",
       "maintainer": "Bee-Mar",
@@ -6009,7 +6008,7 @@
     },
     {
       "name": "MMM-ModInstall",
-      "category": "Utility / IOT / 3rd Party / Integration",
+      "category": "Utility / IoT / 3rd Party / Integration",
       "url": "https://gitlab.com/khassel/MMM-ModInstall",
       "id": "khassel/MMM-ModInstall",
       "maintainer": "khassel",
@@ -6019,7 +6018,7 @@
     },
     {
       "name": "MMM-Modulebar",
-      "category": "Utility / IOT / 3rd Party / Integration",
+      "category": "Utility / IoT / 3rd Party / Integration",
       "url": "https://github.com/Snille/MMM-Modulebar",
       "id": "Snille/MMM-Modulebar",
       "maintainer": "Snille",
@@ -6029,7 +6028,7 @@
     },
     {
       "name": "MMM-ModuleHandler",
-      "category": "Utility / IOT / 3rd Party / Integration",
+      "category": "Utility / IoT / 3rd Party / Integration",
       "url": "https://github.com/ahmedwab/MMM-ModuleHandler",
       "id": "ahmedwab/MMM-ModuleHandler",
       "maintainer": "ahmedwab",
@@ -6059,7 +6058,7 @@
     },
     {
       "name": "MMM-ModulesGroupsRotation",
-      "category": "Utility / IOT / 3rd Party / Integration",
+      "category": "Utility / IoT / 3rd Party / Integration",
       "url": "https://github.com/mezderman/MMM-ModulesGroupsRotation",
       "id": "mezderman/MMM-ModulesGroupsRotation",
       "maintainer": "mezderman",
@@ -6079,7 +6078,7 @@
     },
     {
       "name": "MMM-MonthlyCalendar",
-      "category": "Utility / IOT / 3rd Party / Integration",
+      "category": "Utility / IoT / 3rd Party / Integration",
       "url": "https://github.com/kolbyjack/MMM-MonthlyCalendar",
       "id": "kolbyjack/MMM-MonthlyCalendar",
       "maintainer": "kolbyjack",
@@ -6109,7 +6108,7 @@
     },
     {
       "name": "MMM-moonraker",
-      "category": "Utility / IOT / 3rd Party / Integration",
+      "category": "Utility / IoT / 3rd Party / Integration",
       "url": "https://github.com/btastic/MMM-moonraker",
       "id": "btastic/MMM-moonraker",
       "maintainer": "btastic",
@@ -6129,7 +6128,7 @@
     },
     {
       "name": "MMM-MortgageCountdown",
-      "category": "Utility / IOT / 3rd Party / Integration",
+      "category": "Utility / IoT / 3rd Party / Integration",
       "url": "https://github.com/TouaregWarrior/MMM-MortgageCountdown",
       "id": "TouaregWarrior/MMM-MortgageCountdown",
       "maintainer": "TouaregWarrior",
@@ -6139,7 +6138,7 @@
     },
     {
       "name": "MMM-Motion-Camera",
-      "category": "Utility / IOT / 3rd Party / Integration",
+      "category": "Utility / IoT / 3rd Party / Integration",
       "url": "https://github.com/yusinv/MMM-Motion-Camera",
       "id": "yusinv/MMM-Motion-Camera",
       "maintainer": "yusinv",
@@ -6170,7 +6169,7 @@
     },
     {
       "name": "MMM-MotionDetector",
-      "category": "Utility / IOT / 3rd Party / Integration",
+      "category": "Utility / IoT / 3rd Party / Integration",
       "url": "https://github.com/rejas/MMM-MotionDetector",
       "id": "rejas/MMM-MotionDetector",
       "maintainer": "rejas",
@@ -6180,7 +6179,7 @@
     },
     {
       "name": "MMM-MotionDisplay",
-      "category": "Utility / IOT / 3rd Party / Integration",
+      "category": "Utility / IoT / 3rd Party / Integration",
       "url": "https://github.com/pjestico/MMM-MotionDisplay",
       "id": "pjestico/MMM-MotionDisplay",
       "maintainer": "pjestico",
@@ -6251,7 +6250,7 @@
     },
     {
       "name": "MMM-MPR121",
-      "category": "Utility / IOT / 3rd Party / Integration",
+      "category": "Utility / IoT / 3rd Party / Integration",
       "url": "https://github.com/PatriceG/MMM-MPR121",
       "id": "PatriceG/MMM-MPR121",
       "maintainer": "PatriceG",
@@ -6271,7 +6270,7 @@
     },
     {
       "name": "MMM-MQTT",
-      "category": "Utility / IOT / 3rd Party / Integration",
+      "category": "Utility / IoT / 3rd Party / Integration",
       "url": "https://github.com/ottopaulsen/MMM-MQTT",
       "id": "ottopaulsen/MMM-MQTT",
       "maintainer": "ottopaulsen",
@@ -6281,7 +6280,7 @@
     },
     {
       "name": "MMM-MQTT",
-      "category": "Utility / IOT / 3rd Party / Integration",
+      "category": "Utility / IoT / 3rd Party / Integration",
       "url": "https://github.com/jupadin/MMM-MQTT",
       "id": "jupadin/MMM-MQTT",
       "maintainer": "jupadin",
@@ -6291,7 +6290,7 @@
     },
     {
       "name": "MMM-MQTT-Publisher",
-      "category": "Utility / IOT / 3rd Party / Integration",
+      "category": "Utility / IoT / 3rd Party / Integration",
       "url": "https://github.com/cybex-dev/MMM-MQTT-Publisher",
       "id": "cybex-dev/MMM-MQTT-Publisher",
       "maintainer": "cybex-dev",
@@ -6301,7 +6300,7 @@
     },
     {
       "name": "MMM-MQTTbind",
-      "category": "Utility / IOT / 3rd Party / Integration",
+      "category": "Utility / IoT / 3rd Party / Integration",
       "url": "https://github.com/janm84/MMM-MQTTbind",
       "id": "janm84/MMM-MQTTbind",
       "maintainer": "janm84",
@@ -6311,7 +6310,7 @@
     },
     {
       "name": "MMM-MQTTbridge",
-      "category": "Utility / IOT / 3rd Party / Integration",
+      "category": "Utility / IoT / 3rd Party / Integration",
       "url": "https://github.com/Tom-Hirschberger/MMM-MQTTbridge",
       "id": "Tom-Hirschberger/MMM-MQTTbridge",
       "maintainer": "Tom-Hirschberger",
@@ -6321,7 +6320,7 @@
     },
     {
       "name": "MMM-MQTTfloorplan",
-      "category": "Utility / IOT / 3rd Party / Integration",
+      "category": "Utility / IoT / 3rd Party / Integration",
       "url": "https://github.com/DMailMan/MMM-MQTTfloorplan",
       "id": "DMailMan/MMM-MQTTfloorplan",
       "maintainer": "DMailMan",
@@ -6351,7 +6350,7 @@
     },
     {
       "name": "MMM-Multimonth",
-      "category": "Utility / IOT / 3rd Party / Integration",
+      "category": "Utility / IoT / 3rd Party / Integration",
       "url": "https://github.com/BKeyport/MMM-Multimonth",
       "id": "BKeyport/MMM-Multimonth",
       "maintainer": "BKeyport",
@@ -6381,7 +6380,7 @@
     },
     {
       "name": "MMM-MusicOnDemand",
-      "category": "Utility / IOT / 3rd Party / Integration",
+      "category": "Utility / IoT / 3rd Party / Integration",
       "url": "https://github.com/ptrk95/MMM-MusicOnDemand",
       "id": "ptrk95/MMM-MusicOnDemand",
       "maintainer": "ptrk95",
@@ -6432,7 +6431,7 @@
     },
     {
       "name": "MMM-MyCalendar",
-      "category": "Utility / IOT / 3rd Party / Integration",
+      "category": "Utility / IoT / 3rd Party / Integration",
       "url": "https://github.com/dbeltjr/MMM-MyCalendar",
       "id": "dbeltjr/MMM-MyCalendar",
       "maintainer": "dbeltjr",
@@ -6452,7 +6451,7 @@
     },
     {
       "name": "MMM-mycroft-bridge",
-      "category": "Utility / IOT / 3rd Party / Integration",
+      "category": "Utility / IoT / 3rd Party / Integration",
       "url": "https://github.com/oenstrom/MMM-mycroft-bridge",
       "id": "oenstrom/MMM-mycroft-bridge",
       "maintainer": "oenstrom",
@@ -6472,7 +6471,7 @@
     },
     {
       "name": "MMM-MyGarbage",
-      "category": "Utility / IOT / 3rd Party / Integration",
+      "category": "Utility / IoT / 3rd Party / Integration",
       "url": "https://github.com/htilburgs/MMM-MyGarbage",
       "id": "htilburgs/MMM-MyGarbage",
       "maintainer": "htilburgs",
@@ -6492,7 +6491,7 @@
     },
     {
       "name": "MMM-MyMonthlyCalendar",
-      "category": "Utility / IOT / 3rd Party / Integration",
+      "category": "Utility / IoT / 3rd Party / Integration",
       "url": "https://github.com/htilburgs/MMM-MyMonthlyCalendar",
       "id": "htilburgs/MMM-MyMonthlyCalendar",
       "maintainer": "htilburgs",
@@ -6522,7 +6521,7 @@
     },
     {
       "name": "MMM-MySenseHat",
-      "category": "Utility / IOT / 3rd Party / Integration",
+      "category": "Utility / IoT / 3rd Party / Integration",
       "url": "https://github.com/framboise-pi/MMM-MySenseHat",
       "id": "framboise-pi/MMM-MySenseHat",
       "maintainer": "framboise-pi",
@@ -6532,7 +6531,7 @@
     },
     {
       "name": "MMM-MySQLData",
-      "category": "Utility / IOT / 3rd Party / Integration",
+      "category": "Utility / IoT / 3rd Party / Integration",
       "url": "https://github.com/tabsl/MMM-MySQLData",
       "id": "tabsl/MMM-MySQLData",
       "maintainer": "tabsl",
@@ -6542,7 +6541,7 @@
     },
     {
       "name": "MMM-MysqlQuery",
-      "category": "Utility / IOT / 3rd Party / Integration",
+      "category": "Utility / IoT / 3rd Party / Integration",
       "url": "https://github.com/ralberth/MMM-MysqlQuery",
       "id": "ralberth/MMM-MysqlQuery",
       "maintainer": "ralberth",
@@ -6562,7 +6561,7 @@
     },
     {
       "name": "MMM-MyStudyLife",
-      "category": "Utility / IOT / 3rd Party / Integration",
+      "category": "Utility / IoT / 3rd Party / Integration",
       "url": "https://github.com/ethanpartida/MMM-MyStudyLife",
       "id": "ethanpartida/MMM-MyStudyLife",
       "maintainer": "ethanpartida",
@@ -6632,7 +6631,7 @@
     },
     {
       "name": "MMM-MyWastePickup",
-      "category": "Utility / IOT / 3rd Party / Integration",
+      "category": "Utility / IoT / 3rd Party / Integration",
       "url": "https://github.com/jclarke0000/MMM-MyWastePickup",
       "id": "jclarke0000/MMM-MyWastePickup",
       "maintainer": "jclarke0000",
@@ -6652,7 +6651,7 @@
     },
     {
       "name": "MMM-MyWordsRandomed",
-      "category": "Utility / IOT / 3rd Party / Integration",
+      "category": "Utility / IoT / 3rd Party / Integration",
       "url": "https://github.com/framboise-pi/MMM-MyWordsRandomed",
       "id": "framboise-pi/MMM-MyWordsRandomed",
       "maintainer": "framboise-pi",
@@ -6735,7 +6734,7 @@
     },
     {
       "name": "MMM-NatureRemo",
-      "category": "Utility / IOT / 3rd Party / Integration",
+      "category": "Utility / IoT / 3rd Party / Integration",
       "url": "https://github.com/mtatsuma/MMM-NatureRemo",
       "id": "mtatsuma/MMM-NatureRemo",
       "maintainer": "mtatsuma",
@@ -6775,7 +6774,7 @@
     },
     {
       "name": "MMM-NearCompliments",
-      "category": "Utility / IOT / 3rd Party / Integration",
+      "category": "Utility / IoT / 3rd Party / Integration",
       "url": "https://github.com/semox/MMM-NearCompliments",
       "id": "semox/MMM-NearCompliments",
       "maintainer": "semox",
@@ -6796,7 +6795,7 @@
     },
     {
       "name": "MMM-neoomAPI",
-      "category": "Utility / IOT / 3rd Party / Integration",
+      "category": "Utility / IoT / 3rd Party / Integration",
       "url": "https://github.com/MartinLoidolt/MMM-neoomAPI",
       "id": "MartinLoidolt/MMM-neoomAPI",
       "maintainer": "MartinLoidolt",
@@ -6836,7 +6835,7 @@
     },
     {
       "name": "MMM-Netatmo-Presence",
-      "category": "Utility / IOT / 3rd Party / Integration",
+      "category": "Utility / IoT / 3rd Party / Integration",
       "url": "https://github.com/AgP42/MMM-Netatmo-Presence",
       "id": "AgP42/MMM-Netatmo-Presence",
       "maintainer": "AgP42",
@@ -6857,7 +6856,7 @@
     },
     {
       "name": "MMM-NetatmoThermostat",
-      "category": "Utility / IOT / 3rd Party / Integration",
+      "category": "Utility / IoT / 3rd Party / Integration",
       "url": "https://github.com/bugsounet/MMM-NetatmoThermostat",
       "id": "bugsounet/MMM-NetatmoThermostat",
       "maintainer": "bugsounet",
@@ -6887,7 +6886,7 @@
     },
     {
       "name": "MMM-NetworkScanner",
-      "category": "Utility / IOT / 3rd Party / Integration",
+      "category": "Utility / IoT / 3rd Party / Integration",
       "url": "https://github.com/spitzlbergerj/MMM-NetworkScanner",
       "id": "spitzlbergerj/MMM-NetworkScanner",
       "maintainer": "spitzlbergerj",
@@ -6917,7 +6916,7 @@
     },
     {
       "name": "MMM-NewsFeedTicker",
-      "category": "Utility / IOT / 3rd Party / Integration",
+      "category": "Utility / IoT / 3rd Party / Integration",
       "url": "https://github.com/justjim1220/MMM-NewsFeedTicker",
       "id": "justjim1220/MMM-NewsFeedTicker",
       "maintainer": "justjim1220",
@@ -6937,7 +6936,7 @@
     },
     {
       "name": "next-train-transilien",
-      "category": "Utility / IOT / 3rd Party / Integration",
+      "category": "Utility / IoT / 3rd Party / Integration",
       "url": "https://github.com/trizome/next-train-transilien",
       "id": "trizome/next-train-transilien",
       "maintainer": "trizome",
@@ -6957,7 +6956,7 @@
     },
     {
       "name": "MMM-NextCloud-Tasks",
-      "category": "Utility / IOT / 3rd Party / Integration",
+      "category": "Utility / IoT / 3rd Party / Integration",
       "url": "https://github.com/starlingfire/MMM-NextCloud-Tasks",
       "id": "starlingfire/MMM-NextCloud-Tasks",
       "maintainer": "starlingfire",
@@ -6967,7 +6966,7 @@
     },
     {
       "name": "MMM-NextEvent",
-      "category": "Utility / IOT / 3rd Party / Integration",
+      "category": "Utility / IoT / 3rd Party / Integration",
       "url": "https://github.com/cure/MMM-NextEvent",
       "id": "cure/MMM-NextEvent",
       "maintainer": "cure",
@@ -7043,7 +7042,7 @@
       "id": "bureus/MMM-Nightscout",
       "maintainer": "bureus",
       "maintainerURL": "",
-      "description": "Keep track of blood glucose levels with ease thru your MagicMirror².",
+      "description": "Keep track of blood glucose levels with ease.",
       "issues": []
     },
     {
@@ -7151,7 +7150,7 @@
     },
     {
       "name": "MMM-NoteTaker",
-      "category": "Utility / IOT / 3rd Party / Integration",
+      "category": "Utility / IoT / 3rd Party / Integration",
       "url": "https://github.com/joanaz/MMM-NoteTaker",
       "id": "joanaz/MMM-NoteTaker",
       "maintainer": "joanaz",
@@ -7161,7 +7160,7 @@
     },
     {
       "name": "MMM-Notification-To-Command",
-      "category": "Utility / IOT / 3rd Party / Integration",
+      "category": "Utility / IoT / 3rd Party / Integration",
       "url": "https://github.com/Tom-Hirschberger/MMM-Notification-To-Command",
       "id": "Tom-Hirschberger/MMM-Notification-To-Command",
       "maintainer": "Tom-Hirschberger",
@@ -7181,7 +7180,7 @@
     },
     {
       "name": "MMM-Notion",
-      "category": "Utility / IOT / 3rd Party / Integration",
+      "category": "Utility / IoT / 3rd Party / Integration",
       "url": "https://github.com/choffmann/MMM-Notion",
       "id": "choffmann/MMM-Notion",
       "maintainer": "choffmann",
@@ -7243,7 +7242,7 @@
     },
     {
       "name": "MMM-ObjectBlocks",
-      "category": "Utility / IOT / 3rd Party / Integration",
+      "category": "Utility / IoT / 3rd Party / Integration",
       "url": "https://github.com/jimmykh/MMM-ObjectBlocks",
       "id": "jimmykh/MMM-ObjectBlocks",
       "maintainer": "jimmykh",
@@ -7264,7 +7263,7 @@
     },
     {
       "name": "octomirror-module",
-      "category": "Utility / IOT / 3rd Party / Integration",
+      "category": "Utility / IoT / 3rd Party / Integration",
       "url": "https://github.com/shbatm/octomirror-module",
       "id": "shbatm/octomirror-module",
       "maintainer": "shbatm",
@@ -7274,7 +7273,7 @@
     },
     {
       "name": "MMM-OctoMon",
-      "category": "Utility / IOT / 3rd Party / Integration",
+      "category": "Utility / IoT / 3rd Party / Integration",
       "url": "https://github.com/christopherpthomas/MMM-OctoMon",
       "id": "christopherpthomas/MMM-OctoMon",
       "maintainer": "christopherpthomas",
@@ -7284,7 +7283,7 @@
     },
     {
       "name": "MMM-OctoMonV2",
-      "category": "Utility / IOT / 3rd Party / Integration",
+      "category": "Utility / IoT / 3rd Party / Integration",
       "url": "https://github.com/TouaregWarrior/MMM-OctoMonV2",
       "id": "TouaregWarrior/MMM-OctoMonV2",
       "maintainer": "TouaregWarrior",
@@ -7294,7 +7293,7 @@
     },
     {
       "name": "MMM-octoprint",
-      "category": "Utility / IOT / 3rd Party / Integration",
+      "category": "Utility / IoT / 3rd Party / Integration",
       "url": "https://github.com/btastic/MMM-octoprint",
       "id": "btastic/MMM-octoprint",
       "maintainer": "btastic",
@@ -7404,7 +7403,7 @@
     },
     {
       "name": "MMM-OneTracker",
-      "category": "Utility / IOT / 3rd Party / Integration",
+      "category": "Utility / IoT / 3rd Party / Integration",
       "url": "https://github.com/seeshaughnessy/MMM-OneTracker",
       "id": "seeshaughnessy/MMM-OneTracker",
       "maintainer": "seeshaughnessy",
@@ -7414,7 +7413,7 @@
     },
     {
       "name": "MMM-Online-State",
-      "category": "Utility / IOT / 3rd Party / Integration",
+      "category": "Utility / IoT / 3rd Party / Integration",
       "url": "https://github.com/Legion2/MMM-Online-State",
       "id": "Legion2/MMM-Online-State",
       "maintainer": "Legion2",
@@ -7444,7 +7443,7 @@
     },
     {
       "name": "MMM-OnSpotify",
-      "category": "Utility / IOT / 3rd Party / Integration",
+      "category": "Utility / IoT / 3rd Party / Integration",
       "url": "https://github.com/Fabrizz/MMM-OnSpotify",
       "id": "Fabrizz/MMM-OnSpotify",
       "maintainer": "Fabrizz",
@@ -7484,7 +7483,7 @@
     },
     {
       "name": "MMM-OpenHAB-Items",
-      "category": "Utility / IOT / 3rd Party / Integration",
+      "category": "Utility / IoT / 3rd Party / Integration",
       "url": "https://github.com/hggh/MMM-OpenHAB-Items",
       "id": "hggh/MMM-OpenHAB-Items",
       "maintainer": "hggh",
@@ -7494,7 +7493,7 @@
     },
     {
       "name": "MMM-openhabQuickWatch",
-      "category": "Utility / IOT / 3rd Party / Integration",
+      "category": "Utility / IoT / 3rd Party / Integration",
       "url": "https://github.com/steve415/MMM-openhabQuickWatch",
       "id": "steve415/MMM-openhabQuickWatch",
       "maintainer": "steve415",
@@ -7524,7 +7523,7 @@
     },
     {
       "name": "MMM-OpenSprinkler",
-      "category": "Utility / IOT / 3rd Party / Integration",
+      "category": "Utility / IoT / 3rd Party / Integration",
       "url": "https://github.com/johnny-co/MMM-OpenSprinkler",
       "id": "johnny-co/MMM-OpenSprinkler",
       "maintainer": "johnny-co",
@@ -7534,7 +7533,7 @@
     },
     {
       "name": "MMM-OpenTherm",
-      "category": "Utility / IOT / 3rd Party / Integration",
+      "category": "Utility / IoT / 3rd Party / Integration",
       "url": "https://github.com/RedNax67/MMM-OpenTherm",
       "id": "RedNax67/MMM-OpenTherm",
       "maintainer": "RedNax67",
@@ -7624,7 +7623,7 @@
     },
     {
       "name": "MMM-ovos-wakeword",
-      "category": "Utility / IOT / 3rd Party / Integration",
+      "category": "Utility / IoT / 3rd Party / Integration",
       "url": "https://github.com/smartgic/MMM-ovos-wakeword",
       "id": "smartgic/MMM-ovos-wakeword",
       "maintainer": "smartgic",
@@ -7664,7 +7663,7 @@
     },
     {
       "name": "MMM-PageReader",
-      "category": "Utility / IOT / 3rd Party / Integration",
+      "category": "Utility / IoT / 3rd Party / Integration",
       "url": "https://github.com/dgburr/MMM-PageReader",
       "id": "dgburr/MMM-PageReader",
       "maintainer": "dgburr",
@@ -7724,7 +7723,7 @@
     },
     {
       "name": "MMM-Parcel",
-      "category": "Utility / IOT / 3rd Party / Integration",
+      "category": "Utility / IoT / 3rd Party / Integration",
       "url": "https://github.com/martinkooij/MMM-Parcel",
       "id": "martinkooij/MMM-Parcel",
       "maintainer": "martinkooij",
@@ -7744,7 +7743,7 @@
     },
     {
       "name": "MMM-ParticleStatus",
-      "category": "Utility / IOT / 3rd Party / Integration",
+      "category": "Utility / IoT / 3rd Party / Integration",
       "url": "https://github.com/NickEngmann/MMM-ParticleStatus",
       "id": "NickEngmann/MMM-ParticleStatus",
       "maintainer": "NickEngmann",
@@ -7774,7 +7773,7 @@
     },
     {
       "name": "MMM-PC-Stats",
-      "category": "Utility / IOT / 3rd Party / Integration",
+      "category": "Utility / IoT / 3rd Party / Integration",
       "url": "https://github.com/mykle1/MMM-PC-Stats",
       "id": "mykle1/MMM-PC-Stats",
       "maintainer": "mykle1",
@@ -7804,7 +7803,7 @@
     },
     {
       "name": "MMM-Peloton",
-      "category": "Utility / IOT / 3rd Party / Integration",
+      "category": "Utility / IoT / 3rd Party / Integration",
       "url": "https://github.com/chicohernando/MMM-Peloton",
       "id": "chicohernando/MMM-Peloton",
       "maintainer": "chicohernando",
@@ -7864,7 +7863,7 @@
     },
     {
       "name": "MMM-PhilipsHue",
-      "category": "Utility / IOT / 3rd Party / Integration",
+      "category": "Utility / IoT / 3rd Party / Integration",
       "url": "https://github.com/mumblebaj/MMM-PhilipsHue",
       "id": "mumblebaj/MMM-PhilipsHue",
       "maintainer": "mumblebaj",
@@ -7874,7 +7873,7 @@
     },
     {
       "name": "phone-notification-mirror",
-      "category": "Utility / IOT / 3rd Party / Integration",
+      "category": "Utility / IoT / 3rd Party / Integration",
       "url": "https://github.com/ronny3050/phone-notification-mirror",
       "id": "ronny3050/phone-notification-mirror",
       "maintainer": "ronny3050",
@@ -7904,7 +7903,7 @@
     },
     {
       "name": "PiDisplaySleep",
-      "category": "Utility / IOT / 3rd Party / Integration",
+      "category": "Utility / IoT / 3rd Party / Integration",
       "url": "https://github.com/RpDp-git/PiDisplaySleep",
       "id": "RpDp-git/PiDisplaySleep",
       "maintainer": "RpDp-git",
@@ -7914,7 +7913,7 @@
     },
     {
       "name": "MMM-pihole-stats",
-      "category": "Utility / IOT / 3rd Party / Integration",
+      "category": "Utility / IoT / 3rd Party / Integration",
       "url": "https://github.com/sheyabernstein/MMM-pihole-stats",
       "id": "sheyabernstein/MMM-pihole-stats",
       "maintainer": "sheyabernstein",
@@ -7935,7 +7934,7 @@
     },
     {
       "name": "MMM-PimaticFloorplan",
-      "category": "Utility / IOT / 3rd Party / Integration",
+      "category": "Utility / IoT / 3rd Party / Integration",
       "url": "https://github.com/marcelwinh/MMM-PimaticFloorplan",
       "id": "marcelwinh/MMM-PimaticFloorplan",
       "maintainer": "marcelwinh",
@@ -7945,7 +7944,7 @@
     },
     {
       "name": "MMM-Pinfo",
-      "category": "Utility / IOT / 3rd Party / Integration",
+      "category": "Utility / IoT / 3rd Party / Integration",
       "url": "https://github.com/SalekurPolas/MMM-Pinfo",
       "id": "SalekurPolas/MMM-Pinfo",
       "maintainer": "SalekurPolas",
@@ -7955,7 +7954,7 @@
     },
     {
       "name": "MMM-ping",
-      "category": "Utility / IOT / 3rd Party / Integration",
+      "category": "Utility / IoT / 3rd Party / Integration",
       "url": "https://github.com/fewieden/MMM-ping",
       "id": "fewieden/MMM-ping",
       "maintainer": "fewieden",
@@ -7965,7 +7964,7 @@
     },
     {
       "name": "MMM-PingTime",
-      "category": "Utility / IOT / 3rd Party / Integration",
+      "category": "Utility / IoT / 3rd Party / Integration",
       "url": "https://github.com/Protonosgit/MMM-PingTime",
       "id": "Protonosgit/MMM-PingTime",
       "maintainer": "Protonosgit",
@@ -7975,22 +7974,12 @@
     },
     {
       "name": "MMM-Pir",
-      "category": "Utility / IOT / 3rd Party / Integration",
+      "category": "Utility / IoT / 3rd Party / Integration",
       "url": "https://github.com/bugsounet/MMM-Pir",
       "id": "bugsounet/MMM-Pir",
       "maintainer": "bugsounet",
       "maintainerURL": "",
       "description": "After a configurated time without any user interaction the display will turn off and hide all modules for economy mode. It will wake up with a PIR sensor.",
-      "issues": []
-    },
-    {
-      "name": "EXT-Pir",
-      "category": "Extended plugins for MMM-GoogleAssistant",
-      "url": "https://github.com/bugsounet/EXT-Pir",
-      "id": "bugsounet/EXT-Pir",
-      "maintainer": "bugsounet",
-      "maintainerURL": "https://wiki.bugsounet.fr",
-      "description": "Control your screen with a PIR Sensor.",
       "issues": []
     },
     {
@@ -8038,7 +8027,7 @@
     },
     {
       "name": "MMM-PiTemp",
-      "category": "Utility / IOT / 3rd Party / Integration",
+      "category": "Utility / IoT / 3rd Party / Integration",
       "url": "https://github.com/ckoutavas/MMM-PiTemp",
       "id": "ckoutavas/MMM-PiTemp",
       "maintainer": "ckoutavas",
@@ -8098,7 +8087,7 @@
     },
     {
       "name": "MMM-Plantower",
-      "category": "Utility / IOT / 3rd Party / Integration",
+      "category": "Utility / IoT / 3rd Party / Integration",
       "url": "https://github.com/gimdh/MMM-Plantower",
       "id": "gimdh/MMM-Plantower",
       "maintainer": "gimdh",
@@ -8108,7 +8097,7 @@
     },
     {
       "name": "MMM-Plenticore",
-      "category": "Utility / IOT / 3rd Party / Integration",
+      "category": "Utility / IoT / 3rd Party / Integration",
       "url": "https://github.com/eckonator/MMM-Plenticore",
       "id": "eckonator/MMM-Plenticore",
       "maintainer": "eckonator",
@@ -8259,7 +8248,7 @@
     },
     {
       "name": "MMM-portscan",
-      "category": "Utility / IOT / 3rd Party / Integration",
+      "category": "Utility / IoT / 3rd Party / Integration",
       "url": "https://github.com/Wanztwurst/MMM-portscan",
       "id": "Wanztwurst/MMM-portscan",
       "maintainer": "Wanztwurst",
@@ -8269,7 +8258,7 @@
     },
     {
       "name": "MMM-PostDelivery-Norway",
-      "category": "Utility / IOT / 3rd Party / Integration",
+      "category": "Utility / IoT / 3rd Party / Integration",
       "url": "https://github.com/reidarw/MMM-PostDelivery-Norway",
       "id": "reidarw/MMM-PostDelivery-Norway",
       "maintainer": "reidarw",
@@ -8279,7 +8268,7 @@
     },
     {
       "name": "MMM-Postnord",
-      "category": "Utility / IOT / 3rd Party / Integration",
+      "category": "Utility / IoT / 3rd Party / Integration",
       "url": "https://github.com/bureus/MMM-Postnord",
       "id": "bureus/MMM-Postnord",
       "maintainer": "bureus",
@@ -8289,7 +8278,7 @@
     },
     {
       "name": "MMM-Powerwall",
-      "category": "Utility / IOT / 3rd Party / Integration",
+      "category": "Utility / IoT / 3rd Party / Integration",
       "url": "https://github.com/MikeBishop/MMM-Powerwall",
       "id": "MikeBishop/MMM-Powerwall",
       "maintainer": "MikeBishop",
@@ -8369,7 +8358,7 @@
     },
     {
       "name": "MMM-Profilepicture",
-      "category": "Utility / IOT / 3rd Party / Integration",
+      "category": "Utility / IoT / 3rd Party / Integration",
       "url": "https://github.com/Snille/MMM-Profilepicture",
       "id": "Snille/MMM-Profilepicture",
       "maintainer": "Snille",
@@ -8389,7 +8378,7 @@
     },
     {
       "name": "MMM-PrometheusAlerts",
-      "category": "Utility / IOT / 3rd Party / Integration",
+      "category": "Utility / IoT / 3rd Party / Integration",
       "url": "https://github.com/spydersoft-consulting/MMM-PrometheusAlerts",
       "id": "spydersoft-consulting/MMM-PrometheusAlerts",
       "maintainer": "spydersoft-consulting",
@@ -8399,7 +8388,7 @@
     },
     {
       "name": "MMM-Property-managed",
-      "category": "Utility / IOT / 3rd Party / Integration",
+      "category": "Utility / IoT / 3rd Party / Integration",
       "url": "https://github.com/stewartmckee/MMM-Property-managed",
       "id": "stewartmckee/MMM-Property-managed",
       "maintainer": "stewartmckee",
@@ -8491,7 +8480,7 @@
     },
     {
       "name": "MMM-PushBulletNotifications",
-      "category": "Utility / IOT / 3rd Party / Integration",
+      "category": "Utility / IoT / 3rd Party / Integration",
       "url": "https://github.com/basknol/MMM-PushBulletNotifications",
       "id": "basknol/MMM-PushBulletNotifications",
       "maintainer": "basknol",
@@ -8501,7 +8490,7 @@
     },
     {
       "name": "MMM-qnapDownloadStation",
-      "category": "Utility / IOT / 3rd Party / Integration",
+      "category": "Utility / IoT / 3rd Party / Integration",
       "url": "https://github.com/flick116/MMM-qnapDownloadStation",
       "id": "flick116/MMM-qnapDownloadStation",
       "maintainer": "flick116",
@@ -8511,7 +8500,7 @@
     },
     {
       "name": "MMM-QR-Remote-Link",
-      "category": "Utility / IOT / 3rd Party / Integration",
+      "category": "Utility / IoT / 3rd Party / Integration",
       "url": "https://github.com/JasonVonKrueger/MMM-QR-Remote-Link",
       "id": "JasonVonKrueger/MMM-QR-Remote-Link",
       "maintainer": "JasonVonKrueger",
@@ -8521,7 +8510,7 @@
     },
     {
       "name": "MMM-QRCode",
-      "category": "Utility / IOT / 3rd Party / Integration",
+      "category": "Utility / IoT / 3rd Party / Integration",
       "url": "https://github.com/uxigene/MMM-QRCode",
       "id": "uxigene/MMM-QRCode",
       "maintainer": "uxigene",
@@ -8571,7 +8560,7 @@
     },
     {
       "name": "MMM-Radarr",
-      "category": "Utility / IOT / 3rd Party / Integration",
+      "category": "Utility / IoT / 3rd Party / Integration",
       "url": "https://github.com/gravitykillseverything/MMM-Radarr",
       "id": "gravitykillseverything/MMM-Radarr",
       "maintainer": "gravitykillseverything",
@@ -8831,7 +8820,7 @@
     },
     {
       "name": "MMM-RemoteCompliments",
-      "category": "Utility / IOT / 3rd Party / Integration",
+      "category": "Utility / IoT / 3rd Party / Integration",
       "url": "https://github.com/mitchelltmarino/MMM-RemoteCompliments",
       "id": "mitchelltmarino/MMM-RemoteCompliments",
       "maintainer": "mitchelltmarino",
@@ -8851,7 +8840,7 @@
     },
     {
       "name": "MMM-RepoStats",
-      "category": "Utility / IOT / 3rd Party / Integration",
+      "category": "Utility / IoT / 3rd Party / Integration",
       "url": "https://gitlab.com/khassel/MMM-RepoStats",
       "id": "khassel/MMM-RepoStats",
       "maintainer": "khassel",
@@ -8861,7 +8850,7 @@
     },
     {
       "name": "MMM-RepRapFirmware",
-      "category": "Utility / IOT / 3rd Party / Integration",
+      "category": "Utility / IoT / 3rd Party / Integration",
       "url": "https://github.com/arirobinson/MMM-RepRapFirmware",
       "id": "arirobinson/MMM-RepRapFirmware",
       "maintainer": "arirobinson",
@@ -8871,7 +8860,7 @@
     },
     {
       "name": "MMM-RescueTime",
-      "category": "Utility / IOT / 3rd Party / Integration",
+      "category": "Utility / IoT / 3rd Party / Integration",
       "url": "https://github.com/Duske/MMM-RescueTime",
       "id": "Duske/MMM-RescueTime",
       "maintainer": "Duske",
@@ -8891,7 +8880,7 @@
     },
     {
       "name": "MMM-Rest",
-      "category": "Utility / IOT / 3rd Party / Integration",
+      "category": "Utility / IoT / 3rd Party / Integration",
       "url": "https://github.com/Tuxdiver/MMM-Rest",
       "id": "Tuxdiver/MMM-Rest",
       "maintainer": "Tuxdiver",
@@ -8922,7 +8911,7 @@
     },
     {
       "name": "MMM-RingAlarm",
-      "category": "Utility / IOT / 3rd Party / Integration",
+      "category": "Utility / IoT / 3rd Party / Integration",
       "url": "https://github.com/parnic/MMM-RingAlarm",
       "id": "parnic/MMM-RingAlarm",
       "maintainer": "parnic",
@@ -8993,7 +8982,7 @@
     },
     {
       "name": "MMM-Roomba980",
-      "category": "Utility / IOT / 3rd Party / Integration",
+      "category": "Utility / IoT / 3rd Party / Integration",
       "url": "https://github.com/relm923/MMM-Roomba980",
       "id": "relm923/MMM-Roomba980",
       "maintainer": "relm923",
@@ -9013,7 +9002,7 @@
     },
     {
       "name": "MMM-RouterClients",
-      "category": "Utility / IOT / 3rd Party / Integration",
+      "category": "Utility / IoT / 3rd Party / Integration",
       "url": "https://github.com/buxxi/MMM-RouterClients",
       "id": "buxxi/MMM-RouterClients",
       "maintainer": "buxxi",
@@ -9023,7 +9012,7 @@
     },
     {
       "name": "MMM-ROVA-trashcalendar",
-      "category": "Utility / IOT / 3rd Party / Integration",
+      "category": "Utility / IoT / 3rd Party / Integration",
       "url": "https://github.com/jeroenpeters1986/MMM-ROVA-trashcalendar",
       "id": "jeroenpeters1986/MMM-ROVA-trashcalendar",
       "maintainer": "jeroenpeters1986",
@@ -9033,7 +9022,7 @@
     },
     {
       "name": "MMM-RPI-LED",
-      "category": "Utility / IOT / 3rd Party / Integration",
+      "category": "Utility / IoT / 3rd Party / Integration",
       "url": "https://github.com/idoodler/MMM-RPI-LED",
       "id": "idoodler/MMM-RPI-LED",
       "maintainer": "idoodler",
@@ -9043,7 +9032,7 @@
     },
     {
       "name": "MMM-RSS-FEED",
-      "category": "Utility / IOT / 3rd Party / Integration",
+      "category": "Utility / IoT / 3rd Party / Integration",
       "url": "https://github.com/Taolanoz/MMM-RSS-FEED",
       "id": "Taolanoz/MMM-RSS-FEED",
       "maintainer": "Taolanoz",
@@ -9053,7 +9042,7 @@
     },
     {
       "name": "MMM-RTSPStream",
-      "category": "Utility / IOT / 3rd Party / Integration",
+      "category": "Utility / IoT / 3rd Party / Integration",
       "url": "https://github.com/shbatm/MMM-RTSPStream",
       "id": "shbatm/MMM-RTSPStream",
       "maintainer": "shbatm",
@@ -9063,7 +9052,7 @@
     },
     {
       "name": "MMM-RTSPtoWeb",
-      "category": "Utility / IOT / 3rd Party / Integration",
+      "category": "Utility / IoT / 3rd Party / Integration",
       "url": "https://github.com/shbatm/MMM-RTSPtoWeb",
       "id": "shbatm/MMM-RTSPtoWeb",
       "maintainer": "shbatm",
@@ -9073,7 +9062,7 @@
     },
     {
       "name": "MMM-RubbishCollection",
-      "category": "Utility / IOT / 3rd Party / Integration",
+      "category": "Utility / IoT / 3rd Party / Integration",
       "url": "https://github.com/nikobix/MMM-RubbishCollection",
       "id": "nikobix/MMM-RubbishCollection",
       "maintainer": "nikobix",
@@ -9133,6 +9122,16 @@
       "issues": []
     },
     {
+      "name": "MMM-S3Photos",
+      "category": "Entertainment / Misc",
+      "url": "https://github.com/uphillcheddar/MMM-S3Photos",
+      "id": "uphillcheddar/MMM-S3Photos",
+      "maintainer": "uphillcheddar",
+      "maintainerURL": "https://github.com/uphillcheddar",
+      "description": "Displays images from AWS S3, comes with setup script to set up AWS resources. Addtional features include MMM-Selfieshot uploads, photo attributations and various layout options.",
+      "issues": []
+    },
+    {
       "name": "MMM-Saint",
       "category": "Religion",
       "url": "https://github.com/bugsounet/MMM-Saint",
@@ -9186,7 +9185,7 @@
     },
     {
       "name": "MMM-Scrapey",
-      "category": "Utility / IOT / 3rd Party / Integration",
+      "category": "Utility / IoT / 3rd Party / Integration",
       "url": "https://github.com/AndyHazz/MMM-Scrapey",
       "id": "AndyHazz/MMM-Scrapey",
       "maintainer": "AndyHazz",
@@ -9206,7 +9205,7 @@
     },
     {
       "name": "MMM-Screen-Powersave-Notification",
-      "category": "Utility / IOT / 3rd Party / Integration",
+      "category": "Utility / IoT / 3rd Party / Integration",
       "url": "https://github.com/Tom-Hirschberger/MMM-Screen-Powersave-Notification",
       "id": "Tom-Hirschberger/MMM-Screen-Powersave-Notification",
       "maintainer": "Tom-Hirschberger",
@@ -9226,7 +9225,7 @@
     },
     {
       "name": "MMM-ScreenLogic",
-      "category": "Utility / IOT / 3rd Party / Integration",
+      "category": "Utility / IoT / 3rd Party / Integration",
       "url": "https://github.com/parnic/MMM-ScreenLogic",
       "id": "parnic/MMM-ScreenLogic",
       "maintainer": "parnic",
@@ -9256,7 +9255,7 @@
     },
     {
       "name": "MMM-SE-Reputation",
-      "category": "Utility / IOT / 3rd Party / Integration",
+      "category": "Utility / IoT / 3rd Party / Integration",
       "url": "https://github.com/ChielChiel/MMM-SE-Reputation",
       "id": "ChielChiel/MMM-SE-Reputation",
       "maintainer": "ChielChiel",
@@ -9286,7 +9285,7 @@
     },
     {
       "name": "MMM-Selfie",
-      "category": "Utility / IOT / 3rd Party / Integration",
+      "category": "Utility / IoT / 3rd Party / Integration",
       "url": "https://github.com/Txukie/MMM-Selfie",
       "id": "Txukie/MMM-Selfie",
       "maintainer": "Txukie",
@@ -9296,7 +9295,7 @@
     },
     {
       "name": "MMM-Selfieshot",
-      "category": "Utility / IOT / 3rd Party / Integration",
+      "category": "Utility / IoT / 3rd Party / Integration",
       "url": "https://github.com/BrianHepler/MMM-Selfieshot",
       "id": "BrianHepler/MMM-Selfieshot",
       "maintainer": "BrianHepler",
@@ -9316,7 +9315,7 @@
     },
     {
       "name": "MMM-Seneye",
-      "category": "Utility / IOT / 3rd Party / Integration",
+      "category": "Utility / IoT / 3rd Party / Integration",
       "url": "https://github.com/Si-Hill/MMM-Seneye",
       "id": "Si-Hill/MMM-Seneye",
       "maintainer": "Si-Hill",
@@ -9325,8 +9324,18 @@
       "issues": []
     },
     {
+      "name": "MMM-Sensibo",
+      "category": "Utility / IoT / 3rd Party / Integration",
+      "url": "https://github.com/wlans/MMM-Sensibo",
+      "id": "wlans/MMM-Sensibo",
+      "maintainer": "wlans",
+      "maintainerURL": "",
+      "description": "Display real-time data from Sensibo thermostats. Features grid or list views, customizable room icons, dual temperature mode, and flexible configuration. Integrates with the Sensibo API for up-to-date thermostat information.",
+      "issues": []
+    },
+    {
       "name": "MMM-SensorGateway",
-      "category": "Utility / IOT / 3rd Party / Integration",
+      "category": "Utility / IoT / 3rd Party / Integration",
       "url": "https://github.com/mattileh/MMM-SensorGateway",
       "id": "mattileh/MMM-SensorGateway",
       "maintainer": "mattileh",
@@ -9336,7 +9345,7 @@
     },
     {
       "name": "MMM-Serial-Notifications",
-      "category": "Utility / IOT / 3rd Party / Integration",
+      "category": "Utility / IoT / 3rd Party / Integration",
       "url": "https://github.com/Tom-Hirschberger/MMM-Serial-Notifications",
       "id": "Tom-Hirschberger/MMM-Serial-Notifications",
       "maintainer": "Tom-Hirschberger",
@@ -9346,7 +9355,7 @@
     },
     {
       "name": "MMM-ServerStatus",
-      "category": "Utility / IOT / 3rd Party / Integration",
+      "category": "Utility / IoT / 3rd Party / Integration",
       "url": "https://github.com/XBCreepinJesus/MMM-ServerStatus",
       "id": "XBCreepinJesus/MMM-ServerStatus",
       "maintainer": "XBCreepinJesus",
@@ -9356,7 +9365,7 @@
     },
     {
       "name": "MMM-ServiceViewer",
-      "category": "Utility / IOT / 3rd Party / Integration",
+      "category": "Utility / IoT / 3rd Party / Integration",
       "url": "https://github.com/cybex-dev/MMM-ServiceViewer",
       "id": "cybex-dev/MMM-ServiceViewer",
       "maintainer": "cybex-dev",
@@ -9397,7 +9406,7 @@
     },
     {
       "name": "MMM-ShairportMetadata",
-      "category": "Utility / IOT / 3rd Party / Integration",
+      "category": "Utility / IoT / 3rd Party / Integration",
       "url": "https://github.com/surekap/MMM-ShairportMetadata",
       "id": "surekap/MMM-ShairportMetadata",
       "maintainer": "surekap",
@@ -9407,7 +9416,7 @@
     },
     {
       "name": "MMM-Shell-Output",
-      "category": "Utility / IOT / 3rd Party / Integration",
+      "category": "Utility / IoT / 3rd Party / Integration",
       "url": "https://gitlab.com/khassel/MMM-Shell-Output",
       "id": "khassel/MMM-Shell-Output",
       "maintainer": "khassel",
@@ -9417,7 +9426,7 @@
     },
     {
       "name": "Shelly-HT",
-      "category": "Utility / IOT / 3rd Party / Integration",
+      "category": "Utility / IoT / 3rd Party / Integration",
       "url": "https://github.com/Medve01/Shelly-HT",
       "id": "Medve01/Shelly-HT",
       "maintainer": "Medve01",
@@ -9427,7 +9436,7 @@
     },
     {
       "name": "MMM-Shelly-PM",
-      "category": "Utility / IOT / 3rd Party / Integration",
+      "category": "Utility / IoT / 3rd Party / Integration",
       "url": "https://github.com/stefanjacobs/MMM-Shelly-PM",
       "id": "stefanjacobs/MMM-Shelly-PM",
       "maintainer": "stefanjacobs",
@@ -9437,7 +9446,7 @@
     },
     {
       "name": "MMM-ShellyEMMeter",
-      "category": "Utility / IOT / 3rd Party / Integration",
+      "category": "Utility / IoT / 3rd Party / Integration",
       "url": "https://github.com/mgarrix/MMM-ShellyEMMeter",
       "id": "mgarrix/MMM-ShellyEMMeter",
       "maintainer": "mgarrix",
@@ -9447,7 +9456,7 @@
     },
     {
       "name": "MMM-ShellyPlus-HT",
-      "category": "Utility / IOT / 3rd Party / Integration",
+      "category": "Utility / IoT / 3rd Party / Integration",
       "url": "https://github.com/IoT-Coder/MMM-ShellyPlus-HT",
       "id": "IoT-Coder/MMM-ShellyPlus-HT",
       "maintainer": "IoT-Coder",
@@ -9456,8 +9465,28 @@
       "issues": []
     },
     {
+      "name": "ShellyPV",
+      "category": "Utility / IoT / 3rd Party / Integration",
+      "url": "https://github.com/ChrisF1976/ShellyPV",
+      "id": "ChrisF1976/ShellyPV",
+      "maintainer": "ChrisF1976",
+      "maintainerURL": "https://github.com/ChrisF1976",
+      "description": "Monitor and display the status and energy consumption of Shelly devices, specifically focusing on devices related to solar power (PV systems) and energy usage.",
+      "issues": []
+    },
+    {
+      "name": "MMM-ShellyStatusTable",
+      "category": "Utility / IoT / 3rd Party / Integration",
+      "url": "https://github.com/ChrisF1976/MMM-ShellyStatusTable",
+      "id": "ChrisF1976/MMM-ShellyStatusTable",
+      "maintainer": "ChrisF1976",
+      "maintainerURL": "https://github.com/ChrisF1976",
+      "description": "Displays switch status and power consumption of Shelly devices via the Shelly Cloud API. Should be independent from the used devices.",
+      "issues": []
+    },
+    {
       "name": "MMM-ShipmentTracking",
-      "category": "Utility / IOT / 3rd Party / Integration",
+      "category": "Utility / IoT / 3rd Party / Integration",
       "url": "https://github.com/fewieden/MMM-ShipmentTracking",
       "id": "fewieden/MMM-ShipmentTracking",
       "maintainer": "fewieden",
@@ -9508,7 +9537,7 @@
     },
     {
       "name": "MMM-SimpleLogo",
-      "category": "Utility / IOT / 3rd Party / Integration",
+      "category": "Utility / IoT / 3rd Party / Integration",
       "url": "https://github.com/frdteknikelektro/MMM-SimpleLogo",
       "id": "frdteknikelektro/MMM-SimpleLogo",
       "maintainer": "frdteknikelektro",
@@ -9518,7 +9547,7 @@
     },
     {
       "name": "MMM-SimpleNotifyTrashDay",
-      "category": "Utility / IOT / 3rd Party / Integration",
+      "category": "Utility / IoT / 3rd Party / Integration",
       "url": "https://github.com/sabo10o29/MMM-SimpleNotifyTrashDay",
       "id": "sabo10o29/MMM-SimpleNotifyTrashDay",
       "maintainer": "sabo10o29",
@@ -9558,7 +9587,7 @@
     },
     {
       "name": "MMM-Skolmaten",
-      "category": "Utility / IOT / 3rd Party / Integration",
+      "category": "Utility / IoT / 3rd Party / Integration",
       "url": "https://github.com/retroflex/MMM-Skolmaten",
       "id": "retroflex/MMM-Skolmaten",
       "maintainer": "retroflex",
@@ -9588,7 +9617,7 @@
     },
     {
       "name": "MMM-Slack2",
-      "category": "Utility / IOT / 3rd Party / Integration",
+      "category": "Utility / IoT / 3rd Party / Integration",
       "url": "https://github.com/Jupter1/MMM-Slack2",
       "id": "Jupter1/MMM-Slack2",
       "maintainer": "Jupter1",
@@ -9598,7 +9627,7 @@
     },
     {
       "name": "MMM-SlackAnnouncements",
-      "category": "Utility / IOT / 3rd Party / Integration",
+      "category": "Utility / IoT / 3rd Party / Integration",
       "url": "https://github.com/Monkeyanator/MMM-SlackAnnouncements",
       "id": "Monkeyanator/MMM-SlackAnnouncements",
       "maintainer": "Monkeyanator",
@@ -9628,7 +9657,7 @@
     },
     {
       "name": "MMM-SleepWake",
-      "category": "Utility / IOT / 3rd Party / Integration",
+      "category": "Utility / IoT / 3rd Party / Integration",
       "url": "https://github.com/sdetweil/MMM-SleepWake",
       "id": "sdetweil/MMM-SleepWake",
       "maintainer": "sdetweil",
@@ -9638,7 +9667,7 @@
     },
     {
       "name": "MMM-Smappee",
-      "category": "Utility / IOT / 3rd Party / Integration",
+      "category": "Utility / IoT / 3rd Party / Integration",
       "url": "https://github.com/CFenner/MMM-Smappee",
       "id": "CFenner/MMM-Smappee",
       "maintainer": "CFenner",
@@ -9668,7 +9697,7 @@
     },
     {
       "name": "MMM-SmartWebDisplay",
-      "category": "Utility / IOT / 3rd Party / Integration",
+      "category": "Utility / IoT / 3rd Party / Integration",
       "url": "https://github.com/AgP42/MMM-SmartWebDisplay",
       "id": "AgP42/MMM-SmartWebDisplay",
       "maintainer": "AgP42",
@@ -9698,7 +9727,7 @@
     },
     {
       "name": "MMM-SnmpIntSpeed",
-      "category": "Utility / IOT / 3rd Party / Integration",
+      "category": "Utility / IoT / 3rd Party / Integration",
       "url": "https://github.com/irsheep/MMM-SnmpIntSpeed",
       "id": "irsheep/MMM-SnmpIntSpeed",
       "maintainer": "irsheep",
@@ -9758,7 +9787,7 @@
     },
     {
       "name": "MMM-Solar",
-      "category": "Utility / IOT / 3rd Party / Integration",
+      "category": "Utility / IoT / 3rd Party / Integration",
       "url": "https://github.com/tkrywit/MMM-Solar",
       "id": "tkrywit/MMM-Solar",
       "maintainer": "tkrywit",
@@ -9768,7 +9797,7 @@
     },
     {
       "name": "MMM-SolarEdge",
-      "category": "Utility / IOT / 3rd Party / Integration",
+      "category": "Utility / IoT / 3rd Party / Integration",
       "url": "https://github.com/st3v0rr/MMM-SolarEdge",
       "id": "st3v0rr/MMM-SolarEdge",
       "maintainer": "st3v0rr",
@@ -9778,7 +9807,7 @@
     },
     {
       "name": "MMM-SolarEdge",
-      "category": "Utility / IOT / 3rd Party / Integration",
+      "category": "Utility / IoT / 3rd Party / Integration",
       "url": "https://github.com/bertieuk/MMM-SolarEdge",
       "id": "bertieuk/MMM-SolarEdge",
       "maintainer": "bertieuk",
@@ -9788,7 +9817,7 @@
     },
     {
       "name": "MMM-SolarEdgeLite",
-      "category": "Utility / IOT / 3rd Party / Integration",
+      "category": "Utility / IoT / 3rd Party / Integration",
       "url": "https://github.com/jeroenpeters1986/MMM-SolarEdgeLite",
       "id": "jeroenpeters1986/MMM-SolarEdgeLite",
       "maintainer": "jeroenpeters1986",
@@ -9798,7 +9827,7 @@
     },
     {
       "name": "MMM-Solarman",
-      "category": "Utility / IOT / 3rd Party / Integration",
+      "category": "Utility / IoT / 3rd Party / Integration",
       "url": "https://github.com/utzl/MMM-Solarman",
       "id": "utzl/MMM-Solarman",
       "maintainer": "utzl",
@@ -9818,7 +9847,7 @@
     },
     {
       "name": "MMM-Soliscloud",
-      "category": "Utility / IOT / 3rd Party / Integration",
+      "category": "Utility / IoT / 3rd Party / Integration",
       "url": "https://github.com/dekinet/MMM-Soliscloud",
       "id": "dekinet/MMM-Soliscloud",
       "maintainer": "dekinet",
@@ -9828,7 +9857,7 @@
     },
     {
       "name": "MMM-Sonarr",
-      "category": "Utility / IOT / 3rd Party / Integration",
+      "category": "Utility / IoT / 3rd Party / Integration",
       "url": "https://github.com/gravitykillseverything/MMM-Sonarr",
       "id": "gravitykillseverything/MMM-Sonarr",
       "maintainer": "gravitykillseverything",
@@ -9838,7 +9867,7 @@
     },
     {
       "name": "MMM-Sonos",
-      "category": "Utility / IOT / 3rd Party / Integration",
+      "category": "Utility / IoT / 3rd Party / Integration",
       "url": "https://github.com/CFenner/MMM-Sonos",
       "id": "CFenner/MMM-Sonos",
       "maintainer": "CFenner",
@@ -9848,7 +9877,7 @@
     },
     {
       "name": "MMM-Sonos",
-      "category": "Utility / IOT / 3rd Party / Integration",
+      "category": "Utility / IoT / 3rd Party / Integration",
       "url": "https://github.com/tbouron/MMM-Sonos",
       "id": "tbouron/MMM-Sonos",
       "maintainer": "tbouron",
@@ -9879,7 +9908,7 @@
     },
     {
       "name": "MMM-SpaceLaunch",
-      "category": "Utility / IOT / 3rd Party / Integration",
+      "category": "Utility / IoT / 3rd Party / Integration",
       "url": "https://github.com/TouaregWarrior/MMM-SpaceLaunch",
       "id": "TouaregWarrior/MMM-SpaceLaunch",
       "maintainer": "TouaregWarrior",
@@ -9980,7 +10009,7 @@
     },
     {
       "name": "MMM-StatusPageIo",
-      "category": "Utility / IOT / 3rd Party / Integration",
+      "category": "Utility / IoT / 3rd Party / Integration",
       "url": "https://github.com/spydersoft-consulting/MMM-StatusPageIo",
       "id": "spydersoft-consulting/MMM-StatusPageIo",
       "maintainer": "spydersoft-consulting",
@@ -10041,7 +10070,7 @@
     },
     {
       "name": "MMM-StopwatchTimer",
-      "category": "Utility / IOT / 3rd Party / Integration",
+      "category": "Utility / IoT / 3rd Party / Integration",
       "url": "https://github.com/Klettner/MMM-StopwatchTimer",
       "id": "Klettner/MMM-StopwatchTimer",
       "maintainer": "Klettner",
@@ -10051,7 +10080,7 @@
     },
     {
       "name": "MMM-StorH",
-      "category": "Utility / IOT / 3rd Party / Integration",
+      "category": "Utility / IoT / 3rd Party / Integration",
       "url": "https://github.com/SkogDev/MMM-StorH",
       "id": "SkogDev/MMM-StorH",
       "maintainer": "SkogDev",
@@ -10061,7 +10090,7 @@
     },
     {
       "name": "MMM-Strava",
-      "category": "Utility / IOT / 3rd Party / Integration",
+      "category": "Utility / IoT / 3rd Party / Integration",
       "url": "https://github.com/ianperrin/MMM-Strava",
       "id": "ianperrin/MMM-Strava",
       "maintainer": "ianperrin",
@@ -10071,7 +10100,7 @@
     },
     {
       "name": "MMM-Strava-Last-Activity-Map",
-      "category": "Utility / IOT / 3rd Party / Integration",
+      "category": "Utility / IoT / 3rd Party / Integration",
       "url": "https://github.com/tylerstambaugh/MMM-Strava-Last-Activity-Map",
       "id": "tylerstambaugh/MMM-Strava-Last-Activity-Map",
       "maintainer": "tylerstambaugh",
@@ -10081,7 +10110,7 @@
     },
     {
       "name": "MMM-StravaWeekInBike",
-      "category": "Utility / IOT / 3rd Party / Integration",
+      "category": "Utility / IoT / 3rd Party / Integration",
       "url": "https://github.com/tylerstambaugh/MMM-StravaWeekInBike",
       "id": "tylerstambaugh/MMM-StravaWeekInBike",
       "maintainer": "tylerstambaugh",
@@ -10111,7 +10140,7 @@
     },
     {
       "name": "MMM-SunnyPortal",
-      "category": "Utility / IOT / 3rd Party / Integration",
+      "category": "Utility / IoT / 3rd Party / Integration",
       "url": "https://github.com/linuxtuxie/MMM-SunnyPortal",
       "id": "linuxtuxie/MMM-SunnyPortal",
       "maintainer": "linuxtuxie",
@@ -10132,7 +10161,7 @@
     },
     {
       "name": "MMM-SweepClock",
-      "category": "Utility / IOT / 3rd Party / Integration",
+      "category": "Utility / IoT / 3rd Party / Integration",
       "url": "https://github.com/mumblebaj/MMM-SweepClock",
       "id": "mumblebaj/MMM-SweepClock",
       "maintainer": "mumblebaj",
@@ -10142,7 +10171,7 @@
     },
     {
       "name": "MMM-Swipe",
-      "category": "Utility / IOT / 3rd Party / Integration",
+      "category": "Utility / IoT / 3rd Party / Integration",
       "url": "https://github.com/Simon089/MMM-Swipe",
       "id": "Simon089/MMM-Swipe",
       "maintainer": "Simon089",
@@ -10212,7 +10241,7 @@
     },
     {
       "name": "MMM-synology-ds",
-      "category": "Utility / IOT / 3rd Party / Integration",
+      "category": "Utility / IoT / 3rd Party / Integration",
       "url": "https://github.com/Thlb/MMM-synology-ds",
       "id": "Thlb/MMM-synology-ds",
       "maintainer": "Thlb",
@@ -10222,7 +10251,7 @@
     },
     {
       "name": "MMM-SynologySurveillance",
-      "category": "Utility / IOT / 3rd Party / Integration",
+      "category": "Utility / IoT / 3rd Party / Integration",
       "url": "https://github.com/Tom-Hirschberger/MMM-SynologySurveillance",
       "id": "Tom-Hirschberger/MMM-SynologySurveillance",
       "maintainer": "Tom-Hirschberger",
@@ -10232,7 +10261,7 @@
     },
     {
       "name": "MMM-syslog",
-      "category": "Utility / IOT / 3rd Party / Integration",
+      "category": "Utility / IoT / 3rd Party / Integration",
       "url": "https://github.com/marcinomen/MMM-syslog",
       "id": "marcinomen/MMM-syslog",
       "maintainer": "marcinomen",
@@ -10242,17 +10271,17 @@
     },
     {
       "name": "MMM-SystemInfo",
-      "category": "Utility / IOT / 3rd Party / Integration",
+      "category": "Utility / IoT / 3rd Party / Integration",
       "url": "https://github.com/dientuki/MMM-SystemInfo",
       "id": "dientuki/MMM-SystemInfo",
       "maintainer": "dientuki",
-      "maintainerURL": "https://github.com/dientuki",
+      "maintainerURL": "",
       "description": "Get a lot of system stats from a PC board like CPU usage, ram usage, disk usage, CPU temperature, volume, internet status and private IP and status, beside that you can configure your WiFi network to create a QR code.",
       "issues": []
     },
     {
       "name": "MMM-SystemMonitor",
-      "category": "Utility / IOT / 3rd Party / Integration",
+      "category": "Utility / IoT / 3rd Party / Integration",
       "url": "https://github.com/btastic/MMM-SystemMonitor",
       "id": "btastic/MMM-SystemMonitor",
       "maintainer": "btastic",
@@ -10283,7 +10312,7 @@
     },
     {
       "name": "MMM-Tado",
-      "category": "Utility / IOT / 3rd Party / Integration",
+      "category": "Utility / IoT / 3rd Party / Integration",
       "url": "https://github.com/WouterEekhout/MMM-Tado",
       "id": "WouterEekhout/MMM-Tado",
       "maintainer": "WouterEekhout",
@@ -10343,7 +10372,7 @@
     },
     {
       "name": "MMM-TelegramBot",
-      "category": "Utility / IOT / 3rd Party / Integration",
+      "category": "Utility / IoT / 3rd Party / Integration",
       "url": "https://github.com/MMRIZE/MMM-TelegramBot",
       "id": "MMRIZE/MMM-TelegramBot",
       "maintainer": "MMRIZE",
@@ -10363,7 +10392,7 @@
     },
     {
       "name": "MMM-TelegramCommands",
-      "category": "Utility / IOT / 3rd Party / Integration",
+      "category": "Utility / IoT / 3rd Party / Integration",
       "url": "https://github.com/doctorfree/MMM-TelegramCommands",
       "id": "doctorfree/MMM-TelegramCommands",
       "maintainer": "doctorfree",
@@ -10373,7 +10402,7 @@
     },
     {
       "name": "MMM-temp-ds18b20",
-      "category": "Utility / IOT / 3rd Party / Integration",
+      "category": "Utility / IoT / 3rd Party / Integration",
       "url": "https://github.com/Thlb/MMM-temp-ds18b20",
       "id": "Thlb/MMM-temp-ds18b20",
       "maintainer": "Thlb",
@@ -10474,7 +10503,7 @@
     },
     {
       "name": "MMM-TFL-Arrivals",
-      "category": "Utility / IOT / 3rd Party / Integration",
+      "category": "Utility / IoT / 3rd Party / Integration",
       "url": "https://github.com/ryck/MMM-TFL-Arrivals",
       "id": "ryck/MMM-TFL-Arrivals",
       "maintainer": "ryck",
@@ -10514,7 +10543,7 @@
     },
     {
       "name": "MMM-Thingiverse",
-      "category": "Utility / IOT / 3rd Party / Integration",
+      "category": "Utility / IoT / 3rd Party / Integration",
       "url": "https://github.com/appdevelopmentandsuch/MMM-Thingiverse",
       "id": "appdevelopmentandsuch/MMM-Thingiverse",
       "maintainer": "appdevelopmentandsuch",
@@ -10524,7 +10553,7 @@
     },
     {
       "name": "MMM-Tibber",
-      "category": "Utility / IOT / 3rd Party / Integration",
+      "category": "Utility / IoT / 3rd Party / Integration",
       "url": "https://github.com/ottopaulsen/MMM-Tibber",
       "id": "ottopaulsen/MMM-Tibber",
       "maintainer": "ottopaulsen",
@@ -10544,7 +10573,7 @@
     },
     {
       "name": "MMM-Timetagger",
-      "category": "Utility / IOT / 3rd Party / Integration",
+      "category": "Utility / IoT / 3rd Party / Integration",
       "url": "https://github.com/tderflinger/MMM-Timetagger",
       "id": "tderflinger/MMM-Timetagger",
       "maintainer": "tderflinger",
@@ -10564,7 +10593,7 @@
     },
     {
       "name": "MMM-TitanSchoolMealMenu",
-      "category": "Utility / IOT / 3rd Party / Integration",
+      "category": "Utility / IoT / 3rd Party / Integration",
       "url": "https://github.com/evanhsu/MMM-TitanSchoolMealMenu",
       "id": "evanhsu/MMM-TitanSchoolMealMenu",
       "maintainer": "evanhsu",
@@ -10594,7 +10623,7 @@
     },
     {
       "name": "MMM-Todoist",
-      "category": "Utility / IOT / 3rd Party / Integration",
+      "category": "Utility / IoT / 3rd Party / Integration",
       "url": "https://github.com/cbrooker/MMM-Todoist",
       "id": "cbrooker/MMM-Todoist",
       "maintainer": "cbrooker",
@@ -10634,7 +10663,7 @@
     },
     {
       "name": "MMM-Toon",
-      "category": "Utility / IOT / 3rd Party / Integration",
+      "category": "Utility / IoT / 3rd Party / Integration",
       "url": "https://github.com/MichMich/MMM-Toon",
       "id": "MichMich/MMM-Toon",
       "maintainer": "MichMich",
@@ -10644,7 +10673,7 @@
     },
     {
       "name": "MMM-Touch",
-      "category": "Utility / IOT / 3rd Party / Integration",
+      "category": "Utility / IoT / 3rd Party / Integration",
       "url": "https://github.com/gfischershaw/MMM-Touch",
       "id": "gfischershaw/MMM-Touch",
       "maintainer": "gfischershaw",
@@ -10664,7 +10693,7 @@
     },
     {
       "name": "MMM-TouchButton",
-      "category": "Utility / IOT / 3rd Party / Integration",
+      "category": "Utility / IoT / 3rd Party / Integration",
       "url": "https://github.com/Tom-Hirschberger/MMM-TouchButton",
       "id": "Tom-Hirschberger/MMM-TouchButton",
       "maintainer": "Tom-Hirschberger",
@@ -10684,7 +10713,7 @@
     },
     {
       "name": "MMM-TPLink",
-      "category": "Utility / IOT / 3rd Party / Integration",
+      "category": "Utility / IoT / 3rd Party / Integration",
       "url": "https://github.com/slametps/MMM-TPLink",
       "id": "slametps/MMM-TPLink",
       "maintainer": "slametps",
@@ -10764,7 +10793,7 @@
     },
     {
       "name": "MMM-TranslatedMessages",
-      "category": "Utility / IOT / 3rd Party / Integration",
+      "category": "Utility / IoT / 3rd Party / Integration",
       "url": "https://github.com/ahmedwab/MMM-TranslatedMessages",
       "id": "ahmedwab/MMM-TranslatedMessages",
       "maintainer": "ahmedwab",
@@ -10794,7 +10823,7 @@
     },
     {
       "name": "MMM-Transmission",
-      "category": "Utility / IOT / 3rd Party / Integration",
+      "category": "Utility / IoT / 3rd Party / Integration",
       "url": "https://github.com/nikxif/MMM-Transmission",
       "id": "nikxif/MMM-Transmission",
       "maintainer": "nikxif",
@@ -10804,7 +10833,7 @@
     },
     {
       "name": "MMM-Trello",
-      "category": "Utility / IOT / 3rd Party / Integration",
+      "category": "Utility / IoT / 3rd Party / Integration",
       "url": "https://github.com/benjaminflessner/MMM-Trello",
       "id": "benjaminflessner/MMM-Trello",
       "maintainer": "benjaminflessner",
@@ -10824,7 +10853,7 @@
     },
     {
       "name": "MMM-TRV-WastePlan",
-      "category": "Utility / IOT / 3rd Party / Integration",
+      "category": "Utility / IoT / 3rd Party / Integration",
       "url": "https://github.com/reidarw/MMM-TRV-WastePlan",
       "id": "reidarw/MMM-TRV-WastePlan",
       "maintainer": "reidarw",
@@ -10854,7 +10883,7 @@
     },
     {
       "name": "MMM-TuyaSL",
-      "category": "Utility / IOT / 3rd Party / Integration",
+      "category": "Utility / IoT / 3rd Party / Integration",
       "url": "https://github.com/slametps/MMM-TuyaSL",
       "id": "slametps/MMM-TuyaSL",
       "maintainer": "slametps",
@@ -10994,7 +11023,7 @@
     },
     {
       "name": "MMM-UniFi-Voucher",
-      "category": "Utility / IOT / 3rd Party / Integration",
+      "category": "Utility / IoT / 3rd Party / Integration",
       "url": "https://github.com/bacherd/MMM-UniFi-Voucher",
       "id": "bacherd/MMM-UniFi-Voucher",
       "maintainer": "bacherd",
@@ -11014,7 +11043,7 @@
     },
     {
       "name": "MMM-updateFromStdOut",
-      "category": "Utility / IOT / 3rd Party / Integration",
+      "category": "Utility / IoT / 3rd Party / Integration",
       "url": "https://github.com/msteinkogler/MMM-updateFromStdOut",
       "id": "msteinkogler/MMM-updateFromStdOut",
       "maintainer": "msteinkogler",
@@ -11034,7 +11063,7 @@
     },
     {
       "name": "MMM-uptimekuma",
-      "category": "Utility / IOT / 3rd Party / Integration",
+      "category": "Utility / IoT / 3rd Party / Integration",
       "url": "https://github.com/MikeBishop/MMM-uptimekuma",
       "id": "MikeBishop/MMM-uptimekuma",
       "maintainer": "MikeBishop",
@@ -11044,7 +11073,7 @@
     },
     {
       "name": "MMM-uptimerobot",
-      "category": "Utility / IOT / 3rd Party / Integration",
+      "category": "Utility / IoT / 3rd Party / Integration",
       "url": "https://github.com/mrVragec/MMM-uptimerobot",
       "id": "mrVragec/MMM-uptimerobot",
       "maintainer": "mrVragec",
@@ -11053,8 +11082,18 @@
       "issues": []
     },
     {
+      "name": "MMM-UselessFacts",
+      "category": "Entertainment / Misc",
+      "url": "https://github.com/yourdawi/MMM-UselessFacts",
+      "id": "yourdawi/MMM-UselessFacts",
+      "maintainer": "yourdawi",
+      "maintainerURL": "https://github.com/yourdawi",
+      "description": "Display a random useless fact (eng/ger).",
+      "issues": []
+    },
+    {
       "name": "MMM-UserPresenceToMQTT",
-      "category": "Utility / IOT / 3rd Party / Integration",
+      "category": "Utility / IoT / 3rd Party / Integration",
       "url": "https://github.com/olexs/MMM-UserPresenceToMQTT",
       "id": "olexs/MMM-UserPresenceToMQTT",
       "maintainer": "olexs",
@@ -11084,7 +11123,7 @@
     },
     {
       "name": "MMM-ValuesByNotification",
-      "category": "Utility / IOT / 3rd Party / Integration",
+      "category": "Utility / IoT / 3rd Party / Integration",
       "url": "https://github.com/Tom-Hirschberger/MMM-ValuesByNotification",
       "id": "Tom-Hirschberger/MMM-ValuesByNotification",
       "maintainer": "Tom-Hirschberger",
@@ -11094,7 +11133,7 @@
     },
     {
       "name": "MMM-VartaESS",
-      "category": "Utility / IOT / 3rd Party / Integration",
+      "category": "Utility / IoT / 3rd Party / Integration",
       "url": "https://github.com/deg0nz/MMM-VartaESS",
       "id": "deg0nz/MMM-VartaESS",
       "maintainer": "deg0nz",
@@ -11114,7 +11153,7 @@
     },
     {
       "name": "MMM-vCard2Calendar",
-      "category": "Utility / IOT / 3rd Party / Integration",
+      "category": "Utility / IoT / 3rd Party / Integration",
       "url": "https://github.com/n-gao/MMM-vCard2Calendar",
       "id": "n-gao/MMM-vCard2Calendar",
       "maintainer": "n-gao",
@@ -11144,7 +11183,7 @@
     },
     {
       "name": "MMM-VietNamEventsCalendar",
-      "category": "Utility / IOT / 3rd Party / Integration",
+      "category": "Utility / IoT / 3rd Party / Integration",
       "url": "https://github.com/phungorquan/MMM-VietNamEventsCalendar",
       "id": "phungorquan/MMM-VietNamEventsCalendar",
       "maintainer": "phungorquan",
@@ -11377,7 +11416,7 @@
     },
     {
       "name": "MMM-WasteCollectionWuerzburg",
-      "category": "Utility / IOT / 3rd Party / Integration",
+      "category": "Utility / IoT / 3rd Party / Integration",
       "url": "https://github.com/mercredo/MMM-WasteCollectionWuerzburg",
       "id": "mercredo/MMM-WasteCollectionWuerzburg",
       "maintainer": "mercredo",
@@ -11387,7 +11426,7 @@
     },
     {
       "name": "MMM-WatchDog",
-      "category": "Utility / IOT / 3rd Party / Integration",
+      "category": "Utility / IoT / 3rd Party / Integration",
       "url": "https://github.com/MichMich/MMM-WatchDog",
       "id": "MichMich/MMM-WatchDog",
       "maintainer": "MichMich",
@@ -11407,7 +11446,7 @@
     },
     {
       "name": "MMM-Wattvision",
-      "category": "Utility / IOT / 3rd Party / Integration",
+      "category": "Utility / IoT / 3rd Party / Integration",
       "url": "https://github.com/vincep5/MMM-Wattvision",
       "id": "vincep5/MMM-Wattvision",
       "maintainer": "vincep5",
@@ -11578,7 +11617,7 @@
     },
     {
       "name": "MMM-WebView",
-      "category": "Utility / IOT / 3rd Party / Integration",
+      "category": "Utility / IoT / 3rd Party / Integration",
       "url": "https://github.com/Iketaki/MMM-WebView",
       "id": "Iketaki/MMM-WebView",
       "maintainer": "Iketaki",
@@ -11618,7 +11657,7 @@
     },
     {
       "name": "MMM-WestBerksBinDay",
-      "category": "Utility / IOT / 3rd Party / Integration",
+      "category": "Utility / IoT / 3rd Party / Integration",
       "url": "https://github.com/hdurdle/MMM-WestBerksBinDay",
       "id": "hdurdle/MMM-WestBerksBinDay",
       "maintainer": "hdurdle",
@@ -11658,7 +11697,7 @@
     },
     {
       "name": "MMM-whoshome",
-      "category": "Utility / IOT / 3rd Party / Integration",
+      "category": "Utility / IoT / 3rd Party / Integration",
       "url": "https://github.com/yedidiaklein/MMM-whoshome",
       "id": "yedidiaklein/MMM-whoshome",
       "maintainer": "yedidiaklein",
@@ -11668,7 +11707,7 @@
     },
     {
       "name": "MMM-Widget",
-      "category": "Utility / IOT / 3rd Party / Integration",
+      "category": "Utility / IoT / 3rd Party / Integration",
       "url": "https://github.com/ulrichwisser/MMM-Widget",
       "id": "ulrichwisser/MMM-Widget",
       "maintainer": "ulrichwisser",
@@ -11688,7 +11727,7 @@
     },
     {
       "name": "MMM-WiFiPassword",
-      "category": "Utility / IOT / 3rd Party / Integration",
+      "category": "Utility / IoT / 3rd Party / Integration",
       "url": "https://github.com/TeraTech/MMM-WiFiPassword",
       "id": "TeraTech/MMM-WiFiPassword",
       "maintainer": "TeraTech",
@@ -11778,7 +11817,7 @@
     },
     {
       "name": "MMM-WS281X-Server",
-      "category": "Utility / IOT / 3rd Party / Integration",
+      "category": "Utility / IoT / 3rd Party / Integration",
       "url": "https://github.com/coderpussy/MMM-WS281X-Server",
       "id": "coderpussy/MMM-WS281X-Server",
       "maintainer": "coderpussy",
@@ -11832,7 +11871,7 @@
     },
     {
       "name": "MMM-XDG-OPEN",
-      "category": "Utility / IOT / 3rd Party / Integration",
+      "category": "Utility / IoT / 3rd Party / Integration",
       "url": "https://github.com/cybex-dev/MMM-XDG-OPEN",
       "id": "cybex-dev/MMM-XDG-OPEN",
       "maintainer": "cybex-dev",
@@ -11842,7 +11881,7 @@
     },
     {
       "name": "MMM-xiaomi",
-      "category": "Utility / IOT / 3rd Party / Integration",
+      "category": "Utility / IoT / 3rd Party / Integration",
       "url": "https://github.com/mirko3000/MMM-xiaomi",
       "id": "mirko3000/MMM-xiaomi",
       "maintainer": "mirko3000",
@@ -11892,7 +11931,7 @@
     },
     {
       "name": "MMM-Yeelight",
-      "category": "Utility / IOT / 3rd Party / Integration",
+      "category": "Utility / IoT / 3rd Party / Integration",
       "url": "https://github.com/slametps/MMM-Yeelight",
       "id": "slametps/MMM-Yeelight",
       "maintainer": "slametps",
@@ -11922,7 +11961,7 @@
     },
     {
       "name": "MMM-YouLess",
-      "category": "Utility / IOT / 3rd Party / Integration",
+      "category": "Utility / IoT / 3rd Party / Integration",
       "url": "https://github.com/QNimbus/MMM-YouLess",
       "id": "QNimbus/MMM-YouLess",
       "maintainer": "QNimbus",
@@ -11932,7 +11971,7 @@
     },
     {
       "name": "MMM-YouLess2",
-      "category": "Utility / IOT / 3rd Party / Integration",
+      "category": "Utility / IoT / 3rd Party / Integration",
       "url": "https://github.com/eckonator/MMM-YouLess2",
       "id": "eckonator/MMM-YouLess2",
       "maintainer": "eckonator",
@@ -11982,7 +12021,7 @@
     },
     {
       "name": "MMM-YouTubeWebView",
-      "category": "Utility / IOT / 3rd Party / Integration",
+      "category": "Utility / IoT / 3rd Party / Integration",
       "url": "https://gitlab.com/doctorfree/MMM-YouTubeWebView",
       "id": "doctorfree/MMM-YouTubeWebView",
       "maintainer": "doctorfree",
