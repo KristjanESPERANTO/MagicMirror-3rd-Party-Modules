@@ -165,6 +165,7 @@ How can you use it?
 - Missing `package.json`: <https://github.com/elliefairholm/on-this-day/issues/10>
 - Missing license file: <https://github.com/grabenhenrich/MMM-Space/issues/1>
 - Missing screenshot: <https://github.com/randomBrainstormer/MMM-GoogleCalendar/issues/60>
+- Move screenshot to repository: <https://github.com/joschi27/MMM-flatastic/issues/3>
 - Reference to the check results: <https://github.com/Fabrizz/MMM-OnSpotify/issues/48>
 
 ### Discarded ideas
