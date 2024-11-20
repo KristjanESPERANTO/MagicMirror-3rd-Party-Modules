@@ -6,6 +6,9 @@ const config = [
   eslintPluginImport.flatConfigs.recommended,
   eslintPluginJs.configs.recommended,
   {
+    "ignores": ["**/*.min.js"]
+  },
+  {
     "files": ["**/*.js"],
     "languageOptions": {
       "ecmaVersion": "latest",
