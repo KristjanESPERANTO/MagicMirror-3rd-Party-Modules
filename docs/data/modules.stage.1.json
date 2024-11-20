@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "2024-11-13T19:39:17.402Z",
+  "lastUpdate": "2024-11-19T22:19:44.568Z",
   "modules": [
     {
       "name": "MMM-01ZM",
@@ -1481,6 +1481,16 @@
       "maintainer": "sdetweil",
       "maintainerURL": "",
       "description": "Form based (in browser) configuration for MagicMirror and modules.",
+      "issues": []
+    },
+    {
+      "name": "MMM-Confucius-say",
+      "category": "Entertainment / Misc",
+      "url": "https://github.com/jttaylor/MMM-Confucius-say",
+      "id": "jttaylor/MMM-Confucius-say",
+      "maintainer": "jttaylor",
+      "maintainerURL": "https://github.com/jttaylor",
+      "description": "Displays some funny Confucius say quotes.",
       "issues": []
     },
     {
@@ -7211,6 +7221,16 @@
       "outdated": "Abandoned. No reactions to issues since years. Depends on deprecated modules. MMM-OnSpotify is an alternative."
     },
     {
+      "name": "MMM-NRL",
+      "category": "Sports",
+      "url": "https://github.com/EwwYumYuck/MMM-NRL/",
+      "id": "EwwYumYuck/MMM-NRL",
+      "maintainer": "EwwYumYuck",
+      "maintainerURL": "",
+      "description": "Displays NRL (National Rugby League) match scores and information.",
+      "issues": []
+    },
+    {
       "name": "MMM-NsInfo",
       "category": "Transport / Travel",
       "url": "https://github.com/mfurious/MMM-NsInfo",
@@ -7742,6 +7762,16 @@
       "issues": []
     },
     {
+      "name": "MMM-parrot-or-gif",
+      "category": "Entertainment / Misc",
+      "url": "https://github.com/tjmnmk/MMM-parrot-or-gif",
+      "id": "tjmnmk/MMM-parrot-or-gif",
+      "maintainer": "tjmnmk",
+      "maintainerURL": "https://github.com/tjmnmk",
+      "description": "Displays a parrot GIF or any other GIF on the screen. The GIF can be shown continuously or at specific intervals.",
+      "issues": []
+    },
+    {
       "name": "MMM-ParticleStatus",
       "category": "Utility / IoT / 3rd Party / Integration",
       "url": "https://github.com/NickEngmann/MMM-ParticleStatus",
@@ -8164,16 +8194,6 @@
       "maintainer": "Ax-LED",
       "maintainerURL": "",
       "description": "This module can stream the video of 100 Sekunden Tagesschau by using omxplayer. It can be controlled by MM notification system.",
-      "issues": []
-    },
-    {
-      "name": "MMM-PoemOfTheDay",
-      "category": "Entertainment / Misc",
-      "url": "https://github.com/Steven-Gassert/MMM-PoemOfTheDay",
-      "id": "Steven-Gassert/MMM-PoemOfTheDay",
-      "maintainer": "Steven-Gassert",
-      "maintainerURL": "",
-      "description": "Display a poem of the day, in the language(s) of your choice.",
       "issues": []
     },
     {
@@ -8736,6 +8756,16 @@
       "maintainer": "cowboysdude",
       "maintainerURL": "",
       "description": "Displays a new recipe everyday.",
+      "issues": []
+    },
+    {
+      "name": "MMM-Recyclecollection",
+      "category": "Entertainment / Misc",
+      "url": "https://github.com/dierckxtom/MMM-Recyclecollection",
+      "id": "dierckxtom/MMM-Recyclecollection",
+      "maintainer": "dierckxtom",
+      "maintainerURL": "",
+      "description": "Display trashcollection days from DIFTAR service in Belgium.",
       "issues": []
     },
     {
@@ -10563,13 +10593,14 @@
     },
     {
       "name": "MMM-TiHimawari8Earth",
-      "category": "News / Information",
+      "category": "Outdated Modules",
       "url": "https://github.com/zhouxichun/MMM-TiHimawari8Earth",
       "id": "zhouxichun/MMM-TiHimawari8Earth",
       "maintainer": "zhouxichun",
       "maintainerURL": "https://github.com/zhouxichun",
       "description": "Fetch earth live image form Himawari #8 geostationary satellite and display images on screen.",
-      "issues": []
+      "issues": [],
+      "outdated": "Abandoned. No reactions to issues. Seems not to work anymore."
     },
     {
       "name": "MMM-Timetagger",
