@@ -27,6 +27,7 @@ const config = [
       "reportUnusedDisableDirectives": "off"
     },
     "rules": {
+      "import/no-unresolved": "off",
       "no-prototype-builtins": "off",
       "no-redeclare": "off",
       "no-undef": "off"
