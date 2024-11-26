@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "2024-11-19T22:19:44.568Z",
+  "lastUpdate": "2024-11-26T23:06:46.456Z",
   "modules": [
     {
       "name": "MMM-01ZM",
@@ -3487,6 +3487,16 @@
       "issues": []
     },
     {
+      "name": "MMM-go2rtc",
+      "category": "Utility / IoT / 3rd Party / Integration",
+      "url": "https://github.com/Anonym-tsk/MMM-go2rtc",
+      "id": "Anonym-tsk/MMM-go2rtc",
+      "maintainer": "Anonym-tsk",
+      "maintainerURL": "",
+      "description": "Viewing IP cameras RTSP stream in real time using WebRTC technology. Depends on go2rtc installed.",
+      "issues": []
+    },
+    {
       "name": "MMM-google-route",
       "category": "Transport / Travel",
       "url": "https://github.com/mrdis/MMM-google-route",
@@ -3665,16 +3675,6 @@
       "maintainer": "spydersoft-consulting",
       "maintainerURL": "https://github.com/spydersoft-consulting",
       "description": "Display Google Tasks with Planned View.",
-      "issues": []
-    },
-    {
-      "name": "MMM-GoogleTrafficTimes",
-      "category": "Transport / Travel",
-      "url": "https://github.com/pjestico/MMM-GoogleTrafficTimes",
-      "id": "pjestico/MMM-GoogleTrafficTimes",
-      "maintainer": "pjestico",
-      "maintainerURL": "",
-      "description": "Lists travel times to requested locations taking into account Google traffic information.",
       "issues": []
     },
     {
@@ -4030,6 +4030,16 @@
       "issues": []
     },
     {
+      "name": "MMM-HomeAssistant",
+      "category": "Utility / IoT / 3rd Party / Integration",
+      "url": "https://github.com/yourdawi/MMM-HomeAssistant",
+      "id": "yourdawi/MMM-HomeAssistant",
+      "maintainer": "yourdawi",
+      "maintainerURL": "https://github.com/yourdawi",
+      "description": "Display information out of HomeAssistant.",
+      "issues": []
+    },
+    {
       "name": "MMM-homeassistant-sensors",
       "category": "Utility / IoT / 3rd Party / Integration",
       "url": "https://github.com/leinich/MMM-homeassistant-sensors",
@@ -4147,6 +4157,16 @@
       "maintainer": "dancj",
       "maintainerURL": "",
       "description": "Connects to HoverLabs hover gesture detector and can raise notifications on swipes and taps.",
+      "issues": []
+    },
+    {
+      "name": "MMM-Hoymiles-Wifi",
+      "category": "Utility / IoT / 3rd Party / Integration",
+      "url": "https://github.com/schris88/MMM-Hoymiles-Wifi",
+      "id": "schris88/MMM-Hoymiles-Wifi",
+      "maintainer": "schris88",
+      "maintainerURL": "",
+      "description": "Shows the current PV output of a Wifi enabled HMS Hoymiles inverter.",
       "issues": []
     },
     {
@@ -5521,6 +5541,16 @@
       "maintainer": "zanix",
       "maintainerURL": "https://github.com/zanix",
       "description": "Displays a weekly meal menu from the <a target=\"_blank\" href=\"https://mealie.io\">Mealie</a> recipe management app.",
+      "issues": []
+    },
+    {
+      "name": "MMM-MealieShoppingList",
+      "category": "Entertainment / Misc",
+      "url": "https://github.com/btoconnor/MMM-MealieShoppingList",
+      "id": "btoconnor/MMM-MealieShoppingList",
+      "maintainer": "btoconnor",
+      "maintainerURL": "https://github.com/btoconnor",
+      "description": "Displays your <a target=\"_blank\" href=\"https://mealie.io\">Mealie</a> shopping list.",
       "issues": []
     },
     {
@@ -11784,6 +11814,16 @@
       "maintainer": "santi4488",
       "maintainerURL": "",
       "description": "Adds the windy weather map which covers the whole screen.",
+      "issues": []
+    },
+    {
+      "name": "MMM-WMATA",
+      "category": "Transport / Travel",
+      "url": "https://github.com/btoconnor/MMM-WMATA",
+      "id": "btoconnor/MMM-WMATA",
+      "maintainer": "btoconnor",
+      "maintainerURL": "https://github.com/btoconnor",
+      "description": "Display WMATA Bus and Train arrival times.  Rewritten version from MMM-DCMetroTimes and MMM-DCMetroTrainTimes",
       "issues": []
     },
     {
