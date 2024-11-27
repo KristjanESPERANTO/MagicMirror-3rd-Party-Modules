@@ -1,6 +1,6 @@
 # Result of the module analysis
 
-Last update: 2024-11-27T05:38:43+01:00
+Last update: 2024-11-27T17:38:58+01:00
 
 ## Statistics
 
@@ -2219,7 +2219,8 @@ deprecated: no longer maintained, switch to modern iconify-icon web component
 2. Typo: Found `Magic Mirror` in file `MMM-Face-Reco-DNN.js`: Replace it with `MagicMirror²`.
 3. Recommendation: The README seems not to have an update instruction (the word 'update' is missing). Please add one.
 4. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
-5. Recommendation: Replace eslintrc by new flat config.
+5. Typo: Found `Magic Mirror` in file `recognition.py`: Replace it with `MagicMirror²`.
+6. Recommendation: Replace eslintrc by new flat config.
 
 ### [MMM-Face-Recognition-SMAI by EbenKouao](https://github.com/EbenKouao/MMM-Face-Recognition-SMAI)
 
@@ -7275,8 +7276,7 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
 ### [MMM-PrixCarburants by bugsounet](https://github.com/bugsounet/MMM-PrixCarburants)
 
 1. `package.json` issue: No repository field.
-2. Issues are not enabled in the GitHub repository. So users cannot report bugs. Please enable issues in your repo.
-3. Recommendation: Found `new Date()` in file `MMM-PrixCarburants.js`: Consider replacing it by `new Date(Date.now())`. It's helpful for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
+2. Recommendation: Found `new Date()` in file `MMM-PrixCarburants.js`: Consider replacing it by `new Date(Date.now())`. It's helpful for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
 
 ### [MMM-profile by kurtern84](https://github.com/kurtern84/MMM-profile)
 

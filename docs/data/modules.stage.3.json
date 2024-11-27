@@ -13552,7 +13552,7 @@
       "`package.json` issue: No license field.",
       "There are no keywords in 'package.json'. We would use them as tags on the module list page."
     ],
-    "stars": 11
+    "stars": 12
   },
   {
     "name": "MMM-Pollen-FR",
@@ -13595,7 +13595,7 @@
     "issues": [
       "There is no `package.json`. We need this file to gather information about the module for the module list page."
     ],
-    "stars": 4,
+    "stars": 5,
     "license": "MIT",
     "image": "images-1.jpg"
   },
@@ -13744,11 +13744,9 @@
     "maintainerURL": "",
     "description": "[FR] Ce module permet d'afficher les prix des carburants des stations francaise.<br />[EN] Display fuel prices (France only).",
     "issues": [
-      "`package.json` issue: No repository field.",
-      "Issues are not enabled in the GitHub repository. So users cannot report bugs. Please enable issues in your repo."
+      "`package.json` issue: No repository field."
     ],
     "stars": 2,
-    "hasGithubIssues": false,
     "license": "MIT",
     "tags": [
       "french",
@@ -13833,7 +13831,7 @@
       "There is no `package.json`. We need this file to gather information about the module for the module list page.",
       "No image found."
     ],
-    "stars": 45,
+    "stars": 46,
     "license": "MIT"
   },
   {

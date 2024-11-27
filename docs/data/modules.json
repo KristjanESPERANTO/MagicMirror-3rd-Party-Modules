@@ -4457,8 +4457,8 @@
       "neural",
       "network"
     ],
-    "defaultSortWeight": 4,
-    "lastCommit": "2023-11-20T06:30:00+01:00"
+    "defaultSortWeight": 5,
+    "lastCommit": "2024-11-26T22:30:59-08:00"
   },
   {
     "name": "MMM-Face-Recognition-SMAI",
@@ -6905,7 +6905,7 @@
     "license": "GPL-3.0",
     "image": "mmm-hoymiles.jpg",
     "defaultSortWeight": 4,
-    "lastCommit": "2024-11-17T17:19:35+01:00"
+    "lastCommit": "2024-11-27T17:32:12+01:00"
   },
   {
     "name": "MMM-HRS-PickupPlan",
@@ -10127,7 +10127,7 @@
     "license": "MIT",
     "image": "screenshot.jpg",
     "defaultSortWeight": 3,
-    "lastCommit": "2024-11-01T19:29:51-04:00"
+    "lastCommit": "2024-11-27T09:38:21-05:00"
   },
   {
     "name": "MMM-Moon",
@@ -13705,7 +13705,7 @@
     "maintainerURL": "",
     "description": "Display pollen.com information for your US zipcode.",
     "issues": true,
-    "stars": 11,
+    "stars": 12,
     "defaultSortWeight": 8,
     "lastCommit": "2022-01-05T20:44:18-06:00"
   },
@@ -13748,7 +13748,7 @@
     "maintainerURL": "",
     "description": "Live World Population Clock.",
     "issues": true,
-    "stars": 4,
+    "stars": 5,
     "license": "MIT",
     "image": "images-1.jpg",
     "defaultSortWeight": 5,
@@ -13899,14 +13899,13 @@
     "description": "[FR] Ce module permet d'afficher les prix des carburants des stations francaise.<br />[EN] Display fuel prices (France only).",
     "issues": true,
     "stars": 2,
-    "hasGithubIssues": false,
     "license": "MIT",
     "tags": [
       "french",
       "carburant"
     ],
     "image": "screenshot.jpg",
-    "defaultSortWeight": 2,
+    "defaultSortWeight": 1,
     "lastCommit": "2024-11-20T22:59:35+01:00"
   },
   {
@@ -13983,7 +13982,7 @@
     "maintainerURL": "",
     "description": "This Module adds the ability to have different layouts for different profiles.",
     "issues": true,
-    "stars": 45,
+    "stars": 46,
     "license": "MIT",
     "defaultSortWeight": 5,
     "lastCommit": "2020-04-06T15:34:47+02:00"
@@ -19706,7 +19705,7 @@
     "stars": 0,
     "license": "MIT",
     "defaultSortWeight": 3,
-    "lastCommit": "2024-11-26T13:27:50-05:00"
+    "lastCommit": "2024-11-27T10:03:15-05:00"
   },
   {
     "name": "MMM-WordGenius",
