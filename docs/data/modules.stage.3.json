@@ -13096,7 +13096,7 @@
     "maintainerURL": "",
     "description": "Display stats from Pi-Hole DNS ad blocking.",
     "issues": [],
-    "stars": 74,
+    "stars": 75,
     "license": "MIT",
     "tags": [
       "pi-hole"
@@ -13193,7 +13193,7 @@
     "maintainerURL": "",
     "description": "After a configurated time without any user interaction the display will turn off and hide all modules for economy mode. It will wake up with a PIR sensor.",
     "issues": [],
-    "stars": 32,
+    "stars": 35,
     "license": "MIT",
     "tags": [
       "screen",
@@ -13293,7 +13293,7 @@
     "issues": [
       "There is no `package.json`. We need this file to gather information about the module for the module list page."
     ],
-    "stars": 14,
+    "stars": 15,
     "license": "MIT",
     "image": "PiTemp.jpg"
   },
@@ -13354,7 +13354,7 @@
       "There is no `package.json`. We need this file to gather information about the module for the module list page.",
       "No image found."
     ],
-    "stars": 3,
+    "stars": 4,
     "license": "MIT"
   },
   {
@@ -19434,7 +19434,7 @@
     "id": "btoconnor/MMM-WMATA",
     "maintainer": "btoconnor",
     "maintainerURL": "https://github.com/btoconnor",
-    "description": "Display WMATA Bus and Train arrival times.  Rewritten version from MMM-DCMetroTimes and MMM-DCMetroTrainTimes",
+    "description": "Display WMATA Bus and Train arrival times. Rewritten version from MMM-DCMetroTimes and MMM-DCMetroTrainTimes.",
     "issues": [
       "`package.json` issue: No repository field.",
       "There are no keywords in 'package.json'. We would use them as tags on the module list page.",

@@ -5171,7 +5171,7 @@
     "maintainer": "KristjanESPERANTO",
     "maintainerURL": "",
     "description": "Displays information from the MagicMirror\u00b2 forum. Like latest posts, unread posts, etc. The module should also work for other NodeBB forums, but it is not tested.",
-    "issues": false,
+    "issues": true,
     "stars": 0,
     "license": "ISC",
     "tags": [
@@ -5767,7 +5767,7 @@
       "mirror email"
     ],
     "image": "example1.jpg",
-    "defaultSortWeight": 0,
+    "defaultSortWeight": 1,
     "lastCommit": "2024-01-18T11:21:58-06:00"
   },
   {
@@ -7968,7 +7968,7 @@
       "table"
     ],
     "image": "example1.jpg",
-    "defaultSortWeight": 0,
+    "defaultSortWeight": 1,
     "lastCommit": "2024-07-16T10:59:50+02:00"
   },
   {
@@ -8971,7 +8971,7 @@
       "mover"
     ],
     "image": "img-screen-burn-in.jpg",
-    "defaultSortWeight": 0,
+    "defaultSortWeight": 1,
     "lastCommit": "2024-04-16T13:59:34+02:00"
   },
   {
@@ -13251,7 +13251,7 @@
     "maintainerURL": "",
     "description": "Display stats from Pi-Hole DNS ad blocking.",
     "issues": true,
-    "stars": 74,
+    "stars": 75,
     "license": "MIT",
     "tags": [
       "pi-hole"
@@ -13354,7 +13354,7 @@
     "maintainerURL": "",
     "description": "After a configurated time without any user interaction the display will turn off and hide all modules for economy mode. It will wake up with a PIR sensor.",
     "issues": true,
-    "stars": 32,
+    "stars": 35,
     "license": "MIT",
     "tags": [
       "screen",
@@ -13454,7 +13454,7 @@
     "maintainerURL": "",
     "description": "MMM-PiTemp works in conjunction with MagicMirror\u00b2 and tells you the temperature of your raspberry pi's CPU. If the temperature is ever greater than 85 degrees then the pi shuts down.",
     "issues": true,
-    "stars": 14,
+    "stars": 15,
     "license": "MIT",
     "image": "PiTemp.jpg",
     "defaultSortWeight": 2,
@@ -13513,7 +13513,7 @@
     "maintainerURL": "",
     "description": "Make your mirror to a Planetarium.",
     "issues": true,
-    "stars": 3,
+    "stars": 4,
     "license": "MIT",
     "defaultSortWeight": 6,
     "lastCommit": "2023-07-05T10:55:29+02:00"
@@ -19701,7 +19701,7 @@
     "id": "btoconnor/MMM-WMATA",
     "maintainer": "btoconnor",
     "maintainerURL": "https://github.com/btoconnor",
-    "description": "Display WMATA Bus and Train arrival times.  Rewritten version from MMM-DCMetroTimes and MMM-DCMetroTrainTimes",
+    "description": "Display WMATA Bus and Train arrival times. Rewritten version from MMM-DCMetroTimes and MMM-DCMetroTrainTimes.",
     "issues": true,
     "stars": 0,
     "license": "MIT",
@@ -19755,7 +19755,7 @@
       "vocabulary"
     ],
     "image": "wotdPic.jpg",
-    "defaultSortWeight": 1,
+    "defaultSortWeight": 2,
     "lastCommit": "2024-02-09T13:30:05-06:00"
   },
   {
