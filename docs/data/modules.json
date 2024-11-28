@@ -1755,14 +1755,14 @@
     "maintainer": "MMM-CalendarExt2",
     "maintainerURL": "",
     "description": "Extended calendar and event view.",
-    "issues": false,
+    "issues": true,
     "stars": 98,
     "license": "MIT",
     "tags": [
       "calendar"
     ],
     "image": "docs-Configuration-Views-legend-full-example.jpg",
-    "defaultSortWeight": -2,
+    "defaultSortWeight": -1,
     "lastCommit": "2024-11-27T23:45:48+01:00"
   },
   {
@@ -6905,7 +6905,7 @@
     "license": "GPL-3.0",
     "image": "mmm-hoymiles.jpg",
     "defaultSortWeight": 4,
-    "lastCommit": "2024-11-27T17:32:12+01:00"
+    "lastCommit": "2024-11-28T15:28:09+01:00"
   },
   {
     "name": "MMM-HRS-PickupPlan",
@@ -14593,7 +14593,7 @@
     "license": "MIT",
     "image": "Images-bin.jpg",
     "defaultSortWeight": 7,
-    "lastCommit": "2024-11-24T10:35:00+01:00"
+    "lastCommit": "2024-11-28T10:17:50+01:00"
   },
   {
     "name": "MMM-Reddit",
@@ -17565,7 +17565,7 @@
     ],
     "image": "screenshots-MMM-text-clock-screenshot-compact.jpg",
     "defaultSortWeight": 5,
-    "lastCommit": "2024-11-20T11:35:05+01:00"
+    "lastCommit": "2024-11-28T13:01:51+01:00"
   },
   {
     "name": "MMM-TextPerWeek",
@@ -19704,8 +19704,9 @@
     "issues": true,
     "stars": 0,
     "license": "MIT",
-    "defaultSortWeight": 3,
-    "lastCommit": "2024-11-27T10:03:15-05:00"
+    "image": "MMM-WMATA-screenshot.jpg",
+    "defaultSortWeight": 2,
+    "lastCommit": "2024-11-28T11:36:27-05:00"
   },
   {
     "name": "MMM-WordGenius",

@@ -19435,11 +19435,11 @@
     "description": "Display WMATA Bus and Train arrival times. Rewritten version from MMM-DCMetroTimes and MMM-DCMetroTrainTimes.",
     "issues": [
       "`package.json` issue: No repository field.",
-      "There are no keywords in 'package.json'. We would use them as tags on the module list page.",
-      "No image found."
+      "There are no keywords in 'package.json'. We would use them as tags on the module list page."
     ],
     "stars": 0,
-    "license": "MIT"
+    "license": "MIT",
+    "image": "MMM-WMATA-screenshot.jpg"
   },
   {
     "name": "MMM-WordGenius",

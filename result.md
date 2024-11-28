@@ -1,6 +1,6 @@
 # Result of the module analysis
 
-Last update: 2024-11-28T05:38:38+01:00
+Last update: 2024-11-28T17:38:51+01:00
 
 ## Statistics
 
@@ -8,7 +8,7 @@ Last update: 2024-11-28T05:38:38+01:00
 |:---------------------|:--------:|
 | modules analyzed     |   1206   |
 | maintainer           |    649   |
-| modules with issues  |   1192   |
+| modules with issues  |   1193   |
 | issues               |   6917   |
 | modules at github    |   1096   |
 | modules at gitlab    |     10   |
@@ -477,7 +477,7 @@ Last update: 2024-11-28T05:38:38+01:00
 2. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
 3. Information: There are updates for 3 dependencie(s):
    - alphavantage     ^2.4.1  →   ^2.5.0
-   - highcharts       ^9.0.0  →  ^12.0.0
+   - highcharts       ^9.0.0  →  ^12.0.1
    - yahoo-finance2  ^2.11.3  →  ^2.13.2
 
 
@@ -741,7 +741,7 @@ Last update: 2024-11-28T05:38:38+01:00
    - @stylistic/eslint-plugin             ^1.6.2  →   ^2.11.0
    - @types/express                     ^4.17.11  →    ^5.0.0
    - @types/magicmirror-module           ^2.16.0  →   ^2.16.5
-   - @types/node                       ^14.14.22  →  ^22.10.0
+   - @types/node                       ^14.14.22  →  ^22.10.1
    - @typescript-eslint/eslint-plugin     ^7.0.2  →   ^8.16.0
    - @typescript-eslint/parser            ^7.0.2  →   ^8.16.0
    - bosch-smart-home-bridge              ^1.4.1  →    ^1.6.0
@@ -907,6 +907,12 @@ Last update: 2024-11-28T05:38:38+01:00
    - tsdav         ^2.0.7  →    ^2.1.2
 
 
+### [MMM-CalendarExt2 by MMM-CalendarExt2](https://github.com/MMM-CalendarExt2/MMM-CalendarExt2)
+
+1. Information: There are updates for 1 dependencie(s):
+   - stylelint  ^16.10.0  →  ^16.11.0
+
+
 ### [MMM-CalendarExt3 by MMRIZE](https://github.com/MMRIZE/MMM-CalendarExt3)
 
 1. Recommendation: Found `new Date()` in file `MMM-CalendarExt3.js`: Consider replacing it by `new Date(Date.now())`. It's helpful for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
@@ -1028,13 +1034,14 @@ Last update: 2024-11-28T05:38:38+01:00
 
 ### [MMM-Canteen by KristjanESPERANTO](https://github.com/KristjanESPERANTO/MMM-Canteen)
 
-1. Information: There are updates for 6 dependencie(s):
-   - @eslint/js                ^9.14.0  →  ^9.15.0
-   - @stylistic/eslint-plugin  ^2.10.1  →  ^2.11.0
-   - cspell                    ^8.15.7  →  ^8.16.1
-   - eslint                    ^9.14.0  →  ^9.15.0
-   - markdownlint-cli          ^0.42.0  →  ^0.43.0
-   - prettier                   ^3.3.3  →   ^3.4.1
+1. Information: There are updates for 7 dependencie(s):
+   - @eslint/js                 ^9.14.0  →   ^9.15.0
+   - @stylistic/eslint-plugin   ^2.10.1  →   ^2.11.0
+   - cspell                     ^8.15.7  →   ^8.16.1
+   - eslint                     ^9.14.0  →   ^9.15.0
+   - markdownlint-cli           ^0.42.0  →   ^0.43.0
+   - prettier                    ^3.3.3  →    ^3.4.1
+   - stylelint                 ^16.10.0  →  ^16.11.0
 
 
 ### [MMM-Canvas by chase-cromwell](https://github.com/chase-cromwell/MMM-Canvas)
@@ -1060,10 +1067,11 @@ Last update: 2024-11-28T05:38:38+01:00
 
 ### [MMM-Carousel by shbatm](https://github.com/shbatm/MMM-Carousel)
 
-1. Information: There are updates for 3 dependencie(s):
-   - cspell            ^8.16.0  →  ^8.16.1
-   - markdownlint-cli  ^0.42.0  →  ^0.43.0
-   - prettier           ^3.3.3  →   ^3.4.1
+1. Information: There are updates for 4 dependencie(s):
+   - cspell             ^8.16.0  →   ^8.16.1
+   - markdownlint-cli   ^0.42.0  →   ^0.43.0
+   - prettier            ^3.3.3  →    ^3.4.1
+   - stylelint         ^16.10.0  →  ^16.11.0
 
 
 ### [MMM-CECControl by nischi](https://github.com/nischi/MMM-CECControl)
@@ -1699,7 +1707,7 @@ Last update: 2024-11-28T05:38:38+01:00
 ### [EXT-Detector by bugsounet](https://github.com/bugsounet/EXT-Detector)
 
 1. Information: There are updates for 1 dependencie(s):
-   - @types/node  ^22.9.3  →  ^22.10.0
+   - @types/node  ^22.9.3  →  ^22.10.1
 
 
 ### [MMM-DHT by ckoutavas](https://github.com/ckoutavas/MMM-DHT)
@@ -1929,13 +1937,14 @@ Last update: 2024-11-28T05:38:38+01:00
 
 ### [MMM-EasyPix by KristjanESPERANTO](https://github.com/KristjanESPERANTO/MMM-EasyPix)
 
-1. Information: There are updates for 6 dependencie(s):
-   - @eslint/js                ^9.14.0  →  ^9.15.0
-   - @stylistic/eslint-plugin  ^2.10.1  →  ^2.11.0
-   - cspell                    ^8.15.7  →  ^8.16.1
-   - eslint                    ^9.14.0  →  ^9.15.0
-   - markdownlint-cli          ^0.42.0  →  ^0.43.0
-   - prettier                   ^3.3.3  →   ^3.4.1
+1. Information: There are updates for 7 dependencie(s):
+   - @eslint/js                 ^9.14.0  →   ^9.15.0
+   - @stylistic/eslint-plugin   ^2.10.1  →   ^2.11.0
+   - cspell                     ^8.15.7  →   ^8.16.1
+   - eslint                     ^9.14.0  →   ^9.15.0
+   - markdownlint-cli           ^0.42.0  →   ^0.43.0
+   - prettier                    ^3.3.3  →    ^3.4.1
+   - stylelint                 ^16.10.0  →  ^16.11.0
 
 
 ### [MMM-Ecobee by parnic](https://github.com/parnic/MMM-Ecobee)
@@ -2595,8 +2604,9 @@ deprecated: no longer maintained, switch to modern iconify-icon web component
 
 ### [MMM-Forum by KristjanESPERANTO](https://github.com/KristjanESPERANTO/MMM-Forum)
 
-1. Information: There are updates for 1 dependencie(s):
-   - cspell  ^8.16.0  →  ^8.16.1
+1. Information: There are updates for 2 dependencie(s):
+   - cspell      ^8.16.0  →   ^8.16.1
+   - stylelint  ^16.10.0  →  ^16.11.0
 
 
 ### [MMM-FrameLight by RaspiManu](https://github.com/RaspiManu/MMM-FrameLight)
@@ -4772,7 +4782,7 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
    - markdownlint-cli                 ^0.41.0  →   ^0.43.0
    - prettier                          ^3.3.3  →    ^3.4.1
    - semantic-release                 ^24.1.0  →   ^24.2.0
-   - stylelint                        ^16.9.0  →  ^16.10.0
+   - stylelint                        ^16.9.0  →  ^16.11.0
    - stylelint-config-standard        ^36.0.0  →   ^36.0.1
 
 2.  WARN  eslint@8.57.0: 2024-02-23T20:39:43.282Z
@@ -5955,9 +5965,10 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
 ### [MMM-Netatmo by CFenner](https://github.com/CFenner/MMM-Netatmo)
 
 1. Recommendation: No lint script found in package.json. It is recommended to add one.
-2. Information: There are updates for 2 dependencie(s):
-   - less          4.2.0  →   4.2.1
-   - neostandard  0.11.5  →  0.11.9
+2. Information: There are updates for 3 dependencie(s):
+   - less           4.2.0  →    4.2.1
+   - neostandard   0.11.5  →   0.11.9
+   - stylelint    16.10.0  →  16.11.0
 
 
 ### [MMM-Netatmo-Presence by AgP42](https://github.com/AgP42/MMM-Netatmo-Presence)
@@ -7341,7 +7352,7 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
 
 ### [MMM-PublicTransportBerlin by deg0nz](https://github.com/deg0nz/MMM-PublicTransportBerlin)
 
-1. Information: There are updates for 7 dependencie(s):
+1. Information: There are updates for 8 dependencie(s):
    - @eslint/js                 ^9.12.0  →   ^9.15.0
    - @stylistic/eslint-plugin   ^2.10.0  →   ^2.11.0
    - eslint                     ^9.13.0  →   ^9.15.0
@@ -7349,16 +7360,18 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
    - eslint-plugin-jsonc        ^2.16.0  →   ^2.18.2
    - globals                   ^15.10.0  →  ^15.12.0
    - prettier                    ^3.3.3  →    ^3.4.1
+   - stylelint                 ^16.10.0  →  ^16.11.0
 
 
 ### [MMM-PublicTransportHafas by KristjanESPERANTO](https://github.com/KristjanESPERANTO/MMM-PublicTransportHafas)
 
-1. Information: There are updates for 5 dependencie(s):
-   - @eslint/json               ^0.7.0  →   ^0.8.0
-   - @stylistic/eslint-plugin  ^2.10.1  →  ^2.11.0
-   - cspell                    ^8.16.0  →  ^8.16.1
-   - markdownlint-cli          ^0.42.0  →  ^0.43.0
-   - prettier                   ^3.3.3  →   ^3.4.1
+1. Information: There are updates for 6 dependencie(s):
+   - @eslint/json                ^0.7.0  →    ^0.8.0
+   - @stylistic/eslint-plugin   ^2.10.1  →   ^2.11.0
+   - cspell                     ^8.16.0  →   ^8.16.1
+   - markdownlint-cli           ^0.42.0  →   ^0.43.0
+   - prettier                    ^3.3.3  →    ^3.4.1
+   - stylelint                 ^16.10.0  →  ^16.11.0
 
 
 ### [MMM-PublicTransportVVO by ChristianGeie](https://github.com/ChristianGeie/MMM-PublicTransportVVO)
@@ -10307,8 +10320,7 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
 
 1. `package.json` issue: No repository field.
 2. There are no keywords in 'package.json'. We would use them as tags on the module list page.
-3. No image found.
-4. Recommendation: Found `new Date()` in file `MMM-WMATA.js`: Consider replacing it by `new Date(Date.now())`. It's helpful for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
+3. Recommendation: Found `new Date()` in file `MMM-WMATA.js`: Consider replacing it by `new Date(Date.now())`. It's helpful for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
 
 ### [MMM-WordGenius by drventure](https://github.com/drventure/MMM-WordGenius)
 
