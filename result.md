@@ -1,6 +1,6 @@
 # Result of the module analysis
 
-Last update: 2024-11-27T17:38:58+01:00
+Last update: 2024-11-28T05:38:38+01:00
 
 ## Statistics
 
@@ -8,8 +8,8 @@ Last update: 2024-11-27T17:38:58+01:00
 |:---------------------|:--------:|
 | modules analyzed     |   1206   |
 | maintainer           |    649   |
-| modules with issues  |   1193   |
-| issues               |   6918   |
+| modules with issues  |   1192   |
+| issues               |   6917   |
 | modules at github    |   1096   |
 | modules at gitlab    |     10   |
 | modules at bitbucket |      1   |
@@ -477,7 +477,7 @@ Last update: 2024-11-27T17:38:58+01:00
 2. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
 3. Information: There are updates for 3 dependencie(s):
    - alphavantage     ^2.4.1  →   ^2.5.0
-   - highcharts       ^9.0.0  →  ^11.4.8
+   - highcharts       ^9.0.0  →  ^12.0.0
    - yahoo-finance2  ^2.11.3  →  ^2.13.2
 
 
@@ -905,18 +905,6 @@ Last update: 2024-11-27T17:38:58+01:00
    - googleapis  ^128.0.0  →  ^144.0.0
    - open          ^9.1.0  →   ^10.1.0
    - tsdav         ^2.0.7  →    ^2.1.2
-
-
-### [MMM-CalendarExt2 by MMM-CalendarExt2](https://github.com/MMM-CalendarExt2/MMM-CalendarExt2)
-
-1. Information: There are updates for 7 dependencie(s):
-   - @eslint/js                 ^9.14.0  →   ^9.15.0
-   - @stylistic/eslint-plugin   ^2.10.1  →   ^2.11.0
-   - eslint                     ^9.14.0  →   ^9.15.0
-   - eslint-plugin-jsonc        ^2.16.0  →   ^2.18.2
-   - globals                   ^15.11.0  →  ^15.12.0
-   - markdownlint-cli2          ^0.14.0  →   ^0.15.0
-   - prettier                    ^3.3.3  →    ^3.4.1
 
 
 ### [MMM-CalendarExt3 by MMRIZE](https://github.com/MMRIZE/MMM-CalendarExt3)
