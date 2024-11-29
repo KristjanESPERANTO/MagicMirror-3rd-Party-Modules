@@ -1500,7 +1500,7 @@
     "maintainerURL": "",
     "description": "Display a Bring! shopping list in a flexible view and touch support.",
     "issues": [],
-    "stars": 30,
+    "stars": 31,
     "license": "MIT",
     "tags": [
       "bring"
@@ -1716,7 +1716,7 @@
     "maintainerURL": "",
     "description": "Extended calendar and event view.",
     "issues": [],
-    "stars": 98,
+    "stars": 99,
     "license": "MIT",
     "tags": [
       "calendar"

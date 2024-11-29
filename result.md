@@ -1,6 +1,6 @@
 # Result of the module analysis
 
-Last update: 2024-11-29T05:38:29+01:00
+Last update: 2024-11-29T17:38:39+01:00
 
 ## Statistics
 
@@ -9,7 +9,7 @@ Last update: 2024-11-29T05:38:29+01:00
 | modules analyzed     |   1206   |
 | maintainer           |    649   |
 | modules with issues  |   1193   |
-| issues               |   6916   |
+| issues               |   6917   |
 | modules at github    |   1096   |
 | modules at gitlab    |     10   |
 | modules at bitbucket |      1   |
@@ -2697,6 +2697,9 @@ deprecated: no longer maintained, switch to modern iconify-icon web component
 1. Recommendation: Found `"needle"` in file `node_helper.js`: Replace it with built-in fetch.
 2. Recommendation: Found `"needle"` in file `package.json`: Replace it with built-in fetch.
 3. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
+4. Information: There are updates for 1 dependencie(s):
+   - jsonata  ^2.0.5  →  ^2.0.6
+
 
 ### [MMM-FTP-image by jboucly](https://github.com/jboucly/MMM-FTP-image)
 

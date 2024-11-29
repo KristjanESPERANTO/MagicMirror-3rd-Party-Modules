@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "2024-11-29T04:30:28.079Z",
+  "lastUpdate": "2024-11-29T16:30:29.032Z",
   "repositories": [
     {
       "id": "0lek/MMM-socialbicycles",
@@ -73,7 +73,7 @@
     },
     {
       "id": "73cirdan/MMM-bustimes",
-      "gitHubDataLastUpdate": "2024-11-10T16:30:23.422Z",
+      "gitHubDataLastUpdate": "2024-11-29T16:30:26.583Z",
       "gitHubData": {
         "issues": 1,
         "stars": 3,
@@ -927,7 +927,7 @@
     },
     {
       "id": "awitwicki/MMM-BME280",
-      "gitHubDataLastUpdate": "2024-11-10T16:30:13.834Z",
+      "gitHubDataLastUpdate": "2024-11-29T16:30:16.412Z",
       "gitHubData": {
         "issues": 2,
         "stars": 10,
@@ -1025,7 +1025,7 @@
     },
     {
       "id": "balassy/MMM-Bubi",
-      "gitHubDataLastUpdate": "2024-11-10T16:30:21.276Z",
+      "gitHubDataLastUpdate": "2024-11-29T16:30:24.326Z",
       "gitHubData": {
         "issues": 10,
         "stars": 0,
@@ -1865,7 +1865,7 @@
     },
     {
       "id": "bugsounet/EXT-Browser",
-      "gitHubDataLastUpdate": "2024-11-10T16:30:20.855Z",
+      "gitHubDataLastUpdate": "2024-11-29T16:30:23.871Z",
       "gitHubData": {
         "issues": 0,
         "stars": 1,
@@ -1874,7 +1874,7 @@
         "disabled": false,
         "defaultBranch": "master",
         "has_issues": true,
-        "lastCommit": "2024-11-09T11:56:50Z"
+        "lastCommit": "2024-11-23T11:18:46Z"
       }
     },
     {
@@ -2761,7 +2761,7 @@
     },
     {
       "id": "choffmann/MMM-bunq",
-      "gitHubDataLastUpdate": "2024-11-10T16:30:22.559Z",
+      "gitHubDataLastUpdate": "2024-11-29T16:30:25.743Z",
       "gitHubData": {
         "issues": 1,
         "stars": 6,
@@ -2817,7 +2817,7 @@
     },
     {
       "id": "ChrisF1976/ShellyPV",
-      "gitHubDataLastUpdate": "2024-11-11T04:30:13.794Z",
+      "gitHubDataLastUpdate": "2024-11-29T16:30:28.018Z",
       "gitHubData": {
         "issues": 0,
         "stars": 1,
@@ -2826,7 +2826,7 @@
         "disabled": false,
         "defaultBranch": "main",
         "has_issues": true,
-        "lastCommit": "2024-11-10T19:45:53Z"
+        "lastCommit": "2024-11-20T18:10:12Z"
       }
     },
     {
@@ -3083,7 +3083,7 @@
     },
     {
       "id": "CptMeetKat/MMM-BoredDaily",
-      "gitHubDataLastUpdate": "2024-11-10T16:30:16.600Z",
+      "gitHubDataLastUpdate": "2024-11-29T16:30:19.351Z",
       "gitHubData": {
         "issues": 0,
         "stars": 5,
@@ -3265,7 +3265,7 @@
     },
     {
       "id": "Cyw00d/MMM-Bluelinky",
-      "gitHubDataLastUpdate": "2024-11-10T16:30:12.894Z",
+      "gitHubDataLastUpdate": "2024-11-29T16:30:15.498Z",
       "gitHubData": {
         "issues": 1,
         "stars": 4,
@@ -3279,7 +3279,7 @@
     },
     {
       "id": "da4throux/MMM-Buller",
-      "gitHubDataLastUpdate": "2024-11-10T16:30:22.118Z",
+      "gitHubDataLastUpdate": "2024-11-29T16:30:25.203Z",
       "gitHubData": {
         "issues": 1,
         "stars": 6,
@@ -6261,7 +6261,7 @@
     },
     {
       "id": "jalibu/MMM-BoschSmartHome",
-      "gitHubDataLastUpdate": "2024-11-10T16:30:17.690Z",
+      "gitHubDataLastUpdate": "2024-11-29T16:30:20.522Z",
       "gitHubData": {
         "issues": 0,
         "stars": 18,
@@ -6961,7 +6961,7 @@
     },
     {
       "id": "JonasTriki/MMM-Bysykkel",
-      "gitHubDataLastUpdate": "2024-11-10T16:30:24.362Z",
+      "gitHubDataLastUpdate": "2024-11-29T16:30:27.514Z",
       "gitHubData": {
         "issues": 0,
         "stars": 10,
@@ -7087,7 +7087,7 @@
     },
     {
       "id": "jsteel715/MMM-Brewdog",
-      "gitHubDataLastUpdate": "2024-11-10T16:30:19.450Z",
+      "gitHubDataLastUpdate": "2024-11-29T16:30:22.483Z",
       "gitHubData": {
         "issues": 0,
         "stars": 1,
@@ -7283,7 +7283,7 @@
     },
     {
       "id": "justjim1220/MMM-BornBeforeDate",
-      "gitHubDataLastUpdate": "2024-11-10T16:30:17.043Z",
+      "gitHubDataLastUpdate": "2024-11-29T16:30:20.019Z",
       "gitHubData": {
         "issues": 0,
         "stars": 2,
@@ -9173,16 +9173,16 @@
     },
     {
       "id": "MMM-CalendarExt2/MMM-CalendarExt2",
-      "gitHubDataLastUpdate": "2024-11-11T04:30:14.680Z",
+      "gitHubDataLastUpdate": "2024-11-29T16:30:28.974Z",
       "gitHubData": {
-        "issues": 25,
-        "stars": 98,
+        "issues": 26,
+        "stars": 99,
         "license": "MIT",
         "archived": false,
         "disabled": false,
         "defaultBranch": "main",
         "has_issues": true,
-        "lastCommit": "2024-11-03T19:52:58Z"
+        "lastCommit": "2024-11-27T22:45:48Z"
       }
     },
     {
@@ -9271,9 +9271,9 @@
     },
     {
       "id": "MMRIZE/MMM-CalDAV",
-      "gitHubDataLastUpdate": "2024-11-11T04:30:14.247Z",
+      "gitHubDataLastUpdate": "2024-11-29T16:30:28.500Z",
       "gitHubData": {
-        "issues": 3,
+        "issues": 4,
         "stars": 8,
         "license": "MIT",
         "archived": false,
@@ -10041,7 +10041,7 @@
     },
     {
       "id": "mykle1/MMM-BMI",
-      "gitHubDataLastUpdate": "2024-11-10T16:30:14.385Z",
+      "gitHubDataLastUpdate": "2024-11-29T16:30:16.905Z",
       "gitHubData": {
         "issues": 0,
         "stars": 3,
@@ -10055,7 +10055,7 @@
     },
     {
       "id": "mykle1/MMM-BMW-CC",
-      "gitHubDataLastUpdate": "2024-11-10T16:30:14.827Z",
+      "gitHubDataLastUpdate": "2024-11-29T16:30:17.354Z",
       "gitHubData": {
         "issues": 1,
         "stars": 1,
@@ -10069,7 +10069,7 @@
     },
     {
       "id": "mykle1/MMM-BMW-DS",
-      "gitHubDataLastUpdate": "2024-11-10T16:30:15.240Z",
+      "gitHubDataLastUpdate": "2024-11-29T16:30:17.903Z",
       "gitHubData": {
         "issues": 1,
         "stars": 14,
@@ -10083,7 +10083,7 @@
     },
     {
       "id": "mykle1/MMM-BMW-OW",
-      "gitHubDataLastUpdate": "2024-11-10T16:30:15.684Z",
+      "gitHubDataLastUpdate": "2024-11-29T16:30:18.408Z",
       "gitHubData": {
         "issues": 3,
         "stars": 3,
@@ -11973,7 +11973,7 @@
     },
     {
       "id": "ptrbld/MMM-Button",
-      "gitHubDataLastUpdate": "2024-11-10T16:30:23.873Z",
+      "gitHubDataLastUpdate": "2024-11-29T16:30:27.046Z",
       "gitHubData": {
         "issues": 0,
         "stars": 19,
@@ -12505,7 +12505,7 @@
     },
     {
       "id": "retroflex/MMM-BrawlStars",
-      "gitHubDataLastUpdate": "2024-11-10T16:30:18.607Z",
+      "gitHubDataLastUpdate": "2024-11-29T16:30:21.512Z",
       "gitHubData": {
         "issues": 1,
         "stars": 2,
@@ -12715,7 +12715,7 @@
     },
     {
       "id": "rseidt/MMM-bringList",
-      "gitHubDataLastUpdate": "2024-11-10T16:30:20.353Z",
+      "gitHubDataLastUpdate": "2024-11-29T16:30:23.451Z",
       "gitHubData": {
         "issues": 3,
         "stars": 12,
@@ -14101,7 +14101,7 @@
     },
     {
       "id": "spoturdeal/MMM-Bose-Soundtouch",
-      "gitHubDataLastUpdate": "2024-11-10T16:30:18.186Z",
+      "gitHubDataLastUpdate": "2024-11-29T16:30:21.050Z",
       "gitHubData": {
         "issues": 3,
         "stars": 3,
@@ -14241,7 +14241,7 @@
     },
     {
       "id": "StefanNienhuis/MMM-Buienradar",
-      "gitHubDataLastUpdate": "2024-11-10T16:30:21.704Z",
+      "gitHubDataLastUpdate": "2024-11-29T16:30:24.797Z",
       "gitHubData": {
         "issues": 4,
         "stars": 6,
@@ -14969,7 +14969,7 @@
     },
     {
       "id": "timodejong95/MMM-BluetoothDevices",
-      "gitHubDataLastUpdate": "2024-11-10T16:30:13.334Z",
+      "gitHubDataLastUpdate": "2024-11-29T16:30:15.967Z",
       "gitHubData": {
         "issues": 13,
         "stars": 7,
@@ -15795,7 +15795,7 @@
     },
     {
       "id": "Veldrovive/MMM-Bob-Ross",
-      "gitHubDataLastUpdate": "2024-11-10T16:30:16.104Z",
+      "gitHubDataLastUpdate": "2024-11-29T16:30:18.879Z",
       "gitHubData": {
         "issues": 2,
         "stars": 2,
@@ -16033,10 +16033,10 @@
     },
     {
       "id": "werthdavid/MMM-Bring",
-      "gitHubDataLastUpdate": "2024-11-10T16:30:19.869Z",
+      "gitHubDataLastUpdate": "2024-11-29T16:30:22.953Z",
       "gitHubData": {
         "issues": 8,
-        "stars": 30,
+        "stars": 31,
         "license": "MIT",
         "archived": false,
         "disabled": false,
@@ -16047,7 +16047,7 @@
     },
     {
       "id": "werthdavid/MMM-BurnIn",
-      "gitHubDataLastUpdate": "2024-11-10T16:30:22.969Z",
+      "gitHubDataLastUpdate": "2024-11-29T16:30:26.138Z",
       "gitHubData": {
         "issues": 1,
         "stars": 29,
@@ -16453,7 +16453,7 @@
     },
     {
       "id": "yashatgit/MMM-Breathwork",
-      "gitHubDataLastUpdate": "2024-11-10T16:30:18.988Z",
+      "gitHubDataLastUpdate": "2024-11-29T16:30:21.973Z",
       "gitHubData": {
         "issues": 1,
         "stars": 9,
