@@ -596,7 +596,7 @@
     "maintainerURL": "",
     "description": "Display stock prices and charts using Yahoo Finance API.",
     "issues": [],
-    "stars": 38,
+    "stars": 39,
     "license": "MIT"
   },
   {
@@ -633,7 +633,7 @@
     "maintainerURL": "",
     "description": "Show fullscreen slideshow in background from images in a local folder. Great for a photo frame.",
     "issues": [],
-    "stars": 147,
+    "stars": 149,
     "license": "MIT"
   },
   {
@@ -14376,11 +14376,11 @@
   {
     "name": "MMM-Zmanim",
     "category": "Religion",
-    "url": "https://github.com/supermem613/MMM-Zmanim",
-    "id": "supermem613/MMM-Zmanim",
-    "maintainer": "supermem613",
+    "url": "https://github.com/shmulyeng/MMM-Zmanim",
+    "id": "shmulyeng/MMM-Zmanim",
+    "maintainer": "shmulyeng",
     "maintainerURL": "",
-    "description": "Displays Zmanim (Jewish calendar information).",
+    "description": "Displays daily Jewish calendar information.",
     "issues": [],
     "stars": 0,
     "hasGithubIssues": false
@@ -14388,11 +14388,11 @@
   {
     "name": "MMM-Zmanim",
     "category": "Religion",
-    "url": "https://github.com/shmulyeng/MMM-Zmanim",
-    "id": "shmulyeng/MMM-Zmanim",
-    "maintainer": "shmulyeng",
+    "url": "https://github.com/supermem613/MMM-Zmanim",
+    "id": "supermem613/MMM-Zmanim",
+    "maintainer": "supermem613",
     "maintainerURL": "",
-    "description": "Displays daily Jewish calendar information.",
+    "description": "Displays Zmanim (Jewish calendar information).",
     "issues": [],
     "stars": 0,
     "hasGithubIssues": false

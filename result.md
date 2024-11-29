@@ -1,6 +1,6 @@
 # Result of the module analysis
 
-Last update: 2024-11-28T17:38:51+01:00
+Last update: 2024-11-29T05:38:29+01:00
 
 ## Statistics
 
@@ -9,7 +9,7 @@ Last update: 2024-11-28T17:38:51+01:00
 | modules analyzed     |   1206   |
 | maintainer           |    649   |
 | modules with issues  |   1193   |
-| issues               |   6917   |
+| issues               |   6916   |
 | modules at github    |   1096   |
 | modules at gitlab    |     10   |
 | modules at bitbucket |      1   |
@@ -5965,10 +5965,9 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
 ### [MMM-Netatmo by CFenner](https://github.com/CFenner/MMM-Netatmo)
 
 1. Recommendation: No lint script found in package.json. It is recommended to add one.
-2. Information: There are updates for 3 dependencie(s):
-   - less           4.2.0  →    4.2.1
-   - neostandard   0.11.5  →   0.11.9
-   - stylelint    16.10.0  →  16.11.0
+2. Information: There are updates for 2 dependencie(s):
+   - less          4.2.0  →   4.2.1
+   - neostandard  0.11.5  →  0.11.9
 
 
 ### [MMM-Netatmo-Presence by AgP42](https://github.com/AgP42/MMM-Netatmo-Presence)
@@ -10318,9 +10317,13 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
 
 ### [MMM-WMATA by btoconnor](https://github.com/btoconnor/MMM-WMATA)
 
-1. `package.json` issue: No repository field.
-2. There are no keywords in 'package.json'. We would use them as tags on the module list page.
-3. Recommendation: Found `new Date()` in file `MMM-WMATA.js`: Consider replacing it by `new Date(Date.now())`. It's helpful for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
+1. Recommendation: Found `new Date()` in file `MMM-WMATA.js`: Consider replacing it by `new Date(Date.now())`. It's helpful for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
+2. ESLint issues:
+   - MMM-WMATA.js: Line 17, Column 27: '_datetime' is defined but never used. (rule: no-unused-vars)
+   - MMM-WMATA.js: Line 17, Column 38: '_stationCode' is defined but never used. (rule: no-unused-vars)
+   - MMM-WMATA.js: Line 18, Column 36: '_incidentType' is defined but never used. (rule: no-unused-vars)
+   - MMM-WMATA.js: Line 18, Column 51: '_route' is defined but never used. (rule: no-unused-vars)
+
 
 ### [MMM-WordGenius by drventure](https://github.com/drventure/MMM-WordGenius)
 
@@ -10580,7 +10583,7 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
 2. Recommendation: Found `axios` in file `node_helper.js`: Replace it with built-in fetch.
 3. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
 
-### [MMM-Zmanim by supermem613](https://github.com/supermem613/MMM-Zmanim)
+### [MMM-Zmanim by shmulyeng](https://github.com/shmulyeng/MMM-Zmanim)
 
 1. `package.json` issue: No description
 2. `package.json` issue: No repository field.
@@ -10594,7 +10597,7 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
 10. Found directory `node_modules`. This shouldn't be uploaded. Add `node_modules/`to `.gitignore`.
 11. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
 
-### [MMM-Zmanim by shmulyeng](https://github.com/shmulyeng/MMM-Zmanim)
+### [MMM-Zmanim by supermem613](https://github.com/supermem613/MMM-Zmanim)
 
 1. `package.json` issue: No description
 2. `package.json` issue: No repository field.

@@ -868,7 +868,7 @@
     "maintainerURL": "",
     "description": "Display stock prices and charts using Yahoo Finance API.",
     "issues": true,
-    "stars": 38,
+    "stars": 39,
     "license": "MIT",
     "tags": [
       "stock",
@@ -922,7 +922,7 @@
     "maintainerURL": "",
     "description": "Show fullscreen slideshow in background from images in a local folder. Great for a photo frame.",
     "issues": true,
-    "stars": 147,
+    "stars": 149,
     "license": "MIT",
     "tags": [
       "background",
@@ -11392,7 +11392,7 @@
     ],
     "image": ".github-preview.bubbles.jpg",
     "defaultSortWeight": 0,
-    "lastCommit": "2024-11-26T21:27:56+00:00"
+    "lastCommit": "2024-11-28T17:29:44+00:00"
   },
   {
     "name": "MMM-Netatmo-Presence",
@@ -17565,7 +17565,7 @@
     ],
     "image": "screenshots-MMM-text-clock-screenshot-compact.jpg",
     "defaultSortWeight": 5,
-    "lastCommit": "2024-11-28T13:01:51+01:00"
+    "lastCommit": "2024-11-29T01:13:32+01:00"
   },
   {
     "name": "MMM-TextPerWeek",
@@ -19704,9 +19704,14 @@
     "issues": true,
     "stars": 0,
     "license": "MIT",
+    "tags": [
+      "public transport",
+      "wmata",
+      "washington dc"
+    ],
     "image": "MMM-WMATA-screenshot.jpg",
-    "defaultSortWeight": 2,
-    "lastCommit": "2024-11-28T11:36:27-05:00"
+    "defaultSortWeight": 1,
+    "lastCommit": "2024-11-29T00:37:44+01:00"
   },
   {
     "name": "MMM-WordGenius",
@@ -20226,22 +20231,6 @@
   {
     "name": "MMM-Zmanim",
     "category": "Religion",
-    "url": "https://github.com/supermem613/MMM-Zmanim",
-    "id": "supermem613/MMM-Zmanim",
-    "maintainer": "supermem613",
-    "maintainerURL": "",
-    "description": "Displays Zmanim (Jewish calendar information).",
-    "issues": true,
-    "stars": 0,
-    "hasGithubIssues": false,
-    "license": "ISC",
-    "image": "alternateScreenshot.jpg",
-    "defaultSortWeight": 11,
-    "lastCommit": "2024-11-02T19:15:33-04:00"
-  },
-  {
-    "name": "MMM-Zmanim",
-    "category": "Religion",
     "url": "https://github.com/shmulyeng/MMM-Zmanim",
     "id": "shmulyeng/MMM-Zmanim",
     "maintainer": "shmulyeng",
@@ -20254,5 +20243,21 @@
     "image": "alternateScreenshot.jpg",
     "defaultSortWeight": 12,
     "lastCommit": "2020-12-06T21:27:43-05:00"
+  },
+  {
+    "name": "MMM-Zmanim",
+    "category": "Religion",
+    "url": "https://github.com/supermem613/MMM-Zmanim",
+    "id": "supermem613/MMM-Zmanim",
+    "maintainer": "supermem613",
+    "maintainerURL": "",
+    "description": "Displays Zmanim (Jewish calendar information).",
+    "issues": true,
+    "stars": 0,
+    "hasGithubIssues": false,
+    "license": "ISC",
+    "image": "alternateScreenshot.jpg",
+    "defaultSortWeight": 11,
+    "lastCommit": "2024-11-02T19:15:33-04:00"
   }
 ]
