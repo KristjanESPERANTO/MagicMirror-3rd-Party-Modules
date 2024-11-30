@@ -1,6 +1,6 @@
 # Result of the module analysis
 
-Last update: 2024-11-30T05:38:58+01:00
+Last update: 2024-11-30T17:38:32+01:00
 
 ## Statistics
 
@@ -754,7 +754,7 @@ Last update: 2024-11-30T05:38:58+01:00
    - eslint                              ^8.57.0  →   ^9.16.0
    - eslint-plugin-prettier               ^5.1.3  →    ^5.2.1
    - prettier                             ^3.2.5  →    ^3.4.1
-   - rollup                               ^4.9.6  →   ^4.27.4
+   - rollup                               ^4.9.6  →   ^4.28.0
    - rollup-plugin-banner2                ^1.2.2  →    ^1.3.0
    - rxjs                                 ^7.5.5  →    ^7.8.1
    - typescript                           ^5.3.3  →    ^5.7.2
@@ -4071,7 +4071,7 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
    - eslint                            ^8.56.0  →  ^9.16.0
    - eslint-plugin-prettier             ^5.1.3  →   ^5.2.1
    - prettier                           ^3.2.4  →   ^3.4.1
-   - rollup                             ^4.9.6  →  ^4.27.4
+   - rollup                             ^4.9.6  →  ^4.28.0
    - rollup-plugin-banner2              ^1.2.2  →   ^1.3.0
    - typescript                         ^5.3.3  →   ^5.7.2
    - yahoo-finance2                    ^2.11.3  →  ^2.13.2
@@ -6216,7 +6216,7 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
    - @typescript-eslint/eslint-plugin  ^6.20.0  →  ^8.16.0
    - eslint                            ^8.56.0  →  ^9.16.0
    - prettier                           ^3.2.5  →   ^3.4.1
-   - rollup                             ^4.9.6  →  ^4.27.4
+   - rollup                             ^4.9.6  →  ^4.28.0
    - rollup-plugin-banner2              ^1.2.2  →   ^1.3.0
    - typescript                         ^5.3.3  →   ^5.7.2
 
@@ -7575,7 +7575,7 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
    - @rollup/plugin-typescript    ^11.1.6  →  ^12.1.1
    - eslint                        ^9.9.1  →  ^9.16.0
    - prettier                      ^3.3.3  →   ^3.4.1
-   - rollup                       ^4.21.1  →  ^4.27.4
+   - rollup                       ^4.21.1  →  ^4.28.0
    - typescript                    ^5.5.4  →   ^5.7.2
    - typescript-eslint             ^8.3.0  →  ^8.16.0
 
