@@ -902,7 +902,7 @@
     "maintainer": "bugsounet",
     "maintainerURL": "https://wiki.bugsounet.fr",
     "description": "Change the default Google Assistant background to your own or with animated gifs for each status of the assistant.<br /><br />This module has been defined to work only with MMM-GoogleAssistant.",
-    "issues": false,
+    "issues": true,
     "stars": 1,
     "license": "MIT",
     "tags": [
@@ -910,7 +910,7 @@
       "background"
     ],
     "image": "cortana-confirmation.jpg",
-    "defaultSortWeight": 3,
+    "defaultSortWeight": 4,
     "lastCommit": "2024-11-23T12:14:04+01:00"
   },
   {
@@ -1564,7 +1564,7 @@
     "maintainer": "bugsounet",
     "maintainerURL": "https://wiki.bugsounet.fr",
     "description": "Display any internet web page like a real browser in fullscreen.<br /><br />This module has been defined to work only with MMM-GoogleAssistant.",
-    "issues": false,
+    "issues": true,
     "stars": 1,
     "license": "MIT",
     "tags": [
@@ -1572,7 +1572,7 @@
       "browser"
     ],
     "image": "EXT-Browser.jpg",
-    "defaultSortWeight": 3,
+    "defaultSortWeight": 4,
     "lastCommit": "2024-11-23T12:18:46+01:00"
   },
   {
@@ -1781,8 +1781,8 @@
       "calext3"
     ],
     "image": "screenshot.jpg",
-    "defaultSortWeight": 1,
-    "lastCommit": "2024-09-25T16:36:10+02:00"
+    "defaultSortWeight": 0,
+    "lastCommit": "2024-11-29T21:43:00+01:00"
   },
   {
     "name": "MMM-CalendarExt3Agenda",
@@ -2191,7 +2191,7 @@
     "maintainerURL": "",
     "description": "Directly cast from the MagicMirror\u00b2 server to a chromecast.",
     "issues": true,
-    "stars": 45,
+    "stars": 46,
     "license": "MIT",
     "defaultSortWeight": 8,
     "lastCommit": "2023-03-05T20:51:52+01:00"
@@ -5274,7 +5274,7 @@
     "maintainer": "bugsounet",
     "maintainerURL": "https://wiki.bugsounet.fr",
     "description": "Display Channel from French Internet Provider: Free.<br /><br />This module has been defined to work only with MMM-GoogleAssistant.",
-    "issues": false,
+    "issues": true,
     "stars": 1,
     "license": "MIT",
     "tags": [
@@ -5284,7 +5284,7 @@
       "tv"
     ],
     "image": "resources-FreeboxTV.jpg",
-    "defaultSortWeight": 2,
+    "defaultSortWeight": 3,
     "lastCommit": "2024-11-23T12:44:35+01:00"
   },
   {
@@ -5712,7 +5712,7 @@
     "maintainer": "bugsounet",
     "maintainerURL": "",
     "description": "This module allows to add a glass effect to MagicMirror\u00b2 modules.",
-    "issues": false,
+    "issues": true,
     "stars": 8,
     "license": "MIT",
     "tags": [
@@ -5720,7 +5720,7 @@
       "background"
     ],
     "image": "Screenshot.jpg",
-    "defaultSortWeight": -1,
+    "defaultSortWeight": 0,
     "lastCommit": "2024-11-20T20:56:44+01:00"
   },
   {
@@ -5836,7 +5836,7 @@
       "smart home"
     ],
     "image": "resources-previewFS.jpg",
-    "defaultSortWeight": -2,
+    "defaultSortWeight": -1,
     "lastCommit": "2024-11-23T12:52:28+01:00"
   },
   {
@@ -8078,7 +8078,7 @@
     "maintainer": "bugsounet",
     "maintainerURL": "https://wiki.bugsounet.fr",
     "description": "Control your mirror with a keyboard.<br /><br />This module has been defined to work only with MMM-GoogleAssistant.",
-    "issues": false,
+    "issues": true,
     "stars": 2,
     "license": "MIT",
     "tags": [
@@ -8086,7 +8086,7 @@
       "keyboard"
     ],
     "image": "resources-keyboard.jpg",
-    "defaultSortWeight": 2,
+    "defaultSortWeight": 3,
     "lastCommit": "2024-11-23T13:19:18+01:00"
   },
   {
@@ -9343,7 +9343,7 @@
     "maintainer": "bugsounet",
     "maintainerURL": "",
     "description": "[FR] Affiche les informations de pr\u00e9visions actuelles, horaires et quotidiennes \u00e0 l'aide des donn\u00e9es de l'API M\u00e9t\u00e9oFrance.<br />[EN] Displays current, hourly and daily forecast information using data from MeteoFrance API.",
-    "issues": false,
+    "issues": true,
     "stars": 1,
     "license": "MIT",
     "tags": [
@@ -11392,7 +11392,7 @@
     ],
     "image": ".github-preview.bubbles.jpg",
     "defaultSortWeight": 0,
-    "lastCommit": "2024-11-28T17:29:44+00:00"
+    "lastCommit": "2024-11-29T21:59:00+00:00"
   },
   {
     "name": "MMM-Netatmo-Presence",
@@ -11437,7 +11437,7 @@
     "maintainer": "bugsounet",
     "maintainerURL": "",
     "description": "This module display your Netatmo Thermostat informations.",
-    "issues": false,
+    "issues": true,
     "stars": 2,
     "license": "MIT",
     "tags": [
@@ -12836,7 +12836,7 @@
     ],
     "image": "example.jpg",
     "defaultSortWeight": 1,
-    "lastCommit": "2024-09-23T14:10:49-07:00"
+    "lastCommit": "2024-11-29T13:39:53-06:00"
   },
   {
     "name": "EXT-Pages",
@@ -15266,7 +15266,7 @@
       "french"
     ],
     "image": "Screenshot.jpg",
-    "defaultSortWeight": 1,
+    "defaultSortWeight": 2,
     "lastCommit": "2024-11-20T22:06:13+01:00"
   },
   {
@@ -16663,7 +16663,7 @@
     "maintainer": "bugsounet",
     "maintainerURL": "https://wiki.bugsounet.fr",
     "description": "This plugin show current spotify playback of any devices.<br /><br />This module has been defined to work only with MMM-GoogleAssistant.",
-    "issues": false,
+    "issues": true,
     "stars": 3,
     "license": "MIT",
     "tags": [
@@ -16671,7 +16671,7 @@
       "spotify"
     ],
     "image": "components-Spotify-Logo.jpg",
-    "defaultSortWeight": 3,
+    "defaultSortWeight": 4,
     "lastCommit": "2024-11-24T09:26:40+01:00"
   },
   {
@@ -17371,7 +17371,7 @@
     "maintainer": "bugsounet",
     "maintainerURL": "https://wiki.bugsounet.fr",
     "description": "You can remote-control plugins within Telegram.<br /><br />This module has been defined to work only with MMM-GoogleAssistant.",
-    "issues": false,
+    "issues": true,
     "stars": 2,
     "license": "MIT",
     "tags": [
@@ -17379,7 +17379,7 @@
       "telegram"
     ],
     "image": "screenshot-sc_fullsize.jpg",
-    "defaultSortWeight": 3,
+    "defaultSortWeight": 4,
     "lastCommit": "2024-11-24T09:32:10+01:00"
   },
   {
@@ -18514,7 +18514,7 @@
       "update"
     ],
     "image": "resources-update.jpg",
-    "defaultSortWeight": 4,
+    "defaultSortWeight": 5,
     "lastCommit": "2024-11-19T20:37:11+01:00"
   },
   {
@@ -18829,7 +18829,7 @@
     "maintainer": "bugsounet",
     "maintainerURL": "https://wiki.bugsounet.fr",
     "description": "This plugin play wanted media on MagicMirror\u00b2 with VLC.<br /><br />This module has been defined to work only with MMM-GoogleAssistant.",
-    "issues": false,
+    "issues": true,
     "stars": 0,
     "license": "MIT",
     "tags": [
@@ -18839,7 +18839,7 @@
       "player"
     ],
     "image": "vlc-logo.jpg",
-    "defaultSortWeight": 2,
+    "defaultSortWeight": 3,
     "lastCommit": "2024-11-19T20:37:00+01:00"
   },
   {
@@ -18968,7 +18968,7 @@
     "maintainer": "bugsounet",
     "maintainerURL": "https://wiki.bugsounet.fr",
     "description": "Control the sound volume level of your mirror.<br /><br />This module has been defined to work only with MMM-GoogleAssistant.",
-    "issues": false,
+    "issues": true,
     "stars": 4,
     "license": "MIT",
     "tags": [
@@ -18978,7 +18978,7 @@
       "googleassistant"
     ],
     "image": "resources-screenshot.jpg",
-    "defaultSortWeight": 3,
+    "defaultSortWeight": 4,
     "lastCommit": "2024-11-19T20:55:59+01:00"
   },
   {
@@ -19527,7 +19527,7 @@
       "notification",
       "warning"
     ],
-    "defaultSortWeight": 4,
+    "defaultSortWeight": 5,
     "lastCommit": "2024-11-19T23:42:08+01:00"
   },
   {
@@ -20083,7 +20083,7 @@
     "maintainer": "bugsounet",
     "maintainerURL": "https://wiki.bugsounet.fr",
     "description": "This plugins allows to play YouTube video.<br /><br />This module has been defined to work only with MMM-GoogleAssistant.",
-    "issues": false,
+    "issues": true,
     "stars": 3,
     "license": "MIT",
     "tags": [
@@ -20091,7 +20091,7 @@
       "youtube"
     ],
     "image": "resources-Screenshot1.jpg",
-    "defaultSortWeight": 3,
+    "defaultSortWeight": 4,
     "lastCommit": "2024-11-19T23:57:45+01:00"
   },
   {
@@ -20135,7 +20135,7 @@
     "maintainer": "bugsounet",
     "maintainerURL": "https://wiki.bugsounet.fr",
     "description": "Allow to cast a YouTube video on MagicMirror\u00b2.<br /><br />This module has been defined to work only with MMM-GoogleAssistant.",
-    "issues": false,
+    "issues": true,
     "stars": 3,
     "license": "MIT",
     "tags": [
@@ -20144,7 +20144,7 @@
       "youtube"
     ],
     "image": "resources-Screenshot1.jpg",
-    "defaultSortWeight": 3,
+    "defaultSortWeight": 4,
     "lastCommit": "2024-11-20T00:11:57+01:00"
   },
   {

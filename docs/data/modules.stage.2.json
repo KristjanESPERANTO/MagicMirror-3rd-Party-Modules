@@ -1521,7 +1521,7 @@
     "maintainerURL": "",
     "description": "Directly cast from the MagicMirror² server to a chromecast.",
     "issues": [],
-    "stars": 45,
+    "stars": 46,
     "license": "MIT"
   },
   {
