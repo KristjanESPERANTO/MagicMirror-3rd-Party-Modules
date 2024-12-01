@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "2024-11-30T16:30:27.467Z",
+  "lastUpdate": "2024-12-01T04:30:28.293Z",
   "repositories": [
     {
       "id": "0lek/MMM-socialbicycles",
@@ -661,7 +661,7 @@
     },
     {
       "id": "andrecarlucci/MMM-DailyDilbert",
-      "gitHubDataLastUpdate": "2024-11-12T16:30:33.082Z",
+      "gitHubDataLastUpdate": "2024-12-01T04:30:25.477Z",
       "gitHubData": {
         "issues": 3,
         "stars": 10,
@@ -745,7 +745,7 @@
     },
     {
       "id": "anthpham/MMM-DailyBuddhismWisdom",
-      "gitHubDataLastUpdate": "2024-11-12T16:30:30.511Z",
+      "gitHubDataLastUpdate": "2024-12-01T04:30:25.027Z",
       "gitHubData": {
         "issues": 1,
         "stars": 3,
@@ -801,7 +801,7 @@
     },
     {
       "id": "arthurgarzajr/MMM-DailyBibleVerse",
-      "gitHubDataLastUpdate": "2024-11-12T16:30:30.125Z",
+      "gitHubDataLastUpdate": "2024-12-01T04:30:24.647Z",
       "gitHubData": {
         "issues": 11,
         "stars": 27,
@@ -1333,7 +1333,7 @@
     },
     {
       "id": "berryerlouis/MMM-D2L",
-      "gitHubDataLastUpdate": "2024-11-12T16:30:26.344Z",
+      "gitHubDataLastUpdate": "2024-12-01T04:30:21.008Z",
       "gitHubData": {
         "issues": 0,
         "stars": 0,
@@ -1389,7 +1389,7 @@
     },
     {
       "id": "bibaldo/MMM-CuandoLlega",
-      "gitHubDataLastUpdate": "2024-11-12T16:30:19.848Z",
+      "gitHubDataLastUpdate": "2024-12-01T04:30:16.366Z",
       "gitHubData": {
         "issues": 0,
         "stars": 2,
@@ -1515,7 +1515,7 @@
     },
     {
       "id": "Blastitt/DailyXKCD",
-      "gitHubDataLastUpdate": "2024-11-13T04:30:11.416Z",
+      "gitHubDataLastUpdate": "2024-12-01T04:30:27.415Z",
       "gitHubData": {
         "issues": 4,
         "stars": 52,
@@ -1753,7 +1753,7 @@
     },
     {
       "id": "brucetony/MMM-Dad-Jokes",
-      "gitHubDataLastUpdate": "2024-11-12T16:30:26.880Z",
+      "gitHubDataLastUpdate": "2024-12-01T04:30:21.647Z",
       "gitHubData": {
         "issues": 0,
         "stars": 8,
@@ -2999,7 +2999,7 @@
     },
     {
       "id": "consus2903/MMM-CurrencyArg",
-      "gitHubDataLastUpdate": "2024-11-12T16:30:20.334Z",
+      "gitHubDataLastUpdate": "2024-12-01T04:30:16.887Z",
       "gitHubData": {
         "issues": 1,
         "stars": 2,
@@ -3461,10 +3461,10 @@
     },
     {
       "id": "dathbe/MMM-CustomText",
-      "gitHubDataLastUpdate": "2024-11-12T16:30:24.052Z",
+      "gitHubDataLastUpdate": "2024-12-01T04:30:18.626Z",
       "gitHubData": {
         "issues": 0,
-        "stars": 1,
+        "stars": 2,
         "license": "MIT",
         "archived": false,
         "disabled": false,
@@ -4063,7 +4063,7 @@
     },
     {
       "id": "dsouzadrian/MMM-CricketScores",
-      "gitHubDataLastUpdate": "2024-11-12T16:30:17.876Z",
+      "gitHubDataLastUpdate": "2024-12-01T04:30:14.534Z",
       "gitHubData": {
         "issues": 0,
         "stars": 2,
@@ -4399,7 +4399,7 @@
     },
     {
       "id": "eouia/MMM-DailyAlarm",
-      "gitHubDataLastUpdate": "2024-11-12T16:30:29.691Z",
+      "gitHubDataLastUpdate": "2024-12-01T04:30:24.201Z",
       "gitHubData": {
         "issues": 1,
         "stars": 10,
@@ -5603,7 +5603,7 @@
     },
     {
       "id": "gueguet/MMM-CyberSecurityNews",
-      "gitHubDataLastUpdate": "2024-11-12T16:30:25.104Z",
+      "gitHubDataLastUpdate": "2024-12-01T04:30:19.596Z",
       "gitHubData": {
         "issues": 1,
         "stars": 10,
@@ -6247,7 +6247,7 @@
     },
     {
       "id": "jacquesCedric/MMM-darksky-hourly",
-      "gitHubDataLastUpdate": "2024-11-13T04:30:11.888Z",
+      "gitHubDataLastUpdate": "2024-12-01T04:30:27.871Z",
       "gitHubData": {
         "issues": 1,
         "stars": 11,
@@ -6499,10 +6499,10 @@
     },
     {
       "id": "jclarke0000/MMM-DarkSkyForecast",
-      "gitHubDataLastUpdate": "2024-11-13T04:30:12.256Z",
+      "gitHubDataLastUpdate": "2024-12-01T04:30:28.239Z",
       "gitHubData": {
         "issues": 29,
-        "stars": 84,
+        "stars": 85,
         "license": null,
         "archived": false,
         "disabled": false,
@@ -7045,10 +7045,10 @@
     },
     {
       "id": "jpcaldwell30/MMM-CustomMessage",
-      "gitHubDataLastUpdate": "2024-11-12T16:30:21.784Z",
+      "gitHubDataLastUpdate": "2024-12-01T04:30:18.153Z",
       "gitHubData": {
         "issues": 0,
-        "stars": 1,
+        "stars": 0,
         "license": "MIT",
         "archived": false,
         "disabled": false,
@@ -7885,7 +7885,7 @@
     },
     {
       "id": "kymeyer/MMM-daikin",
-      "gitHubDataLastUpdate": "2024-11-12T16:30:27.989Z",
+      "gitHubDataLastUpdate": "2024-12-01T04:30:22.639Z",
       "gitHubData": {
         "issues": 0,
         "stars": 2,
@@ -8529,7 +8529,7 @@
     },
     {
       "id": "matt-thurling/MMM-DaikinAirbase",
-      "gitHubDataLastUpdate": "2024-11-12T16:30:28.564Z",
+      "gitHubDataLastUpdate": "2024-12-01T04:30:23.207Z",
       "gitHubData": {
         "issues": 0,
         "stars": 1,
@@ -8585,9 +8585,9 @@
     },
     {
       "id": "matteodanelli/MMM-cryptocurrency",
-      "gitHubDataLastUpdate": "2024-11-12T16:30:18.838Z",
+      "gitHubDataLastUpdate": "2024-12-01T04:30:15.410Z",
       "gitHubData": {
-        "issues": 16,
+        "issues": 17,
         "stars": 96,
         "license": "MIT",
         "archived": false,
@@ -9355,7 +9355,7 @@
     },
     {
       "id": "MMRIZE/MMM-CustomElementTime",
-      "gitHubDataLastUpdate": "2024-11-12T16:30:21.240Z",
+      "gitHubDataLastUpdate": "2024-12-01T04:30:17.717Z",
       "gitHubData": {
         "issues": 0,
         "stars": 2,
@@ -9775,7 +9775,7 @@
     },
     {
       "id": "MStoltzfus/MMM-DailyUnreachedPeopleGroup",
-      "gitHubDataLastUpdate": "2024-11-12T16:30:41.598Z",
+      "gitHubDataLastUpdate": "2024-12-01T04:30:26.920Z",
       "gitHubData": {
         "issues": 0,
         "stars": 2,
@@ -10615,7 +10615,7 @@
     },
     {
       "id": "NateDee/MMM-CTA",
-      "gitHubDataLastUpdate": "2024-11-12T16:30:19.387Z",
+      "gitHubDataLastUpdate": "2024-12-01T04:30:15.845Z",
       "gitHubData": {
         "issues": 9,
         "stars": 7,
@@ -10769,7 +10769,7 @@
     },
     {
       "id": "Nickiroo/MMM-DailyACVillager",
-      "gitHubDataLastUpdate": "2024-11-12T16:30:29.234Z",
+      "gitHubDataLastUpdate": "2024-12-01T04:30:23.706Z",
       "gitHubData": {
         "issues": 0,
         "stars": 2,
@@ -11161,7 +11161,7 @@
     },
     {
       "id": "NolanKingdon/MMM-DailyPokemon",
-      "gitHubDataLastUpdate": "2024-11-12T16:30:33.648Z",
+      "gitHubDataLastUpdate": "2024-12-01T04:30:25.914Z",
       "gitHubData": {
         "issues": 2,
         "stars": 24,
@@ -11287,9 +11287,9 @@
     },
     {
       "id": "oemel09/MMM-DailyPower",
-      "gitHubDataLastUpdate": "2024-11-12T16:30:34.103Z",
+      "gitHubDataLastUpdate": "2024-12-01T04:30:26.368Z",
       "gitHubData": {
-        "issues": 0,
+        "issues": 1,
         "stars": 1,
         "license": null,
         "archived": false,
@@ -12589,7 +12589,7 @@
     },
     {
       "id": "RichieCZ/MMM-CzechPost",
-      "gitHubDataLastUpdate": "2024-11-12T16:30:25.925Z",
+      "gitHubDataLastUpdate": "2024-12-01T04:30:20.442Z",
       "gitHubData": {
         "issues": 0,
         "stars": 1,
@@ -14031,7 +14031,7 @@
     },
     {
       "id": "spitzlbergerj/MMM-Currentweather-MQTT",
-      "gitHubDataLastUpdate": "2024-11-12T16:30:20.801Z",
+      "gitHubDataLastUpdate": "2024-12-01T04:30:17.295Z",
       "gitHubData": {
         "issues": 1,
         "stars": 3,
@@ -14983,7 +14983,7 @@
     },
     {
       "id": "timophey/MMM-Cronixie",
-      "gitHubDataLastUpdate": "2024-11-12T16:30:18.403Z",
+      "gitHubDataLastUpdate": "2024-12-01T04:30:15.038Z",
       "gitHubData": {
         "issues": 0,
         "stars": 4,
@@ -16019,7 +16019,7 @@
     },
     {
       "id": "wctimmer/MMM-DagelijksWoord",
-      "gitHubDataLastUpdate": "2024-11-12T16:30:27.442Z",
+      "gitHubDataLastUpdate": "2024-12-01T04:30:22.181Z",
       "gitHubData": {
         "issues": 0,
         "stars": 0,
@@ -16061,7 +16061,7 @@
     },
     {
       "id": "werthdavid/MMM-CyanideHappiness",
-      "gitHubDataLastUpdate": "2024-11-12T16:30:24.610Z",
+      "gitHubDataLastUpdate": "2024-12-01T04:30:19.082Z",
       "gitHubData": {
         "issues": 0,
         "stars": 3,

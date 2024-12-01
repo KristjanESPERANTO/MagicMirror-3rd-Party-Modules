@@ -1,6 +1,6 @@
 # Result of the module analysis
 
-Last update: 2024-11-30T17:38:32+01:00
+Last update: 2024-12-01T05:38:29+01:00
 
 ## Statistics
 
@@ -9,7 +9,7 @@ Last update: 2024-11-30T17:38:32+01:00
 | modules analyzed     |   1206   |
 | maintainer           |    649   |
 | modules with issues  |   1206   |
-| issues               |   6934   |
+| issues               |   6931   |
 | modules at github    |   1096   |
 | modules at gitlab    |     10   |
 | modules at bitbucket |      1   |
@@ -909,14 +909,11 @@ Last update: 2024-11-30T17:38:32+01:00
 
 ### [MMM-CalDAV by MMRIZE](https://github.com/MMRIZE/MMM-CalDAV)
 
-1. No image found.
-2. Recommendation: Found `new Date()` in file `node_helper.js`: Consider replacing it by `new Date(Date.now())`. It's helpful for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
-3. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
-4. Information: There are updates for 4 dependencie(s):
-   - dotenv       ^16.3.1  →   ^16.4.5
-   - googleapis  ^128.0.0  →  ^144.0.0
-   - open          ^9.1.0  →   ^10.1.0
-   - tsdav         ^2.0.7  →    ^2.1.2
+1. ESLint issues:
+   - node_helper.js: Line 3, Column 20: 'DAVNamespace' is assigned a value but never used. (rule: no-unused-vars)
+   - node_helper.js: Line 108, Column 53: Unsafe usage of optional chaining. If it short-circuits with 'undefined' the evaluation will throw TypeError. (rule: no-unsafe-optional-chaining)
+   - node_helper.js: Line 164, Column 7: Unsafe usage of ReturnStatement. (rule: no-unsafe-finally)
+   - node_helper.js: Line 177, Column 53: 'next' is defined but never used. (rule: no-unused-vars)
 
 
 ### [MMM-CalendarExt2 by MMM-CalendarExt2](https://github.com/MMM-CalendarExt2/MMM-CalendarExt2)
@@ -930,7 +927,10 @@ Last update: 2024-11-30T17:38:32+01:00
 ### [MMM-CalendarExt3 by MMRIZE](https://github.com/MMRIZE/MMM-CalendarExt3)
 
 1. Recommendation: Found `new Date()` in file `MMM-CalendarExt3.js`: Consider replacing it by `new Date(Date.now())`. It's helpful for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
-2. Recommendation: No lint script found in package.json. It is recommended to add one.
+2. Information: There are updates for 2 dependencie(s):
+   - @eslint/js  ^9.15.0  →  ^9.16.0
+   - eslint      ^9.15.0  →  ^9.16.0
+
 
 ### [MMM-CalendarExt3Agenda by MMRIZE](https://github.com/MMRIZE/MMM-CalendarExt3Agenda)
 

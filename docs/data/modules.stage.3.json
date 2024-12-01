@@ -1698,14 +1698,13 @@
     "maintainer": "MMRIZE",
     "maintainerURL": "",
     "description": "CalDav Parser to convert to iCal format.",
-    "issues": [
-      "No image found."
-    ],
+    "issues": [],
     "stars": 8,
     "license": "MIT",
     "tags": [
       "caldav"
-    ]
+    ],
+    "image": "screenshot.jpg"
   },
   {
     "name": "MMM-CalendarExt2",
@@ -2847,7 +2846,7 @@
     "maintainerURL": "",
     "description": "Post a message to your mirror either by MagicMirror API post or manual update (entering text onscreen).",
     "issues": [],
-    "stars": 1,
+    "stars": 0,
     "license": "MIT",
     "tags": [
       "text",
@@ -2864,7 +2863,7 @@
     "maintainerURL": "",
     "description": "Display a custom message on your mirror, updatable via notification.  Similar to MMM-CustomMessage, but allows multiple instances.",
     "issues": [],
-    "stars": 1,
+    "stars": 2,
     "license": "MIT",
     "tags": [
       "custom",
@@ -3189,7 +3188,7 @@
       "There are no keywords in 'package.json'. We would use them as tags on the module list page."
     ],
     "outdated": "Deprecated. DarkSky API no longer works since 2023-03-31.",
-    "stars": 84,
+    "stars": 85,
     "license": "MIT",
     "image": "icons-iconsets.jpg"
   },

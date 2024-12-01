@@ -1744,8 +1744,9 @@
     "tags": [
       "caldav"
     ],
-    "defaultSortWeight": 3,
-    "lastCommit": "2023-12-29T21:34:11+01:00"
+    "image": "screenshot.jpg",
+    "defaultSortWeight": 0,
+    "lastCommit": "2024-11-30T21:32:06+01:00"
   },
   {
     "name": "MMM-CalendarExt2",
@@ -1782,7 +1783,7 @@
     ],
     "image": "screenshot.jpg",
     "defaultSortWeight": 0,
-    "lastCommit": "2024-11-30T16:06:28+01:00"
+    "lastCommit": "2024-11-30T21:36:09+01:00"
   },
   {
     "name": "MMM-CalendarExt3Agenda",
@@ -2905,7 +2906,7 @@
     "maintainerURL": "",
     "description": "Post a message to your mirror either by MagicMirror API post or manual update (entering text onscreen).",
     "issues": true,
-    "stars": 1,
+    "stars": 0,
     "license": "MIT",
     "tags": [
       "text",
@@ -2924,7 +2925,7 @@
     "maintainerURL": "",
     "description": "Display a custom message on your mirror, updatable via notification.  Similar to MMM-CustomMessage, but allows multiple instances.",
     "issues": true,
-    "stars": 1,
+    "stars": 2,
     "license": "MIT",
     "tags": [
       "custom",
@@ -3243,7 +3244,7 @@
     "description": "A weather module that displays current, hourly and daily forecast information using data from the Dark Sky API.",
     "issues": false,
     "outdated": "Deprecated. DarkSky API no longer works since 2023-03-31.",
-    "stars": 84,
+    "stars": 85,
     "license": "MIT",
     "image": "icons-iconsets.jpg",
     "defaultSortWeight": 901,
@@ -15248,7 +15249,7 @@
     ],
     "image": "cache-samples-pexels-dan-mooham.jpg",
     "defaultSortWeight": 4,
-    "lastCommit": "2024-11-09T20:29:08-05:00"
+    "lastCommit": "2024-11-30T17:46:33-05:00"
   },
   {
     "name": "MMM-Saint",
@@ -15839,7 +15840,7 @@
     "license": "MIT",
     "image": "example_1.jpg",
     "defaultSortWeight": 3,
-    "lastCommit": "2024-11-20T19:10:12+01:00"
+    "lastCommit": "2024-11-30T18:59:54+01:00"
   },
   {
     "name": "MMM-ShellyStatusTable",
@@ -15854,7 +15855,7 @@
     "license": "MIT",
     "image": "example_1.jpg",
     "defaultSortWeight": 2,
-    "lastCommit": "2024-11-14T20:19:01+01:00"
+    "lastCommit": "2024-11-30T18:57:54+01:00"
   },
   {
     "name": "MMM-ShipmentTracking",
@@ -20258,6 +20259,6 @@
     "license": "ISC",
     "image": "alternateScreenshot.jpg",
     "defaultSortWeight": 11,
-    "lastCommit": "2024-11-02T19:15:33-04:00"
+    "lastCommit": "2024-11-30T18:41:10-05:00"
   }
 ]
