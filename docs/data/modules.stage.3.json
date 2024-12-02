@@ -3758,7 +3758,7 @@
     "issues": [
       "There is no `package.json`. We need this file to gather information about the module for the module list page."
     ],
-    "stars": 13
+    "stars": 14
   },
   {
     "name": "MMM-DynamicWeather",
@@ -3769,7 +3769,7 @@
     "maintainerURL": "",
     "description": "A heavily configurable module to display different animations based on current weather and show customized event effects.",
     "issues": [],
-    "stars": 30,
+    "stars": 31,
     "license": "MIT",
     "tags": [
       "weather"
@@ -3786,7 +3786,7 @@
     "description": "Watch the sunlit side of Earth as it rotates.",
     "issues": [],
     "outdated": "Abandoned. Developer is no longer active. Missing instructions to install dependency 'request'.",
-    "stars": 60,
+    "stars": 61,
     "license": "MIT",
     "tags": [
       "earth",
@@ -3850,7 +3850,7 @@
     "maintainerURL": "",
     "description": "The easiest way to show pictures on your mirror.",
     "issues": [],
-    "stars": 7,
+    "stars": 8,
     "license": "MIT",
     "tags": [
       "images",
@@ -4020,7 +4020,7 @@
       "There is no `package.json`. We need this file to gather information about the module for the module list page.",
       "No image found."
     ],
-    "stars": 35,
+    "stars": 36,
     "license": "MIT"
   },
   {
@@ -4065,7 +4065,7 @@
     "maintainerURL": "",
     "description": "Visualizes production and consumption of electrical energy in your home. Is meant to be used with solar energy converters and (optional) energy storage systems.",
     "issues": [],
-    "stars": 3,
+    "stars": 4,
     "license": "MIT",
     "tags": [
       "energy",
@@ -5108,7 +5108,7 @@
     "maintainerURL": "",
     "description": "Displays information from the MagicMirror² forum. Like latest posts, unread posts, etc. The module should also work for other NodeBB forums, but it is not tested.",
     "issues": [],
-    "stars": 0,
+    "stars": 3,
     "license": "ISC",
     "tags": [
       "forum",

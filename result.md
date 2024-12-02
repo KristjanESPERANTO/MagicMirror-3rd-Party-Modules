@@ -1,6 +1,6 @@
 # Result of the module analysis
 
-Last update: 2024-12-02T05:38:46+01:00
+Last update: 2024-12-02T17:38:55+01:00
 
 ## Statistics
 
@@ -9,7 +9,7 @@ Last update: 2024-12-02T05:38:46+01:00
 | modules analyzed     |   1206   |
 | maintainer           |    649   |
 | modules with issues  |   1206   |
-| issues               |   6932   |
+| issues               |   6933   |
 | modules at github    |   1096   |
 | modules at gitlab    |     10   |
 | modules at bitbucket |      1   |
@@ -104,6 +104,7 @@ Last update: 2024-12-02T05:38:46+01:00
    - eslint                    ^9.10.0  →   ^9.16.0
    - globals                   ^15.9.0  →  ^15.13.0
 
+2. npm WARN exec The following package was not found and will be installed: npm-deprecated-check@1.2.0
 
 ### [MMM-air-raid-monitor-ua by PavlenkoM](https://github.com/PavlenkoM/MMM-air-raid-monitor-ua)
 

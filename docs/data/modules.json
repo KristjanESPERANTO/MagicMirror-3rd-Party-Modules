@@ -177,7 +177,7 @@
       "trashcollection"
     ],
     "image": "AfvalwijzerScreenshot.jpg",
-    "defaultSortWeight": 0,
+    "defaultSortWeight": 1,
     "lastCommit": "2024-10-09T17:55:17+02:00"
   },
   {
@@ -3811,7 +3811,7 @@
     "maintainerURL": "",
     "description": "Change positions of modules.",
     "issues": true,
-    "stars": 13,
+    "stars": 14,
     "defaultSortWeight": 5,
     "lastCommit": "2018-11-30T14:42:28+02:00"
   },
@@ -3824,7 +3824,7 @@
     "maintainerURL": "",
     "description": "A heavily configurable module to display different animations based on current weather and show customized event effects.",
     "issues": true,
-    "stars": 30,
+    "stars": 31,
     "license": "MIT",
     "tags": [
       "weather"
@@ -3843,7 +3843,7 @@
     "description": "Watch the sunlit side of Earth as it rotates.",
     "issues": false,
     "outdated": "Abandoned. Developer is no longer active. Missing instructions to install dependency 'request'.",
-    "stars": 60,
+    "stars": 61,
     "license": "MIT",
     "tags": [
       "earth",
@@ -3908,7 +3908,7 @@
     "maintainerURL": "",
     "description": "The easiest way to show pictures on your mirror.",
     "issues": true,
-    "stars": 7,
+    "stars": 8,
     "license": "MIT",
     "tags": [
       "images",
@@ -4086,7 +4086,7 @@
     "maintainerURL": "",
     "description": "Embed youtube video and playlist.",
     "issues": true,
-    "stars": 35,
+    "stars": 36,
     "license": "MIT",
     "defaultSortWeight": 9,
     "lastCommit": "2022-02-08T22:37:46+07:00"
@@ -4135,7 +4135,7 @@
     "maintainerURL": "",
     "description": "Visualizes production and consumption of electrical energy in your home. Is meant to be used with solar energy converters and (optional) energy storage systems.",
     "issues": true,
-    "stars": 3,
+    "stars": 4,
     "license": "MIT",
     "tags": [
       "energy",
@@ -5116,7 +5116,7 @@
     ],
     "image": "screenshot.jpg",
     "defaultSortWeight": 4,
-    "lastCommit": "2024-11-10T13:52:29+01:00"
+    "lastCommit": "2024-12-02T10:48:23+01:00"
   },
   {
     "name": "MMM-Fortnite",
@@ -5173,7 +5173,7 @@
     "maintainerURL": "",
     "description": "Displays information from the MagicMirror\u00b2 forum. Like latest posts, unread posts, etc. The module should also work for other NodeBB forums, but it is not tested.",
     "issues": true,
-    "stars": 0,
+    "stars": 3,
     "license": "ISC",
     "tags": [
       "forum",
