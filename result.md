@@ -1,6 +1,6 @@
 # Result of the module analysis
 
-Last update: 2024-12-01T05:38:29+01:00
+Last update: 2024-12-02T05:38:46+01:00
 
 ## Statistics
 
@@ -9,7 +9,7 @@ Last update: 2024-12-01T05:38:29+01:00
 | modules analyzed     |   1206   |
 | maintainer           |    649   |
 | modules with issues  |   1206   |
-| issues               |   6931   |
+| issues               |   6932   |
 | modules at github    |   1096   |
 | modules at gitlab    |     10   |
 | modules at bitbucket |      1   |
@@ -102,7 +102,7 @@ Last update: 2024-12-01T05:38:29+01:00
    - @eslint/js                ^9.10.0  →   ^9.16.0
    - @stylistic/eslint-plugin   ^2.8.0  →   ^2.11.0
    - eslint                    ^9.10.0  →   ^9.16.0
-   - globals                   ^15.9.0  →  ^15.12.0
+   - globals                   ^15.9.0  →  ^15.13.0
 
 
 ### [MMM-air-raid-monitor-ua by PavlenkoM](https://github.com/PavlenkoM/MMM-air-raid-monitor-ua)
@@ -909,7 +909,10 @@ Last update: 2024-12-01T05:38:29+01:00
 
 ### [MMM-CalDAV by MMRIZE](https://github.com/MMRIZE/MMM-CalDAV)
 
-1. ESLint issues:
+1. Information: There are updates for 1 dependencie(s):
+   - globals  ^15.12.0  →  ^15.13.0
+
+2. ESLint issues:
    - node_helper.js: Line 3, Column 20: 'DAVNamespace' is assigned a value but never used. (rule: no-unused-vars)
    - node_helper.js: Line 108, Column 53: Unsafe usage of optional chaining. If it short-circuits with 'undefined' the evaluation will throw TypeError. (rule: no-unsafe-optional-chaining)
    - node_helper.js: Line 164, Column 7: Unsafe usage of ReturnStatement. (rule: no-unsafe-finally)
@@ -918,18 +921,20 @@ Last update: 2024-12-01T05:38:29+01:00
 
 ### [MMM-CalendarExt2 by MMM-CalendarExt2](https://github.com/MMM-CalendarExt2/MMM-CalendarExt2)
 
-1. Information: There are updates for 3 dependencie(s):
+1. Information: There are updates for 4 dependencie(s):
    - @eslint/js   ^9.15.0  →   ^9.16.0
    - eslint       ^9.15.0  →   ^9.16.0
+   - globals     ^15.12.0  →  ^15.13.0
    - stylelint   ^16.10.0  →  ^16.11.0
 
 
 ### [MMM-CalendarExt3 by MMRIZE](https://github.com/MMRIZE/MMM-CalendarExt3)
 
 1. Recommendation: Found `new Date()` in file `MMM-CalendarExt3.js`: Consider replacing it by `new Date(Date.now())`. It's helpful for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
-2. Information: There are updates for 2 dependencie(s):
-   - @eslint/js  ^9.15.0  →  ^9.16.0
-   - eslint      ^9.15.0  →  ^9.16.0
+2. Information: There are updates for 3 dependencie(s):
+   - @eslint/js   ^9.15.0  →   ^9.16.0
+   - eslint       ^9.15.0  →   ^9.16.0
+   - globals     ^15.12.0  →  ^15.13.0
 
 
 ### [MMM-CalendarExt3Agenda by MMRIZE](https://github.com/MMRIZE/MMM-CalendarExt3Agenda)
@@ -1047,11 +1052,12 @@ Last update: 2024-12-01T05:38:29+01:00
 
 ### [MMM-Canteen by KristjanESPERANTO](https://github.com/KristjanESPERANTO/MMM-Canteen)
 
-1. Information: There are updates for 7 dependencie(s):
+1. Information: There are updates for 8 dependencie(s):
    - @eslint/js                 ^9.14.0  →   ^9.16.0
    - @stylistic/eslint-plugin   ^2.10.1  →   ^2.11.0
    - cspell                     ^8.15.7  →   ^8.16.1
    - eslint                     ^9.14.0  →   ^9.16.0
+   - globals                   ^15.12.0  →  ^15.13.0
    - markdownlint-cli           ^0.42.0  →   ^0.43.0
    - prettier                    ^3.3.3  →    ^3.4.1
    - stylelint                 ^16.10.0  →  ^16.11.0
@@ -1080,10 +1086,11 @@ Last update: 2024-12-01T05:38:29+01:00
 
 ### [MMM-Carousel by shbatm](https://github.com/shbatm/MMM-Carousel)
 
-1. Information: There are updates for 6 dependencie(s):
+1. Information: There are updates for 7 dependencie(s):
    - @eslint/js         ^9.15.0  →   ^9.16.0
    - cspell             ^8.16.0  →   ^8.16.1
    - eslint             ^9.15.0  →   ^9.16.0
+   - globals           ^15.12.0  →  ^15.13.0
    - markdownlint-cli   ^0.42.0  →   ^0.43.0
    - prettier            ^3.3.3  →    ^3.4.1
    - stylelint         ^16.10.0  →  ^16.11.0
@@ -1113,7 +1120,7 @@ Last update: 2024-12-01T05:38:29+01:00
 2. Warning: No LICENSE file.
 3. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
 4. Information: There are updates for 1 dependencie(s):
-   - chart.js  ^4.4.4  →  ^4.4.6
+   - chart.js  ^4.4.4  →  ^4.4.7
 
 
 ### [MMM-Chess-Daily by nout-kleef](https://github.com/nout-kleef/MMM-Chess-Daily)
@@ -1262,7 +1269,7 @@ Last update: 2024-12-01T05:38:29+01:00
    - @eslint/js                 ^9.13.0  →   ^9.16.0
    - @stylistic/eslint-plugin    ^2.9.0  →   ^2.11.0
    - eslint                     ^9.13.0  →   ^9.16.0
-   - globals                   ^15.11.0  →  ^15.12.0
+   - globals                   ^15.11.0  →  ^15.13.0
    - prettier                    ^3.3.3  →    ^3.4.1
 
 
@@ -1953,11 +1960,12 @@ Last update: 2024-12-01T05:38:29+01:00
 
 ### [MMM-EasyPix by KristjanESPERANTO](https://github.com/KristjanESPERANTO/MMM-EasyPix)
 
-1. Information: There are updates for 7 dependencie(s):
+1. Information: There are updates for 8 dependencie(s):
    - @eslint/js                 ^9.14.0  →   ^9.16.0
    - @stylistic/eslint-plugin   ^2.10.1  →   ^2.11.0
    - cspell                     ^8.15.7  →   ^8.16.1
    - eslint                     ^9.14.0  →   ^9.16.0
+   - globals                   ^15.12.0  →  ^15.13.0
    - markdownlint-cli           ^0.42.0  →   ^0.43.0
    - prettier                    ^3.3.3  →    ^3.4.1
    - stylelint                 ^16.10.0  →  ^16.11.0
@@ -2035,7 +2043,7 @@ Last update: 2024-12-01T05:38:29+01:00
    - @eslint/js                ^9.10.0  →   ^9.16.0
    - @stylistic/eslint-plugin   ^2.8.0  →   ^2.11.0
    - eslint                    ^9.10.0  →   ^9.16.0
-   - globals                   ^15.9.0  →  ^15.12.0
+   - globals                   ^15.9.0  →  ^15.13.0
 
 2.  WARN  @iconify/iconify@3.1.1: 2023-06-22T08:45:25.335Z
 deprecated: no longer maintained, switch to modern iconify-icon web component
@@ -2620,10 +2628,11 @@ deprecated: no longer maintained, switch to modern iconify-icon web component
 
 ### [MMM-Forum by KristjanESPERANTO](https://github.com/KristjanESPERANTO/MMM-Forum)
 
-1. Information: There are updates for 4 dependencie(s):
+1. Information: There are updates for 5 dependencie(s):
    - @eslint/js   ^9.15.0  →   ^9.16.0
    - cspell       ^8.16.0  →   ^8.16.1
    - eslint       ^9.15.0  →   ^9.16.0
+   - globals     ^15.12.0  →  ^15.13.0
    - stylelint   ^16.10.0  →  ^16.11.0
 
 
@@ -3096,7 +3105,7 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
 1. Information: There are updates for 4 dependencie(s):
    - @eslint/js   ^9.9.0  →   ^9.16.0
    - eslint       ^9.9.0  →   ^9.16.0
-   - globals     ^15.9.0  →  ^15.12.0
+   - globals     ^15.9.0  →  ^15.13.0
    - prettier      3.3.3  →     3.4.1
 
 
@@ -3921,7 +3930,7 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
    - @stylistic/eslint-plugin    ^1.5.3  →   ^2.11.0
    - eslint                     ^8.56.0  →   ^9.16.0
    - eslint-plugin-import       ^2.29.1  →   ^2.31.0
-   - globals                   ^13.24.0  →  ^15.12.0
+   - globals                   ^13.24.0  →  ^15.13.0
    - justgage                    ^1.6.1  →    ^1.7.0
 
 
@@ -4006,13 +4015,14 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
 
 ### [MMM-ISS-Live by KristjanESPERANTO](https://github.com/KristjanESPERANTO/MMM-ISS-Live)
 
-1. Information: There are updates for 6 dependencie(s):
-   - @eslint/js                ^9.14.0  →  ^9.16.0
-   - @stylistic/eslint-plugin  ^2.10.1  →  ^2.11.0
-   - cspell                    ^8.15.7  →  ^8.16.1
-   - eslint                    ^9.14.0  →  ^9.16.0
-   - markdownlint-cli          ^0.42.0  →  ^0.43.0
-   - prettier                   ^3.3.3  →   ^3.4.1
+1. Information: There are updates for 7 dependencie(s):
+   - @eslint/js                 ^9.14.0  →   ^9.16.0
+   - @stylistic/eslint-plugin   ^2.10.1  →   ^2.11.0
+   - cspell                     ^8.15.7  →   ^8.16.1
+   - eslint                     ^9.14.0  →   ^9.16.0
+   - globals                   ^15.12.0  →  ^15.13.0
+   - markdownlint-cli           ^0.42.0  →   ^0.43.0
+   - prettier                    ^3.3.3  →    ^3.4.1
 
 
 ### [MMM-ISS-Map by khassel](https://gitlab.com/khassel/MMM-ISS-Map)
@@ -4195,7 +4205,7 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
    - eslint                           ^8.57.0  →   ^9.16.0
    - eslint-plugin-import             ^2.29.1  →   ^2.31.0
    - eslint-plugin-jsonc              ^2.15.0  →   ^2.18.2
-   - globals                          ^15.0.0  →  ^15.12.0
+   - globals                          ^15.0.0  →  ^15.13.0
    - markdownlint-cli                 ^0.39.0  →   ^0.43.0
    - prettier                          ^3.2.5  →    ^3.4.1
 
@@ -4700,7 +4710,7 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
    - @eslint/js                ^8.57.0  →   ^9.16.0
    - @stylistic/eslint-plugin   ^1.7.0  →   ^2.11.0
    - eslint                    ^8.57.0  →   ^9.16.0
-   - globals                   ^15.0.0  →  ^15.12.0
+   - globals                   ^15.0.0  →  ^15.13.0
 
 2.  WARN  eslint@8.57.0: 2024-02-23T20:39:43.282Z
 deprecated: This version is no longer supported. Please see https://eslint.org/version-support for other options.
@@ -4824,7 +4834,7 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
    - @stylistic/eslint-plugin          ^2.7.2  →   ^2.11.0
    - eslint                           ^8.57.0  →   ^9.16.0
    - eslint-plugin-import             ^2.29.1  →   ^2.31.0
-   - globals                          ^15.9.0  →  ^15.12.0
+   - globals                          ^15.9.0  →  ^15.13.0
    - husky                            ^9.0.11  →    ^9.1.7
    - markdownlint-cli                 ^0.41.0  →   ^0.43.0
    - prettier                          ^3.3.3  →    ^3.4.1
@@ -6487,13 +6497,14 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
 
 ### [MMM-OneCallWeather by KristjanESPERANTO](https://github.com/KristjanESPERANTO/MMM-OneCallWeather)
 
-1. Information: There are updates for 6 dependencie(s):
-   - @eslint/js                ^9.14.0  →  ^9.16.0
-   - @stylistic/eslint-plugin  ^2.10.1  →  ^2.11.0
-   - cspell                    ^8.15.7  →  ^8.16.1
-   - eslint                    ^9.14.0  →  ^9.16.0
-   - markdownlint-cli          ^0.42.0  →  ^0.43.0
-   - prettier                   ^3.3.3  →   ^3.4.1
+1. Information: There are updates for 7 dependencie(s):
+   - @eslint/js                 ^9.14.0  →   ^9.16.0
+   - @stylistic/eslint-plugin   ^2.10.1  →   ^2.11.0
+   - cspell                     ^8.15.7  →   ^8.16.1
+   - eslint                     ^9.14.0  →   ^9.16.0
+   - globals                   ^15.12.0  →  ^15.13.0
+   - markdownlint-cli           ^0.42.0  →   ^0.43.0
+   - prettier                    ^3.3.3  →    ^3.4.1
 
 
 ### [MMM-OneDrive by hermanho](https://github.com/hermanho/MMM-OneDrive)
@@ -6766,7 +6777,7 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
    - @eslint/js                ^9.10.0  →   ^9.16.0
    - @stylistic/eslint-plugin   ^2.8.0  →   ^2.11.0
    - eslint                    ^9.10.0  →   ^9.16.0
-   - globals                   ^15.9.0  →  ^15.12.0
+   - globals                   ^15.9.0  →  ^15.13.0
 
 
 ### [EXT-Pages by bugsounet](https://github.com/bugsounet/EXT-Pages)
@@ -7414,28 +7425,17 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
 
 ### [MMM-PublicTransportBerlin by deg0nz](https://github.com/deg0nz/MMM-PublicTransportBerlin)
 
-1. Information: There are updates for 8 dependencie(s):
-   - @eslint/js                 ^9.12.0  →   ^9.16.0
-   - @stylistic/eslint-plugin   ^2.10.0  →   ^2.11.0
-   - eslint                     ^9.13.0  →   ^9.16.0
-   - eslint-plugin-import-x      ^4.4.0  →    ^4.4.3
-   - eslint-plugin-jsonc        ^2.16.0  →   ^2.18.2
-   - globals                   ^15.10.0  →  ^15.12.0
-   - prettier                    ^3.3.3  →    ^3.4.1
-   - stylelint                 ^16.10.0  →  ^16.11.0
+1. Information: There are updates for 4 dependencie(s):
+   - @eslint/js               ^9.12.0  →   ^9.16.0
+   - eslint-plugin-import-x    ^4.4.0  →    ^4.4.3
+   - globals                 ^15.12.0  →  ^15.13.0
+   - stylelint               ^16.10.0  →  ^16.11.0
 
 
 ### [MMM-PublicTransportHafas by KristjanESPERANTO](https://github.com/KristjanESPERANTO/MMM-PublicTransportHafas)
 
-1. Information: There are updates for 8 dependencie(s):
-   - @eslint/js                 ^9.15.0  →   ^9.16.0
-   - @eslint/json                ^0.7.0  →    ^0.8.0
-   - @stylistic/eslint-plugin   ^2.10.1  →   ^2.11.0
-   - cspell                     ^8.16.0  →   ^8.16.1
-   - eslint                     ^9.15.0  →   ^9.16.0
-   - markdownlint-cli           ^0.42.0  →   ^0.43.0
-   - prettier                    ^3.3.3  →    ^3.4.1
-   - stylelint                 ^16.10.0  →  ^16.11.0
+1. Information: There are updates for 1 dependencie(s):
+   - globals  ^15.12.0  →  ^15.13.0
 
 
 ### [MMM-PublicTransportVVO by ChristianGeie](https://github.com/ChristianGeie/MMM-PublicTransportVVO)
@@ -7513,7 +7513,7 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
    - @eslint/js                ^9.10.0  →   ^9.16.0
    - @stylistic/eslint-plugin   ^2.7.2  →   ^2.11.0
    - eslint                    ^9.10.0  →   ^9.16.0
-   - globals                   ^15.9.0  →  ^15.12.0
+   - globals                   ^15.9.0  →  ^15.13.0
 
 
 ### [MMM-Quotable by dfanica](https://github.com/dfanica/MMM-Quotable)
@@ -8125,7 +8125,7 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
    - @eslint/js    ^9.8.0  →   ^9.16.0
    - body-parser  ^1.20.2  →   ^1.20.3
    - eslint        ^9.8.0  →   ^9.16.0
-   - globals      ^15.9.0  →  ^15.12.0
+   - globals      ^15.9.0  →  ^15.13.0
 
 
 ### [MMM-Scrapey by AndyHazz](https://github.com/AndyHazz/MMM-Scrapey)
@@ -10279,13 +10279,14 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
 
 ### [MMM-WebSpeechTTS by KristjanESPERANTO](https://github.com/KristjanESPERANTO/MMM-WebSpeechTTS)
 
-1. Information: There are updates for 6 dependencie(s):
-   - @eslint/js                ^9.14.0  →  ^9.16.0
-   - @stylistic/eslint-plugin  ^2.10.1  →  ^2.11.0
-   - cspell                    ^8.15.7  →  ^8.16.1
-   - eslint                    ^9.14.0  →  ^9.16.0
-   - markdownlint-cli          ^0.42.0  →  ^0.43.0
-   - prettier                   ^3.3.3  →   ^3.4.1
+1. Information: There are updates for 7 dependencie(s):
+   - @eslint/js                 ^9.14.0  →   ^9.16.0
+   - @stylistic/eslint-plugin   ^2.10.1  →   ^2.11.0
+   - cspell                     ^8.15.7  →   ^8.16.1
+   - eslint                     ^9.14.0  →   ^9.16.0
+   - globals                   ^15.12.0  →  ^15.13.0
+   - markdownlint-cli           ^0.42.0  →   ^0.43.0
+   - prettier                    ^3.3.3  →    ^3.4.1
 
 
 ### [MMM-Webuntis by HeikoGr](https://github.com/HeikoGr/MMM-Webuntis)
@@ -10294,7 +10295,7 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
 2. Information: There are updates for 3 dependencie(s):
    - @eslint/js   ^9.13.0  →   ^9.16.0
    - eslint       ^9.13.0  →   ^9.16.0
-   - globals     ^15.11.0  →  ^15.12.0
+   - globals     ^15.11.0  →  ^15.13.0
 
 
 ### [MMM-WebView by Iketaki](https://github.com/Iketaki/MMM-WebView)
@@ -10420,9 +10421,10 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
 ### [MMM-WMATA by btoconnor](https://github.com/btoconnor/MMM-WMATA)
 
 1. Recommendation: Found `new Date()` in file `MMM-WMATA.js`: Consider replacing it by `new Date(Date.now())`. It's helpful for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
-2. Information: There are updates for 2 dependencie(s):
-   - @eslint/js  ^9.15.0  →  ^9.16.0
-   - eslint      ^9.15.0  →  ^9.16.0
+2. Information: There are updates for 3 dependencie(s):
+   - @eslint/js   ^9.15.0  →   ^9.16.0
+   - eslint       ^9.15.0  →   ^9.16.0
+   - globals     ^15.12.0  →  ^15.13.0
 
 
 ### [MMM-WordGenius by drventure](https://github.com/drventure/MMM-WordGenius)
