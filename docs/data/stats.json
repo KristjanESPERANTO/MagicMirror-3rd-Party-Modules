@@ -1,11 +1,11 @@
 {
-  "moduleCounter": 1206,
-  "modulesWithImageCounter": 856,
-  "modulesWithIssuesCounter": 1206,
-  "issueCounter": 6933,
-  "lastUpdate": "2024-12-02T17:38:55+01:00",
+  "moduleCounter": 1209,
+  "modulesWithImageCounter": 858,
+  "modulesWithIssuesCounter": 1208,
+  "issueCounter": 6944,
+  "lastUpdate": "2024-12-03T05:38:49+01:00",
   "repositoryHoster": {
-    "github": 1096,
+    "github": 1099,
     "gitlab": 10,
     "bitbucket": 1
   },
@@ -63,6 +63,7 @@
     "ngnijland": 4,
     "ryck": 3,
     "AndyHazz": 3,
+    "totoluto": 3,
     "kagjerde": 3,
     "nikobix": 3,
     "jeroenpeters1986": 3,

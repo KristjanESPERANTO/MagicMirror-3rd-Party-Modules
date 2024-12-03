@@ -756,6 +756,26 @@
     "image": "img-demo.jpg"
   },
   {
+    "name": "MMM-AuthenticatedUptimeKuma",
+    "category": "Utility / IoT / 3rd Party / Integration",
+    "url": "https://github.com/totoluto/MMM-AuthenticatedUptimeKuma",
+    "id": "totoluto/MMM-AuthenticatedUptimeKuma",
+    "maintainer": "totoluto",
+    "maintainerURL": "https://github.com/totoluto",
+    "description": "Display monitor data from selfhosted <a target=\"_blank\" href=\"https://github.com/louislam/uptime-kuma\">https://github.com/louislam/uptime-kuma</a>. Uses token authentication and does not need a public status page like MMM-uptimekuma. There are also more styling options and different values can be displayed.",
+    "issues": [],
+    "stars": 0,
+    "license": "MIT",
+    "tags": [
+      "uptimekuma",
+      "uptime",
+      "kuma",
+      "uptime",
+      "kuma"
+    ],
+    "image": "screenshots-simple.jpg"
+  },
+  {
     "name": "MMM-Autobahn",
     "category": "Transport / Travel",
     "url": "https://github.com/JockeyDoe/MMM-Autobahn",
@@ -4388,7 +4408,7 @@
     "issues": [
       "No image found."
     ],
-    "stars": 92,
+    "stars": 93,
     "license": "MIT",
     "tags": [
       "face",
@@ -4409,7 +4429,7 @@
     "issues": [
       "There is no `package.json`. We need this file to gather information about the module for the module list page."
     ],
-    "stars": 82,
+    "stars": 83,
     "license": "MIT",
     "image": "img-readme-face-recognition-guest-smai.jpg"
   },
@@ -11408,6 +11428,23 @@
   {
     "name": "MMM-NewsAPI",
     "category": "News / Information",
+    "url": "https://github.com/totoluto/MMM-NewsAPI",
+    "id": "totoluto/MMM-NewsAPI",
+    "maintainer": "totoluto",
+    "maintainerURL": "https://github.com/totoluto",
+    "description": "Get top headlines from <a target=\"_blank\" href=\"https://newsapi.org\">newsapi.org</a>.",
+    "issues": [],
+    "stars": 0,
+    "license": "MIT",
+    "tags": [
+      "news",
+      "api"
+    ],
+    "image": "screenshots-MMM-NewsApi.jpg"
+  },
+  {
+    "name": "MMM-NewsAPI",
+    "category": "News / Information",
     "url": "https://github.com/mumblebaj/MMM-NewsAPI",
     "id": "mumblebaj/MMM-NewsAPI",
     "maintainer": "mumblebaj",
@@ -16171,6 +16208,27 @@
     ],
     "license": "MIT",
     "image": "screenshots-socialbicycles1.jpg"
+  },
+  {
+    "name": "MMM-SocketClientController",
+    "category": "Development / Core MagicMirror²",
+    "url": "https://github.com/totoluto/MMM-SocketClientController",
+    "id": "totoluto/MMM-SocketClientController",
+    "maintainer": "totoluto",
+    "maintainerURL": "https://github.com/totoluto/",
+    "description": "This module allows you to control your MagicMirror² via an external API. It listens to the socket events which are deployed by your socket server.",
+    "issues": [
+      "No image found."
+    ],
+    "stars": 0,
+    "license": "MIT",
+    "tags": [
+      "plugin",
+      "socket",
+      "client",
+      "event",
+      "forwarder"
+    ]
   },
   {
     "name": "MMM-Solar",

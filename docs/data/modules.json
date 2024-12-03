@@ -177,7 +177,7 @@
       "trashcollection"
     ],
     "image": "AfvalwijzerScreenshot.jpg",
-    "defaultSortWeight": 1,
+    "defaultSortWeight": 0,
     "lastCommit": "2024-10-09T17:55:17+02:00"
   },
   {
@@ -784,6 +784,28 @@
     "image": "img-demo.jpg",
     "defaultSortWeight": 9,
     "lastCommit": "2024-10-22T19:41:55+01:00"
+  },
+  {
+    "name": "MMM-AuthenticatedUptimeKuma",
+    "category": "Utility / IoT / 3rd Party / Integration",
+    "url": "https://github.com/totoluto/MMM-AuthenticatedUptimeKuma",
+    "id": "totoluto/MMM-AuthenticatedUptimeKuma",
+    "maintainer": "totoluto",
+    "maintainerURL": "https://github.com/totoluto",
+    "description": "Display monitor data from selfhosted <a target=\"_blank\" href=\"https://github.com/louislam/uptime-kuma\">https://github.com/louislam/uptime-kuma</a>. Uses token authentication and does not need a public status page like MMM-uptimekuma. There are also more styling options and different values can be displayed.",
+    "issues": true,
+    "stars": 0,
+    "license": "MIT",
+    "tags": [
+      "uptimekuma",
+      "uptime",
+      "kuma",
+      "uptime",
+      "kuma"
+    ],
+    "image": "screenshots-simple.jpg",
+    "defaultSortWeight": 2,
+    "lastCommit": "2024-12-02T19:48:06+01:00"
   },
   {
     "name": "MMM-Autobahn",
@@ -4449,7 +4471,7 @@
     "maintainerURL": "",
     "description": "All new version of Face Recognition with Open CV 4.1 and Deep Neural Network.",
     "issues": true,
-    "stars": 92,
+    "stars": 93,
     "license": "MIT",
     "tags": [
       "face",
@@ -4470,7 +4492,7 @@
     "maintainerURL": "https://github.com/EbenKouao",
     "description": "This module allows you to access profiles using face recognition. This works on the back of OpenCV face recognition module. Program this script to control applicances e.g. Smart Plugs, or lights based on an individual's face profile being recognized.",
     "issues": true,
-    "stars": 82,
+    "stars": 83,
     "license": "MIT",
     "image": "img-readme-face-recognition-guest-smai.jpg",
     "defaultSortWeight": 7,
@@ -11531,6 +11553,25 @@
   {
     "name": "MMM-NewsAPI",
     "category": "News / Information",
+    "url": "https://github.com/totoluto/MMM-NewsAPI",
+    "id": "totoluto/MMM-NewsAPI",
+    "maintainer": "totoluto",
+    "maintainerURL": "https://github.com/totoluto",
+    "description": "Get top headlines from <a target=\"_blank\" href=\"https://newsapi.org\">newsapi.org</a>.",
+    "issues": true,
+    "stars": 0,
+    "license": "MIT",
+    "tags": [
+      "news",
+      "api"
+    ],
+    "image": "screenshots-MMM-NewsApi.jpg",
+    "defaultSortWeight": 3,
+    "lastCommit": "2024-12-02T20:07:18+01:00"
+  },
+  {
+    "name": "MMM-NewsAPI",
+    "category": "News / Information",
     "url": "https://github.com/mumblebaj/MMM-NewsAPI",
     "id": "mumblebaj/MMM-NewsAPI",
     "maintainer": "mumblebaj",
@@ -16389,6 +16430,27 @@
     "lastCommit": "2018-01-15T14:27:53+01:00"
   },
   {
+    "name": "MMM-SocketClientController",
+    "category": "Development / Core MagicMirror\u00b2",
+    "url": "https://github.com/totoluto/MMM-SocketClientController",
+    "id": "totoluto/MMM-SocketClientController",
+    "maintainer": "totoluto",
+    "maintainerURL": "https://github.com/totoluto/",
+    "description": "This module allows you to control your MagicMirror\u00b2 via an external API. It listens to the socket events which are deployed by your socket server.",
+    "issues": true,
+    "stars": 0,
+    "license": "MIT",
+    "tags": [
+      "plugin",
+      "socket",
+      "client",
+      "event",
+      "forwarder"
+    ],
+    "defaultSortWeight": 4,
+    "lastCommit": "2024-09-14T18:13:40+02:00"
+  },
+  {
     "name": "MMM-Solar",
     "category": "Utility / IoT / 3rd Party / Integration",
     "url": "https://github.com/tkrywit/MMM-Solar",
@@ -18929,7 +18991,7 @@
       "porcupine"
     ],
     "image": "screenshot-logo.jpg",
-    "defaultSortWeight": 1,
+    "defaultSortWeight": 2,
     "lastCommit": "2024-11-25T19:23:36+01:00"
   },
   {
@@ -19432,7 +19494,7 @@
     "maintainer": "KristjanESPERANTO",
     "maintainerURL": "",
     "description": "A Text-To-Speech module which uses the Web Speech API of the browser. It is in an early stage of development. So far only German is supported.",
-    "issues": true,
+    "issues": false,
     "stars": 3,
     "license": "MIT",
     "tags": [
@@ -19442,7 +19504,7 @@
     ],
     "image": ".github-TTS.jpg",
     "defaultSortWeight": 1,
-    "lastCommit": "2024-11-06T01:26:57+01:00"
+    "lastCommit": "2024-12-02T21:44:45+01:00"
   },
   {
     "name": "MMM-Webuntis",

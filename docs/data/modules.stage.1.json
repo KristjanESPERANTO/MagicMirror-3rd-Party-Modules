@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "2024-12-02T16:30:12.557Z",
+  "lastUpdate": "2024-12-03T04:30:13.105Z",
   "modules": [
     {
       "name": "MMM-01ZM",
@@ -451,6 +451,16 @@
       "maintainer": "AndyHazz",
       "maintainerURL": "",
       "description": "Display Aurora alerts when visibility is likely in the UK.",
+      "issues": []
+    },
+    {
+      "name": "MMM-AuthenticatedUptimeKuma",
+      "category": "Utility / IoT / 3rd Party / Integration",
+      "url": "https://github.com/totoluto/MMM-AuthenticatedUptimeKuma",
+      "id": "totoluto/MMM-AuthenticatedUptimeKuma",
+      "maintainer": "totoluto",
+      "maintainerURL": "https://github.com/totoluto",
+      "description": "Display monitor data from selfhosted <a target=\"_blank\" href=\"https://github.com/louislam/uptime-kuma\">https://github.com/louislam/uptime-kuma</a>. Uses token authentication and does not need a public status page like MMM-uptimekuma. There are also more styling options and different values can be displayed.",
       "issues": []
     },
     {
@@ -6955,6 +6965,16 @@
       "issues": []
     },
     {
+      "name": "MMM-NewsAPI",
+      "category": "News / Information",
+      "url": "https://github.com/totoluto/MMM-NewsAPI",
+      "id": "totoluto/MMM-NewsAPI",
+      "maintainer": "totoluto",
+      "maintainerURL": "https://github.com/totoluto",
+      "description": "Get top headlines from <a target=\"_blank\" href=\"https://newsapi.org\">newsapi.org</a>.",
+      "issues": []
+    },
+    {
       "name": "MMM-NewsFeedTicker",
       "category": "Utility / IoT / 3rd Party / Integration",
       "url": "https://github.com/justjim1220/MMM-NewsFeedTicker",
@@ -9843,6 +9863,16 @@
       "maintainer": "0lek",
       "maintainerURL": "",
       "description": "Station monitor for bicycle networks based on the Socialbicycles API/Infrastructure, e.g. Wavelo in Kraków, Poland.",
+      "issues": []
+    },
+    {
+      "name": "MMM-SocketClientController",
+      "category": "Development / Core MagicMirror²",
+      "url": "https://github.com/totoluto/MMM-SocketClientController",
+      "id": "totoluto/MMM-SocketClientController",
+      "maintainer": "totoluto",
+      "maintainerURL": "https://github.com/totoluto/",
+      "description": "This module allows you to control your MagicMirror² via an external API. It listens to the socket events which are deployed by your socket server.",
       "issues": []
     },
     {
