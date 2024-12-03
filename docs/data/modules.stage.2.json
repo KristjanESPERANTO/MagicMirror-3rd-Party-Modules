@@ -3510,7 +3510,7 @@
     "maintainerURL": "",
     "description": "Displays information from the <a target=\"_blank\" href=\"https://www.flatastic-app.com\">flatastic</a> commune management app.",
     "issues": [],
-    "stars": 5,
+    "stars": 6,
     "license": "MIT"
   },
   {
@@ -3595,7 +3595,7 @@
     "maintainerURL": "https://github.com/tbouron",
     "description": "Use ADS-B systems to track and display nearby planes.",
     "issues": [],
-    "stars": 13,
+    "stars": 15,
     "license": "Apache-2.0"
   },
   {
@@ -8226,18 +8226,6 @@
   {
     "name": "MMM-NewsAPI",
     "category": "News / Information",
-    "url": "https://github.com/totoluto/MMM-NewsAPI",
-    "id": "totoluto/MMM-NewsAPI",
-    "maintainer": "totoluto",
-    "maintainerURL": "https://github.com/totoluto",
-    "description": "Get top headlines from <a target=\"_blank\" href=\"https://newsapi.org\">newsapi.org</a>.",
-    "issues": [],
-    "stars": 0,
-    "license": "MIT"
-  },
-  {
-    "name": "MMM-NewsAPI",
-    "category": "News / Information",
     "url": "https://github.com/mumblebaj/MMM-NewsAPI",
     "id": "mumblebaj/MMM-NewsAPI",
     "maintainer": "mumblebaj",
@@ -8245,6 +8233,18 @@
     "description": "Get news from <a target=\"_blank\" href=\"https://newsapi.org\">newsapi.org</a>.",
     "issues": [],
     "stars": 9,
+    "license": "MIT"
+  },
+  {
+    "name": "MMM-NewsAPI",
+    "category": "News / Information",
+    "url": "https://github.com/totoluto/MMM-NewsAPI",
+    "id": "totoluto/MMM-NewsAPI",
+    "maintainer": "totoluto",
+    "maintainerURL": "https://github.com/totoluto",
+    "description": "Get top headlines from <a target=\"_blank\" href=\"https://newsapi.org\">newsapi.org</a>.",
+    "issues": [],
+    "stars": 0,
     "license": "MIT"
   },
   {

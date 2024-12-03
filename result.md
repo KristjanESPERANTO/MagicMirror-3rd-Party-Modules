@@ -1,6 +1,6 @@
 # Result of the module analysis
 
-Last update: 2024-12-03T05:38:49+01:00
+Last update: 2024-12-03T17:38:52+01:00
 
 ## Statistics
 
@@ -6099,19 +6099,19 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
    - qrcode  1.5.1  →  1.5.4
 
 
-### [MMM-NewsAPI by totoluto](https://github.com/totoluto/MMM-NewsAPI)
-
-1. Typo: Found `Magic Mirror` in file `README.md`: Replace it with `MagicMirror²`.
-2. Recommendation: The README seems not to have an update instruction (the word 'update' is missing). Please add one.
-3. Typo: Found `Magic Mirror` in file `package.json`: Replace it with `MagicMirror²`.
-4. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
-
 ### [MMM-NewsAPI by mumblebaj](https://github.com/mumblebaj/MMM-NewsAPI)
 
 1. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
 2. ESLint issues:
    - MMM-NewsAPI.js: Line 164, Column 23: 'qr' is assigned a value but never used. (rule: no-unused-vars)
 
+
+### [MMM-NewsAPI by totoluto](https://github.com/totoluto/MMM-NewsAPI)
+
+1. Typo: Found `Magic Mirror` in file `README.md`: Replace it with `MagicMirror²`.
+2. Recommendation: The README seems not to have an update instruction (the word 'update' is missing). Please add one.
+3. Typo: Found `Magic Mirror` in file `package.json`: Replace it with `MagicMirror²`.
+4. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
 
 ### [MMM-NewsFeedTicker by justjim1220](https://github.com/justjim1220/MMM-NewsFeedTicker)
 
@@ -7445,7 +7445,7 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
 
 1. Information: There are updates for 4 dependencie(s):
    - @eslint/js               ^9.12.0  →   ^9.16.0
-   - eslint-plugin-import-x    ^4.4.0  →    ^4.4.3
+   - eslint-plugin-import-x    ^4.4.0  →    ^4.5.0
    - globals                 ^15.12.0  →  ^15.13.0
    - stylelint               ^16.10.0  →  ^16.11.0
 
@@ -10044,7 +10044,7 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
    - @eslint/js   ^9.15.0  →   ^9.16.0
    - eslint       ^9.15.0  →   ^9.16.0
    - globals     ^15.12.0  →  ^15.13.0
-   - openai       ^4.73.1  →   ^4.74.0
+   - openai       ^4.73.1  →   ^4.75.0
 
 
 ### [MMM-Volume by Anonym-tsk](https://github.com/Anonym-tsk/MMM-Volume)

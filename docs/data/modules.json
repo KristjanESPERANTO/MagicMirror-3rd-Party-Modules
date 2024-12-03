@@ -4917,7 +4917,7 @@
     "maintainerURL": "",
     "description": "Displays information from the <a target=\"_blank\" href=\"https://www.flatastic-app.com\">flatastic</a> commune management app.",
     "issues": true,
-    "stars": 5,
+    "stars": 6,
     "license": "MIT",
     "defaultSortWeight": 8,
     "lastCommit": "2024-11-14T10:23:20+01:00"
@@ -5042,7 +5042,7 @@
     "maintainerURL": "https://github.com/tbouron",
     "description": "Use ADS-B systems to track and display nearby planes.",
     "issues": true,
-    "stars": 13,
+    "stars": 15,
     "license": "Apache-2.0",
     "image": "screenshot-at-the-window.jpg",
     "defaultSortWeight": 4,
@@ -6928,7 +6928,7 @@
     "license": "GPL-3.0",
     "image": "mmm-hoymiles.jpg",
     "defaultSortWeight": 4,
-    "lastCommit": "2024-11-28T15:28:09+01:00"
+    "lastCommit": "2024-12-03T09:49:44+01:00"
   },
   {
     "name": "MMM-HRS-PickupPlan",
@@ -11553,6 +11553,24 @@
   {
     "name": "MMM-NewsAPI",
     "category": "News / Information",
+    "url": "https://github.com/mumblebaj/MMM-NewsAPI",
+    "id": "mumblebaj/MMM-NewsAPI",
+    "maintainer": "mumblebaj",
+    "maintainerURL": "https://github.com/mumblebaj",
+    "description": "Get news from <a target=\"_blank\" href=\"https://newsapi.org\">newsapi.org</a>.",
+    "issues": true,
+    "stars": 9,
+    "license": "MIT",
+    "tags": [
+      "news"
+    ],
+    "image": "screenshot1.jpg",
+    "defaultSortWeight": 1,
+    "lastCommit": "2024-09-29T13:44:39+02:00"
+  },
+  {
+    "name": "MMM-NewsAPI",
+    "category": "News / Information",
     "url": "https://github.com/totoluto/MMM-NewsAPI",
     "id": "totoluto/MMM-NewsAPI",
     "maintainer": "totoluto",
@@ -11568,24 +11586,6 @@
     "image": "screenshots-MMM-NewsApi.jpg",
     "defaultSortWeight": 3,
     "lastCommit": "2024-12-02T20:07:18+01:00"
-  },
-  {
-    "name": "MMM-NewsAPI",
-    "category": "News / Information",
-    "url": "https://github.com/mumblebaj/MMM-NewsAPI",
-    "id": "mumblebaj/MMM-NewsAPI",
-    "maintainer": "mumblebaj",
-    "maintainerURL": "https://github.com/mumblebaj",
-    "description": "Get news from <a target=\"_blank\" href=\"https://newsapi.org\">newsapi.org</a>.",
-    "issues": true,
-    "stars": 9,
-    "license": "MIT",
-    "tags": [
-      "news"
-    ],
-    "image": "screenshot1.jpg",
-    "defaultSortWeight": 1,
-    "lastCommit": "2024-09-29T13:44:39+02:00"
   },
   {
     "name": "MMM-NewsFeedTicker",
@@ -17678,7 +17678,7 @@
     "license": "MIT",
     "image": "tube.jpg",
     "defaultSortWeight": 8,
-    "lastCommit": "2024-08-26T02:31:13+02:00"
+    "lastCommit": "2024-12-03T13:54:21+00:00"
   },
   {
     "name": "MMM-ThemeParkWaitTimes",
