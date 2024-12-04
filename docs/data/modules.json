@@ -163,6 +163,21 @@
     "lastCommit": "2016-12-09T09:46:08+01:00"
   },
   {
+    "name": "MMM-Adventskalender",
+    "category": "Entertainment / Misc",
+    "url": "https://github.com/ChrisF1976/MMM-Adventskalender",
+    "id": "ChrisF1976/MMM-Adventskalender",
+    "maintainer": "ChrisF1976",
+    "maintainerURL": "",
+    "description": "Simple advent calendar. New in 2024. Will be updated in 2025.",
+    "issues": true,
+    "stars": 0,
+    "license": "MIT",
+    "image": "Example.jpg",
+    "defaultSortWeight": 2,
+    "lastCommit": "2024-12-03T18:45:12+01:00"
+  },
+  {
     "name": "MMM-Afvalwijzer",
     "category": "Utility / IoT / 3rd Party / Integration",
     "url": "https://github.com/gertperdZA/MMM-Afvalwijzer",
@@ -5214,7 +5229,7 @@
     "maintainerURL": "",
     "description": "Controlling an RGB-LED strip around a smart mirror with or without touch input. It provides features for static background lighting, highly customizable effects on notifications and party lighting.",
     "issues": true,
-    "stars": 12,
+    "stars": 13,
     "license": "MPL-2.0",
     "tags": [
       "led strip",
@@ -5240,7 +5255,6 @@
     "description": "[FR] Affiche les flux rss de <a target=\"_blank\" href=\"https://www.francetvinfo.fr\">franceinfo</a>. <br />[EN] Displays rss feeds from franceinfo.",
     "issues": true,
     "stars": 1,
-    "hasGithubIssues": false,
     "license": "MIT",
     "tags": [
       "news",
@@ -5641,7 +5655,7 @@
     "maintainerURL": "",
     "description": "Allows gesture control of compliments (only show when stepping in front of mirror), newsfeed (wave left / right, up for full-screen) and pages with two types of infrared sensors. Gestures can be up, down, left, right, far and close movements of the hand in front of a gesture sensor (APDS-9960) and present and away gestures in front of an IR distance sensor (GP2Y0A21YK).",
     "issues": true,
-    "stars": 42,
+    "stars": 43,
     "tags": [
       "gesture",
       "gestures"
@@ -12414,7 +12428,7 @@
     ],
     "image": "images-screenshot.jpg",
     "defaultSortWeight": 4,
-    "lastCommit": "2024-10-09T01:14:41+01:00"
+    "lastCommit": "2024-12-04T02:53:03+00:00"
   },
   {
     "name": "MMM-OneTouchReveal",

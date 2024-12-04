@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "2024-12-03T16:30:13.126Z",
+  "lastUpdate": "2024-12-04T04:30:12.549Z",
   "modules": [
     {
       "name": "MMM-01ZM",
@@ -89,6 +89,16 @@
       "maintainer": "Jopyth",
       "maintainerURL": "",
       "description": "Display a candle burning down towards a specific date (e.g. an advent candle).",
+      "issues": []
+    },
+    {
+      "name": "MMM-Adventskalender",
+      "category": "Entertainment / Misc",
+      "url": "https://github.com/ChrisF1976/MMM-Adventskalender",
+      "id": "ChrisF1976/MMM-Adventskalender",
+      "maintainer": "ChrisF1976",
+      "maintainerURL": "",
+      "description": "Simple advent calendar. New in 2024. Will be updated in 2025.",
       "issues": []
     },
     {

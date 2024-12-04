@@ -1,16 +1,16 @@
 # Result of the module analysis
 
-Last update: 2024-12-03T17:38:52+01:00
+Last update: 2024-12-04T05:38:51+01:00
 
 ## Statistics
 
 |                      | number   |
 |:---------------------|:--------:|
-| modules analyzed     |   1209   |
+| modules analyzed     |   1210   |
 | maintainer           |    650   |
-| modules with issues  |   1208   |
-| issues               |   6944   |
-| modules at github    |   1099   |
+| modules with issues  |   1209   |
+| issues               |   6946   |
+| modules at github    |   1100   |
 | modules at gitlab    |     10   |
 | modules at bitbucket |      1   |
 
@@ -95,6 +95,12 @@ Last update: 2024-12-03T17:38:52+01:00
 5. Outdated: Found `MichMich/MagicMirror` in file `README.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
 6. Warning: No LICENSE file.
 7. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
+
+### [MMM-Adventskalender by ChrisF1976](https://github.com/ChrisF1976/MMM-Adventskalender)
+
+1. There is no `package.json`. We need this file to gather information about the module for the module list page.
+2. Recommendation: Found `new Date()` in file `MMM-Adventskalender.js`: Consider replacing it by `new Date(Date.now())`. It's helpful for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
+3. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
 
 ### [MMM-Afvalwijzer by gertperdZA](https://github.com/gertperdZA/MMM-Afvalwijzer)
 
@@ -918,7 +924,7 @@ Last update: 2024-12-03T17:38:52+01:00
 ### [MMM-CalDAV by MMRIZE](https://github.com/MMRIZE/MMM-CalDAV)
 
 1. Information: There are updates for 2 dependencie(s):
-   - dotenv    ^16.4.5  →   ^16.4.6
+   - dotenv    ^16.4.5  →   ^16.4.7
    - globals  ^15.12.0  →  ^15.13.0
 
 2. ESLint issues:
@@ -2656,8 +2662,7 @@ deprecated: no longer maintained, switch to modern iconify-icon web component
 
 ### [MMM-FranceInfo by bugsounet](https://github.com/bugsounet/MMM-FranceInfo)
 
-1. Issues are not enabled in the GitHub repository. So users cannot report bugs. Please enable issues in your repo.
-2. Information: There are updates for 1 dependencie(s):
+1. Information: There are updates for 1 dependencie(s):
    - eslint  ^9.15.0  →  ^9.16.0
 
 
@@ -3125,8 +3130,8 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
 2. Recommendation: The README seems not to have an update instruction (the word 'update' is missing). Please add one.
 3. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
 4. Information: There are updates for 2 dependencie(s):
-   - fs-extra   ^7.0.0  →  ^11.2.0
-   - puppeteer  ^2.0.0  →  ^23.9.0
+   - fs-extra   ^7.0.0  →   ^11.2.0
+   - puppeteer  ^2.0.0  →  ^23.10.0
 
 
 ### [MMM-GoogleTasks by spydersoft-consulting](https://github.com/spydersoft-consulting/MMM-GoogleTasks)
@@ -4062,11 +4067,11 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
 2. Outdated: Found `MichMich/MagicMirror` in file `README.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
 3. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
 4. Information: There are updates for 5 dependencie(s):
-   - @electron/rebuild    ^3.6.0  →   ^3.7.1
-   - node-abi            ^3.65.0  →  ^3.71.0
-   - node-gyp            ^10.2.0  →  ^10.3.1
-   - puppeteer          ^22.15.0  →  ^23.9.0
-   - sharp               ^0.33.4  →  ^0.33.5
+   - @electron/rebuild    ^3.6.0  →    ^3.7.1
+   - node-abi            ^3.65.0  →   ^3.71.0
+   - node-gyp            ^10.2.0  →   ^10.3.1
+   - puppeteer          ^22.15.0  →  ^23.10.0
+   - sharp               ^0.33.4  →   ^0.33.5
 
 
 ### [MMM-ITCH-IO by Xanthus1](https://github.com/Xanthus1/MMM-ITCH-IO)
