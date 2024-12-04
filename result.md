@@ -1,6 +1,6 @@
 # Result of the module analysis
 
-Last update: 2024-12-04T05:38:51+01:00
+Last update: 2024-12-04T17:39:04+01:00
 
 ## Statistics
 
@@ -8,7 +8,7 @@ Last update: 2024-12-04T05:38:51+01:00
 |:---------------------|:--------:|
 | modules analyzed     |   1210   |
 | maintainer           |    650   |
-| modules with issues  |   1209   |
+| modules with issues  |   1210   |
 | issues               |   6946   |
 | modules at github    |   1100   |
 | modules at gitlab    |     10   |
@@ -491,7 +491,7 @@ Last update: 2024-12-04T05:38:51+01:00
 2. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
 3. Information: There are updates for 3 dependencie(s):
    - alphavantage     ^2.4.1  →   ^2.5.0
-   - highcharts       ^9.0.0  →  ^12.0.1
+   - highcharts       ^9.0.0  →  ^12.0.2
    - yahoo-finance2  ^2.11.3  →  ^2.13.2
 
 
@@ -506,7 +506,7 @@ Last update: 2024-12-04T05:38:51+01:00
 1. Deprecated: Found `omxplayer` in file `node_helper.js`: Try to replace it with `vlc`.
 2. Information: There are updates for 2 dependencie(s):
    - eslint    ^8.57.0  →  ^9.16.0
-   - prettier   ^3.3.3  →   ^3.4.1
+   - prettier   ^3.3.3  →   ^3.4.2
 
 
 ### [MMM-BartTimes by falafel2222](https://github.com/falafel2222/MMM-BartTimes)
@@ -767,7 +767,7 @@ Last update: 2024-12-04T05:38:51+01:00
    - bosch-smart-home-bridge              ^1.4.1  →    ^1.6.0
    - eslint                              ^8.57.0  →   ^9.16.0
    - eslint-plugin-prettier               ^5.1.3  →    ^5.2.1
-   - prettier                             ^3.2.5  →    ^3.4.1
+   - prettier                             ^3.2.5  →    ^3.4.2
    - rollup                               ^4.9.6  →   ^4.28.0
    - rollup-plugin-banner2                ^1.2.2  →    ^1.3.0
    - rxjs                                 ^7.5.5  →    ^7.8.1
@@ -936,10 +936,11 @@ Last update: 2024-12-04T05:38:51+01:00
 
 ### [MMM-CalendarExt2 by MMM-CalendarExt2](https://github.com/MMM-CalendarExt2/MMM-CalendarExt2)
 
-1. Information: There are updates for 4 dependencie(s):
+1. Information: There are updates for 5 dependencie(s):
    - @eslint/js   ^9.15.0  →   ^9.16.0
    - eslint       ^9.15.0  →   ^9.16.0
    - globals     ^15.12.0  →  ^15.13.0
+   - prettier      ^3.4.1  →    ^3.4.2
    - stylelint   ^16.10.0  →  ^16.11.0
 
 
@@ -1074,7 +1075,7 @@ Last update: 2024-12-04T05:38:51+01:00
    - eslint                     ^9.14.0  →   ^9.16.0
    - globals                   ^15.12.0  →  ^15.13.0
    - markdownlint-cli           ^0.42.0  →   ^0.43.0
-   - prettier                    ^3.3.3  →    ^3.4.1
+   - prettier                    ^3.3.3  →    ^3.4.2
    - stylelint                 ^16.10.0  →  ^16.11.0
 
 
@@ -1095,7 +1096,7 @@ Last update: 2024-12-04T05:38:51+01:00
 2. Information: There are updates for 4 dependencie(s):
    - ical-generator   ^1.4.3  →   ^8.0.1
    - moment          ^2.23.0  →  ^2.30.1
-   - prettier         ^3.0.3  →   ^3.4.1
+   - prettier         ^3.0.3  →   ^3.4.2
    - tsdav            ^2.0.3  →   ^2.1.2
 
 
@@ -1107,7 +1108,7 @@ Last update: 2024-12-04T05:38:51+01:00
    - eslint             ^9.15.0  →   ^9.16.0
    - globals           ^15.12.0  →  ^15.13.0
    - markdownlint-cli   ^0.42.0  →   ^0.43.0
-   - prettier            ^3.3.3  →    ^3.4.1
+   - prettier            ^3.3.3  →    ^3.4.2
    - stylelint         ^16.10.0  →  ^16.11.0
 
 
@@ -1285,7 +1286,7 @@ Last update: 2024-12-04T05:38:51+01:00
    - @stylistic/eslint-plugin    ^2.9.0  →   ^2.11.0
    - eslint                     ^9.13.0  →   ^9.16.0
    - globals                   ^15.11.0  →  ^15.13.0
-   - prettier                    ^3.3.3  →    ^3.4.1
+   - prettier                    ^3.3.3  →    ^3.4.2
 
 
 ### [MMM-Config by sdetweil](https://github.com/sdetweil/MMM-Config)
@@ -1366,7 +1367,7 @@ Last update: 2024-12-04T05:38:51+01:00
 2. Information: There are updates for 3 dependencie(s):
    - eslint    ^8.56.0  →  ^9.16.0
    - moment    ^2.29.4  →  ^2.30.1
-   - prettier   ^3.1.1  →   ^3.4.1
+   - prettier   ^3.1.1  →   ^3.4.2
 
 
 ### [MMM-covid19 by 0m4r](https://github.com/0m4r/MMM-covid19)
@@ -1982,7 +1983,7 @@ Last update: 2024-12-04T05:38:51+01:00
    - eslint                     ^9.14.0  →   ^9.16.0
    - globals                   ^15.12.0  →  ^15.13.0
    - markdownlint-cli           ^0.42.0  →   ^0.43.0
-   - prettier                    ^3.3.3  →    ^3.4.1
+   - prettier                    ^3.3.3  →    ^3.4.2
    - stylelint                 ^16.10.0  →  ^16.11.0
 
 
@@ -2643,11 +2644,12 @@ deprecated: no longer maintained, switch to modern iconify-icon web component
 
 ### [MMM-Forum by KristjanESPERANTO](https://github.com/KristjanESPERANTO/MMM-Forum)
 
-1. Information: There are updates for 5 dependencie(s):
+1. Information: There are updates for 6 dependencie(s):
    - @eslint/js   ^9.15.0  →   ^9.16.0
    - cspell       ^8.16.0  →   ^8.16.1
    - eslint       ^9.15.0  →   ^9.16.0
    - globals     ^15.12.0  →  ^15.13.0
+   - prettier      ^3.4.1  →    ^3.4.2
    - stylelint   ^16.10.0  →  ^16.11.0
 
 
@@ -2671,7 +2673,7 @@ deprecated: no longer maintained, switch to modern iconify-icon web component
 1. Recommendation: Found `axios` in file `freebox.js`: Replace it with built-in fetch.
 2. Recommendation: Found `axios` in file `package.json`: Replace it with built-in fetch.
 3. Information: There are updates for 2 dependencie(s):
-   - axios    ^1.7.7  →   ^1.7.8
+   - axios    ^1.7.7  →   ^1.7.9
    - eslint  ^9.15.0  →  ^9.16.0
 
 
@@ -2966,7 +2968,7 @@ deprecated: no longer maintained, switch to modern iconify-icon web component
 
 1. Information: There are updates for 2 dependencie(s):
    - eslint    ^8.56.0  →  ^9.16.0
-   - prettier   ^3.1.1  →   ^3.4.1
+   - prettier   ^3.1.1  →   ^3.4.2
 
 2.  WARN  eslint@8.56.0: 2023-12-15T22:55:11.833Z
 deprecated: This version is no longer supported. Please see https://eslint.org/version-support for other options.
@@ -3001,10 +3003,6 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
 ### [MMM-GoogleAssistant by bugsounet](https://github.com/bugsounet/MMM-GoogleAssistant)
 
 1. Issues are not enabled in the GitHub repository. So users cannot report bugs. Please enable issues in your repo.
-2. Information: There are updates for 2 dependencie(s):
-   - @grpc/grpc-js  ^1.12.2  →  ^1.12.3
-   - eslint         ^9.15.0  →  ^9.16.0
-
 
 ### [MMM-GoogleBirthdaysProvider by PalatinCoder](https://github.com/PalatinCoder/MMM-GoogleBirthdaysProvider)
 
@@ -3111,7 +3109,7 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
 2. Recommendation: Found `axios` in file `package.json`: Replace it with built-in fetch.
 3. Information: There are updates for 3 dependencie(s):
    - @stylistic/eslint-plugin  ^2.10.1  →  ^2.11.0
-   - axios                      ^1.7.7  →   ^1.7.8
+   - axios                      ^1.7.7  →   ^1.7.9
    - eslint                    ^9.15.0  →  ^9.16.0
 
 
@@ -3121,7 +3119,7 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
    - @eslint/js   ^9.9.0  →   ^9.16.0
    - eslint       ^9.9.0  →   ^9.16.0
    - globals     ^15.9.0  →  ^15.13.0
-   - prettier      3.3.3  →     3.4.1
+   - prettier      3.3.3  →     3.4.2
 
 
 ### [MMM-GoogleShoppingList by Gismo150](https://github.com/Gismo150/MMM-GoogleShoppingList)
@@ -4037,7 +4035,7 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
    - eslint                     ^9.14.0  →   ^9.16.0
    - globals                   ^15.12.0  →  ^15.13.0
    - markdownlint-cli           ^0.42.0  →   ^0.43.0
-   - prettier                    ^3.3.3  →    ^3.4.1
+   - prettier                    ^3.3.3  →    ^3.4.2
 
 
 ### [MMM-ISS-Map by khassel](https://gitlab.com/khassel/MMM-ISS-Map)
@@ -4096,7 +4094,7 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
    - @typescript-eslint/parser         ^6.19.1  →  ^8.17.0
    - eslint                            ^8.56.0  →  ^9.16.0
    - eslint-plugin-prettier             ^5.1.3  →   ^5.2.1
-   - prettier                           ^3.2.4  →   ^3.4.1
+   - prettier                           ^3.2.4  →   ^3.4.2
    - rollup                             ^4.9.6  →  ^4.28.0
    - rollup-plugin-banner2              ^1.2.2  →   ^1.3.0
    - typescript                         ^5.3.3  →   ^5.7.2
@@ -4223,7 +4221,7 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
    - eslint-plugin-jsonc              ^2.15.0  →   ^2.18.2
    - globals                          ^15.0.0  →  ^15.13.0
    - markdownlint-cli                 ^0.39.0  →   ^0.43.0
-   - prettier                          ^3.2.5  →    ^3.4.1
+   - prettier                          ^3.2.5  →    ^3.4.2
 
 2.  WARN  eslint@8.57.0: 2024-02-23T20:39:43.282Z
 deprecated: This version is no longer supported. Please see https://eslint.org/version-support for other options.
@@ -4853,7 +4851,7 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
    - globals                          ^15.9.0  →  ^15.13.0
    - husky                            ^9.0.11  →    ^9.1.7
    - markdownlint-cli                 ^0.41.0  →   ^0.43.0
-   - prettier                          ^3.3.3  →    ^3.4.1
+   - prettier                          ^3.3.3  →    ^3.4.2
    - semantic-release                 ^24.1.0  →   ^24.2.0
    - stylelint                        ^16.9.0  →  ^16.11.0
    - stylelint-config-standard        ^36.0.0  →   ^36.0.1
@@ -5034,7 +5032,7 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
 2. Recommendation: Found `axios` in file `package.json`: Replace it with built-in fetch.
 3. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
 4. Information: There are updates for 1 dependencie(s):
-   - axios  ^1.6.8  →  ^1.7.8
+   - axios  ^1.6.8  →  ^1.7.9
 
 
 ### [MM-concert-calendar by muilpp](https://github.com/muilpp/MM-concert-calendar)
@@ -6248,7 +6246,7 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
    - @stylistic/eslint-plugin           ^1.5.4  →  ^2.11.0
    - @typescript-eslint/eslint-plugin  ^6.20.0  →  ^8.17.0
    - eslint                            ^8.56.0  →  ^9.16.0
-   - prettier                           ^3.2.5  →   ^3.4.1
+   - prettier                           ^3.2.5  →   ^3.4.2
    - rollup                             ^4.9.6  →  ^4.28.0
    - rollup-plugin-banner2              ^1.2.2  →   ^1.3.0
    - typescript                         ^5.3.3  →   ^5.7.2
@@ -6527,7 +6525,7 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
    - eslint                     ^9.14.0  →   ^9.16.0
    - globals                   ^15.12.0  →  ^15.13.0
    - markdownlint-cli           ^0.42.0  →   ^0.43.0
-   - prettier                    ^3.3.3  →    ^3.4.1
+   - prettier                    ^3.3.3  →    ^3.4.2
 
 
 ### [MMM-OneDrive by hermanho](https://github.com/hermanho/MMM-OneDrive)
@@ -7448,17 +7446,19 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
 
 ### [MMM-PublicTransportBerlin by deg0nz](https://github.com/deg0nz/MMM-PublicTransportBerlin)
 
-1. Information: There are updates for 4 dependencie(s):
+1. Information: There are updates for 5 dependencie(s):
    - @eslint/js               ^9.12.0  →   ^9.16.0
    - eslint-plugin-import-x    ^4.4.0  →    ^4.5.0
    - globals                 ^15.12.0  →  ^15.13.0
+   - prettier                  ^3.4.1  →    ^3.4.2
    - stylelint               ^16.10.0  →  ^16.11.0
 
 
 ### [MMM-PublicTransportHafas by KristjanESPERANTO](https://github.com/KristjanESPERANTO/MMM-PublicTransportHafas)
 
-1. Information: There are updates for 1 dependencie(s):
-   - globals  ^15.12.0  →  ^15.13.0
+1. Information: There are updates for 2 dependencie(s):
+   - globals   ^15.12.0  →  ^15.13.0
+   - prettier    ^3.4.1  →    ^3.4.2
 
 
 ### [MMM-PublicTransportVVO by ChristianGeie](https://github.com/ChristianGeie/MMM-PublicTransportVVO)
@@ -7597,7 +7597,7 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
    - @rollup/plugin-node-resolve  ^15.2.3  →  ^15.3.0
    - @rollup/plugin-typescript    ^11.1.6  →  ^12.1.1
    - eslint                        ^9.9.1  →  ^9.16.0
-   - prettier                      ^3.3.3  →   ^3.4.1
+   - prettier                      ^3.3.3  →   ^3.4.2
    - rollup                       ^4.21.1  →  ^4.28.0
    - typescript                    ^5.5.4  →   ^5.7.2
    - typescript-eslint             ^8.3.0  →  ^8.17.0
@@ -8819,7 +8819,7 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
 2. Recommendation: Found `axios` in file `package.json`: Replace it with built-in fetch.
 3. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
 4. Information: There are updates for 2 dependencie(s):
-   - axios  ^1.6.0  →   ^1.7.8
+   - axios  ^1.6.0  →   ^1.7.9
    - open   ^6.4.0  →  ^10.1.0
 
 
@@ -10314,6 +10314,12 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
 6. Outdated: Local jQuery file `jquery.min.js` seems to be outdated. jQuery v3.7 or higher is recommended.
 7. Recommendation: Found `https://cdnjs.cloudflare.com` in file `system.html`: It looks like a package is loaded via CDN. It would be better if the package were installed locally via npm.
 
+### [MMM-WebSpeechTTS by KristjanESPERANTO](https://github.com/KristjanESPERANTO/MMM-WebSpeechTTS)
+
+1. Information: There are updates for 1 dependencie(s):
+   - prettier  ^3.4.1  →  ^3.4.2
+
+
 ### [MMM-Webuntis by HeikoGr](https://github.com/HeikoGr/MMM-Webuntis)
 
 1. Recommendation: No lint script found in package.json. It is recommended to add one.
@@ -10476,7 +10482,7 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
 
 1. Information: There are updates for 2 dependencie(s):
    - eslint    ^8.56.0  →  ^9.16.0
-   - prettier   ^3.1.1  →   ^3.4.1
+   - prettier   ^3.1.1  →   ^3.4.2
 
 2.  WARN  eslint@8.57.1: 2024-09-16T15:20:44.208Z
 deprecated: This version is no longer supported. Please see https://eslint.org/version-support for other options.

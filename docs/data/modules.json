@@ -5750,7 +5750,7 @@
     "maintainerURL": "",
     "description": "This module allows to add a glass effect to MagicMirror\u00b2 modules.",
     "issues": true,
-    "stars": 8,
+    "stars": 9,
     "license": "MIT",
     "tags": [
       "glassy",
@@ -5816,7 +5816,7 @@
     "maintainerURL": "https://github.com/kurtern84",
     "description": "Displays the user's Gmail profile picture and name, and checks for unread emails in the inbox.",
     "issues": true,
-    "stars": 0,
+    "stars": 1,
     "license": "MIT",
     "image": "screenshot.jpg",
     "defaultSortWeight": 4,
@@ -5860,7 +5860,7 @@
     "maintainerURL": "https://wiki.bugsounet.fr",
     "description": "MMM-GoogleAssistant is an real embedded Google assistant on MagicMirror\u00b2 with many <a target=\"_blank\" href=\"#extended-plugins-for-mmm-googleassistant\">plugins</a>.",
     "issues": true,
-    "stars": 94,
+    "stars": 95,
     "hasGithubIssues": false,
     "license": "MIT",
     "tags": [
@@ -5873,8 +5873,8 @@
       "smart home"
     ],
     "image": "resources-previewFS.jpg",
-    "defaultSortWeight": -1,
-    "lastCommit": "2024-11-23T12:52:28+01:00"
+    "defaultSortWeight": -2,
+    "lastCommit": "2024-12-04T17:28:55+01:00"
   },
   {
     "name": "MMM-GoogleAssistant",
@@ -5886,7 +5886,7 @@
     "description": "Google Assistant integration using python library. Activated using hotword 'Ok Google'.",
     "issues": false,
     "outdated": "Abandoned. No reactions to issues since years. Seems not to work anymore.",
-    "stars": 117,
+    "stars": 118,
     "license": "MIT",
     "image": "assistant_active.jpg",
     "defaultSortWeight": 901,
@@ -5935,7 +5935,7 @@
     "maintainerURL": "",
     "description": "See what's playing in your Google Cast device.",
     "issues": true,
-    "stars": 23,
+    "stars": 24,
     "license": "AGPL-3.0",
     "tags": [
       "google",
@@ -6004,9 +6004,9 @@
     "maintainerURL": "",
     "description": "Displays one list from Google Keep.",
     "issues": true,
-    "stars": 10,
+    "stars": 11,
     "license": "MIT",
-    "defaultSortWeight": 9,
+    "defaultSortWeight": 8,
     "lastCommit": "2024-11-08T21:47:21+01:00"
   },
   {
@@ -6032,7 +6032,7 @@
     "maintainerURL": "https://github.com/MartinGris",
     "description": "Tracking of multiple objects on a google map. Position can be updated by a notification.",
     "issues": true,
-    "stars": 15,
+    "stars": 16,
     "license": "MIT",
     "tags": [
       "google maps",
@@ -6072,7 +6072,7 @@
     "maintainerURL": "https://github.com/hermanho",
     "description": "Image gallery or wallpaper with your Google Photos account.",
     "issues": true,
-    "stars": 170,
+    "stars": 172,
     "license": "MIT",
     "tags": [
       "googlephotos"
@@ -19508,7 +19508,7 @@
     "maintainer": "KristjanESPERANTO",
     "maintainerURL": "",
     "description": "A Text-To-Speech module which uses the Web Speech API of the browser. It is in an early stage of development. So far only German is supported.",
-    "issues": false,
+    "issues": true,
     "stars": 3,
     "license": "MIT",
     "tags": [

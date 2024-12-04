@@ -5670,7 +5670,7 @@
     "maintainerURL": "",
     "description": "This module allows to add a glass effect to MagicMirror² modules.",
     "issues": [],
-    "stars": 8,
+    "stars": 9,
     "license": "MIT",
     "tags": [
       "glassy",
@@ -5739,7 +5739,7 @@
       "There are no specific keywords in 'package.json'. We would use them as tags on the module list page. Add a few meaningful terms to the keywords in the package.json. Not just “magicmirror” or “module”.",
       "Issue: The license in the package.json (ISC) doesn't match the license file (MIT)."
     ],
-    "stars": 0,
+    "stars": 1,
     "license": "MIT",
     "image": "screenshot.jpg"
   },
@@ -5786,7 +5786,7 @@
     "issues": [
       "Issues are not enabled in the GitHub repository. So users cannot report bugs. Please enable issues in your repo."
     ],
-    "stars": 94,
+    "stars": 95,
     "hasGithubIssues": false,
     "license": "MIT",
     "tags": [
@@ -5814,7 +5814,7 @@
       "There are no keywords in 'package.json'. We would use them as tags on the module list page."
     ],
     "outdated": "Abandoned. No reactions to issues since years. Seems not to work anymore.",
-    "stars": 117,
+    "stars": 118,
     "license": "MIT",
     "image": "assistant_active.jpg"
   },
@@ -5861,7 +5861,7 @@
     "issues": [
       "Issue: The license in the package.json (GPL-3.0-only) doesn't match the license file (AGPL-3.0)."
     ],
-    "stars": 23,
+    "stars": 24,
     "license": "AGPL-3.0",
     "tags": [
       "google",
@@ -5932,7 +5932,7 @@
       "There are no keywords in 'package.json'. We would use them as tags on the module list page.",
       "No image found."
     ],
-    "stars": 10,
+    "stars": 11,
     "license": "MIT"
   },
   {
@@ -5959,7 +5959,7 @@
     "maintainerURL": "https://github.com/MartinGris",
     "description": "Tracking of multiple objects on a google map. Position can be updated by a notification.",
     "issues": [],
-    "stars": 15,
+    "stars": 16,
     "license": "MIT",
     "tags": [
       "google maps",
@@ -5997,7 +5997,7 @@
     "maintainerURL": "https://github.com/hermanho",
     "description": "Image gallery or wallpaper with your Google Photos account.",
     "issues": [],
-    "stars": 170,
+    "stars": 172,
     "license": "MIT",
     "tags": [
       "googlephotos"
