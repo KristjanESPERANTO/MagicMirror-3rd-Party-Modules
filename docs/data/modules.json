@@ -2516,7 +2516,7 @@
     "license": "ISC",
     "image": "doc_images-MMM-Config base.jpg",
     "defaultSortWeight": 9,
-    "lastCommit": "2024-11-10T08:44:07-06:00"
+    "lastCommit": "2024-12-04T17:51:12-06:00"
   },
   {
     "name": "MMM-Confucius-say",
@@ -5153,7 +5153,7 @@
     ],
     "image": "screenshot.jpg",
     "defaultSortWeight": 4,
-    "lastCommit": "2024-12-02T10:48:23+01:00"
+    "lastCommit": "2024-12-04T21:15:40+01:00"
   },
   {
     "name": "MMM-Fortnite",
@@ -5873,7 +5873,7 @@
       "smart home"
     ],
     "image": "resources-previewFS.jpg",
-    "defaultSortWeight": -2,
+    "defaultSortWeight": -1,
     "lastCommit": "2024-12-04T17:28:55+01:00"
   },
   {
@@ -6298,7 +6298,7 @@
     "maintainerURL": "",
     "description": "Detecting 3D gesture with GroveGesture Sensor(PAJ7620u2).",
     "issues": true,
-    "stars": 37,
+    "stars": 38,
     "license": "MIT",
     "tags": [
       "grove gesture",
@@ -6442,7 +6442,7 @@
     "maintainerURL": "",
     "description": "An alternate home-assistant integration.",
     "issues": true,
-    "stars": 31,
+    "stars": 32,
     "license": "GPL-3.0",
     "tags": [
       "home-assistant"

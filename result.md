@@ -1,6 +1,6 @@
 # Result of the module analysis
 
-Last update: 2024-12-04T17:39:04+01:00
+Last update: 2024-12-05T05:38:55+01:00
 
 ## Statistics
 
@@ -9,7 +9,7 @@ Last update: 2024-12-04T17:39:04+01:00
 | modules analyzed     |   1210   |
 | maintainer           |    650   |
 | modules with issues  |   1210   |
-| issues               |   6946   |
+| issues               |   6947   |
 | modules at github    |   1100   |
 | modules at gitlab    |     10   |
 | modules at bitbucket |      1   |
@@ -3003,6 +3003,9 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
 ### [MMM-GoogleAssistant by bugsounet](https://github.com/bugsounet/MMM-GoogleAssistant)
 
 1. Issues are not enabled in the GitHub repository. So users cannot report bugs. Please enable issues in your repo.
+2. Information: There are updates for 1 dependencie(s):
+   - @grpc/grpc-js  ^1.12.3  →  ^1.12.4
+
 
 ### [MMM-GoogleBirthdaysProvider by PalatinCoder](https://github.com/PalatinCoder/MMM-GoogleBirthdaysProvider)
 
@@ -3129,7 +3132,7 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
 3. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
 4. Information: There are updates for 2 dependencie(s):
    - fs-extra   ^7.0.0  →   ^11.2.0
-   - puppeteer  ^2.0.0  →  ^23.10.0
+   - puppeteer  ^2.0.0  →  ^23.10.1
 
 
 ### [MMM-GoogleTasks by spydersoft-consulting](https://github.com/spydersoft-consulting/MMM-GoogleTasks)
@@ -4067,8 +4070,8 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
 4. Information: There are updates for 5 dependencie(s):
    - @electron/rebuild    ^3.6.0  →    ^3.7.1
    - node-abi            ^3.65.0  →   ^3.71.0
-   - node-gyp            ^10.2.0  →   ^10.3.1
-   - puppeteer          ^22.15.0  →  ^23.10.0
+   - node-gyp            ^10.2.0  →   ^11.0.0
+   - puppeteer          ^22.15.0  →  ^23.10.1
    - sharp               ^0.33.4  →   ^0.33.5
 
 
@@ -9128,7 +9131,7 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
 3. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
 4. Information: There are updates for 2 dependencie(s):
    - mocha-logger      ^1.0.7  →   ^1.0.8
-   - node-tado-client  ^0.9.3  →  ^0.20.1
+   - node-tado-client  ^0.9.3  →  ^0.21.1
 
 
 ### [MMM-TAF by imperian](https://github.com/imperian/MMM-TAF)
