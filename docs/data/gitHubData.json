@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "2024-12-05T04:30:28.646Z",
+  "lastUpdate": "2024-12-05T16:30:31.398Z",
   "repositories": [
     {
       "id": "0lek/MMM-socialbicycles",
@@ -1459,7 +1459,7 @@
     },
     {
       "id": "bitte-ein-bit/MMM-iCloud-Client",
-      "gitHubDataLastUpdate": "2024-11-16T04:30:24.107Z",
+      "gitHubDataLastUpdate": "2024-12-05T16:30:29.927Z",
       "gitHubData": {
         "issues": 9,
         "stars": 27,
@@ -2915,7 +2915,7 @@
     },
     {
       "id": "coderpussy/MMM-HVIEW-Snapshot",
-      "gitHubDataLastUpdate": "2024-11-16T04:30:22.700Z",
+      "gitHubDataLastUpdate": "2024-12-05T16:30:28.445Z",
       "gitHubData": {
         "issues": 0,
         "stars": 1,
@@ -3335,7 +3335,7 @@
     },
     {
       "id": "dancj/MMM-Hover",
-      "gitHubDataLastUpdate": "2024-11-16T04:30:17.681Z",
+      "gitHubDataLastUpdate": "2024-12-05T16:30:21.687Z",
       "gitHubData": {
         "issues": 2,
         "stars": 5,
@@ -3881,7 +3881,7 @@
     },
     {
       "id": "djerik/MMM-HomeConnect",
-      "gitHubDataLastUpdate": "2024-11-16T04:30:14.844Z",
+      "gitHubDataLastUpdate": "2024-12-05T16:30:18.488Z",
       "gitHubData": {
         "issues": 2,
         "stars": 3,
@@ -3895,7 +3895,7 @@
     },
     {
       "id": "djey47/MMM-IDF-LOCALTRANSPORT",
-      "gitHubDataLastUpdate": "2024-11-16T16:30:15.756Z",
+      "gitHubDataLastUpdate": "2024-12-05T16:30:31.359Z",
       "gitHubData": {
         "issues": 5,
         "stars": 3,
@@ -4581,7 +4581,7 @@
     },
     {
       "id": "Eunanibus/MMM-HTTPRequestDisplay",
-      "gitHubDataLastUpdate": "2024-11-16T04:30:19.019Z",
+      "gitHubDataLastUpdate": "2024-12-05T16:30:23.385Z",
       "gitHubData": {
         "issues": 2,
         "stars": 17,
@@ -5631,7 +5631,7 @@
     },
     {
       "id": "gueguet/MMM-Hue-Controller",
-      "gitHubDataLastUpdate": "2024-11-16T04:30:20.300Z",
+      "gitHubDataLastUpdate": "2024-12-05T16:30:25.781Z",
       "gitHubData": {
         "issues": 1,
         "stars": 4,
@@ -5673,7 +5673,7 @@
     },
     {
       "id": "harv-singh/MMM-hukamnama",
-      "gitHubDataLastUpdate": "2024-11-16T04:30:21.263Z",
+      "gitHubDataLastUpdate": "2024-12-05T16:30:27.028Z",
       "gitHubData": {
         "issues": 0,
         "stars": 1,
@@ -6471,7 +6471,7 @@
     },
     {
       "id": "jboucly/MMM-Hue-Controller-2",
-      "gitHubDataLastUpdate": "2024-11-16T04:30:20.745Z",
+      "gitHubDataLastUpdate": "2024-12-05T16:30:26.397Z",
       "gitHubData": {
         "issues": 1,
         "stars": 3,
@@ -6681,7 +6681,7 @@
     },
     {
       "id": "JFWenisch/MMM-Homematic-Rooms",
-      "gitHubDataLastUpdate": "2024-11-16T04:30:15.791Z",
+      "gitHubDataLastUpdate": "2024-12-05T16:30:19.451Z",
       "gitHubData": {
         "issues": 0,
         "stars": 2,
@@ -6905,7 +6905,7 @@
     },
     {
       "id": "john3300/MMM-HomeAutomationNotifications",
-      "gitHubDataLastUpdate": "2024-11-16T04:30:14.309Z",
+      "gitHubDataLastUpdate": "2024-12-05T16:30:17.979Z",
       "gitHubData": {
         "issues": 2,
         "stars": 13,
@@ -8081,7 +8081,7 @@
     },
     {
       "id": "leinich/MMM-homeassistant-sensors",
-      "gitHubDataLastUpdate": "2024-11-16T04:30:12.329Z",
+      "gitHubDataLastUpdate": "2024-12-05T16:30:15.223Z",
       "gitHubData": {
         "issues": 1,
         "stars": 63,
@@ -8207,7 +8207,7 @@
     },
     {
       "id": "maan75/MMM-HRS-PickupPlan",
-      "gitHubDataLastUpdate": "2024-11-16T04:30:18.158Z",
+      "gitHubDataLastUpdate": "2024-12-05T16:30:22.246Z",
       "gitHubData": {
         "issues": 1,
         "stars": 0,
@@ -8529,7 +8529,7 @@
     },
     {
       "id": "mathewmeconry/MMM-HomeAssistant-Touch",
-      "gitHubDataLastUpdate": "2024-11-16T04:30:13.424Z",
+      "gitHubDataLastUpdate": "2024-12-05T16:30:17.005Z",
       "gitHubData": {
         "issues": 1,
         "stars": 9,
@@ -9131,7 +9131,7 @@
     },
     {
       "id": "MitchSS/MMM-Hue",
-      "gitHubDataLastUpdate": "2024-11-16T04:30:19.472Z",
+      "gitHubDataLastUpdate": "2024-12-05T16:30:23.913Z",
       "gitHubData": {
         "issues": 1,
         "stars": 28,
@@ -9425,7 +9425,7 @@
     },
     {
       "id": "MMRIZE/MMM-Hotword2",
-      "gitHubDataLastUpdate": "2024-11-16T04:30:17.233Z",
+      "gitHubDataLastUpdate": "2024-12-05T16:30:21.140Z",
       "gitHubData": {
         "issues": 1,
         "stars": 1,
@@ -9635,7 +9635,7 @@
     },
     {
       "id": "morozgrafix/MMM-horoscope",
-      "gitHubDataLastUpdate": "2024-11-16T04:30:16.726Z",
+      "gitHubDataLastUpdate": "2024-12-05T16:30:20.637Z",
       "gitHubData": {
         "issues": 6,
         "stars": 5,
@@ -10307,7 +10307,7 @@
     },
     {
       "id": "mykle1/MMM-HumanCalendar",
-      "gitHubDataLastUpdate": "2024-11-16T04:30:21.765Z",
+      "gitHubDataLastUpdate": "2024-12-05T16:30:27.496Z",
       "gitHubData": {
         "issues": 0,
         "stars": 2,
@@ -10321,7 +10321,7 @@
     },
     {
       "id": "mykle1/MMM-HumanClock",
-      "gitHubDataLastUpdate": "2024-11-16T04:30:22.189Z",
+      "gitHubDataLastUpdate": "2024-12-05T16:30:27.996Z",
       "gitHubData": {
         "issues": 0,
         "stars": 3,
@@ -11063,7 +11063,7 @@
     },
     {
       "id": "nixnuex/MMM-iCal-ToDo",
-      "gitHubDataLastUpdate": "2024-11-16T04:30:23.649Z",
+      "gitHubDataLastUpdate": "2024-12-05T16:30:29.409Z",
       "gitHubData": {
         "issues": 0,
         "stars": 3,
@@ -11749,7 +11749,7 @@
     },
     {
       "id": "PierreGode/MMM-ICA",
-      "gitHubDataLastUpdate": "2024-11-16T04:30:23.148Z",
+      "gitHubDataLastUpdate": "2024-12-05T16:30:28.928Z",
       "gitHubData": {
         "issues": 1,
         "stars": 2,
@@ -13051,16 +13051,16 @@
     },
     {
       "id": "sdetweil/MMM-Config",
-      "gitHubDataLastUpdate": "2024-11-16T04:30:19.892Z",
+      "gitHubDataLastUpdate": "2024-12-05T16:30:25.238Z",
       "gitHubData": {
         "issues": 1,
-        "stars": 30,
+        "stars": 31,
         "license": null,
         "archived": false,
         "disabled": false,
         "defaultBranch": "main",
         "has_issues": true,
-        "lastCommit": "2024-11-10T14:44:07Z"
+        "lastCommit": "2024-12-04T23:51:12Z"
       }
     },
     {
@@ -13555,7 +13555,7 @@
     },
     {
       "id": "Sickboy78/MMM-Homematic",
-      "gitHubDataLastUpdate": "2024-11-16T04:30:15.297Z",
+      "gitHubDataLastUpdate": "2024-12-05T16:30:18.995Z",
       "gitHubData": {
         "issues": 0,
         "stars": 12,
@@ -13891,7 +13891,7 @@
     },
     {
       "id": "Snille/MMM-homeassistant-sensors",
-      "gitHubDataLastUpdate": "2024-11-16T04:30:12.815Z",
+      "gitHubDataLastUpdate": "2024-12-05T16:30:16.410Z",
       "gitHubData": {
         "issues": 10,
         "stars": 63,
@@ -14059,7 +14059,7 @@
     },
     {
       "id": "spitzlbergerj/MMM-Homematic-Thermostats",
-      "gitHubDataLastUpdate": "2024-11-16T04:30:16.346Z",
+      "gitHubDataLastUpdate": "2024-12-05T16:30:20.063Z",
       "gitHubData": {
         "issues": 0,
         "stars": 1,
@@ -15627,7 +15627,7 @@
     },
     {
       "id": "ulrichwisser/MMM-HTMLSnippet",
-      "gitHubDataLastUpdate": "2024-11-16T04:30:18.601Z",
+      "gitHubDataLastUpdate": "2024-12-05T16:30:22.828Z",
       "gitHubData": {
         "issues": 0,
         "stars": 12,
@@ -16145,7 +16145,7 @@
     },
     {
       "id": "wiedsee/MMM-IconDisplayer",
-      "gitHubDataLastUpdate": "2024-11-16T16:30:15.180Z",
+      "gitHubDataLastUpdate": "2024-12-05T16:30:30.538Z",
       "gitHubData": {
         "issues": 0,
         "stars": 0,
@@ -16285,9 +16285,9 @@
     },
     {
       "id": "wonderslug/MMM-HomeAssistantDisplay",
-      "gitHubDataLastUpdate": "2024-11-16T04:30:13.902Z",
+      "gitHubDataLastUpdate": "2024-12-05T16:30:17.478Z",
       "gitHubData": {
-        "issues": 5,
+        "issues": 6,
         "stars": 94,
         "license": "MIT",
         "archived": false,
@@ -16761,7 +16761,7 @@
     },
     {
       "id": "zuo000/MMM-HomeAssistant",
-      "gitHubDataLastUpdate": "2024-11-16T04:30:11.882Z",
+      "gitHubDataLastUpdate": "2024-12-05T16:30:14.531Z",
       "gitHubData": {
         "issues": 0,
         "stars": 26,

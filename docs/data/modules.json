@@ -2512,7 +2512,7 @@
     "maintainerURL": "",
     "description": "Form based (in browser) configuration for MagicMirror and modules.",
     "issues": true,
-    "stars": 30,
+    "stars": 31,
     "license": "ISC",
     "image": "doc_images-MMM-Config base.jpg",
     "defaultSortWeight": 9,

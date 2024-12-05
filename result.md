@@ -1,6 +1,6 @@
 # Result of the module analysis
 
-Last update: 2024-12-05T05:38:55+01:00
+Last update: 2024-12-05T17:38:58+01:00
 
 ## Statistics
 
@@ -2750,8 +2750,9 @@ deprecated: no longer maintained, switch to modern iconify-icon web component
 1. Recommendation: Found `"needle"` in file `node_helper.js`: Replace it with built-in fetch.
 2. Recommendation: Found `"needle"` in file `package.json`: Replace it with built-in fetch.
 3. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
-4. Information: There are updates for 1 dependencie(s):
-   - jsonata  ^2.0.5  →  ^2.0.6
+4. Information: There are updates for 2 dependencie(s):
+   - @xmldom/xmldom  ^0.9.5  →  ^0.9.6
+   - jsonata         ^2.0.5  →  ^2.0.6
 
 
 ### [MMM-FTP-image by jboucly](https://github.com/jboucly/MMM-FTP-image)
@@ -3003,8 +3004,9 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
 ### [MMM-GoogleAssistant by bugsounet](https://github.com/bugsounet/MMM-GoogleAssistant)
 
 1. Issues are not enabled in the GitHub repository. So users cannot report bugs. Please enable issues in your repo.
-2. Information: There are updates for 1 dependencie(s):
-   - @grpc/grpc-js  ^1.12.3  →  ^1.12.4
+2. Information: There are updates for 2 dependencie(s):
+   - @grpc/grpc-js               ^1.12.3  →  ^1.12.4
+   - eslint-plugin-package-json  ^0.17.0  →  ^0.18.0
 
 
 ### [MMM-GoogleBirthdaysProvider by PalatinCoder](https://github.com/PalatinCoder/MMM-GoogleBirthdaysProvider)
@@ -7459,9 +7461,10 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
 
 ### [MMM-PublicTransportHafas by KristjanESPERANTO](https://github.com/KristjanESPERANTO/MMM-PublicTransportHafas)
 
-1. Information: There are updates for 2 dependencie(s):
-   - globals   ^15.12.0  →  ^15.13.0
-   - prettier    ^3.4.1  →    ^3.4.2
+1. Information: There are updates for 3 dependencie(s):
+   - eslint-plugin-package-json   ^0.17.0  →   ^0.18.0
+   - globals                     ^15.12.0  →  ^15.13.0
+   - prettier                      ^3.4.1  →    ^3.4.2
 
 
 ### [MMM-PublicTransportVVO by ChristianGeie](https://github.com/ChristianGeie/MMM-PublicTransportVVO)
@@ -10052,7 +10055,7 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
    - @eslint/js   ^9.15.0  →   ^9.16.0
    - eslint       ^9.15.0  →   ^9.16.0
    - globals     ^15.12.0  →  ^15.13.0
-   - openai       ^4.73.1  →   ^4.75.0
+   - openai       ^4.73.1  →   ^4.76.0
 
 
 ### [MMM-Volume by Anonym-tsk](https://github.com/Anonym-tsk/MMM-Volume)
