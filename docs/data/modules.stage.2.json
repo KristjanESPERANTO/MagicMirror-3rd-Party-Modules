@@ -4785,18 +4785,6 @@
   {
     "name": "MMM-HomeAssistant",
     "category": "Utility / IoT / 3rd Party / Integration",
-    "url": "https://github.com/zuo000/MMM-HomeAssistant",
-    "id": "zuo000/MMM-HomeAssistant",
-    "maintainer": "zuo000",
-    "maintainerURL": "https://github.com/zuo000",
-    "description": "HomeAssistant frontend module using HA REST API, including Light, Switch, Sensor.",
-    "issues": [],
-    "stars": 26,
-    "license": "MIT"
-  },
-  {
-    "name": "MMM-HomeAssistant",
-    "category": "Utility / IoT / 3rd Party / Integration",
     "url": "https://github.com/yourdawi/MMM-HomeAssistant",
     "id": "yourdawi/MMM-HomeAssistant",
     "maintainer": "yourdawi",
@@ -4804,6 +4792,18 @@
     "description": "Display information out of HomeAssistant.",
     "issues": [],
     "stars": 0,
+    "license": "MIT"
+  },
+  {
+    "name": "MMM-HomeAssistant",
+    "category": "Utility / IoT / 3rd Party / Integration",
+    "url": "https://github.com/zuo000/MMM-HomeAssistant",
+    "id": "zuo000/MMM-HomeAssistant",
+    "maintainer": "zuo000",
+    "maintainerURL": "https://github.com/zuo000",
+    "description": "HomeAssistant frontend module using HA REST API, including Light, Switch, Sensor.",
+    "issues": [],
+    "stars": 26,
     "license": "MIT"
   },
   {

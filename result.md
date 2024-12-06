@@ -1,6 +1,6 @@
 # Result of the module analysis
 
-Last update: 2024-12-05T17:38:58+01:00
+Last update: 2024-12-06T05:38:47+01:00
 
 ## Statistics
 
@@ -8,8 +8,8 @@ Last update: 2024-12-05T17:38:58+01:00
 |:---------------------|:--------:|
 | modules analyzed     |   1210   |
 | maintainer           |    650   |
-| modules with issues  |   1210   |
-| issues               |   6947   |
+| modules with issues  |   1209   |
+| issues               |   6946   |
 | modules at github    |   1100   |
 | modules at gitlab    |     10   |
 | modules at bitbucket |      1   |
@@ -932,16 +932,6 @@ Last update: 2024-12-05T17:38:58+01:00
    - node_helper.js: Line 108, Column 53: Unsafe usage of optional chaining. If it short-circuits with 'undefined' the evaluation will throw TypeError. (rule: no-unsafe-optional-chaining)
    - node_helper.js: Line 164, Column 7: Unsafe usage of ReturnStatement. (rule: no-unsafe-finally)
    - node_helper.js: Line 177, Column 53: 'next' is defined but never used. (rule: no-unused-vars)
-
-
-### [MMM-CalendarExt2 by MMM-CalendarExt2](https://github.com/MMM-CalendarExt2/MMM-CalendarExt2)
-
-1. Information: There are updates for 5 dependencie(s):
-   - @eslint/js   ^9.15.0  →   ^9.16.0
-   - eslint       ^9.15.0  →   ^9.16.0
-   - globals     ^15.12.0  →  ^15.13.0
-   - prettier      ^3.4.1  →    ^3.4.2
-   - stylelint   ^16.10.0  →  ^16.11.0
 
 
 ### [MMM-CalendarExt3 by MMRIZE](https://github.com/MMRIZE/MMM-CalendarExt3)
@@ -2565,8 +2555,8 @@ deprecated: no longer maintained, switch to modern iconify-icon web component
 ### [MMM-FlipClock by MarcLandis](https://github.com/MarcLandis/MMM-FlipClock)
 
 1. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
-2. Information: There are updates for 1 dependencie(s):
-   - @pqina/flip  ^1.8.3  →  ^1.8.4
+2. ESLint issues:
+   - MMM-FlipClock.js: Line 225, Column 13: 'tick' is assigned a value but never used. (rule: no-unused-vars)
 
 
 ### [MMM-Flo by kagjerde](https://github.com/kagjerde/MMM-Flo)
@@ -2750,9 +2740,8 @@ deprecated: no longer maintained, switch to modern iconify-icon web component
 1. Recommendation: Found `"needle"` in file `node_helper.js`: Replace it with built-in fetch.
 2. Recommendation: Found `"needle"` in file `package.json`: Replace it with built-in fetch.
 3. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
-4. Information: There are updates for 2 dependencie(s):
+4. Information: There are updates for 1 dependencie(s):
    - @xmldom/xmldom  ^0.9.5  →  ^0.9.6
-   - jsonata         ^2.0.5  →  ^2.0.6
 
 
 ### [MMM-FTP-image by jboucly](https://github.com/jboucly/MMM-FTP-image)
@@ -3443,13 +3432,6 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
 5. Warning: No LICENSE file.
 6. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
 
-### [MMM-HomeAssistant by zuo000](https://github.com/zuo000/MMM-HomeAssistant)
-
-1. There is no `package.json`. We need this file to gather information about the module for the module list page.
-2. Outdated: Found `MichMich/MagicMirror` in file `README.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
-3. Deprecated: Found `require('request')` in file `node_helper.js`: Replace it with built-in fetch.
-4. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
-
 ### [MMM-HomeAssistant by yourdawi](https://github.com/yourdawi/MMM-HomeAssistant)
 
 1. `package.json` issue: No repository field.
@@ -3459,6 +3441,13 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
 5. Typo: Found `Magic Mirror` in file `package.json`: Replace it with `MagicMirror²`.
 6. Recommendation: Found `"node-fetch"` in file `package.json`: Replace it with built-in fetch.
 7. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
+
+### [MMM-HomeAssistant by zuo000](https://github.com/zuo000/MMM-HomeAssistant)
+
+1. There is no `package.json`. We need this file to gather information about the module for the module list page.
+2. Outdated: Found `MichMich/MagicMirror` in file `README.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
+3. Deprecated: Found `require('request')` in file `node_helper.js`: Replace it with built-in fetch.
+4. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
 
 ### [MMM-homeassistant-sensors by leinich](https://github.com/leinich/MMM-homeassistant-sensors)
 
@@ -3857,7 +3846,7 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
 2. Recommendation: Found `"eslint-plugin-json"` in file `package.json`: Replace it by `eslint-plugin-jsonc`.
 3. Recommendation: Replace eslintrc by new flat config.
 4. Information: There are updates for 1 dependencie(s):
-   - express  ^4.18.2  →  ^4.21.1
+   - express  ^4.18.2  →  ^4.21.2
 
 
 ### [MMM-imhdsk by Adman](https://github.com/Adman/MMM-imhdsk)
@@ -8831,8 +8820,9 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
 
 ### [EXT-Spotify by bugsounet](https://github.com/bugsounet/EXT-Spotify)
 
-1. Information: There are updates for 1 dependencie(s):
-   - eslint  ^9.15.0  →  ^9.16.0
+1. Information: There are updates for 2 dependencie(s):
+   - eslint   ^9.15.0  →  ^9.16.0
+   - express  ^4.21.1  →  ^4.21.2
 
 
 ### [MMM-SpotifyConnectUI by CatoAntonsen](https://github.com/CatoAntonsen/MMM-SpotifyConnectUI)
@@ -9134,7 +9124,7 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
 3. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
 4. Information: There are updates for 2 dependencie(s):
    - mocha-logger      ^1.0.7  →   ^1.0.8
-   - node-tado-client  ^0.9.3  →  ^0.21.1
+   - node-tado-client  ^0.9.3  →  ^0.21.2
 
 
 ### [MMM-TAF by imperian](https://github.com/imperian/MMM-TAF)

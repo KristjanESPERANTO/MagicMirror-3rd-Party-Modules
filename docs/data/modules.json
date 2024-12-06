@@ -1793,15 +1793,15 @@
     "maintainer": "MMM-CalendarExt2",
     "maintainerURL": "",
     "description": "Extended calendar and event view.",
-    "issues": true,
+    "issues": false,
     "stars": 99,
     "license": "MIT",
     "tags": [
       "calendar"
     ],
     "image": "docs-Configuration-Views-legend-full-example.jpg",
-    "defaultSortWeight": -1,
-    "lastCommit": "2024-11-27T23:45:48+01:00"
+    "defaultSortWeight": -2,
+    "lastCommit": "2024-12-06T00:35:23+01:00"
   },
   {
     "name": "MMM-CalendarExt3",
@@ -5080,7 +5080,7 @@
     ],
     "image": "example.jpg",
     "defaultSortWeight": 1,
-    "lastCommit": "2024-10-11T11:50:19+02:00"
+    "lastCommit": "2024-12-05T22:30:01+01:00"
   },
   {
     "name": "MMM-Flo",
@@ -5428,7 +5428,7 @@
     ],
     "image": "example_dab.jpg",
     "defaultSortWeight": 3,
-    "lastCommit": "2024-11-20T14:44:36+01:00"
+    "lastCommit": "2024-12-05T22:30:19+01:00"
   },
   {
     "name": "MMM-FTP-image",
@@ -6701,6 +6701,20 @@
   {
     "name": "MMM-HomeAssistant",
     "category": "Utility / IoT / 3rd Party / Integration",
+    "url": "https://github.com/yourdawi/MMM-HomeAssistant",
+    "id": "yourdawi/MMM-HomeAssistant",
+    "maintainer": "yourdawi",
+    "maintainerURL": "https://github.com/yourdawi",
+    "description": "Display information out of HomeAssistant.",
+    "issues": true,
+    "stars": 0,
+    "license": "MIT",
+    "defaultSortWeight": 6,
+    "lastCommit": "2024-11-24T21:23:18+01:00"
+  },
+  {
+    "name": "MMM-HomeAssistant",
+    "category": "Utility / IoT / 3rd Party / Integration",
     "url": "https://github.com/zuo000/MMM-HomeAssistant",
     "id": "zuo000/MMM-HomeAssistant",
     "maintainer": "zuo000",
@@ -6712,20 +6726,6 @@
     "image": "screenshot.jpg",
     "defaultSortWeight": 4,
     "lastCommit": "2020-04-08T18:54:01-07:00"
-  },
-  {
-    "name": "MMM-HomeAssistant",
-    "category": "Utility / IoT / 3rd Party / Integration",
-    "url": "https://github.com/yourdawi/MMM-HomeAssistant",
-    "id": "yourdawi/MMM-HomeAssistant",
-    "maintainer": "yourdawi",
-    "maintainerURL": "https://github.com/yourdawi",
-    "description": "Display information out of HomeAssistant.",
-    "issues": true,
-    "stars": 0,
-    "license": "MIT",
-    "defaultSortWeight": 6,
-    "lastCommit": "2024-11-24T21:23:18+01:00"
   },
   {
     "name": "MMM-homeassistant-sensors",
@@ -14833,7 +14833,7 @@
     "license": "MIT",
     "image": "img-example_3_types.jpg",
     "defaultSortWeight": 6,
-    "lastCommit": "2024-09-16T20:58:12+02:00"
+    "lastCommit": "2024-12-05T21:53:03+01:00"
   },
   {
     "name": "MMM-RepRapFirmware",
