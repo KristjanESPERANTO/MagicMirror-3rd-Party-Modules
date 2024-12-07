@@ -1,16 +1,16 @@
 # Result of the module analysis
 
-Last update: 2024-12-06T05:38:47+01:00
+Last update: 2024-12-07T17:42:23+01:00
 
 ## Statistics
 
 |                      | number   |
 |:---------------------|:--------:|
 | modules analyzed     |   1210   |
-| maintainer           |    650   |
-| modules with issues  |   1209   |
-| issues               |   6946   |
-| modules at github    |   1100   |
+| maintainer           |    649   |
+| modules with issues  |   1207   |
+| issues               |   6940   |
+| modules at github    |   1099   |
 | modules at gitlab    |     10   |
 | modules at bitbucket |      1   |
 
@@ -768,7 +768,7 @@ Last update: 2024-12-06T05:38:47+01:00
    - eslint                              ^8.57.0  →   ^9.16.0
    - eslint-plugin-prettier               ^5.1.3  →    ^5.2.1
    - prettier                             ^3.2.5  →    ^3.4.2
-   - rollup                               ^4.9.6  →   ^4.28.0
+   - rollup                               ^4.9.6  →   ^4.28.1
    - rollup-plugin-banner2                ^1.2.2  →    ^1.3.0
    - rxjs                                 ^7.5.5  →    ^7.8.1
    - typescript                           ^5.3.3  →    ^5.7.2
@@ -2652,12 +2652,6 @@ deprecated: no longer maintained, switch to modern iconify-icon web component
 5. Recommendation: Found `"node-fetch"` in file `node_helper.js`: Replace it with built-in fetch.
 6. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
 
-### [MMM-FranceInfo by bugsounet](https://github.com/bugsounet/MMM-FranceInfo)
-
-1. Information: There are updates for 1 dependencie(s):
-   - eslint  ^9.15.0  →  ^9.16.0
-
-
 ### [MMM-Freebox by bugsounet](https://github.com/bugsounet/MMM-Freebox)
 
 1. Recommendation: Found `axios` in file `freebox.js`: Replace it with built-in fetch.
@@ -2993,10 +2987,6 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
 ### [MMM-GoogleAssistant by bugsounet](https://github.com/bugsounet/MMM-GoogleAssistant)
 
 1. Issues are not enabled in the GitHub repository. So users cannot report bugs. Please enable issues in your repo.
-2. Information: There are updates for 2 dependencie(s):
-   - @grpc/grpc-js               ^1.12.3  →  ^1.12.4
-   - eslint-plugin-package-json  ^0.17.0  →  ^0.18.0
-
 
 ### [MMM-GoogleBirthdaysProvider by PalatinCoder](https://github.com/PalatinCoder/MMM-GoogleBirthdaysProvider)
 
@@ -3114,16 +3104,6 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
    - eslint       ^9.9.0  →   ^9.16.0
    - globals     ^15.9.0  →  ^15.13.0
    - prettier      3.3.3  →     3.4.2
-
-
-### [MMM-GoogleShoppingList by Gismo150](https://github.com/Gismo150/MMM-GoogleShoppingList)
-
-1. There are no keywords in 'package.json'. We would use them as tags on the module list page.
-2. Recommendation: The README seems not to have an update instruction (the word 'update' is missing). Please add one.
-3. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
-4. Information: There are updates for 2 dependencie(s):
-   - fs-extra   ^7.0.0  →   ^11.2.0
-   - puppeteer  ^2.0.0  →  ^23.10.1
 
 
 ### [MMM-GoogleTasks by spydersoft-consulting](https://github.com/spydersoft-consulting/MMM-GoogleTasks)
@@ -4089,7 +4069,7 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
    - eslint                            ^8.56.0  →  ^9.16.0
    - eslint-plugin-prettier             ^5.1.3  →   ^5.2.1
    - prettier                           ^3.2.4  →   ^3.4.2
-   - rollup                             ^4.9.6  →  ^4.28.0
+   - rollup                             ^4.9.6  →  ^4.28.1
    - rollup-plugin-banner2              ^1.2.2  →   ^1.3.0
    - typescript                         ^5.3.3  →   ^5.7.2
    - yahoo-finance2                    ^2.11.3  →  ^2.13.2
@@ -6241,7 +6221,7 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
    - @typescript-eslint/eslint-plugin  ^6.20.0  →  ^8.17.0
    - eslint                            ^8.56.0  →  ^9.16.0
    - prettier                           ^3.2.5  →   ^3.4.2
-   - rollup                             ^4.9.6  →  ^4.28.0
+   - rollup                             ^4.9.6  →  ^4.28.1
    - rollup-plugin-banner2              ^1.2.2  →   ^1.3.0
    - typescript                         ^5.3.3  →   ^5.7.2
 
@@ -7059,13 +7039,6 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
 3. Recommendation: The README seems not to have an install instruction (the words 'install' or 'installation' are missing). Please add one.
 4. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
 
-### [MMM-Pir by bugsounet](https://github.com/bugsounet/MMM-Pir)
-
-1. Information: There are updates for 2 dependencie(s):
-   - @stylistic/eslint-plugin  ^2.10.1  →  ^2.11.0
-   - eslint                    ^9.15.0  →  ^9.16.0
-
-
 ### [MMM-PirateSkyForecast by dankerthrone](https://github.com/dankerthrone/MMM-PirateSkyForecast)
 
 1. There are no keywords in 'package.json'. We would use them as tags on the module list page.
@@ -7593,7 +7566,7 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
    - @rollup/plugin-typescript    ^11.1.6  →  ^12.1.1
    - eslint                        ^9.9.1  →  ^9.16.0
    - prettier                      ^3.3.3  →   ^3.4.2
-   - rollup                       ^4.21.1  →  ^4.28.0
+   - rollup                       ^4.21.1  →  ^4.28.1
    - typescript                    ^5.5.4  →   ^5.7.2
    - typescript-eslint             ^8.3.0  →  ^8.17.0
 
@@ -9124,7 +9097,7 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
 3. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
 4. Information: There are updates for 2 dependencie(s):
    - mocha-logger      ^1.0.7  →   ^1.0.8
-   - node-tado-client  ^0.9.3  →  ^0.21.2
+   - node-tado-client  ^0.9.3  →  ^0.21.3
 
 
 ### [MMM-TAF by imperian](https://github.com/imperian/MMM-TAF)

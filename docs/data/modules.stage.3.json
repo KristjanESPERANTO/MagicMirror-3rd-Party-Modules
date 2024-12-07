@@ -6042,7 +6042,7 @@
   },
   {
     "name": "MMM-GoogleShoppingList",
-    "category": "Utility / IoT / 3rd Party / Integration",
+    "category": "Outdated Modules",
     "url": "https://github.com/Gismo150/MMM-GoogleShoppingList",
     "id": "Gismo150/MMM-GoogleShoppingList",
     "maintainer": "Gismo150",
@@ -6051,6 +6051,7 @@
     "issues": [
       "There are no keywords in 'package.json'. We would use them as tags on the module list page."
     ],
+    "outdated": "Abandoned. No reactions to issues since years. Seems not to work anymore.",
     "stars": 23,
     "license": "MIT",
     "image": "screenshot.jpg"
@@ -7573,6 +7574,22 @@
   },
   {
     "name": "MMM-ISS",
+    "category": "Outdated Modules",
+    "url": "https://github.com/mykle1/MMM-ISS",
+    "id": "mykle1/MMM-ISS",
+    "maintainer": "mykle1",
+    "maintainerURL": "",
+    "description": "Know when the International Space Station is visible from your location. Can be seen with the naked eye.",
+    "issues": [
+      "There is no `package.json`. We need this file to gather information about the module for the module list page."
+    ],
+    "outdated": "Abandoned. Developer is no longer active. Missing instructions to install dependency 'request'.",
+    "stars": 15,
+    "license": "MIT",
+    "image": "images-1.jpg"
+  },
+  {
+    "name": "MMM-ISS",
     "category": "Entertainment / Misc",
     "url": "https://github.com/daterrell/MMM-ISS",
     "id": "daterrell/MMM-ISS",
@@ -7587,22 +7604,6 @@
       "space station"
     ],
     "image": ".github-ISS-SS.jpg"
-  },
-  {
-    "name": "MMM-ISS",
-    "category": "Outdated Modules",
-    "url": "https://github.com/mykle1/MMM-ISS",
-    "id": "mykle1/MMM-ISS",
-    "maintainer": "mykle1",
-    "maintainerURL": "",
-    "description": "Know when the International Space Station is visible from your location. Can be seen with the naked eye.",
-    "issues": [
-      "There is no `package.json`. We need this file to gather information about the module for the module list page."
-    ],
-    "outdated": "Abandoned. Developer is no longer active. Missing instructions to install dependency 'request'.",
-    "stars": 15,
-    "license": "MIT",
-    "image": "images-1.jpg"
   },
   {
     "name": "MMM-ISS-Live",
@@ -7695,7 +7696,7 @@
     "maintainerURL": "https://github.com/jalibu",
     "description": "A simple but powerful vertical, horizontal or static stock ticker based on Yahoo's finance API. Supports international stocks, crypto currencies and index symbols. No API key required.",
     "issues": [],
-    "stars": 69,
+    "stars": 70,
     "license": "MIT",
     "tags": [
       "stock",
@@ -7905,7 +7906,7 @@
     "maintainerURL": "",
     "description": "Creates a table filled by a list gathered from a JSON request, and puts all variables of the object in its own table column.",
     "issues": [],
-    "stars": 25,
+    "stars": 26,
     "license": "MIT",
     "tags": [
       "json",
@@ -7986,7 +7987,7 @@
     "maintainerURL": "",
     "description": "Getting bluetooth remote control and keyboard inputs.",
     "issues": [],
-    "stars": 17,
+    "stars": 18,
     "license": "MIT",
     "tags": [
       "fire stick",

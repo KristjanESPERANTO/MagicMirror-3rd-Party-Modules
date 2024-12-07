@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "2024-12-06T04:30:30.921Z",
+  "lastUpdate": "2024-12-07T16:30:29.055Z",
   "repositories": [
     {
       "id": "0lek/MMM-socialbicycles",
@@ -255,7 +255,7 @@
     },
     {
       "id": "aegis1980/MMM-jokes",
-      "gitHubDataLastUpdate": "2024-11-17T04:30:18.965Z",
+      "gitHubDataLastUpdate": "2024-12-07T16:30:21.558Z",
       "gitHubData": {
         "issues": 0,
         "stars": 1,
@@ -577,7 +577,7 @@
     },
     {
       "id": "amcolash/MMM-json-feed",
-      "gitHubDataLastUpdate": "2024-11-17T04:30:20.304Z",
+      "gitHubDataLastUpdate": "2024-12-07T16:30:22.601Z",
       "gitHubData": {
         "issues": 4,
         "stars": 17,
@@ -647,7 +647,7 @@
     },
     {
       "id": "AndreasHagman/MMM-NOKElectricityForecast",
-      "gitHubDataLastUpdate": "2024-11-17T15:19:01.905Z",
+      "gitHubDataLastUpdate": "2024-12-07T16:30:28.460Z",
       "gitHubData": {
         "issues": 0,
         "stars": 0,
@@ -997,7 +997,7 @@
     },
     {
       "id": "B0neD0ct0r/MMM-Grocy-Mealplan",
-      "gitHubDataLastUpdate": "2024-11-17T04:30:24.978Z",
+      "gitHubDataLastUpdate": "2024-12-07T16:30:27.450Z",
       "gitHubData": {
         "issues": 0,
         "stars": 1,
@@ -1921,16 +1921,16 @@
     },
     {
       "id": "bugsounet/EXT-Keyboard",
-      "gitHubDataLastUpdate": "2024-11-17T04:30:25.416Z",
+      "gitHubDataLastUpdate": "2024-12-07T16:30:27.933Z",
       "gitHubData": {
-        "issues": 0,
+        "issues": 1,
         "stars": 2,
         "license": "MIT",
         "archived": false,
         "disabled": false,
         "defaultBranch": "main",
         "has_issues": true,
-        "lastCommit": "2024-11-09T12:06:48Z"
+        "lastCommit": "2024-11-23T12:19:18Z"
       }
     },
     {
@@ -2467,7 +2467,7 @@
     },
     {
       "id": "c-klinger/MMM-JsonValue",
-      "gitHubDataLastUpdate": "2024-11-17T04:30:22.086Z",
+      "gitHubDataLastUpdate": "2024-12-07T16:30:24.679Z",
       "gitHubData": {
         "issues": 1,
         "stars": 12,
@@ -3377,7 +3377,7 @@
     },
     {
       "id": "DanielHabenicht/MMM-json",
-      "gitHubDataLastUpdate": "2024-11-17T04:30:19.850Z",
+      "gitHubDataLastUpdate": "2024-12-07T16:30:22.100Z",
       "gitHubData": {
         "issues": 3,
         "stars": 15,
@@ -4707,7 +4707,7 @@
     },
     {
       "id": "fering3/MMM-JEOPARDY-Enhanced",
-      "gitHubDataLastUpdate": "2024-11-17T04:30:16.229Z",
+      "gitHubDataLastUpdate": "2024-12-07T16:30:18.422Z",
       "gitHubData": {
         "issues": 1,
         "stars": 2,
@@ -6289,10 +6289,10 @@
     },
     {
       "id": "jalibu/MMM-Jast",
-      "gitHubDataLastUpdate": "2024-11-17T04:30:15.383Z",
+      "gitHubDataLastUpdate": "2024-12-07T16:30:17.521Z",
       "gitHubData": {
-        "issues": 3,
-        "stars": 69,
+        "issues": 4,
+        "stars": 70,
         "license": "MIT",
         "archived": false,
         "disabled": false,
@@ -6807,7 +6807,7 @@
     },
     {
       "id": "jirsis/JIR-tarifa-luz",
-      "gitHubDataLastUpdate": "2024-11-17T04:30:17.127Z",
+      "gitHubDataLastUpdate": "2024-12-07T16:30:19.420Z",
       "gitHubData": {
         "issues": 1,
         "stars": 2,
@@ -7493,7 +7493,7 @@
     },
     {
       "id": "kalliope-project/MMM-kalliope",
-      "gitHubDataLastUpdate": "2024-11-17T04:30:23.065Z",
+      "gitHubDataLastUpdate": "2024-12-07T16:30:25.619Z",
       "gitHubData": {
         "issues": 2,
         "stars": 8,
@@ -7689,7 +7689,7 @@
     },
     {
       "id": "Kreshnik/MMM-JokeAPI",
-      "gitHubDataLastUpdate": "2024-11-17T04:30:18.506Z",
+      "gitHubDataLastUpdate": "2024-12-07T16:30:20.947Z",
       "gitHubData": {
         "issues": 3,
         "stars": 11,
@@ -7745,7 +7745,7 @@
     },
     {
       "id": "KristjanESPERANTO/MMM-ISS-Live",
-      "gitHubDataLastUpdate": "2024-11-17T04:30:13.615Z",
+      "gitHubDataLastUpdate": "2024-12-07T16:30:15.509Z",
       "gitHubData": {
         "issues": 1,
         "stars": 6,
@@ -7913,7 +7913,7 @@
     },
     {
       "id": "l0b5ter/KeyDisplayed",
-      "gitHubDataLastUpdate": "2024-11-17T15:19:02.496Z",
+      "gitHubDataLastUpdate": "2024-12-07T16:30:29.003Z",
       "gitHubData": {
         "issues": 0,
         "stars": 2,
@@ -7969,7 +7969,7 @@
     },
     {
       "id": "lavolp3/MMM-Keyboard",
-      "gitHubDataLastUpdate": "2024-11-17T04:30:24.420Z",
+      "gitHubDataLastUpdate": "2024-12-07T16:30:26.927Z",
       "gitHubData": {
         "issues": 2,
         "stars": 4,
@@ -8053,7 +8053,7 @@
     },
     {
       "id": "LeftBrainCreated/MMM-JustForTodayMeditation",
-      "gitHubDataLastUpdate": "2024-11-17T04:30:22.599Z",
+      "gitHubDataLastUpdate": "2024-12-07T16:30:25.182Z",
       "gitHubData": {
         "issues": 2,
         "stars": 0,
@@ -8963,7 +8963,7 @@
     },
     {
       "id": "michgue/MMM-JNV",
-      "gitHubDataLastUpdate": "2024-11-17T04:30:18.104Z",
+      "gitHubDataLastUpdate": "2024-12-07T16:30:20.446Z",
       "gitHubData": {
         "issues": 1,
         "stars": 1,
@@ -10349,7 +10349,7 @@
     },
     {
       "id": "mykle1/MMM-ISS",
-      "gitHubDataLastUpdate": "2024-11-17T04:30:13.184Z",
+      "gitHubDataLastUpdate": "2024-12-07T16:30:15.023Z",
       "gitHubData": {
         "issues": 0,
         "stars": 15,
@@ -11105,7 +11105,7 @@
     },
     {
       "id": "njwilliams/MMM-Kanji-Random",
-      "gitHubDataLastUpdate": "2024-11-17T04:30:23.541Z",
+      "gitHubDataLastUpdate": "2024-12-07T16:30:26.066Z",
       "gitHubData": {
         "issues": 0,
         "stars": 2,
@@ -11217,7 +11217,7 @@
     },
     {
       "id": "nomis6432/MMM-jitsi",
-      "gitHubDataLastUpdate": "2024-11-17T04:30:17.654Z",
+      "gitHubDataLastUpdate": "2024-12-07T16:30:19.895Z",
       "gitHubData": {
         "issues": 0,
         "stars": 2,
@@ -11959,7 +11959,7 @@
     },
     {
       "id": "prysme01/MMM-Jeedom",
-      "gitHubDataLastUpdate": "2024-11-17T04:30:15.833Z",
+      "gitHubDataLastUpdate": "2024-12-07T16:30:17.980Z",
       "gitHubData": {
         "issues": 0,
         "stars": 18,
@@ -13093,7 +13093,7 @@
     },
     {
       "id": "seb-ma/MMM-IT8951",
-      "gitHubDataLastUpdate": "2024-11-17T04:30:14.523Z",
+      "gitHubDataLastUpdate": "2024-12-07T16:30:16.579Z",
       "gitHubData": {
         "issues": 0,
         "stars": 5,
@@ -13233,7 +13233,7 @@
     },
     {
       "id": "shbatm/MMM-ISY",
-      "gitHubDataLastUpdate": "2024-11-17T04:30:14.108Z",
+      "gitHubDataLastUpdate": "2024-12-07T16:30:16.126Z",
       "gitHubData": {
         "issues": 1,
         "stars": 7,
@@ -13247,7 +13247,7 @@
     },
     {
       "id": "shbatm/MMM-JSONStatusChecker",
-      "gitHubDataLastUpdate": "2024-11-17T04:30:21.215Z",
+      "gitHubDataLastUpdate": "2024-12-07T16:30:23.746Z",
       "gitHubData": {
         "issues": 13,
         "stars": 7,
@@ -13261,10 +13261,10 @@
     },
     {
       "id": "shbatm/MMM-KeyBindings",
-      "gitHubDataLastUpdate": "2024-11-17T04:30:23.995Z",
+      "gitHubDataLastUpdate": "2024-12-07T16:30:26.503Z",
       "gitHubData": {
         "issues": 5,
-        "stars": 17,
+        "stars": 18,
         "license": "MIT",
         "archived": false,
         "disabled": false,
@@ -14941,7 +14941,7 @@
     },
     {
       "id": "timdows/MMM-JsonGraph",
-      "gitHubDataLastUpdate": "2024-11-17T04:30:20.779Z",
+      "gitHubDataLastUpdate": "2024-12-07T16:30:23.204Z",
       "gitHubData": {
         "issues": 1,
         "stars": 4,
@@ -14955,10 +14955,10 @@
     },
     {
       "id": "timdows/MMM-JsonTable",
-      "gitHubDataLastUpdate": "2024-11-17T04:30:21.599Z",
+      "gitHubDataLastUpdate": "2024-12-07T16:30:24.196Z",
       "gitHubData": {
         "issues": 7,
-        "stars": 25,
+        "stars": 26,
         "license": "MIT",
         "archived": false,
         "disabled": false,
@@ -16425,7 +16425,7 @@
     },
     {
       "id": "Xanthus1/MMM-ITCH-IO",
-      "gitHubDataLastUpdate": "2024-11-17T04:30:14.975Z",
+      "gitHubDataLastUpdate": "2024-12-07T16:30:17.042Z",
       "gitHubData": {
         "issues": 0,
         "stars": 2,
@@ -16579,7 +16579,7 @@
     },
     {
       "id": "yohaybn/MMM-JewishDate",
-      "gitHubDataLastUpdate": "2024-11-17T04:30:16.663Z",
+      "gitHubDataLastUpdate": "2024-12-07T16:30:18.926Z",
       "gitHubData": {
         "issues": 1,
         "stars": 2,

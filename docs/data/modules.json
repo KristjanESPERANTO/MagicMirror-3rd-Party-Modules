@@ -175,7 +175,7 @@
     "license": "MIT",
     "image": "Example.jpg",
     "defaultSortWeight": 2,
-    "lastCommit": "2024-12-03T18:45:12+01:00"
+    "lastCommit": "2024-12-07T09:50:05+01:00"
   },
   {
     "name": "MMM-Afvalwijzer",
@@ -5253,7 +5253,7 @@
     "maintainer": "bugsounet",
     "maintainerURL": "",
     "description": "[FR] Affiche les flux rss de <a target=\"_blank\" href=\"https://www.francetvinfo.fr\">franceinfo</a>. <br />[EN] Displays rss feeds from franceinfo.",
-    "issues": true,
+    "issues": false,
     "stars": 1,
     "license": "MIT",
     "tags": [
@@ -5263,7 +5263,7 @@
     ],
     "image": "FRINFO.jpg",
     "defaultSortWeight": 1,
-    "lastCommit": "2024-11-20T06:55:06+01:00"
+    "lastCommit": "2024-12-07T12:34:12+01:00"
   },
   {
     "name": "MMM-Freebox",
@@ -5873,8 +5873,8 @@
       "smart home"
     ],
     "image": "resources-previewFS.jpg",
-    "defaultSortWeight": -1,
-    "lastCommit": "2024-12-04T17:28:55+01:00"
+    "defaultSortWeight": -2,
+    "lastCommit": "2024-12-07T11:27:01+01:00"
   },
   {
     "name": "MMM-GoogleAssistant",
@@ -6123,17 +6123,18 @@
   },
   {
     "name": "MMM-GoogleShoppingList",
-    "category": "Utility / IoT / 3rd Party / Integration",
+    "category": "Outdated Modules",
     "url": "https://github.com/Gismo150/MMM-GoogleShoppingList",
     "id": "Gismo150/MMM-GoogleShoppingList",
     "maintainer": "Gismo150",
     "maintainerURL": "",
     "description": "Display a google shoppinglist items.",
-    "issues": true,
+    "issues": false,
+    "outdated": "Abandoned. No reactions to issues since years. Seems not to work anymore.",
     "stars": 23,
     "license": "MIT",
     "image": "screenshot.jpg",
-    "defaultSortWeight": 4,
+    "defaultSortWeight": 901,
     "lastCommit": "2020-06-05T10:05:40+02:00"
   },
   {
@@ -7657,6 +7658,22 @@
   },
   {
     "name": "MMM-ISS",
+    "category": "Outdated Modules",
+    "url": "https://github.com/mykle1/MMM-ISS",
+    "id": "mykle1/MMM-ISS",
+    "maintainer": "mykle1",
+    "maintainerURL": "",
+    "description": "Know when the International Space Station is visible from your location. Can be seen with the naked eye.",
+    "issues": false,
+    "outdated": "Abandoned. Developer is no longer active. Missing instructions to install dependency 'request'.",
+    "stars": 15,
+    "license": "MIT",
+    "image": "images-1.jpg",
+    "defaultSortWeight": 901,
+    "lastCommit": "2020-12-27T22:05:54-05:00"
+  },
+  {
+    "name": "MMM-ISS",
     "category": "Entertainment / Misc",
     "url": "https://github.com/daterrell/MMM-ISS",
     "id": "daterrell/MMM-ISS",
@@ -7673,22 +7690,6 @@
     "image": ".github-ISS-SS.jpg",
     "defaultSortWeight": 7,
     "lastCommit": "2024-02-23T16:09:30-08:00"
-  },
-  {
-    "name": "MMM-ISS",
-    "category": "Outdated Modules",
-    "url": "https://github.com/mykle1/MMM-ISS",
-    "id": "mykle1/MMM-ISS",
-    "maintainer": "mykle1",
-    "maintainerURL": "",
-    "description": "Know when the International Space Station is visible from your location. Can be seen with the naked eye.",
-    "issues": false,
-    "outdated": "Abandoned. Developer is no longer active. Missing instructions to install dependency 'request'.",
-    "stars": 15,
-    "license": "MIT",
-    "image": "images-1.jpg",
-    "defaultSortWeight": 901,
-    "lastCommit": "2020-12-27T22:05:54-05:00"
   },
   {
     "name": "MMM-ISS-Live",
@@ -7785,7 +7786,7 @@
     "maintainerURL": "https://github.com/jalibu",
     "description": "A simple but powerful vertical, horizontal or static stock ticker based on Yahoo's finance API. Supports international stocks, crypto currencies and index symbols. No API key required.",
     "issues": true,
-    "stars": 69,
+    "stars": 70,
     "license": "MIT",
     "tags": [
       "stock",
@@ -7998,7 +7999,7 @@
     "maintainerURL": "",
     "description": "Creates a table filled by a list gathered from a JSON request, and puts all variables of the object in its own table column.",
     "issues": true,
-    "stars": 25,
+    "stars": 26,
     "license": "MIT",
     "tags": [
       "json",
@@ -8081,7 +8082,7 @@
     "maintainerURL": "",
     "description": "Getting bluetooth remote control and keyboard inputs.",
     "issues": true,
-    "stars": 17,
+    "stars": 18,
     "license": "MIT",
     "tags": [
       "fire stick",
@@ -9343,7 +9344,7 @@
       "mercedes"
     ],
     "image": "screenshots-appregistration.jpg",
-    "defaultSortWeight": 10,
+    "defaultSortWeight": 11,
     "lastCommit": "2022-12-06T18:19:05+05:30"
   },
   {
@@ -13409,7 +13410,7 @@
     "maintainer": "bugsounet",
     "maintainerURL": "",
     "description": "After a configurated time without any user interaction the display will turn off and hide all modules for economy mode. It will wake up with a PIR sensor.",
-    "issues": true,
+    "issues": false,
     "stars": 35,
     "license": "MIT",
     "tags": [
@@ -13417,8 +13418,8 @@
       "motion detection"
     ],
     "image": "screenshot-screenshot.jpg",
-    "defaultSortWeight": 0,
-    "lastCommit": "2024-11-16T17:16:16+01:00"
+    "defaultSortWeight": -1,
+    "lastCommit": "2024-12-07T13:26:24+01:00"
   },
   {
     "name": "MMM-PIR",
@@ -17642,7 +17643,7 @@
     ],
     "image": "screenshots-MMM-text-clock-screenshot-compact.jpg",
     "defaultSortWeight": 5,
-    "lastCommit": "2024-11-29T01:13:32+01:00"
+    "lastCommit": "2024-12-06T20:38:09+01:00"
   },
   {
     "name": "MMM-TextPerWeek",

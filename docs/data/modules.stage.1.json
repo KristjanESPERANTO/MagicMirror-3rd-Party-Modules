@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "2024-12-06T04:30:13.571Z",
+  "lastUpdate": "2024-12-07T16:30:13.626Z",
   "modules": [
     {
       "name": "MMM-01ZM",
@@ -3679,13 +3679,14 @@
     },
     {
       "name": "MMM-GoogleShoppingList",
-      "category": "Utility / IoT / 3rd Party / Integration",
+      "category": "Outdated Modules",
       "url": "https://github.com/Gismo150/MMM-GoogleShoppingList",
       "id": "Gismo150/MMM-GoogleShoppingList",
       "maintainer": "Gismo150",
       "maintainerURL": "",
       "description": "Display a google shoppinglist items.",
-      "issues": []
+      "issues": [],
+      "outdated": "Abandoned. No reactions to issues since years. Seems not to work anymore."
     },
     {
       "name": "MMM-GoogleTasks",

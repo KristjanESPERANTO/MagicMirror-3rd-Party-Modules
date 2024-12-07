@@ -4355,13 +4355,14 @@
   },
   {
     "name": "MMM-GoogleShoppingList",
-    "category": "Utility / IoT / 3rd Party / Integration",
+    "category": "Outdated Modules",
     "url": "https://github.com/Gismo150/MMM-GoogleShoppingList",
     "id": "Gismo150/MMM-GoogleShoppingList",
     "maintainer": "Gismo150",
     "maintainerURL": "",
     "description": "Display a google shoppinglist items.",
     "issues": [],
+    "outdated": "Abandoned. No reactions to issues since years. Seems not to work anymore.",
     "stars": 23,
     "license": "MIT"
   },
@@ -5472,18 +5473,6 @@
   },
   {
     "name": "MMM-ISS",
-    "category": "Entertainment / Misc",
-    "url": "https://github.com/daterrell/MMM-ISS",
-    "id": "daterrell/MMM-ISS",
-    "maintainer": "daterrell",
-    "maintainerURL": "",
-    "description": "Display International Space Station fly-overs in your area.",
-    "issues": [],
-    "stars": 8,
-    "license": "MIT"
-  },
-  {
-    "name": "MMM-ISS",
     "category": "Outdated Modules",
     "url": "https://github.com/mykle1/MMM-ISS",
     "id": "mykle1/MMM-ISS",
@@ -5493,6 +5482,18 @@
     "issues": [],
     "outdated": "Abandoned. Developer is no longer active. Missing instructions to install dependency 'request'.",
     "stars": 15,
+    "license": "MIT"
+  },
+  {
+    "name": "MMM-ISS",
+    "category": "Entertainment / Misc",
+    "url": "https://github.com/daterrell/MMM-ISS",
+    "id": "daterrell/MMM-ISS",
+    "maintainer": "daterrell",
+    "maintainerURL": "",
+    "description": "Display International Space Station fly-overs in your area.",
+    "issues": [],
+    "stars": 8,
     "license": "MIT"
   },
   {
@@ -5562,7 +5563,7 @@
     "maintainerURL": "https://github.com/jalibu",
     "description": "A simple but powerful vertical, horizontal or static stock ticker based on Yahoo's finance API. Supports international stocks, crypto currencies and index symbols. No API key required.",
     "issues": [],
-    "stars": 69,
+    "stars": 70,
     "license": "MIT"
   },
   {
@@ -5717,7 +5718,7 @@
     "maintainerURL": "",
     "description": "Creates a table filled by a list gathered from a JSON request, and puts all variables of the object in its own table column.",
     "issues": [],
-    "stars": 25,
+    "stars": 26,
     "license": "MIT"
   },
   {
@@ -5775,7 +5776,7 @@
     "maintainerURL": "",
     "description": "Getting bluetooth remote control and keyboard inputs.",
     "issues": [],
-    "stars": 17,
+    "stars": 18,
     "license": "MIT"
   },
   {
