@@ -3427,7 +3427,7 @@
     "maintainer": "bugsounet",
     "maintainerURL": "https://wiki.bugsounet.fr",
     "description": "Multi-keyword listener for MMM-GoogleAssistant.<br /><br />This module has been defined to work only with MMM-GoogleAssistant.",
-    "issues": true,
+    "issues": false,
     "stars": 8,
     "license": "MIT",
     "tags": [
@@ -3440,8 +3440,8 @@
       "ok google"
     ],
     "image": "resources-google.jpg",
-    "defaultSortWeight": 3,
-    "lastCommit": "2024-11-23T12:37:48+01:00"
+    "defaultSortWeight": 2,
+    "lastCommit": "2024-12-08T10:34:06+01:00"
   },
   {
     "name": "MMM-DHT",
@@ -9001,7 +9001,7 @@
     "maintainerURL": "",
     "description": "Prevent screen burn-in on your MagicMirror\u00b2.",
     "issues": true,
-    "stars": 47,
+    "stars": 48,
     "license": "MIT",
     "tags": [
       "screensaver",
@@ -11430,7 +11430,7 @@
     ],
     "image": ".github-preview.bubbles.jpg",
     "defaultSortWeight": 0,
-    "lastCommit": "2024-11-29T21:59:00+00:00"
+    "lastCommit": "2024-12-08T04:45:46+00:00"
   },
   {
     "name": "MMM-Netatmo-Presence",
@@ -17458,7 +17458,7 @@
     ],
     "image": "screenshot-sc_fullsize.jpg",
     "defaultSortWeight": 4,
-    "lastCommit": "2024-11-24T09:32:10+01:00"
+    "lastCommit": "2024-12-08T11:07:07+01:00"
   },
   {
     "name": "MMM-TelegramCommands",

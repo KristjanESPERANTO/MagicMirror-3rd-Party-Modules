@@ -1,6 +1,6 @@
 # Result of the module analysis
 
-Last update: 2024-12-08T05:38:49+01:00
+Last update: 2024-12-08T17:38:23+01:00
 
 ## Statistics
 
@@ -8,8 +8,8 @@ Last update: 2024-12-08T05:38:49+01:00
 |:---------------------|:--------:|
 | modules analyzed     |   1210   |
 | maintainer           |    649   |
-| modules with issues  |   1207   |
-| issues               |   6940   |
+| modules with issues  |   1206   |
+| issues               |   6939   |
 | modules at github    |   1099   |
 | modules at gitlab    |     10   |
 | modules at bitbucket |      1   |
@@ -1731,13 +1731,6 @@ Last update: 2024-12-08T05:38:49+01:00
 8. Typo: Found `MagicMirror2` in file `package.json`: Replace it with `MagicMirror²`.
 9. Warning: No LICENSE file.
 10. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
-
-### [EXT-Detector by bugsounet](https://github.com/bugsounet/EXT-Detector)
-
-1. Information: There are updates for 2 dependencie(s):
-   - @types/node  ^22.9.3  →  ^22.10.1
-   - eslint       ^9.15.0  →   ^9.16.0
-
 
 ### [MMM-DHT by ckoutavas](https://github.com/ckoutavas/MMM-DHT)
 
@@ -6017,10 +6010,9 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
 ### [MMM-Netatmo by CFenner](https://github.com/CFenner/MMM-Netatmo)
 
 1. Recommendation: No lint script found in package.json. It is recommended to add one.
-2. Information: There are updates for 3 dependencie(s):
-   - less           4.2.0  →   4.2.1
-   - markdownlint  0.36.1  →  0.37.0
-   - neostandard   0.11.5  →  0.11.9
+2. Information: There are updates for 2 dependencie(s):
+   - less          4.2.0  →   4.2.1
+   - neostandard  0.11.5  →  0.11.9
 
 
 ### [MMM-Netatmo-Presence by AgP42](https://github.com/AgP42/MMM-Netatmo-Presence)
@@ -7021,7 +7013,7 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
 2. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
 3. Information: There are updates for 2 dependencie(s):
    - async                ^3.2.5  →   ^3.2.6
-   - systeminformation  ^5.21.24  →  ^5.23.5
+   - systeminformation  ^5.21.24  →  ^5.23.6
 
 
 ### [MMM-ping by fewieden](https://github.com/fewieden/MMM-ping)
@@ -9161,7 +9153,7 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
 ### [EXT-TelegramBot by bugsounet](https://github.com/bugsounet/EXT-TelegramBot)
 
 1. Information: There are updates for 1 dependencie(s):
-   - eslint  ^9.15.0  →  ^9.16.0
+   - eslint-plugin-package-json  ^0.17.0  →  ^0.18.0
 
 
 ### [MMM-TelegramCommands by doctorfree](https://github.com/doctorfree/MMM-TelegramCommands)
