@@ -296,7 +296,7 @@
     ],
     "image": ".github-preview-good.jpg",
     "defaultSortWeight": 1,
-    "lastCommit": "2024-11-23T05:19:41+00:00"
+    "lastCommit": "2024-12-08T03:23:20+00:00"
   },
   {
     "name": "MMM-Airtable",
@@ -7658,22 +7658,6 @@
   },
   {
     "name": "MMM-ISS",
-    "category": "Outdated Modules",
-    "url": "https://github.com/mykle1/MMM-ISS",
-    "id": "mykle1/MMM-ISS",
-    "maintainer": "mykle1",
-    "maintainerURL": "",
-    "description": "Know when the International Space Station is visible from your location. Can be seen with the naked eye.",
-    "issues": false,
-    "outdated": "Abandoned. Developer is no longer active. Missing instructions to install dependency 'request'.",
-    "stars": 15,
-    "license": "MIT",
-    "image": "images-1.jpg",
-    "defaultSortWeight": 901,
-    "lastCommit": "2020-12-27T22:05:54-05:00"
-  },
-  {
-    "name": "MMM-ISS",
     "category": "Entertainment / Misc",
     "url": "https://github.com/daterrell/MMM-ISS",
     "id": "daterrell/MMM-ISS",
@@ -7690,6 +7674,22 @@
     "image": ".github-ISS-SS.jpg",
     "defaultSortWeight": 7,
     "lastCommit": "2024-02-23T16:09:30-08:00"
+  },
+  {
+    "name": "MMM-ISS",
+    "category": "Outdated Modules",
+    "url": "https://github.com/mykle1/MMM-ISS",
+    "id": "mykle1/MMM-ISS",
+    "maintainer": "mykle1",
+    "maintainerURL": "",
+    "description": "Know when the International Space Station is visible from your location. Can be seen with the naked eye.",
+    "issues": false,
+    "outdated": "Abandoned. Developer is no longer active. Missing instructions to install dependency 'request'.",
+    "stars": 15,
+    "license": "MIT",
+    "image": "images-1.jpg",
+    "defaultSortWeight": 901,
+    "lastCommit": "2020-12-27T22:05:54-05:00"
   },
   {
     "name": "MMM-ISS-Live",
@@ -8222,7 +8222,7 @@
     "maintainerURL": "",
     "description": "Station monitor for the Karlsruhe/Germany local transport (KVV) bus, tram and train system.",
     "issues": true,
-    "stars": 11,
+    "stars": 12,
     "license": "MIT",
     "tags": [
       "kvv",
@@ -8408,7 +8408,7 @@
     "maintainerURL": "https://wiki.bugsounet.fr",
     "description": "Allow to play Spotify music on your mirror with Librespot.<br /><br />This module has been defined to work only with MMM-GoogleAssistant.",
     "issues": true,
-    "stars": 1,
+    "stars": 2,
     "license": "MIT",
     "tags": [
       "mmm-googleassistant",
@@ -15474,7 +15474,7 @@
     ],
     "image": "screenshots-screenshot.jpg",
     "defaultSortWeight": 2,
-    "lastCommit": "2024-10-09T11:18:50-04:00"
+    "lastCommit": "2024-12-07T15:00:53-05:00"
   },
   {
     "name": "MMM-ScreenLogic",

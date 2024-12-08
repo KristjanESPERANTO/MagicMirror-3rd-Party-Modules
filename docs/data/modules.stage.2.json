@@ -5473,6 +5473,18 @@
   },
   {
     "name": "MMM-ISS",
+    "category": "Entertainment / Misc",
+    "url": "https://github.com/daterrell/MMM-ISS",
+    "id": "daterrell/MMM-ISS",
+    "maintainer": "daterrell",
+    "maintainerURL": "",
+    "description": "Display International Space Station fly-overs in your area.",
+    "issues": [],
+    "stars": 8,
+    "license": "MIT"
+  },
+  {
+    "name": "MMM-ISS",
     "category": "Outdated Modules",
     "url": "https://github.com/mykle1/MMM-ISS",
     "id": "mykle1/MMM-ISS",
@@ -5482,18 +5494,6 @@
     "issues": [],
     "outdated": "Abandoned. Developer is no longer active. Missing instructions to install dependency 'request'.",
     "stars": 15,
-    "license": "MIT"
-  },
-  {
-    "name": "MMM-ISS",
-    "category": "Entertainment / Misc",
-    "url": "https://github.com/daterrell/MMM-ISS",
-    "id": "daterrell/MMM-ISS",
-    "maintainer": "daterrell",
-    "maintainerURL": "",
-    "description": "Display International Space Station fly-overs in your area.",
-    "issues": [],
-    "stars": 8,
     "license": "MIT"
   },
   {
@@ -5873,7 +5873,7 @@
     "maintainerURL": "",
     "description": "Station monitor for the Karlsruhe/Germany local transport (KVV) bus, tram and train system.",
     "issues": [],
-    "stars": 11,
+    "stars": 12,
     "license": "MIT"
   },
   {
@@ -5992,7 +5992,7 @@
     "maintainerURL": "https://wiki.bugsounet.fr",
     "description": "Allow to play Spotify music on your mirror with Librespot.",
     "issues": [],
-    "stars": 1,
+    "stars": 2,
     "license": "MIT"
   },
   {

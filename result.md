@@ -1,6 +1,6 @@
 # Result of the module analysis
 
-Last update: 2024-12-07T17:42:23+01:00
+Last update: 2024-12-08T05:38:49+01:00
 
 ## Statistics
 
@@ -6017,9 +6017,10 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
 ### [MMM-Netatmo by CFenner](https://github.com/CFenner/MMM-Netatmo)
 
 1. Recommendation: No lint script found in package.json. It is recommended to add one.
-2. Information: There are updates for 2 dependencie(s):
-   - less          4.2.0  →   4.2.1
-   - neostandard  0.11.5  →  0.11.9
+2. Information: There are updates for 3 dependencie(s):
+   - less           4.2.0  →   4.2.1
+   - markdownlint  0.36.1  →  0.37.0
+   - neostandard   0.11.5  →  0.11.9
 
 
 ### [MMM-Netatmo-Presence by AgP42](https://github.com/AgP42/MMM-Netatmo-Presence)
