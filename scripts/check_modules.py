@@ -243,7 +243,7 @@ def check_modules():
         module_directory_path = Path("./modules/" + module_directory)
 
         # Print progress
-        progress = f"{stats['moduleCounter']:4}/{len(modules)}\r"
+        progress = f"{stats['moduleCounter']:4}/{len(modules)}  {module['name']}                        \r"
         print(progress, end="")
 
         get_last_commit_date(module, module_directory_path)
