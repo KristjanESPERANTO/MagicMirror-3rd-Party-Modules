@@ -1,6 +1,6 @@
 # Result of the module analysis
 
-Last update: 2024-12-10T03:17:11+01:00
+Last update: 2024-12-10T05:39:09+01:00
 
 ## Statistics
 
@@ -9,7 +9,7 @@ Last update: 2024-12-10T03:17:11+01:00
 | modules analyzed     |   1211   |
 | maintainer           |    650   |
 | modules with issues  |   1211   |
-| issues               |   6964   |
+| issues               |   6969   |
 | modules at github    |   1100   |
 | modules at gitlab    |     10   |
 | modules at bitbucket |      1   |
@@ -931,9 +931,10 @@ Last update: 2024-12-10T03:17:11+01:00
 
 ### [MMM-CalDAV by MMRIZE](https://github.com/MMRIZE/MMM-CalDAV)
 
-1. Information: There are updates for 2 dependencie(s):
+1. Information: There are updates for 3 dependencie(s):
    - dotenv    ^16.4.5  →   ^16.4.7
    - globals  ^15.12.0  →  ^15.13.0
+   - tsdav      ^2.1.2  →    ^2.1.3
 
 2. ESLint issues:
    - node_helper.js: Line 3, Column 20: 'DAVNamespace' is assigned a value but never used. (rule: no-unused-vars)
@@ -1102,7 +1103,7 @@ Last update: 2024-12-10T03:17:11+01:00
    - ical-generator   ^1.4.3  →   ^8.0.1
    - moment          ^2.23.0  →  ^2.30.1
    - prettier         ^3.0.3  →   ^3.4.2
-   - tsdav            ^2.0.3  →   ^2.1.2
+   - tsdav            ^2.0.3  →   ^2.1.3
 
 
 ### [MMM-Carousel by shbatm](https://github.com/shbatm/MMM-Carousel)
@@ -2071,9 +2072,8 @@ Last update: 2024-12-10T03:17:11+01:00
    - eslint                    ^9.10.0  →   ^9.16.0
    - globals                   ^15.9.0  →  ^15.13.0
 
-2. ESLint issues:
-   - doc/configs/webcam-config.js: Line 3, Column 13: Parsing error: Unexpected token : (rule: None)
-
+2.  WARN  @iconify/iconify@3.1.1: 2023-06-22T08:45:25.335Z
+deprecated: no longer maintained, switch to modern iconify-icon web component
 
 ### [MMM-EmbedYoutube by nitpum](https://github.com/nitpum/MMM-EmbedYoutube)
 
@@ -2996,6 +2996,8 @@ Last update: 2024-12-10T03:17:11+01:00
    - eslint    ^8.56.0  →  ^9.16.0
    - prettier   ^3.1.1  →   ^3.4.2
 
+2.  WARN  eslint@8.56.0: 2023-12-15T22:55:11.833Z
+deprecated: This version is no longer supported. Please see https://eslint.org/version-support for other options.
 
 ### [MMM-GmailNotifier by kurtern84](https://github.com/kurtern84/MMM-GmailNotifier)
 
@@ -4247,6 +4249,8 @@ Last update: 2024-12-10T03:17:11+01:00
    - markdownlint-cli                 ^0.39.0  →   ^0.43.0
    - prettier                          ^3.2.5  →    ^3.4.2
 
+2.  WARN  eslint@8.57.0: 2024-02-23T20:39:43.282Z
+deprecated: This version is no longer supported. Please see https://eslint.org/version-support for other options.
 
 ### [MMM-JsonValue by c-klinger](https://github.com/c-klinger/MMM-JsonValue)
 
@@ -4458,17 +4462,8 @@ Last update: 2024-12-10T03:17:11+01:00
    - glob                      ^10.4.2  →  ^11.0.0
    - pm2                        ^5.4.1  →   ^5.4.3
 
-2. ESLint issues:
-   - eslint.config.js: Line 2, Column 18: 'eslintConfigs' is assigned a value but never used. (rule: no-unused-vars)
-   - installer/minify.js: Line 7, Column 22: "glob" should be replaced with an alternative package. Read more here: https://github.com/es-tooling/module-replacements/blob/main/docs/modules/glob.md (rule: depend/ban-dependencies)
-   - installer/minify.js: Line 47, Column 7: 'error' is assigned a value but never used. (rule: no-unused-vars)
-   - installer/minify.js: Line 64, Column 14: 'e' is defined but never used. (rule: no-unused-vars)
-   - node_helper.js: Line 8, Column 24: 'args' is defined but never used. (rule: no-unused-vars)
-   - node_helper.js: Line 17, Column 35: 'p' is defined but never used. (rule: no-unused-vars)
-   - node_helper.js: Line 73, Column 21: 'item' is assigned a value but never used. (rule: no-unused-vars)
-   - node_helper.js: Line 113, Column 18: 'proc' is defined but never used. (rule: no-unused-vars)
-   - node_helper.js: Line 126, Column 41: 'proc' is defined but never used. (rule: no-unused-vars)
-
+2.  WARN  eslint@8.57.0: 2024-02-23T20:39:43.282Z
+deprecated: This version is no longer supported. Please see https://eslint.org/version-support for other options.
 
 ### [MMM-lichess-daily by tonymorris](https://github.com/tonymorris/MMM-lichess-daily)
 
@@ -4761,6 +4756,8 @@ Last update: 2024-12-10T03:17:11+01:00
    - eslint                    ^8.57.0  →   ^9.16.0
    - globals                   ^15.0.0  →  ^15.13.0
 
+2.  WARN  eslint@8.57.0: 2024-02-23T20:39:43.282Z
+deprecated: This version is no longer supported. Please see https://eslint.org/version-support for other options.
 
 ### [MMM-MagicSuperHero by Lavve](https://github.com/Lavve/MMM-MagicSuperHero)
 
@@ -4889,9 +4886,8 @@ Last update: 2024-12-10T03:17:11+01:00
    - stylelint                        ^16.9.0  →  ^16.11.0
    - stylelint-config-standard        ^36.0.0  →   ^36.0.1
 
-2. ESLint issues:
-   - MMM-MealieMenu.js: Line 432, Column 14: 'err' is defined but never used. (rule: no-unused-vars)
-
+2.  WARN  eslint@8.57.0: 2024-02-23T20:39:43.282Z
+deprecated: This version is no longer supported. Please see https://eslint.org/version-support for other options.
 
 ### [MMM-MealieShoppingList by btoconnor](https://github.com/btoconnor/MMM-MealieShoppingList)
 
@@ -9685,6 +9681,8 @@ Last update: 2024-12-10T03:17:11+01:00
    - eslint                    ^8.56.0  →  ^9.16.0
    - node-html-parser          ^6.1.12  →  ^6.1.13
 
+2.  WARN  eslint@8.56.0: 2023-12-15T22:55:11.833Z
+deprecated: This version is no longer supported. Please see https://eslint.org/version-support for other options.
 
 ### [MMM-TransLoc by OrangeHoopla](https://github.com/OrangeHoopla/MMM-TransLoc)
 
@@ -10571,6 +10569,8 @@ Last update: 2024-12-10T03:17:11+01:00
    - eslint    ^8.56.0  →  ^9.16.0
    - prettier   ^3.1.1  →   ^3.4.2
 
+2.  WARN  eslint@8.57.1: 2024-09-16T15:20:44.208Z
+deprecated: This version is no longer supported. Please see https://eslint.org/version-support for other options.
 
 ### [MMM-Worldclock by ulrichwisser](https://github.com/ulrichwisser/MMM-Worldclock)
 

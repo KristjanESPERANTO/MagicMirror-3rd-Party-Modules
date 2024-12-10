@@ -7648,7 +7648,7 @@
     "maintainerURL": "https://wiki.bugsounet.fr",
     "description": "Play any music found on a USB Key or in defined local directory.",
     "issues": [],
-    "stars": 3,
+    "stars": 4,
     "license": "MIT"
   },
   {
@@ -7793,7 +7793,7 @@
     "maintainerURL": "",
     "description": "Display today's scores for your favourite teams across multiple sports.",
     "issues": [],
-    "stars": 71,
+    "stars": 73,
     "license": "MIT"
   },
   {

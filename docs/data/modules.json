@@ -5804,7 +5804,7 @@
       "mirror email"
     ],
     "image": "example1.jpg",
-    "defaultSortWeight": 0,
+    "defaultSortWeight": 1,
     "lastCommit": "2024-01-18T11:21:58-06:00"
   },
   {
@@ -8020,7 +8020,7 @@
       "table"
     ],
     "image": "example1.jpg",
-    "defaultSortWeight": 0,
+    "defaultSortWeight": 1,
     "lastCommit": "2024-07-16T10:59:50+02:00"
   },
   {
@@ -9023,7 +9023,7 @@
       "mover"
     ],
     "image": "img-screen-burn-in.jpg",
-    "defaultSortWeight": 0,
+    "defaultSortWeight": 1,
     "lastCommit": "2024-04-16T13:59:34+02:00"
   },
   {
@@ -10705,7 +10705,7 @@
     "maintainerURL": "https://wiki.bugsounet.fr",
     "description": "Play any music found on a USB Key or in defined local directory.<br /><br />This module has been defined to work only with MMM-GoogleAssistant.",
     "issues": true,
-    "stars": 3,
+    "stars": 4,
     "license": "MIT",
     "tags": [
       "mmm-googleassistant",
@@ -10913,7 +10913,7 @@
     "maintainerURL": "",
     "description": "Display today's scores for your favourite teams across multiple sports.",
     "issues": true,
-    "stars": 71,
+    "stars": 73,
     "license": "MIT",
     "tags": [
       "sports"
@@ -19852,7 +19852,7 @@
       "vocabulary"
     ],
     "image": "wotdPic.jpg",
-    "defaultSortWeight": 1,
+    "defaultSortWeight": 2,
     "lastCommit": "2024-02-09T13:30:05-06:00"
   },
   {
