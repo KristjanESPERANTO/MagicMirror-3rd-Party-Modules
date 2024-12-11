@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "2024-12-10T16:30:17.486Z",
+  "lastUpdate": "2024-12-11T16:30:13.772Z",
   "modules": [
     {
       "name": "MMM-01ZM",
@@ -702,6 +702,16 @@
       "maintainer": "BrianHepler",
       "maintainerURL": "https://github.com/BrianHepler",
       "description": "Display submissions to BirdNET, Cornell University's machine learning project to identify birds by their song.",
+      "issues": []
+    },
+    {
+      "name": "MMM-BirdOfTheDay",
+      "category": "Entertainment / Misc",
+      "url": "https://github.com/cgillinger/MMM-BirdOfTheDay",
+      "id": "cgillinger/MMM-BirdOfTheDay",
+      "maintainer": "cgillinger",
+      "maintainerURL": "",
+      "description": "Displays a new bird every day with a photo, name, and interesting facts. Powered by the Nuthatch API by Last Elm Software, it's perfect for bird enthusiasts or anyone who wants to bring a touch of nature to their MagicMirror setup.",
       "issues": []
     },
     {
@@ -9847,6 +9857,16 @@
       "issues": []
     },
     {
+      "name": "MMM-SnowEffect",
+      "category": "Entertainment / Misc",
+      "url": "https://github.com/cgillinger/MMM-SnowEffect",
+      "id": "cgillinger/MMM-SnowEffect",
+      "maintainer": "cgillinger",
+      "maintainerURL": "",
+      "description": "Performance-optimized falling snow effect with two modes - light mode for Raspberry Pi and rich mode for more powerful devices. Adds a gentle overlay of falling snowflakes across your entire mirror surface.",
+      "issues": []
+    },
+    {
       "name": "MMM-soccer",
       "category": "Sports",
       "url": "https://github.com/fewieden/MMM-soccer",
@@ -10056,6 +10076,16 @@
       "maintainer": "LukasKlose",
       "maintainerURL": "https://github.com/LukasKlose",
       "description": "Display the tables of the Polish Speedway Leagues (PGE Ekstraliga, I. Liga Żużlowa , II. Liga Żużlowa).",
+      "issues": []
+    },
+    {
+      "name": "MMM-SpinId",
+      "category": "Entertainment / Misc",
+      "url": "https://github.com/mlcampbe/MMM-SpinId",
+      "id": "mlcampbe/MMM-SpinId",
+      "maintainer": "mlcampbe",
+      "maintainerURL": "",
+      "description": "Show the winning Wheel of Fortune Spin IDs for the current day.",
       "issues": []
     },
     {
@@ -10402,14 +10432,13 @@
     },
     {
       "name": "MMM-SystemStats",
-      "category": "Outdated Modules",
-      "url": "https://github.com/BenRoe/MMM-SystemStats",
-      "id": "BenRoe/MMM-SystemStats",
-      "maintainer": "BenRoe",
+      "category": "Utility / IoT / 3rd Party / Integration",
+      "url": "https://github.com/fry0815/MMM-SystemStats",
+      "id": "fry0815/MMM-SystemStats",
+      "maintainer": "fry0815",
       "maintainerURL": "",
-      "description": "Shows Raspberry Pi system stats like CPU temperature, free Ram, System load, and Uptime.",
-      "issues": [],
-      "outdated": "Abandoned. Repo has been archived at 2022-09-05."
+      "description": "Shows Raspberry Pi system stats like CPU temperature, free Ram, System load, and Uptime. This is an active fork, the original module was abandoned.",
+      "issues": []
     },
     {
       "name": "MMM-Tabulator",

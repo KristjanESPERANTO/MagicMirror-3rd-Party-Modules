@@ -824,6 +824,17 @@
     "stars": 3
   },
   {
+    "name": "MMM-BirdOfTheDay",
+    "category": "Entertainment / Misc",
+    "url": "https://github.com/cgillinger/MMM-BirdOfTheDay",
+    "id": "cgillinger/MMM-BirdOfTheDay",
+    "maintainer": "cgillinger",
+    "maintainerURL": "",
+    "description": "Displays a new bird every day with a photo, name, and interesting facts. Powered by the Nuthatch API by Last Elm Software, it's perfect for bird enthusiasts or anyone who wants to bring a touch of nature to their MagicMirror setup.",
+    "issues": [],
+    "stars": 1
+  },
+  {
     "name": "MMM-birthdays",
     "category": "Utility / IoT / 3rd Party / Integration",
     "url": "https://github.com/amitchone/MMM-birthdays",
@@ -4675,7 +4686,7 @@
     "maintainerURL": "https://github.com/wathmal",
     "description": "Display strength training workout details and muscle split from Hevy workout tracker App.",
     "issues": [],
-    "stars": 0
+    "stars": 1
   },
   {
     "name": "MMM-HH-LocalTransport",
@@ -11656,6 +11667,18 @@
     "stars": 55
   },
   {
+    "name": "MMM-SnowEffect",
+    "category": "Entertainment / Misc",
+    "url": "https://github.com/cgillinger/MMM-SnowEffect",
+    "id": "cgillinger/MMM-SnowEffect",
+    "maintainer": "cgillinger",
+    "maintainerURL": "",
+    "description": "Performance-optimized falling snow effect with two modes - light mode for Raspberry Pi and rich mode for more powerful devices. Adds a gentle overlay of falling snowflakes across your entire mirror surface.",
+    "issues": [],
+    "stars": 1,
+    "license": "MIT"
+  },
+  {
     "name": "MMM-soccer",
     "category": "Sports",
     "url": "https://github.com/fewieden/MMM-soccer",
@@ -11906,6 +11929,18 @@
     "description": "Display the tables of the Polish Speedway Leagues (PGE Ekstraliga, I. Liga Żużlowa , II. Liga Żużlowa).",
     "issues": [],
     "stars": 0
+  },
+  {
+    "name": "MMM-SpinId",
+    "category": "Entertainment / Misc",
+    "url": "https://github.com/mlcampbe/MMM-SpinId",
+    "id": "mlcampbe/MMM-SpinId",
+    "maintainer": "mlcampbe",
+    "maintainerURL": "",
+    "description": "Show the winning Wheel of Fortune Spin IDs for the current day.",
+    "issues": [],
+    "stars": 0,
+    "license": "MIT"
   },
   {
     "name": "MMM-Spotify",
@@ -12316,16 +12351,15 @@
   },
   {
     "name": "MMM-SystemStats",
-    "category": "Outdated Modules",
-    "url": "https://github.com/BenRoe/MMM-SystemStats",
-    "id": "BenRoe/MMM-SystemStats",
-    "maintainer": "BenRoe",
+    "category": "Utility / IoT / 3rd Party / Integration",
+    "url": "https://github.com/fry0815/MMM-SystemStats",
+    "id": "fry0815/MMM-SystemStats",
+    "maintainer": "fry0815",
     "maintainerURL": "",
-    "description": "Shows Raspberry Pi system stats like CPU temperature, free Ram, System load, and Uptime.",
+    "description": "Shows Raspberry Pi system stats like CPU temperature, free Ram, System load, and Uptime. This is an active fork, the original module was abandoned.",
     "issues": [],
-    "outdated": "Abandoned. Repo has been archived at 2022-09-05.",
-    "stars": 92,
-    "isArchived": true,
+    "stars": 1,
+    "hasGithubIssues": false,
     "license": "MIT"
   },
   {
@@ -13500,7 +13534,7 @@
     "maintainerURL": "",
     "description": "A voice-activated assistant module using OpenAI's Whisper for speech recognition and GPT for natural language processing. This module allows users to interact with their MagicMirror using voice commands, enhancing the smart mirror experience with AI-powered conversations and information retrieval.",
     "issues": [],
-    "stars": 6,
+    "stars": 7,
     "license": "MIT"
   },
   {
@@ -14337,7 +14371,7 @@
     "maintainerURL": "https://wiki.bugsounet.fr",
     "description": "This plugins allows to play YouTube video.",
     "issues": [],
-    "stars": 3,
+    "stars": 4,
     "license": "MIT"
   },
   {

@@ -1208,6 +1208,19 @@
     "lastCommit": "2024-03-04T20:53:01-05:00"
   },
   {
+    "name": "MMM-BirdOfTheDay",
+    "category": "Entertainment / Misc",
+    "url": "https://github.com/cgillinger/MMM-BirdOfTheDay",
+    "id": "cgillinger/MMM-BirdOfTheDay",
+    "maintainer": "cgillinger",
+    "maintainerURL": "",
+    "description": "Displays a new bird every day with a photo, name, and interesting facts. Powered by the Nuthatch API by Last Elm Software, it's perfect for bird enthusiasts or anyone who wants to bring a touch of nature to their MagicMirror setup.",
+    "issues": true,
+    "stars": 1,
+    "defaultSortWeight": 2,
+    "lastCommit": "2024-12-11T11:59:39+01:00"
+  },
+  {
     "name": "MMM-birthdays",
     "category": "Utility / IoT / 3rd Party / Integration",
     "url": "https://github.com/amitchone/MMM-birthdays",
@@ -1820,7 +1833,7 @@
     ],
     "image": "screenshot.jpg",
     "defaultSortWeight": 0,
-    "lastCommit": "2024-11-30T21:36:09+01:00"
+    "lastCommit": "2024-12-10T21:16:16+01:00"
   },
   {
     "name": "MMM-CalendarExt3Agenda",
@@ -2113,7 +2126,7 @@
     "maintainer": "shbatm",
     "maintainerURL": "https://github.com/shbatm",
     "description": "Rotate modules, to save space on screen.",
-    "issues": false,
+    "issues": true,
     "stars": 42,
     "license": "MIT",
     "tags": [
@@ -2126,7 +2139,7 @@
       "pages"
     ],
     "image": "img-example1-slide.jpg",
-    "defaultSortWeight": -1,
+    "defaultSortWeight": 0,
     "lastCommit": "2024-12-10T14:29:44+01:00"
   },
   {
@@ -5443,7 +5456,7 @@
     "license": "MIT",
     "image": "examples-example.jpg",
     "defaultSortWeight": 6,
-    "lastCommit": "2023-11-01T23:31:33+01:00"
+    "lastCommit": "2024-12-10T23:15:03+01:00"
   },
   {
     "name": "MMM-Fuel",
@@ -6552,7 +6565,7 @@
     "maintainerURL": "https://github.com/wathmal",
     "description": "Display strength training workout details and muscle split from Hevy workout tracker App.",
     "issues": true,
-    "stars": 0,
+    "stars": 1,
     "license": "ISC",
     "image": "docs-muscle_split.jpg",
     "defaultSortWeight": 6,
@@ -7713,7 +7726,7 @@
     "maintainer": "KristjanESPERANTO",
     "maintainerURL": "",
     "description": "Displays live video from the International Space Station.",
-    "issues": false,
+    "issues": true,
     "stars": 6,
     "license": "MIT",
     "tags": [
@@ -9540,8 +9553,8 @@
       "yahoo finance"
     ],
     "image": "idx_table.jpg",
-    "defaultSortWeight": 3,
-    "lastCommit": "2024-06-07T11:41:50-04:00"
+    "defaultSortWeight": 2,
+    "lastCommit": "2024-12-10T15:25:41-05:00"
   },
   {
     "name": "MMM-MLB-Scoreboard",
@@ -12416,7 +12429,7 @@
     "maintainer": "KristjanESPERANTO",
     "maintainerURL": "",
     "description": "Display current and forecast weather based on the Openweathermap OneCall API data with alternative formatting.",
-    "issues": false,
+    "issues": true,
     "stars": 3,
     "license": "MIT",
     "tags": [
@@ -14126,7 +14139,7 @@
     ],
     "image": "img-MMM-PublicTransport_screenshot.jpg",
     "defaultSortWeight": 0,
-    "lastCommit": "2024-12-01T11:58:52+01:00"
+    "lastCommit": "2024-12-11T00:41:06+01:00"
   },
   {
     "name": "MMM-PublicTransportHafas",
@@ -16376,6 +16389,27 @@
     "lastCommit": "2018-02-13T22:37:11+01:00"
   },
   {
+    "name": "MMM-SnowEffect",
+    "category": "Entertainment / Misc",
+    "url": "https://github.com/cgillinger/MMM-SnowEffect",
+    "id": "cgillinger/MMM-SnowEffect",
+    "maintainer": "cgillinger",
+    "maintainerURL": "",
+    "description": "Performance-optimized falling snow effect with two modes - light mode for Raspberry Pi and rich mode for more powerful devices. Adds a gentle overlay of falling snowflakes across your entire mirror surface.",
+    "issues": true,
+    "stars": 1,
+    "license": "MIT",
+    "tags": [
+      "snow",
+      "effect",
+      "christmas",
+      "winter"
+    ],
+    "image": "light.jpg",
+    "defaultSortWeight": 4,
+    "lastCommit": "2024-12-11T16:01:24+01:00"
+  },
+  {
     "name": "MMM-soccer",
     "category": "Sports",
     "url": "https://github.com/fewieden/MMM-soccer",
@@ -16727,6 +16761,21 @@
     "stars": 0,
     "defaultSortWeight": 11,
     "lastCommit": "2020-09-04T17:14:47+02:00"
+  },
+  {
+    "name": "MMM-SpinId",
+    "category": "Entertainment / Misc",
+    "url": "https://github.com/mlcampbe/MMM-SpinId",
+    "id": "mlcampbe/MMM-SpinId",
+    "maintainer": "mlcampbe",
+    "maintainerURL": "",
+    "description": "Show the winning Wheel of Fortune Spin IDs for the current day.",
+    "issues": true,
+    "stars": 0,
+    "license": "MIT",
+    "image": "screenshot.jpg",
+    "defaultSortWeight": 5,
+    "lastCommit": "2024-12-10T15:29:59-06:00"
   },
   {
     "name": "MMM-Spotify",
@@ -17295,24 +17344,23 @@
   },
   {
     "name": "MMM-SystemStats",
-    "category": "Outdated Modules",
-    "url": "https://github.com/BenRoe/MMM-SystemStats",
-    "id": "BenRoe/MMM-SystemStats",
-    "maintainer": "BenRoe",
+    "category": "Utility / IoT / 3rd Party / Integration",
+    "url": "https://github.com/fry0815/MMM-SystemStats",
+    "id": "fry0815/MMM-SystemStats",
+    "maintainer": "fry0815",
     "maintainerURL": "",
-    "description": "Shows Raspberry Pi system stats like CPU temperature, free Ram, System load, and Uptime.",
-    "issues": false,
-    "outdated": "Abandoned. Repo has been archived at 2022-09-05.",
-    "stars": 92,
-    "isArchived": true,
+    "description": "Shows Raspberry Pi system stats like CPU temperature, free Ram, System load, and Uptime. This is an active fork, the original module was abandoned.",
+    "issues": true,
+    "stars": 1,
+    "hasGithubIssues": false,
     "license": "MIT",
     "tags": [
       "cpu temperature",
       "system load"
     ],
     "image": "screenshot.jpg",
-    "defaultSortWeight": 901,
-    "lastCommit": "2021-10-07T16:57:25+02:00"
+    "defaultSortWeight": 9,
+    "lastCommit": "2024-04-01T16:53:09+02:00"
   },
   {
     "name": "MMM-Tabulator",
@@ -19010,7 +19058,7 @@
     "maintainerURL": "",
     "description": "A voice-activated assistant module using OpenAI's Whisper for speech recognition and GPT for natural language processing. This module allows users to interact with their MagicMirror using voice commands, enhancing the smart mirror experience with AI-powered conversations and information retrieval.",
     "issues": true,
-    "stars": 6,
+    "stars": 7,
     "license": "MIT",
     "tags": [
       "voice assistant",
@@ -19523,7 +19571,7 @@
     "maintainer": "KristjanESPERANTO",
     "maintainerURL": "",
     "description": "A Text-To-Speech module which uses the Web Speech API of the browser. It is in an early stage of development. So far only German is supported.",
-    "issues": false,
+    "issues": true,
     "stars": 3,
     "license": "MIT",
     "tags": [
@@ -20176,7 +20224,7 @@
     "maintainerURL": "https://wiki.bugsounet.fr",
     "description": "This plugins allows to play YouTube video.<br /><br />This module has been defined to work only with MMM-GoogleAssistant.",
     "issues": true,
-    "stars": 3,
+    "stars": 4,
     "license": "MIT",
     "tags": [
       "mmm-googleassistant",
