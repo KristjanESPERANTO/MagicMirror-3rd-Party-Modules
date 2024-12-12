@@ -18387,11 +18387,8 @@
     "maintainer": "bugsounet",
     "maintainerURL": "https://wiki.bugsounet.fr",
     "description": "This plugin allow to auto-update if an update is detected.",
-    "issues": [
-      "Issues are not enabled in the GitHub repository. So users cannot report bugs. Please enable issues in your repo."
-    ],
+    "issues": [],
     "stars": 2,
-    "hasGithubIssues": false,
     "license": "MIT",
     "tags": [
       "mmm-googleassistant",
@@ -18408,7 +18405,7 @@
     "maintainerURL": "",
     "description": "Display monitor data (online/offline detection) from selfhosted <a target=\"_blank\" href=\"https://github.com/louislam/uptime-kuma\">https://github.com/louislam/uptime-kuma</a>.",
     "issues": [],
-    "stars": 1,
+    "stars": 2,
     "license": "MIT",
     "tags": [
       "uptimekuma",
@@ -18747,7 +18744,7 @@
     "issues": [
       "No image found."
     ],
-    "stars": 74,
+    "stars": 75,
     "license": "MIT",
     "tags": [
       "voice recognition",
@@ -20091,11 +20088,11 @@
   {
     "name": "MMM-Zmanim",
     "category": "Religion",
-    "url": "https://github.com/shmulyeng/MMM-Zmanim",
-    "id": "shmulyeng/MMM-Zmanim",
-    "maintainer": "shmulyeng",
+    "url": "https://github.com/supermem613/MMM-Zmanim",
+    "id": "supermem613/MMM-Zmanim",
+    "maintainer": "supermem613",
     "maintainerURL": "",
-    "description": "Displays daily Jewish calendar information.",
+    "description": "Displays Zmanim (Jewish calendar information).",
     "issues": [
       "`package.json` issue: No description",
       "`package.json` issue: No repository field.",
@@ -20110,11 +20107,11 @@
   {
     "name": "MMM-Zmanim",
     "category": "Religion",
-    "url": "https://github.com/supermem613/MMM-Zmanim",
-    "id": "supermem613/MMM-Zmanim",
-    "maintainer": "supermem613",
+    "url": "https://github.com/shmulyeng/MMM-Zmanim",
+    "id": "shmulyeng/MMM-Zmanim",
+    "maintainer": "shmulyeng",
     "maintainerURL": "",
-    "description": "Displays Zmanim (Jewish calendar information).",
+    "description": "Displays daily Jewish calendar information.",
     "issues": [
       "`package.json` issue: No description",
       "`package.json` issue: No repository field.",

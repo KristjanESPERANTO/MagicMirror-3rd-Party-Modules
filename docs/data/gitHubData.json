@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "2024-12-12T04:30:30.021Z",
+  "lastUpdate": "2024-12-12T16:30:32.429Z",
   "repositories": [
     {
       "id": "0lek/MMM-socialbicycles",
@@ -479,7 +479,7 @@
     },
     {
       "id": "alexyak/voicecontrol",
-      "gitHubDataLastUpdate": "2024-11-21T16:30:18.946Z",
+      "gitHubDataLastUpdate": "2024-12-12T16:30:30.308Z",
       "gitHubData": {
         "issues": 12,
         "stars": 41,
@@ -731,7 +731,7 @@
     },
     {
       "id": "Anonym-tsk/MMM-Volume",
-      "gitHubDataLastUpdate": "2024-11-21T16:30:19.909Z",
+      "gitHubDataLastUpdate": "2024-12-12T16:30:30.787Z",
       "gitHubData": {
         "issues": 2,
         "stars": 16,
@@ -899,7 +899,7 @@
     },
     {
       "id": "asimhsidd/MMM-VideoPlayer",
-      "gitHubDataLastUpdate": "2024-11-21T04:30:26.869Z",
+      "gitHubDataLastUpdate": "2024-12-12T16:30:22.117Z",
       "gitHubData": {
         "issues": 6,
         "stars": 7,
@@ -1011,7 +1011,7 @@
     },
     {
       "id": "bacherd/MMM-UniFi-Voucher",
-      "gitHubDataLastUpdate": "2024-11-21T04:30:21.006Z",
+      "gitHubDataLastUpdate": "2024-12-12T16:30:15.620Z",
       "gitHubData": {
         "issues": 0,
         "stars": 3,
@@ -2075,7 +2075,7 @@
     },
     {
       "id": "bugsounet/EXT-Updates",
-      "gitHubDataLastUpdate": "2024-11-21T04:30:22.418Z",
+      "gitHubDataLastUpdate": "2024-12-12T16:30:17.177Z",
       "gitHubData": {
         "issues": 0,
         "stars": 2,
@@ -2083,7 +2083,7 @@
         "archived": false,
         "disabled": false,
         "defaultBranch": "master",
-        "has_issues": false,
+        "has_issues": true,
         "lastCommit": "2024-11-19T19:37:11Z"
       }
     },
@@ -2103,7 +2103,7 @@
     },
     {
       "id": "bugsounet/EXT-Volume",
-      "gitHubDataLastUpdate": "2024-11-21T16:30:20.354Z",
+      "gitHubDataLastUpdate": "2024-12-12T16:30:31.308Z",
       "gitHubData": {
         "issues": 0,
         "stars": 4,
@@ -2509,7 +2509,7 @@
     },
     {
       "id": "Captsi/MMM-UKTide",
-      "gitHubDataLastUpdate": "2024-11-21T04:30:20.571Z",
+      "gitHubDataLastUpdate": "2024-12-12T16:30:15.056Z",
       "gitHubData": {
         "issues": 0,
         "stars": 1,
@@ -3587,7 +3587,7 @@
     },
     {
       "id": "deg0nz/MMM-VartaESS",
-      "gitHubDataLastUpdate": "2024-11-21T04:30:25.013Z",
+      "gitHubDataLastUpdate": "2024-12-12T16:30:19.927Z",
       "gitHubData": {
         "issues": 2,
         "stars": 0,
@@ -4035,7 +4035,7 @@
     },
     {
       "id": "dr4ke616/MMM-Voice-Control",
-      "gitHubDataLastUpdate": "2024-11-21T16:30:18.470Z",
+      "gitHubDataLastUpdate": "2024-12-12T16:30:27.260Z",
       "gitHubData": {
         "issues": 4,
         "stars": 17,
@@ -4525,7 +4525,7 @@
     },
     {
       "id": "erikmohn/MMM-Vindsiden",
-      "gitHubDataLastUpdate": "2024-11-21T16:30:16.588Z",
+      "gitHubDataLastUpdate": "2024-12-12T16:30:25.198Z",
       "gitHubData": {
         "issues": 0,
         "stars": 1,
@@ -4889,7 +4889,7 @@
     },
     {
       "id": "fewieden/MMM-VocabularyTrainer",
-      "gitHubDataLastUpdate": "2024-11-21T16:30:17.063Z",
+      "gitHubDataLastUpdate": "2024-12-12T16:30:25.881Z",
       "gitHubData": {
         "issues": 0,
         "stars": 5,
@@ -4903,10 +4903,10 @@
     },
     {
       "id": "fewieden/MMM-voice",
-      "gitHubDataLastUpdate": "2024-11-21T16:30:17.535Z",
+      "gitHubDataLastUpdate": "2024-12-12T16:30:26.359Z",
       "gitHubData": {
         "issues": 5,
-        "stars": 74,
+        "stars": 75,
         "license": "MIT",
         "archived": false,
         "disabled": false,
@@ -5421,7 +5421,7 @@
     },
     {
       "id": "glitch452/MMM-ViewNotifications",
-      "gitHubDataLastUpdate": "2024-11-21T04:30:28.202Z",
+      "gitHubDataLastUpdate": "2024-12-12T16:30:23.670Z",
       "gitHubData": {
         "issues": 0,
         "stars": 8,
@@ -5617,7 +5617,7 @@
     },
     {
       "id": "grenagit/MMM-VigiCrues",
-      "gitHubDataLastUpdate": "2024-11-21T04:30:29.360Z",
+      "gitHubDataLastUpdate": "2024-12-12T16:30:24.166Z",
       "gitHubData": {
         "issues": 0,
         "stars": 2,
@@ -5631,7 +5631,7 @@
     },
     {
       "id": "grenagit/MMM-VigilanceMeteoFrance",
-      "gitHubDataLastUpdate": "2024-11-21T16:30:15.966Z",
+      "gitHubDataLastUpdate": "2024-12-12T16:30:24.634Z",
       "gitHubData": {
         "issues": 0,
         "stars": 6,
@@ -8865,7 +8865,7 @@
     },
     {
       "id": "mercredo/MMM-WasteCollectionWuerzburg",
-      "gitHubDataLastUpdate": "2024-11-21T16:30:21.338Z",
+      "gitHubDataLastUpdate": "2024-12-12T16:30:32.379Z",
       "gitHubData": {
         "issues": 0,
         "stars": 1,
@@ -9117,10 +9117,10 @@
     },
     {
       "id": "MikeBishop/MMM-uptimekuma",
-      "gitHubDataLastUpdate": "2024-11-21T04:30:22.996Z",
+      "gitHubDataLastUpdate": "2024-12-12T16:30:17.803Z",
       "gitHubData": {
         "issues": 1,
-        "stars": 1,
+        "stars": 2,
         "license": "MIT",
         "archived": false,
         "disabled": false,
@@ -9747,7 +9747,7 @@
     },
     {
       "id": "mrdis/MMM-volumio-playing",
-      "gitHubDataLastUpdate": "2024-11-21T16:30:20.821Z",
+      "gitHubDataLastUpdate": "2024-12-12T16:30:31.836Z",
       "gitHubData": {
         "issues": 2,
         "stars": 4,
@@ -9775,7 +9775,7 @@
     },
     {
       "id": "mrVragec/MMM-uptimerobot",
-      "gitHubDataLastUpdate": "2024-11-21T04:30:23.524Z",
+      "gitHubDataLastUpdate": "2024-12-12T16:30:18.266Z",
       "gitHubData": {
         "issues": 3,
         "stars": 16,
@@ -9831,7 +9831,7 @@
     },
     {
       "id": "msteinkogler/MMM-updateFromStdOut",
-      "gitHubDataLastUpdate": "2024-11-21T04:30:21.892Z",
+      "gitHubDataLastUpdate": "2024-12-12T16:30:16.677Z",
       "gitHubData": {
         "issues": 1,
         "stars": 2,
@@ -10657,7 +10657,7 @@
     },
     {
       "id": "n-gao/MMM-vCard2Calendar",
-      "gitHubDataLastUpdate": "2024-11-21T04:30:26.024Z",
+      "gitHubDataLastUpdate": "2024-12-12T16:30:21.084Z",
       "gitHubData": {
         "issues": 0,
         "stars": 1,
@@ -11385,7 +11385,7 @@
     },
     {
       "id": "olexs/MMM-UserPresenceToMQTT",
-      "gitHubDataLastUpdate": "2024-11-21T04:30:24.066Z",
+      "gitHubDataLastUpdate": "2024-12-12T16:30:18.941Z",
       "gitHubData": {
         "issues": 2,
         "stars": 4,
@@ -11609,7 +11609,7 @@
     },
     {
       "id": "parnic/MMM-Unsplash",
-      "gitHubDataLastUpdate": "2024-11-21T04:30:21.412Z",
+      "gitHubDataLastUpdate": "2024-12-12T16:30:16.155Z",
       "gitHubData": {
         "issues": 0,
         "stars": 8,
@@ -11777,7 +11777,7 @@
     },
     {
       "id": "phungorquan/MMM-VietNamEventsCalendar",
-      "gitHubDataLastUpdate": "2024-11-21T04:30:27.306Z",
+      "gitHubDataLastUpdate": "2024-12-12T16:30:22.568Z",
       "gitHubData": {
         "issues": 0,
         "stars": 0,
@@ -13989,7 +13989,7 @@
     },
     {
       "id": "Snille/MMM-Videoplayer",
-      "gitHubDataLastUpdate": "2024-11-21T04:30:26.429Z",
+      "gitHubDataLastUpdate": "2024-12-12T16:30:21.555Z",
       "gitHubData": {
         "issues": 1,
         "stars": 11,
@@ -15319,7 +15319,7 @@
     },
     {
       "id": "Tom-Hirschberger/MMM-ValuesByNotification",
-      "gitHubDataLastUpdate": "2024-11-21T04:30:24.559Z",
+      "gitHubDataLastUpdate": "2024-12-12T16:30:19.451Z",
       "gitHubData": {
         "issues": 0,
         "stars": 6,
@@ -15655,7 +15655,7 @@
     },
     {
       "id": "tylerstambaugh/MMM-StravaWeekInBike",
-      "gitHubDataLastUpdate": "2024-11-21T04:30:27.785Z",
+      "gitHubDataLastUpdate": "2024-12-12T16:30:23.086Z",
       "gitHubData": {
         "issues": 2,
         "stars": 2,
@@ -15935,7 +15935,7 @@
     },
     {
       "id": "Veldrovive/MMM-Voice-Commands",
-      "gitHubDataLastUpdate": "2024-11-21T16:30:18.034Z",
+      "gitHubDataLastUpdate": "2024-12-12T16:30:26.798Z",
       "gitHubData": {
         "issues": 4,
         "stars": 18,
@@ -16537,7 +16537,7 @@
     },
     {
       "id": "Xkhi/MMM-Vasttrafik-PublicTransport",
-      "gitHubDataLastUpdate": "2024-11-21T04:30:25.562Z",
+      "gitHubDataLastUpdate": "2024-12-12T16:30:20.586Z",
       "gitHubData": {
         "issues": 2,
         "stars": 1,

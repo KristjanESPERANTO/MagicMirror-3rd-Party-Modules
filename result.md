@@ -1,6 +1,6 @@
 # Result of the module analysis
 
-Last update: 2024-12-12T05:39:00+01:00
+Last update: 2024-12-12T17:38:52+01:00
 
 ## Statistics
 
@@ -4071,7 +4071,7 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
    - @electron/rebuild    ^3.6.0  →    ^3.7.1
    - node-abi            ^3.65.0  →   ^3.71.0
    - node-gyp            ^10.2.0  →   ^11.0.0
-   - puppeteer          ^22.15.0  →  ^23.10.3
+   - puppeteer          ^22.15.0  →  ^23.10.4
    - sharp               ^0.33.4  →   ^0.33.5
 
 
@@ -7057,8 +7057,8 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
 1. Recommendation: The README seems not to have an update instruction (the word 'update' is missing). Please add one.
 2. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
 3. Information: There are updates for 2 dependencie(s):
-   - async                ^3.2.5  →   ^3.2.6
-   - systeminformation  ^5.21.24  →  ^5.23.9
+   - async                ^3.2.5  →    ^3.2.6
+   - systeminformation  ^5.21.24  →  ^5.23.10
 
 
 ### [MMM-ping by fewieden](https://github.com/fewieden/MMM-ping)
@@ -9895,10 +9895,12 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
 
 ### [EXT-Updates by bugsounet](https://github.com/bugsounet/EXT-Updates)
 
-1. Issues are not enabled in the GitHub repository. So users cannot report bugs. Please enable issues in your repo.
-2. Information: There are updates for 2 dependencie(s):
+1. Information: There are updates for 2 dependencie(s):
    - @stylistic/eslint-plugin  ^2.11.0  →  ^2.12.1
    - eslint                    ^9.15.0  →  ^9.16.0
+
+2. ESLint issues:
+   - installer/minify.js: Line 7, Column 22: "glob" should be replaced with an alternative package. Read more here: https://github.com/es-tooling/module-replacements/blob/main/docs/modules/glob.md (rule: depend/ban-dependencies)
 
 
 ### [MMM-uptimekuma by MikeBishop](https://github.com/MikeBishop/MMM-uptimekuma)
@@ -10809,7 +10811,7 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
 2. Recommendation: Found `axios` in file `node_helper.js`: Replace it with built-in fetch.
 3. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
 
-### [MMM-Zmanim by shmulyeng](https://github.com/shmulyeng/MMM-Zmanim)
+### [MMM-Zmanim by supermem613](https://github.com/supermem613/MMM-Zmanim)
 
 1. `package.json` issue: No description
 2. `package.json` issue: No repository field.
@@ -10823,7 +10825,7 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
 10. Found directory `node_modules`. This shouldn't be uploaded. Add `node_modules/`to `.gitignore`.
 11. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
 
-### [MMM-Zmanim by supermem613](https://github.com/supermem613/MMM-Zmanim)
+### [MMM-Zmanim by shmulyeng](https://github.com/shmulyeng/MMM-Zmanim)
 
 1. `package.json` issue: No description
 2. `package.json` issue: No repository field.

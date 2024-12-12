@@ -18647,7 +18647,6 @@
     "description": "This plugin allow to auto-update if an update is detected.<br /><br />This module has been defined to work only with MMM-GoogleAssistant.",
     "issues": true,
     "stars": 2,
-    "hasGithubIssues": false,
     "license": "MIT",
     "tags": [
       "mmm-googleassistant",
@@ -18666,7 +18665,7 @@
     "maintainerURL": "",
     "description": "Display monitor data (online/offline detection) from selfhosted <a target=\"_blank\" href=\"https://github.com/louislam/uptime-kuma\">https://github.com/louislam/uptime-kuma</a>.",
     "issues": true,
-    "stars": 1,
+    "stars": 2,
     "license": "MIT",
     "tags": [
       "uptimekuma",
@@ -19009,7 +19008,7 @@
     "maintainerURL": "",
     "description": "Offline Voice Recognition Module, with ability to control other modules, based on pocketsphinx.",
     "issues": true,
-    "stars": 74,
+    "stars": 75,
     "license": "MIT",
     "tags": [
       "voice recognition",
@@ -20371,22 +20370,6 @@
   {
     "name": "MMM-Zmanim",
     "category": "Religion",
-    "url": "https://github.com/shmulyeng/MMM-Zmanim",
-    "id": "shmulyeng/MMM-Zmanim",
-    "maintainer": "shmulyeng",
-    "maintainerURL": "",
-    "description": "Displays daily Jewish calendar information.",
-    "issues": true,
-    "stars": 0,
-    "hasGithubIssues": false,
-    "license": "ISC",
-    "image": "alternateScreenshot.jpg",
-    "defaultSortWeight": 12,
-    "lastCommit": "2020-12-06T21:27:43-05:00"
-  },
-  {
-    "name": "MMM-Zmanim",
-    "category": "Religion",
     "url": "https://github.com/supermem613/MMM-Zmanim",
     "id": "supermem613/MMM-Zmanim",
     "maintainer": "supermem613",
@@ -20399,5 +20382,21 @@
     "image": "alternateScreenshot.jpg",
     "defaultSortWeight": 11,
     "lastCommit": "2024-11-30T18:41:10-05:00"
+  },
+  {
+    "name": "MMM-Zmanim",
+    "category": "Religion",
+    "url": "https://github.com/shmulyeng/MMM-Zmanim",
+    "id": "shmulyeng/MMM-Zmanim",
+    "maintainer": "shmulyeng",
+    "maintainerURL": "",
+    "description": "Displays daily Jewish calendar information.",
+    "issues": true,
+    "stars": 0,
+    "hasGithubIssues": false,
+    "license": "ISC",
+    "image": "alternateScreenshot.jpg",
+    "defaultSortWeight": 12,
+    "lastCommit": "2020-12-06T21:27:43-05:00"
   }
 ]

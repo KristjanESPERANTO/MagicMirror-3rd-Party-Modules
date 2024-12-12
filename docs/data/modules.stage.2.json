@@ -13260,7 +13260,6 @@
     "description": "This plugin allow to auto-update if an update is detected.",
     "issues": [],
     "stars": 2,
-    "hasGithubIssues": false,
     "license": "MIT"
   },
   {
@@ -13272,7 +13271,7 @@
     "maintainerURL": "",
     "description": "Display monitor data (online/offline detection) from selfhosted <a target=\"_blank\" href=\"https://github.com/louislam/uptime-kuma\">https://github.com/louislam/uptime-kuma</a>.",
     "issues": [],
-    "stars": 1,
+    "stars": 2,
     "license": "MIT"
   },
   {
@@ -13499,7 +13498,7 @@
     "maintainerURL": "",
     "description": "Offline Voice Recognition Module, with ability to control other modules, based on pocketsphinx.",
     "issues": [],
-    "stars": 74,
+    "stars": 75,
     "license": "MIT"
   },
   {
@@ -14470,11 +14469,11 @@
   {
     "name": "MMM-Zmanim",
     "category": "Religion",
-    "url": "https://github.com/shmulyeng/MMM-Zmanim",
-    "id": "shmulyeng/MMM-Zmanim",
-    "maintainer": "shmulyeng",
+    "url": "https://github.com/supermem613/MMM-Zmanim",
+    "id": "supermem613/MMM-Zmanim",
+    "maintainer": "supermem613",
     "maintainerURL": "",
-    "description": "Displays daily Jewish calendar information.",
+    "description": "Displays Zmanim (Jewish calendar information).",
     "issues": [],
     "stars": 0,
     "hasGithubIssues": false
@@ -14482,11 +14481,11 @@
   {
     "name": "MMM-Zmanim",
     "category": "Religion",
-    "url": "https://github.com/supermem613/MMM-Zmanim",
-    "id": "supermem613/MMM-Zmanim",
-    "maintainer": "supermem613",
+    "url": "https://github.com/shmulyeng/MMM-Zmanim",
+    "id": "shmulyeng/MMM-Zmanim",
+    "maintainer": "shmulyeng",
     "maintainerURL": "",
-    "description": "Displays Zmanim (Jewish calendar information).",
+    "description": "Displays daily Jewish calendar information.",
     "issues": [],
     "stars": 0,
     "hasGithubIssues": false
