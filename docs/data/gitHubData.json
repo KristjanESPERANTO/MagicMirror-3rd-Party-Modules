@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "2024-12-11T16:30:29.637Z",
+  "lastUpdate": "2024-12-12T04:30:30.021Z",
   "repositories": [
     {
       "id": "0lek/MMM-socialbicycles",
@@ -171,7 +171,7 @@
     },
     {
       "id": "AdamMoses-GitHub/MMM-TweetsByTimelineOrList",
-      "gitHubDataLastUpdate": "2024-11-21T04:30:15.562Z",
+      "gitHubDataLastUpdate": "2024-12-12T04:30:25.588Z",
       "gitHubData": {
         "issues": 4,
         "stars": 14,
@@ -185,7 +185,7 @@
     },
     {
       "id": "AdamMoses-GitHub/MMM-TwitterTrendsByPlace",
-      "gitHubDataLastUpdate": "2024-11-21T04:30:16.951Z",
+      "gitHubDataLastUpdate": "2024-12-12T04:30:26.973Z",
       "gitHubData": {
         "issues": 1,
         "stars": 12,
@@ -703,7 +703,7 @@
     },
     {
       "id": "AndyHazz/MMM-UKLiveBusStopInfo",
-      "gitHubDataLastUpdate": "2024-11-21T04:30:18.650Z",
+      "gitHubDataLastUpdate": "2024-12-12T04:30:28.531Z",
       "gitHubData": {
         "issues": 0,
         "stars": 0,
@@ -1109,7 +1109,7 @@
     },
     {
       "id": "balassy/MMM-Udvaronc",
-      "gitHubDataLastUpdate": "2024-11-21T04:30:18.053Z",
+      "gitHubDataLastUpdate": "2024-12-12T04:30:27.989Z",
       "gitHubData": {
         "issues": 0,
         "stars": 4,
@@ -1515,7 +1515,7 @@
     },
     {
       "id": "Blastitt/twitControl",
-      "gitHubDataLastUpdate": "2024-11-21T04:30:16.480Z",
+      "gitHubDataLastUpdate": "2024-12-12T04:30:26.554Z",
       "gitHubData": {
         "issues": 6,
         "stars": 9,
@@ -2159,7 +2159,7 @@
     },
     {
       "id": "bugsounet/EXT-YouTubeCast",
-      "gitHubDataLastUpdate": "2024-11-20T16:30:21.933Z",
+      "gitHubDataLastUpdate": "2024-12-12T04:30:17.805Z",
       "gitHubData": {
         "issues": 0,
         "stars": 3,
@@ -2803,7 +2803,7 @@
     },
     {
       "id": "choffmann/MMM-YT-SubCount",
-      "gitHubDataLastUpdate": "2024-11-20T16:30:23.435Z",
+      "gitHubDataLastUpdate": "2024-12-12T04:30:19.327Z",
       "gitHubData": {
         "issues": 0,
         "stars": 3,
@@ -4875,7 +4875,7 @@
     },
     {
       "id": "fewieden/MMM-TTS",
-      "gitHubDataLastUpdate": "2024-11-20T16:30:27.449Z",
+      "gitHubDataLastUpdate": "2024-12-12T04:30:23.156Z",
       "gitHubData": {
         "issues": 1,
         "stars": 19,
@@ -5071,7 +5071,7 @@
     },
     {
       "id": "fmandal/MMM-YrThen",
-      "gitHubDataLastUpdate": "2024-11-20T16:30:22.914Z",
+      "gitHubDataLastUpdate": "2024-12-12T04:30:18.786Z",
       "gitHubData": {
         "issues": 0,
         "stars": 16,
@@ -7913,7 +7913,7 @@
     },
     {
       "id": "kyle-kelly/MMM-uber",
-      "gitHubDataLastUpdate": "2024-11-21T04:30:17.400Z",
+      "gitHubDataLastUpdate": "2024-12-12T04:30:27.482Z",
       "gitHubData": {
         "issues": 1,
         "stars": 17,
@@ -8053,7 +8053,7 @@
     },
     {
       "id": "Lavve/MMM-WeatherOutfit",
-      "gitHubDataLastUpdate": "2024-11-20T16:30:25.592Z",
+      "gitHubDataLastUpdate": "2024-12-12T04:30:21.266Z",
       "gitHubData": {
         "issues": 0,
         "stars": 1,
@@ -8291,7 +8291,7 @@
     },
     {
       "id": "maloakes/MMM-UKMOWeatherWarnings",
-      "gitHubDataLastUpdate": "2024-11-21T04:30:19.688Z",
+      "gitHubDataLastUpdate": "2024-12-12T04:30:29.442Z",
       "gitHubData": {
         "issues": 3,
         "stars": 2,
@@ -8333,7 +8333,7 @@
     },
     {
       "id": "MarcLandis/MMM-Buttons",
-      "gitHubDataLastUpdate": "2024-11-20T16:30:21.503Z",
+      "gitHubDataLastUpdate": "2024-12-12T04:30:17.375Z",
       "gitHubData": {
         "issues": 1,
         "stars": 4,
@@ -8361,21 +8361,21 @@
     },
     {
       "id": "MarcLandis/MMM-FSAPI",
-      "gitHubDataLastUpdate": "2024-11-20T16:30:20.400Z",
+      "gitHubDataLastUpdate": "2024-12-12T04:30:16.401Z",
       "gitHubData": {
-        "issues": 0,
+        "issues": 1,
         "stars": 0,
         "license": "MIT",
         "archived": false,
         "disabled": false,
         "defaultBranch": "main",
         "has_issues": true,
-        "lastCommit": "2024-11-20T13:44:36Z"
+        "lastCommit": "2024-12-05T21:30:19Z"
       }
     },
     {
       "id": "MarcLandis/MMM-OpenWeatherMapForecast",
-      "gitHubDataLastUpdate": "2024-11-20T16:30:20.938Z",
+      "gitHubDataLastUpdate": "2024-12-12T04:30:16.877Z",
       "gitHubData": {
         "issues": 5,
         "stars": 31,
@@ -8627,10 +8627,10 @@
     },
     {
       "id": "mattdy/MMM-UKNationalRail",
-      "gitHubDataLastUpdate": "2024-11-21T04:30:20.129Z",
+      "gitHubDataLastUpdate": "2024-12-12T04:30:29.983Z",
       "gitHubData": {
         "issues": 1,
-        "stars": 5,
+        "stars": 6,
         "license": "MIT",
         "archived": false,
         "disabled": false,
@@ -10923,7 +10923,7 @@
     },
     {
       "id": "nigel-daniels/MMM-Tube-Status",
-      "gitHubDataLastUpdate": "2024-11-20T16:30:27.967Z",
+      "gitHubDataLastUpdate": "2024-12-12T04:30:23.609Z",
       "gitHubData": {
         "issues": 0,
         "stars": 3,
@@ -11847,7 +11847,7 @@
     },
     {
       "id": "PierreGode/MMM-ZAPTEC",
-      "gitHubDataLastUpdate": "2024-11-20T16:30:23.991Z",
+      "gitHubDataLastUpdate": "2024-12-12T04:30:19.793Z",
       "gitHubData": {
         "issues": 0,
         "stars": 2,
@@ -12197,7 +12197,7 @@
     },
     {
       "id": "rafagale/MMM-TUZSAZaragoza",
-      "gitHubDataLastUpdate": "2024-11-20T16:30:28.870Z",
+      "gitHubDataLastUpdate": "2024-12-12T04:30:24.626Z",
       "gitHubData": {
         "issues": 0,
         "stars": 2,
@@ -12491,7 +12491,7 @@
     },
     {
       "id": "reidarw/MMM-TRV-WastePlan",
-      "gitHubDataLastUpdate": "2024-11-20T16:30:27.030Z",
+      "gitHubDataLastUpdate": "2024-12-12T04:30:22.657Z",
       "gitHubData": {
         "issues": 0,
         "stars": 7,
@@ -12701,7 +12701,7 @@
     },
     {
       "id": "robotfishe/MMM-Tronity",
-      "gitHubDataLastUpdate": "2024-11-20T16:30:26.593Z",
+      "gitHubDataLastUpdate": "2024-12-12T04:30:22.218Z",
       "gitHubData": {
         "issues": 3,
         "stars": 2,
@@ -12883,7 +12883,7 @@
     },
     {
       "id": "ryck/MMM-Year-Progress",
-      "gitHubDataLastUpdate": "2024-11-20T16:30:26.068Z",
+      "gitHubDataLastUpdate": "2024-12-12T04:30:21.718Z",
       "gitHubData": {
         "issues": 3,
         "stars": 9,
@@ -13583,7 +13583,7 @@
     },
     {
       "id": "shmulyeng/MMM-Zmanim",
-      "gitHubDataLastUpdate": "2024-11-20T16:30:24.484Z",
+      "gitHubDataLastUpdate": "2024-12-12T04:30:20.323Z",
       "gitHubData": {
         "issues": 0,
         "stars": 0,
@@ -13835,7 +13835,7 @@
     },
     {
       "id": "slametps/MMM-TuyaSL",
-      "gitHubDataLastUpdate": "2024-11-20T16:30:28.425Z",
+      "gitHubDataLastUpdate": "2024-12-12T04:30:24.132Z",
       "gitHubData": {
         "issues": 9,
         "stars": 3,
@@ -14731,7 +14731,7 @@
     },
     {
       "id": "thariq-shanavas/MMM-uv-index",
-      "gitHubDataLastUpdate": "2024-11-20T16:30:25.118Z",
+      "gitHubDataLastUpdate": "2024-12-12T04:30:20.836Z",
       "gitHubData": {
         "issues": 1,
         "stars": 1,
@@ -16271,7 +16271,7 @@
     },
     {
       "id": "WilliamFitzjohn/MMM-TwitchAlert",
-      "gitHubDataLastUpdate": "2024-11-21T04:30:16.039Z",
+      "gitHubDataLastUpdate": "2024-12-12T04:30:26.080Z",
       "gitHubData": {
         "issues": 3,
         "stars": 2,
@@ -16509,7 +16509,7 @@
     },
     {
       "id": "XBCreepinJesus/MMM-TvheadendDVR",
-      "gitHubDataLastUpdate": "2024-11-21T04:30:15.153Z",
+      "gitHubDataLastUpdate": "2024-12-12T04:30:25.117Z",
       "gitHubData": {
         "issues": 0,
         "stars": 0,
@@ -16523,7 +16523,7 @@
     },
     {
       "id": "XBCreepinJesus/MMM-UKLiveTrainDepartures",
-      "gitHubDataLastUpdate": "2024-11-21T04:30:19.167Z",
+      "gitHubDataLastUpdate": "2024-12-12T04:30:28.980Z",
       "gitHubData": {
         "issues": 2,
         "stars": 2,
@@ -16691,7 +16691,7 @@
     },
     {
       "id": "Yr/MMM-YrNow",
-      "gitHubDataLastUpdate": "2024-11-20T16:30:22.406Z",
+      "gitHubDataLastUpdate": "2024-12-12T04:30:18.279Z",
       "gitHubData": {
         "issues": 8,
         "stars": 23,
