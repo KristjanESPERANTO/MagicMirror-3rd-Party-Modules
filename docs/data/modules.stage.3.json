@@ -10750,6 +10750,25 @@
     "image": "screenshot.jpg"
   },
   {
+    "name": "MMM-MyHomeWizard",
+    "category": "Utility / IoT / 3rd Party / Integration",
+    "url": "https://github.com/htilburgs/MMM-MyHomeWizard",
+    "id": "htilburgs/MMM-MyHomeWizard",
+    "maintainer": "htilburgs",
+    "maintainerURL": "",
+    "description": "Displays HomeWizard P1 Meter and/or Water Meter information.",
+    "issues": [
+      "No image found."
+    ],
+    "stars": 1,
+    "license": "MIT",
+    "tags": [
+      "home wizard",
+      "p1 meter",
+      "water meter"
+    ]
+  },
+  {
     "name": "MMM-MyMinecraft",
     "category": "Entertainment / Misc",
     "url": "https://github.com/framboise-pi/MMM-MyMinecraft",
@@ -18972,7 +18991,7 @@
     "issues": [
       "There is no `package.json`. We need this file to gather information about the module for the module list page."
     ],
-    "stars": 100,
+    "stars": 101,
     "license": "MIT",
     "image": "WB-weather-screenshots-wb-weather-wallberry-classic.jpg"
   },
@@ -18988,7 +19007,7 @@
       "There are no keywords in 'package.json'. We would use them as tags on the module list page.",
       "No image found."
     ],
-    "stars": 105,
+    "stars": 107,
     "license": "MIT"
   },
   {
@@ -19042,7 +19061,7 @@
       "There is no `package.json`. We need this file to gather information about the module for the module list page.",
       "No image found."
     ],
-    "stars": 47,
+    "stars": 48,
     "license": "MIT"
   },
   {
@@ -19153,7 +19172,7 @@
     "issues": [
       "There is no `package.json`. We need this file to gather information about the module for the module list page."
     ],
-    "stars": 17,
+    "stars": 19,
     "license": "MIT",
     "image": "scr.jpg"
   },
@@ -19183,7 +19202,7 @@
     "issues": [
       "There is no `package.json`. We need this file to gather information about the module for the module list page."
     ],
-    "stars": 37
+    "stars": 38
   },
   {
     "name": "MMM-weatherforecast",

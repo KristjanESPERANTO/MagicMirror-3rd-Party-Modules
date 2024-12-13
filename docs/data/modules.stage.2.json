@@ -7759,6 +7759,18 @@
     "license": "MIT"
   },
   {
+    "name": "MMM-MyHomeWizard",
+    "category": "Utility / IoT / 3rd Party / Integration",
+    "url": "https://github.com/htilburgs/MMM-MyHomeWizard",
+    "id": "htilburgs/MMM-MyHomeWizard",
+    "maintainer": "htilburgs",
+    "maintainerURL": "",
+    "description": "Displays HomeWizard P1 Meter and/or Water Meter information.",
+    "issues": [],
+    "stars": 1,
+    "license": "MIT"
+  },
+  {
     "name": "MMM-MyMinecraft",
     "category": "Entertainment / Misc",
     "url": "https://github.com/framboise-pi/MMM-MyMinecraft",
@@ -13658,7 +13670,7 @@
     "maintainerURL": "",
     "description": "Re-themes MagicMirror² to look like a beautiful digital photo wall display. It adds a new font, styles, redesigned clock and weather displays, and rotating background image pulled from unsplash.com.",
     "issues": [],
-    "stars": 100,
+    "stars": 101,
     "license": "MIT"
   },
   {
@@ -13670,7 +13682,7 @@
     "maintainerURL": "",
     "description": "Rotates through wallpapers from Bing or Reddit.",
     "issues": [],
-    "stars": 105,
+    "stars": 107,
     "license": "MIT"
   },
   {
@@ -13706,7 +13718,7 @@
     "maintainerURL": "",
     "description": "Keeps an eye on your UI and quits app in case the UI crashes. If you combine this with the PM2 process manager, MM2 will automaticly restart after a UI failure.",
     "issues": [],
-    "stars": 47,
+    "stars": 48,
     "license": "MIT"
   },
   {
@@ -13788,7 +13800,7 @@
     "maintainerURL": "https://github.com/BrianHepler",
     "description": "Dynamically loaded weather image background from Unsplash. This is a plugin of other weather modules.",
     "issues": [],
-    "stars": 17,
+    "stars": 19,
     "license": "MIT"
   },
   {
@@ -13812,7 +13824,7 @@
     "maintainerURL": "https://github.com/fruestueck",
     "description": "Display clothing depending on the weather forecast and your personal preferences.",
     "issues": [],
-    "stars": 37
+    "stars": 38
   },
   {
     "name": "MMM-weatherforecast",

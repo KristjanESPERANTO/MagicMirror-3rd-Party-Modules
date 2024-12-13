@@ -1,16 +1,16 @@
 # Result of the module analysis
 
-Last update: 2024-12-12T17:38:52+01:00
+Last update: 2024-12-13T05:39:18+01:00
 
 ## Statistics
 
 |                      | number   |
 |:---------------------|:--------:|
-| modules analyzed     |   1214   |
+| modules analyzed     |   1215   |
 | maintainer           |    652   |
-| modules with issues  |   1214   |
-| issues               |   6988   |
-| modules at github    |   1104   |
+| modules with issues  |   1215   |
+| issues               |   6992   |
+| modules at github    |   1105   |
 | modules at gitlab    |     10   |
 | modules at bitbucket |      1   |
 
@@ -5753,6 +5753,13 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
 4. Recommendation: The README seems not to have an update instruction (the word 'update' is missing). Please add one.
 5. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
 
+### [MMM-MyHomeWizard by htilburgs](https://github.com/htilburgs/MMM-MyHomeWizard)
+
+1. No image found.
+2. Typo: Found `Magic Mirror` in file `README.md`: Replace it with `MagicMirror²`.
+3. Outdated: Found `MichMich/MagicMirror` in file `README.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
+4. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
+
 ### [MMM-MyMinecraft by framboise-pi](https://github.com/framboise-pi/MMM-MyMinecraft)
 
 1. Issue: The license in the package.json (MIT) doesn't match the license file (AGPL-3.0).
@@ -7058,7 +7065,7 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
 2. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
 3. Information: There are updates for 2 dependencie(s):
    - async                ^3.2.5  →    ^3.2.6
-   - systeminformation  ^5.21.24  →  ^5.23.10
+   - systeminformation  ^5.21.24  →  ^5.23.11
 
 
 ### [MMM-ping by fewieden](https://github.com/fewieden/MMM-ping)
@@ -10119,7 +10126,7 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
    - @eslint/js   ^9.15.0  →   ^9.16.0
    - eslint       ^9.15.0  →   ^9.16.0
    - globals     ^15.12.0  →  ^15.13.0
-   - openai       ^4.73.1  →   ^4.76.1
+   - openai       ^4.73.1  →   ^4.76.2
 
 
 ### [MMM-Volume by Anonym-tsk](https://github.com/Anonym-tsk/MMM-Volume)

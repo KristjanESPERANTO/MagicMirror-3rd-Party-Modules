@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "2024-12-12T16:30:13.510Z",
+  "lastUpdate": "2024-12-13T04:30:14.927Z",
   "modules": [
     {
       "name": "MMM-01ZM",
@@ -6558,6 +6558,16 @@
       "maintainer": "htilburgs",
       "maintainerURL": "",
       "description": "Displays your Custom Garbage Calendar.",
+      "issues": []
+    },
+    {
+      "name": "MMM-MyHomeWizard",
+      "category": "Utility / IoT / 3rd Party / Integration",
+      "url": "https://github.com/htilburgs/MMM-MyHomeWizard",
+      "id": "htilburgs/MMM-MyHomeWizard",
+      "maintainer": "htilburgs",
+      "maintainerURL": "",
+      "description": "Displays HomeWizard P1 Meter and/or Water Meter information.",
       "issues": []
     },
     {
