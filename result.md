@@ -1,6 +1,6 @@
 # Result of the module analysis
 
-Last update: 2024-12-13T05:39:18+01:00
+Last update: 2024-12-13T17:38:50+01:00
 
 ## Statistics
 
@@ -2643,7 +2643,8 @@ deprecated: no longer maintained, switch to modern iconify-icon web component
 
 ### [MMM-Forum by KristjanESPERANTO](https://github.com/KristjanESPERANTO/MMM-Forum)
 
-1. Information: There are updates for 2 dependencie(s):
+1. Information: There are updates for 3 dependencie(s):
+   - @eslint/json                ^0.8.0  →    ^0.9.0
    - @stylistic/eslint-plugin   ^2.12.0  →   ^2.12.1
    - lint-staged               ^15.2.10  →  ^15.2.11
 
@@ -7065,7 +7066,7 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
 2. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
 3. Information: There are updates for 2 dependencie(s):
    - async                ^3.2.5  →    ^3.2.6
-   - systeminformation  ^5.21.24  →  ^5.23.11
+   - systeminformation  ^5.21.24  →  ^5.23.12
 
 
 ### [MMM-ping by fewieden](https://github.com/fewieden/MMM-ping)
@@ -7475,7 +7476,8 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
 
 ### [MMM-PublicTransportHafas by KristjanESPERANTO](https://github.com/KristjanESPERANTO/MMM-PublicTransportHafas)
 
-1. Information: There are updates for 2 dependencie(s):
+1. Information: There are updates for 3 dependencie(s):
+   - @eslint/json                ^0.8.0  →    ^0.9.0
    - @stylistic/eslint-plugin   ^2.12.0  →   ^2.12.1
    - lint-staged               ^15.2.10  →  ^15.2.11
 
@@ -9550,16 +9552,16 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
 6. Warning: No LICENSE file.
 7. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
 
-### [EXT-Touch by bugsounet](https://github.com/bugsounet/EXT-Touch)
-
-1. Recommendation: The README seems not to have an update instruction (the word 'update' is missing). Please add one.
-2. Recommendation: The README seems not to have an install instruction (the words 'install' or 'installation' are missing). Please add one.
-
 ### [MMM-Touch by gfischershaw](https://github.com/gfischershaw/MMM-Touch)
 
 1. There is no `package.json`. We need this file to gather information about the module for the module list page.
 2. Recommendation: The README seems not to have an update instruction (the word 'update' is missing). Please add one.
 3. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
+
+### [EXT-Touch by bugsounet](https://github.com/bugsounet/EXT-Touch)
+
+1. Recommendation: The README seems not to have an update instruction (the word 'update' is missing). Please add one.
+2. Recommendation: The README seems not to have an install instruction (the words 'install' or 'installation' are missing). Please add one.
 
 ### [MMM-TouchButton by Tom-Hirschberger](https://github.com/Tom-Hirschberger/MMM-TouchButton)
 
@@ -10126,7 +10128,7 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
    - @eslint/js   ^9.15.0  →   ^9.16.0
    - eslint       ^9.15.0  →   ^9.16.0
    - globals     ^15.12.0  →  ^15.13.0
-   - openai       ^4.73.1  →   ^4.76.2
+   - openai       ^4.73.1  →   ^4.76.3
 
 
 ### [MMM-Volume by Anonym-tsk](https://github.com/Anonym-tsk/MMM-Volume)

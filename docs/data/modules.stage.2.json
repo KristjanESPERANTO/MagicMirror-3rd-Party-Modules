@@ -11068,7 +11068,7 @@
     "maintainerURL": "",
     "description": "Read data from a Pentair ScreenLogic pool system.",
     "issues": [],
-    "stars": 2,
+    "stars": 3,
     "license": "MIT"
   },
   {
@@ -12816,18 +12816,6 @@
     "stars": 12
   },
   {
-    "name": "EXT-Touch",
-    "category": "Extended plugins for MMM-GoogleAssistant",
-    "url": "https://github.com/bugsounet/EXT-Touch",
-    "id": "bugsounet/EXT-Touch",
-    "maintainer": "bugsounet",
-    "maintainerURL": "https://wiki.bugsounet.fr",
-    "description": "Activate MMM-GoogleAssistant with a Touch Screen by Touching the Google Icon.",
-    "issues": [],
-    "stars": 0,
-    "license": "MIT"
-  },
-  {
     "name": "MMM-Touch",
     "category": "Utility / IoT / 3rd Party / Integration",
     "url": "https://github.com/gfischershaw/MMM-Touch",
@@ -12837,6 +12825,18 @@
     "description": "Universal touch gesture commander using touchscreen.",
     "issues": [],
     "stars": 13,
+    "license": "MIT"
+  },
+  {
+    "name": "EXT-Touch",
+    "category": "Extended plugins for MMM-GoogleAssistant",
+    "url": "https://github.com/bugsounet/EXT-Touch",
+    "id": "bugsounet/EXT-Touch",
+    "maintainer": "bugsounet",
+    "maintainerURL": "https://wiki.bugsounet.fr",
+    "description": "Activate MMM-GoogleAssistant with a Touch Screen by Touching the Google Icon.",
+    "issues": [],
+    "stars": 0,
     "license": "MIT"
   },
   {
@@ -14145,7 +14145,7 @@
     "maintainerURL": "",
     "description": "Displays the Merriam-Webster word of the day along with its part of speech, pronunciation, definition, and an example.",
     "issues": [],
-    "stars": 4,
+    "stars": 5,
     "license": "MIT"
   },
   {

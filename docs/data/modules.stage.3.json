@@ -15343,7 +15343,7 @@
     "issues": [
       "There are no keywords in 'package.json'. We would use them as tags on the module list page."
     ],
-    "stars": 2,
+    "stars": 3,
     "license": "MIT",
     "image": "screenshot.jpg"
   },
@@ -17785,6 +17785,21 @@
     "stars": 12
   },
   {
+    "name": "MMM-Touch",
+    "category": "Utility / IoT / 3rd Party / Integration",
+    "url": "https://github.com/gfischershaw/MMM-Touch",
+    "id": "gfischershaw/MMM-Touch",
+    "maintainer": "gfischershaw",
+    "maintainerURL": "",
+    "description": "Universal touch gesture commander using touchscreen.",
+    "issues": [
+      "There is no `package.json`. We need this file to gather information about the module for the module list page."
+    ],
+    "stars": 13,
+    "license": "MIT",
+    "image": "MMM-Touch.jpg"
+  },
+  {
     "name": "EXT-Touch",
     "category": "Extended plugins for MMM-GoogleAssistant",
     "url": "https://github.com/bugsounet/EXT-Touch",
@@ -17800,21 +17815,6 @@
       "touch"
     ],
     "image": "resources-google.jpg"
-  },
-  {
-    "name": "MMM-Touch",
-    "category": "Utility / IoT / 3rd Party / Integration",
-    "url": "https://github.com/gfischershaw/MMM-Touch",
-    "id": "gfischershaw/MMM-Touch",
-    "maintainer": "gfischershaw",
-    "maintainerURL": "",
-    "description": "Universal touch gesture commander using touchscreen.",
-    "issues": [
-      "There is no `package.json`. We need this file to gather information about the module for the module list page."
-    ],
-    "stars": 13,
-    "license": "MIT",
-    "image": "MMM-Touch.jpg"
   },
   {
     "name": "MMM-TouchButton",
@@ -19631,7 +19631,7 @@
     "maintainerURL": "",
     "description": "Displays the Merriam-Webster word of the day along with its part of speech, pronunciation, definition, and an example.",
     "issues": [],
-    "stars": 4,
+    "stars": 5,
     "license": "MIT",
     "tags": [
       "word",

@@ -15531,7 +15531,7 @@
     "maintainerURL": "",
     "description": "Read data from a Pentair ScreenLogic pool system.",
     "issues": true,
-    "stars": 2,
+    "stars": 3,
     "license": "MIT",
     "image": "screenshot.jpg",
     "defaultSortWeight": 4,
@@ -18030,6 +18030,21 @@
     "lastCommit": "2020-05-10T15:08:01+02:00"
   },
   {
+    "name": "MMM-Touch",
+    "category": "Utility / IoT / 3rd Party / Integration",
+    "url": "https://github.com/gfischershaw/MMM-Touch",
+    "id": "gfischershaw/MMM-Touch",
+    "maintainer": "gfischershaw",
+    "maintainerURL": "",
+    "description": "Universal touch gesture commander using touchscreen.",
+    "issues": true,
+    "stars": 13,
+    "license": "MIT",
+    "image": "MMM-Touch.jpg",
+    "defaultSortWeight": 3,
+    "lastCommit": "2020-10-24T00:16:43+02:00"
+  },
+  {
     "name": "EXT-Touch",
     "category": "Extended plugins for MMM-GoogleAssistant",
     "url": "https://github.com/bugsounet/EXT-Touch",
@@ -18047,21 +18062,6 @@
     "image": "resources-google.jpg",
     "defaultSortWeight": 4,
     "lastCommit": "2024-11-19T19:45:31+01:00"
-  },
-  {
-    "name": "MMM-Touch",
-    "category": "Utility / IoT / 3rd Party / Integration",
-    "url": "https://github.com/gfischershaw/MMM-Touch",
-    "id": "gfischershaw/MMM-Touch",
-    "maintainer": "gfischershaw",
-    "maintainerURL": "",
-    "description": "Universal touch gesture commander using touchscreen.",
-    "issues": true,
-    "stars": 13,
-    "license": "MIT",
-    "image": "MMM-Touch.jpg",
-    "defaultSortWeight": 3,
-    "lastCommit": "2020-10-24T00:16:43+02:00"
   },
   {
     "name": "MMM-TouchButton",
@@ -19908,7 +19908,7 @@
     "maintainerURL": "",
     "description": "Displays the Merriam-Webster word of the day along with its part of speech, pronunciation, definition, and an example.",
     "issues": true,
-    "stars": 4,
+    "stars": 5,
     "license": "MIT",
     "tags": [
       "word",
