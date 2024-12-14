@@ -1185,10 +1185,15 @@
     "maintainer": "cgillinger",
     "maintainerURL": "",
     "description": "Displays a new bird every day with a photo, name, and interesting facts. Powered by the Nuthatch API by Last Elm Software, it's perfect for bird enthusiasts or anyone who wants to bring a touch of nature to their MagicMirror setup.",
-    "issues": [
-      "There is no `package.json`. We need this file to gather information about the module for the module list page."
+    "issues": [],
+    "stars": 1,
+    "tags": [
+      "bird",
+      "wildlife",
+      "nature"
     ],
-    "stars": 1
+    "license": "MIT",
+    "image": "screenshots-BoDbelow.jpg"
   },
   {
     "name": "MMM-birthdays",
@@ -6663,7 +6668,7 @@
       "There are no keywords in 'package.json'. We would use them as tags on the module list page.",
       "No image found."
     ],
-    "stars": 0,
+    "stars": 1,
     "license": "MIT"
   },
   {
@@ -15643,7 +15648,7 @@
     "issues": [
       "There is no `package.json`. We need this file to gather information about the module for the module list page."
     ],
-    "stars": 18,
+    "stars": 19,
     "license": "MIT",
     "image": "preview.jpg"
   },
@@ -15833,7 +15838,7 @@
     "maintainerURL": "https://github.com/muhammedsaidckr",
     "description": "Display a simple, customizable background slideshow.",
     "issues": [],
-    "stars": 2,
+    "stars": 3,
     "tags": [
       "background-slideshow",
       "slideshow",

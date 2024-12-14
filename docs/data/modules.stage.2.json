@@ -4815,7 +4815,7 @@
     "maintainerURL": "https://github.com/yourdawi",
     "description": "Display information out of HomeAssistant.",
     "issues": [],
-    "stars": 0,
+    "stars": 1,
     "license": "MIT"
   },
   {
@@ -11283,7 +11283,7 @@
     "maintainerURL": "",
     "description": "Integrate Apple AirTunes/Airplay metadata coming via shairport-sync into the MagicMirror². Does not work with video or mirroring.",
     "issues": [],
-    "stars": 18,
+    "stars": 19,
     "license": "MIT"
   },
   {
@@ -11427,7 +11427,7 @@
     "maintainerURL": "https://github.com/muhammedsaidckr",
     "description": "Display a simple, customizable background slideshow.",
     "issues": [],
-    "stars": 2
+    "stars": 3
   },
   {
     "name": "MMM-SimpleLogo",
