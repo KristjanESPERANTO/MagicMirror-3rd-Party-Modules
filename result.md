@@ -1,6 +1,6 @@
 # Result of the module analysis
 
-Last update: 2024-12-14T05:39:15+01:00
+Last update: 2024-12-14T17:38:33+01:00
 
 ## Statistics
 
@@ -3466,6 +3466,13 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
 5. Warning: No LICENSE file.
 6. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
 
+### [MMM-HomeAssistant by zuo000](https://github.com/zuo000/MMM-HomeAssistant)
+
+1. There is no `package.json`. We need this file to gather information about the module for the module list page.
+2. Outdated: Found `MichMich/MagicMirror` in file `README.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
+3. Deprecated: Found `require('request')` in file `node_helper.js`: Replace it with built-in fetch.
+4. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
+
 ### [MMM-HomeAssistant by yourdawi](https://github.com/yourdawi/MMM-HomeAssistant)
 
 1. `package.json` issue: No repository field.
@@ -3475,13 +3482,6 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
 5. Typo: Found `Magic Mirror` in file `package.json`: Replace it with `MagicMirror²`.
 6. Recommendation: Found `"node-fetch"` in file `package.json`: Replace it with built-in fetch.
 7. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
-
-### [MMM-HomeAssistant by zuo000](https://github.com/zuo000/MMM-HomeAssistant)
-
-1. There is no `package.json`. We need this file to gather information about the module for the module list page.
-2. Outdated: Found `MichMich/MagicMirror` in file `README.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
-3. Deprecated: Found `require('request')` in file `node_helper.js`: Replace it with built-in fetch.
-4. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
 
 ### [MMM-homeassistant-sensors by leinich](https://github.com/leinich/MMM-homeassistant-sensors)
 
@@ -7088,7 +7088,7 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
 2. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
 3. Information: There are updates for 2 dependencie(s):
    - async                ^3.2.5  →    ^3.2.6
-   - systeminformation  ^5.21.24  →  ^5.23.12
+   - systeminformation  ^5.21.24  →  ^5.23.13
 
 
 ### [MMM-ping by fewieden](https://github.com/fewieden/MMM-ping)

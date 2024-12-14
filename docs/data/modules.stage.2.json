@@ -4809,18 +4809,6 @@
   {
     "name": "MMM-HomeAssistant",
     "category": "Utility / IoT / 3rd Party / Integration",
-    "url": "https://github.com/yourdawi/MMM-HomeAssistant",
-    "id": "yourdawi/MMM-HomeAssistant",
-    "maintainer": "yourdawi",
-    "maintainerURL": "https://github.com/yourdawi",
-    "description": "Display information out of HomeAssistant.",
-    "issues": [],
-    "stars": 1,
-    "license": "MIT"
-  },
-  {
-    "name": "MMM-HomeAssistant",
-    "category": "Utility / IoT / 3rd Party / Integration",
     "url": "https://github.com/zuo000/MMM-HomeAssistant",
     "id": "zuo000/MMM-HomeAssistant",
     "maintainer": "zuo000",
@@ -4828,6 +4816,18 @@
     "description": "HomeAssistant frontend module using HA REST API, including Light, Switch, Sensor.",
     "issues": [],
     "stars": 26,
+    "license": "MIT"
+  },
+  {
+    "name": "MMM-HomeAssistant",
+    "category": "Utility / IoT / 3rd Party / Integration",
+    "url": "https://github.com/yourdawi/MMM-HomeAssistant",
+    "id": "yourdawi/MMM-HomeAssistant",
+    "maintainer": "yourdawi",
+    "maintainerURL": "https://github.com/yourdawi",
+    "description": "Display information out of HomeAssistant.",
+    "issues": [],
+    "stars": 1,
     "license": "MIT"
   },
   {
@@ -11582,7 +11582,7 @@
     "maintainerURL": "",
     "description": "Use an external source for motion detection, like a web camera.",
     "issues": [],
-    "stars": 18
+    "stars": 19
   },
   {
     "name": "MMM-Smappee",

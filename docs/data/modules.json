@@ -6736,20 +6736,6 @@
   {
     "name": "MMM-HomeAssistant",
     "category": "Utility / IoT / 3rd Party / Integration",
-    "url": "https://github.com/yourdawi/MMM-HomeAssistant",
-    "id": "yourdawi/MMM-HomeAssistant",
-    "maintainer": "yourdawi",
-    "maintainerURL": "https://github.com/yourdawi",
-    "description": "Display information out of HomeAssistant.",
-    "issues": true,
-    "stars": 1,
-    "license": "MIT",
-    "defaultSortWeight": 6,
-    "lastCommit": "2024-11-24T21:23:18+01:00"
-  },
-  {
-    "name": "MMM-HomeAssistant",
-    "category": "Utility / IoT / 3rd Party / Integration",
     "url": "https://github.com/zuo000/MMM-HomeAssistant",
     "id": "zuo000/MMM-HomeAssistant",
     "maintainer": "zuo000",
@@ -6761,6 +6747,20 @@
     "image": "screenshot.jpg",
     "defaultSortWeight": 4,
     "lastCommit": "2020-04-08T18:54:01-07:00"
+  },
+  {
+    "name": "MMM-HomeAssistant",
+    "category": "Utility / IoT / 3rd Party / Integration",
+    "url": "https://github.com/yourdawi/MMM-HomeAssistant",
+    "id": "yourdawi/MMM-HomeAssistant",
+    "maintainer": "yourdawi",
+    "maintainerURL": "https://github.com/yourdawi",
+    "description": "Display information out of HomeAssistant.",
+    "issues": true,
+    "stars": 1,
+    "license": "MIT",
+    "defaultSortWeight": 6,
+    "lastCommit": "2024-11-24T21:23:18+01:00"
   },
   {
     "name": "MMM-homeassistant-sensors",
@@ -16274,7 +16274,7 @@
     "maintainerURL": "",
     "description": "Use an external source for motion detection, like a web camera.",
     "issues": true,
-    "stars": 18,
+    "stars": 19,
     "defaultSortWeight": 5,
     "lastCommit": "2024-02-02T22:25:01-07:00"
   },

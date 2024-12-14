@@ -1,9 +1,9 @@
 {
-  "lastUpdate": "2024-12-14T04:30:31.174Z",
+  "lastUpdate": "2024-12-14T16:30:28.294Z",
   "repositories": [
     {
       "id": "0lek/MMM-socialbicycles",
-      "gitHubDataLastUpdate": "2024-11-23T04:30:27.398Z",
+      "gitHubDataLastUpdate": "2024-12-14T16:30:23.474Z",
       "gitHubData": {
         "issues": 0,
         "stars": 0,
@@ -45,7 +45,7 @@
     },
     {
       "id": "0m4r/MMM-SoccerLiveScore",
-      "gitHubDataLastUpdate": "2024-11-23T04:30:26.486Z",
+      "gitHubDataLastUpdate": "2024-12-14T16:30:22.480Z",
       "gitHubData": {
         "issues": 3,
         "stars": 8,
@@ -297,7 +297,7 @@
     },
     {
       "id": "AgP42/MMM-SmartWebDisplay",
-      "gitHubDataLastUpdate": "2024-11-23T04:30:23.830Z",
+      "gitHubDataLastUpdate": "2024-12-14T16:30:19.661Z",
       "gitHubData": {
         "issues": 23,
         "stars": 62,
@@ -1333,7 +1333,7 @@
     },
     {
       "id": "bertieuk/MMM-SolarEdge",
-      "gitHubDataLastUpdate": "2024-11-23T16:30:16.147Z",
+      "gitHubDataLastUpdate": "2024-12-14T16:30:24.848Z",
       "gitHubData": {
         "issues": 1,
         "stars": 5,
@@ -2649,7 +2649,7 @@
     },
     {
       "id": "CFenner/MMM-Smappee",
-      "gitHubDataLastUpdate": "2024-11-23T04:30:22.887Z",
+      "gitHubDataLastUpdate": "2024-12-14T16:30:18.770Z",
       "gitHubData": {
         "issues": 9,
         "stars": 2,
@@ -2663,9 +2663,9 @@
     },
     {
       "id": "CFenner/MMM-Sonos",
-      "gitHubDataLastUpdate": "2024-11-23T16:30:18.612Z",
+      "gitHubDataLastUpdate": "2024-12-14T16:30:27.377Z",
       "gitHubData": {
-        "issues": 14,
+        "issues": 15,
         "stars": 45,
         "license": "MIT",
         "archived": false,
@@ -3055,7 +3055,7 @@
     },
     {
       "id": "cowboysdude/MMM-Gas",
-      "gitHubDataLastUpdate": "2024-11-23T04:30:19.432Z",
+      "gitHubDataLastUpdate": "2024-12-14T16:30:14.971Z",
       "gitHubData": {
         "issues": 3,
         "stars": 8,
@@ -3615,7 +3615,7 @@
     },
     {
       "id": "dekinet/MMM-Soliscloud",
-      "gitHubDataLastUpdate": "2024-11-23T16:30:18.160Z",
+      "gitHubDataLastUpdate": "2024-12-14T16:30:26.857Z",
       "gitHubData": {
         "issues": 1,
         "stars": 2,
@@ -4203,7 +4203,7 @@
     },
     {
       "id": "EbenKouao/MMM-SmartTouch",
-      "gitHubDataLastUpdate": "2024-11-23T04:30:23.398Z",
+      "gitHubDataLastUpdate": "2024-12-14T16:30:19.191Z",
       "gitHubData": {
         "issues": 6,
         "stars": 87,
@@ -4861,7 +4861,7 @@
     },
     {
       "id": "fewieden/MMM-soccer",
-      "gitHubDataLastUpdate": "2024-11-23T04:30:25.899Z",
+      "gitHubDataLastUpdate": "2024-12-14T16:30:21.999Z",
       "gitHubData": {
         "issues": 16,
         "stars": 32,
@@ -5603,7 +5603,7 @@
     },
     {
       "id": "grenagit/MMM-SolarPicture",
-      "gitHubDataLastUpdate": "2024-11-23T16:30:17.645Z",
+      "gitHubDataLastUpdate": "2024-12-14T16:30:26.321Z",
       "gitHubData": {
         "issues": 0,
         "stars": 3,
@@ -6135,7 +6135,7 @@
     },
     {
       "id": "irsheep/MMM-SnmpIntSpeed",
-      "gitHubDataLastUpdate": "2024-11-23T04:30:25.075Z",
+      "gitHubDataLastUpdate": "2024-12-14T16:30:21.096Z",
       "gitHubData": {
         "issues": 2,
         "stars": 7,
@@ -6261,7 +6261,7 @@
     },
     {
       "id": "jackmeyer/MMM-SleeperNFL",
-      "gitHubDataLastUpdate": "2024-11-23T04:30:21.993Z",
+      "gitHubDataLastUpdate": "2024-12-14T16:30:17.799Z",
       "gitHubData": {
         "issues": 1,
         "stars": 1,
@@ -6667,7 +6667,7 @@
     },
     {
       "id": "jeroenpeters1986/MMM-SolarEdgeLite",
-      "gitHubDataLastUpdate": "2024-11-23T16:30:16.709Z",
+      "gitHubDataLastUpdate": "2024-12-14T16:30:25.378Z",
       "gitHubData": {
         "issues": 0,
         "stars": 1,
@@ -7325,7 +7325,7 @@
     },
     {
       "id": "Jupter1/MMM-Slack2",
-      "gitHubDataLastUpdate": "2024-11-23T04:30:20.356Z",
+      "gitHubDataLastUpdate": "2024-12-14T16:30:16.027Z",
       "gitHubData": {
         "issues": 3,
         "stars": 4,
@@ -7451,7 +7451,7 @@
     },
     {
       "id": "jvanoost/MMM-SNCF",
-      "gitHubDataLastUpdate": "2024-11-23T04:30:24.638Z",
+      "gitHubDataLastUpdate": "2024-12-14T16:30:20.669Z",
       "gitHubData": {
         "issues": 4,
         "stars": 6,
@@ -9033,7 +9033,7 @@
     },
     {
       "id": "MichMich/MMM-Snow",
-      "gitHubDataLastUpdate": "2024-11-23T04:30:25.471Z",
+      "gitHubDataLastUpdate": "2024-12-14T16:30:21.547Z",
       "gitHubData": {
         "issues": 5,
         "stars": 55,
@@ -9691,7 +9691,7 @@
     },
     {
       "id": "Monkeyanator/MMM-SlackAnnouncements",
-      "gitHubDataLastUpdate": "2024-11-23T04:30:20.792Z",
+      "gitHubDataLastUpdate": "2024-12-14T16:30:16.540Z",
       "gitHubData": {
         "issues": 2,
         "stars": 5,
@@ -10615,7 +10615,7 @@
     },
     {
       "id": "mykle1/MMM-SORT",
-      "gitHubDataLastUpdate": "2024-11-23T16:30:19.572Z",
+      "gitHubDataLastUpdate": "2024-12-14T16:30:28.257Z",
       "gitHubData": {
         "issues": 2,
         "stars": 2,
@@ -10769,7 +10769,7 @@
     },
     {
       "id": "ngnijland/MMM-slamfm-playing-now",
-      "gitHubDataLastUpdate": "2024-11-23T04:30:21.281Z",
+      "gitHubDataLastUpdate": "2024-12-14T16:30:17.053Z",
       "gitHubData": {
         "issues": 0,
         "stars": 0,
@@ -10783,7 +10783,7 @@
     },
     {
       "id": "ngnijland/MMM-social-counter",
-      "gitHubDataLastUpdate": "2024-11-23T04:30:26.945Z",
+      "gitHubDataLastUpdate": "2024-12-14T16:30:23.021Z",
       "gitHubData": {
         "issues": 5,
         "stars": 4,
@@ -11497,7 +11497,7 @@
     },
     {
       "id": "PabloDons/MMM-Skyss",
-      "gitHubDataLastUpdate": "2024-11-23T04:30:19.895Z",
+      "gitHubDataLastUpdate": "2024-12-14T16:30:15.475Z",
       "gitHubData": {
         "issues": 1,
         "stars": 6,
@@ -12645,7 +12645,7 @@
     },
     {
       "id": "retroflex/MMM-Skolmaten",
-      "gitHubDataLastUpdate": "2024-11-23T04:30:19.011Z",
+      "gitHubDataLastUpdate": "2024-12-14T16:30:14.429Z",
       "gitHubData": {
         "issues": 0,
         "stars": 7,
@@ -13149,10 +13149,10 @@
     },
     {
       "id": "sdetweil/MMM-SleepWake",
-      "gitHubDataLastUpdate": "2024-11-23T04:30:22.443Z",
+      "gitHubDataLastUpdate": "2024-12-14T16:30:18.269Z",
       "gitHubData": {
         "issues": 3,
-        "stars": 18,
+        "stars": 19,
         "license": null,
         "archived": false,
         "disabled": false,
@@ -14269,9 +14269,9 @@
     },
     {
       "id": "st3v0rr/MMM-SolarEdge",
-      "gitHubDataLastUpdate": "2024-11-23T16:30:15.648Z",
+      "gitHubDataLastUpdate": "2024-12-14T16:30:24.323Z",
       "gitHubData": {
-        "issues": 4,
+        "issues": 3,
         "stars": 3,
         "license": "MIT",
         "archived": false,
@@ -14465,7 +14465,7 @@
     },
     {
       "id": "superuserx/MMM-Snake",
-      "gitHubDataLastUpdate": "2024-11-23T04:30:24.218Z",
+      "gitHubDataLastUpdate": "2024-12-14T16:30:20.211Z",
       "gitHubData": {
         "issues": 3,
         "stars": 23,
@@ -14647,7 +14647,7 @@
     },
     {
       "id": "tbouron/MMM-Sonos",
-      "gitHubDataLastUpdate": "2024-11-23T16:30:19.052Z",
+      "gitHubDataLastUpdate": "2024-12-14T16:30:27.791Z",
       "gitHubData": {
         "issues": 8,
         "stars": 16,
@@ -15095,7 +15095,7 @@
     },
     {
       "id": "tkrywit/MMM-Solar",
-      "gitHubDataLastUpdate": "2024-11-23T16:30:15.186Z",
+      "gitHubDataLastUpdate": "2024-12-14T16:30:23.896Z",
       "gitHubData": {
         "issues": 8,
         "stars": 5,
@@ -15823,7 +15823,7 @@
     },
     {
       "id": "utzl/MMM-Solarman",
-      "gitHubDataLastUpdate": "2024-11-23T16:30:17.218Z",
+      "gitHubDataLastUpdate": "2024-12-14T16:30:25.861Z",
       "gitHubData": {
         "issues": 1,
         "stars": 2,
