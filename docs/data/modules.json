@@ -296,7 +296,7 @@
     ],
     "image": ".github-preview-good.jpg",
     "defaultSortWeight": 1,
-    "lastCommit": "2024-12-08T03:23:20+00:00"
+    "lastCommit": "2024-12-15T06:03:35+00:00"
   },
   {
     "name": "MMM-Airtable",
@@ -11483,7 +11483,7 @@
     ],
     "image": ".github-preview.bubbles.jpg",
     "defaultSortWeight": 0,
-    "lastCommit": "2024-12-14T01:43:50+00:00"
+    "lastCommit": "2024-12-15T15:48:27+00:00"
   },
   {
     "name": "MMM-Netatmo-Presence",
@@ -14175,7 +14175,7 @@
     "maintainer": "KristjanESPERANTO",
     "maintainerURL": "",
     "description": "Displays departure information for public transportation in Germany and some other European countries. The <a target=\"_blank\" href=\"https://github.com/public-transport/hafas-client\">hafas-client</a> is used to query the information. The interface of the Deutsche Bahn is used as standard, this includes most of the local networks with buses, trams, etc. However, <a target=\"_blank\" href=\"https://github.com/public-transport/hafas-client/blob/main/p/readme.md\">other hafas interfaces</a> can also be used.",
-    "issues": false,
+    "issues": true,
     "stars": 21,
     "license": "MIT",
     "tags": [
@@ -17417,7 +17417,7 @@
     "maintainerURL": "https://github.com/WouterEekhout",
     "description": "Display information from your Tado Smart Thermostat.",
     "issues": true,
-    "stars": 6,
+    "stars": 7,
     "license": "MIT",
     "image": "img-screenshot.jpg",
     "defaultSortWeight": 5,
