@@ -1,6 +1,6 @@
 # Result of the module analysis
 
-Last update: 2024-12-14T17:38:33+01:00
+Last update: 2024-12-15T05:38:49+01:00
 
 ## Statistics
 
@@ -8,8 +8,8 @@ Last update: 2024-12-14T17:38:33+01:00
 |:---------------------|:--------:|
 | modules analyzed     |   1215   |
 | maintainer           |    652   |
-| modules with issues  |   1215   |
-| issues               |   6992   |
+| modules with issues  |   1214   |
+| issues               |   6990   |
 | modules at github    |   1105   |
 | modules at gitlab    |     10   |
 | modules at bitbucket |      1   |
@@ -1305,13 +1305,12 @@ Last update: 2024-12-14T17:38:33+01:00
 2. `package.json` issue: No repository field.
 3. There are no keywords in 'package.json'. We would use them as tags on the module list page.
 4. Typo: Found `<sup>2</sup>` in file `README.md`: Replace it with `²`.`.
-5. Recommendation: Found `new Date()` in file `README.md`: Consider replacing it by `new Date(Date.now())`. It's helpful for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
-6. Outdated: Found `MichMich/MagicMirror` in file `README.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
-7. Recommendation: Found `require("http")` in file `node_helper.js`: Replace "http" by "node:http".
-8. Recommendation: Found `new Date()` in file `MMM-WeatherBackground.schema.json`: Consider replacing it by `new Date(Date.now())`. It's helpful for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
-9. Recommendation: Found `new Date()` in file `compliments_extension.js`: Consider replacing it by `new Date(Date.now())`. It's helpful for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
-10. Warning: No LICENSE file.
-11. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
+5. Outdated: Found `MichMich/MagicMirror` in file `README.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
+6. Recommendation: Found `require("http")` in file `node_helper.js`: Replace "http" by "node:http".
+7. Recommendation: Found `new Date()` in file `MMM-WeatherBackground.schema.json`: Consider replacing it by `new Date(Date.now())`. It's helpful for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
+8. Recommendation: Found `new Date()` in file `compliments_extension.js`: Consider replacing it by `new Date(Date.now())`. It's helpful for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
+9. Warning: No LICENSE file.
+10. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
 
 ### [MMM-Confucius-say by jttaylor](https://github.com/jttaylor/MMM-Confucius-say)
 
@@ -6079,9 +6078,10 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
 ### [MMM-Netatmo by CFenner](https://github.com/CFenner/MMM-Netatmo)
 
 1. Recommendation: No lint script found in package.json. It is recommended to add one.
-2. Information: There are updates for 2 dependencie(s):
-   - less          4.2.0  →   4.2.1
-   - neostandard  0.11.5  →  0.12.0
+2. Information: There are updates for 3 dependencie(s):
+   - less           4.2.0  →   4.2.1
+   - markdownlint  0.37.0  →  0.37.1
+   - neostandard   0.11.5  →  0.12.0
 
 
 ### [MMM-Netatmo-Presence by AgP42](https://github.com/AgP42/MMM-Netatmo-Presence)
@@ -7497,16 +7497,6 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
    - @eslint/js                ^9.16.0  →  ^9.17.0
    - @stylistic/eslint-plugin  ^2.12.0  →  ^2.12.1
    - eslint                    ^9.16.0  →  ^9.17.0
-
-
-### [MMM-PublicTransportHafas by KristjanESPERANTO](https://github.com/KristjanESPERANTO/MMM-PublicTransportHafas)
-
-1. Information: There are updates for 5 dependencie(s):
-   - @eslint/js                 ^9.16.0  →   ^9.17.0
-   - @eslint/json                ^0.8.0  →    ^0.9.0
-   - @stylistic/eslint-plugin   ^2.12.0  →   ^2.12.1
-   - eslint                     ^9.16.0  →   ^9.17.0
-   - lint-staged               ^15.2.10  →  ^15.2.11
 
 
 ### [MMM-PublicTransportVVO by ChristianGeie](https://github.com/ChristianGeie/MMM-PublicTransportVVO)

@@ -16588,7 +16588,7 @@
     "maintainerURL": "",
     "description": "Spotify Controller - with device and account switch buttons, easy volume change via touch and much more.",
     "issues": [],
-    "stars": 67,
+    "stars": 69,
     "license": "MIT",
     "tags": [
       "spotify",
@@ -16605,7 +16605,7 @@
     "maintainerURL": "https://wiki.bugsounet.fr",
     "description": "This plugin show current spotify playback of any devices.",
     "issues": [],
-    "stars": 3,
+    "stars": 4,
     "license": "MIT",
     "tags": [
       "mmm-googleassistant",
@@ -16652,7 +16652,7 @@
     "issues": [
       "No image found."
     ],
-    "stars": 2,
+    "stars": 3,
     "tags": [
       "spotify"
     ],
