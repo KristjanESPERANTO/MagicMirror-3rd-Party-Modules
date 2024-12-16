@@ -12458,18 +12458,6 @@
     "license": "MIT"
   },
   {
-    "name": "EXT-TelegramBot",
-    "category": "Extended plugins for MMM-GoogleAssistant",
-    "url": "https://github.com/bugsounet/EXT-TelegramBot",
-    "id": "bugsounet/EXT-TelegramBot",
-    "maintainer": "bugsounet",
-    "maintainerURL": "https://wiki.bugsounet.fr",
-    "description": "You can remote-control plugins within Telegram.",
-    "issues": [],
-    "stars": 2,
-    "license": "MIT"
-  },
-  {
     "name": "MMM-TelegramBot",
     "category": "Utility / IoT / 3rd Party / Integration",
     "url": "https://github.com/MMRIZE/MMM-TelegramBot",
@@ -12479,6 +12467,18 @@
     "description": "Interact with your mirror via Telegram. Revamped 2024.",
     "issues": [],
     "stars": 26,
+    "license": "MIT"
+  },
+  {
+    "name": "EXT-TelegramBot",
+    "category": "Extended plugins for MMM-GoogleAssistant",
+    "url": "https://github.com/bugsounet/EXT-TelegramBot",
+    "id": "bugsounet/EXT-TelegramBot",
+    "maintainer": "bugsounet",
+    "maintainerURL": "https://wiki.bugsounet.fr",
+    "description": "You can remote-control plugins within Telegram.",
+    "issues": [],
+    "stars": 2,
     "license": "MIT"
   },
   {

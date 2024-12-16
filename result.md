@@ -1,6 +1,6 @@
 # Result of the module analysis
 
-Last update: 2024-12-15T17:38:25+01:00
+Last update: 2024-12-16T05:38:44+01:00
 
 ## Statistics
 
@@ -9280,6 +9280,15 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
 7. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
 8. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
 
+### [MMM-TelegramBot by MMRIZE](https://github.com/MMRIZE/MMM-TelegramBot)
+
+1. Typo: Found `Magic Mirror` in file `MMM-TelegramBot.js`: Replace it with `MagicMirror²`.
+2. Recommendation: The README seems not to have an update instruction (the word 'update' is missing). Please add one.
+3. Recommendation: The README seems not to have an install instruction (the words 'install' or 'installation' are missing). Please add one.
+4. Recommendation: Found `require('https')` in file `node_helper.js`: Replace 'https' by 'node:https'.
+5. Recommendation: Found `new Date()` in file `node_helper.js`: Consider replacing it by `new Date(Date.now())`. It's helpful for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
+6. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
+
 ### [EXT-TelegramBot by bugsounet](https://github.com/bugsounet/EXT-TelegramBot)
 
 1. Information: There are updates for 3 dependencie(s):
@@ -9292,15 +9301,6 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
    - installer/minify.js: Line 7, Column 22: "glob" should be replaced with an alternative package. Read more here: https://github.com/es-tooling/module-replacements/blob/main/docs/modules/glob.md (rule: depend/ban-dependencies)
    - installer/src.js: Line 8, Column 22: "glob" should be replaced with an alternative package. Read more here: https://github.com/es-tooling/module-replacements/blob/main/docs/modules/glob.md (rule: depend/ban-dependencies)
 
-
-### [MMM-TelegramBot by MMRIZE](https://github.com/MMRIZE/MMM-TelegramBot)
-
-1. Typo: Found `Magic Mirror` in file `MMM-TelegramBot.js`: Replace it with `MagicMirror²`.
-2. Recommendation: The README seems not to have an update instruction (the word 'update' is missing). Please add one.
-3. Recommendation: The README seems not to have an install instruction (the words 'install' or 'installation' are missing). Please add one.
-4. Recommendation: Found `require('https')` in file `node_helper.js`: Replace 'https' by 'node:https'.
-5. Recommendation: Found `new Date()` in file `node_helper.js`: Consider replacing it by `new Date(Date.now())`. It's helpful for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
-6. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
 
 ### [MMM-TelegramCommands by doctorfree](https://github.com/doctorfree/MMM-TelegramCommands)
 
