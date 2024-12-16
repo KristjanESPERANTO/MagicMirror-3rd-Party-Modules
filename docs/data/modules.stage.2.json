@@ -10420,7 +10420,7 @@
     "maintainerURL": "",
     "description": "Load a playlist into a YouTube player, AND shuffle the videos in the playlist.",
     "issues": [],
-    "stars": 17,
+    "stars": 18,
     "license": "Unlicense"
   },
   {
@@ -10560,7 +10560,7 @@
     "maintainerURL": "",
     "description": "Cleanly shutdown (or reboot) your mirror, edit which modules are shown on your mirror and turn your monitor off and on from a simple website, i.e. from your smartphone.",
     "issues": [],
-    "stars": 505,
+    "stars": 506,
     "license": "MIT"
   },
   {
@@ -12816,18 +12816,6 @@
     "stars": 12
   },
   {
-    "name": "MMM-Touch",
-    "category": "Utility / IoT / 3rd Party / Integration",
-    "url": "https://github.com/gfischershaw/MMM-Touch",
-    "id": "gfischershaw/MMM-Touch",
-    "maintainer": "gfischershaw",
-    "maintainerURL": "",
-    "description": "Universal touch gesture commander using touchscreen.",
-    "issues": [],
-    "stars": 13,
-    "license": "MIT"
-  },
-  {
     "name": "EXT-Touch",
     "category": "Extended plugins for MMM-GoogleAssistant",
     "url": "https://github.com/bugsounet/EXT-Touch",
@@ -12837,6 +12825,18 @@
     "description": "Activate MMM-GoogleAssistant with a Touch Screen by Touching the Google Icon.",
     "issues": [],
     "stars": 0,
+    "license": "MIT"
+  },
+  {
+    "name": "MMM-Touch",
+    "category": "Utility / IoT / 3rd Party / Integration",
+    "url": "https://github.com/gfischershaw/MMM-Touch",
+    "id": "gfischershaw/MMM-Touch",
+    "maintainer": "gfischershaw",
+    "maintainerURL": "",
+    "description": "Universal touch gesture commander using touchscreen.",
+    "issues": [],
+    "stars": 13,
     "license": "MIT"
   },
   {

@@ -1,6 +1,6 @@
 # Result of the module analysis
 
-Last update: 2024-12-16T05:38:44+01:00
+Last update: 2024-12-16T17:39:00+01:00
 
 ## Statistics
 
@@ -1090,7 +1090,7 @@ Last update: 2024-12-16T05:38:44+01:00
 1. Information: There are updates for 6 dependencie(s):
    - @eslint/js                 ^9.16.0  →   ^9.17.0
    - @stylistic/eslint-plugin   ^2.12.0  →   ^2.12.1
-   - cspell                     ^8.16.1  →   ^8.17.0
+   - cspell                     ^8.16.1  →   ^8.17.1
    - eslint                     ^9.16.0  →   ^9.17.0
    - lint-staged               ^15.2.10  →  ^15.2.11
    - stylelint                 ^16.11.0  →  ^16.12.0
@@ -1122,7 +1122,7 @@ Last update: 2024-12-16T05:38:44+01:00
 1. Information: There are updates for 5 dependencie(s):
    - @eslint/js                 ^9.16.0  →   ^9.17.0
    - @stylistic/eslint-plugin   ^2.12.0  →   ^2.12.1
-   - cspell                     ^8.16.1  →   ^8.17.0
+   - cspell                     ^8.16.1  →   ^8.17.1
    - eslint                     ^9.16.0  →   ^9.17.0
    - stylelint                 ^16.11.0  →  ^16.12.0
 
@@ -1999,7 +1999,7 @@ Last update: 2024-12-16T05:38:44+01:00
 1. Information: There are updates for 6 dependencie(s):
    - @eslint/js                 ^9.16.0  →   ^9.17.0
    - @stylistic/eslint-plugin   ^2.12.0  →   ^2.12.1
-   - cspell                     ^8.16.1  →   ^8.17.0
+   - cspell                     ^8.16.1  →   ^8.17.1
    - eslint                     ^9.16.0  →   ^9.17.0
    - lint-staged               ^15.2.10  →  ^15.2.11
    - stylelint                 ^16.11.0  →  ^16.12.0
@@ -2666,7 +2666,7 @@ deprecated: no longer maintained, switch to modern iconify-icon web component
    - @eslint/js                 ^9.16.0  →   ^9.17.0
    - @eslint/json                ^0.8.0  →    ^0.9.0
    - @stylistic/eslint-plugin   ^2.12.0  →   ^2.12.1
-   - cspell                     ^8.16.1  →   ^8.17.0
+   - cspell                     ^8.16.1  →   ^8.17.1
    - eslint                     ^9.16.0  →   ^9.17.0
    - lint-staged               ^15.2.10  →  ^15.2.11
    - stylelint                 ^16.11.0  →  ^16.12.0
@@ -3040,7 +3040,7 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
 2. Information: There are updates for 3 dependencie(s):
    - @stylistic/eslint-plugin   ^2.11.0  →   ^2.12.1
    - eslint                     ^9.16.0  →   ^9.17.0
-   - sweetalert2               ^11.14.5  →  ^11.15.0
+   - sweetalert2               ^11.14.5  →  ^11.15.1
 
 
 ### [MMM-GoogleBirthdaysProvider by PalatinCoder](https://github.com/PalatinCoder/MMM-GoogleBirthdaysProvider)
@@ -4067,7 +4067,7 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
 1. Information: There are updates for 4 dependencie(s):
    - @eslint/js                ^9.16.0  →  ^9.17.0
    - @stylistic/eslint-plugin  ^2.12.0  →  ^2.12.1
-   - cspell                    ^8.16.1  →  ^8.17.0
+   - cspell                    ^8.16.1  →  ^8.17.1
    - eslint                    ^9.16.0  →  ^9.17.0
 
 
@@ -6570,7 +6570,7 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
 1. Information: There are updates for 4 dependencie(s):
    - @eslint/js                ^9.16.0  →  ^9.17.0
    - @stylistic/eslint-plugin  ^2.12.0  →  ^2.12.1
-   - cspell                    ^8.16.1  →  ^8.17.0
+   - cspell                    ^8.16.1  →  ^8.17.1
    - eslint                    ^9.16.0  →  ^9.17.0
 
 
@@ -7512,9 +7512,8 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
 
 ### [MMM-PublicTransportHafas by KristjanESPERANTO](https://github.com/KristjanESPERANTO/MMM-PublicTransportHafas)
 
-1. Information: There are updates for 2 dependencie(s):
-   - cspell      ^8.16.1  →   ^8.17.0
-   - stylelint  ^16.11.0  →  ^16.12.0
+1. Information: There are updates for 1 dependencie(s):
+   - cspell  ^8.17.0  →  ^8.17.1
 
 
 ### [MMM-PublicTransportVVO by ChristianGeie](https://github.com/ChristianGeie/MMM-PublicTransportVVO)
@@ -9588,16 +9587,16 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
 6. Warning: No LICENSE file.
 7. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
 
+### [EXT-Touch by bugsounet](https://github.com/bugsounet/EXT-Touch)
+
+1. Recommendation: The README seems not to have an update instruction (the word 'update' is missing). Please add one.
+2. Recommendation: The README seems not to have an install instruction (the words 'install' or 'installation' are missing). Please add one.
+
 ### [MMM-Touch by gfischershaw](https://github.com/gfischershaw/MMM-Touch)
 
 1. There is no `package.json`. We need this file to gather information about the module for the module list page.
 2. Recommendation: The README seems not to have an update instruction (the word 'update' is missing). Please add one.
 3. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
-
-### [EXT-Touch by bugsounet](https://github.com/bugsounet/EXT-Touch)
-
-1. Recommendation: The README seems not to have an update instruction (the word 'update' is missing). Please add one.
-2. Recommendation: The README seems not to have an install instruction (the words 'install' or 'installation' are missing). Please add one.
 
 ### [MMM-TouchButton by Tom-Hirschberger](https://github.com/Tom-Hirschberger/MMM-TouchButton)
 
@@ -10438,7 +10437,7 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
 1. Information: There are updates for 4 dependencie(s):
    - @eslint/js                ^9.16.0  →  ^9.17.0
    - @stylistic/eslint-plugin  ^2.12.0  →  ^2.12.1
-   - cspell                    ^8.16.1  →  ^8.17.0
+   - cspell                    ^8.16.1  →  ^8.17.1
    - eslint                    ^9.16.0  →  ^9.17.0
 
 

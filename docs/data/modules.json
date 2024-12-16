@@ -14184,7 +14184,7 @@
     ],
     "image": "img-Goerdelerring_all.jpg",
     "defaultSortWeight": 1,
-    "lastCommit": "2024-12-14T19:00:21+01:00"
+    "lastCommit": "2024-12-16T09:25:30+01:00"
   },
   {
     "name": "MMM-PublicTransportVVO",
@@ -14629,7 +14629,7 @@
     "maintainerURL": "",
     "description": "Load a playlist into a YouTube player, AND shuffle the videos in the playlist.",
     "issues": true,
-    "stars": 17,
+    "stars": 18,
     "license": "Unlicense",
     "defaultSortWeight": 9,
     "lastCommit": "2019-03-05T12:09:00-06:00"
@@ -14807,7 +14807,7 @@
     "maintainerURL": "",
     "description": "Cleanly shutdown (or reboot) your mirror, edit which modules are shown on your mirror and turn your monitor off and on from a simple website, i.e. from your smartphone.",
     "issues": true,
-    "stars": 505,
+    "stars": 506,
     "license": "MIT",
     "tags": [
       "remote control",
@@ -18037,21 +18037,6 @@
     "lastCommit": "2020-05-10T15:08:01+02:00"
   },
   {
-    "name": "MMM-Touch",
-    "category": "Utility / IoT / 3rd Party / Integration",
-    "url": "https://github.com/gfischershaw/MMM-Touch",
-    "id": "gfischershaw/MMM-Touch",
-    "maintainer": "gfischershaw",
-    "maintainerURL": "",
-    "description": "Universal touch gesture commander using touchscreen.",
-    "issues": true,
-    "stars": 13,
-    "license": "MIT",
-    "image": "MMM-Touch.jpg",
-    "defaultSortWeight": 3,
-    "lastCommit": "2020-10-24T00:16:43+02:00"
-  },
-  {
     "name": "EXT-Touch",
     "category": "Extended plugins for MMM-GoogleAssistant",
     "url": "https://github.com/bugsounet/EXT-Touch",
@@ -18069,6 +18054,21 @@
     "image": "resources-google.jpg",
     "defaultSortWeight": 4,
     "lastCommit": "2024-11-19T19:45:31+01:00"
+  },
+  {
+    "name": "MMM-Touch",
+    "category": "Utility / IoT / 3rd Party / Integration",
+    "url": "https://github.com/gfischershaw/MMM-Touch",
+    "id": "gfischershaw/MMM-Touch",
+    "maintainer": "gfischershaw",
+    "maintainerURL": "",
+    "description": "Universal touch gesture commander using touchscreen.",
+    "issues": true,
+    "stars": 13,
+    "license": "MIT",
+    "image": "MMM-Touch.jpg",
+    "defaultSortWeight": 3,
+    "lastCommit": "2020-10-24T00:16:43+02:00"
   },
   {
     "name": "MMM-TouchButton",

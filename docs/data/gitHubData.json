@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "2024-12-16T04:30:30.481Z",
+  "lastUpdate": "2024-12-16T16:30:30.123Z",
   "repositories": [
     {
       "id": "0lek/MMM-socialbicycles",
@@ -87,7 +87,7 @@
     },
     {
       "id": "73cirdan/MMM-rainfc",
-      "gitHubDataLastUpdate": "2024-11-24T16:30:24.216Z",
+      "gitHubDataLastUpdate": "2024-12-16T16:30:19.130Z",
       "gitHubData": {
         "issues": 0,
         "stars": 8,
@@ -1081,7 +1081,7 @@
     },
     {
       "id": "balassy/MMM-RemoteTemperature",
-      "gitHubDataLastUpdate": "2024-11-25T04:30:18.691Z",
+      "gitHubDataLastUpdate": "2024-12-16T16:30:30.074Z",
       "gitHubData": {
         "issues": 15,
         "stars": 15,
@@ -1459,7 +1459,7 @@
     },
     {
       "id": "bittiez/MMM-Reddito",
-      "gitHubDataLastUpdate": "2024-11-25T04:30:15.872Z",
+      "gitHubDataLastUpdate": "2024-12-16T16:30:26.962Z",
       "gitHubData": {
         "issues": 0,
         "stars": 0,
@@ -1977,9 +1977,9 @@
     },
     {
       "id": "bugsounet/EXT-RadioPlayer",
-      "gitHubDataLastUpdate": "2024-11-24T16:30:21.914Z",
+      "gitHubDataLastUpdate": "2024-12-16T16:30:16.385Z",
       "gitHubData": {
-        "issues": 1,
+        "issues": 2,
         "stars": 2,
         "license": "MIT",
         "archived": false,
@@ -2383,7 +2383,7 @@
     },
     {
       "id": "buxxi/MMM-RelativeTime-i18n",
-      "gitHubDataLastUpdate": "2024-11-25T04:30:16.800Z",
+      "gitHubDataLastUpdate": "2024-12-16T16:30:28.023Z",
       "gitHubData": {
         "issues": 0,
         "stars": 1,
@@ -3097,7 +3097,7 @@
     },
     {
       "id": "cowboysdude/MMM-Recipe",
-      "gitHubDataLastUpdate": "2024-11-25T04:30:14.075Z",
+      "gitHubDataLastUpdate": "2024-12-16T16:30:24.794Z",
       "gitHubData": {
         "issues": 4,
         "stars": 9,
@@ -3783,7 +3783,7 @@
     },
     {
       "id": "dfanica/MMM-Quotable",
-      "gitHubDataLastUpdate": "2024-11-24T16:30:21.019Z",
+      "gitHubDataLastUpdate": "2024-12-16T16:30:15.385Z",
       "gitHubData": {
         "issues": 1,
         "stars": 1,
@@ -5729,7 +5729,7 @@
     },
     {
       "id": "hayseedbyte/MMM-Reddit-News-Ticker",
-      "gitHubDataLastUpdate": "2024-11-25T04:30:14.891Z",
+      "gitHubDataLastUpdate": "2024-12-16T16:30:25.922Z",
       "gitHubData": {
         "issues": 1,
         "stars": 5,
@@ -6289,7 +6289,7 @@
     },
     {
       "id": "Jacopo1891/MMM-RandomQuotes",
-      "gitHubDataLastUpdate": "2024-11-24T16:30:26.482Z",
+      "gitHubDataLastUpdate": "2024-12-16T16:30:21.906Z",
       "gitHubData": {
         "issues": 0,
         "stars": 4,
@@ -6359,7 +6359,7 @@
     },
     {
       "id": "jalibu/MMM-RAIN-MAP",
-      "gitHubDataLastUpdate": "2024-11-24T16:30:23.315Z",
+      "gitHubDataLastUpdate": "2024-12-16T16:30:18.139Z",
       "gitHubData": {
         "issues": 1,
         "stars": 42,
@@ -6975,7 +6975,7 @@
     },
     {
       "id": "jojoduquartier/MMM-RAIN-RADAR",
-      "gitHubDataLastUpdate": "2024-11-24T16:30:23.774Z",
+      "gitHubDataLastUpdate": "2024-12-16T16:30:18.632Z",
       "gitHubData": {
         "issues": 8,
         "stars": 14,
@@ -7059,10 +7059,10 @@
     },
     {
       "id": "Jopyth/MMM-Remote-Control",
-      "gitHubDataLastUpdate": "2024-11-25T04:30:17.261Z",
+      "gitHubDataLastUpdate": "2024-12-16T16:30:28.512Z",
       "gitHubData": {
-        "issues": 21,
-        "stars": 505,
+        "issues": 22,
+        "stars": 506,
         "license": "MIT",
         "archived": false,
         "disabled": false,
@@ -7199,7 +7199,7 @@
     },
     {
       "id": "juliankern/MMM-rbtv-sendeplan",
-      "gitHubDataLastUpdate": "2024-11-24T16:30:28.591Z",
+      "gitHubDataLastUpdate": "2024-12-16T16:30:23.866Z",
       "gitHubData": {
         "issues": 0,
         "stars": 2,
@@ -7269,7 +7269,7 @@
     },
     {
       "id": "jupadin/MMM-RainForecast",
-      "gitHubDataLastUpdate": "2024-11-24T16:30:24.659Z",
+      "gitHubDataLastUpdate": "2024-12-16T16:30:19.643Z",
       "gitHubData": {
         "issues": 0,
         "stars": 2,
@@ -7423,10 +7423,10 @@
     },
     {
       "id": "justjim1220/MMM-RandomYouTubePlayer",
-      "gitHubDataLastUpdate": "2024-11-24T16:30:27.672Z",
+      "gitHubDataLastUpdate": "2024-12-16T16:30:22.877Z",
       "gitHubData": {
         "issues": 3,
-        "stars": 17,
+        "stars": 18,
         "license": "Unlicense",
         "archived": false,
         "disabled": false,
@@ -7465,7 +7465,7 @@
     },
     {
       "id": "jwcnewton/MMM-RaiderIO",
-      "gitHubDataLastUpdate": "2024-11-24T16:30:22.375Z",
+      "gitHubDataLastUpdate": "2024-12-16T16:30:16.911Z",
       "gitHubData": {
         "issues": 1,
         "stars": 3,
@@ -7605,7 +7605,7 @@
     },
     {
       "id": "KirAsh4/random_quotes",
-      "gitHubDataLastUpdate": "2024-11-24T16:30:25.503Z",
+      "gitHubDataLastUpdate": "2024-12-16T16:30:20.691Z",
       "gitHubData": {
         "issues": 1,
         "stars": 20,
@@ -7619,7 +7619,7 @@
     },
     {
       "id": "kjb085/MMM-Reddit",
-      "gitHubDataLastUpdate": "2024-11-25T04:30:14.499Z",
+      "gitHubDataLastUpdate": "2024-12-16T16:30:25.436Z",
       "gitHubData": {
         "issues": 26,
         "stars": 34,
@@ -8165,7 +8165,7 @@
     },
     {
       "id": "Linas1234/MMM-Regenradar",
-      "gitHubDataLastUpdate": "2024-11-25T04:30:16.314Z",
+      "gitHubDataLastUpdate": "2024-12-16T16:30:27.446Z",
       "gitHubData": {
         "issues": 0,
         "stars": 3,
@@ -9173,7 +9173,7 @@
     },
     {
       "id": "mitchelltmarino/MMM-RemoteCompliments",
-      "gitHubDataLastUpdate": "2024-11-25T04:30:18.206Z",
+      "gitHubDataLastUpdate": "2024-12-16T16:30:29.488Z",
       "gitHubData": {
         "issues": 12,
         "stars": 22,
@@ -9579,7 +9579,7 @@
     },
     {
       "id": "MMRIZE/MMM-Remote-Control-Repository",
-      "gitHubDataLastUpdate": "2024-11-25T04:30:17.767Z",
+      "gitHubDataLastUpdate": "2024-12-16T16:30:28.968Z",
       "gitHubData": {
         "issues": 1,
         "stars": 25,
@@ -11217,7 +11217,7 @@
     },
     {
       "id": "nkl-kst/MMM-RBB-Weather",
-      "gitHubDataLastUpdate": "2024-11-24T16:30:28.116Z",
+      "gitHubDataLastUpdate": "2024-12-16T16:30:23.375Z",
       "gitHubData": {
         "issues": 6,
         "stars": 5,
@@ -12379,7 +12379,7 @@
     },
     {
       "id": "rcberg3/MMM-RedditKarma",
-      "gitHubDataLastUpdate": "2024-11-25T04:30:15.388Z",
+      "gitHubDataLastUpdate": "2024-12-16T16:30:26.482Z",
       "gitHubData": {
         "issues": 0,
         "stars": 3,
@@ -13681,7 +13681,7 @@
     },
     {
       "id": "Sispheor/MMM-quote-of-the-day",
-      "gitHubDataLastUpdate": "2024-11-24T16:30:21.445Z",
+      "gitHubDataLastUpdate": "2024-12-16T16:30:15.876Z",
       "gitHubData": {
         "issues": 10,
         "stars": 28,
@@ -13765,7 +13765,7 @@
     },
     {
       "id": "skuethe/MMM-RandomPhoto",
-      "gitHubDataLastUpdate": "2024-11-24T16:30:26.057Z",
+      "gitHubDataLastUpdate": "2024-12-16T16:30:21.276Z",
       "gitHubData": {
         "issues": 4,
         "stars": 8,
@@ -13821,7 +13821,7 @@
     },
     {
       "id": "slametps/MMM-RandomQuranAyah",
-      "gitHubDataLastUpdate": "2024-11-24T16:30:26.878Z",
+      "gitHubDataLastUpdate": "2024-12-16T16:30:22.383Z",
       "gitHubData": {
         "issues": 1,
         "stars": 10,
@@ -14199,7 +14199,7 @@
     },
     {
       "id": "spoturdeal/MMM-rain-forecast",
-      "gitHubDataLastUpdate": "2024-11-24T16:30:22.844Z",
+      "gitHubDataLastUpdate": "2024-12-16T16:30:17.595Z",
       "gitHubData": {
         "issues": 2,
         "stars": 9,
@@ -15599,7 +15599,7 @@
     },
     {
       "id": "tttooommm56/MMM-RainForecast-FR",
-      "gitHubDataLastUpdate": "2024-11-24T16:30:25.092Z",
+      "gitHubDataLastUpdate": "2024-12-16T16:30:20.230Z",
       "gitHubData": {
         "issues": 0,
         "stars": 7,
@@ -16075,7 +16075,7 @@
     },
     {
       "id": "vincep5/MMM-RecentRainfall",
-      "gitHubDataLastUpdate": "2024-11-24T16:30:28.989Z",
+      "gitHubDataLastUpdate": "2024-12-16T16:30:24.305Z",
       "gitHubData": {
         "issues": 1,
         "stars": 3,
