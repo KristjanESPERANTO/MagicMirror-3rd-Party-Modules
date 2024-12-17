@@ -5229,7 +5229,7 @@
     "maintainer": "KristjanESPERANTO",
     "maintainerURL": "",
     "description": "Displays information from the MagicMirror\u00b2 forum. Like latest posts, unread posts, etc. The module should also work for other NodeBB forums, but it is not tested.",
-    "issues": true,
+    "issues": false,
     "stars": 3,
     "license": "ISC",
     "tags": [
@@ -5238,7 +5238,7 @@
     ],
     "image": "screenshot.jpg",
     "defaultSortWeight": 1,
-    "lastCommit": "2024-12-10T12:31:47+01:00"
+    "lastCommit": "2024-12-17T08:35:59+01:00"
   },
   {
     "name": "MMM-FrameLight",
@@ -5681,7 +5681,7 @@
       "gestures"
     ],
     "license": "MIT",
-    "defaultSortWeight": 11,
+    "defaultSortWeight": 12,
     "lastCommit": "2022-12-17T16:40:29+01:00"
   },
   {
@@ -10460,6 +10460,20 @@
     "lastCommit": "2018-12-23T11:53:47+01:00"
   },
   {
+    "name": "MMM-MPlayer",
+    "category": "Utility / IoT / 3rd Party / Integration",
+    "url": "https://github.com/evroom/MMM-MPlayer",
+    "id": "evroom/MMM-MPlayer",
+    "maintainer": "evroom",
+    "maintainerURL": "",
+    "description": "Uses MPlayer to display various video files and rtsp streams.",
+    "issues": true,
+    "stars": 1,
+    "license": "MIT",
+    "defaultSortWeight": 4,
+    "lastCommit": "2024-12-16T18:13:51+01:00"
+  },
+  {
     "name": "MMM-MplayerRadio",
     "category": "Entertainment / Misc",
     "url": "https://github.com/Tom-Hirschberger/MMM-MplayerRadio",
@@ -11909,7 +11923,7 @@
     "maintainerURL": "https://github.com/Isaac-the-Man",
     "description": "Retro nixie clock display.",
     "issues": true,
-    "stars": 16,
+    "stars": 17,
     "license": "MIT",
     "image": "screenshots-digit-reset.jpg",
     "defaultSortWeight": 5,
@@ -12027,7 +12041,7 @@
     "id": "mmtsweng/MMM-NOAAAlerts",
     "maintainer": "mmtsweng",
     "maintainerURL": "https://github.com/mmtsweng",
-    "description": "This module displays current local weather warning and alerts from NOAA's <a target=\"_blank\" href=\"https://www.weather.gov/documentation/services-web-api\">free api</a>",
+    "description": "Displays current local weather warning and alerts from NOAA's <a target=\"_blank\" href=\"https://www.weather.gov/documentation/services-web-api\">free api</a>.",
     "issues": true,
     "stars": 6,
     "license": "GPL-3.0",
@@ -14829,7 +14843,7 @@
     ],
     "image": ".github-hide_show_module.jpg",
     "defaultSortWeight": -3,
-    "lastCommit": "2024-11-20T22:38:38+01:00"
+    "lastCommit": "2024-12-17T10:28:44+01:00"
   },
   {
     "name": "MMM-Remote-Control-Repository",

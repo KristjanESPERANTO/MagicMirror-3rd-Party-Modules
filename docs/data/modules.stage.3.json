@@ -10347,6 +10347,21 @@
     "license": "MIT License"
   },
   {
+    "name": "MMM-MPlayer",
+    "category": "Utility / IoT / 3rd Party / Integration",
+    "url": "https://github.com/evroom/MMM-MPlayer",
+    "id": "evroom/MMM-MPlayer",
+    "maintainer": "evroom",
+    "maintainerURL": "",
+    "description": "Uses MPlayer to display various video files and rtsp streams.",
+    "issues": [
+      "There is no `package.json`. We need this file to gather information about the module for the module list page.",
+      "No image found."
+    ],
+    "stars": 1,
+    "license": "MIT"
+  },
+  {
     "name": "MMM-MplayerRadio",
     "category": "Entertainment / Misc",
     "url": "https://github.com/Tom-Hirschberger/MMM-MplayerRadio",
@@ -11779,7 +11794,7 @@
     "issues": [
       "There is no `package.json`. We need this file to gather information about the module for the module list page."
     ],
-    "stars": 16,
+    "stars": 17,
     "license": "MIT",
     "image": "screenshots-digit-reset.jpg"
   },
@@ -11889,7 +11904,7 @@
     "id": "mmtsweng/MMM-NOAAAlerts",
     "maintainer": "mmtsweng",
     "maintainerURL": "https://github.com/mmtsweng",
-    "description": "This module displays current local weather warning and alerts from NOAA's <a target=\"_blank\" href=\"https://www.weather.gov/documentation/services-web-api\">free api</a>",
+    "description": "Displays current local weather warning and alerts from NOAA's <a target=\"_blank\" href=\"https://www.weather.gov/documentation/services-web-api\">free api</a>.",
     "issues": [
       "There are no specific keywords in 'package.json'. We would use them as tags on the module list page. Add a few meaningful terms to the keywords in the package.json. Not just “magicmirror” or “module”.",
       "Issue: The license in the package.json (ISC) doesn't match the license file (GPL-3.0).",

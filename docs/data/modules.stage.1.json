@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "2024-12-17T04:30:15.149Z",
+  "lastUpdate": "2024-12-17T16:30:13.014Z",
   "modules": [
     {
       "name": "MMM-01ZM",
@@ -6320,6 +6320,16 @@
       "outdated": "Abandoned. No reactions to issues since years. Seems not to work anymore. Use MMM-Mopidy-MPD instead."
     },
     {
+      "name": "MMM-MPlayer",
+      "category": "Utility / IoT / 3rd Party / Integration",
+      "url": "https://github.com/evroom/MMM-MPlayer",
+      "id": "evroom/MMM-MPlayer",
+      "maintainer": "evroom",
+      "maintainerURL": "",
+      "description": "Uses MPlayer to display various video files and rtsp streams.",
+      "issues": []
+    },
+    {
       "name": "MMM-MplayerRadio",
       "category": "Entertainment / Misc",
       "url": "https://github.com/Tom-Hirschberger/MMM-MplayerRadio",
@@ -7236,7 +7246,7 @@
       "id": "mmtsweng/MMM-NOAAAlerts",
       "maintainer": "mmtsweng",
       "maintainerURL": "https://github.com/mmtsweng",
-      "description": "This module displays current local weather warning and alerts from NOAA's <a target=\"_blank\" href=\"https://www.weather.gov/documentation/services-web-api\">free api</a>",
+      "description": "Displays current local weather warning and alerts from NOAA's <a target=\"_blank\" href=\"https://www.weather.gov/documentation/services-web-api\">free api</a>.",
       "issues": []
     },
     {

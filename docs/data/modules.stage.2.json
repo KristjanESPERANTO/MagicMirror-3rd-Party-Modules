@@ -7471,6 +7471,18 @@
     "stars": 13
   },
   {
+    "name": "MMM-MPlayer",
+    "category": "Utility / IoT / 3rd Party / Integration",
+    "url": "https://github.com/evroom/MMM-MPlayer",
+    "id": "evroom/MMM-MPlayer",
+    "maintainer": "evroom",
+    "maintainerURL": "",
+    "description": "Uses MPlayer to display various video files and rtsp streams.",
+    "issues": [],
+    "stars": 1,
+    "license": "MIT"
+  },
+  {
     "name": "MMM-MplayerRadio",
     "category": "Entertainment / Misc",
     "url": "https://github.com/Tom-Hirschberger/MMM-MplayerRadio",
@@ -8471,7 +8483,7 @@
     "maintainerURL": "https://github.com/Isaac-the-Man",
     "description": "Retro nixie clock display.",
     "issues": [],
-    "stars": 16,
+    "stars": 17,
     "license": "MIT"
   },
   {
@@ -8555,7 +8567,7 @@
     "id": "mmtsweng/MMM-NOAAAlerts",
     "maintainer": "mmtsweng",
     "maintainerURL": "https://github.com/mmtsweng",
-    "description": "This module displays current local weather warning and alerts from NOAA's <a target=\"_blank\" href=\"https://www.weather.gov/documentation/services-web-api\">free api</a>",
+    "description": "Displays current local weather warning and alerts from NOAA's <a target=\"_blank\" href=\"https://www.weather.gov/documentation/services-web-api\">free api</a>.",
     "issues": [],
     "stars": 6,
     "license": "GPL-3.0"

@@ -1,16 +1,16 @@
 # Result of the module analysis
 
-Last update: 2024-12-17T05:39:06+01:00
+Last update: 2024-12-17T17:38:41+01:00
 
 ## Statistics
 
 |                      | number   |
 |:---------------------|:--------:|
-| modules analyzed     |   1216   |
-| maintainer           |    653   |
+| modules analyzed     |   1217   |
+| maintainer           |    654   |
 | modules with issues  |   1216   |
-| issues               |   6997   |
-| modules at github    |   1106   |
+| issues               |   7001   |
+| modules at github    |   1107   |
 | modules at gitlab    |     10   |
 | modules at bitbucket |      1   |
 
@@ -491,7 +491,7 @@ Last update: 2024-12-17T05:39:06+01:00
 2. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
 3. Information: There are updates for 3 dependencie(s):
    - alphavantage     ^2.4.1  →   ^2.5.0
-   - highcharts       ^9.0.0  →  ^12.0.2
+   - highcharts       ^9.0.0  →  ^12.1.0
    - yahoo-finance2  ^2.11.3  →  ^2.13.2
 
 
@@ -2660,18 +2660,6 @@ deprecated: no longer maintained, switch to modern iconify-icon web component
 6. Recommendation: Found `new Date()` in file `node_helper.js`: Consider replacing it by `new Date(Date.now())`. It's helpful for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
 7. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
 
-### [MMM-Forum by KristjanESPERANTO](https://github.com/KristjanESPERANTO/MMM-Forum)
-
-1. Information: There are updates for 7 dependencie(s):
-   - @eslint/js                 ^9.16.0  →   ^9.17.0
-   - @eslint/json                ^0.8.0  →    ^0.9.0
-   - @stylistic/eslint-plugin   ^2.12.0  →   ^2.12.1
-   - cspell                     ^8.16.1  →   ^8.17.1
-   - eslint                     ^9.16.0  →   ^9.17.0
-   - lint-staged               ^15.2.10  →  ^15.2.11
-   - stylelint                 ^16.11.0  →  ^16.12.0
-
-
 ### [MMM-FrameLight by RaspiManu](https://github.com/RaspiManu/MMM-FrameLight)
 
 1. Typo: Found `Magic Mirror` in file `MMM-FrameLight.js`: Replace it with `MagicMirror²`.
@@ -3040,7 +3028,7 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
 2. Information: There are updates for 3 dependencie(s):
    - @stylistic/eslint-plugin   ^2.11.0  →   ^2.12.1
    - eslint                     ^9.16.0  →   ^9.17.0
-   - sweetalert2               ^11.14.5  →  ^11.15.1
+   - sweetalert2               ^11.14.5  →  ^11.15.2
 
 
 ### [MMM-GoogleBirthdaysProvider by PalatinCoder](https://github.com/PalatinCoder/MMM-GoogleBirthdaysProvider)
@@ -5565,6 +5553,14 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
 5. Warning: No LICENSE file.
 6. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
 
+### [MMM-MPlayer by evroom](https://github.com/evroom/MMM-MPlayer)
+
+1. There is no `package.json`. We need this file to gather information about the module for the module list page.
+2. No image found.
+3. Typo: Found `Magic Mirror` in file `README.md`: Replace it with `MagicMirror²`.
+4. Recommendation: The README seems not to have an update instruction (the word 'update' is missing). Please add one.
+5. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
+
 ### [MMM-MplayerRadio by Tom-Hirschberger](https://github.com/Tom-Hirschberger/MMM-MplayerRadio)
 
 1. Recommendation: Replace eslintrc by new flat config.
@@ -7514,10 +7510,11 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
 
 ### [MMM-PublicTransportBerlin by deg0nz](https://github.com/deg0nz/MMM-PublicTransportBerlin)
 
-1. Information: There are updates for 4 dependencie(s):
+1. Information: There are updates for 5 dependencie(s):
    - @eslint/js                 ^9.16.0  →   ^9.17.0
    - @stylistic/eslint-plugin   ^2.12.0  →   ^2.12.1
    - eslint                     ^9.16.0  →   ^9.17.0
+   - eslint-plugin-import-x      ^4.5.0  →    ^4.5.1
    - stylelint                 ^16.11.0  →  ^16.12.0
 
 
