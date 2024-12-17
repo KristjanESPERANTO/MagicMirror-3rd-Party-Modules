@@ -8549,6 +8549,18 @@
     "stars": 2
   },
   {
+    "name": "MMM-NOAAAlerts",
+    "category": "Weather",
+    "url": "https://github.com/mmtsweng/MMM-NOAAAlerts",
+    "id": "mmtsweng/MMM-NOAAAlerts",
+    "maintainer": "mmtsweng",
+    "maintainerURL": "https://github.com/mmtsweng",
+    "description": "This module displays current local weather warning and alerts from NOAA's <a target=\"_blank\" href=\"https://www.weather.gov/documentation/services-web-api\">free api</a>",
+    "issues": [],
+    "stars": 6,
+    "license": "GPL-3.0"
+  },
+  {
     "name": "MMM-NOAATides",
     "category": "Weather",
     "url": "https://github.com/crice009/MMM-NOAATides",
@@ -10859,7 +10871,7 @@
     "maintainerURL": "",
     "description": "Viewing IP cameras RTSP stream in real time using WebRTC technology.",
     "issues": [],
-    "stars": 15,
+    "stars": 16,
     "license": "MIT"
   },
   {
@@ -10907,7 +10919,7 @@
     "maintainerURL": "https://github.com/uncleLem",
     "description": "The total losses of the russian occupier since the full-scale invasion in Ukraine, per General Staff of the Armed Forces of Ukraine.",
     "issues": [],
-    "stars": 5,
+    "stars": 6,
     "license": "MIT"
   },
   {

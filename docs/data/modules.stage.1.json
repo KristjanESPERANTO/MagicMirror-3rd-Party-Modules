@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "2024-12-16T16:30:14.073Z",
+  "lastUpdate": "2024-12-17T04:30:15.149Z",
   "modules": [
     {
       "name": "MMM-01ZM",
@@ -7228,6 +7228,16 @@
       "description": "Different providers for users to choose from. Shows current plus 3 day forecast. Mouseover shows forecast, with Air, UV, Humidity, Sunrise and Set.",
       "issues": [],
       "outdated": "Abandoned. No reactions to issues and PRs since years."
+    },
+    {
+      "name": "MMM-NOAAAlerts",
+      "category": "Weather",
+      "url": "https://github.com/mmtsweng/MMM-NOAAAlerts",
+      "id": "mmtsweng/MMM-NOAAAlerts",
+      "maintainer": "mmtsweng",
+      "maintainerURL": "https://github.com/mmtsweng",
+      "description": "This module displays current local weather warning and alerts from NOAA's <a target=\"_blank\" href=\"https://www.weather.gov/documentation/services-web-api\">free api</a>",
+      "issues": []
     },
     {
       "name": "MMM-NOAATides",

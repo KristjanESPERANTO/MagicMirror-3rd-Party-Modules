@@ -1,11 +1,11 @@
 {
-  "moduleCounter": 1215,
+  "moduleCounter": 1216,
   "modulesWithImageCounter": 862,
-  "modulesWithIssuesCounter": 1215,
-  "issueCounter": 6991,
-  "lastUpdate": "2024-12-16T17:39:00+01:00",
+  "modulesWithIssuesCounter": 1216,
+  "issueCounter": 6997,
+  "lastUpdate": "2024-12-17T05:39:06+01:00",
   "repositoryHoster": {
-    "github": 1105,
+    "github": 1106,
     "gitlab": 10,
     "bitbucket": 1
   },
@@ -474,6 +474,7 @@
     "TemianMihai": 1,
     "Isaac-the-Man": 1,
     "Jan-Bart": 1,
+    "mmtsweng": 1,
     "crice009": 1,
     "AndreasHagman": 1,
     "EwwYumYuck": 1,

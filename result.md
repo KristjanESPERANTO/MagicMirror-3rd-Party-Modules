@@ -1,16 +1,16 @@
 # Result of the module analysis
 
-Last update: 2024-12-16T17:39:00+01:00
+Last update: 2024-12-17T05:39:06+01:00
 
 ## Statistics
 
 |                      | number   |
 |:---------------------|:--------:|
-| modules analyzed     |   1215   |
-| maintainer           |    652   |
-| modules with issues  |   1215   |
-| issues               |   6991   |
-| modules at github    |   1105   |
+| modules analyzed     |   1216   |
+| maintainer           |    653   |
+| modules with issues  |   1216   |
+| issues               |   6997   |
+| modules at github    |   1106   |
 | modules at gitlab    |     10   |
 | modules at bitbucket |      1   |
 
@@ -774,8 +774,8 @@ Last update: 2024-12-16T17:39:00+01:00
    - @types/express                     ^4.17.11  →    ^5.0.0
    - @types/magicmirror-module           ^2.16.0  →   ^2.16.5
    - @types/node                       ^14.14.22  →  ^22.10.2
-   - @typescript-eslint/eslint-plugin     ^7.0.2  →   ^8.18.0
-   - @typescript-eslint/parser            ^7.0.2  →   ^8.18.0
+   - @typescript-eslint/eslint-plugin     ^7.0.2  →   ^8.18.1
+   - @typescript-eslint/parser            ^7.0.2  →   ^8.18.1
    - bosch-smart-home-bridge              ^1.4.1  →    ^1.6.0
    - eslint                              ^8.57.0  →   ^9.17.0
    - eslint-plugin-prettier               ^5.1.3  →    ^5.2.1
@@ -4123,8 +4123,8 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
    - @rollup/plugin-commonjs           ^25.0.7  →  ^28.0.2
    - @rollup/plugin-node-resolve       ^15.2.3  →  ^16.0.0
    - @rollup/plugin-typescript         ^11.1.6  →  ^12.1.2
-   - @typescript-eslint/eslint-plugin  ^6.19.1  →  ^8.18.0
-   - @typescript-eslint/parser         ^6.19.1  →  ^8.18.0
+   - @typescript-eslint/eslint-plugin  ^6.19.1  →  ^8.18.1
+   - @typescript-eslint/parser         ^6.19.1  →  ^8.18.1
    - eslint                            ^8.56.0  →  ^9.17.0
    - eslint-plugin-prettier             ^5.1.3  →   ^5.2.1
    - prettier                           ^3.2.4  →   ^3.4.2
@@ -6293,7 +6293,7 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
    - @rollup/plugin-node-resolve       ^15.2.3  →  ^16.0.0
    - @rollup/plugin-typescript         ^11.1.6  →  ^12.1.2
    - @stylistic/eslint-plugin           ^1.5.4  →  ^2.12.1
-   - @typescript-eslint/eslint-plugin  ^6.20.0  →  ^8.18.0
+   - @typescript-eslint/eslint-plugin  ^6.20.0  →  ^8.18.1
    - eslint                            ^8.56.0  →  ^9.17.0
    - prettier                           ^3.2.5  →   ^3.4.2
    - rollup                             ^4.9.6  →  ^4.28.1
@@ -6336,6 +6336,17 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
 2. Outdated: Found `MichMich/MagicMirror` in file `README.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
 3. Recommendation: The README seems not to have an update instruction (the word 'update' is missing). Please add one.
 4. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
+
+### [MMM-NOAAAlerts by mmtsweng](https://github.com/mmtsweng/MMM-NOAAAlerts)
+
+1. There are no specific keywords in 'package.json'. We would use them as tags on the module list page. Add a few meaningful terms to the keywords in the package.json. Not just “magicmirror” or “module”.
+2. Issue: The license in the package.json (ISC) doesn't match the license file (GPL-3.0).
+3. No image found.
+4. Typo: Found `Magic Mirror` in file `MMM-NOAAAlerts.js`: Replace it with `MagicMirror²`.
+5. Typo: Found `Magic Mirror` in file `README.md`: Replace it with `MagicMirror²`.
+6. Recommendation: Found `require("https")` in file `node_helper.js`: Replace "https" by "node:https".
+7. Typo: Found `Magic Mirror` in file `package.json`: Replace it with `MagicMirror²`.
+8. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
 
 ### [MMM-NOAATides by crice009](https://github.com/crice009/MMM-NOAATides)
 
@@ -7659,7 +7670,7 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
    - rollup                       ^4.21.1  →  ^4.28.1
    - rollup-plugin-banner2         ^1.3.0  →   ^1.3.1
    - typescript                    ^5.5.4  →   ^5.7.2
-   - typescript-eslint             ^8.3.0  →  ^8.18.0
+   - typescript-eslint             ^8.3.0  →  ^8.18.1
 
 2. ESLint issues:
    - MMM-RAIN-MAP.js: Line 28, Column 17081: Expected to return a value in method 'get'. (rule: getter-return)
@@ -8337,7 +8348,7 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
 
 1. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
 2. Information: There are updates for 1 dependencie(s):
-   - @fortawesome/fontawesome-free  ^6.6.0  →  ^6.7.1
+   - @fortawesome/fontawesome-free  ^6.6.0  →  ^6.7.2
 
 
 ### [MMM-SensorGateway by mattileh](https://github.com/mattileh/MMM-SensorGateway)
@@ -8699,10 +8710,13 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
 
 ### [MMM-SnowEffect by cgillinger](https://github.com/cgillinger/MMM-SnowEffect)
 
-1. Typo: Found `Magic Mirror` in file `MMM-SnowEffect.css`: Replace it with `MagicMirror²`.
-2. Typo: Found `Magic Mirror` in file `MMM-SnowEffect.js`: Replace it with `MagicMirror²`.
-3. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
-4. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
+1. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
+2. ESLint issues:
+   - MMM-SnowEffect.js: Line 162, Column 50: 'payload' is defined but never used. (rule: no-unused-vars)
+   - MMM-SnowEffect.js: Line 162, Column 59: 'sender' is defined but never used. (rule: no-unused-vars)
+   - node_helper.js: Line 14, Column 42: 'notification' is defined but never used. (rule: no-unused-vars)
+   - node_helper.js: Line 14, Column 56: 'payload' is defined but never used. (rule: no-unused-vars)
+
 
 ### [MMM-soccer by fewieden](https://github.com/fewieden/MMM-soccer)
 
