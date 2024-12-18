@@ -2066,7 +2066,7 @@
     "maintainer": "KristjanESPERANTO",
     "maintainerURL": "",
     "description": "Show meals from canteens (Germany and Switzerland).",
-    "issues": false,
+    "issues": true,
     "stars": 6,
     "license": "MIT",
     "tags": [
@@ -3964,7 +3964,7 @@
     "maintainer": "KristjanESPERANTO",
     "maintainerURL": "",
     "description": "The easiest way to show pictures on your mirror.",
-    "issues": false,
+    "issues": true,
     "stars": 8,
     "license": "MIT",
     "tags": [
@@ -5208,17 +5208,18 @@
   },
   {
     "name": "MMM-Fortune",
-    "category": "Entertainment / Misc",
+    "category": "Outdated Modules",
     "url": "https://github.com/mykle1/MMM-Fortune",
     "id": "mykle1/MMM-Fortune",
     "maintainer": "mykle1",
     "maintainerURL": "",
     "description": "A fortune cookie for your MagicMirror\u00b2.",
-    "issues": true,
+    "issues": false,
+    "outdated": "Abandoned. And <a href=\"https://github.com/mykle1/MMM-Fortune/issues/4\">API is down</a>.",
     "stars": 9,
     "license": "MIT",
     "image": "Capture2.jpg",
-    "defaultSortWeight": 8,
+    "defaultSortWeight": 901,
     "lastCommit": "2018-01-12T17:37:24-05:00"
   },
   {
@@ -5229,7 +5230,7 @@
     "maintainer": "KristjanESPERANTO",
     "maintainerURL": "",
     "description": "Displays information from the MagicMirror\u00b2 forum. Like latest posts, unread posts, etc. The module should also work for other NodeBB forums, but it is not tested.",
-    "issues": false,
+    "issues": true,
     "stars": 3,
     "license": "ISC",
     "tags": [
@@ -10466,7 +10467,7 @@
     "id": "evroom/MMM-MPlayer",
     "maintainer": "evroom",
     "maintainerURL": "",
-    "description": "Uses MPlayer to display various video files and rtsp streams.",
+    "description": "Uses MPlayer to display various video files and RTSP streams.",
     "issues": true,
     "stars": 1,
     "license": "MIT",
@@ -10964,7 +10965,7 @@
     "id": "jclarke0000/MMM-MyScoreboard",
     "maintainer": "jclarke0000",
     "maintainerURL": "",
-    "description": "Display today's scores for your favourite teams across multiple sports.",
+    "description": "Display today's scores for your favourite teams across multiple sports. This module has not been maintained in a couple years, which has led to a couple bugs.  A patched version can be found <a target=\"_blank\" href=\"https://github.com/dathbe/MMM-MyScoreboard\">in dathbe's repository</a>",
     "issues": true,
     "stars": 73,
     "license": "MIT",
@@ -12503,7 +12504,7 @@
     "maintainerURL": "https://github.com/hermanho",
     "description": "Display your photos from Microsoft OneDrive.",
     "issues": true,
-    "stars": 4,
+    "stars": 5,
     "license": "MIT",
     "tags": [
       "onedrive"
@@ -12566,7 +12567,7 @@
     "maintainerURL": "https://github.com/NicholasRasi",
     "description": "Displays images from online URLs, useful for showing images from webcams.",
     "issues": true,
-    "stars": 3,
+    "stars": 4,
     "license": "MIT",
     "tags": [
       "images",
@@ -12605,7 +12606,7 @@
     "maintainerURL": "https://github.com/Fabrizz",
     "description": "Highly customizable module that displays what you are listening to in Spotify. Works with <a target=\"_blank\" href=\"https://github.com/Fabrizz/MMM-LiveLyrics\">MMM-LiveLyrics</a> and allows theming other modules!",
     "issues": true,
-    "stars": 65,
+    "stars": 67,
     "license": "MIT",
     "tags": [
       "spotify",
@@ -12724,7 +12725,7 @@
     "maintainerURL": "",
     "description": "Display current weather as image based on the Openmap Weather API data with different formatting.",
     "issues": true,
-    "stars": 32,
+    "stars": 33,
     "license": "MIT",
     "image": "MMM-OpenmapWeather-display.jpg",
     "defaultSortWeight": 6,
@@ -12894,7 +12895,7 @@
     "maintainerURL": "https://github.com/smartgic",
     "description": "When a Mycroft AI wake word is detected, an image is displayed and when the recording is done the image disappears.",
     "issues": true,
-    "stars": 3,
+    "stars": 4,
     "hasGithubIssues": false,
     "license": "MIT",
     "image": "docs-screenshot.jpg",
@@ -14183,7 +14184,7 @@
     "maintainer": "deg0nz",
     "maintainerURL": "",
     "description": "Display departures for public transport in Berlin and Brandenburg (Covers VBB Area).",
-    "issues": false,
+    "issues": true,
     "stars": 40,
     "license": "MIT",
     "tags": [
@@ -14192,7 +14193,7 @@
       "brandenburg"
     ],
     "image": "img-MMM-PublicTransport_screenshot.jpg",
-    "defaultSortWeight": -1,
+    "defaultSortWeight": 0,
     "lastCommit": "2024-12-18T00:23:24+01:00"
   },
   {
@@ -14203,7 +14204,7 @@
     "maintainer": "KristjanESPERANTO",
     "maintainerURL": "",
     "description": "Displays departure information for public transportation in Germany and some other European countries. The <a target=\"_blank\" href=\"https://github.com/public-transport/hafas-client\">hafas-client</a> is used to query the information. The interface of the Deutsche Bahn is used as standard, this includes most of the local networks with buses, trams, etc. However, <a target=\"_blank\" href=\"https://github.com/public-transport/hafas-client/blob/main/p/readme.md\">other hafas interfaces</a> can also be used.",
-    "issues": false,
+    "issues": true,
     "stars": 21,
     "license": "MIT",
     "tags": [
@@ -16461,7 +16462,7 @@
     ],
     "image": "light.jpg",
     "defaultSortWeight": 2,
-    "lastCommit": "2024-12-16T19:45:09+01:00"
+    "lastCommit": "2024-12-18T13:25:44+01:00"
   },
   {
     "name": "MMM-soccer",
@@ -19942,7 +19943,7 @@
     "maintainer": "jmwyds",
     "maintainerURL": "",
     "description": "Displays the Merriam-Webster word of the day along with its part of speech, pronunciation, definition, and an example.",
-    "issues": true,
+    "issues": false,
     "stars": 5,
     "license": "MIT",
     "tags": [
@@ -19953,8 +19954,8 @@
       "vocabulary"
     ],
     "image": "wotdPic.jpg",
-    "defaultSortWeight": 2,
-    "lastCommit": "2024-02-09T13:30:05-06:00"
+    "defaultSortWeight": 0,
+    "lastCommit": "2024-12-18T09:47:19-06:00"
   },
   {
     "name": "MMM-Worldclock",

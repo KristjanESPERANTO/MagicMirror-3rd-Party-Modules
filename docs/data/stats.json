@@ -1,11 +1,11 @@
 {
   "moduleCounter": 1217,
   "modulesWithImageCounter": 862,
-  "modulesWithIssuesCounter": 1212,
-  "issueCounter": 6997,
-  "lastUpdate": "2024-12-18T05:39:03+01:00",
+  "modulesWithIssuesCounter": 1216,
+  "issueCounter": 6994,
+  "lastUpdate": "2024-12-18T17:39:05+01:00",
   "repositoryHoster": {
-    "github": 1107,
+    "github": 1106,
     "gitlab": 10,
     "bitbucket": 1
   },
@@ -14,7 +14,7 @@
     "MMRIZE": 21,
     "Tom-Hirschberger": 15,
     "fewieden": 13,
-    "mykle1": 12,
+    "mykle1": 11,
     "mumblebaj": 11,
     "shbatm": 10,
     "shin10": 10,

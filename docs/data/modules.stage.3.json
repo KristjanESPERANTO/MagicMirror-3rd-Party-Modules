@@ -5138,7 +5138,7 @@
   },
   {
     "name": "MMM-Fortune",
-    "category": "Entertainment / Misc",
+    "category": "Outdated Modules",
     "url": "https://github.com/mykle1/MMM-Fortune",
     "id": "mykle1/MMM-Fortune",
     "maintainer": "mykle1",
@@ -5148,6 +5148,7 @@
       "`package.json` issue: Normalized value of bugs field is an empty object. Deleted.",
       "There are no keywords in 'package.json'. We would use them as tags on the module list page."
     ],
+    "outdated": "Abandoned. And <a href=\"https://github.com/mykle1/MMM-Fortune/issues/4\">API is down</a>.",
     "stars": 9,
     "license": "MIT",
     "image": "Capture2.jpg"
@@ -10353,7 +10354,7 @@
     "id": "evroom/MMM-MPlayer",
     "maintainer": "evroom",
     "maintainerURL": "",
-    "description": "Uses MPlayer to display various video files and rtsp streams.",
+    "description": "Uses MPlayer to display various video files and RTSP streams.",
     "issues": [
       "There is no `package.json`. We need this file to gather information about the module for the module list page.",
       "No image found."
@@ -10846,7 +10847,7 @@
     "id": "jclarke0000/MMM-MyScoreboard",
     "maintainer": "jclarke0000",
     "maintainerURL": "",
-    "description": "Display today's scores for your favourite teams across multiple sports.",
+    "description": "Display today's scores for your favourite teams across multiple sports. This module has not been maintained in a couple years, which has led to a couple bugs.  A patched version can be found <a target=\"_blank\" href=\"https://github.com/dathbe/MMM-MyScoreboard\">in dathbe's repository</a>",
     "issues": [],
     "stars": 73,
     "license": "MIT",
@@ -12352,7 +12353,7 @@
     "maintainerURL": "https://github.com/hermanho",
     "description": "Display your photos from Microsoft OneDrive.",
     "issues": [],
-    "stars": 4,
+    "stars": 5,
     "license": "MIT",
     "tags": [
       "onedrive"
@@ -12414,7 +12415,7 @@
     "maintainerURL": "https://github.com/NicholasRasi",
     "description": "Displays images from online URLs, useful for showing images from webcams.",
     "issues": [],
-    "stars": 3,
+    "stars": 4,
     "license": "MIT",
     "tags": [
       "images",
@@ -12449,7 +12450,7 @@
     "maintainerURL": "https://github.com/Fabrizz",
     "description": "Highly customizable module that displays what you are listening to in Spotify. Works with <a target=\"_blank\" href=\"https://github.com/Fabrizz/MMM-LiveLyrics\">MMM-LiveLyrics</a> and allows theming other modules!",
     "issues": [],
-    "stars": 65,
+    "stars": 67,
     "license": "MIT",
     "tags": [
       "spotify",
@@ -12569,7 +12570,7 @@
     "issues": [
       "There is no `package.json`. We need this file to gather information about the module for the module list page."
     ],
-    "stars": 32,
+    "stars": 33,
     "license": "MIT",
     "image": "MMM-OpenmapWeather-display.jpg"
   },
@@ -12741,7 +12742,7 @@
       "There is no `package.json`. We need this file to gather information about the module for the module list page.",
       "Issues are not enabled in the GitHub repository. So users cannot report bugs. Please enable issues in your repo."
     ],
-    "stars": 3,
+    "stars": 4,
     "hasGithubIssues": false,
     "license": "MIT",
     "image": "docs-screenshot.jpg"
