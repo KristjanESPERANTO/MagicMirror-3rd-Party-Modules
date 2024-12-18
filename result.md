@@ -1,6 +1,6 @@
 # Result of the module analysis
 
-Last update: 2024-12-17T17:38:41+01:00
+Last update: 2024-12-18T05:39:03+01:00
 
 ## Statistics
 
@@ -8,8 +8,8 @@ Last update: 2024-12-17T17:38:41+01:00
 |:---------------------|:--------:|
 | modules analyzed     |   1217   |
 | maintainer           |    654   |
-| modules with issues  |   1216   |
-| issues               |   7001   |
+| modules with issues  |   1212   |
+| issues               |   6997   |
 | modules at github    |   1107   |
 | modules at gitlab    |     10   |
 | modules at bitbucket |      1   |
@@ -1085,17 +1085,6 @@ Last update: 2024-12-17T17:38:41+01:00
 5. Recommendation: Found `require('https')` in file `node_helper.js`: Replace 'https' by 'node:https'.
 6. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
 
-### [MMM-Canteen by KristjanESPERANTO](https://github.com/KristjanESPERANTO/MMM-Canteen)
-
-1. Information: There are updates for 6 dependencie(s):
-   - @eslint/js                 ^9.16.0  →   ^9.17.0
-   - @stylistic/eslint-plugin   ^2.12.0  →   ^2.12.1
-   - cspell                     ^8.16.1  →   ^8.17.1
-   - eslint                     ^9.16.0  →   ^9.17.0
-   - lint-staged               ^15.2.10  →  ^15.2.11
-   - stylelint                 ^16.11.0  →  ^16.12.0
-
-
 ### [MMM-Canvas by chase-cromwell](https://github.com/chase-cromwell/MMM-Canvas)
 
 1. There is no `package.json`. We need this file to gather information about the module for the module list page.
@@ -1993,17 +1982,6 @@ Last update: 2024-12-17T17:38:41+01:00
 4. Recommendation: Found `new Date()` in file `MMM-EarthquakeMonitor.js`: Consider replacing it by `new Date(Date.now())`. It's helpful for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
 5. Recommendation: The README seems not to have an install instruction (the words 'install' or 'installation' are missing). Please add one.
 6. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
-
-### [MMM-EasyPix by KristjanESPERANTO](https://github.com/KristjanESPERANTO/MMM-EasyPix)
-
-1. Information: There are updates for 6 dependencie(s):
-   - @eslint/js                 ^9.16.0  →   ^9.17.0
-   - @stylistic/eslint-plugin   ^2.12.0  →   ^2.12.1
-   - cspell                     ^8.16.1  →   ^8.17.1
-   - eslint                     ^9.16.0  →   ^9.17.0
-   - lint-staged               ^15.2.10  →  ^15.2.11
-   - stylelint                 ^16.11.0  →  ^16.12.0
-
 
 ### [MMM-Ecobee by parnic](https://github.com/parnic/MMM-Ecobee)
 
@@ -6147,19 +6125,19 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
    - qrcode  1.5.1  →  1.5.4
 
 
-### [MMM-NewsAPI by mumblebaj](https://github.com/mumblebaj/MMM-NewsAPI)
-
-1. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
-2. ESLint issues:
-   - MMM-NewsAPI.js: Line 164, Column 23: 'qr' is assigned a value but never used. (rule: no-unused-vars)
-
-
 ### [MMM-NewsAPI by totoluto](https://github.com/totoluto/MMM-NewsAPI)
 
 1. Typo: Found `Magic Mirror` in file `README.md`: Replace it with `MagicMirror²`.
 2. Recommendation: The README seems not to have an update instruction (the word 'update' is missing). Please add one.
 3. Typo: Found `Magic Mirror` in file `package.json`: Replace it with `MagicMirror²`.
 4. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
+
+### [MMM-NewsAPI by mumblebaj](https://github.com/mumblebaj/MMM-NewsAPI)
+
+1. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
+2. ESLint issues:
+   - MMM-NewsAPI.js: Line 164, Column 23: 'qr' is assigned a value but never used. (rule: no-unused-vars)
+
 
 ### [MMM-NewsFeedTicker by justjim1220](https://github.com/justjim1220/MMM-NewsFeedTicker)
 
@@ -7507,22 +7485,6 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
 4. Typo: Found `Magic Mirror` in file `README.md`: Replace it with `MagicMirror²`.
 5. Typo: Found `Magic Mirror` in file `package.json`: Replace it with `MagicMirror²`.
 6. Recommendation: Replace eslintrc by new flat config.
-
-### [MMM-PublicTransportBerlin by deg0nz](https://github.com/deg0nz/MMM-PublicTransportBerlin)
-
-1. Information: There are updates for 5 dependencie(s):
-   - @eslint/js                 ^9.16.0  →   ^9.17.0
-   - @stylistic/eslint-plugin   ^2.12.0  →   ^2.12.1
-   - eslint                     ^9.16.0  →   ^9.17.0
-   - eslint-plugin-import-x      ^4.5.0  →    ^4.5.1
-   - stylelint                 ^16.11.0  →  ^16.12.0
-
-
-### [MMM-PublicTransportHafas by KristjanESPERANTO](https://github.com/KristjanESPERANTO/MMM-PublicTransportHafas)
-
-1. Information: There are updates for 1 dependencie(s):
-   - cspell  ^8.17.0  →  ^8.17.1
-
 
 ### [MMM-PublicTransportVVO by ChristianGeie](https://github.com/ChristianGeie/MMM-PublicTransportVVO)
 
@@ -10174,7 +10136,7 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
    - @eslint/js   ^9.15.0  →   ^9.17.0
    - eslint       ^9.15.0  →   ^9.17.0
    - globals     ^15.12.0  →  ^15.13.0
-   - openai       ^4.73.1  →   ^4.76.3
+   - openai       ^4.73.1  →   ^4.77.0
 
 
 ### [MMM-Volume by Anonym-tsk](https://github.com/Anonym-tsk/MMM-Volume)

@@ -2066,7 +2066,7 @@
     "maintainer": "KristjanESPERANTO",
     "maintainerURL": "",
     "description": "Show meals from canteens (Germany and Switzerland).",
-    "issues": true,
+    "issues": false,
     "stars": 6,
     "license": "MIT",
     "tags": [
@@ -2075,7 +2075,7 @@
     ],
     "image": "img-example1.jpg",
     "defaultSortWeight": 1,
-    "lastCommit": "2024-12-10T11:53:45+01:00"
+    "lastCommit": "2024-12-17T23:54:57+01:00"
   },
   {
     "name": "MMM-Canvas",
@@ -3964,7 +3964,7 @@
     "maintainer": "KristjanESPERANTO",
     "maintainerURL": "",
     "description": "The easiest way to show pictures on your mirror.",
-    "issues": true,
+    "issues": false,
     "stars": 8,
     "license": "MIT",
     "tags": [
@@ -3974,7 +3974,7 @@
     ],
     "image": "pix-earth.jpg",
     "defaultSortWeight": 1,
-    "lastCommit": "2024-12-10T12:11:55+01:00"
+    "lastCommit": "2024-12-18T00:04:25+01:00"
   },
   {
     "name": "MMM-Ecobee",
@@ -10088,7 +10088,7 @@
     "issues": true,
     "stars": 3,
     "defaultSortWeight": 2,
-    "lastCommit": "2024-12-11T22:42:29+01:00"
+    "lastCommit": "2024-12-17T22:51:25+01:00"
   },
   {
     "name": "MMM-Modulebar",
@@ -10870,9 +10870,9 @@
       "weerbericht",
       "knmi"
     ],
-    "image": "screenshot01.jpg",
+    "image": "images-bewolkt.jpg",
     "defaultSortWeight": 4,
-    "lastCommit": "2024-11-12T13:10:40+01:00"
+    "lastCommit": "2024-12-17T22:41:10+01:00"
   },
   {
     "name": "MMM-MyGarbage",
@@ -11635,24 +11635,6 @@
   {
     "name": "MMM-NewsAPI",
     "category": "News / Information",
-    "url": "https://github.com/mumblebaj/MMM-NewsAPI",
-    "id": "mumblebaj/MMM-NewsAPI",
-    "maintainer": "mumblebaj",
-    "maintainerURL": "https://github.com/mumblebaj",
-    "description": "Get news from <a target=\"_blank\" href=\"https://newsapi.org\">newsapi.org</a>.",
-    "issues": true,
-    "stars": 9,
-    "license": "MIT",
-    "tags": [
-      "news"
-    ],
-    "image": "screenshot1.jpg",
-    "defaultSortWeight": 1,
-    "lastCommit": "2024-09-29T13:44:39+02:00"
-  },
-  {
-    "name": "MMM-NewsAPI",
-    "category": "News / Information",
     "url": "https://github.com/totoluto/MMM-NewsAPI",
     "id": "totoluto/MMM-NewsAPI",
     "maintainer": "totoluto",
@@ -11668,6 +11650,24 @@
     "image": "screenshots-MMM-NewsApi.jpg",
     "defaultSortWeight": 3,
     "lastCommit": "2024-12-02T20:07:18+01:00"
+  },
+  {
+    "name": "MMM-NewsAPI",
+    "category": "News / Information",
+    "url": "https://github.com/mumblebaj/MMM-NewsAPI",
+    "id": "mumblebaj/MMM-NewsAPI",
+    "maintainer": "mumblebaj",
+    "maintainerURL": "https://github.com/mumblebaj",
+    "description": "Get news from <a target=\"_blank\" href=\"https://newsapi.org\">newsapi.org</a>.",
+    "issues": true,
+    "stars": 9,
+    "license": "MIT",
+    "tags": [
+      "news"
+    ],
+    "image": "screenshot1.jpg",
+    "defaultSortWeight": 1,
+    "lastCommit": "2024-09-29T13:44:39+02:00"
   },
   {
     "name": "MMM-NewsFeedTicker",
@@ -12145,10 +12145,10 @@
     "maintainerURL": "https://github.com/choffmann",
     "description": "Display your Notion database.",
     "issues": true,
-    "stars": 10,
+    "stars": 11,
     "license": "MIT",
     "image": "img-mmm-notion-showcase.jpg",
-    "defaultSortWeight": 10,
+    "defaultSortWeight": 9,
     "lastCommit": "2023-12-01T11:40:39+01:00"
   },
   {
@@ -14183,7 +14183,7 @@
     "maintainer": "deg0nz",
     "maintainerURL": "",
     "description": "Display departures for public transport in Berlin and Brandenburg (Covers VBB Area).",
-    "issues": true,
+    "issues": false,
     "stars": 40,
     "license": "MIT",
     "tags": [
@@ -14192,8 +14192,8 @@
       "brandenburg"
     ],
     "image": "img-MMM-PublicTransport_screenshot.jpg",
-    "defaultSortWeight": 0,
-    "lastCommit": "2024-12-11T00:41:06+01:00"
+    "defaultSortWeight": -1,
+    "lastCommit": "2024-12-18T00:23:24+01:00"
   },
   {
     "name": "MMM-PublicTransportHafas",
@@ -14203,7 +14203,7 @@
     "maintainer": "KristjanESPERANTO",
     "maintainerURL": "",
     "description": "Displays departure information for public transportation in Germany and some other European countries. The <a target=\"_blank\" href=\"https://github.com/public-transport/hafas-client\">hafas-client</a> is used to query the information. The interface of the Deutsche Bahn is used as standard, this includes most of the local networks with buses, trams, etc. However, <a target=\"_blank\" href=\"https://github.com/public-transport/hafas-client/blob/main/p/readme.md\">other hafas interfaces</a> can also be used.",
-    "issues": true,
+    "issues": false,
     "stars": 21,
     "license": "MIT",
     "tags": [
@@ -14212,7 +14212,7 @@
     ],
     "image": "img-Goerdelerring_all.jpg",
     "defaultSortWeight": 1,
-    "lastCommit": "2024-12-16T09:25:30+01:00"
+    "lastCommit": "2024-12-17T22:47:03+01:00"
   },
   {
     "name": "MMM-PublicTransportVVO",
