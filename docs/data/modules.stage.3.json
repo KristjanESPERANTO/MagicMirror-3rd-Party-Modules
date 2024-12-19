@@ -10843,18 +10843,19 @@
   {
     "name": "MMM-MyScoreboard",
     "category": "Sports",
-    "url": "https://github.com/jclarke0000/MMM-MyScoreboard",
-    "id": "jclarke0000/MMM-MyScoreboard",
-    "maintainer": "jclarke0000",
+    "url": "https://github.com/dathbe/MMM-MyScoreboard",
+    "id": "dathbe/MMM-MyScoreboard",
+    "maintainer": "dathbe",
     "maintainerURL": "",
-    "description": "Display today's scores for your favourite teams across multiple sports. This module has not been maintained in a couple years, which has led to a couple bugs.  A patched version can be found <a target=\"_blank\" href=\"https://github.com/dathbe/MMM-MyScoreboard\">in dathbe's repository</a>",
+    "description": "Display today's scores for your favourite teams across multiple sports.",
     "issues": [],
-    "stars": 73,
+    "stars": 2,
     "license": "MIT",
     "tags": [
+      "sports",
       "sports"
     ],
-    "image": "logos-NCAAF-CAL.jpg"
+    "image": "example.jpg"
   },
   {
     "name": "MMM-MySenseHat",
@@ -19286,16 +19287,15 @@
   },
   {
     "name": "MMM-WeatherOrNot",
-    "category": "Outdated Modules",
+    "category": "Weather",
     "url": "https://github.com/mykle1/MMM-WeatherOrNot",
     "id": "mykle1/MMM-WeatherOrNot",
     "maintainer": "mykle1",
     "maintainerURL": "",
-    "description": "Squeeze or stretch it. Watch it respond by reformatting itself. Fully customizable. Also driven by Darksky API.",
+    "description": "Squeeze or stretch it. Watch it respond by reformatting itself. Fully customizable. Contrary to the description in the README, the DarkSky API is not used.",
     "issues": [
       "There is no `package.json`. We need this file to gather information about the module for the module list page."
     ],
-    "outdated": "Deprecated. DarkSky API no longer works since 2023-03-31.",
     "stars": 20,
     "license": "MIT",
     "image": "images-1.jpg"

@@ -1,6 +1,6 @@
 # Result of the module analysis
 
-Last update: 2024-12-18T17:39:05+01:00
+Last update: 2024-12-19T05:39:00+01:00
 
 ## Statistics
 
@@ -9,8 +9,8 @@ Last update: 2024-12-18T17:39:05+01:00
 | modules analyzed     |   1217   |
 | maintainer           |    654   |
 | modules with issues  |   1216   |
-| issues               |   6994   |
-| modules at github    |   1106   |
+| issues               |   6995   |
+| modules at github    |   1107   |
 | modules at gitlab    |     10   |
 | modules at bitbucket |      1   |
 
@@ -3013,7 +3013,8 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
 ### [MMM-GoogleAssistant by bugsounet](https://github.com/bugsounet/MMM-GoogleAssistant)
 
 1. Issues are not enabled in the GitHub repository. So users cannot report bugs. Please enable issues in your repo.
-2. Information: There are updates for 3 dependencie(s):
+2. Information: There are updates for 4 dependencie(s):
+   - @grpc/grpc-js              ^1.12.4  →   ^1.12.5
    - @stylistic/eslint-plugin   ^2.11.0  →   ^2.12.1
    - eslint                     ^9.16.0  →   ^9.17.0
    - sweetalert2               ^11.14.5  →  ^11.15.2
@@ -3161,7 +3162,7 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
 2. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
 3. Information: There are updates for 2 dependencie(s):
    - @electron/rebuild             ^3.3.1  →  ^3.7.1
-   - @google-cloud/text-to-speech  ^3.3.1  →  ^5.6.0
+   - @google-cloud/text-to-speech  ^3.3.1  →  ^5.7.0
 
 
 ### [MMM-GPIO-HANDLER by Sjohn21](https://github.com/Sjohn21/MMM-GPIO-HANDLER)
@@ -5805,15 +5806,13 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
    - moment-timezone  ^0.5.21  →  ^0.5.46
 
 
-### [MMM-MyScoreboard by jclarke0000](https://github.com/jclarke0000/MMM-MyScoreboard)
+### [MMM-MyScoreboard by dathbe](https://github.com/dathbe/MMM-MyScoreboard)
 
-1. Typo: Found `Magic Mirror` in file `MMM-MyScoreboard.js`: Replace it with `MagicMirror²`.
-2. Outdated: Found `MichMich/MagicMirror` in file `README.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
-3. Typo: Found `MagicMirror2` in file `package.json`: Replace it with `MagicMirror²`.
-4. Recommendation: Found `axios` in file `package.json`: Replace it with built-in fetch.
-5. Recommendation: Found `axios` in file `ESPN.js`: Replace it with built-in fetch.
-6. Recommendation: Found `axios` in file `SNET.js`: Replace it with built-in fetch.
-7. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
+1. Recommendation: Found `axios` in file `package.json`: Replace it with built-in fetch.
+2. Recommendation: Found `axios` in file `ESPN.js`: Replace it with built-in fetch.
+3. Recommendation: Found `axios` in file `SNET.js`: Replace it with built-in fetch.
+4. Recommendation: Found `axios` in file `SNET_YD.js`: Replace it with built-in fetch.
+5. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
 
 ### [MMM-MySenseHat by framboise-pi](https://github.com/framboise-pi/MMM-MySenseHat)
 
@@ -10397,6 +10396,13 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
 3. Recommendation: The README seems not to have an update instruction (the word 'update' is missing). Please add one.
 4. Recommendation: Found `new Date()` in file `weatherobjecthourlybyday.js`: Consider replacing it by `new Date(Date.now())`. It's helpful for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
 5. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
+
+### [MMM-WeatherOrNot by mykle1](https://github.com/mykle1/MMM-WeatherOrNot)
+
+1. There is no `package.json`. We need this file to gather information about the module for the module list page.
+2. Typo: Found `Magic Mirror` in file `MMM-WeatherOrNot.js`: Replace it with `MagicMirror²`.
+3. Recommendation: Found `new Date()` in file `MMM-WeatherOrNot.js`: Consider replacing it by `new Date(Date.now())`. It's helpful for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
+4. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
 
 ### [MMM-WeatherOutfit by Lavve](https://github.com/Lavve/MMM-WeatherOutfit)
 
