@@ -13230,7 +13230,7 @@
     "maintainerURL": "",
     "description": "Display stats from Pi-Hole DNS ad blocking.",
     "issues": [],
-    "stars": 75,
+    "stars": 76,
     "license": "MIT",
     "tags": [
       "pi-hole"
@@ -13327,7 +13327,7 @@
     "maintainerURL": "",
     "description": "After a configurated time without any user interaction the display will turn off and hide all modules for economy mode. It will wake up with a PIR sensor.",
     "issues": [],
-    "stars": 35,
+    "stars": 39,
     "license": "MIT",
     "tags": [
       "screen",
@@ -13572,7 +13572,7 @@
       "Issue: The license in the package.json (ISC) doesn't match the license file (MIT).",
       "No image found."
     ],
-    "stars": 6,
+    "stars": 7,
     "hasGithubIssues": false,
     "license": "MIT"
   },

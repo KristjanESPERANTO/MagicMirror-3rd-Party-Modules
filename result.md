@@ -1,6 +1,6 @@
 # Result of the module analysis
 
-Last update: 2024-12-19T05:39:00+01:00
+Last update: 2024-12-19T17:40:05+01:00
 
 ## Statistics
 
@@ -4079,7 +4079,7 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
    - @electron/rebuild    ^3.6.0  →    ^3.7.1
    - node-abi            ^3.65.0  →   ^3.71.0
    - node-gyp            ^10.2.0  →   ^11.0.0
-   - puppeteer          ^22.15.0  →  ^23.11.0
+   - puppeteer          ^22.15.0  →  ^23.11.1
    - sharp               ^0.33.4  →   ^0.33.5
 
 
@@ -7499,8 +7499,9 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
 
 ### [MMM-PublicTransportBerlin by deg0nz](https://github.com/deg0nz/MMM-PublicTransportBerlin)
 
-1. Information: There are updates for 1 dependencie(s):
-   - globals  ^15.13.0  →  ^15.14.0
+1. Information: There are updates for 2 dependencie(s):
+   - eslint-plugin-import-x    ^4.5.1  →    ^4.6.1
+   - globals                 ^15.13.0  →  ^15.14.0
 
 
 ### [MMM-PublicTransportHafas by KristjanESPERANTO](https://github.com/KristjanESPERANTO/MMM-PublicTransportHafas)

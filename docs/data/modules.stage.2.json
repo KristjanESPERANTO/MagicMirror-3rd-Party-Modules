@@ -9536,7 +9536,7 @@
     "maintainerURL": "",
     "description": "Display stats from Pi-Hole DNS ad blocking.",
     "issues": [],
-    "stars": 75,
+    "stars": 76,
     "license": "MIT"
   },
   {
@@ -9609,7 +9609,7 @@
     "maintainerURL": "",
     "description": "After a configurated time without any user interaction the display will turn off and hide all modules for economy mode. It will wake up with a PIR sensor.",
     "issues": [],
-    "stars": 35,
+    "stars": 39,
     "license": "MIT"
   },
   {
@@ -9778,7 +9778,7 @@
     "maintainerURL": "",
     "description": "Displays images in the background one at a time, pulling the images from a PLEX Media Server.",
     "issues": [],
-    "stars": 6,
+    "stars": 7,
     "hasGithubIssues": false,
     "license": "MIT"
   },
