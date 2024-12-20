@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "2024-12-19T16:30:46.985Z",
+  "lastUpdate": "2024-12-20T04:30:30.936Z",
   "repositories": [
     {
       "id": "0lek/MMM-socialbicycles",
@@ -353,7 +353,7 @@
     },
     {
       "id": "ajones/MMM-PurpleAir",
-      "gitHubDataLastUpdate": "2024-11-28T04:30:16.947Z",
+      "gitHubDataLastUpdate": "2024-12-20T04:30:30.470Z",
       "gitHubData": {
         "issues": 0,
         "stars": 1,
@@ -507,10 +507,10 @@
     },
     {
       "id": "alonsourbano/publika",
-      "gitHubDataLastUpdate": "2024-11-28T04:30:15.538Z",
+      "gitHubDataLastUpdate": "2024-12-20T04:30:29.158Z",
       "gitHubData": {
         "issues": 4,
-        "stars": 5,
+        "stars": 6,
         "license": "MIT",
         "archived": false,
         "disabled": false,
@@ -1193,7 +1193,7 @@
     },
     {
       "id": "basknol/MMM-PushBulletNotifications",
-      "gitHubDataLastUpdate": "2024-11-28T04:30:17.435Z",
+      "gitHubDataLastUpdate": "2024-12-20T04:30:30.889Z",
       "gitHubData": {
         "issues": 0,
         "stars": 34,
@@ -1403,7 +1403,7 @@
     },
     {
       "id": "bibaldo/MMM-Pregnancy",
-      "gitHubDataLastUpdate": "2024-11-27T16:30:24.041Z",
+      "gitHubDataLastUpdate": "2024-12-20T04:30:22.984Z",
       "gitHubData": {
         "issues": 3,
         "stars": 2,
@@ -2271,7 +2271,7 @@
     },
     {
       "id": "bugsounet/MMM-PrixCarburants",
-      "gitHubDataLastUpdate": "2024-11-27T16:30:24.626Z",
+      "gitHubDataLastUpdate": "2024-12-20T04:30:23.513Z",
       "gitHubData": {
         "issues": 0,
         "stars": 2,
@@ -2313,7 +2313,7 @@
     },
     {
       "id": "bureus/MMM-Postnord",
-      "gitHubDataLastUpdate": "2024-11-27T16:30:22.150Z",
+      "gitHubDataLastUpdate": "2024-12-20T04:30:21.196Z",
       "gitHubData": {
         "issues": 4,
         "stars": 4,
@@ -2859,7 +2859,7 @@
     },
     {
       "id": "ChristianGeie/MMM-PublicTransportVVO",
-      "gitHubDataLastUpdate": "2024-11-28T04:30:15.015Z",
+      "gitHubDataLastUpdate": "2024-12-20T04:30:28.685Z",
       "gitHubData": {
         "issues": 2,
         "stars": 1,
@@ -3531,7 +3531,7 @@
     },
     {
       "id": "daxiang28/MMM-ProxyImage",
-      "gitHubDataLastUpdate": "2024-11-27T16:30:28.679Z",
+      "gitHubDataLastUpdate": "2024-12-20T04:30:27.444Z",
       "gitHubData": {
         "issues": 1,
         "stars": 1,
@@ -3587,7 +3587,7 @@
     },
     {
       "id": "deg0nz/MMM-PublicTransportBerlin",
-      "gitHubDataLastUpdate": "2024-11-27T16:30:29.150Z",
+      "gitHubDataLastUpdate": "2024-12-20T04:30:27.813Z",
       "gitHubData": {
         "issues": 5,
         "stars": 40,
@@ -3596,7 +3596,7 @@
         "disabled": false,
         "defaultBranch": "master",
         "has_issues": true,
-        "lastCommit": "2024-11-01T06:12:10Z"
+        "lastCommit": "2024-12-17T23:23:24Z"
       }
     },
     {
@@ -3825,7 +3825,7 @@
     },
     {
       "id": "dgburr/MMM-Polly",
-      "gitHubDataLastUpdate": "2024-11-27T16:30:19.542Z",
+      "gitHubDataLastUpdate": "2024-12-20T04:30:18.846Z",
       "gitHubData": {
         "issues": 0,
         "stars": 3,
@@ -5015,7 +5015,7 @@
     },
     {
       "id": "Fifteen15Studios/MMM-PreciousMetals",
-      "gitHubDataLastUpdate": "2024-11-27T16:30:23.554Z",
+      "gitHubDataLastUpdate": "2024-12-20T04:30:22.547Z",
       "gitHubData": {
         "issues": 0,
         "stars": 2,
@@ -7829,16 +7829,16 @@
     },
     {
       "id": "KristjanESPERANTO/MMM-PublicTransportHafas",
-      "gitHubDataLastUpdate": "2024-11-27T16:30:29.607Z",
+      "gitHubDataLastUpdate": "2024-12-20T04:30:28.240Z",
       "gitHubData": {
-        "issues": 4,
+        "issues": 5,
         "stars": 21,
         "license": "MIT",
         "archived": false,
         "disabled": false,
         "defaultBranch": "main",
         "has_issues": true,
-        "lastCommit": "2024-11-18T23:12:34Z"
+        "lastCommit": "2024-12-17T21:47:03Z"
       }
     },
     {
@@ -7885,7 +7885,7 @@
     },
     {
       "id": "kurtern84/MMM-profile",
-      "gitHubDataLastUpdate": "2024-11-27T16:30:25.117Z",
+      "gitHubDataLastUpdate": "2024-12-20T04:30:24.030Z",
       "gitHubData": {
         "issues": 0,
         "stars": 5,
@@ -7899,7 +7899,7 @@
     },
     {
       "id": "kurtern84/MMM-ProfileAndWeatherAlerts",
-      "gitHubDataLastUpdate": "2024-11-27T16:30:25.621Z",
+      "gitHubDataLastUpdate": "2024-12-20T04:30:24.477Z",
       "gitHubData": {
         "issues": 0,
         "stars": 0,
@@ -8151,7 +8151,7 @@
     },
     {
       "id": "lekesako/MMM-Pollen-FR",
-      "gitHubDataLastUpdate": "2024-11-27T16:30:18.890Z",
+      "gitHubDataLastUpdate": "2024-12-20T04:30:18.364Z",
       "gitHubData": {
         "issues": 1,
         "stars": 0,
@@ -8809,7 +8809,7 @@
     },
     {
       "id": "mboskamp/MMM-Pull",
-      "gitHubDataLastUpdate": "2024-11-28T04:30:16.012Z",
+      "gitHubDataLastUpdate": "2024-12-20T04:30:29.569Z",
       "gitHubData": {
         "issues": 0,
         "stars": 4,
@@ -9131,7 +9131,7 @@
     },
     {
       "id": "MikeBishop/MMM-Powerwall",
-      "gitHubDataLastUpdate": "2024-11-27T16:30:22.573Z",
+      "gitHubDataLastUpdate": "2024-12-20T04:30:21.643Z",
       "gitHubData": {
         "issues": 3,
         "stars": 22,
@@ -10615,7 +10615,7 @@
     },
     {
       "id": "mykle1/MMM-PopulationClock",
-      "gitHubDataLastUpdate": "2024-11-27T16:30:20.037Z",
+      "gitHubDataLastUpdate": "2024-12-20T04:30:19.285Z",
       "gitHubData": {
         "issues": 0,
         "stars": 5,
@@ -12071,7 +12071,7 @@
     },
     {
       "id": "ptornhult/MMM-Pure-Snow",
-      "gitHubDataLastUpdate": "2024-11-28T04:30:16.450Z",
+      "gitHubDataLastUpdate": "2024-12-20T04:30:29.993Z",
       "gitHubData": {
         "issues": 1,
         "stars": 3,
@@ -12505,7 +12505,7 @@
     },
     {
       "id": "reidarw/MMM-PostDelivery-Norway",
-      "gitHubDataLastUpdate": "2024-11-27T16:30:21.656Z",
+      "gitHubDataLastUpdate": "2024-12-20T04:30:20.726Z",
       "gitHubData": {
         "issues": 0,
         "stars": 2,
@@ -13667,7 +13667,7 @@
     },
     {
       "id": "SikandAlex/MMM-Porcupine",
-      "gitHubDataLastUpdate": "2024-11-27T16:30:20.542Z",
+      "gitHubDataLastUpdate": "2024-12-20T04:30:19.787Z",
       "gitHubData": {
         "issues": 0,
         "stars": 1,
@@ -13835,7 +13835,7 @@
     },
     {
       "id": "slametps/MMM-PrayerTime",
-      "gitHubDataLastUpdate": "2024-11-27T16:30:23.071Z",
+      "gitHubDataLastUpdate": "2024-12-20T04:30:22.125Z",
       "gitHubData": {
         "issues": 4,
         "stars": 20,
@@ -14017,7 +14017,7 @@
     },
     {
       "id": "Snille/MMM-Profilepicture",
-      "gitHubDataLastUpdate": "2024-11-27T16:30:26.591Z",
+      "gitHubDataLastUpdate": "2024-12-20T04:30:25.401Z",
       "gitHubData": {
         "issues": 0,
         "stars": 2,
@@ -14269,7 +14269,7 @@
     },
     {
       "id": "spydersoft-consulting/MMM-PrometheusAlerts",
-      "gitHubDataLastUpdate": "2024-11-27T16:30:27.557Z",
+      "gitHubDataLastUpdate": "2024-12-20T04:30:26.252Z",
       "gitHubData": {
         "issues": 3,
         "stars": 3,
@@ -14381,7 +14381,7 @@
     },
     {
       "id": "stewartmckee/MMM-Property-managed",
-      "gitHubDataLastUpdate": "2024-11-27T16:30:28.126Z",
+      "gitHubDataLastUpdate": "2024-12-20T04:30:26.701Z",
       "gitHubData": {
         "issues": 0,
         "stars": 1,
@@ -15277,7 +15277,7 @@
     },
     {
       "id": "Tom-Hirschberger/MMM-ProfileControl",
-      "gitHubDataLastUpdate": "2024-11-27T16:30:26.132Z",
+      "gitHubDataLastUpdate": "2024-12-20T04:30:24.929Z",
       "gitHubData": {
         "issues": 0,
         "stars": 4,
@@ -15431,7 +15431,7 @@
     },
     {
       "id": "tosti007/MMM-ProfileSwitcher",
-      "gitHubDataLastUpdate": "2024-11-27T16:30:27.053Z",
+      "gitHubDataLastUpdate": "2024-12-20T04:30:25.784Z",
       "gitHubData": {
         "issues": 7,
         "stars": 46,
@@ -16089,7 +16089,7 @@
     },
     {
       "id": "vincep5/MMM-Pollen",
-      "gitHubDataLastUpdate": "2024-11-27T16:30:18.324Z",
+      "gitHubDataLastUpdate": "2024-12-20T04:30:17.873Z",
       "gitHubData": {
         "issues": 2,
         "stars": 12,
@@ -16145,7 +16145,7 @@
     },
     {
       "id": "Wanztwurst/MMM-portscan",
-      "gitHubDataLastUpdate": "2024-11-27T16:30:21.041Z",
+      "gitHubDataLastUpdate": "2024-12-20T04:30:20.223Z",
       "gitHubData": {
         "issues": 0,
         "stars": 6,

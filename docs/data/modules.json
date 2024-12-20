@@ -14246,7 +14246,7 @@
     "description": "Display local transport for different regions of Finland (Helsinki, H\u00e4meenlinna, Joensuu, Jyv\u00e4skyl\u00e4, Kajaani, Kotka, Kouvola, Kuopio, Lahti, Lappeenranta, Mikkeli, Tampere, Oulu, Rovaniemi, Turku, Vaasa)",
     "issues": false,
     "outdated": "Abandoned. No reactions to issues since years. Missing instructions to install dependency 'node-fetch'. API not working without API key anymore.",
-    "stars": 5,
+    "stars": 6,
     "license": "MIT",
     "image": "docs-FOLI-mfrojxmz.jpg",
     "defaultSortWeight": 901,

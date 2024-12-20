@@ -14084,7 +14084,7 @@
       "There are no keywords in 'package.json'. We would use them as tags on the module list page."
     ],
     "outdated": "Abandoned. No reactions to issues since years. Missing instructions to install dependency 'node-fetch'. API not working without API key anymore.",
-    "stars": 5,
+    "stars": 6,
     "license": "MIT",
     "image": "docs-FOLI-mfrojxmz.jpg"
   },
