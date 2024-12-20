@@ -1,16 +1,16 @@
 # Result of the module analysis
 
-Last update: 2024-12-20T05:39:58+01:00
+Last update: 2024-12-20T17:39:14+01:00
 
 ## Statistics
 
 |                      | number   |
 |:---------------------|:--------:|
 | modules analyzed     |   1217   |
-| maintainer           |    654   |
+| maintainer           |    652   |
 | modules with issues  |   1216   |
-| issues               |   6995   |
-| modules at github    |   1107   |
+| issues               |   6978   |
+| modules at github    |   1105   |
 | modules at gitlab    |     10   |
 | modules at bitbucket |      1   |
 
@@ -491,14 +491,15 @@ Last update: 2024-12-20T05:39:58+01:00
 2. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
 3. Information: There are updates for 3 dependencie(s):
    - alphavantage     ^2.4.1  →   ^2.5.0
-   - highcharts       ^9.0.0  →  ^12.1.0
+   - highcharts       ^9.0.0  →  ^12.1.1
    - yahoo-finance2  ^2.11.3  →  ^2.13.2
 
 
 ### [EXT-Background by bugsounet](https://github.com/bugsounet/EXT-Background)
 
-1. Information: There are updates for 2 dependencie(s):
+1. Information: There are updates for 3 dependencie(s):
    - @stylistic/eslint-plugin  ^2.11.0  →  ^2.12.1
+   - esbuild                   ^0.24.0  →  ^0.24.1
    - eslint                    ^9.15.0  →  ^9.17.0
 
 2. ESLint issues:
@@ -847,8 +848,9 @@ Last update: 2024-12-20T05:39:58+01:00
 
 ### [EXT-Browser by bugsounet](https://github.com/bugsounet/EXT-Browser)
 
-1. Information: There are updates for 2 dependencie(s):
+1. Information: There are updates for 3 dependencie(s):
    - @stylistic/eslint-plugin  ^2.11.0  →  ^2.12.1
+   - esbuild                   ^0.24.0  →  ^0.24.1
    - eslint                    ^9.15.0  →  ^9.17.0
 
 2. ESLint issues:
@@ -1755,9 +1757,10 @@ Last update: 2024-12-20T05:39:58+01:00
 
 ### [EXT-Detector by bugsounet](https://github.com/bugsounet/EXT-Detector)
 
-1. Information: There are updates for 3 dependencie(s):
+1. Information: There are updates for 4 dependencie(s):
    - @stylistic/eslint-plugin   ^2.11.0  →   ^2.12.1
    - @types/node               ^22.10.1  →  ^22.10.2
+   - esbuild                    ^0.24.0  →   ^0.24.1
    - eslint                     ^9.16.0  →   ^9.17.0
 
 2. ESLint issues:
@@ -2469,19 +2472,6 @@ deprecated: no longer maintained, switch to modern iconify-icon web component
 5. Warning: No LICENSE file.
 6. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
 
-### [MMM-FiElectricityPrice by jannekalliola](https://github.com/jannekalliola/MMM-FiElectricityPrice)
-
-1. `package.json` issue: No repository field.
-2. There are no keywords in 'package.json'. We would use them as tags on the module list page.
-3. Module is archived, but not marked as outdated in the official module list.
-4. Typo: Found `Magic Mirror` in file `MMM-FiElectricityPrice.js`: Replace it with `MagicMirror²`.
-5. Recommendation: Found `new Date()` in file `MMM-FiElectricityPrice.js`: Consider replacing it by `new Date(Date.now())`. It's helpful for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
-6. Typo: Found `Magic Mirror` in file `README.md`: Replace it with `MagicMirror²`.
-7. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
-8. Recommendation: Found `require('https')` in file `node_helper.js`: Replace 'https' by 'node:https'.
-9. Warning: No LICENSE file.
-10. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
-
 ### [MMM-Fish by nigel-daniels](https://github.com/nigel-daniels/MMM-Fish)
 
 1. There is no `package.json`. We need this file to gather information about the module for the module list page.
@@ -2659,8 +2649,9 @@ deprecated: no longer maintained, switch to modern iconify-icon web component
 
 ### [MMM-FranceInfo by bugsounet](https://github.com/bugsounet/MMM-FranceInfo)
 
-1. Information: There are updates for 2 dependencie(s):
+1. Information: There are updates for 3 dependencie(s):
    - @stylistic/eslint-plugin  ^2.11.0  →  ^2.12.1
+   - esbuild                   ^0.24.0  →  ^0.24.1
    - eslint                    ^9.16.0  →  ^9.17.0
 
 2. ESLint issues:
@@ -2673,9 +2664,10 @@ deprecated: no longer maintained, switch to modern iconify-icon web component
 
 1. Recommendation: Found `axios` in file `freebox.js`: Replace it with built-in fetch.
 2. Recommendation: Found `axios` in file `package.json`: Replace it with built-in fetch.
-3. Information: There are updates for 3 dependencie(s):
+3. Information: There are updates for 4 dependencie(s):
    - @stylistic/eslint-plugin  ^2.11.0  →  ^2.12.1
    - axios                      ^1.7.7  →   ^1.7.9
+   - esbuild                   ^0.24.0  →  ^0.24.1
    - eslint                    ^9.15.0  →  ^9.17.0
 
 
@@ -2696,8 +2688,9 @@ deprecated: no longer maintained, switch to modern iconify-icon web component
 
 ### [EXT-FreeboxTV by bugsounet](https://github.com/bugsounet/EXT-FreeboxTV)
 
-1. Information: There are updates for 2 dependencie(s):
+1. Information: There are updates for 3 dependencie(s):
    - @stylistic/eslint-plugin  ^2.11.0  →  ^2.12.1
+   - esbuild                   ^0.24.0  →  ^0.24.1
    - eslint                    ^9.15.0  →  ^9.17.0
 
 2. ESLint issues:
@@ -2941,8 +2934,9 @@ deprecated: no longer maintained, switch to modern iconify-icon web component
 
 ### [MMM-Glassy by bugsounet](https://github.com/bugsounet/MMM-Glassy)
 
-1. Information: There are updates for 2 dependencie(s):
+1. Information: There are updates for 3 dependencie(s):
    - @stylistic/eslint-plugin  ^2.11.0  →  ^2.12.1
+   - esbuild                   ^0.24.0  →  ^0.24.1
    - eslint                    ^9.15.0  →  ^9.17.0
 
 2. ESLint issues:
@@ -3013,9 +3007,10 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
 ### [MMM-GoogleAssistant by bugsounet](https://github.com/bugsounet/MMM-GoogleAssistant)
 
 1. Issues are not enabled in the GitHub repository. So users cannot report bugs. Please enable issues in your repo.
-2. Information: There are updates for 4 dependencie(s):
+2. Information: There are updates for 5 dependencie(s):
    - @grpc/grpc-js              ^1.12.4  →   ^1.12.5
    - @stylistic/eslint-plugin   ^2.11.0  →   ^2.12.1
+   - esbuild                    ^0.24.0  →   ^0.24.1
    - eslint                     ^9.16.0  →   ^9.17.0
    - sweetalert2               ^11.14.5  →  ^11.15.2
 
@@ -3123,9 +3118,10 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
 
 1. Recommendation: Found `axios` in file `GooglePhotosLib.js`: Replace it with built-in fetch.
 2. Recommendation: Found `axios` in file `package.json`: Replace it with built-in fetch.
-3. Information: There are updates for 3 dependencie(s):
+3. Information: There are updates for 4 dependencie(s):
    - @stylistic/eslint-plugin  ^2.10.1  →  ^2.12.1
    - axios                      ^1.7.7  →   ^1.7.9
+   - esbuild                   ^0.24.0  →  ^0.24.1
    - eslint                    ^9.15.0  →  ^9.17.0
 
 
@@ -3750,18 +3746,6 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
 10. Warning: No LICENSE file.
 11. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
 
-### [MMM-iFrame by alberttwong](https://github.com/alberttwong/MMM-iFrame)
-
-1. No image found.
-2. Module is archived, but not marked as outdated in the official module list.
-3. Typo: Found `Magic Mirror` in file `MMM-iFrame.js`: Replace it with `MagicMirror²`.
-4. Typo: Found `[MagicMirror]` in file `README.md`: Replace it with `[MagicMirror²]`.
-5. Outdated: Found `MichMich/MagicMirror` in file `README.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
-6. Recommendation: The README seems not to have an install instruction (the words 'install' or 'installation' are missing). Please add one.
-7. Typo: Found `Magic Mirror` in file `package.json`: Replace it with `MagicMirror²`.
-8. Warning: No LICENSE file.
-9. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
-
 ### [MMM-iFrame-GSlides by jharttech](https://github.com/jharttech/MMM-iFrame-GSlides)
 
 1. There is no `package.json`. We need this file to gather information about the module for the module list page.
@@ -4306,8 +4290,9 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
 
 ### [EXT-Keyboard by bugsounet](https://github.com/bugsounet/EXT-Keyboard)
 
-1. Information: There are updates for 2 dependencie(s):
+1. Information: There are updates for 3 dependencie(s):
    - @stylistic/eslint-plugin  ^2.11.0  →  ^2.12.1
+   - esbuild                   ^0.24.0  →  ^0.24.1
    - eslint                    ^9.15.0  →  ^9.17.0
 
 2. ESLint issues:
@@ -4441,7 +4426,7 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
 1. Information: There are updates for 7 dependencie(s):
    - @eslint/js                ^8.57.0  →  ^9.17.0
    - @stylistic/eslint-plugin   ^1.8.1  →  ^2.12.1
-   - esbuild                   ^0.22.0  →  ^0.24.0
+   - esbuild                   ^0.22.0  →  ^0.24.1
    - eslint                    ^8.57.0  →  ^9.17.0
    - eslint-plugin-import      ^2.29.1  →  ^2.31.0
    - glob                      ^10.4.2  →  ^11.0.0
@@ -4961,8 +4946,9 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
 
 ### [MMM-MeteoFrance by bugsounet](https://github.com/bugsounet/MMM-MeteoFrance)
 
-1. Information: There are updates for 2 dependencie(s):
+1. Information: There are updates for 3 dependencie(s):
    - @stylistic/eslint-plugin  ^2.11.0  →  ^2.12.1
+   - esbuild                   ^0.24.0  →  ^0.24.1
    - eslint                    ^9.15.0  →  ^9.17.0
 
 2. ESLint issues:
@@ -5701,8 +5687,9 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
 ### [EXT-MusicPlayer by bugsounet](https://github.com/bugsounet/EXT-MusicPlayer)
 
 1. Recommendation: Found `https://cdnjs.cloudflare.com` in file `EXT-MusicPlayer.js`: It looks like a package is loaded via CDN. It would be better if the package were installed locally via npm.
-2. Information: There are updates for 2 dependencie(s):
+2. Information: There are updates for 3 dependencie(s):
    - @stylistic/eslint-plugin  ^2.10.1  →  ^2.12.1
+   - esbuild                   ^0.24.0  →  ^0.24.1
    - eslint                    ^9.15.0  →  ^9.17.0
 
 
@@ -6093,8 +6080,9 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
 
 ### [MMM-NetatmoThermostat by bugsounet](https://github.com/bugsounet/MMM-NetatmoThermostat)
 
-1. Information: There are updates for 2 dependencie(s):
+1. Information: There are updates for 3 dependencie(s):
    - @stylistic/eslint-plugin  ^2.11.0  →  ^2.12.1
+   - esbuild                   ^0.24.0  →  ^0.24.1
    - eslint                    ^9.15.0  →  ^9.17.0
 
 2. ESLint issues:
@@ -6845,8 +6833,9 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
 
 ### [EXT-Pages by bugsounet](https://github.com/bugsounet/EXT-Pages)
 
-1. Information: There are updates for 2 dependencie(s):
+1. Information: There are updates for 3 dependencie(s):
    - @stylistic/eslint-plugin  ^2.10.1  →  ^2.12.1
+   - esbuild                   ^0.24.0  →  ^0.24.1
    - eslint                    ^9.15.0  →  ^9.17.0
 
 2. ESLint issues:
@@ -7056,8 +7045,9 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
 
 ### [EXT-Photos by bugsounet](https://github.com/bugsounet/EXT-Photos)
 
-1. Information: There are updates for 2 dependencie(s):
+1. Information: There are updates for 3 dependencie(s):
    - @stylistic/eslint-plugin  ^2.10.1  →  ^2.12.1
+   - esbuild                   ^0.24.0  →  ^0.24.1
    - eslint                    ^9.15.0  →  ^9.17.0
 
 2. ESLint issues:
@@ -7115,8 +7105,9 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
 
 ### [MMM-Pir by bugsounet](https://github.com/bugsounet/MMM-Pir)
 
-1. Information: There are updates for 2 dependencie(s):
+1. Information: There are updates for 3 dependencie(s):
    - @stylistic/eslint-plugin  ^2.11.0  →  ^2.12.1
+   - esbuild                   ^0.24.0  →  ^0.24.1
    - eslint                    ^9.16.0  →  ^9.17.0
 
 2. ESLint issues:
@@ -7423,6 +7414,11 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
 
 1. `package.json` issue: No repository field.
 2. Recommendation: Found `new Date()` in file `MMM-PrixCarburants.js`: Consider replacing it by `new Date(Date.now())`. It's helpful for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
+3. Information: There are updates for 3 dependencie(s):
+   - @stylistic/eslint-plugin  ^2.11.0  →  ^2.12.1
+   - esbuild                   ^0.24.0  →  ^0.24.1
+   - eslint                    ^9.15.0  →  ^9.17.0
+
 
 ### [MMM-profile by kurtern84](https://github.com/kurtern84/MMM-profile)
 
@@ -7615,8 +7611,9 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
 
 ### [EXT-RadioPlayer by bugsounet](https://github.com/bugsounet/EXT-RadioPlayer)
 
-1. Information: There are updates for 2 dependencie(s):
+1. Information: There are updates for 3 dependencie(s):
    - @stylistic/eslint-plugin  ^2.10.1  →  ^2.12.1
+   - esbuild                   ^0.24.0  →  ^0.24.1
    - eslint                    ^9.15.0  →  ^9.17.0
 
 2. ESLint issues:
@@ -8179,8 +8176,9 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
 ### [MMM-Saint by bugsounet](https://github.com/bugsounet/MMM-Saint)
 
 1. Typo: Found `Magic Mirror` in file `MMM-Saint.css`: Replace it with `MagicMirror²`.
-2. Information: There are updates for 2 dependencie(s):
+2. Information: There are updates for 3 dependencie(s):
    - @stylistic/eslint-plugin  ^2.11.0  →  ^2.12.1
+   - esbuild                   ^0.24.0  →  ^0.24.1
    - eslint                    ^9.15.0  →  ^9.17.0
 
 
@@ -8217,8 +8215,9 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
 ### [EXT-Screen by bugsounet](https://github.com/bugsounet/EXT-Screen)
 
 1. Issues are not enabled in the GitHub repository. So users cannot report bugs. Please enable issues in your repo.
-2. Information: There are updates for 2 dependencie(s):
+2. Information: There are updates for 3 dependencie(s):
    - @stylistic/eslint-plugin  ^2.10.1  →  ^2.12.1
+   - esbuild                   ^0.24.0  →  ^0.24.1
    - eslint                    ^9.15.0  →  ^9.17.0
 
 
@@ -8626,8 +8625,9 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
 
 ### [EXT-SmartHome by bugsounet](https://github.com/bugsounet/EXT-SmartHome)
 
-1. Information: There are updates for 2 dependencie(s):
+1. Information: There are updates for 3 dependencie(s):
    - @stylistic/eslint-plugin  ^2.10.1  →  ^2.12.1
+   - esbuild                   ^0.24.0  →  ^0.24.1
    - eslint                    ^9.15.0  →  ^9.17.0
 
 2. ESLint issues:
@@ -8899,8 +8899,9 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
 
 ### [EXT-Spotify by bugsounet](https://github.com/bugsounet/EXT-Spotify)
 
-1. Information: There are updates for 3 dependencie(s):
+1. Information: There are updates for 4 dependencie(s):
    - @stylistic/eslint-plugin  ^2.11.0  →  ^2.12.1
+   - esbuild                   ^0.24.0  →  ^0.24.1
    - eslint                    ^9.15.0  →  ^9.17.0
    - express                   ^4.21.1  →  ^4.21.2
 
@@ -9034,9 +9035,10 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
 
 ### [EXT-StreamDeck by bugsounet](https://github.com/bugsounet/EXT-StreamDeck)
 
-1. Information: There are updates for 4 dependencie(s):
+1. Information: There are updates for 5 dependencie(s):
    - @elgato-stream-deck/node    ^6.2.2  →   ^7.1.2
    - @stylistic/eslint-plugin   ^2.10.1  →  ^2.12.1
+   - esbuild                    ^0.24.0  →  ^0.24.1
    - eslint                     ^9.15.0  →  ^9.17.0
    - jimp                      ^0.22.12  →   ^1.6.0
 
@@ -9284,8 +9286,9 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
 
 ### [EXT-TelegramBot by bugsounet](https://github.com/bugsounet/EXT-TelegramBot)
 
-1. Information: There are updates for 3 dependencie(s):
+1. Information: There are updates for 4 dependencie(s):
    - @stylistic/eslint-plugin    ^2.11.0  →  ^2.12.1
+   - esbuild                     ^0.24.0  →  ^0.24.1
    - eslint                      ^9.16.0  →  ^9.17.0
    - eslint-plugin-package-json  ^0.17.0  →  ^0.18.0
 
@@ -9585,6 +9588,11 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
 
 1. Recommendation: The README seems not to have an update instruction (the word 'update' is missing). Please add one.
 2. Recommendation: The README seems not to have an install instruction (the words 'install' or 'installation' are missing). Please add one.
+3. Information: There are updates for 3 dependencie(s):
+   - @stylistic/eslint-plugin  ^2.11.0  →  ^2.12.1
+   - esbuild                   ^0.24.0  →  ^0.24.1
+   - eslint                    ^9.15.0  →  ^9.17.0
+
 
 ### [MMM-Touch by gfischershaw](https://github.com/gfischershaw/MMM-Touch)
 
@@ -9933,8 +9941,9 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
 
 ### [EXT-Updates by bugsounet](https://github.com/bugsounet/EXT-Updates)
 
-1. Information: There are updates for 2 dependencie(s):
+1. Information: There are updates for 3 dependencie(s):
    - @stylistic/eslint-plugin  ^2.11.0  →  ^2.12.1
+   - esbuild                   ^0.24.0  →  ^0.24.1
    - eslint                    ^9.15.0  →  ^9.17.0
 
 2. ESLint issues:
@@ -10097,8 +10106,9 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
 
 ### [EXT-VLCServer by bugsounet](https://github.com/bugsounet/EXT-VLCServer)
 
-1. Information: There are updates for 2 dependencie(s):
+1. Information: There are updates for 3 dependencie(s):
    - @stylistic/eslint-plugin  ^2.11.0  →  ^2.12.1
+   - esbuild                   ^0.24.0  →  ^0.24.1
    - eslint                    ^9.15.0  →  ^9.17.0
 
 2. ESLint issues:
@@ -10171,8 +10181,9 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
 
 ### [EXT-Volume by bugsounet](https://github.com/bugsounet/EXT-Volume)
 
-1. Information: There are updates for 2 dependencie(s):
+1. Information: There are updates for 3 dependencie(s):
    - @stylistic/eslint-plugin  ^2.11.0  →  ^2.12.1
+   - esbuild                   ^0.24.0  →  ^0.24.1
    - eslint                    ^9.15.0  →  ^9.17.0
 
 2. ESLint issues:
@@ -10478,8 +10489,9 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
 ### [EXT-Welcome by bugsounet](https://github.com/bugsounet/EXT-Welcome)
 
 1. No image found.
-2. Information: There are updates for 2 dependencie(s):
+2. Information: There are updates for 3 dependencie(s):
    - @stylistic/eslint-plugin  ^2.11.0  →  ^2.12.1
+   - esbuild                   ^0.24.0  →  ^0.24.1
    - eslint                    ^9.15.0  →  ^9.17.0
 
 
@@ -10765,8 +10777,9 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
 
 ### [EXT-YouTube by bugsounet](https://github.com/bugsounet/EXT-YouTube)
 
-1. Information: There are updates for 2 dependencie(s):
+1. Information: There are updates for 3 dependencie(s):
    - @stylistic/eslint-plugin  ^2.11.0  →  ^2.12.1
+   - esbuild                   ^0.24.0  →  ^0.24.1
    - eslint                    ^9.15.0  →  ^9.17.0
 
 2. ESLint issues:
@@ -10793,8 +10806,9 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
 
 ### [EXT-YouTubeCast by bugsounet](https://github.com/bugsounet/EXT-YouTubeCast)
 
-1. Information: There are updates for 2 dependencie(s):
+1. Information: There are updates for 3 dependencie(s):
    - @stylistic/eslint-plugin  ^2.11.0  →  ^2.12.1
+   - esbuild                   ^0.24.0  →  ^0.24.1
    - eslint                    ^9.15.0  →  ^9.17.0
 
 2. ESLint issues:

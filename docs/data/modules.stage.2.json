@@ -3465,13 +3465,14 @@
   },
   {
     "name": "MMM-FiElectricityPrice",
-    "category": "Finance",
+    "category": "Outdated Modules",
     "url": "https://github.com/jannekalliola/MMM-FiElectricityPrice",
     "id": "jannekalliola/MMM-FiElectricityPrice",
     "maintainer": "jannekalliola",
     "maintainerURL": "",
     "description": "Display Finnish electricity prices from Nord Pool.",
     "issues": [],
+    "outdated": "Deprecated. Use MMM-EUElectricityPrice instead. Repo has been archived at 2024-10-30.",
     "stars": 4,
     "isArchived": true
   },
@@ -5188,13 +5189,14 @@
   },
   {
     "name": "MMM-iFrame",
-    "category": "Utility / IoT / 3rd Party / Integration",
+    "category": "Outdated Modules",
     "url": "https://github.com/alberttwong/MMM-iFrame",
     "id": "alberttwong/MMM-iFrame",
     "maintainer": "alberttwong",
     "maintainerURL": "",
     "description": "A simple way to add an iFrame of any web content. Supports multiple URLs and will rotate between them. Works with static pages or streams like Nest Cam, D-Link Cameras, Twitch.tv, YouTube and more.",
     "issues": [],
+    "outdated": "Abandoned. Repo has been archived at 2024-18-24.",
     "stars": 57,
     "isArchived": true
   },

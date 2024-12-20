@@ -4864,18 +4864,19 @@
   },
   {
     "name": "MMM-FiElectricityPrice",
-    "category": "Finance",
+    "category": "Outdated Modules",
     "url": "https://github.com/jannekalliola/MMM-FiElectricityPrice",
     "id": "jannekalliola/MMM-FiElectricityPrice",
     "maintainer": "jannekalliola",
     "maintainerURL": "",
     "description": "Display Finnish electricity prices from Nord Pool.",
-    "issues": true,
+    "issues": false,
+    "outdated": "Deprecated. Use MMM-EUElectricityPrice instead. Repo has been archived at 2024-10-30.",
     "stars": 4,
     "isArchived": true,
     "license": "MIT",
     "image": "fielectricityprice.jpg",
-    "defaultSortWeight": 809,
+    "defaultSortWeight": 900,
     "lastCommit": "2024-10-30T16:20:50+02:00"
   },
   {
@@ -7257,20 +7258,21 @@
   },
   {
     "name": "MMM-iFrame",
-    "category": "Utility / IoT / 3rd Party / Integration",
+    "category": "Outdated Modules",
     "url": "https://github.com/alberttwong/MMM-iFrame",
     "id": "alberttwong/MMM-iFrame",
     "maintainer": "alberttwong",
     "maintainerURL": "",
     "description": "A simple way to add an iFrame of any web content. Supports multiple URLs and will rotate between them. Works with static pages or streams like Nest Cam, D-Link Cameras, Twitch.tv, YouTube and more.",
-    "issues": true,
+    "issues": false,
+    "outdated": "Abandoned. Repo has been archived at 2024-18-24.",
     "stars": 57,
     "isArchived": true,
     "tags": [
       "iframe"
     ],
     "license": "MIT",
-    "defaultSortWeight": 809,
+    "defaultSortWeight": 901,
     "lastCommit": "2021-03-02T10:41:30-08:00"
   },
   {
@@ -14045,7 +14047,7 @@
       "carburant"
     ],
     "image": "screenshot.jpg",
-    "defaultSortWeight": 1,
+    "defaultSortWeight": 2,
     "lastCommit": "2024-11-20T22:59:35+01:00"
   },
   {
@@ -18082,7 +18084,7 @@
       "touch"
     ],
     "image": "resources-google.jpg",
-    "defaultSortWeight": 4,
+    "defaultSortWeight": 5,
     "lastCommit": "2024-11-19T19:45:31+01:00"
   },
   {
