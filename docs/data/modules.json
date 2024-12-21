@@ -905,7 +905,7 @@
     "maintainerURL": "",
     "description": "Display stock prices and charts using Yahoo Finance API.",
     "issues": true,
-    "stars": 39,
+    "stars": 41,
     "license": "MIT",
     "tags": [
       "stock",
@@ -959,14 +959,14 @@
     "maintainerURL": "",
     "description": "Show fullscreen slideshow in background from images in a local folder. Great for a photo frame.",
     "issues": true,
-    "stars": 149,
+    "stars": 153,
     "license": "MIT",
     "tags": [
       "background",
       "slideshow"
     ],
     "image": "exampleImages-1.jpg",
-    "defaultSortWeight": 0,
+    "defaultSortWeight": -1,
     "lastCommit": "2024-12-11T13:45:06-07:00"
   },
   {
@@ -15038,7 +15038,7 @@
     "license": "MIT",
     "image": "screenshot.jpg",
     "defaultSortWeight": 5,
-    "lastCommit": "2024-11-19T16:50:32-06:00"
+    "lastCommit": "2024-12-20T16:53:47-06:00"
   },
   {
     "name": "MMM-RKI-Covid19",
@@ -16040,7 +16040,7 @@
     "maintainerURL": "",
     "description": "Displays a Shul's schedule from ShulCloud.",
     "issues": true,
-    "stars": 0,
+    "stars": 1,
     "license": "MIT",
     "image": "image.jpg",
     "defaultSortWeight": 6,
@@ -16774,7 +16774,7 @@
     "maintainerURL": "",
     "description": "Displays the next scheduled spacecraft launch - Global launches.",
     "issues": true,
-    "stars": 0,
+    "stars": 1,
     "license": "MIT",
     "image": "MMM-SpaceLaunch.jpg",
     "defaultSortWeight": 2,

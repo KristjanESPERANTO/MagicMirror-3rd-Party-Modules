@@ -620,7 +620,7 @@
     "maintainerURL": "",
     "description": "Display stock prices and charts using Yahoo Finance API.",
     "issues": [],
-    "stars": 39,
+    "stars": 41,
     "license": "MIT"
   },
   {
@@ -657,7 +657,7 @@
     "maintainerURL": "",
     "description": "Show fullscreen slideshow in background from images in a local folder. Great for a photo frame.",
     "issues": [],
-    "stars": 149,
+    "stars": 153,
     "license": "MIT"
   },
   {
@@ -11429,7 +11429,7 @@
     "maintainerURL": "",
     "description": "Displays a Shul's schedule from ShulCloud.",
     "issues": [],
-    "stars": 0,
+    "stars": 1,
     "license": "MIT"
   },
   {
@@ -11932,7 +11932,7 @@
     "maintainerURL": "",
     "description": "Displays the next scheduled spacecraft launch - Global launches.",
     "issues": [],
-    "stars": 0,
+    "stars": 1,
     "license": "MIT"
   },
   {

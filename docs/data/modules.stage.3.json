@@ -878,7 +878,7 @@
     "maintainerURL": "",
     "description": "Display stock prices and charts using Yahoo Finance API.",
     "issues": [],
-    "stars": 39,
+    "stars": 41,
     "license": "MIT",
     "tags": [
       "stock",
@@ -928,7 +928,7 @@
     "maintainerURL": "",
     "description": "Show fullscreen slideshow in background from images in a local folder. Great for a photo frame.",
     "issues": [],
-    "stars": 149,
+    "stars": 153,
     "license": "MIT",
     "tags": [
       "background",
@@ -15843,7 +15843,7 @@
     "issues": [
       "There is no `package.json`. We need this file to gather information about the module for the module list page."
     ],
-    "stars": 0,
+    "stars": 1,
     "license": "MIT",
     "image": "image.jpg"
   },
@@ -16551,7 +16551,7 @@
     "issues": [
       "There is no `package.json`. We need this file to gather information about the module for the module list page."
     ],
-    "stars": 0,
+    "stars": 1,
     "license": "MIT",
     "image": "MMM-SpaceLaunch.jpg"
   },

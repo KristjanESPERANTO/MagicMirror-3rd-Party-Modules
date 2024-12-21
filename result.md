@@ -1,6 +1,6 @@
 # Result of the module analysis
 
-Last update: 2024-12-20T17:39:14+01:00
+Last update: 2024-12-21T05:39:11+01:00
 
 ## Statistics
 
@@ -499,7 +499,7 @@ Last update: 2024-12-20T17:39:14+01:00
 
 1. Information: There are updates for 3 dependencie(s):
    - @stylistic/eslint-plugin  ^2.11.0  →  ^2.12.1
-   - esbuild                   ^0.24.0  →  ^0.24.1
+   - esbuild                   ^0.24.0  →  ^0.24.2
    - eslint                    ^9.15.0  →  ^9.17.0
 
 2. ESLint issues:
@@ -781,7 +781,7 @@ Last update: 2024-12-20T17:39:14+01:00
    - eslint                              ^8.57.0  →   ^9.17.0
    - eslint-plugin-prettier               ^5.1.3  →    ^5.2.1
    - prettier                             ^3.2.5  →    ^3.4.2
-   - rollup                               ^4.9.6  →   ^4.28.1
+   - rollup                               ^4.9.6  →   ^4.29.0
    - rollup-plugin-banner2                ^1.2.2  →    ^1.3.1
    - rxjs                                 ^7.5.5  →    ^7.8.1
    - typescript                           ^5.3.3  →    ^5.7.2
@@ -850,7 +850,7 @@ Last update: 2024-12-20T17:39:14+01:00
 
 1. Information: There are updates for 3 dependencie(s):
    - @stylistic/eslint-plugin  ^2.11.0  →  ^2.12.1
-   - esbuild                   ^0.24.0  →  ^0.24.1
+   - esbuild                   ^0.24.0  →  ^0.24.2
    - eslint                    ^9.15.0  →  ^9.17.0
 
 2. ESLint issues:
@@ -1760,7 +1760,7 @@ Last update: 2024-12-20T17:39:14+01:00
 1. Information: There are updates for 4 dependencie(s):
    - @stylistic/eslint-plugin   ^2.11.0  →   ^2.12.1
    - @types/node               ^22.10.1  →  ^22.10.2
-   - esbuild                    ^0.24.0  →   ^0.24.1
+   - esbuild                    ^0.24.0  →   ^0.24.2
    - eslint                     ^9.16.0  →   ^9.17.0
 
 2. ESLint issues:
@@ -2651,7 +2651,7 @@ deprecated: no longer maintained, switch to modern iconify-icon web component
 
 1. Information: There are updates for 3 dependencie(s):
    - @stylistic/eslint-plugin  ^2.11.0  →  ^2.12.1
-   - esbuild                   ^0.24.0  →  ^0.24.1
+   - esbuild                   ^0.24.0  →  ^0.24.2
    - eslint                    ^9.16.0  →  ^9.17.0
 
 2. ESLint issues:
@@ -2667,7 +2667,7 @@ deprecated: no longer maintained, switch to modern iconify-icon web component
 3. Information: There are updates for 4 dependencie(s):
    - @stylistic/eslint-plugin  ^2.11.0  →  ^2.12.1
    - axios                      ^1.7.7  →   ^1.7.9
-   - esbuild                   ^0.24.0  →  ^0.24.1
+   - esbuild                   ^0.24.0  →  ^0.24.2
    - eslint                    ^9.15.0  →  ^9.17.0
 
 
@@ -2690,7 +2690,7 @@ deprecated: no longer maintained, switch to modern iconify-icon web component
 
 1. Information: There are updates for 3 dependencie(s):
    - @stylistic/eslint-plugin  ^2.11.0  →  ^2.12.1
-   - esbuild                   ^0.24.0  →  ^0.24.1
+   - esbuild                   ^0.24.0  →  ^0.24.2
    - eslint                    ^9.15.0  →  ^9.17.0
 
 2. ESLint issues:
@@ -2936,7 +2936,7 @@ deprecated: no longer maintained, switch to modern iconify-icon web component
 
 1. Information: There are updates for 3 dependencie(s):
    - @stylistic/eslint-plugin  ^2.11.0  →  ^2.12.1
-   - esbuild                   ^0.24.0  →  ^0.24.1
+   - esbuild                   ^0.24.0  →  ^0.24.2
    - eslint                    ^9.15.0  →  ^9.17.0
 
 2. ESLint issues:
@@ -3010,7 +3010,7 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
 2. Information: There are updates for 5 dependencie(s):
    - @grpc/grpc-js              ^1.12.4  →   ^1.12.5
    - @stylistic/eslint-plugin   ^2.11.0  →   ^2.12.1
-   - esbuild                    ^0.24.0  →   ^0.24.1
+   - esbuild                    ^0.24.0  →   ^0.24.2
    - eslint                     ^9.16.0  →   ^9.17.0
    - sweetalert2               ^11.14.5  →  ^11.15.2
 
@@ -3121,7 +3121,7 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
 3. Information: There are updates for 4 dependencie(s):
    - @stylistic/eslint-plugin  ^2.10.1  →  ^2.12.1
    - axios                      ^1.7.7  →   ^1.7.9
-   - esbuild                   ^0.24.0  →  ^0.24.1
+   - esbuild                   ^0.24.0  →  ^0.24.2
    - eslint                    ^9.15.0  →  ^9.17.0
 
 
@@ -4090,7 +4090,7 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
    - eslint                            ^8.56.0  →  ^9.17.0
    - eslint-plugin-prettier             ^5.1.3  →   ^5.2.1
    - prettier                           ^3.2.4  →   ^3.4.2
-   - rollup                             ^4.9.6  →  ^4.28.1
+   - rollup                             ^4.9.6  →  ^4.29.0
    - rollup-plugin-banner2              ^1.2.2  →   ^1.3.1
    - typescript                         ^5.3.3  →   ^5.7.2
    - yahoo-finance2                    ^2.11.3  →  ^2.13.2
@@ -4292,7 +4292,7 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
 
 1. Information: There are updates for 3 dependencie(s):
    - @stylistic/eslint-plugin  ^2.11.0  →  ^2.12.1
-   - esbuild                   ^0.24.0  →  ^0.24.1
+   - esbuild                   ^0.24.0  →  ^0.24.2
    - eslint                    ^9.15.0  →  ^9.17.0
 
 2. ESLint issues:
@@ -4426,7 +4426,7 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
 1. Information: There are updates for 7 dependencie(s):
    - @eslint/js                ^8.57.0  →  ^9.17.0
    - @stylistic/eslint-plugin   ^1.8.1  →  ^2.12.1
-   - esbuild                   ^0.22.0  →  ^0.24.1
+   - esbuild                   ^0.22.0  →  ^0.24.2
    - eslint                    ^8.57.0  →  ^9.17.0
    - eslint-plugin-import      ^2.29.1  →  ^2.31.0
    - glob                      ^10.4.2  →  ^11.0.0
@@ -4948,7 +4948,7 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
 
 1. Information: There are updates for 3 dependencie(s):
    - @stylistic/eslint-plugin  ^2.11.0  →  ^2.12.1
-   - esbuild                   ^0.24.0  →  ^0.24.1
+   - esbuild                   ^0.24.0  →  ^0.24.2
    - eslint                    ^9.15.0  →  ^9.17.0
 
 2. ESLint issues:
@@ -5689,7 +5689,7 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
 1. Recommendation: Found `https://cdnjs.cloudflare.com` in file `EXT-MusicPlayer.js`: It looks like a package is loaded via CDN. It would be better if the package were installed locally via npm.
 2. Information: There are updates for 3 dependencie(s):
    - @stylistic/eslint-plugin  ^2.10.1  →  ^2.12.1
-   - esbuild                   ^0.24.0  →  ^0.24.1
+   - esbuild                   ^0.24.0  →  ^0.24.2
    - eslint                    ^9.15.0  →  ^9.17.0
 
 
@@ -6082,7 +6082,7 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
 
 1. Information: There are updates for 3 dependencie(s):
    - @stylistic/eslint-plugin  ^2.11.0  →  ^2.12.1
-   - esbuild                   ^0.24.0  →  ^0.24.1
+   - esbuild                   ^0.24.0  →  ^0.24.2
    - eslint                    ^9.15.0  →  ^9.17.0
 
 2. ESLint issues:
@@ -6268,7 +6268,7 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
    - @typescript-eslint/eslint-plugin  ^6.20.0  →  ^8.18.1
    - eslint                            ^8.56.0  →  ^9.17.0
    - prettier                           ^3.2.5  →   ^3.4.2
-   - rollup                             ^4.9.6  →  ^4.28.1
+   - rollup                             ^4.9.6  →  ^4.29.0
    - rollup-plugin-banner2              ^1.2.2  →   ^1.3.1
    - typescript                         ^5.3.3  →   ^5.7.2
 
@@ -6835,7 +6835,7 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
 
 1. Information: There are updates for 3 dependencie(s):
    - @stylistic/eslint-plugin  ^2.10.1  →  ^2.12.1
-   - esbuild                   ^0.24.0  →  ^0.24.1
+   - esbuild                   ^0.24.0  →  ^0.24.2
    - eslint                    ^9.15.0  →  ^9.17.0
 
 2. ESLint issues:
@@ -7047,7 +7047,7 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
 
 1. Information: There are updates for 3 dependencie(s):
    - @stylistic/eslint-plugin  ^2.10.1  →  ^2.12.1
-   - esbuild                   ^0.24.0  →  ^0.24.1
+   - esbuild                   ^0.24.0  →  ^0.24.2
    - eslint                    ^9.15.0  →  ^9.17.0
 
 2. ESLint issues:
@@ -7107,7 +7107,7 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
 
 1. Information: There are updates for 3 dependencie(s):
    - @stylistic/eslint-plugin  ^2.11.0  →  ^2.12.1
-   - esbuild                   ^0.24.0  →  ^0.24.1
+   - esbuild                   ^0.24.0  →  ^0.24.2
    - eslint                    ^9.16.0  →  ^9.17.0
 
 2. ESLint issues:
@@ -7416,7 +7416,7 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
 2. Recommendation: Found `new Date()` in file `MMM-PrixCarburants.js`: Consider replacing it by `new Date(Date.now())`. It's helpful for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
 3. Information: There are updates for 3 dependencie(s):
    - @stylistic/eslint-plugin  ^2.11.0  →  ^2.12.1
-   - esbuild                   ^0.24.0  →  ^0.24.1
+   - esbuild                   ^0.24.0  →  ^0.24.2
    - eslint                    ^9.15.0  →  ^9.17.0
 
 
@@ -7613,7 +7613,7 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
 
 1. Information: There are updates for 3 dependencie(s):
    - @stylistic/eslint-plugin  ^2.10.1  →  ^2.12.1
-   - esbuild                   ^0.24.0  →  ^0.24.1
+   - esbuild                   ^0.24.0  →  ^0.24.2
    - eslint                    ^9.15.0  →  ^9.17.0
 
 2. ESLint issues:
@@ -7647,7 +7647,7 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
    - @rollup/plugin-typescript    ^11.1.6  →  ^12.1.2
    - eslint                        ^9.9.1  →  ^9.17.0
    - prettier                      ^3.3.3  →   ^3.4.2
-   - rollup                       ^4.21.1  →  ^4.28.1
+   - rollup                       ^4.21.1  →  ^4.29.0
    - rollup-plugin-banner2         ^1.3.0  →   ^1.3.1
    - typescript                    ^5.5.4  →   ^5.7.2
    - typescript-eslint             ^8.3.0  →  ^8.18.1
@@ -8178,7 +8178,7 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
 1. Typo: Found `Magic Mirror` in file `MMM-Saint.css`: Replace it with `MagicMirror²`.
 2. Information: There are updates for 3 dependencie(s):
    - @stylistic/eslint-plugin  ^2.11.0  →  ^2.12.1
-   - esbuild                   ^0.24.0  →  ^0.24.1
+   - esbuild                   ^0.24.0  →  ^0.24.2
    - eslint                    ^9.15.0  →  ^9.17.0
 
 
@@ -8217,7 +8217,7 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
 1. Issues are not enabled in the GitHub repository. So users cannot report bugs. Please enable issues in your repo.
 2. Information: There are updates for 3 dependencie(s):
    - @stylistic/eslint-plugin  ^2.10.1  →  ^2.12.1
-   - esbuild                   ^0.24.0  →  ^0.24.1
+   - esbuild                   ^0.24.0  →  ^0.24.2
    - eslint                    ^9.15.0  →  ^9.17.0
 
 
@@ -8627,7 +8627,7 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
 
 1. Information: There are updates for 3 dependencie(s):
    - @stylistic/eslint-plugin  ^2.10.1  →  ^2.12.1
-   - esbuild                   ^0.24.0  →  ^0.24.1
+   - esbuild                   ^0.24.0  →  ^0.24.2
    - eslint                    ^9.15.0  →  ^9.17.0
 
 2. ESLint issues:
@@ -8901,7 +8901,7 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
 
 1. Information: There are updates for 4 dependencie(s):
    - @stylistic/eslint-plugin  ^2.11.0  →  ^2.12.1
-   - esbuild                   ^0.24.0  →  ^0.24.1
+   - esbuild                   ^0.24.0  →  ^0.24.2
    - eslint                    ^9.15.0  →  ^9.17.0
    - express                   ^4.21.1  →  ^4.21.2
 
@@ -9038,7 +9038,7 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
 1. Information: There are updates for 5 dependencie(s):
    - @elgato-stream-deck/node    ^6.2.2  →   ^7.1.2
    - @stylistic/eslint-plugin   ^2.10.1  →  ^2.12.1
-   - esbuild                    ^0.24.0  →  ^0.24.1
+   - esbuild                    ^0.24.0  →  ^0.24.2
    - eslint                     ^9.15.0  →  ^9.17.0
    - jimp                      ^0.22.12  →   ^1.6.0
 
@@ -9288,7 +9288,7 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
 
 1. Information: There are updates for 4 dependencie(s):
    - @stylistic/eslint-plugin    ^2.11.0  →  ^2.12.1
-   - esbuild                     ^0.24.0  →  ^0.24.1
+   - esbuild                     ^0.24.0  →  ^0.24.2
    - eslint                      ^9.16.0  →  ^9.17.0
    - eslint-plugin-package-json  ^0.17.0  →  ^0.18.0
 
@@ -9590,7 +9590,7 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
 2. Recommendation: The README seems not to have an install instruction (the words 'install' or 'installation' are missing). Please add one.
 3. Information: There are updates for 3 dependencie(s):
    - @stylistic/eslint-plugin  ^2.11.0  →  ^2.12.1
-   - esbuild                   ^0.24.0  →  ^0.24.1
+   - esbuild                   ^0.24.0  →  ^0.24.2
    - eslint                    ^9.15.0  →  ^9.17.0
 
 
@@ -9943,7 +9943,7 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
 
 1. Information: There are updates for 3 dependencie(s):
    - @stylistic/eslint-plugin  ^2.11.0  →  ^2.12.1
-   - esbuild                   ^0.24.0  →  ^0.24.1
+   - esbuild                   ^0.24.0  →  ^0.24.2
    - eslint                    ^9.15.0  →  ^9.17.0
 
 2. ESLint issues:
@@ -10108,7 +10108,7 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
 
 1. Information: There are updates for 3 dependencie(s):
    - @stylistic/eslint-plugin  ^2.11.0  →  ^2.12.1
-   - esbuild                   ^0.24.0  →  ^0.24.1
+   - esbuild                   ^0.24.0  →  ^0.24.2
    - eslint                    ^9.15.0  →  ^9.17.0
 
 2. ESLint issues:
@@ -10183,7 +10183,7 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
 
 1. Information: There are updates for 3 dependencie(s):
    - @stylistic/eslint-plugin  ^2.11.0  →  ^2.12.1
-   - esbuild                   ^0.24.0  →  ^0.24.1
+   - esbuild                   ^0.24.0  →  ^0.24.2
    - eslint                    ^9.15.0  →  ^9.17.0
 
 2. ESLint issues:
@@ -10491,7 +10491,7 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
 1. No image found.
 2. Information: There are updates for 3 dependencie(s):
    - @stylistic/eslint-plugin  ^2.11.0  →  ^2.12.1
-   - esbuild                   ^0.24.0  →  ^0.24.1
+   - esbuild                   ^0.24.0  →  ^0.24.2
    - eslint                    ^9.15.0  →  ^9.17.0
 
 
@@ -10779,7 +10779,7 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
 
 1. Information: There are updates for 3 dependencie(s):
    - @stylistic/eslint-plugin  ^2.11.0  →  ^2.12.1
-   - esbuild                   ^0.24.0  →  ^0.24.1
+   - esbuild                   ^0.24.0  →  ^0.24.2
    - eslint                    ^9.15.0  →  ^9.17.0
 
 2. ESLint issues:
@@ -10808,7 +10808,7 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
 
 1. Information: There are updates for 3 dependencie(s):
    - @stylistic/eslint-plugin  ^2.11.0  →  ^2.12.1
-   - esbuild                   ^0.24.0  →  ^0.24.1
+   - esbuild                   ^0.24.0  →  ^0.24.2
    - eslint                    ^9.15.0  →  ^9.17.0
 
 2. ESLint issues:
