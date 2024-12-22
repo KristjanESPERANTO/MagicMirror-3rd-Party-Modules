@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "2024-12-22T12:17:45.306Z",
+  "lastUpdate": "2024-12-22T16:30:14.789Z",
   "modules": [
     {
       "name": "MMM-01ZM",
@@ -8425,6 +8425,16 @@
       "maintainer": "lekesako",
       "maintainerURL": "https://github.com/lekesako",
       "description": "Display pollen.fr information for your FR region code.",
+      "issues": []
+    },
+    {
+      "name": "MMM-PollenSwe",
+      "category": "Weather",
+      "url": "https://github.com/cgillinger/MMM-PollenSwe",
+      "id": "cgillinger/MMM-PollenSwe",
+      "maintainer": "cgillinger",
+      "maintainerURL": "https://github.com/cgillinger",
+      "description": "Displays pollen forecast information for Sweden from SMHI. Includes customizable layout and regional forecasts.",
       "issues": []
     },
     {

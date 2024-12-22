@@ -1298,7 +1298,7 @@
     "maintainerURL": "",
     "description": "Extended calendar and event view.",
     "issues": [],
-    "stars": 99,
+    "stars": 100,
     "license": "MIT"
   },
   {
@@ -1310,7 +1310,7 @@
     "maintainerURL": "",
     "description": "Extended calendar and event view.",
     "issues": [],
-    "stars": 58,
+    "stars": 60,
     "license": "MIT"
   },
   {
@@ -1322,7 +1322,7 @@
     "maintainerURL": "",
     "description": "Extended calendar and event view. Show calendar as agenda.",
     "issues": [],
-    "stars": 20,
+    "stars": 21,
     "license": "MIT"
   },
   {
@@ -1334,7 +1334,7 @@
     "maintainerURL": "",
     "description": "Presenting events as daily/weekly journal style.",
     "issues": [],
-    "stars": 7,
+    "stars": 8,
     "license": "MIT"
   },
   {
@@ -1346,7 +1346,7 @@
     "maintainerURL": "",
     "description": "Extended calendar and event view. Show calendar timeline.",
     "issues": [],
-    "stars": 9,
+    "stars": 10,
     "license": "MIT"
   },
   {
@@ -1405,7 +1405,7 @@
     "maintainerURL": "",
     "description": "Display a weekly (n days) calendar view.",
     "issues": [],
-    "stars": 54,
+    "stars": 55,
     "license": "MIT"
   },
   {
@@ -9965,6 +9965,18 @@
     "maintainer": "lekesako",
     "maintainerURL": "https://github.com/lekesako",
     "description": "Display pollen.fr information for your FR region code.",
+    "issues": [],
+    "stars": 0,
+    "license": "MIT"
+  },
+  {
+    "name": "MMM-PollenSwe",
+    "category": "Weather",
+    "url": "https://github.com/cgillinger/MMM-PollenSwe",
+    "id": "cgillinger/MMM-PollenSwe",
+    "maintainer": "cgillinger",
+    "maintainerURL": "https://github.com/cgillinger",
+    "description": "Displays pollen forecast information for Sweden from SMHI. Includes customizable layout and regional forecasts.",
     "issues": [],
     "stars": 0,
     "license": "MIT"

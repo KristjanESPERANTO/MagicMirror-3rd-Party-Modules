@@ -1821,7 +1821,7 @@
     "maintainerURL": "",
     "description": "Extended calendar and event view.",
     "issues": [],
-    "stars": 99,
+    "stars": 100,
     "license": "MIT",
     "tags": [
       "calendar"
@@ -1837,7 +1837,7 @@
     "maintainerURL": "",
     "description": "Extended calendar and event view.",
     "issues": [],
-    "stars": 58,
+    "stars": 60,
     "license": "MIT",
     "tags": [
       "calendar",
@@ -1854,7 +1854,7 @@
     "maintainerURL": "",
     "description": "Extended calendar and event view. Show calendar as agenda.",
     "issues": [],
-    "stars": 20,
+    "stars": 21,
     "license": "MIT",
     "tags": [
       "calendar",
@@ -1873,7 +1873,7 @@
     "issues": [
       "No image found."
     ],
-    "stars": 7,
+    "stars": 8,
     "license": "MIT",
     "tags": [
       "cx3j",
@@ -1892,7 +1892,7 @@
     "issues": [
       "No image found."
     ],
-    "stars": 9,
+    "stars": 10,
     "license": "MIT",
     "tags": [
       "timeline",
@@ -1968,7 +1968,7 @@
     "issues": [
       "There is no `package.json`. We need this file to gather information about the module for the module list page."
     ],
-    "stars": 54,
+    "stars": 55,
     "license": "MIT",
     "image": "screenshots-With calendar title.jpg"
   },
@@ -13830,6 +13830,25 @@
     "stars": 0,
     "license": "MIT",
     "image": "screenshot1.jpg"
+  },
+  {
+    "name": "MMM-PollenSwe",
+    "category": "Weather",
+    "url": "https://github.com/cgillinger/MMM-PollenSwe",
+    "id": "cgillinger/MMM-PollenSwe",
+    "maintainer": "cgillinger",
+    "maintainerURL": "https://github.com/cgillinger",
+    "description": "Displays pollen forecast information for Sweden from SMHI. Includes customizable layout and regional forecasts.",
+    "issues": [],
+    "stars": 0,
+    "license": "MIT",
+    "tags": [
+      "pollen",
+      "sweden",
+      "weather",
+      "allergens"
+    ],
+    "image": "pollenSwe.jpg"
   },
   {
     "name": "MMM-Polly",

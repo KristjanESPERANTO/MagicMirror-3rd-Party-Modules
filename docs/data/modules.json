@@ -423,7 +423,7 @@
     ],
     "image": "public-AlexaLogoGrey.jpg",
     "defaultSortWeight": 4,
-    "lastCommit": "2024-06-19T22:28:53+02:00"
+    "lastCommit": "2024-12-22T16:45:13+01:00"
   },
   {
     "name": "MMM-AlexaOnOff",
@@ -1866,13 +1866,13 @@
     "maintainerURL": "",
     "description": "Extended calendar and event view.",
     "issues": true,
-    "stars": 99,
+    "stars": 100,
     "license": "MIT",
     "tags": [
       "calendar"
     ],
     "image": "docs-Configuration-Views-legend-full-example.jpg",
-    "defaultSortWeight": -1,
+    "defaultSortWeight": -2,
     "lastCommit": "2024-12-06T00:35:23+01:00"
   },
   {
@@ -1884,7 +1884,7 @@
     "maintainerURL": "",
     "description": "Extended calendar and event view.",
     "issues": true,
-    "stars": 58,
+    "stars": 60,
     "license": "MIT",
     "tags": [
       "calendar",
@@ -1903,7 +1903,7 @@
     "maintainerURL": "",
     "description": "Extended calendar and event view. Show calendar as agenda.",
     "issues": true,
-    "stars": 20,
+    "stars": 21,
     "license": "MIT",
     "tags": [
       "calendar",
@@ -1922,7 +1922,7 @@
     "maintainerURL": "",
     "description": "Presenting events as daily/weekly journal style.",
     "issues": true,
-    "stars": 7,
+    "stars": 8,
     "license": "MIT",
     "tags": [
       "cx3j",
@@ -1941,7 +1941,7 @@
     "maintainerURL": "",
     "description": "Extended calendar and event view. Show calendar timeline.",
     "issues": true,
-    "stars": 9,
+    "stars": 10,
     "license": "MIT",
     "tags": [
       "timeline",
@@ -2017,7 +2017,7 @@
     "maintainerURL": "",
     "description": "Display a weekly (n days) calendar view.",
     "issues": true,
-    "stars": 54,
+    "stars": 55,
     "license": "MIT",
     "image": "screenshots-With calendar title.jpg",
     "defaultSortWeight": 12,
@@ -5931,7 +5931,7 @@
       "mirror email"
     ],
     "image": "example1.jpg",
-    "defaultSortWeight": 0,
+    "defaultSortWeight": 1,
     "lastCommit": "2024-01-18T11:21:58-06:00"
   },
   {
@@ -7841,7 +7841,7 @@
     "maintainer": "KristjanESPERANTO",
     "maintainerURL": "",
     "description": "Displays live video from the International Space Station.",
-    "issues": false,
+    "issues": true,
     "stars": 6,
     "license": "MIT",
     "tags": [
@@ -8148,7 +8148,7 @@
       "table"
     ],
     "image": "example1.jpg",
-    "defaultSortWeight": 0,
+    "defaultSortWeight": 1,
     "lastCommit": "2024-07-16T10:59:50+02:00"
   },
   {
@@ -9151,7 +9151,7 @@
       "mover"
     ],
     "image": "img-screen-burn-in.jpg",
-    "defaultSortWeight": 0,
+    "defaultSortWeight": 1,
     "lastCommit": "2024-04-16T13:59:34+02:00"
   },
   {
@@ -10178,7 +10178,7 @@
     "license": "MIT",
     "image": "assets-MMPM-UI-Homepage.jpg",
     "defaultSortWeight": -1,
-    "lastCommit": "2024-12-15T19:49:16-05:00"
+    "lastCommit": "2024-12-22T11:27:42-05:00"
   },
   {
     "name": "MMM-mmpm",
@@ -13993,6 +13993,27 @@
     "lastCommit": "2021-07-25T17:03:06+02:00"
   },
   {
+    "name": "MMM-PollenSwe",
+    "category": "Weather",
+    "url": "https://github.com/cgillinger/MMM-PollenSwe",
+    "id": "cgillinger/MMM-PollenSwe",
+    "maintainer": "cgillinger",
+    "maintainerURL": "https://github.com/cgillinger",
+    "description": "Displays pollen forecast information for Sweden from SMHI. Includes customizable layout and regional forecasts.",
+    "issues": true,
+    "stars": 0,
+    "license": "MIT",
+    "tags": [
+      "pollen",
+      "sweden",
+      "weather",
+      "allergens"
+    ],
+    "image": "pollenSwe.jpg",
+    "defaultSortWeight": 4,
+    "lastCommit": "2024-12-22T14:32:46+01:00"
+  },
+  {
     "name": "MMM-Polly",
     "category": "Voice Control",
     "url": "https://github.com/dgburr/MMM-Polly",
@@ -17091,8 +17112,8 @@
     ],
     "license": "MIT",
     "image": "SRVMA.jpg",
-    "defaultSortWeight": 5,
-    "lastCommit": "2024-12-22T12:40:47+01:00"
+    "defaultSortWeight": 4,
+    "lastCommit": "2024-12-22T14:36:36+01:00"
   },
   {
     "name": "MMM-Star-Metro",
