@@ -928,7 +928,7 @@
     "maintainerURL": "https://github.com/BKeyport",
     "description": "Quick Module to easily move modules up or down for blank space.",
     "issues": [],
-    "stars": 3,
+    "stars": 4,
     "license": "MIT"
   },
   {
@@ -4381,19 +4381,6 @@
     "maintainerURL": "",
     "description": "Displays a google map of an origin and destination.",
     "issues": [],
-    "stars": 22,
-    "license": "GPL-3.0"
-  },
-  {
-    "name": "MMM-googlemaps",
-    "category": "Outdated Modules",
-    "url": "https://github.com/sp4ceman/MMM-googlemaps",
-    "id": "sp4ceman/MMM-googlemaps",
-    "maintainer": "sp4ceman",
-    "maintainerURL": "",
-    "description": "Display an embedded google map between an origin and destination.",
-    "issues": [],
-    "outdated": "Abandoned. No updates since years. But may still work.",
     "stars": 22,
     "license": "GPL-3.0"
   },
@@ -12166,6 +12153,17 @@
     "description": "Displays the latest releases from your favorite spotify artists.",
     "issues": [],
     "stars": 3
+  },
+  {
+    "name": "MMM-SRVMA",
+    "category": "News / Information",
+    "url": "https://github.com/cgillinger/MMM-SRVMA",
+    "id": "cgillinger/MMM-SRVMA",
+    "maintainer": "cgillinger",
+    "maintainerURL": "https://github.com/cgillinger",
+    "description": "Displays real-time Swedish VMA (Viktigt Meddelande till Allmänheten) alerts, including public safety notifications, weather warnings, and emergency updates. Supports Swedish (<code>sv-SE</code>) and English (<code>en-US</code>) localization.",
+    "issues": [],
+    "stars": 0
   },
   {
     "name": "MMM-Star-Metro",

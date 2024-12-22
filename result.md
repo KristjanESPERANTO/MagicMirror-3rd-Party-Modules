@@ -1,6 +1,6 @@
 # Result of the module analysis
 
-Last update: 2024-12-21T22:01:54+01:00
+Last update: 2024-12-22T13:51:47+01:00
 
 ## Statistics
 
@@ -8,9 +8,9 @@ Last update: 2024-12-21T22:01:54+01:00
 |:---------------------|:--------:|
 | modules analyzed     |   1228   |
 | maintainer           |    652   |
-| modules with issues  |   1227   |
-| issues               |   6986   |
-| modules at github    |   1105   |
+| modules with issues  |   1226   |
+| issues               |   6987   |
+| modules at github    |   1106   |
 | modules at gitlab    |     10   |
 | modules at bitbucket |      1   |
 
@@ -4022,16 +4022,6 @@ Last update: 2024-12-21T22:01:54+01:00
 6. Recommendation: Found `new Date()` in file `node_helper.js`: Consider replacing it by `new Date(Date.now())`. It's helpful for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
 7. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
 
-### [MMM-ISS-Live by KristjanESPERANTO](https://github.com/KristjanESPERANTO/MMM-ISS-Live)
-
-1. Information: There are updates for 5 dependencie(s):
-   - @eslint/js                 ^9.16.0  →   ^9.17.0
-   - @stylistic/eslint-plugin   ^2.12.0  →   ^2.12.1
-   - cspell                     ^8.16.1  →   ^8.17.1
-   - eslint                     ^9.16.0  →   ^9.17.0
-   - globals                   ^15.13.0  →  ^15.14.0
-
-
 ### [MMM-ISS-Map by khassel](https://gitlab.com/khassel/MMM-ISS-Map)
 
 1. Recommendation: Found `https://cdn.jsdelivr.net` in file `MMM-ISS-Map.js`: It looks like a package is loaded via CDN. It would be better if the package were installed locally via npm.
@@ -5539,11 +5529,8 @@ Last update: 2024-12-21T22:01:54+01:00
 
 ### [MMM-MPlayer by evroom](https://github.com/evroom/MMM-MPlayer)
 
-1. There is no `package.json`. We need this file to gather information about the module for the module list page.
-2. No image found.
-3. Typo: Found `Magic Mirror` in file `README.md`: Replace it with `MagicMirror²`.
-4. Recommendation: The README seems not to have an update instruction (the word 'update' is missing). Please add one.
-5. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
+1. Recommendation: The README seems not to have an update instruction (the word 'update' is missing). Please add one.
+2. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
 
 ### [MMM-MplayerRadio by Tom-Hirschberger](https://github.com/Tom-Hirschberger/MMM-MplayerRadio)
 
@@ -7092,7 +7079,7 @@ Last update: 2024-12-21T22:01:54+01:00
 2. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
 3. Information: There are updates for 2 dependencie(s):
    - async                ^3.2.5  →    ^3.2.6
-   - systeminformation  ^5.21.24  →  ^5.23.15
+   - systeminformation  ^5.21.24  →  ^5.23.16
 
 
 ### [MMM-ping by fewieden](https://github.com/fewieden/MMM-ping)
@@ -8944,6 +8931,15 @@ Last update: 2024-12-21T22:01:54+01:00
 7. Found directory `node_modules`. This shouldn't be uploaded. Add `node_modules/`to `.gitignore`.
 8. Deprecated: Found `require('request')` in file `node_helper.js`: Replace it with built-in fetch.
 9. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
+
+### [MMM-SRVMA by cgillinger](https://github.com/cgillinger/MMM-SRVMA)
+
+1. Recommendation: Found `new Date()` in file `MMM-SRVMA.js`: Consider replacing it by `new Date(Date.now())`. It's helpful for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
+2. Recommendation: Found `axios` in file `node_helper.js`: Replace it with built-in fetch.
+3. Recommendation: Found `new Date()` in file `node_helper.js`: Consider replacing it by `new Date(Date.now())`. It's helpful for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
+4. Recommendation: Found `axios` in file `package.json`: Replace it with built-in fetch.
+5. Warning: No LICENSE file.
+6. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
 
 ### [MMM-Star-Metro by alexandreLavenant](https://github.com/alexandreLavenant/MMM-Star-Metro)
 

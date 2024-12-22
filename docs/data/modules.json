@@ -1351,7 +1351,7 @@
     "maintainerURL": "https://github.com/BKeyport",
     "description": "Quick Module to easily move modules up or down for blank space.",
     "issues": true,
-    "stars": 3,
+    "stars": 4,
     "license": "MIT",
     "tags": [
       "block",
@@ -6151,21 +6151,6 @@
     "lastCommit": "2016-12-28T23:34:56+02:00"
   },
   {
-    "name": "MMM-googlemaps",
-    "category": "Outdated Modules",
-    "url": "https://github.com/sp4ceman/MMM-googlemaps",
-    "id": "sp4ceman/MMM-googlemaps",
-    "maintainer": "sp4ceman",
-    "maintainerURL": "",
-    "description": "Display an embedded google map between an origin and destination.",
-    "issues": false,
-    "outdated": "Abandoned. No updates since years. But may still work.",
-    "stars": 22,
-    "license": "GPL-3.0",
-    "defaultSortWeight": 901,
-    "lastCommit": "2016-12-28T23:34:56+02:00"
-  },
-  {
     "name": "MMM-GoogleMaps-Tracking",
     "category": "Transport / Travel",
     "url": "https://github.com/MartinGris/MMM-GoogleMaps-Tracking",
@@ -6882,7 +6867,7 @@
     "stars": 1,
     "license": "MIT",
     "defaultSortWeight": 6,
-    "lastCommit": "2024-12-21T10:57:54+01:00"
+    "lastCommit": "2024-12-22T13:05:46+01:00"
   },
   {
     "name": "MMM-homeassistant-sensors",
@@ -7856,7 +7841,7 @@
     "maintainer": "KristjanESPERANTO",
     "maintainerURL": "",
     "description": "Displays live video from the International Space Station.",
-    "issues": true,
+    "issues": false,
     "stars": 6,
     "license": "MIT",
     "tags": [
@@ -10607,8 +10592,15 @@
     "issues": true,
     "stars": 1,
     "license": "MIT",
-    "defaultSortWeight": 4,
-    "lastCommit": "2024-12-16T18:13:51+01:00"
+    "tags": [
+      "mplayer",
+      "video",
+      "rtsp",
+      "stream"
+    ],
+    "image": "screenshot.jpg",
+    "defaultSortWeight": 1,
+    "lastCommit": "2024-12-22T11:00:36+01:00"
   },
   {
     "name": "MMM-MplayerRadio",
@@ -17079,6 +17071,28 @@
     "license": "MIT",
     "defaultSortWeight": 10,
     "lastCommit": "2022-03-28T16:47:12+02:00"
+  },
+  {
+    "name": "MMM-SRVMA",
+    "category": "News / Information",
+    "url": "https://github.com/cgillinger/MMM-SRVMA",
+    "id": "cgillinger/MMM-SRVMA",
+    "maintainer": "cgillinger",
+    "maintainerURL": "https://github.com/cgillinger",
+    "description": "Displays real-time Swedish VMA (Viktigt Meddelande till Allm\u00e4nheten) alerts, including public safety notifications, weather warnings, and emergency updates. Supports Swedish (<code>sv-SE</code>) and English (<code>en-US</code>) localization.",
+    "issues": true,
+    "stars": 0,
+    "tags": [
+      "vma",
+      "alerts",
+      "sweden",
+      "sveriges radio",
+      "public announcements"
+    ],
+    "license": "MIT",
+    "image": "SRVMA.jpg",
+    "defaultSortWeight": 5,
+    "lastCommit": "2024-12-22T12:40:47+01:00"
   },
   {
     "name": "MMM-Star-Metro",

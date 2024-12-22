@@ -1319,7 +1319,7 @@
     "maintainerURL": "https://github.com/BKeyport",
     "description": "Quick Module to easily move modules up or down for blank space.",
     "issues": [],
-    "stars": 3,
+    "stars": 4,
     "license": "MIT",
     "tags": [
       "block",
@@ -6079,22 +6079,6 @@
     "license": "GPL-3.0"
   },
   {
-    "name": "MMM-googlemaps",
-    "category": "Outdated Modules",
-    "url": "https://github.com/sp4ceman/MMM-googlemaps",
-    "id": "sp4ceman/MMM-googlemaps",
-    "maintainer": "sp4ceman",
-    "maintainerURL": "",
-    "description": "Display an embedded google map between an origin and destination.",
-    "issues": [
-      "There is no `package.json`. We need this file to gather information about the module for the module list page.",
-      "No image found."
-    ],
-    "outdated": "Abandoned. No updates since years. But may still work.",
-    "stars": 22,
-    "license": "GPL-3.0"
-  },
-  {
     "name": "MMM-GoogleMaps-Tracking",
     "category": "Transport / Travel",
     "url": "https://github.com/MartinGris/MMM-GoogleMaps-Tracking",
@@ -10495,12 +10479,16 @@
     "maintainer": "evroom",
     "maintainerURL": "",
     "description": "Uses MPlayer to display various video files and RTSP streams.",
-    "issues": [
-      "There is no `package.json`. We need this file to gather information about the module for the module list page.",
-      "No image found."
-    ],
+    "issues": [],
     "stars": 1,
-    "license": "MIT"
+    "license": "MIT",
+    "tags": [
+      "mplayer",
+      "video",
+      "rtsp",
+      "stream"
+    ],
+    "image": "screenshot.jpg"
   },
   {
     "name": "MMM-MplayerRadio",
@@ -16858,6 +16846,26 @@
       "spotify"
     ],
     "license": "MIT"
+  },
+  {
+    "name": "MMM-SRVMA",
+    "category": "News / Information",
+    "url": "https://github.com/cgillinger/MMM-SRVMA",
+    "id": "cgillinger/MMM-SRVMA",
+    "maintainer": "cgillinger",
+    "maintainerURL": "https://github.com/cgillinger",
+    "description": "Displays real-time Swedish VMA (Viktigt Meddelande till Allmänheten) alerts, including public safety notifications, weather warnings, and emergency updates. Supports Swedish (<code>sv-SE</code>) and English (<code>en-US</code>) localization.",
+    "issues": [],
+    "stars": 0,
+    "tags": [
+      "vma",
+      "alerts",
+      "sweden",
+      "sveriges radio",
+      "public announcements"
+    ],
+    "license": "MIT",
+    "image": "SRVMA.jpg"
   },
   {
     "name": "MMM-Star-Metro",

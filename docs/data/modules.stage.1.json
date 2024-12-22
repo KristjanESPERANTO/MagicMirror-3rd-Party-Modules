@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "2024-12-21T20:36:36.001Z",
+  "lastUpdate": "2024-12-22T12:17:45.306Z",
   "modules": [
     {
       "name": "MMM-01ZM",
@@ -3704,17 +3704,6 @@
       "maintainerURL": "",
       "description": "Displays a google map of an origin and destination.",
       "issues": []
-    },
-    {
-      "name": "MMM-googlemaps",
-      "category": "Outdated Modules",
-      "url": "https://github.com/sp4ceman/MMM-googlemaps",
-      "id": "sp4ceman/MMM-googlemaps",
-      "maintainer": "sp4ceman",
-      "maintainerURL": "",
-      "description": "Display an embedded google map between an origin and destination.",
-      "issues": [],
-      "outdated": "Abandoned. No updates since years. But may still work."
     },
     {
       "name": "MMM-GoogleMaps-Tracking",
@@ -10279,6 +10268,16 @@
       "maintainer": "Ruud14",
       "maintainerURL": "https://github.com/Ruud14",
       "description": "Displays the latest releases from your favorite spotify artists.",
+      "issues": []
+    },
+    {
+      "name": "MMM-SRVMA",
+      "category": "News / Information",
+      "url": "https://github.com/cgillinger/MMM-SRVMA",
+      "id": "cgillinger/MMM-SRVMA",
+      "maintainer": "cgillinger",
+      "maintainerURL": "https://github.com/cgillinger",
+      "description": "Displays real-time Swedish VMA (Viktigt Meddelande till Allmänheten) alerts, including public safety notifications, weather warnings, and emergency updates. Supports Swedish (<code>sv-SE</code>) and English (<code>en-US</code>) localization.",
       "issues": []
     },
     {
