@@ -1536,7 +1536,7 @@
     "maintainerURL": "",
     "description": "Send Notification to this module to turn TV over HDMI on or off.",
     "issues": [],
-    "stars": 13,
+    "stars": 14,
     "license": "MIT"
   },
   {
@@ -1742,7 +1742,7 @@
     "description": "Display your Bitcoin Coinbase balance.",
     "issues": [],
     "outdated": "Abandoned. Repo has been archived at 2023-07-26.",
-    "stars": 12,
+    "stars": 14,
     "isArchived": true,
     "license": "MIT"
   },
@@ -1870,7 +1870,7 @@
     "maintainerURL": "",
     "description": "Count down to or up from a datetime.",
     "issues": [],
-    "stars": 3,
+    "stars": 4,
     "license": "MIT"
   },
   {
@@ -9976,7 +9976,7 @@
     "id": "cgillinger/MMM-PollenSwe",
     "maintainer": "cgillinger",
     "maintainerURL": "https://github.com/cgillinger",
-    "description": "Displays pollen forecast information for Sweden from SMHI. Includes customizable layout and regional forecasts.",
+    "description": "Displays pollen forecast information for Sweden from Pollenrapporten.se. Includes customizable layout and regional forecasts.",
     "issues": [],
     "stars": 0,
     "license": "MIT"

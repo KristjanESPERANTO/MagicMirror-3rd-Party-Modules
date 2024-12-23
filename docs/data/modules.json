@@ -2210,7 +2210,7 @@
     "maintainerURL": "",
     "description": "Send Notification to this module to turn TV over HDMI on or off.",
     "issues": true,
-    "stars": 13,
+    "stars": 14,
     "license": "MIT",
     "tags": [
       "cec",
@@ -2482,7 +2482,7 @@
     "description": "Display your Bitcoin Coinbase balance.",
     "issues": false,
     "outdated": "Abandoned. Repo has been archived at 2023-07-26.",
-    "stars": 12,
+    "stars": 14,
     "isArchived": true,
     "license": "MIT",
     "tags": [
@@ -2665,7 +2665,7 @@
     "maintainerURL": "",
     "description": "Count down to or up from a datetime.",
     "issues": true,
-    "stars": 3,
+    "stars": 4,
     "license": "MIT",
     "image": ".github-CountDown-1.jpg",
     "defaultSortWeight": 5,
@@ -5152,7 +5152,7 @@
     "license": "MIT",
     "image": "data-flights_mapbox.jpg",
     "defaultSortWeight": 4,
-    "lastCommit": "2024-12-08T21:08:16+00:00"
+    "lastCommit": "2024-12-22T22:35:00+01:00"
   },
   {
     "name": "MMM-FlightsAbove",
@@ -7870,7 +7870,7 @@
     "license": "MIT",
     "image": "data-iss_cartodb.jpg",
     "defaultSortWeight": 4,
-    "lastCommit": "2024-12-08T21:05:39+00:00"
+    "lastCommit": "2024-12-22T22:38:37+01:00"
   },
   {
     "name": "MMM-ISY",
@@ -10600,7 +10600,7 @@
     ],
     "image": "screenshot.jpg",
     "defaultSortWeight": 1,
-    "lastCommit": "2024-12-22T11:00:36+01:00"
+    "lastCommit": "2024-12-23T00:09:36+01:00"
   },
   {
     "name": "MMM-MplayerRadio",
@@ -13999,7 +13999,7 @@
     "id": "cgillinger/MMM-PollenSwe",
     "maintainer": "cgillinger",
     "maintainerURL": "https://github.com/cgillinger",
-    "description": "Displays pollen forecast information for Sweden from SMHI. Includes customizable layout and regional forecasts.",
+    "description": "Displays pollen forecast information for Sweden from Pollenrapporten.se. Includes customizable layout and regional forecasts.",
     "issues": true,
     "stars": 0,
     "license": "MIT",

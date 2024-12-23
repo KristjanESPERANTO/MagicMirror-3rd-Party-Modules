@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "2024-12-22T16:30:14.789Z",
+  "lastUpdate": "2024-12-23T04:30:15.229Z",
   "modules": [
     {
       "name": "MMM-01ZM",
@@ -8434,7 +8434,7 @@
       "id": "cgillinger/MMM-PollenSwe",
       "maintainer": "cgillinger",
       "maintainerURL": "https://github.com/cgillinger",
-      "description": "Displays pollen forecast information for Sweden from SMHI. Includes customizable layout and regional forecasts.",
+      "description": "Displays pollen forecast information for Sweden from Pollenrapporten.se. Includes customizable layout and regional forecasts.",
       "issues": []
     },
     {
