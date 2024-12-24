@@ -2004,7 +2004,7 @@
     "maintainerURL": "",
     "description": "Real time tram departure from selected stop in Cracow (Poland).",
     "issues": [],
-    "stars": 2
+    "stars": 3
   },
   {
     "name": "MMM-Cricket-Scores",
@@ -2075,7 +2075,7 @@
     "maintainerURL": "",
     "description": "Display cryptocurrencies ticker price, with graphs and changes over time.",
     "issues": [],
-    "stars": 96,
+    "stars": 97,
     "license": "MIT"
   },
   {

@@ -2848,7 +2848,7 @@
     "maintainerURL": "",
     "description": "Real time tram departure from selected stop in Cracow (Poland).",
     "issues": true,
-    "stars": 2,
+    "stars": 3,
     "defaultSortWeight": 6,
     "lastCommit": "2019-11-11T11:16:45+01:00"
   },
@@ -2945,7 +2945,7 @@
     "maintainerURL": "",
     "description": "Display cryptocurrencies ticker price, with graphs and changes over time.",
     "issues": true,
-    "stars": 96,
+    "stars": 97,
     "license": "MIT",
     "image": "MMM-cryptocurrency.jpg",
     "defaultSortWeight": 5,

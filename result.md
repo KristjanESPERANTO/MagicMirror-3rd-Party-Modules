@@ -1,6 +1,6 @@
 # Result of the module analysis
 
-Last update: 2024-12-23T05:39:16+01:00
+Last update: 2024-12-24T05:39:13+01:00
 
 ## Statistics
 
@@ -775,8 +775,8 @@ Last update: 2024-12-23T05:39:16+01:00
    - @types/express                     ^4.17.11  →    ^5.0.0
    - @types/magicmirror-module           ^2.16.0  →   ^2.16.5
    - @types/node                       ^14.14.22  →  ^22.10.2
-   - @typescript-eslint/eslint-plugin     ^7.0.2  →   ^8.18.1
-   - @typescript-eslint/parser            ^7.0.2  →   ^8.18.1
+   - @typescript-eslint/eslint-plugin     ^7.0.2  →   ^8.18.2
+   - @typescript-eslint/parser            ^7.0.2  →   ^8.18.2
    - bosch-smart-home-bridge              ^1.4.1  →    ^1.6.0
    - eslint                              ^8.57.0  →   ^9.17.0
    - eslint-plugin-prettier               ^5.1.3  →    ^5.2.1
@@ -4085,8 +4085,8 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
    - @rollup/plugin-commonjs           ^25.0.7  →  ^28.0.2
    - @rollup/plugin-node-resolve       ^15.2.3  →  ^16.0.0
    - @rollup/plugin-typescript         ^11.1.6  →  ^12.1.2
-   - @typescript-eslint/eslint-plugin  ^6.19.1  →  ^8.18.1
-   - @typescript-eslint/parser         ^6.19.1  →  ^8.18.1
+   - @typescript-eslint/eslint-plugin  ^6.19.1  →  ^8.18.2
+   - @typescript-eslint/parser         ^6.19.1  →  ^8.18.2
    - eslint                            ^8.56.0  →  ^9.17.0
    - eslint-plugin-prettier             ^5.1.3  →   ^5.2.1
    - prettier                           ^3.2.4  →   ^3.4.2
@@ -6265,7 +6265,7 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
    - @rollup/plugin-node-resolve       ^15.2.3  →  ^16.0.0
    - @rollup/plugin-typescript         ^11.1.6  →  ^12.1.2
    - @stylistic/eslint-plugin           ^1.5.4  →  ^2.12.1
-   - @typescript-eslint/eslint-plugin  ^6.20.0  →  ^8.18.1
+   - @typescript-eslint/eslint-plugin  ^6.20.0  →  ^8.18.2
    - eslint                            ^8.56.0  →  ^9.17.0
    - prettier                           ^3.2.5  →   ^3.4.2
    - rollup                             ^4.9.6  →  ^4.29.1
@@ -7084,7 +7084,7 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
 2. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
 3. Information: There are updates for 2 dependencie(s):
    - async                ^3.2.5  →    ^3.2.6
-   - systeminformation  ^5.21.24  →  ^5.23.16
+   - systeminformation  ^5.21.24  →  ^5.23.17
 
 
 ### [MMM-ping by fewieden](https://github.com/fewieden/MMM-ping)
@@ -7658,7 +7658,7 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
    - rollup                       ^4.21.1  →  ^4.29.1
    - rollup-plugin-banner2         ^1.3.0  →   ^1.3.1
    - typescript                    ^5.5.4  →   ^5.7.2
-   - typescript-eslint             ^8.3.0  →  ^8.18.1
+   - typescript-eslint             ^8.3.0  →  ^8.18.2
 
 2. ESLint issues:
    - MMM-RAIN-MAP.js: Line 28, Column 17081: Expected to return a value in method 'get'. (rule: getter-return)
