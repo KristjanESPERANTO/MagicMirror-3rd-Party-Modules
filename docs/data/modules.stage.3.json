@@ -14024,9 +14024,7 @@
     "maintainer": "bugsounet",
     "maintainerURL": "",
     "description": "[FR] Ce module permet d'afficher les prix des carburants des stations francaise.<br />[EN] Display fuel prices (France only).",
-    "issues": [
-      "`package.json` issue: No repository field."
-    ],
+    "issues": [],
     "stars": 2,
     "license": "MIT",
     "tags": [

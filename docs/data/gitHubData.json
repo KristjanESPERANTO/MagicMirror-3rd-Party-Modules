@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "2024-12-24T04:30:31.554Z",
+  "lastUpdate": "2024-12-24T16:30:29.942Z",
   "repositories": [
     {
       "id": "0lek/MMM-socialbicycles",
@@ -115,7 +115,7 @@
     },
     {
       "id": "aaron64/MMM-DockerVisualizer",
-      "gitHubDataLastUpdate": "2024-12-02T04:30:22.499Z",
+      "gitHubDataLastUpdate": "2024-12-24T16:30:29.908Z",
       "gitHubData": {
         "issues": 0,
         "stars": 4,
@@ -143,7 +143,7 @@
     },
     {
       "id": "AdamMoses-GitHub/MMM-DCMetroTrainTimes",
-      "gitHubDataLastUpdate": "2024-12-02T04:30:15.854Z",
+      "gitHubDataLastUpdate": "2024-12-24T16:30:23.296Z",
       "gitHubData": {
         "issues": 5,
         "stars": 16,
@@ -493,7 +493,7 @@
     },
     {
       "id": "alltopafi/MMM-DateCounter",
-      "gitHubDataLastUpdate": "2024-12-02T04:30:14.024Z",
+      "gitHubDataLastUpdate": "2024-12-24T16:30:21.505Z",
       "gitHubData": {
         "issues": 1,
         "stars": 7,
@@ -661,7 +661,7 @@
     },
     {
       "id": "andrecarlucci/MMM-DailyDilbert",
-      "gitHubDataLastUpdate": "2024-12-01T04:30:25.477Z",
+      "gitHubDataLastUpdate": "2024-12-24T16:30:17.493Z",
       "gitHubData": {
         "issues": 3,
         "stars": 10,
@@ -745,7 +745,7 @@
     },
     {
       "id": "anthpham/MMM-DailyBuddhismWisdom",
-      "gitHubDataLastUpdate": "2024-12-01T04:30:25.027Z",
+      "gitHubDataLastUpdate": "2024-12-24T16:30:17.050Z",
       "gitHubData": {
         "issues": 1,
         "stars": 3,
@@ -801,7 +801,7 @@
     },
     {
       "id": "arthurgarzajr/MMM-DailyBibleVerse",
-      "gitHubDataLastUpdate": "2024-12-01T04:30:24.647Z",
+      "gitHubDataLastUpdate": "2024-12-24T16:30:16.632Z",
       "gitHubData": {
         "issues": 11,
         "stars": 27,
@@ -1501,7 +1501,7 @@
     },
     {
       "id": "Blastitt/DailyXKCD",
-      "gitHubDataLastUpdate": "2024-12-01T04:30:27.415Z",
+      "gitHubDataLastUpdate": "2024-12-24T16:30:19.655Z",
       "gitHubData": {
         "issues": 4,
         "stars": 52,
@@ -1879,16 +1879,16 @@
     },
     {
       "id": "bugsounet/EXT-Detector",
-      "gitHubDataLastUpdate": "2024-12-02T04:30:17.199Z",
+      "gitHubDataLastUpdate": "2024-12-24T16:30:24.571Z",
       "gitHubData": {
-        "issues": 0,
+        "issues": 4,
         "stars": 8,
         "license": "MIT",
         "archived": false,
         "disabled": false,
         "defaultBranch": "main",
         "has_issues": true,
-        "lastCommit": "2024-11-23T11:37:48Z"
+        "lastCommit": "2024-12-08T09:34:06Z"
       }
     },
     {
@@ -2943,7 +2943,7 @@
     },
     {
       "id": "ckoutavas/MMM-DHT",
-      "gitHubDataLastUpdate": "2024-12-02T04:30:17.666Z",
+      "gitHubDataLastUpdate": "2024-12-24T16:30:25.128Z",
       "gitHubData": {
         "issues": 0,
         "stars": 0,
@@ -5351,7 +5351,7 @@
     },
     {
       "id": "gberg927/MMM-DisneyWaitTimes",
-      "gitHubDataLastUpdate": "2024-12-02T04:30:22.032Z",
+      "gitHubDataLastUpdate": "2024-12-24T16:30:29.401Z",
       "gitHubData": {
         "issues": 3,
         "stars": 6,
@@ -5561,7 +5561,7 @@
     },
     {
       "id": "grabenhenrich/MMM-DateOnly",
-      "gitHubDataLastUpdate": "2024-12-02T04:30:14.457Z",
+      "gitHubDataLastUpdate": "2024-12-24T16:30:21.960Z",
       "gitHubData": {
         "issues": 1,
         "stars": 5,
@@ -5645,7 +5645,7 @@
     },
     {
       "id": "grenagit/MMM-DHT-Sensor",
-      "gitHubDataLastUpdate": "2024-12-02T04:30:18.223Z",
+      "gitHubDataLastUpdate": "2024-12-24T16:30:25.586Z",
       "gitHubData": {
         "issues": 0,
         "stars": 3,
@@ -5869,7 +5869,7 @@
     },
     {
       "id": "Helpi90/MMM-DBF",
-      "gitHubDataLastUpdate": "2024-12-02T04:30:14.870Z",
+      "gitHubDataLastUpdate": "2024-12-24T16:30:22.349Z",
       "gitHubData": {
         "issues": 3,
         "stars": 2,
@@ -6345,7 +6345,7 @@
     },
     {
       "id": "J0n4e/MMM-DHT22",
-      "gitHubDataLastUpdate": "2024-12-02T04:30:19.181Z",
+      "gitHubDataLastUpdate": "2024-12-24T16:30:26.495Z",
       "gitHubData": {
         "issues": 1,
         "stars": 4,
@@ -6401,7 +6401,7 @@
     },
     {
       "id": "jacquesCedric/MMM-darksky-hourly",
-      "gitHubDataLastUpdate": "2024-12-01T04:30:27.871Z",
+      "gitHubDataLastUpdate": "2024-12-24T16:30:20.137Z",
       "gitHubData": {
         "issues": 1,
         "stars": 11,
@@ -6653,7 +6653,7 @@
     },
     {
       "id": "jclarke0000/MMM-DarkSkyForecast",
-      "gitHubDataLastUpdate": "2024-12-01T04:30:28.239Z",
+      "gitHubDataLastUpdate": "2024-12-24T16:30:20.620Z",
       "gitHubData": {
         "issues": 29,
         "stars": 85,
@@ -7157,7 +7157,7 @@
     },
     {
       "id": "jordy-u/MMM-Discourse-notifications",
-      "gitHubDataLastUpdate": "2024-12-02T04:30:21.541Z",
+      "gitHubDataLastUpdate": "2024-12-24T16:30:28.928Z",
       "gitHubData": {
         "issues": 5,
         "stars": 3,
@@ -7437,7 +7437,7 @@
     },
     {
       "id": "justjim1220/MMM-DigClock",
-      "gitHubDataLastUpdate": "2024-12-02T04:30:19.657Z",
+      "gitHubDataLastUpdate": "2024-12-24T16:30:27.047Z",
       "gitHubData": {
         "issues": 4,
         "stars": 7,
@@ -7451,7 +7451,7 @@
     },
     {
       "id": "justjim1220/MMM-DigitalAlarmClock",
-      "gitHubDataLastUpdate": "2024-12-02T04:30:20.081Z",
+      "gitHubDataLastUpdate": "2024-12-24T16:30:27.476Z",
       "gitHubData": {
         "issues": 1,
         "stars": 4,
@@ -8011,7 +8011,7 @@
     },
     {
       "id": "kyle-kelly/MMM-DCMetroTimes",
-      "gitHubDataLastUpdate": "2024-12-02T04:30:15.379Z",
+      "gitHubDataLastUpdate": "2024-12-24T16:30:22.824Z",
       "gitHubData": {
         "issues": 0,
         "stars": 3,
@@ -8795,7 +8795,7 @@
     },
     {
       "id": "MatthiPi/MMM-DefaultWeatherAnimated",
-      "gitHubDataLastUpdate": "2024-12-02T04:30:16.293Z",
+      "gitHubDataLastUpdate": "2024-12-24T16:30:23.718Z",
       "gitHubData": {
         "issues": 3,
         "stars": 15,
@@ -8893,7 +8893,7 @@
     },
     {
       "id": "mboskamp/MMM-Discogs",
-      "gitHubDataLastUpdate": "2024-12-02T04:30:20.556Z",
+      "gitHubDataLastUpdate": "2024-12-24T16:30:27.979Z",
       "gitHubData": {
         "issues": 1,
         "stars": 3,
@@ -10013,7 +10013,7 @@
     },
     {
       "id": "MStoltzfus/MMM-DailyUnreachedPeopleGroup",
-      "gitHubDataLastUpdate": "2024-12-01T04:30:26.920Z",
+      "gitHubDataLastUpdate": "2024-12-24T16:30:19.193Z",
       "gitHubData": {
         "issues": 0,
         "stars": 2,
@@ -10881,7 +10881,7 @@
     },
     {
       "id": "nebulx29/MMM-dht22",
-      "gitHubDataLastUpdate": "2024-12-02T04:30:18.662Z",
+      "gitHubDataLastUpdate": "2024-12-24T16:30:26.077Z",
       "gitHubData": {
         "issues": 1,
         "stars": 10,
@@ -11399,7 +11399,7 @@
     },
     {
       "id": "NolanKingdon/MMM-DailyPokemon",
-      "gitHubDataLastUpdate": "2024-12-01T04:30:25.914Z",
+      "gitHubDataLastUpdate": "2024-12-24T16:30:17.973Z",
       "gitHubData": {
         "issues": 2,
         "stars": 24,
@@ -11525,7 +11525,7 @@
     },
     {
       "id": "oemel09/MMM-DailyPower",
-      "gitHubDataLastUpdate": "2024-12-01T04:30:26.368Z",
+      "gitHubDataLastUpdate": "2024-12-24T16:30:18.703Z",
       "gitHubData": {
         "issues": 1,
         "stars": 1,
@@ -14101,7 +14101,7 @@
     },
     {
       "id": "Smiche/MMM-DiscordWatch",
-      "gitHubDataLastUpdate": "2024-12-02T04:30:21.087Z",
+      "gitHubDataLastUpdate": "2024-12-24T16:30:28.446Z",
       "gitHubData": {
         "issues": 5,
         "stars": 9,
@@ -16229,7 +16229,7 @@
     },
     {
       "id": "vincep5/MMM-DarkSkyRadar",
-      "gitHubDataLastUpdate": "2024-12-02T04:30:13.575Z",
+      "gitHubDataLastUpdate": "2024-12-24T16:30:21.095Z",
       "gitHubData": {
         "issues": 1,
         "stars": 5,
@@ -16565,7 +16565,7 @@
     },
     {
       "id": "wouter-heerwegh/MMM-DeLijn",
-      "gitHubDataLastUpdate": "2024-12-02T04:30:16.736Z",
+      "gitHubDataLastUpdate": "2024-12-24T16:30:24.106Z",
       "gitHubData": {
         "issues": 0,
         "stars": 2,

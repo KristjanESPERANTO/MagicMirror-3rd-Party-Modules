@@ -1,6 +1,6 @@
 # Result of the module analysis
 
-Last update: 2024-12-24T05:39:13+01:00
+Last update: 2024-12-24T17:39:28+01:00
 
 ## Statistics
 
@@ -9,7 +9,7 @@ Last update: 2024-12-24T05:39:13+01:00
 | modules analyzed     |   1229   |
 | maintainer           |    652   |
 | modules with issues  |   1228   |
-| issues               |   6996   |
+| issues               |   6988   |
 | modules at github    |   1107   |
 | modules at gitlab    |     10   |
 | modules at bitbucket |      1   |
@@ -2649,12 +2649,7 @@ deprecated: no longer maintained, switch to modern iconify-icon web component
 
 ### [MMM-FranceInfo by bugsounet](https://github.com/bugsounet/MMM-FranceInfo)
 
-1. Information: There are updates for 3 dependencie(s):
-   - @stylistic/eslint-plugin  ^2.11.0  →  ^2.12.1
-   - esbuild                   ^0.24.0  →  ^0.24.2
-   - eslint                    ^9.16.0  →  ^9.17.0
-
-2. ESLint issues:
+1. ESLint issues:
    - installer/dev.js: Line 8, Column 22: "glob" should be replaced with an alternative package. Read more here: https://github.com/es-tooling/module-replacements/blob/main/docs/modules/glob.md (rule: depend/ban-dependencies)
    - installer/minify.js: Line 7, Column 22: "glob" should be replaced with an alternative package. Read more here: https://github.com/es-tooling/module-replacements/blob/main/docs/modules/glob.md (rule: depend/ban-dependencies)
    - installer/src.js: Line 8, Column 22: "glob" should be replaced with an alternative package. Read more here: https://github.com/es-tooling/module-replacements/blob/main/docs/modules/glob.md (rule: depend/ban-dependencies)
@@ -2662,14 +2657,8 @@ deprecated: no longer maintained, switch to modern iconify-icon web component
 
 ### [MMM-Freebox by bugsounet](https://github.com/bugsounet/MMM-Freebox)
 
-1. Recommendation: Found `axios` in file `freebox.js`: Replace it with built-in fetch.
-2. Recommendation: Found `axios` in file `package.json`: Replace it with built-in fetch.
-3. Information: There are updates for 4 dependencie(s):
-   - @stylistic/eslint-plugin  ^2.11.0  →  ^2.12.1
-   - axios                      ^1.7.7  →   ^1.7.9
-   - esbuild                   ^0.24.0  →  ^0.24.2
-   - eslint                    ^9.15.0  →  ^9.17.0
-
+1. Recommendation: Found `axios` in file `package.json`: Replace it with built-in fetch.
+2. Recommendation: Found `axios` in file `freebox.js`: Replace it with built-in fetch.
 
 ### [MMM-FreeBox-Monitor by tataille](https://github.com/tataille/MMM-FreeBox-Monitor)
 
@@ -2934,13 +2923,10 @@ deprecated: no longer maintained, switch to modern iconify-icon web component
 
 ### [MMM-Glassy by bugsounet](https://github.com/bugsounet/MMM-Glassy)
 
-1. Information: There are updates for 3 dependencie(s):
-   - @stylistic/eslint-plugin  ^2.11.0  →  ^2.12.1
-   - esbuild                   ^0.24.0  →  ^0.24.2
-   - eslint                    ^9.15.0  →  ^9.17.0
-
-2. ESLint issues:
+1. ESLint issues:
+   - installer/dev.js: Line 8, Column 22: "glob" should be replaced with an alternative package. Read more here: https://github.com/es-tooling/module-replacements/blob/main/docs/modules/glob.md (rule: depend/ban-dependencies)
    - installer/minify.js: Line 7, Column 22: "glob" should be replaced with an alternative package. Read more here: https://github.com/es-tooling/module-replacements/blob/main/docs/modules/glob.md (rule: depend/ban-dependencies)
+   - installer/src.js: Line 8, Column 22: "glob" should be replaced with an alternative package. Read more here: https://github.com/es-tooling/module-replacements/blob/main/docs/modules/glob.md (rule: depend/ban-dependencies)
 
 
 ### [MMM-Globe by Eunanibus](https://github.com/Eunanibus/MMM-Globe)
@@ -4946,13 +4932,10 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
 
 ### [MMM-MeteoFrance by bugsounet](https://github.com/bugsounet/MMM-MeteoFrance)
 
-1. Information: There are updates for 3 dependencie(s):
-   - @stylistic/eslint-plugin  ^2.11.0  →  ^2.12.1
-   - esbuild                   ^0.24.0  →  ^0.24.2
-   - eslint                    ^9.15.0  →  ^9.17.0
-
-2. ESLint issues:
+1. ESLint issues:
+   - installer/dev.js: Line 8, Column 22: "glob" should be replaced with an alternative package. Read more here: https://github.com/es-tooling/module-replacements/blob/main/docs/modules/glob.md (rule: depend/ban-dependencies)
    - installer/minify.js: Line 7, Column 22: "glob" should be replaced with an alternative package. Read more here: https://github.com/es-tooling/module-replacements/blob/main/docs/modules/glob.md (rule: depend/ban-dependencies)
+   - installer/src.js: Line 8, Column 22: "glob" should be replaced with an alternative package. Read more here: https://github.com/es-tooling/module-replacements/blob/main/docs/modules/glob.md (rule: depend/ban-dependencies)
 
 
 ### [MMM-MHZ19 by awitwicki](https://github.com/awitwicki/MMM-MHZ19)
@@ -6080,13 +6063,10 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
 
 ### [MMM-NetatmoThermostat by bugsounet](https://github.com/bugsounet/MMM-NetatmoThermostat)
 
-1. Information: There are updates for 3 dependencie(s):
-   - @stylistic/eslint-plugin  ^2.11.0  →  ^2.12.1
-   - esbuild                   ^0.24.0  →  ^0.24.2
-   - eslint                    ^9.15.0  →  ^9.17.0
-
-2. ESLint issues:
+1. ESLint issues:
+   - installer/dev.js: Line 8, Column 22: "glob" should be replaced with an alternative package. Read more here: https://github.com/es-tooling/module-replacements/blob/main/docs/modules/glob.md (rule: depend/ban-dependencies)
    - installer/minify.js: Line 7, Column 22: "glob" should be replaced with an alternative package. Read more here: https://github.com/es-tooling/module-replacements/blob/main/docs/modules/glob.md (rule: depend/ban-dependencies)
+   - installer/src.js: Line 8, Column 22: "glob" should be replaced with an alternative package. Read more here: https://github.com/es-tooling/module-replacements/blob/main/docs/modules/glob.md (rule: depend/ban-dependencies)
 
 
 ### [MMM-network-signal by PoOwAa](https://github.com/PoOwAa/MMM-network-signal)
@@ -7084,7 +7064,7 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
 2. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
 3. Information: There are updates for 2 dependencie(s):
    - async                ^3.2.5  →    ^3.2.6
-   - systeminformation  ^5.21.24  →  ^5.23.17
+   - systeminformation  ^5.21.24  →  ^5.23.21
 
 
 ### [MMM-ping by fewieden](https://github.com/fewieden/MMM-ping)
@@ -7420,12 +7400,10 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
 
 ### [MMM-PrixCarburants by bugsounet](https://github.com/bugsounet/MMM-PrixCarburants)
 
-1. `package.json` issue: No repository field.
-2. Recommendation: Found `new Date()` in file `MMM-PrixCarburants.js`: Consider replacing it by `new Date(Date.now())`. It's helpful for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
-3. Information: There are updates for 3 dependencie(s):
-   - @stylistic/eslint-plugin  ^2.11.0  →  ^2.12.1
-   - esbuild                   ^0.24.0  →  ^0.24.2
-   - eslint                    ^9.15.0  →  ^9.17.0
+1. ESLint issues:
+   - installer/dev.js: Line 8, Column 22: "glob" should be replaced with an alternative package. Read more here: https://github.com/es-tooling/module-replacements/blob/main/docs/modules/glob.md (rule: depend/ban-dependencies)
+   - installer/minify.js: Line 7, Column 22: "glob" should be replaced with an alternative package. Read more here: https://github.com/es-tooling/module-replacements/blob/main/docs/modules/glob.md (rule: depend/ban-dependencies)
+   - installer/src.js: Line 8, Column 22: "glob" should be replaced with an alternative package. Read more here: https://github.com/es-tooling/module-replacements/blob/main/docs/modules/glob.md (rule: depend/ban-dependencies)
 
 
 ### [MMM-profile by kurtern84](https://github.com/kurtern84/MMM-profile)
@@ -8183,11 +8161,10 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
 
 ### [MMM-Saint by bugsounet](https://github.com/bugsounet/MMM-Saint)
 
-1. Typo: Found `Magic Mirror` in file `MMM-Saint.css`: Replace it with `MagicMirror²`.
-2. Information: There are updates for 3 dependencie(s):
-   - @stylistic/eslint-plugin  ^2.11.0  →  ^2.12.1
-   - esbuild                   ^0.24.0  →  ^0.24.2
-   - eslint                    ^9.15.0  →  ^9.17.0
+1. ESLint issues:
+   - installer/dev.js: Line 8, Column 22: "glob" should be replaced with an alternative package. Read more here: https://github.com/es-tooling/module-replacements/blob/main/docs/modules/glob.md (rule: depend/ban-dependencies)
+   - installer/minify.js: Line 7, Column 22: "glob" should be replaced with an alternative package. Read more here: https://github.com/es-tooling/module-replacements/blob/main/docs/modules/glob.md (rule: depend/ban-dependencies)
+   - installer/src.js: Line 8, Column 22: "glob" should be replaced with an alternative package. Read more here: https://github.com/es-tooling/module-replacements/blob/main/docs/modules/glob.md (rule: depend/ban-dependencies)
 
 
 ### [MMM-Sbanken by reidarw](https://github.com/reidarw/MMM-Sbanken)
@@ -8634,9 +8611,9 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
 ### [EXT-SmartHome by bugsounet](https://github.com/bugsounet/EXT-SmartHome)
 
 1. Information: There are updates for 3 dependencie(s):
-   - @stylistic/eslint-plugin  ^2.10.1  →  ^2.12.1
+   - @stylistic/eslint-plugin  ^2.12.0  →  ^2.12.1
    - esbuild                   ^0.24.0  →  ^0.24.2
-   - eslint                    ^9.15.0  →  ^9.17.0
+   - eslint                    ^9.16.0  →  ^9.17.0
 
 2. ESLint issues:
    - components/smarthome.js: Line 11, Column 11: "lodash" should be replaced with an alternative package. Read more here: https://github.com/es-tooling/module-replacements/blob/main/docs/modules/lodash-underscore.md (rule: depend/ban-dependencies)
