@@ -3793,7 +3793,7 @@
       "There are no keywords in 'package.json'. We would use them as tags on the module list page."
     ],
     "outdated": "Successor is MMM-DropboxPictures.",
-    "stars": 18,
+    "stars": 17,
     "license": "MIT",
     "image": "sc.jpg"
   },

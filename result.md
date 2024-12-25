@@ -1,6 +1,6 @@
 # Result of the module analysis
 
-Last update: 2024-12-24T17:39:28+01:00
+Last update: 2024-12-25T17:38:34+01:00
 
 ## Statistics
 
@@ -7064,7 +7064,7 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
 2. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
 3. Information: There are updates for 2 dependencie(s):
    - async                ^3.2.5  →    ^3.2.6
-   - systeminformation  ^5.21.24  →  ^5.23.21
+   - systeminformation  ^5.21.24  →  ^5.23.23
 
 
 ### [MMM-ping by fewieden](https://github.com/fewieden/MMM-ping)

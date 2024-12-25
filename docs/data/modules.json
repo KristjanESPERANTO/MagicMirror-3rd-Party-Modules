@@ -3847,7 +3847,7 @@
     "description": "Show photos from <code>Dropbox</code> as wallpaper.",
     "issues": false,
     "outdated": "Successor is MMM-DropboxPictures.",
-    "stars": 18,
+    "stars": 17,
     "license": "MIT",
     "image": "sc.jpg",
     "defaultSortWeight": 900,
@@ -10178,7 +10178,7 @@
     "license": "MIT",
     "image": "assets-MMPM-UI-Homepage.jpg",
     "defaultSortWeight": -1,
-    "lastCommit": "2024-12-22T11:27:42-05:00"
+    "lastCommit": "2024-12-25T10:32:14-05:00"
   },
   {
     "name": "MMM-mmpm",
