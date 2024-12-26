@@ -1,6 +1,6 @@
 # Result of the module analysis
 
-Last update: 2024-12-26T05:39:43+01:00
+Last update: 2024-12-26T17:38:33+01:00
 
 ## Statistics
 
@@ -3000,11 +3000,12 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
 ### [MMM-GoogleAssistant by bugsounet](https://github.com/bugsounet/MMM-GoogleAssistant)
 
 1. Issues are not enabled in the GitHub repository. So users cannot report bugs. Please enable issues in your repo.
-2. Information: There are updates for 5 dependencie(s):
+2. Information: There are updates for 6 dependencie(s):
    - @grpc/grpc-js              ^1.12.4  →   ^1.12.5
    - @stylistic/eslint-plugin   ^2.11.0  →   ^2.12.1
    - esbuild                    ^0.24.0  →   ^0.24.2
    - eslint                     ^9.16.0  →   ^9.17.0
+   - node-html-parser           ^6.1.13  →    ^7.0.1
    - sweetalert2               ^11.14.5  →  ^11.15.3
 
 
@@ -6049,10 +6050,9 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
 ### [MMM-Netatmo by CFenner](https://github.com/CFenner/MMM-Netatmo)
 
 1. Recommendation: No lint script found in package.json. It is recommended to add one.
-2. Information: There are updates for 3 dependencie(s):
-   - less                4.2.0  →   4.2.1
-   - markdownlint-cli2  0.16.0  →  0.17.0
-   - neostandard        0.11.5  →  0.12.0
+2. Information: There are updates for 2 dependencie(s):
+   - less          4.2.0  →   4.2.1
+   - neostandard  0.11.5  →  0.12.0
 
 
 ### [MMM-Netatmo-Presence by AgP42](https://github.com/AgP42/MMM-Netatmo-Presence)
@@ -6111,19 +6111,19 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
    - qrcode  1.5.1  →  1.5.4
 
 
-### [MMM-NewsAPI by totoluto](https://github.com/totoluto/MMM-NewsAPI)
-
-1. Typo: Found `Magic Mirror` in file `README.md`: Replace it with `MagicMirror²`.
-2. Recommendation: The README seems not to have an update instruction (the word 'update' is missing). Please add one.
-3. Typo: Found `Magic Mirror` in file `package.json`: Replace it with `MagicMirror²`.
-4. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
-
 ### [MMM-NewsAPI by mumblebaj](https://github.com/mumblebaj/MMM-NewsAPI)
 
 1. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
 2. ESLint issues:
    - MMM-NewsAPI.js: Line 164, Column 23: 'qr' is assigned a value but never used. (rule: no-unused-vars)
 
+
+### [MMM-NewsAPI by totoluto](https://github.com/totoluto/MMM-NewsAPI)
+
+1. Typo: Found `Magic Mirror` in file `README.md`: Replace it with `MagicMirror²`.
+2. Recommendation: The README seems not to have an update instruction (the word 'update' is missing). Please add one.
+3. Typo: Found `Magic Mirror` in file `package.json`: Replace it with `MagicMirror²`.
+4. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
 
 ### [MMM-NewsFeedTicker by justjim1220](https://github.com/justjim1220/MMM-NewsFeedTicker)
 
@@ -9715,7 +9715,7 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
    - @eslint/js                ^8.56.0  →  ^9.17.0
    - @stylistic/eslint-plugin   ^1.6.0  →  ^2.12.1
    - eslint                    ^8.56.0  →  ^9.17.0
-   - node-html-parser          ^6.1.12  →  ^6.1.13
+   - node-html-parser          ^6.1.12  →   ^7.0.1
 
 2.  WARN  eslint@8.56.0: 2023-12-15T22:55:11.833Z
 deprecated: This version is no longer supported. Please see https://eslint.org/version-support for other options.
