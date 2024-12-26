@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "2024-12-25T16:30:15.255Z",
+  "lastUpdate": "2024-12-26T04:30:15.776Z",
   "modules": [
     {
       "name": "MMM-01ZM",
@@ -1486,6 +1486,16 @@
       "description": "Display your Bitcoin Coinbase balance.",
       "issues": [],
       "outdated": "Abandoned. Repo has been archived at 2023-07-26."
+    },
+    {
+      "name": "MMM-CoinGecko",
+      "category": "Finance",
+      "url": "https://github.com/malako/MMM-CoinGecko",
+      "id": "malako/MMM-CoinGecko",
+      "maintainer": "malako",
+      "maintainerURL": "https://github.com/malako",
+      "description": "Display cryptocurrency information from <a target=\"_blank\" href=\"https://www.coingecko.com/\">CoinGecko</a>. Ticker price, logos, 7d sparkline, holdings etc.",
+      "issues": []
     },
     {
       "name": "MMM-CoinMarketCap",

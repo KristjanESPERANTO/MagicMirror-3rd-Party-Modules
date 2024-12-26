@@ -1,16 +1,16 @@
 # Result of the module analysis
 
-Last update: 2024-12-25T17:38:34+01:00
+Last update: 2024-12-26T05:39:43+01:00
 
 ## Statistics
 
 |                      | number   |
 |:---------------------|:--------:|
-| modules analyzed     |   1229   |
-| maintainer           |    652   |
-| modules with issues  |   1228   |
-| issues               |   6988   |
-| modules at github    |   1107   |
+| modules analyzed     |   1230   |
+| maintainer           |    653   |
+| modules with issues  |   1229   |
+| issues               |   6992   |
+| modules at github    |   1108   |
 | modules at gitlab    |     10   |
 | modules at bitbucket |      1   |
 
@@ -962,7 +962,7 @@ Last update: 2024-12-25T17:38:34+01:00
    - @stylistic/eslint-plugin   ^2.11.0  →   ^2.12.1
    - eslint                     ^9.16.0  →   ^9.17.0
    - globals                   ^15.13.0  →  ^15.14.0
-   - markdownlint-cli2          ^0.15.0  →   ^0.16.0
+   - markdownlint-cli2          ^0.15.0  →   ^0.17.0
    - stylelint                 ^16.11.0  →  ^16.12.0
 
 
@@ -1243,6 +1243,13 @@ Last update: 2024-12-25T17:38:34+01:00
 1. There is no `package.json`. We need this file to gather information about the module for the module list page.
 2. No image found.
 3. Deprecated: Found `require('request')` in file `node_helper.js`: Replace it with built-in fetch.
+4. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
+
+### [MMM-CoinGecko by malako](https://github.com/malako/MMM-CoinGecko)
+
+1. Outdated: Found `MichMich/MagicMirror` in file `README.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
+2. Recommendation: The README seems not to have an update instruction (the word 'update' is missing). Please add one.
+3. Recommendation: The README seems not to have an install instruction (the words 'install' or 'installation' are missing). Please add one.
 4. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
 
 ### [MMM-CoinMarketCap by glitch452](https://github.com/glitch452/MMM-CoinMarketCap)
@@ -6042,9 +6049,10 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
 ### [MMM-Netatmo by CFenner](https://github.com/CFenner/MMM-Netatmo)
 
 1. Recommendation: No lint script found in package.json. It is recommended to add one.
-2. Information: There are updates for 2 dependencie(s):
-   - less          4.2.0  →   4.2.1
-   - neostandard  0.11.5  →  0.12.0
+2. Information: There are updates for 3 dependencie(s):
+   - less                4.2.0  →   4.2.1
+   - markdownlint-cli2  0.16.0  →  0.17.0
+   - neostandard        0.11.5  →  0.12.0
 
 
 ### [MMM-Netatmo-Presence by AgP42](https://github.com/AgP42/MMM-Netatmo-Presence)

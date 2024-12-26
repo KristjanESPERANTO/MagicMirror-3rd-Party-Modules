@@ -575,7 +575,7 @@
     "maintainerURL": "https://github.com/totoluto",
     "description": "Display monitor data from selfhosted <a target=\"_blank\" href=\"https://github.com/louislam/uptime-kuma\">https://github.com/louislam/uptime-kuma</a>. Uses token authentication and does not need a public status page like MMM-uptimekuma. There are also more styling options and different values can be displayed.",
     "issues": [],
-    "stars": 0,
+    "stars": 1,
     "license": "MIT"
   },
   {
@@ -1744,6 +1744,18 @@
     "outdated": "Abandoned. Repo has been archived at 2023-07-26.",
     "stars": 14,
     "isArchived": true,
+    "license": "MIT"
+  },
+  {
+    "name": "MMM-CoinGecko",
+    "category": "Finance",
+    "url": "https://github.com/malako/MMM-CoinGecko",
+    "id": "malako/MMM-CoinGecko",
+    "maintainer": "malako",
+    "maintainerURL": "https://github.com/malako",
+    "description": "Display cryptocurrency information from <a target=\"_blank\" href=\"https://www.coingecko.com/\">CoinGecko</a>. Ticker price, logos, 7d sparkline, holdings etc.",
+    "issues": [],
+    "stars": 1,
     "license": "MIT"
   },
   {
@@ -3286,7 +3298,7 @@
     "maintainerURL": "",
     "description": "All new version of Face Recognition with Open CV 4.1 and Deep Neural Network.",
     "issues": [],
-    "stars": 93,
+    "stars": 94,
     "license": "MIT"
   },
   {

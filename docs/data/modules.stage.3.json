@@ -816,7 +816,7 @@
     "maintainerURL": "https://github.com/totoluto",
     "description": "Display monitor data from selfhosted <a target=\"_blank\" href=\"https://github.com/louislam/uptime-kuma\">https://github.com/louislam/uptime-kuma</a>. Uses token authentication and does not need a public status page like MMM-uptimekuma. There are also more styling options and different values can be displayed.",
     "issues": [],
-    "stars": 0,
+    "stars": 1,
     "license": "MIT",
     "tags": [
       "uptimekuma",
@@ -2438,6 +2438,24 @@
       "mmm-magic-mirror"
     ],
     "image": "img-readme-MMM-Coinbase.jpg"
+  },
+  {
+    "name": "MMM-CoinGecko",
+    "category": "Finance",
+    "url": "https://github.com/malako/MMM-CoinGecko",
+    "id": "malako/MMM-CoinGecko",
+    "maintainer": "malako",
+    "maintainerURL": "https://github.com/malako",
+    "description": "Display cryptocurrency information from <a target=\"_blank\" href=\"https://www.coingecko.com/\">CoinGecko</a>. Ticker price, logos, 7d sparkline, holdings etc.",
+    "issues": [],
+    "stars": 1,
+    "license": "MIT",
+    "tags": [
+      "crypto currency",
+      "coingecko",
+      "bitcoin"
+    ],
+    "image": "images-screenshot.jpg"
   },
   {
     "name": "MMM-CoinMarketCap",
@@ -4549,7 +4567,7 @@
     "issues": [
       "No image found."
     ],
-    "stars": 93,
+    "stars": 94,
     "license": "MIT",
     "tags": [
       "face",
