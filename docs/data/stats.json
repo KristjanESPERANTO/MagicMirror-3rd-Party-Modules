@@ -1,11 +1,11 @@
 {
-  "moduleCounter": 1230,
+  "moduleCounter": 1231,
   "modulesWithImageCounter": 870,
-  "modulesWithIssuesCounter": 1229,
-  "issueCounter": 6991,
-  "lastUpdate": "2024-12-27T05:38:46+01:00",
+  "modulesWithIssuesCounter": 1230,
+  "issueCounter": 6998,
+  "lastUpdate": "2024-12-27T17:40:07+01:00",
   "repositoryHoster": {
-    "github": 1108,
+    "github": 1109,
     "gitlab": 10,
     "bitbucket": 1
   },
@@ -114,6 +114,7 @@
     "Fifteen15Studios": 2,
     "blixhavn": 2,
     "lavolp3": 2,
+    "mathew-fleisch": 2,
     "nebulx29": 2,
     "BKeyport": 2,
     "awitwicki": 2,
@@ -219,7 +220,6 @@
     "stuloh": 1,
     "darickc": 1,
     "falafel2222": 1,
-    "mathew-fleisch": 1,
     "stonecrown": 1,
     "kuitin": 1,
     "ethanwang4": 1,

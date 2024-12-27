@@ -3978,6 +3978,29 @@
     "lastCommit": "2018-11-30T14:42:28+02:00"
   },
   {
+    "name": "MMM-DynamicSnow",
+    "category": "Weather",
+    "url": "https://github.com/cgillinger/MMM-DynamicSnow",
+    "id": "cgillinger/MMM-DynamicSnow",
+    "maintainer": "cgillinger",
+    "maintainerURL": "",
+    "description": "Performance-optimized falling snow effect with two modes - light mode for Raspberry Pi and rich mode for more powerful devices. Adds a gentle overlay of falling snowflakes across your entire mirror surface.",
+    "issues": true,
+    "stars": 0,
+    "license": "MIT",
+    "tags": [
+      "snow",
+      "effect",
+      "christmas",
+      "winter",
+      "dynamic",
+      "weather"
+    ],
+    "image": "screenshots-light.jpg",
+    "defaultSortWeight": 2,
+    "lastCommit": "2024-12-27T16:27:00+01:00"
+  },
+  {
     "name": "MMM-DynamicWeather",
     "category": "Weather",
     "url": "https://github.com/scottcl88/MMM-DynamicWeather",
@@ -5723,7 +5746,7 @@
     "maintainerURL": "https://github.com/Fneves7",
     "description": "Display the cheapest gas station prices in Portugal.",
     "issues": true,
-    "stars": 0,
+    "stars": 1,
     "license": "GPL-3.0",
     "image": "image.jpg",
     "defaultSortWeight": 2,
@@ -5930,7 +5953,7 @@
     "maintainerURL": "",
     "description": "Displays live image of our planet.",
     "issues": true,
-    "stars": 69,
+    "stars": 70,
     "license": "MIT",
     "image": "screenshot.jpg",
     "defaultSortWeight": 9,
@@ -5963,7 +5986,7 @@
     "maintainerURL": "https://github.com/kurtern84",
     "description": "Displays the user's Gmail profile picture and name, and checks for unread emails in the inbox.",
     "issues": true,
-    "stars": 1,
+    "stars": 2,
     "license": "MIT",
     "image": "screenshot.jpg",
     "defaultSortWeight": 4,
@@ -6007,7 +6030,7 @@
     "maintainerURL": "https://wiki.bugsounet.fr",
     "description": "MMM-GoogleAssistant is an real embedded Google assistant on MagicMirror\u00b2 with many <a target=\"_blank\" href=\"#extended-plugins-for-mmm-googleassistant\">plugins</a>.",
     "issues": true,
-    "stars": 95,
+    "stars": 94,
     "hasGithubIssues": false,
     "license": "MIT",
     "tags": [
@@ -6063,7 +6086,7 @@
     "maintainerURL": "https://github.com/randomBrainstormer",
     "description": "Get your Google Calendars in the shape of MagicMirror's default calendar.",
     "issues": true,
-    "stars": 73,
+    "stars": 74,
     "license": "MIT",
     "tags": [
       "google",
@@ -6117,7 +6140,7 @@
     "maintainerURL": "",
     "description": "Slideshow of photos stored in Google Drive.",
     "issues": true,
-    "stars": 11,
+    "stars": 12,
     "license": "MIT",
     "image": ".screenshots-theme_insetShadow.jpg",
     "defaultSortWeight": 3,
@@ -7451,6 +7474,20 @@
     "image": "screenshot-MMM-iFrame-Ping.jpg",
     "defaultSortWeight": 10,
     "lastCommit": "2021-01-27T18:57:13+01:00"
+  },
+  {
+    "name": "MMM-iframes",
+    "category": "Utility / IoT / 3rd Party / Integration",
+    "url": "https://github.com/mathew-fleisch/MMM-iframes",
+    "id": "mathew-fleisch/MMM-iframes",
+    "maintainer": "mathew-fleisch",
+    "maintainerURL": "",
+    "description": "A simple way to cycle through a list of iframe sources. Example shows live video sources from YouTube and other webcam sources.",
+    "issues": true,
+    "stars": 0,
+    "license": "MIT",
+    "defaultSortWeight": 6,
+    "lastCommit": "2024-12-27T07:05:35-08:00"
   },
   {
     "name": "MMM-iHaveBeenThere",
@@ -16640,27 +16677,6 @@
     "stars": 55,
     "defaultSortWeight": 5,
     "lastCommit": "2018-02-13T22:37:11+01:00"
-  },
-  {
-    "name": "MMM-SnowEffect",
-    "category": "Entertainment / Misc",
-    "url": "https://github.com/cgillinger/MMM-SnowEffect",
-    "id": "cgillinger/MMM-SnowEffect",
-    "maintainer": "cgillinger",
-    "maintainerURL": "",
-    "description": "Performance-optimized falling snow effect with two modes - light mode for Raspberry Pi and rich mode for more powerful devices. Adds a gentle overlay of falling snowflakes across your entire mirror surface.",
-    "issues": true,
-    "stars": 1,
-    "license": "MIT",
-    "tags": [
-      "snow",
-      "effect",
-      "christmas",
-      "winter"
-    ],
-    "image": "light.jpg",
-    "defaultSortWeight": 2,
-    "lastCommit": "2024-12-18T13:25:44+01:00"
   },
   {
     "name": "MMM-soccer",

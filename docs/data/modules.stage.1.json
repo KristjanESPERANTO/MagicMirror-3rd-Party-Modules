@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "2024-12-27T04:30:15.683Z",
+  "lastUpdate": "2024-12-27T16:30:12.881Z",
   "modules": [
     {
       "name": "MMM-01ZM",
@@ -2410,6 +2410,16 @@
       "issues": []
     },
     {
+      "name": "MMM-DynamicSnow",
+      "category": "Weather",
+      "url": "https://github.com/cgillinger/MMM-DynamicSnow",
+      "id": "cgillinger/MMM-DynamicSnow",
+      "maintainer": "cgillinger",
+      "maintainerURL": "",
+      "description": "Performance-optimized falling snow effect with two modes - light mode for Raspberry Pi and rich mode for more powerful devices. Adds a gentle overlay of falling snowflakes across your entire mirror surface.",
+      "issues": []
+    },
+    {
       "name": "MMM-DynamicWeather",
       "category": "Weather",
       "url": "https://github.com/scottcl88/MMM-DynamicWeather",
@@ -4499,6 +4509,16 @@
       "maintainer": "AgP42",
       "maintainerURL": "https://github.com/AgP42",
       "description": "An iFrame module to display any web content to your MagicMirror² (including YouTube, IP cameras, etc.). Several functionalities like auto-refresh, Ping the URL before to display it and last update time display. See also <a target=\"_blank\" href=\"https://forum.magicmirror.builders/topic/9750/mmm-smartwebdisplay-display-web-contents-including-youtube-on-your-mm\">MMM-SmartWebDisplay</a>.",
+      "issues": []
+    },
+    {
+      "name": "MMM-iframes",
+      "category": "Utility / IoT / 3rd Party / Integration",
+      "url": "https://github.com/mathew-fleisch/MMM-iframes",
+      "id": "mathew-fleisch/MMM-iframes",
+      "maintainer": "mathew-fleisch",
+      "maintainerURL": "",
+      "description": "A simple way to cycle through a list of iframe sources. Example shows live video sources from YouTube and other webcam sources.",
       "issues": []
     },
     {
@@ -10006,16 +10026,6 @@
       "maintainer": "MichMich",
       "maintainerURL": "",
       "description": "More realistic snow plugin to improve your winter experience.",
-      "issues": []
-    },
-    {
-      "name": "MMM-SnowEffect",
-      "category": "Entertainment / Misc",
-      "url": "https://github.com/cgillinger/MMM-SnowEffect",
-      "id": "cgillinger/MMM-SnowEffect",
-      "maintainer": "cgillinger",
-      "maintainerURL": "",
-      "description": "Performance-optimized falling snow effect with two modes - light mode for Raspberry Pi and rich mode for more powerful devices. Adds a gentle overlay of falling snowflakes across your entire mirror surface.",
       "issues": []
     },
     {

@@ -3919,6 +3919,27 @@
     "stars": 14
   },
   {
+    "name": "MMM-DynamicSnow",
+    "category": "Weather",
+    "url": "https://github.com/cgillinger/MMM-DynamicSnow",
+    "id": "cgillinger/MMM-DynamicSnow",
+    "maintainer": "cgillinger",
+    "maintainerURL": "",
+    "description": "Performance-optimized falling snow effect with two modes - light mode for Raspberry Pi and rich mode for more powerful devices. Adds a gentle overlay of falling snowflakes across your entire mirror surface.",
+    "issues": [],
+    "stars": 0,
+    "license": "MIT",
+    "tags": [
+      "snow",
+      "effect",
+      "christmas",
+      "winter",
+      "dynamic",
+      "weather"
+    ],
+    "image": "screenshots-light.jpg"
+  },
+  {
     "name": "MMM-DynamicWeather",
     "category": "Weather",
     "url": "https://github.com/scottcl88/MMM-DynamicWeather",
@@ -5639,7 +5660,7 @@
     "issues": [
       "There is no `package.json`. We need this file to gather information about the module for the module list page."
     ],
-    "stars": 0,
+    "stars": 1,
     "license": "GPL-3.0",
     "image": "image.jpg"
   },
@@ -5851,7 +5872,7 @@
       "`package.json` issue: No description",
       "There are no keywords in 'package.json'. We would use them as tags on the module list page."
     ],
-    "stars": 69,
+    "stars": 70,
     "license": "MIT",
     "image": "screenshot.jpg"
   },
@@ -5885,7 +5906,7 @@
       "There are no specific keywords in 'package.json'. We would use them as tags on the module list page. Add a few meaningful terms to the keywords in the package.json. Not just “magicmirror” or “module”.",
       "Issue: The license in the package.json (ISC) doesn't match the license file (MIT)."
     ],
-    "stars": 1,
+    "stars": 2,
     "license": "MIT",
     "image": "screenshot.jpg"
   },
@@ -5932,7 +5953,7 @@
     "issues": [
       "Issues are not enabled in the GitHub repository. So users cannot report bugs. Please enable issues in your repo."
     ],
-    "stars": 95,
+    "stars": 94,
     "hasGithubIssues": false,
     "license": "MIT",
     "tags": [
@@ -5988,7 +6009,7 @@
     "maintainerURL": "https://github.com/randomBrainstormer",
     "description": "Get your Google Calendars in the shape of MagicMirror's default calendar.",
     "issues": [],
-    "stars": 73,
+    "stars": 74,
     "license": "MIT",
     "tags": [
       "google",
@@ -6043,7 +6064,7 @@
     "issues": [
       "There are no keywords in 'package.json'. We would use them as tags on the module list page."
     ],
-    "stars": 11,
+    "stars": 12,
     "license": "MIT",
     "image": ".screenshots-theme_insetShadow.jpg"
   },
@@ -7370,6 +7391,23 @@
     ],
     "license": "MIT",
     "image": "screenshot-MMM-iFrame-Ping.jpg"
+  },
+  {
+    "name": "MMM-iframes",
+    "category": "Utility / IoT / 3rd Party / Integration",
+    "url": "https://github.com/mathew-fleisch/MMM-iframes",
+    "id": "mathew-fleisch/MMM-iframes",
+    "maintainer": "mathew-fleisch",
+    "maintainerURL": "",
+    "description": "A simple way to cycle through a list of iframe sources. Example shows live video sources from YouTube and other webcam sources.",
+    "issues": [
+      "`package.json` issue: No repository field.",
+      "There are no keywords in 'package.json'. We would use them as tags on the module list page.",
+      "Issue: The license in the package.json (ISC) doesn't match the license file (MIT).",
+      "No image found."
+    ],
+    "stars": 0,
+    "license": "MIT"
   },
   {
     "name": "MMM-iHaveBeenThere",
@@ -16420,25 +16458,6 @@
       "There is no `package.json`. We need this file to gather information about the module for the module list page."
     ],
     "stars": 55
-  },
-  {
-    "name": "MMM-SnowEffect",
-    "category": "Entertainment / Misc",
-    "url": "https://github.com/cgillinger/MMM-SnowEffect",
-    "id": "cgillinger/MMM-SnowEffect",
-    "maintainer": "cgillinger",
-    "maintainerURL": "",
-    "description": "Performance-optimized falling snow effect with two modes - light mode for Raspberry Pi and rich mode for more powerful devices. Adds a gentle overlay of falling snowflakes across your entire mirror surface.",
-    "issues": [],
-    "stars": 1,
-    "license": "MIT",
-    "tags": [
-      "snow",
-      "effect",
-      "christmas",
-      "winter"
-    ],
-    "image": "light.jpg"
   },
   {
     "name": "MMM-soccer",

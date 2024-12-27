@@ -1,16 +1,16 @@
 # Result of the module analysis
 
-Last update: 2024-12-27T05:38:46+01:00
+Last update: 2024-12-27T17:40:07+01:00
 
 ## Statistics
 
 |                      | number   |
 |:---------------------|:--------:|
-| modules analyzed     |   1230   |
+| modules analyzed     |   1231   |
 | maintainer           |    653   |
-| modules with issues  |   1229   |
-| issues               |   6991   |
-| modules at github    |   1108   |
+| modules with issues  |   1230   |
+| issues               |   6998   |
+| modules at github    |   1109   |
 | modules at gitlab    |     10   |
 | modules at bitbucket |      1   |
 
@@ -1974,6 +1974,13 @@ Last update: 2024-12-27T05:38:46+01:00
 4. Warning: No LICENSE file.
 5. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
 
+### [MMM-DynamicSnow by cgillinger](https://github.com/cgillinger/MMM-DynamicSnow)
+
+1. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
+2. ESLint issues:
+   - node_helper.js: Line 80, Column 56: 'payload' is defined but never used. (rule: no-unused-vars)
+
+
 ### [MMM-DynamicWeather by scottcl88](https://github.com/scottcl88/MMM-DynamicWeather)
 
 1. Recommendation: Found `uses: actions/checkout@v2` in file `codeql-analysis.yml`: Replace it with v4.
@@ -3762,6 +3769,16 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
 8. Typo: Found `Magic Mirror` in file `package.json`: Replace it with `MagicMirror²`.
 9. Warning: No LICENSE file.
 10. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
+
+### [MMM-iframes by mathew-fleisch](https://github.com/mathew-fleisch/MMM-iframes)
+
+1. `package.json` issue: No repository field.
+2. There are no keywords in 'package.json'. We would use them as tags on the module list page.
+3. Issue: The license in the package.json (ISC) doesn't match the license file (MIT).
+4. No image found.
+5. Typo: Found `[MagicMirror]` in file `README.md`: Replace it with `[MagicMirror²]`.
+6. Recommendation: The README seems not to have an install instruction (the words 'install' or 'installation' are missing). Please add one.
+7. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
 
 ### [MMM-iHaveBeenThere by basti0001](https://github.com/basti0001/MMM-iHaveBeenThere)
 
@@ -8682,13 +8699,6 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
 3. Recommendation: The README seems not to have an update instruction (the word 'update' is missing). Please add one.
 4. Warning: No LICENSE file.
 5. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
-
-### [MMM-SnowEffect by cgillinger](https://github.com/cgillinger/MMM-SnowEffect)
-
-1. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
-2. ESLint issues:
-   - node_helper.js: Line 14, Column 42: 'notification' is defined but never used. (rule: no-unused-vars)
-
 
 ### [MMM-soccer by fewieden](https://github.com/fewieden/MMM-soccer)
 
