@@ -127,7 +127,7 @@
     "maintainerURL": "",
     "description": "Simple advent calendar. New in 2024. Will be updated in 2025.",
     "issues": [],
-    "stars": 0,
+    "stars": 2,
     "license": "MIT"
   },
   {
@@ -3710,7 +3710,7 @@
     "maintainerURL": "https://github.com/tbouron",
     "description": "Use ADS-B systems to track and display nearby planes.",
     "issues": [],
-    "stars": 15,
+    "stars": 16,
     "license": "Apache-2.0"
   },
   {
@@ -3841,7 +3841,7 @@
     "maintainerURL": "",
     "description": "Controlling an RGB-LED strip around a smart mirror with or without touch input. It provides features for static background lighting, highly customizable effects on notifications and party lighting.",
     "issues": [],
-    "stars": 13,
+    "stars": 14,
     "license": "MPL-2.0"
   },
   {

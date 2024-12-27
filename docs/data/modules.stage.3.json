@@ -185,7 +185,7 @@
     "issues": [
       "There is no `package.json`. We need this file to gather information about the module for the module list page."
     ],
-    "stars": 0,
+    "stars": 2,
     "license": "MIT",
     "image": "Example.jpg"
   },
@@ -5138,7 +5138,7 @@
     "issues": [
       "There are no keywords in 'package.json'. We would use them as tags on the module list page."
     ],
-    "stars": 15,
+    "stars": 16,
     "license": "Apache-2.0",
     "image": "screenshot-at-the-window.jpg"
   },
@@ -5306,7 +5306,7 @@
     "maintainerURL": "",
     "description": "Controlling an RGB-LED strip around a smart mirror with or without touch input. It provides features for static background lighting, highly customizable effects on notifications and party lighting.",
     "issues": [],
-    "stars": 13,
+    "stars": 14,
     "license": "MPL-2.0",
     "tags": [
       "led strip",
