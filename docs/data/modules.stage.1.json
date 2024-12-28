@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "2024-12-27T16:30:12.881Z",
+  "lastUpdate": "2024-12-28T04:30:18.386Z",
   "modules": [
     {
       "name": "MMM-01ZM",
@@ -1779,6 +1779,16 @@
       "maintainer": "matteodanelli",
       "maintainerURL": "",
       "description": "Display cryptocurrencies ticker price, with graphs and changes over time.",
+      "issues": []
+    },
+    {
+      "name": "MMM-CryptoPortfolio",
+      "category": "Finance",
+      "url": "https://github.com/DzMassi/MMM-CryptoPortfolio",
+      "id": "DzMassi/MMM-CryptoPortfolio",
+      "maintainer": "DzMassi",
+      "maintainerURL": "",
+      "description": "Displays real-time performance and balance of your cryptocurrency portfolio.",
       "issues": []
     },
     {

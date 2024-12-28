@@ -2909,6 +2909,23 @@
     "image": "MMM-cryptocurrency.jpg"
   },
   {
+    "name": "MMM-CryptoPortfolio",
+    "category": "Finance",
+    "url": "https://github.com/DzMassi/MMM-CryptoPortfolio",
+    "id": "DzMassi/MMM-CryptoPortfolio",
+    "maintainer": "DzMassi",
+    "maintainerURL": "",
+    "description": "Displays real-time performance and balance of your cryptocurrency portfolio.",
+    "issues": [
+      "`package.json` issue: No repository field.",
+      "`package.json` issue: No license field.",
+      "There are no keywords in 'package.json'. We would use them as tags on the module list page.",
+      "No compatible or wrong license field in 'package.json' or LICENSE file. Without that, we can't use an image."
+    ],
+    "stars": 0,
+    "license": "NOASSERTION"
+  },
+  {
     "name": "MMM-CTA",
     "category": "Transport / Travel",
     "url": "https://github.com/NateDee/MMM-CTA",
@@ -6126,7 +6143,7 @@
     "maintainerURL": "https://github.com/MartinGris",
     "description": "Tracking of multiple objects on a google map. Position can be updated by a notification.",
     "issues": [],
-    "stars": 16,
+    "stars": 17,
     "license": "MIT",
     "tags": [
       "google maps",
@@ -6164,7 +6181,7 @@
     "maintainerURL": "https://github.com/hermanho",
     "description": "Image gallery or wallpaper with your Google Photos account.",
     "issues": [],
-    "stars": 172,
+    "stars": 174,
     "license": "MIT",
     "tags": [
       "googlephotos"
@@ -6232,7 +6249,7 @@
     "maintainerURL": "https://github.com/spydersoft-consulting",
     "description": "Display Google Tasks with Planned View.",
     "issues": [],
-    "stars": 6,
+    "stars": 7,
     "license": "MIT",
     "tags": [
       "scheduler"
@@ -6265,7 +6282,7 @@
     "maintainerURL": "",
     "description": "Text-to-Speech module with Google Cloud TTS API. Give a voice to your Mirror.",
     "issues": [],
-    "stars": 12,
+    "stars": 13,
     "license": "MIT",
     "tags": [
       "text-to-speech",
@@ -6361,7 +6378,7 @@
     "issues": [
       "There is no `package.json`. We need this file to gather information about the module for the module list page."
     ],
-    "stars": 37,
+    "stars": 38,
     "license": "MIT",
     "image": "EmbedURL_from_Grafana.jpg"
   },
@@ -6393,7 +6410,7 @@
     "maintainerURL": "",
     "description": "Detecting 3D gesture with GroveGesture Sensor(PAJ7620u2).",
     "issues": [],
-    "stars": 38,
+    "stars": 39,
     "license": "MIT",
     "tags": [
       "grove gesture",
@@ -6545,7 +6562,7 @@
     "maintainerURL": "",
     "description": "An alternate home-assistant integration.",
     "issues": [],
-    "stars": 32,
+    "stars": 33,
     "license": "GPL-3.0",
     "tags": [
       "home-assistant"

@@ -1,16 +1,16 @@
 # Result of the module analysis
 
-Last update: 2024-12-27T17:40:07+01:00
+Last update: 2024-12-28T05:39:02+01:00
 
 ## Statistics
 
 |                      | number   |
 |:---------------------|:--------:|
-| modules analyzed     |   1231   |
-| maintainer           |    653   |
-| modules with issues  |   1230   |
-| issues               |   6998   |
-| modules at github    |   1109   |
+| modules analyzed     |   1232   |
+| maintainer           |    654   |
+| modules with issues  |   1231   |
+| issues               |   7008   |
+| modules at github    |   1110   |
 | modules at gitlab    |     10   |
 | modules at bitbucket |      1   |
 
@@ -1463,6 +1463,19 @@ Last update: 2024-12-27T17:40:07+01:00
 3. Outdated: Found `MichMich/MagicMirror` in file `README.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
 4. Recommendation: Found `require("https")` in file `node_helper.js`: Replace "https" by "node:https".
 5. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
+
+### [MMM-CryptoPortfolio by DzMassi](https://github.com/DzMassi/MMM-CryptoPortfolio)
+
+1. `package.json` issue: No repository field.
+2. `package.json` issue: No license field.
+3. There are no keywords in 'package.json'. We would use them as tags on the module list page.
+4. No compatible or wrong license field in 'package.json' or LICENSE file. Without that, we can't use an image.
+5. Recommendation: Found `XMLHttpRequest` in file `MMM-CryptoPortfolio.js`: Replace it with built-in fetch.
+6. Recommendation: Found `new Date()` in file `copyright.js`: Consider replacing it by `new Date(Date.now())`. It's helpful for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
+7. Recommendation: Found `"node-fetch"` in file `node_helper.js`: Replace it with built-in fetch.
+8. Recommendation: Found `"node-fetch"` in file `package.json`: Replace it with built-in fetch.
+9. Warning: No LICENSE file.
+10. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
 
 ### [MMM-CTA by NateDee](https://github.com/NateDee/MMM-CTA)
 
@@ -6829,10 +6842,10 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
 ### [MMM-pages by sdetweil](https://github.com/sdetweil/MMM-pages)
 
 1. Information: There are updates for 4 dependencie(s):
-   - @eslint/js                ^9.10.0  →   ^9.17.0
-   - @stylistic/eslint-plugin   ^2.8.0  →   ^2.12.1
-   - eslint                    ^9.10.0  →   ^9.17.0
-   - globals                   ^15.9.0  →  ^15.14.0
+   - @eslint/js                 ^9.16.0  →   ^9.17.0
+   - @stylistic/eslint-plugin   ^2.11.0  →   ^2.12.1
+   - eslint                     ^9.16.0  →   ^9.17.0
+   - globals                   ^15.13.0  →  ^15.14.0
 
 
 ### [EXT-Pages by bugsounet](https://github.com/bugsounet/EXT-Pages)
