@@ -1,16 +1,16 @@
 # Result of the module analysis
 
-Last update: 2024-12-28T05:39:02+01:00
+Last update: 2024-12-29T05:46:41+01:00
 
 ## Statistics
 
 |                      | number   |
 |:---------------------|:--------:|
-| modules analyzed     |   1232   |
+| modules analyzed     |   1233   |
 | maintainer           |    654   |
-| modules with issues  |   1231   |
-| issues               |   7008   |
-| modules at github    |   1110   |
+| modules with issues  |   1232   |
+| issues               |   7010   |
+| modules at github    |   1111   |
 | modules at gitlab    |     10   |
 | modules at bitbucket |      1   |
 
@@ -1090,8 +1090,9 @@ Last update: 2024-12-28T05:39:02+01:00
 
 ### [MMM-Canteen by KristjanESPERANTO](https://github.com/KristjanESPERANTO/MMM-Canteen)
 
-1. Information: There are updates for 1 dependencie(s):
-   - globals  ^15.13.0  →  ^15.14.0
+1. Information: There are updates for 2 dependencie(s):
+   - globals      ^15.13.0  →  ^15.14.0
+   - lint-staged  ^15.2.11  →   ^15.3.0
 
 
 ### [MMM-Canvas by chase-cromwell](https://github.com/chase-cromwell/MMM-Canvas)
@@ -2022,8 +2023,9 @@ Last update: 2024-12-28T05:39:02+01:00
 
 ### [MMM-EasyPix by KristjanESPERANTO](https://github.com/KristjanESPERANTO/MMM-EasyPix)
 
-1. Information: There are updates for 1 dependencie(s):
-   - globals  ^15.13.0  →  ^15.14.0
+1. Information: There are updates for 2 dependencie(s):
+   - globals      ^15.13.0  →  ^15.14.0
+   - lint-staged  ^15.2.11  →   ^15.3.0
 
 
 ### [MMM-Ecobee by parnic](https://github.com/parnic/MMM-Ecobee)
@@ -2660,8 +2662,9 @@ deprecated: no longer maintained, switch to modern iconify-icon web component
 
 ### [MMM-Forum by KristjanESPERANTO](https://github.com/KristjanESPERANTO/MMM-Forum)
 
-1. Information: There are updates for 1 dependencie(s):
-   - globals  ^15.13.0  →  ^15.14.0
+1. Information: There are updates for 2 dependencie(s):
+   - globals      ^15.13.0  →  ^15.14.0
+   - lint-staged  ^15.2.11  →   ^15.3.0
 
 
 ### [MMM-FrameLight by RaspiManu](https://github.com/RaspiManu/MMM-FrameLight)
@@ -4873,7 +4876,7 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
    - eslint-plugin-import              ^2.29.1  →   ^2.31.0
    - globals                           ^15.9.0  →  ^15.14.0
    - husky                             ^9.0.11  →    ^9.1.7
-   - lint-staged                      ^15.2.10  →  ^15.2.11
+   - lint-staged                      ^15.2.10  →   ^15.3.0
    - markdownlint-cli                  ^0.41.0  →   ^0.43.0
    - prettier                           ^3.3.3  →    ^3.4.2
    - semantic-release                  ^24.1.0  →   ^24.2.0
@@ -7525,8 +7528,9 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
 
 ### [MMM-PublicTransportHafas by KristjanESPERANTO](https://github.com/KristjanESPERANTO/MMM-PublicTransportHafas)
 
-1. Information: There are updates for 1 dependencie(s):
-   - globals  ^15.13.0  →  ^15.14.0
+1. Information: There are updates for 2 dependencie(s):
+   - globals      ^15.13.0  →  ^15.14.0
+   - lint-staged  ^15.2.11  →   ^15.3.0
 
 
 ### [MMM-PublicTransportVVO by ChristianGeie](https://github.com/ChristianGeie/MMM-PublicTransportVVO)
@@ -10405,6 +10409,11 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
 6. Outdated: Found `MichMich/MagicMirror` in file `README.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
 7. Warning: No LICENSE file.
 8. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
+
+### [MMM-WeatherEffects by cgillinger](https://github.com/cgillinger/MMM-WeatherEffects)
+
+1. Warning: No LICENSE file.
+2. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
 
 ### [MMM-weatherforecast by jharttech](https://github.com/jharttech/MMM-weatherforecast)
 

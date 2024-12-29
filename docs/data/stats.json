@@ -1,11 +1,11 @@
 {
-  "moduleCounter": 1232,
-  "modulesWithImageCounter": 870,
-  "modulesWithIssuesCounter": 1231,
-  "issueCounter": 7008,
-  "lastUpdate": "2024-12-28T05:39:02+01:00",
+  "moduleCounter": 1233,
+  "modulesWithImageCounter": 871,
+  "modulesWithIssuesCounter": 1232,
+  "issueCounter": 7010,
+  "lastUpdate": "2024-12-29T05:46:41+01:00",
   "repositoryHoster": {
-    "github": 1110,
+    "github": 1111,
     "gitlab": 10,
     "bitbucket": 1
   },
@@ -32,6 +32,7 @@
     "slametps": 6,
     "PierreGode": 5,
     "BrianHepler": 5,
+    "cgillinger": 5,
     "jalibu": 5,
     "ulrichwisser": 5,
     "xadamxk": 5,
@@ -44,7 +45,6 @@
     "Snille": 5,
     "cowboysdude": 4,
     "ItsMeBrille": 4,
-    "cgillinger": 4,
     "MarcLandis": 4,
     "MMM-CalendarExt2": 4,
     "nischi": 4,
