@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "2024-12-29T04:30:16.518Z",
+  "lastUpdate": "2024-12-29T16:30:12.981Z",
   "modules": [
     {
       "name": "MMM-01ZM",
@@ -11805,7 +11805,7 @@
       "id": "nigel-daniels/MMM-Weather-Now",
       "maintainer": "nigel-daniels",
       "maintainerURL": "https://github.com/nigel-daniels",
-      "description": "Simple clean display of the weather now, designed to go with MMM-3Day-Forecast. Now uses WetherAPI as Open Weather reduced the free service :( If you installed an older version ( &lt; 6 May 2024 ), please update and get a new api key!",
+      "description": "Simple clean display of the weather now, designed to go with MMM-3Day-Forecast.",
       "issues": []
     },
     {
@@ -11860,12 +11860,12 @@
     },
     {
       "name": "MMM-WeatherEffects",
-      "category": "Entertainment / Misc",
+      "category": "Weather",
       "url": "https://github.com/cgillinger/MMM-WeatherEffects",
       "id": "cgillinger/MMM-WeatherEffects",
       "maintainer": "cgillinger",
       "maintainerURL": "",
-      "description": "Adds dynamic weather-based effects to your MagicMirror.",
+      "description": "Adds dynamic weather-based effects to your mirror.",
       "issues": []
     },
     {

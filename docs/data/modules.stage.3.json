@@ -6824,21 +6824,6 @@
   {
     "name": "MMM-HomeAssistant",
     "category": "Utility / IoT / 3rd Party / Integration",
-    "url": "https://github.com/zuo000/MMM-HomeAssistant",
-    "id": "zuo000/MMM-HomeAssistant",
-    "maintainer": "zuo000",
-    "maintainerURL": "https://github.com/zuo000",
-    "description": "HomeAssistant frontend module using HA REST API, including Light, Switch, Sensor.",
-    "issues": [
-      "There is no `package.json`. We need this file to gather information about the module for the module list page."
-    ],
-    "stars": 26,
-    "license": "MIT",
-    "image": "screenshot.jpg"
-  },
-  {
-    "name": "MMM-HomeAssistant",
-    "category": "Utility / IoT / 3rd Party / Integration",
     "url": "https://github.com/yourdawi/MMM-HomeAssistant",
     "id": "yourdawi/MMM-HomeAssistant",
     "maintainer": "yourdawi",
@@ -6851,6 +6836,21 @@
     ],
     "stars": 1,
     "license": "MIT"
+  },
+  {
+    "name": "MMM-HomeAssistant",
+    "category": "Utility / IoT / 3rd Party / Integration",
+    "url": "https://github.com/zuo000/MMM-HomeAssistant",
+    "id": "zuo000/MMM-HomeAssistant",
+    "maintainer": "zuo000",
+    "maintainerURL": "https://github.com/zuo000",
+    "description": "HomeAssistant frontend module using HA REST API, including Light, Switch, Sensor.",
+    "issues": [
+      "There is no `package.json`. We need this file to gather information about the module for the module list page."
+    ],
+    "stars": 26,
+    "license": "MIT",
+    "image": "screenshot.jpg"
   },
   {
     "name": "MMM-homeassistant-sensors",
@@ -7500,7 +7500,7 @@
     "maintainerURL": "",
     "description": "Show images and photos.",
     "issues": [],
-    "stars": 46,
+    "stars": 47,
     "license": "MIT",
     "tags": [
       "photos",
@@ -19416,7 +19416,7 @@
     "id": "nigel-daniels/MMM-Weather-Now",
     "maintainer": "nigel-daniels",
     "maintainerURL": "https://github.com/nigel-daniels",
-    "description": "Simple clean display of the weather now, designed to go with MMM-3Day-Forecast. Now uses WetherAPI as Open Weather reduced the free service :( If you installed an older version ( &lt; 6 May 2024 ), please update and get a new api key!",
+    "description": "Simple clean display of the weather now, designed to go with MMM-3Day-Forecast.",
     "issues": [],
     "stars": 7,
     "license": "MIT",
@@ -19507,12 +19507,12 @@
   },
   {
     "name": "MMM-WeatherEffects",
-    "category": "Entertainment / Misc",
+    "category": "Weather",
     "url": "https://github.com/cgillinger/MMM-WeatherEffects",
     "id": "cgillinger/MMM-WeatherEffects",
     "maintainer": "cgillinger",
     "maintainerURL": "",
-    "description": "Adds dynamic weather-based effects to your MagicMirror.",
+    "description": "Adds dynamic weather-based effects to your mirror.",
     "issues": [],
     "stars": 0,
     "tags": [

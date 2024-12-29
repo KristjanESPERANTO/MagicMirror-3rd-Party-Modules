@@ -6900,6 +6900,20 @@
   {
     "name": "MMM-HomeAssistant",
     "category": "Utility / IoT / 3rd Party / Integration",
+    "url": "https://github.com/yourdawi/MMM-HomeAssistant",
+    "id": "yourdawi/MMM-HomeAssistant",
+    "maintainer": "yourdawi",
+    "maintainerURL": "https://github.com/yourdawi",
+    "description": "Display information out of HomeAssistant.",
+    "issues": true,
+    "stars": 1,
+    "license": "MIT",
+    "defaultSortWeight": 6,
+    "lastCommit": "2024-12-22T13:05:46+01:00"
+  },
+  {
+    "name": "MMM-HomeAssistant",
+    "category": "Utility / IoT / 3rd Party / Integration",
     "url": "https://github.com/zuo000/MMM-HomeAssistant",
     "id": "zuo000/MMM-HomeAssistant",
     "maintainer": "zuo000",
@@ -6911,20 +6925,6 @@
     "image": "screenshot.jpg",
     "defaultSortWeight": 4,
     "lastCommit": "2020-04-08T18:54:01-07:00"
-  },
-  {
-    "name": "MMM-HomeAssistant",
-    "category": "Utility / IoT / 3rd Party / Integration",
-    "url": "https://github.com/yourdawi/MMM-HomeAssistant",
-    "id": "yourdawi/MMM-HomeAssistant",
-    "maintainer": "yourdawi",
-    "maintainerURL": "https://github.com/yourdawi",
-    "description": "Display information out of HomeAssistant.",
-    "issues": true,
-    "stars": 1,
-    "license": "MIT",
-    "defaultSortWeight": 6,
-    "lastCommit": "2024-12-22T13:05:46+01:00"
   },
   {
     "name": "MMM-homeassistant-sensors",
@@ -7578,7 +7578,7 @@
     "maintainerURL": "",
     "description": "Show images and photos.",
     "issues": true,
-    "stars": 46,
+    "stars": 47,
     "license": "MIT",
     "tags": [
       "photos",
@@ -11106,7 +11106,7 @@
       "water meter"
     ],
     "defaultSortWeight": 3,
-    "lastCommit": "2024-12-12T21:59:07+01:00"
+    "lastCommit": "2024-12-29T12:27:26+01:00"
   },
   {
     "name": "MMM-MyMinecraft",
@@ -19681,7 +19681,7 @@
     "id": "nigel-daniels/MMM-Weather-Now",
     "maintainer": "nigel-daniels",
     "maintainerURL": "https://github.com/nigel-daniels",
-    "description": "Simple clean display of the weather now, designed to go with MMM-3Day-Forecast. Now uses WetherAPI as Open Weather reduced the free service :( If you installed an older version ( &lt; 6 May 2024 ), please update and get a new api key!",
+    "description": "Simple clean display of the weather now, designed to go with MMM-3Day-Forecast.",
     "issues": true,
     "stars": 7,
     "license": "MIT",
@@ -19772,12 +19772,12 @@
   },
   {
     "name": "MMM-WeatherEffects",
-    "category": "Entertainment / Misc",
+    "category": "Weather",
     "url": "https://github.com/cgillinger/MMM-WeatherEffects",
     "id": "cgillinger/MMM-WeatherEffects",
     "maintainer": "cgillinger",
     "maintainerURL": "",
-    "description": "Adds dynamic weather-based effects to your MagicMirror.",
+    "description": "Adds dynamic weather-based effects to your mirror.",
     "issues": true,
     "stars": 0,
     "tags": [
@@ -19791,7 +19791,7 @@
     "license": "MIT",
     "image": "screenshots-light.jpg",
     "defaultSortWeight": 1,
-    "lastCommit": "2024-12-28T13:46:18+01:00"
+    "lastCommit": "2024-12-29T15:38:26+01:00"
   },
   {
     "name": "MMM-weatherforecast",
