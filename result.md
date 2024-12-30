@@ -1,16 +1,16 @@
 # Result of the module analysis
 
-Last update: 2024-12-29T17:38:47+01:00
+Last update: 2024-12-30T05:38:51+01:00
 
 ## Statistics
 
 |                      | number   |
 |:---------------------|:--------:|
-| modules analyzed     |   1233   |
-| maintainer           |    654   |
-| modules with issues  |   1232   |
-| issues               |   7010   |
-| modules at github    |   1111   |
+| modules analyzed     |   1236   |
+| maintainer           |    655   |
+| modules with issues  |   1235   |
+| issues               |   7022   |
+| modules at github    |   1114   |
 | modules at gitlab    |     10   |
 | modules at bitbucket |      1   |
 
@@ -1475,8 +1475,7 @@ Last update: 2024-12-29T17:38:47+01:00
 6. Recommendation: Found `new Date()` in file `copyright.js`: Consider replacing it by `new Date(Date.now())`. It's helpful for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
 7. Recommendation: Found `"node-fetch"` in file `node_helper.js`: Replace it with built-in fetch.
 8. Recommendation: Found `"node-fetch"` in file `package.json`: Replace it with built-in fetch.
-9. Warning: No LICENSE file.
-10. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
+9. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
 
 ### [MMM-CTA by NateDee](https://github.com/NateDee/MMM-CTA)
 
@@ -2244,6 +2243,12 @@ deprecated: no longer maintained, switch to modern iconify-icon web component
 3. Recommendation: The README seems not to have an update instruction (the word 'update' is missing). Please add one.
 4. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
 
+### [MMM-EventSearch by ChrisF1976](https://github.com/ChrisF1976/MMM-EventSearch)
+
+1. There is no `package.json`. We need this file to gather information about the module for the module list page.
+2. Recommendation: Found `"node-fetch"` in file `node_helper.js`: Replace it with built-in fetch.
+3. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
+
 ### [MMM-EveryNews by themox](https://github.com/themox/MMM-EveryNews)
 
 1. There is no `package.json`. We need this file to gather information about the module for the module list page.
@@ -2499,6 +2504,11 @@ deprecated: no longer maintained, switch to modern iconify-icon web component
 4. Deprecated: Found `require("request")` in file `node_helper.js`: Replace it with built-in fetch.
 5. Warning: No LICENSE file.
 6. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
+
+### [MMM-Fireworks by ChrisF1976](https://github.com/ChrisF1976/MMM-Fireworks)
+
+1. There is no `package.json`. We need this file to gather information about the module for the module list page.
+2. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
 
 ### [MMM-Fish by nigel-daniels](https://github.com/nigel-daniels/MMM-Fish)
 
@@ -5716,6 +5726,17 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
    - eslint                    ^9.15.0  →  ^9.17.0
 
 
+### [MMM-MVG by KoblerS](https://github.com/KoblerS/MMM-MVG)
+
+1. `package.json` issue: No description
+2. Recommendation: Found `jshint` in file `Gruntfile.js`: Replace "jshint" by "eslint".
+3. Typo: Found `Magic Mirror` in file `MMM-MVG.js`: Replace it with `MagicMirror²`.
+4. Recommendation: Found `new Date()` in file `MMM-MVG.js`: Consider replacing it by `new Date(Date.now())`. It's helpful for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
+5. Outdated: Found `MichMich/MagicMirror` in file `README.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
+6. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
+7. Recommendation: Found `XMLHttpRequest` in file `node_helper.js`: Replace it with built-in fetch.
+8. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
+
 ### [MMM-MVVWiesty by wiesty](https://github.com/wiesty/MMM-MVVWiesty)
 
 1. Recommendation: Found `new Date()` in file `MMM-MVVWiesty.js`: Consider replacing it by `new Date(Date.now())`. It's helpful for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
@@ -7104,7 +7125,7 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
 2. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
 3. Information: There are updates for 2 dependencie(s):
    - async                ^3.2.5  →    ^3.2.6
-   - systeminformation  ^5.21.24  →  ^5.23.23
+   - systeminformation  ^5.21.24  →  ^5.23.24
 
 
 ### [MMM-ping by fewieden](https://github.com/fewieden/MMM-ping)

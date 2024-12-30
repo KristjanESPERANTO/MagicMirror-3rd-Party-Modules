@@ -3251,6 +3251,18 @@
     "license": "MIT"
   },
   {
+    "name": "MMM-EventSearch",
+    "category": "Entertainment / Misc",
+    "url": "https://github.com/ChrisF1976/MMM-EventSearch",
+    "id": "ChrisF1976/MMM-EventSearch",
+    "maintainer": "ChrisF1976",
+    "maintainerURL": "",
+    "description": "Fetches and displays event information using the SerpAPI to search for events based on a given query.",
+    "issues": [],
+    "stars": 0,
+    "license": "MIT"
+  },
+  {
     "name": "MMM-EveryNews",
     "category": "Entertainment / Misc",
     "url": "https://github.com/themox/MMM-EveryNews",
@@ -3603,6 +3615,18 @@
     "outdated": "Abandoned. Repo has been archived at 2024-01-22.",
     "stars": 0,
     "isArchived": true,
+    "license": "MIT"
+  },
+  {
+    "name": "MMM-Fireworks",
+    "category": "Entertainment / Misc",
+    "url": "https://github.com/ChrisF1976/MMM-Fireworks",
+    "id": "ChrisF1976/MMM-Fireworks",
+    "maintainer": "ChrisF1976",
+    "maintainerURL": "",
+    "description": "Shows a firework animation on your Mirror.",
+    "issues": [],
+    "stars": 0,
     "license": "MIT"
   },
   {
@@ -5563,7 +5587,7 @@
     "maintainerURL": "",
     "description": "Show my Smartthings Home automation device status using firebase realtime database.",
     "issues": [],
-    "stars": 12,
+    "stars": 11,
     "license": "MIT"
   },
   {
@@ -7814,6 +7838,18 @@
     "description": "Play any music found on a USB Key or in defined local directory.",
     "issues": [],
     "stars": 4,
+    "license": "MIT"
+  },
+  {
+    "name": "MMM-MVG",
+    "category": "Transport / Travel",
+    "url": "https://github.com/KoblerS/MMM-MVG",
+    "id": "KoblerS/MMM-MVG",
+    "maintainer": "KoblerS",
+    "maintainerURL": "",
+    "description": "Display public transportation from Munich (MVG) in Germany.",
+    "issues": [],
+    "stars": 0,
     "license": "MIT"
   },
   {

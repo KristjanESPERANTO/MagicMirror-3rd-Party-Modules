@@ -4509,6 +4509,21 @@
     "image": "icons-go.jpg"
   },
   {
+    "name": "MMM-EventSearch",
+    "category": "Entertainment / Misc",
+    "url": "https://github.com/ChrisF1976/MMM-EventSearch",
+    "id": "ChrisF1976/MMM-EventSearch",
+    "maintainer": "ChrisF1976",
+    "maintainerURL": "",
+    "description": "Fetches and displays event information using the SerpAPI to search for events based on a given query.",
+    "issues": [
+      "There is no `package.json`. We need this file to gather information about the module for the module list page."
+    ],
+    "stars": 0,
+    "license": "MIT",
+    "image": "MMM-EventSearch.jpg"
+  },
+  {
     "name": "MMM-EveryNews",
     "category": "Entertainment / Misc",
     "url": "https://github.com/themox/MMM-EveryNews",
@@ -4993,6 +5008,21 @@
       "matkahuolto"
     ],
     "image": "screenshot_finparcel.jpg"
+  },
+  {
+    "name": "MMM-Fireworks",
+    "category": "Entertainment / Misc",
+    "url": "https://github.com/ChrisF1976/MMM-Fireworks",
+    "id": "ChrisF1976/MMM-Fireworks",
+    "maintainer": "ChrisF1976",
+    "maintainerURL": "",
+    "description": "Shows a firework animation on your Mirror.",
+    "issues": [
+      "There is no `package.json`. We need this file to gather information about the module for the module list page."
+    ],
+    "stars": 0,
+    "license": "MIT",
+    "image": "MMM-Fireworks.jpg"
   },
   {
     "name": "MMM-Fish",
@@ -7712,7 +7742,7 @@
       "`package.json` issue: No license field.",
       "There are no keywords in 'package.json'. We would use them as tags on the module list page."
     ],
-    "stars": 12,
+    "stars": 11,
     "license": "MIT",
     "image": "docs-images-all-devices-green.jpg"
   },
@@ -10836,6 +10866,26 @@
       "warning"
     ],
     "image": "resources-Screenshot.jpg"
+  },
+  {
+    "name": "MMM-MVG",
+    "category": "Transport / Travel",
+    "url": "https://github.com/KoblerS/MMM-MVG",
+    "id": "KoblerS/MMM-MVG",
+    "maintainer": "KoblerS",
+    "maintainerURL": "",
+    "description": "Display public transportation from Munich (MVG) in Germany.",
+    "issues": [
+      "`package.json` issue: No description"
+    ],
+    "stars": 0,
+    "license": "MIT",
+    "tags": [
+      "public transport",
+      "mvv",
+      "mvg"
+    ],
+    "image": ".github-Example_1.jpg"
   },
   {
     "name": "MMM-mvgmunich",

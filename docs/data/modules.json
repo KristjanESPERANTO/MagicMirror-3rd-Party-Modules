@@ -2982,8 +2982,8 @@
     "issues": true,
     "stars": 0,
     "license": "NOASSERTION",
-    "defaultSortWeight": 9,
-    "lastCommit": "2024-12-28T14:20:16+01:00"
+    "defaultSortWeight": 8,
+    "lastCommit": "2024-12-29T19:03:35+01:00"
   },
   {
     "name": "MMM-CTA",
@@ -4579,6 +4579,21 @@
     "lastCommit": "2022-01-24T19:56:12-05:00"
   },
   {
+    "name": "MMM-EventSearch",
+    "category": "Entertainment / Misc",
+    "url": "https://github.com/ChrisF1976/MMM-EventSearch",
+    "id": "ChrisF1976/MMM-EventSearch",
+    "maintainer": "ChrisF1976",
+    "maintainerURL": "",
+    "description": "Fetches and displays event information using the SerpAPI to search for events based on a given query.",
+    "issues": true,
+    "stars": 0,
+    "license": "MIT",
+    "image": "MMM-EventSearch.jpg",
+    "defaultSortWeight": 2,
+    "lastCommit": "2024-12-29T17:25:21+01:00"
+  },
+  {
     "name": "MMM-EveryNews",
     "category": "Entertainment / Misc",
     "url": "https://github.com/themox/MMM-EveryNews",
@@ -5062,6 +5077,21 @@
     "image": "screenshot_finparcel.jpg",
     "defaultSortWeight": 900,
     "lastCommit": "2023-10-25T21:35:58+03:00"
+  },
+  {
+    "name": "MMM-Fireworks",
+    "category": "Entertainment / Misc",
+    "url": "https://github.com/ChrisF1976/MMM-Fireworks",
+    "id": "ChrisF1976/MMM-Fireworks",
+    "maintainer": "ChrisF1976",
+    "maintainerURL": "",
+    "description": "Shows a firework animation on your Mirror.",
+    "issues": true,
+    "stars": 0,
+    "license": "MIT",
+    "image": "MMM-Fireworks.jpg",
+    "defaultSortWeight": 1,
+    "lastCommit": "2024-12-29T22:32:49+01:00"
   },
   {
     "name": "MMM-Fish",
@@ -7789,7 +7819,7 @@
     "maintainerURL": "",
     "description": "Show my Smartthings Home automation device status using firebase realtime database.",
     "issues": true,
-    "stars": 12,
+    "stars": 11,
     "license": "MIT",
     "image": "docs-images-all-devices-green.jpg",
     "defaultSortWeight": 9,
@@ -10949,6 +10979,26 @@
     "image": "resources-Screenshot.jpg",
     "defaultSortWeight": 5,
     "lastCommit": "2024-11-17T15:15:15+01:00"
+  },
+  {
+    "name": "MMM-MVG",
+    "category": "Transport / Travel",
+    "url": "https://github.com/KoblerS/MMM-MVG",
+    "id": "KoblerS/MMM-MVG",
+    "maintainer": "KoblerS",
+    "maintainerURL": "",
+    "description": "Display public transportation from Munich (MVG) in Germany.",
+    "issues": true,
+    "stars": 0,
+    "license": "MIT",
+    "tags": [
+      "public transport",
+      "mvv",
+      "mvg"
+    ],
+    "image": ".github-Example_1.jpg",
+    "defaultSortWeight": 7,
+    "lastCommit": "2024-12-28T15:32:19+01:00"
   },
   {
     "name": "MMM-mvgmunich",
