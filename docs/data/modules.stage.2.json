@@ -5823,7 +5823,7 @@
     "maintainerURL": "",
     "description": "Show jokes from the JokeAPI.",
     "issues": [],
-    "stars": 11
+    "stars": 10
   },
   {
     "name": "MMM-jokes",
@@ -6134,7 +6134,7 @@
     "maintainerURL": "https://github.com/Tom-Hirschberger",
     "description": "Control the color (and pong game parameters) of led strips via MQTT.",
     "issues": [],
-    "stars": 3,
+    "stars": 4,
     "license": "MIT"
   },
   {

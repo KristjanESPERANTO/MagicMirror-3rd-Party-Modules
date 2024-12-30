@@ -7184,8 +7184,8 @@
     "issues": true,
     "stars": 0,
     "license": "NOASSERTION",
-    "defaultSortWeight": 9,
-    "lastCommit": "2022-02-12T20:18:41+01:00"
+    "defaultSortWeight": 8,
+    "lastCommit": "2024-12-30T12:30:44+01:00"
   },
   {
     "name": "MMM-HTMLSnippet",
@@ -8146,8 +8146,8 @@
     "maintainerURL": "",
     "description": "Show jokes from the JokeAPI.",
     "issues": true,
-    "stars": 11,
-    "defaultSortWeight": 5,
+    "stars": 10,
+    "defaultSortWeight": 6,
     "lastCommit": "2020-09-25T11:29:55+02:00"
   },
   {
@@ -8600,7 +8600,7 @@
     "maintainerURL": "https://github.com/Tom-Hirschberger",
     "description": "Control the color (and pong game parameters) of led strips via MQTT.",
     "issues": true,
-    "stars": 3,
+    "stars": 4,
     "license": "MIT",
     "tags": [
       "led",
