@@ -1,16 +1,16 @@
 # Result of the module analysis
 
-Last update: 2024-12-30T17:38:53+01:00
+Last update: 2024-12-31T05:38:50+01:00
 
 ## Statistics
 
 |                      | number   |
 |:---------------------|:--------:|
-| modules analyzed     |   1236   |
+| modules analyzed     |   1212   |
 | maintainer           |    655   |
-| modules with issues  |   1235   |
-| issues               |   7022   |
-| modules at github    |   1114   |
+| modules with issues  |   1211   |
+| issues               |   6966   |
+| modules at github    |   1090   |
 | modules at gitlab    |     10   |
 | modules at bitbucket |      1   |
 
@@ -495,17 +495,6 @@ Last update: 2024-12-30T17:38:53+01:00
    - yahoo-finance2  ^2.11.3  →  ^2.13.3
 
 
-### [EXT-Background by bugsounet](https://github.com/bugsounet/EXT-Background)
-
-1. Information: There are updates for 3 dependencie(s):
-   - @stylistic/eslint-plugin  ^2.11.0  →  ^2.12.1
-   - esbuild                   ^0.24.0  →  ^0.24.2
-   - eslint                    ^9.15.0  →  ^9.17.0
-
-2. ESLint issues:
-   - installer/minify.js: Line 7, Column 22: "glob" should be replaced with an alternative package. Read more here: https://github.com/es-tooling/module-replacements/blob/main/docs/modules/glob.md (rule: depend/ban-dependencies)
-
-
 ### [MMM-BackgroundSlideshow by darickc](https://github.com/darickc/MMM-BackgroundSlideshow)
 
 1. Deprecated: Found `omxplayer` in file `node_helper.js`: Try to replace it with `vlc`.
@@ -765,26 +754,12 @@ Last update: 2024-12-30T17:38:53+01:00
 
 ### [MMM-BoschSmartHome by jalibu](https://github.com/jalibu/MMM-BoschSmartHome)
 
-1. Recommendation: The README seems not to have an update instruction (the word 'update' is missing). Please add one.
-2. Recommendation: Replace eslintrc by new flat config.
-3. Information: There are updates for 17 dependencie(s):
-   - @rollup/plugin-commonjs             ^25.0.7  →   ^28.0.2
-   - @rollup/plugin-node-resolve         ^15.2.3  →   ^16.0.0
-   - @rollup/plugin-typescript           ^11.1.6  →   ^12.1.2
-   - @stylistic/eslint-plugin             ^1.6.2  →   ^2.12.1
-   - @types/express                     ^4.17.11  →    ^5.0.0
-   - @types/magicmirror-module           ^2.16.0  →   ^2.16.5
-   - @types/node                       ^14.14.22  →  ^22.10.2
-   - @typescript-eslint/eslint-plugin     ^7.0.2  →   ^8.18.2
-   - @typescript-eslint/parser            ^7.0.2  →   ^8.18.2
-   - bosch-smart-home-bridge              ^1.4.1  →    ^1.6.0
-   - eslint                              ^8.57.0  →   ^9.17.0
-   - eslint-plugin-prettier               ^5.1.3  →    ^5.2.1
-   - prettier                             ^3.2.5  →    ^3.4.2
-   - rollup                               ^4.9.6  →   ^4.29.1
-   - rollup-plugin-banner2                ^1.2.2  →    ^1.3.1
-   - rxjs                                 ^7.5.5  →    ^7.8.1
-   - typescript                           ^5.3.3  →    ^5.7.2
+1. Information: There are updates for 1 dependencie(s):
+   - typescript-eslint  ^8.18.2  →  ^8.19.0
+
+2. ESLint issues:
+   - node_helper.js: Line 13, Column 1034: 't' is defined but never used. (rule: no-unused-vars)
+   - node_helper.js: Line 13, Column 2943: This generator function does not have 'yield'. (rule: require-yield)
 
 
 ### [MMM-Bose-Soundtouch by spoturdeal](https://github.com/spoturdeal/MMM-Bose-Soundtouch)
@@ -845,17 +820,6 @@ Last update: 2024-12-30T17:38:53+01:00
 4. Deprecated: Found `require("request")` in file `bring-profile.js`: Replace it with built-in fetch.
 5. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
 6. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
-
-### [EXT-Browser by bugsounet](https://github.com/bugsounet/EXT-Browser)
-
-1. Information: There are updates for 3 dependencie(s):
-   - @stylistic/eslint-plugin  ^2.11.0  →  ^2.12.1
-   - esbuild                   ^0.24.0  →  ^0.24.2
-   - eslint                    ^9.15.0  →  ^9.17.0
-
-2. ESLint issues:
-   - installer/minify.js: Line 7, Column 22: "glob" should be replaced with an alternative package. Read more here: https://github.com/es-tooling/module-replacements/blob/main/docs/modules/glob.md (rule: depend/ban-dependencies)
-
 
 ### [MMM-Bubi by balassy](https://github.com/balassy/MMM-Bubi)
 
@@ -1773,20 +1737,6 @@ Last update: 2024-12-30T17:38:53+01:00
 8. Typo: Found `MagicMirror2` in file `package.json`: Replace it with `MagicMirror²`.
 9. Warning: No LICENSE file.
 10. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
-
-### [EXT-Detector by bugsounet](https://github.com/bugsounet/EXT-Detector)
-
-1. Information: There are updates for 4 dependencie(s):
-   - @stylistic/eslint-plugin   ^2.11.0  →   ^2.12.1
-   - @types/node               ^22.10.1  →  ^22.10.2
-   - esbuild                    ^0.24.0  →   ^0.24.2
-   - eslint                     ^9.16.0  →   ^9.17.0
-
-2. ESLint issues:
-   - installer/dev.js: Line 8, Column 22: "glob" should be replaced with an alternative package. Read more here: https://github.com/es-tooling/module-replacements/blob/main/docs/modules/glob.md (rule: depend/ban-dependencies)
-   - installer/minify.js: Line 7, Column 22: "glob" should be replaced with an alternative package. Read more here: https://github.com/es-tooling/module-replacements/blob/main/docs/modules/glob.md (rule: depend/ban-dependencies)
-   - installer/src.js: Line 8, Column 22: "glob" should be replaced with an alternative package. Read more here: https://github.com/es-tooling/module-replacements/blob/main/docs/modules/glob.md (rule: depend/ban-dependencies)
-
 
 ### [MMM-DHT by ckoutavas](https://github.com/ckoutavas/MMM-DHT)
 
@@ -2714,17 +2664,6 @@ deprecated: no longer maintained, switch to modern iconify-icon web component
 11. Recommendation: Found `new Date()` in file `progressbar.js`: Consider replacing it by `new Date(Date.now())`. It's helpful for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
 12. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
 
-### [EXT-FreeboxTV by bugsounet](https://github.com/bugsounet/EXT-FreeboxTV)
-
-1. Information: There are updates for 3 dependencie(s):
-   - @stylistic/eslint-plugin  ^2.11.0  →  ^2.12.1
-   - esbuild                   ^0.24.0  →  ^0.24.2
-   - eslint                    ^9.15.0  →  ^9.17.0
-
-2. ESLint issues:
-   - installer/minify.js: Line 7, Column 22: "glob" should be replaced with an alternative package. Read more here: https://github.com/es-tooling/module-replacements/blob/main/docs/modules/glob.md (rule: depend/ban-dependencies)
-
-
 ### [MMM-FrenchHoroscope by Amand-M](https://github.com/Amand-M/MMM-FrenchHoroscope)
 
 1. There are no keywords in 'package.json'. We would use them as tags on the module list page.
@@ -3139,17 +3078,6 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
 5. Recommendation: Found `new Date()` in file `node_helper.js`: Consider replacing it by `new Date(Date.now())`. It's helpful for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
 6. Recommendation: Found `axios` in file `package.json`: Replace it with built-in fetch.
 7. Recommendation: No lint script found in package.json. It is recommended to add one.
-
-### [EXT-GooglePhotos by bugsounet](https://github.com/bugsounet/EXT-GooglePhotos)
-
-1. Recommendation: Found `axios` in file `GooglePhotosLib.js`: Replace it with built-in fetch.
-2. Recommendation: Found `axios` in file `package.json`: Replace it with built-in fetch.
-3. Information: There are updates for 4 dependencie(s):
-   - @stylistic/eslint-plugin  ^2.10.1  →  ^2.12.1
-   - axios                      ^1.7.7  →   ^1.7.9
-   - esbuild                   ^0.24.0  →  ^0.24.2
-   - eslint                    ^9.15.0  →  ^9.17.0
-
 
 ### [MMM-GoogleSheets by ryan-d-williams](https://github.com/ryan-d-williams/MMM-GoogleSheets)
 
@@ -4121,8 +4049,8 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
    - @rollup/plugin-commonjs           ^25.0.7  →  ^28.0.2
    - @rollup/plugin-node-resolve       ^15.2.3  →  ^16.0.0
    - @rollup/plugin-typescript         ^11.1.6  →  ^12.1.2
-   - @typescript-eslint/eslint-plugin  ^6.19.1  →  ^8.18.2
-   - @typescript-eslint/parser         ^6.19.1  →  ^8.18.2
+   - @typescript-eslint/eslint-plugin  ^6.19.1  →  ^8.19.0
+   - @typescript-eslint/parser         ^6.19.1  →  ^8.19.0
    - eslint                            ^8.56.0  →  ^9.17.0
    - eslint-plugin-prettier             ^5.1.3  →   ^5.2.1
    - prettier                           ^3.2.4  →   ^3.4.2
@@ -4324,17 +4252,6 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
 5. Recommendation: The README seems not to have an update instruction (the word 'update' is missing). Please add one.
 6. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
 
-### [EXT-Keyboard by bugsounet](https://github.com/bugsounet/EXT-Keyboard)
-
-1. Information: There are updates for 3 dependencie(s):
-   - @stylistic/eslint-plugin  ^2.11.0  →  ^2.12.1
-   - esbuild                   ^0.24.0  →  ^0.24.2
-   - eslint                    ^9.15.0  →  ^9.17.0
-
-2. ESLint issues:
-   - installer/minify.js: Line 7, Column 22: "glob" should be replaced with an alternative package. Read more here: https://github.com/es-tooling/module-replacements/blob/main/docs/modules/glob.md (rule: depend/ban-dependencies)
-
-
 ### [KeyDisplayed by l0b5ter](https://github.com/l0b5ter/KeyDisplayed)
 
 1. There is no `package.json`. We need this file to gather information about the module for the module list page.
@@ -4456,20 +4373,6 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
 6. Recommendation: Found `'node-fetch'` in file `node_helper.js`: Replace it with built-in fetch.
 7. Warning: No LICENSE file.
 8. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
-
-### [EXT-Librespot by bugsounet](https://github.com/bugsounet/EXT-Librespot)
-
-1. Information: There are updates for 7 dependencie(s):
-   - @eslint/js                ^8.57.0  →  ^9.17.0
-   - @stylistic/eslint-plugin   ^1.8.1  →  ^2.12.1
-   - esbuild                   ^0.22.0  →  ^0.24.2
-   - eslint                    ^8.57.0  →  ^9.17.0
-   - eslint-plugin-import      ^2.29.1  →  ^2.31.0
-   - glob                      ^10.4.2  →  ^11.0.0
-   - pm2                        ^5.4.1  →   ^5.4.3
-
-2.  WARN  eslint@8.57.0: 2024-02-23T20:39:43.282Z
-deprecated: This version is no longer supported. Please see https://eslint.org/version-support for other options.
 
 ### [MMM-lichess-daily by tonymorris](https://github.com/tonymorris/MMM-lichess-daily)
 
@@ -5717,15 +5620,6 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
 3. Typo: Found `Magic Mirror` in file `package.json`: Replace it with `MagicMirror²`.
 4. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
 
-### [EXT-MusicPlayer by bugsounet](https://github.com/bugsounet/EXT-MusicPlayer)
-
-1. Recommendation: Found `https://cdnjs.cloudflare.com` in file `EXT-MusicPlayer.js`: It looks like a package is loaded via CDN. It would be better if the package were installed locally via npm.
-2. Information: There are updates for 3 dependencie(s):
-   - @stylistic/eslint-plugin  ^2.10.1  →  ^2.12.1
-   - esbuild                   ^0.24.0  →  ^0.24.2
-   - eslint                    ^9.15.0  →  ^9.17.0
-
-
 ### [MMM-MVG by KoblerS](https://github.com/KoblerS/MMM-MVG)
 
 1. `package.json` issue: No description
@@ -6103,9 +5997,10 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
 ### [MMM-Netatmo by CFenner](https://github.com/CFenner/MMM-Netatmo)
 
 1. Recommendation: No lint script found in package.json. It is recommended to add one.
-2. Information: There are updates for 2 dependencie(s):
-   - less          4.2.0  →   4.2.1
-   - neostandard  0.11.5  →  0.12.0
+2. Information: There are updates for 3 dependencie(s):
+   - less           4.2.0  →   4.2.1
+   - markdownlint  0.37.2  →  0.37.3
+   - neostandard   0.11.5  →  0.12.0
 
 
 ### [MMM-Netatmo-Presence by AgP42](https://github.com/AgP42/MMM-Netatmo-Presence)
@@ -6306,7 +6201,7 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
    - @rollup/plugin-node-resolve       ^15.2.3  →  ^16.0.0
    - @rollup/plugin-typescript         ^11.1.6  →  ^12.1.2
    - @stylistic/eslint-plugin           ^1.5.4  →  ^2.12.1
-   - @typescript-eslint/eslint-plugin  ^6.20.0  →  ^8.18.2
+   - @typescript-eslint/eslint-plugin  ^6.20.0  →  ^8.19.0
    - eslint                            ^8.56.0  →  ^9.17.0
    - prettier                           ^3.2.5  →   ^3.4.2
    - rollup                             ^4.9.6  →  ^4.29.1
@@ -6872,17 +6767,6 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
    - globals                   ^15.13.0  →  ^15.14.0
 
 
-### [EXT-Pages by bugsounet](https://github.com/bugsounet/EXT-Pages)
-
-1. Information: There are updates for 3 dependencie(s):
-   - @stylistic/eslint-plugin  ^2.10.1  →  ^2.12.1
-   - esbuild                   ^0.24.0  →  ^0.24.2
-   - eslint                    ^9.15.0  →  ^9.17.0
-
-2. ESLint issues:
-   - installer/minify.js: Line 7, Column 22: "glob" should be replaced with an alternative package. Read more here: https://github.com/es-tooling/module-replacements/blob/main/docs/modules/glob.md (rule: depend/ban-dependencies)
-
-
 ### [MMM-Pages-Screencast by jboucly](https://github.com/jboucly/MMM-Pages-Screencast)
 
 1. Typo: Found `MagicMirror2` in file `README.md`: Replace it with `MagicMirror²`.
@@ -7083,17 +6967,6 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
 
 1. Recommendation: Found `new Date()` in file `node_helper.js`: Consider replacing it by `new Date(Date.now())`. It's helpful for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
 2. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
-
-### [EXT-Photos by bugsounet](https://github.com/bugsounet/EXT-Photos)
-
-1. Information: There are updates for 3 dependencie(s):
-   - @stylistic/eslint-plugin  ^2.10.1  →  ^2.12.1
-   - esbuild                   ^0.24.0  →  ^0.24.2
-   - eslint                    ^9.15.0  →  ^9.17.0
-
-2. ESLint issues:
-   - installer/minify.js: Line 7, Column 22: "glob" should be replaced with an alternative package. Read more here: https://github.com/es-tooling/module-replacements/blob/main/docs/modules/glob.md (rule: depend/ban-dependencies)
-
 
 ### [PiDisplaySleep by RpDp-git](https://github.com/RpDp-git/PiDisplaySleep)
 
@@ -7657,17 +7530,6 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
 4. Recommendation: Found `new Date()` in file `node_helper.js`: Consider replacing it by `new Date(Date.now())`. It's helpful for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
 5. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
 
-### [EXT-RadioPlayer by bugsounet](https://github.com/bugsounet/EXT-RadioPlayer)
-
-1. Information: There are updates for 3 dependencie(s):
-   - @stylistic/eslint-plugin  ^2.10.1  →  ^2.12.1
-   - esbuild                   ^0.24.0  →  ^0.24.2
-   - eslint                    ^9.15.0  →  ^9.17.0
-
-2. ESLint issues:
-   - installer/minify.js: Line 5, Column 22: "glob" should be replaced with an alternative package. Read more here: https://github.com/es-tooling/module-replacements/blob/main/docs/modules/glob.md (rule: depend/ban-dependencies)
-
-
 ### [MMM-RaiderIO by jwcnewton](https://github.com/jwcnewton/MMM-RaiderIO)
 
 1. There is no `package.json`. We need this file to gather information about the module for the module list page.
@@ -7698,7 +7560,7 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
    - rollup                       ^4.21.1  →  ^4.29.1
    - rollup-plugin-banner2         ^1.3.0  →   ^1.3.1
    - typescript                    ^5.5.4  →   ^5.7.2
-   - typescript-eslint             ^8.3.0  →  ^8.18.2
+   - typescript-eslint             ^8.3.0  →  ^8.19.0
 
 2. ESLint issues:
    - MMM-RAIN-MAP.js: Line 28, Column 17081: Expected to return a value in method 'get'. (rule: getter-return)
@@ -8259,15 +8121,6 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
 5. Warning: No LICENSE file.
 6. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
 
-### [EXT-Screen by bugsounet](https://github.com/bugsounet/EXT-Screen)
-
-1. Issues are not enabled in the GitHub repository. So users cannot report bugs. Please enable issues in your repo.
-2. Information: There are updates for 3 dependencie(s):
-   - @stylistic/eslint-plugin  ^2.10.1  →  ^2.12.1
-   - esbuild                   ^0.24.0  →  ^0.24.2
-   - eslint                    ^9.15.0  →  ^9.17.0
-
-
 ### [MMM-Screen-Powersave-Notification by Tom-Hirschberger](https://github.com/Tom-Hirschberger/MMM-Screen-Powersave-Notification)
 
 1. Typo: Found `[MagicMirror]` in file `README.md`: Replace it with `[MagicMirror²]`.
@@ -8670,18 +8523,6 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
 7. Typo: Found `Magic Mirror` in file `package.json`: Replace it with `MagicMirror²`.
 8. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
 
-### [EXT-SmartHome by bugsounet](https://github.com/bugsounet/EXT-SmartHome)
-
-1. Information: There are updates for 3 dependencie(s):
-   - @stylistic/eslint-plugin  ^2.12.0  →  ^2.12.1
-   - esbuild                   ^0.24.0  →  ^0.24.2
-   - eslint                    ^9.16.0  →  ^9.17.0
-
-2. ESLint issues:
-   - components/smarthome.js: Line 11, Column 11: "lodash" should be replaced with an alternative package. Read more here: https://github.com/es-tooling/module-replacements/blob/main/docs/modules/lodash-underscore.md (rule: depend/ban-dependencies)
-   - installer/minify.js: Line 7, Column 22: "glob" should be replaced with an alternative package. Read more here: https://github.com/es-tooling/module-replacements/blob/main/docs/modules/glob.md (rule: depend/ban-dependencies)
-
-
 ### [MMM-SmartTouch by EbenKouao](https://github.com/EbenKouao/MMM-SmartTouch)
 
 1. There is no `package.json`. We need this file to gather information about the module for the module list page.
@@ -8937,18 +8778,6 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
    - open   ^6.4.0  →  ^10.1.0
 
 
-### [EXT-Spotify by bugsounet](https://github.com/bugsounet/EXT-Spotify)
-
-1. Information: There are updates for 4 dependencie(s):
-   - @stylistic/eslint-plugin  ^2.11.0  →  ^2.12.1
-   - esbuild                   ^0.24.0  →  ^0.24.2
-   - eslint                    ^9.15.0  →  ^9.17.0
-   - express                   ^4.21.1  →  ^4.21.2
-
-2. ESLint issues:
-   - installer/minify.js: Line 7, Column 22: "glob" should be replaced with an alternative package. Read more here: https://github.com/es-tooling/module-replacements/blob/main/docs/modules/glob.md (rule: depend/ban-dependencies)
-
-
 ### [MMM-SpotifyConnectUI by CatoAntonsen](https://github.com/CatoAntonsen/MMM-SpotifyConnectUI)
 
 1. There is no `package.json`. We need this file to gather information about the module for the module list page.
@@ -9080,19 +8909,6 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
 3. Recommendation: The README seems not to have an install instruction (the words 'install' or 'installation' are missing). Please add one.
 4. Recommendation: Found `axios` in file `node_helper.js`: Replace it with built-in fetch.
 5. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
-
-### [EXT-StreamDeck by bugsounet](https://github.com/bugsounet/EXT-StreamDeck)
-
-1. Information: There are updates for 5 dependencie(s):
-   - @elgato-stream-deck/node    ^6.2.2  →   ^7.1.2
-   - @stylistic/eslint-plugin   ^2.10.1  →  ^2.12.1
-   - esbuild                    ^0.24.0  →  ^0.24.2
-   - eslint                     ^9.15.0  →  ^9.17.0
-   - jimp                      ^0.22.12  →   ^1.6.0
-
-2. ESLint issues:
-   - installer/minify.js: Line 7, Column 22: "glob" should be replaced with an alternative package. Read more here: https://github.com/es-tooling/module-replacements/blob/main/docs/modules/glob.md (rule: depend/ban-dependencies)
-
 
 ### [MMM-SugarValue by balharrie](https://github.com/balharrie/MMM-SugarValue)
 
@@ -9331,20 +9147,6 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
 4. Recommendation: Found `require('https')` in file `node_helper.js`: Replace 'https' by 'node:https'.
 5. Recommendation: Found `new Date()` in file `node_helper.js`: Consider replacing it by `new Date(Date.now())`. It's helpful for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
 6. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
-
-### [EXT-TelegramBot by bugsounet](https://github.com/bugsounet/EXT-TelegramBot)
-
-1. Information: There are updates for 4 dependencie(s):
-   - @stylistic/eslint-plugin    ^2.11.0  →  ^2.12.1
-   - esbuild                     ^0.24.0  →  ^0.24.2
-   - eslint                      ^9.16.0  →  ^9.17.0
-   - eslint-plugin-package-json  ^0.17.0  →  ^0.18.0
-
-2. ESLint issues:
-   - installer/dev.js: Line 8, Column 22: "glob" should be replaced with an alternative package. Read more here: https://github.com/es-tooling/module-replacements/blob/main/docs/modules/glob.md (rule: depend/ban-dependencies)
-   - installer/minify.js: Line 7, Column 22: "glob" should be replaced with an alternative package. Read more here: https://github.com/es-tooling/module-replacements/blob/main/docs/modules/glob.md (rule: depend/ban-dependencies)
-   - installer/src.js: Line 8, Column 22: "glob" should be replaced with an alternative package. Read more here: https://github.com/es-tooling/module-replacements/blob/main/docs/modules/glob.md (rule: depend/ban-dependencies)
-
 
 ### [MMM-TelegramCommands by doctorfree](https://github.com/doctorfree/MMM-TelegramCommands)
 
@@ -9631,16 +9433,6 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
 5. Recommendation: Found `require('https')` in file `ToonAPI.js`: Replace 'https' by 'node:https'.
 6. Warning: No LICENSE file.
 7. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
-
-### [EXT-Touch by bugsounet](https://github.com/bugsounet/EXT-Touch)
-
-1. Recommendation: The README seems not to have an update instruction (the word 'update' is missing). Please add one.
-2. Recommendation: The README seems not to have an install instruction (the words 'install' or 'installation' are missing). Please add one.
-3. Information: There are updates for 3 dependencie(s):
-   - @stylistic/eslint-plugin  ^2.11.0  →  ^2.12.1
-   - esbuild                   ^0.24.0  →  ^0.24.2
-   - eslint                    ^9.15.0  →  ^9.17.0
-
 
 ### [MMM-Touch by gfischershaw](https://github.com/gfischershaw/MMM-Touch)
 
@@ -9987,17 +9779,6 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
 4. Warning: No LICENSE file.
 5. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
 
-### [EXT-Updates by bugsounet](https://github.com/bugsounet/EXT-Updates)
-
-1. Information: There are updates for 3 dependencie(s):
-   - @stylistic/eslint-plugin  ^2.11.0  →  ^2.12.1
-   - esbuild                   ^0.24.0  →  ^0.24.2
-   - eslint                    ^9.15.0  →  ^9.17.0
-
-2. ESLint issues:
-   - installer/minify.js: Line 7, Column 22: "glob" should be replaced with an alternative package. Read more here: https://github.com/es-tooling/module-replacements/blob/main/docs/modules/glob.md (rule: depend/ban-dependencies)
-
-
 ### [MMM-uptimekuma by MikeBishop](https://github.com/MikeBishop/MMM-uptimekuma)
 
 1. Recommendation: Found `jshint` in file `Gruntfile.js`: Replace "jshint" by "eslint".
@@ -10152,17 +9933,6 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
 7. Recommendation: Found `require("http")` in file `node_helper.js`: Replace "http" by "node:http".
 8. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
 
-### [EXT-VLCServer by bugsounet](https://github.com/bugsounet/EXT-VLCServer)
-
-1. Information: There are updates for 3 dependencie(s):
-   - @stylistic/eslint-plugin  ^2.11.0  →  ^2.12.1
-   - esbuild                   ^0.24.0  →  ^0.24.2
-   - eslint                    ^9.15.0  →  ^9.17.0
-
-2. ESLint issues:
-   - installer/minify.js: Line 7, Column 22: "glob" should be replaced with an alternative package. Read more here: https://github.com/es-tooling/module-replacements/blob/main/docs/modules/glob.md (rule: depend/ban-dependencies)
-
-
 ### [MMM-VocabularyTrainer by fewieden](https://github.com/fewieden/MMM-VocabularyTrainer)
 
 1. Outdated: Found `MichMich/MagicMirror` in file `MMM-VocabularyTrainer.js`: Replace it by `MagicMirrorOrg/MagicMirror`.
@@ -10226,17 +9996,6 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
 4. Recommendation: The README seems not to have an update instruction (the word 'update' is missing). Please add one.
 5. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
 6. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
-
-### [EXT-Volume by bugsounet](https://github.com/bugsounet/EXT-Volume)
-
-1. Information: There are updates for 3 dependencie(s):
-   - @stylistic/eslint-plugin  ^2.11.0  →  ^2.12.1
-   - esbuild                   ^0.24.0  →  ^0.24.2
-   - eslint                    ^9.15.0  →  ^9.17.0
-
-2. ESLint issues:
-   - installer/minify.js: Line 7, Column 22: "glob" should be replaced with an alternative package. Read more here: https://github.com/es-tooling/module-replacements/blob/main/docs/modules/glob.md (rule: depend/ban-dependencies)
-
 
 ### [MMM-volumio-playing by mrdis](https://github.com/mrdis/MMM-volumio-playing)
 
@@ -10489,16 +10248,6 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
 5. Typo: Found `Magic Mirror` in file `package.json`: Replace it with `MagicMirror²`.
 6. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
 
-### [EXT-Website by bugsounet](https://github.com/bugsounet/EXT-Website)
-
-1. Typo: Found `Magic Mirror` in file `README.md`: Replace it with `MagicMirror²`.
-2. Recommendation: Found `https://cdnjs.cloudflare.com` in file `3rdpartymodules.html`: It looks like a package is loaded via CDN. It would be better if the package were installed locally via npm.
-3. Recommendation: Found `https://cdnjs.cloudflare.com` in file `APIDocs.html`: It looks like a package is loaded via CDN. It would be better if the package were installed locally via npm.
-4. Recommendation: Found `https://cdnjs.cloudflare.com` in file `EXT.html`: It looks like a package is loaded via CDN. It would be better if the package were installed locally via npm.
-5. Recommendation: Found local copy of `jquery.min.js`. Instead of a local copy, it would be better to add jQuery to the dependencies in `package.json`.
-6. Outdated: Local jQuery file `jquery.min.js` seems to be outdated. jQuery v3.7 or higher is recommended.
-7. Recommendation: Found `https://cdnjs.cloudflare.com` in file `system.html`: It looks like a package is loaded via CDN. It would be better if the package were installed locally via npm.
-
 ### [MMM-WebSpeechTTS by KristjanESPERANTO](https://github.com/KristjanESPERANTO/MMM-WebSpeechTTS)
 
 1. Information: There are updates for 5 dependencie(s):
@@ -10540,15 +10289,6 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
 4. Typo: Found `[MagicMirror]` in file `README.md`: Replace it with `[MagicMirror²]`.
 5. Outdated: Found `MichMich/MagicMirror` in file `README.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
 6. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
-
-### [EXT-Welcome by bugsounet](https://github.com/bugsounet/EXT-Welcome)
-
-1. No image found.
-2. Information: There are updates for 3 dependencie(s):
-   - @stylistic/eslint-plugin  ^2.11.0  →  ^2.12.1
-   - esbuild                   ^0.24.0  →  ^0.24.2
-   - eslint                    ^9.15.0  →  ^9.17.0
-
 
 ### [MMM-WestBerksBinDay by hdurdle](https://github.com/hdurdle/MMM-WestBerksBinDay)
 
@@ -10830,17 +10570,6 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
 8. Typo: Found `Magic Mirror` in file `styles.css`: Replace it with `MagicMirror²`.
 9. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
 
-### [EXT-YouTube by bugsounet](https://github.com/bugsounet/EXT-YouTube)
-
-1. Information: There are updates for 3 dependencie(s):
-   - @stylistic/eslint-plugin  ^2.11.0  →  ^2.12.1
-   - esbuild                   ^0.24.0  →  ^0.24.2
-   - eslint                    ^9.15.0  →  ^9.17.0
-
-2. ESLint issues:
-   - installer/minify.js: Line 7, Column 22: "glob" should be replaced with an alternative package. Read more here: https://github.com/es-tooling/module-replacements/blob/main/docs/modules/glob.md (rule: depend/ban-dependencies)
-
-
 ### [MMM-YouTube-API by C4TFLY](https://github.com/C4TFLY/MMM-YouTube-API)
 
 1. There is no `package.json`. We need this file to gather information about the module for the module list page.
@@ -10858,17 +10587,6 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
 3. Typo: Found `Magic Mirror` in file `MMM-YouTube-Live-Stream.js`: Replace it with `MagicMirror²`.
 4. Typo: Found `Magic Mirror` in file `README.md`: Replace it with `MagicMirror²`.
 5. Recommendation: Replace eslintrc by new flat config.
-
-### [EXT-YouTubeCast by bugsounet](https://github.com/bugsounet/EXT-YouTubeCast)
-
-1. Information: There are updates for 3 dependencie(s):
-   - @stylistic/eslint-plugin  ^2.11.0  →  ^2.12.1
-   - esbuild                   ^0.24.0  →  ^0.24.2
-   - eslint                    ^9.15.0  →  ^9.17.0
-
-2. ESLint issues:
-   - installer/minify.js: Line 7, Column 22: "glob" should be replaced with an alternative package. Read more here: https://github.com/es-tooling/module-replacements/blob/main/docs/modules/glob.md (rule: depend/ban-dependencies)
-
 
 ### [MMM-YouTubeWebView by doctorfree](https://gitlab.com/doctorfree/MMM-YouTubeWebView)
 

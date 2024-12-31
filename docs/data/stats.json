@@ -1,16 +1,15 @@
 {
-  "moduleCounter": 1236,
-  "modulesWithImageCounter": 874,
-  "modulesWithIssuesCounter": 1235,
-  "issueCounter": 7022,
-  "lastUpdate": "2024-12-30T17:38:53+01:00",
+  "moduleCounter": 1212,
+  "modulesWithImageCounter": 851,
+  "modulesWithIssuesCounter": 1211,
+  "issueCounter": 6966,
+  "lastUpdate": "2024-12-31T05:38:50+01:00",
   "repositoryHoster": {
-    "github": 1114,
+    "github": 1090,
     "gitlab": 10,
     "bitbucket": 1
   },
   "maintainer": {
-    "bugsounet": 33,
     "MMRIZE": 21,
     "Tom-Hirschberger": 15,
     "fewieden": 13,
@@ -18,6 +17,7 @@
     "mumblebaj": 11,
     "shbatm": 10,
     "shin10": 10,
+    "bugsounet": 9,
     "retroflex": 8,
     "CFenner": 7,
     "grenagit": 7,

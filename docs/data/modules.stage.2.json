@@ -663,18 +663,6 @@
     "license": "MIT"
   },
   {
-    "name": "EXT-Background",
-    "category": "Extended plugins for MMM-GoogleAssistant",
-    "url": "https://github.com/bugsounet/EXT-Background",
-    "id": "bugsounet/EXT-Background",
-    "maintainer": "bugsounet",
-    "maintainerURL": "https://wiki.bugsounet.fr",
-    "description": "Change the default Google Assistant background to your own or with animated gifs for each status of the assistant.",
-    "issues": [],
-    "stars": 1,
-    "license": "MIT"
-  },
-  {
     "name": "MMM-BackgroundSlideshow",
     "category": "Entertainment / Misc",
     "url": "https://github.com/darickc/MMM-BackgroundSlideshow",
@@ -1144,18 +1132,6 @@
     "description": "Display a Bring! shopping list in a tabular view.",
     "issues": [],
     "stars": 12,
-    "license": "MIT"
-  },
-  {
-    "name": "EXT-Browser",
-    "category": "Extended plugins for MMM-GoogleAssistant",
-    "url": "https://github.com/bugsounet/EXT-Browser",
-    "id": "bugsounet/EXT-Browser",
-    "maintainer": "bugsounet",
-    "maintainerURL": "https://wiki.bugsounet.fr",
-    "description": "Display any internet web page like a real browser in fullscreen.",
-    "issues": [],
-    "stars": 1,
     "license": "MIT"
   },
   {
@@ -2546,18 +2522,6 @@
     "stars": 0
   },
   {
-    "name": "EXT-Detector",
-    "category": "Extended plugins for MMM-GoogleAssistant",
-    "url": "https://github.com/bugsounet/EXT-Detector",
-    "id": "bugsounet/EXT-Detector",
-    "maintainer": "bugsounet",
-    "maintainerURL": "https://wiki.bugsounet.fr",
-    "description": "Multi-keyword listener for MMM-GoogleAssistant.",
-    "issues": [],
-    "stars": 8,
-    "license": "MIT"
-  },
-  {
     "name": "MMM-DHT",
     "category": "Weather",
     "url": "https://github.com/ckoutavas/MMM-DHT",
@@ -3929,18 +3893,6 @@
     "license": "Apache-2.0"
   },
   {
-    "name": "EXT-FreeboxTV",
-    "category": "Extended plugins for MMM-GoogleAssistant",
-    "url": "https://github.com/bugsounet/EXT-FreeboxTV",
-    "id": "bugsounet/EXT-FreeboxTV",
-    "maintainer": "bugsounet",
-    "maintainerURL": "https://wiki.bugsounet.fr",
-    "description": "Display Channel from French Internet Provider: Free.",
-    "issues": [],
-    "stars": 1,
-    "license": "MIT"
-  },
-  {
     "name": "MMM-FrenchHoroscope",
     "category": "News / Information",
     "url": "https://github.com/Amand-M/MMM-FrenchHoroscope",
@@ -4328,7 +4280,7 @@
     "id": "bugsounet/MMM-GoogleAssistant",
     "maintainer": "bugsounet",
     "maintainerURL": "https://wiki.bugsounet.fr",
-    "description": "MMM-GoogleAssistant is an real embedded Google assistant on MagicMirror² with many <a target=\"_blank\" href=\"#extended-plugins-for-mmm-googleassistant\">plugins</a>.",
+    "description": "MMM-GoogleAssistant is an real embedded Google assistant on MagicMirror² with many plugins.",
     "issues": [],
     "stars": 94,
     "hasGithubIssues": false,
@@ -4479,18 +4431,6 @@
     "description": "Image gallery or wallpaper with your Google Photos account.",
     "issues": [],
     "stars": 174,
-    "license": "MIT"
-  },
-  {
-    "name": "EXT-GooglePhotos",
-    "category": "Extended plugins for MMM-GoogleAssistant",
-    "url": "https://github.com/bugsounet/EXT-GooglePhotos",
-    "id": "bugsounet/EXT-GooglePhotos",
-    "maintainer": "bugsounet",
-    "maintainerURL": "https://wiki.bugsounet.fr",
-    "description": "Display your album directory with Google photos API in background or in MagicMirror² position.",
-    "issues": [],
-    "stars": 2,
     "license": "MIT"
   },
   {
@@ -5969,18 +5909,6 @@
     "license": "MIT"
   },
   {
-    "name": "EXT-Keyboard",
-    "category": "Extended plugins for MMM-GoogleAssistant",
-    "url": "https://github.com/bugsounet/EXT-Keyboard",
-    "id": "bugsounet/EXT-Keyboard",
-    "maintainer": "bugsounet",
-    "maintainerURL": "https://wiki.bugsounet.fr",
-    "description": "Control your mirror with a keyboard.",
-    "issues": [],
-    "stars": 2,
-    "license": "MIT"
-  },
-  {
     "name": "KeyDisplayed",
     "category": "Utility / IoT / 3rd Party / Integration",
     "url": "https://github.com/l0b5ter/KeyDisplayed",
@@ -6159,18 +6087,6 @@
     "description": "Display recent Letterbox reviews from a list of users.",
     "issues": [],
     "stars": 2
-  },
-  {
-    "name": "EXT-Librespot",
-    "category": "Extended plugins for MMM-GoogleAssistant",
-    "url": "https://github.com/bugsounet/EXT-Librespot",
-    "id": "bugsounet/EXT-Librespot",
-    "maintainer": "bugsounet",
-    "maintainerURL": "https://wiki.bugsounet.fr",
-    "description": "Allow to play Spotify music on your mirror with Librespot.",
-    "issues": [],
-    "stars": 2,
-    "license": "MIT"
   },
   {
     "name": "MMM-LibrespotJava",
@@ -7829,18 +7745,6 @@
     "license": "MIT"
   },
   {
-    "name": "EXT-MusicPlayer",
-    "category": "Extended plugins for MMM-GoogleAssistant",
-    "url": "https://github.com/bugsounet/EXT-MusicPlayer",
-    "id": "bugsounet/EXT-MusicPlayer",
-    "maintainer": "bugsounet",
-    "maintainerURL": "https://wiki.bugsounet.fr",
-    "description": "Play any music found on a USB Key or in defined local directory.",
-    "issues": [],
-    "stars": 4,
-    "license": "MIT"
-  },
-  {
     "name": "MMM-MVG",
     "category": "Transport / Travel",
     "url": "https://github.com/KoblerS/MMM-MVG",
@@ -9419,18 +9323,6 @@
     "license": "MIT"
   },
   {
-    "name": "EXT-Pages",
-    "category": "Extended plugins for MMM-GoogleAssistant",
-    "url": "https://github.com/bugsounet/EXT-Pages",
-    "id": "bugsounet/EXT-Pages",
-    "maintainer": "bugsounet",
-    "maintainerURL": "https://wiki.bugsounet.fr",
-    "description": "This plugin allows you to have animated pages.",
-    "issues": [],
-    "stars": 4,
-    "license": "MIT"
-  },
-  {
     "name": "MMM-Pages-Screencast",
     "category": "Development / Core MagicMirror²",
     "url": "https://github.com/jboucly/MMM-Pages-Screencast",
@@ -9679,18 +9571,6 @@
     "description": "Automatically controls the screen's power based on the presence of specified phones or devices within the network.",
     "issues": [],
     "stars": 6,
-    "license": "MIT"
-  },
-  {
-    "name": "EXT-Photos",
-    "category": "Extended plugins for MMM-GoogleAssistant",
-    "url": "https://github.com/bugsounet/EXT-Photos",
-    "id": "bugsounet/EXT-Photos",
-    "maintainer": "bugsounet",
-    "maintainerURL": "https://wiki.bugsounet.fr",
-    "description": "Displaying any photos discover by assistant in fullscreen.",
-    "issues": [],
-    "stars": 0,
     "license": "MIT"
   },
   {
@@ -10496,18 +10376,6 @@
     "license": "MIT"
   },
   {
-    "name": "EXT-RadioPlayer",
-    "category": "Extended plugins for MMM-GoogleAssistant",
-    "url": "https://github.com/bugsounet/EXT-RadioPlayer",
-    "id": "bugsounet/EXT-RadioPlayer",
-    "maintainer": "bugsounet",
-    "maintainerURL": "https://wiki.bugsounet.fr",
-    "description": "Play radio station on MagicMirror².",
-    "issues": [],
-    "stars": 2,
-    "license": "MIT"
-  },
-  {
     "name": "MMM-RaiderIO",
     "category": "Development / Core MagicMirror²",
     "url": "https://github.com/jwcnewton/MMM-RaiderIO",
@@ -11249,19 +11117,6 @@
     "stars": 3
   },
   {
-    "name": "EXT-Screen",
-    "category": "Extended plugins for MMM-GoogleAssistant",
-    "url": "https://github.com/bugsounet/EXT-Screen",
-    "id": "bugsounet/EXT-Screen",
-    "maintainer": "bugsounet",
-    "maintainerURL": "https://wiki.bugsounet.fr",
-    "description": "After a configurated time without any user interaction the display will turn off and hide all modules for economy mode.",
-    "issues": [],
-    "stars": 4,
-    "hasGithubIssues": false,
-    "license": "MIT"
-  },
-  {
     "name": "MMM-Screen-Powersave-Notification",
     "category": "Utility / IoT / 3rd Party / Integration",
     "url": "https://github.com/Tom-Hirschberger/MMM-Screen-Powersave-Notification",
@@ -11835,18 +11690,6 @@
     "license": "MIT"
   },
   {
-    "name": "EXT-SmartHome",
-    "category": "Extended plugins for MMM-GoogleAssistant",
-    "url": "https://github.com/bugsounet/EXT-SmartHome",
-    "id": "bugsounet/EXT-SmartHome",
-    "maintainer": "bugsounet",
-    "maintainerURL": "https://wiki.bugsounet.fr",
-    "description": "Control MMM-GoogleAssistant with your smartphone from Google Home app.",
-    "issues": [],
-    "stars": 1,
-    "license": "MIT"
-  },
-  {
     "name": "MMM-SmartTouch",
     "category": "Development / Core MagicMirror²",
     "url": "https://github.com/EbenKouao/MMM-SmartTouch",
@@ -12193,18 +12036,6 @@
     "license": "MIT"
   },
   {
-    "name": "EXT-Spotify",
-    "category": "Extended plugins for MMM-GoogleAssistant",
-    "url": "https://github.com/bugsounet/EXT-Spotify",
-    "id": "bugsounet/EXT-Spotify",
-    "maintainer": "bugsounet",
-    "maintainerURL": "https://wiki.bugsounet.fr",
-    "description": "This plugin show current spotify playback of any devices.",
-    "issues": [],
-    "stars": 4,
-    "license": "MIT"
-  },
-  {
     "name": "MMM-SpotifyConnectUI",
     "category": "Entertainment / Misc",
     "url": "https://github.com/CatoAntonsen/MMM-SpotifyConnectUI",
@@ -12391,18 +12222,6 @@
     "description": "Simple display of basic ride stats from <a target=\"_blank\" href=\"https://www.strava.com\">Strava</a> for a rolling window of time.",
     "issues": [],
     "stars": 2,
-    "license": "MIT"
-  },
-  {
-    "name": "EXT-StreamDeck",
-    "category": "Extended plugins for MMM-GoogleAssistant",
-    "url": "https://github.com/bugsounet/EXT-StreamDeck",
-    "id": "bugsounet/EXT-StreamDeck",
-    "maintainer": "bugsounet",
-    "maintainerURL": "https://wiki.bugsounet.fr",
-    "description": "Control your mirror with a StreamDeck by elgato©.",
-    "issues": [],
-    "stars": 0,
     "license": "MIT"
   },
   {
@@ -12717,18 +12536,6 @@
     "description": "Interact with your mirror via Telegram. Revamped 2024.",
     "issues": [],
     "stars": 26,
-    "license": "MIT"
-  },
-  {
-    "name": "EXT-TelegramBot",
-    "category": "Extended plugins for MMM-GoogleAssistant",
-    "url": "https://github.com/bugsounet/EXT-TelegramBot",
-    "id": "bugsounet/EXT-TelegramBot",
-    "maintainer": "bugsounet",
-    "maintainerURL": "https://wiki.bugsounet.fr",
-    "description": "You can remote-control plugins within Telegram.",
-    "issues": [],
-    "stars": 2,
     "license": "MIT"
   },
   {
@@ -13064,18 +12871,6 @@
     "description": "Disply information from the Toon Thermostat.",
     "issues": [],
     "stars": 12
-  },
-  {
-    "name": "EXT-Touch",
-    "category": "Extended plugins for MMM-GoogleAssistant",
-    "url": "https://github.com/bugsounet/EXT-Touch",
-    "id": "bugsounet/EXT-Touch",
-    "maintainer": "bugsounet",
-    "maintainerURL": "https://wiki.bugsounet.fr",
-    "description": "Activate MMM-GoogleAssistant with a Touch Screen by Touching the Google Icon.",
-    "issues": [],
-    "stars": 0,
-    "license": "MIT"
   },
   {
     "name": "MMM-Touch",
@@ -13513,18 +13308,6 @@
     "stars": 2
   },
   {
-    "name": "EXT-Updates",
-    "category": "Extended plugins for MMM-GoogleAssistant",
-    "url": "https://github.com/bugsounet/EXT-Updates",
-    "id": "bugsounet/EXT-Updates",
-    "maintainer": "bugsounet",
-    "maintainerURL": "https://wiki.bugsounet.fr",
-    "description": "This plugin allow to auto-update if an update is detected.",
-    "issues": [],
-    "stars": 2,
-    "license": "MIT"
-  },
-  {
     "name": "MMM-uptimekuma",
     "category": "Utility / IoT / 3rd Party / Integration",
     "url": "https://github.com/MikeBishop/MMM-uptimekuma",
@@ -13728,18 +13511,6 @@
     "license": "MIT"
   },
   {
-    "name": "EXT-VLCServer",
-    "category": "Extended plugins for MMM-GoogleAssistant",
-    "url": "https://github.com/bugsounet/EXT-VLCServer",
-    "id": "bugsounet/EXT-VLCServer",
-    "maintainer": "bugsounet",
-    "maintainerURL": "https://wiki.bugsounet.fr",
-    "description": "This plugin play wanted media on MagicMirror² with VLC.",
-    "issues": [],
-    "stars": 0,
-    "license": "MIT"
-  },
-  {
     "name": "MMM-VocabularyTrainer",
     "category": "Entertainment / Misc",
     "url": "https://github.com/fewieden/MMM-VocabularyTrainer",
@@ -13820,18 +13591,6 @@
     "description": "Control volume of MagicMirror².",
     "issues": [],
     "stars": 16,
-    "license": "MIT"
-  },
-  {
-    "name": "EXT-Volume",
-    "category": "Extended plugins for MMM-GoogleAssistant",
-    "url": "https://github.com/bugsounet/EXT-Volume",
-    "id": "bugsounet/EXT-Volume",
-    "maintainer": "bugsounet",
-    "maintainerURL": "https://wiki.bugsounet.fr",
-    "description": "Control the sound volume level of your mirror.",
-    "issues": [],
-    "stars": 4,
     "license": "MIT"
   },
   {
@@ -14158,18 +13917,6 @@
     "license": "MIT"
   },
   {
-    "name": "EXT-Website",
-    "category": "Extended plugins for MMM-GoogleAssistant",
-    "url": "https://github.com/bugsounet/EXT-Website",
-    "id": "bugsounet/EXT-Website",
-    "maintainer": "bugsounet",
-    "maintainerURL": "https://wiki.bugsounet.fr",
-    "description": "Application to configure MMM-GoogleAssistant from your browser.",
-    "issues": [],
-    "stars": 0,
-    "license": "MIT"
-  },
-  {
     "name": "MMM-WebSpeechTTS",
     "category": "Voice Control",
     "url": "https://github.com/KristjanESPERANTO/MMM-WebSpeechTTS",
@@ -14227,18 +13974,6 @@
     "description": "Display weekly recurring timetables such as class schedules.",
     "issues": [],
     "stars": 65,
-    "license": "MIT"
-  },
-  {
-    "name": "EXT-Welcome",
-    "category": "Extended plugins for MMM-GoogleAssistant",
-    "url": "https://github.com/bugsounet/EXT-Welcome",
-    "id": "bugsounet/EXT-Welcome",
-    "maintainer": "bugsounet",
-    "maintainerURL": "https://wiki.bugsounet.fr",
-    "description": "Allow to send a welcome on start of MagicMirror².",
-    "issues": [],
-    "stars": 0,
     "license": "MIT"
   },
   {
@@ -14634,18 +14369,6 @@
     "license": "MIT"
   },
   {
-    "name": "EXT-YouTube",
-    "category": "Extended plugins for MMM-GoogleAssistant",
-    "url": "https://github.com/bugsounet/EXT-YouTube",
-    "id": "bugsounet/EXT-YouTube",
-    "maintainer": "bugsounet",
-    "maintainerURL": "https://wiki.bugsounet.fr",
-    "description": "This plugins allows to play YouTube video.",
-    "issues": [],
-    "stars": 4,
-    "license": "MIT"
-  },
-  {
     "name": "MMM-YouTube-API",
     "category": "Entertainment / Misc",
     "url": "https://github.com/C4TFLY/MMM-YouTube-API",
@@ -14666,18 +14389,6 @@
     "description": "Check if a YouTube channel if streaming. If it is, it plays the live stream.",
     "issues": [],
     "stars": 1,
-    "license": "MIT"
-  },
-  {
-    "name": "EXT-YouTubeCast",
-    "category": "Extended plugins for MMM-GoogleAssistant",
-    "url": "https://github.com/bugsounet/EXT-YouTubeCast",
-    "id": "bugsounet/EXT-YouTubeCast",
-    "maintainer": "bugsounet",
-    "maintainerURL": "https://wiki.bugsounet.fr",
-    "description": "Allow to cast a YouTube video on MagicMirror².",
-    "issues": [],
-    "stars": 3,
     "license": "MIT"
   },
   {
