@@ -317,7 +317,7 @@
     ],
     "image": ".github-preview-good.jpg",
     "defaultSortWeight": 1,
-    "lastCommit": "2024-12-19T07:02:02+00:00"
+    "lastCommit": "2024-12-31T05:14:44+00:00"
   },
   {
     "name": "MMM-Airtable",
@@ -5888,7 +5888,7 @@
       "background"
     ],
     "image": "Screenshot.jpg",
-    "defaultSortWeight": 0,
+    "defaultSortWeight": 1,
     "lastCommit": "2024-12-24T11:26:58+01:00"
   },
   {
@@ -6529,7 +6529,7 @@
     "license": "GPL-2.0",
     "image": "screenshot.jpg",
     "defaultSortWeight": 2,
-    "lastCommit": "2024-10-23T11:32:57+01:00"
+    "lastCommit": "2024-12-31T13:21:07+00:00"
   },
   {
     "name": "MMM-Hanzi",
@@ -7082,7 +7082,7 @@
     "stars": 0,
     "license": "NOASSERTION",
     "defaultSortWeight": 8,
-    "lastCommit": "2024-12-30T12:30:44+01:00"
+    "lastCommit": "2024-12-31T14:40:52+01:00"
   },
   {
     "name": "MMM-HTMLSnippet",
@@ -7428,7 +7428,7 @@
     "stars": 0,
     "license": "MIT",
     "defaultSortWeight": 6,
-    "lastCommit": "2024-12-28T11:51:04-08:00"
+    "lastCommit": "2024-12-31T07:35:44-08:00"
   },
   {
     "name": "MMM-iHaveBeenThere",
@@ -9491,7 +9491,7 @@
       "french"
     ],
     "image": "screenshot.jpg",
-    "defaultSortWeight": 1,
+    "defaultSortWeight": 2,
     "lastCommit": "2024-12-24T11:27:35+01:00"
   },
   {
@@ -11586,7 +11586,7 @@
     ],
     "image": ".github-preview.bubbles.jpg",
     "defaultSortWeight": 0,
-    "lastCommit": "2024-12-26T04:50:02+00:00"
+    "lastCommit": "2024-12-31T10:10:07+00:00"
   },
   {
     "name": "MMM-Netatmo-Presence",
@@ -13551,7 +13551,7 @@
     ],
     "image": "screenshot-screenshot.jpg",
     "defaultSortWeight": 1,
-    "lastCommit": "2024-12-07T13:26:24+01:00"
+    "lastCommit": "2024-12-31T14:01:55+01:00"
   },
   {
     "name": "MMM-PIR",
@@ -15471,7 +15471,7 @@
       "french"
     ],
     "image": "Screenshot.jpg",
-    "defaultSortWeight": 1,
+    "defaultSortWeight": 2,
     "lastCommit": "2024-12-24T11:29:26+01:00"
   },
   {

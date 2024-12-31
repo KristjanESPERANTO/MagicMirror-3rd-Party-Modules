@@ -1,6 +1,6 @@
 # Result of the module analysis
 
-Last update: 2024-12-31T05:38:50+01:00
+Last update: 2024-12-31T17:38:41+01:00
 
 ## Statistics
 
@@ -9,7 +9,7 @@ Last update: 2024-12-31T05:38:50+01:00
 | modules analyzed     |   1212   |
 | maintainer           |    655   |
 | modules with issues  |   1211   |
-| issues               |   6966   |
+| issues               |   6972   |
 | modules at github    |   1090   |
 | modules at gitlab    |     10   |
 | modules at bitbucket |      1   |
@@ -926,7 +926,7 @@ Last update: 2024-12-31T05:38:50+01:00
    - @stylistic/eslint-plugin   ^2.11.0  →   ^2.12.1
    - eslint                     ^9.16.0  →   ^9.17.0
    - globals                   ^15.13.0  →  ^15.14.0
-   - markdownlint-cli2          ^0.15.0  →   ^0.17.0
+   - markdownlint-cli2          ^0.15.0  →   ^0.17.1
    - stylelint                 ^16.11.0  →  ^16.12.0
 
 
@@ -2638,7 +2638,10 @@ deprecated: no longer maintained, switch to modern iconify-icon web component
 
 ### [MMM-FranceInfo by bugsounet](https://github.com/bugsounet/MMM-FranceInfo)
 
-1. ESLint issues:
+1. Information: There are updates for 1 dependencie(s):
+   - eslint-plugin-package-json  ^0.18.0  →  ^0.19.0
+
+2. ESLint issues:
    - installer/dev.js: Line 8, Column 22: "glob" should be replaced with an alternative package. Read more here: https://github.com/es-tooling/module-replacements/blob/main/docs/modules/glob.md (rule: depend/ban-dependencies)
    - installer/minify.js: Line 7, Column 22: "glob" should be replaced with an alternative package. Read more here: https://github.com/es-tooling/module-replacements/blob/main/docs/modules/glob.md (rule: depend/ban-dependencies)
    - installer/src.js: Line 8, Column 22: "glob" should be replaced with an alternative package. Read more here: https://github.com/es-tooling/module-replacements/blob/main/docs/modules/glob.md (rule: depend/ban-dependencies)
@@ -2901,7 +2904,10 @@ deprecated: no longer maintained, switch to modern iconify-icon web component
 
 ### [MMM-Glassy by bugsounet](https://github.com/bugsounet/MMM-Glassy)
 
-1. ESLint issues:
+1. Information: There are updates for 1 dependencie(s):
+   - eslint-plugin-package-json  ^0.18.0  →  ^0.19.0
+
+2. ESLint issues:
    - installer/dev.js: Line 8, Column 22: "glob" should be replaced with an alternative package. Read more here: https://github.com/es-tooling/module-replacements/blob/main/docs/modules/glob.md (rule: depend/ban-dependencies)
    - installer/minify.js: Line 7, Column 22: "glob" should be replaced with an alternative package. Read more here: https://github.com/es-tooling/module-replacements/blob/main/docs/modules/glob.md (rule: depend/ban-dependencies)
    - installer/src.js: Line 8, Column 22: "glob" should be replaced with an alternative package. Read more here: https://github.com/es-tooling/module-replacements/blob/main/docs/modules/glob.md (rule: depend/ban-dependencies)
@@ -2971,13 +2977,14 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
 ### [MMM-GoogleAssistant by bugsounet](https://github.com/bugsounet/MMM-GoogleAssistant)
 
 1. Issues are not enabled in the GitHub repository. So users cannot report bugs. Please enable issues in your repo.
-2. Information: There are updates for 6 dependencie(s):
-   - @grpc/grpc-js              ^1.12.4  →   ^1.12.5
-   - @stylistic/eslint-plugin   ^2.11.0  →   ^2.12.1
-   - esbuild                    ^0.24.0  →   ^0.24.2
-   - eslint                     ^9.16.0  →   ^9.17.0
-   - node-html-parser           ^6.1.13  →    ^7.0.1
-   - sweetalert2               ^11.14.5  →  ^11.15.3
+2. Information: There are updates for 7 dependencie(s):
+   - @grpc/grpc-js                ^1.12.4  →   ^1.12.5
+   - @stylistic/eslint-plugin     ^2.11.0  →   ^2.12.1
+   - esbuild                      ^0.24.0  →   ^0.24.2
+   - eslint                       ^9.16.0  →   ^9.17.0
+   - eslint-plugin-package-json   ^0.18.0  →   ^0.19.0
+   - node-html-parser             ^6.1.13  →    ^7.0.1
+   - sweetalert2                 ^11.14.5  →  ^11.15.3
 
 
 ### [MMM-GoogleBirthdaysProvider by PalatinCoder](https://github.com/PalatinCoder/MMM-GoogleBirthdaysProvider)
@@ -4885,7 +4892,10 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
 
 ### [MMM-MeteoFrance by bugsounet](https://github.com/bugsounet/MMM-MeteoFrance)
 
-1. ESLint issues:
+1. Information: There are updates for 1 dependencie(s):
+   - eslint-plugin-package-json  ^0.18.0  →  ^0.19.0
+
+2. ESLint issues:
    - installer/dev.js: Line 8, Column 22: "glob" should be replaced with an alternative package. Read more here: https://github.com/es-tooling/module-replacements/blob/main/docs/modules/glob.md (rule: depend/ban-dependencies)
    - installer/minify.js: Line 7, Column 22: "glob" should be replaced with an alternative package. Read more here: https://github.com/es-tooling/module-replacements/blob/main/docs/modules/glob.md (rule: depend/ban-dependencies)
    - installer/src.js: Line 8, Column 22: "glob" should be replaced with an alternative package. Read more here: https://github.com/es-tooling/module-replacements/blob/main/docs/modules/glob.md (rule: depend/ban-dependencies)
@@ -5997,10 +6007,9 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
 ### [MMM-Netatmo by CFenner](https://github.com/CFenner/MMM-Netatmo)
 
 1. Recommendation: No lint script found in package.json. It is recommended to add one.
-2. Information: There are updates for 3 dependencie(s):
-   - less           4.2.0  →   4.2.1
-   - markdownlint  0.37.2  →  0.37.3
-   - neostandard   0.11.5  →  0.12.0
+2. Information: There are updates for 2 dependencie(s):
+   - less          4.2.0  →   4.2.1
+   - neostandard  0.11.5  →  0.12.0
 
 
 ### [MMM-Netatmo-Presence by AgP42](https://github.com/AgP42/MMM-Netatmo-Presence)
@@ -6019,7 +6028,10 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
 
 ### [MMM-NetatmoThermostat by bugsounet](https://github.com/bugsounet/MMM-NetatmoThermostat)
 
-1. ESLint issues:
+1. Information: There are updates for 1 dependencie(s):
+   - eslint-plugin-package-json  ^0.18.0  →  ^0.19.0
+
+2. ESLint issues:
    - installer/dev.js: Line 8, Column 22: "glob" should be replaced with an alternative package. Read more here: https://github.com/es-tooling/module-replacements/blob/main/docs/modules/glob.md (rule: depend/ban-dependencies)
    - installer/minify.js: Line 7, Column 22: "glob" should be replaced with an alternative package. Read more here: https://github.com/es-tooling/module-replacements/blob/main/docs/modules/glob.md (rule: depend/ban-dependencies)
    - installer/src.js: Line 8, Column 22: "glob" should be replaced with an alternative package. Read more here: https://github.com/es-tooling/module-replacements/blob/main/docs/modules/glob.md (rule: depend/ban-dependencies)
@@ -6997,8 +7009,8 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
 1. Recommendation: The README seems not to have an update instruction (the word 'update' is missing). Please add one.
 2. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
 3. Information: There are updates for 2 dependencie(s):
-   - async                ^3.2.5  →    ^3.2.6
-   - systeminformation  ^5.21.24  →  ^5.23.25
+   - async                ^3.2.5  →   ^3.2.6
+   - systeminformation  ^5.21.24  →  ^5.24.1
 
 
 ### [MMM-ping by fewieden](https://github.com/fewieden/MMM-ping)
@@ -7019,10 +7031,8 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
 
 ### [MMM-Pir by bugsounet](https://github.com/bugsounet/MMM-Pir)
 
-1. Information: There are updates for 3 dependencie(s):
-   - @stylistic/eslint-plugin  ^2.11.0  →  ^2.12.1
-   - esbuild                   ^0.24.0  →  ^0.24.2
-   - eslint                    ^9.16.0  →  ^9.17.0
+1. Information: There are updates for 1 dependencie(s):
+   - eslint-plugin-package-json  ^0.18.0  →  ^0.19.0
 
 2. ESLint issues:
    - installer/dev.js: Line 8, Column 22: "glob" should be replaced with an alternative package. Read more here: https://github.com/es-tooling/module-replacements/blob/main/docs/modules/glob.md (rule: depend/ban-dependencies)
@@ -7334,7 +7344,10 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
 
 ### [MMM-PrixCarburants by bugsounet](https://github.com/bugsounet/MMM-PrixCarburants)
 
-1. ESLint issues:
+1. Information: There are updates for 1 dependencie(s):
+   - eslint-plugin-package-json  ^0.18.0  →  ^0.19.0
+
+2. ESLint issues:
    - installer/dev.js: Line 8, Column 22: "glob" should be replaced with an alternative package. Read more here: https://github.com/es-tooling/module-replacements/blob/main/docs/modules/glob.md (rule: depend/ban-dependencies)
    - installer/minify.js: Line 7, Column 22: "glob" should be replaced with an alternative package. Read more here: https://github.com/es-tooling/module-replacements/blob/main/docs/modules/glob.md (rule: depend/ban-dependencies)
    - installer/src.js: Line 8, Column 22: "glob" should be replaced with an alternative package. Read more here: https://github.com/es-tooling/module-replacements/blob/main/docs/modules/glob.md (rule: depend/ban-dependencies)
@@ -7422,9 +7435,10 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
 
 ### [MMM-PublicTransportHafas by KristjanESPERANTO](https://github.com/KristjanESPERANTO/MMM-PublicTransportHafas)
 
-1. Information: There are updates for 2 dependencie(s):
-   - globals      ^15.13.0  →  ^15.14.0
-   - lint-staged  ^15.2.11  →   ^15.3.0
+1. Information: There are updates for 3 dependencie(s):
+   - eslint-plugin-package-json   ^0.18.0  →   ^0.19.0
+   - globals                     ^15.13.0  →  ^15.14.0
+   - lint-staged                 ^15.2.11  →   ^15.3.0
 
 
 ### [MMM-PublicTransportVVO by ChristianGeie](https://github.com/ChristianGeie/MMM-PublicTransportVVO)
@@ -8085,7 +8099,10 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
 
 ### [MMM-Saint by bugsounet](https://github.com/bugsounet/MMM-Saint)
 
-1. ESLint issues:
+1. Information: There are updates for 1 dependencie(s):
+   - eslint-plugin-package-json  ^0.18.0  →  ^0.19.0
+
+2. ESLint issues:
    - installer/dev.js: Line 8, Column 22: "glob" should be replaced with an alternative package. Read more here: https://github.com/es-tooling/module-replacements/blob/main/docs/modules/glob.md (rule: depend/ban-dependencies)
    - installer/minify.js: Line 7, Column 22: "glob" should be replaced with an alternative package. Read more here: https://github.com/es-tooling/module-replacements/blob/main/docs/modules/glob.md (rule: depend/ban-dependencies)
    - installer/src.js: Line 8, Column 22: "glob" should be replaced with an alternative package. Read more here: https://github.com/es-tooling/module-replacements/blob/main/docs/modules/glob.md (rule: depend/ban-dependencies)
