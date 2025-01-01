@@ -6789,7 +6789,7 @@
     "maintainerURL": "",
     "description": "[FR] Affiche les informations de prévisions actuelles, horaires et quotidiennes à l'aide des données de l'API MétéoFrance.<br />[EN] Displays current, hourly and daily forecast information using data from MeteoFrance API.",
     "issues": [],
-    "stars": 1,
+    "stars": 2,
     "license": "MIT"
   },
   {
@@ -6824,7 +6824,7 @@
     "maintainerURL": "",
     "description": "Displays your Microsoft To Do tasks on your mirror.",
     "issues": [],
-    "stars": 77,
+    "stars": 76,
     "license": "MIT"
   },
   {
@@ -6871,7 +6871,7 @@
     "maintainerURL": "",
     "description": "Alexa voice control to show/hide modules, search for images or Youtube video, and display them with the search term on the mirror.",
     "issues": [],
-    "stars": 93,
+    "stars": 94,
     "license": "MIT"
   },
   {
@@ -6931,7 +6931,7 @@
     "maintainerURL": "",
     "description": "Display departures for public transport in Helsinki region - Finland.",
     "issues": [],
-    "stars": 5,
+    "stars": 6,
     "license": "MIT"
   },
   {

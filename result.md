@@ -1,6 +1,6 @@
 # Result of the module analysis
 
-Last update: 2024-12-31T17:38:41+01:00
+Last update: 2025-01-01T05:38:40+01:00
 
 ## Statistics
 
@@ -754,8 +754,9 @@ Last update: 2024-12-31T17:38:41+01:00
 
 ### [MMM-BoschSmartHome by jalibu](https://github.com/jalibu/MMM-BoschSmartHome)
 
-1. Information: There are updates for 1 dependencie(s):
-   - typescript-eslint  ^8.18.2  →  ^8.19.0
+1. Information: There are updates for 2 dependencie(s):
+   - @types/node        ^22.10.2  →  ^22.10.3
+   - typescript-eslint   ^8.18.2  →   ^8.19.0
 
 2. ESLint issues:
    - node_helper.js: Line 13, Column 1034: 't' is defined but never used. (rule: no-unused-vars)
