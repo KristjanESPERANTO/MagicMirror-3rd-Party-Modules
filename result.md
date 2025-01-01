@@ -1,6 +1,6 @@
 # Result of the module analysis
 
-Last update: 2025-01-01T05:38:40+01:00
+Last update: 2025-01-01T17:38:31+01:00
 
 ## Statistics
 
@@ -8,8 +8,8 @@ Last update: 2025-01-01T05:38:40+01:00
 |:---------------------|:--------:|
 | modules analyzed     |   1212   |
 | maintainer           |    655   |
-| modules with issues  |   1211   |
-| issues               |   6972   |
+| modules with issues  |   1210   |
+| issues               |   6971   |
 | modules at github    |   1090   |
 | modules at gitlab    |     10   |
 | modules at bitbucket |      1   |
@@ -5637,10 +5637,9 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
 2. Recommendation: Found `jshint` in file `Gruntfile.js`: Replace "jshint" by "eslint".
 3. Typo: Found `Magic Mirror` in file `MMM-MVG.js`: Replace it with `MagicMirror²`.
 4. Recommendation: Found `new Date()` in file `MMM-MVG.js`: Consider replacing it by `new Date(Date.now())`. It's helpful for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
-5. Outdated: Found `MichMich/MagicMirror` in file `README.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
-6. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
-7. Recommendation: Found `XMLHttpRequest` in file `node_helper.js`: Replace it with built-in fetch.
-8. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
+5. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
+6. Recommendation: Found `XMLHttpRequest` in file `node_helper.js`: Replace it with built-in fetch.
+7. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
 
 ### [MMM-MVVWiesty by wiesty](https://github.com/wiesty/MMM-MVVWiesty)
 
@@ -7011,7 +7010,7 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
 2. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
 3. Information: There are updates for 2 dependencie(s):
    - async                ^3.2.5  →   ^3.2.6
-   - systeminformation  ^5.21.24  →  ^5.24.1
+   - systeminformation  ^5.21.24  →  ^5.24.3
 
 
 ### [MMM-ping by fewieden](https://github.com/fewieden/MMM-ping)
@@ -7426,13 +7425,6 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
 4. Typo: Found `Magic Mirror` in file `README.md`: Replace it with `MagicMirror²`.
 5. Typo: Found `Magic Mirror` in file `package.json`: Replace it with `MagicMirror²`.
 6. Recommendation: Replace eslintrc by new flat config.
-
-### [MMM-PublicTransportBerlin by deg0nz](https://github.com/deg0nz/MMM-PublicTransportBerlin)
-
-1. Information: There are updates for 2 dependencie(s):
-   - eslint-plugin-import-x    ^4.5.1  →    ^4.6.1
-   - globals                 ^15.13.0  →  ^15.14.0
-
 
 ### [MMM-PublicTransportHafas by KristjanESPERANTO](https://github.com/KristjanESPERANTO/MMM-PublicTransportHafas)
 
@@ -9134,10 +9126,11 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
 
 ### [MMM-Tankerkoenig by wiesty](https://github.com/wiesty/MMM-Tankerkoenig)
 
-1. Issue: The license in the package.json (MIT) doesn't match the license file (NOASSERTION).
-2. No compatible or wrong license field in 'package.json' or LICENSE file. Without that, we can't use an image.
-3. Outdated: Found `MichMich/MagicMirror` in file `README.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
-4. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
+1. `package.json` issue: license should be a valid SPDX license expression
+2. Issue: The license in the package.json (CC BY-NC 4.0) doesn't match the license file (NOASSERTION).
+3. No compatible or wrong license field in 'package.json' or LICENSE file. Without that, we can't use an image.
+4. Outdated: Found `MichMich/MagicMirror` in file `README.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
+5. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
 
 ### [MMM-TautulliActivity by derekn](https://github.com/derekn/MMM-TautulliActivity)
 

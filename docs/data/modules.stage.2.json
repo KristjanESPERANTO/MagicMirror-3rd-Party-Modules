@@ -7334,7 +7334,7 @@
     "maintainerURL": "",
     "description": "Create schedules to control when other modules are shown, hidden or dimmed and to send notifications to other modules.",
     "issues": [],
-    "stars": 103,
+    "stars": 105,
     "license": "MIT"
   },
   {
@@ -7369,7 +7369,7 @@
     "maintainerURL": "",
     "description": "Display your calendar events in a monthly calendar view.",
     "issues": [],
-    "stars": 33,
+    "stars": 36,
     "license": "MIT"
   },
   {
@@ -7381,7 +7381,7 @@
     "maintainerURL": "",
     "description": "Displays moonrise, moonset, and an image of the moon using AstronomyAPI.",
     "issues": [],
-    "stars": 4,
+    "stars": 5,
     "license": "ISC"
   },
   {
@@ -7393,7 +7393,7 @@
     "maintainerURL": "",
     "description": "Presents the real-time moon phase.",
     "issues": [],
-    "stars": 55,
+    "stars": 58,
     "license": "MIT"
   },
   {

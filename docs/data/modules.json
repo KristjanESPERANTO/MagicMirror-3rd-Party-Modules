@@ -10227,7 +10227,7 @@
     "maintainerURL": "",
     "description": "Create schedules to control when other modules are shown, hidden or dimmed and to send notifications to other modules.",
     "issues": true,
-    "stars": 103,
+    "stars": 105,
     "license": "MIT",
     "tags": [
       "scheduler"
@@ -10276,7 +10276,7 @@
     "maintainerURL": "",
     "description": "Display your calendar events in a monthly calendar view.",
     "issues": true,
-    "stars": 33,
+    "stars": 36,
     "license": "MIT",
     "image": "screenshot.jpg",
     "defaultSortWeight": 3,
@@ -10291,7 +10291,7 @@
     "maintainerURL": "",
     "description": "Displays moonrise, moonset, and an image of the moon using AstronomyAPI.",
     "issues": true,
-    "stars": 4,
+    "stars": 5,
     "license": "ISC",
     "tags": [
       "moon",
@@ -10310,7 +10310,7 @@
     "maintainerURL": "",
     "description": "Presents the real-time moon phase.",
     "issues": true,
-    "stars": 55,
+    "stars": 58,
     "license": "MIT",
     "tags": [
       "moon",
@@ -10835,8 +10835,8 @@
       "mvg"
     ],
     "image": ".github-Example_1.jpg",
-    "defaultSortWeight": 7,
-    "lastCommit": "2024-12-28T15:32:19+01:00"
+    "defaultSortWeight": 6,
+    "lastCommit": "2025-01-01T12:46:18+01:00"
   },
   {
     "name": "MMM-mvgmunich",
@@ -13551,7 +13551,7 @@
     ],
     "image": "screenshot-screenshot.jpg",
     "defaultSortWeight": 1,
-    "lastCommit": "2024-12-31T14:01:55+01:00"
+    "lastCommit": "2025-01-01T14:38:34+01:00"
   },
   {
     "name": "MMM-PIR",
@@ -14255,7 +14255,7 @@
     "maintainer": "deg0nz",
     "maintainerURL": "",
     "description": "Display departures for public transport in Berlin and Brandenburg (Covers VBB Area).",
-    "issues": true,
+    "issues": false,
     "stars": 40,
     "license": "MIT",
     "tags": [
@@ -14264,8 +14264,8 @@
       "brandenburg"
     ],
     "image": "img-MMM-PublicTransport_screenshot.jpg",
-    "defaultSortWeight": 0,
-    "lastCommit": "2024-12-18T00:23:24+01:00"
+    "defaultSortWeight": -1,
+    "lastCommit": "2025-01-01T08:29:05+01:00"
   },
   {
     "name": "MMM-PublicTransportHafas",
@@ -17519,8 +17519,8 @@
       "gas",
       "germany"
     ],
-    "defaultSortWeight": 3,
-    "lastCommit": "2024-11-05T23:59:22+01:00"
+    "defaultSortWeight": 4,
+    "lastCommit": "2025-01-01T15:39:59+01:00"
   },
   {
     "name": "MMM-TautulliActivity",
