@@ -1246,6 +1246,21 @@
     "lastCommit": "2024-12-13T20:17:38+01:00"
   },
   {
+    "name": "MMM-Birthday",
+    "category": "Entertainment / Misc",
+    "url": "https://github.com/cgillinger/MMM-Birthday",
+    "id": "cgillinger/MMM-Birthday",
+    "maintainer": "cgillinger",
+    "maintainerURL": "https://github.com/cgillinger",
+    "description": "Celebrate birthdays with animated fireworks and confetti effects.",
+    "issues": true,
+    "stars": 0,
+    "license": "MIT",
+    "image": "screenshots-birthday.jpg",
+    "defaultSortWeight": 4,
+    "lastCommit": "2025-01-02T16:33:43+01:00"
+  },
+  {
     "name": "MMM-birthdays",
     "category": "Utility / IoT / 3rd Party / Integration",
     "url": "https://github.com/amitchone/MMM-birthdays",
@@ -5304,7 +5319,7 @@
     ],
     "image": "screenshot.jpg",
     "defaultSortWeight": 4,
-    "lastCommit": "2024-12-04T21:15:40+01:00"
+    "lastCommit": "2025-01-02T13:21:18+01:00"
   },
   {
     "name": "MMM-Fortnite",
@@ -6789,7 +6804,7 @@
     "maintainerURL": "",
     "description": "Displays the number of days until a Holiday/Trip. Displays the next 4 trips from a configured list.",
     "issues": true,
-    "stars": 2,
+    "stars": 3,
     "license": "MIT",
     "image": "MMM-HolidayCountdown.jpg",
     "defaultSortWeight": 3,
@@ -9793,7 +9808,7 @@
     ],
     "image": "screenshot.jpg",
     "defaultSortWeight": 6,
-    "lastCommit": "2024-11-17T21:38:04-06:00"
+    "lastCommit": "2025-01-02T09:16:15-06:00"
   },
   {
     "name": "mmm-dropbox",
@@ -14116,7 +14131,7 @@
     ],
     "image": "screenshot.jpg",
     "defaultSortWeight": 1,
-    "lastCommit": "2024-12-28T02:37:37+01:00"
+    "lastCommit": "2025-01-02T12:24:48+01:00"
   },
   {
     "name": "MMM-profile",
@@ -19570,7 +19585,7 @@
     ],
     "image": "screenshot.jpg",
     "defaultSortWeight": 2,
-    "lastCommit": "2024-10-28T21:53:34+01:00"
+    "lastCommit": "2025-01-02T10:43:17+01:00"
   },
   {
     "name": "MMM-WebView",

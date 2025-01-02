@@ -849,6 +849,18 @@
     "stars": 1
   },
   {
+    "name": "MMM-Birthday",
+    "category": "Entertainment / Misc",
+    "url": "https://github.com/cgillinger/MMM-Birthday",
+    "id": "cgillinger/MMM-Birthday",
+    "maintainer": "cgillinger",
+    "maintainerURL": "https://github.com/cgillinger",
+    "description": "Celebrate birthdays with animated fireworks and confetti effects.",
+    "issues": [],
+    "stars": 0,
+    "license": "MIT"
+  },
+  {
     "name": "MMM-birthdays",
     "category": "Utility / IoT / 3rd Party / Integration",
     "url": "https://github.com/amitchone/MMM-birthdays",
@@ -4861,7 +4873,7 @@
     "maintainerURL": "",
     "description": "Displays the number of days until a Holiday/Trip. Displays the next 4 trips from a configured list.",
     "issues": [],
-    "stars": 2,
+    "stars": 3,
     "license": "MIT"
   },
   {

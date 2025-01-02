@@ -1216,6 +1216,21 @@
     "image": "screenshots-BoDbelow.jpg"
   },
   {
+    "name": "MMM-Birthday",
+    "category": "Entertainment / Misc",
+    "url": "https://github.com/cgillinger/MMM-Birthday",
+    "id": "cgillinger/MMM-Birthday",
+    "maintainer": "cgillinger",
+    "maintainerURL": "https://github.com/cgillinger",
+    "description": "Celebrate birthdays with animated fireworks and confetti effects.",
+    "issues": [
+      "There are no keywords in 'package.json'. We would use them as tags on the module list page."
+    ],
+    "stars": 0,
+    "license": "MIT",
+    "image": "screenshots-birthday.jpg"
+  },
+  {
     "name": "MMM-birthdays",
     "category": "Utility / IoT / 3rd Party / Integration",
     "url": "https://github.com/amitchone/MMM-birthdays",
@@ -6724,7 +6739,7 @@
     "issues": [
       "There is no `package.json`. We need this file to gather information about the module for the module list page."
     ],
-    "stars": 2,
+    "stars": 3,
     "license": "MIT",
     "image": "MMM-HolidayCountdown.jpg"
   },

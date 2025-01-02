@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "2025-01-02T04:30:14.573Z",
+  "lastUpdate": "2025-01-02T16:30:13.962Z",
   "modules": [
     {
       "name": "MMM-01ZM",
@@ -724,6 +724,16 @@
       "maintainer": "cgillinger",
       "maintainerURL": "",
       "description": "Displays a new bird every day with a photo, name, and interesting facts. Powered by the Nuthatch API by Last Elm Software, it's perfect for bird enthusiasts or anyone who wants to bring a touch of nature to their MagicMirror setup.",
+      "issues": []
+    },
+    {
+      "name": "MMM-Birthday",
+      "category": "Entertainment / Misc",
+      "url": "https://github.com/cgillinger/MMM-Birthday",
+      "id": "cgillinger/MMM-Birthday",
+      "maintainer": "cgillinger",
+      "maintainerURL": "https://github.com/cgillinger",
+      "description": "Celebrate birthdays with animated fireworks and confetti effects.",
       "issues": []
     },
     {

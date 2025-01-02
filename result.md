@@ -1,16 +1,16 @@
 # Result of the module analysis
 
-Last update: 2025-01-02T05:38:48+01:00
+Last update: 2025-01-02T17:38:40+01:00
 
 ## Statistics
 
 |                      | number   |
 |:---------------------|:--------:|
-| modules analyzed     |   1212   |
+| modules analyzed     |   1213   |
 | maintainer           |    655   |
-| modules with issues  |   1210   |
-| issues               |   6973   |
-| modules at github    |   1090   |
+| modules with issues  |   1211   |
+| issues               |   6976   |
+| modules at github    |   1091   |
 | modules at gitlab    |     10   |
 | modules at bitbucket |      1   |
 
@@ -643,6 +643,13 @@ Last update: 2025-01-02T05:38:48+01:00
 3. Information: There are updates for 1 dependencie(s):
    - node-fetch  ^2.6.1  →  ^3.3.2
 
+
+### [MMM-Birthday by cgillinger](https://github.com/cgillinger/MMM-Birthday)
+
+1. There are no keywords in 'package.json'. We would use them as tags on the module list page.
+2. Recommendation: Found `new Date()` in file `MMM-Birthday.js`: Consider replacing it by `new Date(Date.now())`. It's helpful for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
+3. Recommendation: The README seems not to have an update instruction (the word 'update' is missing). Please add one.
+4. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
 
 ### [MMM-birthdays by amitchone](https://github.com/amitchone/MMM-birthdays)
 
@@ -2981,7 +2988,7 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
 2. Recommendation: Found `axios` in file `package.json`: Replace it with built-in fetch.
 3. Recommendation: Found `axios` in file `GooglePhotosLib.js`: Replace it with built-in fetch.
 4. Information: There are updates for 1 dependencie(s):
-   - sweetalert2  ^11.15.3  →  ^11.15.5
+   - sweetalert2  ^11.15.3  →  ^11.15.8
 
 
 ### [MMM-GoogleBirthdaysProvider by PalatinCoder](https://github.com/PalatinCoder/MMM-GoogleBirthdaysProvider)
@@ -7006,7 +7013,7 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
 2. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
 3. Information: There are updates for 2 dependencie(s):
    - async                ^3.2.5  →   ^3.2.6
-   - systeminformation  ^5.21.24  →  ^5.24.3
+   - systeminformation  ^5.21.24  →  ^5.24.6
 
 
 ### [MMM-ping by fewieden](https://github.com/fewieden/MMM-ping)
@@ -7340,10 +7347,7 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
 
 ### [MMM-PrixCarburants by bugsounet](https://github.com/bugsounet/MMM-PrixCarburants)
 
-1. Information: There are updates for 1 dependencie(s):
-   - eslint-plugin-package-json  ^0.18.0  →  ^0.19.0
-
-2. ESLint issues:
+1. ESLint issues:
    - installer/dev.js: Line 8, Column 22: "glob" should be replaced with an alternative package. Read more here: https://github.com/es-tooling/module-replacements/blob/main/docs/modules/glob.md (rule: depend/ban-dependencies)
    - installer/minify.js: Line 7, Column 22: "glob" should be replaced with an alternative package. Read more here: https://github.com/es-tooling/module-replacements/blob/main/docs/modules/glob.md (rule: depend/ban-dependencies)
    - installer/src.js: Line 8, Column 22: "glob" should be replaced with an alternative package. Read more here: https://github.com/es-tooling/module-replacements/blob/main/docs/modules/glob.md (rule: depend/ban-dependencies)
