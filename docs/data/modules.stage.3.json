@@ -5937,7 +5937,7 @@
       "voice control",
       "smart home"
     ],
-    "image": "resources-previewFS.jpg"
+    "image": "EXTs-EXT-MusicPlayer-resources-Screenshot.jpg"
   },
   {
     "name": "MMM-GoogleAssistant",
@@ -10443,7 +10443,7 @@
       "No compatible or wrong license field in 'package.json' or LICENSE file. Without that, we can't use an image."
     ],
     "outdated": "Abandoned. No reactions to issues since years. Seems not to work anymore. Use MMM-Mopidy-MPD instead.",
-    "stars": 13,
+    "stars": 14,
     "license": "MIT License"
   },
   {
@@ -10666,7 +10666,7 @@
     "maintainerURL": "https://github.com/BKeyport",
     "description": "Display multiple mini-calendars at the same time.",
     "issues": [],
-    "stars": 15,
+    "stars": 16,
     "license": "MIT",
     "tags": [
       "calendar"
@@ -10819,7 +10819,7 @@
     "maintainerURL": "",
     "description": "Displays your commute times to several destinations. Highly configurable.",
     "issues": [],
-    "stars": 39,
+    "stars": 41,
     "tags": [
       "traffic",
       "commute"

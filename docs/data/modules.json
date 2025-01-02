@@ -2587,7 +2587,7 @@
     "license": "ISC",
     "image": "doc_images-playground_example.jpg",
     "defaultSortWeight": 8,
-    "lastCommit": "2024-12-31T16:23:22-06:00"
+    "lastCommit": "2025-01-01T18:27:53-06:00"
   },
   {
     "name": "MMM-Confucius-say",
@@ -6003,9 +6003,9 @@
       "voice control",
       "smart home"
     ],
-    "image": "resources-previewFS.jpg",
-    "defaultSortWeight": -1,
-    "lastCommit": "2024-12-16T01:24:30+01:00"
+    "image": "EXTs-EXT-MusicPlayer-resources-Screenshot.jpg",
+    "defaultSortWeight": 1,
+    "lastCommit": "2025-01-01T18:00:07+01:00"
   },
   {
     "name": "MMM-GoogleAssistant",
@@ -10535,7 +10535,7 @@
     "description": "Uses MPD to show the state and playlist of your music player.",
     "issues": false,
     "outdated": "Abandoned. No reactions to issues since years. Seems not to work anymore. Use MMM-Mopidy-MPD instead.",
-    "stars": 13,
+    "stars": 14,
     "license": "MIT License",
     "defaultSortWeight": 901,
     "lastCommit": "2018-12-23T11:53:47+01:00"
@@ -10759,7 +10759,7 @@
     "maintainerURL": "https://github.com/BKeyport",
     "description": "Display multiple mini-calendars at the same time.",
     "issues": true,
-    "stars": 15,
+    "stars": 16,
     "license": "MIT",
     "tags": [
       "calendar"
@@ -10917,7 +10917,7 @@
     "maintainerURL": "",
     "description": "Displays your commute times to several destinations. Highly configurable.",
     "issues": true,
-    "stars": 39,
+    "stars": 41,
     "tags": [
       "traffic",
       "commute"

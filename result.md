@@ -1,6 +1,6 @@
 # Result of the module analysis
 
-Last update: 2025-01-01T17:38:31+01:00
+Last update: 2025-01-02T05:38:48+01:00
 
 ## Statistics
 
@@ -9,7 +9,7 @@ Last update: 2025-01-01T17:38:31+01:00
 | modules analyzed     |   1212   |
 | maintainer           |    655   |
 | modules with issues  |   1210   |
-| issues               |   6971   |
+| issues               |   6973   |
 | modules at github    |   1090   |
 | modules at gitlab    |     10   |
 | modules at bitbucket |      1   |
@@ -2978,14 +2978,10 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
 ### [MMM-GoogleAssistant by bugsounet](https://github.com/bugsounet/MMM-GoogleAssistant)
 
 1. Issues are not enabled in the GitHub repository. So users cannot report bugs. Please enable issues in your repo.
-2. Information: There are updates for 7 dependencie(s):
-   - @grpc/grpc-js                ^1.12.4  →   ^1.12.5
-   - @stylistic/eslint-plugin     ^2.11.0  →   ^2.12.1
-   - esbuild                      ^0.24.0  →   ^0.24.2
-   - eslint                       ^9.16.0  →   ^9.17.0
-   - eslint-plugin-package-json   ^0.18.0  →   ^0.19.0
-   - node-html-parser             ^6.1.13  →    ^7.0.1
-   - sweetalert2                 ^11.14.5  →  ^11.15.3
+2. Recommendation: Found `axios` in file `package.json`: Replace it with built-in fetch.
+3. Recommendation: Found `axios` in file `GooglePhotosLib.js`: Replace it with built-in fetch.
+4. Information: There are updates for 1 dependencie(s):
+   - sweetalert2  ^11.15.3  →  ^11.15.5
 
 
 ### [MMM-GoogleBirthdaysProvider by PalatinCoder](https://github.com/PalatinCoder/MMM-GoogleBirthdaysProvider)

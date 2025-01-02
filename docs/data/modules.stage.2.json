@@ -7550,7 +7550,7 @@
     "description": "Uses MPD to show the state and playlist of your music player.",
     "issues": [],
     "outdated": "Abandoned. No reactions to issues since years. Seems not to work anymore. Use MMM-Mopidy-MPD instead.",
-    "stars": 13
+    "stars": 14
   },
   {
     "name": "MMM-MPlayer",
@@ -7705,7 +7705,7 @@
     "maintainerURL": "https://github.com/BKeyport",
     "description": "Display multiple mini-calendars at the same time.",
     "issues": [],
-    "stars": 15,
+    "stars": 16,
     "license": "MIT"
   },
   {
@@ -7814,7 +7814,7 @@
     "maintainerURL": "",
     "description": "Displays your commute times to several destinations. Highly configurable.",
     "issues": [],
-    "stars": 39
+    "stars": 41
   },
   {
     "name": "MMM-mycroft-bridge",
