@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "2025-01-05T23:02:36.755Z",
+  "lastUpdate": "2025-01-12T16:30:13.681Z",
   "modules": [
     {
       "name": "MMM-01ZM",
@@ -261,6 +261,16 @@
       "maintainer": "retroflex",
       "maintainerURL": "",
       "description": "Shows the current standings of Allsvenskan (the top Swedish football league).",
+      "issues": []
+    },
+    {
+      "name": "MMM-AlplakesLiveTemperature",
+      "category": "Weather",
+      "url": "https://github.com/teemoo7/MMM-AlplakesLiveTemperature",
+      "id": "teemoo7/MMM-AlplakesLiveTemperature",
+      "maintainer": "teemoo7",
+      "maintainerURL": "https://github.com/teemoo7",
+      "description": "Display live temperature of a given lake in the Alps (Switzerland, Italy, France, ...). Based on <a target=\"_blank\" href=\"https://www.alplakes.eawag.ch/\">Alplakes</a> API.",
       "issues": []
     },
     {
@@ -649,21 +659,11 @@
     {
       "name": "MMM-bergfex",
       "category": "Weather",
-      "url": "https://github.com/nebulx29/MMM-bergfex",
-      "id": "nebulx29/MMM-bergfex",
-      "maintainer": "nebulx29",
-      "maintainerURL": "",
-      "description": "Displays snow reports from bergfex.at.",
-      "issues": []
-    },
-    {
-      "name": "MMM-bergfex",
-      "category": "Weather",
       "url": "https://gitlab.com/MajorChris1983/MMM-bergfex",
       "id": "MajorChris1983/MMM-bergfex",
       "maintainer": "MajorChris1983",
       "maintainerURL": "",
-      "description": "Displays snow reports from bergfex.at, forked version. Countries provided by bergfex.at can be configured and set.",
+      "description": "Displays snow reports from bergfex.at. Countries provided by bergfex.at can be configured and set.<br />This is a fork of <a target=\"_blank\" href=\"https://github.com/nebulx29/MMM-bergfex\">the unmaintained module from nebulux</a>.",
       "issues": []
     },
     {
@@ -3354,6 +3354,36 @@
       "issues": []
     },
     {
+      "name": "MMM-FroniusSolar",
+      "category": "Utility / IoT / 3rd Party / Integration",
+      "url": "https://github.com/ChrisF1976/MMM-FroniusSolar",
+      "id": "ChrisF1976/MMM-FroniusSolar",
+      "maintainer": "ChrisF1976",
+      "maintainerURL": "",
+      "description": "visualize solar energy data from a Fronius solar system. It displays energy consumption using one compact gauge.",
+      "issues": []
+    },
+    {
+      "name": "MMM-FroniusSolar2",
+      "category": "Utility / IoT / 3rd Party / Integration",
+      "url": "https://github.com/ChrisF1976/MMM-FroniusSolar2",
+      "id": "ChrisF1976/MMM-FroniusSolar2",
+      "maintainer": "ChrisF1976",
+      "maintainerURL": "",
+      "description": "visualize solar energy data from a Fronius solar system. It displays energy flows using intuitive gauges.",
+      "issues": []
+    },
+    {
+      "name": "MMM-FroniusSolar3",
+      "category": "Utility / IoT / 3rd Party / Integration",
+      "url": "https://github.com/ChrisF1976/MMM-FroniusSolar3",
+      "id": "ChrisF1976/MMM-FroniusSolar3",
+      "maintainer": "ChrisF1976",
+      "maintainerURL": "",
+      "description": "visualize solar energy data from a Fronius solar system. It displays energy using intuitive gauges.",
+      "issues": []
+    },
+    {
       "name": "MMM-FSAPI",
       "category": "Entertainment / Misc",
       "url": "https://github.com/MarcLandis/MMM-FSAPI",
@@ -4161,9 +4191,9 @@
     {
       "name": "MMM-homeassistant-sensors",
       "category": "Utility / IoT / 3rd Party / Integration",
-      "url": "https://github.com/leinich/MMM-homeassistant-sensors",
-      "id": "leinich/MMM-homeassistant-sensors",
-      "maintainer": "leinich",
+      "url": "https://github.com/ledsi/MMM-homeassistant-sensors",
+      "id": "ledsi/MMM-homeassistant-sensors",
+      "maintainer": "ledsi",
       "maintainerURL": "",
       "description": "Display information from Home Assistant using the home assistant REST API.",
       "issues": []
@@ -4640,6 +4670,16 @@
       "maintainer": "mykle1",
       "maintainerURL": "",
       "description": "Alternative to the compliments module.",
+      "issues": []
+    },
+    {
+      "name": "MMM-IntelliCenter",
+      "category": "Utility / IoT / 3rd Party / Integration",
+      "url": "https://github.com/parnic/MMM-IntelliCenter",
+      "id": "parnic/MMM-IntelliCenter",
+      "maintainer": "parnic",
+      "maintainerURL": "",
+      "description": "Read data from and allow control of a Pentair IntelliCenter pool system.",
       "issues": []
     },
     {
@@ -6371,21 +6411,11 @@
     {
       "name": "MMM-MP3Player",
       "category": "Entertainment / Misc",
-      "url": "https://github.com/asimhsidd/MMM-MP3Player",
-      "id": "asimhsidd/MMM-MP3Player",
-      "maintainer": "asimhsidd",
-      "maintainerURL": "",
-      "description": "Play music from USB pen drive as soon as it is inserted.",
-      "issues": []
-    },
-    {
-      "name": "MMM-MP3Player",
-      "category": "Entertainment / Misc",
       "url": "https://github.com/x3mEr/MMM-MP3Player",
       "id": "x3mEr/MMM-MP3Player",
       "maintainer": "x3mEr",
       "maintainerURL": "",
-      "description": "Play music from folder. It's a remade asimhsidd's MMM-MP3Player module.",
+      "description": "Play music from folder. It's a remade <a target=\"_blank\" href=\"https://github.com/asimhsidd/MMM-MP3Player\">asimhsidd's MMM-MP3Player module</a>.",
       "issues": []
     },
     {
@@ -10621,6 +10651,16 @@
       "maintainer": "Thlb",
       "maintainerURL": "",
       "description": "Display DS18B20 sensor's temperature.",
+      "issues": []
+    },
+    {
+      "name": "MMM-Temp2IOT",
+      "category": "Utility / IoT / 3rd Party / Integration",
+      "url": "https://github.com/ChrisF1976/MMM-Temp2IOT",
+      "id": "ChrisF1976/MMM-Temp2IOT",
+      "maintainer": "ChrisF1976",
+      "maintainerURL": "",
+      "description": "Display temperature readings from <a target=\"_blank\" href=\"https://github.com/100prznt/Temp2IoT\">Temp2IOT</a> sensors.",
       "issues": []
     },
     {
