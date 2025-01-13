@@ -10425,8 +10425,8 @@
       "fluidd"
     ],
     "image": ".github-example.jpg",
-    "defaultSortWeight": 6,
-    "lastCommit": "2023-09-11T15:41:11+02:00"
+    "defaultSortWeight": 5,
+    "lastCommit": "2025-01-13T16:10:44+01:00"
   },
   {
     "name": "MMM-Mopidy-MPD",
@@ -13773,7 +13773,7 @@
     "maintainerURL": "",
     "description": "Make your mirror to a Planetarium.",
     "issues": true,
-    "stars": 4,
+    "stars": 5,
     "license": "MIT",
     "defaultSortWeight": 6,
     "lastCommit": "2023-07-05T10:55:29+02:00"
@@ -19677,7 +19677,7 @@
     ],
     "image": "screenshot.jpg",
     "defaultSortWeight": 2,
-    "lastCommit": "2025-01-12T11:00:03+01:00"
+    "lastCommit": "2025-01-13T17:26:08+01:00"
   },
   {
     "name": "MMM-WebView",

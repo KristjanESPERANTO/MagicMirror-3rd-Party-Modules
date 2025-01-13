@@ -1,6 +1,6 @@
 # Result of the module analysis
 
-Last update: 2025-01-13T05:38:58+01:00
+Last update: 2025-01-13T17:39:54+01:00
 
 ## Statistics
 
@@ -9,7 +9,7 @@ Last update: 2025-01-13T05:38:58+01:00
 | modules analyzed     |   1218   |
 | maintainer           |    654   |
 | modules with issues  |   1218   |
-| issues               |   6989   |
+| issues               |   6988   |
 | modules at github    |   1095   |
 | modules at gitlab    |     11   |
 | modules at bitbucket |      1   |
@@ -758,11 +758,12 @@ Last update: 2025-01-13T05:38:58+01:00
 
 ### [MMM-BoschSmartHome by jalibu](https://github.com/jalibu/MMM-BoschSmartHome)
 
-1. Information: There are updates for 7 dependencie(s):
+1. Information: There are updates for 8 dependencie(s):
    - @stylistic/eslint-plugin   ^2.12.1  →   ^2.13.0
    - @types/node               ^22.10.2  →  ^22.10.5
    - bosch-smart-home-bridge     ^1.6.0  →    ^1.7.0
    - eslint                     ^9.17.0  →   ^9.18.0
+   - eslint-config-prettier      ^9.1.0  →   ^10.0.1
    - rollup                     ^4.29.1  →   ^4.30.1
    - typescript                  ^5.7.2  →    ^5.7.3
    - typescript-eslint          ^8.18.2  →   ^8.19.1
@@ -4100,13 +4101,14 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
 
 1. Recommendation: Found `new Date()` in file `JastBackendUtils.ts`: Consider replacing it by `new Date(Date.now())`. It's helpful for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
 2. Recommendation: Replace eslintrc by new flat config.
-3. Information: There are updates for 12 dependencie(s):
+3. Information: There are updates for 13 dependencie(s):
    - @rollup/plugin-commonjs           ^25.0.7  →  ^28.0.2
    - @rollup/plugin-node-resolve       ^15.2.3  →  ^16.0.0
    - @rollup/plugin-typescript         ^11.1.6  →  ^12.1.2
    - @typescript-eslint/eslint-plugin  ^6.19.1  →  ^8.19.1
    - @typescript-eslint/parser         ^6.19.1  →  ^8.19.1
    - eslint                            ^8.56.0  →  ^9.18.0
+   - eslint-config-prettier             ^9.1.0  →  ^10.0.1
    - eslint-plugin-prettier             ^5.1.3  →   ^5.2.1
    - prettier                           ^3.2.4  →   ^3.4.2
    - rollup                             ^4.9.6  →  ^4.30.1
@@ -5425,9 +5427,8 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
 2. Typo: Found `Magic Mirror` in file `MMM-moonraker.js`: Replace it with `MagicMirror²`.
 3. Outdated: Found `MichMich/MagicMirror` in file `README.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
 4. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
-5. Recommendation: Found `require("fetch")` in file `node_helper.js`: Replace it with built-in fetch.
-6. Deprecated: Found `"grunt"` in file `package.json`: Grunt is practically unmaintained. Move on to something better.
-7. Recommendation: Replace eslintrc by new flat config.
+5. Deprecated: Found `"grunt"` in file `package.json`: Grunt is practically unmaintained. Move on to something better.
+6. Recommendation: Replace eslintrc by new flat config.
 
 ### [MMM-Mopidy-MPD by coderpussy](https://github.com/coderpussy/MMM-Mopidy-MPD)
 
