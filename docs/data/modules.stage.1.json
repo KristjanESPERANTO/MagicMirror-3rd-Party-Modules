@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "2025-01-12T16:30:13.681Z",
+  "lastUpdate": "2025-01-13T04:30:17.129Z",
   "modules": [
     {
       "name": "MMM-01ZM",
@@ -9121,6 +9121,16 @@
       "issues": []
     },
     {
+      "name": "MMM-Resseltrafiken",
+      "category": "Transport / Travel",
+      "url": "https://github.com/cgillinger/MMM-Resseltrafiken",
+      "id": "cgillinger/MMM-Resseltrafiken",
+      "maintainer": "cgillinger",
+      "maintainerURL": "https://github.com/cgillinger",
+      "description": "Displays timetables for Sjöstadstrafiken and M/S Emelie ferry services in Stockholm. Features color-coded departures, custom stop highlighting, and automatic handling of holiday schedules.",
+      "issues": []
+    },
+    {
       "name": "MMM-Rest",
       "category": "Utility / IoT / 3rd Party / Integration",
       "url": "https://github.com/Tuxdiver/MMM-Rest",
@@ -11706,6 +11716,16 @@
       "maintainer": "BrianHepler",
       "maintainerURL": "https://github.com/BrianHepler",
       "description": "Dynamically loaded weather image background from Unsplash. This is a plugin of other weather modules.",
+      "issues": []
+    },
+    {
+      "name": "MMM-WeatherBridge",
+      "category": "Weather",
+      "url": "https://gitlab.com/khassel/MMM-WeatherBridge",
+      "id": "khassel/MMM-WeatherBridge",
+      "maintainer": "khassel",
+      "maintainerURL": "https://gitlab.com/karsten13",
+      "description": "Uses the default weather module as data provider with own njk templates and animated weather icons.",
       "issues": []
     },
     {

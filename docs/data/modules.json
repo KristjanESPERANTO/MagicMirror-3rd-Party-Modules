@@ -12005,7 +12005,7 @@
     "maintainerURL": "",
     "description": "Display scores of National Hockey League.",
     "issues": true,
-    "stars": 1,
+    "stars": 2,
     "license": "MIT",
     "tags": [
       "nhl",
@@ -13408,7 +13408,7 @@
     "maintainerURL": "https://github.com/mcl8on",
     "description": "Displays PGA tournaments scores.",
     "issues": true,
-    "stars": 2,
+    "stars": 3,
     "license": "MIT",
     "tags": [
       "pga",
@@ -13441,7 +13441,7 @@
     "maintainerURL": "https://github.com/mumblebaj",
     "description": "Grab the status of your lights from your Hue Bridge with some updated features to display status of lights or groups.",
     "issues": true,
-    "stars": 5,
+    "stars": 6,
     "license": "MIT",
     "tags": [
       "philipshue",
@@ -13478,7 +13478,7 @@
     "maintainerURL": "https://github.com/PierreGode",
     "description": "Automatically controls the screen's power based on the presence of specified phones or devices within the network.",
     "issues": true,
-    "stars": 6,
+    "stars": 7,
     "license": "MIT",
     "tags": [
       "phone",
@@ -13560,7 +13560,7 @@
     "maintainerURL": "https://github.com/SalekurPolas",
     "description": "Informational module to display mirror information like Raspberry Pi model, unique serial number, network information, IPv4, IPv6, MAC address, OS information, CPU information, and more.",
     "issues": true,
-    "stars": 16,
+    "stars": 17,
     "license": "MIT",
     "tags": [
       "raspberrypi",
@@ -13614,7 +13614,7 @@
     "maintainerURL": "",
     "description": "After a configurated time without any user interaction the display will turn off and hide all modules for economy mode. It will wake up with a PIR sensor.",
     "issues": true,
-    "stars": 39,
+    "stars": 42,
     "license": "MIT",
     "tags": [
       "screen",
@@ -13673,7 +13673,7 @@
     "description": "Managing monitor with PIR motion sensor (automatic standby when presence isn't detected).",
     "issues": false,
     "outdated": "Abandoned. Repo has been archived at 2024-01-10. There seems to be <a href=\"https://github.com/hervidero/MMM-PIR-Sensor-Lite\">an active fork</a>, but the clone command has not yet been adapted.",
-    "stars": 15,
+    "stars": 16,
     "isArchived": true,
     "license": "MIT",
     "tags": [
@@ -14346,7 +14346,7 @@
     "maintainer": "KristjanESPERANTO",
     "maintainerURL": "",
     "description": "Displays departure information for public transportation in Germany and some other European countries. The <a target=\"_blank\" href=\"https://github.com/public-transport/hafas-client\">hafas-client</a> is used to query the information. The interface of the Deutsche Bahn is used as standard, this includes most of the local networks with buses, trams, etc. However, <a target=\"_blank\" href=\"https://github.com/public-transport/hafas-client/blob/main/p/readme.md\">other hafas interfaces</a> can also be used.",
-    "issues": false,
+    "issues": true,
     "stars": 21,
     "license": "MIT",
     "tags": [
@@ -15105,6 +15105,35 @@
     "license": "MIT",
     "defaultSortWeight": 7,
     "lastCommit": "2024-02-01T15:15:41+01:00"
+  },
+  {
+    "name": "MMM-Resseltrafiken",
+    "category": "Transport / Travel",
+    "url": "https://github.com/cgillinger/MMM-Resseltrafiken",
+    "id": "cgillinger/MMM-Resseltrafiken",
+    "maintainer": "cgillinger",
+    "maintainerURL": "https://github.com/cgillinger",
+    "description": "Displays timetables for Sj\u00f6stadstrafiken and M/S Emelie ferry services in Stockholm. Features color-coded departures, custom stop highlighting, and automatic handling of holiday schedules.",
+    "issues": true,
+    "stars": 0,
+    "license": "MIT",
+    "tags": [
+      "smartmirror",
+      "sj\u00f6stadstrafiken",
+      "emelie",
+      "stockholm",
+      "kollektivtrafik",
+      "b\u00e5ttrafik",
+      "hammarby sj\u00f6stad",
+      "pendelb\u00e5t",
+      "public transport",
+      "ferry",
+      "timetable",
+      "tidtabell"
+    ],
+    "image": "screenshots-screenshot.jpg",
+    "defaultSortWeight": 9,
+    "lastCommit": "2025-01-12T20:31:29+01:00"
   },
   {
     "name": "MMM-Rest",
@@ -19458,6 +19487,19 @@
     "image": "scr.jpg",
     "defaultSortWeight": 3,
     "lastCommit": "2024-10-20T19:19:25-04:00"
+  },
+  {
+    "name": "MMM-WeatherBridge",
+    "category": "Weather",
+    "url": "https://gitlab.com/khassel/MMM-WeatherBridge",
+    "id": "khassel/MMM-WeatherBridge",
+    "maintainer": "khassel",
+    "maintainerURL": "https://gitlab.com/karsten13",
+    "description": "Uses the default weather module as data provider with own njk templates and animated weather icons.",
+    "issues": true,
+    "stars": 3,
+    "defaultSortWeight": 4,
+    "lastCommit": "2025-01-10T22:56:22+00:00"
   },
   {
     "name": "MMM-WeatherChart",
