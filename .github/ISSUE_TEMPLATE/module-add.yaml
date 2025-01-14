@@ -1,7 +1,7 @@
 name: Add New Module (This is a test)
 description: Use this template to suggest a new module.
 title: "[Add] Module: {{ name }}"
-labels: [module, add]
+labels: [add, module]
 body:
   - type: dropdown
     attributes:
