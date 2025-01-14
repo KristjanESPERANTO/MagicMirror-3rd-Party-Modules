@@ -175,3 +175,7 @@ How can you use it?
 - Use data from GitHub API: <https://api.github.com/repos/MagicMirrorOrg/MagicMirror>
   - Is there also a GitLab API? Yes, example: <https://gitlab.com/khassel/MMM-RepoStats/-/blob/master/node_helper.js?ref_type=heads#L116>
   - Unfortunately, the queries are blocked relatively quickly when we query information from each module via the API.
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE.md) file for details.
