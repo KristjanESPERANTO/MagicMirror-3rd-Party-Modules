@@ -420,10 +420,6 @@ def check_modules():
             elif module.get('stars', 0) < 3:
                 module["defaultSortWeight"] = max(module["defaultSortWeight"], 1)
 
-            # Just to reduce imbalance in the default sort order, modules from this developer get a minimum value of one.
-            if module['maintainer'] == "KristjanESPERANTO":
-                module["defaultSortWeight"] = max(module["defaultSortWeight"], 1)
-
     print(
         f"{stats['moduleCounter']} modules analyzed. For results see file result.md.           ")
 
