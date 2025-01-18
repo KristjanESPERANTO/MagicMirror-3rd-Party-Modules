@@ -2567,7 +2567,7 @@
     "maintainerURL": "https://github.com/jttaylor",
     "description": "Displays some funny Confucius say quotes.",
     "issues": [],
-    "stars": 0,
+    "stars": 1,
     "license": "MIT",
     "tags": [
       "confucius"
@@ -4605,7 +4605,7 @@
     "issues": [
       "There is no `package.json`. We need this file to gather information about the module for the module list page."
     ],
-    "stars": 83,
+    "stars": 84,
     "license": "MIT",
     "image": "img-readme-face-recognition-guest-smai.jpg"
   },
@@ -11713,6 +11713,22 @@
   {
     "name": "MMM-NewsAPI",
     "category": "News / Information",
+    "url": "https://github.com/mumblebaj/MMM-NewsAPI",
+    "id": "mumblebaj/MMM-NewsAPI",
+    "maintainer": "mumblebaj",
+    "maintainerURL": "https://github.com/mumblebaj",
+    "description": "Get news from <a target=\"_blank\" href=\"https://newsapi.org\">newsapi.org</a>.",
+    "issues": [],
+    "stars": 10,
+    "license": "MIT",
+    "tags": [
+      "news"
+    ],
+    "image": "screenshot1.jpg"
+  },
+  {
+    "name": "MMM-NewsAPI",
+    "category": "News / Information",
     "url": "https://github.com/totoluto/MMM-NewsAPI",
     "id": "totoluto/MMM-NewsAPI",
     "maintainer": "totoluto",
@@ -11726,22 +11742,6 @@
       "api"
     ],
     "image": "screenshots-MMM-NewsApi.jpg"
-  },
-  {
-    "name": "MMM-NewsAPI",
-    "category": "News / Information",
-    "url": "https://github.com/mumblebaj/MMM-NewsAPI",
-    "id": "mumblebaj/MMM-NewsAPI",
-    "maintainer": "mumblebaj",
-    "maintainerURL": "https://github.com/mumblebaj",
-    "description": "Get news from <a target=\"_blank\" href=\"https://newsapi.org\">newsapi.org</a>.",
-    "issues": [],
-    "stars": 10,
-    "license": "MIT",
-    "tags": [
-      "news"
-    ],
-    "image": "screenshot1.jpg"
   },
   {
     "name": "MMM-NewsFeedTicker",

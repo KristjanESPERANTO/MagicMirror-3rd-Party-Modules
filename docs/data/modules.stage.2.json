@@ -1836,7 +1836,7 @@
     "maintainerURL": "https://github.com/jttaylor",
     "description": "Displays some funny Confucius say quotes.",
     "issues": [],
-    "stars": 0,
+    "stars": 1,
     "license": "MIT"
   },
   {
@@ -3323,7 +3323,7 @@
     "maintainerURL": "https://github.com/EbenKouao",
     "description": "This module allows you to access profiles using face recognition. This works on the back of OpenCV face recognition module. Program this script to control applicances e.g. Smart Plugs, or lights based on an individual's face profile being recognized.",
     "issues": [],
-    "stars": 83,
+    "stars": 84,
     "license": "MIT"
   },
   {
@@ -8440,18 +8440,6 @@
   {
     "name": "MMM-NewsAPI",
     "category": "News / Information",
-    "url": "https://github.com/totoluto/MMM-NewsAPI",
-    "id": "totoluto/MMM-NewsAPI",
-    "maintainer": "totoluto",
-    "maintainerURL": "https://github.com/totoluto",
-    "description": "Get top headlines from <a target=\"_blank\" href=\"https://newsapi.org\">newsapi.org</a>.",
-    "issues": [],
-    "stars": 0,
-    "license": "MIT"
-  },
-  {
-    "name": "MMM-NewsAPI",
-    "category": "News / Information",
     "url": "https://github.com/mumblebaj/MMM-NewsAPI",
     "id": "mumblebaj/MMM-NewsAPI",
     "maintainer": "mumblebaj",
@@ -8459,6 +8447,18 @@
     "description": "Get news from <a target=\"_blank\" href=\"https://newsapi.org\">newsapi.org</a>.",
     "issues": [],
     "stars": 10,
+    "license": "MIT"
+  },
+  {
+    "name": "MMM-NewsAPI",
+    "category": "News / Information",
+    "url": "https://github.com/totoluto/MMM-NewsAPI",
+    "id": "totoluto/MMM-NewsAPI",
+    "maintainer": "totoluto",
+    "maintainerURL": "https://github.com/totoluto",
+    "description": "Get top headlines from <a target=\"_blank\" href=\"https://newsapi.org\">newsapi.org</a>.",
+    "issues": [],
+    "stars": 0,
     "license": "MIT"
   },
   {

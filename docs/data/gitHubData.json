@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "2025-01-18T04:30:34.589Z",
+  "lastUpdate": "2025-01-18T16:30:30.644Z",
   "repositories": [
     {
       "id": "0lek/MMM-socialbicycles",
@@ -1291,7 +1291,7 @@
     },
     {
       "id": "BenRoe/MMM-FHEM",
-      "gitHubDataLastUpdate": "2024-12-26T16:30:21.957Z",
+      "gitHubDataLastUpdate": "2025-01-18T16:30:28.976Z",
       "gitHubData": {
         "issues": 6,
         "stars": 10,
@@ -4063,10 +4063,10 @@
     },
     {
       "id": "EbenKouao/MMM-Face-Recognition-SMAI",
-      "gitHubDataLastUpdate": "2024-12-26T04:30:30.144Z",
+      "gitHubDataLastUpdate": "2025-01-18T16:30:19.354Z",
       "gitHubData": {
         "issues": 6,
-        "stars": 83,
+        "stars": 84,
         "license": "MIT",
         "archived": false,
         "disabled": false,
@@ -4315,7 +4315,7 @@
     },
     {
       "id": "eouia/MMM-fbPageCounter",
-      "gitHubDataLastUpdate": "2024-12-26T16:30:15.882Z",
+      "gitHubDataLastUpdate": "2025-01-18T16:30:22.619Z",
       "gitHubData": {
         "issues": 0,
         "stars": 3,
@@ -6345,7 +6345,7 @@
     },
     {
       "id": "jannekalliola/MMM-FiElectricityPrice",
-      "gitHubDataLastUpdate": "2024-12-26T16:30:22.837Z",
+      "gitHubDataLastUpdate": "2025-01-18T16:30:29.958Z",
       "gitHubData": {
         "issues": 1,
         "stars": 4,
@@ -6583,7 +6583,7 @@
     },
     {
       "id": "jesmak/MMM-FinParcel",
-      "gitHubDataLastUpdate": "2024-12-26T16:30:23.408Z",
+      "gitHubDataLastUpdate": "2025-01-18T16:30:30.606Z",
       "gitHubData": {
         "issues": 1,
         "stars": 0,
@@ -6695,7 +6695,7 @@
     },
     {
       "id": "jimbydude/MMM-Face-Multi-User-Recognition-SMAI",
-      "gitHubDataLastUpdate": "2024-12-26T04:30:29.315Z",
+      "gitHubDataLastUpdate": "2025-01-18T16:30:18.515Z",
       "gitHubData": {
         "issues": 0,
         "stars": 11,
@@ -6891,7 +6891,7 @@
     },
     {
       "id": "JonasGoebel/MMM-Facial-Recognition",
-      "gitHubDataLastUpdate": "2024-12-26T16:30:13.918Z",
+      "gitHubDataLastUpdate": "2025-01-18T16:30:20.331Z",
       "gitHubData": {
         "issues": 0,
         "stars": 1,
@@ -7059,10 +7059,10 @@
     },
     {
       "id": "jttaylor/MMM-Confucius-say",
-      "gitHubDataLastUpdate": "2024-12-26T16:30:18.359Z",
+      "gitHubDataLastUpdate": "2025-01-18T16:30:25.120Z",
       "gitHubData": {
         "issues": 0,
-        "stars": 0,
+        "stars": 1,
         "license": "MIT",
         "archived": false,
         "disabled": false,
@@ -7129,7 +7129,7 @@
     },
     {
       "id": "jupadin/MMM-F1",
-      "gitHubDataLastUpdate": "2024-12-26T04:30:28.303Z",
+      "gitHubDataLastUpdate": "2025-01-18T16:30:17.271Z",
       "gitHubData": {
         "issues": 0,
         "stars": 1,
@@ -8193,7 +8193,7 @@
     },
     {
       "id": "mabahj/MMM-Farevarsel",
-      "gitHubDataLastUpdate": "2024-12-26T16:30:14.867Z",
+      "gitHubDataLastUpdate": "2025-01-18T16:30:21.313Z",
       "gitHubData": {
         "issues": 0,
         "stars": 5,
@@ -9285,7 +9285,7 @@
     },
     {
       "id": "mmourcia/MMM-FieldHockey-FFH",
-      "gitHubDataLastUpdate": "2024-12-26T16:30:22.391Z",
+      "gitHubDataLastUpdate": "2025-01-18T16:30:29.405Z",
       "gitHubData": {
         "issues": 0,
         "stars": 0,
@@ -10335,7 +10335,7 @@
     },
     {
       "id": "mykle1/MMM-EyeCandy",
-      "gitHubDataLastUpdate": "2024-12-26T04:30:27.871Z",
+      "gitHubDataLastUpdate": "2025-01-18T16:30:16.803Z",
       "gitHubData": {
         "issues": 3,
         "stars": 45,
@@ -10895,7 +10895,7 @@
     },
     {
       "id": "nigel-daniels/MMM-FAA-Delay",
-      "gitHubDataLastUpdate": "2024-12-26T04:30:28.777Z",
+      "gitHubDataLastUpdate": "2025-01-18T16:30:17.811Z",
       "gitHubData": {
         "issues": 4,
         "stars": 2,
@@ -11063,9 +11063,9 @@
     },
     {
       "id": "nischi/MMM-Face-Reco-DNN",
-      "gitHubDataLastUpdate": "2024-12-26T04:30:29.727Z",
+      "gitHubDataLastUpdate": "2025-01-18T16:30:18.927Z",
       "gitHubData": {
-        "issues": 4,
+        "issues": 5,
         "stars": 94,
         "license": "MIT",
         "archived": false,
@@ -11147,7 +11147,7 @@
     },
     {
       "id": "njwilliams/MMM-Faces",
-      "gitHubDataLastUpdate": "2024-12-26T04:30:30.565Z",
+      "gitHubDataLastUpdate": "2025-01-18T16:30:19.757Z",
       "gitHubData": {
         "issues": 5,
         "stars": 10,
@@ -11287,7 +11287,7 @@
     },
     {
       "id": "normyx/MMM-Facial-Recognition-OCV3",
-      "gitHubDataLastUpdate": "2024-12-26T16:30:14.367Z",
+      "gitHubDataLastUpdate": "2025-01-18T16:30:20.755Z",
       "gitHubData": {
         "issues": 26,
         "stars": 51,
@@ -11889,7 +11889,7 @@
     },
     {
       "id": "Pip1405/MMM-FearAndGreedIndex",
-      "gitHubDataLastUpdate": "2024-12-26T16:30:16.445Z",
+      "gitHubDataLastUpdate": "2025-01-18T16:30:23.091Z",
       "gitHubData": {
         "issues": 1,
         "stars": 2,
@@ -11959,7 +11959,7 @@
     },
     {
       "id": "polarbearjngl/MMM-FastNotes",
-      "gitHubDataLastUpdate": "2024-12-26T16:30:15.349Z",
+      "gitHubDataLastUpdate": "2025-01-18T16:30:21.848Z",
       "gitHubData": {
         "issues": 2,
         "stars": 7,
@@ -13485,7 +13485,7 @@
     },
     {
       "id": "shin10/MMM-FF-cht-sh",
-      "gitHubDataLastUpdate": "2024-12-26T16:30:16.933Z",
+      "gitHubDataLastUpdate": "2025-01-18T16:30:23.690Z",
       "gitHubData": {
         "issues": 0,
         "stars": 1,
@@ -13499,7 +13499,7 @@
     },
     {
       "id": "shin10/MMM-FF-code-injector",
-      "gitHubDataLastUpdate": "2024-12-26T16:30:17.406Z",
+      "gitHubDataLastUpdate": "2025-01-18T16:30:24.130Z",
       "gitHubData": {
         "issues": 0,
         "stars": 1,
@@ -13513,7 +13513,7 @@
     },
     {
       "id": "shin10/MMM-FF-digital-rain",
-      "gitHubDataLastUpdate": "2024-12-26T16:30:17.867Z",
+      "gitHubDataLastUpdate": "2025-01-18T16:30:24.581Z",
       "gitHubData": {
         "issues": 1,
         "stars": 4,
@@ -13527,7 +13527,7 @@
     },
     {
       "id": "shin10/MMM-FF-Evan-Roth-Red-Lines",
-      "gitHubDataLastUpdate": "2024-12-26T16:30:18.744Z",
+      "gitHubDataLastUpdate": "2025-01-18T16:30:25.772Z",
       "gitHubData": {
         "issues": 0,
         "stars": 0,
@@ -13541,7 +13541,7 @@
     },
     {
       "id": "shin10/MMM-FF-Genius-Lyrics",
-      "gitHubDataLastUpdate": "2024-12-26T16:30:19.168Z",
+      "gitHubDataLastUpdate": "2025-01-18T16:30:26.156Z",
       "gitHubData": {
         "issues": 0,
         "stars": 5,
@@ -13555,7 +13555,7 @@
     },
     {
       "id": "shin10/MMM-FF-multigeiger",
-      "gitHubDataLastUpdate": "2024-12-26T16:30:19.667Z",
+      "gitHubDataLastUpdate": "2025-01-18T16:30:26.650Z",
       "gitHubData": {
         "issues": 0,
         "stars": 1,
@@ -13569,7 +13569,7 @@
     },
     {
       "id": "shin10/MMM-FF-process-stats",
-      "gitHubDataLastUpdate": "2024-12-26T16:30:20.121Z",
+      "gitHubDataLastUpdate": "2025-01-18T16:30:27.089Z",
       "gitHubData": {
         "issues": 0,
         "stars": 1,
@@ -13583,7 +13583,7 @@
     },
     {
       "id": "shin10/MMM-FF-StatsJS",
-      "gitHubDataLastUpdate": "2024-12-26T16:30:20.567Z",
+      "gitHubDataLastUpdate": "2025-01-18T16:30:27.526Z",
       "gitHubData": {
         "issues": 0,
         "stars": 0,
@@ -13597,7 +13597,7 @@
     },
     {
       "id": "shin10/MMM-FF-tenor-gif",
-      "gitHubDataLastUpdate": "2024-12-26T16:30:21.039Z",
+      "gitHubDataLastUpdate": "2025-01-18T16:30:28.097Z",
       "gitHubData": {
         "issues": 0,
         "stars": 0,
@@ -13611,7 +13611,7 @@
     },
     {
       "id": "shin10/MMM-FF-XKCD",
-      "gitHubDataLastUpdate": "2024-12-26T16:30:21.505Z",
+      "gitHubDataLastUpdate": "2025-01-18T16:30:28.567Z",
       "gitHubData": {
         "issues": 0,
         "stars": 2,
@@ -14843,7 +14843,7 @@
     },
     {
       "id": "themox/MMM-EveryNews",
-      "gitHubDataLastUpdate": "2024-12-26T04:30:27.456Z",
+      "gitHubDataLastUpdate": "2025-01-18T16:30:16.381Z",
       "gitHubData": {
         "issues": 0,
         "stars": 2,

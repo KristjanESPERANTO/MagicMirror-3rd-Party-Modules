@@ -1,6 +1,6 @@
 # Result of the module analysis
 
-Last update: 2025-01-18T05:39:19+01:00
+Last update: 2025-01-18T17:39:51+01:00
 
 ## Statistics
 
@@ -8,8 +8,8 @@ Last update: 2025-01-18T05:39:19+01:00
 |:---------------------|:--------:|
 | modules analyzed     |   1220   |
 | maintainer           |    655   |
-| modules with issues  |   1220   |
-| issues               |   6996   |
+| modules with issues  |   1219   |
+| issues               |   6995   |
 | modules at github    |   1097   |
 | modules at gitlab    |     11   |
 | modules at bitbucket |      1   |
@@ -6134,19 +6134,19 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
    - qrcode  1.5.1  →  1.5.4
 
 
-### [MMM-NewsAPI by totoluto](https://github.com/totoluto/MMM-NewsAPI)
-
-1. Typo: Found `Magic Mirror` in file `README.md`: Replace it with `MagicMirror²`.
-2. Recommendation: The README seems not to have an update instruction (the word 'update' is missing). Please add one.
-3. Typo: Found `Magic Mirror` in file `package.json`: Replace it with `MagicMirror²`.
-4. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
-
 ### [MMM-NewsAPI by mumblebaj](https://github.com/mumblebaj/MMM-NewsAPI)
 
 1. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
 2. ESLint issues:
    - MMM-NewsAPI.js: Line 164, Column 23: 'qr' is assigned a value but never used. (rule: no-unused-vars)
 
+
+### [MMM-NewsAPI by totoluto](https://github.com/totoluto/MMM-NewsAPI)
+
+1. Typo: Found `Magic Mirror` in file `README.md`: Replace it with `MagicMirror²`.
+2. Recommendation: The README seems not to have an update instruction (the word 'update' is missing). Please add one.
+3. Typo: Found `Magic Mirror` in file `package.json`: Replace it with `MagicMirror²`.
+4. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
 
 ### [MMM-NewsFeedTicker by justjim1220](https://github.com/justjim1220/MMM-NewsFeedTicker)
 
@@ -7497,14 +7497,6 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
    - eslint                      ^9.17.0  →   ^9.18.0
    - stylelint                  ^16.12.0  →  ^16.13.2
    - stylelint-config-standard   ^36.0.1  →   ^37.0.0
-
-
-### [MMM-PublicTransportHafas by KristjanESPERANTO](https://github.com/KristjanESPERANTO/MMM-PublicTransportHafas)
-
-1. Information: There are updates for 3 dependencie(s):
-   - db-vendo-client              ^6.3.2  →   ^6.3.3
-   - eslint-plugin-package-json  ^0.19.0  →  ^0.20.0
-   - lint-staged                 ^15.3.0  →  ^15.4.1
 
 
 ### [MMM-PublicTransportVVO by ChristianGeie](https://github.com/ChristianGeie/MMM-PublicTransportVVO)
