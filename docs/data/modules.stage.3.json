@@ -5648,7 +5648,7 @@
     "maintainerURL": "",
     "description": "Displays a grid simulating the <a target=\"_blank\" href=\"https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life\">Game of Life</a>.",
     "issues": [],
-    "stars": 13,
+    "stars": 14,
     "license": "MIT",
     "tags": [
       "game of life"
@@ -5694,7 +5694,7 @@
     "issues": [
       "Issue: The license in the package.json (ISC) doesn't match the license file (MIT)."
     ],
-    "stars": 1,
+    "stars": 2,
     "license": "MIT",
     "tags": [
       "gasmonitor"
@@ -5792,7 +5792,7 @@
     "issues": [
       "No image found."
     ],
-    "stars": 43,
+    "stars": 44,
     "tags": [
       "gesture",
       "gestures"
@@ -5889,7 +5889,7 @@
     "maintainerURL": "",
     "description": "This module allows to add a glass effect to MagicMirror² modules.",
     "issues": [],
-    "stars": 9,
+    "stars": 11,
     "license": "MIT",
     "tags": [
       "glassy",
@@ -5909,7 +5909,7 @@
       "There is no `package.json`. We need this file to gather information about the module for the module list page.",
       "No image found."
     ],
-    "stars": 40,
+    "stars": 41,
     "license": "MIT"
   },
   {
@@ -5924,7 +5924,7 @@
       "`package.json` issue: No description",
       "There are no keywords in 'package.json'. We would use them as tags on the module list page."
     ],
-    "stars": 70,
+    "stars": 72,
     "license": "MIT",
     "image": "screenshot.jpg"
   },
@@ -5937,7 +5937,7 @@
     "maintainerURL": "",
     "description": "Show a list of unread gmails.",
     "issues": [],
-    "stars": 11,
+    "stars": 12,
     "license": "MIT",
     "tags": [
       "mirror email"
@@ -7440,7 +7440,7 @@
       "Issue: The license in the package.json (ISC) doesn't match the license file (MIT).",
       "No image found."
     ],
-    "stars": 0,
+    "stars": 1,
     "license": "MIT"
   },
   {

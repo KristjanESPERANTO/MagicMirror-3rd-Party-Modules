@@ -1,6 +1,6 @@
 # Result of the module analysis
 
-Last update: 2025-01-19T05:39:15+01:00
+Last update: 2025-01-19T17:39:05+01:00
 
 ## Statistics
 
@@ -8,8 +8,8 @@ Last update: 2025-01-19T05:39:15+01:00
 |:---------------------|:--------:|
 | modules analyzed     |   1220   |
 | maintainer           |    655   |
-| modules with issues  |   1219   |
-| issues               |   6994   |
+| modules with issues  |   1220   |
+| issues               |   6995   |
 | modules at github    |   1097   |
 | modules at gitlab    |     11   |
 | modules at bitbucket |      1   |
@@ -765,7 +765,7 @@ Last update: 2025-01-19T05:39:15+01:00
    - eslint                     ^9.17.0  →   ^9.18.0
    - eslint-config-prettier      ^9.1.0  →   ^10.0.1
    - eslint-plugin-prettier      ^5.2.1  →    ^5.2.3
-   - rollup                     ^4.29.1  →   ^4.30.1
+   - rollup                     ^4.29.1  →   ^4.31.0
    - typescript                  ^5.7.2  →    ^5.7.3
    - typescript-eslint          ^8.18.2  →   ^8.20.0
 
@@ -2675,7 +2675,7 @@ deprecated: no longer maintained, switch to modern iconify-icon web component
 1. Information: There are updates for 4 dependencie(s):
    - @stylistic/eslint-plugin    ^2.12.1  →  ^2.13.0
    - eslint                      ^9.17.0  →  ^9.18.0
-   - eslint-plugin-package-json  ^0.19.0  →  ^0.20.0
+   - eslint-plugin-package-json  ^0.19.0  →  ^0.20.1
    - fdir                         ^6.4.2  →   ^6.4.3
 
 
@@ -2686,7 +2686,7 @@ deprecated: no longer maintained, switch to modern iconify-icon web component
 3. Information: There are updates for 4 dependencie(s):
    - @stylistic/eslint-plugin    ^2.12.1  →  ^2.13.0
    - eslint                      ^9.17.0  →  ^9.18.0
-   - eslint-plugin-package-json  ^0.19.0  →  ^0.20.0
+   - eslint-plugin-package-json  ^0.19.0  →  ^0.20.1
    - fdir                         ^6.4.2  →   ^6.4.3
 
 
@@ -2968,7 +2968,7 @@ deprecated: no longer maintained, switch to modern iconify-icon web component
 1. Information: There are updates for 4 dependencie(s):
    - @stylistic/eslint-plugin    ^2.12.1  →  ^2.13.0
    - eslint                      ^9.17.0  →  ^9.18.0
-   - eslint-plugin-package-json  ^0.19.0  →  ^0.20.0
+   - eslint-plugin-package-json  ^0.19.0  →  ^0.20.1
    - fdir                         ^6.4.2  →   ^6.4.3
 
 
@@ -3039,7 +3039,7 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
 2. Recommendation: Found `axios` in file `package.json`: Replace it with built-in fetch.
 3. Recommendation: Found `axios` in file `GooglePhotosLib.js`: Replace it with built-in fetch.
 4. Information: There are updates for 3 dependencie(s):
-   - eslint-plugin-package-json  ^0.19.0  →  ^0.20.0
+   - eslint-plugin-package-json  ^0.19.0  →  ^0.20.1
    - fdir                         ^6.4.2  →   ^6.4.3
    - markdownlint-cli2           ^0.17.1  →  ^0.17.2
 
@@ -4130,7 +4130,7 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
    - eslint-config-prettier             ^9.1.0  →  ^10.0.1
    - eslint-plugin-prettier             ^5.1.3  →   ^5.2.3
    - prettier                           ^3.2.4  →   ^3.4.2
-   - rollup                             ^4.9.6  →  ^4.30.1
+   - rollup                             ^4.9.6  →  ^4.31.0
    - rollup-plugin-banner2              ^1.2.2  →   ^1.3.1
    - typescript                         ^5.3.3  →   ^5.7.3
    - yahoo-finance2                    ^2.11.3  →  ^2.13.3
@@ -4974,7 +4974,7 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
 1. Information: There are updates for 4 dependencie(s):
    - @stylistic/eslint-plugin    ^2.12.1  →  ^2.13.0
    - eslint                      ^9.17.0  →  ^9.18.0
-   - eslint-plugin-package-json  ^0.19.0  →  ^0.20.0
+   - eslint-plugin-package-json  ^0.19.0  →  ^0.20.1
    - fdir                         ^6.4.2  →   ^6.4.3
 
 
@@ -6096,7 +6096,7 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
 1. Information: There are updates for 4 dependencie(s):
    - @stylistic/eslint-plugin    ^2.12.1  →  ^2.13.0
    - eslint                      ^9.17.0  →  ^9.18.0
-   - eslint-plugin-package-json  ^0.19.0  →  ^0.20.0
+   - eslint-plugin-package-json  ^0.19.0  →  ^0.20.1
    - fdir                         ^6.4.2  →   ^6.4.3
 
 
@@ -6280,7 +6280,7 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
    - @typescript-eslint/eslint-plugin  ^6.20.0  →  ^8.20.0
    - eslint                            ^8.56.0  →  ^9.18.0
    - prettier                           ^3.2.5  →   ^3.4.2
-   - rollup                             ^4.9.6  →  ^4.30.1
+   - rollup                             ^4.9.6  →  ^4.31.0
    - rollup-plugin-banner2              ^1.2.2  →   ^1.3.1
    - typescript                         ^5.3.3  →   ^5.7.3
 
@@ -7098,7 +7098,7 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
 1. Information: There are updates for 4 dependencie(s):
    - @stylistic/eslint-plugin    ^2.12.1  →  ^2.13.0
    - eslint                      ^9.17.0  →  ^9.18.0
-   - eslint-plugin-package-json  ^0.19.0  →  ^0.20.0
+   - eslint-plugin-package-json  ^0.19.0  →  ^0.20.1
    - fdir                         ^6.4.2  →   ^6.4.3
 
 2. ESLint issues:
@@ -7412,7 +7412,7 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
 1. Information: There are updates for 4 dependencie(s):
    - @stylistic/eslint-plugin    ^2.12.1  →  ^2.13.0
    - eslint                      ^9.17.0  →  ^9.18.0
-   - eslint-plugin-package-json  ^0.19.0  →  ^0.20.0
+   - eslint-plugin-package-json  ^0.19.0  →  ^0.20.1
    - fdir                         ^6.4.2  →   ^6.4.3
 
 
@@ -7497,6 +7497,12 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
    - eslint                      ^9.17.0  →   ^9.18.0
    - stylelint                  ^16.12.0  →  ^16.13.2
    - stylelint-config-standard   ^36.0.1  →   ^37.0.0
+
+
+### [MMM-PublicTransportHafas by KristjanESPERANTO](https://github.com/KristjanESPERANTO/MMM-PublicTransportHafas)
+
+1. Information: There are updates for 1 dependencie(s):
+   - eslint-plugin-package-json  ^0.20.0  →  ^0.20.1
 
 
 ### [MMM-PublicTransportVVO by ChristianGeie](https://github.com/ChristianGeie/MMM-PublicTransportVVO)
@@ -7629,7 +7635,7 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
    - @rollup/plugin-typescript    ^11.1.6  →  ^12.1.2
    - eslint                        ^9.9.1  →  ^9.18.0
    - prettier                      ^3.3.3  →   ^3.4.2
-   - rollup                       ^4.21.1  →  ^4.30.1
+   - rollup                       ^4.21.1  →  ^4.31.0
    - rollup-plugin-banner2         ^1.3.0  →   ^1.3.1
    - typescript                    ^5.5.4  →   ^5.7.3
    - typescript-eslint             ^8.3.0  →  ^8.20.0
@@ -8171,7 +8177,7 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
 1. Information: There are updates for 4 dependencie(s):
    - @stylistic/eslint-plugin    ^2.12.1  →  ^2.13.0
    - eslint                      ^9.17.0  →  ^9.18.0
-   - eslint-plugin-package-json  ^0.19.0  →  ^0.20.0
+   - eslint-plugin-package-json  ^0.19.0  →  ^0.20.1
    - fdir                         ^6.4.2  →   ^6.4.3
 
 
