@@ -3372,7 +3372,7 @@
     "maintainerURL": "https://github.com/alanshen111",
     "description": "Displays some interesting facts! Makes your mirror look like an RPG loading screen.",
     "issues": [],
-    "stars": 14,
+    "stars": 16,
     "license": "MIT"
   },
   {
@@ -3866,7 +3866,7 @@
     "maintainerURL": "",
     "description": "Controlling an RGB-LED strip around a smart mirror with or without touch input. It provides features for static background lighting, highly customizable effects on notifications and party lighting.",
     "issues": [],
-    "stars": 14,
+    "stars": 15,
     "license": "MPL-2.0"
   },
   {
@@ -3914,7 +3914,7 @@
     "maintainerURL": "",
     "description": "Show your horoscope of the day, the week or the month on your MagicMirror². Currently only in French.",
     "issues": [],
-    "stars": 1
+    "stars": 2
   },
   {
     "name": "MMM-FRITZ-Box-Callmonitor-py3",
@@ -11512,10 +11512,10 @@
     "license": "MIT"
   },
   {
-    "name": "ShellyPV",
+    "name": "MMM-ShellyPV",
     "category": "Utility / IoT / 3rd Party / Integration",
-    "url": "https://github.com/ChrisF1976/ShellyPV",
-    "id": "ChrisF1976/ShellyPV",
+    "url": "https://github.com/ChrisF1976/MMM-ShellyPV",
+    "id": "ChrisF1976/MMM-ShellyPV",
     "maintainer": "ChrisF1976",
     "maintainerURL": "https://github.com/ChrisF1976",
     "description": "Monitor and display the status and energy consumption of Shelly devices, specifically focusing on devices related to solar power (PV systems) and energy usage.",

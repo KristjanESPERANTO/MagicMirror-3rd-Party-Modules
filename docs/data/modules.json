@@ -4736,7 +4736,7 @@
     "maintainerURL": "https://github.com/alanshen111",
     "description": "Displays some interesting facts! Makes your mirror look like an RPG loading screen.",
     "issues": true,
-    "stars": 14,
+    "stars": 16,
     "license": "MIT",
     "tags": [
       "facts"
@@ -5407,7 +5407,7 @@
     "maintainerURL": "",
     "description": "Controlling an RGB-LED strip around a smart mirror with or without touch input. It provides features for static background lighting, highly customizable effects on notifications and party lighting.",
     "issues": true,
-    "stars": 14,
+    "stars": 15,
     "license": "MPL-2.0",
     "tags": [
       "led strip",
@@ -5490,7 +5490,7 @@
     "maintainerURL": "",
     "description": "Show your horoscope of the day, the week or the month on your MagicMirror\u00b2. Currently only in French.",
     "issues": true,
-    "stars": 1,
+    "stars": 2,
     "license": "ISC",
     "defaultSortWeight": 3,
     "lastCommit": "2023-05-29T17:51:24+02:00"
@@ -13171,7 +13171,7 @@
     ],
     "image": "example.jpg",
     "defaultSortWeight": 1,
-    "lastCommit": "2024-12-16T21:16:53+01:00"
+    "lastCommit": "2025-01-18T12:46:04-06:00"
   },
   {
     "name": "MMM-Pages-Screencast",
@@ -16149,10 +16149,10 @@
     "lastCommit": "2024-09-13T07:44:24+02:00"
   },
   {
-    "name": "ShellyPV",
+    "name": "MMM-ShellyPV",
     "category": "Utility / IoT / 3rd Party / Integration",
-    "url": "https://github.com/ChrisF1976/ShellyPV",
-    "id": "ChrisF1976/ShellyPV",
+    "url": "https://github.com/ChrisF1976/MMM-ShellyPV",
+    "id": "ChrisF1976/MMM-ShellyPV",
     "maintainer": "ChrisF1976",
     "maintainerURL": "https://github.com/ChrisF1976",
     "description": "Monitor and display the status and energy consumption of Shelly devices, specifically focusing on devices related to solar power (PV systems) and energy usage.",
@@ -16160,8 +16160,8 @@
     "stars": 1,
     "license": "MIT",
     "image": "example_1.jpg",
-    "defaultSortWeight": 3,
-    "lastCommit": "2024-12-10T17:29:58+01:00"
+    "defaultSortWeight": 2,
+    "lastCommit": "2025-01-18T20:42:38+01:00"
   },
   {
     "name": "MMM-ShellyStatusTable",

@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "2025-01-18T16:30:14.734Z",
+  "lastUpdate": "2025-01-19T04:30:15.210Z",
   "modules": [
     {
       "name": "MMM-01ZM",
@@ -9727,10 +9727,10 @@
       "issues": []
     },
     {
-      "name": "ShellyPV",
+      "name": "MMM-ShellyPV",
       "category": "Utility / IoT / 3rd Party / Integration",
-      "url": "https://github.com/ChrisF1976/ShellyPV",
-      "id": "ChrisF1976/ShellyPV",
+      "url": "https://github.com/ChrisF1976/MMM-ShellyPV",
+      "id": "ChrisF1976/MMM-ShellyPV",
       "maintainer": "ChrisF1976",
       "maintainerURL": "https://github.com/ChrisF1976",
       "description": "Monitor and display the status and energy consumption of Shelly devices, specifically focusing on devices related to solar power (PV systems) and energy usage.",

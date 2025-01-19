@@ -1,6 +1,6 @@
 # Result of the module analysis
 
-Last update: 2025-01-18T17:39:51+01:00
+Last update: 2025-01-19T05:39:15+01:00
 
 ## Statistics
 
@@ -9,7 +9,7 @@ Last update: 2025-01-18T17:39:51+01:00
 | modules analyzed     |   1220   |
 | maintainer           |    655   |
 | modules with issues  |   1219   |
-| issues               |   6995   |
+| issues               |   6994   |
 | modules at github    |   1097   |
 | modules at gitlab    |     11   |
 | modules at bitbucket |      1   |
@@ -764,7 +764,7 @@ Last update: 2025-01-18T17:39:51+01:00
    - bosch-smart-home-bridge     ^1.6.0  →    ^1.7.1
    - eslint                     ^9.17.0  →   ^9.18.0
    - eslint-config-prettier      ^9.1.0  →   ^10.0.1
-   - eslint-plugin-prettier      ^5.2.1  →    ^5.2.2
+   - eslint-plugin-prettier      ^5.2.1  →    ^5.2.3
    - rollup                     ^4.29.1  →   ^4.30.1
    - typescript                  ^5.7.2  →    ^5.7.3
    - typescript-eslint          ^8.18.2  →   ^8.20.0
@@ -4128,7 +4128,7 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
    - @typescript-eslint/parser         ^6.19.1  →  ^8.20.0
    - eslint                            ^8.56.0  →  ^9.18.0
    - eslint-config-prettier             ^9.1.0  →  ^10.0.1
-   - eslint-plugin-prettier             ^5.1.3  →   ^5.2.2
+   - eslint-plugin-prettier             ^5.1.3  →   ^5.2.3
    - prettier                           ^3.2.4  →   ^3.4.2
    - rollup                             ^4.9.6  →  ^4.30.1
    - rollup-plugin-banner2              ^1.2.2  →   ^1.3.1
@@ -8424,12 +8424,11 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
 4. Recommendation: Found `new Date()` in file `node_helper.js`: Consider replacing it by `new Date(Date.now())`. It's helpful for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).
 5. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
 
-### [ShellyPV by ChrisF1976](https://github.com/ChrisF1976/ShellyPV)
+### [MMM-ShellyPV by ChrisF1976](https://github.com/ChrisF1976/MMM-ShellyPV)
 
 1. There is no `package.json`. We need this file to gather information about the module for the module list page.
-2. Recommendation: Module name doesn't follow the recommended pattern (it doesn't start with `MMM-`). Consider renaming your module.
-3. Recommendation: Found `axios` in file `node_helper.js`: Replace it with built-in fetch.
-4. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
+2. Recommendation: Found `axios` in file `node_helper.js`: Replace it with built-in fetch.
+3. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
 
 ### [MMM-ShellyStatusTable by ChrisF1976](https://github.com/ChrisF1976/MMM-ShellyStatusTable)
 
