@@ -4336,6 +4336,19 @@
   },
   {
     "name": "MMM-GoogleAssistant",
+    "category": "Outdated Modules",
+    "url": "https://github.com/gauravsacc/MMM-GoogleAssistant",
+    "id": "gauravsacc/MMM-GoogleAssistant",
+    "maintainer": "gauravsacc",
+    "maintainerURL": "",
+    "description": "Google Assistant integration using python library. Activated using hotword 'Ok Google'.",
+    "issues": [],
+    "outdated": "Abandoned. No reactions to issues since years. Seems not to work anymore.",
+    "stars": 119,
+    "license": "MIT"
+  },
+  {
+    "name": "MMM-GoogleAssistant",
     "category": "Voice Control",
     "url": "https://github.com/bugsounet/MMM-GoogleAssistant",
     "id": "bugsounet/MMM-GoogleAssistant",
@@ -4348,19 +4361,6 @@
     "license": "MIT"
   },
   {
-    "name": "MMM-GoogleAssistant",
-    "category": "Outdated Modules",
-    "url": "https://github.com/gauravsacc/MMM-GoogleAssistant",
-    "id": "gauravsacc/MMM-GoogleAssistant",
-    "maintainer": "gauravsacc",
-    "maintainerURL": "",
-    "description": "Google Assistant integration using python library. Activated using hotword 'Ok Google'.",
-    "issues": [],
-    "outdated": "Abandoned. No reactions to issues since years. Seems not to work anymore.",
-    "stars": 118,
-    "license": "MIT"
-  },
-  {
     "name": "MMM-GoogleBirthdaysProvider",
     "category": "Utility / IoT / 3rd Party / Integration",
     "url": "https://github.com/PalatinCoder/MMM-GoogleBirthdaysProvider",
@@ -4369,7 +4369,7 @@
     "maintainerURL": "",
     "description": "Integrate your Google Contact's birthdays in the MagicMirror² calendar.",
     "issues": [],
-    "stars": 29,
+    "stars": 30,
     "license": "BSD-3-Clause"
   },
   {
@@ -4381,7 +4381,7 @@
     "maintainerURL": "https://github.com/randomBrainstormer",
     "description": "Get your Google Calendars in the shape of MagicMirror's default calendar.",
     "issues": [],
-    "stars": 74,
+    "stars": 77,
     "license": "MIT"
   },
   {
@@ -4442,7 +4442,7 @@
     "maintainerURL": "",
     "description": "Displays one list from Google Keep.",
     "issues": [],
-    "stars": 11,
+    "stars": 13,
     "license": "MIT"
   },
   {
@@ -4491,7 +4491,7 @@
     "maintainerURL": "https://github.com/hermanho",
     "description": "Image gallery or wallpaper with your Google Photos account.",
     "issues": [],
-    "stars": 174,
+    "stars": 178,
     "license": "MIT"
   },
   {
@@ -4503,7 +4503,7 @@
     "maintainerURL": "",
     "description": "Display Google Sheets data. Highly customizable.",
     "issues": [],
-    "stars": 30,
+    "stars": 31,
     "license": "MIT"
   },
   {
@@ -4528,7 +4528,7 @@
     "maintainerURL": "https://github.com/spydersoft-consulting",
     "description": "Display Google Tasks with Planned View.",
     "issues": [],
-    "stars": 7,
+    "stars": 8,
     "license": "MIT"
   },
   {
@@ -4563,7 +4563,7 @@
     "maintainerURL": "https://github.com/Sjohn21",
     "description": "Handle GPIO, Inputs (Buttons, PIR, Other) and Outputs (including PWM), with notifications from and to other modules.",
     "issues": [],
-    "stars": 3,
+    "stars": 4,
     "license": "MIT"
   },
   {
@@ -4661,7 +4661,7 @@
     "maintainerURL": "https://github.com/mumblebaj",
     "description": "Display data from Growatt Inveter. Support multiple Growatt Inverter types.",
     "issues": [],
-    "stars": 2,
+    "stars": 3,
     "license": "MIT"
   },
   {

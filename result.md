@@ -1,6 +1,6 @@
 # Result of the module analysis
 
-Last update: 2025-01-19T17:39:05+01:00
+Last update: 2025-01-20T05:38:43+01:00
 
 ## Statistics
 
@@ -2781,7 +2781,7 @@ deprecated: no longer maintained, switch to modern iconify-icon web component
 2. Recommendation: Found `"needle"` in file `package.json`: Replace it with built-in fetch.
 3. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
 4. Information: There are updates for 1 dependencie(s):
-   - @xmldom/xmldom  ^0.9.5  →  ^0.9.6
+   - @xmldom/xmldom  ^0.9.5  →  ^0.9.7
 
 
 ### [MMM-FTP-image by jboucly](https://github.com/jboucly/MMM-FTP-image)
@@ -6073,7 +6073,7 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
 
 1. Recommendation: No lint script found in package.json. It is recommended to add one.
 2. Information: There are updates for 2 dependencie(s):
-   - less          4.2.0  →   4.2.1
+   - less          4.2.0  →   4.2.2
    - neostandard  0.11.5  →  0.12.0
 
 

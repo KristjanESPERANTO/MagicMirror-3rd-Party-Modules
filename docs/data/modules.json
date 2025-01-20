@@ -6071,6 +6071,22 @@
   },
   {
     "name": "MMM-GoogleAssistant",
+    "category": "Outdated Modules",
+    "url": "https://github.com/gauravsacc/MMM-GoogleAssistant",
+    "id": "gauravsacc/MMM-GoogleAssistant",
+    "maintainer": "gauravsacc",
+    "maintainerURL": "",
+    "description": "Google Assistant integration using python library. Activated using hotword 'Ok Google'.",
+    "issues": false,
+    "outdated": "Abandoned. No reactions to issues since years. Seems not to work anymore.",
+    "stars": 119,
+    "license": "MIT",
+    "image": "assistant_active.jpg",
+    "defaultSortWeight": 901,
+    "lastCommit": "2018-04-19T13:21:19-04:00"
+  },
+  {
+    "name": "MMM-GoogleAssistant",
     "category": "Voice Control",
     "url": "https://github.com/bugsounet/MMM-GoogleAssistant",
     "id": "bugsounet/MMM-GoogleAssistant",
@@ -6095,22 +6111,6 @@
     "lastCommit": "2025-01-15T18:59:29+01:00"
   },
   {
-    "name": "MMM-GoogleAssistant",
-    "category": "Outdated Modules",
-    "url": "https://github.com/gauravsacc/MMM-GoogleAssistant",
-    "id": "gauravsacc/MMM-GoogleAssistant",
-    "maintainer": "gauravsacc",
-    "maintainerURL": "",
-    "description": "Google Assistant integration using python library. Activated using hotword 'Ok Google'.",
-    "issues": false,
-    "outdated": "Abandoned. No reactions to issues since years. Seems not to work anymore.",
-    "stars": 118,
-    "license": "MIT",
-    "image": "assistant_active.jpg",
-    "defaultSortWeight": 901,
-    "lastCommit": "2018-04-19T13:21:19-04:00"
-  },
-  {
     "name": "MMM-GoogleBirthdaysProvider",
     "category": "Utility / IoT / 3rd Party / Integration",
     "url": "https://github.com/PalatinCoder/MMM-GoogleBirthdaysProvider",
@@ -6119,7 +6119,7 @@
     "maintainerURL": "",
     "description": "Integrate your Google Contact's birthdays in the MagicMirror\u00b2 calendar.",
     "issues": true,
-    "stars": 29,
+    "stars": 30,
     "license": "BSD-3-Clause",
     "image": "screenshot.jpg",
     "defaultSortWeight": 4,
@@ -6134,7 +6134,7 @@
     "maintainerURL": "https://github.com/randomBrainstormer",
     "description": "Get your Google Calendars in the shape of MagicMirror's default calendar.",
     "issues": true,
-    "stars": 74,
+    "stars": 77,
     "license": "MIT",
     "tags": [
       "google",
@@ -6222,7 +6222,7 @@
     "maintainerURL": "",
     "description": "Displays one list from Google Keep.",
     "issues": true,
-    "stars": 11,
+    "stars": 13,
     "license": "MIT",
     "defaultSortWeight": 8,
     "lastCommit": "2024-11-08T21:47:21+01:00"
@@ -6290,7 +6290,7 @@
     "maintainerURL": "https://github.com/hermanho",
     "description": "Image gallery or wallpaper with your Google Photos account.",
     "issues": true,
-    "stars": 174,
+    "stars": 178,
     "license": "MIT",
     "tags": [
       "googlephotos"
@@ -6308,7 +6308,7 @@
     "maintainerURL": "",
     "description": "Display Google Sheets data. Highly customizable.",
     "issues": true,
-    "stars": 30,
+    "stars": 31,
     "license": "MIT",
     "tags": [
       "googlesheets",
@@ -6344,7 +6344,7 @@
     "maintainerURL": "https://github.com/spydersoft-consulting",
     "description": "Display Google Tasks with Planned View.",
     "issues": true,
-    "stars": 7,
+    "stars": 8,
     "license": "MIT",
     "tags": [
       "scheduler"
@@ -6401,7 +6401,7 @@
     "maintainerURL": "https://github.com/Sjohn21",
     "description": "Handle GPIO, Inputs (Buttons, PIR, Other) and Outputs (including PWM), with notifications from and to other modules.",
     "issues": true,
-    "stars": 3,
+    "stars": 4,
     "license": "MIT",
     "defaultSortWeight": 9,
     "lastCommit": "2024-01-16T21:54:37+01:00"
@@ -6531,7 +6531,7 @@
     "maintainerURL": "https://github.com/mumblebaj",
     "description": "Display data from Growatt Inveter. Support multiple Growatt Inverter types.",
     "issues": true,
-    "stars": 2,
+    "stars": 3,
     "license": "MIT",
     "tags": [
       "growatt",
