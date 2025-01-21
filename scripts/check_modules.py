@@ -167,11 +167,7 @@ def check_modules():
             "name": 'Replace "jshint" by "eslint".',
             "category": "Recommendation",
         },
-        "new Date()": {
-            "name": "Consider replacing it by `new Date(Date.now())`. It's helpful for time related debugging. : [#3252](https://github.com/MagicMirrorOrg/MagicMirror/issues/3252).",
-            "category": "Recommendation",
-        },
-        "getYear()": {
+         "getYear()": {
             "name": "Replace `getYear()` by `getFullYear()`.",
             "category": "Deprecated",
         },
