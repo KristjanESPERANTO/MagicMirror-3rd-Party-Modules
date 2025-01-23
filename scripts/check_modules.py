@@ -47,11 +47,11 @@ def check_modules():
             "category": "Typo",
         },
         "<sub>2</sub>": {
-            "name": "Replace it with `²`.`.",
+            "name": "Replace it with `²`.",
             "category": "Typo"
         },
         "<sup>2</sup>": {
-            "name": "Replace it with `²`.`.",
+            "name": "Replace it with `²`.",
             "category": "Typo"
         },
         'require("request")': {
