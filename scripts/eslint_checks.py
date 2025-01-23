@@ -2,6 +2,7 @@ import json
 import os
 import subprocess
 
+
 def eslint_check(directory_path):
     print(f"Run ESLint check in {directory_path}")
 
@@ -24,7 +25,8 @@ def eslint_check(directory_path):
             for message in entry["messages"]:
                 if "Definition for rule" not in message['message']:
                     # print(f"{file}: Line {message['line']}, Column {message['column']}: {message['message']} (rule: {message['ruleId']})")
-                    issue_list.append(f"{file}: Line {message['line']}, Column {message['column']}: {message['message']} (rule: {message['ruleId']})")
+                    issue_list.append(
+                        f"{file}: Line {message['line']}, Column {message['column']}: {message['message']} (rule: {message['ruleId']})")
         if len(issue_list) == 0:
             # print("No ESLint issues found.")
             return False

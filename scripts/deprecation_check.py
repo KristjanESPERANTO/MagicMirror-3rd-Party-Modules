@@ -1,6 +1,7 @@
 import os
 import subprocess
 
+
 def check_deprecated_packages(directory_path):
     # print(f"Checking for deprecated packages in {directory_path}")
 
@@ -29,7 +30,8 @@ def check_deprecated_packages(directory_path):
             return False
         else:
             # Remove all lines without the character : in deprecated_packages
-            deprecated_packages = [line for line in deprecated_packages.splitlines() if ":" in line]
+            deprecated_packages = [
+                line for line in deprecated_packages.splitlines() if ":" in line]
             # combine the list of strings into one string
             deprecated_packages = "\n".join(deprecated_packages)
 

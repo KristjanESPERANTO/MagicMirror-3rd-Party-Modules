@@ -11,7 +11,8 @@ def check_file_size_and_run_command(file_path: str):
 
     # If the file size is greater than or equal to the minimum size, run the command
     if file_size >= min_size_bytes:
-        print(f'File is large enough, size is {file_size} bytes. \nRunning command to push new data to GitHub...')
+        print(
+            f'File is large enough, size is {file_size} bytes. \nRunning command to push new data to GitHub...')
 
         command = 'git add . && git commit -m "Update data" && git push origin main'
 

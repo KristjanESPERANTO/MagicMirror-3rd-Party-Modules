@@ -14,7 +14,8 @@ def get_modules():
     # For testing set this to a lower number to test only a few modules
     max_module_counter = 99999
 
-    modules_json_file = open("./docs/data/modules.stage.1.json", encoding="utf-8")
+    modules_json_file = open(
+        "./docs/data/modules.stage.1.json", encoding="utf-8")
     modules_data = json.load(modules_json_file)
     modules = modules_data.get("modules")
 
@@ -40,7 +41,8 @@ def get_modules():
                 except subprocess.CalledProcessError as e:
                     # If an error occurs while trying to pull the module, delete the module directory and re-run the git clone command
                     # An error like this can occur, for example, if the branch of the module has been changed.
-                    print(f"- E - An error occurred while trying to pull the module: {e}")
+                    print(
+                        f"- E - An error occurred while trying to pull the module: {e}")
                     print(f"- I - Deleting the module directory: {path}")
                     shutil.rmtree(path)
                     print("- I - Re-running the git clone command")

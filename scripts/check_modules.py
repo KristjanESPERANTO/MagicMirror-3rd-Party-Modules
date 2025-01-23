@@ -8,6 +8,7 @@ import subprocess
 import deprecation_check
 import eslint_checks
 
+
 def search_in_file(path, search_string):
     """Function to search a string in a file."""
     try:
@@ -167,7 +168,7 @@ def check_modules():
             "name": 'Replace "jshint" by "eslint".',
             "category": "Recommendation",
         },
-         "getYear()": {
+        "getYear()": {
             "name": "Replace `getYear()` by `getFullYear()`.",
             "category": "Deprecated",
         },
@@ -249,7 +250,8 @@ def check_modules():
 
         if "outdated" in module:
             module["defaultSortWeight"] += 900
-            module["issues"] = False # Set this to False to prevent showing dev hints on the website..
+            # Set this to False to prevent showing dev hints on the website..
+            module["issues"] = False
             stats["issueCounter"] += 1
             stats["modulesWithIssuesCounter"] += 1
 
@@ -258,7 +260,7 @@ def check_modules():
                 module["defaultSortWeight"] += 800
                 stats["issueCounter"] += 1
                 module["issues"].append(
-                "Module is archived, but not marked as outdated in the official module list.")
+                    "Module is archived, but not marked as outdated in the official module list.")
 
             if module["name"].startswith("EXT-"):
                 # Modules with a name starting with "EXT-" are only for MMM-GoogleAssistant. So we make them heavier for the default sort order.
@@ -305,7 +307,8 @@ def check_modules():
                                 )
                         else:
                             for search_string, value in search_strings.items():
-                                found_string = search_in_file(file_path, search_string)
+                                found_string = search_in_file(
+                                    file_path, search_string)
                                 if found_string:
                                     module["issues"].append(
                                         f"{value['category']}: Found `{search_string}` in file `{file_path.name}`: {value['name']}"
@@ -322,18 +325,22 @@ def check_modules():
 
                             if file_path.name.startswith("README") and file_path.parent == module_directory_path:
                                 # Search for "update" or "Update" in README
-                                found_update_string = search_in_file(file_path, "Update")
+                                found_update_string = search_in_file(
+                                    file_path, "Update")
                                 if not found_update_string:
-                                    found_update_string = search_in_file(file_path, "update")
+                                    found_update_string = search_in_file(
+                                        file_path, "update")
                                 if not found_update_string:
                                     module["issues"].append(
                                         "Recommendation: The README seems not to have an update instruction (the word 'update' is missing). Please add one."
                                     )
 
                                 # Search for "install" in README
-                                found_clone_string = search_in_file(file_path, "Install")
+                                found_clone_string = search_in_file(
+                                    file_path, "Install")
                                 if not found_clone_string:
-                                    found_clone_string = search_in_file(file_path, "install")
+                                    found_clone_string = search_in_file(
+                                        file_path, "install")
                                 if not found_clone_string:
                                     module["issues"].append(
                                         "Recommendation: The README seems not to have an install instruction (the words 'install' or 'installation' are missing). Please add one."
@@ -408,13 +415,15 @@ def check_modules():
 
             # Lift modules with many stars in the default sort order.
             if module.get('stars', 0) > 50:
-                module["defaultSortWeight"] = module["defaultSortWeight"] - (module['stars'] // 50)
+                module["defaultSortWeight"] = module["defaultSortWeight"] - \
+                    (module['stars'] // 50)
             elif module.get('stars', 0) > 10:
                 module["defaultSortWeight"] = module["defaultSortWeight"] - 1
 
             # Modules with few stars shouldn't be too far up in the default sort order. So we give them a minimum value of one.
             elif module.get('stars', 0) < 3:
-                module["defaultSortWeight"] = max(module["defaultSortWeight"], 1)
+                module["defaultSortWeight"] = max(
+                    module["defaultSortWeight"], 1)
 
     print(
         f"{stats['moduleCounter']} modules analyzed. For results see file result.md.           ")
@@ -481,7 +490,8 @@ def get_last_commit_date(module, module_directory_path):
     )
 
     # If the last commit is older than two years, we make the module heavier for the default sort order.
-    last_commit_date = datetime.strptime(module["lastCommit"], '%Y-%m-%dT%H:%M:%S%z')
+    last_commit_date = datetime.strptime(
+        module["lastCommit"], '%Y-%m-%dT%H:%M:%S%z')
     current_datetime = datetime.now(timezone.utc)
     if (current_datetime - last_commit_date).days > 365 * 2:
         module["defaultSortWeight"] += 1
@@ -535,7 +545,8 @@ def check_dependency_updates(module, module_directory_path):
             module["issues"].append(issue_text)
 
     if len(module["issues"]) in [0, 1] and package_json.is_file():
-        deprecation = deprecation_check.check_deprecated_packages(module_directory_path)
+        deprecation = deprecation_check.check_deprecated_packages(
+            module_directory_path)
         if deprecation:
             module["issues"].append(deprecation)
 
@@ -546,6 +557,7 @@ def check_dependency_updates(module, module_directory_path):
             for issue in eslint_issues:
                 eslint_issues_text += f"   - {issue}\n"
             module["issues"].append(eslint_issues_text)
+
 
 def check_branch_name(module, module_directory_path):
     """Function to check the branch name."""
