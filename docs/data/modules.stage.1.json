@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "2025-01-23T16:30:47.702Z",
+  "lastUpdate": "2025-01-24T20:30:32.985Z",
   "modules": [
     {
       "name": "MMM-01ZM",
@@ -1993,6 +1993,16 @@
       "issues": []
     },
     {
+      "name": "MMM-DailyJuice",
+      "category": "Health",
+      "url": "https://github.com/BerkSmash1984/MMM-DailyJuice",
+      "id": "BerkSmash1984/MMM-DailyJuice",
+      "maintainer": "BerkSmash1984",
+      "maintainerURL": "",
+      "description": "Displays a random juice recipe daily, including the image, title, and ingredients.",
+      "issues": []
+    },
+    {
       "name": "MMM-DailyPokemon",
       "category": "Entertainment / Misc",
       "url": "https://github.com/NolanKingdon/MMM-DailyPokemon",
@@ -3274,26 +3284,6 @@
       "issues": []
     },
     {
-      "name": "MMM-FranceInfo",
-      "category": "News / Information",
-      "url": "https://github.com/bugsounet/MMM-FranceInfo",
-      "id": "bugsounet/MMM-FranceInfo",
-      "maintainer": "bugsounet",
-      "maintainerURL": "",
-      "description": "[FR] Affiche les flux rss de <a target=\"_blank\" href=\"https://www.francetvinfo.fr\">franceinfo</a>. <br />[EN] Displays rss feeds from franceinfo.",
-      "issues": []
-    },
-    {
-      "name": "MMM-Freebox",
-      "category": "Utility / IoT / 3rd Party / Integration",
-      "url": "https://github.com/bugsounet/MMM-Freebox",
-      "id": "bugsounet/MMM-Freebox",
-      "maintainer": "bugsounet",
-      "maintainerURL": "",
-      "description": "[FR] Affiche les informations de votre Freebox en temps réél.<br />[EN] Displays information from your Freebox in real time.",
-      "issues": []
-    },
-    {
       "name": "MMM-FreeBox-Monitor",
       "category": "Utility / IoT / 3rd Party / Integration",
       "url": "https://github.com/tataille/MMM-FreeBox-Monitor",
@@ -3595,16 +3585,6 @@
       "outdated": "Archived. Repo has been archived at 2020-06-10."
     },
     {
-      "name": "MMM-Glassy",
-      "category": "Development / Core MagicMirror²",
-      "url": "https://github.com/bugsounet/MMM-Glassy",
-      "id": "bugsounet/MMM-Glassy",
-      "maintainer": "bugsounet",
-      "maintainerURL": "",
-      "description": "This module allows to add a glass effect to MagicMirror² modules.",
-      "issues": []
-    },
-    {
       "name": "MMM-Globe",
       "category": "Entertainment / Misc",
       "url": "https://github.com/Eunanibus/MMM-Globe",
@@ -3662,16 +3642,6 @@
       "maintainer": "mrdis",
       "maintainerURL": "",
       "description": "Displays the two best routes from an origin to a destination, using Google Directions API.",
-      "issues": []
-    },
-    {
-      "name": "MMM-GoogleAssistant",
-      "category": "Voice Control",
-      "url": "https://github.com/bugsounet/MMM-GoogleAssistant",
-      "id": "bugsounet/MMM-GoogleAssistant",
-      "maintainer": "bugsounet",
-      "maintainerURL": "https://wiki.bugsounet.fr",
-      "description": "MMM-GoogleAssistant is an real embedded Google assistant on MagicMirror² with many plugins.",
       "issues": []
     },
     {
@@ -5804,16 +5774,6 @@
       "issues": []
     },
     {
-      "name": "MMM-MeteoFrance",
-      "category": "Weather",
-      "url": "https://github.com/bugsounet/MMM-MeteoFrance",
-      "id": "bugsounet/MMM-MeteoFrance",
-      "maintainer": "bugsounet",
-      "maintainerURL": "",
-      "description": "[FR] Affiche les informations de prévisions actuelles, horaires et quotidiennes à l'aide des données de l'API MétéoFrance.<br />[EN] Displays current, hourly and daily forecast information using data from MeteoFrance API.",
-      "issues": []
-    },
-    {
       "name": "MMM-MHZ19",
       "category": "Utility / IoT / 3rd Party / Integration",
       "url": "https://github.com/awitwicki/MMM-MHZ19",
@@ -7086,16 +7046,6 @@
       "outdated": "Abandoned. No reactions to issues since years. API change and the author no longer has a Netatmo thermostat."
     },
     {
-      "name": "MMM-NetatmoThermostat",
-      "category": "Utility / IoT / 3rd Party / Integration",
-      "url": "https://github.com/bugsounet/MMM-NetatmoThermostat",
-      "id": "bugsounet/MMM-NetatmoThermostat",
-      "maintainer": "bugsounet",
-      "maintainerURL": "",
-      "description": "This module display your Netatmo Thermostat informations.",
-      "issues": []
-    },
-    {
       "name": "MMM-network-signal",
       "category": "Development / Core MagicMirror²",
       "url": "https://github.com/PoOwAa/MMM-network-signal",
@@ -8224,16 +8174,6 @@
       "issues": []
     },
     {
-      "name": "MMM-Pir",
-      "category": "Utility / IoT / 3rd Party / Integration",
-      "url": "https://github.com/bugsounet/MMM-Pir",
-      "id": "bugsounet/MMM-Pir",
-      "maintainer": "bugsounet",
-      "maintainerURL": "",
-      "description": "After a configurated time without any user interaction the display will turn off and hide all modules for economy mode. It will wake up with a PIR sensor.",
-      "issues": []
-    },
-    {
       "name": "MMM-PIR",
       "category": "Outdated Modules",
       "url": "https://github.com/mboskamp/MMM-PIR",
@@ -8565,16 +8505,6 @@
       "maintainer": "bibaldo",
       "maintainerURL": "",
       "description": "Allows you to get instant info of your developing pregnancy.",
-      "issues": []
-    },
-    {
-      "name": "MMM-PrixCarburants",
-      "category": "Transport / Travel",
-      "url": "https://github.com/bugsounet/MMM-PrixCarburants",
-      "id": "bugsounet/MMM-PrixCarburants",
-      "maintainer": "bugsounet",
-      "maintainerURL": "",
-      "description": "[FR] Ce module permet d'afficher les prix des carburants des stations francaise.<br />[EN] Display fuel prices (France only).",
       "issues": []
     },
     {
@@ -9141,16 +9071,6 @@
       "issues": []
     },
     {
-      "name": "MMM-Resseltrafiken",
-      "category": "Transport / Travel",
-      "url": "https://github.com/cgillinger/MMM-Resseltrafiken",
-      "id": "cgillinger/MMM-Resseltrafiken",
-      "maintainer": "cgillinger",
-      "maintainerURL": "https://github.com/cgillinger",
-      "description": "Displays timetables for Sjöstadstrafiken and M/S Emelie ferry services in Stockholm. Features color-coded departures, custom stop highlighting, and automatic handling of holiday schedules.",
-      "issues": []
-    },
-    {
       "name": "MMM-Rest",
       "category": "Utility / IoT / 3rd Party / Integration",
       "url": "https://github.com/Tuxdiver/MMM-Rest",
@@ -9401,16 +9321,6 @@
       "maintainer": "uphillcheddar",
       "maintainerURL": "https://github.com/uphillcheddar",
       "description": "Displays images from AWS S3, comes with setup script to set up AWS resources. Addtional features include MMM-Selfieshot uploads, photo attributations and various layout options.",
-      "issues": []
-    },
-    {
-      "name": "MMM-Saint",
-      "category": "Religion",
-      "url": "https://github.com/bugsounet/MMM-Saint",
-      "id": "bugsounet/MMM-Saint",
-      "maintainer": "bugsounet",
-      "maintainerURL": "https://github.com/bugsounet",
-      "description": "[FR] Affiche le saint du jour.<br />[EN] Displays the saint of the day.",
       "issues": []
     },
     {
