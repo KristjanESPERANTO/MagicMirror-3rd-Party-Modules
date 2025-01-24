@@ -37,8 +37,8 @@ function sortModuleListByLastUpdate (previousData, moduleList) {
 }
 
 function sortByNameIgnoringPrefix (a, b) {
-  const nameA = a.name.replace("MMM-", "").replace("EXT-", "");
-  const nameB = b.name.replace("MMM-", "").replace("EXT-", "");
+  const nameA = a.name.replace("MMM-", "");
+  const nameB = b.name.replace("MMM-", "");
   return nameA.localeCompare(nameB);
 }
 

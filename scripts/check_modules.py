@@ -51,10 +51,6 @@ def check_modules():
             "name": "Replace it with `²`.",
             "category": "Typo"
         },
-        "<sup>2</sup>": {
-            "name": "Replace it with `²`.",
-            "category": "Typo"
-        },
         'require("request")': {
             "name": "Replace it with built-in fetch.",
             "category": "Deprecated",
@@ -261,12 +257,6 @@ def check_modules():
                 stats["issueCounter"] += 1
                 module["issues"].append(
                     "Module is archived, but not marked as outdated in the official module list.")
-
-            if module["name"].startswith("EXT-"):
-                # Modules with a name starting with "EXT-" are only for MMM-GoogleAssistant. So we make them heavier for the default sort order.
-                module["defaultSortWeight"] += 3
-
-                module["description"] += "<br /><br />This module has been defined to work only with MMM-GoogleAssistant."
 
             elif not module["name"].startswith("MMM-"):
                 module["issues"].append(
