@@ -1239,7 +1239,7 @@
     "maintainerURL": "",
     "description": "Displays a new bird every day with a photo, name, and interesting facts. Powered by the Nuthatch API by Last Elm Software, it's perfect for bird enthusiasts or anyone who wants to bring a touch of nature to their MagicMirror setup.",
     "issues": true,
-    "stars": 1,
+    "stars": 2,
     "license": "MIT",
     "tags": [
       "bird",
@@ -3324,8 +3324,14 @@
     "issues": true,
     "stars": 0,
     "license": "MIT",
-    "defaultSortWeight": 5,
-    "lastCommit": "2025-01-24T14:24:59-05:00"
+    "tags": [
+      "health",
+      "juicing",
+      "recipes"
+    ],
+    "image": "thedailyjuice_1.jpg",
+    "defaultSortWeight": 3,
+    "lastCommit": "2025-01-25T08:48:59-05:00"
   },
   {
     "name": "MMM-DailyPokemon",
@@ -11598,7 +11604,7 @@
     "maintainerURL": "",
     "description": "Display your Netatmo in/outdoor weather station data.",
     "issues": true,
-    "stars": 38,
+    "stars": 39,
     "license": "MIT",
     "tags": [
       "netatmo",
@@ -17332,7 +17338,7 @@
     "maintainerURL": "",
     "description": "Get a lot of system stats from a PC board like CPU usage, ram usage, disk usage, CPU temperature, volume, internet status and private IP and status, beside that you can configure your WiFi network to create a QR code.",
     "issues": true,
-    "stars": 6,
+    "stars": 7,
     "license": "MIT",
     "image": "screenshots-screenshot-compact.jpg",
     "defaultSortWeight": 3,
@@ -17365,7 +17371,7 @@
     "maintainerURL": "",
     "description": "Shows Raspberry Pi system stats like CPU temperature, free Ram, System load, and Uptime. This is an active fork, the original module was abandoned.",
     "issues": true,
-    "stars": 1,
+    "stars": 2,
     "hasGithubIssues": false,
     "license": "MIT",
     "tags": [
