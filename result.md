@@ -1,6 +1,6 @@
 # Result of the module analysis
 
-Last update: 2025-01-24T21:44:59+01:00
+Last update: 2025-01-25T05:41:52+01:00
 
 ## Statistics
 
@@ -1030,12 +1030,13 @@ Last update: 2025-01-24T21:44:59+01:00
 
 ### [MMM-Canteen by KristjanESPERANTO](https://github.com/KristjanESPERANTO/MMM-Canteen)
 
-1. Information: There are updates for 5 dependencie(s):
+1. Information: There are updates for 6 dependencie(s):
    - @eslint/js        ^9.18.0  →  ^9.19.0
    - @eslint/json       ^0.9.1  →  ^0.10.0
    - @eslint/markdown   ^6.2.1  →   ^6.2.2
    - eslint            ^9.18.0  →  ^9.19.0
    - lint-staged       ^15.4.1  →  ^15.4.2
+   - markdownlint-cli  ^0.43.0  →  ^0.44.0
 
 
 ### [MMM-Canvas by chase-cromwell](https://github.com/chase-cromwell/MMM-Canvas)
@@ -1061,12 +1062,13 @@ Last update: 2025-01-24T21:44:59+01:00
 
 ### [MMM-Carousel by shbatm](https://github.com/shbatm/MMM-Carousel)
 
-1. Information: There are updates for 7 dependencie(s):
+1. Information: There are updates for 8 dependencie(s):
    - @eslint/js                  ^9.16.0  →   ^9.19.0
    - @stylistic/eslint-plugin    ^2.12.0  →   ^2.13.0
    - cspell                      ^8.16.1  →   ^8.17.2
    - eslint                      ^9.16.0  →   ^9.19.0
    - globals                    ^15.13.0  →  ^15.14.0
+   - markdownlint-cli            ^0.43.0  →   ^0.44.0
    - stylelint                  ^16.11.0  →  ^16.13.2
    - stylelint-config-standard   ^36.0.1  →   ^37.0.0
 
@@ -1928,13 +1930,14 @@ Last update: 2025-01-24T21:44:59+01:00
 
 ### [MMM-EasyPix by KristjanESPERANTO](https://github.com/KristjanESPERANTO/MMM-EasyPix)
 
-1. Information: There are updates for 8 dependencie(s):
+1. Information: There are updates for 9 dependencie(s):
    - @eslint/js                  ^9.17.0  →   ^9.19.0
    - @stylistic/eslint-plugin    ^2.12.1  →   ^2.13.0
    - cspell                      ^8.17.1  →   ^8.17.2
    - eslint                      ^9.17.0  →   ^9.19.0
    - globals                    ^15.13.0  →  ^15.14.0
    - lint-staged                ^15.2.11  →   ^15.4.2
+   - markdownlint-cli            ^0.43.0  →   ^0.44.0
    - stylelint                  ^16.12.0  →  ^16.13.2
    - stylelint-config-standard   ^36.0.1  →   ^37.0.0
 
@@ -2008,8 +2011,8 @@ Last update: 2025-01-24T21:44:59+01:00
    - eslint                    ^9.10.0  →   ^9.19.0
    - globals                   ^15.9.0  →  ^15.14.0
 
-2. [103m WARN [49m [33m@iconify/iconify@3.1.1: 2023-06-22T08:45:25.335Z[39m
-[33mdeprecated: no longer maintained, switch to modern iconify-icon web component[39m
+2.  WARN  @iconify/iconify@3.1.1: 2023-06-22T08:45:25.335Z
+deprecated: no longer maintained, switch to modern iconify-icon web component
 
 ### [MMM-EmbedYoutube by nitpum](https://github.com/nitpum/MMM-EmbedYoutube)
 
@@ -2561,12 +2564,13 @@ Last update: 2025-01-24T21:44:59+01:00
 
 ### [MMM-Forum by KristjanESPERANTO](https://github.com/KristjanESPERANTO/MMM-Forum)
 
-1. Information: There are updates for 5 dependencie(s):
+1. Information: There are updates for 6 dependencie(s):
    - @eslint/js        ^9.18.0  →  ^9.19.0
    - @eslint/json       ^0.9.1  →  ^0.10.0
    - @eslint/markdown   ^6.2.1  →   ^6.2.2
    - eslint            ^9.18.0  →  ^9.19.0
    - lint-staged       ^15.4.1  →  ^15.4.2
+   - markdownlint-cli  ^0.43.0  →  ^0.44.0
 
 
 ### [MMM-FrameLight by RaspiManu](https://github.com/RaspiManu/MMM-FrameLight)
@@ -2868,8 +2872,8 @@ Last update: 2025-01-24T21:44:59+01:00
    - eslint    ^8.56.0  →  ^9.19.0
    - prettier   ^3.1.1  →   ^3.4.2
 
-2. [103m WARN [49m [33meslint@8.56.0: 2023-12-15T22:55:11.833Z[39m
-[33mdeprecated: This version is no longer supported. Please see https://eslint.org/version-support for other options.[39m
+2.  WARN  eslint@8.56.0: 2023-12-15T22:55:11.833Z
+deprecated: This version is no longer supported. Please see https://eslint.org/version-support for other options.
 
 ### [MMM-GmailNotifier by kurtern84](https://github.com/kurtern84/MMM-GmailNotifier)
 
@@ -3873,9 +3877,10 @@ Last update: 2025-01-24T21:44:59+01:00
 
 ### [MMM-ISS-Live by KristjanESPERANTO](https://github.com/KristjanESPERANTO/MMM-ISS-Live)
 
-1. Information: There are updates for 2 dependencie(s):
-   - @eslint/js  ^9.18.0  →  ^9.19.0
-   - eslint      ^9.18.0  →  ^9.19.0
+1. Information: There are updates for 3 dependencie(s):
+   - @eslint/js        ^9.18.0  →  ^9.19.0
+   - eslint            ^9.18.0  →  ^9.19.0
+   - markdownlint-cli  ^0.43.0  →  ^0.44.0
 
 
 ### [MMM-ISS-Map by khassel](https://gitlab.com/khassel/MMM-ISS-Map)
@@ -4059,11 +4064,11 @@ Last update: 2025-01-24T21:44:59+01:00
    - eslint-plugin-import             ^2.29.1  →   ^2.31.0
    - eslint-plugin-jsonc              ^2.15.0  →   ^2.19.1
    - globals                          ^15.0.0  →  ^15.14.0
-   - markdownlint-cli                 ^0.39.0  →   ^0.43.0
+   - markdownlint-cli                 ^0.39.0  →   ^0.44.0
    - prettier                          ^3.2.5  →    ^3.4.2
 
-2. [103m WARN [49m [33meslint@8.57.0: 2024-02-23T20:39:43.282Z[39m
-[33mdeprecated: This version is no longer supported. Please see https://eslint.org/version-support for other options.[39m
+2.  WARN  eslint@8.57.0: 2024-02-23T20:39:43.282Z
+deprecated: This version is no longer supported. Please see https://eslint.org/version-support for other options.
 
 ### [MMM-JsonValue by c-klinger](https://github.com/c-klinger/MMM-JsonValue)
 
@@ -4520,8 +4525,8 @@ Last update: 2025-01-24T21:44:59+01:00
    - eslint                    ^8.57.0  →   ^9.19.0
    - globals                   ^15.0.0  →  ^15.14.0
 
-2. [103m WARN [49m [33meslint@8.57.0: 2024-02-23T20:39:43.282Z[39m
-[33mdeprecated: This version is no longer supported. Please see https://eslint.org/version-support for other options.[39m
+2.  WARN  eslint@8.57.0: 2024-02-23T20:39:43.282Z
+deprecated: This version is no longer supported. Please see https://eslint.org/version-support for other options.
 
 ### [MMM-MagicReplicator by ivlovric](https://github.com/ivlovric/MMM-MagicReplicator)
 
@@ -4654,14 +4659,14 @@ Last update: 2025-01-24T21:44:59+01:00
    - globals                           ^15.9.0  →  ^15.14.0
    - husky                             ^9.0.11  →    ^9.1.7
    - lint-staged                      ^15.2.10  →   ^15.4.2
-   - markdownlint-cli                  ^0.41.0  →   ^0.43.0
+   - markdownlint-cli                  ^0.41.0  →   ^0.44.0
    - prettier                           ^3.3.3  →    ^3.4.2
    - semantic-release                  ^24.1.0  →   ^24.2.1
    - stylelint                         ^16.9.0  →  ^16.13.2
    - stylelint-config-standard         ^36.0.0  →   ^37.0.0
 
-2. [103m WARN [49m [33meslint@8.57.0: 2024-02-23T20:39:43.282Z[39m
-[33mdeprecated: This version is no longer supported. Please see https://eslint.org/version-support for other options.[39m
+2.  WARN  eslint@8.57.0: 2024-02-23T20:39:43.282Z
+deprecated: This version is no longer supported. Please see https://eslint.org/version-support for other options.
 
 ### [MMM-MealieShoppingList by btoconnor](https://github.com/btoconnor/MMM-MealieShoppingList)
 
@@ -5792,11 +5797,9 @@ Last update: 2025-01-24T21:44:59+01:00
 ### [MMM-Netatmo by CFenner](https://github.com/CFenner/MMM-Netatmo)
 
 1. Recommendation: No lint script found in package.json. It is recommended to add one.
-2. Information: There are updates for 4 dependencie(s):
-   - @snyk/protect  1.1295.1  →  1.1295.2
-   - eslint           9.18.0  →    9.19.0
-   - less              4.2.0  →     4.2.2
-   - neostandard      0.11.5  →    0.12.0
+2. Information: There are updates for 2 dependencie(s):
+   - less          4.2.0  →   4.2.2
+   - neostandard  0.11.5  →  0.12.0
 
 
 ### [MMM-Netatmo-Presence by AgP42](https://github.com/AgP42/MMM-Netatmo-Presence)
@@ -6269,9 +6272,10 @@ Last update: 2025-01-24T21:44:59+01:00
 
 ### [MMM-OneCallWeather by KristjanESPERANTO](https://github.com/KristjanESPERANTO/MMM-OneCallWeather)
 
-1. Information: There are updates for 2 dependencie(s):
-   - @eslint/js  ^9.18.0  →  ^9.19.0
-   - eslint      ^9.18.0  →  ^9.19.0
+1. Information: There are updates for 3 dependencie(s):
+   - @eslint/js        ^9.18.0  →  ^9.19.0
+   - eslint            ^9.18.0  →  ^9.19.0
+   - markdownlint-cli  ^0.43.0  →  ^0.44.0
 
 
 ### [MMM-OneDrive by hermanho](https://github.com/hermanho/MMM-OneDrive)
@@ -7156,24 +7160,26 @@ Last update: 2025-01-24T21:44:59+01:00
 
 ### [MMM-PublicTransportBerlin by deg0nz](https://github.com/deg0nz/MMM-PublicTransportBerlin)
 
-1. Information: There are updates for 6 dependencie(s):
+1. Information: There are updates for 7 dependencie(s):
    - @eslint/js                  ^9.17.0  →   ^9.19.0
    - @stylistic/eslint-plugin    ^2.12.1  →   ^2.13.0
    - eslint                      ^9.17.0  →   ^9.19.0
    - eslint-plugin-jsonc         ^2.18.2  →   ^2.19.1
+   - markdownlint-cli            ^0.43.0  →   ^0.44.0
    - stylelint                  ^16.12.0  →  ^16.13.2
    - stylelint-config-standard   ^36.0.1  →   ^37.0.0
 
 
 ### [MMM-PublicTransportHafas by KristjanESPERANTO](https://github.com/KristjanESPERANTO/MMM-PublicTransportHafas)
 
-1. Information: There are updates for 6 dependencie(s):
+1. Information: There are updates for 7 dependencie(s):
    - @eslint/js                  ^9.18.0  →  ^9.19.0
    - @eslint/json                 ^0.9.1  →  ^0.10.0
    - @eslint/markdown             ^6.2.1  →   ^6.2.2
    - eslint                      ^9.18.0  →  ^9.19.0
    - eslint-plugin-package-json  ^0.20.1  →  ^0.21.1
    - lint-staged                 ^15.4.1  →  ^15.4.2
+   - markdownlint-cli            ^0.43.0  →  ^0.44.0
 
 
 ### [MMM-PublicTransportVVO by ChristianGeie](https://github.com/ChristianGeie/MMM-PublicTransportVVO)
@@ -9228,8 +9234,8 @@ Last update: 2025-01-24T21:44:59+01:00
    - eslint                    ^8.56.0  →  ^9.19.0
    - node-html-parser          ^6.1.12  →   ^7.0.1
 
-2. [103m WARN [49m [33meslint@8.56.0: 2023-12-15T22:55:11.833Z[39m
-[33mdeprecated: This version is no longer supported. Please see https://eslint.org/version-support for other options.[39m
+2.  WARN  eslint@8.56.0: 2023-12-15T22:55:11.833Z
+deprecated: This version is no longer supported. Please see https://eslint.org/version-support for other options.
 
 ### [MMM-TransLoc by OrangeHoopla](https://github.com/OrangeHoopla/MMM-TransLoc)
 
@@ -9889,12 +9895,13 @@ Last update: 2025-01-24T21:44:59+01:00
 
 ### [MMM-WebSpeechTTS by KristjanESPERANTO](https://github.com/KristjanESPERANTO/MMM-WebSpeechTTS)
 
-1. Information: There are updates for 5 dependencie(s):
+1. Information: There are updates for 6 dependencie(s):
    - @eslint/js                 ^9.16.0  →   ^9.19.0
    - @stylistic/eslint-plugin   ^2.12.0  →   ^2.13.0
    - cspell                     ^8.16.1  →   ^8.17.2
    - eslint                     ^9.16.0  →   ^9.19.0
    - globals                   ^15.13.0  →  ^15.14.0
+   - markdownlint-cli           ^0.43.0  →   ^0.44.0
 
 
 ### [MMM-Webuntis by HeikoGr](https://github.com/HeikoGr/MMM-Webuntis)

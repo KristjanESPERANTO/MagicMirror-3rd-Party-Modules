@@ -858,7 +858,7 @@
     "maintainerURL": "https://github.com/cgillinger",
     "description": "Celebrate birthdays with animated fireworks and confetti effects.",
     "issues": [],
-    "stars": 0,
+    "stars": 1,
     "license": "MIT"
   },
   {
@@ -7873,7 +7873,7 @@
     "maintainerURL": "",
     "description": "Displays your Custom Garbage Calendar.",
     "issues": [],
-    "stars": 31,
+    "stars": 33,
     "license": "MIT"
   },
   {
@@ -8051,7 +8051,7 @@
     "maintainerURL": "",
     "description": "A video player with buttons to select a video to play.",
     "issues": [],
-    "stars": 2
+    "stars": 3
   },
   {
     "name": "MMM-MyVolvo",
@@ -8073,7 +8073,7 @@
     "maintainerURL": "",
     "description": "Displays your schedule for Toronto curb-side waste collection.",
     "issues": [],
-    "stars": 11
+    "stars": 12
   },
   {
     "name": "MMM-MyWeather",

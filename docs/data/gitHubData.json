@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "2025-01-24T20:30:34.041Z",
+  "lastUpdate": "2025-01-25T04:30:32.020Z",
   "repositories": [
     {
       "id": "0lek/MMM-socialbicycles",
@@ -2257,16 +2257,16 @@
     },
     {
       "id": "cgillinger/MMM-Birthday",
-      "gitHubDataLastUpdate": "2025-01-02T16:30:15.332Z",
+      "gitHubDataLastUpdate": "2025-01-25T04:30:22.027Z",
       "gitHubData": {
         "issues": 0,
-        "stars": 0,
+        "stars": 1,
         "license": "MIT",
         "archived": false,
         "disabled": false,
         "defaultBranch": "master",
         "has_issues": true,
-        "lastCommit": "2025-01-02T15:33:43Z"
+        "lastCommit": "2025-01-24T08:52:18Z"
       }
     },
     {
@@ -3265,7 +3265,7 @@
     },
     {
       "id": "dbeltjr/MMM-MyCalendar",
-      "gitHubDataLastUpdate": "2025-01-02T04:30:26.589Z",
+      "gitHubDataLastUpdate": "2025-01-25T04:30:18.820Z",
       "gitHubData": {
         "issues": 0,
         "stars": 7,
@@ -4301,7 +4301,7 @@
     },
     {
       "id": "ethanpartida/MMM-MyStudyLife",
-      "gitHubDataLastUpdate": "2025-01-02T16:30:18.375Z",
+      "gitHubDataLastUpdate": "2025-01-25T04:30:24.599Z",
       "gitHubData": {
         "issues": 1,
         "stars": 11,
@@ -4875,7 +4875,7 @@
     },
     {
       "id": "framboise-pi/MMM-MyMinecraft",
-      "gitHubDataLastUpdate": "2025-01-02T04:30:29.021Z",
+      "gitHubDataLastUpdate": "2025-01-25T04:30:21.142Z",
       "gitHubData": {
         "issues": 5,
         "stars": 1,
@@ -4889,7 +4889,7 @@
     },
     {
       "id": "framboise-pi/MMM-MySenseHat",
-      "gitHubDataLastUpdate": "2025-01-02T16:30:16.541Z",
+      "gitHubDataLastUpdate": "2025-01-25T04:30:22.880Z",
       "gitHubData": {
         "issues": 2,
         "stars": 9,
@@ -4903,7 +4903,7 @@
     },
     {
       "id": "framboise-pi/MMM-MyWordsRandomed",
-      "gitHubDataLastUpdate": "2025-01-02T16:30:23.560Z",
+      "gitHubDataLastUpdate": "2025-01-25T04:30:29.634Z",
       "gitHubData": {
         "issues": 1,
         "stars": 0,
@@ -5645,7 +5645,7 @@
     },
     {
       "id": "htilburgs/MMM-MyDutchWeather",
-      "gitHubDataLastUpdate": "2025-01-02T04:30:27.987Z",
+      "gitHubDataLastUpdate": "2025-01-25T04:30:20.284Z",
       "gitHubData": {
         "issues": 0,
         "stars": 5,
@@ -5659,10 +5659,10 @@
     },
     {
       "id": "htilburgs/MMM-MyGarbage",
-      "gitHubDataLastUpdate": "2025-01-02T04:30:28.417Z",
+      "gitHubDataLastUpdate": "2025-01-25T04:30:20.703Z",
       "gitHubData": {
         "issues": 0,
-        "stars": 31,
+        "stars": 33,
         "license": "MIT",
         "archived": false,
         "disabled": false,
@@ -5687,7 +5687,7 @@
     },
     {
       "id": "htilburgs/MMM-MyMonthlyCalendar",
-      "gitHubDataLastUpdate": "2025-01-02T04:30:29.560Z",
+      "gitHubDataLastUpdate": "2025-01-25T04:30:21.590Z",
       "gitHubData": {
         "issues": 0,
         "stars": 1,
@@ -5701,7 +5701,7 @@
     },
     {
       "id": "htilburgs/MMM-MyPrayerTimes",
-      "gitHubDataLastUpdate": "2025-01-02T16:30:15.978Z",
+      "gitHubDataLastUpdate": "2025-01-25T04:30:22.400Z",
       "gitHubData": {
         "issues": 0,
         "stars": 9,
@@ -5715,7 +5715,7 @@
     },
     {
       "id": "htilburgs/MMM-MyTraffic",
-      "gitHubDataLastUpdate": "2025-01-02T16:30:18.856Z",
+      "gitHubDataLastUpdate": "2025-01-25T04:30:25.087Z",
       "gitHubData": {
         "issues": 0,
         "stars": 1,
@@ -6359,7 +6359,7 @@
     },
     {
       "id": "jclarke0000/MMM-MyTTC",
-      "gitHubDataLastUpdate": "2025-01-02T16:30:20.255Z",
+      "gitHubDataLastUpdate": "2025-01-25T04:30:26.399Z",
       "gitHubData": {
         "issues": 5,
         "stars": 7,
@@ -6373,10 +6373,10 @@
     },
     {
       "id": "jclarke0000/MMM-MyWastePickup",
-      "gitHubDataLastUpdate": "2025-01-02T16:30:22.592Z",
+      "gitHubDataLastUpdate": "2025-01-25T04:30:28.697Z",
       "gitHubData": {
         "issues": 15,
-        "stars": 11,
+        "stars": 12,
         "license": null,
         "archived": false,
         "disabled": false,
@@ -7171,10 +7171,10 @@
     },
     {
       "id": "justjim1220/MMM-MyVideoPlayer",
-      "gitHubDataLastUpdate": "2025-01-02T16:30:20.723Z",
+      "gitHubDataLastUpdate": "2025-01-25T04:30:26.967Z",
       "gitHubData": {
         "issues": 5,
-        "stars": 2,
+        "stars": 3,
         "license": null,
         "archived": false,
         "disabled": false,
@@ -8333,7 +8333,7 @@
     },
     {
       "id": "martinkooij/MMM-MyWeather",
-      "gitHubDataLastUpdate": "2025-01-02T16:30:23.059Z",
+      "gitHubDataLastUpdate": "2025-01-25T04:30:29.126Z",
       "gitHubData": {
         "issues": 2,
         "stars": 4,
@@ -8599,7 +8599,7 @@
     },
     {
       "id": "mazim-co/MMM-MyVolvo",
-      "gitHubDataLastUpdate": "2025-01-02T16:30:21.232Z",
+      "gitHubDataLastUpdate": "2025-01-25T04:30:27.466Z",
       "gitHubData": {
         "issues": 2,
         "stars": 1,
@@ -8683,7 +8683,7 @@
     },
     {
       "id": "Menturan/MMM-Namnsdag",
-      "gitHubDataLastUpdate": "2025-01-02T16:30:25.431Z",
+      "gitHubDataLastUpdate": "2025-01-25T04:30:31.427Z",
       "gitHubData": {
         "issues": 0,
         "stars": 0,
@@ -11175,7 +11175,7 @@
     },
     {
       "id": "normyx/MMM-Nantes-TAN",
-      "gitHubDataLastUpdate": "2025-01-02T16:30:25.892Z",
+      "gitHubDataLastUpdate": "2025-01-25T04:30:31.957Z",
       "gitHubData": {
         "issues": 2,
         "stars": 3,
@@ -11245,7 +11245,7 @@
     },
     {
       "id": "oenstrom/MMM-mycroft-bridge",
-      "gitHubDataLastUpdate": "2025-01-02T04:30:27.525Z",
+      "gitHubDataLastUpdate": "2025-01-25T04:30:19.797Z",
       "gitHubData": {
         "issues": 0,
         "stars": 1,
@@ -12015,7 +12015,7 @@
     },
     {
       "id": "qistoph/MMM-MyCommute",
-      "gitHubDataLastUpdate": "2025-01-02T04:30:27.108Z",
+      "gitHubDataLastUpdate": "2025-01-25T04:30:19.328Z",
       "gitHubData": {
         "issues": 10,
         "stars": 41,
@@ -12029,7 +12029,7 @@
     },
     {
       "id": "qistoph/MMM-nagios",
-      "gitHubDataLastUpdate": "2025-01-02T16:30:24.068Z",
+      "gitHubDataLastUpdate": "2025-01-25T04:30:30.090Z",
       "gitHubData": {
         "issues": 9,
         "stars": 7,
@@ -12127,7 +12127,7 @@
     },
     {
       "id": "ralberth/MMM-MysqlQuery",
-      "gitHubDataLastUpdate": "2025-01-02T16:30:17.414Z",
+      "gitHubDataLastUpdate": "2025-01-25T04:30:23.685Z",
       "gitHubData": {
         "issues": 4,
         "stars": 9,
@@ -12575,7 +12575,7 @@
     },
     {
       "id": "RichieCZ/MMM-NameDay",
-      "gitHubDataLastUpdate": "2025-01-02T16:30:24.904Z",
+      "gitHubDataLastUpdate": "2025-01-25T04:30:30.868Z",
       "gitHubData": {
         "issues": 1,
         "stars": 5,
@@ -12841,7 +12841,7 @@
     },
     {
       "id": "SageBrushes/MMM-MyTransitTime",
-      "gitHubDataLastUpdate": "2025-01-02T16:30:19.797Z",
+      "gitHubDataLastUpdate": "2025-01-25T04:30:26.029Z",
       "gitHubData": {
         "issues": 1,
         "stars": 2,
@@ -14465,7 +14465,7 @@
     },
     {
       "id": "tabsl/MMM-MySQLData",
-      "gitHubDataLastUpdate": "2025-01-02T16:30:16.963Z",
+      "gitHubDataLastUpdate": "2025-01-25T04:30:23.268Z",
       "gitHubData": {
         "issues": 1,
         "stars": 4,
@@ -14801,7 +14801,7 @@
     },
     {
       "id": "TheVieiraAkA/MMM-MyTraktSeries",
-      "gitHubDataLastUpdate": "2025-01-02T16:30:19.269Z",
+      "gitHubDataLastUpdate": "2025-01-25T04:30:25.515Z",
       "gitHubData": {
         "issues": 3,
         "stars": 1,
@@ -15389,7 +15389,7 @@
     },
     {
       "id": "TouaregWarrior/MMM-HolidayCountdown",
-      "gitHubDataLastUpdate": "2025-01-02T16:30:21.668Z",
+      "gitHubDataLastUpdate": "2025-01-25T04:30:27.889Z",
       "gitHubData": {
         "issues": 0,
         "stars": 3,
@@ -15417,7 +15417,7 @@
     },
     {
       "id": "TouaregWarrior/MMM-OctoMonV2",
-      "gitHubDataLastUpdate": "2025-01-02T16:30:22.112Z",
+      "gitHubDataLastUpdate": "2025-01-25T04:30:28.304Z",
       "gitHubData": {
         "issues": 0,
         "stars": 0,
@@ -15977,7 +15977,7 @@
     },
     {
       "id": "vincep5/MMM-MyStandings",
-      "gitHubDataLastUpdate": "2025-01-02T16:30:17.815Z",
+      "gitHubDataLastUpdate": "2025-01-25T04:30:24.128Z",
       "gitHubData": {
         "issues": 17,
         "stars": 14,

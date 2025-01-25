@@ -1259,7 +1259,7 @@
     "maintainerURL": "https://github.com/cgillinger",
     "description": "Celebrate birthdays with animated fireworks and confetti effects.",
     "issues": true,
-    "stars": 0,
+    "stars": 1,
     "license": "MIT",
     "tags": [
       "birthday",
@@ -10991,7 +10991,7 @@
     "maintainerURL": "",
     "description": "Displays your Custom Garbage Calendar.",
     "issues": true,
-    "stars": 31,
+    "stars": 33,
     "license": "MIT",
     "image": "screenshot.jpg",
     "defaultSortWeight": 4,
@@ -11238,7 +11238,7 @@
     "maintainerURL": "",
     "description": "A video player with buttons to select a video to play.",
     "issues": true,
-    "stars": 2,
+    "stars": 3,
     "tags": [
       "video",
       "player"
@@ -11277,7 +11277,7 @@
     "maintainerURL": "",
     "description": "Displays your schedule for Toronto curb-side waste collection.",
     "issues": true,
-    "stars": 11,
+    "stars": 12,
     "license": "MIT",
     "image": "node_modules-npm-node_modules-read-node_modules-mute-stream-coverage-lcov-report-sort-arrow-sprite.jpg",
     "defaultSortWeight": 8,
@@ -11606,7 +11606,7 @@
     ],
     "image": ".github-preview.bubbles.jpg",
     "defaultSortWeight": 0,
-    "lastCommit": "2025-01-23T23:01:04+00:00"
+    "lastCommit": "2025-01-25T00:38:01+00:00"
   },
   {
     "name": "MMM-Netatmo-Presence",
