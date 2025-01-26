@@ -317,7 +317,7 @@
     ],
     "image": ".github-preview-good.jpg",
     "defaultSortWeight": 1,
-    "lastCommit": "2025-01-15T10:23:53+00:00"
+    "lastCommit": "2025-01-26T09:28:02+00:00"
   },
   {
     "name": "MMM-Airtable",
@@ -4349,7 +4349,7 @@
     ],
     "image": "assets-screenshot-energy-monitor.jpg",
     "defaultSortWeight": 0,
-    "lastCommit": "2024-10-09T22:29:26+02:00"
+    "lastCommit": "2025-01-26T13:26:11+01:00"
   },
   {
     "name": "MMM-EnphaseSolar",
@@ -5564,7 +5564,7 @@
     "license": "MIT",
     "image": "All.jpg",
     "defaultSortWeight": 2,
-    "lastCommit": "2025-01-11T18:43:19+01:00"
+    "lastCommit": "2025-01-26T12:47:26+01:00"
   },
   {
     "name": "MMM-FroniusSolar2",
@@ -5579,7 +5579,7 @@
     "license": "MIT",
     "image": "All.jpg",
     "defaultSortWeight": 2,
-    "lastCommit": "2025-01-11T18:45:01+01:00"
+    "lastCommit": "2025-01-26T12:47:58+01:00"
   },
   {
     "name": "MMM-FroniusSolar3",
@@ -5594,7 +5594,7 @@
     "license": "MIT",
     "image": "All.jpg",
     "defaultSortWeight": 2,
-    "lastCommit": "2025-01-11T18:46:34+01:00"
+    "lastCommit": "2025-01-26T12:48:21+01:00"
   },
   {
     "name": "MMM-FroniusSolar4",
@@ -5609,7 +5609,7 @@
     "license": "MIT",
     "image": "All.jpg",
     "defaultSortWeight": 2,
-    "lastCommit": "2025-01-13T21:10:47+01:00"
+    "lastCommit": "2025-01-26T12:49:14+01:00"
   },
   {
     "name": "MMM-FSAPI",
@@ -6200,23 +6200,17 @@
   {
     "name": "MMM-GoogleMapsTraffic",
     "category": "Transport / Travel",
-    "url": "https://github.com/doctorfree/MMM-GoogleMapsTraffic",
-    "id": "doctorfree/MMM-GoogleMapsTraffic",
-    "maintainer": "doctorfree",
+    "url": "https://github.com/ChrisF1976/MMM-GoogleMapsTraffic",
+    "id": "ChrisF1976/MMM-GoogleMapsTraffic",
+    "maintainer": "ChrisF1976",
     "maintainerURL": "",
-    "description": "Displays a Google map, centered at provided coordinates, with traffic information.",
+    "description": "Displays a Google map, centred at provided coordinates, with traffic information.",
     "issues": true,
     "stars": 1,
-    "hasGithubIssues": false,
     "license": "MIT",
-    "tags": [
-      "google",
-      "traffic",
-      "maps"
-    ],
-    "image": "img-coordinates.jpg",
-    "defaultSortWeight": 7,
-    "lastCommit": "2022-03-16T17:53:17-07:00"
+    "image": "Traffic.jpg",
+    "defaultSortWeight": 4,
+    "lastCommit": "2025-01-26T17:32:32+01:00"
   },
   {
     "name": "MMM-GooglePhotos",
@@ -7336,7 +7330,7 @@
     "id": "FalseIlyu/MMM-IdF-Transport",
     "maintainer": "FalseIlyu",
     "maintainerURL": "https://github.com/FalseIlyu",
-    "description": "Display next bus/tramway/metro/train in the Paris/Ile-de-France r\u00e9gion in France using IDFM API.",
+    "description": "Display next bus/tramway/metro/train in the Paris/Ile-de-France region in France using IDFM API.",
     "issues": true,
     "stars": 5,
     "license": "AGPL-3.0",
@@ -9196,7 +9190,7 @@
     ],
     "image": "assets-MagicReplicator-screenshot.jpg",
     "defaultSortWeight": 5,
-    "lastCommit": "2025-01-15T21:41:25+01:00"
+    "lastCommit": "2025-01-26T14:27:50+01:00"
   },
   {
     "name": "MMM-MagicSuperHero",
@@ -10233,8 +10227,8 @@
     "description": "Simplifies module installation in MagicMirror.",
     "issues": true,
     "stars": 3,
-    "defaultSortWeight": 2,
-    "lastCommit": "2025-01-10T21:55:54+00:00"
+    "defaultSortWeight": 3,
+    "lastCommit": "2025-01-26T16:54:59+01:00"
   },
   {
     "name": "MMM-Modulebar",
@@ -11636,7 +11630,7 @@
     ],
     "image": ".github-preview.bubbles.jpg",
     "defaultSortWeight": 0,
-    "lastCommit": "2025-01-25T00:38:01+00:00"
+    "lastCommit": "2025-01-26T08:55:21+00:00"
   },
   {
     "name": "MMM-Netatmo-Presence",
@@ -20264,22 +20258,6 @@
   {
     "name": "MMM-Zmanim",
     "category": "Religion",
-    "url": "https://github.com/shmulyeng/MMM-Zmanim",
-    "id": "shmulyeng/MMM-Zmanim",
-    "maintainer": "shmulyeng",
-    "maintainerURL": "",
-    "description": "Displays daily Jewish calendar information.",
-    "issues": true,
-    "stars": 0,
-    "hasGithubIssues": false,
-    "license": "ISC",
-    "image": "alternateScreenshot.jpg",
-    "defaultSortWeight": 10,
-    "lastCommit": "2020-12-06T21:27:43-05:00"
-  },
-  {
-    "name": "MMM-Zmanim",
-    "category": "Religion",
     "url": "https://github.com/supermem613/MMM-Zmanim",
     "id": "supermem613/MMM-Zmanim",
     "maintainer": "supermem613",
@@ -20292,5 +20270,21 @@
     "image": "alternateScreenshot.jpg",
     "defaultSortWeight": 9,
     "lastCommit": "2025-01-24T14:22:15-05:00"
+  },
+  {
+    "name": "MMM-Zmanim",
+    "category": "Religion",
+    "url": "https://github.com/shmulyeng/MMM-Zmanim",
+    "id": "shmulyeng/MMM-Zmanim",
+    "maintainer": "shmulyeng",
+    "maintainerURL": "",
+    "description": "Displays daily Jewish calendar information.",
+    "issues": true,
+    "stars": 0,
+    "hasGithubIssues": false,
+    "license": "ISC",
+    "image": "alternateScreenshot.jpg",
+    "defaultSortWeight": 10,
+    "lastCommit": "2020-12-06T21:27:43-05:00"
   }
 ]

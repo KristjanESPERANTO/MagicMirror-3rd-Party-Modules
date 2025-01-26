@@ -1,6 +1,6 @@
 # Result of the module analysis
 
-Last update: 2025-01-26T05:38:51+01:00
+Last update: 2025-01-26T17:39:04+01:00
 
 ## Statistics
 
@@ -9,7 +9,7 @@ Last update: 2025-01-26T05:38:51+01:00
 | modules analyzed     |   1212   |
 | maintainer           |    654   |
 | modules with issues  |   1212   |
-| issues               |   6516   |
+| issues               |   6515   |
 | modules at github    |   1088   |
 | modules at gitlab    |     11   |
 | modules at bitbucket |      1   |
@@ -1036,7 +1036,7 @@ Last update: 2025-01-26T05:38:51+01:00
    - @eslint/markdown            ^6.2.1  →    ^6.2.2
    - @stylistic/eslint-plugin   ^2.13.0  →    ^3.0.0
    - eslint                     ^9.18.0  →   ^9.19.0
-   - lint-staged                ^15.4.1  →   ^15.4.2
+   - lint-staged                ^15.4.1  →   ^15.4.3
    - markdownlint-cli           ^0.43.0  →   ^0.44.0
    - stylelint                 ^16.13.2  →  ^16.14.0
 
@@ -1936,7 +1936,7 @@ Last update: 2025-01-26T05:38:51+01:00
    - cspell                      ^8.17.1  →   ^8.17.2
    - eslint                      ^9.17.0  →   ^9.19.0
    - globals                    ^15.13.0  →  ^15.14.0
-   - lint-staged                ^15.2.11  →   ^15.4.2
+   - lint-staged                ^15.2.11  →   ^15.4.3
    - markdownlint-cli            ^0.43.0  →   ^0.44.0
    - stylelint                  ^16.12.0  →  ^16.14.0
    - stylelint-config-standard   ^36.0.1  →   ^37.0.0
@@ -2570,7 +2570,7 @@ deprecated: no longer maintained, switch to modern iconify-icon web component
    - @eslint/markdown            ^6.2.1  →    ^6.2.2
    - @stylistic/eslint-plugin   ^2.13.0  →    ^3.0.0
    - eslint                     ^9.18.0  →   ^9.19.0
-   - lint-staged                ^15.4.1  →   ^15.4.2
+   - lint-staged                ^15.4.1  →   ^15.4.3
    - markdownlint-cli           ^0.43.0  →   ^0.44.0
    - stylelint                 ^16.13.2  →  ^16.14.0
 
@@ -2986,14 +2986,12 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
 2. Typo: Found `Magic Mirror` in file `package.json`: Replace it with `MagicMirror²`.
 3. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
 
-### [MMM-GoogleMapsTraffic by doctorfree](https://github.com/doctorfree/MMM-GoogleMapsTraffic)
+### [MMM-GoogleMapsTraffic by ChrisF1976](https://github.com/ChrisF1976/MMM-GoogleMapsTraffic)
 
-1. Issues are not enabled in the GitHub repository. So users cannot report bugs. Please enable issues in your repo.
-2. Recommendation: Found `jshint` in file `Gruntfile.js`: Replace "jshint" by "eslint".
-3. Typo: Found `Magic Mirror` in file `MMM-GoogleMapsTraffic.js`: Replace it with `MagicMirror²`.
-4. Outdated: Found `MichMich/MagicMirror` in file `README.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
-5. Deprecated: Found `"grunt"` in file `package.json`: Grunt is practically unmaintained. Move on to something better.
-6. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
+1. There is no `package.json`. We need this file to gather information about the module for the module list page.
+2. Typo: Found `Magic Mirror` in file `MMM-GoogleMapsTraffic.js`: Replace it with `MagicMirror²`.
+3. Outdated: Found `MichMich/MagicMirror` in file `README.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
+4. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
 
 ### [MMM-GooglePhotos by hermanho](https://github.com/hermanho/MMM-GooglePhotos)
 
@@ -4652,7 +4650,7 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
    - eslint-plugin-import              ^2.29.1  →   ^2.31.0
    - globals                           ^15.9.0  →  ^15.14.0
    - husky                             ^9.0.11  →    ^9.1.7
-   - lint-staged                      ^15.2.10  →   ^15.4.2
+   - lint-staged                      ^15.2.10  →   ^15.4.3
    - markdownlint-cli                  ^0.41.0  →   ^0.44.0
    - prettier                           ^3.3.3  →    ^3.4.2
    - semantic-release                  ^24.1.0  →   ^24.2.1
@@ -5115,7 +5113,8 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
 ### [MMM-ModInstall by khassel](https://gitlab.com/khassel/MMM-ModInstall)
 
 1. There is no `package.json`. We need this file to gather information about the module for the module list page.
-2. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
+2. Recommendation: Found `require('https')` in file `node_helper.js`: Replace 'https' by 'node:https'.
+3. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
 
 ### [MMM-Modulebar by Snille](https://github.com/Snille/MMM-Modulebar)
 
@@ -5791,10 +5790,9 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
 ### [MMM-Netatmo by CFenner](https://github.com/CFenner/MMM-Netatmo)
 
 1. Recommendation: No lint script found in package.json. It is recommended to add one.
-2. Information: There are updates for 3 dependencie(s):
-   - less           4.2.0  →    4.2.2
-   - neostandard   0.11.5  →   0.12.0
-   - stylelint    16.13.2  →  16.14.0
+2. Information: There are updates for 2 dependencie(s):
+   - less          4.2.0  →   4.2.2
+   - neostandard  0.11.5  →  0.12.0
 
 
 ### [MMM-Netatmo-Presence by AgP42](https://github.com/AgP42/MMM-Netatmo-Presence)
@@ -7175,7 +7173,7 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
    - @stylistic/eslint-plugin     ^2.13.0  →    ^3.0.0
    - eslint                       ^9.18.0  →   ^9.19.0
    - eslint-plugin-package-json   ^0.20.1  →   ^0.21.1
-   - lint-staged                  ^15.4.1  →   ^15.4.2
+   - lint-staged                  ^15.4.1  →   ^15.4.3
    - markdownlint-cli             ^0.43.0  →   ^0.44.0
    - stylelint                   ^16.13.2  →  ^16.14.0
 
@@ -10285,7 +10283,7 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
 2. Recommendation: Found `axios` in file `node_helper.js`: Replace it with built-in fetch.
 3. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
 
-### [MMM-Zmanim by shmulyeng](https://github.com/shmulyeng/MMM-Zmanim)
+### [MMM-Zmanim by supermem613](https://github.com/supermem613/MMM-Zmanim)
 
 1. `package.json` issue: No description
 2. `package.json` issue: No repository field.
@@ -10297,7 +10295,7 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
 8. Found directory `node_modules`. This shouldn't be uploaded. Add `node_modules/`to `.gitignore`.
 9. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
 
-### [MMM-Zmanim by supermem613](https://github.com/supermem613/MMM-Zmanim)
+### [MMM-Zmanim by shmulyeng](https://github.com/shmulyeng/MMM-Zmanim)
 
 1. `package.json` issue: No description
 2. `package.json` issue: No repository field.

@@ -4435,14 +4435,13 @@
   {
     "name": "MMM-GoogleMapsTraffic",
     "category": "Transport / Travel",
-    "url": "https://github.com/doctorfree/MMM-GoogleMapsTraffic",
-    "id": "doctorfree/MMM-GoogleMapsTraffic",
-    "maintainer": "doctorfree",
+    "url": "https://github.com/ChrisF1976/MMM-GoogleMapsTraffic",
+    "id": "ChrisF1976/MMM-GoogleMapsTraffic",
+    "maintainer": "ChrisF1976",
     "maintainerURL": "",
-    "description": "Displays a Google map, centered at provided coordinates, with traffic information.",
+    "description": "Displays a Google map, centred at provided coordinates, with traffic information.",
     "issues": [],
     "stars": 1,
-    "hasGithubIssues": false,
     "license": "MIT"
   },
   {
@@ -5274,7 +5273,7 @@
     "id": "FalseIlyu/MMM-IdF-Transport",
     "maintainer": "FalseIlyu",
     "maintainerURL": "https://github.com/FalseIlyu",
-    "description": "Display next bus/tramway/metro/train in the Paris/Ile-de-France région in France using IDFM API.",
+    "description": "Display next bus/tramway/metro/train in the Paris/Ile-de-France region in France using IDFM API.",
     "issues": [],
     "stars": 5,
     "license": "AGPL-3.0"
@@ -14454,11 +14453,11 @@
   {
     "name": "MMM-Zmanim",
     "category": "Religion",
-    "url": "https://github.com/shmulyeng/MMM-Zmanim",
-    "id": "shmulyeng/MMM-Zmanim",
-    "maintainer": "shmulyeng",
+    "url": "https://github.com/supermem613/MMM-Zmanim",
+    "id": "supermem613/MMM-Zmanim",
+    "maintainer": "supermem613",
     "maintainerURL": "",
-    "description": "Displays daily Jewish calendar information.",
+    "description": "Displays Zmanim (Jewish calendar information).",
     "issues": [],
     "stars": 0,
     "hasGithubIssues": false
@@ -14466,11 +14465,11 @@
   {
     "name": "MMM-Zmanim",
     "category": "Religion",
-    "url": "https://github.com/supermem613/MMM-Zmanim",
-    "id": "supermem613/MMM-Zmanim",
-    "maintainer": "supermem613",
+    "url": "https://github.com/shmulyeng/MMM-Zmanim",
+    "id": "shmulyeng/MMM-Zmanim",
+    "maintainer": "shmulyeng",
     "maintainerURL": "",
-    "description": "Displays Zmanim (Jewish calendar information).",
+    "description": "Displays daily Jewish calendar information.",
     "issues": [],
     "stars": 0,
     "hasGithubIssues": false

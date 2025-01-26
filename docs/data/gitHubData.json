@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "2025-01-26T04:30:27.565Z",
+  "lastUpdate": "2025-01-26T16:30:28.679Z",
   "repositories": [
     {
       "id": "0lek/MMM-socialbicycles",
@@ -185,7 +185,7 @@
     },
     {
       "id": "AdamMoses-GitHub/MMM-TweetsByTimelineOrList",
-      "gitHubDataLastUpdate": "2025-01-06T04:30:23.601Z",
+      "gitHubDataLastUpdate": "2025-01-26T16:30:18.175Z",
       "gitHubData": {
         "issues": 4,
         "stars": 14,
@@ -199,7 +199,7 @@
     },
     {
       "id": "AdamMoses-GitHub/MMM-TwitterTrendsByPlace",
-      "gitHubDataLastUpdate": "2025-01-06T04:30:25.083Z",
+      "gitHubDataLastUpdate": "2025-01-26T16:30:19.685Z",
       "gitHubData": {
         "issues": 1,
         "stars": 12,
@@ -717,7 +717,7 @@
     },
     {
       "id": "AndyHazz/MMM-UKLiveBusStopInfo",
-      "gitHubDataLastUpdate": "2025-01-06T04:30:26.635Z",
+      "gitHubDataLastUpdate": "2025-01-26T16:30:20.998Z",
       "gitHubData": {
         "issues": 0,
         "stars": 0,
@@ -899,7 +899,7 @@
     },
     {
       "id": "asimhsidd/MMM-VideoPlayer",
-      "gitHubDataLastUpdate": "2025-01-06T16:30:16.713Z",
+      "gitHubDataLastUpdate": "2025-01-26T16:30:28.639Z",
       "gitHubData": {
         "issues": 6,
         "stars": 7,
@@ -1011,7 +1011,7 @@
     },
     {
       "id": "bacherd/MMM-UniFi-Voucher",
-      "gitHubDataLastUpdate": "2025-01-06T04:30:29.034Z",
+      "gitHubDataLastUpdate": "2025-01-26T16:30:23.179Z",
       "gitHubData": {
         "issues": 0,
         "stars": 3,
@@ -1109,7 +1109,7 @@
     },
     {
       "id": "balassy/MMM-Udvaronc",
-      "gitHubDataLastUpdate": "2025-01-06T04:30:26.100Z",
+      "gitHubDataLastUpdate": "2025-01-26T16:30:20.536Z",
       "gitHubData": {
         "issues": 0,
         "stars": 4,
@@ -1529,7 +1529,7 @@
     },
     {
       "id": "Blastitt/twitControl",
-      "gitHubDataLastUpdate": "2025-01-06T04:30:24.537Z",
+      "gitHubDataLastUpdate": "2025-01-26T16:30:19.190Z",
       "gitHubData": {
         "issues": 6,
         "stars": 9,
@@ -2089,7 +2089,7 @@
     },
     {
       "id": "Captsi/MMM-UKTide",
-      "gitHubDataLastUpdate": "2025-01-06T04:30:28.561Z",
+      "gitHubDataLastUpdate": "2025-01-26T16:30:22.744Z",
       "gitHubData": {
         "issues": 0,
         "stars": 1,
@@ -2547,6 +2547,20 @@
         "defaultBranch": "main",
         "has_issues": true,
         "lastCommit": "2025-01-13T20:10:47Z"
+      }
+    },
+    {
+      "id": "ChrisF1976/MMM-GoogleMapsTraffic",
+      "gitHubDataLastUpdate": "2025-01-26T16:30:15.858Z",
+      "gitHubData": {
+        "issues": 0,
+        "stars": 1,
+        "license": "MIT",
+        "archived": false,
+        "disabled": false,
+        "defaultBranch": "master",
+        "has_issues": true,
+        "lastCommit": "2025-01-26T16:29:00Z"
       }
     },
     {
@@ -3335,7 +3349,7 @@
     },
     {
       "id": "deg0nz/MMM-VartaESS",
-      "gitHubDataLastUpdate": "2025-01-06T04:30:32.451Z",
+      "gitHubDataLastUpdate": "2025-01-26T16:30:26.408Z",
       "gitHubData": {
         "issues": 2,
         "stars": 0,
@@ -3723,20 +3737,6 @@
         "defaultBranch": "main",
         "has_issues": true,
         "lastCommit": "2022-01-19T18:20:40Z"
-      }
-    },
-    {
-      "id": "doctorfree/MMM-GoogleMapsTraffic",
-      "gitHubDataLastUpdate": "2025-01-20T04:30:21.904Z",
-      "gitHubData": {
-        "issues": 0,
-        "stars": 1,
-        "license": "MIT",
-        "archived": false,
-        "disabled": false,
-        "defaultBranch": "master",
-        "has_issues": false,
-        "lastCommit": "2022-03-17T00:53:17Z"
       }
     },
     {
@@ -7759,7 +7759,7 @@
     },
     {
       "id": "kyle-kelly/MMM-uber",
-      "gitHubDataLastUpdate": "2025-01-06T04:30:25.615Z",
+      "gitHubDataLastUpdate": "2025-01-26T16:30:20.138Z",
       "gitHubData": {
         "issues": 1,
         "stars": 17,
@@ -8137,7 +8137,7 @@
     },
     {
       "id": "maloakes/MMM-UKMOWeatherWarnings",
-      "gitHubDataLastUpdate": "2025-01-06T04:30:27.517Z",
+      "gitHubDataLastUpdate": "2025-01-26T16:30:21.816Z",
       "gitHubData": {
         "issues": 3,
         "stars": 2,
@@ -8501,7 +8501,7 @@
     },
     {
       "id": "mattdy/MMM-UKNationalRail",
-      "gitHubDataLastUpdate": "2025-01-06T04:30:28.032Z",
+      "gitHubDataLastUpdate": "2025-01-26T16:30:22.287Z",
       "gitHubData": {
         "issues": 1,
         "stars": 6,
@@ -8991,7 +8991,7 @@
     },
     {
       "id": "MikeBishop/MMM-uptimekuma",
-      "gitHubDataLastUpdate": "2025-01-06T04:30:30.563Z",
+      "gitHubDataLastUpdate": "2025-01-26T16:30:24.697Z",
       "gitHubData": {
         "issues": 1,
         "stars": 2,
@@ -9677,7 +9677,7 @@
     },
     {
       "id": "mrVragec/MMM-uptimerobot",
-      "gitHubDataLastUpdate": "2025-01-06T04:30:31.009Z",
+      "gitHubDataLastUpdate": "2025-01-26T16:30:25.083Z",
       "gitHubData": {
         "issues": 3,
         "stars": 16,
@@ -9733,7 +9733,7 @@
     },
     {
       "id": "msteinkogler/MMM-updateFromStdOut",
-      "gitHubDataLastUpdate": "2025-01-06T04:30:30.078Z",
+      "gitHubDataLastUpdate": "2025-01-26T16:30:24.188Z",
       "gitHubData": {
         "issues": 1,
         "stars": 2,
@@ -10559,7 +10559,7 @@
     },
     {
       "id": "n-gao/MMM-vCard2Calendar",
-      "gitHubDataLastUpdate": "2025-01-06T04:30:33.444Z",
+      "gitHubDataLastUpdate": "2025-01-26T16:30:27.405Z",
       "gitHubData": {
         "issues": 0,
         "stars": 1,
@@ -10811,7 +10811,7 @@
     },
     {
       "id": "nigel-daniels/MMM-Tube-Status",
-      "gitHubDataLastUpdate": "2025-01-06T04:30:21.745Z",
+      "gitHubDataLastUpdate": "2025-01-26T16:30:16.281Z",
       "gitHubData": {
         "issues": 0,
         "stars": 3,
@@ -11273,7 +11273,7 @@
     },
     {
       "id": "olexs/MMM-UserPresenceToMQTT",
-      "gitHubDataLastUpdate": "2025-01-06T04:30:31.510Z",
+      "gitHubDataLastUpdate": "2025-01-26T16:30:25.480Z",
       "gitHubData": {
         "issues": 2,
         "stars": 4,
@@ -11455,7 +11455,7 @@
     },
     {
       "id": "parnic/MMM-IntelliCenter",
-      "gitHubDataLastUpdate": "2025-01-06T16:30:16.138Z",
+      "gitHubDataLastUpdate": "2025-01-26T16:30:28.185Z",
       "gitHubData": {
         "issues": 0,
         "stars": 0,
@@ -11464,7 +11464,7 @@
         "disabled": false,
         "defaultBranch": "main",
         "has_issues": true,
-        "lastCommit": "2025-01-06T06:22:29Z"
+        "lastCommit": "2025-01-25T18:08:15Z"
       }
     },
     {
@@ -11511,7 +11511,7 @@
     },
     {
       "id": "parnic/MMM-Unsplash",
-      "gitHubDataLastUpdate": "2025-01-06T04:30:29.584Z",
+      "gitHubDataLastUpdate": "2025-01-26T16:30:23.760Z",
       "gitHubData": {
         "issues": 0,
         "stars": 8,
@@ -12113,7 +12113,7 @@
     },
     {
       "id": "rafagale/MMM-TUZSAZaragoza",
-      "gitHubDataLastUpdate": "2025-01-06T04:30:22.675Z",
+      "gitHubDataLastUpdate": "2025-01-26T16:30:17.354Z",
       "gitHubData": {
         "issues": 0,
         "stars": 2,
@@ -13765,7 +13765,7 @@
     },
     {
       "id": "slametps/MMM-TuyaSL",
-      "gitHubDataLastUpdate": "2025-01-06T04:30:22.245Z",
+      "gitHubDataLastUpdate": "2025-01-26T16:30:16.909Z",
       "gitHubData": {
         "issues": 9,
         "stars": 3,
@@ -13919,7 +13919,7 @@
     },
     {
       "id": "Snille/MMM-Videoplayer",
-      "gitHubDataLastUpdate": "2025-01-06T04:30:33.921Z",
+      "gitHubDataLastUpdate": "2025-01-26T16:30:27.802Z",
       "gitHubData": {
         "issues": 1,
         "stars": 11,
@@ -15277,7 +15277,7 @@
     },
     {
       "id": "Tom-Hirschberger/MMM-ValuesByNotification",
-      "gitHubDataLastUpdate": "2025-01-06T04:30:31.989Z",
+      "gitHubDataLastUpdate": "2025-01-26T16:30:25.950Z",
       "gitHubData": {
         "issues": 0,
         "stars": 7,
@@ -16229,7 +16229,7 @@
     },
     {
       "id": "WilliamFitzjohn/MMM-TwitchAlert",
-      "gitHubDataLastUpdate": "2025-01-06T04:30:24.095Z",
+      "gitHubDataLastUpdate": "2025-01-26T16:30:18.758Z",
       "gitHubData": {
         "issues": 3,
         "stars": 2,
@@ -16467,7 +16467,7 @@
     },
     {
       "id": "XBCreepinJesus/MMM-TvheadendDVR",
-      "gitHubDataLastUpdate": "2025-01-06T04:30:23.168Z",
+      "gitHubDataLastUpdate": "2025-01-26T16:30:17.781Z",
       "gitHubData": {
         "issues": 0,
         "stars": 0,
@@ -16481,7 +16481,7 @@
     },
     {
       "id": "XBCreepinJesus/MMM-UKLiveTrainDepartures",
-      "gitHubDataLastUpdate": "2025-01-06T04:30:27.053Z",
+      "gitHubDataLastUpdate": "2025-01-26T16:30:21.379Z",
       "gitHubData": {
         "issues": 2,
         "stars": 2,
@@ -16495,7 +16495,7 @@
     },
     {
       "id": "Xkhi/MMM-Vasttrafik-PublicTransport",
-      "gitHubDataLastUpdate": "2025-01-06T04:30:32.955Z",
+      "gitHubDataLastUpdate": "2025-01-26T16:30:26.911Z",
       "gitHubData": {
         "issues": 6,
         "stars": 1,

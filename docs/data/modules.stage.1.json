@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "2025-01-26T04:30:13.659Z",
+  "lastUpdate": "2025-01-26T16:30:14.047Z",
   "modules": [
     {
       "name": "MMM-01ZM",
@@ -3748,11 +3748,11 @@
     {
       "name": "MMM-GoogleMapsTraffic",
       "category": "Transport / Travel",
-      "url": "https://github.com/doctorfree/MMM-GoogleMapsTraffic",
-      "id": "doctorfree/MMM-GoogleMapsTraffic",
-      "maintainer": "doctorfree",
+      "url": "https://github.com/ChrisF1976/MMM-GoogleMapsTraffic",
+      "id": "ChrisF1976/MMM-GoogleMapsTraffic",
+      "maintainer": "ChrisF1976",
       "maintainerURL": "",
-      "description": "Displays a Google map, centered at provided coordinates, with traffic information.",
+      "description": "Displays a Google map, centred at provided coordinates, with traffic information.",
       "issues": []
     },
     {
@@ -4456,7 +4456,7 @@
       "id": "FalseIlyu/MMM-IdF-Transport",
       "maintainer": "FalseIlyu",
       "maintainerURL": "https://github.com/FalseIlyu",
-      "description": "Display next bus/tramway/metro/train in the Paris/Ile-de-France région in France using IDFM API.",
+      "description": "Display next bus/tramway/metro/train in the Paris/Ile-de-France region in France using IDFM API.",
       "issues": []
     },
     {
