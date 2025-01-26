@@ -1238,7 +1238,7 @@
     "maintainerURL": "",
     "description": "Allows you to enhance your setup by integrating physical buttons via GPIO. This module supports multiple buttons, each of which can be individually configured to perform different actions based on short or long presses. With configurable notifications and versatile functionality, MMM-Buttons provides a powerful way to interact with your MagicMirror².",
     "issues": [],
-    "stars": 5,
+    "stars": 6,
     "license": "MIT"
   },
   {
@@ -3759,7 +3759,7 @@
     "maintainerURL": "",
     "description": "A classic flip clock that is powered by the awesome <a target=\"_blank\" href=\"https://pqina.nl/flip\">flip plugin</a>.",
     "issues": [],
-    "stars": 20,
+    "stars": 21,
     "license": "MIT"
   },
   {
@@ -6164,6 +6164,18 @@
     "stars": 7
   },
   {
+    "name": "MMM-Linky",
+    "category": "Utility / IoT / 3rd Party / Integration",
+    "url": "https://github.com/2hdlockness/MMM-Linky",
+    "id": "2hdlockness/MMM-Linky",
+    "maintainer": "2hdlockness",
+    "maintainerURL": "https://github.com/2hdlockness/",
+    "description": "A module to retrieve and display Linky consumption data using CONSO API. Intended for French users.",
+    "issues": [],
+    "stars": 0,
+    "license": "MIT"
+  },
+  {
     "name": "MMM-Liquipedia-Matches",
     "category": "Sports",
     "url": "https://github.com/buxxi/MMM-Liquipedia-Matches",
@@ -6471,13 +6483,14 @@
   },
   {
     "name": "magic-mirror-voice",
-    "category": "Voice Control",
+    "category": "Outdated Modules",
     "url": "https://github.com/whyjustin/magic-mirror-voice",
     "id": "whyjustin/magic-mirror-voice",
     "maintainer": "whyjustin",
     "maintainerURL": "",
     "description": "Voice control based on based on Sphinx and Alexa.",
     "issues": [],
+    "outdated": "Abandoned. No reactions to Pull Requests and issues since years. Seems not to work anymore.",
     "stars": 16,
     "license": "NOASSERTION"
   },
@@ -9200,7 +9213,7 @@
     "maintainerURL": "",
     "description": "A weather module that displays current, hourly and daily forecast information using data from the OpenWeatherMap One Call API.",
     "issues": [],
-    "stars": 31,
+    "stars": 32,
     "license": "MIT"
   },
   {
@@ -14163,7 +14176,7 @@
     "maintainerURL": "",
     "description": "Yet another word of the day module. The special feature of this module is that you can select multiple languages and it will display as a carousel.",
     "issues": [],
-    "stars": 4,
+    "stars": 5,
     "license": "MIT"
   },
   {
@@ -14297,7 +14310,7 @@
     "maintainerURL": "",
     "description": "Track the progress of the current year / month.",
     "issues": [],
-    "stars": 9,
+    "stars": 10,
     "license": "MIT"
   },
   {

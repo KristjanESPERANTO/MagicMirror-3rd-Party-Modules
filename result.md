@@ -1,15 +1,15 @@
 # Result of the module analysis
 
-Last update: 2025-01-25T17:38:49+01:00
+Last update: 2025-01-26T05:38:51+01:00
 
 ## Statistics
 
 |                      | number   |
 |:---------------------|:--------:|
-| modules analyzed     |   1211   |
-| maintainer           |    655   |
-| modules with issues  |   1211   |
-| issues               |   6524   |
+| modules analyzed     |   1212   |
+| maintainer           |    654   |
+| modules with issues  |   1212   |
+| issues               |   6516   |
 | modules at github    |   1088   |
 | modules at gitlab    |     11   |
 | modules at bitbucket |      1   |
@@ -4265,6 +4265,15 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
 2. Warning: No LICENSE file.
 3. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
 
+### [MMM-Linky by 2hdlockness](https://github.com/2hdlockness/MMM-Linky)
+
+1. No image found.
+2. Recommendation: Found `https://cdn.jsdelivr.net` in file `MMM-Linky.js`: It looks like a package is loaded via CDN. It would be better if the package were installed locally via npm.
+3. Recommendation: The README seems not to have an update instruction (the word 'update' is missing). Please add one.
+4. Recommendation: Found `axios` in file `node_helper.js`: Replace it with built-in fetch.
+5. Recommendation: Found `axios` in file `package.json`: Replace it with built-in fetch.
+6. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
+
 ### [MMM-Liquipedia-Matches by buxxi](https://github.com/buxxi/MMM-Liquipedia-Matches)
 
 1. There are no keywords in 'package.json'. We would use them as tags on the module list page.
@@ -4480,24 +4489,6 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
 6. Recommendation: Found `jshint` in file `package.json`: Replace "jshint" by "eslint".
 7. Deprecated: Found `"grunt"` in file `package.json`: Grunt is practically unmaintained. Move on to something better.
 8. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
-
-### [magic-mirror-voice by whyjustin](https://github.com/whyjustin/magic-mirror-voice)
-
-1. `package.json` issue: No description
-2. `package.json` issue: No repository field.
-3. There are no keywords in 'package.json'. We would use them as tags on the module list page.
-4. Issue: The license in the package.json (MIT) doesn't match the license file (NOASSERTION).
-5. No compatible or wrong license field in 'package.json' or LICENSE file. Without that, we can't use an image.
-6. Recommendation: Module name doesn't follow the recommended pattern (it doesn't start with `MMM-`). Consider renaming your module.
-7. Typo: Found `Magic Mirror` in file `README.md`: Replace it with `MagicMirror²`.
-8. Recommendation: The README seems not to have an update instruction (the word 'update' is missing). Please add one.
-9. Recommendation: Found `require('https')` in file `alexa-authentication.js`: Replace 'https' by 'node:https'.
-10. Recommendation: Found `require('https')` in file `alexa-companion-service.js`: Replace 'https' by 'node:https'.
-11. Typo: Found `Magic Mirror` in file `pom.xml`: Replace it with `MagicMirror²`.
-12. Typo: Found `Magic Mirror` in file `CompanionServiceAuthenticator.java`: Replace it with `MagicMirror²`.
-13. Deprecated: Found `"electron-rebuild"` in file `package.json`: Replace it with `@electron/rebuild`
-14. Typo: Found `Magic Mirror` in file `sphinx-model-generator.js`: Replace it with `MagicMirror²`.
-15. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
 
 ### [MMM-MagicHexClock by Lavve](https://github.com/Lavve/MMM-MagicHexClock)
 

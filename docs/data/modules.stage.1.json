@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "2025-01-25T16:30:13.810Z",
+  "lastUpdate": "2025-01-26T04:30:13.659Z",
   "modules": [
     {
       "name": "MMM-01ZM",
@@ -5209,6 +5209,16 @@
       "issues": []
     },
     {
+      "name": "MMM-Linky",
+      "category": "Utility / IoT / 3rd Party / Integration",
+      "url": "https://github.com/2hdlockness/MMM-Linky",
+      "id": "2hdlockness/MMM-Linky",
+      "maintainer": "2hdlockness",
+      "maintainerURL": "https://github.com/2hdlockness/",
+      "description": "A module to retrieve and display Linky consumption data using CONSO API. Intended for French users.",
+      "issues": []
+    },
+    {
       "name": "MMM-Liquipedia-Matches",
       "category": "Sports",
       "url": "https://github.com/buxxi/MMM-Liquipedia-Matches",
@@ -5472,13 +5482,14 @@
     },
     {
       "name": "magic-mirror-voice",
-      "category": "Voice Control",
+      "category": "Outdated Modules",
       "url": "https://github.com/whyjustin/magic-mirror-voice",
       "id": "whyjustin/magic-mirror-voice",
       "maintainer": "whyjustin",
       "maintainerURL": "",
       "description": "Voice control based on based on Sphinx and Alexa.",
-      "issues": []
+      "issues": [],
+      "outdated": "Abandoned. No reactions to Pull Requests and issues since years. Seems not to work anymore."
     },
     {
       "name": "MMM-MagicHexClock",

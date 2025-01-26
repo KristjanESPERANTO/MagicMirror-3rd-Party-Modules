@@ -1788,7 +1788,7 @@
     "maintainerURL": "",
     "description": "Allows you to enhance your setup by integrating physical buttons via GPIO. This module supports multiple buttons, each of which can be individually configured to perform different actions based on short or long presses. With configurable notifications and versatile functionality, MMM-Buttons provides a powerful way to interact with your MagicMirror\u00b2.",
     "issues": true,
-    "stars": 5,
+    "stars": 6,
     "license": "MIT",
     "tags": [
       "buttons"
@@ -5269,7 +5269,7 @@
     "maintainerURL": "",
     "description": "A classic flip clock that is powered by the awesome <a target=\"_blank\" href=\"https://pqina.nl/flip\">flip plugin</a>.",
     "issues": true,
-    "stars": 20,
+    "stars": 21,
     "license": "MIT",
     "tags": [
       "date",
@@ -7691,7 +7691,7 @@
     "license": "MIT",
     "image": "screenshot.jpg",
     "defaultSortWeight": 1,
-    "lastCommit": "2025-01-21T19:29:30-06:00"
+    "lastCommit": "2025-01-25T12:08:15-06:00"
   },
   {
     "name": "MMM-IntelligentOctopus",
@@ -8611,6 +8611,29 @@
     "lastCommit": "2018-11-08T23:01:11+10:00"
   },
   {
+    "name": "MMM-Linky",
+    "category": "Utility / IoT / 3rd Party / Integration",
+    "url": "https://github.com/2hdlockness/MMM-Linky",
+    "id": "2hdlockness/MMM-Linky",
+    "maintainer": "2hdlockness",
+    "maintainerURL": "https://github.com/2hdlockness/",
+    "description": "A module to retrieve and display Linky consumption data using CONSO API. Intended for French users.",
+    "issues": true,
+    "stars": 0,
+    "license": "MIT",
+    "tags": [
+      "linky",
+      "api",
+      "consommation",
+      "\u00e9lectricit\u00e9",
+      "enedis",
+      "graphique",
+      "\u00e9nergie"
+    ],
+    "defaultSortWeight": 5,
+    "lastCommit": "2025-01-26T00:42:40+01:00"
+  },
+  {
     "name": "MMM-Liquipedia-Matches",
     "category": "Sports",
     "url": "https://github.com/buxxi/MMM-Liquipedia-Matches",
@@ -9044,16 +9067,17 @@
   },
   {
     "name": "magic-mirror-voice",
-    "category": "Voice Control",
+    "category": "Outdated Modules",
     "url": "https://github.com/whyjustin/magic-mirror-voice",
     "id": "whyjustin/magic-mirror-voice",
     "maintainer": "whyjustin",
     "maintainerURL": "",
     "description": "Voice control based on based on Sphinx and Alexa.",
-    "issues": true,
+    "issues": false,
+    "outdated": "Abandoned. No reactions to Pull Requests and issues since years. Seems not to work anymore.",
     "stars": 16,
     "license": "NOASSERTION",
-    "defaultSortWeight": 15,
+    "defaultSortWeight": 901,
     "lastCommit": "2016-09-13T18:05:55-07:00"
   },
   {
@@ -10360,7 +10384,7 @@
     ],
     "image": "images-2023-09-15-example-moons.jpg",
     "defaultSortWeight": 1,
-    "lastCommit": "2024-09-09T21:52:01-04:00"
+    "lastCommit": "2025-01-25T14:59:22-05:00"
   },
   {
     "name": "MMM-moonraker",
@@ -12895,7 +12919,7 @@
     "maintainerURL": "",
     "description": "A weather module that displays current, hourly and daily forecast information using data from the OpenWeatherMap One Call API.",
     "issues": true,
-    "stars": 31,
+    "stars": 32,
     "license": "MIT",
     "tags": [
       "weather",
@@ -19858,7 +19882,7 @@
     "maintainerURL": "",
     "description": "Yet another word of the day module. The special feature of this module is that you can select multiple languages and it will display as a carousel.",
     "issues": true,
-    "stars": 4,
+    "stars": 5,
     "license": "MIT",
     "image": "image-1.jpg",
     "defaultSortWeight": 5,
@@ -20028,7 +20052,7 @@
     "maintainerURL": "",
     "description": "Track the progress of the current year / month.",
     "issues": true,
-    "stars": 9,
+    "stars": 10,
     "license": "MIT",
     "tags": [
       "human",
