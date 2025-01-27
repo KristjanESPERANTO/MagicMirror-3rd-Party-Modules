@@ -1,11 +1,11 @@
 {
-  "moduleCounter": 1212,
+  "moduleCounter": 1213,
   "modulesWithImageCounter": 852,
-  "modulesWithIssuesCounter": 1212,
-  "issueCounter": 6515,
-  "lastUpdate": "2025-01-26T17:39:04+01:00",
+  "modulesWithIssuesCounter": 1213,
+  "issueCounter": 6519,
+  "lastUpdate": "2025-01-27T05:38:51+01:00",
   "repositoryHoster": {
-    "github": 1088,
+    "github": 1089,
     "gitlab": 11,
     "bitbucket": 1
   },
@@ -44,6 +44,7 @@
     "Snille": 5,
     "cowboysdude": 4,
     "ItsMeBrille": 4,
+    "yourdawi": 4,
     "MarcLandis": 4,
     "MMM-CalendarExt2": 4,
     "nischi": 4,
@@ -83,7 +84,6 @@
     "Ax-LED": 3,
     "njwilliams": 3,
     "tbouron": 3,
-    "yourdawi": 3,
     "jboucly": 3,
     "tderflinger": 3,
     "asimhsidd": 3,

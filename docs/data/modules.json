@@ -1350,6 +1350,20 @@
     "lastCommit": "2024-07-03T21:11:54+02:00"
   },
   {
+    "name": "MMM-Blitzer",
+    "category": "News / Information",
+    "url": "https://github.com/yourdawi/MMM-Blitzer",
+    "id": "yourdawi/MMM-Blitzer",
+    "maintainer": "yourdawi",
+    "maintainerURL": "https://github.com/yourdawi",
+    "description": "Show radar traps around based on blitzer.de.",
+    "issues": true,
+    "stars": 0,
+    "license": "MIT",
+    "defaultSortWeight": 3,
+    "lastCommit": "2025-01-26T22:36:23+01:00"
+  },
+  {
     "name": "MMM-Block",
     "category": "Utility / IoT / 3rd Party / Integration",
     "url": "https://github.com/BKeyport/MMM-Block",
@@ -5375,7 +5389,7 @@
     "url": "https://github.com/yourdawi/MMM-FortniteStats",
     "id": "yourdawi/MMM-FortniteStats",
     "maintainer": "yourdawi",
-    "maintainerURL": "",
+    "maintainerURL": "https://github.com/yourdawi",
     "description": "Display Fortnite Stats.",
     "issues": true,
     "stars": 2,
@@ -5579,7 +5593,7 @@
     "license": "MIT",
     "image": "All.jpg",
     "defaultSortWeight": 2,
-    "lastCommit": "2025-01-26T12:47:58+01:00"
+    "lastCommit": "2025-01-26T17:47:47+01:00"
   },
   {
     "name": "MMM-FroniusSolar3",
@@ -17094,7 +17108,7 @@
     "maintainerURL": "https://github.com/tylerstambaugh",
     "description": "Simple display of basic ride stats from <a target=\"_blank\" href=\"https://www.strava.com\">Strava</a> for a rolling window of time.",
     "issues": true,
-    "stars": 2,
+    "stars": 1,
     "license": "MIT",
     "image": "public-assets-images-StravaWeekInBike.jpg",
     "defaultSortWeight": 4,
@@ -18983,7 +18997,7 @@
     "maintainerURL": "",
     "description": "Offline Voice Recognition Module, with ability to control other modules, based on pocketsphinx.",
     "issues": true,
-    "stars": 76,
+    "stars": 77,
     "license": "MIT",
     "tags": [
       "voice recognition",
@@ -19174,7 +19188,7 @@
     "maintainerURL": "",
     "description": "Re-themes MagicMirror\u00b2 to look like a beautiful digital photo wall display. It adds a new font, styles, redesigned clock and weather displays, and rotating background image pulled from unsplash.com.",
     "issues": true,
-    "stars": 104,
+    "stars": 103,
     "license": "MIT",
     "image": "WB-weather-screenshots-wb-weather-wallberry-classic.jpg",
     "defaultSortWeight": 17,
@@ -19189,7 +19203,7 @@
     "maintainerURL": "",
     "description": "Rotates through wallpapers from Bing or Reddit.",
     "issues": true,
-    "stars": 108,
+    "stars": 113,
     "license": "MIT",
     "defaultSortWeight": 5,
     "lastCommit": "2024-01-16T19:26:18-05:00"
@@ -19254,7 +19268,7 @@
     "maintainerURL": "",
     "description": "A simple Water Reminder Module.",
     "issues": true,
-    "stars": 7,
+    "stars": 8,
     "defaultSortWeight": 5,
     "lastCommit": "2021-01-03T15:07:57-03:00"
   },
@@ -20020,7 +20034,7 @@
     "license": "MIT",
     "image": "image.jpg",
     "defaultSortWeight": 5,
-    "lastCommit": "2025-01-24T14:13:34-05:00"
+    "lastCommit": "2025-01-26T17:18:27-05:00"
   },
   {
     "name": "MMM-yandex-route",

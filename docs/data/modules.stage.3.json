@@ -1314,6 +1314,21 @@
     "image": "screenshot.jpg"
   },
   {
+    "name": "MMM-Blitzer",
+    "category": "News / Information",
+    "url": "https://github.com/yourdawi/MMM-Blitzer",
+    "id": "yourdawi/MMM-Blitzer",
+    "maintainer": "yourdawi",
+    "maintainerURL": "https://github.com/yourdawi",
+    "description": "Show radar traps around based on blitzer.de.",
+    "issues": [
+      "There is no `package.json`. We need this file to gather information about the module for the module list page.",
+      "No image found."
+    ],
+    "stars": 0,
+    "license": "MIT"
+  },
+  {
     "name": "MMM-Block",
     "category": "Utility / IoT / 3rd Party / Integration",
     "url": "https://github.com/BKeyport/MMM-Block",
@@ -5306,7 +5321,7 @@
     "url": "https://github.com/yourdawi/MMM-FortniteStats",
     "id": "yourdawi/MMM-FortniteStats",
     "maintainer": "yourdawi",
-    "maintainerURL": "",
+    "maintainerURL": "https://github.com/yourdawi",
     "description": "Display Fortnite Stats.",
     "issues": [
       "There is no `package.json`. We need this file to gather information about the module for the module list page.",
@@ -16893,7 +16908,7 @@
     "issues": [
       "There is no `package.json`. We need this file to gather information about the module for the module list page."
     ],
-    "stars": 2,
+    "stars": 1,
     "license": "MIT",
     "image": "public-assets-images-StravaWeekInBike.jpg"
   },
@@ -18761,7 +18776,7 @@
     "issues": [
       "No image found."
     ],
-    "stars": 76,
+    "stars": 77,
     "license": "MIT",
     "tags": [
       "voice recognition",
@@ -18950,7 +18965,7 @@
     "issues": [
       "There is no `package.json`. We need this file to gather information about the module for the module list page."
     ],
-    "stars": 104,
+    "stars": 103,
     "license": "MIT",
     "image": "WB-weather-screenshots-wb-weather-wallberry-classic.jpg"
   },
@@ -18966,7 +18981,7 @@
       "There are no keywords in 'package.json'. We would use them as tags on the module list page.",
       "No image found."
     ],
-    "stars": 108,
+    "stars": 113,
     "license": "MIT"
   },
   {
@@ -19034,7 +19049,7 @@
     "issues": [
       "There is no `package.json`. We need this file to gather information about the module for the module list page."
     ],
-    "stars": 7
+    "stars": 8
   },
   {
     "name": "MMM-Wattvision",

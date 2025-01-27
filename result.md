@@ -1,16 +1,16 @@
 # Result of the module analysis
 
-Last update: 2025-01-26T17:39:04+01:00
+Last update: 2025-01-27T05:38:51+01:00
 
 ## Statistics
 
 |                      | number   |
 |:---------------------|:--------:|
-| modules analyzed     |   1212   |
+| modules analyzed     |   1213   |
 | maintainer           |    654   |
-| modules with issues  |   1212   |
-| issues               |   6515   |
-| modules at github    |   1088   |
+| modules with issues  |   1213   |
+| issues               |   6519   |
+| modules at github    |   1089   |
 | modules at gitlab    |     11   |
 | modules at bitbucket |      1   |
 
@@ -664,6 +664,13 @@ Last update: 2025-01-26T17:39:04+01:00
 1. Outdated: Found `MichMich/MagicMirror` in file `README.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
 2. Recommendation: The README seems not to have an update instruction (the word 'update' is missing). Please add one.
 3. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
+
+### [MMM-Blitzer by yourdawi](https://github.com/yourdawi/MMM-Blitzer)
+
+1. There is no `package.json`. We need this file to gather information about the module for the module list page.
+2. No image found.
+3. Recommendation: The README seems not to have an update instruction (the word 'update' is missing). Please add one.
+4. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
 
 ### [MMM-Block by BKeyport](https://github.com/BKeyport/MMM-Block)
 
@@ -5959,7 +5966,7 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
 
 ### [MMM-NHL by parnic](https://github.com/parnic/MMM-NHL)
 
-1. Information: There are updates for 8 dependencie(s):
+1. Information: There are updates for 9 dependencie(s):
    - @eslint/js                  ^9.12.0  →   ^9.19.0
    - @stylistic/eslint-plugin     ^2.9.0  →    ^3.0.0
    - eslint                      ^9.12.0  →   ^9.19.0
@@ -5968,6 +5975,7 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
    - prettier                     ^3.3.3  →    ^3.4.2
    - stylelint                   ^16.9.0  →  ^16.14.0
    - stylelint-config-standard   ^36.0.1  →   ^37.0.0
+   - stylelint-prettier           ^5.0.2  →    ^5.0.3
 
 
 ### [MMM-Nightscout by bureus](https://github.com/bureus/MMM-Nightscout)
@@ -7154,7 +7162,7 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
 
 ### [MMM-PublicTransportBerlin by deg0nz](https://github.com/deg0nz/MMM-PublicTransportBerlin)
 
-1. Information: There are updates for 7 dependencie(s):
+1. Information: There are updates for 8 dependencie(s):
    - @eslint/js                  ^9.17.0  →   ^9.19.0
    - @stylistic/eslint-plugin    ^2.12.1  →    ^3.0.0
    - eslint                      ^9.17.0  →   ^9.19.0
@@ -7162,11 +7170,12 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
    - markdownlint-cli            ^0.43.0  →   ^0.44.0
    - stylelint                  ^16.12.0  →  ^16.14.0
    - stylelint-config-standard   ^36.0.1  →   ^37.0.0
+   - stylelint-prettier           ^5.0.2  →    ^5.0.3
 
 
 ### [MMM-PublicTransportHafas by KristjanESPERANTO](https://github.com/KristjanESPERANTO/MMM-PublicTransportHafas)
 
-1. Information: There are updates for 9 dependencie(s):
+1. Information: There are updates for 10 dependencie(s):
    - @eslint/js                   ^9.18.0  →   ^9.19.0
    - @eslint/json                  ^0.9.1  →   ^0.10.0
    - @eslint/markdown              ^6.2.1  →    ^6.2.2
@@ -7176,6 +7185,7 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
    - lint-staged                  ^15.4.1  →   ^15.4.3
    - markdownlint-cli             ^0.43.0  →   ^0.44.0
    - stylelint                   ^16.13.2  →  ^16.14.0
+   - stylelint-prettier            ^5.0.2  →    ^5.0.3
 
 
 ### [MMM-PublicTransportVVO by ChristianGeie](https://github.com/ChristianGeie/MMM-PublicTransportVVO)

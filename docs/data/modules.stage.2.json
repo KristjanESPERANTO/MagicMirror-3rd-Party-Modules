@@ -921,6 +921,18 @@
     "license": "MIT"
   },
   {
+    "name": "MMM-Blitzer",
+    "category": "News / Information",
+    "url": "https://github.com/yourdawi/MMM-Blitzer",
+    "id": "yourdawi/MMM-Blitzer",
+    "maintainer": "yourdawi",
+    "maintainerURL": "https://github.com/yourdawi",
+    "description": "Show radar traps around based on blitzer.de.",
+    "issues": [],
+    "stars": 0,
+    "license": "MIT"
+  },
+  {
     "name": "MMM-Block",
     "category": "Utility / IoT / 3rd Party / Integration",
     "url": "https://github.com/BKeyport/MMM-Block",
@@ -3838,7 +3850,7 @@
     "url": "https://github.com/yourdawi/MMM-FortniteStats",
     "id": "yourdawi/MMM-FortniteStats",
     "maintainer": "yourdawi",
-    "maintainerURL": "",
+    "maintainerURL": "https://github.com/yourdawi",
     "description": "Display Fortnite Stats.",
     "issues": [],
     "stars": 2,
@@ -12210,7 +12222,7 @@
     "maintainerURL": "https://github.com/tylerstambaugh",
     "description": "Simple display of basic ride stats from <a target=\"_blank\" href=\"https://www.strava.com\">Strava</a> for a rolling window of time.",
     "issues": [],
-    "stars": 2,
+    "stars": 1,
     "license": "MIT"
   },
   {
@@ -13532,7 +13544,7 @@
     "maintainerURL": "",
     "description": "Offline Voice Recognition Module, with ability to control other modules, based on pocketsphinx.",
     "issues": [],
-    "stars": 76,
+    "stars": 77,
     "license": "MIT"
   },
   {
@@ -13668,7 +13680,7 @@
     "maintainerURL": "",
     "description": "Re-themes MagicMirror² to look like a beautiful digital photo wall display. It adds a new font, styles, redesigned clock and weather displays, and rotating background image pulled from unsplash.com.",
     "issues": [],
-    "stars": 104,
+    "stars": 103,
     "license": "MIT"
   },
   {
@@ -13680,7 +13692,7 @@
     "maintainerURL": "",
     "description": "Rotates through wallpapers from Bing or Reddit.",
     "issues": [],
-    "stars": 108,
+    "stars": 113,
     "license": "MIT"
   },
   {
@@ -13728,7 +13740,7 @@
     "maintainerURL": "",
     "description": "A simple Water Reminder Module.",
     "issues": [],
-    "stars": 7
+    "stars": 8
   },
   {
     "name": "MMM-Wattvision",

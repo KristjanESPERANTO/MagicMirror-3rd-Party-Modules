@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "2025-01-26T16:30:14.047Z",
+  "lastUpdate": "2025-01-27T04:30:14.826Z",
   "modules": [
     {
       "name": "MMM-01ZM",
@@ -784,6 +784,16 @@
       "maintainer": "pcurt",
       "maintainerURL": "https://github.com/pcurt",
       "description": "Show french jokes from the BlaguesAPI <a target=\"_blank\" href=\"https://www.blagues-api.fr\">https://www.blagues-api.fr</a>.",
+      "issues": []
+    },
+    {
+      "name": "MMM-Blitzer",
+      "category": "News / Information",
+      "url": "https://github.com/yourdawi/MMM-Blitzer",
+      "id": "yourdawi/MMM-Blitzer",
+      "maintainer": "yourdawi",
+      "maintainerURL": "https://github.com/yourdawi",
+      "description": "Show radar traps around based on blitzer.de.",
       "issues": []
     },
     {
@@ -3248,7 +3258,7 @@
       "url": "https://github.com/yourdawi/MMM-FortniteStats",
       "id": "yourdawi/MMM-FortniteStats",
       "maintainer": "yourdawi",
-      "maintainerURL": "",
+      "maintainerURL": "https://github.com/yourdawi",
       "description": "Display Fortnite Stats.",
       "issues": []
     },
