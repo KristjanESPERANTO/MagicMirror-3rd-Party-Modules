@@ -1,16 +1,16 @@
 # Result of the module analysis
 
-Last update: 2025-01-27T05:38:51+01:00
+Last update: 2025-01-28T05:46:57+01:00
 
 ## Statistics
 
 |                      | number   |
 |:---------------------|:--------:|
-| modules analyzed     |   1213   |
-| maintainer           |    654   |
-| modules with issues  |   1213   |
-| issues               |   6519   |
-| modules at github    |   1089   |
+| modules analyzed     |   1214   |
+| maintainer           |    655   |
+| modules with issues  |   1214   |
+| issues               |   6528   |
+| modules at github    |   1090   |
 | modules at gitlab    |     11   |
 | modules at bitbucket |      1   |
 
@@ -740,15 +740,15 @@ Last update: 2025-01-27T05:38:51+01:00
 ### [MMM-BoschSmartHome by jalibu](https://github.com/jalibu/MMM-BoschSmartHome)
 
 1. Information: There are updates for 9 dependencie(s):
-   - @stylistic/eslint-plugin   ^2.12.1  →     ^3.0.0
-   - @types/node               ^22.10.2  →  ^22.10.10
-   - bosch-smart-home-bridge     ^1.6.0  →     ^1.7.2
-   - eslint                     ^9.17.0  →    ^9.19.0
-   - eslint-config-prettier      ^9.1.0  →    ^10.0.1
-   - eslint-plugin-prettier      ^5.2.1  →     ^5.2.3
-   - rollup                     ^4.29.1  →    ^4.32.0
-   - typescript                  ^5.7.2  →     ^5.7.3
-   - typescript-eslint          ^8.18.2  →    ^8.21.0
+   - @stylistic/eslint-plugin   ^2.12.1  →    ^3.0.0
+   - @types/node               ^22.10.2  →  ^22.12.0
+   - bosch-smart-home-bridge     ^1.6.0  →    ^1.7.3
+   - eslint                     ^9.17.0  →   ^9.19.0
+   - eslint-config-prettier      ^9.1.0  →   ^10.0.1
+   - eslint-plugin-prettier      ^5.2.1  →    ^5.2.3
+   - rollup                     ^4.29.1  →   ^4.32.0
+   - typescript                  ^5.7.2  →    ^5.7.3
+   - typescript-eslint          ^8.18.2  →   ^8.22.0
 
 2. ESLint issues:
    - node_helper.js: Line 13, Column 1034: 't' is defined but never used. (rule: no-unused-vars)
@@ -911,15 +911,16 @@ Last update: 2025-01-27T05:38:51+01:00
 
 ### [MMM-CalendarExt2 by MMM-CalendarExt2](https://github.com/MMM-CalendarExt2/MMM-CalendarExt2)
 
-1. Information: There are updates for 8 dependencie(s):
+1. Information: There are updates for 9 dependencie(s):
    - @eslint/js                  ^9.16.0  →   ^9.19.0
    - @stylistic/eslint-plugin    ^2.11.0  →    ^3.0.0
    - eslint                      ^9.16.0  →   ^9.19.0
    - eslint-plugin-jsonc         ^2.18.2  →   ^2.19.1
    - globals                    ^15.13.0  →  ^15.14.0
    - markdownlint-cli2           ^0.15.0  →   ^0.17.2
-   - stylelint                  ^16.11.0  →  ^16.14.0
+   - stylelint                  ^16.11.0  →  ^16.14.1
    - stylelint-config-standard   ^36.0.1  →   ^37.0.0
+   - stylelint-prettier           ^5.0.2  →    ^5.0.3
 
 
 ### [MMM-CalendarExt3 by MMRIZE](https://github.com/MMRIZE/MMM-CalendarExt3)
@@ -1037,7 +1038,7 @@ Last update: 2025-01-27T05:38:51+01:00
 
 ### [MMM-Canteen by KristjanESPERANTO](https://github.com/KristjanESPERANTO/MMM-Canteen)
 
-1. Information: There are updates for 8 dependencie(s):
+1. Information: There are updates for 9 dependencie(s):
    - @eslint/js                 ^9.18.0  →   ^9.19.0
    - @eslint/json                ^0.9.1  →   ^0.10.0
    - @eslint/markdown            ^6.2.1  →    ^6.2.2
@@ -1045,7 +1046,8 @@ Last update: 2025-01-27T05:38:51+01:00
    - eslint                     ^9.18.0  →   ^9.19.0
    - lint-staged                ^15.4.1  →   ^15.4.3
    - markdownlint-cli           ^0.43.0  →   ^0.44.0
-   - stylelint                 ^16.13.2  →  ^16.14.0
+   - stylelint                 ^16.13.2  →  ^16.14.1
+   - stylelint-prettier          ^5.0.2  →    ^5.0.3
 
 
 ### [MMM-Canvas by chase-cromwell](https://github.com/chase-cromwell/MMM-Canvas)
@@ -1071,15 +1073,16 @@ Last update: 2025-01-27T05:38:51+01:00
 
 ### [MMM-Carousel by shbatm](https://github.com/shbatm/MMM-Carousel)
 
-1. Information: There are updates for 8 dependencie(s):
+1. Information: There are updates for 9 dependencie(s):
    - @eslint/js                  ^9.16.0  →   ^9.19.0
    - @stylistic/eslint-plugin    ^2.12.0  →    ^3.0.0
    - cspell                      ^8.16.1  →   ^8.17.2
    - eslint                      ^9.16.0  →   ^9.19.0
    - globals                    ^15.13.0  →  ^15.14.0
    - markdownlint-cli            ^0.43.0  →   ^0.44.0
-   - stylelint                  ^16.11.0  →  ^16.14.0
+   - stylelint                  ^16.11.0  →  ^16.14.1
    - stylelint-config-standard   ^36.0.1  →   ^37.0.0
+   - stylelint-prettier           ^5.0.2  →    ^5.0.3
 
 
 ### [MMM-CECControl by nischi](https://github.com/nischi/MMM-CECControl)
@@ -1937,7 +1940,7 @@ Last update: 2025-01-27T05:38:51+01:00
 
 ### [MMM-EasyPix by KristjanESPERANTO](https://github.com/KristjanESPERANTO/MMM-EasyPix)
 
-1. Information: There are updates for 9 dependencie(s):
+1. Information: There are updates for 10 dependencie(s):
    - @eslint/js                  ^9.17.0  →   ^9.19.0
    - @stylistic/eslint-plugin    ^2.12.1  →    ^3.0.0
    - cspell                      ^8.17.1  →   ^8.17.2
@@ -1945,8 +1948,9 @@ Last update: 2025-01-27T05:38:51+01:00
    - globals                    ^15.13.0  →  ^15.14.0
    - lint-staged                ^15.2.11  →   ^15.4.3
    - markdownlint-cli            ^0.43.0  →   ^0.44.0
-   - stylelint                  ^16.12.0  →  ^16.14.0
+   - stylelint                  ^16.12.0  →  ^16.14.1
    - stylelint-config-standard   ^36.0.1  →   ^37.0.0
+   - stylelint-prettier           ^5.0.2  →    ^5.0.3
 
 
 ### [MMM-Ecobee by parnic](https://github.com/parnic/MMM-Ecobee)
@@ -2571,7 +2575,7 @@ deprecated: no longer maintained, switch to modern iconify-icon web component
 
 ### [MMM-Forum by KristjanESPERANTO](https://github.com/KristjanESPERANTO/MMM-Forum)
 
-1. Information: There are updates for 8 dependencie(s):
+1. Information: There are updates for 9 dependencie(s):
    - @eslint/js                 ^9.18.0  →   ^9.19.0
    - @eslint/json                ^0.9.1  →   ^0.10.0
    - @eslint/markdown            ^6.2.1  →    ^6.2.2
@@ -2579,7 +2583,8 @@ deprecated: no longer maintained, switch to modern iconify-icon web component
    - eslint                     ^9.18.0  →   ^9.19.0
    - lint-staged                ^15.4.1  →   ^15.4.3
    - markdownlint-cli           ^0.43.0  →   ^0.44.0
-   - stylelint                 ^16.13.2  →  ^16.14.0
+   - stylelint                 ^16.13.2  →  ^16.14.1
+   - stylelint-prettier          ^5.0.2  →    ^5.0.3
 
 
 ### [MMM-FrameLight by RaspiManu](https://github.com/RaspiManu/MMM-FrameLight)
@@ -3334,6 +3339,15 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
 3. Deprecated: Found `require('request')` in file `node_helper.js`: Replace it with built-in fetch.
 4. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
 
+### [MMM-homeassistant-sensors by Snille](https://github.com/Snille/MMM-homeassistant-sensors)
+
+1. Typo: Found `Magic Mirror` in file `MMM-homeassistant-sensors.css`: Replace it with `MagicMirror²`.
+2. Typo: Found `MagicMirror2` in file `README.md`: Replace it with `MagicMirror²`.
+3. Outdated: Found `MichMich/MagicMirror` in file `README.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
+4. Deprecated: Found `require('request')` in file `node_helper.js`: Replace it with built-in fetch.
+5. Typo: Found `Magic Mirror` in file `package.json`: Replace it with `MagicMirror²`.
+6. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
+
 ### [MMM-homeassistant-sensors by ledsi](https://github.com/ledsi/MMM-homeassistant-sensors)
 
 1. There is no `package.json`. We need this file to gather information about the module for the module list page.
@@ -3343,15 +3357,6 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
 5. Typo: Found `[MagicMirror]` in file `README.md`: Replace it with `[MagicMirror²]`.
 6. Outdated: Found `MichMich/MagicMirror` in file `README.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
 7. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
-
-### [MMM-homeassistant-sensors by Snille](https://github.com/Snille/MMM-homeassistant-sensors)
-
-1. Typo: Found `Magic Mirror` in file `MMM-homeassistant-sensors.css`: Replace it with `MagicMirror²`.
-2. Typo: Found `MagicMirror2` in file `README.md`: Replace it with `MagicMirror²`.
-3. Outdated: Found `MichMich/MagicMirror` in file `README.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
-4. Deprecated: Found `require('request')` in file `node_helper.js`: Replace it with built-in fetch.
-5. Typo: Found `Magic Mirror` in file `package.json`: Replace it with `MagicMirror²`.
-6. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
 
 ### [MMM-HomeAssistant-Touch by mathewmeconry](https://github.com/mathewmeconry/MMM-HomeAssistant-Touch)
 
@@ -3778,12 +3783,13 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
 ### [MMM-IntelliCenter by parnic](https://github.com/parnic/MMM-IntelliCenter)
 
 1. There are no keywords in 'package.json'. We would use them as tags on the module list page.
-2. Information: There are updates for 5 dependencie(s):
+2. Information: There are updates for 6 dependencie(s):
    - @eslint/js                  ^9.17.0  →   ^9.19.0
    - eslint                      ^9.17.0  →   ^9.19.0
    - markdownlint-cli2           ^0.17.1  →   ^0.17.2
-   - stylelint                  ^16.12.0  →  ^16.14.0
+   - stylelint                  ^16.12.0  →  ^16.14.1
    - stylelint-config-standard   ^36.0.1  →   ^37.0.0
+   - stylelint-prettier           ^5.0.2  →    ^5.0.3
 
 
 ### [MMM-IntelligentOctopus by ianmccon](https://github.com/ianmccon/MMM-IntelligentOctopus)
@@ -3941,8 +3947,8 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
    - @rollup/plugin-commonjs           ^25.0.7  →  ^28.0.2
    - @rollup/plugin-node-resolve       ^15.2.3  →  ^16.0.0
    - @rollup/plugin-typescript         ^11.1.6  →  ^12.1.2
-   - @typescript-eslint/eslint-plugin  ^6.19.1  →  ^8.21.0
-   - @typescript-eslint/parser         ^6.19.1  →  ^8.21.0
+   - @typescript-eslint/eslint-plugin  ^6.19.1  →  ^8.22.0
+   - @typescript-eslint/parser         ^6.19.1  →  ^8.22.0
    - eslint                            ^8.56.0  →  ^9.19.0
    - eslint-config-prettier             ^9.1.0  →  ^10.0.1
    - eslint-plugin-prettier             ^5.1.3  →   ^5.2.3
@@ -4648,7 +4654,7 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
 
 ### [MMM-MealieMenu by zanix](https://github.com/zanix/MMM-MealieMenu)
 
-1. Information: There are updates for 14 dependencie(s):
+1. Information: There are updates for 15 dependencie(s):
    - @commitlint/cli                   ^19.3.0  →   ^19.6.1
    - @commitlint/config-conventional   ^19.5.0  →   ^19.6.0
    - @eslint/js                        ^8.57.0  →   ^9.19.0
@@ -4661,8 +4667,9 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
    - markdownlint-cli                  ^0.41.0  →   ^0.44.0
    - prettier                           ^3.3.3  →    ^3.4.2
    - semantic-release                  ^24.1.0  →   ^24.2.1
-   - stylelint                         ^16.9.0  →  ^16.14.0
+   - stylelint                         ^16.9.0  →  ^16.14.1
    - stylelint-config-standard         ^36.0.0  →   ^37.0.0
+   - stylelint-prettier                 ^5.0.2  →    ^5.0.3
 
 2.  WARN  eslint@8.57.0: 2024-02-23T20:39:43.282Z
 deprecated: This version is no longer supported. Please see https://eslint.org/version-support for other options.
@@ -5903,17 +5910,18 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
 5. Warning: No LICENSE file.
 6. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
 
-### [MMM-NextCloud-Tasks by starlingfire](https://github.com/starlingfire/MMM-NextCloud-Tasks)
+### [MMM-NextCloud-Tasks by Coernel82](https://github.com/Coernel82/MMM-NextCloud-Tasks)
 
 1. `package.json` issue: No repository field.
 2. There are no keywords in 'package.json'. We would use them as tags on the module list page.
 3. Issues are not enabled in the GitHub repository. So users cannot report bugs. Please enable issues in your repo.
 4. Recommendation: Found `jshint` in file `Gruntfile.js`: Replace "jshint" by "eslint".
 5. Typo: Found `Magic Mirror` in file `MMM-NextCloud-Tasks.js`: Replace it with `MagicMirror²`.
-6. Outdated: Found `MichMich/MagicMirror` in file `README.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
-7. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
-8. Deprecated: Found `"grunt"` in file `package.json`: Grunt is practically unmaintained. Move on to something better.
-9. Recommendation: Replace eslintrc by new flat config.
+6. Recommendation: Found `https://cdnjs.cloudflare.com` in file `MMM-NextCloud-Tasks.js`: It looks like a package is loaded via CDN. It would be better if the package were installed locally via npm.
+7. Outdated: Found `MichMich/MagicMirror` in file `README.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
+8. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
+9. Deprecated: Found `"grunt"` in file `package.json`: Grunt is practically unmaintained. Move on to something better.
+10. Recommendation: Replace eslintrc by new flat config.
 
 ### [MMM-NextEvent by cure](https://github.com/cure/MMM-NextEvent)
 
@@ -5973,7 +5981,7 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
    - globals                    ^15.10.0  →  ^15.14.0
    - jsdoc                        ^4.0.3  →    ^4.0.4
    - prettier                     ^3.3.3  →    ^3.4.2
-   - stylelint                   ^16.9.0  →  ^16.14.0
+   - stylelint                   ^16.9.0  →  ^16.14.1
    - stylelint-config-standard   ^36.0.1  →   ^37.0.0
    - stylelint-prettier           ^5.0.2  →    ^5.0.3
 
@@ -5995,7 +6003,7 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
    - @rollup/plugin-node-resolve       ^15.2.3  →  ^16.0.0
    - @rollup/plugin-typescript         ^11.1.6  →  ^12.1.2
    - @stylistic/eslint-plugin           ^1.5.4  →   ^3.0.0
-   - @typescript-eslint/eslint-plugin  ^6.20.0  →  ^8.21.0
+   - @typescript-eslint/eslint-plugin  ^6.20.0  →  ^8.22.0
    - eslint                            ^8.56.0  →  ^9.19.0
    - prettier                           ^3.2.5  →   ^3.4.2
    - rollup                             ^4.9.6  →  ^4.32.0
@@ -7168,7 +7176,7 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
    - eslint                      ^9.17.0  →   ^9.19.0
    - eslint-plugin-jsonc         ^2.18.2  →   ^2.19.1
    - markdownlint-cli            ^0.43.0  →   ^0.44.0
-   - stylelint                  ^16.12.0  →  ^16.14.0
+   - stylelint                  ^16.12.0  →  ^16.14.1
    - stylelint-config-standard   ^36.0.1  →   ^37.0.0
    - stylelint-prettier           ^5.0.2  →    ^5.0.3
 
@@ -7184,7 +7192,7 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
    - eslint-plugin-package-json   ^0.20.1  →   ^0.21.1
    - lint-staged                  ^15.4.1  →   ^15.4.3
    - markdownlint-cli             ^0.43.0  →   ^0.44.0
-   - stylelint                   ^16.13.2  →  ^16.14.0
+   - stylelint                   ^16.13.2  →  ^16.14.1
    - stylelint-prettier            ^5.0.2  →    ^5.0.3
 
 
@@ -7317,7 +7325,7 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
    - rollup                       ^4.21.1  →  ^4.32.0
    - rollup-plugin-banner2         ^1.3.0  →   ^1.3.1
    - typescript                    ^5.5.4  →   ^5.7.3
-   - typescript-eslint             ^8.3.0  →  ^8.21.0
+   - typescript-eslint             ^8.3.0  →  ^8.22.0
 
 2. ESLint issues:
    - MMM-RAIN-MAP.js: Line 28, Column 17081: Expected to return a value in method 'get'. (rule: getter-return)
@@ -8134,6 +8142,17 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
 4. Found directory `node_modules`. This shouldn't be uploaded. Add `node_modules/`to `.gitignore`.
 5. Warning: No LICENSE file.
 6. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
+
+### [MMM-SimplePIR by ryanjblajda](https://github.com/ryanjblajda/MMM-SimplePIR)
+
+1. `package.json` issue: No description
+2. `package.json` issue: No repository field.
+3. `package.json` issue: No license field.
+4. There are no keywords in 'package.json'. We would use them as tags on the module list page.
+5. Recommendation: The README seems not to have an update instruction (the word 'update' is missing). Please add one.
+6. Recommendation: The README seems not to have an install instruction (the words 'install' or 'installation' are missing). Please add one.
+7. Warning: No LICENSE file.
+8. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
 
 ### [MMM-SimpleText by SaltyRiver](https://github.com/SaltyRiver/MMM-SimpleText)
 

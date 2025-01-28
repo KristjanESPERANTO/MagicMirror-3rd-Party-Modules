@@ -5714,7 +5714,7 @@
     ],
     "image": "doc-screenshot-alerts.jpg",
     "defaultSortWeight": 4,
-    "lastCommit": "2024-03-04T09:53:07+01:00"
+    "lastCommit": "2025-01-28T04:37:15+01:00"
   },
   {
     "name": "MMM-GameOfLife",
@@ -6888,21 +6888,6 @@
   {
     "name": "MMM-homeassistant-sensors",
     "category": "Utility / IoT / 3rd Party / Integration",
-    "url": "https://github.com/ledsi/MMM-homeassistant-sensors",
-    "id": "ledsi/MMM-homeassistant-sensors",
-    "maintainer": "ledsi",
-    "maintainerURL": "",
-    "description": "Display information from Home Assistant using the home assistant REST API.",
-    "issues": true,
-    "stars": 0,
-    "hasGithubIssues": false,
-    "license": "MIT",
-    "defaultSortWeight": 7,
-    "lastCommit": "2024-06-30T09:48:34+02:00"
-  },
-  {
-    "name": "MMM-homeassistant-sensors",
-    "category": "Utility / IoT / 3rd Party / Integration",
     "url": "https://github.com/Snille/MMM-homeassistant-sensors",
     "id": "Snille/MMM-homeassistant-sensors",
     "maintainer": "Snille",
@@ -6918,6 +6903,21 @@
     "image": ".github-screen01-advanced.jpg",
     "defaultSortWeight": 5,
     "lastCommit": "2023-03-21T13:52:46+01:00"
+  },
+  {
+    "name": "MMM-homeassistant-sensors",
+    "category": "Utility / IoT / 3rd Party / Integration",
+    "url": "https://github.com/ledsi/MMM-homeassistant-sensors",
+    "id": "ledsi/MMM-homeassistant-sensors",
+    "maintainer": "ledsi",
+    "maintainerURL": "",
+    "description": "Display information from Home Assistant using the home assistant REST API.",
+    "issues": true,
+    "stars": 0,
+    "hasGithubIssues": false,
+    "license": "MIT",
+    "defaultSortWeight": 7,
+    "lastCommit": "2024-06-30T09:48:34+02:00"
   },
   {
     "name": "MMM-HomeAssistant-Touch",
@@ -11644,7 +11644,7 @@
     ],
     "image": ".github-preview.bubbles.jpg",
     "defaultSortWeight": 0,
-    "lastCommit": "2025-01-26T08:55:21+00:00"
+    "lastCommit": "2025-01-27T17:06:29+00:00"
   },
   {
     "name": "MMM-Netatmo-Presence",
@@ -11873,18 +11873,18 @@
   {
     "name": "MMM-NextCloud-Tasks",
     "category": "Utility / IoT / 3rd Party / Integration",
-    "url": "https://github.com/starlingfire/MMM-NextCloud-Tasks",
-    "id": "starlingfire/MMM-NextCloud-Tasks",
-    "maintainer": "starlingfire",
+    "url": "https://github.com/Coernel82/MMM-NextCloud-Tasks",
+    "id": "Coernel82/MMM-NextCloud-Tasks",
+    "maintainer": "Coernel82",
     "maintainerURL": "",
-    "description": "Displays ToDo list(s) from NextCloud Tasks app.",
+    "description": "Displays ToDo list(s) from NextCloud Tasks app. Task can be toggled and sent back to the server, styling options and more filter options.",
     "issues": true,
-    "stars": 2,
+    "stars": 0,
     "hasGithubIssues": false,
     "license": "MIT",
     "image": "assets-demo_screenshot.jpg",
     "defaultSortWeight": 10,
-    "lastCommit": "2022-12-19T10:59:57-05:00"
+    "lastCommit": "2025-01-27T09:11:00+01:00"
   },
   {
     "name": "MMM-NextEvent",
@@ -16145,6 +16145,19 @@
     "lastCommit": "2024-05-31T09:18:19+09:00"
   },
   {
+    "name": "MMM-SimplePIR",
+    "category": "Outdated Modules",
+    "url": "https://github.com/ryanjblajda/MMM-SimplePIR",
+    "id": "ryanjblajda/MMM-SimplePIR",
+    "maintainer": "ryanjblajda",
+    "maintainerURL": "",
+    "description": "A very simple PIR motion sensor module",
+    "issues": true,
+    "stars": 0,
+    "defaultSortWeight": 7,
+    "lastCommit": "2025-01-27T20:08:58-05:00"
+  },
+  {
     "name": "MMM-SimpleText",
     "category": "Entertainment / Misc",
     "url": "https://github.com/SaltyRiver/MMM-SimpleText",
@@ -19405,7 +19418,7 @@
     "maintainerURL": "https://github.com/fruestueck",
     "description": "Display clothing depending on the weather forecast and your personal preferences.",
     "issues": true,
-    "stars": 38,
+    "stars": 39,
     "defaultSortWeight": 8,
     "lastCommit": "2021-02-19T18:37:58+01:00"
   },
@@ -19737,7 +19750,7 @@
     "maintainerURL": "",
     "description": "Displays WiFi password and QRCode.",
     "issues": true,
-    "stars": 107,
+    "stars": 108,
     "license": "MIT",
     "image": "mm.jpg",
     "defaultSortWeight": 3,

@@ -6824,23 +6824,6 @@
   {
     "name": "MMM-homeassistant-sensors",
     "category": "Utility / IoT / 3rd Party / Integration",
-    "url": "https://github.com/ledsi/MMM-homeassistant-sensors",
-    "id": "ledsi/MMM-homeassistant-sensors",
-    "maintainer": "ledsi",
-    "maintainerURL": "",
-    "description": "Display information from Home Assistant using the home assistant REST API.",
-    "issues": [
-      "There is no `package.json`. We need this file to gather information about the module for the module list page.",
-      "Issues are not enabled in the GitHub repository. So users cannot report bugs. Please enable issues in your repo.",
-      "No image found."
-    ],
-    "stars": 0,
-    "hasGithubIssues": false,
-    "license": "MIT"
-  },
-  {
-    "name": "MMM-homeassistant-sensors",
-    "category": "Utility / IoT / 3rd Party / Integration",
     "url": "https://github.com/Snille/MMM-homeassistant-sensors",
     "id": "Snille/MMM-homeassistant-sensors",
     "maintainer": "Snille",
@@ -6854,6 +6837,23 @@
       "ha"
     ],
     "image": ".github-screen01-advanced.jpg"
+  },
+  {
+    "name": "MMM-homeassistant-sensors",
+    "category": "Utility / IoT / 3rd Party / Integration",
+    "url": "https://github.com/ledsi/MMM-homeassistant-sensors",
+    "id": "ledsi/MMM-homeassistant-sensors",
+    "maintainer": "ledsi",
+    "maintainerURL": "",
+    "description": "Display information from Home Assistant using the home assistant REST API.",
+    "issues": [
+      "There is no `package.json`. We need this file to gather information about the module for the module list page.",
+      "Issues are not enabled in the GitHub repository. So users cannot report bugs. Please enable issues in your repo.",
+      "No image found."
+    ],
+    "stars": 0,
+    "hasGithubIssues": false,
+    "license": "MIT"
   },
   {
     "name": "MMM-HomeAssistant-Touch",
@@ -11755,17 +11755,17 @@
   {
     "name": "MMM-NextCloud-Tasks",
     "category": "Utility / IoT / 3rd Party / Integration",
-    "url": "https://github.com/starlingfire/MMM-NextCloud-Tasks",
-    "id": "starlingfire/MMM-NextCloud-Tasks",
-    "maintainer": "starlingfire",
+    "url": "https://github.com/Coernel82/MMM-NextCloud-Tasks",
+    "id": "Coernel82/MMM-NextCloud-Tasks",
+    "maintainer": "Coernel82",
     "maintainerURL": "",
-    "description": "Displays ToDo list(s) from NextCloud Tasks app.",
+    "description": "Displays ToDo list(s) from NextCloud Tasks app. Task can be toggled and sent back to the server, styling options and more filter options.",
     "issues": [
       "`package.json` issue: No repository field.",
       "There are no keywords in 'package.json'. We would use them as tags on the module list page.",
       "Issues are not enabled in the GitHub repository. So users cannot report bugs. Please enable issues in your repo."
     ],
-    "stars": 2,
+    "stars": 0,
     "hasGithubIssues": false,
     "license": "MIT",
     "image": "assets-demo_screenshot.jpg"
@@ -15968,6 +15968,22 @@
     "image": "sc01.jpg"
   },
   {
+    "name": "MMM-SimplePIR",
+    "category": "Outdated Modules",
+    "url": "https://github.com/ryanjblajda/MMM-SimplePIR",
+    "id": "ryanjblajda/MMM-SimplePIR",
+    "maintainer": "ryanjblajda",
+    "maintainerURL": "",
+    "description": "A very simple PIR motion sensor module",
+    "issues": [
+      "`package.json` issue: No description",
+      "`package.json` issue: No repository field.",
+      "`package.json` issue: No license field.",
+      "There are no keywords in 'package.json'. We would use them as tags on the module list page."
+    ],
+    "stars": 0
+  },
+  {
     "name": "MMM-SimpleText",
     "category": "Entertainment / Misc",
     "url": "https://github.com/SaltyRiver/MMM-SimpleText",
@@ -19189,7 +19205,7 @@
     "issues": [
       "There is no `package.json`. We need this file to gather information about the module for the module list page."
     ],
-    "stars": 38
+    "stars": 39
   },
   {
     "name": "MMM-WeatherEffects",
@@ -19510,7 +19526,7 @@
     "issues": [
       "There is no `package.json`. We need this file to gather information about the module for the module list page."
     ],
-    "stars": 107,
+    "stars": 108,
     "license": "MIT",
     "image": "mm.jpg"
   },

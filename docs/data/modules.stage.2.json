@@ -4949,6 +4949,18 @@
   {
     "name": "MMM-homeassistant-sensors",
     "category": "Utility / IoT / 3rd Party / Integration",
+    "url": "https://github.com/Snille/MMM-homeassistant-sensors",
+    "id": "Snille/MMM-homeassistant-sensors",
+    "maintainer": "Snille",
+    "maintainerURL": "https://github.com/Snille",
+    "description": "Fork of leinich module. Many new features added. Display information from Home Assistant using the home assistant REST API.",
+    "issues": [],
+    "stars": 63,
+    "license": "MIT"
+  },
+  {
+    "name": "MMM-homeassistant-sensors",
+    "category": "Utility / IoT / 3rd Party / Integration",
     "url": "https://github.com/ledsi/MMM-homeassistant-sensors",
     "id": "ledsi/MMM-homeassistant-sensors",
     "maintainer": "ledsi",
@@ -4957,18 +4969,6 @@
     "issues": [],
     "stars": 0,
     "hasGithubIssues": false,
-    "license": "MIT"
-  },
-  {
-    "name": "MMM-homeassistant-sensors",
-    "category": "Utility / IoT / 3rd Party / Integration",
-    "url": "https://github.com/Snille/MMM-homeassistant-sensors",
-    "id": "Snille/MMM-homeassistant-sensors",
-    "maintainer": "Snille",
-    "maintainerURL": "https://github.com/Snille",
-    "description": "Fork of leinich module. Many new features added. Display information from Home Assistant using the home assistant REST API.",
-    "issues": [],
-    "stars": 63,
     "license": "MIT"
   },
   {
@@ -8474,13 +8474,13 @@
   {
     "name": "MMM-NextCloud-Tasks",
     "category": "Utility / IoT / 3rd Party / Integration",
-    "url": "https://github.com/starlingfire/MMM-NextCloud-Tasks",
-    "id": "starlingfire/MMM-NextCloud-Tasks",
-    "maintainer": "starlingfire",
+    "url": "https://github.com/Coernel82/MMM-NextCloud-Tasks",
+    "id": "Coernel82/MMM-NextCloud-Tasks",
+    "maintainer": "Coernel82",
     "maintainerURL": "",
-    "description": "Displays ToDo list(s) from NextCloud Tasks app.",
+    "description": "Displays ToDo list(s) from NextCloud Tasks app. Task can be toggled and sent back to the server, styling options and more filter options.",
     "issues": [],
-    "stars": 2,
+    "stars": 0,
     "hasGithubIssues": false,
     "license": "MIT"
   },
@@ -11534,6 +11534,17 @@
     "stars": 2
   },
   {
+    "name": "MMM-SimplePIR",
+    "category": "Outdated Modules",
+    "url": "https://github.com/ryanjblajda/MMM-SimplePIR",
+    "id": "ryanjblajda/MMM-SimplePIR",
+    "maintainer": "ryanjblajda",
+    "maintainerURL": "",
+    "description": "A very simple PIR motion sensor module",
+    "issues": [],
+    "stars": 0
+  },
+  {
     "name": "MMM-SimpleText",
     "category": "Entertainment / Misc",
     "url": "https://github.com/SaltyRiver/MMM-SimpleText",
@@ -13845,7 +13856,7 @@
     "maintainerURL": "https://github.com/fruestueck",
     "description": "Display clothing depending on the weather forecast and your personal preferences.",
     "issues": [],
-    "stars": 38
+    "stars": 39
   },
   {
     "name": "MMM-WeatherEffects",
@@ -14082,7 +14093,7 @@
     "maintainerURL": "",
     "description": "Displays WiFi password and QRCode.",
     "issues": [],
-    "stars": 107,
+    "stars": 108,
     "license": "MIT"
   },
   {
