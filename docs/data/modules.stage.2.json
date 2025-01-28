@@ -11137,7 +11137,7 @@
     "maintainerURL": "",
     "description": "Cast a video from your phone to your mirror (currently can only cast YouTube).",
     "issues": [],
-    "stars": 167,
+    "stars": 169,
     "license": "MIT"
   },
   {
@@ -11535,7 +11535,7 @@
   },
   {
     "name": "MMM-SimplePIR",
-    "category": "Outdated Modules",
+    "category": "Utility / IoT / 3rd Party / Integration",
     "url": "https://github.com/ryanjblajda/MMM-SimplePIR",
     "id": "ryanjblajda/MMM-SimplePIR",
     "maintainer": "ryanjblajda",
@@ -12607,7 +12607,7 @@
     "maintainerURL": "",
     "description": "A template for creating new MagicMirror² modules.",
     "issues": [],
-    "stars": 2,
+    "stars": 3,
     "license": "MIT"
   },
   {
@@ -14153,7 +14153,7 @@
     "maintainerURL": "",
     "description": "Get the word of the day, its definition, and origin.",
     "issues": [],
-    "stars": 18
+    "stars": 19
   },
   {
     "name": "MMM-WordOfTheDay",
@@ -14164,7 +14164,7 @@
     "maintainerURL": "",
     "description": "Displays the Merriam-Webster word of the day along with its part of speech, pronunciation, definition, and an example.",
     "issues": [],
-    "stars": 7,
+    "stars": 9,
     "license": "MIT"
   },
   {

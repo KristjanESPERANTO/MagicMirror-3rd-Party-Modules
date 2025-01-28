@@ -1,6 +1,6 @@
 # Result of the module analysis
 
-Last update: 2025-01-28T05:46:57+01:00
+Last update: 2025-01-28T17:39:33+01:00
 
 ## Statistics
 
@@ -9,7 +9,7 @@ Last update: 2025-01-28T05:46:57+01:00
 | modules analyzed     |   1214   |
 | maintainer           |    655   |
 | modules with issues  |   1214   |
-| issues               |   6528   |
+| issues               |   6527   |
 | modules at github    |   1090   |
 | modules at gitlab    |     11   |
 | modules at bitbucket |      1   |
@@ -746,7 +746,7 @@ Last update: 2025-01-28T05:46:57+01:00
    - eslint                     ^9.17.0  →   ^9.19.0
    - eslint-config-prettier      ^9.1.0  →   ^10.0.1
    - eslint-plugin-prettier      ^5.2.1  →    ^5.2.3
-   - rollup                     ^4.29.1  →   ^4.32.0
+   - rollup                     ^4.29.1  →   ^4.32.1
    - typescript                  ^5.7.2  →    ^5.7.3
    - typescript-eslint          ^8.18.2  →   ^8.22.0
 
@@ -911,13 +911,14 @@ Last update: 2025-01-28T05:46:57+01:00
 
 ### [MMM-CalendarExt2 by MMM-CalendarExt2](https://github.com/MMM-CalendarExt2/MMM-CalendarExt2)
 
-1. Information: There are updates for 9 dependencie(s):
+1. Information: There are updates for 10 dependencie(s):
    - @eslint/js                  ^9.16.0  →   ^9.19.0
    - @stylistic/eslint-plugin    ^2.11.0  →    ^3.0.0
    - eslint                      ^9.16.0  →   ^9.19.0
    - eslint-plugin-jsonc         ^2.18.2  →   ^2.19.1
    - globals                    ^15.13.0  →  ^15.14.0
    - markdownlint-cli2           ^0.15.0  →   ^0.17.2
+   - moment-timezone             ^0.5.46  →   ^0.5.47
    - stylelint                  ^16.11.0  →  ^16.14.1
    - stylelint-config-standard   ^36.0.1  →   ^37.0.0
    - stylelint-prettier           ^5.0.2  →    ^5.0.3
@@ -1038,11 +1039,12 @@ Last update: 2025-01-28T05:46:57+01:00
 
 ### [MMM-Canteen by KristjanESPERANTO](https://github.com/KristjanESPERANTO/MMM-Canteen)
 
-1. Information: There are updates for 9 dependencie(s):
+1. Information: There are updates for 10 dependencie(s):
    - @eslint/js                 ^9.18.0  →   ^9.19.0
    - @eslint/json                ^0.9.1  →   ^0.10.0
    - @eslint/markdown            ^6.2.1  →    ^6.2.2
    - @stylistic/eslint-plugin   ^2.13.0  →    ^3.0.0
+   - cspell                     ^8.17.2  →   ^8.17.3
    - eslint                     ^9.18.0  →   ^9.19.0
    - lint-staged                ^15.4.1  →   ^15.4.3
    - markdownlint-cli           ^0.43.0  →   ^0.44.0
@@ -1076,7 +1078,7 @@ Last update: 2025-01-28T05:46:57+01:00
 1. Information: There are updates for 9 dependencie(s):
    - @eslint/js                  ^9.16.0  →   ^9.19.0
    - @stylistic/eslint-plugin    ^2.12.0  →    ^3.0.0
-   - cspell                      ^8.16.1  →   ^8.17.2
+   - cspell                      ^8.16.1  →   ^8.17.3
    - eslint                      ^9.16.0  →   ^9.19.0
    - globals                    ^15.13.0  →  ^15.14.0
    - markdownlint-cli            ^0.43.0  →   ^0.44.0
@@ -1943,7 +1945,7 @@ Last update: 2025-01-28T05:46:57+01:00
 1. Information: There are updates for 10 dependencie(s):
    - @eslint/js                  ^9.17.0  →   ^9.19.0
    - @stylistic/eslint-plugin    ^2.12.1  →    ^3.0.0
-   - cspell                      ^8.17.1  →   ^8.17.2
+   - cspell                      ^8.17.1  →   ^8.17.3
    - eslint                      ^9.17.0  →   ^9.19.0
    - globals                    ^15.13.0  →  ^15.14.0
    - lint-staged                ^15.2.11  →   ^15.4.3
@@ -2575,11 +2577,12 @@ deprecated: no longer maintained, switch to modern iconify-icon web component
 
 ### [MMM-Forum by KristjanESPERANTO](https://github.com/KristjanESPERANTO/MMM-Forum)
 
-1. Information: There are updates for 9 dependencie(s):
+1. Information: There are updates for 10 dependencie(s):
    - @eslint/js                 ^9.18.0  →   ^9.19.0
    - @eslint/json                ^0.9.1  →   ^0.10.0
    - @eslint/markdown            ^6.2.1  →    ^6.2.2
    - @stylistic/eslint-plugin   ^2.13.0  →    ^3.0.0
+   - cspell                     ^8.17.2  →   ^8.17.3
    - eslint                     ^9.18.0  →   ^9.19.0
    - lint-staged                ^15.4.1  →   ^15.4.3
    - markdownlint-cli           ^0.43.0  →   ^0.44.0
@@ -2683,9 +2686,6 @@ deprecated: no longer maintained, switch to modern iconify-icon web component
 1. Recommendation: Found `"needle"` in file `node_helper.js`: Replace it with built-in fetch.
 2. Recommendation: Found `"needle"` in file `package.json`: Replace it with built-in fetch.
 3. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
-4. Information: There are updates for 1 dependencie(s):
-   - @xmldom/xmldom  ^0.9.5  →  ^0.9.7
-
 
 ### [MMM-FTP-image by jboucly](https://github.com/jboucly/MMM-FTP-image)
 
@@ -3890,9 +3890,10 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
 
 ### [MMM-ISS-Live by KristjanESPERANTO](https://github.com/KristjanESPERANTO/MMM-ISS-Live)
 
-1. Information: There are updates for 4 dependencie(s):
+1. Information: There are updates for 5 dependencie(s):
    - @eslint/js                ^9.18.0  →  ^9.19.0
    - @stylistic/eslint-plugin  ^2.13.0  →   ^3.0.0
+   - cspell                    ^8.17.2  →  ^8.17.3
    - eslint                    ^9.18.0  →  ^9.19.0
    - markdownlint-cli          ^0.43.0  →  ^0.44.0
 
@@ -3953,7 +3954,7 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
    - eslint-config-prettier             ^9.1.0  →  ^10.0.1
    - eslint-plugin-prettier             ^5.1.3  →   ^5.2.3
    - prettier                           ^3.2.4  →   ^3.4.2
-   - rollup                             ^4.9.6  →  ^4.32.0
+   - rollup                             ^4.9.6  →  ^4.32.1
    - rollup-plugin-banner2              ^1.2.2  →   ^1.3.1
    - typescript                         ^5.3.3  →   ^5.7.3
    - yahoo-finance2                    ^2.11.3  →  ^2.13.3
@@ -5499,7 +5500,7 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
 3. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
 4. Information: There are updates for 2 dependencie(s):
    - moment           ^2.24.0  →  ^2.30.1
-   - moment-timezone  ^0.5.21  →  ^0.5.46
+   - moment-timezone  ^0.5.21  →  ^0.5.47
 
 
 ### [MMM-MyGarbage by htilburgs](https://github.com/htilburgs/MMM-MyGarbage)
@@ -5543,7 +5544,7 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
 2. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
 3. Information: There are updates for 2 dependencie(s):
    - moment           ^2.24.0  →  ^2.30.1
-   - moment-timezone  ^0.5.21  →  ^0.5.46
+   - moment-timezone  ^0.5.21  →  ^0.5.47
 
 
 ### [MMM-MyScoreboard by dathbe](https://github.com/dathbe/MMM-MyScoreboard)
@@ -6006,7 +6007,7 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
    - @typescript-eslint/eslint-plugin  ^6.20.0  →  ^8.22.0
    - eslint                            ^8.56.0  →  ^9.19.0
    - prettier                           ^3.2.5  →   ^3.4.2
-   - rollup                             ^4.9.6  →  ^4.32.0
+   - rollup                             ^4.9.6  →  ^4.32.1
    - rollup-plugin-banner2              ^1.2.2  →   ^1.3.1
    - typescript                         ^5.3.3  →   ^5.7.3
 
@@ -6230,7 +6231,7 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
    - chalk                    ^2.4.2  →   ^5.4.1
    - debounce                 ^1.2.0  →   ^2.2.0
    - prompts                  ^2.1.0  →   ^2.4.2
-   - rollup                  ^1.17.0  →  ^4.32.0
+   - rollup                  ^1.17.0  →  ^4.32.1
    - rollup-plugin-banner     ^0.2.0  →   ^0.2.1
    - rollup-plugin-commonjs  ^10.0.1  →  ^10.1.0
    - tslib                   ^1.10.0  →   ^2.8.1
@@ -6281,9 +6282,10 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
 
 ### [MMM-OneCallWeather by KristjanESPERANTO](https://github.com/KristjanESPERANTO/MMM-OneCallWeather)
 
-1. Information: There are updates for 4 dependencie(s):
+1. Information: There are updates for 5 dependencie(s):
    - @eslint/js                ^9.18.0  →  ^9.19.0
    - @stylistic/eslint-plugin  ^2.13.0  →   ^3.0.0
+   - cspell                    ^8.17.2  →  ^8.17.3
    - eslint                    ^9.18.0  →  ^9.19.0
    - markdownlint-cli          ^0.43.0  →  ^0.44.0
 
@@ -7183,11 +7185,12 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
 
 ### [MMM-PublicTransportHafas by KristjanESPERANTO](https://github.com/KristjanESPERANTO/MMM-PublicTransportHafas)
 
-1. Information: There are updates for 10 dependencie(s):
+1. Information: There are updates for 11 dependencie(s):
    - @eslint/js                   ^9.18.0  →   ^9.19.0
    - @eslint/json                  ^0.9.1  →   ^0.10.0
    - @eslint/markdown              ^6.2.1  →    ^6.2.2
    - @stylistic/eslint-plugin     ^2.13.0  →    ^3.0.0
+   - cspell                       ^8.17.2  →   ^8.17.3
    - eslint                       ^9.18.0  →   ^9.19.0
    - eslint-plugin-package-json   ^0.20.1  →   ^0.21.1
    - lint-staged                  ^15.4.1  →   ^15.4.3
@@ -7322,7 +7325,7 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
    - @rollup/plugin-typescript    ^11.1.6  →  ^12.1.2
    - eslint                        ^9.9.1  →  ^9.19.0
    - prettier                      ^3.3.3  →   ^3.4.2
-   - rollup                       ^4.21.1  →  ^4.32.0
+   - rollup                       ^4.21.1  →  ^4.32.1
    - rollup-plugin-banner2         ^1.3.0  →   ^1.3.1
    - typescript                    ^5.5.4  →   ^5.7.3
    - typescript-eslint             ^8.3.0  →  ^8.22.0
@@ -9923,7 +9926,7 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
 1. Information: There are updates for 6 dependencie(s):
    - @eslint/js                 ^9.16.0  →   ^9.19.0
    - @stylistic/eslint-plugin   ^2.12.0  →    ^3.0.0
-   - cspell                     ^8.16.1  →   ^8.17.2
+   - cspell                     ^8.16.1  →   ^8.17.3
    - eslint                     ^9.16.0  →   ^9.19.0
    - globals                   ^15.13.0  →  ^15.14.0
    - markdownlint-cli           ^0.43.0  →   ^0.44.0
@@ -10097,7 +10100,7 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
 2. Warning: No LICENSE file.
 3. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
 4. Information: There are updates for 1 dependencie(s):
-   - moment-timezone  ^0.5.45  →  ^0.5.46
+   - moment-timezone  ^0.5.45  →  ^0.5.47
 
 
 ### [MMM-WorldTides by yawnsde](https://github.com/yawnsde/MMM-WorldTides)

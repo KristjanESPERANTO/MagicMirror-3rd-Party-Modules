@@ -15411,7 +15411,7 @@
     "maintainerURL": "",
     "description": "Cast a video from your phone to your mirror (currently can only cast YouTube).",
     "issues": [],
-    "stars": 167,
+    "stars": 169,
     "license": "MIT",
     "tags": [
       "chromecast",
@@ -15969,7 +15969,7 @@
   },
   {
     "name": "MMM-SimplePIR",
-    "category": "Outdated Modules",
+    "category": "Utility / IoT / 3rd Party / Integration",
     "url": "https://github.com/ryanjblajda/MMM-SimplePIR",
     "id": "ryanjblajda/MMM-SimplePIR",
     "maintainer": "ryanjblajda",
@@ -17457,7 +17457,7 @@
       "`package.json` issue: bugs.url field must be a string url. Deleted.",
       "`package.json` issue: Normalized value of bugs field is an empty object. Deleted."
     ],
-    "stars": 2,
+    "stars": 3,
     "license": "MIT",
     "tags": [
       "template"
@@ -19605,7 +19605,7 @@
     "issues": [
       "There is no `package.json`. We need this file to gather information about the module for the module list page."
     ],
-    "stars": 18
+    "stars": 19
   },
   {
     "name": "MMM-WordOfTheDay",
@@ -19616,7 +19616,7 @@
     "maintainerURL": "",
     "description": "Displays the Merriam-Webster word of the day along with its part of speech, pronunciation, definition, and an example.",
     "issues": [],
-    "stars": 7,
+    "stars": 9,
     "license": "MIT",
     "tags": [
       "word",

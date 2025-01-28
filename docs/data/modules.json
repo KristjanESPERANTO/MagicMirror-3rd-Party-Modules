@@ -5640,8 +5640,8 @@
       "music"
     ],
     "image": "example_dab.jpg",
-    "defaultSortWeight": 3,
-    "lastCommit": "2024-12-05T22:30:19+01:00"
+    "defaultSortWeight": 2,
+    "lastCommit": "2025-01-28T09:49:52+01:00"
   },
   {
     "name": "MMM-FTP-image",
@@ -15572,7 +15572,7 @@
     "maintainerURL": "",
     "description": "Cast a video from your phone to your mirror (currently can only cast YouTube).",
     "issues": true,
-    "stars": 167,
+    "stars": 169,
     "license": "MIT",
     "tags": [
       "chromecast",
@@ -16146,7 +16146,7 @@
   },
   {
     "name": "MMM-SimplePIR",
-    "category": "Outdated Modules",
+    "category": "Utility / IoT / 3rd Party / Integration",
     "url": "https://github.com/ryanjblajda/MMM-SimplePIR",
     "id": "ryanjblajda/MMM-SimplePIR",
     "maintainer": "ryanjblajda",
@@ -17654,7 +17654,7 @@
     "maintainerURL": "",
     "description": "A template for creating new MagicMirror\u00b2 modules.",
     "issues": true,
-    "stars": 2,
+    "stars": 3,
     "license": "MIT",
     "tags": [
       "template"
@@ -19830,7 +19830,7 @@
     "maintainerURL": "",
     "description": "Get the word of the day, its definition, and origin.",
     "issues": true,
-    "stars": 18,
+    "stars": 19,
     "defaultSortWeight": 8,
     "lastCommit": "2019-02-10T19:35:19+00:00"
   },
@@ -19843,7 +19843,7 @@
     "maintainerURL": "",
     "description": "Displays the Merriam-Webster word of the day along with its part of speech, pronunciation, definition, and an example.",
     "issues": true,
-    "stars": 7,
+    "stars": 9,
     "license": "MIT",
     "tags": [
       "word",
