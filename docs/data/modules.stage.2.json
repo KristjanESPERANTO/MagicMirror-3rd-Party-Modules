@@ -449,6 +449,18 @@
     "license": "MIT"
   },
   {
+    "name": "MMM-ApothekenNotdienst",
+    "category": "Health",
+    "url": "https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst",
+    "id": "KristjanESPERANTO/MMM-ApothekenNotdienst",
+    "maintainer": "KristjanESPERANTO",
+    "maintainerURL": "",
+    "description": "Display pharmacies that are on emergency duty in Germany.",
+    "issues": [],
+    "stars": 1,
+    "license": "ISC"
+  },
+  {
     "name": "MMM-AQI",
     "category": "Weather",
     "url": "https://github.com/ryck/MMM-AQI",
@@ -4104,7 +4116,7 @@
     "maintainerURL": "",
     "description": "Display gas station prices in the USA.",
     "issues": [],
-    "stars": 8
+    "stars": 7
   },
   {
     "name": "MMM-GasMonitor",
@@ -4931,7 +4943,7 @@
     "maintainerURL": "https://github.com/yourdawi",
     "description": "Display information out of HomeAssistant.",
     "issues": [],
-    "stars": 1,
+    "stars": 3,
     "license": "MIT"
   },
   {
@@ -11411,7 +11423,7 @@
     "maintainerURL": "https://github.com/mgarrix",
     "description": "Display data from Shelly EM sensor.",
     "issues": [],
-    "stars": 1,
+    "stars": 2,
     "license": "MIT"
   },
   {
@@ -11553,7 +11565,7 @@
     "maintainerURL": "",
     "description": "Simple and plain text module with some minor formatting options. Can also display content from text files with multiple lines.",
     "issues": [],
-    "stars": 7,
+    "stars": 8,
     "license": "MIT"
   },
   {
@@ -11577,7 +11589,7 @@
     "maintainerURL": "",
     "description": "Shows this week's school timetable from the Swedish school system Skola24.",
     "issues": [],
-    "stars": 3,
+    "stars": 4,
     "license": "MIT"
   },
   {
@@ -11589,7 +11601,7 @@
     "maintainerURL": "",
     "description": "Show school lunch menus in Sweden from skolmaten.se.",
     "issues": [],
-    "stars": 7,
+    "stars": 8,
     "license": "MIT"
   },
   {
@@ -11674,7 +11686,7 @@
     "maintainerURL": "",
     "description": "Use an external source for motion detection, like a web camera.",
     "issues": [],
-    "stars": 19
+    "stars": 18
   },
   {
     "name": "MMM-Slideshow",
@@ -11721,7 +11733,7 @@
     "maintainerURL": "https://github.com/AgP42",
     "description": "An iFrame module to display web content (including YouTube, IP cameras, etc.). Several rotating URL, autorefresh and remote control of the URL to display, Next/Prev/Play/Stop. <a target=\"_blank\" href=\"https://forum.magicmirror.builders/topic/9750/mmm-smartwebdisplay-display-web-contents-including-youtube-on-your-mm\">MMM-SmartWebDisplay forum</a>.",
     "issues": [],
-    "stars": 62
+    "stars": 64
   },
   {
     "name": "MMM-Snake",
@@ -13305,6 +13317,17 @@
     "maintainer": "bacherd",
     "maintainerURL": "",
     "description": "Displays UniFi hotspot vouchers.",
+    "issues": [],
+    "stars": 3
+  },
+  {
+    "name": "MMM-Universal-Pir",
+    "category": "Utility / IoT / 3rd Party / Integration",
+    "url": "https://gitlab.com/khassel/MMM-Universal-Pir",
+    "id": "khassel/MMM-Universal-Pir",
+    "maintainer": "khassel",
+    "maintainerURL": "https://gitlab.com/karsten13",
+    "description": "A simple PIR motion sensor module where you can specify your own commands for controlling gpio and screen.",
     "issues": [],
     "stars": 3
   },

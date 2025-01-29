@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "2025-01-28T16:30:13.888Z",
+  "lastUpdate": "2025-01-29T04:30:17.161Z",
   "modules": [
     {
       "name": "MMM-01ZM",
@@ -381,6 +381,16 @@
       "maintainer": "grenagit",
       "maintainerURL": "",
       "description": "Display the last Astronomy Picture Of the Day (APOD). This is an evolution of MMM-nasaastropic. Supports image and video and display title, description and copyright.",
+      "issues": []
+    },
+    {
+      "name": "MMM-ApothekenNotdienst",
+      "category": "Health",
+      "url": "https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst",
+      "id": "KristjanESPERANTO/MMM-ApothekenNotdienst",
+      "maintainer": "KristjanESPERANTO",
+      "maintainerURL": "",
+      "description": "Display pharmacies that are on emergency duty in Germany.",
       "issues": []
     },
     {
@@ -11244,6 +11254,16 @@
       "maintainer": "bacherd",
       "maintainerURL": "",
       "description": "Displays UniFi hotspot vouchers.",
+      "issues": []
+    },
+    {
+      "name": "MMM-Universal-Pir",
+      "category": "Utility / IoT / 3rd Party / Integration",
+      "url": "https://gitlab.com/khassel/MMM-Universal-Pir",
+      "id": "khassel/MMM-Universal-Pir",
+      "maintainer": "khassel",
+      "maintainerURL": "https://gitlab.com/karsten13",
+      "description": "A simple PIR motion sensor module where you can specify your own commands for controlling gpio and screen.",
       "issues": []
     },
     {

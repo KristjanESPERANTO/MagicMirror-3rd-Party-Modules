@@ -679,6 +679,25 @@
     "lastCommit": "2024-03-08T22:38:20+01:00"
   },
   {
+    "name": "MMM-ApothekenNotdienst",
+    "category": "Health",
+    "url": "https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst",
+    "id": "KristjanESPERANTO/MMM-ApothekenNotdienst",
+    "maintainer": "KristjanESPERANTO",
+    "maintainerURL": "",
+    "description": "Display pharmacies that are on emergency duty in Germany.",
+    "issues": true,
+    "stars": 1,
+    "license": "ISC",
+    "tags": [
+      "apotheke",
+      "notdienst"
+    ],
+    "image": "screenshot.jpg",
+    "defaultSortWeight": 1,
+    "lastCommit": "2025-01-29T01:32:44+01:00"
+  },
+  {
     "name": "MMM-AQI",
     "category": "Weather",
     "url": "https://github.com/ryck/MMM-AQI",
@@ -5756,7 +5775,7 @@
     "maintainerURL": "",
     "description": "Display gas station prices in the USA.",
     "issues": true,
-    "stars": 8,
+    "stars": 7,
     "license": "ISC",
     "image": "1.jpg",
     "defaultSortWeight": 8,
@@ -6865,7 +6884,7 @@
     "maintainerURL": "https://github.com/yourdawi",
     "description": "Display information out of HomeAssistant.",
     "issues": true,
-    "stars": 1,
+    "stars": 3,
     "license": "MIT",
     "defaultSortWeight": 6,
     "lastCommit": "2024-12-22T13:05:46+01:00"
@@ -9438,7 +9457,7 @@
     "issues": true,
     "stars": 1,
     "defaultSortWeight": 2,
-    "lastCommit": "2024-08-09T16:01:34-04:00"
+    "lastCommit": "2025-01-28T13:36:24-05:00"
   },
   {
     "name": "MMM-MealViewer",
@@ -15965,7 +15984,7 @@
     "maintainerURL": "https://github.com/mgarrix",
     "description": "Display data from Shelly EM sensor.",
     "issues": true,
-    "stars": 1,
+    "stars": 2,
     "license": "MIT",
     "tags": [
       "shelly",
@@ -16166,7 +16185,7 @@
     "maintainerURL": "",
     "description": "Simple and plain text module with some minor formatting options. Can also display content from text files with multiple lines.",
     "issues": true,
-    "stars": 7,
+    "stars": 8,
     "license": "MIT",
     "image": "demo_screenshot.jpg",
     "defaultSortWeight": 5,
@@ -16199,7 +16218,7 @@
     "maintainerURL": "",
     "description": "Shows this week's school timetable from the Swedish school system Skola24.",
     "issues": true,
-    "stars": 3,
+    "stars": 4,
     "license": "MIT",
     "tags": [
       "schema",
@@ -16219,7 +16238,7 @@
     "maintainerURL": "",
     "description": "Show school lunch menus in Sweden from skolmaten.se.",
     "issues": true,
-    "stars": 7,
+    "stars": 8,
     "license": "MIT",
     "tags": [
       "skolmat",
@@ -16343,7 +16362,7 @@
     "maintainerURL": "",
     "description": "Use an external source for motion detection, like a web camera.",
     "issues": true,
-    "stars": 19,
+    "stars": 18,
     "defaultSortWeight": 4,
     "lastCommit": "2024-02-02T22:25:01-07:00"
   },
@@ -16400,7 +16419,7 @@
     "maintainerURL": "https://github.com/AgP42",
     "description": "An iFrame module to display web content (including YouTube, IP cameras, etc.). Several rotating URL, autorefresh and remote control of the URL to display, Next/Prev/Play/Stop. <a target=\"_blank\" href=\"https://forum.magicmirror.builders/topic/9750/mmm-smartwebdisplay-display-web-contents-including-youtube-on-your-mm\">MMM-SmartWebDisplay forum</a>.",
     "issues": true,
-    "stars": 62,
+    "stars": 64,
     "tags": [
       "iframe",
       "notification"
@@ -18651,6 +18670,19 @@
     "image": "screenshot.jpg",
     "defaultSortWeight": 5,
     "lastCommit": "2022-02-20T15:43:40+01:00"
+  },
+  {
+    "name": "MMM-Universal-Pir",
+    "category": "Utility / IoT / 3rd Party / Integration",
+    "url": "https://gitlab.com/khassel/MMM-Universal-Pir",
+    "id": "khassel/MMM-Universal-Pir",
+    "maintainer": "khassel",
+    "maintainerURL": "https://gitlab.com/karsten13",
+    "description": "A simple PIR motion sensor module where you can specify your own commands for controlling gpio and screen.",
+    "issues": true,
+    "stars": 3,
+    "defaultSortWeight": 5,
+    "lastCommit": "2025-01-28T21:39:25+01:00"
   },
   {
     "name": "MMM-Unsplash",

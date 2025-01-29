@@ -1,17 +1,17 @@
 # Result of the module analysis
 
-Last update: 2025-01-28T17:39:33+01:00
+Last update: 2025-01-29T05:38:40+01:00
 
 ## Statistics
 
 |                      | number   |
 |:---------------------|:--------:|
-| modules analyzed     |   1214   |
+| modules analyzed     |   1216   |
 | maintainer           |    655   |
-| modules with issues  |   1214   |
-| issues               |   6527   |
-| modules at github    |   1090   |
-| modules at gitlab    |     11   |
+| modules with issues  |   1216   |
+| issues               |   6533   |
+| modules at github    |   1091   |
+| modules at gitlab    |     12   |
 | modules at bitbucket |      1   |
 
 ## Modules with issues
@@ -345,6 +345,10 @@ Last update: 2025-01-28T17:39:33+01:00
 ### [MMM-APOD by grenagit](https://github.com/grenagit/MMM-APOD)
 
 1. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
+
+### [MMM-ApothekenNotdienst by KristjanESPERANTO](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst)
+
+1. `package.json` issue: No repository field.
 
 ### [MMM-AQI by ryck](https://github.com/ryck/MMM-AQI)
 
@@ -7835,7 +7839,7 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
    - aws-cdk-lib                      ^2.0.0  →  ^2.177.0
    - constructs                      ^10.0.0  →   ^10.4.2
    - dotenv                          ^16.0.0  →   ^16.4.7
-   - inquirer                         ^8.2.4  →   ^12.3.2
+   - inquirer                         ^8.2.4  →   ^12.3.3
    - uuid                             ^9.0.0  →   ^11.0.5
 
 
@@ -9455,6 +9459,14 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
 2. Deprecated: Found `require("request")` in file `node_helper.js`: Replace it with built-in fetch.
 3. Typo: Found `Magic Mirror` in file `package.json`: Replace it with `MagicMirror²`.
 4. Warning: No LICENSE file.
+5. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
+
+### [MMM-Universal-Pir by khassel](https://gitlab.com/khassel/MMM-Universal-Pir)
+
+1. There is no `package.json`. We need this file to gather information about the module for the module list page.
+2. Typo: Found `Magic Mirror` in file `MMM-Universal-Pir.js`: Replace it with `MagicMirror²`.
+3. Recommendation: The README seems not to have an update instruction (the word 'update' is missing). Please add one.
+4. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
 5. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
 
 ### [MMM-Unsplash by parnic](https://github.com/parnic/MMM-Unsplash)

@@ -654,6 +654,25 @@
     "image": "MMM-APOD_screenshot.jpg"
   },
   {
+    "name": "MMM-ApothekenNotdienst",
+    "category": "Health",
+    "url": "https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst",
+    "id": "KristjanESPERANTO/MMM-ApothekenNotdienst",
+    "maintainer": "KristjanESPERANTO",
+    "maintainerURL": "",
+    "description": "Display pharmacies that are on emergency duty in Germany.",
+    "issues": [
+      "`package.json` issue: No repository field."
+    ],
+    "stars": 1,
+    "license": "ISC",
+    "tags": [
+      "apotheke",
+      "notdienst"
+    ],
+    "image": "screenshot.jpg"
+  },
+  {
     "name": "MMM-AQI",
     "category": "Weather",
     "url": "https://github.com/ryck/MMM-AQI",
@@ -5679,7 +5698,7 @@
     "issues": [
       "There are no keywords in 'package.json'. We would use them as tags on the module list page."
     ],
-    "stars": 8,
+    "stars": 7,
     "license": "ISC",
     "image": "1.jpg"
   },
@@ -6803,7 +6822,7 @@
       "There are no keywords in 'package.json'. We would use them as tags on the module list page.",
       "No image found."
     ],
-    "stars": 1,
+    "stars": 3,
     "license": "MIT"
   },
   {
@@ -15796,7 +15815,7 @@
     "issues": [
       "`package.json` issue: No repository field."
     ],
-    "stars": 1,
+    "stars": 2,
     "license": "MIT",
     "tags": [
       "shelly",
@@ -15994,7 +16013,7 @@
     "issues": [
       "There is no `package.json`. We need this file to gather information about the module for the module list page."
     ],
-    "stars": 7,
+    "stars": 8,
     "license": "MIT",
     "image": "demo_screenshot.jpg"
   },
@@ -16025,7 +16044,7 @@
     "issues": [
       "No image found."
     ],
-    "stars": 3,
+    "stars": 4,
     "license": "MIT",
     "tags": [
       "schema",
@@ -16043,7 +16062,7 @@
     "maintainerURL": "",
     "description": "Show school lunch menus in Sweden from skolmaten.se.",
     "issues": [],
-    "stars": 7,
+    "stars": 8,
     "license": "MIT",
     "tags": [
       "skolmat",
@@ -16166,7 +16185,7 @@
     "issues": [
       "There is no `package.json`. We need this file to gather information about the module for the module list page."
     ],
-    "stars": 19
+    "stars": 18
   },
   {
     "name": "MMM-Slideshow",
@@ -16223,7 +16242,7 @@
     "issues": [
       "No image found."
     ],
-    "stars": 62,
+    "stars": 64,
     "tags": [
       "iframe",
       "notification"
@@ -18434,6 +18453,19 @@
     ],
     "license": "MIT",
     "image": "screenshot.jpg"
+  },
+  {
+    "name": "MMM-Universal-Pir",
+    "category": "Utility / IoT / 3rd Party / Integration",
+    "url": "https://gitlab.com/khassel/MMM-Universal-Pir",
+    "id": "khassel/MMM-Universal-Pir",
+    "maintainer": "khassel",
+    "maintainerURL": "https://gitlab.com/karsten13",
+    "description": "A simple PIR motion sensor module where you can specify your own commands for controlling gpio and screen.",
+    "issues": [
+      "There is no `package.json`. We need this file to gather information about the module for the module list page."
+    ],
+    "stars": 3
   },
   {
     "name": "MMM-Unsplash",
