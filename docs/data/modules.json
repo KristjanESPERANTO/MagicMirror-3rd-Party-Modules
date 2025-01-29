@@ -6878,20 +6878,6 @@
   {
     "name": "MMM-HomeAssistant",
     "category": "Utility / IoT / 3rd Party / Integration",
-    "url": "https://github.com/yourdawi/MMM-HomeAssistant",
-    "id": "yourdawi/MMM-HomeAssistant",
-    "maintainer": "yourdawi",
-    "maintainerURL": "https://github.com/yourdawi",
-    "description": "Display information out of HomeAssistant.",
-    "issues": true,
-    "stars": 3,
-    "license": "MIT",
-    "defaultSortWeight": 6,
-    "lastCommit": "2024-12-22T13:05:46+01:00"
-  },
-  {
-    "name": "MMM-HomeAssistant",
-    "category": "Utility / IoT / 3rd Party / Integration",
     "url": "https://github.com/zuo000/MMM-HomeAssistant",
     "id": "zuo000/MMM-HomeAssistant",
     "maintainer": "zuo000",
@@ -6903,6 +6889,20 @@
     "image": "screenshot.jpg",
     "defaultSortWeight": 4,
     "lastCommit": "2020-04-08T18:54:01-07:00"
+  },
+  {
+    "name": "MMM-HomeAssistant",
+    "category": "Utility / IoT / 3rd Party / Integration",
+    "url": "https://github.com/yourdawi/MMM-HomeAssistant",
+    "id": "yourdawi/MMM-HomeAssistant",
+    "maintainer": "yourdawi",
+    "maintainerURL": "https://github.com/yourdawi",
+    "description": "Display information out of HomeAssistant.",
+    "issues": true,
+    "stars": 3,
+    "license": "MIT",
+    "defaultSortWeight": 6,
+    "lastCommit": "2024-12-22T13:05:46+01:00"
   },
   {
     "name": "MMM-homeassistant-sensors",
@@ -11903,7 +11903,7 @@
     "license": "MIT",
     "image": "assets-demo_screenshot.jpg",
     "defaultSortWeight": 10,
-    "lastCommit": "2025-01-27T09:11:00+01:00"
+    "lastCommit": "2025-01-29T10:53:51+01:00"
   },
   {
     "name": "MMM-NextEvent",
@@ -16491,7 +16491,7 @@
     "maintainerURL": "",
     "description": "More realistic snow plugin to improve your winter experience.",
     "issues": true,
-    "stars": 57,
+    "stars": 58,
     "defaultSortWeight": 5,
     "lastCommit": "2018-02-13T22:37:11+01:00"
   },
@@ -16504,7 +16504,7 @@
     "maintainerURL": "",
     "description": "Display standings from European Soccer (Football) leagues (optional voice-control).",
     "issues": true,
-    "stars": 32,
+    "stars": 33,
     "license": "MIT",
     "tags": [
       "soccer standings"
@@ -16754,7 +16754,7 @@
     "maintainerURL": "https://github.com/tbouron",
     "description": "Display playing tracks on your Sonos network.",
     "issues": true,
-    "stars": 16,
+    "stars": 17,
     "license": "Apache-2.0",
     "tags": [
       "sonos",
@@ -19638,7 +19638,7 @@
     ],
     "image": "git-normal_screenshot.jpg",
     "defaultSortWeight": 1,
-    "lastCommit": "2025-01-09T10:57:18+01:00"
+    "lastCommit": "2025-01-29T13:02:15+01:00"
   },
   {
     "name": "MMM-WeeklySchedule",

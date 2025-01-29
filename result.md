@@ -1,6 +1,6 @@
 # Result of the module analysis
 
-Last update: 2025-01-29T05:38:40+01:00
+Last update: 2025-01-29T17:39:17+01:00
 
 ## Statistics
 
@@ -9,7 +9,7 @@ Last update: 2025-01-29T05:38:40+01:00
 | modules analyzed     |   1216   |
 | maintainer           |    655   |
 | modules with issues  |   1216   |
-| issues               |   6533   |
+| issues               |   6534   |
 | modules at github    |   1091   |
 | modules at gitlab    |     12   |
 | modules at bitbucket |      1   |
@@ -103,7 +103,7 @@ Last update: 2025-01-29T05:38:40+01:00
 
 1. Information: There are updates for 4 dependencie(s):
    - @eslint/js                ^9.10.0  →   ^9.19.0
-   - @stylistic/eslint-plugin   ^2.8.0  →    ^3.0.0
+   - @stylistic/eslint-plugin   ^2.8.0  →    ^3.0.1
    - eslint                    ^9.10.0  →   ^9.19.0
    - globals                   ^15.9.0  →  ^15.14.0
 
@@ -349,6 +349,9 @@ Last update: 2025-01-29T05:38:40+01:00
 ### [MMM-ApothekenNotdienst by KristjanESPERANTO](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst)
 
 1. `package.json` issue: No repository field.
+2. Information: There are updates for 1 dependencie(s):
+   - @stylistic/eslint-plugin  ^3.0.0  →  ^3.0.1
+
 
 ### [MMM-AQI by ryck](https://github.com/ryck/MMM-AQI)
 
@@ -744,7 +747,7 @@ Last update: 2025-01-29T05:38:40+01:00
 ### [MMM-BoschSmartHome by jalibu](https://github.com/jalibu/MMM-BoschSmartHome)
 
 1. Information: There are updates for 9 dependencie(s):
-   - @stylistic/eslint-plugin   ^2.12.1  →    ^3.0.0
+   - @stylistic/eslint-plugin   ^2.12.1  →    ^3.0.1
    - @types/node               ^22.10.2  →  ^22.12.0
    - bosch-smart-home-bridge     ^1.6.0  →    ^1.7.3
    - eslint                     ^9.17.0  →   ^9.19.0
@@ -917,7 +920,7 @@ Last update: 2025-01-29T05:38:40+01:00
 
 1. Information: There are updates for 10 dependencie(s):
    - @eslint/js                  ^9.16.0  →   ^9.19.0
-   - @stylistic/eslint-plugin    ^2.11.0  →    ^3.0.0
+   - @stylistic/eslint-plugin    ^2.11.0  →    ^3.0.1
    - eslint                      ^9.16.0  →   ^9.19.0
    - eslint-plugin-jsonc         ^2.18.2  →   ^2.19.1
    - globals                    ^15.13.0  →  ^15.14.0
@@ -1047,7 +1050,7 @@ Last update: 2025-01-29T05:38:40+01:00
    - @eslint/js                 ^9.18.0  →   ^9.19.0
    - @eslint/json                ^0.9.1  →   ^0.10.0
    - @eslint/markdown            ^6.2.1  →    ^6.2.2
-   - @stylistic/eslint-plugin   ^2.13.0  →    ^3.0.0
+   - @stylistic/eslint-plugin   ^2.13.0  →    ^3.0.1
    - cspell                     ^8.17.2  →   ^8.17.3
    - eslint                     ^9.18.0  →   ^9.19.0
    - lint-staged                ^15.4.1  →   ^15.4.3
@@ -1081,7 +1084,7 @@ Last update: 2025-01-29T05:38:40+01:00
 
 1. Information: There are updates for 9 dependencie(s):
    - @eslint/js                  ^9.16.0  →   ^9.19.0
-   - @stylistic/eslint-plugin    ^2.12.0  →    ^3.0.0
+   - @stylistic/eslint-plugin    ^2.12.0  →    ^3.0.1
    - cspell                      ^8.16.1  →   ^8.17.3
    - eslint                      ^9.16.0  →   ^9.19.0
    - globals                    ^15.13.0  →  ^15.14.0
@@ -1264,7 +1267,7 @@ Last update: 2025-01-29T05:38:40+01:00
 
 1. Information: There are updates for 5 dependencie(s):
    - @eslint/js                 ^9.13.0  →   ^9.19.0
-   - @stylistic/eslint-plugin    ^2.9.0  →    ^3.0.0
+   - @stylistic/eslint-plugin    ^2.9.0  →    ^3.0.1
    - eslint                     ^9.13.0  →   ^9.19.0
    - globals                   ^15.11.0  →  ^15.14.0
    - prettier                    ^3.3.3  →    ^3.4.2
@@ -1948,7 +1951,7 @@ Last update: 2025-01-29T05:38:40+01:00
 
 1. Information: There are updates for 10 dependencie(s):
    - @eslint/js                  ^9.17.0  →   ^9.19.0
-   - @stylistic/eslint-plugin    ^2.12.1  →    ^3.0.0
+   - @stylistic/eslint-plugin    ^2.12.1  →    ^3.0.1
    - cspell                      ^8.17.1  →   ^8.17.3
    - eslint                      ^9.17.0  →   ^9.19.0
    - globals                    ^15.13.0  →  ^15.14.0
@@ -2024,7 +2027,7 @@ Last update: 2025-01-29T05:38:40+01:00
 
 1. Information: There are updates for 4 dependencie(s):
    - @eslint/js                ^9.10.0  →   ^9.19.0
-   - @stylistic/eslint-plugin   ^2.8.0  →    ^3.0.0
+   - @stylistic/eslint-plugin   ^2.8.0  →    ^3.0.1
    - eslint                    ^9.10.0  →   ^9.19.0
    - globals                   ^15.9.0  →  ^15.14.0
 
@@ -2078,7 +2081,7 @@ deprecated: no longer maintained, switch to modern iconify-icon web component
 
 1. Recommendation: Replace eslintrc by new flat config.
 2. Information: There are updates for 2 dependencie(s):
-   - @stylistic/eslint-plugin   ^1.5.4  →   ^3.0.0
+   - @stylistic/eslint-plugin   ^1.5.4  →   ^3.0.1
    - eslint                    ^8.56.0  →  ^9.19.0
 
 
@@ -2585,7 +2588,7 @@ deprecated: no longer maintained, switch to modern iconify-icon web component
    - @eslint/js                 ^9.18.0  →   ^9.19.0
    - @eslint/json                ^0.9.1  →   ^0.10.0
    - @eslint/markdown            ^6.2.1  →    ^6.2.2
-   - @stylistic/eslint-plugin   ^2.13.0  →    ^3.0.0
+   - @stylistic/eslint-plugin   ^2.13.0  →    ^3.0.1
    - cspell                     ^8.17.2  →   ^8.17.3
    - eslint                     ^9.18.0  →   ^9.19.0
    - lint-staged                ^15.4.1  →   ^15.4.3
@@ -3326,6 +3329,13 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
 5. Warning: No LICENSE file.
 6. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
 
+### [MMM-HomeAssistant by zuo000](https://github.com/zuo000/MMM-HomeAssistant)
+
+1. There is no `package.json`. We need this file to gather information about the module for the module list page.
+2. Outdated: Found `MichMich/MagicMirror` in file `README.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
+3. Deprecated: Found `require('request')` in file `node_helper.js`: Replace it with built-in fetch.
+4. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
+
 ### [MMM-HomeAssistant by yourdawi](https://github.com/yourdawi/MMM-HomeAssistant)
 
 1. `package.json` issue: No repository field.
@@ -3335,13 +3345,6 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
 5. Typo: Found `Magic Mirror` in file `package.json`: Replace it with `MagicMirror²`.
 6. Recommendation: Found `"node-fetch"` in file `package.json`: Replace it with built-in fetch.
 7. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
-
-### [MMM-HomeAssistant by zuo000](https://github.com/zuo000/MMM-HomeAssistant)
-
-1. There is no `package.json`. We need this file to gather information about the module for the module list page.
-2. Outdated: Found `MichMich/MagicMirror` in file `README.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
-3. Deprecated: Found `require('request')` in file `node_helper.js`: Replace it with built-in fetch.
-4. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
 
 ### [MMM-homeassistant-sensors by Snille](https://github.com/Snille/MMM-homeassistant-sensors)
 
@@ -3810,7 +3813,7 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
 2. Recommendation: Module name doesn't follow the recommended pattern (it doesn't start with `MMM-`). Consider renaming your module.
 3. Information: There are updates for 6 dependencie(s):
    - @eslint/js                 ^8.56.0  →   ^9.19.0
-   - @stylistic/eslint-plugin    ^1.5.3  →    ^3.0.0
+   - @stylistic/eslint-plugin    ^1.5.3  →    ^3.0.1
    - eslint                     ^8.56.0  →   ^9.19.0
    - eslint-plugin-import       ^2.29.1  →   ^2.31.0
    - globals                   ^13.24.0  →  ^15.14.0
@@ -3896,7 +3899,7 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
 
 1. Information: There are updates for 5 dependencie(s):
    - @eslint/js                ^9.18.0  →  ^9.19.0
-   - @stylistic/eslint-plugin  ^2.13.0  →   ^3.0.0
+   - @stylistic/eslint-plugin  ^2.13.0  →   ^3.0.1
    - cspell                    ^8.17.2  →  ^8.17.3
    - eslint                    ^9.18.0  →  ^9.19.0
    - markdownlint-cli          ^0.43.0  →  ^0.44.0
@@ -4078,7 +4081,7 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
 1. Information: There are updates for 9 dependencie(s):
    - @eslint/js                       ^8.57.0  →   ^9.19.0
    - @pilaton/eslint-config-markdown   ^1.2.0  →    ^1.3.0
-   - @stylistic/eslint-plugin          ^1.7.0  →    ^3.0.0
+   - @stylistic/eslint-plugin          ^1.7.0  →    ^3.0.1
    - eslint                           ^8.57.0  →   ^9.19.0
    - eslint-plugin-import             ^2.29.1  →   ^2.31.0
    - eslint-plugin-jsonc              ^2.15.0  →   ^2.19.1
@@ -4531,7 +4534,7 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
 
 1. Information: There are updates for 4 dependencie(s):
    - @eslint/js                ^8.57.0  →   ^9.19.0
-   - @stylistic/eslint-plugin   ^1.7.0  →    ^3.0.0
+   - @stylistic/eslint-plugin   ^1.7.0  →    ^3.0.1
    - eslint                    ^8.57.0  →   ^9.19.0
    - globals                   ^15.0.0  →  ^15.14.0
 
@@ -4663,7 +4666,7 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
    - @commitlint/cli                   ^19.3.0  →   ^19.6.1
    - @commitlint/config-conventional   ^19.5.0  →   ^19.6.0
    - @eslint/js                        ^8.57.0  →   ^9.19.0
-   - @stylistic/eslint-plugin           ^2.7.2  →    ^3.0.0
+   - @stylistic/eslint-plugin           ^2.7.2  →    ^3.0.1
    - eslint                            ^8.57.0  →   ^9.19.0
    - eslint-plugin-import              ^2.29.1  →   ^2.31.0
    - globals                           ^15.9.0  →  ^15.14.0
@@ -5981,7 +5984,7 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
 
 1. Information: There are updates for 9 dependencie(s):
    - @eslint/js                  ^9.12.0  →   ^9.19.0
-   - @stylistic/eslint-plugin     ^2.9.0  →    ^3.0.0
+   - @stylistic/eslint-plugin     ^2.9.0  →    ^3.0.1
    - eslint                      ^9.12.0  →   ^9.19.0
    - globals                    ^15.10.0  →  ^15.14.0
    - jsdoc                        ^4.0.3  →    ^4.0.4
@@ -6007,7 +6010,7 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
    - @rollup/plugin-commonjs           ^25.0.7  →  ^28.0.2
    - @rollup/plugin-node-resolve       ^15.2.3  →  ^16.0.0
    - @rollup/plugin-typescript         ^11.1.6  →  ^12.1.2
-   - @stylistic/eslint-plugin           ^1.5.4  →   ^3.0.0
+   - @stylistic/eslint-plugin           ^1.5.4  →   ^3.0.1
    - @typescript-eslint/eslint-plugin  ^6.20.0  →  ^8.22.0
    - eslint                            ^8.56.0  →  ^9.19.0
    - prettier                           ^3.2.5  →   ^3.4.2
@@ -6288,7 +6291,7 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
 
 1. Information: There are updates for 5 dependencie(s):
    - @eslint/js                ^9.18.0  →  ^9.19.0
-   - @stylistic/eslint-plugin  ^2.13.0  →   ^3.0.0
+   - @stylistic/eslint-plugin  ^2.13.0  →   ^3.0.1
    - cspell                    ^8.17.2  →  ^8.17.3
    - eslint                    ^9.18.0  →  ^9.19.0
    - markdownlint-cli          ^0.43.0  →  ^0.44.0
@@ -6559,7 +6562,7 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
 
 1. Information: There are updates for 4 dependencie(s):
    - @eslint/js                 ^9.16.0  →   ^9.19.0
-   - @stylistic/eslint-plugin   ^2.11.0  →    ^3.0.0
+   - @stylistic/eslint-plugin   ^2.11.0  →    ^3.0.1
    - eslint                     ^9.16.0  →   ^9.19.0
    - globals                   ^15.13.0  →  ^15.14.0
 
@@ -7178,7 +7181,7 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
 
 1. Information: There are updates for 8 dependencie(s):
    - @eslint/js                  ^9.17.0  →   ^9.19.0
-   - @stylistic/eslint-plugin    ^2.12.1  →    ^3.0.0
+   - @stylistic/eslint-plugin    ^2.12.1  →    ^3.0.1
    - eslint                      ^9.17.0  →   ^9.19.0
    - eslint-plugin-jsonc         ^2.18.2  →   ^2.19.1
    - markdownlint-cli            ^0.43.0  →   ^0.44.0
@@ -7193,7 +7196,7 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
    - @eslint/js                   ^9.18.0  →   ^9.19.0
    - @eslint/json                  ^0.9.1  →   ^0.10.0
    - @eslint/markdown              ^6.2.1  →    ^6.2.2
-   - @stylistic/eslint-plugin     ^2.13.0  →    ^3.0.0
+   - @stylistic/eslint-plugin     ^2.13.0  →    ^3.0.1
    - cspell                       ^8.17.2  →   ^8.17.3
    - eslint                       ^9.18.0  →   ^9.19.0
    - eslint-plugin-package-json   ^0.20.1  →   ^0.21.1
@@ -7273,7 +7276,7 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
 
 1. Information: There are updates for 4 dependencie(s):
    - @eslint/js                ^9.10.0  →   ^9.19.0
-   - @stylistic/eslint-plugin   ^2.7.2  →    ^3.0.0
+   - @stylistic/eslint-plugin   ^2.7.2  →    ^3.0.1
    - eslint                    ^9.10.0  →   ^9.19.0
    - globals                   ^15.9.0  →  ^15.14.0
 
@@ -9262,7 +9265,7 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
 
 1. Information: There are updates for 4 dependencie(s):
    - @eslint/js                ^8.56.0  →  ^9.19.0
-   - @stylistic/eslint-plugin   ^1.6.0  →   ^3.0.0
+   - @stylistic/eslint-plugin   ^1.6.0  →   ^3.0.1
    - eslint                    ^8.56.0  →  ^9.19.0
    - node-html-parser          ^6.1.12  →   ^7.0.1
 
@@ -9937,7 +9940,7 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
 
 1. Information: There are updates for 6 dependencie(s):
    - @eslint/js                 ^9.16.0  →   ^9.19.0
-   - @stylistic/eslint-plugin   ^2.12.0  →    ^3.0.0
+   - @stylistic/eslint-plugin   ^2.12.0  →    ^3.0.1
    - cspell                     ^8.16.1  →   ^8.17.3
    - eslint                     ^9.16.0  →   ^9.19.0
    - globals                   ^15.13.0  →  ^15.14.0
@@ -10102,7 +10105,7 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
 
 1. Information: There are updates for 3 dependencie(s):
    - @eslint/js                ^9.17.0  →  ^9.19.0
-   - @stylistic/eslint-plugin  ^2.12.1  →   ^3.0.0
+   - @stylistic/eslint-plugin  ^2.12.1  →   ^3.0.1
    - eslint                    ^9.17.0  →  ^9.19.0
 
 
