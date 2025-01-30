@@ -7149,7 +7149,7 @@
     "license": "GPL-3.0",
     "image": "HTMLSnippet-screenshot-grafana.jpg",
     "defaultSortWeight": 2,
-    "lastCommit": "2024-04-22T12:06:44+02:00"
+    "lastCommit": "2025-01-30T11:51:28+01:00"
   },
   {
     "name": "MMM-HTTPRequestDisplay",
@@ -11903,7 +11903,7 @@
     "license": "MIT",
     "image": "assets-demo_screenshot.jpg",
     "defaultSortWeight": 10,
-    "lastCommit": "2025-01-29T20:40:55+01:00"
+    "lastCommit": "2025-01-30T10:03:39+01:00"
   },
   {
     "name": "MMM-NextEvent",
@@ -17976,7 +17976,7 @@
     "license": "ISC",
     "image": "docs-screenshot.jpg",
     "defaultSortWeight": 4,
-    "lastCommit": "2024-05-15T01:07:17-07:00"
+    "lastCommit": "2025-01-30T03:17:32-07:00"
   },
   {
     "name": "MMM-TMB",
@@ -18023,7 +18023,7 @@
     "maintainerURL": "",
     "description": "Displays your todos from Todoist.",
     "issues": true,
-    "stars": 153,
+    "stars": 154,
     "license": "MIT",
     "tags": [
       "wunderlist"

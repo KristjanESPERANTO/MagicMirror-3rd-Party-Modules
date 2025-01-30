@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "2025-01-30T04:30:30.370Z",
+  "lastUpdate": "2025-01-30T16:30:38.442Z",
   "repositories": [
     {
       "id": "0lek/MMM-socialbicycles",
@@ -255,7 +255,7 @@
     },
     {
       "id": "aduyng/MMM-TeslaStatus",
-      "gitHubDataLastUpdate": "2025-01-09T16:30:23.177Z",
+      "gitHubDataLastUpdate": "2025-01-30T16:30:27.881Z",
       "gitHubData": {
         "issues": 0,
         "stars": 2,
@@ -773,7 +773,7 @@
     },
     {
       "id": "appdevelopmentandsuch/MMM-Thingiverse",
-      "gitHubDataLastUpdate": "2025-01-09T16:30:26.339Z",
+      "gitHubDataLastUpdate": "2025-01-30T16:30:30.978Z",
       "gitHubData": {
         "issues": 0,
         "stars": 3,
@@ -1277,7 +1277,7 @@
     },
     {
       "id": "bendardenne/MMM-TomTomTraffic",
-      "gitHubDataLastUpdate": "2025-01-09T16:30:31.927Z",
+      "gitHubDataLastUpdate": "2025-01-30T16:30:36.589Z",
       "gitHubData": {
         "issues": 0,
         "stars": 13,
@@ -2145,10 +2145,10 @@
     },
     {
       "id": "cbrooker/MMM-Todoist",
-      "gitHubDataLastUpdate": "2025-01-09T16:30:30.559Z",
+      "gitHubDataLastUpdate": "2025-01-30T16:30:35.352Z",
       "gitHubData": {
         "issues": 35,
-        "stars": 153,
+        "stars": 154,
         "license": "MIT",
         "archived": false,
         "disabled": false,
@@ -3503,7 +3503,7 @@
     },
     {
       "id": "denverquane/MMM-Teslamate",
-      "gitHubDataLastUpdate": "2025-01-09T16:30:17.174Z",
+      "gitHubDataLastUpdate": "2025-01-30T16:30:27.126Z",
       "gitHubData": {
         "issues": 6,
         "stars": 55,
@@ -3769,7 +3769,7 @@
     },
     {
       "id": "doctorfree/MMM-TelegramCommands",
-      "gitHubDataLastUpdate": "2025-01-09T04:30:28.766Z",
+      "gitHubDataLastUpdate": "2025-01-30T16:30:15.525Z",
       "gitHubData": {
         "issues": 0,
         "stars": 4,
@@ -4147,7 +4147,7 @@
     },
     {
       "id": "ElliAndDad/MMM-MealViewer",
-      "gitHubDataLastUpdate": "2025-01-09T16:30:31.011Z",
+      "gitHubDataLastUpdate": "2025-01-30T16:30:35.691Z",
       "gitHubData": {
         "issues": 0,
         "stars": 2,
@@ -4175,7 +4175,7 @@
     },
     {
       "id": "emanuele-albini/MMM-TFL-Status",
-      "gitHubDataLastUpdate": "2025-01-09T16:30:25.316Z",
+      "gitHubDataLastUpdate": "2025-01-30T16:30:30.018Z",
       "gitHubData": {
         "issues": 0,
         "stars": 7,
@@ -4385,16 +4385,16 @@
     },
     {
       "id": "evanhsu/MMM-TitanSchoolMealMenu",
-      "gitHubDataLastUpdate": "2025-01-09T16:30:29.082Z",
+      "gitHubDataLastUpdate": "2025-01-30T16:30:33.559Z",
       "gitHubData": {
-        "issues": 5,
+        "issues": 4,
         "stars": 7,
         "license": null,
         "archived": false,
         "disabled": false,
         "defaultBranch": "main",
         "has_issues": true,
-        "lastCommit": "2024-05-15T08:07:17Z"
+        "lastCommit": "2025-01-30T10:17:32Z"
       }
     },
     {
@@ -5085,7 +5085,7 @@
     },
     {
       "id": "gfischershaw/MMM-Touch",
-      "gitHubDataLastUpdate": "2025-01-09T16:30:34.659Z",
+      "gitHubDataLastUpdate": "2025-01-30T16:30:37.938Z",
       "gitHubData": {
         "issues": 5,
         "stars": 13,
@@ -6289,7 +6289,7 @@
     },
     {
       "id": "jaumebosch/MMM-TMB",
-      "gitHubDataLastUpdate": "2025-01-09T16:30:29.625Z",
+      "gitHubDataLastUpdate": "2025-01-30T16:30:34.563Z",
       "gitHubData": {
         "issues": 0,
         "stars": 5,
@@ -7017,7 +7017,7 @@
     },
     {
       "id": "JulienPeloton/MMM-tns",
-      "gitHubDataLastUpdate": "2025-01-09T16:30:30.077Z",
+      "gitHubDataLastUpdate": "2025-01-30T16:30:34.983Z",
       "gitHubData": {
         "issues": 0,
         "stars": 1,
@@ -8515,7 +8515,7 @@
     },
     {
       "id": "mattdy/MMM-Tesla",
-      "gitHubDataLastUpdate": "2025-01-09T16:30:15.648Z",
+      "gitHubDataLastUpdate": "2025-01-30T16:30:18.822Z",
       "gitHubData": {
         "issues": 2,
         "stars": 5,
@@ -8949,7 +8949,7 @@
     },
     {
       "id": "MichMich/MMM-Toon",
-      "gitHubDataLastUpdate": "2025-01-09T16:30:34.200Z",
+      "gitHubDataLastUpdate": "2025-01-30T16:30:37.494Z",
       "gitHubData": {
         "issues": 2,
         "stars": 12,
@@ -10699,7 +10699,7 @@
     },
     {
       "id": "ngnijland/MMM-text-clock",
-      "gitHubDataLastUpdate": "2025-01-09T16:30:23.838Z",
+      "gitHubDataLastUpdate": "2025-01-30T16:30:28.412Z",
       "gitHubData": {
         "issues": 8,
         "stars": 11,
@@ -11371,7 +11371,7 @@
     },
     {
       "id": "ottopaulsen/MMM-Tibber",
-      "gitHubDataLastUpdate": "2025-01-09T16:30:26.771Z",
+      "gitHubDataLastUpdate": "2025-01-30T16:30:31.728Z",
       "gitHubData": {
         "issues": 12,
         "stars": 35,
@@ -12589,7 +12589,7 @@
     },
     {
       "id": "retroflex/MMM-TextPerWeek",
-      "gitHubDataLastUpdate": "2025-01-09T16:30:24.378Z",
+      "gitHubDataLastUpdate": "2025-01-30T16:30:29.022Z",
       "gitHubData": {
         "issues": 0,
         "stars": 1,
@@ -12841,7 +12841,7 @@
     },
     {
       "id": "ryck/MMM-TFL-Arrivals",
-      "gitHubDataLastUpdate": "2025-01-09T16:30:24.825Z",
+      "gitHubDataLastUpdate": "2025-01-30T16:30:29.491Z",
       "gitHubData": {
         "issues": 1,
         "stars": 6,
@@ -12883,7 +12883,7 @@
     },
     {
       "id": "sabo10o29/MMM-TimeTreeEvent",
-      "gitHubDataLastUpdate": "2025-01-09T16:30:28.251Z",
+      "gitHubDataLastUpdate": "2025-01-30T16:30:33.113Z",
       "gitHubData": {
         "issues": 8,
         "stars": 5,
@@ -14115,7 +14115,7 @@
     },
     {
       "id": "spitzlbergerj/MMM-TeslaLogger",
-      "gitHubDataLastUpdate": "2025-01-09T16:30:16.750Z",
+      "gitHubDataLastUpdate": "2025-01-30T16:30:19.911Z",
       "gitHubData": {
         "issues": 5,
         "stars": 5,
@@ -14647,7 +14647,7 @@
     },
     {
       "id": "tderflinger/MMM-Timetagger",
-      "gitHubDataLastUpdate": "2025-01-09T16:30:27.773Z",
+      "gitHubDataLastUpdate": "2025-01-30T16:30:32.660Z",
       "gitHubData": {
         "issues": 0,
         "stars": 3,
@@ -14675,7 +14675,7 @@
     },
     {
       "id": "teemoo7/MMM-TomTomCalculateRouteTraffic",
-      "gitHubDataLastUpdate": "2025-01-09T16:30:31.467Z",
+      "gitHubDataLastUpdate": "2025-01-30T16:30:36.116Z",
       "gitHubData": {
         "issues": 0,
         "stars": 5,
@@ -14899,7 +14899,7 @@
     },
     {
       "id": "Thlb/MMM-temp-ds18b20",
-      "gitHubDataLastUpdate": "2025-01-09T04:30:29.227Z",
+      "gitHubDataLastUpdate": "2025-01-30T16:30:15.965Z",
       "gitHubData": {
         "issues": 3,
         "stars": 18,
@@ -15277,7 +15277,7 @@
     },
     {
       "id": "Tom-Hirschberger/MMM-Temperature",
-      "gitHubDataLastUpdate": "2025-01-09T16:30:15.177Z",
+      "gitHubDataLastUpdate": "2025-01-30T16:30:16.440Z",
       "gitHubData": {
         "issues": 0,
         "stars": 3,
@@ -15291,7 +15291,7 @@
     },
     {
       "id": "Tom-Hirschberger/MMM-TouchButton",
-      "gitHubDataLastUpdate": "2025-01-09T16:30:35.125Z",
+      "gitHubDataLastUpdate": "2025-01-30T16:30:38.371Z",
       "gitHubData": {
         "issues": 0,
         "stars": 10,
@@ -15501,7 +15501,7 @@
     },
     {
       "id": "Travelbacon/MMM-TomTomTrafficIncidents",
-      "gitHubDataLastUpdate": "2025-01-09T16:30:33.665Z",
+      "gitHubDataLastUpdate": "2025-01-30T16:30:37.003Z",
       "gitHubData": {
         "issues": 4,
         "stars": 11,
@@ -15781,7 +15781,7 @@
     },
     {
       "id": "usncahill/MMM-Tesla3",
-      "gitHubDataLastUpdate": "2025-01-09T16:30:16.321Z",
+      "gitHubDataLastUpdate": "2025-01-30T16:30:19.395Z",
       "gitHubData": {
         "issues": 2,
         "stars": 3,
@@ -16075,7 +16075,7 @@
     },
     {
       "id": "vita10gy/MMM-ThemeParkWaitTimes",
-      "gitHubDataLastUpdate": "2025-01-09T16:30:25.843Z",
+      "gitHubDataLastUpdate": "2025-01-30T16:30:30.510Z",
       "gitHubData": {
         "issues": 0,
         "stars": 5,
@@ -16803,7 +16803,7 @@
     },
     {
       "id": "zhouxichun/MMM-TiHimawari8Earth",
-      "gitHubDataLastUpdate": "2025-01-09T16:30:27.252Z",
+      "gitHubDataLastUpdate": "2025-01-30T16:30:32.192Z",
       "gitHubData": {
         "issues": 3,
         "stars": 3,
