@@ -1,6 +1,6 @@
 # Result of the module analysis
 
-Last update: 2025-01-29T17:39:17+01:00
+Last update: 2025-01-30T05:38:53+01:00
 
 ## Statistics
 
@@ -9,7 +9,7 @@ Last update: 2025-01-29T17:39:17+01:00
 | modules analyzed     |   1216   |
 | maintainer           |    655   |
 | modules with issues  |   1216   |
-| issues               |   6534   |
+| issues               |   6533   |
 | modules at github    |   1091   |
 | modules at gitlab    |     12   |
 | modules at bitbucket |      1   |
@@ -4286,12 +4286,11 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
 
 ### [MMM-Linky by 2hdlockness](https://github.com/2hdlockness/MMM-Linky)
 
-1. No image found.
-2. Recommendation: Found `https://cdn.jsdelivr.net` in file `MMM-Linky.js`: It looks like a package is loaded via CDN. It would be better if the package were installed locally via npm.
-3. Recommendation: The README seems not to have an update instruction (the word 'update' is missing). Please add one.
-4. Recommendation: Found `axios` in file `node_helper.js`: Replace it with built-in fetch.
-5. Recommendation: Found `axios` in file `package.json`: Replace it with built-in fetch.
-6. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
+1. Recommendation: Found `https://cdn.jsdelivr.net` in file `MMM-Linky.js`: It looks like a package is loaded via CDN. It would be better if the package were installed locally via npm.
+2. Recommendation: The README seems not to have an update instruction (the word 'update' is missing). Please add one.
+3. Recommendation: Found `axios` in file `node_helper.js`: Replace it with built-in fetch.
+4. Recommendation: Found `axios` in file `package.json`: Replace it with built-in fetch.
+5. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
 
 ### [MMM-Liquipedia-Matches by buxxi](https://github.com/buxxi/MMM-Liquipedia-Matches)
 
@@ -7834,10 +7833,10 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
 1. Typo: Found `Magic Mirror` in file `readme.md`: Replace it with `MagicMirror²`.
 2. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
 3. Information: There are updates for 10 dependencie(s):
-   - @aws-sdk/client-cloudformation   ^3.0.0  →  ^3.734.0
-   - @aws-sdk/client-iam              ^3.0.0  →  ^3.734.0
-   - @aws-sdk/client-lambda           ^3.0.0  →  ^3.734.0
-   - @aws-sdk/client-s3               ^3.0.0  →  ^3.735.0
+   - @aws-sdk/client-cloudformation   ^3.0.0  →  ^3.738.0
+   - @aws-sdk/client-iam              ^3.0.0  →  ^3.738.0
+   - @aws-sdk/client-lambda           ^3.0.0  →  ^3.738.0
+   - @aws-sdk/client-s3               ^3.0.0  →  ^3.738.0
    - aws-cdk                          ^2.0.0  →  ^2.177.0
    - aws-cdk-lib                      ^2.0.0  →  ^2.177.0
    - constructs                      ^10.0.0  →   ^10.4.2

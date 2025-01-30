@@ -12282,7 +12282,7 @@
     "description": "More information than you ever wanted to know about the rising and setting of the sun.",
     "issues": [],
     "outdated": "Abandoned. No reactions to issues since years. Missing instructions to install dependency 'request'. Also, source has altered API.",
-    "stars": 16,
+    "stars": 17,
     "license": "MIT"
   },
   {
@@ -12307,7 +12307,7 @@
     "maintainerURL": "https://github.com/mumblebaj",
     "description": "Display a classic railway clock.",
     "issues": [],
-    "stars": 6,
+    "stars": 7,
     "license": "MIT"
   },
   {

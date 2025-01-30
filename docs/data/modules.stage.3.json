@@ -8555,20 +8555,18 @@
     "maintainer": "2hdlockness",
     "maintainerURL": "https://github.com/2hdlockness/",
     "description": "A module to retrieve and display Linky consumption data using CONSO API. Intended for French users.",
-    "issues": [
-      "No image found."
-    ],
+    "issues": [],
     "stars": 0,
     "license": "MIT",
     "tags": [
       "linky",
-      "api",
       "consommation",
       "électricité",
       "enedis",
-      "graphique",
-      "énergie"
-    ]
+      "énergie",
+      "smart home"
+    ],
+    "image": "MMM-Linky.jpg"
   },
   {
     "name": "MMM-Liquipedia-Matches",
@@ -16990,7 +16988,7 @@
       "There is no `package.json`. We need this file to gather information about the module for the module list page."
     ],
     "outdated": "Abandoned. No reactions to issues since years. Missing instructions to install dependency 'request'. Also, source has altered API.",
-    "stars": 16,
+    "stars": 17,
     "license": "MIT",
     "image": "pix-1.jpg"
   },
@@ -17019,7 +17017,7 @@
     "maintainerURL": "https://github.com/mumblebaj",
     "description": "Display a classic railway clock.",
     "issues": [],
-    "stars": 6,
+    "stars": 7,
     "license": "MIT",
     "tags": [
       "clock",

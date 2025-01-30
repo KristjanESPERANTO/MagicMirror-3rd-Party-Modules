@@ -5256,7 +5256,7 @@
     "license": "MIT",
     "image": "data-flights_mapbox.jpg",
     "defaultSortWeight": 4,
-    "lastCommit": "2025-01-06T20:17:13+01:00"
+    "lastCommit": "2025-01-29T19:44:42+00:00"
   },
   {
     "name": "MMM-FlightsAbove",
@@ -7935,7 +7935,7 @@
     "license": "MIT",
     "image": "data-iss_cartodb.jpg",
     "defaultSortWeight": 4,
-    "lastCommit": "2025-01-10T21:51:03+00:00"
+    "lastCommit": "2025-01-29T19:42:22+00:00"
   },
   {
     "name": "MMM-ISY",
@@ -8650,15 +8650,15 @@
     "license": "MIT",
     "tags": [
       "linky",
-      "api",
       "consommation",
       "\u00e9lectricit\u00e9",
       "enedis",
-      "graphique",
-      "\u00e9nergie"
+      "\u00e9nergie",
+      "smart home"
     ],
-    "defaultSortWeight": 5,
-    "lastCommit": "2025-01-26T00:42:40+01:00"
+    "image": "MMM-Linky.jpg",
+    "defaultSortWeight": 4,
+    "lastCommit": "2025-01-30T00:03:52+01:00"
   },
   {
     "name": "MMM-Liquipedia-Matches",
@@ -11192,7 +11192,7 @@
       "mysql"
     ],
     "image": "screenshot-norows.jpg",
-    "defaultSortWeight": 7,
+    "defaultSortWeight": 8,
     "lastCommit": "2023-01-29T22:17:06-05:00"
   },
   {
@@ -11903,7 +11903,7 @@
     "license": "MIT",
     "image": "assets-demo_screenshot.jpg",
     "defaultSortWeight": 10,
-    "lastCommit": "2025-01-29T10:53:51+01:00"
+    "lastCommit": "2025-01-29T20:40:55+01:00"
   },
   {
     "name": "MMM-NextEvent",
@@ -17189,7 +17189,7 @@
     "description": "More information than you ever wanted to know about the rising and setting of the sun.",
     "issues": false,
     "outdated": "Abandoned. No reactions to issues since years. Missing instructions to install dependency 'request'. Also, source has altered API.",
-    "stars": 16,
+    "stars": 17,
     "license": "MIT",
     "image": "pix-1.jpg",
     "defaultSortWeight": 901,
@@ -17219,7 +17219,7 @@
     "maintainerURL": "https://github.com/mumblebaj",
     "description": "Display a classic railway clock.",
     "issues": true,
-    "stars": 6,
+    "stars": 7,
     "license": "MIT",
     "tags": [
       "clock",
