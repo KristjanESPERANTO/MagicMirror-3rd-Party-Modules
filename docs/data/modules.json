@@ -11903,7 +11903,7 @@
     "license": "MIT",
     "image": "assets-demo_screenshot.jpg",
     "defaultSortWeight": 10,
-    "lastCommit": "2025-01-30T10:03:39+01:00"
+    "lastCommit": "2025-01-31T09:59:45+01:00"
   },
   {
     "name": "MMM-NextEvent",
@@ -14922,7 +14922,7 @@
     "maintainerURL": "",
     "description": "Cleanly shutdown (or reboot) your mirror, edit which modules are shown on your mirror and turn your monitor off and on from a simple website, i.e. from your smartphone.",
     "issues": true,
-    "stars": 508,
+    "stars": 510,
     "license": "MIT",
     "tags": [
       "remote control",

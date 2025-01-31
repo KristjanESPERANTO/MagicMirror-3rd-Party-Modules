@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "2025-01-31T04:30:30.555Z",
+  "lastUpdate": "2025-01-31T16:30:29.531Z",
   "repositories": [
     {
       "id": "0lek/MMM-socialbicycles",
@@ -115,7 +115,7 @@
     },
     {
       "id": "73cirdan/MMM-Rijks",
-      "gitHubDataLastUpdate": "2025-01-10T16:30:23.144Z",
+      "gitHubDataLastUpdate": "2025-01-31T16:30:25.114Z",
       "gitHubData": {
         "issues": 1,
         "stars": 6,
@@ -563,7 +563,7 @@
     },
     {
       "id": "Alvinger/MMM-ResRobot",
-      "gitHubDataLastUpdate": "2025-01-10T16:30:22.211Z",
+      "gitHubDataLastUpdate": "2025-01-31T16:30:24.153Z",
       "gitHubData": {
         "issues": 6,
         "stars": 14,
@@ -787,7 +787,7 @@
     },
     {
       "id": "arirobinson/MMM-RepRapFirmware",
-      "gitHubDataLastUpdate": "2025-01-10T16:30:21.204Z",
+      "gitHubDataLastUpdate": "2025-01-31T16:30:23.231Z",
       "gitHubData": {
         "issues": 0,
         "stars": 0,
@@ -1081,7 +1081,7 @@
     },
     {
       "id": "balassy/MMM-RemoteTemperature",
-      "gitHubDataLastUpdate": "2025-01-10T16:30:20.340Z",
+      "gitHubDataLastUpdate": "2025-01-31T16:30:22.362Z",
       "gitHubData": {
         "issues": 15,
         "stars": 15,
@@ -1473,7 +1473,7 @@
     },
     {
       "id": "bittiez/MMM-Reddito",
-      "gitHubDataLastUpdate": "2025-01-10T16:30:17.505Z",
+      "gitHubDataLastUpdate": "2025-01-31T16:30:19.697Z",
       "gitHubData": {
         "issues": 0,
         "stars": 0,
@@ -1613,7 +1613,7 @@
     },
     {
       "id": "bogenpirat/MMM-RNV",
-      "gitHubDataLastUpdate": "2025-01-10T16:30:27.624Z",
+      "gitHubDataLastUpdate": "2025-01-31T16:30:29.059Z",
       "gitHubData": {
         "issues": 1,
         "stars": 1,
@@ -1963,7 +1963,7 @@
     },
     {
       "id": "buxxi/MMM-RelativeTime-i18n",
-      "gitHubDataLastUpdate": "2025-01-10T16:30:18.511Z",
+      "gitHubDataLastUpdate": "2025-01-31T16:30:20.640Z",
       "gitHubData": {
         "issues": 0,
         "stars": 1,
@@ -2761,9 +2761,9 @@
     },
     {
       "id": "Com-Lum/MMM-RMV",
-      "gitHubDataLastUpdate": "2025-01-10T16:30:25.954Z",
+      "gitHubDataLastUpdate": "2025-01-31T16:30:27.571Z",
       "gitHubData": {
-        "issues": 3,
+        "issues": 4,
         "stars": 21,
         "license": "MIT",
         "archived": false,
@@ -2859,7 +2859,7 @@
     },
     {
       "id": "cowboysdude/MMM-Recipe",
-      "gitHubDataLastUpdate": "2025-01-10T16:30:15.387Z",
+      "gitHubDataLastUpdate": "2025-01-31T16:30:18.019Z",
       "gitHubData": {
         "issues": 4,
         "stars": 9,
@@ -3867,7 +3867,7 @@
     },
     {
       "id": "Duske/MMM-RescueTime",
-      "gitHubDataLastUpdate": "2025-01-10T16:30:21.704Z",
+      "gitHubDataLastUpdate": "2025-01-31T16:30:23.700Z",
       "gitHubData": {
         "issues": 0,
         "stars": 7,
@@ -3881,7 +3881,7 @@
     },
     {
       "id": "DustinBryant/MMM-Ring",
-      "gitHubDataLastUpdate": "2025-01-10T16:30:23.692Z",
+      "gitHubDataLastUpdate": "2025-01-31T16:30:25.559Z",
       "gitHubData": {
         "issues": 12,
         "stars": 26,
@@ -4735,7 +4735,7 @@
     },
     {
       "id": "fhinder/MMM-RKI-Covid19",
-      "gitHubDataLastUpdate": "2025-01-10T16:30:24.708Z",
+      "gitHubDataLastUpdate": "2025-01-31T16:30:26.596Z",
       "gitHubData": {
         "issues": 3,
         "stars": 5,
@@ -5519,7 +5519,7 @@
     },
     {
       "id": "hayseedbyte/MMM-Reddit-News-Ticker",
-      "gitHubDataLastUpdate": "2025-01-10T16:30:16.382Z",
+      "gitHubDataLastUpdate": "2025-01-31T16:30:18.835Z",
       "gitHubData": {
         "issues": 1,
         "stars": 5,
@@ -6191,7 +6191,7 @@
     },
     {
       "id": "jalibu/MMM-RNV",
-      "gitHubDataLastUpdate": "2025-01-10T16:30:26.642Z",
+      "gitHubDataLastUpdate": "2025-01-31T16:30:28.039Z",
       "gitHubData": {
         "issues": 0,
         "stars": 3,
@@ -6863,16 +6863,16 @@
     },
     {
       "id": "Jopyth/MMM-Remote-Control",
-      "gitHubDataLastUpdate": "2025-01-10T16:30:18.941Z",
+      "gitHubDataLastUpdate": "2025-01-31T16:30:21.064Z",
       "gitHubData": {
-        "issues": 22,
-        "stars": 508,
+        "issues": 11,
+        "stars": 510,
         "license": "MIT",
         "archived": false,
         "disabled": false,
         "defaultBranch": "master",
         "has_issues": true,
-        "lastCommit": "2024-12-17T09:28:44Z"
+        "lastCommit": "2025-01-20T05:00:29Z"
       }
     },
     {
@@ -7003,7 +7003,7 @@
     },
     {
       "id": "juliankern/MMM-rbtv-sendeplan",
-      "gitHubDataLastUpdate": "2025-01-10T04:30:29.022Z",
+      "gitHubDataLastUpdate": "2025-01-31T16:30:17.016Z",
       "gitHubData": {
         "issues": 0,
         "stars": 2,
@@ -7087,7 +7087,7 @@
     },
     {
       "id": "jupadin/MMM-RNV",
-      "gitHubDataLastUpdate": "2025-01-10T16:30:27.058Z",
+      "gitHubDataLastUpdate": "2025-01-31T16:30:28.451Z",
       "gitHubData": {
         "issues": 2,
         "stars": 2,
@@ -7437,7 +7437,7 @@
     },
     {
       "id": "kjb085/MMM-Reddit",
-      "gitHubDataLastUpdate": "2025-01-10T16:30:15.914Z",
+      "gitHubDataLastUpdate": "2025-01-31T16:30:18.452Z",
       "gitHubData": {
         "issues": 26,
         "stars": 34,
@@ -8011,7 +8011,7 @@
     },
     {
       "id": "Linas1234/MMM-Regenradar",
-      "gitHubDataLastUpdate": "2025-01-10T16:30:18.012Z",
+      "gitHubDataLastUpdate": "2025-01-31T16:30:20.133Z",
       "gitHubData": {
         "issues": 0,
         "stars": 3,
@@ -9061,7 +9061,7 @@
     },
     {
       "id": "mitchelltmarino/MMM-RemoteCompliments",
-      "gitHubDataLastUpdate": "2025-01-10T16:30:19.908Z",
+      "gitHubDataLastUpdate": "2025-01-31T16:30:21.938Z",
       "gitHubData": {
         "issues": 12,
         "stars": 22,
@@ -9467,7 +9467,7 @@
     },
     {
       "id": "MMRIZE/MMM-Remote-Control-Repository",
-      "gitHubDataLastUpdate": "2025-01-10T16:30:19.452Z",
+      "gitHubDataLastUpdate": "2025-01-31T16:30:21.536Z",
       "gitHubData": {
         "issues": 1,
         "stars": 25,
@@ -9523,7 +9523,7 @@
     },
     {
       "id": "mmtsweng/MMM-NOAAAlerts",
-      "gitHubDataLastUpdate": "2025-01-10T16:30:20.755Z",
+      "gitHubDataLastUpdate": "2025-01-31T16:30:22.820Z",
       "gitHubData": {
         "issues": 0,
         "stars": 6,
@@ -11119,7 +11119,7 @@
     },
     {
       "id": "nkl-kst/MMM-RBB-Weather",
-      "gitHubDataLastUpdate": "2025-01-10T04:30:28.528Z",
+      "gitHubDataLastUpdate": "2025-01-31T16:30:16.577Z",
       "gitHubData": {
         "issues": 6,
         "stars": 5,
@@ -11511,7 +11511,7 @@
     },
     {
       "id": "parnic/MMM-RingAlarm",
-      "gitHubDataLastUpdate": "2025-01-10T16:30:24.220Z",
+      "gitHubDataLastUpdate": "2025-01-31T16:30:26.140Z",
       "gitHubData": {
         "issues": 0,
         "stars": 2,
@@ -12309,7 +12309,7 @@
     },
     {
       "id": "rcberg3/MMM-RedditKarma",
-      "gitHubDataLastUpdate": "2025-01-10T16:30:16.956Z",
+      "gitHubDataLastUpdate": "2025-01-31T16:30:19.281Z",
       "gitHubData": {
         "issues": 0,
         "stars": 3,
@@ -13023,7 +13023,7 @@
     },
     {
       "id": "SBrendan/MMM-LittleBockFermentationLog",
-      "gitHubDataLastUpdate": "2025-01-10T16:30:25.464Z",
+      "gitHubDataLastUpdate": "2025-01-31T16:30:27.100Z",
       "gitHubData": {
         "issues": 0,
         "stars": 0,
@@ -15585,7 +15585,7 @@
     },
     {
       "id": "Tuxdiver/MMM-Rest",
-      "gitHubDataLastUpdate": "2025-01-10T16:30:22.645Z",
+      "gitHubDataLastUpdate": "2025-01-31T16:30:24.655Z",
       "gitHubData": {
         "issues": 0,
         "stars": 19,
@@ -16047,7 +16047,7 @@
     },
     {
       "id": "vincep5/MMM-RecentRainfall",
-      "gitHubDataLastUpdate": "2025-01-10T16:30:14.899Z",
+      "gitHubDataLastUpdate": "2025-01-31T16:30:17.569Z",
       "gitHubData": {
         "issues": 1,
         "stars": 3,
@@ -16775,7 +16775,7 @@
     },
     {
       "id": "Zeprakadebra/MMM-RocketLeagueZ",
-      "gitHubDataLastUpdate": "2025-01-10T16:30:28.080Z",
+      "gitHubDataLastUpdate": "2025-01-31T16:30:29.496Z",
       "gitHubData": {
         "issues": 1,
         "stars": 1,
