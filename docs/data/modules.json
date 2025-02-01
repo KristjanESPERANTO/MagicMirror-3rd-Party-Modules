@@ -8658,7 +8658,7 @@
     ],
     "image": "MMM-Linky.jpg",
     "defaultSortWeight": 4,
-    "lastCommit": "2025-01-30T00:03:52+01:00"
+    "lastCommit": "2025-01-31T18:16:34+01:00"
   },
   {
     "name": "MMM-Liquipedia-Matches",
@@ -10626,7 +10626,7 @@
     "maintainerURL": "",
     "description": "Uses MPlayer to display various video files and RTSP streams.",
     "issues": true,
-    "stars": 1,
+    "stars": 2,
     "license": "MIT",
     "tags": [
       "mplayer",
@@ -11768,7 +11768,7 @@
     "maintainerURL": "",
     "description": "Add a QR Code with the link to the showing Newsfeed (Default Newsfeed Module).",
     "issues": true,
-    "stars": 14,
+    "stars": 15,
     "license": "MIT",
     "tags": [
       "newsfeed",
@@ -14284,7 +14284,7 @@
     ],
     "image": "img-MMM-PublicTransport_screenshot.jpg",
     "defaultSortWeight": 0,
-    "lastCommit": "2025-01-01T08:29:05+01:00"
+    "lastCommit": "2025-02-01T07:08:55+01:00"
   },
   {
     "name": "MMM-PublicTransportHafas",
@@ -14294,7 +14294,7 @@
     "maintainer": "KristjanESPERANTO",
     "maintainerURL": "",
     "description": "Displays departure information for public transportation in Germany and some other European countries. The <a target=\"_blank\" href=\"https://github.com/public-transport/hafas-client\">hafas-client</a> is used to query the information. The interface of the Deutsche Bahn is used as standard, this includes most of the local networks with buses, trams, etc. However, <a target=\"_blank\" href=\"https://github.com/public-transport/hafas-client/blob/main/p/readme.md\">other hafas interfaces</a> can also be used.",
-    "issues": true,
+    "issues": false,
     "stars": 22,
     "license": "MIT",
     "tags": [
@@ -14303,8 +14303,8 @@
       "vendo"
     ],
     "image": "img-Goerdelerring_all.jpg",
-    "defaultSortWeight": -1,
-    "lastCommit": "2025-01-22T22:40:40+01:00"
+    "defaultSortWeight": -2,
+    "lastCommit": "2025-02-01T17:16:36+01:00"
   },
   {
     "name": "MMM-PublicTransportVVO",
@@ -15241,7 +15241,7 @@
     "maintainerURL": "",
     "description": "Display status of local Roomba.",
     "issues": true,
-    "stars": 11,
+    "stars": 12,
     "license": "MIT",
     "tags": [
       "roomba"
@@ -15337,7 +15337,7 @@
     "maintainerURL": "",
     "description": "Show RTSP video stream(s) from one or more security cameras.",
     "issues": true,
-    "stars": 73,
+    "stars": 74,
     "license": "MIT",
     "image": "screenshot.jpg",
     "defaultSortWeight": 21,
@@ -15450,7 +15450,7 @@
     "maintainerURL": "https://github.com/sebikolon/MMM-RVV \"github.com/sebikolon\"",
     "description": "Departure monitor for the RVV (Regensburger Verkehrsverbund) public transport (bus) system (Bavaria/Germany).",
     "issues": true,
-    "stars": 5,
+    "stars": 6,
     "license": "MIT",
     "image": "res-screenshot_de.jpg",
     "defaultSortWeight": 6,
