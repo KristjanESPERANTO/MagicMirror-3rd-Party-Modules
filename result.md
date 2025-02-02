@@ -1,6 +1,6 @@
 # Result of the module analysis
 
-Last update: 2025-02-02T05:38:52+01:00
+Last update: 2025-02-02T17:39:10+01:00
 
 ## Statistics
 
@@ -9,7 +9,7 @@ Last update: 2025-02-02T05:38:52+01:00
 | modules analyzed     |   1216   |
 | maintainer           |    655   |
 | modules with issues  |   1212   |
-| issues               |   6528   |
+| issues               |   6527   |
 | modules at github    |   1091   |
 | modules at gitlab    |     12   |
 | modules at bitbucket |      1   |
@@ -4251,10 +4251,9 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
 ### [MMM-Linky by 2hdlockness](https://github.com/2hdlockness/MMM-Linky)
 
 1. Recommendation: Found `https://cdn.jsdelivr.net` in file `MMM-Linky.js`: It looks like a package is loaded via CDN. It would be better if the package were installed locally via npm.
-2. Recommendation: The README seems not to have an update instruction (the word 'update' is missing). Please add one.
-3. Recommendation: Found `axios` in file `node_helper.js`: Replace it with built-in fetch.
-4. Recommendation: Found `axios` in file `package.json`: Replace it with built-in fetch.
-5. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
+2. Recommendation: Found `axios` in file `node_helper.js`: Replace it with built-in fetch.
+3. Recommendation: Found `axios` in file `package.json`: Replace it with built-in fetch.
+4. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
 
 ### [MMM-Liquipedia-Matches by buxxi](https://github.com/buxxi/MMM-Liquipedia-Matches)
 
@@ -4626,8 +4625,8 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
 ### [MMM-MealieMenu by zanix](https://github.com/zanix/MMM-MealieMenu)
 
 1. Information: There are updates for 15 dependencie(s):
-   - @commitlint/cli                   ^19.3.0  →   ^19.6.1
-   - @commitlint/config-conventional   ^19.5.0  →   ^19.6.0
+   - @commitlint/cli                   ^19.3.0  →   ^19.7.1
+   - @commitlint/config-conventional   ^19.5.0  →   ^19.7.1
    - @eslint/js                        ^8.57.0  →   ^9.19.0
    - @stylistic/eslint-plugin           ^2.7.2  →    ^3.0.1
    - eslint                            ^8.57.0  →   ^9.19.0
@@ -5828,19 +5827,19 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
    - qrcode  1.5.1  →  1.5.4
 
 
-### [MMM-NewsAPI by mumblebaj](https://github.com/mumblebaj/MMM-NewsAPI)
-
-1. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
-2. ESLint issues:
-   - MMM-NewsAPI.js: Line 164, Column 23: 'qr' is assigned a value but never used. (rule: no-unused-vars)
-
-
 ### [MMM-NewsAPI by totoluto](https://github.com/totoluto/MMM-NewsAPI)
 
 1. Typo: Found `Magic Mirror` in file `README.md`: Replace it with `MagicMirror²`.
 2. Recommendation: The README seems not to have an update instruction (the word 'update' is missing). Please add one.
 3. Typo: Found `Magic Mirror` in file `package.json`: Replace it with `MagicMirror²`.
 4. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
+
+### [MMM-NewsAPI by mumblebaj](https://github.com/mumblebaj/MMM-NewsAPI)
+
+1. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
+2. ESLint issues:
+   - MMM-NewsAPI.js: Line 164, Column 23: 'qr' is assigned a value but never used. (rule: no-unused-vars)
+
 
 ### [MMM-NewsFeedTicker by justjim1220](https://github.com/justjim1220/MMM-NewsFeedTicker)
 

@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "2025-02-02T04:30:29.161Z",
+  "lastUpdate": "2025-02-02T16:30:29.632Z",
   "repositories": [
     {
       "id": "0lek/MMM-socialbicycles",
@@ -1795,7 +1795,7 @@
     },
     {
       "id": "btastic/MMM-octoprint",
-      "gitHubDataLastUpdate": "2025-01-12T04:30:18.162Z",
+      "gitHubDataLastUpdate": "2025-02-02T16:30:20.692Z",
       "gitHubData": {
         "issues": 4,
         "stars": 5,
@@ -2075,7 +2075,7 @@
     },
     {
       "id": "Canonip/MMM-OneTouchReveal",
-      "gitHubDataLastUpdate": "2025-01-12T04:30:22.471Z",
+      "gitHubDataLastUpdate": "2025-02-02T16:30:24.561Z",
       "gitHubData": {
         "issues": 10,
         "stars": 0,
@@ -2621,7 +2621,7 @@
     },
     {
       "id": "christopherpthomas/MMM-OctoMon",
-      "gitHubDataLastUpdate": "2025-01-12T04:30:17.228Z",
+      "gitHubDataLastUpdate": "2025-02-02T16:30:19.845Z",
       "gitHubData": {
         "issues": 2,
         "stars": 5,
@@ -3237,7 +3237,7 @@
     },
     {
       "id": "daterrell/MMM-OddEven",
-      "gitHubDataLastUpdate": "2025-01-12T04:30:18.600Z",
+      "gitHubDataLastUpdate": "2025-02-02T16:30:21.085Z",
       "gitHubData": {
         "issues": 0,
         "stars": 1,
@@ -4007,7 +4007,7 @@
     },
     {
       "id": "eckonator/MMM-Oelpreise",
-      "gitHubDataLastUpdate": "2025-01-12T04:30:19.767Z",
+      "gitHubDataLastUpdate": "2025-02-02T16:30:21.940Z",
       "gitHubData": {
         "issues": 0,
         "stars": 1,
@@ -4119,7 +4119,7 @@
     },
     {
       "id": "elaniobro/MMM-nyc-transit",
-      "gitHubDataLastUpdate": "2025-01-12T04:30:15.382Z",
+      "gitHubDataLastUpdate": "2025-02-02T16:30:18.017Z",
       "gitHubData": {
         "issues": 12,
         "stars": 22,
@@ -4161,7 +4161,7 @@
     },
     {
       "id": "elliefairholm/on-this-day",
-      "gitHubDataLastUpdate": "2025-01-12T04:30:20.680Z",
+      "gitHubDataLastUpdate": "2025-02-02T16:30:22.756Z",
       "gitHubData": {
         "issues": 4,
         "stars": 20,
@@ -4245,7 +4245,7 @@
     },
     {
       "id": "eouia/MMM-OClock",
-      "gitHubDataLastUpdate": "2025-01-12T04:30:16.304Z",
+      "gitHubDataLastUpdate": "2025-02-02T16:30:18.949Z",
       "gitHubData": {
         "issues": 0,
         "stars": 15,
@@ -4455,10 +4455,10 @@
     },
     {
       "id": "Fabrizz/MMM-OnSpotify",
-      "gitHubDataLastUpdate": "2025-01-12T04:30:24.622Z",
+      "gitHubDataLastUpdate": "2025-02-02T16:30:26.987Z",
       "gitHubData": {
-        "issues": 7,
-        "stars": 68,
+        "issues": 6,
+        "stars": 70,
         "license": "MIT",
         "archived": false,
         "disabled": false,
@@ -4595,10 +4595,10 @@
     },
     {
       "id": "fewieden/MMM-OlympicGames",
-      "gitHubDataLastUpdate": "2025-01-12T04:30:20.259Z",
+      "gitHubDataLastUpdate": "2025-02-02T16:30:22.373Z",
       "gitHubData": {
         "issues": 0,
-        "stars": 4,
+        "stars": 5,
         "license": "MIT",
         "archived": false,
         "disabled": false,
@@ -5631,7 +5631,7 @@
     },
     {
       "id": "hermanho/MMM-OneDrive",
-      "gitHubDataLastUpdate": "2025-01-12T04:30:21.998Z",
+      "gitHubDataLastUpdate": "2025-02-02T16:30:24.087Z",
       "gitHubData": {
         "issues": 1,
         "stars": 6,
@@ -5659,7 +5659,7 @@
     },
     {
       "id": "hggh/MMM-OpenHAB-Items",
-      "gitHubDataLastUpdate": "2025-01-12T04:30:26.556Z",
+      "gitHubDataLastUpdate": "2025-02-02T16:30:28.775Z",
       "gitHubData": {
         "issues": 3,
         "stars": 4,
@@ -6611,7 +6611,7 @@
     },
     {
       "id": "jimmykh/MMM-ObjectBlocks",
-      "gitHubDataLastUpdate": "2025-01-12T04:30:15.872Z",
+      "gitHubDataLastUpdate": "2025-02-02T16:30:18.495Z",
       "gitHubData": {
         "issues": 0,
         "stars": 1,
@@ -6975,7 +6975,7 @@
     },
     {
       "id": "jugler/MMM-OneBusAway",
-      "gitHubDataLastUpdate": "2025-01-12T04:30:21.112Z",
+      "gitHubDataLastUpdate": "2025-02-02T16:30:23.168Z",
       "gitHubData": {
         "issues": 0,
         "stars": 2,
@@ -7661,16 +7661,16 @@
     },
     {
       "id": "KristjanESPERANTO/MMM-OneCallWeather",
-      "gitHubDataLastUpdate": "2025-01-12T04:30:21.552Z",
+      "gitHubDataLastUpdate": "2025-02-02T16:30:23.643Z",
       "gitHubData": {
-        "issues": 5,
-        "stars": 3,
+        "issues": 2,
+        "stars": 4,
         "license": "MIT",
         "archived": false,
         "disabled": false,
         "defaultBranch": "main",
         "has_issues": true,
-        "lastCommit": "2024-12-10T11:59:47Z"
+        "lastCommit": "2025-01-21T20:35:40Z"
       }
     },
     {
@@ -7983,7 +7983,7 @@
     },
     {
       "id": "Legion2/MMM-Online-State",
-      "gitHubDataLastUpdate": "2025-01-12T04:30:23.338Z",
+      "gitHubDataLastUpdate": "2025-02-02T16:30:25.821Z",
       "gitHubData": {
         "issues": 0,
         "stars": 2,
@@ -8795,7 +8795,7 @@
     },
     {
       "id": "mezderman/MMM-OnSpotifyDude",
-      "gitHubDataLastUpdate": "2025-01-12T04:30:25.075Z",
+      "gitHubDataLastUpdate": "2025-02-02T16:30:27.416Z",
       "gitHubData": {
         "issues": 0,
         "stars": 3,
@@ -8809,7 +8809,7 @@
     },
     {
       "id": "mfurious/MMM-NsInfo",
-      "gitHubDataLastUpdate": "2025-01-11T16:30:28.741Z",
+      "gitHubDataLastUpdate": "2025-02-02T16:30:17.229Z",
       "gitHubData": {
         "issues": 0,
         "stars": 1,
@@ -9733,7 +9733,7 @@
     },
     {
       "id": "mscharl/MMM-oebb-station-board",
-      "gitHubDataLastUpdate": "2025-01-12T04:30:19.034Z",
+      "gitHubDataLastUpdate": "2025-02-02T16:30:21.505Z",
       "gitHubData": {
         "issues": 9,
         "stars": 5,
@@ -10727,7 +10727,7 @@
     },
     {
       "id": "NicholasRasi/MMM-OnlineImagesViewer",
-      "gitHubDataLastUpdate": "2025-01-12T04:30:23.779Z",
+      "gitHubDataLastUpdate": "2025-02-02T16:30:26.213Z",
       "gitHubData": {
         "issues": 0,
         "stars": 4,
@@ -11105,7 +11105,7 @@
     },
     {
       "id": "nkl-kst/MMM-OnThisDay",
-      "gitHubDataLastUpdate": "2025-01-12T04:30:25.636Z",
+      "gitHubDataLastUpdate": "2025-02-02T16:30:27.933Z",
       "gitHubData": {
         "issues": 6,
         "stars": 36,
@@ -12085,7 +12085,7 @@
     },
     {
       "id": "qistoph/MMM-nstreinen",
-      "gitHubDataLastUpdate": "2025-01-12T04:30:14.948Z",
+      "gitHubDataLastUpdate": "2025-02-02T16:30:17.629Z",
       "gitHubData": {
         "issues": 9,
         "stars": 12,
@@ -13051,7 +13051,7 @@
     },
     {
       "id": "schris88/MMM-Hoymiles-Wifi",
-      "gitHubDataLastUpdate": "2025-01-12T04:30:17.731Z",
+      "gitHubDataLastUpdate": "2025-02-02T16:30:20.265Z",
       "gitHubData": {
         "issues": 0,
         "stars": 1,
@@ -13163,10 +13163,10 @@
     },
     {
       "id": "seeshaughnessy/MMM-OneTracker",
-      "gitHubDataLastUpdate": "2025-01-12T04:30:22.925Z",
+      "gitHubDataLastUpdate": "2025-02-02T16:30:25.388Z",
       "gitHubData": {
         "issues": 3,
-        "stars": 17,
+        "stars": 18,
         "license": "MIT",
         "archived": false,
         "disabled": false,
@@ -13317,7 +13317,7 @@
     },
     {
       "id": "shbatm/MMM-OnScreenMenu",
-      "gitHubDataLastUpdate": "2025-01-12T04:30:24.180Z",
+      "gitHubDataLastUpdate": "2025-02-02T16:30:26.572Z",
       "gitHubData": {
         "issues": 27,
         "stars": 65,
@@ -13359,7 +13359,7 @@
     },
     {
       "id": "shbatm/octomirror-module",
-      "gitHubDataLastUpdate": "2025-01-12T04:30:16.834Z",
+      "gitHubDataLastUpdate": "2025-02-02T16:30:19.448Z",
       "gitHubData": {
         "issues": 21,
         "stars": 28,
@@ -13849,7 +13849,7 @@
     },
     {
       "id": "slugmuffin/MMM-OnThisDayWikiApi",
-      "gitHubDataLastUpdate": "2025-01-12T04:30:26.104Z",
+      "gitHubDataLastUpdate": "2025-02-02T16:30:28.330Z",
       "gitHubData": {
         "issues": 3,
         "stars": 4,
@@ -14297,7 +14297,7 @@
     },
     {
       "id": "steve415/MMM-openhabQuickWatch",
-      "gitHubDataLastUpdate": "2025-01-12T04:30:27.288Z",
+      "gitHubDataLastUpdate": "2025-02-02T16:30:29.549Z",
       "gitHubData": {
         "issues": 1,
         "stars": 1,
