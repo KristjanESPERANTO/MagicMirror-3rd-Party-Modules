@@ -1,6 +1,6 @@
 # Result of the module analysis
 
-Last update: 2025-02-01T17:39:11+01:00
+Last update: 2025-02-02T05:38:52+01:00
 
 ## Statistics
 
@@ -8,8 +8,8 @@ Last update: 2025-02-01T17:39:11+01:00
 |:---------------------|:--------:|
 | modules analyzed     |   1216   |
 | maintainer           |    655   |
-| modules with issues  |   1215   |
-| issues               |   6532   |
+| modules with issues  |   1212   |
+| issues               |   6528   |
 | modules at github    |   1091   |
 | modules at gitlab    |     12   |
 | modules at bitbucket |      1   |
@@ -345,13 +345,6 @@ Last update: 2025-02-01T17:39:11+01:00
 ### [MMM-APOD by grenagit](https://github.com/grenagit/MMM-APOD)
 
 1. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
-
-### [MMM-ApothekenNotdienst by KristjanESPERANTO](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst)
-
-1. `package.json` issue: No repository field.
-2. Information: There are updates for 1 dependencie(s):
-   - @stylistic/eslint-plugin  ^3.0.0  →  ^3.0.1
-
 
 ### [MMM-AQI by ryck](https://github.com/ryck/MMM-AQI)
 
@@ -916,21 +909,6 @@ Last update: 2025-02-01T17:39:11+01:00
    - node_helper.js: Line 177, Column 53: 'next' is defined but never used. (rule: no-unused-vars)
 
 
-### [MMM-CalendarExt2 by MMM-CalendarExt2](https://github.com/MMM-CalendarExt2/MMM-CalendarExt2)
-
-1. Information: There are updates for 10 dependencie(s):
-   - @eslint/js                  ^9.16.0  →   ^9.19.0
-   - @stylistic/eslint-plugin    ^2.11.0  →    ^3.0.1
-   - eslint                      ^9.16.0  →   ^9.19.0
-   - eslint-plugin-jsonc         ^2.18.2  →   ^2.19.1
-   - globals                    ^15.13.0  →  ^15.14.0
-   - markdownlint-cli2           ^0.15.0  →   ^0.17.2
-   - moment-timezone             ^0.5.46  →   ^0.5.47
-   - stylelint                  ^16.11.0  →  ^16.14.1
-   - stylelint-config-standard   ^36.0.1  →   ^37.0.0
-   - stylelint-prettier           ^5.0.2  →    ^5.0.3
-
-
 ### [MMM-CalendarExt3 by MMRIZE](https://github.com/MMRIZE/MMM-CalendarExt3)
 
 1. Information: There are updates for 3 dependencie(s):
@@ -1078,20 +1056,6 @@ Last update: 2025-02-01T17:39:11+01:00
    - moment          ^2.23.0  →  ^2.30.1
    - prettier         ^3.0.3  →   ^3.4.2
    - tsdav            ^2.0.3  →   ^2.1.3
-
-
-### [MMM-Carousel by shbatm](https://github.com/shbatm/MMM-Carousel)
-
-1. Information: There are updates for 9 dependencie(s):
-   - @eslint/js                  ^9.16.0  →   ^9.19.0
-   - @stylistic/eslint-plugin    ^2.12.0  →    ^3.0.1
-   - cspell                      ^8.16.1  →   ^8.17.3
-   - eslint                      ^9.16.0  →   ^9.19.0
-   - globals                    ^15.13.0  →  ^15.14.0
-   - markdownlint-cli            ^0.43.0  →   ^0.44.0
-   - stylelint                  ^16.11.0  →  ^16.14.1
-   - stylelint-config-standard   ^36.0.1  →   ^37.0.0
-   - stylelint-prettier           ^5.0.2  →    ^5.0.3
 
 
 ### [MMM-CECControl by nischi](https://github.com/nischi/MMM-CECControl)
