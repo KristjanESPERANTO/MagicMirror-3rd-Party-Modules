@@ -1,6 +1,6 @@
 # Result of the module analysis
 
-Last update: 2025-02-02T17:39:10+01:00
+Last update: 2025-02-03T05:38:39+01:00
 
 ## Statistics
 
@@ -7785,7 +7785,7 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
    - aws-cdk-lib                      ^2.0.0  →  ^2.177.0
    - constructs                      ^10.0.0  →   ^10.4.2
    - dotenv                          ^16.0.0  →   ^16.4.7
-   - inquirer                         ^8.2.4  →   ^12.3.3
+   - inquirer                         ^8.2.4  →   ^12.4.1
    - uuid                             ^9.0.0  →   ^11.0.5
 
 

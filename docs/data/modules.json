@@ -11131,7 +11131,7 @@
     "maintainerURL": "",
     "description": "Display today's scores for your favourite teams across multiple sports.",
     "issues": true,
-    "stars": 2,
+    "stars": 3,
     "license": "MIT",
     "tags": [
       "sports",
@@ -11903,7 +11903,7 @@
     "license": "MIT",
     "image": "assets-demo_screenshot.jpg",
     "defaultSortWeight": 10,
-    "lastCommit": "2025-01-31T09:59:45+01:00"
+    "lastCommit": "2025-02-02T21:59:16+01:00"
   },
   {
     "name": "MMM-NextEvent",
@@ -12926,7 +12926,7 @@
     "maintainerURL": "",
     "description": "Displays current, hourly and daily forecast information using data from the OpenWeather One Call API.",
     "issues": true,
-    "stars": 9,
+    "stars": 10,
     "tags": [
       "openweathermap",
       "weather",
@@ -13056,7 +13056,7 @@
     "maintainerURL": "",
     "description": "A helper module to display what page you're on. Intended to be used with other modules that rotate out modules.",
     "issues": true,
-    "stars": 42,
+    "stars": 43,
     "license": "MIT",
     "image": "example_picture.jpg",
     "defaultSortWeight": 3,
@@ -13112,7 +13112,7 @@
     "maintainerURL": "",
     "description": "Rotate out pages of modules.",
     "issues": true,
-    "stars": 9,
+    "stars": 10,
     "license": "MIT",
     "tags": [
       "pages",
@@ -15473,7 +15473,7 @@
     ],
     "image": "cache-samples-pexels-dan-mooham.jpg",
     "defaultSortWeight": 2,
-    "lastCommit": "2024-12-01T13:01:04-05:00"
+    "lastCommit": "2025-02-02T20:11:20-05:00"
   },
   {
     "name": "MMM-Sbanken",
@@ -15636,7 +15636,7 @@
       "cron"
     ],
     "image": "pics-example-icon-low.jpg",
-    "defaultSortWeight": 5,
+    "defaultSortWeight": 6,
     "lastCommit": "2023-02-02T21:33:45-05:00"
   },
   {
