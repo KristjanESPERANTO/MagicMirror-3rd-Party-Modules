@@ -1,6 +1,6 @@
 # Result of the module analysis
 
-Last update: 2025-02-04T05:44:30+01:00
+Last update: 2025-02-04T17:38:49+01:00
 
 ## Statistics
 
@@ -746,7 +746,7 @@ Last update: 2025-02-04T05:44:30+01:00
    - eslint                     ^9.17.0  →   ^9.19.0
    - eslint-config-prettier      ^9.1.0  →   ^10.0.1
    - eslint-plugin-prettier      ^5.2.1  →    ^5.2.3
-   - rollup                     ^4.29.1  →   ^4.34.1
+   - rollup                     ^4.29.1  →   ^4.34.2
    - typescript                  ^5.7.2  →    ^5.7.3
    - typescript-eslint          ^8.18.2  →   ^8.23.0
 
@@ -3925,7 +3925,7 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
    - eslint-config-prettier             ^9.1.0  →  ^10.0.1
    - eslint-plugin-prettier             ^5.1.3  →   ^5.2.3
    - prettier                           ^3.2.4  →   ^3.4.2
-   - rollup                             ^4.9.6  →  ^4.34.1
+   - rollup                             ^4.9.6  →  ^4.34.2
    - rollup-plugin-banner2              ^1.2.2  →   ^1.3.1
    - typescript                         ^5.3.3  →   ^5.7.3
    - yahoo-finance2                    ^2.11.3  →  ^2.13.3
@@ -5976,7 +5976,7 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
    - @typescript-eslint/eslint-plugin  ^6.20.0  →  ^8.23.0
    - eslint                            ^8.56.0  →  ^9.19.0
    - prettier                           ^3.2.5  →   ^3.4.2
-   - rollup                             ^4.9.6  →  ^4.34.1
+   - rollup                             ^4.9.6  →  ^4.34.2
    - rollup-plugin-banner2              ^1.2.2  →   ^1.3.1
    - typescript                         ^5.3.3  →   ^5.7.3
 
@@ -6200,7 +6200,7 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
    - chalk                    ^2.4.2  →   ^5.4.1
    - debounce                 ^1.2.0  →   ^2.2.0
    - prompts                  ^2.1.0  →   ^2.4.2
-   - rollup                  ^1.17.0  →  ^4.34.1
+   - rollup                  ^1.17.0  →  ^4.34.2
    - rollup-plugin-banner     ^0.2.0  →   ^0.2.1
    - rollup-plugin-commonjs  ^10.0.1  →  ^10.1.0
    - tslib                   ^1.10.0  →   ^2.8.1
@@ -7281,7 +7281,7 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
    - @rollup/plugin-typescript    ^11.1.6  →  ^12.1.2
    - eslint                        ^9.9.1  →  ^9.19.0
    - prettier                      ^3.3.3  →   ^3.4.2
-   - rollup                       ^4.21.1  →  ^4.34.1
+   - rollup                       ^4.21.1  →  ^4.34.2
    - rollup-plugin-banner2         ^1.3.0  →   ^1.3.1
    - typescript                    ^5.5.4  →   ^5.7.3
    - typescript-eslint             ^8.3.0  →  ^8.23.0
