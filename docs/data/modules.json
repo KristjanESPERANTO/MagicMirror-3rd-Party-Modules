@@ -5383,7 +5383,7 @@
     ],
     "image": "screenshot.jpg",
     "defaultSortWeight": 3,
-    "lastCommit": "2025-01-09T16:57:04+01:00"
+    "lastCommit": "2025-02-03T16:34:05+01:00"
   },
   {
     "name": "MMM-Fortnite",
@@ -6243,7 +6243,7 @@
     "license": "MIT",
     "image": "Traffic.jpg",
     "defaultSortWeight": 4,
-    "lastCommit": "2025-01-26T17:32:32+01:00"
+    "lastCommit": "2025-02-03T17:48:58+01:00"
   },
   {
     "name": "MMM-GooglePhotos",
@@ -13464,7 +13464,7 @@
     "maintainerURL": "https://github.com/PierreGode",
     "description": "Automatically controls the screen's power based on the presence of specified phones or devices within the network.",
     "issues": true,
-    "stars": 7,
+    "stars": 8,
     "license": "MIT",
     "tags": [
       "phone",
@@ -13497,7 +13497,7 @@
     "maintainerURL": "",
     "description": "Display stats from Pi-Hole DNS ad blocking.",
     "issues": true,
-    "stars": 76,
+    "stars": 78,
     "license": "MIT",
     "tags": [
       "pi-hole"
@@ -13546,7 +13546,7 @@
     "maintainerURL": "https://github.com/SalekurPolas",
     "description": "Informational module to display mirror information like Raspberry Pi model, unique serial number, network information, IPv4, IPv6, MAC address, OS information, CPU information, and more.",
     "issues": true,
-    "stars": 17,
+    "stars": 19,
     "license": "MIT",
     "tags": [
       "raspberrypi",
@@ -13727,7 +13727,7 @@
     "maintainerURL": "",
     "description": "Displays brief information (flag, weather, exchange rate) about multiple locations at once.",
     "issues": true,
-    "stars": 3,
+    "stars": 4,
     "defaultSortWeight": 8,
     "lastCommit": "2024-06-24T11:02:16-04:00"
   },
@@ -14294,7 +14294,7 @@
     "maintainer": "KristjanESPERANTO",
     "maintainerURL": "",
     "description": "Displays departure information for public transportation in Germany and some other European countries. The <a target=\"_blank\" href=\"https://github.com/public-transport/hafas-client\">hafas-client</a> is used to query the information. The interface of the Deutsche Bahn is used as standard, this includes most of the local networks with buses, trams, etc. However, <a target=\"_blank\" href=\"https://github.com/public-transport/hafas-client/blob/main/p/readme.md\">other hafas interfaces</a> can also be used.",
-    "issues": false,
+    "issues": true,
     "stars": 22,
     "license": "MIT",
     "tags": [
@@ -14303,7 +14303,7 @@
       "vendo"
     ],
     "image": "img-Goerdelerring_all.jpg",
-    "defaultSortWeight": -2,
+    "defaultSortWeight": -1,
     "lastCommit": "2025-02-01T17:16:36+01:00"
   },
   {

@@ -9618,7 +9618,7 @@
     "maintainerURL": "https://github.com/PierreGode",
     "description": "Automatically controls the screen's power based on the presence of specified phones or devices within the network.",
     "issues": [],
-    "stars": 7,
+    "stars": 8,
     "license": "MIT"
   },
   {
@@ -9641,7 +9641,7 @@
     "maintainerURL": "",
     "description": "Display stats from Pi-Hole DNS ad blocking.",
     "issues": [],
-    "stars": 76,
+    "stars": 78,
     "license": "MIT"
   },
   {
@@ -9678,7 +9678,7 @@
     "maintainerURL": "https://github.com/SalekurPolas",
     "description": "Informational module to display mirror information like Raspberry Pi model, unique serial number, network information, IPv4, IPv6, MAC address, OS information, CPU information, and more.",
     "issues": [],
-    "stars": 17,
+    "stars": 19,
     "license": "MIT"
   },
   {
@@ -9802,7 +9802,7 @@
     "maintainerURL": "",
     "description": "Displays brief information (flag, weather, exchange rate) about multiple locations at once.",
     "issues": [],
-    "stars": 3
+    "stars": 4
   },
   {
     "name": "MMM-Planetarium",

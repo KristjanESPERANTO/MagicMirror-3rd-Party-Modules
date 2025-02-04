@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "2025-02-03T04:30:30.018Z",
+  "lastUpdate": "2025-02-04T04:30:31.094Z",
   "repositories": [
     {
       "id": "0lek/MMM-socialbicycles",
@@ -2215,7 +2215,7 @@
     },
     {
       "id": "CFenner/MMM-PersonalConfig-Template",
-      "gitHubDataLastUpdate": "2025-01-13T04:30:21.403Z",
+      "gitHubDataLastUpdate": "2025-02-04T04:30:21.329Z",
       "gitHubData": {
         "issues": 4,
         "stars": 7,
@@ -2383,7 +2383,7 @@
     },
     {
       "id": "chicohernando/MMM-Peloton",
-      "gitHubDataLastUpdate": "2025-01-13T04:30:20.479Z",
+      "gitHubDataLastUpdate": "2025-02-04T04:30:20.433Z",
       "gitHubData": {
         "issues": 0,
         "stars": 1,
@@ -2649,7 +2649,7 @@
     },
     {
       "id": "ckoutavas/MMM-PiTemp",
-      "gitHubDataLastUpdate": "2025-01-13T04:30:30.357Z",
+      "gitHubDataLastUpdate": "2025-02-04T04:30:29.185Z",
       "gitHubData": {
         "issues": 1,
         "stars": 15,
@@ -2747,7 +2747,7 @@
     },
     {
       "id": "cokceken/MMM-DenHaag-TrashCalendar",
-      "gitHubDataLastUpdate": "2025-01-12T16:30:27.686Z",
+      "gitHubDataLastUpdate": "2025-02-04T04:30:18.136Z",
       "gitHubData": {
         "issues": 0,
         "stars": 0,
@@ -2775,7 +2775,7 @@
     },
     {
       "id": "Comf0rTS1997/MMM-pathtime",
-      "gitHubDataLastUpdate": "2025-01-12T16:30:28.153Z",
+      "gitHubDataLastUpdate": "2025-02-04T04:30:18.571Z",
       "gitHubData": {
         "issues": 0,
         "stars": 2,
@@ -3181,7 +3181,7 @@
     },
     {
       "id": "dankerthrone/MMM-PirateSkyForecast",
-      "gitHubDataLastUpdate": "2025-01-13T04:30:29.434Z",
+      "gitHubDataLastUpdate": "2025-02-04T04:30:28.768Z",
       "gitHubData": {
         "issues": 1,
         "stars": 3,
@@ -4021,7 +4021,7 @@
     },
     {
       "id": "eckonator/MMM-Pelletpreise",
-      "gitHubDataLastUpdate": "2025-01-13T04:30:20.059Z",
+      "gitHubDataLastUpdate": "2025-02-04T04:30:19.960Z",
       "gitHubData": {
         "issues": 0,
         "stars": 2,
@@ -4609,7 +4609,7 @@
     },
     {
       "id": "fewieden/MMM-ping",
-      "gitHubDataLastUpdate": "2025-01-13T04:30:27.183Z",
+      "gitHubDataLastUpdate": "2025-02-04T04:30:27.034Z",
       "gitHubData": {
         "issues": 4,
         "stars": 9,
@@ -5379,7 +5379,7 @@
     },
     {
       "id": "grenagit/MMM-PIR-Sensor-Lite",
-      "gitHubDataLastUpdate": "2025-01-13T04:30:28.965Z",
+      "gitHubDataLastUpdate": "2025-02-04T04:30:28.250Z",
       "gitHubData": {
         "issues": 7,
         "stars": 16,
@@ -6303,7 +6303,7 @@
     },
     {
       "id": "jbamford/MMM-PenPlotter",
-      "gitHubDataLastUpdate": "2025-01-13T04:30:20.916Z",
+      "gitHubDataLastUpdate": "2025-02-04T04:30:20.870Z",
       "gitHubData": {
         "issues": 1,
         "stars": 18,
@@ -8179,7 +8179,7 @@
     },
     {
       "id": "marcelwinh/MMM-PimaticFloorplan",
-      "gitHubDataLastUpdate": "2025-01-13T04:30:26.333Z",
+      "gitHubDataLastUpdate": "2025-02-04T04:30:26.141Z",
       "gitHubData": {
         "issues": 0,
         "stars": 6,
@@ -8263,7 +8263,7 @@
     },
     {
       "id": "MarcLandis/MMM-PIR-Sensor",
-      "gitHubDataLastUpdate": "2025-01-13T04:30:28.541Z",
+      "gitHubDataLastUpdate": "2025-02-04T04:30:27.888Z",
       "gitHubData": {
         "issues": 0,
         "stars": 9,
@@ -8669,7 +8669,7 @@
     },
     {
       "id": "mboskamp/MMM-PIR",
-      "gitHubDataLastUpdate": "2025-01-13T04:30:28.037Z",
+      "gitHubDataLastUpdate": "2025-02-04T04:30:27.410Z",
       "gitHubData": {
         "issues": 12,
         "stars": 16,
@@ -9089,7 +9089,7 @@
     },
     {
       "id": "mjb527/MMM-PL_WOTD",
-      "gitHubDataLastUpdate": "2025-01-13T04:30:31.724Z",
+      "gitHubDataLastUpdate": "2025-02-04T04:30:30.537Z",
       "gitHubData": {
         "issues": 3,
         "stars": 0,
@@ -9929,7 +9929,7 @@
     },
     {
       "id": "mumblebaj/MMM-PGA",
-      "gitHubDataLastUpdate": "2025-01-13T04:30:22.349Z",
+      "gitHubDataLastUpdate": "2025-02-04T04:30:22.314Z",
       "gitHubData": {
         "issues": 2,
         "stars": 3,
@@ -9943,7 +9943,7 @@
     },
     {
       "id": "mumblebaj/MMM-PhilipsHue",
-      "gitHubDataLastUpdate": "2025-01-13T04:30:23.654Z",
+      "gitHubDataLastUpdate": "2025-02-04T04:30:23.509Z",
       "gitHubData": {
         "issues": 0,
         "stars": 6,
@@ -10461,7 +10461,7 @@
     },
     {
       "id": "mykle1/MMM-PC-Stats",
-      "gitHubDataLastUpdate": "2025-01-13T04:30:19.160Z",
+      "gitHubDataLastUpdate": "2025-02-04T04:30:19.054Z",
       "gitHubData": {
         "issues": 0,
         "stars": 6,
@@ -10475,7 +10475,7 @@
     },
     {
       "id": "mykle1/MMM-PilotWX",
-      "gitHubDataLastUpdate": "2025-01-13T04:30:25.854Z",
+      "gitHubDataLastUpdate": "2025-02-04T04:30:25.689Z",
       "gitHubData": {
         "issues": 2,
         "stars": 4,
@@ -11091,10 +11091,10 @@
     },
     {
       "id": "njwilliams/MMM-PlaceInfo",
-      "gitHubDataLastUpdate": "2025-01-13T04:30:32.197Z",
+      "gitHubDataLastUpdate": "2025-02-04T04:30:31.003Z",
       "gitHubData": {
         "issues": 3,
-        "stars": 3,
+        "stars": 4,
         "license": null,
         "archived": false,
         "disabled": false,
@@ -11245,7 +11245,7 @@
     },
     {
       "id": "nsieg/MMM-piwigo-photo-wheel",
-      "gitHubDataLastUpdate": "2025-01-13T04:30:31.231Z",
+      "gitHubDataLastUpdate": "2025-02-04T04:30:30.043Z",
       "gitHubData": {
         "issues": 0,
         "stars": 0,
@@ -11497,7 +11497,7 @@
     },
     {
       "id": "parnic/MMM-NHL",
-      "gitHubDataLastUpdate": "2025-01-13T04:30:30.786Z",
+      "gitHubDataLastUpdate": "2025-02-04T04:30:29.633Z",
       "gitHubData": {
         "issues": 0,
         "stars": 2,
@@ -11679,7 +11679,7 @@
     },
     {
       "id": "PhantomOffKanagawa/MMM-PetFinder",
-      "gitHubDataLastUpdate": "2025-01-13T04:30:21.861Z",
+      "gitHubDataLastUpdate": "2025-02-04T04:30:21.806Z",
       "gitHubData": {
         "issues": 0,
         "stars": 1,
@@ -11763,10 +11763,10 @@
     },
     {
       "id": "PierreGode/MMM-PhoneDetect",
-      "gitHubDataLastUpdate": "2025-01-13T04:30:24.498Z",
+      "gitHubDataLastUpdate": "2025-02-04T04:30:24.401Z",
       "gitHubData": {
         "issues": 3,
-        "stars": 7,
+        "stars": 8,
         "license": "MIT",
         "archived": false,
         "disabled": false,
@@ -12673,7 +12673,7 @@
     },
     {
       "id": "ronny3050/phone-notification-mirror",
-      "gitHubDataLastUpdate": "2025-01-13T04:30:24.067Z",
+      "gitHubDataLastUpdate": "2025-02-04T04:30:24.004Z",
       "gitHubData": {
         "issues": 9,
         "stars": 61,
@@ -12729,7 +12729,7 @@
     },
     {
       "id": "RpDp-git/PiDisplaySleep",
-      "gitHubDataLastUpdate": "2025-01-13T04:30:24.927Z",
+      "gitHubDataLastUpdate": "2025-02-04T04:30:24.802Z",
       "gitHubData": {
         "issues": 2,
         "stars": 30,
@@ -12925,10 +12925,10 @@
     },
     {
       "id": "SalekurPolas/MMM-Pinfo",
-      "gitHubDataLastUpdate": "2025-01-13T04:30:26.781Z",
+      "gitHubDataLastUpdate": "2025-02-04T04:30:26.666Z",
       "gitHubData": {
         "issues": 2,
-        "stars": 17,
+        "stars": 19,
         "license": "MIT",
         "archived": false,
         "disabled": false,
@@ -13387,10 +13387,10 @@
     },
     {
       "id": "sheyabernstein/MMM-pihole-stats",
-      "gitHubDataLastUpdate": "2025-01-13T04:30:25.367Z",
+      "gitHubDataLastUpdate": "2025-02-04T04:30:25.241Z",
       "gitHubData": {
         "issues": 0,
-        "stars": 76,
+        "stars": 78,
         "license": "MIT",
         "archived": false,
         "disabled": false,
@@ -16705,7 +16705,7 @@
     },
     {
       "id": "ytmytm/MMM-pekavm",
-      "gitHubDataLastUpdate": "2025-01-13T04:30:19.631Z",
+      "gitHubDataLastUpdate": "2025-02-04T04:30:19.574Z",
       "gitHubData": {
         "issues": 3,
         "stars": 4,
@@ -16719,7 +16719,7 @@
     },
     {
       "id": "yuhanx0728/MMM-PGHBus",
-      "gitHubDataLastUpdate": "2025-01-13T04:30:23.165Z",
+      "gitHubDataLastUpdate": "2025-02-04T04:30:23.096Z",
       "gitHubData": {
         "issues": 2,
         "stars": 1,

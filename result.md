@@ -1,6 +1,6 @@
 # Result of the module analysis
 
-Last update: 2025-02-03T05:38:39+01:00
+Last update: 2025-02-04T05:44:30+01:00
 
 ## Statistics
 
@@ -8,8 +8,8 @@ Last update: 2025-02-03T05:38:39+01:00
 |:---------------------|:--------:|
 | modules analyzed     |   1216   |
 | maintainer           |    655   |
-| modules with issues  |   1212   |
-| issues               |   6527   |
+| modules with issues  |   1213   |
+| issues               |   6528   |
 | modules at github    |   1091   |
 | modules at gitlab    |     12   |
 | modules at bitbucket |      1   |
@@ -741,14 +741,14 @@ Last update: 2025-02-03T05:38:39+01:00
 
 1. Information: There are updates for 9 dependencie(s):
    - @stylistic/eslint-plugin   ^2.12.1  →    ^3.0.1
-   - @types/node               ^22.10.2  →  ^22.13.0
-   - bosch-smart-home-bridge     ^1.6.0  →    ^1.7.3
+   - @types/node               ^22.10.2  →  ^22.13.1
+   - bosch-smart-home-bridge     ^1.6.0  →    ^1.7.4
    - eslint                     ^9.17.0  →   ^9.19.0
    - eslint-config-prettier      ^9.1.0  →   ^10.0.1
    - eslint-plugin-prettier      ^5.2.1  →    ^5.2.3
-   - rollup                     ^4.29.1  →   ^4.34.0
+   - rollup                     ^4.29.1  →   ^4.34.1
    - typescript                  ^5.7.2  →    ^5.7.3
-   - typescript-eslint          ^8.18.2  →   ^8.22.0
+   - typescript-eslint          ^8.18.2  →   ^8.23.0
 
 2. ESLint issues:
    - node_helper.js: Line 13, Column 1034: 't' is defined but never used. (rule: no-unused-vars)
@@ -3919,13 +3919,13 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
    - @rollup/plugin-commonjs           ^25.0.7  →  ^28.0.2
    - @rollup/plugin-node-resolve       ^15.2.3  →  ^16.0.0
    - @rollup/plugin-typescript         ^11.1.6  →  ^12.1.2
-   - @typescript-eslint/eslint-plugin  ^6.19.1  →  ^8.22.0
-   - @typescript-eslint/parser         ^6.19.1  →  ^8.22.0
+   - @typescript-eslint/eslint-plugin  ^6.19.1  →  ^8.23.0
+   - @typescript-eslint/parser         ^6.19.1  →  ^8.23.0
    - eslint                            ^8.56.0  →  ^9.19.0
    - eslint-config-prettier             ^9.1.0  →  ^10.0.1
    - eslint-plugin-prettier             ^5.1.3  →   ^5.2.3
    - prettier                           ^3.2.4  →   ^3.4.2
-   - rollup                             ^4.9.6  →  ^4.34.0
+   - rollup                             ^4.9.6  →  ^4.34.1
    - rollup-plugin-banner2              ^1.2.2  →   ^1.3.1
    - typescript                         ^5.3.3  →   ^5.7.3
    - yahoo-finance2                    ^2.11.3  →  ^2.13.3
@@ -5973,10 +5973,10 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
    - @rollup/plugin-node-resolve       ^15.2.3  →  ^16.0.0
    - @rollup/plugin-typescript         ^11.1.6  →  ^12.1.2
    - @stylistic/eslint-plugin           ^1.5.4  →   ^3.0.1
-   - @typescript-eslint/eslint-plugin  ^6.20.0  →  ^8.22.0
+   - @typescript-eslint/eslint-plugin  ^6.20.0  →  ^8.23.0
    - eslint                            ^8.56.0  →  ^9.19.0
    - prettier                           ^3.2.5  →   ^3.4.2
-   - rollup                             ^4.9.6  →  ^4.34.0
+   - rollup                             ^4.9.6  →  ^4.34.1
    - rollup-plugin-banner2              ^1.2.2  →   ^1.3.1
    - typescript                         ^5.3.3  →   ^5.7.3
 
@@ -6200,7 +6200,7 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
    - chalk                    ^2.4.2  →   ^5.4.1
    - debounce                 ^1.2.0  →   ^2.2.0
    - prompts                  ^2.1.0  →   ^2.4.2
-   - rollup                  ^1.17.0  →  ^4.34.0
+   - rollup                  ^1.17.0  →  ^4.34.1
    - rollup-plugin-banner     ^0.2.0  →   ^0.2.1
    - rollup-plugin-commonjs  ^10.0.1  →  ^10.1.0
    - tslib                   ^1.10.0  →   ^2.8.1
@@ -6265,7 +6265,7 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
 2. Recommendation: Found `XMLHttpRequest` in file `error_to_string.js`: Replace it with built-in fetch.
 3. Recommendation: No lint script found in package.json. It is recommended to add one.
 4. Information: There are updates for 5 dependencie(s):
-   - @azure/msal-node      ^2.16.2  →    ^3.1.0
+   - @azure/msal-node      ^2.16.2  →    ^3.2.0
    - @eslint/js            ^9.16.0  →   ^9.19.0
    - eslint                ^9.16.0  →   ^9.19.0
    - eslint-plugin-jsdoc   ^50.6.0  →   ^50.6.3
@@ -7149,6 +7149,12 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
    - stylelint-prettier    ^5.0.2  →   ^5.0.3
 
 
+### [MMM-PublicTransportHafas by KristjanESPERANTO](https://github.com/KristjanESPERANTO/MMM-PublicTransportHafas)
+
+1. Information: There are updates for 1 dependencie(s):
+   - eslint-plugin-package-json  ^0.21.1  →  ^0.22.0
+
+
 ### [MMM-PublicTransportVVO by ChristianGeie](https://github.com/ChristianGeie/MMM-PublicTransportVVO)
 
 1. Recommendation: Found `XMLHttpRequest` in file `MMM-PublicTransportVVO.js`: Replace it with built-in fetch.
@@ -7275,10 +7281,10 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
    - @rollup/plugin-typescript    ^11.1.6  →  ^12.1.2
    - eslint                        ^9.9.1  →  ^9.19.0
    - prettier                      ^3.3.3  →   ^3.4.2
-   - rollup                       ^4.21.1  →  ^4.34.0
+   - rollup                       ^4.21.1  →  ^4.34.1
    - rollup-plugin-banner2         ^1.3.0  →   ^1.3.1
    - typescript                    ^5.5.4  →   ^5.7.3
-   - typescript-eslint             ^8.3.0  →  ^8.22.0
+   - typescript-eslint             ^8.3.0  →  ^8.23.0
 
 2. ESLint issues:
    - MMM-RAIN-MAP.js: Line 28, Column 17081: Expected to return a value in method 'get'. (rule: getter-return)
@@ -7776,17 +7782,18 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
 
 1. Typo: Found `Magic Mirror` in file `readme.md`: Replace it with `MagicMirror²`.
 2. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
-3. Information: There are updates for 10 dependencie(s):
-   - @aws-sdk/client-cloudformation   ^3.0.0  →  ^3.738.0
-   - @aws-sdk/client-iam              ^3.0.0  →  ^3.738.0
-   - @aws-sdk/client-lambda           ^3.0.0  →  ^3.738.0
-   - @aws-sdk/client-s3               ^3.0.0  →  ^3.740.0
-   - aws-cdk                          ^2.0.0  →  ^2.177.0
-   - aws-cdk-lib                      ^2.0.0  →  ^2.177.0
-   - constructs                      ^10.0.0  →   ^10.4.2
-   - dotenv                          ^16.0.0  →   ^16.4.7
-   - inquirer                         ^8.2.4  →   ^12.4.1
-   - uuid                             ^9.0.0  →   ^11.0.5
+3. Information: There are updates for 11 dependencie(s):
+   - @aws-sdk/client-cloudformation    ^3.0.0  →  ^3.741.0
+   - @aws-sdk/client-iam               ^3.0.0  →  ^3.741.0
+   - @aws-sdk/client-lambda            ^3.0.0  →  ^3.741.0
+   - @aws-sdk/client-s3                ^3.0.0  →  ^3.741.0
+   - @aws-sdk/client-sts             ^3.738.0  →  ^3.741.0
+   - aws-cdk                           ^2.0.0  →  ^2.177.0
+   - aws-cdk-lib                       ^2.0.0  →  ^2.177.0
+   - constructs                       ^10.0.0  →   ^10.4.2
+   - dotenv                           ^16.0.0  →   ^16.4.7
+   - inquirer                          ^8.2.4  →   ^12.4.1
+   - uuid                              ^9.0.0  →   ^11.0.5
 
 
 ### [MMM-Sbanken by reidarw](https://github.com/reidarw/MMM-Sbanken)
