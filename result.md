@@ -1,6 +1,6 @@
 # Result of the module analysis
 
-Last update: 2025-02-05T05:38:45+01:00
+Last update: 2025-02-05T17:39:15+01:00
 
 ## Statistics
 
@@ -746,7 +746,7 @@ Last update: 2025-02-05T05:38:45+01:00
    - eslint                     ^9.17.0  →   ^9.19.0
    - eslint-config-prettier      ^9.1.0  →   ^10.0.1
    - eslint-plugin-prettier      ^5.2.1  →    ^5.2.3
-   - rollup                     ^4.29.1  →   ^4.34.2
+   - rollup                     ^4.29.1  →   ^4.34.3
    - typescript                  ^5.7.2  →    ^5.7.3
    - typescript-eslint          ^8.18.2  →   ^8.23.0
 
@@ -3898,7 +3898,7 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
    - @electron/rebuild    ^3.6.0  →   ^3.7.1
    - node-abi            ^3.65.0  →  ^3.74.0
    - node-gyp            ^10.2.0  →  ^11.0.0
-   - puppeteer          ^22.15.0  →  ^24.1.1
+   - puppeteer          ^22.15.0  →  ^24.2.0
    - sharp               ^0.33.4  →  ^0.33.5
 
 
@@ -3925,7 +3925,7 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
    - eslint-config-prettier             ^9.1.0  →  ^10.0.1
    - eslint-plugin-prettier             ^5.1.3  →   ^5.2.3
    - prettier                           ^3.2.4  →   ^3.4.2
-   - rollup                             ^4.9.6  →  ^4.34.2
+   - rollup                             ^4.9.6  →  ^4.34.3
    - rollup-plugin-banner2              ^1.2.2  →   ^1.3.1
    - typescript                         ^5.3.3  →   ^5.7.3
    - yahoo-finance2                    ^2.11.3  →  ^2.13.3
@@ -5776,7 +5776,7 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
 1. Recommendation: No lint script found in package.json. It is recommended to add one.
 2. Information: There are updates for 2 dependencie(s):
    - less          4.2.0  →   4.2.2
-   - neostandard  0.11.5  →  0.12.0
+   - neostandard  0.11.5  →  0.12.1
 
 
 ### [MMM-Netatmo-Presence by AgP42](https://github.com/AgP42/MMM-Netatmo-Presence)
@@ -5976,7 +5976,7 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
    - @typescript-eslint/eslint-plugin  ^6.20.0  →  ^8.23.0
    - eslint                            ^8.56.0  →  ^9.19.0
    - prettier                           ^3.2.5  →   ^3.4.2
-   - rollup                             ^4.9.6  →  ^4.34.2
+   - rollup                             ^4.9.6  →  ^4.34.3
    - rollup-plugin-banner2              ^1.2.2  →   ^1.3.1
    - typescript                         ^5.3.3  →   ^5.7.3
 
@@ -6200,7 +6200,7 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
    - chalk                    ^2.4.2  →   ^5.4.1
    - debounce                 ^1.2.0  →   ^2.2.0
    - prompts                  ^2.1.0  →   ^2.4.2
-   - rollup                  ^1.17.0  →  ^4.34.2
+   - rollup                  ^1.17.0  →  ^4.34.3
    - rollup-plugin-banner     ^0.2.0  →   ^0.2.1
    - rollup-plugin-commonjs  ^10.0.1  →  ^10.1.0
    - tslib                   ^1.10.0  →   ^2.8.1
@@ -7281,7 +7281,7 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
    - @rollup/plugin-typescript    ^11.1.6  →  ^12.1.2
    - eslint                        ^9.9.1  →  ^9.19.0
    - prettier                      ^3.3.3  →   ^3.4.2
-   - rollup                       ^4.21.1  →  ^4.34.2
+   - rollup                       ^4.21.1  →  ^4.34.3
    - rollup-plugin-banner2         ^1.3.0  →   ^1.3.1
    - typescript                    ^5.5.4  →   ^5.7.3
    - typescript-eslint             ^8.3.0  →  ^8.23.0

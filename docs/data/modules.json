@@ -726,7 +726,7 @@
     "maintainerURL": "https://github.com/gpailler",
     "description": "Display the air quality index from <a target=\"_blank\" href=\"https://aqicn.org\">aqicn</a> project.",
     "issues": true,
-    "stars": 8,
+    "stars": 9,
     "license": "MIT",
     "defaultSortWeight": 7,
     "lastCommit": "2021-05-04T09:51:34+08:00"
@@ -11903,7 +11903,7 @@
     "license": "MIT",
     "image": "assets-demo_screenshot.jpg",
     "defaultSortWeight": 10,
-    "lastCommit": "2025-02-02T21:59:16+01:00"
+    "lastCommit": "2025-02-05T09:06:10+01:00"
   },
   {
     "name": "MMM-NextEvent",
