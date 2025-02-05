@@ -1,6 +1,6 @@
 # Result of the module analysis
 
-Last update: 2025-02-04T17:38:49+01:00
+Last update: 2025-02-05T05:38:45+01:00
 
 ## Statistics
 
@@ -3409,7 +3409,7 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
 4. Information: There are updates for 5 dependencie(s):
    - @electron/rebuild            ^3.6.0  →   ^3.7.1
    - @picovoice/cobra-node        ^2.0.1  →   ^2.0.3
-   - @picovoice/porcupine-node    ^3.0.3  →   ^3.0.5
+   - @picovoice/porcupine-node    ^3.0.3  →   ^3.0.6
    - @picovoice/pvrecorder-node   ^1.2.3  →   ^1.2.5
    - dotenv                      ^16.4.5  →  ^16.4.7
 
@@ -6265,7 +6265,7 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
 2. Recommendation: Found `XMLHttpRequest` in file `error_to_string.js`: Replace it with built-in fetch.
 3. Recommendation: No lint script found in package.json. It is recommended to add one.
 4. Information: There are updates for 5 dependencie(s):
-   - @azure/msal-node      ^2.16.2  →    ^3.2.0
+   - @azure/msal-node      ^2.16.2  →    ^3.2.1
    - @eslint/js            ^9.16.0  →   ^9.19.0
    - eslint                ^9.16.0  →   ^9.19.0
    - eslint-plugin-jsdoc   ^50.6.0  →   ^50.6.3
@@ -7152,7 +7152,7 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
 ### [MMM-PublicTransportHafas by KristjanESPERANTO](https://github.com/KristjanESPERANTO/MMM-PublicTransportHafas)
 
 1. Information: There are updates for 1 dependencie(s):
-   - eslint-plugin-package-json  ^0.21.1  →  ^0.22.0
+   - eslint-plugin-package-json  ^0.21.1  →  ^0.23.0
 
 
 ### [MMM-PublicTransportVVO by ChristianGeie](https://github.com/ChristianGeie/MMM-PublicTransportVVO)
@@ -7784,7 +7784,7 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
 2. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
 3. Information: There are updates for 11 dependencie(s):
    - @aws-sdk/client-cloudformation    ^3.0.0  →  ^3.741.0
-   - @aws-sdk/client-iam               ^3.0.0  →  ^3.741.0
+   - @aws-sdk/client-iam               ^3.0.0  →  ^3.742.0
    - @aws-sdk/client-lambda            ^3.0.0  →  ^3.741.0
    - @aws-sdk/client-s3                ^3.0.0  →  ^3.741.0
    - @aws-sdk/client-sts             ^3.738.0  →  ^3.741.0
