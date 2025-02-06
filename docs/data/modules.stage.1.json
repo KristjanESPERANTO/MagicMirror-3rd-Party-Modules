@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "2025-02-05T16:30:14.021Z",
+  "lastUpdate": "2025-02-06T04:30:16.833Z",
   "modules": [
     {
       "name": "MMM-01ZM",
@@ -6412,10 +6412,10 @@
     {
       "name": "MMM-MovieListings",
       "category": "Entertainment / Misc",
-      "url": "https://github.com/mumblebaj/MMM-MovieListings",
-      "id": "mumblebaj/MMM-MovieListings",
-      "maintainer": "mumblebaj",
-      "maintainerURL": "",
+      "url": "https://github.com/Tueti/MMM-MovieListings",
+      "id": "Tueti/MMM-MovieListings",
+      "maintainer": "Tueti",
+      "maintainerURL": "https://github.com/Tueti",
       "description": "Displays the currently airing top movies in theaters around you.",
       "issues": []
     },

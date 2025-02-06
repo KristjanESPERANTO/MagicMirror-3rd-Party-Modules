@@ -1,15 +1,15 @@
 # Result of the module analysis
 
-Last update: 2025-02-05T17:39:15+01:00
+Last update: 2025-02-06T05:38:53+01:00
 
 ## Statistics
 
 |                      | number   |
 |:---------------------|:--------:|
 | modules analyzed     |   1216   |
-| maintainer           |    655   |
+| maintainer           |    656   |
 | modules with issues  |   1213   |
-| issues               |   6528   |
+| issues               |   6527   |
 | modules at github    |   1091   |
 | modules at gitlab    |     12   |
 | modules at bitbucket |      1   |
@@ -746,7 +746,7 @@ Last update: 2025-02-05T17:39:15+01:00
    - eslint                     ^9.17.0  →   ^9.19.0
    - eslint-config-prettier      ^9.1.0  →   ^10.0.1
    - eslint-plugin-prettier      ^5.2.1  →    ^5.2.3
-   - rollup                     ^4.29.1  →   ^4.34.3
+   - rollup                     ^4.29.1  →   ^4.34.4
    - typescript                  ^5.7.2  →    ^5.7.3
    - typescript-eslint          ^8.18.2  →   ^8.23.0
 
@@ -3925,7 +3925,7 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
    - eslint-config-prettier             ^9.1.0  →  ^10.0.1
    - eslint-plugin-prettier             ^5.1.3  →   ^5.2.3
    - prettier                           ^3.2.4  →   ^3.4.2
-   - rollup                             ^4.9.6  →  ^4.34.3
+   - rollup                             ^4.9.6  →  ^4.34.4
    - rollup-plugin-banner2              ^1.2.2  →   ^1.3.1
    - typescript                         ^5.3.3  →   ^5.7.3
    - yahoo-finance2                    ^2.11.3  →  ^2.13.3
@@ -5246,13 +5246,12 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
 5. Typo: Found `MagicMirror2` in file `package.json`: Replace it with `MagicMirror²`.
 6. Recommendation: Replace eslintrc by new flat config.
 
-### [MMM-MovieListings by mumblebaj](https://github.com/mumblebaj/MMM-MovieListings)
+### [MMM-MovieListings by Tueti](https://github.com/Tueti/MMM-MovieListings)
 
 1. `package.json` issue: No repository field.
 2. There are no keywords in 'package.json'. We would use them as tags on the module list page.
-3. Issues are not enabled in the GitHub repository. So users cannot report bugs. Please enable issues in your repo.
-4. Typo: Found `Magic Mirror` in file `MMM-MovieListings.js`: Replace it with `MagicMirror²`.
-5. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
+3. Typo: Found `Magic Mirror` in file `MMM-MovieListings.js`: Replace it with `MagicMirror²`.
+4. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
 
 ### [MMM-MP3Player by x3mEr](https://github.com/x3mEr/MMM-MP3Player)
 
@@ -5976,7 +5975,7 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
    - @typescript-eslint/eslint-plugin  ^6.20.0  →  ^8.23.0
    - eslint                            ^8.56.0  →  ^9.19.0
    - prettier                           ^3.2.5  →   ^3.4.2
-   - rollup                             ^4.9.6  →  ^4.34.3
+   - rollup                             ^4.9.6  →  ^4.34.4
    - rollup-plugin-banner2              ^1.2.2  →   ^1.3.1
    - typescript                         ^5.3.3  →   ^5.7.3
 
@@ -6200,7 +6199,7 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
    - chalk                    ^2.4.2  →   ^5.4.1
    - debounce                 ^1.2.0  →   ^2.2.0
    - prompts                  ^2.1.0  →   ^2.4.2
-   - rollup                  ^1.17.0  →  ^4.34.3
+   - rollup                  ^1.17.0  →  ^4.34.4
    - rollup-plugin-banner     ^0.2.0  →   ^0.2.1
    - rollup-plugin-commonjs  ^10.0.1  →  ^10.1.0
    - tslib                   ^1.10.0  →   ^2.8.1
@@ -7281,7 +7280,7 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
    - @rollup/plugin-typescript    ^11.1.6  →  ^12.1.2
    - eslint                        ^9.9.1  →  ^9.19.0
    - prettier                      ^3.3.3  →   ^3.4.2
-   - rollup                       ^4.21.1  →  ^4.34.3
+   - rollup                       ^4.21.1  →  ^4.34.4
    - rollup-plugin-banner2         ^1.3.0  →   ^1.3.1
    - typescript                    ^5.5.4  →   ^5.7.3
    - typescript-eslint             ^8.3.0  →  ^8.23.0
@@ -7788,8 +7787,8 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
    - @aws-sdk/client-lambda            ^3.0.0  →  ^3.741.0
    - @aws-sdk/client-s3                ^3.0.0  →  ^3.741.0
    - @aws-sdk/client-sts             ^3.738.0  →  ^3.741.0
-   - aws-cdk                           ^2.0.0  →  ^2.177.0
-   - aws-cdk-lib                       ^2.0.0  →  ^2.177.0
+   - aws-cdk                           ^2.0.0  →  ^2.178.0
+   - aws-cdk-lib                       ^2.0.0  →  ^2.178.0
    - constructs                       ^10.0.0  →   ^10.4.2
    - dotenv                           ^16.0.0  →   ^16.4.7
    - inquirer                          ^8.2.4  →   ^12.4.1
@@ -10280,7 +10279,7 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
 2. Recommendation: Found `axios` in file `node_helper.js`: Replace it with built-in fetch.
 3. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
 
-### [MMM-Zmanim by supermem613](https://github.com/supermem613/MMM-Zmanim)
+### [MMM-Zmanim by shmulyeng](https://github.com/shmulyeng/MMM-Zmanim)
 
 1. `package.json` issue: No description
 2. `package.json` issue: No repository field.
@@ -10292,7 +10291,7 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
 8. Found directory `node_modules`. This shouldn't be uploaded. Add `node_modules/`to `.gitignore`.
 9. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
 
-### [MMM-Zmanim by shmulyeng](https://github.com/shmulyeng/MMM-Zmanim)
+### [MMM-Zmanim by supermem613](https://github.com/supermem613/MMM-Zmanim)
 
 1. `package.json` issue: No description
 2. `package.json` issue: No repository field.

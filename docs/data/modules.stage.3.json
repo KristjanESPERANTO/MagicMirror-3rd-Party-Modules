@@ -956,7 +956,7 @@
     "maintainerURL": "",
     "description": "Display stock prices and charts using Yahoo Finance API.",
     "issues": [],
-    "stars": 41,
+    "stars": 42,
     "license": "MIT",
     "tags": [
       "stock",
@@ -989,7 +989,7 @@
     "maintainerURL": "",
     "description": "Show fullscreen slideshow in background from images in a local folder. Great for a photo frame.",
     "issues": [],
-    "stars": 155,
+    "stars": 158,
     "license": "MIT",
     "tags": [
       "background",
@@ -1146,7 +1146,7 @@
     "issues": [
       "There is no `package.json`. We need this file to gather information about the module for the module list page."
     ],
-    "stars": 10,
+    "stars": 11,
     "license": "MIT",
     "image": "wordclock.jpg"
   },
@@ -10464,18 +10464,16 @@
   {
     "name": "MMM-MovieListings",
     "category": "Entertainment / Misc",
-    "url": "https://github.com/mumblebaj/MMM-MovieListings",
-    "id": "mumblebaj/MMM-MovieListings",
-    "maintainer": "mumblebaj",
-    "maintainerURL": "",
+    "url": "https://github.com/Tueti/MMM-MovieListings",
+    "id": "Tueti/MMM-MovieListings",
+    "maintainer": "Tueti",
+    "maintainerURL": "https://github.com/Tueti",
     "description": "Displays the currently airing top movies in theaters around you.",
     "issues": [
       "`package.json` issue: No repository field.",
-      "There are no keywords in 'package.json'. We would use them as tags on the module list page.",
-      "Issues are not enabled in the GitHub repository. So users cannot report bugs. Please enable issues in your repo."
+      "There are no keywords in 'package.json'. We would use them as tags on the module list page."
     ],
-    "stars": 2,
-    "hasGithubIssues": false,
+    "stars": 20,
     "license": "MIT",
     "image": "image-1.jpg"
   },
@@ -20085,11 +20083,11 @@
   {
     "name": "MMM-Zmanim",
     "category": "Religion",
-    "url": "https://github.com/supermem613/MMM-Zmanim",
-    "id": "supermem613/MMM-Zmanim",
-    "maintainer": "supermem613",
+    "url": "https://github.com/shmulyeng/MMM-Zmanim",
+    "id": "shmulyeng/MMM-Zmanim",
+    "maintainer": "shmulyeng",
     "maintainerURL": "",
-    "description": "Displays Zmanim (Jewish calendar information).",
+    "description": "Displays daily Jewish calendar information.",
     "issues": [
       "`package.json` issue: No description",
       "`package.json` issue: No repository field.",
@@ -20104,11 +20102,11 @@
   {
     "name": "MMM-Zmanim",
     "category": "Religion",
-    "url": "https://github.com/shmulyeng/MMM-Zmanim",
-    "id": "shmulyeng/MMM-Zmanim",
-    "maintainer": "shmulyeng",
+    "url": "https://github.com/supermem613/MMM-Zmanim",
+    "id": "supermem613/MMM-Zmanim",
+    "maintainer": "supermem613",
     "maintainerURL": "",
-    "description": "Displays daily Jewish calendar information.",
+    "description": "Displays Zmanim (Jewish calendar information).",
     "issues": [
       "`package.json` issue: No description",
       "`package.json` issue: No repository field.",
