@@ -1299,7 +1299,7 @@
     "maintainerURL": "https://github.com/amitchone",
     "description": "A simple, lightweight birthday reminder - specified either via simple JSON file or in <code>config.js</code>. Supports multiple languages.",
     "issues": true,
-    "stars": 11,
+    "stars": 13,
     "license": "Apache-2.0",
     "image": "example.jpg",
     "defaultSortWeight": 2,
@@ -1391,7 +1391,7 @@
     "maintainerURL": "https://github.com/BKeyport",
     "description": "Quick Module to easily move modules up or down for blank space.",
     "issues": true,
-    "stars": 4,
+    "stars": 5,
     "license": "MIT",
     "tags": [
       "block",
@@ -3379,7 +3379,7 @@
     "license": "MIT",
     "image": "images-demo.jpg",
     "defaultSortWeight": 6,
-    "lastCommit": "2023-07-18T13:59:20-04:00"
+    "lastCommit": "2025-02-06T11:29:00-05:00"
   },
   {
     "name": "MMM-DailyPower",
@@ -11901,8 +11901,8 @@
     "hasGithubIssues": false,
     "license": "MIT",
     "image": "assets-demo_screenshot.jpg",
-    "defaultSortWeight": 10,
-    "lastCommit": "2025-02-05T09:06:10+01:00"
+    "defaultSortWeight": 11,
+    "lastCommit": "2025-02-06T15:28:31+01:00"
   },
   {
     "name": "MMM-NextEvent",
@@ -11978,7 +11978,7 @@
     "issues": true,
     "stars": 2,
     "license": "MIT",
-    "defaultSortWeight": 7,
+    "defaultSortWeight": 8,
     "lastCommit": "2023-02-06T18:07:18+02:00"
   },
   {

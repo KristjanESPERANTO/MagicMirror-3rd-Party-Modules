@@ -1,6 +1,6 @@
 # Result of the module analysis
 
-Last update: 2025-02-06T05:38:53+01:00
+Last update: 2025-02-06T17:39:41+01:00
 
 ## Statistics
 
@@ -9,7 +9,7 @@ Last update: 2025-02-06T05:38:53+01:00
 | modules analyzed     |   1216   |
 | maintainer           |    656   |
 | modules with issues  |   1213   |
-| issues               |   6527   |
+| issues               |   6528   |
 | modules at github    |   1091   |
 | modules at gitlab    |     12   |
 | modules at bitbucket |      1   |
@@ -5887,10 +5887,11 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
 4. Recommendation: Found `jshint` in file `Gruntfile.js`: Replace "jshint" by "eslint".
 5. Typo: Found `Magic Mirror` in file `MMM-NextCloud-Tasks.js`: Replace it with `MagicMirror²`.
 6. Recommendation: Found `https://cdnjs.cloudflare.com` in file `MMM-NextCloud-Tasks.js`: It looks like a package is loaded via CDN. It would be better if the package were installed locally via npm.
-7. Outdated: Found `MichMich/MagicMirror` in file `README.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
-8. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
-9. Deprecated: Found `"grunt"` in file `package.json`: Grunt is practically unmaintained. Move on to something better.
-10. Recommendation: Replace eslintrc by new flat config.
+7. Typo: Found `Magic Mirror` in file `README.md`: Replace it with `MagicMirror²`.
+8. Outdated: Found `MichMich/MagicMirror` in file `README.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
+9. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
+10. Deprecated: Found `"grunt"` in file `package.json`: Grunt is practically unmaintained. Move on to something better.
+11. Recommendation: Replace eslintrc by new flat config.
 
 ### [MMM-NextEvent by cure](https://github.com/cure/MMM-NextEvent)
 
