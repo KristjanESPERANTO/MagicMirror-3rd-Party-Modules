@@ -5107,8 +5107,8 @@
     "stars": 2,
     "license": "MIT",
     "image": "MMM-Fireworks.jpg",
-    "defaultSortWeight": 1,
-    "lastCommit": "2024-12-30T23:33:38+01:00"
+    "defaultSortWeight": 2,
+    "lastCommit": "2025-02-07T12:56:04+01:00"
   },
   {
     "name": "MMM-Fish",
@@ -6243,7 +6243,7 @@
     "license": "MIT",
     "image": "Traffic.jpg",
     "defaultSortWeight": 4,
-    "lastCommit": "2025-02-03T17:48:58+01:00"
+    "lastCommit": "2025-02-07T12:33:17+01:00"
   },
   {
     "name": "MMM-GooglePhotos",
@@ -6576,7 +6576,7 @@
     "maintainerURL": "https://github.com/SLFaleiro",
     "description": "\ud83c\udf83 Adds a spooky Halloween theme to your display by animating ghosts across the screen.",
     "issues": true,
-    "stars": 6,
+    "stars": 7,
     "license": "GPL-2.0",
     "image": "screenshot.jpg",
     "defaultSortWeight": 2,
@@ -10579,7 +10579,7 @@
     "license": "MIT",
     "image": "image-1.jpg",
     "defaultSortWeight": 3,
-    "lastCommit": "2025-02-05T21:50:30+01:00"
+    "lastCommit": "2025-02-07T14:41:53+01:00"
   },
   {
     "name": "MMM-MP3Player",
