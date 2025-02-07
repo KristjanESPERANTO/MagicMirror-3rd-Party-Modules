@@ -1762,7 +1762,7 @@
     "maintainerURL": "",
     "description": "Flicker the whole screen to prevent a burn-in effect on your display.",
     "issues": true,
-    "stars": 30,
+    "stars": 31,
     "license": "MIT",
     "tags": [
       "lcd",
@@ -1784,7 +1784,7 @@
     "maintainerURL": "",
     "description": "Display Dutch bus and some other public transports for a targeted set of bus stops.",
     "issues": true,
-    "stars": 3,
+    "stars": 4,
     "license": "MIT",
     "tags": [
       "bus",
@@ -1887,7 +1887,7 @@
     "maintainerURL": "",
     "description": "Extended calendar and event view.",
     "issues": false,
-    "stars": 101,
+    "stars": 103,
     "license": "MIT",
     "tags": [
       "calendar"
@@ -1905,7 +1905,7 @@
     "maintainerURL": "",
     "description": "Extended calendar and event view.",
     "issues": true,
-    "stars": 64,
+    "stars": 68,
     "license": "MIT",
     "tags": [
       "calendar",
@@ -1924,7 +1924,7 @@
     "maintainerURL": "",
     "description": "Extended calendar and event view. Show calendar as agenda.",
     "issues": true,
-    "stars": 23,
+    "stars": 24,
     "license": "MIT",
     "tags": [
       "calendar",
@@ -6872,7 +6872,7 @@
     "issues": true,
     "stars": 2,
     "license": "MIT",
-    "defaultSortWeight": 5,
+    "defaultSortWeight": 6,
     "lastCommit": "2023-02-07T00:27:42+01:00"
   },
   {

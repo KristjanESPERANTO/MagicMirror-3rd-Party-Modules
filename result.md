@@ -1,6 +1,6 @@
 # Result of the module analysis
 
-Last update: 2025-02-06T17:39:41+01:00
+Last update: 2025-02-07T05:39:05+01:00
 
 ## Statistics
 
@@ -7152,7 +7152,7 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
 ### [MMM-PublicTransportHafas by KristjanESPERANTO](https://github.com/KristjanESPERANTO/MMM-PublicTransportHafas)
 
 1. Information: There are updates for 1 dependencie(s):
-   - eslint-plugin-package-json  ^0.21.1  →  ^0.23.0
+   - eslint-plugin-package-json  ^0.21.1  →  ^0.23.1
 
 
 ### [MMM-PublicTransportVVO by ChristianGeie](https://github.com/ChristianGeie/MMM-PublicTransportVVO)
@@ -7783,13 +7783,13 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
 1. Typo: Found `Magic Mirror` in file `readme.md`: Replace it with `MagicMirror²`.
 2. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
 3. Information: There are updates for 11 dependencie(s):
-   - @aws-sdk/client-cloudformation    ^3.0.0  →  ^3.741.0
-   - @aws-sdk/client-iam               ^3.0.0  →  ^3.742.0
-   - @aws-sdk/client-lambda            ^3.0.0  →  ^3.741.0
-   - @aws-sdk/client-s3                ^3.0.0  →  ^3.741.0
-   - @aws-sdk/client-sts             ^3.738.0  →  ^3.741.0
-   - aws-cdk                           ^2.0.0  →  ^2.178.0
-   - aws-cdk-lib                       ^2.0.0  →  ^2.178.0
+   - @aws-sdk/client-cloudformation    ^3.0.0  →  ^3.743.0
+   - @aws-sdk/client-iam               ^3.0.0  →  ^3.743.0
+   - @aws-sdk/client-lambda            ^3.0.0  →  ^3.743.0
+   - @aws-sdk/client-s3                ^3.0.0  →  ^3.743.0
+   - @aws-sdk/client-sts             ^3.738.0  →  ^3.743.0
+   - aws-cdk                           ^2.0.0  →  ^2.178.1
+   - aws-cdk-lib                       ^2.0.0  →  ^2.178.1
    - constructs                       ^10.0.0  →   ^10.4.2
    - dotenv                           ^16.0.0  →   ^16.4.7
    - inquirer                          ^8.2.4  →   ^12.4.1

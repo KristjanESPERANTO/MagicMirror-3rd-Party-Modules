@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "2025-02-06T16:30:37.514Z",
+  "lastUpdate": "2025-02-07T04:30:30.227Z",
   "repositories": [
     {
       "id": "0lek/MMM-socialbicycles",
@@ -87,10 +87,10 @@
     },
     {
       "id": "73cirdan/MMM-bustimes",
-      "gitHubDataLastUpdate": "2025-01-16T04:30:20.903Z",
+      "gitHubDataLastUpdate": "2025-02-07T04:30:22.575Z",
       "gitHubData": {
         "issues": 1,
-        "stars": 3,
+        "stars": 4,
         "license": "MIT",
         "archived": false,
         "disabled": false,
@@ -801,7 +801,7 @@
     },
     {
       "id": "armybean/MMM-Callmonitor-Current-Call",
-      "gitHubDataLastUpdate": "2025-01-16T04:30:27.612Z",
+      "gitHubDataLastUpdate": "2025-02-07T04:30:28.784Z",
       "gitHubData": {
         "issues": 0,
         "stars": 2,
@@ -1025,7 +1025,7 @@
     },
     {
       "id": "balassy/MMM-Bubi",
-      "gitHubDataLastUpdate": "2025-01-16T04:30:18.279Z",
+      "gitHubDataLastUpdate": "2025-02-07T04:30:20.063Z",
       "gitHubData": {
         "issues": 10,
         "stars": 0,
@@ -2299,7 +2299,7 @@
     },
     {
       "id": "cgillinger/MMM-PollenSwe",
-      "gitHubDataLastUpdate": "2025-01-16T04:30:19.603Z",
+      "gitHubDataLastUpdate": "2025-02-07T04:30:21.302Z",
       "gitHubData": {
         "issues": 0,
         "stars": 0,
@@ -2411,7 +2411,7 @@
     },
     {
       "id": "choffmann/MMM-bunq",
-      "gitHubDataLastUpdate": "2025-01-16T04:30:20.081Z",
+      "gitHubDataLastUpdate": "2025-02-07T04:30:21.772Z",
       "gitHubData": {
         "issues": 1,
         "stars": 6,
@@ -3069,7 +3069,7 @@
     },
     {
       "id": "da4throux/MMM-Buller",
-      "gitHubDataLastUpdate": "2025-01-16T04:30:19.184Z",
+      "gitHubDataLastUpdate": "2025-02-07T04:30:20.853Z",
       "gitHubData": {
         "issues": 1,
         "stars": 6,
@@ -4105,7 +4105,7 @@
     },
     {
       "id": "efritz09/MMM-Caltrain",
-      "gitHubDataLastUpdate": "2025-01-16T04:30:28.070Z",
+      "gitHubDataLastUpdate": "2025-02-07T04:30:29.201Z",
       "gitHubData": {
         "issues": 0,
         "stars": 0,
@@ -5645,7 +5645,7 @@
     },
     {
       "id": "heskja/MMM-CalendarWeek",
-      "gitHubDataLastUpdate": "2025-01-16T04:30:27.113Z",
+      "gitHubDataLastUpdate": "2025-02-07T04:30:28.323Z",
       "gitHubData": {
         "issues": 31,
         "stars": 55,
@@ -6821,7 +6821,7 @@
     },
     {
       "id": "JonasTriki/MMM-Bysykkel",
-      "gitHubDataLastUpdate": "2025-01-16T04:30:21.821Z",
+      "gitHubDataLastUpdate": "2025-02-07T04:30:23.402Z",
       "gitHubData": {
         "issues": 0,
         "stars": 10,
@@ -6947,7 +6947,7 @@
     },
     {
       "id": "jsteel715/MMM-Brewdog",
-      "gitHubDataLastUpdate": "2025-01-16T04:30:16.895Z",
+      "gitHubDataLastUpdate": "2025-02-07T04:30:18.652Z",
       "gitHubData": {
         "issues": 0,
         "stars": 1,
@@ -9145,21 +9145,21 @@
     },
     {
       "id": "MMM-CalendarExt2/MMM-CalendarExt2",
-      "gitHubDataLastUpdate": "2025-01-16T04:30:23.228Z",
+      "gitHubDataLastUpdate": "2025-02-07T04:30:24.415Z",
       "gitHubData": {
         "issues": 32,
-        "stars": 101,
+        "stars": 103,
         "license": "MIT",
         "archived": false,
         "disabled": false,
         "defaultBranch": "main",
         "has_issues": true,
-        "lastCommit": "2024-12-05T23:35:23Z"
+        "lastCommit": "2025-02-02T01:21:21Z"
       }
     },
     {
       "id": "MMM-CalendarExt2/MMM-CalendarExtMinimonth",
-      "gitHubDataLastUpdate": "2025-01-16T04:30:25.347Z",
+      "gitHubDataLastUpdate": "2025-02-07T04:30:26.504Z",
       "gitHubData": {
         "issues": 1,
         "stars": 7,
@@ -9173,7 +9173,7 @@
     },
     {
       "id": "MMM-CalendarExt2/MMM-CalendarExtPlan",
-      "gitHubDataLastUpdate": "2025-01-16T04:30:25.753Z",
+      "gitHubDataLastUpdate": "2025-02-07T04:30:26.925Z",
       "gitHubData": {
         "issues": 0,
         "stars": 8,
@@ -9187,7 +9187,7 @@
     },
     {
       "id": "MMM-CalendarExt2/MMM-CalendarExtTimeline",
-      "gitHubDataLastUpdate": "2025-01-16T04:30:26.247Z",
+      "gitHubDataLastUpdate": "2025-02-07T04:30:27.402Z",
       "gitHubData": {
         "issues": 6,
         "stars": 17,
@@ -9243,9 +9243,9 @@
     },
     {
       "id": "MMRIZE/MMM-CalDAV",
-      "gitHubDataLastUpdate": "2025-01-16T04:30:22.816Z",
+      "gitHubDataLastUpdate": "2025-02-07T04:30:23.876Z",
       "gitHubData": {
-        "issues": 4,
+        "issues": 3,
         "stars": 8,
         "license": "MIT",
         "archived": false,
@@ -9257,10 +9257,10 @@
     },
     {
       "id": "MMRIZE/MMM-CalendarExt3",
-      "gitHubDataLastUpdate": "2025-01-16T04:30:23.637Z",
+      "gitHubDataLastUpdate": "2025-02-07T04:30:24.830Z",
       "gitHubData": {
-        "issues": 3,
-        "stars": 64,
+        "issues": 1,
+        "stars": 68,
         "license": "MIT",
         "archived": false,
         "disabled": false,
@@ -9271,10 +9271,10 @@
     },
     {
       "id": "MMRIZE/MMM-CalendarExt3Agenda",
-      "gitHubDataLastUpdate": "2025-01-16T04:30:24.103Z",
+      "gitHubDataLastUpdate": "2025-02-07T04:30:25.224Z",
       "gitHubData": {
-        "issues": 1,
-        "stars": 23,
+        "issues": 0,
+        "stars": 24,
         "license": "MIT",
         "archived": false,
         "disabled": false,
@@ -9285,7 +9285,7 @@
     },
     {
       "id": "MMRIZE/MMM-CalendarExt3Journal",
-      "gitHubDataLastUpdate": "2025-01-16T04:30:24.531Z",
+      "gitHubDataLastUpdate": "2025-02-07T04:30:25.644Z",
       "gitHubData": {
         "issues": 0,
         "stars": 10,
@@ -9299,7 +9299,7 @@
     },
     {
       "id": "MMRIZE/MMM-CalendarExt3Timeline",
-      "gitHubDataLastUpdate": "2025-01-16T04:30:24.931Z",
+      "gitHubDataLastUpdate": "2025-02-07T04:30:26.014Z",
       "gitHubData": {
         "issues": 2,
         "stars": 10,
@@ -11973,7 +11973,7 @@
     },
     {
       "id": "ptrbld/MMM-Button",
-      "gitHubDataLastUpdate": "2025-01-16T04:30:21.345Z",
+      "gitHubDataLastUpdate": "2025-02-07T04:30:22.998Z",
       "gitHubData": {
         "issues": 0,
         "stars": 19,
@@ -12099,7 +12099,7 @@
     },
     {
       "id": "qunu/MMM-CalendarTodayTomorrow",
-      "gitHubDataLastUpdate": "2025-01-16T04:30:26.693Z",
+      "gitHubDataLastUpdate": "2025-02-07T04:30:27.870Z",
       "gitHubData": {
         "issues": 0,
         "stars": 1,
@@ -12197,7 +12197,7 @@
     },
     {
       "id": "Rallymen007/camera",
-      "gitHubDataLastUpdate": "2025-01-16T16:30:15.981Z",
+      "gitHubDataLastUpdate": "2025-02-07T04:30:30.181Z",
       "gitHubData": {
         "issues": 0,
         "stars": 1,
@@ -12505,7 +12505,7 @@
     },
     {
       "id": "retroflex/MMM-BrawlStars",
-      "gitHubDataLastUpdate": "2025-01-16T04:30:15.973Z",
+      "gitHubDataLastUpdate": "2025-02-07T04:30:17.710Z",
       "gitHubData": {
         "issues": 1,
         "stars": 2,
@@ -12729,7 +12729,7 @@
     },
     {
       "id": "rseidt/MMM-bringList",
-      "gitHubDataLastUpdate": "2025-01-16T04:30:17.818Z",
+      "gitHubDataLastUpdate": "2025-02-07T04:30:19.644Z",
       "gitHubData": {
         "issues": 3,
         "stars": 12,
@@ -14269,7 +14269,7 @@
     },
     {
       "id": "StefanNienhuis/MMM-Buienradar",
-      "gitHubDataLastUpdate": "2025-01-16T04:30:18.763Z",
+      "gitHubDataLastUpdate": "2025-02-07T04:30:20.430Z",
       "gitHubData": {
         "issues": 4,
         "stars": 6,
@@ -16131,7 +16131,7 @@
     },
     {
       "id": "werthdavid/MMM-Bring",
-      "gitHubDataLastUpdate": "2025-01-16T04:30:17.356Z",
+      "gitHubDataLastUpdate": "2025-02-07T04:30:19.104Z",
       "gitHubData": {
         "issues": 8,
         "stars": 31,
@@ -16145,10 +16145,10 @@
     },
     {
       "id": "werthdavid/MMM-BurnIn",
-      "gitHubDataLastUpdate": "2025-01-16T04:30:20.489Z",
+      "gitHubDataLastUpdate": "2025-02-07T04:30:22.138Z",
       "gitHubData": {
         "issues": 1,
-        "stars": 30,
+        "stars": 31,
         "license": "MIT",
         "archived": false,
         "disabled": false,
@@ -16551,7 +16551,7 @@
     },
     {
       "id": "yashatgit/MMM-Breathwork",
-      "gitHubDataLastUpdate": "2025-01-16T04:30:16.444Z",
+      "gitHubDataLastUpdate": "2025-02-07T04:30:18.187Z",
       "gitHubData": {
         "issues": 1,
         "stars": 10,
@@ -16831,7 +16831,7 @@
     },
     {
       "id": "zzhenney/MMM-Caltrain",
-      "gitHubDataLastUpdate": "2025-01-16T04:30:28.540Z",
+      "gitHubDataLastUpdate": "2025-02-07T04:30:29.668Z",
       "gitHubData": {
         "issues": 2,
         "stars": 0,
