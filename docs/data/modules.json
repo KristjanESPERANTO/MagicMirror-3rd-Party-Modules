@@ -686,7 +686,7 @@
     "maintainer": "KristjanESPERANTO",
     "maintainerURL": "",
     "description": "Display pharmacies that are on emergency duty in Germany.",
-    "issues": false,
+    "issues": true,
     "stars": 1,
     "license": "ISC",
     "tags": [
@@ -1886,14 +1886,14 @@
     "maintainer": "MMM-CalendarExt2",
     "maintainerURL": "",
     "description": "Extended calendar and event view.",
-    "issues": false,
+    "issues": true,
     "stars": 103,
     "license": "MIT",
     "tags": [
       "calendar"
     ],
     "image": "docs-Configuration-Views-legend-full-example.jpg",
-    "defaultSortWeight": -3,
+    "defaultSortWeight": -2,
     "lastCommit": "2025-02-02T02:21:21+01:00"
   },
   {
@@ -2206,7 +2206,7 @@
     "maintainer": "shbatm",
     "maintainerURL": "https://github.com/shbatm",
     "description": "Rotate modules, to save space on screen.",
-    "issues": false,
+    "issues": true,
     "stars": 43,
     "license": "MIT",
     "tags": [
@@ -2219,7 +2219,7 @@
       "pages"
     ],
     "image": "img-example1-slide.jpg",
-    "defaultSortWeight": -1,
+    "defaultSortWeight": 0,
     "lastCommit": "2025-02-02T01:26:49+01:00"
   },
   {
@@ -2737,14 +2737,14 @@
     "maintainerURL": "",
     "description": "Countdown or countup for events. Revamped 2024.",
     "issues": true,
-    "stars": 10,
+    "stars": 11,
     "license": "MIT",
     "tags": [
       "count",
       "customelementtime"
     ],
     "image": "screenshot.jpg",
-    "defaultSortWeight": 2,
+    "defaultSortWeight": 1,
     "lastCommit": "2024-08-09T10:21:40+02:00"
   },
   {
@@ -5108,7 +5108,7 @@
     "license": "MIT",
     "image": "MMM-Fireworks.jpg",
     "defaultSortWeight": 2,
-    "lastCommit": "2025-02-07T12:56:04+01:00"
+    "lastCommit": "2025-02-07T22:20:58+01:00"
   },
   {
     "name": "MMM-Fish",
@@ -9443,8 +9443,8 @@
       "recipie"
     ],
     "image": "MMM-MealieMenu-screenshot.jpg",
-    "defaultSortWeight": 0,
-    "lastCommit": "2024-10-23T05:05:54+00:00"
+    "defaultSortWeight": -1,
+    "lastCommit": "2025-02-07T16:51:05-07:00"
   },
   {
     "name": "MMM-MealieShoppingList",
@@ -10579,7 +10579,7 @@
     "license": "MIT",
     "image": "image-1.jpg",
     "defaultSortWeight": 3,
-    "lastCommit": "2025-02-07T14:41:53+01:00"
+    "lastCommit": "2025-02-07T18:50:28+01:00"
   },
   {
     "name": "MMM-MP3Player",
@@ -11662,7 +11662,7 @@
     ],
     "image": ".github-preview.bubbles.jpg",
     "defaultSortWeight": 0,
-    "lastCommit": "2025-01-27T17:06:29+00:00"
+    "lastCommit": "2025-02-08T00:56:13+00:00"
   },
   {
     "name": "MMM-Netatmo-Presence",
