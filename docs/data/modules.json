@@ -2646,7 +2646,7 @@
     "license": "ISC",
     "image": "doc_images-playground_example.jpg",
     "defaultSortWeight": 4,
-    "lastCommit": "2025-01-17T07:36:00-06:00"
+    "lastCommit": "2025-02-08T08:09:31-07:00"
   },
   {
     "name": "MMM-Confucius-say",
@@ -3207,7 +3207,7 @@
     "maintainerURL": "",
     "description": "Simple display of dad jokes from icanhazdadjoke.com.",
     "issues": true,
-    "stars": 9,
+    "stars": 8,
     "hasGithubIssues": false,
     "license": "MIT",
     "tags": [
@@ -3519,7 +3519,7 @@
     "maintainerURL": "",
     "description": "Display train arrivals/departures (unofficial frontend for db navigator) with details for Germany.",
     "issues": true,
-    "stars": 2,
+    "stars": 3,
     "license": "MIT",
     "image": "dbfApp_dark.jpg",
     "defaultSortWeight": 9,
@@ -8657,8 +8657,8 @@
       "smart home"
     ],
     "image": "MMM-Linky.jpg",
-    "defaultSortWeight": 3,
-    "lastCommit": "2025-02-04T18:42:54+01:00"
+    "defaultSortWeight": 1,
+    "lastCommit": "2025-02-08T14:52:13+01:00"
   },
   {
     "name": "MMM-Liquipedia-Matches",
@@ -9803,6 +9803,19 @@
     "stars": 20,
     "defaultSortWeight": 901,
     "lastCommit": "2016-05-04T20:57:42-04:00"
+  },
+  {
+    "name": "MM-orrery",
+    "category": "Entertainment / Misc",
+    "url": "https://github.com/hoyski/MM-orrery",
+    "id": "hoyski/MM-orrery",
+    "maintainer": "hoyski",
+    "maintainerURL": "https://github.com/hoyski",
+    "description": "Display all of the planets and their current positions relative to the Sun",
+    "issues": true,
+    "stars": 6,
+    "defaultSortWeight": 4,
+    "lastCommit": "2025-02-08T06:10:18-05:00"
   },
   {
     "name": "MM-Remote",
@@ -15388,7 +15401,7 @@
     ],
     "image": "images-screenshot-2.jpg",
     "defaultSortWeight": 3,
-    "lastCommit": "2024-10-17T14:24:45+02:00"
+    "lastCommit": "2025-02-08T12:42:22+02:00"
   },
   {
     "name": "MMM-RunningForecast",

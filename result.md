@@ -1,16 +1,16 @@
 # Result of the module analysis
 
-Last update: 2025-02-08T05:41:32+01:00
+Last update: 2025-02-08T17:39:18+01:00
 
 ## Statistics
 
 |                      | number   |
 |:---------------------|:--------:|
-| modules analyzed     |   1216   |
-| maintainer           |    656   |
-| modules with issues  |   1216   |
-| issues               |   6531   |
-| modules at github    |   1091   |
+| modules analyzed     |   1217   |
+| maintainer           |    657   |
+| modules with issues  |   1217   |
+| issues               |   6532   |
+| modules at github    |   1092   |
 | modules at gitlab    |     12   |
 | modules at bitbucket |      1   |
 
@@ -4275,10 +4275,12 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
 
 ### [MMM-Linky by 2hdlockness](https://github.com/2hdlockness/MMM-Linky)
 
-1. Recommendation: Found `https://cdn.jsdelivr.net` in file `MMM-Linky.js`: It looks like a package is loaded via CDN. It would be better if the package were installed locally via npm.
-2. Recommendation: Found `axios` in file `node_helper.js`: Replace it with built-in fetch.
-3. Recommendation: Found `axios` in file `package.json`: Replace it with built-in fetch.
-4. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
+1. Information: There are updates for 4 dependencie(s):
+   - @stylistic/eslint-plugin     ^3.0.1  →   ^3.1.0
+   - esbuild                     ^0.24.2  →  ^0.25.0
+   - eslint                      ^9.19.0  →  ^9.20.0
+   - eslint-plugin-package-json  ^0.22.0  →  ^0.24.0
+
 
 ### [MMM-Liquipedia-Matches by buxxi](https://github.com/buxxi/MMM-Liquipedia-Matches)
 
@@ -4655,7 +4657,7 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
    - @eslint/json                      ^0.9.0  →  ^0.10.0
    - @eslint/markdown                  ^6.2.1  →   ^6.2.2
    - @stylistic/eslint-plugin         ^2.12.1  →   ^3.1.0
-   - eslint-plugin-package-json       ^0.19.0  →  ^0.23.1
+   - eslint-plugin-package-json       ^0.19.0  →  ^0.24.0
    - lint-staged                      ^15.3.0  →  ^15.4.3
    - markdownlint-cli                 ^0.43.0  →  ^0.44.0
    - semantic-release                 ^24.1.0  →  ^24.2.1
@@ -4843,6 +4845,13 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
 4. Recommendation: The README seems not to have an install instruction (the words 'install' or 'installation' are missing). Please add one.
 5. Recommendation: Found `"node-fetch"` in file `node_helper.js`: Replace it with built-in fetch.
 6. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
+
+### [MM-orrery by hoyski](https://github.com/hoyski/MM-orrery)
+
+1. There is no `package.json`. We need this file to gather information about the module for the module list page.
+2. Recommendation: Module name doesn't follow the recommended pattern (it doesn't start with `MMM-`). Consider renaming your module.
+3. Warning: No LICENSE file.
+4. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
 
 ### [MM-Remote by Klettner](https://github.com/Klettner/MM-Remote)
 
@@ -7176,7 +7185,7 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
    - @eslint/js                  ^9.19.0  →  ^9.20.0
    - @stylistic/eslint-plugin     ^3.0.1  →   ^3.1.0
    - eslint                      ^9.19.0  →  ^9.20.0
-   - eslint-plugin-package-json  ^0.21.1  →  ^0.23.1
+   - eslint-plugin-package-json  ^0.21.1  →  ^0.24.0
 
 
 ### [MMM-PublicTransportVVO by ChristianGeie](https://github.com/ChristianGeie/MMM-PublicTransportVVO)

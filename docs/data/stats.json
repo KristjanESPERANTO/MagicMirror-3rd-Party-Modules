@@ -1,11 +1,11 @@
 {
-  "moduleCounter": 1216,
+  "moduleCounter": 1217,
   "modulesWithImageCounter": 854,
-  "modulesWithIssuesCounter": 1216,
-  "issueCounter": 6531,
-  "lastUpdate": "2025-02-08T05:41:32+01:00",
+  "modulesWithIssuesCounter": 1217,
+  "issueCounter": 6532,
+  "lastUpdate": "2025-02-08T17:39:18+01:00",
   "repositoryHoster": {
-    "github": 1091,
+    "github": 1092,
     "gitlab": 12,
     "bitbucket": 1
   },
@@ -428,6 +428,7 @@
     "jclarke54": 1,
     "muilpp": 1,
     "ZakarFin": 1,
+    "hoyski": 1,
     "eerotal": 1,
     "motey": 1,
     "sthuber90": 1,

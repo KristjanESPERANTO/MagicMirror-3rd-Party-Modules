@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "2025-02-08T04:30:16.682Z",
+  "lastUpdate": "2025-02-08T16:30:13.478Z",
   "modules": [
     {
       "name": "MMM-01ZM",
@@ -5935,6 +5935,16 @@
       "description": "Simple player to play your music.",
       "issues": [],
       "outdated": "Abandoned. No reactions to issues since years. No installation instructions. It no longer seems to work."
+    },
+    {
+      "name": "MM-orrery",
+      "category": "Entertainment / Misc",
+      "url": "https://github.com/hoyski/MM-orrery",
+      "id": "hoyski/MM-orrery",
+      "maintainer": "hoyski",
+      "maintainerURL": "https://github.com/hoyski",
+      "description": "Display all of the planets and their current positions relative to the Sun",
+      "issues": []
     },
     {
       "name": "MM-Remote",

@@ -2267,7 +2267,7 @@
     "maintainerURL": "",
     "description": "Simple display of dad jokes from icanhazdadjoke.com.",
     "issues": [],
-    "stars": 9,
+    "stars": 8,
     "hasGithubIssues": false,
     "license": "MIT"
   },
@@ -2509,7 +2509,7 @@
     "maintainerURL": "",
     "description": "Display train arrivals/departures (unofficial frontend for db navigator) with details for Germany.",
     "issues": [],
-    "stars": 2
+    "stars": 3
   },
   {
     "name": "MMM-DCMetroTimes",
@@ -7017,6 +7017,17 @@
     "issues": [],
     "outdated": "Abandoned. No reactions to issues since years. No installation instructions. It no longer seems to work.",
     "stars": 20
+  },
+  {
+    "name": "MM-orrery",
+    "category": "Entertainment / Misc",
+    "url": "https://github.com/hoyski/MM-orrery",
+    "id": "hoyski/MM-orrery",
+    "maintainer": "hoyski",
+    "maintainerURL": "https://github.com/hoyski",
+    "description": "Display all of the planets and their current positions relative to the Sun",
+    "issues": [],
+    "stars": 6
   },
   {
     "name": "MM-Remote",
