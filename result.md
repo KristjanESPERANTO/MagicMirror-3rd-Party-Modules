@@ -1,6 +1,6 @@
 # Result of the module analysis
 
-Last update: 2025-02-08T17:39:18+01:00
+Last update: 2025-02-09T05:38:42+01:00
 
 ## Statistics
 
@@ -8,8 +8,8 @@ Last update: 2025-02-08T17:39:18+01:00
 |:---------------------|:--------:|
 | modules analyzed     |   1217   |
 | maintainer           |    657   |
-| modules with issues  |   1217   |
-| issues               |   6532   |
+| modules with issues  |   1215   |
+| issues               |   6530   |
 | modules at github    |   1092   |
 | modules at gitlab    |     12   |
 | modules at bitbucket |      1   |
@@ -1934,21 +1934,6 @@ Last update: 2025-02-08T17:39:18+01:00
 3. Recommendation: Found `XMLHttpRequest` in file `MMM-EarthquakeMonitor.js`: Replace it with built-in fetch.
 4. Recommendation: The README seems not to have an install instruction (the words 'install' or 'installation' are missing). Please add one.
 5. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
-
-### [MMM-EasyPix by KristjanESPERANTO](https://github.com/KristjanESPERANTO/MMM-EasyPix)
-
-1. Information: There are updates for 10 dependencie(s):
-   - @eslint/js                  ^9.17.0  →   ^9.20.0
-   - @stylistic/eslint-plugin    ^2.12.1  →    ^3.1.0
-   - cspell                      ^8.17.1  →   ^8.17.3
-   - eslint                      ^9.17.0  →   ^9.20.0
-   - globals                    ^15.13.0  →  ^15.14.0
-   - lint-staged                ^15.2.11  →   ^15.4.3
-   - markdownlint-cli            ^0.43.0  →   ^0.44.0
-   - stylelint                  ^16.12.0  →  ^16.14.1
-   - stylelint-config-standard   ^36.0.1  →   ^37.0.0
-   - stylelint-prettier           ^5.0.2  →    ^5.0.3
-
 
 ### [MMM-Ecobee by parnic](https://github.com/parnic/MMM-Ecobee)
 
@@ -9918,17 +9903,6 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
 4. Recommendation: The README seems not to have an update instruction (the word 'update' is missing). Please add one.
 5. Typo: Found `Magic Mirror` in file `package.json`: Replace it with `MagicMirror²`.
 6. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
-
-### [MMM-WebSpeechTTS by KristjanESPERANTO](https://github.com/KristjanESPERANTO/MMM-WebSpeechTTS)
-
-1. Information: There are updates for 6 dependencie(s):
-   - @eslint/js                 ^9.16.0  →   ^9.20.0
-   - @stylistic/eslint-plugin   ^2.12.0  →    ^3.1.0
-   - cspell                     ^8.16.1  →   ^8.17.3
-   - eslint                     ^9.16.0  →   ^9.20.0
-   - globals                   ^15.13.0  →  ^15.14.0
-   - markdownlint-cli           ^0.43.0  →   ^0.44.0
-
 
 ### [MMM-Webuntis by HeikoGr](https://github.com/HeikoGr/MMM-Webuntis)
 

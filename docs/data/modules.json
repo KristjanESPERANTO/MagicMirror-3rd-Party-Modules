@@ -3934,7 +3934,7 @@
     "maintainerURL": "",
     "description": "Station monitor for the Dresden/Germany local transport (DVB) bus, tram and train system.",
     "issues": true,
-    "stars": 13,
+    "stars": 14,
     "license": "MIT",
     "tags": [
       "dvb",
@@ -4123,7 +4123,7 @@
     "maintainer": "KristjanESPERANTO",
     "maintainerURL": "",
     "description": "The easiest way to show pictures on your mirror.",
-    "issues": true,
+    "issues": false,
     "stars": 9,
     "license": "MIT",
     "tags": [
@@ -4132,8 +4132,8 @@
       "pictures"
     ],
     "image": "pix-earth.jpg",
-    "defaultSortWeight": 0,
-    "lastCommit": "2024-12-18T00:04:25+01:00"
+    "defaultSortWeight": -1,
+    "lastCommit": "2025-02-08T18:56:56+01:00"
   },
   {
     "name": "MMM-Ecobee",
@@ -18207,8 +18207,8 @@
     ],
     "license": "MIT",
     "image": "screenshots-01-simple_config.jpg",
-    "defaultSortWeight": 6,
-    "lastCommit": "2021-05-09T21:25:54-04:00"
+    "defaultSortWeight": 5,
+    "lastCommit": "2025-02-08T11:10:35-06:00"
   },
   {
     "name": "MMM-TrainConnections",
@@ -19587,7 +19587,7 @@
     "maintainer": "KristjanESPERANTO",
     "maintainerURL": "",
     "description": "A Text-To-Speech module which uses the Web Speech API of the browser. It is in an early stage of development. So far only German is supported.",
-    "issues": true,
+    "issues": false,
     "stars": 3,
     "license": "MIT",
     "tags": [
@@ -19596,8 +19596,8 @@
       "webspeech"
     ],
     "image": ".github-TTS.jpg",
-    "defaultSortWeight": 0,
-    "lastCommit": "2024-12-10T14:09:12+01:00"
+    "defaultSortWeight": -1,
+    "lastCommit": "2025-02-08T19:03:00+01:00"
   },
   {
     "name": "MMM-Webuntis",
