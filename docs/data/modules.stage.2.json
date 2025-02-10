@@ -3334,7 +3334,7 @@
     "maintainerURL": "https://github.com/jimbydude",
     "description": "This is a fork of Ebens module above. This version can handle multi-user and uses MMM-Face-Reco-DNN to hide/show modules based on user logged in.",
     "issues": [],
-    "stars": 11,
+    "stars": 12,
     "hasGithubIssues": false,
     "license": "MIT"
   },
@@ -3359,7 +3359,7 @@
     "maintainerURL": "https://github.com/EbenKouao",
     "description": "This module allows you to access profiles using face recognition. This works on the back of OpenCV face recognition module. Program this script to control applicances e.g. Smart Plugs, or lights based on an individual's face profile being recognized.",
     "issues": [],
-    "stars": 84,
+    "stars": 86,
     "license": "MIT"
   },
   {
@@ -3371,7 +3371,7 @@
     "maintainerURL": "",
     "description": "Yet Another Facial Recognition system, with admin tooling to make all the AI/ML easy to maintain and supporting hardware acceleration.",
     "issues": [],
-    "stars": 10,
+    "stars": 11,
     "license": "NOASSERTION"
   },
   {
@@ -3432,7 +3432,7 @@
     "maintainerURL": "",
     "description": "Can be used for adding notes using fast and easy web interface.",
     "issues": [],
-    "stars": 7,
+    "stars": 8,
     "license": "MIT"
   },
   {
@@ -3493,7 +3493,7 @@
     "maintainerURL": "",
     "description": "Wake up, $USER... A module giving you the cyberpunk feeling in the morning that you deserve. The Matrix has you...",
     "issues": [],
-    "stars": 4,
+    "stars": 5,
     "license": "ISC"
   },
   {
@@ -8425,18 +8425,6 @@
   {
     "name": "MMM-NewsAPI",
     "category": "News / Information",
-    "url": "https://github.com/totoluto/MMM-NewsAPI",
-    "id": "totoluto/MMM-NewsAPI",
-    "maintainer": "totoluto",
-    "maintainerURL": "https://github.com/totoluto",
-    "description": "Get top headlines from <a target=\"_blank\" href=\"https://newsapi.org\">newsapi.org</a>.",
-    "issues": [],
-    "stars": 0,
-    "license": "MIT"
-  },
-  {
-    "name": "MMM-NewsAPI",
-    "category": "News / Information",
     "url": "https://github.com/mumblebaj/MMM-NewsAPI",
     "id": "mumblebaj/MMM-NewsAPI",
     "maintainer": "mumblebaj",
@@ -8444,6 +8432,18 @@
     "description": "Get news from <a target=\"_blank\" href=\"https://newsapi.org\">newsapi.org</a>.",
     "issues": [],
     "stars": 11,
+    "license": "MIT"
+  },
+  {
+    "name": "MMM-NewsAPI",
+    "category": "News / Information",
+    "url": "https://github.com/totoluto/MMM-NewsAPI",
+    "id": "totoluto/MMM-NewsAPI",
+    "maintainer": "totoluto",
+    "maintainerURL": "https://github.com/totoluto",
+    "description": "Get top headlines from <a target=\"_blank\" href=\"https://newsapi.org\">newsapi.org</a>.",
+    "issues": [],
+    "stars": 0,
     "license": "MIT"
   },
   {

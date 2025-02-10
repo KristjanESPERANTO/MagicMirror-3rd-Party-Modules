@@ -1,6 +1,6 @@
 # Result of the module analysis
 
-Last update: 2025-02-09T17:38:48+01:00
+Last update: 2025-02-10T05:38:50+01:00
 
 ## Statistics
 
@@ -8,8 +8,8 @@ Last update: 2025-02-09T17:38:48+01:00
 |:---------------------|:--------:|
 | modules analyzed     |   1217   |
 | maintainer           |    657   |
-| modules with issues  |   1217   |
-| issues               |   6532   |
+| modules with issues  |   1216   |
+| issues               |   6531   |
 | modules at github    |   1092   |
 | modules at gitlab    |     12   |
 | modules at bitbucket |      1   |
@@ -4272,15 +4272,6 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
 2. Warning: No LICENSE file.
 3. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
 
-### [MMM-Linky by 2hdlockness](https://github.com/2hdlockness/MMM-Linky)
-
-1. Information: There are updates for 4 dependencie(s):
-   - @stylistic/eslint-plugin     ^3.0.1  →   ^3.1.0
-   - esbuild                     ^0.24.2  →  ^0.25.0
-   - eslint                      ^9.19.0  →  ^9.20.0
-   - eslint-plugin-package-json  ^0.22.0  →  ^0.25.0
-
-
 ### [MMM-Liquipedia-Matches by buxxi](https://github.com/buxxi/MMM-Liquipedia-Matches)
 
 1. There are no keywords in 'package.json'. We would use them as tags on the module list page.
@@ -5854,19 +5845,19 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
    - qrcode  1.5.1  →  1.5.4
 
 
-### [MMM-NewsAPI by totoluto](https://github.com/totoluto/MMM-NewsAPI)
-
-1. Typo: Found `Magic Mirror` in file `README.md`: Replace it with `MagicMirror²`.
-2. Recommendation: The README seems not to have an update instruction (the word 'update' is missing). Please add one.
-3. Typo: Found `Magic Mirror` in file `package.json`: Replace it with `MagicMirror²`.
-4. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
-
 ### [MMM-NewsAPI by mumblebaj](https://github.com/mumblebaj/MMM-NewsAPI)
 
 1. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
 2. ESLint issues:
    - MMM-NewsAPI.js: Line 164, Column 23: 'qr' is assigned a value but never used. (rule: no-unused-vars)
 
+
+### [MMM-NewsAPI by totoluto](https://github.com/totoluto/MMM-NewsAPI)
+
+1. Typo: Found `Magic Mirror` in file `README.md`: Replace it with `MagicMirror²`.
+2. Recommendation: The README seems not to have an update instruction (the word 'update' is missing). Please add one.
+3. Typo: Found `Magic Mirror` in file `package.json`: Replace it with `MagicMirror²`.
+4. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
 
 ### [MMM-NewsFeedTicker by justjim1220](https://github.com/justjim1220/MMM-NewsFeedTicker)
 

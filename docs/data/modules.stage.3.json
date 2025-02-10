@@ -4620,7 +4620,7 @@
       "There are no keywords in 'package.json'. We would use them as tags on the module list page.",
       "Issues are not enabled in the GitHub repository. So users cannot report bugs. Please enable issues in your repo."
     ],
-    "stars": 11,
+    "stars": 12,
     "hasGithubIssues": false,
     "license": "MIT",
     "image": "img-readme-face-recognition-guest-smai.jpg"
@@ -4657,7 +4657,7 @@
     "issues": [
       "There is no `package.json`. We need this file to gather information about the module for the module list page."
     ],
-    "stars": 84,
+    "stars": 86,
     "license": "MIT",
     "image": "img-readme-face-recognition-guest-smai.jpg"
   },
@@ -4673,7 +4673,7 @@
       "Issue: The license in the package.json (MIT) doesn't match the license file (NOASSERTION).",
       "No compatible or wrong license field in 'package.json' or LICENSE file. Without that, we can't use an image."
     ],
-    "stars": 10,
+    "stars": 11,
     "license": "NOASSERTION",
     "tags": [
       "facial recognition"
@@ -4761,7 +4761,7 @@
     "issues": [
       "There is no `package.json`. We need this file to gather information about the module for the module list page."
     ],
-    "stars": 7,
+    "stars": 8,
     "license": "MIT",
     "image": "preview-preview.jpg"
   },
@@ -4839,7 +4839,7 @@
     "issues": [
       "There is no `package.json`. We need this file to gather information about the module for the module list page."
     ],
-    "stars": 4,
+    "stars": 5,
     "license": "ISC",
     "image": "screenshot.jpg"
   },
@@ -11679,6 +11679,22 @@
   {
     "name": "MMM-NewsAPI",
     "category": "News / Information",
+    "url": "https://github.com/mumblebaj/MMM-NewsAPI",
+    "id": "mumblebaj/MMM-NewsAPI",
+    "maintainer": "mumblebaj",
+    "maintainerURL": "https://github.com/mumblebaj",
+    "description": "Get news from <a target=\"_blank\" href=\"https://newsapi.org\">newsapi.org</a>.",
+    "issues": [],
+    "stars": 11,
+    "license": "MIT",
+    "tags": [
+      "news"
+    ],
+    "image": "screenshot1.jpg"
+  },
+  {
+    "name": "MMM-NewsAPI",
+    "category": "News / Information",
     "url": "https://github.com/totoluto/MMM-NewsAPI",
     "id": "totoluto/MMM-NewsAPI",
     "maintainer": "totoluto",
@@ -11692,22 +11708,6 @@
       "api"
     ],
     "image": "screenshots-MMM-NewsApi.jpg"
-  },
-  {
-    "name": "MMM-NewsAPI",
-    "category": "News / Information",
-    "url": "https://github.com/mumblebaj/MMM-NewsAPI",
-    "id": "mumblebaj/MMM-NewsAPI",
-    "maintainer": "mumblebaj",
-    "maintainerURL": "https://github.com/mumblebaj",
-    "description": "Get news from <a target=\"_blank\" href=\"https://newsapi.org\">newsapi.org</a>.",
-    "issues": [],
-    "stars": 11,
-    "license": "MIT",
-    "tags": [
-      "news"
-    ],
-    "image": "screenshot1.jpg"
   },
   {
     "name": "MMM-NewsFeedTicker",
