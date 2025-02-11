@@ -3735,7 +3735,7 @@
     "description": "Track nearby planes based on Flightradar24 data.",
     "issues": [],
     "outdated": "Abandoned. Repo has been archived at 2024-01-22.",
-    "stars": 20,
+    "stars": 21,
     "isArchived": true,
     "license": "MIT"
   },
@@ -3771,7 +3771,7 @@
     "maintainerURL": "https://github.com/tbouron",
     "description": "Use ADS-B systems to track and display nearby planes.",
     "issues": [],
-    "stars": 16,
+    "stars": 17,
     "license": "Apache-2.0"
   },
   {
@@ -3841,7 +3841,7 @@
     "maintainerURL": "",
     "description": "Display the driver standings from the current Formula 1 season.",
     "issues": [],
-    "stars": 33,
+    "stars": 34,
     "license": "MIT"
   },
   {
@@ -3937,8 +3937,7 @@
     "maintainerURL": "",
     "description": "FRITZ!Box Callmonitor. Display an alert when someone is calling and offers a call history.",
     "issues": [],
-    "stars": 4,
-    "hasGithubIssues": false
+    "stars": 4
   },
   {
     "name": "MMM-FroelingConnect",
@@ -7025,7 +7024,7 @@
     "id": "hoyski/MM-orrery",
     "maintainer": "hoyski",
     "maintainerURL": "https://github.com/hoyski",
-    "description": "Display all of the planets and their current positions relative to the Sun",
+    "description": "Display all of the planets and their current positions relative to the sun.",
     "issues": [],
     "stars": 6
   },
@@ -8500,7 +8499,7 @@
     "id": "Coernel82/MMM-NextCloud-Tasks",
     "maintainer": "Coernel82",
     "maintainerURL": "",
-    "description": "Displays ToDo list(s) from NextCloud Tasks app. Task can be toggled and sent back to the server, styling options and more filter options.",
+    "description": "Displays ToDo list(s) from NextCloud Tasks app and other ical / CalDav sources. Task can be toggled and sent back to the server, styling options and more filter options.",
     "issues": [],
     "stars": 0,
     "hasGithubIssues": false,
@@ -9713,6 +9712,19 @@
     "description": "Show the ping time based on a websocket connection.",
     "issues": [],
     "stars": 3,
+    "license": "MIT"
+  },
+  {
+    "name": "MMM-Pir",
+    "category": "Utility / IoT / 3rd Party / Integration",
+    "url": "https://github.com/Coernel82/MMM-Pir",
+    "id": "Coernel82/MMM-Pir",
+    "maintainer": "Coernel82",
+    "maintainerURL": "",
+    "description": "The rescued Pir module of Bugsounet.",
+    "issues": [],
+    "outdated": "Coernel82 cannot give support!",
+    "stars": 0,
     "license": "MIT"
   },
   {
@@ -12043,18 +12055,6 @@
     "description": "Display the tables of the Polish Speedway Leagues (PGE Ekstraliga, I. Liga Żużlowa , II. Liga Żużlowa).",
     "issues": [],
     "stars": 0
-  },
-  {
-    "name": "MMM-SpinId",
-    "category": "Entertainment / Misc",
-    "url": "https://github.com/mlcampbe/MMM-SpinId",
-    "id": "mlcampbe/MMM-SpinId",
-    "maintainer": "mlcampbe",
-    "maintainerURL": "",
-    "description": "Show the winning Wheel of Fortune Spin IDs for the current day.",
-    "issues": [],
-    "stars": 0,
-    "license": "MIT"
   },
   {
     "name": "MMM-Spotify",

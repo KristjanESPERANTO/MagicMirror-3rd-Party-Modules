@@ -1,16 +1,16 @@
 # Result of the module analysis
 
-Last update: 2025-02-10T05:38:50+01:00
+Last update: 2025-02-11T17:48:51+01:00
 
 ## Statistics
 
 |                      | number   |
 |:---------------------|:--------:|
 | modules analyzed     |   1217   |
-| maintainer           |    657   |
-| modules with issues  |   1216   |
-| issues               |   6531   |
-| modules at github    |   1092   |
+| maintainer           |    656   |
+| modules with issues  |   1217   |
+| issues               |   6527   |
+| modules at github    |   1091   |
 | modules at gitlab    |     12   |
 | modules at bitbucket |      1   |
 
@@ -751,14 +751,14 @@ Last update: 2025-02-10T05:38:50+01:00
 1. Information: There are updates for 10 dependencie(s):
    - @stylistic/eslint-plugin   ^2.12.1  →    ^3.1.0
    - @types/node               ^22.10.2  →  ^22.13.1
-   - bosch-smart-home-bridge     ^1.6.0  →    ^1.7.4
+   - bosch-smart-home-bridge     ^1.6.0  →    ^1.7.5
    - eslint                     ^9.17.0  →   ^9.20.0
    - eslint-config-prettier      ^9.1.0  →   ^10.0.1
    - eslint-plugin-prettier      ^5.2.1  →    ^5.2.3
    - prettier                    ^3.4.2  →    ^3.5.0
    - rollup                     ^4.29.1  →   ^4.34.6
    - typescript                  ^5.7.2  →    ^5.7.3
-   - typescript-eslint          ^8.18.2  →   ^8.23.0
+   - typescript-eslint          ^8.18.2  →   ^8.24.0
 
 2. ESLint issues:
    - node_helper.js: Line 13, Column 1034: 't' is defined but never used. (rule: no-unused-vars)
@@ -2613,14 +2613,13 @@ deprecated: no longer maintained, switch to modern iconify-icon web component
 
 ### [MMM-FRITZ-Box-Callmonitor-py3 by drtorchwood](https://github.com/drtorchwood/MMM-FRITZ-Box-Callmonitor-py3)
 
-1. Issues are not enabled in the GitHub repository. So users cannot report bugs. Please enable issues in your repo.
-2. Typo: Found `Magic Mirror` in file `MMM-FRITZ-Box-Callmonitor-py3.js`: Replace it with `MagicMirror²`.
-3. Typo: Found `[MagicMirror]` in file `README.md`: Replace it with `[MagicMirror²]`.
-4. Outdated: Found `MichMich/MagicMirror` in file `README.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
-5. Recommendation: The README seems not to have an update instruction (the word 'update' is missing). Please add one.
-6. Typo: Found `Magic Mirror` in file `package.json`: Replace it with `MagicMirror²`.
-7. Warning: No LICENSE file.
-8. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
+1. Typo: Found `Magic Mirror` in file `MMM-FRITZ-Box-Callmonitor-py3.js`: Replace it with `MagicMirror²`.
+2. Typo: Found `[MagicMirror]` in file `README.md`: Replace it with `[MagicMirror²]`.
+3. Outdated: Found `MichMich/MagicMirror` in file `README.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
+4. Recommendation: The README seems not to have an update instruction (the word 'update' is missing). Please add one.
+5. Typo: Found `Magic Mirror` in file `package.json`: Replace it with `MagicMirror²`.
+6. Warning: No LICENSE file.
+7. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
 
 ### [MMM-FroelingConnect by eckonator](https://github.com/eckonator/MMM-FroelingConnect)
 
@@ -3921,7 +3920,7 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
 4. Information: There are updates for 5 dependencie(s):
    - @electron/rebuild    ^3.6.0  →   ^3.7.1
    - node-abi            ^3.65.0  →  ^3.74.0
-   - node-gyp            ^10.2.0  →  ^11.0.0
+   - node-gyp            ^10.2.0  →  ^11.1.0
    - puppeteer          ^22.15.0  →  ^24.2.0
    - sharp               ^0.33.4  →  ^0.33.5
 
@@ -3943,8 +3942,8 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
    - @rollup/plugin-commonjs           ^25.0.7  →  ^28.0.2
    - @rollup/plugin-node-resolve       ^15.2.3  →  ^16.0.0
    - @rollup/plugin-typescript         ^11.1.6  →  ^12.1.2
-   - @typescript-eslint/eslint-plugin  ^6.19.1  →  ^8.23.0
-   - @typescript-eslint/parser         ^6.19.1  →  ^8.23.0
+   - @typescript-eslint/eslint-plugin  ^6.19.1  →  ^8.24.0
+   - @typescript-eslint/parser         ^6.19.1  →  ^8.24.0
    - eslint                            ^8.56.0  →  ^9.20.0
    - eslint-config-prettier             ^9.1.0  →  ^10.0.1
    - eslint-plugin-prettier             ^5.1.3  →   ^5.2.3
@@ -4271,6 +4270,12 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
 1. There is no `package.json`. We need this file to gather information about the module for the module list page.
 2. Warning: No LICENSE file.
 3. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
+
+### [MMM-Linky by 2hdlockness](https://github.com/2hdlockness/MMM-Linky)
+
+1. Information: There are updates for 1 dependencie(s):
+   - eslint-plugin-package-json  ^0.25.0  →  ^0.26.0
+
 
 ### [MMM-Liquipedia-Matches by buxxi](https://github.com/buxxi/MMM-Liquipedia-Matches)
 
@@ -4647,7 +4652,7 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
    - @eslint/json                      ^0.9.0  →  ^0.10.0
    - @eslint/markdown                  ^6.2.1  →   ^6.2.2
    - @stylistic/eslint-plugin         ^2.12.1  →   ^3.1.0
-   - eslint-plugin-package-json       ^0.19.0  →  ^0.25.0
+   - eslint-plugin-package-json       ^0.19.0  →  ^0.26.0
    - lint-staged                      ^15.3.0  →  ^15.4.3
    - markdownlint-cli                 ^0.43.0  →  ^0.44.0
    - prettier                          ^3.4.2  →   ^3.5.0
@@ -5992,7 +5997,7 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
    - @rollup/plugin-node-resolve       ^15.2.3  →  ^16.0.0
    - @rollup/plugin-typescript         ^11.1.6  →  ^12.1.2
    - @stylistic/eslint-plugin           ^1.5.4  →   ^3.1.0
-   - @typescript-eslint/eslint-plugin  ^6.20.0  →  ^8.23.0
+   - @typescript-eslint/eslint-plugin  ^6.20.0  →  ^8.24.0
    - eslint                            ^8.56.0  →  ^9.20.0
    - prettier                           ^3.2.5  →   ^3.5.0
    - rollup                             ^4.9.6  →  ^4.34.6
@@ -6285,7 +6290,7 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
 2. Recommendation: Found `XMLHttpRequest` in file `error_to_string.js`: Replace it with built-in fetch.
 3. Recommendation: No lint script found in package.json. It is recommended to add one.
 4. Information: There are updates for 5 dependencie(s):
-   - @azure/msal-node      ^2.16.2  →    ^3.2.1
+   - @azure/msal-node      ^2.16.2  →    ^3.2.2
    - @eslint/js            ^9.16.0  →   ^9.20.0
    - eslint                ^9.16.0  →   ^9.20.0
    - eslint-plugin-jsdoc   ^50.6.0  →   ^50.6.3
@@ -7178,7 +7183,7 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
    - @eslint/js                  ^9.19.0  →  ^9.20.0
    - @stylistic/eslint-plugin     ^3.0.1  →   ^3.1.0
    - eslint                      ^9.19.0  →  ^9.20.0
-   - eslint-plugin-package-json  ^0.21.1  →  ^0.25.0
+   - eslint-plugin-package-json  ^0.21.1  →  ^0.26.0
    - prettier                     ^3.4.2  →   ^3.5.0
 
 
@@ -7311,7 +7316,7 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
    - rollup                       ^4.21.1  →  ^4.34.6
    - rollup-plugin-banner2         ^1.3.0  →   ^1.3.1
    - typescript                    ^5.5.4  →   ^5.7.3
-   - typescript-eslint             ^8.3.0  →  ^8.23.0
+   - typescript-eslint             ^8.3.0  →  ^8.24.0
 
 2. ESLint issues:
    - MMM-RAIN-MAP.js: Line 28, Column 17081: Expected to return a value in method 'get'. (rule: getter-return)
@@ -8468,14 +8473,6 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
 8. Deprecated: Found `require('request')` in file `node_helper.js`: Replace it with built-in fetch.
 9. Warning: No LICENSE file.
 10. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
-
-### [MMM-SpinId by mlcampbe](https://github.com/mlcampbe/MMM-SpinId)
-
-1. `package.json` issue: No repository field.
-2. There are no keywords in 'package.json'. We would use them as tags on the module list page.
-3. Typo: Found `[MagicMirror]` in file `README.md`: Replace it with `[MagicMirror²]`.
-4. Outdated: Found `MichMich/MagicMirror` in file `README.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
-5. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
 
 ### [MMM-Spotify by skuethe](https://github.com/skuethe/MMM-Spotify)
 

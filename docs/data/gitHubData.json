@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "2025-02-10T04:30:29.979Z",
+  "lastUpdate": "2025-02-11T16:30:36.084Z",
   "repositories": [
     {
       "id": "0lek/MMM-socialbicycles",
@@ -381,7 +381,7 @@
     },
     {
       "id": "alanshen111/MMM-Facts",
-      "gitHubDataLastUpdate": "2025-01-19T04:30:20.337Z",
+      "gitHubDataLastUpdate": "2025-02-11T16:30:19.659Z",
       "gitHubData": {
         "issues": 0,
         "stars": 16,
@@ -577,7 +577,7 @@
     },
     {
       "id": "Amand-M/MMM-FrenchHoroscope",
-      "gitHubDataLastUpdate": "2025-01-19T04:30:32.359Z",
+      "gitHubDataLastUpdate": "2025-02-11T16:30:33.485Z",
       "gitHubData": {
         "issues": 1,
         "stars": 2,
@@ -2453,7 +2453,7 @@
     },
     {
       "id": "ChrisF1976/MMM-Adventskalender",
-      "gitHubDataLastUpdate": "2025-01-19T04:30:28.381Z",
+      "gitHubDataLastUpdate": "2025-02-11T16:30:31.150Z",
       "gitHubData": {
         "issues": 0,
         "stars": 2,
@@ -2743,6 +2743,20 @@
         "defaultBranch": "master",
         "has_issues": false,
         "lastCommit": "2025-01-27T08:11:00Z"
+      }
+    },
+    {
+      "id": "Coernel82/MMM-Pir",
+      "gitHubDataLastUpdate": "2025-02-11T16:30:17.256Z",
+      "gitHubData": {
+        "issues": 0,
+        "stars": 0,
+        "license": "MIT",
+        "archived": false,
+        "disabled": false,
+        "defaultBranch": "main",
+        "has_issues": true,
+        "lastCommit": "2025-02-10T08:56:26Z"
       }
     },
     {
@@ -3335,7 +3349,7 @@
     },
     {
       "id": "deg0nz/MMM-Fronius2",
-      "gitHubDataLastUpdate": "2025-01-19T16:30:17.509Z",
+      "gitHubDataLastUpdate": "2025-02-11T16:30:35.569Z",
       "gitHubData": {
         "issues": 3,
         "stars": 0,
@@ -3727,7 +3741,7 @@
     },
     {
       "id": "dmcinnes/MMM-forecast-io",
-      "gitHubDataLastUpdate": "2025-01-19T04:30:26.205Z",
+      "gitHubDataLastUpdate": "2025-02-11T16:30:28.989Z",
       "gitHubData": {
         "issues": 6,
         "stars": 59,
@@ -3811,7 +3825,7 @@
     },
     {
       "id": "drtorchwood/MMM-FRITZ-Box-Callmonitor-py3",
-      "gitHubDataLastUpdate": "2025-01-19T04:30:33.040Z",
+      "gitHubDataLastUpdate": "2025-02-11T16:30:34.029Z",
       "gitHubData": {
         "issues": 0,
         "stars": 4,
@@ -3819,7 +3833,7 @@
         "archived": false,
         "disabled": false,
         "defaultBranch": "master",
-        "has_issues": false,
+        "has_issues": true,
         "lastCommit": "2025-01-17T21:51:27Z"
       }
     },
@@ -3937,7 +3951,7 @@
     },
     {
       "id": "E3V3A/MMM-FlightsAbove",
-      "gitHubDataLastUpdate": "2025-01-19T04:30:22.351Z",
+      "gitHubDataLastUpdate": "2025-02-11T16:30:21.789Z",
       "gitHubData": {
         "issues": 18,
         "stars": 23,
@@ -3993,7 +4007,7 @@
     },
     {
       "id": "eckonator/MMM-FroelingConnect",
-      "gitHubDataLastUpdate": "2025-01-19T04:30:33.578Z",
+      "gitHubDataLastUpdate": "2025-02-11T16:30:34.589Z",
       "gitHubData": {
         "issues": 0,
         "stars": 1,
@@ -5561,16 +5575,16 @@
     },
     {
       "id": "HeikoGr/MMM-Webuntis",
-      "gitHubDataLastUpdate": "2025-01-19T04:30:25.790Z",
+      "gitHubDataLastUpdate": "2025-02-11T16:30:24.787Z",
       "gitHubData": {
-        "issues": 1,
+        "issues": 2,
         "stars": 2,
         "license": "MIT",
         "archived": false,
         "disabled": false,
         "defaultBranch": "master",
         "has_issues": true,
-        "lastCommit": "2025-01-14T20:49:41Z"
+        "lastCommit": "2025-01-24T18:18:12Z"
       }
     },
     {
@@ -5799,16 +5813,16 @@
     },
     {
       "id": "ianperrin/MMM-Formula1",
-      "gitHubDataLastUpdate": "2025-01-19T04:30:26.912Z",
+      "gitHubDataLastUpdate": "2025-02-11T16:30:29.455Z",
       "gitHubData": {
         "issues": 2,
-        "stars": 33,
+        "stars": 34,
         "license": "MIT",
         "archived": false,
         "disabled": false,
         "defaultBranch": "master",
         "has_issues": true,
-        "lastCommit": "2025-01-09T15:57:04Z"
+        "lastCommit": "2025-02-03T15:34:05Z"
       }
     },
     {
@@ -6009,7 +6023,7 @@
     },
     {
       "id": "ItsMeBrille/MMM-FlagRise",
-      "gitHubDataLastUpdate": "2025-01-19T04:30:18.890Z",
+      "gitHubDataLastUpdate": "2025-02-11T16:30:18.215Z",
       "gitHubData": {
         "issues": 0,
         "stars": 2,
@@ -6233,7 +6247,7 @@
     },
     {
       "id": "jancalve/MMM-flick-gestures",
-      "gitHubDataLastUpdate": "2025-01-19T04:30:20.717Z",
+      "gitHubDataLastUpdate": "2025-02-11T16:30:20.148Z",
       "gitHubData": {
         "issues": 2,
         "stars": 6,
@@ -6331,7 +6345,7 @@
     },
     {
       "id": "jboucly/MMM-FTP-image",
-      "gitHubDataLastUpdate": "2025-01-19T16:30:17.878Z",
+      "gitHubDataLastUpdate": "2025-02-11T16:30:36.018Z",
       "gitHubData": {
         "issues": 0,
         "stars": 7,
@@ -6513,10 +6527,10 @@
     },
     {
       "id": "jesmak/MMM-FlightRadarTracker",
-      "gitHubDataLastUpdate": "2025-01-19T04:30:21.904Z",
+      "gitHubDataLastUpdate": "2025-02-11T16:30:21.184Z",
       "gitHubData": {
         "issues": 6,
-        "stars": 20,
+        "stars": 21,
         "license": "MIT",
         "archived": true,
         "disabled": false,
@@ -6905,7 +6919,7 @@
     },
     {
       "id": "joschi27/MMM-Flatastic",
-      "gitHubDataLastUpdate": "2025-01-19T04:30:19.294Z",
+      "gitHubDataLastUpdate": "2025-02-11T16:30:18.682Z",
       "gitHubData": {
         "issues": 1,
         "stars": 6,
@@ -7325,7 +7339,7 @@
     },
     {
       "id": "kagjerde/MMM-Flo",
-      "gitHubDataLastUpdate": "2025-01-19T04:30:23.928Z",
+      "gitHubDataLastUpdate": "2025-02-11T16:30:23.230Z",
       "gitHubData": {
         "issues": 1,
         "stars": 0,
@@ -7339,7 +7353,7 @@
     },
     {
       "id": "kagjerde/MMM-FloGraph",
-      "gitHubDataLastUpdate": "2025-01-19T04:30:24.641Z",
+      "gitHubDataLastUpdate": "2025-02-11T16:30:23.712Z",
       "gitHubData": {
         "issues": 1,
         "stars": 0,
@@ -7367,7 +7381,7 @@
     },
     {
       "id": "kapsolas/MMM-Flickr",
-      "gitHubDataLastUpdate": "2025-01-19T04:30:21.429Z",
+      "gitHubDataLastUpdate": "2025-02-11T16:30:20.680Z",
       "gitHubData": {
         "issues": 5,
         "stars": 11,
@@ -9144,20 +9158,6 @@
       }
     },
     {
-      "id": "mlcampbe/MMM-SpinId",
-      "gitHubDataLastUpdate": "2025-01-25T16:30:25.215Z",
-      "gitHubData": {
-        "issues": 0,
-        "stars": 0,
-        "license": "MIT",
-        "archived": false,
-        "disabled": false,
-        "defaultBranch": "main",
-        "has_issues": true,
-        "lastCommit": "2024-12-12T20:05:48Z"
-      }
-    },
-    {
       "id": "MMM-CalendarExt2/MMM-CalendarExt2",
       "gitHubDataLastUpdate": "2025-02-07T04:30:24.415Z",
       "gitHubData": {
@@ -10265,7 +10265,7 @@
     },
     {
       "id": "mykle1/MMM-FMI",
-      "gitHubDataLastUpdate": "2025-01-19T04:30:25.369Z",
+      "gitHubDataLastUpdate": "2025-02-11T16:30:24.219Z",
       "gitHubData": {
         "issues": 0,
         "stars": 15,
@@ -10279,7 +10279,7 @@
     },
     {
       "id": "mykle1/MMM-Fortune",
-      "gitHubDataLastUpdate": "2025-01-19T04:30:28.830Z",
+      "gitHubDataLastUpdate": "2025-02-11T16:30:31.683Z",
       "gitHubData": {
         "issues": 1,
         "stars": 9,
@@ -11175,7 +11175,7 @@
     },
     {
       "id": "nomis6432/MMM-flicio",
-      "gitHubDataLastUpdate": "2025-01-19T04:30:19.937Z",
+      "gitHubDataLastUpdate": "2025-02-11T16:30:19.235Z",
       "gitHubData": {
         "issues": 0,
         "stars": 1,
@@ -11665,7 +11665,7 @@
     },
     {
       "id": "peteyjaym/MMM-fronius",
-      "gitHubDataLastUpdate": "2025-01-19T16:30:17.025Z",
+      "gitHubDataLastUpdate": "2025-02-11T16:30:35.134Z",
       "gitHubData": {
         "issues": 0,
         "stars": 1,
@@ -12239,7 +12239,7 @@
     },
     {
       "id": "RaspiManu/MMM-FrameLight",
-      "gitHubDataLastUpdate": "2025-01-19T04:30:29.606Z",
+      "gitHubDataLastUpdate": "2025-02-11T16:30:32.092Z",
       "gitHubData": {
         "issues": 1,
         "stars": 15,
@@ -12533,7 +12533,7 @@
     },
     {
       "id": "retroflex/MMM-Fortnite",
-      "gitHubDataLastUpdate": "2025-01-19T04:30:27.372Z",
+      "gitHubDataLastUpdate": "2025-02-11T16:30:30.127Z",
       "gitHubData": {
         "issues": 0,
         "stars": 2,
@@ -14451,7 +14451,7 @@
     },
     {
       "id": "SVendittelli/MMM-fitbit",
-      "gitHubDataLastUpdate": "2025-01-19T04:30:18.386Z",
+      "gitHubDataLastUpdate": "2025-02-11T16:30:17.702Z",
       "gitHubData": {
         "issues": 17,
         "stars": 25,
@@ -14535,7 +14535,7 @@
     },
     {
       "id": "tataille/MMM-FreeBox-Monitor",
-      "gitHubDataLastUpdate": "2025-01-19T04:30:31.357Z",
+      "gitHubDataLastUpdate": "2025-02-11T16:30:32.488Z",
       "gitHubData": {
         "issues": 0,
         "stars": 4,
@@ -14577,10 +14577,10 @@
     },
     {
       "id": "tbouron/MMM-FlightTracker",
-      "gitHubDataLastUpdate": "2025-01-19T04:30:23.150Z",
+      "gitHubDataLastUpdate": "2025-02-11T16:30:22.337Z",
       "gitHubData": {
         "issues": 8,
-        "stars": 16,
+        "stars": 17,
         "license": "Apache-2.0",
         "archived": false,
         "disabled": false,
@@ -16663,7 +16663,7 @@
     },
     {
       "id": "yourdawi/MMM-FortniteStats",
-      "gitHubDataLastUpdate": "2025-01-19T04:30:27.917Z",
+      "gitHubDataLastUpdate": "2025-02-11T16:30:30.670Z",
       "gitHubData": {
         "issues": 0,
         "stars": 2,

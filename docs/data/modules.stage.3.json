@@ -5166,7 +5166,7 @@
     "description": "Track nearby planes based on Flightradar24 data.",
     "issues": [],
     "outdated": "Abandoned. Repo has been archived at 2024-01-22.",
-    "stars": 20,
+    "stars": 21,
     "isArchived": true,
     "license": "MIT",
     "tags": [
@@ -5222,7 +5222,7 @@
     "issues": [
       "There are no keywords in 'package.json'. We would use them as tags on the module list page."
     ],
-    "stars": 16,
+    "stars": 17,
     "license": "Apache-2.0",
     "image": "screenshot-at-the-window.jpg"
   },
@@ -5308,7 +5308,7 @@
     "maintainerURL": "",
     "description": "Display the driver standings from the current Formula 1 season.",
     "issues": [],
-    "stars": 33,
+    "stars": 34,
     "license": "MIT",
     "tags": [
       "formula1"
@@ -5446,11 +5446,8 @@
     "maintainer": "drtorchwood",
     "maintainerURL": "",
     "description": "FRITZ!Box Callmonitor. Display an alert when someone is calling and offers a call history.",
-    "issues": [
-      "Issues are not enabled in the GitHub repository. So users cannot report bugs. Please enable issues in your repo."
-    ],
+    "issues": [],
     "stars": 4,
-    "hasGithubIssues": false,
     "tags": [
       "callmonitor"
     ],
@@ -9698,7 +9695,7 @@
     "id": "hoyski/MM-orrery",
     "maintainer": "hoyski",
     "maintainerURL": "https://github.com/hoyski",
-    "description": "Display all of the planets and their current positions relative to the Sun",
+    "description": "Display all of the planets and their current positions relative to the sun.",
     "issues": [
       "There is no `package.json`. We need this file to gather information about the module for the module list page."
     ],
@@ -11785,7 +11782,7 @@
     "id": "Coernel82/MMM-NextCloud-Tasks",
     "maintainer": "Coernel82",
     "maintainerURL": "",
-    "description": "Displays ToDo list(s) from NextCloud Tasks app. Task can be toggled and sent back to the server, styling options and more filter options.",
+    "description": "Displays ToDo list(s) from NextCloud Tasks app and other ical / CalDav sources. Task can be toggled and sent back to the server, styling options and more filter options.",
     "issues": [
       "`package.json` issue: No repository field.",
       "There are no keywords in 'package.json'. We would use them as tags on the module list page.",
@@ -13452,6 +13449,24 @@
     "stars": 3,
     "license": "MIT",
     "image": ".github-discon-preview.jpg"
+  },
+  {
+    "name": "MMM-Pir",
+    "category": "Utility / IoT / 3rd Party / Integration",
+    "url": "https://github.com/Coernel82/MMM-Pir",
+    "id": "Coernel82/MMM-Pir",
+    "maintainer": "Coernel82",
+    "maintainerURL": "",
+    "description": "The rescued Pir module of Bugsounet.",
+    "issues": [],
+    "outdated": "Coernel82 cannot give support!",
+    "stars": 0,
+    "license": "MIT",
+    "tags": [
+      "screen",
+      "motion detection"
+    ],
+    "image": "screenshot-screenshot.jpg"
   },
   {
     "name": "MMM-PIR",
@@ -16665,22 +16680,6 @@
       "There are no keywords in 'package.json'. We would use them as tags on the module list page."
     ],
     "stars": 0
-  },
-  {
-    "name": "MMM-SpinId",
-    "category": "Entertainment / Misc",
-    "url": "https://github.com/mlcampbe/MMM-SpinId",
-    "id": "mlcampbe/MMM-SpinId",
-    "maintainer": "mlcampbe",
-    "maintainerURL": "",
-    "description": "Show the winning Wheel of Fortune Spin IDs for the current day.",
-    "issues": [
-      "`package.json` issue: No repository field.",
-      "There are no keywords in 'package.json'. We would use them as tags on the module list page."
-    ],
-    "stars": 0,
-    "license": "MIT",
-    "image": "screenshot.jpg"
   },
   {
     "name": "MMM-Spotify",

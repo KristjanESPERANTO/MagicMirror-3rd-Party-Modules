@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "2025-02-10T04:30:16.254Z",
+  "lastUpdate": "2025-02-11T16:30:15.460Z",
   "modules": [
     {
       "name": "MMM-01ZM",
@@ -5943,7 +5943,7 @@
       "id": "hoyski/MM-orrery",
       "maintainer": "hoyski",
       "maintainerURL": "https://github.com/hoyski",
-      "description": "Display all of the planets and their current positions relative to the Sun",
+      "description": "Display all of the planets and their current positions relative to the sun.",
       "issues": []
     },
     {
@@ -7193,7 +7193,7 @@
       "id": "Coernel82/MMM-NextCloud-Tasks",
       "maintainer": "Coernel82",
       "maintainerURL": "",
-      "description": "Displays ToDo list(s) from NextCloud Tasks app. Task can be toggled and sent back to the server, styling options and more filter options.",
+      "description": "Displays ToDo list(s) from NextCloud Tasks app and other ical / CalDav sources. Task can be toggled and sent back to the server, styling options and more filter options.",
       "issues": []
     },
     {
@@ -8213,6 +8213,17 @@
       "maintainerURL": "",
       "description": "Show the ping time based on a websocket connection.",
       "issues": []
+    },
+    {
+      "name": "MMM-Pir",
+      "category": "Utility / IoT / 3rd Party / Integration",
+      "url": "https://github.com/Coernel82/MMM-Pir",
+      "id": "Coernel82/MMM-Pir",
+      "maintainer": "Coernel82",
+      "maintainerURL": "",
+      "description": "The rescued Pir module of Bugsounet.",
+      "issues": [],
+      "outdated": "Coernel82 cannot give support!"
     },
     {
       "name": "MMM-PIR",
@@ -10179,16 +10190,6 @@
       "maintainer": "LukasKlose",
       "maintainerURL": "https://github.com/LukasKlose",
       "description": "Display the tables of the Polish Speedway Leagues (PGE Ekstraliga, I. Liga Żużlowa , II. Liga Żużlowa).",
-      "issues": []
-    },
-    {
-      "name": "MMM-SpinId",
-      "category": "Entertainment / Misc",
-      "url": "https://github.com/mlcampbe/MMM-SpinId",
-      "id": "mlcampbe/MMM-SpinId",
-      "maintainer": "mlcampbe",
-      "maintainerURL": "",
-      "description": "Show the winning Wheel of Fortune Spin IDs for the current day.",
       "issues": []
     },
     {

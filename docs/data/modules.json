@@ -258,8 +258,8 @@
       "air polution",
       "airly"
     ],
-    "defaultSortWeight": 6,
-    "lastCommit": "2023-01-05T18:32:51+01:00"
+    "defaultSortWeight": 5,
+    "lastCommit": "2025-02-10T09:37:34+01:00"
   },
   {
     "name": "MMM-AirNow",
@@ -5227,7 +5227,7 @@
     "description": "Track nearby planes based on Flightradar24 data.",
     "issues": false,
     "outdated": "Abandoned. Repo has been archived at 2024-01-22.",
-    "stars": 20,
+    "stars": 21,
     "isArchived": true,
     "license": "MIT",
     "tags": [
@@ -5287,7 +5287,7 @@
     "maintainerURL": "https://github.com/tbouron",
     "description": "Use ADS-B systems to track and display nearby planes.",
     "issues": true,
-    "stars": 16,
+    "stars": 17,
     "license": "Apache-2.0",
     "image": "screenshot-at-the-window.jpg",
     "defaultSortWeight": 4,
@@ -5376,7 +5376,7 @@
     "maintainerURL": "",
     "description": "Display the driver standings from the current Formula 1 season.",
     "issues": true,
-    "stars": 33,
+    "stars": 34,
     "license": "MIT",
     "tags": [
       "formula1"
@@ -5519,13 +5519,12 @@
     "description": "FRITZ!Box Callmonitor. Display an alert when someone is calling and offers a call history.",
     "issues": true,
     "stars": 4,
-    "hasGithubIssues": false,
     "tags": [
       "callmonitor"
     ],
     "license": "MIT",
     "image": "screenshot.jpg",
-    "defaultSortWeight": 8,
+    "defaultSortWeight": 7,
     "lastCommit": "2025-01-17T22:51:27+01:00"
   },
   {
@@ -8645,7 +8644,7 @@
     "maintainer": "2hdlockness",
     "maintainerURL": "https://github.com/2hdlockness/",
     "description": "A module to retrieve and display Linky consumption data using CONSO API. Intended for French users.",
-    "issues": false,
+    "issues": true,
     "stars": 0,
     "license": "MIT",
     "tags": [
@@ -9811,7 +9810,7 @@
     "id": "hoyski/MM-orrery",
     "maintainer": "hoyski",
     "maintainerURL": "https://github.com/hoyski",
-    "description": "Display all of the planets and their current positions relative to the Sun",
+    "description": "Display all of the planets and their current positions relative to the sun.",
     "issues": true,
     "stars": 6,
     "defaultSortWeight": 4,
@@ -11675,7 +11674,7 @@
     ],
     "image": ".github-preview.bubbles.jpg",
     "defaultSortWeight": 0,
-    "lastCommit": "2025-02-08T00:56:13+00:00"
+    "lastCommit": "2025-02-11T11:40:59+00:00"
   },
   {
     "name": "MMM-Netatmo-Presence",
@@ -11908,7 +11907,7 @@
     "id": "Coernel82/MMM-NextCloud-Tasks",
     "maintainer": "Coernel82",
     "maintainerURL": "",
-    "description": "Displays ToDo list(s) from NextCloud Tasks app. Task can be toggled and sent back to the server, styling options and more filter options.",
+    "description": "Displays ToDo list(s) from NextCloud Tasks app and other ical / CalDav sources. Task can be toggled and sent back to the server, styling options and more filter options.",
     "issues": true,
     "stars": 0,
     "hasGithubIssues": false,
@@ -13602,6 +13601,26 @@
     "image": ".github-discon-preview.jpg",
     "defaultSortWeight": 3,
     "lastCommit": "2024-10-08T01:24:38+02:00"
+  },
+  {
+    "name": "MMM-Pir",
+    "category": "Utility / IoT / 3rd Party / Integration",
+    "url": "https://github.com/Coernel82/MMM-Pir",
+    "id": "Coernel82/MMM-Pir",
+    "maintainer": "Coernel82",
+    "maintainerURL": "",
+    "description": "The rescued Pir module of Bugsounet.",
+    "issues": false,
+    "outdated": "Coernel82 cannot give support!",
+    "stars": 0,
+    "license": "MIT",
+    "tags": [
+      "screen",
+      "motion detection"
+    ],
+    "image": "screenshot-screenshot.jpg",
+    "defaultSortWeight": 900,
+    "lastCommit": "2025-02-10T09:56:26+01:00"
   },
   {
     "name": "MMM-PIR",
@@ -16861,21 +16880,6 @@
     "lastCommit": "2020-09-04T17:14:47+02:00"
   },
   {
-    "name": "MMM-SpinId",
-    "category": "Entertainment / Misc",
-    "url": "https://github.com/mlcampbe/MMM-SpinId",
-    "id": "mlcampbe/MMM-SpinId",
-    "maintainer": "mlcampbe",
-    "maintainerURL": "",
-    "description": "Show the winning Wheel of Fortune Spin IDs for the current day.",
-    "issues": true,
-    "stars": 0,
-    "license": "MIT",
-    "image": "screenshot.jpg",
-    "defaultSortWeight": 4,
-    "lastCommit": "2024-12-12T14:05:48-06:00"
-  },
-  {
     "name": "MMM-Spotify",
     "category": "Entertainment / Misc",
     "url": "https://github.com/skuethe/MMM-Spotify",
@@ -17649,7 +17653,7 @@
     "license": "MIT",
     "image": "MMM-Temp2IOT.jpg",
     "defaultSortWeight": 2,
-    "lastCommit": "2025-01-10T16:00:45+01:00"
+    "lastCommit": "2025-02-10T18:20:41+01:00"
   },
   {
     "name": "MMM-Temperature",
@@ -18694,7 +18698,7 @@
     "issues": true,
     "stars": 3,
     "defaultSortWeight": 5,
-    "lastCommit": "2025-01-28T21:39:25+01:00"
+    "lastCommit": "2025-02-10T19:27:31+01:00"
   },
   {
     "name": "MMM-Unsplash",
