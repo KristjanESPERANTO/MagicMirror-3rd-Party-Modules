@@ -263,10 +263,6 @@ def check_modules():
                     "Recommendation: Module name doesn't follow the recommended pattern (it doesn't start with `MMM-`). Consider renaming your module."
                 )
 
-            # Because we make EXT modules heavier we lift MMM-GoogleAssistant a bit up.
-            if module["name"] == ("MMM-GoogleAssistant"):
-                module["defaultSortWeight"] -= 1
-
             for file_path in sorted(module_directory_path.rglob("*")):
                 if file_path.is_dir():
                     # Explanation for .count("node_modules") == 1: If there is a node_modules directory, there are probably others in it with that name. There does not have to be an additional message for this.

@@ -9,8 +9,8 @@ const ownModuleList = JSON.parse(fs.readFileSync(ownModuleListPath));
 
 // eslint-disable-next-line @stylistic/space-before-function-paren
 function sortByNameIgnoringPrefix(a, b) {
-  const nameA = a.name.replace("MMM-", "").replace("EXT-", "");
-  const nameB = b.name.replace("MMM-", "").replace("EXT-", "");
+  const nameA = a.name.replace("MMM-", "");
+  const nameB = b.name.replace("MMM-", "");
   return nameA.localeCompare(nameB);
 }
 
