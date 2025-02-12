@@ -190,6 +190,22 @@
     "image": "Example.jpg"
   },
   {
+    "name": "MMM-affluences",
+    "category": "News / Information",
+    "url": "https://github.com/kahllenny/MMM-affluences",
+    "id": "kahllenny/MMM-affluences",
+    "maintainer": "kahllenny",
+    "maintainerURL": "",
+    "description": "Module shows the occupancy rate of a place using affluences",
+    "issues": [],
+    "stars": 0,
+    "license": "MIT",
+    "tags": [
+      "template"
+    ],
+    "image": "example_1.jpg"
+  },
+  {
     "name": "MMM-Afvalwijzer",
     "category": "Utility / IoT / 3rd Party / Integration",
     "url": "https://github.com/gertperdZA/MMM-Afvalwijzer",
@@ -5921,7 +5937,7 @@
       "`package.json` issue: No description",
       "There are no keywords in 'package.json'. We would use them as tags on the module list page."
     ],
-    "stars": 72,
+    "stars": 73,
     "license": "MIT",
     "image": "screenshot.jpg"
   },
@@ -6020,7 +6036,7 @@
     "issues": [
       "There are no keywords in 'package.json'. We would use them as tags on the module list page."
     ],
-    "stars": 30,
+    "stars": 29,
     "license": "BSD-3-Clause",
     "image": "screenshot.jpg"
   },
@@ -6033,7 +6049,7 @@
     "maintainerURL": "https://github.com/randomBrainstormer",
     "description": "Get your Google Calendars in the shape of MagicMirror's default calendar.",
     "issues": [],
-    "stars": 77,
+    "stars": 78,
     "license": "MIT",
     "tags": [
       "google",
@@ -6052,7 +6068,7 @@
     "issues": [
       "Issue: The license in the package.json (GPL-3.0-only) doesn't match the license file (AGPL-3.0)."
     ],
-    "stars": 24,
+    "stars": 25,
     "license": "AGPL-3.0",
     "tags": [
       "google",
@@ -7406,7 +7422,7 @@
       "Issue: The license in the package.json (ISC) doesn't match the license file (MIT).",
       "No image found."
     ],
-    "stars": 1,
+    "stars": 2,
     "license": "MIT"
   },
   {

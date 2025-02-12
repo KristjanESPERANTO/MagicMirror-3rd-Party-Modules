@@ -1,16 +1,16 @@
 # Result of the module analysis
 
-Last update: 2025-02-11T17:48:51+01:00
+Last update: 2025-02-12T17:40:37+01:00
 
 ## Statistics
 
 |                      | number   |
 |:---------------------|:--------:|
-| modules analyzed     |   1217   |
-| maintainer           |    656   |
-| modules with issues  |   1217   |
-| issues               |   6527   |
-| modules at github    |   1091   |
+| modules analyzed     |   1218   |
+| maintainer           |    657   |
+| modules with issues  |   1218   |
+| issues               |   6528   |
+| modules at github    |   1092   |
 | modules at gitlab    |     12   |
 | modules at bitbucket |      1   |
 
@@ -99,12 +99,20 @@ Last update: 2025-02-11T17:48:51+01:00
 1. There is no `package.json`. We need this file to gather information about the module for the module list page.
 2. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
 
+### [MMM-affluences by kahllenny](https://github.com/kahllenny/MMM-affluences)
+
+1. Information: There are updates for 3 dependencie(s):
+   - @stylistic/eslint-plugin   ^2.7.2  →    ^3.1.0
+   - eslint                    ^9.10.0  →   ^9.20.1
+   - globals                   ^15.9.0  →  ^15.14.0
+
+
 ### [MMM-Afvalwijzer by gertperdZA](https://github.com/gertperdZA/MMM-Afvalwijzer)
 
 1. Information: There are updates for 4 dependencie(s):
    - @eslint/js                ^9.10.0  →   ^9.20.0
    - @stylistic/eslint-plugin   ^2.8.0  →    ^3.1.0
-   - eslint                    ^9.10.0  →   ^9.20.0
+   - eslint                    ^9.10.0  →   ^9.20.1
    - globals                   ^15.9.0  →  ^15.14.0
 
 
@@ -351,7 +359,7 @@ Last update: 2025-02-11T17:48:51+01:00
 1. Information: There are updates for 4 dependencie(s):
    - @eslint/js                ^9.19.0  →  ^9.20.0
    - @stylistic/eslint-plugin   ^3.0.1  →   ^3.1.0
-   - eslint                    ^9.19.0  →  ^9.20.0
+   - eslint                    ^9.19.0  →  ^9.20.1
    - prettier                   ^3.4.2  →   ^3.5.0
 
 
@@ -501,7 +509,7 @@ Last update: 2025-02-11T17:48:51+01:00
 
 1. Deprecated: Found `omxplayer` in file `node_helper.js`: Try to replace it with `vlc`.
 2. Information: There are updates for 2 dependencie(s):
-   - eslint    ^8.57.0  →  ^9.20.0
+   - eslint    ^8.57.0  →  ^9.20.1
    - prettier   ^3.3.3  →   ^3.5.0
 
 
@@ -752,7 +760,7 @@ Last update: 2025-02-11T17:48:51+01:00
    - @stylistic/eslint-plugin   ^2.12.1  →    ^3.1.0
    - @types/node               ^22.10.2  →  ^22.13.1
    - bosch-smart-home-bridge     ^1.6.0  →    ^1.7.5
-   - eslint                     ^9.17.0  →   ^9.20.0
+   - eslint                     ^9.17.0  →   ^9.20.1
    - eslint-config-prettier      ^9.1.0  →   ^10.0.1
    - eslint-plugin-prettier      ^5.2.1  →    ^5.2.3
    - prettier                    ^3.4.2  →    ^3.5.0
@@ -908,7 +916,7 @@ Last update: 2025-02-11T17:48:51+01:00
 1. Information: There are updates for 5 dependencie(s):
    - @eslint/js   ^9.16.0  →   ^9.20.0
    - dotenv       ^16.4.5  →   ^16.4.7
-   - eslint       ^9.16.0  →   ^9.20.0
+   - eslint       ^9.16.0  →   ^9.20.1
    - globals     ^15.12.0  →  ^15.14.0
    - tsdav         ^2.1.2  →    ^2.1.3
 
@@ -924,7 +932,7 @@ Last update: 2025-02-11T17:48:51+01:00
 1. Information: There are updates for 4 dependencie(s):
    - @eslint/js                ^9.19.0  →  ^9.20.0
    - @stylistic/eslint-plugin   ^3.0.1  →   ^3.1.0
-   - eslint                    ^9.19.0  →  ^9.20.0
+   - eslint                    ^9.19.0  →  ^9.20.1
    - prettier                   ^3.4.2  →   ^3.5.0
 
 
@@ -932,7 +940,7 @@ Last update: 2025-02-11T17:48:51+01:00
 
 1. Information: There are updates for 3 dependencie(s):
    - @eslint/js   ^9.15.0  →   ^9.20.0
-   - eslint       ^9.15.0  →   ^9.20.0
+   - eslint       ^9.15.0  →   ^9.20.1
    - globals     ^15.12.0  →  ^15.14.0
 
 
@@ -1049,7 +1057,7 @@ Last update: 2025-02-11T17:48:51+01:00
    - @eslint/markdown            ^6.2.1  →    ^6.2.2
    - @stylistic/eslint-plugin   ^2.13.0  →    ^3.1.0
    - cspell                     ^8.17.2  →   ^8.17.3
-   - eslint                     ^9.18.0  →   ^9.20.0
+   - eslint                     ^9.18.0  →   ^9.20.1
    - lint-staged                ^15.4.1  →   ^15.4.3
    - markdownlint-cli           ^0.43.0  →   ^0.44.0
    - prettier                    ^3.4.2  →    ^3.5.0
@@ -1083,7 +1091,7 @@ Last update: 2025-02-11T17:48:51+01:00
 1. Information: There are updates for 4 dependencie(s):
    - @eslint/js                ^9.19.0  →  ^9.20.0
    - @stylistic/eslint-plugin   ^3.0.1  →   ^3.1.0
-   - eslint                    ^9.19.0  →  ^9.20.0
+   - eslint                    ^9.19.0  →  ^9.20.1
    - prettier                   ^3.4.2  →   ^3.5.0
 
 
@@ -1261,7 +1269,7 @@ Last update: 2025-02-11T17:48:51+01:00
 1. Information: There are updates for 5 dependencie(s):
    - @eslint/js                 ^9.13.0  →   ^9.20.0
    - @stylistic/eslint-plugin    ^2.9.0  →    ^3.1.0
-   - eslint                     ^9.13.0  →   ^9.20.0
+   - eslint                     ^9.13.0  →   ^9.20.1
    - globals                   ^15.11.0  →  ^15.14.0
    - prettier                    ^3.3.3  →    ^3.5.0
 
@@ -1334,7 +1342,7 @@ Last update: 2025-02-11T17:48:51+01:00
 
 1. Recommendation: No lint script found in package.json. It is recommended to add one.
 2. Information: There are updates for 3 dependencie(s):
-   - eslint    ^8.56.0  →  ^9.20.0
+   - eslint    ^8.56.0  →  ^9.20.1
    - moment    ^2.29.4  →  ^2.30.1
    - prettier   ^3.1.1  →   ^3.5.0
 
@@ -1779,7 +1787,7 @@ Last update: 2025-02-11T17:48:51+01:00
 2. Recommendation: Found `"node-fetch"` in file `package.json`: Replace it with built-in fetch.
 3. Recommendation: Replace eslintrc by new flat config.
 4. Information: There are updates for 7 dependencie(s):
-   - eslint                  ^7.2.0  →  ^9.20.0
+   - eslint                  ^7.2.0  →  ^9.20.1
    - eslint-plugin-jasmine   ^4.1.1  →   ^4.2.2
    - karma                   ^6.3.2  →   ^6.4.4
    - karma-chrome-launcher   ^3.1.0  →   ^3.2.0
@@ -1942,8 +1950,9 @@ Last update: 2025-02-11T17:48:51+01:00
 
 ### [MMM-EasyPix by KristjanESPERANTO](https://github.com/KristjanESPERANTO/MMM-EasyPix)
 
-1. Information: There are updates for 1 dependencie(s):
-   - prettier  ^3.4.2  →  ^3.5.0
+1. Information: There are updates for 2 dependencie(s):
+   - eslint    ^9.20.0  →  ^9.20.1
+   - prettier   ^3.4.2  →   ^3.5.0
 
 
 ### [MMM-Ecobee by parnic](https://github.com/parnic/MMM-Ecobee)
@@ -2012,7 +2021,7 @@ Last update: 2025-02-11T17:48:51+01:00
 1. Information: There are updates for 4 dependencie(s):
    - @eslint/js                ^9.10.0  →   ^9.20.0
    - @stylistic/eslint-plugin   ^2.8.0  →    ^3.1.0
-   - eslint                    ^9.10.0  →   ^9.20.0
+   - eslint                    ^9.10.0  →   ^9.20.1
    - globals                   ^15.9.0  →  ^15.14.0
 
 2.  WARN  @iconify/iconify@3.1.1: 2023-06-22T08:45:25.335Z
@@ -2066,7 +2075,7 @@ deprecated: no longer maintained, switch to modern iconify-icon web component
 1. Recommendation: Replace eslintrc by new flat config.
 2. Information: There are updates for 2 dependencie(s):
    - @stylistic/eslint-plugin   ^1.5.4  →   ^3.1.0
-   - eslint                    ^8.56.0  →  ^9.20.0
+   - eslint                    ^8.56.0  →  ^9.20.1
 
 
 ### [MMM-EnvCanada by CharlesMorris78](https://github.com/CharlesMorris78/MMM-EnvCanada)
@@ -2575,7 +2584,7 @@ deprecated: no longer maintained, switch to modern iconify-icon web component
    - @eslint/markdown            ^6.2.1  →    ^6.2.2
    - @stylistic/eslint-plugin   ^2.13.0  →    ^3.1.0
    - cspell                     ^8.17.2  →   ^8.17.3
-   - eslint                     ^9.18.0  →   ^9.20.0
+   - eslint                     ^9.18.0  →   ^9.20.1
    - lint-staged                ^15.4.1  →   ^15.4.3
    - markdownlint-cli           ^0.43.0  →   ^0.44.0
    - prettier                    ^3.4.2  →    ^3.5.0
@@ -2875,7 +2884,7 @@ deprecated: no longer maintained, switch to modern iconify-icon web component
 ### [MMM-GmailFeed by shaneapowell](https://github.com/shaneapowell/MMM-GmailFeed)
 
 1. Information: There are updates for 2 dependencie(s):
-   - eslint    ^8.56.0  →  ^9.20.0
+   - eslint    ^8.56.0  →  ^9.20.1
    - prettier   ^3.1.1  →   ^3.5.0
 
 2.  WARN  eslint@8.56.0: 2023-12-15T22:55:11.833Z
@@ -3009,7 +3018,7 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
 
 1. Information: There are updates for 4 dependencie(s):
    - @eslint/js   ^9.9.0  →   ^9.20.0
-   - eslint       ^9.9.0  →   ^9.20.0
+   - eslint       ^9.9.0  →   ^9.20.1
    - globals     ^15.9.0  →  ^15.14.0
    - prettier      3.3.3  →     3.5.0
 
@@ -3777,7 +3786,7 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
 1. There are no keywords in 'package.json'. We would use them as tags on the module list page.
 2. Information: There are updates for 7 dependencie(s):
    - @eslint/js                  ^9.17.0  →   ^9.20.0
-   - eslint                      ^9.17.0  →   ^9.20.0
+   - eslint                      ^9.17.0  →   ^9.20.1
    - markdownlint-cli2           ^0.17.1  →   ^0.17.2
    - prettier                     ^3.4.2  →    ^3.5.0
    - stylelint                  ^16.12.0  →  ^16.14.1
@@ -3800,7 +3809,7 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
 3. Information: There are updates for 6 dependencie(s):
    - @eslint/js                 ^8.56.0  →   ^9.20.0
    - @stylistic/eslint-plugin    ^1.5.3  →    ^3.1.0
-   - eslint                     ^8.56.0  →   ^9.20.0
+   - eslint                     ^8.56.0  →   ^9.20.1
    - eslint-plugin-import       ^2.29.1  →   ^2.31.0
    - globals                   ^13.24.0  →  ^15.14.0
    - justgage                    ^1.6.1  →    ^1.7.0
@@ -3887,7 +3896,7 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
    - @eslint/js                ^9.18.0  →  ^9.20.0
    - @stylistic/eslint-plugin  ^2.13.0  →   ^3.1.0
    - cspell                    ^8.17.2  →  ^8.17.3
-   - eslint                    ^9.18.0  →  ^9.20.0
+   - eslint                    ^9.18.0  →  ^9.20.1
    - markdownlint-cli          ^0.43.0  →  ^0.44.0
    - prettier                   ^3.4.2  →   ^3.5.0
 
@@ -3944,7 +3953,7 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
    - @rollup/plugin-typescript         ^11.1.6  →  ^12.1.2
    - @typescript-eslint/eslint-plugin  ^6.19.1  →  ^8.24.0
    - @typescript-eslint/parser         ^6.19.1  →  ^8.24.0
-   - eslint                            ^8.56.0  →  ^9.20.0
+   - eslint                            ^8.56.0  →  ^9.20.1
    - eslint-config-prettier             ^9.1.0  →  ^10.0.1
    - eslint-plugin-prettier             ^5.1.3  →   ^5.2.3
    - prettier                           ^3.2.4  →   ^3.5.0
@@ -4069,7 +4078,7 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
    - @eslint/js                       ^8.57.0  →   ^9.20.0
    - @pilaton/eslint-config-markdown   ^1.2.0  →    ^1.3.0
    - @stylistic/eslint-plugin          ^1.7.0  →    ^3.1.0
-   - eslint                           ^8.57.0  →   ^9.20.0
+   - eslint                           ^8.57.0  →   ^9.20.1
    - eslint-plugin-import             ^2.29.1  →   ^2.31.0
    - eslint-plugin-jsonc              ^2.15.0  →   ^2.19.1
    - globals                          ^15.0.0  →  ^15.14.0
@@ -4273,7 +4282,8 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
 
 ### [MMM-Linky by 2hdlockness](https://github.com/2hdlockness/MMM-Linky)
 
-1. Information: There are updates for 1 dependencie(s):
+1. Information: There are updates for 2 dependencie(s):
+   - eslint                      ^9.20.0  →  ^9.20.1
    - eslint-plugin-package-json  ^0.25.0  →  ^0.26.0
 
 
@@ -4519,7 +4529,7 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
 1. Information: There are updates for 4 dependencie(s):
    - @eslint/js                ^8.57.0  →   ^9.20.0
    - @stylistic/eslint-plugin   ^1.7.0  →    ^3.1.0
-   - eslint                    ^8.57.0  →   ^9.20.0
+   - eslint                    ^8.57.0  →   ^9.20.1
    - globals                   ^15.0.0  →  ^15.14.0
 
 2.  WARN  eslint@8.57.0: 2024-02-23T20:39:43.282Z
@@ -4646,12 +4656,13 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
 
 ### [MMM-MealieMenu by zanix](https://github.com/zanix/MMM-MealieMenu)
 
-1. Information: There are updates for 12 dependencie(s):
+1. Information: There are updates for 13 dependencie(s):
    - @commitlint/cli                  ^19.3.0  →  ^19.7.1
    - @commitlint/config-conventional  ^19.5.0  →  ^19.7.1
    - @eslint/json                      ^0.9.0  →  ^0.10.0
    - @eslint/markdown                  ^6.2.1  →   ^6.2.2
    - @stylistic/eslint-plugin         ^2.12.1  →   ^3.1.0
+   - eslint                           ^9.20.0  →  ^9.20.1
    - eslint-plugin-package-json       ^0.19.0  →  ^0.26.0
    - lint-staged                      ^15.3.0  →  ^15.4.3
    - markdownlint-cli                 ^0.43.0  →  ^0.44.0
@@ -5971,7 +5982,7 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
 1. Information: There are updates for 9 dependencie(s):
    - @eslint/js                  ^9.12.0  →   ^9.20.0
    - @stylistic/eslint-plugin     ^2.9.0  →    ^3.1.0
-   - eslint                      ^9.12.0  →   ^9.20.0
+   - eslint                      ^9.12.0  →   ^9.20.1
    - globals                    ^15.10.0  →  ^15.14.0
    - jsdoc                        ^4.0.3  →    ^4.0.4
    - prettier                     ^3.3.3  →    ^3.5.0
@@ -5998,7 +6009,7 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
    - @rollup/plugin-typescript         ^11.1.6  →  ^12.1.2
    - @stylistic/eslint-plugin           ^1.5.4  →   ^3.1.0
    - @typescript-eslint/eslint-plugin  ^6.20.0  →  ^8.24.0
-   - eslint                            ^8.56.0  →  ^9.20.0
+   - eslint                            ^8.56.0  →  ^9.20.1
    - prettier                           ^3.2.5  →   ^3.5.0
    - rollup                             ^4.9.6  →  ^4.34.6
    - rollup-plugin-banner2              ^1.2.2  →   ^1.3.1
@@ -6279,7 +6290,7 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
    - @eslint/js                ^9.18.0  →  ^9.20.0
    - @stylistic/eslint-plugin  ^2.13.0  →   ^3.1.0
    - cspell                    ^8.17.2  →  ^8.17.3
-   - eslint                    ^9.18.0  →  ^9.20.0
+   - eslint                    ^9.18.0  →  ^9.20.1
    - markdownlint-cli          ^0.43.0  →  ^0.44.0
    - prettier                   ^3.4.2  →   ^3.5.0
 
@@ -6292,7 +6303,7 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
 4. Information: There are updates for 5 dependencie(s):
    - @azure/msal-node      ^2.16.2  →    ^3.2.2
    - @eslint/js            ^9.16.0  →   ^9.20.0
-   - eslint                ^9.16.0  →   ^9.20.0
+   - eslint                ^9.16.0  →   ^9.20.1
    - eslint-plugin-jsdoc   ^50.6.0  →   ^50.6.3
    - globals              ^15.13.0  →  ^15.14.0
 
@@ -6550,7 +6561,7 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
 1. Information: There are updates for 4 dependencie(s):
    - @eslint/js                 ^9.16.0  →   ^9.20.0
    - @stylistic/eslint-plugin   ^2.11.0  →    ^3.1.0
-   - eslint                     ^9.16.0  →   ^9.20.0
+   - eslint                     ^9.16.0  →   ^9.20.1
    - globals                   ^15.13.0  →  ^15.14.0
 
 
@@ -7169,7 +7180,7 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
 1. Information: There are updates for 8 dependencie(s):
    - @eslint/js                ^9.17.0  →  ^9.20.0
    - @stylistic/eslint-plugin   ^3.0.1  →   ^3.1.0
-   - eslint                    ^9.19.0  →  ^9.20.0
+   - eslint                    ^9.19.0  →  ^9.20.1
    - eslint-plugin-jsonc       ^2.18.2  →  ^2.19.1
    - hafas-client               ^6.3.3  →   ^6.3.4
    - markdownlint-cli          ^0.43.0  →  ^0.44.0
@@ -7179,10 +7190,11 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
 
 ### [MMM-PublicTransportHafas by KristjanESPERANTO](https://github.com/KristjanESPERANTO/MMM-PublicTransportHafas)
 
-1. Information: There are updates for 5 dependencie(s):
+1. Information: There are updates for 6 dependencie(s):
    - @eslint/js                  ^9.19.0  →  ^9.20.0
    - @stylistic/eslint-plugin     ^3.0.1  →   ^3.1.0
-   - eslint                      ^9.19.0  →  ^9.20.0
+   - db-vendo-client              ^6.3.4  →   ^6.4.0
+   - eslint                      ^9.19.0  →  ^9.20.1
    - eslint-plugin-package-json  ^0.21.1  →  ^0.26.0
    - prettier                     ^3.4.2  →   ^3.5.0
 
@@ -7258,7 +7270,7 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
 1. Information: There are updates for 4 dependencie(s):
    - @eslint/js                ^9.10.0  →   ^9.20.0
    - @stylistic/eslint-plugin   ^2.7.2  →    ^3.1.0
-   - eslint                    ^9.10.0  →   ^9.20.0
+   - eslint                    ^9.10.0  →   ^9.20.1
    - globals                   ^15.9.0  →  ^15.14.0
 
 
@@ -7311,7 +7323,7 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
    - @rollup/plugin-commonjs      ^26.0.1  →  ^28.0.2
    - @rollup/plugin-node-resolve  ^15.2.3  →  ^16.0.0
    - @rollup/plugin-typescript    ^11.1.6  →  ^12.1.2
-   - eslint                        ^9.9.1  →  ^9.20.0
+   - eslint                        ^9.9.1  →  ^9.20.1
    - prettier                      ^3.3.3  →   ^3.5.0
    - rollup                       ^4.21.1  →  ^4.34.6
    - rollup-plugin-banner2         ^1.3.0  →   ^1.3.1
@@ -7843,7 +7855,7 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
 2. Information: There are updates for 4 dependencie(s):
    - @eslint/js    ^9.8.0  →   ^9.20.0
    - body-parser  ^1.20.2  →   ^1.20.3
-   - eslint        ^9.8.0  →   ^9.20.0
+   - eslint        ^9.8.0  →   ^9.20.1
    - globals      ^15.9.0  →  ^15.14.0
 
 
@@ -9240,7 +9252,7 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
 1. Information: There are updates for 4 dependencie(s):
    - @eslint/js                ^8.56.0  →  ^9.20.0
    - @stylistic/eslint-plugin   ^1.6.0  →   ^3.1.0
-   - eslint                    ^8.56.0  →  ^9.20.0
+   - eslint                    ^8.56.0  →  ^9.20.1
    - node-html-parser          ^6.1.12  →   ^7.0.1
 
 2.  WARN  eslint@8.56.0: 2023-12-15T22:55:11.833Z
@@ -9912,8 +9924,9 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
 
 ### [MMM-WebSpeechTTS by KristjanESPERANTO](https://github.com/KristjanESPERANTO/MMM-WebSpeechTTS)
 
-1. Information: There are updates for 1 dependencie(s):
-   - prettier  ^3.4.2  →  ^3.5.0
+1. Information: There are updates for 2 dependencie(s):
+   - eslint    ^9.20.0  →  ^9.20.1
+   - prettier   ^3.4.2  →   ^3.5.0
 
 
 ### [MMM-Webuntis by HeikoGr](https://github.com/HeikoGr/MMM-Webuntis)
@@ -9921,7 +9934,7 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
 1. Recommendation: No lint script found in package.json. It is recommended to add one.
 2. Information: There are updates for 3 dependencie(s):
    - @eslint/js   ^9.13.0  →   ^9.20.0
-   - eslint       ^9.13.0  →   ^9.20.0
+   - eslint       ^9.13.0  →   ^9.20.1
    - globals     ^15.11.0  →  ^15.14.0
 
 
@@ -10039,7 +10052,7 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
 
 1. Information: There are updates for 4 dependencie(s):
    - @eslint/js         ^9.15.0  →   ^9.20.0
-   - eslint             ^9.15.0  →   ^9.20.0
+   - eslint             ^9.15.0  →   ^9.20.1
    - globals           ^15.12.0  →  ^15.14.0
    - semantic-release   ^24.2.0  →   ^24.2.2
 
@@ -10075,7 +10088,7 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
 1. Information: There are updates for 4 dependencie(s):
    - @eslint/js                ^9.17.0  →  ^9.20.0
    - @stylistic/eslint-plugin  ^2.12.1  →   ^3.1.0
-   - eslint                    ^9.17.0  →  ^9.20.0
+   - eslint                    ^9.17.0  →  ^9.20.1
    - prettier                   ^3.4.2  →   ^3.5.0
 
 

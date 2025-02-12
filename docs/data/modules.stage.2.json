@@ -131,6 +131,18 @@
     "license": "MIT"
   },
   {
+    "name": "MMM-affluences",
+    "category": "News / Information",
+    "url": "https://github.com/kahllenny/MMM-affluences",
+    "id": "kahllenny/MMM-affluences",
+    "maintainer": "kahllenny",
+    "maintainerURL": "",
+    "description": "Module shows the occupancy rate of a place using affluences",
+    "issues": [],
+    "stars": 0,
+    "license": "MIT"
+  },
+  {
     "name": "MMM-Afvalwijzer",
     "category": "Utility / IoT / 3rd Party / Integration",
     "url": "https://github.com/gertperdZA/MMM-Afvalwijzer",
@@ -4282,7 +4294,7 @@
     "maintainerURL": "",
     "description": "Displays live image of our planet.",
     "issues": [],
-    "stars": 72,
+    "stars": 73,
     "license": "MIT"
   },
   {
@@ -4355,7 +4367,7 @@
     "maintainerURL": "",
     "description": "Integrate your Google Contact's birthdays in the MagicMirror² calendar.",
     "issues": [],
-    "stars": 30,
+    "stars": 29,
     "license": "BSD-3-Clause"
   },
   {
@@ -4367,7 +4379,7 @@
     "maintainerURL": "https://github.com/randomBrainstormer",
     "description": "Get your Google Calendars in the shape of MagicMirror's default calendar.",
     "issues": [],
-    "stars": 77,
+    "stars": 78,
     "license": "MIT"
   },
   {
@@ -4379,7 +4391,7 @@
     "maintainerURL": "",
     "description": "See what's playing in your Google Cast device.",
     "issues": [],
-    "stars": 24,
+    "stars": 25,
     "license": "AGPL-3.0"
   },
   {
@@ -5370,7 +5382,7 @@
     "maintainerURL": "",
     "description": "A simple way to cycle through a list of iframe sources. Example shows live video sources from YouTube and other webcam sources.",
     "issues": [],
-    "stars": 1,
+    "stars": 2,
     "license": "MIT"
   },
   {

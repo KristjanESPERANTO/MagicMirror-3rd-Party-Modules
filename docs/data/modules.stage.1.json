@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "2025-02-11T16:30:15.460Z",
+  "lastUpdate": "2025-02-12T16:30:14.454Z",
   "modules": [
     {
       "name": "MMM-01ZM",
@@ -110,6 +110,16 @@
       "maintainer": "ChrisF1976",
       "maintainerURL": "",
       "description": "Simple advent calendar. New in 2024. Will be updated in 2025.",
+      "issues": []
+    },
+    {
+      "name": "MMM-affluences",
+      "category": "News / Information",
+      "url": "https://github.com/kahllenny/MMM-affluences",
+      "id": "kahllenny/MMM-affluences",
+      "maintainer": "kahllenny",
+      "maintainerURL": "",
+      "description": "Module shows the occupancy rate of a place using affluences",
       "issues": []
     },
     {

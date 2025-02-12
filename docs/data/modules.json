@@ -199,6 +199,24 @@
     "lastCommit": "2024-12-07T09:50:05+01:00"
   },
   {
+    "name": "MMM-affluences",
+    "category": "News / Information",
+    "url": "https://github.com/kahllenny/MMM-affluences",
+    "id": "kahllenny/MMM-affluences",
+    "maintainer": "kahllenny",
+    "maintainerURL": "",
+    "description": "Module shows the occupancy rate of a place using affluences",
+    "issues": true,
+    "stars": 0,
+    "license": "MIT",
+    "tags": [
+      "template"
+    ],
+    "image": "example_1.jpg",
+    "defaultSortWeight": 1,
+    "lastCommit": "2025-02-12T14:54:53+01:00"
+  },
+  {
     "name": "MMM-Afvalwijzer",
     "category": "Utility / IoT / 3rd Party / Integration",
     "url": "https://github.com/gertperdZA/MMM-Afvalwijzer",
@@ -5108,7 +5126,7 @@
     "license": "MIT",
     "image": "MMM-Fireworks.jpg",
     "defaultSortWeight": 2,
-    "lastCommit": "2025-02-09T13:11:15+01:00"
+    "lastCommit": "2025-02-11T19:44:30+01:00"
   },
   {
     "name": "MMM-Fish",
@@ -5995,7 +6013,7 @@
     "maintainerURL": "",
     "description": "Displays live image of our planet.",
     "issues": true,
-    "stars": 72,
+    "stars": 73,
     "license": "MIT",
     "image": "screenshot.jpg",
     "defaultSortWeight": 8,
@@ -6088,7 +6106,7 @@
     "maintainerURL": "",
     "description": "Integrate your Google Contact's birthdays in the MagicMirror\u00b2 calendar.",
     "issues": true,
-    "stars": 30,
+    "stars": 29,
     "license": "BSD-3-Clause",
     "image": "screenshot.jpg",
     "defaultSortWeight": 4,
@@ -6103,7 +6121,7 @@
     "maintainerURL": "https://github.com/randomBrainstormer",
     "description": "Get your Google Calendars in the shape of MagicMirror's default calendar.",
     "issues": true,
-    "stars": 77,
+    "stars": 78,
     "license": "MIT",
     "tags": [
       "google",
@@ -6122,7 +6140,7 @@
     "maintainerURL": "",
     "description": "See what's playing in your Google Cast device.",
     "issues": true,
-    "stars": 24,
+    "stars": 25,
     "license": "AGPL-3.0",
     "tags": [
       "google",
@@ -6333,7 +6351,7 @@
     "license": "MIT",
     "image": "screen-01-minimal_look.jpg",
     "defaultSortWeight": 3,
-    "lastCommit": "2025-02-10T00:53:49+01:00"
+    "lastCommit": "2025-02-12T00:22:17+01:00"
   },
   {
     "name": "MMM-GoogleTTS",
@@ -7476,7 +7494,7 @@
     "maintainerURL": "",
     "description": "A simple way to cycle through a list of iframe sources. Example shows live video sources from YouTube and other webcam sources.",
     "issues": true,
-    "stars": 1,
+    "stars": 2,
     "license": "MIT",
     "defaultSortWeight": 6,
     "lastCommit": "2025-01-04T11:03:29-08:00"
@@ -11674,7 +11692,7 @@
     ],
     "image": ".github-preview.bubbles.jpg",
     "defaultSortWeight": 0,
-    "lastCommit": "2025-02-11T11:40:59+00:00"
+    "lastCommit": "2025-02-11T19:26:03+00:00"
   },
   {
     "name": "MMM-Netatmo-Presence",
