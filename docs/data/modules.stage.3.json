@@ -6198,7 +6198,7 @@
     "maintainerURL": "https://github.com/hermanho",
     "description": "Image gallery or wallpaper with your Google Photos account.",
     "issues": [],
-    "stars": 178,
+    "stars": 180,
     "license": "MIT",
     "tags": [
       "googlephotos"
@@ -6214,7 +6214,7 @@
     "maintainerURL": "",
     "description": "Display Google Sheets data. Highly customizable.",
     "issues": [],
-    "stars": 31,
+    "stars": 32,
     "license": "MIT",
     "tags": [
       "googlesheets",
@@ -6264,7 +6264,7 @@
     "maintainerURL": "https://github.com/jacopo1891",
     "description": "Lists travel times to requested locations taking into account Google traffic information with \"classic view\".",
     "issues": [],
-    "stars": 16,
+    "stars": 17,
     "tags": [
       "traffic",
       "googlemap"
@@ -6377,7 +6377,7 @@
     "issues": [
       "There is no `package.json`. We need this file to gather information about the module for the module list page."
     ],
-    "stars": 38,
+    "stars": 39,
     "license": "MIT",
     "image": "EmbedURL_from_Grafana.jpg"
   },
@@ -19526,7 +19526,7 @@
     "maintainerURL": "",
     "description": "Get info about who is home, based on ping to cell phone. Like Mrs. Weasley clock.",
     "issues": [],
-    "stars": 5,
+    "stars": 6,
     "license": "MIT",
     "tags": [
       "phone",
