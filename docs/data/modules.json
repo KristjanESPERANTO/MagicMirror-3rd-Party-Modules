@@ -1306,7 +1306,7 @@
     ],
     "image": "screenshots-birthday.jpg",
     "defaultSortWeight": 2,
-    "lastCommit": "2025-01-24T09:52:18+01:00"
+    "lastCommit": "2025-02-13T12:44:01+01:00"
   },
   {
     "name": "MMM-birthdays",
@@ -2701,6 +2701,21 @@
     "image": "docs-preview.jpg",
     "defaultSortWeight": 4,
     "lastCommit": "2023-08-23T00:39:14+01:00"
+  },
+  {
+    "name": "MMM-Cookidoo",
+    "category": "Entertainment / Misc",
+    "url": "https://github.com/ChrisF1976/MMM-Cookidoo",
+    "id": "ChrisF1976/MMM-Cookidoo",
+    "maintainer": "ChrisF1976",
+    "maintainerURL": "https://github.com/ChrisF1976",
+    "description": "Displays recipes for the Thermomix.",
+    "issues": true,
+    "stars": 0,
+    "license": "MIT",
+    "image": "MMM-Cookidoo.jpg",
+    "defaultSortWeight": 5,
+    "lastCommit": "2025-02-13T22:12:48+01:00"
   },
   {
     "name": "cookiecutter-magic-mirror-module",
@@ -6717,7 +6732,7 @@
     "maintainerURL": "",
     "description": "Voice-Control module based on Google Speech Recognizer (annyang). Send a notification to all other modules on voice detection.",
     "issues": true,
-    "stars": 26,
+    "stars": 27,
     "license": "MIT",
     "defaultSortWeight": 8,
     "lastCommit": "2017-03-02T09:05:02+01:00"
@@ -6979,7 +6994,7 @@
     "maintainerURL": "https://github.com/wonderslug",
     "description": "Displays information from Home Assistant using Home Assistant Templates to render any HTML you want for the module. Includes support for Material Design Icons, Websockets for fast updating, and auto reconnect on Home Assistant restarts. Allows you to show or hide a whole module based on a Home Assistant Template as well.",
     "issues": true,
-    "stars": 98,
+    "stars": 99,
     "license": "MIT",
     "tags": [
       "home assistant"
@@ -7099,7 +7114,7 @@
     "maintainerURL": "",
     "description": "Hotword detector / Voice Commander / Utterance recorder with Picovoice.",
     "issues": true,
-    "stars": 2,
+    "stars": 3,
     "license": "MIT",
     "tags": [
       "hotword",
@@ -19497,7 +19512,7 @@
     "maintainerURL": "",
     "description": "Adds dynamic weather-based effects to your mirror.",
     "issues": true,
-    "stars": 2,
+    "stars": 3,
     "license": "MIT",
     "tags": [
       "snow",

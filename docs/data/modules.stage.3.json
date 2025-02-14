@@ -2639,6 +2639,22 @@
     "image": "docs-preview.jpg"
   },
   {
+    "name": "MMM-Cookidoo",
+    "category": "Entertainment / Misc",
+    "url": "https://github.com/ChrisF1976/MMM-Cookidoo",
+    "id": "ChrisF1976/MMM-Cookidoo",
+    "maintainer": "ChrisF1976",
+    "maintainerURL": "https://github.com/ChrisF1976",
+    "description": "Displays recipes for the Thermomix.",
+    "issues": [
+      "`package.json` issue: No repository field.",
+      "There are no keywords in 'package.json'. We would use them as tags on the module list page."
+    ],
+    "stars": 0,
+    "license": "MIT",
+    "image": "MMM-Cookidoo.jpg"
+  },
+  {
     "name": "cookiecutter-magic-mirror-module",
     "category": "Development / Core MagicMirror²",
     "url": "https://github.com/xadamxk/cookiecutter-magic-mirror-module",
@@ -6642,7 +6658,7 @@
       "There is no `package.json`. We need this file to gather information about the module for the module list page.",
       "No image found."
     ],
-    "stars": 26,
+    "stars": 27,
     "license": "MIT"
   },
   {
@@ -6911,7 +6927,7 @@
     "maintainerURL": "https://github.com/wonderslug",
     "description": "Displays information from Home Assistant using Home Assistant Templates to render any HTML you want for the module. Includes support for Material Design Icons, Websockets for fast updating, and auto reconnect on Home Assistant restarts. Allows you to show or hide a whole module based on a Home Assistant Template as well.",
     "issues": [],
-    "stars": 98,
+    "stars": 99,
     "license": "MIT",
     "tags": [
       "home assistant"
@@ -7029,7 +7045,7 @@
     "maintainerURL": "",
     "description": "Hotword detector / Voice Commander / Utterance recorder with Picovoice.",
     "issues": [],
-    "stars": 2,
+    "stars": 3,
     "license": "MIT",
     "tags": [
       "hotword",
@@ -19270,7 +19286,7 @@
     "maintainerURL": "",
     "description": "Adds dynamic weather-based effects to your mirror.",
     "issues": [],
-    "stars": 2,
+    "stars": 3,
     "license": "MIT",
     "tags": [
       "snow",

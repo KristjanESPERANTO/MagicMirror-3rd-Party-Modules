@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "2025-02-13T04:30:21.593Z",
+  "lastUpdate": "2025-02-14T04:30:16.577Z",
   "modules": [
     {
       "name": "MMM-01ZM",
@@ -1605,6 +1605,16 @@
       "maintainer": "sheyabernstein",
       "maintainerURL": "",
       "description": "Display internet connection status.",
+      "issues": []
+    },
+    {
+      "name": "MMM-Cookidoo",
+      "category": "Entertainment / Misc",
+      "url": "https://github.com/ChrisF1976/MMM-Cookidoo",
+      "id": "ChrisF1976/MMM-Cookidoo",
+      "maintainer": "ChrisF1976",
+      "maintainerURL": "https://github.com/ChrisF1976",
+      "description": "Displays recipes for the Thermomix.",
       "issues": []
     },
     {

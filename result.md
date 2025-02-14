@@ -1,16 +1,16 @@
 # Result of the module analysis
 
-Last update: 2025-02-13T05:39:41+01:00
+Last update: 2025-02-14T05:40:28+01:00
 
 ## Statistics
 
 |                      | number   |
 |:---------------------|:--------:|
-| modules analyzed     |   1218   |
+| modules analyzed     |   1219   |
 | maintainer           |    657   |
-| modules with issues  |   1218   |
-| issues               |   6528   |
-| modules at github    |   1092   |
+| modules with issues  |   1219   |
+| issues               |   6534   |
+| modules at github    |   1093   |
 | modules at gitlab    |     12   |
 | modules at bitbucket |      1   |
 
@@ -361,7 +361,7 @@ Last update: 2025-02-13T05:39:41+01:00
    - @stylistic/eslint-plugin    ^3.0.1  →    ^3.1.0
    - eslint                     ^9.19.0  →   ^9.20.1
    - globals                   ^15.14.0  →  ^15.15.0
-   - prettier                    ^3.4.2  →    ^3.5.0
+   - prettier                    ^3.4.2  →    ^3.5.1
 
 
 ### [MMM-AQI by ryck](https://github.com/ryck/MMM-AQI)
@@ -511,7 +511,7 @@ Last update: 2025-02-13T05:39:41+01:00
 1. Deprecated: Found `omxplayer` in file `node_helper.js`: Try to replace it with `vlc`.
 2. Information: There are updates for 2 dependencie(s):
    - eslint    ^8.57.0  →  ^9.20.1
-   - prettier   ^3.3.3  →   ^3.5.0
+   - prettier   ^3.3.3  →   ^3.5.1
 
 
 ### [MMM-BartTimes by falafel2222](https://github.com/falafel2222/MMM-BartTimes)
@@ -759,12 +759,12 @@ Last update: 2025-02-13T05:39:41+01:00
 
 1. Information: There are updates for 10 dependencie(s):
    - @stylistic/eslint-plugin   ^2.12.1  →    ^3.1.0
-   - @types/node               ^22.10.2  →  ^22.13.2
+   - @types/node               ^22.10.2  →  ^22.13.4
    - bosch-smart-home-bridge     ^1.6.0  →    ^1.7.5
    - eslint                     ^9.17.0  →   ^9.20.1
    - eslint-config-prettier      ^9.1.0  →   ^10.0.1
    - eslint-plugin-prettier      ^5.2.1  →    ^5.2.3
-   - prettier                    ^3.4.2  →    ^3.5.0
+   - prettier                    ^3.4.2  →    ^3.5.1
    - rollup                     ^4.29.1  →   ^4.34.6
    - typescript                  ^5.7.2  →    ^5.7.3
    - typescript-eslint          ^8.18.2  →   ^8.24.0
@@ -935,7 +935,7 @@ Last update: 2025-02-13T05:39:41+01:00
    - @stylistic/eslint-plugin    ^3.0.1  →    ^3.1.0
    - eslint                     ^9.19.0  →   ^9.20.1
    - globals                   ^15.14.0  →  ^15.15.0
-   - prettier                    ^3.4.2  →    ^3.5.0
+   - prettier                    ^3.4.2  →    ^3.5.1
 
 
 ### [MMM-CalendarExt3 by MMRIZE](https://github.com/MMRIZE/MMM-CalendarExt3)
@@ -1063,7 +1063,7 @@ Last update: 2025-02-13T05:39:41+01:00
    - globals                   ^15.14.0  →  ^15.15.0
    - lint-staged                ^15.4.1  →   ^15.4.3
    - markdownlint-cli           ^0.43.0  →   ^0.44.0
-   - prettier                    ^3.4.2  →    ^3.5.0
+   - prettier                    ^3.4.2  →    ^3.5.1
    - stylelint                 ^16.13.2  →  ^16.14.1
    - stylelint-prettier          ^5.0.2  →    ^5.0.3
 
@@ -1085,7 +1085,7 @@ Last update: 2025-02-13T05:39:41+01:00
 2. Information: There are updates for 4 dependencie(s):
    - ical-generator   ^1.4.3  →   ^8.1.1
    - moment          ^2.23.0  →  ^2.30.1
-   - prettier         ^3.0.3  →   ^3.5.0
+   - prettier         ^3.0.3  →   ^3.5.1
    - tsdav            ^2.0.3  →   ^2.1.3
 
 
@@ -1096,7 +1096,7 @@ Last update: 2025-02-13T05:39:41+01:00
    - @stylistic/eslint-plugin    ^3.0.1  →    ^3.1.0
    - eslint                     ^9.19.0  →   ^9.20.1
    - globals                   ^15.14.0  →  ^15.15.0
-   - prettier                    ^3.4.2  →    ^3.5.0
+   - prettier                    ^3.4.2  →    ^3.5.1
 
 
 ### [MMM-CECControl by nischi](https://github.com/nischi/MMM-CECControl)
@@ -1275,7 +1275,7 @@ Last update: 2025-02-13T05:39:41+01:00
    - @stylistic/eslint-plugin    ^2.9.0  →    ^3.1.0
    - eslint                     ^9.13.0  →   ^9.20.1
    - globals                   ^15.11.0  →  ^15.15.0
-   - prettier                    ^3.3.3  →    ^3.5.0
+   - prettier                    ^3.3.3  →    ^3.5.1
 
 
 ### [MMM-Config by sdetweil](https://github.com/sdetweil/MMM-Config)
@@ -1298,6 +1298,15 @@ Last update: 2025-02-13T05:39:41+01:00
 3. Outdated: Found `MichMich/MagicMirror` in file `README.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
 4. Typo: Found `MagicMirror2` in file `package.json`: Replace it with `MagicMirror²`.
 5. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
+
+### [MMM-Cookidoo by ChrisF1976](https://github.com/ChrisF1976/MMM-Cookidoo)
+
+1. `package.json` issue: No repository field.
+2. There are no keywords in 'package.json'. We would use them as tags on the module list page.
+3. Recommendation: Found `axios` in file `README.md`: Replace it with built-in fetch.
+4. Recommendation: Found `axios` in file `node_helper.js`: Replace it with built-in fetch.
+5. Recommendation: Found `axios` in file `package.json`: Replace it with built-in fetch.
+6. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
 
 ### [cookiecutter-magic-mirror-module by xadamxk](https://github.com/xadamxk/cookiecutter-magic-mirror-module)
 
@@ -1348,7 +1357,7 @@ Last update: 2025-02-13T05:39:41+01:00
 2. Information: There are updates for 3 dependencie(s):
    - eslint    ^8.56.0  →  ^9.20.1
    - moment    ^2.29.4  →  ^2.30.1
-   - prettier   ^3.1.1  →   ^3.5.0
+   - prettier   ^3.1.1  →   ^3.5.1
 
 
 ### [MMM-covid19 by 0m4r](https://github.com/0m4r/MMM-covid19)
@@ -1957,7 +1966,7 @@ Last update: 2025-02-13T05:39:41+01:00
 1. Information: There are updates for 3 dependencie(s):
    - eslint     ^9.20.0  →   ^9.20.1
    - globals   ^15.14.0  →  ^15.15.0
-   - prettier    ^3.4.2  →    ^3.5.0
+   - prettier    ^3.4.2  →    ^3.5.1
 
 
 ### [MMM-Ecobee by parnic](https://github.com/parnic/MMM-Ecobee)
@@ -2593,7 +2602,7 @@ deprecated: no longer maintained, switch to modern iconify-icon web component
    - globals                   ^15.14.0  →  ^15.15.0
    - lint-staged                ^15.4.1  →   ^15.4.3
    - markdownlint-cli           ^0.43.0  →   ^0.44.0
-   - prettier                    ^3.4.2  →    ^3.5.0
+   - prettier                    ^3.4.2  →    ^3.5.1
    - stylelint                 ^16.13.2  →  ^16.14.1
    - stylelint-prettier          ^5.0.2  →    ^5.0.3
 
@@ -2891,7 +2900,7 @@ deprecated: no longer maintained, switch to modern iconify-icon web component
 
 1. Information: There are updates for 2 dependencie(s):
    - eslint    ^8.56.0  →  ^9.20.1
-   - prettier   ^3.1.1  →   ^3.5.0
+   - prettier   ^3.1.1  →   ^3.5.1
 
 2.  WARN  eslint@8.56.0: 2023-12-15T22:55:11.833Z
 deprecated: This version is no longer supported. Please see https://eslint.org/version-support for other options.
@@ -3026,7 +3035,7 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
    - @eslint/js   ^9.9.0  →   ^9.20.0
    - eslint       ^9.9.0  →   ^9.20.1
    - globals     ^15.9.0  →  ^15.15.0
-   - prettier      3.3.3  →     3.5.0
+   - prettier      3.3.3  →     3.5.1
 
 
 ### [MMM-GoogleTasks by spydersoft-consulting](https://github.com/spydersoft-consulting/MMM-GoogleTasks)
@@ -3794,7 +3803,7 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
    - @eslint/js                  ^9.17.0  →   ^9.20.0
    - eslint                      ^9.17.0  →   ^9.20.1
    - markdownlint-cli2           ^0.17.1  →   ^0.17.2
-   - prettier                     ^3.4.2  →    ^3.5.0
+   - prettier                     ^3.4.2  →    ^3.5.1
    - stylelint                  ^16.12.0  →  ^16.14.1
    - stylelint-config-standard   ^36.0.1  →   ^37.0.0
    - stylelint-prettier           ^5.0.2  →    ^5.0.3
@@ -3905,7 +3914,7 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
    - eslint                     ^9.18.0  →   ^9.20.1
    - globals                   ^15.14.0  →  ^15.15.0
    - markdownlint-cli           ^0.43.0  →   ^0.44.0
-   - prettier                    ^3.4.2  →    ^3.5.0
+   - prettier                    ^3.4.2  →    ^3.5.1
 
 
 ### [MMM-ISS-Map by khassel](https://gitlab.com/khassel/MMM-ISS-Map)
@@ -3963,7 +3972,7 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
    - eslint                            ^8.56.0  →  ^9.20.1
    - eslint-config-prettier             ^9.1.0  →  ^10.0.1
    - eslint-plugin-prettier             ^5.1.3  →   ^5.2.3
-   - prettier                           ^3.2.4  →   ^3.5.0
+   - prettier                           ^3.2.4  →   ^3.5.1
    - rollup                             ^4.9.6  →  ^4.34.6
    - rollup-plugin-banner2              ^1.2.2  →   ^1.3.1
    - typescript                         ^5.3.3  →   ^5.7.3
@@ -4090,7 +4099,7 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
    - eslint-plugin-jsonc              ^2.15.0  →   ^2.19.1
    - globals                          ^15.0.0  →  ^15.15.0
    - markdownlint-cli                 ^0.39.0  →   ^0.44.0
-   - prettier                          ^3.2.5  →    ^3.5.0
+   - prettier                          ^3.2.5  →    ^3.5.1
 
 2.  WARN  eslint@8.57.0: 2024-02-23T20:39:43.282Z
 deprecated: This version is no longer supported. Please see https://eslint.org/version-support for other options.
@@ -4674,7 +4683,7 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
    - globals                          ^15.14.0  →  ^15.15.0
    - lint-staged                       ^15.3.0  →   ^15.4.3
    - markdownlint-cli                  ^0.43.0  →   ^0.44.0
-   - prettier                           ^3.4.2  →    ^3.5.0
+   - prettier                           ^3.4.2  →    ^3.5.1
    - semantic-release                  ^24.1.0  →   ^24.2.2
    - stylelint-config-standard         ^36.0.1  →   ^37.0.0
    - stylelint-prettier                 ^5.0.2  →    ^5.0.3
@@ -5993,7 +6002,7 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
    - eslint                      ^9.12.0  →   ^9.20.1
    - globals                    ^15.10.0  →  ^15.15.0
    - jsdoc                        ^4.0.3  →    ^4.0.4
-   - prettier                     ^3.3.3  →    ^3.5.0
+   - prettier                     ^3.3.3  →    ^3.5.1
    - stylelint                   ^16.9.0  →  ^16.14.1
    - stylelint-config-standard   ^36.0.1  →   ^37.0.0
    - stylelint-prettier           ^5.0.2  →    ^5.0.3
@@ -6018,7 +6027,7 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
    - @stylistic/eslint-plugin           ^1.5.4  →   ^3.1.0
    - @typescript-eslint/eslint-plugin  ^6.20.0  →  ^8.24.0
    - eslint                            ^8.56.0  →  ^9.20.1
-   - prettier                           ^3.2.5  →   ^3.5.0
+   - prettier                           ^3.2.5  →   ^3.5.1
    - rollup                             ^4.9.6  →  ^4.34.6
    - rollup-plugin-banner2              ^1.2.2  →   ^1.3.1
    - typescript                         ^5.3.3  →   ^5.7.3
@@ -6301,7 +6310,7 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
    - eslint                     ^9.18.0  →   ^9.20.1
    - globals                   ^15.14.0  →  ^15.15.0
    - markdownlint-cli           ^0.43.0  →   ^0.44.0
-   - prettier                    ^3.4.2  →    ^3.5.0
+   - prettier                    ^3.4.2  →    ^3.5.1
 
 
 ### [MMM-OneDrive by hermanho](https://github.com/hermanho/MMM-OneDrive)
@@ -7194,7 +7203,7 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
    - globals                   ^15.14.0  →  ^15.15.0
    - hafas-client                ^6.3.3  →    ^6.3.4
    - markdownlint-cli           ^0.43.0  →   ^0.44.0
-   - prettier                    ^3.4.2  →    ^3.5.0
+   - prettier                    ^3.4.2  →    ^3.5.1
    - stylelint-prettier          ^5.0.2  →    ^5.0.3
 
 
@@ -7203,11 +7212,11 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
 1. Information: There are updates for 7 dependencie(s):
    - @eslint/js                   ^9.19.0  →   ^9.20.0
    - @stylistic/eslint-plugin      ^3.0.1  →    ^3.1.0
-   - db-vendo-client               ^6.3.4  →    ^6.4.0
+   - db-vendo-client               ^6.3.4  →    ^6.5.0
    - eslint                       ^9.19.0  →   ^9.20.1
    - eslint-plugin-package-json   ^0.21.1  →   ^0.26.0
    - globals                     ^15.14.0  →  ^15.15.0
-   - prettier                      ^3.4.2  →    ^3.5.0
+   - prettier                      ^3.4.2  →    ^3.5.1
 
 
 ### [MMM-PublicTransportVVO by ChristianGeie](https://github.com/ChristianGeie/MMM-PublicTransportVVO)
@@ -7335,7 +7344,7 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
    - @rollup/plugin-node-resolve  ^15.2.3  →  ^16.0.0
    - @rollup/plugin-typescript    ^11.1.6  →  ^12.1.2
    - eslint                        ^9.9.1  →  ^9.20.1
-   - prettier                      ^3.3.3  →   ^3.5.0
+   - prettier                      ^3.3.3  →   ^3.5.1
    - rollup                       ^4.21.1  →  ^4.34.6
    - rollup-plugin-banner2         ^1.3.0  →   ^1.3.1
    - typescript                    ^5.5.4  →   ^5.7.3
@@ -9938,7 +9947,7 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
 1. Information: There are updates for 3 dependencie(s):
    - eslint     ^9.20.0  →   ^9.20.1
    - globals   ^15.14.0  →  ^15.15.0
-   - prettier    ^3.4.2  →    ^3.5.0
+   - prettier    ^3.4.2  →    ^3.5.1
 
 
 ### [MMM-Webuntis by HeikoGr](https://github.com/HeikoGr/MMM-Webuntis)
@@ -10101,7 +10110,7 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
    - @eslint/js                ^9.17.0  →  ^9.20.0
    - @stylistic/eslint-plugin  ^2.12.1  →   ^3.1.0
    - eslint                    ^9.17.0  →  ^9.20.1
-   - prettier                   ^3.4.2  →   ^3.5.0
+   - prettier                   ^3.4.2  →   ^3.5.1
 
 
 ### [MMM-Worldclock by ulrichwisser](https://github.com/ulrichwisser/MMM-Worldclock)
