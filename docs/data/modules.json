@@ -2660,7 +2660,7 @@
     "maintainerURL": "",
     "description": "Form based (in browser) configuration for MagicMirror and modules.",
     "issues": true,
-    "stars": 31,
+    "stars": 33,
     "license": "ISC",
     "image": "doc_images-playground_example.jpg",
     "defaultSortWeight": 4,
@@ -2715,7 +2715,7 @@
     "license": "MIT",
     "image": "MMM-Cookidoo.jpg",
     "defaultSortWeight": 5,
-    "lastCommit": "2025-02-13T22:12:48+01:00"
+    "lastCommit": "2025-02-14T17:31:35+01:00"
   },
   {
     "name": "cookiecutter-magic-mirror-module",
@@ -6910,6 +6910,20 @@
   {
     "name": "MMM-HomeAssistant",
     "category": "Utility / IoT / 3rd Party / Integration",
+    "url": "https://github.com/yourdawi/MMM-HomeAssistant",
+    "id": "yourdawi/MMM-HomeAssistant",
+    "maintainer": "yourdawi",
+    "maintainerURL": "https://github.com/yourdawi",
+    "description": "Display information out of HomeAssistant.",
+    "issues": true,
+    "stars": 3,
+    "license": "MIT",
+    "defaultSortWeight": 6,
+    "lastCommit": "2024-12-22T13:05:46+01:00"
+  },
+  {
+    "name": "MMM-HomeAssistant",
+    "category": "Utility / IoT / 3rd Party / Integration",
     "url": "https://github.com/zuo000/MMM-HomeAssistant",
     "id": "zuo000/MMM-HomeAssistant",
     "maintainer": "zuo000",
@@ -6923,18 +6937,19 @@
     "lastCommit": "2020-04-08T18:54:01-07:00"
   },
   {
-    "name": "MMM-HomeAssistant",
+    "name": "MMM-homeassistant-sensors",
     "category": "Utility / IoT / 3rd Party / Integration",
-    "url": "https://github.com/yourdawi/MMM-HomeAssistant",
-    "id": "yourdawi/MMM-HomeAssistant",
-    "maintainer": "yourdawi",
-    "maintainerURL": "https://github.com/yourdawi",
-    "description": "Display information out of HomeAssistant.",
+    "url": "https://github.com/ledsi/MMM-homeassistant-sensors",
+    "id": "ledsi/MMM-homeassistant-sensors",
+    "maintainer": "ledsi",
+    "maintainerURL": "",
+    "description": "Display information from Home Assistant using the home assistant REST API.",
     "issues": true,
-    "stars": 3,
+    "stars": 0,
+    "hasGithubIssues": false,
     "license": "MIT",
-    "defaultSortWeight": 6,
-    "lastCommit": "2024-12-22T13:05:46+01:00"
+    "defaultSortWeight": 7,
+    "lastCommit": "2024-06-30T09:48:34+02:00"
   },
   {
     "name": "MMM-homeassistant-sensors",
@@ -6954,21 +6969,6 @@
     "image": ".github-screen01-advanced.jpg",
     "defaultSortWeight": 5,
     "lastCommit": "2023-03-21T13:52:46+01:00"
-  },
-  {
-    "name": "MMM-homeassistant-sensors",
-    "category": "Utility / IoT / 3rd Party / Integration",
-    "url": "https://github.com/ledsi/MMM-homeassistant-sensors",
-    "id": "ledsi/MMM-homeassistant-sensors",
-    "maintainer": "ledsi",
-    "maintainerURL": "",
-    "description": "Display information from Home Assistant using the home assistant REST API.",
-    "issues": true,
-    "stars": 0,
-    "hasGithubIssues": false,
-    "license": "MIT",
-    "defaultSortWeight": 7,
-    "lastCommit": "2024-06-30T09:48:34+02:00"
   },
   {
     "name": "MMM-HomeAssistant-Touch",
@@ -7177,7 +7177,7 @@
     "maintainerURL": "",
     "description": "Include arbitrary HTML snippets in an iframe (script tags work).",
     "issues": true,
-    "stars": 13,
+    "stars": 14,
     "license": "GPL-3.0",
     "image": "HTMLSnippet-screenshot-grafana.jpg",
     "defaultSortWeight": 2,
@@ -7328,7 +7328,7 @@
     "maintainerURL": "",
     "description": "Display non-completed ToDos from an iCal source like CalDAV or the Task App in ownCloud or Nextcloud.",
     "issues": true,
-    "stars": 3,
+    "stars": 4,
     "license": "ISC",
     "image": "MMM-iCal-ToDo.jpg",
     "defaultSortWeight": 9,
@@ -7536,7 +7536,7 @@
     "maintainerURL": "",
     "description": "Time to the next buses, tramways from a list of stations / lines for Lille (Ilevia).",
     "issues": true,
-    "stars": 6,
+    "stars": 7,
     "license": "MIT",
     "tags": [
       "localtransport",
@@ -7589,7 +7589,7 @@
     "maintainerURL": "",
     "description": "Show images and photos.",
     "issues": true,
-    "stars": 48,
+    "stars": 49,
     "license": "MIT",
     "tags": [
       "photos",
@@ -12102,7 +12102,7 @@
     ],
     "image": "img-screenshot1.jpg",
     "defaultSortWeight": 0,
-    "lastCommit": "2024-02-12T14:39:09+01:00"
+    "lastCommit": "2025-02-14T11:16:41+01:00"
   },
   {
     "name": "MMM-nixie-clock",
