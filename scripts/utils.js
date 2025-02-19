@@ -6,4 +6,13 @@ function getJson (filePath) {
   return json;
 }
 
-export {getJson};
+function isMinified (filePath) {
+  const fileContent = fs.readFileSync(filePath, "utf8");
+  const maxWhitespace = 100;
+  const hasShortVariableNames = (/[\w]{1,2}\s*=\s*[^;]+;/gu).test(fileContent);
+  const whitespaceCount = (fileContent.match(/\s/gu) || []).length;
+  const isBelowWhitespaceThreshold = whitespaceCount <= maxWhitespace;
+  return hasShortVariableNames && isBelowWhitespaceThreshold;
+}
+
+export {getJson, isMinified};
