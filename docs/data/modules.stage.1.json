@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "2025-01-23T16:30:47.702Z",
+  "lastUpdate": "2025-02-19T16:30:14.210Z",
   "modules": [
     {
       "name": "MMM-01ZM",
@@ -110,6 +110,16 @@
       "maintainer": "ChrisF1976",
       "maintainerURL": "",
       "description": "Simple advent calendar. New in 2024. Will be updated in 2025.",
+      "issues": []
+    },
+    {
+      "name": "MMM-affluences",
+      "category": "News / Information",
+      "url": "https://github.com/kahllenny/MMM-affluences",
+      "id": "kahllenny/MMM-affluences",
+      "maintainer": "kahllenny",
+      "maintainerURL": "",
+      "description": "Module shows the occupancy rate of a place using affluences",
       "issues": []
     },
     {
@@ -381,6 +391,16 @@
       "maintainer": "grenagit",
       "maintainerURL": "",
       "description": "Display the last Astronomy Picture Of the Day (APOD). This is an evolution of MMM-nasaastropic. Supports image and video and display title, description and copyright.",
+      "issues": []
+    },
+    {
+      "name": "MMM-ApothekenNotdienst",
+      "category": "Health",
+      "url": "https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst",
+      "id": "KristjanESPERANTO/MMM-ApothekenNotdienst",
+      "maintainer": "KristjanESPERANTO",
+      "maintainerURL": "",
+      "description": "Display pharmacies that are on emergency duty in Germany.",
       "issues": []
     },
     {
@@ -784,6 +804,16 @@
       "maintainer": "pcurt",
       "maintainerURL": "https://github.com/pcurt",
       "description": "Show french jokes from the BlaguesAPI <a target=\"_blank\" href=\"https://www.blagues-api.fr\">https://www.blagues-api.fr</a>.",
+      "issues": []
+    },
+    {
+      "name": "MMM-Blitzer",
+      "category": "News / Information",
+      "url": "https://github.com/yourdawi/MMM-Blitzer",
+      "id": "yourdawi/MMM-Blitzer",
+      "maintainer": "yourdawi",
+      "maintainerURL": "https://github.com/yourdawi",
+      "description": "Show radar traps around based on blitzer.de.",
       "issues": []
     },
     {
@@ -1578,6 +1608,16 @@
       "issues": []
     },
     {
+      "name": "MMM-Cookidoo",
+      "category": "Entertainment / Misc",
+      "url": "https://github.com/ChrisF1976/MMM-Cookidoo",
+      "id": "ChrisF1976/MMM-Cookidoo",
+      "maintainer": "ChrisF1976",
+      "maintainerURL": "https://github.com/ChrisF1976",
+      "description": "Displays recipes for the Thermomix.",
+      "issues": []
+    },
+    {
       "name": "cookiecutter-magic-mirror-module",
       "category": "Development / Core MagicMirror²",
       "url": "https://github.com/xadamxk/cookiecutter-magic-mirror-module",
@@ -1990,6 +2030,16 @@
       "maintainer": "andrecarlucci",
       "maintainerURL": "",
       "description": "Displays the daily Dilbert strip.",
+      "issues": []
+    },
+    {
+      "name": "MMM-DailyJuice",
+      "category": "Health",
+      "url": "https://github.com/BerkSmash1984/MMM-DailyJuice",
+      "id": "BerkSmash1984/MMM-DailyJuice",
+      "maintainer": "BerkSmash1984",
+      "maintainerURL": "",
+      "description": "Displays a random juice recipe daily, including the image, title, and ingredients.",
       "issues": []
     },
     {
@@ -3238,7 +3288,7 @@
       "url": "https://github.com/yourdawi/MMM-FortniteStats",
       "id": "yourdawi/MMM-FortniteStats",
       "maintainer": "yourdawi",
-      "maintainerURL": "",
+      "maintainerURL": "https://github.com/yourdawi",
       "description": "Display Fortnite Stats.",
       "issues": []
     },
@@ -3271,26 +3321,6 @@
       "maintainer": "RaspiManu",
       "maintainerURL": "",
       "description": "Controlling an RGB-LED strip around a smart mirror with or without touch input. It provides features for static background lighting, highly customizable effects on notifications and party lighting.",
-      "issues": []
-    },
-    {
-      "name": "MMM-FranceInfo",
-      "category": "News / Information",
-      "url": "https://github.com/bugsounet/MMM-FranceInfo",
-      "id": "bugsounet/MMM-FranceInfo",
-      "maintainer": "bugsounet",
-      "maintainerURL": "",
-      "description": "[FR] Affiche les flux rss de <a target=\"_blank\" href=\"https://www.francetvinfo.fr\">franceinfo</a>. <br />[EN] Displays rss feeds from franceinfo.",
-      "issues": []
-    },
-    {
-      "name": "MMM-Freebox",
-      "category": "Utility / IoT / 3rd Party / Integration",
-      "url": "https://github.com/bugsounet/MMM-Freebox",
-      "id": "bugsounet/MMM-Freebox",
-      "maintainer": "bugsounet",
-      "maintainerURL": "",
-      "description": "[FR] Affiche les informations de votre Freebox en temps réél.<br />[EN] Displays information from your Freebox in real time.",
       "issues": []
     },
     {
@@ -3595,16 +3625,6 @@
       "outdated": "Archived. Repo has been archived at 2020-06-10."
     },
     {
-      "name": "MMM-Glassy",
-      "category": "Development / Core MagicMirror²",
-      "url": "https://github.com/bugsounet/MMM-Glassy",
-      "id": "bugsounet/MMM-Glassy",
-      "maintainer": "bugsounet",
-      "maintainerURL": "",
-      "description": "This module allows to add a glass effect to MagicMirror² modules.",
-      "issues": []
-    },
-    {
       "name": "MMM-Globe",
       "category": "Entertainment / Misc",
       "url": "https://github.com/Eunanibus/MMM-Globe",
@@ -3662,16 +3682,6 @@
       "maintainer": "mrdis",
       "maintainerURL": "",
       "description": "Displays the two best routes from an origin to a destination, using Google Directions API.",
-      "issues": []
-    },
-    {
-      "name": "MMM-GoogleAssistant",
-      "category": "Voice Control",
-      "url": "https://github.com/bugsounet/MMM-GoogleAssistant",
-      "id": "bugsounet/MMM-GoogleAssistant",
-      "maintainer": "bugsounet",
-      "maintainerURL": "https://wiki.bugsounet.fr",
-      "description": "MMM-GoogleAssistant is an real embedded Google assistant on MagicMirror² with many plugins.",
       "issues": []
     },
     {
@@ -3778,11 +3788,11 @@
     {
       "name": "MMM-GoogleMapsTraffic",
       "category": "Transport / Travel",
-      "url": "https://github.com/doctorfree/MMM-GoogleMapsTraffic",
-      "id": "doctorfree/MMM-GoogleMapsTraffic",
-      "maintainer": "doctorfree",
+      "url": "https://github.com/ChrisF1976/MMM-GoogleMapsTraffic",
+      "id": "ChrisF1976/MMM-GoogleMapsTraffic",
+      "maintainer": "ChrisF1976",
       "maintainerURL": "",
-      "description": "Displays a Google map, centered at provided coordinates, with traffic information.",
+      "description": "Displays a Google map, centred at provided coordinates, with traffic information.",
       "issues": []
     },
     {
@@ -4390,6 +4400,16 @@
       "issues": []
     },
     {
+      "name": "MMM-HueControl",
+      "category": "Utility / IoT / 3rd Party / Integration",
+      "url": "https://github.com/DreamyChloe/MMM-HueControl",
+      "id": "DreamyChloe/MMM-HueControl",
+      "maintainer": "DreamyChloe",
+      "maintainerURL": "",
+      "description": "Control other MagicMirror modules using Philips Hue v2 API.",
+      "issues": []
+    },
+    {
       "name": "MMM-hukamnama",
       "category": "Religion",
       "url": "https://github.com/harv-singh/MMM-hukamnama",
@@ -4486,7 +4506,7 @@
       "id": "FalseIlyu/MMM-IdF-Transport",
       "maintainer": "FalseIlyu",
       "maintainerURL": "https://github.com/FalseIlyu",
-      "description": "Display next bus/tramway/metro/train in the Paris/Ile-de-France région in France using IDFM API.",
+      "description": "Display next bus/tramway/metro/train in the Paris/Ile-de-France region in France using IDFM API.",
       "issues": []
     },
     {
@@ -5239,6 +5259,16 @@
       "issues": []
     },
     {
+      "name": "MMM-Linky",
+      "category": "Utility / IoT / 3rd Party / Integration",
+      "url": "https://github.com/2hdlockness/MMM-Linky",
+      "id": "2hdlockness/MMM-Linky",
+      "maintainer": "2hdlockness",
+      "maintainerURL": "https://github.com/2hdlockness/",
+      "description": "A module to retrieve and display Linky consumption data using CONSO API. Intended for French users.",
+      "issues": []
+    },
+    {
       "name": "MMM-Liquipedia-Matches",
       "category": "Sports",
       "url": "https://github.com/buxxi/MMM-Liquipedia-Matches",
@@ -5502,12 +5532,23 @@
     },
     {
       "name": "magic-mirror-voice",
-      "category": "Voice Control",
+      "category": "Outdated Modules",
       "url": "https://github.com/whyjustin/magic-mirror-voice",
       "id": "whyjustin/magic-mirror-voice",
       "maintainer": "whyjustin",
       "maintainerURL": "",
       "description": "Voice control based on based on Sphinx and Alexa.",
+      "issues": [],
+      "outdated": "Abandoned. No reactions to Pull Requests and issues since years. Seems not to work anymore."
+    },
+    {
+      "name": "MMM-MagicDraw",
+      "category": "Utility / IoT / 3rd Party / Integration",
+      "url": "https://github.com/ivlovric/MMM-MagicDraw",
+      "id": "ivlovric/MMM-MagicDraw",
+      "maintainer": "ivlovric",
+      "maintainerURL": "",
+      "description": "Drawing board for MagicMirror with touch interactive UI interface.",
       "issues": []
     },
     {
@@ -5804,16 +5845,6 @@
       "issues": []
     },
     {
-      "name": "MMM-MeteoFrance",
-      "category": "Weather",
-      "url": "https://github.com/bugsounet/MMM-MeteoFrance",
-      "id": "bugsounet/MMM-MeteoFrance",
-      "maintainer": "bugsounet",
-      "maintainerURL": "",
-      "description": "[FR] Affiche les informations de prévisions actuelles, horaires et quotidiennes à l'aide des données de l'API MétéoFrance.<br />[EN] Displays current, hourly and daily forecast information using data from MeteoFrance API.",
-      "issues": []
-    },
-    {
       "name": "MMM-MHZ19",
       "category": "Utility / IoT / 3rd Party / Integration",
       "url": "https://github.com/awitwicki/MMM-MHZ19",
@@ -5944,6 +5975,16 @@
       "description": "Simple player to play your music.",
       "issues": [],
       "outdated": "Abandoned. No reactions to issues since years. No installation instructions. It no longer seems to work."
+    },
+    {
+      "name": "MM-orrery",
+      "category": "Entertainment / Misc",
+      "url": "https://github.com/hoyski/MM-orrery",
+      "id": "hoyski/MM-orrery",
+      "maintainer": "hoyski",
+      "maintainerURL": "https://github.com/hoyski",
+      "description": "Display all of the planets and their current positions relative to the sun.",
+      "issues": []
     },
     {
       "name": "MM-Remote",
@@ -6421,10 +6462,10 @@
     {
       "name": "MMM-MovieListings",
       "category": "Entertainment / Misc",
-      "url": "https://github.com/mumblebaj/MMM-MovieListings",
-      "id": "mumblebaj/MMM-MovieListings",
-      "maintainer": "mumblebaj",
-      "maintainerURL": "",
+      "url": "https://github.com/Tueti/MMM-MovieListings",
+      "id": "Tueti/MMM-MovieListings",
+      "maintainer": "Tueti",
+      "maintainerURL": "https://github.com/Tueti",
       "description": "Displays the currently airing top movies in theaters around you.",
       "issues": []
     },
@@ -7086,16 +7127,6 @@
       "outdated": "Abandoned. No reactions to issues since years. API change and the author no longer has a Netatmo thermostat."
     },
     {
-      "name": "MMM-NetatmoThermostat",
-      "category": "Utility / IoT / 3rd Party / Integration",
-      "url": "https://github.com/bugsounet/MMM-NetatmoThermostat",
-      "id": "bugsounet/MMM-NetatmoThermostat",
-      "maintainer": "bugsounet",
-      "maintainerURL": "",
-      "description": "This module display your Netatmo Thermostat informations.",
-      "issues": []
-    },
-    {
       "name": "MMM-network-signal",
       "category": "Development / Core MagicMirror²",
       "url": "https://github.com/PoOwAa/MMM-network-signal",
@@ -7198,11 +7229,11 @@
     {
       "name": "MMM-NextCloud-Tasks",
       "category": "Utility / IoT / 3rd Party / Integration",
-      "url": "https://github.com/starlingfire/MMM-NextCloud-Tasks",
-      "id": "starlingfire/MMM-NextCloud-Tasks",
-      "maintainer": "starlingfire",
+      "url": "https://github.com/Coernel82/MMM-NextCloud-Tasks",
+      "id": "Coernel82/MMM-NextCloud-Tasks",
+      "maintainer": "Coernel82",
       "maintainerURL": "",
-      "description": "Displays ToDo list(s) from NextCloud Tasks app.",
+      "description": "Displays ToDo list(s) from NextCloud Tasks app and other ical / CalDav sources. Task can be toggled and sent back to the server, styling options and more filter options.",
       "issues": []
     },
     {
@@ -8226,12 +8257,13 @@
     {
       "name": "MMM-Pir",
       "category": "Utility / IoT / 3rd Party / Integration",
-      "url": "https://github.com/bugsounet/MMM-Pir",
-      "id": "bugsounet/MMM-Pir",
-      "maintainer": "bugsounet",
+      "url": "https://github.com/Coernel82/MMM-Pir",
+      "id": "Coernel82/MMM-Pir",
+      "maintainer": "Coernel82",
       "maintainerURL": "",
-      "description": "After a configurated time without any user interaction the display will turn off and hide all modules for economy mode. It will wake up with a PIR sensor.",
-      "issues": []
+      "description": "The rescued Pir module of Bugsounet.",
+      "issues": [],
+      "outdated": "Coernel82 cannot give support!"
     },
     {
       "name": "MMM-PIR",
@@ -8565,16 +8597,6 @@
       "maintainer": "bibaldo",
       "maintainerURL": "",
       "description": "Allows you to get instant info of your developing pregnancy.",
-      "issues": []
-    },
-    {
-      "name": "MMM-PrixCarburants",
-      "category": "Transport / Travel",
-      "url": "https://github.com/bugsounet/MMM-PrixCarburants",
-      "id": "bugsounet/MMM-PrixCarburants",
-      "maintainer": "bugsounet",
-      "maintainerURL": "",
-      "description": "[FR] Ce module permet d'afficher les prix des carburants des stations francaise.<br />[EN] Display fuel prices (France only).",
       "issues": []
     },
     {
@@ -9101,6 +9123,16 @@
       "issues": []
     },
     {
+      "name": "MMM-RemoteYoutube",
+      "category": "Utility / IoT / 3rd Party / Integration",
+      "url": "https://github.com/DreamyChloe/MMM-RemoteYoutube",
+      "id": "DreamyChloe/MMM-RemoteYoutube",
+      "maintainer": "DreamyChloe",
+      "maintainerURL": "",
+      "description": "Allows you to play YouTube videos and playlists using notifications.",
+      "issues": []
+    },
+    {
       "name": "MMM-RepoStats",
       "category": "Utility / IoT / 3rd Party / Integration",
       "url": "https://gitlab.com/khassel/MMM-RepoStats",
@@ -9138,16 +9170,6 @@
       "maintainer": "Alvinger",
       "maintainerURL": "",
       "description": "Public transport information for Sweden.",
-      "issues": []
-    },
-    {
-      "name": "MMM-Resseltrafiken",
-      "category": "Transport / Travel",
-      "url": "https://github.com/cgillinger/MMM-Resseltrafiken",
-      "id": "cgillinger/MMM-Resseltrafiken",
-      "maintainer": "cgillinger",
-      "maintainerURL": "https://github.com/cgillinger",
-      "description": "Displays timetables for Sjöstadstrafiken and M/S Emelie ferry services in Stockholm. Features color-coded departures, custom stop highlighting, and automatic handling of holiday schedules.",
       "issues": []
     },
     {
@@ -9401,16 +9423,6 @@
       "maintainer": "uphillcheddar",
       "maintainerURL": "https://github.com/uphillcheddar",
       "description": "Displays images from AWS S3, comes with setup script to set up AWS resources. Addtional features include MMM-Selfieshot uploads, photo attributations and various layout options.",
-      "issues": []
-    },
-    {
-      "name": "MMM-Saint",
-      "category": "Religion",
-      "url": "https://github.com/bugsounet/MMM-Saint",
-      "id": "bugsounet/MMM-Saint",
-      "maintainer": "bugsounet",
-      "maintainerURL": "https://github.com/bugsounet",
-      "description": "[FR] Affiche le saint du jour.<br />[EN] Displays the saint of the day.",
       "issues": []
     },
     {
@@ -9818,6 +9830,16 @@
       "issues": []
     },
     {
+      "name": "MMM-SimplePIR",
+      "category": "Utility / IoT / 3rd Party / Integration",
+      "url": "https://github.com/ryanjblajda/MMM-SimplePIR",
+      "id": "ryanjblajda/MMM-SimplePIR",
+      "maintainer": "ryanjblajda",
+      "maintainerURL": "",
+      "description": "A very simple PIR motion sensor module",
+      "issues": []
+    },
+    {
       "name": "MMM-SimpleText",
       "category": "Entertainment / Misc",
       "url": "https://github.com/SaltyRiver/MMM-SimpleText",
@@ -10218,16 +10240,6 @@
       "maintainer": "LukasKlose",
       "maintainerURL": "https://github.com/LukasKlose",
       "description": "Display the tables of the Polish Speedway Leagues (PGE Ekstraliga, I. Liga Żużlowa , II. Liga Żużlowa).",
-      "issues": []
-    },
-    {
-      "name": "MMM-SpinId",
-      "category": "Entertainment / Misc",
-      "url": "https://github.com/mlcampbe/MMM-SpinId",
-      "id": "mlcampbe/MMM-SpinId",
-      "maintainer": "mlcampbe",
-      "maintainerURL": "",
-      "description": "Show the winning Wheel of Fortune Spin IDs for the current day.",
       "issues": []
     },
     {
@@ -11303,6 +11315,16 @@
       "maintainer": "bacherd",
       "maintainerURL": "",
       "description": "Displays UniFi hotspot vouchers.",
+      "issues": []
+    },
+    {
+      "name": "MMM-Universal-Pir",
+      "category": "Utility / IoT / 3rd Party / Integration",
+      "url": "https://gitlab.com/khassel/MMM-Universal-Pir",
+      "id": "khassel/MMM-Universal-Pir",
+      "maintainer": "khassel",
+      "maintainerURL": "https://gitlab.com/karsten13",
+      "description": "A simple PIR motion sensor module where you can specify your own commands for controlling gpio and screen.",
       "issues": []
     },
     {
