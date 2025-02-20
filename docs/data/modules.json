@@ -231,7 +231,7 @@
       "trashcollection"
     ],
     "image": "AfvalwijzerScreenshot.jpg",
-    "defaultSortWeight": 0,
+    "defaultSortWeight": 1,
     "lastCommit": "2024-10-09T17:55:17+02:00"
   },
   {
@@ -693,7 +693,7 @@
       "wallpaper"
     ],
     "image": "MMM-APOD_screenshot.jpg",
-    "defaultSortWeight": 0,
+    "defaultSortWeight": 1,
     "lastCommit": "2024-03-08T22:38:20+01:00"
   },
   {
@@ -1276,7 +1276,7 @@
     "maintainerURL": "",
     "description": "Displays a new bird every day with a photo, name, and interesting facts. Powered by the Nuthatch API by Last Elm Software, it's perfect for bird enthusiasts or anyone who wants to bring a touch of nature to their MagicMirror setup.",
     "issues": true,
-    "stars": 2,
+    "stars": 3,
     "license": "MIT",
     "tags": [
       "bird",
@@ -1911,7 +1911,7 @@
       "calendar"
     ],
     "image": "docs-Configuration-Views-legend-full-example.jpg",
-    "defaultSortWeight": -2,
+    "defaultSortWeight": -1,
     "lastCommit": "2025-02-02T02:21:21+01:00"
   },
   {
@@ -1930,7 +1930,7 @@
       "calext3"
     ],
     "image": "screenshot.jpg",
-    "defaultSortWeight": -1,
+    "defaultSortWeight": 0,
     "lastCommit": "2024-12-26T19:25:10+01:00"
   },
   {
@@ -2165,7 +2165,7 @@
       "openmensa"
     ],
     "image": "img-example1.jpg",
-    "defaultSortWeight": 0,
+    "defaultSortWeight": 1,
     "lastCommit": "2025-01-22T23:26:39+01:00"
   },
   {
@@ -2237,7 +2237,7 @@
       "pages"
     ],
     "image": "img-example1-slide.jpg",
-    "defaultSortWeight": 0,
+    "defaultSortWeight": 1,
     "lastCommit": "2025-02-02T01:26:49+01:00"
   },
   {
@@ -2648,7 +2648,7 @@
       "sensors"
     ],
     "image": "examples-bash-curl.jpg",
-    "defaultSortWeight": 0,
+    "defaultSortWeight": 1,
     "lastCommit": "2024-10-30T20:31:33+01:00"
   },
   {
@@ -2978,7 +2978,7 @@
       "crisis"
     ],
     "image": "docs-ScreenShot1.jpg",
-    "defaultSortWeight": 1,
+    "defaultSortWeight": 2,
     "lastCommit": "2024-10-16T20:27:33+02:00"
   },
   {
@@ -3110,7 +3110,7 @@
       "cursor"
     ],
     "image": "screenshot.jpg",
-    "defaultSortWeight": 0,
+    "defaultSortWeight": 1,
     "lastCommit": "2024-10-08T09:52:40+02:00"
   },
   {
@@ -4165,7 +4165,7 @@
       "pictures"
     ],
     "image": "pix-earth.jpg",
-    "defaultSortWeight": 0,
+    "defaultSortWeight": 1,
     "lastCommit": "2025-02-08T18:56:56+01:00"
   },
   {
@@ -4414,7 +4414,7 @@
       "energymonitor"
     ],
     "image": "assets-screenshot-energy-monitor.jpg",
-    "defaultSortWeight": 0,
+    "defaultSortWeight": 1,
     "lastCommit": "2025-01-26T13:26:11+01:00"
   },
   {
@@ -4828,7 +4828,7 @@
       "facts"
     ],
     "image": "example.jpg",
-    "defaultSortWeight": -1,
+    "defaultSortWeight": 0,
     "lastCommit": "2024-09-01T13:55:01-07:00"
   },
   {
@@ -5481,7 +5481,7 @@
       "nodebb"
     ],
     "image": "screenshot.jpg",
-    "defaultSortWeight": 0,
+    "defaultSortWeight": 1,
     "lastCommit": "2025-01-22T23:04:34+01:00"
   },
   {
@@ -6312,7 +6312,7 @@
       "spreadsheet"
     ],
     "image": "screenshots-Orders_Custom.jpg",
-    "defaultSortWeight": 0,
+    "defaultSortWeight": 1,
     "lastCommit": "2024-10-25T22:47:10-04:00"
   },
   {
@@ -6846,7 +6846,7 @@
     ],
     "image": "screenshots-screenshot.jpg",
     "defaultSortWeight": 1,
-    "lastCommit": "2025-02-19T18:27:16+08:00"
+    "lastCommit": "2025-02-20T12:07:16+08:00"
   },
   {
     "name": "MMM-HLTV",
@@ -7966,7 +7966,7 @@
     ],
     "image": "images-screenshot1.jpg",
     "defaultSortWeight": 0,
-    "lastCommit": "2025-01-21T21:16:19+01:00"
+    "lastCommit": "2025-02-19T23:26:52+01:00"
   },
   {
     "name": "MMM-ISS-Map",
@@ -8349,7 +8349,7 @@
     ],
     "image": "img-fire_stick_remote.jpg",
     "defaultSortWeight": 5,
-    "lastCommit": "2024-02-28T04:48:49-06:00"
+    "lastCommit": "2025-02-19T21:27:11-06:00"
   },
   {
     "name": "MMM-Keyboard",
@@ -8697,7 +8697,7 @@
     "maintainerURL": "https://github.com/2hdlockness/",
     "description": "A module to retrieve and display Linky consumption data using CONSO API. Intended for French users.",
     "issues": true,
-    "stars": 0,
+    "stars": 3,
     "license": "MIT",
     "tags": [
       "linky",
@@ -9512,7 +9512,7 @@
       "recipie"
     ],
     "image": "MMM-MealieMenu-screenshot.jpg",
-    "defaultSortWeight": -1,
+    "defaultSortWeight": 0,
     "lastCommit": "2025-02-07T16:51:05-07:00"
   },
   {
@@ -11034,7 +11034,7 @@
       "mvv"
     ],
     "image": "assets-example.jpg",
-    "defaultSortWeight": -1,
+    "defaultSortWeight": 0,
     "lastCommit": "2024-11-06T00:44:54+01:00"
   },
   {
@@ -11653,7 +11653,7 @@
     "maintainerURL": "",
     "description": "Uses HC-SR04 sensors to measure distance and display compliments if USER_PRESENCE is detected by MMM-PIR-Sensor and user is near the MagicMirror\u00b2.",
     "issues": true,
-    "stars": 4,
+    "stars": 5,
     "tags": [
       "distance",
       "modules"
@@ -11736,7 +11736,7 @@
     "maintainerURL": "",
     "description": "Display your Netatmo in/outdoor weather station data.",
     "issues": true,
-    "stars": 39,
+    "stars": 40,
     "license": "MIT",
     "tags": [
       "netatmo",
@@ -12079,7 +12079,7 @@
       "ice hockey"
     ],
     "image": ".github-example_nhl.jpg",
-    "defaultSortWeight": 1,
+    "defaultSortWeight": 2,
     "lastCommit": "2025-01-06T08:34:09-06:00"
   },
   {
@@ -12718,7 +12718,7 @@
       "openweathermap"
     ],
     "image": "screenshot.jpg",
-    "defaultSortWeight": 0,
+    "defaultSortWeight": 1,
     "lastCommit": "2025-02-18T00:41:48+01:00"
   },
   {
@@ -13200,7 +13200,7 @@
       "slides"
     ],
     "image": "example.jpg",
-    "defaultSortWeight": 1,
+    "defaultSortWeight": 2,
     "lastCommit": "2025-01-20T08:30:26-06:00"
   },
   {
@@ -14285,7 +14285,7 @@
       "touchable"
     ],
     "image": "examples-page_one-profile_two.jpg",
-    "defaultSortWeight": 1,
+    "defaultSortWeight": 2,
     "lastCommit": "2024-06-01T12:52:26+02:00"
   },
   {
@@ -14384,7 +14384,7 @@
       "brandenburg"
     ],
     "image": "img-MMM-PublicTransport_screenshot.jpg",
-    "defaultSortWeight": 0,
+    "defaultSortWeight": 1,
     "lastCommit": "2025-02-01T07:08:55+01:00"
   },
   {
@@ -14405,7 +14405,7 @@
     ],
     "image": "img-Goerdelerring_all.jpg",
     "defaultSortWeight": -1,
-    "lastCommit": "2025-02-18T22:38:31+01:00"
+    "lastCommit": "2025-02-19T23:32:19+01:00"
   },
   {
     "name": "MMM-PublicTransportVVO",
@@ -16059,7 +16059,7 @@
     ],
     "license": "MIT",
     "image": "img-kubectl.jpg",
-    "defaultSortWeight": 1,
+    "defaultSortWeight": 2,
     "lastCommit": "2025-01-10T22:55:38+00:00"
   },
   {
@@ -16366,7 +16366,7 @@
       "sweden"
     ],
     "image": "screenshot.jpg",
-    "defaultSortWeight": 1,
+    "defaultSortWeight": 2,
     "lastCommit": "2024-03-25T17:57:51+01:00"
   },
   {
@@ -17507,7 +17507,7 @@
     "maintainerURL": "",
     "description": "Get a lot of system stats from a PC board like CPU usage, ram usage, disk usage, CPU temperature, volume, internet status and private IP and status, beside that you can configure your WiFi network to create a QR code.",
     "issues": true,
-    "stars": 7,
+    "stars": 8,
     "license": "MIT",
     "image": "screenshots-screenshot-compact.jpg",
     "defaultSortWeight": 3,
@@ -19689,7 +19689,7 @@
       "webspeech"
     ],
     "image": ".github-TTS.jpg",
-    "defaultSortWeight": 0,
+    "defaultSortWeight": 1,
     "lastCommit": "2025-02-08T19:03:00+01:00"
   },
   {
@@ -19990,7 +19990,7 @@
       "vocabulary"
     ],
     "image": "wotdPic.jpg",
-    "defaultSortWeight": 1,
+    "defaultSortWeight": 2,
     "lastCommit": "2024-12-18T09:47:19-06:00"
   },
   {
@@ -20149,7 +20149,7 @@
     "maintainerURL": "",
     "description": "Integrate temperature and humidity from your xiaomi smarthome system.",
     "issues": true,
-    "stars": 26,
+    "stars": 27,
     "tags": [
       "wunderlist"
     ],

@@ -1240,7 +1240,7 @@
     "maintainerURL": "",
     "description": "Displays a new bird every day with a photo, name, and interesting facts. Powered by the Nuthatch API by Last Elm Software, it's perfect for bird enthusiasts or anyone who wants to bring a touch of nature to their MagicMirror setup.",
     "issues": [],
-    "stars": 2,
+    "stars": 3,
     "license": "MIT",
     "tags": [
       "bird",
@@ -8598,7 +8598,7 @@
     "maintainerURL": "https://github.com/2hdlockness/",
     "description": "A module to retrieve and display Linky consumption data using CONSO API. Intended for French users.",
     "issues": [],
-    "stars": 0,
+    "stars": 3,
     "license": "MIT",
     "tags": [
       "linky",
@@ -11540,7 +11540,7 @@
     "issues": [
       "No image found."
     ],
-    "stars": 4,
+    "stars": 5,
     "tags": [
       "distance",
       "modules"
@@ -11621,7 +11621,7 @@
     "maintainerURL": "",
     "description": "Display your Netatmo in/outdoor weather station data.",
     "issues": [],
-    "stars": 39,
+    "stars": 40,
     "license": "MIT",
     "tags": [
       "netatmo",
@@ -17292,7 +17292,7 @@
     "issues": [
       "There is no `package.json`. We need this file to gather information about the module for the module list page."
     ],
-    "stars": 7,
+    "stars": 8,
     "license": "MIT",
     "image": "screenshots-screenshot-compact.jpg"
   },
@@ -19905,7 +19905,7 @@
     "issues": [
       "No image found."
     ],
-    "stars": 26,
+    "stars": 27,
     "tags": [
       "wunderlist"
     ],
