@@ -2664,7 +2664,7 @@
     "license": "ISC",
     "image": "doc_images-playground_example.jpg",
     "defaultSortWeight": 3,
-    "lastCommit": "2025-02-19T07:14:38-07:00"
+    "lastCommit": "2025-02-20T08:01:34-07:00"
   },
   {
     "name": "MMM-Confucius-say",
@@ -6271,7 +6271,7 @@
     "maintainerURL": "",
     "description": "Displays a Google map, centred at provided coordinates, with traffic information.",
     "issues": true,
-    "stars": 1,
+    "stars": 2,
     "license": "MIT",
     "image": "Traffic.jpg",
     "defaultSortWeight": 4,
@@ -7965,7 +7965,7 @@
       "livestream"
     ],
     "image": "images-screenshot1.jpg",
-    "defaultSortWeight": 0,
+    "defaultSortWeight": 1,
     "lastCommit": "2025-02-19T23:26:52+01:00"
   },
   {
@@ -13027,7 +13027,7 @@
     "maintainerURL": "",
     "description": "A weather module that displays current, hourly and daily forecast information using data from the OpenWeatherMap One Call API.",
     "issues": true,
-    "stars": 32,
+    "stars": 35,
     "license": "MIT",
     "tags": [
       "weather",
@@ -14404,7 +14404,7 @@
       "vendo"
     ],
     "image": "img-Goerdelerring_all.jpg",
-    "defaultSortWeight": -1,
+    "defaultSortWeight": 0,
     "lastCommit": "2025-02-19T23:32:19+01:00"
   },
   {
@@ -20327,7 +20327,7 @@
     "maintainerURL": "https://github.com/ngnijland",
     "description": "Check if a YouTube channel if streaming. If it is, it plays the live stream.",
     "issues": true,
-    "stars": 1,
+    "stars": 2,
     "license": "MIT",
     "tags": [
       "youtube",

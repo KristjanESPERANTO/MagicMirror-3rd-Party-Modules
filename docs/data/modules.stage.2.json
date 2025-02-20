@@ -4488,7 +4488,7 @@
     "maintainerURL": "",
     "description": "Displays a Google map, centred at provided coordinates, with traffic information.",
     "issues": [],
-    "stars": 1,
+    "stars": 2,
     "license": "MIT"
   },
   {
@@ -9293,7 +9293,7 @@
     "maintainerURL": "",
     "description": "A weather module that displays current, hourly and daily forecast information using data from the OpenWeatherMap One Call API.",
     "issues": [],
-    "stars": 32,
+    "stars": 35,
     "license": "MIT"
   },
   {
@@ -14505,7 +14505,7 @@
     "maintainerURL": "https://github.com/ngnijland",
     "description": "Check if a YouTube channel if streaming. If it is, it plays the live stream.",
     "issues": [],
-    "stars": 1,
+    "stars": 2,
     "license": "MIT"
   },
   {
