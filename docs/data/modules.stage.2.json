@@ -11636,7 +11636,7 @@
     "maintainerURL": "",
     "description": "A very simple PIR motion sensor module",
     "issues": [],
-    "stars": 0
+    "stars": 1
   },
   {
     "name": "MMM-SimpleText",
@@ -13695,7 +13695,7 @@
     "maintainerURL": "",
     "description": "Control volume of MagicMirror².",
     "issues": [],
-    "stars": 16,
+    "stars": 17,
     "license": "MIT"
   },
   {
@@ -13784,7 +13784,7 @@
     "maintainerURL": "",
     "description": "Re-themes MagicMirror² to look like a beautiful digital photo wall display. It adds a new font, styles, redesigned clock and weather displays, and rotating background image pulled from unsplash.com.",
     "issues": [],
-    "stars": 103,
+    "stars": 104,
     "license": "MIT"
   },
   {
@@ -13796,7 +13796,7 @@
     "maintainerURL": "",
     "description": "Rotates through wallpapers from Bing or Reddit.",
     "issues": [],
-    "stars": 113,
+    "stars": 114,
     "license": "MIT"
   },
   {

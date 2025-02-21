@@ -1,6 +1,6 @@
 # Result of the module analysis
 
-Last update: 2025-02-21T05:38:41+01:00
+Last update: 2025-02-21T17:39:26+01:00
 
 ## Statistics
 
@@ -969,8 +969,9 @@ Last update: 2025-02-21T05:38:41+01:00
 ### [MMM-Buttons by MarcLandis](https://github.com/MarcLandis/MMM-Buttons)
 
 1. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
-2. Information: There are updates for 1 dependencie(s):
-   - @electron/rebuild  ^3.7.0  →  ^3.7.1
+2. Information: There are updates for 2 dependencie(s):
+   - @electron/rebuild   ^3.7.0  →   ^3.7.1
+   - nan                ^2.22.0  →  ^2.22.1
 
 
 ### [MMM-Bysykkel by JonasTriki](https://github.com/JonasTriki/MMM-Bysykkel)
@@ -8295,7 +8296,7 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
    - @aws-sdk/client-s3                ^3.0.0  →   ^3.750.0
    - @aws-sdk/client-sts             ^3.738.0  →   ^3.750.0
    - aws-cdk                           ^2.0.0  →  ^2.1000.2
-   - aws-cdk-lib                       ^2.0.0  →   ^2.179.0
+   - aws-cdk-lib                       ^2.0.0  →   ^2.180.0
    - constructs                       ^10.0.0  →    ^10.4.2
    - dotenv                           ^16.0.0  →    ^16.4.7
    - inquirer                          ^8.2.4  →    ^12.4.2

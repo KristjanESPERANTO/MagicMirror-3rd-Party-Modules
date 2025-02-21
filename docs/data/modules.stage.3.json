@@ -16102,7 +16102,7 @@
       "`package.json` issue: No license field.",
       "There are no keywords in 'package.json'. We would use them as tags on the module list page."
     ],
-    "stars": 0
+    "stars": 1
   },
   {
     "name": "MMM-SimpleText",
@@ -18977,7 +18977,7 @@
       "`package.json` issue: No description",
       "There are no keywords in 'package.json'. We would use them as tags on the module list page."
     ],
-    "stars": 16,
+    "stars": 17,
     "license": "MIT",
     "image": "mmm-volume.jpg"
   },
@@ -19099,7 +19099,7 @@
     "issues": [
       "There is no `package.json`. We need this file to gather information about the module for the module list page."
     ],
-    "stars": 103,
+    "stars": 104,
     "license": "MIT",
     "image": "WB-weather-screenshots-wb-weather-wallberry-classic.jpg"
   },
@@ -19115,7 +19115,7 @@
       "There are no keywords in 'package.json'. We would use them as tags on the module list page.",
       "No image found."
     ],
-    "stars": 113,
+    "stars": 114,
     "license": "MIT"
   },
   {
