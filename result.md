@@ -1,6 +1,6 @@
 # Result of the module analysis
 
-Last update: 2025-02-20T17:40:00+01:00
+Last update: 2025-02-21T05:38:41+01:00
 
 ## Statistics
 
@@ -9,7 +9,7 @@ Last update: 2025-02-20T17:40:00+01:00
 | modules analyzed     |   1222   |
 | maintainer           |    658   |
 | modules with issues  |   1222   |
-| issues               |   6575   |
+| issues               |   6571   |
 | modules at github    |   1096   |
 | modules at gitlab    |     12   |
 | modules at bitbucket |      1   |
@@ -4435,12 +4435,11 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
 
 ### [MMM-KeyBindings by shbatm](https://github.com/shbatm/MMM-KeyBindings)
 
-1. Recommendation: Found `jshint` in file `MMM-KeyBindings.js`: Replace "jshint" by "eslint".
-2. Outdated: Found `MichMich/MagicMirror` in file `README.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
-3. Recommendation: The README seems not to have an update instruction (the word 'update' is missing). Please add one.
-4. Recommendation: Found `jshint` in file `keyHandler.js`: Replace "jshint" by "eslint".
-5. Recommendation: Found `jshint` in file `node_helper.js`: Replace "jshint" by "eslint".
-6. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
+1. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
+2. Information: There are updates for 2 dependencie(s):
+   - @electron/rebuild   ^3.4.0  →   ^3.7.1
+   - node-gyp           ^10.0.1  →  ^11.1.0
+
 
 ### [MMM-Keyboard by lavolp3](https://github.com/lavolp3/MMM-Keyboard)
 
@@ -10866,7 +10865,7 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
 2. Recommendation: Found `axios` in file `node_helper.js`: Replace it with built-in fetch.
 3. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
 
-### [MMM-Zmanim by shmulyeng](https://github.com/shmulyeng/MMM-Zmanim)
+### [MMM-Zmanim by supermem613](https://github.com/supermem613/MMM-Zmanim)
 
 1. `package.json` issue: No description
 2. `package.json` issue: No repository field.
@@ -10878,7 +10877,7 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
 8. Found directory `node_modules`. This shouldn't be uploaded. Add `node_modules/`to `.gitignore`.
 9. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
 
-### [MMM-Zmanim by supermem613](https://github.com/supermem613/MMM-Zmanim)
+### [MMM-Zmanim by shmulyeng](https://github.com/shmulyeng/MMM-Zmanim)
 
 1. `package.json` issue: No description
 2. `package.json` issue: No repository field.

@@ -1395,7 +1395,7 @@
     "maintainerURL": "https://github.com/yourdawi",
     "description": "Show radar traps around based on blitzer.de.",
     "issues": true,
-    "stars": 0,
+    "stars": 2,
     "license": "MIT",
     "defaultSortWeight": 3,
     "lastCommit": "2025-01-26T22:36:23+01:00"
@@ -2715,7 +2715,7 @@
     "license": "MIT",
     "image": "MMM-Cookidoo.jpg",
     "defaultSortWeight": 5,
-    "lastCommit": "2025-02-14T17:34:52+01:00"
+    "lastCommit": "2025-02-20T20:01:35+01:00"
   },
   {
     "name": "cookiecutter-magic-mirror-module",
@@ -6846,7 +6846,7 @@
     ],
     "image": "screenshots-screenshot.jpg",
     "defaultSortWeight": 1,
-    "lastCommit": "2025-02-20T12:07:16+08:00"
+    "lastCommit": "2025-02-21T10:55:16+08:00"
   },
   {
     "name": "MMM-HLTV",
@@ -8348,8 +8348,8 @@
       "keyboard"
     ],
     "image": "img-fire_stick_remote.jpg",
-    "defaultSortWeight": 5,
-    "lastCommit": "2025-02-19T21:27:11-06:00"
+    "defaultSortWeight": 1,
+    "lastCommit": "2025-02-20T19:42:45+01:00"
   },
   {
     "name": "MMM-Keyboard",
@@ -17245,7 +17245,7 @@
     "maintainerURL": "https://github.com/tylerstambaugh",
     "description": "Simple display of basic ride stats from <a target=\"_blank\" href=\"https://www.strava.com\">Strava</a> for a rolling window of time.",
     "issues": true,
-    "stars": 1,
+    "stars": 2,
     "license": "MIT",
     "image": "public-assets-images-StravaWeekInBike.jpg",
     "defaultSortWeight": 4,
@@ -20422,22 +20422,6 @@
   {
     "name": "MMM-Zmanim",
     "category": "Religion",
-    "url": "https://github.com/shmulyeng/MMM-Zmanim",
-    "id": "shmulyeng/MMM-Zmanim",
-    "maintainer": "shmulyeng",
-    "maintainerURL": "",
-    "description": "Displays daily Jewish calendar information.",
-    "issues": true,
-    "stars": 0,
-    "hasGithubIssues": false,
-    "license": "ISC",
-    "image": "alternateScreenshot.jpg",
-    "defaultSortWeight": 10,
-    "lastCommit": "2020-12-06T21:27:43-05:00"
-  },
-  {
-    "name": "MMM-Zmanim",
-    "category": "Religion",
     "url": "https://github.com/supermem613/MMM-Zmanim",
     "id": "supermem613/MMM-Zmanim",
     "maintainer": "supermem613",
@@ -20450,5 +20434,21 @@
     "image": "alternateScreenshot.jpg",
     "defaultSortWeight": 9,
     "lastCommit": "2025-01-24T14:22:15-05:00"
+  },
+  {
+    "name": "MMM-Zmanim",
+    "category": "Religion",
+    "url": "https://github.com/shmulyeng/MMM-Zmanim",
+    "id": "shmulyeng/MMM-Zmanim",
+    "maintainer": "shmulyeng",
+    "maintainerURL": "",
+    "description": "Displays daily Jewish calendar information.",
+    "issues": true,
+    "stars": 0,
+    "hasGithubIssues": false,
+    "license": "ISC",
+    "image": "alternateScreenshot.jpg",
+    "defaultSortWeight": 10,
+    "lastCommit": "2020-12-06T21:27:43-05:00"
   }
 ]

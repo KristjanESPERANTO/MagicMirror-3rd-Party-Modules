@@ -953,7 +953,7 @@
     "maintainerURL": "https://github.com/yourdawi",
     "description": "Show radar traps around based on blitzer.de.",
     "issues": [],
-    "stars": 0,
+    "stars": 2,
     "license": "MIT"
   },
   {
@@ -12315,7 +12315,7 @@
     "maintainerURL": "https://github.com/tylerstambaugh",
     "description": "Simple display of basic ride stats from <a target=\"_blank\" href=\"https://www.strava.com\">Strava</a> for a rolling window of time.",
     "issues": [],
-    "stars": 1,
+    "stars": 2,
     "license": "MIT"
   },
   {
@@ -14569,11 +14569,11 @@
   {
     "name": "MMM-Zmanim",
     "category": "Religion",
-    "url": "https://github.com/shmulyeng/MMM-Zmanim",
-    "id": "shmulyeng/MMM-Zmanim",
-    "maintainer": "shmulyeng",
+    "url": "https://github.com/supermem613/MMM-Zmanim",
+    "id": "supermem613/MMM-Zmanim",
+    "maintainer": "supermem613",
     "maintainerURL": "",
-    "description": "Displays daily Jewish calendar information.",
+    "description": "Displays Zmanim (Jewish calendar information).",
     "issues": [],
     "stars": 0,
     "hasGithubIssues": false
@@ -14581,11 +14581,11 @@
   {
     "name": "MMM-Zmanim",
     "category": "Religion",
-    "url": "https://github.com/supermem613/MMM-Zmanim",
-    "id": "supermem613/MMM-Zmanim",
-    "maintainer": "supermem613",
+    "url": "https://github.com/shmulyeng/MMM-Zmanim",
+    "id": "shmulyeng/MMM-Zmanim",
+    "maintainer": "shmulyeng",
     "maintainerURL": "",
-    "description": "Displays Zmanim (Jewish calendar information).",
+    "description": "Displays daily Jewish calendar information.",
     "issues": [],
     "stars": 0,
     "hasGithubIssues": false
