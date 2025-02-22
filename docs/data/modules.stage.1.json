@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "2025-02-21T16:30:17.517Z",
+  "lastUpdate": "2025-02-22T04:31:06.730Z",
   "modules": [
     {
       "name": "MMM-01ZM",
@@ -704,6 +704,16 @@
       "maintainer": "grenagit",
       "maintainerURL": "",
       "description": "Display the current biathlon results (World Cup and IBU Cup).",
+      "issues": []
+    },
+    {
+      "name": "MMM-BibleVerseClock",
+      "category": "Religion",
+      "url": "https://github.com/Tydyrium/MMM-BibleVerseClock",
+      "id": "Tydyrium/MMM-BibleVerseClock",
+      "maintainer": "Tydyrium",
+      "maintainerURL": "",
+      "description": "Display a new verse per minute corresonding to the current time, from <a target=\"_blank\" href=\"https://bible.helloao.org/docs/\">https://bible.helloao.org/docs/</a>.",
       "issues": []
     },
     {

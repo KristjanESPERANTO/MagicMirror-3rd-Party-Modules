@@ -828,6 +828,18 @@
     "license": "MIT"
   },
   {
+    "name": "MMM-BibleVerseClock",
+    "category": "Religion",
+    "url": "https://github.com/Tydyrium/MMM-BibleVerseClock",
+    "id": "Tydyrium/MMM-BibleVerseClock",
+    "maintainer": "Tydyrium",
+    "maintainerURL": "",
+    "description": "Display a new verse per minute corresonding to the current time, from <a target=\"_blank\" href=\"https://bible.helloao.org/docs/\">https://bible.helloao.org/docs/</a>.",
+    "issues": [],
+    "stars": 0,
+    "license": "MIT"
+  },
+  {
     "name": "MMM-Binance",
     "category": "Finance",
     "url": "https://github.com/brssaricicek/MMM-Binance",
@@ -4984,6 +4996,18 @@
   {
     "name": "MMM-homeassistant-sensors",
     "category": "Utility / IoT / 3rd Party / Integration",
+    "url": "https://github.com/Snille/MMM-homeassistant-sensors",
+    "id": "Snille/MMM-homeassistant-sensors",
+    "maintainer": "Snille",
+    "maintainerURL": "https://github.com/Snille",
+    "description": "Fork of leinich module. Many new features added. Display information from Home Assistant using the home assistant REST API.",
+    "issues": [],
+    "stars": 63,
+    "license": "MIT"
+  },
+  {
+    "name": "MMM-homeassistant-sensors",
+    "category": "Utility / IoT / 3rd Party / Integration",
     "url": "https://github.com/ledsi/MMM-homeassistant-sensors",
     "id": "ledsi/MMM-homeassistant-sensors",
     "maintainer": "ledsi",
@@ -4992,18 +5016,6 @@
     "issues": [],
     "stars": 0,
     "hasGithubIssues": false,
-    "license": "MIT"
-  },
-  {
-    "name": "MMM-homeassistant-sensors",
-    "category": "Utility / IoT / 3rd Party / Integration",
-    "url": "https://github.com/Snille/MMM-homeassistant-sensors",
-    "id": "Snille/MMM-homeassistant-sensors",
-    "maintainer": "Snille",
-    "maintainerURL": "https://github.com/Snille",
-    "description": "Fork of leinich module. Many new features added. Display information from Home Assistant using the home assistant REST API.",
-    "issues": [],
-    "stars": 63,
     "license": "MIT"
   },
   {
@@ -14042,7 +14054,7 @@
     "maintainerURL": "",
     "description": "A Text-To-Speech module which uses the Web Speech API of the browser. It is in an early stage of development. So far only German is supported.",
     "issues": [],
-    "stars": 3,
+    "stars": 4,
     "license": "MIT"
   },
   {
@@ -14138,7 +14150,7 @@
     "maintainerURL": "",
     "description": "Adds a personal ChatGPT (3.5) voice-controlled (through PicoVoice, Whisper, Mimic3) assistant.",
     "issues": [],
-    "stars": 35,
+    "stars": 36,
     "license": "MIT"
   },
   {
@@ -14186,7 +14198,7 @@
     "maintainerURL": "",
     "description": "Displays WiFi password and QRCode.",
     "issues": [],
-    "stars": 108,
+    "stars": 109,
     "license": "MIT"
   },
   {
@@ -14210,7 +14222,7 @@
     "maintainerURL": "",
     "description": "Adds the windy weather map which covers the whole screen.",
     "issues": [],
-    "stars": 9,
+    "stars": 10,
     "license": "MIT"
   },
   {
