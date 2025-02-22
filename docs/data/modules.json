@@ -629,7 +629,7 @@
     "maintainerURL": "",
     "description": "Chart data. Data can be supplied in config or pulled from JSON API.",
     "issues": true,
-    "stars": 4,
+    "stars": 5,
     "license": "MIT",
     "image": ".github-sampleA.jpg",
     "defaultSortWeight": 7,
@@ -705,7 +705,7 @@
     "maintainerURL": "",
     "description": "Display pharmacies that are on emergency duty in Germany.",
     "issues": true,
-    "stars": 1,
+    "stars": 2,
     "license": "ISC",
     "tags": [
       "apotheke",
@@ -10325,7 +10325,7 @@
     "license": "MIT",
     "image": "assets-MMPM-UI-Homepage.jpg",
     "defaultSortWeight": -2,
-    "lastCommit": "2025-02-14T14:56:04-05:00"
+    "lastCommit": "2025-02-22T10:14:35-05:00"
   },
   {
     "name": "MMM-mmpm",
@@ -15725,7 +15725,7 @@
     "maintainerURL": "",
     "description": "Cast a video from your phone to your mirror (currently can only cast YouTube).",
     "issues": true,
-    "stars": 169,
+    "stars": 170,
     "license": "MIT",
     "tags": [
       "chromecast",
@@ -17792,7 +17792,7 @@
     "maintainerURL": "",
     "description": "A template for creating new MagicMirror\u00b2 modules.",
     "issues": true,
-    "stars": 3,
+    "stars": 4,
     "license": "MIT",
     "tags": [
       "template"

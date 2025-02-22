@@ -422,7 +422,7 @@
     "maintainerURL": "",
     "description": "Chart data. Data can be supplied in config or pulled from JSON API.",
     "issues": [],
-    "stars": 4
+    "stars": 5
   },
   {
     "name": "MMM-ApexLegends",
@@ -469,7 +469,7 @@
     "maintainerURL": "",
     "description": "Display pharmacies that are on emergency duty in Germany.",
     "issues": [],
-    "stars": 1,
+    "stars": 2,
     "license": "ISC"
   },
   {
@@ -11243,7 +11243,7 @@
     "maintainerURL": "",
     "description": "Cast a video from your phone to your mirror (currently can only cast YouTube).",
     "issues": [],
-    "stars": 169,
+    "stars": 170,
     "license": "MIT"
   },
   {
@@ -12701,7 +12701,7 @@
     "maintainerURL": "",
     "description": "A template for creating new MagicMirror² modules.",
     "issues": [],
-    "stars": 3,
+    "stars": 4,
     "license": "MIT"
   },
   {

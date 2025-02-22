@@ -606,7 +606,7 @@
       "`package.json` issue: No repository field.",
       "There are no keywords in 'package.json'. We would use them as tags on the module list page."
     ],
-    "stars": 4,
+    "stars": 5,
     "license": "MIT",
     "image": ".github-sampleA.jpg"
   },
@@ -678,7 +678,7 @@
     "maintainerURL": "",
     "description": "Display pharmacies that are on emergency duty in Germany.",
     "issues": [],
-    "stars": 1,
+    "stars": 2,
     "license": "ISC",
     "tags": [
       "apotheke",
@@ -15547,7 +15547,7 @@
     "maintainerURL": "",
     "description": "Cast a video from your phone to your mirror (currently can only cast YouTube).",
     "issues": [],
-    "stars": 169,
+    "stars": 170,
     "license": "MIT",
     "tags": [
       "chromecast",
@@ -17577,7 +17577,7 @@
       "`package.json` issue: bugs.url field must be a string url. Deleted.",
       "`package.json` issue: Normalized value of bugs field is an empty object. Deleted."
     ],
-    "stars": 3,
+    "stars": 4,
     "license": "MIT",
     "tags": [
       "template"
