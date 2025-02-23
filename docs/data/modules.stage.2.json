@@ -10256,6 +10256,18 @@
     "license": "MIT"
   },
   {
+    "name": "MMM-promiedos",
+    "category": "Sports",
+    "url": "https://github.com/matiasmtl/MMM-promiedos",
+    "id": "matiasmtl/MMM-promiedos",
+    "maintainer": "matiasmtl",
+    "maintainerURL": "https://github.com/matiasmtl/",
+    "description": "Displays Argentinian main soccer league (LPF) rankings for both zones, A and B",
+    "issues": [],
+    "stars": 0,
+    "license": "NOASSERTION"
+  },
+  {
     "name": "MMM-Property-managed",
     "category": "Utility / IoT / 3rd Party / Integration",
     "url": "https://github.com/stewartmckee/MMM-Property-managed",
@@ -11815,7 +11827,7 @@
     "maintainerURL": "https://github.com/EbenKouao",
     "description": "This module allows you to transform your MagicMirror² into a touchscreen interactive experience. This includes hiding all modules (Standby Mode) and Side Menu Option to shutdown your mirror via MagicMirror² UI.",
     "issues": [],
-    "stars": 87,
+    "stars": 88,
     "license": "MIT"
   },
   {

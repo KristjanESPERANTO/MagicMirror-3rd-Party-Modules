@@ -14196,6 +14196,21 @@
     "image": ".github-example-screenshot.jpg"
   },
   {
+    "name": "MMM-promiedos",
+    "category": "Sports",
+    "url": "https://github.com/matiasmtl/MMM-promiedos",
+    "id": "matiasmtl/MMM-promiedos",
+    "maintainer": "matiasmtl",
+    "maintainerURL": "https://github.com/matiasmtl/",
+    "description": "Displays Argentinian main soccer league (LPF) rankings for both zones, A and B",
+    "issues": [
+      "There is no `package.json`. We need this file to gather information about the module for the module list page.",
+      "No compatible or wrong license field in 'package.json' or LICENSE file. Without that, we can't use an image."
+    ],
+    "stars": 0,
+    "license": "NOASSERTION"
+  },
+  {
     "name": "MMM-Property-managed",
     "category": "Utility / IoT / 3rd Party / Integration",
     "url": "https://github.com/stewartmckee/MMM-Property-managed",
@@ -16344,7 +16359,7 @@
     "issues": [
       "There is no `package.json`. We need this file to gather information about the module for the module list page."
     ],
-    "stars": 87,
+    "stars": 88,
     "license": "MIT",
     "image": "img-readme-default-ui.jpg"
   },

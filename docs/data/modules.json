@@ -5261,7 +5261,7 @@
     "tags": [
       "flickr"
     ],
-    "defaultSortWeight": 7,
+    "defaultSortWeight": 8,
     "lastCommit": "2023-02-22T15:04:29-06:00"
   },
   {
@@ -7714,7 +7714,7 @@
       "traffic"
     ],
     "license": "MIT",
-    "defaultSortWeight": 900,
+    "defaultSortWeight": 901,
     "lastCommit": "2023-02-22T15:03:23-06:00"
   },
   {
@@ -8362,8 +8362,8 @@
       "keyboard"
     ],
     "image": "img-fire_stick_remote.jpg",
-    "defaultSortWeight": 1,
-    "lastCommit": "2025-02-20T19:42:45+01:00"
+    "defaultSortWeight": 0,
+    "lastCommit": "2025-02-22T18:46:57+01:00"
   },
   {
     "name": "MMM-Keyboard",
@@ -10325,7 +10325,7 @@
     "license": "MIT",
     "image": "assets-MMPM-UI-Homepage.jpg",
     "defaultSortWeight": -2,
-    "lastCommit": "2025-02-22T10:14:35-05:00"
+    "lastCommit": "2025-02-22T18:43:13-05:00"
   },
   {
     "name": "MMM-mmpm",
@@ -11049,7 +11049,7 @@
     ],
     "image": "assets-example.jpg",
     "defaultSortWeight": 0,
-    "lastCommit": "2024-11-06T00:44:54+01:00"
+    "lastCommit": "2025-02-22T21:20:21+01:00"
   },
   {
     "name": "MMM-MyBMW",
@@ -14350,6 +14350,20 @@
     "lastCommit": "2023-11-29T14:06:10-05:00"
   },
   {
+    "name": "MMM-promiedos",
+    "category": "Sports",
+    "url": "https://github.com/matiasmtl/MMM-promiedos",
+    "id": "matiasmtl/MMM-promiedos",
+    "maintainer": "matiasmtl",
+    "maintainerURL": "https://github.com/matiasmtl/",
+    "description": "Displays Argentinian main soccer league (LPF) rankings for both zones, A and B",
+    "issues": true,
+    "stars": 0,
+    "license": "NOASSERTION",
+    "defaultSortWeight": 4,
+    "lastCommit": "2025-02-22T13:52:35-05:00"
+  },
+  {
     "name": "MMM-Property-managed",
     "category": "Utility / IoT / 3rd Party / Integration",
     "url": "https://github.com/stewartmckee/MMM-Property-managed",
@@ -16538,7 +16552,7 @@
     "maintainerURL": "https://github.com/EbenKouao",
     "description": "This module allows you to transform your MagicMirror\u00b2 into a touchscreen interactive experience. This includes hiding all modules (Standby Mode) and Side Menu Option to shutdown your mirror via MagicMirror\u00b2 UI.",
     "issues": true,
-    "stars": 87,
+    "stars": 88,
     "license": "MIT",
     "image": "img-readme-default-ui.jpg",
     "defaultSortWeight": 7,
@@ -18506,7 +18520,7 @@
     "license": "MIT",
     "image": "screenshots-compact.jpg",
     "defaultSortWeight": 5,
-    "lastCommit": "2023-06-24T23:55:55+02:00"
+    "lastCommit": "2025-02-22T23:15:01+01:00"
   },
   {
     "name": "MMM-TTS",

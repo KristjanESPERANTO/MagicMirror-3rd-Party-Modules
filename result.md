@@ -1,16 +1,16 @@
 # Result of the module analysis
 
-Last update: 2025-02-22T17:39:29+01:00
+Last update: 2025-02-23T05:38:50+01:00
 
 ## Statistics
 
 |                      | number   |
 |:---------------------|:--------:|
-| modules analyzed     |   1223   |
-| maintainer           |    659   |
-| modules with issues  |   1223   |
-| issues               |   6580   |
-| modules at github    |   1097   |
+| modules analyzed     |   1224   |
+| maintainer           |    660   |
+| modules with issues  |   1224   |
+| issues               |   6583   |
+| modules at github    |   1098   |
 | modules at gitlab    |     12   |
 | modules at bitbucket |      1   |
 
@@ -4457,10 +4457,8 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
 
 ### [MMM-KeyBindings by shbatm](https://github.com/shbatm/MMM-KeyBindings)
 
-1. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
-2. Information: There are updates for 2 dependencie(s):
-   - @electron/rebuild   ^3.4.0  →   ^3.7.1
-   - node-gyp           ^10.0.1  →  ^11.1.0
+1. ESLint issues:
+   - package.json: Line 22, Column 14: Package scripts are not alphabetized (rule: package-json/sort-collections)
 
 
 ### [MMM-Keyboard by lavolp3](https://github.com/lavolp3/MMM-Keyboard)
@@ -7599,6 +7597,13 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
 7. Recommendation: Found `"node-fetch"` in file `PrometheusService.ts`: Replace it with built-in fetch.
 8. Recommendation: Replace eslintrc by new flat config.
 
+### [MMM-promiedos by matiasmtl](https://github.com/matiasmtl/MMM-promiedos)
+
+1. There is no `package.json`. We need this file to gather information about the module for the module list page.
+2. No compatible or wrong license field in 'package.json' or LICENSE file. Without that, we can't use an image.
+3. Outdated: Found `MichMich/MagicMirror` in file `README.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
+4. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
+
 ### [MMM-Property-managed by stewartmckee](https://github.com/stewartmckee/MMM-Property-managed)
 
 1. `package.json` issue: No repository field.
@@ -9834,7 +9839,7 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
 2. Typo: Found `Magic Mirror` in file `MMM-TRV-WastePlan.js`: Replace it with `MagicMirror²`.
 3. Typo: Found `MagicMirror2` in file `README.md`: Replace it with `MagicMirror²`.
 4. Outdated: Found `MichMich/MagicMirror` in file `README.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
-5. Deprecated: Found `require('request')` in file `node_helper.js`: Replace it with built-in fetch.
+5. Recommendation: Found `require('https')` in file `node_helper.js`: Replace 'https' by 'node:https'.
 6. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
 
 ### [MMM-TTS by fewieden](https://github.com/fewieden/MMM-TTS)

@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "2025-02-22T16:30:14.695Z",
+  "lastUpdate": "2025-02-23T04:30:15.976Z",
   "modules": [
     {
       "name": "MMM-01ZM",
@@ -8667,6 +8667,16 @@
       "maintainer": "spydersoft-consulting",
       "maintainerURL": "https://github.com/spydersoft-consulting",
       "description": "Display Prometheus Alerts.",
+      "issues": []
+    },
+    {
+      "name": "MMM-promiedos",
+      "category": "Sports",
+      "url": "https://github.com/matiasmtl/MMM-promiedos",
+      "id": "matiasmtl/MMM-promiedos",
+      "maintainer": "matiasmtl",
+      "maintainerURL": "https://github.com/matiasmtl/",
+      "description": "Displays Argentinian main soccer league (LPF) rankings for both zones, A and B",
       "issues": []
     },
     {

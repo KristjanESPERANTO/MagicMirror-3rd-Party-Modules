@@ -1,11 +1,11 @@
 {
-  "moduleCounter": 1223,
+  "moduleCounter": 1224,
   "modulesWithImageCounter": 859,
-  "modulesWithIssuesCounter": 1223,
-  "issueCounter": 6580,
-  "lastUpdate": "2025-02-22T17:39:29+01:00",
+  "modulesWithIssuesCounter": 1224,
+  "issueCounter": 6583,
+  "lastUpdate": "2025-02-23T05:38:50+01:00",
   "repositoryHoster": {
-    "github": 1097,
+    "github": 1098,
     "gitlab": 12,
     "bitbucket": 1
   },
@@ -530,6 +530,7 @@
     "SikandAlex": 1,
     "Wanztwurst": 1,
     "tosti007": 1,
+    "matiasmtl": 1,
     "stewartmckee": 1,
     "daxiang28": 1,
     "ChristianGeie": 1,
