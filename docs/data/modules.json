@@ -6924,20 +6924,6 @@
   {
     "name": "MMM-HomeAssistant",
     "category": "Utility / IoT / 3rd Party / Integration",
-    "url": "https://github.com/yourdawi/MMM-HomeAssistant",
-    "id": "yourdawi/MMM-HomeAssistant",
-    "maintainer": "yourdawi",
-    "maintainerURL": "https://github.com/yourdawi",
-    "description": "Display information out of HomeAssistant.",
-    "issues": true,
-    "stars": 3,
-    "license": "MIT",
-    "defaultSortWeight": 6,
-    "lastCommit": "2024-12-22T13:05:46+01:00"
-  },
-  {
-    "name": "MMM-HomeAssistant",
-    "category": "Utility / IoT / 3rd Party / Integration",
     "url": "https://github.com/zuo000/MMM-HomeAssistant",
     "id": "zuo000/MMM-HomeAssistant",
     "maintainer": "zuo000",
@@ -6949,6 +6935,20 @@
     "image": "screenshot.jpg",
     "defaultSortWeight": 4,
     "lastCommit": "2020-04-08T18:54:01-07:00"
+  },
+  {
+    "name": "MMM-HomeAssistant",
+    "category": "Utility / IoT / 3rd Party / Integration",
+    "url": "https://github.com/yourdawi/MMM-HomeAssistant",
+    "id": "yourdawi/MMM-HomeAssistant",
+    "maintainer": "yourdawi",
+    "maintainerURL": "https://github.com/yourdawi",
+    "description": "Display information out of HomeAssistant.",
+    "issues": true,
+    "stars": 3,
+    "license": "MIT",
+    "defaultSortWeight": 6,
+    "lastCommit": "2024-12-22T13:05:46+01:00"
   },
   {
     "name": "MMM-homeassistant-sensors",
@@ -16670,7 +16670,7 @@
     "maintainerURL": "",
     "description": "Display live scores of your favorite football leagues/competitions.",
     "issues": true,
-    "stars": 8,
+    "stars": 7,
     "license": "MIT",
     "tags": [
       "live score",

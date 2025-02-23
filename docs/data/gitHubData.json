@@ -1,9 +1,9 @@
 {
-  "lastUpdate": "2025-02-23T04:30:29.401Z",
+  "lastUpdate": "2025-02-23T16:30:27.862Z",
   "repositories": [
     {
       "id": "0lek/MMM-socialbicycles",
-      "gitHubDataLastUpdate": "2025-01-29T16:30:19.293Z",
+      "gitHubDataLastUpdate": "2025-02-23T16:30:17.179Z",
       "gitHubData": {
         "issues": 0,
         "stars": 0,
@@ -45,10 +45,10 @@
     },
     {
       "id": "0m4r/MMM-SoccerLiveScore",
-      "gitHubDataLastUpdate": "2025-01-29T16:30:18.265Z",
+      "gitHubDataLastUpdate": "2025-02-23T16:30:16.221Z",
       "gitHubData": {
         "issues": 3,
-        "stars": 8,
+        "stars": 7,
         "license": "MIT",
         "archived": false,
         "disabled": false,
@@ -437,7 +437,7 @@
     },
     {
       "id": "alexandreLavenant/MMM-Star-Metro",
-      "gitHubDataLastUpdate": "2025-01-29T16:30:31.346Z",
+      "gitHubDataLastUpdate": "2025-02-23T16:30:25.226Z",
       "gitHubData": {
         "issues": 2,
         "stars": 1,
@@ -1263,7 +1263,7 @@
     },
     {
       "id": "bendardenne/MMM-stib2",
-      "gitHubDataLastUpdate": "2025-01-30T04:30:18.063Z",
+      "gitHubDataLastUpdate": "2025-02-23T16:30:27.374Z",
       "gitHubData": {
         "issues": 2,
         "stars": 4,
@@ -1347,7 +1347,7 @@
     },
     {
       "id": "bertieuk/MMM-SolarEdge",
-      "gitHubDataLastUpdate": "2025-01-29T16:30:20.743Z",
+      "gitHubDataLastUpdate": "2025-02-23T16:30:18.523Z",
       "gitHubData": {
         "issues": 1,
         "stars": 5,
@@ -1991,7 +1991,7 @@
     },
     {
       "id": "buxxi/MMM-SteamPlaytime",
-      "gitHubDataLastUpdate": "2025-01-29T16:30:32.324Z",
+      "gitHubDataLastUpdate": "2025-02-23T16:30:26.079Z",
       "gitHubData": {
         "issues": 1,
         "stars": 10,
@@ -2131,7 +2131,7 @@
     },
     {
       "id": "CatoAntonsen/MMM-SpotifyConnectUI",
-      "gitHubDataLastUpdate": "2025-01-29T16:30:29.933Z",
+      "gitHubDataLastUpdate": "2025-02-23T16:30:23.970Z",
       "gitHubData": {
         "issues": 7,
         "stars": 54,
@@ -2243,7 +2243,7 @@
     },
     {
       "id": "CFenner/MMM-Sonos",
-      "gitHubDataLastUpdate": "2025-01-29T16:30:25.848Z",
+      "gitHubDataLastUpdate": "2025-02-23T16:30:20.641Z",
       "gitHubData": {
         "issues": 16,
         "stars": 46,
@@ -3195,7 +3195,7 @@
     },
     {
       "id": "danito/MMM-stib",
-      "gitHubDataLastUpdate": "2025-01-29T16:30:32.771Z",
+      "gitHubDataLastUpdate": "2025-02-23T16:30:26.475Z",
       "gitHubData": {
         "issues": 2,
         "stars": 4,
@@ -3419,7 +3419,7 @@
     },
     {
       "id": "dekinet/MMM-Soliscloud",
-      "gitHubDataLastUpdate": "2025-01-29T16:30:25.419Z",
+      "gitHubDataLastUpdate": "2025-02-23T16:30:20.271Z",
       "gitHubData": {
         "issues": 1,
         "stars": 2,
@@ -4707,7 +4707,7 @@
     },
     {
       "id": "fewieden/MMM-soccer",
-      "gitHubDataLastUpdate": "2025-01-29T16:30:17.804Z",
+      "gitHubDataLastUpdate": "2025-02-23T16:30:15.790Z",
       "gitHubData": {
         "issues": 16,
         "stars": 33,
@@ -5337,7 +5337,7 @@
     },
     {
       "id": "grabenhenrich/MMM-Space",
-      "gitHubDataLastUpdate": "2025-01-29T16:30:27.456Z",
+      "gitHubDataLastUpdate": "2025-02-23T16:30:21.970Z",
       "gitHubData": {
         "issues": 1,
         "stars": 10,
@@ -5449,7 +5449,7 @@
     },
     {
       "id": "grenagit/MMM-SolarPicture",
-      "gitHubDataLastUpdate": "2025-01-29T16:30:24.933Z",
+      "gitHubDataLastUpdate": "2025-02-23T16:30:19.859Z",
       "gitHubData": {
         "issues": 0,
         "stars": 3,
@@ -5519,7 +5519,7 @@
     },
     {
       "id": "hakanmhmd/MMM-Stock",
-      "gitHubDataLastUpdate": "2025-01-30T04:30:18.510Z",
+      "gitHubDataLastUpdate": "2025-02-23T16:30:27.799Z",
       "gitHubData": {
         "issues": 13,
         "stars": 17,
@@ -6555,7 +6555,7 @@
     },
     {
       "id": "jeroenpeters1986/MMM-SolarEdgeLite",
-      "gitHubDataLastUpdate": "2025-01-29T16:30:21.296Z",
+      "gitHubDataLastUpdate": "2025-02-23T16:30:18.984Z",
       "gitHubData": {
         "issues": 0,
         "stars": 1,
@@ -7647,7 +7647,7 @@
     },
     {
       "id": "koxm/MMM-SpaceLaunchNow",
-      "gitHubDataLastUpdate": "2025-01-29T16:30:27.986Z",
+      "gitHubDataLastUpdate": "2025-02-23T16:30:22.353Z",
       "gitHubData": {
         "issues": 6,
         "stars": 3,
@@ -7661,7 +7661,7 @@
     },
     {
       "id": "koxm/MMM-SpaceX",
-      "gitHubDataLastUpdate": "2025-01-29T16:30:28.539Z",
+      "gitHubDataLastUpdate": "2025-02-23T16:30:22.752Z",
       "gitHubData": {
         "issues": 4,
         "stars": 9,
@@ -8151,7 +8151,7 @@
     },
     {
       "id": "LukasKlose/MMM-Speedway",
-      "gitHubDataLastUpdate": "2025-01-29T16:30:29.017Z",
+      "gitHubDataLastUpdate": "2025-02-23T16:30:23.158Z",
       "gitHubData": {
         "issues": 0,
         "stars": 0,
@@ -9033,7 +9033,7 @@
     },
     {
       "id": "MichMich/MMM-Snow",
-      "gitHubDataLastUpdate": "2025-01-29T16:30:17.337Z",
+      "gitHubDataLastUpdate": "2025-02-23T16:30:15.410Z",
       "gitHubData": {
         "issues": 5,
         "stars": 58,
@@ -10615,7 +10615,7 @@
     },
     {
       "id": "mykle1/MMM-SORT",
-      "gitHubDataLastUpdate": "2025-01-29T16:30:26.980Z",
+      "gitHubDataLastUpdate": "2025-02-23T16:30:21.521Z",
       "gitHubData": {
         "issues": 2,
         "stars": 2,
@@ -10769,7 +10769,7 @@
     },
     {
       "id": "ngnijland/MMM-social-counter",
-      "gitHubDataLastUpdate": "2025-01-29T16:30:18.804Z",
+      "gitHubDataLastUpdate": "2025-02-23T16:30:16.742Z",
       "gitHubData": {
         "issues": 5,
         "stars": 4,
@@ -12855,7 +12855,7 @@
     },
     {
       "id": "Ruud14/MMM-SpotifyReleases",
-      "gitHubDataLastUpdate": "2025-01-29T16:30:30.853Z",
+      "gitHubDataLastUpdate": "2025-02-23T16:30:24.791Z",
       "gitHubData": {
         "issues": 0,
         "stars": 3,
@@ -13821,7 +13821,7 @@
     },
     {
       "id": "skuethe/MMM-Spotify",
-      "gitHubDataLastUpdate": "2025-01-29T16:30:29.456Z",
+      "gitHubDataLastUpdate": "2025-02-23T16:30:23.567Z",
       "gitHubData": {
         "issues": 8,
         "stars": 69,
@@ -14297,7 +14297,7 @@
     },
     {
       "id": "spydersoft-consulting/MMM-StatusPageIo",
-      "gitHubDataLastUpdate": "2025-01-29T16:30:31.898Z",
+      "gitHubDataLastUpdate": "2025-02-23T16:30:25.695Z",
       "gitHubData": {
         "issues": 2,
         "stars": 2,
@@ -14325,7 +14325,7 @@
     },
     {
       "id": "st3v0rr/MMM-SolarEdge",
-      "gitHubDataLastUpdate": "2025-01-29T16:30:20.251Z",
+      "gitHubDataLastUpdate": "2025-02-23T16:30:18.060Z",
       "gitHubData": {
         "issues": 3,
         "stars": 3,
@@ -14689,7 +14689,7 @@
     },
     {
       "id": "tbouron/MMM-Sonos",
-      "gitHubDataLastUpdate": "2025-01-29T16:30:26.428Z",
+      "gitHubDataLastUpdate": "2025-02-23T16:30:21.069Z",
       "gitHubData": {
         "issues": 7,
         "stars": 17,
@@ -15151,7 +15151,7 @@
     },
     {
       "id": "tkrywit/MMM-Solar",
-      "gitHubDataLastUpdate": "2025-01-29T16:30:19.724Z",
+      "gitHubDataLastUpdate": "2025-02-23T16:30:17.640Z",
       "gitHubData": {
         "issues": 8,
         "stars": 5,
@@ -15907,7 +15907,7 @@
     },
     {
       "id": "utzl/MMM-Solarman",
-      "gitHubDataLastUpdate": "2025-01-29T16:30:24.462Z",
+      "gitHubDataLastUpdate": "2025-02-23T16:30:19.462Z",
       "gitHubData": {
         "issues": 1,
         "stars": 2,
@@ -16061,7 +16061,7 @@
     },
     {
       "id": "victor-paumier/MMM-SpotifyHelper",
-      "gitHubDataLastUpdate": "2025-01-29T16:30:30.394Z",
+      "gitHubDataLastUpdate": "2025-02-23T16:30:24.386Z",
       "gitHubData": {
         "issues": 0,
         "stars": 1,

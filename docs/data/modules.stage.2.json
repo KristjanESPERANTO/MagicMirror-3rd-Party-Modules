@@ -4972,18 +4972,6 @@
   {
     "name": "MMM-HomeAssistant",
     "category": "Utility / IoT / 3rd Party / Integration",
-    "url": "https://github.com/yourdawi/MMM-HomeAssistant",
-    "id": "yourdawi/MMM-HomeAssistant",
-    "maintainer": "yourdawi",
-    "maintainerURL": "https://github.com/yourdawi",
-    "description": "Display information out of HomeAssistant.",
-    "issues": [],
-    "stars": 3,
-    "license": "MIT"
-  },
-  {
-    "name": "MMM-HomeAssistant",
-    "category": "Utility / IoT / 3rd Party / Integration",
     "url": "https://github.com/zuo000/MMM-HomeAssistant",
     "id": "zuo000/MMM-HomeAssistant",
     "maintainer": "zuo000",
@@ -4991,6 +4979,18 @@
     "description": "HomeAssistant frontend module using HA REST API, including Light, Switch, Sensor.",
     "issues": [],
     "stars": 27,
+    "license": "MIT"
+  },
+  {
+    "name": "MMM-HomeAssistant",
+    "category": "Utility / IoT / 3rd Party / Integration",
+    "url": "https://github.com/yourdawi/MMM-HomeAssistant",
+    "id": "yourdawi/MMM-HomeAssistant",
+    "maintainer": "yourdawi",
+    "maintainerURL": "https://github.com/yourdawi",
+    "description": "Display information out of HomeAssistant.",
+    "issues": [],
+    "stars": 3,
     "license": "MIT"
   },
   {
@@ -11909,7 +11909,7 @@
     "maintainerURL": "",
     "description": "Display live scores of your favorite football leagues/competitions.",
     "issues": [],
-    "stars": 8,
+    "stars": 7,
     "license": "MIT"
   },
   {
