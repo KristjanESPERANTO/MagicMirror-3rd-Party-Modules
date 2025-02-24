@@ -4394,14 +4394,11 @@
     "maintainer": "CharlesMorris78",
     "maintainerURL": "",
     "description": "Display weather forecast information from Environment Canada.",
-    "issues": [],
+    "issues": [
+      "An error occurred while getting information from 'package.json': Error: Invalid version: \"1.2\""
+    ],
     "stars": 4,
     "license": "MIT",
-    "tags": [
-      "canada",
-      "weather",
-      "forecast"
-    ],
     "image": "screenshot.jpg"
   },
   {
@@ -17631,7 +17628,6 @@
     ],
     "outdated": "Abandoned. Repo has been archived at 2024-05-16.",
     "stars": 3,
-    "isArchived": true,
     "license": "ISC",
     "image": "images-MMM-Tesla3.jpg"
   },
@@ -17954,7 +17950,7 @@
     "issues": [
       "There is no `package.json`. We need this file to gather information about the module for the module list page."
     ],
-    "stars": 5,
+    "stars": 4,
     "license": "MIT",
     "image": "screenshots-route.jpg"
   },

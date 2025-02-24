@@ -12738,8 +12738,7 @@
     "description": "Display Tesla data directly from Tesla API. Customizable GUI based on <a target=\"_blank\" href=\"https://github.com/denverquane/MMM-Teslamate\">MMM-TeslaMate</a>.",
     "issues": [],
     "outdated": "Abandoned. Repo has been archived at 2024-05-16.",
-    "stars": 3,
-    "isArchived": true
+    "stars": 3
   },
   {
     "name": "MMM-TeslaLogger",
@@ -12964,7 +12963,7 @@
     "maintainerURL": "https://github.com/teemoo7",
     "description": "Calculate routes with TomTom API (free), and display travel time with traffic delays.",
     "issues": [],
-    "stars": 5,
+    "stars": 4,
     "license": "MIT"
   },
   {

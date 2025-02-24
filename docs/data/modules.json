@@ -704,7 +704,7 @@
     "maintainer": "KristjanESPERANTO",
     "maintainerURL": "",
     "description": "Display pharmacies that are on emergency duty in Germany.",
-    "issues": true,
+    "issues": false,
     "stars": 2,
     "license": "ISC",
     "tags": [
@@ -713,7 +713,7 @@
     ],
     "image": "screenshot.jpg",
     "defaultSortWeight": 1,
-    "lastCommit": "2025-02-02T15:42:59+01:00"
+    "lastCommit": "2025-02-24T17:27:16+01:00"
   },
   {
     "name": "MMM-AQI",
@@ -2171,7 +2171,7 @@
     "maintainer": "KristjanESPERANTO",
     "maintainerURL": "",
     "description": "Show meals from canteens (Germany and Switzerland).",
-    "issues": true,
+    "issues": false,
     "stars": 6,
     "license": "MIT",
     "tags": [
@@ -2179,8 +2179,8 @@
       "openmensa"
     ],
     "image": "img-example1.jpg",
-    "defaultSortWeight": 0,
-    "lastCommit": "2025-02-23T21:06:39+01:00"
+    "defaultSortWeight": -1,
+    "lastCommit": "2025-02-24T08:28:19+01:00"
   },
   {
     "name": "MMM-Canvas",
@@ -2678,7 +2678,7 @@
     "license": "ISC",
     "image": "doc_images-playground_example.jpg",
     "defaultSortWeight": 3,
-    "lastCommit": "2025-02-20T08:01:34-07:00"
+    "lastCommit": "2025-02-24T08:01:12-07:00"
   },
   {
     "name": "MMM-Confucius-say",
@@ -4476,14 +4476,9 @@
     "issues": true,
     "stars": 4,
     "license": "MIT",
-    "tags": [
-      "canada",
-      "weather",
-      "forecast"
-    ],
     "image": "screenshot.jpg",
-    "defaultSortWeight": 1,
-    "lastCommit": "2023-11-16T17:58:23-05:00"
+    "defaultSortWeight": 2,
+    "lastCommit": "2025-02-24T10:26:26-05:00"
   },
   {
     "name": "MMM-EOL",
@@ -14659,7 +14654,7 @@
     ],
     "license": "MIT",
     "image": "images-quote-of-the-day_english_example.jpg",
-    "defaultSortWeight": 5,
+    "defaultSortWeight": 6,
     "lastCommit": "2023-02-24T17:44:03+03:00"
   },
   {
@@ -15126,7 +15121,7 @@
     ],
     "image": "images-screen.jpg",
     "defaultSortWeight": 1,
-    "lastCommit": "2025-02-16T11:25:58+01:00"
+    "lastCommit": "2025-02-24T12:06:38+01:00"
   },
   {
     "name": "MMM-RepoStats",
@@ -17846,7 +17841,6 @@
     "issues": false,
     "outdated": "Abandoned. Repo has been archived at 2024-05-16.",
     "stars": 3,
-    "isArchived": true,
     "license": "ISC",
     "image": "images-MMM-Tesla3.jpg",
     "defaultSortWeight": 900,
@@ -18174,7 +18168,7 @@
     "maintainerURL": "https://github.com/teemoo7",
     "description": "Calculate routes with TomTom API (free), and display travel time with traffic delays.",
     "issues": true,
-    "stars": 5,
+    "stars": 4,
     "license": "MIT",
     "image": "screenshots-route.jpg",
     "defaultSortWeight": 4,

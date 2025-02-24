@@ -1,6 +1,6 @@
 # Result of the module analysis
 
-Last update: 2025-02-24T05:38:08+01:00
+Last update: 2025-02-24T17:40:10+01:00
 
 ## Statistics
 
@@ -8,8 +8,8 @@ Last update: 2025-02-24T05:38:08+01:00
 |:---------------------|:--------:|
 | modules analyzed     |   1224   |
 | maintainer           |    660   |
-| modules with issues  |   1223   |
-| issues               |   6580   |
+| modules with issues  |   1221   |
+| issues               |   6578   |
 | modules at github    |   1098   |
 | modules at gitlab    |     12   |
 | modules at bitbucket |      1   |
@@ -396,27 +396,6 @@ Last update: 2025-02-24T05:38:08+01:00
    - package.json: Line 25, Column 3: Package top-level property "license" is not ordered in the npm standard way. Run the ESLint auto-fixer to correct. (rule: package-json/order-properties)
    - package.json: Line 26, Column 3: Package top-level property "bugs" is not ordered in the npm standard way. Run the ESLint auto-fixer to correct. (rule: package-json/order-properties)
    - package.json: Line 29, Column 3: Package top-level property "homepage" is not ordered in the npm standard way. Run the ESLint auto-fixer to correct. (rule: package-json/order-properties)
-
-
-### [MMM-ApothekenNotdienst by KristjanESPERANTO](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst)
-
-1. Information: There are updates for 6 dependencie(s):
-   - @eslint/js                 ^9.19.0  →  ^9.21.0
-   - @stylistic/eslint-plugin    ^3.0.1  →   ^4.0.1
-   - cspell                     ^8.17.3  →  ^8.17.5
-   - eslint                     ^9.19.0  →  ^9.21.0
-   - globals                   ^15.14.0  →  ^16.0.0
-   - prettier                    ^3.4.2  →   ^3.5.2
-
-2. ESLint issues:
-   - package.json: Line 5, Column 3: Package top-level property "main" is not ordered in the npm standard way. Run the ESLint auto-fixer to correct. (rule: package-json/order-properties)
-   - package.json: Line 10, Column 3: Package top-level property "scripts" is not ordered in the npm standard way. Run the ESLint auto-fixer to correct. (rule: package-json/order-properties)
-   - package.json: Line 16, Column 3: Package top-level property "keywords" is not ordered in the npm standard way. Run the ESLint auto-fixer to correct. (rule: package-json/order-properties)
-   - package.json: Line 21, Column 3: Package top-level property "author" is not ordered in the npm standard way. Run the ESLint auto-fixer to correct. (rule: package-json/order-properties)
-   - package.json: Line 22, Column 3: Package top-level property "license" is not ordered in the npm standard way. Run the ESLint auto-fixer to correct. (rule: package-json/order-properties)
-   - package.json: Line 23, Column 3: Package top-level property "devDependencies" is not ordered in the npm standard way. Run the ESLint auto-fixer to correct. (rule: package-json/order-properties)
-   - package.json: Line 28, Column 5: "eslint-plugin-import" should be replaced with an alternative package. Read more here: https://github.com/es-tooling/module-replacements/blob/main/docs/modules/eslint-plugin-import.md (rule: depend/ban-dependencies)
-   - package.json: Line 37, Column 3: Package top-level property "lint-staged" is not ordered in the npm standard way. Run the ESLint auto-fixer to correct. (rule: package-json/order-properties)
 
 
 ### [MMM-AQI by ryck](https://github.com/ryck/MMM-AQI)
@@ -834,7 +813,7 @@ Last update: 2025-02-24T05:38:08+01:00
 1. Information: There are updates for 11 dependencie(s):
    - @stylistic/eslint-plugin   ^2.12.1  →    ^4.0.1
    - @types/node               ^22.10.2  →  ^22.13.5
-   - bosch-smart-home-bridge     ^1.6.0  →    ^1.7.7
+   - bosch-smart-home-bridge     ^1.6.0  →    ^1.7.8
    - eslint                     ^9.17.0  →   ^9.21.0
    - eslint-config-prettier      ^9.1.0  →   ^10.0.1
    - eslint-plugin-prettier      ^5.2.1  →    ^5.2.3
@@ -1169,25 +1148,6 @@ Last update: 2025-02-24T05:38:08+01:00
 4. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
 5. Recommendation: Found `require('https')` in file `node_helper.js`: Replace 'https' by 'node:https'.
 6. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
-
-### [MMM-Canteen by KristjanESPERANTO](https://github.com/KristjanESPERANTO/MMM-Canteen)
-
-1. ESLint issues:
-   - package.json: Line 5, Column 3: Package top-level property "repository" is not ordered in the npm standard way. Run the ESLint auto-fixer to correct. (rule: package-json/order-properties)
-   - package.json: Line 9, Column 3: Package top-level property "main" is not ordered in the npm standard way. Run the ESLint auto-fixer to correct. (rule: package-json/order-properties)
-   - package.json: Line 10, Column 3: Package top-level property "keywords" is not ordered in the npm standard way. Run the ESLint auto-fixer to correct. (rule: package-json/order-properties)
-   - package.json: Line 15, Column 3: Package top-level property "author" is not ordered in the npm standard way. Run the ESLint auto-fixer to correct. (rule: package-json/order-properties)
-   - package.json: Line 16, Column 3: Package top-level property "contributors" is not ordered in the npm standard way. Run the ESLint auto-fixer to correct. (rule: package-json/order-properties)
-   - package.json: Line 19, Column 3: Package top-level property "license" is not ordered in the npm standard way. Run the ESLint auto-fixer to correct. (rule: package-json/order-properties)
-   - package.json: Line 20, Column 3: Package top-level property "bugs" is not ordered in the npm standard way. Run the ESLint auto-fixer to correct. (rule: package-json/order-properties)
-   - package.json: Line 23, Column 3: Package top-level property "homepage" is not ordered in the npm standard way. Run the ESLint auto-fixer to correct. (rule: package-json/order-properties)
-   - package.json: Line 24, Column 3: Package top-level property "engines" is not ordered in the npm standard way. Run the ESLint auto-fixer to correct. (rule: package-json/order-properties)
-   - package.json: Line 27, Column 3: Package top-level property "dependencies" is not ordered in the npm standard way. Run the ESLint auto-fixer to correct. (rule: package-json/order-properties)
-   - package.json: Line 28, Column 5: "moment" should be replaced with an alternative package. Read more here: https://github.com/es-tooling/module-replacements/blob/main/docs/modules/momentjs.md (rule: depend/ban-dependencies)
-   - package.json: Line 30, Column 3: Package top-level property "devDependencies" is not ordered in the npm standard way. Run the ESLint auto-fixer to correct. (rule: package-json/order-properties)
-   - package.json: Line 46, Column 3: Package top-level property "scripts" is not ordered in the npm standard way. Run the ESLint auto-fixer to correct. (rule: package-json/order-properties)
-   - package.json: Line 53, Column 3: Package top-level property "lint-staged" is not ordered in the npm standard way. Run the ESLint auto-fixer to correct. (rule: package-json/order-properties)
-
 
 ### [MMM-Canvas by chase-cromwell](https://github.com/chase-cromwell/MMM-Canvas)
 
@@ -2316,23 +2276,9 @@ deprecated: no longer maintained, switch to modern iconify-icon web component
 
 ### [MMM-EnvCanada by CharlesMorris78](https://github.com/CharlesMorris78/MMM-EnvCanada)
 
-1. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
-2. ESLint issues:
-   - MMM-EnvCanada.js: Line 28, Column 5: 'myType' is assigned a value but never used. (rule: no-unused-vars)
-   - forecastdata.js: Line 1, Column 7: 'ForecastData' is defined but never used. (rule: no-unused-vars)
-   - package.json: Line 2, Column 11: Invalid npm package name: name can no longer contain capital letters. (rule: package-json/valid-name)
-   - package.json: Line 3, Column 3: Package top-level property "version" is not ordered in the npm standard way. Run the ESLint auto-fixer to correct. (rule: package-json/order-properties)
-   - package.json: Line 4, Column 3: Package top-level property "type" is not ordered in the npm standard way. Run the ESLint auto-fixer to correct. (rule: package-json/order-properties)
-   - package.json: Line 5, Column 3: Package top-level property "displayName" is not ordered in the npm standard way. Run the ESLint auto-fixer to correct. (rule: package-json/order-properties)
-   - package.json: Line 6, Column 3: Package top-level property "description" is not ordered in the npm standard way. Run the ESLint auto-fixer to correct. (rule: package-json/order-properties)
-   - package.json: Line 7, Column 3: Package top-level property "main" is not ordered in the npm standard way. Run the ESLint auto-fixer to correct. (rule: package-json/order-properties)
-   - package.json: Line 8, Column 3: Package top-level property "repository" is not ordered in the npm standard way. Run the ESLint auto-fixer to correct. (rule: package-json/order-properties)
-   - package.json: Line 12, Column 3: Package top-level property "keywords" is not ordered in the npm standard way. Run the ESLint auto-fixer to correct. (rule: package-json/order-properties)
-   - package.json: Line 18, Column 3: Package top-level property "author" is not ordered in the npm standard way. Run the ESLint auto-fixer to correct. (rule: package-json/order-properties)
-   - package.json: Line 19, Column 3: Package top-level property "license" is not ordered in the npm standard way. Run the ESLint auto-fixer to correct. (rule: package-json/order-properties)
-   - package.json: Line 20, Column 3: Package top-level property "bugs" is not ordered in the npm standard way. Run the ESLint auto-fixer to correct. (rule: package-json/order-properties)
-   - package.json: Line 23, Column 3: Package top-level property "homepage" is not ordered in the npm standard way. Run the ESLint auto-fixer to correct. (rule: package-json/order-properties)
-
+1. An error occurred while getting information from 'package.json': Error: Invalid version: "1.2"
+2. Typo: Found `Magic Mirror` in file `README.md`: Replace it with `MagicMirror²`.
+3. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
 
 ### [MMM-EskomSePush by mumblebaj](https://github.com/mumblebaj/MMM-EskomSePush)
 
@@ -4215,7 +4161,7 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
    - @electron/rebuild    ^3.6.0  →   ^3.7.1
    - node-abi            ^3.65.0  →  ^3.74.0
    - node-gyp            ^10.2.0  →  ^11.1.0
-   - puppeteer          ^22.15.0  →  ^24.2.1
+   - puppeteer          ^22.15.0  →  ^24.3.0
    - sharp               ^0.33.4  →  ^0.33.5
 
 
