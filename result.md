@@ -1,6 +1,6 @@
 # Result of the module analysis
 
-Last update: 2025-02-23T17:39:16+01:00
+Last update: 2025-02-24T05:38:08+01:00
 
 ## Statistics
 
@@ -8,8 +8,8 @@ Last update: 2025-02-23T17:39:16+01:00
 |:---------------------|:--------:|
 | modules analyzed     |   1224   |
 | maintainer           |    660   |
-| modules with issues  |   1224   |
-| issues               |   6583   |
+| modules with issues  |   1223   |
+| issues               |   6580   |
 | modules at github    |   1098   |
 | modules at gitlab    |     12   |
 | modules at bitbucket |      1   |
@@ -1172,21 +1172,7 @@ Last update: 2025-02-23T17:39:16+01:00
 
 ### [MMM-Canteen by KristjanESPERANTO](https://github.com/KristjanESPERANTO/MMM-Canteen)
 
-1. Information: There are updates for 12 dependencie(s):
-   - @eslint/js                 ^9.18.0  →   ^9.21.0
-   - @eslint/json                ^0.9.1  →   ^0.10.0
-   - @eslint/markdown            ^6.2.1  →    ^6.2.2
-   - @stylistic/eslint-plugin   ^2.13.0  →    ^4.0.1
-   - cspell                     ^8.17.2  →   ^8.17.5
-   - eslint                     ^9.18.0  →   ^9.21.0
-   - globals                   ^15.14.0  →   ^16.0.0
-   - lint-staged                ^15.4.1  →   ^15.4.3
-   - markdownlint-cli           ^0.43.0  →   ^0.44.0
-   - prettier                    ^3.4.2  →    ^3.5.2
-   - stylelint                 ^16.13.2  →  ^16.14.1
-   - stylelint-prettier          ^5.0.2  →    ^5.0.3
-
-2. ESLint issues:
+1. ESLint issues:
    - package.json: Line 5, Column 3: Package top-level property "repository" is not ordered in the npm standard way. Run the ESLint auto-fixer to correct. (rule: package-json/order-properties)
    - package.json: Line 9, Column 3: Package top-level property "main" is not ordered in the npm standard way. Run the ESLint auto-fixer to correct. (rule: package-json/order-properties)
    - package.json: Line 10, Column 3: Package top-level property "keywords" is not ordered in the npm standard way. Run the ESLint auto-fixer to correct. (rule: package-json/order-properties)
@@ -1199,7 +1185,6 @@ Last update: 2025-02-23T17:39:16+01:00
    - package.json: Line 27, Column 3: Package top-level property "dependencies" is not ordered in the npm standard way. Run the ESLint auto-fixer to correct. (rule: package-json/order-properties)
    - package.json: Line 28, Column 5: "moment" should be replaced with an alternative package. Read more here: https://github.com/es-tooling/module-replacements/blob/main/docs/modules/momentjs.md (rule: depend/ban-dependencies)
    - package.json: Line 30, Column 3: Package top-level property "devDependencies" is not ordered in the npm standard way. Run the ESLint auto-fixer to correct. (rule: package-json/order-properties)
-   - package.json: Line 37, Column 5: "eslint-plugin-import" should be replaced with an alternative package. Read more here: https://github.com/es-tooling/module-replacements/blob/main/docs/modules/eslint-plugin-import.md (rule: depend/ban-dependencies)
    - package.json: Line 46, Column 3: Package top-level property "scripts" is not ordered in the npm standard way. Run the ESLint auto-fixer to correct. (rule: package-json/order-properties)
    - package.json: Line 53, Column 3: Package top-level property "lint-staged" is not ordered in the npm standard way. Run the ESLint auto-fixer to correct. (rule: package-json/order-properties)
 
@@ -2859,26 +2844,6 @@ deprecated: no longer maintained, switch to modern iconify-icon web component
 4. Typo: Found `Magic Mirror` in file `README.md`: Replace it with `MagicMirror²`.
 5. Recommendation: The README seems not to have an update instruction (the word 'update' is missing). Please add one.
 6. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
-
-### [MMM-Forum by KristjanESPERANTO](https://github.com/KristjanESPERANTO/MMM-Forum)
-
-1. Information: There are updates for 12 dependencie(s):
-   - @eslint/js                 ^9.18.0  →   ^9.21.0
-   - @eslint/json                ^0.9.1  →   ^0.10.0
-   - @eslint/markdown            ^6.2.1  →    ^6.2.2
-   - @stylistic/eslint-plugin   ^2.13.0  →    ^4.0.1
-   - cspell                     ^8.17.2  →   ^8.17.5
-   - eslint                     ^9.18.0  →   ^9.21.0
-   - globals                   ^15.14.0  →   ^16.0.0
-   - lint-staged                ^15.4.1  →   ^15.4.3
-   - markdownlint-cli           ^0.43.0  →   ^0.44.0
-   - prettier                    ^3.4.2  →    ^3.5.2
-   - stylelint                 ^16.13.2  →  ^16.14.1
-   - stylelint-prettier          ^5.0.2  →    ^5.0.3
-
-2. ESLint issues:
-   - package.json: Line 41, Column 5: "eslint-plugin-import" should be replaced with an alternative package. Read more here: https://github.com/es-tooling/module-replacements/blob/main/docs/modules/eslint-plugin-import.md (rule: depend/ban-dependencies)
-
 
 ### [MMM-FrameLight by RaspiManu](https://github.com/RaspiManu/MMM-FrameLight)
 
