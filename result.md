@@ -1,6 +1,6 @@
 # Result of the module analysis
 
-Last update: 2025-02-24T17:40:10+01:00
+Last update: 2025-02-25T05:38:21+01:00
 
 ## Statistics
 
@@ -8,8 +8,8 @@ Last update: 2025-02-24T17:40:10+01:00
 |:---------------------|:--------:|
 | modules analyzed     |   1224   |
 | maintainer           |    660   |
-| modules with issues  |   1221   |
-| issues               |   6578   |
+| modules with issues  |   1220   |
+| issues               |   6576   |
 | modules at github    |   1098   |
 | modules at gitlab    |     12   |
 | modules at bitbucket |      1   |
@@ -821,7 +821,7 @@ Last update: 2025-02-24T17:40:10+01:00
    - rollup                     ^4.29.1  →   ^4.34.8
    - rxjs                        ^7.8.1  →    ^7.8.2
    - typescript                  ^5.7.2  →    ^5.7.3
-   - typescript-eslint          ^8.18.2  →   ^8.24.1
+   - typescript-eslint          ^8.18.2  →   ^8.25.0
 
 2. ESLint issues:
    - node_helper.js: Line 13, Column 1034: 't' is defined but never used. (rule: no-unused-vars)
@@ -2126,20 +2126,6 @@ Last update: 2025-02-24T17:40:10+01:00
 3. Recommendation: Found `XMLHttpRequest` in file `MMM-EarthquakeMonitor.js`: Replace it with built-in fetch.
 4. Recommendation: The README seems not to have an install instruction (the words 'install' or 'installation' are missing). Please add one.
 5. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
-
-### [MMM-EasyPix by KristjanESPERANTO](https://github.com/KristjanESPERANTO/MMM-EasyPix)
-
-1. Information: There are updates for 6 dependencie(s):
-   - @eslint/js                 ^9.20.0  →  ^9.21.0
-   - @stylistic/eslint-plugin    ^3.1.0  →   ^4.0.1
-   - cspell                     ^8.17.3  →  ^8.17.5
-   - eslint                     ^9.20.0  →  ^9.21.0
-   - globals                   ^15.14.0  →  ^16.0.0
-   - prettier                    ^3.4.2  →   ^3.5.2
-
-2. ESLint issues:
-   - package.json: Line 40, Column 5: "eslint-plugin-import" should be replaced with an alternative package. Read more here: https://github.com/es-tooling/module-replacements/blob/main/docs/modules/eslint-plugin-import.md (rule: depend/ban-dependencies)
-
 
 ### [MMM-Ecobee by parnic](https://github.com/parnic/MMM-Ecobee)
 
@@ -4182,8 +4168,8 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
    - @rollup/plugin-commonjs           ^25.0.7  →  ^28.0.2
    - @rollup/plugin-node-resolve       ^15.2.3  →  ^16.0.0
    - @rollup/plugin-typescript         ^11.1.6  →  ^12.1.2
-   - @typescript-eslint/eslint-plugin  ^6.19.1  →  ^8.24.1
-   - @typescript-eslint/parser         ^6.19.1  →  ^8.24.1
+   - @typescript-eslint/eslint-plugin  ^6.19.1  →  ^8.25.0
+   - @typescript-eslint/parser         ^6.19.1  →  ^8.25.0
    - eslint                            ^8.56.0  →  ^9.21.0
    - eslint-config-prettier             ^9.1.0  →  ^10.0.1
    - eslint-plugin-prettier             ^5.1.3  →   ^5.2.3
@@ -6317,7 +6303,7 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
    - @rollup/plugin-node-resolve       ^15.2.3  →  ^16.0.0
    - @rollup/plugin-typescript         ^11.1.6  →  ^12.1.2
    - @stylistic/eslint-plugin           ^1.5.4  →   ^4.0.1
-   - @typescript-eslint/eslint-plugin  ^6.20.0  →  ^8.24.1
+   - @typescript-eslint/eslint-plugin  ^6.20.0  →  ^8.25.0
    - eslint                            ^8.56.0  →  ^9.21.0
    - prettier                           ^3.2.5  →   ^3.5.2
    - rollup                             ^4.9.6  →  ^4.34.8
@@ -7707,7 +7693,7 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
    - rollup                       ^4.21.1  →  ^4.34.8
    - rollup-plugin-banner2         ^1.3.0  →   ^1.3.1
    - typescript                    ^5.5.4  →   ^5.7.3
-   - typescript-eslint             ^8.3.0  →  ^8.24.1
+   - typescript-eslint             ^8.3.0  →  ^8.25.0
 
 2. ESLint issues:
    - MMM-RAIN-MAP.js: Line 28, Column 17081: Expected to return a value in method 'get'. (rule: getter-return)
@@ -8241,7 +8227,7 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
    - @aws-sdk/client-lambda            ^3.0.0  →   ^3.750.0
    - @aws-sdk/client-s3                ^3.0.0  →   ^3.750.0
    - @aws-sdk/client-sts             ^3.738.0  →   ^3.750.0
-   - aws-cdk                           ^2.0.0  →  ^2.1000.2
+   - aws-cdk                           ^2.0.0  →  ^2.1000.3
    - aws-cdk-lib                       ^2.0.0  →   ^2.180.0
    - constructs                       ^10.0.0  →    ^10.4.2
    - dotenv                           ^16.0.0  →    ^16.4.7

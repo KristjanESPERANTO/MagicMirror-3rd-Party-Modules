@@ -4170,7 +4170,7 @@
     "maintainer": "KristjanESPERANTO",
     "maintainerURL": "",
     "description": "The easiest way to show pictures on your mirror.",
-    "issues": true,
+    "issues": false,
     "stars": 9,
     "license": "MIT",
     "tags": [
@@ -4179,8 +4179,8 @@
       "pictures"
     ],
     "image": "pix-earth.jpg",
-    "defaultSortWeight": 1,
-    "lastCommit": "2025-02-08T18:56:56+01:00"
+    "defaultSortWeight": -1,
+    "lastCommit": "2025-02-24T23:19:21+01:00"
   },
   {
     "name": "MMM-Ecobee",
@@ -6577,7 +6577,7 @@
     ],
     "image": "images-screenshot.jpg",
     "defaultSortWeight": 2,
-    "lastCommit": "2024-07-05T15:50:06+02:00"
+    "lastCommit": "2025-02-24T20:19:13+02:00"
   },
   {
     "name": "MMM-GyeonggiBus",
@@ -14694,7 +14694,7 @@
     "maintainerURL": "",
     "description": "Graphical rain forecast for the Netherlands. Superfast with scalable vector graphics in desired color.",
     "issues": true,
-    "stars": 9,
+    "stars": 10,
     "license": "MIT",
     "image": "logoNorain.jpg",
     "defaultSortWeight": 5,
