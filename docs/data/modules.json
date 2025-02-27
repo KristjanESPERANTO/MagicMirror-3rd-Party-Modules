@@ -704,7 +704,7 @@
     "maintainer": "KristjanESPERANTO",
     "maintainerURL": "",
     "description": "Display pharmacies that are on emergency duty in Germany.",
-    "issues": false,
+    "issues": true,
     "stars": 2,
     "license": "ISC",
     "tags": [
@@ -2171,7 +2171,7 @@
     "maintainer": "KristjanESPERANTO",
     "maintainerURL": "",
     "description": "Show meals from canteens (Germany and Switzerland).",
-    "issues": false,
+    "issues": true,
     "stars": 6,
     "license": "MIT",
     "tags": [
@@ -2179,7 +2179,7 @@
       "openmensa"
     ],
     "image": "img-example1.jpg",
-    "defaultSortWeight": -1,
+    "defaultSortWeight": 0,
     "lastCommit": "2025-02-24T08:28:19+01:00"
   },
   {
@@ -2637,8 +2637,8 @@
     "description": "Displays ComEd 5 Minute and Hourly Average, the other repo (MMM-ComEdPrice) has not been updated in a while.",
     "issues": true,
     "stars": 0,
-    "defaultSortWeight": 4,
-    "lastCommit": "2024-07-05T14:54:38-05:00"
+    "defaultSortWeight": 3,
+    "lastCommit": "2025-02-26T10:45:25-06:00"
   },
   {
     "name": "MMM-CommandToNotification",
@@ -2678,7 +2678,7 @@
     "license": "ISC",
     "image": "doc_images-playground_example.jpg",
     "defaultSortWeight": 3,
-    "lastCommit": "2025-02-24T08:01:12-07:00"
+    "lastCommit": "2025-02-25T14:19:00-07:00"
   },
   {
     "name": "MMM-Confucius-say",
@@ -3259,11 +3259,12 @@
     "license": "MIT",
     "tags": [
       "jokes",
-      "dad jokes"
+      "dad jokes",
+      "entertainement"
     ],
     "image": "screenshot.jpg",
     "defaultSortWeight": 2,
-    "lastCommit": "2024-03-08T20:42:01+01:00"
+    "lastCommit": "2025-02-25T20:25:31+01:00"
   },
   {
     "name": "MMM-DagelijksWoord",
@@ -4170,7 +4171,7 @@
     "maintainer": "KristjanESPERANTO",
     "maintainerURL": "",
     "description": "The easiest way to show pictures on your mirror.",
-    "issues": false,
+    "issues": true,
     "stars": 9,
     "license": "MIT",
     "tags": [
@@ -4179,7 +4180,7 @@
       "pictures"
     ],
     "image": "pix-earth.jpg",
-    "defaultSortWeight": -1,
+    "defaultSortWeight": 0,
     "lastCommit": "2025-02-24T23:19:21+01:00"
   },
   {
@@ -5482,7 +5483,7 @@
     "maintainer": "KristjanESPERANTO",
     "maintainerURL": "",
     "description": "Displays information from the MagicMirror\u00b2 forum. Like latest posts, unread posts, etc. The module should also work for other NodeBB forums, but it is not tested.",
-    "issues": false,
+    "issues": true,
     "stars": 3,
     "license": "ISC",
     "tags": [
@@ -5490,7 +5491,7 @@
       "nodebb"
     ],
     "image": "screenshot.jpg",
-    "defaultSortWeight": -1,
+    "defaultSortWeight": 0,
     "lastCommit": "2025-02-23T21:01:25+01:00"
   },
   {
@@ -8357,7 +8358,7 @@
       "keyboard"
     ],
     "image": "img-fire_stick_remote.jpg",
-    "defaultSortWeight": 0,
+    "defaultSortWeight": 1,
     "lastCommit": "2025-02-22T18:46:57+01:00"
   },
   {
@@ -11753,7 +11754,7 @@
     ],
     "image": ".github-preview.bubbles.jpg",
     "defaultSortWeight": 0,
-    "lastCommit": "2025-02-22T02:34:36+00:00"
+    "lastCommit": "2025-02-26T12:40:50+00:00"
   },
   {
     "name": "MMM-Netatmo-Presence",
@@ -11799,7 +11800,7 @@
     "maintainerURL": "",
     "description": "Display a solid wifi logo as network signal based on ping speed.",
     "issues": true,
-    "stars": 40,
+    "stars": 39,
     "license": "MIT",
     "tags": [
       "network"
@@ -11817,7 +11818,7 @@
     "maintainerURL": "https://github.com/slametps",
     "description": "Display network connection status (ping, download speed, upload speed).",
     "issues": true,
-    "stars": 35,
+    "stars": 34,
     "tags": [
       "networkconnection",
       "network",
@@ -11858,7 +11859,7 @@
     "maintainerURL": "",
     "description": "Add a QR Code with the link to the showing Newsfeed (Default Newsfeed Module).",
     "issues": true,
-    "stars": 15,
+    "stars": 16,
     "license": "MIT",
     "tags": [
       "newsfeed",
@@ -12023,7 +12024,7 @@
     "license": "MIT",
     "image": "screenshots-screenshot1.jpg",
     "defaultSortWeight": 8,
-    "lastCommit": "2023-04-01T15:09:59+11:00"
+    "lastCommit": "2025-02-26T14:37:37+11:00"
   },
   {
     "name": "MMM-NexusMetroRTI",
@@ -12719,7 +12720,7 @@
     "maintainer": "KristjanESPERANTO",
     "maintainerURL": "",
     "description": "Display current and forecast weather based on the Openweathermap OneCall API data with alternative formatting.",
-    "issues": true,
+    "issues": false,
     "stars": 4,
     "license": "MIT",
     "tags": [
@@ -12727,8 +12728,8 @@
       "openweathermap"
     ],
     "image": "screenshot.jpg",
-    "defaultSortWeight": 1,
-    "lastCommit": "2025-02-18T00:41:48+01:00"
+    "defaultSortWeight": -1,
+    "lastCommit": "2025-02-26T23:41:37+01:00"
   },
   {
     "name": "MMM-OneDrive",
@@ -13374,6 +13375,21 @@
     "image": "images-1.jpg",
     "defaultSortWeight": 5,
     "lastCommit": "2018-12-25T21:15:00-05:00"
+  },
+  {
+    "name": "MMM-PDFSlideshow",
+    "category": "Utility / IoT / 3rd Party / Integration",
+    "url": "https://github.com/ChrisF1976/MMM-PDFSlideshow",
+    "id": "ChrisF1976/MMM-PDFSlideshow",
+    "maintainer": "ChrisF1976",
+    "maintainerURL": "https://github.com/ChrisF1976",
+    "description": "Displays PDF documents as a slideshow.",
+    "issues": true,
+    "stars": 2,
+    "license": "MIT",
+    "image": "MMM-PDFSlideshow.jpg",
+    "defaultSortWeight": 4,
+    "lastCommit": "2025-02-26T09:04:32+01:00"
   },
   {
     "name": "MMM-pekavm",
@@ -14418,7 +14434,7 @@
     "maintainer": "KristjanESPERANTO",
     "maintainerURL": "",
     "description": "Displays departure information for public transportation in Germany and some other European countries. The <a target=\"_blank\" href=\"https://github.com/public-transport/hafas-client\">hafas-client</a> is used to query the information. The interface of the Deutsche Bahn is used as standard, this includes most of the local networks with buses, trams, etc. However, <a target=\"_blank\" href=\"https://github.com/public-transport/hafas-client/blob/main/p/readme.md\">other hafas interfaces</a> can also be used.",
-    "issues": true,
+    "issues": false,
     "stars": 25,
     "license": "MIT",
     "tags": [
@@ -14427,8 +14443,8 @@
       "vendo"
     ],
     "image": "img-Goerdelerring_all.jpg",
-    "defaultSortWeight": 0,
-    "lastCommit": "2025-02-19T23:32:19+01:00"
+    "defaultSortWeight": -2,
+    "lastCommit": "2025-02-27T00:06:39+01:00"
   },
   {
     "name": "MMM-PublicTransportVVO",
@@ -15017,7 +15033,7 @@
     "maintainerURL": "",
     "description": "Rain radar for locations in Germany. The weather dates were provided by <a target=\"_blank\" href=\"https://morgenwirdes.de\">Morgenwirdes</a>.",
     "issues": true,
-    "stars": 3,
+    "stars": 4,
     "license": "MIT",
     "image": "zoomlvl 1.jpg",
     "defaultSortWeight": 3,
@@ -15046,7 +15062,7 @@
     "maintainerURL": "",
     "description": "Cleanly shutdown (or reboot) your mirror, edit which modules are shown on your mirror and turn your monitor off and on from a simple website, i.e. from your smartphone.",
     "issues": true,
-    "stars": 510,
+    "stars": 517,
     "license": "MIT",
     "tags": [
       "remote control",
@@ -15188,7 +15204,7 @@
     "maintainerURL": "",
     "description": "Public transport information for Sweden.",
     "issues": true,
-    "stars": 14,
+    "stars": 15,
     "tags": [
       "local transport",
       "sweden"
@@ -15480,7 +15496,7 @@
     "maintainerURL": "",
     "description": "Show RTSP video stream(s) from one or more security cameras.",
     "issues": true,
-    "stars": 74,
+    "stars": 72,
     "license": "MIT",
     "image": "screenshot.jpg",
     "defaultSortWeight": 21,
@@ -16478,7 +16494,7 @@
       "artist"
     ],
     "image": "screenshots-MMM-slamfm-playing-now-screenshot.jpg",
-    "defaultSortWeight": 5,
+    "defaultSortWeight": 6,
     "lastCommit": "2023-02-25T12:58:21+01:00"
   },
   {
@@ -16698,7 +16714,7 @@
       "youtube"
     ],
     "image": "screenshots-MMM-social-counter-screenshot.jpg",
-    "defaultSortWeight": 4,
+    "defaultSortWeight": 5,
     "lastCommit": "2023-02-25T12:59:09+01:00"
   },
   {
@@ -19489,7 +19505,7 @@
     ],
     "image": "images-day-0000.jpg",
     "defaultSortWeight": 7,
-    "lastCommit": "2024-10-07T13:35:49-07:00"
+    "lastCommit": "2025-02-26T15:42:14+01:00"
   },
   {
     "name": "MMM-Weather-SMHI-Hourly",

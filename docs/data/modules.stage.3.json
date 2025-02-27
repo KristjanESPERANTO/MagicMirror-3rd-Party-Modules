@@ -3193,7 +3193,8 @@
     "license": "MIT",
     "tags": [
       "jokes",
-      "dad jokes"
+      "dad jokes",
+      "entertainement"
     ],
     "image": "screenshot.jpg"
   },
@@ -11685,7 +11686,7 @@
     "maintainerURL": "",
     "description": "Display a solid wifi logo as network signal based on ping speed.",
     "issues": [],
-    "stars": 40,
+    "stars": 39,
     "license": "MIT",
     "tags": [
       "network"
@@ -11701,7 +11702,7 @@
     "maintainerURL": "https://github.com/slametps",
     "description": "Display network connection status (ping, download speed, upload speed).",
     "issues": [],
-    "stars": 35,
+    "stars": 34,
     "tags": [
       "networkconnection",
       "network",
@@ -11740,7 +11741,7 @@
     "maintainerURL": "",
     "description": "Add a QR Code with the link to the showing Newsfeed (Default Newsfeed Module).",
     "issues": [],
-    "stars": 15,
+    "stars": 16,
     "license": "MIT",
     "tags": [
       "newsfeed",
@@ -13225,6 +13226,21 @@
     "stars": 6,
     "license": "MIT",
     "image": "images-1.jpg"
+  },
+  {
+    "name": "MMM-PDFSlideshow",
+    "category": "Utility / IoT / 3rd Party / Integration",
+    "url": "https://github.com/ChrisF1976/MMM-PDFSlideshow",
+    "id": "ChrisF1976/MMM-PDFSlideshow",
+    "maintainer": "ChrisF1976",
+    "maintainerURL": "https://github.com/ChrisF1976",
+    "description": "Displays PDF documents as a slideshow.",
+    "issues": [
+      "There is no `package.json`. We need this file to gather information about the module for the module list page."
+    ],
+    "stars": 2,
+    "license": "MIT",
+    "image": "MMM-PDFSlideshow.jpg"
   },
   {
     "name": "MMM-pekavm",
@@ -14861,7 +14877,7 @@
     "issues": [
       "There is no `package.json`. We need this file to gather information about the module for the module list page."
     ],
-    "stars": 3,
+    "stars": 4,
     "license": "MIT",
     "image": "zoomlvl 1.jpg"
   },
@@ -14889,7 +14905,7 @@
     "maintainerURL": "",
     "description": "Cleanly shutdown (or reboot) your mirror, edit which modules are shown on your mirror and turn your monitor off and on from a simple website, i.e. from your smartphone.",
     "issues": [],
-    "stars": 510,
+    "stars": 517,
     "license": "MIT",
     "tags": [
       "remote control",
@@ -15024,7 +15040,7 @@
     "issues": [
       "No image found."
     ],
-    "stars": 14,
+    "stars": 15,
     "tags": [
       "local transport",
       "sweden"
@@ -15310,7 +15326,7 @@
     "issues": [
       "There are no keywords in 'package.json'. We would use them as tags on the module list page."
     ],
-    "stars": 74,
+    "stars": 72,
     "license": "MIT",
     "image": "screenshot.jpg"
   },

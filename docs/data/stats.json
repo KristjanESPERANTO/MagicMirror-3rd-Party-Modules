@@ -1,19 +1,19 @@
 {
-  "moduleCounter": 1224,
-  "modulesWithImageCounter": 859,
-  "modulesWithIssuesCounter": 1220,
-  "issueCounter": 6576,
-  "lastUpdate": "2025-02-25T05:38:21+01:00",
+  "moduleCounter": 1225,
+  "modulesWithImageCounter": 860,
+  "modulesWithIssuesCounter": 1223,
+  "issueCounter": 6581,
+  "lastUpdate": "2025-02-27T10:32:36+01:00",
   "repositoryHoster": {
-    "github": 1098,
+    "github": 1099,
     "gitlab": 12,
     "bitbucket": 1
   },
   "maintainer": {
     "MMRIZE": 21,
     "Tom-Hirschberger": 15,
+    "ChrisF1976": 13,
     "fewieden": 13,
-    "ChrisF1976": 12,
     "mykle1": 12,
     "shbatm": 10,
     "mumblebaj": 10,
