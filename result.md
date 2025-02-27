@@ -1,15 +1,15 @@
 # Result of the module analysis
 
-Last update: 2025-02-27T10:32:36+01:00
+Last update: 2025-02-27T17:39:42+01:00
 
 ## Statistics
 
 |                      | number   |
 |:---------------------|:--------:|
-| modules analyzed     |   1225   |
+| modules analyzed     |   1226   |
 | maintainer           |    660   |
-| modules with issues  |   1223   |
-| issues               |   6581   |
+| modules with issues  |   1224   |
+| issues               |   6575   |
 | modules at github    |   1099   |
 | modules at gitlab    |     12   |
 | modules at bitbucket |      1   |
@@ -643,6 +643,11 @@ Last update: 2025-02-27T10:32:36+01:00
 4. Recommendation: The README seems not to have an update instruction (the word 'update' is missing). Please add one.
 5. Recommendation: The README seems not to have an install instruction (the words 'install' or 'installation' are missing). Please add one.
 6. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
+
+### [MMM-Biathlon by 2hdlockness](https://github.com/2hdlockness/MMM-Biathlon)
+
+1. Recommendation: Found `https://cdn.jsdelivr.net` in file `MMM-Biathlon.js`: It looks like a package is loaded via CDN. It would be better if the package were installed locally via npm.
+2. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
 
 ### [MMM-BiathlonResults by grenagit](https://github.com/grenagit/MMM-BiathlonResults)
 
@@ -6167,6 +6172,13 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
    - qrcode  1.5.1  →  1.5.4
 
 
+### [MMM-NewsAPI by totoluto](https://github.com/totoluto/MMM-NewsAPI)
+
+1. Typo: Found `Magic Mirror` in file `README.md`: Replace it with `MagicMirror²`.
+2. Recommendation: The README seems not to have an update instruction (the word 'update' is missing). Please add one.
+3. Typo: Found `Magic Mirror` in file `package.json`: Replace it with `MagicMirror²`.
+4. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
+
 ### [MMM-NewsAPI by mumblebaj](https://github.com/mumblebaj/MMM-NewsAPI)
 
 1. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
@@ -6181,13 +6193,6 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
    - package.json: Line 18, Column 3: Package top-level property "bugs" is not ordered in the npm standard way. Run the ESLint auto-fixer to correct. (rule: package-json/order-properties)
    - package.json: Line 21, Column 3: Package top-level property "homepage" is not ordered in the npm standard way. Run the ESLint auto-fixer to correct. (rule: package-json/order-properties)
 
-
-### [MMM-NewsAPI by totoluto](https://github.com/totoluto/MMM-NewsAPI)
-
-1. Typo: Found `Magic Mirror` in file `README.md`: Replace it with `MagicMirror²`.
-2. Recommendation: The README seems not to have an update instruction (the word 'update' is missing). Please add one.
-3. Typo: Found `Magic Mirror` in file `package.json`: Replace it with `MagicMirror²`.
-4. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
 
 ### [MMM-NewsFeedTicker by justjim1220](https://github.com/justjim1220/MMM-NewsFeedTicker)
 
@@ -9134,18 +9139,6 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
 6. Recommendation: The README seems not to have an update instruction (the word 'update' is missing). Please add one.
 7. Deprecated: Found `"grunt"` in file `package.json`: Grunt is practically unmaintained. Move on to something better.
 8. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
-
-### [MMM-swisstransport by Bangee44](https://github.com/Bangee44/MMM-swisstransport)
-
-1. There is no `package.json`. We need this file to gather information about the module for the module list page.
-2. No image found.
-3. Typo: Found `Magic Mirror` in file `MMM-swisstransport.js`: Replace it with `MagicMirror²`.
-4. Outdated: Found `MichMich/MagicMirror` in file `README.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
-5. Recommendation: The README seems not to have an update instruction (the word 'update' is missing). Please add one.
-6. Recommendation: The README seems not to have an install instruction (the words 'install' or 'installation' are missing). Please add one.
-7. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
-8. Deprecated: Found `require('request')` in file `node_helper.js`: Replace it with built-in fetch.
-9. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
 
 ### [MMM-synology-ds by Thlb](https://github.com/Thlb/MMM-synology-ds)
 

@@ -816,6 +816,18 @@
     "license": "MIT"
   },
   {
+    "name": "MMM-Biathlon",
+    "category": "Sports",
+    "url": "https://github.com/2hdlockness/MMM-Biathlon",
+    "id": "2hdlockness/MMM-Biathlon",
+    "maintainer": "2hdlockness",
+    "maintainerURL": "https://github.com/2hdlockness/",
+    "description": "Displays biathlon race results and upcoming events. It relies on the official biathlon API to provide up-to-date information.",
+    "issues": [],
+    "stars": 0,
+    "license": "MIT"
+  },
+  {
     "name": "MMM-BiathlonResults",
     "category": "Sports",
     "url": "https://github.com/grenagit/MMM-BiathlonResults",
@@ -2449,7 +2461,7 @@
     "maintainerURL": "",
     "description": "Your everyday stoic quote.",
     "issues": [],
-    "stars": 0,
+    "stars": 1,
     "license": "MIT"
   },
   {
@@ -8484,18 +8496,6 @@
   {
     "name": "MMM-NewsAPI",
     "category": "News / Information",
-    "url": "https://github.com/mumblebaj/MMM-NewsAPI",
-    "id": "mumblebaj/MMM-NewsAPI",
-    "maintainer": "mumblebaj",
-    "maintainerURL": "https://github.com/mumblebaj",
-    "description": "Get news from <a target=\"_blank\" href=\"https://newsapi.org\">newsapi.org</a>.",
-    "issues": [],
-    "stars": 11,
-    "license": "MIT"
-  },
-  {
-    "name": "MMM-NewsAPI",
-    "category": "News / Information",
     "url": "https://github.com/totoluto/MMM-NewsAPI",
     "id": "totoluto/MMM-NewsAPI",
     "maintainer": "totoluto",
@@ -8503,6 +8503,18 @@
     "description": "Get top headlines from <a target=\"_blank\" href=\"https://newsapi.org\">newsapi.org</a>.",
     "issues": [],
     "stars": 0,
+    "license": "MIT"
+  },
+  {
+    "name": "MMM-NewsAPI",
+    "category": "News / Information",
+    "url": "https://github.com/mumblebaj/MMM-NewsAPI",
+    "id": "mumblebaj/MMM-NewsAPI",
+    "maintainer": "mumblebaj",
+    "maintainerURL": "https://github.com/mumblebaj",
+    "description": "Get news from <a target=\"_blank\" href=\"https://newsapi.org\">newsapi.org</a>.",
+    "issues": [],
+    "stars": 11,
     "license": "MIT"
   },
   {
@@ -8682,7 +8694,7 @@
     "maintainerURL": "https://github.com/Isaac-the-Man",
     "description": "Retro nixie clock display.",
     "issues": [],
-    "stars": 19,
+    "stars": 20,
     "license": "MIT"
   },
   {
@@ -10274,7 +10286,7 @@
     "id": "matiasmtl/MMM-promiedos",
     "maintainer": "matiasmtl",
     "maintainerURL": "https://github.com/matiasmtl/",
-    "description": "Displays Argentinian main soccer league (LPF) rankings for both zones, A and B",
+    "description": "Displays Argentinian main soccer league (LPF) rankings for both zones, A and B.",
     "issues": [],
     "stars": 0,
     "license": "NOASSERTION"
@@ -12490,13 +12502,14 @@
   },
   {
     "name": "MMM-swisstransport",
-    "category": "Transport / Travel",
+    "category": "Outdated Modules",
     "url": "https://github.com/Bangee44/MMM-swisstransport",
     "id": "Bangee44/MMM-swisstransport",
     "maintainer": "Bangee44",
     "maintainerURL": "",
     "description": "Display train departures from your favourite train station.",
     "issues": [],
+    "outdated": "Abandoned. No reactions to issues since years. Seems not to work anymore.",
     "stars": 7,
     "license": "MIT"
   },

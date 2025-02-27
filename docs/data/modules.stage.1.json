@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "2025-02-27T09:10:10.294Z",
+  "lastUpdate": "2025-02-27T16:30:33.637Z",
   "modules": [
     {
       "name": "MMM-01ZM",
@@ -694,6 +694,16 @@
       "maintainer": "splattner",
       "maintainerURL": "",
       "description": "Displays a Word Clock written in the Swiss German dialect of Bern.",
+      "issues": []
+    },
+    {
+      "name": "MMM-Biathlon",
+      "category": "Sports",
+      "url": "https://github.com/2hdlockness/MMM-Biathlon",
+      "id": "2hdlockness/MMM-Biathlon",
+      "maintainer": "2hdlockness",
+      "maintainerURL": "https://github.com/2hdlockness/",
+      "description": "Displays biathlon race results and upcoming events. It relies on the official biathlon API to provide up-to-date information.",
       "issues": []
     },
     {
@@ -8686,7 +8696,7 @@
       "id": "matiasmtl/MMM-promiedos",
       "maintainer": "matiasmtl",
       "maintainerURL": "https://github.com/matiasmtl/",
-      "description": "Displays Argentinian main soccer league (LPF) rankings for both zones, A and B",
+      "description": "Displays Argentinian main soccer league (LPF) rankings for both zones, A and B.",
       "issues": []
     },
     {
@@ -10557,13 +10567,14 @@
     },
     {
       "name": "MMM-swisstransport",
-      "category": "Transport / Travel",
+      "category": "Outdated Modules",
       "url": "https://github.com/Bangee44/MMM-swisstransport",
       "id": "Bangee44/MMM-swisstransport",
       "maintainer": "Bangee44",
       "maintainerURL": "",
       "description": "Display train departures from your favourite train station.",
-      "issues": []
+      "issues": [],
+      "outdated": "Abandoned. No reactions to issues since years. Seems not to work anymore."
     },
     {
       "name": "MMM-synology-ds",

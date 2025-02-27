@@ -1167,6 +1167,23 @@
     "image": "wordclock.jpg"
   },
   {
+    "name": "MMM-Biathlon",
+    "category": "Sports",
+    "url": "https://github.com/2hdlockness/MMM-Biathlon",
+    "id": "2hdlockness/MMM-Biathlon",
+    "maintainer": "2hdlockness",
+    "maintainerURL": "https://github.com/2hdlockness/",
+    "description": "Displays biathlon race results and upcoming events. It relies on the official biathlon API to provide up-to-date information.",
+    "issues": [],
+    "stars": 0,
+    "license": "MIT",
+    "tags": [
+      "sports",
+      "biathlon"
+    ],
+    "image": "resources-img-bronze.jpg"
+  },
+  {
     "name": "MMM-BiathlonResults",
     "category": "Sports",
     "url": "https://github.com/grenagit/MMM-BiathlonResults",
@@ -3387,7 +3404,7 @@
       "There is no `package.json`. We need this file to gather information about the module for the module list page.",
       "No image found."
     ],
-    "stars": 0,
+    "stars": 1,
     "license": "MIT"
   },
   {
@@ -11752,22 +11769,6 @@
   {
     "name": "MMM-NewsAPI",
     "category": "News / Information",
-    "url": "https://github.com/mumblebaj/MMM-NewsAPI",
-    "id": "mumblebaj/MMM-NewsAPI",
-    "maintainer": "mumblebaj",
-    "maintainerURL": "https://github.com/mumblebaj",
-    "description": "Get news from <a target=\"_blank\" href=\"https://newsapi.org\">newsapi.org</a>.",
-    "issues": [],
-    "stars": 11,
-    "license": "MIT",
-    "tags": [
-      "news"
-    ],
-    "image": "screenshot1.jpg"
-  },
-  {
-    "name": "MMM-NewsAPI",
-    "category": "News / Information",
     "url": "https://github.com/totoluto/MMM-NewsAPI",
     "id": "totoluto/MMM-NewsAPI",
     "maintainer": "totoluto",
@@ -11781,6 +11782,22 @@
       "api"
     ],
     "image": "screenshots-MMM-NewsApi.jpg"
+  },
+  {
+    "name": "MMM-NewsAPI",
+    "category": "News / Information",
+    "url": "https://github.com/mumblebaj/MMM-NewsAPI",
+    "id": "mumblebaj/MMM-NewsAPI",
+    "maintainer": "mumblebaj",
+    "maintainerURL": "https://github.com/mumblebaj",
+    "description": "Get news from <a target=\"_blank\" href=\"https://newsapi.org\">newsapi.org</a>.",
+    "issues": [],
+    "stars": 11,
+    "license": "MIT",
+    "tags": [
+      "news"
+    ],
+    "image": "screenshot1.jpg"
   },
   {
     "name": "MMM-NewsFeedTicker",
@@ -12038,7 +12055,7 @@
     "issues": [
       "There is no `package.json`. We need this file to gather information about the module for the module list page."
     ],
-    "stars": 19,
+    "stars": 20,
     "license": "MIT",
     "image": "screenshots-digit-reset.jpg"
   },
@@ -14215,7 +14232,7 @@
     "id": "matiasmtl/MMM-promiedos",
     "maintainer": "matiasmtl",
     "maintainerURL": "https://github.com/matiasmtl/",
-    "description": "Displays Argentinian main soccer league (LPF) rankings for both zones, A and B",
+    "description": "Displays Argentinian main soccer league (LPF) rankings for both zones, A and B.",
     "issues": [
       "There is no `package.json`. We need this file to gather information about the module for the module list page.",
       "No compatible or wrong license field in 'package.json' or LICENSE file. Without that, we can't use an image."
@@ -17257,7 +17274,7 @@
   },
   {
     "name": "MMM-swisstransport",
-    "category": "Transport / Travel",
+    "category": "Outdated Modules",
     "url": "https://github.com/Bangee44/MMM-swisstransport",
     "id": "Bangee44/MMM-swisstransport",
     "maintainer": "Bangee44",
@@ -17267,6 +17284,7 @@
       "There is no `package.json`. We need this file to gather information about the module for the module list page.",
       "No image found."
     ],
+    "outdated": "Abandoned. No reactions to issues since years. Seems not to work anymore.",
     "stars": 7,
     "license": "MIT"
   },
