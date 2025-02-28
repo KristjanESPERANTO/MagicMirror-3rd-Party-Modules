@@ -1,6 +1,6 @@
 # Result of the module analysis
 
-Last update: 2025-02-28T05:39:14+01:00
+Last update: 2025-02-28T17:37:08+01:00
 
 ## Statistics
 
@@ -8,8 +8,8 @@ Last update: 2025-02-28T05:39:14+01:00
 |:---------------------|:--------:|
 | modules analyzed     |   1226   |
 | maintainer           |    660   |
-| modules with issues  |   1222   |
-| issues               |   6571   |
+| modules with issues  |   1223   |
+| issues               |   6573   |
 | modules at github    |   1099   |
 | modules at gitlab    |     12   |
 | modules at bitbucket |      1   |
@@ -400,8 +400,9 @@ Last update: 2025-02-28T05:39:14+01:00
 
 ### [MMM-ApothekenNotdienst by KristjanESPERANTO](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst)
 
-1. Information: There are updates for 1 dependencie(s):
-   - @stylistic/eslint-plugin  ^4.0.1  →  ^4.1.0
+1. Information: There are updates for 2 dependencie(s):
+   - @stylistic/eslint-plugin    ^4.0.1  →    ^4.1.0
+   - stylelint                 ^16.14.1  →  ^16.15.0
 
 
 ### [MMM-AQI by ryck](https://github.com/ryck/MMM-AQI)
@@ -834,18 +835,7 @@ Last update: 2025-02-28T05:39:14+01:00
    - typescript                  ^5.7.2  →    ^5.7.3
    - typescript-eslint          ^8.18.2  →   ^8.25.0
 
-2. ESLint issues:
-   - node_helper.js: Line 13, Column 1034: 't' is defined but never used. (rule: no-unused-vars)
-   - node_helper.js: Line 13, Column 2943: This generator function does not have 'yield'. (rule: require-yield)
-   - package.json: Line 5, Column 3: Package top-level property "main" is not ordered in the npm standard way. Run the ESLint auto-fixer to correct. (rule: package-json/order-properties)
-   - package.json: Line 6, Column 3: Package top-level property "repository" is not ordered in the npm standard way. Run the ESLint auto-fixer to correct. (rule: package-json/order-properties)
-   - package.json: Line 10, Column 3: Package top-level property "keywords" is not ordered in the npm standard way. Run the ESLint auto-fixer to correct. (rule: package-json/order-properties)
-   - package.json: Line 15, Column 3: Package top-level property "author" is not ordered in the npm standard way. Run the ESLint auto-fixer to correct. (rule: package-json/order-properties)
-   - package.json: Line 17, Column 3: Package top-level property "bugs" is not ordered in the npm standard way. Run the ESLint auto-fixer to correct. (rule: package-json/order-properties)
-   - package.json: Line 20, Column 3: Package top-level property "homepage" is not ordered in the npm standard way. Run the ESLint auto-fixer to correct. (rule: package-json/order-properties)
-   - package.json: Line 21, Column 3: Package top-level property "dependencies" is not ordered in the npm standard way. Run the ESLint auto-fixer to correct. (rule: package-json/order-properties)
-   - package.json: Line 25, Column 3: Package top-level property "scripts" is not ordered in the npm standard way. Run the ESLint auto-fixer to correct. (rule: package-json/order-properties)
-
+2. npm notice Changelog: <https://github.com/npm/cli/releases/tag/v11.1.0>
 
 ### [MMM-Bose-Soundtouch by spoturdeal](https://github.com/spoturdeal/MMM-Bose-Soundtouch)
 
@@ -1014,12 +1004,13 @@ Last update: 2025-02-28T05:39:14+01:00
 
 ### [MMM-CalendarExt2 by MMM-CalendarExt2](https://github.com/MMM-CalendarExt2/MMM-CalendarExt2)
 
-1. Information: There are updates for 5 dependencie(s):
-   - @eslint/js                 ^9.19.0  →  ^9.21.0
-   - @stylistic/eslint-plugin    ^3.0.1  →   ^4.1.0
-   - eslint                     ^9.19.0  →  ^9.21.0
-   - globals                   ^15.14.0  →  ^16.0.0
-   - prettier                    ^3.4.2  →   ^3.5.2
+1. Information: There are updates for 6 dependencie(s):
+   - @eslint/js                 ^9.19.0  →   ^9.21.0
+   - @stylistic/eslint-plugin    ^3.0.1  →    ^4.1.0
+   - eslint                     ^9.19.0  →   ^9.21.0
+   - globals                   ^15.14.0  →   ^16.0.0
+   - prettier                    ^3.4.2  →    ^3.5.2
+   - stylelint                 ^16.14.1  →  ^16.15.0
 
 2. ESLint issues:
    - package.json: Line 5, Column 3: Package top-level property "main" is not ordered in the npm standard way. Run the ESLint auto-fixer to correct. (rule: package-json/order-properties)
@@ -1163,8 +1154,9 @@ Last update: 2025-02-28T05:39:14+01:00
 
 ### [MMM-Canteen by KristjanESPERANTO](https://github.com/KristjanESPERANTO/MMM-Canteen)
 
-1. Information: There are updates for 1 dependencie(s):
-   - @stylistic/eslint-plugin  ^4.0.1  →  ^4.1.0
+1. Information: There are updates for 2 dependencie(s):
+   - @stylistic/eslint-plugin    ^4.0.1  →    ^4.1.0
+   - stylelint                 ^16.14.1  →  ^16.15.0
 
 
 ### [MMM-Canvas by chase-cromwell](https://github.com/chase-cromwell/MMM-Canvas)
@@ -1190,13 +1182,14 @@ Last update: 2025-02-28T05:39:14+01:00
 
 ### [MMM-Carousel by shbatm](https://github.com/shbatm/MMM-Carousel)
 
-1. Information: There are updates for 6 dependencie(s):
-   - @eslint/js                 ^9.19.0  →  ^9.21.0
-   - @stylistic/eslint-plugin    ^3.0.1  →   ^4.1.0
-   - cspell                     ^8.17.3  →  ^8.17.5
-   - eslint                     ^9.19.0  →  ^9.21.0
-   - globals                   ^15.14.0  →  ^16.0.0
-   - prettier                    ^3.4.2  →   ^3.5.2
+1. Information: There are updates for 7 dependencie(s):
+   - @eslint/js                 ^9.19.0  →   ^9.21.0
+   - @stylistic/eslint-plugin    ^3.0.1  →    ^4.1.0
+   - cspell                     ^8.17.3  →   ^8.17.5
+   - eslint                     ^9.19.0  →   ^9.21.0
+   - globals                   ^15.14.0  →   ^16.0.0
+   - prettier                    ^3.4.2  →    ^3.5.2
+   - stylelint                 ^16.14.1  →  ^16.15.0
 
 2. ESLint issues:
    - package.json: Line 5, Column 3: Package top-level property "main" is not ordered in the npm standard way. Run the ESLint auto-fixer to correct. (rule: package-json/order-properties)
@@ -2146,8 +2139,9 @@ Last update: 2025-02-28T05:39:14+01:00
 
 ### [MMM-EasyPix by KristjanESPERANTO](https://github.com/KristjanESPERANTO/MMM-EasyPix)
 
-1. Information: There are updates for 1 dependencie(s):
-   - @stylistic/eslint-plugin  ^4.0.1  →  ^4.1.0
+1. Information: There are updates for 2 dependencie(s):
+   - @stylistic/eslint-plugin    ^4.0.1  →    ^4.1.0
+   - stylelint                 ^16.14.1  →  ^16.15.0
 
 
 ### [MMM-Ecobee by parnic](https://github.com/parnic/MMM-Ecobee)
@@ -2802,8 +2796,9 @@ deprecated: no longer maintained, switch to modern iconify-icon web component
 
 ### [MMM-Forum by KristjanESPERANTO](https://github.com/KristjanESPERANTO/MMM-Forum)
 
-1. Information: There are updates for 1 dependencie(s):
-   - @stylistic/eslint-plugin  ^4.0.1  →  ^4.1.0
+1. Information: There are updates for 2 dependencie(s):
+   - @stylistic/eslint-plugin    ^4.0.1  →    ^4.1.0
+   - stylelint                 ^16.14.1  →  ^16.15.0
 
 
 ### [MMM-FrameLight by RaspiManu](https://github.com/RaspiManu/MMM-FrameLight)
@@ -2901,6 +2896,9 @@ deprecated: no longer maintained, switch to modern iconify-icon web component
 1. Recommendation: Found `"needle"` in file `node_helper.js`: Replace it with built-in fetch.
 2. Recommendation: Found `"needle"` in file `package.json`: Replace it with built-in fetch.
 3. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
+4. Information: There are updates for 1 dependencie(s):
+   - @xmldom/xmldom  ^0.9.7  →  ^0.9.8
+
 
 ### [MMM-FTP-image by jboucly](https://github.com/jboucly/MMM-FTP-image)
 
@@ -3328,9 +3326,8 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
 ### [MMM-Growatt by mumblebaj](https://github.com/mumblebaj/MMM-Growatt)
 
 1. Please use 'smart home' instead of 'smarthome' as a keyword in your package.json.
-2. Issue: The license in the package.json (ISC) doesn't match the license file (MIT).
-3. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
-4. Information: There are updates for 1 dependencie(s):
+2. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
+3. Information: There are updates for 1 dependencie(s):
    - growatt  ^0.7.4  →  ^0.7.7
 
 
@@ -3733,11 +3730,12 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
 
 ### [MMM-HueControl by DreamyChloe](https://github.com/DreamyChloe/MMM-HueControl)
 
-1. Information: There are updates for 4 dependencie(s):
+1. Information: There are updates for 5 dependencie(s):
    - @eslint/js                 ^9.20.0  →  ^9.21.0
    - @stylistic/eslint-plugin    ^3.1.0  →   ^4.1.0
    - eslint                     ^9.20.0  →  ^9.21.0
    - globals                   ^15.14.0  →  ^16.0.0
+   - undici                      ^7.3.0  →   ^7.4.0
 
 2. ESLint issues:
    - package.json: Line 5, Column 5: Package top-level property "main" is not ordered in the npm standard way. Run the ESLint auto-fixer to correct. (rule: package-json/order-properties)
@@ -4033,7 +4031,7 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
    - eslint                      ^9.17.0  →   ^9.21.0
    - markdownlint-cli2           ^0.17.1  →   ^0.17.2
    - prettier                     ^3.4.2  →    ^3.5.2
-   - stylelint                  ^16.12.0  →  ^16.14.1
+   - stylelint                  ^16.12.0  →  ^16.15.0
    - stylelint-config-standard   ^36.0.1  →   ^37.0.0
    - stylelint-prettier           ^5.0.2  →    ^5.0.3
 
@@ -4528,7 +4526,10 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
 
 ### [MMM-Linky by 2hdlockness](https://github.com/2hdlockness/MMM-Linky)
 
-1. ESLint issues:
+1. Information: There are updates for 1 dependencie(s):
+   - stylelint  ^16.14.1  →  ^16.15.0
+
+2. ESLint issues:
    - package.json: Line 2, Column 11: Invalid npm package name: name can no longer contain capital letters. (rule: package-json/valid-name)
 
 
@@ -4913,22 +4914,23 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
 
 ### [MMM-MealieMenu by zanix](https://github.com/zanix/MMM-MealieMenu)
 
-1. Information: There are updates for 15 dependencie(s):
-   - @commitlint/cli                   ^19.3.0  →  ^19.7.1
-   - @commitlint/config-conventional   ^19.5.0  →  ^19.7.1
-   - @eslint/js                        ^9.20.0  →  ^9.21.0
-   - @eslint/json                       ^0.9.0  →  ^0.10.0
-   - @eslint/markdown                   ^6.2.1  →   ^6.2.2
-   - @stylistic/eslint-plugin          ^2.12.1  →   ^4.1.0
-   - eslint                            ^9.20.0  →  ^9.21.0
-   - eslint-plugin-package-json        ^0.19.0  →  ^0.26.0
-   - globals                          ^15.14.0  →  ^16.0.0
-   - lint-staged                       ^15.3.0  →  ^15.4.3
-   - markdownlint-cli                  ^0.43.0  →  ^0.44.0
-   - prettier                           ^3.4.2  →   ^3.5.2
-   - semantic-release                  ^24.1.0  →  ^24.2.3
-   - stylelint-config-standard         ^36.0.1  →  ^37.0.0
-   - stylelint-prettier                 ^5.0.2  →   ^5.0.3
+1. Information: There are updates for 16 dependencie(s):
+   - @commitlint/cli                   ^19.3.0  →   ^19.7.1
+   - @commitlint/config-conventional   ^19.5.0  →   ^19.7.1
+   - @eslint/js                        ^9.20.0  →   ^9.21.0
+   - @eslint/json                       ^0.9.0  →   ^0.10.0
+   - @eslint/markdown                   ^6.2.1  →    ^6.2.2
+   - @stylistic/eslint-plugin          ^2.12.1  →    ^4.1.0
+   - eslint                            ^9.20.0  →   ^9.21.0
+   - eslint-plugin-package-json        ^0.19.0  →   ^0.26.0
+   - globals                          ^15.14.0  →   ^16.0.0
+   - lint-staged                       ^15.3.0  →   ^15.4.3
+   - markdownlint-cli                  ^0.43.0  →   ^0.44.0
+   - prettier                           ^3.4.2  →    ^3.5.2
+   - semantic-release                  ^24.1.0  →   ^24.2.3
+   - stylelint                        ^16.14.1  →  ^16.15.0
+   - stylelint-config-standard         ^36.0.1  →   ^37.0.0
+   - stylelint-prettier                 ^5.0.2  →    ^5.0.3
 
 2. ESLint issues:
    - package.json: Line 48, Column 5: "eslint-plugin-import" should be replaced with an alternative package. Read more here: https://github.com/es-tooling/module-replacements/blob/main/docs/modules/eslint-plugin-import.md (rule: depend/ban-dependencies)
@@ -6100,9 +6102,10 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
 ### [MMM-Netatmo by CFenner](https://github.com/CFenner/MMM-Netatmo)
 
 1. Recommendation: No lint script found in package.json. It is recommended to add one.
-2. Information: There are updates for 2 dependencie(s):
-   - less          4.2.0  →   4.2.2
-   - neostandard  0.11.5  →  0.12.1
+2. Information: There are updates for 3 dependencie(s):
+   - less           4.2.0  →    4.2.2
+   - neostandard   0.11.5  →   0.12.1
+   - stylelint    16.14.1  →  16.15.0
 
 
 ### [MMM-Netatmo-Presence by AgP42](https://github.com/AgP42/MMM-Netatmo-Presence)
@@ -6286,7 +6289,7 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
    - globals                    ^15.10.0  →   ^16.0.0
    - jsdoc                        ^4.0.3  →    ^4.0.4
    - prettier                     ^3.3.3  →    ^3.5.2
-   - stylelint                   ^16.9.0  →  ^16.14.1
+   - stylelint                   ^16.9.0  →  ^16.15.0
    - stylelint-config-standard   ^36.0.1  →   ^37.0.0
    - stylelint-prettier           ^5.0.2  →    ^5.0.3
 
@@ -7533,19 +7536,26 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
 
 ### [MMM-PublicTransportBerlin by deg0nz](https://github.com/deg0nz/MMM-PublicTransportBerlin)
 
-1. Information: There are updates for 9 dependencie(s):
-   - @eslint/js                 ^9.17.0  →  ^9.21.0
-   - @stylistic/eslint-plugin    ^3.0.1  →   ^4.1.0
-   - eslint                     ^9.19.0  →  ^9.21.0
-   - eslint-plugin-jsonc        ^2.18.2  →  ^2.19.1
-   - globals                   ^15.14.0  →  ^16.0.0
-   - hafas-client                ^6.3.3  →   ^6.3.4
-   - markdownlint-cli           ^0.43.0  →  ^0.44.0
-   - prettier                    ^3.4.2  →   ^3.5.2
-   - stylelint-prettier          ^5.0.2  →   ^5.0.3
+1. Information: There are updates for 10 dependencie(s):
+   - @eslint/js                 ^9.17.0  →   ^9.21.0
+   - @stylistic/eslint-plugin    ^3.0.1  →    ^4.1.0
+   - eslint                     ^9.19.0  →   ^9.21.0
+   - eslint-plugin-jsonc        ^2.18.2  →   ^2.19.1
+   - globals                   ^15.14.0  →   ^16.0.0
+   - hafas-client                ^6.3.3  →    ^6.3.4
+   - markdownlint-cli           ^0.43.0  →   ^0.44.0
+   - prettier                    ^3.4.2  →    ^3.5.2
+   - stylelint                 ^16.14.1  →  ^16.15.0
+   - stylelint-prettier          ^5.0.2  →    ^5.0.3
 
 2. ESLint issues:
    - package.json: Line 38, Column 5: "moment" should be replaced with an alternative package. Read more here: https://github.com/es-tooling/module-replacements/blob/main/docs/modules/momentjs.md (rule: depend/ban-dependencies)
+
+
+### [MMM-PublicTransportHafas by KristjanESPERANTO](https://github.com/KristjanESPERANTO/MMM-PublicTransportHafas)
+
+1. Information: There are updates for 1 dependencie(s):
+   - stylelint  ^16.14.1  →  ^16.15.0
 
 
 ### [MMM-PublicTransportVVO by ChristianGeie](https://github.com/ChristianGeie/MMM-PublicTransportVVO)

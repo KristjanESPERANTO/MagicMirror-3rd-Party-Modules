@@ -6471,8 +6471,7 @@
     "maintainerURL": "https://github.com/mumblebaj",
     "description": "Display data from Growatt Inveter. Support multiple Growatt Inverter types.",
     "issues": [
-      "Please use 'smart home' instead of 'smarthome' as a keyword in your package.json.",
-      "Issue: The license in the package.json (ISC) doesn't match the license file (MIT)."
+      "Please use 'smart home' instead of 'smarthome' as a keyword in your package.json."
     ],
     "stars": 3,
     "license": "MIT",
@@ -12884,7 +12883,7 @@
     "maintainerURL": "",
     "description": "Displays current, hourly and daily forecast information using data from the OpenWeather One Call API.",
     "issues": [],
-    "stars": 10,
+    "stars": 12,
     "tags": [
       "openweathermap",
       "weather",
@@ -12956,7 +12955,7 @@
       "`package.json` issue: No repository field.",
       "There are no keywords in 'package.json'. We would use them as tags on the module list page."
     ],
-    "stars": 5,
+    "stars": 6,
     "license": "MIT",
     "image": "MMM-Oura-screenshot.jpg"
   },
