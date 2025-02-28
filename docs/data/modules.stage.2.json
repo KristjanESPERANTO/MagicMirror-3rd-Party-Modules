@@ -9153,7 +9153,7 @@
     "maintainerURL": "https://github.com/NicholasRasi",
     "description": "Displays images from online URLs, useful for showing images from webcams.",
     "issues": [],
-    "stars": 4,
+    "stars": 5,
     "license": "MIT"
   },
   {
@@ -9165,7 +9165,7 @@
     "maintainerURL": "",
     "description": "Simple On-Screen Menu for controlling the MagicMirror².",
     "issues": [],
-    "stars": 65,
+    "stars": 66,
     "license": "MIT"
   },
   {
@@ -9260,7 +9260,7 @@
     "maintainerURL": "",
     "description": "Display current weather as image based on the Openmap Weather API data with different formatting.",
     "issues": [],
-    "stars": 33,
+    "stars": 34,
     "license": "MIT"
   },
   {

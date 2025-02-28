@@ -1181,7 +1181,7 @@
       "sports",
       "biathlon"
     ],
-    "image": "resources-img-bronze.jpg"
+    "image": "resources-img-_Screenshot.jpg"
   },
   {
     "name": "MMM-BiathlonResults",
@@ -12675,7 +12675,7 @@
     "maintainerURL": "https://github.com/NicholasRasi",
     "description": "Displays images from online URLs, useful for showing images from webcams.",
     "issues": [],
-    "stars": 4,
+    "stars": 5,
     "license": "MIT",
     "tags": [
       "images",
@@ -12692,7 +12692,7 @@
     "maintainerURL": "",
     "description": "Simple On-Screen Menu for controlling the MagicMirror².",
     "issues": [],
-    "stars": 65,
+    "stars": 66,
     "license": "MIT",
     "tags": [
       "menu",
@@ -12830,7 +12830,7 @@
     "issues": [
       "There is no `package.json`. We need this file to gather information about the module for the module list page."
     ],
-    "stars": 33,
+    "stars": 34,
     "license": "MIT",
     "image": "MMM-OpenmapWeather-display.jpg"
   },

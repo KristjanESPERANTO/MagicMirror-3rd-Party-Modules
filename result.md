@@ -1,6 +1,6 @@
 # Result of the module analysis
 
-Last update: 2025-02-27T17:39:42+01:00
+Last update: 2025-02-28T05:39:14+01:00
 
 ## Statistics
 
@@ -8,8 +8,8 @@ Last update: 2025-02-27T17:39:42+01:00
 |:---------------------|:--------:|
 | modules analyzed     |   1226   |
 | maintainer           |    660   |
-| modules with issues  |   1224   |
-| issues               |   6575   |
+| modules with issues  |   1222   |
+| issues               |   6571   |
 | modules at github    |   1099   |
 | modules at gitlab    |     12   |
 | modules at bitbucket |      1   |
@@ -988,12 +988,13 @@ Last update: 2025-02-27T17:39:42+01:00
 
 ### [MMM-CalDAV by MMRIZE](https://github.com/MMRIZE/MMM-CalDAV)
 
-1. Information: There are updates for 5 dependencie(s):
-   - @eslint/js   ^9.16.0  →  ^9.21.0
-   - dotenv       ^16.4.5  →  ^16.4.7
-   - eslint       ^9.16.0  →  ^9.21.0
-   - globals     ^15.12.0  →  ^16.0.0
-   - tsdav         ^2.1.2  →   ^2.1.3
+1. Information: There are updates for 6 dependencie(s):
+   - @eslint/js   ^9.16.0  →   ^9.21.0
+   - dotenv       ^16.4.5  →   ^16.4.7
+   - eslint       ^9.16.0  →   ^9.21.0
+   - globals     ^15.12.0  →   ^16.0.0
+   - googleapis  ^144.0.0  →  ^146.0.0
+   - tsdav         ^2.1.2  →    ^2.1.3
 
 2. ESLint issues:
    - node_helper.js: Line 3, Column 20: 'DAVNamespace' is assigned a value but never used. (rule: no-unused-vars)
@@ -3143,7 +3144,7 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
 2. Recommendation: Replace eslintrc by new flat config.
 3. Information: There are updates for 2 dependencie(s):
    - @google-cloud/local-auth    ^2.1.0  →    ^3.0.1
-   - googleapis                ^105.0.0  →  ^144.0.0
+   - googleapis                ^105.0.0  →  ^146.0.0
 
 
 ### [MMM-GoogleCast by ferferga](https://github.com/ferferga/MMM-GoogleCast)
@@ -3176,7 +3177,7 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
 2. Recommendation: Found `require("https")` in file `node_helper.js`: Replace "https" by "node:https".
 3. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
 4. Information: There are updates for 1 dependencie(s):
-   - googleapis  ^47.0.0  →  ^144.0.0
+   - googleapis  ^47.0.0  →  ^146.0.0
 
 
 ### [MMM-GoogleFit by fry0815](https://github.com/fry0815/MMM-GoogleFit)
@@ -4133,20 +4134,6 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
 5. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
 6. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
 
-### [MMM-ISS-Live by KristjanESPERANTO](https://github.com/KristjanESPERANTO/MMM-ISS-Live)
-
-1. Information: There are updates for 6 dependencie(s):
-   - @eslint/js                 ^9.20.0  →  ^9.21.0
-   - @stylistic/eslint-plugin    ^4.0.1  →   ^4.1.0
-   - cspell                     ^8.17.4  →  ^8.17.5
-   - eslint                     ^9.20.1  →  ^9.21.0
-   - globals                   ^15.15.0  →  ^16.0.0
-   - prettier                    ^3.5.1  →   ^3.5.2
-
-2. ESLint issues:
-   - package.json: Line 44, Column 5: "eslint-plugin-import" should be replaced with an alternative package. Read more here: https://github.com/es-tooling/module-replacements/blob/main/docs/modules/eslint-plugin-import.md (rule: depend/ban-dependencies)
-
-
 ### [MMM-ISS-Map by khassel](https://gitlab.com/khassel/MMM-ISS-Map)
 
 1. Recommendation: Found `https://cdn.jsdelivr.net` in file `MMM-ISS-Map.js`: It looks like a package is loaded via CDN. It would be better if the package were installed locally via npm.
@@ -4541,13 +4528,7 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
 
 ### [MMM-Linky by 2hdlockness](https://github.com/2hdlockness/MMM-Linky)
 
-1. Information: There are updates for 4 dependencie(s):
-   - @stylistic/eslint-plugin     ^3.1.0  →   ^4.1.0
-   - chart.js                     ^4.4.7  →   ^4.4.8
-   - eslint                      ^9.20.0  →  ^9.21.0
-   - eslint-plugin-package-json  ^0.25.0  →  ^0.26.0
-
-2. ESLint issues:
+1. ESLint issues:
    - package.json: Line 2, Column 11: Invalid npm package name: name can no longer contain capital letters. (rule: package-json/valid-name)
 
 
@@ -7125,8 +7106,9 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
 
 ### [MMM-pihole-stats by sheyabernstein](https://github.com/sheyabernstein/MMM-pihole-stats)
 
-1. Outdated: Found `husky install` in file `package.json`: Since husky v9 you may not need this anymore.
-2. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
+1. Recommendation: Found `require("https")` in file `node_helper.js`: Replace "https" by "node:https".
+2. Outdated: Found `husky install` in file `package.json`: Since husky v9 you may not need this anymore.
+3. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
 
 ### [MMM-PimaticFloorplan by marcelwinh](https://github.com/marcelwinh/MMM-PimaticFloorplan)
 
@@ -8234,13 +8216,13 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
 1. Typo: Found `Magic Mirror` in file `readme.md`: Replace it with `MagicMirror²`.
 2. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
 3. Information: There are updates for 11 dependencie(s):
-   - @aws-sdk/client-cloudformation    ^3.0.0  →   ^3.750.0
-   - @aws-sdk/client-iam               ^3.0.0  →   ^3.750.0
-   - @aws-sdk/client-lambda            ^3.0.0  →   ^3.750.0
-   - @aws-sdk/client-s3                ^3.0.0  →   ^3.750.0
-   - @aws-sdk/client-sts             ^3.738.0  →   ^3.750.0
+   - @aws-sdk/client-cloudformation    ^3.0.0  →   ^3.758.0
+   - @aws-sdk/client-iam               ^3.0.0  →   ^3.758.0
+   - @aws-sdk/client-lambda            ^3.0.0  →   ^3.758.0
+   - @aws-sdk/client-s3                ^3.0.0  →   ^3.758.0
+   - @aws-sdk/client-sts             ^3.738.0  →   ^3.758.0
    - aws-cdk                           ^2.0.0  →  ^2.1001.0
-   - aws-cdk-lib                       ^2.0.0  →   ^2.181.0
+   - aws-cdk-lib                       ^2.0.0  →   ^2.181.1
    - constructs                       ^10.0.0  →    ^10.4.2
    - dotenv                           ^16.0.0  →    ^16.4.7
    - inquirer                          ^8.2.4  →    ^12.4.2
@@ -10372,20 +10354,6 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
 4. Recommendation: The README seems not to have an update instruction (the word 'update' is missing). Please add one.
 5. Typo: Found `Magic Mirror` in file `package.json`: Replace it with `MagicMirror²`.
 6. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
-
-### [MMM-WebSpeechTTS by KristjanESPERANTO](https://github.com/KristjanESPERANTO/MMM-WebSpeechTTS)
-
-1. Information: There are updates for 6 dependencie(s):
-   - @eslint/js                 ^9.20.0  →  ^9.21.0
-   - @stylistic/eslint-plugin    ^3.1.0  →   ^4.1.0
-   - cspell                     ^8.17.3  →  ^8.17.5
-   - eslint                     ^9.20.0  →  ^9.21.0
-   - globals                   ^15.14.0  →  ^16.0.0
-   - prettier                    ^3.4.2  →   ^3.5.2
-
-2. ESLint issues:
-   - package.json: Line 34, Column 5: "eslint-plugin-import" should be replaced with an alternative package. Read more here: https://github.com/es-tooling/module-replacements/blob/main/docs/modules/eslint-plugin-import.md (rule: depend/ban-dependencies)
-
 
 ### [MMM-Webuntis by HeikoGr](https://github.com/HeikoGr/MMM-Webuntis)
 

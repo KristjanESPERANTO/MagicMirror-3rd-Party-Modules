@@ -1213,9 +1213,9 @@
       "sports",
       "biathlon"
     ],
-    "image": "resources-img-bronze.jpg",
+    "image": "resources-img-_Screenshot.jpg",
     "defaultSortWeight": 1,
-    "lastCommit": "2025-02-27T10:30:09+01:00"
+    "lastCommit": "2025-02-27T18:51:08+01:00"
   },
   {
     "name": "MMM-BiathlonResults",
@@ -2748,7 +2748,7 @@
     "license": "MIT",
     "image": "MMM-Cookidoo.jpg",
     "defaultSortWeight": 5,
-    "lastCommit": "2025-02-20T20:01:35+01:00"
+    "lastCommit": "2025-02-27T20:19:49+01:00"
   },
   {
     "name": "cookiecutter-magic-mirror-module",
@@ -6395,7 +6395,7 @@
     "license": "MIT",
     "image": "screen-01-minimal_look.jpg",
     "defaultSortWeight": 3,
-    "lastCommit": "2025-02-12T00:22:17+01:00"
+    "lastCommit": "2025-02-27T21:31:16+01:00"
   },
   {
     "name": "MMM-GoogleTTS",
@@ -7986,7 +7986,7 @@
     "maintainer": "KristjanESPERANTO",
     "maintainerURL": "",
     "description": "Displays live video from the International Space Station.",
-    "issues": true,
+    "issues": false,
     "stars": 7,
     "license": "MIT",
     "tags": [
@@ -7994,8 +7994,8 @@
       "livestream"
     ],
     "image": "images-screenshot1.jpg",
-    "defaultSortWeight": 1,
-    "lastCommit": "2025-02-19T23:26:52+01:00"
+    "defaultSortWeight": -1,
+    "lastCommit": "2025-02-27T19:09:07+01:00"
   },
   {
     "name": "MMM-ISS-Map",
@@ -8737,8 +8737,8 @@
       "smart home"
     ],
     "image": "MMM-Linky.jpg",
-    "defaultSortWeight": 1,
-    "lastCommit": "2025-02-12T22:41:55+01:00"
+    "defaultSortWeight": 0,
+    "lastCommit": "2025-02-27T18:32:04+01:00"
   },
   {
     "name": "MMM-Liquipedia-Matches",
@@ -12822,7 +12822,7 @@
     "maintainerURL": "https://github.com/NicholasRasi",
     "description": "Displays images from online URLs, useful for showing images from webcams.",
     "issues": true,
-    "stars": 4,
+    "stars": 5,
     "license": "MIT",
     "tags": [
       "images",
@@ -12841,7 +12841,7 @@
     "maintainerURL": "",
     "description": "Simple On-Screen Menu for controlling the MagicMirror\u00b2.",
     "issues": true,
-    "stars": 65,
+    "stars": 66,
     "license": "MIT",
     "tags": [
       "menu",
@@ -12980,7 +12980,7 @@
     "maintainerURL": "",
     "description": "Display current weather as image based on the Openmap Weather API data with different formatting.",
     "issues": true,
-    "stars": 33,
+    "stars": 34,
     "license": "MIT",
     "image": "MMM-OpenmapWeather-display.jpg",
     "defaultSortWeight": 5,
@@ -13408,7 +13408,7 @@
     "license": "MIT",
     "image": "MMM-PDFSlideshow.jpg",
     "defaultSortWeight": 4,
-    "lastCommit": "2025-02-26T09:04:32+01:00"
+    "lastCommit": "2025-02-27T20:25:20+01:00"
   },
   {
     "name": "MMM-pekavm",
@@ -13628,8 +13628,8 @@
       "pi-hole"
     ],
     "image": "docs-preview-showSources.jpg",
-    "defaultSortWeight": 1,
-    "lastCommit": "2024-03-11T20:10:24+00:00"
+    "defaultSortWeight": 2,
+    "lastCommit": "2025-02-27T22:26:36+00:00"
   },
   {
     "name": "MMM-PilotWX",
@@ -19738,7 +19738,7 @@
     "maintainer": "KristjanESPERANTO",
     "maintainerURL": "",
     "description": "A Text-To-Speech module which uses the Web Speech API of the browser. It is in an early stage of development. So far only German is supported.",
-    "issues": true,
+    "issues": false,
     "stars": 4,
     "license": "MIT",
     "tags": [
@@ -19747,8 +19747,8 @@
       "webspeech"
     ],
     "image": ".github-TTS.jpg",
-    "defaultSortWeight": 1,
-    "lastCommit": "2025-02-08T19:03:00+01:00"
+    "defaultSortWeight": -1,
+    "lastCommit": "2025-02-27T18:48:37+01:00"
   },
   {
     "name": "MMM-Webuntis",
