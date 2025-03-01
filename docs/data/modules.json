@@ -713,7 +713,7 @@
     ],
     "image": "screenshot.jpg",
     "defaultSortWeight": 1,
-    "lastCommit": "2025-02-02T15:42:59+01:00"
+    "lastCommit": "2025-02-24T17:27:16+01:00"
   },
   {
     "name": "MMM-AQI",
@@ -1197,6 +1197,25 @@
     "image": "wordclock.jpg",
     "defaultSortWeight": 6,
     "lastCommit": "2017-10-21T14:59:29+02:00"
+  },
+  {
+    "name": "MMM-Biathlon",
+    "category": "Sports",
+    "url": "https://github.com/2hdlockness/MMM-Biathlon",
+    "id": "2hdlockness/MMM-Biathlon",
+    "maintainer": "2hdlockness",
+    "maintainerURL": "https://github.com/2hdlockness/",
+    "description": "Displays biathlon race results and upcoming events. It relies on the official biathlon API to provide up-to-date information.",
+    "issues": true,
+    "stars": 0,
+    "license": "MIT",
+    "tags": [
+      "sports",
+      "biathlon"
+    ],
+    "image": "resources-img-_Screenshot.jpg",
+    "defaultSortWeight": 1,
+    "lastCommit": "2025-02-27T18:51:08+01:00"
   },
   {
     "name": "MMM-BiathlonResults",
@@ -2179,8 +2198,8 @@
       "openmensa"
     ],
     "image": "img-example1.jpg",
-    "defaultSortWeight": 1,
-    "lastCommit": "2025-01-22T23:26:39+01:00"
+    "defaultSortWeight": 0,
+    "lastCommit": "2025-02-24T08:28:19+01:00"
   },
   {
     "name": "MMM-Canvas",
@@ -2637,8 +2656,8 @@
     "description": "Displays ComEd 5 Minute and Hourly Average, the other repo (MMM-ComEdPrice) has not been updated in a while.",
     "issues": true,
     "stars": 0,
-    "defaultSortWeight": 4,
-    "lastCommit": "2024-07-05T14:54:38-05:00"
+    "defaultSortWeight": 3,
+    "lastCommit": "2025-02-26T10:45:25-06:00"
   },
   {
     "name": "MMM-CommandToNotification",
@@ -2678,7 +2697,7 @@
     "license": "ISC",
     "image": "doc_images-playground_example.jpg",
     "defaultSortWeight": 3,
-    "lastCommit": "2025-02-20T08:01:34-07:00"
+    "lastCommit": "2025-02-25T14:19:00-07:00"
   },
   {
     "name": "MMM-Confucius-say",
@@ -2729,7 +2748,7 @@
     "license": "MIT",
     "image": "MMM-Cookidoo.jpg",
     "defaultSortWeight": 5,
-    "lastCommit": "2025-02-20T20:01:35+01:00"
+    "lastCommit": "2025-02-27T20:19:49+01:00"
   },
   {
     "name": "cookiecutter-magic-mirror-module",
@@ -3259,11 +3278,12 @@
     "license": "MIT",
     "tags": [
       "jokes",
-      "dad jokes"
+      "dad jokes",
+      "entertainement"
     ],
     "image": "screenshot.jpg",
     "defaultSortWeight": 2,
-    "lastCommit": "2024-03-08T20:42:01+01:00"
+    "lastCommit": "2025-02-25T20:25:31+01:00"
   },
   {
     "name": "MMM-DagelijksWoord",
@@ -4179,8 +4199,8 @@
       "pictures"
     ],
     "image": "pix-earth.jpg",
-    "defaultSortWeight": 1,
-    "lastCommit": "2025-02-08T18:56:56+01:00"
+    "defaultSortWeight": 0,
+    "lastCommit": "2025-02-24T23:19:21+01:00"
   },
   {
     "name": "MMM-Ecobee",
@@ -4476,14 +4496,9 @@
     "issues": true,
     "stars": 4,
     "license": "MIT",
-    "tags": [
-      "canada",
-      "weather",
-      "forecast"
-    ],
     "image": "screenshot.jpg",
-    "defaultSortWeight": 1,
-    "lastCommit": "2023-11-16T17:58:23-05:00"
+    "defaultSortWeight": 2,
+    "lastCommit": "2025-02-24T10:26:26-05:00"
   },
   {
     "name": "MMM-EOL",
@@ -5495,8 +5510,8 @@
       "nodebb"
     ],
     "image": "screenshot.jpg",
-    "defaultSortWeight": 1,
-    "lastCommit": "2025-01-22T23:04:34+01:00"
+    "defaultSortWeight": 0,
+    "lastCommit": "2025-02-23T21:01:25+01:00"
   },
   {
     "name": "MMM-FrameLight",
@@ -5705,7 +5720,7 @@
       "music"
     ],
     "image": "example_dab.jpg",
-    "defaultSortWeight": 2,
+    "defaultSortWeight": 3,
     "lastCommit": "2025-01-28T09:49:52+01:00"
   },
   {
@@ -6380,7 +6395,7 @@
     "license": "MIT",
     "image": "screen-01-minimal_look.jpg",
     "defaultSortWeight": 3,
-    "lastCommit": "2025-02-12T00:22:17+01:00"
+    "lastCommit": "2025-02-27T21:31:16+01:00"
   },
   {
     "name": "MMM-GoogleTTS",
@@ -6548,8 +6563,8 @@
       "smart home"
     ],
     "image": "images-screenshot.jpg",
-    "defaultSortWeight": 3,
-    "lastCommit": "2025-01-23T18:33:07+02:00"
+    "defaultSortWeight": 2,
+    "lastCommit": "2025-02-28T21:11:06+02:00"
   },
   {
     "name": "MMM-Growatt",
@@ -6582,7 +6597,7 @@
     ],
     "image": "images-screenshot.jpg",
     "defaultSortWeight": 2,
-    "lastCommit": "2024-07-05T15:50:06+02:00"
+    "lastCommit": "2025-02-28T22:55:40+02:00"
   },
   {
     "name": "MMM-GyeonggiBus",
@@ -7971,7 +7986,7 @@
     "maintainer": "KristjanESPERANTO",
     "maintainerURL": "",
     "description": "Displays live video from the International Space Station.",
-    "issues": true,
+    "issues": false,
     "stars": 7,
     "license": "MIT",
     "tags": [
@@ -7979,8 +7994,8 @@
       "livestream"
     ],
     "image": "images-screenshot1.jpg",
-    "defaultSortWeight": 1,
-    "lastCommit": "2025-02-19T23:26:52+01:00"
+    "defaultSortWeight": -1,
+    "lastCommit": "2025-02-27T19:09:07+01:00"
   },
   {
     "name": "MMM-ISS-Map",
@@ -8362,7 +8377,7 @@
       "keyboard"
     ],
     "image": "img-fire_stick_remote.jpg",
-    "defaultSortWeight": 0,
+    "defaultSortWeight": 1,
     "lastCommit": "2025-02-22T18:46:57+01:00"
   },
   {
@@ -8723,7 +8738,7 @@
     ],
     "image": "MMM-Linky.jpg",
     "defaultSortWeight": 1,
-    "lastCommit": "2025-02-12T22:41:55+01:00"
+    "lastCommit": "2025-03-01T23:26:06+01:00"
   },
   {
     "name": "MMM-Liquipedia-Matches",
@@ -10138,7 +10153,7 @@
     "stars": 32,
     "license": "MIT",
     "image": "images-floorplan-default.jpg",
-    "defaultSortWeight": 7,
+    "defaultSortWeight": 8,
     "lastCommit": "2023-03-01T14:42:08+01:00"
   },
   {
@@ -10731,7 +10746,7 @@
     ],
     "image": "screenshot.jpg",
     "defaultSortWeight": 1,
-    "lastCommit": "2025-01-18T17:30:26+01:00"
+    "lastCommit": "2025-03-01T13:19:32+01:00"
   },
   {
     "name": "MMM-MplayerRadio",
@@ -11758,7 +11773,7 @@
     ],
     "image": ".github-preview.bubbles.jpg",
     "defaultSortWeight": 0,
-    "lastCommit": "2025-02-22T02:34:36+00:00"
+    "lastCommit": "2025-02-28T19:14:43+00:00"
   },
   {
     "name": "MMM-Netatmo-Presence",
@@ -11837,13 +11852,13 @@
   {
     "name": "MMM-NetworkScanner",
     "category": "Utility / IoT / 3rd Party / Integration",
-    "url": "https://github.com/spitzlbergerj/MMM-NetworkScanner",
-    "id": "spitzlbergerj/MMM-NetworkScanner",
-    "maintainer": "spitzlbergerj",
-    "maintainerURL": "https://github.com/spitzlbergerj",
+    "url": "https://github.com/nsprawling/MMM-NetworkScanner",
+    "id": "nsprawling/MMM-NetworkScanner",
+    "maintainer": "nsprawling",
+    "maintainerURL": "https://github.com/nsprawling",
     "description": "Display the status of devices on the network based on their MAC address with nice columnview.",
     "issues": true,
-    "stars": 21,
+    "stars": 0,
     "hasGithubIssues": false,
     "license": "MIT",
     "tags": [
@@ -11851,8 +11866,8 @@
       "scanner"
     ],
     "image": ".github-example-columns2.jpg",
-    "defaultSortWeight": 9,
-    "lastCommit": "2020-04-13T09:05:47+02:00"
+    "defaultSortWeight": 10,
+    "lastCommit": "2022-12-12T23:18:18+00:00"
   },
   {
     "name": "MMM-News-QR",
@@ -12028,7 +12043,7 @@
     "license": "MIT",
     "image": "screenshots-screenshot1.jpg",
     "defaultSortWeight": 8,
-    "lastCommit": "2023-04-01T15:09:59+11:00"
+    "lastCommit": "2025-02-26T14:37:37+11:00"
   },
   {
     "name": "MMM-NexusMetroRTI",
@@ -12724,7 +12739,7 @@
     "maintainer": "KristjanESPERANTO",
     "maintainerURL": "",
     "description": "Display current and forecast weather based on the Openweathermap OneCall API data with alternative formatting.",
-    "issues": true,
+    "issues": false,
     "stars": 4,
     "license": "MIT",
     "tags": [
@@ -12732,8 +12747,8 @@
       "openweathermap"
     ],
     "image": "screenshot.jpg",
-    "defaultSortWeight": 1,
-    "lastCommit": "2025-02-18T00:41:48+01:00"
+    "defaultSortWeight": -1,
+    "lastCommit": "2025-03-01T12:51:07+01:00"
   },
   {
     "name": "MMM-OneDrive",
@@ -12854,7 +12869,7 @@
     ],
     "image": ".github-content-banner-social.jpg",
     "defaultSortWeight": 6,
-    "lastCommit": "2024-11-25T18:24:05-03:00"
+    "lastCommit": "2025-02-23T21:25:07-03:00"
   },
   {
     "name": "MMM-OnSpotifyDude",
@@ -13381,6 +13396,21 @@
     "lastCommit": "2018-12-25T21:15:00-05:00"
   },
   {
+    "name": "MMM-PDFSlideshow",
+    "category": "Utility / IoT / 3rd Party / Integration",
+    "url": "https://github.com/ChrisF1976/MMM-PDFSlideshow",
+    "id": "ChrisF1976/MMM-PDFSlideshow",
+    "maintainer": "ChrisF1976",
+    "maintainerURL": "https://github.com/ChrisF1976",
+    "description": "Displays PDF documents as a slideshow.",
+    "issues": true,
+    "stars": 2,
+    "license": "MIT",
+    "image": "MMM-PDFSlideshow.jpg",
+    "defaultSortWeight": 4,
+    "lastCommit": "2025-02-27T20:25:20+01:00"
+  },
+  {
     "name": "MMM-pekavm",
     "category": "Transport / Travel",
     "url": "https://github.com/ytmytm/MMM-pekavm",
@@ -13598,8 +13628,8 @@
       "pi-hole"
     ],
     "image": "docs-preview-showSources.jpg",
-    "defaultSortWeight": 1,
-    "lastCommit": "2024-03-11T20:10:24+00:00"
+    "defaultSortWeight": 2,
+    "lastCommit": "2025-02-28T18:17:28+00:00"
   },
   {
     "name": "MMM-PilotWX",
@@ -14356,7 +14386,7 @@
     "id": "matiasmtl/MMM-promiedos",
     "maintainer": "matiasmtl",
     "maintainerURL": "https://github.com/matiasmtl/",
-    "description": "Displays Argentinian main soccer league (LPF) rankings for both zones, A and B",
+    "description": "Displays Argentinian main soccer league (LPF) rankings for both zones, A and B.",
     "issues": true,
     "stars": 0,
     "license": "NOASSERTION",
@@ -14412,8 +14442,8 @@
       "brandenburg"
     ],
     "image": "img-MMM-PublicTransport_screenshot.jpg",
-    "defaultSortWeight": 1,
-    "lastCommit": "2025-02-01T07:08:55+01:00"
+    "defaultSortWeight": 0,
+    "lastCommit": "2025-03-01T15:32:48+01:00"
   },
   {
     "name": "MMM-PublicTransportHafas",
@@ -14432,8 +14462,8 @@
       "vendo"
     ],
     "image": "img-Goerdelerring_all.jpg",
-    "defaultSortWeight": 0,
-    "lastCommit": "2025-02-19T23:32:19+01:00"
+    "defaultSortWeight": -1,
+    "lastCommit": "2025-02-27T00:06:39+01:00"
   },
   {
     "name": "MMM-PublicTransportVVO",
@@ -14659,7 +14689,7 @@
     ],
     "license": "MIT",
     "image": "images-quote-of-the-day_english_example.jpg",
-    "defaultSortWeight": 5,
+    "defaultSortWeight": 6,
     "lastCommit": "2023-02-24T17:44:03+03:00"
   },
   {
@@ -15126,7 +15156,7 @@
     ],
     "image": "images-screen.jpg",
     "defaultSortWeight": 1,
-    "lastCommit": "2025-02-16T11:25:58+01:00"
+    "lastCommit": "2025-02-24T12:06:38+01:00"
   },
   {
     "name": "MMM-RepoStats",
@@ -16483,7 +16513,7 @@
       "artist"
     ],
     "image": "screenshots-MMM-slamfm-playing-now-screenshot.jpg",
-    "defaultSortWeight": 5,
+    "defaultSortWeight": 6,
     "lastCommit": "2023-02-25T12:58:21+01:00"
   },
   {
@@ -16703,7 +16733,7 @@
       "youtube"
     ],
     "image": "screenshots-MMM-social-counter-screenshot.jpg",
-    "defaultSortWeight": 4,
+    "defaultSortWeight": 5,
     "lastCommit": "2023-02-25T12:59:09+01:00"
   },
   {
@@ -17459,16 +17489,17 @@
   },
   {
     "name": "MMM-swisstransport",
-    "category": "Transport / Travel",
+    "category": "Outdated Modules",
     "url": "https://github.com/Bangee44/MMM-swisstransport",
     "id": "Bangee44/MMM-swisstransport",
     "maintainer": "Bangee44",
     "maintainerURL": "",
     "description": "Display train departures from your favourite train station.",
-    "issues": true,
+    "issues": false,
+    "outdated": "Abandoned. No reactions to issues since years. Seems not to work anymore.",
     "stars": 7,
     "license": "MIT",
-    "defaultSortWeight": 10,
+    "defaultSortWeight": 901,
     "lastCommit": "2017-12-18T14:18:19+01:00"
   },
   {
@@ -18771,7 +18802,7 @@
     ],
     "image": "images-Current_version.jpg",
     "defaultSortWeight": 5,
-    "lastCommit": "2024-03-03T11:26:40+00:00"
+    "lastCommit": "2025-03-01T20:54:53+00:00"
   },
   {
     "name": "MMM-UKTide",
@@ -19495,7 +19526,7 @@
     ],
     "image": "images-day-0000.jpg",
     "defaultSortWeight": 7,
-    "lastCommit": "2024-10-07T13:35:49-07:00"
+    "lastCommit": "2025-02-26T15:42:14+01:00"
   },
   {
     "name": "MMM-Weather-SMHI-Hourly",
@@ -19708,7 +19739,7 @@
     "maintainer": "KristjanESPERANTO",
     "maintainerURL": "",
     "description": "A Text-To-Speech module which uses the Web Speech API of the browser. It is in an early stage of development. So far only German is supported.",
-    "issues": true,
+    "issues": false,
     "stars": 4,
     "license": "MIT",
     "tags": [
@@ -19717,8 +19748,8 @@
       "webspeech"
     ],
     "image": ".github-TTS.jpg",
-    "defaultSortWeight": 1,
-    "lastCommit": "2025-02-08T19:03:00+01:00"
+    "defaultSortWeight": -1,
+    "lastCommit": "2025-02-27T18:48:37+01:00"
   },
   {
     "name": "MMM-Webuntis",

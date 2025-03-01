@@ -40,11 +40,11 @@ const config = [
       "sourceType": "module"
     },
     "plugins": {
-      ...eslintPluginStylistic.configs["all-flat"].plugins
+      ...eslintPluginStylistic.configs.all.plugins
     },
     "rules": {
       ...eslintPluginJs.configs.all.rules,
-      ...eslintPluginStylistic.configs["all-flat"].rules,
+      ...eslintPluginStylistic.configs.all.rules,
       "complexity": "off",
       "depend/ban-dependencies": ["error", {"allowed": ["moment", "eslint-plugin-import"]}],
       "func-style": "off",
