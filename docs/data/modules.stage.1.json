@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "2025-02-28T16:30:07.496Z",
+  "lastUpdate": "2025-03-02T12:32:23.163Z",
   "modules": [
     {
       "name": "MMM-01ZM",
@@ -7169,10 +7169,10 @@
     {
       "name": "MMM-NetworkScanner",
       "category": "Utility / IoT / 3rd Party / Integration",
-      "url": "https://github.com/spitzlbergerj/MMM-NetworkScanner",
-      "id": "spitzlbergerj/MMM-NetworkScanner",
-      "maintainer": "spitzlbergerj",
-      "maintainerURL": "https://github.com/spitzlbergerj",
+      "url": "https://github.com/nsprawling/MMM-NetworkScanner",
+      "id": "nsprawling/MMM-NetworkScanner",
+      "maintainer": "nsprawling",
+      "maintainerURL": "https://github.com/nsprawling",
       "description": "Display the status of devices on the network based on their MAC address with nice columnview.",
       "issues": []
     },

@@ -11731,15 +11731,15 @@
   {
     "name": "MMM-NetworkScanner",
     "category": "Utility / IoT / 3rd Party / Integration",
-    "url": "https://github.com/spitzlbergerj/MMM-NetworkScanner",
-    "id": "spitzlbergerj/MMM-NetworkScanner",
-    "maintainer": "spitzlbergerj",
-    "maintainerURL": "https://github.com/spitzlbergerj",
+    "url": "https://github.com/nsprawling/MMM-NetworkScanner",
+    "id": "nsprawling/MMM-NetworkScanner",
+    "maintainer": "nsprawling",
+    "maintainerURL": "https://github.com/nsprawling",
     "description": "Display the status of devices on the network based on their MAC address with nice columnview.",
     "issues": [
       "Issues are not enabled in the GitHub repository. So users cannot report bugs. Please enable issues in your repo."
     ],
-    "stars": 21,
+    "stars": 0,
     "hasGithubIssues": false,
     "license": "MIT",
     "tags": [
@@ -13289,7 +13289,7 @@
     "maintainerURL": "https://github.com/eckonator",
     "description": "The module displays pellet prices for the current year based on Chart.js and the API of heizpellets24.de.",
     "issues": [],
-    "stars": 2,
+    "stars": 3,
     "license": "MIT",
     "tags": [
       "pellet",
@@ -13588,7 +13588,7 @@
       "There are no keywords in 'package.json'. We would use them as tags on the module list page."
     ],
     "outdated": "Abandoned. Repo has been archived at 2022-08-26.",
-    "stars": 16,
+    "stars": 17,
     "isArchived": true,
     "license": "ISC",
     "image": "screenshot.jpg"
@@ -13667,7 +13667,7 @@
     "issues": [
       "There is no `package.json`. We need this file to gather information about the module for the module list page."
     ],
-    "stars": 15,
+    "stars": 16,
     "license": "MIT",
     "image": "PiTemp.jpg"
   },
@@ -13728,7 +13728,7 @@
       "There is no `package.json`. We need this file to gather information about the module for the module list page.",
       "No image found."
     ],
-    "stars": 5,
+    "stars": 6,
     "license": "MIT"
   },
   {
@@ -13812,7 +13812,7 @@
       "Issue: The license in the package.json (ISC) doesn't match the license file (MIT).",
       "No image found."
     ],
-    "stars": 7,
+    "stars": 8,
     "hasGithubIssues": false,
     "license": "MIT"
   },
