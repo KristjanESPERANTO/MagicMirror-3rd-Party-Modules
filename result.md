@@ -1,6 +1,6 @@
 # Result of the module analysis
 
-Last update: 2025-03-02T13:47:32+01:00
+Last update: 2025-03-02T17:37:08+01:00
 
 ## Statistics
 
@@ -8,8 +8,8 @@ Last update: 2025-03-02T13:47:32+01:00
 |:---------------------|:--------:|
 | modules analyzed     |   1226   |
 | maintainer           |    661   |
-| modules with issues  |   1224   |
-| issues               |   6573   |
+| modules with issues  |   1223   |
+| issues               |   6572   |
 | modules at github    |   1099   |
 | modules at gitlab    |     12   |
 | modules at bitbucket |      1   |
@@ -7557,13 +7557,6 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
    - package.json: Line 37, Column 3: Package top-level property "dependencies" is not ordered in the npm standard way. Run the ESLint auto-fixer to correct. (rule: package-json/order-properties)
    - package.json: Line 39, Column 5: "moment" should be replaced with an alternative package. Read more here: https://github.com/es-tooling/module-replacements/blob/main/docs/modules/momentjs.md (rule: depend/ban-dependencies)
    - package.json: Line 43, Column 3: Package top-level property "lint-staged" is not ordered in the npm standard way. Run the ESLint auto-fixer to correct. (rule: package-json/order-properties)
-
-
-### [MMM-PublicTransportHafas by KristjanESPERANTO](https://github.com/KristjanESPERANTO/MMM-PublicTransportHafas)
-
-1. Information: There are updates for 2 dependencie(s):
-   - eslint-plugin-package-json   ^0.26.0  →   ^0.26.1
-   - stylelint                   ^16.14.1  →  ^16.15.0
 
 
 ### [MMM-PublicTransportVVO by ChristianGeie](https://github.com/ChristianGeie/MMM-PublicTransportVVO)

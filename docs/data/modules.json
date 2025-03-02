@@ -6564,7 +6564,7 @@
     ],
     "image": "images-screenshot.jpg",
     "defaultSortWeight": 2,
-    "lastCommit": "2025-02-28T21:11:06+02:00"
+    "lastCommit": "2025-03-02T15:33:15+02:00"
   },
   {
     "name": "MMM-Growatt",
@@ -6597,7 +6597,7 @@
     ],
     "image": "images-screenshot.jpg",
     "defaultSortWeight": 2,
-    "lastCommit": "2025-02-28T22:55:40+02:00"
+    "lastCommit": "2025-03-02T15:32:03+02:00"
   },
   {
     "name": "MMM-GyeonggiBus",
@@ -12748,7 +12748,7 @@
     ],
     "image": "screenshot.jpg",
     "defaultSortWeight": -1,
-    "lastCommit": "2025-03-01T12:51:07+01:00"
+    "lastCommit": "2025-03-02T14:13:10+01:00"
   },
   {
     "name": "MMM-OneDrive",
@@ -14434,7 +14434,7 @@
     "maintainerURL": "",
     "description": "Display departures for public transport in Berlin and Brandenburg (Covers VBB Area).",
     "issues": true,
-    "stars": 40,
+    "stars": 41,
     "license": "MIT",
     "tags": [
       "public transport",
@@ -14453,8 +14453,8 @@
     "maintainer": "KristjanESPERANTO",
     "maintainerURL": "",
     "description": "Displays departure information for public transportation in Germany and some other European countries. The <a target=\"_blank\" href=\"https://github.com/public-transport/hafas-client\">hafas-client</a> is used to query the information. The interface of the Deutsche Bahn is used as standard, this includes most of the local networks with buses, trams, etc. However, <a target=\"_blank\" href=\"https://github.com/public-transport/hafas-client/blob/main/p/readme.md\">other hafas interfaces</a> can also be used.",
-    "issues": true,
-    "stars": 25,
+    "issues": false,
+    "stars": 27,
     "license": "MIT",
     "tags": [
       "public transport",
@@ -14462,8 +14462,8 @@
       "vendo"
     ],
     "image": "img-Goerdelerring_all.jpg",
-    "defaultSortWeight": -1,
-    "lastCommit": "2025-02-27T00:06:39+01:00"
+    "defaultSortWeight": -2,
+    "lastCommit": "2025-03-02T17:30:12+01:00"
   },
   {
     "name": "MMM-PublicTransportVVO",
