@@ -1,6 +1,6 @@
 # Result of the module analysis
 
-Last update: 2025-03-02T17:37:08+01:00
+Last update: 2025-03-03T05:37:55+01:00
 
 ## Statistics
 
@@ -8,8 +8,8 @@ Last update: 2025-03-02T17:37:08+01:00
 |:---------------------|:--------:|
 | modules analyzed     |   1226   |
 | maintainer           |    661   |
-| modules with issues  |   1223   |
-| issues               |   6572   |
+| modules with issues  |   1226   |
+| issues               |   6574   |
 | modules at github    |   1099   |
 | modules at gitlab    |     12   |
 | modules at bitbucket |      1   |
@@ -400,8 +400,9 @@ Last update: 2025-03-02T17:37:08+01:00
 
 ### [MMM-ApothekenNotdienst by KristjanESPERANTO](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst)
 
-1. Information: There are updates for 2 dependencie(s):
+1. Information: There are updates for 3 dependencie(s):
    - @stylistic/eslint-plugin    ^4.0.1  →    ^4.1.0
+   - prettier                    ^3.5.2  →    ^3.5.3
    - stylelint                 ^16.14.1  →  ^16.15.0
 
 
@@ -558,7 +559,7 @@ Last update: 2025-03-02T17:37:08+01:00
 1. Deprecated: Found `omxplayer` in file `node_helper.js`: Try to replace it with `vlc`.
 2. Information: There are updates for 2 dependencie(s):
    - eslint    ^8.57.0  →  ^9.21.0
-   - prettier   ^3.3.3  →   ^3.5.2
+   - prettier   ^3.3.3  →   ^3.5.3
 
 
 ### [MMM-BartTimes by falafel2222](https://github.com/falafel2222/MMM-BartTimes)
@@ -829,7 +830,7 @@ Last update: 2025-03-02T17:37:08+01:00
    - eslint                     ^9.17.0  →   ^9.21.0
    - eslint-config-prettier      ^9.1.0  →   ^10.0.2
    - eslint-plugin-prettier      ^5.2.1  →    ^5.2.3
-   - prettier                    ^3.4.2  →    ^3.5.2
+   - prettier                    ^3.4.2  →    ^3.5.3
    - rollup                     ^4.29.1  →   ^4.34.9
    - rxjs                        ^7.8.1  →    ^7.8.2
    - typescript                  ^5.7.2  →    ^5.8.2
@@ -1020,7 +1021,7 @@ Last update: 2025-03-02T17:37:08+01:00
    - @stylistic/eslint-plugin    ^3.0.1  →    ^4.1.0
    - eslint                     ^9.19.0  →   ^9.21.0
    - globals                   ^15.14.0  →   ^16.0.0
-   - prettier                    ^3.4.2  →    ^3.5.2
+   - prettier                    ^3.4.2  →    ^3.5.3
    - stylelint                 ^16.14.1  →  ^16.15.0
 
 2. ESLint issues:
@@ -1165,8 +1166,9 @@ Last update: 2025-03-02T17:37:08+01:00
 
 ### [MMM-Canteen by KristjanESPERANTO](https://github.com/KristjanESPERANTO/MMM-Canteen)
 
-1. Information: There are updates for 2 dependencie(s):
+1. Information: There are updates for 3 dependencie(s):
    - @stylistic/eslint-plugin    ^4.0.1  →    ^4.1.0
+   - prettier                    ^3.5.2  →    ^3.5.3
    - stylelint                 ^16.14.1  →  ^16.15.0
 
 
@@ -1187,33 +1189,14 @@ Last update: 2025-03-02T17:37:08+01:00
 2. Information: There are updates for 4 dependencie(s):
    - ical-generator   ^1.4.3  →   ^8.1.1
    - moment          ^2.23.0  →  ^2.30.1
-   - prettier         ^3.0.3  →   ^3.5.2
+   - prettier         ^3.0.3  →   ^3.5.3
    - tsdav            ^2.0.3  →   ^2.1.3
 
 
 ### [MMM-Carousel by shbatm](https://github.com/shbatm/MMM-Carousel)
 
-1. Information: There are updates for 7 dependencie(s):
-   - @eslint/js                 ^9.19.0  →   ^9.21.0
-   - @stylistic/eslint-plugin    ^3.0.1  →    ^4.1.0
-   - cspell                     ^8.17.3  →   ^8.17.5
-   - eslint                     ^9.19.0  →   ^9.21.0
-   - globals                   ^15.14.0  →   ^16.0.0
-   - prettier                    ^3.4.2  →    ^3.5.2
-   - stylelint                 ^16.14.1  →  ^16.15.0
-
-2. ESLint issues:
-   - package.json: Line 5, Column 3: Package top-level property "main" is not ordered in the npm standard way. Run the ESLint auto-fixer to correct. (rule: package-json/order-properties)
-   - package.json: Line 6, Column 3: Package top-level property "repository" is not ordered in the npm standard way. Run the ESLint auto-fixer to correct. (rule: package-json/order-properties)
-   - package.json: Line 10, Column 3: Package top-level property "keywords" is not ordered in the npm standard way. Run the ESLint auto-fixer to correct. (rule: package-json/order-properties)
-   - package.json: Line 21, Column 3: Package top-level property "author" is not ordered in the npm standard way. Run the ESLint auto-fixer to correct. (rule: package-json/order-properties)
-   - package.json: Line 22, Column 3: Package top-level property "contributors" is not ordered in the npm standard way. Run the ESLint auto-fixer to correct. (rule: package-json/order-properties)
-   - package.json: Line 28, Column 3: Package top-level property "license" is not ordered in the npm standard way. Run the ESLint auto-fixer to correct. (rule: package-json/order-properties)
-   - package.json: Line 29, Column 3: Package top-level property "bugs" is not ordered in the npm standard way. Run the ESLint auto-fixer to correct. (rule: package-json/order-properties)
-   - package.json: Line 32, Column 3: Package top-level property "homepage" is not ordered in the npm standard way. Run the ESLint auto-fixer to correct. (rule: package-json/order-properties)
-   - package.json: Line 33, Column 3: Package top-level property "devDependencies" is not ordered in the npm standard way. Run the ESLint auto-fixer to correct. (rule: package-json/order-properties)
-   - package.json: Line 38, Column 5: "eslint-plugin-import" should be replaced with an alternative package. Read more here: https://github.com/es-tooling/module-replacements/blob/main/docs/modules/eslint-plugin-import.md (rule: depend/ban-dependencies)
-   - package.json: Line 46, Column 3: Package top-level property "scripts" is not ordered in the npm standard way. Run the ESLint auto-fixer to correct. (rule: package-json/order-properties)
+1. Information: There are updates for 1 dependencie(s):
+   - prettier  ^3.5.2  →  ^3.5.3
 
 
 ### [MMM-CECControl by nischi](https://github.com/nischi/MMM-CECControl)
@@ -1391,7 +1374,7 @@ Last update: 2025-03-02T17:37:08+01:00
    - @stylistic/eslint-plugin    ^2.9.0  →   ^4.1.0
    - eslint                     ^9.13.0  →  ^9.21.0
    - globals                   ^15.11.0  →  ^16.0.0
-   - prettier                    ^3.3.3  →   ^3.5.2
+   - prettier                    ^3.3.3  →   ^3.5.3
 
 2. ESLint issues:
    - package.json: Line 5, Column 3: Package top-level property "main" is not ordered in the npm standard way. Run the ESLint auto-fixer to correct. (rule: package-json/order-properties)
@@ -1501,7 +1484,7 @@ Last update: 2025-03-02T17:37:08+01:00
 2. Information: There are updates for 3 dependencie(s):
    - eslint    ^8.56.0  →  ^9.21.0
    - moment    ^2.29.4  →  ^2.30.1
-   - prettier   ^3.1.1  →   ^3.5.2
+   - prettier   ^3.1.1  →   ^3.5.3
 
 
 ### [MMM-covid19 by 0m4r](https://github.com/0m4r/MMM-covid19)
@@ -2150,8 +2133,9 @@ Last update: 2025-03-02T17:37:08+01:00
 
 ### [MMM-EasyPix by KristjanESPERANTO](https://github.com/KristjanESPERANTO/MMM-EasyPix)
 
-1. Information: There are updates for 2 dependencie(s):
+1. Information: There are updates for 3 dependencie(s):
    - @stylistic/eslint-plugin    ^4.0.1  →    ^4.1.0
+   - prettier                    ^3.5.2  →    ^3.5.3
    - stylelint                 ^16.14.1  →  ^16.15.0
 
 
@@ -2807,8 +2791,9 @@ deprecated: no longer maintained, switch to modern iconify-icon web component
 
 ### [MMM-Forum by KristjanESPERANTO](https://github.com/KristjanESPERANTO/MMM-Forum)
 
-1. Information: There are updates for 2 dependencie(s):
+1. Information: There are updates for 3 dependencie(s):
    - @stylistic/eslint-plugin    ^4.0.1  →    ^4.1.0
+   - prettier                    ^3.5.2  →    ^3.5.3
    - stylelint                 ^16.14.1  →  ^16.15.0
 
 
@@ -3108,7 +3093,7 @@ deprecated: no longer maintained, switch to modern iconify-icon web component
 
 1. Information: There are updates for 2 dependencie(s):
    - eslint    ^8.56.0  →  ^9.21.0
-   - prettier   ^3.1.1  →   ^3.5.2
+   - prettier   ^3.1.1  →   ^3.5.3
 
 2.  WARN  eslint@8.56.0: 2023-12-15T22:55:11.833Z
 deprecated: This version is no longer supported. Please see https://eslint.org/version-support for other options.
@@ -3243,7 +3228,7 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
    - @eslint/js   ^9.9.0  →  ^9.21.0
    - eslint       ^9.9.0  →  ^9.21.0
    - globals     ^15.9.0  →  ^16.0.0
-   - prettier      3.3.3  →    3.5.2
+   - prettier      3.3.3  →    3.5.3
 
 2. ESLint issues:
    - package.json: Line 2, Column 11: Invalid npm package name: name can no longer contain capital letters. (rule: package-json/valid-name)
@@ -4041,7 +4026,7 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
    - @eslint/js                  ^9.17.0  →   ^9.21.0
    - eslint                      ^9.17.0  →   ^9.21.0
    - markdownlint-cli2           ^0.17.1  →   ^0.17.2
-   - prettier                     ^3.4.2  →    ^3.5.2
+   - prettier                     ^3.4.2  →    ^3.5.3
    - stylelint                  ^16.12.0  →  ^16.15.0
    - stylelint-config-standard   ^36.0.1  →   ^37.0.0
    - stylelint-prettier           ^5.0.2  →    ^5.0.3
@@ -4145,8 +4130,9 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
 
 ### [MMM-ISS-Live by KristjanESPERANTO](https://github.com/KristjanESPERANTO/MMM-ISS-Live)
 
-1. Information: There are updates for 1 dependencie(s):
+1. Information: There are updates for 2 dependencie(s):
    - eslint-plugin-package-json  ^0.26.0  →  ^0.26.1
+   - prettier                     ^3.5.2  →   ^3.5.3
 
 
 ### [MMM-ISS-Map by khassel](https://gitlab.com/khassel/MMM-ISS-Map)
@@ -4204,7 +4190,7 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
    - eslint                            ^8.56.0  →  ^9.21.0
    - eslint-config-prettier             ^9.1.0  →  ^10.0.2
    - eslint-plugin-prettier             ^5.1.3  →   ^5.2.3
-   - prettier                           ^3.2.4  →   ^3.5.2
+   - prettier                           ^3.2.4  →   ^3.5.3
    - rollup                             ^4.9.6  →  ^4.34.9
    - rollup-plugin-banner2              ^1.2.2  →   ^1.3.1
    - typescript                         ^5.3.3  →   ^5.8.2
@@ -4331,7 +4317,7 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
    - eslint-plugin-jsonc              ^2.15.0  →  ^2.19.1
    - globals                          ^15.0.0  →  ^16.0.0
    - markdownlint-cli                 ^0.39.0  →  ^0.44.0
-   - prettier                          ^3.2.5  →   ^3.5.2
+   - prettier                          ^3.2.5  →   ^3.5.3
 
 2.  WARN  eslint@8.57.0: 2024-02-23T20:39:43.282Z
 deprecated: This version is no longer supported. Please see https://eslint.org/version-support for other options.
@@ -4386,10 +4372,7 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
 ### [MMM-KeyBindings by shbatm](https://github.com/shbatm/MMM-KeyBindings)
 
 1. Information: There are updates for 1 dependencie(s):
-   - @stylistic/eslint-plugin  ^4.0.1  →  ^4.1.0
-
-2. ESLint issues:
-   - package.json: Line 22, Column 14: Package scripts are not alphabetized (rule: package-json/sort-collections)
+   - prettier  ^3.5.2  →  ^3.5.3
 
 
 ### [MMM-Keyboard by lavolp3](https://github.com/lavolp3/MMM-Keyboard)
@@ -4944,7 +4927,7 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
    - globals                          ^15.14.0  →   ^16.0.0
    - lint-staged                       ^15.3.0  →   ^15.4.3
    - markdownlint-cli                  ^0.43.0  →   ^0.44.0
-   - prettier                           ^3.4.2  →    ^3.5.2
+   - prettier                           ^3.4.2  →    ^3.5.3
    - semantic-release                  ^24.1.0  →   ^24.2.3
    - stylelint                        ^16.14.1  →  ^16.15.0
    - stylelint-config-standard         ^36.0.1  →   ^37.0.0
@@ -6305,7 +6288,7 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
    - eslint                      ^9.12.0  →   ^9.21.0
    - globals                    ^15.10.0  →   ^16.0.0
    - jsdoc                        ^4.0.3  →    ^4.0.4
-   - prettier                     ^3.3.3  →    ^3.5.2
+   - prettier                     ^3.3.3  →    ^3.5.3
    - stylelint                   ^16.9.0  →  ^16.15.0
    - stylelint-config-standard   ^36.0.1  →   ^37.0.0
    - stylelint-prettier           ^5.0.2  →    ^5.0.3
@@ -6338,7 +6321,7 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
    - @stylistic/eslint-plugin           ^1.5.4  →   ^4.1.0
    - @typescript-eslint/eslint-plugin  ^6.20.0  →  ^8.25.0
    - eslint                            ^8.56.0  →  ^9.21.0
-   - prettier                           ^3.2.5  →   ^3.5.2
+   - prettier                           ^3.2.5  →   ^3.5.3
    - rollup                             ^4.9.6  →  ^4.34.9
    - rollup-plugin-banner2              ^1.2.2  →   ^1.3.1
    - typescript                         ^5.3.3  →   ^5.8.2
@@ -6611,6 +6594,12 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
 4. Deprecated: Found `require('request')` in file `node_helper.js`: Replace it with built-in fetch.
 5. Warning: No LICENSE file.
 6. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
+
+### [MMM-OneCallWeather by KristjanESPERANTO](https://github.com/KristjanESPERANTO/MMM-OneCallWeather)
+
+1. Information: There are updates for 1 dependencie(s):
+   - prettier  ^3.5.2  →  ^3.5.3
+
 
 ### [MMM-OneDrive by hermanho](https://github.com/hermanho/MMM-OneDrive)
 
@@ -7553,10 +7542,19 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
 
 ### [MMM-PublicTransportBerlin by deg0nz](https://github.com/deg0nz/MMM-PublicTransportBerlin)
 
-1. ESLint issues:
+1. Information: There are updates for 1 dependencie(s):
+   - prettier  ^3.5.2  →  ^3.5.3
+
+2. ESLint issues:
    - package.json: Line 37, Column 3: Package top-level property "dependencies" is not ordered in the npm standard way. Run the ESLint auto-fixer to correct. (rule: package-json/order-properties)
    - package.json: Line 39, Column 5: "moment" should be replaced with an alternative package. Read more here: https://github.com/es-tooling/module-replacements/blob/main/docs/modules/momentjs.md (rule: depend/ban-dependencies)
    - package.json: Line 43, Column 3: Package top-level property "lint-staged" is not ordered in the npm standard way. Run the ESLint auto-fixer to correct. (rule: package-json/order-properties)
+
+
+### [MMM-PublicTransportHafas by KristjanESPERANTO](https://github.com/KristjanESPERANTO/MMM-PublicTransportHafas)
+
+1. Information: There are updates for 1 dependencie(s):
+   - prettier  ^3.5.2  →  ^3.5.3
 
 
 ### [MMM-PublicTransportVVO by ChristianGeie](https://github.com/ChristianGeie/MMM-PublicTransportVVO)
@@ -7694,7 +7692,7 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
    - @rollup/plugin-node-resolve  ^15.2.3  →  ^16.0.0
    - @rollup/plugin-typescript    ^11.1.6  →  ^12.1.2
    - eslint                        ^9.9.1  →  ^9.21.0
-   - prettier                      ^3.3.3  →   ^3.5.2
+   - prettier                      ^3.3.3  →   ^3.5.3
    - rollup                       ^4.21.1  →  ^4.34.9
    - rollup-plugin-banner2         ^1.3.0  →   ^1.3.1
    - typescript                    ^5.5.4  →   ^5.8.2
@@ -10366,6 +10364,12 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
 5. Typo: Found `Magic Mirror` in file `package.json`: Replace it with `MagicMirror²`.
 6. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
 
+### [MMM-WebSpeechTTS by KristjanESPERANTO](https://github.com/KristjanESPERANTO/MMM-WebSpeechTTS)
+
+1. Information: There are updates for 1 dependencie(s):
+   - prettier  ^3.5.2  →  ^3.5.3
+
+
 ### [MMM-Webuntis by HeikoGr](https://github.com/HeikoGr/MMM-Webuntis)
 
 1. Recommendation: No lint script found in package.json. It is recommended to add one.
@@ -10543,7 +10547,7 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
    - @stylistic/eslint-plugin  ^2.12.1  →   ^4.1.0
    - eslint                    ^9.17.0  →  ^9.21.0
    - eslint-plugin-unicorn     ^56.0.1  →  ^57.0.0
-   - prettier                   ^3.4.2  →   ^3.5.2
+   - prettier                   ^3.4.2  →   ^3.5.3
 
 2. ESLint issues:
    - package.json: Line 5, Column 3: Package top-level property "repository" is not ordered in the npm standard way. Run the ESLint auto-fixer to correct. (rule: package-json/order-properties)

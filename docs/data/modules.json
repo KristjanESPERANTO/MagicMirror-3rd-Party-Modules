@@ -225,7 +225,7 @@
     "maintainerURL": "",
     "description": "Display trashcollection days of the Afvalwijzer service in the Netherlands.",
     "issues": true,
-    "stars": 3,
+    "stars": 4,
     "license": "MIT",
     "tags": [
       "trashcollection"
@@ -366,7 +366,7 @@
     "maintainerURL": "",
     "description": "Alarm Clock Module (touch and non-touch).",
     "issues": true,
-    "stars": 48,
+    "stars": 47,
     "license": "MIT",
     "tags": [
       "alarm clock"
@@ -2270,8 +2270,8 @@
       "pages"
     ],
     "image": "img-example1-slide.jpg",
-    "defaultSortWeight": 1,
-    "lastCommit": "2025-02-02T01:26:49+01:00"
+    "defaultSortWeight": 0,
+    "lastCommit": "2025-03-02T22:32:48+01:00"
   },
   {
     "name": "MMM-CECControl",
@@ -8377,8 +8377,8 @@
       "keyboard"
     ],
     "image": "img-fire_stick_remote.jpg",
-    "defaultSortWeight": 1,
-    "lastCommit": "2025-02-22T18:46:57+01:00"
+    "defaultSortWeight": 0,
+    "lastCommit": "2025-03-02T21:30:30+01:00"
   },
   {
     "name": "MMM-Keyboard",
@@ -12739,7 +12739,7 @@
     "maintainer": "KristjanESPERANTO",
     "maintainerURL": "",
     "description": "Display current and forecast weather based on the Openweathermap OneCall API data with alternative formatting.",
-    "issues": false,
+    "issues": true,
     "stars": 4,
     "license": "MIT",
     "tags": [
@@ -12747,7 +12747,7 @@
       "openweathermap"
     ],
     "image": "screenshot.jpg",
-    "defaultSortWeight": -1,
+    "defaultSortWeight": 0,
     "lastCommit": "2025-03-02T14:13:10+01:00"
   },
   {
@@ -14442,7 +14442,7 @@
       "brandenburg"
     ],
     "image": "img-MMM-PublicTransport_screenshot.jpg",
-    "defaultSortWeight": 0,
+    "defaultSortWeight": 1,
     "lastCommit": "2025-03-01T15:32:48+01:00"
   },
   {
@@ -14453,7 +14453,7 @@
     "maintainer": "KristjanESPERANTO",
     "maintainerURL": "",
     "description": "Displays departure information for public transportation in Germany and some other European countries. The <a target=\"_blank\" href=\"https://github.com/public-transport/hafas-client\">hafas-client</a> is used to query the information. The interface of the Deutsche Bahn is used as standard, this includes most of the local networks with buses, trams, etc. However, <a target=\"_blank\" href=\"https://github.com/public-transport/hafas-client/blob/main/p/readme.md\">other hafas interfaces</a> can also be used.",
-    "issues": false,
+    "issues": true,
     "stars": 27,
     "license": "MIT",
     "tags": [
@@ -14462,7 +14462,7 @@
       "vendo"
     ],
     "image": "img-Goerdelerring_all.jpg",
-    "defaultSortWeight": -2,
+    "defaultSortWeight": -1,
     "lastCommit": "2025-03-02T17:30:12+01:00"
   },
   {
@@ -15089,7 +15089,7 @@
     ],
     "image": ".github-hide_show_module.jpg",
     "defaultSortWeight": -6,
-    "lastCommit": "2025-01-20T06:00:29+01:00"
+    "lastCommit": "2025-03-02T23:59:23+01:00"
   },
   {
     "name": "MMM-Remote-Control-Repository",
@@ -19738,7 +19738,7 @@
     "maintainer": "KristjanESPERANTO",
     "maintainerURL": "",
     "description": "A Text-To-Speech module which uses the Web Speech API of the browser. It is in an early stage of development. So far only German is supported.",
-    "issues": false,
+    "issues": true,
     "stars": 4,
     "license": "MIT",
     "tags": [
@@ -19747,7 +19747,7 @@
       "webspeech"
     ],
     "image": ".github-TTS.jpg",
-    "defaultSortWeight": -1,
+    "defaultSortWeight": 0,
     "lastCommit": "2025-02-27T18:48:37+01:00"
   },
   {
