@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "2025-03-04T04:30:08.444Z",
+  "lastUpdate": "2025-03-04T16:30:08.302Z",
   "modules": [
     {
       "name": "MMM-01ZM",
@@ -5470,7 +5470,7 @@
     },
     {
       "name": "MMM-LOTR-Quotes",
-      "category": "News / Information",
+      "category": "Entertainment / Misc",
       "url": "https://github.com/jaylingelbach/MMM-LOTR-Quotes",
       "id": "jaylingelbach/MMM-LOTR-Quotes",
       "maintainer": "jaylingelbach",
@@ -7700,7 +7700,7 @@
       "id": "KristjanESPERANTO/MMM-OneCallWeather",
       "maintainer": "KristjanESPERANTO",
       "maintainerURL": "",
-      "description": "Display current and forecast weather based on the Openweathermap OneCall API data with alternative formatting.",
+      "description": "Display current and forecast weather based on Openweathermap OneCall API data with alternative formatting. With various icon sets, including an animated one.",
       "issues": []
     },
     {

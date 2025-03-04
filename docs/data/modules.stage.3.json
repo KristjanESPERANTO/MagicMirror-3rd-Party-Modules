@@ -1005,7 +1005,7 @@
     "maintainerURL": "",
     "description": "Show fullscreen slideshow in background from images in a local folder. Great for a photo frame.",
     "issues": [],
-    "stars": 158,
+    "stars": 159,
     "license": "MIT",
     "tags": [
       "background",
@@ -1875,7 +1875,7 @@
       "No image found."
     ],
     "outdated": "Abandoned. No updates since years. But may still work.",
-    "stars": 69,
+    "stars": 68,
     "license": "MIT"
   },
   {
@@ -8933,7 +8933,7 @@
   },
   {
     "name": "MMM-LOTR-Quotes",
-    "category": "News / Information",
+    "category": "Entertainment / Misc",
     "url": "https://github.com/jaylingelbach/MMM-LOTR-Quotes",
     "id": "jaylingelbach/MMM-LOTR-Quotes",
     "maintainer": "jaylingelbach",
@@ -12611,7 +12611,7 @@
     "id": "KristjanESPERANTO/MMM-OneCallWeather",
     "maintainer": "KristjanESPERANTO",
     "maintainerURL": "",
-    "description": "Display current and forecast weather based on the Openweathermap OneCall API data with alternative formatting.",
+    "description": "Display current and forecast weather based on Openweathermap OneCall API data with alternative formatting. With various icon sets, including an animated one.",
     "issues": [],
     "stars": 4,
     "license": "MIT",
@@ -20252,11 +20252,11 @@
   {
     "name": "MMM-Zmanim",
     "category": "Religion",
-    "url": "https://github.com/supermem613/MMM-Zmanim",
-    "id": "supermem613/MMM-Zmanim",
-    "maintainer": "supermem613",
+    "url": "https://github.com/shmulyeng/MMM-Zmanim",
+    "id": "shmulyeng/MMM-Zmanim",
+    "maintainer": "shmulyeng",
     "maintainerURL": "",
-    "description": "Displays Zmanim (Jewish calendar information).",
+    "description": "Displays daily Jewish calendar information.",
     "issues": [
       "`package.json` issue: No description",
       "`package.json` issue: No repository field.",
@@ -20271,11 +20271,11 @@
   {
     "name": "MMM-Zmanim",
     "category": "Religion",
-    "url": "https://github.com/shmulyeng/MMM-Zmanim",
-    "id": "shmulyeng/MMM-Zmanim",
-    "maintainer": "shmulyeng",
+    "url": "https://github.com/supermem613/MMM-Zmanim",
+    "id": "supermem613/MMM-Zmanim",
+    "maintainer": "supermem613",
     "maintainerURL": "",
-    "description": "Displays daily Jewish calendar information.",
+    "description": "Displays Zmanim (Jewish calendar information).",
     "issues": [
       "`package.json` issue: No description",
       "`package.json` issue: No repository field.",

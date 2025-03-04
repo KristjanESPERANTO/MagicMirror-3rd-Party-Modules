@@ -1040,7 +1040,7 @@
     "maintainerURL": "",
     "description": "Show fullscreen slideshow in background from images in a local folder. Great for a photo frame.",
     "issues": true,
-    "stars": 158,
+    "stars": 159,
     "license": "MIT",
     "tags": [
       "background",
@@ -1924,7 +1924,7 @@
     "description": "Display a compact monthly calendar view.",
     "issues": false,
     "outdated": "Abandoned. No updates since years. But may still work.",
-    "stars": 69,
+    "stars": 68,
     "license": "MIT",
     "defaultSortWeight": 901,
     "lastCommit": "2019-01-06T13:18:09-07:00"
@@ -9040,7 +9040,7 @@
   },
   {
     "name": "MMM-LOTR-Quotes",
-    "category": "News / Information",
+    "category": "Entertainment / Misc",
     "url": "https://github.com/jaylingelbach/MMM-LOTR-Quotes",
     "id": "jaylingelbach/MMM-LOTR-Quotes",
     "maintainer": "jaylingelbach",
@@ -12752,7 +12752,7 @@
     "id": "KristjanESPERANTO/MMM-OneCallWeather",
     "maintainer": "KristjanESPERANTO",
     "maintainerURL": "",
-    "description": "Display current and forecast weather based on the Openweathermap OneCall API data with alternative formatting.",
+    "description": "Display current and forecast weather based on Openweathermap OneCall API data with alternative formatting. With various icon sets, including an animated one.",
     "issues": true,
     "stars": 4,
     "license": "MIT",
@@ -20494,22 +20494,6 @@
   {
     "name": "MMM-Zmanim",
     "category": "Religion",
-    "url": "https://github.com/supermem613/MMM-Zmanim",
-    "id": "supermem613/MMM-Zmanim",
-    "maintainer": "supermem613",
-    "maintainerURL": "",
-    "description": "Displays Zmanim (Jewish calendar information).",
-    "issues": true,
-    "stars": 0,
-    "hasGithubIssues": false,
-    "license": "ISC",
-    "image": "alternateScreenshot.jpg",
-    "defaultSortWeight": 9,
-    "lastCommit": "2025-01-24T14:22:15-05:00"
-  },
-  {
-    "name": "MMM-Zmanim",
-    "category": "Religion",
     "url": "https://github.com/shmulyeng/MMM-Zmanim",
     "id": "shmulyeng/MMM-Zmanim",
     "maintainer": "shmulyeng",
@@ -20522,5 +20506,21 @@
     "image": "alternateScreenshot.jpg",
     "defaultSortWeight": 10,
     "lastCommit": "2020-12-06T21:27:43-05:00"
+  },
+  {
+    "name": "MMM-Zmanim",
+    "category": "Religion",
+    "url": "https://github.com/supermem613/MMM-Zmanim",
+    "id": "supermem613/MMM-Zmanim",
+    "maintainer": "supermem613",
+    "maintainerURL": "",
+    "description": "Displays Zmanim (Jewish calendar information).",
+    "issues": true,
+    "stars": 0,
+    "hasGithubIssues": false,
+    "license": "ISC",
+    "image": "alternateScreenshot.jpg",
+    "defaultSortWeight": 9,
+    "lastCommit": "2025-01-24T14:22:15-05:00"
   }
 ]

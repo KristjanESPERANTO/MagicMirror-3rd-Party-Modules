@@ -1,6 +1,6 @@
 # Result of the module analysis
 
-Last update: 2025-03-04T05:37:29+01:00
+Last update: 2025-03-04T17:37:38+01:00
 
 ## Statistics
 
@@ -4164,7 +4164,7 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
 3. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
 4. Information: There are updates for 5 dependencie(s):
    - @electron/rebuild    ^3.6.0  →   ^3.7.1
-   - node-abi            ^3.65.0  →   ^4.0.0
+   - node-abi            ^3.65.0  →   ^4.1.0
    - node-gyp            ^10.2.0  →  ^11.1.0
    - puppeteer          ^22.15.0  →  ^24.3.1
    - sharp               ^0.33.4  →  ^0.33.5
@@ -10801,7 +10801,7 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
 2. Recommendation: Found `axios` in file `node_helper.js`: Replace it with built-in fetch.
 3. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
 
-### [MMM-Zmanim by supermem613](https://github.com/supermem613/MMM-Zmanim)
+### [MMM-Zmanim by shmulyeng](https://github.com/shmulyeng/MMM-Zmanim)
 
 1. `package.json` issue: No description
 2. `package.json` issue: No repository field.
@@ -10813,7 +10813,7 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
 8. Found directory `node_modules`. This shouldn't be uploaded. Add `node_modules/`to `.gitignore`.
 9. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
 
-### [MMM-Zmanim by shmulyeng](https://github.com/shmulyeng/MMM-Zmanim)
+### [MMM-Zmanim by supermem613](https://github.com/supermem613/MMM-Zmanim)
 
 1. `package.json` issue: No description
 2. `package.json` issue: No repository field.
