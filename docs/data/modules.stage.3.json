@@ -4004,15 +4004,17 @@
   {
     "name": "MMM-Dynamic-Modules",
     "category": "Development / Core MagicMirror²",
-    "url": "https://github.com/Toreke/MMM-Dynamic-Modules",
-    "id": "Toreke/MMM-Dynamic-Modules",
-    "maintainer": "Toreke",
+    "url": "https://github.com/gonzonia/MMM-Dynamic-Modules",
+    "id": "gonzonia/MMM-Dynamic-Modules",
+    "maintainer": "gonzonia",
     "maintainerURL": "",
     "description": "Change positions of modules.",
     "issues": [
-      "There is no `package.json`. We need this file to gather information about the module for the module list page."
+      "There is no `package.json`. We need this file to gather information about the module for the module list page.",
+      "Issues are not enabled in the GitHub repository. So users cannot report bugs. Please enable issues in your repo."
     ],
-    "stars": 14
+    "stars": 1,
+    "hasGithubIssues": false
   },
   {
     "name": "MMM-DynamicSnow",
@@ -8928,6 +8930,22 @@
     "stars": 2,
     "license": "Apache-2.0",
     "image": "screenshot.jpg"
+  },
+  {
+    "name": "MMM-LOTR-Quotes",
+    "category": "News / Information",
+    "url": "https://github.com/jaylingelbach/MMM-LOTR-Quotes",
+    "id": "jaylingelbach/MMM-LOTR-Quotes",
+    "maintainer": "jaylingelbach",
+    "maintainerURL": "https://github.com/jaylingelbach",
+    "description": "Displays random Lord of the rings quotes.",
+    "issues": [
+      "`package.json` issue: No description",
+      "`package.json` issue: No repository field.",
+      "`package.json` issue: No license field.",
+      "There are no keywords in 'package.json'. We would use them as tags on the module list page."
+    ],
+    "stars": 1
   },
   {
     "name": "MMM-Lottery",

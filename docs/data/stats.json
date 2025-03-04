@@ -1,11 +1,11 @@
 {
-  "moduleCounter": 1226,
+  "moduleCounter": 1227,
   "modulesWithImageCounter": 861,
-  "modulesWithIssuesCounter": 1226,
-  "issueCounter": 6574,
-  "lastUpdate": "2025-03-03T05:37:55+01:00",
+  "modulesWithIssuesCounter": 1227,
+  "issueCounter": 6583,
+  "lastUpdate": "2025-03-04T05:37:29+01:00",
   "repositoryHoster": {
-    "github": 1099,
+    "github": 1100,
     "gitlab": 12,
     "bitbucket": 1
   },
@@ -295,7 +295,7 @@
     "skastenholz": 1,
     "carstendirks": 1,
     "DavidLSmyth": 1,
-    "Toreke": 1,
+    "gonzonia": 1,
     "scottcl88": 1,
     "rehne": 1,
     "sourceforge807": 1,
@@ -412,6 +412,7 @@
     "cslev": 1,
     "marska": 1,
     "Dobherrmann": 1,
+    "jaylingelbach": 1,
     "pixxelfriend": 1,
     "salpar": 1,
     "Unclearogre": 1,

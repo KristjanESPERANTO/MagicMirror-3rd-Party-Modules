@@ -4065,15 +4065,16 @@
   {
     "name": "MMM-Dynamic-Modules",
     "category": "Development / Core MagicMirror\u00b2",
-    "url": "https://github.com/Toreke/MMM-Dynamic-Modules",
-    "id": "Toreke/MMM-Dynamic-Modules",
-    "maintainer": "Toreke",
+    "url": "https://github.com/gonzonia/MMM-Dynamic-Modules",
+    "id": "gonzonia/MMM-Dynamic-Modules",
+    "maintainer": "gonzonia",
     "maintainerURL": "",
     "description": "Change positions of modules.",
     "issues": true,
-    "stars": 14,
+    "stars": 1,
+    "hasGithubIssues": false,
     "defaultSortWeight": 5,
-    "lastCommit": "2018-11-30T14:42:28+02:00"
+    "lastCommit": "2025-03-02T19:31:19-05:00"
   },
   {
     "name": "MMM-DynamicSnow",
@@ -9038,6 +9039,19 @@
     "lastCommit": "2020-10-01T11:26:45+01:00"
   },
   {
+    "name": "MMM-LOTR-Quotes",
+    "category": "News / Information",
+    "url": "https://github.com/jaylingelbach/MMM-LOTR-Quotes",
+    "id": "jaylingelbach/MMM-LOTR-Quotes",
+    "maintainer": "jaylingelbach",
+    "maintainerURL": "https://github.com/jaylingelbach",
+    "description": "Displays random Lord of the rings quotes.",
+    "issues": true,
+    "stars": 1,
+    "defaultSortWeight": 9,
+    "lastCommit": "2025-03-03T12:39:39-06:00"
+  },
+  {
     "name": "MMM-Lottery",
     "category": "Outdated Modules",
     "url": "https://github.com/mykle1/MMM-Lottery",
@@ -10153,8 +10167,8 @@
     "stars": 32,
     "license": "MIT",
     "image": "images-floorplan-default.jpg",
-    "defaultSortWeight": 8,
-    "lastCommit": "2023-03-01T14:42:08+01:00"
+    "defaultSortWeight": 7,
+    "lastCommit": "2025-03-02T13:22:24+01:00"
   },
   {
     "name": "mmm-pins",
@@ -10372,7 +10386,7 @@
     "issues": true,
     "stars": 3,
     "defaultSortWeight": 3,
-    "lastCommit": "2025-01-26T16:54:59+01:00"
+    "lastCommit": "2025-03-04T00:04:01+01:00"
   },
   {
     "name": "MMM-Modulebar",
@@ -15088,8 +15102,8 @@
       "control"
     ],
     "image": ".github-hide_show_module.jpg",
-    "defaultSortWeight": -6,
-    "lastCommit": "2025-03-02T23:59:23+01:00"
+    "defaultSortWeight": -7,
+    "lastCommit": "2025-03-04T00:54:25+01:00"
   },
   {
     "name": "MMM-Remote-Control-Repository",
