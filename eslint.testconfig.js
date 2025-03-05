@@ -56,12 +56,10 @@ const config = [
     }
   },
   {
-    "files": ["package.json"],
+    "files": ["**/package.json"],
     "rules": {
-      "depend/ban-dependencies": ["error", {"allowed": ["moment", "eslint-plugin-import"]}],
-      "package-json/order-properties": "off",
-      "package-json/require-author": "error",
-      "package-json/require-keywords": "error"
+      "depend/ban-dependencies": ["error", {"allowed": ["moment"]}],
+      "package-json/order-properties": "off"
     }
   }
 ];
