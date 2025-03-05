@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "2025-02-19T16:30:14.210Z",
+  "lastUpdate": "2025-03-05T09:53:31.429Z",
   "modules": [
     {
       "name": "MMM-01ZM",
@@ -697,6 +697,16 @@
       "issues": []
     },
     {
+      "name": "MMM-Biathlon",
+      "category": "Sports",
+      "url": "https://github.com/2hdlockness/MMM-Biathlon",
+      "id": "2hdlockness/MMM-Biathlon",
+      "maintainer": "2hdlockness",
+      "maintainerURL": "https://github.com/2hdlockness/",
+      "description": "Displays biathlon race results and upcoming events. It relies on the official biathlon API to provide up-to-date information.",
+      "issues": []
+    },
+    {
       "name": "MMM-BiathlonResults",
       "category": "Sports",
       "url": "https://github.com/grenagit/MMM-BiathlonResults",
@@ -704,6 +714,16 @@
       "maintainer": "grenagit",
       "maintainerURL": "",
       "description": "Display the current biathlon results (World Cup and IBU Cup).",
+      "issues": []
+    },
+    {
+      "name": "MMM-BibleVerseClock",
+      "category": "Religion",
+      "url": "https://github.com/Tydyrium/MMM-BibleVerseClock",
+      "id": "Tydyrium/MMM-BibleVerseClock",
+      "maintainer": "Tydyrium",
+      "maintainerURL": "",
+      "description": "Display a new verse per minute corresonding to the current time, from <a target=\"_blank\" href=\"https://bible.helloao.org/docs/\">https://bible.helloao.org/docs/</a>.",
       "issues": []
     },
     {
@@ -2442,9 +2462,9 @@
     {
       "name": "MMM-Dynamic-Modules",
       "category": "Development / Core MagicMirror²",
-      "url": "https://github.com/Toreke/MMM-Dynamic-Modules",
-      "id": "Toreke/MMM-Dynamic-Modules",
-      "maintainer": "Toreke",
+      "url": "https://github.com/gonzonia/MMM-Dynamic-Modules",
+      "id": "gonzonia/MMM-Dynamic-Modules",
+      "maintainer": "gonzonia",
       "maintainerURL": "",
       "description": "Change positions of modules.",
       "issues": []
@@ -5449,6 +5469,16 @@
       "issues": []
     },
     {
+      "name": "MMM-LOTR-Quotes",
+      "category": "Entertainment / Misc",
+      "url": "https://github.com/jaylingelbach/MMM-LOTR-Quotes",
+      "id": "jaylingelbach/MMM-LOTR-Quotes",
+      "maintainer": "jaylingelbach",
+      "maintainerURL": "https://github.com/jaylingelbach",
+      "description": "Displays random Lord of the rings quotes.",
+      "issues": []
+    },
+    {
       "name": "MMM-Lottery",
       "category": "Outdated Modules",
       "url": "https://github.com/mykle1/MMM-Lottery",
@@ -7149,10 +7179,10 @@
     {
       "name": "MMM-NetworkScanner",
       "category": "Utility / IoT / 3rd Party / Integration",
-      "url": "https://github.com/spitzlbergerj/MMM-NetworkScanner",
-      "id": "spitzlbergerj/MMM-NetworkScanner",
-      "maintainer": "spitzlbergerj",
-      "maintainerURL": "https://github.com/spitzlbergerj",
+      "url": "https://github.com/nsprawling/MMM-NetworkScanner",
+      "id": "nsprawling/MMM-NetworkScanner",
+      "maintainer": "nsprawling",
+      "maintainerURL": "https://github.com/nsprawling",
       "description": "Display the status of devices on the network based on their MAC address with nice columnview.",
       "issues": []
     },
@@ -7670,7 +7700,7 @@
       "id": "KristjanESPERANTO/MMM-OneCallWeather",
       "maintainer": "KristjanESPERANTO",
       "maintainerURL": "",
-      "description": "Display current and forecast weather based on the Openweathermap OneCall API data with alternative formatting.",
+      "description": "Display current and forecast weather based on Openweathermap OneCall API data with alternative formatting. With various icon sets, including an animated one.",
       "issues": []
     },
     {
@@ -8071,6 +8101,16 @@
       "maintainer": "mykle1",
       "maintainerURL": "",
       "description": "Get system stats from a PC board. Supports multiple core CPU's.",
+      "issues": []
+    },
+    {
+      "name": "MMM-PDFSlideshow",
+      "category": "Utility / IoT / 3rd Party / Integration",
+      "url": "https://github.com/ChrisF1976/MMM-PDFSlideshow",
+      "id": "ChrisF1976/MMM-PDFSlideshow",
+      "maintainer": "ChrisF1976",
+      "maintainerURL": "https://github.com/ChrisF1976",
+      "description": "Displays PDF documents as a slideshow.",
       "issues": []
     },
     {
@@ -8657,6 +8697,16 @@
       "maintainer": "spydersoft-consulting",
       "maintainerURL": "https://github.com/spydersoft-consulting",
       "description": "Display Prometheus Alerts.",
+      "issues": []
+    },
+    {
+      "name": "MMM-promiedos",
+      "category": "Sports",
+      "url": "https://github.com/matiasmtl/MMM-promiedos",
+      "id": "matiasmtl/MMM-promiedos",
+      "maintainer": "matiasmtl",
+      "maintainerURL": "https://github.com/matiasmtl/",
+      "description": "Displays Argentinian main soccer league (LPF) rankings for both zones, A and B.",
       "issues": []
     },
     {
@@ -10527,13 +10577,14 @@
     },
     {
       "name": "MMM-swisstransport",
-      "category": "Transport / Travel",
+      "category": "Outdated Modules",
       "url": "https://github.com/Bangee44/MMM-swisstransport",
       "id": "Bangee44/MMM-swisstransport",
       "maintainer": "Bangee44",
       "maintainerURL": "",
       "description": "Display train departures from your favourite train station.",
-      "issues": []
+      "issues": [],
+      "outdated": "Abandoned. No reactions to issues since years. Seems not to work anymore."
     },
     {
       "name": "MMM-synology-ds",
