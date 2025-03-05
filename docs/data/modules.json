@@ -2767,21 +2767,6 @@
   },
   {
     "name": "MMM-CountDown",
-    "category": "Utility / IoT / 3rd Party / Integration",
-    "url": "https://github.com/daterrell/MMM-CountDown",
-    "id": "daterrell/MMM-CountDown",
-    "maintainer": "daterrell",
-    "maintainerURL": "",
-    "description": "Count down to or up from a datetime.",
-    "issues": true,
-    "stars": 4,
-    "license": "MIT",
-    "image": ".github-CountDown-1.jpg",
-    "defaultSortWeight": 5,
-    "lastCommit": "2024-01-01T10:16:45-08:00"
-  },
-  {
-    "name": "MMM-CountDown",
     "category": "Outdated Modules",
     "url": "https://github.com/boazarad/MMM-CountDown",
     "id": "boazarad/MMM-CountDown",
@@ -2795,6 +2780,21 @@
     "image": "screenshots-screenshot.jpg",
     "defaultSortWeight": 901,
     "lastCommit": "2019-09-07T22:06:29+03:00"
+  },
+  {
+    "name": "MMM-CountDown",
+    "category": "Utility / IoT / 3rd Party / Integration",
+    "url": "https://github.com/daterrell/MMM-CountDown",
+    "id": "daterrell/MMM-CountDown",
+    "maintainer": "daterrell",
+    "maintainerURL": "",
+    "description": "Count down to or up from a datetime.",
+    "issues": true,
+    "stars": 4,
+    "license": "MIT",
+    "image": ".github-CountDown-1.jpg",
+    "defaultSortWeight": 5,
+    "lastCommit": "2024-01-01T10:16:45-08:00"
   },
   {
     "name": "MMM-CountEvents",
@@ -2878,7 +2878,7 @@
     "maintainerURL": "",
     "description": "Live covid19 numbers provided via <a target=\"_blank\" href=\"https://covid19api.com/\">https://covid19api.com/</a>.",
     "issues": true,
-    "stars": 6,
+    "stars": 5,
     "tags": [
       "covid19",
       "covid",
@@ -3275,8 +3275,7 @@
     "maintainerURL": "",
     "description": "Simple display of dad jokes from icanhazdadjoke.com.",
     "issues": true,
-    "stars": 8,
-    "hasGithubIssues": false,
+    "stars": 9,
     "license": "MIT",
     "tags": [
       "jokes",
@@ -10762,7 +10761,7 @@
     ],
     "image": "screenshot.jpg",
     "defaultSortWeight": 1,
-    "lastCommit": "2025-03-05T11:27:43+01:00"
+    "lastCommit": "2025-03-05T17:27:24+01:00"
   },
   {
     "name": "MMM-MplayerRadio",

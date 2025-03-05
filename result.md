@@ -1,6 +1,6 @@
 # Result of the module analysis
 
-Last update: 2025-03-05T13:42:28+01:00
+Last update: 2025-03-05T17:37:37+01:00
 
 ## Statistics
 
@@ -1540,8 +1540,12 @@ Last update: 2025-03-05T13:42:28+01:00
 
 ### [MMM-Dad-Jokes by brucetony](https://github.com/brucetony/MMM-Dad-Jokes)
 
-1. Issues are not enabled in the GitHub repository. So users cannot report bugs. Please enable issues in your repo.
-2. Recommendation: Found `"eslint-plugin-json"` in file `package.json`: Replace it by `eslint-plugin-jsonc`.
+1. Recommendation: Found `"eslint-plugin-json"` in file `package.json`: Replace it by `eslint-plugin-jsonc`.
+2. Information: There are updates for 3 dependencie(s):
+   - @stylistic/eslint-plugin-js    ^4.0.1  →    ^4.2.0
+   - eslint-plugin-n              ^17.15.1  →  ^17.16.2
+   - stylelint                    ^16.14.1  →  ^16.15.0
+
 
 ### [MMM-DagelijksWoord by wctimmer](https://github.com/wctimmer/MMM-DagelijksWoord)
 
@@ -2046,8 +2050,8 @@ Last update: 2025-03-05T13:42:28+01:00
    - eslint                    ^9.10.0  →  ^9.21.0
    - globals                   ^15.9.0  →  ^16.0.0
 
-2. [103m WARN [49m [33m@iconify/iconify@3.1.1: 2023-06-22T08:45:25.335Z[39m
-[33mdeprecated: no longer maintained, switch to modern iconify-icon web component[39m
+2.  WARN  @iconify/iconify@3.1.1: 2023-06-22T08:45:25.335Z
+deprecated: no longer maintained, switch to modern iconify-icon web component
 
 ### [MMM-EmbedYoutube by nitpum](https://github.com/nitpum/MMM-EmbedYoutube)
 
@@ -2904,8 +2908,8 @@ Last update: 2025-03-05T13:42:28+01:00
    - eslint    ^8.56.0  →  ^9.21.0
    - prettier   ^3.1.1  →   ^3.5.3
 
-2. [103m WARN [49m [33meslint@8.56.0: 2023-12-15T22:55:11.833Z[39m
-[33mdeprecated: This version is no longer supported. Please see https://eslint.org/version-support for other options.[39m
+2.  WARN  eslint@8.56.0: 2023-12-15T22:55:11.833Z
+deprecated: This version is no longer supported. Please see https://eslint.org/version-support for other options.
 
 ### [MMM-GmailNotifier by kurtern84](https://github.com/kurtern84/MMM-GmailNotifier)
 
@@ -4120,8 +4124,8 @@ Last update: 2025-03-05T13:42:28+01:00
    - markdownlint-cli                 ^0.39.0  →  ^0.44.0
    - prettier                          ^3.2.5  →   ^3.5.3
 
-2. [103m WARN [49m [33meslint@8.57.0: 2024-02-23T20:39:43.282Z[39m
-[33mdeprecated: This version is no longer supported. Please see https://eslint.org/version-support for other options.[39m
+2.  WARN  eslint@8.57.0: 2024-02-23T20:39:43.282Z
+deprecated: This version is no longer supported. Please see https://eslint.org/version-support for other options.
 
 ### [MMM-JsonValue by c-klinger](https://github.com/c-klinger/MMM-JsonValue)
 
@@ -4592,8 +4596,8 @@ Last update: 2025-03-05T13:42:28+01:00
    - eslint                    ^8.57.0  →  ^9.21.0
    - globals                   ^15.0.0  →  ^16.0.0
 
-2. [103m WARN [49m [33meslint@8.57.0: 2024-02-23T20:39:43.282Z[39m
-[33mdeprecated: This version is no longer supported. Please see https://eslint.org/version-support for other options.[39m
+2.  WARN  eslint@8.57.0: 2024-02-23T20:39:43.282Z
+deprecated: This version is no longer supported. Please see https://eslint.org/version-support for other options.
 
 ### [MMM-MagicReplicator by ivlovric](https://github.com/ivlovric/MMM-MagicReplicator)
 
@@ -9342,8 +9346,8 @@ Last update: 2025-03-05T13:42:28+01:00
    - eslint                    ^8.56.0  →  ^9.21.0
    - node-html-parser          ^6.1.12  →   ^7.0.1
 
-2. [103m WARN [49m [33meslint@8.56.0: 2023-12-15T22:55:11.833Z[39m
-[33mdeprecated: This version is no longer supported. Please see https://eslint.org/version-support for other options.[39m
+2.  WARN  eslint@8.56.0: 2023-12-15T22:55:11.833Z
+deprecated: This version is no longer supported. Please see https://eslint.org/version-support for other options.
 
 ### [MMM-TransLoc by OrangeHoopla](https://github.com/OrangeHoopla/MMM-TransLoc)
 
