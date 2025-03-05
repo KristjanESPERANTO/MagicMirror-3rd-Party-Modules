@@ -101,6 +101,10 @@ The script also adds an image. To do this, it searches the module's repo for an 
 
 _Note_: Images will only be included if a free license is specified in the `package.json`.
 
+### check_modules_js.js
+
+This script does some additional checks on the modules like if the main js file is named correctly or minified.
+
 ### check_modules.py
 
 This script goes through all cloned modules and performs various checks. The result is written to the files [`result.md`](result.md) and [`modules.json`](./docs/data/modules.json).
