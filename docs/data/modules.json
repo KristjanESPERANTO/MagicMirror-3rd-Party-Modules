@@ -231,7 +231,7 @@
       "trashcollection"
     ],
     "image": "AfvalwijzerScreenshot.jpg",
-    "defaultSortWeight": 1,
+    "defaultSortWeight": 0,
     "lastCommit": "2024-10-09T17:55:17+02:00"
   },
   {
@@ -543,19 +543,6 @@
     "stars": 2,
     "defaultSortWeight": 4,
     "lastCommit": "2021-09-01T01:29:06+07:00"
-  },
-  {
-    "name": "anniversarymodule",
-    "category": "Entertainment / Misc",
-    "url": "https://github.com/marcomerens/anniversarymodule",
-    "id": "marcomerens/anniversarymodule",
-    "maintainer": "marcomerens",
-    "maintainerURL": "",
-    "description": "Show a table of upcoming birthdays for a list of people you provided. Nice not to forget birthdays.",
-    "issues": true,
-    "stars": 4,
-    "defaultSortWeight": 14,
-    "lastCommit": "2023-01-14T09:10:19-05:00"
   },
   {
     "name": "MMM-anotherNewsFeed",
@@ -1357,6 +1344,20 @@
     "lastCommit": "2025-01-19T15:10:54+00:00"
   },
   {
+    "name": "MMM-Birthdays",
+    "category": "Entertainment / Misc",
+    "url": "https://github.com/dennisklad/MMM-Birthdays",
+    "id": "dennisklad/MMM-Birthdays",
+    "maintainer": "dennisklad",
+    "maintainerURL": "",
+    "description": "Show a table of upcoming birthdays for a list of people you provided. Nice not to forget birthdays.",
+    "issues": true,
+    "stars": 0,
+    "hasGithubIssues": false,
+    "defaultSortWeight": 10,
+    "lastCommit": "2024-07-30T18:04:14+02:00"
+  },
+  {
     "name": "MMM-bitcoin",
     "category": "Finance",
     "url": "https://github.com/valmassoi/MMM-bitcoin",
@@ -1613,7 +1614,7 @@
     "stars": 5,
     "license": "MIT",
     "image": "screenshots-Recreational Idea 1.jpg",
-    "defaultSortWeight": 5,
+    "defaultSortWeight": 6,
     "lastCommit": "2023-03-30T12:53:16+11:00"
   },
   {
@@ -1937,14 +1938,14 @@
     "maintainer": "MMM-CalendarExt2",
     "maintainerURL": "",
     "description": "Extended calendar and event view.",
-    "issues": true,
+    "issues": false,
     "stars": 103,
     "license": "MIT",
     "tags": [
       "calendar"
     ],
     "image": "docs-Configuration-Views-legend-full-example.jpg",
-    "defaultSortWeight": -2,
+    "defaultSortWeight": -3,
     "lastCommit": "2025-03-04T22:03:37+01:00"
   },
   {
@@ -2615,7 +2616,7 @@
     "description": "Displays cryptocurreency values and trends in different currencies based of COINSQUARE.",
     "issues": true,
     "stars": 0,
-    "defaultSortWeight": 9,
+    "defaultSortWeight": 10,
     "lastCommit": "2022-01-05T18:03:28-05:00"
   },
   {
@@ -2656,7 +2657,8 @@
     "description": "Displays ComEd 5 Minute and Hourly Average, the other repo (MMM-ComEdPrice) has not been updated in a while.",
     "issues": true,
     "stars": 0,
-    "defaultSortWeight": 3,
+    "license": "MIT",
+    "defaultSortWeight": 4,
     "lastCommit": "2025-02-26T10:45:25-06:00"
   },
   {
@@ -2681,7 +2683,7 @@
       "sensors"
     ],
     "image": "examples-bash-curl.jpg",
-    "defaultSortWeight": 1,
+    "defaultSortWeight": 0,
     "lastCommit": "2024-10-30T20:31:33+01:00"
   },
   {
@@ -2760,7 +2762,7 @@
     "description": "CookieCutter template for generating MagicMirror\u00b2 modules.",
     "issues": true,
     "stars": 3,
-    "defaultSortWeight": 8,
+    "defaultSortWeight": 9,
     "lastCommit": "2022-07-25T23:06:15-05:00"
   },
   {
@@ -3011,7 +3013,7 @@
       "crisis"
     ],
     "image": "docs-ScreenShot1.jpg",
-    "defaultSortWeight": 2,
+    "defaultSortWeight": 1,
     "lastCommit": "2024-10-16T20:27:33+02:00"
   },
   {
@@ -3143,7 +3145,7 @@
       "cursor"
     ],
     "image": "screenshot.jpg",
-    "defaultSortWeight": 1,
+    "defaultSortWeight": 0,
     "lastCommit": "2024-10-08T09:52:40+02:00"
   },
   {
@@ -3315,7 +3317,7 @@
     ],
     "license": "MIT",
     "image": "screenshots-daikin.jpg",
-    "defaultSortWeight": 6,
+    "defaultSortWeight": 7,
     "lastCommit": "2024-06-10T12:17:55+02:00"
   },
   {
@@ -3635,7 +3637,7 @@
     "stars": 15,
     "license": "MIT",
     "image": "screenshot.jpg",
-    "defaultSortWeight": 4,
+    "defaultSortWeight": 5,
     "lastCommit": "2020-08-23T15:18:45+02:00"
   },
   {
@@ -3648,7 +3650,7 @@
     "description": "Retrieves live timings of busses for a specific bus stop.",
     "issues": true,
     "stars": 2,
-    "defaultSortWeight": 7,
+    "defaultSortWeight": 8,
     "lastCommit": "2020-10-30T17:32:11+01:00"
   },
   {
@@ -3663,7 +3665,7 @@
     "stars": 0,
     "license": "ISC",
     "image": "MMM-DenHaag-trashcalendar.jpg",
-    "defaultSortWeight": 7,
+    "defaultSortWeight": 8,
     "lastCommit": "2024-10-20T15:06:28+02:00"
   },
   {
@@ -3864,7 +3866,7 @@
     "issues": true,
     "stars": 0,
     "hasGithubIssues": false,
-    "defaultSortWeight": 6,
+    "defaultSortWeight": 7,
     "lastCommit": "2024-07-01T12:21:21-05:00"
   },
   {
@@ -4449,7 +4451,7 @@
       "energymonitor"
     ],
     "image": "assets-screenshot-energy-monitor.jpg",
-    "defaultSortWeight": 1,
+    "defaultSortWeight": 0,
     "lastCommit": "2025-01-26T13:26:11+01:00"
   },
   {
@@ -4858,7 +4860,7 @@
       "facts"
     ],
     "image": "example.jpg",
-    "defaultSortWeight": 0,
+    "defaultSortWeight": -1,
     "lastCommit": "2024-09-01T13:55:01-07:00"
   },
   {
@@ -5227,7 +5229,7 @@
     "issues": true,
     "stars": 6,
     "license": "MIT",
-    "defaultSortWeight": 7,
+    "defaultSortWeight": 8,
     "lastCommit": "2024-11-14T10:23:20+01:00"
   },
   {
@@ -6270,7 +6272,7 @@
     "issues": true,
     "stars": 22,
     "license": "GPL-3.0",
-    "defaultSortWeight": 4,
+    "defaultSortWeight": 5,
     "lastCommit": "2016-12-28T23:34:56+02:00"
   },
   {
@@ -6376,7 +6378,7 @@
       "scheduler"
     ],
     "image": "images-sample.jpg",
-    "defaultSortWeight": 6,
+    "defaultSortWeight": 7,
     "lastCommit": "2024-03-28T10:17:32-04:00"
   },
   {
@@ -6525,7 +6527,7 @@
       "grocy"
     ],
     "image": "docs-Screenshot.jpg",
-    "defaultSortWeight": 1,
+    "defaultSortWeight": 2,
     "lastCommit": "2024-09-11T17:54:30+01:00"
   },
   {
@@ -6840,7 +6842,7 @@
     "issues": true,
     "stars": 2,
     "license": "MIT",
-    "defaultSortWeight": 4,
+    "defaultSortWeight": 5,
     "lastCommit": "2021-04-23T15:22:17+12:00"
   },
   {
@@ -7434,7 +7436,7 @@
       "citymapper.com"
     ],
     "image": "images-MMM-IDF-LOCALTRANSPORT-TRANSILIEN-2023.jpg",
-    "defaultSortWeight": 13,
+    "defaultSortWeight": 14,
     "lastCommit": "2024-03-02T19:21:37+01:00"
   },
   {
@@ -8089,7 +8091,7 @@
       "shares"
     ],
     "image": "docs-example.jpg",
-    "defaultSortWeight": 0,
+    "defaultSortWeight": 1,
     "lastCommit": "2024-06-04T15:32:59+02:00"
   },
   {
@@ -8406,7 +8408,7 @@
     "description": "Use the keyboard to open and close a popupwindow in the MagicMirror\u00b2. Like lets say using the \"q\" key will open a popupwindow on MagicMirror's webpage. Using the iFrame to display web content.",
     "issues": true,
     "stars": 2,
-    "defaultSortWeight": 7,
+    "defaultSortWeight": 8,
     "lastCommit": "2020-10-28T08:24:26+01:00"
   },
   {
@@ -8830,7 +8832,7 @@
       "teleinfo"
     ],
     "image": "doc-shots-Sample1.jpg",
-    "defaultSortWeight": 9,
+    "defaultSortWeight": 10,
     "lastCommit": "2025-01-07T22:21:24+01:00"
   },
   {
@@ -9275,7 +9277,7 @@
     "stars": 8,
     "license": "MIT",
     "image": ".github-preview.jpg",
-    "defaultSortWeight": 7,
+    "defaultSortWeight": 8,
     "lastCommit": "2018-04-08T08:08:21+02:00"
   },
   {
@@ -9867,7 +9869,7 @@
     "stars": 6,
     "license": "MIT",
     "image": "mm concerts calendar.jpg",
-    "defaultSortWeight": 8,
+    "defaultSortWeight": 9,
     "lastCommit": "2022-06-21T21:05:46+02:00"
   },
   {
@@ -9941,7 +9943,7 @@
     "stars": 61,
     "license": "MIT",
     "image": "LauncherIcon-MMM-Remote-LauncherIcon.jpg",
-    "defaultSortWeight": 5,
+    "defaultSortWeight": 6,
     "lastCommit": "2021-05-27T16:42:41+02:00"
   },
   {
@@ -10009,7 +10011,7 @@
       "tracker"
     ],
     "image": "screenshot.jpg",
-    "defaultSortWeight": 4,
+    "defaultSortWeight": 5,
     "lastCommit": "2025-01-04T19:44:44-06:00"
   },
   {
@@ -10085,7 +10087,7 @@
     ],
     "license": "MIT",
     "image": "screenshot.jpg",
-    "defaultSortWeight": 4,
+    "defaultSortWeight": 5,
     "lastCommit": "2024-04-19T13:56:17+02:00"
   },
   {
@@ -10184,7 +10186,7 @@
     "tags": [
       "pins"
     ],
-    "defaultSortWeight": 11,
+    "defaultSortWeight": 12,
     "lastCommit": "2019-07-03T09:18:21+02:00"
   },
   {
@@ -10198,7 +10200,7 @@
     "issues": true,
     "stars": 6,
     "license": "GPLv3",
-    "defaultSortWeight": 7,
+    "defaultSortWeight": 8,
     "lastCommit": "2021-05-27T13:07:01+00:00"
   },
   {
@@ -10217,7 +10219,7 @@
       "stocks"
     ],
     "license": "MIT",
-    "defaultSortWeight": 11,
+    "defaultSortWeight": 12,
     "lastCommit": "2019-07-22T22:37:45-04:00"
   },
   {
@@ -10310,7 +10312,7 @@
     "description": "Displays the current and forecasted UV Index for a given location given its longitude and latitude. It requires a free API token from <a target=\"_blank\" href=\"https://www.openuv.io/\">https://www.openuv.io/</a>.",
     "issues": true,
     "stars": 3,
-    "defaultSortWeight": 8,
+    "defaultSortWeight": 9,
     "lastCommit": "2019-12-14T21:46:27+11:00"
   },
   {
@@ -10353,7 +10355,7 @@
     "stars": 208,
     "license": "MIT",
     "image": "assets-MMPM-UI-Homepage.jpg",
-    "defaultSortWeight": -2,
+    "defaultSortWeight": -1,
     "lastCommit": "2025-02-22T18:43:13-05:00"
   },
   {
@@ -10415,7 +10417,7 @@
     "stars": 2,
     "license": "MIT",
     "image": "images-screenshot2.jpg",
-    "defaultSortWeight": 8,
+    "defaultSortWeight": 9,
     "lastCommit": "2021-10-08T13:20:22-04:00"
   },
   {
@@ -10760,7 +10762,7 @@
     ],
     "image": "screenshot.jpg",
     "defaultSortWeight": 1,
-    "lastCommit": "2025-03-01T13:19:32+01:00"
+    "lastCommit": "2025-03-05T11:27:43+01:00"
   },
   {
     "name": "MMM-MplayerRadio",
@@ -12056,7 +12058,7 @@
     "stars": 0,
     "license": "MIT",
     "image": "screenshots-screenshot1.jpg",
-    "defaultSortWeight": 8,
+    "defaultSortWeight": 9,
     "lastCommit": "2025-02-26T14:37:37+11:00"
   },
   {
@@ -12122,7 +12124,7 @@
       "ice hockey"
     ],
     "image": ".github-example_nhl.jpg",
-    "defaultSortWeight": 2,
+    "defaultSortWeight": 1,
     "lastCommit": "2025-01-06T08:34:09-06:00"
   },
   {
@@ -12507,7 +12509,7 @@
     "stars": 12,
     "license": "ISC",
     "image": ".previews-nstreinen-destination.jpg",
-    "defaultSortWeight": 5,
+    "defaultSortWeight": 6,
     "lastCommit": "2024-04-13T20:51:00+02:00"
   },
   {
@@ -13505,7 +13507,7 @@
     "issues": true,
     "stars": 7,
     "license": "MIT",
-    "defaultSortWeight": 8,
+    "defaultSortWeight": 9,
     "lastCommit": "2024-01-04T16:31:32+01:00"
   },
   {
@@ -13591,7 +13593,7 @@
       "phone notification",
       "notification"
     ],
-    "defaultSortWeight": 7,
+    "defaultSortWeight": 8,
     "lastCommit": "2019-07-01T11:24:28-04:00"
   },
   {
@@ -13624,7 +13626,7 @@
     "description": "A python script that puts your display to sleep, if your smartphone/smartwatch is not connected to the WiFi network.",
     "issues": true,
     "stars": 30,
-    "defaultSortWeight": 5,
+    "defaultSortWeight": 6,
     "lastCommit": "2020-05-18T15:43:17+02:00"
   },
   {
@@ -13828,7 +13830,7 @@
     "hasGithubIssues": false,
     "license": "MIT",
     "image": "icons-iconsets.jpg",
-    "defaultSortWeight": 9,
+    "defaultSortWeight": 10,
     "lastCommit": "2023-04-18T22:40:53+02:00"
   },
   {
@@ -14308,7 +14310,7 @@
     "stars": 5,
     "license": "MIT",
     "image": "Screenshot-MMM-Profile.jpg",
-    "defaultSortWeight": 6,
+    "defaultSortWeight": 7,
     "lastCommit": "2019-02-18T18:19:22+01:00"
   },
   {
@@ -14390,7 +14392,7 @@
       "scheduler"
     ],
     "image": ".github-example-screenshot.jpg",
-    "defaultSortWeight": 7,
+    "defaultSortWeight": 8,
     "lastCommit": "2023-11-29T14:06:10-05:00"
   },
   {
@@ -14404,7 +14406,7 @@
     "issues": true,
     "stars": 0,
     "license": "NOASSERTION",
-    "defaultSortWeight": 4,
+    "defaultSortWeight": 5,
     "lastCommit": "2025-02-22T13:52:35-05:00"
   },
   {
@@ -14418,7 +14420,7 @@
     "issues": true,
     "stars": 1,
     "license": "MIT",
-    "defaultSortWeight": 13,
+    "defaultSortWeight": 14,
     "lastCommit": "2018-03-27T22:05:47+00:00"
   },
   {
@@ -14456,7 +14458,7 @@
       "brandenburg"
     ],
     "image": "img-MMM-PublicTransport_screenshot.jpg",
-    "defaultSortWeight": 1,
+    "defaultSortWeight": 0,
     "lastCommit": "2025-03-01T15:32:48+01:00"
   },
   {
@@ -15371,7 +15373,7 @@
       "rnv"
     ],
     "image": "screenshot.jpg",
-    "defaultSortWeight": 5,
+    "defaultSortWeight": 6,
     "lastCommit": "2024-02-24T19:50:25+01:00"
   },
   {
@@ -15439,7 +15441,7 @@
       "roomba"
     ],
     "image": "screenshots-charging_full.jpg",
-    "defaultSortWeight": 5,
+    "defaultSortWeight": 6,
     "lastCommit": "2022-01-05T19:55:08-05:00"
   },
   {
@@ -15561,7 +15563,7 @@
     "stars": 0,
     "license": "MIT",
     "image": "img-App_Shot.jpg",
-    "defaultSortWeight": 11,
+    "defaultSortWeight": 12,
     "lastCommit": "2020-05-16T20:03:15+01:00"
   },
   {
@@ -15872,7 +15874,7 @@
     "stars": 1,
     "license": "MIT",
     "image": "images-1.jpg",
-    "defaultSortWeight": 5,
+    "defaultSortWeight": 6,
     "lastCommit": "2019-12-29T22:31:07-05:00"
   },
   {
@@ -16131,7 +16133,7 @@
     ],
     "license": "MIT",
     "image": "img-kubectl.jpg",
-    "defaultSortWeight": 2,
+    "defaultSortWeight": 1,
     "lastCommit": "2025-01-10T22:55:38+00:00"
   },
   {
@@ -16365,7 +16367,7 @@
     "description": "A very simple PIR motion sensor module",
     "issues": true,
     "stars": 1,
-    "defaultSortWeight": 7,
+    "defaultSortWeight": 8,
     "lastCommit": "2025-01-27T20:08:58-05:00"
   },
   {
@@ -16438,7 +16440,7 @@
       "sweden"
     ],
     "image": "screenshot.jpg",
-    "defaultSortWeight": 2,
+    "defaultSortWeight": 1,
     "lastCommit": "2024-03-25T17:57:51+01:00"
   },
   {
@@ -17156,7 +17158,7 @@
       "scheduler"
     ],
     "image": ".github-example-screenshot.jpg",
-    "defaultSortWeight": 7,
+    "defaultSortWeight": 8,
     "lastCommit": "2023-11-29T14:05:33-05:00"
   },
   {
@@ -18385,7 +18387,7 @@
     "description": "Display trains from your favorite departure station to any destination in Europe.",
     "issues": true,
     "stars": 3,
-    "defaultSortWeight": 8,
+    "defaultSortWeight": 9,
     "lastCommit": "2017-02-06T14:49:57+01:00"
   },
   {
@@ -18500,7 +18502,7 @@
     "description": "Display TransLoc locations for a bus stop, used by the Rider App.",
     "issues": true,
     "stars": 2,
-    "defaultSortWeight": 4,
+    "defaultSortWeight": 5,
     "lastCommit": "2019-06-09T19:14:09-04:00"
   },
   {
@@ -18927,7 +18929,7 @@
       "robot"
     ],
     "image": ".github-icons.jpg",
-    "defaultSortWeight": 7,
+    "defaultSortWeight": 8,
     "lastCommit": "2018-10-14T21:02:02+02:00"
   },
   {
@@ -19189,7 +19191,7 @@
     "hasGithubIssues": false,
     "license": "MIT",
     "image": "images-MMM-Vindsiden.jpg",
-    "defaultSortWeight": 9,
+    "defaultSortWeight": 10,
     "lastCommit": "2016-11-05T17:09:09+01:00"
   },
   {
@@ -20209,7 +20211,7 @@
     "issues": true,
     "stars": 0,
     "license": "MIT",
-    "defaultSortWeight": 10,
+    "defaultSortWeight": 11,
     "lastCommit": "2020-01-24T05:16:43+02:00"
   },
   {

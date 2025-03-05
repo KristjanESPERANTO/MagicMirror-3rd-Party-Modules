@@ -516,19 +516,6 @@
     "stars": 2
   },
   {
-    "name": "anniversarymodule",
-    "category": "Entertainment / Misc",
-    "url": "https://github.com/marcomerens/anniversarymodule",
-    "id": "marcomerens/anniversarymodule",
-    "maintainer": "marcomerens",
-    "maintainerURL": "",
-    "description": "Show a table of upcoming birthdays for a list of people you provided. Nice not to forget birthdays.",
-    "issues": [
-      "There is no `package.json`. We need this file to gather information about the module for the module list page."
-    ],
-    "stars": 4
-  },
-  {
     "name": "MMM-anotherNewsFeed",
     "category": "News / Information",
     "url": "https://github.com/MMRIZE/MMM-anotherNewsFeed",
@@ -1315,6 +1302,21 @@
     "stars": 13,
     "license": "Apache-2.0",
     "image": "example.jpg"
+  },
+  {
+    "name": "MMM-Birthdays",
+    "category": "Entertainment / Misc",
+    "url": "https://github.com/dennisklad/MMM-Birthdays",
+    "id": "dennisklad/MMM-Birthdays",
+    "maintainer": "dennisklad",
+    "maintainerURL": "",
+    "description": "Show a table of upcoming birthdays for a list of people you provided. Nice not to forget birthdays.",
+    "issues": [
+      "There is no `package.json`. We need this file to gather information about the module for the module list page.",
+      "Issues are not enabled in the GitHub repository. So users cannot report bugs. Please enable issues in your repo."
+    ],
+    "stars": 0,
+    "hasGithubIssues": false
   },
   {
     "name": "MMM-bitcoin",
@@ -2594,9 +2596,11 @@
     "maintainerURL": "",
     "description": "Displays ComEd 5 Minute and Hourly Average, the other repo (MMM-ComEdPrice) has not been updated in a while.",
     "issues": [
-      "There is no `package.json`. We need this file to gather information about the module for the module list page."
+      "There is no `package.json`. We need this file to gather information about the module for the module list page.",
+      "No image found."
     ],
-    "stars": 0
+    "stars": 0,
+    "license": "MIT"
   },
   {
     "name": "MMM-CommandToNotification",

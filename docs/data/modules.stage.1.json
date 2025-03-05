@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "2025-03-05T09:53:31.429Z",
+  "lastUpdate": "2025-03-05T11:53:17.426Z",
   "modules": [
     {
       "name": "MMM-01ZM",
@@ -301,16 +301,6 @@
       "maintainer": "diyeverythingvn",
       "maintainerURL": "",
       "description": "Am Lich - Lunar Date - Vietnamese Language.",
-      "issues": []
-    },
-    {
-      "name": "anniversarymodule",
-      "category": "Entertainment / Misc",
-      "url": "https://github.com/marcomerens/anniversarymodule",
-      "id": "marcomerens/anniversarymodule",
-      "maintainer": "marcomerens",
-      "maintainerURL": "",
-      "description": "Show a table of upcoming birthdays for a list of people you provided. Nice not to forget birthdays.",
       "issues": []
     },
     {
@@ -784,6 +774,16 @@
       "maintainer": "amitchone",
       "maintainerURL": "https://github.com/amitchone",
       "description": "A simple, lightweight birthday reminder - specified either via simple JSON file or in <code>config.js</code>. Supports multiple languages.",
+      "issues": []
+    },
+    {
+      "name": "MMM-Birthdays",
+      "category": "Entertainment / Misc",
+      "url": "https://github.com/dennisklad/MMM-Birthdays",
+      "id": "dennisklad/MMM-Birthdays",
+      "maintainer": "dennisklad",
+      "maintainerURL": "",
+      "description": "Show a table of upcoming birthdays for a list of people you provided. Nice not to forget birthdays.",
       "issues": []
     },
     {
