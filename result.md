@@ -1,6 +1,6 @@
 # Result of the module analysis
 
-Last update: 2025-03-06T05:37:34+01:00
+Last update: 2025-03-06T17:37:26+01:00
 
 ## Statistics
 
@@ -776,7 +776,8 @@ Last update: 2025-03-06T05:37:34+01:00
 ### [MMM-BoschSmartHome by jalibu](https://github.com/jalibu/MMM-BoschSmartHome)
 
 1. The main js file MMM-BoschSmartHome.js is minified. Please consider to replace it with a non-minified version for better readability and error analysis.
-2. Information: There are updates for 11 dependencie(s):
+2. Information: There are updates for 12 dependencie(s):
+   - @rollup/plugin-commonjs    ^28.0.2  →   ^28.0.3
    - @stylistic/eslint-plugin   ^2.12.1  →    ^4.2.0
    - @types/node               ^22.10.2  →  ^22.13.9
    - bosch-smart-home-bridge     ^1.6.0  →    ^1.7.9
@@ -3968,7 +3969,7 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
    - @electron/rebuild    ^3.6.0  →   ^3.7.1
    - node-abi            ^3.65.0  →   ^4.1.0
    - node-gyp            ^10.2.0  →  ^11.1.0
-   - puppeteer          ^22.15.0  →  ^24.3.1
+   - puppeteer          ^22.15.0  →  ^24.4.0
    - sharp               ^0.33.4  →  ^0.33.5
 
 
@@ -3987,7 +3988,7 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
 1. The main js file MMM-Jast.js is minified. Please consider to replace it with a non-minified version for better readability and error analysis.
 2. Recommendation: Replace eslintrc by new flat config.
 3. Information: There are updates for 13 dependencie(s):
-   - @rollup/plugin-commonjs           ^25.0.7  →  ^28.0.2
+   - @rollup/plugin-commonjs           ^25.0.7  →  ^28.0.3
    - @rollup/plugin-node-resolve       ^15.2.3  →  ^16.0.0
    - @rollup/plugin-typescript         ^11.1.6  →  ^12.1.2
    - @typescript-eslint/eslint-plugin  ^6.19.1  →  ^8.26.0
@@ -7416,7 +7417,7 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
 1. The main js file MMM-RAIN-MAP.js is minified. Please consider to replace it with a non-minified version for better readability and error analysis.
 2. Information: There are updates for 10 dependencie(s):
    - @eslint/js                    ^9.9.1  →  ^9.21.0
-   - @rollup/plugin-commonjs      ^26.0.1  →  ^28.0.2
+   - @rollup/plugin-commonjs      ^26.0.1  →  ^28.0.3
    - @rollup/plugin-node-resolve  ^15.2.3  →  ^16.0.0
    - @rollup/plugin-typescript    ^11.1.6  →  ^12.1.2
    - eslint                        ^9.9.1  →  ^9.21.0
@@ -7929,7 +7930,7 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
    - @aws-sdk/client-lambda            ^3.0.0  →   ^3.758.0
    - @aws-sdk/client-s3                ^3.0.0  →   ^3.758.0
    - @aws-sdk/client-sts             ^3.738.0  →   ^3.758.0
-   - aws-cdk                           ^2.0.0  →  ^2.1002.0
+   - aws-cdk                           ^2.0.0  →  ^2.1003.0
    - aws-cdk-lib                       ^2.0.0  →   ^2.182.0
    - constructs                       ^10.0.0  →    ^10.4.2
    - dotenv                           ^16.0.0  →    ^16.4.7

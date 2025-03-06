@@ -4057,7 +4057,7 @@
     "maintainerURL": "",
     "description": "Displays weather warnings for Germany.",
     "issues": true,
-    "stars": 64,
+    "stars": 63,
     "license": "MIT",
     "image": "screenshot.jpg",
     "defaultSortWeight": 10,
@@ -4369,7 +4369,7 @@
     "maintainerURL": "https://github.com/Tom-Hirschberger",
     "description": "Embed one or multiple websites with there URL.",
     "issues": true,
-    "stars": 24,
+    "stars": 25,
     "license": "MIT",
     "tags": [
       "embed",
@@ -4549,7 +4549,7 @@
     "stars": 8,
     "license": "MIT",
     "defaultSortWeight": 10,
-    "lastCommit": "2023-09-14T22:04:07+12:00"
+    "lastCommit": "2025-03-06T22:23:25+13:00"
   },
   {
     "name": "MMM-ethereum",
@@ -10761,7 +10761,7 @@
     ],
     "image": "screenshot.jpg",
     "defaultSortWeight": 1,
-    "lastCommit": "2025-03-05T17:27:24+01:00"
+    "lastCommit": "2025-03-06T11:30:32+01:00"
   },
   {
     "name": "MMM-MplayerRadio",
