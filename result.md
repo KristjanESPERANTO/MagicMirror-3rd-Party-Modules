@@ -1,6 +1,6 @@
 # Result of the module analysis
 
-Last update: 2025-03-05T17:37:37+01:00
+Last update: 2025-03-06T05:37:34+01:00
 
 ## Statistics
 
@@ -7930,7 +7930,7 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
    - @aws-sdk/client-s3                ^3.0.0  →   ^3.758.0
    - @aws-sdk/client-sts             ^3.738.0  →   ^3.758.0
    - aws-cdk                           ^2.0.0  →  ^2.1002.0
-   - aws-cdk-lib                       ^2.0.0  →   ^2.181.1
+   - aws-cdk-lib                       ^2.0.0  →   ^2.182.0
    - constructs                       ^10.0.0  →    ^10.4.2
    - dotenv                           ^16.0.0  →    ^16.4.7
    - inquirer                          ^8.2.4  →    ^12.4.2

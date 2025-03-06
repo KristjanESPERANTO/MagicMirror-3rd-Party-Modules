@@ -2376,7 +2376,7 @@
     "issues": true,
     "stars": 46,
     "license": "MIT",
-    "defaultSortWeight": 7,
+    "defaultSortWeight": 8,
     "lastCommit": "2023-03-05T20:51:52+01:00"
   },
   {
@@ -2767,6 +2767,21 @@
   },
   {
     "name": "MMM-CountDown",
+    "category": "Utility / IoT / 3rd Party / Integration",
+    "url": "https://github.com/daterrell/MMM-CountDown",
+    "id": "daterrell/MMM-CountDown",
+    "maintainer": "daterrell",
+    "maintainerURL": "",
+    "description": "Count down to or up from a datetime.",
+    "issues": true,
+    "stars": 4,
+    "license": "MIT",
+    "image": ".github-CountDown-1.jpg",
+    "defaultSortWeight": 5,
+    "lastCommit": "2024-01-01T10:16:45-08:00"
+  },
+  {
+    "name": "MMM-CountDown",
     "category": "Outdated Modules",
     "url": "https://github.com/boazarad/MMM-CountDown",
     "id": "boazarad/MMM-CountDown",
@@ -2780,21 +2795,6 @@
     "image": "screenshots-screenshot.jpg",
     "defaultSortWeight": 901,
     "lastCommit": "2019-09-07T22:06:29+03:00"
-  },
-  {
-    "name": "MMM-CountDown",
-    "category": "Utility / IoT / 3rd Party / Integration",
-    "url": "https://github.com/daterrell/MMM-CountDown",
-    "id": "daterrell/MMM-CountDown",
-    "maintainer": "daterrell",
-    "maintainerURL": "",
-    "description": "Count down to or up from a datetime.",
-    "issues": true,
-    "stars": 4,
-    "license": "MIT",
-    "image": ".github-CountDown-1.jpg",
-    "defaultSortWeight": 5,
-    "lastCommit": "2024-01-01T10:16:45-08:00"
   },
   {
     "name": "MMM-CountEvents",
@@ -3379,7 +3379,7 @@
     "maintainerURL": "",
     "description": "Display the verse of the day from &lt;<a target=\"_blank\" href=\"http://www.biblegateway.com%3E\">www.biblegateway.com&gt;</a>.",
     "issues": true,
-    "stars": 27,
+    "stars": 28,
     "license": "MIT",
     "defaultSortWeight": 8,
     "lastCommit": "2020-04-14T22:58:43+02:00"
@@ -3500,7 +3500,7 @@
     "maintainerURL": "",
     "description": "Displays the daily XKCD web comic.",
     "issues": true,
-    "stars": 52,
+    "stars": 53,
     "license": "MIT",
     "defaultSortWeight": 6,
     "lastCommit": "2021-10-19T23:33:25-04:00"
@@ -3574,7 +3574,7 @@
     "maintainerURL": "",
     "description": "Shows the date without a clock (if you have one in another place).",
     "issues": true,
-    "stars": 5,
+    "stars": 6,
     "defaultSortWeight": 6,
     "lastCommit": "2019-08-15T23:12:29+02:00"
   },
@@ -3797,7 +3797,7 @@
     "maintainerURL": "",
     "description": "Display messages from discord channels.",
     "issues": true,
-    "stars": 9,
+    "stars": 10,
     "license": "CC0-1.0",
     "tags": [
       "discord"

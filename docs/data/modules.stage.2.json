@@ -1938,6 +1938,18 @@
   },
   {
     "name": "MMM-CountDown",
+    "category": "Utility / IoT / 3rd Party / Integration",
+    "url": "https://github.com/daterrell/MMM-CountDown",
+    "id": "daterrell/MMM-CountDown",
+    "maintainer": "daterrell",
+    "maintainerURL": "",
+    "description": "Count down to or up from a datetime.",
+    "issues": [],
+    "stars": 4,
+    "license": "MIT"
+  },
+  {
+    "name": "MMM-CountDown",
     "category": "Outdated Modules",
     "url": "https://github.com/boazarad/MMM-CountDown",
     "id": "boazarad/MMM-CountDown",
@@ -1947,18 +1959,6 @@
     "issues": [],
     "outdated": "Abandoned. No reactions to issues since years. Seems not to work anymore. Try MMM-CountDown by daterrell instead.",
     "stars": 36,
-    "license": "MIT"
-  },
-  {
-    "name": "MMM-CountDown",
-    "category": "Utility / IoT / 3rd Party / Integration",
-    "url": "https://github.com/daterrell/MMM-CountDown",
-    "id": "daterrell/MMM-CountDown",
-    "maintainer": "daterrell",
-    "maintainerURL": "",
-    "description": "Count down to or up from a datetime.",
-    "issues": [],
-    "stars": 4,
     "license": "MIT"
   },
   {
@@ -2391,7 +2391,7 @@
     "maintainerURL": "",
     "description": "Display the verse of the day from &lt;<a target=\"_blank\" href=\"http://www.biblegateway.com%3E\">www.biblegateway.com&gt;</a>.",
     "issues": [],
-    "stars": 27,
+    "stars": 28,
     "license": "MIT"
   },
   {
@@ -2486,7 +2486,7 @@
     "maintainerURL": "",
     "description": "Displays the daily XKCD web comic.",
     "issues": [],
-    "stars": 52,
+    "stars": 53,
     "license": "MIT"
   },
   {
@@ -2547,7 +2547,7 @@
     "maintainerURL": "",
     "description": "Shows the date without a clock (if you have one in another place).",
     "issues": [],
-    "stars": 5
+    "stars": 6
   },
   {
     "name": "MMM-DBF",
@@ -2714,7 +2714,7 @@
     "maintainerURL": "",
     "description": "Display messages from discord channels.",
     "issues": [],
-    "stars": 9,
+    "stars": 10,
     "license": "CC0-1.0"
   },
   {

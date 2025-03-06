@@ -2709,6 +2709,22 @@
   },
   {
     "name": "MMM-CountDown",
+    "category": "Utility / IoT / 3rd Party / Integration",
+    "url": "https://github.com/daterrell/MMM-CountDown",
+    "id": "daterrell/MMM-CountDown",
+    "maintainer": "daterrell",
+    "maintainerURL": "",
+    "description": "Count down to or up from a datetime.",
+    "issues": [
+      "`package.json` issue: No repository field.",
+      "There are no keywords in 'package.json'. We would use them as tags on the module list page."
+    ],
+    "stars": 4,
+    "license": "MIT",
+    "image": ".github-CountDown-1.jpg"
+  },
+  {
+    "name": "MMM-CountDown",
     "category": "Outdated Modules",
     "url": "https://github.com/boazarad/MMM-CountDown",
     "id": "boazarad/MMM-CountDown",
@@ -2723,22 +2739,6 @@
     "stars": 36,
     "license": "MIT",
     "image": "screenshots-screenshot.jpg"
-  },
-  {
-    "name": "MMM-CountDown",
-    "category": "Utility / IoT / 3rd Party / Integration",
-    "url": "https://github.com/daterrell/MMM-CountDown",
-    "id": "daterrell/MMM-CountDown",
-    "maintainer": "daterrell",
-    "maintainerURL": "",
-    "description": "Count down to or up from a datetime.",
-    "issues": [
-      "`package.json` issue: No repository field.",
-      "There are no keywords in 'package.json'. We would use them as tags on the module list page."
-    ],
-    "stars": 4,
-    "license": "MIT",
-    "image": ".github-CountDown-1.jpg"
   },
   {
     "name": "MMM-CountEvents",
@@ -3319,7 +3319,7 @@
       "There are no keywords in 'package.json'. We would use them as tags on the module list page.",
       "No image found."
     ],
-    "stars": 27,
+    "stars": 28,
     "license": "MIT"
   },
   {
@@ -3444,7 +3444,7 @@
       "There is no `package.json`. We need this file to gather information about the module for the module list page.",
       "No image found."
     ],
-    "stars": 52,
+    "stars": 53,
     "license": "MIT"
   },
   {
@@ -3521,7 +3521,7 @@
     "issues": [
       "There is no `package.json`. We need this file to gather information about the module for the module list page."
     ],
-    "stars": 5
+    "stars": 6
   },
   {
     "name": "MMM-DBF",
@@ -3749,7 +3749,7 @@
       "`package.json` issue: license should be a valid SPDX license expression",
       "Issue: The license in the package.json (CC Zero) doesn't match the license file (CC0-1.0)."
     ],
-    "stars": 9,
+    "stars": 10,
     "license": "CC0-1.0",
     "tags": [
       "discord"
