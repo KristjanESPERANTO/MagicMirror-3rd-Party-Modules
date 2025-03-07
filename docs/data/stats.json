@@ -2,10 +2,10 @@
   "moduleCounter": 1227,
   "modulesWithImageCounter": 861,
   "modulesWithIssuesCounter": 1226,
-  "issueCounter": 6613,
-  "lastUpdate": "2025-03-06T17:37:26+01:00",
+  "issueCounter": 6610,
+  "lastUpdate": "2025-03-07T05:38:07+01:00",
   "repositoryHoster": {
-    "github": 1100,
+    "github": 1099,
     "gitlab": 12,
     "bitbucket": 1
   },
@@ -444,7 +444,6 @@
     "moejetz": 1,
     "wzooff": 1,
     "crimsonclyde": 1,
-    "szech": 1,
     "rsperezn": 1,
     "spectroman": 1,
     "EnderFlop": 1,

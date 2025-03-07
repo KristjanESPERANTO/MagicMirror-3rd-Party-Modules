@@ -1,16 +1,16 @@
 # Result of the module analysis
 
-Last update: 2025-03-06T17:37:26+01:00
+Last update: 2025-03-07T05:38:07+01:00
 
 ## Statistics
 
 |                      | number   |
 |:---------------------|:--------:|
 | modules analyzed     |   1227   |
-| maintainer           |    663   |
+| maintainer           |    662   |
 | modules with issues  |   1226   |
-| issues               |   6613   |
-| modules at github    |   1100   |
+| issues               |   6610   |
+| modules at github    |   1099   |
 | modules at gitlab    |     12   |
 | modules at bitbucket |      1   |
 
@@ -1066,7 +1066,8 @@ Last update: 2025-03-06T17:37:26+01:00
 
 ### [MMM-Canteen by KristjanESPERANTO](https://github.com/KristjanESPERANTO/MMM-Canteen)
 
-1. Information: There are updates for 3 dependencie(s):
+1. Information: There are updates for 4 dependencie(s):
+   - @eslint/markdown            ^6.2.2  →    ^6.3.0
    - @stylistic/eslint-plugin    ^4.0.1  →    ^4.2.0
    - prettier                    ^3.5.2  →    ^3.5.3
    - stylelint                 ^16.14.1  →  ^16.15.0
@@ -1542,7 +1543,8 @@ Last update: 2025-03-06T17:37:26+01:00
 ### [MMM-Dad-Jokes by brucetony](https://github.com/brucetony/MMM-Dad-Jokes)
 
 1. Recommendation: Found `"eslint-plugin-json"` in file `package.json`: Replace it by `eslint-plugin-jsonc`.
-2. Information: There are updates for 3 dependencie(s):
+2. Information: There are updates for 4 dependencie(s):
+   - @eslint/markdown               ^6.2.2  →    ^6.3.0
    - @stylistic/eslint-plugin-js    ^4.0.1  →    ^4.2.0
    - eslint-plugin-n              ^17.15.1  →  ^17.16.2
    - stylelint                    ^16.14.1  →  ^16.15.0
@@ -2605,7 +2607,8 @@ deprecated: no longer maintained, switch to modern iconify-icon web component
 
 ### [MMM-Forum by KristjanESPERANTO](https://github.com/KristjanESPERANTO/MMM-Forum)
 
-1. Information: There are updates for 3 dependencie(s):
+1. Information: There are updates for 4 dependencie(s):
+   - @eslint/markdown            ^6.2.2  →    ^6.3.0
    - @stylistic/eslint-plugin    ^4.0.1  →    ^4.2.0
    - prettier                    ^3.5.2  →    ^3.5.3
    - stylelint                 ^16.14.1  →  ^16.15.0
@@ -4726,7 +4729,7 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
    - @commitlint/config-conventional   ^19.5.0  →   ^19.7.1
    - @eslint/js                        ^9.20.0  →   ^9.21.0
    - @eslint/json                       ^0.9.0  →   ^0.10.0
-   - @eslint/markdown                   ^6.2.1  →    ^6.2.2
+   - @eslint/markdown                   ^6.2.1  →    ^6.3.0
    - @stylistic/eslint-plugin          ^2.12.1  →    ^4.2.0
    - eslint                            ^9.20.0  →   ^9.21.0
    - eslint-plugin-package-json        ^0.19.0  →   ^0.26.2
@@ -5152,13 +5155,6 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
 1. There is no `package.json`. We need this file to gather information about the module for the module list page.
 2. Recommendation: Module name doesn't follow the recommended pattern (it doesn't start with `MMM-`). Consider renaming your module.
 3. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
-
-### [mmm-uk-pollen-forecast by szech](https://github.com/szech/mmm-uk-pollen-forecast)
-
-1. `package.json` issue: No repository field.
-2. Recommendation: Module name doesn't follow the recommended pattern (it doesn't start with `MMM-`). Consider renaming your module.
-3. Deprecated: Found `require('request')` in file `node_helper.js`: Replace it with built-in fetch.
-4. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
 
 ### [mmm-uvindex by rsperezn](https://bitbucket.org/rsperezn/mmm-uvindex)
 
@@ -7289,8 +7285,10 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
 
 ### [MMM-PublicTransportHafas by KristjanESPERANTO](https://github.com/KristjanESPERANTO/MMM-PublicTransportHafas)
 
-1. Information: There are updates for 3 dependencie(s):
+1. Information: There are updates for 5 dependencie(s):
+   - @eslint/markdown             ^6.2.2  →   ^6.3.0
    - @stylistic/eslint-plugin     ^4.1.0  →   ^4.2.0
+   - db-vendo-client              ^6.6.0  →   ^6.6.1
    - eslint-plugin-package-json  ^0.26.1  →  ^0.26.2
    - prettier                     ^3.5.2  →   ^3.5.3
 

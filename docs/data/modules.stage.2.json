@@ -1805,7 +1805,7 @@
     "maintainerURL": "https://github.com/malako",
     "description": "Display cryptocurrency information from <a target=\"_blank\" href=\"https://www.coingecko.com/\">CoinGecko</a>. Ticker price, logos, 7d sparkline, holdings etc.",
     "issues": [],
-    "stars": 2,
+    "stars": 3,
     "license": "MIT"
   },
   {
@@ -3201,7 +3201,7 @@
     "description": "The Encyclopedia of Life.",
     "issues": [],
     "outdated": "Abandoned. Developer is no longer active. Missing instructions to install dependency 'request'.",
-    "stars": 7,
+    "stars": 6,
     "license": "MIT"
   },
   {
@@ -3310,7 +3310,7 @@
     "description": "Upcoming events in your city. Concerts, Performances, Comedy Shows, Sporting Events, Theatre, Exhibits, Art Galleries, Museums, Festivals, Food &amp; Drink and many more.",
     "issues": [],
     "outdated": "Deprecated. Eventful API discontinued. This module needs updated.",
-    "stars": 23,
+    "stars": 22,
     "license": "MIT"
   },
   {
@@ -3347,7 +3347,7 @@
     "maintainerURL": "",
     "description": "Add some EyeCandy to your mirror. You can even choose your own local images or internet images.",
     "issues": [],
-    "stars": 46,
+    "stars": 47,
     "license": "MIT"
   },
   {
@@ -3397,7 +3397,7 @@
     "maintainerURL": "",
     "description": "All new version of Face Recognition with Open CV 4.1 and Deep Neural Network.",
     "issues": [],
-    "stars": 94,
+    "stars": 93,
     "license": "MIT"
   },
   {
@@ -7377,13 +7377,14 @@
   },
   {
     "name": "mmm-uk-pollen-forecast",
-    "category": "Weather",
+    "category": "Outdated Modules",
     "url": "https://github.com/szech/mmm-uk-pollen-forecast",
     "id": "szech/mmm-uk-pollen-forecast",
     "maintainer": "szech",
     "maintainerURL": "",
     "description": "Displays pollen forecast for your area in the UK.",
     "issues": [],
+    "outdated": "Abandoned",
     "stars": 1,
     "license": "MIT"
   },

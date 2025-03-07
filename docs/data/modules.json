@@ -2575,7 +2575,7 @@
     "maintainerURL": "https://github.com/malako",
     "description": "Display cryptocurrency information from <a target=\"_blank\" href=\"https://www.coingecko.com/\">CoinGecko</a>. Ticker price, logos, 7d sparkline, holdings etc.",
     "issues": true,
-    "stars": 2,
+    "stars": 3,
     "license": "MIT",
     "tags": [
       "crypto currency",
@@ -4512,7 +4512,7 @@
     "description": "The Encyclopedia of Life.",
     "issues": false,
     "outdated": "Abandoned. Developer is no longer active. Missing instructions to install dependency 'request'.",
-    "stars": 7,
+    "stars": 6,
     "license": "MIT",
     "image": "images-2.jpg",
     "defaultSortWeight": 901,
@@ -4653,7 +4653,7 @@
     "description": "Upcoming events in your city. Concerts, Performances, Comedy Shows, Sporting Events, Theatre, Exhibits, Art Galleries, Museums, Festivals, Food &amp; Drink and many more.",
     "issues": false,
     "outdated": "Deprecated. Eventful API discontinued. This module needs updated.",
-    "stars": 23,
+    "stars": 22,
     "license": "MIT",
     "image": "icons-go.jpg",
     "defaultSortWeight": 901,
@@ -4699,7 +4699,7 @@
     "maintainerURL": "",
     "description": "Add some EyeCandy to your mirror. You can even choose your own local images or internet images.",
     "issues": true,
-    "stars": 46,
+    "stars": 47,
     "license": "MIT",
     "image": "pix-1.jpg",
     "defaultSortWeight": 4,
@@ -4764,7 +4764,7 @@
     "maintainerURL": "",
     "description": "All new version of Face Recognition with Open CV 4.1 and Deep Neural Network.",
     "issues": true,
-    "stars": 94,
+    "stars": 93,
     "license": "MIT",
     "tags": [
       "face",
@@ -10281,13 +10281,14 @@
   },
   {
     "name": "mmm-uk-pollen-forecast",
-    "category": "Weather",
+    "category": "Outdated Modules",
     "url": "https://github.com/szech/mmm-uk-pollen-forecast",
     "id": "szech/mmm-uk-pollen-forecast",
     "maintainer": "szech",
     "maintainerURL": "",
     "description": "Displays pollen forecast for your area in the UK.",
-    "issues": true,
+    "issues": false,
+    "outdated": "Abandoned",
     "stars": 1,
     "license": "MIT",
     "tags": [
@@ -10298,7 +10299,7 @@
       "tree"
     ],
     "image": "pollen_forecast.jpg",
-    "defaultSortWeight": 5,
+    "defaultSortWeight": 901,
     "lastCommit": "2022-08-13T12:20:39+01:00"
   },
   {
@@ -13830,7 +13831,7 @@
     "license": "MIT",
     "image": "icons-iconsets.jpg",
     "defaultSortWeight": 10,
-    "lastCommit": "2023-04-18T22:40:53+02:00"
+    "lastCommit": "2025-03-06T18:30:47+01:00"
   },
   {
     "name": "MMM-PiTemp",
@@ -16867,7 +16868,7 @@
     "license": "MIT",
     "image": "screenshot.jpg",
     "defaultSortWeight": 6,
-    "lastCommit": "2024-01-18T20:28:51+01:00"
+    "lastCommit": "2025-03-06T19:31:33+01:00"
   },
   {
     "name": "MMM-SolarPicture",

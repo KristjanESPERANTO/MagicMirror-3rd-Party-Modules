@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "2025-03-06T16:30:08.387Z",
+  "lastUpdate": "2025-03-07T04:30:12.128Z",
   "modules": [
     {
       "name": "MMM-01ZM",
@@ -6240,13 +6240,14 @@
     },
     {
       "name": "mmm-uk-pollen-forecast",
-      "category": "Weather",
+      "category": "Outdated Modules",
       "url": "https://github.com/szech/mmm-uk-pollen-forecast",
       "id": "szech/mmm-uk-pollen-forecast",
       "maintainer": "szech",
       "maintainerURL": "",
       "description": "Displays pollen forecast for your area in the UK.",
-      "issues": []
+      "issues": [],
+      "outdated": "Abandoned"
     },
     {
       "name": "mmm-uvindex",
