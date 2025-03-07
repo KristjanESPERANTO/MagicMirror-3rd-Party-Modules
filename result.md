@@ -1,6 +1,6 @@
 # Result of the module analysis
 
-Last update: 2025-03-07T05:38:07+01:00
+Last update: 2025-03-07T17:37:20+01:00
 
 ## Statistics
 
@@ -782,7 +782,7 @@ Last update: 2025-03-07T05:38:07+01:00
    - @types/node               ^22.10.2  →  ^22.13.9
    - bosch-smart-home-bridge     ^1.6.0  →    ^1.7.9
    - eslint                     ^9.17.0  →   ^9.21.0
-   - eslint-config-prettier      ^9.1.0  →   ^10.0.2
+   - eslint-config-prettier      ^9.1.0  →   ^10.1.1
    - eslint-plugin-prettier      ^5.2.1  →    ^5.2.3
    - prettier                    ^3.4.2  →    ^3.5.3
    - rollup                     ^4.29.1  →   ^4.34.9
@@ -940,13 +940,7 @@ Last update: 2025-03-07T05:38:07+01:00
    - googleapis  ^144.0.0  →  ^146.0.0
    - tsdav         ^2.1.2  →    ^2.1.3
 
-2. ESLint issues:
-   - node_helper.js: Line 3, Column 20: 'DAVNamespace' is assigned a value but never used. (rule: no-unused-vars)
-   - node_helper.js: Line 108, Column 53: Unsafe usage of optional chaining. If it short-circuits with 'undefined' the evaluation will throw TypeError. (rule: no-unsafe-optional-chaining)
-   - node_helper.js: Line 164, Column 7: Unsafe usage of ReturnStatement. (rule: no-unsafe-finally)
-   - node_helper.js: Line 177, Column 53: 'next' is defined but never used. (rule: no-unused-vars)
-   - package.json: Line 6, Column 14: Package scripts are not alphabetized (rule: package-json/sort-collections)
-
+2. npm notice Changelog: <https://github.com/npm/cli/releases/tag/v11.2.0>
 
 ### [MMM-CalendarExt3 by MMRIZE](https://github.com/MMRIZE/MMM-CalendarExt3)
 
@@ -3997,7 +3991,7 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
    - @typescript-eslint/eslint-plugin  ^6.19.1  →  ^8.26.0
    - @typescript-eslint/parser         ^6.19.1  →  ^8.26.0
    - eslint                            ^8.56.0  →  ^9.21.0
-   - eslint-config-prettier             ^9.1.0  →  ^10.0.2
+   - eslint-config-prettier             ^9.1.0  →  ^10.1.1
    - eslint-plugin-prettier             ^5.1.3  →   ^5.2.3
    - prettier                           ^3.2.4  →   ^3.5.3
    - rollup                             ^4.9.6  →  ^4.34.9
@@ -4725,8 +4719,8 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
 ### [MMM-MealieMenu by zanix](https://github.com/zanix/MMM-MealieMenu)
 
 1. Information: There are updates for 16 dependencie(s):
-   - @commitlint/cli                   ^19.3.0  →   ^19.7.1
-   - @commitlint/config-conventional   ^19.5.0  →   ^19.7.1
+   - @commitlint/cli                   ^19.3.0  →   ^19.8.0
+   - @commitlint/config-conventional   ^19.5.0  →   ^19.8.0
    - @eslint/js                        ^9.20.0  →   ^9.21.0
    - @eslint/json                       ^0.9.0  →   ^0.10.0
    - @eslint/markdown                   ^6.2.1  →    ^6.3.0
@@ -4758,7 +4752,7 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
 2. Recommendation: Found `axios` in file `package.json`: Replace it with built-in fetch.
 3. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
 4. Information: There are updates for 1 dependencie(s):
-   - axios  ^1.7.7  →  ^1.8.1
+   - axios  ^1.7.7  →  ^1.8.2
 
 
 ### [MMM-Memo by schnibel](https://github.com/schnibel/MMM-Memo)
@@ -4905,7 +4899,7 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
 2. Recommendation: Found `axios` in file `package.json`: Replace it with built-in fetch.
 3. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
 4. Information: There are updates for 1 dependencie(s):
-   - axios  ^1.6.8  →  ^1.8.1
+   - axios  ^1.6.8  →  ^1.8.2
 
 
 ### [MM-concert-calendar by muilpp](https://github.com/muilpp/MM-concert-calendar)
@@ -5941,19 +5935,19 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
    - qrcode  1.5.1  →  1.5.4
 
 
-### [MMM-NewsAPI by totoluto](https://github.com/totoluto/MMM-NewsAPI)
-
-1. Typo: Found `Magic Mirror` in file `README.md`: Replace it with `MagicMirror²`.
-2. Recommendation: The README seems not to have an update instruction (the word 'update' is missing). Please add one.
-3. Typo: Found `Magic Mirror` in file `package.json`: Replace it with `MagicMirror²`.
-4. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
-
 ### [MMM-NewsAPI by mumblebaj](https://github.com/mumblebaj/MMM-NewsAPI)
 
 1. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
 2. ESLint issues:
    - MMM-NewsAPI.js: Line 164, Column 23: 'qr' is assigned a value but never used. (rule: no-unused-vars)
 
+
+### [MMM-NewsAPI by totoluto](https://github.com/totoluto/MMM-NewsAPI)
+
+1. Typo: Found `Magic Mirror` in file `README.md`: Replace it with `MagicMirror²`.
+2. Recommendation: The README seems not to have an update instruction (the word 'update' is missing). Please add one.
+3. Typo: Found `Magic Mirror` in file `package.json`: Replace it with `MagicMirror²`.
+4. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
 
 ### [MMM-NewsFeedTicker by justjim1220](https://github.com/justjim1220/MMM-NewsFeedTicker)
 
@@ -8590,7 +8584,7 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
 2. Recommendation: Found `axios` in file `package.json`: Replace it with built-in fetch.
 3. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
 4. Information: There are updates for 2 dependencie(s):
-   - axios  ^1.6.0  →   ^1.8.1
+   - axios  ^1.6.0  →   ^1.8.2
    - open   ^6.4.0  →  ^10.1.0
 
 
@@ -8627,7 +8621,7 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
 2. Recommendation: Found `axios` in file `package.json`: Replace it with built-in fetch.
 3. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
 4. Information: There are updates for 1 dependencie(s):
-   - axios  ^1.6.2  →  ^1.8.1
+   - axios  ^1.6.2  →  ^1.8.2
 
 
 ### [MMM-Star-Metro by alexandreLavenant](https://github.com/alexandreLavenant/MMM-Star-Metro)

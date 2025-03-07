@@ -11835,6 +11835,22 @@
   {
     "name": "MMM-NewsAPI",
     "category": "News / Information",
+    "url": "https://github.com/mumblebaj/MMM-NewsAPI",
+    "id": "mumblebaj/MMM-NewsAPI",
+    "maintainer": "mumblebaj",
+    "maintainerURL": "https://github.com/mumblebaj",
+    "description": "Get news from <a target=\"_blank\" href=\"https://newsapi.org\">newsapi.org</a>.",
+    "issues": [],
+    "stars": 11,
+    "license": "MIT",
+    "tags": [
+      "news"
+    ],
+    "image": "screenshot1.jpg"
+  },
+  {
+    "name": "MMM-NewsAPI",
+    "category": "News / Information",
     "url": "https://github.com/totoluto/MMM-NewsAPI",
     "id": "totoluto/MMM-NewsAPI",
     "maintainer": "totoluto",
@@ -11848,22 +11864,6 @@
       "api"
     ],
     "image": "screenshots-MMM-NewsApi.jpg"
-  },
-  {
-    "name": "MMM-NewsAPI",
-    "category": "News / Information",
-    "url": "https://github.com/mumblebaj/MMM-NewsAPI",
-    "id": "mumblebaj/MMM-NewsAPI",
-    "maintainer": "mumblebaj",
-    "maintainerURL": "https://github.com/mumblebaj",
-    "description": "Get news from <a target=\"_blank\" href=\"https://newsapi.org\">newsapi.org</a>.",
-    "issues": [],
-    "stars": 11,
-    "license": "MIT",
-    "tags": [
-      "news"
-    ],
-    "image": "screenshot1.jpg"
   },
   {
     "name": "MMM-NewsFeedTicker",

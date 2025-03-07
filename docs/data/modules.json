@@ -4075,7 +4075,7 @@
     "stars": 1,
     "hasGithubIssues": false,
     "defaultSortWeight": 5,
-    "lastCommit": "2025-03-02T19:31:19-05:00"
+    "lastCommit": "2025-03-07T10:49:15-05:00"
   },
   {
     "name": "MMM-DynamicSnow",
@@ -11907,6 +11907,24 @@
   {
     "name": "MMM-NewsAPI",
     "category": "News / Information",
+    "url": "https://github.com/mumblebaj/MMM-NewsAPI",
+    "id": "mumblebaj/MMM-NewsAPI",
+    "maintainer": "mumblebaj",
+    "maintainerURL": "https://github.com/mumblebaj",
+    "description": "Get news from <a target=\"_blank\" href=\"https://newsapi.org\">newsapi.org</a>.",
+    "issues": true,
+    "stars": 11,
+    "license": "MIT",
+    "tags": [
+      "news"
+    ],
+    "image": "screenshot1.jpg",
+    "defaultSortWeight": 0,
+    "lastCommit": "2024-09-29T13:44:39+02:00"
+  },
+  {
+    "name": "MMM-NewsAPI",
+    "category": "News / Information",
     "url": "https://github.com/totoluto/MMM-NewsAPI",
     "id": "totoluto/MMM-NewsAPI",
     "maintainer": "totoluto",
@@ -11922,24 +11940,6 @@
     "image": "screenshots-MMM-NewsApi.jpg",
     "defaultSortWeight": 3,
     "lastCommit": "2024-12-02T20:07:18+01:00"
-  },
-  {
-    "name": "MMM-NewsAPI",
-    "category": "News / Information",
-    "url": "https://github.com/mumblebaj/MMM-NewsAPI",
-    "id": "mumblebaj/MMM-NewsAPI",
-    "maintainer": "mumblebaj",
-    "maintainerURL": "https://github.com/mumblebaj",
-    "description": "Get news from <a target=\"_blank\" href=\"https://newsapi.org\">newsapi.org</a>.",
-    "issues": true,
-    "stars": 11,
-    "license": "MIT",
-    "tags": [
-      "news"
-    ],
-    "image": "screenshot1.jpg",
-    "defaultSortWeight": 0,
-    "lastCommit": "2024-09-29T13:44:39+02:00"
   },
   {
     "name": "MMM-NewsFeedTicker",
@@ -13246,7 +13246,7 @@
     ],
     "image": "example.jpg",
     "defaultSortWeight": 2,
-    "lastCommit": "2025-03-04T21:32:39-07:00"
+    "lastCommit": "2025-03-07T09:24:19-07:00"
   },
   {
     "name": "MMM-Pages-Screencast",
