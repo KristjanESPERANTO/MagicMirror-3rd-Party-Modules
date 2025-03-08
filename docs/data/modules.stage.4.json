@@ -5983,7 +5983,7 @@
       "There is no `package.json`. We need this file to gather information about the module for the module list page.",
       "No image found."
     ],
-    "stars": 41,
+    "stars": 43,
     "license": "MIT"
   },
   {
@@ -5998,7 +5998,7 @@
       "`package.json` issue: No description",
       "There are no keywords in 'package.json'. We would use them as tags on the module list page."
     ],
-    "stars": 73,
+    "stars": 74,
     "license": "MIT",
     "image": "screenshot.jpg"
   },
@@ -6064,7 +6064,7 @@
     "issues": [
       "There is no `package.json`. We need this file to gather information about the module for the module list page."
     ],
-    "stars": 47,
+    "stars": 46,
     "license": "MIT",
     "image": "screenshot.jpg"
   },
@@ -6097,7 +6097,7 @@
     "issues": [
       "There are no keywords in 'package.json'. We would use them as tags on the module list page."
     ],
-    "stars": 29,
+    "stars": 30,
     "license": "BSD-3-Clause",
     "image": "screenshot.jpg"
   },
@@ -6110,7 +6110,7 @@
     "maintainerURL": "https://github.com/randomBrainstormer",
     "description": "Get your Google Calendars in the shape of MagicMirror's default calendar.",
     "issues": [],
-    "stars": 78,
+    "stars": 79,
     "license": "MIT",
     "tags": [
       "google",

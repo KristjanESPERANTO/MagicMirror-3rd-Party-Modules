@@ -4320,7 +4320,7 @@
     "maintainerURL": "",
     "description": "Displays a rotating globe constructed of Hexadecimal shapes specifically formatted to look great on a MagicMirror.",
     "issues": [],
-    "stars": 41,
+    "stars": 43,
     "license": "MIT"
   },
   {
@@ -4332,7 +4332,7 @@
     "maintainerURL": "",
     "description": "Displays live image of our planet.",
     "issues": [],
-    "stars": 73,
+    "stars": 74,
     "license": "MIT"
   },
   {
@@ -4380,7 +4380,7 @@
     "maintainerURL": "",
     "description": "Displays the two best routes from an origin to a destination, using Google Directions API.",
     "issues": [],
-    "stars": 47,
+    "stars": 46,
     "license": "MIT"
   },
   {
@@ -4405,7 +4405,7 @@
     "maintainerURL": "",
     "description": "Integrate your Google Contact's birthdays in the MagicMirror² calendar.",
     "issues": [],
-    "stars": 29,
+    "stars": 30,
     "license": "BSD-3-Clause"
   },
   {
@@ -4417,7 +4417,7 @@
     "maintainerURL": "https://github.com/randomBrainstormer",
     "description": "Get your Google Calendars in the shape of MagicMirror's default calendar.",
     "issues": [],
-    "stars": 78,
+    "stars": 79,
     "license": "MIT"
   },
   {
