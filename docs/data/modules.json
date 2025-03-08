@@ -1938,14 +1938,14 @@
     "maintainer": "MMM-CalendarExt2",
     "maintainerURL": "",
     "description": "Extended calendar and event view.",
-    "issues": false,
+    "issues": true,
     "stars": 103,
     "license": "MIT",
     "tags": [
       "calendar"
     ],
     "image": "docs-Configuration-Views-legend-full-example.jpg",
-    "defaultSortWeight": -3,
+    "defaultSortWeight": -2,
     "lastCommit": "2025-03-04T22:03:37+01:00"
   },
   {
@@ -5331,7 +5331,7 @@
     "maintainerURL": "https://github.com/E3V3A",
     "description": "A flight radar that display airplane/flight details of what is currently flying in the airspace above some location.",
     "issues": true,
-    "stars": 23,
+    "stars": 24,
     "license": "MIT",
     "tags": [
       "flights",
@@ -5440,7 +5440,7 @@
     "maintainerURL": "",
     "description": "Display the driver standings from the current Formula 1 season.",
     "issues": true,
-    "stars": 34,
+    "stars": 35,
     "license": "MIT",
     "tags": [
       "formula1"
@@ -5634,7 +5634,7 @@
     "maintainerURL": "",
     "description": "Displays data from a Fronius Solar Inverter, supports auto-off inverters and can be used as a data source for <a target=\"_blank\" href=\"https://github.com/deg0nz/MMM-EnergyMonitor\">MMM-EnergyMonitor</a>.",
     "issues": true,
-    "stars": 0,
+    "stars": 1,
     "license": "MIT",
     "tags": [
       "varta",
@@ -11789,7 +11789,7 @@
     ],
     "image": ".github-preview.bubbles.jpg",
     "defaultSortWeight": 0,
-    "lastCommit": "2025-02-28T19:14:43+00:00"
+    "lastCommit": "2025-03-07T22:31:16+00:00"
   },
   {
     "name": "MMM-Netatmo-Presence",
@@ -13246,7 +13246,7 @@
     ],
     "image": "example.jpg",
     "defaultSortWeight": 2,
-    "lastCommit": "2025-03-07T09:24:19-07:00"
+    "lastCommit": "2025-03-07T21:12:35-07:00"
   },
   {
     "name": "MMM-Pages-Screencast",

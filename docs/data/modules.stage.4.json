@@ -5279,7 +5279,7 @@
     "maintainerURL": "https://github.com/E3V3A",
     "description": "A flight radar that display airplane/flight details of what is currently flying in the airspace above some location.",
     "issues": [],
-    "stars": 23,
+    "stars": 24,
     "license": "MIT",
     "tags": [
       "flights",
@@ -5385,7 +5385,7 @@
     "maintainerURL": "",
     "description": "Display the driver standings from the current Formula 1 season.",
     "issues": [],
-    "stars": 34,
+    "stars": 35,
     "license": "MIT",
     "tags": [
       "formula1"
@@ -5574,7 +5574,7 @@
     "maintainerURL": "",
     "description": "Displays data from a Fronius Solar Inverter, supports auto-off inverters and can be used as a data source for <a target=\"_blank\" href=\"https://github.com/deg0nz/MMM-EnergyMonitor\">MMM-EnergyMonitor</a>.",
     "issues": [],
-    "stars": 0,
+    "stars": 1,
     "license": "MIT",
     "tags": [
       "varta",
