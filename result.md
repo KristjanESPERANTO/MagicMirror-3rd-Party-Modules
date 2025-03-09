@@ -1,6 +1,6 @@
 # Result of the module analysis
 
-Last update: 2025-03-08T17:37:33+01:00
+Last update: 2025-03-09T17:39:42+01:00
 
 ## Statistics
 
@@ -4351,11 +4351,8 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
 ### [MMM-Linky by 2hdlockness](https://github.com/2hdlockness/MMM-Linky)
 
 1. Repository name and main js file name is not the same.
-2. Information: There are updates for 4 dependencie(s):
-   - @stylistic/eslint-plugin      ^4.1.0  →    ^4.2.0
-   - eslint                       ^9.21.0  →   ^9.22.0
-   - eslint-plugin-package-json   ^0.26.0  →   ^0.26.3
-   - stylelint                   ^16.14.1  →  ^16.15.0
+2. ESLint issues:
+   - package.json: Line 2, Column 11: Invalid npm package name: name can no longer contain capital letters. (rule: package-json/valid-name)
 
 
 ### [MMM-Liquipedia-Matches by buxxi](https://github.com/buxxi/MMM-Liquipedia-Matches)

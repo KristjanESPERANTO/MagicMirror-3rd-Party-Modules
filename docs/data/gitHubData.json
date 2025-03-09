@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "2025-03-08T16:30:22.141Z",
+  "lastUpdate": "2025-03-09T16:30:22.149Z",
   "repositories": [
     {
       "id": "0lek/MMM-socialbicycles",
@@ -423,7 +423,7 @@
     },
     {
       "id": "aleckeller/MMM-HappyHours",
-      "gitHubDataLastUpdate": "2025-02-14T04:30:18.290Z",
+      "gitHubDataLastUpdate": "2025-03-09T16:30:20.895Z",
       "gitHubData": {
         "issues": 0,
         "stars": 3,
@@ -857,7 +857,7 @@
     },
     {
       "id": "aserramonner/MMM-HASS",
-      "gitHubDataLastUpdate": "2025-02-14T04:30:18.794Z",
+      "gitHubDataLastUpdate": "2025-03-09T16:30:21.355Z",
       "gitHubData": {
         "issues": 10,
         "stars": 34,
@@ -1669,7 +1669,7 @@
     },
     {
       "id": "brentpabst/MMM-gpsd",
-      "gitHubDataLastUpdate": "2025-02-13T04:30:31.219Z",
+      "gitHubDataLastUpdate": "2025-03-09T16:30:15.060Z",
       "gitHubData": {
         "issues": 0,
         "stars": 0,
@@ -2481,16 +2481,16 @@
     },
     {
       "id": "ChrisF1976/MMM-Cookidoo",
-      "gitHubDataLastUpdate": "2025-02-14T04:30:17.803Z",
+      "gitHubDataLastUpdate": "2025-03-09T16:30:20.435Z",
       "gitHubData": {
         "issues": 0,
-        "stars": 0,
+        "stars": 1,
         "license": "MIT",
         "archived": false,
         "disabled": false,
         "defaultBranch": "main",
         "has_issues": true,
-        "lastCommit": "2025-02-13T21:12:48Z"
+        "lastCommit": "2025-02-27T19:19:49Z"
       }
     },
     {
@@ -3433,9 +3433,9 @@
     },
     {
       "id": "dekinet/MMM-Growatt",
-      "gitHubDataLastUpdate": "2025-02-13T04:30:33.964Z",
+      "gitHubDataLastUpdate": "2025-03-09T16:30:17.651Z",
       "gitHubData": {
-        "issues": 2,
+        "issues": 3,
         "stars": 2,
         "license": "MIT",
         "archived": false,
@@ -3475,7 +3475,7 @@
     },
     {
       "id": "delightedCrow/MMM-HabiticaStats",
-      "gitHubDataLastUpdate": "2025-02-13T04:30:35.767Z",
+      "gitHubDataLastUpdate": "2025-03-09T16:30:19.394Z",
       "gitHubData": {
         "issues": 0,
         "stars": 19,
@@ -4511,7 +4511,7 @@
     },
     {
       "id": "EwwYumYuck/MMM-NRL",
-      "gitHubDataLastUpdate": "2025-02-13T04:30:29.549Z",
+      "gitHubDataLastUpdate": "2025-03-09T16:30:13.401Z",
       "gitHubData": {
         "issues": 0,
         "stars": 0,
@@ -4520,7 +4520,7 @@
         "disabled": false,
         "defaultBranch": "main",
         "has_issues": true,
-        "lastCommit": "2024-11-22T06:51:14Z"
+        "lastCommit": "2025-03-02T09:49:17Z"
       }
     },
     {
@@ -5225,7 +5225,7 @@
     },
     {
       "id": "Gismo150/MMM-GoogleShoppingList",
-      "gitHubDataLastUpdate": "2025-02-13T04:30:27.602Z",
+      "gitHubDataLastUpdate": "2025-03-09T16:30:11.625Z",
       "gitHubData": {
         "issues": 6,
         "stars": 23,
@@ -5729,16 +5729,16 @@
     },
     {
       "id": "hermanho/MMM-GooglePhotos",
-      "gitHubDataLastUpdate": "2025-02-13T04:30:26.690Z",
+      "gitHubDataLastUpdate": "2025-03-09T16:30:10.738Z",
       "gitHubData": {
-        "issues": 24,
+        "issues": 26,
         "stars": 180,
         "license": "MIT",
         "archived": false,
         "disabled": false,
         "defaultBranch": "master",
         "has_issues": true,
-        "lastCommit": "2024-08-15T23:55:56Z"
+        "lastCommit": "2025-03-09T15:59:04Z"
       }
     },
     {
@@ -5953,7 +5953,7 @@
     },
     {
       "id": "iceship/MMM-GyeonggiBus",
-      "gitHubDataLastUpdate": "2025-02-13T04:30:35.319Z",
+      "gitHubDataLastUpdate": "2025-03-09T16:30:19.006Z",
       "gitHubData": {
         "issues": 0,
         "stars": 8,
@@ -6233,16 +6233,16 @@
     },
     {
       "id": "Jacopo1891/MMM-GoogleTrafficTimes",
-      "gitHubDataLastUpdate": "2025-02-13T04:30:28.632Z",
+      "gitHubDataLastUpdate": "2025-03-09T16:30:12.596Z",
       "gitHubData": {
-        "issues": 3,
-        "stars": 17,
+        "issues": 0,
+        "stars": 18,
         "license": null,
         "archived": false,
         "disabled": false,
         "defaultBranch": "master",
         "has_issues": true,
-        "lastCommit": "2025-02-11T23:22:17Z"
+        "lastCommit": "2025-02-27T20:31:16Z"
       }
     },
     {
@@ -8263,7 +8263,7 @@
     },
     {
       "id": "maan75/MMM-HRS-PickupPlan",
-      "gitHubDataLastUpdate": "2025-02-13T04:30:34.411Z",
+      "gitHubDataLastUpdate": "2025-03-09T16:30:18.134Z",
       "gitHubData": {
         "issues": 0,
         "stars": 0,
@@ -8515,7 +8515,7 @@
     },
     {
       "id": "MartinGris/MMM-GoogleMaps-Tracking",
-      "gitHubDataLastUpdate": "2025-02-13T04:30:26.228Z",
+      "gitHubDataLastUpdate": "2025-03-09T16:30:10.359Z",
       "gitHubData": {
         "issues": 2,
         "stars": 17,
@@ -9061,7 +9061,7 @@
     },
     {
       "id": "MichaelF1/MMM-HDC1080",
-      "gitHubDataLastUpdate": "2025-02-14T04:30:19.573Z",
+      "gitHubDataLastUpdate": "2025-03-09T16:30:22.086Z",
       "gitHubData": {
         "issues": 3,
         "stars": 1,
@@ -9509,10 +9509,10 @@
     },
     {
       "id": "MMRIZE/MMM-GoogleTTS",
-      "gitHubDataLastUpdate": "2025-02-13T04:30:29.144Z",
+      "gitHubDataLastUpdate": "2025-03-09T16:30:13.023Z",
       "gitHubData": {
         "issues": 0,
-        "stars": 13,
+        "stars": 14,
         "license": "MIT",
         "archived": false,
         "disabled": false,
@@ -9523,7 +9523,7 @@
     },
     {
       "id": "MMRIZE/MMM-GroveGestures",
-      "gitHubDataLastUpdate": "2025-02-13T04:30:33.011Z",
+      "gitHubDataLastUpdate": "2025-03-09T16:30:16.796Z",
       "gitHubData": {
         "issues": 1,
         "stars": 39,
@@ -9691,7 +9691,7 @@
     },
     {
       "id": "mochman/MMM-GPSWeather",
-      "gitHubDataLastUpdate": "2025-02-13T04:30:31.714Z",
+      "gitHubDataLastUpdate": "2025-03-09T16:30:15.521Z",
       "gitHubData": {
         "issues": 0,
         "stars": 2,
@@ -10027,7 +10027,21 @@
     },
     {
       "id": "mumblebaj/MMM-Growatt",
-      "gitHubDataLastUpdate": "2025-02-13T04:30:33.520Z",
+      "gitHubDataLastUpdate": "2025-03-09T16:30:17.184Z",
+      "gitHubData": {
+        "issues": 0,
+        "stars": 5,
+        "license": "MIT",
+        "archived": false,
+        "disabled": false,
+        "defaultBranch": "main",
+        "has_issues": true,
+        "lastCommit": "2025-03-09T09:41:40Z"
+      }
+    },
+    {
+      "id": "mumblebaj/MMM-Growatt-Stats",
+      "gitHubDataLastUpdate": "2025-03-09T16:30:18.561Z",
       "gitHubData": {
         "issues": 0,
         "stars": 3,
@@ -10036,21 +10050,7 @@
         "disabled": false,
         "defaultBranch": "main",
         "has_issues": true,
-        "lastCommit": "2025-01-23T16:33:07Z"
-      }
-    },
-    {
-      "id": "mumblebaj/MMM-Growatt-Stats",
-      "gitHubDataLastUpdate": "2025-02-13T04:30:34.852Z",
-      "gitHubData": {
-        "issues": 1,
-        "stars": 2,
-        "license": "MIT",
-        "archived": false,
-        "disabled": false,
-        "defaultBranch": "main",
-        "has_issues": true,
-        "lastCommit": "2024-07-05T13:50:06Z"
+        "lastCommit": "2025-03-02T13:32:03Z"
       }
     },
     {
@@ -12939,9 +12939,9 @@
     },
     {
       "id": "ryan-d-williams/MMM-GoogleSheets",
-      "gitHubDataLastUpdate": "2025-02-13T04:30:27.093Z",
+      "gitHubDataLastUpdate": "2025-03-09T16:30:11.119Z",
       "gitHubData": {
-        "issues": 6,
+        "issues": 5,
         "stars": 32,
         "license": "MIT",
         "archived": false,
@@ -13807,7 +13807,7 @@
     },
     {
       "id": "Sjohn21/MMM-GPIO-HANDLER",
-      "gitHubDataLastUpdate": "2025-02-13T04:30:30.331Z",
+      "gitHubDataLastUpdate": "2025-03-09T16:30:14.239Z",
       "gitHubData": {
         "issues": 3,
         "stars": 4,
@@ -14157,7 +14157,7 @@
     },
     {
       "id": "sp4ceman/MMM-googlemaps",
-      "gitHubDataLastUpdate": "2025-02-13T04:30:25.805Z",
+      "gitHubDataLastUpdate": "2025-03-09T16:30:09.862Z",
       "gitHubData": {
         "issues": 0,
         "stars": 22,
@@ -14325,10 +14325,10 @@
     },
     {
       "id": "spydersoft-consulting/MMM-GoogleTasks",
-      "gitHubDataLastUpdate": "2025-02-13T04:30:28.122Z",
+      "gitHubDataLastUpdate": "2025-03-09T16:30:12.091Z",
       "gitHubData": {
         "issues": 2,
-        "stars": 8,
+        "stars": 10,
         "license": "MIT",
         "archived": false,
         "disabled": false,
@@ -14619,7 +14619,7 @@
     },
     {
       "id": "SvenSommer/MMM-GrafanaChart",
-      "gitHubDataLastUpdate": "2025-02-13T04:30:32.568Z",
+      "gitHubDataLastUpdate": "2025-03-09T16:30:16.324Z",
       "gitHubData": {
         "issues": 1,
         "stars": 39,
@@ -14773,7 +14773,7 @@
     },
     {
       "id": "tderflinger/MMM-Hanzi",
-      "gitHubDataLastUpdate": "2025-02-13T04:30:36.165Z",
+      "gitHubDataLastUpdate": "2025-03-09T16:30:19.770Z",
       "gitHubData": {
         "issues": 0,
         "stars": 4,
@@ -15193,7 +15193,7 @@
     },
     {
       "id": "tjmnmk/MMM-parrot-or-gif",
-      "gitHubDataLastUpdate": "2025-02-13T04:30:29.923Z",
+      "gitHubDataLastUpdate": "2025-03-09T16:30:13.836Z",
       "gitHubData": {
         "issues": 0,
         "stars": 0,
@@ -15277,9 +15277,9 @@
     },
     {
       "id": "Tom-Hirschberger/MMM-GPIO-Notifications",
-      "gitHubDataLastUpdate": "2025-02-13T04:30:30.756Z",
+      "gitHubDataLastUpdate": "2025-03-09T16:30:14.650Z",
       "gitHubData": {
-        "issues": 0,
+        "issues": 1,
         "stars": 13,
         "license": "MIT",
         "archived": false,
@@ -16733,7 +16733,7 @@
     },
     {
       "id": "yedidiaklein/MMM-whoshome",
-      "gitHubDataLastUpdate": "2025-02-13T04:30:25.421Z",
+      "gitHubDataLastUpdate": "2025-03-09T16:30:09.424Z",
       "gitHubData": {
         "issues": 1,
         "stars": 6,

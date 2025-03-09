@@ -2684,7 +2684,7 @@
       "`package.json` issue: No repository field.",
       "There are no keywords in 'package.json'. We would use them as tags on the module list page."
     ],
-    "stars": 0,
+    "stars": 1,
     "license": "MIT",
     "image": "MMM-Cookidoo.jpg"
   },
@@ -6295,7 +6295,7 @@
     "maintainerURL": "https://github.com/spydersoft-consulting",
     "description": "Display Google Tasks with Planned View.",
     "issues": [],
-    "stars": 8,
+    "stars": 10,
     "license": "MIT",
     "tags": [
       "scheduler"
@@ -6311,7 +6311,7 @@
     "maintainerURL": "https://github.com/jacopo1891",
     "description": "Lists travel times to requested locations taking into account Google traffic information with \"classic view\".",
     "issues": [],
-    "stars": 17,
+    "stars": 18,
     "tags": [
       "traffic",
       "googlemap"
@@ -6328,7 +6328,7 @@
     "maintainerURL": "",
     "description": "Text-to-Speech module with Google Cloud TTS API. Give a voice to your Mirror.",
     "issues": [],
-    "stars": 13,
+    "stars": 14,
     "license": "MIT",
     "tags": [
       "text-to-speech",
@@ -6476,7 +6476,7 @@
     "issues": [
       "Please use 'smart home' instead of 'smarthome' as a keyword in your package.json."
     ],
-    "stars": 3,
+    "stars": 5,
     "license": "MIT",
     "tags": [
       "growatt",
@@ -6513,7 +6513,7 @@
     "issues": [
       "Please use 'smart home' instead of 'smarthome' as a keyword in your package.json."
     ],
-    "stars": 2,
+    "stars": 3,
     "license": "MIT",
     "tags": [
       "growatt",

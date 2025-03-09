@@ -2746,7 +2746,7 @@
     "maintainerURL": "https://github.com/ChrisF1976",
     "description": "Displays recipes for the Thermomix.",
     "issues": true,
-    "stars": 0,
+    "stars": 1,
     "license": "MIT",
     "image": "MMM-Cookidoo.jpg",
     "defaultSortWeight": 5,
@@ -6324,7 +6324,7 @@
     ],
     "image": "images-screenshot.jpg",
     "defaultSortWeight": 2,
-    "lastCommit": "2024-08-16T00:55:56+01:00"
+    "lastCommit": "2025-03-09T15:59:04+00:00"
   },
   {
     "name": "MMM-GoogleSheets",
@@ -6371,7 +6371,7 @@
     "maintainerURL": "https://github.com/spydersoft-consulting",
     "description": "Display Google Tasks with Planned View.",
     "issues": true,
-    "stars": 8,
+    "stars": 10,
     "license": "MIT",
     "tags": [
       "scheduler"
@@ -6389,7 +6389,7 @@
     "maintainerURL": "https://github.com/jacopo1891",
     "description": "Lists travel times to requested locations taking into account Google traffic information with \"classic view\".",
     "issues": true,
-    "stars": 17,
+    "stars": 18,
     "tags": [
       "traffic",
       "googlemap"
@@ -6408,7 +6408,7 @@
     "maintainerURL": "",
     "description": "Text-to-Speech module with Google Cloud TTS API. Give a voice to your Mirror.",
     "issues": true,
-    "stars": 13,
+    "stars": 14,
     "license": "MIT",
     "tags": [
       "text-to-speech",
@@ -6558,7 +6558,7 @@
     "maintainerURL": "https://github.com/mumblebaj",
     "description": "Display data from Growatt Inveter. Support multiple Growatt Inverter types.",
     "issues": true,
-    "stars": 3,
+    "stars": 5,
     "license": "MIT",
     "tags": [
       "growatt",
@@ -6566,7 +6566,7 @@
     ],
     "image": "images-screenshot.jpg",
     "defaultSortWeight": 2,
-    "lastCommit": "2025-03-02T15:33:15+02:00"
+    "lastCommit": "2025-03-09T11:41:40+02:00"
   },
   {
     "name": "MMM-Growatt",
@@ -6591,7 +6591,7 @@
     "maintainerURL": "https://github.com/mumblebaj",
     "description": "Display status data from Growatt Inveter. Support multiple Growatt Inverter types. Made to work in conjunction with <a target=\"_blank\" href=\"https://github.com/mumblebaj/MMM-Growatt\">MMM-Growatt</a> or independently.",
     "issues": true,
-    "stars": 2,
+    "stars": 3,
     "license": "MIT",
     "tags": [
       "growatt",
@@ -8740,7 +8740,7 @@
     ],
     "image": "MMM-Linky.jpg",
     "defaultSortWeight": 1,
-    "lastCommit": "2025-03-01T23:26:06+01:00"
+    "lastCommit": "2025-03-09T17:06:26+01:00"
   },
   {
     "name": "MMM-Liquipedia-Matches",
@@ -10356,7 +10356,7 @@
     "license": "MIT",
     "image": "assets-MMPM-UI-Homepage.jpg",
     "defaultSortWeight": -1,
-    "lastCommit": "2025-02-22T18:43:13-05:00"
+    "lastCommit": "2025-03-09T11:00:19-04:00"
   },
   {
     "name": "MMM-mmpm",
@@ -13246,7 +13246,7 @@
     ],
     "image": "example.jpg",
     "defaultSortWeight": 2,
-    "lastCommit": "2025-03-07T21:12:35-07:00"
+    "lastCommit": "2025-03-09T00:01:49+01:00"
   },
   {
     "name": "MMM-Pages-Screencast",
@@ -15105,7 +15105,7 @@
     ],
     "image": ".github-hide_show_module.jpg",
     "defaultSortWeight": -7,
-    "lastCommit": "2025-03-04T00:54:25+01:00"
+    "lastCommit": "2025-03-09T16:24:39+01:00"
   },
   {
     "name": "MMM-Remote-Control-Repository",
@@ -17586,7 +17586,7 @@
     "license": "MIT",
     "image": "screenshots-screenshot-compact.jpg",
     "defaultSortWeight": 3,
-    "lastCommit": "2024-11-27T15:26:26-03:00"
+    "lastCommit": "2025-03-08T21:38:05-03:00"
   },
   {
     "name": "MMM-SystemMonitor",
