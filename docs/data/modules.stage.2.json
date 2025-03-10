@@ -4251,6 +4251,17 @@
     "stars": 44
   },
   {
+    "name": "MMM-GetShellScript",
+    "category": "Utility / IoT / 3rd Party / Integration",
+    "url": "https://github.com/uphillcheddar/MMM-GetShellScript",
+    "id": "uphillcheddar/MMM-GetShellScript",
+    "maintainer": "uphillcheddar",
+    "maintainerURL": "https://github.com/uphillcheddar",
+    "description": "Simple HTTP endpoint to your MagicMirror installation for executing predefined shell scripts",
+    "issues": [],
+    "stars": 0
+  },
+  {
     "name": "MMM-GHIN",
     "category": "Sports",
     "url": "https://github.com/C-Deck/MMM-GHIN",
@@ -5052,7 +5063,7 @@
     "maintainerURL": "https://github.com/wonderslug",
     "description": "Displays information from Home Assistant using Home Assistant Templates to render any HTML you want for the module. Includes support for Material Design Icons, Websockets for fast updating, and auto reconnect on Home Assistant restarts. Allows you to show or hide a whole module based on a Home Assistant Template as well.",
     "issues": [],
-    "stars": 99,
+    "stars": 100,
     "license": "MIT"
   },
   {
@@ -5135,7 +5146,7 @@
     "maintainerURL": "",
     "description": "Hotword detector / Voice Commander / Utterance recorder with Picovoice.",
     "issues": [],
-    "stars": 3,
+    "stars": 4,
     "license": "MIT"
   },
   {
@@ -5183,7 +5194,7 @@
     "maintainerURL": "",
     "description": "Include arbitrary HTML snippets in an iframe (script tags work).",
     "issues": [],
-    "stars": 14,
+    "stars": 15,
     "license": "GPL-3.0"
   },
   {

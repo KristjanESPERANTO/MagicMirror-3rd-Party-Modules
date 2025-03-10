@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "2025-03-09T16:30:07.845Z",
+  "lastUpdate": "2025-03-10T16:30:08.126Z",
   "modules": [
     {
       "name": "MMM-01ZM",
@@ -3591,6 +3591,16 @@
       "maintainer": "thobach",
       "maintainerURL": "",
       "description": "Allows gesture control of compliments (only show when stepping in front of mirror), newsfeed (wave left / right, up for full-screen) and pages with two types of infrared sensors. Gestures can be up, down, left, right, far and close movements of the hand in front of a gesture sensor (APDS-9960) and present and away gestures in front of an IR distance sensor (GP2Y0A21YK).",
+      "issues": []
+    },
+    {
+      "name": "MMM-GetShellScript",
+      "category": "Utility / IoT / 3rd Party / Integration",
+      "url": "https://github.com/uphillcheddar/MMM-GetShellScript",
+      "id": "uphillcheddar/MMM-GetShellScript",
+      "maintainer": "uphillcheddar",
+      "maintainerURL": "https://github.com/uphillcheddar",
+      "description": "Simple HTTP endpoint to your MagicMirror installation for executing predefined shell scripts",
       "issues": []
     },
     {

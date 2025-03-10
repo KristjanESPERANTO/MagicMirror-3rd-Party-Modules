@@ -1,16 +1,16 @@
 # Result of the module analysis
 
-Last update: 2025-03-09T17:39:42+01:00
+Last update: 2025-03-10T17:46:33+01:00
 
 ## Statistics
 
 |                      | number   |
 |:---------------------|:--------:|
-| modules analyzed     |   1227   |
+| modules analyzed     |   1228   |
 | maintainer           |    662   |
-| modules with issues  |   1227   |
-| issues               |   6611   |
-| modules at github    |   1099   |
+| modules with issues  |   1228   |
+| issues               |   6619   |
+| modules at github    |   1100   |
 | modules at gitlab    |     12   |
 | modules at bitbucket |      1   |
 
@@ -782,7 +782,7 @@ Last update: 2025-03-09T17:39:42+01:00
    - @rollup/plugin-commonjs    ^28.0.2  →    ^28.0.3
    - @stylistic/eslint-plugin   ^2.12.1  →     ^4.2.0
    - @types/node               ^22.10.2  →  ^22.13.10
-   - bosch-smart-home-bridge     ^1.6.0  →     ^1.7.9
+   - bosch-smart-home-bridge     ^1.6.0  →    ^1.7.10
    - eslint                     ^9.17.0  →    ^9.22.0
    - eslint-config-prettier      ^9.1.0  →    ^10.1.1
    - eslint-plugin-prettier      ^5.2.1  →     ^5.2.3
@@ -2865,6 +2865,16 @@ deprecated: no longer maintained, switch to modern iconify-icon web component
 10. Warning: No LICENSE file.
 11. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
 
+### [MMM-GetShellScript by uphillcheddar](https://github.com/uphillcheddar/MMM-GetShellScript)
+
+1. `package.json` issue: No repository field.
+2. There are no keywords in 'package.json'. We would use them as tags on the module list page.
+3. No image found.
+4. Typo: Found `Magic Mirror` in file `MMM-GetShellScript.js`: Replace it with `MagicMirror²`.
+5. Typo: Found `Magic Mirror` in file `readme.md`: Replace it with `MagicMirror²`.
+6. Warning: No LICENSE file.
+7. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
+
 ### [MMM-GHIN by C-Deck](https://github.com/C-Deck/MMM-GHIN)
 
 1. No image found.
@@ -3991,7 +4001,7 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
 3. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
 4. Information: There are updates for 5 dependencie(s):
    - @electron/rebuild    ^3.6.0  →   ^3.7.1
-   - node-abi            ^3.65.0  →   ^4.1.0
+   - node-abi            ^3.65.0  →   ^4.2.0
    - node-gyp            ^10.2.0  →  ^11.1.0
    - puppeteer          ^22.15.0  →  ^24.4.0
    - sharp               ^0.33.4  →  ^0.33.5
@@ -4351,8 +4361,8 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
 ### [MMM-Linky by 2hdlockness](https://github.com/2hdlockness/MMM-Linky)
 
 1. Repository name and main js file name is not the same.
-2. ESLint issues:
-   - package.json: Line 2, Column 11: Invalid npm package name: name can no longer contain capital letters. (rule: package-json/valid-name)
+2. Information: There are updates for 1 dependencie(s):
+   - esbuild  ^0.25.0  →  ^0.25.1
 
 
 ### [MMM-Liquipedia-Matches by buxxi](https://github.com/buxxi/MMM-Liquipedia-Matches)
@@ -7655,6 +7665,9 @@ deprecated: This version is no longer supported. Please see https://eslint.org/v
 1. Recommendation: Found `'node-fetch'` in file `modules.json`: Replace it with built-in fetch.
 2. Deprecated: Found `omxplayer` in file `modules.json`: Try to replace it with `vlc`.
 3. Recommendation: Found `XMLHttpRequest` in file `remote.js`: Replace it with built-in fetch.
+4. Information: There are updates for 1 dependencie(s):
+   - swagger-ui  ^5.20.0  →  ^5.20.1
+
 
 ### [MMM-Remote-Control-Repository by MMRIZE](https://github.com/MMRIZE/MMM-Remote-Control-Repository)
 
