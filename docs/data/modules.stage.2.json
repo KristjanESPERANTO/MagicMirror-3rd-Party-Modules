@@ -1805,7 +1805,7 @@
     "maintainerURL": "https://github.com/malako",
     "description": "Display cryptocurrency information from <a target=\"_blank\" href=\"https://www.coingecko.com/\">CoinGecko</a>. Ticker price, logos, 7d sparkline, holdings etc.",
     "issues": [],
-    "stars": 2,
+    "stars": 3,
     "license": "MIT"
   },
   {
@@ -1922,7 +1922,7 @@
     "maintainerURL": "https://github.com/ChrisF1976",
     "description": "Displays recipes for the Thermomix.",
     "issues": [],
-    "stars": 0,
+    "stars": 1,
     "license": "MIT"
   },
   {
@@ -2018,7 +2018,7 @@
     "maintainerURL": "",
     "description": "Live covid19 numbers provided via <a target=\"_blank\" href=\"https://covid19api.com/\">https://covid19api.com/</a>.",
     "issues": [],
-    "stars": 6
+    "stars": 5
   },
   {
     "name": "MMM-COVID19",
@@ -2317,8 +2317,7 @@
     "maintainerURL": "",
     "description": "Simple display of dad jokes from icanhazdadjoke.com.",
     "issues": [],
-    "stars": 8,
-    "hasGithubIssues": false,
+    "stars": 9,
     "license": "MIT"
   },
   {
@@ -2392,7 +2391,7 @@
     "maintainerURL": "",
     "description": "Display the verse of the day from &lt;<a target=\"_blank\" href=\"http://www.biblegateway.com%3E\">www.biblegateway.com&gt;</a>.",
     "issues": [],
-    "stars": 27,
+    "stars": 28,
     "license": "MIT"
   },
   {
@@ -2487,7 +2486,7 @@
     "maintainerURL": "",
     "description": "Displays the daily XKCD web comic.",
     "issues": [],
-    "stars": 52,
+    "stars": 53,
     "license": "MIT"
   },
   {
@@ -2548,7 +2547,7 @@
     "maintainerURL": "",
     "description": "Shows the date without a clock (if you have one in another place).",
     "issues": [],
-    "stars": 5
+    "stars": 6
   },
   {
     "name": "MMM-DBF",
@@ -2715,7 +2714,7 @@
     "maintainerURL": "",
     "description": "Display messages from discord channels.",
     "issues": [],
-    "stars": 9,
+    "stars": 10,
     "license": "CC0-1.0"
   },
   {
@@ -2899,7 +2898,7 @@
     "maintainerURL": "",
     "description": "Displays weather warnings for Germany.",
     "issues": [],
-    "stars": 64,
+    "stars": 63,
     "license": "MIT"
   },
   {
@@ -3106,7 +3105,7 @@
     "maintainerURL": "https://github.com/Tom-Hirschberger",
     "description": "Embed one or multiple websites with there URL.",
     "issues": [],
-    "stars": 24,
+    "stars": 25,
     "license": "MIT"
   },
   {
@@ -3202,7 +3201,7 @@
     "description": "The Encyclopedia of Life.",
     "issues": [],
     "outdated": "Abandoned. Developer is no longer active. Missing instructions to install dependency 'request'.",
-    "stars": 7,
+    "stars": 6,
     "license": "MIT"
   },
   {
@@ -3311,7 +3310,7 @@
     "description": "Upcoming events in your city. Concerts, Performances, Comedy Shows, Sporting Events, Theatre, Exhibits, Art Galleries, Museums, Festivals, Food &amp; Drink and many more.",
     "issues": [],
     "outdated": "Deprecated. Eventful API discontinued. This module needs updated.",
-    "stars": 23,
+    "stars": 22,
     "license": "MIT"
   },
   {
@@ -3348,7 +3347,7 @@
     "maintainerURL": "",
     "description": "Add some EyeCandy to your mirror. You can even choose your own local images or internet images.",
     "issues": [],
-    "stars": 46,
+    "stars": 47,
     "license": "MIT"
   },
   {
@@ -3398,7 +3397,7 @@
     "maintainerURL": "",
     "description": "All new version of Face Recognition with Open CV 4.1 and Deep Neural Network.",
     "issues": [],
-    "stars": 94,
+    "stars": 93,
     "license": "MIT"
   },
   {
@@ -3690,7 +3689,7 @@
     "maintainerURL": "",
     "description": "Shows a firework animation on your Mirror.",
     "issues": [],
-    "stars": 4,
+    "stars": 5,
     "license": "MIT"
   },
   {
@@ -3810,7 +3809,7 @@
     "maintainerURL": "https://github.com/E3V3A",
     "description": "A flight radar that display airplane/flight details of what is currently flying in the airspace above some location.",
     "issues": [],
-    "stars": 23,
+    "stars": 24,
     "license": "MIT"
   },
   {
@@ -3892,7 +3891,7 @@
     "maintainerURL": "",
     "description": "Display the driver standings from the current Formula 1 season.",
     "issues": [],
-    "stars": 34,
+    "stars": 35,
     "license": "MIT"
   },
   {
@@ -4024,7 +4023,7 @@
     "maintainerURL": "",
     "description": "Displays data from a Fronius Solar Inverter, supports auto-off inverters and can be used as a data source for <a target=\"_blank\" href=\"https://github.com/deg0nz/MMM-EnergyMonitor\">MMM-EnergyMonitor</a>.",
     "issues": [],
-    "stars": 0,
+    "stars": 1,
     "license": "MIT"
   },
   {
@@ -4252,6 +4251,17 @@
     "stars": 44
   },
   {
+    "name": "MMM-GetShellScript",
+    "category": "Utility / IoT / 3rd Party / Integration",
+    "url": "https://github.com/uphillcheddar/MMM-GetShellScript",
+    "id": "uphillcheddar/MMM-GetShellScript",
+    "maintainer": "uphillcheddar",
+    "maintainerURL": "https://github.com/uphillcheddar",
+    "description": "Simple HTTP endpoint to your MagicMirror installation for executing predefined shell scripts",
+    "issues": [],
+    "stars": 0
+  },
+  {
     "name": "MMM-GHIN",
     "category": "Sports",
     "url": "https://github.com/C-Deck/MMM-GHIN",
@@ -4321,7 +4331,7 @@
     "maintainerURL": "",
     "description": "Displays a rotating globe constructed of Hexadecimal shapes specifically formatted to look great on a MagicMirror.",
     "issues": [],
-    "stars": 41,
+    "stars": 43,
     "license": "MIT"
   },
   {
@@ -4333,7 +4343,7 @@
     "maintainerURL": "",
     "description": "Displays live image of our planet.",
     "issues": [],
-    "stars": 73,
+    "stars": 74,
     "license": "MIT"
   },
   {
@@ -4381,7 +4391,7 @@
     "maintainerURL": "",
     "description": "Displays the two best routes from an origin to a destination, using Google Directions API.",
     "issues": [],
-    "stars": 47,
+    "stars": 46,
     "license": "MIT"
   },
   {
@@ -4406,7 +4416,7 @@
     "maintainerURL": "",
     "description": "Integrate your Google Contact's birthdays in the MagicMirror² calendar.",
     "issues": [],
-    "stars": 29,
+    "stars": 30,
     "license": "BSD-3-Clause"
   },
   {
@@ -4418,7 +4428,7 @@
     "maintainerURL": "https://github.com/randomBrainstormer",
     "description": "Get your Google Calendars in the shape of MagicMirror's default calendar.",
     "issues": [],
-    "stars": 78,
+    "stars": 79,
     "license": "MIT"
   },
   {
@@ -4564,7 +4574,7 @@
     "maintainerURL": "https://github.com/spydersoft-consulting",
     "description": "Display Google Tasks with Planned View.",
     "issues": [],
-    "stars": 8,
+    "stars": 10,
     "license": "MIT"
   },
   {
@@ -4576,7 +4586,7 @@
     "maintainerURL": "https://github.com/jacopo1891",
     "description": "Lists travel times to requested locations taking into account Google traffic information with \"classic view\".",
     "issues": [],
-    "stars": 17
+    "stars": 18
   },
   {
     "name": "MMM-GoogleTTS",
@@ -4587,7 +4597,7 @@
     "maintainerURL": "",
     "description": "Text-to-Speech module with Google Cloud TTS API. Give a voice to your Mirror.",
     "issues": [],
-    "stars": 13,
+    "stars": 14,
     "license": "MIT"
   },
   {
@@ -4697,7 +4707,7 @@
     "maintainerURL": "https://github.com/mumblebaj",
     "description": "Display data from Growatt Inveter. Support multiple Growatt Inverter types.",
     "issues": [],
-    "stars": 3,
+    "stars": 5,
     "license": "MIT"
   },
   {
@@ -4721,7 +4731,7 @@
     "maintainerURL": "https://github.com/mumblebaj",
     "description": "Display status data from Growatt Inveter. Support multiple Growatt Inverter types. Made to work in conjunction with <a target=\"_blank\" href=\"https://github.com/mumblebaj/MMM-Growatt\">MMM-Growatt</a> or independently.",
     "issues": [],
-    "stars": 2,
+    "stars": 3,
     "license": "MIT"
   },
   {
@@ -4987,18 +4997,6 @@
   {
     "name": "MMM-HomeAssistant",
     "category": "Utility / IoT / 3rd Party / Integration",
-    "url": "https://github.com/zuo000/MMM-HomeAssistant",
-    "id": "zuo000/MMM-HomeAssistant",
-    "maintainer": "zuo000",
-    "maintainerURL": "https://github.com/zuo000",
-    "description": "HomeAssistant frontend module using HA REST API, including Light, Switch, Sensor.",
-    "issues": [],
-    "stars": 27,
-    "license": "MIT"
-  },
-  {
-    "name": "MMM-HomeAssistant",
-    "category": "Utility / IoT / 3rd Party / Integration",
     "url": "https://github.com/yourdawi/MMM-HomeAssistant",
     "id": "yourdawi/MMM-HomeAssistant",
     "maintainer": "yourdawi",
@@ -5009,15 +5007,15 @@
     "license": "MIT"
   },
   {
-    "name": "MMM-homeassistant-sensors",
+    "name": "MMM-HomeAssistant",
     "category": "Utility / IoT / 3rd Party / Integration",
-    "url": "https://github.com/Snille/MMM-homeassistant-sensors",
-    "id": "Snille/MMM-homeassistant-sensors",
-    "maintainer": "Snille",
-    "maintainerURL": "https://github.com/Snille",
-    "description": "Fork of leinich module. Many new features added. Display information from Home Assistant using the home assistant REST API.",
+    "url": "https://github.com/zuo000/MMM-HomeAssistant",
+    "id": "zuo000/MMM-HomeAssistant",
+    "maintainer": "zuo000",
+    "maintainerURL": "https://github.com/zuo000",
+    "description": "HomeAssistant frontend module using HA REST API, including Light, Switch, Sensor.",
     "issues": [],
-    "stars": 63,
+    "stars": 27,
     "license": "MIT"
   },
   {
@@ -5031,6 +5029,18 @@
     "issues": [],
     "stars": 0,
     "hasGithubIssues": false,
+    "license": "MIT"
+  },
+  {
+    "name": "MMM-homeassistant-sensors",
+    "category": "Utility / IoT / 3rd Party / Integration",
+    "url": "https://github.com/Snille/MMM-homeassistant-sensors",
+    "id": "Snille/MMM-homeassistant-sensors",
+    "maintainer": "Snille",
+    "maintainerURL": "https://github.com/Snille",
+    "description": "Fork of leinich module. Many new features added. Display information from Home Assistant using the home assistant REST API.",
+    "issues": [],
+    "stars": 63,
     "license": "MIT"
   },
   {
@@ -5053,7 +5063,7 @@
     "maintainerURL": "https://github.com/wonderslug",
     "description": "Displays information from Home Assistant using Home Assistant Templates to render any HTML you want for the module. Includes support for Material Design Icons, Websockets for fast updating, and auto reconnect on Home Assistant restarts. Allows you to show or hide a whole module based on a Home Assistant Template as well.",
     "issues": [],
-    "stars": 99,
+    "stars": 100,
     "license": "MIT"
   },
   {
@@ -5136,7 +5146,7 @@
     "maintainerURL": "",
     "description": "Hotword detector / Voice Commander / Utterance recorder with Picovoice.",
     "issues": [],
-    "stars": 3,
+    "stars": 4,
     "license": "MIT"
   },
   {
@@ -5184,7 +5194,7 @@
     "maintainerURL": "",
     "description": "Include arbitrary HTML snippets in an iframe (script tags work).",
     "issues": [],
-    "stars": 14,
+    "stars": 15,
     "license": "GPL-3.0"
   },
   {
@@ -5398,7 +5408,7 @@
     "description": "A simple way to add an iFrame of any web content.",
     "issues": [],
     "outdated": "Abandoned. Repo has been archived at 2019-03-08.",
-    "stars": 25,
+    "stars": 24,
     "isArchived": true
   },
   {
@@ -5493,7 +5503,7 @@
     "maintainerURL": "",
     "description": "Show images and photos.",
     "issues": [],
-    "stars": 49,
+    "stars": 48,
     "license": "MIT"
   },
   {
@@ -5553,7 +5563,7 @@
     "description": "Load the images from a users Instagram feed. The images are displayed on the mirror and animated. API key required.",
     "issues": [],
     "outdated": "Deprecated. Doesn't work anymore. Checkout issue 17.",
-    "stars": 39
+    "stars": 38
   },
   {
     "name": "MMM-Instagram2020",
@@ -5672,7 +5682,7 @@
     "maintainerURL": "",
     "description": "Display ipcam feed.",
     "issues": [],
-    "stars": 26,
+    "stars": 25,
     "license": "MIT"
   },
   {
@@ -5718,7 +5728,7 @@
     "maintainerURL": "",
     "description": "Display International Space Station fly-overs in your area.",
     "issues": [],
-    "stars": 8,
+    "stars": 9,
     "license": "MIT"
   },
   {
@@ -5801,7 +5811,7 @@
     "maintainerURL": "https://github.com/jalibu",
     "description": "A simple but powerful vertical, horizontal or static stock ticker based on Yahoo's finance API. Supports international stocks, crypto currencies and index symbols. No API key required.",
     "issues": [],
-    "stars": 71,
+    "stars": 69,
     "license": "MIT"
   },
   {
@@ -7378,13 +7388,14 @@
   },
   {
     "name": "mmm-uk-pollen-forecast",
-    "category": "Weather",
+    "category": "Outdated Modules",
     "url": "https://github.com/szech/mmm-uk-pollen-forecast",
     "id": "szech/mmm-uk-pollen-forecast",
     "maintainer": "szech",
     "maintainerURL": "",
     "description": "Displays pollen forecast for your area in the UK.",
     "issues": [],
+    "outdated": "Abandoned",
     "stars": 1,
     "license": "MIT"
   },
@@ -8510,18 +8521,6 @@
   {
     "name": "MMM-NewsAPI",
     "category": "News / Information",
-    "url": "https://github.com/totoluto/MMM-NewsAPI",
-    "id": "totoluto/MMM-NewsAPI",
-    "maintainer": "totoluto",
-    "maintainerURL": "https://github.com/totoluto",
-    "description": "Get top headlines from <a target=\"_blank\" href=\"https://newsapi.org\">newsapi.org</a>.",
-    "issues": [],
-    "stars": 0,
-    "license": "MIT"
-  },
-  {
-    "name": "MMM-NewsAPI",
-    "category": "News / Information",
     "url": "https://github.com/mumblebaj/MMM-NewsAPI",
     "id": "mumblebaj/MMM-NewsAPI",
     "maintainer": "mumblebaj",
@@ -8529,6 +8528,18 @@
     "description": "Get news from <a target=\"_blank\" href=\"https://newsapi.org\">newsapi.org</a>.",
     "issues": [],
     "stars": 11,
+    "license": "MIT"
+  },
+  {
+    "name": "MMM-NewsAPI",
+    "category": "News / Information",
+    "url": "https://github.com/totoluto/MMM-NewsAPI",
+    "id": "totoluto/MMM-NewsAPI",
+    "maintainer": "totoluto",
+    "maintainerURL": "https://github.com/totoluto",
+    "description": "Get top headlines from <a target=\"_blank\" href=\"https://newsapi.org\">newsapi.org</a>.",
+    "issues": [],
+    "stars": 0,
     "license": "MIT"
   },
   {

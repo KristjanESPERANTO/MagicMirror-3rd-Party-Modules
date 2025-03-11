@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "2025-03-05T11:53:17.426Z",
+  "lastUpdate": "2025-03-11T20:10:27.819Z",
   "modules": [
     {
       "name": "MMM-01ZM",
@@ -3594,6 +3594,16 @@
       "issues": []
     },
     {
+      "name": "MMM-GetShellScript",
+      "category": "Utility / IoT / 3rd Party / Integration",
+      "url": "https://github.com/uphillcheddar/MMM-GetShellScript",
+      "id": "uphillcheddar/MMM-GetShellScript",
+      "maintainer": "uphillcheddar",
+      "maintainerURL": "https://github.com/uphillcheddar",
+      "description": "Simple HTTP endpoint to your MagicMirror installation for executing predefined shell scripts",
+      "issues": []
+    },
+    {
       "name": "MMM-GHIN",
       "category": "Sports",
       "url": "https://github.com/C-Deck/MMM-GHIN",
@@ -6240,13 +6250,14 @@
     },
     {
       "name": "mmm-uk-pollen-forecast",
-      "category": "Weather",
+      "category": "Outdated Modules",
       "url": "https://github.com/szech/mmm-uk-pollen-forecast",
       "id": "szech/mmm-uk-pollen-forecast",
       "maintainer": "szech",
       "maintainerURL": "",
       "description": "Displays pollen forecast for your area in the UK.",
-      "issues": []
+      "issues": [],
+      "outdated": "Abandoned"
     },
     {
       "name": "mmm-uvindex",
