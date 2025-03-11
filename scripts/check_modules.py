@@ -211,6 +211,21 @@ def check_modules():
             "name": "Grunt is practically unmaintained. Move on to something better.",
             "category": "Deprecated",
         },
+        'eslint-config-airbnb': {
+            "name": "Replace it with modern ESLint configuration.",
+            "category": "Deprecated",
+        },
+    }
+
+    search_strings_package_lock_json = {
+        '"lockfileVersion": 1': {
+            "name": "Run `npm update` to update to lockfileVersion 3.",
+            "category": "Deprecated"
+        },
+        '"lockfileVersion": 2': {
+            "name": "Run `npm update` to update to lockfileVersion 3.",
+            "category": "Deprecated"
+        },
     }
 
     modules_json_file = open(
@@ -274,10 +289,14 @@ def check_modules():
                             "Found directory `node_modules`. This shouldn't be uploaded. Add `node_modules/`to `.gitignore`."
                         )
                 elif not file_path.is_symlink() and "node_modules" not in str(file_path):
-                    if (
-                        "changelog" not in str(file_path).lower()
-                        and "package-lock.json" not in str(file_path).lower()
-                    ):
+                    if "package-lock.json" in str(file_path).lower():
+                        for search_string, value in search_strings_package_lock_json.items():
+                            found_string = search_in_file(file_path, search_string)
+                            if found_string:
+                                module["issues"].append(
+                                    f"{value['category']}: Found `{search_string}` in file `{file_path.name}`: {value['name']}"
+                                )
+                    elif ("changelog" not in str(file_path).lower()):
                         if file_path.name == "jquery.js" or file_path.name == "jquery.min.js":
                             module["issues"].append(
                                 f"Recommendation: Found local copy of `{file_path.name}`. Instead of a local copy, it would be better to add jQuery to the dependencies in `package.json`."
@@ -331,10 +350,11 @@ def check_modules():
                                     module["issues"].append(
                                         "Recommendation: The README seems not to have an install instruction (the words 'install' or 'installation' are missing). Please add one."
                                     )
-
-                    # if ".yml" in str(file_path).lower():
-                    #    module["issues"].append(
-                    #        f"`Recommendation: {file_path.name}`: Change file extension from `.yml` to `.yaml`: <https://yaml.org/faq.html>.")
+                            # if len of module["issues"] is less than 2, check for more issues
+                            if len(module["issues"]) < 1:
+                                if ".yml" in str(file_path).lower():
+                                    module["issues"].append(
+                                        f"`Recommendation: {file_path.name}`: Change file extension from `.yml` to `.yaml`: <https://yaml.org/faq.html>.")
 
             if "LICENSE" not in str(sorted(module_directory_path.rglob("*"))):
                 module["issues"].append("Warning: No LICENSE file.")
