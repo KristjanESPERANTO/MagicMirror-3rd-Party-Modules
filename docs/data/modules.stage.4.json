@@ -976,8 +976,7 @@
     "maintainerURL": "",
     "description": "Easy, hands free Amazon Alexa integration; activated, simply by saying \"Alexa\".",
     "issues": [
-      "There are no keywords in 'package.json'. We would use them as tags on the module list page.",
-      "The main js file MMM-awesome-alexa.js is minified. Please consider to replace it with a non-minified version for better readability and error analysis."
+      "There are no keywords in 'package.json'. We would use them as tags on the module list page."
     ],
     "outdated": "Abandoned. No reactions to issues since years. The documentation currently available does not work any more (<a href=\"https://github.com/MagicMirrorOrg/MagicMirror/issues/3398\">#3398</a>).",
     "stars": 157,
@@ -1601,9 +1600,7 @@
     "maintainer": "jalibu",
     "maintainerURL": "https://github.com/jalibu/MMM-BoschSmartHome",
     "description": "A client interface for the Bosch Smart Home System. Supports rooms, Window/Door contacts, Room Climate Controls, Thermostats, Twinguards, Visualization of Temperature, Humidity and Purity, Bosch Home Connect Dishwashers, Philips Hue Bridge.",
-    "issues": [
-      "The main js file MMM-BoschSmartHome.js is minified. Please consider to replace it with a non-minified version for better readability and error analysis."
-    ],
+    "issues": [],
     "stars": 18,
     "license": "MIT",
     "tags": [
@@ -2811,7 +2808,7 @@
   },
   {
     "name": "MMM-covid19",
-    "category": "Health",
+    "category": "Outdated Modules",
     "url": "https://github.com/0m4r/MMM-covid19",
     "id": "0m4r/MMM-covid19",
     "maintainer": "0m4r",
@@ -2820,6 +2817,7 @@
     "issues": [
       "`package.json` issue: No license field."
     ],
+    "outdated": "Deprecated. API no longer works.",
     "stars": 5,
     "tags": [
       "covid19",
@@ -2829,7 +2827,7 @@
   },
   {
     "name": "MMM-COVID19",
-    "category": "Health",
+    "category": "Outdated Modules",
     "url": "https://github.com/bibaldo/MMM-COVID19",
     "id": "bibaldo/MMM-COVID19",
     "maintainer": "bibaldo",
@@ -2838,13 +2836,14 @@
     "issues": [
       "There is no `package.json`. We need this file to gather information about the module for the module list page."
     ],
+    "outdated": "Abandoned. No reactions to issues since years. Seems not to work anymore.",
     "stars": 34,
     "license": "MIT",
     "image": ".github-example-screenshot.jpg"
   },
   {
     "name": "MMM-COVID19-AMPEL",
-    "category": "Health",
+    "category": "Outdated Modules",
     "url": "https://github.com/magic21nrw/MMM-COVID19-AMPEL",
     "id": "magic21nrw/MMM-COVID19-AMPEL",
     "maintainer": "magic21nrw",
@@ -2854,6 +2853,7 @@
       "There are no specific keywords in 'package.json'. We would use them as tags on the module list page. Add a few meaningful terms to the keywords in the package.json. Not just “magicmirror” or “module”.",
       "Issue: The license in the package.json (ISC) doesn't match the license file (MIT)."
     ],
+    "outdated": "Deprecated. API no longer works.",
     "stars": 12,
     "license": "MIT",
     "image": "screenshot.jpg"
@@ -5897,7 +5897,7 @@
     "id": "uphillcheddar/MMM-GetShellScript",
     "maintainer": "uphillcheddar",
     "maintainerURL": "https://github.com/uphillcheddar",
-    "description": "Simple HTTP endpoint to your MagicMirror installation for executing predefined shell scripts",
+    "description": "Simple HTTP endpoint to your MagicMirror installation for executing predefined shell scripts.",
     "issues": [
       "`package.json` issue: No repository field.",
       "There are no keywords in 'package.json'. We would use them as tags on the module list page.",
@@ -6413,7 +6413,7 @@
       "There is no `package.json`. We need this file to gather information about the module for the module list page.",
       "No image found."
     ],
-    "stars": 0,
+    "stars": 1,
     "license": "MIT"
   },
   {
@@ -8026,9 +8026,7 @@
     "maintainer": "jalibu",
     "maintainerURL": "https://github.com/jalibu",
     "description": "A simple but powerful vertical, horizontal or static stock ticker based on Yahoo's finance API. Supports international stocks, crypto currencies and index symbols. No API key required.",
-    "issues": [
-      "The main js file MMM-Jast.js is minified. Please consider to replace it with a non-minified version for better readability and error analysis."
-    ],
+    "issues": [],
     "stars": 69,
     "license": "MIT",
     "tags": [
@@ -9738,7 +9736,7 @@
     "issues": [
       "No image found."
     ],
-    "stars": 95,
+    "stars": 96,
     "license": "MIT",
     "tags": [
       "alexa",
@@ -9870,7 +9868,7 @@
       "There is no `package.json`. We need this file to gather information about the module for the module list page.",
       "Repository name and main js file name is not the same."
     ],
-    "stars": 61,
+    "stars": 62,
     "license": "MIT",
     "image": "LauncherIcon-MMM-Remote-LauncherIcon.jpg"
   },
@@ -9886,7 +9884,7 @@
       "There is no `package.json`. We need this file to gather information about the module for the module list page.",
       "Issues are not enabled in the GitHub repository. So users cannot report bugs. Please enable issues in your repo."
     ],
-    "stars": 0,
+    "stars": 1,
     "hasGithubIssues": false
   },
   {
@@ -10236,7 +10234,7 @@
     "issues": [
       "`package.json` issue: No repository field."
     ],
-    "outdated": "Abandoned",
+    "outdated": "Abandoned. No reactions to issues for a long time. Seems not to work anymore.",
     "stars": 1,
     "license": "MIT",
     "tags": [
@@ -12116,9 +12114,7 @@
     "maintainer": "jalibu",
     "maintainerURL": "https://github.com/Jalibu",
     "description": "Client implementation for German NINA Warn API. Supports alerts of KatWarn, Biwapp and Mowas.",
-    "issues": [
-      "The main js file MMM-NINA.js is minified. Please consider to replace it with a non-minified version for better readability and error analysis."
-    ],
+    "issues": [],
     "stars": 22,
     "license": "MIT",
     "tags": [
@@ -14437,7 +14433,7 @@
     "issues": [
       "There are no keywords in 'package.json'. We would use them as tags on the module list page."
     ],
-    "outdated": "Abandoned. No reactions to issues since years. Missing instructions to install dependency 'node-fetch'. API not working without API key anymore.",
+    "outdated": "Abandoned. No reactions to issues since years. Missing instructions to install used dependency. API not working without API key anymore.",
     "stars": 6,
     "license": "MIT",
     "image": "docs-FOLI-mfrojxmz.jpg"
@@ -14680,9 +14676,7 @@
     "maintainer": "jalibu",
     "maintainerURL": "https://github.com/jalibu",
     "description": "A rain radar map based on OpenStreetMap. Multiple location markers, option for alternating positions and zoom levels.",
-    "issues": [
-      "The main js file MMM-RAIN-MAP.js is minified. Please consider to replace it with a non-minified version for better readability and error analysis."
-    ],
+    "issues": [],
     "stars": 45,
     "license": "MIT",
     "tags": [
@@ -15031,7 +15025,7 @@
   },
   {
     "name": "MMM-Remote-Control-Repository",
-    "category": "Development / Core MagicMirror²",
+    "category": "Outdated Modules",
     "url": "https://github.com/MMRIZE/MMM-Remote-Control-Repository",
     "id": "MMRIZE/MMM-Remote-Control-Repository",
     "maintainer": "MMRIZE",
@@ -15041,6 +15035,7 @@
       "There is no `package.json`. We need this file to gather information about the module for the module list page.",
       "No image found."
     ],
+    "outdated": "Obsolete. MMM-Remote-Control now updates it's modules.json itself.",
     "stars": 25,
     "license": "MIT"
   },
@@ -15274,8 +15269,7 @@
     "maintainerURL": "https://github.com/jalibu",
     "description": "A departure monitor for stations within the Rhein-Neckar-Verkehr (RNV) public traffic network using the new API.",
     "issues": [
-      "`package.json` issue: No repository field.",
-      "The main js file MMM-RNV.js is minified. Please consider to replace it with a non-minified version for better readability and error analysis."
+      "`package.json` issue: No repository field."
     ],
     "stars": 3,
     "license": "MIT",

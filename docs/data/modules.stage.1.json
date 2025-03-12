@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "2025-03-11T20:10:27.819Z",
+  "lastUpdate": "2025-03-12T18:01:18.179Z",
   "modules": [
     {
       "name": "MMM-01ZM",
@@ -1710,33 +1710,36 @@
     },
     {
       "name": "MMM-covid19",
-      "category": "Health",
+      "category": "Outdated Modules",
       "url": "https://github.com/0m4r/MMM-covid19",
       "id": "0m4r/MMM-covid19",
       "maintainer": "0m4r",
       "maintainerURL": "",
       "description": "Live covid19 numbers provided via <a target=\"_blank\" href=\"https://covid19api.com/\">https://covid19api.com/</a>.",
-      "issues": []
+      "issues": [],
+      "outdated": "Deprecated. API no longer works."
     },
     {
       "name": "MMM-COVID19",
-      "category": "Health",
+      "category": "Outdated Modules",
       "url": "https://github.com/bibaldo/MMM-COVID19",
       "id": "bibaldo/MMM-COVID19",
       "maintainer": "bibaldo",
       "maintainerURL": "",
       "description": "Keep track of Corona Virus (COVID-19) cases via rapidapi API.",
-      "issues": []
+      "issues": [],
+      "outdated": "Abandoned. No reactions to issues since years. Seems not to work anymore."
     },
     {
       "name": "MMM-COVID19-AMPEL",
-      "category": "Health",
+      "category": "Outdated Modules",
       "url": "https://github.com/magic21nrw/MMM-COVID19-AMPEL",
       "id": "magic21nrw/MMM-COVID19-AMPEL",
       "maintainer": "magic21nrw",
       "maintainerURL": "",
       "description": "German Ampel for Incidence Value for your City.",
-      "issues": []
+      "issues": [],
+      "outdated": "Deprecated. API no longer works."
     },
     {
       "name": "MMM-Covid19-Vaccination",
@@ -3600,7 +3603,7 @@
       "id": "uphillcheddar/MMM-GetShellScript",
       "maintainer": "uphillcheddar",
       "maintainerURL": "https://github.com/uphillcheddar",
-      "description": "Simple HTTP endpoint to your MagicMirror installation for executing predefined shell scripts",
+      "description": "Simple HTTP endpoint to your MagicMirror installation for executing predefined shell scripts.",
       "issues": []
     },
     {
@@ -6257,7 +6260,7 @@
       "maintainerURL": "",
       "description": "Displays pollen forecast for your area in the UK.",
       "issues": [],
-      "outdated": "Abandoned"
+      "outdated": "Abandoned. No reactions to issues for a long time. Seems not to work anymore."
     },
     {
       "name": "mmm-uvindex",
@@ -8779,7 +8782,7 @@
       "maintainerURL": "",
       "description": "Display local transport for different regions of Finland (Helsinki, Hämeenlinna, Joensuu, Jyväskylä, Kajaani, Kotka, Kouvola, Kuopio, Lahti, Lappeenranta, Mikkeli, Tampere, Oulu, Rovaniemi, Turku, Vaasa)",
       "issues": [],
-      "outdated": "Abandoned. No reactions to issues since years. Missing instructions to install dependency 'node-fetch'. API not working without API key anymore."
+      "outdated": "Abandoned. No reactions to issues since years. Missing instructions to install used dependency. API not working without API key anymore."
     },
     {
       "name": "MMM-Pull",
@@ -9155,13 +9158,14 @@
     },
     {
       "name": "MMM-Remote-Control-Repository",
-      "category": "Development / Core MagicMirror²",
+      "category": "Outdated Modules",
       "url": "https://github.com/MMRIZE/MMM-Remote-Control-Repository",
       "id": "MMRIZE/MMM-Remote-Control-Repository",
       "maintainer": "MMRIZE",
       "maintainerURL": "",
       "description": "Plugin for <code>MMM-Remote-Control</code> to update installable modules automatically.",
-      "issues": []
+      "issues": [],
+      "outdated": "Obsolete. MMM-Remote-Control now updates it's modules.json itself."
     },
     {
       "name": "MMM-RemoteCompliments",
