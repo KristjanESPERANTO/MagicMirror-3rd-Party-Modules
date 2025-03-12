@@ -367,7 +367,7 @@ def check_modules():
                             if len(module["issues"]) < 1:
                                 if ".yml" in str(file_path).lower():
                                     module["issues"].append(
-                                        f"`Recommendation: {file_path.name}`: Use official file extension `.yaml` instead of `.yml` (<https://yaml.org/faq.html>).")
+                                        f"Recommendation: `{file_path.name}`: Use official file extension `.yaml` instead of `.yml` (<https://yaml.org/faq.html>).")
 
             if "LICENSE" not in str(sorted(module_directory_path.rglob("*"))):
                 module["issues"].append("Warning: No LICENSE file.")
