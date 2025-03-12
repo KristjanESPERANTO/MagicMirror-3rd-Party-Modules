@@ -375,6 +375,9 @@ def check_modules():
             if "CHANGELOG" not in str(sorted(module_directory_path.rglob("*"))):
                 module["issues"].append("Recommendation: There ist no CHANGELOG file. It is recommended to add one.")
 
+            if "CODE_OF_CONDUCT" not in str(sorted(module_directory_path.rglob("*"))):
+                module["issues"].append("Recommendation: There ist no CODE_OF_CONDUCT file. It is recommended to add one.")
+
             if "eslintrc" in str(sorted(module_directory_path.rglob("*"))):
                 module["issues"].append(
                     "Recommendation: Replace eslintrc by new flat config.")
