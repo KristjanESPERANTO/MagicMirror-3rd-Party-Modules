@@ -456,6 +456,9 @@ def check_modules():
     # Preparing the markdown output
     markdown_output = "# Result of the module analysis\n\n"
     markdown_output += f"Last update: {stats['lastUpdate']}\n\n"
+    markdown_output += "## General notes\n\n"
+    markdown_output += "* This is an automated analysis of the modules. It is not perfect and can contain errors. If you have any questions or suggestions, please open an issue on GitHub.\n"
+    markdown_output += "* Some issues are opinionated recommendations. Please feel free to ignore them.\n\n"
     markdown_output += "## Statistics\n\n"
     markdown_output += "|                      | number   |\n"
     markdown_output += "|:---------------------|:--------:|\n"
