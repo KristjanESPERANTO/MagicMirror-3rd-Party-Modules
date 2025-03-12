@@ -215,6 +215,10 @@ def check_modules():
             "name": "Replace it with modern ESLint configuration.",
             "category": "Deprecated",
         },
+        'rollup-plugin-banner': {
+            "name": "Replace it with built-in banner.",
+            "category": "Deprecated",
+        },
     }
 
     search_strings_package_lock_json = {
@@ -328,6 +332,15 @@ def check_modules():
                                             f"{value['category']}: Found `{search_string}` in file `{file_path.name}`: {value['name']}"
                                         )
 
+                            if "stylelint" in file_path.name:
+                                search_string = "prettier/prettier"
+                                found_string = search_in_file(
+                                    file_path, search_string)
+                                if found_string:
+                                    module["issues"].append(
+                                        f"Recommendation: Found `{search_string}` in file `{file_path.name}`: Config would be cleaner using 'stylelint-prettier/recommended'. See (https://github.com/prettier/stylelint-prettier)."
+                                    )
+
                             if file_path.name.startswith("README") and file_path.parent == module_directory_path:
                                 # Search for "update" or "Update" in README
                                 found_update_string = search_in_file(
@@ -350,14 +363,17 @@ def check_modules():
                                     module["issues"].append(
                                         "Recommendation: The README seems not to have an install instruction (the words 'install' or 'installation' are missing). Please add one."
                                     )
-                            # if len of module["issues"] is less than 2, check for more issues
+
                             if len(module["issues"]) < 1:
                                 if ".yml" in str(file_path).lower():
                                     module["issues"].append(
-                                        f"`Recommendation: {file_path.name}`: Change file extension from `.yml` to `.yaml`: <https://yaml.org/faq.html>.")
+                                        f"`Recommendation: {file_path.name}`: Use official file extension `.yaml` instead of `.yml` (<https://yaml.org/faq.html>).")
 
             if "LICENSE" not in str(sorted(module_directory_path.rglob("*"))):
                 module["issues"].append("Warning: No LICENSE file.")
+
+            if "CHANGELOG" not in str(sorted(module_directory_path.rglob("*"))):
+                module["issues"].append("Recommendation: There ist no CHANGELOG file. It is recommended to add one.")
 
             if "eslintrc" in str(sorted(module_directory_path.rglob("*"))):
                 module["issues"].append(
