@@ -10551,7 +10551,7 @@
       "There is no `package.json`. We need this file to gather information about the module for the module list page."
     ],
     "outdated": "Abandoned. No reactions to issues since years. No installation instructions.",
-    "stars": 50
+    "stars": 49
   },
   {
     "name": "MMM-MotionDetector",
@@ -10564,7 +10564,7 @@
     "issues": [
       "No image found."
     ],
-    "stars": 53,
+    "stars": 54,
     "license": "MIT",
     "tags": [
       "motion detection"
@@ -10876,7 +10876,7 @@
     "maintainerURL": "https://github.com/BKeyport",
     "description": "Display multiple mini-calendars at the same time.",
     "issues": [],
-    "stars": 16,
+    "stars": 15,
     "license": "MIT",
     "tags": [
       "calendar"
@@ -10963,7 +10963,7 @@
       "`package.json` issue: No description"
     ],
     "outdated": "Abandoned. Doesnt' work anymore. No reactions to issues and PRs since years.",
-    "stars": 27,
+    "stars": 26,
     "license": "MIT",
     "tags": [
       "public transport",
@@ -14851,7 +14851,7 @@
       "`package.json` issue: No repository field.",
       "There are no keywords in 'package.json'. We would use them as tags on the module list page."
     ],
-    "stars": 0,
+    "stars": 1,
     "license": "MIT",
     "image": "Images-bin.jpg"
   },
