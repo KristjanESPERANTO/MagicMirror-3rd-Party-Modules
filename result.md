@@ -1,6 +1,6 @@
 # Result of the module analysis
 
-Last update: 2025-03-12T19:14:21+01:00
+Last update: 2025-03-13T05:39:22+01:00
 
 ## General notes
 
@@ -13,8 +13,8 @@ Last update: 2025-03-12T19:14:21+01:00
 |:---------------------|:--------:|
 | modules analyzed     |   1228   |
 | maintainer           |    661   |
-| modules with issues  |   1227   |
-| issues               |   8855   |
+| modules with issues  |   1226   |
+| issues               |   8853   |
 | modules at github    |   1096   |
 | modules at gitlab    |     12   |
 | modules at bitbucket |      1   |
@@ -3062,19 +3062,6 @@ Last update: 2025-03-12T19:14:21+01:00
 6. Recommendation: There ist no CHANGELOG file. It is recommended to add one.
 7. Recommendation: There ist no CODE_OF_CONDUCT file. It is recommended to add one.
 8. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
-
-### [MMM-Forum by KristjanESPERANTO](https://github.com/KristjanESPERANTO/MMM-Forum)
-
-1. Recommendation: Found `prettier/prettier` in file `stylelint.config.mjs`: Config would be cleaner using 'stylelint-prettier/recommended'. See (https://github.com/prettier/stylelint-prettier).
-2. Information: There are updates for 7 dependencie(s):
-   - @eslint/js                 ^9.21.0  →   ^9.22.0
-   - @eslint/markdown            ^6.2.2  →    ^6.3.0
-   - @stylistic/eslint-plugin    ^4.0.1  →    ^4.2.0
-   - eslint                     ^9.21.0  →   ^9.22.0
-   - lint-staged                ^15.4.3  →   ^15.5.0
-   - prettier                    ^3.5.2  →    ^3.5.3
-   - stylelint                 ^16.14.1  →  ^16.15.0
-
 
 ### [MMM-FrameLight by RaspiManu](https://github.com/RaspiManu/MMM-FrameLight)
 

@@ -5507,7 +5507,7 @@
     "maintainer": "KristjanESPERANTO",
     "maintainerURL": "",
     "description": "Displays information from the MagicMirror\u00b2 forum. Like latest posts, unread posts, etc. The module should also work for other NodeBB forums, but it is not tested.",
-    "issues": true,
+    "issues": false,
     "stars": 3,
     "license": "ISC",
     "tags": [
@@ -5515,8 +5515,8 @@
       "nodebb"
     ],
     "image": "screenshot.jpg",
-    "defaultSortWeight": 1,
-    "lastCommit": "2025-02-23T21:01:25+01:00"
+    "defaultSortWeight": -1,
+    "lastCommit": "2025-03-12T22:28:47+01:00"
   },
   {
     "name": "MMM-FrameLight",
@@ -6597,7 +6597,7 @@
     "stars": 2,
     "license": "MIT",
     "defaultSortWeight": 10,
-    "lastCommit": "2023-06-24T10:26:35+10:00"
+    "lastCommit": "2025-03-13T09:33:53+10:00"
   },
   {
     "name": "MMM-Growatt-Stats",
@@ -7063,8 +7063,8 @@
     "stars": 14,
     "license": "MIT",
     "image": "screenshot.jpg",
-    "defaultSortWeight": 7,
-    "lastCommit": "2021-12-14T15:03:21-06:00"
+    "defaultSortWeight": 6,
+    "lastCommit": "2025-03-12T22:38:08-05:00"
   },
   {
     "name": "MMM-HomeConnect",
@@ -10369,7 +10369,7 @@
     "maintainerURL": "https://github.com/Bee-Mar",
     "description": "An unofficial MagicMirror\u00b2 3rd Party Package Manager. Automates searching, installation, removal, updating, and upgrading of MagicMirror\u00b2 modules.",
     "issues": true,
-    "stars": 208,
+    "stars": 211,
     "license": "MIT",
     "image": "assets-MMPM-UI-Homepage.jpg",
     "defaultSortWeight": 0,
@@ -10416,7 +10416,7 @@
     "maintainerURL": "https://github.com/Snille",
     "description": "Add touch buttons for showing/hiding other modules.",
     "issues": true,
-    "stars": 15,
+    "stars": 16,
     "license": "MIT",
     "image": ".github-ModuleBar-01.jpg",
     "defaultSortWeight": 9,
@@ -10463,7 +10463,7 @@
     "maintainerURL": "",
     "description": "Create schedules to control when other modules are shown, hidden or dimmed and to send notifications to other modules.",
     "issues": true,
-    "stars": 107,
+    "stars": 108,
     "license": "MIT",
     "tags": [
       "scheduler"
@@ -10512,7 +10512,7 @@
     "maintainerURL": "",
     "description": "Display your calendar events in a monthly calendar view.",
     "issues": true,
-    "stars": 39,
+    "stars": 41,
     "license": "MIT",
     "image": "screenshot.jpg",
     "defaultSortWeight": 4,
@@ -10546,7 +10546,7 @@
     "maintainerURL": "",
     "description": "Presents the real-time moon phase.",
     "issues": true,
-    "stars": 60,
+    "stars": 61,
     "license": "MIT",
     "tags": [
       "moon",

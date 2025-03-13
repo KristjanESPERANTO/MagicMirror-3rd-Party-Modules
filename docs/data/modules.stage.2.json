@@ -7445,7 +7445,7 @@
     "maintainerURL": "https://github.com/Bee-Mar",
     "description": "An unofficial MagicMirror² 3rd Party Package Manager. Automates searching, installation, removal, updating, and upgrading of MagicMirror² modules.",
     "issues": [],
-    "stars": 208,
+    "stars": 211,
     "license": "MIT"
   },
   {
@@ -7480,7 +7480,7 @@
     "maintainerURL": "https://github.com/Snille",
     "description": "Add touch buttons for showing/hiding other modules.",
     "issues": [],
-    "stars": 15,
+    "stars": 16,
     "license": "MIT"
   },
   {
@@ -7516,7 +7516,7 @@
     "maintainerURL": "",
     "description": "Create schedules to control when other modules are shown, hidden or dimmed and to send notifications to other modules.",
     "issues": [],
-    "stars": 107,
+    "stars": 108,
     "license": "MIT"
   },
   {
@@ -7551,7 +7551,7 @@
     "maintainerURL": "",
     "description": "Display your calendar events in a monthly calendar view.",
     "issues": [],
-    "stars": 39,
+    "stars": 41,
     "license": "MIT"
   },
   {
@@ -7575,7 +7575,7 @@
     "maintainerURL": "",
     "description": "Presents the real-time moon phase.",
     "issues": [],
-    "stars": 60,
+    "stars": 61,
     "license": "MIT"
   },
   {

@@ -10266,7 +10266,7 @@
     "issues": [
       "There is no `package.json`. We need this file to gather information about the module for the module list page."
     ],
-    "stars": 208,
+    "stars": 211,
     "license": "MIT",
     "image": "assets-MMPM-UI-Homepage.jpg"
   },
@@ -10313,7 +10313,7 @@
     "issues": [
       "There is no `package.json`. We need this file to gather information about the module for the module list page."
     ],
-    "stars": 15,
+    "stars": 16,
     "license": "MIT",
     "image": ".github-ModuleBar-01.jpg"
   },
@@ -10359,7 +10359,7 @@
     "maintainerURL": "",
     "description": "Create schedules to control when other modules are shown, hidden or dimmed and to send notifications to other modules.",
     "issues": [],
-    "stars": 107,
+    "stars": 108,
     "license": "MIT",
     "tags": [
       "scheduler"
@@ -10408,7 +10408,7 @@
     "issues": [
       "There is no `package.json`. We need this file to gather information about the module for the module list page."
     ],
-    "stars": 39,
+    "stars": 41,
     "license": "MIT",
     "image": "screenshot.jpg"
   },
@@ -10438,7 +10438,7 @@
     "maintainerURL": "",
     "description": "Presents the real-time moon phase.",
     "issues": [],
-    "stars": 60,
+    "stars": 61,
     "license": "MIT",
     "tags": [
       "moon",
