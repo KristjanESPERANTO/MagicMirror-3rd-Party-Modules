@@ -1,6 +1,6 @@
 # Result of the module analysis
 
-Last update: 2025-03-14T05:38:10+01:00
+Last update: 2025-03-14T17:37:22+01:00
 
 ## General notes
 
@@ -13,8 +13,8 @@ Last update: 2025-03-14T05:38:10+01:00
 |:---------------------|:--------:|
 | modules analyzed     |   1228   |
 | maintainer           |    661   |
-| modules with issues  |   1226   |
-| issues               |   8853   |
+| modules with issues  |   1228   |
+| issues               |   8857   |
 | modules at github    |   1096   |
 | modules at gitlab    |     12   |
 | modules at bitbucket |      1   |
@@ -402,7 +402,7 @@ Last update: 2025-03-14T05:38:10+01:00
    - eslint                     ^9.21.0  →   ^9.22.0
    - lint-staged                ^15.4.3  →   ^15.5.0
    - prettier                    ^3.5.2  →    ^3.5.3
-   - stylelint                 ^16.14.1  →  ^16.15.0
+   - stylelint                 ^16.14.1  →  ^16.16.0
 
 
 ### [MMM-AQI by ryck](https://github.com/ryck/MMM-AQI)
@@ -1120,6 +1120,9 @@ Last update: 2025-03-14T05:38:10+01:00
 ### [MMM-CalendarExt2 by MMM-CalendarExt2](https://github.com/MMM-CalendarExt2/MMM-CalendarExt2)
 
 1. Recommendation: There ist no CODE_OF_CONDUCT file. It is recommended to add one.
+2. Information: There are updates for 1 dependencie(s):
+   - stylelint  ^16.15.0  →  ^16.16.0
+
 
 ### [MMM-CalendarExt3 by MMRIZE](https://github.com/MMRIZE/MMM-CalendarExt3)
 
@@ -1263,8 +1266,9 @@ Last update: 2025-03-14T05:38:10+01:00
 
 ### [MMM-Canteen by KristjanESPERANTO](https://github.com/KristjanESPERANTO/MMM-Canteen)
 
-1. Information: There are updates for 1 dependencie(s):
-   - lint-staged  ^15.4.3  →  ^15.5.0
+1. Information: There are updates for 2 dependencie(s):
+   - lint-staged   ^15.4.3  →   ^15.5.0
+   - stylelint    ^16.15.0  →  ^16.16.0
 
 
 ### [MMM-Canvas by chase-cromwell](https://github.com/chase-cromwell/MMM-Canvas)
@@ -1295,11 +1299,12 @@ Last update: 2025-03-14T05:38:10+01:00
 ### [MMM-Carousel by shbatm](https://github.com/shbatm/MMM-Carousel)
 
 1. Recommendation: Found `prettier/prettier` in file `stylelint.config.mjs`: Config would be cleaner using 'stylelint-prettier/recommended'. See (https://github.com/prettier/stylelint-prettier).
-2. Information: There are updates for 4 dependencie(s):
-   - @eslint/js                ^9.21.0  →  ^9.22.0
-   - @stylistic/eslint-plugin   ^4.1.0  →   ^4.2.0
-   - eslint                    ^9.21.0  →  ^9.22.0
-   - prettier                   ^3.5.2  →   ^3.5.3
+2. Information: There are updates for 5 dependencie(s):
+   - @eslint/js                 ^9.21.0  →   ^9.22.0
+   - @stylistic/eslint-plugin    ^4.1.0  →    ^4.2.0
+   - eslint                     ^9.21.0  →   ^9.22.0
+   - prettier                    ^3.5.2  →    ^3.5.3
+   - stylelint                 ^16.15.0  →  ^16.16.0
 
 
 ### [MMM-CECControl by nischi](https://github.com/nischi/MMM-CECControl)
@@ -2314,7 +2319,7 @@ Last update: 2025-03-14T05:38:10+01:00
    - eslint                     ^9.21.0  →   ^9.22.0
    - lint-staged                ^15.4.3  →   ^15.5.0
    - prettier                    ^3.5.2  →    ^3.5.3
-   - stylelint                 ^16.14.1  →  ^16.15.0
+   - stylelint                 ^16.14.1  →  ^16.16.0
 
 
 ### [MMM-Ecobee by parnic](https://github.com/parnic/MMM-Ecobee)
@@ -3062,6 +3067,13 @@ Last update: 2025-03-14T05:38:10+01:00
 6. Recommendation: There ist no CHANGELOG file. It is recommended to add one.
 7. Recommendation: There ist no CODE_OF_CONDUCT file. It is recommended to add one.
 8. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
+
+### [MMM-Forum by KristjanESPERANTO](https://github.com/KristjanESPERANTO/MMM-Forum)
+
+1. Information: There are updates for 1 dependencie(s):
+   - stylelint  ^16.15.0  →  ^16.16.0
+
+2. npm notice Changelog: <https://github.com/npm/cli/releases/tag/v11.2.0>
 
 ### [MMM-FrameLight by RaspiManu](https://github.com/RaspiManu/MMM-FrameLight)
 
@@ -7412,6 +7424,12 @@ Last update: 2025-03-14T05:38:10+01:00
 7. Recommendation: There ist no CODE_OF_CONDUCT file. It is recommended to add one.
 8. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
 
+### [MMM-OneCallWeather by KristjanESPERANTO](https://github.com/KristjanESPERANTO/MMM-OneCallWeather)
+
+1. Information: There are updates for 1 dependencie(s):
+   - stylelint  ^16.15.0  →  ^16.16.0
+
+
 ### [MMM-OneDrive by hermanho](https://github.com/hermanho/MMM-OneDrive)
 
 1. Recommendation: `lint.yml`: Use official file extension `.yaml` instead of `.yml` (<https://yaml.org/faq.html>).
@@ -8478,18 +8496,20 @@ Last update: 2025-03-14T05:38:10+01:00
 ### [MMM-PublicTransportBerlin by deg0nz](https://github.com/deg0nz/MMM-PublicTransportBerlin)
 
 1. Recommendation: Found `prettier/prettier` in file `stylelint.config.mjs`: Config would be cleaner using 'stylelint-prettier/recommended'. See (https://github.com/prettier/stylelint-prettier).
-2. Information: There are updates for 5 dependencie(s):
-   - @eslint/js                ^9.21.0  →  ^9.22.0
-   - @stylistic/eslint-plugin   ^4.1.0  →   ^4.2.0
-   - eslint                    ^9.21.0  →  ^9.22.0
-   - lint-staged               ^15.4.3  →  ^15.5.0
-   - prettier                   ^3.5.2  →   ^3.5.3
+2. Information: There are updates for 6 dependencie(s):
+   - @eslint/js                 ^9.21.0  →   ^9.22.0
+   - @stylistic/eslint-plugin    ^4.1.0  →    ^4.2.0
+   - eslint                     ^9.21.0  →   ^9.22.0
+   - lint-staged                ^15.4.3  →   ^15.5.0
+   - prettier                    ^3.5.2  →    ^3.5.3
+   - stylelint                 ^16.15.0  →  ^16.16.0
 
 
 ### [MMM-PublicTransportHafas by KristjanESPERANTO](https://github.com/KristjanESPERANTO/MMM-PublicTransportHafas)
 
-1. Information: There are updates for 1 dependencie(s):
-   - lint-staged  ^15.4.3  →  ^15.5.0
+1. Information: There are updates for 2 dependencie(s):
+   - lint-staged   ^15.4.3  →   ^15.5.0
+   - stylelint    ^16.15.0  →  ^16.16.0
 
 
 ### [MMM-PublicTransportVVO by ChristianGeie](https://github.com/ChristianGeie/MMM-PublicTransportVVO)

@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "2025-03-14T04:30:26.136Z",
+  "lastUpdate": "2025-03-14T16:30:26.176Z",
   "repositories": [
     {
       "id": "0lek/MMM-socialbicycles",
@@ -87,16 +87,16 @@
     },
     {
       "id": "2hdlockness/MMM-Linky",
-      "gitHubDataLastUpdate": "2025-02-20T04:30:31.967Z",
+      "gitHubDataLastUpdate": "2025-03-14T16:30:25.681Z",
       "gitHubData": {
         "issues": 0,
-        "stars": 3,
+        "stars": 4,
         "license": "MIT",
         "archived": false,
         "disabled": false,
         "defaultBranch": "main",
         "has_issues": true,
-        "lastCommit": "2025-02-12T21:41:55Z"
+        "lastCommit": "2025-03-12T09:19:34Z"
       }
     },
     {
@@ -311,7 +311,7 @@
     },
     {
       "id": "AgP42/MMM-Netatmo-Presence",
-      "gitHubDataLastUpdate": "2025-02-20T04:30:24.393Z",
+      "gitHubDataLastUpdate": "2025-03-14T16:30:17.595Z",
       "gitHubData": {
         "issues": 2,
         "stars": 4,
@@ -983,9 +983,9 @@
     },
     {
       "id": "Ax-LED/MMM-Navigate",
-      "gitHubDataLastUpdate": "2025-02-20T04:30:20.837Z",
+      "gitHubDataLastUpdate": "2025-03-14T16:30:13.936Z",
       "gitHubData": {
-        "issues": 0,
+        "issues": 1,
         "stars": 10,
         "license": "MIT",
         "archived": false,
@@ -1305,7 +1305,7 @@
     },
     {
       "id": "benjaminflessner/MMM-Trello",
-      "gitHubDataLastUpdate": "2025-02-20T04:30:31.104Z",
+      "gitHubDataLastUpdate": "2025-03-14T16:30:24.646Z",
       "gitHubData": {
         "issues": 0,
         "stars": 4,
@@ -2215,7 +2215,7 @@
     },
     {
       "id": "CFenner/MMM-Netatmo",
-      "gitHubDataLastUpdate": "2025-02-20T04:30:23.804Z",
+      "gitHubDataLastUpdate": "2025-03-14T16:30:17.106Z",
       "gitHubData": {
         "issues": 16,
         "stars": 40,
@@ -2224,7 +2224,7 @@
         "disabled": false,
         "defaultBranch": "main",
         "has_issues": true,
-        "lastCommit": "2025-02-11T19:26:03Z"
+        "lastCommit": "2025-03-13T11:46:05Z"
       }
     },
     {
@@ -2271,7 +2271,7 @@
     },
     {
       "id": "cgillinger/MMM-BirdOfTheDay",
-      "gitHubDataLastUpdate": "2025-02-20T04:30:27.979Z",
+      "gitHubDataLastUpdate": "2025-03-14T16:30:21.134Z",
       "gitHubData": {
         "issues": 0,
         "stars": 3,
@@ -3517,7 +3517,7 @@
     },
     {
       "id": "Dennis-Rosenbaum/MMM-Quiz",
-      "gitHubDataLastUpdate": "2025-02-20T04:30:26.576Z",
+      "gitHubDataLastUpdate": "2025-03-14T16:30:19.693Z",
       "gitHubData": {
         "issues": 0,
         "stars": 1,
@@ -3671,16 +3671,16 @@
     },
     {
       "id": "dientuki/MMM-SystemInfo",
-      "gitHubDataLastUpdate": "2025-02-20T04:30:30.238Z",
+      "gitHubDataLastUpdate": "2025-03-14T16:30:23.693Z",
       "gitHubData": {
         "issues": 2,
-        "stars": 8,
+        "stars": 9,
         "license": "MIT",
         "archived": false,
         "disabled": false,
         "defaultBranch": "master",
         "has_issues": true,
-        "lastCommit": "2024-11-27T18:26:26Z"
+        "lastCommit": "2025-03-09T00:38:05Z"
       }
     },
     {
@@ -5085,7 +5085,7 @@
     },
     {
       "id": "fry0815/MMM-SystemStats",
-      "gitHubDataLastUpdate": "2025-02-20T04:30:28.417Z",
+      "gitHubDataLastUpdate": "2025-03-14T16:30:21.606Z",
       "gitHubData": {
         "issues": 0,
         "stars": 2,
@@ -5239,7 +5239,7 @@
     },
     {
       "id": "git-pesche/MMM-SwissSmartUrbanHeatMap",
-      "gitHubDataLastUpdate": "2025-02-20T04:30:29.739Z",
+      "gitHubDataLastUpdate": "2025-03-14T16:30:23.071Z",
       "gitHubData": {
         "issues": 0,
         "stars": 2,
@@ -5407,7 +5407,7 @@
     },
     {
       "id": "gravitykillseverything/MMM-Radarr",
-      "gitHubDataLastUpdate": "2025-02-20T04:30:27.026Z",
+      "gitHubDataLastUpdate": "2025-03-14T16:30:20.177Z",
       "gitHubData": {
         "issues": 0,
         "stars": 0,
@@ -5421,7 +5421,7 @@
     },
     {
       "id": "gravitykillseverything/MMM-Sonarr",
-      "gitHubDataLastUpdate": "2025-02-20T04:30:27.582Z",
+      "gitHubDataLastUpdate": "2025-03-14T16:30:20.714Z",
       "gitHubData": {
         "issues": 2,
         "stars": 0,
@@ -7213,7 +7213,7 @@
     },
     {
       "id": "jupadin/MMM-NBA",
-      "gitHubDataLastUpdate": "2025-02-20T04:30:21.250Z",
+      "gitHubDataLastUpdate": "2025-03-14T16:30:14.372Z",
       "gitHubData": {
         "issues": 2,
         "stars": 6,
@@ -8109,7 +8109,7 @@
     },
     {
       "id": "lbartk/MMM-SwissAlpLakes",
-      "gitHubDataLastUpdate": "2025-02-20T04:30:29.297Z",
+      "gitHubDataLastUpdate": "2025-03-14T16:30:22.496Z",
       "gitHubData": {
         "issues": 0,
         "stars": 0,
@@ -8557,7 +8557,7 @@
     },
     {
       "id": "MartinLoidolt/MMM-neoomAPI",
-      "gitHubDataLastUpdate": "2025-02-20T04:30:22.547Z",
+      "gitHubDataLastUpdate": "2025-03-14T16:30:15.678Z",
       "gitHubData": {
         "issues": 1,
         "stars": 1,
@@ -9663,10 +9663,10 @@
     },
     {
       "id": "MMRIZE/MMM-TelegramBot",
-      "gitHubDataLastUpdate": "2025-02-20T04:30:30.662Z",
+      "gitHubDataLastUpdate": "2025-03-14T16:30:24.184Z",
       "gitHubData": {
         "issues": 5,
-        "stars": 26,
+        "stars": 25,
         "license": "MIT",
         "archived": false,
         "disabled": false,
@@ -9943,7 +9943,7 @@
     },
     {
       "id": "mtatsuma/MMM-NatureRemo",
-      "gitHubDataLastUpdate": "2025-02-19T16:30:38.087Z",
+      "gitHubDataLastUpdate": "2025-03-14T16:30:13.421Z",
       "gitHubData": {
         "issues": 0,
         "stars": 2,
@@ -10125,7 +10125,7 @@
     },
     {
       "id": "mumblebaj/MMM-WOTD",
-      "gitHubDataLastUpdate": "2025-02-20T04:30:32.377Z",
+      "gitHubDataLastUpdate": "2025-03-14T16:30:26.142Z",
       "gitHubData": {
         "issues": 0,
         "stars": 5,
@@ -10573,7 +10573,7 @@
     },
     {
       "id": "mykle1/MMM-NatureCalendar",
-      "gitHubDataLastUpdate": "2025-02-19T16:30:37.530Z",
+      "gitHubDataLastUpdate": "2025-03-14T16:30:12.810Z",
       "gitHubData": {
         "issues": 0,
         "stars": 1,
@@ -10587,7 +10587,7 @@
     },
     {
       "id": "mykle1/MMM-NEO",
-      "gitHubDataLastUpdate": "2025-02-20T04:30:22.122Z",
+      "gitHubDataLastUpdate": "2025-03-14T16:30:15.254Z",
       "gitHubData": {
         "issues": 1,
         "stars": 4,
@@ -10783,7 +10783,7 @@
     },
     {
       "id": "nebulx29/MMM-nasaastropic",
-      "gitHubDataLastUpdate": "2025-02-19T16:30:31.853Z",
+      "gitHubDataLastUpdate": "2025-03-14T16:30:08.258Z",
       "gitHubData": {
         "issues": 2,
         "stars": 9,
@@ -11511,7 +11511,7 @@
     },
     {
       "id": "ottopaulsen/MMM-NesteBussAtB",
-      "gitHubDataLastUpdate": "2025-02-20T04:30:22.952Z",
+      "gitHubDataLastUpdate": "2025-03-14T16:30:16.141Z",
       "gitHubData": {
         "issues": 9,
         "stars": 9,
@@ -11539,7 +11539,7 @@
     },
     {
       "id": "overflOw11/MMM-Netatmo-Thermostat",
-      "gitHubDataLastUpdate": "2025-02-20T04:30:25.168Z",
+      "gitHubDataLastUpdate": "2025-03-14T16:30:18.327Z",
       "gitHubData": {
         "issues": 5,
         "stars": 3,
@@ -12099,7 +12099,7 @@
     },
     {
       "id": "Protonosgit/MMM-PingTime",
-      "gitHubDataLastUpdate": "2025-02-20T04:30:26.108Z",
+      "gitHubDataLastUpdate": "2025-03-14T16:30:19.253Z",
       "gitHubData": {
         "issues": 0,
         "stars": 3,
@@ -13345,7 +13345,7 @@
     },
     {
       "id": "semox/MMM-NearCompliments",
-      "gitHubDataLastUpdate": "2025-02-20T04:30:21.666Z",
+      "gitHubDataLastUpdate": "2025-03-14T16:30:14.813Z",
       "gitHubData": {
         "issues": 1,
         "stars": 5,
@@ -13779,7 +13779,7 @@
     },
     {
       "id": "sisimomo/MMM-NestRemoteThermostat",
-      "gitHubDataLastUpdate": "2025-02-20T04:30:23.404Z",
+      "gitHubDataLastUpdate": "2025-03-14T16:30:16.674Z",
       "gitHubData": {
         "issues": 3,
         "stars": 2,
@@ -14703,7 +14703,7 @@
     },
     {
       "id": "taylornoss/MMM-OLYMPIC-MEDALS",
-      "gitHubDataLastUpdate": "2025-02-20T04:30:25.602Z",
+      "gitHubDataLastUpdate": "2025-03-14T16:30:18.744Z",
       "gitHubData": {
         "issues": 0,
         "stars": 2,
@@ -15781,7 +15781,7 @@
     },
     {
       "id": "tylerstambaugh/MMM-Strava-Last-Activity-Map",
-      "gitHubDataLastUpdate": "2025-02-20T04:30:28.843Z",
+      "gitHubDataLastUpdate": "2025-03-14T16:30:22.056Z",
       "gitHubData": {
         "issues": 0,
         "stars": 1,
@@ -16621,7 +16621,7 @@
     },
     {
       "id": "xadamxk/MMM-VALORANTESPORTS-SCHEDULES",
-      "gitHubDataLastUpdate": "2025-02-20T04:30:31.551Z",
+      "gitHubDataLastUpdate": "2025-03-14T16:30:25.148Z",
       "gitHubData": {
         "issues": 0,
         "stars": 0,

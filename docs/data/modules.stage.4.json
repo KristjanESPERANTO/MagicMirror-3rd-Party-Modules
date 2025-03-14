@@ -5598,7 +5598,7 @@
     ],
     "stars": 1,
     "license": "MIT",
-    "image": "All.jpg"
+    "image": "MMM-FroniusSolar.jpg"
   },
   {
     "name": "MMM-FroniusSolar2",
@@ -8670,7 +8670,7 @@
     "issues": [
       "Repository name and main js file name is not the same."
     ],
-    "stars": 3,
+    "stars": 4,
     "license": "MIT",
     "tags": [
       "linky",
@@ -17455,7 +17455,7 @@
     "issues": [
       "There is no `package.json`. We need this file to gather information about the module for the module list page."
     ],
-    "stars": 8,
+    "stars": 9,
     "license": "MIT",
     "image": "screenshots-screenshot-compact.jpg"
   },
@@ -17631,7 +17631,7 @@
     "maintainerURL": "",
     "description": "Interact with your mirror via Telegram. Revamped 2024.",
     "issues": [],
-    "stars": 26,
+    "stars": 25,
     "license": "MIT",
     "tags": [
       "telegram"
