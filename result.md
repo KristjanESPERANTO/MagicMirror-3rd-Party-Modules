@@ -1,6 +1,6 @@
 # Result of the module analysis
 
-Last update: 2025-03-15T05:38:37+01:00
+Last update: 2025-03-15T17:37:30+01:00
 
 ## General notes
 
@@ -14,7 +14,7 @@ Last update: 2025-03-15T05:38:37+01:00
 | modules analyzed     |   1228   |
 | maintainer           |    661   |
 | modules with issues  |   1228   |
-| issues               |   8878   |
+| issues               |   8867   |
 | modules at github    |   1097   |
 | modules at gitlab    |     12   |
 | modules at bitbucket |      1   |
@@ -7170,22 +7170,11 @@ Last update: 2025-03-15T05:38:37+01:00
 5. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
 6. Deprecated: Found `require('request')` in file `node_helper.js`: Replace it with built-in fetch.
 7. Typo: Found `MagicMirror2` in file `package.json`: Replace it with `MagicMirror²`.
-8. Typo: Found `Magic Mirror` in file `aw.js`: Replace it with `MagicMirror²`.
-9. Deprecated: Found `require('request')` in file `aw.js`: Replace it with built-in fetch.
-10. Typo: Found `Magic Mirror` in file `ax.js`: Replace it with `MagicMirror²`.
-11. Deprecated: Found `require('request')` in file `ax.js`: Replace it with built-in fetch.
-12. Typo: Found `Magic Mirror` in file `ds.js`: Replace it with `MagicMirror²`.
-13. Deprecated: Found `require('request')` in file `ds.js`: Replace it with built-in fetch.
-14. Typo: Found `Magic Mirror` in file `ms.js`: Replace it with `MagicMirror²`.
-15. Deprecated: Found `require('request')` in file `ms.js`: Replace it with built-in fetch.
-16. Typo: Found `Magic Mirror` in file `wg.js`: Replace it with `MagicMirror²`.
-17. Deprecated: Found `require('request')` in file `wg.js`: Replace it with built-in fetch.
-18. Typo: Found `Magic Mirror` in file `wu.js`: Replace it with `MagicMirror²`.
-19. Deprecated: Found `require('request')` in file `wu.js`: Replace it with built-in fetch.
-20. Warning: No LICENSE file.
-21. Recommendation: There ist no CHANGELOG file. It is recommended to add one.
-22. Recommendation: There ist no CODE_OF_CONDUCT file. It is recommended to add one.
-23. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
+8. Deprecated: Found `require('request')` in file `ds.js`: Replace it with built-in fetch.
+9. Warning: No LICENSE file.
+10. Recommendation: There ist no CHANGELOG file. It is recommended to add one.
+11. Recommendation: There ist no CODE_OF_CONDUCT file. It is recommended to add one.
+12. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
 
 ### [MMM-NOAAAlerts by mmtsweng](https://github.com/mmtsweng/MMM-NOAAAlerts)
 
@@ -12213,7 +12202,7 @@ Last update: 2025-03-15T05:38:37+01:00
 4. Recommendation: There ist no CODE_OF_CONDUCT file. It is recommended to add one.
 5. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
 
-### [MMM-Zmanim by shmulyeng](https://github.com/shmulyeng/MMM-Zmanim)
+### [MMM-Zmanim by supermem613](https://github.com/supermem613/MMM-Zmanim)
 
 1. `package.json` issue: No description
 2. `package.json` issue: No repository field.
@@ -12227,7 +12216,7 @@ Last update: 2025-03-15T05:38:37+01:00
 10. Recommendation: There ist no CODE_OF_CONDUCT file. It is recommended to add one.
 11. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
 
-### [MMM-Zmanim by supermem613](https://github.com/supermem613/MMM-Zmanim)
+### [MMM-Zmanim by shmulyeng](https://github.com/shmulyeng/MMM-Zmanim)
 
 1. `package.json` issue: No description
 2. `package.json` issue: No repository field.

@@ -10779,7 +10779,7 @@
     ],
     "image": "screenshot.jpg",
     "defaultSortWeight": 3,
-    "lastCommit": "2025-03-13T19:09:44+01:00"
+    "lastCommit": "2025-03-15T17:13:46+01:00"
   },
   {
     "name": "MMM-MplayerRadio",
@@ -12320,8 +12320,8 @@
     "hasGithubIssues": false,
     "license": "ISC",
     "image": "examples-1.jpg",
-    "defaultSortWeight": 22,
-    "lastCommit": "2025-03-14T17:38:22+02:00"
+    "defaultSortWeight": 11,
+    "lastCommit": "2025-03-15T18:07:34+02:00"
   },
   {
     "name": "MMM-NOAAAlerts",
@@ -18730,7 +18730,7 @@
     "maintainerURL": "",
     "description": "Displays the Twitter Trending Topics for a given place or city, as well as showing the tweet volume for each topic.",
     "issues": true,
-    "stars": 12,
+    "stars": 11,
     "license": "MIT",
     "image": "images-example.jpg",
     "defaultSortWeight": 7,
@@ -18827,7 +18827,7 @@
     "maintainerURL": "",
     "description": "This module displays LIVE UK National Rail train arrivals &amp; departures from a specified station.",
     "issues": true,
-    "stars": 6,
+    "stars": 7,
     "license": "MIT",
     "tags": [
       "national rail",
@@ -18859,7 +18859,7 @@
     "maintainerURL": "",
     "description": "Displays UniFi hotspot vouchers.",
     "issues": true,
-    "stars": 3,
+    "stars": 2,
     "tags": [
       "unifi"
     ],
@@ -20427,7 +20427,7 @@
       "stream",
       "channel"
     ],
-    "defaultSortWeight": 8,
+    "defaultSortWeight": 9,
     "lastCommit": "2023-03-15T12:13:02+01:00"
   },
   {
@@ -20514,22 +20514,6 @@
   {
     "name": "MMM-Zmanim",
     "category": "Religion",
-    "url": "https://github.com/shmulyeng/MMM-Zmanim",
-    "id": "shmulyeng/MMM-Zmanim",
-    "maintainer": "shmulyeng",
-    "maintainerURL": "",
-    "description": "Displays daily Jewish calendar information.",
-    "issues": true,
-    "stars": 0,
-    "hasGithubIssues": false,
-    "license": "ISC",
-    "image": "alternateScreenshot.jpg",
-    "defaultSortWeight": 12,
-    "lastCommit": "2020-12-06T21:27:43-05:00"
-  },
-  {
-    "name": "MMM-Zmanim",
-    "category": "Religion",
     "url": "https://github.com/supermem613/MMM-Zmanim",
     "id": "supermem613/MMM-Zmanim",
     "maintainer": "supermem613",
@@ -20542,5 +20526,21 @@
     "image": "alternateScreenshot.jpg",
     "defaultSortWeight": 11,
     "lastCommit": "2025-01-24T14:22:15-05:00"
+  },
+  {
+    "name": "MMM-Zmanim",
+    "category": "Religion",
+    "url": "https://github.com/shmulyeng/MMM-Zmanim",
+    "id": "shmulyeng/MMM-Zmanim",
+    "maintainer": "shmulyeng",
+    "maintainerURL": "",
+    "description": "Displays daily Jewish calendar information.",
+    "issues": true,
+    "stars": 0,
+    "hasGithubIssues": false,
+    "license": "ISC",
+    "image": "alternateScreenshot.jpg",
+    "defaultSortWeight": 12,
+    "lastCommit": "2020-12-06T21:27:43-05:00"
   }
 ]
