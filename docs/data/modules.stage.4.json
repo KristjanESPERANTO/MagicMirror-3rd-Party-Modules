@@ -12225,17 +12225,18 @@
   },
   {
     "name": "MMM-NOAA3",
-    "category": "Outdated Modules",
-    "url": "https://github.com/cowboysdude/MMM-NOAA3",
-    "id": "cowboysdude/MMM-NOAA3",
-    "maintainer": "cowboysdude",
+    "category": "Weather",
+    "url": "https://github.com/mumblebaj/MMM-NOAA3",
+    "id": "mumblebaj/MMM-NOAA3",
+    "maintainer": "mumblebaj",
     "maintainerURL": "",
     "description": "Different providers for users to choose from. Shows current plus 3 day forecast. Mouseover shows forecast, with Air, UV, Humidity, Sunrise and Set.",
     "issues": [
-      "There are no specific keywords in 'package.json'. We would use them as tags on the module list page. Add a few meaningful terms to the keywords in the package.json. Not just “magicmirror” or “module”."
+      "There are no specific keywords in 'package.json'. We would use them as tags on the module list page. Add a few meaningful terms to the keywords in the package.json. Not just “magicmirror” or “module”.",
+      "Issues are not enabled in the GitHub repository. So users cannot report bugs. Please enable issues in your repo."
     ],
-    "outdated": "Abandoned. No reactions to issues and PRs since years.",
     "stars": 2,
+    "hasGithubIssues": false,
     "license": "ISC",
     "image": "examples-1.jpg"
   },
@@ -12984,7 +12985,7 @@
     "maintainerURL": "",
     "description": "A weather module that displays current, hourly and daily forecast information using data from the OpenWeatherMap One Call API.",
     "issues": [],
-    "stars": 35,
+    "stars": 36,
     "license": "MIT",
     "tags": [
       "weather",
@@ -20094,7 +20095,7 @@
       "There are no keywords in 'package.json'. We would use them as tags on the module list page.",
       "No image found."
     ],
-    "stars": 5,
+    "stars": 6,
     "license": "MIT"
   },
   {
@@ -20317,7 +20318,7 @@
     "issues": [
       "There are no keywords in 'package.json'. We would use them as tags on the module list page."
     ],
-    "stars": 3,
+    "stars": 4,
     "license": "MIT",
     "image": "img-preshow.jpg"
   },

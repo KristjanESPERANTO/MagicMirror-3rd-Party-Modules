@@ -1,6 +1,6 @@
 # Result of the module analysis
 
-Last update: 2025-03-14T17:37:22+01:00
+Last update: 2025-03-15T05:38:37+01:00
 
 ## General notes
 
@@ -14,8 +14,8 @@ Last update: 2025-03-14T17:37:22+01:00
 | modules analyzed     |   1228   |
 | maintainer           |    661   |
 | modules with issues  |   1228   |
-| issues               |   8857   |
-| modules at github    |   1096   |
+| issues               |   8878   |
+| modules at github    |   1097   |
 | modules at gitlab    |     12   |
 | modules at bitbucket |      1   |
 
@@ -396,10 +396,11 @@ Last update: 2025-03-14T17:37:22+01:00
 ### [MMM-ApothekenNotdienst by KristjanESPERANTO](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst)
 
 1. Recommendation: Found `prettier/prettier` in file `stylelint.config.mjs`: Config would be cleaner using 'stylelint-prettier/recommended'. See (https://github.com/prettier/stylelint-prettier).
-2. Information: There are updates for 6 dependencie(s):
+2. Information: There are updates for 7 dependencie(s):
    - @eslint/js                 ^9.21.0  →   ^9.22.0
    - @stylistic/eslint-plugin    ^4.0.1  →    ^4.2.0
    - eslint                     ^9.21.0  →   ^9.22.0
+   - eslint-plugin-import-x      ^4.6.1  →    ^4.7.0
    - lint-staged                ^15.4.3  →   ^15.5.0
    - prettier                    ^3.5.2  →    ^3.5.3
    - stylelint                 ^16.14.1  →  ^16.16.0
@@ -1120,8 +1121,9 @@ Last update: 2025-03-14T17:37:22+01:00
 ### [MMM-CalendarExt2 by MMM-CalendarExt2](https://github.com/MMM-CalendarExt2/MMM-CalendarExt2)
 
 1. Recommendation: There ist no CODE_OF_CONDUCT file. It is recommended to add one.
-2. Information: There are updates for 1 dependencie(s):
-   - stylelint  ^16.15.0  →  ^16.16.0
+2. Information: There are updates for 2 dependencie(s):
+   - eslint-plugin-import-x    ^4.6.1  →    ^4.7.0
+   - stylelint               ^16.15.0  →  ^16.16.0
 
 
 ### [MMM-CalendarExt3 by MMRIZE](https://github.com/MMRIZE/MMM-CalendarExt3)
@@ -1266,9 +1268,11 @@ Last update: 2025-03-14T17:37:22+01:00
 
 ### [MMM-Canteen by KristjanESPERANTO](https://github.com/KristjanESPERANTO/MMM-Canteen)
 
-1. Information: There are updates for 2 dependencie(s):
-   - lint-staged   ^15.4.3  →   ^15.5.0
-   - stylelint    ^16.15.0  →  ^16.16.0
+1. Information: There are updates for 4 dependencie(s):
+   - @eslint/json             ^0.10.0  →   ^0.11.0
+   - eslint-plugin-import-x    ^4.6.1  →    ^4.7.0
+   - lint-staged              ^15.4.3  →   ^15.5.0
+   - stylelint               ^16.15.0  →  ^16.16.0
 
 
 ### [MMM-Canvas by chase-cromwell](https://github.com/chase-cromwell/MMM-Canvas)
@@ -1299,10 +1303,11 @@ Last update: 2025-03-14T17:37:22+01:00
 ### [MMM-Carousel by shbatm](https://github.com/shbatm/MMM-Carousel)
 
 1. Recommendation: Found `prettier/prettier` in file `stylelint.config.mjs`: Config would be cleaner using 'stylelint-prettier/recommended'. See (https://github.com/prettier/stylelint-prettier).
-2. Information: There are updates for 5 dependencie(s):
+2. Information: There are updates for 6 dependencie(s):
    - @eslint/js                 ^9.21.0  →   ^9.22.0
    - @stylistic/eslint-plugin    ^4.1.0  →    ^4.2.0
    - eslint                     ^9.21.0  →   ^9.22.0
+   - eslint-plugin-import-x      ^4.6.1  →    ^4.7.0
    - prettier                    ^3.5.2  →    ^3.5.3
    - stylelint                 ^16.15.0  →  ^16.16.0
 
@@ -2313,10 +2318,11 @@ Last update: 2025-03-14T17:37:22+01:00
 ### [MMM-EasyPix by KristjanESPERANTO](https://github.com/KristjanESPERANTO/MMM-EasyPix)
 
 1. Recommendation: Found `prettier/prettier` in file `stylelint.config.mjs`: Config would be cleaner using 'stylelint-prettier/recommended'. See (https://github.com/prettier/stylelint-prettier).
-2. Information: There are updates for 6 dependencie(s):
+2. Information: There are updates for 7 dependencie(s):
    - @eslint/js                 ^9.21.0  →   ^9.22.0
    - @stylistic/eslint-plugin    ^4.0.1  →    ^4.2.0
    - eslint                     ^9.21.0  →   ^9.22.0
+   - eslint-plugin-import-x      ^4.6.1  →    ^4.7.0
    - lint-staged                ^15.4.3  →   ^15.5.0
    - prettier                    ^3.5.2  →    ^3.5.3
    - stylelint                 ^16.14.1  →  ^16.16.0
@@ -3070,10 +3076,11 @@ Last update: 2025-03-14T17:37:22+01:00
 
 ### [MMM-Forum by KristjanESPERANTO](https://github.com/KristjanESPERANTO/MMM-Forum)
 
-1. Information: There are updates for 1 dependencie(s):
-   - stylelint  ^16.15.0  →  ^16.16.0
+1. Information: There are updates for 3 dependencie(s):
+   - @eslint/json             ^0.10.0  →   ^0.11.0
+   - eslint-plugin-import-x    ^4.6.1  →    ^4.7.0
+   - stylelint               ^16.15.0  →  ^16.16.0
 
-2. npm notice Changelog: <https://github.com/npm/cli/releases/tag/v11.2.0>
 
 ### [MMM-FrameLight by RaspiManu](https://github.com/RaspiManu/MMM-FrameLight)
 
@@ -4640,10 +4647,11 @@ Last update: 2025-03-14T17:37:22+01:00
 ### [MMM-ISS-Live by KristjanESPERANTO](https://github.com/KristjanESPERANTO/MMM-ISS-Live)
 
 1. Recommendation: There ist no CHANGELOG file. It is recommended to add one.
-2. Information: There are updates for 6 dependencie(s):
+2. Information: There are updates for 7 dependencie(s):
    - @eslint/js                  ^9.21.0  →  ^9.22.0
    - @stylistic/eslint-plugin     ^4.1.0  →   ^4.2.0
    - eslint                      ^9.21.0  →  ^9.22.0
+   - eslint-plugin-import-x       ^4.6.1  →   ^4.7.0
    - eslint-plugin-package-json  ^0.26.0  →  ^0.26.3
    - lint-staged                 ^15.4.3  →  ^15.5.0
    - prettier                     ^3.5.2  →   ^3.5.3
@@ -4898,10 +4906,11 @@ Last update: 2025-03-14T17:37:22+01:00
 ### [MMM-KeyBindings by shbatm](https://github.com/shbatm/MMM-KeyBindings)
 
 1. Recommendation: `dependabot.yml`: Use official file extension `.yaml` instead of `.yml` (<https://yaml.org/faq.html>).
-2. Information: There are updates for 4 dependencie(s):
+2. Information: There are updates for 5 dependencie(s):
    - @eslint/js                ^9.21.0  →  ^9.22.0
    - @stylistic/eslint-plugin   ^4.1.0  →   ^4.2.0
    - eslint                    ^9.21.0  →  ^9.22.0
+   - eslint-plugin-import-x     ^4.6.1  →   ^4.7.0
    - prettier                   ^3.5.2  →   ^3.5.3
 
 
@@ -7152,6 +7161,32 @@ Last update: 2025-03-14T17:37:22+01:00
 5. Recommendation: There ist no CODE_OF_CONDUCT file. It is recommended to add one.
 6. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
 
+### [MMM-NOAA3 by mumblebaj](https://github.com/mumblebaj/MMM-NOAA3)
+
+1. There are no specific keywords in 'package.json'. We would use them as tags on the module list page. Add a few meaningful terms to the keywords in the package.json. Not just “magicmirror” or “module”.
+2. Issues are not enabled in the GitHub repository. So users cannot report bugs. Please enable issues in your repo.
+3. Typo: Found `Magic Mirror` in file `MMM-NOAA3.js`: Replace it with `MagicMirror²`.
+4. Typo: Found `MagicMirror2` in file `README.md`: Replace it with `MagicMirror²`.
+5. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
+6. Deprecated: Found `require('request')` in file `node_helper.js`: Replace it with built-in fetch.
+7. Typo: Found `MagicMirror2` in file `package.json`: Replace it with `MagicMirror²`.
+8. Typo: Found `Magic Mirror` in file `aw.js`: Replace it with `MagicMirror²`.
+9. Deprecated: Found `require('request')` in file `aw.js`: Replace it with built-in fetch.
+10. Typo: Found `Magic Mirror` in file `ax.js`: Replace it with `MagicMirror²`.
+11. Deprecated: Found `require('request')` in file `ax.js`: Replace it with built-in fetch.
+12. Typo: Found `Magic Mirror` in file `ds.js`: Replace it with `MagicMirror²`.
+13. Deprecated: Found `require('request')` in file `ds.js`: Replace it with built-in fetch.
+14. Typo: Found `Magic Mirror` in file `ms.js`: Replace it with `MagicMirror²`.
+15. Deprecated: Found `require('request')` in file `ms.js`: Replace it with built-in fetch.
+16. Typo: Found `Magic Mirror` in file `wg.js`: Replace it with `MagicMirror²`.
+17. Deprecated: Found `require('request')` in file `wg.js`: Replace it with built-in fetch.
+18. Typo: Found `Magic Mirror` in file `wu.js`: Replace it with `MagicMirror²`.
+19. Deprecated: Found `require('request')` in file `wu.js`: Replace it with built-in fetch.
+20. Warning: No LICENSE file.
+21. Recommendation: There ist no CHANGELOG file. It is recommended to add one.
+22. Recommendation: There ist no CODE_OF_CONDUCT file. It is recommended to add one.
+23. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
+
 ### [MMM-NOAAAlerts by mmtsweng](https://github.com/mmtsweng/MMM-NOAAAlerts)
 
 1. There are no specific keywords in 'package.json'. We would use them as tags on the module list page. Add a few meaningful terms to the keywords in the package.json. Not just “magicmirror” or “module”.
@@ -7426,8 +7461,9 @@ Last update: 2025-03-14T17:37:22+01:00
 
 ### [MMM-OneCallWeather by KristjanESPERANTO](https://github.com/KristjanESPERANTO/MMM-OneCallWeather)
 
-1. Information: There are updates for 1 dependencie(s):
-   - stylelint  ^16.15.0  →  ^16.16.0
+1. Information: There are updates for 2 dependencie(s):
+   - eslint-plugin-import-x    ^4.6.1  →    ^4.7.0
+   - stylelint               ^16.15.0  →  ^16.16.0
 
 
 ### [MMM-OneDrive by hermanho](https://github.com/hermanho/MMM-OneDrive)
@@ -8496,10 +8532,11 @@ Last update: 2025-03-14T17:37:22+01:00
 ### [MMM-PublicTransportBerlin by deg0nz](https://github.com/deg0nz/MMM-PublicTransportBerlin)
 
 1. Recommendation: Found `prettier/prettier` in file `stylelint.config.mjs`: Config would be cleaner using 'stylelint-prettier/recommended'. See (https://github.com/prettier/stylelint-prettier).
-2. Information: There are updates for 6 dependencie(s):
+2. Information: There are updates for 7 dependencie(s):
    - @eslint/js                 ^9.21.0  →   ^9.22.0
    - @stylistic/eslint-plugin    ^4.1.0  →    ^4.2.0
    - eslint                     ^9.21.0  →   ^9.22.0
+   - eslint-plugin-import-x      ^4.6.1  →    ^4.7.0
    - lint-staged                ^15.4.3  →   ^15.5.0
    - prettier                    ^3.5.2  →    ^3.5.3
    - stylelint                 ^16.15.0  →  ^16.16.0
@@ -8507,9 +8544,12 @@ Last update: 2025-03-14T17:37:22+01:00
 
 ### [MMM-PublicTransportHafas by KristjanESPERANTO](https://github.com/KristjanESPERANTO/MMM-PublicTransportHafas)
 
-1. Information: There are updates for 2 dependencie(s):
-   - lint-staged   ^15.4.3  →   ^15.5.0
-   - stylelint    ^16.15.0  →  ^16.16.0
+1. Information: There are updates for 5 dependencie(s):
+   - @eslint/json             ^0.10.0  →   ^0.11.0
+   - db-vendo-client           ^6.6.1  →    ^6.6.2
+   - eslint-plugin-import-x    ^4.6.1  →    ^4.7.0
+   - lint-staged              ^15.4.3  →   ^15.5.0
+   - stylelint               ^16.15.0  →  ^16.16.0
 
 
 ### [MMM-PublicTransportVVO by ChristianGeie](https://github.com/ChristianGeie/MMM-PublicTransportVVO)

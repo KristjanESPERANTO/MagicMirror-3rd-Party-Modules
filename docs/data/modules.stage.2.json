@@ -8789,15 +8789,15 @@
   },
   {
     "name": "MMM-NOAA3",
-    "category": "Outdated Modules",
-    "url": "https://github.com/cowboysdude/MMM-NOAA3",
-    "id": "cowboysdude/MMM-NOAA3",
-    "maintainer": "cowboysdude",
+    "category": "Weather",
+    "url": "https://github.com/mumblebaj/MMM-NOAA3",
+    "id": "mumblebaj/MMM-NOAA3",
+    "maintainer": "mumblebaj",
     "maintainerURL": "",
     "description": "Different providers for users to choose from. Shows current plus 3 day forecast. Mouseover shows forecast, with Air, UV, Humidity, Sunrise and Set.",
     "issues": [],
-    "outdated": "Abandoned. No reactions to issues and PRs since years.",
-    "stars": 2
+    "stars": 2,
+    "hasGithubIssues": false
   },
   {
     "name": "MMM-NOAAAlerts",
@@ -9345,7 +9345,7 @@
     "maintainerURL": "",
     "description": "A weather module that displays current, hourly and daily forecast information using data from the OpenWeatherMap One Call API.",
     "issues": [],
-    "stars": 35,
+    "stars": 36,
     "license": "MIT"
   },
   {
@@ -14466,7 +14466,7 @@
     "maintainerURL": "https://github.com/jupadin",
     "description": "Displays either the daily XKCD comic or a random XKCD comic.",
     "issues": [],
-    "stars": 5,
+    "stars": 6,
     "license": "MIT"
   },
   {
@@ -14628,7 +14628,7 @@
     "maintainerURL": "https://github.com/choffmann",
     "description": "Show the subscription from Youtube Channel.",
     "issues": [],
-    "stars": 3,
+    "stars": 4,
     "license": "MIT"
   },
   {

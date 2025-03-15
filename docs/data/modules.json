@@ -5515,7 +5515,7 @@
       "nodebb"
     ],
     "image": "screenshot.jpg",
-    "defaultSortWeight": 1,
+    "defaultSortWeight": 0,
     "lastCommit": "2025-03-12T22:28:47+01:00"
   },
   {
@@ -11806,7 +11806,7 @@
     ],
     "image": ".github-preview.bubbles.jpg",
     "defaultSortWeight": 2,
-    "lastCommit": "2025-03-13T11:46:05+00:00"
+    "lastCommit": "2025-03-14T19:15:50+00:00"
   },
   {
     "name": "MMM-Netatmo-Presence",
@@ -12309,19 +12309,19 @@
   },
   {
     "name": "MMM-NOAA3",
-    "category": "Outdated Modules",
-    "url": "https://github.com/cowboysdude/MMM-NOAA3",
-    "id": "cowboysdude/MMM-NOAA3",
-    "maintainer": "cowboysdude",
+    "category": "Weather",
+    "url": "https://github.com/mumblebaj/MMM-NOAA3",
+    "id": "mumblebaj/MMM-NOAA3",
+    "maintainer": "mumblebaj",
     "maintainerURL": "",
     "description": "Different providers for users to choose from. Shows current plus 3 day forecast. Mouseover shows forecast, with Air, UV, Humidity, Sunrise and Set.",
-    "issues": false,
-    "outdated": "Abandoned. No reactions to issues and PRs since years.",
+    "issues": true,
     "stars": 2,
+    "hasGithubIssues": false,
     "license": "ISC",
     "image": "examples-1.jpg",
-    "defaultSortWeight": 901,
-    "lastCommit": "2022-05-16T14:29:28-04:00"
+    "defaultSortWeight": 22,
+    "lastCommit": "2025-03-14T17:38:22+02:00"
   },
   {
     "name": "MMM-NOAAAlerts",
@@ -13089,7 +13089,7 @@
     "maintainerURL": "",
     "description": "A weather module that displays current, hourly and daily forecast information using data from the OpenWeatherMap One Call API.",
     "issues": true,
-    "stars": 35,
+    "stars": 36,
     "license": "MIT",
     "tags": [
       "weather",
@@ -20258,7 +20258,7 @@
     "maintainerURL": "https://github.com/jupadin",
     "description": "Displays either the daily XKCD comic or a random XKCD comic.",
     "issues": true,
-    "stars": 5,
+    "stars": 6,
     "license": "MIT",
     "defaultSortWeight": 16,
     "lastCommit": "2022-02-23T19:14:36+01:00"
@@ -20484,7 +20484,7 @@
     "maintainerURL": "https://github.com/choffmann",
     "description": "Show the subscription from Youtube Channel.",
     "issues": true,
-    "stars": 3,
+    "stars": 4,
     "license": "MIT",
     "image": "img-preshow.jpg",
     "defaultSortWeight": 11,
