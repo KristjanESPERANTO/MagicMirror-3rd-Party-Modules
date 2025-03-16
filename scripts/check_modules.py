@@ -277,7 +277,7 @@ def check_modules():
                 module["issues"].append(
                     "Module is archived, but not marked as outdated in the official module list.")
 
-            elif not module["name"].startswith("MMM-"):
+            elif not module["name"].startswith("MMM-") and not module["name"] == "mmpm":
                 module["issues"].append(
                     "Recommendation: Module name doesn't follow the recommended pattern (it doesn't start with `MMM-`). Consider renaming your module."
                 )

@@ -22,7 +22,7 @@ fs.readFile("./docs/data/modules.stage.3.json", "utf8", (err, data) => {
        * }
        */
 
-    } else {
+    } else if (module.name !== "mmpm") {
       module.issues.push("Repository name and main js file name is not the same.");
     }
   });

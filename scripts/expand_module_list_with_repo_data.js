@@ -128,7 +128,11 @@ async function addInformationFromPackageJson (moduleList) {
       }
     } catch (error) {
       if (error.code === "ENOENT") {
-        module.issues.push("There is no `package.json`. We need this file to gather information about the module for the module list page.");
+        if (module.name === "mmpm") {
+          module.keywords = ["package manager", "module installer"];
+        } else {
+          module.issues.push("There is no `package.json`. We need this file to gather information about the module for the module list page.");
+        }
 
         if (module.hasGithubIssues === false) {
           module.issues.push("Issues are not enabled in the GitHub repository. So users cannot report bugs. Please enable issues in your repo.");
