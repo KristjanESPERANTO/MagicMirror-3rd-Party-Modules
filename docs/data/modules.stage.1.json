@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "2025-03-17T04:30:12.748Z",
+  "lastUpdate": "2025-03-17T16:30:08.889Z",
   "modules": [
     {
       "name": "MMM-01ZM",
@@ -7521,6 +7521,16 @@
       "maintainer": "XppaiCyberr",
       "maintainerURL": "",
       "description": "This module displays Nouncil voting participation data.",
+      "issues": []
+    },
+    {
+      "name": "MMM-NounsAuction",
+      "category": "Cryptocurrency",
+      "url": "https://github.com/XppaiCyberr/MMM-NounsAuction",
+      "id": "XppaiCyberr/MMM-NounsAuction",
+      "maintainer": "XppaiCyberr",
+      "maintainerURL": "",
+      "description": "This module displays real-time Nouns auction status.",
       "issues": []
     },
     {

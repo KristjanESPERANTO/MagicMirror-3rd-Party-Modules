@@ -1,6 +1,6 @@
 # Result of the module analysis
 
-Last update: 2025-03-17T05:38:10+01:00
+Last update: 2025-03-17T17:37:53+01:00
 
 ## General notes
 
@@ -11,11 +11,11 @@ Last update: 2025-03-17T05:38:10+01:00
 
 |                      | number   |
 |:---------------------|:--------:|
-| modules analyzed     |   1229   |
+| modules analyzed     |   1230   |
 | maintainer           |    662   |
-| modules with issues  |   1229   |
-| issues               |   8868   |
-| modules at github    |   1098   |
+| modules with issues  |   1230   |
+| issues               |   8872   |
+| modules at github    |   1099   |
 | modules at gitlab    |     12   |
 | modules at bitbucket |      1   |
 
@@ -925,12 +925,12 @@ Last update: 2025-03-17T05:38:10+01:00
    - @rollup/plugin-node-resolve   ^16.0.0  →    ^16.0.1
    - @stylistic/eslint-plugin      ^2.12.1  →     ^4.2.0
    - @types/node                  ^22.10.2  →  ^22.13.10
-   - bosch-smart-home-bridge        ^1.6.0  →    ^1.7.10
+   - bosch-smart-home-bridge        ^1.6.0  →    ^1.7.11
    - eslint                        ^9.17.0  →    ^9.22.0
    - eslint-config-prettier         ^9.1.0  →    ^10.1.1
    - eslint-plugin-prettier         ^5.2.1  →     ^5.2.3
    - prettier                       ^3.4.2  →     ^3.5.3
-   - rollup                        ^4.29.1  →    ^4.35.0
+   - rollup                        ^4.29.1  →    ^4.36.0
    - rxjs                           ^7.8.1  →     ^7.8.2
    - typescript                     ^5.7.2  →     ^5.8.2
    - typescript-eslint             ^8.18.2  →    ^8.26.1
@@ -4652,7 +4652,7 @@ Last update: 2025-03-17T05:38:10+01:00
    - @stylistic/eslint-plugin     ^4.1.0  →   ^4.2.0
    - eslint                      ^9.21.0  →  ^9.22.0
    - eslint-plugin-import-x       ^4.6.1  →   ^4.8.0
-   - eslint-plugin-package-json  ^0.26.0  →  ^0.26.3
+   - eslint-plugin-package-json  ^0.26.0  →  ^0.27.0
    - lint-staged                 ^15.4.3  →  ^15.5.0
    - prettier                     ^3.5.2  →   ^3.5.3
 
@@ -7268,6 +7268,13 @@ Last update: 2025-03-17T05:38:10+01:00
 2. Recommendation: There ist no CODE_OF_CONDUCT file. It is recommended to add one.
 3. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
 
+### [MMM-NounsAuction by XppaiCyberr](https://github.com/XppaiCyberr/MMM-NounsAuction)
+
+1. Outdated: Found `MichMich/MagicMirror` in file `README.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
+2. Recommendation: There ist no CHANGELOG file. It is recommended to add one.
+3. Recommendation: There ist no CODE_OF_CONDUCT file. It is recommended to add one.
+4. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
+
 ### [MMM-NRL by EwwYumYuck](https://github.com/EwwYumYuck/MMM-NRL/)
 
 1. Typo: Found `Magic Mirror` in file `MMM-NRL.css`: Replace it with `MagicMirror²`.
@@ -8533,12 +8540,13 @@ Last update: 2025-03-17T05:38:10+01:00
 
 ### [MMM-PublicTransportHafas by KristjanESPERANTO](https://github.com/KristjanESPERANTO/MMM-PublicTransportHafas)
 
-1. Information: There are updates for 5 dependencie(s):
-   - @eslint/json             ^0.10.0  →   ^0.11.0
-   - db-vendo-client           ^6.6.1  →    ^6.6.2
-   - eslint-plugin-import-x    ^4.6.1  →    ^4.8.0
-   - lint-staged              ^15.4.3  →   ^15.5.0
-   - stylelint               ^16.15.0  →  ^16.16.0
+1. Information: There are updates for 6 dependencie(s):
+   - @eslint/json                 ^0.10.0  →   ^0.11.0
+   - db-vendo-client               ^6.6.1  →    ^6.6.2
+   - eslint-plugin-import-x        ^4.6.1  →    ^4.8.0
+   - eslint-plugin-package-json   ^0.26.3  →   ^0.27.0
+   - lint-staged                  ^15.4.3  →   ^15.5.0
+   - stylelint                   ^16.15.0  →  ^16.16.0
 
 
 ### [MMM-PublicTransportVVO by ChristianGeie](https://github.com/ChristianGeie/MMM-PublicTransportVVO)

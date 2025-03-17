@@ -2699,7 +2699,7 @@
     "license": "ISC",
     "image": "doc_images-playground_example.jpg",
     "defaultSortWeight": 5,
-    "lastCommit": "2025-03-11T09:54:17-07:00"
+    "lastCommit": "2025-03-17T07:37:15-07:00"
   },
   {
     "name": "MMM-Confucius-say",
@@ -12462,7 +12462,30 @@
     ],
     "image": "demo.jpg",
     "defaultSortWeight": 2,
-    "lastCommit": "2025-03-16T21:45:31+07:00"
+    "lastCommit": "2025-03-17T13:47:25+07:00"
+  },
+  {
+    "name": "MMM-NounsAuction",
+    "category": "Cryptocurrency",
+    "url": "https://github.com/XppaiCyberr/MMM-NounsAuction",
+    "id": "XppaiCyberr/MMM-NounsAuction",
+    "maintainer": "XppaiCyberr",
+    "maintainerURL": "",
+    "description": "This module displays real-time Nouns auction status.",
+    "issues": true,
+    "stars": 0,
+    "license": "MIT",
+    "tags": [
+      "ethereum",
+      "blockchain",
+      "smart contract",
+      "nouns",
+      "nft",
+      "auction"
+    ],
+    "image": "preview.jpg",
+    "defaultSortWeight": 3,
+    "lastCommit": "2025-03-17T20:40:30+07:00"
   },
   {
     "name": "MMM-NowPlayingOnAIMP",
@@ -20300,7 +20323,7 @@
     "license": "MIT",
     "image": "image.jpg",
     "defaultSortWeight": 6,
-    "lastCommit": "2025-01-26T17:18:27-05:00"
+    "lastCommit": "2025-03-17T09:23:08-04:00"
   },
   {
     "name": "MMM-yandex-route",

@@ -12380,6 +12380,27 @@
     "image": "demo.jpg"
   },
   {
+    "name": "MMM-NounsAuction",
+    "category": "Cryptocurrency",
+    "url": "https://github.com/XppaiCyberr/MMM-NounsAuction",
+    "id": "XppaiCyberr/MMM-NounsAuction",
+    "maintainer": "XppaiCyberr",
+    "maintainerURL": "",
+    "description": "This module displays real-time Nouns auction status.",
+    "issues": [],
+    "stars": 0,
+    "license": "MIT",
+    "tags": [
+      "ethereum",
+      "blockchain",
+      "smart contract",
+      "nouns",
+      "nft",
+      "auction"
+    ],
+    "image": "preview.jpg"
+  },
+  {
     "name": "MMM-NowPlayingOnAIMP",
     "category": "Outdated Modules",
     "url": "https://github.com/jesmak/MMM-NowPlayingOnAIMP",
