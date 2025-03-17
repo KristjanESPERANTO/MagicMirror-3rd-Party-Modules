@@ -1240,7 +1240,7 @@
   },
   {
     "name": "MMM-Binance",
-    "category": "Finance",
+    "category": "Cryptocurrency",
     "url": "https://github.com/brssaricicek/MMM-Binance",
     "id": "brssaricicek/MMM-Binance",
     "maintainer": "brssaricicek",
@@ -1359,7 +1359,7 @@
   },
   {
     "name": "MMM-bitcoin",
-    "category": "Finance",
+    "category": "Cryptocurrency",
     "url": "https://github.com/valmassoi/MMM-bitcoin",
     "id": "valmassoi/MMM-bitcoin",
     "maintainer": "valmassoi",
@@ -1374,11 +1374,11 @@
   },
   {
     "name": "MMM-bitcoin-portfolio",
-    "category": "Finance",
+    "category": "Cryptocurrency",
     "url": "https://github.com/jeroenpeters1986/MMM-bitcoin-portfolio",
     "id": "jeroenpeters1986/MMM-bitcoin-portfolio",
     "maintainer": "jeroenpeters1986",
-    "maintainerURL": "https://github.com/jeroenpeters1986",
+    "maintainerURL": "",
     "description": "Display bitcoin ticket price + worth of your own wallet/portfolio.",
     "issues": true,
     "stars": 2,
@@ -2568,11 +2568,11 @@
   },
   {
     "name": "MMM-CoinGecko",
-    "category": "Finance",
+    "category": "Cryptocurrency",
     "url": "https://github.com/malako/MMM-CoinGecko",
     "id": "malako/MMM-CoinGecko",
     "maintainer": "malako",
-    "maintainerURL": "https://github.com/malako",
+    "maintainerURL": "",
     "description": "Display cryptocurrency information from <a target=\"_blank\" href=\"https://www.coingecko.com/\">CoinGecko</a>. Ticker price, logos, 7d sparkline, holdings etc.",
     "issues": true,
     "stars": 3,
@@ -2588,7 +2588,7 @@
   },
   {
     "name": "MMM-CoinMarketCap",
-    "category": "Finance",
+    "category": "Cryptocurrency",
     "url": "https://github.com/glitch452/MMM-CoinMarketCap",
     "id": "glitch452/MMM-CoinMarketCap",
     "maintainer": "glitch452",
@@ -2608,7 +2608,7 @@
   },
   {
     "name": "coinsquaremodule",
-    "category": "Finance",
+    "category": "Cryptocurrency",
     "url": "https://github.com/marcomerens/coinsquaremodule",
     "id": "marcomerens/coinsquaremodule",
     "maintainer": "marcomerens",
@@ -3050,7 +3050,7 @@
   },
   {
     "name": "MMM-cryptocurrency",
-    "category": "Finance",
+    "category": "Cryptocurrency",
     "url": "https://github.com/matteodanelli/MMM-cryptocurrency",
     "id": "matteodanelli/MMM-cryptocurrency",
     "maintainer": "matteodanelli",
@@ -3065,7 +3065,7 @@
   },
   {
     "name": "MMM-CryptoPortfolio",
-    "category": "Finance",
+    "category": "Cryptocurrency",
     "url": "https://github.com/DzMassi/MMM-CryptoPortfolio",
     "id": "DzMassi/MMM-CryptoPortfolio",
     "maintainer": "DzMassi",
@@ -4556,7 +4556,7 @@
   },
   {
     "name": "MMM-ethereum",
-    "category": "Finance",
+    "category": "Cryptocurrency",
     "url": "https://github.com/hansman84/MMM-ethereum",
     "id": "hansman84/MMM-ethereum",
     "maintainer": "hansman84",
@@ -4572,7 +4572,7 @@
   },
   {
     "name": "MMM-ethermine",
-    "category": "Finance",
+    "category": "Cryptocurrency",
     "url": "https://github.com/AjaxCarroway/MMM-ethermine",
     "id": "AjaxCarroway/MMM-ethermine",
     "maintainer": "AjaxCarroway",
@@ -6958,20 +6958,6 @@
   {
     "name": "MMM-HomeAssistant",
     "category": "Utility / IoT / 3rd Party / Integration",
-    "url": "https://github.com/yourdawi/MMM-HomeAssistant",
-    "id": "yourdawi/MMM-HomeAssistant",
-    "maintainer": "yourdawi",
-    "maintainerURL": "https://github.com/yourdawi",
-    "description": "Display information out of HomeAssistant.",
-    "issues": true,
-    "stars": 3,
-    "license": "MIT",
-    "defaultSortWeight": 8,
-    "lastCommit": "2024-12-22T13:05:46+01:00"
-  },
-  {
-    "name": "MMM-HomeAssistant",
-    "category": "Utility / IoT / 3rd Party / Integration",
     "url": "https://github.com/zuo000/MMM-HomeAssistant",
     "id": "zuo000/MMM-HomeAssistant",
     "maintainer": "zuo000",
@@ -6983,6 +6969,20 @@
     "image": "screenshot.jpg",
     "defaultSortWeight": 6,
     "lastCommit": "2020-04-08T18:54:01-07:00"
+  },
+  {
+    "name": "MMM-HomeAssistant",
+    "category": "Utility / IoT / 3rd Party / Integration",
+    "url": "https://github.com/yourdawi/MMM-HomeAssistant",
+    "id": "yourdawi/MMM-HomeAssistant",
+    "maintainer": "yourdawi",
+    "maintainerURL": "https://github.com/yourdawi",
+    "description": "Display information out of HomeAssistant.",
+    "issues": true,
+    "stars": 3,
+    "license": "MIT",
+    "defaultSortWeight": 8,
+    "lastCommit": "2024-12-22T13:05:46+01:00"
   },
   {
     "name": "MMM-homeassistant-sensors",
@@ -10783,7 +10783,7 @@
     ],
     "image": "screenshot.jpg",
     "defaultSortWeight": 3,
-    "lastCommit": "2025-03-16T18:31:20+01:00"
+    "lastCommit": "2025-03-16T20:52:41+01:00"
   },
   {
     "name": "MMM-MplayerRadio",
@@ -12446,12 +12446,12 @@
   },
   {
     "name": "MMM-NouncilVotes",
-    "category": "News / Information",
+    "category": "Cryptocurrency",
     "url": "https://github.com/XppaiCyberr/MMM-NouncilVotes",
     "id": "XppaiCyberr/MMM-NouncilVotes",
     "maintainer": "XppaiCyberr",
-    "maintainerURL": "https://github.com/XppaiCyberr",
-    "description": "This module displays Nouncil voting participation data",
+    "maintainerURL": "",
+    "description": "This module displays Nouncil voting participation data.",
     "issues": true,
     "stars": 0,
     "license": "MIT",
@@ -16655,7 +16655,7 @@
     "maintainerURL": "https://github.com/AgP42",
     "description": "An iFrame module to display web content (including YouTube, IP cameras, etc.). Several rotating URL, autorefresh and remote control of the URL to display, Next/Prev/Play/Stop. <a target=\"_blank\" href=\"https://forum.magicmirror.builders/topic/9750/mmm-smartwebdisplay-display-web-contents-including-youtube-on-your-mm\">MMM-SmartWebDisplay forum</a>.",
     "issues": true,
-    "stars": 64,
+    "stars": 63,
     "tags": [
       "iframe",
       "notification"
@@ -16727,7 +16727,7 @@
     "maintainerURL": "",
     "description": "More realistic snow plugin to improve your winter experience.",
     "issues": true,
-    "stars": 58,
+    "stars": 59,
     "defaultSortWeight": 7,
     "lastCommit": "2018-02-13T22:37:11+01:00"
   },
@@ -16740,7 +16740,7 @@
     "maintainerURL": "",
     "description": "Display standings from European Soccer (Football) leagues (optional voice-control).",
     "issues": true,
-    "stars": 33,
+    "stars": 31,
     "license": "MIT",
     "tags": [
       "soccer standings"
@@ -16921,7 +16921,7 @@
     "maintainerURL": "",
     "description": "Display the last Solar Dynamics Observatory (SDO) picture.",
     "issues": true,
-    "stars": 3,
+    "stars": 4,
     "license": "MIT",
     "image": "MMM-SolarPicture_screenshot1.jpg",
     "defaultSortWeight": 7,
@@ -17093,7 +17093,7 @@
     "maintainerURL": "",
     "description": "Spotify Controller - with device and account switch buttons, easy volume change via touch and much more.",
     "issues": true,
-    "stars": 69,
+    "stars": 68,
     "license": "MIT",
     "tags": [
       "spotify",
@@ -17112,7 +17112,7 @@
     "maintainerURL": "",
     "description": "Display information from Spotify Connect e.g. cover, artist and track information.",
     "issues": true,
-    "stars": 54,
+    "stars": 53,
     "license": "MIT",
     "image": "images-Example.jpg",
     "defaultSortWeight": 7,

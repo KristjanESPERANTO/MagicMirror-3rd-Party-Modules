@@ -1,6 +1,6 @@
 # Result of the module analysis
 
-Last update: 2025-03-16T19:11:24+01:00
+Last update: 2025-03-17T05:38:10+01:00
 
 ## General notes
 
@@ -3975,6 +3975,15 @@ Last update: 2025-03-16T19:11:24+01:00
 7. Recommendation: There ist no CODE_OF_CONDUCT file. It is recommended to add one.
 8. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
 
+### [MMM-HomeAssistant by zuo000](https://github.com/zuo000/MMM-HomeAssistant)
+
+1. There is no `package.json`. We need this file to gather information about the module for the module list page.
+2. Outdated: Found `MichMich/MagicMirror` in file `README.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
+3. Deprecated: Found `require('request')` in file `node_helper.js`: Replace it with built-in fetch.
+4. Recommendation: There ist no CHANGELOG file. It is recommended to add one.
+5. Recommendation: There ist no CODE_OF_CONDUCT file. It is recommended to add one.
+6. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
+
 ### [MMM-HomeAssistant by yourdawi](https://github.com/yourdawi/MMM-HomeAssistant)
 
 1. `package.json` issue: No repository field.
@@ -3986,15 +3995,6 @@ Last update: 2025-03-16T19:11:24+01:00
 7. Recommendation: There ist no CHANGELOG file. It is recommended to add one.
 8. Recommendation: There ist no CODE_OF_CONDUCT file. It is recommended to add one.
 9. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
-
-### [MMM-HomeAssistant by zuo000](https://github.com/zuo000/MMM-HomeAssistant)
-
-1. There is no `package.json`. We need this file to gather information about the module for the module list page.
-2. Outdated: Found `MichMich/MagicMirror` in file `README.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
-3. Deprecated: Found `require('request')` in file `node_helper.js`: Replace it with built-in fetch.
-4. Recommendation: There ist no CHANGELOG file. It is recommended to add one.
-5. Recommendation: There ist no CODE_OF_CONDUCT file. It is recommended to add one.
-6. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
 
 ### [MMM-homeassistant-sensors by Snille](https://github.com/Snille/MMM-homeassistant-sensors)
 

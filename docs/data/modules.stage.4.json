@@ -1205,7 +1205,7 @@
   },
   {
     "name": "MMM-Binance",
-    "category": "Finance",
+    "category": "Cryptocurrency",
     "url": "https://github.com/brssaricicek/MMM-Binance",
     "id": "brssaricicek/MMM-Binance",
     "maintainer": "brssaricicek",
@@ -1320,7 +1320,7 @@
   },
   {
     "name": "MMM-bitcoin",
-    "category": "Finance",
+    "category": "Cryptocurrency",
     "url": "https://github.com/valmassoi/MMM-bitcoin",
     "id": "valmassoi/MMM-bitcoin",
     "maintainer": "valmassoi",
@@ -1335,11 +1335,11 @@
   },
   {
     "name": "MMM-bitcoin-portfolio",
-    "category": "Finance",
+    "category": "Cryptocurrency",
     "url": "https://github.com/jeroenpeters1986/MMM-bitcoin-portfolio",
     "id": "jeroenpeters1986/MMM-bitcoin-portfolio",
     "maintainer": "jeroenpeters1986",
-    "maintainerURL": "https://github.com/jeroenpeters1986",
+    "maintainerURL": "",
     "description": "Display bitcoin ticket price + worth of your own wallet/portfolio.",
     "issues": [
       "There is no `package.json`. We need this file to gather information about the module for the module list page."
@@ -2510,11 +2510,11 @@
   },
   {
     "name": "MMM-CoinGecko",
-    "category": "Finance",
+    "category": "Cryptocurrency",
     "url": "https://github.com/malako/MMM-CoinGecko",
     "id": "malako/MMM-CoinGecko",
     "maintainer": "malako",
-    "maintainerURL": "https://github.com/malako",
+    "maintainerURL": "",
     "description": "Display cryptocurrency information from <a target=\"_blank\" href=\"https://www.coingecko.com/\">CoinGecko</a>. Ticker price, logos, 7d sparkline, holdings etc.",
     "issues": [],
     "stars": 3,
@@ -2528,7 +2528,7 @@
   },
   {
     "name": "MMM-CoinMarketCap",
-    "category": "Finance",
+    "category": "Cryptocurrency",
     "url": "https://github.com/glitch452/MMM-CoinMarketCap",
     "id": "glitch452/MMM-CoinMarketCap",
     "maintainer": "glitch452",
@@ -2546,7 +2546,7 @@
   },
   {
     "name": "coinsquaremodule",
-    "category": "Finance",
+    "category": "Cryptocurrency",
     "url": "https://github.com/marcomerens/coinsquaremodule",
     "id": "marcomerens/coinsquaremodule",
     "maintainer": "marcomerens",
@@ -2985,7 +2985,7 @@
   },
   {
     "name": "MMM-cryptocurrency",
-    "category": "Finance",
+    "category": "Cryptocurrency",
     "url": "https://github.com/matteodanelli/MMM-cryptocurrency",
     "id": "matteodanelli/MMM-cryptocurrency",
     "maintainer": "matteodanelli",
@@ -3000,7 +3000,7 @@
   },
   {
     "name": "MMM-CryptoPortfolio",
-    "category": "Finance",
+    "category": "Cryptocurrency",
     "url": "https://github.com/DzMassi/MMM-CryptoPortfolio",
     "id": "DzMassi/MMM-CryptoPortfolio",
     "maintainer": "DzMassi",
@@ -4491,7 +4491,7 @@
   },
   {
     "name": "MMM-ethereum",
-    "category": "Finance",
+    "category": "Cryptocurrency",
     "url": "https://github.com/hansman84/MMM-ethereum",
     "id": "hansman84/MMM-ethereum",
     "maintainer": "hansman84",
@@ -4508,7 +4508,7 @@
   },
   {
     "name": "MMM-ethermine",
-    "category": "Finance",
+    "category": "Cryptocurrency",
     "url": "https://github.com/AjaxCarroway/MMM-ethermine",
     "id": "AjaxCarroway/MMM-ethermine",
     "maintainer": "AjaxCarroway",
@@ -6904,6 +6904,21 @@
   {
     "name": "MMM-HomeAssistant",
     "category": "Utility / IoT / 3rd Party / Integration",
+    "url": "https://github.com/zuo000/MMM-HomeAssistant",
+    "id": "zuo000/MMM-HomeAssistant",
+    "maintainer": "zuo000",
+    "maintainerURL": "https://github.com/zuo000",
+    "description": "HomeAssistant frontend module using HA REST API, including Light, Switch, Sensor.",
+    "issues": [
+      "There is no `package.json`. We need this file to gather information about the module for the module list page."
+    ],
+    "stars": 27,
+    "license": "MIT",
+    "image": "screenshot.jpg"
+  },
+  {
+    "name": "MMM-HomeAssistant",
+    "category": "Utility / IoT / 3rd Party / Integration",
     "url": "https://github.com/yourdawi/MMM-HomeAssistant",
     "id": "yourdawi/MMM-HomeAssistant",
     "maintainer": "yourdawi",
@@ -6916,21 +6931,6 @@
     ],
     "stars": 3,
     "license": "MIT"
-  },
-  {
-    "name": "MMM-HomeAssistant",
-    "category": "Utility / IoT / 3rd Party / Integration",
-    "url": "https://github.com/zuo000/MMM-HomeAssistant",
-    "id": "zuo000/MMM-HomeAssistant",
-    "maintainer": "zuo000",
-    "maintainerURL": "https://github.com/zuo000",
-    "description": "HomeAssistant frontend module using HA REST API, including Light, Switch, Sensor.",
-    "issues": [
-      "There is no `package.json`. We need this file to gather information about the module for the module list page."
-    ],
-    "stars": 27,
-    "license": "MIT",
-    "image": "screenshot.jpg"
   },
   {
     "name": "MMM-homeassistant-sensors",
@@ -12363,12 +12363,12 @@
   },
   {
     "name": "MMM-NouncilVotes",
-    "category": "News / Information",
+    "category": "Cryptocurrency",
     "url": "https://github.com/XppaiCyberr/MMM-NouncilVotes",
     "id": "XppaiCyberr/MMM-NouncilVotes",
     "maintainer": "XppaiCyberr",
-    "maintainerURL": "https://github.com/XppaiCyberr",
-    "description": "This module displays Nouncil voting participation data",
+    "maintainerURL": "",
+    "description": "This module displays Nouncil voting participation data.",
     "issues": [],
     "stars": 0,
     "license": "MIT",
@@ -16523,7 +16523,7 @@
     "issues": [
       "No image found."
     ],
-    "stars": 64,
+    "stars": 63,
     "tags": [
       "iframe",
       "notification"
@@ -16591,7 +16591,7 @@
     "issues": [
       "There is no `package.json`. We need this file to gather information about the module for the module list page."
     ],
-    "stars": 58
+    "stars": 59
   },
   {
     "name": "MMM-soccer",
@@ -16602,7 +16602,7 @@
     "maintainerURL": "",
     "description": "Display standings from European Soccer (Football) leagues (optional voice-control).",
     "issues": [],
-    "stars": 33,
+    "stars": 31,
     "license": "MIT",
     "tags": [
       "soccer standings"
@@ -16782,7 +16782,7 @@
     "issues": [
       "There is no `package.json`. We need this file to gather information about the module for the module list page."
     ],
-    "stars": 3,
+    "stars": 4,
     "license": "MIT",
     "image": "MMM-SolarPicture_screenshot1.jpg"
   },
@@ -16949,7 +16949,7 @@
     "maintainerURL": "",
     "description": "Spotify Controller - with device and account switch buttons, easy volume change via touch and much more.",
     "issues": [],
-    "stars": 69,
+    "stars": 68,
     "license": "MIT",
     "tags": [
       "spotify",
@@ -16968,7 +16968,7 @@
     "issues": [
       "There is no `package.json`. We need this file to gather information about the module for the module list page."
     ],
-    "stars": 54,
+    "stars": 53,
     "license": "MIT",
     "image": "images-Example.jpg"
   },
