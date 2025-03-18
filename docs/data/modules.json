@@ -2699,7 +2699,7 @@
     "license": "ISC",
     "image": "doc_images-playground_example.jpg",
     "defaultSortWeight": 5,
-    "lastCommit": "2025-03-17T07:37:15-07:00"
+    "lastCommit": "2025-03-17T22:24:22-07:00"
   },
   {
     "name": "MMM-Confucius-say",
@@ -4195,7 +4195,7 @@
     "maintainer": "KristjanESPERANTO",
     "maintainerURL": "",
     "description": "The easiest way to show pictures on your mirror.",
-    "issues": false,
+    "issues": true,
     "stars": 9,
     "license": "MIT",
     "tags": [
@@ -4204,7 +4204,7 @@
       "pictures"
     ],
     "image": "pix-earth.jpg",
-    "defaultSortWeight": -1,
+    "defaultSortWeight": 0,
     "lastCommit": "2025-03-17T21:21:18+01:00"
   },
   {
@@ -12819,7 +12819,7 @@
     "maintainer": "KristjanESPERANTO",
     "maintainerURL": "",
     "description": "Display current and forecast weather based on Openweathermap OneCall API data with alternative formatting. With various icon sets, including an animated one.",
-    "issues": false,
+    "issues": true,
     "stars": 4,
     "license": "MIT",
     "tags": [
@@ -14824,7 +14824,7 @@
     "maintainerURL": "https://github.com/jalibu",
     "description": "A rain radar map based on OpenStreetMap. Multiple location markers, option for alternating positions and zoom levels.",
     "issues": true,
-    "stars": 45,
+    "stars": 44,
     "license": "MIT",
     "tags": [
       "weather",
@@ -18433,7 +18433,7 @@
     "maintainerURL": "https://github.com/samlewis0602",
     "description": "Display commute travel time with current traffic conditions factored in. Can be used for driving, biking, walking, and public transit.",
     "issues": true,
-    "stars": 142,
+    "stars": 141,
     "tags": [
       "traffic"
     ],
@@ -19006,7 +19006,7 @@
     "maintainerURL": "https://github.com/yourdawi",
     "description": "Display a random useless fact (eng/ger).",
     "issues": true,
-    "stars": 2,
+    "stars": 3,
     "license": "MIT",
     "defaultSortWeight": 4,
     "lastCommit": "2024-11-05T22:08:36+01:00"

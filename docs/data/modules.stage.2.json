@@ -10601,7 +10601,7 @@
     "maintainerURL": "https://github.com/jalibu",
     "description": "A rain radar map based on OpenStreetMap. Multiple location markers, option for alternating positions and zoom levels.",
     "issues": [],
-    "stars": 45,
+    "stars": 44,
     "license": "MIT"
   },
   {
@@ -13147,7 +13147,7 @@
     "maintainerURL": "https://github.com/samlewis0602",
     "description": "Display commute travel time with current traffic conditions factored in. Can be used for driving, biking, walking, and public transit.",
     "issues": [],
-    "stars": 142
+    "stars": 141
   },
   {
     "name": "MMM-TrainConnections",
@@ -13558,7 +13558,7 @@
     "maintainerURL": "https://github.com/yourdawi",
     "description": "Display a random useless fact (eng/ger).",
     "issues": [],
-    "stars": 2,
+    "stars": 3,
     "license": "MIT"
   },
   {
