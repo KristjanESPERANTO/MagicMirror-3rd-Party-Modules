@@ -4195,7 +4195,7 @@
     "maintainer": "KristjanESPERANTO",
     "maintainerURL": "",
     "description": "The easiest way to show pictures on your mirror.",
-    "issues": true,
+    "issues": false,
     "stars": 9,
     "license": "MIT",
     "tags": [
@@ -4204,8 +4204,8 @@
       "pictures"
     ],
     "image": "pix-earth.jpg",
-    "defaultSortWeight": 1,
-    "lastCommit": "2025-02-24T23:19:21+01:00"
+    "defaultSortWeight": -1,
+    "lastCommit": "2025-03-17T21:21:18+01:00"
   },
   {
     "name": "MMM-Ecobee",
@@ -6583,7 +6583,7 @@
     ],
     "image": "images-screenshot.jpg",
     "defaultSortWeight": 3,
-    "lastCommit": "2025-03-10T17:08:25+02:00"
+    "lastCommit": "2025-03-17T20:10:11+02:00"
   },
   {
     "name": "MMM-Growatt",
@@ -9598,7 +9598,7 @@
     "maintainerURL": "",
     "description": "Displays school breakfast and lunch menus from MealViewer.",
     "issues": true,
-    "stars": 2,
+    "stars": 3,
     "license": "MIT",
     "tags": [
       "mealviewer",
@@ -12325,7 +12325,7 @@
     "license": "ISC",
     "image": "examples-1.jpg",
     "defaultSortWeight": 11,
-    "lastCommit": "2025-03-16T15:17:23+02:00"
+    "lastCommit": "2025-03-17T20:14:12+02:00"
   },
   {
     "name": "MMM-NOAAAlerts",
@@ -12819,7 +12819,7 @@
     "maintainer": "KristjanESPERANTO",
     "maintainerURL": "",
     "description": "Display current and forecast weather based on Openweathermap OneCall API data with alternative formatting. With various icon sets, including an animated one.",
-    "issues": true,
+    "issues": false,
     "stars": 4,
     "license": "MIT",
     "tags": [
@@ -12828,7 +12828,7 @@
     ],
     "image": "screenshot.jpg",
     "defaultSortWeight": 1,
-    "lastCommit": "2025-03-12T18:46:09+01:00"
+    "lastCommit": "2025-03-17T21:06:36+01:00"
   },
   {
     "name": "MMM-OneDrive",
@@ -18075,7 +18075,7 @@
     "maintainerURL": "",
     "description": "Status board for TFL (Transport For London) lines including London Tube, Elizabeth line, Tram, DLR, Bus, River Coach.",
     "issues": true,
-    "stars": 7,
+    "stars": 8,
     "license": "MIT",
     "image": "tube.jpg",
     "defaultSortWeight": 10,
@@ -18285,7 +18285,7 @@
     "maintainerURL": "https://github.com/teemoo7",
     "description": "Calculate routes with TomTom API (free), and display travel time with traffic delays.",
     "issues": true,
-    "stars": 4,
+    "stars": 5,
     "license": "MIT",
     "image": "screenshots-route.jpg",
     "defaultSortWeight": 6,

@@ -9492,7 +9492,7 @@
     "maintainerURL": "",
     "description": "Displays school breakfast and lunch menus from MealViewer.",
     "issues": [],
-    "stars": 2,
+    "stars": 3,
     "license": "MIT",
     "tags": [
       "mealviewer",
@@ -17863,7 +17863,7 @@
     "issues": [
       "There is no `package.json`. We need this file to gather information about the module for the module list page."
     ],
-    "stars": 7,
+    "stars": 8,
     "license": "MIT",
     "image": "tube.jpg"
   },
@@ -18065,7 +18065,7 @@
     "issues": [
       "There is no `package.json`. We need this file to gather information about the module for the module list page."
     ],
-    "stars": 4,
+    "stars": 5,
     "license": "MIT",
     "image": "screenshots-route.jpg"
   },
