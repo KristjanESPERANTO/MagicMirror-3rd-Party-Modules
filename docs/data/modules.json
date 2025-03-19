@@ -2699,7 +2699,7 @@
     "license": "ISC",
     "image": "doc_images-playground_example.jpg",
     "defaultSortWeight": 5,
-    "lastCommit": "2025-03-17T22:24:22-07:00"
+    "lastCommit": "2025-03-18T21:03:36-07:00"
   },
   {
     "name": "MMM-Confucius-say",
@@ -8014,7 +8014,7 @@
     ],
     "image": "images-screenshot1.jpg",
     "defaultSortWeight": 1,
-    "lastCommit": "2025-02-27T19:09:07+01:00"
+    "lastCommit": "2025-03-18T22:08:43+01:00"
   },
   {
     "name": "MMM-ISS-Map",
@@ -12828,7 +12828,7 @@
     ],
     "image": "screenshot.jpg",
     "defaultSortWeight": 1,
-    "lastCommit": "2025-03-17T21:06:36+01:00"
+    "lastCommit": "2025-03-18T22:48:17+01:00"
   },
   {
     "name": "MMM-OneDrive",
@@ -12846,7 +12846,7 @@
     ],
     "image": "images-screenshot.jpg",
     "defaultSortWeight": 4,
-    "lastCommit": "2024-12-04T02:53:03+00:00"
+    "lastCommit": "2025-03-18T23:54:06+00:00"
   },
   {
     "name": "MMM-OneTouchReveal",
@@ -14997,7 +14997,7 @@
     "maintainerURL": "https://github.com/nkl-kst",
     "description": "Display RBB weather data.",
     "issues": true,
-    "stars": 5,
+    "stars": 4,
     "license": "MIT",
     "image": ".github-screen.jpg",
     "defaultSortWeight": 16,
@@ -15161,7 +15161,7 @@
     "maintainerURL": "",
     "description": "Cleanly shutdown (or reboot) your mirror, edit which modules are shown on your mirror and turn your monitor off and on from a simple website, i.e. from your smartphone.",
     "issues": true,
-    "stars": 517,
+    "stars": 518,
     "license": "MIT",
     "tags": [
       "remote control",
@@ -15181,7 +15181,7 @@
     "description": "Plugin for <code>MMM-Remote-Control</code> to update installable modules automatically.",
     "issues": false,
     "outdated": "Obsolete. MMM-Remote-Control now updates it's modules.json itself.",
-    "stars": 25,
+    "stars": 26,
     "license": "MIT",
     "defaultSortWeight": 900,
     "lastCommit": "2023-10-19T08:33:11+02:00"

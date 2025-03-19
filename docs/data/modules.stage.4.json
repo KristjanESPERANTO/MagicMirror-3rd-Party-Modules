@@ -14889,7 +14889,7 @@
     "issues": [
       "There are no keywords in 'package.json'. We would use them as tags on the module list page."
     ],
-    "stars": 5,
+    "stars": 4,
     "license": "MIT",
     "image": ".github-screen.jpg"
   },
@@ -15056,7 +15056,7 @@
     "maintainerURL": "",
     "description": "Cleanly shutdown (or reboot) your mirror, edit which modules are shown on your mirror and turn your monitor off and on from a simple website, i.e. from your smartphone.",
     "issues": [],
-    "stars": 517,
+    "stars": 518,
     "license": "MIT",
     "tags": [
       "remote control",
@@ -15077,7 +15077,7 @@
       "No image found."
     ],
     "outdated": "Obsolete. MMM-Remote-Control now updates it's modules.json itself.",
-    "stars": 25,
+    "stars": 26,
     "license": "MIT"
   },
   {

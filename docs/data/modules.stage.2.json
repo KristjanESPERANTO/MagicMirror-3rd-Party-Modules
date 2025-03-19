@@ -10720,7 +10720,7 @@
     "maintainerURL": "https://github.com/nkl-kst",
     "description": "Display RBB weather data.",
     "issues": [],
-    "stars": 5,
+    "stars": 4,
     "license": "MIT"
   },
   {
@@ -10848,7 +10848,7 @@
     "maintainerURL": "",
     "description": "Cleanly shutdown (or reboot) your mirror, edit which modules are shown on your mirror and turn your monitor off and on from a simple website, i.e. from your smartphone.",
     "issues": [],
-    "stars": 517,
+    "stars": 518,
     "license": "MIT"
   },
   {
@@ -10861,7 +10861,7 @@
     "description": "Plugin for <code>MMM-Remote-Control</code> to update installable modules automatically.",
     "issues": [],
     "outdated": "Obsolete. MMM-Remote-Control now updates it's modules.json itself.",
-    "stars": 25,
+    "stars": 26,
     "license": "MIT"
   },
   {

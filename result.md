@@ -1,6 +1,6 @@
 # Result of the module analysis
 
-Last update: 2025-03-18T17:37:41+01:00
+Last update: 2025-03-19T05:37:45+01:00
 
 ## General notes
 
@@ -14,7 +14,7 @@ Last update: 2025-03-18T17:37:41+01:00
 | modules analyzed     |   1230   |
 | maintainer           |    662   |
 | modules with issues  |   1230   |
-| issues               |   8871   |
+| issues               |   8870   |
 | modules at github    |   1099   |
 | modules at gitlab    |     12   |
 | modules at bitbucket |      1   |
@@ -400,7 +400,7 @@ Last update: 2025-03-18T17:37:41+01:00
    - @eslint/js                 ^9.21.0  →   ^9.22.0
    - @stylistic/eslint-plugin    ^4.0.1  →    ^4.2.0
    - eslint                     ^9.21.0  →   ^9.22.0
-   - eslint-plugin-import-x      ^4.6.1  →    ^4.8.1
+   - eslint-plugin-import-x      ^4.6.1  →    ^4.9.0
    - lint-staged                ^15.4.3  →   ^15.5.0
    - prettier                    ^3.5.2  →    ^3.5.3
    - stylelint                 ^16.14.1  →  ^16.16.0
@@ -1122,7 +1122,7 @@ Last update: 2025-03-18T17:37:41+01:00
 
 1. Recommendation: There ist no CODE_OF_CONDUCT file. It is recommended to add one.
 2. Information: There are updates for 2 dependencie(s):
-   - eslint-plugin-import-x    ^4.6.1  →    ^4.8.1
+   - eslint-plugin-import-x    ^4.6.1  →    ^4.9.0
    - stylelint               ^16.15.0  →  ^16.16.0
 
 
@@ -1270,7 +1270,7 @@ Last update: 2025-03-18T17:37:41+01:00
 
 1. Information: There are updates for 4 dependencie(s):
    - @eslint/json             ^0.10.0  →   ^0.11.0
-   - eslint-plugin-import-x    ^4.6.1  →    ^4.8.1
+   - eslint-plugin-import-x    ^4.6.1  →    ^4.9.0
    - lint-staged              ^15.4.3  →   ^15.5.0
    - stylelint               ^16.15.0  →  ^16.16.0
 
@@ -1307,7 +1307,7 @@ Last update: 2025-03-18T17:37:41+01:00
    - @eslint/js                 ^9.21.0  →   ^9.22.0
    - @stylistic/eslint-plugin    ^4.1.0  →    ^4.2.0
    - eslint                     ^9.21.0  →   ^9.22.0
-   - eslint-plugin-import-x      ^4.6.1  →    ^4.8.1
+   - eslint-plugin-import-x      ^4.6.1  →    ^4.9.0
    - prettier                    ^3.5.2  →    ^3.5.3
    - stylelint                 ^16.15.0  →  ^16.16.0
 
@@ -2318,7 +2318,7 @@ Last update: 2025-03-18T17:37:41+01:00
 ### [MMM-EasyPix by KristjanESPERANTO](https://github.com/KristjanESPERANTO/MMM-EasyPix)
 
 1. Information: There are updates for 1 dependencie(s):
-   - eslint-plugin-import-x  ^4.8.0  →  ^4.8.1
+   - eslint-plugin-import-x  ^4.8.0  →  ^4.9.0
 
 
 ### [MMM-Ecobee by parnic](https://github.com/parnic/MMM-Ecobee)
@@ -3071,7 +3071,7 @@ Last update: 2025-03-18T17:37:41+01:00
 
 1. Information: There are updates for 3 dependencie(s):
    - @eslint/json             ^0.10.0  →   ^0.11.0
-   - eslint-plugin-import-x    ^4.6.1  →    ^4.8.1
+   - eslint-plugin-import-x    ^4.6.1  →    ^4.9.0
    - stylelint               ^16.15.0  →  ^16.16.0
 
 
@@ -4639,15 +4639,8 @@ Last update: 2025-03-18T17:37:41+01:00
 
 ### [MMM-ISS-Live by KristjanESPERANTO](https://github.com/KristjanESPERANTO/MMM-ISS-Live)
 
-1. Recommendation: There ist no CHANGELOG file. It is recommended to add one.
-2. Information: There are updates for 7 dependencie(s):
-   - @eslint/js                  ^9.21.0  →  ^9.22.0
-   - @stylistic/eslint-plugin     ^4.1.0  →   ^4.2.0
-   - eslint                      ^9.21.0  →  ^9.22.0
-   - eslint-plugin-import-x       ^4.6.1  →   ^4.8.1
-   - eslint-plugin-package-json  ^0.26.0  →  ^0.29.0
-   - lint-staged                 ^15.4.3  →  ^15.5.0
-   - prettier                     ^3.5.2  →   ^3.5.3
+1. Information: There are updates for 1 dependencie(s):
+   - eslint-plugin-import-x  ^4.8.1  →  ^4.9.0
 
 
 ### [MMM-ISS-Map by khassel](https://gitlab.com/khassel/MMM-ISS-Map)
@@ -4903,7 +4896,7 @@ Last update: 2025-03-18T17:37:41+01:00
    - @eslint/js                ^9.21.0  →  ^9.22.0
    - @stylistic/eslint-plugin   ^4.1.0  →   ^4.2.0
    - eslint                    ^9.21.0  →  ^9.22.0
-   - eslint-plugin-import-x     ^4.6.1  →   ^4.8.1
+   - eslint-plugin-import-x     ^4.6.1  →   ^4.9.0
    - prettier                   ^3.5.2  →   ^3.5.3
 
 
@@ -7455,7 +7448,7 @@ Last update: 2025-03-18T17:37:41+01:00
 ### [MMM-OneCallWeather by KristjanESPERANTO](https://github.com/KristjanESPERANTO/MMM-OneCallWeather)
 
 1. Information: There are updates for 1 dependencie(s):
-   - eslint-plugin-import-x  ^4.8.0  →  ^4.8.1
+   - eslint-plugin-import-x  ^4.8.1  →  ^4.9.0
 
 
 ### [MMM-OneDrive by hermanho](https://github.com/hermanho/MMM-OneDrive)
@@ -8524,7 +8517,7 @@ Last update: 2025-03-18T17:37:41+01:00
 ### [MMM-PublicTransportBerlin by deg0nz](https://github.com/deg0nz/MMM-PublicTransportBerlin)
 
 1. Information: There are updates for 1 dependencie(s):
-   - eslint-plugin-import-x  ^4.7.1  →  ^4.8.1
+   - eslint-plugin-import-x  ^4.7.1  →  ^4.9.0
 
 2. ESLint issues:
    - package.json: Line 37, Column 19: Package dependencies are not alphabetized (rule: package-json/sort-collections)
@@ -8534,8 +8527,8 @@ Last update: 2025-03-18T17:37:41+01:00
 
 1. Information: There are updates for 6 dependencie(s):
    - @eslint/json                 ^0.10.0  →   ^0.11.0
-   - db-vendo-client               ^6.6.1  →    ^6.6.2
-   - eslint-plugin-import-x        ^4.6.1  →    ^4.8.1
+   - db-vendo-client               ^6.6.1  →    ^6.7.0
+   - eslint-plugin-import-x        ^4.6.1  →    ^4.9.0
    - eslint-plugin-package-json   ^0.26.3  →   ^0.29.0
    - lint-staged                  ^15.4.3  →   ^15.5.0
    - stylelint                   ^16.15.0  →  ^16.16.0
