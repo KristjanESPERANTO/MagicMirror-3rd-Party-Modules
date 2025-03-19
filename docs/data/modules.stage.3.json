@@ -11743,7 +11743,7 @@
     "maintainerURL": "",
     "description": "Display a solid wifi logo as network signal based on ping speed.",
     "issues": [],
-    "stars": 39,
+    "stars": 41,
     "license": "MIT",
     "tags": [
       "network"
@@ -15410,7 +15410,7 @@
       "There is no `package.json`. We need this file to gather information about the module for the module list page.",
       "No image found."
     ],
-    "stars": 26,
+    "stars": 25,
     "license": "MIT"
   },
   {

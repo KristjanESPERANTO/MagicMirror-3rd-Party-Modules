@@ -8482,7 +8482,7 @@
     "maintainerURL": "",
     "description": "Display a solid wifi logo as network signal based on ping speed.",
     "issues": [],
-    "stars": 39,
+    "stars": 41,
     "license": "MIT"
   },
   {
@@ -11136,7 +11136,7 @@
     "maintainerURL": "",
     "description": "Display any RSS feed.",
     "issues": [],
-    "stars": 26,
+    "stars": 25,
     "license": "MIT"
   },
   {
