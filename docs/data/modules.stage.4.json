@@ -11867,22 +11867,6 @@
   {
     "name": "MMM-NewsAPI",
     "category": "News / Information",
-    "url": "https://github.com/mumblebaj/MMM-NewsAPI",
-    "id": "mumblebaj/MMM-NewsAPI",
-    "maintainer": "mumblebaj",
-    "maintainerURL": "https://github.com/mumblebaj",
-    "description": "Get news from <a target=\"_blank\" href=\"https://newsapi.org\">newsapi.org</a>.",
-    "issues": [],
-    "stars": 10,
-    "license": "MIT",
-    "tags": [
-      "news"
-    ],
-    "image": "screenshot1.jpg"
-  },
-  {
-    "name": "MMM-NewsAPI",
-    "category": "News / Information",
     "url": "https://github.com/totoluto/MMM-NewsAPI",
     "id": "totoluto/MMM-NewsAPI",
     "maintainer": "totoluto",
@@ -11896,6 +11880,22 @@
       "api"
     ],
     "image": "screenshots-MMM-NewsApi.jpg"
+  },
+  {
+    "name": "MMM-NewsAPI",
+    "category": "News / Information",
+    "url": "https://github.com/mumblebaj/MMM-NewsAPI",
+    "id": "mumblebaj/MMM-NewsAPI",
+    "maintainer": "mumblebaj",
+    "maintainerURL": "https://github.com/mumblebaj",
+    "description": "Get news from <a target=\"_blank\" href=\"https://newsapi.org\">newsapi.org</a>.",
+    "issues": [],
+    "stars": 10,
+    "license": "MIT",
+    "tags": [
+      "news"
+    ],
+    "image": "screenshot1.jpg"
   },
   {
     "name": "MMM-NewsFeedTicker",
@@ -12736,7 +12736,7 @@
     "maintainerURL": "",
     "description": "Display current and forecast weather based on Openweathermap OneCall API data with alternative formatting. With various icon sets, including an animated one.",
     "issues": [],
-    "stars": 4,
+    "stars": 5,
     "license": "MIT",
     "tags": [
       "weather",
@@ -12832,7 +12832,7 @@
     "maintainerURL": "",
     "description": "Simple On-Screen Menu for controlling the MagicMirror².",
     "issues": [],
-    "stars": 66,
+    "stars": 67,
     "license": "MIT",
     "tags": [
       "menu",

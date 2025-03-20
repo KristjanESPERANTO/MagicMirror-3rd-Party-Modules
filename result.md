@@ -1,6 +1,6 @@
 # Result of the module analysis
 
-Last update: 2025-03-20T05:38:06+01:00
+Last update: 2025-03-20T17:37:46+01:00
 
 ## General notes
 
@@ -6934,13 +6934,6 @@ Last update: 2025-03-20T05:38:06+01:00
 2. Recommendation: There ist no CODE_OF_CONDUCT file. It is recommended to add one.
 3. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
 
-### [MMM-NewsAPI by mumblebaj](https://github.com/mumblebaj/MMM-NewsAPI)
-
-1. Deprecated: Found `"lockfileVersion": 2` in file `package-lock.json`: Run `npm update` to update to lockfileVersion 3.
-2. Recommendation: There ist no CHANGELOG file. It is recommended to add one.
-3. Recommendation: There ist no CODE_OF_CONDUCT file. It is recommended to add one.
-4. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
-
 ### [MMM-NewsAPI by totoluto](https://github.com/totoluto/MMM-NewsAPI)
 
 1. Typo: Found `Magic Mirror` in file `README.md`: Replace it with `MagicMirror²`.
@@ -6949,6 +6942,13 @@ Last update: 2025-03-20T05:38:06+01:00
 4. Recommendation: There ist no CHANGELOG file. It is recommended to add one.
 5. Recommendation: There ist no CODE_OF_CONDUCT file. It is recommended to add one.
 6. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
+
+### [MMM-NewsAPI by mumblebaj](https://github.com/mumblebaj/MMM-NewsAPI)
+
+1. Deprecated: Found `"lockfileVersion": 2` in file `package-lock.json`: Run `npm update` to update to lockfileVersion 3.
+2. Recommendation: There ist no CHANGELOG file. It is recommended to add one.
+3. Recommendation: There ist no CODE_OF_CONDUCT file. It is recommended to add one.
+4. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
 
 ### [MMM-NewsFeedTicker by justjim1220](https://github.com/justjim1220/MMM-NewsFeedTicker)
 
@@ -8078,7 +8078,7 @@ Last update: 2025-03-20T05:38:06+01:00
 3. Recommendation: There ist no CODE_OF_CONDUCT file. It is recommended to add one.
 4. Information: There are updates for 7 dependencie(s):
    - @stylistic/eslint-plugin    ^2.12.1  →   ^4.2.0
-   - cron-parser                  ^4.9.0  →   ^5.0.5
+   - cron-parser                  ^4.9.0  →   ^5.0.6
    - esbuild                     ^0.24.2  →  ^0.25.1
    - eslint                      ^9.17.0  →  ^9.22.0
    - eslint-plugin-package-json  ^0.19.0  →  ^0.29.0
@@ -8535,7 +8535,7 @@ Last update: 2025-03-20T05:38:06+01:00
 
 1. Information: There are updates for 6 dependencie(s):
    - @eslint/json                 ^0.10.0  →   ^0.11.0
-   - db-vendo-client               ^6.6.1  →    ^6.7.0
+   - db-vendo-client               ^6.6.1  →    ^6.7.1
    - eslint-plugin-import-x        ^4.6.1  →    ^4.9.1
    - eslint-plugin-package-json   ^0.26.3  →   ^0.29.0
    - lint-staged                  ^15.4.3  →   ^15.5.0
