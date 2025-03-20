@@ -205,7 +205,7 @@
     "id": "kahllenny/MMM-affluences",
     "maintainer": "kahllenny",
     "maintainerURL": "",
-    "description": "Module shows the occupancy rate of a place using affluences",
+    "description": "Module shows the occupancy rate of a place using affluences.",
     "issues": true,
     "stars": 0,
     "license": "MIT",
@@ -700,7 +700,7 @@
     ],
     "image": "screenshot.jpg",
     "defaultSortWeight": 1,
-    "lastCommit": "2025-02-24T17:27:16+01:00"
+    "lastCommit": "2025-03-20T01:35:26+01:00"
   },
   {
     "name": "MMM-AQI",
@@ -1588,6 +1588,23 @@
     "image": "icons-Clear.jpg",
     "defaultSortWeight": 901,
     "lastCommit": "2022-02-12T20:15:56-05:00"
+  },
+  {
+    "name": "MMM-BMWConnected",
+    "category": "Outdated Modules",
+    "url": "https://github.com/jannekalliola/MMM-BMWConnected",
+    "id": "jannekalliola/MMM-BMWConnected",
+    "maintainer": "jannekalliola",
+    "maintainerURL": "",
+    "description": "Displays information about your BMW from the BMW Connected Drive API.",
+    "issues": false,
+    "outdated": "Abandoned. No longer works. Successor is MMM-MyBMW. Repo has been archived at 2024-04-05.",
+    "stars": 9,
+    "isArchived": true,
+    "license": "MIT",
+    "image": "screenshot.jpg",
+    "defaultSortWeight": 900,
+    "lastCommit": "2024-04-05T16:42:14+03:00"
   },
   {
     "name": "MMM-Bob-Ross",
@@ -10376,8 +10393,8 @@
       "module installer"
     ],
     "image": "assets-MMPM-UI-Homepage.jpg",
-    "defaultSortWeight": -2,
-    "lastCommit": "2025-03-09T11:00:19-04:00"
+    "defaultSortWeight": -3,
+    "lastCommit": "2025-03-19T23:57:24+01:00"
   },
   {
     "name": "MMM-mmpm",
@@ -11874,7 +11891,7 @@
     "maintainerURL": "https://github.com/slametps",
     "description": "Display network connection status (ping, download speed, upload speed).",
     "issues": true,
-    "stars": 34,
+    "stars": 35,
     "tags": [
       "networkconnection",
       "network",
@@ -11934,13 +11951,13 @@
     "maintainerURL": "https://github.com/mumblebaj",
     "description": "Get news from <a target=\"_blank\" href=\"https://newsapi.org\">newsapi.org</a>.",
     "issues": true,
-    "stars": 11,
+    "stars": 10,
     "license": "MIT",
     "tags": [
       "news"
     ],
     "image": "screenshot1.jpg",
-    "defaultSortWeight": 2,
+    "defaultSortWeight": 3,
     "lastCommit": "2024-09-29T13:44:39+02:00"
   },
   {
@@ -11991,7 +12008,7 @@
     "maintainerURL": "https://github.com/PierreGode",
     "description": "Display your upcomming show's and movies from your next-episode account.",
     "issues": true,
-    "stars": 7,
+    "stars": 8,
     "license": "GPL-3.0",
     "tags": [
       "tvshows",
@@ -12180,7 +12197,7 @@
     "maintainerURL": "",
     "description": "Keep track of blood glucose levels with ease.",
     "issues": true,
-    "stars": 15,
+    "stars": 16,
     "license": "MIT",
     "image": "docs-screenshot-2.jpg",
     "defaultSortWeight": 7,
@@ -12195,7 +12212,7 @@
     "maintainerURL": "https://github.com/Jalibu",
     "description": "Client implementation for German NINA Warn API. Supports alerts of KatWarn, Biwapp and Mowas.",
     "issues": true,
-    "stars": 22,
+    "stars": 21,
     "license": "MIT",
     "tags": [
       "nina",
@@ -13803,9 +13820,8 @@
     "id": "Coernel82/MMM-Pir",
     "maintainer": "Coernel82",
     "maintainerURL": "",
-    "description": "The rescued Pir module of Bugsounet.",
-    "issues": false,
-    "outdated": "Coernel82 cannot give support!",
+    "description": "The rescued Pir module of Bugsounet. Coernel82 cannot give support! Try <a target=\"_blank\" href=\"https://gitlab.com/khassel/MMM-Universal-Pir\">MMM-Universal-Pir</a> if you have any issues.",
+    "issues": true,
     "stars": 0,
     "license": "MIT",
     "tags": [
@@ -13813,7 +13829,7 @@
       "motion detection"
     ],
     "image": "screenshot-screenshot.jpg",
-    "defaultSortWeight": 900,
+    "defaultSortWeight": 3,
     "lastCommit": "2025-02-10T09:56:26+01:00"
   },
   {
@@ -13842,7 +13858,7 @@
     "maintainerURL": "",
     "description": "This module can monitor a PIR motion sensor and put your mirror to sleep if nobody uses it.",
     "issues": false,
-    "outdated": "Deprecated. The author no longer works on it and recommends using <a href=\"https://github.com/bugsounet/MMM-Pir\">MMM-Pir</a> instead.",
+    "outdated": "Deprecated. The author no longer works on it. Try <a href=\"https://gitlab.com/khassel/MMM-Universal-Pir\">MMM-Universal-Pir</a> instead.",
     "stars": 9,
     "hasGithubIssues": false,
     "isArchived": true,
@@ -15168,8 +15184,8 @@
       "control"
     ],
     "image": ".github-hide_show_module.jpg",
-    "defaultSortWeight": -7,
-    "lastCommit": "2025-03-11T19:25:18+01:00"
+    "defaultSortWeight": -8,
+    "lastCommit": "2025-03-20T01:07:16+01:00"
   },
   {
     "name": "MMM-Remote-Control-Repository",
@@ -16332,6 +16348,22 @@
     "image": "docs-screenshot.jpg",
     "defaultSortWeight": 8,
     "lastCommit": "2019-10-06T14:29:49+02:00"
+  },
+  {
+    "name": "MMM-ShoppingList",
+    "category": "Outdated Modules",
+    "url": "https://github.com/miguelrflor/MMM-ShoppingList",
+    "id": "miguelrflor/MMM-ShoppingList",
+    "maintainer": "miguelrflor",
+    "maintainerURL": "",
+    "description": "Display a shopping list and interact with it using MMM-GoogleAssistant.",
+    "issues": false,
+    "outdated": "Deprecated. MMM-GoogleAssistant doesn't work anymore.",
+    "stars": 0,
+    "license": "MIT",
+    "image": "Screenshots-ShoppingList_Empty.jpg",
+    "defaultSortWeight": 900,
+    "lastCommit": "2024-06-20T19:49:52-04:00"
   },
   {
     "name": "MMM-ShulSchedule",

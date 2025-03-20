@@ -1,6 +1,6 @@
 # Result of the module analysis
 
-Last update: 2025-03-19T17:37:55+01:00
+Last update: 2025-03-20T05:38:06+01:00
 
 ## General notes
 
@@ -11,11 +11,11 @@ Last update: 2025-03-19T17:37:55+01:00
 
 |                      | number   |
 |:---------------------|:--------:|
-| modules analyzed     |   1230   |
+| modules analyzed     |   1232   |
 | maintainer           |    662   |
-| modules with issues  |   1230   |
-| issues               |   8870   |
-| modules at github    |   1099   |
+| modules with issues  |   1232   |
+| issues               |   8872   |
+| modules at github    |   1100   |
 | modules at gitlab    |     12   |
 | modules at bitbucket |      1   |
 
@@ -395,15 +395,8 @@ Last update: 2025-03-19T17:37:55+01:00
 
 ### [MMM-ApothekenNotdienst by KristjanESPERANTO](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst)
 
-1. Recommendation: Found `prettier/prettier` in file `stylelint.config.mjs`: Config would be cleaner using 'stylelint-prettier/recommended'. See (https://github.com/prettier/stylelint-prettier).
-2. Information: There are updates for 7 dependencie(s):
-   - @eslint/js                 ^9.21.0  →   ^9.22.0
-   - @stylistic/eslint-plugin    ^4.0.1  →    ^4.2.0
-   - eslint                     ^9.21.0  →   ^9.22.0
-   - eslint-plugin-import-x      ^4.6.1  →    ^4.9.0
-   - lint-staged                ^15.4.3  →   ^15.5.0
-   - prettier                    ^3.5.2  →    ^3.5.3
-   - stylelint                 ^16.14.1  →  ^16.16.0
+1. Information: There are updates for 1 dependencie(s):
+   - eslint-plugin-import-x  ^4.9.0  →  ^4.9.1
 
 
 ### [MMM-AQI by ryck](https://github.com/ryck/MMM-AQI)
@@ -920,10 +913,11 @@ Last update: 2025-03-19T17:37:55+01:00
 1. Recommendation: `FUNDING.yml`: Use official file extension `.yaml` instead of `.yml` (<https://yaml.org/faq.html>).
 2. Recommendation: There ist no CHANGELOG file. It is recommended to add one.
 3. Recommendation: There ist no CODE_OF_CONDUCT file. It is recommended to add one.
-4. Information: There are updates for 13 dependencie(s):
+4. Information: There are updates for 14 dependencie(s):
    - @rollup/plugin-commonjs       ^28.0.2  →    ^28.0.3
    - @rollup/plugin-node-resolve   ^16.0.0  →    ^16.0.1
    - @stylistic/eslint-plugin      ^2.12.1  →     ^4.2.0
+   - @types/express                 ^5.0.0  →     ^5.0.1
    - @types/node                  ^22.10.2  →  ^22.13.10
    - bosch-smart-home-bridge        ^1.6.0  →    ^1.7.11
    - eslint                        ^9.17.0  →    ^9.22.0
@@ -933,7 +927,7 @@ Last update: 2025-03-19T17:37:55+01:00
    - rollup                        ^4.29.1  →    ^4.36.0
    - rxjs                           ^7.8.1  →     ^7.8.2
    - typescript                     ^5.7.2  →     ^5.8.2
-   - typescript-eslint             ^8.18.2  →    ^8.26.1
+   - typescript-eslint             ^8.18.2  →    ^8.27.0
 
 
 ### [MMM-Bose-Soundtouch by spoturdeal](https://github.com/spoturdeal/MMM-Bose-Soundtouch)
@@ -1122,7 +1116,7 @@ Last update: 2025-03-19T17:37:55+01:00
 
 1. Recommendation: There ist no CODE_OF_CONDUCT file. It is recommended to add one.
 2. Information: There are updates for 2 dependencie(s):
-   - eslint-plugin-import-x    ^4.6.1  →    ^4.9.0
+   - eslint-plugin-import-x    ^4.6.1  →    ^4.9.1
    - stylelint               ^16.15.0  →  ^16.16.0
 
 
@@ -1270,7 +1264,7 @@ Last update: 2025-03-19T17:37:55+01:00
 
 1. Information: There are updates for 4 dependencie(s):
    - @eslint/json             ^0.10.0  →   ^0.11.0
-   - eslint-plugin-import-x    ^4.6.1  →    ^4.9.0
+   - eslint-plugin-import-x    ^4.6.1  →    ^4.9.1
    - lint-staged              ^15.4.3  →   ^15.5.0
    - stylelint               ^16.15.0  →  ^16.16.0
 
@@ -1307,7 +1301,7 @@ Last update: 2025-03-19T17:37:55+01:00
    - @eslint/js                 ^9.21.0  →   ^9.22.0
    - @stylistic/eslint-plugin    ^4.1.0  →    ^4.2.0
    - eslint                     ^9.21.0  →   ^9.22.0
-   - eslint-plugin-import-x      ^4.6.1  →    ^4.9.0
+   - eslint-plugin-import-x      ^4.6.1  →    ^4.9.1
    - prettier                    ^3.5.2  →    ^3.5.3
    - stylelint                 ^16.15.0  →  ^16.16.0
 
@@ -2318,7 +2312,7 @@ Last update: 2025-03-19T17:37:55+01:00
 ### [MMM-EasyPix by KristjanESPERANTO](https://github.com/KristjanESPERANTO/MMM-EasyPix)
 
 1. Information: There are updates for 1 dependencie(s):
-   - eslint-plugin-import-x  ^4.8.0  →  ^4.9.0
+   - eslint-plugin-import-x  ^4.8.0  →  ^4.9.1
 
 
 ### [MMM-Ecobee by parnic](https://github.com/parnic/MMM-Ecobee)
@@ -3071,7 +3065,7 @@ Last update: 2025-03-19T17:37:55+01:00
 
 1. Information: There are updates for 3 dependencie(s):
    - @eslint/json             ^0.10.0  →   ^0.11.0
-   - eslint-plugin-import-x    ^4.6.1  →    ^4.9.0
+   - eslint-plugin-import-x    ^4.6.1  →    ^4.9.1
    - stylelint               ^16.15.0  →  ^16.16.0
 
 
@@ -4640,7 +4634,7 @@ Last update: 2025-03-19T17:37:55+01:00
 ### [MMM-ISS-Live by KristjanESPERANTO](https://github.com/KristjanESPERANTO/MMM-ISS-Live)
 
 1. Information: There are updates for 1 dependencie(s):
-   - eslint-plugin-import-x  ^4.8.1  →  ^4.9.0
+   - eslint-plugin-import-x  ^4.8.1  →  ^4.9.1
 
 
 ### [MMM-ISS-Map by khassel](https://gitlab.com/khassel/MMM-ISS-Map)
@@ -4896,7 +4890,7 @@ Last update: 2025-03-19T17:37:55+01:00
    - @eslint/js                ^9.21.0  →  ^9.22.0
    - @stylistic/eslint-plugin   ^4.1.0  →   ^4.2.0
    - eslint                    ^9.21.0  →  ^9.22.0
-   - eslint-plugin-import-x     ^4.6.1  →   ^4.9.0
+   - eslint-plugin-import-x     ^4.6.1  →   ^4.9.1
    - prettier                   ^3.5.2  →   ^3.5.3
 
 
@@ -6066,9 +6060,8 @@ Last update: 2025-03-19T17:37:55+01:00
 
 ### [mmpm by Bee-Mar](https://github.com/Bee-Mar/mmpm)
 
-1. Recommendation: `FUNDING.yml`: Use official file extension `.yaml` instead of `.yml` (<https://yaml.org/faq.html>).
-2. Recommendation: There ist no CODE_OF_CONDUCT file. It is recommended to add one.
-3. Recommendation: Replace eslintrc by new flat config.
+1. Recommendation: There ist no CODE_OF_CONDUCT file. It is recommended to add one.
+2. Recommendation: Replace eslintrc by new flat config.
 
 ### [MMM-mmpm by Bee-Mar](https://github.com/Bee-Mar/MMM-mmpm)
 
@@ -7448,7 +7441,7 @@ Last update: 2025-03-19T17:37:55+01:00
 ### [MMM-OneCallWeather by KristjanESPERANTO](https://github.com/KristjanESPERANTO/MMM-OneCallWeather)
 
 1. Information: There are updates for 1 dependencie(s):
-   - eslint-plugin-import-x  ^4.8.1  →  ^4.9.0
+   - eslint-plugin-import-x  ^4.8.1  →  ^4.9.1
 
 
 ### [MMM-OneDrive by hermanho](https://github.com/hermanho/MMM-OneDrive)
@@ -8078,6 +8071,21 @@ Last update: 2025-03-19T17:37:55+01:00
 5. Recommendation: There ist no CODE_OF_CONDUCT file. It is recommended to add one.
 6. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
 
+### [MMM-Pir by Coernel82](https://github.com/Coernel82/MMM-Pir)
+
+1. Repository name and main js file name is not the same.
+2. Recommendation: There ist no CHANGELOG file. It is recommended to add one.
+3. Recommendation: There ist no CODE_OF_CONDUCT file. It is recommended to add one.
+4. Information: There are updates for 7 dependencie(s):
+   - @stylistic/eslint-plugin    ^2.12.1  →   ^4.2.0
+   - cron-parser                  ^4.9.0  →   ^5.0.5
+   - esbuild                     ^0.24.2  →  ^0.25.1
+   - eslint                      ^9.17.0  →  ^9.22.0
+   - eslint-plugin-package-json  ^0.19.0  →  ^0.29.0
+   - fdir                         ^6.4.2  →   ^6.4.3
+   - nan                         ^2.22.0  →  ^2.22.2
+
+
 ### [MMM-PirateSkyForecast by dankerthrone](https://github.com/dankerthrone/MMM-PirateSkyForecast)
 
 1. There are no keywords in 'package.json'. We would use them as tags on the module list page.
@@ -8517,7 +8525,7 @@ Last update: 2025-03-19T17:37:55+01:00
 ### [MMM-PublicTransportBerlin by deg0nz](https://github.com/deg0nz/MMM-PublicTransportBerlin)
 
 1. Information: There are updates for 1 dependencie(s):
-   - eslint-plugin-import-x  ^4.7.1  →  ^4.9.0
+   - eslint-plugin-import-x  ^4.7.1  →  ^4.9.1
 
 2. ESLint issues:
    - package.json: Line 37, Column 19: Package dependencies are not alphabetized (rule: package-json/sort-collections)
@@ -8528,7 +8536,7 @@ Last update: 2025-03-19T17:37:55+01:00
 1. Information: There are updates for 6 dependencie(s):
    - @eslint/json                 ^0.10.0  →   ^0.11.0
    - db-vendo-client               ^6.6.1  →    ^6.7.0
-   - eslint-plugin-import-x        ^4.6.1  →    ^4.9.0
+   - eslint-plugin-import-x        ^4.6.1  →    ^4.9.1
    - eslint-plugin-package-json   ^0.26.3  →   ^0.29.0
    - lint-staged                  ^15.4.3  →   ^15.5.0
    - stylelint                   ^16.15.0  →  ^16.16.0
@@ -8916,9 +8924,8 @@ Last update: 2025-03-19T17:37:55+01:00
 
 ### [MMM-Remote-Control by Jopyth](https://github.com/Jopyth/MMM-Remote-Control)
 
-1. Recommendation: Found `'node-fetch'` in file `modules.json`: Replace it with built-in fetch.
-2. Deprecated: Found `omxplayer` in file `modules.json`: Try to replace it with `vlc`.
-3. Recommendation: Found `XMLHttpRequest` in file `remote.js`: Replace it with built-in fetch.
+1. Deprecated: Found `omxplayer` in file `modules.json`: Try to replace it with `vlc`.
+2. Recommendation: Found `XMLHttpRequest` in file `remote.js`: Replace it with built-in fetch.
 
 ### [MMM-RemoteCompliments by mitchelltmarino](https://github.com/mitchelltmarino/MMM-RemoteCompliments)
 

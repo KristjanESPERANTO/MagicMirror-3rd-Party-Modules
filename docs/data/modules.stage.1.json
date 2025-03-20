@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "2025-03-19T16:30:07.997Z",
+  "lastUpdate": "2025-03-20T04:30:08.716Z",
   "modules": [
     {
       "name": "MMM-01ZM",
@@ -119,7 +119,7 @@
       "id": "kahllenny/MMM-affluences",
       "maintainer": "kahllenny",
       "maintainerURL": "",
-      "description": "Module shows the occupancy rate of a place using affluences",
+      "description": "Module shows the occupancy rate of a place using affluences.",
       "issues": []
     },
     {
@@ -929,6 +929,17 @@
       "description": "Weather designed for bottom bar position, now using the OpenWeather API.",
       "issues": [],
       "outdated": "Abandoned. No reactions to issues since years. Missing instructions to install dependency 'request'."
+    },
+    {
+      "name": "MMM-BMWConnected",
+      "category": "Outdated Modules",
+      "url": "https://github.com/jannekalliola/MMM-BMWConnected",
+      "id": "jannekalliola/MMM-BMWConnected",
+      "maintainer": "jannekalliola",
+      "maintainerURL": "",
+      "description": "Displays information about your BMW from the BMW Connected Drive API.",
+      "issues": [],
+      "outdated": "Abandoned. No longer works. Successor is MMM-MyBMW. Repo has been archived at 2024-04-05."
     },
     {
       "name": "MMM-Bob-Ross",
@@ -8334,9 +8345,8 @@
       "id": "Coernel82/MMM-Pir",
       "maintainer": "Coernel82",
       "maintainerURL": "",
-      "description": "The rescued Pir module of Bugsounet.",
-      "issues": [],
-      "outdated": "Coernel82 cannot give support!"
+      "description": "The rescued Pir module of Bugsounet. Coernel82 cannot give support! Try <a target=\"_blank\" href=\"https://gitlab.com/khassel/MMM-Universal-Pir\">MMM-Universal-Pir</a> if you have any issues.",
+      "issues": []
     },
     {
       "name": "MMM-PIR",
@@ -8358,7 +8368,7 @@
       "maintainerURL": "",
       "description": "This module can monitor a PIR motion sensor and put your mirror to sleep if nobody uses it.",
       "issues": [],
-      "outdated": "Deprecated. The author no longer works on it and recommends using <a href=\"https://github.com/bugsounet/MMM-Pir\">MMM-Pir</a> instead."
+      "outdated": "Deprecated. The author no longer works on it. Try <a href=\"https://gitlab.com/khassel/MMM-Universal-Pir\">MMM-Universal-Pir</a> instead."
     },
     {
       "name": "MMM-PIR-Sensor-Lite",
@@ -9861,6 +9871,17 @@
       "maintainerURL": "",
       "description": "Display stands of Svenska Hockey Ligan (SHL).",
       "issues": []
+    },
+    {
+      "name": "MMM-ShoppingList",
+      "category": "Outdated Modules",
+      "url": "https://github.com/miguelrflor/MMM-ShoppingList",
+      "id": "miguelrflor/MMM-ShoppingList",
+      "maintainer": "miguelrflor",
+      "maintainerURL": "",
+      "description": "Display a shopping list and interact with it using MMM-GoogleAssistant.",
+      "issues": [],
+      "outdated": "Deprecated. MMM-GoogleAssistant doesn't work anymore."
     },
     {
       "name": "MMM-ShulSchedule",

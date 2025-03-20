@@ -1,11 +1,11 @@
 {
-  "moduleCounter": 1230,
-  "modulesWithImageCounter": 863,
-  "modulesWithIssuesCounter": 1230,
-  "issueCounter": 8870,
-  "lastUpdate": "2025-03-19T17:37:55+01:00",
+  "moduleCounter": 1232,
+  "modulesWithImageCounter": 865,
+  "modulesWithIssuesCounter": 1232,
+  "issueCounter": 8872,
+  "lastUpdate": "2025-03-20T05:38:06+01:00",
   "repositoryHoster": {
-    "github": 1099,
+    "github": 1100,
     "gitlab": 12,
     "bitbucket": 1
   },
@@ -183,6 +183,7 @@
     "jclarke0000": 2,
     "martinkooij": 2,
     "mtatsuma": 2,
+    "Coernel82": 2,
     "XppaiCyberr": 2,
     "nkl-kst": 2,
     "dgburr": 2,
@@ -479,7 +480,6 @@
     "PoOwAa": 1,
     "nsprawling": 1,
     "trizome": 1,
-    "Coernel82": 1,
     "cure": 1,
     "jcktwd": 1,
     "TemianMihai": 1,

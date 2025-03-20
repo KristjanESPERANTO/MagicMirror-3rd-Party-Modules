@@ -196,7 +196,7 @@
     "id": "kahllenny/MMM-affluences",
     "maintainer": "kahllenny",
     "maintainerURL": "",
-    "description": "Module shows the occupancy rate of a place using affluences",
+    "description": "Module shows the occupancy rate of a place using affluences.",
     "issues": [],
     "stars": 0,
     "license": "MIT",
@@ -1547,6 +1547,23 @@
     "stars": 3,
     "license": "MIT",
     "image": "icons-Clear.jpg"
+  },
+  {
+    "name": "MMM-BMWConnected",
+    "category": "Outdated Modules",
+    "url": "https://github.com/jannekalliola/MMM-BMWConnected",
+    "id": "jannekalliola/MMM-BMWConnected",
+    "maintainer": "jannekalliola",
+    "maintainerURL": "",
+    "description": "Displays information about your BMW from the BMW Connected Drive API.",
+    "issues": [
+      "There are no keywords in 'package.json'. We would use them as tags on the module list page."
+    ],
+    "outdated": "Abandoned. No longer works. Successor is MMM-MyBMW. Repo has been archived at 2024-04-05.",
+    "stars": 9,
+    "isArchived": true,
+    "license": "MIT",
+    "image": "screenshot.jpg"
   },
   {
     "name": "MMM-Bob-Ross",
@@ -11800,7 +11817,7 @@
     "maintainerURL": "https://github.com/slametps",
     "description": "Display network connection status (ping, download speed, upload speed).",
     "issues": [],
-    "stars": 34,
+    "stars": 35,
     "tags": [
       "networkconnection",
       "network",
@@ -11856,7 +11873,7 @@
     "maintainerURL": "https://github.com/mumblebaj",
     "description": "Get news from <a target=\"_blank\" href=\"https://newsapi.org\">newsapi.org</a>.",
     "issues": [],
-    "stars": 11,
+    "stars": 10,
     "license": "MIT",
     "tags": [
       "news"
@@ -11907,7 +11924,7 @@
     "maintainerURL": "https://github.com/PierreGode",
     "description": "Display your upcomming show's and movies from your next-episode account.",
     "issues": [],
-    "stars": 7,
+    "stars": 8,
     "license": "GPL-3.0",
     "tags": [
       "tvshows",
@@ -12103,7 +12120,7 @@
     "issues": [
       "There are no specific keywords in 'package.json'. We would use them as tags on the module list page. Add a few meaningful terms to the keywords in the package.json. Not just “magicmirror” or “module”."
     ],
-    "stars": 15,
+    "stars": 16,
     "license": "MIT",
     "image": "docs-screenshot-2.jpg"
   },
@@ -12116,7 +12133,7 @@
     "maintainerURL": "https://github.com/Jalibu",
     "description": "Client implementation for German NINA Warn API. Supports alerts of KatWarn, Biwapp and Mowas.",
     "issues": [],
-    "stars": 22,
+    "stars": 21,
     "license": "MIT",
     "tags": [
       "nina",
@@ -13691,11 +13708,10 @@
     "id": "Coernel82/MMM-Pir",
     "maintainer": "Coernel82",
     "maintainerURL": "",
-    "description": "The rescued Pir module of Bugsounet.",
+    "description": "The rescued Pir module of Bugsounet. Coernel82 cannot give support! Try <a target=\"_blank\" href=\"https://gitlab.com/khassel/MMM-Universal-Pir\">MMM-Universal-Pir</a> if you have any issues.",
     "issues": [
       "Repository name and main js file name is not the same."
     ],
-    "outdated": "Coernel82 cannot give support!",
     "stars": 0,
     "license": "MIT",
     "tags": [
@@ -13733,7 +13749,7 @@
     "issues": [
       "Issues are not enabled in the GitHub repository. So users cannot report bugs. Please enable issues in your repo."
     ],
-    "outdated": "Deprecated. The author no longer works on it and recommends using <a href=\"https://github.com/bugsounet/MMM-Pir\">MMM-Pir</a> instead.",
+    "outdated": "Deprecated. The author no longer works on it. Try <a href=\"https://gitlab.com/khassel/MMM-Universal-Pir\">MMM-Universal-Pir</a> instead.",
     "stars": 9,
     "hasGithubIssues": false,
     "isArchived": true,
@@ -16201,6 +16217,22 @@
     "stars": 1,
     "license": "MIT",
     "image": "docs-screenshot.jpg"
+  },
+  {
+    "name": "MMM-ShoppingList",
+    "category": "Outdated Modules",
+    "url": "https://github.com/miguelrflor/MMM-ShoppingList",
+    "id": "miguelrflor/MMM-ShoppingList",
+    "maintainer": "miguelrflor",
+    "maintainerURL": "",
+    "description": "Display a shopping list and interact with it using MMM-GoogleAssistant.",
+    "issues": [
+      "There are no keywords in 'package.json'. We would use them as tags on the module list page."
+    ],
+    "outdated": "Deprecated. MMM-GoogleAssistant doesn't work anymore.",
+    "stars": 0,
+    "license": "MIT",
+    "image": "Screenshots-ShoppingList_Empty.jpg"
   },
   {
     "name": "MMM-ShulSchedule",
