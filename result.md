@@ -1,6 +1,6 @@
 # Result of the module analysis
 
-Last update: 2025-03-20T17:37:46+01:00
+Last update: 2025-03-21T05:38:40+01:00
 
 ## General notes
 
@@ -1108,7 +1108,7 @@ Last update: 2025-03-20T17:37:46+01:00
    - dotenv       ^16.4.5  →   ^16.4.7
    - eslint       ^9.16.0  →   ^9.22.0
    - globals     ^15.12.0  →   ^16.0.0
-   - googleapis  ^144.0.0  →  ^146.0.0
+   - googleapis  ^144.0.0  →  ^148.0.0
    - tsdav         ^2.1.2  →    ^2.1.3
 
 

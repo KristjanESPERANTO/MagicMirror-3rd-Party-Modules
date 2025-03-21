@@ -9266,7 +9266,7 @@
     "maintainerURL": "https://github.com/nkl-kst",
     "description": "Display historical events from Wikipedia based on the current date.",
     "issues": [],
-    "stars": 36,
+    "stars": 35,
     "license": "MIT"
   },
   {
@@ -9372,7 +9372,7 @@
     "maintainerURL": "",
     "description": "Displays current, hourly and daily forecast information using data from the OpenWeather One Call API.",
     "issues": [],
-    "stars": 12
+    "stars": 13
   },
   {
     "name": "MMM-OpenWeatherMapForecast",
@@ -9467,7 +9467,7 @@
     "maintainerURL": "",
     "description": "A helper module to display what page you're on. Intended to be used with other modules that rotate out modules.",
     "issues": [],
-    "stars": 43,
+    "stars": 44,
     "license": "MIT"
   },
   {

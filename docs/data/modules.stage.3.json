@@ -12841,7 +12841,7 @@
     "maintainerURL": "https://github.com/nkl-kst",
     "description": "Display historical events from Wikipedia based on the current date.",
     "issues": [],
-    "stars": 36,
+    "stars": 35,
     "license": "MIT",
     "tags": [
       "events",
@@ -12981,7 +12981,7 @@
     "maintainerURL": "",
     "description": "Displays current, hourly and daily forecast information using data from the OpenWeather One Call API.",
     "issues": [],
-    "stars": 12,
+    "stars": 13,
     "tags": [
       "openweathermap",
       "weather",
@@ -13115,7 +13115,7 @@
     "issues": [
       "There is no `package.json`. We need this file to gather information about the module for the module list page."
     ],
-    "stars": 43,
+    "stars": 44,
     "license": "MIT",
     "image": "example_picture.jpg"
   },
