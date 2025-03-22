@@ -11249,7 +11249,7 @@
     "id": "vincep5/MMM-MyStandings",
     "maintainer": "vincep5",
     "maintainerURL": "",
-    "description": "Display ESPN standings for major US Sports and international soccer leagues. (this repository has not been updated in a while; a patched mirror is available <a target=\"_blank\" href=\"https://github.com/dathbe/MMM-MyStandings\">here</a>)",
+    "description": "Display ESPN standings for major US Sports and international soccer leagues. (this repository has not been updated in a while; a patched fork is available <a target=\"_blank\" href=\"https://github.com/dathbe/MMM-MyStandings\">here</a>)",
     "issues": [
       "`package.json` issue: No description",
       "`package.json` issue: No repository field.",
@@ -12035,7 +12035,7 @@
     "maintainerURL": "",
     "description": "Display scores of National Hockey League.",
     "issues": [],
-    "stars": 2,
+    "stars": 3,
     "license": "MIT",
     "tags": [
       "nhl",
@@ -12208,11 +12208,14 @@
     "maintainerURL": "",
     "description": "Different providers for users to choose from. Shows current plus 3 day forecast. Mouseover shows forecast, with Air, UV, Humidity, Sunrise and Set.",
     "issues": [
-      "There are no specific keywords in 'package.json'. We would use them as tags on the module list page. Add a few meaningful terms to the keywords in the package.json. Not just “magicmirror” or “module”.",
       "Issues are not enabled in the GitHub repository. So users cannot report bugs. Please enable issues in your repo."
     ],
     "stars": 2,
     "hasGithubIssues": false,
+    "tags": [
+      "weather",
+      "noaa"
+    ],
     "license": "ISC",
     "image": "examples-1.jpg"
   },
@@ -12374,6 +12377,27 @@
       "auction"
     ],
     "image": "preview.jpg"
+  },
+  {
+    "name": "MMM-NounsTreasury",
+    "category": "Cryptocurrency",
+    "url": "https://github.com/XppaiCyberr/MMM-NounsTreasury",
+    "id": "XppaiCyberr/MMM-NounsTreasury",
+    "maintainer": "XppaiCyberr",
+    "maintainerURL": "",
+    "description": "This module displays the current value of the Nouns Treasury.",
+    "issues": [],
+    "stars": 0,
+    "license": "MIT",
+    "tags": [
+      "ethereum",
+      "blockchain",
+      "smart contract",
+      "nouns",
+      "nft",
+      "treasury"
+    ],
+    "image": "previewIDR.jpg"
   },
   {
     "name": "MMM-NowPlayingOnAIMP",
@@ -13825,7 +13849,7 @@
       "There is no `package.json`. We need this file to gather information about the module for the module list page.",
       "No image found."
     ],
-    "stars": 6,
+    "stars": 7,
     "license": "MIT"
   },
   {
@@ -14156,7 +14180,7 @@
     "issues": [
       "There are no specific keywords in 'package.json'. We would use them as tags on the module list page. Add a few meaningful terms to the keywords in the package.json. Not just “magicmirror” or “module”."
     ],
-    "stars": 4,
+    "stars": 5,
     "license": "ISC",
     "image": "docs-screenshot.jpg"
   },

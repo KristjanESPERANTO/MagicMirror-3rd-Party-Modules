@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "2025-03-22T04:30:08.465Z",
+  "lastUpdate": "2025-03-22T16:30:08.449Z",
   "modules": [
     {
       "name": "MMM-01ZM",
@@ -6883,7 +6883,7 @@
       "id": "vincep5/MMM-MyStandings",
       "maintainer": "vincep5",
       "maintainerURL": "",
-      "description": "Display ESPN standings for major US Sports and international soccer leagues. (this repository has not been updated in a while; a patched mirror is available <a target=\"_blank\" href=\"https://github.com/dathbe/MMM-MyStandings\">here</a>)",
+      "description": "Display ESPN standings for major US Sports and international soccer leagues. (this repository has not been updated in a while; a patched fork is available <a target=\"_blank\" href=\"https://github.com/dathbe/MMM-MyStandings\">here</a>)",
       "issues": []
     },
     {
@@ -7542,6 +7542,16 @@
       "maintainer": "XppaiCyberr",
       "maintainerURL": "",
       "description": "This module displays real-time Nouns auction status.",
+      "issues": []
+    },
+    {
+      "name": "MMM-NounsTreasury",
+      "category": "Cryptocurrency",
+      "url": "https://github.com/XppaiCyberr/MMM-NounsTreasury",
+      "id": "XppaiCyberr/MMM-NounsTreasury",
+      "maintainer": "XppaiCyberr",
+      "maintainerURL": "",
+      "description": "This module displays the current value of the Nouns Treasury.",
       "issues": []
     },
     {

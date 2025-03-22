@@ -8139,7 +8139,7 @@
     "id": "vincep5/MMM-MyStandings",
     "maintainer": "vincep5",
     "maintainerURL": "",
-    "description": "Display ESPN standings for major US Sports and international soccer leagues. (this repository has not been updated in a while; a patched mirror is available <a target=\"_blank\" href=\"https://github.com/dathbe/MMM-MyStandings\">here</a>)",
+    "description": "Display ESPN standings for major US Sports and international soccer leagues. (this repository has not been updated in a while; a patched fork is available <a target=\"_blank\" href=\"https://github.com/dathbe/MMM-MyStandings\">here</a>)",
     "issues": [],
     "stars": 14
   },
@@ -8688,7 +8688,7 @@
     "maintainerURL": "",
     "description": "Display scores of National Hockey League.",
     "issues": [],
-    "stars": 2,
+    "stars": 3,
     "license": "MIT"
   },
   {
@@ -8917,6 +8917,18 @@
     "maintainer": "XppaiCyberr",
     "maintainerURL": "",
     "description": "This module displays real-time Nouns auction status.",
+    "issues": [],
+    "stars": 0,
+    "license": "MIT"
+  },
+  {
+    "name": "MMM-NounsTreasury",
+    "category": "Cryptocurrency",
+    "url": "https://github.com/XppaiCyberr/MMM-NounsTreasury",
+    "id": "XppaiCyberr/MMM-NounsTreasury",
+    "maintainer": "XppaiCyberr",
+    "maintainerURL": "",
+    "description": "This module displays the current value of the Nouns Treasury.",
     "issues": [],
     "stars": 0,
     "license": "MIT"
@@ -9984,7 +9996,7 @@
     "maintainerURL": "",
     "description": "Make your mirror to a Planetarium.",
     "issues": [],
-    "stars": 6,
+    "stars": 7,
     "license": "MIT"
   },
   {
@@ -10222,7 +10234,7 @@
     "maintainerURL": "",
     "description": "Automatically track and trace PostNords letters, parcels and pallets with your phone number or email.",
     "issues": [],
-    "stars": 4
+    "stars": 5
   },
   {
     "name": "MMM-Powerwall",

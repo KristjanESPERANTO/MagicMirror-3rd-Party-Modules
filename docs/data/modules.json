@@ -6600,7 +6600,7 @@
     ],
     "image": "images-screenshot.jpg",
     "defaultSortWeight": 3,
-    "lastCommit": "2025-03-21T19:37:16+02:00"
+    "lastCommit": "2025-03-22T09:17:18+02:00"
   },
   {
     "name": "MMM-Growatt",
@@ -11303,7 +11303,7 @@
     ],
     "image": "example.jpg",
     "defaultSortWeight": 8,
-    "lastCommit": "2025-03-21T21:01:44-07:00"
+    "lastCommit": "2025-03-22T09:05:54-07:00"
   },
   {
     "name": "MMM-MySenseHat",
@@ -11366,7 +11366,7 @@
     "id": "vincep5/MMM-MyStandings",
     "maintainer": "vincep5",
     "maintainerURL": "",
-    "description": "Display ESPN standings for major US Sports and international soccer leagues. (this repository has not been updated in a while; a patched mirror is available <a target=\"_blank\" href=\"https://github.com/dathbe/MMM-MyStandings\">here</a>)",
+    "description": "Display ESPN standings for major US Sports and international soccer leagues. (this repository has not been updated in a while; a patched fork is available <a target=\"_blank\" href=\"https://github.com/dathbe/MMM-MyStandings\">here</a>)",
     "issues": true,
     "stars": 14,
     "defaultSortWeight": 11,
@@ -12155,7 +12155,7 @@
     "maintainerURL": "",
     "description": "Display scores of National Hockey League.",
     "issues": true,
-    "stars": 2,
+    "stars": 3,
     "license": "MIT",
     "tags": [
       "nhl",
@@ -12339,10 +12339,14 @@
     "issues": true,
     "stars": 2,
     "hasGithubIssues": false,
+    "tags": [
+      "weather",
+      "noaa"
+    ],
     "license": "ISC",
     "image": "examples-1.jpg",
-    "defaultSortWeight": 11,
-    "lastCommit": "2025-03-17T20:14:12+02:00"
+    "defaultSortWeight": 6,
+    "lastCommit": "2025-03-22T16:08:48+02:00"
   },
   {
     "name": "MMM-NOAAAlerts",
@@ -12503,6 +12507,29 @@
     "image": "preview.jpg",
     "defaultSortWeight": 3,
     "lastCommit": "2025-03-19T23:28:40+07:00"
+  },
+  {
+    "name": "MMM-NounsTreasury",
+    "category": "Cryptocurrency",
+    "url": "https://github.com/XppaiCyberr/MMM-NounsTreasury",
+    "id": "XppaiCyberr/MMM-NounsTreasury",
+    "maintainer": "XppaiCyberr",
+    "maintainerURL": "",
+    "description": "This module displays the current value of the Nouns Treasury.",
+    "issues": true,
+    "stars": 0,
+    "license": "MIT",
+    "tags": [
+      "ethereum",
+      "blockchain",
+      "smart contract",
+      "nouns",
+      "nft",
+      "treasury"
+    ],
+    "image": "previewIDR.jpg",
+    "defaultSortWeight": 5,
+    "lastCommit": "2025-03-22T16:17:22+07:00"
   },
   {
     "name": "MMM-NowPlayingOnAIMP",
@@ -13981,7 +14008,7 @@
     "maintainerURL": "",
     "description": "Make your mirror to a Planetarium.",
     "issues": true,
-    "stars": 6,
+    "stars": 7,
     "license": "MIT",
     "defaultSortWeight": 6,
     "lastCommit": "2023-07-05T10:55:29+02:00"
@@ -14306,7 +14333,7 @@
     "maintainerURL": "",
     "description": "Automatically track and trace PostNords letters, parcels and pallets with your phone number or email.",
     "issues": true,
-    "stars": 4,
+    "stars": 5,
     "license": "ISC",
     "image": "docs-screenshot.jpg",
     "defaultSortWeight": 12,
@@ -15185,7 +15212,7 @@
     ],
     "image": ".github-hide_show_module.jpg",
     "defaultSortWeight": -8,
-    "lastCommit": "2025-03-20T01:07:16+01:00"
+    "lastCommit": "2025-03-22T10:34:02+01:00"
   },
   {
     "name": "MMM-Remote-Control-Repository",

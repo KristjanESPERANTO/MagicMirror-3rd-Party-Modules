@@ -1,6 +1,6 @@
 # Result of the module analysis
 
-Last update: 2025-03-22T05:47:05+01:00
+Last update: 2025-03-22T17:38:13+01:00
 
 ## General notes
 
@@ -11,11 +11,11 @@ Last update: 2025-03-22T05:47:05+01:00
 
 |                      | number   |
 |:---------------------|:--------:|
-| modules analyzed     |   1232   |
+| modules analyzed     |   1233   |
 | maintainer           |    662   |
-| modules with issues  |   1232   |
-| issues               |   8870   |
-| modules at github    |   1100   |
+| modules with issues  |   1233   |
+| issues               |   8871   |
+| modules at github    |   1101   |
 | modules at gitlab    |     12   |
 | modules at bitbucket |      1   |
 
@@ -7162,18 +7162,13 @@ Last update: 2025-03-22T05:47:05+01:00
 
 ### [MMM-NOAA3 by mumblebaj](https://github.com/mumblebaj/MMM-NOAA3)
 
-1. There are no specific keywords in 'package.json'. We would use them as tags on the module list page. Add a few meaningful terms to the keywords in the package.json. Not just “magicmirror” or “module”.
-2. Issues are not enabled in the GitHub repository. So users cannot report bugs. Please enable issues in your repo.
-3. Typo: Found `Magic Mirror` in file `MMM-NOAA3.js`: Replace it with `MagicMirror²`.
-4. Typo: Found `MagicMirror2` in file `README.md`: Replace it with `MagicMirror²`.
-5. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
-6. Deprecated: Found `require('request')` in file `node_helper.js`: Replace it with built-in fetch.
-7. Typo: Found `MagicMirror2` in file `package.json`: Replace it with `MagicMirror²`.
-8. Deprecated: Found `require('request')` in file `ds.js`: Replace it with built-in fetch.
-9. Warning: No LICENSE file.
-10. Recommendation: There ist no CHANGELOG file. It is recommended to add one.
-11. Recommendation: There ist no CODE_OF_CONDUCT file. It is recommended to add one.
-12. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
+1. Issues are not enabled in the GitHub repository. So users cannot report bugs. Please enable issues in your repo.
+2. Typo: Found `MagicMirror2` in file `README.md`: Replace it with `MagicMirror²`.
+3. Deprecated: Found `require('request')` in file `node_helper.js`: Replace it with built-in fetch.
+4. Deprecated: Found `require('request')` in file `ds.js`: Replace it with built-in fetch.
+5. Recommendation: There ist no CHANGELOG file. It is recommended to add one.
+6. Recommendation: There ist no CODE_OF_CONDUCT file. It is recommended to add one.
+7. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
 
 ### [MMM-NOAAAlerts by mmtsweng](https://github.com/mmtsweng/MMM-NOAAAlerts)
 
@@ -7275,6 +7270,15 @@ Last update: 2025-03-22T05:47:05+01:00
 2. Recommendation: There ist no CHANGELOG file. It is recommended to add one.
 3. Recommendation: There ist no CODE_OF_CONDUCT file. It is recommended to add one.
 4. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
+
+### [MMM-NounsTreasury by XppaiCyberr](https://github.com/XppaiCyberr/MMM-NounsTreasury)
+
+1. Recommendation: Found `axios` in file `README.md`: Replace it with built-in fetch.
+2. Recommendation: Found `axios` in file `node_helper.js`: Replace it with built-in fetch.
+3. Recommendation: Found `axios` in file `package.json`: Replace it with built-in fetch.
+4. Recommendation: There ist no CHANGELOG file. It is recommended to add one.
+5. Recommendation: There ist no CODE_OF_CONDUCT file. It is recommended to add one.
+6. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
 
 ### [MMM-NRL by EwwYumYuck](https://github.com/EwwYumYuck/MMM-NRL/)
 
@@ -8950,7 +8954,7 @@ Last update: 2025-03-22T05:47:05+01:00
 
 ### [MMM-Remote-Control by Jopyth](https://github.com/Jopyth/MMM-Remote-Control)
 
-1. Deprecated: Found `omxplayer` in file `modules.json`: Try to replace it with `vlc`.
+1. Deprecated: Found `omxplayer` in file `modules.json.template`: Try to replace it with `vlc`.
 2. Recommendation: Found `XMLHttpRequest` in file `remote.js`: Replace it with built-in fetch.
 
 ### [MMM-RemoteCompliments by mitchelltmarino](https://github.com/mitchelltmarino/MMM-RemoteCompliments)
