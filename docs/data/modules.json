@@ -2884,7 +2884,7 @@
     ],
     "image": "docs-screenshot.jpg",
     "defaultSortWeight": 3,
-    "lastCommit": "2024-06-26T12:40:53+02:00"
+    "lastCommit": "2025-03-21T12:39:29+01:00"
   },
   {
     "name": "MMM-covid19",
@@ -6600,7 +6600,7 @@
     ],
     "image": "images-screenshot.jpg",
     "defaultSortWeight": 3,
-    "lastCommit": "2025-03-17T20:10:11+02:00"
+    "lastCommit": "2025-03-21T19:37:16+02:00"
   },
   {
     "name": "MMM-Growatt",
@@ -7017,7 +7017,7 @@
       "ha"
     ],
     "image": ".github-screen01-advanced.jpg",
-    "defaultSortWeight": 7,
+    "defaultSortWeight": 8,
     "lastCommit": "2023-03-21T13:52:46+01:00"
   },
   {
@@ -7833,7 +7833,7 @@
     "stars": 0,
     "license": "MIT",
     "image": "screenshot.jpg",
-    "defaultSortWeight": 1,
+    "defaultSortWeight": 2,
     "lastCommit": "2025-02-01T15:52:10-06:00"
   },
   {
@@ -8350,7 +8350,7 @@
       "rest"
     ],
     "image": "doc-json_values.jpg",
-    "defaultSortWeight": 9,
+    "defaultSortWeight": 10,
     "lastCommit": "2023-03-21T19:07:25+01:00"
   },
   {
@@ -11303,7 +11303,7 @@
     ],
     "image": "example.jpg",
     "defaultSortWeight": 8,
-    "lastCommit": "2024-12-17T14:53:29-08:00"
+    "lastCommit": "2025-03-21T21:01:44-07:00"
   },
   {
     "name": "MMM-MySenseHat",
@@ -11366,7 +11366,7 @@
     "id": "vincep5/MMM-MyStandings",
     "maintainer": "vincep5",
     "maintainerURL": "",
-    "description": "Display ESPN standings for major US Sports and international soccer leagues.",
+    "description": "Display ESPN standings for major US Sports and international soccer leagues. (this repository has not been updated in a while; a patched mirror is available <a target=\"_blank\" href=\"https://github.com/dathbe/MMM-MyStandings\">here</a>)",
     "issues": true,
     "stars": 14,
     "defaultSortWeight": 11,
@@ -11827,7 +11827,7 @@
     ],
     "image": ".github-preview.bubbles.jpg",
     "defaultSortWeight": 2,
-    "lastCommit": "2025-03-14T19:15:50+00:00"
+    "lastCommit": "2025-03-21T23:25:21+00:00"
   },
   {
     "name": "MMM-Netatmo-Presence",
@@ -12999,9 +12999,9 @@
       "history",
       "wikipedia"
     ],
-    "image": "screenshot-module.jpg",
-    "defaultSortWeight": 5,
-    "lastCommit": "2023-11-19T07:38:22+01:00"
+    "image": "screenshot-carousel.jpg",
+    "defaultSortWeight": 3,
+    "lastCommit": "2025-03-21T08:09:55+01:00"
   },
   {
     "name": "MMM-OnThisDayWikiApi",
@@ -13686,7 +13686,7 @@
     "maintainerURL": "https://github.com/PierreGode",
     "description": "Automatically controls the screen's power based on the presence of specified phones or devices within the network.",
     "issues": true,
-    "stars": 8,
+    "stars": 9,
     "license": "MIT",
     "tags": [
       "phone",
@@ -13719,7 +13719,7 @@
     "maintainerURL": "",
     "description": "Display stats from Pi-Hole DNS ad blocking.",
     "issues": true,
-    "stars": 78,
+    "stars": 79,
     "license": "MIT",
     "tags": [
       "pi-hole"
@@ -19861,7 +19861,7 @@
     ],
     "image": ".github-TTS.jpg",
     "defaultSortWeight": 1,
-    "lastCommit": "2025-02-27T18:48:37+01:00"
+    "lastCommit": "2025-03-21T08:01:53+01:00"
   },
   {
     "name": "MMM-Webuntis",

@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "2025-03-21T04:30:10.667Z",
+  "lastUpdate": "2025-03-22T04:30:08.465Z",
   "modules": [
     {
       "name": "MMM-01ZM",
@@ -6883,7 +6883,7 @@
       "id": "vincep5/MMM-MyStandings",
       "maintainer": "vincep5",
       "maintainerURL": "",
-      "description": "Display ESPN standings for major US Sports and international soccer leagues.",
+      "description": "Display ESPN standings for major US Sports and international soccer leagues. (this repository has not been updated in a while; a patched mirror is available <a target=\"_blank\" href=\"https://github.com/dathbe/MMM-MyStandings\">here</a>)",
       "issues": []
     },
     {

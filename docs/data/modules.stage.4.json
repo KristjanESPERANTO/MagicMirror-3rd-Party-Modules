@@ -11286,7 +11286,7 @@
     "id": "vincep5/MMM-MyStandings",
     "maintainer": "vincep5",
     "maintainerURL": "",
-    "description": "Display ESPN standings for major US Sports and international soccer leagues.",
+    "description": "Display ESPN standings for major US Sports and international soccer leagues. (this repository has not been updated in a while; a patched mirror is available <a target=\"_blank\" href=\"https://github.com/dathbe/MMM-MyStandings\">here</a>)",
     "issues": [
       "`package.json` issue: No description",
       "`package.json` issue: No repository field.",
@@ -12891,7 +12891,7 @@
       "history",
       "wikipedia"
     ],
-    "image": "screenshot-module.jpg"
+    "image": "screenshot-carousel.jpg"
   },
   {
     "name": "MMM-OnThisDayWikiApi",
@@ -13581,7 +13581,7 @@
     "maintainerURL": "https://github.com/PierreGode",
     "description": "Automatically controls the screen's power based on the presence of specified phones or devices within the network.",
     "issues": [],
-    "stars": 8,
+    "stars": 9,
     "license": "MIT",
     "tags": [
       "phone",
@@ -13613,7 +13613,7 @@
     "maintainerURL": "",
     "description": "Display stats from Pi-Hole DNS ad blocking.",
     "issues": [],
-    "stars": 78,
+    "stars": 79,
     "license": "MIT",
     "tags": [
       "pi-hole"
