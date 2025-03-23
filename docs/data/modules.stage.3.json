@@ -247,7 +247,7 @@
       "There are no keywords in 'package.json'. We would use them as tags on the module list page.",
       "No image found."
     ],
-    "stars": 6,
+    "stars": 7,
     "license": "MIT"
   },
   {
@@ -312,7 +312,7 @@
     "maintainerURL": "",
     "description": "Display the air quality index for a certain location.",
     "issues": [],
-    "stars": 36,
+    "stars": 35,
     "license": "MIT",
     "tags": [
       "aqi",
@@ -363,7 +363,7 @@
     "maintainerURL": "",
     "description": "Alternative programmable alert/notification presenter.",
     "issues": [],
-    "stars": 4,
+    "stars": 5,
     "license": "MIT",
     "tags": [
       "alert"
@@ -411,7 +411,7 @@
     "maintainerURL": "",
     "description": "The MMM-AlexaControl module allows you to control your Mirror with Alexa (every device that support Wemos devices). You can turn it on and off, change the page and send notifications to other modules.",
     "issues": [],
-    "stars": 46,
+    "stars": 48,
     "license": "MIT",
     "tags": [
       "alexacontrol",
@@ -11245,18 +11245,20 @@
   {
     "name": "MMM-MyStandings",
     "category": "Sports",
-    "url": "https://github.com/vincep5/MMM-MyStandings",
-    "id": "vincep5/MMM-MyStandings",
-    "maintainer": "vincep5",
+    "url": "https://github.com/dathbe/MMM-MyStandings",
+    "id": "dathbe/MMM-MyStandings",
+    "maintainer": "dathbe",
     "maintainerURL": "",
-    "description": "Display ESPN standings for major US Sports and international soccer leagues. (this repository has not been updated in a while; a patched fork is available <a target=\"_blank\" href=\"https://github.com/dathbe/MMM-MyStandings\">here</a>)",
+    "description": "Display ESPN standings for major US Sports and international soccer leagues.",
     "issues": [
-      "`package.json` issue: No description",
-      "`package.json` issue: No repository field.",
-      "`package.json` issue: No license field.",
-      "There are no keywords in 'package.json'. We would use them as tags on the module list page."
+      "`package.json` issue: No license field."
     ],
-    "stars": 14
+    "stars": 2,
+    "tags": [
+      "sports",
+      "sports",
+      "standings"
+    ]
   },
   {
     "name": "MMM-MyStudyLife",
@@ -19545,7 +19547,7 @@
   },
   {
     "name": "MMM-weatherforecast",
-    "category": "Weather",
+    "category": "Outdated Modules",
     "url": "https://github.com/jharttech/MMM-weatherforecast",
     "id": "jharttech/MMM-weatherforecast",
     "maintainer": "jharttech",
@@ -19554,6 +19556,7 @@
     "issues": [
       "There is no `package.json`. We need this file to gather information about the module for the module list page."
     ],
+    "outdated": "Abandoned. The author no longer maintains this module.",
     "stars": 10,
     "license": "GPL-3.0",
     "image": "icon-0.jpg"

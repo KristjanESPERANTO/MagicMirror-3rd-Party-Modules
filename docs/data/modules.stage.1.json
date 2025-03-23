@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "2025-03-23T04:30:10.914Z",
+  "lastUpdate": "2025-03-23T16:30:08.454Z",
   "modules": [
     {
       "name": "MMM-01ZM",
@@ -6879,11 +6879,11 @@
     {
       "name": "MMM-MyStandings",
       "category": "Sports",
-      "url": "https://github.com/vincep5/MMM-MyStandings",
-      "id": "vincep5/MMM-MyStandings",
-      "maintainer": "vincep5",
+      "url": "https://github.com/dathbe/MMM-MyStandings",
+      "id": "dathbe/MMM-MyStandings",
+      "maintainer": "dathbe",
       "maintainerURL": "",
-      "description": "Display ESPN standings for major US Sports and international soccer leagues. (this repository has not been updated in a while; a patched fork is available <a target=\"_blank\" href=\"https://github.com/dathbe/MMM-MyStandings\">here</a>)",
+      "description": "Display ESPN standings for major US Sports and international soccer leagues.",
       "issues": []
     },
     {
@@ -11918,13 +11918,14 @@
     },
     {
       "name": "MMM-weatherforecast",
-      "category": "Weather",
+      "category": "Outdated Modules",
       "url": "https://github.com/jharttech/MMM-weatherforecast",
       "id": "jharttech/MMM-weatherforecast",
       "maintainer": "jharttech",
       "maintainerURL": "",
       "description": "This is a new version of the weather forecast module. This one does not come as a default module. This version has been edited to allow the days of the week to span left to right, each with its own weather icon and details. Uses openweathermap.org API Key.",
-      "issues": []
+      "issues": [],
+      "outdated": "Abandoned. The author no longer maintains this module."
     },
     {
       "name": "MMM-WeatherGraph",

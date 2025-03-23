@@ -1,6 +1,6 @@
 # Result of the module analysis
 
-Last update: 2025-03-23T05:38:05+01:00
+Last update: 2025-03-23T17:37:38+01:00
 
 ## General notes
 
@@ -14,8 +14,8 @@ Last update: 2025-03-23T05:38:05+01:00
 | modules analyzed     |   1233   |
 | maintainer           |    662   |
 | modules with issues  |   1233   |
-| issues               |   8871   |
-| modules at github    |   1101   |
+| issues               |   8862   |
+| modules at github    |   1100   |
 | modules at gitlab    |     12   |
 | modules at bitbucket |      1   |
 
@@ -926,7 +926,7 @@ Last update: 2025-03-23T05:38:05+01:00
    - eslint-config-prettier         ^9.1.0  →    ^10.1.1
    - eslint-plugin-prettier         ^5.2.1  →     ^5.2.3
    - prettier                       ^3.4.2  →     ^3.5.3
-   - rollup                        ^4.29.1  →    ^4.36.0
+   - rollup                        ^4.29.1  →    ^4.37.0
    - rxjs                           ^7.8.1  →     ^7.8.2
    - typescript                     ^5.7.2  →     ^5.8.2
    - typescript-eslint             ^8.18.2  →    ^8.27.0
@@ -1117,10 +1117,11 @@ Last update: 2025-03-23T05:38:05+01:00
 ### [MMM-CalendarExt2 by MMM-CalendarExt2](https://github.com/MMM-CalendarExt2/MMM-CalendarExt2)
 
 1. Recommendation: There ist no CODE_OF_CONDUCT file. It is recommended to add one.
-2. Information: There are updates for 4 dependencie(s):
+2. Information: There are updates for 5 dependencie(s):
    - @eslint/js               ^9.22.0  →   ^9.23.0
    - eslint                   ^9.22.0  →   ^9.23.0
    - eslint-plugin-import-x    ^4.6.1  →    ^4.9.1
+   - moment-timezone          ^0.5.47  →   ^0.5.48
    - stylelint               ^16.15.0  →  ^16.16.0
 
 
@@ -6631,19 +6632,16 @@ Last update: 2025-03-23T05:38:05+01:00
 9. Recommendation: There ist no CODE_OF_CONDUCT file. It is recommended to add one.
 10. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
 
-### [MMM-MyStandings by vincep5](https://github.com/vincep5/MMM-MyStandings)
+### [MMM-MyStandings by dathbe](https://github.com/dathbe/MMM-MyStandings)
 
-1. `package.json` issue: No description
-2. `package.json` issue: No repository field.
-3. `package.json` issue: No license field.
-4. There are no keywords in 'package.json'. We would use them as tags on the module list page.
-5. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
-6. Deprecated: Found `require('request')` in file `node_helper.js`: Replace it with built-in fetch.
-7. Deprecated: Found `"lockfileVersion": 1` in file `package-lock.json`: Run `npm update` to update to lockfileVersion 3.
-8. Warning: No LICENSE file.
-9. Recommendation: There ist no CHANGELOG file. It is recommended to add one.
-10. Recommendation: There ist no CODE_OF_CONDUCT file. It is recommended to add one.
-11. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
+1. `package.json` issue: No license field.
+2. Deprecated: Found `require('request')` in file `node_helper.js`: Replace it with built-in fetch.
+3. Recommendation: Found `axios` in file `node_helper.js`: Replace it with built-in fetch.
+4. Recommendation: Found `axios` in file `package.json`: Replace it with built-in fetch.
+5. Warning: No LICENSE file.
+6. Recommendation: There ist no CHANGELOG file. It is recommended to add one.
+7. Recommendation: There ist no CODE_OF_CONDUCT file. It is recommended to add one.
+8. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
 
 ### [MMM-MyStudyLife by ethanpartida](https://github.com/ethanpartida/MMM-MyStudyLife)
 
@@ -11721,16 +11719,6 @@ Last update: 2025-03-23T05:38:05+01:00
 1. Recommendation: There ist no CHANGELOG file. It is recommended to add one.
 2. Recommendation: There ist no CODE_OF_CONDUCT file. It is recommended to add one.
 3. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
-
-### [MMM-weatherforecast by jharttech](https://github.com/jharttech/MMM-weatherforecast)
-
-1. There is no `package.json`. We need this file to gather information about the module for the module list page.
-2. Typo: Found `Magic Mirror` in file `MMM-weatherforecast.js`: Replace it with `MagicMirror²`.
-3. Recommendation: Found `XMLHttpRequest` in file `MMM-weatherforecast.js`: Replace it with built-in fetch.
-4. Recommendation: The README seems not to have an install instruction (the words 'install' or 'installation' are missing). Please add one.
-5. Recommendation: There ist no CHANGELOG file. It is recommended to add one.
-6. Recommendation: There ist no CODE_OF_CONDUCT file. It is recommended to add one.
-7. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
 
 ### [MMM-WeatherGraph by FlatPepsi17](https://github.com/FlatPepsi17/MMM-WeatherGraph)
 

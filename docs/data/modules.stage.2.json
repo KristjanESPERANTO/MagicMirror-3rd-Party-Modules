@@ -174,7 +174,7 @@
     "maintainerURL": "",
     "description": "Add touch input to your mirror using a ~$50 USB plug and play sensor.",
     "issues": [],
-    "stars": 6,
+    "stars": 7,
     "license": "MIT"
   },
   {
@@ -222,7 +222,7 @@
     "maintainerURL": "",
     "description": "Display the air quality index for a certain location.",
     "issues": [],
-    "stars": 36,
+    "stars": 35,
     "license": "MIT"
   },
   {
@@ -257,7 +257,7 @@
     "maintainerURL": "",
     "description": "Alternative programmable alert/notification presenter.",
     "issues": [],
-    "stars": 4,
+    "stars": 5,
     "license": "MIT"
   },
   {
@@ -294,7 +294,7 @@
     "maintainerURL": "",
     "description": "The MMM-AlexaControl module allows you to control your Mirror with Alexa (every device that support Wemos devices). You can turn it on and off, change the page and send notifications to other modules.",
     "issues": [],
-    "stars": 46,
+    "stars": 48,
     "license": "MIT"
   },
   {
@@ -8135,13 +8135,13 @@
   {
     "name": "MMM-MyStandings",
     "category": "Sports",
-    "url": "https://github.com/vincep5/MMM-MyStandings",
-    "id": "vincep5/MMM-MyStandings",
-    "maintainer": "vincep5",
+    "url": "https://github.com/dathbe/MMM-MyStandings",
+    "id": "dathbe/MMM-MyStandings",
+    "maintainer": "dathbe",
     "maintainerURL": "",
-    "description": "Display ESPN standings for major US Sports and international soccer leagues. (this repository has not been updated in a while; a patched fork is available <a target=\"_blank\" href=\"https://github.com/dathbe/MMM-MyStandings\">here</a>)",
+    "description": "Display ESPN standings for major US Sports and international soccer leagues.",
     "issues": [],
-    "stars": 14
+    "stars": 2
   },
   {
     "name": "MMM-MyStudyLife",
@@ -14104,13 +14104,14 @@
   },
   {
     "name": "MMM-weatherforecast",
-    "category": "Weather",
+    "category": "Outdated Modules",
     "url": "https://github.com/jharttech/MMM-weatherforecast",
     "id": "jharttech/MMM-weatherforecast",
     "maintainer": "jharttech",
     "maintainerURL": "",
     "description": "This is a new version of the weather forecast module. This one does not come as a default module. This version has been edited to allow the days of the week to span left to right, each with its own weather icon and details. Uses openweathermap.org API Key.",
     "issues": [],
+    "outdated": "Abandoned. The author no longer maintains this module.",
     "stars": 10,
     "license": "GPL-3.0"
   },

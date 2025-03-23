@@ -256,7 +256,7 @@
     "maintainerURL": "",
     "description": "Add touch input to your mirror using a ~$50 USB plug and play sensor.",
     "issues": true,
-    "stars": 6,
+    "stars": 7,
     "license": "MIT",
     "defaultSortWeight": 14,
     "lastCommit": "2020-09-26T11:55:52-07:00"
@@ -327,7 +327,7 @@
     "maintainerURL": "",
     "description": "Display the air quality index for a certain location.",
     "issues": true,
-    "stars": 36,
+    "stars": 35,
     "license": "MIT",
     "tags": [
       "aqi",
@@ -384,7 +384,7 @@
     "maintainerURL": "",
     "description": "Alternative programmable alert/notification presenter.",
     "issues": true,
-    "stars": 4,
+    "stars": 5,
     "license": "MIT",
     "tags": [
       "alert"
@@ -432,7 +432,7 @@
     "maintainerURL": "",
     "description": "The MMM-AlexaControl module allows you to control your Mirror with Alexa (every device that support Wemos devices). You can turn it on and off, change the page and send notifications to other modules.",
     "issues": true,
-    "stars": 46,
+    "stars": 48,
     "license": "MIT",
     "tags": [
       "alexacontrol",
@@ -8461,7 +8461,7 @@
       "keyboard"
     ],
     "defaultSortWeight": 4,
-    "lastCommit": "2024-04-07T17:38:20+02:00"
+    "lastCommit": "2025-03-23T12:14:38+01:00"
   },
   {
     "name": "MMM-Koket-by-Sodexo",
@@ -11362,15 +11362,20 @@
   {
     "name": "MMM-MyStandings",
     "category": "Sports",
-    "url": "https://github.com/vincep5/MMM-MyStandings",
-    "id": "vincep5/MMM-MyStandings",
-    "maintainer": "vincep5",
+    "url": "https://github.com/dathbe/MMM-MyStandings",
+    "id": "dathbe/MMM-MyStandings",
+    "maintainer": "dathbe",
     "maintainerURL": "",
-    "description": "Display ESPN standings for major US Sports and international soccer leagues. (this repository has not been updated in a while; a patched fork is available <a target=\"_blank\" href=\"https://github.com/dathbe/MMM-MyStandings\">here</a>)",
+    "description": "Display ESPN standings for major US Sports and international soccer leagues.",
     "issues": true,
-    "stars": 14,
-    "defaultSortWeight": 11,
-    "lastCommit": "2022-01-05T20:44:12-06:00"
+    "stars": 2,
+    "tags": [
+      "sports",
+      "sports",
+      "standings"
+    ],
+    "defaultSortWeight": 8,
+    "lastCommit": "2025-03-23T07:56:01-07:00"
   },
   {
     "name": "MMM-MyStudyLife",
@@ -16992,7 +16997,7 @@
     "license": "MIT",
     "image": "screenshot.jpg",
     "defaultSortWeight": 8,
-    "lastCommit": "2025-03-06T19:31:33+01:00"
+    "lastCommit": "2025-03-23T10:37:30+01:00"
   },
   {
     "name": "MMM-SolarPicture",
@@ -19782,17 +19787,18 @@
   },
   {
     "name": "MMM-weatherforecast",
-    "category": "Weather",
+    "category": "Outdated Modules",
     "url": "https://github.com/jharttech/MMM-weatherforecast",
     "id": "jharttech/MMM-weatherforecast",
     "maintainer": "jharttech",
     "maintainerURL": "",
     "description": "This is a new version of the weather forecast module. This one does not come as a default module. This version has been edited to allow the days of the week to span left to right, each with its own weather icon and details. Uses openweathermap.org API Key.",
-    "issues": true,
+    "issues": false,
+    "outdated": "Abandoned. The author no longer maintains this module.",
     "stars": 10,
     "license": "GPL-3.0",
     "image": "icon-0.jpg",
-    "defaultSortWeight": 8,
+    "defaultSortWeight": 901,
     "lastCommit": "2019-01-06T00:28:05-06:00"
   },
   {
