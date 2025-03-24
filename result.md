@@ -1,6 +1,6 @@
 # Result of the module analysis
 
-Last update: 2025-03-24T05:38:07+01:00
+Last update: 2025-03-24T17:37:48+01:00
 
 ## General notes
 
@@ -14,7 +14,7 @@ Last update: 2025-03-24T05:38:07+01:00
 | modules analyzed     |   1234   |
 | maintainer           |    662   |
 | modules with issues  |   1232   |
-| issues               |   8861   |
+| issues               |   8850   |
 | modules at github    |   1101   |
 | modules at gitlab    |     12   |
 | modules at bitbucket |      1   |
@@ -920,8 +920,8 @@ Last update: 2025-03-24T05:38:07+01:00
    - @rollup/plugin-node-resolve   ^16.0.0  →    ^16.0.1
    - @stylistic/eslint-plugin      ^2.12.1  →     ^4.2.0
    - @types/express                 ^5.0.0  →     ^5.0.1
-   - @types/node                  ^22.10.2  →  ^22.13.11
-   - bosch-smart-home-bridge        ^1.6.0  →    ^1.7.11
+   - @types/node                  ^22.10.2  →  ^22.13.13
+   - bosch-smart-home-bridge        ^1.6.0  →    ^1.7.12
    - eslint                        ^9.17.0  →    ^9.23.0
    - eslint-config-prettier         ^9.1.0  →    ^10.1.1
    - eslint-plugin-prettier         ^5.2.1  →     ^5.2.4
@@ -6387,10 +6387,6 @@ Last update: 2025-03-24T05:38:07+01:00
 1. Recommendation: There ist no CHANGELOG file. It is recommended to add one.
 2. Recommendation: There ist no CODE_OF_CONDUCT file. It is recommended to add one.
 3. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
-4. Information: There are updates for 2 dependencie(s):
-   - jsonpath-plus  10.1.0  →  10.3.0
-   - mqtt           5.10.1  →  5.10.4
-
 
 ### [MMM-MQTTfloorplan by DMailMan](https://github.com/DMailMan/MMM-MQTTfloorplan)
 
@@ -8110,21 +8106,12 @@ Last update: 2025-03-24T05:38:07+01:00
    - nan                         ^2.22.0  →  ^2.22.2
 
 
-### [MMM-PirateSkyForecast by dankerthrone](https://github.com/dankerthrone/MMM-PirateSkyForecast)
+### [MMM-PirateSkyForecast by b-reich](https://github.com/b-reich/MMM-PirateSkyForecast)
 
-1. There are no keywords in 'package.json'. We would use them as tags on the module list page.
-2. Issues are not enabled in the GitHub repository. So users cannot report bugs. Please enable issues in your repo.
-3. Repository name and main js file name is not the same.
-4. Typo: Found `Magic Mirror` in file `MMM-DarkSkyForecast.js`: Replace it with `MagicMirror²`.
-5. Typo: Found `Magic Mirror` in file `README.md`: Replace it with `MagicMirror²`.
-6. Outdated: Found `MichMich/MagicMirror` in file `README.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
-7. Deprecated: Found `require("request")` in file `node_helper.js`: Replace it with built-in fetch.
-8. Deprecated: Found `"lockfileVersion": 1` in file `package-lock.json`: Run `npm update` to update to lockfileVersion 3.
-9. Typo: Found `Magic Mirror` in file `package.json`: Replace it with `MagicMirror²`.
-10. Warning: No LICENSE file.
-11. Recommendation: There ist no CHANGELOG file. It is recommended to add one.
-12. Recommendation: There ist no CODE_OF_CONDUCT file. It is recommended to add one.
-13. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
+1. Warning: No LICENSE file.
+2. Recommendation: There ist no CHANGELOG file. It is recommended to add one.
+3. Recommendation: There ist no CODE_OF_CONDUCT file. It is recommended to add one.
+4. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
 
 ### [MMM-PiTemp by ckoutavas](https://github.com/ckoutavas/MMM-PiTemp)
 
@@ -10825,9 +10812,6 @@ Last update: 2025-03-24T05:38:07+01:00
 1. Recommendation: There ist no CHANGELOG file. It is recommended to add one.
 2. Recommendation: There ist no CODE_OF_CONDUCT file. It is recommended to add one.
 3. Recommendation: Replace eslintrc by new flat config.
-4. Information: There are updates for 1 dependencie(s):
-   - jsonpath-plus  10.1.0  →  10.3.0
-
 
 ### [MMM-Toulouse-Transports by LoneWanderer-GH](https://github.com/LoneWanderer-GH/MMM-Toulouse-Transports)
 
@@ -12209,7 +12193,7 @@ Last update: 2025-03-24T05:38:07+01:00
 4. Recommendation: There ist no CODE_OF_CONDUCT file. It is recommended to add one.
 5. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
 
-### [MMM-Zmanim by supermem613](https://github.com/supermem613/MMM-Zmanim)
+### [MMM-Zmanim by shmulyeng](https://github.com/shmulyeng/MMM-Zmanim)
 
 1. `package.json` issue: No description
 2. `package.json` issue: No repository field.
@@ -12223,7 +12207,7 @@ Last update: 2025-03-24T05:38:07+01:00
 10. Recommendation: There ist no CODE_OF_CONDUCT file. It is recommended to add one.
 11. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
 
-### [MMM-Zmanim by shmulyeng](https://github.com/shmulyeng/MMM-Zmanim)
+### [MMM-Zmanim by supermem613](https://github.com/supermem613/MMM-Zmanim)
 
 1. `package.json` issue: No description
 2. `package.json` issue: No repository field.

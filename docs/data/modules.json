@@ -1337,7 +1337,7 @@
     "maintainerURL": "https://github.com/amitchone",
     "description": "A simple, lightweight birthday reminder - specified either via simple JSON file or in <code>config.js</code>. Supports multiple languages.",
     "issues": true,
-    "stars": 13,
+    "stars": 14,
     "license": "Apache-2.0",
     "image": "example.jpg",
     "defaultSortWeight": 4,
@@ -1443,7 +1443,7 @@
     "maintainerURL": "https://github.com/BKeyport",
     "description": "Quick Module to easily move modules up or down for blank space.",
     "issues": true,
-    "stars": 5,
+    "stars": 6,
     "license": "MIT",
     "tags": [
       "block",
@@ -2716,7 +2716,7 @@
     "license": "ISC",
     "image": "doc_images-playground_example.jpg",
     "defaultSortWeight": 5,
-    "lastCommit": "2025-03-23T21:16:29-07:00"
+    "lastCommit": "2025-03-24T08:16:59-07:00"
   },
   {
     "name": "MMM-Confucius-say",
@@ -6483,7 +6483,7 @@
     ],
     "image": "examples-HC-SR501-HC-SR501-GPIO4.jpg",
     "defaultSortWeight": 5,
-    "lastCommit": "2024-09-06T18:18:34+02:00"
+    "lastCommit": "2025-03-24T16:41:10+01:00"
   },
   {
     "name": "MMM-GPollen",
@@ -10940,8 +10940,8 @@
       "mqtt"
     ],
     "image": ".github-mqttbridge_logo.jpg",
-    "defaultSortWeight": 3,
-    "lastCommit": "2024-11-19T21:27:23+01:00"
+    "defaultSortWeight": 2,
+    "lastCommit": "2025-03-24T10:47:18+01:00"
   },
   {
     "name": "MMM-MQTTfloorplan",
@@ -13345,25 +13345,6 @@
   {
     "name": "MMM-pages",
     "category": "Development / Core MagicMirror\u00b2",
-    "url": "https://github.com/edward-shen/MMM-pages",
-    "id": "edward-shen/MMM-pages",
-    "maintainer": "edward-shen",
-    "maintainerURL": "",
-    "description": "Rotate out pages of modules.",
-    "issues": false,
-    "stars": 113,
-    "license": "MIT",
-    "tags": [
-      "pages",
-      "slides"
-    ],
-    "image": "example.jpg",
-    "defaultSortWeight": -2,
-    "lastCommit": "2025-03-23T20:16:16+01:00"
-  },
-  {
-    "name": "MMM-pages",
-    "category": "Development / Core MagicMirror\u00b2",
     "url": "https://github.com/sdetweil/MMM-pages",
     "id": "sdetweil/MMM-pages",
     "maintainer": "sdetweil",
@@ -13379,6 +13360,25 @@
     "image": "example.jpg",
     "defaultSortWeight": 2,
     "lastCommit": "2025-03-09T00:01:49+01:00"
+  },
+  {
+    "name": "MMM-pages",
+    "category": "Development / Core MagicMirror\u00b2",
+    "url": "https://github.com/edward-shen/MMM-pages",
+    "id": "edward-shen/MMM-pages",
+    "maintainer": "edward-shen",
+    "maintainerURL": "",
+    "description": "Rotate out pages of modules.",
+    "issues": false,
+    "stars": 113,
+    "license": "MIT",
+    "tags": [
+      "pages",
+      "slides"
+    ],
+    "image": "example.jpg",
+    "defaultSortWeight": -2,
+    "lastCommit": "2025-03-23T20:16:16+01:00"
   },
   {
     "name": "MMM-Pages-Screencast",
@@ -13951,18 +13951,22 @@
   {
     "name": "MMM-PirateSkyForecast",
     "category": "Weather",
-    "url": "https://github.com/dankerthrone/MMM-PirateSkyForecast",
-    "id": "dankerthrone/MMM-PirateSkyForecast",
-    "maintainer": "dankerthrone",
+    "url": "https://github.com/b-reich/MMM-PirateSkyForecast",
+    "id": "b-reich/MMM-PirateSkyForecast",
+    "maintainer": "b-reich",
     "maintainerURL": "",
     "description": "A weather module that displays current, hourly and daily forecast information using data from the pirateweather API.",
     "issues": true,
-    "stars": 3,
-    "hasGithubIssues": false,
+    "stars": 1,
+    "tags": [
+      "piratesky",
+      "weather",
+      "forecast"
+    ],
     "license": "MIT",
-    "image": "icons-iconsets.jpg",
-    "defaultSortWeight": 13,
-    "lastCommit": "2025-03-11T08:06:31+01:00"
+    "image": "screenshot.jpg",
+    "defaultSortWeight": 3,
+    "lastCommit": "2025-03-24T08:14:19+01:00"
   },
   {
     "name": "MMM-PiTemp",
@@ -15906,7 +15910,7 @@
     ],
     "image": "example.jpg",
     "defaultSortWeight": 5,
-    "lastCommit": "2024-09-14T20:02:50+02:00"
+    "lastCommit": "2025-03-24T16:46:02+01:00"
   },
   {
     "name": "MMM-Screencast",
@@ -18451,8 +18455,8 @@
       "scripts"
     ],
     "image": "examples-ShellyPlugs-shellies.jpg",
-    "defaultSortWeight": 4,
-    "lastCommit": "2024-11-14T06:44:36+01:00"
+    "defaultSortWeight": 3,
+    "lastCommit": "2025-03-24T10:48:29+01:00"
   },
   {
     "name": "MMM-Toulouse-Transports",
@@ -20645,22 +20649,6 @@
   {
     "name": "MMM-Zmanim",
     "category": "Religion",
-    "url": "https://github.com/supermem613/MMM-Zmanim",
-    "id": "supermem613/MMM-Zmanim",
-    "maintainer": "supermem613",
-    "maintainerURL": "",
-    "description": "Displays Zmanim (Jewish calendar information).",
-    "issues": true,
-    "stars": 0,
-    "hasGithubIssues": false,
-    "license": "ISC",
-    "image": "alternateScreenshot.jpg",
-    "defaultSortWeight": 11,
-    "lastCommit": "2025-01-24T14:22:15-05:00"
-  },
-  {
-    "name": "MMM-Zmanim",
-    "category": "Religion",
     "url": "https://github.com/shmulyeng/MMM-Zmanim",
     "id": "shmulyeng/MMM-Zmanim",
     "maintainer": "shmulyeng",
@@ -20673,5 +20661,21 @@
     "image": "alternateScreenshot.jpg",
     "defaultSortWeight": 12,
     "lastCommit": "2020-12-06T21:27:43-05:00"
+  },
+  {
+    "name": "MMM-Zmanim",
+    "category": "Religion",
+    "url": "https://github.com/supermem613/MMM-Zmanim",
+    "id": "supermem613/MMM-Zmanim",
+    "maintainer": "supermem613",
+    "maintainerURL": "",
+    "description": "Displays Zmanim (Jewish calendar information).",
+    "issues": true,
+    "stars": 0,
+    "hasGithubIssues": false,
+    "license": "ISC",
+    "image": "alternateScreenshot.jpg",
+    "defaultSortWeight": 11,
+    "lastCommit": "2025-01-24T14:22:15-05:00"
   }
 ]

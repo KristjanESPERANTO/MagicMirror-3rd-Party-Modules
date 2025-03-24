@@ -1299,7 +1299,7 @@
       "`package.json` issue: No repository field.",
       "There are no keywords in 'package.json'. We would use them as tags on the module list page."
     ],
-    "stars": 13,
+    "stars": 14,
     "license": "Apache-2.0",
     "image": "example.jpg"
   },
@@ -1404,7 +1404,7 @@
     "maintainerURL": "https://github.com/BKeyport",
     "description": "Quick Module to easily move modules up or down for blank space.",
     "issues": [],
-    "stars": 5,
+    "stars": 6,
     "license": "MIT",
     "tags": [
       "block",
@@ -13234,13 +13234,13 @@
   {
     "name": "MMM-pages",
     "category": "Development / Core MagicMirror²",
-    "url": "https://github.com/edward-shen/MMM-pages",
-    "id": "edward-shen/MMM-pages",
-    "maintainer": "edward-shen",
+    "url": "https://github.com/sdetweil/MMM-pages",
+    "id": "sdetweil/MMM-pages",
+    "maintainer": "sdetweil",
     "maintainerURL": "",
-    "description": "Rotate out pages of modules.",
+    "description": "Rotate out pages of modules. This is a fork with the additional feature of individual rotation times.",
     "issues": [],
-    "stars": 113,
+    "stars": 10,
     "license": "MIT",
     "tags": [
       "pages",
@@ -13251,13 +13251,13 @@
   {
     "name": "MMM-pages",
     "category": "Development / Core MagicMirror²",
-    "url": "https://github.com/sdetweil/MMM-pages",
-    "id": "sdetweil/MMM-pages",
-    "maintainer": "sdetweil",
+    "url": "https://github.com/edward-shen/MMM-pages",
+    "id": "edward-shen/MMM-pages",
+    "maintainer": "edward-shen",
     "maintainerURL": "",
-    "description": "Rotate out pages of modules. This is a fork with the additional feature of individual rotation times.",
+    "description": "Rotate out pages of modules.",
     "issues": [],
-    "stars": 10,
+    "stars": 113,
     "license": "MIT",
     "tags": [
       "pages",
@@ -13830,20 +13830,20 @@
   {
     "name": "MMM-PirateSkyForecast",
     "category": "Weather",
-    "url": "https://github.com/dankerthrone/MMM-PirateSkyForecast",
-    "id": "dankerthrone/MMM-PirateSkyForecast",
-    "maintainer": "dankerthrone",
+    "url": "https://github.com/b-reich/MMM-PirateSkyForecast",
+    "id": "b-reich/MMM-PirateSkyForecast",
+    "maintainer": "b-reich",
     "maintainerURL": "",
     "description": "A weather module that displays current, hourly and daily forecast information using data from the pirateweather API.",
-    "issues": [
-      "There are no keywords in 'package.json'. We would use them as tags on the module list page.",
-      "Issues are not enabled in the GitHub repository. So users cannot report bugs. Please enable issues in your repo.",
-      "Repository name and main js file name is not the same."
+    "issues": [],
+    "stars": 1,
+    "tags": [
+      "piratesky",
+      "weather",
+      "forecast"
     ],
-    "stars": 3,
-    "hasGithubIssues": false,
     "license": "MIT",
-    "image": "icons-iconsets.jpg"
+    "image": "screenshot.jpg"
   },
   {
     "name": "MMM-PiTemp",
@@ -20460,11 +20460,11 @@
   {
     "name": "MMM-Zmanim",
     "category": "Religion",
-    "url": "https://github.com/supermem613/MMM-Zmanim",
-    "id": "supermem613/MMM-Zmanim",
-    "maintainer": "supermem613",
+    "url": "https://github.com/shmulyeng/MMM-Zmanim",
+    "id": "shmulyeng/MMM-Zmanim",
+    "maintainer": "shmulyeng",
     "maintainerURL": "",
-    "description": "Displays Zmanim (Jewish calendar information).",
+    "description": "Displays daily Jewish calendar information.",
     "issues": [
       "`package.json` issue: No description",
       "`package.json` issue: No repository field.",
@@ -20479,11 +20479,11 @@
   {
     "name": "MMM-Zmanim",
     "category": "Religion",
-    "url": "https://github.com/shmulyeng/MMM-Zmanim",
-    "id": "shmulyeng/MMM-Zmanim",
-    "maintainer": "shmulyeng",
+    "url": "https://github.com/supermem613/MMM-Zmanim",
+    "id": "supermem613/MMM-Zmanim",
+    "maintainer": "supermem613",
     "maintainerURL": "",
-    "description": "Displays daily Jewish calendar information.",
+    "description": "Displays Zmanim (Jewish calendar information).",
     "issues": [
       "`package.json` issue: No description",
       "`package.json` issue: No repository field.",
