@@ -883,7 +883,7 @@
       "`package.json` issue: No description",
       "There are no keywords in 'package.json'. We would use them as tags on the module list page."
     ],
-    "stars": 5,
+    "stars": 4,
     "license": "ISC",
     "image": "screenshot.jpg"
   },
@@ -979,7 +979,7 @@
       "There are no keywords in 'package.json'. We would use them as tags on the module list page."
     ],
     "outdated": "Abandoned. No reactions to issues since years. The documentation currently available does not work any more (<a href=\"https://github.com/MagicMirrorOrg/MagicMirror/issues/3398\">#3398</a>).",
-    "stars": 157,
+    "stars": 158,
     "license": "MIT",
     "image": "styles-loading.jpg"
   },
@@ -1894,7 +1894,7 @@
       "No image found."
     ],
     "outdated": "Abandoned. No updates since years. But may still work.",
-    "stars": 68,
+    "stars": 69,
     "license": "MIT"
   },
   {
@@ -10633,7 +10633,7 @@
       "`package.json` issue: No repository field.",
       "There are no keywords in 'package.json'. We would use them as tags on the module list page."
     ],
-    "stars": 20,
+    "stars": 21,
     "license": "MIT",
     "image": "image-1.jpg"
   },
@@ -13191,11 +13191,28 @@
   {
     "name": "MMM-pages",
     "category": "Development / Core MagicMirror²",
+    "url": "https://github.com/edward-shen/MMM-pages",
+    "id": "edward-shen/MMM-pages",
+    "maintainer": "edward-shen",
+    "maintainerURL": "",
+    "description": "Rotate out pages of modules.",
+    "issues": [],
+    "stars": 113,
+    "license": "MIT",
+    "tags": [
+      "pages",
+      "slides"
+    ],
+    "image": "example.jpg"
+  },
+  {
+    "name": "MMM-pages",
+    "category": "Development / Core MagicMirror²",
     "url": "https://github.com/sdetweil/MMM-pages",
     "id": "sdetweil/MMM-pages",
     "maintainer": "sdetweil",
     "maintainerURL": "",
-    "description": "Rotate out pages of modules.",
+    "description": "Rotate out pages of modules. This is a fork with the additional feature of individual rotation times.",
     "issues": [],
     "stars": 10,
     "license": "MIT",

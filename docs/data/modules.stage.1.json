@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "2025-03-23T16:30:08.454Z",
+  "lastUpdate": "2025-03-24T04:30:08.409Z",
   "modules": [
     {
       "name": "MMM-01ZM",
@@ -8050,11 +8050,21 @@
     {
       "name": "MMM-pages",
       "category": "Development / Core MagicMirror²",
+      "url": "https://github.com/edward-shen/MMM-pages",
+      "id": "edward-shen/MMM-pages",
+      "maintainer": "edward-shen",
+      "maintainerURL": "",
+      "description": "Rotate out pages of modules.",
+      "issues": []
+    },
+    {
+      "name": "MMM-pages",
+      "category": "Development / Core MagicMirror²",
       "url": "https://github.com/sdetweil/MMM-pages",
       "id": "sdetweil/MMM-pages",
       "maintainer": "sdetweil",
       "maintainerURL": "",
-      "description": "Rotate out pages of modules.",
+      "description": "Rotate out pages of modules. This is a fork with the additional feature of individual rotation times.",
       "issues": []
     },
     {

@@ -1,6 +1,6 @@
 # Result of the module analysis
 
-Last update: 2025-03-23T17:37:38+01:00
+Last update: 2025-03-24T05:38:07+01:00
 
 ## General notes
 
@@ -11,11 +11,11 @@ Last update: 2025-03-23T17:37:38+01:00
 
 |                      | number   |
 |:---------------------|:--------:|
-| modules analyzed     |   1233   |
+| modules analyzed     |   1234   |
 | maintainer           |    662   |
-| modules with issues  |   1233   |
-| issues               |   8862   |
-| modules at github    |   1100   |
+| modules with issues  |   1232   |
+| issues               |   8861   |
+| modules at github    |   1101   |
 | modules at gitlab    |     12   |
 | modules at bitbucket |      1   |
 
@@ -924,7 +924,7 @@ Last update: 2025-03-23T17:37:38+01:00
    - bosch-smart-home-bridge        ^1.6.0  →    ^1.7.11
    - eslint                        ^9.17.0  →    ^9.23.0
    - eslint-config-prettier         ^9.1.0  →    ^10.1.1
-   - eslint-plugin-prettier         ^5.2.1  →     ^5.2.3
+   - eslint-plugin-prettier         ^5.2.1  →     ^5.2.4
    - prettier                       ^3.4.2  →     ^3.5.3
    - rollup                        ^4.29.1  →    ^4.37.0
    - rxjs                           ^7.8.1  →     ^7.8.2
@@ -8555,19 +8555,6 @@ Last update: 2025-03-23T17:37:38+01:00
 
 2. ESLint issues:
    - package.json: Line 37, Column 19: Package dependencies are not alphabetized (rule: package-json/sort-collections)
-
-
-### [MMM-PublicTransportHafas by KristjanESPERANTO](https://github.com/KristjanESPERANTO/MMM-PublicTransportHafas)
-
-1. Information: There are updates for 8 dependencie(s):
-   - @eslint/js                   ^9.22.0  →   ^9.23.0
-   - @eslint/json                 ^0.10.0  →   ^0.11.0
-   - db-vendo-client               ^6.6.1  →    ^6.8.0
-   - eslint                       ^9.22.0  →   ^9.23.0
-   - eslint-plugin-import-x        ^4.6.1  →    ^4.9.1
-   - eslint-plugin-package-json   ^0.26.3  →   ^0.29.0
-   - lint-staged                  ^15.4.3  →   ^15.5.0
-   - stylelint                   ^16.15.0  →  ^16.16.0
 
 
 ### [MMM-PublicTransportVVO by ChristianGeie](https://github.com/ChristianGeie/MMM-PublicTransportVVO)

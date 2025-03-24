@@ -918,7 +918,7 @@
     "maintainerURL": "",
     "description": "Traffic warnings for the German Autobahn.",
     "issues": true,
-    "stars": 5,
+    "stars": 4,
     "license": "ISC",
     "image": "screenshot.jpg",
     "defaultSortWeight": 10,
@@ -1012,7 +1012,7 @@
     "description": "Easy, hands free Amazon Alexa integration; activated, simply by saying \"Alexa\".",
     "issues": false,
     "outdated": "Abandoned. No reactions to issues since years. The documentation currently available does not work any more (<a href=\"https://github.com/MagicMirrorOrg/MagicMirror/issues/3398\">#3398</a>).",
-    "stars": 157,
+    "stars": 158,
     "license": "MIT",
     "image": "styles-loading.jpg",
     "defaultSortWeight": 901,
@@ -1942,7 +1942,7 @@
     "description": "Display a compact monthly calendar view.",
     "issues": false,
     "outdated": "Abandoned. No updates since years. But may still work.",
-    "stars": 68,
+    "stars": 69,
     "license": "MIT",
     "defaultSortWeight": 901,
     "lastCommit": "2019-01-06T13:18:09-07:00"
@@ -2716,7 +2716,7 @@
     "license": "ISC",
     "image": "doc_images-playground_example.jpg",
     "defaultSortWeight": 5,
-    "lastCommit": "2025-03-20T07:54:45-07:00"
+    "lastCommit": "2025-03-23T21:16:29-07:00"
   },
   {
     "name": "MMM-Confucius-say",
@@ -10740,7 +10740,7 @@
     "maintainerURL": "https://github.com/Tueti",
     "description": "Displays the currently airing top movies in theaters around you.",
     "issues": true,
-    "stars": 20,
+    "stars": 21,
     "license": "MIT",
     "image": "image-1.jpg",
     "defaultSortWeight": 5,
@@ -11375,7 +11375,7 @@
       "standings"
     ],
     "defaultSortWeight": 8,
-    "lastCommit": "2025-03-23T07:56:01-07:00"
+    "lastCommit": "2025-03-23T16:34:20-07:00"
   },
   {
     "name": "MMM-MyStudyLife",
@@ -13345,11 +13345,30 @@
   {
     "name": "MMM-pages",
     "category": "Development / Core MagicMirror\u00b2",
+    "url": "https://github.com/edward-shen/MMM-pages",
+    "id": "edward-shen/MMM-pages",
+    "maintainer": "edward-shen",
+    "maintainerURL": "",
+    "description": "Rotate out pages of modules.",
+    "issues": false,
+    "stars": 113,
+    "license": "MIT",
+    "tags": [
+      "pages",
+      "slides"
+    ],
+    "image": "example.jpg",
+    "defaultSortWeight": -2,
+    "lastCommit": "2025-03-23T20:16:16+01:00"
+  },
+  {
+    "name": "MMM-pages",
+    "category": "Development / Core MagicMirror\u00b2",
     "url": "https://github.com/sdetweil/MMM-pages",
     "id": "sdetweil/MMM-pages",
     "maintainer": "sdetweil",
     "maintainerURL": "",
-    "description": "Rotate out pages of modules.",
+    "description": "Rotate out pages of modules. This is a fork with the additional feature of individual rotation times.",
     "issues": true,
     "stars": 10,
     "license": "MIT",
@@ -14581,7 +14600,7 @@
     "maintainer": "KristjanESPERANTO",
     "maintainerURL": "",
     "description": "Displays departure information for public transportation in Germany and some other European countries. The <a target=\"_blank\" href=\"https://github.com/public-transport/hafas-client\">hafas-client</a> is used to query the information. The interface of the Deutsche Bahn is used as standard, this includes most of the local networks with buses, trams, etc. However, <a target=\"_blank\" href=\"https://github.com/public-transport/hafas-client/blob/main/p/readme.md\">other hafas interfaces</a> can also be used.",
-    "issues": true,
+    "issues": false,
     "stars": 29,
     "license": "MIT",
     "tags": [
@@ -14591,7 +14610,7 @@
     ],
     "image": "img-Goerdelerring_all.jpg",
     "defaultSortWeight": 1,
-    "lastCommit": "2025-03-11T01:17:10+01:00"
+    "lastCommit": "2025-03-23T19:18:32+01:00"
   },
   {
     "name": "MMM-PublicTransportVVO",
@@ -17047,7 +17066,7 @@
     "license": "MIT",
     "image": "screenshot.jpg",
     "defaultSortWeight": 5,
-    "lastCommit": "2024-11-17T13:07:30-05:00"
+    "lastCommit": "2025-03-23T12:45:40-04:00"
   },
   {
     "name": "MMM-Sonos",
