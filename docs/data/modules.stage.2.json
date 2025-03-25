@@ -919,7 +919,7 @@
     "maintainerURL": "",
     "description": "Show a table of upcoming birthdays for a list of people you provided. Nice not to forget birthdays.",
     "issues": [],
-    "stars": 0,
+    "stars": 1,
     "hasGithubIssues": false
   },
   {
@@ -1386,7 +1386,7 @@
     "maintainerURL": "",
     "description": "Extended calendar and event view. Show calendar as agenda.",
     "issues": [],
-    "stars": 24,
+    "stars": 25,
     "license": "MIT"
   },
   {
@@ -1516,7 +1516,7 @@
     "maintainerURL": "",
     "description": "Display a webcamera video feed.",
     "issues": [],
-    "stars": 1,
+    "stars": 3,
     "hasGithubIssues": false
   },
   {

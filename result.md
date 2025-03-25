@@ -1,6 +1,6 @@
 # Result of the module analysis
 
-Last update: 2025-03-25T05:37:41+01:00
+Last update: 2025-03-25T17:38:09+01:00
 
 ## General notes
 
@@ -13,8 +13,8 @@ Last update: 2025-03-25T05:37:41+01:00
 |:---------------------|:--------:|
 | modules analyzed     |   1235   |
 | maintainer           |    661   |
-| modules with issues  |   1233   |
-| issues               |   8856   |
+| modules with issues  |   1234   |
+| issues               |   8857   |
 | modules at github    |   1102   |
 | modules at gitlab    |     12   |
 | modules at bitbucket |      1   |
@@ -398,7 +398,7 @@ Last update: 2025-03-25T05:37:41+01:00
 1. Information: There are updates for 3 dependencie(s):
    - @eslint/js              ^9.22.0  →  ^9.23.0
    - eslint                  ^9.22.0  →  ^9.23.0
-   - eslint-plugin-import-x   ^4.9.0  →   ^4.9.1
+   - eslint-plugin-import-x   ^4.9.0  →   ^4.9.2
 
 
 ### [MMM-AQI by ryck](https://github.com/ryck/MMM-AQI)
@@ -924,7 +924,7 @@ Last update: 2025-03-25T05:37:41+01:00
    - bosch-smart-home-bridge        ^1.6.0  →    ^1.7.12
    - eslint                        ^9.17.0  →    ^9.23.0
    - eslint-config-prettier         ^9.1.0  →    ^10.1.1
-   - eslint-plugin-prettier         ^5.2.1  →     ^5.2.4
+   - eslint-plugin-prettier         ^5.2.1  →     ^5.2.5
    - prettier                       ^3.4.2  →     ^3.5.3
    - rollup                        ^4.29.1  →    ^4.37.0
    - rxjs                           ^7.8.1  →     ^7.8.2
@@ -1117,10 +1117,11 @@ Last update: 2025-03-25T05:37:41+01:00
 ### [MMM-CalendarExt2 by MMM-CalendarExt2](https://github.com/MMM-CalendarExt2/MMM-CalendarExt2)
 
 1. Recommendation: There ist no CODE_OF_CONDUCT file. It is recommended to add one.
-2. Information: There are updates for 5 dependencie(s):
+2. Information: There are updates for 6 dependencie(s):
    - @eslint/js               ^9.22.0  →   ^9.23.0
    - eslint                   ^9.22.0  →   ^9.23.0
-   - eslint-plugin-import-x    ^4.6.1  →    ^4.9.1
+   - eslint-plugin-import-x    ^4.6.1  →    ^4.9.2
+   - eslint-plugin-jsonc      ^2.19.1  →   ^2.20.0
    - moment-timezone          ^0.5.47  →   ^0.5.48
    - stylelint               ^16.15.0  →  ^16.16.0
 
@@ -1271,7 +1272,7 @@ Last update: 2025-03-25T05:37:41+01:00
    - @eslint/js               ^9.22.0  →   ^9.23.0
    - @eslint/json             ^0.10.0  →   ^0.11.0
    - eslint                   ^9.22.0  →   ^9.23.0
-   - eslint-plugin-import-x    ^4.6.1  →    ^4.9.1
+   - eslint-plugin-import-x    ^4.6.1  →    ^4.9.2
    - lint-staged              ^15.4.3  →   ^15.5.0
    - stylelint               ^16.15.0  →  ^16.16.0
 
@@ -1308,7 +1309,7 @@ Last update: 2025-03-25T05:37:41+01:00
    - @eslint/js                 ^9.21.0  →   ^9.23.0
    - @stylistic/eslint-plugin    ^4.1.0  →    ^4.2.0
    - eslint                     ^9.21.0  →   ^9.23.0
-   - eslint-plugin-import-x      ^4.6.1  →    ^4.9.1
+   - eslint-plugin-import-x      ^4.6.1  →    ^4.9.2
    - prettier                    ^3.5.2  →    ^3.5.3
    - stylelint                 ^16.15.0  →  ^16.16.0
 
@@ -2321,7 +2322,7 @@ Last update: 2025-03-25T05:37:41+01:00
 1. Information: There are updates for 3 dependencie(s):
    - @eslint/js              ^9.22.0  →  ^9.23.0
    - eslint                  ^9.22.0  →  ^9.23.0
-   - eslint-plugin-import-x   ^4.8.0  →   ^4.9.1
+   - eslint-plugin-import-x   ^4.8.0  →   ^4.9.2
 
 
 ### [MMM-Ecobee by parnic](https://github.com/parnic/MMM-Ecobee)
@@ -3076,7 +3077,7 @@ Last update: 2025-03-25T05:37:41+01:00
    - @eslint/js               ^9.22.0  →   ^9.23.0
    - @eslint/json             ^0.10.0  →   ^0.11.0
    - eslint                   ^9.22.0  →   ^9.23.0
-   - eslint-plugin-import-x    ^4.6.1  →    ^4.9.1
+   - eslint-plugin-import-x    ^4.6.1  →    ^4.9.2
    - stylelint               ^16.15.0  →  ^16.16.0
 
 
@@ -4658,7 +4659,7 @@ Last update: 2025-03-25T05:37:41+01:00
 1. Information: There are updates for 3 dependencie(s):
    - @eslint/js              ^9.22.0  →  ^9.23.0
    - eslint                  ^9.22.0  →  ^9.23.0
-   - eslint-plugin-import-x   ^4.8.1  →   ^4.9.1
+   - eslint-plugin-import-x   ^4.8.1  →   ^4.9.2
 
 
 ### [MMM-ISS-Map by khassel](https://gitlab.com/khassel/MMM-ISS-Map)
@@ -4914,7 +4915,7 @@ Last update: 2025-03-25T05:37:41+01:00
    - @eslint/js                ^9.21.0  →  ^9.23.0
    - @stylistic/eslint-plugin   ^4.1.0  →   ^4.2.0
    - eslint                    ^9.21.0  →  ^9.23.0
-   - eslint-plugin-import-x     ^4.6.1  →   ^4.9.1
+   - eslint-plugin-import-x     ^4.6.1  →   ^4.9.2
    - prettier                   ^3.5.2  →   ^3.5.3
 
 
@@ -7472,7 +7473,7 @@ Last update: 2025-03-25T05:37:41+01:00
 1. Information: There are updates for 3 dependencie(s):
    - @eslint/js              ^9.22.0  →  ^9.23.0
    - eslint                  ^9.22.0  →  ^9.23.0
-   - eslint-plugin-import-x   ^4.8.1  →   ^4.9.1
+   - eslint-plugin-import-x   ^4.8.1  →   ^4.9.2
 
 
 ### [MMM-OneDrive by hermanho](https://github.com/hermanho/MMM-OneDrive)
@@ -8544,13 +8545,20 @@ Last update: 2025-03-25T05:37:41+01:00
 
 ### [MMM-PublicTransportBerlin by deg0nz](https://github.com/deg0nz/MMM-PublicTransportBerlin)
 
-1. Information: There are updates for 3 dependencie(s):
+1. Information: There are updates for 4 dependencie(s):
    - @eslint/js              ^9.22.0  →  ^9.23.0
    - eslint                  ^9.22.0  →  ^9.23.0
-   - eslint-plugin-import-x   ^4.7.1  →   ^4.9.1
+   - eslint-plugin-import-x   ^4.7.1  →   ^4.9.2
+   - eslint-plugin-jsonc     ^2.19.1  →  ^2.20.0
 
 2. ESLint issues:
    - package.json: Line 37, Column 19: Package dependencies are not alphabetized (rule: package-json/sort-collections)
+
+
+### [MMM-PublicTransportHafas by KristjanESPERANTO](https://github.com/KristjanESPERANTO/MMM-PublicTransportHafas)
+
+1. Information: There are updates for 1 dependencie(s):
+   - eslint-plugin-import-x  ^4.9.1  →  ^4.9.2
 
 
 ### [MMM-PublicTransportVVO by ChristianGeie](https://github.com/ChristianGeie/MMM-PublicTransportVVO)
@@ -11752,9 +11760,10 @@ Last update: 2025-03-25T05:37:41+01:00
 
 ### [MMM-WebSpeechTTS by KristjanESPERANTO](https://github.com/KristjanESPERANTO/MMM-WebSpeechTTS)
 
-1. Information: There are updates for 2 dependencie(s):
-   - @eslint/js  ^9.22.0  →  ^9.23.0
-   - eslint      ^9.22.0  →  ^9.23.0
+1. Information: There are updates for 3 dependencie(s):
+   - @eslint/js              ^9.22.0  →  ^9.23.0
+   - eslint                  ^9.22.0  →  ^9.23.0
+   - eslint-plugin-import-x   ^4.9.1  →   ^4.9.2
 
 
 ### [MMM-Webuntis by HeikoGr](https://github.com/HeikoGr/MMM-Webuntis)

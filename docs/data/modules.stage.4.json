@@ -1315,7 +1315,7 @@
       "There is no `package.json`. We need this file to gather information about the module for the module list page.",
       "Issues are not enabled in the GitHub repository. So users cannot report bugs. Please enable issues in your repo."
     ],
-    "stars": 0,
+    "stars": 1,
     "hasGithubIssues": false
   },
   {
@@ -1940,7 +1940,7 @@
     "maintainerURL": "",
     "description": "Extended calendar and event view. Show calendar as agenda.",
     "issues": [],
-    "stars": 24,
+    "stars": 25,
     "license": "MIT",
     "tags": [
       "calendar",
@@ -2113,7 +2113,7 @@
       "Issues are not enabled in the GitHub repository. So users cannot report bugs. Please enable issues in your repo.",
       "No image found."
     ],
-    "stars": 1,
+    "stars": 3,
     "hasGithubIssues": false,
     "tags": [
       "email",
