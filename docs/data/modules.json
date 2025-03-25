@@ -1956,7 +1956,7 @@
     "maintainerURL": "",
     "description": "Extended calendar and event view.",
     "issues": true,
-    "stars": 103,
+    "stars": 104,
     "license": "MIT",
     "tags": [
       "calendar"
@@ -7667,21 +7667,22 @@
   {
     "name": "MMM-ImagesPhotos",
     "category": "Entertainment / Misc",
-    "url": "https://github.com/roramirez/MMM-ImagesPhotos",
-    "id": "roramirez/MMM-ImagesPhotos",
-    "maintainer": "roramirez",
+    "url": "https://github.com/sdetweil/MMM-ImagesPhotos",
+    "id": "sdetweil/MMM-ImagesPhotos",
+    "maintainer": "sdetweil",
     "maintainerURL": "",
     "description": "Show images and photos.",
     "issues": true,
-    "stars": 48,
+    "stars": 7,
+    "hasGithubIssues": false,
     "license": "MIT",
     "tags": [
       "photos",
       "images"
     ],
     "image": ".github-animate.jpg",
-    "defaultSortWeight": 4,
-    "lastCommit": "2023-12-29T10:57:27-03:00"
+    "defaultSortWeight": 6,
+    "lastCommit": "2025-03-24T07:11:26-07:00"
   },
   {
     "name": "MMM-imhdsk",
@@ -10796,11 +10797,12 @@
       "mplayer",
       "video",
       "rtsp",
+      "mp4",
       "stream"
     ],
     "image": "screenshot.jpg",
     "defaultSortWeight": 3,
-    "lastCommit": "2025-03-16T20:52:41+01:00"
+    "lastCommit": "2025-03-24T20:14:53+01:00"
   },
   {
     "name": "MMM-MplayerRadio",
@@ -11303,7 +11305,7 @@
     ],
     "image": "example.jpg",
     "defaultSortWeight": 8,
-    "lastCommit": "2025-03-22T11:02:27-07:00"
+    "lastCommit": "2025-03-24T18:34:49-07:00"
   },
   {
     "name": "MMM-MySenseHat",
@@ -11374,8 +11376,8 @@
       "sports",
       "standings"
     ],
-    "defaultSortWeight": 8,
-    "lastCommit": "2025-03-23T16:34:20-07:00"
+    "defaultSortWeight": 7,
+    "lastCommit": "2025-03-24T18:34:47-07:00"
   },
   {
     "name": "MMM-MyStudyLife",
@@ -11408,8 +11410,8 @@
     "stars": 1,
     "license": "MIT",
     "image": "screenshot01.jpg",
-    "defaultSortWeight": 6,
-    "lastCommit": "2023-11-06T20:14:22+01:00"
+    "defaultSortWeight": 5,
+    "lastCommit": "2025-03-24T20:09:29+01:00"
   },
   {
     "name": "MMM-MyTraktSeries",
@@ -12512,6 +12514,28 @@
     "image": "preview.jpg",
     "defaultSortWeight": 3,
     "lastCommit": "2025-03-19T23:28:40+07:00"
+  },
+  {
+    "name": "MMM-NounsProposal",
+    "category": "Cryptocurrency",
+    "url": "https://github.com/XppaiCyberr/MMM-NounsProposal",
+    "id": "XppaiCyberr/MMM-NounsProposal",
+    "maintainer": "XppaiCyberr",
+    "maintainerURL": "",
+    "description": "This module displays recent Nouns DAO governance proposals with voting information.",
+    "issues": true,
+    "stars": 0,
+    "license": "MIT",
+    "tags": [
+      "nouns",
+      "dao",
+      "proposal",
+      "ethereum",
+      "blockchain"
+    ],
+    "image": "preview.jpg",
+    "defaultSortWeight": 6,
+    "lastCommit": "2025-03-25T00:50:48+07:00"
   },
   {
     "name": "MMM-NounsTreasury",

@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "2025-03-24T16:30:09.122Z",
+  "lastUpdate": "2025-03-25T04:30:08.651Z",
   "modules": [
     {
       "name": "MMM-01ZM",
@@ -4658,9 +4658,9 @@
     {
       "name": "MMM-ImagesPhotos",
       "category": "Entertainment / Misc",
-      "url": "https://github.com/roramirez/MMM-ImagesPhotos",
-      "id": "roramirez/MMM-ImagesPhotos",
-      "maintainer": "roramirez",
+      "url": "https://github.com/sdetweil/MMM-ImagesPhotos",
+      "id": "sdetweil/MMM-ImagesPhotos",
+      "maintainer": "sdetweil",
       "maintainerURL": "",
       "description": "Show images and photos.",
       "issues": []
@@ -7542,6 +7542,16 @@
       "maintainer": "XppaiCyberr",
       "maintainerURL": "",
       "description": "This module displays real-time Nouns auction status.",
+      "issues": []
+    },
+    {
+      "name": "MMM-NounsProposal",
+      "category": "Cryptocurrency",
+      "url": "https://github.com/XppaiCyberr/MMM-NounsProposal",
+      "id": "XppaiCyberr/MMM-NounsProposal",
+      "maintainer": "XppaiCyberr",
+      "maintainerURL": "",
+      "description": "This module displays recent Nouns DAO governance proposals with voting information.",
       "issues": []
     },
     {

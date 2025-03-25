@@ -1,6 +1,6 @@
 # Result of the module analysis
 
-Last update: 2025-03-24T17:37:48+01:00
+Last update: 2025-03-25T05:37:41+01:00
 
 ## General notes
 
@@ -11,11 +11,11 @@ Last update: 2025-03-24T17:37:48+01:00
 
 |                      | number   |
 |:---------------------|:--------:|
-| modules analyzed     |   1234   |
-| maintainer           |    662   |
-| modules with issues  |   1232   |
-| issues               |   8850   |
-| modules at github    |   1101   |
+| modules analyzed     |   1235   |
+| maintainer           |    661   |
+| modules with issues  |   1233   |
+| issues               |   8856   |
+| modules at github    |   1102   |
 | modules at gitlab    |     12   |
 | modules at bitbucket |      1   |
 
@@ -929,7 +929,7 @@ Last update: 2025-03-24T17:37:48+01:00
    - rollup                        ^4.29.1  →    ^4.37.0
    - rxjs                           ^7.8.1  →     ^7.8.2
    - typescript                     ^5.7.2  →     ^5.8.2
-   - typescript-eslint             ^8.18.2  →    ^8.27.0
+   - typescript-eslint             ^8.18.2  →    ^8.28.0
 
 
 ### [MMM-Bose-Soundtouch by spoturdeal](https://github.com/spoturdeal/MMM-Bose-Soundtouch)
@@ -4435,13 +4435,14 @@ Last update: 2025-03-24T17:37:48+01:00
 9. Recommendation: There ist no CODE_OF_CONDUCT file. It is recommended to add one.
 10. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
 
-### [MMM-ImagesPhotos by roramirez](https://github.com/roramirez/MMM-ImagesPhotos)
+### [MMM-ImagesPhotos by sdetweil](https://github.com/sdetweil/MMM-ImagesPhotos)
 
-1. Recommendation: Found `prettier/prettier` in file `.stylelintrc.json`: Config would be cleaner using 'stylelint-prettier/recommended'. See (https://github.com/prettier/stylelint-prettier).
-2. Outdated: Found `MichMich/MagicMirror` in file `README.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
-3. Recommendation: Found `"eslint-plugin-json"` in file `package.json`: Replace it by `eslint-plugin-jsonc`.
-4. Recommendation: There ist no CODE_OF_CONDUCT file. It is recommended to add one.
-5. Recommendation: Replace eslintrc by new flat config.
+1. Issues are not enabled in the GitHub repository. So users cannot report bugs. Please enable issues in your repo.
+2. Recommendation: Found `prettier/prettier` in file `.stylelintrc.json`: Config would be cleaner using 'stylelint-prettier/recommended'. See (https://github.com/prettier/stylelint-prettier).
+3. Outdated: Found `MichMich/MagicMirror` in file `README.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
+4. Recommendation: Found `"eslint-plugin-json"` in file `package.json`: Replace it by `eslint-plugin-jsonc`.
+5. Recommendation: There ist no CODE_OF_CONDUCT file. It is recommended to add one.
+6. Recommendation: Replace eslintrc by new flat config.
 
 ### [MMM-imhdsk by Adman](https://github.com/Adman/MMM-imhdsk)
 
@@ -6631,13 +6632,12 @@ Last update: 2025-03-24T17:37:48+01:00
 ### [MMM-MyStandings by dathbe](https://github.com/dathbe/MMM-MyStandings)
 
 1. `package.json` issue: No license field.
-2. Deprecated: Found `require('request')` in file `node_helper.js`: Replace it with built-in fetch.
-3. Recommendation: Found `axios` in file `node_helper.js`: Replace it with built-in fetch.
-4. Recommendation: Found `axios` in file `package.json`: Replace it with built-in fetch.
-5. Warning: No LICENSE file.
-6. Recommendation: There ist no CHANGELOG file. It is recommended to add one.
-7. Recommendation: There ist no CODE_OF_CONDUCT file. It is recommended to add one.
-8. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
+2. Recommendation: Found `axios` in file `node_helper.js`: Replace it with built-in fetch.
+3. Recommendation: Found `axios` in file `package.json`: Replace it with built-in fetch.
+4. Warning: No LICENSE file.
+5. Recommendation: There ist no CHANGELOG file. It is recommended to add one.
+6. Recommendation: There ist no CODE_OF_CONDUCT file. It is recommended to add one.
+7. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
 
 ### [MMM-MyStudyLife by ethanpartida](https://github.com/ethanpartida/MMM-MyStudyLife)
 
@@ -6656,10 +6656,9 @@ Last update: 2025-03-24T17:37:48+01:00
 
 1. There is no `package.json`. We need this file to gather information about the module for the module list page.
 2. Recommendation: The README seems not to have an update instruction (the word 'update' is missing). Please add one.
-3. Deprecated: Found `require('request')` in file `node_helper.js`: Replace it with built-in fetch.
-4. Recommendation: There ist no CHANGELOG file. It is recommended to add one.
-5. Recommendation: There ist no CODE_OF_CONDUCT file. It is recommended to add one.
-6. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
+3. Recommendation: There ist no CHANGELOG file. It is recommended to add one.
+4. Recommendation: There ist no CODE_OF_CONDUCT file. It is recommended to add one.
+5. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
 
 ### [MMM-MyTraktSeries by TheVieiraAkA](https://github.com/TheVieiraAkA/MMM-MyTraktSeries)
 
@@ -7264,6 +7263,16 @@ Last update: 2025-03-24T17:37:48+01:00
 2. Recommendation: There ist no CHANGELOG file. It is recommended to add one.
 3. Recommendation: There ist no CODE_OF_CONDUCT file. It is recommended to add one.
 4. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
+
+### [MMM-NounsProposal by XppaiCyberr](https://github.com/XppaiCyberr/MMM-NounsProposal)
+
+1. Recommendation: Found `axios` in file `README.md`: Replace it with built-in fetch.
+2. Outdated: Found `MichMich/MagicMirror` in file `README.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
+3. Recommendation: Found `axios` in file `node_helper.js`: Replace it with built-in fetch.
+4. Recommendation: Found `axios` in file `package.json`: Replace it with built-in fetch.
+5. Recommendation: There ist no CHANGELOG file. It is recommended to add one.
+6. Recommendation: There ist no CODE_OF_CONDUCT file. It is recommended to add one.
+7. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
 
 ### [MMM-NounsTreasury by XppaiCyberr](https://github.com/XppaiCyberr/MMM-NounsTreasury)
 

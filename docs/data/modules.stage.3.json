@@ -1906,7 +1906,7 @@
     "maintainerURL": "",
     "description": "Extended calendar and event view.",
     "issues": [],
-    "stars": 103,
+    "stars": 104,
     "license": "MIT",
     "tags": [
       "calendar"
@@ -7592,13 +7592,16 @@
   {
     "name": "MMM-ImagesPhotos",
     "category": "Entertainment / Misc",
-    "url": "https://github.com/roramirez/MMM-ImagesPhotos",
-    "id": "roramirez/MMM-ImagesPhotos",
-    "maintainer": "roramirez",
+    "url": "https://github.com/sdetweil/MMM-ImagesPhotos",
+    "id": "sdetweil/MMM-ImagesPhotos",
+    "maintainer": "sdetweil",
     "maintainerURL": "",
     "description": "Show images and photos.",
-    "issues": [],
-    "stars": 48,
+    "issues": [
+      "Issues are not enabled in the GitHub repository. So users cannot report bugs. Please enable issues in your repo."
+    ],
+    "stars": 7,
+    "hasGithubIssues": false,
     "license": "MIT",
     "tags": [
       "photos",
@@ -10690,6 +10693,7 @@
       "mplayer",
       "video",
       "rtsp",
+      "mp4",
       "stream"
     ],
     "image": "screenshot.jpg"
@@ -12377,6 +12381,26 @@
       "nouns",
       "nft",
       "auction"
+    ],
+    "image": "preview.jpg"
+  },
+  {
+    "name": "MMM-NounsProposal",
+    "category": "Cryptocurrency",
+    "url": "https://github.com/XppaiCyberr/MMM-NounsProposal",
+    "id": "XppaiCyberr/MMM-NounsProposal",
+    "maintainer": "XppaiCyberr",
+    "maintainerURL": "",
+    "description": "This module displays recent Nouns DAO governance proposals with voting information.",
+    "issues": [],
+    "stars": 0,
+    "license": "MIT",
+    "tags": [
+      "nouns",
+      "dao",
+      "proposal",
+      "ethereum",
+      "blockchain"
     ],
     "image": "preview.jpg"
   },
