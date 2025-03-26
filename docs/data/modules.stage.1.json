@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "2025-03-26T04:30:10.134Z",
+  "lastUpdate": "2025-03-26T16:30:07.601Z",
   "modules": [
     {
       "name": "MMM-01ZM",
@@ -6646,6 +6646,16 @@
       "issues": []
     },
     {
+      "name": "MMM-MQTTScreenOnOff",
+      "category": "Utility / IoT / 3rd Party / Integration",
+      "url": "https://github.com/olexs/MMM-MQTTScreenOnOff",
+      "id": "olexs/MMM-MQTTScreenOnOff",
+      "maintainer": "olexs",
+      "maintainerURL": "",
+      "description": "Allows you to control the mirror screen on/off state using MQTT messages, for example from a smart home motion sensor via Zigbee2MQTT or any other MQTT-compatible source.",
+      "issues": []
+    },
+    {
       "name": "MMM-MTA-NextBus",
       "category": "Transport / Travel",
       "url": "https://github.com/tie624/MMM-MTA-NextBus",
@@ -7735,16 +7745,6 @@
       "maintainer": "fewieden",
       "maintainerURL": "",
       "description": "Displays the medals for olympic games.",
-      "issues": []
-    },
-    {
-      "name": "on-this-day",
-      "category": "Entertainment / Misc",
-      "url": "https://github.com/elliefairholm/on-this-day",
-      "id": "elliefairholm/on-this-day",
-      "maintainer": "elliefairholm",
-      "maintainerURL": "",
-      "description": "Make mirrors great again (?): a daily historical fact.",
       "issues": []
     },
     {

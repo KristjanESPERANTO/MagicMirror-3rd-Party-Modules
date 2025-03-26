@@ -1,6 +1,6 @@
 # Result of the module analysis
 
-Last update: 2025-03-26T05:37:58+01:00
+Last update: 2025-03-26T17:37:39+01:00
 
 ## General notes
 
@@ -12,7 +12,7 @@ Last update: 2025-03-26T05:37:58+01:00
 |                      | number   |
 |:---------------------|:--------:|
 | modules analyzed     |   1235   |
-| maintainer           |    661   |
+| maintainer           |    660   |
 | modules with issues  |   1234   |
 | issues               |   8857   |
 | modules at github    |   1102   |
@@ -395,10 +395,12 @@ Last update: 2025-03-26T05:37:58+01:00
 
 ### [MMM-ApothekenNotdienst by KristjanESPERANTO](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst)
 
-1. Information: There are updates for 3 dependencie(s):
-   - @eslint/js              ^9.22.0  →  ^9.23.0
-   - eslint                  ^9.22.0  →  ^9.23.0
-   - eslint-plugin-import-x   ^4.9.0  →   ^4.9.2
+1. Information: There are updates for 5 dependencie(s):
+   - @eslint/js               ^9.22.0  →   ^9.23.0
+   - cspell                   ^8.17.5  →   ^8.18.0
+   - eslint                   ^9.22.0  →   ^9.23.0
+   - eslint-plugin-import-x    ^4.9.0  →    ^4.9.3
+   - stylelint               ^16.16.0  →  ^16.17.0
 
 
 ### [MMM-AQI by ryck](https://github.com/ryck/MMM-AQI)
@@ -1120,10 +1122,10 @@ Last update: 2025-03-26T05:37:58+01:00
 2. Information: There are updates for 6 dependencie(s):
    - @eslint/js               ^9.22.0  →   ^9.23.0
    - eslint                   ^9.22.0  →   ^9.23.0
-   - eslint-plugin-import-x    ^4.6.1  →    ^4.9.2
+   - eslint-plugin-import-x    ^4.6.1  →    ^4.9.3
    - eslint-plugin-jsonc      ^2.19.1  →   ^2.20.0
    - moment-timezone          ^0.5.47  →   ^0.5.48
-   - stylelint               ^16.15.0  →  ^16.16.0
+   - stylelint               ^16.15.0  →  ^16.17.0
 
 
 ### [MMM-CalendarExt3 by MMRIZE](https://github.com/MMRIZE/MMM-CalendarExt3)
@@ -1268,13 +1270,14 @@ Last update: 2025-03-26T05:37:58+01:00
 
 ### [MMM-Canteen by KristjanESPERANTO](https://github.com/KristjanESPERANTO/MMM-Canteen)
 
-1. Information: There are updates for 6 dependencie(s):
+1. Information: There are updates for 7 dependencie(s):
    - @eslint/js               ^9.22.0  →   ^9.23.0
    - @eslint/json             ^0.10.0  →   ^0.11.0
+   - cspell                   ^8.17.5  →   ^8.18.0
    - eslint                   ^9.22.0  →   ^9.23.0
-   - eslint-plugin-import-x    ^4.6.1  →    ^4.9.2
+   - eslint-plugin-import-x    ^4.6.1  →    ^4.9.3
    - lint-staged              ^15.4.3  →   ^15.5.0
-   - stylelint               ^16.15.0  →  ^16.16.0
+   - stylelint               ^16.15.0  →  ^16.17.0
 
 
 ### [MMM-Canvas by chase-cromwell](https://github.com/chase-cromwell/MMM-Canvas)
@@ -1305,13 +1308,14 @@ Last update: 2025-03-26T05:37:58+01:00
 ### [MMM-Carousel by shbatm](https://github.com/shbatm/MMM-Carousel)
 
 1. Recommendation: Found `prettier/prettier` in file `stylelint.config.mjs`: Config would be cleaner using 'stylelint-prettier/recommended'. See (https://github.com/prettier/stylelint-prettier).
-2. Information: There are updates for 6 dependencie(s):
+2. Information: There are updates for 7 dependencie(s):
    - @eslint/js                 ^9.21.0  →   ^9.23.0
    - @stylistic/eslint-plugin    ^4.1.0  →    ^4.2.0
+   - cspell                     ^8.17.5  →   ^8.18.0
    - eslint                     ^9.21.0  →   ^9.23.0
-   - eslint-plugin-import-x      ^4.6.1  →    ^4.9.2
+   - eslint-plugin-import-x      ^4.6.1  →    ^4.9.3
    - prettier                    ^3.5.2  →    ^3.5.3
-   - stylelint                 ^16.15.0  →  ^16.16.0
+   - stylelint                 ^16.15.0  →  ^16.17.0
 
 
 ### [MMM-CECControl by nischi](https://github.com/nischi/MMM-CECControl)
@@ -2319,10 +2323,12 @@ Last update: 2025-03-26T05:37:58+01:00
 
 ### [MMM-EasyPix by KristjanESPERANTO](https://github.com/KristjanESPERANTO/MMM-EasyPix)
 
-1. Information: There are updates for 3 dependencie(s):
-   - @eslint/js              ^9.22.0  →  ^9.23.0
-   - eslint                  ^9.22.0  →  ^9.23.0
-   - eslint-plugin-import-x   ^4.8.0  →   ^4.9.2
+1. Information: There are updates for 5 dependencie(s):
+   - @eslint/js               ^9.22.0  →   ^9.23.0
+   - cspell                   ^8.17.5  →   ^8.18.0
+   - eslint                   ^9.22.0  →   ^9.23.0
+   - eslint-plugin-import-x    ^4.8.0  →    ^4.9.3
+   - stylelint               ^16.16.0  →  ^16.17.0
 
 
 ### [MMM-Ecobee by parnic](https://github.com/parnic/MMM-Ecobee)
@@ -3073,12 +3079,13 @@ Last update: 2025-03-26T05:37:58+01:00
 
 ### [MMM-Forum by KristjanESPERANTO](https://github.com/KristjanESPERANTO/MMM-Forum)
 
-1. Information: There are updates for 5 dependencie(s):
+1. Information: There are updates for 6 dependencie(s):
    - @eslint/js               ^9.22.0  →   ^9.23.0
    - @eslint/json             ^0.10.0  →   ^0.11.0
+   - cspell                   ^8.17.5  →   ^8.18.0
    - eslint                   ^9.22.0  →   ^9.23.0
-   - eslint-plugin-import-x    ^4.6.1  →    ^4.9.2
-   - stylelint               ^16.15.0  →  ^16.16.0
+   - eslint-plugin-import-x    ^4.6.1  →    ^4.9.3
+   - stylelint               ^16.15.0  →  ^16.17.0
 
 
 ### [MMM-FrameLight by RaspiManu](https://github.com/RaspiManu/MMM-FrameLight)
@@ -4539,7 +4546,7 @@ Last update: 2025-03-26T05:37:58+01:00
    - markdownlint-cli2           ^0.17.1  →   ^0.17.2
    - node-intellicenter           ^0.4.0  →    ^0.5.0
    - prettier                     ^3.4.2  →    ^3.5.3
-   - stylelint                  ^16.12.0  →  ^16.16.0
+   - stylelint                  ^16.12.0  →  ^16.17.0
    - stylelint-config-standard   ^36.0.1  →   ^37.0.0
    - stylelint-prettier           ^5.0.2  →    ^5.0.3
 
@@ -4656,10 +4663,11 @@ Last update: 2025-03-26T05:37:58+01:00
 
 ### [MMM-ISS-Live by KristjanESPERANTO](https://github.com/KristjanESPERANTO/MMM-ISS-Live)
 
-1. Information: There are updates for 3 dependencie(s):
+1. Information: There are updates for 4 dependencie(s):
    - @eslint/js              ^9.22.0  →  ^9.23.0
+   - cspell                  ^8.17.5  →  ^8.18.0
    - eslint                  ^9.22.0  →  ^9.23.0
-   - eslint-plugin-import-x   ^4.8.1  →   ^4.9.2
+   - eslint-plugin-import-x   ^4.8.1  →   ^4.9.3
 
 
 ### [MMM-ISS-Map by khassel](https://gitlab.com/khassel/MMM-ISS-Map)
@@ -4911,11 +4919,12 @@ Last update: 2025-03-26T05:37:58+01:00
 ### [MMM-KeyBindings by shbatm](https://github.com/shbatm/MMM-KeyBindings)
 
 1. Recommendation: `dependabot.yml`: Use official file extension `.yaml` instead of `.yml` (<https://yaml.org/faq.html>).
-2. Information: There are updates for 5 dependencie(s):
+2. Information: There are updates for 6 dependencie(s):
    - @eslint/js                ^9.21.0  →  ^9.23.0
    - @stylistic/eslint-plugin   ^4.1.0  →   ^4.2.0
+   - cspell                    ^8.17.5  →  ^8.18.0
    - eslint                    ^9.21.0  →  ^9.23.0
-   - eslint-plugin-import-x     ^4.6.1  →   ^4.9.2
+   - eslint-plugin-import-x     ^4.6.1  →   ^4.9.3
    - prettier                   ^3.5.2  →   ^3.5.3
 
 
@@ -6405,6 +6414,17 @@ Last update: 2025-03-26T05:37:58+01:00
 11. Recommendation: There ist no CODE_OF_CONDUCT file. It is recommended to add one.
 12. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
 
+### [MMM-MQTTScreenOnOff by olexs](https://github.com/olexs/MMM-MQTTScreenOnOff)
+
+1. `package.json` issue: No description
+2. `package.json` issue: No repository field.
+3. There are no keywords in 'package.json'. We would use them as tags on the module list page.
+4. No image found.
+5. Recommendation: The README seems not to have an update instruction (the word 'update' is missing). Please add one.
+6. Recommendation: There ist no CHANGELOG file. It is recommended to add one.
+7. Recommendation: There ist no CODE_OF_CONDUCT file. It is recommended to add one.
+8. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
+
 ### [MMM-MTA-NextBus by tie624](https://github.com/tie624/MMM-MTA-NextBus)
 
 1. `package.json` issue: No repository field.
@@ -7446,17 +7466,6 @@ Last update: 2025-03-26T05:37:58+01:00
 9. Recommendation: There ist no CODE_OF_CONDUCT file. It is recommended to add one.
 10. Recommendation: Replace eslintrc by new flat config.
 
-### [on-this-day by elliefairholm](https://github.com/elliefairholm/on-this-day)
-
-1. There is no `package.json`. We need this file to gather information about the module for the module list page.
-2. Recommendation: Module name doesn't follow the recommended pattern (it doesn't start with `MMM-`). Consider renaming your module.
-3. Typo: Found `Magic Mirror` in file `README.md`: Replace it with `MagicMirror²`.
-4. Typo: Found `Magic Mirror` in file `on-this-day.js`: Replace it with `MagicMirror²`.
-5. Warning: No LICENSE file.
-6. Recommendation: There ist no CHANGELOG file. It is recommended to add one.
-7. Recommendation: There ist no CODE_OF_CONDUCT file. It is recommended to add one.
-8. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
-
 ### [MMM-OneBusAway by jugler](https://github.com/jugler/MMM-OneBusAway)
 
 1. There is no `package.json`. We need this file to gather information about the module for the module list page.
@@ -7470,10 +7479,12 @@ Last update: 2025-03-26T05:37:58+01:00
 
 ### [MMM-OneCallWeather by KristjanESPERANTO](https://github.com/KristjanESPERANTO/MMM-OneCallWeather)
 
-1. Information: There are updates for 3 dependencie(s):
-   - @eslint/js              ^9.22.0  →  ^9.23.0
-   - eslint                  ^9.22.0  →  ^9.23.0
-   - eslint-plugin-import-x   ^4.8.1  →   ^4.9.2
+1. Information: There are updates for 5 dependencie(s):
+   - @eslint/js               ^9.22.0  →   ^9.23.0
+   - cspell                   ^8.17.5  →   ^8.18.0
+   - eslint                   ^9.22.0  →   ^9.23.0
+   - eslint-plugin-import-x    ^4.8.1  →    ^4.9.3
+   - stylelint               ^16.16.0  →  ^16.17.0
 
 
 ### [MMM-OneDrive by hermanho](https://github.com/hermanho/MMM-OneDrive)
@@ -8545,11 +8556,13 @@ Last update: 2025-03-26T05:37:58+01:00
 
 ### [MMM-PublicTransportBerlin by deg0nz](https://github.com/deg0nz/MMM-PublicTransportBerlin)
 
-1. Information: There are updates for 4 dependencie(s):
-   - @eslint/js              ^9.22.0  →  ^9.23.0
-   - eslint                  ^9.22.0  →  ^9.23.0
-   - eslint-plugin-import-x   ^4.7.1  →   ^4.9.2
-   - eslint-plugin-jsonc     ^2.19.1  →  ^2.20.0
+1. Information: There are updates for 6 dependencie(s):
+   - @eslint/js               ^9.22.0  →   ^9.23.0
+   - cspell                   ^8.17.5  →   ^8.18.0
+   - eslint                   ^9.22.0  →   ^9.23.0
+   - eslint-plugin-import-x    ^4.7.1  →    ^4.9.3
+   - eslint-plugin-jsonc      ^2.19.1  →   ^2.20.0
+   - stylelint               ^16.16.0  →  ^16.17.0
 
 2. ESLint issues:
    - package.json: Line 37, Column 19: Package dependencies are not alphabetized (rule: package-json/sort-collections)
@@ -8557,8 +8570,10 @@ Last update: 2025-03-26T05:37:58+01:00
 
 ### [MMM-PublicTransportHafas by KristjanESPERANTO](https://github.com/KristjanESPERANTO/MMM-PublicTransportHafas)
 
-1. Information: There are updates for 1 dependencie(s):
-   - eslint-plugin-import-x  ^4.9.1  →  ^4.9.2
+1. Information: There are updates for 3 dependencie(s):
+   - cspell                   ^8.17.5  →   ^8.18.0
+   - eslint-plugin-import-x    ^4.9.1  →    ^4.9.3
+   - stylelint               ^16.16.0  →  ^16.17.0
 
 
 ### [MMM-PublicTransportVVO by ChristianGeie](https://github.com/ChristianGeie/MMM-PublicTransportVVO)
@@ -11760,10 +11775,11 @@ Last update: 2025-03-26T05:37:58+01:00
 
 ### [MMM-WebSpeechTTS by KristjanESPERANTO](https://github.com/KristjanESPERANTO/MMM-WebSpeechTTS)
 
-1. Information: There are updates for 3 dependencie(s):
+1. Information: There are updates for 4 dependencie(s):
    - @eslint/js              ^9.22.0  →  ^9.23.0
+   - cspell                  ^8.17.5  →  ^8.18.0
    - eslint                  ^9.22.0  →  ^9.23.0
-   - eslint-plugin-import-x   ^4.9.1  →   ^4.9.2
+   - eslint-plugin-import-x   ^4.9.1  →   ^4.9.3
 
 
 ### [MMM-Webuntis by HeikoGr](https://github.com/HeikoGr/MMM-Webuntis)

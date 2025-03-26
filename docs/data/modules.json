@@ -3074,7 +3074,7 @@
     "maintainerURL": "",
     "description": "Display cryptocurrencies ticker price, with graphs and changes over time.",
     "issues": true,
-    "stars": 97,
+    "stars": 95,
     "license": "MIT",
     "image": "MMM-cryptocurrency.jpg",
     "defaultSortWeight": 7,
@@ -3191,7 +3191,7 @@
     "maintainerURL": "",
     "description": "Post a message to your mirror either by MagicMirror API post or manual update (entering text onscreen).",
     "issues": true,
-    "stars": 0,
+    "stars": 1,
     "license": "MIT",
     "tags": [
       "text",
@@ -3210,7 +3210,7 @@
     "maintainerURL": "",
     "description": "Display a custom message on your mirror, updatable via notification.  Similar to MMM-CustomMessage, but allows multiple instances.",
     "issues": true,
-    "stars": 2,
+    "stars": 3,
     "license": "MIT",
     "tags": [
       "custom",
@@ -3295,7 +3295,7 @@
     "maintainerURL": "",
     "description": "Simple display of dad jokes from icanhazdadjoke.com.",
     "issues": true,
-    "stars": 9,
+    "stars": 10,
     "license": "MIT",
     "tags": [
       "jokes",
@@ -3428,10 +3428,10 @@
     "maintainerURL": "",
     "description": "Displays the daily Dilbert strip.",
     "issues": true,
-    "stars": 10,
+    "stars": 11,
     "license": "MIT",
     "image": "dilbert.jpg",
-    "defaultSortWeight": 7,
+    "defaultSortWeight": 6,
     "lastCommit": "2021-10-13T10:50:40+02:00"
   },
   {
@@ -10961,6 +10961,20 @@
     "lastCommit": "2019-10-13T12:47:34+01:00"
   },
   {
+    "name": "MMM-MQTTScreenOnOff",
+    "category": "Utility / IoT / 3rd Party / Integration",
+    "url": "https://github.com/olexs/MMM-MQTTScreenOnOff",
+    "id": "olexs/MMM-MQTTScreenOnOff",
+    "maintainer": "olexs",
+    "maintainerURL": "",
+    "description": "Allows you to control the mirror screen on/off state using MQTT messages, for example from a smart home motion sensor via Zigbee2MQTT or any other MQTT-compatible source.",
+    "issues": true,
+    "stars": 0,
+    "license": "MIT",
+    "defaultSortWeight": 7,
+    "lastCommit": "2025-03-26T12:28:15+01:00"
+  },
+  {
     "name": "MMM-MTA-NextBus",
     "category": "Transport / Travel",
     "url": "https://github.com/tie624/MMM-MTA-NextBus",
@@ -11305,7 +11319,7 @@
     ],
     "image": "example.jpg",
     "defaultSortWeight": 8,
-    "lastCommit": "2025-03-25T15:49:44-07:00"
+    "lastCommit": "2025-03-26T09:16:53-07:00"
   },
   {
     "name": "MMM-MySenseHat",
@@ -11377,7 +11391,7 @@
       "standings"
     ],
     "defaultSortWeight": 7,
-    "lastCommit": "2025-03-25T16:04:42-07:00"
+    "lastCommit": "2025-03-25T23:12:29-07:00"
   },
   {
     "name": "MMM-MyStudyLife",
@@ -12857,19 +12871,6 @@
     "image": ".github-countries.jpg",
     "defaultSortWeight": 10,
     "lastCommit": "2024-07-28T16:21:52+02:00"
-  },
-  {
-    "name": "on-this-day",
-    "category": "Entertainment / Misc",
-    "url": "https://github.com/elliefairholm/on-this-day",
-    "id": "elliefairholm/on-this-day",
-    "maintainer": "elliefairholm",
-    "maintainerURL": "",
-    "description": "Make mirrors great again (?): a daily historical fact.",
-    "issues": true,
-    "stars": 20,
-    "defaultSortWeight": 7,
-    "lastCommit": "2024-01-15T13:07:47+00:00"
   },
   {
     "name": "MMM-OneBusAway",

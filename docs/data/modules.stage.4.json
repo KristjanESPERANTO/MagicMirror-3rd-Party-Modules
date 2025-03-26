@@ -3011,7 +3011,7 @@
     "issues": [
       "There is no `package.json`. We need this file to gather information about the module for the module list page."
     ],
-    "stars": 97,
+    "stars": 95,
     "license": "MIT",
     "image": "MMM-cryptocurrency.jpg"
   },
@@ -3128,7 +3128,7 @@
     "maintainerURL": "",
     "description": "Post a message to your mirror either by MagicMirror API post or manual update (entering text onscreen).",
     "issues": [],
-    "stars": 0,
+    "stars": 1,
     "license": "MIT",
     "tags": [
       "text",
@@ -3145,7 +3145,7 @@
     "maintainerURL": "",
     "description": "Display a custom message on your mirror, updatable via notification.  Similar to MMM-CustomMessage, but allows multiple instances.",
     "issues": [],
-    "stars": 2,
+    "stars": 3,
     "license": "MIT",
     "tags": [
       "custom",
@@ -3230,7 +3230,7 @@
     "maintainerURL": "",
     "description": "Simple display of dad jokes from icanhazdadjoke.com.",
     "issues": [],
-    "stars": 9,
+    "stars": 10,
     "license": "MIT",
     "tags": [
       "jokes",
@@ -3365,7 +3365,7 @@
     "issues": [
       "There is no `package.json`. We need this file to gather information about the module for the module list page."
     ],
-    "stars": 10,
+    "stars": 11,
     "license": "MIT",
     "image": "dilbert.jpg"
   },
@@ -10894,6 +10894,23 @@
     "image": "example-floorplan.jpg"
   },
   {
+    "name": "MMM-MQTTScreenOnOff",
+    "category": "Utility / IoT / 3rd Party / Integration",
+    "url": "https://github.com/olexs/MMM-MQTTScreenOnOff",
+    "id": "olexs/MMM-MQTTScreenOnOff",
+    "maintainer": "olexs",
+    "maintainerURL": "",
+    "description": "Allows you to control the mirror screen on/off state using MQTT messages, for example from a smart home motion sensor via Zigbee2MQTT or any other MQTT-compatible source.",
+    "issues": [
+      "`package.json` issue: No description",
+      "`package.json` issue: No repository field.",
+      "There are no keywords in 'package.json'. We would use them as tags on the module list page.",
+      "No image found."
+    ],
+    "stars": 0,
+    "license": "MIT"
+  },
+  {
     "name": "MMM-MTA-NextBus",
     "category": "Transport / Travel",
     "url": "https://github.com/tie624/MMM-MTA-NextBus",
@@ -12750,19 +12767,6 @@
       "olympic games"
     ],
     "image": ".github-countries.jpg"
-  },
-  {
-    "name": "on-this-day",
-    "category": "Entertainment / Misc",
-    "url": "https://github.com/elliefairholm/on-this-day",
-    "id": "elliefairholm/on-this-day",
-    "maintainer": "elliefairholm",
-    "maintainerURL": "",
-    "description": "Make mirrors great again (?): a daily historical fact.",
-    "issues": [
-      "There is no `package.json`. We need this file to gather information about the module for the module list page."
-    ],
-    "stars": 20
   },
   {
     "name": "MMM-OneBusAway",
