@@ -123,7 +123,7 @@
     "license": "MIT",
     "image": "screenshots-layout-bars-daily.jpg",
     "defaultSortWeight": 6,
-    "lastCommit": "2025-03-25T09:17:03-07:00"
+    "lastCommit": "2025-03-25T10:28:53-07:00"
   },
   {
     "name": "MMM-AccuWeatherForecastDeluxe",
@@ -2543,7 +2543,7 @@
     "maintainerURL": "",
     "description": "Displays the closest aircraft's callsign and altitude using ADS-B data.",
     "issues": true,
-    "stars": 2,
+    "stars": 3,
     "license": "MIT",
     "defaultSortWeight": 6,
     "lastCommit": "2021-05-04T18:14:05-04:00"
@@ -2791,7 +2791,7 @@
     "maintainerURL": "",
     "description": "Count down to or up from a datetime.",
     "issues": true,
-    "stars": 4,
+    "stars": 5,
     "license": "MIT",
     "image": ".github-CountDown-1.jpg",
     "defaultSortWeight": 7,
@@ -11305,7 +11305,7 @@
     ],
     "image": "example.jpg",
     "defaultSortWeight": 8,
-    "lastCommit": "2025-03-25T08:43:20-07:00"
+    "lastCommit": "2025-03-25T15:49:44-07:00"
   },
   {
     "name": "MMM-MySenseHat",
@@ -11377,7 +11377,7 @@
       "standings"
     ],
     "defaultSortWeight": 7,
-    "lastCommit": "2025-03-25T08:40:59-07:00"
+    "lastCommit": "2025-03-25T16:04:42-07:00"
   },
   {
     "name": "MMM-MyStudyLife",
@@ -13373,7 +13373,7 @@
     "id": "sdetweil/MMM-pages",
     "maintainer": "sdetweil",
     "maintainerURL": "",
-    "description": "Rotate out pages of modules. This is a fork with the additional feature of individual rotation times.",
+    "description": "Rotate out pages of modules. This is a MMM-pages fork with a different approach of handling individual rotation times than the original project.",
     "issues": true,
     "stars": 10,
     "license": "MIT",
@@ -13392,7 +13392,7 @@
     "id": "edward-shen/MMM-pages",
     "maintainer": "edward-shen",
     "maintainerURL": "",
-    "description": "Rotate out pages of modules.",
+    "description": "Organize modules into multiple pages to display different information, with the option to automatically rotate through these pages.",
     "issues": false,
     "stars": 113,
     "license": "MIT",
@@ -13402,7 +13402,7 @@
     ],
     "image": "example.jpg",
     "defaultSortWeight": -2,
-    "lastCommit": "2025-03-23T20:16:16+01:00"
+    "lastCommit": "2025-03-25T19:22:51+01:00"
   },
   {
     "name": "MMM-Pages-Screencast",

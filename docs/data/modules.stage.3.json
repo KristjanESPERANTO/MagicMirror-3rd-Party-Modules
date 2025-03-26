@@ -2486,7 +2486,7 @@
       "There is no `package.json`. We need this file to gather information about the module for the module list page.",
       "No image found."
     ],
-    "stars": 2,
+    "stars": 3,
     "license": "MIT"
   },
   {
@@ -2730,7 +2730,7 @@
       "`package.json` issue: No repository field.",
       "There are no keywords in 'package.json'. We would use them as tags on the module list page."
     ],
-    "stars": 4,
+    "stars": 5,
     "license": "MIT",
     "image": ".github-CountDown-1.jpg"
   },
@@ -13219,7 +13219,7 @@
     "id": "sdetweil/MMM-pages",
     "maintainer": "sdetweil",
     "maintainerURL": "",
-    "description": "Rotate out pages of modules. This is a fork with the additional feature of individual rotation times.",
+    "description": "Rotate out pages of modules. This is a MMM-pages fork with a different approach of handling individual rotation times than the original project.",
     "issues": [],
     "stars": 10,
     "license": "MIT",
@@ -13236,7 +13236,7 @@
     "id": "edward-shen/MMM-pages",
     "maintainer": "edward-shen",
     "maintainerURL": "",
-    "description": "Rotate out pages of modules.",
+    "description": "Organize modules into multiple pages to display different information, with the option to automatically rotate through these pages.",
     "issues": [],
     "stars": 113,
     "license": "MIT",

@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "2025-03-25T16:30:08.377Z",
+  "lastUpdate": "2025-03-26T04:30:10.134Z",
   "modules": [
     {
       "name": "MMM-01ZM",
@@ -8064,7 +8064,7 @@
       "id": "edward-shen/MMM-pages",
       "maintainer": "edward-shen",
       "maintainerURL": "",
-      "description": "Rotate out pages of modules.",
+      "description": "Organize modules into multiple pages to display different information, with the option to automatically rotate through these pages.",
       "issues": []
     },
     {
@@ -8074,7 +8074,7 @@
       "id": "sdetweil/MMM-pages",
       "maintainer": "sdetweil",
       "maintainerURL": "",
-      "description": "Rotate out pages of modules. This is a fork with the additional feature of individual rotation times.",
+      "description": "Rotate out pages of modules. This is a MMM-pages fork with a different approach of handling individual rotation times than the original project.",
       "issues": []
     },
     {

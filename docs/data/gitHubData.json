@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "2025-03-25T16:30:23.116Z",
+  "lastUpdate": "2025-03-26T04:30:24.018Z",
   "repositories": [
     {
       "id": "0lek/MMM-socialbicycles",
@@ -17,7 +17,7 @@
     },
     {
       "id": "0m4r/MMM-covid19",
-      "gitHubDataLastUpdate": "2025-03-05T16:30:15.368Z",
+      "gitHubDataLastUpdate": "2025-03-26T04:30:21.627Z",
       "gitHubData": {
         "issues": 0,
         "stars": 5,
@@ -157,7 +157,7 @@
     },
     {
       "id": "AdamMoses-GitHub/MMM-CollegeFootballTop25",
-      "gitHubDataLastUpdate": "2025-03-05T11:53:32.461Z",
+      "gitHubDataLastUpdate": "2025-03-26T04:30:15.765Z",
       "gitHubData": {
         "issues": 3,
         "stars": 2,
@@ -241,7 +241,7 @@
     },
     {
       "id": "AdmiralMurtho/MMM-ClashofClans-Player",
-      "gitHubDataLastUpdate": "2025-03-05T11:53:26.320Z",
+      "gitHubDataLastUpdate": "2025-03-26T04:30:11.400Z",
       "gitHubData": {
         "issues": 0,
         "stars": 0,
@@ -1389,7 +1389,7 @@
     },
     {
       "id": "bibaldo/MMM-CountUP",
-      "gitHubDataLastUpdate": "2025-03-05T16:30:13.907Z",
+      "gitHubDataLastUpdate": "2025-03-26T04:30:20.137Z",
       "gitHubData": {
         "issues": 6,
         "stars": 4,
@@ -1403,7 +1403,7 @@
     },
     {
       "id": "bibaldo/MMM-COVID19",
-      "gitHubDataLastUpdate": "2025-03-05T16:30:15.935Z",
+      "gitHubDataLastUpdate": "2025-03-26T04:30:22.083Z",
       "gitHubData": {
         "issues": 19,
         "stars": 34,
@@ -1571,7 +1571,7 @@
     },
     {
       "id": "blighter/MMM-covid19uk-stats",
-      "gitHubDataLastUpdate": "2025-03-05T16:30:17.434Z",
+      "gitHubDataLastUpdate": "2025-03-26T04:30:23.504Z",
       "gitHubData": {
         "issues": 1,
         "stars": 0,
@@ -1627,7 +1627,7 @@
     },
     {
       "id": "boazarad/MMM-CountDown",
-      "gitHubDataLastUpdate": "2025-03-05T16:30:12.910Z",
+      "gitHubDataLastUpdate": "2025-03-26T04:30:19.191Z",
       "gitHubData": {
         "issues": 11,
         "stars": 36,
@@ -1669,7 +1669,7 @@
     },
     {
       "id": "bogomips/MMM-CoupEscooters",
-      "gitHubDataLastUpdate": "2025-03-05T16:30:14.401Z",
+      "gitHubDataLastUpdate": "2025-03-26T04:30:20.591Z",
       "gitHubData": {
         "issues": 1,
         "stars": 0,
@@ -2397,7 +2397,7 @@
     },
     {
       "id": "chicohernando/MMM-ClashRoyaleChests",
-      "gitHubDataLastUpdate": "2025-03-05T11:53:26.934Z",
+      "gitHubDataLastUpdate": "2025-03-26T04:30:11.805Z",
       "gitHubData": {
         "issues": 0,
         "stars": 0,
@@ -3251,10 +3251,10 @@
     },
     {
       "id": "daterrell/MMM-CountDown",
-      "gitHubDataLastUpdate": "2025-03-05T11:53:37.071Z",
+      "gitHubDataLastUpdate": "2025-03-26T04:30:18.759Z",
       "gitHubData": {
         "issues": 0,
-        "stars": 4,
+        "stars": 5,
         "license": "MIT",
         "archived": false,
         "disabled": false,
@@ -4833,7 +4833,7 @@
     },
     {
       "id": "fhinder/MMM-Covid19-Vaccination",
-      "gitHubDataLastUpdate": "2025-03-05T16:30:16.872Z",
+      "gitHubDataLastUpdate": "2025-03-26T04:30:22.935Z",
       "gitHubData": {
         "issues": 0,
         "stars": 0,
@@ -5281,7 +5281,7 @@
     },
     {
       "id": "glitch452/MMM-CoinMarketCap",
-      "gitHubDataLastUpdate": "2025-03-05T11:53:31.371Z",
+      "gitHubDataLastUpdate": "2025-03-26T04:30:14.975Z",
       "gitHubData": {
         "issues": 7,
         "stars": 37,
@@ -8319,7 +8319,7 @@
     },
     {
       "id": "macd2point0/MMM-CloneWarsQuotes",
-      "gitHubDataLastUpdate": "2025-03-05T11:53:28.675Z",
+      "gitHubDataLastUpdate": "2025-03-26T04:30:13.089Z",
       "gitHubData": {
         "issues": 1,
         "stars": 8,
@@ -8333,7 +8333,7 @@
     },
     {
       "id": "magic21nrw/MMM-COVID19-AMPEL",
-      "gitHubDataLastUpdate": "2025-03-05T16:30:16.348Z",
+      "gitHubDataLastUpdate": "2025-03-26T04:30:22.468Z",
       "gitHubData": {
         "issues": 1,
         "stars": 12,
@@ -8487,7 +8487,7 @@
     },
     {
       "id": "marcomerens/coinsquaremodule",
-      "gitHubDataLastUpdate": "2025-03-05T11:53:31.955Z",
+      "gitHubDataLastUpdate": "2025-03-26T04:30:15.379Z",
       "gitHubData": {
         "issues": 0,
         "stars": 0,
@@ -8627,7 +8627,7 @@
     },
     {
       "id": "mathew-fleisch/MMM-Bash",
-      "gitHubDataLastUpdate": "2025-03-05T11:53:33.675Z",
+      "gitHubDataLastUpdate": "2025-03-26T04:30:16.595Z",
       "gitHubData": {
         "issues": 0,
         "stars": 2,
@@ -9313,7 +9313,7 @@
     },
     {
       "id": "mlbonniec/MMM-Coinbase",
-      "gitHubDataLastUpdate": "2025-03-05T11:53:30.618Z",
+      "gitHubDataLastUpdate": "2025-03-26T04:30:14.455Z",
       "gitHubData": {
         "issues": 5,
         "stars": 14,
@@ -9509,7 +9509,7 @@
     },
     {
       "id": "MMRIZE/MMM-CountEvents",
-      "gitHubDataLastUpdate": "2025-03-05T16:30:13.421Z",
+      "gitHubDataLastUpdate": "2025-03-26T04:30:19.595Z",
       "gitHubData": {
         "issues": 0,
         "stars": 11,
@@ -10321,7 +10321,7 @@
     },
     {
       "id": "mykle1/MMM-Climacell-Hourly",
-      "gitHubDataLastUpdate": "2025-03-05T11:53:27.463Z",
+      "gitHubDataLastUpdate": "2025-03-26T04:30:12.256Z",
       "gitHubData": {
         "issues": 0,
         "stars": 1,
@@ -10335,7 +10335,7 @@
     },
     {
       "id": "mykle1/MMM-Clockinese",
-      "gitHubDataLastUpdate": "2025-03-05T11:53:28.159Z",
+      "gitHubDataLastUpdate": "2025-03-26T04:30:12.679Z",
       "gitHubData": {
         "issues": 0,
         "stars": 2,
@@ -10349,7 +10349,7 @@
     },
     {
       "id": "mykle1/MMM-Cocktails",
-      "gitHubDataLastUpdate": "2025-03-05T11:53:29.902Z",
+      "gitHubDataLastUpdate": "2025-03-26T04:30:14.021Z",
       "gitHubData": {
         "issues": 2,
         "stars": 11,
@@ -12505,10 +12505,10 @@
     },
     {
       "id": "rc7/MMM-ClosestFlight",
-      "gitHubDataLastUpdate": "2025-03-05T11:53:29.287Z",
+      "gitHubDataLastUpdate": "2025-03-26T04:30:13.536Z",
       "gitHubData": {
-        "issues": 0,
-        "stars": 2,
+        "issues": 1,
+        "stars": 3,
         "license": "MIT",
         "archived": false,
         "disabled": false,
@@ -13583,7 +13583,7 @@
     },
     {
       "id": "sheyabernstein/MMM-connection-status",
-      "gitHubDataLastUpdate": "2025-03-05T11:53:35.698Z",
+      "gitHubDataLastUpdate": "2025-03-26T04:30:17.876Z",
       "gitHubData": {
         "issues": 0,
         "stars": 29,
@@ -13905,7 +13905,7 @@
     },
     {
       "id": "skruglov2023/MMM-ComEdPricing",
-      "gitHubDataLastUpdate": "2025-03-05T11:53:34.405Z",
+      "gitHubDataLastUpdate": "2025-03-26T04:30:17.022Z",
       "gitHubData": {
         "issues": 0,
         "stars": 0,
@@ -13914,7 +13914,7 @@
         "disabled": false,
         "defaultBranch": "main",
         "has_issues": true,
-        "lastCommit": "2025-02-26T16:45:25Z"
+        "lastCommit": "2025-03-16T08:16:33Z"
       }
     },
     {
@@ -15305,9 +15305,9 @@
     },
     {
       "id": "Tom-Hirschberger/MMM-CommandToNotification",
-      "gitHubDataLastUpdate": "2025-03-05T11:53:35.128Z",
+      "gitHubDataLastUpdate": "2025-03-26T04:30:17.447Z",
       "gitHubData": {
-        "issues": 0,
+        "issues": 1,
         "stars": 6,
         "license": "MIT",
         "archived": false,
@@ -16215,7 +16215,7 @@
     },
     {
       "id": "vincep5/MMM-ComEdPrice",
-      "gitHubDataLastUpdate": "2025-03-05T11:53:33.082Z",
+      "gitHubDataLastUpdate": "2025-03-26T04:30:16.217Z",
       "gitHubData": {
         "issues": 2,
         "stars": 1,
@@ -16411,7 +16411,7 @@
     },
     {
       "id": "wiesty/MMM-CoupleDays",
-      "gitHubDataLastUpdate": "2025-03-05T16:30:14.900Z",
+      "gitHubDataLastUpdate": "2025-03-26T04:30:21.094Z",
       "gitHubData": {
         "issues": 2,
         "stars": 9,
@@ -16420,7 +16420,7 @@
         "disabled": false,
         "defaultBranch": "main",
         "has_issues": true,
-        "lastCommit": "2024-06-26T10:40:53Z"
+        "lastCommit": "2025-03-25T12:31:35Z"
       }
     },
     {
@@ -16495,7 +16495,7 @@
     },
     {
       "id": "wkra/MMM-CracowMPK",
-      "gitHubDataLastUpdate": "2025-03-05T16:30:17.862Z",
+      "gitHubDataLastUpdate": "2025-03-26T04:30:23.966Z",
       "gitHubData": {
         "issues": 1,
         "stars": 3,
@@ -16607,7 +16607,7 @@
     },
     {
       "id": "xadamxk/cookiecutter-magic-mirror-module",
-      "gitHubDataLastUpdate": "2025-03-05T11:53:36.352Z",
+      "gitHubDataLastUpdate": "2025-03-26T04:30:18.297Z",
       "gitHubData": {
         "issues": 4,
         "stars": 3,
