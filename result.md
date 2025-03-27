@@ -1,6 +1,6 @@
 # Result of the module analysis
 
-Last update: 2025-03-26T17:37:39+01:00
+Last update: 2025-03-27T05:37:46+01:00
 
 ## General notes
 
@@ -11,11 +11,11 @@ Last update: 2025-03-26T17:37:39+01:00
 
 |                      | number   |
 |:---------------------|:--------:|
-| modules analyzed     |   1235   |
+| modules analyzed     |   1236   |
 | maintainer           |    660   |
-| modules with issues  |   1234   |
-| issues               |   8857   |
-| modules at github    |   1102   |
+| modules with issues  |   1235   |
+| issues               |   8843   |
+| modules at github    |   1101   |
 | modules at gitlab    |     12   |
 | modules at bitbucket |      1   |
 
@@ -922,7 +922,7 @@ Last update: 2025-03-26T17:37:39+01:00
    - @rollup/plugin-node-resolve   ^16.0.0  →    ^16.0.1
    - @stylistic/eslint-plugin      ^2.12.1  →     ^4.2.0
    - @types/express                 ^5.0.0  →     ^5.0.1
-   - @types/node                  ^22.10.2  →  ^22.13.13
+   - @types/node                  ^22.10.2  →  ^22.13.14
    - bosch-smart-home-bridge        ^1.6.0  →    ^1.7.12
    - eslint                        ^9.17.0  →    ^9.23.0
    - eslint-config-prettier         ^9.1.0  →    ^10.1.1
@@ -2185,21 +2185,6 @@ Last update: 2025-03-26T17:37:39+01:00
 7. Recommendation: There ist no CHANGELOG file. It is recommended to add one.
 8. Recommendation: There ist no CODE_OF_CONDUCT file. It is recommended to add one.
 9. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
-
-### [MMM-Dreambox by Ax-LED](https://github.com/Ax-LED/MMM-Dreambox)
-
-1. There are no specific keywords in 'package.json'. We would use them as tags on the module list page. Add a few meaningful terms to the keywords in the package.json. Not just “magicmirror” or “module”.
-2. Typo: Found `Magic Mirror` in file `MMM-Dreambox.js`: Replace it with `MagicMirror²`.
-3. Deprecated: Found `omxplayer` in file `README.md`: Try to replace it with `vlc`.
-4. Recommendation: The README seems not to have an update instruction (the word 'update' is missing). Please add one.
-5. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
-6. Deprecated: Found `require('request')` in file `node_helper.js`: Replace it with built-in fetch.
-7. Deprecated: Found `omxplayer` in file `node_helper.js`: Try to replace it with `vlc`.
-8. Deprecated: Found `omxplayer` in file `package.json`: Try to replace it with `vlc`.
-9. Warning: No LICENSE file.
-10. Recommendation: There ist no CHANGELOG file. It is recommended to add one.
-11. Recommendation: There ist no CODE_OF_CONDUCT file. It is recommended to add one.
-12. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
 
 ### [MMM-DropboxPictures by MMRIZE](https://github.com/MMRIZE/MMM-DropboxPictures)
 
@@ -5078,6 +5063,16 @@ Last update: 2025-03-26T17:37:39+01:00
 3. Recommendation: There ist no CHANGELOG file. It is recommended to add one.
 4. Recommendation: There ist no CODE_OF_CONDUCT file. It is recommended to add one.
 5. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
+
+### [MMM-LilNounsTreasury by XppaiCyberr](https://github.com/XppaiCyberr/MMM-LilNounsTreasury)
+
+1. Typo: Found `Magic Mirror` in file `README.md`: Replace it with `MagicMirror²`.
+2. Recommendation: Found `axios` in file `README.md`: Replace it with built-in fetch.
+3. Recommendation: Found `axios` in file `node_helper.js`: Replace it with built-in fetch.
+4. Recommendation: Found `axios` in file `package.json`: Replace it with built-in fetch.
+5. Recommendation: There ist no CHANGELOG file. It is recommended to add one.
+6. Recommendation: There ist no CODE_OF_CONDUCT file. It is recommended to add one.
+7. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
 
 ### [MMM-Linky by 2hdlockness](https://github.com/2hdlockness/MMM-Linky)
 
@@ -8268,20 +8263,6 @@ Last update: 2025-03-26T17:37:39+01:00
 10. Recommendation: There ist no CODE_OF_CONDUCT file. It is recommended to add one.
 11. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
 
-### [MMM-Podcast2 by Ax-LED](https://github.com/Ax-LED/MMM-Podcast2)
-
-1. There is no `package.json`. We need this file to gather information about the module for the module list page.
-2. No image found.
-3. Typo: Found `Magic Mirror` in file `MMM-Podcast2.js`: Replace it with `MagicMirror²`.
-4. Deprecated: Found `omxplayer` in file `README.md`: Try to replace it with `vlc`.
-5. Recommendation: The README seems not to have an update instruction (the word 'update' is missing). Please add one.
-6. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
-7. Deprecated: Found `require('request')` in file `node_helper.js`: Replace it with built-in fetch.
-8. Deprecated: Found `omxplayer` in file `node_helper.js`: Try to replace it with `vlc`.
-9. Recommendation: There ist no CHANGELOG file. It is recommended to add one.
-10. Recommendation: There ist no CODE_OF_CONDUCT file. It is recommended to add one.
-11. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
-
 ### [MMM-PokemonGOEvents by bigfoott](https://github.com/bigfoott/MMM-PokemonGOEvents)
 
 1. `package.json` issue: No repository field.
@@ -8958,8 +8939,10 @@ Last update: 2025-03-26T17:37:39+01:00
 
 ### [MMM-Remote-Control by Jopyth](https://github.com/Jopyth/MMM-Remote-Control)
 
-1. Deprecated: Found `omxplayer` in file `modules.json.template`: Try to replace it with `vlc`.
-2. Recommendation: Found `XMLHttpRequest` in file `remote.js`: Replace it with built-in fetch.
+1. Recommendation: Found `XMLHttpRequest` in file `remote.js`: Replace it with built-in fetch.
+2. Information: There are updates for 1 dependencie(s):
+   - body-parser  ^1.20.3  →  ^2.2.0
+
 
 ### [MMM-RemoteCompliments by mitchelltmarino](https://github.com/mitchelltmarino/MMM-RemoteCompliments)
 

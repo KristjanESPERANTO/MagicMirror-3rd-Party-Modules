@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "2025-03-26T16:30:28.048Z",
+  "lastUpdate": "2025-03-27T04:30:22.694Z",
   "repositories": [
     {
       "id": "0lek/MMM-socialbicycles",
@@ -143,7 +143,7 @@
     },
     {
       "id": "aaron64/MMM-DockerVisualizer",
-      "gitHubDataLastUpdate": "2025-03-06T16:30:10.311Z",
+      "gitHubDataLastUpdate": "2025-03-27T04:30:19.200Z",
       "gitHubData": {
         "issues": 0,
         "stars": 4,
@@ -171,7 +171,7 @@
     },
     {
       "id": "AdamMoses-GitHub/MMM-DCMetroTrainTimes",
-      "gitHubDataLastUpdate": "2025-03-06T04:30:18.670Z",
+      "gitHubDataLastUpdate": "2025-03-27T04:30:12.933Z",
       "gitHubData": {
         "issues": 5,
         "stars": 16,
@@ -521,7 +521,7 @@
     },
     {
       "id": "alltopafi/MMM-DateCounter",
-      "gitHubDataLastUpdate": "2025-03-06T04:30:16.915Z",
+      "gitHubDataLastUpdate": "2025-03-27T04:30:11.121Z",
       "gitHubData": {
         "issues": 2,
         "stars": 7,
@@ -969,9 +969,9 @@
     },
     {
       "id": "Ax-LED/MMM-Dreambox",
-      "gitHubDataLastUpdate": "2025-03-06T16:30:12.385Z",
+      "gitHubDataLastUpdate": "2025-03-27T04:30:21.145Z",
       "gitHubData": {
-        "issues": 2,
+        "issues": 3,
         "stars": 3,
         "license": null,
         "archived": false,
@@ -2691,7 +2691,7 @@
     },
     {
       "id": "ckoutavas/MMM-DHT",
-      "gitHubDataLastUpdate": "2025-03-06T04:30:19.914Z",
+      "gitHubDataLastUpdate": "2025-03-27T04:30:14.342Z",
       "gitHubData": {
         "issues": 0,
         "stars": 0,
@@ -3923,7 +3923,7 @@
     },
     {
       "id": "drventure/MMM-Dorba-Trails",
-      "gitHubDataLastUpdate": "2025-03-06T16:30:11.941Z",
+      "gitHubDataLastUpdate": "2025-03-27T04:30:20.684Z",
       "gitHubData": {
         "issues": 1,
         "stars": 2,
@@ -5155,7 +5155,7 @@
     },
     {
       "id": "gberg927/MMM-DisneyWaitTimes",
-      "gitHubDataLastUpdate": "2025-03-06T16:30:09.870Z",
+      "gitHubDataLastUpdate": "2025-03-27T04:30:18.692Z",
       "gitHubData": {
         "issues": 3,
         "stars": 8,
@@ -5323,7 +5323,7 @@
     },
     {
       "id": "goedh452/MMM-Domoticz-ext",
-      "gitHubDataLastUpdate": "2025-03-06T16:30:11.443Z",
+      "gitHubDataLastUpdate": "2025-03-27T04:30:20.235Z",
       "gitHubData": {
         "issues": 0,
         "stars": 0,
@@ -5379,7 +5379,7 @@
     },
     {
       "id": "grabenhenrich/MMM-DateOnly",
-      "gitHubDataLastUpdate": "2025-03-06T04:30:17.362Z",
+      "gitHubDataLastUpdate": "2025-03-27T04:30:11.521Z",
       "gitHubData": {
         "issues": 1,
         "stars": 6,
@@ -5463,7 +5463,7 @@
     },
     {
       "id": "grenagit/MMM-DHT-Sensor",
-      "gitHubDataLastUpdate": "2025-03-06T04:30:20.311Z",
+      "gitHubDataLastUpdate": "2025-03-27T04:30:14.778Z",
       "gitHubData": {
         "issues": 0,
         "stars": 3,
@@ -5687,7 +5687,7 @@
     },
     {
       "id": "Helpi90/MMM-DBF",
-      "gitHubDataLastUpdate": "2025-03-06T04:30:17.754Z",
+      "gitHubDataLastUpdate": "2025-03-27T04:30:11.910Z",
       "gitHubData": {
         "issues": 3,
         "stars": 3,
@@ -6205,7 +6205,7 @@
     },
     {
       "id": "J0n4e/MMM-DHT22",
-      "gitHubDataLastUpdate": "2025-03-06T04:30:21.244Z",
+      "gitHubDataLastUpdate": "2025-03-27T04:30:15.653Z",
       "gitHubData": {
         "issues": 1,
         "stars": 5,
@@ -6261,7 +6261,7 @@
     },
     {
       "id": "jacquesCedric/MMM-darksky-hourly",
-      "gitHubDataLastUpdate": "2025-03-06T04:30:15.674Z",
+      "gitHubDataLastUpdate": "2025-03-27T04:30:09.769Z",
       "gitHubData": {
         "issues": 1,
         "stars": 11,
@@ -6541,7 +6541,7 @@
     },
     {
       "id": "jclarke0000/MMM-DarkSkyForecast",
-      "gitHubDataLastUpdate": "2025-03-06T04:30:16.067Z",
+      "gitHubDataLastUpdate": "2025-03-27T04:30:10.189Z",
       "gitHubData": {
         "issues": 29,
         "stars": 85,
@@ -7045,7 +7045,7 @@
     },
     {
       "id": "jordy-u/MMM-Discourse-notifications",
-      "gitHubDataLastUpdate": "2025-03-06T04:30:23.592Z",
+      "gitHubDataLastUpdate": "2025-03-27T04:30:18.171Z",
       "gitHubData": {
         "issues": 5,
         "stars": 3,
@@ -7325,7 +7325,7 @@
     },
     {
       "id": "justjim1220/MMM-DigClock",
-      "gitHubDataLastUpdate": "2025-03-06T04:30:21.711Z",
+      "gitHubDataLastUpdate": "2025-03-27T04:30:16.243Z",
       "gitHubData": {
         "issues": 4,
         "stars": 7,
@@ -7339,7 +7339,7 @@
     },
     {
       "id": "justjim1220/MMM-DigitalAlarmClock",
-      "gitHubDataLastUpdate": "2025-03-06T04:30:22.158Z",
+      "gitHubDataLastUpdate": "2025-03-27T04:30:16.672Z",
       "gitHubData": {
         "issues": 1,
         "stars": 4,
@@ -7941,7 +7941,7 @@
     },
     {
       "id": "kyle-kelly/MMM-DCMetroTimes",
-      "gitHubDataLastUpdate": "2025-03-06T04:30:18.227Z",
+      "gitHubDataLastUpdate": "2025-03-27T04:30:12.436Z",
       "gitHubData": {
         "issues": 0,
         "stars": 3,
@@ -8459,7 +8459,7 @@
     },
     {
       "id": "marcobiedermann/MMM-dribbble",
-      "gitHubDataLastUpdate": "2025-03-06T16:30:12.849Z",
+      "gitHubDataLastUpdate": "2025-03-27T04:30:21.594Z",
       "gitHubData": {
         "issues": 2,
         "stars": 1,
@@ -8739,7 +8739,7 @@
     },
     {
       "id": "MatthiPi/MMM-DefaultWeatherAnimated",
-      "gitHubDataLastUpdate": "2025-03-06T04:30:19.087Z",
+      "gitHubDataLastUpdate": "2025-03-27T04:30:13.399Z",
       "gitHubData": {
         "issues": 3,
         "stars": 15,
@@ -8837,7 +8837,7 @@
     },
     {
       "id": "mboskamp/MMM-Discogs",
-      "gitHubDataLastUpdate": "2025-03-06T04:30:22.653Z",
+      "gitHubDataLastUpdate": "2025-03-27T04:30:17.135Z",
       "gitHubData": {
         "issues": 1,
         "stars": 3,
@@ -9523,7 +9523,7 @@
     },
     {
       "id": "MMRIZE/MMM-DropboxPictures",
-      "gitHubDataLastUpdate": "2025-03-06T16:30:14.106Z",
+      "gitHubDataLastUpdate": "2025-03-27T04:30:22.091Z",
       "gitHubData": {
         "issues": 1,
         "stars": 1,
@@ -9761,7 +9761,7 @@
     },
     {
       "id": "Mong-ni/MMM-DropboxWallpaper",
-      "gitHubDataLastUpdate": "2025-03-06T16:30:14.564Z",
+      "gitHubDataLastUpdate": "2025-03-27T04:30:22.623Z",
       "gitHubData": {
         "issues": 4,
         "stars": 17,
@@ -10811,7 +10811,7 @@
     },
     {
       "id": "nebulx29/MMM-dht22",
-      "gitHubDataLastUpdate": "2025-03-06T04:30:20.755Z",
+      "gitHubDataLastUpdate": "2025-03-27T04:30:15.169Z",
       "gitHubData": {
         "issues": 1,
         "stars": 10,
@@ -11903,7 +11903,7 @@
     },
     {
       "id": "phpwun/MMM-Dogbrew",
-      "gitHubDataLastUpdate": "2025-03-06T16:30:10.900Z",
+      "gitHubDataLastUpdate": "2025-03-27T04:30:19.757Z",
       "gitHubData": {
         "issues": 0,
         "stars": 0,
@@ -14087,7 +14087,7 @@
     },
     {
       "id": "Smiche/MMM-DiscordWatch",
-      "gitHubDataLastUpdate": "2025-03-06T04:30:23.177Z",
+      "gitHubDataLastUpdate": "2025-03-27T04:30:17.586Z",
       "gitHubData": {
         "issues": 5,
         "stars": 10,
@@ -16229,10 +16229,10 @@
     },
     {
       "id": "vincep5/MMM-DarkSkyRadar",
-      "gitHubDataLastUpdate": "2025-03-06T04:30:16.464Z",
+      "gitHubDataLastUpdate": "2025-03-27T04:30:10.650Z",
       "gitHubData": {
         "issues": 1,
-        "stars": 5,
+        "stars": 4,
         "license": null,
         "archived": true,
         "disabled": false,
@@ -16551,7 +16551,7 @@
     },
     {
       "id": "wouter-heerwegh/MMM-DeLijn",
-      "gitHubDataLastUpdate": "2025-03-06T04:30:19.463Z",
+      "gitHubDataLastUpdate": "2025-03-27T04:30:13.833Z",
       "gitHubData": {
         "issues": 0,
         "stars": 2,
@@ -16743,6 +16743,20 @@
         "defaultBranch": "master",
         "has_issues": true,
         "lastCommit": "2024-10-03T06:11:32Z"
+      }
+    },
+    {
+      "id": "XppaiCyberr/MMM-LilNounsTreasury",
+      "gitHubDataLastUpdate": "2025-03-27T04:30:09.296Z",
+      "gitHubData": {
+        "issues": 0,
+        "stars": 0,
+        "license": "MIT",
+        "archived": false,
+        "disabled": false,
+        "defaultBranch": "main",
+        "has_issues": true,
+        "lastCommit": "2025-03-26T16:39:33Z"
       }
     },
     {

@@ -3509,7 +3509,7 @@
       "There are no keywords in 'package.json'. We would use them as tags on the module list page."
     ],
     "outdated": "Deprecated. DarkSky API no longer works since 2023-03-31.",
-    "stars": 5,
+    "stars": 4,
     "isArchived": true
   },
   {
@@ -3874,7 +3874,7 @@
   },
   {
     "name": "MMM-Dreambox",
-    "category": "Entertainment / Misc",
+    "category": "Outdated Modules",
     "url": "https://github.com/Ax-LED/MMM-Dreambox",
     "id": "Ax-LED/MMM-Dreambox",
     "maintainer": "Ax-LED",
@@ -3883,6 +3883,7 @@
     "issues": [
       "There are no specific keywords in 'package.json'. We would use them as tags on the module list page. Add a few meaningful terms to the keywords in the package.json. Not just “magicmirror” or “module”."
     ],
+    "outdated": "omxplayer has been deprecated since 2020.",
     "stars": 3,
     "license": "ISC",
     "image": "MMM-Dreambox_screenshot1.jpg"
@@ -8678,6 +8679,28 @@
       "There is no `package.json`. We need this file to gather information about the module for the module list page."
     ],
     "stars": 7
+  },
+  {
+    "name": "MMM-LilNounsTreasury",
+    "category": "Cryptocurrency",
+    "url": "https://github.com/XppaiCyberr/MMM-LilNounsTreasury",
+    "id": "XppaiCyberr/MMM-LilNounsTreasury",
+    "maintainer": "XppaiCyberr",
+    "maintainerURL": "",
+    "description": "This module displays the current value of the Lil Nouns Treasury.",
+    "issues": [],
+    "stars": 0,
+    "license": "MIT",
+    "tags": [
+      "ethereum",
+      "blockchain",
+      "smart contract",
+      "nouns",
+      "lil nouns",
+      "nft",
+      "treasury"
+    ],
+    "image": "preview.jpg"
   },
   {
     "name": "MMM-Linky",
@@ -14085,7 +14108,7 @@
   },
   {
     "name": "MMM-Podcast2",
-    "category": "Entertainment / Misc",
+    "category": "Outdated Modules",
     "url": "https://github.com/Ax-LED/MMM-Podcast2",
     "id": "Ax-LED/MMM-Podcast2",
     "maintainer": "Ax-LED",
@@ -14095,6 +14118,7 @@
       "There is no `package.json`. We need this file to gather information about the module for the module list page.",
       "No image found."
     ],
+    "outdated": "omxplayer has been deprecated since 2020.",
     "stars": 2,
     "license": "MIT"
   },

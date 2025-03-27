@@ -3565,7 +3565,7 @@
     "description": "Display a radar map from DarkSky.",
     "issues": false,
     "outdated": "Deprecated. DarkSky API no longer works since 2023-03-31.",
-    "stars": 5,
+    "stars": 4,
     "isArchived": true,
     "defaultSortWeight": 901,
     "lastCommit": "2022-01-05T20:44:02-06:00"
@@ -3925,17 +3925,18 @@
   },
   {
     "name": "MMM-Dreambox",
-    "category": "Entertainment / Misc",
+    "category": "Outdated Modules",
     "url": "https://github.com/Ax-LED/MMM-Dreambox",
     "id": "Ax-LED/MMM-Dreambox",
     "maintainer": "Ax-LED",
     "maintainerURL": "",
     "description": "Connect a Dreambox or a Enigma2 Receiver (like VU or VU+) to MagicMirror\u00b2 and stream stations via omxplayer.",
-    "issues": true,
+    "issues": false,
+    "outdated": "omxplayer has been deprecated since 2020.",
     "stars": 3,
     "license": "ISC",
     "image": "MMM-Dreambox_screenshot1.jpg",
-    "defaultSortWeight": 12,
+    "defaultSortWeight": 900,
     "lastCommit": "2023-05-02T21:28:38+02:00"
   },
   {
@@ -8755,6 +8756,30 @@
     "lastCommit": "2018-11-08T23:01:11+10:00"
   },
   {
+    "name": "MMM-LilNounsTreasury",
+    "category": "Cryptocurrency",
+    "url": "https://github.com/XppaiCyberr/MMM-LilNounsTreasury",
+    "id": "XppaiCyberr/MMM-LilNounsTreasury",
+    "maintainer": "XppaiCyberr",
+    "maintainerURL": "",
+    "description": "This module displays the current value of the Lil Nouns Treasury.",
+    "issues": true,
+    "stars": 0,
+    "license": "MIT",
+    "tags": [
+      "ethereum",
+      "blockchain",
+      "smart contract",
+      "nouns",
+      "lil nouns",
+      "nft",
+      "treasury"
+    ],
+    "image": "preview.jpg",
+    "defaultSortWeight": 6,
+    "lastCommit": "2025-03-26T23:39:33+07:00"
+  },
+  {
     "name": "MMM-Linky",
     "category": "Utility / IoT / 3rd Party / Integration",
     "url": "https://github.com/2hdlockness/MMM-Linky",
@@ -11391,7 +11416,7 @@
       "standings"
     ],
     "defaultSortWeight": 7,
-    "lastCommit": "2025-03-25T23:12:29-07:00"
+    "lastCommit": "2025-03-26T15:17:54-07:00"
   },
   {
     "name": "MMM-MyStudyLife",
@@ -11848,7 +11873,7 @@
     ],
     "image": ".github-preview.bubbles.jpg",
     "defaultSortWeight": 2,
-    "lastCommit": "2025-03-21T23:25:21+00:00"
+    "lastCommit": "2025-03-26T17:07:02+00:00"
   },
   {
     "name": "MMM-Netatmo-Presence",
@@ -14202,16 +14227,17 @@
   },
   {
     "name": "MMM-Podcast2",
-    "category": "Entertainment / Misc",
+    "category": "Outdated Modules",
     "url": "https://github.com/Ax-LED/MMM-Podcast2",
     "id": "Ax-LED/MMM-Podcast2",
     "maintainer": "Ax-LED",
     "maintainerURL": "",
     "description": "This module can stream the video of 100 Sekunden Tagesschau by using omxplayer. It can be controlled by MM notification system.",
-    "issues": true,
+    "issues": false,
+    "outdated": "omxplayer has been deprecated since 2020.",
     "stars": 2,
     "license": "MIT",
-    "defaultSortWeight": 12,
+    "defaultSortWeight": 901,
     "lastCommit": "2019-02-27T19:43:32+01:00"
   },
   {
@@ -15265,7 +15291,7 @@
     ],
     "image": ".github-hide_show_module.jpg",
     "defaultSortWeight": -8,
-    "lastCommit": "2025-03-22T10:34:02+01:00"
+    "lastCommit": "2025-03-26T20:26:40+01:00"
   },
   {
     "name": "MMM-Remote-Control-Repository",
