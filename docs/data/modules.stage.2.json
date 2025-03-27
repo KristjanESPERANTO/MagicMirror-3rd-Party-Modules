@@ -2965,7 +2965,7 @@
     "description": "Watch the sunlit side of Earth as it rotates.",
     "issues": [],
     "outdated": "Abandoned. Developer is no longer active. Missing instructions to install dependency 'request'.",
-    "stars": 61,
+    "stars": 60,
     "license": "MIT"
   },
   {

@@ -1,6 +1,6 @@
 # Result of the module analysis
 
-Last update: 2025-03-27T05:37:46+01:00
+Last update: 2025-03-27T17:37:43+01:00
 
 ## General notes
 
@@ -4188,12 +4188,13 @@ Last update: 2025-03-27T05:37:46+01:00
 
 1. Recommendation: There ist no CHANGELOG file. It is recommended to add one.
 2. Recommendation: There ist no CODE_OF_CONDUCT file. It is recommended to add one.
-3. Information: There are updates for 5 dependencie(s):
+3. Information: There are updates for 6 dependencie(s):
    - @eslint/js                 ^9.20.0  →  ^9.23.0
    - @stylistic/eslint-plugin    ^3.1.0  →   ^4.2.0
    - eslint                     ^9.20.0  →  ^9.23.0
+   - eventsource                 ^3.0.5  →   ^3.0.6
    - globals                   ^15.14.0  →  ^16.0.0
-   - undici                      ^7.3.0  →   ^7.5.0
+   - undici                      ^7.3.0  →   ^7.6.0
 
 
 ### [MMM-hukamnama by harv-singh](https://github.com/harv-singh/MMM-hukamnama)
@@ -8940,8 +8941,9 @@ Last update: 2025-03-27T05:37:46+01:00
 ### [MMM-Remote-Control by Jopyth](https://github.com/Jopyth/MMM-Remote-Control)
 
 1. Recommendation: Found `XMLHttpRequest` in file `remote.js`: Replace it with built-in fetch.
-2. Information: There are updates for 1 dependencie(s):
-   - body-parser  ^1.20.3  →  ^2.2.0
+2. Information: There are updates for 2 dependencie(s):
+   - body-parser  ^1.20.3  →   ^2.2.0
+   - swagger-ui   ^5.20.1  →  ^5.20.2
 
 
 ### [MMM-RemoteCompliments by mitchelltmarino](https://github.com/mitchelltmarino/MMM-RemoteCompliments)

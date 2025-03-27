@@ -4149,7 +4149,7 @@
     "description": "Watch the sunlit side of Earth as it rotates.",
     "issues": false,
     "outdated": "Abandoned. Developer is no longer active. Missing instructions to install dependency 'request'.",
-    "stars": 61,
+    "stars": 60,
     "license": "MIT",
     "tags": [
       "earth",
@@ -11344,7 +11344,7 @@
     ],
     "image": "example.jpg",
     "defaultSortWeight": 8,
-    "lastCommit": "2025-03-26T09:16:53-07:00"
+    "lastCommit": "2025-03-27T00:54:06-07:00"
   },
   {
     "name": "MMM-MySenseHat",
@@ -11416,7 +11416,7 @@
       "standings"
     ],
     "defaultSortWeight": 7,
-    "lastCommit": "2025-03-26T15:17:54-07:00"
+    "lastCommit": "2025-03-27T00:55:06-07:00"
   },
   {
     "name": "MMM-MyStudyLife",
@@ -11873,7 +11873,7 @@
     ],
     "image": ".github-preview.bubbles.jpg",
     "defaultSortWeight": 2,
-    "lastCommit": "2025-03-26T17:07:02+00:00"
+    "lastCommit": "2025-03-27T15:05:02+00:00"
   },
   {
     "name": "MMM-Netatmo-Presence",
