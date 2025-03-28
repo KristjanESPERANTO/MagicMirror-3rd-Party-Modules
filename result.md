@@ -1,6 +1,6 @@
 # Result of the module analysis
 
-Last update: 2025-03-28T05:38:08+01:00
+Last update: 2025-03-28T17:37:31+01:00
 
 ## General notes
 
@@ -11,11 +11,11 @@ Last update: 2025-03-28T05:38:08+01:00
 
 |                      | number   |
 |:---------------------|:--------:|
-| modules analyzed     |   1237   |
-| maintainer           |    660   |
-| modules with issues  |   1236   |
-| issues               |   8846   |
-| modules at github    |   1102   |
+| modules analyzed     |   1238   |
+| maintainer           |    661   |
+| modules with issues  |   1237   |
+| issues               |   8857   |
+| modules at github    |   1103   |
 | modules at gitlab    |     12   |
 | modules at bitbucket |      1   |
 
@@ -6965,6 +6965,13 @@ Last update: 2025-03-28T05:38:08+01:00
 2. Recommendation: There ist no CODE_OF_CONDUCT file. It is recommended to add one.
 3. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
 
+### [MMM-NewsAPI by mumblebaj](https://github.com/mumblebaj/MMM-NewsAPI)
+
+1. Deprecated: Found `"lockfileVersion": 2` in file `package-lock.json`: Run `npm update` to update to lockfileVersion 3.
+2. Recommendation: There ist no CHANGELOG file. It is recommended to add one.
+3. Recommendation: There ist no CODE_OF_CONDUCT file. It is recommended to add one.
+4. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
+
 ### [MMM-NewsAPI by totoluto](https://github.com/totoluto/MMM-NewsAPI)
 
 1. Typo: Found `Magic Mirror` in file `README.md`: Replace it with `MagicMirror²`.
@@ -6973,13 +6980,6 @@ Last update: 2025-03-28T05:38:08+01:00
 4. Recommendation: There ist no CHANGELOG file. It is recommended to add one.
 5. Recommendation: There ist no CODE_OF_CONDUCT file. It is recommended to add one.
 6. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
-
-### [MMM-NewsAPI by mumblebaj](https://github.com/mumblebaj/MMM-NewsAPI)
-
-1. Deprecated: Found `"lockfileVersion": 2` in file `package-lock.json`: Run `npm update` to update to lockfileVersion 3.
-2. Recommendation: There ist no CHANGELOG file. It is recommended to add one.
-3. Recommendation: There ist no CODE_OF_CONDUCT file. It is recommended to add one.
-4. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
 
 ### [MMM-NewsFeedTicker by justjim1220](https://github.com/justjim1220/MMM-NewsFeedTicker)
 
@@ -9293,6 +9293,20 @@ Last update: 2025-03-28T05:38:08+01:00
 6. Recommendation: There ist no CHANGELOG file. It is recommended to add one.
 7. Recommendation: There ist no CODE_OF_CONDUCT file. It is recommended to add one.
 8. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
+
+### [MMM-SCD-30 by Yours3lf](https://github.com/Yours3lf/MMM-SCD-30)
+
+1. `package.json` issue: No description
+2. `package.json` issue: No repository field.
+3. There are no keywords in 'package.json'. We would use them as tags on the module list page.
+4. Issues are not enabled in the GitHub repository. So users cannot report bugs. Please enable issues in your repo.
+5. Typo: Found `Magic Mirror` in file `MMM-SCD-30.js`: Replace it with `MagicMirror²`.
+6. Outdated: Found `MichMich/MagicMirror` in file `README.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
+7. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
+8. Warning: No LICENSE file.
+9. Recommendation: There ist no CHANGELOG file. It is recommended to add one.
+10. Recommendation: There ist no CODE_OF_CONDUCT file. It is recommended to add one.
+11. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
 
 ### [MMM-Scenes2 by MMRIZE](https://github.com/MMRIZE/MMM-Scenes2)
 

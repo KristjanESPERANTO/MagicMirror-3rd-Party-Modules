@@ -2716,7 +2716,7 @@
     "license": "ISC",
     "image": "doc_images-playground_example.jpg",
     "defaultSortWeight": 5,
-    "lastCommit": "2025-03-25T07:05:13-07:00"
+    "lastCommit": "2025-03-27T21:43:54-07:00"
   },
   {
     "name": "MMM-Confucius-say",
@@ -5218,7 +5218,7 @@
     "maintainerURL": "",
     "description": "Display your Fitbit statistics.",
     "issues": true,
-    "stars": 25,
+    "stars": 24,
     "defaultSortWeight": 8,
     "lastCommit": "2016-12-15T23:34:59+00:00"
   },
@@ -5311,7 +5311,7 @@
     "description": "Track nearby planes based on Flightradar24 data.",
     "issues": false,
     "outdated": "Abandoned. Repo has been archived at 2024-01-22.",
-    "stars": 21,
+    "stars": 22,
     "isArchived": true,
     "license": "MIT",
     "tags": [
@@ -5351,7 +5351,7 @@
     "maintainerURL": "https://github.com/E3V3A",
     "description": "A flight radar that display airplane/flight details of what is currently flying in the airspace above some location.",
     "issues": true,
-    "stars": 24,
+    "stars": 25,
     "license": "MIT",
     "tags": [
       "flights",
@@ -11990,6 +11990,24 @@
   {
     "name": "MMM-NewsAPI",
     "category": "News / Information",
+    "url": "https://github.com/mumblebaj/MMM-NewsAPI",
+    "id": "mumblebaj/MMM-NewsAPI",
+    "maintainer": "mumblebaj",
+    "maintainerURL": "https://github.com/mumblebaj",
+    "description": "Get news from <a target=\"_blank\" href=\"https://newsapi.org\">newsapi.org</a>.",
+    "issues": true,
+    "stars": 10,
+    "license": "MIT",
+    "tags": [
+      "news"
+    ],
+    "image": "screenshot1.jpg",
+    "defaultSortWeight": 3,
+    "lastCommit": "2024-09-29T13:44:39+02:00"
+  },
+  {
+    "name": "MMM-NewsAPI",
+    "category": "News / Information",
     "url": "https://github.com/totoluto/MMM-NewsAPI",
     "id": "totoluto/MMM-NewsAPI",
     "maintainer": "totoluto",
@@ -12005,24 +12023,6 @@
     "image": "screenshots-MMM-NewsApi.jpg",
     "defaultSortWeight": 5,
     "lastCommit": "2024-12-02T20:07:18+01:00"
-  },
-  {
-    "name": "MMM-NewsAPI",
-    "category": "News / Information",
-    "url": "https://github.com/mumblebaj/MMM-NewsAPI",
-    "id": "mumblebaj/MMM-NewsAPI",
-    "maintainer": "mumblebaj",
-    "maintainerURL": "https://github.com/mumblebaj",
-    "description": "Get news from <a target=\"_blank\" href=\"https://newsapi.org\">newsapi.org</a>.",
-    "issues": true,
-    "stars": 10,
-    "license": "MIT",
-    "tags": [
-      "news"
-    ],
-    "image": "screenshot1.jpg",
-    "defaultSortWeight": 3,
-    "lastCommit": "2024-09-29T13:44:39+02:00"
   },
   {
     "name": "MMM-NewsFeedTicker",
@@ -14642,7 +14642,7 @@
     ],
     "image": "Images-sample.jpg",
     "defaultSortWeight": 3,
-    "lastCommit": "2025-03-27T19:59:46-06:00"
+    "lastCommit": "2025-03-28T09:40:37-06:00"
   },
   {
     "name": "MMM-PublicTransportBerlin",
@@ -15887,6 +15887,22 @@
     "image": "screenshots-example.jpg",
     "defaultSortWeight": 7,
     "lastCommit": "2024-02-01T21:53:19+01:00"
+  },
+  {
+    "name": "MMM-SCD-30",
+    "category": "Utility / IoT / 3rd Party / Integration",
+    "url": "https://github.com/Yours3lf/MMM-SCD-30",
+    "id": "Yours3lf/MMM-SCD-30",
+    "maintainer": "Yours3lf",
+    "maintainerURL": "https://github.com/Yours3lf",
+    "description": "Display CO2 readings from SCD-30 sensor.",
+    "issues": true,
+    "stars": 0,
+    "hasGithubIssues": false,
+    "license": "MIT",
+    "image": ".github-example.jpg",
+    "defaultSortWeight": 11,
+    "lastCommit": "2025-03-28T13:44:42+01:00"
   },
   {
     "name": "MMM-Scenes",

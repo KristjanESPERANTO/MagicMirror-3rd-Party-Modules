@@ -3730,7 +3730,7 @@
     "maintainerURL": "",
     "description": "Display your Fitbit statistics.",
     "issues": [],
-    "stars": 25
+    "stars": 24
   },
   {
     "name": "MMM-FlagRise",
@@ -3802,7 +3802,7 @@
     "description": "Track nearby planes based on Flightradar24 data.",
     "issues": [],
     "outdated": "Abandoned. Repo has been archived at 2024-01-22.",
-    "stars": 21,
+    "stars": 22,
     "isArchived": true,
     "license": "MIT"
   },
@@ -3826,7 +3826,7 @@
     "maintainerURL": "https://github.com/E3V3A",
     "description": "A flight radar that display airplane/flight details of what is currently flying in the airspace above some location.",
     "issues": [],
-    "stars": 24,
+    "stars": 25,
     "license": "MIT"
   },
   {
@@ -8563,18 +8563,6 @@
   {
     "name": "MMM-NewsAPI",
     "category": "News / Information",
-    "url": "https://github.com/totoluto/MMM-NewsAPI",
-    "id": "totoluto/MMM-NewsAPI",
-    "maintainer": "totoluto",
-    "maintainerURL": "https://github.com/totoluto",
-    "description": "Get top headlines from <a target=\"_blank\" href=\"https://newsapi.org\">newsapi.org</a>.",
-    "issues": [],
-    "stars": 0,
-    "license": "MIT"
-  },
-  {
-    "name": "MMM-NewsAPI",
-    "category": "News / Information",
     "url": "https://github.com/mumblebaj/MMM-NewsAPI",
     "id": "mumblebaj/MMM-NewsAPI",
     "maintainer": "mumblebaj",
@@ -8582,6 +8570,18 @@
     "description": "Get news from <a target=\"_blank\" href=\"https://newsapi.org\">newsapi.org</a>.",
     "issues": [],
     "stars": 10,
+    "license": "MIT"
+  },
+  {
+    "name": "MMM-NewsAPI",
+    "category": "News / Information",
+    "url": "https://github.com/totoluto/MMM-NewsAPI",
+    "id": "totoluto/MMM-NewsAPI",
+    "maintainer": "totoluto",
+    "maintainerURL": "https://github.com/totoluto",
+    "description": "Get top headlines from <a target=\"_blank\" href=\"https://newsapi.org\">newsapi.org</a>.",
+    "issues": [],
+    "stars": 0,
     "license": "MIT"
   },
   {
@@ -11335,6 +11335,18 @@
     "issues": [],
     "stars": 1,
     "license": "MIT"
+  },
+  {
+    "name": "MMM-SCD-30",
+    "category": "Utility / IoT / 3rd Party / Integration",
+    "url": "https://github.com/Yours3lf/MMM-SCD-30",
+    "id": "Yours3lf/MMM-SCD-30",
+    "maintainer": "Yours3lf",
+    "maintainerURL": "https://github.com/Yours3lf",
+    "description": "Display CO2 readings from SCD-30 sensor.",
+    "issues": [],
+    "stars": 0,
+    "hasGithubIssues": false
   },
   {
     "name": "MMM-Scenes",
