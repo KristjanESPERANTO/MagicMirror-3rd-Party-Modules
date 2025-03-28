@@ -4628,10 +4628,9 @@
     "description": "Display EU electricity prices from Nord Pool.",
     "issues": true,
     "stars": 4,
-    "hasGithubIssues": false,
     "license": "MIT",
     "image": "barchart.jpg",
-    "defaultSortWeight": 10,
+    "defaultSortWeight": 9,
     "lastCommit": "2024-11-05T22:23:30+01:00"
   },
   {
@@ -4643,7 +4642,7 @@
     "maintainerURL": "",
     "description": "Display live scores of Euro 2024 football games.",
     "issues": true,
-    "stars": 2,
+    "stars": 1,
     "license": "ISC",
     "image": "MMM-euro2024.jpg",
     "defaultSortWeight": 8,
@@ -4785,7 +4784,7 @@
     "maintainerURL": "",
     "description": "All new version of Face Recognition with Open CV 4.1 and Deep Neural Network.",
     "issues": true,
-    "stars": 93,
+    "stars": 94,
     "license": "MIT",
     "tags": [
       "face",
@@ -4806,7 +4805,7 @@
     "maintainerURL": "https://github.com/EbenKouao",
     "description": "This module allows you to access profiles using face recognition. This works on the back of OpenCV face recognition module. Program this script to control applicances e.g. Smart Plugs, or lights based on an individual's face profile being recognized.",
     "issues": true,
-    "stars": 86,
+    "stars": 88,
     "license": "MIT",
     "image": "img-readme-face-recognition-guest-smai.jpg",
     "defaultSortWeight": 8,
@@ -4912,7 +4911,7 @@
     "maintainerURL": "",
     "description": "Can be used for adding notes using fast and easy web interface.",
     "issues": true,
-    "stars": 8,
+    "stars": 10,
     "license": "MIT",
     "image": "preview-preview.jpg",
     "defaultSortWeight": 11,
@@ -10071,7 +10070,7 @@
     ],
     "image": "screenshot.jpg",
     "defaultSortWeight": 7,
-    "lastCommit": "2025-01-04T19:44:44-06:00"
+    "lastCommit": "2025-03-27T21:35:48-05:00"
   },
   {
     "name": "mmm-dropbox",
@@ -10359,8 +10358,8 @@
       "tree"
     ],
     "image": "pollen_forecast.jpg",
-    "defaultSortWeight": 901,
-    "lastCommit": "2022-08-13T12:20:39+01:00"
+    "defaultSortWeight": 900,
+    "lastCommit": "2025-03-27T18:23:22+00:00"
   },
   {
     "name": "mmm-uvindex",
@@ -11416,7 +11415,7 @@
       "standings"
     ],
     "defaultSortWeight": 7,
-    "lastCommit": "2025-03-27T00:55:06-07:00"
+    "lastCommit": "2025-03-27T14:42:43-07:00"
   },
   {
     "name": "MMM-MyStudyLife",
@@ -14626,6 +14625,24 @@
     ],
     "defaultSortWeight": 9,
     "lastCommit": "2021-06-17T12:32:26-07:00"
+  },
+  {
+    "name": "MMM-PublicTransit",
+    "category": "Transport / Travel",
+    "url": "https://github.com/thariq-shanavas/MMM-PublicTransit",
+    "id": "thariq-shanavas/MMM-PublicTransit",
+    "maintainer": "thariq-shanavas",
+    "maintainerURL": "",
+    "description": "Public transit departure times from <a target=\"_blank\" href=\"https://transitapp.com/\">Transit App</a>, supporting 25 countries and 800+ cities.",
+    "issues": true,
+    "stars": 1,
+    "license": "MIT",
+    "tags": [
+      "template"
+    ],
+    "image": "Images-sample.jpg",
+    "defaultSortWeight": 3,
+    "lastCommit": "2025-03-27T19:59:46-06:00"
   },
   {
     "name": "MMM-PublicTransportBerlin",
@@ -19872,8 +19889,8 @@
     "stars": 10,
     "license": "GPL-3.0",
     "image": "icon-0.jpg",
-    "defaultSortWeight": 901,
-    "lastCommit": "2019-01-06T00:28:05-06:00"
+    "defaultSortWeight": 900,
+    "lastCommit": "2025-03-27T11:40:28-05:00"
   },
   {
     "name": "MMM-WeatherGraph",

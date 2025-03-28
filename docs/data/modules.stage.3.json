@@ -4554,11 +4554,9 @@
     "description": "Display EU electricity prices from Nord Pool.",
     "issues": [
       "`package.json` issue: No repository field.",
-      "There are no keywords in 'package.json'. We would use them as tags on the module list page.",
-      "Issues are not enabled in the GitHub repository. So users cannot report bugs. Please enable issues in your repo."
+      "There are no keywords in 'package.json'. We would use them as tags on the module list page."
     ],
     "stars": 4,
-    "hasGithubIssues": false,
     "license": "MIT",
     "image": "barchart.jpg"
   },
@@ -4573,7 +4571,7 @@
     "issues": [
       "There are no keywords in 'package.json'. We would use them as tags on the module list page."
     ],
-    "stars": 2,
+    "stars": 1,
     "license": "ISC",
     "image": "MMM-euro2024.jpg"
   },
@@ -4720,7 +4718,7 @@
     "issues": [
       "No image found."
     ],
-    "stars": 93,
+    "stars": 94,
     "license": "MIT",
     "tags": [
       "face",
@@ -4741,7 +4739,7 @@
     "issues": [
       "There is no `package.json`. We need this file to gather information about the module for the module list page."
     ],
-    "stars": 86,
+    "stars": 88,
     "license": "MIT",
     "image": "img-readme-face-recognition-guest-smai.jpg"
   },
@@ -4845,7 +4843,7 @@
     "issues": [
       "There is no `package.json`. We need this file to gather information about the module for the module list page."
     ],
-    "stars": 8,
+    "stars": 10,
     "license": "MIT",
     "image": "preview-preview.jpg"
   },
@@ -14466,6 +14464,22 @@
       "iframe",
       "notification"
     ]
+  },
+  {
+    "name": "MMM-PublicTransit",
+    "category": "Transport / Travel",
+    "url": "https://github.com/thariq-shanavas/MMM-PublicTransit",
+    "id": "thariq-shanavas/MMM-PublicTransit",
+    "maintainer": "thariq-shanavas",
+    "maintainerURL": "",
+    "description": "Public transit departure times from <a target=\"_blank\" href=\"https://transitapp.com/\">Transit App</a>, supporting 25 countries and 800+ cities.",
+    "issues": [],
+    "stars": 1,
+    "license": "MIT",
+    "tags": [
+      "template"
+    ],
+    "image": "Images-sample.jpg"
   },
   {
     "name": "MMM-PublicTransportBerlin",

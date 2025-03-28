@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "2025-03-27T16:30:14.250Z",
+  "lastUpdate": "2025-03-28T04:30:10.150Z",
   "modules": [
     {
       "name": "MMM-01ZM",
@@ -8812,6 +8812,16 @@
       "maintainer": "daxiang28",
       "maintainerURL": "",
       "description": "Display basic auth images through a simple Express proxy.",
+      "issues": []
+    },
+    {
+      "name": "MMM-PublicTransit",
+      "category": "Transport / Travel",
+      "url": "https://github.com/thariq-shanavas/MMM-PublicTransit",
+      "id": "thariq-shanavas/MMM-PublicTransit",
+      "maintainer": "thariq-shanavas",
+      "maintainerURL": "",
+      "description": "Public transit departure times from <a target=\"_blank\" href=\"https://transitapp.com/\">Transit App</a>, supporting 25 countries and 800+ cities.",
       "issues": []
     },
     {

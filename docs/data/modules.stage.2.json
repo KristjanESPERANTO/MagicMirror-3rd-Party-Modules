@@ -3292,8 +3292,7 @@
     "maintainerURL": "",
     "description": "Display EU electricity prices from Nord Pool.",
     "issues": [],
-    "stars": 4,
-    "hasGithubIssues": false
+    "stars": 4
   },
   {
     "name": "MMM-euro2024",
@@ -3304,7 +3303,7 @@
     "maintainerURL": "",
     "description": "Display live scores of Euro 2024 football games.",
     "issues": [],
-    "stars": 2
+    "stars": 1
   },
   {
     "name": "MMM-EventHorizon",
@@ -3415,7 +3414,7 @@
     "maintainerURL": "",
     "description": "All new version of Face Recognition with Open CV 4.1 and Deep Neural Network.",
     "issues": [],
-    "stars": 93,
+    "stars": 94,
     "license": "MIT"
   },
   {
@@ -3427,7 +3426,7 @@
     "maintainerURL": "https://github.com/EbenKouao",
     "description": "This module allows you to access profiles using face recognition. This works on the back of OpenCV face recognition module. Program this script to control applicances e.g. Smart Plugs, or lights based on an individual's face profile being recognized.",
     "issues": [],
-    "stars": 86,
+    "stars": 88,
     "license": "MIT"
   },
   {
@@ -3500,7 +3499,7 @@
     "maintainerURL": "",
     "description": "Can be used for adding notes using fast and easy web interface.",
     "issues": [],
-    "stars": 8,
+    "stars": 10,
     "license": "MIT"
   },
   {
@@ -10430,6 +10429,18 @@
     "issues": [],
     "stars": 1,
     "license": "GPL-3.0"
+  },
+  {
+    "name": "MMM-PublicTransit",
+    "category": "Transport / Travel",
+    "url": "https://github.com/thariq-shanavas/MMM-PublicTransit",
+    "id": "thariq-shanavas/MMM-PublicTransit",
+    "maintainer": "thariq-shanavas",
+    "maintainerURL": "",
+    "description": "Public transit departure times from <a target=\"_blank\" href=\"https://transitapp.com/\">Transit App</a>, supporting 25 countries and 800+ cities.",
+    "issues": [],
+    "stars": 1,
+    "license": "MIT"
   },
   {
     "name": "MMM-PublicTransportBerlin",

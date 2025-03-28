@@ -1,6 +1,6 @@
 # Result of the module analysis
 
-Last update: 2025-03-27T17:37:43+01:00
+Last update: 2025-03-28T05:38:08+01:00
 
 ## General notes
 
@@ -11,11 +11,11 @@ Last update: 2025-03-27T17:37:43+01:00
 
 |                      | number   |
 |:---------------------|:--------:|
-| modules analyzed     |   1236   |
+| modules analyzed     |   1237   |
 | maintainer           |    660   |
-| modules with issues  |   1235   |
-| issues               |   8843   |
-| modules at github    |   1101   |
+| modules with issues  |   1236   |
+| issues               |   8846   |
+| modules at github    |   1102   |
 | modules at gitlab    |     12   |
 | modules at bitbucket |      1   |
 
@@ -2529,15 +2529,14 @@ Last update: 2025-03-27T17:37:43+01:00
 
 1. `package.json` issue: No repository field.
 2. There are no keywords in 'package.json'. We would use them as tags on the module list page.
-3. Issues are not enabled in the GitHub repository. So users cannot report bugs. Please enable issues in your repo.
-4. Typo: Found `Magic Mirror` in file `MMM-EUElectricityPrice.js`: Replace it with `MagicMirror²`.
-5. Typo: Found `Magic Mirror` in file `README.md`: Replace it with `MagicMirror²`.
-6. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
-7. Recommendation: Found `require('https')` in file `node_helper.js`: Replace 'https' by 'node:https'.
-8. Warning: No LICENSE file.
-9. Recommendation: There ist no CHANGELOG file. It is recommended to add one.
-10. Recommendation: There ist no CODE_OF_CONDUCT file. It is recommended to add one.
-11. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
+3. Typo: Found `Magic Mirror` in file `MMM-EUElectricityPrice.js`: Replace it with `MagicMirror²`.
+4. Typo: Found `Magic Mirror` in file `README.md`: Replace it with `MagicMirror²`.
+5. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
+6. Recommendation: Found `require('https')` in file `node_helper.js`: Replace 'https' by 'node:https'.
+7. Warning: No LICENSE file.
+8. Recommendation: There ist no CHANGELOG file. It is recommended to add one.
+9. Recommendation: There ist no CODE_OF_CONDUCT file. It is recommended to add one.
+10. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
 
 ### [MMM-euro2024 by 0m4r](https://github.com/0m4r/MMM-euro2024)
 
@@ -8535,6 +8534,13 @@ Last update: 2025-03-27T17:37:43+01:00
 7. Recommendation: There ist no CHANGELOG file. It is recommended to add one.
 8. Recommendation: There ist no CODE_OF_CONDUCT file. It is recommended to add one.
 9. Recommendation: Replace eslintrc by new flat config.
+
+### [MMM-PublicTransit by thariq-shanavas](https://github.com/thariq-shanavas/MMM-PublicTransit)
+
+1. Typo: Found `[MagicMirror]` in file `README.md`: Replace it with `[MagicMirror²]`.
+2. Recommendation: Found `"node-fetch"` in file `node_helper.js`: Replace it with built-in fetch.
+3. Recommendation: There ist no CHANGELOG file. It is recommended to add one.
+4. Recommendation: There ist no CODE_OF_CONDUCT file. It is recommended to add one.
 
 ### [MMM-PublicTransportBerlin by deg0nz](https://github.com/deg0nz/MMM-PublicTransportBerlin)
 
