@@ -6129,7 +6129,7 @@
     "issues": [
       "There are no keywords in 'package.json'. We would use them as tags on the module list page."
     ],
-    "stars": 30,
+    "stars": 31,
     "license": "BSD-3-Clause",
     "image": "screenshot.jpg"
   },
@@ -6142,7 +6142,7 @@
     "maintainerURL": "https://github.com/randomBrainstormer",
     "description": "Get your Google Calendars in the shape of MagicMirror's default calendar.",
     "issues": [],
-    "stars": 79,
+    "stars": 80,
     "license": "MIT",
     "tags": [
       "google",
@@ -6183,7 +6183,7 @@
       "There are no keywords in 'package.json'. We would use them as tags on the module list page.",
       "No image found."
     ],
-    "stars": 19,
+    "stars": 20,
     "license": "MIT"
   },
   {
@@ -6232,7 +6232,7 @@
       "There are no keywords in 'package.json'. We would use them as tags on the module list page.",
       "No image found."
     ],
-    "stars": 13,
+    "stars": 14,
     "license": "MIT"
   },
   {
@@ -6248,7 +6248,7 @@
       "No image found.",
       "Repository name and main js file name is not the same."
     ],
-    "stars": 22,
+    "stars": 23,
     "license": "GPL-3.0"
   },
   {
@@ -6292,7 +6292,7 @@
     "maintainerURL": "https://github.com/hermanho",
     "description": "Image gallery or wallpaper with your Google Photos account.",
     "issues": [],
-    "stars": 180,
+    "stars": 181,
     "license": "MIT",
     "tags": [
       "googlephotos"
@@ -6344,7 +6344,7 @@
     "issues": [
       "Repository name and main js file name is not the same."
     ],
-    "stars": 10,
+    "stars": 11,
     "license": "MIT",
     "tags": [
       "scheduler"
@@ -12476,6 +12476,28 @@
       "proposal",
       "ethereum",
       "blockchain"
+    ],
+    "image": "preview.jpg"
+  },
+  {
+    "name": "MMM-NounsTimeline",
+    "category": "Cryptocurrency",
+    "url": "https://github.com/XppaiCyberr/MMM-NounsTimeline",
+    "id": "XppaiCyberr/MMM-NounsTimeline",
+    "maintainer": "XppaiCyberr",
+    "maintainerURL": "",
+    "description": "This module displays a timeline of casts from Nouns Warpcast Channel.",
+    "issues": [
+      "`package.json` issue: No repository field."
+    ],
+    "stars": 0,
+    "license": "MIT",
+    "tags": [
+      "farcaster",
+      "timeline",
+      "warpcast",
+      "nouns",
+      "pinata"
     ],
     "image": "preview.jpg"
   },

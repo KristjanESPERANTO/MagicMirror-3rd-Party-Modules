@@ -1,6 +1,6 @@
 # Result of the module analysis
 
-Last update: 2025-03-29T05:38:18+01:00
+Last update: 2025-03-29T17:37:43+01:00
 
 ## General notes
 
@@ -11,11 +11,11 @@ Last update: 2025-03-29T05:38:18+01:00
 
 |                      | number   |
 |:---------------------|:--------:|
-| modules analyzed     |   1238   |
+| modules analyzed     |   1239   |
 | maintainer           |    661   |
-| modules with issues  |   1236   |
-| issues               |   8850   |
-| modules at github    |   1103   |
+| modules with issues  |   1238   |
+| issues               |   8857   |
+| modules at github    |   1104   |
 | modules at gitlab    |     12   |
 | modules at bitbucket |      1   |
 
@@ -397,7 +397,7 @@ Last update: 2025-03-29T05:38:18+01:00
 
 1. Information: There are updates for 5 dependencie(s):
    - @eslint/js               ^9.22.0  →   ^9.23.0
-   - cspell                   ^8.17.5  →   ^8.18.0
+   - cspell                   ^8.17.5  →   ^8.18.1
    - eslint                   ^9.22.0  →   ^9.23.0
    - eslint-plugin-import-x    ^4.9.0  →    ^4.9.3
    - stylelint               ^16.16.0  →  ^16.17.0
@@ -928,7 +928,7 @@ Last update: 2025-03-29T05:38:18+01:00
    - eslint-config-prettier         ^9.1.0  →    ^10.1.1
    - eslint-plugin-prettier         ^5.2.1  →     ^5.2.5
    - prettier                       ^3.4.2  →     ^3.5.3
-   - rollup                        ^4.29.1  →    ^4.37.0
+   - rollup                        ^4.29.1  →    ^4.38.0
    - rxjs                           ^7.8.1  →     ^7.8.2
    - typescript                     ^5.7.2  →     ^5.8.2
    - typescript-eslint             ^8.18.2  →    ^8.28.0
@@ -1273,7 +1273,7 @@ Last update: 2025-03-29T05:38:18+01:00
 1. Information: There are updates for 7 dependencie(s):
    - @eslint/js               ^9.22.0  →   ^9.23.0
    - @eslint/json             ^0.10.0  →   ^0.11.0
-   - cspell                   ^8.17.5  →   ^8.18.0
+   - cspell                   ^8.17.5  →   ^8.18.1
    - eslint                   ^9.22.0  →   ^9.23.0
    - eslint-plugin-import-x    ^4.6.1  →    ^4.9.3
    - lint-staged              ^15.4.3  →   ^15.5.0
@@ -1303,6 +1303,12 @@ Last update: 2025-03-29T05:38:18+01:00
    - moment          ^2.23.0  →  ^2.30.1
    - prettier         ^3.0.3  →   ^3.5.3
    - tsdav            ^2.0.3  →   ^2.1.3
+
+
+### [MMM-Carousel by shbatm](https://github.com/shbatm/MMM-Carousel)
+
+1. Information: There are updates for 1 dependencie(s):
+   - cspell  ^8.18.0  →  ^8.18.1
 
 
 ### [MMM-CECControl by nischi](https://github.com/nischi/MMM-CECControl)
@@ -2297,7 +2303,7 @@ Last update: 2025-03-29T05:38:18+01:00
 
 1. Information: There are updates for 5 dependencie(s):
    - @eslint/js               ^9.22.0  →   ^9.23.0
-   - cspell                   ^8.17.5  →   ^8.18.0
+   - cspell                   ^8.17.5  →   ^8.18.1
    - eslint                   ^9.22.0  →   ^9.23.0
    - eslint-plugin-import-x    ^4.8.0  →    ^4.9.3
    - stylelint               ^16.16.0  →  ^16.17.0
@@ -3053,7 +3059,7 @@ Last update: 2025-03-29T05:38:18+01:00
 1. Information: There are updates for 6 dependencie(s):
    - @eslint/js               ^9.22.0  →   ^9.23.0
    - @eslint/json             ^0.10.0  →   ^0.11.0
-   - cspell                   ^8.17.5  →   ^8.18.0
+   - cspell                   ^8.17.5  →   ^8.18.1
    - eslint                   ^9.22.0  →   ^9.23.0
    - eslint-plugin-import-x    ^4.6.1  →    ^4.9.3
    - stylelint               ^16.15.0  →  ^16.17.0
@@ -4637,7 +4643,7 @@ Last update: 2025-03-29T05:38:18+01:00
 
 1. Information: There are updates for 4 dependencie(s):
    - @eslint/js              ^9.22.0  →  ^9.23.0
-   - cspell                  ^8.17.5  →  ^8.18.0
+   - cspell                  ^8.17.5  →  ^8.18.1
    - eslint                  ^9.22.0  →  ^9.23.0
    - eslint-plugin-import-x   ^4.8.1  →   ^4.9.3
 
@@ -4894,7 +4900,7 @@ Last update: 2025-03-29T05:38:18+01:00
 2. Information: There are updates for 6 dependencie(s):
    - @eslint/js                ^9.21.0  →  ^9.23.0
    - @stylistic/eslint-plugin   ^4.1.0  →   ^4.2.0
-   - cspell                    ^8.17.5  →  ^8.18.0
+   - cspell                    ^8.17.5  →  ^8.18.1
    - eslint                    ^9.21.0  →  ^9.23.0
    - eslint-plugin-import-x     ^4.6.1  →   ^4.9.3
    - prettier                   ^3.5.2  →   ^3.5.3
@@ -7272,6 +7278,15 @@ Last update: 2025-03-29T05:38:18+01:00
 6. Recommendation: There ist no CODE_OF_CONDUCT file. It is recommended to add one.
 7. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
 
+### [MMM-NounsTimeline by XppaiCyberr](https://github.com/XppaiCyberr/MMM-NounsTimeline)
+
+1. `package.json` issue: No repository field.
+2. Recommendation: Found `axios` in file `node_helper.js`: Replace it with built-in fetch.
+3. Recommendation: Found `axios` in file `package.json`: Replace it with built-in fetch.
+4. Recommendation: There ist no CHANGELOG file. It is recommended to add one.
+5. Recommendation: There ist no CODE_OF_CONDUCT file. It is recommended to add one.
+6. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
+
 ### [MMM-NounsTreasury by XppaiCyberr](https://github.com/XppaiCyberr/MMM-NounsTreasury)
 
 1. Recommendation: Found `axios` in file `README.md`: Replace it with built-in fetch.
@@ -7458,7 +7473,7 @@ Last update: 2025-03-29T05:38:18+01:00
 
 1. Information: There are updates for 5 dependencie(s):
    - @eslint/js               ^9.22.0  →   ^9.23.0
-   - cspell                   ^8.17.5  →   ^8.18.0
+   - cspell                   ^8.17.5  →   ^8.18.1
    - eslint                   ^9.22.0  →   ^9.23.0
    - eslint-plugin-import-x    ^4.8.1  →    ^4.9.3
    - stylelint               ^16.16.0  →  ^16.17.0
@@ -8528,7 +8543,7 @@ Last update: 2025-03-29T05:38:18+01:00
 
 1. Information: There are updates for 6 dependencie(s):
    - @eslint/js               ^9.22.0  →   ^9.23.0
-   - cspell                   ^8.17.5  →   ^8.18.0
+   - cspell                   ^8.17.5  →   ^8.18.1
    - eslint                   ^9.22.0  →   ^9.23.0
    - eslint-plugin-import-x    ^4.7.1  →    ^4.9.3
    - eslint-plugin-jsonc      ^2.19.1  →   ^2.20.0
@@ -8541,7 +8556,7 @@ Last update: 2025-03-29T05:38:18+01:00
 ### [MMM-PublicTransportHafas by KristjanESPERANTO](https://github.com/KristjanESPERANTO/MMM-PublicTransportHafas)
 
 1. Information: There are updates for 3 dependencie(s):
-   - cspell                   ^8.17.5  →   ^8.18.0
+   - cspell                   ^8.17.5  →   ^8.18.1
    - eslint-plugin-import-x    ^4.9.1  →    ^4.9.3
    - stylelint               ^16.16.0  →  ^16.17.0
 
@@ -8929,8 +8944,9 @@ Last update: 2025-03-29T05:38:18+01:00
 ### [MMM-Remote-Control by Jopyth](https://github.com/Jopyth/MMM-Remote-Control)
 
 1. Recommendation: Found `XMLHttpRequest` in file `remote.js`: Replace it with built-in fetch.
-2. Information: There are updates for 2 dependencie(s):
+2. Information: There are updates for 3 dependencie(s):
    - body-parser  ^1.20.3  →   ^2.2.0
+   - cspell       ^8.18.0  →  ^8.18.1
    - swagger-ui   ^5.20.1  →  ^5.20.2
 
 
@@ -11764,7 +11780,7 @@ Last update: 2025-03-29T05:38:18+01:00
 
 1. Information: There are updates for 4 dependencie(s):
    - @eslint/js              ^9.22.0  →  ^9.23.0
-   - cspell                  ^8.17.5  →  ^8.18.0
+   - cspell                  ^8.17.5  →  ^8.18.1
    - eslint                  ^9.22.0  →  ^9.23.0
    - eslint-plugin-import-x   ^4.9.1  →   ^4.9.3
 

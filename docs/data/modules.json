@@ -2275,7 +2275,7 @@
     "maintainer": "shbatm",
     "maintainerURL": "https://github.com/shbatm",
     "description": "Rotate modules, to save space on screen.",
-    "issues": false,
+    "issues": true,
     "stars": 43,
     "license": "MIT",
     "tags": [
@@ -2288,7 +2288,7 @@
       "pages"
     ],
     "image": "img-example1-slide.jpg",
-    "defaultSortWeight": -1,
+    "defaultSortWeight": 0,
     "lastCommit": "2025-03-28T21:55:58+01:00"
   },
   {
@@ -2716,7 +2716,7 @@
     "license": "ISC",
     "image": "doc_images-playground_example.jpg",
     "defaultSortWeight": 5,
-    "lastCommit": "2025-03-27T21:43:54-07:00"
+    "lastCommit": "2025-03-29T07:31:20-07:00"
   },
   {
     "name": "MMM-Confucius-say",
@@ -6186,7 +6186,7 @@
     "maintainerURL": "",
     "description": "Integrate your Google Contact's birthdays in the MagicMirror\u00b2 calendar.",
     "issues": true,
-    "stars": 30,
+    "stars": 31,
     "license": "BSD-3-Clause",
     "image": "screenshot.jpg",
     "defaultSortWeight": 7,
@@ -6201,7 +6201,7 @@
     "maintainerURL": "https://github.com/randomBrainstormer",
     "description": "Get your Google Calendars in the shape of MagicMirror's default calendar.",
     "issues": true,
-    "stars": 79,
+    "stars": 80,
     "license": "MIT",
     "tags": [
       "google",
@@ -6241,7 +6241,7 @@
     "maintainerURL": "https://github.com/No3x",
     "description": "Display notes from a Google Doc.",
     "issues": true,
-    "stars": 19,
+    "stars": 20,
     "license": "MIT",
     "defaultSortWeight": 15,
     "lastCommit": "2023-09-26T20:39:56+02:00"
@@ -6289,7 +6289,7 @@
     "maintainerURL": "",
     "description": "Displays one list from Google Keep.",
     "issues": true,
-    "stars": 13,
+    "stars": 14,
     "license": "MIT",
     "defaultSortWeight": 9,
     "lastCommit": "2024-11-08T21:47:21+01:00"
@@ -6303,7 +6303,7 @@
     "maintainerURL": "",
     "description": "Displays a google map of an origin and destination.",
     "issues": true,
-    "stars": 22,
+    "stars": 23,
     "license": "GPL-3.0",
     "defaultSortWeight": 7,
     "lastCommit": "2016-12-28T23:34:56+02:00"
@@ -6351,7 +6351,7 @@
     "maintainerURL": "https://github.com/hermanho",
     "description": "Image gallery or wallpaper with your Google Photos account.",
     "issues": true,
-    "stars": 180,
+    "stars": 181,
     "license": "MIT",
     "tags": [
       "googlephotos"
@@ -6405,13 +6405,13 @@
     "maintainerURL": "https://github.com/spydersoft-consulting",
     "description": "Display Google Tasks with Planned View.",
     "issues": true,
-    "stars": 10,
+    "stars": 11,
     "license": "MIT",
     "tags": [
       "scheduler"
     ],
     "image": "images-sample.jpg",
-    "defaultSortWeight": 9,
+    "defaultSortWeight": 8,
     "lastCommit": "2024-03-28T10:17:32-04:00"
   },
   {
@@ -12567,6 +12567,28 @@
     "image": "preview.jpg",
     "defaultSortWeight": 6,
     "lastCommit": "2025-03-25T00:50:48+07:00"
+  },
+  {
+    "name": "MMM-NounsTimeline",
+    "category": "Cryptocurrency",
+    "url": "https://github.com/XppaiCyberr/MMM-NounsTimeline",
+    "id": "XppaiCyberr/MMM-NounsTimeline",
+    "maintainer": "XppaiCyberr",
+    "maintainerURL": "",
+    "description": "This module displays a timeline of casts from Nouns Warpcast Channel.",
+    "issues": true,
+    "stars": 0,
+    "license": "MIT",
+    "tags": [
+      "farcaster",
+      "timeline",
+      "warpcast",
+      "nouns",
+      "pinata"
+    ],
+    "image": "preview.jpg",
+    "defaultSortWeight": 5,
+    "lastCommit": "2025-03-29T02:54:57+07:00"
   },
   {
     "name": "MMM-NounsTreasury",

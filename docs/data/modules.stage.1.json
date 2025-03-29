@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "2025-03-29T04:30:09.857Z",
+  "lastUpdate": "2025-03-29T16:30:07.719Z",
   "modules": [
     {
       "name": "MMM-01ZM",
@@ -7573,6 +7573,16 @@
       "maintainer": "XppaiCyberr",
       "maintainerURL": "",
       "description": "This module displays recent Nouns DAO governance proposals with voting information.",
+      "issues": []
+    },
+    {
+      "name": "MMM-NounsTimeline",
+      "category": "Cryptocurrency",
+      "url": "https://github.com/XppaiCyberr/MMM-NounsTimeline",
+      "id": "XppaiCyberr/MMM-NounsTimeline",
+      "maintainer": "XppaiCyberr",
+      "maintainerURL": "",
+      "description": "This module displays a timeline of casts from Nouns Warpcast Channel.",
       "issues": []
     },
     {

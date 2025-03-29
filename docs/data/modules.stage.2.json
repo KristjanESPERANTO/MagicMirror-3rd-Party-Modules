@@ -4433,7 +4433,7 @@
     "maintainerURL": "",
     "description": "Integrate your Google Contact's birthdays in the MagicMirror² calendar.",
     "issues": [],
-    "stars": 30,
+    "stars": 31,
     "license": "BSD-3-Clause"
   },
   {
@@ -4445,7 +4445,7 @@
     "maintainerURL": "https://github.com/randomBrainstormer",
     "description": "Get your Google Calendars in the shape of MagicMirror's default calendar.",
     "issues": [],
-    "stars": 79,
+    "stars": 80,
     "license": "MIT"
   },
   {
@@ -4469,7 +4469,7 @@
     "maintainerURL": "https://github.com/No3x",
     "description": "Display notes from a Google Doc.",
     "issues": [],
-    "stars": 19,
+    "stars": 20,
     "license": "MIT"
   },
   {
@@ -4506,7 +4506,7 @@
     "maintainerURL": "",
     "description": "Displays one list from Google Keep.",
     "issues": [],
-    "stars": 13,
+    "stars": 14,
     "license": "MIT"
   },
   {
@@ -4518,7 +4518,7 @@
     "maintainerURL": "",
     "description": "Displays a google map of an origin and destination.",
     "issues": [],
-    "stars": 22,
+    "stars": 23,
     "license": "GPL-3.0"
   },
   {
@@ -4554,7 +4554,7 @@
     "maintainerURL": "https://github.com/hermanho",
     "description": "Image gallery or wallpaper with your Google Photos account.",
     "issues": [],
-    "stars": 180,
+    "stars": 181,
     "license": "MIT"
   },
   {
@@ -4591,7 +4591,7 @@
     "maintainerURL": "https://github.com/spydersoft-consulting",
     "description": "Display Google Tasks with Planned View.",
     "issues": [],
-    "stars": 10,
+    "stars": 11,
     "license": "MIT"
   },
   {
@@ -8954,6 +8954,18 @@
     "maintainer": "XppaiCyberr",
     "maintainerURL": "",
     "description": "This module displays recent Nouns DAO governance proposals with voting information.",
+    "issues": [],
+    "stars": 0,
+    "license": "MIT"
+  },
+  {
+    "name": "MMM-NounsTimeline",
+    "category": "Cryptocurrency",
+    "url": "https://github.com/XppaiCyberr/MMM-NounsTimeline",
+    "id": "XppaiCyberr/MMM-NounsTimeline",
+    "maintainer": "XppaiCyberr",
+    "maintainerURL": "",
+    "description": "This module displays a timeline of casts from Nouns Warpcast Channel.",
     "issues": [],
     "stars": 0,
     "license": "MIT"

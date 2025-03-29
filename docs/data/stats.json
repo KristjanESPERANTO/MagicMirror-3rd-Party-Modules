@@ -1,11 +1,11 @@
 {
-  "moduleCounter": 1238,
-  "modulesWithImageCounter": 872,
-  "modulesWithIssuesCounter": 1236,
-  "issueCounter": 8850,
-  "lastUpdate": "2025-03-29T05:38:18+01:00",
+  "moduleCounter": 1239,
+  "modulesWithImageCounter": 873,
+  "modulesWithIssuesCounter": 1238,
+  "issueCounter": 8857,
+  "lastUpdate": "2025-03-29T17:37:43+01:00",
   "repositoryHoster": {
-    "github": 1103,
+    "github": 1104,
     "gitlab": 12,
     "bitbucket": 1
   },
@@ -30,6 +30,7 @@
     "cgillinger": 6,
     "parnic": 6,
     "buxxi": 6,
+    "XppaiCyberr": 6,
     "htilburgs": 6,
     "slametps": 6,
     "PierreGode": 5,
@@ -41,7 +42,6 @@
     "AdamMoses-GitHub": 5,
     "eckonator": 5,
     "Snille": 5,
-    "XppaiCyberr": 5,
     "cowboysdude": 4,
     "ItsMeBrille": 4,
     "yourdawi": 4,
