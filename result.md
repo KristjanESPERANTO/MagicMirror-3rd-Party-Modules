@@ -1,6 +1,6 @@
 # Result of the module analysis
 
-Last update: 2025-03-28T17:37:31+01:00
+Last update: 2025-03-29T05:38:18+01:00
 
 ## General notes
 
@@ -13,8 +13,8 @@ Last update: 2025-03-28T17:37:31+01:00
 |:---------------------|:--------:|
 | modules analyzed     |   1238   |
 | maintainer           |    661   |
-| modules with issues  |   1237   |
-| issues               |   8857   |
+| modules with issues  |   1236   |
+| issues               |   8850   |
 | modules at github    |   1103   |
 | modules at gitlab    |     12   |
 | modules at bitbucket |      1   |
@@ -1303,19 +1303,6 @@ Last update: 2025-03-28T17:37:31+01:00
    - moment          ^2.23.0  →  ^2.30.1
    - prettier         ^3.0.3  →   ^3.5.3
    - tsdav            ^2.0.3  →   ^2.1.3
-
-
-### [MMM-Carousel by shbatm](https://github.com/shbatm/MMM-Carousel)
-
-1. Recommendation: Found `prettier/prettier` in file `stylelint.config.mjs`: Config would be cleaner using 'stylelint-prettier/recommended'. See (https://github.com/prettier/stylelint-prettier).
-2. Information: There are updates for 7 dependencie(s):
-   - @eslint/js                 ^9.21.0  →   ^9.23.0
-   - @stylistic/eslint-plugin    ^4.1.0  →    ^4.2.0
-   - cspell                     ^8.17.5  →   ^8.18.0
-   - eslint                     ^9.21.0  →   ^9.23.0
-   - eslint-plugin-import-x      ^4.6.1  →    ^4.9.3
-   - prettier                    ^3.5.2  →    ^3.5.3
-   - stylelint                 ^16.15.0  →  ^16.17.0
 
 
 ### [MMM-CECControl by nischi](https://github.com/nischi/MMM-CECControl)
@@ -6603,14 +6590,12 @@ Last update: 2025-03-28T17:37:31+01:00
 
 ### [MMM-MyScoreboard by dathbe](https://github.com/dathbe/MMM-MyScoreboard)
 
-1. Deprecated: Found `"lockfileVersion": 2` in file `package-lock.json`: Run `npm update` to update to lockfileVersion 3.
+1. An error occurred while getting information from 'package.json': Error: Invalid version: "4"
 2. Recommendation: Found `axios` in file `package.json`: Replace it with built-in fetch.
 3. Recommendation: Found `axios` in file `ESPN.js`: Replace it with built-in fetch.
 4. Recommendation: Found `axios` in file `SNET.js`: Replace it with built-in fetch.
 5. Recommendation: Found `axios` in file `SNET_YD.js`: Replace it with built-in fetch.
-6. Recommendation: There ist no CHANGELOG file. It is recommended to add one.
-7. Recommendation: There ist no CODE_OF_CONDUCT file. It is recommended to add one.
-8. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
+6. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
 
 ### [MMM-MySenseHat by framboise-pi](https://github.com/framboise-pi/MMM-MySenseHat)
 
@@ -6647,13 +6632,10 @@ Last update: 2025-03-28T17:37:31+01:00
 
 ### [MMM-MyStandings by dathbe](https://github.com/dathbe/MMM-MyStandings)
 
-1. `package.json` issue: No license field.
+1. An error occurred while getting information from 'package.json': Error: Invalid version: "2"
 2. Recommendation: Found `axios` in file `node_helper.js`: Replace it with built-in fetch.
 3. Recommendation: Found `axios` in file `package.json`: Replace it with built-in fetch.
-4. Warning: No LICENSE file.
-5. Recommendation: There ist no CHANGELOG file. It is recommended to add one.
-6. Recommendation: There ist no CODE_OF_CONDUCT file. It is recommended to add one.
-7. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
+4. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
 
 ### [MMM-MyStudyLife by ethanpartida](https://github.com/ethanpartida/MMM-MyStudyLife)
 

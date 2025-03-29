@@ -5390,7 +5390,7 @@
     "maintainerURL": "",
     "description": "Display the driver standings from the current Formula 1 season.",
     "issues": [],
-    "stars": 35,
+    "stars": 37,
     "license": "MIT",
     "tags": [
       "formula1"
@@ -5679,7 +5679,7 @@
       "There are no keywords in 'package.json'. We would use them as tags on the module list page.",
       "Issue: The license in the package.json (ISC) doesn't match the license file (MIT)."
     ],
-    "stars": 7,
+    "stars": 5,
     "license": "MIT",
     "image": "examples-example.jpg"
   },
@@ -5823,7 +5823,7 @@
     "issues": [
       "There are no keywords in 'package.json'. We would use them as tags on the module list page."
     ],
-    "stars": 4,
+    "stars": 5,
     "license": "MIT",
     "image": "doc-screenshot-MMM-GConnect.jpg"
   },
@@ -7520,7 +7520,7 @@
       "Issue: The license in the package.json (ISC) doesn't match the license file (MIT).",
       "No image found."
     ],
-    "stars": 2,
+    "stars": 3,
     "license": "MIT"
   },
   {
@@ -11224,13 +11224,11 @@
     "maintainer": "dathbe",
     "maintainerURL": "",
     "description": "Display today's scores for your favourite teams across multiple sports.",
-    "issues": [],
+    "issues": [
+      "An error occurred while getting information from 'package.json': Error: Invalid version: \"4\""
+    ],
     "stars": 3,
     "license": "MIT",
-    "tags": [
-      "sports",
-      "sports"
-    ],
     "image": "example.jpg"
   },
   {
@@ -11293,14 +11291,11 @@
     "maintainerURL": "",
     "description": "Display ESPN standings for major US Sports and international soccer leagues.",
     "issues": [
-      "`package.json` issue: No license field."
+      "An error occurred while getting information from 'package.json': Error: Invalid version: \"2\""
     ],
     "stars": 2,
-    "tags": [
-      "sports",
-      "sports",
-      "standings"
-    ]
+    "license": "MIT",
+    "image": "screenshot.jpg"
   },
   {
     "name": "MMM-MyStudyLife",

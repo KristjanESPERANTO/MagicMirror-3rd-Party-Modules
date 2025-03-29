@@ -3908,7 +3908,7 @@
     "maintainerURL": "",
     "description": "Display the driver standings from the current Formula 1 season.",
     "issues": [],
-    "stars": 35,
+    "stars": 37,
     "license": "MIT"
   },
   {
@@ -4112,7 +4112,7 @@
     "maintainerURL": "https://github.com/jboucly",
     "description": "Displays images from an FTP server with a display delay.",
     "issues": [],
-    "stars": 7,
+    "stars": 5,
     "license": "MIT"
   },
   {
@@ -4217,7 +4217,7 @@
     "maintainerURL": "https://github.com/tderflinger",
     "description": "Display sports data from your Garmin Connect(tm) account.",
     "issues": [],
-    "stars": 4,
+    "stars": 5,
     "license": "MIT"
   },
   {
@@ -5460,7 +5460,7 @@
     "maintainerURL": "",
     "description": "A simple way to cycle through a list of iframe sources. Example shows live video sources from YouTube and other webcam sources.",
     "issues": [],
-    "stars": 2,
+    "stars": 3,
     "license": "MIT"
   },
   {
