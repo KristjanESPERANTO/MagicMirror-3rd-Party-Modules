@@ -6346,7 +6346,7 @@
     "maintainerURL": "https://github.com/jacopo1891",
     "description": "Lists travel times to requested locations taking into account Google traffic information with \"classic view\".",
     "issues": [],
-    "stars": 18,
+    "stars": 19,
     "tags": [
       "traffic",
       "googlemap"
@@ -6703,7 +6703,7 @@
     "description": "Hide/Show individual modules and pages of modules with custom audio responses that you create.",
     "issues": [],
     "outdated": "Abandoned. No reactions to issues since years. The installation instructions do not work with up-to-date systems.",
-    "stars": 44,
+    "stars": 45,
     "license": "MIT",
     "tags": [
       "voice recognition",

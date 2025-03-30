@@ -1,6 +1,6 @@
 # Result of the module analysis
 
-Last update: 2025-03-29T17:37:43+01:00
+Last update: 2025-03-30T05:37:32+02:00
 
 ## General notes
 
@@ -399,7 +399,7 @@ Last update: 2025-03-29T17:37:43+01:00
    - @eslint/js               ^9.22.0  →   ^9.23.0
    - cspell                   ^8.17.5  →   ^8.18.1
    - eslint                   ^9.22.0  →   ^9.23.0
-   - eslint-plugin-import-x    ^4.9.0  →    ^4.9.3
+   - eslint-plugin-import-x    ^4.9.0  →    ^4.9.4
    - stylelint               ^16.16.0  →  ^16.17.0
 
 
@@ -1122,7 +1122,7 @@ Last update: 2025-03-29T17:37:43+01:00
 2. Information: There are updates for 6 dependencie(s):
    - @eslint/js               ^9.22.0  →   ^9.23.0
    - eslint                   ^9.22.0  →   ^9.23.0
-   - eslint-plugin-import-x    ^4.6.1  →    ^4.9.3
+   - eslint-plugin-import-x    ^4.6.1  →    ^4.9.4
    - eslint-plugin-jsonc      ^2.19.1  →   ^2.20.0
    - moment-timezone          ^0.5.47  →   ^0.5.48
    - stylelint               ^16.15.0  →  ^16.17.0
@@ -1275,7 +1275,7 @@ Last update: 2025-03-29T17:37:43+01:00
    - @eslint/json             ^0.10.0  →   ^0.11.0
    - cspell                   ^8.17.5  →   ^8.18.1
    - eslint                   ^9.22.0  →   ^9.23.0
-   - eslint-plugin-import-x    ^4.6.1  →    ^4.9.3
+   - eslint-plugin-import-x    ^4.6.1  →    ^4.9.4
    - lint-staged              ^15.4.3  →   ^15.5.0
    - stylelint               ^16.15.0  →  ^16.17.0
 
@@ -1307,8 +1307,9 @@ Last update: 2025-03-29T17:37:43+01:00
 
 ### [MMM-Carousel by shbatm](https://github.com/shbatm/MMM-Carousel)
 
-1. Information: There are updates for 1 dependencie(s):
-   - cspell  ^8.18.0  →  ^8.18.1
+1. Information: There are updates for 2 dependencie(s):
+   - cspell                  ^8.18.0  →  ^8.18.1
+   - eslint-plugin-import-x   ^4.9.3  →   ^4.9.4
 
 
 ### [MMM-CECControl by nischi](https://github.com/nischi/MMM-CECControl)
@@ -2305,7 +2306,7 @@ Last update: 2025-03-29T17:37:43+01:00
    - @eslint/js               ^9.22.0  →   ^9.23.0
    - cspell                   ^8.17.5  →   ^8.18.1
    - eslint                   ^9.22.0  →   ^9.23.0
-   - eslint-plugin-import-x    ^4.8.0  →    ^4.9.3
+   - eslint-plugin-import-x    ^4.8.0  →    ^4.9.4
    - stylelint               ^16.16.0  →  ^16.17.0
 
 
@@ -3061,7 +3062,7 @@ Last update: 2025-03-29T17:37:43+01:00
    - @eslint/json             ^0.10.0  →   ^0.11.0
    - cspell                   ^8.17.5  →   ^8.18.1
    - eslint                   ^9.22.0  →   ^9.23.0
-   - eslint-plugin-import-x    ^4.6.1  →    ^4.9.3
+   - eslint-plugin-import-x    ^4.6.1  →    ^4.9.4
    - stylelint               ^16.15.0  →  ^16.17.0
 
 
@@ -4645,7 +4646,7 @@ Last update: 2025-03-29T17:37:43+01:00
    - @eslint/js              ^9.22.0  →  ^9.23.0
    - cspell                  ^8.17.5  →  ^8.18.1
    - eslint                  ^9.22.0  →  ^9.23.0
-   - eslint-plugin-import-x   ^4.8.1  →   ^4.9.3
+   - eslint-plugin-import-x   ^4.8.1  →   ^4.9.4
 
 
 ### [MMM-ISS-Map by khassel](https://gitlab.com/khassel/MMM-ISS-Map)
@@ -4902,7 +4903,7 @@ Last update: 2025-03-29T17:37:43+01:00
    - @stylistic/eslint-plugin   ^4.1.0  →   ^4.2.0
    - cspell                    ^8.17.5  →  ^8.18.1
    - eslint                    ^9.21.0  →  ^9.23.0
-   - eslint-plugin-import-x     ^4.6.1  →   ^4.9.3
+   - eslint-plugin-import-x     ^4.6.1  →   ^4.9.4
    - prettier                   ^3.5.2  →   ^3.5.3
 
 
@@ -7475,7 +7476,7 @@ Last update: 2025-03-29T17:37:43+01:00
    - @eslint/js               ^9.22.0  →   ^9.23.0
    - cspell                   ^8.17.5  →   ^8.18.1
    - eslint                   ^9.22.0  →   ^9.23.0
-   - eslint-plugin-import-x    ^4.8.1  →    ^4.9.3
+   - eslint-plugin-import-x    ^4.8.1  →    ^4.9.4
    - stylelint               ^16.16.0  →  ^16.17.0
 
 
@@ -8545,7 +8546,7 @@ Last update: 2025-03-29T17:37:43+01:00
    - @eslint/js               ^9.22.0  →   ^9.23.0
    - cspell                   ^8.17.5  →   ^8.18.1
    - eslint                   ^9.22.0  →   ^9.23.0
-   - eslint-plugin-import-x    ^4.7.1  →    ^4.9.3
+   - eslint-plugin-import-x    ^4.7.1  →    ^4.9.4
    - eslint-plugin-jsonc      ^2.19.1  →   ^2.20.0
    - stylelint               ^16.16.0  →  ^16.17.0
 
@@ -8557,7 +8558,7 @@ Last update: 2025-03-29T17:37:43+01:00
 
 1. Information: There are updates for 3 dependencie(s):
    - cspell                   ^8.17.5  →   ^8.18.1
-   - eslint-plugin-import-x    ^4.9.1  →    ^4.9.3
+   - eslint-plugin-import-x    ^4.9.1  →    ^4.9.4
    - stylelint               ^16.16.0  →  ^16.17.0
 
 
@@ -8944,10 +8945,11 @@ Last update: 2025-03-29T17:37:43+01:00
 ### [MMM-Remote-Control by Jopyth](https://github.com/Jopyth/MMM-Remote-Control)
 
 1. Recommendation: Found `XMLHttpRequest` in file `remote.js`: Replace it with built-in fetch.
-2. Information: There are updates for 3 dependencie(s):
-   - body-parser  ^1.20.3  →   ^2.2.0
-   - cspell       ^8.18.0  →  ^8.18.1
-   - swagger-ui   ^5.20.1  →  ^5.20.2
+2. Information: There are updates for 4 dependencie(s):
+   - body-parser             ^1.20.3  →   ^2.2.0
+   - cspell                  ^8.18.0  →  ^8.18.1
+   - eslint-plugin-import-x   ^4.9.3  →   ^4.9.4
+   - swagger-ui              ^5.20.1  →  ^5.20.2
 
 
 ### [MMM-RemoteCompliments by mitchelltmarino](https://github.com/mitchelltmarino/MMM-RemoteCompliments)
@@ -11782,7 +11784,7 @@ Last update: 2025-03-29T17:37:43+01:00
    - @eslint/js              ^9.22.0  →  ^9.23.0
    - cspell                  ^8.17.5  →  ^8.18.1
    - eslint                  ^9.22.0  →  ^9.23.0
-   - eslint-plugin-import-x   ^4.9.1  →   ^4.9.3
+   - eslint-plugin-import-x   ^4.9.1  →   ^4.9.4
 
 
 ### [MMM-Webuntis by HeikoGr](https://github.com/HeikoGr/MMM-Webuntis)
