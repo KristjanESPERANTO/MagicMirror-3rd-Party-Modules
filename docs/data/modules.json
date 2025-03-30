@@ -2712,7 +2712,7 @@
     "maintainerURL": "",
     "description": "Form based (in browser) configuration for MagicMirror and modules.",
     "issues": true,
-    "stars": 33,
+    "stars": 36,
     "license": "ISC",
     "image": "doc_images-playground_example.jpg",
     "defaultSortWeight": 5,
@@ -6845,7 +6845,7 @@
     "maintainerURL": "https://github.com/Snille",
     "description": "Hide everything on screen. With a lot of features and customizations.",
     "issues": true,
-    "stars": 2,
+    "stars": 3,
     "hasGithubIssues": false,
     "defaultSortWeight": 14,
     "lastCommit": "2021-04-10T19:22:29+02:00"
@@ -7010,7 +7010,7 @@
     "maintainerURL": "https://github.com/Snille",
     "description": "Fork of leinich module. Many new features added. Display information from Home Assistant using the home assistant REST API.",
     "issues": true,
-    "stars": 63,
+    "stars": 64,
     "license": "MIT",
     "tags": [
       "home assistant",
@@ -7059,7 +7059,7 @@
     "maintainerURL": "https://github.com/wonderslug",
     "description": "Displays information from Home Assistant using Home Assistant Templates to render any HTML you want for the module. Includes support for Material Design Icons, Websockets for fast updating, and auto reconnect on Home Assistant restarts. Allows you to show or hide a whole module based on a Home Assistant Template as well.",
     "issues": true,
-    "stars": 100,
+    "stars": 101,
     "license": "MIT",
     "tags": [
       "home assistant"
@@ -7242,7 +7242,7 @@
     "maintainerURL": "",
     "description": "Include arbitrary HTML snippets in an iframe (script tags work).",
     "issues": true,
-    "stars": 15,
+    "stars": 16,
     "license": "GPL-3.0",
     "image": "HTMLSnippet-screenshot-grafana.jpg",
     "defaultSortWeight": 4,
@@ -7682,7 +7682,7 @@
     ],
     "image": ".github-animate.jpg",
     "defaultSortWeight": 6,
-    "lastCommit": "2025-03-24T07:11:26-07:00"
+    "lastCommit": "2025-03-29T20:41:44-07:00"
   },
   {
     "name": "MMM-imhdsk",
