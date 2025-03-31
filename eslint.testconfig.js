@@ -1,14 +1,14 @@
 import eslintPluginDepend from "eslint-plugin-depend";
 import eslintPluginImport from "eslint-plugin-import";
 import eslintPluginJs from "@eslint/js";
-import eslintPluginPackageJson from "eslint-plugin-package-json/configs/recommended";
+import eslintPluginPackageJson from "eslint-plugin-package-json";
 import globals from "globals";
 
 const config = [
   eslintPluginDepend.configs["flat/recommended"],
   eslintPluginImport.flatConfigs.recommended,
   eslintPluginJs.configs.recommended,
-  eslintPluginPackageJson,
+  eslintPluginPackageJson.configs.recommended,
   {
     "ignores": ["**/*.min.js"]
   },

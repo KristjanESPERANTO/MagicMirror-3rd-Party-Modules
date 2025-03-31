@@ -2,7 +2,7 @@ import eslintPluginDepend from "eslint-plugin-depend";
 import eslintPluginImport from "eslint-plugin-import";
 import eslintPluginJs from "@eslint/js";
 import eslintPluginJson from "@eslint/json";
-import eslintPluginPackageJson from "eslint-plugin-package-json/configs/recommended";
+import eslintPluginPackageJson from "eslint-plugin-package-json";
 import eslintPluginStylistic from "@stylistic/eslint-plugin";
 import globals from "globals";
 
@@ -10,6 +10,7 @@ const config = [
   eslintPluginDepend.configs["flat/recommended"],
   eslintPluginImport.flatConfigs.recommended,
   eslintPluginJs.configs.all,
+  eslintPluginPackageJson.configs.recommended,
   {
     "ignores": [
       "modules/*",
@@ -40,11 +41,10 @@ const config = [
       "sourceType": "module"
     },
     "plugins": {
-      ...eslintPluginStylistic.configs["all-flat"].plugins
+      ...eslintPluginStylistic.configs.all.plugins
     },
     "rules": {
-      ...eslintPluginJs.configs.all.rules,
-      ...eslintPluginStylistic.configs["all-flat"].rules,
+      ...eslintPluginStylistic.configs.all.rules,
       "complexity": "off",
       "depend/ban-dependencies": ["error", {"allowed": ["moment", "eslint-plugin-import"]}],
       "func-style": "off",
@@ -78,9 +78,7 @@ const config = [
   },
   {
     "files": ["**/package.json"],
-    ...eslintPluginPackageJson,
     "rules": {
-      ...eslintPluginPackageJson.rules,
       "package-json/sort-collections": "off"
     }
   }
