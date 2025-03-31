@@ -7915,7 +7915,7 @@
       "There is no `package.json`. We need this file to gather information about the module for the module list page.",
       "No image found."
     ],
-    "stars": 25,
+    "stars": 26,
     "license": "MIT"
   },
   {
@@ -11298,11 +11298,13 @@
     "maintainer": "dathbe",
     "maintainerURL": "",
     "description": "Display today's scores for your favourite teams across multiple sports.",
-    "issues": [
-      "An error occurred while getting information from 'package.json': Error: Invalid version: \"4\""
-    ],
+    "issues": [],
     "stars": 3,
     "license": "MIT",
+    "tags": [
+      "sports",
+      "sports"
+    ],
     "image": "example.jpg"
   },
   {

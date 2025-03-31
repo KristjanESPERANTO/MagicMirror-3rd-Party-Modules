@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "2025-03-31T15:30:23.142Z",
+  "lastUpdate": "2025-03-31T22:16:56.736Z",
   "repositories": [
     {
       "id": "0lek/MMM-socialbicycles",
@@ -73,7 +73,7 @@
     },
     {
       "id": "2hdlockness/MMM-IronManGIF",
-      "gitHubDataLastUpdate": "2025-03-11T16:30:20.659Z",
+      "gitHubDataLastUpdate": "2025-03-31T22:16:45.774Z",
       "gitHubData": {
         "issues": 0,
         "stars": 4,
@@ -255,7 +255,7 @@
     },
     {
       "id": "aduyng/MMM-IOTStatus",
-      "gitHubDataLastUpdate": "2025-03-11T16:30:17.564Z",
+      "gitHubDataLastUpdate": "2025-03-31T22:16:42.744Z",
       "gitHubData": {
         "issues": 2,
         "stars": 12,
@@ -283,7 +283,7 @@
     },
     {
       "id": "aegis1980/MMM-jokes",
-      "gitHubDataLastUpdate": "2025-03-11T20:10:29.153Z",
+      "gitHubDataLastUpdate": "2025-03-31T22:16:54.063Z",
       "gitHubData": {
         "issues": 0,
         "stars": 1,
@@ -605,7 +605,7 @@
     },
     {
       "id": "amcolash/MMM-json-feed",
-      "gitHubDataLastUpdate": "2025-03-11T20:10:30.380Z",
+      "gitHubDataLastUpdate": "2025-03-31T22:16:55.190Z",
       "gitHubData": {
         "issues": 4,
         "stars": 17,
@@ -1697,7 +1697,7 @@
     },
     {
       "id": "BrianHepler/internet-monitor",
-      "gitHubDataLastUpdate": "2025-03-11T16:30:16.666Z",
+      "gitHubDataLastUpdate": "2025-03-31T22:16:41.651Z",
       "gitHubData": {
         "issues": 0,
         "stars": 9,
@@ -3209,7 +3209,7 @@
     },
     {
       "id": "DanielHabenicht/MMM-json",
-      "gitHubDataLastUpdate": "2025-03-11T20:10:29.762Z",
+      "gitHubDataLastUpdate": "2025-03-31T22:16:54.637Z",
       "gitHubData": {
         "issues": 3,
         "stars": 16,
@@ -3265,7 +3265,7 @@
     },
     {
       "id": "daterrell/MMM-ISS",
-      "gitHubDataLastUpdate": "2025-03-11T16:30:21.110Z",
+      "gitHubDataLastUpdate": "2025-03-31T22:16:46.239Z",
       "gitHubData": {
         "issues": 0,
         "stars": 9,
@@ -4609,7 +4609,7 @@
     },
     {
       "id": "fering3/MMM-JEOPARDY-Enhanced",
-      "gitHubDataLastUpdate": "2025-03-11T16:30:24.922Z",
+      "gitHubDataLastUpdate": "2025-03-31T22:16:50.632Z",
       "gitHubData": {
         "issues": 1,
         "stars": 2,
@@ -4651,7 +4651,7 @@
     },
     {
       "id": "fewieden/MMM-ip",
-      "gitHubDataLastUpdate": "2025-03-11T16:30:18.154Z",
+      "gitHubDataLastUpdate": "2025-03-31T22:16:43.230Z",
       "gitHubData": {
         "issues": 3,
         "stars": 27,
@@ -6023,7 +6023,7 @@
     },
     {
       "id": "ioBroker/MMM-ioBroker",
-      "gitHubDataLastUpdate": "2025-03-11T16:30:17.180Z",
+      "gitHubDataLastUpdate": "2025-03-31T22:16:42.293Z",
       "gitHubData": {
         "issues": 7,
         "stars": 19,
@@ -6289,7 +6289,7 @@
     },
     {
       "id": "jalibu/MMM-Jast",
-      "gitHubDataLastUpdate": "2025-03-11T16:30:23.951Z",
+      "gitHubDataLastUpdate": "2025-03-31T22:16:49.663Z",
       "gitHubData": {
         "issues": 5,
         "stars": 69,
@@ -6821,7 +6821,7 @@
     },
     {
       "id": "jirsis/JIR-tarifa-luz",
-      "gitHubDataLastUpdate": "2025-03-11T16:30:25.845Z",
+      "gitHubDataLastUpdate": "2025-03-31T22:16:51.691Z",
       "gitHubData": {
         "issues": 1,
         "stars": 2,
@@ -7759,7 +7759,7 @@
     },
     {
       "id": "Kreshnik/MMM-JokeAPI",
-      "gitHubDataLastUpdate": "2025-03-11T16:30:27.402Z",
+      "gitHubDataLastUpdate": "2025-03-31T22:16:53.450Z",
       "gitHubData": {
         "issues": 3,
         "stars": 11,
@@ -7829,7 +7829,7 @@
     },
     {
       "id": "KristjanESPERANTO/MMM-ISS-Live",
-      "gitHubDataLastUpdate": "2025-03-11T16:30:22.001Z",
+      "gitHubDataLastUpdate": "2025-03-31T22:16:47.512Z",
       "gitHubData": {
         "issues": 0,
         "stars": 7,
@@ -7838,7 +7838,7 @@
         "disabled": false,
         "defaultBranch": "main",
         "has_issues": true,
-        "lastCommit": "2025-02-27T18:09:07Z"
+        "lastCommit": "2025-03-18T21:08:43Z"
       }
     },
     {
@@ -9089,7 +9089,7 @@
     },
     {
       "id": "michgue/MMM-JNV",
-      "gitHubDataLastUpdate": "2025-03-11T16:30:26.938Z",
+      "gitHubDataLastUpdate": "2025-03-31T22:16:52.940Z",
       "gitHubData": {
         "issues": 1,
         "stars": 1,
@@ -10517,7 +10517,7 @@
     },
     {
       "id": "mykle1/MMM-ISS",
-      "gitHubDataLastUpdate": "2025-03-11T16:30:21.555Z",
+      "gitHubDataLastUpdate": "2025-03-31T22:16:46.799Z",
       "gitHubData": {
         "issues": 0,
         "stars": 15,
@@ -11371,7 +11371,7 @@
     },
     {
       "id": "nomis6432/MMM-jitsi",
-      "gitHubDataLastUpdate": "2025-03-11T16:30:26.324Z",
+      "gitHubDataLastUpdate": "2025-03-31T22:16:52.424Z",
       "gitHubData": {
         "issues": 0,
         "stars": 2,
@@ -11791,7 +11791,7 @@
     },
     {
       "id": "PavlenkoM/MMM-IQAir",
-      "gitHubDataLastUpdate": "2025-03-11T16:30:20.165Z",
+      "gitHubDataLastUpdate": "2025-03-31T22:16:45.257Z",
       "gitHubData": {
         "issues": 0,
         "stars": 1,
@@ -11847,7 +11847,7 @@
     },
     {
       "id": "Pejjo/MMM-CrisisInformationSweden",
-      "gitHubDataLastUpdate": "2025-03-11T16:30:19.664Z",
+      "gitHubDataLastUpdate": "2025-03-31T22:16:44.752Z",
       "gitHubData": {
         "issues": 0,
         "stars": 1,
@@ -12169,7 +12169,7 @@
     },
     {
       "id": "prysme01/MMM-Jeedom",
-      "gitHubDataLastUpdate": "2025-03-11T16:30:24.436Z",
+      "gitHubDataLastUpdate": "2025-03-31T22:16:50.157Z",
       "gitHubData": {
         "issues": 0,
         "stars": 18,
@@ -12561,10 +12561,10 @@
     },
     {
       "id": "RedNax67/MMM-IPCam",
-      "gitHubDataLastUpdate": "2025-03-11T16:30:18.587Z",
+      "gitHubDataLastUpdate": "2025-03-31T22:16:43.680Z",
       "gitHubData": {
         "issues": 6,
-        "stars": 25,
+        "stars": 26,
         "license": "MIT",
         "archived": false,
         "disabled": false,
@@ -13331,7 +13331,7 @@
     },
     {
       "id": "seb-ma/MMM-IT8951",
-      "gitHubDataLastUpdate": "2025-03-11T16:30:23.074Z",
+      "gitHubDataLastUpdate": "2025-03-31T22:16:48.692Z",
       "gitHubData": {
         "issues": 0,
         "stars": 5,
@@ -13471,7 +13471,7 @@
     },
     {
       "id": "shbatm/MMM-ISY",
-      "gitHubDataLastUpdate": "2025-03-11T16:30:22.661Z",
+      "gitHubDataLastUpdate": "2025-03-31T22:16:48.157Z",
       "gitHubData": {
         "issues": 1,
         "stars": 8,
@@ -13485,7 +13485,7 @@
     },
     {
       "id": "shbatm/MMM-JSONStatusChecker",
-      "gitHubDataLastUpdate": "2025-03-11T20:10:31.712Z",
+      "gitHubDataLastUpdate": "2025-03-31T22:16:56.163Z",
       "gitHubData": {
         "issues": 13,
         "stars": 7,
@@ -15193,7 +15193,7 @@
     },
     {
       "id": "timdows/MMM-JsonGraph",
-      "gitHubDataLastUpdate": "2025-03-11T20:10:30.994Z",
+      "gitHubDataLastUpdate": "2025-03-31T22:16:55.701Z",
       "gitHubData": {
         "issues": 1,
         "stars": 4,
@@ -15207,7 +15207,7 @@
     },
     {
       "id": "timdows/MMM-JsonTable",
-      "gitHubDataLastUpdate": "2025-03-11T20:10:32.221Z",
+      "gitHubDataLastUpdate": "2025-03-31T22:16:56.695Z",
       "gitHubData": {
         "issues": 7,
         "stars": 27,
@@ -16005,7 +16005,7 @@
     },
     {
       "id": "uok825/MMM-IPT",
-      "gitHubDataLastUpdate": "2025-03-11T16:30:19.093Z",
+      "gitHubDataLastUpdate": "2025-03-31T22:16:44.198Z",
       "gitHubData": {
         "issues": 1,
         "stars": 1,
@@ -16719,7 +16719,7 @@
     },
     {
       "id": "Xanthus1/MMM-ITCH-IO",
-      "gitHubDataLastUpdate": "2025-03-11T16:30:23.510Z",
+      "gitHubDataLastUpdate": "2025-03-31T22:16:49.252Z",
       "gitHubData": {
         "issues": 0,
         "stars": 2,
@@ -16957,7 +16957,7 @@
     },
     {
       "id": "yohaybn/MMM-JewishDate",
-      "gitHubDataLastUpdate": "2025-03-11T16:30:25.404Z",
+      "gitHubDataLastUpdate": "2025-03-31T22:16:51.180Z",
       "gitHubData": {
         "issues": 1,
         "stars": 2,

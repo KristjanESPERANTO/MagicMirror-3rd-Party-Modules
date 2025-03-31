@@ -1,6 +1,6 @@
 # Result of the module analysis
 
-Last update: 2025-03-31T17:38:09+02:00
+Last update: 2025-04-01T00:29:10+02:00
 
 ## General notes
 
@@ -14,7 +14,7 @@ Last update: 2025-03-31T17:38:09+02:00
 | modules analyzed     |   1241   |
 | maintainer           |    662   |
 | modules with issues  |   1240   |
-| issues               |   8869   |
+| issues               |   8865   |
 | modules at github    |   1106   |
 | modules at gitlab    |     12   |
 | modules at bitbucket |      1   |
@@ -941,7 +941,7 @@ Last update: 2025-03-31T17:38:09+02:00
    - rollup                        ^4.29.1  →    ^4.38.0
    - rxjs                           ^7.8.1  →     ^7.8.2
    - typescript                     ^5.7.2  →     ^5.8.2
-   - typescript-eslint             ^8.18.2  →    ^8.28.0
+   - typescript-eslint             ^8.18.2  →    ^8.29.0
 
 
 ### [MMM-Bose-Soundtouch by spoturdeal](https://github.com/spoturdeal/MMM-Bose-Soundtouch)
@@ -6617,12 +6617,10 @@ Last update: 2025-03-31T17:38:09+02:00
 
 ### [MMM-MyScoreboard by dathbe](https://github.com/dathbe/MMM-MyScoreboard)
 
-1. An error occurred while getting information from 'package.json': Error: Invalid version: "4"
-2. Recommendation: Found `axios` in file `package.json`: Replace it with built-in fetch.
-3. Recommendation: Found `axios` in file `ESPN.js`: Replace it with built-in fetch.
-4. Recommendation: Found `axios` in file `SNET.js`: Replace it with built-in fetch.
-5. Recommendation: Found `axios` in file `SNET_YD.js`: Replace it with built-in fetch.
-6. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
+1. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
+2. Information: There are updates for 1 dependencie(s):
+   - moment-timezone  ^0.5.37  →  ^0.5.48
+
 
 ### [MMM-MySenseHat by framboise-pi](https://github.com/framboise-pi/MMM-MySenseHat)
 

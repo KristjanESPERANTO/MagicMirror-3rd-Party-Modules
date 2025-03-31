@@ -2734,7 +2734,7 @@
     "license": "ISC",
     "image": "doc_images-playground_example.jpg",
     "defaultSortWeight": 5,
-    "lastCommit": "2025-03-29T07:31:20-07:00"
+    "lastCommit": "2025-03-31T09:31:29-07:00"
   },
   {
     "name": "MMM-Confucius-say",
@@ -7967,7 +7967,7 @@
     "maintainerURL": "",
     "description": "Display ipcam feed.",
     "issues": true,
-    "stars": 25,
+    "stars": 26,
     "license": "MIT",
     "defaultSortWeight": 7,
     "lastCommit": "2017-01-23T12:10:19+01:00"
@@ -11370,9 +11370,13 @@
     "issues": true,
     "stars": 3,
     "license": "MIT",
+    "tags": [
+      "sports",
+      "sports"
+    ],
     "image": "example.jpg",
-    "defaultSortWeight": 6,
-    "lastCommit": "2025-03-30T22:49:00-07:00"
+    "defaultSortWeight": 2,
+    "lastCommit": "2025-03-31T13:45:38-07:00"
   },
   {
     "name": "MMM-MySenseHat",
@@ -20813,6 +20817,6 @@
     "license": "ISC",
     "image": "alternateScreenshot.jpg",
     "defaultSortWeight": 11,
-    "lastCommit": "2025-01-24T14:22:15-05:00"
+    "lastCommit": "2025-03-31T12:32:43-04:00"
   }
 ]
