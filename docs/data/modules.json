@@ -145,6 +145,24 @@
     "lastCommit": "2024-05-07T16:38:39-05:00"
   },
   {
+    "name": "MMM-Actual",
+    "category": "Finance",
+    "url": "https://github.com/trumpetx/MMM-Actual",
+    "id": "trumpetx/MMM-Actual",
+    "maintainer": "trumpetx",
+    "maintainerURL": "",
+    "description": "Display financial balances from Actual Budget",
+    "issues": true,
+    "stars": 1,
+    "license": "AGPL-3.0",
+    "tags": [
+      "actual",
+      "finance"
+    ],
+    "defaultSortWeight": 7,
+    "lastCommit": "2025-03-31T07:34:56-05:00"
+  },
+  {
     "name": "MMM-Admin-Interface",
     "category": "Outdated Modules",
     "url": "https://github.com/ItayXD/MMM-Admin-Interface",
@@ -4883,6 +4901,21 @@
     "lastCommit": "2024-09-01T13:55:01-07:00"
   },
   {
+    "name": "MMM-FamZoo",
+    "category": "Finance",
+    "url": "https://github.com/trumpetx/MMM-FamZoo",
+    "id": "trumpetx/MMM-FamZoo",
+    "maintainer": "trumpetx",
+    "maintainerURL": "",
+    "description": "Display FamZoo balances",
+    "issues": true,
+    "stars": 1,
+    "license": "AGPL-3.0",
+    "image": "famzoo_balances_example.jpg",
+    "defaultSortWeight": 7,
+    "lastCommit": "2025-03-30T13:21:29-05:00"
+  },
+  {
     "name": "MMM-Farevarsel",
     "category": "Weather",
     "url": "https://github.com/mabahj/MMM-Farevarsel",
@@ -6975,6 +7008,20 @@
   {
     "name": "MMM-HomeAssistant",
     "category": "Utility / IoT / 3rd Party / Integration",
+    "url": "https://github.com/yourdawi/MMM-HomeAssistant",
+    "id": "yourdawi/MMM-HomeAssistant",
+    "maintainer": "yourdawi",
+    "maintainerURL": "https://github.com/yourdawi",
+    "description": "Display information out of HomeAssistant.",
+    "issues": true,
+    "stars": 3,
+    "license": "MIT",
+    "defaultSortWeight": 8,
+    "lastCommit": "2024-12-22T13:05:46+01:00"
+  },
+  {
+    "name": "MMM-HomeAssistant",
+    "category": "Utility / IoT / 3rd Party / Integration",
     "url": "https://github.com/zuo000/MMM-HomeAssistant",
     "id": "zuo000/MMM-HomeAssistant",
     "maintainer": "zuo000",
@@ -6988,18 +7035,19 @@
     "lastCommit": "2020-04-08T18:54:01-07:00"
   },
   {
-    "name": "MMM-HomeAssistant",
+    "name": "MMM-homeassistant-sensors",
     "category": "Utility / IoT / 3rd Party / Integration",
-    "url": "https://github.com/yourdawi/MMM-HomeAssistant",
-    "id": "yourdawi/MMM-HomeAssistant",
-    "maintainer": "yourdawi",
-    "maintainerURL": "https://github.com/yourdawi",
-    "description": "Display information out of HomeAssistant.",
+    "url": "https://github.com/ledsi/MMM-homeassistant-sensors",
+    "id": "ledsi/MMM-homeassistant-sensors",
+    "maintainer": "ledsi",
+    "maintainerURL": "",
+    "description": "Display information from Home Assistant using the home assistant REST API.",
     "issues": true,
-    "stars": 3,
+    "stars": 0,
+    "hasGithubIssues": false,
     "license": "MIT",
-    "defaultSortWeight": 8,
-    "lastCommit": "2024-12-22T13:05:46+01:00"
+    "defaultSortWeight": 9,
+    "lastCommit": "2024-06-30T09:48:34+02:00"
   },
   {
     "name": "MMM-homeassistant-sensors",
@@ -7019,21 +7067,6 @@
     "image": ".github-screen01-advanced.jpg",
     "defaultSortWeight": 8,
     "lastCommit": "2023-03-21T13:52:46+01:00"
-  },
-  {
-    "name": "MMM-homeassistant-sensors",
-    "category": "Utility / IoT / 3rd Party / Integration",
-    "url": "https://github.com/ledsi/MMM-homeassistant-sensors",
-    "id": "ledsi/MMM-homeassistant-sensors",
-    "maintainer": "ledsi",
-    "maintainerURL": "",
-    "description": "Display information from Home Assistant using the home assistant REST API.",
-    "issues": true,
-    "stars": 0,
-    "hasGithubIssues": false,
-    "license": "MIT",
-    "defaultSortWeight": 9,
-    "lastCommit": "2024-06-30T09:48:34+02:00"
   },
   {
     "name": "MMM-HomeAssistant-Touch",
@@ -7096,7 +7129,7 @@
     "license": "ISC",
     "image": "HomeConnectDeveloperApplicationConfiguration.jpg",
     "defaultSortWeight": 8,
-    "lastCommit": "2024-02-09T23:32:21+01:00"
+    "lastCommit": "2025-03-30T23:15:36+02:00"
   },
   {
     "name": "MMM-Homematic",
@@ -7523,7 +7556,7 @@
     "description": "A simple way to add an iFrame of any web content. Supports multiple URLs and will rotate between them. Works with static pages or streams like Nest Cam, D-Link Cameras, Twitch.tv, YouTube and more.",
     "issues": false,
     "outdated": "Abandoned. Repo has been archived at 2024-18-24.",
-    "stars": 59,
+    "stars": 58,
     "isArchived": true,
     "tags": [
       "iframe"
@@ -10451,7 +10484,7 @@
     "issues": true,
     "stars": 3,
     "defaultSortWeight": 5,
-    "lastCommit": "2025-03-04T00:04:01+01:00"
+    "lastCommit": "2025-03-31T00:17:38+02:00"
   },
   {
     "name": "MMM-Modulebar",
@@ -11339,7 +11372,7 @@
     "license": "MIT",
     "image": "example.jpg",
     "defaultSortWeight": 6,
-    "lastCommit": "2025-03-28T17:59:52-07:00"
+    "lastCommit": "2025-03-30T22:49:00-07:00"
   },
   {
     "name": "MMM-MySenseHat",
@@ -11405,10 +11438,15 @@
     "description": "Display ESPN standings for major US Sports and international soccer leagues.",
     "issues": true,
     "stars": 2,
+    "tags": [
+      "sports",
+      "sports",
+      "standings"
+    ],
     "license": "MIT",
     "image": "screenshot.jpg",
-    "defaultSortWeight": 4,
-    "lastCommit": "2025-03-28T17:22:20-07:00"
+    "defaultSortWeight": 2,
+    "lastCommit": "2025-03-30T23:51:00-07:00"
   },
   {
     "name": "MMM-MyStudyLife",
@@ -14657,7 +14695,7 @@
     ],
     "image": "Images-sample.jpg",
     "defaultSortWeight": 3,
-    "lastCommit": "2025-03-28T09:40:37-06:00"
+    "lastCommit": "2025-03-30T11:47:11-06:00"
   },
   {
     "name": "MMM-PublicTransportBerlin",

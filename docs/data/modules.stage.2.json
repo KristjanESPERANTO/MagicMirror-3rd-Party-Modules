@@ -95,6 +95,18 @@
     "hasGithubIssues": false
   },
   {
+    "name": "MMM-Actual",
+    "category": "Finance",
+    "url": "https://github.com/trumpetx/MMM-Actual",
+    "id": "trumpetx/MMM-Actual",
+    "maintainer": "trumpetx",
+    "maintainerURL": "",
+    "description": "Display financial balances from Actual Budget",
+    "issues": [],
+    "stars": 1,
+    "license": "AGPL-3.0"
+  },
+  {
     "name": "MMM-Admin-Interface",
     "category": "Outdated Modules",
     "url": "https://github.com/ItayXD/MMM-Admin-Interface",
@@ -3479,6 +3491,18 @@
     "license": "MIT"
   },
   {
+    "name": "MMM-FamZoo",
+    "category": "Finance",
+    "url": "https://github.com/trumpetx/MMM-FamZoo",
+    "id": "trumpetx/MMM-FamZoo",
+    "maintainer": "trumpetx",
+    "maintainerURL": "",
+    "description": "Display FamZoo balances",
+    "issues": [],
+    "stars": 1,
+    "license": "AGPL-3.0"
+  },
+  {
     "name": "MMM-Farevarsel",
     "category": "Weather",
     "url": "https://github.com/mabahj/MMM-Farevarsel",
@@ -5014,18 +5038,6 @@
   {
     "name": "MMM-HomeAssistant",
     "category": "Utility / IoT / 3rd Party / Integration",
-    "url": "https://github.com/zuo000/MMM-HomeAssistant",
-    "id": "zuo000/MMM-HomeAssistant",
-    "maintainer": "zuo000",
-    "maintainerURL": "https://github.com/zuo000",
-    "description": "HomeAssistant frontend module using HA REST API, including Light, Switch, Sensor.",
-    "issues": [],
-    "stars": 27,
-    "license": "MIT"
-  },
-  {
-    "name": "MMM-HomeAssistant",
-    "category": "Utility / IoT / 3rd Party / Integration",
     "url": "https://github.com/yourdawi/MMM-HomeAssistant",
     "id": "yourdawi/MMM-HomeAssistant",
     "maintainer": "yourdawi",
@@ -5036,15 +5048,15 @@
     "license": "MIT"
   },
   {
-    "name": "MMM-homeassistant-sensors",
+    "name": "MMM-HomeAssistant",
     "category": "Utility / IoT / 3rd Party / Integration",
-    "url": "https://github.com/Snille/MMM-homeassistant-sensors",
-    "id": "Snille/MMM-homeassistant-sensors",
-    "maintainer": "Snille",
-    "maintainerURL": "https://github.com/Snille",
-    "description": "Fork of leinich module. Many new features added. Display information from Home Assistant using the home assistant REST API.",
+    "url": "https://github.com/zuo000/MMM-HomeAssistant",
+    "id": "zuo000/MMM-HomeAssistant",
+    "maintainer": "zuo000",
+    "maintainerURL": "https://github.com/zuo000",
+    "description": "HomeAssistant frontend module using HA REST API, including Light, Switch, Sensor.",
     "issues": [],
-    "stars": 64,
+    "stars": 27,
     "license": "MIT"
   },
   {
@@ -5058,6 +5070,18 @@
     "issues": [],
     "stars": 0,
     "hasGithubIssues": false,
+    "license": "MIT"
+  },
+  {
+    "name": "MMM-homeassistant-sensors",
+    "category": "Utility / IoT / 3rd Party / Integration",
+    "url": "https://github.com/Snille/MMM-homeassistant-sensors",
+    "id": "Snille/MMM-homeassistant-sensors",
+    "maintainer": "Snille",
+    "maintainerURL": "https://github.com/Snille",
+    "description": "Fork of leinich module. Many new features added. Display information from Home Assistant using the home assistant REST API.",
+    "issues": [],
+    "stars": 64,
     "license": "MIT"
   },
   {
@@ -5412,7 +5436,7 @@
     "description": "A simple way to add an iFrame of any web content. Supports multiple URLs and will rotate between them. Works with static pages or streams like Nest Cam, D-Link Cameras, Twitch.tv, YouTube and more.",
     "issues": [],
     "outdated": "Abandoned. Repo has been archived at 2024-18-24.",
-    "stars": 59,
+    "stars": 58,
     "isArchived": true
   },
   {

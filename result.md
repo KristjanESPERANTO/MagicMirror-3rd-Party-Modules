@@ -1,6 +1,6 @@
 # Result of the module analysis
 
-Last update: 2025-03-30T17:37:27+02:00
+Last update: 2025-03-31T17:38:09+02:00
 
 ## General notes
 
@@ -11,11 +11,11 @@ Last update: 2025-03-30T17:37:27+02:00
 
 |                      | number   |
 |:---------------------|:--------:|
-| modules analyzed     |   1239   |
-| maintainer           |    661   |
-| modules with issues  |   1238   |
-| issues               |   8857   |
-| modules at github    |   1104   |
+| modules analyzed     |   1241   |
+| maintainer           |    662   |
+| modules with issues  |   1240   |
+| issues               |   8869   |
+| modules at github    |   1106   |
 | modules at gitlab    |     12   |
 | modules at bitbucket |      1   |
 
@@ -106,6 +106,16 @@ Last update: 2025-03-30T17:37:27+02:00
 6. Recommendation: There ist no CHANGELOG file. It is recommended to add one.
 7. Recommendation: There ist no CODE_OF_CONDUCT file. It is recommended to add one.
 8. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
+
+### [MMM-Actual by trumpetx](https://github.com/trumpetx/MMM-Actual)
+
+1. `package.json` issue: license should be a valid SPDX license expression
+2. Issue: The license in the package.json (AGPL3) doesn't match the license file (AGPL-3.0).
+3. No image found.
+4. Outdated: Found `MichMich/MagicMirror` in file `README.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
+5. Recommendation: There ist no CHANGELOG file. It is recommended to add one.
+6. Recommendation: There ist no CODE_OF_CONDUCT file. It is recommended to add one.
+7. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
 
 ### [MMM-Advent by Jopyth](https://github.com/Jopyth/MMM-Advent)
 
@@ -923,7 +933,7 @@ Last update: 2025-03-30T17:37:27+02:00
    - @stylistic/eslint-plugin      ^2.12.1  →     ^4.2.0
    - @types/express                 ^5.0.0  →     ^5.0.1
    - @types/node                  ^22.10.2  →  ^22.13.14
-   - bosch-smart-home-bridge        ^1.6.0  →    ^1.7.12
+   - bosch-smart-home-bridge        ^1.6.0  →    ^1.7.13
    - eslint                        ^9.17.0  →    ^9.23.0
    - eslint-config-prettier         ^9.1.0  →    ^10.1.1
    - eslint-plugin-prettier         ^5.2.1  →     ^5.2.5
@@ -2673,6 +2683,16 @@ Last update: 2025-03-30T17:37:27+02:00
 2. Recommendation: There ist no CODE_OF_CONDUCT file. It is recommended to add one.
 3. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
 
+### [MMM-FamZoo by trumpetx](https://github.com/trumpetx/MMM-FamZoo)
+
+1. `package.json` issue: No repository field.
+2. `package.json` issue: No license field.
+3. There are no keywords in 'package.json'. We would use them as tags on the module list page.
+4. Typo: Found `Magic Mirror` in file `README.md`: Replace it with `MagicMirror²`.
+5. Recommendation: There ist no CHANGELOG file. It is recommended to add one.
+6. Recommendation: There ist no CODE_OF_CONDUCT file. It is recommended to add one.
+7. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
+
 ### [MMM-Farevarsel by mabahj](https://github.com/mabahj/MMM-Farevarsel)
 
 1. Recommendation: There ist no CHANGELOG file. It is recommended to add one.
@@ -3959,6 +3979,18 @@ Last update: 2025-03-30T17:37:27+02:00
 7. Recommendation: There ist no CODE_OF_CONDUCT file. It is recommended to add one.
 8. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
 
+### [MMM-HomeAssistant by yourdawi](https://github.com/yourdawi/MMM-HomeAssistant)
+
+1. `package.json` issue: No repository field.
+2. There are no keywords in 'package.json'. We would use them as tags on the module list page.
+3. No image found.
+4. Recommendation: The README seems not to have an update instruction (the word 'update' is missing). Please add one.
+5. Typo: Found `Magic Mirror` in file `package.json`: Replace it with `MagicMirror²`.
+6. Recommendation: Found `"node-fetch"` in file `package.json`: Replace it with built-in fetch.
+7. Recommendation: There ist no CHANGELOG file. It is recommended to add one.
+8. Recommendation: There ist no CODE_OF_CONDUCT file. It is recommended to add one.
+9. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
+
 ### [MMM-HomeAssistant by zuo000](https://github.com/zuo000/MMM-HomeAssistant)
 
 1. There is no `package.json`. We need this file to gather information about the module for the module list page.
@@ -3968,14 +4000,14 @@ Last update: 2025-03-30T17:37:27+02:00
 5. Recommendation: There ist no CODE_OF_CONDUCT file. It is recommended to add one.
 6. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
 
-### [MMM-HomeAssistant by yourdawi](https://github.com/yourdawi/MMM-HomeAssistant)
+### [MMM-homeassistant-sensors by ledsi](https://github.com/ledsi/MMM-homeassistant-sensors)
 
-1. `package.json` issue: No repository field.
-2. There are no keywords in 'package.json'. We would use them as tags on the module list page.
+1. There is no `package.json`. We need this file to gather information about the module for the module list page.
+2. Issues are not enabled in the GitHub repository. So users cannot report bugs. Please enable issues in your repo.
 3. No image found.
-4. Recommendation: The README seems not to have an update instruction (the word 'update' is missing). Please add one.
-5. Typo: Found `Magic Mirror` in file `package.json`: Replace it with `MagicMirror²`.
-6. Recommendation: Found `"node-fetch"` in file `package.json`: Replace it with built-in fetch.
+4. Typo: Found `MagicMirror2` in file `README.md`: Replace it with `MagicMirror²`.
+5. Typo: Found `[MagicMirror]` in file `README.md`: Replace it with `[MagicMirror²]`.
+6. Outdated: Found `MichMich/MagicMirror` in file `README.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
 7. Recommendation: There ist no CHANGELOG file. It is recommended to add one.
 8. Recommendation: There ist no CODE_OF_CONDUCT file. It is recommended to add one.
 9. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
@@ -3990,18 +4022,6 @@ Last update: 2025-03-30T17:37:27+02:00
 6. Recommendation: There ist no CHANGELOG file. It is recommended to add one.
 7. Recommendation: There ist no CODE_OF_CONDUCT file. It is recommended to add one.
 8. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
-
-### [MMM-homeassistant-sensors by ledsi](https://github.com/ledsi/MMM-homeassistant-sensors)
-
-1. There is no `package.json`. We need this file to gather information about the module for the module list page.
-2. Issues are not enabled in the GitHub repository. So users cannot report bugs. Please enable issues in your repo.
-3. No image found.
-4. Typo: Found `MagicMirror2` in file `README.md`: Replace it with `MagicMirror²`.
-5. Typo: Found `[MagicMirror]` in file `README.md`: Replace it with `[MagicMirror²]`.
-6. Outdated: Found `MichMich/MagicMirror` in file `README.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
-7. Recommendation: There ist no CHANGELOG file. It is recommended to add one.
-8. Recommendation: There ist no CODE_OF_CONDUCT file. It is recommended to add one.
-9. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
 
 ### [MMM-HomeAssistant-Touch by mathewmeconry](https://github.com/mathewmeconry/MMM-HomeAssistant-Touch)
 
@@ -6639,10 +6659,10 @@ Last update: 2025-03-30T17:37:27+02:00
 
 ### [MMM-MyStandings by dathbe](https://github.com/dathbe/MMM-MyStandings)
 
-1. An error occurred while getting information from 'package.json': Error: Invalid version: "2"
-2. Recommendation: Found `axios` in file `node_helper.js`: Replace it with built-in fetch.
-3. Recommendation: Found `axios` in file `package.json`: Replace it with built-in fetch.
-4. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
+1. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
+2. Information: There are updates for 1 dependencie(s):
+   - directory-tree  ^3.3.1  →  ^3.5.2
+
 
 ### [MMM-MyStudyLife by ethanpartida](https://github.com/ethanpartida/MMM-MyStudyLife)
 
@@ -8112,8 +8132,8 @@ Last update: 2025-03-30T17:37:27+02:00
 3. Recommendation: There ist no CODE_OF_CONDUCT file. It is recommended to add one.
 4. Information: There are updates for 7 dependencie(s):
    - @stylistic/eslint-plugin    ^2.12.1  →   ^4.2.0
-   - cron-parser                  ^4.9.0  →   ^5.0.6
-   - esbuild                     ^0.24.2  →  ^0.25.1
+   - cron-parser                  ^4.9.0  →   ^5.1.0
+   - esbuild                     ^0.24.2  →  ^0.25.2
    - eslint                      ^9.17.0  →  ^9.23.0
    - eslint-plugin-package-json  ^0.19.0  →  ^0.29.0
    - fdir                         ^6.4.2  →   ^6.4.3

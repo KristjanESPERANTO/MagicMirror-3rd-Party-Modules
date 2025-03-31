@@ -138,6 +138,26 @@
     "image": "screenshots-layout-bars-daily.jpg"
   },
   {
+    "name": "MMM-Actual",
+    "category": "Finance",
+    "url": "https://github.com/trumpetx/MMM-Actual",
+    "id": "trumpetx/MMM-Actual",
+    "maintainer": "trumpetx",
+    "maintainerURL": "",
+    "description": "Display financial balances from Actual Budget",
+    "issues": [
+      "`package.json` issue: license should be a valid SPDX license expression",
+      "Issue: The license in the package.json (AGPL3) doesn't match the license file (AGPL-3.0).",
+      "No image found."
+    ],
+    "stars": 1,
+    "license": "AGPL-3.0",
+    "tags": [
+      "actual",
+      "finance"
+    ]
+  },
+  {
     "name": "MMM-Admin-Interface",
     "category": "Outdated Modules",
     "url": "https://github.com/ItayXD/MMM-Admin-Interface",
@@ -4815,6 +4835,23 @@
     "image": "example.jpg"
   },
   {
+    "name": "MMM-FamZoo",
+    "category": "Finance",
+    "url": "https://github.com/trumpetx/MMM-FamZoo",
+    "id": "trumpetx/MMM-FamZoo",
+    "maintainer": "trumpetx",
+    "maintainerURL": "",
+    "description": "Display FamZoo balances",
+    "issues": [
+      "`package.json` issue: No repository field.",
+      "`package.json` issue: No license field.",
+      "There are no keywords in 'package.json'. We would use them as tags on the module list page."
+    ],
+    "stars": 1,
+    "license": "AGPL-3.0",
+    "image": "famzoo_balances_example.jpg"
+  },
+  {
     "name": "MMM-Farevarsel",
     "category": "Weather",
     "url": "https://github.com/mabahj/MMM-Farevarsel",
@@ -6904,6 +6941,22 @@
   {
     "name": "MMM-HomeAssistant",
     "category": "Utility / IoT / 3rd Party / Integration",
+    "url": "https://github.com/yourdawi/MMM-HomeAssistant",
+    "id": "yourdawi/MMM-HomeAssistant",
+    "maintainer": "yourdawi",
+    "maintainerURL": "https://github.com/yourdawi",
+    "description": "Display information out of HomeAssistant.",
+    "issues": [
+      "`package.json` issue: No repository field.",
+      "There are no keywords in 'package.json'. We would use them as tags on the module list page.",
+      "No image found."
+    ],
+    "stars": 3,
+    "license": "MIT"
+  },
+  {
+    "name": "MMM-HomeAssistant",
+    "category": "Utility / IoT / 3rd Party / Integration",
     "url": "https://github.com/zuo000/MMM-HomeAssistant",
     "id": "zuo000/MMM-HomeAssistant",
     "maintainer": "zuo000",
@@ -6917,19 +6970,20 @@
     "image": "screenshot.jpg"
   },
   {
-    "name": "MMM-HomeAssistant",
+    "name": "MMM-homeassistant-sensors",
     "category": "Utility / IoT / 3rd Party / Integration",
-    "url": "https://github.com/yourdawi/MMM-HomeAssistant",
-    "id": "yourdawi/MMM-HomeAssistant",
-    "maintainer": "yourdawi",
-    "maintainerURL": "https://github.com/yourdawi",
-    "description": "Display information out of HomeAssistant.",
+    "url": "https://github.com/ledsi/MMM-homeassistant-sensors",
+    "id": "ledsi/MMM-homeassistant-sensors",
+    "maintainer": "ledsi",
+    "maintainerURL": "",
+    "description": "Display information from Home Assistant using the home assistant REST API.",
     "issues": [
-      "`package.json` issue: No repository field.",
-      "There are no keywords in 'package.json'. We would use them as tags on the module list page.",
+      "There is no `package.json`. We need this file to gather information about the module for the module list page.",
+      "Issues are not enabled in the GitHub repository. So users cannot report bugs. Please enable issues in your repo.",
       "No image found."
     ],
-    "stars": 3,
+    "stars": 0,
+    "hasGithubIssues": false,
     "license": "MIT"
   },
   {
@@ -6948,23 +7002,6 @@
       "ha"
     ],
     "image": ".github-screen01-advanced.jpg"
-  },
-  {
-    "name": "MMM-homeassistant-sensors",
-    "category": "Utility / IoT / 3rd Party / Integration",
-    "url": "https://github.com/ledsi/MMM-homeassistant-sensors",
-    "id": "ledsi/MMM-homeassistant-sensors",
-    "maintainer": "ledsi",
-    "maintainerURL": "",
-    "description": "Display information from Home Assistant using the home assistant REST API.",
-    "issues": [
-      "There is no `package.json`. We need this file to gather information about the module for the module list page.",
-      "Issues are not enabled in the GitHub repository. So users cannot report bugs. Please enable issues in your repo.",
-      "No image found."
-    ],
-    "stars": 0,
-    "hasGithubIssues": false,
-    "license": "MIT"
   },
   {
     "name": "MMM-HomeAssistant-Touch",
@@ -7448,7 +7485,7 @@
       "No image found."
     ],
     "outdated": "Abandoned. Repo has been archived at 2024-18-24.",
-    "stars": 59,
+    "stars": 58,
     "isArchived": true,
     "tags": [
       "iframe"
@@ -11290,10 +11327,13 @@
     "maintainer": "dathbe",
     "maintainerURL": "",
     "description": "Display ESPN standings for major US Sports and international soccer leagues.",
-    "issues": [
-      "An error occurred while getting information from 'package.json': Error: Invalid version: \"2\""
-    ],
+    "issues": [],
     "stars": 2,
+    "tags": [
+      "sports",
+      "sports",
+      "standings"
+    ],
     "license": "MIT",
     "image": "screenshot.jpg"
   },

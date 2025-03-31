@@ -1,11 +1,11 @@
 {
-  "moduleCounter": 1239,
-  "modulesWithImageCounter": 873,
-  "modulesWithIssuesCounter": 1238,
-  "issueCounter": 8857,
-  "lastUpdate": "2025-03-30T17:37:27+02:00",
+  "moduleCounter": 1241,
+  "modulesWithImageCounter": 874,
+  "modulesWithIssuesCounter": 1240,
+  "issueCounter": 8869,
+  "lastUpdate": "2025-03-31T17:38:09+02:00",
   "repositoryHoster": {
-    "github": 1104,
+    "github": 1106,
     "gitlab": 12,
     "bitbucket": 1
   },
@@ -105,6 +105,7 @@
     "reidarw": 3,
     "XBCreepinJesus": 3,
     "Thlb": 3,
+    "trumpetx": 2,
     "Jopyth": 2,
     "PavlenkoM": 2,
     "yashatgit": 2,

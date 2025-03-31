@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "2025-03-30T15:30:06.972Z",
+  "lastUpdate": "2025-03-31T15:30:08.159Z",
   "modules": [
     {
       "name": "MMM-01ZM",
@@ -79,6 +79,16 @@
       "maintainer": "BigBot89",
       "maintainerURL": "",
       "description": "A fork of maxbethge's weather module. This version fixes the hourly forecast and includes a missing icon for \"hot\" weather. It also disables a few options that break the layout.",
+      "issues": []
+    },
+    {
+      "name": "MMM-Actual",
+      "category": "Finance",
+      "url": "https://github.com/trumpetx/MMM-Actual",
+      "id": "trumpetx/MMM-Actual",
+      "maintainer": "trumpetx",
+      "maintainerURL": "",
+      "description": "Display financial balances from Actual Budget",
       "issues": []
     },
     {
@@ -2940,6 +2950,16 @@
       "maintainer": "alanshen111",
       "maintainerURL": "https://github.com/alanshen111",
       "description": "Displays some interesting facts! Makes your mirror look like an RPG loading screen.",
+      "issues": []
+    },
+    {
+      "name": "MMM-FamZoo",
+      "category": "Finance",
+      "url": "https://github.com/trumpetx/MMM-FamZoo",
+      "id": "trumpetx/MMM-FamZoo",
+      "maintainer": "trumpetx",
+      "maintainerURL": "",
+      "description": "Display FamZoo balances",
       "issues": []
     },
     {
