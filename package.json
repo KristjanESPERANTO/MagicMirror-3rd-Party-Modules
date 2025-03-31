@@ -6,13 +6,13 @@
     "MagicMirror²",
     "Modules"
   ],
-  "homepage": "https://github.com/KristjanESPERANTO/MagicMirror-3rd-Party-Modules#readme",
+  "homepage": "https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules#readme",
   "bugs": {
-    "url": "https://github.com/KristjanESPERANTO/MagicMirror-3rd-Party-Modules/issues"
+    "url": "https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/issues"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/KristjanESPERANTO/MagicMirror-3rd-Party-Modules"
+    "url": "https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules"
   },
   "license": "MIT",
   "author": {

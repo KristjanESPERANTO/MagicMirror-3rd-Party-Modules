@@ -107,7 +107,7 @@ function createCard (moduleData) {
 
 
   if (moduleData.issues) {
-    const url = `https://github.com/KristjanESPERANTO/MagicMirror-3rd-Party-Modules/blob/main/result.md#${moduleData.name}-by-${moduleData.maintainer}`;
+    const url = `https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/result.md#${moduleData.name}-by-${moduleData.maintainer}`;
     card.querySelector(".info .container.issues .text").href = url;
   } else {
     card.querySelector(".info .container.issues").remove();

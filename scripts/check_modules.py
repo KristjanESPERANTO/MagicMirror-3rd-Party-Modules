@@ -604,7 +604,7 @@ def check_branch_name(module, module_directory_path):
         .rstrip()
     )
     # Deactivated because it causes issues for the users. They would have to rename the branch, but they probably don't know how to do it.
-    # https://github.com/KristjanESPERANTO/MagicMirror-3rd-Party-Modules/issues/24
+    # https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/issues/24
     # if "* master" in branch:
     #    module["issues"].append(
     #        "The branch name is 'master'. Consider renaming it to 'main'.")

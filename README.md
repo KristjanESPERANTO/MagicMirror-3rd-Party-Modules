@@ -65,7 +65,7 @@ For running the scripts and developing you need:
 ## Installation
 
 1. Clone this repository:
-   `git clone https://github.com/KristjanESPERANTO/MagicMirror-3rd-Party-Modules`
+   `git clone https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules`
 2. Change into the created directory:
    `cd MagicMirror-3rd-Party-Modules`
 3. Install dependencies:
