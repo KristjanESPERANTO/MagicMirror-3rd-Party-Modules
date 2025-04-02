@@ -482,7 +482,7 @@ def check_modules():
     )
 
     # Writing to markdown
-    with open("result.md", "w", encoding="utf-8") as output_file:
+    with open("./docs/result.md", "w", encoding="utf-8") as output_file:
         output_file.write(markdown_output)
 
     # Serializing json

@@ -1,0 +1,57 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Result of the module analysis</title>
+    <link rel="icon" type="image/x-icon" href="favicon.svg" />
+    <link rel="stylesheet" href="result.css" />
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+  </head>
+  <body>
+    <div id="markdown-container"></div>
+    <script>
+      async function loadAndDisplayMarkdown() {
+        const markdownContainer = document.getElementById("markdown-container");
+        const markdownFile = "result.md";
+
+        try {
+          const response = await fetch(markdownFile);
+          if (!response.ok) {
+            throw new Error(
+              `Error fetching the markdown file: ${response.statusText}`
+            );
+          }
+          const markdownText = await response.text();
+          markdownContainer.innerHTML = marked.parse(markdownText);
+          addHeadingAnchors();
+        } catch (error) {
+          console.error("Error loading markdown:", error);
+          markdownContainer.innerHTML =
+            "<p>Error loading markdown content.</p>";
+        }
+      }
+
+      function addHeadingAnchors() {
+        const headings = document.querySelectorAll("h1, h2, h3, h4");
+        headings.forEach((heading) => {
+          const anchorId = heading.textContent.replaceAll(" ", "-");
+          const anchor = document.createElement("a");
+          anchor.id = anchorId;
+          anchor.href = "#" + anchorId;
+          anchor.classList.add("heading-anchor");
+          anchor.textContent = "#";
+          heading.appendChild(anchor);
+        });
+
+        const hash = window.location.hash;
+        if (hash) {
+          const target = document.querySelector(hash);
+          if (target) {
+            target.scrollIntoView();
+          }
+        }
+      }
+
+      window.onload = loadAndDisplayMarkdown;
+    </script>
+  </body>
+</html>

@@ -17,7 +17,8 @@ const config = [
       "modules_temp/*",
       "docs/data/modules*.json",
       "docs/fonts/*",
-      "result.md"
+      "docs/result.html",
+      "docs/result.md"
     ]
   },
   {

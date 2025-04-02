@@ -1,0 +1,71 @@
+:root {
+  --color-background: #212830;
+  --color-text: #ddd;
+  --color-gray: #808080;
+  --color-link: #478be6;
+  --font-size: 16px;
+  --font-size-xsmall: 0.75rem;
+  --font-size-small: 1rem;
+  --font-size-medium: 1.5rem;
+  --font-size-large: 3.25rem;
+  --font-size-xlarge: 3.75rem;
+}
+
+body {
+  margin: 5rem;
+  color: var(--color-text);
+  font-size: var(--font-size);
+  font-family: "Segoe UI", SegoeUI, Arial, sans-serif;
+  font-style: normal;
+  line-height: 1.75;
+  background-color: var(--color-background);
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  padding: 0;
+  margin: 0;
+}
+
+h3 > a {
+  font-size: var(--font-size-medium);
+  color: var(--color-link);
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.heading-anchor {
+  visibility: hidden;
+  margin-left: 0.5rem;
+  padding-top: 1.5rem;
+  text-decoration: none;
+  color: var(--color-gray);
+}
+
+h1:hover .heading-anchor,
+h2:hover .heading-anchor,
+h3:hover .heading-anchor,
+h4:hover .heading-anchor {
+  visibility: visible;
+}
+
+ol {
+  padding-bottom: 2rem;
+}
+
+table {
+  border-collapse: collapse;
+  border-style: solid;
+  border-width: 1px;
+
+  td,
+  th {
+    padding: 0 0.5rem;
+    border-color: var(--color-gray);
+    border-style: solid;
+    border-width: 1px;
+  }
+}

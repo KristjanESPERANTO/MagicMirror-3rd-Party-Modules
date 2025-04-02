@@ -1,6 +1,6 @@
 # Result of the module analysis
 
-Last update: 2025-04-01T00:29:10+02:00
+Last update: 2025-04-02T08:24:07+02:00
 
 ## General notes
 
@@ -409,7 +409,7 @@ Last update: 2025-04-01T00:29:10+02:00
    - @eslint/js               ^9.22.0  →   ^9.23.0
    - cspell                   ^8.17.5  →   ^8.18.1
    - eslint                   ^9.22.0  →   ^9.23.0
-   - eslint-plugin-import-x    ^4.9.0  →    ^4.9.4
+   - eslint-plugin-import-x    ^4.9.0  →   ^4.10.0
    - stylelint               ^16.16.0  →  ^16.17.0
 
 
@@ -932,13 +932,13 @@ Last update: 2025-04-01T00:29:10+02:00
    - @rollup/plugin-node-resolve   ^16.0.0  →    ^16.0.1
    - @stylistic/eslint-plugin      ^2.12.1  →     ^4.2.0
    - @types/express                 ^5.0.0  →     ^5.0.1
-   - @types/node                  ^22.10.2  →  ^22.13.14
+   - @types/node                  ^22.10.2  →  ^22.13.17
    - bosch-smart-home-bridge        ^1.6.0  →    ^1.7.13
    - eslint                        ^9.17.0  →    ^9.23.0
    - eslint-config-prettier         ^9.1.0  →    ^10.1.1
    - eslint-plugin-prettier         ^5.2.1  →     ^5.2.5
    - prettier                       ^3.4.2  →     ^3.5.3
-   - rollup                        ^4.29.1  →    ^4.38.0
+   - rollup                        ^4.29.1  →    ^4.39.0
    - rxjs                           ^7.8.1  →     ^7.8.2
    - typescript                     ^5.7.2  →     ^5.8.2
    - typescript-eslint             ^8.18.2  →    ^8.29.0
@@ -1132,7 +1132,7 @@ Last update: 2025-04-01T00:29:10+02:00
 2. Information: There are updates for 6 dependencie(s):
    - @eslint/js               ^9.22.0  →   ^9.23.0
    - eslint                   ^9.22.0  →   ^9.23.0
-   - eslint-plugin-import-x    ^4.6.1  →    ^4.9.4
+   - eslint-plugin-import-x    ^4.6.1  →   ^4.10.0
    - eslint-plugin-jsonc      ^2.19.1  →   ^2.20.0
    - moment-timezone          ^0.5.47  →   ^0.5.48
    - stylelint               ^16.15.0  →  ^16.17.0
@@ -1285,7 +1285,7 @@ Last update: 2025-04-01T00:29:10+02:00
    - @eslint/json             ^0.10.0  →   ^0.11.0
    - cspell                   ^8.17.5  →   ^8.18.1
    - eslint                   ^9.22.0  →   ^9.23.0
-   - eslint-plugin-import-x    ^4.6.1  →    ^4.9.4
+   - eslint-plugin-import-x    ^4.6.1  →   ^4.10.0
    - lint-staged              ^15.4.3  →   ^15.5.0
    - stylelint               ^16.15.0  →  ^16.17.0
 
@@ -1319,7 +1319,7 @@ Last update: 2025-04-01T00:29:10+02:00
 
 1. Information: There are updates for 2 dependencie(s):
    - cspell                  ^8.18.0  →  ^8.18.1
-   - eslint-plugin-import-x   ^4.9.3  →   ^4.9.4
+   - eslint-plugin-import-x   ^4.9.3  →  ^4.10.0
 
 
 ### [MMM-CECControl by nischi](https://github.com/nischi/MMM-CECControl)
@@ -2316,7 +2316,7 @@ Last update: 2025-04-01T00:29:10+02:00
    - @eslint/js               ^9.22.0  →   ^9.23.0
    - cspell                   ^8.17.5  →   ^8.18.1
    - eslint                   ^9.22.0  →   ^9.23.0
-   - eslint-plugin-import-x    ^4.8.0  →    ^4.9.4
+   - eslint-plugin-import-x    ^4.8.0  →   ^4.10.0
    - stylelint               ^16.16.0  →  ^16.17.0
 
 
@@ -3082,7 +3082,7 @@ Last update: 2025-04-01T00:29:10+02:00
    - @eslint/json             ^0.10.0  →   ^0.11.0
    - cspell                   ^8.17.5  →   ^8.18.1
    - eslint                   ^9.22.0  →   ^9.23.0
-   - eslint-plugin-import-x    ^4.6.1  →    ^4.9.4
+   - eslint-plugin-import-x    ^4.6.1  →   ^4.10.0
    - stylelint               ^16.15.0  →  ^16.17.0
 
 
@@ -4666,7 +4666,7 @@ Last update: 2025-04-01T00:29:10+02:00
    - @eslint/js              ^9.22.0  →  ^9.23.0
    - cspell                  ^8.17.5  →  ^8.18.1
    - eslint                  ^9.22.0  →  ^9.23.0
-   - eslint-plugin-import-x   ^4.8.1  →   ^4.9.4
+   - eslint-plugin-import-x   ^4.8.1  →  ^4.10.0
 
 
 ### [MMM-ISS-Map by khassel](https://gitlab.com/khassel/MMM-ISS-Map)
@@ -4923,7 +4923,7 @@ Last update: 2025-04-01T00:29:10+02:00
    - @stylistic/eslint-plugin   ^4.1.0  →   ^4.2.0
    - cspell                    ^8.17.5  →  ^8.18.1
    - eslint                    ^9.21.0  →  ^9.23.0
-   - eslint-plugin-import-x     ^4.6.1  →   ^4.9.4
+   - eslint-plugin-import-x     ^4.6.1  →  ^4.10.0
    - prettier                   ^3.5.2  →   ^3.5.3
 
 
@@ -7494,7 +7494,7 @@ Last update: 2025-04-01T00:29:10+02:00
    - @eslint/js               ^9.22.0  →   ^9.23.0
    - cspell                   ^8.17.5  →   ^8.18.1
    - eslint                   ^9.22.0  →   ^9.23.0
-   - eslint-plugin-import-x    ^4.8.1  →    ^4.9.4
+   - eslint-plugin-import-x    ^4.8.1  →   ^4.10.0
    - stylelint               ^16.16.0  →  ^16.17.0
 
 
@@ -8564,7 +8564,7 @@ Last update: 2025-04-01T00:29:10+02:00
    - @eslint/js               ^9.22.0  →   ^9.23.0
    - cspell                   ^8.17.5  →   ^8.18.1
    - eslint                   ^9.22.0  →   ^9.23.0
-   - eslint-plugin-import-x    ^4.7.1  →    ^4.9.4
+   - eslint-plugin-import-x    ^4.7.1  →   ^4.10.0
    - eslint-plugin-jsonc      ^2.19.1  →   ^2.20.0
    - stylelint               ^16.16.0  →  ^16.17.0
 
@@ -8576,7 +8576,7 @@ Last update: 2025-04-01T00:29:10+02:00
 
 1. Information: There are updates for 3 dependencie(s):
    - cspell                   ^8.17.5  →   ^8.18.1
-   - eslint-plugin-import-x    ^4.9.1  →    ^4.9.4
+   - eslint-plugin-import-x    ^4.9.1  →   ^4.10.0
    - stylelint               ^16.16.0  →  ^16.17.0
 
 
@@ -8966,7 +8966,7 @@ Last update: 2025-04-01T00:29:10+02:00
 2. Information: There are updates for 4 dependencie(s):
    - body-parser             ^1.20.3  →   ^2.2.0
    - cspell                  ^8.18.0  →  ^8.18.1
-   - eslint-plugin-import-x   ^4.9.3  →   ^4.9.4
+   - eslint-plugin-import-x   ^4.9.3  →  ^4.10.0
    - swagger-ui              ^5.20.1  →  ^5.20.2
 
 
@@ -11802,7 +11802,7 @@ Last update: 2025-04-01T00:29:10+02:00
    - @eslint/js              ^9.22.0  →  ^9.23.0
    - cspell                  ^8.17.5  →  ^8.18.1
    - eslint                  ^9.22.0  →  ^9.23.0
-   - eslint-plugin-import-x   ^4.9.1  →   ^4.9.4
+   - eslint-plugin-import-x   ^4.9.1  →  ^4.10.0
 
 
 ### [MMM-Webuntis by HeikoGr](https://github.com/HeikoGr/MMM-Webuntis)
