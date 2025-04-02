@@ -101,7 +101,7 @@
     "id": "trumpetx/MMM-Actual",
     "maintainer": "trumpetx",
     "maintainerURL": "",
-    "description": "Display financial balances from Actual Budget",
+    "description": "Display financial balances from Actual Budget.",
     "issues": [],
     "stars": 1,
     "license": "AGPL-3.0"
@@ -3497,7 +3497,7 @@
     "id": "trumpetx/MMM-FamZoo",
     "maintainer": "trumpetx",
     "maintainerURL": "",
-    "description": "Display FamZoo balances",
+    "description": "Display FamZoo balances.",
     "issues": [],
     "stars": 1,
     "license": "AGPL-3.0"
@@ -4810,6 +4810,19 @@
     "issues": [],
     "stars": 7,
     "license": "GPL-2.0"
+  },
+  {
+    "name": "MMM-handball-netz",
+    "category": "Sports",
+    "url": "https://github.com/tschumel/MMM-handball-netz",
+    "id": "tschumel/MMM-handball-netz",
+    "maintainer": "tschumel",
+    "maintainerURL": "https://github.com/tschumel",
+    "description": "Display results and standings of your favorite German handball league. Supporting all leagues from amateur up to HBL",
+    "issues": [],
+    "stars": 0,
+    "hasGithubIssues": false,
+    "license": "MIT"
   },
   {
     "name": "MMM-Hanzi",
@@ -8654,19 +8667,6 @@
     "description": "Station monitor for the nextbike bike-sharing network.",
     "issues": [],
     "stars": 8
-  },
-  {
-    "name": "MMM-NextCloud-Tasks",
-    "category": "Utility / IoT / 3rd Party / Integration",
-    "url": "https://github.com/Coernel82/MMM-NextCloud-Tasks",
-    "id": "Coernel82/MMM-NextCloud-Tasks",
-    "maintainer": "Coernel82",
-    "maintainerURL": "",
-    "description": "Displays ToDo list(s) from NextCloud Tasks app and other ical / CalDav sources. Task can be toggled and sent back to the server, styling options and more filter options.",
-    "issues": [],
-    "stars": 0,
-    "hasGithubIssues": false,
-    "license": "MIT"
   },
   {
     "name": "MMM-NextEvent",

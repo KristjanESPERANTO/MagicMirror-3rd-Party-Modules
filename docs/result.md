@@ -1,6 +1,6 @@
 # Result of the module analysis
 
-Last update: 2025-04-02T08:24:07+02:00
+Last update: 2025-04-02T22:24:54+02:00
 
 ## General notes
 
@@ -12,9 +12,9 @@ Last update: 2025-04-02T08:24:07+02:00
 |                      | number   |
 |:---------------------|:--------:|
 | modules analyzed     |   1241   |
-| maintainer           |    662   |
-| modules with issues  |   1240   |
-| issues               |   8865   |
+| maintainer           |    663   |
+| modules with issues  |   1238   |
+| issues               |   8857   |
 | modules at github    |   1106   |
 | modules at gitlab    |     12   |
 | modules at bitbucket |      1   |
@@ -928,20 +928,20 @@ Last update: 2025-04-02T08:24:07+02:00
 2. Recommendation: There ist no CHANGELOG file. It is recommended to add one.
 3. Recommendation: There ist no CODE_OF_CONDUCT file. It is recommended to add one.
 4. Information: There are updates for 14 dependencie(s):
-   - @rollup/plugin-commonjs       ^28.0.2  →    ^28.0.3
-   - @rollup/plugin-node-resolve   ^16.0.0  →    ^16.0.1
-   - @stylistic/eslint-plugin      ^2.12.1  →     ^4.2.0
-   - @types/express                 ^5.0.0  →     ^5.0.1
-   - @types/node                  ^22.10.2  →  ^22.13.17
-   - bosch-smart-home-bridge        ^1.6.0  →    ^1.7.13
-   - eslint                        ^9.17.0  →    ^9.23.0
-   - eslint-config-prettier         ^9.1.0  →    ^10.1.1
-   - eslint-plugin-prettier         ^5.2.1  →     ^5.2.5
-   - prettier                       ^3.4.2  →     ^3.5.3
-   - rollup                        ^4.29.1  →    ^4.39.0
-   - rxjs                           ^7.8.1  →     ^7.8.2
-   - typescript                     ^5.7.2  →     ^5.8.2
-   - typescript-eslint             ^8.18.2  →    ^8.29.0
+   - @rollup/plugin-commonjs       ^28.0.2  →   ^28.0.3
+   - @rollup/plugin-node-resolve   ^16.0.0  →   ^16.0.1
+   - @stylistic/eslint-plugin      ^2.12.1  →    ^4.2.0
+   - @types/express                 ^5.0.0  →    ^5.0.1
+   - @types/node                  ^22.10.2  →  ^22.14.0
+   - bosch-smart-home-bridge        ^1.6.0  →   ^1.7.13
+   - eslint                        ^9.17.0  →   ^9.23.0
+   - eslint-config-prettier         ^9.1.0  →   ^10.1.1
+   - eslint-plugin-prettier         ^5.2.1  →    ^5.2.6
+   - prettier                       ^3.4.2  →    ^3.5.3
+   - rollup                        ^4.29.1  →   ^4.39.0
+   - rxjs                           ^7.8.1  →    ^7.8.2
+   - typescript                     ^5.7.2  →    ^5.8.2
+   - typescript-eslint             ^8.18.2  →   ^8.29.0
 
 
 ### [MMM-Bose-Soundtouch by spoturdeal](https://github.com/spoturdeal/MMM-Bose-Soundtouch)
@@ -1313,13 +1313,6 @@ Last update: 2025-04-02T08:24:07+02:00
    - moment          ^2.23.0  →  ^2.30.1
    - prettier         ^3.0.3  →   ^3.5.3
    - tsdav            ^2.0.3  →   ^2.1.3
-
-
-### [MMM-Carousel by shbatm](https://github.com/shbatm/MMM-Carousel)
-
-1. Information: There are updates for 2 dependencie(s):
-   - cspell                  ^8.18.0  →  ^8.18.1
-   - eslint-plugin-import-x   ^4.9.3  →  ^4.10.0
 
 
 ### [MMM-CECControl by nischi](https://github.com/nischi/MMM-CECControl)
@@ -2324,15 +2317,14 @@ Last update: 2025-04-02T08:24:07+02:00
 
 1. Recommendation: Found `uses: actions/checkout@v3` in file `nodejs.yml`: Replace it with v4.
 2. Recommendation: Found `uses: actions/setup-node@v3` in file `nodejs.yml`: Replace it with v4.
-3. Deprecated: Found `node-version: [16` in file `nodejs.yml`: Update to current version.
-4. Typo: Found `Magic Mirror` in file `MMM-Ecobee.js`: Replace it with `MagicMirror²`.
-5. Typo: Found `Magic Mirror` in file `README.md`: Replace it with `MagicMirror²`.
-6. Outdated: Found `MichMich/MagicMirror` in file `README.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
-7. Recommendation: Found `require("https")` in file `node_helper.js`: Replace "https" by "node:https".
-8. Typo: Found `MagicMirror2` in file `package.json`: Replace it with `MagicMirror²`.
-9. Recommendation: There ist no CHANGELOG file. It is recommended to add one.
-10. Recommendation: There ist no CODE_OF_CONDUCT file. It is recommended to add one.
-11. Recommendation: Replace eslintrc by new flat config.
+3. Typo: Found `Magic Mirror` in file `MMM-Ecobee.js`: Replace it with `MagicMirror²`.
+4. Typo: Found `Magic Mirror` in file `README.md`: Replace it with `MagicMirror²`.
+5. Outdated: Found `MichMich/MagicMirror` in file `README.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
+6. Recommendation: Found `require("https")` in file `node_helper.js`: Replace "https" by "node:https".
+7. Typo: Found `MagicMirror2` in file `package.json`: Replace it with `MagicMirror²`.
+8. Recommendation: There ist no CHANGELOG file. It is recommended to add one.
+9. Recommendation: There ist no CODE_OF_CONDUCT file. It is recommended to add one.
+10. Recommendation: Replace eslintrc by new flat config.
 
 ### [MMM-Ecosia-Tree-Counter by rehne](https://github.com/rehne/MMM-Ecosia-Tree-Counter)
 
@@ -3777,6 +3769,21 @@ Last update: 2025-04-02T08:24:07+02:00
 4. Recommendation: There ist no CODE_OF_CONDUCT file. It is recommended to add one.
 5. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
 
+### [MMM-handball-netz by tschumel](https://github.com/tschumel/MMM-handball-netz)
+
+1. `package.json` issue: No repository field.
+2. Issues are not enabled in the GitHub repository. So users cannot report bugs. Please enable issues in your repo.
+3. Recommendation: Found `XMLHttpRequest` in file `MMM-handball-netz.js`: Replace it with built-in fetch.
+4. Recommendation: Found `jshint` in file `MMM-handball-netz.js`: Replace "jshint" by "eslint".
+5. Recommendation: Found `axios` in file `README.md`: Replace it with built-in fetch.
+6. Outdated: Found `MichMich/MagicMirror` in file `README.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
+7. Recommendation: Found `axios` in file `node_helper.js`: Replace it with built-in fetch.
+8. Recommendation: Found `jshint` in file `node_helper.js`: Replace "jshint" by "eslint".
+9. Typo: Found `MagicMirror2` in file `package.json`: Replace it with `MagicMirror²`.
+10. Recommendation: Found `axios` in file `package.json`: Replace it with built-in fetch.
+11. Recommendation: There ist no CODE_OF_CONDUCT file. It is recommended to add one.
+12. Recommendation: Replace eslintrc by new flat config.
+
 ### [MMM-Hanzi by tderflinger](https://github.com/tderflinger/MMM-Hanzi)
 
 1. There is no `package.json`. We need this file to gather information about the module for the module list page.
@@ -4207,7 +4214,7 @@ Last update: 2025-04-02T08:24:07+02:00
    - eslint                     ^9.20.0  →  ^9.23.0
    - eventsource                 ^3.0.5  →   ^3.0.6
    - globals                   ^15.14.0  →  ^16.0.0
-   - undici                      ^7.3.0  →   ^7.6.0
+   - undici                      ^7.3.0  →   ^7.7.0
 
 
 ### [MMM-hukamnama by harv-singh](https://github.com/harv-singh/MMM-hukamnama)
@@ -6617,8 +6624,7 @@ Last update: 2025-04-02T08:24:07+02:00
 
 ### [MMM-MyScoreboard by dathbe](https://github.com/dathbe/MMM-MyScoreboard)
 
-1. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
-2. Information: There are updates for 1 dependencie(s):
+1. Information: There are updates for 1 dependencie(s):
    - moment-timezone  ^0.5.37  →  ^0.5.48
 
 
@@ -6654,13 +6660,6 @@ Last update: 2025-04-02T08:24:07+02:00
 8. Recommendation: There ist no CHANGELOG file. It is recommended to add one.
 9. Recommendation: There ist no CODE_OF_CONDUCT file. It is recommended to add one.
 10. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
-
-### [MMM-MyStandings by dathbe](https://github.com/dathbe/MMM-MyStandings)
-
-1. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
-2. Information: There are updates for 1 dependencie(s):
-   - directory-tree  ^3.3.1  →  ^3.5.2
-
 
 ### [MMM-MyStudyLife by ethanpartida](https://github.com/ethanpartida/MMM-MyStudyLife)
 
@@ -7030,22 +7029,6 @@ Last update: 2025-04-02T08:24:07+02:00
 6. Recommendation: There ist no CHANGELOG file. It is recommended to add one.
 7. Recommendation: There ist no CODE_OF_CONDUCT file. It is recommended to add one.
 8. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
-
-### [MMM-NextCloud-Tasks by Coernel82](https://github.com/Coernel82/MMM-NextCloud-Tasks)
-
-1. `package.json` issue: No repository field.
-2. There are no keywords in 'package.json'. We would use them as tags on the module list page.
-3. Issues are not enabled in the GitHub repository. So users cannot report bugs. Please enable issues in your repo.
-4. Recommendation: Found `jshint` in file `Gruntfile.js`: Replace "jshint" by "eslint".
-5. Typo: Found `Magic Mirror` in file `MMM-NextCloud-Tasks.js`: Replace it with `MagicMirror²`.
-6. Recommendation: Found `https://cdnjs.cloudflare.com` in file `MMM-NextCloud-Tasks.js`: It looks like a package is loaded via CDN. It would be better if the package were installed locally via npm.
-7. Typo: Found `Magic Mirror` in file `README.md`: Replace it with `MagicMirror²`.
-8. Outdated: Found `MichMich/MagicMirror` in file `README.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
-9. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
-10. Deprecated: Found `"lockfileVersion": 2` in file `package-lock.json`: Run `npm update` to update to lockfileVersion 3.
-11. Deprecated: Found `"grunt"` in file `package.json`: Grunt is practically unmaintained. Move on to something better.
-12. Recommendation: There ist no CODE_OF_CONDUCT file. It is recommended to add one.
-13. Recommendation: Replace eslintrc by new flat config.
 
 ### [MMM-NextEvent by cure](https://github.com/cure/MMM-NextEvent)
 
@@ -7733,10 +7716,11 @@ Last update: 2025-04-02T08:24:07+02:00
 1. There is no `package.json`. We need this file to gather information about the module for the module list page.
 2. Recommendation: Found `https://cdnjs.cloudflare.com` in file `MMM-Oura2.js`: It looks like a package is loaded via CDN. It would be better if the package were installed locally via npm.
 3. Outdated: Found `MichMich/MagicMirror` in file `README.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
-4. Warning: No LICENSE file.
-5. Recommendation: There ist no CHANGELOG file. It is recommended to add one.
-6. Recommendation: There ist no CODE_OF_CONDUCT file. It is recommended to add one.
-7. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
+4. Recommendation: Found `https://cdnjs.cloudflare.com` in file `oura.js`: It looks like a package is loaded via CDN. It would be better if the package were installed locally via npm.
+5. Warning: No LICENSE file.
+6. Recommendation: There ist no CHANGELOG file. It is recommended to add one.
+7. Recommendation: There ist no CODE_OF_CONDUCT file. It is recommended to add one.
+8. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
 
 ### [MMM-Overwatch by retroflex](https://github.com/retroflex/MMM-Overwatch)
 
@@ -8005,21 +7989,18 @@ Last update: 2025-04-02T08:24:07+02:00
 ### [MMM-PGA by mumblebaj](https://github.com/mumblebaj/MMM-PGA)
 
 1. Issue: The license in the package.json (ISC) doesn't match the license file (MIT).
-2. Recommendation: Found `'node-fetch'` in file `ESPN.js`: Replace it with built-in fetch.
-3. Recommendation: Found `'node-fetch'` in file `FEDEXCUP.js`: Replace it with built-in fetch.
-4. Typo: Found `Magic Mirror` in file `MMM-PGA.js`: Replace it with `MagicMirror²`.
-5. Recommendation: Found `XMLHttpRequest` in file `MMM-PGA.js`: Replace it with built-in fetch.
-6. Recommendation: Found `'node-fetch'` in file `OWGR.js`: Replace it with built-in fetch.
-7. Typo: Found `Magic Mirror` in file `README.md`: Replace it with `MagicMirror²`.
-8. Outdated: Found `MichMich/MagicMirror` in file `README.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
-9. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
-10. Deprecated: Found `require('request')` in file `node_helper.js`: Replace it with built-in fetch.
-11. Recommendation: Found `"node-fetch"` in file `package.json`: Replace it with built-in fetch.
-12. Outdated: Found `MichMich/MagicMirror` in file `package.json`: Replace it by `MagicMirrorOrg/MagicMirror`.
-13. Recommendation: Found `XMLHttpRequest` in file `favorites.js`: Replace it with built-in fetch.
-14. Recommendation: There ist no CHANGELOG file. It is recommended to add one.
-15. Recommendation: There ist no CODE_OF_CONDUCT file. It is recommended to add one.
-16. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
+2. Recommendation: Found `'node-fetch'` in file `FEDEXCUP.js`: Replace it with built-in fetch.
+3. Typo: Found `Magic Mirror` in file `MMM-PGA.js`: Replace it with `MagicMirror²`.
+4. Recommendation: Found `XMLHttpRequest` in file `MMM-PGA.js`: Replace it with built-in fetch.
+5. Typo: Found `Magic Mirror` in file `README.md`: Replace it with `MagicMirror²`.
+6. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
+7. Deprecated: Found `require('request')` in file `node_helper.js`: Replace it with built-in fetch.
+8. Recommendation: Found `"node-fetch"` in file `package.json`: Replace it with built-in fetch.
+9. Outdated: Found `MichMich/MagicMirror` in file `package.json`: Replace it by `MagicMirrorOrg/MagicMirror`.
+10. Recommendation: Found `XMLHttpRequest` in file `favorites.js`: Replace it with built-in fetch.
+11. Recommendation: There ist no CHANGELOG file. It is recommended to add one.
+12. Recommendation: There ist no CODE_OF_CONDUCT file. It is recommended to add one.
+13. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
 
 ### [MMM-PGHBus by yuhanx0728](https://github.com/yuhanx0728/MMM-PGHBus)
 
@@ -8468,9 +8449,10 @@ Last update: 2025-04-02T08:24:07+02:00
 4. Recommendation: The README seems not to have an update instruction (the word 'update' is missing). Please add one.
 5. Recommendation: Found `'node-fetch'` in file `node_helper.js`: Replace it with built-in fetch.
 6. Typo: Found `Magic Mirror` in file `package.json`: Replace it with `MagicMirror²`.
-7. Recommendation: There ist no CHANGELOG file. It is recommended to add one.
-8. Recommendation: There ist no CODE_OF_CONDUCT file. It is recommended to add one.
-9. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
+7. Recommendation: Found `"node-fetch"` in file `package.json`: Replace it with built-in fetch.
+8. Recommendation: There ist no CHANGELOG file. It is recommended to add one.
+9. Recommendation: There ist no CODE_OF_CONDUCT file. It is recommended to add one.
+10. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects.
 
 ### [MMM-ProfileControl by Tom-Hirschberger](https://github.com/Tom-Hirschberger/MMM-ProfileControl)
 
@@ -8560,15 +8542,7 @@ Last update: 2025-04-02T08:24:07+02:00
 
 ### [MMM-PublicTransportBerlin by deg0nz](https://github.com/deg0nz/MMM-PublicTransportBerlin)
 
-1. Information: There are updates for 6 dependencie(s):
-   - @eslint/js               ^9.22.0  →   ^9.23.0
-   - cspell                   ^8.17.5  →   ^8.18.1
-   - eslint                   ^9.22.0  →   ^9.23.0
-   - eslint-plugin-import-x    ^4.7.1  →   ^4.10.0
-   - eslint-plugin-jsonc      ^2.19.1  →   ^2.20.0
-   - stylelint               ^16.16.0  →  ^16.17.0
-
-2. ESLint issues:
+1. ESLint issues:
    - package.json: Line 37, Column 19: Package dependencies are not alphabetized (rule: package-json/sort-collections)
 
 
@@ -8967,7 +8941,7 @@ Last update: 2025-04-02T08:24:07+02:00
    - body-parser             ^1.20.3  →   ^2.2.0
    - cspell                  ^8.18.0  →  ^8.18.1
    - eslint-plugin-import-x   ^4.9.3  →  ^4.10.0
-   - swagger-ui              ^5.20.1  →  ^5.20.2
+   - swagger-ui              ^5.20.1  →  ^5.20.3
 
 
 ### [MMM-RemoteCompliments by mitchelltmarino](https://github.com/mitchelltmarino/MMM-RemoteCompliments)

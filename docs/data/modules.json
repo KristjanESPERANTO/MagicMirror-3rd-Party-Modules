@@ -151,7 +151,7 @@
     "id": "trumpetx/MMM-Actual",
     "maintainer": "trumpetx",
     "maintainerURL": "",
-    "description": "Display financial balances from Actual Budget",
+    "description": "Display financial balances from Actual Budget.",
     "issues": true,
     "stars": 1,
     "license": "AGPL-3.0",
@@ -2293,7 +2293,7 @@
     "maintainer": "shbatm",
     "maintainerURL": "https://github.com/shbatm",
     "description": "Rotate modules, to save space on screen.",
-    "issues": true,
+    "issues": false,
     "stars": 43,
     "license": "MIT",
     "tags": [
@@ -2306,8 +2306,8 @@
       "pages"
     ],
     "image": "img-example1-slide.jpg",
-    "defaultSortWeight": 0,
-    "lastCommit": "2025-03-28T21:55:58+01:00"
+    "defaultSortWeight": -1,
+    "lastCommit": "2025-04-01T08:26:39+02:00"
   },
   {
     "name": "MMM-CECControl",
@@ -4259,8 +4259,8 @@
       "thermostat"
     ],
     "image": "sample.jpg",
-    "defaultSortWeight": 10,
-    "lastCommit": "2023-11-07T13:47:38-06:00"
+    "defaultSortWeight": 9,
+    "lastCommit": "2025-04-01T17:21:46-05:00"
   },
   {
     "name": "MMM-Ecosia-Tree-Counter",
@@ -4907,7 +4907,7 @@
     "id": "trumpetx/MMM-FamZoo",
     "maintainer": "trumpetx",
     "maintainerURL": "",
-    "description": "Display FamZoo balances",
+    "description": "Display FamZoo balances.",
     "issues": true,
     "stars": 1,
     "license": "AGPL-3.0",
@@ -6711,6 +6711,27 @@
     "image": "screenshot.jpg",
     "defaultSortWeight": 4,
     "lastCommit": "2024-12-31T13:21:07+00:00"
+  },
+  {
+    "name": "MMM-handball-netz",
+    "category": "Sports",
+    "url": "https://github.com/tschumel/MMM-handball-netz",
+    "id": "tschumel/MMM-handball-netz",
+    "maintainer": "tschumel",
+    "maintainerURL": "https://github.com/tschumel",
+    "description": "Display results and standings of your favorite German handball league. Supporting all leagues from amateur up to HBL",
+    "issues": true,
+    "stars": 0,
+    "hasGithubIssues": false,
+    "license": "MIT",
+    "tags": [
+      "handball standings",
+      "handball",
+      "tables"
+    ],
+    "image": ".github-example1.jpg",
+    "defaultSortWeight": 12,
+    "lastCommit": "2025-04-02T19:06:50+02:00"
   },
   {
     "name": "MMM-Hanzi",
@@ -11374,9 +11395,9 @@
       "sports",
       "sports"
     ],
-    "image": "example.jpg",
-    "defaultSortWeight": 2,
-    "lastCommit": "2025-03-31T13:45:38-07:00"
+    "image": "example1.jpg",
+    "defaultSortWeight": 1,
+    "lastCommit": "2025-04-01T21:14:00-07:00"
   },
   {
     "name": "MMM-MySenseHat",
@@ -11440,7 +11461,7 @@
     "maintainer": "dathbe",
     "maintainerURL": "",
     "description": "Display ESPN standings for major US Sports and international soccer leagues.",
-    "issues": true,
+    "issues": false,
     "stars": 2,
     "tags": [
       "sports",
@@ -11449,8 +11470,8 @@
     ],
     "license": "MIT",
     "image": "screenshot.jpg",
-    "defaultSortWeight": 2,
-    "lastCommit": "2025-03-30T23:51:00-07:00"
+    "defaultSortWeight": 1,
+    "lastCommit": "2025-04-01T18:25:11-07:00"
   },
   {
     "name": "MMM-MyStudyLife",
@@ -12132,22 +12153,6 @@
     "image": "screenshots-screenshot_de.jpg",
     "defaultSortWeight": 9,
     "lastCommit": "2020-11-01T19:07:10+01:00"
-  },
-  {
-    "name": "MMM-NextCloud-Tasks",
-    "category": "Utility / IoT / 3rd Party / Integration",
-    "url": "https://github.com/Coernel82/MMM-NextCloud-Tasks",
-    "id": "Coernel82/MMM-NextCloud-Tasks",
-    "maintainer": "Coernel82",
-    "maintainerURL": "",
-    "description": "Displays ToDo list(s) from NextCloud Tasks app and other ical / CalDav sources. Task can be toggled and sent back to the server, styling options and more filter options.",
-    "issues": true,
-    "stars": 0,
-    "hasGithubIssues": false,
-    "license": "MIT",
-    "image": "assets-demo_screenshot.jpg",
-    "defaultSortWeight": 13,
-    "lastCommit": "2025-02-09T08:33:33+01:00"
   },
   {
     "name": "MMM-NextEvent",
@@ -13357,7 +13362,7 @@
     "issues": true,
     "stars": 4,
     "defaultSortWeight": 7,
-    "lastCommit": "2022-07-20T06:33:59-04:00"
+    "lastCommit": "2025-04-01T12:50:09-04:00"
   },
   {
     "name": "MMM-Overwatch",
@@ -13465,7 +13470,7 @@
     ],
     "image": "example.jpg",
     "defaultSortWeight": 2,
-    "lastCommit": "2025-03-09T00:01:49+01:00"
+    "lastCommit": "2025-04-01T06:18:12-07:00"
   },
   {
     "name": "MMM-pages",
@@ -13731,7 +13736,7 @@
     "issues": true,
     "stars": 18,
     "license": "MIT",
-    "defaultSortWeight": 10,
+    "defaultSortWeight": 11,
     "lastCommit": "2023-04-02T09:30:36-04:00"
   },
   {
@@ -13781,8 +13786,8 @@
       "sports"
     ],
     "image": "images-screenshot-1.jpg",
-    "defaultSortWeight": 16,
-    "lastCommit": "2024-02-03T15:52:24+02:00"
+    "defaultSortWeight": 13,
+    "lastCommit": "2025-04-02T18:34:08+02:00"
   },
   {
     "name": "MMM-PGHBus",
@@ -13968,7 +13973,7 @@
     "license": "MIT",
     "image": ".github-discon-preview.jpg",
     "defaultSortWeight": 5,
-    "lastCommit": "2024-10-08T01:24:38+02:00"
+    "lastCommit": "2025-04-01T22:13:13+02:00"
   },
   {
     "name": "MMM-Pir",
@@ -13987,7 +13992,7 @@
     ],
     "image": "screenshot-screenshot.jpg",
     "defaultSortWeight": 3,
-    "lastCommit": "2025-02-10T09:56:26+01:00"
+    "lastCommit": "2025-04-01T20:56:33+02:00"
   },
   {
     "name": "MMM-PIR",
@@ -14567,8 +14572,8 @@
     "stars": 0,
     "license": "MIT",
     "image": "screenshot.jpg",
-    "defaultSortWeight": 8,
-    "lastCommit": "2024-05-22T17:35:25+02:00"
+    "defaultSortWeight": 9,
+    "lastCommit": "2025-04-02T08:56:52+02:00"
   },
   {
     "name": "MMM-ProfileControl",
@@ -14718,8 +14723,8 @@
       "brandenburg"
     ],
     "image": "img-MMM-PublicTransport_screenshot.jpg",
-    "defaultSortWeight": 1,
-    "lastCommit": "2025-03-16T01:40:57+01:00"
+    "defaultSortWeight": 0,
+    "lastCommit": "2025-04-01T08:17:59+02:00"
   },
   {
     "name": "MMM-PublicTransportHafas",
@@ -15576,7 +15581,7 @@
     "license": "MIT",
     "image": "screenshot.jpg",
     "defaultSortWeight": 6,
-    "lastCommit": "2024-12-20T16:53:47-06:00"
+    "lastCommit": "2025-04-01T17:22:38-05:00"
   },
   {
     "name": "MMM-RKI-Covid19",
@@ -15928,7 +15933,7 @@
     ],
     "image": "cache-samples-pexels-dan-mooham.jpg",
     "defaultSortWeight": 3,
-    "lastCommit": "2025-03-29T18:33:29-04:00"
+    "lastCommit": "2025-03-31T20:59:50-04:00"
   },
   {
     "name": "MMM-Sbanken",

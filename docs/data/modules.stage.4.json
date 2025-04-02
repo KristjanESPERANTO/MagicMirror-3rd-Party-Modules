@@ -144,7 +144,7 @@
     "id": "trumpetx/MMM-Actual",
     "maintainer": "trumpetx",
     "maintainerURL": "",
-    "description": "Display financial balances from Actual Budget",
+    "description": "Display financial balances from Actual Budget.",
     "issues": [
       "`package.json` issue: license should be a valid SPDX license expression",
       "Issue: The license in the package.json (AGPL3) doesn't match the license file (AGPL-3.0).",
@@ -4851,7 +4851,7 @@
     "id": "trumpetx/MMM-FamZoo",
     "maintainer": "trumpetx",
     "maintainerURL": "",
-    "description": "Display FamZoo balances",
+    "description": "Display FamZoo balances.",
     "issues": [
       "`package.json` issue: No repository field.",
       "`package.json` issue: No license field.",
@@ -6654,6 +6654,28 @@
     "stars": 7,
     "license": "GPL-2.0",
     "image": "screenshot.jpg"
+  },
+  {
+    "name": "MMM-handball-netz",
+    "category": "Sports",
+    "url": "https://github.com/tschumel/MMM-handball-netz",
+    "id": "tschumel/MMM-handball-netz",
+    "maintainer": "tschumel",
+    "maintainerURL": "https://github.com/tschumel",
+    "description": "Display results and standings of your favorite German handball league. Supporting all leagues from amateur up to HBL",
+    "issues": [
+      "`package.json` issue: No repository field.",
+      "Issues are not enabled in the GitHub repository. So users cannot report bugs. Please enable issues in your repo."
+    ],
+    "stars": 0,
+    "hasGithubIssues": false,
+    "license": "MIT",
+    "tags": [
+      "handball standings",
+      "handball",
+      "tables"
+    ],
+    "image": ".github-example1.jpg"
   },
   {
     "name": "MMM-Hanzi",
@@ -11305,7 +11327,7 @@
       "sports",
       "sports"
     ],
-    "image": "example.jpg"
+    "image": "example1.jpg"
   },
   {
     "name": "MMM-MySenseHat",
@@ -12046,24 +12068,6 @@
     ],
     "license": "MIT",
     "image": "screenshots-screenshot_de.jpg"
-  },
-  {
-    "name": "MMM-NextCloud-Tasks",
-    "category": "Utility / IoT / 3rd Party / Integration",
-    "url": "https://github.com/Coernel82/MMM-NextCloud-Tasks",
-    "id": "Coernel82/MMM-NextCloud-Tasks",
-    "maintainer": "Coernel82",
-    "maintainerURL": "",
-    "description": "Displays ToDo list(s) from NextCloud Tasks app and other ical / CalDav sources. Task can be toggled and sent back to the server, styling options and more filter options.",
-    "issues": [
-      "`package.json` issue: No repository field.",
-      "There are no keywords in 'package.json'. We would use them as tags on the module list page.",
-      "Issues are not enabled in the GitHub repository. So users cannot report bugs. Please enable issues in your repo."
-    ],
-    "stars": 0,
-    "hasGithubIssues": false,
-    "license": "MIT",
-    "image": "assets-demo_screenshot.jpg"
   },
   {
     "name": "MMM-NextEvent",

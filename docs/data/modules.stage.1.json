@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "2025-03-31T22:16:40.032Z",
+  "lastUpdate": "2025-04-02T20:12:25.164Z",
   "modules": [
     {
       "name": "MMM-01ZM",
@@ -88,7 +88,7 @@
       "id": "trumpetx/MMM-Actual",
       "maintainer": "trumpetx",
       "maintainerURL": "",
-      "description": "Display financial balances from Actual Budget",
+      "description": "Display financial balances from Actual Budget.",
       "issues": []
     },
     {
@@ -2959,7 +2959,7 @@
       "id": "trumpetx/MMM-FamZoo",
       "maintainer": "trumpetx",
       "maintainerURL": "",
-      "description": "Display FamZoo balances",
+      "description": "Display FamZoo balances.",
       "issues": []
     },
     {
@@ -4060,6 +4060,16 @@
       "maintainer": "SLFaleiro",
       "maintainerURL": "https://github.com/SLFaleiro",
       "description": "🎃 Adds a spooky Halloween theme to your display by animating ghosts across the screen.",
+      "issues": []
+    },
+    {
+      "name": "MMM-handball-netz",
+      "category": "Sports",
+      "url": "https://github.com/tschumel/MMM-handball-netz",
+      "id": "tschumel/MMM-handball-netz",
+      "maintainer": "tschumel",
+      "maintainerURL": "https://github.com/tschumel",
+      "description": "Display results and standings of your favorite German handball league. Supporting all leagues from amateur up to HBL",
       "issues": []
     },
     {
@@ -7320,16 +7330,6 @@
       "maintainer": "yo-less",
       "maintainerURL": "",
       "description": "Station monitor for the nextbike bike-sharing network.",
-      "issues": []
-    },
-    {
-      "name": "MMM-NextCloud-Tasks",
-      "category": "Utility / IoT / 3rd Party / Integration",
-      "url": "https://github.com/Coernel82/MMM-NextCloud-Tasks",
-      "id": "Coernel82/MMM-NextCloud-Tasks",
-      "maintainer": "Coernel82",
-      "maintainerURL": "",
-      "description": "Displays ToDo list(s) from NextCloud Tasks app and other ical / CalDav sources. Task can be toggled and sent back to the server, styling options and more filter options.",
       "issues": []
     },
     {
