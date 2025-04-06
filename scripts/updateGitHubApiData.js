@@ -46,10 +46,25 @@ async function updateData () {
   try {
     // Read the previous version of the data
     let previousData = {};
+    const remoteFilePath = "https://modules.magicmirror.builders/data/gitHubData.json";
+    const localFilePath = "docs/data/gitHubData.json";
+
     try {
-      previousData = JSON.parse(fs.readFileSync("docs/data/gitHubData.json"));
+      const response = await fetch(remoteFilePath);
+      if (response.ok) {
+        previousData = await response.json();
+      } else if (fs.existsSync(localFilePath)) {
+        previousData = JSON.parse(fs.readFileSync(localFilePath));
+      } else {
+        console.warn(`Local file ${localFilePath} does not exist.`);
+      }
     } catch (error) {
-      console.error("Error reading previous data:", error);
+      console.error("Error fetching remote data, falling back to local file:", error);
+      try {
+        previousData = JSON.parse(fs.readFileSync(localFilePath));
+      } catch (localError) {
+        console.error("Error reading local data:", localError);
+      }
     }
 
     const moduleListData = await getJson("./docs/data/modules.stage.1.json");
@@ -159,7 +174,7 @@ async function updateData () {
 
     const sortedModuleList = moduleList.sort(sortByNameIgnoringPrefix);
 
-    fs.writeFileSync("docs/data/gitHubData.json", JSON.stringify(updateInfo, null, 2));
+    fs.writeFileSync(localFilePath, JSON.stringify(updateInfo, null, 2));
     fs.writeFileSync("docs/data/modules.stage.2.json", JSON.stringify(sortedModuleList, null, 2));
     console.info("\nGitHub data update completed. queryCount:", queryCount, "maxQueryCount:", maxQueryCount, "results:", results.length, "modules:", moduleListLength);
   } catch (error) {
