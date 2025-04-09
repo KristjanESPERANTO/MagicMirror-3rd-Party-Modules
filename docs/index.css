@@ -349,14 +349,20 @@ main {
   transform: translateY(-50%);
 }
 
-#unofficial-comment {
+#header-comment {
   font-size: small;
   margin-top: -25px;
   margin-bottom: 5px;
 }
 
-#unofficial-comment a {
+#header-comment a {
   color: #888;
+}
+
+#disclaimer {
+  font-size: small;
+  margin-top: -10px;
+  margin-bottom: 5px;
 }
 
 @media (0 <= width <= 800px) {
@@ -376,7 +382,7 @@ main {
     margin: 0.25em;
   }
 
-  #unofficial-comment {
+  #header-comment {
     margin-top: -10px;
   }
 }
