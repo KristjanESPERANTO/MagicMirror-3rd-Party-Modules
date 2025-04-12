@@ -38,7 +38,7 @@ The aim of the tests is to increase the quality of the modules, also in order to
 
 If you have ideas for further tests, you are welcome to create an issue or pull request. And if you as a developer do not like a test, you are welcome to give feedback or simply ignore the result.
 
-The results of the tests you can see in the [`result.html`](./docs/result.html).
+The results of the tests you can see in the [`result.html`](https://modules.magicmirror.builders/result.html).
 
 Here are some test results:
 
@@ -107,7 +107,7 @@ This script does some additional checks on the modules like if the main js file 
 
 ### check_modules.py
 
-This script goes through all cloned modules and performs various checks. The result is written to the files [`result.html`](./docs/result.html) and [`modules.json`](./docs/data/modules.json).
+This script goes through all cloned modules and performs various checks. The result is written to the files [`result.html`](https://modules.magicmirror.builders/result.html) and [`modules.json`](./docs/data/modules.json).
 
 ### Special script: create_own_module_list.js
 
@@ -119,7 +119,7 @@ How can you use it?
 
 1. Write the module or modules you want to test in a new file [`ownModuleList.json`](ownModuleList.json) (use `ownModuleList_sample.json` as template). The only obligatory field is "url", but you can also enter a "branch".
 2. Execute `npm run ownList`.
-3. You can see the result in [`result.html`](./docs/result.html).
+3. You can see the result in [`result.html`](https://modules.magicmirror.builders/result.html).
 
 ## Ideas / To do
 
