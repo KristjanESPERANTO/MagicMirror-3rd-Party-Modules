@@ -82,9 +82,46 @@ Add the following scripts to your `package.json` file:
 }
 ```
 
-### 4 - Add ESLint to your development workflow
+### 4 - Add ESLint to your development workflow (optional)
 
-You can now run ESLint manually by executing the following command in your terminal:
+#### A - Run it automatically before committing (recommended)
+
+If you want to run ESLint automatically before committing any changes, you can use a tool like [Husky](https://typicode.github.io/husky/) to set up a pre-commit hook and [lint-staged](https://www.npmjs.com/package/lint-staged) to only lint staged files. This will help ensure that your code is always linted before it is committed.
+
+To set this up, first install `Husky` and `lint-staged` as development dependencies:
+
+```bash
+npm install --save-dev husky lint-staged
+```
+
+Then, add the following configuration to your `package.json` file:
+
+```json
+  "lint-staged": {
+    "*.{js,mjs}": "eslint --fix"
+  }
+```
+
+And also in the `package.json` file, add the following lines to the `scripts` section:
+
+```json
+  "scripts": {
+    "prepare": "husky",
+  }
+```
+
+Create a pre-commit hook by running the following command in your terminal:
+
+```bash
+npx husky init
+echo "npx lint-staged" > .husky/pre-commit
+```
+
+This will set up `Husky` to run the `lint-staged` command before committing any changes. The `lint-staged` command will only lint the files that are staged for commit, which can save time and resources.
+
+#### B - Run it manually before committing (optional)
+
+You can run ESLint manually by executing the following command in your terminal:
 
 ```bash
 npm run lint
