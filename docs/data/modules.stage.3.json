@@ -1902,6 +1902,24 @@
     "image": "screenshot.jpg"
   },
   {
+    "name": "MMM-CalDAV-Tasks",
+    "category": "Utility / IoT / 3rd Party / Integration",
+    "url": "https://github.com/Coernel82/MMM-CalDAV-Tasks",
+    "id": "Coernel82/MMM-CalDAV-Tasks",
+    "maintainer": "Coernel82",
+    "maintainerURL": "",
+    "description": "Displays ToDo list(s) from NextCloud Tasks app and other ical / CalDav sources. Task can be toggled and sent back to the server, styling options and more filter options. Formerly this module was called MMM-Nextcloud-Tasks.",
+    "issues": [
+      "`package.json` issue: No repository field.",
+      "There are no keywords in 'package.json'. We would use them as tags on the module list page.",
+      "Issues are not enabled in the GitHub repository. So users cannot report bugs. Please enable issues in your repo."
+    ],
+    "stars": 0,
+    "hasGithubIssues": false,
+    "license": "MIT",
+    "image": "assets-demo_screenshot.jpg"
+  },
+  {
     "name": "calendar_monthly",
     "category": "Outdated Modules",
     "url": "https://github.com/KirAsh4/calendar_monthly/",
@@ -3063,6 +3081,21 @@
     "stars": 7
   },
   {
+    "name": "MMM-Ctan",
+    "category": "Transport / Travel",
+    "url": "https://github.com/Infinitte/MMM-Ctan",
+    "id": "Infinitte/MMM-Ctan",
+    "maintainer": "Infinitte",
+    "maintainerURL": "https://github.com/Infinitte",
+    "description": "Arrival times for Andalusian Transport Consortium.",
+    "issues": [
+      "There is no `package.json`. We need this file to gather information about the module for the module list page."
+    ],
+    "stars": 0,
+    "license": "MIT",
+    "image": "example_1.jpg"
+  },
+  {
     "name": "MMM-CuandoLlega",
     "category": "Transport / Travel",
     "url": "https://github.com/bibaldo/MMM-CuandoLlega",
@@ -4144,6 +4177,23 @@
     "stars": 7,
     "license": "MIT",
     "image": "pix-1.jpg"
+  },
+  {
+    "name": "MMM-EarthquakeAlerts",
+    "category": "News / Information",
+    "url": "https://github.com/dathbe/MMM-EarthquakeAlerts",
+    "id": "dathbe/MMM-EarthquakeAlerts",
+    "maintainer": "dathbe",
+    "maintainerURL": "",
+    "description": "This module allows you to to display alerts for earthquakes near a chosen location.",
+    "issues": [],
+    "stars": 1,
+    "license": "MIT",
+    "tags": [
+      "earthquakes",
+      "news"
+    ],
+    "image": "screenshot.jpg"
   },
   {
     "name": "MMM-EarthquakeMonitor",
@@ -6452,7 +6502,7 @@
       "There is no `package.json`. We need this file to gather information about the module for the module list page.",
       "No image found."
     ],
-    "stars": 1,
+    "stars": 3,
     "license": "MIT"
   },
   {
@@ -6647,7 +6697,7 @@
     "id": "tschumel/MMM-handball-netz",
     "maintainer": "tschumel",
     "maintainerURL": "https://github.com/tschumel",
-    "description": "Display results and standings of your favorite German handball league. Supporting all leagues from amateur up to HBL",
+    "description": "Display results and standings of your favorite German handball league. Supporting all leagues from amateur up to HBL.",
     "issues": [
       "`package.json` issue: No repository field.",
       "Issues are not enabled in the GitHub repository. So users cannot report bugs. Please enable issues in your repo."
@@ -6798,7 +6848,7 @@
       "`package.json` issue: No repository field.",
       "There are no keywords in 'package.json'. We would use them as tags on the module list page."
     ],
-    "stars": 1,
+    "stars": 2,
     "license": "ISC",
     "image": "docs-muscle_split.jpg"
   },
@@ -6963,22 +7013,6 @@
   {
     "name": "MMM-HomeAssistant",
     "category": "Utility / IoT / 3rd Party / Integration",
-    "url": "https://github.com/yourdawi/MMM-HomeAssistant",
-    "id": "yourdawi/MMM-HomeAssistant",
-    "maintainer": "yourdawi",
-    "maintainerURL": "https://github.com/yourdawi",
-    "description": "Display information out of HomeAssistant.",
-    "issues": [
-      "`package.json` issue: No repository field.",
-      "There are no keywords in 'package.json'. We would use them as tags on the module list page.",
-      "No image found."
-    ],
-    "stars": 3,
-    "license": "MIT"
-  },
-  {
-    "name": "MMM-HomeAssistant",
-    "category": "Utility / IoT / 3rd Party / Integration",
     "url": "https://github.com/zuo000/MMM-HomeAssistant",
     "id": "zuo000/MMM-HomeAssistant",
     "maintainer": "zuo000",
@@ -6992,20 +7026,19 @@
     "image": "screenshot.jpg"
   },
   {
-    "name": "MMM-homeassistant-sensors",
+    "name": "MMM-HomeAssistant",
     "category": "Utility / IoT / 3rd Party / Integration",
-    "url": "https://github.com/ledsi/MMM-homeassistant-sensors",
-    "id": "ledsi/MMM-homeassistant-sensors",
-    "maintainer": "ledsi",
-    "maintainerURL": "",
-    "description": "Display information from Home Assistant using the home assistant REST API.",
+    "url": "https://github.com/yourdawi/MMM-HomeAssistant",
+    "id": "yourdawi/MMM-HomeAssistant",
+    "maintainer": "yourdawi",
+    "maintainerURL": "https://github.com/yourdawi",
+    "description": "Display information out of HomeAssistant.",
     "issues": [
-      "There is no `package.json`. We need this file to gather information about the module for the module list page.",
-      "Issues are not enabled in the GitHub repository. So users cannot report bugs. Please enable issues in your repo.",
+      "`package.json` issue: No repository field.",
+      "There are no keywords in 'package.json'. We would use them as tags on the module list page.",
       "No image found."
     ],
-    "stars": 0,
-    "hasGithubIssues": false,
+    "stars": 3,
     "license": "MIT"
   },
   {
@@ -7024,6 +7057,23 @@
       "ha"
     ],
     "image": ".github-screen01-advanced.jpg"
+  },
+  {
+    "name": "MMM-homeassistant-sensors",
+    "category": "Utility / IoT / 3rd Party / Integration",
+    "url": "https://github.com/ledsi/MMM-homeassistant-sensors",
+    "id": "ledsi/MMM-homeassistant-sensors",
+    "maintainer": "ledsi",
+    "maintainerURL": "",
+    "description": "Display information from Home Assistant using the home assistant REST API.",
+    "issues": [
+      "There is no `package.json`. We need this file to gather information about the module for the module list page.",
+      "Issues are not enabled in the GitHub repository. So users cannot report bugs. Please enable issues in your repo.",
+      "No image found."
+    ],
+    "stars": 0,
+    "hasGithubIssues": false,
+    "license": "MIT"
   },
   {
     "name": "MMM-HomeAssistant-Touch",
@@ -9178,6 +9228,19 @@
     "stars": 9
   },
   {
+    "name": "MMM-Lyrion",
+    "category": "Utility / IoT / 3rd Party / Integration",
+    "url": "https://github.com/barnosch/MMM-Lyrion",
+    "id": "barnosch/MMM-Lyrion",
+    "maintainer": "barnosch",
+    "maintainerURL": "",
+    "description": "Shows the current Song and Player from your Lyrion Music / Logitech Media / LMS Server",
+    "issues": [
+      "There is no `package.json`. We need this file to gather information about the module for the module list page."
+    ],
+    "stars": 1
+  },
+  {
     "name": "MMM-MacAddressScan",
     "category": "Utility / IoT / 3rd Party / Integration",
     "url": "https://github.com/doctorfree/MMM-MacAddressScan",
@@ -9258,7 +9321,7 @@
       "No image found."
     ],
     "outdated": "No changes since years. It's not a good start anymore. Use <a href=\"https://github.com/Dennis-Rosenbaum/MMM-Template\">MMM-Template</a> instead.",
-    "stars": 75,
+    "stars": 74,
     "license": "MIT"
   },
   {
@@ -9315,7 +9378,7 @@
     "maintainerURL": "",
     "description": "Prevent screen burn-in on your MagicMirror².",
     "issues": [],
-    "stars": 53,
+    "stars": 54,
     "license": "MIT",
     "tags": [
       "screensaver",
@@ -9612,7 +9675,7 @@
     "issues": [
       "There is no `package.json`. We need this file to gather information about the module for the module list page."
     ],
-    "stars": 34,
+    "stars": 33,
     "license": "MIT",
     "image": "img-MMM-Memo-Blues.jpg"
   },
@@ -9942,7 +10005,7 @@
     "issues": [
       "There is no `package.json`. We need this file to gather information about the module for the module list page."
     ],
-    "stars": 62,
+    "stars": 64,
     "license": "MIT",
     "image": "LauncherIcon-MMM-Remote-LauncherIcon.jpg"
   },
@@ -10364,7 +10427,7 @@
     "maintainerURL": "https://github.com/Bee-Mar",
     "description": "An unofficial MagicMirror² 3rd Party Package Manager. Automates searching, installation, removal, updating, and upgrading of MagicMirror² modules.",
     "issues": [],
-    "stars": 211,
+    "stars": 212,
     "license": "MIT",
     "keywords": [
       "package manager",
@@ -10461,7 +10524,7 @@
     "maintainerURL": "",
     "description": "Create schedules to control when other modules are shown, hidden or dimmed and to send notifications to other modules.",
     "issues": [],
-    "stars": 108,
+    "stars": 109,
     "license": "MIT",
     "tags": [
       "scheduler"
@@ -10510,7 +10573,7 @@
     "issues": [
       "There is no `package.json`. We need this file to gather information about the module for the module list page."
     ],
-    "stars": 41,
+    "stars": 44,
     "license": "MIT",
     "image": "screenshot.jpg"
   },
@@ -10996,7 +11059,7 @@
     "maintainerURL": "https://github.com/BKeyport",
     "description": "Display multiple mini-calendars at the same time.",
     "issues": [],
-    "stars": 15,
+    "stars": 16,
     "license": "MIT",
     "tags": [
       "calendar"
@@ -11101,7 +11164,7 @@
     "maintainerURL": "",
     "description": "Display public transport 🚐 from Munich in Germany.",
     "issues": [],
-    "stars": 11,
+    "stars": 12,
     "license": "MIT",
     "tags": [
       "public transport",
@@ -11121,7 +11184,7 @@
     "issues": [
       "There are no keywords in 'package.json'. We would use them as tags on the module list page."
     ],
-    "stars": 0,
+    "stars": 1,
     "license": "MIT",
     "image": "screenshot.jpg"
   },
@@ -11282,7 +11345,7 @@
     "id": "dathbe/MMM-MyScoreboard",
     "maintainer": "dathbe",
     "maintainerURL": "",
-    "description": "Display today's scores for your favourite teams across multiple sports.",
+    "description": "Display scores for your favorite teams from many major sports.",
     "issues": [],
     "stars": 3,
     "license": "MIT",
@@ -11350,7 +11413,7 @@
     "id": "dathbe/MMM-MyStandings",
     "maintainer": "dathbe",
     "maintainerURL": "",
-    "description": "Display ESPN standings for major US Sports and international soccer leagues.",
+    "description": "Display standings and rankings for your favorite leagues and divisions from many major sports, including Olympics.",
     "issues": [],
     "stars": 2,
     "tags": [
@@ -12293,15 +12356,14 @@
     "maintainerURL": "",
     "description": "Different providers for users to choose from. Shows current plus 3 day forecast. Mouseover shows forecast, with Air, UV, Humidity, Sunrise and Set.",
     "issues": [
-      "Issues are not enabled in the GitHub repository. So users cannot report bugs. Please enable issues in your repo."
+      "Issue: The license in the package.json (ISC) doesn't match the license file (MIT)."
     ],
     "stars": 2,
-    "hasGithubIssues": false,
+    "license": "MIT",
     "tags": [
       "weather",
       "noaa"
     ],
-    "license": "ISC",
     "image": "examples-1.jpg"
   },
   {
@@ -12433,7 +12495,7 @@
     "maintainerURL": "",
     "description": "This module displays Nouncil voting participation data.",
     "issues": [],
-    "stars": 0,
+    "stars": 17,
     "license": "MIT",
     "tags": [
       "nouncil",
@@ -12451,7 +12513,7 @@
     "maintainerURL": "",
     "description": "This module displays real-time Nouns auction status.",
     "issues": [],
-    "stars": 0,
+    "stars": 17,
     "license": "MIT",
     "tags": [
       "ethereum",
@@ -12482,6 +12544,26 @@
       "blockchain"
     ],
     "image": "preview.jpg"
+  },
+  {
+    "name": "MMM-NounsStream",
+    "category": "Cryptocurrency",
+    "url": "https://github.com/XppaiCyberr/MMM-NounsStream",
+    "id": "XppaiCyberr/MMM-NounsStream",
+    "maintainer": "XppaiCyberr",
+    "maintainerURL": "",
+    "description": "This module displays Payroll Stream from Nouns DAO.",
+    "issues": [
+      "`package.json` issue: No repository field."
+    ],
+    "stars": 0,
+    "license": "MIT",
+    "tags": [
+      "nouns",
+      "ethereum",
+      "smart-contract"
+    ],
+    "image": "screenshot.jpg"
   },
   {
     "name": "MMM-NounsTimeline",
@@ -13250,12 +13332,14 @@
     "maintainer": "edward-shen",
     "maintainerURL": "",
     "description": "A helper module to display what page you're on. Intended to be used with other modules that rotate out modules.",
-    "issues": [
-      "There is no `package.json`. We need this file to gather information about the module for the module list page."
-    ],
+    "issues": [],
     "stars": 44,
     "license": "MIT",
-    "image": "example_picture.jpg"
+    "tags": [
+      "pages",
+      "slides"
+    ],
+    "image": "examples-screencast_1_without-styling.jpg"
   },
   {
     "name": "MMM-Page-Pusher",
@@ -13806,7 +13890,7 @@
     "issues": [
       "There is no `package.json`. We need this file to gather information about the module for the module list page."
     ],
-    "stars": 3,
+    "stars": 4,
     "license": "MIT",
     "image": ".github-discon-preview.jpg"
   },
@@ -15743,7 +15827,7 @@
     "maintainerURL": "https://github.com/uphillcheddar",
     "description": "Displays images from AWS S3, comes with setup script to set up AWS resources. Addtional features include MMM-Selfieshot uploads, photo attributations and various layout options.",
     "issues": [],
-    "stars": 1,
+    "stars": 2,
     "license": "MIT",
     "tags": [
       "s3",
@@ -15830,7 +15914,7 @@
     "maintainerURL": "",
     "description": "Display scottish premiere league standings.",
     "issues": [],
-    "outdated": "Abandoned. Repo has been archived at 2020-05-09.",
+    "outdated": "Abandoned. Repo has been archived at 2020-05-09. See <a href=\"https://github.com/dathbe/MMM-MyStandings\">MMM-MyStandings</a> instead.",
     "stars": 1,
     "isArchived": true,
     "license": "MIT",
@@ -16467,7 +16551,7 @@
       "`package.json` issue: No license field.",
       "There are no keywords in 'package.json'. We would use them as tags on the module list page."
     ],
-    "stars": 1
+    "stars": 2
   },
   {
     "name": "MMM-SimpleText",
@@ -16709,7 +16793,7 @@
     "issues": [
       "No image found."
     ],
-    "stars": 63,
+    "stars": 64,
     "tags": [
       "iframe",
       "notification"
@@ -17014,7 +17098,7 @@
     "maintainerURL": "",
     "description": "Display the currently playing track of your Sonos system.",
     "issues": [],
-    "stars": 46,
+    "stars": 47,
     "license": "MIT",
     "tags": [
       "sonos",
@@ -17154,7 +17238,7 @@
     "issues": [
       "There is no `package.json`. We need this file to gather information about the module for the module list page."
     ],
-    "stars": 53,
+    "stars": 52,
     "license": "MIT",
     "image": "images-Example.jpg"
   },
@@ -17407,7 +17491,7 @@
     "maintainerURL": "",
     "description": "Displays last reading from your Dexcom G6 via the share API.",
     "issues": [],
-    "stars": 3,
+    "stars": 5,
     "license": "MIT",
     "tags": [
       "dexcom"
@@ -17528,7 +17612,7 @@
       "There are no keywords in 'package.json'. We would use them as tags on the module list page.",
       "No image found."
     ],
-    "stars": 8,
+    "stars": 9,
     "license": "MIT"
   },
   {
@@ -17573,7 +17657,7 @@
       "`package.json` issue: No repository field.",
       "There are no keywords in 'package.json'. We would use them as tags on the module list page."
     ],
-    "stars": 6,
+    "stars": 7,
     "license": "MIT",
     "image": "Stationboard.jpg"
   },
@@ -17785,7 +17869,7 @@
       "Issue: The license in the package.json (CC BY-NC 4.0) doesn't match the license file (NOASSERTION).",
       "No compatible or wrong license field in 'package.json' or LICENSE file. Without that, we can't use an image."
     ],
-    "stars": 7,
+    "stars": 6,
     "license": "NOASSERTION",
     "tags": [
       "gas",
@@ -19275,7 +19359,7 @@
     "issues": [
       "No image found."
     ],
-    "stars": 78,
+    "stars": 80,
     "license": "MIT",
     "tags": [
       "voice recognition",
@@ -19389,7 +19473,7 @@
     "maintainerURL": "",
     "description": "Easy configuration module to display bus and train arrivals/departures with different display types for Germany (VRR and more EFA).",
     "issues": [],
-    "stars": 15,
+    "stars": 16,
     "license": "MIT",
     "tags": [
       "vrr",
@@ -19480,7 +19564,7 @@
       "There are no keywords in 'package.json'. We would use them as tags on the module list page.",
       "No image found."
     ],
-    "stars": 114,
+    "stars": 116,
     "license": "MIT"
   },
   {
@@ -19724,6 +19808,7 @@
     ],
     "outdated": "Abandoned. The author no longer maintains this module.",
     "stars": 10,
+    "isArchived": true,
     "license": "GPL-3.0",
     "image": "icon-0.jpg"
   },
@@ -19880,7 +19965,7 @@
     "issues": [
       "There are no keywords in 'package.json'. We would use them as tags on the module list page."
     ],
-    "stars": 64,
+    "stars": 65,
     "license": "MIT",
     "image": "images-screenshot.jpg"
   },
@@ -19976,7 +20061,7 @@
     "issues": [
       "There is no `package.json`. We need this file to gather information about the module for the module list page."
     ],
-    "stars": 15,
+    "stars": 16,
     "license": "MIT",
     "image": "screenshot.jpg"
   },
@@ -20120,7 +20205,7 @@
     "maintainerURL": "",
     "description": "Display local time of several locations. Fully supported and updated.",
     "issues": [],
-    "stars": 39,
+    "stars": 40,
     "tags": [
       "clock"
     ],
@@ -20155,11 +20240,14 @@
     "maintainer": "mumblebaj",
     "maintainerURL": "",
     "description": "Yet another word of the day module. The special feature of this module is that you can select multiple languages and it will display as a carousel.",
-    "issues": [
-      "There are no specific keywords in 'package.json'. We would use them as tags on the module list page. Add a few meaningful terms to the keywords in the package.json. Not just “magicmirror” or “module”."
-    ],
+    "issues": [],
     "stars": 5,
     "license": "MIT",
+    "tags": [
+      "education",
+      "learning",
+      "wotd"
+    ],
     "image": "image-1.jpg"
   },
   {
@@ -20541,11 +20629,11 @@
   {
     "name": "MMM-Zmanim",
     "category": "Religion",
-    "url": "https://github.com/shmulyeng/MMM-Zmanim",
-    "id": "shmulyeng/MMM-Zmanim",
-    "maintainer": "shmulyeng",
+    "url": "https://github.com/supermem613/MMM-Zmanim",
+    "id": "supermem613/MMM-Zmanim",
+    "maintainer": "supermem613",
     "maintainerURL": "",
-    "description": "Displays daily Jewish calendar information.",
+    "description": "Displays Zmanim (Jewish calendar information).",
     "issues": [
       "`package.json` issue: No description",
       "`package.json` issue: No repository field.",
@@ -20560,11 +20648,11 @@
   {
     "name": "MMM-Zmanim",
     "category": "Religion",
-    "url": "https://github.com/supermem613/MMM-Zmanim",
-    "id": "supermem613/MMM-Zmanim",
-    "maintainer": "supermem613",
+    "url": "https://github.com/shmulyeng/MMM-Zmanim",
+    "id": "shmulyeng/MMM-Zmanim",
+    "maintainer": "shmulyeng",
     "maintainerURL": "",
-    "description": "Displays Zmanim (Jewish calendar information).",
+    "description": "Displays daily Jewish calendar information.",
     "issues": [
       "`package.json` issue: No description",
       "`package.json` issue: No repository field.",

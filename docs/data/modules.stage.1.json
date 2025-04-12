@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "2025-04-02T20:12:25.164Z",
+  "lastUpdate": "2025-04-12T08:56:21.453Z",
   "modules": [
     {
       "name": "MMM-01ZM",
@@ -1152,6 +1152,16 @@
       "issues": []
     },
     {
+      "name": "MMM-CalDAV-Tasks",
+      "category": "Utility / IoT / 3rd Party / Integration",
+      "url": "https://github.com/Coernel82/MMM-CalDAV-Tasks",
+      "id": "Coernel82/MMM-CalDAV-Tasks",
+      "maintainer": "Coernel82",
+      "maintainerURL": "",
+      "description": "Displays ToDo list(s) from NextCloud Tasks app and other ical / CalDav sources. Task can be toggled and sent back to the server, styling options and more filter options. Formerly this module was called MMM-Nextcloud-Tasks.",
+      "issues": []
+    },
+    {
       "name": "calendar_monthly",
       "category": "Outdated Modules",
       "url": "https://github.com/KirAsh4/calendar_monthly/",
@@ -1876,6 +1886,16 @@
       "issues": []
     },
     {
+      "name": "MMM-Ctan",
+      "category": "Transport / Travel",
+      "url": "https://github.com/Infinitte/MMM-Ctan",
+      "id": "Infinitte/MMM-Ctan",
+      "maintainer": "Infinitte",
+      "maintainerURL": "https://github.com/Infinitte",
+      "description": "Arrival times for Andalusian Transport Consortium.",
+      "issues": []
+    },
+    {
       "name": "MMM-CuandoLlega",
       "category": "Transport / Travel",
       "url": "https://github.com/bibaldo/MMM-CuandoLlega",
@@ -2546,6 +2566,16 @@
       "description": "The probability of an earthquake in your city. You'll be surprised!",
       "issues": [],
       "outdated": "Deprecated. API is disabled."
+    },
+    {
+      "name": "MMM-EarthquakeAlerts",
+      "category": "News / Information",
+      "url": "https://github.com/dathbe/MMM-EarthquakeAlerts",
+      "id": "dathbe/MMM-EarthquakeAlerts",
+      "maintainer": "dathbe",
+      "maintainerURL": "",
+      "description": "This module allows you to to display alerts for earthquakes near a chosen location.",
+      "issues": []
     },
     {
       "name": "MMM-EarthquakeMonitor",
@@ -4069,7 +4099,7 @@
       "id": "tschumel/MMM-handball-netz",
       "maintainer": "tschumel",
       "maintainerURL": "https://github.com/tschumel",
-      "description": "Display results and standings of your favorite German handball league. Supporting all leagues from amateur up to HBL",
+      "description": "Display results and standings of your favorite German handball league. Supporting all leagues from amateur up to HBL.",
       "issues": []
     },
     {
@@ -5616,6 +5646,16 @@
       "issues": []
     },
     {
+      "name": "MMM-Lyrion",
+      "category": "Utility / IoT / 3rd Party / Integration",
+      "url": "https://github.com/barnosch/MMM-Lyrion",
+      "id": "barnosch/MMM-Lyrion",
+      "maintainer": "barnosch",
+      "maintainerURL": "",
+      "description": "Shows the current Song and Player from your Lyrion Music / Logitech Media / LMS Server",
+      "issues": []
+    },
+    {
       "name": "MMM-MacAddressScan",
       "category": "Utility / IoT / 3rd Party / Integration",
       "url": "https://github.com/doctorfree/MMM-MacAddressScan",
@@ -6894,7 +6934,7 @@
       "id": "dathbe/MMM-MyScoreboard",
       "maintainer": "dathbe",
       "maintainerURL": "",
-      "description": "Display today's scores for your favourite teams across multiple sports.",
+      "description": "Display scores for your favorite teams from many major sports.",
       "issues": []
     },
     {
@@ -6934,7 +6974,7 @@
       "id": "dathbe/MMM-MyStandings",
       "maintainer": "dathbe",
       "maintainerURL": "",
-      "description": "Display ESPN standings for major US Sports and international soccer leagues.",
+      "description": "Display standings and rankings for your favorite leagues and divisions from many major sports, including Olympics.",
       "issues": []
     },
     {
@@ -7593,6 +7633,16 @@
       "maintainer": "XppaiCyberr",
       "maintainerURL": "",
       "description": "This module displays recent Nouns DAO governance proposals with voting information.",
+      "issues": []
+    },
+    {
+      "name": "MMM-NounsStream",
+      "category": "Cryptocurrency",
+      "url": "https://github.com/XppaiCyberr/MMM-NounsStream",
+      "id": "XppaiCyberr/MMM-NounsStream",
+      "maintainer": "XppaiCyberr",
+      "maintainerURL": "",
+      "description": "This module displays Payroll Stream from Nouns DAO.",
       "issues": []
     },
     {
@@ -9651,7 +9701,7 @@
       "maintainerURL": "",
       "description": "Display scottish premiere league standings.",
       "issues": [],
-      "outdated": "Abandoned. Repo has been archived at 2020-05-09."
+      "outdated": "Abandoned. Repo has been archived at 2020-05-09. See <a href=\"https://github.com/dathbe/MMM-MyStandings\">MMM-MyStandings</a> instead."
     },
     {
       "name": "MMM-Scrapey",
