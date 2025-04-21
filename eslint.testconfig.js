@@ -31,7 +31,7 @@ const config = [
       "reportUnusedDisableDirectives": "off"
     },
     "rules": {
-      "depend/ban-dependencies": ["error", {"allowed": ["moment", "eslint-plugin-import"]}],
+      "depend/ban-dependencies": ["error", {"allowed": ["moment"]}],
       "import/no-unresolved": "off",
       "no-prototype-builtins": "off",
       "no-redeclare": "off",
@@ -51,7 +51,7 @@ const config = [
       "reportUnusedDisableDirectives": "off"
     },
     "rules": {
-      "depend/ban-dependencies": ["error", {"allowed": ["moment", "eslint-plugin-import"]}],
+      "depend/ban-dependencies": ["error", {"allowed": ["moment"]}],
       "import/no-unresolved": "off"
     }
   },

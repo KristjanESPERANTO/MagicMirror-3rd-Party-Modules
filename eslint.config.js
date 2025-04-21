@@ -47,7 +47,7 @@ const config = [
     "rules": {
       ...eslintPluginStylistic.configs.all.rules,
       "complexity": "off",
-      "depend/ban-dependencies": ["error", {"allowed": ["moment", "eslint-plugin-import"]}],
+      "depend/ban-dependencies": ["error", {"allowed": ["moment"]}],
       "func-style": "off",
       "id-length": ["error", {"exceptions": ["a", "b"]}],
       "import/no-unresolved": "off",
