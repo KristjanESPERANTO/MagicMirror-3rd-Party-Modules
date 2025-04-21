@@ -32,7 +32,7 @@ const config = [
     },
     "rules": {
       "depend/ban-dependencies": ["error", {"allowed": ["moment"]}],
-      "import/no-unresolved": "off",
+      "import-x/no-unresolved": "off",
       "no-prototype-builtins": "off",
       "no-redeclare": "off",
       "no-undef": "off"
@@ -52,7 +52,7 @@ const config = [
     },
     "rules": {
       "depend/ban-dependencies": ["error", {"allowed": ["moment"]}],
-      "import/no-unresolved": "off"
+      "import-x/no-unresolved": "off"
     }
   },
   {
