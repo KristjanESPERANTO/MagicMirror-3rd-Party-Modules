@@ -364,6 +364,14 @@ def check_modules():
                                         "Recommendation: The README seems not to have an install instruction (the words 'install' or 'installation' are missing). Please add one."
                                     )
 
+                                # Search for "modules: [" in README
+                                found_modules_string = search_in_file(
+                                    file_path, "modules: [")
+                                if found_modules_string:
+                                    module["issues"].append(
+                                        "Recommendation: The README seems to have a modules array (Found `modules: [`). This is usually not necessary. Please remove it if it is not needed."
+                                    )
+
                             if len(module["issues"]) < 1:
                                 if ".yml" in str(file_path).lower():
                                     module["issues"].append(
