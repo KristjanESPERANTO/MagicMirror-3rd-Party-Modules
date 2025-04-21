@@ -1,16 +1,16 @@
 import {configs as dependConfigs} from "eslint-plugin-depend";
-import eslintPluginImport from "eslint-plugin-import";
 import eslintPluginJs from "@eslint/js";
 import eslintPluginJson from "@eslint/json";
 import eslintPluginPackageJson from "eslint-plugin-package-json";
 import eslintPluginStylistic from "@stylistic/eslint-plugin";
 import globals from "globals";
+import {flatConfigs as importConfigs} from "eslint-plugin-import-x";
 
 const config = [
   dependConfigs["flat/recommended"],
-  eslintPluginImport.flatConfigs.recommended,
   eslintPluginJs.configs.all,
   eslintPluginPackageJson.configs.recommended,
+  importConfigs.recommended,
   {
     "ignores": [
       "modules/*",

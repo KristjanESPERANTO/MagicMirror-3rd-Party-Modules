@@ -62,7 +62,7 @@
     "cspell": "^8.19.2",
     "eslint": "^9.25.0",
     "eslint-plugin-depend": "^1.0.0",
-    "eslint-plugin-import": "^2.31.0",
+    "eslint-plugin-import-x": "^4.10.6",
     "eslint-plugin-package-json": "^0.29.1",
     "husky": "^9.1.7",
     "lint-staged": "^15.5.1",
