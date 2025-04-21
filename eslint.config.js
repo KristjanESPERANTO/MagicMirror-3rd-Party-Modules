@@ -1,6 +1,7 @@
 import {configs as dependConfigs} from "eslint-plugin-depend";
 import eslintPluginJs from "@eslint/js";
 import eslintPluginJson from "@eslint/json";
+import eslintPluginMarkdown from "@eslint/markdown";
 import eslintPluginPackageJson from "eslint-plugin-package-json";
 import eslintPluginStylistic from "@stylistic/eslint-plugin";
 import globals from "globals";
@@ -11,6 +12,19 @@ const config = [
   eslintPluginJs.configs.all,
   eslintPluginPackageJson.configs.recommended,
   importConfigs.recommended,
+  ...eslintPluginMarkdown.configs.recommended,
+  {
+    "files": ["**/*.md"],
+    "language": "markdown/gfm",
+    "plugins": {
+      eslintPluginMarkdown
+    },
+    "rules": {
+      "logical-assignment-operators": "off",
+      "max-lines-per-function": "off",
+      "no-irregular-whitespace": "off"
+    }
+  },
   {
     "ignores": [
       "modules/*",
