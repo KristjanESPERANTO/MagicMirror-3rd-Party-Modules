@@ -382,10 +382,12 @@ def check_modules():
                                 found_config_string = search_regex_in_file(
                                     file_path, r"\{\s*[^}]*?\s*config:\s*\{\s*[^}]*\}(?:[,\s]\s*[^}]*?)}"
                                 )
+
                                 if not found_config_string:
-                                    module["issues"].append(
-                                        "Recommendation: The README seems not to have a config example. Please add one."
-                                    )
+                                    if not found_modules_string:
+                                        module["issues"].append(
+                                            "Recommendation: The README seems not to have a config example. Please add one."
+                                        )
                                 else:
                                     # Check if the config example has an trailing comma
                                     found_trailing_comma = search_regex_in_file(
