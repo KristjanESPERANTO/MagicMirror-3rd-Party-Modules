@@ -342,26 +342,20 @@ def check_modules():
                                     )
 
                             if file_path.name.startswith("README") and file_path.parent == module_directory_path:
-                                # Search for "update" or "Update" in README
-                                found_update_string = search_in_file(
-                                    file_path, "Update")
-                                if not found_update_string:
-                                    found_update_string = search_in_file(
-                                        file_path, "update")
-                                if not found_update_string:
+                                # Search for an update section in README
+                                found_update_section = search_in_file(
+                                    file_path, "## Updat")
+                                if not found_update_section:
                                     module["issues"].append(
-                                        "Recommendation: The README seems not to have an update instruction (the word 'update' is missing). Please add one."
+                                        "Recommendation: The README seems not to have an update section (like `## Update`). Please add one."
                                     )
 
-                                # Search for "install" in README
-                                found_clone_string = search_in_file(
-                                    file_path, "Install")
-                                if not found_clone_string:
-                                    found_clone_string = search_in_file(
-                                        file_path, "install")
-                                if not found_clone_string:
+                                # Search for an install section in README
+                                found_install_section = search_in_file(
+                                    file_path, "## Install")
+                                if not found_install_section:
                                     module["issues"].append(
-                                        "Recommendation: The README seems not to have an install instruction (the words 'install' or 'installation' are missing). Please add one."
+                                        "Recommendation: The README seems not to have an install section (like `## Installation`). Please add one."
                                     )
 
                                 # Search for "modules: [" in README
