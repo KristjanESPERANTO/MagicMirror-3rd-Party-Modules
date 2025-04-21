@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "2025-04-12T08:56:21.453Z",
+  "lastUpdate": "2025-04-21T09:45:03.753Z",
   "modules": [
     {
       "name": "MMM-01ZM",
@@ -1303,6 +1303,16 @@
       "issues": []
     },
     {
+      "name": "MMM-CalvinAndHobbes",
+      "category": "Entertainment / Misc",
+      "url": "https://github.com/B3DTech/MMM-CalvinAndHobbes",
+      "id": "B3DTech/MMM-CalvinAndHobbes",
+      "maintainer": "B3DTech",
+      "maintainerURL": "",
+      "description": "Displays the daily Calvin and Hobbes comic.",
+      "issues": []
+    },
+    {
       "name": "camera",
       "category": "Utility / IoT / 3rd Party / Integration",
       "url": "https://github.com/Rallymen007/camera",
@@ -1393,6 +1403,16 @@
       "description": "World Population and demographics, by age and sex, or by individual country. 1950 - 2100.",
       "issues": [],
       "outdated": "Abandoned. The API endpoint changed. There is a PR to fix that, but the author is inactive."
+    },
+    {
+      "name": "MMM-ChameleonWeather",
+      "category": "Weather",
+      "url": "https://github.com/ChrisF1976/MMM-ChameleonWeather",
+      "id": "ChrisF1976/MMM-ChameleonWeather",
+      "maintainer": "ChrisF1976",
+      "maintainerURL": "https://github.com/ChrisF1976",
+      "description": "A fun and visually dynamic module that shows a chameleon whose appearance changes depending on the temperature and weather conditions.",
+      "issues": []
     },
     {
       "name": "MMM-CHAMPIONSQUEUE-LEADERBOARD",
@@ -3165,6 +3185,16 @@
       "outdated": "Deprecated. Use MMM-EUElectricityPrice instead. Repo has been archived at 2024-10-30."
     },
     {
+      "name": "MMM-FilterMonitor",
+      "category": "Utility / IoT / 3rd Party / Integration",
+      "url": "https://github.com/ChrisF1976/MMM-FilterMonitor",
+      "id": "ChrisF1976/MMM-FilterMonitor",
+      "maintainer": "ChrisF1976",
+      "maintainerURL": "https://github.com/ChrisF1976",
+      "description": "Monitors filter status via Shelly device power consumption.",
+      "issues": []
+    },
+    {
       "name": "MMM-FinParcel",
       "category": "Outdated Modules",
       "url": "https://github.com/jesmak/MMM-FinParcel",
@@ -4683,7 +4713,7 @@
       "id": "basti0001/MMM-iHaveBeenThere",
       "maintainer": "basti0001",
       "maintainerURL": "",
-      "description": "Visualizes your places where you have been traveled..or intend to go.",
+      "description": "Visualizes the places where you have been traveled or intend to go.",
       "issues": []
     },
     {
@@ -5652,7 +5682,7 @@
       "id": "barnosch/MMM-Lyrion",
       "maintainer": "barnosch",
       "maintainerURL": "",
-      "description": "Shows the current Song and Player from your Lyrion Music / Logitech Media / LMS Server",
+      "description": "Shows the current song and player from your Lyrion Music / Logitech Media / LMS Server.",
       "issues": []
     },
     {
@@ -6056,7 +6086,7 @@
       "id": "thess/MMM-MktIndex",
       "maintainer": "thess",
       "maintainerURL": "",
-      "description": "Display market indicies using (free) Yahoo Finance API.",
+      "description": "Display market indices using (free) Yahoo Finance API.",
       "issues": []
     },
     {
@@ -6260,7 +6290,7 @@
       "id": "cSharpBastard/mmm-nordic-electrical-spot-prices",
       "maintainer": "cSharpBastard",
       "maintainerURL": "https://github.com/cSharpBastard",
-      "description": "Display current electrical spot prices in northen Europe (also works in Germany).",
+      "description": "Display current electrical spot prices in northern Europe (also works in Germany).",
       "issues": []
     },
     {
@@ -7613,6 +7643,16 @@
       "maintainer": "XppaiCyberr",
       "maintainerURL": "",
       "description": "This module displays Nouncil voting participation data.",
+      "issues": []
+    },
+    {
+      "name": "MMM-NounishReminder",
+      "category": "Cryptocurrency",
+      "url": "https://github.com/xppaicyberr/MMM-NounishReminder",
+      "id": "xppaicyberr/MMM-NounishReminder",
+      "maintainer": "xppaicyberr",
+      "maintainerURL": "",
+      "description": "This module displays Nounish Events.",
       "issues": []
     },
     {
@@ -10385,6 +10425,16 @@
       "maintainer": "grenagit",
       "maintainerURL": "",
       "description": "Display the last Solar Dynamics Observatory (SDO) picture.",
+      "issues": []
+    },
+    {
+      "name": "MMM-SolaxPV",
+      "category": "Utility / IoT / 3rd Party / Integration",
+      "url": "https://github.com/KayosPi/MMM-SolaxPV",
+      "id": "KayosPi/MMM-SolaxPV",
+      "maintainer": "KayosPi",
+      "maintainerURL": "",
+      "description": "Monitor a Solax inverter using the API. Text and graphical layouts available.",
       "issues": []
     },
     {
