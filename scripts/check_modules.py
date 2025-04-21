@@ -5,6 +5,7 @@ from pathlib import Path
 from datetime import datetime, timezone
 import json
 import subprocess
+import re
 import deprecation_check
 import eslint_checks
 
@@ -13,7 +14,18 @@ def search_in_file(path, search_string):
     """Function to search a string in a file."""
     try:
         with open(path, "r", encoding="utf-8") as file:
-            if search_string in file.read():
+            content = file.read()
+            if search_string in content:
+                return True
+    except UnicodeDecodeError:
+        pass
+
+def search_regex_in_file(path, search_string):
+    """Function to search regex pattern in a file."""
+    try:
+        with open(path, "r", encoding="utf-8") as file:
+            content = file.read()
+            if re.search(search_string, content):
                 return True
     except UnicodeDecodeError:
         pass
@@ -365,6 +377,23 @@ def check_modules():
                                     module["issues"].append(
                                         "Recommendation: The README seems to have a modules array (Found `modules: [`). This is usually not necessary. Please remove it if it is not needed."
                                     )
+
+                                # Search for config example with regex "\{\s*[^}]*?\s*config:\s*\{\s*[^}]*\}(?!\s*,\s*\})\s*\}"
+                                found_config_string = search_regex_in_file(
+                                    file_path, r"\{\s*[^}]*?\s*config:\s*\{\s*[^}]*\}(?:[,\s]\s*[^}]*?)}"
+                                )
+                                if not found_config_string:
+                                    module["issues"].append(
+                                        "Recommendation: The README seems not to have a config example. Please add one."
+                                    )
+                                else:
+                                    # Check if the config example has an trailing comma
+                                    found_trailing_comma = search_regex_in_file(
+                                        file_path, r"\{\s*[^}]*?\s*config:\s*\{\s*[^}]*\}(?:[,\s]\s*[^}]*?)},")
+                                    if not found_trailing_comma:
+                                        module["issues"].append(
+                                            "Recommendation: The README seems to have a config example with out a trailing comma. Please add one."
+                                        )
 
                             if len(module["issues"]) < 1:
                                 if ".yml" in str(file_path).lower():
