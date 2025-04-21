@@ -22,7 +22,8 @@
     "ratp",
     "rollup",
     "smarthome",
-    "testconfig"
+    "testconfig",
+    "Updat"
   ],
   "ignorePaths": [
     "node_modules/",
