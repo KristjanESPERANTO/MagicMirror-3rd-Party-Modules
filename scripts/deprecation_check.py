@@ -15,8 +15,11 @@ def check_deprecated_packages(directory_path):
         return
 
     try:
+        # Install npm-deprecated-check if not already installed
+        subprocess.run("npm install -g npm-deprecated-check", shell=True, check=False)
+        # Run npm-deprecated-check
         result = subprocess.run(
-            "npx npm-deprecated-check current",
+            "ndc current",
             cwd=directory_path,
             capture_output=True,
             shell=True,
