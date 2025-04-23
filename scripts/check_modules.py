@@ -373,7 +373,9 @@ def check_modules():
                                 # Search for "modules: [" in README
                                 found_modules_string = search_in_file(
                                     file_path, "modules: [")
-                                if found_modules_string:
+                                false_positive_modules = ["MMM-pages", "MMM-WebSpeechTTS"]
+
+                                if found_modules_string and module["name"] not in false_positive_modules:
                                     module["issues"].append(
                                         "Recommendation: The README seems to have a modules array (Found `modules: [`). This is usually not necessary. Please remove it if it is not needed."
                                     )
@@ -384,7 +386,8 @@ def check_modules():
                                 )
 
                                 if not found_config_string:
-                                    if not found_modules_string:
+                                    false_positive_modules = ["MMM-CalendarExt2"]
+                                    if not found_modules_string and module["name"] not in false_positive_modules:
                                         module["issues"].append(
                                             "Recommendation: The README seems not to have a config example. Please add one."
                                         )
@@ -392,9 +395,10 @@ def check_modules():
                                     # Check if the config example has an trailing comma
                                     found_trailing_comma = search_regex_in_file(
                                         file_path, r"\{\s*[^}]*?\s*config:\s*\{\s*[^}]*\}(?:[,\s]\s*[^}]*?)},")
-                                    if not found_trailing_comma:
+                                    false_positive_modules = ["MMM-MealieMenu", "MMM-Remote-Control"]
+                                    if not found_trailing_comma and module["name"] not in false_positive_modules:
                                         module["issues"].append(
-                                            "Recommendation: The README seems to have a config example with out a trailing comma. Please add one."
+                                            "Recommendation: The README seems to have a config example without a trailing comma. Please add one."
                                         )
 
                             if len(module["issues"]) < 1:
