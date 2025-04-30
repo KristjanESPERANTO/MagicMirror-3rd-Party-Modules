@@ -10,4 +10,24 @@ Please help use to improve this guide. If you have any suggestions, please creat
 
 ## Hint "No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects."
 
-To get started with ESLint checkout [ESLint](eslint.md).
+To get started with ESLint, check out [ESLint](eslint.md).
+
+## Hint "Recommendation: The README seems not to have a config example. Please add one."
+
+For information on best practices for a README config section, check out [Config Instructions](readme_bestpractices.md#Config-Instructions).
+
+## Hint "Recommendation: The README seems not to have an install section (like ## Installation). Please add one."
+
+For information on best practices for a README installation section, check out [Installation Instructions](readme_bestpractices.md#Installation-Instructions).
+
+## Hint "Recommendation: The README seems not to have an update section (like ## Update). Please add one."
+
+For information on best practices for a README update section, check out [Update Instructions](readme_bestpractices.md#Update-Instructions).
+
+## Hint "Recommendation: The README seems to have a config example without a trailing comma. Please add one."
+
+For information on best practices for a README config section, check out [Config Instructions](readme_bestpractices.md#Config-Instructions).
+
+## Hint "Recommendation: The README seems to have a modules array (Found modules: [). This is usually not necessary. Please remove it if it is not needed."
+
+For information on best practices for a README config section, check out [Config Instructions](readme_bestpractices.md#Config-Instructions).
