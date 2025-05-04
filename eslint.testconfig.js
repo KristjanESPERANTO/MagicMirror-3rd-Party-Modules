@@ -1,37 +1,35 @@
-import {configs as dependConfigs} from "eslint-plugin-depend";
-import eslintPluginJs from "@eslint/js";
-import eslintPluginPackageJson from "eslint-plugin-package-json";
+import {defineConfig} from "eslint/config";
+import depend from "eslint-plugin-depend";
 import globals from "globals";
-import {flatConfigs as importConfigs} from "eslint-plugin-import-x";
+import {flatConfigs as importX} from "eslint-plugin-import-x";
+import js from "@eslint/js";
+import packageJson from "eslint-plugin-package-json";
 
-const config = [
-  dependConfigs["flat/recommended"],
-  eslintPluginJs.configs.recommended,
-  eslintPluginPackageJson.configs.recommended,
-  importConfigs.recommended,
+export default defineConfig([
   {
-    "ignores": ["**/*.min.js"]
+    ignores: ["**/*.min.js"]
   },
   {
-    "files": ["**/*.js"],
-    "languageOptions": {
-      "ecmaVersion": "latest",
-      "globals": {
+    files: ["**/*.js"],
+    languageOptions: {
+      ecmaVersion: "latest",
+      globals: {
         ...globals.browser,
         ...globals.node,
-        "config": "readonly",
-        "Log": "readonly",
-        "MM": "readonly",
-        "Module": "readonly",
-        "moment": "readonly"
+        config: "readonly",
+        Log: "readonly",
+        MM: "readonly",
+        Module: "readonly",
+        moment: "readonly"
       },
-      "sourceType": "commonjs"
+      sourceType: "commonjs"
     },
-    "linterOptions": {
-      "reportUnusedDisableDirectives": "off"
+    linterOptions: {
+      reportUnusedDisableDirectives: "off"
     },
-    "rules": {
-      "depend/ban-dependencies": ["error", {"allowed": ["moment"]}],
+    plugins: {js},
+    extends: [importX.recommended, "js/recommended"],
+    rules: {
       "import-x/no-unresolved": "off",
       "no-prototype-builtins": "off",
       "no-redeclare": "off",
@@ -39,29 +37,30 @@ const config = [
     }
   },
   {
-    "files": ["**/*.mjs"],
-    "languageOptions": {
-      "ecmaVersion": "latest",
-      "globals": {
+    files: ["**/*.mjs"],
+    languageOptions: {
+      ecmaVersion: "latest",
+      globals: {
         ...globals.node
       },
-      "sourceType": "module"
+      sourceType: "module"
     },
-    "linterOptions": {
-      "reportUnusedDisableDirectives": "off"
+    linterOptions: {
+      reportUnusedDisableDirectives: "off"
     },
-    "rules": {
-      "depend/ban-dependencies": ["error", {"allowed": ["moment"]}],
+    plugins: {js},
+    rules: {
       "import-x/no-unresolved": "off"
     }
   },
   {
-    "files": ["**/package.json"],
-    "rules": {
-      "depend/ban-dependencies": ["error", {"allowed": ["moment"]}],
+    files: ["**/package.json"],
+    plugins: {depend, packageJson},
+    extends: ["packageJson/recommended"],
+    rules: {
+      "depend/ban-dependencies": ["error", {allowed: ["moment"]}],
       "package-json/order-properties": "off"
     }
   }
-];
+]);
 
-export default config;

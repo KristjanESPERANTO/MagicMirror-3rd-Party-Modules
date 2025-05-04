@@ -1,32 +1,15 @@
-import {configs as dependConfigs} from "eslint-plugin-depend";
-import eslintPluginJs from "@eslint/js";
-import eslintPluginJson from "@eslint/json";
-import eslintPluginMarkdown from "@eslint/markdown";
-import eslintPluginPackageJson from "eslint-plugin-package-json";
-import eslintPluginStylistic from "@stylistic/eslint-plugin";
+import {defineConfig} from "eslint/config";
 import globals from "globals";
-import {flatConfigs as importConfigs} from "eslint-plugin-import-x";
+import {flatConfigs as importX} from "eslint-plugin-import-x";
+import js from "@eslint/js";
+import json from "@eslint/json";
+import markdown from "@eslint/markdown";
+import packageJson from "eslint-plugin-package-json";
+import stylistic from "@stylistic/eslint-plugin";
 
-const config = [
-  dependConfigs["flat/recommended"],
-  eslintPluginJs.configs.all,
-  eslintPluginPackageJson.configs.recommended,
-  importConfigs.recommended,
-  ...eslintPluginMarkdown.configs.recommended,
+export default defineConfig([
   {
-    "files": ["**/*.md"],
-    "language": "markdown/gfm",
-    "plugins": {
-      eslintPluginMarkdown
-    },
-    "rules": {
-      "logical-assignment-operators": "off",
-      "max-lines-per-function": "off",
-      "no-irregular-whitespace": "off"
-    }
-  },
-  {
-    "ignores": [
+    ignores: [
       "modules/*",
       "modules_temp/*",
       "docs/data/modules*.json",
@@ -36,40 +19,34 @@ const config = [
     ]
   },
   {
-    "files": ["**/*.json"],
-    "ignores": ["package-lock.json"],
-    "language": "json/json",
-    ...eslintPluginJson.configs.recommended,
-    "rules": {
-      "logical-assignment-operators": "off",
-      "max-lines-per-function": "off",
-      "no-irregular-whitespace": "off"
-    }
-  },
-  {
-    "files": ["**/*.js"],
-    "languageOptions": {
-      "ecmaVersion": "latest",
-      "globals": {
+    files: ["**/*.js"],
+    languageOptions: {
+      ecmaVersion: "latest",
+      globals: {
         ...globals.browser
-      },
-      "sourceType": "module"
+      }
     },
-    "plugins": {
-      ...eslintPluginStylistic.configs.all.plugins
-    },
-    "rules": {
-      ...eslintPluginStylistic.configs.all.rules,
-      "complexity": "off",
-      "depend/ban-dependencies": ["error", {"allowed": ["moment"]}],
+    plugins: {js, stylistic},
+    extends: [importX.recommended, "js/all", "stylistic/all"],
+    rules: {
+      "@stylistic/array-element-newline": ["error", "consistent"],
+      "@stylistic/dot-location": ["error", "property"],
+      "@stylistic/function-call-argument-newline": ["error", "consistent"],
+      "@stylistic/implicit-arrow-linebreak": "off",
+      "@stylistic/indent": ["error", 2],
+      "@stylistic/multiline-ternary": "off",
+      "@stylistic/object-property-newline": ["error", {allowAllPropertiesOnSameLine: true}],
+      "@stylistic/padded-blocks": ["error", "never"],
+      "@stylistic/quote-props": ["error", "as-needed"],
+      camelcase: "off",
+      complexity: "off",
       "func-style": "off",
-      "id-length": ["error", {"exceptions": ["a", "b"]}],
-      "import/no-unresolved": "off",
-      "max-depth": ["warn", 5],
+      "import-x/no-unresolved": ["error", {ignore: ["eslint/config", "logger"]}],
+      "id-length": ["error", {exceptions: ["a", "b"]}],
       "max-lines": ["warn", 500],
       "max-lines-per-function": ["warn", 150],
       "max-params": ["warn", 5],
-      "max-statements": "off",
+      "max-statements": ["warn", 60],
       "no-await-in-loop": "off",
       "no-console": "off",
       "no-magic-numbers": "off",
@@ -80,23 +57,10 @@ const config = [
       "prefer-destructuring": "off",
       "prefer-named-capture-group": "off",
       "require-atomic-updates": "off",
-      "sort-keys": "off",
-      "@stylistic/array-element-newline": ["error", "consistent"],
-      "@stylistic/dot-location": ["error", "property"],
-      "@stylistic/function-call-argument-newline": ["error", "consistent"],
-      "@stylistic/implicit-arrow-linebreak": "off",
-      "@stylistic/indent": ["error", 2],
-      "@stylistic/multiline-ternary": "off",
-      "@stylistic/object-property-newline": "off",
-      "@stylistic/padded-blocks": ["error", "never"]
+      "sort-keys": "off"
     }
   },
-  {
-    "files": ["**/package.json"],
-    "rules": {
-      "package-json/sort-collections": "off"
-    }
-  }
-];
-
-export default config;
+  {files: ["**/*.json"], ignores: ["package.json", "package-lock.json"], plugins: {json}, extends: ["json/recommended"], language: "json/json"},
+  {files: ["package.json"], plugins: {packageJson}, extends: ["packageJson/recommended"], rules: {"package-json/sort-collections": "off"}},
+  {files: ["**/*.md"], plugins: {markdown}, language: "markdown/gfm", extends: ["markdown/recommended"]}
+]);

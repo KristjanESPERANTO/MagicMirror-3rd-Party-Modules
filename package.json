@@ -75,6 +75,7 @@
     "eslint-plugin-depend": "^1.0.0",
     "eslint-plugin-import-x": "^4.11.0",
     "eslint-plugin-package-json": "^0.31.0",
+    "globals": "^16.0.0",
     "husky": "^9.1.7",
     "lint-staged": "^15.5.1",
     "markdownlint-cli2": "^0.17.2",
