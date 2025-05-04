@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "2025-04-21T09:45:03.753Z",
+  "lastUpdate": "2025-05-04T11:10:27.445Z",
   "modules": [
     {
       "name": "MMM-01ZM",
@@ -1476,6 +1476,16 @@
       "issues": []
     },
     {
+      "name": "MMM-Cinestar-FDW",
+      "category": "Entertainment / Misc",
+      "url": "https://github.com/LukasWestholt/MMM-Cinestar-FDW",
+      "id": "LukasWestholt/MMM-Cinestar-FDW",
+      "maintainer": "LukasWestholt",
+      "maintainerURL": "",
+      "description": "Displays \"Film der Woche\" of Cinestar cinemas in Germany.",
+      "issues": []
+    },
+    {
       "name": "MMM-CivitAI",
       "category": "Entertainment / Misc",
       "url": "https://github.com/Andoramb/MMM-CivitAI",
@@ -2422,6 +2432,16 @@
       "outdated": "Abandoned. Repo has been archived at 2023-07-05."
     },
     {
+      "name": "MMM-DoomsdayClock",
+      "category": "Utility / IoT / 3rd Party / Integration",
+      "url": "https://github.com/crimsonclyde/MMM-DoomsdayClock",
+      "id": "crimsonclyde/MMM-DoomsdayClock",
+      "maintainer": "crimsonclyde",
+      "maintainerURL": "",
+      "description": "Sarcastic way to display the current Doomsday clock.",
+      "issues": []
+    },
+    {
       "name": "MMM-Dorba-Trails",
       "category": "Transport / Travel",
       "url": "https://github.com/drventure/MMM-Dorba-Trails",
@@ -2482,6 +2502,16 @@
       "maintainer": "galaktor",
       "maintainerURL": "https://github.com/galaktor",
       "description": "Customisable real-time stop data for Dublin Bus, Luas and IrishRail stops.",
+      "issues": []
+    },
+    {
+      "name": "MMM-duolingo-streak",
+      "category": "Education",
+      "url": "https://github.com/thomaspich/MMM-duolingo-streak",
+      "id": "thomaspich/MMM-duolingo-streak",
+      "maintainer": "thomaspich",
+      "maintainerURL": "https://github.com/thomaspich",
+      "description": "Display current Duolingo streak.",
       "issues": []
     },
     {
@@ -3504,7 +3534,7 @@
       "url": "https://github.com/ChrisF1976/MMM-FroniusSolar",
       "id": "ChrisF1976/MMM-FroniusSolar",
       "maintainer": "ChrisF1976",
-      "maintainerURL": "",
+      "maintainerURL": "https://github.com/ChrisF1976",
       "description": "Visualize solar energy data from a Fronius solar system. It displays energy consumption using one compact gauge.",
       "issues": []
     },
@@ -3514,7 +3544,7 @@
       "url": "https://github.com/ChrisF1976/MMM-FroniusSolar2",
       "id": "ChrisF1976/MMM-FroniusSolar2",
       "maintainer": "ChrisF1976",
-      "maintainerURL": "",
+      "maintainerURL": "https://github.com/ChrisF1976",
       "description": "Display energy flows of a Fronius inverter using intuitive gauges and flow lines.",
       "issues": []
     },
@@ -3524,7 +3554,7 @@
       "url": "https://github.com/ChrisF1976/MMM-FroniusSolar3",
       "id": "ChrisF1976/MMM-FroniusSolar3",
       "maintainer": "ChrisF1976",
-      "maintainerURL": "",
+      "maintainerURL": "https://github.com/ChrisF1976",
       "description": "Uses also gauges but no flow lines. Module can be adjusted in width and gauges follow it.",
       "issues": []
     },
@@ -3534,8 +3564,18 @@
       "url": "https://github.com/ChrisF1976/MMM-FroniusSolar4",
       "id": "ChrisF1976/MMM-FroniusSolar4",
       "maintainer": "ChrisF1976",
-      "maintainerURL": "",
+      "maintainerURL": "https://github.com/ChrisF1976",
       "description": "Similar to #2 but can display energy from a Shelly device as well.",
+      "issues": []
+    },
+    {
+      "name": "MMM-FroniusSolar5",
+      "category": "Utility / IoT / 3rd Party / Integration",
+      "url": "https://github.com/ChrisF1976/MMM-FroniusSolar5",
+      "id": "ChrisF1976/MMM-FroniusSolar5",
+      "maintainer": "ChrisF1976",
+      "maintainerURL": "https://github.com/ChrisF1976",
+      "description": "Similar to #2 but can monitor and visualize solar energy data from multiple Fronius inverters simultaneously.",
       "issues": []
     },
     {
@@ -3748,6 +3788,16 @@
       "description": "Show specific module(s) and hide others for a some time by notification or command.",
       "issues": [],
       "outdated": "Archived. Repo has been archived at 2020-06-10."
+    },
+    {
+      "name": "MMM-GlobalPositioner",
+      "category": "Utility / IoT / 3rd Party / Integration",
+      "url": "https://github.com/ChrisF1976/MMM-GlobalPositioner",
+      "id": "ChrisF1976/MMM-GlobalPositioner",
+      "maintainer": "ChrisF1976",
+      "maintainerURL": "https://github.com/ChrisF1976",
+      "description": "MagicMirror² module to globally reposition other modules on screen via fixed coordinates.",
+      "issues": []
     },
     {
       "name": "MMM-Globe",
@@ -5196,7 +5246,7 @@
       "id": "shbatm/MMM-KeyBindings",
       "maintainer": "shbatm",
       "maintainerURL": "",
-      "description": "Getting bluetooth remote control and keyboard inputs.",
+      "description": "Getting Bluetooth remote control and keyboard inputs.",
       "issues": []
     },
     {
@@ -6365,13 +6415,14 @@
     },
     {
       "name": "mmm-udr",
-      "category": "Utility / IoT / 3rd Party / Integration",
+      "category": "Outdated Modules",
       "url": "https://github.com/crimsonclyde/mmm-udr",
       "id": "crimsonclyde/mmm-udr",
       "maintainer": "crimsonclyde",
       "maintainerURL": "",
       "description": "Display own events in default compliments module style.",
-      "issues": []
+      "issues": [],
+      "outdated": "Deprecated."
     },
     {
       "name": "mmm-uk-pollen-forecast",
@@ -8381,11 +8432,11 @@
     {
       "name": "MMM-PGA",
       "category": "Sports",
-      "url": "https://github.com/mumblebaj/MMM-PGA",
-      "id": "mumblebaj/MMM-PGA",
-      "maintainer": "mumblebaj",
-      "maintainerURL": "https://github.com/mcl8on",
-      "description": "Displays PGA tournaments scores.",
+      "url": "https://github.com/dathbe/MMM-PGA",
+      "id": "dathbe/MMM-PGA",
+      "maintainer": "dathbe",
+      "maintainerURL": "https://github.com/dathbe",
+      "description": "Displays PGA leaderboards, tournaments, and rankings.",
       "issues": []
     },
     {
@@ -8766,13 +8817,14 @@
     },
     {
       "name": "MMM-Porcupine",
-      "category": "Voice Control",
+      "category": "Outdated Modules",
       "url": "https://github.com/SikandAlex/MMM-Porcupine",
       "id": "SikandAlex/MMM-Porcupine",
       "maintainer": "SikandAlex",
       "maintainerURL": "",
       "description": "Picovoice Porcupine hotword detection, works with MMM-AssistantMk2.",
-      "issues": []
+      "issues": [],
+      "outdated": "Deprecated, since MMM-AssistantMk2 isn't working anymore."
     },
     {
       "name": "MMM-portscan",
@@ -9108,6 +9160,16 @@
       "issues": []
     },
     {
+      "name": "MMM-RadarPresence",
+      "category": "Utility / IoT / 3rd Party / Integration",
+      "url": "https://github.com/Harishcchadichal/MMM-RadarPresence",
+      "id": "Harishcchadichal/MMM-RadarPresence",
+      "maintainer": "Harishcchadichal",
+      "maintainerURL": "https://github.com/Harishcchadichal",
+      "description": "Uses a radar sensor to detect presence and control your MagicMirror's display accordingly.",
+      "issues": []
+    },
+    {
       "name": "MMM-Radarr",
       "category": "Utility / IoT / 3rd Party / Integration",
       "url": "https://github.com/gravitykillseverything/MMM-Radarr",
@@ -9354,7 +9416,7 @@
       "id": "Jopyth/MMM-Remote-Control",
       "maintainer": "Jopyth",
       "maintainerURL": "",
-      "description": "Cleanly shutdown (or reboot) your mirror, edit which modules are shown on your mirror and turn your monitor off and on from a simple website, i.e. from your smartphone.",
+      "description": "Cleanly shutdown or reboot your mirror, install and configure modules, and turn your monitor on and off from a simple web page, i.e. from your smartphone.",
       "issues": []
     },
     {
