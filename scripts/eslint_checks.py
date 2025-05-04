@@ -11,7 +11,7 @@ def eslint_check(directory_path):
 
     try:
         result = subprocess.run(
-            f"npx eslint -f json -c eslint.testconfig.js {directory_path}",
+            f"npx eslint --format json --config eslint.testconfig.js {directory_path}",
             capture_output=True,
             shell=True,
             check=False
