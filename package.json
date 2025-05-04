@@ -42,9 +42,18 @@
     "automated": "git fetch origin main && git reset --hard origin/main && git pull && npm i && npm run all && python3 scripts/upload.py"
   },
   "lint-staged": {
-    "*.js": "eslint --cache --fix",
-    "*.css": "stylelint **/docs/*.css --ignore-pattern **/docs/fonts/ --fix",
-    "*": "prettier --ignore-unknown --write"
+    "!(*.css|*.md)": [
+      "eslint --fix",
+      "prettier --write --ignore-unknown"
+    ],
+    "*.css": [
+      "stylelint **/docs/*.css --ignore-pattern **/docs/fonts/ --fix",
+      "prettier --write"
+    ],
+    "*.md": [
+      "markdownlint --ignore node_modules --fix",
+      "prettier --write"
+    ]
   },
   "dependencies": {
     "marked": "^15.0.8",
