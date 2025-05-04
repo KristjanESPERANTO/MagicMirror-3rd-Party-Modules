@@ -49,6 +49,7 @@ export default defineConfig([
       reportUnusedDisableDirectives: "off"
     },
     plugins: {js},
+    extends: [importX.recommended, "js/recommended"],
     rules: {
       "import-x/no-unresolved": "off"
     }
