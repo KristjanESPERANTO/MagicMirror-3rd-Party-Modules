@@ -572,27 +572,9 @@ def check_dependency_updates(module, module_directory_path):
 
         Because this is so time-consuming, we only do this for modules with a small number of issues.
 
-        If there are only development updates, no issue will be created. 
     """
     package_json = Path(f"{module_directory_path}/package.json")
-    prod_updates_list = []
-    if len(module["issues"]) in [2, 3] and package_json.is_file():
-
-        prod_updates_string = (
-            subprocess.run(
-                f"ncu --cwd {module_directory_path} --dep prod",
-                capture_output=True,
-                shell=True,
-                check=False
-            )
-            .stdout.decode()
-            .rstrip()
-        )
-        prod_updates_list = prod_updates_string.splitlines()
-        prod_updates_list = [
-            line for line in prod_updates_string if "→" in line]
-
-    if len(prod_updates_list) > 0 or (len(module["issues"]) in [0, 1] and package_json.is_file()):
+    if package_json.is_file() and len(module["issues"]) < 4:
 
         updates_string = (
             subprocess.run(
@@ -613,19 +595,19 @@ def check_dependency_updates(module, module_directory_path):
                 issue_text += f"   -{update}\n"
             module["issues"].append(issue_text)
 
-    if len(module["issues"]) in [0, 1] and package_json.is_file():
-        deprecation = deprecation_check.check_deprecated_packages(
-            module_directory_path)
-        if deprecation:
-            module["issues"].append(deprecation)
+        if len(module["issues"]) < 3:
+            deprecation = deprecation_check.check_deprecated_packages(
+                module_directory_path)
+            if deprecation:
+                module["issues"].append(deprecation)
 
-    if len(module["issues"]) in [0, 1] and package_json.is_file():
-        eslint_issues = eslint_checks.eslint_check(module_directory_path)
-        if eslint_issues:
-            eslint_issues_text = "ESLint issues:\n"
-            for issue in eslint_issues:
-                eslint_issues_text += f"   - {issue}\n"
-            module["issues"].append(eslint_issues_text)
+            if len(module["issues"]) < 3:
+                eslint_issues = eslint_checks.eslint_check(module_directory_path)
+                if eslint_issues:
+                    eslint_issues_text = "ESLint issues:\n"
+                    for issue in eslint_issues:
+                        eslint_issues_text += f"   - {issue}\n"
+                    module["issues"].append(eslint_issues_text)
 
 
 def check_branch_name(module, module_directory_path):
