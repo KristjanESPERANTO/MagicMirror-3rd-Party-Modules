@@ -38,6 +38,7 @@
     "lint:fix": "eslint --fix && stylelint **/docs/*.css --fix && markdownlint-cli2 . --fix && prettier . --write . && cspell .",
     "prepare": "husky",
     "test": "npm run lint",
+    "test:spelling": "cspell .",
     "leaveMenu": "",
     "automated": "git fetch origin main && git reset --hard origin/main && git pull && npm i && npm run all && python3 scripts/upload.py"
   },
