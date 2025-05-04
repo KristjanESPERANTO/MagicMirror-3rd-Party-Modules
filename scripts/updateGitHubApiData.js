@@ -96,17 +96,17 @@ async function updateData () {
 
         if (response.status === 200) {
           const repositoryData = {
-            "id": module.id,
-            "gitHubDataLastUpdate": new Date().toISOString(),
-            "gitHubData": {
-              "issues": data.open_issues,
-              "stars": data.stargazers_count,
-              "license": data.license ? data.license.spdx_id : null,
-              "archived": data.archived,
-              "disabled": data.disabled,
-              "defaultBranch": data.default_branch,
-              "has_issues": data.has_issues,
-              "lastCommit": branchData.commit ? branchData.commit.author.date : null
+            id: module.id,
+            gitHubDataLastUpdate: new Date().toISOString(),
+            gitHubData: {
+              issues: data.open_issues,
+              stars: data.stargazers_count,
+              license: data.license ? data.license.spdx_id : null,
+              archived: data.archived,
+              disabled: data.disabled,
+              defaultBranch: data.default_branch,
+              has_issues: data.has_issues,
+              lastCommit: branchData.commit ? branchData.commit.author.date : null
             }
           };
           module.stars = data.stargazers_count;
@@ -168,8 +168,8 @@ async function updateData () {
     results.sort((a, b) => a.id.localeCompare(b.id));
 
     const updateInfo = {
-      "lastUpdate": new Date().toISOString(),
-      "repositories": results
+      lastUpdate: new Date().toISOString(),
+      repositories: results
     };
 
     const sortedModuleList = moduleList.sort(sortByNameIgnoringPrefix);

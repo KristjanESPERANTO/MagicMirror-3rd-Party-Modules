@@ -98,8 +98,8 @@ async function createModuleList () {
 
   const sortedModuleList = moduleList.sort(sortByNameIgnoringPrefix);
   const data = {
-    "lastUpdate": new Date().toISOString(),
-    "modules": sortedModuleList
+    lastUpdate: new Date().toISOString(),
+    modules: sortedModuleList
   };
 
 

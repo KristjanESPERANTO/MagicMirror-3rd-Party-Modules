@@ -11,7 +11,7 @@ function isImageFile (filename) {
 
 async function findAndResizeImage (moduleName, moduleMaintainer) {
   const sourceFolder = `./modules/${moduleName}-----${moduleMaintainer}/`;
-  const files = await fs.promises.readdir(sourceFolder, {"recursive": true});
+  const files = await fs.promises.readdir(sourceFolder, {recursive: true});
   files.sort();
   let targetImageName = null;
   const issues = [];
@@ -49,8 +49,8 @@ async function findAndResizeImage (moduleName, moduleMaintainer) {
         500,
         600,
         {
-          "fit": sharp.fit.inside,
-          "withoutEnlargement": true
+          fit: sharp.fit.inside,
+          withoutEnlargement: true
         }
       )
       .toFile(targetPath);
@@ -211,7 +211,7 @@ async function expandModuleList () {
  * Remove old images before creating new ones
  */
 async function purgeImageFolder () {
-  await fs.promises.rm(imagesFolder, {"recursive": true});
+  await fs.promises.rm(imagesFolder, {recursive: true});
   await fs.promises.mkdir(imagesFolder);
 }
 
