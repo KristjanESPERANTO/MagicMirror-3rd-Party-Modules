@@ -34,8 +34,8 @@
     "checkModulesJs": "node scripts/check_modules_js.js",
     "checkModules": "python3 scripts/check_modules.py",
     "ownList": "node create_own_module_list.js && npm run updateGitHubData && npm run getModules && npm run expandModuleList && npm run checkModulesJs && npm run checkModules",
-    "lint": "eslint && stylelint **/docs/*.css && markdownlint-cli2 README.md && prettier --check . && cspell .",
-    "lint:fix": "eslint --fix && stylelint **/docs/*.css --fix && markdownlint-cli2 README.md --fix && prettier . --write . && cspell .",
+    "lint": "eslint && stylelint **/docs/*.css && markdownlint-cli2 . && prettier --check . && cspell .",
+    "lint:fix": "eslint --fix && stylelint **/docs/*.css --fix && markdownlint-cli2 . --fix && prettier . --write . && cspell .",
     "prepare": "husky",
     "test": "npm run lint",
     "leaveMenu": "",
@@ -47,11 +47,11 @@
       "prettier --write --ignore-unknown"
     ],
     "*.css": [
-      "stylelint **/docs/*.css --ignore-pattern **/docs/fonts/ --fix",
+      "stylelint --ignore-pattern **/docs/fonts/ --fix",
       "prettier --write"
     ],
     "*.md": [
-      "markdownlint --ignore node_modules --fix",
+      "markdownlint-cli2 --fix",
       "prettier --write"
     ]
   },
