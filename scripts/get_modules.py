@@ -15,9 +15,8 @@ def get_modules():
     max_module_counter = 99999
 
     modules_json_file = open(
-        "./docs/data/modules.stage.1.json", encoding="utf-8")
-    modules_data = json.load(modules_json_file)
-    modules = modules_data.get("modules")
+        "./docs/data/modules.stage.2.json", encoding="utf-8")
+    modules = json.load(modules_json_file)
 
     for module in modules:
         if module_counter < max_module_counter:
@@ -46,9 +45,13 @@ def get_modules():
                     print(f"- I - Deleting the module directory: {path}")
                     shutil.rmtree(path)
                     print("- I - Re-running the git clone command")
-                    subprocess.run(
-                        f"git clone {module_url} {path} --depth 1", shell=True, check=False
-                    )
+                    try:
+                        subprocess.run(
+                            f"git clone {module_url} {path} --depth 1", shell=True, check=True
+                        )
+                    except Exception as error:
+                        handle_clone_failure(module, error)
+                        continue
             elif "branch" in module:
                 print(f"- I - run `git clone --branch {module['branch']}` ")
                 subprocess.run(
@@ -56,14 +59,28 @@ def get_modules():
                 )
             else:
                 print("- I - path doesn't exists: run `git clone`")
-                subprocess.run(
-                    f"git clone {module_url} {path} --depth 1", shell=True, check=False
-                )
+                try:
+                    subprocess.run(
+                        f"git clone {module_url} {path} --depth 1", shell=True, check=True
+                    )
+                except Exception as error:
+                    handle_clone_failure(module, error)
+                    continue
 
             # Move module from temp directory to working directory
             shutil.move(path, f"./modules/{module_name}-----{module_owner}")
 
     print("\n- I - Modules found and downloaded: " + str(module_counter) + "\n")
+
+    with open("./docs/data/modules.stage.3.json", "w", encoding="utf-8") as f:
+        json.dump(modules, f, ensure_ascii=False, indent=4)
+
+
+def handle_clone_failure(module, error):
+    error_message = str(f"- E - Failed to clone repository {module['url']}: {error}")
+    print(error_message)
+    module["issues"].append(error_message)
+    module["status"] = "error"
 
 
 def rename_modules_directory():

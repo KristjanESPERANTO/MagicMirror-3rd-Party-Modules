@@ -64,56 +64,57 @@ async function findAndResizeImage (moduleName, moduleMaintainer) {
 async function addInformationFromPackageJson (moduleList) {
   for (const module of moduleList) {
     console.log(`+++ ${module.name} by ${module.maintainer}`);
-    let moduleData = {};
-    try {
+    if (module.status !== "error") {
+      let moduleData = {};
+      try {
       // Get package.json
-      const filePath = `./modules/${module.name}-----${module.maintainer}/package.json`;
-      moduleData = await getJson(filePath);
+        const filePath = `./modules/${module.name}-----${module.maintainer}/package.json`;
+        moduleData = await getJson(filePath);
 
-      // Normalize package.json
-      const warnFn = (msg) => {
-        if (!msg.includes("No README data")) {
-          module.issues.push(`\`package.json\` issue: ${msg}`);
-        }
-      };
-      normalizeData(moduleData, warnFn);
+        // Normalize package.json
+        const warnFn = (msg) => {
+          if (!msg.includes("No README data")) {
+            module.issues.push(`\`package.json\` issue: ${msg}`);
+          }
+        };
+        normalizeData(moduleData, warnFn);
 
-      // Remove superfluous tags
-      if (moduleData.keywords) {
-        const tagsToRemove = [
-          "2",
-          "mm",
-          "mm2",
-          "magic",
-          "magicmirror",
-          "magicmirror2",
-          "magicmirror²",
-          "magic mirror",
-          "magic mirror 2",
-          "magic-mirror",
-          "magic mirror module",
-          "magicmirror-module",
-          "mirror",
-          "mmm",
-          "module",
-          "nodejs",
-          "smart",
-          "smart mirror"
-        ];
+        // Remove superfluous tags
+        if (moduleData.keywords) {
+          const tagsToRemove = [
+            "2",
+            "mm",
+            "mm2",
+            "magic",
+            "magicmirror",
+            "magicmirror2",
+            "magicmirror²",
+            "magic mirror",
+            "magic mirror 2",
+            "magic-mirror",
+            "magic mirror module",
+            "magicmirror-module",
+            "mirror",
+            "mmm",
+            "module",
+            "nodejs",
+            "smart",
+            "smart mirror"
+          ];
 
-        module.tags = moduleData.keywords
-          .map((tag) => {
-            tag = tag.toLowerCase();
-            if (tag === "smarthome") {
-              module.issues.push("Please use 'smart home' instead of 'smarthome' as a keyword in your package.json.");
-              return "smart home";
-            }
-            if (tag === "sport") {
-              return "sports";
-            }
-            return tag;
-          })
-          .filter((tag) => !tagsToRemove.includes(tag));
+          module.tags = moduleData.keywords
+            .map((tag) => {
+              tag = tag.toLowerCase();
+              if (tag === "smarthome") {
+                module.issues.push("Please use 'smart home' instead of 'smarthome' as a keyword in your package.json.");
+                return "smart home";
+              }
+              if (tag === "sport") {
+                return "sports";
+              }
+              return tag;
+            })
+            .filter((tag) => !tagsToRemove.includes(tag));
 
         if (module.tags.some((tag) => ["images", "pictures", "livestream", "photos", "video"].includes(tag))) {
           module.tags.push("media");
@@ -129,25 +130,26 @@ async function addInformationFromPackageJson (moduleList) {
         module.issues.push("There are no keywords in 'package.json'. We would use them as tags on the module list page.");
       }
 
-      if (module.url.includes("github.com") && module.hasGithubIssues === false) {
-        module.issues.push("Issues are not enabled in the GitHub repository. So users cannot report bugs. Please enable issues in your repo.");
-      }
-    } catch (error) {
-      if (error.code === "ENOENT") {
-        if (module.name === "mmpm") {
-          module.keywords = ["package manager", "module installer"];
-        } else {
-          module.issues.push("There is no `package.json`. We need this file to gather information about the module for the module list page.");
-        }
-
-        if (module.hasGithubIssues === false) {
+        if (module.url.includes("github.com") && module.hasGithubIssues === false) {
           module.issues.push("Issues are not enabled in the GitHub repository. So users cannot report bugs. Please enable issues in your repo.");
         }
-      } else {
-        module.issues.push(`An error occurred while getting information from 'package.json': ${error}`);
+      } catch (error) {
+        if (error.code === "ENOENT") {
+          if (module.name === "mmpm") {
+            module.keywords = ["package manager", "module installer"];
+          } else {
+            module.issues.push("There is no `package.json`. We need this file to gather information about the module for the module list page.");
+          }
+
+          if (module.hasGithubIssues === false) {
+            module.issues.push("Issues are not enabled in the GitHub repository. So users cannot report bugs. Please enable issues in your repo.");
+          }
+        } else {
+          module.issues.push(`An error occurred while getting information from 'package.json': ${error}`);
+        }
       }
+      await checkLicenseAndHandleScreenshot(moduleData, module);
     }
-    await checkLicenseAndHandleScreenshot(moduleData, module);
   }
   return moduleList;
 }
@@ -202,12 +204,12 @@ async function checkLicenseAndHandleScreenshot (moduleData, module) {
 }
 
 async function expandModuleList () {
-  const moduleList = await getJson("./docs/data/modules.stage.2.json");
+  const moduleList = await getJson("./docs/data/modules.stage.3.json");
 
   const expandedModuleList = await addInformationFromPackageJson(moduleList);
 
   fs.writeFileSync(
-    "./docs/data/modules.stage.3.json",
+    "./docs/data/modules.stage.4.json",
     JSON.stringify(expandedModuleList, null, 2),
     "utf8"
   );
