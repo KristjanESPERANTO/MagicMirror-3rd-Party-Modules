@@ -1,3 +1,4 @@
+import css from "@eslint/css";
 import {defineConfig} from "eslint/config";
 import globals from "globals";
 import {flatConfigs as importX} from "eslint-plugin-import-x";
@@ -18,6 +19,7 @@ export default defineConfig([
       "docs/result.md"
     ]
   },
+  {files: ["**/*.css"], languageOptions: {tolerant: true}, plugins: {css}, language: "css/css", extends: ["css/recommended"], rules: {"css/use-baseline": ["error", {available: "newly"}]}},
   {
     files: ["**/*.js"],
     languageOptions: {
