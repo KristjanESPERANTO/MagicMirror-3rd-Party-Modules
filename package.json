@@ -26,21 +26,21 @@
   },
   "scripts": {
     "start": "ntl --autocomplete --size 50 --exclude start lint* prepare test automated",
-    "all": "npm run createModuleList && npm run updateGitHubData && npm run getModules && npm run expandModuleList && npm run checkModulesJs && npm run checkModules",
+    "all": "node --run createModuleList && node --run updateGitHubData && node --run getModules && node --run expandModuleList && node --run checkModulesJs && node --run checkModules",
     "createModuleList": "node scripts/create_module_list.js",
     "updateGitHubData": "node scripts/updateGitHubApiData.js",
     "getModules": "python3 scripts/get_modules.py",
     "expandModuleList": "node scripts/expand_module_list_with_repo_data.js",
     "checkModulesJs": "node scripts/check_modules_js.js",
     "checkModules": "python3 scripts/check_modules.py",
-    "ownList": "node create_own_module_list.js && npm run updateGitHubData && npm run getModules && npm run expandModuleList && npm run checkModulesJs && npm run checkModules",
+    "ownList": "node create_own_module_list.js && node --run updateGitHubData && node --run getModules && node --run expandModuleList && node --run checkModulesJs && node --run checkModules",
     "lint": "eslint && stylelint **/docs/*.css && markdownlint-cli2 . && prettier --check . && cspell .",
     "lint:fix": "eslint --fix && stylelint **/docs/*.css --fix && markdownlint-cli2 . --fix && prettier . --write . && cspell .",
     "prepare": "husky",
-    "test": "npm run lint",
+    "test": "node --run lint",
     "test:spelling": "cspell .",
     "leaveMenu": "",
-    "automated": "git fetch origin main && git reset --hard origin/main && git pull && npm i && npm run all && python3 scripts/upload.py"
+    "automated": "git fetch origin main && git reset --hard origin/main && git pull && npm i && node --run all && python3 scripts/upload.py"
   },
   "lint-staged": {
     "!(*.css|*.md)": [
