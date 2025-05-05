@@ -177,7 +177,6 @@
     "tags": [
       "\"magic",
       "mirror\"",
-      "\"magic",
       "module\""
     ],
     "defaultSortWeight": 901,
@@ -919,8 +918,6 @@
     "tags": [
       "uptimekuma",
       "uptime",
-      "kuma",
-      "uptime",
       "kuma"
     ],
     "image": "screenshots-simple.jpg",
@@ -1179,7 +1176,6 @@
       "weather",
       "forecast",
       "snow",
-      "forecast",
       "skiing",
       "snowboarding"
     ],
@@ -2258,7 +2254,7 @@
     "maintainer": "KristjanESPERANTO",
     "maintainerURL": "",
     "description": "Show meals from canteens (Germany and Switzerland).",
-    "issues": false,
+    "issues": true,
     "stars": 7,
     "license": "MIT",
     "tags": [
@@ -2511,11 +2507,14 @@
     "stars": 0,
     "license": "MIT",
     "tags": [
-      "template"
+      "cinema",
+      "cinestar",
+      "poster",
+      "movie"
     ],
     "image": "example_1.jpg",
-    "defaultSortWeight": 7,
-    "lastCommit": "2025-05-02T19:55:36+02:00"
+    "defaultSortWeight": 2,
+    "lastCommit": "2025-05-04T21:05:37+02:00"
   },
   {
     "name": "MMM-CivitAI",
@@ -4090,7 +4089,8 @@
       "dropbox",
       "pictures",
       "wallpaper",
-      "image"
+      "image",
+      "media"
     ],
     "image": "screenshot.jpg",
     "defaultSortWeight": 8,
@@ -4375,7 +4375,8 @@
     "tags": [
       "images",
       "photos",
-      "pictures"
+      "pictures",
+      "media"
     ],
     "image": "pix-earth.jpg",
     "defaultSortWeight": 0,
@@ -6596,9 +6597,13 @@
     "issues": true,
     "stars": 3,
     "license": "MIT",
+    "tags": [
+      "google maps",
+      "traffic"
+    ],
     "image": "Traffic.jpg",
-    "defaultSortWeight": 8,
-    "lastCommit": "2025-04-26T10:41:52+02:00"
+    "defaultSortWeight": 7,
+    "lastCommit": "2025-05-05T20:48:28+02:00"
   },
   {
     "name": "MMM-GooglePhotos",
@@ -7964,7 +7969,8 @@
     "license": "MIT",
     "tags": [
       "photos",
-      "images"
+      "images",
+      "media"
     ],
     "image": ".github-animate.jpg",
     "defaultSortWeight": 7,
@@ -8314,7 +8320,8 @@
     "license": "MIT",
     "tags": [
       "iss",
-      "livestream"
+      "livestream",
+      "media"
     ],
     "image": "images-screenshot1.jpg",
     "defaultSortWeight": 1,
@@ -8680,8 +8687,8 @@
     "stars": 2,
     "license": "MIT",
     "image": "screenshot.jpg",
-    "defaultSortWeight": 12,
-    "lastCommit": "2021-01-28T21:07:07-05:00"
+    "defaultSortWeight": 11,
+    "lastCommit": "2025-05-04T14:45:56-04:00"
   },
   {
     "name": "MMM-KeyBindings",
@@ -10175,7 +10182,6 @@
       "alexa",
       "aws iot",
       "device gateway",
-      "alexa",
       "skill",
       "google search engine"
     ],
@@ -11130,7 +11136,8 @@
       "video",
       "rtsp",
       "mp4",
-      "stream"
+      "stream",
+      "media"
     ],
     "image": "screenshot.jpg",
     "defaultSortWeight": 3,
@@ -11857,7 +11864,8 @@
     "stars": 3,
     "tags": [
       "video",
-      "player"
+      "player",
+      "media"
     ],
     "license": "ISC",
     "image": "Screenshot (1).jpg",
@@ -13393,7 +13401,8 @@
     "license": "MIT",
     "tags": [
       "images",
-      "photos"
+      "photos",
+      "media"
     ],
     "image": ".github-example.jpg",
     "defaultSortWeight": 5,
@@ -13800,7 +13809,7 @@
       "slides"
     ],
     "image": "example.jpg",
-    "defaultSortWeight": 1,
+    "defaultSortWeight": 2,
     "lastCommit": "2025-04-01T06:18:12-07:00"
   },
   {
@@ -14532,7 +14541,7 @@
       "smart home"
     ],
     "image": "MMM-Plenticore.jpg",
-    "defaultSortWeight": 2,
+    "defaultSortWeight": 3,
     "lastCommit": "2024-11-04T08:48:48+01:00"
   },
   {
@@ -14611,7 +14620,8 @@
     "stars": 6,
     "tags": [
       "podcast",
-      "video"
+      "video",
+      "media"
     ],
     "license": "MIT",
     "defaultSortWeight": 15,
@@ -15075,8 +15085,8 @@
       "vendo"
     ],
     "image": "img-Goerdelerring_all.jpg",
-    "defaultSortWeight": 2,
-    "lastCommit": "2025-05-03T02:39:22+02:00"
+    "defaultSortWeight": 1,
+    "lastCommit": "2025-05-05T21:23:15+02:00"
   },
   {
     "name": "MMM-PublicTransportVVO",
@@ -15393,7 +15403,7 @@
     "maintainerURL": "",
     "description": "Displays a Precipitation Radar for your location.",
     "issues": true,
-    "stars": 14,
+    "stars": 15,
     "license": "MIT",
     "image": "images-img1.jpg",
     "defaultSortWeight": 7,
@@ -15470,7 +15480,7 @@
     "maintainerURL": "",
     "description": "Load a random photo from picsum. Originally by diego-vieira, now with support for local paths and NextCloud shares.",
     "issues": true,
-    "stars": 8,
+    "stars": 10,
     "tags": [
       "photo",
       "image",
@@ -15584,7 +15594,7 @@
     "maintainerURL": "",
     "description": "Displays a new recipe everyday.",
     "issues": true,
-    "stars": 9,
+    "stars": 10,
     "license": "MIT",
     "image": "pics-recipe1.jpg",
     "defaultSortWeight": 15,
@@ -15707,7 +15717,7 @@
     "maintainerURL": "",
     "description": "Cleanly shutdown or reboot your mirror, install and configure modules, and turn your monitor on and off from a simple web page, i.e. from your smartphone.",
     "issues": true,
-    "stars": 520,
+    "stars": 523,
     "license": "MIT",
     "tags": [
       "remote control",
@@ -15802,7 +15812,8 @@
       "github",
       "gitlab",
       "repository",
-      "statistics"
+      "statistics",
+      "media"
     ],
     "license": "MIT",
     "image": "img-example_3_types.jpg",
@@ -15957,7 +15968,7 @@
     "maintainerURL": "",
     "description": "Rhein-Main local transport system (RMV) - Departure Monitor.",
     "issues": true,
-    "stars": 21,
+    "stars": 22,
     "license": "MIT",
     "tags": [
       "rmv",
@@ -15978,7 +15989,7 @@
     "maintainerURL": "https://github.com/jalibu",
     "description": "A departure monitor for stations within the Rhein-Neckar-Verkehr (RNV) public traffic network using the new API.",
     "issues": true,
-    "stars": 3,
+    "stars": 4,
     "license": "MIT",
     "tags": [
       "public transport",
@@ -16065,7 +16076,7 @@
     "maintainerURL": "",
     "description": "Displays the Rotten Tomatoes meter score for the current box office and movies coming soon.",
     "issues": true,
-    "stars": 9,
+    "stars": 10,
     "license": "MIT",
     "image": "images-example.jpg",
     "defaultSortWeight": 11,
@@ -16275,7 +16286,8 @@
     "license": "MIT",
     "tags": [
       "s3",
-      "photos"
+      "photos",
+      "media"
     ],
     "image": "cache-samples-pexels-dan-mooham.jpg",
     "defaultSortWeight": 3,
@@ -17538,7 +17550,7 @@
     "maintainerURL": "",
     "description": "Monitor a Solax inverter using the API. Text and graphical layouts available.",
     "issues": true,
-    "stars": 0,
+    "stars": 1,
     "license": "NOASSERTION",
     "defaultSortWeight": 8,
     "lastCommit": "2025-04-16T07:53:02+01:00"
@@ -18211,7 +18223,8 @@
       "mjpeg",
       "ptz",
       "live-stream",
-      "video"
+      "video",
+      "media"
     ],
     "image": "examples-screenshot-horizontal.jpg",
     "defaultSortWeight": 7,
@@ -18626,9 +18639,7 @@
       "smar",
       "clock",
       "text",
-      "clock",
-      "word",
-      "clock"
+      "word"
     ],
     "image": "screenshots-MMM-text-clock-screenshot-compact.jpg",
     "defaultSortWeight": 11,
@@ -19111,7 +19122,7 @@
     "maintainerURL": "https://github.com/bnitkin",
     "description": "Upcoming departures for any transit agencies that publishes GTFS.",
     "issues": true,
-    "stars": 7,
+    "stars": 8,
     "license": "MIT",
     "tags": [
       "transit",
@@ -19738,7 +19749,6 @@
     "tags": [
       "\"magic",
       "mirror\"",
-      "\"magic",
       "module\""
     ],
     "license": "MIT",
@@ -20424,7 +20434,7 @@
     "maintainer": "KristjanESPERANTO",
     "maintainerURL": "",
     "description": "A Text-To-Speech module which uses the Web Speech API of the browser. It is in an early stage of development. So far only German is supported.",
-    "issues": false,
+    "issues": true,
     "stars": 5,
     "license": "MIT",
     "tags": [

@@ -174,7 +174,6 @@
     "tags": [
       "\"magic",
       "mirror\"",
-      "\"magic",
       "module\""
     ]
   },
@@ -885,8 +884,6 @@
     "tags": [
       "uptimekuma",
       "uptime",
-      "kuma",
-      "uptime",
       "kuma"
     ],
     "image": "screenshots-simple.jpg"
@@ -1151,7 +1148,6 @@
       "weather",
       "forecast",
       "snow",
-      "forecast",
       "skiing",
       "snowboarding"
     ],
@@ -2453,7 +2449,10 @@
     "stars": 0,
     "license": "MIT",
     "tags": [
-      "template"
+      "cinema",
+      "cinestar",
+      "poster",
+      "movie"
     ],
     "image": "example_1.jpg"
   },
@@ -4035,7 +4034,8 @@
       "dropbox",
       "pictures",
       "wallpaper",
-      "image"
+      "image",
+      "media"
     ],
     "image": "screenshot.jpg"
   },
@@ -4309,7 +4309,8 @@
     "tags": [
       "images",
       "photos",
-      "pictures"
+      "pictures",
+      "media"
     ],
     "image": "pix-earth.jpg"
   },
@@ -6509,11 +6510,13 @@
     "maintainer": "ChrisF1976",
     "maintainerURL": "",
     "description": "Displays a Google map, centred at provided coordinates, with traffic information.",
-    "issues": [
-      "There is no `package.json`. We need this file to gather information about the module for the module list page."
-    ],
+    "issues": [],
     "stars": 3,
     "license": "MIT",
+    "tags": [
+      "google maps",
+      "traffic"
+    ],
     "image": "Traffic.jpg"
   },
   {
@@ -7876,7 +7879,8 @@
     "license": "MIT",
     "tags": [
       "photos",
-      "images"
+      "images",
+      "media"
     ],
     "image": ".github-animate.jpg"
   },
@@ -8222,7 +8226,8 @@
     "license": "MIT",
     "tags": [
       "iss",
-      "livestream"
+      "livestream",
+      "media"
     ],
     "image": "images-screenshot1.jpg"
   },
@@ -10052,7 +10057,6 @@
       "alexa",
       "aws iot",
       "device gateway",
-      "alexa",
       "skill",
       "google search engine"
     ]
@@ -11009,7 +11013,8 @@
       "video",
       "rtsp",
       "mp4",
-      "stream"
+      "stream",
+      "media"
     ],
     "image": "screenshot.jpg"
   },
@@ -11728,7 +11733,8 @@
     "stars": 3,
     "tags": [
       "video",
-      "player"
+      "player",
+      "media"
     ],
     "license": "ISC",
     "image": "Screenshot (1).jpg"
@@ -13223,7 +13229,8 @@
     "license": "MIT",
     "tags": [
       "images",
-      "photos"
+      "photos",
+      "media"
     ],
     "image": ".github-example.jpg"
   },
@@ -14424,7 +14431,8 @@
     "stars": 6,
     "tags": [
       "podcast",
-      "video"
+      "video",
+      "media"
     ],
     "license": "MIT"
   },
@@ -15199,7 +15207,7 @@
     "issues": [
       "There is no `package.json`. We need this file to gather information about the module for the module list page."
     ],
-    "stars": 14,
+    "stars": 15,
     "license": "MIT",
     "image": "images-img1.jpg"
   },
@@ -15277,7 +15285,7 @@
     "maintainerURL": "",
     "description": "Load a random photo from picsum. Originally by diego-vieira, now with support for local paths and NextCloud shares.",
     "issues": [],
-    "stars": 8,
+    "stars": 10,
     "tags": [
       "photo",
       "image",
@@ -15389,7 +15397,7 @@
       "`package.json` issue: No description",
       "There are no keywords in 'package.json'. We would use them as tags on the module list page."
     ],
-    "stars": 9,
+    "stars": 10,
     "license": "MIT",
     "image": "pics-recipe1.jpg"
   },
@@ -15514,7 +15522,7 @@
     "maintainerURL": "",
     "description": "Cleanly shutdown or reboot your mirror, install and configure modules, and turn your monitor on and off from a simple web page, i.e. from your smartphone.",
     "issues": [],
-    "stars": 520,
+    "stars": 523,
     "license": "MIT",
     "tags": [
       "remote control",
@@ -15604,7 +15612,8 @@
       "github",
       "gitlab",
       "repository",
-      "statistics"
+      "statistics",
+      "media"
     ],
     "license": "MIT",
     "image": "img-example_3_types.jpg"
@@ -15750,7 +15759,7 @@
     "maintainerURL": "",
     "description": "Rhein-Main local transport system (RMV) - Departure Monitor.",
     "issues": [],
-    "stars": 21,
+    "stars": 22,
     "license": "MIT",
     "tags": [
       "rmv",
@@ -15771,7 +15780,7 @@
     "issues": [
       "`package.json` issue: No repository field."
     ],
-    "stars": 3,
+    "stars": 4,
     "license": "MIT",
     "tags": [
       "public transport",
@@ -15859,7 +15868,7 @@
     "issues": [
       "There is no `package.json`. We need this file to gather information about the module for the module list page."
     ],
-    "stars": 9,
+    "stars": 10,
     "license": "MIT",
     "image": "images-example.jpg"
   },
@@ -16071,7 +16080,8 @@
     "license": "MIT",
     "tags": [
       "s3",
-      "photos"
+      "photos",
+      "media"
     ],
     "image": "cache-samples-pexels-dan-mooham.jpg"
   },
@@ -17308,7 +17318,7 @@
       "There is no `package.json`. We need this file to gather information about the module for the module list page.",
       "No compatible or wrong license field in 'package.json' or LICENSE file. Without that, we can't use an image."
     ],
-    "stars": 0,
+    "stars": 1,
     "license": "NOASSERTION"
   },
   {
@@ -17967,7 +17977,8 @@
       "mjpeg",
       "ptz",
       "live-stream",
-      "video"
+      "video",
+      "media"
     ],
     "image": "examples-screenshot-horizontal.jpg"
   },
@@ -18383,9 +18394,7 @@
       "smar",
       "clock",
       "text",
-      "clock",
-      "word",
-      "clock"
+      "word"
     ],
     "image": "screenshots-MMM-text-clock-screenshot-compact.jpg"
   },
@@ -18857,7 +18866,7 @@
     "maintainerURL": "https://github.com/bnitkin",
     "description": "Upcoming departures for any transit agencies that publishes GTFS.",
     "issues": [],
-    "stars": 7,
+    "stars": 8,
     "license": "MIT",
     "tags": [
       "transit",
@@ -19472,7 +19481,6 @@
     "tags": [
       "\"magic",
       "mirror\"",
-      "\"magic",
       "module\""
     ],
     "license": "MIT"

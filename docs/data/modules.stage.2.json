@@ -10908,7 +10908,7 @@
     "maintainerURL": "",
     "description": "Displays a Precipitation Radar for your location.",
     "issues": [],
-    "stars": 14,
+    "stars": 15,
     "license": "MIT"
   },
   {
@@ -10968,7 +10968,7 @@
     "maintainerURL": "",
     "description": "Load a random photo from picsum. Originally by diego-vieira, now with support for local paths and NextCloud shares.",
     "issues": [],
-    "stars": 8
+    "stars": 10
   },
   {
     "name": "MMM-RandomQuotes",
@@ -11049,7 +11049,7 @@
     "maintainerURL": "",
     "description": "Displays a new recipe everyday.",
     "issues": [],
-    "stars": 9
+    "stars": 10
   },
   {
     "name": "MMM-Recyclecollection",
@@ -11143,7 +11143,7 @@
     "maintainerURL": "",
     "description": "Cleanly shutdown or reboot your mirror, install and configure modules, and turn your monitor on and off from a simple web page, i.e. from your smartphone.",
     "issues": [],
-    "stars": 520,
+    "stars": 523,
     "license": "MIT"
   },
   {
@@ -11312,7 +11312,7 @@
     "maintainerURL": "",
     "description": "Rhein-Main local transport system (RMV) - Departure Monitor.",
     "issues": [],
-    "stars": 21,
+    "stars": 22,
     "license": "MIT"
   },
   {
@@ -11324,7 +11324,7 @@
     "maintainerURL": "https://github.com/jalibu",
     "description": "A departure monitor for stations within the Rhein-Neckar-Verkehr (RNV) public traffic network using the new API.",
     "issues": [],
-    "stars": 3,
+    "stars": 4,
     "license": "MIT"
   },
   {
@@ -11383,7 +11383,7 @@
     "maintainerURL": "",
     "description": "Displays the Rotten Tomatoes meter score for the current box office and movies coming soon.",
     "issues": [],
-    "stars": 9,
+    "stars": 10,
     "license": "MIT"
   },
   {
@@ -12428,7 +12428,7 @@
     "maintainerURL": "",
     "description": "Monitor a Solax inverter using the API. Text and graphical layouts available.",
     "issues": [],
-    "stars": 0,
+    "stars": 1,
     "license": "NOASSERTION"
   },
   {
@@ -13537,7 +13537,7 @@
     "maintainerURL": "https://github.com/bnitkin",
     "description": "Upcoming departures for any transit agencies that publishes GTFS.",
     "issues": [],
-    "stars": 7,
+    "stars": 8,
     "license": "MIT"
   },
   {
