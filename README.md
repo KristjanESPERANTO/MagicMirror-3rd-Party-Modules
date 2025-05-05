@@ -6,13 +6,13 @@ Feedback and pull requests are very welcome.
 
 ## List of modules
 
-[The official list in the wiki](https://github.com/MagicMirrorOrg/MagicMirror/wiki/3rd-party-modules) is a simple text list without filters and images. This list now contains over 1000 modules, so it is not so easy for users to pick out modules.
+[The original list in the wiki](https://github.com/MagicMirrorOrg/MagicMirror/wiki/3rd-party-modules) is a simple text list without filters and images. This list now contains over 1000 modules, so it is not so easy for users to pick out modules.
 
-Based on the official list, we automatically create a website with filter functions and integrated images. You can check it out here: <https://modules.magicmirror.builders/>
+Based on the original list, we automatically create a website with filter functions and integrated images. You can check it out here: <https://modules.magicmirror.builders/>
 
 ### How do I get my module presented in the new list?
 
-Add your module to [the official list in the wiki](https://github.com/MagicMirrorOrg/MagicMirror/wiki/3rd-party-modules). Twice a day the new list will be updated based on the official list.
+Add your module to [the original list in the wiki](https://github.com/MagicMirrorOrg/MagicMirror/wiki/3rd-party-modules). Twice a day the new list will be updated based on the original list.
 
 ### How do I get my module presented perfectly in the new list?
 
@@ -75,7 +75,7 @@ For running the scripts and developing you need:
 
 With `npm start` you can call up a cli menu that offers you options for execution.
 
-You can run all scripts in the right order by `npm run all`.
+You can run all scripts in the right order by `node --run all`.
 
 _Note_: Running all scripts requires a lot of time (> 10 min) and space on your hard drive (> 2 GB).
 
@@ -118,20 +118,19 @@ This script replaces the first script `create_module_list.js` for this case.
 How can you use it?
 
 1. Write the module or modules you want to test in a new file [`ownModuleList.json`](ownModuleList.json) (use `ownModuleList_sample.json` as template). The only obligatory field is "url", but you can also enter a "branch".
-2. Execute `npm run ownList`.
+2. Execute `node --run ownList`.
 3. You can see the result in [`result.html`](https://modules.magicmirror.builders/result.html).
 
 ## Ideas / To do
 
 - Long-term goal: The website functions like an app store. The user only has to click on an install button and the module is installed and a basic configuration is inserted.
 - Move ideas/todos to GitHub Issues and add proper tags.
-- Add test which runs ESLint only with import plugin to check modules
 - `package.json` is handled in different scripts. This could be done in one.
 - Show results in popup on the page.
 - Compatibility with:
   - the module list of `MMM-Remote-Control`: <https://github.com/Jopyth/MMM-Remote-Control/blob/master/modules.json> / `MMM-Remote-Control-Repository` <https://github.com/MMRIZE/MMM-Remote-Control-Repository>
   - and mmpm <https://github.com/Bee-Mar/mmpm>
-- optimize progress information while running `npm run all`
+- optimize progress information while running `node --run all`
 - Also run the tests on MagicMirror² core?
 - Tests
   - Is repository reachable? Now the get_modules script interrupts if a repo isn't reachable.

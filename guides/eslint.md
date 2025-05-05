@@ -26,48 +26,45 @@ npm install --save-dev eslint @eslint/js @stylistic/eslint-plugin globals
 
 Create a file named `eslint.config.mjs` in the root directory of your module. This file will contain the configuration for ESLint.
 
-````bash
 Add a `eslint.config.mjs` file to the top directory with the following text:
 
 ```js
-import eslintPluginJs from '@eslint/js'
-import eslintPluginStylistic from '@stylistic/eslint-plugin'
-import globals from 'globals'
+import eslintPluginJs from "@eslint/js";
+import eslintPluginStylistic from "@stylistic/eslint-plugin";
+import globals from "globals";
 
 const config = [
   eslintPluginJs.configs.recommended,
   eslintPluginStylistic.configs.recommended,
   {
-    files: ['**/*.js'],
+    files: ["**/*.js"],
     languageOptions: {
       globals: {
         ...globals.browser,
         ...globals.node,
-        Log: 'readonly',
-        Module: 'readonly',
-        config: 'readonly',
+        Log: "readonly",
+        Module: "readonly",
+        config: "readonly"
       },
-      sourceType: 'commonjs',
+      sourceType: "commonjs"
     },
-    rules: {
-    },
+    rules: {}
   },
   {
-    files: ['**/*.mjs'],
+    files: ["**/*.mjs"],
     languageOptions: {
-      ecmaVersion: 'latest',
+      ecmaVersion: "latest",
       globals: {
-        ...globals.node,
+        ...globals.node
       },
-      sourceType: 'module',
+      sourceType: "module"
     },
-    rules: {
-    },
-  },
-]
+    rules: {}
+  }
+];
 
-export default config
-````
+export default config;
+```
 
 ### 3 - Add linting scripts to `package.json`
 
@@ -168,7 +165,7 @@ permissions:
 jobs:
   run-lint:
     runs-on: ubuntu-latest
-    timeout-minutes: 30
+    timeout-minutes: 10
     steps:
       - run: echo "🎉 The job was automatically triggered by a ${{ github.event_name }} event."
       - run: echo "🐧 This job is now running on a ${{ runner.os }} server hosted by GitHub!"
@@ -185,7 +182,7 @@ jobs:
       - name: Install dependencies
         run: npm ci
       - name: Check linting
-        run: npm run lint
+        run: node --run lint
       - run: echo "🍏 This job's status is ${{ job.status }}."
 ```
 
