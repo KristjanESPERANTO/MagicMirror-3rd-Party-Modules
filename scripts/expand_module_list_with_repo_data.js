@@ -115,6 +115,12 @@ async function addInformationFromPackageJson (moduleList) {
           })
           .filter((tag) => !tagsToRemove.includes(tag));
 
+        if (module.tags.some((tag) => ["images", "pictures", "livestream", "photos", "video"].includes(tag))) {
+          module.tags.push("media");
+        }
+        // Remove duplicates
+        module.tags = [...new Set(module.tags)];
+
         if (module.tags.length === 0) {
           delete module.tags;
           module.issues.push("There are no specific keywords in 'package.json'. We would use them as tags on the module list page. Add a few meaningful terms to the keywords in the package.json. Not just “magicmirror” or “module”.");

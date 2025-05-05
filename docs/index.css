@@ -421,13 +421,13 @@ main {
   background-color: #5bc7d9 !important;
 }
 
-[data-tag="news"].tag-button::before {
-  content: "📰";
+[data-tag="media"].tag-button::before {
+  content: "📼";
 }
 
-[data-tag="news"] {
+[data-tag="media"] {
   color: #141e1e !important;
-  background-color: #e0fffe !important;
+  background-color: #18fef6 !important;
 }
 
 [data-tag="motion detection"].tag-button::before {
@@ -437,6 +437,15 @@ main {
 [data-tag="motion detection"] {
   color: #220212 !important;
   background-color: #ff419e !important;
+}
+
+[data-tag="news"].tag-button::before {
+  content: "📰";
+}
+
+[data-tag="news"] {
+  color: #141e1e !important;
+  background-color: #e0fffe !important;
 }
 
 [data-tag="public transport"].tag-button::before {
