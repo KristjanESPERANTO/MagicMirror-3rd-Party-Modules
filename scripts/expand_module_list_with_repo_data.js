@@ -115,7 +115,7 @@ async function addInformationFromPackageJson (moduleList) {
           })
           .filter((tag) => !tagsToRemove.includes(tag));
 
-        if (module.tags.some((tag) => ["images", "pictures", "livestream", "photos", "video"].includes(tag))) {
+        if (module.tags.some((tag) => ["image", "images", "pictures", "livestream", "photos", "video"].includes(tag))) {
           module.tags.push("media");
         }
         // Remove duplicates
