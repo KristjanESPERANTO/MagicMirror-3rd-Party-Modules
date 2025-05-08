@@ -166,6 +166,7 @@
     "maintainerURL": "",
     "description": "An interface to manage your MagicMirror.",
     "issues": [
+      "There are duplicates in the keywords in your package.json: \"Magic",
       "No image found."
     ],
     "outdated": "Abandoned. No updates since years. But may still work.",
@@ -313,7 +314,7 @@
     "maintainerURL": "",
     "description": "Display air quality and Pollen information using data from the ambee API.<br /><strong>Note:</strong> API key is only available with a business email address.",
     "issues": [],
-    "stars": 1,
+    "stars": 2,
     "license": "MIT",
     "tags": [
       "airquality",
@@ -878,7 +879,9 @@
     "maintainer": "totoluto",
     "maintainerURL": "https://github.com/totoluto",
     "description": "Display monitor data from selfhosted <a target=\"_blank\" href=\"https://github.com/louislam/uptime-kuma\">https://github.com/louislam/uptime-kuma</a>. Uses token authentication and does not need a public status page like MMM-uptimekuma. There are also more styling options and different values can be displayed.",
-    "issues": [],
+    "issues": [
+      "There are duplicates in the keywords in your package.json: uptime, kuma"
+    ],
     "stars": 1,
     "license": "MIT",
     "tags": [
@@ -1141,7 +1144,9 @@
     "maintainer": "MajorChris1983",
     "maintainerURL": "",
     "description": "Displays snow reports from bergfex.at. Countries provided by bergfex.at can be configured and set.<br />This is a fork of <a target=\"_blank\" href=\"https://github.com/nebulx29/MMM-bergfex\">the unmaintained module from nebulux</a>.",
-    "issues": [],
+    "issues": [
+      "There are duplicates in the keywords in your package.json: forecast"
+    ],
     "stars": 3,
     "tags": [
       "bergfex",
@@ -2325,7 +2330,7 @@
     "maintainerURL": "https://github.com/ChrisF1976",
     "description": "A fun and visually dynamic module that shows a chameleon whose appearance changes depending on the temperature and weather conditions.",
     "issues": [],
-    "stars": 0,
+    "stars": 2,
     "license": "MIT",
     "tags": [
       "weather",
@@ -5269,7 +5274,7 @@
     "maintainerURL": "https://github.com/ChrisF1976",
     "description": "Monitors filter status via Shelly device power consumption.",
     "issues": [],
-    "stars": 0,
+    "stars": 1,
     "license": "MIT",
     "tags": [
       "ventilation",
@@ -9403,16 +9408,14 @@
     "maintainer": "barnosch",
     "maintainerURL": "",
     "description": "Shows the current song and player from your Lyrion Music / Logitech Media / LMS Server.",
-    "issues": [
-      "`package.json` issue: No repository field."
-    ],
+    "issues": [],
     "stars": 3,
     "license": "MIT",
     "tags": [
-      "magig mirror",
-      "music server",
-      "lyrion server",
-      "lms"
+      "lyrion music server",
+      "logitech media server",
+      "lms",
+      "squeezebox"
     ],
     "image": "playing.jpg"
   },
@@ -9820,7 +9823,7 @@
     "issues": [
       "There is no `package.json`. We need this file to gather information about the module for the module list page."
     ],
-    "stars": 1
+    "stars": 3
   },
   {
     "name": "MMM-MealViewer",
@@ -10049,6 +10052,7 @@
     "maintainerURL": "",
     "description": "Alexa voice control to show/hide modules, search for images or Youtube video, and display them with the search term on the mirror.",
     "issues": [
+      "There are duplicates in the keywords in your package.json: Alexa",
       "No image found."
     ],
     "stars": 96,
@@ -10903,6 +10907,7 @@
     "maintainerURL": "",
     "description": "Camera based motion detector that turns of your display after a while, updated fork of alexyaks version.",
     "issues": [
+      "There are duplicates in the keywords in your package.json: mirror",
       "No image found."
     ],
     "stars": 54,
@@ -11611,7 +11616,7 @@
     "maintainerURL": "",
     "description": "Display standings and rankings for your favorite leagues and divisions from many major sports, including Olympics.",
     "issues": [],
-    "stars": 2,
+    "stars": 3,
     "license": "MIT",
     "tags": [
       "sports",
@@ -12210,22 +12215,6 @@
   {
     "name": "MMM-NewsAPI",
     "category": "News / Information",
-    "url": "https://github.com/mumblebaj/MMM-NewsAPI",
-    "id": "mumblebaj/MMM-NewsAPI",
-    "maintainer": "mumblebaj",
-    "maintainerURL": "https://github.com/mumblebaj",
-    "description": "Get news from <a target=\"_blank\" href=\"https://newsapi.org\">newsapi.org</a>.",
-    "issues": [],
-    "stars": 11,
-    "license": "MIT",
-    "tags": [
-      "news"
-    ],
-    "image": "screenshot1.jpg"
-  },
-  {
-    "name": "MMM-NewsAPI",
-    "category": "News / Information",
     "url": "https://github.com/totoluto/MMM-NewsAPI",
     "id": "totoluto/MMM-NewsAPI",
     "maintainer": "totoluto",
@@ -12239,6 +12228,22 @@
       "api"
     ],
     "image": "screenshots-MMM-NewsApi.jpg"
+  },
+  {
+    "name": "MMM-NewsAPI",
+    "category": "News / Information",
+    "url": "https://github.com/mumblebaj/MMM-NewsAPI",
+    "id": "mumblebaj/MMM-NewsAPI",
+    "maintainer": "mumblebaj",
+    "maintainerURL": "https://github.com/mumblebaj",
+    "description": "Get news from <a target=\"_blank\" href=\"https://newsapi.org\">newsapi.org</a>.",
+    "issues": [],
+    "stars": 11,
+    "license": "MIT",
+    "tags": [
+      "news"
+    ],
+    "image": "screenshot1.jpg"
   },
   {
     "name": "MMM-NewsFeedTicker",
@@ -12457,7 +12462,7 @@
     "maintainerURL": "https://github.com/Jalibu",
     "description": "Client implementation for German NINA Warn API. Supports alerts of KatWarn, Biwapp and Mowas.",
     "issues": [],
-    "stars": 21,
+    "stars": 22,
     "license": "MIT",
     "tags": [
       "nina",
@@ -12869,7 +12874,7 @@
     "description": "Display the song you are currently listening to on Spotify.",
     "issues": [],
     "outdated": "Abandoned. No reactions to issues since years. Depends on deprecated modules. MMM-OnSpotify is an alternative.",
-    "stars": 207,
+    "stars": 208,
     "license": "MIT",
     "tags": [
       "spotify"
@@ -13212,7 +13217,7 @@
     "issues": [
       "There is no `package.json`. We need this file to gather information about the module for the module list page."
     ],
-    "stars": 2,
+    "stars": 3,
     "license": "Apache-2.0",
     "image": "online_state_screenshot.jpg"
   },
@@ -13243,7 +13248,7 @@
     "maintainerURL": "",
     "description": "Simple On-Screen Menu for controlling the MagicMirror².",
     "issues": [],
-    "stars": 68,
+    "stars": 70,
     "license": "MIT",
     "tags": [
       "menu",
@@ -13261,7 +13266,7 @@
     "maintainerURL": "https://github.com/Fabrizz",
     "description": "Highly customizable module that displays what you are listening to in Spotify. Works with <a target=\"_blank\" href=\"https://github.com/Fabrizz/MMM-LiveLyrics\">MMM-LiveLyrics</a> and allows theming other modules!",
     "issues": [],
-    "stars": 71,
+    "stars": 73,
     "license": "MIT",
     "tags": [
       "spotify",
@@ -13295,7 +13300,7 @@
     "maintainerURL": "https://github.com/nkl-kst",
     "description": "Display historical events from Wikipedia based on the current date.",
     "issues": [],
-    "stars": 36,
+    "stars": 37,
     "license": "MIT",
     "tags": [
       "events",
@@ -13313,7 +13318,7 @@
     "maintainerURL": "https://github.com/slugmuffin",
     "description": "Display historical events from Wikipedia based on the current date using the Wikimedia API. Can display as list or newsfeed style.",
     "issues": [],
-    "stars": 4,
+    "stars": 5,
     "license": "MIT",
     "tags": [
       "events",
@@ -13621,13 +13626,13 @@
   {
     "name": "MMM-pages",
     "category": "Development / Core MagicMirror²",
-    "url": "https://github.com/sdetweil/MMM-pages",
-    "id": "sdetweil/MMM-pages",
-    "maintainer": "sdetweil",
+    "url": "https://github.com/edward-shen/MMM-pages",
+    "id": "edward-shen/MMM-pages",
+    "maintainer": "edward-shen",
     "maintainerURL": "",
-    "description": "Rotate out pages of modules. This is a MMM-pages fork with a different approach of handling individual rotation times than the original project.",
+    "description": "Organize modules into multiple pages to display different information, with the option to automatically rotate through these pages.",
     "issues": [],
-    "stars": 11,
+    "stars": 113,
     "license": "MIT",
     "tags": [
       "pages",
@@ -13638,13 +13643,13 @@
   {
     "name": "MMM-pages",
     "category": "Development / Core MagicMirror²",
-    "url": "https://github.com/edward-shen/MMM-pages",
-    "id": "edward-shen/MMM-pages",
-    "maintainer": "edward-shen",
+    "url": "https://github.com/sdetweil/MMM-pages",
+    "id": "sdetweil/MMM-pages",
+    "maintainer": "sdetweil",
     "maintainerURL": "",
-    "description": "Organize modules into multiple pages to display different information, with the option to automatically rotate through these pages.",
+    "description": "Rotate out pages of modules. This is a MMM-pages fork with a different approach of handling individual rotation times than the original project.",
     "issues": [],
-    "stars": 113,
+    "stars": 12,
     "license": "MIT",
     "tags": [
       "pages",
@@ -13924,7 +13929,7 @@
       "There is no `package.json`. We need this file to gather information about the module for the module list page.",
       "Issues are not enabled in the GitHub repository. So users cannot report bugs. Please enable issues in your repo."
     ],
-    "stars": 1,
+    "stars": 2,
     "hasGithubIssues": false,
     "license": "MIT",
     "image": "pix-1.jpg"
@@ -14007,7 +14012,7 @@
     "maintainerURL": "https://github.com/PierreGode",
     "description": "Automatically controls the screen's power based on the presence of specified phones or devices within the network.",
     "issues": [],
-    "stars": 9,
+    "stars": 10,
     "license": "MIT",
     "tags": [
       "phone",
@@ -14038,7 +14043,7 @@
     "maintainerURL": "",
     "description": "Display stats from Pi-Hole DNS ad blocking.",
     "issues": [],
-    "stars": 80,
+    "stars": 79,
     "license": "MIT",
     "tags": [
       "pi-hole"
@@ -14297,7 +14302,7 @@
       "There is no `package.json`. We need this file to gather information about the module for the module list page.",
       "No image found."
     ],
-    "stars": 8,
+    "stars": 9,
     "license": "MIT"
   },
   {
@@ -14341,7 +14346,7 @@
     "maintainerURL": "https://github.com/eckonator",
     "description": "The module connects to the API of the KOSTAL Plenticore inverter and reads the current data and brings it to the output.",
     "issues": [],
-    "stars": 1,
+    "stars": 2,
     "license": "MIT",
     "tags": [
       "plenticore",
@@ -14464,7 +14469,7 @@
       "`package.json` issue: No repository field.",
       "There are no keywords in 'package.json'. We would use them as tags on the module list page."
     ],
-    "stars": 6,
+    "stars": 7,
     "license": "MIT",
     "image": "docs-preview.jpg"
   },
@@ -14871,7 +14876,7 @@
     "maintainerURL": "",
     "description": "Display departures for public transport in Berlin and Brandenburg (Covers VBB Area).",
     "issues": [],
-    "stars": 41,
+    "stars": 42,
     "license": "MIT",
     "tags": [
       "public transport",
@@ -15290,7 +15295,8 @@
       "photo",
       "image",
       "picsum",
-      "nextcloud"
+      "nextcloud",
+      "media"
     ],
     "license": "ISC",
     "image": "example1.jpg"
@@ -17035,20 +17041,22 @@
   {
     "name": "MMM-SmartWebDisplay",
     "category": "Utility / IoT / 3rd Party / Integration",
-    "url": "https://github.com/AgP42/MMM-SmartWebDisplay",
-    "id": "AgP42/MMM-SmartWebDisplay",
-    "maintainer": "AgP42",
-    "maintainerURL": "https://github.com/AgP42",
+    "url": "https://github.com/ItsMeBrille/MMM-SmartWebDisplay",
+    "id": "ItsMeBrille/MMM-SmartWebDisplay",
+    "maintainer": "ItsMeBrille",
+    "maintainerURL": "",
     "description": "An iFrame module to display web content (including YouTube, IP cameras, etc.). Several rotating URL, autorefresh and remote control of the URL to display, Next/Prev/Play/Stop. <a target=\"_blank\" href=\"https://forum.magicmirror.builders/topic/9750/mmm-smartwebdisplay-display-web-contents-including-youtube-on-your-mm\">MMM-SmartWebDisplay forum</a>.",
     "issues": [
-      "No image found."
+      "Issues are not enabled in the GitHub repository. So users cannot report bugs. Please enable issues in your repo."
     ],
-    "stars": 64,
+    "stars": 0,
+    "hasGithubIssues": false,
     "tags": [
       "iframe",
       "notification"
     ],
-    "license": "MIT"
+    "license": "MIT",
+    "image": "screenshots-MMM-RemoteControl_menu.jpg"
   },
   {
     "name": "MMM-Snake",
@@ -18313,7 +18321,7 @@
   },
   {
     "name": "MMM-Tesla3",
-    "category": "Outdated Modules",
+    "category": "Transport / Travel",
     "url": "https://github.com/usncahill/MMM-Tesla3",
     "id": "usncahill/MMM-Tesla3",
     "maintainer": "usncahill",
@@ -18323,7 +18331,6 @@
       "`package.json` issue: No repository field.",
       "There are no keywords in 'package.json'. We would use them as tags on the module list page."
     ],
-    "outdated": "Abandoned. Repo has been archived at 2024-05-16.",
     "stars": 3,
     "license": "ISC",
     "image": "images-MMM-Tesla3.jpg"
@@ -18387,7 +18394,9 @@
     "maintainer": "ngnijland",
     "maintainerURL": "https://github.com/ngnijland",
     "description": "A clock which shows the time as text.",
-    "issues": [],
+    "issues": [
+      "There are duplicates in the keywords in your package.json: clock, clock"
+    ],
     "stars": 11,
     "license": "MIT",
     "tags": [
@@ -19475,6 +19484,7 @@
     "description": "Enables you to display birthdays from a contacts via a vCard.",
     "issues": [
       "`package.json` issue: No repository field.",
+      "There are duplicates in the keywords in your package.json: \"Magic",
       "No image found."
     ],
     "stars": 1,

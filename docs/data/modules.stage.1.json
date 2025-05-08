@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "2025-05-05T20:22:05.518Z",
+  "lastUpdate": "2025-05-08T20:40:25.420Z",
   "modules": [
     {
       "name": "MMM-01ZM",
@@ -10332,10 +10332,10 @@
     {
       "name": "MMM-SmartWebDisplay",
       "category": "Utility / IoT / 3rd Party / Integration",
-      "url": "https://github.com/AgP42/MMM-SmartWebDisplay",
-      "id": "AgP42/MMM-SmartWebDisplay",
-      "maintainer": "AgP42",
-      "maintainerURL": "https://github.com/AgP42",
+      "url": "https://github.com/ItsMeBrille/MMM-SmartWebDisplay",
+      "id": "ItsMeBrille/MMM-SmartWebDisplay",
+      "maintainer": "ItsMeBrille",
+      "maintainerURL": "",
       "description": "An iFrame module to display web content (including YouTube, IP cameras, etc.). Several rotating URL, autorefresh and remote control of the URL to display, Next/Prev/Play/Stop. <a target=\"_blank\" href=\"https://forum.magicmirror.builders/topic/9750/mmm-smartwebdisplay-display-web-contents-including-youtube-on-your-mm\">MMM-SmartWebDisplay forum</a>.",
       "issues": []
     },
@@ -11097,14 +11097,13 @@
     },
     {
       "name": "MMM-Tesla3",
-      "category": "Outdated Modules",
+      "category": "Transport / Travel",
       "url": "https://github.com/usncahill/MMM-Tesla3",
       "id": "usncahill/MMM-Tesla3",
       "maintainer": "usncahill",
       "maintainerURL": "",
       "description": "Display Tesla data directly from Tesla API. Customizable GUI based on <a target=\"_blank\" href=\"https://github.com/denverquane/MMM-Teslamate\">MMM-TeslaMate</a>.",
-      "issues": [],
-      "outdated": "Abandoned. Repo has been archived at 2024-05-16."
+      "issues": []
     },
     {
       "name": "MMM-TeslaLogger",
