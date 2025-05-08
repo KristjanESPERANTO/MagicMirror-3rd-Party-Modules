@@ -101,7 +101,14 @@ async function addInformationFromPackageJson (moduleList) {
           "smart mirror"
         ];
 
-        module.tags = moduleData.keywords
+        module.tags = moduleData.keywords;
+
+        const duplicates = module.tags.filter((tag, index) => module.tags.indexOf(tag) !== index);
+        if (duplicates.length > 0) {
+          module.issues.push(`There are duplicates in the keywords in your package.json: ${duplicates.join(", ")}`);
+        }
+
+        module.tags = module.tags
           .map((tag) => {
             tag = tag.toLowerCase();
             if (tag === "smarthome") {
