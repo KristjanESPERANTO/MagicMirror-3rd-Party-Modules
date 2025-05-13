@@ -438,6 +438,15 @@ def check_modules():
                             elif "eslint" not in package_json_content["scripts"]["lint"]:
                                 module["issues"].append(
                                     "Recommendation: The lint script in package.json does not contain `eslint`. It is recommended to add it.")
+                # Check if the string "defineConfig" is in ESLint config file
+                eslint_config_file = Path(f"{module_directory_path}/eslint.config.js")
+                if not eslint_config_file.is_file():
+                    eslint_config_file = Path(f"{module_directory_path}/eslint.config.mjs")
+                if eslint_config_file.is_file():
+                    found_string = search_in_file(eslint_config_file, "defineConfig")
+                    if not found_string:
+                        module["issues"].append(
+                            f"Recommendation: The ESLint configuration file `{eslint_config_file.name}` does not contain `defineConfig`. It is recommended to use it.")
 
             if not module_directory_path.is_dir():
                 module["issues"] = [
