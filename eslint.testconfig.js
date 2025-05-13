@@ -59,7 +59,7 @@ export default defineConfig([
     plugins: {depend, packageJson},
     extends: ["packageJson/recommended"],
     rules: {
-      "depend/ban-dependencies": ["error", {allowed: ["moment"]}],
+      "depend/ban-dependencies": ["error", {allowed: ["lint-staged", "moment"]}],
       "package-json/order-properties": "off"
     }
   }
