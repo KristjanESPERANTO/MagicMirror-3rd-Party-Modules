@@ -29,13 +29,12 @@ Create a file named `eslint.config.mjs` in the root directory of your module. Th
 Add a `eslint.config.mjs` file to the top directory with the following text:
 
 ```js
-import eslintPluginJs from "@eslint/js";
-import eslintPluginStylistic from "@stylistic/eslint-plugin";
+import { defineConfig } from "eslint/config";
 import globals from "globals";
+import js from "@eslint/js";
+import stylistic from "@stylistic/eslint-plugin";
 
-const config = [
-  eslintPluginJs.configs.recommended,
-  eslintPluginStylistic.configs.recommended,
+export default defineConfig([
   {
     files: ["**/*.js"],
     languageOptions: {
@@ -61,9 +60,7 @@ const config = [
     },
     rules: {}
   }
-];
-
-export default config;
+]);
 ```
 
 ### 3 - Add linting scripts to `package.json`
