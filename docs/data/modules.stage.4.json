@@ -431,7 +431,7 @@
     "maintainerURL": "",
     "description": "The MMM-AlexaControl module allows you to control your Mirror with Alexa (every device that support Wemos devices). You can turn it on and off, change the page and send notifications to other modules.",
     "issues": [],
-    "stars": 48,
+    "stars": 49,
     "license": "MIT",
     "tags": [
       "alexacontrol",
@@ -561,7 +561,7 @@
     "issues": [
       "There are no specific keywords in 'package.json'. We would use them as tags on the module list page. Add a few meaningful terms to the keywords in the package.json. Not just “magicmirror” or “module”."
     ],
-    "stars": 12,
+    "stars": 13,
     "license": "MIT",
     "image": "anylist.jpg"
   },
@@ -662,7 +662,7 @@
     "maintainerURL": "",
     "description": "Display the last Astronomy Picture Of the Day (APOD). This is an evolution of MMM-nasaastropic. Supports image and video and display title, description and copyright.",
     "issues": [],
-    "stars": 16,
+    "stars": 17,
     "license": "MIT",
     "tags": [
       "nasa",
@@ -882,7 +882,7 @@
     "issues": [
       "There are duplicates in the keywords in your package.json: uptime, kuma"
     ],
-    "stars": 1,
+    "stars": 2,
     "license": "MIT",
     "tags": [
       "uptimekuma",
@@ -1012,7 +1012,7 @@
     "maintainerURL": "",
     "description": "Show fullscreen slideshow in background from images in a local folder. Great for a photo frame.",
     "issues": [],
-    "stars": 159,
+    "stars": 160,
     "license": "MIT",
     "tags": [
       "background",
@@ -1261,7 +1261,7 @@
     "maintainerURL": "https://github.com/BrianHepler",
     "description": "Display submissions to BirdNET, Cornell University's machine learning project to identify birds by their song.",
     "issues": [],
-    "stars": 4,
+    "stars": 5,
     "tags": [
       "birdnet",
       "birds",
@@ -1714,7 +1714,7 @@
     "maintainerURL": "",
     "description": "Display a Bring! shopping list in a flexible view and touch support.",
     "issues": [],
-    "stars": 31,
+    "stars": 32,
     "license": "MIT",
     "tags": [
       "bring"
@@ -1760,7 +1760,7 @@
     "url": "https://github.com/StefanNienhuis/MMM-Buienradar",
     "id": "StefanNienhuis/MMM-Buienradar",
     "maintainer": "StefanNienhuis",
-    "maintainerURL": "https://github.com/StefanNienhuis",
+    "maintainerURL": "",
     "description": "This module will show a map with the weather forecast provided by Buienradar.",
     "issues": [
       "`package.json` issue: No repository field.",
@@ -1946,7 +1946,7 @@
     "maintainerURL": "",
     "description": "Extended calendar and event view.",
     "issues": [],
-    "stars": 108,
+    "stars": 111,
     "license": "MIT",
     "tags": [
       "calendar"
@@ -1962,7 +1962,7 @@
     "maintainerURL": "",
     "description": "Extended calendar and event view.",
     "issues": [],
-    "stars": 74,
+    "stars": 76,
     "license": "MIT",
     "tags": [
       "calendar",
@@ -1979,7 +1979,7 @@
     "maintainerURL": "",
     "description": "Extended calendar and event view. Show calendar as agenda.",
     "issues": [],
-    "stars": 25,
+    "stars": 26,
     "license": "MIT",
     "tags": [
       "calendar",
@@ -2393,6 +2393,23 @@
     "stars": 8,
     "license": "MIT",
     "image": "impression_0.jpg"
+  },
+  {
+    "name": "MMM-Chores",
+    "category": "Utility / IoT / 3rd Party / Integration",
+    "url": "https://github.com/PierreGode/MMM-Chores",
+    "id": "PierreGode/MMM-Chores",
+    "maintainer": "PierreGode",
+    "maintainerURL": "",
+    "description": "Manage and keep track of your household chores.",
+    "issues": [
+      "`package.json` issue: No repository field.",
+      "There are no keywords in 'package.json'. We would use them as tags on the module list page.",
+      "Issue: The license in the package.json (MIT) doesn't match the license file (Apache-2.0).",
+      "No image found."
+    ],
+    "stars": 1,
+    "license": "Apache-2.0"
   },
   {
     "name": "MMM-chromecast",
@@ -3088,7 +3105,7 @@
     "id": "kodejak/MMM-cryptocoin",
     "maintainer": "kodejak",
     "maintainerURL": "",
-    "description": "A module that displays one or more cryptocoins e.g. BTC, ETC, DASH, ... .",
+    "description": "A module that displays one or more cryptocoins e.g. BTC, ETC, DASH, ...",
     "issues": [
       "There is no `package.json`. We need this file to gather information about the module for the module list page."
     ],
@@ -3187,7 +3204,7 @@
   },
   {
     "name": "MMM-Currentweather-MQTT",
-    "category": "Weather",
+    "category": "Outdated Modules",
     "url": "https://github.com/spitzlbergerj/MMM-Currentweather-MQTT",
     "id": "spitzlbergerj/MMM-Currentweather-MQTT",
     "maintainer": "spitzlbergerj",
@@ -3196,7 +3213,9 @@
     "issues": [
       "There are no keywords in 'package.json'. We would use them as tags on the module list page."
     ],
+    "outdated": "Abandoned. Repo has been archived at 2025-04-21.",
     "stars": 3,
+    "isArchived": true,
     "license": "MIT",
     "image": "weather_screenshot.jpg"
   },
@@ -3209,7 +3228,7 @@
     "maintainerURL": "",
     "description": "Display cursor when user moves mouse and hide after delay.",
     "issues": [],
-    "stars": 25,
+    "stars": 26,
     "license": "MIT",
     "tags": [
       "cursor"
@@ -3299,7 +3318,7 @@
       "There is no `package.json`. We need this file to gather information about the module for the module list page.",
       "No image found."
     ],
-    "stars": 10,
+    "stars": 11,
     "license": "MIT"
   },
   {
@@ -3342,7 +3361,7 @@
     "maintainerURL": "",
     "description": "Simple display of dad jokes from icanhazdadjoke.com.",
     "issues": [],
-    "stars": 10,
+    "stars": 11,
     "license": "MIT",
     "tags": [
       "jokes",
@@ -3513,7 +3532,7 @@
       "`package.json` issue: No repository field.",
       "There are no keywords in 'package.json'. We would use them as tags on the module list page."
     ],
-    "stars": 24,
+    "stars": 26,
     "license": "MIT",
     "image": "images-demo.jpg"
   },
@@ -3878,7 +3897,7 @@
       "`package.json` issue: license should be a valid SPDX license expression",
       "Issue: The license in the package.json (CC Zero) doesn't match the license file (CC0-1.0)."
     ],
-    "stars": 10,
+    "stars": 11,
     "license": "CC0-1.0",
     "tags": [
       "discord"
@@ -4822,7 +4841,7 @@
     "issues": [
       "There is no `package.json`. We need this file to gather information about the module for the module list page."
     ],
-    "stars": 47,
+    "stars": 48,
     "license": "MIT",
     "image": "pix-1.jpg"
   },
@@ -7591,6 +7610,29 @@
     "image": "images-1.jpg"
   },
   {
+    "name": "MMM-HusqvarnaAutomower",
+    "category": "Utility / IoT / 3rd Party / Integration",
+    "url": "https://github.com/ASteinsdoerfer/MMM-HusqvarnaAutomower",
+    "id": "ASteinsdoerfer/MMM-HusqvarnaAutomower",
+    "maintainer": "ASteinsdoerfer",
+    "maintainerURL": "https://github.com/ASteinsdoerfer",
+    "description": "display the current status of a Husqvarna Automower.",
+    "issues": [
+      "Issue: The license in the package.json (MIT) doesn't match the license file (NOASSERTION).",
+      "No compatible or wrong license field in 'package.json' or LICENSE file. Without that, we can't use an image."
+    ],
+    "stars": 0,
+    "license": "NOASSERTION",
+    "tags": [
+      "husqvarna",
+      "automower",
+      "smartmirror",
+      "modul",
+      "open-source",
+      "smart home"
+    ]
+  },
+  {
     "name": "MMM-HVIEW-Snapshot",
     "category": "Utility / IoT / 3rd Party / Integration",
     "url": "https://github.com/coderpussy/MMM-HVIEW-Snapshot",
@@ -7899,7 +7941,7 @@
     "issues": [
       "Issues are not enabled in the GitHub repository. So users cannot report bugs. Please enable issues in your repo."
     ],
-    "stars": 9,
+    "stars": 10,
     "hasGithubIssues": false,
     "license": "MIT",
     "tags": [
@@ -8450,18 +8492,18 @@
     "stars": 12
   },
   {
-    "name": "MMM-jokes",
+    "name": "MMM-Jokes",
     "category": "Entertainment / Misc",
-    "url": "https://github.com/aegis1980/MMM-jokes",
-    "id": "aegis1980/MMM-jokes",
-    "maintainer": "aegis1980",
+    "url": "https://github.com/n00b42/MMM-Jokes",
+    "id": "n00b42/MMM-Jokes",
+    "maintainer": "n00b42",
     "maintainerURL": "",
-    "description": "Load random jokes from the web.",
+    "description": "Load random jokes from the web (Fork of outdated aegis1980 MMM-jokes).",
     "issues": [
       "Issues are not enabled in the GitHub repository. So users cannot report bugs. Please enable issues in your repo.",
       "No image found."
     ],
-    "stars": 1,
+    "stars": 0,
     "hasGithubIssues": false,
     "tags": [
       "jokes"
@@ -12622,9 +12664,7 @@
     "maintainer": "mumblebaj",
     "maintainerURL": "",
     "description": "Different providers for users to choose from. Shows current plus 3 day forecast. Mouseover shows forecast, with Air, UV, Humidity, Sunrise and Set.",
-    "issues": [
-      "Issue: The license in the package.json (ISC) doesn't match the license file (MIT)."
-    ],
+    "issues": [],
     "stars": 2,
     "license": "MIT",
     "tags": [
@@ -13671,13 +13711,13 @@
   {
     "name": "MMM-pages",
     "category": "Development / Core MagicMirror²",
-    "url": "https://github.com/edward-shen/MMM-pages",
-    "id": "edward-shen/MMM-pages",
-    "maintainer": "edward-shen",
+    "url": "https://github.com/sdetweil/MMM-pages",
+    "id": "sdetweil/MMM-pages",
+    "maintainer": "sdetweil",
     "maintainerURL": "",
-    "description": "Organize modules into multiple pages to display different information, with the option to automatically rotate through these pages.",
+    "description": "Rotate out pages of modules. This is a MMM-pages fork with a different approach of handling individual rotation times than the original project.",
     "issues": [],
-    "stars": 113,
+    "stars": 12,
     "license": "MIT",
     "tags": [
       "pages",
@@ -13688,13 +13728,13 @@
   {
     "name": "MMM-pages",
     "category": "Development / Core MagicMirror²",
-    "url": "https://github.com/sdetweil/MMM-pages",
-    "id": "sdetweil/MMM-pages",
-    "maintainer": "sdetweil",
+    "url": "https://github.com/edward-shen/MMM-pages",
+    "id": "edward-shen/MMM-pages",
+    "maintainer": "edward-shen",
     "maintainerURL": "",
-    "description": "Rotate out pages of modules. This is a MMM-pages fork with a different approach of handling individual rotation times than the original project.",
+    "description": "Organize modules into multiple pages to display different information, with the option to automatically rotate through these pages.",
     "issues": [],
-    "stars": 12,
+    "stars": 115,
     "license": "MIT",
     "tags": [
       "pages",
@@ -15494,6 +15534,27 @@
     ],
     "stars": 34,
     "license": "ISC"
+  },
+  {
+    "name": "MMM-Reddit",
+    "category": "Entertainment / Misc",
+    "url": "https://github.com/mumblebaj/MMM-Reddit",
+    "id": "mumblebaj/MMM-Reddit",
+    "maintainer": "mumblebaj",
+    "maintainerURL": "",
+    "description": "Displays top level content from Reddit in either headlines or image based display types.",
+    "issues": [
+      "`package.json` issue: No repository field.",
+      "Issues are not enabled in the GitHub repository. So users cannot report bugs. Please enable issues in your repo.",
+      "No image found."
+    ],
+    "stars": 9,
+    "hasGithubIssues": false,
+    "tags": [
+      "reddit",
+      "news"
+    ],
+    "license": "MIT"
   },
   {
     "name": "MMM-Reddit-News-Ticker",
@@ -20986,25 +21047,6 @@
     "maintainer": "supermem613",
     "maintainerURL": "",
     "description": "Displays Zmanim (Jewish calendar information).",
-    "issues": [
-      "`package.json` issue: No description",
-      "`package.json` issue: No repository field.",
-      "There are no specific keywords in 'package.json'. We would use them as tags on the module list page. Add a few meaningful terms to the keywords in the package.json. Not just “magicmirror” or “module”.",
-      "Issues are not enabled in the GitHub repository. So users cannot report bugs. Please enable issues in your repo."
-    ],
-    "stars": 0,
-    "hasGithubIssues": false,
-    "license": "ISC",
-    "image": "alternateScreenshot.jpg"
-  },
-  {
-    "name": "MMM-Zmanim",
-    "category": "Religion",
-    "url": "https://github.com/shmulyeng/MMM-Zmanim",
-    "id": "shmulyeng/MMM-Zmanim",
-    "maintainer": "shmulyeng",
-    "maintainerURL": "",
-    "description": "Displays daily Jewish calendar information.",
     "issues": [
       "`package.json` issue: No description",
       "`package.json` issue: No repository field.",

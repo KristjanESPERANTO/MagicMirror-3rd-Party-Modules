@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "2025-05-08T20:40:25.420Z",
+  "lastUpdate": "2025-05-13T18:03:07.441Z",
   "modules": [
     {
       "name": "MMM-01ZM",
@@ -1067,7 +1067,7 @@
       "url": "https://github.com/StefanNienhuis/MMM-Buienradar",
       "id": "StefanNienhuis/MMM-Buienradar",
       "maintainer": "StefanNienhuis",
-      "maintainerURL": "https://github.com/StefanNienhuis",
+      "maintainerURL": "",
       "description": "This module will show a map with the weather forecast provided by Buienradar.",
       "issues": []
     },
@@ -1442,6 +1442,16 @@
       "maintainer": "nout-kleef",
       "maintainerURL": "https://github.com/nout-kleef",
       "description": "Display your chess.com games on your mirror (chess skills optional!).",
+      "issues": []
+    },
+    {
+      "name": "MMM-Chores",
+      "category": "Utility / IoT / 3rd Party / Integration",
+      "url": "https://github.com/PierreGode/MMM-Chores",
+      "id": "PierreGode/MMM-Chores",
+      "maintainer": "PierreGode",
+      "maintainerURL": "",
+      "description": "Manage and keep track of your household chores.",
       "issues": []
     },
     {
@@ -1881,7 +1891,7 @@
       "id": "kodejak/MMM-cryptocoin",
       "maintainer": "kodejak",
       "maintainerURL": "",
-      "description": "A module that displays one or more cryptocoins e.g. BTC, ETC, DASH, ... .",
+      "description": "A module that displays one or more cryptocoins e.g. BTC, ETC, DASH, ...",
       "issues": [],
       "outdated": "Abandoned. No updates since years. But may still work."
     },
@@ -1947,13 +1957,14 @@
     },
     {
       "name": "MMM-Currentweather-MQTT",
-      "category": "Weather",
+      "category": "Outdated Modules",
       "url": "https://github.com/spitzlbergerj/MMM-Currentweather-MQTT",
       "id": "spitzlbergerj/MMM-Currentweather-MQTT",
       "maintainer": "spitzlbergerj",
       "maintainerURL": "https://github.com/spitzlbergerj",
       "description": "Extension of the standard module currentweather by the possibility to process and integrate MQTT telegrams of an own weather station.",
-      "issues": []
+      "issues": [],
+      "outdated": "Abandoned. Repo has been archived at 2025-04-21."
     },
     {
       "name": "MMM-Cursor",
@@ -4625,6 +4636,16 @@
       "issues": []
     },
     {
+      "name": "MMM-HusqvarnaAutomower",
+      "category": "Utility / IoT / 3rd Party / Integration",
+      "url": "https://github.com/ASteinsdoerfer/MMM-HusqvarnaAutomower",
+      "id": "ASteinsdoerfer/MMM-HusqvarnaAutomower",
+      "maintainer": "ASteinsdoerfer",
+      "maintainerURL": "https://github.com/ASteinsdoerfer",
+      "description": "display the current status of a Husqvarna Automower.",
+      "issues": []
+    },
+    {
       "name": "MMM-HVIEW-Snapshot",
       "category": "Utility / IoT / 3rd Party / Integration",
       "url": "https://github.com/coderpussy/MMM-HVIEW-Snapshot",
@@ -5139,13 +5160,13 @@
       "issues": []
     },
     {
-      "name": "MMM-jokes",
+      "name": "MMM-Jokes",
       "category": "Entertainment / Misc",
-      "url": "https://github.com/aegis1980/MMM-jokes",
-      "id": "aegis1980/MMM-jokes",
-      "maintainer": "aegis1980",
+      "url": "https://github.com/n00b42/MMM-Jokes",
+      "id": "n00b42/MMM-Jokes",
+      "maintainer": "n00b42",
       "maintainerURL": "",
-      "description": "Load random jokes from the web.",
+      "description": "Load random jokes from the web (Fork of outdated aegis1980 MMM-jokes).",
       "issues": []
     },
     {
@@ -9352,6 +9373,16 @@
     {
       "name": "MMM-Reddit",
       "category": "Entertainment / Misc",
+      "url": "https://github.com/mumblebaj/MMM-Reddit",
+      "id": "mumblebaj/MMM-Reddit",
+      "maintainer": "mumblebaj",
+      "maintainerURL": "",
+      "description": "Displays top level content from Reddit in either headlines or image based display types.",
+      "issues": []
+    },
+    {
+      "name": "MMM-Reddit",
+      "category": "Entertainment / Misc",
       "url": "https://github.com/kjb085/MMM-Reddit",
       "id": "kjb085/MMM-Reddit",
       "maintainer": "kjb085",
@@ -12672,16 +12703,6 @@
       "maintainer": "PierreGode",
       "maintainerURL": "",
       "description": "Display ZAPTEC charging API.",
-      "issues": []
-    },
-    {
-      "name": "MMM-Zmanim",
-      "category": "Religion",
-      "url": "https://github.com/shmulyeng/MMM-Zmanim",
-      "id": "shmulyeng/MMM-Zmanim",
-      "maintainer": "shmulyeng",
-      "maintainerURL": "",
-      "description": "Displays daily Jewish calendar information.",
       "issues": []
     },
     {

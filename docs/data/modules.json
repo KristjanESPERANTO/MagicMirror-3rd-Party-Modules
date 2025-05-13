@@ -230,7 +230,7 @@
       "template"
     ],
     "image": "example_1.jpg",
-    "defaultSortWeight": 2,
+    "defaultSortWeight": 3,
     "lastCommit": "2025-02-12T14:54:53+01:00"
   },
   {
@@ -248,7 +248,7 @@
       "trashcollection"
     ],
     "image": "AfvalwijzerScreenshot.jpg",
-    "defaultSortWeight": 3,
+    "defaultSortWeight": 4,
     "lastCommit": "2024-10-09T17:55:17+02:00"
   },
   {
@@ -449,7 +449,7 @@
     "maintainerURL": "",
     "description": "The MMM-AlexaControl module allows you to control your Mirror with Alexa (every device that support Wemos devices). You can turn it on and off, change the page and send notifications to other modules.",
     "issues": true,
-    "stars": 48,
+    "stars": 49,
     "license": "MIT",
     "tags": [
       "alexacontrol",
@@ -584,7 +584,7 @@
     "maintainerURL": "",
     "description": "Display a list from the AnyList app.",
     "issues": true,
-    "stars": 12,
+    "stars": 13,
     "license": "MIT",
     "image": "anylist.jpg",
     "defaultSortWeight": 9,
@@ -684,7 +684,7 @@
     "maintainerURL": "",
     "description": "Display the last Astronomy Picture Of the Day (APOD). This is an evolution of MMM-nasaastropic. Supports image and video and display title, description and copyright.",
     "issues": true,
-    "stars": 16,
+    "stars": 17,
     "license": "MIT",
     "tags": [
       "nasa",
@@ -913,7 +913,7 @@
     "maintainerURL": "https://github.com/totoluto",
     "description": "Display monitor data from selfhosted <a target=\"_blank\" href=\"https://github.com/louislam/uptime-kuma\">https://github.com/louislam/uptime-kuma</a>. Uses token authentication and does not need a public status page like MMM-uptimekuma. There are also more styling options and different values can be displayed.",
     "issues": true,
-    "stars": 1,
+    "stars": 2,
     "license": "MIT",
     "tags": [
       "uptimekuma",
@@ -1042,14 +1042,14 @@
     "maintainerURL": "",
     "description": "Show fullscreen slideshow in background from images in a local folder. Great for a photo frame.",
     "issues": true,
-    "stars": 159,
+    "stars": 160,
     "license": "MIT",
     "tags": [
       "background",
       "slideshow"
     ],
     "image": "exampleImages-1.jpg",
-    "defaultSortWeight": 4,
+    "defaultSortWeight": 5,
     "lastCommit": "2024-12-11T13:45:06-07:00"
   },
   {
@@ -1289,7 +1289,7 @@
     "maintainerURL": "https://github.com/BrianHepler",
     "description": "Display submissions to BirdNET, Cornell University's machine learning project to identify birds by their song.",
     "issues": true,
-    "stars": 4,
+    "stars": 5,
     "tags": [
       "birdnet",
       "birds",
@@ -1679,7 +1679,7 @@
       "smart home"
     ],
     "image": "screenshot.jpg",
-    "defaultSortWeight": 2,
+    "defaultSortWeight": 3,
     "lastCommit": "2024-12-30T18:24:05+01:00"
   },
   {
@@ -1749,7 +1749,7 @@
     "maintainerURL": "",
     "description": "Display a Bring! shopping list in a flexible view and touch support.",
     "issues": true,
-    "stars": 31,
+    "stars": 32,
     "license": "MIT",
     "tags": [
       "bring"
@@ -1798,7 +1798,7 @@
     "url": "https://github.com/StefanNienhuis/MMM-Buienradar",
     "id": "StefanNienhuis/MMM-Buienradar",
     "maintainer": "StefanNienhuis",
-    "maintainerURL": "https://github.com/StefanNienhuis",
+    "maintainerURL": "",
     "description": "This module will show a map with the weather forecast provided by Buienradar.",
     "issues": true,
     "stars": 6,
@@ -1986,13 +1986,13 @@
     "maintainerURL": "",
     "description": "Extended calendar and event view.",
     "issues": true,
-    "stars": 108,
+    "stars": 111,
     "license": "MIT",
     "tags": [
       "calendar"
     ],
     "image": "docs-Configuration-Views-legend-full-example.jpg",
-    "defaultSortWeight": -2,
+    "defaultSortWeight": -1,
     "lastCommit": "2025-05-01T07:53:32+02:00"
   },
   {
@@ -2004,7 +2004,7 @@
     "maintainerURL": "",
     "description": "Extended calendar and event view.",
     "issues": true,
-    "stars": 74,
+    "stars": 76,
     "license": "MIT",
     "tags": [
       "calendar",
@@ -2023,14 +2023,14 @@
     "maintainerURL": "",
     "description": "Extended calendar and event view. Show calendar as agenda.",
     "issues": true,
-    "stars": 25,
+    "stars": 26,
     "license": "MIT",
     "tags": [
       "calendar",
       "agenda"
     ],
     "image": "screenshot.jpg",
-    "defaultSortWeight": 3,
+    "defaultSortWeight": 4,
     "lastCommit": "2024-10-02T00:10:30+02:00"
   },
   {
@@ -2334,7 +2334,7 @@
       "pages"
     ],
     "image": "img-example1-slide.jpg",
-    "defaultSortWeight": 0,
+    "defaultSortWeight": 1,
     "lastCommit": "2025-05-01T11:15:54+02:00"
   },
   {
@@ -2448,6 +2448,20 @@
     "image": "impression_0.jpg",
     "defaultSortWeight": 14,
     "lastCommit": "2023-07-26T17:54:29+02:00"
+  },
+  {
+    "name": "MMM-Chores",
+    "category": "Utility / IoT / 3rd Party / Integration",
+    "url": "https://github.com/PierreGode/MMM-Chores",
+    "id": "PierreGode/MMM-Chores",
+    "maintainer": "PierreGode",
+    "maintainerURL": "",
+    "description": "Manage and keep track of your household chores.",
+    "issues": true,
+    "stars": 1,
+    "license": "Apache-2.0",
+    "defaultSortWeight": 11,
+    "lastCommit": "2025-05-13T11:38:08+02:00"
   },
   {
     "name": "MMM-chromecast",
@@ -2788,7 +2802,7 @@
       "sensors"
     ],
     "image": "examples-bash-curl.jpg",
-    "defaultSortWeight": 2,
+    "defaultSortWeight": 3,
     "lastCommit": "2024-10-30T20:31:33+01:00"
   },
   {
@@ -2804,7 +2818,7 @@
     "license": "ISC",
     "image": "doc_images-playground_example.jpg",
     "defaultSortWeight": 6,
-    "lastCommit": "2025-05-06T13:09:03-05:00"
+    "lastCommit": "2025-05-11T12:57:09-05:00"
   },
   {
     "name": "MMM-Confucius-say",
@@ -2971,7 +2985,7 @@
       "reminder"
     ],
     "image": "docs-screenshot.jpg",
-    "defaultSortWeight": 3,
+    "defaultSortWeight": 4,
     "lastCommit": "2025-03-25T13:31:35+01:00"
   },
   {
@@ -3144,7 +3158,7 @@
     "id": "kodejak/MMM-cryptocoin",
     "maintainer": "kodejak",
     "maintainerURL": "",
-    "description": "A module that displays one or more cryptocoins e.g. BTC, ETC, DASH, ... .",
+    "description": "A module that displays one or more cryptocoins e.g. BTC, ETC, DASH, ...",
     "issues": false,
     "outdated": "Abandoned. No updates since years. But may still work.",
     "stars": 4,
@@ -3240,17 +3254,19 @@
   },
   {
     "name": "MMM-Currentweather-MQTT",
-    "category": "Weather",
+    "category": "Outdated Modules",
     "url": "https://github.com/spitzlbergerj/MMM-Currentweather-MQTT",
     "id": "spitzlbergerj/MMM-Currentweather-MQTT",
     "maintainer": "spitzlbergerj",
     "maintainerURL": "https://github.com/spitzlbergerj",
     "description": "Extension of the standard module currentweather by the possibility to process and integrate MQTT telegrams of an own weather station.",
-    "issues": true,
+    "issues": false,
+    "outdated": "Abandoned. Repo has been archived at 2025-04-21.",
     "stars": 3,
+    "isArchived": true,
     "license": "MIT",
     "image": "weather_screenshot.jpg",
-    "defaultSortWeight": 9,
+    "defaultSortWeight": 900,
     "lastCommit": "2025-04-21T08:44:50+02:00"
   },
   {
@@ -3262,7 +3278,7 @@
     "maintainerURL": "",
     "description": "Display cursor when user moves mouse and hide after delay.",
     "issues": true,
-    "stars": 25,
+    "stars": 26,
     "license": "MIT",
     "tags": [
       "cursor"
@@ -3321,7 +3337,7 @@
       "message"
     ],
     "image": "screenshot.jpg",
-    "defaultSortWeight": 0,
+    "defaultSortWeight": 1,
     "lastCommit": "2025-05-06T10:11:46-07:00"
   },
   {
@@ -3354,9 +3370,9 @@
     "maintainerURL": "https://github.com/gueguet",
     "description": "This module allows you to display the last news about Cyber Security.",
     "issues": true,
-    "stars": 10,
+    "stars": 11,
     "license": "MIT",
-    "defaultSortWeight": 9,
+    "defaultSortWeight": 8,
     "lastCommit": "2021-02-23T20:07:38+01:00"
   },
   {
@@ -3398,7 +3414,7 @@
     "maintainerURL": "",
     "description": "Simple display of dad jokes from icanhazdadjoke.com.",
     "issues": true,
-    "stars": 10,
+    "stars": 11,
     "license": "MIT",
     "tags": [
       "jokes",
@@ -3566,7 +3582,7 @@
     "maintainerURL": "",
     "description": "Displays a random Pokemon, it's type, and stats daily.",
     "issues": true,
-    "stars": 24,
+    "stars": 26,
     "license": "MIT",
     "image": "images-demo.jpg",
     "defaultSortWeight": 11,
@@ -3920,13 +3936,13 @@
     "maintainerURL": "",
     "description": "Display messages from discord channels.",
     "issues": true,
-    "stars": 10,
+    "stars": 11,
     "license": "CC0-1.0",
     "tags": [
       "discord"
     ],
     "image": "readme_assets-preview.jpg",
-    "defaultSortWeight": 11,
+    "defaultSortWeight": 10,
     "lastCommit": "2022-01-31T11:10:29+02:00"
   },
   {
@@ -4093,7 +4109,7 @@
       "media"
     ],
     "image": "screenshot.jpg",
-    "defaultSortWeight": 8,
+    "defaultSortWeight": 9,
     "lastCommit": "2024-09-26T08:53:22+02:00"
   },
   {
@@ -4148,7 +4164,7 @@
       "duolingo streak"
     ],
     "image": "duolingo-streak-image.jpg",
-    "defaultSortWeight": 4,
+    "defaultSortWeight": 5,
     "lastCommit": "2025-04-21T16:26:36+02:00"
   },
   {
@@ -4379,7 +4395,7 @@
       "media"
     ],
     "image": "pix-earth.jpg",
-    "defaultSortWeight": 0,
+    "defaultSortWeight": 1,
     "lastCommit": "2025-04-21T15:11:26+02:00"
   },
   {
@@ -4557,7 +4573,7 @@
       "videostream"
     ],
     "image": "doc-screenshots-SomeGrafanaPanels.jpg",
-    "defaultSortWeight": 3,
+    "defaultSortWeight": 4,
     "lastCommit": "2025-03-10T20:21:49+01:00"
   },
   {
@@ -4713,7 +4729,7 @@
     ],
     "image": "images-image-1.jpg",
     "defaultSortWeight": 6,
-    "lastCommit": "2025-04-12T15:53:13+02:00"
+    "lastCommit": "2025-05-10T10:14:42+02:00"
   },
   {
     "name": "MMM-eswordoftheday",
@@ -4876,7 +4892,7 @@
     "maintainerURL": "",
     "description": "Add some EyeCandy to your mirror. You can even choose your own local images or internet images.",
     "issues": true,
-    "stars": 47,
+    "stars": 48,
     "license": "MIT",
     "image": "pix-1.jpg",
     "defaultSortWeight": 6,
@@ -6119,7 +6135,7 @@
     ],
     "image": "images-screenshot.jpg",
     "defaultSortWeight": 3,
-    "lastCommit": "2024-03-19T16:50:54+02:00"
+    "lastCommit": "2025-05-10T10:24:22+02:00"
   },
   {
     "name": "MMM-GasPricesPT",
@@ -6373,7 +6389,7 @@
       "mirror email"
     ],
     "image": "example1.jpg",
-    "defaultSortWeight": 4,
+    "defaultSortWeight": 5,
     "lastCommit": "2024-01-18T11:21:58-06:00"
   },
   {
@@ -6389,7 +6405,7 @@
     "license": "MIT",
     "image": "screenshot.jpg",
     "defaultSortWeight": 6,
-    "lastCommit": "2025-03-11T08:16:26+01:00"
+    "lastCommit": "2025-05-13T08:35:02+02:00"
   },
   {
     "name": "MMM-go2rtc",
@@ -6620,7 +6636,7 @@
       "googlephotos"
     ],
     "image": "images-screenshot.jpg",
-    "defaultSortWeight": 6,
+    "defaultSortWeight": 7,
     "lastCommit": "2025-05-07T09:51:41+01:00"
   },
   {
@@ -6746,7 +6762,7 @@
     ],
     "image": "examples-HC-SR501-HC-SR501-GPIO4.jpg",
     "defaultSortWeight": 6,
-    "lastCommit": "2025-03-24T16:41:10+01:00"
+    "lastCommit": "2025-05-12T13:27:18+02:00"
   },
   {
     "name": "MMM-GPollen",
@@ -6823,7 +6839,7 @@
       "grocy"
     ],
     "image": "docs-Screenshot.jpg",
-    "defaultSortWeight": 4,
+    "defaultSortWeight": 5,
     "lastCommit": "2024-09-11T17:54:30+01:00"
   },
   {
@@ -6863,7 +6879,7 @@
     ],
     "image": "images-screenshot.jpg",
     "defaultSortWeight": 3,
-    "lastCommit": "2025-05-06T17:59:35+02:00"
+    "lastCommit": "2025-05-09T20:41:37+02:00"
   },
   {
     "name": "MMM-Growatt",
@@ -6896,7 +6912,7 @@
     ],
     "image": "images-screenshot.jpg",
     "defaultSortWeight": 3,
-    "lastCommit": "2025-03-02T15:32:03+02:00"
+    "lastCommit": "2025-05-10T10:27:49+02:00"
   },
   {
     "name": "MMM-GyeonggiBus",
@@ -7606,7 +7622,7 @@
       "smart home"
     ],
     "image": "images-screen.jpg",
-    "defaultSortWeight": 2,
+    "defaultSortWeight": 3,
     "lastCommit": "2025-02-12T19:59:40+01:00"
   },
   {
@@ -7651,6 +7667,28 @@
     "image": "images-1.jpg",
     "defaultSortWeight": 7,
     "lastCommit": "2019-11-30T21:46:01-05:00"
+  },
+  {
+    "name": "MMM-HusqvarnaAutomower",
+    "category": "Utility / IoT / 3rd Party / Integration",
+    "url": "https://github.com/ASteinsdoerfer/MMM-HusqvarnaAutomower",
+    "id": "ASteinsdoerfer/MMM-HusqvarnaAutomower",
+    "maintainer": "ASteinsdoerfer",
+    "maintainerURL": "https://github.com/ASteinsdoerfer",
+    "description": "display the current status of a Husqvarna Automower.",
+    "issues": true,
+    "stars": 0,
+    "license": "NOASSERTION",
+    "tags": [
+      "husqvarna",
+      "automower",
+      "smartmirror",
+      "modul",
+      "open-source",
+      "smart home"
+    ],
+    "defaultSortWeight": 7,
+    "lastCommit": "2025-05-13T06:32:57+02:00"
   },
   {
     "name": "MMM-HVIEW-Snapshot",
@@ -7964,7 +8002,7 @@
     "maintainerURL": "",
     "description": "Show images and photos.",
     "issues": true,
-    "stars": 9,
+    "stars": 10,
     "hasGithubIssues": false,
     "license": "MIT",
     "tags": [
@@ -8161,7 +8199,7 @@
       "speed"
     ],
     "image": ".previews-almost.jpg",
-    "defaultSortWeight": 6,
+    "defaultSortWeight": 7,
     "lastCommit": "2024-01-08T18:27:41-05:00"
   },
   {
@@ -8525,22 +8563,22 @@
     "lastCommit": "2020-09-25T11:29:55+02:00"
   },
   {
-    "name": "MMM-jokes",
+    "name": "MMM-Jokes",
     "category": "Entertainment / Misc",
-    "url": "https://github.com/aegis1980/MMM-jokes",
-    "id": "aegis1980/MMM-jokes",
-    "maintainer": "aegis1980",
+    "url": "https://github.com/n00b42/MMM-Jokes",
+    "id": "n00b42/MMM-Jokes",
+    "maintainer": "n00b42",
     "maintainerURL": "",
-    "description": "Load random jokes from the web.",
+    "description": "Load random jokes from the web (Fork of outdated aegis1980 MMM-jokes).",
     "issues": true,
-    "stars": 1,
+    "stars": 0,
     "hasGithubIssues": false,
     "tags": [
       "jokes"
     ],
     "license": "MIT",
-    "defaultSortWeight": 15,
-    "lastCommit": "2017-04-25T14:32:38+12:00"
+    "defaultSortWeight": 13,
+    "lastCommit": "2025-05-12T14:34:14+02:00"
   },
   {
     "name": "MMM-json",
@@ -8623,7 +8661,7 @@
       "table"
     ],
     "image": "example1.jpg",
-    "defaultSortWeight": 5,
+    "defaultSortWeight": 6,
     "lastCommit": "2024-07-16T10:59:50+02:00"
   },
   {
@@ -9590,7 +9628,7 @@
       "draw"
     ],
     "image": "MagicDraw.jpg",
-    "defaultSortWeight": 5,
+    "defaultSortWeight": 6,
     "lastCommit": "2025-02-16T20:38:25+01:00"
   },
   {
@@ -9687,7 +9725,7 @@
       "mover"
     ],
     "image": "img-screen-burn-in.jpg",
-    "defaultSortWeight": 3,
+    "defaultSortWeight": 4,
     "lastCommit": "2024-04-16T13:59:34+02:00"
   },
   {
@@ -9929,7 +9967,7 @@
       "recipie"
     ],
     "image": "MMM-MealieMenu-screenshot.jpg",
-    "defaultSortWeight": 0,
+    "defaultSortWeight": 1,
     "lastCommit": "2025-04-13T18:58:46-06:00"
   },
   {
@@ -10382,7 +10420,7 @@
       "tracker"
     ],
     "image": "screenshot.jpg",
-    "defaultSortWeight": 10,
+    "defaultSortWeight": 11,
     "lastCommit": "2025-03-27T21:35:48-05:00"
   },
   {
@@ -11362,7 +11400,7 @@
     ],
     "image": "screenshot-horizontal.jpg",
     "defaultSortWeight": 3,
-    "lastCommit": "2025-04-18T15:01:01-07:00"
+    "lastCommit": "2025-05-08T23:19:55-07:00"
   },
   {
     "name": "MMM-mumble",
@@ -11649,7 +11687,7 @@
     "maintainer": "dathbe",
     "maintainerURL": "",
     "description": "Display scores for your favorite teams from many major sports.",
-    "issues": false,
+    "issues": true,
     "stars": 6,
     "license": "MIT",
     "tags": [
@@ -11676,7 +11714,7 @@
       "rugby"
     ],
     "image": "example2.jpg",
-    "defaultSortWeight": 0,
+    "defaultSortWeight": 1,
     "lastCommit": "2025-05-08T07:01:25-07:00"
   },
   {
@@ -11771,7 +11809,7 @@
       "rugby"
     ],
     "image": "screenshot.jpg",
-    "defaultSortWeight": 1,
+    "defaultSortWeight": 2,
     "lastCommit": "2025-05-06T10:23:50-07:00"
   },
   {
@@ -12229,8 +12267,8 @@
       "smart home"
     ],
     "image": ".github-preview.bubbles.jpg",
-    "defaultSortWeight": 4,
-    "lastCommit": "2025-05-03T05:47:19+00:00"
+    "defaultSortWeight": 5,
+    "lastCommit": "2025-05-11T02:40:58+00:00"
   },
   {
     "name": "MMM-Netatmo-Presence",
@@ -12380,7 +12418,7 @@
     ],
     "image": "screenshot1.jpg",
     "defaultSortWeight": 3,
-    "lastCommit": "2024-09-29T13:44:39+02:00"
+    "lastCommit": "2025-05-10T10:22:54+02:00"
   },
   {
     "name": "MMM-NewsFeedTicker",
@@ -12549,7 +12587,7 @@
       "ice hockey"
     ],
     "image": ".github-example_nhl.jpg",
-    "defaultSortWeight": 3,
+    "defaultSortWeight": 4,
     "lastCommit": "2025-01-06T08:34:09-06:00"
   },
   {
@@ -12731,8 +12769,8 @@
       "noaa"
     ],
     "image": "examples-1.jpg",
-    "defaultSortWeight": 7,
-    "lastCommit": "2025-04-05T18:27:27+02:00"
+    "defaultSortWeight": 5,
+    "lastCommit": "2025-05-10T12:35:23+02:00"
   },
   {
     "name": "MMM-NOAAAlerts",
@@ -13052,7 +13090,7 @@
     "license": "MIT",
     "image": "screenshot-mmm-nrl.jpg",
     "defaultSortWeight": 8,
-    "lastCommit": "2025-04-13T22:38:24+12:00"
+    "lastCommit": "2025-05-11T20:29:51+12:00"
   },
   {
     "name": "MMM-NsInfo",
@@ -13340,7 +13378,7 @@
       "onedrive"
     ],
     "image": "images-screenshot.jpg",
-    "defaultSortWeight": 6,
+    "defaultSortWeight": 7,
     "lastCommit": "2025-04-08T00:25:04+01:00"
   },
   {
@@ -13749,7 +13787,7 @@
       "slides"
     ],
     "image": "examples-screencast_1_without-styling.jpg",
-    "defaultSortWeight": 1,
+    "defaultSortWeight": 2,
     "lastCommit": "2025-04-11T22:22:20+02:00"
   },
   {
@@ -13796,25 +13834,6 @@
   {
     "name": "MMM-pages",
     "category": "Development / Core MagicMirror\u00b2",
-    "url": "https://github.com/edward-shen/MMM-pages",
-    "id": "edward-shen/MMM-pages",
-    "maintainer": "edward-shen",
-    "maintainerURL": "",
-    "description": "Organize modules into multiple pages to display different information, with the option to automatically rotate through these pages.",
-    "issues": true,
-    "stars": 113,
-    "license": "MIT",
-    "tags": [
-      "pages",
-      "slides"
-    ],
-    "image": "example.jpg",
-    "defaultSortWeight": -1,
-    "lastCommit": "2025-03-25T19:22:51+01:00"
-  },
-  {
-    "name": "MMM-pages",
-    "category": "Development / Core MagicMirror\u00b2",
     "url": "https://github.com/sdetweil/MMM-pages",
     "id": "sdetweil/MMM-pages",
     "maintainer": "sdetweil",
@@ -13830,6 +13849,25 @@
     "image": "example.jpg",
     "defaultSortWeight": 2,
     "lastCommit": "2025-04-01T06:18:12-07:00"
+  },
+  {
+    "name": "MMM-pages",
+    "category": "Development / Core MagicMirror\u00b2",
+    "url": "https://github.com/edward-shen/MMM-pages",
+    "id": "edward-shen/MMM-pages",
+    "maintainer": "edward-shen",
+    "maintainerURL": "",
+    "description": "Organize modules into multiple pages to display different information, with the option to automatically rotate through these pages.",
+    "issues": true,
+    "stars": 115,
+    "license": "MIT",
+    "tags": [
+      "pages",
+      "slides"
+    ],
+    "image": "example.jpg",
+    "defaultSortWeight": 0,
+    "lastCommit": "2025-03-25T19:22:51+01:00"
   },
   {
     "name": "MMM-Pages-Screencast",
@@ -15045,8 +15083,8 @@
       "template"
     ],
     "image": "Images-sample.jpg",
-    "defaultSortWeight": 3,
-    "lastCommit": "2025-04-18T08:40:34-06:00"
+    "defaultSortWeight": 4,
+    "lastCommit": "2025-05-13T11:02:15-06:00"
   },
   {
     "name": "MMM-PublicTransportBerlin",
@@ -15065,7 +15103,7 @@
       "brandenburg"
     ],
     "image": "img-MMM-PublicTransport_screenshot.jpg",
-    "defaultSortWeight": 0,
+    "defaultSortWeight": 1,
     "lastCommit": "2025-05-01T09:46:26+02:00"
   },
   {
@@ -15281,7 +15319,7 @@
       "interactive"
     ],
     "image": "example_1.jpg",
-    "defaultSortWeight": 2,
+    "defaultSortWeight": 3,
     "lastCommit": "2024-09-07T14:18:23+02:00"
   },
   {
@@ -15391,7 +15429,7 @@
       "clouds"
     ],
     "image": "img-example.jpg",
-    "defaultSortWeight": 4,
+    "defaultSortWeight": 5,
     "lastCommit": "2024-08-28T20:10:53+02:00"
   },
   {
@@ -15631,6 +15669,25 @@
     "lastCommit": "2020-06-25T17:03:18-04:00"
   },
   {
+    "name": "MMM-Reddit",
+    "category": "Entertainment / Misc",
+    "url": "https://github.com/mumblebaj/MMM-Reddit",
+    "id": "mumblebaj/MMM-Reddit",
+    "maintainer": "mumblebaj",
+    "maintainerURL": "",
+    "description": "Displays top level content from Reddit in either headlines or image based display types.",
+    "issues": true,
+    "stars": 9,
+    "hasGithubIssues": false,
+    "tags": [
+      "reddit",
+      "news"
+    ],
+    "license": "MIT",
+    "defaultSortWeight": 12,
+    "lastCommit": "2025-05-10T19:33:05+02:00"
+  },
+  {
     "name": "MMM-Reddit-News-Ticker",
     "category": "News / Information",
     "url": "https://github.com/hayseedbyte/MMM-Reddit-News-Ticker",
@@ -15725,7 +15782,7 @@
       "control"
     ],
     "image": ".github-hide_show_module.jpg",
-    "defaultSortWeight": -9,
+    "defaultSortWeight": -7,
     "lastCommit": "2025-04-29T00:16:03+02:00"
   },
   {
@@ -15938,7 +15995,7 @@
     "stars": 3,
     "license": "MIT",
     "image": "screenshot.jpg",
-    "defaultSortWeight": 6,
+    "defaultSortWeight": 7,
     "lastCommit": "2025-04-01T17:22:38-05:00"
   },
   {
@@ -16360,7 +16417,7 @@
       "scene"
     ],
     "image": "screenshot.jpg",
-    "defaultSortWeight": 4,
+    "defaultSortWeight": 5,
     "lastCommit": "2024-09-19T10:42:12+02:00"
   },
   {
@@ -18080,7 +18137,7 @@
     ],
     "image": "image.jpg",
     "defaultSortWeight": 3,
-    "lastCommit": "2024-10-07T18:16:14+02:00"
+    "lastCommit": "2025-05-10T10:16:30+02:00"
   },
   {
     "name": "MMM-Swipe",
@@ -18543,7 +18600,7 @@
       "template"
     ],
     "image": "example_1.jpg",
-    "defaultSortWeight": 3,
+    "defaultSortWeight": 4,
     "lastCommit": "2024-11-06T10:03:13+01:00"
   },
   {
@@ -18563,7 +18620,7 @@
       "tessie"
     ],
     "image": "doc-screenshot.jpg",
-    "defaultSortWeight": 18,
+    "defaultSortWeight": 19,
     "lastCommit": "2024-05-07T12:45:14+01:00"
   },
   {
@@ -18579,7 +18636,7 @@
     "license": "ISC",
     "image": "images-MMM-Tesla3.jpg",
     "defaultSortWeight": 13,
-    "lastCommit": "2025-05-08T08:30:41-04:00"
+    "lastCommit": "2025-05-12T17:56:06-04:00"
   },
   {
     "name": "MMM-TeslaLogger",
@@ -19112,7 +19169,7 @@
     "stars": 14,
     "license": "MIT",
     "image": "screenshot.jpg",
-    "defaultSortWeight": 8,
+    "defaultSortWeight": 9,
     "lastCommit": "2025-04-07T16:26:55+02:00"
   },
   {
@@ -20463,7 +20520,7 @@
       "webuntis"
     ],
     "image": "screenshot.jpg",
-    "defaultSortWeight": 5,
+    "defaultSortWeight": 6,
     "lastCommit": "2025-01-24T19:18:12+01:00"
   },
   {
@@ -20696,7 +20753,7 @@
       "washington dc"
     ],
     "image": "MMM-WMATA-screenshot.jpg",
-    "defaultSortWeight": 2,
+    "defaultSortWeight": 3,
     "lastCommit": "2024-11-29T00:37:44+01:00"
   },
   {
@@ -21195,21 +21252,5 @@
     "image": "alternateScreenshot.jpg",
     "defaultSortWeight": 12,
     "lastCommit": "2025-05-01T09:33:44-04:00"
-  },
-  {
-    "name": "MMM-Zmanim",
-    "category": "Religion",
-    "url": "https://github.com/shmulyeng/MMM-Zmanim",
-    "id": "shmulyeng/MMM-Zmanim",
-    "maintainer": "shmulyeng",
-    "maintainerURL": "",
-    "description": "Displays daily Jewish calendar information.",
-    "issues": true,
-    "stars": 0,
-    "hasGithubIssues": false,
-    "license": "ISC",
-    "image": "alternateScreenshot.jpg",
-    "defaultSortWeight": 13,
-    "lastCommit": "2020-12-06T21:27:43-05:00"
   }
 ]
