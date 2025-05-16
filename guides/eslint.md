@@ -118,13 +118,13 @@ This will set up `Husky` to run the `lint-staged` command before committing any 
 You can run ESLint manually by executing the following command in your terminal:
 
 ```bash
-npm run lint
+node --run lint
 ```
 
 This will check your code for linting errors. If you want to automatically fix any fixable linting errors, you can run:
 
 ```bash
-npm run lint:fix
+node --run lint:fix
 ```
 
 This will automatically fix any linting errors that can be fixed.
@@ -138,8 +138,8 @@ Add the following section to your `README.md` file to inform other developers ab
 ```markdown
 ## Developer commands
 
-- `npm run lint` - Run linting checks.
-- `npm run lint:fix` - Fix automatically fixable linting errors.
+- `node --run lint` - Run linting checks.
+- `node --run lint:fix` - Fix automatically fixable linting errors.
 ```
 
 ### 5 - Add GitHub Actions workflow (optional)
