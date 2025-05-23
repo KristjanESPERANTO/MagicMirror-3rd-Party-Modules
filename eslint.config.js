@@ -19,7 +19,7 @@ export default defineConfig([
       "docs/result.md"
     ]
   },
-  {files: ["**/*.css"], languageOptions: {tolerant: true}, plugins: {css}, language: "css/css", extends: ["css/recommended"], rules: {"css/use-baseline": ["error", {available: "newly"}]}},
+  {files: ["**/*.css"], languageOptions: {tolerant: true}, plugins: {css}, language: "css/css", extends: ["css/recommended"], rules: {"css/no-important": "off", "css/use-baseline": ["error", {available: "newly"}]}},
   {
     files: ["**/*.js"],
     languageOptions: {
