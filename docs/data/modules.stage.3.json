@@ -367,7 +367,7 @@
     "maintainerURL": "",
     "description": "Alarm Clock Module (touch and non-touch).",
     "issues": [],
-    "stars": 47,
+    "stars": 48,
     "license": "MIT",
     "tags": [
       "alarm clock"
@@ -662,7 +662,7 @@
     "maintainerURL": "",
     "description": "Display the last Astronomy Picture Of the Day (APOD). This is an evolution of MMM-nasaastropic. Supports image and video and display title, description and copyright.",
     "issues": [],
-    "stars": 17,
+    "stars": 18,
     "license": "MIT",
     "tags": [
       "nasa",
@@ -1012,7 +1012,7 @@
     "maintainerURL": "",
     "description": "Show fullscreen slideshow in background from images in a local folder. Great for a photo frame.",
     "issues": [],
-    "stars": 160,
+    "stars": 162,
     "license": "MIT",
     "tags": [
       "background",
@@ -1280,7 +1280,7 @@
     "maintainerURL": "",
     "description": "Displays a new bird every day with a photo, name, and interesting facts. Powered by the Nuthatch API by Last Elm Software, it's perfect for bird enthusiasts or anyone who wants to bring a touch of nature to their MagicMirror setup.",
     "issues": [],
-    "stars": 3,
+    "stars": 4,
     "license": "MIT",
     "tags": [
       "bird",
@@ -1915,7 +1915,7 @@
       "There are no keywords in 'package.json'. We would use them as tags on the module list page.",
       "Issues are not enabled in the GitHub repository. So users cannot report bugs. Please enable issues in your repo."
     ],
-    "stars": 0,
+    "stars": 1,
     "hasGithubIssues": false,
     "license": "MIT",
     "image": "assets-demo_screenshot.jpg"
@@ -1945,7 +1945,7 @@
     "maintainerURL": "",
     "description": "Extended calendar and event view.",
     "issues": [],
-    "stars": 111,
+    "stars": 112,
     "license": "MIT",
     "tags": [
       "calendar"
@@ -1961,7 +1961,7 @@
     "maintainerURL": "",
     "description": "Extended calendar and event view.",
     "issues": [],
-    "stars": 76,
+    "stars": 80,
     "license": "MIT",
     "tags": [
       "calendar",
@@ -1978,7 +1978,7 @@
     "maintainerURL": "",
     "description": "Extended calendar and event view. Show calendar as agenda.",
     "issues": [],
-    "stars": 26,
+    "stars": 28,
     "license": "MIT",
     "tags": [
       "calendar",
@@ -2401,14 +2401,15 @@
     "maintainer": "PierreGode",
     "maintainerURL": "",
     "description": "Manage and keep track of your household chores.",
-    "issues": [
-      "`package.json` issue: No repository field.",
-      "There are no keywords in 'package.json'. We would use them as tags on the module list page.",
-      "Issue: The license in the package.json (MIT) doesn't match the license file (Apache-2.0).",
-      "No image found."
+    "issues": [],
+    "stars": 5,
+    "license": "Apache-2.0",
+    "tags": [
+      "chores",
+      "tasks",
+      "to-do"
     ],
-    "stars": 1,
-    "license": "Apache-2.0"
+    "image": "img-screenshot1_frontend.jpg"
   },
   {
     "name": "MMM-chromecast",
@@ -2766,8 +2767,8 @@
       "There are no keywords in 'package.json'. We would use them as tags on the module list page."
     ],
     "stars": 43,
-    "license": "ISC",
-    "image": "doc_images-playground_example.jpg"
+    "license": "MIT",
+    "image": "doc_images-MMM-Config_example_base.jpg"
   },
   {
     "name": "MMM-Confucius-say",
@@ -3525,7 +3526,7 @@
       "`package.json` issue: No repository field.",
       "There are no keywords in 'package.json'. We would use them as tags on the module list page."
     ],
-    "stars": 26,
+    "stars": 27,
     "license": "MIT",
     "image": "images-demo.jpg"
   },
@@ -3551,11 +3552,11 @@
     "maintainerURL": "",
     "description": "Your everyday stoic quote.",
     "issues": [
-      "There is no `package.json`. We need this file to gather information about the module for the module list page.",
-      "No image found."
+      "There is no `package.json`. We need this file to gather information about the module for the module list page."
     ],
     "stars": 1,
-    "license": "MIT"
+    "license": "MIT",
+    "image": "screenshot.jpg"
   },
   {
     "name": "MMM-DailyUnreachedPeopleGroup",
@@ -3987,7 +3988,7 @@
       "`package.json` issue: No repository field.",
       "There are no keywords in 'package.json'. We would use them as tags on the module list page."
     ],
-    "stars": 0,
+    "stars": 1,
     "license": "MIT",
     "image": "appendix-screenshot_full.jpg"
   },
@@ -4619,7 +4620,7 @@
     "issues": [
       "An error occurred while getting information from 'package.json': Error: Invalid version: \"1.2\""
     ],
-    "stars": 4,
+    "stars": 5,
     "license": "MIT",
     "image": "screenshot.jpg"
   },
@@ -5118,7 +5119,7 @@
     "issues": [
       "There is no `package.json`. We need this file to gather information about the module for the module list page."
     ],
-    "stars": 5,
+    "stars": 6,
     "license": "ISC",
     "image": "screenshot.jpg"
   },
@@ -5243,7 +5244,7 @@
     "issues": [
       "No image found."
     ],
-    "stars": 10,
+    "stars": 11,
     "license": "MIT",
     "tags": [
       "fhem",
@@ -5500,7 +5501,7 @@
     "maintainerURL": "https://github.com/E3V3A",
     "description": "A flight radar that display airplane/flight details of what is currently flying in the airspace above some location.",
     "issues": [],
-    "stars": 25,
+    "stars": 26,
     "license": "MIT",
     "tags": [
       "flights",
@@ -6042,7 +6043,7 @@
     "issues": [
       "Issue: The license in the package.json (ISC) doesn't match the license file (MIT)."
     ],
-    "stars": 2,
+    "stars": 3,
     "license": "MIT",
     "tags": [
       "gasmonitor"
@@ -6192,7 +6193,7 @@
     "issues": [
       "There is no `package.json`. We need this file to gather information about the module for the module list page."
     ],
-    "stars": 9,
+    "stars": 10,
     "license": "MIT",
     "image": "screenshot.jpg"
   },
@@ -6209,7 +6210,7 @@
       "`package.json` issue: No license field.",
       "There are no keywords in 'package.json'. We would use them as tags on the module list page."
     ],
-    "stars": 0
+    "stars": 1
   },
   {
     "name": "MMM-Gitlab-MergeRequests",
@@ -6253,7 +6254,7 @@
     "maintainerURL": "https://github.com/ChrisF1976",
     "description": "MagicMirror² module to globally reposition other modules on screen via fixed coordinates.",
     "issues": [],
-    "stars": 0,
+    "stars": 2,
     "license": "MIT",
     "tags": [
       "position",
@@ -6323,7 +6324,7 @@
       "There are no specific keywords in 'package.json'. We would use them as tags on the module list page. Add a few meaningful terms to the keywords in the package.json. Not just “magicmirror” or “module”.",
       "Issue: The license in the package.json (ISC) doesn't match the license file (MIT)."
     ],
-    "stars": 2,
+    "stars": 3,
     "license": "MIT",
     "image": "screenshot.jpg"
   },
@@ -6471,7 +6472,7 @@
     "issues": [
       "Issues are not enabled in the GitHub repository. So users cannot report bugs. Please enable issues in your repo."
     ],
-    "stars": 1,
+    "stars": 2,
     "hasGithubIssues": false,
     "license": "MIT",
     "tags": [
@@ -6491,7 +6492,7 @@
       "There are no keywords in 'package.json'. We would use them as tags on the module list page.",
       "No image found."
     ],
-    "stars": 14,
+    "stars": 15,
     "license": "MIT"
   },
   {
@@ -6535,7 +6536,7 @@
     "maintainerURL": "",
     "description": "Displays a Google map, centred at provided coordinates, with traffic information.",
     "issues": [],
-    "stars": 3,
+    "stars": 5,
     "license": "MIT",
     "tags": [
       "google maps",
@@ -6552,7 +6553,7 @@
     "maintainerURL": "https://github.com/hermanho",
     "description": "Image gallery or wallpaper with your Google Photos account.",
     "issues": [],
-    "stars": 184,
+    "stars": 187,
     "license": "MIT",
     "tags": [
       "googlephotos"
@@ -7083,7 +7084,7 @@
       "There are no keywords in 'package.json'. We would use them as tags on the module list page.",
       "No image found."
     ],
-    "stars": 25,
+    "stars": 26,
     "license": "MIT"
   },
   {
@@ -7198,6 +7199,22 @@
   {
     "name": "MMM-HomeAssistant",
     "category": "Utility / IoT / 3rd Party / Integration",
+    "url": "https://github.com/ambarusa/MMM-HomeAssistant",
+    "id": "ambarusa/MMM-HomeAssistant",
+    "maintainer": "ambarusa",
+    "maintainerURL": "https://github.com/ambarusa",
+    "description": "Turn your MagicMirror² into a MQTT device with Home Assistant autodiscovery.",
+    "issues": [],
+    "stars": 6,
+    "license": "MIT",
+    "tags": [
+      "homeassistant"
+    ],
+    "image": "example_MMM-HomeAsisstant.jpg"
+  },
+  {
+    "name": "MMM-HomeAssistant",
+    "category": "Utility / IoT / 3rd Party / Integration",
     "url": "https://github.com/zuo000/MMM-HomeAssistant",
     "id": "zuo000/MMM-HomeAssistant",
     "maintainer": "zuo000",
@@ -7286,7 +7303,7 @@
     "maintainerURL": "https://github.com/wonderslug",
     "description": "Displays information from Home Assistant using Home Assistant Templates to render any HTML you want for the module. Includes support for Material Design Icons, Websockets for fast updating, and auto reconnect on Home Assistant restarts. Allows you to show or hide a whole module based on a Home Assistant Template as well.",
     "issues": [],
-    "stars": 101,
+    "stars": 103,
     "license": "MIT",
     "tags": [
       "home assistant"
@@ -7388,7 +7405,7 @@
     "maintainerURL": "",
     "description": "Displays Daily Horoscope.",
     "issues": [],
-    "stars": 6,
+    "stars": 5,
     "license": "MIT",
     "tags": [
       "horoscope"
@@ -7468,7 +7485,7 @@
     "issues": [
       "There is no `package.json`. We need this file to gather information about the module for the module list page."
     ],
-    "stars": 16,
+    "stars": 17,
     "license": "GPL-3.0",
     "image": "HTMLSnippet-screenshot-grafana.jpg"
   },
@@ -7599,12 +7616,9 @@
     "maintainer": "ASteinsdoerfer",
     "maintainerURL": "https://github.com/ASteinsdoerfer",
     "description": "display the current status of a Husqvarna Automower.",
-    "issues": [
-      "Issue: The license in the package.json (MIT) doesn't match the license file (NOASSERTION).",
-      "No compatible or wrong license field in 'package.json' or LICENSE file. Without that, we can't use an image."
-    ],
-    "stars": 0,
-    "license": "NOASSERTION",
+    "issues": [],
+    "stars": 1,
+    "license": "MIT",
     "tags": [
       "husqvarna",
       "automower",
@@ -7612,7 +7626,8 @@
       "modul",
       "open-source",
       "smart home"
-    ]
+    ],
+    "image": "screenshot.jpg"
   },
   {
     "name": "MMM-HVIEW-Snapshot",
@@ -8352,7 +8367,7 @@
     "maintainerURL": "https://github.com/jalibu",
     "description": "A simple but powerful vertical, horizontal or static stock ticker based on Yahoo's finance API. Supports international stocks, crypto currencies and index symbols. No API key required.",
     "issues": [],
-    "stars": 69,
+    "stars": 70,
     "license": "MIT",
     "tags": [
       "stock",
@@ -8501,7 +8516,7 @@
     "issues": [
       "There are no keywords in 'package.json'. We would use them as tags on the module list page."
     ],
-    "stars": 16,
+    "stars": 17,
     "license": "MIT",
     "image": "sample.jpg"
   },
@@ -8744,7 +8759,7 @@
     "maintainerURL": "",
     "description": "Compliment clone - allows to define when (at which hour) the used kudo(compliment) subset will change and you can define further subsets - up to one for each hour.",
     "issues": [],
-    "stars": 8,
+    "stars": 9,
     "license": "MIT",
     "tags": [
       "screen"
@@ -9027,6 +9042,23 @@
     "image": "MMM-Linky.jpg"
   },
   {
+    "name": "MMM-LINQConnectCalendar",
+    "category": "Utility / IoT / 3rd Party / Integration",
+    "url": "https://github.com/dathbe/MMM-LINQConnectCalendar",
+    "id": "dathbe/MMM-LINQConnectCalendar",
+    "maintainer": "dathbe",
+    "maintainerURL": "https://github.com/dathbe/",
+    "description": "A module to display school calendars provided by LINQConnect.",
+    "issues": [],
+    "stars": 1,
+    "license": "MIT",
+    "tags": [
+      "school",
+      "calendar"
+    ],
+    "image": "screenshot.jpg"
+  },
+  {
     "name": "MMM-Liquipedia-Matches",
     "category": "Sports",
     "url": "https://github.com/buxxi/MMM-Liquipedia-Matches",
@@ -9087,7 +9119,7 @@
       "`package.json` issue: No description",
       "Issue: The license in the package.json (MIT) doesn't match the license file (GPL-3.0)."
     ],
-    "stars": 7,
+    "stars": 8,
     "license": "GPL-3.0",
     "tags": [
       "spotify lyrics",
@@ -9542,7 +9574,7 @@
       "No image found."
     ],
     "outdated": "No changes since years. It's not a good start anymore. Use <a href=\"https://github.com/Dennis-Rosenbaum/MMM-Template\">MMM-Template</a> instead.",
-    "stars": 74,
+    "stars": 75,
     "license": "MIT"
   },
   {
@@ -9583,7 +9615,7 @@
     "maintainerURL": "",
     "description": "Displays a random quote from various movies, books, and people.",
     "issues": [],
-    "stars": 11,
+    "stars": 12,
     "license": "MIT",
     "tags": [
       "quotes"
@@ -9599,7 +9631,7 @@
     "maintainerURL": "",
     "description": "Prevent screen burn-in on your MagicMirror².",
     "issues": [],
-    "stars": 55,
+    "stars": 56,
     "license": "MIT",
     "tags": [
       "screensaver",
@@ -10312,7 +10344,7 @@
       "There are no keywords in 'package.json'. We would use them as tags on the module list page.",
       "No image found."
     ],
-    "stars": 5,
+    "stars": 6,
     "license": "MIT"
   },
   {
@@ -10454,7 +10486,7 @@
     "issues": [
       "There is no `package.json`. We need this file to gather information about the module for the module list page."
     ],
-    "stars": 32,
+    "stars": 33,
     "license": "MIT",
     "image": "images-floorplan-default.jpg"
   },
@@ -10649,7 +10681,7 @@
     "maintainerURL": "https://github.com/Bee-Mar",
     "description": "An unofficial MagicMirror² 3rd Party Package Manager. Automates searching, installation, removal, updating, and upgrading of MagicMirror² modules.",
     "issues": [],
-    "stars": 218,
+    "stars": 219,
     "license": "MIT",
     "keywords": [
       "package manager",
@@ -10746,7 +10778,7 @@
     "maintainerURL": "",
     "description": "Create schedules to control when other modules are shown, hidden or dimmed and to send notifications to other modules.",
     "issues": [],
-    "stars": 109,
+    "stars": 110,
     "license": "MIT",
     "tags": [
       "scheduler"
@@ -10795,7 +10827,7 @@
     "issues": [
       "There is no `package.json`. We need this file to gather information about the module for the module list page."
     ],
-    "stars": 45,
+    "stars": 47,
     "license": "MIT",
     "image": "screenshot.jpg"
   },
@@ -10808,7 +10840,7 @@
     "maintainerURL": "",
     "description": "Displays moonrise, moonset, and an image of the moon using AstronomyAPI.",
     "issues": [],
-    "stars": 5,
+    "stars": 7,
     "license": "ISC",
     "tags": [
       "moon",
@@ -10825,7 +10857,7 @@
     "maintainerURL": "",
     "description": "Presents the real-time moon phase.",
     "issues": [],
-    "stars": 61,
+    "stars": 64,
     "license": "MIT",
     "tags": [
       "moon",
@@ -10952,7 +10984,7 @@
       "There are duplicates in the keywords in your package.json: mirror",
       "No image found."
     ],
-    "stars": 54,
+    "stars": 55,
     "license": "MIT",
     "tags": [
       "motion detection"
@@ -11043,6 +11075,26 @@
     "outdated": "Abandoned. No reactions to issues since years. Seems not to work anymore. Use MMM-Mopidy-MPD instead.",
     "stars": 14,
     "license": "MIT License"
+  },
+  {
+    "name": "MMM-MPKLodz",
+    "category": "Transport / Travel",
+    "url": "https://github.com/Xioner19/MMM-MPKLodz",
+    "id": "Xioner19/MMM-MPKLodz",
+    "maintainer": "Xioner19",
+    "maintainerURL": "https://github.com/Xioner19",
+    "description": "Displays real-time bus and tram departures for Łódź public transport (MPK Łódź).",
+    "issues": [],
+    "stars": 0,
+    "license": "MIT",
+    "tags": [
+      "public transport",
+      "lodz",
+      "bus",
+      "travel",
+      "poland"
+    ],
+    "image": "example.jpg"
   },
   {
     "name": "MMM-MPlayer",
@@ -11184,7 +11236,7 @@
     "maintainerURL": "",
     "description": "Subscribe to MQTT topics and forward the payload (as it is) as notification and vice versa. Features QoS, Clean Session, Retained Messages and Shortcuts.",
     "issues": [],
-    "stars": 2,
+    "stars": 3,
     "license": "MIT",
     "tags": [
       "mqtt"
@@ -11200,7 +11252,7 @@
     "maintainerURL": "https://github.com/Tom-Hirschberger",
     "description": "A powerful module that subscribes to MQTT broker and read/send MQTT messages and MM Notifications with a lot of individual setup/rules. Allows you to integrate MM into smart home like Home Assistant. Powerful automation with structured Noti and MQTT dictionaries rules (e.g. one mqtt message could trigger many predefined noti, and one mm-noti could trigger different predefined mqtt messages).",
     "issues": [],
-    "stars": 24,
+    "stars": 25,
     "license": "MIT",
     "tags": [
       "mqtt"
@@ -11242,6 +11294,27 @@
     "license": "MIT"
   },
   {
+    "name": "MMM-MTA-BusAlerts",
+    "category": "Transport / Travel",
+    "url": "https://github.com/avianto/MMM-MTA-BusAlerts",
+    "id": "avianto/MMM-MTA-BusAlerts",
+    "maintainer": "avianto",
+    "maintainerURL": "https://github.com/avianto",
+    "description": "Displays real-time service alerts for the New York City MTA Bus system. It includes the ability to filter alerts by specific bus route numbers.",
+    "issues": [],
+    "stars": 0,
+    "license": "MIT",
+    "tags": [
+      "transit",
+      "mta",
+      "bus",
+      "alerts",
+      "nyc",
+      "new york city"
+    ],
+    "image": "images-mta-busalerts.jpg"
+  },
+  {
     "name": "MMM-MTA-NextBus",
     "category": "Transport / Travel",
     "url": "https://github.com/tie624/MMM-MTA-NextBus",
@@ -11256,6 +11329,27 @@
     ],
     "stars": 2,
     "license": "MIT"
+  },
+  {
+    "name": "MMM-MTA-SubwayAlerts",
+    "category": "Transport / Travel",
+    "url": "https://github.com/avianto/MMM-MTA-SubwayAlerts",
+    "id": "avianto/MMM-MTA-SubwayAlerts",
+    "maintainer": "avianto",
+    "maintainerURL": "https://github.com/avianto",
+    "description": "Displays real-time service alerts for the New York City MTA Subway. It allows you to filter alerts by specific subway lines.",
+    "issues": [],
+    "stars": 0,
+    "license": "MIT",
+    "tags": [
+      "transit",
+      "mta",
+      "subway",
+      "alerts",
+      "nyc",
+      "new york city"
+    ],
+    "image": "images-mmm-mta-subwayalerts-1.jpg"
   },
   {
     "name": "MMM-MTG",
@@ -11408,7 +11502,7 @@
     "issues": [
       "There are no keywords in 'package.json'. We would use them as tags on the module list page."
     ],
-    "stars": 1,
+    "stars": 2,
     "license": "MIT",
     "image": "screenshot.jpg"
   },
@@ -11436,7 +11530,7 @@
     "maintainerURL": "",
     "description": "Displays your commute times to several destinations. Highly configurable.",
     "issues": [],
-    "stars": 41,
+    "stars": 40,
     "tags": [
       "traffic",
       "commute"
@@ -11571,7 +11665,7 @@
     "maintainerURL": "",
     "description": "Display scores for your favorite teams from many major sports.",
     "issues": [],
-    "stars": 6,
+    "stars": 11,
     "license": "MIT",
     "tags": [
       "sports",
@@ -11658,7 +11752,7 @@
     "maintainerURL": "",
     "description": "Display standings and rankings for your favorite leagues and divisions from many major sports, including Olympics.",
     "issues": [],
-    "stars": 3,
+    "stars": 4,
     "license": "MIT",
     "tags": [
       "sports",
@@ -11795,7 +11889,7 @@
     "maintainerURL": "https://github.com/mazim-co",
     "description": "Displays information about your Volvo from the Volvo Connect API.",
     "issues": [],
-    "stars": 1,
+    "stars": 2,
     "tags": [
       "volvo",
       "myvolvo",
@@ -12257,6 +12351,22 @@
   {
     "name": "MMM-NewsAPI",
     "category": "News / Information",
+    "url": "https://github.com/mumblebaj/MMM-NewsAPI",
+    "id": "mumblebaj/MMM-NewsAPI",
+    "maintainer": "mumblebaj",
+    "maintainerURL": "https://github.com/mumblebaj",
+    "description": "Get news from <a target=\"_blank\" href=\"https://newsapi.org\">newsapi.org</a>.",
+    "issues": [],
+    "stars": 11,
+    "license": "MIT",
+    "tags": [
+      "news"
+    ],
+    "image": "screenshot1.jpg"
+  },
+  {
+    "name": "MMM-NewsAPI",
+    "category": "News / Information",
     "url": "https://github.com/totoluto/MMM-NewsAPI",
     "id": "totoluto/MMM-NewsAPI",
     "maintainer": "totoluto",
@@ -12272,22 +12382,6 @@
     "image": "screenshots-MMM-NewsApi.jpg"
   },
   {
-    "name": "MMM-NewsAPI",
-    "category": "News / Information",
-    "url": "https://github.com/mumblebaj/MMM-NewsAPI",
-    "id": "mumblebaj/MMM-NewsAPI",
-    "maintainer": "mumblebaj",
-    "maintainerURL": "https://github.com/mumblebaj",
-    "description": "Get news from <a target=\"_blank\" href=\"https://newsapi.org\">newsapi.org</a>.",
-    "issues": [],
-    "stars": 11,
-    "license": "MIT",
-    "tags": [
-      "news"
-    ],
-    "image": "screenshot1.jpg"
-  },
-  {
     "name": "MMM-NewsFeedTicker",
     "category": "Utility / IoT / 3rd Party / Integration",
     "url": "https://github.com/justjim1220/MMM-NewsFeedTicker",
@@ -12296,7 +12390,7 @@
     "maintainerURL": "",
     "description": "Mod of the default newsfeed module - shows the logo and scrolls the headlines and brief description across the screen like those seen on the news channels.",
     "issues": [],
-    "stars": 27,
+    "stars": 28,
     "license": "GPL-3.0",
     "tags": [
       "news",
@@ -12525,7 +12619,7 @@
     "issues": [
       "There is no `package.json`. We need this file to gather information about the module for the module list page."
     ],
-    "stars": 20,
+    "stars": 21,
     "license": "MIT",
     "image": "screenshots-digit-reset.jpg"
   },
@@ -13306,7 +13400,7 @@
     "maintainerURL": "https://github.com/Fabrizz",
     "description": "Highly customizable module that displays what you are listening to in Spotify. Works with <a target=\"_blank\" href=\"https://github.com/Fabrizz/MMM-LiveLyrics\">MMM-LiveLyrics</a> and allows theming other modules!",
     "issues": [],
-    "stars": 73,
+    "stars": 75,
     "license": "MIT",
     "tags": [
       "spotify",
@@ -13480,7 +13574,7 @@
     "maintainerURL": "",
     "description": "Displays current, hourly and daily forecast information using data from the OpenWeather One Call API.",
     "issues": [],
-    "stars": 13,
+    "stars": 14,
     "tags": [
       "openweathermap",
       "weather",
@@ -13498,7 +13592,7 @@
     "maintainerURL": "",
     "description": "A weather module that displays current, hourly and daily forecast information using data from the OpenWeatherMap One Call API.",
     "issues": [],
-    "stars": 37,
+    "stars": 38,
     "license": "MIT",
     "tags": [
       "weather",
@@ -13612,7 +13706,7 @@
     "maintainerURL": "",
     "description": "A helper module to display what page you're on. Intended to be used with other modules that rotate out modules.",
     "issues": [],
-    "stars": 44,
+    "stars": 46,
     "license": "MIT",
     "tags": [
       "pages",
@@ -13645,7 +13739,7 @@
       "There is no `package.json`. We need this file to gather information about the module for the module list page.",
       "No image found."
     ],
-    "stars": 35,
+    "stars": 36,
     "license": "MIT"
   },
   {
@@ -13689,7 +13783,7 @@
     "maintainerURL": "",
     "description": "Organize modules into multiple pages to display different information, with the option to automatically rotate through these pages.",
     "issues": [],
-    "stars": 115,
+    "stars": 116,
     "license": "MIT",
     "tags": [
       "pages",
@@ -14052,7 +14146,7 @@
     "maintainerURL": "https://github.com/PierreGode",
     "description": "Automatically controls the screen's power based on the presence of specified phones or devices within the network.",
     "issues": [],
-    "stars": 10,
+    "stars": 11,
     "license": "MIT",
     "tags": [
       "phone",
@@ -14083,7 +14177,7 @@
     "maintainerURL": "",
     "description": "Display stats from Pi-Hole DNS ad blocking.",
     "issues": [],
-    "stars": 79,
+    "stars": 80,
     "license": "MIT",
     "tags": [
       "pi-hole"
@@ -14130,7 +14224,7 @@
     "maintainerURL": "https://github.com/SalekurPolas",
     "description": "Informational module to display mirror information like Raspberry Pi model, unique serial number, network information, IPv4, IPv6, MAC address, OS information, CPU information, and more.",
     "issues": [],
-    "stars": 20,
+    "stars": 19,
     "license": "MIT",
     "tags": [
       "raspberrypi",
@@ -14180,7 +14274,7 @@
     "maintainerURL": "",
     "description": "The rescued Pir module of Bugsounet. Coernel82 cannot give support! Try <a target=\"_blank\" href=\"https://gitlab.com/khassel/MMM-Universal-Pir\">MMM-Universal-Pir</a> if you have any issues.",
     "issues": [],
-    "stars": 0,
+    "stars": 2,
     "license": "MIT",
     "tags": [
       "screen",
@@ -15124,7 +15218,7 @@
     "id": "Dennis-Rosenbaum/MMM-Quiz",
     "maintainer": "Dennis-Rosenbaum",
     "maintainerURL": "https://github.com/Dennis-Rosenbaum",
-    "description": "Add a multiple choice quiz. Random questions are loaded usng the <a target=\"_blank\" href=\"https://the-trivia-api.com\">Trivia API</a>.",
+    "description": "Add a multiple choice quiz. Random questions are loaded using the <a target=\"_blank\" href=\"https://the-trivia-api.com\">Trivia API</a>.",
     "issues": [],
     "stars": 2,
     "license": "MIT",
@@ -15188,7 +15282,7 @@
     "issues": [
       "There is no `package.json`. We need this file to gather information about the module for the module list page."
     ],
-    "stars": 0,
+    "stars": 1,
     "license": "MIT",
     "image": "screenshot.jpg"
   },
@@ -15229,7 +15323,7 @@
     "maintainerURL": "https://github.com/jalibu",
     "description": "A rain radar map based on OpenStreetMap. Multiple location markers, option for alternating positions and zoom levels.",
     "issues": [],
-    "stars": 44,
+    "stars": 45,
     "license": "MIT",
     "tags": [
       "weather",
@@ -15589,13 +15683,13 @@
     "maintainerURL": "",
     "description": "Cleanly shutdown or reboot your mirror, install and configure modules, and turn your monitor on and off from a simple web page, i.e. from your smartphone.",
     "issues": [],
-    "stars": 523,
+    "stars": 530,
     "license": "MIT",
     "tags": [
       "remote control",
       "control"
     ],
-    "image": ".github-hide_show_module.jpg"
+    "image": "img-main_screenshot.jpg"
   },
   {
     "name": "MMM-Remote-Control-Repository",
@@ -16282,7 +16376,7 @@
     "maintainerURL": "",
     "description": "Cast a video from your phone to your mirror (currently can only cast YouTube).",
     "issues": [],
-    "stars": 169,
+    "stars": 172,
     "license": "MIT",
     "tags": [
       "chromecast",
@@ -16833,7 +16927,7 @@
     "issues": [
       "There is no `package.json`. We need this file to gather information about the module for the module list page."
     ],
-    "stars": 39,
+    "stars": 40,
     "license": "MIT",
     "image": "public-logo.jpg"
   },
@@ -17107,16 +17201,13 @@
     "maintainer": "ItsMeBrille",
     "maintainerURL": "",
     "description": "An iFrame module to display web content (including YouTube, IP cameras, etc.). Several rotating URL, autorefresh and remote control of the URL to display, Next/Prev/Play/Stop. <a target=\"_blank\" href=\"https://forum.magicmirror.builders/topic/9750/mmm-smartwebdisplay-display-web-contents-including-youtube-on-your-mm\">MMM-SmartWebDisplay forum</a>.",
-    "issues": [
-      "Issues are not enabled in the GitHub repository. So users cannot report bugs. Please enable issues in your repo."
-    ],
-    "stars": 0,
-    "hasGithubIssues": false,
+    "issues": [],
+    "stars": 3,
+    "license": "MIT",
     "tags": [
       "iframe",
       "notification"
     ],
-    "license": "MIT",
     "image": "screenshots-MMM-RemoteControl_menu.jpg"
   },
   {
@@ -17730,7 +17821,7 @@
     "maintainerURL": "",
     "description": "Display a stoic quote at a given interval or time of day.",
     "issues": [],
-    "stars": 3,
+    "stars": 4,
     "license": "MIT",
     "tags": [
       "quotes",
@@ -17825,7 +17916,7 @@
     "maintainerURL": "",
     "description": "Displays last reading from your Dexcom G6 via the share API.",
     "issues": [],
-    "stars": 5,
+    "stars": 6,
     "license": "MIT",
     "tags": [
       "dexcom"
@@ -18077,7 +18168,7 @@
     "issues": [
       "There is no `package.json`. We need this file to gather information about the module for the module list page."
     ],
-    "stars": 9,
+    "stars": 10,
     "license": "MIT",
     "image": "screenshots-screenshot-compact.jpg"
   },
@@ -18705,6 +18796,21 @@
     "image": "1x1px.jpg"
   },
   {
+    "name": "MMM-TodoList",
+    "category": "Utility / IoT / 3rd Party / Integration",
+    "url": "https://github.com/tomoki13/MMM-TodoList",
+    "id": "tomoki13/MMM-TodoList",
+    "maintainer": "tomoki13",
+    "maintainerURL": "",
+    "description": "Create To do list tasks with touch screen interface.",
+    "issues": [
+      "There is no `package.json`. We need this file to gather information about the module for the module list page.",
+      "No image found."
+    ],
+    "stars": 0,
+    "license": "MIT"
+  },
+  {
     "name": "MMM-TomTomCalculateRouteTraffic",
     "category": "Transport / Travel",
     "url": "https://github.com/teemoo7/MMM-TomTomCalculateRouteTraffic",
@@ -18858,7 +18964,7 @@
     "maintainerURL": "https://github.com/samlewis0602",
     "description": "Display commute travel time with current traffic conditions factored in. Can be used for driving, biking, walking, and public transit.",
     "issues": [],
-    "stars": 141,
+    "stars": 142,
     "tags": [
       "traffic"
     ],
@@ -19345,6 +19451,24 @@
     "stars": 3
   },
   {
+    "name": "unRAID-MMM",
+    "category": "Utility / IoT / 3rd Party / Integration",
+    "url": "https://github.com/artificialai223/unRAID-MMM",
+    "id": "artificialai223/unRAID-MMM",
+    "maintainer": "artificialai223",
+    "maintainerURL": "",
+    "description": "Displays live system statistics from your unRAID server using its GraphQL API.",
+    "issues": [],
+    "stars": 0,
+    "license": "MIT",
+    "tags": [
+      "utility",
+      "unraid",
+      "monitoring"
+    ],
+    "image": "example.jpg"
+  },
+  {
     "name": "MMM-Unsplash",
     "category": "Entertainment / Misc",
     "url": "https://github.com/parnic/MMM-Unsplash",
@@ -19567,7 +19691,7 @@
     "issues": [
       "There is no `package.json`. We need this file to gather information about the module for the module list page."
     ],
-    "stars": 11,
+    "stars": 12,
     "license": "MIT",
     "image": "screenshot.jpg"
   },
@@ -19890,7 +20014,7 @@
     "issues": [
       "There is no `package.json`. We need this file to gather information about the module for the module list page."
     ],
-    "stars": 105,
+    "stars": 106,
     "license": "MIT",
     "image": "WB-weather-screenshots-wb-weather-wallberry-classic.jpg"
   },
@@ -19906,7 +20030,7 @@
       "There are no keywords in 'package.json'. We would use them as tags on the module list page.",
       "No image found."
     ],
-    "stars": 116,
+    "stars": 118,
     "license": "MIT"
   },
   {
@@ -19936,7 +20060,7 @@
     "maintainerURL": "https://github.com/mercredo",
     "description": "Keep track of Würzburg (and surrounding areas) waste collection dates so you know when to put your garbage out.",
     "issues": [],
-    "stars": 1,
+    "stars": 2,
     "license": "MIT",
     "tags": [
       "wuerzburg",
@@ -20307,7 +20431,7 @@
     "issues": [
       "There are no keywords in 'package.json'. We would use them as tags on the module list page."
     ],
-    "stars": 65,
+    "stars": 66,
     "license": "MIT",
     "image": "images-screenshot.jpg"
   },
@@ -20452,7 +20576,7 @@
     "issues": [
       "There is no `package.json`. We need this file to gather information about the module for the module list page."
     ],
-    "stars": 17,
+    "stars": 18,
     "license": "MIT",
     "image": "MMM-wiki.jpg"
   },
@@ -20527,7 +20651,7 @@
     "maintainerURL": "",
     "description": "Displays the Merriam-Webster word of the day along with its part of speech, pronunciation, definition, and an example.",
     "issues": [],
-    "stars": 9,
+    "stars": 10,
     "license": "MIT",
     "tags": [
       "word",
@@ -20583,7 +20707,7 @@
     "maintainerURL": "",
     "description": "Yet another word of the day module. The special feature of this module is that you can select multiple languages and it will display as a carousel.",
     "issues": [],
-    "stars": 5,
+    "stars": 6,
     "license": "MIT",
     "tags": [
       "education",
@@ -20637,7 +20761,7 @@
       "There is no `package.json`. We need this file to gather information about the module for the module list page."
     ],
     "outdated": "Deprecated. Wunderground API isn't working anymore. Check out MMM-MyWeather which is a fork with another API.",
-    "stars": 27
+    "stars": 28
   },
   {
     "name": "MMM-wundergroundBar",

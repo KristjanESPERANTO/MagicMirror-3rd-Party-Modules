@@ -1,6 +1,6 @@
 # Result of the module analysis
 
-Last update: 2025-05-13T21:33:25+02:00
+Last update: 2025-05-24T01:16:33+02:00
 
 ## General notes
 
@@ -11,11 +11,11 @@ Last update: 2025-05-13T21:33:25+02:00
 
 |                      | number   |
 |:---------------------|:--------:|
-| modules analyzed     |   1259   |
-| maintainers          |    671   |
+| modules analyzed     |   1266   |
+| maintainers          |    676   |
 | modules with issues  |   1259   |
-| issues               |  10543   |
-| modules at github    |   1122   |
+| issues               |  10541   |
+| modules at github    |   1129   |
 | modules at gitlab    |     12   |
 | modules at bitbucket |      1   |
 
@@ -154,9 +154,9 @@ Last update: 2025-05-13T21:33:25+02:00
 2. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
 3. Recommendation: The ESLint configuration file `eslint.config.mjs` does not contain `defineConfig`. It is recommended to use it.
 4. Information: There are updates for 4 dependencie(s):
-   - @eslint/js                ^9.20.0  →  ^9.26.0
+   - @eslint/js                ^9.20.0  →  ^9.27.0
    - @stylistic/eslint-plugin   ^2.7.2  →   ^4.2.0
-   - eslint                    ^9.10.0  →  ^9.26.0
+   - eslint                    ^9.10.0  →  ^9.27.0
    - globals                   ^15.9.0  →  ^16.1.0
 
 
@@ -464,11 +464,15 @@ Last update: 2025-05-13T21:33:25+02:00
 
 ### [MMM-ApothekenNotdienst by KristjanESPERANTO](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst)
 
-1. Information: There are updates for 4 dependencie(s):
-   - cspell                  ^8.19.3  →   ^9.0.1
-   - eslint-plugin-import-x  ^4.11.0  →  ^4.11.1
+1. Information: There are updates for 8 dependencie(s):
+   - @eslint/css              ^0.7.0  →   ^0.8.1
+   - @eslint/js              ^9.26.0  →  ^9.27.0
+   - cspell                  ^8.19.3  →   ^9.0.2
+   - eslint                  ^9.26.0  →  ^9.27.0
+   - eslint-plugin-import-x  ^4.11.0  →  ^4.12.2
    - globals                 ^16.0.0  →  ^16.1.0
    - lint-staged             ^15.5.1  →  ^16.0.0
+   - markdownlint-cli        ^0.44.0  →  ^0.45.0
 
 
 ### [MMM-AQI by ryck](https://github.com/ryck/MMM-AQI)
@@ -1283,17 +1287,6 @@ Last update: 2025-05-13T21:33:25+02:00
 14. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
 15. Recommendation: Replace eslintrc by new flat config.
 
-### [MMM-CalendarExt2 by MMM-CalendarExt2](https://github.com/MMM-CalendarExt2/MMM-CalendarExt2)
-
-1. Recommendation: The ESLint configuration file `eslint.config.mjs` does not contain `defineConfig`. It is recommended to use it.
-2. Information: There are updates for 5 dependencie(s):
-   - @eslint/js              ^9.25.1  →  ^9.26.0
-   - eslint                  ^9.25.1  →  ^9.26.0
-   - eslint-plugin-import-x  ^4.11.0  →  ^4.11.1
-   - globals                 ^16.0.0  →  ^16.1.0
-   - markdownlint-cli2       ^0.17.2  →  ^0.18.0
-
-
 ### [MMM-CalendarExt3 by MMRIZE](https://github.com/MMRIZE/MMM-CalendarExt3)
 
 1. Recommendation: `FUNDING.yml`: Use official file extension `.yaml` instead of `.yml` [See here](https://yaml.org/faq.html).
@@ -1473,11 +1466,14 @@ Last update: 2025-05-13T21:33:25+02:00
 
 ### [MMM-Canteen by KristjanESPERANTO](https://github.com/KristjanESPERANTO/MMM-Canteen)
 
-1. Information: There are updates for 4 dependencie(s):
-   - cspell                  ^8.19.4  →   ^9.0.1
-   - eslint-plugin-import-x  ^4.11.0  →  ^4.11.1
+1. Information: There are updates for 7 dependencie(s):
+   - @eslint/js              ^9.26.0  →  ^9.27.0
+   - cspell                  ^8.19.4  →   ^9.0.2
+   - eslint                  ^9.26.0  →  ^9.27.0
+   - eslint-plugin-import-x  ^4.11.0  →  ^4.12.2
    - globals                 ^16.0.0  →  ^16.1.0
    - lint-staged             ^15.5.1  →  ^16.0.0
+   - markdownlint-cli        ^0.44.0  →  ^0.45.0
 
 
 ### [MMM-Canvas by chase-cromwell](https://github.com/chase-cromwell/MMM-Canvas)
@@ -1502,13 +1498,8 @@ Last update: 2025-05-13T21:33:25+02:00
 
 ### [MMM-Carousel by shbatm](https://github.com/shbatm/MMM-Carousel)
 
-1. Recommendation: The ESLint configuration file `eslint.config.mjs` does not contain `defineConfig`. It is recommended to use it.
-2. Information: There are updates for 5 dependencie(s):
-   - @eslint/js              ^9.25.1  →  ^9.26.0
-   - cspell                  ^8.19.3  →   ^9.0.1
-   - eslint                  ^9.25.1  →  ^9.26.0
-   - eslint-plugin-import-x  ^4.11.0  →  ^4.11.1
-   - globals                 ^16.0.0  →  ^16.1.0
+1. Information: There are updates for 1 dependencie(s):
+   - cspell  ^9.0.1  →  ^9.0.2
 
 
 ### [MMM-CECControl by nischi](https://github.com/nischi/MMM-CECControl)
@@ -1573,18 +1564,10 @@ Last update: 2025-05-13T21:33:25+02:00
 
 ### [MMM-Chores by PierreGode](https://github.com/PierreGode/MMM-Chores)
 
-1. `package.json` issue: No repository field.
-2. There are no keywords in 'package.json'. We would use them as tags on the module list page.
-3. Issue: The license in the package.json (MIT) doesn't match the license file (Apache-2.0).
-4. No image found.
-5. Typo: Found `Magic Mirror` in file `MMM-Chores.js`: Replace it with `MagicMirror²`.
-6. Recommendation: The README seems not to have an update section (like `## Update`). Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Update-Instructions)).
-7. Recommendation: The README seems not to have an install section (like `## Installation`). Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Installation-Instructions)).
-8. Recommendation: Found `require("https")` in file `node_helper.js`: Replace "https" by "node:https".
-9. Recommendation: Found `https://cdn.jsdelivr.net` in file `admin.html`: It looks like a package is loaded via CDN. It would be better if the package were installed locally via npm.
-10. Recommendation: There is no CHANGELOG file. It is recommended to add one ([example CHANGELOG file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CHANGELOG.md)).
-11. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
-12. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/eslint.md)).
+1. Recommendation: Found `https://cdn.jsdelivr.net` in file `admin.html`: It looks like a package is loaded via CDN. It would be better if the package were installed locally via npm.
+2. Recommendation: There is no CHANGELOG file. It is recommended to add one ([example CHANGELOG file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CHANGELOG.md)).
+3. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
+4. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/eslint.md)).
 
 ### [MMM-chromecast by flo80](https://github.com/flo80/MMM-chromecast)
 
@@ -1621,13 +1604,14 @@ Last update: 2025-05-13T21:33:25+02:00
 
 1. Repository name and main js file name is not the same.
 2. Recommendation: The ESLint configuration file `eslint.config.mjs` does not contain `defineConfig`. It is recommended to use it.
-3. Information: There are updates for 7 dependencie(s):
-   - @eslint/js               ^9.25.1  →    ^9.26.0
-   - @types/node             ^22.15.3  →  ^22.15.17
-   - eslint                   ^9.25.1  →    ^9.26.0
+3. Information: There are updates for 8 dependencie(s):
+   - @eslint/js               ^9.25.1  →    ^9.27.0
+   - @types/node             ^22.15.3  →  ^22.15.21
+   - eslint                   ^9.25.1  →    ^9.27.0
    - eslint-config-prettier   ^10.1.2  →    ^10.1.5
    - eslint-plugin-prettier    ^5.2.6  →     ^5.4.0
-   - rollup                   ^4.40.1  →    ^4.40.2
+   - rollup                   ^4.40.1  →    ^4.41.0
+   - ts-jest                  ^29.3.2  →    ^29.3.4
    - typescript-eslint        ^8.31.1  →    ^8.32.1
 
 
@@ -1794,9 +1778,9 @@ Last update: 2025-05-13T21:33:25+02:00
 2. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
 3. Recommendation: The ESLint configuration file `eslint.config.mjs` does not contain `defineConfig`. It is recommended to use it.
 4. Information: There are updates for 5 dependencie(s):
-   - @eslint/js                 ^9.13.0  →  ^9.26.0
+   - @eslint/js                 ^9.13.0  →  ^9.27.0
    - @stylistic/eslint-plugin    ^2.9.0  →   ^4.2.0
-   - eslint                     ^9.13.0  →  ^9.26.0
+   - eslint                     ^9.13.0  →  ^9.27.0
    - globals                   ^15.11.0  →  ^16.1.0
    - prettier                    ^3.3.3  →   ^3.5.3
 
@@ -1807,10 +1791,9 @@ Last update: 2025-05-13T21:33:25+02:00
 2. Recommendation: The README seems not to have an update section (like `## Update`). Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Update-Instructions)).
 3. Recommendation: Found `"node-fetch"` in file `install_module.cmd`: Replace it with built-in fetch ([documentation](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch); [example module with fetch implemented](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/node_helper.js)).
 4. Recommendation: Found `"node-fetch"` in file `install_module.sh`: Replace it with built-in fetch ([documentation](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch); [example module with fetch implemented](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/node_helper.js)).
-5. Warning: No LICENSE file ([example LICENSE file](https://github.com/KristjanESPERANTO/MMM-WebSpeechTTS/blob/main/LICENSE.md)).
-6. Recommendation: There is no CHANGELOG file. It is recommended to add one ([example CHANGELOG file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CHANGELOG.md)).
-7. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
-8. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/eslint.md)).
+5. Recommendation: There is no CHANGELOG file. It is recommended to add one ([example CHANGELOG file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CHANGELOG.md)).
+6. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
+7. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/eslint.md)).
 
 ### [MMM-Confucius-say by jttaylor](https://github.com/jttaylor/MMM-Confucius-say)
 
@@ -2051,13 +2034,6 @@ Last update: 2025-05-13T21:33:25+02:00
 5. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
 6. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/eslint.md)).
 
-### [MMM-CustomText by dathbe](https://github.com/dathbe/MMM-CustomText)
-
-1. Recommendation: The ESLint configuration file `eslint.config.mjs` does not contain `defineConfig`. It is recommended to use it.
-2. Information: There are updates for 1 dependencie(s):
-   - globals  ^16.0.0  →  ^16.1.0
-
-
 ### [MMM-CyanideHappiness by werthdavid](https://github.com/werthdavid/MMM-CyanideHappiness)
 
 1. Issues are not enabled in the GitHub repository. So users cannot report bugs. Please enable issues in your repo.
@@ -2246,13 +2222,11 @@ Last update: 2025-05-13T21:33:25+02:00
 ### [MMM-DailyStoic by SmolinskiP](https://github.com/SmolinskiP/MMM-DailyStoic)
 
 1. There is no `package.json`. We need this file to gather information about the module for the module list page.
-2. No image found.
-3. Recommendation: The README seems not to have an update section (like `## Update`). Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Update-Instructions)).
-4. Recommendation: The README seems to have a config example without a trailing comma. Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Config-Instructions)).
-5. Deprecated: Found `require("request")` in file `node_helper.js`: Replace it with built-in fetch ([documentation](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch); [example module with fetch implemented](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/node_helper.js)).
-6. Recommendation: There is no CHANGELOG file. It is recommended to add one ([example CHANGELOG file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CHANGELOG.md)).
-7. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
-8. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/eslint.md)).
+2. Recommendation: The README seems not to have an update section (like `## Update`). Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Update-Instructions)).
+3. Deprecated: Found `require("request")` in file `node_helper.js`: Replace it with built-in fetch ([documentation](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch); [example module with fetch implemented](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/node_helper.js)).
+4. Recommendation: There is no CHANGELOG file. It is recommended to add one ([example CHANGELOG file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CHANGELOG.md)).
+5. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
+6. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/eslint.md)).
 
 ### [MMM-DailyUnreachedPeopleGroup by MStoltzfus](https://github.com/MStoltzfus/MMM-DailyUnreachedPeopleGroup)
 
@@ -2312,18 +2286,11 @@ Last update: 2025-05-13T21:33:25+02:00
 ### [MMM-DBF by Helpi90](https://github.com/Helpi90/MMM-DBF)
 
 1. There are no keywords in 'package.json'. We would use them as tags on the module list page.
-2. Typo: Found `Magic Mirror` in file `MMM-DBF.js`: Replace it with `MagicMirror²`.
-3. Recommendation: Found `XMLHttpRequest` in file `MMM-DBF.js`: Replace it with built-in fetch ([documentation](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch); [example module with fetch implemented](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/node_helper.js)).
-4. Outdated: Found `MichMich/MagicMirror` in file `README.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
-5. Recommendation: The README seems not to have an update section (like `## Update`). Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Update-Instructions)).
-6. Recommendation: The README seems to have a modules array (Found `modules: [`). This is usually not necessary. Please remove it if it is not needed ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Config-Instructions)).
-7. Recommendation: The README seems to have a config example without a trailing comma. Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Config-Instructions)).
-8. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
-9. Deprecated: Found `"grunt"` in file `package.json`: Grunt is practically unmaintained. Move on to something better.
-10. Warning: No LICENSE file ([example LICENSE file](https://github.com/KristjanESPERANTO/MMM-WebSpeechTTS/blob/main/LICENSE.md)).
-11. Recommendation: There is no CHANGELOG file. It is recommended to add one ([example CHANGELOG file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CHANGELOG.md)).
-12. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
-13. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/eslint.md)).
+2. Recommendation: There is no CHANGELOG file. It is recommended to add one ([example CHANGELOG file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CHANGELOG.md)).
+3. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
+4. Information: There are updates for 1 dependencie(s):
+   - eslint-plugin-import-x  ^4.11.1  →  ^4.12.2
+
 
 ### [MMM-DCMetroTimes by kyle-kelly](https://github.com/kyle-kelly/MMM-DCMetroTimes)
 
@@ -2697,13 +2664,6 @@ Last update: 2025-05-13T21:33:25+02:00
 11. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
 12. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/eslint.md)).
 
-### [MMM-EarthquakeAlerts by dathbe](https://github.com/dathbe/MMM-EarthquakeAlerts)
-
-1. Recommendation: The ESLint configuration file `eslint.config.mjs` does not contain `defineConfig`. It is recommended to use it.
-2. Information: There are updates for 1 dependencie(s):
-   - globals  ^16.0.0  →  ^16.1.0
-
-
 ### [MMM-EarthquakeMonitor by rcollie](https://github.com/rcollie/MMM-EarthquakeMonitor)
 
 1. There is no `package.json`. We need this file to gather information about the module for the module list page.
@@ -2717,15 +2677,12 @@ Last update: 2025-05-13T21:33:25+02:00
 
 ### [MMM-EasyPix by KristjanESPERANTO](https://github.com/KristjanESPERANTO/MMM-EasyPix)
 
-1. Recommendation: The ESLint configuration file `eslint.config.mjs` does not contain `defineConfig`. It is recommended to use it.
-2. Information: There are updates for 7 dependencie(s):
-   - @eslint/js               ^9.25.0  →   ^9.26.0
-   - cspell                   ^8.19.2  →    ^9.0.1
-   - eslint                   ^9.25.0  →   ^9.26.0
-   - eslint-plugin-import-x   ^4.10.6  →   ^4.11.1
-   - globals                  ^16.0.0  →   ^16.1.0
-   - lint-staged              ^15.5.1  →   ^16.0.0
-   - stylelint               ^16.18.0  →  ^16.19.1
+1. Information: There are updates for 5 dependencie(s):
+   - @eslint/css              ^0.8.0  →   ^0.8.1
+   - @eslint/js              ^9.26.0  →  ^9.27.0
+   - cspell                   ^9.0.1  →   ^9.0.2
+   - eslint                  ^9.26.0  →  ^9.27.0
+   - eslint-plugin-import-x  ^4.11.1  →  ^4.12.2
 
 
 ### [MMM-Ecobee by parnic](https://github.com/parnic/MMM-Ecobee)
@@ -3589,15 +3546,9 @@ Last update: 2025-05-13T21:33:25+02:00
 
 ### [MMM-Forum by KristjanESPERANTO](https://github.com/KristjanESPERANTO/MMM-Forum)
 
-1. Recommendation: The ESLint configuration file `eslint.config.mjs` does not contain `defineConfig`. It is recommended to use it.
-2. Information: There are updates for 7 dependencie(s):
-   - @eslint/js               ^9.25.0  →   ^9.26.0
-   - cspell                   ^8.19.2  →    ^9.0.1
-   - eslint                   ^9.25.0  →   ^9.26.0
-   - eslint-plugin-import-x   ^4.10.6  →   ^4.11.1
-   - globals                  ^16.0.0  →   ^16.1.0
-   - lint-staged              ^15.5.1  →   ^16.0.0
-   - stylelint               ^16.18.0  →  ^16.19.1
+1. Information: There are updates for 2 dependencie(s):
+   - cspell                   ^9.0.1  →   ^9.0.2
+   - eslint-plugin-import-x  ^4.11.1  →  ^4.12.2
 
 
 ### [MMM-FrameLight by RaspiManu](https://github.com/RaspiManu/MMM-FrameLight)
@@ -3620,12 +3571,13 @@ Last update: 2025-05-13T21:33:25+02:00
 6. Recommendation: The README seems not to have an install section (like `## Installation`). Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Installation-Instructions)).
 7. Recommendation: The README seems to have a modules array (Found `modules: [`). This is usually not necessary. Please remove it if it is not needed ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Config-Instructions)).
 8. Recommendation: The README seems to have a config example without a trailing comma. Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Config-Instructions)).
-9. Typo: Found `Magic Mirror` in file `config.js`: Replace it with `MagicMirror²`.
-10. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
-11. Typo: Found `Magic Mirror` in file `package.json`: Replace it with `MagicMirror²`.
-12. Recommendation: Found `jshint` in file `progressbar.js`: Replace "jshint" by "eslint".
-13. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
-14. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/eslint.md)).
+9. Deprecated: Found `fs.F_OK` in file `freeboxapi.js`: Replace it with `fs.constants.F_OK`.
+10. Typo: Found `Magic Mirror` in file `config.js`: Replace it with `MagicMirror²`.
+11. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
+12. Typo: Found `Magic Mirror` in file `package.json`: Replace it with `MagicMirror²`.
+13. Recommendation: Found `jshint` in file `progressbar.js`: Replace "jshint" by "eslint".
+14. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
+15. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/eslint.md)).
 
 ### [MMM-FrenchHoroscope by Amand-M](https://github.com/Amand-M/MMM-FrenchHoroscope)
 
@@ -4471,10 +4423,9 @@ Last update: 2025-05-13T21:33:25+02:00
 1. There is no `package.json`. We need this file to gather information about the module for the module list page.
 2. Recommendation: The README seems not to have an update section (like `## Update`). Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Update-Instructions)).
 3. Recommendation: The README seems to have a modules array (Found `modules: [`). This is usually not necessary. Please remove it if it is not needed ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Config-Instructions)).
-4. Recommendation: The README seems to have a config example without a trailing comma. Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Config-Instructions)).
-5. Recommendation: There is no CHANGELOG file. It is recommended to add one ([example CHANGELOG file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CHANGELOG.md)).
-6. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
-7. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/eslint.md)).
+4. Recommendation: There is no CHANGELOG file. It is recommended to add one ([example CHANGELOG file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CHANGELOG.md)).
+5. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
+6. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/eslint.md)).
 
 ### [MMM-Helium-Wallet by hayseedbyte](https://github.com/hayseedbyte/MMM-Helium-Wallet)
 
@@ -4637,6 +4588,13 @@ Last update: 2025-05-13T21:33:25+02:00
 7. Recommendation: There is no CHANGELOG file. It is recommended to add one ([example CHANGELOG file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CHANGELOG.md)).
 8. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
 9. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/eslint.md)).
+
+### [MMM-HomeAssistant by ambarusa](https://github.com/ambarusa/MMM-HomeAssistant)
+
+1. Recommendation: The README seems not to have a config example. Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Config-Instructions)).
+2. Recommendation: There is no CHANGELOG file. It is recommended to add one ([example CHANGELOG file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CHANGELOG.md)).
+3. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
+4. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/eslint.md)).
 
 ### [MMM-HomeAssistant by zuo000](https://github.com/zuo000/MMM-HomeAssistant)
 
@@ -4893,12 +4851,12 @@ Last update: 2025-05-13T21:33:25+02:00
 2. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
 3. Recommendation: The ESLint configuration file `eslint.config.mjs` does not contain `defineConfig`. It is recommended to use it.
 4. Information: There are updates for 6 dependencie(s):
-   - @eslint/js                 ^9.20.0  →  ^9.26.0
+   - @eslint/js                 ^9.20.0  →  ^9.27.0
    - @stylistic/eslint-plugin    ^3.1.0  →   ^4.2.0
-   - eslint                     ^9.20.0  →  ^9.26.0
+   - eslint                     ^9.20.0  →  ^9.27.0
    - eventsource                 ^3.0.5  →   ^4.0.0
    - globals                   ^15.14.0  →  ^16.1.0
-   - undici                      ^7.3.0  →   ^7.9.0
+   - undici                      ^7.3.0  →  ^7.10.0
 
 
 ### [MMM-hukamnama by harv-singh](https://github.com/harv-singh/MMM-hukamnama)
@@ -4933,13 +4891,11 @@ Last update: 2025-05-13T21:33:25+02:00
 
 ### [MMM-HusqvarnaAutomower by ASteinsdoerfer](https://github.com/ASteinsdoerfer/MMM-HusqvarnaAutomower)
 
-1. Issue: The license in the package.json (MIT) doesn't match the license file (NOASSERTION).
-2. No compatible or wrong license field in 'package.json' or LICENSE file. Without that, we can't use an image.
-3. Recommendation: The README seems not to have an update section (like `## Update`). Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Update-Instructions)).
-4. Recommendation: The README seems not to have an install section (like `## Installation`). Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Installation-Instructions)).
-5. Recommendation: There is no CHANGELOG file. It is recommended to add one ([example CHANGELOG file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CHANGELOG.md)).
-6. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
-7. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/eslint.md)).
+1. Recommendation: The README seems not to have an update section (like `## Update`). Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Update-Instructions)).
+2. Recommendation: The README seems not to have an install section (like `## Installation`). Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Installation-Instructions)).
+3. Recommendation: There is no CHANGELOG file. It is recommended to add one ([example CHANGELOG file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CHANGELOG.md)).
+4. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
+5. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/eslint.md)).
 
 ### [MMM-HVIEW-Snapshot by coderpussy](https://github.com/coderpussy/MMM-HVIEW-Snapshot)
 
@@ -5385,15 +5341,9 @@ Last update: 2025-05-13T21:33:25+02:00
 
 ### [MMM-ISS-Live by KristjanESPERANTO](https://github.com/KristjanESPERANTO/MMM-ISS-Live)
 
-1. Recommendation: The ESLint configuration file `eslint.config.mjs` does not contain `defineConfig`. It is recommended to use it.
-2. Information: There are updates for 7 dependencie(s):
-   - @eslint/js                  ^9.25.0  →  ^9.26.0
-   - cspell                      ^8.19.2  →   ^9.0.1
-   - eslint                      ^9.25.0  →  ^9.26.0
-   - eslint-plugin-import-x      ^4.10.6  →  ^4.11.1
-   - eslint-plugin-package-json  ^0.29.1  →  ^0.31.0
-   - globals                     ^16.0.0  →  ^16.1.0
-   - lint-staged                 ^15.5.1  →  ^16.0.0
+1. Information: There are updates for 2 dependencie(s):
+   - cspell                   ^9.0.1  →   ^9.0.2
+   - eslint-plugin-import-x  ^4.11.1  →  ^4.12.2
 
 
 ### [MMM-ISS-Map by khassel](https://gitlab.com/khassel/MMM-ISS-Map)
@@ -5676,10 +5626,13 @@ Last update: 2025-05-13T21:33:25+02:00
 
 ### [MMM-KeyBindings by shbatm](https://github.com/shbatm/MMM-KeyBindings)
 
-1. Information: There are updates for 3 dependencie(s):
-   - cspell                  ^8.19.3  →   ^9.0.1
-   - eslint-plugin-import-x  ^4.11.0  →  ^4.11.1
+1. Information: There are updates for 6 dependencie(s):
+   - @eslint/js              ^9.26.0  →  ^9.27.0
+   - cspell                  ^8.19.3  →   ^9.0.2
+   - eslint                  ^9.26.0  →  ^9.27.0
+   - eslint-plugin-import-x  ^4.11.0  →  ^4.12.2
    - globals                 ^16.0.0  →  ^16.1.0
+   - markdownlint-cli        ^0.44.0  →  ^0.45.0
 
 
 ### [MMM-Keyboard by lavolp3](https://github.com/lavolp3/MMM-Keyboard)
@@ -6390,18 +6343,19 @@ Last update: 2025-05-13T21:33:25+02:00
 
 1. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
 2. Recommendation: The ESLint configuration file `eslint.config.mjs` does not contain `defineConfig`. It is recommended to use it.
-3. Information: There are updates for 12 dependencie(s):
+3. Information: There are updates for 13 dependencie(s):
    - @commitlint/cli                   ^19.3.0  →   ^19.8.1
    - @commitlint/config-conventional   ^19.8.0  →   ^19.8.1
-   - @eslint/js                        ^9.24.0  →   ^9.26.0
+   - @eslint/js                        ^9.24.0  →   ^9.27.0
    - @eslint/json                      ^0.11.0  →   ^0.12.0
    - @eslint/markdown                   ^6.3.0  →    ^6.4.0
-   - eslint                            ^9.24.0  →   ^9.26.0
-   - eslint-plugin-import-x            ^4.10.2  →   ^4.11.1
+   - eslint                            ^9.24.0  →   ^9.27.0
+   - eslint-plugin-import-x            ^4.10.2  →   ^4.12.2
    - eslint-plugin-package-json        ^0.29.1  →   ^0.31.0
    - globals                           ^16.0.0  →   ^16.1.0
    - lint-staged                       ^15.5.1  →   ^16.0.0
-   - semantic-release                  ^24.1.0  →   ^24.2.3
+   - markdownlint-cli                  ^0.44.0  →   ^0.45.0
+   - semantic-release                  ^24.1.0  →   ^24.2.5
    - stylelint                        ^16.18.0  →  ^16.19.1
 
 
@@ -7024,10 +6978,11 @@ Last update: 2025-05-13T21:33:25+02:00
 
 1. There is no `package.json`. We need this file to gather information about the module for the module list page.
 2. Recommendation: The README seems to have a modules array (Found `modules: [`). This is usually not necessary. Please remove it if it is not needed ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Config-Instructions)).
-3. Recommendation: Found `require('https')` in file `node_helper.js`: Replace 'https' by 'node:https'.
-4. Recommendation: There is no CHANGELOG file. It is recommended to add one ([example CHANGELOG file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CHANGELOG.md)).
-5. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
-6. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/eslint.md)).
+3. Deprecated: Found `fs.F_OK` in file `node_helper.js`: Replace it with `fs.constants.F_OK`.
+4. Recommendation: Found `require('https')` in file `node_helper.js`: Replace 'https' by 'node:https'.
+5. Recommendation: There is no CHANGELOG file. It is recommended to add one ([example CHANGELOG file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CHANGELOG.md)).
+6. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
+7. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/eslint.md)).
 
 ### [MMM-Modulebar by Snille](https://github.com/Snille/MMM-Modulebar)
 
@@ -7258,6 +7213,17 @@ Last update: 2025-05-13T21:33:25+02:00
 9. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
 10. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/eslint.md)).
 
+### [MMM-MPKLodz by Xioner19](https://github.com/Xioner19/MMM-MPKLodz)
+
+1. Recommendation: The README seems not to have an update section (like `## Update`). Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Update-Instructions)).
+2. Recommendation: The README seems not to have an install section (like `## Installation`). Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Installation-Instructions)).
+3. Recommendation: The README seems to have a config example without a trailing comma. Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Config-Instructions)).
+4. Recommendation: Found `axios` in file `node_helper.js`: Replace it with built-in fetch ([documentation](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch); [example module with fetch implemented](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/node_helper.js)).
+5. Recommendation: Found `axios` in file `package.json`: Replace it with built-in fetch ([documentation](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch); [example module with fetch implemented](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/node_helper.js)).
+6. Recommendation: There is no CHANGELOG file. It is recommended to add one ([example CHANGELOG file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CHANGELOG.md)).
+7. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
+8. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/eslint.md)).
+
 ### [MMM-MPlayer by evroom](https://github.com/evroom/MMM-MPlayer)
 
 1. Recommendation: The README seems not to have an update section (like `## Update`). Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Update-Instructions)).
@@ -7383,6 +7349,13 @@ Last update: 2025-05-13T21:33:25+02:00
 8. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
 9. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/eslint.md)).
 
+### [MMM-MTA-BusAlerts by avianto](https://github.com/avianto/MMM-MTA-BusAlerts)
+
+1. Recommendation: Found `'node-fetch'` in file `node_helper.js`: Replace it with built-in fetch ([documentation](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch); [example module with fetch implemented](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/node_helper.js)).
+2. Recommendation: Found `"node-fetch"` in file `package.json`: Replace it with built-in fetch ([documentation](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch); [example module with fetch implemented](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/node_helper.js)).
+3. Recommendation: There is no CHANGELOG file. It is recommended to add one ([example CHANGELOG file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CHANGELOG.md)).
+4. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/eslint.md)).
+
 ### [MMM-MTA-NextBus by tie624](https://github.com/tie624/MMM-MTA-NextBus)
 
 1. `package.json` issue: No repository field.
@@ -7399,6 +7372,14 @@ Last update: 2025-05-13T21:33:25+02:00
 12. Deprecated: Found `"grunt"` in file `package.json`: Grunt is practically unmaintained. Move on to something better.
 13. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
 14. Recommendation: Replace eslintrc by new flat config.
+
+### [MMM-MTA-SubwayAlerts by avianto](https://github.com/avianto/MMM-MTA-SubwayAlerts)
+
+1. Recommendation: Found `https://cdnjs.cloudflare.com` in file `MMM-MTA-SubwayAlerts.js`: It looks like a package is loaded via CDN. It would be better if the package were installed locally via npm.
+2. Recommendation: Found `'node-fetch'` in file `node_helper.js`: Replace it with built-in fetch ([documentation](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch); [example module with fetch implemented](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/node_helper.js)).
+3. Recommendation: Found `"node-fetch"` in file `package.json`: Replace it with built-in fetch ([documentation](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch); [example module with fetch implemented](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/node_helper.js)).
+4. Recommendation: There is no CHANGELOG file. It is recommended to add one ([example CHANGELOG file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CHANGELOG.md)).
+5. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/eslint.md)).
 
 ### [MMM-MTG by crisvdn](https://github.com/crisvdn/MMM-MTG)
 
@@ -7583,10 +7564,6 @@ Last update: 2025-05-13T21:33:25+02:00
 3. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
 4. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/eslint.md)).
 
-### [MMM-MyScoreboard by dathbe](https://github.com/dathbe/MMM-MyScoreboard)
-
-1. Recommendation: The ESLint configuration file `eslint.config.mjs` does not contain `defineConfig`. It is recommended to use it.
-
 ### [MMM-MySenseHat by framboise-pi](https://github.com/framboise-pi/MMM-MySenseHat)
 
 1. Issue: The license in the package.json (MIT) doesn't match the license file (AGPL-3.0).
@@ -7627,9 +7604,9 @@ Last update: 2025-05-13T21:33:25+02:00
 
 ### [MMM-MyStandings by dathbe](https://github.com/dathbe/MMM-MyStandings)
 
-1. Recommendation: The ESLint configuration file `eslint.config.mjs` does not contain `defineConfig`. It is recommended to use it.
-2. Information: There are updates for 1 dependencie(s):
-   - globals  ^16.0.0  →  ^16.1.0
+1. Information: There are updates for 2 dependencie(s):
+   - @eslint/js  ^9.26.0  →  ^9.27.0
+   - eslint      ^9.26.0  →  ^9.27.0
 
 
 ### [MMM-MyStudyLife by ethanpartida](https://github.com/ethanpartida/MMM-MyStudyLife)
@@ -7982,6 +7959,14 @@ Last update: 2025-05-13T21:33:25+02:00
    - qrcode  1.5.1  →  1.5.4
 
 
+### [MMM-NewsAPI by mumblebaj](https://github.com/mumblebaj/MMM-NewsAPI)
+
+1. Recommendation: The README seems to have a config example without a trailing comma. Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Config-Instructions)).
+2. Deprecated: Found `"lockfileVersion": 2` in file `package-lock.json`: Run `npm update` to update to lockfileVersion 3.
+3. Recommendation: There is no CHANGELOG file. It is recommended to add one ([example CHANGELOG file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CHANGELOG.md)).
+4. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
+5. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/eslint.md)).
+
 ### [MMM-NewsAPI by totoluto](https://github.com/totoluto/MMM-NewsAPI)
 
 1. Typo: Found `Magic Mirror` in file `README.md`: Replace it with `MagicMirror²`.
@@ -7991,14 +7976,6 @@ Last update: 2025-05-13T21:33:25+02:00
 5. Recommendation: There is no CHANGELOG file. It is recommended to add one ([example CHANGELOG file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CHANGELOG.md)).
 6. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
 7. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/eslint.md)).
-
-### [MMM-NewsAPI by mumblebaj](https://github.com/mumblebaj/MMM-NewsAPI)
-
-1. Recommendation: The README seems to have a config example without a trailing comma. Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Config-Instructions)).
-2. Deprecated: Found `"lockfileVersion": 2` in file `package-lock.json`: Run `npm update` to update to lockfileVersion 3.
-3. Recommendation: There is no CHANGELOG file. It is recommended to add one ([example CHANGELOG file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CHANGELOG.md)).
-4. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
-5. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/eslint.md)).
 
 ### [MMM-NewsFeedTicker by justjim1220](https://github.com/justjim1220/MMM-NewsFeedTicker)
 
@@ -8128,9 +8105,9 @@ Last update: 2025-05-13T21:33:25+02:00
 2. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
 3. Recommendation: The ESLint configuration file `eslint.config.mjs` does not contain `defineConfig`. It is recommended to use it.
 4. Information: There are updates for 9 dependencie(s):
-   - @eslint/js                  ^9.12.0  →   ^9.26.0
+   - @eslint/js                  ^9.12.0  →   ^9.27.0
    - @stylistic/eslint-plugin     ^2.9.0  →    ^4.2.0
-   - eslint                      ^9.12.0  →   ^9.26.0
+   - eslint                      ^9.12.0  →   ^9.27.0
    - globals                    ^15.10.0  →   ^16.1.0
    - jsdoc                        ^4.0.3  →    ^4.0.4
    - prettier                     ^3.3.3  →    ^3.5.3
@@ -8579,14 +8556,9 @@ Last update: 2025-05-13T21:33:25+02:00
 
 ### [MMM-OneCallWeather by KristjanESPERANTO](https://github.com/KristjanESPERANTO/MMM-OneCallWeather)
 
-1. Recommendation: The ESLint configuration file `eslint.config.mjs` does not contain `defineConfig`. It is recommended to use it.
-2. Information: There are updates for 6 dependencie(s):
-   - @eslint/js               ^9.25.0  →   ^9.26.0
-   - cspell                   ^8.19.2  →    ^9.0.1
-   - eslint                   ^9.25.0  →   ^9.26.0
-   - eslint-plugin-import-x   ^4.10.6  →   ^4.11.1
-   - globals                  ^16.0.0  →   ^16.1.0
-   - stylelint               ^16.18.0  →  ^16.19.1
+1. Information: There are updates for 2 dependencie(s):
+   - cspell                   ^9.0.1  →   ^9.0.2
+   - eslint-plugin-import-x  ^4.11.1  →  ^4.12.2
 
 
 ### [MMM-OneDrive by hermanho](https://github.com/hermanho/MMM-OneDrive)
@@ -8893,13 +8865,8 @@ Last update: 2025-05-13T21:33:25+02:00
 
 ### [MMM-page-indicator by edward-shen](https://github.com/edward-shen/MMM-page-indicator)
 
-1. Recommendation: The README seems not to have an update section (like `## Update`). Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Update-Instructions)).
-2. Recommendation: The ESLint configuration file `eslint.config.mjs` does not contain `defineConfig`. It is recommended to use it.
-3. Information: There are updates for 4 dependencie(s):
-   - @eslint/js              ^9.24.0  →  ^9.26.0
-   - eslint                  ^9.24.0  →  ^9.26.0
-   - eslint-plugin-import-x  ^4.10.2  →  ^4.11.1
-   - globals                 ^16.0.0  →  ^16.1.0
+1. Information: There are updates for 1 dependencie(s):
+   - eslint-plugin-import-x  ^4.11.1  →  ^4.12.2
 
 
 ### [MMM-Page-Pusher by zerosamski](https://github.com/zerosamski/MMM-Page-Pusher)
@@ -8941,19 +8908,10 @@ Last update: 2025-05-13T21:33:25+02:00
 1. Recommendation: There is no CHANGELOG file. It is recommended to add one ([example CHANGELOG file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CHANGELOG.md)).
 2. Recommendation: The ESLint configuration file `eslint.config.mjs` does not contain `defineConfig`. It is recommended to use it.
 3. Information: There are updates for 4 dependencie(s):
-   - @eslint/js                 ^9.16.0  →  ^9.26.0
+   - @eslint/js                 ^9.16.0  →  ^9.27.0
    - @stylistic/eslint-plugin   ^2.11.0  →   ^4.2.0
-   - eslint                     ^9.16.0  →  ^9.26.0
+   - eslint                     ^9.16.0  →  ^9.27.0
    - globals                   ^15.13.0  →  ^16.1.0
-
-
-### [MMM-pages by edward-shen](https://github.com/edward-shen/MMM-pages)
-
-1. Recommendation: The ESLint configuration file `eslint.config.mjs` does not contain `defineConfig`. It is recommended to use it.
-2. Information: There are updates for 3 dependencie(s):
-   - @eslint/js  ^9.23.0  →  ^9.26.0
-   - eslint      ^9.23.0  →  ^9.26.0
-   - globals     ^16.0.0  →  ^16.1.0
 
 
 ### [MMM-Pages-Screencast by jboucly](https://github.com/jboucly/MMM-Pages-Screencast)
@@ -9171,13 +9129,6 @@ Last update: 2025-05-13T21:33:25+02:00
 7. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
 8. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/eslint.md)).
 
-### [MMM-PGA by dathbe](https://github.com/dathbe/MMM-PGA)
-
-1. Recommendation: The ESLint configuration file `eslint.config.mjs` does not contain `defineConfig`. It is recommended to use it.
-2. Information: There are updates for 1 dependencie(s):
-   - globals  ^16.0.0  →  ^16.1.0
-
-
 ### [MMM-PGHBus by yuhanx0728](https://github.com/yuhanx0728/MMM-PGHBus)
 
 1. There is no `package.json`. We need this file to gather information about the module for the module list page.
@@ -9267,8 +9218,9 @@ Last update: 2025-05-13T21:33:25+02:00
 
 1. Recommendation: There is no CHANGELOG file. It is recommended to add one ([example CHANGELOG file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CHANGELOG.md)).
 2. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/eslint.md)).
-3. Information: There are updates for 1 dependencie(s):
-   - async  ^3.2.5  →  ^3.2.6
+3. Information: There are updates for 2 dependencie(s):
+   - async                ^3.2.5  →   ^3.2.6
+   - systeminformation  ^5.25.11  →  ^5.26.2
 
 
 ### [MMM-ping by fewieden](https://github.com/fewieden/MMM-ping)
@@ -9790,14 +9742,10 @@ Last update: 2025-05-13T21:33:25+02:00
 
 ### [MMM-PublicTransportBerlin by deg0nz](https://github.com/deg0nz/MMM-PublicTransportBerlin)
 
-1. Recommendation: The ESLint configuration file `eslint.config.mjs` does not contain `defineConfig`. It is recommended to use it.
-2. Information: There are updates for 6 dependencie(s):
-   - @eslint/js              ^9.25.1  →  ^9.26.0
-   - cspell                  ^8.19.3  →   ^9.0.1
-   - eslint                  ^9.25.1  →  ^9.26.0
-   - eslint-plugin-import-x  ^4.11.0  →  ^4.11.1
-   - globals                 ^16.0.0  →  ^16.1.0
-   - lint-staged             ^15.5.1  →  ^16.0.0
+1. Information: There are updates for 3 dependencie(s):
+   - cspell                   ^9.0.1  →   ^9.0.2
+   - eslint-plugin-import-x  ^4.11.1  →  ^4.12.2
+   - markdownlint-cli        ^0.44.0  →  ^0.45.0
 
 
 ### [MMM-PublicTransportHafas by KristjanESPERANTO](https://github.com/KristjanESPERANTO/MMM-PublicTransportHafas)
@@ -9805,9 +9753,12 @@ Last update: 2025-05-13T21:33:25+02:00
 1. Outdated: Found `/_/husky.sh` in file `husky.sh`: Since husky v9 you may not need this anymore.
 2. Found directory `node_modules`. This shouldn't be uploaded. Add `node_modules/`to `.gitignore`.
 3. Recommendation: Replace eslintrc by new flat config.
-4. Information: There are updates for 4 dependencie(s):
-   - cspell                   ^9.0.0  →   ^9.0.1
-   - eslint-plugin-import-x  ^4.11.0  →  ^4.11.1
+4. Information: There are updates for 7 dependencie(s):
+   - @eslint/css              ^0.7.0  →   ^0.8.1
+   - @eslint/js              ^9.26.0  →  ^9.27.0
+   - cspell                   ^9.0.0  →   ^9.0.2
+   - eslint                  ^9.26.0  →  ^9.27.0
+   - eslint-plugin-import-x  ^4.11.0  →  ^4.12.2
    - globals                 ^16.0.0  →  ^16.1.0
    - lint-staged             ^15.5.1  →  ^16.0.0
 
@@ -9892,11 +9843,12 @@ Last update: 2025-05-13T21:33:25+02:00
 1. There is no `package.json`. We need this file to gather information about the module for the module list page.
 2. Recommendation: The README seems not to have an update section (like `## Update`). Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Update-Instructions)).
 3. Recommendation: The README seems to have a modules array (Found `modules: [`). This is usually not necessary. Please remove it if it is not needed ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Config-Instructions)).
-4. Recommendation: Found `"node-fetch"` in file `node_helper.js`: Replace it with built-in fetch ([documentation](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch); [example module with fetch implemented](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/node_helper.js)).
-5. Warning: No LICENSE file ([example LICENSE file](https://github.com/KristjanESPERANTO/MMM-WebSpeechTTS/blob/main/LICENSE.md)).
-6. Recommendation: There is no CHANGELOG file. It is recommended to add one ([example CHANGELOG file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CHANGELOG.md)).
-7. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
-8. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/eslint.md)).
+4. Deprecated: Found `fs.F_OK` in file `node_helper.js`: Replace it with `fs.constants.F_OK`.
+5. Recommendation: Found `"node-fetch"` in file `node_helper.js`: Replace it with built-in fetch ([documentation](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch); [example module with fetch implemented](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/node_helper.js)).
+6. Warning: No LICENSE file ([example LICENSE file](https://github.com/KristjanESPERANTO/MMM-WebSpeechTTS/blob/main/LICENSE.md)).
+7. Recommendation: There is no CHANGELOG file. It is recommended to add one ([example CHANGELOG file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CHANGELOG.md)).
+8. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
+9. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/eslint.md)).
 
 ### [MMM-Quiz by Dennis-Rosenbaum](https://github.com/Dennis-Rosenbaum/MMM-Quiz)
 
@@ -9904,9 +9856,9 @@ Last update: 2025-05-13T21:33:25+02:00
 2. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
 3. Recommendation: The ESLint configuration file `eslint.config.mjs` does not contain `defineConfig`. It is recommended to use it.
 4. Information: There are updates for 4 dependencie(s):
-   - @eslint/js                ^9.10.0  →  ^9.26.0
+   - @eslint/js                ^9.10.0  →  ^9.27.0
    - @stylistic/eslint-plugin   ^2.7.2  →   ^4.2.0
-   - eslint                    ^9.10.0  →  ^9.26.0
+   - eslint                    ^9.10.0  →  ^9.27.0
    - globals                   ^15.9.0  →  ^16.1.0
 
 
@@ -10274,16 +10226,9 @@ Last update: 2025-05-13T21:33:25+02:00
 
 ### [MMM-Remote-Control by Jopyth](https://github.com/Jopyth/MMM-Remote-Control)
 
-1. Recommendation: The ESLint configuration file `eslint.config.mjs` does not contain `defineConfig`. It is recommended to use it.
-2. Information: There are updates for 5 dependencie(s):
-   - @eslint/js              ^9.25.1  →  ^9.26.0
-   - cspell                  ^8.19.3  →   ^9.0.1
-   - eslint                  ^9.25.1  →  ^9.26.0
-   - eslint-plugin-import-x  ^4.11.0  →  ^4.11.1
-   - globals                 ^16.0.0  →  ^16.1.0
-
-3. ESLint issues:
-   - package.json: Line 34, Column 5: "body-parser" should be replaced with an alternative package. Read more here: https://github.com/es-tooling/module-replacements/blob/main/docs/modules/body-parser.md (rule: depend/ban-dependencies)
+1. Deprecated: Found `fs.F_OK` in file `node_helper.js`: Replace it with `fs.constants.F_OK`.
+2. Information: There are updates for 1 dependencie(s):
+   - swagger-ui  ^5.21.0  →  ^5.22.0
 
 
 ### [MMM-RemoteCompliments by mitchelltmarino](https://github.com/mitchelltmarino/MMM-RemoteCompliments)
@@ -11266,11 +11211,10 @@ Last update: 2025-05-13T21:33:25+02:00
 
 ### [MMM-SmartWebDisplay by ItsMeBrille](https://github.com/ItsMeBrille/MMM-SmartWebDisplay)
 
-1. Issues are not enabled in the GitHub repository. So users cannot report bugs. Please enable issues in your repo.
-2. Typo: Found `[MagicMirror]` in file `README.md`: Replace it with `[MagicMirror²]`.
-3. Recommendation: There is no CHANGELOG file. It is recommended to add one ([example CHANGELOG file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CHANGELOG.md)).
-4. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
-5. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/eslint.md)).
+1. Typo: Found `[MagicMirror]` in file `README.md`: Replace it with `[MagicMirror²]`.
+2. Recommendation: There is no CHANGELOG file. It is recommended to add one ([example CHANGELOG file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CHANGELOG.md)).
+3. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
+4. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/eslint.md)).
 
 ### [MMM-Snake by superuserx](https://github.com/superuserx/MMM-Snake)
 
@@ -12361,6 +12305,17 @@ Last update: 2025-05-13T21:33:25+02:00
 12. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
 13. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/eslint.md)).
 
+### [MMM-TodoList by tomoki13](https://github.com/tomoki13/MMM-TodoList)
+
+1. There is no `package.json`. We need this file to gather information about the module for the module list page.
+2. No image found.
+3. Recommendation: The README seems not to have an update section (like `## Update`). Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Update-Instructions)).
+4. Recommendation: The README seems not to have an install section (like `## Installation`). Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Installation-Instructions)).
+5. Recommendation: The README seems to have a config example without a trailing comma. Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Config-Instructions)).
+6. Recommendation: There is no CHANGELOG file. It is recommended to add one ([example CHANGELOG file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CHANGELOG.md)).
+7. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
+8. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/eslint.md)).
+
 ### [MMM-TomTomCalculateRouteTraffic by teemoo7](https://github.com/teemoo7/MMM-TomTomCalculateRouteTraffic)
 
 1. There is no `package.json`. We need this file to gather information about the module for the module list page.
@@ -12857,6 +12812,18 @@ Last update: 2025-05-13T21:33:25+02:00
 3. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
 4. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/eslint.md)).
 
+### [unRAID-MMM by artificialai223](https://github.com/artificialai223/unRAID-MMM)
+
+1. Recommendation: Module name doesn't follow the recommended pattern (it doesn't start with `MMM-`). Consider renaming your module.
+2. Recommendation: The README seems not to have an update section (like `## Update`). Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Update-Instructions)).
+3. Recommendation: The README seems not to have an install section (like `## Installation`). Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Installation-Instructions)).
+4. Recommendation: The README seems to have a config example without a trailing comma. Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Config-Instructions)).
+5. Recommendation: Found `require("https")` in file `node_helper.js`: Replace "https" by "node:https".
+6. Recommendation: Found `"node-fetch"` in file `node_helper.js`: Replace it with built-in fetch ([documentation](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch); [example module with fetch implemented](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/node_helper.js)).
+7. Recommendation: There is no CHANGELOG file. It is recommended to add one ([example CHANGELOG file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CHANGELOG.md)).
+8. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
+9. Recommendation: The ESLint configuration file `eslint.config.mjs` does not contain `defineConfig`. It is recommended to use it.
+
 ### [MMM-Unsplash by parnic](https://github.com/parnic/MMM-Unsplash)
 
 1. There are no keywords in 'package.json'. We would use them as tags on the module list page.
@@ -13339,11 +13306,12 @@ Last update: 2025-05-13T21:33:25+02:00
 6. Recommendation: The README seems not to have an update section (like `## Update`). Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Update-Instructions)).
 7. Recommendation: Found `XMLHttpRequest` in file `howler.core.min.js`: Replace it with built-in fetch ([documentation](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch); [example module with fetch implemented](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/node_helper.js)).
 8. Recommendation: Found `XMLHttpRequest` in file `howler.min.js`: Replace it with built-in fetch ([documentation](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch); [example module with fetch implemented](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/node_helper.js)).
-9. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
-10. Typo: Found `Magic Mirror` in file `package.json`: Replace it with `MagicMirror²`.
-11. Recommendation: There is no CHANGELOG file. It is recommended to add one ([example CHANGELOG file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CHANGELOG.md)).
-12. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
-13. Recommendation: Replace eslintrc by new flat config.
+9. Deprecated: Found `fs.F_OK` in file `node_helper.js`: Replace it with `fs.constants.F_OK`.
+10. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
+11. Typo: Found `Magic Mirror` in file `package.json`: Replace it with `MagicMirror²`.
+12. Recommendation: There is no CHANGELOG file. It is recommended to add one ([example CHANGELOG file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CHANGELOG.md)).
+13. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
+14. Recommendation: Replace eslintrc by new flat config.
 
 ### [MMM-Weather-Now by nigel-daniels](https://github.com/nigel-daniels/MMM-Weather-Now)
 
@@ -13499,11 +13467,14 @@ Last update: 2025-05-13T21:33:25+02:00
 
 ### [MMM-WebSpeechTTS by KristjanESPERANTO](https://github.com/KristjanESPERANTO/MMM-WebSpeechTTS)
 
-1. Information: There are updates for 4 dependencie(s):
-   - cspell                  ^8.19.4  →   ^9.0.1
-   - eslint-plugin-import-x  ^4.11.0  →  ^4.11.1
+1. Information: There are updates for 7 dependencie(s):
+   - @eslint/js              ^9.26.0  →  ^9.27.0
+   - cspell                  ^8.19.4  →   ^9.0.2
+   - eslint                  ^9.26.0  →  ^9.27.0
+   - eslint-plugin-import-x  ^4.11.0  →  ^4.12.2
    - globals                 ^16.0.0  →  ^16.1.0
    - lint-staged             ^15.5.1  →  ^16.0.0
+   - markdownlint-cli        ^0.44.0  →  ^0.45.0
 
 
 ### [MMM-Webuntis by HeikoGr](https://github.com/HeikoGr/MMM-Webuntis)
@@ -13671,10 +13642,10 @@ Last update: 2025-05-13T21:33:25+02:00
 2. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
 3. Recommendation: The ESLint configuration file `eslint.config.js` does not contain `defineConfig`. It is recommended to use it.
 4. Information: There are updates for 4 dependencie(s):
-   - @eslint/js         ^9.15.0  →  ^9.26.0
-   - eslint             ^9.15.0  →  ^9.26.0
+   - @eslint/js         ^9.15.0  →  ^9.27.0
+   - eslint             ^9.15.0  →  ^9.27.0
    - globals           ^15.12.0  →  ^16.1.0
-   - semantic-release   ^24.2.0  →  ^24.2.3
+   - semantic-release   ^24.2.0  →  ^24.2.5
 
 
 ### [MMM-WordGenius by drventure](https://github.com/drventure/MMM-WordGenius)
@@ -13781,13 +13752,14 @@ Last update: 2025-05-13T21:33:25+02:00
 4. Outdated: Found `MichMich/MagicMirror` in file `README.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
 5. Recommendation: The README seems not to have an update section (like `## Update`). Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Update-Instructions)).
 6. Recommendation: The README seems to have a modules array (Found `modules: [`). This is usually not necessary. Please remove it if it is not needed ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Config-Instructions)).
-7. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
-8. Deprecated: Found `"lockfileVersion": 1` in file `package-lock.json`: Run `npm update` to update to lockfileVersion 3.
-9. Typo: Found `Magic Mirror` in file `package.json`: Replace it with `MagicMirror²`.
-10. Warning: No LICENSE file ([example LICENSE file](https://github.com/KristjanESPERANTO/MMM-WebSpeechTTS/blob/main/LICENSE.md)).
-11. Recommendation: There is no CHANGELOG file. It is recommended to add one ([example CHANGELOG file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CHANGELOG.md)).
-12. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
-13. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/eslint.md)).
+7. Deprecated: Found `fs.F_OK` in file `node_helper.js`: Replace it with `fs.constants.F_OK`.
+8. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
+9. Deprecated: Found `"lockfileVersion": 1` in file `package-lock.json`: Run `npm update` to update to lockfileVersion 3.
+10. Typo: Found `Magic Mirror` in file `package.json`: Replace it with `MagicMirror²`.
+11. Warning: No LICENSE file ([example LICENSE file](https://github.com/KristjanESPERANTO/MMM-WebSpeechTTS/blob/main/LICENSE.md)).
+12. Recommendation: There is no CHANGELOG file. It is recommended to add one ([example CHANGELOG file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CHANGELOG.md)).
+13. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
+14. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/eslint.md)).
 
 ### [MMM-XKCD by jupadin](https://github.com/jupadin/MMM-XKCD)
 

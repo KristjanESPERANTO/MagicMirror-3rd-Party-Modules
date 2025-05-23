@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "2025-05-13T18:03:07.441Z",
+  "lastUpdate": "2025-05-23T23:04:29.944Z",
   "modules": [
     {
       "name": "MMM-01ZM",
@@ -4387,6 +4387,16 @@
     {
       "name": "MMM-HomeAssistant",
       "category": "Utility / IoT / 3rd Party / Integration",
+      "url": "https://github.com/ambarusa/MMM-HomeAssistant",
+      "id": "ambarusa/MMM-HomeAssistant",
+      "maintainer": "ambarusa",
+      "maintainerURL": "https://github.com/ambarusa",
+      "description": "Turn your MagicMirror² into a MQTT device with Home Assistant autodiscovery.",
+      "issues": []
+    },
+    {
+      "name": "MMM-HomeAssistant",
+      "category": "Utility / IoT / 3rd Party / Integration",
       "url": "https://github.com/zuo000/MMM-HomeAssistant",
       "id": "zuo000/MMM-HomeAssistant",
       "maintainer": "zuo000",
@@ -5482,6 +5492,16 @@
       "maintainer": "2hdlockness",
       "maintainerURL": "https://github.com/2hdlockness/",
       "description": "A module to retrieve and display Linky consumption data using CONSO API. Intended for French users.",
+      "issues": []
+    },
+    {
+      "name": "MMM-LINQConnectCalendar",
+      "category": "Utility / IoT / 3rd Party / Integration",
+      "url": "https://github.com/dathbe/MMM-LINQConnectCalendar",
+      "id": "dathbe/MMM-LINQConnectCalendar",
+      "maintainer": "dathbe",
+      "maintainerURL": "https://github.com/dathbe/",
+      "description": "A module to display school calendars provided by LINQConnect.",
       "issues": []
     },
     {
@@ -6729,6 +6749,16 @@
       "outdated": "Abandoned. No reactions to issues since years. Seems not to work anymore. Use MMM-Mopidy-MPD instead."
     },
     {
+      "name": "MMM-MPKLodz",
+      "category": "Transport / Travel",
+      "url": "https://github.com/Xioner19/MMM-MPKLodz",
+      "id": "Xioner19/MMM-MPKLodz",
+      "maintainer": "Xioner19",
+      "maintainerURL": "https://github.com/Xioner19",
+      "description": "Displays real-time bus and tram departures for Łódź public transport (MPK Łódź).",
+      "issues": []
+    },
+    {
       "name": "MMM-MPlayer",
       "category": "Utility / IoT / 3rd Party / Integration",
       "url": "https://github.com/evroom/MMM-MPlayer",
@@ -6839,6 +6869,16 @@
       "issues": []
     },
     {
+      "name": "MMM-MTA-BusAlerts",
+      "category": "Transport / Travel",
+      "url": "https://github.com/avianto/MMM-MTA-BusAlerts",
+      "id": "avianto/MMM-MTA-BusAlerts",
+      "maintainer": "avianto",
+      "maintainerURL": "https://github.com/avianto",
+      "description": "Displays real-time service alerts for the New York City MTA Bus system. It includes the ability to filter alerts by specific bus route numbers.",
+      "issues": []
+    },
+    {
       "name": "MMM-MTA-NextBus",
       "category": "Transport / Travel",
       "url": "https://github.com/tie624/MMM-MTA-NextBus",
@@ -6846,6 +6886,16 @@
       "maintainer": "tie624",
       "maintainerURL": "",
       "description": "Displays the arrival time of the next few buses for a particular bus stop. This is for the Metropolitan Transit Authority (MTA) in New York City.",
+      "issues": []
+    },
+    {
+      "name": "MMM-MTA-SubwayAlerts",
+      "category": "Transport / Travel",
+      "url": "https://github.com/avianto/MMM-MTA-SubwayAlerts",
+      "id": "avianto/MMM-MTA-SubwayAlerts",
+      "maintainer": "avianto",
+      "maintainerURL": "https://github.com/avianto",
+      "description": "Displays real-time service alerts for the New York City MTA Subway. It allows you to filter alerts by specific subway lines.",
       "issues": []
     },
     {
@@ -9157,7 +9207,7 @@
       "id": "Dennis-Rosenbaum/MMM-Quiz",
       "maintainer": "Dennis-Rosenbaum",
       "maintainerURL": "https://github.com/Dennis-Rosenbaum",
-      "description": "Add a multiple choice quiz. Random questions are loaded usng the <a target=\"_blank\" href=\"https://the-trivia-api.com\">Trivia API</a>.",
+      "description": "Add a multiple choice quiz. Random questions are loaded using the <a target=\"_blank\" href=\"https://the-trivia-api.com\">Trivia API</a>.",
       "issues": []
     },
     {
@@ -11318,6 +11368,16 @@
       "issues": []
     },
     {
+      "name": "MMM-TodoList",
+      "category": "Utility / IoT / 3rd Party / Integration",
+      "url": "https://github.com/tomoki13/MMM-TodoList",
+      "id": "tomoki13/MMM-TodoList",
+      "maintainer": "tomoki13",
+      "maintainerURL": "",
+      "description": "Create To do list tasks with touch screen interface.",
+      "issues": []
+    },
+    {
       "name": "MMM-TomTomCalculateRouteTraffic",
       "category": "Transport / Travel",
       "url": "https://github.com/teemoo7/MMM-TomTomCalculateRouteTraffic",
@@ -11715,6 +11775,16 @@
       "maintainer": "khassel",
       "maintainerURL": "https://gitlab.com/karsten13",
       "description": "A simple PIR motion sensor module where you can specify your own commands for controlling gpio and screen.",
+      "issues": []
+    },
+    {
+      "name": "unRAID-MMM",
+      "category": "Utility / IoT / 3rd Party / Integration",
+      "url": "https://github.com/artificialai223/unRAID-MMM",
+      "id": "artificialai223/unRAID-MMM",
+      "maintainer": "artificialai223",
+      "maintainerURL": "",
+      "description": "Displays live system statistics from your unRAID server using its GraphQL API.",
       "issues": []
     },
     {
