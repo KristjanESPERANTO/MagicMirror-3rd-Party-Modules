@@ -47,6 +47,22 @@ def check_modules():
             "name": "Replace it by `eslint-plugin-jsonc`.",
             "category": "Recommendation",
         },
+        "fs.F_OK": {
+            "name": "Replace it with `fs.constants.F_OK`.",
+            "category": "Deprecated",
+        },
+        "fs.R_OK": {
+            "name": "Replace it with `fs.constants.R_OK`.",
+            "category": "Deprecated",
+        },
+        "fs.W_OK": {
+            "name": "Replace it with `fs.constants.W_OK`.",
+            "category": "Deprecated",
+        },
+        "fs.X_OK": {
+            "name": "Replace it with `fs.constants.X_OK`.",
+            "category": "Deprecated",
+        },
         "Magic Mirror": {
             "name": "Replace it with `MagicMirror²`.",
             "category": "Typo",
