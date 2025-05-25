@@ -1,6 +1,24 @@
 [
   {
+    "url": "https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst"
+  },
+  {
+    "url": "https://github.com/MMM-CalendarExt2/MMM-CalendarExt2"
+  },
+  {
+    "url": "https://github.com/shbatm/MMM-Carousel"
+  },
+  {
     "url": "https://github.com/KristjanESPERANTO/MMM-Canteen"
+  },
+  {
+    "url": "https://github.com/PierreGode/MMM-Chores"
+  },
+  {
+    "url": "https://github.com/KristjanESPERANTO/MMM-EasyPix"
+  },
+  {
+    "url": "https://github.com/KristjanESPERANTO/MMM-Forum"
   },
   {
     "url": "https://github.com/KristjanESPERANTO/MMM-ISS-Live",
@@ -8,8 +26,35 @@
     "description": "Displays live video from the International Space Station."
   },
   {
+    "url": "https://github.com/shbatm/MMM-KeyBindings"
+  },
+  {
     "url": "https://github.com/MagicMirrorOrg/MagicMirror",
     "branch": "develop",
     "description": "Just testing the core project! Some checks are irrelevant to this."
+  },
+  {
+    "url": "https://github.com/KristjanESPERANTO/MMM-OneCallWeather"
+  },
+  {
+    "url": "https://github.com/edward-shen/MMM-page-indicator"
+  },
+  {
+    "url": "https://github.com/edward-shen/MMM-pages"
+  },
+  {
+    "url": "https://github.com/deg0nz/MMM-PublicTransportBerlin"
+  },
+  {
+    "url": "https://github.com/KristjanESPERANTO/MMM-PublicTransportHafas"
+  },
+  {
+    "url": "https://github.com/Jopyth/MMM-Remote-Control"
+  },
+  {
+    "url": "https://github.com/KristjanESPERANTO/MMM-SWH"
+  },
+  {
+    "url": "https://github.com/KristjanESPERANTO/MMM-WebSpeechTTS"
   }
 ]
