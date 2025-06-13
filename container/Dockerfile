@@ -10,7 +10,7 @@ RUN set -e; \
     git log -1; \
     export GITHUB_TOKEN="${GITHUB_TOKEN}"; \
     npm clean-install; \
-    npm run all;
+    node --run all;
 
 FROM nginxinc/nginx-unprivileged:alpine-slim
 LABEL maintainer="MagicMirrorOrg"
