@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "2025-05-23T23:04:29.944Z",
+  "lastUpdate": "2025-06-13T19:26:51.549Z",
   "modules": [
     {
       "name": "MMM-01ZM",
@@ -281,6 +281,16 @@
       "maintainer": "retroflex",
       "maintainerURL": "",
       "description": "Shows the current standings of Allsvenskan (the top Swedish football league).",
+      "issues": []
+    },
+    {
+      "name": "MMM-AlphaESS",
+      "category": "Utility / IoT / 3rd Party / Integration",
+      "url": "https://github.com/El-Chloro/MMM-AlphaESS",
+      "id": "El-Chloro/MMM-AlphaESS",
+      "maintainer": "El-Chloro",
+      "maintainerURL": "",
+      "description": "Displays key real-time and daily data from your AlphaESS energy storage system.",
       "issues": []
     },
     {
@@ -1305,9 +1315,9 @@
     {
       "name": "MMM-CalvinAndHobbes",
       "category": "Entertainment / Misc",
-      "url": "https://github.com/B3DTech/MMM-CalvinAndHobbes",
-      "id": "B3DTech/MMM-CalvinAndHobbes",
-      "maintainer": "B3DTech",
+      "url": "https://github.com/rahultadak/MMM-CalvinAndHobbes",
+      "id": "rahultadak/MMM-CalvinAndHobbes",
+      "maintainer": "rahultadak",
       "maintainerURL": "",
       "description": "Displays the daily Calvin and Hobbes comic.",
       "issues": []
@@ -1345,11 +1355,11 @@
     {
       "name": "MMM-Canvas",
       "category": "Education",
-      "url": "https://github.com/chase-cromwell/MMM-Canvas",
-      "id": "chase-cromwell/MMM-Canvas",
-      "maintainer": "chase-cromwell",
-      "maintainerURL": "https://github.com/chase-cromwell",
-      "description": "Display upcoming assignments from Canvas LMS platform.",
+      "url": "https://github.com/dbeltjr/MMM-Canvas",
+      "id": "dbeltjr/MMM-Canvas",
+      "maintainer": "dbeltjr",
+      "maintainerURL": "https://github.com/dbeltjr",
+      "description": "Display upcoming assignments from Canvas LMS platform. Fork from chase-cromwell/MMM-Canvas (no longer active).",
       "issues": []
     },
     {
@@ -3439,6 +3449,16 @@
       "issues": []
     },
     {
+      "name": "MMM-fortnite-stats",
+      "category": "Entertainment / Misc",
+      "url": "https://github.com/sebastian-ch/MMM-fortnite-stats",
+      "id": "sebastian-ch/MMM-fortnite-stats",
+      "maintainer": "sebastian-ch",
+      "maintainerURL": "https://github.com/sebastian-ch",
+      "description": "Display Fortnite Stats.",
+      "issues": []
+    },
+    {
       "name": "MMM-FortniteStats",
       "category": "Utility / IoT / 3rd Party / Integration",
       "url": "https://github.com/yourdawi/MMM-FortniteStats",
@@ -4845,6 +4865,16 @@
       "maintainer": "Adman",
       "maintainerURL": "https://github.com/Adman",
       "description": "Display real-time estimations for public transport stops in Bratislava, Slovakia.",
+      "issues": []
+    },
+    {
+      "name": "MMM-ImmichSlideShow",
+      "category": "Entertainment / Misc",
+      "url": "https://github.com/pelaxa/MMM-ImmichSlideShow",
+      "id": "pelaxa/MMM-ImmichSlideShow",
+      "maintainer": "pelaxa",
+      "maintainerURL": "",
+      "description": "Display images fullscreen, one at a time on a fixed interval, from <a target=\"_blank\" href=\"https://immich.app/\">Immich</a>.",
       "issues": []
     },
     {
@@ -8548,6 +8578,16 @@
       "maintainer": "PierreGode",
       "maintainerURL": "https://github.com/PierreGode",
       "description": "Automatically controls the screen's power based on the presence of specified phones or devices within the network.",
+      "issues": []
+    },
+    {
+      "name": "MMM-Photoprism",
+      "category": "Entertainment / Misc",
+      "url": "https://github.com/Brtrnd/MMM-Photoprism",
+      "id": "Brtrnd/MMM-Photoprism",
+      "maintainer": "Brtrnd",
+      "maintainerURL": "",
+      "description": "Show pictures from Photoprism (local photo gallery).",
       "issues": []
     },
     {
