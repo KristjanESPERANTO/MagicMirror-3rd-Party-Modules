@@ -1,7 +1,7 @@
 import css from "@eslint/css";
 import {defineConfig} from "eslint/config";
 import globals from "globals";
-import {flatConfigs as importX} from "eslint-plugin-import-x";
+import {importX} from "eslint-plugin-import-x";
 import js from "@eslint/js";
 import json from "@eslint/json";
 import markdown from "@eslint/markdown";
@@ -19,7 +19,18 @@ export default defineConfig([
       "docs/result.md"
     ]
   },
-  {files: ["**/*.css"], languageOptions: {tolerant: true}, plugins: {css}, language: "css/css", extends: ["css/recommended"], rules: {"css/no-important": "off", "css/use-baseline": ["error", {available: "newly"}]}},
+  {
+    files: ["**/*.css"],
+    languageOptions: {tolerant: true},
+    plugins: {css},
+    language: "css/css",
+    extends: ["css/recommended"],
+    rules: {
+      "css/no-important": "off",
+      "css/no-invalid-properties": "off",
+      "css/use-baseline": ["error", {available: "newly"}]
+    }
+  },
   {
     files: ["**/*.js"],
     languageOptions: {
@@ -29,7 +40,7 @@ export default defineConfig([
       }
     },
     plugins: {js, stylistic},
-    extends: [importX.recommended, "js/all", "stylistic/all"],
+    extends: [importX.flatConfigs.recommended, "js/all", "stylistic/all"],
     rules: {
       "@stylistic/array-element-newline": ["error", "consistent"],
       "@stylistic/dot-location": ["error", "property"],

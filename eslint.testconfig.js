@@ -21,8 +21,7 @@ export default defineConfig([
         MM: "readonly",
         Module: "readonly",
         moment: "readonly"
-      },
-      sourceType: "commonjs"
+      }
     },
     linterOptions: {
       reportUnusedDisableDirectives: "off"
