@@ -497,16 +497,11 @@ def check_modules():
                 module["issues"] = False
 
             # Lift modules with many stars in the default sort order.
-            if module.get('stars', 0) > 50:
-                module["defaultSortWeight"] = module["defaultSortWeight"] - \
-                    (module['stars'] // 50)
-            elif module.get('stars', 0) > 10:
-                module["defaultSortWeight"] = module["defaultSortWeight"] - 1
+            module["defaultSortWeight"] = module["defaultSortWeight"] - (module['stars'] // 20)
 
             # Modules with few stars shouldn't be too far up in the default sort order. So we give them a minimum value of one.
-            elif module.get('stars', 0) < 3:
-                module["defaultSortWeight"] = max(
-                    module["defaultSortWeight"], 1)
+            if module.get('stars', 0) < 3:
+                module["defaultSortWeight"] = max(module["defaultSortWeight"], 1)
 
             # Just to reduce imbalance in the default sort order, modules from this developer get a minimum value of one.
             if module['maintainer'] == "KristjanESPERANTO" and module["name"] != "MMM-EasyPix":
