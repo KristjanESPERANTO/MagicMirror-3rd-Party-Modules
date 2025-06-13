@@ -39,14 +39,6 @@ def check_modules():
             "name": "This is deprecated. Please update. [See here for more information](https://nodejs.org/api/buffer.html).",
             "category": "Deprecated",
         },
-        "stylelint-config-prettier": {
-            "name": "Update `stylelint` and remove `stylelint-config-prettier`.",
-            "category": "Deprecated",
-        },
-        '"eslint-plugin-json"': {
-            "name": "Replace it by `eslint-plugin-jsonc`.",
-            "category": "Recommendation",
-        },
         "fs.F_OK": {
             "name": "Replace it with `fs.constants.F_OK`.",
             "category": "Deprecated",
@@ -99,10 +91,6 @@ def check_modules():
             "name": "Replace it with built-in fetch ([documentation](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch); [example module with fetch implemented](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/node_helper.js)).",
             "category": "Deprecated",
         },
-        "require('native-request')": {
-            "name": "Replace it with built-in fetch ([documentation](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch); [example module with fetch implemented](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/node_helper.js)).",
-            "category": "Deprecated",
-        },
         'require("http")': {
             "name": 'Replace "http" by "node:http".',
             "category": "Recommendation",
@@ -139,14 +127,6 @@ def check_modules():
             "name": "Replace it with built-in fetch ([documentation](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch); [example module with fetch implemented](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/node_helper.js)).",
             "category": "Recommendation",
         },
-        '"needle"': {
-            "name": "Replace it with built-in fetch ([documentation](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch); [example module with fetch implemented](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/node_helper.js)).",
-            "category": "Recommendation",
-        },
-        "'needle'": {
-            "name": "Replace it with built-in fetch ([documentation](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch); [example module with fetch implemented](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/node_helper.js)).",
-            "category": "Recommendation",
-        },
         "omxplayer": {
             "name": "Try to replace it with `vlc`.",
             "category": "Deprecated",
@@ -168,10 +148,6 @@ def check_modules():
             "name": "Replace it with v4.",
             "category": "Recommendation",
         },
-        "node-version: 14": {
-            "name": "Update to current version.",
-            "category": "Deprecated",
-        },
         "node-version: [14": {
             "name": "Update to current version.",
             "category": "Deprecated",
@@ -184,8 +160,16 @@ def check_modules():
             "name": "Update to current version.",
             "category": "Deprecated",
         },
-        "github/super-linter@": {
-            "name": "Replace it with `github/super-linter/slim@`.",
+        "node-version: 18": {
+            "name": "Update to current version.",
+            "category": "Deprecated",
+        },
+        "node-version: [18": {
+            "name": "Update to current version.",
+            "category": "Deprecated",
+        },
+        "npm run": {
+            "name": "Replace it with `node --run`. This is a more modern way to run scripts, without the need for npm.",
             "category": "Recommendation",
         },
         "jshint": {
@@ -203,14 +187,6 @@ def check_modules():
         "/_/husky.sh": {
             "name": "Since husky v9 you may not need this anymore.",
             "category": "Outdated",
-        },
-        "husky install": {
-            "name": "Since husky v9 you may not need this anymore.",
-            "category": "Outdated",
-        },
-        "npm i electron-rebuild": {
-            "name": "Replace it with `@electron/rebuild`",
-            "category": "Deprecated",
         },
         "npm install electron-rebuild": {
             "name": "Replace it with `@electron/rebuild`",
@@ -235,16 +211,36 @@ def check_modules():
             "name": "Replace it with `@electron/rebuild`",
             "category": "Deprecated"
         },
-        '"grunt"': {
-            "name": "Grunt is practically unmaintained. Move on to something better.",
-            "category": "Deprecated",
-        },
         'eslint-config-airbnb': {
             "name": "Replace it with modern ESLint configuration.",
             "category": "Deprecated",
         },
+        '"eslint-plugin-json"': {
+            "name": "Replace it by `@eslint/json`.",
+            "category": "Recommendation",
+        },
+        'eslint-plugin-jsonc': {
+            "name": "Replace it by `@eslint/json`.",
+            "category": "Recommendation",
+        },
+        '"grunt"': {
+            "name": "Grunt is practically unmaintained. Move on to something better.",
+            "category": "Deprecated",
+        },
+        "husky install": {
+            "name": "Since husky v9 you may not need this anymore.",
+            "category": "Outdated",
+        },
+        '"needle"': {
+            "name": "Replace it with built-in fetch ([documentation](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch); [example module with fetch implemented](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/node_helper.js)).",
+            "category": "Recommendation",
+        },
         'rollup-plugin-banner': {
             "name": "Replace it with built-in banner.",
+            "category": "Deprecated",
+        },
+        "stylelint-config-prettier": {
+            "name": "Update `stylelint` and remove `stylelint-config-prettier`.",
             "category": "Deprecated",
         },
     }
