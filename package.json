@@ -61,17 +61,17 @@
     "@eslint/css": "^0.9.0",
     "@eslint/js": "^9.29.0",
     "@eslint/json": "^0.12.0",
-    "@eslint/markdown": "^6.5.0",
-    "@stylistic/eslint-plugin": "^4.4.1",
-    "cspell": "^9.0.2",
+    "@eslint/markdown": "^6.6.0",
+    "@stylistic/eslint-plugin": "^5.0.0",
+    "cspell": "^9.1.1",
     "eslint": "^9.29.0",
     "eslint-plugin-depend": "^1.2.0",
     "eslint-plugin-import-x": "^4.15.2",
-    "eslint-plugin-package-json": "^0.38.0",
+    "eslint-plugin-package-json": "^0.40.5",
     "globals": "^16.2.0",
     "husky": "^9.1.7",
-    "lint-staged": "^16.1.0",
-    "prettier": "^3.5.3"
+    "lint-staged": "^16.1.2",
+    "prettier": "^3.6.0"
   },
   "ntl": {
     "descriptions": {
