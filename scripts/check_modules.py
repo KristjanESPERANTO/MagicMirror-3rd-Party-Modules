@@ -365,7 +365,7 @@ def check_modules():
                                         f"Recommendation: Found `{search_string}` in file `{file_path.name}`: Config would be cleaner using 'stylelint-prettier/recommended'. [See here](https://github.com/prettier/stylelint-prettier)."
                                     )
 
-                            if file_path.name.startswith("README") and file_path.parent == module_directory_path:
+                            if file_path.name == "README.md" and file_path.parent == module_directory_path:
                                 # Search for an update section in README
                                 found_update_section = search_in_file(
                                     file_path, "## Updat")
@@ -411,6 +411,22 @@ def check_modules():
                                     if not found_trailing_comma and module["name"] not in false_positive_modules:
                                         module["issues"].append(
                                             "Recommendation: The README seems to have a config example without a trailing comma. Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Config-Instructions))."
+                                        )
+                                
+                                # Search for clone instructions in README
+                                found_clone_instructions = search_in_file(
+                                    file_path, "git clone")
+                                if not found_clone_instructions:
+                                    module["issues"].append(
+                                        "Recommendation: The README seems not to have clone instructions."
+                                   )
+                                else:
+                                    # Check if repo URL is correct
+                                    found_repo_url = search_in_file(
+                                        file_path, f"git clone {module['url']}")
+                                    if not found_repo_url:
+                                        module["issues"].append(
+                                            "Recommendation: The README seems to have incorrect clone instructions. Please check the URL."
                                         )
 
                             if len(module["issues"]) < 1:
