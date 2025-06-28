@@ -17,11 +17,9 @@ jobs:
       image: moby/buildkit:latest
       options: --privileged
     steps:
-      # checkout code:
-      - uses: actions/checkout@v4
-        name: checkout code
-      # build image:
-      - name: build container
+      - name: Checkout code
+        uses: actions/checkout@v4
+      - name: Build container
         run: |
           # registry credentials
           export DOCKER_CONFIG="$(pwd)/container"
