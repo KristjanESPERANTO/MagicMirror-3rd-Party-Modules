@@ -204,6 +204,14 @@ def check_modules():
             "name": "It looks like a package is loaded via CDN. It would be better if the package were installed locally via npm.",
             "category": "Recommendation",
         },
+        "eslint .": {
+            "name": "The period at the end of the command is not necessary since v9. It is recommended to remove it.",
+            "category": "Recommendation",
+        },
+        "eslint --fix .": {
+            "name": "The period at the end of the command is not necessary since v9. It is recommended to remove it.",
+            "category": "Recommendation",
+        },
     }
 
     search_strings_package_json = {
