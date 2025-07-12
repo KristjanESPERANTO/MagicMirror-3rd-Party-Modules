@@ -83,7 +83,7 @@ _Note_: Running all scripts requires a lot of time (> 10 min) and space on your 
 
 This script reads the GitHub info of the modules from the respective GitHub repo and writes it to a json file.
 
-### updateGitHubApiData.js
+### updateRepositoryApiData.js
 
 This script reads data, such as the number of stars, via the GitHub API for a few modules.
 
