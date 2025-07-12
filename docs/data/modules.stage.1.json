@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "2025-06-13T19:26:51.549Z",
+  "lastUpdate": "2025-07-12T07:57:02.269Z",
   "modules": [
     {
       "name": "MMM-01ZM",
@@ -1526,16 +1526,6 @@
       "issues": []
     },
     {
-      "name": "MMM-ClashofClans-Player",
-      "category": "Entertainment / Misc",
-      "url": "https://github.com/AdmiralMurtho/MMM-ClashofClans-Player",
-      "id": "AdmiralMurtho/MMM-ClashofClans-Player",
-      "maintainer": "AdmiralMurtho",
-      "maintainerURL": "https://github.com/AdmiralMurtho",
-      "description": "This module show you the name, trophies and clan of an player.",
-      "issues": []
-    },
-    {
       "name": "MMM-ClashRoyaleChests",
       "category": "Entertainment / Misc",
       "url": "https://github.com/chicohernando/MMM-ClashRoyaleChests",
@@ -2645,7 +2635,7 @@
       "id": "dathbe/MMM-EarthquakeAlerts",
       "maintainer": "dathbe",
       "maintainerURL": "",
-      "description": "This module allows you to to display alerts for earthquakes near a chosen location.",
+      "description": "This module allows you to display alerts for earthquakes near a chosen location.",
       "issues": []
     },
     {
@@ -2908,6 +2898,16 @@
       "maintainer": "0m4r",
       "maintainerURL": "",
       "description": "Display live scores of Euro 2024 football games.",
+      "issues": []
+    },
+    {
+      "name": "MMM-evcc-SolarYield",
+      "category": "Weather",
+      "url": "https://github.com/Coernel82/MMM-evcc-SolarYield",
+      "id": "Coernel82/MMM-evcc-SolarYield",
+      "maintainer": "Coernel82",
+      "maintainerURL": "",
+      "description": "Display the solar yield prognosis using the <a target=\"_blank\" href=\"https://evcc.io/\">evcc</a>-Api",
       "issues": []
     },
     {
@@ -4259,7 +4259,7 @@
       "url": "https://github.com/neshkoli/MMM-HebrewCalendar",
       "id": "neshkoli/MMM-HebrewCalendar",
       "maintainer": "neshkoli",
-      "maintainerURL": "https://github.com/neshkoli",
+      "maintainerURL": "",
       "description": "Hebrew calendar in monthly view.",
       "issues": []
     },
@@ -5046,6 +5046,16 @@
       "maintainer": "2hdlockness",
       "maintainerURL": "https://github.com/2hdlockness",
       "description": "Nice gifs on the theme of \"IronMan\".",
+      "issues": []
+    },
+    {
+      "name": "MMM-IsraelNews",
+      "category": "News / Information",
+      "url": "https://github.com/neshkoli/MMM-IsraelNews",
+      "id": "neshkoli/MMM-IsraelNews",
+      "maintainer": "neshkoli",
+      "maintainerURL": "https://github.com/neshkoli",
+      "description": "Displays latest news headlines from RSS feeds and presenting it with a vertical scrolling.",
       "issues": []
     },
     {
@@ -8173,10 +8183,10 @@
     {
       "name": "MMM-OpeningHours",
       "category": "News / Information",
-      "url": "https://github.com/Menturan/MMM-OpeningHours",
-      "id": "Menturan/MMM-OpeningHours",
-      "maintainer": "Menturan",
-      "maintainerURL": "https://github.com/Menturan",
+      "url": "https://github.com/mumblebaj/MMM-OpeningHours",
+      "id": "mumblebaj/MMM-OpeningHours",
+      "maintainer": "mumblebaj",
+      "maintainerURL": "https://github.com/mumblebaj",
       "description": "Display places opening hours.",
       "issues": []
     },
@@ -8588,6 +8598,16 @@
       "maintainer": "Brtrnd",
       "maintainerURL": "",
       "description": "Show pictures from Photoprism (local photo gallery).",
+      "issues": []
+    },
+    {
+      "name": "MMM-Photovoltaik",
+      "category": "Development / Core MagicMirror²",
+      "url": "https://github.com/ASteinsdoerfer/MMM-Photovoltaik",
+      "id": "ASteinsdoerfer/MMM-Photovoltaik",
+      "maintainer": "ASteinsdoerfer",
+      "maintainerURL": "https://github.com/ASteinsdoerfer",
+      "description": "Basic template how to open a local textfile, extract data and display on screen.",
       "issues": []
     },
     {
@@ -9005,6 +9025,16 @@
       "maintainer": "bibaldo",
       "maintainerURL": "",
       "description": "Allows you to get instant info of your developing pregnancy.",
+      "issues": []
+    },
+    {
+      "name": "MMM-PregnancyTracker",
+      "category": "Health",
+      "url": "https://github.com/gowthamravichandran/MMM-PregnancyTracker",
+      "id": "gowthamravichandran/MMM-PregnancyTracker",
+      "maintainer": "gowthamravichandran",
+      "maintainerURL": "",
+      "description": "A MagicMirror² module that tracks pregnancy progress and displays fetus images based on the current week of pregnancy.",
       "issues": []
     },
     {
@@ -10458,6 +10488,16 @@
       "maintainer": "ItsMeBrille",
       "maintainerURL": "",
       "description": "An iFrame module to display web content (including YouTube, IP cameras, etc.). Several rotating URL, autorefresh and remote control of the URL to display, Next/Prev/Play/Stop. <a target=\"_blank\" href=\"https://forum.magicmirror.builders/topic/9750/mmm-smartwebdisplay-display-web-contents-including-youtube-on-your-mm\">MMM-SmartWebDisplay forum</a>.",
+      "issues": []
+    },
+    {
+      "name": "MMM-SmokeFree",
+      "category": "Health",
+      "url": "https://github.com/ChrisF1976/MMM-SmokeFree",
+      "id": "ChrisF1976/MMM-SmokeFree",
+      "maintainer": "ChrisF1976",
+      "maintainerURL": "https://github.com/ChrisF1976/",
+      "description": "Helps you visualize your progress after quitting smoking.",
       "issues": []
     },
     {
@@ -12412,6 +12452,16 @@
       "issues": []
     },
     {
+      "name": "MMM-WeeksCalendar",
+      "category": "Utility / IoT / 3rd Party / Integration",
+      "url": "https://github.com/arnaudsnomsed/MMM-WeeksCalendar",
+      "id": "arnaudsnomsed/MMM-WeeksCalendar",
+      "maintainer": "arnaudsnomsed",
+      "maintainerURL": "",
+      "description": "Calendar of current month with weeks numbers.",
+      "issues": []
+    },
+    {
       "name": "MMM-WestBerksBinDay",
       "category": "Utility / IoT / 3rd Party / Integration",
       "url": "https://github.com/hdurdle/MMM-WestBerksBinDay",
@@ -12519,6 +12569,16 @@
       "maintainer": "btoconnor",
       "maintainerURL": "https://github.com/btoconnor",
       "description": "Display WMATA Bus and Train arrival times. Rewritten version from MMM-DCMetroTimes and MMM-DCMetroTrainTimes.",
+      "issues": []
+    },
+    {
+      "name": "MMM-WootDeals",
+      "category": "Utility / IoT / 3rd Party / Integration",
+      "url": "https://github.com/AdamKogut/MMM-WootDeals",
+      "id": "AdamKogut/MMM-WootDeals",
+      "maintainer": "AdamKogut",
+      "maintainerURL": "",
+      "description": "Displays Woot! featured daily deals in a carousel like grid.",
       "issues": []
     },
     {
@@ -12723,6 +12783,16 @@
       "maintainer": "thesoftwarejedi",
       "maintainerURL": "",
       "description": "Displays categories of your choosing from your YNAB budget.",
+      "issues": []
+    },
+    {
+      "name": "MMM-YoLink",
+      "category": "Entertainment / Misc",
+      "url": "https://github.com/lindsaycole/MMM-YoLink",
+      "id": "lindsaycole/MMM-YoLink",
+      "maintainer": "lindsaycole",
+      "maintainerURL": "https://github.com/lindsaycole",
+      "description": "Integrate with YoLink Sensors.",
       "issues": []
     },
     {
