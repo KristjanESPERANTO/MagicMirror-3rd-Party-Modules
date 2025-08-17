@@ -137,11 +137,15 @@ def check_modules():
             "category": "Recommendation",
         },
         "uses: actions/checkout@v2": {
-            "name": "Replace it with v4.",
+            "name": "Replace it with v5.",
             "category": "Recommendation",
         },
         "uses: actions/checkout@v3": {
-            "name": "Replace it with v4.",
+            "name": "Replace it with v5.",
+            "category": "Recommendation",
+        },
+        "uses: actions/checkout@v4": {
+            "name": "Replace it with v5.",
             "category": "Recommendation",
         },
         "uses: actions/setup-node@v3": {
