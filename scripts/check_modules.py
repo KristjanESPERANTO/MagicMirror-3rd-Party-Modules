@@ -455,6 +455,9 @@ def check_modules():
             if "CODE_OF_CONDUCT" not in str(sorted(module_directory_path.rglob("*"))):
                 module["issues"].append("Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).")
 
+            if "dependabot.yml" not in str(sorted(module_directory_path.rglob("*"))) and "dependabot.yaml" not in str(sorted(module_directory_path.rglob("*"))):
+                module["issues"].append("Recommendation: There is no dependabot configuration file. It is recommended to add one ([example dependabot file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/.github/dependabot.yaml)).")
+
             if "eslintrc" in str(sorted(module_directory_path.rglob("*"))):
                 module["issues"].append(
                     "Recommendation: Replace eslintrc by new flat config.")
