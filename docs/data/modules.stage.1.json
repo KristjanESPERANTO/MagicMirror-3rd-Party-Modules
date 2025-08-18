@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "2025-07-12T07:57:02.269Z",
+  "lastUpdate": "2025-08-18T19:02:30.041Z",
   "modules": [
     {
       "name": "MMM-01ZM",
@@ -72,16 +72,6 @@
       "issues": []
     },
     {
-      "name": "MMM-AccuWeatherForecastDeluxe",
-      "category": "Weather",
-      "url": "https://github.com/BigBot89/MMM-AccuWeatherForecastDeluxe",
-      "id": "BigBot89/MMM-AccuWeatherForecastDeluxe",
-      "maintainer": "BigBot89",
-      "maintainerURL": "",
-      "description": "A fork of maxbethge's weather module. This version fixes the hourly forecast and includes a missing icon for \"hot\" weather. It also disables a few options that break the layout.",
-      "issues": []
-    },
-    {
       "name": "MMM-Actual",
       "category": "Finance",
       "url": "https://github.com/trumpetx/MMM-Actual",
@@ -89,6 +79,16 @@
       "maintainer": "trumpetx",
       "maintainerURL": "",
       "description": "Display financial balances from Actual Budget.",
+      "issues": []
+    },
+    {
+      "name": "MMM-AddressBook",
+      "category": "News / Information",
+      "url": "https://github.com/Unclearogre/MMM-AddressBook",
+      "id": "Unclearogre/MMM-AddressBook",
+      "maintainer": "Unclearogre",
+      "maintainerURL": "https://github.com/Unclearogre",
+      "description": "Display an Address Book type listing. It can be used as a simple address book or for any sort of data that can be fit into such a layout.",
       "issues": []
     },
     {
@@ -129,7 +129,7 @@
       "id": "kahllenny/MMM-affluences",
       "maintainer": "kahllenny",
       "maintainerURL": "",
-      "description": "Module shows the occupancy rate of a place using affluences.",
+      "description": "Shows the occupancy rate of a place using affluences.",
       "issues": []
     },
     {
@@ -148,8 +148,8 @@
       "url": "https://github.com/PavlenkoM/MMM-air-raid-monitor-ua",
       "id": "PavlenkoM/MMM-air-raid-monitor-ua",
       "maintainer": "PavlenkoM",
-      "maintainerURL": "https://github.com/PavlenkoM",
-      "description": "This module shows the current status of air raid sirens in Ukraine.",
+      "maintainerURL": "",
+      "description": "Shows the current status of air raid sirens in Ukraine.",
       "issues": []
     },
     {
@@ -777,16 +777,6 @@
       "issues": []
     },
     {
-      "name": "MMM-Birthday",
-      "category": "Entertainment / Misc",
-      "url": "https://github.com/cgillinger/MMM-Birthday",
-      "id": "cgillinger/MMM-Birthday",
-      "maintainer": "cgillinger",
-      "maintainerURL": "https://github.com/cgillinger",
-      "description": "Celebrate birthdays with animated fireworks and confetti effects.",
-      "issues": []
-    },
-    {
       "name": "MMM-birthdays",
       "category": "Utility / IoT / 3rd Party / Integration",
       "url": "https://github.com/amitchone/MMM-birthdays",
@@ -1078,7 +1068,7 @@
       "id": "StefanNienhuis/MMM-Buienradar",
       "maintainer": "StefanNienhuis",
       "maintainerURL": "",
-      "description": "This module will show a map with the weather forecast provided by Buienradar.",
+      "description": "Shows a map with the weather forecast provided by Buienradar.",
       "issues": []
     },
     {
@@ -1885,6 +1875,16 @@
       "issues": []
     },
     {
+      "name": "MMM-CrumbleCOTW",
+      "category": "Entertainment / Misc",
+      "url": "https://github.com/dcwestra/MMM-CrumbleCOTW",
+      "id": "dcwestra/MMM-CrumbleCOTW",
+      "maintainer": "dcwestra",
+      "maintainerURL": "https://github.com/dcwestra",
+      "description": "Displays the current Cookies of the Week for Crumble Cookies.",
+      "issues": []
+    },
+    {
       "name": "MMM-cryptocoin",
       "category": "Outdated Modules",
       "url": "https://github.com/kodejak/MMM-cryptocoin",
@@ -1946,6 +1946,16 @@
       "issues": []
     },
     {
+      "name": "MMM-CulversFOTD",
+      "category": "Entertainment / Misc",
+      "url": "https://github.com/dcwestra/MMM-CulversFOTD",
+      "id": "dcwestra/MMM-CulversFOTD",
+      "maintainer": "dcwestra",
+      "maintainerURL": "https://github.com/dcwestra",
+      "description": "Displays the current Flavor of the Day from your local Culver's restaurant.",
+      "issues": []
+    },
+    {
       "name": "MMM-CurrencyArg",
       "category": "Finance",
       "url": "https://github.com/consus2903/MMM-CurrencyArg",
@@ -1994,6 +2004,16 @@
       "maintainer": "jpcaldwell30",
       "maintainerURL": "",
       "description": "Post a message to your mirror either by MagicMirror API post or manual update (entering text onscreen).",
+      "issues": []
+    },
+    {
+      "name": "MMM-CustomTable",
+      "category": "News / Information",
+      "url": "https://github.com/Unclearogre/MMM-CustomTable",
+      "id": "Unclearogre/MMM-CustomTable",
+      "maintainer": "Unclearogre",
+      "maintainerURL": "https://github.com/Unclearogre",
+      "description": "Display static info in an HTML table.",
       "issues": []
     },
     {
@@ -2573,16 +2593,6 @@
       "maintainer": "gonzonia",
       "maintainerURL": "",
       "description": "Change positions of modules.",
-      "issues": []
-    },
-    {
-      "name": "MMM-DynamicSnow",
-      "category": "Weather",
-      "url": "https://github.com/cgillinger/MMM-DynamicSnow",
-      "id": "cgillinger/MMM-DynamicSnow",
-      "maintainer": "cgillinger",
-      "maintainerURL": "",
-      "description": "Performance-optimized falling snow effect with two modes - light mode for Raspberry Pi and rich mode for more powerful devices. Adds a gentle overlay of falling snowflakes across your entire mirror surface.",
       "issues": []
     },
     {
@@ -4380,7 +4390,7 @@
       "url": "https://github.com/TouaregWarrior/MMM-HolidayCountdown",
       "id": "TouaregWarrior/MMM-HolidayCountdown",
       "maintainer": "TouaregWarrior",
-      "maintainerURL": "",
+      "maintainerURL": "https://github.com/TouaregWarrior",
       "description": "Displays the number of days until a Holiday/Trip. Displays the next 4 trips from a configured list.",
       "issues": []
     },
@@ -4462,6 +4472,16 @@
       "maintainer": "mathewmeconry",
       "maintainerURL": "https://github.com/mathewmeconry",
       "description": "Displays information from HomeAssistant via Rest API. Litens for State changes with Websockets. Touch control for Entities.",
+      "issues": []
+    },
+    {
+      "name": "MMM-HomeAssistant-WebRTC",
+      "category": "Utility / IoT / 3rd Party / Integration",
+      "url": "https://github.com/Anonym-tsk/MMM-HomeAssistant-WebRTC",
+      "id": "Anonym-tsk/MMM-HomeAssistant-WebRTC",
+      "maintainer": "Anonym-tsk",
+      "maintainerURL": "",
+      "description": "Displays IP camera RTSP stream in real time using WebRTC technology. Depends on HomeAssistant <a target=\"_blank\" href=\"https://github.com/AlexxIT/WebRTC\">WebRTC Camera</a> component.",
       "issues": []
     },
     {
@@ -4672,7 +4692,7 @@
       "id": "ASteinsdoerfer/MMM-HusqvarnaAutomower",
       "maintainer": "ASteinsdoerfer",
       "maintainerURL": "https://github.com/ASteinsdoerfer",
-      "description": "display the current status of a Husqvarna Automower.",
+      "description": "Displays the current status of a Husqvarna Automower.",
       "issues": []
     },
     {
@@ -4934,7 +4954,7 @@
       "url": "https://gitlab.com/doctorfree/MMM-InstagramView",
       "id": "doctorfree/MMM-InstagramView",
       "maintainer": "doctorfree",
-      "maintainerURL": "https://github.com/doctorfree",
+      "maintainerURL": "",
       "description": "Display your Instagram photos, videos, multiple media postings, and post description. Makes use of the Facebook Instagram Graph API.",
       "issues": []
     },
@@ -5125,7 +5145,7 @@
       "url": "https://github.com/Xanthus1/MMM-ITCH-IO",
       "id": "Xanthus1/MMM-ITCH-IO",
       "maintainer": "Xanthus1",
-      "maintainerURL": "https://github.com/Xanthus1",
+      "maintainerURL": "",
       "description": "Displays recently featured and highly rated free games from <a target=\"_blank\" href=\"https://itch.io\">https://itch.io</a>.",
       "issues": []
     },
@@ -5166,7 +5186,7 @@
       "id": "yohaybn/MMM-JewishDate",
       "maintainer": "yohaybn",
       "maintainerURL": "",
-      "description": "This module displays the current Jewish date.",
+      "description": "Displays the current Jewish date.",
       "issues": []
     },
     {
@@ -5176,7 +5196,7 @@
       "id": "jirsis/JIR-tarifa-luz",
       "maintainer": "jirsis",
       "maintainerURL": "https://github.com/jirsis",
-      "description": "This module shows the different ranges of electricity prices in Spain during the day.",
+      "description": "Shows the different ranges of electricity prices in Spain during the day.",
       "issues": []
     },
     {
@@ -5392,6 +5412,16 @@
       "issues": []
     },
     {
+      "name": "MMM-KVV-Trias",
+      "category": "Transport / Travel",
+      "url": "https://github.com/ZeroTwoWeeb/MMM-KVV-Trias",
+      "id": "ZeroTwoWeeb/MMM-KVV-Trias",
+      "maintainer": "ZeroTwoWeeb",
+      "maintainerURL": "",
+      "description": "Show Station Data for stations in the Karlsruhe Region pulled from the KVV Trias API.",
+      "issues": []
+    },
+    {
       "name": "MMM-LAMetro",
       "category": "Transport / Travel",
       "url": "https://github.com/pbuabthong/MMM-LAMetro",
@@ -5407,7 +5437,7 @@
       "url": "https://github.com/RineshRamadhin/MMM-Lastfm",
       "id": "RineshRamadhin/MMM-Lastfm",
       "maintainer": "RineshRamadhin",
-      "maintainerURL": "https://github.com/RineshRamadhin",
+      "maintainerURL": "",
       "description": "Displays the Last.fm scrobble currently playing. Supports Spotify, YouTube, Tidal, SoundCloud, MixCloud and <a target=\"_blank\" href=\"https://www.last.fm/about/trackmymusic\">many others</a>.",
       "issues": []
     },
@@ -5521,7 +5551,7 @@
       "id": "XppaiCyberr/MMM-LilNounsTreasury",
       "maintainer": "XppaiCyberr",
       "maintainerURL": "",
-      "description": "This module displays the current value of the Lil Nouns Treasury.",
+      "description": "Displays the current value of the Lil Nouns Treasury.",
       "issues": []
     },
     {
@@ -5651,7 +5681,7 @@
       "id": "MMRIZE/MMM-LogExt",
       "maintainer": "MMRIZE",
       "maintainerURL": "",
-      "description": "Deliver the logs from Frontend to Backend and more features.",
+      "description": "Deliver the logs from frontend to backend and more features.",
       "issues": []
     },
     {
@@ -5940,6 +5970,16 @@
       "issues": []
     },
     {
+      "name": "MMM-MarineTraffic",
+      "category": "Entertainment / Misc",
+      "url": "https://github.com/owenfromcanada/MMM-MarineTraffic",
+      "id": "owenfromcanada/MMM-MarineTraffic",
+      "maintainer": "owenfromcanada",
+      "maintainerURL": "https://owenfromcanada.com",
+      "description": "Displays marine traffic for a customized area.",
+      "issues": []
+    },
+    {
       "name": "MMM-MarineWeather",
       "category": "Weather",
       "url": "https://github.com/grenagit/MMM-MarineWeather",
@@ -6036,7 +6076,7 @@
       "url": "https://github.com/AndreaGrandieri/MMM-MD",
       "id": "AndreaGrandieri/MMM-MD",
       "maintainer": "AndreaGrandieri",
-      "maintainerURL": "https://github.com/AndreaGrandieri",
+      "maintainerURL": "",
       "description": "Write Markdown. Render it on the MagicMirror².",
       "issues": []
     },
@@ -6056,7 +6096,7 @@
       "url": "https://github.com/btoconnor/MMM-MealieShoppingList",
       "id": "btoconnor/MMM-MealieShoppingList",
       "maintainer": "btoconnor",
-      "maintainerURL": "https://github.com/btoconnor",
+      "maintainerURL": "",
       "description": "Displays your <a target=\"_blank\" href=\"https://mealie.io\">Mealie</a> shopping list.",
       "issues": []
     },
@@ -6692,7 +6732,7 @@
       "url": "https://github.com/TouaregWarrior/MMM-MortgageCountdown",
       "id": "TouaregWarrior/MMM-MortgageCountdown",
       "maintainer": "TouaregWarrior",
-      "maintainerURL": "",
+      "maintainerURL": "https://github.com/TouaregWarrior",
       "description": "Tracks the number of mortgage payments left.",
       "issues": []
     },
@@ -6763,7 +6803,7 @@
       "url": "https://github.com/Tueti/MMM-MovieListings",
       "id": "Tueti/MMM-MovieListings",
       "maintainer": "Tueti",
-      "maintainerURL": "https://github.com/Tueti",
+      "maintainerURL": "",
       "description": "Displays the currently airing top movies in theaters around you.",
       "issues": []
     },
@@ -6944,7 +6984,7 @@
       "url": "https://github.com/crisvdn/MMM-MTG",
       "id": "crisvdn/MMM-MTG",
       "maintainer": "crisvdn",
-      "maintainerURL": "https://github.com/crisvdn",
+      "maintainerURL": "",
       "description": "Fetches a random MTG card on a configured interval and displays this.",
       "issues": []
     },
@@ -7804,7 +7844,7 @@
       "id": "XppaiCyberr/MMM-NouncilVotes",
       "maintainer": "XppaiCyberr",
       "maintainerURL": "",
-      "description": "This module displays Nouncil voting participation data.",
+      "description": "Displays Nouncil voting participation data.",
       "issues": []
     },
     {
@@ -7814,7 +7854,7 @@
       "id": "xppaicyberr/MMM-NounishReminder",
       "maintainer": "xppaicyberr",
       "maintainerURL": "",
-      "description": "This module displays Nounish Events.",
+      "description": "Displays Nounish Events.",
       "issues": []
     },
     {
@@ -7824,7 +7864,7 @@
       "id": "XppaiCyberr/MMM-NounsAuction",
       "maintainer": "XppaiCyberr",
       "maintainerURL": "",
-      "description": "This module displays real-time Nouns auction status.",
+      "description": "Displays real-time Nouns auction status.",
       "issues": []
     },
     {
@@ -7834,7 +7874,7 @@
       "id": "XppaiCyberr/MMM-NounsProposal",
       "maintainer": "XppaiCyberr",
       "maintainerURL": "",
-      "description": "This module displays recent Nouns DAO governance proposals with voting information.",
+      "description": "Displays recent Nouns DAO governance proposals with voting information.",
       "issues": []
     },
     {
@@ -7844,7 +7884,7 @@
       "id": "XppaiCyberr/MMM-NounsStream",
       "maintainer": "XppaiCyberr",
       "maintainerURL": "",
-      "description": "This module displays Payroll Stream from Nouns DAO.",
+      "description": "Displays Payroll Stream from Nouns DAO.",
       "issues": []
     },
     {
@@ -7854,7 +7894,7 @@
       "id": "XppaiCyberr/MMM-NounsTimeline",
       "maintainer": "XppaiCyberr",
       "maintainerURL": "",
-      "description": "This module displays a timeline of casts from Nouns Warpcast Channel.",
+      "description": "Displays a timeline of casts from Nouns Warpcast Channel.",
       "issues": []
     },
     {
@@ -7864,7 +7904,7 @@
       "id": "XppaiCyberr/MMM-NounsTreasury",
       "maintainer": "XppaiCyberr",
       "maintainerURL": "",
-      "description": "This module displays the current value of the Nouns Treasury.",
+      "description": "Displays the current value of the Nouns Treasury.",
       "issues": []
     },
     {
@@ -7951,6 +7991,16 @@
       "outdated": "Abandoned. Repo has been archived at 2020-06-10."
     },
     {
+      "name": "MMM-OctoGo",
+      "category": "Utility / IoT / 3rd Party / Integration",
+      "url": "https://github.com/TouaregWarrior/MMM-OctoGo",
+      "id": "TouaregWarrior/MMM-OctoGo",
+      "maintainer": "TouaregWarrior",
+      "maintainerURL": "https://github.com/TouaregWarrior",
+      "description": "A highly modified version of Chris Thomas (christopherpthomas)'s Octopus Energy module. This version has added functionality to support the Octopus Go import, Solar Export and Fixed Gas Tariffs.",
+      "issues": []
+    },
+    {
       "name": "octomirror-module",
       "category": "Utility / IoT / 3rd Party / Integration",
       "url": "https://github.com/shbatm/octomirror-module",
@@ -7976,7 +8026,7 @@
       "url": "https://github.com/TouaregWarrior/MMM-OctoMonV2",
       "id": "TouaregWarrior/MMM-OctoMonV2",
       "maintainer": "TouaregWarrior",
-      "maintainerURL": "",
+      "maintainerURL": "https://github.com/TouaregWarrior",
       "description": "A modified version of Chris Thomas (christopherpthomas)'s Octopus Energy module. This version has added functionality to include an extra column data to show exported energy calculations.",
       "issues": []
     },
@@ -8917,16 +8967,6 @@
       "issues": []
     },
     {
-      "name": "MMM-PollenSwe",
-      "category": "Weather",
-      "url": "https://github.com/cgillinger/MMM-PollenSwe",
-      "id": "cgillinger/MMM-PollenSwe",
-      "maintainer": "cgillinger",
-      "maintainerURL": "https://github.com/cgillinger",
-      "description": "Displays pollen forecast information for Sweden from Pollenrapporten.se. Includes customizable layout and regional forecasts.",
-      "issues": []
-    },
-    {
       "name": "MMM-Polly",
       "category": "Voice Control",
       "url": "https://github.com/dgburr/MMM-Polly",
@@ -9038,6 +9078,16 @@
       "issues": []
     },
     {
+      "name": "MMM-PresenceScreenControl",
+      "category": "Utility / IoT / 3rd Party / Integration",
+      "url": "https://github.com/rkorell/MMM-PresenceScreenControl",
+      "id": "rkorell/MMM-PresenceScreenControl",
+      "maintainer": "rkorell",
+      "maintainerURL": "",
+      "description": "Combined Presence Detection: MQTT and PIR sensor in parallel.",
+      "issues": []
+    },
+    {
       "name": "MMM-profile",
       "category": "Entertainment / Misc",
       "url": "https://github.com/kurtern84/MMM-profile",
@@ -9080,11 +9130,11 @@
     {
       "name": "MMM-ProfileSwitcher",
       "category": "Development / Core MagicMirror²",
-      "url": "https://github.com/tosti007/MMM-ProfileSwitcher",
-      "id": "tosti007/MMM-ProfileSwitcher",
-      "maintainer": "tosti007",
+      "url": "https://github.com/BigMac1999/MMM-ProfileSwitcher",
+      "id": "BigMac1999/MMM-ProfileSwitcher",
+      "maintainer": "BigMac1999",
       "maintainerURL": "",
-      "description": "This Module adds the ability to have different layouts for different profiles.",
+      "description": "This module adds the ability to have different layouts for different profiles.",
       "issues": []
     },
     {
@@ -10360,6 +10410,16 @@
       "issues": []
     },
     {
+      "name": "MMM-SkinAnalysis",
+      "category": "Health",
+      "url": "https://github.com/syedali040205/MMM-SkinAnalysis",
+      "id": "syedali040205/MMM-SkinAnalysis",
+      "maintainer": "syedali040205",
+      "maintainerURL": "https://github.com/SaniyaAfzali",
+      "description": "Performs skin analysis and detects skin defects like acne, pimples, and dark circles, then suggests relevant products and natural remedies.",
+      "issues": []
+    },
+    {
       "name": "MMM-Skola24",
       "category": "Education",
       "url": "https://github.com/retroflex/MMM-Skola24",
@@ -10727,7 +10787,7 @@
       "url": "https://github.com/TouaregWarrior/MMM-SpaceLaunch",
       "id": "TouaregWarrior/MMM-SpaceLaunch",
       "maintainer": "TouaregWarrior",
-      "maintainerURL": "",
+      "maintainerURL": "https://github.com/TouaregWarrior",
       "description": "Displays the next scheduled spacecraft launch - Global launches.",
       "issues": []
     },
@@ -10800,16 +10860,6 @@
       "maintainer": "Ruud14",
       "maintainerURL": "https://github.com/Ruud14",
       "description": "Displays the latest releases from your favorite spotify artists.",
-      "issues": []
-    },
-    {
-      "name": "MMM-SRVMA",
-      "category": "News / Information",
-      "url": "https://github.com/cgillinger/MMM-SRVMA",
-      "id": "cgillinger/MMM-SRVMA",
-      "maintainer": "cgillinger",
-      "maintainerURL": "https://github.com/cgillinger",
-      "description": "Displays real-time Swedish VMA (Viktigt Meddelande till Allmänheten) alerts, including public safety notifications, weather warnings, and emergency updates. Supports Swedish (<code>sv-SE</code>) and English (<code>en-US</code>) localization.",
       "issues": []
     },
     {
@@ -11794,7 +11844,7 @@
       "id": "AndyHazz/MMM-UKLiveBusStopInfo",
       "maintainer": "AndyHazz",
       "maintainerURL": "",
-      "description": "This module displays LIVE UK information about a specific bus stop and the routes that serve it.",
+      "description": "Displays LIVE UK information about a specific bus stop and the routes that serve it.",
       "issues": []
     },
     {
@@ -11824,7 +11874,7 @@
       "id": "mattdy/MMM-UKNationalRail",
       "maintainer": "mattdy",
       "maintainerURL": "",
-      "description": "This module displays LIVE UK National Rail train arrivals &amp; departures from a specified station.",
+      "description": "Displays LIVE UK National Rail train arrivals &amp; departures from a specified station.",
       "issues": []
     },
     {
@@ -11985,6 +12035,16 @@
       "maintainer": "n-gao",
       "maintainerURL": "https://github.com/n-gao",
       "description": "Enables you to display birthdays from a contacts via a vCard.",
+      "issues": []
+    },
+    {
+      "name": "MMM-VESAR",
+      "category": "Entertainment / Misc",
+      "url": "https://github.com/ilsegs/MMM-VESAR",
+      "id": "ilsegs/MMM-VESAR",
+      "maintainer": "ilsegs",
+      "maintainerURL": "",
+      "description": "Displays upcoming trash collection dates for Vestfold kommune.",
       "issues": []
     },
     {
@@ -12183,9 +12243,9 @@
     {
       "name": "WallberryTheme",
       "category": "Entertainment / Misc",
-      "url": "https://github.com/delightedCrow/WallberryTheme",
-      "id": "delightedCrow/WallberryTheme",
-      "maintainer": "delightedCrow",
+      "url": "https://github.com/mvlbarcelos/WallberryTheme",
+      "id": "mvlbarcelos/WallberryTheme",
+      "maintainer": "mvlbarcelos",
       "maintainerURL": "",
       "description": "Re-themes MagicMirror² to look like a beautiful digital photo wall display. It adds a new font, styles, redesigned clock and weather displays, and rotating background image pulled from unsplash.com.",
       "issues": []
@@ -12638,7 +12698,7 @@
       "id": "mumblebaj/MMM-WOTD",
       "maintainer": "mumblebaj",
       "maintainerURL": "",
-      "description": "Yet another word of the day module. The special feature of this module is that you can select multiple languages and it will display as a carousel.",
+      "description": "Yet another word of the day module. The special feature is that you can select multiple languages and it will display as a carousel.",
       "issues": []
     },
     {
