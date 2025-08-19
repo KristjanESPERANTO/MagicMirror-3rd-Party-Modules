@@ -216,6 +216,10 @@ def check_modules():
             "name": "The period at the end of the command is not necessary since v9. It is recommended to remove it.",
             "category": "Recommendation",
         },
+        "git checkout": {
+            "name": "Replace it with `git switch`. It's not a drop-in replacement, so make sure to check the documentation.",
+            "category": "Recommendation",
+        },
     }
 
     search_strings_package_json = {
