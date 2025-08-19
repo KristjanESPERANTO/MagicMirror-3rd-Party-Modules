@@ -128,7 +128,7 @@ def check_modules():
             "category": "Recommendation",
         },
         "omxplayer": {
-            "name": "Try to replace it with `vlc`.",
+            "name": "Try to replace it with `mplayer` or `vlc`.",
             "category": "Deprecated",
             "source": "https://github.com/popcornmix/omxplayer",
         },
