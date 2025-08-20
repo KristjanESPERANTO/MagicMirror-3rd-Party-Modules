@@ -323,6 +323,8 @@ def check_modules():
                 )
 
             for file_path in sorted(module_directory_path.rglob("*")):
+                if ".git" in file_path.parts:
+                    continue
                 if file_path.is_dir():
                     # Explanation for .count("node_modules") == 1: If there is a node_modules directory, there are probably others in it with that name. There does not have to be an additional message for this.
                     if (
