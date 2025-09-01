@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "2025-08-18T19:02:30.041Z",
+  "lastUpdate": "2025-09-01T20:57:20.618Z",
   "modules": [
     {
       "name": "MMM-01ZM",
@@ -2770,6 +2770,16 @@
       "issues": []
     },
     {
+      "name": "MMM-Emby",
+      "category": "Utility / IoT / 3rd Party / Integration",
+      "url": "https://github.com/LindsayCole/MMM-Emby",
+      "id": "LindsayCole/MMM-Emby",
+      "maintainer": "LindsayCole",
+      "maintainerURL": "https://github.com/LindsayCole",
+      "description": "Display server stats and streams.",
+      "issues": []
+    },
+    {
       "name": "emt",
       "category": "Transport / Travel",
       "url": "https://github.com/jirsis/emt",
@@ -2994,13 +3004,14 @@
     },
     {
       "name": "MMM-Face-Multi-User-Recognition-SMAI",
-      "category": "Entertainment / Misc",
+      "category": "Outdated Modules",
       "url": "https://github.com/jimbydude/MMM-Face-Multi-User-Recognition-SMAI",
       "id": "jimbydude/MMM-Face-Multi-User-Recognition-SMAI",
       "maintainer": "jimbydude",
       "maintainerURL": "https://github.com/jimbydude",
       "description": "This is a fork of Ebens module above. This version can handle multi-user and uses MMM-Face-Reco-DNN to hide/show modules based on user logged in.",
-      "issues": []
+      "issues": [],
+      "outdated": "Abandoned. No updates since years. Seems not to work anymore."
     },
     {
       "name": "MMM-Face-Reco-DNN",
@@ -4898,6 +4909,16 @@
       "issues": []
     },
     {
+      "name": "MMM-ImmichTileSlideShow",
+      "category": "Entertainment / Misc",
+      "url": "https://github.com/enarciso/MMM-ImmichTileSlideShow",
+      "id": "enarciso/MMM-ImmichTileSlideShow",
+      "maintainer": "enarciso",
+      "maintainerURL": "",
+      "description": "Fullscreen, tile‑based <a target=\"_blank\" href=\"https://immich.app/\">Immich</a> slideshow (mosaic) with internal proxy, captions, featured center tiles, and periodic reshuffle.",
+      "issues": []
+    },
+    {
       "name": "MMM-IndoorClimate-Endpoint",
       "category": "Weather",
       "url": "https://github.com/buxxi/MMM-IndoorClimate-Endpoint",
@@ -6505,16 +6526,6 @@
       "issues": []
     },
     {
-      "name": "mmm-systemtemperature",
-      "category": "Utility / IoT / 3rd Party / Integration",
-      "url": "https://github.com/MichMich/mmm-systemtemperature",
-      "id": "MichMich/mmm-systemtemperature",
-      "maintainer": "MichMich",
-      "maintainerURL": "",
-      "description": "Display your Raspberry Pi's processor temperature.",
-      "issues": []
-    },
-    {
       "name": "mmm-toggle-by-mqtt",
       "category": "Utility / IoT / 3rd Party / Integration",
       "url": "https://github.com/moejetz/mmm-toggle-by-mqtt",
@@ -7778,6 +7789,16 @@
       "issues": []
     },
     {
+      "name": "MMM-NOAAForecast",
+      "category": "Weather",
+      "url": "https://github.com/supermem613/MMM-NOAAForecast",
+      "id": "supermem613/MMM-NOAAForecast",
+      "maintainer": "supermem613",
+      "maintainerURL": "",
+      "description": "Displays weather forecast information from NOAA for locations in the United States and its territories. Drop-in replacement for MMM-OpenWeatherForecast. (free, no API keys needed)",
+      "issues": []
+    },
+    {
       "name": "MMM-NOAATides",
       "category": "Weather",
       "url": "https://github.com/crice009/MMM-NOAATides",
@@ -8822,6 +8843,16 @@
       "maintainer": "njwilliams",
       "maintainerURL": "",
       "description": "Displays brief information (flag, weather, exchange rate) about multiple locations at once.",
+      "issues": []
+    },
+    {
+      "name": "MMM-Planefinder",
+      "category": "Transport / Travel",
+      "url": "https://github.com/kds54/MMM-Planefinder",
+      "id": "kds54/MMM-Planefinder",
+      "maintainer": "kds54",
+      "maintainerURL": "",
+      "description": "Display of planes currently overhead.",
       "issues": []
     },
     {
@@ -10731,6 +10762,16 @@
       "issues": []
     },
     {
+      "name": "MMM-Solunar",
+      "category": "Utility / IoT / 3rd Party / Integration",
+      "url": "https://github.com/poolis/MMM-Solunar",
+      "id": "poolis/MMM-Solunar",
+      "maintainer": "poolis",
+      "maintainerURL": "",
+      "description": "Display day rating and optimal fishing/hunting times based on the Solunar theory.",
+      "issues": []
+    },
+    {
       "name": "MMM-Sonarr",
       "category": "Utility / IoT / 3rd Party / Integration",
       "url": "https://github.com/gravitykillseverything/MMM-Sonarr",
@@ -11164,6 +11205,16 @@
       "maintainer": "fry0815",
       "maintainerURL": "",
       "description": "Shows Raspberry Pi system stats like CPU temperature, free Ram, System load, and Uptime. This is an active fork, the original module was abandoned.",
+      "issues": []
+    },
+    {
+      "name": "MMM-SystemTemperature",
+      "category": "Utility / IoT / 3rd Party / Integration",
+      "url": "https://github.com/KristjanESPERANTO/MMM-SystemTemperature",
+      "id": "KristjanESPERANTO/MMM-SystemTemperature",
+      "maintainer": "KristjanESPERANTO",
+      "maintainerURL": "",
+      "description": "Display your processor temperature. Optional: Shut down your system safely if the temperature is too high (using MMM-Remote-Control).",
       "issues": []
     },
     {

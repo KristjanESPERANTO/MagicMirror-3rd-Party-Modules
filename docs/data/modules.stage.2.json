@@ -1326,7 +1326,7 @@
     "maintainerURL": "",
     "description": "Allows you to enhance your setup by integrating physical buttons via GPIO. This module supports multiple buttons, each of which can be individually configured to perform different actions based on short or long presses. With configurable notifications and versatile functionality, MMM-Buttons provides a powerful way to interact with your MagicMirror².",
     "issues": [],
-    "stars": 8,
+    "stars": 10,
     "license": "MIT"
   },
   {
@@ -1964,7 +1964,7 @@
     "maintainerURL": "",
     "description": "Form based (in browser) configuration for MagicMirror and modules.",
     "issues": [],
-    "stars": 44,
+    "stars": 46,
     "license": "MIT"
   },
   {
@@ -3278,6 +3278,17 @@
     "license": "MIT"
   },
   {
+    "name": "MMM-Emby",
+    "category": "Utility / IoT / 3rd Party / Integration",
+    "url": "https://github.com/LindsayCole/MMM-Emby",
+    "id": "LindsayCole/MMM-Emby",
+    "maintainer": "LindsayCole",
+    "maintainerURL": "https://github.com/LindsayCole",
+    "description": "Display server stats and streams.",
+    "issues": [],
+    "stars": 0
+  },
+  {
     "name": "emt",
     "category": "Transport / Travel",
     "url": "https://github.com/jirsis/emt",
@@ -3544,13 +3555,14 @@
   },
   {
     "name": "MMM-Face-Multi-User-Recognition-SMAI",
-    "category": "Entertainment / Misc",
+    "category": "Outdated Modules",
     "url": "https://github.com/jimbydude/MMM-Face-Multi-User-Recognition-SMAI",
     "id": "jimbydude/MMM-Face-Multi-User-Recognition-SMAI",
     "maintainer": "jimbydude",
     "maintainerURL": "https://github.com/jimbydude",
     "description": "This is a fork of Ebens module above. This version can handle multi-user and uses MMM-Face-Reco-DNN to hide/show modules based on user logged in.",
     "issues": [],
+    "outdated": "Abandoned. No updates since years. Seems not to work anymore.",
     "stars": 12,
     "hasGithubIssues": false,
     "license": "MIT"
@@ -3637,7 +3649,7 @@
     "maintainerURL": "",
     "description": "Display FamZoo balances.",
     "issues": [],
-    "stars": 2,
+    "stars": 3,
     "license": "AGPL-3.0"
   },
   {
@@ -3880,7 +3892,7 @@
     "maintainerURL": "",
     "description": "Shows a firework animation on your Mirror.",
     "issues": [],
-    "stars": 5,
+    "stars": 6,
     "license": "MIT"
   },
   {
@@ -4546,7 +4558,7 @@
     "maintainerURL": "https://github.com/ChrisF1976",
     "description": "MagicMirror² module to globally reposition other modules on screen via fixed coordinates.",
     "issues": [],
-    "stars": 3,
+    "stars": 4,
     "license": "MIT"
   },
   {
@@ -4752,7 +4764,7 @@
     "maintainerURL": "",
     "description": "Displays a Google map, centred at provided coordinates, with traffic information.",
     "issues": [],
-    "stars": 5,
+    "stars": 8,
     "license": "MIT"
   },
   {
@@ -5237,18 +5249,6 @@
   {
     "name": "MMM-HomeAssistant",
     "category": "Utility / IoT / 3rd Party / Integration",
-    "url": "https://github.com/zuo000/MMM-HomeAssistant",
-    "id": "zuo000/MMM-HomeAssistant",
-    "maintainer": "zuo000",
-    "maintainerURL": "https://github.com/zuo000",
-    "description": "HomeAssistant frontend module using HA REST API, including Light, Switch, Sensor.",
-    "issues": [],
-    "stars": 27,
-    "license": "MIT"
-  },
-  {
-    "name": "MMM-HomeAssistant",
-    "category": "Utility / IoT / 3rd Party / Integration",
     "url": "https://github.com/yourdawi/MMM-HomeAssistant",
     "id": "yourdawi/MMM-HomeAssistant",
     "maintainer": "yourdawi",
@@ -5271,15 +5271,15 @@
     "license": "MIT"
   },
   {
-    "name": "MMM-homeassistant-sensors",
+    "name": "MMM-HomeAssistant",
     "category": "Utility / IoT / 3rd Party / Integration",
-    "url": "https://github.com/Snille/MMM-homeassistant-sensors",
-    "id": "Snille/MMM-homeassistant-sensors",
-    "maintainer": "Snille",
-    "maintainerURL": "https://github.com/Snille",
-    "description": "Fork of leinich module. Many new features added. Display information from Home Assistant using the home assistant REST API.",
+    "url": "https://github.com/zuo000/MMM-HomeAssistant",
+    "id": "zuo000/MMM-HomeAssistant",
+    "maintainer": "zuo000",
+    "maintainerURL": "https://github.com/zuo000",
+    "description": "HomeAssistant frontend module using HA REST API, including Light, Switch, Sensor.",
     "issues": [],
-    "stars": 67,
+    "stars": 27,
     "license": "MIT"
   },
   {
@@ -5293,6 +5293,18 @@
     "issues": [],
     "stars": 0,
     "hasGithubIssues": false,
+    "license": "MIT"
+  },
+  {
+    "name": "MMM-homeassistant-sensors",
+    "category": "Utility / IoT / 3rd Party / Integration",
+    "url": "https://github.com/Snille/MMM-homeassistant-sensors",
+    "id": "Snille/MMM-homeassistant-sensors",
+    "maintainer": "Snille",
+    "maintainerURL": "https://github.com/Snille",
+    "description": "Fork of leinich module. Many new features added. Display information from Home Assistant using the home assistant REST API.",
+    "issues": [],
+    "stars": 67,
     "license": "MIT"
   },
   {
@@ -5684,7 +5696,7 @@
     "description": "A simple way to add an iFrame of any web content.",
     "issues": [],
     "outdated": "Abandoned. Repo has been archived at 2019-03-08.",
-    "stars": 25,
+    "stars": 26,
     "isArchived": true
   },
   {
@@ -5806,6 +5818,18 @@
     "description": "Display images fullscreen, one at a time on a fixed interval, from <a target=\"_blank\" href=\"https://immich.app/\">Immich</a>.",
     "issues": [],
     "stars": 31,
+    "license": "MIT"
+  },
+  {
+    "name": "MMM-ImmichTileSlideShow",
+    "category": "Entertainment / Misc",
+    "url": "https://github.com/enarciso/MMM-ImmichTileSlideShow",
+    "id": "enarciso/MMM-ImmichTileSlideShow",
+    "maintainer": "enarciso",
+    "maintainerURL": "",
+    "description": "Fullscreen, tile‑based <a target=\"_blank\" href=\"https://immich.app/\">Immich</a> slideshow (mosaic) with internal proxy, captions, featured center tiles, and periodic reshuffle.",
+    "issues": [],
+    "stars": 0,
     "license": "MIT"
   },
   {
@@ -6326,7 +6350,7 @@
     "maintainerURL": "",
     "description": "Getting Bluetooth remote control and keyboard inputs.",
     "issues": [],
-    "stars": 21,
+    "stars": 22,
     "license": "MIT"
   },
   {
@@ -6399,7 +6423,7 @@
     "maintainerURL": "",
     "description": "Compliment clone - allows to define when (at which hour) the used kudo(compliment) subset will change and you can define further subsets - up to one for each hour.",
     "issues": [],
-    "stars": 9,
+    "stars": 10,
     "license": "MIT"
   },
   {
@@ -6446,7 +6470,7 @@
     "maintainerURL": "",
     "description": "Displays the Last.fm scrobble currently playing. Supports Spotify, YouTube, Tidal, SoundCloud, MixCloud and <a target=\"_blank\" href=\"https://www.last.fm/about/trackmymusic\">many others</a>.",
     "issues": [],
-    "stars": 5,
+    "stars": 6,
     "license": "NOASSERTION"
   },
   {
@@ -6934,7 +6958,7 @@
     "maintainerURL": "",
     "description": "Determine the status of devices on the network based on their MAC address. It can also look up devices by IP addresses or hostnames. This module is an enhanced clone of the excellent MMM-NetworkScanner module by <a target=\"_blank\" href=\"https://github.com/ianperrin\">Ian Perrin</a>.",
     "issues": [],
-    "stars": 8,
+    "stars": 9,
     "license": "MIT"
   },
   {
@@ -7032,7 +7056,7 @@
     "maintainerURL": "",
     "description": "Prevent screen burn-in on your MagicMirror².",
     "issues": [],
-    "stars": 58,
+    "stars": 60,
     "license": "MIT"
   },
   {
@@ -7068,7 +7092,8 @@
     "maintainerURL": "https://github.com/Unclearogre",
     "description": "Send messages to be displayed on your MagicMirror via e-mail.",
     "issues": [],
-    "stars": 2
+    "stars": 2,
+    "license": "MIT"
   },
   {
     "name": "MMM-MarineTraffic",
@@ -7188,7 +7213,7 @@
     "maintainerURL": "",
     "description": "Displays information about a Massachusetts Bay Transportation Authority (MBTA) station, including upcoming arrivals and alerts and warnings.",
     "issues": [],
-    "stars": 12,
+    "stars": 13,
     "license": "MIT"
   },
   {
@@ -7212,7 +7237,7 @@
     "maintainerURL": "https://github.com/zanix",
     "description": "Displays a weekly meal menu from the <a target=\"_blank\" href=\"https://mealie.io\">Mealie</a> recipe management app.",
     "issues": [],
-    "stars": 15,
+    "stars": 16,
     "license": "MIT"
   },
   {
@@ -7247,7 +7272,7 @@
     "maintainerURL": "",
     "description": "Add one to many memo notes (\"post-it look &amp; feel\"). Content is manageable through HTTP get requests.",
     "issues": [],
-    "stars": 34,
+    "stars": 33,
     "license": "MIT"
   },
   {
@@ -7296,7 +7321,7 @@
     "maintainerURL": "",
     "description": "Displays EV/Fuel status and Range of Mercedes cars.",
     "issues": [],
-    "stars": 2,
+    "stars": 3,
     "license": "MIT"
   },
   {
@@ -7354,7 +7379,7 @@
     "maintainerURL": "",
     "description": "Displays your Microsoft To Do tasks on your mirror.",
     "issues": [],
-    "stars": 82,
+    "stars": 83,
     "license": "MIT"
   },
   {
@@ -7401,7 +7426,7 @@
     "maintainerURL": "",
     "description": "Alexa voice control to show/hide modules, search for images or Youtube video, and display them with the search term on the mirror.",
     "issues": [],
-    "stars": 96,
+    "stars": 97,
     "license": "MIT"
   },
   {
@@ -7641,7 +7666,7 @@
     "maintainerURL": "https://github.com/michael5r",
     "description": "Displays both your <a target=\"_blank\" href=\"https://www.nest.com\">Nest</a> thermostats and protect smoke detectors. Supports multiple designs &amp; sizes.",
     "issues": [],
-    "stars": 41,
+    "stars": 42,
     "license": "MIT"
   },
   {
@@ -7699,20 +7724,8 @@
     "maintainerURL": "",
     "description": "Display a scrolling stocks ticker.",
     "issues": [],
-    "stars": 7,
+    "stars": 6,
     "hasGithubIssues": false
-  },
-  {
-    "name": "mmm-systemtemperature",
-    "category": "Utility / IoT / 3rd Party / Integration",
-    "url": "https://github.com/MichMich/mmm-systemtemperature",
-    "id": "MichMich/mmm-systemtemperature",
-    "maintainer": "MichMich",
-    "maintainerURL": "",
-    "description": "Display your Raspberry Pi's processor temperature.",
-    "issues": [],
-    "stars": 41,
-    "license": "MIT"
   },
   {
     "name": "mmm-toggle-by-mqtt",
@@ -7807,7 +7820,7 @@
     "maintainerURL": "https://github.com/Bee-Mar",
     "description": "An unofficial MagicMirror² 3rd Party Package Manager. Automates searching, installation, removal, updating, and upgrading of MagicMirror² modules.",
     "issues": [],
-    "stars": 221,
+    "stars": 224,
     "license": "MIT"
   },
   {
@@ -7842,7 +7855,7 @@
     "maintainerURL": "https://github.com/Snille",
     "description": "Add touch buttons for showing/hiding other modules.",
     "issues": [],
-    "stars": 17,
+    "stars": 18,
     "license": "MIT"
   },
   {
@@ -7901,7 +7914,7 @@
     "maintainerURL": "https://github.com/balassy",
     "description": "Shows or hides other modules when a momentary push button is pressed. Useful for development and maintenance after the module is deployed.",
     "issues": [],
-    "stars": 6,
+    "stars": 7,
     "license": "MIT"
   },
   {
@@ -7937,7 +7950,7 @@
     "maintainerURL": "",
     "description": "Presents the real-time moon phase.",
     "issues": [],
-    "stars": 66,
+    "stars": 67,
     "license": "MIT"
   },
   {
@@ -7949,7 +7962,7 @@
     "maintainerURL": "",
     "description": "Moonraker API integration for Klipper powered 3D printers.",
     "issues": [],
-    "stars": 3,
+    "stars": 5,
     "license": "MIT"
   },
   {
@@ -8284,7 +8297,7 @@
     "maintainerURL": "https://github.com/BKeyport",
     "description": "Display multiple mini-calendars at the same time.",
     "issues": [],
-    "stars": 16,
+    "stars": 17,
     "license": "MIT"
   },
   {
@@ -8394,7 +8407,7 @@
     "maintainerURL": "",
     "description": "Displays your commute times to several destinations. Highly configurable.",
     "issues": [],
-    "stars": 40
+    "stars": 41
   },
   {
     "name": "MMM-mycroft-bridge",
@@ -8846,7 +8859,7 @@
     "maintainerURL": "https://github.com/sisimomo",
     "description": "Display a Nest Like thermostat from a remote sensor that is capable to POST values through HTTP protocol. It is designed to be generic. Useful when having Home Assistant and MagicMirror².",
     "issues": [],
-    "stars": 3,
+    "stars": 4,
     "license": "MIT"
   },
   {
@@ -8858,7 +8871,7 @@
     "maintainerURL": "",
     "description": "Display your Netatmo in/outdoor weather station data.",
     "issues": [],
-    "stars": 41,
+    "stars": 42,
     "license": "MIT"
   },
   {
@@ -9209,6 +9222,18 @@
     "issues": [],
     "stars": 6,
     "license": "GPL-3.0"
+  },
+  {
+    "name": "MMM-NOAAForecast",
+    "category": "Weather",
+    "url": "https://github.com/supermem613/MMM-NOAAForecast",
+    "id": "supermem613/MMM-NOAAForecast",
+    "maintainer": "supermem613",
+    "maintainerURL": "",
+    "description": "Displays weather forecast information from NOAA for locations in the United States and its territories. Drop-in replacement for MMM-OpenWeatherForecast. (free, no API keys needed)",
+    "issues": [],
+    "stars": 0,
+    "license": "MIT"
   },
   {
     "name": "MMM-NOAATides",
@@ -9761,7 +9786,7 @@
     "description": "Display places opening hours.",
     "issues": [],
     "stars": 1,
-    "license": "MIT"
+    "license": "GPL-3.0"
   },
   {
     "name": "MMM-OpenmapWeather",
@@ -9830,7 +9855,7 @@
     "maintainerURL": "",
     "description": "A weather module that displays current, hourly and daily forecast information using data from the OpenWeatherMap One Call API.",
     "issues": [],
-    "stars": 40,
+    "stars": 42,
     "license": "MIT"
   },
   {
@@ -10457,6 +10482,17 @@
     "description": "Displays brief information (flag, weather, exchange rate) about multiple locations at once.",
     "issues": [],
     "stars": 4
+  },
+  {
+    "name": "MMM-Planefinder",
+    "category": "Transport / Travel",
+    "url": "https://github.com/kds54/MMM-Planefinder",
+    "id": "kds54/MMM-Planefinder",
+    "maintainer": "kds54",
+    "maintainerURL": "",
+    "description": "Display of planes currently overhead.",
+    "issues": [],
+    "stars": 0
   },
   {
     "name": "MMM-Planetarium",
@@ -12720,6 +12756,17 @@
     "license": "MIT"
   },
   {
+    "name": "MMM-Solunar",
+    "category": "Utility / IoT / 3rd Party / Integration",
+    "url": "https://github.com/poolis/MMM-Solunar",
+    "id": "poolis/MMM-Solunar",
+    "maintainer": "poolis",
+    "maintainerURL": "",
+    "description": "Display day rating and optimal fishing/hunting times based on the Solunar theory.",
+    "issues": [],
+    "stars": 0
+  },
+  {
     "name": "MMM-Sonarr",
     "category": "Utility / IoT / 3rd Party / Integration",
     "url": "https://github.com/gravitykillseverything/MMM-Sonarr",
@@ -13232,6 +13279,19 @@
     "description": "Shows Raspberry Pi system stats like CPU temperature, free Ram, System load, and Uptime. This is an active fork, the original module was abandoned.",
     "issues": [],
     "stars": 2,
+    "hasGithubIssues": false,
+    "license": "MIT"
+  },
+  {
+    "name": "MMM-SystemTemperature",
+    "category": "Utility / IoT / 3rd Party / Integration",
+    "url": "https://github.com/KristjanESPERANTO/MMM-SystemTemperature",
+    "id": "KristjanESPERANTO/MMM-SystemTemperature",
+    "maintainer": "KristjanESPERANTO",
+    "maintainerURL": "",
+    "description": "Display your processor temperature. Optional: Shut down your system safely if the temperature is too high (using MMM-Remote-Control).",
+    "issues": [],
+    "stars": 0,
     "hasGithubIssues": false,
     "license": "MIT"
   },
@@ -13930,7 +13990,7 @@
     "maintainerURL": "https://github.com/slametps",
     "description": "Display the status of smarthome devices based on Tuya IoT-Platform (managed by SmartLife app).",
     "issues": [],
-    "stars": 3
+    "stars": 4
   },
   {
     "name": "MMM-TUZSAZaragoza",
@@ -13977,7 +14037,7 @@
     "maintainerURL": "https://github.com/WilliamFitzjohn",
     "description": "Get notified when your favourite Twitch streamers go live.",
     "issues": [],
-    "stars": 2,
+    "stars": 3,
     "license": "MIT"
   },
   {
@@ -14214,7 +14274,7 @@
     "maintainerURL": "https://github.com/xadamxk",
     "description": "Display Valorant Esports league schedules on your magic mirror.",
     "issues": [],
-    "stars": 0
+    "stars": 1
   },
   {
     "name": "MMM-ValuesByNotification",
@@ -15299,7 +15359,7 @@
     "maintainerURL": "",
     "description": "The official Yr Nowcast module for MagicMirror², which displays data from <a target=\"_blank\" href=\"https://www.yr.no\">Yr</a>. Nowcast data is only available for some Norwegian locations covered by the Norwegian weather radars. Yr is a weather service from the Norwegian Broadcasting Corporation and the Norwegian Meteorological Institute.",
     "issues": [],
-    "stars": 24
+    "stars": 23
   },
   {
     "name": "MMM-YrThen",
