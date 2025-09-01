@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "2025-08-18T19:02:30.041Z",
+  "lastUpdate": "2025-08-27T17:03:58.897Z",
   "modules": [
     {
       "name": "MMM-01ZM",
@@ -10728,6 +10728,16 @@
       "maintainer": "dekinet",
       "maintainerURL": "",
       "description": "Display Soliscloud inverter data.",
+      "issues": []
+    },
+    {
+      "name": "MMM-Solunar",
+      "category": "Utility / IoT / 3rd Party / Integration",
+      "url": "https://github.com/poolis/MMM-Solunar",
+      "id": "poolis/MMM-Solunar",
+      "maintainer": "poolis",
+      "maintainerURL": "",
+      "description": "Display day rating and optimal fishing/hunting times based on the Solunar theory.",
       "issues": []
     },
     {

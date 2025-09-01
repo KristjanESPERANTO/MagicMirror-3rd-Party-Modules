@@ -273,8 +273,18 @@ def check_modules():
     }
 
     modules_json_file = open(
-        "./docs/data/modules.stage.4.json", encoding="utf-8")
+        "./docs/data/modules.stage.5.json", encoding="utf-8")
     modules = json.load(modules_json_file)
+    # Try to read previous results to reuse them for skipped modules
+    prev_modules_map = {}
+    try:
+        with open("./docs/data/modules.json", encoding="utf-8") as previous_modules_file:
+            prev_list = json.load(previous_modules_file)
+            for pm in prev_list:
+                key = f"{pm.get('name')}-----{pm.get('maintainer')}"
+                prev_modules_map[key] = pm
+    except Exception:
+        prev_modules_map = {}
     stats = {
         "moduleCounter": 0,
         "modulesWithImageCounter": 0,
@@ -290,6 +300,30 @@ def check_modules():
     for module in modules:
         module["defaultSortWeight"] = 0
         stats["moduleCounter"] += 1
+
+        # If the module has been marked as skip (unchanged since last successful run),
+        # skip the expensive checks and preserve previous data.
+        if module.get("skip"):
+            # Merge previous results if available
+            key = f"{module.get('name')}-----{module.get('maintainer')}"
+            prev = prev_modules_map.get(key)
+            if prev:
+                # preserve canonical identifiers
+                keep = {"name": module.get("name"), "maintainer": module.get("maintainer"), "url": module.get("url"), "id": module.get("id")}
+                # copy useful result fields from previous run
+                for field in ["issues", "image", "lastCommit", "stars", "defaultSortWeight", "tags", "hasGithubIssues"]:
+                    if field in prev:
+                        module[field] = prev[field]
+                # ensure kept fields remain
+                module.update(keep)
+
+            # If previous run set issues boolean already, count it accordingly
+            if module.get("issues"):
+                stats["modulesWithIssuesCounter"] += 1
+            # minimal bookkeeping and continue
+            progress = f"{stats['moduleCounter']:4}/{len(modules)}  {module['name']} (skipped)                        \r"
+            print(progress, end="")
+            continue
 
         module_directory = module["name"] + "-----" + module["maintainer"]
         module_directory_path = Path("./modules/" + module_directory)
@@ -544,6 +578,11 @@ def check_modules():
             if module['maintainer'] == "KristjanESPERANTO" and module["name"] != "MMM-EasyPix" and module["name"] != "MMM-Forum":
                 module["defaultSortWeight"] = max(module["defaultSortWeight"], 1)
 
+        # Record the time this module was checked (only for modules we actually processed)
+        # This is used by set_skip_flags.js to decide whether the module can be skipped in a future run.
+        if not module.get("skip"):
+            module["lastChecked"] = datetime.now().astimezone().replace(microsecond=0).isoformat()
+
     print(
         f"{stats['moduleCounter']} modules analyzed. For results see file result.md.           ")
 
@@ -600,20 +639,39 @@ def check_modules():
 
 def get_last_commit_date(module, module_directory_path):
     """Function to get the last commit date."""
-    module["lastCommit"] = (
-        subprocess.run(
-            f"cd {module_directory_path} && git log -1 --format='%aI' && cd .. && cd ..",
-            stdout=subprocess.PIPE,
-            shell=True,
-            check=False,
-        )
-        .stdout.decode()
-        .rstrip()
+    # If the module directory does not exist, record an empty lastCommit and an issue.
+    try:
+        if not module_directory_path.is_dir():
+            module["lastCommit"] = ""
+            module.setdefault("issues", []).append(
+                "Error: It appears that the repository could not be cloned. Check the URL."
+            )
+            return
+    except Exception:
+        # If Path check fails for any reason, fall back to attempting the git call.
+        pass
+
+    proc = subprocess.run(
+        f"cd {module_directory_path} && git log -1 --format='%aI'",
+        stdout=subprocess.PIPE,
+        stderr=subprocess.DEVNULL,
+        shell=True,
+        check=False,
     )
+    commit_iso = proc.stdout.decode().rstrip()
+    module["lastCommit"] = commit_iso
+
+    # If git produced no output (directory missing, git error, or empty repo), skip parsing.
+    if not commit_iso:
+        return
 
     # If the last commit is older than two years, we make the module heavier for the default sort order.
-    last_commit_date = datetime.strptime(
-        module["lastCommit"], '%Y-%m-%dT%H:%M:%S%z')
+    try:
+        last_commit_date = datetime.strptime(commit_iso, '%Y-%m-%dT%H:%M:%S%z')
+    except Exception:
+        # Unparsable timestamp; skip weight calculation but keep lastCommit as captured.
+        return
+
     current_datetime = datetime.now(timezone.utc)
     if (current_datetime - last_commit_date).days > 365 * 2:
         module["defaultSortWeight"] += 1

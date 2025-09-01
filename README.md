@@ -87,6 +87,10 @@ This script reads the GitHub info of the modules from the respective GitHub repo
 
 This script reads data, such as the number of stars, via the GitHub API for a few modules.
 
+### set_skip_flags.js
+
+This script marks modules as 'skip' when unchanged since last run to avoid unnecessary `git clone` operations and re-checking.
+
 ### get_modules.py
 
 This script reads the module list (created by the script before) and clones all modules.

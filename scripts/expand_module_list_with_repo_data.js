@@ -11,6 +11,9 @@ function isImageFile (filename) {
 
 async function findAndResizeImage (moduleName, moduleMaintainer) {
   const sourceFolder = `./modules/${moduleName}-----${moduleMaintainer}/`;
+  if (!fs.existsSync(sourceFolder)) {
+    return {targetImageName: null, issues: ["Module folder not present. Skipped image handling."]};
+  }
   const files = await fs.promises.readdir(sourceFolder, {recursive: true});
   files.sort();
   let targetImageName = null;
@@ -63,6 +66,11 @@ async function findAndResizeImage (moduleName, moduleMaintainer) {
 // Gather information from package.json
 async function addInformationFromPackageJson (moduleList) {
   for (const module of moduleList) {
+    if (module.skip) {
+      console.log(`- I - Skipping expand for ${module.name} by ${module.maintainer} (skip flag)`);
+      // eslint-disable-next-line no-continue
+      continue;
+    }
     console.log(`+++ ${module.name} by ${module.maintainer}`);
     let moduleData = {};
     try {
@@ -209,12 +217,12 @@ async function checkLicenseAndHandleScreenshot (moduleData, module) {
 }
 
 async function expandModuleList () {
-  const moduleList = await getJson("./docs/data/modules.stage.2.json");
+  const moduleList = await getJson("./docs/data/modules.stage.3.json");
 
   const expandedModuleList = await addInformationFromPackageJson(moduleList);
 
   fs.writeFileSync(
-    "./docs/data/modules.stage.3.json",
+    "./docs/data/modules.stage.4.json",
     JSON.stringify(expandedModuleList, null, 2),
     "utf8"
   );
@@ -222,12 +230,57 @@ async function expandModuleList () {
 
 /*
  * Remove old images before creating new ones
+ * Only remove images that do NOT belong to modules marked as skip in stage.3.
+ * Build a set of prefixes to keep: `${name}---${maintainer}---` for skipped modules.
  */
-async function purgeImageFolder () {
-  await fs.promises.rm(imagesFolder, {recursive: true});
-  await fs.promises.mkdir(imagesFolder);
+async function cleanImagesDirectory () {
+  const keepPrefixes = new Set();
+  try {
+    const stage3 = JSON.parse(await fs.promises.readFile("./docs/data/modules.stage.3.json", "utf8"));
+    for (const module of stage3) {
+      if (module.skip) {
+        keepPrefixes.add(`${module.name}---${module.maintainer}---`);
+      }
+    }
+  } catch (err) {
+    // If stage3 can't be read, fall back to full purge
+    console.warn("Could not read modules.stage.3.json, falling back to full image purge:", err.message);
+    try {
+      await fs.promises.rm(imagesFolder, {recursive: true});
+    } catch {
+      // Ignore
+    }
+    await fs.promises.mkdir(imagesFolder, {recursive: true});
+    return;
+  }
+
+  // Ensure images folder exists
+  try {
+    await fs.promises.mkdir(imagesFolder, {recursive: true});
+  } catch {
+    // Ignore
+  }
+
+  const files = await fs.promises.readdir(imagesFolder).catch(() => []);
+  for (const file of files) {
+    // If file matches any keep prefix, keep it
+    let keep = false;
+    for (const prefix of keepPrefixes) {
+      if (file.startsWith(prefix)) {
+        keep = true;
+        break;
+      }
+    }
+    if (!keep) {
+      try {
+        await fs.promises.unlink(`${imagesFolder}/${file}`);
+      } catch {
+        // Ignore individual delete errors
+      }
+    }
+  }
 }
 
-purgeImageFolder();
+cleanImagesDirectory();
 
 expandModuleList();

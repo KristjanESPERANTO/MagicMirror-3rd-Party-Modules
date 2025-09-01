@@ -1605,7 +1605,8 @@
     "maintainerURL": "https://github.com/CptMeetKat",
     "description": "Display ideas for when you're bored to keep your boring life fresh.",
     "issues": [
-      "There is no `package.json`. We need this file to gather information about the module for the module list page."
+      "There is no `package.json`. We need this file to gather information about the module for the module list page.",
+      "Repository name and main js file name is not the same."
     ],
     "stars": 5,
     "license": "MIT",
@@ -2469,7 +2470,9 @@
     "maintainer": "LukasWestholt",
     "maintainerURL": "",
     "description": "Displays \"Film der Woche\" of Cinestar cinemas in Germany.",
-    "issues": [],
+    "issues": [
+      "Repository name and main js file name is not the same."
+    ],
     "stars": 0,
     "license": "MIT",
     "tags": [
@@ -2669,7 +2672,8 @@
     "maintainerURL": "",
     "description": "Displays cryptocurreency values and trends in different currencies based of COINSQUARE.",
     "issues": [
-      "There is no `package.json`. We need this file to gather information about the module for the module list page."
+      "There is no `package.json`. We need this file to gather information about the module for the module list page.",
+      "Repository name and main js file name is not the same."
     ],
     "stars": 0
   },
@@ -2814,7 +2818,8 @@
     "maintainerURL": "",
     "description": "CookieCutter template for generating MagicMirror² modules.",
     "issues": [
-      "There is no `package.json`. We need this file to gather information about the module for the module list page."
+      "There is no `package.json`. We need this file to gather information about the module for the module list page.",
+      "Repository name and main js file name is not the same."
     ],
     "stars": 4
   },
@@ -3088,7 +3093,8 @@
     "maintainerURL": "https://github.com/dcwestra",
     "description": "Displays the current Cookies of the Week for Crumble Cookies.",
     "issues": [
-      "No image found."
+      "No image found.",
+      "Repository name and main js file name is not the same."
     ],
     "stars": 0,
     "license": "MIT",
@@ -3435,7 +3441,9 @@
     "maintainer": "kymeyer",
     "maintainerURL": "",
     "description": "Displays information retreived from a Daikin Air Conditioner Unit.",
-    "issues": [],
+    "issues": [
+      "Repository name and main js file name is not the same."
+    ],
     "stars": 2,
     "tags": [
       "daikin"
@@ -3768,7 +3776,8 @@
     "maintainerURL": "",
     "description": "Adds animated icons and changes layout of default weather plugin.",
     "issues": [
-      "There is no `package.json`. We need this file to gather information about the module for the module list page."
+      "There is no `package.json`. We need this file to gather information about the module for the module list page.",
+      "Repository name and main js file name is not the same."
     ],
     "stars": 15,
     "license": "MIT",
@@ -3783,7 +3792,8 @@
     "maintainerURL": "https://github.com/wouter-heerwegh",
     "description": "Retrieves live timings of busses for a specific bus stop.",
     "issues": [
-      "There is no `package.json`. We need this file to gather information about the module for the module list page."
+      "There is no `package.json`. We need this file to gather information about the module for the module list page.",
+      "Repository name and main js file name is not the same."
     ],
     "stars": 2
   },
@@ -3797,7 +3807,8 @@
     "description": "Display trash collection days in Den Haag / the Netherlands.",
     "issues": [
       "`package.json` issue: No repository field.",
-      "There are no specific keywords in 'package.json'. We would use them as tags on the module list page. Add a few meaningful terms to the keywords in the package.json. Not just “magicmirror” or “module”."
+      "There are no specific keywords in 'package.json'. We would use them as tags on the module list page. Add a few meaningful terms to the keywords in the package.json. Not just “magicmirror” or “module”.",
+      "Repository name and main js file name is not the same."
     ],
     "stars": 0,
     "license": "ISC",
@@ -4002,7 +4013,8 @@
     "description": "Rewrite of MMM-Brewdog, using new API and more info.",
     "issues": [
       "There is no `package.json`. We need this file to gather information about the module for the module list page.",
-      "Issues are not enabled in the GitHub repository. So users cannot report bugs. Please enable issues in your repo."
+      "Issues are not enabled in the GitHub repository. So users cannot report bugs. Please enable issues in your repo.",
+      "Repository name and main js file name is not the same."
     ],
     "stars": 0,
     "hasGithubIssues": false
@@ -4510,7 +4522,8 @@
     "description": "Display incoming emails.",
     "issues": [
       "`package.json` issue: No repository field.",
-      "`package.json` issue: No license field."
+      "`package.json` issue: No license field.",
+      "Repository name and main js file name is not the same."
     ],
     "outdated": "Abandoned. No updates since years. But may still work.",
     "stars": 37,
@@ -5443,7 +5456,8 @@
       "`package.json` issue: No description",
       "`package.json` issue: No repository field.",
       "There are no specific keywords in 'package.json'. We would use them as tags on the module list page. Add a few meaningful terms to the keywords in the package.json. Not just “magicmirror” or “module”.",
-      "Issue: The license in the package.json (ISC) doesn't match the license file (MIT)."
+      "Issue: The license in the package.json (ISC) doesn't match the license file (MIT).",
+      "Repository name and main js file name is not the same."
     ],
     "stars": 7,
     "license": "MIT",
@@ -6571,7 +6585,8 @@
     "description": "Displays a google map of an origin and destination.",
     "issues": [
       "There is no `package.json`. We need this file to gather information about the module for the module list page.",
-      "No image found."
+      "No image found.",
+      "Repository name and main js file name is not the same."
     ],
     "stars": 23,
     "license": "GPL-3.0"
@@ -6668,7 +6683,9 @@
     "maintainer": "spydersoft-consulting",
     "maintainerURL": "https://github.com/spydersoft-consulting",
     "description": "Display Google Tasks with Planned View.",
-    "issues": [],
+    "issues": [
+      "Repository name and main js file name is not the same."
+    ],
     "stars": 12,
     "license": "MIT",
     "tags": [
@@ -6811,7 +6828,8 @@
     "maintainerURL": "",
     "description": "Shows your meal plan for the week from grocy.",
     "issues": [
-      "Issues are not enabled in the GitHub repository. So users cannot report bugs. Please enable issues in your repo."
+      "Issues are not enabled in the GitHub repository. So users cannot report bugs. Please enable issues in your repo.",
+      "Repository name and main js file name is not the same."
     ],
     "stars": 2,
     "hasGithubIssues": false,
@@ -7166,7 +7184,8 @@
     "description": "Implements H.I.V.E AI into your mirror.",
     "issues": [
       "There is no `package.json`. We need this file to gather information about the module for the module list page.",
-      "No image found."
+      "No image found.",
+      "Repository name and main js file name is not the same."
     ],
     "stars": 2,
     "license": "MIT"
@@ -7805,7 +7824,9 @@
     "maintainer": "djey47",
     "maintainerURL": "https://github.com/djey47",
     "description": "Local transport in IDF (STIF) module based on <a target=\"_blank\" href=\"https://github.com/da4throux/MMM-Paris-RATP-PG\">MMM-Paris-RATP-PG</a>.",
-    "issues": [],
+    "issues": [
+      "Repository name and main js file name is not the same."
+    ],
     "stars": 3,
     "license": "MIT",
     "tags": [
@@ -8819,7 +8840,8 @@
     "maintainerURL": "",
     "description": "Use the keyboard to open and close a popupwindow in the MagicMirror². Like lets say using the \"q\" key will open a popupwindow on MagicMirror's webpage. Using the iFrame to display web content.",
     "issues": [
-      "There is no `package.json`. We need this file to gather information about the module for the module list page."
+      "There is no `package.json`. We need this file to gather information about the module for the module list page.",
+      "Repository name and main js file name is not the same."
     ],
     "stars": 2
   },
@@ -9174,7 +9196,9 @@
     "maintainer": "2hdlockness",
     "maintainerURL": "https://github.com/2hdlockness/",
     "description": "A module to retrieve and display Linky consumption data using CONSO API. Intended for French users.",
-    "issues": [],
+    "issues": [
+      "Repository name and main js file name is not the same."
+    ],
     "stars": 4,
     "license": "MIT",
     "tags": [
@@ -9283,7 +9307,8 @@
     "maintainerURL": "",
     "description": "Display info about home power supply - FRANCE TELEINFO ENEDIS.",
     "issues": [
-      "`package.json` issue: No repository field."
+      "`package.json` issue: No repository field.",
+      "Repository name and main js file name is not the same."
     ],
     "stars": 1,
     "license": "MIT",
@@ -9738,7 +9763,8 @@
     "maintainerURL": "",
     "description": "Display the medals for the summer olympics 2016.",
     "issues": [
-      "There is no `package.json`. We need this file to gather information about the module for the module list page."
+      "There is no `package.json`. We need this file to gather information about the module for the module list page.",
+      "Repository name and main js file name is not the same."
     ],
     "outdated": "Outdated: Only works for Rio 2016 Summer Olympics.",
     "stars": 1
@@ -9752,7 +9778,8 @@
     "maintainerURL": "",
     "description": "Display the mirrors connection status.",
     "issues": [
-      "There is no `package.json`. We need this file to gather information about the module for the module list page."
+      "There is no `package.json`. We need this file to gather information about the module for the module list page.",
+      "Repository name and main js file name is not the same."
     ],
     "stars": 8,
     "license": "MIT",
@@ -10352,7 +10379,8 @@
     "maintainerURL": "https://github.com/muilpp",
     "description": "Shows concerts around you of the bands you listen to the most.",
     "issues": [
-      "There is no `package.json`. We need this file to gather information about the module for the module list page."
+      "There is no `package.json`. We need this file to gather information about the module for the module list page.",
+      "Repository name and main js file name is not the same."
     ],
     "stars": 6,
     "license": "MIT",
@@ -10424,7 +10452,8 @@
     "maintainerURL": "https://github.com/Klettner",
     "description": "Android 📱 and Windows-desktop 💻 app to control your MagicMirror² remotely. (Shutdown, reboot, toggle monitor on/off, change brightness of monitor, custom-commands, etc.).",
     "issues": [
-      "There is no `package.json`. We need this file to gather information about the module for the module list page."
+      "There is no `package.json`. We need this file to gather information about the module for the module list page.",
+      "Repository name and main js file name is not the same."
     ],
     "stars": 65,
     "license": "MIT",
@@ -10489,7 +10518,9 @@
     "maintainer": "jhwelch",
     "maintainerURL": "https://github.com/jhwelch",
     "description": "Arrival times for Chicago Transit Authority buses and trains. Supports multiple bus and/or train stops.",
-    "issues": [],
+    "issues": [
+      "Repository name and main js file name is not the same."
+    ],
     "stars": 1,
     "license": "MIT",
     "tags": [
@@ -10567,7 +10598,9 @@
     "maintainer": "ItsMeBrille",
     "maintainerURL": "https://github.com/ItsMeBrille",
     "description": "Display Minecraft server status and shows list of active players.",
-    "issues": [],
+    "issues": [
+      "Repository name and main js file name is not the same."
+    ],
     "stars": 7,
     "tags": [
       "minecraft",
@@ -10668,7 +10701,8 @@
     "description": "Triggers any specified rpi pins with different trigger notifications. All messages will be registered with the MMM-Remote Module automatically. It can also play sounds using MMM-Sounds module when a pin is toggled.",
     "issues": [
       "`package.json` issue: No description",
-      "No image found."
+      "No image found.",
+      "Repository name and main js file name is not the same."
     ],
     "stars": 3,
     "license": "MIT",
@@ -10688,7 +10722,8 @@
       "`package.json` issue: No repository field.",
       "`package.json` issue: license should be a valid SPDX license expression",
       "There are no specific keywords in 'package.json'. We would use them as tags on the module list page. Add a few meaningful terms to the keywords in the package.json. Not just “magicmirror” or “module”.",
-      "No compatible or wrong license field in 'package.json' or LICENSE file. Without that, we can't use an image."
+      "No compatible or wrong license field in 'package.json' or LICENSE file. Without that, we can't use an image.",
+      "Repository name and main js file name is not the same."
     ],
     "stars": 6,
     "license": "GPLv3"
@@ -10703,7 +10738,8 @@
     "description": "Display a scrolling stocks ticker.",
     "issues": [
       "Issues are not enabled in the GitHub repository. So users cannot report bugs. Please enable issues in your repo.",
-      "No image found."
+      "No image found.",
+      "Repository name and main js file name is not the same."
     ],
     "stars": 6,
     "hasGithubIssues": false,
@@ -10809,7 +10845,8 @@
     "description": "Displays the current and forecasted UV Index for a given location given its longitude and latitude. It requires a free API token from <a target=\"_blank\" href=\"https://www.openuv.io/\">https://www.openuv.io/</a>.",
     "issues": [
       "There is no `package.json`. We need this file to gather information about the module for the module list page.",
-      "Issues are not enabled in the GitHub repository. So users cannot report bugs. Please enable issues in your repo."
+      "Issues are not enabled in the GitHub repository. So users cannot report bugs. Please enable issues in your repo.",
+      "Repository name and main js file name is not the same."
     ],
     "stars": 1,
     "hasGithubIssues": false
@@ -10917,7 +10954,8 @@
     "description": "An application that adds and removes any desired modules found on this website.",
     "issues": [
       "`package.json` issue: No repository field.",
-      "There are no keywords in 'package.json'. We would use them as tags on the module list page."
+      "There are no keywords in 'package.json'. We would use them as tags on the module list page.",
+      "Repository name and main js file name is not the same."
     ],
     "stars": 2,
     "license": "MIT",
@@ -11240,7 +11278,8 @@
       "`package.json` issue: No repository field.",
       "`package.json` issue: license should be a valid SPDX license expression",
       "There are no keywords in 'package.json'. We would use them as tags on the module list page.",
-      "No compatible or wrong license field in 'package.json' or LICENSE file. Without that, we can't use an image."
+      "No compatible or wrong license field in 'package.json' or LICENSE file. Without that, we can't use an image.",
+      "Repository name and main js file name is not the same."
     ],
     "outdated": "Abandoned. No reactions to issues since years. Seems not to work anymore. Use MMM-Mopidy-MPD instead.",
     "stars": 14,
@@ -11631,7 +11670,8 @@
     "maintainerURL": "",
     "description": "Displays the public transport information for Munich - Germany.",
     "issues": [
-      "`package.json` issue: No description"
+      "`package.json` issue: No description",
+      "Repository name and main js file name is not the same."
     ],
     "outdated": "Abandoned. Doesnt' work anymore. No reactions to issues and PRs since years.",
     "stars": 26,
@@ -12134,7 +12174,9 @@
     "maintainer": "qistoph",
     "maintainerURL": "",
     "description": "A MagicMirror² Module for Nagios.",
-    "issues": [],
+    "issues": [
+      "Repository name and main js file name is not the same."
+    ],
     "outdated": "Abandoned. Repo has been archived at 2023-03-09.",
     "stars": 7,
     "isArchived": true,
@@ -12404,7 +12446,9 @@
     "maintainer": "CFenner",
     "maintainerURL": "",
     "description": "Display your Netatmo in/outdoor weather station data.",
-    "issues": [],
+    "issues": [
+      "Repository name and main js file name is not the same."
+    ],
     "stars": 41,
     "license": "MIT",
     "tags": [
@@ -12650,7 +12694,8 @@
       "`package.json` issue: No description",
       "`package.json` issue: No repository field.",
       "`package.json` issue: No license field.",
-      "There are no keywords in 'package.json'. We would use them as tags on the module list page."
+      "There are no keywords in 'package.json'. We would use them as tags on the module list page.",
+      "Repository name and main js file name is not the same."
     ],
     "stars": 1,
     "license": "MIT",
@@ -13231,7 +13276,8 @@
     "maintainerURL": "",
     "description": "Shows information on trains departuring a configurable Dutch trainstation.",
     "issues": [
-      "There are no keywords in 'package.json'. We would use them as tags on the module list page."
+      "There are no keywords in 'package.json'. We would use them as tags on the module list page.",
+      "Repository name and main js file name is not the same."
     ],
     "stars": 12,
     "license": "ISC",
@@ -14237,7 +14283,8 @@
     "issues": [
       "`package.json` issue: No description",
       "There are no keywords in 'package.json'. We would use them as tags on the module list page.",
-      "No image found."
+      "No image found.",
+      "Repository name and main js file name is not the same."
     ],
     "stars": 7,
     "license": "MIT"
@@ -14320,7 +14367,8 @@
     "description": "Displays and alerts mirror users on new phone notifications.",
     "issues": [
       "`package.json` issue: No repository field.",
-      "`package.json` issue: No license field."
+      "`package.json` issue: No license field.",
+      "Repository name and main js file name is not the same."
     ],
     "stars": 61,
     "tags": [
@@ -14395,7 +14443,8 @@
     "maintainerURL": "",
     "description": "A python script that puts your display to sleep, if your smartphone/smartwatch is not connected to the WiFi network.",
     "issues": [
-      "There is no `package.json`. We need this file to gather information about the module for the module list page."
+      "There is no `package.json`. We need this file to gather information about the module for the module list page.",
+      "Repository name and main js file name is not the same."
     ],
     "stars": 31
   },
@@ -14507,7 +14556,9 @@
     "maintainer": "Coernel82",
     "maintainerURL": "",
     "description": "The rescued Pir module of Bugsounet. Coernel82 cannot give support! Try <a target=\"_blank\" href=\"https://gitlab.com/khassel/MMM-Universal-Pir\">MMM-Universal-Pir</a> if you have any issues.",
-    "issues": [],
+    "issues": [
+      "Repository name and main js file name is not the same."
+    ],
     "stars": 2,
     "license": "MIT",
     "tags": [
@@ -15108,7 +15159,8 @@
     "maintainerURL": "https://github.com/kurtern84",
     "description": "A simple module to show a profilpicture with your name and wheater report.",
     "issues": [
-      "There is no `package.json`. We need this file to gather information about the module for the module list page."
+      "There is no `package.json`. We need this file to gather information about the module for the module list page.",
+      "Repository name and main js file name is not the same."
     ],
     "stars": 5,
     "license": "MIT",
@@ -15189,7 +15241,9 @@
     "maintainer": "spydersoft-consulting",
     "maintainerURL": "https://github.com/spydersoft-consulting",
     "description": "Display Prometheus Alerts.",
-    "issues": [],
+    "issues": [
+      "Repository name and main js file name is not the same."
+    ],
     "stars": 3,
     "license": "MIT",
     "tags": [
@@ -15207,7 +15261,8 @@
     "description": "Displays Argentinian main soccer league (LPF) rankings for both zones, A and B.",
     "issues": [
       "There is no `package.json`. We need this file to gather information about the module for the module list page.",
-      "No compatible or wrong license field in 'package.json' or LICENSE file. Without that, we can't use an image."
+      "No compatible or wrong license field in 'package.json' or LICENSE file. Without that, we can't use an image.",
+      "Repository name and main js file name is not the same."
     ],
     "stars": 0,
     "license": "NOASSERTION"
@@ -15529,7 +15584,8 @@
     "maintainerURL": "https://github.com/Harishcchadichal",
     "description": "Uses a radar sensor to detect presence and control your MagicMirror's display accordingly.",
     "issues": [
-      "There is no `package.json`. We need this file to gather information about the module for the module list page."
+      "There is no `package.json`. We need this file to gather information about the module for the module list page.",
+      "Repository name and main js file name is not the same."
     ],
     "stars": 1
   },
@@ -16274,7 +16330,9 @@
     "maintainer": "relm923",
     "maintainerURL": "",
     "description": "Display status of local Roomba.",
-    "issues": [],
+    "issues": [
+      "Repository name and main js file name is not the same."
+    ],
     "stars": 12,
     "license": "MIT",
     "tags": [
@@ -16404,7 +16462,8 @@
     "description": "Skim council website and extract rubish collection times.",
     "issues": [
       "`package.json` issue: No repository field.",
-      "There are no keywords in 'package.json'. We would use them as tags on the module list page."
+      "There are no keywords in 'package.json'. We would use them as tags on the module list page.",
+      "Repository name and main js file name is not the same."
     ],
     "stars": 0,
     "license": "MIT",
@@ -16726,7 +16785,8 @@
     "maintainerURL": "",
     "description": "Screensaver.",
     "issues": [
-      "There is no `package.json`. We need this file to gather information about the module for the module list page."
+      "There is no `package.json`. We need this file to gather information about the module for the module list page.",
+      "Repository name and main js file name is not the same."
     ],
     "stars": 1,
     "license": "MIT",
@@ -17225,7 +17285,8 @@
       "`package.json` issue: No description",
       "`package.json` issue: No repository field.",
       "`package.json` issue: No license field.",
-      "There are no keywords in 'package.json'. We would use them as tags on the module list page."
+      "There are no keywords in 'package.json'. We would use them as tags on the module list page.",
+      "Repository name and main js file name is not the same."
     ],
     "stars": 2
   },
@@ -17776,7 +17837,8 @@
     "description": "Monitor a Solax inverter using the API. Text and graphical layouts available.",
     "issues": [
       "There is no `package.json`. We need this file to gather information about the module for the module list page.",
-      "No compatible or wrong license field in 'package.json' or LICENSE file. Without that, we can't use an image."
+      "No compatible or wrong license field in 'package.json' or LICENSE file. Without that, we can't use an image.",
+      "Repository name and main js file name is not the same."
     ],
     "stars": 1,
     "license": "NOASSERTION"
@@ -18033,7 +18095,9 @@
     "maintainer": "spydersoft-consulting",
     "maintainerURL": "https://github.com/spydersoft-consulting",
     "description": "Display incidents and component status from a StatusPage.io site.",
-    "issues": [],
+    "issues": [
+      "Repository name and main js file name is not the same."
+    ],
     "stars": 2,
     "license": "MIT",
     "tags": [
@@ -18066,7 +18130,8 @@
     "description": "Display the next transports for any given STIB (Brussel/Belgium) station.",
     "issues": [
       "There is no `package.json`. We need this file to gather information about the module for the module list page.",
-      "No image found."
+      "No image found.",
+      "Repository name and main js file name is not the same."
     ],
     "outdated": "Deprecated. API no longer works. Depends on deprecated module. Not recommended installation instructions (globally). Use module <strong>MMM-stib2</strong> instead.",
     "stars": 4,
@@ -19275,7 +19340,8 @@
     "maintainerURL": "",
     "description": "Display trains from your favorite departure station to any destination in Europe.",
     "issues": [
-      "There is no `package.json`. We need this file to gather information about the module for the module list page."
+      "There is no `package.json`. We need this file to gather information about the module for the module list page.",
+      "Repository name and main js file name is not the same."
     ],
     "stars": 3
   },
@@ -19388,7 +19454,8 @@
     "maintainerURL": "",
     "description": "Display TransLoc locations for a bus stop, used by the Rider App.",
     "issues": [
-      "There is no `package.json`. We need this file to gather information about the module for the module list page."
+      "There is no `package.json`. We need this file to gather information about the module for the module list page.",
+      "Repository name and main js file name is not the same."
     ],
     "stars": 2
   },
@@ -19828,7 +19895,9 @@
     "maintainer": "mrVragec",
     "maintainerURL": "",
     "description": "Display monitor data (online/offline detection) from <a target=\"_blank\" href=\"https://uptimerobot.com/\">https://uptimerobot.com/</a>.",
-    "issues": [],
+    "issues": [
+      "Repository name and main js file name is not the same."
+    ],
     "stars": 16,
     "license": "MIT",
     "tags": [
@@ -20120,7 +20189,8 @@
     "issues": [
       "`package.json` issue: No repository field.",
       "There are no keywords in 'package.json'. We would use them as tags on the module list page.",
-      "Issues are not enabled in the GitHub repository. So users cannot report bugs. Please enable issues in your repo."
+      "Issues are not enabled in the GitHub repository. So users cannot report bugs. Please enable issues in your repo.",
+      "Repository name and main js file name is not the same."
     ],
     "stars": 1,
     "hasGithubIssues": false,
@@ -21054,7 +21124,8 @@
     "maintainerURL": "",
     "description": "Displays low and high water time predictions for a given tide station, derived from worldtides.info.",
     "issues": [
-      "No image found."
+      "No image found.",
+      "Repository name and main js file name is not the same."
     ],
     "stars": 6,
     "tags": [
@@ -21073,7 +21144,9 @@
     "maintainer": "mumblebaj",
     "maintainerURL": "",
     "description": "Yet another word of the day module. The special feature is that you can select multiple languages and it will display as a carousel.",
-    "issues": [],
+    "issues": [
+      "Repository name and main js file name is not the same."
+    ],
     "stars": 6,
     "license": "MIT",
     "tags": [
@@ -21092,7 +21165,8 @@
     "maintainerURL": "",
     "description": "Have ws2812 LEDs on your mirror with <a target=\"_blank\" href=\"https://github.com/tom-2015/rpi-ws2812-server\">RPI-WS2812-Server</a>.",
     "issues": [
-      "No image found."
+      "No image found.",
+      "Repository name and main js file name is not the same."
     ],
     "stars": 7,
     "license": "MIT",
@@ -21111,7 +21185,8 @@
     "maintainerURL": "",
     "description": "Weather Underground Forecast Module retrieves forecast from Weather Underground. Also adds a percentage probability of precipitation to forecast display.",
     "issues": [
-      "There is no `package.json`. We need this file to gather information about the module for the module list page."
+      "There is no `package.json`. We need this file to gather information about the module for the module list page.",
+      "Repository name and main js file name is not the same."
     ],
     "outdated": "Deprecated. Wunderground API isn't working anymore.",
     "stars": 11
@@ -21125,7 +21200,8 @@
     "maintainerURL": "",
     "description": "Display weather based on wunderground API.",
     "issues": [
-      "There is no `package.json`. We need this file to gather information about the module for the module list page."
+      "There is no `package.json`. We need this file to gather information about the module for the module list page.",
+      "Repository name and main js file name is not the same."
     ],
     "outdated": "Deprecated. Wunderground API isn't working anymore. Check out MMM-MyWeather which is a fork with another API.",
     "stars": 28
@@ -21140,7 +21216,8 @@
     "description": "Minimalist Weather for the bottom_bar or thirds position of your mirror.",
     "issues": [
       "There is no `package.json`. We need this file to gather information about the module for the module list page.",
-      "Issues are not enabled in the GitHub repository. So users cannot report bugs. Please enable issues in your repo."
+      "Issues are not enabled in the GitHub repository. So users cannot report bugs. Please enable issues in your repo.",
+      "Repository name and main js file name is not the same."
     ],
     "outdated": "Deprecated. Wunderground API isn't working anymore.",
     "stars": 1,
@@ -21157,7 +21234,8 @@
     "maintainerURL": "",
     "description": "Nope! Not World War I. It's <strong>Weather Without Icons</strong>. Up to the minute weather. Full weather information, yet a small footprint.",
     "issues": [
-      "There is no `package.json`. We need this file to gather information about the module for the module list page."
+      "There is no `package.json`. We need this file to gather information about the module for the module list page.",
+      "Repository name and main js file name is not the same."
     ],
     "outdated": "Deprecated. DarkSky API no longer works since 2023-03-31.",
     "stars": 0,
@@ -21176,7 +21254,8 @@
       "`package.json` issue: No repository field.",
       "`package.json` issue: No license field.",
       "There are no keywords in 'package.json'. We would use them as tags on the module list page.",
-      "No image found."
+      "No image found.",
+      "Repository name and main js file name is not the same."
     ],
     "stars": 0,
     "license": "MIT"
@@ -21190,7 +21269,8 @@
     "maintainerURL": "",
     "description": "Integrate temperature and humidity from your xiaomi smarthome system.",
     "issues": [
-      "No image found."
+      "No image found.",
+      "Repository name and main js file name is not the same."
     ],
     "stars": 27,
     "tags": [
@@ -21211,7 +21291,8 @@
       "`package.json` issue: No repository field.",
       "`package.json` issue: No license field.",
       "There are no keywords in 'package.json'. We would use them as tags on the module list page.",
-      "No image found."
+      "No image found.",
+      "Repository name and main js file name is not the same."
     ],
     "stars": 6,
     "license": "MIT"
@@ -21227,7 +21308,8 @@
     "issues": [
       "`package.json` issue: No repository field.",
       "`package.json` issue: No license field.",
-      "There are no keywords in 'package.json'. We would use them as tags on the module list page."
+      "There are no keywords in 'package.json'. We would use them as tags on the module list page.",
+      "Repository name and main js file name is not the same."
     ],
     "stars": 0,
     "license": "MIT",
@@ -21242,7 +21324,8 @@
     "maintainerURL": "",
     "description": "Displays car routes on the map, using Yandex.Maps API.",
     "issues": [
-      "There is no `package.json`. We need this file to gather information about the module for the module list page."
+      "There is no `package.json`. We need this file to gather information about the module for the module list page.",
+      "Repository name and main js file name is not the same."
     ],
     "stars": 1,
     "license": "MIT",
@@ -21256,7 +21339,9 @@
     "maintainer": "ryck",
     "maintainerURL": "",
     "description": "Track the progress of the current year / month.",
-    "issues": [],
+    "issues": [
+      "Repository name and main js file name is not the same."
+    ],
     "stars": 11,
     "license": "MIT",
     "tags": [
@@ -21276,7 +21361,8 @@
     "maintainerURL": "https://github.com/slametps",
     "description": "Display the status of Yeelight bulbs in your local network.",
     "issues": [
-      "Please use 'smart home' instead of 'smarthome' as a keyword in your package.json."
+      "Please use 'smart home' instead of 'smarthome' as a keyword in your package.json.",
+      "Repository name and main js file name is not the same."
     ],
     "stars": 5,
     "tags": [
@@ -21295,7 +21381,8 @@
     "maintainerURL": "",
     "description": "Instead of default compliments with classical poems, just supports Chinese. 随机产生一句古诗词。.",
     "issues": [
-      "There is no `package.json`. We need this file to gather information about the module for the module list page."
+      "There is no `package.json`. We need this file to gather information about the module for the module list page.",
+      "Repository name and main js file name is not the same."
     ],
     "stars": 3
   },
@@ -21310,7 +21397,8 @@
     "issues": [
       "`package.json` issue: No description",
       "`package.json` issue: No repository field.",
-      "There are no keywords in 'package.json'. We would use them as tags on the module list page."
+      "There are no keywords in 'package.json'. We would use them as tags on the module list page.",
+      "Repository name and main js file name is not the same."
     ],
     "stars": 6,
     "license": "ISC",
@@ -21325,7 +21413,8 @@
     "maintainerURL": "https://github.com/lindsaycole",
     "description": "Integrate with YoLink Sensors.",
     "issues": [
-      "There is no `package.json`. We need this file to gather information about the module for the module list page."
+      "There is no `package.json`. We need this file to gather information about the module for the module list page.",
+      "Repository name and main js file name is not the same."
     ],
     "stars": 0
   },
@@ -21337,7 +21426,9 @@
     "maintainer": "QNimbus",
     "maintainerURL": "",
     "description": "This module reads from a YouLess energy meter in your network to display realtime energy usage information.",
-    "issues": [],
+    "issues": [
+      "Repository name and main js file name is not the same."
+    ],
     "stars": 2,
     "license": "MIT",
     "tags": [
@@ -21353,7 +21444,9 @@
     "maintainer": "eckonator",
     "maintainerURL": "https://github.com/eckonator",
     "description": "This module reads from a YouLess energy meter in your network to display a gauge of realtime energy usage information. It´s a optimized fork from QNimbus first module.",
-    "issues": [],
+    "issues": [
+      "Repository name and main js file name is not the same."
+    ],
     "stars": 3,
     "license": "MIT",
     "tags": [
@@ -21370,7 +21463,8 @@
     "maintainerURL": "",
     "description": "Enables easy integration of YouTube videos.",
     "issues": [
-      "There is no `package.json`. We need this file to gather information about the module for the module list page."
+      "There is no `package.json`. We need this file to gather information about the module for the module list page.",
+      "Repository name and main js file name is not the same."
     ],
     "stars": 22
   },
@@ -21383,7 +21477,8 @@
     "maintainerURL": "https://github.com/ngnijland",
     "description": "Check if a YouTube channel if streaming. If it is, it plays the live stream.",
     "issues": [
-      "No image found."
+      "No image found.",
+      "Repository name and main js file name is not the same."
     ],
     "stars": 2,
     "license": "MIT",
@@ -21402,7 +21497,9 @@
     "maintainer": "doctorfree",
     "maintainerURL": "https://github.com/doctorfree",
     "description": "Embed YouTube videos and playlists using the Electron webview tag rather than an iframe. May assist access to YouTube videos blocked in an iframe.",
-    "issues": [],
+    "issues": [
+      "Repository name and main js file name is not the same."
+    ],
     "stars": 3,
     "tags": [
       "webview"
@@ -21419,7 +21516,8 @@
     "maintainerURL": "",
     "description": "The official Yr Nowcast module for MagicMirror², which displays data from <a target=\"_blank\" href=\"https://www.yr.no\">Yr</a>. Nowcast data is only available for some Norwegian locations covered by the Norwegian weather radars. Yr is a weather service from the Norwegian Broadcasting Corporation and the Norwegian Meteorological Institute.",
     "issues": [
-      "There is no `package.json`. We need this file to gather information about the module for the module list page."
+      "There is no `package.json`. We need this file to gather information about the module for the module list page.",
+      "Repository name and main js file name is not the same."
     ],
     "stars": 24
   },
@@ -21433,7 +21531,8 @@
     "description": "Displays weather forecast from <a target=\"_blank\" href=\"https://www.yr.no\">Yr</a>. Yr is a weather service from the Norwegian Broadcasting Corporation and the Norwegian Meteorological Institute.",
     "issues": [
       "There is no `package.json`. We need this file to gather information about the module for the module list page.",
-      "Issues are not enabled in the GitHub repository. So users cannot report bugs. Please enable issues in your repo."
+      "Issues are not enabled in the GitHub repository. So users cannot report bugs. Please enable issues in your repo.",
+      "Repository name and main js file name is not the same."
     ],
     "stars": 16,
     "hasGithubIssues": false
@@ -21447,7 +21546,8 @@
     "maintainerURL": "https://github.com/choffmann",
     "description": "Show the subscription from Youtube Channel.",
     "issues": [
-      "There are no keywords in 'package.json'. We would use them as tags on the module list page."
+      "There are no keywords in 'package.json'. We would use them as tags on the module list page.",
+      "Repository name and main js file name is not the same."
     ],
     "stars": 4,
     "license": "MIT",
@@ -21461,7 +21561,9 @@
     "maintainer": "PierreGode",
     "maintainerURL": "",
     "description": "Display ZAPTEC charging API.",
-    "issues": [],
+    "issues": [
+      "Repository name and main js file name is not the same."
+    ],
     "stars": 2,
     "license": "MIT",
     "tags": [
@@ -21484,7 +21586,8 @@
       "`package.json` issue: No description",
       "`package.json` issue: No repository field.",
       "There are no specific keywords in 'package.json'. We would use them as tags on the module list page. Add a few meaningful terms to the keywords in the package.json. Not just “magicmirror” or “module”.",
-      "Issues are not enabled in the GitHub repository. So users cannot report bugs. Please enable issues in your repo."
+      "Issues are not enabled in the GitHub repository. So users cannot report bugs. Please enable issues in your repo.",
+      "Repository name and main js file name is not the same."
     ],
     "stars": 0,
     "hasGithubIssues": false,

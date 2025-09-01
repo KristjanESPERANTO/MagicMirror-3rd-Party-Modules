@@ -159,7 +159,7 @@ function updateModuleCardContainer () {
 
 function sortData (sortOption) {
   switch (sortOption) {
-    case "lastcommit":
+    case "last-commit":
       filteredModuleList.sort((a, b) =>
         b.lastCommit.localeCompare(a.lastCommit));
       break;
