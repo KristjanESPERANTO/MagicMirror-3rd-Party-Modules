@@ -59,7 +59,20 @@ export default defineConfig([
     extends: ["packageJson/recommended"],
     rules: {
       "depend/ban-dependencies": ["error", {allowed: ["lint-staged", "moment"]}],
-      "package-json/order-properties": "off"
+      "package-json/order-properties": "off",
+      "package-json/sort-collections": [
+        "error",
+        [
+          "config",
+          "dependencies",
+          "devDependencies",
+          "exports",
+          "optionalDependencies",
+          "overrides",
+          "peerDependencies",
+          "peerDependenciesMeta"
+        ]
+      ]
     }
   }
 ]);
