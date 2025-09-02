@@ -56,7 +56,7 @@ async function findAndResizeImage (moduleName, moduleMaintainer) {
         )
         .toFile(targetPath);
     } catch (error) {
-      issues.push(`Error processing image: ${error.message}`);
+      issues.push(`Error processing image "${imageToProcess}": ${error.message}`);
     }
   } else {
     issues.push("No image found.");
