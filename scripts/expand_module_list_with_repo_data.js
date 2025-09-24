@@ -213,12 +213,12 @@ async function checkLicenseAndHandleScreenshot (moduleData, module) {
 }
 
 async function expandModuleList () {
-  const moduleList = await getJson("./docs/data/modules.stage.2.json");
+  const moduleList = await getJson("./docs/data/modules.stage.3.json");
 
   const expandedModuleList = await addInformationFromPackageJson(moduleList);
 
   fs.writeFileSync(
-    "./docs/data/modules.stage.3.json",
+    "./docs/data/modules.stage.4.json",
     JSON.stringify(expandedModuleList, null, 2),
     "utf8"
   );

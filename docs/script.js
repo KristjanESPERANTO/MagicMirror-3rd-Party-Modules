@@ -1,4 +1,5 @@
 let allModules = [];
+let skippedModules = [];
 let filteredModuleList = [];
 const cardTemplate = document.getElementById("card-template");
 const resetButton = document.getElementById("reset-button");
@@ -32,6 +33,23 @@ function toggleMenu () {
 
 function createCard (moduleData) {
   const card = document.importNode(cardTemplate.content, true);
+
+  // Skipped module special handling
+  if (moduleData.skipped) {
+    card.querySelector(".card").classList.add("skipped");
+    card.querySelector(".name").textContent = moduleData.name || "Unknown Module";
+    card.querySelector(".name").href = moduleData.url || "#";
+    card.querySelector(".description").innerHTML = `<span style='color:red;font-weight:bold'>Error: Module could not be loaded.</span><br>${moduleData.error || "Unknown Error"}`;
+    // Remove other info sections
+    card.querySelector(".maintainer").textContent = moduleData.maintainer || "?";
+    [".stars", ".tags", ".img-container", ".info", ".outdated-note"].forEach((selector) => {
+      const element = card.querySelector(selector);
+      if (element) {
+        element.remove();
+      }
+    });
+    return card;
+  }
 
   /* Set the header data */
   card.querySelector(".name").href = moduleData.url;
@@ -132,7 +150,7 @@ function updateModuleCardContainer () {
   let moduleCounter = filteredModuleList.length;
 
   filteredModuleList.forEach((moduleData) => {
-    if (!moduleData.outdated || showOutdated.checked) {
+    if ((!moduleData.outdated || showOutdated.checked) && (!moduleData.skipped || showOutdated.checked)) {
       try {
         const cardNode = createCard(moduleData);
         if (cardNode) {
@@ -229,7 +247,8 @@ function displayStatistics (data) {
 
 function filterBySearchText (searchText) {
   const searchLower = searchText.toLowerCase();
-  filteredModuleList = allModules.filter((card) => {
+  const allModulesList = allModules.concat(skippedModules);
+  filteredModuleList = allModulesList.filter((card) => {
     const cardText = card.text
       ? card.text.toLowerCase()
       : "";
@@ -295,8 +314,8 @@ function filterByTag (tag) {
 function addCategoryFilter () {
   const categoryFilter = document.getElementById("category-filter");
   const categories = [...new Set(allModules.map((module) => module.category))];
-
   categories.sort();
+  categories.push("Problematic Modules");
 
   categories.forEach((category) => {
     const option = document.createElement("option");
@@ -308,15 +327,15 @@ function addCategoryFilter () {
   categoryFilter.addEventListener("change", () => {
     const selectedCategory = categoryFilter.value;
     if (selectedCategory === "all") {
-      filteredModuleList = allModules;
+      filteredModuleList = allModules.concat(skippedModules);
+    } else if (selectedCategory === "Problematic Modules") {
+      filteredModuleList = skippedModules;
     } else {
       filteredModuleList = allModules.filter((module) => module.category === selectedCategory);
     }
 
     searchInput.value = "";
-
     removeSelectedMarkingFromTagsAndCards();
-
     updateModuleCardContainer();
   });
 }
@@ -338,7 +357,7 @@ moduleCardContainer.addEventListener("click", (event) => {
 resetButton.addEventListener("click", () => {
   resetCategoryFilter();
   const root = document.querySelector(":root");
-  filteredModuleList = allModules;
+  filteredModuleList = allModules.concat(skippedModules);
   searchInput.value = "";
   showOutdated.checked = true;
   removeSelectedMarkingFromTagsAndCards();
@@ -360,7 +379,7 @@ searchInput.addEventListener("input", () => {
     if (searchInput.value) {
       filterBySearchText(searchInput.value);
     } else {
-      filteredModuleList = allModules;
+      filteredModuleList = allModules.concat(skippedModules);
       updateModuleCardContainer();
     }
   }, 180);
@@ -413,15 +432,27 @@ async function initiate () {
     const response = await fetch(modulesFile);
     const data = await response.json();
     allModules = data;
-    filteredModuleList = data;
-    sortData(sortDropdown.value);
-    updateModuleCardContainer();
-    displayTagButtonContainer();
-    addCategoryFilter();
   } catch (error) {
-    console.error("Error fetching data:", error);
+    allModules = [];
+    console.error("Error fetching modules:", error);
   }
 
+  // Load skipped modules
+  try {
+    const skippedRes = await fetch("data/skipped_modules.json");
+    const skippedRaw = await skippedRes.json();
+    skippedModules = skippedRaw.map((moduleObj) => ({...moduleObj, skipped: true, defaultSortWeight: 1000, lastCommit: ""}));
+  } catch {
+    skippedModules = [];
+  }
+
+  filteredModuleList = allModules.concat(skippedModules);
+  sortData(sortDropdown.value);
+  updateModuleCardContainer();
+  displayTagButtonContainer();
+  addCategoryFilter();
+
+  // Load statistics
   const statisticsFile = "data/stats.json";
   try {
     const response = await fetch(statisticsFile);
