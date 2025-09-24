@@ -350,13 +350,20 @@ resetButton.addEventListener("click", () => {
   updateModuleCardContainer();
 });
 
+// Debounce search input to avoid excessive filtering on each keystroke
+let searchDebounceTimer = null;
 searchInput.addEventListener("input", () => {
-  if (searchInput.value) {
-    filterBySearchText(searchInput.value);
-  } else {
-    filteredModuleList = allModules;
-    updateModuleCardContainer();
+  if (searchDebounceTimer) {
+    clearTimeout(searchDebounceTimer);
   }
+  searchDebounceTimer = setTimeout(() => {
+    if (searchInput.value) {
+      filterBySearchText(searchInput.value);
+    } else {
+      filteredModuleList = allModules;
+      updateModuleCardContainer();
+    }
+  }, 180);
 });
 
 // Add a change event listener to the dropdown menu
