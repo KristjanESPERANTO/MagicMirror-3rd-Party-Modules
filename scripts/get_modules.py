@@ -7,7 +7,6 @@ import shutil
 import subprocess
 from pathlib import Path
 from concurrent.futures import ThreadPoolExecutor
-from tqdm import tqdm  # Fortschrittsanzeige hinzufügen
 
 
 def get_modules():
