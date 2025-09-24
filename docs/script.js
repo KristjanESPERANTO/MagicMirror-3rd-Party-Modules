@@ -122,18 +122,22 @@ function createCard (moduleData) {
     card.querySelector(".outdated-note").remove();
   }
 
-  moduleCardContainer.appendChild(card);
+  return card;
 }
 
 function updateModuleCardContainer () {
   moduleCardContainer.innerHTML = "";
+  const fragment = document.createDocumentFragment();
 
   let moduleCounter = filteredModuleList.length;
 
   filteredModuleList.forEach((moduleData) => {
     if (!moduleData.outdated || showOutdated.checked) {
       try {
-        createCard(moduleData);
+        const cardNode = createCard(moduleData);
+        if (cardNode) {
+          fragment.appendChild(cardNode);
+        }
       } catch (error) {
         console.error("Error creating module", moduleData, error);
       }
@@ -141,6 +145,9 @@ function updateModuleCardContainer () {
       moduleCounter -= 1;
     }
   });
+
+  // Single DOM insertion to minimize reflows/layout thrash
+  moduleCardContainer.appendChild(fragment);
 
   const moduleCountElement = document.getElementById("module-count-value");
   moduleCountElement.textContent = `${moduleCounter} of ${allModules.length}`;
