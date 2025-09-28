@@ -273,7 +273,7 @@ def check_modules():
     }
 
     modules_json_file = open(
-        "./docs/data/modules.stage.4.json", encoding="utf-8")
+        "./docs/data/modules.stage.5.json", encoding="utf-8")
     modules = json.load(modules_json_file)
     stats = {
         "moduleCounter": 0,
@@ -287,7 +287,7 @@ def check_modules():
 
     markdown_output_modules = ""
 
-    for module in modules:
+    for module in modules["modules"]:
         module["defaultSortWeight"] = 0
         stats["moduleCounter"] += 1
 
@@ -528,7 +528,7 @@ def check_modules():
                 module["issues"] = False
 
             # Lift modules with many stars in the default sort order.
-            module["defaultSortWeight"] = module["defaultSortWeight"] - (module['stars'] // 20)
+            module["defaultSortWeight"] = module["defaultSortWeight"] - (module.get('stars', 0) // 20)
 
             # Modules with few stars shouldn't be too far up in the default sort order. So we give them a minimum value of one.
             if module.get('stars', 0) < 3:

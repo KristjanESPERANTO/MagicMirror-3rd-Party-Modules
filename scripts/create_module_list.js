@@ -1,5 +1,6 @@
 import fs from "node:fs";
 import {marked} from "marked";
+import process from "node:process";
 import sanitizeHtml from "sanitize-html";
 
 async function fetchMarkdownData () {
@@ -28,6 +29,7 @@ async function createModuleList () {
   const markdown = await fetchMarkdownData();
   const moduleList = [];
   let category = "";
+  const missingRepoErrors = [];
 
   for (const line of markdown.split("\n")) {
     if (line.startsWith("### ")) {
@@ -45,53 +47,60 @@ async function createModuleList () {
       if (parts.length === 5 || parts.length === 6) {
         const issues = [];
 
-        const url = parts[1].match(/\[(.*?)\]\((.*?)\)/u)[2].trim();
-        if (
-          !url.startsWith("https://github.com") &&
-          !url.startsWith("https://gitlab.com") &&
-          !url.startsWith("https://bitbucket.org")
-        ) {
-          issues.push(`URL: Neither a valid GitHub nor a valid GitLab URL: ${url}.`);
+        const repoCell = parts[1];
+        const repoMatch = repoCell.match(/\[(.*?)\]\((.*?)\)/u);
+
+        if (repoMatch === null) {
+          missingRepoErrors.push(line);
+        } else {
+          const url = repoMatch[2].trim();
+          if (
+            !url.startsWith("https://github.com") &&
+            !url.startsWith("https://gitlab.com") &&
+            !url.startsWith("https://bitbucket.org")
+          ) {
+            issues.push(`URL: Neither a valid GitHub nor a valid GitLab URL: ${url}.`);
+          }
+
+          const maintainer = url.split("/")[3];
+          const name = url.split("/")[4];
+
+          const id = `${maintainer}/${name}`;
+
+          const maintainerLinked = parts[2].match(/\[(.*?)\]\((.*?)\)/u);
+          let maintainerURL = "";
+          if (maintainerLinked !== null) {
+            maintainerURL = maintainerLinked[2];
+          }
+
+          const descriptionMarkdown = parts[3];
+          const descriptionHtml = marked.parseInline(descriptionMarkdown);
+          const descriptionHtmlATarget = descriptionHtml.replaceAll(
+            "<a href=",
+            "<a target=\"_blank\" href="
+          );
+          const description = sanitizeHtml(descriptionHtmlATarget);
+
+          const module = {
+            name,
+            category,
+            url,
+            id,
+            maintainer,
+            maintainerURL,
+            description,
+            issues
+          };
+
+          if (parts.length === 6) {
+            const outdatedMarkdown = parts[4];
+            const outdatedHtml = marked.parseInline(outdatedMarkdown);
+            const outdated = sanitizeHtml(outdatedHtml);
+            module.outdated = outdated;
+          }
+
+          moduleList.push(module);
         }
-
-        const maintainer = url.split("/")[3];
-        const name = url.split("/")[4];
-
-        const id = `${maintainer}/${name}`;
-
-        const maintainerLinked = parts[2].match(/\[(.*?)\]\((.*?)\)/u);
-        let maintainerURL = "";
-        if (maintainerLinked !== null) {
-          maintainerURL = maintainerLinked[2];
-        }
-
-        const descriptionMarkdown = parts[3];
-        const descriptionHtml = marked.parseInline(descriptionMarkdown);
-        const descriptionHtmlATarget = descriptionHtml.replaceAll(
-          "<a href=",
-          "<a target=\"_blank\" href="
-        );
-        const description = sanitizeHtml(descriptionHtmlATarget);
-
-        const module = {
-          name,
-          category,
-          url,
-          id,
-          maintainer,
-          maintainerURL,
-          description,
-          issues
-        };
-
-        if (parts.length === 6) {
-          const outdatedMarkdown = parts[4];
-          const outdatedHtml = marked.parseInline(outdatedMarkdown);
-          const outdated = sanitizeHtml(outdatedHtml);
-          module.outdated = outdated;
-        }
-
-        moduleList.push(module);
       }
     }
   }
@@ -102,6 +111,10 @@ async function createModuleList () {
     modules: sortedModuleList
   };
 
+  if (missingRepoErrors.length > 0) {
+    throw new Error(`[create_module_list] Missing repository link in ${missingRepoErrors.length} line(s):\n${missingRepoErrors.join("\n")}`);
+  }
+
 
   fs.writeFileSync(
     "./docs/data/modules.stage.1.json",
@@ -110,4 +123,7 @@ async function createModuleList () {
   );
 }
 
-createModuleList();
+createModuleList().catch((error) => {
+  console.error(error);
+  process.exit(1);
+});

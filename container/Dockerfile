@@ -10,6 +10,7 @@ set -e
 git config --global --add safe.directory /workspace
 git log -1
 export GITHUB_TOKEN="${GITHUB_TOKEN}"
+pip install requests
 npm clean-install
 node --run all
 EOF

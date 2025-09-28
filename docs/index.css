@@ -605,3 +605,51 @@ input:checked + .slider::before {
   padding: 0.5rem;
   cursor: pointer;
 }
+
+/* Styling for skipped/failed modules */
+.card.skipped {
+  border-left: 4px solid #dc3545;
+  background-image: repeating-linear-gradient(140deg, #0000, #f002 2%);
+  opacity: 0.85;
+}
+
+.card.skipped .header {
+  background-color: #fdeaea;
+  border-bottom: 1px solid #f5c6cb;
+}
+
+.card.skipped .header .title {
+  color: #721c24;
+}
+
+.card.skipped .error-message {
+  color: #dc3545;
+  font-weight: 500;
+  padding: 0.5rem;
+  background-color: #f8d7da;
+  border: 1px solid #f5c6cb;
+  border-radius: 4px;
+  margin: 0.5rem;
+  font-size: 0.9rem;
+}
+
+/* Dark mode styles for skipped modules */
+body.dark .card.skipped {
+  background-color: #2d1b1b;
+  border-left-color: #dc3545;
+}
+
+body.dark .card.skipped .header {
+  background-color: #3d2222;
+  border-bottom-color: #5a2828;
+}
+
+body.dark .card.skipped .header .title {
+  color: #ff6b6b;
+}
+
+body.dark .card.skipped .error-message {
+  background-color: #4a2626;
+  border-color: #5a2828;
+  color: #ff8a80;
+}
