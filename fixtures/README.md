@@ -26,11 +26,17 @@ npm run fixtures:generate
 
 The command rewrites everything under `fixtures/data/`. Keep these files version-controlled so schema tests stay reproducible.
 
+After regenerating, validate the fixtures:
+
+```bash
+npm run test:fixtures
+```
+
+This command is also part of `npm run lint`, so CI will fail if the fixtures drift from the registered schemas.
+
 ## When to refresh
 
 - A stage schema gains or removes fields.
 - You change `modules.seed.json` (added/removed sample modules or descriptions).
 - You update `modules.metadata.json` with new mocked stars, tags, or warnings.
 - The real pipeline introduces new derived fields you want reflected in the fixtures.
-
-After regenerating, remember to run the schema validation (planned in `npm run test:fixtures`) to confirm every artifact still conforms.

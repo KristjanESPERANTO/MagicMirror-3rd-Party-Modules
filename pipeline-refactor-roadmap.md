@@ -89,8 +89,7 @@ These topics sit adjacent to the pipeline work but should stay visible while pri
 
 ## Next Concrete Steps
 
-1. Add a schema-fixture validation command (`npm run test:fixtures`) and wire it into automated checks so the curated dataset guards regressions.
-2. File follow-up issues for P1.5 and P1.6 (final artifact schemas + shared definitions) and slot them after the architecture work in the board.
-3. Draft the orchestrator CLI design doc (task P1.2) using the stage graph and architecture diagrams as the backbone for review.
+1. File follow-up issues for P1.5 and P1.6 (final artifact schemas + shared definitions) and slot them after the architecture work in the board.
+2. Draft the orchestrator CLI design doc (task P1.2) using the stage graph and architecture diagrams as the backbone for review.
 
 Feel free to adjust priorities, rename tasks, or add new items. This roadmap is meant to stay alive—update it as soon as we learn something new during implementation.
