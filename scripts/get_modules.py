@@ -14,10 +14,23 @@ def get_modules():
     # For testing set this to a lower number to test only a few modules
     max_module_counter = 99999
 
-    modules_json_file = open(
-        "./docs/data/modules.stage.1.json", encoding="utf-8")
-    modules_data = json.load(modules_json_file)
-    modules = modules_data.get("modules")
+    with open("./docs/data/modules.stage.1.json", encoding="utf-8") as modules_json_file:
+        modules_data = json.load(modules_json_file)
+
+    if isinstance(modules_data, dict):
+        modules = modules_data.get("modules")
+        if modules is None:
+            raise ValueError("modules.stage.1.json is missing the 'modules' property.")
+    elif isinstance(modules_data, list):
+        modules = modules_data
+    else:
+        raise TypeError(
+            "modules.stage.1.json must contain either an object with a 'modules' property or a list of modules."
+        )
+    valid_modules = []
+
+    # Validate URLs in parallel
+    validated_modules = validate_urls(modules)
 
     for module in modules:
         if module_counter < max_module_counter:
