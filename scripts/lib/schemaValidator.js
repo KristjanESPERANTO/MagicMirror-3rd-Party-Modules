@@ -14,7 +14,10 @@ const STAGE_SCHEMAS = {
   "modules.stage.2": "modules.stage.2.schema.json",
   "modules.stage.3": "modules.stage.3.schema.json",
   "modules.stage.4": "modules.stage.4.schema.json",
-  "modules.stage.5": "modules.stage.5.schema.json"
+  "modules.stage.5": "modules.stage.5.schema.json",
+  "modules.final": "modules.final.schema.json",
+  "modules.min": "modules.min.schema.json",
+  stats: "stats.schema.json"
 };
 
 const ajv = new Ajv({allErrors: true, strict: false});

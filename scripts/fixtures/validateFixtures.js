@@ -12,7 +12,10 @@ const FIXTURES = [
   {stageId: "modules.stage.2", relativePath: "fixtures/data/modules.stage.2.json"},
   {stageId: "modules.stage.3", relativePath: "fixtures/data/modules.stage.3.json"},
   {stageId: "modules.stage.4", relativePath: "fixtures/data/modules.stage.4.json"},
-  {stageId: "modules.stage.5", relativePath: "fixtures/data/modules.stage.5.json"}
+  {stageId: "modules.stage.5", relativePath: "fixtures/data/modules.stage.5.json"},
+  {stageId: "modules.final", relativePath: "fixtures/data/modules.json"},
+  {stageId: "modules.min", relativePath: "fixtures/data/modules.min.json"},
+  {stageId: "stats", relativePath: "fixtures/data/stats.json"}
 ];
 
 function resolvePath (relativePath) {

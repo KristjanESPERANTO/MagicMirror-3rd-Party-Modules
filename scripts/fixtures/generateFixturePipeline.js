@@ -94,6 +94,49 @@ function buildFinalEntry (seedModule, info) {
   return entry;
 }
 
+function hostKeyFromUrl (url) {
+  try {
+    const {hostname} = new URL(url);
+    const cleaned = hostname.toLowerCase().replace(/^www\./u, "");
+    const [firstSegment] = cleaned.split(".");
+    return firstSegment || "unknown";
+  } catch {
+    return "unknown";
+  }
+}
+
+function buildStats (seed, metadata, finalModules) {
+  const moduleCounter = finalModules.length;
+  const modulesWithImageCounter = finalModules.filter((module) => typeof module.image === "string" && module.image.length > 0).length;
+  const modulesWithIssuesCounter = finalModules.filter((module) => module.issues === true).length;
+  const issueCounter = seed.modules.reduce((sum, module) => {
+    const info = ensureMetadata(module.id, metadata);
+    const issues = Array.isArray(info.issuesStage4) ? info.issuesStage4.length : 0;
+    return sum + issues;
+  }, 0);
+
+  const repositoryHoster = finalModules.reduce((accumulator, module) => {
+    const key = hostKeyFromUrl(module.url);
+    accumulator[key] = (accumulator[key] ?? 0) + 1;
+    return accumulator;
+  }, {});
+
+  const maintainer = finalModules.reduce((accumulator, module) => {
+    accumulator[module.maintainer] = (accumulator[module.maintainer] ?? 0) + 1;
+    return accumulator;
+  }, {});
+
+  return {
+    moduleCounter,
+    modulesWithImageCounter,
+    modulesWithIssuesCounter,
+    issueCounter,
+    lastUpdate: seed.lastUpdate,
+    repositoryHoster,
+    maintainer
+  };
+}
+
 function main () {
   const seed = readJson("fixtures/modules.seed.json");
   const metadata = readJson("fixtures/modules.metadata.json");
@@ -124,6 +167,11 @@ function main () {
     return buildFinalEntry(module, info);
   });
   writeJson(path.join("fixtures", "data", "modules.json"), {modules: finalModules});
+
+  writeJson(path.join("fixtures", "data", "modules.min.json"), {modules: finalModules});
+
+  const stats = buildStats(seed, metadata, finalModules);
+  writeJson(path.join("fixtures", "data", "stats.json"), stats);
 
   console.log(`Generated fixture pipeline for ${finalModules.length} modules.`);
 }

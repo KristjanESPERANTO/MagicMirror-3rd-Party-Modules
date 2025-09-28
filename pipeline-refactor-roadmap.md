@@ -13,14 +13,14 @@ This document captures the long-term improvements we want to implement in the mo
 
 ### 1. Pipeline Architecture & Orchestration
 
-| Task | Description                                                                                                                                                                   | Dependencies | Effort |
-| ---- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | ------ |
-| P1.1 | Describe the full stage graph (inputs/outputs, side-effects) in a machine-readable config ([stage graph](pipeline/stage-graph.json)) ✅ Completed Sep 2025                    | none         | S      |
-| P1.2 | Introduce a lightweight orchestrator (Node CLI) that reads the config and runs stages with structured logging                                                                 | P1.1         | M      |
-| P1.3 | Add JSON-schema validation for every stage boundary (modules.stage.\* files) ([schemas](pipeline/schemas)) ✅ Completed Sep 2025                                              | P1.1         | M      |
-| P1.4 | Provide a skip/only mechanism for partial runs (e.g. `--only=checks`)                                                                                                         | P1.2         | S      |
-| P1.5 | Define schemas for published outputs (`modules.json`, `modules.min.json`, `stats.json`), extend fixtures to emit those artifacts, and enforce validation in release packaging | P1.3         | M      |
-| P1.6 | Consolidate shared schema definitions (shared `$defs` / generator) to keep stage contracts in sync                                                                            | P1.3         | S      |
+| Task | Description                                                                                                                                                | Dependencies | Effort |
+| ---- | ---------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | ------ |
+| P1.1 | Describe the full stage graph (inputs/outputs, side-effects) in a machine-readable config ([stage graph](pipeline/stage-graph.json)) ✅ Completed Sep 2025 | none         | S      |
+| P1.2 | Introduce a lightweight orchestrator (Node CLI) that reads the config and runs stages with structured logging                                              | P1.1         | M      |
+| P1.3 | Add JSON-schema validation for every stage boundary (modules.stage.\* files) ([schemas](pipeline/schemas)) ✅ Completed Sep 2025                           | P1.1         | M      |
+| P1.4 | Provide a skip/only mechanism for partial runs (e.g. `--only=checks`)                                                                                      | P1.2         | S      |
+| P1.5 | Final artifact schemas & validation: see playbook below for phased tasks covering schema design, fixtures, and release enforcement                         | P1.3         | M      |
+| P1.6 | Consolidate shared schema definitions (shared `$defs` / generator) to keep stage contracts in sync                                                         | P1.3         | S      |
 
 ### 2. Runtime & Codebase Consolidation
 
@@ -89,7 +89,51 @@ These topics sit adjacent to the pipeline work but should stay visible while pri
 
 ## Next Concrete Steps
 
-1. File follow-up issues for P1.5 and P1.6 (final artifact schemas + shared definitions) and slot them after the architecture work in the board.
-2. Draft the orchestrator CLI design doc (task P1.2) using the stage graph and architecture diagrams as the backbone for review.
+1. Launch **P1.5 Phase 2**: finalize fixture generation updates, document the refresh flow, and wire outputs into CI alongside the new schemas.
+2. Prep **P1.5 Phase 3** by sketching the CI integration plan (commands, failure handling) and sharing it with maintainers for early feedback.
+3. Scope **P1.6 shared `$defs`** work, identifying candidates from the freshly added schemas so consolidation can start immediately after Phase 3.
+4. Tighten the Stage 1 `maintainerURL` rules as part of the P1.5 cleanup so the stricter schema can ship with the Phase 3 automation.
+5. Draft the orchestrator CLI design doc (task P1.2) using the stage graph and architecture diagrams as the backbone for review.
+
+## P1.5 Playbook: Final Artifact Schemas & Validation
+
+**Prerequisite**: Orchestrator design (P1.2) is approved and the MVP implementation is underway so stage sequencing and logging are stable.
+
+### Phase 0 – Baseline the current artifacts ✅ Completed Sep 2025
+
+- Frozen snapshots stored under `fixtures/baseline/2025-09-28/` document `modules.json`, `modules.min.json`, and `stats.json` from the current pipeline.
+- Implicit contract notes captured during schema drafting; discrepancies logged for follow-up with schema tightening work.
+
+### Phase 1 – Schema design & shared definitions ✅ Completed Sep 2025
+
+- JSON Schemas for `modules.json`, `modules.min.json`, and `stats.json` now live in `pipeline/schemas/`, aligning with observed data.
+- Baseline artifacts validate cleanly; validation is wired into `scripts/fixtures/validateFixtures.js` for repeatable checks.
+- Maintainer review scheduled for the next roadmap sync to confirm conventions and plan incremental tightening.
+
+### Phase 2 – Fixture pipeline extensions
+
+- Extend `scripts/fixtures/generateFixturePipeline.js` to emit the published artifacts derived from the existing seed metadata.
+- Store the generated fixtures under `fixtures/data/` with deterministic ordering so they slot into automated validation.
+- Update `fixtures/README.md` with refresh instructions and describe how the final artifact fixtures map to stage outputs.
+- Normalize any legacy `maintainerURL` values in the Stage 1 data set so tighter schemas won't break refreshes.
+
+### Phase 3 – Validation automation
+
+- Add schema files to `pipeline/schemas/` and wire them into `scripts/fixtures/validateFixtures.js` (or a sibling CLI) so `npm run test:fixtures` covers the new artifacts.
+- Integrate artifact validation into the release packaging flow (npm script + CI job) and fail the build on schema violations.
+- Harden the Stage 1 schema to require the cleaned `maintainerURL` shape and propagate the same constraint to the final artifact schemas.
+- Document remediation steps for failures (regenerate fixtures, adjust schemas, escalate breaking changes).
+
+### Phase 4 – Rollout & follow-up
+
+- Announce the change in the contributor guide and release notes, highlighting how to run the new validation locally.
+- Backfill any missing historical data or metadata required by the schemas, capturing follow-up bugs as needed.
+- Confirm the orchestrator (P1.2) consumes the schemas for runtime validation once it’s live, closing the loop between build-time and runtime guarantees.
+
+**Success Criteria**
+
+- All published artifacts validate against the new schemas in CI and during release packaging.
+- Final artifact fixtures stay in sync with stage fixtures and provide regression coverage for downstream consumers.
+- Documentation clearly describes the schema contracts, validation commands, and remediation paths.
 
 Feel free to adjust priorities, rename tasks, or add new items. This roadmap is meant to stay alive—update it as soon as we learn something new during implementation.
