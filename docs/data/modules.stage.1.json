@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "2025-09-01T20:57:20.618Z",
+  "lastUpdate": "2025-09-28T11:56:56.711Z",
   "modules": [
     {
       "name": "MMM-01ZM",
@@ -256,9 +256,9 @@
     {
       "name": "MMM-AlexaControl",
       "category": "Voice Control",
-      "url": "https://github.com/JoChef2/MMM-AlexaControl",
-      "id": "JoChef2/MMM-AlexaControl",
-      "maintainer": "JoChef2",
+      "url": "https://github.com/JosefJantzen/MMM-AlexaControl",
+      "id": "JosefJantzen/MMM-AlexaControl",
+      "maintainer": "JosefJantzen",
       "maintainerURL": "",
       "description": "The MMM-AlexaControl module allows you to control your Mirror with Alexa (every device that support Wemos devices). You can turn it on and off, change the page and send notifications to other modules.",
       "issues": []
@@ -477,10 +477,10 @@
     {
       "name": "MMM-AT-Bus",
       "category": "Transport / Travel",
-      "url": "https://github.com/Estanz0/MMM-AT-Bus",
-      "id": "Estanz0/MMM-AT-Bus",
-      "maintainer": "Estanz0",
-      "maintainerURL": "https://github.com/Estanz0",
+      "url": "https://github.com/byronxlg/MMM-AT-Bus",
+      "id": "byronxlg/MMM-AT-Bus",
+      "maintainer": "byronxlg",
+      "maintainerURL": "",
       "description": "Displays arrival time in minutes or scheduled arrival for a selected bus or stop in Auckland, NZ.",
       "issues": []
     },
@@ -869,10 +869,10 @@
     {
       "name": "MMM-Bluelinky",
       "category": "Transport / Travel",
-      "url": "https://github.com/Cyw00d/MMM-Bluelinky",
-      "id": "Cyw00d/MMM-Bluelinky",
-      "maintainer": "Cyw00d",
-      "maintainerURL": "https://github.com/Cyw00d\"",
+      "url": "https://github.com/kstolk/MMM-Bluelinky",
+      "id": "kstolk/MMM-Bluelinky",
+      "maintainer": "kstolk",
+      "maintainerURL": "",
       "description": "Displays some of your Hyundai's data on your Mirror, the code is based on <a target=\"_blank\" href=\"https://github.com/martinburheimtingstad/MMM-Tesla2\">MMM-Tesla2</a>.",
       "issues": []
     },
@@ -1875,10 +1875,10 @@
       "issues": []
     },
     {
-      "name": "MMM-CrumbleCOTW",
+      "name": "MMM-CrumblCOTW",
       "category": "Entertainment / Misc",
-      "url": "https://github.com/dcwestra/MMM-CrumbleCOTW",
-      "id": "dcwestra/MMM-CrumbleCOTW",
+      "url": "https://github.com/dcwestra/MMM-CrumblCOTW",
+      "id": "dcwestra/MMM-CrumblCOTW",
       "maintainer": "dcwestra",
       "maintainerURL": "https://github.com/dcwestra",
       "description": "Displays the current Cookies of the Week for Crumble Cookies.",
@@ -2049,9 +2049,9 @@
     {
       "name": "MMM-CzechPost",
       "category": "Utility / IoT / 3rd Party / Integration",
-      "url": "https://github.com/RichieCZ/MMM-CzechPost",
-      "id": "RichieCZ/MMM-CzechPost",
-      "maintainer": "RichieCZ",
+      "url": "https://github.com/richardfous/MMM-CzechPost",
+      "id": "richardfous/MMM-CzechPost",
+      "maintainer": "richardfous",
       "maintainerURL": "",
       "description": "Display tracking information for parcels handled by Czech Post.",
       "issues": []
@@ -2278,6 +2278,16 @@
       "maintainer": "Helpi90",
       "maintainerURL": "",
       "description": "Display train arrivals/departures (unofficial frontend for db navigator) with details for Germany.",
+      "issues": []
+    },
+    {
+      "name": "MMM-DBF-Navigator",
+      "category": "Transport / Travel",
+      "url": "https://github.com/Pascal-nie/MMM-DBF-Navigator",
+      "id": "Pascal-nie/MMM-DBF-Navigator",
+      "maintainer": "Pascal-nie",
+      "maintainerURL": "https://github.com/Pascal-nie",
+      "description": "Display real time Deutsche Bahn train departures, including delays, from one or more selected stations.",
       "issues": []
     },
     {
@@ -2792,9 +2802,9 @@
     {
       "name": "MMM-EMTValencia",
       "category": "Transport / Travel",
-      "url": "https://github.com/TheRaulXP/MMM-EMTValencia",
-      "id": "TheRaulXP/MMM-EMTValencia",
-      "maintainer": "TheRaulXP",
+      "url": "https://github.com/raulbalanza/MMM-EMTValencia",
+      "id": "raulbalanza/MMM-EMTValencia",
+      "maintainer": "raulbalanza",
       "maintainerURL": "",
       "description": "Get estimations for bus stops in the city of Valencia (Spain).",
       "issues": []
@@ -2883,9 +2893,9 @@
     {
       "name": "MMM-ethermine",
       "category": "Cryptocurrency",
-      "url": "https://github.com/AjaxCarroway/MMM-ethermine",
-      "id": "AjaxCarroway/MMM-ethermine",
-      "maintainer": "AjaxCarroway",
+      "url": "https://github.com/alex-grindrod/MMM-ethermine",
+      "id": "alex-grindrod/MMM-ethermine",
+      "maintainer": "alex-grindrod",
       "maintainerURL": "",
       "description": "Displays Ethereum miner rig statistics for miners on the ethermine.org mining pool.",
       "issues": []
@@ -3305,16 +3315,6 @@
       "maintainer": "SVendittelli",
       "maintainerURL": "",
       "description": "Display your Fitbit statistics.",
-      "issues": []
-    },
-    {
-      "name": "MMM-FlagRise",
-      "category": "News / Information",
-      "url": "https://github.com/ItsMeBrille/MMM-FlagRise",
-      "id": "ItsMeBrille/MMM-FlagRise",
-      "maintainer": "ItsMeBrille",
-      "maintainerURL": "https://github.com/ItsMeBrille",
-      "description": "Raise an image of a flag according to national flag rules (Norwegian rules). Fetches sunrise and sunset times using <a target=\"_blank\" href=\"https://steder-api.no\">Steder-API</a>.",
       "issues": []
     },
     {
@@ -3848,7 +3848,7 @@
       "id": "ChrisF1976/MMM-GlobalPositioner",
       "maintainer": "ChrisF1976",
       "maintainerURL": "https://github.com/ChrisF1976",
-      "description": "MagicMirror² module to globally reposition other modules on screen via fixed coordinates.",
+      "description": "Globally reposition other modules on screen via fixed coordinates.",
       "issues": []
     },
     {
@@ -4215,6 +4215,16 @@
       "issues": []
     },
     {
+      "name": "MMM-HAEV",
+      "category": "Transport / Travel",
+      "url": "https://github.com/robotfishe/MMM-HAEV",
+      "id": "robotfishe/MMM-HAEV",
+      "maintainer": "robotfishe",
+      "maintainerURL": "",
+      "description": "Pull charging and range data from your EV via Home Assistant. Configurable entities to work with any HA vehicle integration.",
+      "issues": []
+    },
+    {
       "name": "MMM-Halloween",
       "category": "Entertainment / Misc",
       "url": "https://github.com/SLFaleiro/MMM-Halloween",
@@ -4267,9 +4277,9 @@
     {
       "name": "MMM-HDC1080",
       "category": "Weather",
-      "url": "https://github.com/MichaelF1/MMM-HDC1080",
-      "id": "MichaelF1/MMM-HDC1080",
-      "maintainer": "MichaelF1",
+      "url": "https://github.com/MichiMich/MMM-HDC1080",
+      "id": "MichiMich/MMM-HDC1080",
+      "maintainer": "MichiMich",
       "maintainerURL": "",
       "description": "Display the temperature and humidity of the I2C-based HDC1080-sensor.",
       "issues": []
@@ -5322,6 +5332,16 @@
       "issues": []
     },
     {
+      "name": "MMM-JukeBox",
+      "category": "Entertainment / Misc",
+      "url": "https://github.com/gitgitaway/MMM-JukeBox",
+      "id": "gitgitaway/MMM-JukeBox",
+      "maintainer": "gitgitaway",
+      "maintainerURL": "",
+      "description": "JukeBox faceplate that automaticaly populates with buttons that lets you play your music from the SD card, USB or URL, can be set to auto shuffel play and will continue playing even when module hidden.",
+      "issues": []
+    },
+    {
       "name": "MMM-JustForTodayMeditation",
       "category": "Health",
       "url": "https://github.com/LeftBrainCreated/MMM-JustForTodayMeditation",
@@ -5653,6 +5673,16 @@
       "maintainer": "qunu",
       "maintainerURL": "https://github.com/qunu",
       "description": "Display the expected power cut periods throughout the day.",
+      "issues": []
+    },
+    {
+      "name": "MMM-Local-Starlink-Status-Graph",
+      "category": "Utility / IoT / 3rd Party / Integration",
+      "url": "https://github.com/jboucly/MMM-Local-Starlink-Status-Graph",
+      "id": "jboucly/MMM-Local-Starlink-Status-Graph",
+      "maintainer": "jboucly",
+      "maintainerURL": "",
+      "description": "Displays your local connection of your starlink in a graph.",
       "issues": []
     },
     {
@@ -6325,9 +6355,9 @@
     {
       "name": "mm-music-player",
       "category": "Outdated Modules",
-      "url": "https://github.com/masters1222/mm-music-player",
-      "id": "masters1222/mm-music-player",
-      "maintainer": "masters1222",
+      "url": "https://github.com/AlexDespain01/mm-music-player",
+      "id": "AlexDespain01/mm-music-player",
+      "maintainer": "AlexDespain01",
       "maintainerURL": "",
       "description": "Simple player to play your music.",
       "issues": [],
@@ -7613,6 +7643,16 @@
       "maintainer": "yo-less",
       "maintainerURL": "",
       "description": "Station monitor for the nextbike bike-sharing network.",
+      "issues": []
+    },
+    {
+      "name": "MMM-Nextcloud",
+      "category": "Entertainment / Misc",
+      "url": "https://github.com/schlomm/MMM-Nextcloud",
+      "id": "schlomm/MMM-Nextcloud",
+      "maintainer": "schlomm",
+      "maintainerURL": "",
+      "description": "Displayg random photos from your Nextcloud instance.",
       "issues": []
     },
     {
@@ -9105,7 +9145,7 @@
       "id": "gowthamravichandran/MMM-PregnancyTracker",
       "maintainer": "gowthamravichandran",
       "maintainerURL": "",
-      "description": "A MagicMirror² module that tracks pregnancy progress and displays fetus images based on the current week of pregnancy.",
+      "description": "Tracks pregnancy progress and displays fetus images based on the current week of pregnancy.",
       "issues": []
     },
     {
@@ -10024,6 +10064,16 @@
       "maintainer": "MMRIZE",
       "maintainerURL": "",
       "description": "Change screen scenes by time and order with animation effect. Successor of MMM-Scenes since MM 2.25 (AnimateCSS is introduced).",
+      "issues": []
+    },
+    {
+      "name": "MMM-SchoolLunch",
+      "category": "News / Information",
+      "url": "https://github.com/SWhardfish/MMM-SchoolLunch",
+      "id": "SWhardfish/MMM-SchoolLunch",
+      "maintainer": "SWhardfish",
+      "maintainerURL": "",
+      "description": "A <a target=\"_blank\" href=\"https://magicmirror.builders/\">MagicMirror²</a> module that displays today’s school lunch menu from <a target=\"_blank\" href=\"https://menu.matildaplatform.com/\">Matilda Platform</a> for schools in Sweden.",
       "issues": []
     },
     {
@@ -11025,6 +11075,16 @@
       "issues": []
     },
     {
+      "name": "MMM-Stundenplan",
+      "category": "Education",
+      "url": "https://github.com/AJOCHAM/MMM-Stundenplan",
+      "id": "AJOCHAM/MMM-Stundenplan",
+      "maintainer": "AJOCHAM",
+      "maintainerURL": "",
+      "description": "A simple timetable module for MagicMirror. Configuration exclusively via config.js. Supports iCal holiday calendars, multiple children, colors, times, and rooms.",
+      "issues": []
+    },
+    {
       "name": "MMM-SugarValue",
       "category": "Health",
       "url": "https://github.com/balharrie/MMM-SugarValue",
@@ -11979,6 +12039,16 @@
       "issues": []
     },
     {
+      "name": "MMM-UpcomingMovies",
+      "category": "Entertainment / Misc",
+      "url": "https://github.com/PakshalGada/MMM-UpcomingMovies",
+      "id": "PakshalGada/MMM-UpcomingMovies",
+      "maintainer": "PakshalGada",
+      "maintainerURL": "",
+      "description": "Displays upcoming movies using TMDB API.",
+      "issues": []
+    },
+    {
       "name": "MMM-updateFromStdOut",
       "category": "Utility / IoT / 3rd Party / Integration",
       "url": "https://github.com/msteinkogler/MMM-updateFromStdOut",
@@ -12929,9 +12999,9 @@
     {
       "name": "MMM-YouTube-API",
       "category": "Entertainment / Misc",
-      "url": "https://github.com/C4TFLY/MMM-YouTube-API",
-      "id": "C4TFLY/MMM-YouTube-API",
-      "maintainer": "C4TFLY",
+      "url": "https://github.com/HolmstromL/MMM-YouTube-API",
+      "id": "HolmstromL/MMM-YouTube-API",
+      "maintainer": "HolmstromL",
       "maintainerURL": "",
       "description": "Enables easy integration of YouTube videos.",
       "issues": []

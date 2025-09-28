@@ -1,0 +1,26 @@
+[
+  {
+    "name": "MM-Remote",
+    "url": "https://github.com/Klettner/MM-Remote",
+    "maintainer": "Klettner",
+    "description": "Android \ud83d\udcf1 and Windows-desktop \ud83d\udcbb app to control your MagicMirror\u00b2 remotely. (Shutdown, reboot, toggle monitor on/off, change brightness of monitor, custom-commands, etc.).",
+    "error": "Invalid repository URL",
+    "errorType": "invalid_url"
+  },
+  {
+    "name": "mm-tkl-timetable",
+    "url": "https://github.com/eerotal/mm-tkl-timetable",
+    "maintainer": "eerotal",
+    "description": "Display departures for public transport in Tampere region - Finland.",
+    "error": "Invalid repository URL",
+    "errorType": "invalid_url"
+  },
+  {
+    "name": "MMM-MoonPhase",
+    "url": "https://github.com/NolanKingdon/MMM-MoonPhase",
+    "maintainer": "NolanKingdon",
+    "description": "Presents the real-time moon phase.",
+    "error": "Invalid repository URL",
+    "errorType": "invalid_url"
+  }
+]
