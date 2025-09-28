@@ -201,7 +201,7 @@ async function updateData () {
     // Read the previous version of the data
     let previousData = {};
     const remoteFilePath = "https://modules.magicmirror.builders/data/gitHubData.json";
-    const localFilePath = "docs/data/gitHubData.json";
+    const localFilePath = "website/data/gitHubData.json";
 
     try {
       const response = await fetch(remoteFilePath);
@@ -221,7 +221,7 @@ async function updateData () {
       }
     }
 
-    const moduleListData = await getJson("./docs/data/modules.stage.1.json");
+    const moduleListData = await getJson("./website/data/modules.stage.1.json");
     const moduleList = moduleListData.modules;
     const moduleListLength = moduleList.length;
 
@@ -297,7 +297,7 @@ async function updateData () {
     const sortedModuleList = moduleList.sort(sortByNameIgnoringPrefix);
 
     fs.writeFileSync(localFilePath, JSON.stringify(updateInfo, null, 2));
-    fs.writeFileSync("docs/data/modules.stage.2.json", JSON.stringify(sortedModuleList, null, 2));
+    fs.writeFileSync("website/data/modules.stage.2.json", JSON.stringify(sortedModuleList, null, 2));
     if (maxQueryCount < queryCount) {
       maxQueryCount = 0;
     }

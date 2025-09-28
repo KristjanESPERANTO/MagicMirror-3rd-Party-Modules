@@ -21,6 +21,6 @@ LABEL maintainer="MagicMirrorOrg"
 COPY container/default.conf /etc/nginx/conf.d/
 COPY container/nginx.conf /etc/nginx/
 
-COPY --from=builder /workspace/docs /usr/share/nginx/docs/
+COPY --from=builder /workspace/website /usr/share/nginx/website/
 
 EXPOSE 8080

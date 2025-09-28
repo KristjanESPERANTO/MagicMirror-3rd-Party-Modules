@@ -39,7 +39,7 @@ function createModuleList () {
   };
 
   fs.writeFileSync(
-    "./docs/data/modules.stage.1.json",
+    "./website/data/modules.stage.1.json",
     JSON.stringify(data, null, 2),
     "utf8"
   );

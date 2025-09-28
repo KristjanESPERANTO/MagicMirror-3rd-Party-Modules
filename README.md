@@ -30,7 +30,7 @@ This is a list of information that we can display on the web page and where the 
 - Tags: Are taken from the keywords in the `package.json`. Take a look at [this package.json](https://github.com/KristjanESPERANTO/MMM-PublicTransportHafas/blob/main/package.json) as an example.
 - License: Is taken from the keywords in the `package.json`. Take a look at [this package.json](https://github.com/KristjanESPERANTO/MMM-PublicTransportHafas/blob/main/package.json) as an example.
 
-Also check the [result file](./docs/result.md) to see if there are any notes on your module.
+Also check the [result file](./website/result.md) to see if there are any notes on your module.
 
 ## Module tests
 
@@ -107,7 +107,7 @@ This script does some additional checks on the modules like if the main js file 
 
 ### check_modules.py
 
-This script goes through all cloned modules and performs various checks. The result is written to the files [`result.html`](https://modules.magicmirror.builders/result.html) and [`modules.json`](./docs/data/modules.json).
+This script goes through all cloned modules and performs various checks. The result is written to the files [`result.html`](https://modules.magicmirror.builders/result.html) and [`modules.json`](./website/data/modules.json).
 
 ### Special script: create_own_module_list.js
 

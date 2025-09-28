@@ -33,7 +33,7 @@
     "node_modules/",
     "modules/",
     "modules_temp/",
-    "docs/**",
+    "website/**",
     "eslint-config-DEBUG.json",
     "container/"
   ],

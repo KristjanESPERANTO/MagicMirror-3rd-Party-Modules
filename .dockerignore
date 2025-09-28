@@ -1,5 +1,6 @@
 /.husky/*
 /.github/*
-/docs/data/*
-/docs/images/*
+/website/data/*
+/website/images/*
 /guides/*
+*.md

@@ -3,7 +3,7 @@ import {getJson} from "./utils.js";
 import normalizeData from "normalize-package-data";
 import sharp from "sharp";
 
-const imagesFolder = "./docs/images";
+const imagesFolder = "./website/images";
 
 function isImageFile (filename) {
   return (/\.(bmp|gif|jpg|jpeg|png|webp)$/iu).test(filename);
@@ -213,12 +213,12 @@ async function checkLicenseAndHandleScreenshot (moduleData, module) {
 }
 
 async function expandModuleList () {
-  const moduleList = await getJson("./docs/data/modules.stage.3.json");
+  const moduleList = await getJson("./website/data/modules.stage.3.json");
 
   await addInformationFromPackageJson(moduleList.modules);
 
   fs.writeFileSync(
-    "./docs/data/modules.stage.4.json",
+    "./website/data/modules.stage.4.json",
     JSON.stringify(moduleList, null, 2),
     "utf8"
   );

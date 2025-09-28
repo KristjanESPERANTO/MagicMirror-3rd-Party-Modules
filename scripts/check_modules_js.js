@@ -1,7 +1,7 @@
 import fs from "node:fs";
 // Disabled: import {isMinified} from "./utils.js";
 
-fs.readFile("./docs/data/modules.stage.4.json", "utf8", (err, data) => {
+fs.readFile("./website/data/modules.stage.4.json", "utf8", (err, data) => {
   if (err) {
     console.error(err);
     return;
@@ -27,5 +27,5 @@ fs.readFile("./docs/data/modules.stage.4.json", "utf8", (err, data) => {
     }
   });
 
-  fs.writeFileSync("./docs/data/modules.stage.5.json", JSON.stringify(modules, null, 2));
+  fs.writeFileSync("./website/data/modules.stage.5.json", JSON.stringify(modules, null, 2));
 });
