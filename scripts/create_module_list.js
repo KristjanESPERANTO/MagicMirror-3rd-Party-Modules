@@ -2,6 +2,7 @@ import fs from "node:fs";
 import {marked} from "marked";
 import process from "node:process";
 import sanitizeHtml from "sanitize-html";
+import {validateStageData} from "./lib/schemaValidator.js";
 
 async function fetchMarkdownData () {
   try {
@@ -120,6 +121,7 @@ async function createModuleList () {
     throw new Error(`[create_module_list] Missing repository link in ${missingRepoErrors.length} line(s):\n${missingRepoErrors.join("\n")}`);
   }
 
+  validateStageData("modules.stage.1", data);
 
   fs.writeFileSync(
     "./website/data/modules.stage.1.json",

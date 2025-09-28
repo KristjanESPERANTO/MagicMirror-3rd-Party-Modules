@@ -9,6 +9,26 @@ from pathlib import Path
 from concurrent.futures import ThreadPoolExecutor
 
 
+def validate_stage(stage_id, file_path):
+    """Validate a stage artifact against its JSON schema."""
+    result = subprocess.run(
+        ["node", "scripts/validate_stage_json.js", stage_id, file_path],
+        capture_output=True,
+        text=True,
+        check=False,
+    )
+
+    if result.returncode != 0:
+        details = "\n".join(
+            message
+            for message in (result.stdout.strip(), result.stderr.strip())
+            if message
+        )
+        raise RuntimeError(
+            f"Schema validation failed for {stage_id} ({file_path}):\n{details}"
+        )
+
+
 def get_modules():
     """Function to get all the modules per git."""
 
@@ -17,7 +37,10 @@ def get_modules():
     # For testing set this to a lower number to test only a few modules
     max_module_counter = 99999
 
-    with open("./website/data/modules.stage.2.json", encoding="utf-8") as modules_json_file:
+    stage_input_path = "./website/data/modules.stage.2.json"
+    validate_stage("modules.stage.2", stage_input_path)
+
+    with open(stage_input_path, encoding="utf-8") as modules_json_file:
         modules_data = json.load(modules_json_file)
 
     if isinstance(modules_data, dict):
@@ -133,8 +156,11 @@ def get_modules():
             json.dump(skipped_modules, f, indent=2)
 
     # Write valid modules to next stage file
-    with open("./website/data/modules.stage.3.json", "w", encoding="utf-8") as f:
+    stage_output_path = "./website/data/modules.stage.3.json"
+    with open(stage_output_path, "w", encoding="utf-8") as f:
         json.dump({"modules": valid_modules}, f, indent=2)
+
+    validate_stage("modules.stage.3", stage_output_path)
 
 
 def rename_modules_directory():

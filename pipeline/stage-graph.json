@@ -18,37 +18,40 @@
     {
       "id": "modules-stage-1",
       "type": "file",
-      "path": "docs/data/modules.stage.1.json",
+      "path": "website/data/modules.stage.1.json",
       "format": "json",
-      "description": "Normalized module list generated from the MagicMirror wiki."
+      "description": "Normalized module list generated from the MagicMirror wiki.",
+      "schema": "pipeline/schemas/modules.stage.1.schema.json"
     },
     {
       "id": "github-api-cache",
       "type": "file",
-      "path": "docs/data/gitHubData.json",
+      "path": "website/data/gitHubData.json",
       "format": "json",
       "description": "Cached repository metadata fetched from GitHub/GitLab/Bitbucket/Codeberg APIs."
     },
     {
       "id": "modules-stage-2",
       "type": "file",
-      "path": "docs/data/modules.stage.2.json",
+      "path": "website/data/modules.stage.2.json",
       "format": "json",
-      "description": "Module list enriched with repository metadata."
+      "description": "Module list enriched with repository metadata.",
+      "schema": "pipeline/schemas/modules.stage.2.schema.json"
     },
     {
       "id": "skipped-modules",
       "type": "file",
-      "path": "docs/data/skipped_modules.json",
+      "path": "website/data/skipped_modules.json",
       "format": "json",
       "description": "Modules that could not be cloned or validated."
     },
     {
       "id": "modules-stage-3",
       "type": "file",
-      "path": "docs/data/modules.stage.3.json",
+      "path": "website/data/modules.stage.3.json",
       "format": "json",
-      "description": "Validated modules that were successfully cloned."
+      "description": "Validated modules that were successfully cloned.",
+      "schema": "pipeline/schemas/modules.stage.3.schema.json"
     },
     {
       "id": "cloned-modules",
@@ -65,48 +68,50 @@
     {
       "id": "modules-stage-4",
       "type": "file",
-      "path": "docs/data/modules.stage.4.json",
+      "path": "website/data/modules.stage.4.json",
       "format": "json",
-      "description": "Module list enriched with package.json metadata and image references."
+      "description": "Module list enriched with package.json metadata and image references.",
+      "schema": "pipeline/schemas/modules.stage.4.schema.json"
     },
     {
       "id": "images-catalogue",
       "type": "directory",
-      "path": "docs/images/",
+      "path": "website/images/",
       "description": "Resized module screenshots exported for the public catalogue."
     },
     {
       "id": "modules-stage-5",
       "type": "file",
-      "path": "docs/data/modules.stage.5.json",
+      "path": "website/data/modules.stage.5.json",
       "format": "json",
-      "description": "Module list annotated with JavaScript-level checks."
+      "description": "Module list annotated with JavaScript-level checks.",
+      "schema": "pipeline/schemas/modules.stage.5.schema.json"
     },
     {
       "id": "analysis-report",
       "type": "file",
-      "path": "docs/result.md",
+      "path": "website/result.md",
       "format": "markdown",
       "description": "Human-readable summary of module issues and statistics."
     },
     {
       "id": "modules-json",
       "type": "file",
-      "path": "docs/data/modules.json",
+      "path": "website/data/modules.json",
       "format": "json",
       "description": "Final module catalogue powering downstream consumers."
     },
     {
       "id": "modules-json-min",
       "type": "file",
-      "path": "docs/data/modules.min.json",
+      "path": "website/data/modules.min.json",
       "format": "json",
       "description": "Minified variant of the module catalogue."
     },
     {
       "id": "stats-json",
       "type": "file",
-      "path": "docs/data/stats.json",
+      "path": "website/data/stats.json",
       "format": "json",
       "description": "Aggregated metrics collected during analysis."
     }
@@ -279,7 +284,7 @@
       "sideEffects": [
         {
           "type": "filesystem",
-          "description": "Deletes the existing `docs/images` directory before exporting resized screenshots."
+          "description": "Deletes the existing `website/images` directory before exporting resized screenshots."
         }
       ]
     },

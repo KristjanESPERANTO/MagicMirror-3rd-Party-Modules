@@ -1,4 +1,5 @@
 import fs from "node:fs";
+import {validateStageData} from "./lib/schemaValidator.js";
 // Disabled: import {isMinified} from "./utils.js";
 
 fs.readFile("./website/data/modules.stage.4.json", "utf8", (err, data) => {
@@ -8,6 +9,7 @@ fs.readFile("./website/data/modules.stage.4.json", "utf8", (err, data) => {
   }
 
   const modules = JSON.parse(data);
+  validateStageData("modules.stage.4", modules);
 
   modules.modules.forEach((module) => {
     const filePath = `./modules/${module.name}-----${module.maintainer}/${module.name}.js`;
@@ -26,6 +28,8 @@ fs.readFile("./website/data/modules.stage.4.json", "utf8", (err, data) => {
       module.issues.push("Repository name and main js file name is not the same.");
     }
   });
+
+  validateStageData("modules.stage.5", modules);
 
   fs.writeFileSync("./website/data/modules.stage.5.json", JSON.stringify(modules, null, 2));
 });

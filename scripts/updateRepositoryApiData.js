@@ -1,6 +1,7 @@
 import fs from "node:fs";
 import {getJson} from "./utils.js";
 import process from "node:process";
+import {validateStageData} from "./lib/schemaValidator.js";
 
 let queryCount = 0;
 let maxQueryCount = 58;
@@ -222,6 +223,7 @@ async function updateData () {
     }
 
     const moduleListData = await getJson("./website/data/modules.stage.1.json");
+    validateStageData("modules.stage.1", moduleListData);
     const moduleList = moduleListData.modules;
     const moduleListLength = moduleList.length;
 
@@ -295,6 +297,7 @@ async function updateData () {
     };
 
     const sortedModuleList = moduleList.sort(sortByNameIgnoringPrefix);
+    validateStageData("modules.stage.2", sortedModuleList);
 
     fs.writeFileSync(localFilePath, JSON.stringify(updateInfo, null, 2));
     fs.writeFileSync("website/data/modules.stage.2.json", JSON.stringify(sortedModuleList, null, 2));

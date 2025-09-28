@@ -1,0 +1,72 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://magicmirror.builders/schemas/modules.stage.1.json",
+  "title": "Modules Stage 1",
+  "type": "object",
+  "required": ["lastUpdate", "modules"],
+  "properties": {
+    "lastUpdate": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "modules": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/module"
+      }
+    }
+  },
+  "additionalProperties": false,
+  "$defs": {
+    "module": {
+      "type": "object",
+      "required": [
+        "name",
+        "category",
+        "url",
+        "id",
+        "maintainer",
+        "description",
+        "issues"
+      ],
+      "properties": {
+        "name": {
+          "type": "string",
+          "minLength": 1
+        },
+        "category": {
+          "type": "string",
+          "minLength": 1
+        },
+        "url": {
+          "type": "string",
+          "format": "uri"
+        },
+        "id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "maintainer": {
+          "type": "string",
+          "minLength": 1
+        },
+        "maintainerURL": {
+          "type": "string"
+        },
+        "description": {
+          "type": "string"
+        },
+        "issues": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "outdated": {
+          "type": "string"
+        }
+      },
+      "additionalProperties": true
+    }
+  }
+}
