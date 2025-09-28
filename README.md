@@ -123,41 +123,9 @@ How can you use it?
 
 ## Ideas / To do
 
-- Long-term goal: The website functions like an app store. The user only has to click on an install button and the module is installed and a basic configuration is inserted.
-- Move ideas/todos to GitHub Issues and add proper tags.
-- `package.json` is handled in different scripts. This could be done in one.
-- Show results in popup on the page.
-- Compatibility with:
-  - the module list of `MMM-Remote-Control`: <https://github.com/Jopyth/MMM-Remote-Control/blob/master/modules.json> / `MMM-Remote-Control-Repository` <https://github.com/MMRIZE/MMM-Remote-Control-Repository>
-  - and mmpm <https://github.com/Bee-Mar/mmpm>
-- optimize progress information while running `node --run all`
-- Also run the tests on MagicMirror² core?
-- Tests
-  - Is repository reachable? Now the get_modules script interrupts if a repo isn't reachable.
-  - If a module isn't marked as outdated, but has no commits since years: Check if the module is set to archived on GitHub/GitLab.
-  - Is depandabot there?
-    - Is it set to monthly?
-    - Only production?
-- rewrite the scripts in rust (it could be faster and a good practice)
-- extend the package.json in modules to collect more additional information (based on a [proposal from MMRIZE](https://forum.magicmirror.builders/topic/18092/automatic-checking-of-all-magicmirror-modules/45?_=1702858630364))
+See [GitHub issues](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/issues) for ideas and tasks.
 
-  ```json
-    "MagicMirror": {
-      "screenshot": {
-        "license": "MIT",
-        "url": "https://somewhere.com/screenshot.png"
-      },
-      "required": {
-        "mm": "2.25",
-        "node": "18.0",
-        "ApiKey": true
-      },
-      "notice" : [
-        "This will not work in Windows.",
-        "Pre-dependency required. Please read README."
-      ]
-  }
-  ```
+Track pipeline modernization progress in [`pipeline-refactor-roadmap.md`](pipeline-refactor-roadmap.md).
 
 ### Templates for the creation of issues
 
