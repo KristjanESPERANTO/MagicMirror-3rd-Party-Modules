@@ -61,7 +61,7 @@ This document captures the long-term improvements we want to implement in the mo
 
 | Task | Description                                                                                                                                                                    | Dependencies         | Effort |
 | ---- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | -------------------- | ------ |
-| P5.1 | Publish an architecture diagram (current + target) in `docs/`                                                                                                                  | P1.1                 | S      |
+| P5.1 | Publish an architecture diagram (current + target) in `docs/` ([architecture.md](docs/architecture.md)) ✅ Completed Sep 2025                                                  | P1.1                 | S      |
 | P5.2 | Expand contributor guide with setup, pipeline tips, troubleshooting                                                                                                            | P5.1                 | M      |
 | P5.3 | Convert roadmap tasks into GitHub issues and track via project board                                                                                                           | after roadmap review | S      |
 | P5.4 | Schedule periodic checkpoint (e.g. monthly) to review progress & adjust priorities                                                                                             | P5.3                 | S      |
@@ -76,16 +76,21 @@ These topics sit adjacent to the pipeline work but should stay visible while pri
 
 ## Execution Strategy
 
-1. **Foundation first**: Focus on P5.1 to visualize the current architecture now that P1.3 is in place.
+1. **Leverage shared context**: Use the published architecture diagrams (P5.1 ✅) to align scope for the orchestrator (P1.2) and utility consolidation (P2.1).
 2. **Consolidate utilities** (P2.1) before migrating Python scripts so we can share code and avoid duplicated logic.
 3. **Migrate in slices**: Move `get_modules` first (lower risk) and keep Python fallbacks until the TS version is proven stable. Follow with `check_modules` in feature flags (`--checks=legacy|ts`).
 4. **Add tests alongside migrations** to prevent regressions and make future refactors safer.
 5. **Keep communication tight** via roadmap review meetings or async updates in GitHub Discussions.
 
+**Documentation checkpoints**
+
+- Refresh `docs/architecture.md` when shipping the orchestrator (P1.2) so the “Target state” diagram matches reality.
+- Update the same document as TypeScript stages replace Python counterparts (P2.2, P2.3) and whenever shared utilities (P2.1) materially change the architecture overview.
+
 ## Next Concrete Steps
 
-1. Create an issue for P5.1 and assign an initial owner.
-2. Prepare a small sample dataset to validate the staging files against the new schemas.
-3. File follow-up issues for P1.5 and P1.6 (final artifact schemas + shared definitions) and slot them after P5.1.
+1. Prepare a small sample dataset to validate the staging files against the new schemas.
+2. File follow-up issues for P1.5 and P1.6 (final artifact schemas + shared definitions) and slot them after the architecture work in the board.
+3. Draft the orchestrator CLI design doc (task P1.2) using the stage graph and architecture diagrams as the backbone for review.
 
 Feel free to adjust priorities, rename tasks, or add new items. This roadmap is meant to stay alive—update it as soon as we learn something new during implementation.

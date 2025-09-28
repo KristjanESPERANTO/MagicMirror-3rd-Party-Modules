@@ -136,6 +136,7 @@ You can access the content with a webbrowser under http://localhost:8080.
 See [GitHub issues](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/issues) for ideas and tasks.
 
 Track pipeline modernization progress in [`pipeline-refactor-roadmap.md`](pipeline-refactor-roadmap.md).
+Explore the pipeline architecture overview in [`docs/architecture.md`](docs/architecture.md).
 
 ### Templates for the creation of issues
 
