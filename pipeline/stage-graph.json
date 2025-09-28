@@ -1,0 +1,362 @@
+{
+  "version": "2025-09-28",
+  "pipelines": [
+    {
+      "id": "full-refresh",
+      "description": "Full catalogue refresh mirroring the current `npm run all` sequence.",
+      "stages": [
+        "create-module-list",
+        "update-repository-data",
+        "get-modules",
+        "expand-module-list",
+        "check-modules-js",
+        "check-modules"
+      ]
+    }
+  ],
+  "artifacts": [
+    {
+      "id": "modules-stage-1",
+      "type": "file",
+      "path": "docs/data/modules.stage.1.json",
+      "format": "json",
+      "description": "Normalized module list generated from the MagicMirror wiki."
+    },
+    {
+      "id": "github-api-cache",
+      "type": "file",
+      "path": "docs/data/gitHubData.json",
+      "format": "json",
+      "description": "Cached repository metadata fetched from GitHub/GitLab/Bitbucket/Codeberg APIs."
+    },
+    {
+      "id": "modules-stage-2",
+      "type": "file",
+      "path": "docs/data/modules.stage.2.json",
+      "format": "json",
+      "description": "Module list enriched with repository metadata."
+    },
+    {
+      "id": "skipped-modules",
+      "type": "file",
+      "path": "docs/data/skipped_modules.json",
+      "format": "json",
+      "description": "Modules that could not be cloned or validated."
+    },
+    {
+      "id": "modules-stage-3",
+      "type": "file",
+      "path": "docs/data/modules.stage.3.json",
+      "format": "json",
+      "description": "Validated modules that were successfully cloned."
+    },
+    {
+      "id": "cloned-modules",
+      "type": "directory",
+      "path": "modules/",
+      "description": "Working tree containing shallow clones of each module repository."
+    },
+    {
+      "id": "modules-temp",
+      "type": "directory",
+      "path": "modules_temp/",
+      "description": "Cache of module clones from the previous run; recycled by the pipeline to avoid full re-clones."
+    },
+    {
+      "id": "modules-stage-4",
+      "type": "file",
+      "path": "docs/data/modules.stage.4.json",
+      "format": "json",
+      "description": "Module list enriched with package.json metadata and image references."
+    },
+    {
+      "id": "images-catalogue",
+      "type": "directory",
+      "path": "docs/images/",
+      "description": "Resized module screenshots exported for the public catalogue."
+    },
+    {
+      "id": "modules-stage-5",
+      "type": "file",
+      "path": "docs/data/modules.stage.5.json",
+      "format": "json",
+      "description": "Module list annotated with JavaScript-level checks."
+    },
+    {
+      "id": "analysis-report",
+      "type": "file",
+      "path": "docs/result.md",
+      "format": "markdown",
+      "description": "Human-readable summary of module issues and statistics."
+    },
+    {
+      "id": "modules-json",
+      "type": "file",
+      "path": "docs/data/modules.json",
+      "format": "json",
+      "description": "Final module catalogue powering downstream consumers."
+    },
+    {
+      "id": "modules-json-min",
+      "type": "file",
+      "path": "docs/data/modules.min.json",
+      "format": "json",
+      "description": "Minified variant of the module catalogue."
+    },
+    {
+      "id": "stats-json",
+      "type": "file",
+      "path": "docs/data/stats.json",
+      "format": "json",
+      "description": "Aggregated metrics collected during analysis."
+    }
+  ],
+  "stages": [
+    {
+      "id": "create-module-list",
+      "name": "Create module list",
+      "description": "Fetch the MagicMirror wiki table and normalize it into the first-stage JSON output.",
+      "command": {
+        "executable": "node",
+        "args": ["scripts/create_module_list.js"]
+      },
+      "dependsOn": [],
+      "inputs": [
+        {
+          "type": "external",
+          "kind": "http",
+          "uri": "https://raw.githubusercontent.com/wiki/MagicMirrorOrg/MagicMirror/3rd-Party-Modules.md",
+          "description": "Authoritative list of community modules maintained in the MagicMirror wiki."
+        }
+      ],
+      "outputs": [
+        {
+          "artifact": "modules-stage-1",
+          "mode": "write"
+        }
+      ],
+      "sideEffects": [
+        {
+          "type": "network",
+          "description": "Performs an unauthenticated fetch against the GitHub wiki."
+        }
+      ]
+    },
+    {
+      "id": "update-repository-data",
+      "name": "Update repository metadata",
+      "description": "Augment the module list with repository API data and persist the rate-limited cache.",
+      "command": {
+        "executable": "node",
+        "args": ["scripts/updateRepositoryApiData.js"]
+      },
+      "dependsOn": ["create-module-list"],
+      "inputs": [
+        {
+          "artifact": "modules-stage-1",
+          "mode": "read"
+        },
+        {
+          "type": "external",
+          "kind": "http",
+          "uri": "https://modules.magicmirror.builders/data/gitHubData.json",
+          "description": "Existing public snapshot reused when fresh API requests are not possible.",
+          "optional": true
+        },
+        {
+          "artifact": "github-api-cache",
+          "mode": "read",
+          "optional": true
+        }
+      ],
+      "outputs": [
+        {
+          "artifact": "github-api-cache",
+          "mode": "write"
+        },
+        {
+          "artifact": "modules-stage-2",
+          "mode": "write"
+        }
+      ],
+      "environment": [
+        {
+          "name": "GITHUB_TOKEN",
+          "required": false,
+          "description": "Personal access token used to increase API rate limits across supported hosts."
+        }
+      ],
+      "sideEffects": [
+        {
+          "type": "network",
+          "description": "Makes REST API calls against GitHub, GitLab, Bitbucket, and Codeberg for repository metadata and commit history."
+        }
+      ]
+    },
+    {
+      "id": "get-modules",
+      "name": "Fetch module repositories",
+      "description": "Clone or update module repositories, validating access and producing the next-stage manifest.",
+      "command": {
+        "executable": "python3",
+        "args": ["scripts/get_modules.py"]
+      },
+      "dependsOn": ["update-repository-data"],
+      "inputs": [
+        {
+          "artifact": "modules-stage-2",
+          "mode": "read"
+        },
+        {
+          "artifact": "modules-temp",
+          "mode": "read",
+          "optional": true
+        }
+      ],
+      "outputs": [
+        {
+          "artifact": "modules-stage-3",
+          "mode": "write"
+        },
+        {
+          "artifact": "skipped-modules",
+          "mode": "write",
+          "optional": true
+        },
+        {
+          "artifact": "cloned-modules",
+          "mode": "write"
+        },
+        {
+          "artifact": "modules-temp",
+          "mode": "write"
+        }
+      ],
+      "sideEffects": [
+        {
+          "type": "network",
+          "description": "HEAD requests against repository URLs to validate reachability."
+        },
+        {
+          "type": "git",
+          "description": "Performs shallow clones and pulls for each module repository (Git)."
+        },
+        {
+          "type": "filesystem",
+          "description": "Renames existing `modules` directory to `modules_temp` before refreshing clones."
+        }
+      ]
+    },
+    {
+      "id": "expand-module-list",
+      "name": "Enrich with package metadata",
+      "description": "Parse each module's package.json, generate screenshots, and append derived metadata.",
+      "command": {
+        "executable": "node",
+        "args": ["scripts/expand_module_list_with_repo_data.js"]
+      },
+      "dependsOn": ["get-modules"],
+      "inputs": [
+        {
+          "artifact": "modules-stage-3",
+          "mode": "read"
+        },
+        {
+          "artifact": "cloned-modules",
+          "mode": "read"
+        }
+      ],
+      "outputs": [
+        {
+          "artifact": "modules-stage-4",
+          "mode": "write"
+        },
+        {
+          "artifact": "images-catalogue",
+          "mode": "write"
+        }
+      ],
+      "sideEffects": [
+        {
+          "type": "filesystem",
+          "description": "Deletes the existing `docs/images` directory before exporting resized screenshots."
+        }
+      ]
+    },
+    {
+      "id": "check-modules-js",
+      "name": "JavaScript static checks",
+      "description": "Run lightweight repository structure checks to flag naming issues before deep analysis.",
+      "command": {
+        "executable": "node",
+        "args": ["scripts/check_modules_js.js"]
+      },
+      "dependsOn": ["expand-module-list"],
+      "inputs": [
+        {
+          "artifact": "modules-stage-4",
+          "mode": "read"
+        },
+        {
+          "artifact": "cloned-modules",
+          "mode": "read"
+        }
+      ],
+      "outputs": [
+        {
+          "artifact": "modules-stage-5",
+          "mode": "write"
+        }
+      ],
+      "sideEffects": []
+    },
+    {
+      "id": "check-modules",
+      "name": "Deep repository analysis",
+      "description": "Perform full module analysis, produce public datasets, and compile the Markdown report.",
+      "command": {
+        "executable": "python3",
+        "args": ["scripts/check_modules.py"]
+      },
+      "dependsOn": ["check-modules-js"],
+      "inputs": [
+        {
+          "artifact": "modules-stage-5",
+          "mode": "read"
+        },
+        {
+          "artifact": "cloned-modules",
+          "mode": "read"
+        }
+      ],
+      "outputs": [
+        {
+          "artifact": "analysis-report",
+          "mode": "write"
+        },
+        {
+          "artifact": "modules-json",
+          "mode": "write"
+        },
+        {
+          "artifact": "modules-json-min",
+          "mode": "write"
+        },
+        {
+          "artifact": "stats-json",
+          "mode": "write"
+        }
+      ],
+      "sideEffects": [
+        {
+          "type": "process",
+          "description": "Invokes Git, npm, npm-check-updates, eslint, and custom Python helpers inside each module clone."
+        },
+        {
+          "type": "network",
+          "description": "Commands like `npm-check-updates` may query the npm registry for latest package metadata."
+        }
+      ]
+    }
+  ]
+}

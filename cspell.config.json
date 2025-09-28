@@ -27,7 +27,8 @@
     "rollup",
     "smarthome",
     "testconfig",
-    "Updat"
+    "Updat",
+    "Workstreams"
   ],
   "ignorePaths": [
     "node_modules/",

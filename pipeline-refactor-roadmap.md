@@ -13,12 +13,12 @@ This document captures the long-term improvements we want to implement in the mo
 
 ### 1. Pipeline Architecture & Orchestration
 
-| Task | Description                                                                                                   | Dependencies | Effort |
-| ---- | ------------------------------------------------------------------------------------------------------------- | ------------ | ------ |
-| P1.1 | Describe the full stage graph (inputs/outputs, side-effects) in a machine-readable config                     | none         | S      |
-| P1.2 | Introduce a lightweight orchestrator (Node CLI) that reads the config and runs stages with structured logging | P1.1         | M      |
-| P1.3 | Add JSON-schema validation for every stage boundary (modules.stage.\* files)                                  | P1.1         | M      |
-| P1.4 | Provide a skip/only mechanism for partial runs (e.g. `--only=checks`)                                         | P1.2         | S      |
+| Task | Description                                                                                                                                                | Dependencies | Effort |
+| ---- | ---------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | ------ |
+| P1.1 | Describe the full stage graph (inputs/outputs, side-effects) in a machine-readable config ([stage graph](pipeline/stage-graph.json)) ✅ Completed Sep 2025 | none         | S      |
+| P1.2 | Introduce a lightweight orchestrator (Node CLI) that reads the config and runs stages with structured logging                                              | P1.1         | M      |
+| P1.3 | Add JSON-schema validation for every stage boundary (modules.stage.\* files)                                                                               | P1.1         | M      |
+| P1.4 | Provide a skip/only mechanism for partial runs (e.g. `--only=checks`)                                                                                      | P1.2         | S      |
 
 ### 2. Runtime & Codebase Consolidation
 
@@ -68,13 +68,13 @@ This document captures the long-term improvements we want to implement in the mo
 
 ### Related Backlog Items
 
-These topics sit adjacent to the pipeline work but should stay visible while prioritising future sprints:
+These topics sit adjacent to the pipeline work but should stay visible while prioritizing future sprints:
 
 - Progressive loading / chunked delivery of the public `modules.json` to keep client payload manageable ([#8](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/issues/8)).
 
 ## Execution Strategy
 
-1. **Foundation first**: Complete P1.1, P1.3, and P5.1 to ensure we fully understand the existing pipeline and keep stage contracts safe while refactoring.
+1. **Foundation first**: Complete P1.3 and P5.1 to ensure we fully understand the existing pipeline and keep stage contracts safe while refactoring.
 2. **Consolidate utilities** (P2.1) before migrating Python scripts so we can share code and avoid duplicated logic.
 3. **Migrate in slices**: Move `get_modules` first (lower risk) and keep Python fallbacks until the TS version is proven stable. Follow with `check_modules` in feature flags (`--checks=legacy|ts`).
 4. **Add tests alongside migrations** to prevent regressions and make future refactors safer.
@@ -82,8 +82,7 @@ These topics sit adjacent to the pipeline work but should stay visible while pri
 
 ## Next Concrete Steps
 
-1. Finalize + merge this roadmap document.
-2. Create issues for P1.1, P1.3, P5.1 and assign initial owners.
-3. Prepare a small sample dataset to validate the staging files while we work on schema validation.
+1. Create issues for P1.3 and P5.1 and assign initial owners.
+2. Prepare a small sample dataset to validate the staging files while we work on schema validation.
 
 Feel free to adjust priorities, rename tasks, or add new items. This roadmap is meant to stay alive—update it as soon as we learn something new during implementation.
