@@ -121,6 +121,16 @@ How can you use it?
 2. Execute `node --run ownList`.
 3. You can see the result in [`result.html`](https://modules.magicmirror.builders/result.html).
 
+## Running the produced container image locally
+
+We are running this project as container. For testing the produced container you can run it locally by executing
+
+```bash
+docker run --rm -p 8080:8080 ghcr.io/magicmirrororg/magicmirror-3rd-party-modules:main
+```
+
+You can access the content with a webbrowser under http://localhost:8080.
+
 ## Ideas / To do
 
 See [GitHub issues](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/issues) for ideas and tasks.
