@@ -13,14 +13,14 @@ This document captures the long-term improvements we want to implement in the mo
 
 ### 1. Pipeline Architecture & Orchestration
 
-| Task | Description                                                                                                                                                | Dependencies | Effort |
-| ---- | ---------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | ------ |
-| P1.1 | Describe the full stage graph (inputs/outputs, side-effects) in a machine-readable config ([stage graph](pipeline/stage-graph.json)) ✅ Completed Sep 2025 | none         | S      |
-| P1.2 | Introduce a lightweight orchestrator (Node CLI) that reads the config and runs stages with structured logging                                              | P1.1         | M      |
-| P1.3 | Add JSON-schema validation for every stage boundary (modules.stage.\* files) ([schemas](pipeline/schemas)) ✅ Completed Sep 2025                           | P1.1         | M      |
-| P1.4 | Provide a skip/only mechanism for partial runs (e.g. `--only=checks`)                                                                                      | P1.2         | S      |
-| P1.5 | Define schemas for published outputs (`modules.json`, `modules.min.json`, `stats.json`) and enforce validation in release packaging                        | P1.3         | M      |
-| P1.6 | Consolidate shared schema definitions (shared `$defs` / generator) to keep stage contracts in sync                                                         | P1.3         | S      |
+| Task | Description                                                                                                                                                                   | Dependencies | Effort |
+| ---- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | ------ |
+| P1.1 | Describe the full stage graph (inputs/outputs, side-effects) in a machine-readable config ([stage graph](pipeline/stage-graph.json)) ✅ Completed Sep 2025                    | none         | S      |
+| P1.2 | Introduce a lightweight orchestrator (Node CLI) that reads the config and runs stages with structured logging                                                                 | P1.1         | M      |
+| P1.3 | Add JSON-schema validation for every stage boundary (modules.stage.\* files) ([schemas](pipeline/schemas)) ✅ Completed Sep 2025                                              | P1.1         | M      |
+| P1.4 | Provide a skip/only mechanism for partial runs (e.g. `--only=checks`)                                                                                                         | P1.2         | S      |
+| P1.5 | Define schemas for published outputs (`modules.json`, `modules.min.json`, `stats.json`), extend fixtures to emit those artifacts, and enforce validation in release packaging | P1.3         | M      |
+| P1.6 | Consolidate shared schema definitions (shared `$defs` / generator) to keep stage contracts in sync                                                                            | P1.3         | S      |
 
 ### 2. Runtime & Codebase Consolidation
 
@@ -49,7 +49,7 @@ This document captures the long-term improvements we want to implement in the mo
 | ---- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | ------ |
 | P4.1 | Split checks into a registry with metadata (category, severity, auto-fixable)                                                                                                   | P2.3         | M      |
 | P4.2 | Add configuration file to toggle check groups (`fast`, `deep`, optional ESLint/ncu)                                                                                             | P4.1         | S      |
-| P4.3 | Create sample dataset + regression tests for check outputs (golden files)                                                                                                       | P4.1         | M      |
+| P4.3 | Create sample dataset + regression tests for check outputs (golden files), reusing the curated fixtures where possible                                                          | P4.1         | M      |
 | P4.4 | Provide CLI progress UI and Markdown summary per run                                                                                                                            | P1.2         | S      |
 | P4.5 | Add rule detecting modules that rely on MagicMirror core dependencies without declaring them ([#78](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/issues/78)) | P4.1         | M      |
 | P4.6 | Check README install/update sections for copyable fenced command blocks ([#54](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/issues/54))                      | P4.1         | S      |
@@ -89,7 +89,7 @@ These topics sit adjacent to the pipeline work but should stay visible while pri
 
 ## Next Concrete Steps
 
-1. Prepare a small sample dataset to validate the staging files against the new schemas.
+1. Add a schema-fixture validation command (`npm run test:fixtures`) and wire it into automated checks so the curated dataset guards regressions.
 2. File follow-up issues for P1.5 and P1.6 (final artifact schemas + shared definitions) and slot them after the architecture work in the board.
 3. Draft the orchestrator CLI design doc (task P1.2) using the stage graph and architecture diagrams as the backbone for review.
 

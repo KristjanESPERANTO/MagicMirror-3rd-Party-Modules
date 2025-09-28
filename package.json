@@ -33,6 +33,7 @@
     "expandModuleList": "node scripts/expand_module_list_with_repo_data.js",
     "checkModulesJs": "node scripts/check_modules_js.js",
     "checkModules": "python3 scripts/check_modules.py",
+    "fixtures:generate": "node scripts/fixtures/generateFixturePipeline.js",
     "ownList": "node create_own_module_list.js && node --run updateRepositoryData && node --run getModules && node --run expandModuleList && node --run checkModulesJs && node --run checkModules",
     "lint": "eslint && prettier --check . && cspell .",
     "lint:fix": "eslint --fix && prettier . --write . && cspell .",

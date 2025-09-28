@@ -1,0 +1,87 @@
+[
+  {
+    "name": "MMM-01ZM",
+    "category": "Utility / IoT / 3rd Party / Integration",
+    "url": "https://github.com/rubinho101/MMM-01ZM",
+    "id": "rubinho101/MMM-01ZM",
+    "maintainer": "rubinho101",
+    "maintainerURL": "",
+    "description": "Display Xiaomi LYWSDCGQ 01ZM Temperature and Humidity sensor values directly AND Nova SDS011 PM Air Quality sensor data.",
+    "issues": [],
+    "stars": 4,
+    "license": "MIT"
+  },
+  {
+    "name": "MMM-AC-aseag",
+    "category": "Transport / Travel",
+    "url": "https://github.com/j-hiller/MMM-AC-aseag",
+    "id": "j-hiller/MMM-AC-aseag",
+    "maintainer": "j-hiller",
+    "maintainerURL": "https://github.com/j-hiller",
+    "description": "Displays departures for ASEAG busses in Aachen, Germany.",
+    "issues": [],
+    "stars": 2,
+    "license": "MIT"
+  },
+  {
+    "name": "MMM-AccuWeatherForecastDeluxe",
+    "category": "Weather",
+    "url": "https://github.com/maxbethge/MMM-AccuWeatherForecastDeluxe",
+    "id": "maxbethge/MMM-AccuWeatherForecastDeluxe",
+    "maintainer": "maxbethge",
+    "maintainerURL": "",
+    "description": "Display weather information using the AccuWeather API.",
+    "issues": [],
+    "stars": 7,
+    "license": "MIT"
+  },
+  {
+    "name": "MMM-Actual",
+    "category": "Finance",
+    "url": "https://github.com/trumpetx/MMM-Actual",
+    "id": "trumpetx/MMM-Actual",
+    "maintainer": "trumpetx",
+    "maintainerURL": "",
+    "description": "Display financial balances from Actual Budget.",
+    "issues": [],
+    "stars": 1,
+    "license": "AGPL-3.0"
+  },
+  {
+    "name": "MMM-AddressBook",
+    "category": "News / Information",
+    "url": "https://github.com/Unclearogre/MMM-AddressBook",
+    "id": "Unclearogre/MMM-AddressBook",
+    "maintainer": "Unclearogre",
+    "maintainerURL": "https://github.com/Unclearogre",
+    "description": "Display an Address Book type listing. It can be used as a simple address book or for any sort of data that can be fit into such a layout.",
+    "issues": [],
+    "stars": 0,
+    "license": "GPL-3.0"
+  },
+  {
+    "name": "MMM-Admin-Interface",
+    "category": "Outdated Modules",
+    "url": "https://github.com/ItayXD/MMM-Admin-Interface",
+    "id": "ItayXD/MMM-Admin-Interface",
+    "maintainer": "ItayXD",
+    "maintainerURL": "",
+    "description": "An interface to manage your MagicMirror.",
+    "issues": [],
+    "outdated": "Abandoned. No updates since years. But may still work.",
+    "stars": 47,
+    "license": "GPL-3.0"
+  },
+  {
+    "name": "MMM-AirQuality",
+    "category": "Weather",
+    "url": "https://github.com/CFenner/MMM-AirQuality",
+    "id": "CFenner/MMM-AirQuality",
+    "maintainer": "CFenner",
+    "maintainerURL": "",
+    "description": "Display the air quality index for a certain location.",
+    "issues": [],
+    "stars": 37,
+    "license": "MIT"
+  }
+]

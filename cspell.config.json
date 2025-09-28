@@ -2,7 +2,9 @@
   "version": "0.2",
   "language": "en",
   "words": [
+    "Accu",
     "anniversarymodule",
+    "aseag",
     "axios",
     "bergfex",
     "bugsounet",
@@ -31,6 +33,7 @@
     "Workstreams"
   ],
   "ignorePaths": [
+    "fixtures/**/*.json",
     "node_modules/",
     "modules/",
     "modules_temp/",

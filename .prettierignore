@@ -1,5 +1,6 @@
 *.js
 website/data/*.json
+fixtures/data/
 website/fonts/
 modules/
 result.md
