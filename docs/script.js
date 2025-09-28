@@ -431,7 +431,7 @@ async function initiate () {
   try {
     const response = await fetch(modulesFile);
     const data = await response.json();
-    allModules = data;
+    allModules = data.modules;
   } catch (error) {
     allModules = [];
     console.error("Error fetching modules:", error);
