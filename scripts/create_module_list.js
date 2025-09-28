@@ -5,13 +5,18 @@ import sanitizeHtml from "sanitize-html";
 
 async function fetchMarkdownData () {
   try {
-    const url =
-      "https://raw.githubusercontent.com/wiki/MagicMirrorOrg/MagicMirror/3rd-Party-Modules.md";
-    const response = await fetch(url);
-    if (response.status !== 200) {
-      throw new Error(`The fetch() call failed. Status code: ${response.status}`);
+    let markdown = "";
+    if (process.env.WIKI_FILE) {
+      markdown = fs.readFileSync(`${process.env.WIKI_FILE}`, "utf8");
+    } else {
+      const url =
+        "https://raw.githubusercontent.com/wiki/MagicMirrorOrg/MagicMirror/3rd-Party-Modules.md";
+      const response = await fetch(url);
+      if (response.status !== 200) {
+        throw new Error(`The fetch() call failed. Status code: ${response.status}`);
+      }
+      markdown = await response.text();
     }
-    const markdown = await response.text();
     return markdown;
   } catch (error) {
     console.error(error);

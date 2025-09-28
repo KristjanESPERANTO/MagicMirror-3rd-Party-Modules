@@ -4,7 +4,7 @@ WORKDIR /workspace
 
 COPY . .
 
-ARG GITHUB_TOKEN
+ARG GITHUB_TOKEN WIKI_FILE
 RUN <<EOF
 set -e
 git config --global --add safe.directory /workspace
