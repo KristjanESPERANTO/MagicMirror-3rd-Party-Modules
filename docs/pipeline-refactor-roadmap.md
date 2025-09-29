@@ -96,7 +96,7 @@ These topics sit adjacent to the pipeline work but should stay visible while pri
 
 ## Completed initiative: P1.5 Final artifact schemas & validation (Sep 2025)
 
-- Schemas, fixtures, and release validation commands are documented in the [Contributor Guide](contributor-guide.md) and enforced via `node --run release:validate`.
+- Schemas, fixtures, and release validation commands are documented in the [Contributor Guide](CONTRIBUTING.md) and enforced via `node --run release:validate`.
 - Rollout announcement and maintainer checklist live in [`docs/release-notes/2025-09-schema-validation.md`](release-notes/2025-09-schema-validation.md);
   future adjustments should be tracked as follow-up issues rather than here.
 - Validation runs on the current datasets (2025‑09‑29) pass cleanly; any new schema gaps discovered by downstream consumers should be captured via issues linked under P1.5.

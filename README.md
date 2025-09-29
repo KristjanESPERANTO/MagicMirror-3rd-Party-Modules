@@ -55,94 +55,13 @@ Here are some test results:
 - _Deprecated: Found 'node-version: [16' in file `nodejs.yml`: Update to current version._
 - _Issue: The license in the package.json (ISC) doesn't match the license file (MIT)._
 
-## Prerequisites
+## Contributor Guide
 
-For running the scripts and developing you need:
-
-- [Python](https://www.python.org)
-- [node.js](https://nodejs.org)
-
-## Installation
-
-1. Clone this repository:
-   `git clone https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules`
-2. Change into the created directory:
-   `cd MagicMirror-3rd-Party-Modules`
-3. Install dependencies:
-   `npm install`
-
-## Scripts
-
-With `npm start` you can call up a cli menu that offers you options for execution.
-
-You can run all scripts in the right order by `node --run all`.
-
-_Note_: Running all scripts requires a lot of time (> 10 min) and space on your hard drive (> 2 GB).
-
-### create_module_list.js
-
-This script reads the GitHub info of the modules from the respective GitHub repo and writes it to a json file.
-
-### updateRepositoryApiData.js
-
-This script reads data, such as the number of stars, via the GitHub API for a few modules.
-
-### get_modules.py
-
-This script reads the module list (created by the script before) and clones all modules.
-
-_Note_: This script takes a long time (> 10 min) to download all modules and also takes up a lot of space on your hard drive (> 2 GB).
-
-### expand_module_list_with_repo_data.js
-
-This script expands the module list with information from the `package.json` files from the modules (if available).
-
-The script also adds an image. To do this, it searches the module's repo for an image that contains "screenshot" or "example" in it's name. If it doesn't find anything like that, it takes the first image it finds in the repo.
-
-_Note_: Images will only be included if a free license is specified in the `package.json`.
-
-### check_modules_js.js
-
-This script does some additional checks on the modules like if the main js file is named correctly or minified.
-
-### check_modules.py
-
-This script goes through all cloned modules and performs various checks. The result is written to the files [`result.html`](https://modules.magicmirror.builders/result.html) and [`modules.json`](./website/data/modules.json).
-
-### validate_release_artifacts.js
-
-This script validates every stage snapshot and the published catalogue (`modules.json`, `modules.min.json`, `stats.json`) against the JSON Schemas. Run it with `node --run release:validate` after generating the website data (for example as part of the release packaging flow). The command exits with a non-zero status if any artifact violates the contract, ensuring CI/CD pipelines fail fast. As of September 2025 this check is mandatory for releases - see the [Contributor Guide](docs/contributor-guide.md) for details.
-
-### Special script: create_own_module_list.js
-
-This script is for developers who want to test their own modules themselves. It can also be used to test other branches.
-
-This script replaces the first script `create_module_list.js` for this case.
-
-How can you use it?
-
-1. Write the module or modules you want to test in a new file [`ownModuleList.json`](ownModuleList.json) (use `ownModuleList_sample.json` as template). The only obligatory field is "url", but you can also enter a "branch".
-2. Execute `node --run ownList`.
-3. You can see the result in [`result.html`](https://modules.magicmirror.builders/result.html).
-
-## Running the produced container image locally
-
-We are running this project as container. For testing the produced container you can run it locally by executing
-
-```bash
-docker run --rm -p 8080:8080 ghcr.io/magicmirrororg/magicmirror-3rd-party-modules:main
-```
-
-You can access the content with a browser under http://localhost:8080.
+Contributor setup instructions—including required runtimes and installation steps—now live in the [Contributing Guide](docs/CONTRIBUTING.md). Casual readers can skip straight to the module catalogue.
 
 ## Ideas / To do
 
 See [GitHub issues](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/issues) for ideas and tasks.
-
-Track pipeline modernization progress in [`docs/pipeline-refactor-roadmap.md`](docs/pipeline-refactor-roadmap.md).
-Explore the pipeline architecture overview in [`docs/architecture.md`](docs/architecture.md).
-Follow the consolidation steps in the [`Contributor Guide`](docs/contributor-guide.md) (includes the Phase 4 validation rollout).
-Read the rollout summary in [`docs/release-notes/2025-09-schema-validation.md`](docs/release-notes/2025-09-schema-validation.md).
 
 ### Templates for the creation of issues
 
@@ -152,14 +71,6 @@ Read the rollout summary in [`docs/release-notes/2025-09-schema-validation.md`](
 - Missing screenshot: <https://github.com/randomBrainstormer/MMM-GoogleCalendar/issues/60>
 - Move screenshot to repository: <https://github.com/joschi27/MMM-flatastic/issues/3>
 - Reference to the check results: <https://github.com/Fabrizz/MMM-OnSpotify/issues/48>
-
-### Discarded ideas
-
-- New test: Is `moment` in use? <https://momentjs.com/docs/#/-project-status/>.
-  - `moment` is not really dead yet (it is no longer being developed, but it is still being maintained), so there is no urgent reason to change now. This is a test for the future when the Temporal API is ready.
-- Use data from GitHub API: <https://api.github.com/repos/MagicMirrorOrg/MagicMirror>
-  - Is there also a GitLab API? Yes, example: <https://gitlab.com/khassel/MMM-RepoStats/-/blob/master/node_helper.js?ref_type=heads#L116>
-  - Unfortunately, the queries are blocked relatively quickly when we query information from each module via the API.
 
 ## License
 

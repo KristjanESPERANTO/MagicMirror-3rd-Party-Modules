@@ -1,4 +1,4 @@
-# Contributor Guide
+# Contributing Guide
 
 Welcome! This document bundles the day-to-day tasks contributors perform when working on the MagicMirror² module list. Use it as the single stop for local setup, pipeline execution, and schema validation.
 
