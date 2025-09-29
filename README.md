@@ -111,7 +111,7 @@ This script goes through all cloned modules and performs various checks. The res
 
 ### validate_release_artifacts.js
 
-This script validates every stage snapshot and the published catalogue (`modules.json`, `modules.min.json`, `stats.json`) against the JSON Schemas. Run it with `node --run release:validate` after generating the website data (for example as part of the release packaging flow). The command exits with a non-zero status if any artifact violates the contract, ensuring CI/CD pipelines fail fast.
+This script validates every stage snapshot and the published catalogue (`modules.json`, `modules.min.json`, `stats.json`) against the JSON Schemas. Run it with `node --run release:validate` after generating the website data (for example as part of the release packaging flow). The command exits with a non-zero status if any artifact violates the contract, ensuring CI/CD pipelines fail fast. As of September 2025 this check is mandatory for releases - see the [Contributor Guide](docs/contributor-guide.md) for details.
 
 ### Special script: create_own_module_list.js
 
@@ -141,6 +141,8 @@ See [GitHub issues](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modu
 
 Track pipeline modernization progress in [`docs/pipeline-refactor-roadmap.md`](docs/pipeline-refactor-roadmap.md).
 Explore the pipeline architecture overview in [`docs/architecture.md`](docs/architecture.md).
+Follow the consolidation steps in the [`Contributor Guide`](docs/contributor-guide.md) (includes the Phase 4 validation rollout).
+Read the rollout summary in [`docs/release-notes/2025-09-schema-validation.md`](docs/release-notes/2025-09-schema-validation.md).
 
 ### Templates for the creation of issues
 

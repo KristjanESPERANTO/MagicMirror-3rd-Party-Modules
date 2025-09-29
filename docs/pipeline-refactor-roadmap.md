@@ -19,7 +19,7 @@ This document captures the long-term improvements we want to implement in the mo
 | P1.2 | Introduce a lightweight orchestrator (Node CLI) that reads the config and runs stages with structured logging                                              | P1.1         | M      |
 | P1.3 | Add JSON-schema validation for every stage boundary (modules.stage.\* files) ([schemas](pipeline/schemas)) ✅ Completed Sep 2025                           | P1.1         | M      |
 | P1.4 | Provide a skip/only mechanism for partial runs (e.g. `--only=checks`)                                                                                      | P1.2         | S      |
-| P1.5 | Final artifact schemas & validation: see playbook below for phased tasks covering schema design, fixtures, and release enforcement                         | P1.3         | M      |
+| P1.5 | Final artifact schemas & validation — rollout completed and documented (see contributor guide & release notes) ✅ Completed Sep 2025                       | P1.3         | M      |
 | P1.6 | Consolidate shared schema definitions (shared `$defs` / generator) to keep stage contracts in sync                                                         | P1.3         | S      |
 
 ### 2. Runtime & Codebase Consolidation
@@ -89,50 +89,17 @@ These topics sit adjacent to the pipeline work but should stay visible while pri
 
 ## Next Concrete Steps
 
-1. Launch **P1.5 Phase 4**: socialize the validation workflow (docs, release notes) and coordinate with downstream consumers before enforcing new contracts.
-2. Scope **P1.6 shared `$defs`** work, identifying candidates from the freshly added schemas so consolidation can start immediately after Phase 4.
-3. Draft the orchestrator CLI design doc (task P1.2) using the stage graph and architecture diagrams as the backbone for review.
-4. Translate the release validation script into a GitHub Actions check so schema regressions block PR merges.
+1. Scope **P1.6 shared `$defs`** work, identifying candidates from the freshly added schemas so consolidation can start immediately after Phase 4.
+2. Draft the orchestrator CLI design doc (task P1.2) using the stage graph and architecture diagrams as the backbone for review.
+3. Translate the release validation script into a GitHub Actions check so schema regressions block PR merges.
+4. Collect feedback from early adopters of the new validation gate and capture follow-up issues where additional metadata needs backfilling.
 
-## P1.5 Playbook: Final Artifact Schemas & Validation
+## Completed initiative: P1.5 Final artifact schemas & validation (Sep 2025)
 
-**Prerequisite**: Orchestrator design (P1.2) is approved and the MVP implementation is underway so stage sequencing and logging are stable.
-
-### Phase 0 – Baseline the current artifacts ✅ Completed Sep 2025
-
-- Frozen snapshots stored under `fixtures/baseline/2025-09-28/` document `modules.json`, `modules.min.json`, and `stats.json` from the current pipeline.
-- Implicit contract notes captured during schema drafting; discrepancies logged for follow-up with schema tightening work.
-
-### Phase 1 – Schema design & shared definitions ✅ Completed Sep 2025
-
-- JSON Schemas for `modules.json`, `modules.min.json`, and `stats.json` now live in `pipeline/schemas/`, aligning with observed data.
-- Baseline artifacts validate cleanly; validation is wired into `scripts/fixtures/validateFixtures.js` for repeatable checks.
-- Maintainer review scheduled for the next roadmap sync to confirm conventions and plan incremental tightening.
-
-### Phase 2 – Fixture pipeline extensions ✅ Completed Sep 2025
-
-- `scripts/fixtures/generateFixturePipeline.js` now emits every stage fixture plus the published artifacts (`modules.json`, `modules.min.json`, `stats.json`) directly from the curated seed dataset.
-- Generated outputs under `fixtures/data/` are sorted by module `id` for deterministic diffs, and the minified catalogue mirrors the production payload.
-- `fixtures/README.md` documents the refresh commands, describes the stage-to-artifact mapping, and calls out the maintainer URL normalization heuristics.
-- Stage 1 fixtures backfill missing maintainer URLs (derived from repository owners) so future schema tightening will not fail on legacy data.
-
-### Phase 3 – Validation automation ✅ Completed Sep 2025
-
-- All stage schemas now require a non-empty `maintainerURL` field with URI formatting, and the final artifact schema mirrors the constraint.
-- Added `scripts/validate_release_artifacts.js` plus the `node --run release:validate` command, and wired it into `node --run automated` so release packaging fails fast on schema drift.
-- `fixtures/README.md` documents recovery steps for failed validations, covering both fixture regeneration and production artifact checks.
-
-### Phase 4 – Rollout & follow-up
-
-- Announce the change in the contributor guide and release notes, highlighting how to run the new validation locally.
-- Backfill any missing historical data or metadata required by the schemas, capturing follow-up bugs as needed.
-- Confirm the orchestrator (P1.2) consumes the schemas for runtime validation once it’s live, closing the loop between build-time and runtime guarantees.
-
-**Success Criteria**
-
-- All published artifacts validate against the new schemas in CI and during release packaging.
-- Final artifact fixtures stay in sync with stage fixtures and provide regression coverage for downstream consumers.
-- Documentation clearly describes the schema contracts, validation commands, and remediation paths.
+- Schemas, fixtures, and release validation commands are documented in the [Contributor Guide](contributor-guide.md) and enforced via `node --run release:validate`.
+- Rollout announcement and maintainer checklist live in [`docs/release-notes/2025-09-schema-validation.md`](release-notes/2025-09-schema-validation.md);
+  future adjustments should be tracked as follow-up issues rather than here.
+- Validation runs on the current datasets (2025‑09‑29) pass cleanly; any new schema gaps discovered by downstream consumers should be captured via issues linked under P1.5.
 
 ---
 

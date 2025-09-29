@@ -33,7 +33,8 @@
     "smarthome",
     "testconfig",
     "Updat",
-    "Workstreams"
+    "Workstreams",
+    "venv"
   ],
   "ignorePaths": [
     "fixtures/**/*.json",
