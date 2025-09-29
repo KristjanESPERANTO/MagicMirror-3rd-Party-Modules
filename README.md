@@ -129,13 +129,13 @@ We are running this project as container. For testing the produced container you
 docker run --rm -p 8080:8080 ghcr.io/magicmirrororg/magicmirror-3rd-party-modules:main
 ```
 
-You can access the content with a webbrowser under http://localhost:8080.
+You can access the content with a browser under http://localhost:8080.
 
 ## Ideas / To do
 
 See [GitHub issues](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/issues) for ideas and tasks.
 
-Track pipeline modernization progress in [`pipeline-refactor-roadmap.md`](pipeline-refactor-roadmap.md).
+Track pipeline modernization progress in [`docs/pipeline-refactor-roadmap.md`](docs/pipeline-refactor-roadmap.md).
 Explore the pipeline architecture overview in [`docs/architecture.md`](docs/architecture.md).
 
 ### Templates for the creation of issues

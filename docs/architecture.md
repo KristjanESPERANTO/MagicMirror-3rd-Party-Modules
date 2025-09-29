@@ -23,7 +23,7 @@ The production pipeline is triggered manually via `node --run all` and progresse
 flowchart LR
     wiki[("MagicMirror wiki table")] --> create{{"Create module list - Node.js"}}
     create --> stage1["modules.stage.1.json"]
-    stage1 --> update{{"Update repository metadat - Node.js"}}
+    stage1 --> update{{"Update repository metadata - Node.js"}}
     update -- "modules.stage.2.json" --> get{{"Fetch module repos - Python"}}
     update <-.-> cache[("gitHubData.json")]
     get -- "modules.stage.3.json" --> expand{{"Enrich with package metadata - Node.js"}}

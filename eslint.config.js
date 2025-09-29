@@ -16,7 +16,8 @@ export default defineConfig([
       "website/data/modules*.json",
       "website/fonts/*",
       "website/result.html",
-      "website/result.md"
+      "website/result.md",
+      "website/test/3rd-Party-Modules.md"
     ]
   },
   {

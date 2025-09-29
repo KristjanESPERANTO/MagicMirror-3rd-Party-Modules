@@ -61,7 +61,7 @@ This document captures the long-term improvements we want to implement in the mo
 
 | Task | Description                                                                                                                                                                    | Dependencies         | Effort |
 | ---- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | -------------------- | ------ |
-| P5.1 | Publish an architecture diagram (current + target) in `docs/` ([architecture.md](docs/architecture.md)) ✅ Completed Sep 2025                                                  | P1.1                 | S      |
+| P5.1 | Publish an architecture diagram (current + target) in `docs/` ([architecture.md](architecture.md)) ✅ Completed Sep 2025                                                       | P1.1                 | S      |
 | P5.2 | Expand contributor guide with setup, pipeline tips, troubleshooting                                                                                                            | P5.1                 | M      |
 | P5.3 | Convert roadmap tasks into GitHub issues and track via project board                                                                                                           | after roadmap review | S      |
 | P5.4 | Schedule periodic checkpoint (e.g. monthly) to review progress & adjust priorities                                                                                             | P5.3                 | S      |
@@ -135,5 +135,7 @@ These topics sit adjacent to the pipeline work but should stay visible while pri
 - All published artifacts validate against the new schemas in CI and during release packaging.
 - Final artifact fixtures stay in sync with stage fixtures and provide regression coverage for downstream consumers.
 - Documentation clearly describes the schema contracts, validation commands, and remediation paths.
+
+---
 
 Feel free to adjust priorities, rename tasks, or add new items. This roadmap is meant to stay alive—update it as soon as we learn something new during implementation.

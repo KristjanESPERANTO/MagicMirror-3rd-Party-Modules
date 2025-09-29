@@ -8,6 +8,8 @@
     "axios",
     "bergfex",
     "bugsounet",
+    "checkjs",
+    "checkpy",
     "codeberg",
     "depandabot",
     "dependencie",
@@ -16,6 +18,7 @@
     "hoster",
     "Kristjan",
     "magicmirror",
+    "magicmirrororg",
     "mainbranch",
     "marcomerens",
     "mmpm",
@@ -39,7 +42,8 @@
     "modules_temp/",
     "website/**",
     "eslint-config-DEBUG.json",
-    "container/"
+    "container/",
+    "website/test/3rd-Party-Modules.md"
   ],
   "dictionaries": ["node"]
 }
