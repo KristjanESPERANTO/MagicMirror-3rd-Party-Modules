@@ -1,0 +1,37 @@
+# Makes sure our published module data still looks good before we merge changes
+name: Release Artifact Validation
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  actions: read
+
+jobs:
+  validate-release-artifacts:
+    name: Validate release artifacts
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Build bundled schemas
+        run: npm run schemas:build
+
+      - name: Validate release artifacts
+        run: npm run release:validate

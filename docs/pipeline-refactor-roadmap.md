@@ -90,7 +90,6 @@ These topics sit adjacent to the pipeline work but should stay visible while pri
 ## Next Concrete Steps
 
 1. Draft the orchestrator CLI design doc (task P1.2) using the stage graph and architecture diagrams as the backbone for review. ✅ See [`docs/pipeline/orchestrator-cli-design.md`](pipeline/orchestrator-cli-design.md) for the current proposal.
-2. Translate the release validation script into a GitHub Actions check so schema regressions block PR merges.
-3. Collect feedback from early adopters of the new validation gate and capture follow-up issues where additional metadata needs backfilling.
+2. Collect feedback from early adopters of the new validation gate and capture follow-up issues where additional metadata needs backfilling.
 
 Feel free to adjust priorities, rename tasks, or add new items. This roadmap is meant to stay alive—update it as soon as we learn something new during implementation.
