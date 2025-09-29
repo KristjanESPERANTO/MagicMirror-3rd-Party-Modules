@@ -30,7 +30,7 @@ This is a list of information that we can display on the web page and where the 
 - Tags: Are taken from the keywords in the `package.json`. Take a look at [this package.json](https://github.com/KristjanESPERANTO/MMM-PublicTransportHafas/blob/main/package.json) as an example.
 - License: Is taken from the keywords in the `package.json`. Take a look at [this package.json](https://github.com/KristjanESPERANTO/MMM-PublicTransportHafas/blob/main/package.json) as an example.
 
-Also check the [result file](./docs/result.md) to see if there are any notes on your module.
+Also check the [result file](./website/result.md) to see if there are any notes on your module.
 
 ## Module tests
 
@@ -107,7 +107,7 @@ This script does some additional checks on the modules like if the main js file 
 
 ### check_modules.py
 
-This script goes through all cloned modules and performs various checks. The result is written to the files [`result.html`](https://modules.magicmirror.builders/result.html) and [`modules.json`](./docs/data/modules.json).
+This script goes through all cloned modules and performs various checks. The result is written to the files [`result.html`](https://modules.magicmirror.builders/result.html) and [`modules.json`](./website/data/modules.json).
 
 ### Special script: create_own_module_list.js
 
@@ -120,6 +120,16 @@ How can you use it?
 1. Write the module or modules you want to test in a new file [`ownModuleList.json`](ownModuleList.json) (use `ownModuleList_sample.json` as template). The only obligatory field is "url", but you can also enter a "branch".
 2. Execute `node --run ownList`.
 3. You can see the result in [`result.html`](https://modules.magicmirror.builders/result.html).
+
+## Running the produced container image locally
+
+We are running this project as container. For testing the produced container you can run it locally by executing
+
+```bash
+docker run --rm -p 8080:8080 ghcr.io/magicmirrororg/magicmirror-3rd-party-modules:main
+```
+
+You can access the content with a webbrowser under http://localhost:8080.
 
 ## Ideas / To do
 

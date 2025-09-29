@@ -4,7 +4,7 @@ WORKDIR /workspace
 
 COPY . .
 
-ARG GITHUB_TOKEN
+ARG GITHUB_TOKEN WIKI_FILE
 RUN <<EOF
 set -e
 git config --global --add safe.directory /workspace
@@ -21,6 +21,6 @@ LABEL maintainer="MagicMirrorOrg"
 COPY container/default.conf /etc/nginx/conf.d/
 COPY container/nginx.conf /etc/nginx/
 
-COPY --from=builder /workspace/docs /usr/share/nginx/docs/
+COPY --from=builder /workspace/website /usr/share/nginx/website/
 
 EXPOSE 8080

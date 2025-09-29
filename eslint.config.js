@@ -13,10 +13,10 @@ export default defineConfig([
     ignores: [
       "modules/*",
       "modules_temp/*",
-      "docs/data/modules*.json",
-      "docs/fonts/*",
-      "docs/result.html",
-      "docs/result.md"
+      "website/data/modules*.json",
+      "website/fonts/*",
+      "website/result.html",
+      "website/result.md"
     ]
   },
   {

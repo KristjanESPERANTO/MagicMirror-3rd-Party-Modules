@@ -26,4 +26,4 @@ def check_file_size_and_run_command(file_path: str):
 
 # Usage
 check_file_size_and_run_command(
-    './docs/data/modules.json')
+    './website/data/modules.json')

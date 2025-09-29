@@ -17,7 +17,7 @@ def get_modules():
     # For testing set this to a lower number to test only a few modules
     max_module_counter = 99999
 
-    with open("./docs/data/modules.stage.2.json", encoding="utf-8") as modules_json_file:
+    with open("./website/data/modules.stage.2.json", encoding="utf-8") as modules_json_file:
         modules_data = json.load(modules_json_file)
 
     if isinstance(modules_data, dict):
@@ -129,11 +129,11 @@ def get_modules():
 
     # Write skipped modules to separate file
     if skipped_modules:
-        with open("./docs/data/skipped_modules.json", "w", encoding="utf-8") as f:
+        with open("./website/data/skipped_modules.json", "w", encoding="utf-8") as f:
             json.dump(skipped_modules, f, indent=2)
 
     # Write valid modules to next stage file
-    with open("./docs/data/modules.stage.3.json", "w", encoding="utf-8") as f:
+    with open("./website/data/modules.stage.3.json", "w", encoding="utf-8") as f:
         json.dump({"modules": valid_modules}, f, indent=2)
 
 
