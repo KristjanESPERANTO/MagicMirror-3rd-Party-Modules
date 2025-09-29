@@ -2,14 +2,25 @@
   "lastUpdate": "2025-09-28T00:00:00.000Z",
   "modules": [
     {
-      "name": "MMM-01ZM",
-      "category": "Utility / IoT / 3rd Party / Integration",
-      "url": "https://github.com/rubinho101/MMM-01ZM",
-      "id": "rubinho101/MMM-01ZM",
-      "maintainer": "rubinho101",
-      "maintainerURL": "",
-      "description": "Display Xiaomi LYWSDCGQ 01ZM Temperature and Humidity sensor values directly AND Nova SDS011 PM Air Quality sensor data.",
+      "name": "MMM-AirQuality",
+      "category": "Weather",
+      "url": "https://github.com/CFenner/MMM-AirQuality",
+      "id": "CFenner/MMM-AirQuality",
+      "maintainer": "CFenner",
+      "maintainerURL": "https://github.com/CFenner",
+      "description": "Display the air quality index for a certain location.",
       "issues": []
+    },
+    {
+      "name": "MMM-Admin-Interface",
+      "category": "Outdated Modules",
+      "url": "https://github.com/ItayXD/MMM-Admin-Interface",
+      "id": "ItayXD/MMM-Admin-Interface",
+      "maintainer": "ItayXD",
+      "maintainerURL": "https://github.com/ItayXD",
+      "description": "An interface to manage your MagicMirror.",
+      "issues": [],
+      "outdated": "Abandoned. No updates since years. But may still work."
     },
     {
       "name": "MMM-AC-aseag",
@@ -27,8 +38,18 @@
       "url": "https://github.com/maxbethge/MMM-AccuWeatherForecastDeluxe",
       "id": "maxbethge/MMM-AccuWeatherForecastDeluxe",
       "maintainer": "maxbethge",
-      "maintainerURL": "",
+      "maintainerURL": "https://github.com/maxbethge",
       "description": "Display weather information using the AccuWeather API.",
+      "issues": []
+    },
+    {
+      "name": "MMM-01ZM",
+      "category": "Utility / IoT / 3rd Party / Integration",
+      "url": "https://github.com/rubinho101/MMM-01ZM",
+      "id": "rubinho101/MMM-01ZM",
+      "maintainer": "rubinho101",
+      "maintainerURL": "https://github.com/rubinho101",
+      "description": "Display Xiaomi LYWSDCGQ 01ZM Temperature and Humidity sensor values directly AND Nova SDS011 PM Air Quality sensor data.",
       "issues": []
     },
     {
@@ -37,7 +58,7 @@
       "url": "https://github.com/trumpetx/MMM-Actual",
       "id": "trumpetx/MMM-Actual",
       "maintainer": "trumpetx",
-      "maintainerURL": "",
+      "maintainerURL": "https://github.com/trumpetx",
       "description": "Display financial balances from Actual Budget.",
       "issues": []
     },
@@ -49,27 +70,6 @@
       "maintainer": "Unclearogre",
       "maintainerURL": "https://github.com/Unclearogre",
       "description": "Display an Address Book type listing. It can be used as a simple address book or for any sort of data that can be fit into such a layout.",
-      "issues": []
-    },
-    {
-      "name": "MMM-Admin-Interface",
-      "category": "Outdated Modules",
-      "url": "https://github.com/ItayXD/MMM-Admin-Interface",
-      "id": "ItayXD/MMM-Admin-Interface",
-      "maintainer": "ItayXD",
-      "maintainerURL": "",
-      "description": "An interface to manage your MagicMirror.",
-      "issues": [],
-      "outdated": "Abandoned. No updates since years. But may still work."
-    },
-    {
-      "name": "MMM-AirQuality",
-      "category": "Weather",
-      "url": "https://github.com/CFenner/MMM-AirQuality",
-      "id": "CFenner/MMM-AirQuality",
-      "maintainer": "CFenner",
-      "maintainerURL": "",
-      "description": "Display the air quality index for a certain location.",
       "issues": []
     }
   ]

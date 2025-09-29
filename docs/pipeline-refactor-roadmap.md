@@ -110,12 +110,12 @@ These topics sit adjacent to the pipeline work but should stay visible while pri
 - Baseline artifacts validate cleanly; validation is wired into `scripts/fixtures/validateFixtures.js` for repeatable checks.
 - Maintainer review scheduled for the next roadmap sync to confirm conventions and plan incremental tightening.
 
-### Phase 2 – Fixture pipeline extensions
+### Phase 2 – Fixture pipeline extensions ✅ Completed Sep 2025
 
-- Extend `scripts/fixtures/generateFixturePipeline.js` to emit the published artifacts derived from the existing seed metadata.
-- Store the generated fixtures under `fixtures/data/` with deterministic ordering so they slot into automated validation.
-- Update `fixtures/README.md` with refresh instructions and describe how the final artifact fixtures map to stage outputs.
-- Normalize any legacy `maintainerURL` values in the Stage 1 data set so tighter schemas won't break refreshes.
+- `scripts/fixtures/generateFixturePipeline.js` now emits every stage fixture plus the published artifacts (`modules.json`, `modules.min.json`, `stats.json`) directly from the curated seed dataset.
+- Generated outputs under `fixtures/data/` are sorted by module `id` for deterministic diffs, and the minified catalogue mirrors the production payload.
+- `fixtures/README.md` documents the refresh commands, describes the stage-to-artifact mapping, and calls out the maintainer URL normalization heuristics.
+- Stage 1 fixtures backfill missing maintainer URLs (derived from repository owners) so future schema tightening will not fail on legacy data.
 
 ### Phase 3 – Validation automation
 

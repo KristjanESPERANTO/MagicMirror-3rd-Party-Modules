@@ -13,10 +13,14 @@ function readJson (relativePath) {
   return JSON.parse(raw);
 }
 
-function writeJson (relativePath, data) {
+function writeJson (relativePath, data, options = {}) {
+  const {minified = false} = options;
   const filePath = path.join(ROOT_DIR, relativePath);
   fs.mkdirSync(path.dirname(filePath), {recursive: true});
-  fs.writeFileSync(filePath, `${JSON.stringify(data, null, 2)}\n`, "utf8");
+  const serialized = minified
+    ? JSON.stringify(data)
+    : JSON.stringify(data, null, 2);
+  fs.writeFileSync(filePath, `${serialized}\n`, "utf8");
 }
 
 function clone (value) {
@@ -29,6 +33,50 @@ function ensureMetadata (id, metadata) {
     throw new Error(`Missing metadata entry for module id ${id}`);
   }
   return info;
+}
+
+function deriveMaintainerUrl (module) {
+  const raw = (module.maintainerURL ?? "").trim();
+  if (raw.length > 0) {
+    return raw;
+  }
+
+  try {
+    const repoUrl = new URL(module.url);
+    const segments = repoUrl.pathname.split("/").filter(Boolean);
+    if (segments.length >= 1) {
+      return `${repoUrl.origin}/${segments[0]}`;
+    }
+  } catch {
+    // Fall through.
+  }
+
+  if (module.maintainer) {
+    return `https://github.com/${module.maintainer}`;
+  }
+
+  return null;
+}
+
+function normalizeStage1Module (module) {
+  const entry = clone(module);
+  entry.maintainerURL = deriveMaintainerUrl(entry);
+
+  if (!entry.maintainerURL) {
+    delete entry.maintainerURL;
+  }
+
+  if (Array.isArray(entry.issues)) {
+    entry.issues = [...entry.issues];
+  } else {
+    entry.issues = [];
+  }
+
+  return entry;
+}
+
+function sortModulesById (modules) {
+  return [...modules].sort((a, b) => a.id.localeCompare(b.id));
 }
 
 function buildStage2Entry (seedModule, info) {
@@ -63,15 +111,15 @@ function buildStage4Entry (stage2Module, info) {
   return entry;
 }
 
-function buildFinalEntry (seedModule, info) {
+function buildFinalEntry (stage1Module, info) {
   const entry = {
-    name: seedModule.name,
-    category: seedModule.category,
-    url: seedModule.url,
-    id: seedModule.id,
-    maintainer: seedModule.maintainer,
-    maintainerURL: seedModule.maintainerURL,
-    description: seedModule.description,
+    name: stage1Module.name,
+    category: stage1Module.category,
+    url: stage1Module.url,
+    id: stage1Module.id,
+    maintainer: stage1Module.maintainer,
+    maintainerURL: stage1Module.maintainerURL,
+    description: stage1Module.description,
     issues: Boolean(info.issuesFinal),
     stars: info.stars,
     license: info.license,
@@ -79,8 +127,8 @@ function buildFinalEntry (seedModule, info) {
     lastCommit: info.lastCommit
   };
 
-  if (seedModule.outdated || info.outdated) {
-    entry.outdated = seedModule.outdated ?? info.outdated;
+  if (stage1Module.outdated || info.outdated) {
+    entry.outdated = stage1Module.outdated ?? info.outdated;
   }
 
   if (Array.isArray(info.tags) && info.tags.length > 0) {
@@ -141,10 +189,14 @@ function main () {
   const seed = readJson("fixtures/modules.seed.json");
   const metadata = readJson("fixtures/modules.metadata.json");
 
-  const stage1 = clone(seed);
+  const normalizedStage1Modules = sortModulesById(seed.modules.map(normalizeStage1Module));
+  const stage1 = {
+    lastUpdate: seed.lastUpdate,
+    modules: normalizedStage1Modules
+  };
   writeJson(path.join("fixtures", "data", "modules.stage.1.json"), stage1);
 
-  const stage2Modules = seed.modules.map((module) => {
+  const stage2Modules = normalizedStage1Modules.map((module) => {
     const info = ensureMetadata(module.id, metadata);
     return buildStage2Entry(module, info);
   });
@@ -162,18 +214,19 @@ function main () {
   const stage5 = {modules: clone(stage4Modules)};
   writeJson(path.join("fixtures", "data", "modules.stage.5.json"), stage5);
 
-  const finalModules = seed.modules.map((module) => {
+  const finalModules = normalizedStage1Modules.map((module) => {
     const info = ensureMetadata(module.id, metadata);
     return buildFinalEntry(module, info);
   });
-  writeJson(path.join("fixtures", "data", "modules.json"), {modules: finalModules});
+  const sortedFinalModules = sortModulesById(finalModules);
+  writeJson(path.join("fixtures", "data", "modules.json"), {modules: sortedFinalModules});
 
-  writeJson(path.join("fixtures", "data", "modules.min.json"), {modules: finalModules});
+  writeJson(path.join("fixtures", "data", "modules.min.json"), {modules: sortedFinalModules}, {minified: true});
 
-  const stats = buildStats(seed, metadata, finalModules);
+  const stats = buildStats(stage1, metadata, sortedFinalModules);
   writeJson(path.join("fixtures", "data", "stats.json"), stats);
 
-  console.log(`Generated fixture pipeline for ${finalModules.length} modules.`);
+  console.log(`Generated fixture pipeline for ${sortedFinalModules.length} modules.`);
 }
 
 main();
