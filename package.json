@@ -35,6 +35,7 @@
     "checkModules": "python3 scripts/check_modules.py",
     "fixtures:generate": "node scripts/fixtures/generateFixturePipeline.js",
     "test:fixtures": "node scripts/fixtures/validateFixtures.js",
+    "release:validate": "node scripts/validate_release_artifacts.js",
     "ownList": "node create_own_module_list.js && node --run updateRepositoryData && node --run getModules && node --run expandModuleList && node --run checkModulesJs && node --run checkModules",
     "lint": "node scripts/fixtures/validateFixtures.js && eslint && prettier --check . && cspell .",
     "lint:fix": "eslint --fix && prettier . --write . && cspell .",
@@ -42,7 +43,7 @@
     "test": "node --run lint",
     "test:spelling": "cspell .",
     "leaveMenu": "echo 'Leaving menu...'",
-    "automated": "git fetch origin main && git reset --hard origin/main && git pull && npm i && node --run all && python3 scripts/upload.py"
+    "automated": "git fetch origin main && git reset --hard origin/main && git pull && npm i && node --run all && node --run release:validate && python3 scripts/upload.py"
   },
   "lint-staged": {
     "*": [

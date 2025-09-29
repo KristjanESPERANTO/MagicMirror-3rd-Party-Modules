@@ -109,6 +109,10 @@ This script does some additional checks on the modules like if the main js file 
 
 This script goes through all cloned modules and performs various checks. The result is written to the files [`result.html`](https://modules.magicmirror.builders/result.html) and [`modules.json`](./website/data/modules.json).
 
+### validate_release_artifacts.js
+
+This script validates every stage snapshot and the published catalogue (`modules.json`, `modules.min.json`, `stats.json`) against the JSON Schemas. Run it with `node --run release:validate` after generating the website data (for example as part of the release packaging flow). The command exits with a non-zero status if any artifact violates the contract, ensuring CI/CD pipelines fail fast.
+
 ### Special script: create_own_module_list.js
 
 This script is for developers who want to test their own modules themselves. It can also be used to test other branches.

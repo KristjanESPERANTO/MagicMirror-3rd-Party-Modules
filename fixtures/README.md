@@ -21,7 +21,7 @@ This directory contains a curated subset of modules that we will use to exercise
 Run the generator whenever you update the seed list, tweak metadata, or adjust schema-relevant fields:
 
 ```bash
-npm run fixtures:generate
+node --run fixtures:generate
 ```
 
 The command rewrites everything under `fixtures/data/`. Keep these files version-controlled so schema tests stay reproducible.
@@ -35,10 +35,10 @@ The generator performs a few important normalization steps while writing the fix
 After regenerating, validate the fixtures:
 
 ```bash
-npm run test:fixtures
+node --run test:fixtures
 ```
 
-This command is also part of `npm run lint`, so CI will fail if the fixtures drift from the registered schemas.
+This command is also part of `node --run lint`, so CI will fail if the fixtures drift from the registered schemas.
 
 ## When to refresh
 
@@ -48,3 +48,12 @@ This command is also part of `npm run lint`, so CI will fail if the fixtures dri
 - The real pipeline introduces new derived fields you want reflected in the fixtures.
 - Maintainer URLs are cleaned up in the source data or the heuristics for deriving them change.
 - The downstream website contract (`modules.json`, `modules.min.json`, `stats.json`) gains or removes fields.
+
+## Troubleshooting validation failures
+
+When either the fixture set or the release artifacts fail schema validation, follow this checklist:
+
+1. **Regenerate the fixtures** – run `node --run fixtures:generate` followed by `node --run test:fixtures` to ensure the curated dataset reflects the latest contract.
+2. **Re-run the full pipeline** – execute `node --run all` (or your preferred targets) to recreate the website outputs, then execute `node --run release:validate`.
+3. **Inspect schema coverage** – if the data remains invalid, adjust the relevant schema in `pipeline/schemas/` or fix the upstream generator so the output matches the contract.
+4. **Escalate breaking changes** – when a consumer requires a contract change, document it in the roadmap and coordinate before relaxing or tightening schemas.

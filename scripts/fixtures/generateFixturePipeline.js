@@ -41,30 +41,32 @@ function deriveMaintainerUrl (module) {
     return raw;
   }
 
-  try {
-    const repoUrl = new URL(module.url);
-    const segments = repoUrl.pathname.split("/").filter(Boolean);
-    if (segments.length >= 1) {
-      return `${repoUrl.origin}/${segments[0]}`;
+  if (module.url) {
+    try {
+      const repoUrl = new URL(module.url);
+      const segments = repoUrl.pathname.split("/").filter(Boolean);
+      if (module.maintainer) {
+        return `${repoUrl.origin}/${module.maintainer}`;
+      }
+      if (segments.length > 0) {
+        return `${repoUrl.origin}/${segments[0]}`;
+      }
+      return repoUrl.origin;
+    } catch {
+      // Fall through to GitHub fallback.
     }
-  } catch {
-    // Fall through.
   }
 
   if (module.maintainer) {
     return `https://github.com/${module.maintainer}`;
   }
 
-  return null;
+  throw new Error(`Unable to derive maintainer URL for module ${module.id ?? module.name ?? "<unknown>"}`);
 }
 
 function normalizeStage1Module (module) {
   const entry = clone(module);
   entry.maintainerURL = deriveMaintainerUrl(entry);
-
-  if (!entry.maintainerURL) {
-    delete entry.maintainerURL;
-  }
 
   if (Array.isArray(entry.issues)) {
     entry.issues = [...entry.issues];

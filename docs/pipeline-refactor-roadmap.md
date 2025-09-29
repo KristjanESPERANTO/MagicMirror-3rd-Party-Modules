@@ -89,11 +89,10 @@ These topics sit adjacent to the pipeline work but should stay visible while pri
 
 ## Next Concrete Steps
 
-1. Launch **P1.5 Phase 2**: finalize fixture generation updates, document the refresh flow, and wire outputs into CI alongside the new schemas.
-2. Prep **P1.5 Phase 3** by sketching the CI integration plan (commands, failure handling) and sharing it with maintainers for early feedback.
-3. Scope **P1.6 shared `$defs`** work, identifying candidates from the freshly added schemas so consolidation can start immediately after Phase 3.
-4. Tighten the Stage 1 `maintainerURL` rules as part of the P1.5 cleanup so the stricter schema can ship with the Phase 3 automation.
-5. Draft the orchestrator CLI design doc (task P1.2) using the stage graph and architecture diagrams as the backbone for review.
+1. Launch **P1.5 Phase 4**: socialize the validation workflow (docs, release notes) and coordinate with downstream consumers before enforcing new contracts.
+2. Scope **P1.6 shared `$defs`** work, identifying candidates from the freshly added schemas so consolidation can start immediately after Phase 4.
+3. Draft the orchestrator CLI design doc (task P1.2) using the stage graph and architecture diagrams as the backbone for review.
+4. Translate the release validation script into a GitHub Actions check so schema regressions block PR merges.
 
 ## P1.5 Playbook: Final Artifact Schemas & Validation
 
@@ -117,12 +116,11 @@ These topics sit adjacent to the pipeline work but should stay visible while pri
 - `fixtures/README.md` documents the refresh commands, describes the stage-to-artifact mapping, and calls out the maintainer URL normalization heuristics.
 - Stage 1 fixtures backfill missing maintainer URLs (derived from repository owners) so future schema tightening will not fail on legacy data.
 
-### Phase 3 – Validation automation
+### Phase 3 – Validation automation ✅ Completed Sep 2025
 
-- Add schema files to `pipeline/schemas/` and wire them into `scripts/fixtures/validateFixtures.js` (or a sibling CLI) so `npm run test:fixtures` covers the new artifacts.
-- Integrate artifact validation into the release packaging flow (npm script + CI job) and fail the build on schema violations.
-- Harden the Stage 1 schema to require the cleaned `maintainerURL` shape and propagate the same constraint to the final artifact schemas.
-- Document remediation steps for failures (regenerate fixtures, adjust schemas, escalate breaking changes).
+- All stage schemas now require a non-empty `maintainerURL` field with URI formatting, and the final artifact schema mirrors the constraint.
+- Added `scripts/validate_release_artifacts.js` plus the `node --run release:validate` command, and wired it into `node --run automated` so release packaging fails fast on schema drift.
+- `fixtures/README.md` documents recovery steps for failed validations, covering both fixture regeneration and production artifact checks.
 
 ### Phase 4 – Rollout & follow-up
 

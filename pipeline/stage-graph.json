@@ -3,7 +3,7 @@
   "pipelines": [
     {
       "id": "full-refresh",
-      "description": "Full catalogue refresh mirroring the current `npm run all` sequence.",
+      "description": "Full catalogue refresh mirroring the current `node --run all` sequence.",
       "stages": [
         "create-module-list",
         "update-repository-data",
