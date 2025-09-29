@@ -7,7 +7,7 @@ import {readFile} from "node:fs/promises";
 import {readFileSync} from "node:fs";
 
 const currentDir = path.dirname(fileURLToPath(import.meta.url));
-const schemaDirectory = path.resolve(currentDir, "../../pipeline/schemas");
+const schemaDirectory = path.resolve(currentDir, "../../dist/schemas");
 
 const STAGE_SCHEMAS = {
   "modules.stage.1": "modules.stage.1.schema.json",

@@ -1,0 +1,60 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://magicmirror.builders/schemas/stats.json",
+  "title": "Modules Statistics",
+  "type": "object",
+  "required": [
+    "moduleCounter",
+    "modulesWithImageCounter",
+    "modulesWithIssuesCounter",
+    "issueCounter",
+    "lastUpdate",
+    "repositoryHoster",
+    "maintainer"
+  ],
+  "properties": {
+    "moduleCounter": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "modulesWithImageCounter": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "modulesWithIssuesCounter": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "issueCounter": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "lastUpdate": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "repositoryHoster": {
+      "type": "object",
+      "minProperties": 1,
+      "additionalProperties": false,
+      "patternProperties": {
+        "^[a-z0-9-]+$": {
+          "type": "integer",
+          "minimum": 0
+        }
+      }
+    },
+    "maintainer": {
+      "type": "object",
+      "minProperties": 1,
+      "additionalProperties": false,
+      "patternProperties": {
+        "^[A-Za-z0-9_.-]+$": {
+          "type": "integer",
+          "minimum": 0
+        }
+      }
+    }
+  },
+  "additionalProperties": false
+}

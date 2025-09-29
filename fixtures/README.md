@@ -55,5 +55,5 @@ When either the fixture set or the release artifacts fail schema validation, fol
 
 1. **Regenerate the fixtures** – run `node --run fixtures:generate` followed by `node --run test:fixtures` to ensure the curated dataset reflects the latest contract.
 2. **Re-run the full pipeline** – execute `node --run all` (or your preferred targets) to recreate the website outputs, then execute `node --run release:validate`.
-3. **Inspect schema coverage** – if the data remains invalid, adjust the relevant schema in `pipeline/schemas/` or fix the upstream generator so the output matches the contract.
+3. **Inspect schema coverage** – if the data remains invalid, adjust the relevant schema partial under `pipeline/schemas/src/` (or `partials/`), run `npm run schemas:build`, and re-run the pipeline so the output matches the contract.
 4. **Escalate breaking changes** – when a consumer requires a contract change, document it in the roadmap and coordinate before relaxing or tightening schemas.

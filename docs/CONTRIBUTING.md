@@ -91,6 +91,22 @@ This script powers the validation command above. Keep it in your release checkli
 
 Document regressions or schema updates in [`docs/pipeline-refactor-roadmap.md`](pipeline-refactor-roadmap.md). For tricky cases, open an Issue so downstream consumers are aware of the contract change.
 
+## Maintaining schemas
+
+Schema sources live under `pipeline/schemas/src/` (with reusable fragments in `pipeline/schemas/partials/`). After editing them, regenerate the bundled artifacts that power validation:
+
+```bash
+npm run schemas:build
+```
+
+To verify that no additional changes are pending, run:
+
+```bash
+npm run schemas:check
+```
+
+The bundled files live in `dist/schemas/`. They ship with the repository so `node --run release:validate` can run without extra setup.
+
 ## Prerequisites & installation
 
 1. Install [Node.js](https://nodejs.org) and [Python](https://www.python.org).
@@ -117,3 +133,4 @@ Then open <http://localhost:8080> in a browser.
 - [`docs/pipeline-refactor-roadmap.md`](pipeline-refactor-roadmap.md) – modernization milestones and upcoming tasks.
 - [`docs/architecture.md`](architecture.md) – current vs. target pipeline topology.
 - [`fixtures/README.md`](../fixtures/README.md) – curated dataset and validation troubleshooting.
+- [`docs/pipeline/shared-defs-scope.md`](pipeline/shared-defs-scope.md) – plan for consolidating shared JSON Schema `$defs` (task P1.6).

@@ -21,7 +21,7 @@
       "path": "website/data/modules.stage.1.json",
       "format": "json",
       "description": "Normalized module list generated from the MagicMirror wiki.",
-      "schema": "pipeline/schemas/modules.stage.1.schema.json"
+      "schema": "dist/schemas/modules.stage.1.schema.json"
     },
     {
       "id": "github-api-cache",
@@ -36,7 +36,7 @@
       "path": "website/data/modules.stage.2.json",
       "format": "json",
       "description": "Module list enriched with repository metadata.",
-      "schema": "pipeline/schemas/modules.stage.2.schema.json"
+      "schema": "dist/schemas/modules.stage.2.schema.json"
     },
     {
       "id": "skipped-modules",
@@ -51,7 +51,7 @@
       "path": "website/data/modules.stage.3.json",
       "format": "json",
       "description": "Validated modules that were successfully cloned.",
-      "schema": "pipeline/schemas/modules.stage.3.schema.json"
+      "schema": "dist/schemas/modules.stage.3.schema.json"
     },
     {
       "id": "cloned-modules",
@@ -71,7 +71,7 @@
       "path": "website/data/modules.stage.4.json",
       "format": "json",
       "description": "Module list enriched with package.json metadata and image references.",
-      "schema": "pipeline/schemas/modules.stage.4.schema.json"
+      "schema": "dist/schemas/modules.stage.4.schema.json"
     },
     {
       "id": "images-catalogue",
@@ -85,7 +85,7 @@
       "path": "website/data/modules.stage.5.json",
       "format": "json",
       "description": "Module list annotated with JavaScript-level checks.",
-      "schema": "pipeline/schemas/modules.stage.5.schema.json"
+      "schema": "dist/schemas/modules.stage.5.schema.json"
     },
     {
       "id": "analysis-report",
@@ -99,21 +99,24 @@
       "type": "file",
       "path": "website/data/modules.json",
       "format": "json",
-      "description": "Final module catalogue powering downstream consumers."
+      "description": "Final module catalogue powering downstream consumers.",
+      "schema": "dist/schemas/modules.final.schema.json"
     },
     {
       "id": "modules-json-min",
       "type": "file",
       "path": "website/data/modules.min.json",
       "format": "json",
-      "description": "Minified variant of the module catalogue."
+      "description": "Minified variant of the module catalogue.",
+      "schema": "dist/schemas/modules.min.schema.json"
     },
     {
       "id": "stats-json",
       "type": "file",
       "path": "website/data/stats.json",
       "format": "json",
-      "description": "Aggregated metrics collected during analysis."
+      "description": "Aggregated metrics collected during analysis.",
+      "schema": "dist/schemas/stats.schema.json"
     }
   ],
   "stages": [

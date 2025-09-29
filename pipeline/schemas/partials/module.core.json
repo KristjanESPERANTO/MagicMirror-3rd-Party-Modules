@@ -1,0 +1,46 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "required": [
+    "name",
+    "category",
+    "url",
+    "id",
+    "maintainer",
+    "maintainerURL",
+    "description"
+  ],
+  "properties": {
+    "name": {
+      "type": "string",
+      "minLength": 1
+    },
+    "category": {
+      "type": "string",
+      "minLength": 1
+    },
+    "url": {
+      "type": "string",
+      "format": "uri"
+    },
+    "id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "maintainer": {
+      "type": "string",
+      "minLength": 1
+    },
+    "maintainerURL": {
+      "type": "string",
+      "minLength": 1,
+      "format": "uri"
+    },
+    "description": {
+      "type": "string"
+    },
+    "outdated": {
+      "type": "string"
+    }
+  }
+}

@@ -36,7 +36,7 @@ flowchart LR
 
 ### Observations
 
-- Stage contracts are codified via the schemas stored under `pipeline/schemas/`.
+- Stage contracts are codified via the bundled schemas stored under `dist/schemas/` (sources live in `pipeline/schemas/src/`).
 - Cross-cutting utilities (HTTP, Git, filesystem) are still duplicated between Python and Node scripts.
 - The orchestration logic lives in ad-hoc npm scripts, making it hard to express partial runs or retries.
 

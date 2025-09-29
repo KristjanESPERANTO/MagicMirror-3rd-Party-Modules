@@ -20,7 +20,7 @@ This document captures the long-term improvements we want to implement in the mo
 | P1.3 | Add JSON-schema validation for every stage boundary (modules.stage.\* files) ([schemas](pipeline/schemas)) ✅ Completed Sep 2025                           | P1.1         | M      |
 | P1.4 | Provide a skip/only mechanism for partial runs (e.g. `--only=checks`)                                                                                      | P1.2         | S      |
 | P1.5 | Final artifact schemas & validation — rollout completed and documented (see contributor guide & release notes) ✅ Completed Sep 2025                       | P1.3         | M      |
-| P1.6 | Consolidate shared schema definitions (shared `$defs` / generator) to keep stage contracts in sync                                                         | P1.3         | S      |
+| P1.6 | Consolidate shared schema definitions (shared `$defs` / generator) to keep stage contracts in sync ✅ Completed Sep 2025                                   | P1.3         | S      |
 
 ### 2. Runtime & Codebase Consolidation
 
@@ -89,18 +89,8 @@ These topics sit adjacent to the pipeline work but should stay visible while pri
 
 ## Next Concrete Steps
 
-1. Scope **P1.6 shared `$defs`** work, identifying candidates from the freshly added schemas so consolidation can start immediately after Phase 4.
-2. Draft the orchestrator CLI design doc (task P1.2) using the stage graph and architecture diagrams as the backbone for review.
-3. Translate the release validation script into a GitHub Actions check so schema regressions block PR merges.
-4. Collect feedback from early adopters of the new validation gate and capture follow-up issues where additional metadata needs backfilling.
-
-## Completed initiative: P1.5 Final artifact schemas & validation (Sep 2025)
-
-- Schemas, fixtures, and release validation commands are documented in the [Contributor Guide](CONTRIBUTING.md) and enforced via `node --run release:validate`.
-- Rollout announcement and maintainer checklist live in [`docs/release-notes/2025-09-schema-validation.md`](release-notes/2025-09-schema-validation.md);
-  future adjustments should be tracked as follow-up issues rather than here.
-- Validation runs on the current datasets (2025‑09‑29) pass cleanly; any new schema gaps discovered by downstream consumers should be captured via issues linked under P1.5.
-
----
+1. Draft the orchestrator CLI design doc (task P1.2) using the stage graph and architecture diagrams as the backbone for review.
+2. Translate the release validation script into a GitHub Actions check so schema regressions block PR merges.
+3. Collect feedback from early adopters of the new validation gate and capture follow-up issues where additional metadata needs backfilling.
 
 Feel free to adjust priorities, rename tasks, or add new items. This roadmap is meant to stay alive—update it as soon as we learn something new during implementation.
