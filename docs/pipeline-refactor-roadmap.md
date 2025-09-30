@@ -24,13 +24,13 @@ This document captures the long-term improvements we want to implement in the mo
 
 ### 2. Runtime & Codebase Consolidation
 
-| Task | Description                                                                                     | Dependencies | Effort |
-| ---- | ----------------------------------------------------------------------------------------------- | ------------ | ------ |
-| P2.1 | Extract shared utilities (HTTP, Git, FS, logging, rate-limiter) into a reusable Node/TS module  | none         | M      |
-| P2.2 | Port `get_modules.py` to TypeScript, reusing the shared utilities                               | P2.1         | L      |
-| P2.3 | Port `check_modules.py` logic incrementally (start with fast checks, then optional heavy tasks) | P2.1         | XL     |
-| P2.4 | Enable TypeScript build tooling (tsconfig, lint) and cover new modules with tests               | P2.1         | M      |
-| P2.5 | Centralize `package.json` ingestion so data is parsed once and shared across stages             | P2.1         | M      |
+| Task | Description                                                                                                          | Dependencies | Effort |
+| ---- | -------------------------------------------------------------------------------------------------------------------- | ------------ | ------ |
+| P2.1 | Extract shared utilities (HTTP, Git, FS, logging, rate-limiter) into a reusable Node/TS module ✅ Completed Sep 2025 | none         | M      |
+| P2.2 | Port `get_modules.py` to TypeScript, reusing the shared utilities                                                    | P2.1         | L      |
+| P2.3 | Port `check_modules.py` logic incrementally (start with fast checks, then optional heavy tasks)                      | P2.1         | XL     |
+| P2.4 | Enable TypeScript build tooling (tsconfig, lint) and cover new modules with tests                                    | P2.1         | M      |
+| P2.5 | Centralize `package.json` ingestion so data is parsed once and shared across stages                                  | P2.1         | M      |
 
 ### 3. Robustness & Performance Safety Nets
 
@@ -91,8 +91,7 @@ These topics sit adjacent to the pipeline work but should stay visible while pri
 
 ## Next Concrete Steps
 
-1. ✅ Kick off **P1.4** by wiring the `--only`/`--skip` orchestration filters into the stage executor and persisting the results in the run ledger.
-2. Start **P2.1** to extract shared HTTP/Git/FS/logging utilities into a reusable Node/TS package so downstream ports have a stable foundation.
-3. Prepare the implementation plan for **P2.2** (`get_modules` TypeScript port) once the shared utilities land, including fixture coverage and rollout guardrails.
+1. Kick off **P2.2** (`get_modules` TypeScript port) leveraging the new shared utilities, including fixture coverage and rollout guardrails.
+2. Map out follow-on changes for **P2.3** so checks can reuse the shared toolkit without regressing Python fallbacks.
 
 Feel free to adjust priorities, rename tasks, or add new items. This roadmap is meant to stay alive—update it as soon as we learn something new during implementation.

@@ -4,6 +4,7 @@
 import {buildExecutionPlan, loadStageGraph} from "./stage-graph.js";
 import {mkdir, writeFile} from "node:fs/promises";
 import {Command} from "commander";
+import {createStageProgressLogger} from "../shared/logger.js";
 import {execFile} from "node:child_process";
 import {fileURLToPath} from "node:url";
 import path from "node:path";
@@ -20,26 +21,6 @@ const DEFAULT_GRAPH_PATH = path.join(PROJECT_ROOT, "pipeline", "stage-graph.json
 const RUNS_DIRECTORY = path.join(PROJECT_ROOT, ".pipeline-runs");
 const MIN_NODE_MAJOR_VERSION = 18;
 const execFileAsync = promisify(execFile);
-
-function createLogger () {
-  return {
-    start (stage, {stepNumber, total}) {
-      const details = stage.name ? `${stage.id} (${stage.name})` : stage.id;
-      console.log(`\n▶︎  [${stepNumber}/${total}] ${details}`);
-    },
-    succeed (stage, {stepNumber, total, formattedDuration}) {
-      const details = stage.name ? `${stage.id} (${stage.name})` : stage.id;
-      console.log(`✔︎  [${stepNumber}/${total}] ${details} — completed in ${formattedDuration}`);
-    },
-    fail (stage, {stepNumber, total, error}) {
-      const details = stage.name ? `${stage.id} (${stage.name})` : stage.id;
-      console.error(`✖︎  [${stepNumber}/${total}] ${details} — failed`);
-      if (error) {
-        console.error(error.message);
-      }
-    }
-  };
-}
 
 function getSchemaIdFromPath (schemaPath) {
   const filename = path.basename(schemaPath);
@@ -297,9 +278,9 @@ async function writePipelineRunRecord ({
 }
 
 async function runPipeline (pipelineId, {graphPath, filters} = {}) {
-  const logger = createLogger();
   const graph = await loadStageGraph(graphPath);
   const {pipeline, stages} = buildExecutionPlan(graph, pipelineId);
+  const stageLogger = createStageProgressLogger();
   const validateArtifacts = createArtifactValidator();
   const normalizedFilters = normalizeStageFilters(filters);
   const {selectedStages, skippedStages} = applyStageFilters(stages, normalizedFilters);
@@ -326,7 +307,7 @@ async function runPipeline (pipelineId, {graphPath, filters} = {}) {
     const completedStages = await runStagesSequentially(selectedStages, {
       cwd: PROJECT_ROOT,
       env: process.env,
-      logger,
+      logger: stageLogger,
       validateArtifacts
     });
 
