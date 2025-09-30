@@ -1,3 +1,4 @@
+/.pipeline-runs/
 /modules/*
 /modules_/*
 /modules_temp/*

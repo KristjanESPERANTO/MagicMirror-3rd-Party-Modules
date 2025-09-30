@@ -1,4 +1,5 @@
 #!/usr/bin/env node
+/* eslint-disable no-continue */
 
 import {buildExecutionPlan, loadStageGraph} from "./stage-graph.js";
 import {mkdir, writeFile} from "node:fs/promises";
@@ -120,27 +121,33 @@ function applyStageFilters (stages, filters) {
     throw new Error(`Unknown stage id${unknownSkip.length > 1 ? "s" : ""} in --skip: ${unknownSkip.join(", ")}`);
   }
 
-  let filteredStages = stages;
+  let selectedStages = stages;
 
   if (filters.only.length > 0) {
     const onlySet = new Set(filters.only);
-    filteredStages = stages.filter((stage) => onlySet.has(stage.id));
+    selectedStages = stages.filter((stage) => onlySet.has(stage.id));
 
-    if (filteredStages.length === 0) {
+    if (selectedStages.length === 0) {
       throw new Error("No stages matched the provided --only filters.");
     }
   }
 
   if (filters.skip.length > 0) {
     const skipSet = new Set(filters.skip);
-    filteredStages = filteredStages.filter((stage) => !skipSet.has(stage.id));
+    selectedStages = selectedStages.filter((stage) => !skipSet.has(stage.id));
   }
 
-  if (filteredStages.length === 0) {
+  if (selectedStages.length === 0) {
     throw new Error("All stages were filtered out. Nothing to run.");
   }
 
-  return filteredStages;
+  const selectedStageIds = new Set(selectedStages.map((stage) => stage.id));
+  const skippedStages = stages.filter((stage) => !selectedStageIds.has(stage.id));
+
+  return {
+    selectedStages,
+    skippedStages
+  };
 }
 
 async function ensureRunsDirectoryExists () {
@@ -184,33 +191,62 @@ function extractFailureDetails (failure) {
   };
 }
 
-function mapStageResults (completedStages, failure) {
-  const summaries = completedStages.map(({stage, durationMs}) => ({
-    id: stage.id,
-    name: stage.name ?? null,
-    status: "succeeded",
-    durationMs
-  }));
+function mapStageResults ({orderedStages, completedStages, skippedStages, failure}) {
+  const results = [];
+  const completedMap = new Map();
+  for (const entry of completedStages) {
+    completedMap.set(entry.stage.id, entry);
+  }
 
-  if (failure instanceof Error && failure.stage) {
-    summaries.push({
-      id: failure.stage.id,
-      name: failure.stage.name ?? null,
-      status: "failed",
-      error: failure.message,
-      stepNumber: failure.stepNumber ?? null,
-      totalStages: failure.totalStages ?? null
-    });
+  const skippedSet = new Set(skippedStages.map((stage) => stage.id));
+  const failureStageId = failure instanceof Error && failure.stage ? failure.stage.id : null;
+  let failureMessage = null;
+  if (failure instanceof Error) {
+    failureMessage = failure.message;
   } else if (failure) {
-    summaries.push({
-      id: null,
-      name: null,
-      status: "failed",
-      error: failure instanceof Error ? failure.message : String(failure)
+    failureMessage = String(failure);
+  }
+
+  for (const stage of orderedStages) {
+    const base = {
+      id: stage.id,
+      name: stage.name ?? null
+    };
+
+    if (skippedSet.has(stage.id)) {
+      results.push({
+        ...base,
+        status: "skipped"
+      });
+      continue;
+    }
+
+    if (completedMap.has(stage.id)) {
+      const {durationMs} = completedMap.get(stage.id);
+      results.push({
+        ...base,
+        status: "succeeded",
+        durationMs
+      });
+      continue;
+    }
+
+    if (failureStageId === stage.id) {
+      results.push({
+        ...base,
+        status: "failed",
+        error: failureMessage
+      });
+      continue;
+    }
+
+    results.push({
+      ...base,
+      status: "pending"
     });
   }
 
-  return summaries;
+  return results;
 }
 
 async function writePipelineRunRecord ({
@@ -218,6 +254,8 @@ async function writePipelineRunRecord ({
   graphPath,
   filters,
   plannedStages,
+  skippedStages,
+  orderedStages,
   completedStages,
   startedAt,
   finishedAt,
@@ -234,7 +272,13 @@ async function writePipelineRunRecord ({
     finishedAt: new Date(finishedAt).toISOString(),
     durationMs,
     plannedStageIds: plannedStages.map((stage) => stage.id),
-    stageResults: mapStageResults(completedStages, failure)
+    skippedStageIds: skippedStages.map((stage) => stage.id),
+    stageResults: mapStageResults({
+      orderedStages,
+      completedStages,
+      skippedStages,
+      failure
+    })
   };
 
   if (status === "failed" && failure) {
@@ -258,12 +302,12 @@ async function runPipeline (pipelineId, {graphPath, filters} = {}) {
   const {pipeline, stages} = buildExecutionPlan(graph, pipelineId);
   const validateArtifacts = createArtifactValidator();
   const normalizedFilters = normalizeStageFilters(filters);
-  const filteredStages = applyStageFilters(stages, normalizedFilters);
+  const {selectedStages, skippedStages} = applyStageFilters(stages, normalizedFilters);
 
   console.log(`Running pipeline "${pipeline.id}" using graph ${path.relative(PROJECT_ROOT, graphPath)}\n`);
 
   if (normalizedFilters.only.length > 0 || normalizedFilters.skip.length > 0) {
-    console.log(`Filters applied — running ${filteredStages.length} of ${stages.length} stages.`);
+    console.log(`Filters applied — running ${selectedStages.length} of ${stages.length} stages.`);
 
     if (normalizedFilters.only.length > 0) {
       console.log(`   --only: ${normalizedFilters.only.join(", ")}`);
@@ -279,7 +323,7 @@ async function runPipeline (pipelineId, {graphPath, filters} = {}) {
   const startedAt = Date.now();
 
   try {
-    const completedStages = await runStagesSequentially(filteredStages, {
+    const completedStages = await runStagesSequentially(selectedStages, {
       cwd: PROJECT_ROOT,
       env: process.env,
       logger,
@@ -291,7 +335,9 @@ async function runPipeline (pipelineId, {graphPath, filters} = {}) {
       pipelineId: pipeline.id,
       graphPath,
       filters: normalizedFilters,
-      plannedStages: filteredStages,
+      plannedStages: selectedStages,
+      skippedStages,
+      orderedStages: stages,
       completedStages,
       startedAt,
       finishedAt,
@@ -313,7 +359,9 @@ async function runPipeline (pipelineId, {graphPath, filters} = {}) {
       pipelineId: pipeline.id,
       graphPath,
       filters: normalizedFilters,
-      plannedStages: filteredStages,
+      plannedStages: selectedStages,
+      skippedStages,
+      orderedStages: stages,
       completedStages,
       startedAt,
       finishedAt,

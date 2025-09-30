@@ -9,6 +9,7 @@ Task **P1.2** delivered a lightweight Node.js command-line interface that reads 
 - Provide a single entry point (e.g. `node --run pipeline -- pipeline run full-refresh`) that replaces the existing ad-hoc shell scripts.
 - Interpret `pipeline/stage-graph.json` at runtime to determine stage ordering, inputs/outputs, and side-effects.
 - Emit structured logs and progress indicators so maintainers can trace stage execution locally and in CI.
+- Persist run metadata (planned, skipped, succeeded, failed) to `.pipeline-runs/` so partial runs stay auditable.
 - Offer composable filters (`--only`, `--skip`, future `--from`/`--to`) that unlock partial runs without duplicating scripts (supports P1.4).
 - Surface consistent pre/post hooks (e.g. schema validation, cleanup) and failure handling across all stages.
 - Keep Python stages runnable by invoking the existing scripts until they are ported (ties into P2.x workstream).
@@ -45,7 +46,7 @@ Task **P1.2** delivered a lightweight Node.js command-line interface that reads 
    - Python stages run via `python3 <script.py>` using the system interpreter (no enforced virtualenv) with `PYTHONPATH` adjustments as needed.
    - Future TS stages (from P2.x) can reuse the same abstraction once compiled.
 
-4. **State & Artifacts** — Maintains an execution ledger (`.pipeline-runs/<timestamp>_<pipeline>.json`) with start/end timestamps, stage statuses, durations, filters, and failure metadata, enabling future resume functionality and local auditing.
+4. **State & Artifacts** — Maintains an execution ledger (`.pipeline-runs/<timestamp>_<pipeline>.json`) with start/end timestamps, per-stage status (`succeeded`, `skipped`, `failed`, `pending`), durations, filters, and failure metadata, enabling future resume functionality and local auditing even when stages are filtered out.
 
 5. **Hooks & Validation** — After each stage, hooks:
    - Validate declared artifacts against schemas using `validateStageFile` (Ajv-based).
@@ -61,7 +62,7 @@ Task **P1.2** delivered a lightweight Node.js command-line interface that reads 
 - `pipeline list --stages` — limit listings to stage summaries.
 - `pipeline logs --latest` — inspect the most recent persisted run record.
 
-Commander validates the mutually exclusive options (`--only`/`--skip`) so that unknown stage IDs or conflicting filters surface errors before execution.
+Commander validates the mutually exclusive options (`--only`/`--skip`) so that unknown stage IDs or conflicting filters surface errors before execution. Skipped stages are still recorded in the run ledger so you can see exactly what was omitted.
 
 ### Future enhancements
 
@@ -74,7 +75,7 @@ The original exploration surfaced a few ideas that remain on the backlog:
 ## Structured Logging
 
 - Emit human-readable console output with stage numbering and duration markers, e.g. `▶︎ [1/6] create-module-list … done in 12.4s`.
-- Persist a structured JSON summary to `.pipeline-runs/<timestamp>_<pipeline>.json` capturing stage outcomes, durations, applied filters, and failure metadata.
+- Persist a structured JSON summary to `.pipeline-runs/<timestamp>_<pipeline>.json` capturing stage outcomes (including explicitly skipped stages), durations, applied filters, and failure metadata.
 - Provide `pipeline logs [runId|--latest]` to inspect a stored run summary without digging into the filesystem.
 
 ## Error Handling & Retry
