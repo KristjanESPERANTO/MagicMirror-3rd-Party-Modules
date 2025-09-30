@@ -27,6 +27,10 @@ You can run each stage individually or rely on the helper commands registered in
 
 Heavy stages (`getModules`, `checkModules`) download hundreds of repositories and can take more than 10 minutes. When iterating on faster tasks (Stage 1–2, Stage 4), feel free to skip the expensive steps.
 
+### Orchestrator CLI for partial runs
+
+The new orchestrator CLI bundles the stage graph, structured logging, and DX helpers like `list`, `describe`, `logs`, and `doctor`. It lets you target subsets of stages (`--only=checks`) or inspect pipeline status without running everything. Check the [orchestrator CLI reference](pipeline/orchestrator-cli-reference.md) for usage examples, command options, and troubleshooting tips.
+
 ### Stage details
 
 #### Stage 1 – `create_module_list.js`
@@ -134,5 +138,6 @@ Then open <http://localhost:8080> in a browser.
 
 - [`docs/pipeline-refactor-roadmap.md`](pipeline-refactor-roadmap.md) – modernization milestones and upcoming tasks.
 - [`docs/architecture.md`](architecture.md) – current vs. target pipeline topology.
+- [`docs/pipeline/orchestrator-cli-reference.md`](pipeline/orchestrator-cli-reference.md) – command reference for partial runs, diagnostics, and logs.
 - [`fixtures/README.md`](../fixtures/README.md) – curated dataset and validation troubleshooting.
 - [`docs/pipeline/shared-defs-scope.md`](pipeline/shared-defs-scope.md) – plan for consolidating shared JSON Schema `$defs` (task P1.6).

@@ -13,14 +13,14 @@ This document captures the long-term improvements we want to implement in the mo
 
 ### 1. Pipeline Architecture & Orchestration
 
-| Task | Description                                                                                                                                                | Dependencies | Effort |
-| ---- | ---------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | ------ |
-| P1.1 | Describe the full stage graph (inputs/outputs, side-effects) in a machine-readable config ([stage graph](pipeline/stage-graph.json)) ✅ Completed Sep 2025 | none         | S      |
-| P1.2 | Introduce a lightweight orchestrator (Node CLI) that reads the config and runs stages with structured logging                                              | P1.1         | M      |
-| P1.3 | Add JSON-schema validation for every stage boundary (modules.stage.\* files) ([schemas](pipeline/schemas)) ✅ Completed Sep 2025                           | P1.1         | M      |
-| P1.4 | Provide a skip/only mechanism for partial runs (e.g. `--only=checks`)                                                                                      | P1.2         | S      |
-| P1.5 | Final artifact schemas & validation — rollout completed and documented (see contributor guide & release notes) ✅ Completed Sep 2025                       | P1.3         | M      |
-| P1.6 | Consolidate shared schema definitions (shared `$defs` / generator) to keep stage contracts in sync ✅ Completed Sep 2025                                   | P1.3         | S      |
+| Task | Description                                                                                                                                                                      | Dependencies | Effort |
+| ---- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | ------ |
+| P1.1 | Describe the full stage graph (inputs/outputs, side-effects) in a machine-readable config ([stage graph](pipeline/stage-graph.json)) ✅ Completed Sep 2025                       | none         | S      |
+| P1.2 | Introduce a lightweight orchestrator (Node CLI) that reads the config, supports partial runs, and ships DX commands (`list`, `describe`, `logs`, `doctor`) ✅ Completed Sep 2025 | P1.1         | M      |
+| P1.3 | Add JSON-schema validation for every stage boundary (modules.stage.\* files) ([schemas](pipeline/schemas)) ✅ Completed Sep 2025                                                 | P1.1         | M      |
+| P1.4 | Provide a skip/only mechanism for partial runs (e.g. `--only=checks`)                                                                                                            | P1.2         | S      |
+| P1.5 | Final artifact schemas & validation — rollout completed and documented (see contributor guide & release notes) ✅ Completed Sep 2025                                             | P1.3         | M      |
+| P1.6 | Consolidate shared schema definitions (shared `$defs` / generator) to keep stage contracts in sync ✅ Completed Sep 2025                                                         | P1.3         | S      |
 
 ### 2. Runtime & Codebase Consolidation
 
@@ -91,7 +91,7 @@ These topics sit adjacent to the pipeline work but should stay visible while pri
 
 ## Next Concrete Steps
 
-1. Execute the orchestrator milestones tracked in [`docs/pipeline/orchestrator-cli-design.md`](pipeline/orchestrator-cli-design.md).
+1. Execute the orchestrator milestones tracked in [`docs/pipeline/orchestrator-cli-reference.md`](pipeline/orchestrator-cli-reference.md).
 2. Collect feedback from early adopters of the new validation gate and capture follow-up issues where additional metadata needs backfilling.
 
 Feel free to adjust priorities, rename tasks, or add new items. This roadmap is meant to stay alive—update it as soon as we learn something new during implementation.

@@ -3,9 +3,12 @@
 import {buildExecutionPlan, loadStageGraph} from "./stage-graph.js";
 import {mkdir, writeFile} from "node:fs/promises";
 import {Command} from "commander";
+import {execFile} from "node:child_process";
 import {fileURLToPath} from "node:url";
 import path from "node:path";
 import process from "node:process";
+import {promisify} from "node:util";
+import {registerAdditionalCommands} from "./cli-commands.js";
 import {runStagesSequentially} from "./stage-executor.js";
 import {validateStageFile} from "../lib/schemaValidator.js";
 
@@ -14,6 +17,8 @@ const currentDir = path.dirname(currentFile);
 const PROJECT_ROOT = path.resolve(currentDir, "..", "..");
 const DEFAULT_GRAPH_PATH = path.join(PROJECT_ROOT, "pipeline", "stage-graph.json");
 const RUNS_DIRECTORY = path.join(PROJECT_ROOT, ".pipeline-runs");
+const MIN_NODE_MAJOR_VERSION = 18;
+const execFileAsync = promisify(execFile);
 
 function createLogger () {
   return {
@@ -330,6 +335,14 @@ export async function main (argv = process.argv) {
   program
     .name("pipeline")
     .description("MagicMirror pipeline orchestrator");
+
+  registerAdditionalCommands(program, {
+    defaultGraphPath: DEFAULT_GRAPH_PATH,
+    projectRoot: PROJECT_ROOT,
+    runsDirectory: RUNS_DIRECTORY,
+    minNodeMajorVersion: MIN_NODE_MAJOR_VERSION,
+    execFileAsync
+  });
 
   program
     .command("run [pipelineId]")
