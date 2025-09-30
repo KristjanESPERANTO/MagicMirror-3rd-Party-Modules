@@ -77,20 +77,27 @@ These topics sit adjacent to the pipeline work but should stay visible while pri
 
 ## Execution Strategy
 
-1. **Leverage shared context**: Use the published architecture diagrams (P5.1 ✅) to align scope for the orchestrator (P1.2) and utility consolidation (P2.1).
-2. **Consolidate utilities** (P2.1) before migrating Python scripts so we can share code and avoid duplicated logic.
-3. **Migrate in slices**: Move `get_modules` first (now complete—the Python fallback has been removed) and keep the pattern for `check_modules` using feature flags (`--checks=legacy|ts`).
-4. **Add tests alongside migrations** to prevent regressions and make future refactors safer.
-5. **Keep communication tight** via roadmap review meetings or async updates in GitHub Discussions.
+These are the guiding habits we should keep front-of-mind while the modernization work continues:
 
-**Documentation checkpoints**
+1. **Keep the shared context fresh**: Maintain the updated architecture diagrams so ongoing work on the orchestrator and TypeScript stages stays aligned.
+2. **Lean on the shared utilities**: Continue building new functionality on the consolidated HTTP/Git/FS/rate-limiter toolkit established in P2.1 to avoid regressions.
+3. **Migrate in slices**: With `get_modules` complete, focus next on `check_modules` via feature flags (`--checks=legacy|ts`) while carrying forward rollout guardrails.
+4. **Add tests alongside migrations** to prevent regressions and make future refactors safer.
+
+### Recurring documentation tasks
+
+Routine reminders for keeping the written guidance in sync with the code:
 
 - Update `docs/architecture.md` as TypeScript stages replace Python counterparts (P2.2, P2.3) and whenever shared utilities (P2.1) materially change the architecture overview.
 - Align updates in `docs/CONTRIBUTING.md` with each orchestrator milestone so local workflows stay in sync.
 
 ## Next Concrete Steps
 
+Immediate actions that move the roadmap forward:
+
 1. Finalize rollout planning for **P2.3** so checks can reuse the shared toolkit without regressing Python fallbacks.
 2. Identify fixture coverage gaps introduced by the new TypeScript stages and close them before expanding scope.
+
+---
 
 Feel free to adjust priorities, rename tasks, or add new items. This roadmap is meant to stay alive—update it as soon as we learn something new during implementation.
