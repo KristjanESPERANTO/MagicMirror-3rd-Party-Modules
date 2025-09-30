@@ -45,8 +45,7 @@
     "prepare": "husky",
     "test": "node --run lint",
     "test:spelling": "cspell .",
-    "leaveMenu": "echo 'Leaving menu...'",
-    "automated": "git fetch origin main && git reset --hard origin/main && git pull && npm i && node --run all && node --run release:validate && python3 scripts/upload.py"
+    "leaveMenu": "echo 'Leaving menu...'"
   },
   "lint-staged": {
     "*": [
