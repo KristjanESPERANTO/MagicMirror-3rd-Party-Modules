@@ -110,7 +110,7 @@ Flag parsing uses Commander’s option system; validation ensures that mutually 
 ## Rollout Plan
 
 1. **MVP (Milestone P1.2.a)** ✅ Implemented — `pipeline run <pipelineId>` executes stages sequentially with logging and failure handling.
-2. **Schema Hooks (P1.2.b)** — Integrate artifact validation via `scripts/lib/schemaValidator.js` after each stage.
+2. **Schema Hooks (P1.2.b)** ✅ Implemented — artifacts are validated via `scripts/lib/schemaValidator.js` immediately after each stage runs.
 3. **Partial Runs (P1.4 dependency)** — Add `--only`/`--skip` flags and persist run metadata for resume.
 4. **Developer Experience Enhancements** — Implement `pipeline list`, `describe`, `doctor`, and structured log viewer. Update docs and release notes.
 

@@ -6,6 +6,7 @@ import {fileURLToPath} from "node:url";
 import path from "node:path";
 import process from "node:process";
 import {runStagesSequentially} from "./stage-executor.js";
+import {validateStageFile} from "../lib/schemaValidator.js";
 
 const currentFile = fileURLToPath(import.meta.url);
 const currentDir = path.dirname(currentFile);
@@ -32,17 +33,62 @@ function createLogger () {
   };
 }
 
+function getSchemaIdFromPath (schemaPath) {
+  const filename = path.basename(schemaPath);
+  if (!filename.endsWith(".schema.json")) {
+    return null;
+  }
+
+  const suffixLength = ".schema.json".length;
+  return filename.slice(0, filename.length - suffixLength);
+}
+
+function createArtifactValidator () {
+  return async (stage) => {
+    const outputs = stage.resolvedOutputs ?? [];
+
+    for (const output of outputs) {
+      const artifact = output.artifact;
+
+      const isWriteMode = !output.mode || output.mode === "write";
+      const hasSchema = Boolean(artifact?.schema);
+
+      if (isWriteMode && hasSchema) {
+        const schemaId = getSchemaIdFromPath(artifact.schema);
+
+        if (schemaId) {
+          const artifactPath = path.resolve(PROJECT_ROOT, artifact.path);
+
+          try {
+            await validateStageFile(schemaId, artifactPath);
+            console.log(`   ↳ validated ${artifact.id} against ${schemaId}`);
+          } catch (error) {
+            if (error instanceof Error) {
+              error.message = `Stage "${stage.id}" produced invalid artifact "${artifact.id}" (${artifact.path}):\n${error.message}`;
+            }
+            throw error;
+          }
+        } else {
+          console.warn(`Skipping validation for artifact "${artifact.id}" — unsupported schema reference "${artifact.schema}".`);
+        }
+      }
+    }
+  };
+}
+
 async function runPipeline (pipelineId, {graphPath}) {
   const logger = createLogger();
   const graph = await loadStageGraph(graphPath);
   const {pipeline, stages} = buildExecutionPlan(graph, pipelineId);
+  const validateArtifacts = createArtifactValidator();
 
   console.log(`Running pipeline "${pipeline.id}" using graph ${path.relative(PROJECT_ROOT, graphPath)}\n`);
 
   await runStagesSequentially(stages, {
     cwd: PROJECT_ROOT,
     env: process.env,
-    logger
+    logger,
+    validateArtifacts
   });
 
   console.log(`\nPipeline "${pipeline.id}" completed successfully.`);

@@ -17,6 +17,29 @@ export async function loadStageGraph (graphPath) {
   return graph;
 }
 
+export function buildArtifactMap (graph) {
+  const artifacts = graph.artifacts ?? [];
+  const artifactMap = new Map();
+
+  for (const artifact of artifacts) {
+    if (!artifact.id) {
+      throw new Error("Encountered an artifact without an id in the graph.");
+    }
+
+    if (!artifact.path) {
+      throw new Error(`Artifact "${artifact.id}" must define a path.`);
+    }
+
+    if (artifactMap.has(artifact.id)) {
+      throw new Error(`Artifact id "${artifact.id}" is declared multiple times.`);
+    }
+
+    artifactMap.set(artifact.id, artifact);
+  }
+
+  return artifactMap;
+}
+
 export function getPipeline (graph, pipelineId) {
   const pipeline = graph.pipelines.find((entry) => entry.id === pipelineId);
   if (!pipeline) {
@@ -50,6 +73,7 @@ export function buildStageMap (graph) {
 
 export function buildExecutionPlan (graph, pipelineId) {
   const pipeline = getPipeline(graph, pipelineId);
+  const artifactMap = buildArtifactMap(graph);
   const stageMap = buildStageMap(graph);
 
   const stages = pipeline.stages.map((stageId) => {
@@ -58,8 +82,27 @@ export function buildExecutionPlan (graph, pipelineId) {
       throw new Error(`Pipeline "${pipelineId}" references unknown stage "${stageId}".`);
     }
 
-    return stage;
+    const resolvedOutputs = (stage.outputs ?? []).map((output) => {
+      if (!output.artifact) {
+        throw new Error(`Stage "${stage.id}" declares an output without an artifact id.`);
+      }
+
+      const artifact = artifactMap.get(output.artifact);
+      if (!artifact) {
+        throw new Error(`Stage "${stage.id}" references unknown artifact "${output.artifact}".`);
+      }
+
+      return {
+        ...output,
+        artifact
+      };
+    });
+
+    return {
+      ...stage,
+      resolvedOutputs
+    };
   });
 
-  return {pipeline, stages};
+  return {pipeline, stages, artifactMap};
 }

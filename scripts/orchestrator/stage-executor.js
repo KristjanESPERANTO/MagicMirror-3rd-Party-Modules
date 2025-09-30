@@ -31,7 +31,7 @@ function runStageProcess ({executable, args = []}, options) {
   });
 }
 
-export async function runStagesSequentially (stages, {logger, cwd = process.cwd(), env = process.env} = {}) {
+export async function runStagesSequentially (stages, {logger, cwd = process.cwd(), env = process.env, validateArtifacts} = {}) {
   const results = [];
 
   for (let index = 0; index < stages.length; index += 1) {
@@ -46,6 +46,10 @@ export async function runStagesSequentially (stages, {logger, cwd = process.cwd(
 
     try {
       await runStageProcess(stage.command, {cwd, env});
+
+      if (validateArtifacts) {
+        await validateArtifacts(stage, {cwd});
+      }
     } catch (error) {
       logger?.fail?.(stage, {stepNumber, total, message, error});
       throw error;
