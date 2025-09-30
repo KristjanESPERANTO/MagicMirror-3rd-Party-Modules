@@ -27,7 +27,7 @@ This document captures the long-term improvements we want to implement in the mo
 | Task | Description                                                                                                          | Dependencies | Effort |
 | ---- | -------------------------------------------------------------------------------------------------------------------- | ------------ | ------ |
 | P2.1 | Extract shared utilities (HTTP, Git, FS, logging, rate-limiter) into a reusable Node/TS module ✅ Completed Sep 2025 | none         | M      |
-| P2.2 | Port `get_modules.py` to TypeScript, reusing the shared utilities                                                    | P2.1         | L      |
+| P2.2 | Port `get_modules.py` to TypeScript, reusing the shared utilities ✅ Completed Sep 2025 (Python fallback removed)    | P2.1         | L      |
 | P2.3 | Port `check_modules.py` logic incrementally (start with fast checks, then optional heavy tasks)                      | P2.1         | XL     |
 | P2.4 | Enable TypeScript build tooling (tsconfig, lint) and cover new modules with tests                                    | P2.1         | M      |
 | P2.5 | Centralize `package.json` ingestion so data is parsed once and shared across stages                                  | P2.1         | M      |
@@ -79,7 +79,7 @@ These topics sit adjacent to the pipeline work but should stay visible while pri
 
 1. **Leverage shared context**: Use the published architecture diagrams (P5.1 ✅) to align scope for the orchestrator (P1.2) and utility consolidation (P2.1).
 2. **Consolidate utilities** (P2.1) before migrating Python scripts so we can share code and avoid duplicated logic.
-3. **Migrate in slices**: Move `get_modules` first (lower risk) and keep Python fallbacks until the TS version is proven stable. Follow with `check_modules` in feature flags (`--checks=legacy|ts`).
+3. **Migrate in slices**: Move `get_modules` first (now complete—the Python fallback has been removed) and keep the pattern for `check_modules` using feature flags (`--checks=legacy|ts`).
 4. **Add tests alongside migrations** to prevent regressions and make future refactors safer.
 5. **Keep communication tight** via roadmap review meetings or async updates in GitHub Discussions.
 
@@ -91,7 +91,7 @@ These topics sit adjacent to the pipeline work but should stay visible while pri
 
 ## Next Concrete Steps
 
-1. Kick off **P2.2** (`get_modules` TypeScript port) leveraging the new shared utilities, including fixture coverage and rollout guardrails.
-2. Map out follow-on changes for **P2.3** so checks can reuse the shared toolkit without regressing Python fallbacks.
+1. Finalize rollout planning for **P2.3** so checks can reuse the shared toolkit without regressing Python fallbacks.
+2. Identify fixture coverage gaps introduced by the new TypeScript stages and close them before expanding scope.
 
 Feel free to adjust priorities, rename tasks, or add new items. This roadmap is meant to stay alive—update it as soon as we learn something new during implementation.

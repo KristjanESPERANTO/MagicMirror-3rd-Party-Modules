@@ -41,7 +41,7 @@ Reads the official wiki list of third-party modules and converts it into the Sta
 
 Fetches metadata (stars, topics, default branch, etc.) from the hosting service (GitHub/GitLab). The output augments the Stage 1 snapshot with repository insights that downstream stages reuse.
 
-#### Stage 3 – `get_modules.py`
+#### Stage 3 – `get-modules.ts`
 
 Clones every repository locally. Expect long runtimes (>10 minutes) and significant disk usage (>2 GB) when running the full catalogue.
 

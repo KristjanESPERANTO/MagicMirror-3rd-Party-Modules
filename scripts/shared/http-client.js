@@ -21,7 +21,16 @@ function buildHeaders (baseHeaders = {}, overrides = {}) {
 export function createHttpClient ({userAgent = DEFAULT_USER_AGENT, defaultHeaders = {}, rateLimiter, maxRetries = DEFAULT_RETRY_COUNT, retryBackoffMs = DEFAULT_RETRY_BACKOFF_MS} = {}) {
   const mergedDefaults = buildHeaders({"user-agent": userAgent}, defaultHeaders);
 
-  async function performRequest (url, {method = "GET", headers = {}, body, signal, retries = maxRetries, retryDelayMs = retryBackoffMs} = {}) {
+  async function performRequest (url, options = {}) {
+    const {
+      method = "GET",
+      headers = {},
+      body,
+      signal,
+      retries = maxRetries,
+      retryDelayMs = retryBackoffMs,
+      ...fetchOverrides
+    } = options;
     const mergedHeaders = buildHeaders(mergedDefaults, headers);
 
     const execute = async () => {
@@ -29,7 +38,8 @@ export function createHttpClient ({userAgent = DEFAULT_USER_AGENT, defaultHeader
         method,
         headers: mergedHeaders,
         body,
-        signal
+        signal,
+        ...fetchOverrides
       });
       return response;
     };

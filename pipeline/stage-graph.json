@@ -206,8 +206,11 @@
       "name": "Fetch module repositories",
       "description": "Clone or update module repositories, validating access and producing the next-stage manifest.",
       "command": {
-        "executable": "python3",
-        "args": ["scripts/get_modules.py"]
+        "executable": "node",
+        "args": [
+          "--disable-warning=ExperimentalWarning",
+          "scripts/get-modules.ts"
+        ]
       },
       "dependsOn": ["update-repository-data"],
       "inputs": [

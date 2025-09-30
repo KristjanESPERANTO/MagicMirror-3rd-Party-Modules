@@ -43,8 +43,8 @@ Task **P1.2** delivered a lightweight Node.js command-line interface that reads 
 
 3. **Stage Runner Abstraction** — Normalizes execution for different runtimes:
    - Node stages run via `node <script>`.
-   - Python stages run via `python3 <script.py>` using the system interpreter (no enforced virtualenv) with `PYTHONPATH` adjustments as needed.
-   - Future TS stages (from P2.x) can reuse the same abstraction once compiled.
+     - TypeScript stages run via `node --disable-warning=ExperimentalWarning <script.ts>`, leveraging the shared utility toolkit without a separate build step on Node.js 24+.
+   - Remaining Python stages run via `python3 <script.py>` using the system interpreter (no enforced virtualenv) with `PYTHONPATH` adjustments as needed until they are migrated.
 
 4. **State & Artifacts** — Maintains an execution ledger (`.pipeline-runs/<timestamp>_<pipeline>.json`) with start/end timestamps, per-stage status (`succeeded`, `skipped`, `failed`, `pending`), durations, filters, and failure metadata, enabling future resume functionality and local auditing even when stages are filtered out.
 
