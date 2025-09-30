@@ -8,14 +8,14 @@ The production pipeline is orchestrated via `node scripts/orchestrator/index.js 
 
 ### Stage overview
 
-| Order | Stage ID                 | Runtime    | Key outputs                                                                                      |
-| ----- | ------------------------ | ---------- | ------------------------------------------------------------------------------------------------ |
-| 1     | `create-module-list`     | Node.js    | `docs/data/modules.stage.1.json`                                                                 |
-| 2     | `update-repository-data` | Node.js    | `docs/data/modules.stage.2.json`, `docs/data/gitHubData.json`                                    |
-| 3     | `get-modules`            | TypeScript | `docs/data/modules.stage.3.json`, `modules/`, `modules_temp/`                                    |
-| 4     | `expand-module-list`     | Node.js    | `docs/data/modules.stage.4.json`, `docs/images/`                                                 |
-| 5     | `check-modules-js`       | Node.js    | `docs/data/modules.stage.5.json`                                                                 |
-| 6     | `check-modules`          | Python     | `docs/data/modules.json`, `docs/data/modules.min.json`, `docs/data/stats.json`, `docs/result.md` |
+| Order | Stage ID                 | Runtime    | Key outputs                                                                                                  |
+| ----- | ------------------------ | ---------- | ------------------------------------------------------------------------------------------------------------ |
+| 1     | `create-module-list`     | Node.js    | `website/data/modules.stage.1.json`                                                                          |
+| 2     | `update-repository-data` | Node.js    | `website/data/modules.stage.2.json`, `website/data/gitHubData.json`                                          |
+| 3     | `get-modules`            | TypeScript | `website/data/modules.stage.3.json`, `modules/`, `modules_temp/`                                             |
+| 4     | `expand-module-list`     | Node.js    | `website/data/modules.stage.4.json`, `website/images/`                                                       |
+| 5     | `check-modules-js`       | Node.js    | `website/data/modules.stage.5.json`                                                                          |
+| 6     | `check-modules`          | Python     | `website/data/modules.json`, `website/data/modules.min.json`, `website/data/stats.json`, `website/result.md` |
 
 ### Current workflow diagram
 
@@ -36,7 +36,7 @@ flowchart LR
   fetch -- "modules.stage.3.json" --> enrich
   fetch --> clones[("modules/, modules_temp/")]
   enrich -- "modules.stage.4.json" --> checkjs
-  enrich --> images[("docs/images/")]
+  enrich --> images[("website/images/")]
   checkjs -- "modules.stage.5.json" --> checkpy
   checkpy --> outputs[("modules.json, modules.min.json, stats.json, result.md")]
 ```
@@ -59,7 +59,7 @@ flowchart LR
   getLegacy -- "modules.stage.3.json" --> expandLegacy{{"Enrich with package metadata - Node.js"}}
   getLegacy --> clonesLegacy[("modules/, modules_temp/")]
   expandLegacy -- "modules.stage.4.json" --> checkjsLegacy{{"Static checks - Node.js"}}
-  expandLegacy --> imagesLegacy[("docs/images/")]
+  expandLegacy --> imagesLegacy[("website/images/")]
   checkjsLegacy -- "modules.stage.5.json" --> checkpyLegacy{{"Deep analysis - Python"}}
   checkpyLegacy --> outputsLegacy[("modules.json, modules.min.json, stats.json, result.md")]
 ```
@@ -93,7 +93,7 @@ flowchart LR
   repoDataTS -.uses.-> http
   publishTS -.uses.-> schema
   enrichTS -.uses.-> fs
-  publishTS -.produces.-> public[(modules.json, stats.json, docs/)]
+  publishTS -.produces.-> public[(modules.json, stats.json, website/)]
 ```
 
 ### Advantages we unlock
