@@ -85,8 +85,7 @@ These topics sit adjacent to the pipeline work but should stay visible while pri
 
 **Documentation checkpoints**
 
-- Refresh `docs/architecture.md` when shipping the orchestrator (P1.2) so the “Target state” diagram matches reality.
-- Update the same document as TypeScript stages replace Python counterparts (P2.2, P2.3) and whenever shared utilities (P2.1) materially change the architecture overview.
+- Update `docs/architecture.md` as TypeScript stages replace Python counterparts (P2.2, P2.3) and whenever shared utilities (P2.1) materially change the architecture overview.
 - Align updates in `docs/CONTRIBUTING.md` with each orchestrator milestone so local workflows stay in sync.
 
 ## Next Concrete Steps

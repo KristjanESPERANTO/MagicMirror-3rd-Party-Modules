@@ -2,43 +2,69 @@
 
 Visibility into the automation that builds and publishes the third-party module catalogue helps contributors reason about changes and spot failure points early. This document summarizes the current pipeline, highlights the target architecture we are steering toward, and links each element back to the modernization roadmap.
 
-## Current state (September 2025)
+## Current state (September 2025)
 
-The production pipeline is triggered manually via `node --run all` and progresses through six sequential stages. Two stages are implemented in Python and run subprocesses such as `git`, `npm`, and `npm-check-updates`; the rest are Node.js scripts. Each stage produces a well-defined artifact that now ships with a JSON Schema contract.
+The production pipeline is orchestrated via `node scripts/orchestrator/index.js run full-refresh` (or the shorthand npm scripts) and progresses through six sequential stages. Most stages are implemented in TypeScript/Node.js and reuse the shared utility layer introduced in P2.1; the final deep-analysis stage remains Python for now. Each stage produces a well-defined artifact that ships with a JSON Schema contract enforced at the boundary.
 
 ### Stage overview
 
-| Order | Stage ID                 | Runtime | Key outputs                                                                                      |
-| ----- | ------------------------ | ------- | ------------------------------------------------------------------------------------------------ |
-| 1     | `create-module-list`     | Node.js | `docs/data/modules.stage.1.json`                                                                 |
-| 2     | `update-repository-data` | Node.js | `docs/data/modules.stage.2.json`, `docs/data/gitHubData.json`                                    |
-| 3     | `get-modules`            | Python  | `docs/data/modules.stage.3.json`, `modules/`, `modules_temp/`                                    |
-| 4     | `expand-module-list`     | Node.js | `docs/data/modules.stage.4.json`, `docs/images/`                                                 |
-| 5     | `check-modules-js`       | Node.js | `docs/data/modules.stage.5.json`                                                                 |
-| 6     | `check-modules`          | Python  | `docs/data/modules.json`, `docs/data/modules.min.json`, `docs/data/stats.json`, `docs/result.md` |
+| Order | Stage ID                 | Runtime    | Key outputs                                                                                      |
+| ----- | ------------------------ | ---------- | ------------------------------------------------------------------------------------------------ |
+| 1     | `create-module-list`     | Node.js    | `docs/data/modules.stage.1.json`                                                                 |
+| 2     | `update-repository-data` | Node.js    | `docs/data/modules.stage.2.json`, `docs/data/gitHubData.json`                                    |
+| 3     | `get-modules`            | TypeScript | `docs/data/modules.stage.3.json`, `modules/`, `modules_temp/`                                    |
+| 4     | `expand-module-list`     | Node.js    | `docs/data/modules.stage.4.json`, `docs/images/`                                                 |
+| 5     | `check-modules-js`       | Node.js    | `docs/data/modules.stage.5.json`                                                                 |
+| 6     | `check-modules`          | Python     | `docs/data/modules.json`, `docs/data/modules.min.json`, `docs/data/stats.json`, `docs/result.md` |
 
 ### Current workflow diagram
 
 ```mermaid
 flowchart LR
-    wiki[("MagicMirror wiki table")] --> create{{"Create module list - Node.js"}}
-    create --> stage1["modules.stage.1.json"]
-    stage1 --> update{{"Update repository metadata - Node.js"}}
-    update -- "modules.stage.2.json" --> get{{"Fetch module repos - Python"}}
-    update <-.-> cache[("gitHubData.json")]
-    get -- "modules.stage.3.json" --> expand{{"Enrich with package metadata - Node.js"}}
-    get --> clones[("modules/, modules_temp/")]
-    expand -- "modules.stage.4.json" --> checkjs{{"Static checks - Node.js"}}
-    expand --> images[("docs/images/")]
-    checkjs -- "modules.stage.5.json" --> checkpy{{"Deep analysis - Python"}}
-    checkpy --> outputs[("modules.json, modules.min.json, stats.json, result.md")]
+  orchestrator[["Node orchestrator CLI (stage-graph.json)"]]
+  orchestrator --> create{{"Create module list - TypeScript"}}
+  orchestrator --> update{{"Update repository metadata - TypeScript"}}
+  orchestrator --> fetch{{"Fetch module repos - TypeScript"}}
+  orchestrator --> enrich{{"Enrich with package metadata - TypeScript"}}
+  orchestrator --> checkjs{{"Static checks - Node.js"}}
+  orchestrator --> checkpy{{"Deep analysis - Python"}}
+
+  create --> stage1["modules.stage.1.json"]
+  stage1 --> update
+  update -- "modules.stage.2.json" --> fetch
+  update <-.-> cache[("gitHubData.json")]
+  fetch -- "modules.stage.3.json" --> enrich
+  fetch --> clones[("modules/, modules_temp/")]
+  enrich -- "modules.stage.4.json" --> checkjs
+  enrich --> images[("docs/images/")]
+  checkjs -- "modules.stage.5.json" --> checkpy
+  checkpy --> outputs[("modules.json, modules.min.json, stats.json, result.md")]
 ```
 
 ### Observations
 
 - Stage contracts are codified via the bundled schemas stored under `dist/schemas/` (sources live in `pipeline/schemas/src/`).
-- Cross-cutting utilities (HTTP, Git, filesystem) are still duplicated between Python and Node scripts.
-- The orchestration logic lives in ad-hoc npm scripts, making it hard to express partial runs or retries.
+- Cross-cutting utilities (HTTP, Git, filesystem, rate limiting) now live in `scripts/shared/` and are reused by the TypeScript stages.
+- The orchestrator CLI runs the declarative stage graph and supports `--only/--skip`, retries, and shared logging.
+
+### Legacy workflow snapshot (pre-September 2025)
+
+```mermaid
+flowchart LR
+  wiki[("MagicMirror wiki table")] --> createLegacy{{"Create module list - Node.js"}}
+  createLegacy --> stage1Legacy["modules.stage.1.json"]
+  stage1Legacy --> updateLegacy{{"Update repository metadata - Node.js"}}
+  updateLegacy -- "modules.stage.2.json" --> getLegacy{{"Fetch module repos - Python"}}
+  updateLegacy <-.-> cacheLegacy[("gitHubData.json")]
+  getLegacy -- "modules.stage.3.json" --> expandLegacy{{"Enrich with package metadata - Node.js"}}
+  getLegacy --> clonesLegacy[("modules/, modules_temp/")]
+  expandLegacy -- "modules.stage.4.json" --> checkjsLegacy{{"Static checks - Node.js"}}
+  expandLegacy --> imagesLegacy[("docs/images/")]
+  checkjsLegacy -- "modules.stage.5.json" --> checkpyLegacy{{"Deep analysis - Python"}}
+  checkpyLegacy --> outputsLegacy[("modules.json, modules.min.json, stats.json, result.md")]
+```
+
+This legacy diagram captures the pre-orchestrator, mixed-runtime pipeline that relied on direct node and Python scripts. Retaining it here provides a historical comparison as we continue to modernize the remaining stages.
 
 ## Target state
 
