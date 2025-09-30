@@ -45,17 +45,18 @@ This document captures the long-term improvements we want to implement in the mo
 
 ### 4. Checks & Developer Experience
 
-| Task | Description                                                                                                                                                                     | Dependencies | Effort |
-| ---- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | ------ |
-| P4.1 | Split checks into a registry with metadata (category, severity, auto-fixable)                                                                                                   | P2.3         | M      |
-| P4.2 | Add configuration file to toggle check groups (`fast`, `deep`, optional ESLint/ncu)                                                                                             | P4.1         | S      |
-| P4.3 | Create sample dataset + regression tests for check outputs (golden files), reusing the curated fixtures where possible                                                          | P4.1         | M      |
-| P4.4 | Provide CLI progress UI and Markdown summary per run                                                                                                                            | P1.2         | S      |
-| P4.5 | Add rule detecting modules that rely on MagicMirror core dependencies without declaring them ([#78](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/issues/78)) | P4.1         | M      |
-| P4.6 | Check README install/update sections for copyable fenced command blocks ([#54](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/issues/54))                      | P4.1         | S      |
-| P4.7 | Recommend `npm install --omit=dev` when modules expose devDependencies in instructions ([#53](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/issues/53))       | P4.1         | S      |
-| P4.8 | Flag modules with multi-year inactivity that are not marked `outdated` and nudge maintainers to review status                                                                   | P4.1         | M      |
-| P4.9 | Inspect Dependabot configs for schedule scope (monthly cadence, production-only) and suggest adjustments                                                                        | P4.1         | M      |
+| Task  | Description                                                                                                                                                                     | Dependencies | Effort |
+| ----- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | ------ |
+| P4.1  | Split checks into a registry with metadata (category, severity, auto-fixable)                                                                                                   | P2.3         | M      |
+| P4.2  | Add configuration file to toggle check groups (`fast`, `deep`, optional ESLint/ncu)                                                                                             | P4.1         | S      |
+| P4.3  | Create sample dataset + regression tests for check outputs (golden files), reusing the curated fixtures where possible                                                          | P4.1         | M      |
+| P4.4  | Provide CLI progress UI and Markdown summary per run                                                                                                                            | P1.2         | S      |
+| P4.5  | Add rule detecting modules that rely on MagicMirror core dependencies without declaring them ([#78](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/issues/78)) | P4.1         | M      |
+| P4.6  | Check README install/update sections for copyable fenced command blocks ([#54](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/issues/54))                      | P4.1         | S      |
+| P4.7  | Recommend `npm install --omit=dev` when modules expose devDependencies in instructions ([#53](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/issues/53))       | P4.1         | S      |
+| P4.8  | Flag modules with multi-year inactivity that are not marked `outdated` and nudge maintainers to review status                                                                   | P4.1         | M      |
+| P4.9  | Inspect Dependabot configs for schedule scope (monthly cadence, production-only) and suggest adjustments                                                                        | P4.1         | M      |
+| P4.10 | Evaluate migrating the `ntl` task menu into a `pipeline` subcommand (interactive launcher built on the orchestrator CLI) _(low priority)_                                       | P1.2         | S      |
 
 ### 5. Documentation & Collaboration
 
@@ -86,10 +87,11 @@ These topics sit adjacent to the pipeline work but should stay visible while pri
 
 - Refresh `docs/architecture.md` when shipping the orchestrator (P1.2) so the “Target state” diagram matches reality.
 - Update the same document as TypeScript stages replace Python counterparts (P2.2, P2.3) and whenever shared utilities (P2.1) materially change the architecture overview.
+- Align updates in `docs/CONTRIBUTING.md` with each orchestrator milestone so local workflows stay in sync.
 
 ## Next Concrete Steps
 
-1. Draft the orchestrator CLI design doc (task P1.2) using the stage graph and architecture diagrams as the backbone for review. ✅ See [`docs/pipeline/orchestrator-cli-design.md`](pipeline/orchestrator-cli-design.md) for the current proposal.
+1. Execute the orchestrator milestones tracked in [`docs/pipeline/orchestrator-cli-design.md`](pipeline/orchestrator-cli-design.md).
 2. Collect feedback from early adopters of the new validation gate and capture follow-up issues where additional metadata needs backfilling.
 
 Feel free to adjust priorities, rename tasks, or add new items. This roadmap is meant to stay alive—update it as soon as we learn something new during implementation.

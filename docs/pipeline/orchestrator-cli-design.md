@@ -44,19 +44,22 @@ The goal of task **P1.2** is to introduce a lightweight Node.js command-line int
    - Loads and validates the stage graph against a JSON Schema (TBD minimal schema).
    - Resolves topological order of the requested pipeline.
    - Applies filters from flags (`--only=stageA,stageB`, `--skip=stageC`).
-   - For each stage, prepares the environment, logs start/end, and invokes the configured command.
-   - Captures exit codes, stdout/stderr, and wraps failures with actionable messages (including suggested retries or cleanups).
+
+- Runs stages strictly sequentially (no parallel execution), prepares the environment, logs start/end, and invokes the configured command.
+- Captures exit codes, stdout/stderr, and wraps failures with actionable messages (including suggested retries or cleanups).
 
 3. **Stage Runner Abstraction** — Normalizes execution for different runtimes:
    - Node stages run via `node path/to/script.js`.
-   - Python stages run via `python3 path/to/script.py` with `PYTHONPATH` adjustments as needed.
-   - Future TS stages (from P2.x) reuse the same abstraction after compilation.
+
+- Python stages run via `python3 path/to/script.py` using the system interpreter (no enforced virtualenv) with `PYTHONPATH` adjustments as needed.
+- Future TS stages (from P2.x) reuse the same abstraction after compilation.
 
 4. **State & Artifacts** — Maintains an execution ledger (JSON file under `.pipeline-runs/`) with start/end timestamps, exit codes, and produced artifacts for future resume functionality.
 
 5. **Hooks & Validation** — After each stage, optional hooks can:
    - Validate declared artifacts against schemas (using existing Ajv validator).
-   - Perform cleanup (e.g. restore `modules_temp` handling) or cache promotion.
+
+- Perform cleanup (e.g. restore `modules_temp` handling) or cache promotion; no additional artifact drift checks beyond schema validation are planned.
 
 ## CLI Options & Flags
 
@@ -93,7 +96,7 @@ Flag parsing uses Commander’s option system; validation ensures that mutually 
 
 ## Testing Strategy
 
-- **Unit Tests** (Jest):
+- **Unit Tests** (node:test):
   - Graph parsing & validation (invalid graph detection, missing artifacts).
   - Stage selection filters (`--only`, `--skip`).
   - Command builder for Node/Python semantics.
@@ -106,7 +109,7 @@ Flag parsing uses Commander’s option system; validation ensures that mutually 
 
 ## Rollout Plan
 
-1. **MVP (Milestone P1.2.a)** — Implement `pipeline run <pipelineId>` for sequential execution, basic logging, and stage failure handling.
+1. **MVP (Milestone P1.2.a)** ✅ Implemented — `pipeline run <pipelineId>` executes stages sequentially with logging and failure handling.
 2. **Schema Hooks (P1.2.b)** — Integrate artifact validation via `scripts/lib/schemaValidator.js` after each stage.
 3. **Partial Runs (P1.4 dependency)** — Add `--only`/`--skip` flags and persist run metadata for resume.
 4. **Developer Experience Enhancements** — Implement `pipeline list`, `describe`, `doctor`, and structured log viewer. Update docs and release notes.
@@ -116,14 +119,4 @@ Flag parsing uses Commander’s option system; validation ensures that mutually 
 - Update [`docs/architecture.md`](../architecture.md) with the orchestrator flow once MVP ships.
 - Add a “Running the pipeline” section to [`docs/CONTRIBUTING.md`](../CONTRIBUTING.md) referencing the new CLI commands.
 - Provide a quickstart snippet for CI integration in `docs/pipeline/shared-defs-scope.md` as a precedent for future pipeline docs.
-
-## Open Questions
-
-1. **Concurrency** — Do we ever run independent stages in parallel (e.g. image export vs. JS checks)? Initial answer: no, to keep failure handling predictable.
-2. **Python Environment** — Should we enforce a virtualenv or continue using system Python? Proposal: detect and warn if dependencies are missing, but keep flexible until P2.x ports.
-3. **Secrets Handling** — Where do we source tokens (e.g. GitHub PAT) securely in CI? Suggest using `dotenv-flow` locally and GitHub Secrets in Actions; document in the doctor command output.
-4. **Artifact Drift** — Should the orchestrator detect when declared artifacts are missing or mutated unexpectedly? Implementation detail: compare file mtimes before/after stage execution.
-
----
-
-Feedback is welcome via comments in this document or GitHub issues under the P1.2 label. Once consensus is reached, we can break the work into actionable PRs following the milestones above.
+- Secrets management remains out of scope for the CLI; rely on existing project guidance for token handling.
