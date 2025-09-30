@@ -81,7 +81,7 @@ These are the guiding habits we should keep front-of-mind while the modernizatio
 
 1. **Keep the shared context fresh**: Maintain the updated architecture diagrams so ongoing work on the orchestrator and TypeScript stages stays aligned.
 2. **Lean on the shared utilities**: Continue building new functionality on the consolidated HTTP/Git/FS/rate-limiter toolkit established in P2.1 to avoid regressions.
-3. **Migrate in slices**: With `get_modules` complete, focus next on `check_modules` via feature flags (`--checks=legacy|ts`) while carrying forward rollout guardrails.
+3. **Migrate in slices**: With `get_modules` complete, drive the [P2.3 rollout plan](pipeline/p2.3-rollout-plan.md) for `check_modules` via feature flags (`--checks=legacy|ts`) while carrying forward rollout guardrails.
 4. **Add tests alongside migrations** to prevent regressions and make future refactors safer.
 
 ### Recurring documentation tasks
@@ -95,8 +95,8 @@ Routine reminders for keeping the written guidance in sync with the code:
 
 Immediate actions that move the roadmap forward:
 
-1. Finalize rollout planning for **P2.3** so checks can reuse the shared toolkit without regressing Python fallbacks.
-2. Identify fixture coverage gaps introduced by the new TypeScript stages and close them before expanding scope.
+1. Launch **P2.3 Phase 0**: audit the legacy `check_modules` rules, categorize them for the new registry, and capture the findings in the rollout plan.
+2. Extend the fixtures harness to compare legacy vs TypeScript `check_modules` outputs, ensuring we can diff behavior starting in Phase 1.
 
 ---
 
