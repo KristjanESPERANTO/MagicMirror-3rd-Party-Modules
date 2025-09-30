@@ -54,7 +54,7 @@ The goal of task **P1.2** is to introduce a lightweight Node.js command-line int
 - Python stages run via `python3 path/to/script.py` using the system interpreter (no enforced virtualenv) with `PYTHONPATH` adjustments as needed.
 - Future TS stages (from P2.x) reuse the same abstraction after compilation.
 
-4. **State & Artifacts** — Maintains an execution ledger (JSON file under `.pipeline-runs/`) with start/end timestamps, exit codes, and produced artifacts for future resume functionality.
+4. **State & Artifacts** — Maintains an execution ledger (JSON file under `.pipeline-runs/`) with start/end timestamps, stage statuses, durations, and failure metadata, enabling future resume functionality and local auditing.
 
 5. **Hooks & Validation** — After each stage, optional hooks can:
    - Validate declared artifacts against schemas (using existing Ajv validator).
@@ -111,7 +111,7 @@ Flag parsing uses Commander’s option system; validation ensures that mutually 
 
 1. **MVP (Milestone P1.2.a)** ✅ Implemented — `pipeline run <pipelineId>` executes stages sequentially with logging and failure handling.
 2. **Schema Hooks (P1.2.b)** ✅ Implemented — artifacts are validated via `scripts/lib/schemaValidator.js` immediately after each stage runs.
-3. **Partial Runs (P1.4 dependency)** — Add `--only`/`--skip` flags and persist run metadata for resume.
+3. **Partial Runs (P1.4)** ✅ — `pipeline run` now accepts `--only`/`--skip` filters and persists run metadata to `.pipeline-runs/<timestamp>_<pipeline>.json`.
 4. **Developer Experience Enhancements** — Implement `pipeline list`, `describe`, `doctor`, and structured log viewer. Update docs and release notes.
 
 ## Documentation & Onboarding

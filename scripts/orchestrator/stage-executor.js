@@ -52,6 +52,15 @@ export async function runStagesSequentially (stages, {logger, cwd = process.cwd(
       }
     } catch (error) {
       logger?.fail?.(stage, {stepNumber, total, message, error});
+
+      if (error instanceof Error) {
+        error.stage = stage;
+        error.stageIndex = index;
+        error.stepNumber = stepNumber;
+        error.totalStages = total;
+        error.completedStages = results.slice();
+      }
+
       throw error;
     }
 
