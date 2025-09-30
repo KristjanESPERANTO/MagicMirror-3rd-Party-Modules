@@ -26,7 +26,7 @@
   },
   "scripts": {
     "start": "ntl --autocomplete --size 50 --exclude start lint* prepare test automated",
-    "all": "node --run createModuleList && node --run updateRepositoryData && node --run getModules && node --run expandModuleList && node --run checkModulesJs && node --run checkModules",
+    "all": "node scripts/orchestrator/index.js run full-refresh",
     "createModuleList": "node scripts/create_module_list.js",
     "updateRepositoryData": "node scripts/updateRepositoryApiData.js",
     "getModules": "python3 scripts/get_modules.py",
