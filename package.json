@@ -52,8 +52,7 @@
   "lint-staged": {
     "*": [
       "eslint --fix",
-      "prettier --write --ignore-unknown",
-      "cspell --no-progress --no-summary --no-must-find-files"
+      "prettier --write --ignore-unknown"
     ]
   },
   "dependencies": {
