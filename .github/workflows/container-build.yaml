@@ -30,8 +30,8 @@ jobs:
             # regular build
             PARAMS="--output type=image,\"name=ghcr.io/${REPO}:${{ github.ref_name }}\",push=true"
           else
-            # only build with small wiki list and no image push
-            PARAMS="--output type=image,push=false --opt build-arg:WIKI_FILE=website/test/3rd-Party-Modules.md"
+            # only build without pushing the image; still pull the full wiki dataset
+            PARAMS="--output type=image,push=false"
           fi
           # registry credentials
           export DOCKER_CONFIG="$(pwd)/container"

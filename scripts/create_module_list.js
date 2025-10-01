@@ -2,6 +2,7 @@ import fs from "node:fs";
 import {marked} from "marked";
 import process from "node:process";
 import sanitizeHtml from "sanitize-html";
+import {validateStageData} from "./lib/schemaValidator.js";
 
 async function fetchMarkdownData () {
   try {
@@ -28,6 +29,31 @@ function sortByNameIgnoringPrefix (a, b) {
   const nameA = a.name.replace("MMM-", "");
   const nameB = b.name.replace("MMM-", "");
   return nameA.localeCompare(nameB);
+}
+
+function deriveMaintainerUrl ({repoUrl, maintainer, maintainerUrlFromWiki}) {
+  const trimmedWikiUrl = (maintainerUrlFromWiki ?? "").trim().split(/\s+/u)[0];
+  if (trimmedWikiUrl.length > 0) {
+    return trimmedWikiUrl;
+  }
+
+  if (repoUrl) {
+    try {
+      const parsed = new URL(repoUrl);
+      if (maintainer) {
+        return `${parsed.origin}/${maintainer}`;
+      }
+      return parsed.origin;
+    } catch {
+      // Fall through to the GitHub fallback.
+    }
+  }
+
+  if (maintainer) {
+    return `https://github.com/${maintainer}`;
+  }
+
+  throw new Error("Unable to derive maintainer URL – repository URL and maintainer missing.");
 }
 
 async function createModuleList () {
@@ -73,10 +99,11 @@ async function createModuleList () {
           const id = `${maintainer}/${name}`;
 
           const maintainerLinked = parts[2].match(/\[(.*?)\]\((.*?)\)/u);
-          let maintainerURL = "";
-          if (maintainerLinked !== null) {
-            maintainerURL = maintainerLinked[2];
-          }
+          const maintainerURL = deriveMaintainerUrl({
+            repoUrl: url,
+            maintainer,
+            maintainerUrlFromWiki: maintainerLinked?.[2]
+          });
 
           const descriptionMarkdown = parts[3];
           const descriptionHtml = marked.parseInline(descriptionMarkdown);
@@ -120,6 +147,27 @@ async function createModuleList () {
     throw new Error(`[create_module_list] Missing repository link in ${missingRepoErrors.length} line(s):\n${missingRepoErrors.join("\n")}`);
   }
 
+  try {
+    validateStageData("modules.stage.1", data);
+  } catch (error) {
+    if (error?.errors?.length > 0) {
+      for (const validationError of error.errors) {
+        if (validationError.instancePath?.startsWith("/modules/")) {
+          const pathParts = validationError.instancePath.split("/").filter(Boolean);
+          const index = Number.parseInt(pathParts[1], 10);
+          const moduleSnapshot = Number.isInteger(index) ? data.modules[index] : null;
+          console.error("Validation failure for module:", {
+            index,
+            name: moduleSnapshot?.name,
+            maintainer: moduleSnapshot?.maintainer,
+            maintainerURL: moduleSnapshot?.maintainerURL,
+            issue: validationError.message
+          });
+        }
+      }
+    }
+    throw error;
+  }
 
   fs.writeFileSync(
     "./website/data/modules.stage.1.json",

@@ -44,10 +44,10 @@ The following modules are maintained by their respective authors. If you have a 
 
 ### Development / Core MagicMirror²
 
-|Title |Author |Description |
-|:-|:-:|:-|
-|[mmpm](https://github.com/Bee-Mar/mmpm) |[Bee-Mar](https://github.com/Bee-Mar) |An unofficial MagicMirror² 3rd Party Package Manager. Automates searching, installation, removal, updating, and upgrading of MagicMirror² modules. |
-|[MMM-Template](https://github.com/Dennis-Rosenbaum/MMM-Template) |Dennis-Rosenbaum |A template for creating new MagicMirror² modules. |
-|[MMM-AlertExt](https://github.com/MMRIZE/MMM-AlertExt) |MMRIZE |Alternative programmable alert/notification presenter. |
-|[MMM-AutoDimmer](https://github.com/Fifteen15Studios/MMM-AutoDimmer) |[Fifteen15Studios](https://github.com/Fifteen15Studios) |Set 1 or more schedules to dim and brighten your screen at specific times. |
-|[MMM-Bash](https://github.com/mathew-fleisch/MMM-Bash) |draxiom |A simple module to run a bash/terminal command on a loop, displaying stdout/stderr to screen. |
+| Title                                                                |                         Author                          | Description                                                                                                                                        |
+| :------------------------------------------------------------------- | :-----------------------------------------------------: | :------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [mmpm](https://github.com/Bee-Mar/mmpm)                              |          [Bee-Mar](https://github.com/Bee-Mar)          | An unofficial MagicMirror² 3rd Party Package Manager. Automates searching, installation, removal, updating, and upgrading of MagicMirror² modules. |
+| [MMM-Template](https://github.com/Dennis-Rosenbaum/MMM-Template)     |                    Dennis-Rosenbaum                     | A template for creating new MagicMirror² modules.                                                                                                  |
+| [MMM-AlertExt](https://github.com/MMRIZE/MMM-AlertExt)               |                         MMRIZE                          | Alternative programmable alert/notification presenter.                                                                                             |
+| [MMM-AutoDimmer](https://github.com/Fifteen15Studios/MMM-AutoDimmer) | [Fifteen15Studios](https://github.com/Fifteen15Studios) | Set 1 or more schedules to dim and brighten your screen at specific times.                                                                         |
+| [MMM-Bash](https://github.com/mathew-fleisch/MMM-Bash)               |                         draxiom                         | A simple module to run a bash/terminal command on a loop, displaying stdout/stderr to screen.                                                      |

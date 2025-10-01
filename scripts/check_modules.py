@@ -10,6 +10,26 @@ import deprecation_check
 import eslint_checks
 
 
+def validate_stage(stage_id, file_path):
+    """Validate a stage artifact against its JSON schema."""
+    result = subprocess.run(
+        ["node", "scripts/validate_stage_json.js", stage_id, file_path],
+        capture_output=True,
+        text=True,
+        check=False
+    )
+
+    if result.returncode != 0:
+        details = "\n".join(
+            message
+            for message in (result.stdout.strip(), result.stderr.strip())
+            if message
+        )
+        raise RuntimeError(
+            f"Schema validation failed for {stage_id} ({file_path}):\n{details}"
+        )
+
+
 def search_in_file(path, search_string):
     """Function to search a string in a file."""
     try:
@@ -272,8 +292,11 @@ def check_modules():
         },
     }
 
+    stage_input_path = "./website/data/modules.stage.5.json"
+    validate_stage("modules.stage.5", stage_input_path)
+
     modules_json_file = open(
-        "./website/data/modules.stage.5.json", encoding="utf-8")
+        stage_input_path, encoding="utf-8")
     modules = json.load(modules_json_file)
     stats = {
         "moduleCounter": 0,

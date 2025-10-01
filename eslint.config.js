@@ -11,12 +11,14 @@ import stylistic from "@stylistic/eslint-plugin";
 export default defineConfig([
   {
     ignores: [
+      "fixtures/**",
       "modules/*",
       "modules_temp/*",
       "website/data/modules*.json",
       "website/fonts/*",
       "website/result.html",
-      "website/result.md"
+      "website/result.md",
+      "website/test/3rd-Party-Modules.md"
     ]
   },
   {

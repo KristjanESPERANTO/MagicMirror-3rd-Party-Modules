@@ -1,0 +1,19 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "properties": {
+    "stars": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "license": {
+      "type": "string"
+    },
+    "hasGithubIssues": {
+      "type": "boolean"
+    },
+    "isArchived": {
+      "type": "boolean"
+    }
+  }
+}

@@ -2,6 +2,7 @@ import fs from "node:fs";
 import {getJson} from "./utils.js";
 import normalizeData from "normalize-package-data";
 import sharp from "sharp";
+import {validateStageData} from "./lib/schemaValidator.js";
 
 const imagesFolder = "./website/images";
 
@@ -214,8 +215,11 @@ async function checkLicenseAndHandleScreenshot (moduleData, module) {
 
 async function expandModuleList () {
   const moduleList = await getJson("./website/data/modules.stage.3.json");
+  validateStageData("modules.stage.3", moduleList);
 
   await addInformationFromPackageJson(moduleList.modules);
+
+  validateStageData("modules.stage.4", moduleList);
 
   fs.writeFileSync(
     "./website/data/modules.stage.4.json",

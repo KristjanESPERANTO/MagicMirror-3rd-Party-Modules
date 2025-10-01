@@ -168,9 +168,10 @@ function updateModuleCardContainer () {
   moduleCardContainer.appendChild(fragment);
 
   const moduleCountElement = document.getElementById("module-count-value");
-  moduleCountElement.textContent = `${moduleCounter} of ${allModules.length}`;
+  const totalModules = allModules.length + (showOutdated.checked ? skippedModules.length : 0);
+  moduleCountElement.textContent = `${moduleCounter} of ${totalModules}`;
 
-  if (moduleCounter === allModules.length) {
+  if (moduleCounter === totalModules) {
     resetButton.style.display = "none";
   } else {
     resetButton.style.display = "block";

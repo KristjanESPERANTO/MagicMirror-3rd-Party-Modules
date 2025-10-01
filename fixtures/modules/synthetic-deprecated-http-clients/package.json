@@ -1,0 +1,7 @@
+{
+  "name": "synthetic-deprecated-http-clients",
+  "version": "1.0.0",
+  "description": "Aggregates deprecated and discouraged HTTP client imports for harness coverage.",
+  "main": "lib/clients.js",
+  "license": "MIT"
+}

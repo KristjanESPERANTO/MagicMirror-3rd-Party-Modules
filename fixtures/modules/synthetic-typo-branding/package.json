@@ -1,0 +1,11 @@
+{
+  "name": "synthetic-typo-branding",
+  "version": "1.0.0",
+  "description": "Synthetic fixture to trigger MagicMirror branding typo rules.",
+  "main": "index.js",
+  "license": "MIT",
+  "keywords": [
+    "magicmirror",
+    "fixture"
+  ]
+}

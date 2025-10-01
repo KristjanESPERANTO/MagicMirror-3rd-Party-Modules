@@ -1,0 +1,57 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://magicmirror.builders/schemas/modules.stage.3.json",
+  "title": "Modules Stage 3",
+  "type": "object",
+  "required": ["modules"],
+  "properties": {
+    "modules": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "allOf": [
+          { "$ref": "../partials/module.core.json" },
+          { "$ref": "../partials/module.issues-array.json" },
+          { "$ref": "../partials/module.repo-metadata.json" }
+        ],
+        "properties": {
+          "name": { "$ref": "../partials/module.core.json#/properties/name" },
+          "category": {
+            "$ref": "../partials/module.core.json#/properties/category"
+          },
+          "url": { "$ref": "../partials/module.core.json#/properties/url" },
+          "id": { "$ref": "../partials/module.core.json#/properties/id" },
+          "maintainer": {
+            "$ref": "../partials/module.core.json#/properties/maintainer"
+          },
+          "maintainerURL": {
+            "$ref": "../partials/module.core.json#/properties/maintainerURL"
+          },
+          "description": {
+            "$ref": "../partials/module.core.json#/properties/description"
+          },
+          "outdated": {
+            "$ref": "../partials/module.core.json#/properties/outdated"
+          },
+          "issues": {
+            "$ref": "../partials/module.issues-array.json#/properties/issues"
+          },
+          "stars": {
+            "$ref": "../partials/module.repo-metadata.json#/properties/stars"
+          },
+          "license": {
+            "$ref": "../partials/module.repo-metadata.json#/properties/license"
+          },
+          "hasGithubIssues": {
+            "$ref": "../partials/module.repo-metadata.json#/properties/hasGithubIssues"
+          },
+          "isArchived": {
+            "$ref": "../partials/module.repo-metadata.json#/properties/isArchived"
+          }
+        },
+        "additionalProperties": false
+      }
+    }
+  },
+  "additionalProperties": false
+}

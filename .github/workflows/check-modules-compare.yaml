@@ -1,0 +1,58 @@
+name: Check Modules Compare Harness
+
+on:
+  workflow_dispatch:
+    inputs:
+      runIdSuffix:
+        description: Optional suffix appended to the harness run ID (e.g., branch name)
+        required: false
+        default: ""
+  schedule:
+    - cron: "0 6 * * 1"
+
+permissions:
+  contents: read
+
+jobs:
+  compare:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - name: Check out repository code
+        uses: actions/checkout@v5
+
+      - name: Use Node.js
+        uses: actions/setup-node@v5
+        with:
+          node-version: lts/*
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Generate fixture dataset
+        run: node --run fixtures:generate
+
+      - name: Prepare harness run ID
+        id: prepare
+        env:
+          RUN_ID_SUFFIX: ${{ github.event_name == 'workflow_dispatch' && github.event.inputs.runIdSuffix || '' }}
+        run: |
+          BASE="ci-${GITHUB_RUN_ID}"
+          if [ -n "$RUN_ID_SUFFIX" ]; then
+            BASE="${BASE}-${RUN_ID_SUFFIX}"
+          fi
+          echo "run-id=${BASE}" >> "$GITHUB_OUTPUT"
+
+      - name: Run comparison harness
+        env:
+          HARNESS_RUN_ID: ${{ steps.prepare.outputs.run-id }}
+        run: npm run checkModules:compare -- --run-id "$HARNESS_RUN_ID"
+
+      - name: Upload comparison artifacts
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: compare-harness-${{ steps.prepare.outputs.run-id }}
+          path: .pipeline-runs/compare/${{ steps.prepare.outputs.run-id }}
+          if-no-files-found: error

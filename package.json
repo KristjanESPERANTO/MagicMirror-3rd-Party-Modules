@@ -26,21 +26,28 @@
   },
   "scripts": {
     "start": "ntl --autocomplete --size 50 --exclude start lint* prepare test automated",
-    "all": "node --run createModuleList && node --run updateRepositoryData && node --run getModules && node --run expandModuleList && node --run checkModulesJs && node --run checkModules",
-    "createModuleList": "node scripts/create_module_list.js",
-    "updateRepositoryData": "node scripts/updateRepositoryApiData.js",
-    "getModules": "python3 scripts/get_modules.py",
-    "expandModuleList": "node scripts/expand_module_list_with_repo_data.js",
-    "checkModulesJs": "node scripts/check_modules_js.js",
-    "checkModules": "python3 scripts/check_modules.py",
+    "all": "node scripts/orchestrator/index.js run full-refresh",
+    "createModuleList": "node scripts/orchestrator/index.js run --only=create-module-list",
+    "updateRepositoryData": "node scripts/orchestrator/index.js run --only=update-repository-data",
+    "getModules": "node scripts/orchestrator/index.js run --only=get-modules",
+    "expandModuleList": "node scripts/orchestrator/index.js run --only=expand-module-list",
+    "checkModulesJs": "node scripts/orchestrator/index.js run --only=check-modules-js",
+    "checkModules": "node scripts/orchestrator/index.js run --only=check-modules",
+    "pipeline": "node scripts/orchestrator/index.js",
+    "fixtures:generate": "node scripts/fixtures/generateFixturePipeline.js",
+    "fixtures:update-baseline-shas": "node scripts/fixtures/updateBaselineShas.js",
+    "test:fixtures": "node scripts/fixtures/validateFixtures.js",
+    "checkModules:compare": "node scripts/check-modules/compare/index.js",
+    "release:validate": "node scripts/validate_release_artifacts.js",
+    "schemas:build": "node pipeline/schemas/build.js",
+    "schemas:check": "node pipeline/schemas/build.js --check",
     "ownList": "node create_own_module_list.js && node --run updateRepositoryData && node --run getModules && node --run expandModuleList && node --run checkModulesJs && node --run checkModules",
-    "lint": "eslint && prettier --check . && cspell .",
+    "lint": "node scripts/fixtures/validateFixtures.js && eslint && prettier --check . && cspell .",
     "lint:fix": "eslint --fix && prettier . --write . && cspell .",
     "prepare": "husky",
     "test": "node --run lint",
     "test:spelling": "cspell .",
-    "leaveMenu": "echo 'Leaving menu...'",
-    "automated": "git fetch origin main && git reset --hard origin/main && git pull && npm i && node --run all && python3 scripts/upload.py"
+    "leaveMenu": "echo 'Leaving menu...'"
   },
   "lint-staged": {
     "*": [
@@ -49,15 +56,19 @@
     ]
   },
   "dependencies": {
+    "ajv": "^8.17.1",
+    "ajv-formats": "^3.0.1",
+    "commander": "^14.0.1",
     "marked": "^16.3.0",
     "normalize-package-data": "^8.0.0",
-    "npm-check-updates": "^18.3.0",
+    "npm-check-updates": "^19.0.0",
     "npm-deprecated-check": "^1.7.0",
     "ntl": "^5.1.0",
     "sanitize-html": "^2.17.0",
     "sharp": "^0.34.4"
   },
   "devDependencies": {
+    "@apidevtools/json-schema-ref-parser": "^14.2.1",
     "@eslint/css": "^0.11.1",
     "@eslint/js": "^9.36.0",
     "@eslint/json": "^0.13.2",
@@ -70,7 +81,7 @@
     "eslint-plugin-package-json": "^0.56.3",
     "globals": "^16.4.0",
     "husky": "^9.1.7",
-    "lint-staged": "^16.2.0",
+    "lint-staged": "^16.2.3",
     "prettier": "^3.6.2"
   },
   "ntl": {

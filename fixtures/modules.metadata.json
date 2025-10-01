@@ -1,0 +1,88 @@
+{
+  "modules": {
+    "rubinho101/MMM-01ZM": {
+      "stars": 4,
+      "license": "MIT",
+      "tags": ["xiaomi", "temperature", "humidity", "pm2.5", "pm10", "sds011"],
+      "image": "img-MMM-01ZM.jpg",
+      "issuesStage4": [],
+      "issuesFinal": true,
+      "defaultSortWeight": 4,
+      "lastCommit": "2024-07-17T16:08:35+02:00"
+    },
+    "j-hiller/MMM-AC-aseag": {
+      "stars": 2,
+      "license": "MIT",
+      "tags": [],
+      "image": null,
+      "issuesStage4": [
+        "There are no keywords in 'package.json'. We would use them as tags on the module list page.",
+        "No image found."
+      ],
+      "issuesFinal": true,
+      "defaultSortWeight": 13,
+      "lastCommit": "2022-07-14T23:06:51+02:00"
+    },
+    "maxbethge/MMM-AccuWeatherForecastDeluxe": {
+      "stars": 7,
+      "license": "MIT",
+      "tags": ["weather"],
+      "image": "screenshots-layout-bars-daily.jpg",
+      "issuesStage4": [],
+      "issuesFinal": true,
+      "defaultSortWeight": 7,
+      "lastCommit": "2025-09-10T10:46:47-07:00"
+    },
+    "trumpetx/MMM-Actual": {
+      "stars": 1,
+      "license": "AGPL-3.0",
+      "tags": ["actual", "finance"],
+      "image": null,
+      "issuesStage4": [
+        "`package.json` issue: license should be a valid SPDX license expression",
+        "Issue: The license in the package.json (AGPL3) doesn't match the license file (AGPL-3.0).",
+        "No image found."
+      ],
+      "issuesFinal": true,
+      "defaultSortWeight": 11,
+      "lastCommit": "2025-05-01T07:33:34-05:00"
+    },
+    "Unclearogre/MMM-AddressBook": {
+      "stars": 0,
+      "license": "GPL-3.0",
+      "tags": [],
+      "image": null,
+      "issuesStage4": [
+        "There is no `package.json`. We need this file to gather information about the module for the module list page.",
+        "No image found."
+      ],
+      "issuesFinal": true,
+      "defaultSortWeight": 8,
+      "lastCommit": "2025-08-07T09:26:17-07:00"
+    },
+    "ItayXD/MMM-Admin-Interface": {
+      "stars": 47,
+      "license": "GPL-3.0",
+      "tags": ["\"magic", "mirror\"", "module\""],
+      "image": null,
+      "issuesStage4": [
+        "There are duplicates in the keywords in your package.json: \"Magic",
+        "No image found."
+      ],
+      "issuesFinal": false,
+      "outdated": "Abandoned. No updates since years. But may still work.",
+      "defaultSortWeight": 901,
+      "lastCommit": "2018-07-08T01:07:24+03:00"
+    },
+    "CFenner/MMM-AirQuality": {
+      "stars": 37,
+      "license": "MIT",
+      "tags": ["aqi", "air-quality"],
+      "image": ".github-preview-good.jpg",
+      "issuesStage4": [],
+      "issuesFinal": true,
+      "defaultSortWeight": 10,
+      "lastCommit": "2025-05-18T02:41:28Z"
+    }
+  }
+}
