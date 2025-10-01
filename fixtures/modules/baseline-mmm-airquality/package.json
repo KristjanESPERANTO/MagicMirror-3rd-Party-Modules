@@ -1,0 +1,15 @@
+{
+  "name": "mmm-airquality-fixture",
+  "version": "1.0.0",
+  "description": "Snapshot representing MMM-AirQuality with no warnings.",
+  "author": "CFenner",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/CFenner/MMM-AirQuality"
+  },
+  "keywords": [
+    "aqi",
+    "air-quality"
+  ]
+}

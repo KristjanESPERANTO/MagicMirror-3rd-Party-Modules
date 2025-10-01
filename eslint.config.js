@@ -11,6 +11,7 @@ import stylistic from "@stylistic/eslint-plugin";
 export default defineConfig([
   {
     ignores: [
+      "fixtures/**",
       "modules/*",
       "modules_temp/*",
       "website/data/modules*.json",

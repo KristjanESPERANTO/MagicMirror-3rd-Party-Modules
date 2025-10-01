@@ -1,0 +1,7 @@
+{
+  "name": "synthetic-eslint-helper",
+  "version": "1.0.0",
+  "description": "Fixture to exercise ESLint helper output.",
+  "type": "module",
+  "license": "MIT"
+}

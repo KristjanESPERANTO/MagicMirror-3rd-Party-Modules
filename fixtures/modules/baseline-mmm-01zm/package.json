@@ -1,0 +1,19 @@
+{
+  "name": "mmm-01zm-fixture",
+  "version": "1.0.0",
+  "description": "Fixture snapshot representing a clean MMM-01ZM build.",
+  "author": "rubinho101",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/rubinho101/MMM-01ZM"
+  },
+  "keywords": [
+    "xiaomi",
+    "temperature",
+    "humidity",
+    "pm2.5",
+    "pm10",
+    "sds011"
+  ]
+}

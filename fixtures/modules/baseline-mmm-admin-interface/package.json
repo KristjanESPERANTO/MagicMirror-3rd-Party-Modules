@@ -1,0 +1,18 @@
+{
+  "name": "mmm-admin-interface-fixture",
+  "version": "1.0.0",
+  "description": "Fixture mirroring MMM-Admin-Interface metadata.",
+  "author": "ItayXD",
+  "license": "GPL-3.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ItayXD/MMM-Admin-Interface"
+  },
+  "keywords": [
+    "magic",
+    "magic",
+    "mirror",
+    "mirror",
+    "module"
+  ]
+}

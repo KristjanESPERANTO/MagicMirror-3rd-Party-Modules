@@ -1,0 +1,10 @@
+{
+  "name": "synthetic-deprecated-node-api",
+  "version": "1.0.0",
+  "description": "Triggers legacy Node.js API deprecation warnings for the check-modules harness.",
+  "main": "lib/index.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "node lib/index.js"
+  }
+}

@@ -95,8 +95,9 @@ Routine reminders for keeping the written guidance in sync with the code:
 
 Immediate actions that move the roadmap forward:
 
-1. Launch **P2.3 Phase 0**: audit the legacy `check_modules` rules, categorize them for the new registry, and capture the findings in the rollout plan.
-2. Extend the fixtures harness to compare legacy vs TypeScript `check_modules` outputs, ensuring we can diff behavior starting in Phase 1.
+1. Implement the Phase 1 TypeScript scaffold for `check-modules` (stage entrypoint, Stage 5 writer, orchestration wiring behind `--checks=ts`).
+2. Port the fast text-scanning rules into the new TS stage and validate parity against the curated fixtures via the comparison harness.
+3. Define comparison thresholds and expand diff coverage (e.g. README/HTML artifacts) so Phase 2 work can rely on automated gating.
 
 ---
 
