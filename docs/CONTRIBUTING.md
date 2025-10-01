@@ -53,9 +53,11 @@ Scans each cloned repository to extract data from `package.json`, collect screen
 
 Runs JavaScript-based checks (naming conventions, minified files, etc.) against the cloned repositories to surface quick wins for maintainers.
 
-#### Stage 5b – `check_modules.py`
+#### Stage 5b – `check-modules/index.ts`
 
-Performs deeper Python checks, focusing on README quality, packaging hygiene, and other heuristics. Results feed both `result.html` and the final `modules.json` catalogue.
+Runs the deep repository analysis in TypeScript, mirroring the legacy Python behavior while sharing utilities with the rest of the pipeline. It parses README files, inspects packaging hygiene, shells out to ESLint/`npm-check-updates`, and produces the markdown summary alongside `modules.json`, `modules.min.json`, and `stats.json`.
+
+> Legacy fallback: the historical Python implementation (`scripts/check_modules.py`) remains available for parity comparisons. Invoke it via `pipeline run --only=check-modules --checks=legacy` when you need to diff outputs against the TypeScript stage.
 
 #### `validate_release_artifacts.js`
 
@@ -115,7 +117,7 @@ The bundled files live in `dist/schemas/`. They ship with the repository so `nod
 
 ## Prerequisites & installation
 
-1. Install [Node.js](https://nodejs.org) and [Python](https://www.python.org).
+1. Install [Node.js](https://nodejs.org). Python is optional unless you plan to run the legacy comparison harness.
 2. Clone the repository:
    ```bash
    git clone https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules

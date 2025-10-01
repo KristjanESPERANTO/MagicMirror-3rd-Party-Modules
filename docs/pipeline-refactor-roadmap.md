@@ -24,13 +24,13 @@ This document captures the long-term improvements we want to implement in the mo
 
 ### 2. Runtime & Codebase Consolidation
 
-| Task | Description                                                                                                          | Dependencies | Effort |
-| ---- | -------------------------------------------------------------------------------------------------------------------- | ------------ | ------ |
-| P2.1 | Extract shared utilities (HTTP, Git, FS, logging, rate-limiter) into a reusable Node/TS module ✅ Completed Sep 2025 | none         | M      |
-| P2.2 | Port `get_modules.py` to TypeScript, reusing the shared utilities ✅ Completed Sep 2025 (Python fallback removed)    | P2.1         | L      |
-| P2.3 | Port `check_modules.py` logic incrementally (start with fast checks, then optional heavy tasks)                      | P2.1         | XL     |
-| P2.4 | Enable TypeScript build tooling (tsconfig, lint) and cover new modules with tests                                    | P2.1         | M      |
-| P2.5 | Centralize `package.json` ingestion so data is parsed once and shared across stages                                  | P2.1         | M      |
+| Task | Description                                                                                                                                                                          | Dependencies | Effort |
+| ---- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ------------ | ------ |
+| P2.1 | Extract shared utilities (HTTP, Git, FS, logging, rate-limiter) into a reusable Node/TS module ✅ Completed Sep 2025                                                                 | none         | M      |
+| P2.2 | Port `get_modules.py` to TypeScript, reusing the shared utilities ✅ Completed Sep 2025 (Python fallback removed)                                                                    | P2.1         | L      |
+| P2.3 | Port `check_modules.py` logic incrementally (start with fast checks, then optional heavy tasks) ✅ Completed Oct 2025 (TS stage default, Python fallback kept via `--checks=legacy`) | P2.1         | XL     |
+| P2.4 | Enable TypeScript build tooling (tsconfig, lint) and cover new modules with tests                                                                                                    | P2.1         | M      |
+| P2.5 | Centralize `package.json` ingestion so data is parsed once and shared across stages                                                                                                  | P2.1         | M      |
 
 ### 3. Robustness & Performance Safety Nets
 
@@ -81,7 +81,7 @@ These are the guiding habits we should keep front-of-mind while the modernizatio
 
 1. **Keep the shared context fresh**: Maintain the updated architecture diagrams so ongoing work on the orchestrator and TypeScript stages stays aligned.
 2. **Lean on the shared utilities**: Continue building new functionality on the consolidated HTTP/Git/FS/rate-limiter toolkit established in P2.1 to avoid regressions.
-3. **Migrate in slices**: With `get_modules` complete, drive the [P2.3 rollout plan](pipeline/p2.3-rollout-plan.md) for `check_modules` via feature flags (`--checks=legacy|ts`) while carrying forward rollout guardrails.
+3. **Keep parity guardrails active**: The [P2.3 rollout plan](pipeline/p2.3-rollout-plan.md) is complete; continue running the comparison harness to monitor the TypeScript stage while we iterate on new checks.
 4. **Add tests alongside migrations** to prevent regressions and make future refactors safer.
 
 ### Recurring documentation tasks
@@ -95,9 +95,9 @@ Routine reminders for keeping the written guidance in sync with the code:
 
 Immediate actions that move the roadmap forward:
 
-1. Implement the Phase 1 TypeScript scaffold for `check-modules` (stage entrypoint, Stage 5 writer, orchestration wiring behind `--checks=ts`).
-2. Port the fast text-scanning rules into the new TS stage and validate parity against the curated fixtures via the comparison harness.
-3. Define comparison thresholds and expand diff coverage (e.g. README/HTML artifacts) so Phase 2 work can rely on automated gating.
+1. Kick off P2.4: land TypeScript build/lint tooling across the new stages and wire them into CI.
+2. Expand the comparison harness diff coverage (README/HTML, stats thresholds) per the fixture plan follow-ups.
+3. Prioritize P4.x registry metadata work now that parity is secured (define categories/severities for existing checks).
 
 ---
 
