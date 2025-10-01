@@ -52,10 +52,8 @@
   "lint-staged": {
     "*": [
       "eslint --fix",
-      "prettier --write --ignore-unknown"
-    ],
-    "*.{css,scss,html,json,md,mdx,py,txt,yaml,yml,js,jsx,ts,tsx,cjs,mjs}": [
-      "cspell --no-progress --no-summary"
+      "prettier --write --ignore-unknown",
+      "cspell --no-progress --no-summary --no-must-find-files"
     ]
   },
   "dependencies": {
