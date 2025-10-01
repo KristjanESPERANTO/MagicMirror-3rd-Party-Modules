@@ -6,7 +6,7 @@ on:
     - cron: "15 3 * * *" # sadly there is no TZ support here
   push:
     branches:
-      - "*"
+      - "main"
 
 permissions:
   contents: read
