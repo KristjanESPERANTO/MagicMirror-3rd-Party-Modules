@@ -141,7 +141,7 @@
         "actual",
         "finance"
       ],
-      "defaultSortWeight": 11,
+      "defaultSortWeight": 10,
       "lastCommit": "2025-05-01T07:33:34-05:00"
     },
     {
@@ -244,7 +244,7 @@
         "trashcollection"
       ],
       "image": "AfvalwijzerScreenshot.jpg",
-      "defaultSortWeight": 8,
+      "defaultSortWeight": 7,
       "lastCommit": "2024-10-09T17:55:17+02:00"
     },
     {
@@ -347,7 +347,7 @@
         "air-quality"
       ],
       "image": ".github-preview-good.jpg",
-      "defaultSortWeight": 10,
+      "defaultSortWeight": 11,
       "lastCommit": "2025-05-18T02:41:28Z"
     },
     {
@@ -390,7 +390,7 @@
     },
     {
       "name": "MMM-AlertExt",
-      "category": "Development / Core MagicMirror\u00b2",
+      "category": "Development / Core MagicMirror²",
       "url": "https://github.com/MMRIZE/MMM-AlertExt",
       "id": "MMRIZE/MMM-AlertExt",
       "maintainer": "MMRIZE",
@@ -653,7 +653,7 @@
       "stars": 5,
       "license": "MIT",
       "image": ".github-sampleA.jpg",
-      "defaultSortWeight": 13,
+      "defaultSortWeight": 12,
       "lastCommit": "2023-05-29T09:40:38-07:00"
     },
     {
@@ -865,7 +865,7 @@
       "id": "Springvar/MMM-AtbSanntid",
       "maintainer": "Springvar",
       "maintainerURL": "https://github.com/Springvar",
-      "description": "Unofficial module showing departure times from given stops for the public transport service in Tr\u00f8ndelag, Norway - AtB.",
+      "description": "Unofficial module showing departure times from given stops for the public transport service in Trøndelag, Norway - AtB.",
       "issues": true,
       "stars": 1,
       "license": "GPL-3.0",
@@ -953,12 +953,12 @@
       "stars": 4,
       "license": "ISC",
       "image": "screenshot.jpg",
-      "defaultSortWeight": 12,
+      "defaultSortWeight": 11,
       "lastCommit": "2024-04-02T22:29:13+02:00"
     },
     {
       "name": "MMM-AutoDimmer",
-      "category": "Development / Core MagicMirror\u00b2",
+      "category": "Development / Core MagicMirror²",
       "url": "https://github.com/Fifteen15Studios/MMM-AutoDimmer",
       "id": "Fifteen15Studios/MMM-AutoDimmer",
       "maintainer": "Fifteen15Studios",
@@ -1086,7 +1086,7 @@
     },
     {
       "name": "MMM-Bash",
-      "category": "Development / Core MagicMirror\u00b2",
+      "category": "Development / Core MagicMirror²",
       "url": "https://github.com/mathew-fleisch/MMM-Bash",
       "id": "mathew-fleisch/MMM-Bash",
       "maintainer": "mathew-fleisch",
@@ -1175,7 +1175,7 @@
         "norway"
       ],
       "image": "screenshot.jpg",
-      "defaultSortWeight": 7,
+      "defaultSortWeight": 6,
       "lastCommit": "2025-09-08T00:19:22+02:00"
     },
     {
@@ -1350,7 +1350,7 @@
       "stars": 14,
       "license": "Apache-2.0",
       "image": "example.jpg",
-      "defaultSortWeight": 8,
+      "defaultSortWeight": 7,
       "lastCommit": "2025-01-19T15:10:54Z"
     },
     {
@@ -1409,7 +1409,7 @@
       "stars": 1,
       "license": "ISC",
       "image": "screenshot.jpg",
-      "defaultSortWeight": 13,
+      "defaultSortWeight": 12,
       "lastCommit": "2021-04-24T12:49:07-04:00"
     },
     {
@@ -1675,7 +1675,7 @@
         "smart home"
       ],
       "image": "screenshot.jpg",
-      "defaultSortWeight": 6,
+      "defaultSortWeight": 5,
       "lastCommit": "2024-12-30T18:24:05+01:00"
     },
     {
@@ -1834,7 +1834,7 @@
     },
     {
       "name": "MMM-BurnIn",
-      "category": "Development / Core MagicMirror\u00b2",
+      "category": "Development / Core MagicMirror²",
       "url": "https://github.com/werthdavid/MMM-BurnIn",
       "id": "werthdavid/MMM-BurnIn",
       "maintainer": "werthdavid",
@@ -1876,7 +1876,7 @@
     },
     {
       "name": "MMM-Button",
-      "category": "Development / Core MagicMirror\u00b2",
+      "category": "Development / Core MagicMirror²",
       "url": "https://github.com/ptrbld/MMM-Button",
       "id": "ptrbld/MMM-Button",
       "maintainer": "ptrbld",
@@ -1893,12 +1893,12 @@
     },
     {
       "name": "MMM-Buttons",
-      "category": "Development / Core MagicMirror\u00b2",
+      "category": "Development / Core MagicMirror²",
       "url": "https://github.com/MarcLandis/MMM-Buttons",
       "id": "MarcLandis/MMM-Buttons",
       "maintainer": "MarcLandis",
       "maintainerURL": "https://github.com/MarcLandis",
-      "description": "Allows you to enhance your setup by integrating physical buttons via GPIO. This module supports multiple buttons, each of which can be individually configured to perform different actions based on short or long presses. With configurable notifications and versatile functionality, MMM-Buttons provides a powerful way to interact with your MagicMirror\u00b2.",
+      "description": "Allows you to enhance your setup by integrating physical buttons via GPIO. This module supports multiple buttons, each of which can be individually configured to perform different actions based on short or long presses. With configurable notifications and versatile functionality, MMM-Buttons provides a powerful way to interact with your MagicMirror².",
       "issues": true,
       "stars": 10,
       "license": "MIT",
@@ -1906,7 +1906,7 @@
         "buttons"
       ],
       "image": "symbolization.jpg",
-      "defaultSortWeight": 4,
+      "defaultSortWeight": 3,
       "lastCommit": "2024-10-22T10:17:52+02:00"
     },
     {
@@ -1988,7 +1988,7 @@
         "calendar"
       ],
       "image": "docs-Configuration-Views-legend-full-example.jpg",
-      "defaultSortWeight": -5,
+      "defaultSortWeight": -4,
       "lastCommit": "2025-09-08T08:01:31+02:00"
     },
     {
@@ -2093,7 +2093,7 @@
       "stars": 8,
       "license": "MIT",
       "image": "screenshot.jpg",
-      "defaultSortWeight": 8,
+      "defaultSortWeight": 7,
       "lastCommit": "2022-02-18T23:53:07+01:00"
     },
     {
@@ -2136,7 +2136,7 @@
       "stars": 55,
       "license": "MIT",
       "image": "screenshots-With calendar title.jpg",
-      "defaultSortWeight": 16,
+      "defaultSortWeight": 15,
       "lastCommit": "2019-08-25T19:28:27+02:00"
     },
     {
@@ -2313,7 +2313,7 @@
     },
     {
       "name": "MMM-Carousel",
-      "category": "Development / Core MagicMirror\u00b2",
+      "category": "Development / Core MagicMirror²",
       "url": "https://github.com/shbatm/MMM-Carousel",
       "id": "shbatm/MMM-Carousel",
       "maintainer": "shbatm",
@@ -2332,7 +2332,7 @@
         "pages"
       ],
       "image": "img-example1-slide.jpg",
-      "defaultSortWeight": -1,
+      "defaultSortWeight": 0,
       "lastCommit": "2025-09-01T07:19:03+02:00"
     },
     {
@@ -2485,7 +2485,7 @@
         "to-do"
       ],
       "image": "img-screenshot1_frontend.jpg",
-      "defaultSortWeight": 8,
+      "defaultSortWeight": 7,
       "lastCommit": "2025-09-25T10:06:33+02:00"
     },
     {
@@ -2495,7 +2495,7 @@
       "id": "flo80/MMM-chromecast",
       "maintainer": "flo80",
       "maintainerURL": "https://github.com/flo80",
-      "description": "Directly cast from the MagicMirror\u00b2 server to a chromecast.",
+      "description": "Directly cast from the MagicMirror² server to a chromecast.",
       "issues": true,
       "stars": 45,
       "license": "MIT",
@@ -2828,7 +2828,7 @@
       "license": "MIT",
       "image": "doc_images-MMM-Config_example_base.jpg",
       "defaultSortWeight": 5,
-      "lastCommit": "2025-09-29T10:04:57-05:00"
+      "lastCommit": "2025-09-30T09:52:22-05:00"
     },
     {
       "name": "MMM-Confucius-say",
@@ -2850,7 +2850,7 @@
     },
     {
       "name": "MMM-connection-status",
-      "category": "Development / Core MagicMirror\u00b2",
+      "category": "Development / Core MagicMirror²",
       "url": "https://github.com/sheyabernstein/MMM-connection-status",
       "id": "sheyabernstein/MMM-connection-status",
       "maintainer": "sheyabernstein",
@@ -2883,12 +2883,12 @@
     },
     {
       "name": "cookiecutter-magic-mirror-module",
-      "category": "Development / Core MagicMirror\u00b2",
+      "category": "Development / Core MagicMirror²",
       "url": "https://github.com/xadamxk/cookiecutter-magic-mirror-module",
       "id": "xadamxk/cookiecutter-magic-mirror-module",
       "maintainer": "xadamxk",
       "maintainerURL": "https://github.com/xadamxk",
-      "description": "CookieCutter template for generating MagicMirror\u00b2 modules.",
+      "description": "CookieCutter template for generating MagicMirror² modules.",
       "issues": true,
       "stars": 4,
       "defaultSortWeight": 15,
@@ -2987,7 +2987,7 @@
       "id": "wiesty/MMM-CoupleDays",
       "maintainer": "wiesty",
       "maintainerURL": "https://github.com/wiesty",
-      "description": "Display the number of days, weeks, months, and years since a specified date, serving as a romantic reminder for couples \ud83d\udc8c. Can also be used for Birthdays \ud83d\udcc6.",
+      "description": "Display the number of days, weeks, months, and years since a specified date, serving as a romantic reminder for couples 💌. Can also be used for Birthdays 📆.",
       "issues": true,
       "stars": 10,
       "license": "MIT",
@@ -3345,7 +3345,7 @@
     },
     {
       "name": "MMM-CustomElementTime",
-      "category": "Development / Core MagicMirror\u00b2",
+      "category": "Development / Core MagicMirror²",
       "url": "https://github.com/MMRIZE/MMM-CustomElementTime",
       "id": "MMRIZE/MMM-CustomElementTime",
       "maintainer": "MMRIZE",
@@ -3354,7 +3354,7 @@
       "issues": true,
       "stars": 3,
       "license": "MIT",
-      "defaultSortWeight": 8,
+      "defaultSortWeight": 7,
       "lastCommit": "2024-07-31T15:50:31+02:00"
     },
     {
@@ -3407,7 +3407,7 @@
         "message"
       ],
       "image": "screenshot.jpg",
-      "defaultSortWeight": 1,
+      "defaultSortWeight": 2,
       "lastCommit": "2025-07-05T10:18:02-07:00"
     },
     {
@@ -3822,7 +3822,7 @@
       ],
       "license": "MIT",
       "image": "screenshot.jpg",
-      "defaultSortWeight": 7,
+      "defaultSortWeight": 6,
       "lastCommit": "2025-09-27T14:03:57+02:00"
     },
     {
@@ -4002,7 +4002,7 @@
         "digital alarm clock"
       ],
       "image": "Screenshot (1).jpg",
-      "defaultSortWeight": 14,
+      "defaultSortWeight": 13,
       "lastCommit": "2019-03-24T22:50:54-05:00"
     },
     {
@@ -4152,7 +4152,7 @@
       "stars": 2,
       "license": "MIT",
       "image": "MMM-Dorba-Trails.jpg",
-      "defaultSortWeight": 10,
+      "defaultSortWeight": 9,
       "lastCommit": "2023-10-29T08:57:14-05:00"
     },
     {
@@ -4162,7 +4162,7 @@
       "id": "Ax-LED/MMM-Dreambox",
       "maintainer": "Ax-LED",
       "maintainerURL": "https://github.com/Ax-LED",
-      "description": "Connect a Dreambox or a Enigma2 Receiver (like VU or VU+) to MagicMirror\u00b2 and stream stations via omxplayer.",
+      "description": "Connect a Dreambox or a Enigma2 Receiver (like VU or VU+) to MagicMirror² and stream stations via omxplayer.",
       "issues": false,
       "outdated": "omxplayer has been deprecated since 2020.",
       "stars": 3,
@@ -4337,7 +4337,7 @@
     },
     {
       "name": "MMM-Dynamic-Modules",
-      "category": "Development / Core MagicMirror\u00b2",
+      "category": "Development / Core MagicMirror²",
       "url": "https://github.com/gonzonia/MMM-Dynamic-Modules",
       "id": "gonzonia/MMM-Dynamic-Modules",
       "maintainer": "gonzonia",
@@ -4435,7 +4435,7 @@
         "news"
       ],
       "image": "screenshot.jpg",
-      "defaultSortWeight": 1,
+      "defaultSortWeight": 2,
       "lastCommit": "2025-07-31T10:41:24-07:00"
     },
     {
@@ -4593,14 +4593,14 @@
       "id": "balassy/MMM-Elvira",
       "maintainer": "balassy",
       "maintainerURL": "https://github.com/balassy",
-      "description": "Displays Hungarian public train departure times using real-time data from the \"Elvira\" service provided by the Hungarian national railway company (M\u00c1V).",
+      "description": "Displays Hungarian public train departure times using real-time data from the \"Elvira\" service provided by the Hungarian national railway company (MÁV).",
       "issues": true,
       "stars": 0,
       "license": "MIT",
       "tags": [
         "elvira",
-        "m\u00e1v",
-        "m\u00e1v-start",
+        "máv",
+        "máv-start",
         "transport",
         "public transport",
         "train",
@@ -4650,7 +4650,7 @@
       ],
       "image": "doc-screenshots-SomeGrafanaPanels.jpg",
       "defaultSortWeight": 8,
-      "lastCommit": "2025-03-10T20:21:49+01:00"
+      "lastCommit": "2025-09-29T22:04:52+02:00"
     },
     {
       "name": "MMM-EmbedYoutube",
@@ -4682,7 +4682,7 @@
       ],
       "license": "MIT",
       "image": "img-emby.jpg",
-      "defaultSortWeight": 8,
+      "defaultSortWeight": 7,
       "lastCommit": "2025-08-28T10:07:44-03:00"
     },
     {
@@ -5081,7 +5081,7 @@
         "neural",
         "network"
       ],
-      "defaultSortWeight": 8,
+      "defaultSortWeight": 7,
       "lastCommit": "2024-11-26T22:30:59-08:00"
     },
     {
@@ -5131,7 +5131,7 @@
         "facial recognition"
       ],
       "license": "MIT",
-      "defaultSortWeight": 16,
+      "defaultSortWeight": 15,
       "lastCommit": "2020-10-27T23:26:13+01:00"
     },
     {
@@ -5272,7 +5272,7 @@
     },
     {
       "name": "MMM-FF-code-injector",
-      "category": "Development / Core MagicMirror\u00b2",
+      "category": "Development / Core MagicMirror²",
       "url": "https://github.com/shin10/MMM-FF-code-injector",
       "id": "shin10/MMM-FF-code-injector",
       "maintainer": "shin10",
@@ -5325,7 +5325,7 @@
       "stars": 5,
       "license": "ISC",
       "image": "screenshot.jpg",
-      "defaultSortWeight": 16,
+      "defaultSortWeight": 15,
       "lastCommit": "2023-05-19T14:48:43+02:00"
     },
     {
@@ -5392,7 +5392,7 @@
       "issues": true,
       "stars": 0,
       "license": "ISC",
-      "defaultSortWeight": 15,
+      "defaultSortWeight": 14,
       "lastCommit": "2022-06-05T12:55:04+02:00"
     },
     {
@@ -5577,7 +5577,7 @@
     },
     {
       "name": "MMM-flick-gestures",
-      "category": "Development / Core MagicMirror\u00b2",
+      "category": "Development / Core MagicMirror²",
       "url": "https://github.com/jancalve/MMM-flick-gestures",
       "id": "jancalve/MMM-flick-gestures",
       "maintainer": "jancalve",
@@ -5770,13 +5770,13 @@
       "maintainerURL": "https://github.com/ianperrin",
       "description": "Display the driver standings from the current Formula 1 season.",
       "issues": true,
-      "stars": 39,
+      "stars": 40,
       "license": "MIT",
       "tags": [
         "formula1"
       ],
       "image": "screenshot.jpg",
-      "defaultSortWeight": 10,
+      "defaultSortWeight": 9,
       "lastCommit": "2025-02-03T16:34:05+01:00"
     },
     {
@@ -5836,7 +5836,7 @@
       "id": "mykle1/MMM-Fortune",
       "maintainer": "mykle1",
       "maintainerURL": "https://github.com/mykle1",
-      "description": "A fortune cookie for your MagicMirror\u00b2.",
+      "description": "A fortune cookie for your MagicMirror².",
       "issues": false,
       "outdated": "Abandoned. And <a href=\"https://github.com/mykle1/MMM-Fortune/issues/4\">API is down</a>.",
       "stars": 9,
@@ -5847,12 +5847,12 @@
     },
     {
       "name": "MMM-Forum",
-      "category": "Development / Core MagicMirror\u00b2",
+      "category": "Development / Core MagicMirror²",
       "url": "https://github.com/KristjanESPERANTO/MMM-Forum",
       "id": "KristjanESPERANTO/MMM-Forum",
       "maintainer": "KristjanESPERANTO",
       "maintainerURL": "https://github.com/KristjanESPERANTO",
-      "description": "Displays information from the MagicMirror\u00b2 forum. Like latest posts, unread posts, etc. The module should also work for other NodeBB forums, but it is not tested.",
+      "description": "Displays information from the MagicMirror² forum. Like latest posts, unread posts, etc. The module should also work for other NodeBB forums, but it is not tested.",
       "issues": true,
       "stars": 3,
       "license": "ISC",
@@ -5861,7 +5861,7 @@
         "nodebb"
       ],
       "image": "screenshot.jpg",
-      "defaultSortWeight": 0,
+      "defaultSortWeight": 1,
       "lastCommit": "2025-08-22T21:37:36+02:00"
     },
     {
@@ -5915,7 +5915,7 @@
       "id": "Amand-M/MMM-FrenchHoroscope",
       "maintainer": "Amand-M",
       "maintainerURL": "https://github.com/Amand-M",
-      "description": "Show your horoscope of the day, the week or the month on your MagicMirror\u00b2. Currently only in French.",
+      "description": "Show your horoscope of the day, the week or the month on your MagicMirror². Currently only in French.",
       "issues": true,
       "stars": 2,
       "license": "ISC",
@@ -5947,13 +5947,13 @@
       "id": "eckonator/MMM-FroelingConnect",
       "maintainer": "eckonator",
       "maintainerURL": "https://github.com/eckonator",
-      "description": "The module builds charts to your FR\u00d6LING pellet boiler based on data from the FR\u00d6LING Connect API. Inspiration and code base comes from <a target=\"_blank\" href=\"https://github.com/TA2k/ioBroker.froeling\">TA2k/ioBroker.froeling</a>.",
+      "description": "The module builds charts to your FRÖLING pellet boiler based on data from the FRÖLING Connect API. Inspiration and code base comes from <a target=\"_blank\" href=\"https://github.com/TA2k/ioBroker.froeling\">TA2k/ioBroker.froeling</a>.",
       "issues": true,
       "stars": 1,
       "license": "MIT",
       "tags": [
-        "fr\u00f6ling connect",
-        "fr\u00f6ling"
+        "fröling connect",
+        "fröling"
       ],
       "image": "MMM-FroelingConnect.jpg",
       "defaultSortWeight": 11,
@@ -6179,7 +6179,7 @@
       "id": "balassy/MMM-Futar",
       "maintainer": "balassy",
       "maintainerURL": "https://github.com/balassy",
-      "description": "Displays Budapest public transport information directly from the Fut\u00e1r webservice.",
+      "description": "Displays Budapest public transport information directly from the Futár webservice.",
       "issues": true,
       "stars": 5,
       "license": "MIT",
@@ -6284,7 +6284,7 @@
       "stars": 5,
       "license": "MIT",
       "image": "doc-screenshot-MMM-GConnect-Up.jpg",
-      "defaultSortWeight": 11,
+      "defaultSortWeight": 19,
       "lastCommit": "2025-06-15T16:46:26+02:00"
     },
     {
@@ -6338,7 +6338,7 @@
     },
     {
       "name": "MMM-Gestures",
-      "category": "Development / Core MagicMirror\u00b2",
+      "category": "Development / Core MagicMirror²",
       "url": "https://github.com/thobach/MMM-Gestures",
       "id": "thobach/MMM-Gestures",
       "maintainer": "thobach",
@@ -6388,7 +6388,7 @@
     },
     {
       "name": "MMM-GitHub-Monitor",
-      "category": "Development / Core MagicMirror\u00b2",
+      "category": "Development / Core MagicMirror²",
       "url": "https://github.com/fpfuetsch/MMM-GitHub-Monitor",
       "id": "fpfuetsch/MMM-GitHub-Monitor",
       "maintainer": "fpfuetsch",
@@ -6403,7 +6403,7 @@
     },
     {
       "name": "MMM-GitHub-Notifications",
-      "category": "Development / Core MagicMirror\u00b2",
+      "category": "Development / Core MagicMirror²",
       "url": "https://github.com/ByteExceptionM/MMM-GitHub-Notifications",
       "id": "ByteExceptionM/MMM-GitHub-Notifications",
       "maintainer": "ByteExceptionM",
@@ -6416,7 +6416,7 @@
     },
     {
       "name": "MMM-Gitlab-MergeRequests",
-      "category": "Development / Core MagicMirror\u00b2",
+      "category": "Development / Core MagicMirror²",
       "url": "https://github.com/jkschoen/MMM-Gitlab-MergeRequests",
       "id": "jkschoen/MMM-Gitlab-MergeRequests",
       "maintainer": "jkschoen",
@@ -6553,7 +6553,7 @@
       "stars": 49,
       "license": "MIT",
       "image": "screenshot.jpg",
-      "defaultSortWeight": 10,
+      "defaultSortWeight": 9,
       "lastCommit": "2022-08-10T15:30:35+02:00"
     },
     {
@@ -6579,12 +6579,12 @@
       "id": "PalatinCoder/MMM-GoogleBirthdaysProvider",
       "maintainer": "PalatinCoder",
       "maintainerURL": "https://github.com/PalatinCoder",
-      "description": "Integrate your Google Contact's birthdays in the MagicMirror\u00b2 calendar.",
+      "description": "Integrate your Google Contact's birthdays in the MagicMirror² calendar.",
       "issues": true,
       "stars": 31,
       "license": "BSD-3-Clause",
       "image": "screenshot.jpg",
-      "defaultSortWeight": 11,
+      "defaultSortWeight": 10,
       "lastCommit": "2019-01-13T16:50:07+01:00"
     },
     {
@@ -6603,7 +6603,7 @@
         "calendar"
       ],
       "image": "screenshot.jpg",
-      "defaultSortWeight": 4,
+      "defaultSortWeight": 3,
       "lastCommit": "2025-06-02T16:43:47+02:00"
     },
     {
@@ -6719,7 +6719,7 @@
         "marker"
       ],
       "image": "examples-screenshot.jpg",
-      "defaultSortWeight": 9,
+      "defaultSortWeight": 8,
       "lastCommit": "2025-04-29T08:30:10+02:00"
     },
     {
@@ -6776,7 +6776,7 @@
         "spreadsheet"
       ],
       "image": "screenshots-Orders_Custom.jpg",
-      "defaultSortWeight": 4,
+      "defaultSortWeight": 5,
       "lastCommit": "2024-10-25T22:47:10-04:00"
     },
     {
@@ -6810,7 +6810,7 @@
         "scheduler"
       ],
       "image": "images-sample.jpg",
-      "defaultSortWeight": 17,
+      "defaultSortWeight": 18,
       "lastCommit": "2024-03-28T10:17:32-04:00"
     },
     {
@@ -6829,7 +6829,7 @@
       ],
       "license": "MIT",
       "image": "screen-01-minimal_look.jpg",
-      "defaultSortWeight": 9,
+      "defaultSortWeight": 8,
       "lastCommit": "2025-06-29T22:46:42+02:00"
     },
     {
@@ -6854,7 +6854,7 @@
     },
     {
       "name": "MMM-GPIO-HANDLER",
-      "category": "Development / Core MagicMirror\u00b2",
+      "category": "Development / Core MagicMirror²",
       "url": "https://github.com/Sjohn21/MMM-GPIO-HANDLER",
       "id": "Sjohn21/MMM-GPIO-HANDLER",
       "maintainer": "Sjohn21",
@@ -6881,7 +6881,7 @@
         "gpio"
       ],
       "image": "examples-HC-SR501-HC-SR501-GPIO4.jpg",
-      "defaultSortWeight": 9,
+      "defaultSortWeight": 8,
       "lastCommit": "2025-05-12T13:27:18+02:00"
     },
     {
@@ -6964,7 +6964,7 @@
     },
     {
       "name": "MMM-GroveGestures",
-      "category": "Development / Core MagicMirror\u00b2",
+      "category": "Development / Core MagicMirror²",
       "url": "https://github.com/MMRIZE/MMM-GroveGestures",
       "id": "MMRIZE/MMM-GroveGestures",
       "maintainer": "MMRIZE",
@@ -7060,7 +7060,7 @@
       "stars": 20,
       "license": "MIT",
       "image": "screenshots-MM_landscape_DefaultTheme.jpg",
-      "defaultSortWeight": 14,
+      "defaultSortWeight": 13,
       "lastCommit": "2020-04-06T19:39:10-07:00"
     },
     {
@@ -7084,7 +7084,7 @@
       "id": "SLFaleiro/MMM-Halloween",
       "maintainer": "SLFaleiro",
       "maintainerURL": "https://github.com/SLFaleiro",
-      "description": "\ud83c\udf83 Adds a spooky Halloween theme to your display by animating ghosts across the screen.",
+      "description": "🎃 Adds a spooky Halloween theme to your display by animating ghosts across the screen.",
       "issues": true,
       "stars": 7,
       "license": "GPL-2.0",
@@ -7110,7 +7110,7 @@
         "tables"
       ],
       "image": ".github-example1.jpg",
-      "defaultSortWeight": 15,
+      "defaultSortWeight": 14,
       "lastCommit": "2025-04-02T19:06:50+02:00"
     },
     {
@@ -7120,7 +7120,7 @@
       "id": "tderflinger/MMM-Hanzi",
       "maintainer": "tderflinger",
       "maintainerURL": "https://github.com/tderflinger",
-      "description": "Learn Chinese Hanzi characters directly on your MagicMirror\u00b2. This module rotates between a configurable number of characters.",
+      "description": "Learn Chinese Hanzi characters directly on your MagicMirror². This module rotates between a configurable number of characters.",
       "issues": true,
       "stars": 4,
       "license": "MIT",
@@ -7432,7 +7432,7 @@
       "issues": true,
       "stars": 3,
       "license": "MIT",
-      "defaultSortWeight": 10,
+      "defaultSortWeight": 9,
       "lastCommit": "2024-12-22T13:05:46+01:00"
     },
     {
@@ -7442,7 +7442,7 @@
       "id": "ambarusa/MMM-HomeAssistant",
       "maintainer": "ambarusa",
       "maintainerURL": "https://github.com/ambarusa",
-      "description": "Turn your MagicMirror\u00b2 into a MQTT device with Home Assistant autodiscovery.",
+      "description": "Turn your MagicMirror² into a MQTT device with Home Assistant autodiscovery.",
       "issues": true,
       "stars": 25,
       "license": "MIT",
@@ -7450,7 +7450,7 @@
         "homeassistant"
       ],
       "image": "example_MMM-HomeAsisstant.jpg",
-      "defaultSortWeight": 6,
+      "defaultSortWeight": 5,
       "lastCommit": "2025-09-23T09:25:11+02:00"
     },
     {
@@ -7666,7 +7666,7 @@
       "issues": true,
       "stars": 5,
       "license": "MIT",
-      "defaultSortWeight": 18,
+      "defaultSortWeight": 15,
       "lastCommit": "2017-10-18T16:58:00-04:00"
     },
     {
@@ -7691,7 +7691,7 @@
       "id": "maan75/MMM-HRS-PickupPlan",
       "maintainer": "maan75",
       "maintainerURL": "https://github.com/maan75",
-      "description": "Display upcoming pickup dates for garbage in the Norwegian municipalities of Harstad, Narvik, Evenes, Gratangen, Ibestad, Kv\u00e6fjord, Lavangen and Tjeldsund.",
+      "description": "Display upcoming pickup dates for garbage in the Norwegian municipalities of Harstad, Narvik, Evenes, Gratangen, Ibestad, Kvæfjord, Lavangen and Tjeldsund.",
       "issues": true,
       "stars": 0,
       "license": "ISC",
@@ -7701,7 +7701,7 @@
     },
     {
       "name": "MMM-HTMLSnippet",
-      "category": "Development / Core MagicMirror\u00b2",
+      "category": "Development / Core MagicMirror²",
       "url": "https://github.com/ulrichwisser/MMM-HTMLSnippet",
       "id": "ulrichwisser/MMM-HTMLSnippet",
       "maintainer": "ulrichwisser",
@@ -7889,7 +7889,7 @@
         "handel"
       ],
       "image": "screenshot.jpg",
-      "defaultSortWeight": 7,
+      "defaultSortWeight": 6,
       "lastCommit": "2024-04-28T21:39:16+02:00"
     },
     {
@@ -7904,7 +7904,7 @@
       "stars": 4,
       "license": "ISC",
       "image": "MMM-iCal-ToDo.jpg",
-      "defaultSortWeight": 17,
+      "defaultSortWeight": 16,
       "lastCommit": "2022-03-28T22:09:26+02:00"
     },
     {
@@ -7931,7 +7931,7 @@
       "id": "wiedsee/MMM-IconDisplayer",
       "maintainer": "wiedsee",
       "maintainerURL": "https://github.com/wiedsee",
-      "description": "Show an icon according to a MagicMirror\u00b2 notification.",
+      "description": "Show an icon according to a MagicMirror² notification.",
       "issues": true,
       "stars": 0,
       "defaultSortWeight": 11,
@@ -7978,7 +7978,7 @@
         "local transit"
       ],
       "image": "screenshots-screenshot_en.jpg",
-      "defaultSortWeight": 11,
+      "defaultSortWeight": 10,
       "lastCommit": "2023-10-25T20:34:33+02:00"
     },
     {
@@ -8061,7 +8061,7 @@
       "id": "AgP42/MMM-iFrame-Ping",
       "maintainer": "AgP42",
       "maintainerURL": "https://github.com/AgP42",
-      "description": "An iFrame module to display any web content to your MagicMirror\u00b2 (including YouTube, IP cameras, etc.). Several functionalities like auto-refresh, Ping the URL before to display it and last update time display. See also <a target=\"_blank\" href=\"https://forum.magicmirror.builders/topic/9750/mmm-smartwebdisplay-display-web-contents-including-youtube-on-your-mm\">MMM-SmartWebDisplay</a>.",
+      "description": "An iFrame module to display any web content to your MagicMirror² (including YouTube, IP cameras, etc.). Several functionalities like auto-refresh, Ping the URL before to display it and last update time display. See also <a target=\"_blank\" href=\"https://forum.magicmirror.builders/topic/9750/mmm-smartwebdisplay-display-web-contents-including-youtube-on-your-mm\">MMM-SmartWebDisplay</a>.",
       "issues": true,
       "stars": 36,
       "tags": [
@@ -8228,7 +8228,7 @@
       "id": "enarciso/MMM-ImmichTileSlideShow",
       "maintainer": "enarciso",
       "maintainerURL": "https://github.com/enarciso",
-      "description": "Fullscreen, tile\u2011based <a target=\"_blank\" href=\"https://immich.app/\">Immich</a> slideshow (mosaic) with internal proxy, captions, featured center tiles, and periodic reshuffle.",
+      "description": "Fullscreen, tile‑based <a target=\"_blank\" href=\"https://immich.app/\">Immich</a> slideshow (mosaic) with internal proxy, captions, featured center tiles, and periodic reshuffle.",
       "issues": true,
       "stars": 0,
       "license": "MIT",
@@ -8254,7 +8254,7 @@
       "id": "buxxi/MMM-IndoorClimate-Endpoint",
       "maintainer": "buxxi",
       "maintainerURL": "https://github.com/buxxi",
-      "description": "This module exposes a HTTP-endpoint on the MagicMirror\u00b2 that can receive the indoor temperature and/or humidity and then emits that value as notification \"INDOOR_TEMPERATURE\"/\"INDOOR_HUMIDITY\".",
+      "description": "This module exposes a HTTP-endpoint on the MagicMirror² that can receive the indoor temperature and/or humidity and then emits that value as notification \"INDOOR_TEMPERATURE\"/\"INDOOR_HUMIDITY\".",
       "issues": true,
       "stars": 1,
       "license": "MIT",
@@ -8376,7 +8376,7 @@
       "stars": 0,
       "license": "MIT",
       "image": "screenshot.jpg",
-      "defaultSortWeight": 8,
+      "defaultSortWeight": 9,
       "lastCommit": "2025-07-27T08:59:17-05:00"
     },
     {
@@ -8430,7 +8430,7 @@
         "iot",
         "home automation"
       ],
-      "defaultSortWeight": 15,
+      "defaultSortWeight": 14,
       "lastCommit": "2020-10-29T14:25:07Z"
     },
     {
@@ -8478,7 +8478,7 @@
       "issues": true,
       "stars": 26,
       "license": "MIT",
-      "defaultSortWeight": 11,
+      "defaultSortWeight": 12,
       "lastCommit": "2017-01-23T12:10:19+01:00"
     },
     {
@@ -8540,7 +8540,7 @@
         "hebrew"
       ],
       "image": "screenshot.jpg",
-      "defaultSortWeight": 16,
+      "defaultSortWeight": 15,
       "lastCommit": "2025-07-16T20:55:45+03:00"
     },
     {
@@ -8630,7 +8630,7 @@
       "stars": 8,
       "license": "MIT",
       "image": "screenshots-floorplan_animated.jpg",
-      "defaultSortWeight": 17,
+      "defaultSortWeight": 16,
       "lastCommit": "2018-04-27T14:46:51-05:00"
     },
     {
@@ -8640,7 +8640,7 @@
       "id": "seb-ma/MMM-IT8951",
       "maintainer": "seb-ma",
       "maintainerURL": "https://github.com/seb-ma",
-      "description": "This module communicates with a IT8951 card to display MagicMirror\u00b2 on a e-ink screen using IT8951 drivers.",
+      "description": "This module communicates with a IT8951 card to display MagicMirror² on a e-ink screen using IT8951 drivers.",
       "issues": true,
       "stars": 5,
       "license": "MIT",
@@ -8784,7 +8784,7 @@
     },
     {
       "name": "MMM-JokeAPI",
-      "category": "Development / Core MagicMirror\u00b2",
+      "category": "Development / Core MagicMirror²",
       "url": "https://github.com/Kreshnik/MMM-JokeAPI",
       "id": "Kreshnik/MMM-JokeAPI",
       "maintainer": "Kreshnik",
@@ -8965,7 +8965,7 @@
       "description": "Control MM from Kalliope assistant.",
       "issues": true,
       "stars": 8,
-      "defaultSortWeight": 11,
+      "defaultSortWeight": 10,
       "lastCommit": "2018-07-24T10:50:15+02:00"
     },
     {
@@ -9000,7 +9000,7 @@
         "keyboard"
       ],
       "image": "img-fire_stick_remote.jpg",
-      "defaultSortWeight": 0,
+      "defaultSortWeight": 1,
       "lastCommit": "2025-09-02T21:12:20+02:00"
     },
     {
@@ -9015,7 +9015,7 @@
       "stars": 4,
       "license": "MIT",
       "image": "keyboard-example.jpg",
-      "defaultSortWeight": 10,
+      "defaultSortWeight": 9,
       "lastCommit": "2020-06-11T23:49:01+02:00"
     },
     {
@@ -9025,7 +9025,7 @@
       "id": "l0b5ter/KeyDisplayed",
       "maintainer": "l0b5ter",
       "maintainerURL": "https://github.com/l0b5ter",
-      "description": "Use the keyboard to open and close a popupwindow in the MagicMirror\u00b2. Like lets say using the \"q\" key will open a popupwindow on MagicMirror's webpage. Using the iFrame to display web content.",
+      "description": "Use the keyboard to open and close a popupwindow in the MagicMirror². Like lets say using the \"q\" key will open a popupwindow on MagicMirror's webpage. Using the iFrame to display web content.",
       "issues": true,
       "stars": 2,
       "defaultSortWeight": 13,
@@ -9057,7 +9057,7 @@
       "id": "Alvinger/MMM-Koket-by-Sodexo",
       "maintainer": "Alvinger",
       "maintainerURL": "https://github.com/Alvinger",
-      "description": "Replaced by MMM-Mashie-Skolmat! Show school lunch menus from K\u00f6ket by Sodexo (based on MMM-Skolmaten with different source for menus).",
+      "description": "Replaced by MMM-Mashie-Skolmat! Show school lunch menus from Köket by Sodexo (based on MMM-Skolmaten with different source for menus).",
       "issues": false,
       "outdated": "Abandoned. Repo has been archived at 2020-12-10.",
       "stars": 0,
@@ -9065,7 +9065,7 @@
       "license": "MIT",
       "tags": [
         "skolmat",
-        "k\u00f6ket by sodexo",
+        "köket by sodexo",
         "sweden"
       ],
       "defaultSortWeight": 901,
@@ -9101,8 +9101,8 @@
         "screen"
       ],
       "image": "screenshot.jpg",
-      "defaultSortWeight": 6,
-      "lastCommit": "2025-09-28T16:20:40+02:00"
+      "defaultSortWeight": 5,
+      "lastCommit": "2025-09-29T19:43:17+02:00"
     },
     {
       "name": "MMM-KVV",
@@ -9197,7 +9197,7 @@
       "id": "mykle1/MMM-Launch",
       "maintainer": "mykle1",
       "maintainerURL": "https://github.com/mykle1",
-      "description": "Ever wonder just how often mankind is launching things into space? Once a year? Twice? WRONG! On a daily basis. Often, several times a day! Don\u2019t believe it? Neither did I.",
+      "description": "Ever wonder just how often mankind is launching things into space? Once a year? Twice? WRONG! On a daily basis. Often, several times a day! Don’t believe it? Neither did I.",
       "issues": false,
       "outdated": "Abandoned. Developer is no longer active. Missing instructions to install dependency 'request'.",
       "stars": 16,
@@ -9328,7 +9328,7 @@
         "spotify"
       ],
       "image": ".github-example1.jpg",
-      "defaultSortWeight": 900,
+      "defaultSortWeight": 901,
       "lastCommit": "2023-10-01T12:39:39+02:00"
     },
     {
@@ -9398,13 +9398,13 @@
       "tags": [
         "linky",
         "consommation",
-        "\u00e9lectricit\u00e9",
+        "électricité",
         "enedis",
-        "\u00e9nergie",
+        "énergie",
         "smart home"
       ],
       "image": "MMM-Linky.jpg",
-      "defaultSortWeight": 20,
+      "defaultSortWeight": 26,
       "lastCommit": "2025-04-12T16:53:50+02:00"
     },
     {
@@ -9423,7 +9423,7 @@
         "calendar"
       ],
       "image": "screenshot.jpg",
-      "defaultSortWeight": 1,
+      "defaultSortWeight": 2,
       "lastCommit": "2025-08-09T08:09:15-07:00"
     },
     {
@@ -9448,7 +9448,7 @@
       "id": "SBrendan/MMM-LittleBockFermentationLog",
       "maintainer": "SBrendan",
       "maintainerURL": "https://github.com/SBrendan",
-      "description": "\ud83c\udf7a Display beer fermentation log from <a target=\"_blank\" href=\"https://www.littlebock.fr\">LittleBock</a> API.",
+      "description": "🍺 Display beer fermentation log from <a target=\"_blank\" href=\"https://www.littlebock.fr\">LittleBock</a> API.",
       "issues": true,
       "stars": 0,
       "tags": [
@@ -9614,7 +9614,7 @@
     },
     {
       "name": "MMM-LogExt",
-      "category": "Development / Core MagicMirror\u00b2",
+      "category": "Development / Core MagicMirror²",
       "url": "https://github.com/MMRIZE/MMM-LogExt",
       "id": "MMRIZE/MMM-LogExt",
       "maintainer": "MMRIZE",
@@ -9634,7 +9634,7 @@
     },
     {
       "name": "MMM-Logging",
-      "category": "Development / Core MagicMirror\u00b2",
+      "category": "Development / Core MagicMirror²",
       "url": "https://github.com/shbatm/MMM-Logging",
       "id": "shbatm/MMM-Logging",
       "maintainer": "shbatm",
@@ -9658,7 +9658,7 @@
       "id": "cslev/MMM-loldht22",
       "maintainer": "cslev",
       "maintainerURL": "https://github.com/cslev",
-      "description": "Show the temperature and humidity from a DHT22 sensor. This module uses the loldht_22 library and can work inside a docker container, i.e., when your Magicmirror\u00b2 is inside a docker. Lot of settings can be made for how the temperature/humidity data are shown. Change colors, icons, layout, as well as, define threshold values when icons/colors should change according to the temperature.",
+      "description": "Show the temperature and humidity from a DHT22 sensor. This module uses the loldht_22 library and can work inside a docker container, i.e., when your Magicmirror² is inside a docker. Lot of settings can be made for how the temperature/humidity data are shown. Change colors, icons, layout, as well as, define threshold values when icons/colors should change according to the temperature.",
       "issues": true,
       "stars": 0,
       "license": "Apache-2.0",
@@ -9726,7 +9726,7 @@
       "id": "Dobherrmann/MMM-Losung",
       "maintainer": "Dobherrmann",
       "maintainerURL": "https://github.com/Dobherrmann",
-      "description": "Displays the daily bible verse from ther german \u201cLosungstext\u201d and the additional teaching text.",
+      "description": "Displays the daily bible verse from ther german “Losungstext” and the additional teaching text.",
       "issues": true,
       "stars": 2,
       "license": "ISC",
@@ -9785,7 +9785,7 @@
       "id": "idoodler/MMM-Loxone",
       "maintainer": "idoodler",
       "maintainerURL": "https://github.com/idoodler",
-      "description": "MMM-Loxone connects to your Loxone Miniserver and lets it communicate to your MagicMirror\u00b2.",
+      "description": "MMM-Loxone connects to your Loxone Miniserver and lets it communicate to your MagicMirror².",
       "issues": true,
       "stars": 11,
       "license": "MIT",
@@ -9973,7 +9973,7 @@
       "id": "roramirez/MagicMirror-Module-Template",
       "maintainer": "roramirez",
       "maintainerURL": "https://github.com/roramirez",
-      "description": "Module to help developers to start building their own modules for the MagicMirror\u00b2.",
+      "description": "Module to help developers to start building their own modules for the MagicMirror².",
       "issues": false,
       "outdated": "No changes since years. It's not a good start anymore. Use <a href=\"https://github.com/Dennis-Rosenbaum/MMM-Template\">MMM-Template</a> instead.",
       "stars": 76,
@@ -10015,7 +10015,7 @@
     },
     {
       "name": "MMM-MagicMover",
-      "category": "Development / Core MagicMirror\u00b2",
+      "category": "Development / Core MagicMirror²",
       "url": "https://github.com/Lavve/MMM-MagicMover",
       "id": "Lavve/MMM-MagicMover",
       "maintainer": "Lavve",
@@ -10133,7 +10133,7 @@
     },
     {
       "name": "MMM-Markdown",
-      "category": "Development / Core MagicMirror\u00b2",
+      "category": "Development / Core MagicMirror²",
       "url": "https://github.com/wilfullyapt/MMM-Markdown",
       "id": "wilfullyapt/MMM-Markdown",
       "maintainer": "wilfullyapt",
@@ -10176,7 +10176,7 @@
       "issues": true,
       "stars": 1,
       "license": "MIT",
-      "defaultSortWeight": 15,
+      "defaultSortWeight": 16,
       "lastCommit": "2023-12-14T22:15:16-06:00"
     },
     {
@@ -10193,7 +10193,7 @@
       "tags": [
         "skolmat",
         "mashie",
-        "k\u00f6ket by sodexo",
+        "köket by sodexo",
         "sweden"
       ],
       "defaultSortWeight": 14,
@@ -10265,7 +10265,7 @@
       "id": "AndreaGrandieri/MMM-MD",
       "maintainer": "AndreaGrandieri",
       "maintainerURL": "https://github.com/AndreaGrandieri",
-      "description": "Write Markdown. Render it on the MagicMirror\u00b2.",
+      "description": "Write Markdown. Render it on the MagicMirror².",
       "issues": true,
       "stars": 3,
       "license": "MIT",
@@ -10289,7 +10289,7 @@
         "recipie"
       ],
       "image": "MMM-MealieMenu-screenshot.jpg",
-      "defaultSortWeight": 7,
+      "defaultSortWeight": 9,
       "lastCommit": "2025-09-01T23:05:40-06:00"
     },
     {
@@ -10381,7 +10381,7 @@
       "id": "wiesty/MMM-Mensamuc",
       "maintainer": "wiesty",
       "maintainerURL": "https://github.com/wiesty",
-      "description": "Display daily menu \ud83c\udf54\ud83e\udd55 information from the canteens of the Studierendenwerk M\u00fcnchen Oberbayern as well as some other canteens.",
+      "description": "Display daily menu 🍔🥕 information from the canteens of the Studierendenwerk München Oberbayern as well as some other canteens.",
       "issues": true,
       "stars": 6,
       "license": "MIT",
@@ -10665,12 +10665,12 @@
     },
     {
       "name": "MM-Remote",
-      "category": "Development / Core MagicMirror\u00b2",
+      "category": "Development / Core MagicMirror²",
       "url": "https://github.com/Klettner/MM-Remote",
       "id": "Klettner/MM-Remote",
       "maintainer": "Klettner",
       "maintainerURL": "https://github.com/Klettner",
-      "description": "Android \ud83d\udcf1 and Windows-desktop \ud83d\udcbb app to control your MagicMirror\u00b2 remotely. (Shutdown, reboot, toggle monitor on/off, change brightness of monitor, custom-commands, etc.).",
+      "description": "Android 📱 and Windows-desktop 💻 app to control your MagicMirror² remotely. (Shutdown, reboot, toggle monitor on/off, change brightness of monitor, custom-commands, etc.).",
       "issues": true,
       "stars": 65,
       "license": "MIT",
@@ -10743,8 +10743,8 @@
         "tracker"
       ],
       "image": "screenshot.jpg",
-      "defaultSortWeight": 17,
-      "lastCommit": "2025-07-09T09:25:33-05:00"
+      "defaultSortWeight": 15,
+      "lastCommit": "2025-10-01T12:24:39-05:00"
     },
     {
       "name": "mmm-dropbox",
@@ -10846,7 +10846,7 @@
       "id": "michael5r/mmm-nest-cameras",
       "maintainer": "michael5r",
       "maintainerURL": "https://github.com/michael5r",
-      "description": "Displays your <a target=\"_blank\" href=\"https://www.nest.com\">Nest</a> cameras on your MagicMirror\u00b2 and gives you the option to show either live streams or constantly-updated snapshots.",
+      "description": "Displays your <a target=\"_blank\" href=\"https://www.nest.com\">Nest</a> cameras on your MagicMirror² and gives you the option to show either live streams or constantly-updated snapshots.",
       "issues": true,
       "stars": 12,
       "license": "MIT",
@@ -10918,7 +10918,7 @@
       "tags": [
         "pins"
       ],
-      "defaultSortWeight": 19,
+      "defaultSortWeight": 18,
       "lastCommit": "2019-07-03T09:18:21+02:00"
     },
     {
@@ -10995,7 +10995,7 @@
       "outdated": "Deprecated.",
       "stars": 1,
       "license": "MIT",
-      "image": "screenshots-MagicMirror\u00b2-UDR_full.jpg",
+      "image": "screenshots-MagicMirror²-UDR_full.jpg",
       "defaultSortWeight": 901,
       "lastCommit": "2020-01-23T19:16:38+01:00"
     },
@@ -11066,12 +11066,12 @@
     },
     {
       "name": "mmpm",
-      "category": "Development / Core MagicMirror\u00b2",
+      "category": "Development / Core MagicMirror²",
       "url": "https://github.com/Bee-Mar/mmpm",
       "id": "Bee-Mar/mmpm",
       "maintainer": "Bee-Mar",
       "maintainerURL": "https://github.com/Bee-Mar",
-      "description": "An unofficial MagicMirror\u00b2 3rd Party Package Manager. Automates searching, installation, removal, updating, and upgrading of MagicMirror\u00b2 modules.",
+      "description": "An unofficial MagicMirror² 3rd Party Package Manager. Automates searching, installation, removal, updating, and upgrading of MagicMirror² modules.",
       "issues": true,
       "stars": 224,
       "license": "MIT",
@@ -11080,7 +11080,7 @@
         "module installer"
       ],
       "image": "assets-MMPM-UI-Homepage.jpg",
-      "defaultSortWeight": -3,
+      "defaultSortWeight": -1,
       "lastCommit": "2025-09-21T22:20:26-04:00"
     },
     {
@@ -11090,7 +11090,7 @@
       "id": "Bee-Mar/MMM-mmpm",
       "maintainer": "Bee-Mar",
       "maintainerURL": "https://github.com/Bee-Mar",
-      "description": "Companion module for MMPM to enable hiding/showing of MagicMirror\u00b2 modules.",
+      "description": "Companion module for MMPM to enable hiding/showing of MagicMirror² modules.",
       "issues": true,
       "stars": 7,
       "license": "MIT",
@@ -11127,7 +11127,7 @@
       "stars": 18,
       "license": "MIT",
       "image": ".github-ModuleBar-01.jpg",
-      "defaultSortWeight": 13,
+      "defaultSortWeight": 12,
       "lastCommit": "2025-02-04T13:34:52+01:00"
     },
     {
@@ -11147,7 +11147,7 @@
     },
     {
       "name": "MMM-ModuleMonkeyPatch",
-      "category": "Development / Core MagicMirror\u00b2",
+      "category": "Development / Core MagicMirror²",
       "url": "https://github.com/MMRIZE/MMM-ModuleMonkeyPatch",
       "id": "MMRIZE/MMM-ModuleMonkeyPatch",
       "maintainer": "MMRIZE",
@@ -11164,7 +11164,7 @@
     },
     {
       "name": "MMM-ModuleScheduler",
-      "category": "Development / Core MagicMirror\u00b2",
+      "category": "Development / Core MagicMirror²",
       "url": "https://github.com/ianperrin/MMM-ModuleScheduler",
       "id": "ianperrin/MMM-ModuleScheduler",
       "maintainer": "ianperrin",
@@ -11195,7 +11195,7 @@
     },
     {
       "name": "MMM-ModuleToggleButton",
-      "category": "Development / Core MagicMirror\u00b2",
+      "category": "Development / Core MagicMirror²",
       "url": "https://github.com/balassy/MMM-ModuleToggleButton",
       "id": "balassy/MMM-ModuleToggleButton",
       "maintainer": "balassy",
@@ -11208,7 +11208,7 @@
         "button",
         "raspberry"
       ],
-      "defaultSortWeight": 14,
+      "defaultSortWeight": 15,
       "lastCommit": "2024-03-11T04:14:54+01:00"
     },
     {
@@ -11242,7 +11242,7 @@
         "astronomy"
       ],
       "image": "imgs-moon_pic1.jpg",
-      "defaultSortWeight": 6,
+      "defaultSortWeight": 5,
       "lastCommit": "2025-01-21T19:29:07-06:00"
     },
     {
@@ -11262,7 +11262,7 @@
         "astronomy"
       ],
       "image": "images-2023-09-15-example-moons.jpg",
-      "defaultSortWeight": 4,
+      "defaultSortWeight": 3,
       "lastCommit": "2025-03-12T10:26:55-04:00"
     },
     {
@@ -11479,7 +11479,7 @@
       "id": "Xioner19/MMM-MPKLodz",
       "maintainer": "Xioner19",
       "maintainerURL": "https://github.com/Xioner19",
-      "description": "Displays real-time bus and tram departures for \u0141\u00f3d\u017a public transport (MPK \u0141\u00f3d\u017a).",
+      "description": "Displays real-time bus and tram departures for Łódź public transport (MPK Łódź).",
       "issues": true,
       "stars": 0,
       "license": "MIT",
@@ -11882,7 +11882,7 @@
       "id": "wiesty/MMM-MVVWiesty",
       "maintainer": "wiesty",
       "maintainerURL": "https://github.com/wiesty",
-      "description": "Display public transport \ud83d\ude90 from Munich in Germany.",
+      "description": "Display public transport 🚐 from Munich in Germany.",
       "issues": true,
       "stars": 12,
       "license": "MIT",
@@ -11892,7 +11892,7 @@
         "mvv"
       ],
       "image": "assets-example.jpg",
-      "defaultSortWeight": 5,
+      "defaultSortWeight": 4,
       "lastCommit": "2025-02-22T21:20:21+01:00"
     },
     {
@@ -11922,7 +11922,7 @@
       "stars": 8,
       "hasGithubIssues": false,
       "license": "MIT",
-      "defaultSortWeight": 12,
+      "defaultSortWeight": 11,
       "lastCommit": "2025-06-12T10:46:58-04:00"
     },
     {
@@ -12070,7 +12070,7 @@
       "maintainer": "dathbe",
       "maintainerURL": "https://github.com/dathbe",
       "description": "Display scores for your favorite teams from many major sports.",
-      "issues": false,
+      "issues": true,
       "stars": 19,
       "license": "MIT",
       "tags": [
@@ -12097,7 +12097,7 @@
         "rugby"
       ],
       "image": "example2.jpg",
-      "defaultSortWeight": 0,
+      "defaultSortWeight": 1,
       "lastCommit": "2025-09-26T10:41:07-07:00"
     },
     {
@@ -12192,7 +12192,7 @@
         "rugby"
       ],
       "image": "screenshot.jpg",
-      "defaultSortWeight": 2,
+      "defaultSortWeight": 3,
       "lastCommit": "2025-07-20T10:16:43-07:00"
     },
     {
@@ -12211,7 +12211,7 @@
         "study"
       ],
       "image": "Screenshot.jpg",
-      "defaultSortWeight": 15,
+      "defaultSortWeight": 14,
       "lastCommit": "2021-11-24T14:28:14-06:00"
     },
     {
@@ -12447,7 +12447,7 @@
         "words",
         "random"
       ],
-      "defaultSortWeight": 14,
+      "defaultSortWeight": 13,
       "lastCommit": "2020-06-23T01:15:45+02:00"
     },
     {
@@ -12457,7 +12457,7 @@
       "id": "qistoph/MMM-nagios",
       "maintainer": "qistoph",
       "maintainerURL": "https://github.com/qistoph",
-      "description": "A MagicMirror\u00b2 Module for Nagios.",
+      "description": "A MagicMirror² Module for Nagios.",
       "issues": false,
       "outdated": "Abandoned. Repo has been archived at 2023-03-09.",
       "stars": 7,
@@ -12587,17 +12587,17 @@
     },
     {
       "name": "MMM-Navigate",
-      "category": "Development / Core MagicMirror\u00b2",
+      "category": "Development / Core MagicMirror²",
       "url": "https://github.com/Ax-LED/MMM-Navigate",
       "id": "Ax-LED/MMM-Navigate",
       "maintainer": "Ax-LED",
       "maintainerURL": "https://github.com/Ax-LED",
-      "description": "Connect a rotary encoder to MagicMirror\u00b2 and use it for navigation inside of MagicMirror\u00b2.",
+      "description": "Connect a rotary encoder to MagicMirror² and use it for navigation inside of MagicMirror².",
       "issues": true,
       "stars": 11,
       "license": "MIT",
       "image": "MMM-Navigate_screenshot1.jpg",
-      "defaultSortWeight": 10,
+      "defaultSortWeight": 9,
       "lastCommit": "2023-05-02T21:02:39+02:00"
     },
     {
@@ -12640,7 +12640,7 @@
       "id": "semox/MMM-NearCompliments",
       "maintainer": "semox",
       "maintainerURL": "https://github.com/semox",
-      "description": "Uses HC-SR04 sensors to measure distance and display compliments if USER_PRESENCE is detected by MMM-PIR-Sensor and user is near the MagicMirror\u00b2.",
+      "description": "Uses HC-SR04 sensors to measure distance and display compliments if USER_PRESENCE is detected by MMM-PIR-Sensor and user is near the MagicMirror².",
       "issues": true,
       "stars": 5,
       "tags": [
@@ -12702,7 +12702,7 @@
       "id": "sisimomo/MMM-NestRemoteThermostat",
       "maintainer": "sisimomo",
       "maintainerURL": "https://github.com/sisimomo",
-      "description": "Display a Nest Like thermostat from a remote sensor that is capable to POST values through HTTP protocol. It is designed to be generic. Useful when having Home Assistant and MagicMirror\u00b2.",
+      "description": "Display a Nest Like thermostat from a remote sensor that is capable to POST values through HTTP protocol. It is designed to be generic. Useful when having Home Assistant and MagicMirror².",
       "issues": true,
       "stars": 4,
       "license": "MIT",
@@ -12732,7 +12732,7 @@
         "smart home"
       ],
       "image": ".github-preview.bubbles.jpg",
-      "defaultSortWeight": 11,
+      "defaultSortWeight": 12,
       "lastCommit": "2025-09-24T15:06:55Z"
     },
     {
@@ -12772,7 +12772,7 @@
     },
     {
       "name": "MMM-network-signal",
-      "category": "Development / Core MagicMirror\u00b2",
+      "category": "Development / Core MagicMirror²",
       "url": "https://github.com/PoOwAa/MMM-network-signal",
       "id": "PoOwAa/MMM-network-signal",
       "maintainer": "PoOwAa",
@@ -12790,7 +12790,7 @@
     },
     {
       "name": "MMM-NetworkConnection",
-      "category": "Development / Core MagicMirror\u00b2",
+      "category": "Development / Core MagicMirror²",
       "url": "https://github.com/slametps/MMM-NetworkConnection",
       "id": "slametps/MMM-NetworkConnection",
       "maintainer": "slametps",
@@ -12863,7 +12863,7 @@
         "news"
       ],
       "image": "screenshot1.jpg",
-      "defaultSortWeight": 5,
+      "defaultSortWeight": 4,
       "lastCommit": "2025-05-10T10:22:54+02:00"
     },
     {
@@ -13073,7 +13073,7 @@
         "ice hockey"
       ],
       "image": ".github-example_nhl.jpg",
-      "defaultSortWeight": 7,
+      "defaultSortWeight": 8,
       "lastCommit": "2025-05-24T09:54:24-05:00"
     },
     {
@@ -13363,7 +13363,7 @@
     },
     {
       "name": "MMM-NotificationTrigger",
-      "category": "Development / Core MagicMirror\u00b2",
+      "category": "Development / Core MagicMirror²",
       "url": "https://github.com/MMRIZE/MMM-NotificationTrigger",
       "id": "MMRIZE/MMM-NotificationTrigger",
       "maintainer": "MMRIZE",
@@ -13392,7 +13392,7 @@
       "stars": 11,
       "license": "MIT",
       "image": "img-mmm-notion-showcase.jpg",
-      "defaultSortWeight": 16,
+      "defaultSortWeight": 15,
       "lastCommit": "2023-12-01T11:40:39+01:00"
     },
     {
@@ -13661,7 +13661,7 @@
       "issues": true,
       "stars": 1,
       "license": "MIT",
-      "defaultSortWeight": 17,
+      "defaultSortWeight": 16,
       "lastCommit": "2021-11-27T18:20:32+08:00"
     },
     {
@@ -13784,13 +13784,13 @@
       "id": "mscharl/MMM-oebb-station-board",
       "maintainer": "mscharl",
       "maintainerURL": "https://github.com/mscharl",
-      "description": "Shows trains and other public transports for a configured \u00d6BB-Station.",
+      "description": "Shows trains and other public transports for a configured ÖBB-Station.",
       "issues": true,
       "stars": 5,
       "license": "MIT",
       "tags": [
         "oebb",
-        "\u00f6bb"
+        "öbb"
       ],
       "image": "assets-screenshot.jpg",
       "defaultSortWeight": 13,
@@ -13969,12 +13969,12 @@
     },
     {
       "name": "MMM-OnScreenMenu",
-      "category": "Development / Core MagicMirror\u00b2",
+      "category": "Development / Core MagicMirror²",
       "url": "https://github.com/shbatm/MMM-OnScreenMenu",
       "id": "shbatm/MMM-OnScreenMenu",
       "maintainer": "shbatm",
       "maintainerURL": "https://github.com/shbatm",
-      "description": "Simple On-Screen Menu for controlling the MagicMirror\u00b2.",
+      "description": "Simple On-Screen Menu for controlling the MagicMirror².",
       "issues": true,
       "stars": 72,
       "license": "MIT",
@@ -14150,7 +14150,7 @@
       "description": "Display information from your OpenTherm gateway.",
       "issues": true,
       "stars": 2,
-      "defaultSortWeight": 13,
+      "defaultSortWeight": 14,
       "lastCommit": "2016-11-06T15:55:12+01:00"
     },
     {
@@ -14218,7 +14218,7 @@
       "stars": 2,
       "license": "MIT",
       "image": "images-screenshot.jpg",
-      "defaultSortWeight": 10,
+      "defaultSortWeight": 9,
       "lastCommit": "2018-06-19T17:02:29+02:00"
     },
     {
@@ -14228,7 +14228,7 @@
       "id": "RaxoCoding/MMM-OTIS",
       "maintainer": "RaxoCoding",
       "maintainerURL": "https://github.com/RaxoCoding",
-      "description": "Machine learning AI to take input and pass it through the AI to get an answer, best use is when combined with other modules to have full control over MagicMirror\u00b2 with voice.",
+      "description": "Machine learning AI to take input and pass it through the AI to get an answer, best use is when combined with other modules to have full control over MagicMirror² with voice.",
       "issues": true,
       "stars": 3,
       "license": "MIT",
@@ -14277,7 +14277,7 @@
       "tags": [
         "overwatch"
       ],
-      "defaultSortWeight": 14,
+      "defaultSortWeight": 13,
       "lastCommit": "2020-05-06T09:57:16+02:00"
     },
     {
@@ -14298,7 +14298,7 @@
     },
     {
       "name": "MMM-page-indicator",
-      "category": "Development / Core MagicMirror\u00b2",
+      "category": "Development / Core MagicMirror²",
       "url": "https://github.com/edward-shen/MMM-page-indicator",
       "id": "edward-shen/MMM-page-indicator",
       "maintainer": "edward-shen",
@@ -14312,12 +14312,12 @@
         "slides"
       ],
       "image": "examples-screencast_1_without-styling.jpg",
-      "defaultSortWeight": 1,
+      "defaultSortWeight": 2,
       "lastCommit": "2025-06-25T22:20:29+02:00"
     },
     {
       "name": "MMM-Page-Pusher",
-      "category": "Development / Core MagicMirror\u00b2",
+      "category": "Development / Core MagicMirror²",
       "url": "https://github.com/zerosamski/MMM-Page-Pusher",
       "id": "zerosamski/MMM-Page-Pusher",
       "maintainer": "zerosamski",
@@ -14330,7 +14330,7 @@
     },
     {
       "name": "MMM-Page-Selector",
-      "category": "Development / Core MagicMirror\u00b2",
+      "category": "Development / Core MagicMirror²",
       "url": "https://github.com/Veldrovive/MMM-Page-Selector",
       "id": "Veldrovive/MMM-Page-Selector",
       "maintainer": "Veldrovive",
@@ -14358,7 +14358,7 @@
     },
     {
       "name": "MMM-pages",
-      "category": "Development / Core MagicMirror\u00b2",
+      "category": "Development / Core MagicMirror²",
       "url": "https://github.com/sdetweil/MMM-pages",
       "id": "sdetweil/MMM-pages",
       "maintainer": "sdetweil",
@@ -14372,12 +14372,12 @@
         "slides"
       ],
       "image": "example.jpg",
-      "defaultSortWeight": 8,
+      "defaultSortWeight": 9,
       "lastCommit": "2025-04-01T06:18:12-07:00"
     },
     {
       "name": "MMM-pages",
-      "category": "Development / Core MagicMirror\u00b2",
+      "category": "Development / Core MagicMirror²",
       "url": "https://github.com/edward-shen/MMM-pages",
       "id": "edward-shen/MMM-pages",
       "maintainer": "edward-shen",
@@ -14391,17 +14391,17 @@
         "slides"
       ],
       "image": "example.jpg",
-      "defaultSortWeight": -5,
+      "defaultSortWeight": -4,
       "lastCommit": "2025-09-01T08:39:50+02:00"
     },
     {
       "name": "MMM-Pages-Screencast",
-      "category": "Development / Core MagicMirror\u00b2",
+      "category": "Development / Core MagicMirror²",
       "url": "https://github.com/jboucly/MMM-Pages-Screencast",
       "id": "jboucly/MMM-Pages-Screencast",
       "maintainer": "jboucly",
       "maintainerURL": "https://github.com/jboucly",
-      "description": "Interface module between <a target=\"_blank\" href=\"https://github.com/edward-shen/MMM-pages\">MMM-pages</a> and <a target=\"_blank\" href=\"https://github.com/kevinatown/MMM-Screencast\">MMM-Screencast</a>. Module to automatically change page when a video is cast on the MagicMirror\u00b2.",
+      "description": "Interface module between <a target=\"_blank\" href=\"https://github.com/edward-shen/MMM-pages\">MMM-pages</a> and <a target=\"_blank\" href=\"https://github.com/kevinatown/MMM-Screencast\">MMM-Screencast</a>. Module to automatically change page when a video is cast on the MagicMirror².",
       "issues": true,
       "stars": 7,
       "license": "MIT",
@@ -14455,7 +14455,7 @@
       "stars": 26,
       "license": "MIT",
       "image": "pictures-1.jpg",
-      "defaultSortWeight": 14,
+      "defaultSortWeight": 13,
       "lastCommit": "2021-05-18T09:35:29+02:00"
     },
     {
@@ -14579,7 +14579,7 @@
       "id": "ytmytm/MMM-pekavm",
       "maintainer": "ytmytm",
       "maintainerURL": "https://github.com/ytmytm",
-      "description": "Station monitor for tram and bus system in Pozna\u0144.",
+      "description": "Station monitor for tram and bus system in Poznań.",
       "issues": true,
       "stars": 4,
       "license": "MIT",
@@ -14588,7 +14588,7 @@
         "mpk",
         "peka",
         "wirtualny monitor",
-        "pozna\u0144",
+        "poznań",
         "public transport",
         "local transit"
       ],
@@ -14644,7 +14644,7 @@
     },
     {
       "name": "MMM-PersonalConfig-Template",
-      "category": "Development / Core MagicMirror\u00b2",
+      "category": "Development / Core MagicMirror²",
       "url": "https://github.com/CFenner/MMM-PersonalConfig-Template",
       "id": "CFenner/MMM-PersonalConfig-Template",
       "maintainer": "CFenner",
@@ -14680,7 +14680,7 @@
       "maintainer": "dathbe",
       "maintainerURL": "https://github.com/dathbe",
       "description": "Displays PGA leaderboards, tournaments, and rankings.",
-      "issues": false,
+      "issues": true,
       "stars": 1,
       "license": "MIT",
       "tags": [
@@ -14726,12 +14726,12 @@
         "phone notification",
         "notification"
       ],
-      "defaultSortWeight": 11,
+      "defaultSortWeight": 10,
       "lastCommit": "2019-07-01T11:24:28-04:00"
     },
     {
       "name": "MMM-PhoneDetect",
-      "category": "Development / Core MagicMirror\u00b2",
+      "category": "Development / Core MagicMirror²",
       "url": "https://github.com/PierreGode/MMM-PhoneDetect",
       "id": "PierreGode/MMM-PhoneDetect",
       "maintainer": "PierreGode",
@@ -14772,7 +14772,7 @@
     },
     {
       "name": "MMM-Photovoltaik",
-      "category": "Development / Core MagicMirror\u00b2",
+      "category": "Development / Core MagicMirror²",
       "url": "https://github.com/ASteinsdoerfer/MMM-Photovoltaik",
       "id": "ASteinsdoerfer/MMM-Photovoltaik",
       "maintainer": "ASteinsdoerfer",
@@ -14918,7 +14918,7 @@
       "stars": 4,
       "license": "MIT",
       "image": ".github-discon-preview.jpg",
-      "defaultSortWeight": 8,
+      "defaultSortWeight": 7,
       "lastCommit": "2025-04-01T22:13:13+02:00"
     },
     {
@@ -14937,7 +14937,7 @@
         "motion detection"
       ],
       "image": "screenshot-screenshot.jpg",
-      "defaultSortWeight": 14,
+      "defaultSortWeight": 18,
       "lastCommit": "2025-05-04T11:41:55+02:00"
     },
     {
@@ -15032,7 +15032,7 @@
       "id": "ckoutavas/MMM-PiTemp",
       "maintainer": "ckoutavas",
       "maintainerURL": "https://github.com/ckoutavas",
-      "description": "MMM-PiTemp works in conjunction with MagicMirror\u00b2 and tells you the temperature of your raspberry pi's CPU. If the temperature is ever greater than 85 degrees then the pi shuts down.",
+      "description": "MMM-PiTemp works in conjunction with MagicMirror² and tells you the temperature of your raspberry pi's CPU. If the temperature is ever greater than 85 degrees then the pi shuts down.",
       "issues": true,
       "stars": 16,
       "license": "MIT",
@@ -15081,7 +15081,7 @@
       "description": "Displays brief information (flag, weather, exchange rate) about multiple locations at once.",
       "issues": true,
       "stars": 4,
-      "defaultSortWeight": 15,
+      "defaultSortWeight": 14,
       "lastCommit": "2024-06-24T11:02:16-04:00"
     },
     {
@@ -15095,7 +15095,7 @@
       "issues": true,
       "stars": 0,
       "defaultSortWeight": 9,
-      "lastCommit": "2025-09-26T16:21:14-04:00"
+      "lastCommit": "2025-10-01T16:35:26-04:00"
     },
     {
       "name": "MMM-Planetarium",
@@ -15337,7 +15337,7 @@
       "stars": 3,
       "license": "GPL-3.0",
       "image": "screenshot.jpg",
-      "defaultSortWeight": 9,
+      "defaultSortWeight": 8,
       "lastCommit": "2019-04-25T00:57:12+02:00"
     },
     {
@@ -15529,7 +15529,7 @@
       "issues": true,
       "stars": 2,
       "license": "NOASSERTION",
-      "defaultSortWeight": 9,
+      "defaultSortWeight": 8,
       "lastCommit": "2025-08-13T13:01:47+02:00"
     },
     {
@@ -15544,7 +15544,7 @@
       "stars": 5,
       "license": "MIT",
       "image": "Screenshot-MMM-Profile.jpg",
-      "defaultSortWeight": 12,
+      "defaultSortWeight": 11,
       "lastCommit": "2019-02-18T18:19:22+01:00"
     },
     {
@@ -15564,7 +15564,7 @@
     },
     {
       "name": "MMM-ProfileControl",
-      "category": "Development / Core MagicMirror\u00b2",
+      "category": "Development / Core MagicMirror²",
       "url": "https://github.com/Tom-Hirschberger/MMM-ProfileControl",
       "id": "Tom-Hirschberger/MMM-ProfileControl",
       "maintainer": "Tom-Hirschberger",
@@ -15599,7 +15599,7 @@
     },
     {
       "name": "MMM-ProfileSwitcher",
-      "category": "Development / Core MagicMirror\u00b2",
+      "category": "Development / Core MagicMirror²",
       "url": "https://github.com/BigMac1999/MMM-ProfileSwitcher",
       "id": "BigMac1999/MMM-ProfileSwitcher",
       "maintainer": "BigMac1999",
@@ -15627,7 +15627,7 @@
         "scheduler"
       ],
       "image": ".github-example-screenshot.jpg",
-      "defaultSortWeight": 17,
+      "defaultSortWeight": 18,
       "lastCommit": "2023-11-29T14:06:10-05:00"
     },
     {
@@ -15660,7 +15660,7 @@
     },
     {
       "name": "MMM-ProxyImage",
-      "category": "Development / Core MagicMirror\u00b2",
+      "category": "Development / Core MagicMirror²",
       "url": "https://github.com/daxiang28/MMM-ProxyImage",
       "id": "daxiang28/MMM-ProxyImage",
       "maintainer": "daxiang28",
@@ -15702,7 +15702,7 @@
       "maintainer": "deg0nz",
       "maintainerURL": "https://github.com/deg0nz",
       "description": "Display departures for public transport in Berlin and Brandenburg (Covers VBB Area).",
-      "issues": true,
+      "issues": false,
       "stars": 42,
       "license": "MIT",
       "tags": [
@@ -15711,8 +15711,8 @@
         "brandenburg"
       ],
       "image": "img-MMM-PublicTransport_screenshot.jpg",
-      "defaultSortWeight": -1,
-      "lastCommit": "2025-08-12T09:52:20+02:00"
+      "defaultSortWeight": -2,
+      "lastCommit": "2025-10-01T07:02:50+02:00"
     },
     {
       "name": "MMM-PublicTransportHafas",
@@ -15761,7 +15761,7 @@
       "id": "alonsourbano/publika",
       "maintainer": "alonsourbano",
       "maintainerURL": "https://github.com/alonsourbano",
-      "description": "Display local transport for different regions of Finland (Helsinki, H\u00e4meenlinna, Joensuu, Jyv\u00e4skyl\u00e4, Kajaani, Kotka, Kouvola, Kuopio, Lahti, Lappeenranta, Mikkeli, Tampere, Oulu, Rovaniemi, Turku, Vaasa)",
+      "description": "Display local transport for different regions of Finland (Helsinki, Hämeenlinna, Joensuu, Jyväskylä, Kajaani, Kotka, Kouvola, Kuopio, Lahti, Lappeenranta, Mikkeli, Tampere, Oulu, Rovaniemi, Turku, Vaasa)",
       "issues": false,
       "outdated": "Abandoned. No reactions to issues since years. Missing instructions to install used dependency. API not working without API key anymore.",
       "stars": 6,
@@ -15777,7 +15777,7 @@
       "id": "mboskamp/MMM-Pull",
       "maintainer": "mboskamp",
       "maintainerURL": "https://github.com/mboskamp",
-      "description": "This module enables the user to pull updates for modules and/or MagicMirror\u00b2 itself via Telegram commands.",
+      "description": "This module enables the user to pull updates for modules and/or MagicMirror² itself via Telegram commands.",
       "issues": false,
       "outdated": "Abandoned. Repo has been archived at 2022-08-26.",
       "stars": 4,
@@ -15837,7 +15837,7 @@
         "notification"
       ],
       "image": "screenshots-MagicMirror.jpg",
-      "defaultSortWeight": 13,
+      "defaultSortWeight": 15,
       "lastCommit": "2020-01-02T21:32:01+01:00"
     },
     {
@@ -15991,7 +15991,7 @@
     },
     {
       "name": "MMM-RaiderIO",
-      "category": "Development / Core MagicMirror\u00b2",
+      "category": "Development / Core MagicMirror²",
       "url": "https://github.com/jwcnewton/MMM-RaiderIO",
       "id": "jwcnewton/MMM-RaiderIO",
       "maintainer": "jwcnewton",
@@ -15999,7 +15999,7 @@
       "description": "Display Raider IO score for multiple characters over any realms or regions.",
       "issues": true,
       "stars": 3,
-      "defaultSortWeight": 12,
+      "defaultSortWeight": 11,
       "lastCommit": "2021-05-31T17:56:51+01:00"
     },
     {
@@ -16085,7 +16085,7 @@
       "issues": true,
       "stars": 2,
       "license": "MIT",
-      "defaultSortWeight": 18,
+      "defaultSortWeight": 19,
       "lastCommit": "2025-06-20T15:36:12+02:00"
     },
     {
@@ -16136,7 +16136,7 @@
       ],
       "license": "ISC",
       "image": "example1.jpg",
-      "defaultSortWeight": 7,
+      "defaultSortWeight": 6,
       "lastCommit": "2025-07-18T22:44:25+02:00"
     },
     {
@@ -16174,7 +16174,7 @@
         "quran"
       ],
       "image": "screenshot.jpg",
-      "defaultSortWeight": 11,
+      "defaultSortWeight": 13,
       "lastCommit": "2022-05-17T15:12:06+07:00"
     },
     {
@@ -16273,7 +16273,7 @@
       "issues": true,
       "stars": 35,
       "license": "ISC",
-      "defaultSortWeight": 19,
+      "defaultSortWeight": 18,
       "lastCommit": "2020-06-25T17:03:18-04:00"
     },
     {
@@ -16291,7 +16291,7 @@
         "news"
       ],
       "license": "MIT",
-      "defaultSortWeight": 14,
+      "defaultSortWeight": 13,
       "lastCommit": "2025-07-02T20:01:15+02:00"
     },
     {
@@ -16361,7 +16361,7 @@
     },
     {
       "name": "MMM-RelativeTime-i18n",
-      "category": "Development / Core MagicMirror\u00b2",
+      "category": "Development / Core MagicMirror²",
       "url": "https://github.com/buxxi/MMM-RelativeTime-i18n",
       "id": "buxxi/MMM-RelativeTime-i18n",
       "maintainer": "buxxi",
@@ -16370,18 +16370,18 @@
       "issues": true,
       "stars": 1,
       "license": "MIT",
-      "defaultSortWeight": 10,
+      "defaultSortWeight": 9,
       "lastCommit": "2023-11-16T21:46:40+01:00"
     },
     {
       "name": "MMM-Remote-Control",
-      "category": "Development / Core MagicMirror\u00b2",
+      "category": "Development / Core MagicMirror²",
       "url": "https://github.com/Jopyth/MMM-Remote-Control",
       "id": "Jopyth/MMM-Remote-Control",
       "maintainer": "Jopyth",
       "maintainerURL": "https://github.com/Jopyth",
       "description": "Cleanly shutdown or reboot your mirror, install and configure modules, and turn your monitor on and off from a simple web page, i.e. from your smartphone.",
-      "issues": true,
+      "issues": false,
       "stars": 555,
       "license": "MIT",
       "tags": [
@@ -16389,8 +16389,8 @@
         "control"
       ],
       "image": "img-main_screenshot.jpg",
-      "defaultSortWeight": -26,
-      "lastCommit": "2025-09-21T20:46:25+02:00"
+      "defaultSortWeight": -27,
+      "lastCommit": "2025-10-01T20:13:28+02:00"
     },
     {
       "name": "MMM-Remote-Control-Repository",
@@ -16415,7 +16415,7 @@
       "id": "mitchelltmarino/MMM-RemoteCompliments",
       "maintainer": "mitchelltmarino",
       "maintainerURL": "https://github.com/mitchelltmarino",
-      "description": "Provides seamless integration with Google Drive\u2122 to display compliments and images from Drive.",
+      "description": "Provides seamless integration with Google Drive™ to display compliments and images from Drive.",
       "issues": true,
       "stars": 22,
       "license": "MIT",
@@ -16572,7 +16572,7 @@
         "rijksmuseum"
       ],
       "image": "scr1.jpg",
-      "defaultSortWeight": 8,
+      "defaultSortWeight": 7,
       "lastCommit": "2024-01-13T14:09:44+01:00"
     },
     {
@@ -16979,7 +16979,7 @@
       "stars": 1,
       "license": "MIT",
       "image": "screenshots-example.jpg",
-      "defaultSortWeight": 10,
+      "defaultSortWeight": 9,
       "lastCommit": "2024-02-01T21:53:19+01:00"
     },
     {
@@ -17019,7 +17019,7 @@
     },
     {
       "name": "MMM-Scenes2",
-      "category": "Development / Core MagicMirror\u00b2",
+      "category": "Development / Core MagicMirror²",
       "url": "https://github.com/MMRIZE/MMM-Scenes2",
       "id": "MMRIZE/MMM-Scenes2",
       "maintainer": "MMRIZE",
@@ -17043,7 +17043,7 @@
       "id": "SWhardfish/MMM-SchoolLunch",
       "maintainer": "SWhardfish",
       "maintainerURL": "https://github.com/SWhardfish",
-      "description": "A <a target=\"_blank\" href=\"https://magicmirror.builders/\">MagicMirror\u00b2</a> module that displays today\u2019s school lunch menu from <a target=\"_blank\" href=\"https://menu.matildaplatform.com/\">Matilda Platform</a> for schools in Sweden.",
+      "description": "A <a target=\"_blank\" href=\"https://magicmirror.builders/\">MagicMirror²</a> module that displays today’s school lunch menu from <a target=\"_blank\" href=\"https://menu.matildaplatform.com/\">Matilda Platform</a> for schools in Sweden.",
       "issues": true,
       "stars": 0,
       "license": "MIT",
@@ -17250,12 +17250,12 @@
       "stars": 8,
       "license": "MIT",
       "image": "screenshot.jpg",
-      "defaultSortWeight": 10,
+      "defaultSortWeight": 9,
       "lastCommit": "2022-09-27T20:49:46-04:00"
     },
     {
       "name": "MMM-SendNotificationButton",
-      "category": "Development / Core MagicMirror\u00b2",
+      "category": "Development / Core MagicMirror²",
       "url": "https://github.com/ralberth/MMM-SendNotificationButton",
       "id": "ralberth/MMM-SendNotificationButton",
       "maintainer": "ralberth",
@@ -17299,7 +17299,7 @@
         "thermostat"
       ],
       "image": "screenshot.jpg",
-      "defaultSortWeight": 5,
+      "defaultSortWeight": 4,
       "lastCommit": "2025-06-20T14:37:44-04:00"
     },
     {
@@ -17309,7 +17309,7 @@
       "id": "mattileh/MMM-SensorGateway",
       "maintainer": "mattileh",
       "maintainerURL": "https://github.com/mattileh",
-      "description": "This module enables having live sensor data without touching the Pi hardware by utilizing the BLE advertisment beacons from sensors and routing that live info into MagicMirror\u00b2 platform.",
+      "description": "This module enables having live sensor data without touching the Pi hardware by utilizing the BLE advertisment beacons from sensors and routing that live info into MagicMirror² platform.",
       "issues": true,
       "stars": 3,
       "license": "MIT",
@@ -17319,7 +17319,7 @@
         "iot"
       ],
       "image": "documentation-exampleui.jpg",
-      "defaultSortWeight": 14,
+      "defaultSortWeight": 13,
       "lastCommit": "2020-07-14T08:04:08+03:00"
     },
     {
@@ -17410,7 +17410,7 @@
       "stars": 5,
       "license": "ISC",
       "image": "screenshots-screenshot.jpg",
-      "defaultSortWeight": 11,
+      "defaultSortWeight": 10,
       "lastCommit": "2021-01-31T20:42:36+08:00"
     },
     {
@@ -17439,7 +17439,7 @@
       "id": "surekap/MMM-ShairportMetadata",
       "maintainer": "surekap",
       "maintainerURL": "https://github.com/surekap",
-      "description": "Integrate Apple AirTunes/Airplay metadata coming via shairport-sync into the MagicMirror\u00b2. Does not work with video or mirroring.",
+      "description": "Integrate Apple AirTunes/Airplay metadata coming via shairport-sync into the MagicMirror². Does not work with video or mirroring.",
       "issues": true,
       "stars": 20,
       "license": "MIT",
@@ -17745,7 +17745,7 @@
         "stock"
       ],
       "image": "doc-screenshot-companyname.jpg",
-      "defaultSortWeight": 15,
+      "defaultSortWeight": 16,
       "lastCommit": "2024-03-11T04:53:34+01:00"
     },
     {
@@ -17903,7 +17903,7 @@
       "stars": 1,
       "license": "MIT",
       "image": ".github-screenshot.jpg",
-      "defaultSortWeight": 13,
+      "defaultSortWeight": 12,
       "lastCommit": "2023-09-08T10:15:10-07:00"
     },
     {
@@ -17963,12 +17963,12 @@
     },
     {
       "name": "MMM-SmartTouch",
-      "category": "Development / Core MagicMirror\u00b2",
+      "category": "Development / Core MagicMirror²",
       "url": "https://github.com/EbenKouao/MMM-SmartTouch",
       "id": "EbenKouao/MMM-SmartTouch",
       "maintainer": "EbenKouao",
       "maintainerURL": "https://github.com/EbenKouao",
-      "description": "This module allows you to transform your MagicMirror\u00b2 into a touchscreen interactive experience. This includes hiding all modules (Standby Mode) and Side Menu Option to shutdown your mirror via MagicMirror\u00b2 UI.",
+      "description": "This module allows you to transform your MagicMirror² into a touchscreen interactive experience. This includes hiding all modules (Standby Mode) and Side Menu Option to shutdown your mirror via MagicMirror² UI.",
       "issues": true,
       "stars": 97,
       "license": "MIT",
@@ -18152,7 +18152,7 @@
       "id": "0lek/MMM-socialbicycles",
       "maintainer": "0lek",
       "maintainerURL": "https://github.com/0lek",
-      "description": "Station monitor for bicycle networks based on the Socialbicycles API/Infrastructure, e.g. Wavelo in Krak\u00f3w, Poland.",
+      "description": "Station monitor for bicycle networks based on the Socialbicycles API/Infrastructure, e.g. Wavelo in Kraków, Poland.",
       "issues": true,
       "stars": 0,
       "hasGithubIssues": false,
@@ -18167,12 +18167,12 @@
     },
     {
       "name": "MMM-SocketClientController",
-      "category": "Development / Core MagicMirror\u00b2",
+      "category": "Development / Core MagicMirror²",
       "url": "https://github.com/totoluto/MMM-SocketClientController",
       "id": "totoluto/MMM-SocketClientController",
       "maintainer": "totoluto",
       "maintainerURL": "https://github.com/totoluto/",
-      "description": "This module allows you to control your MagicMirror\u00b2 via an external API. It listens to the socket events which are deployed by your socket server.",
+      "description": "This module allows you to control your MagicMirror² via an external API. It listens to the socket events which are deployed by your socket server.",
       "issues": true,
       "stars": 0,
       "license": "MIT",
@@ -18356,7 +18356,7 @@
         "music"
       ],
       "image": ".github-preview.jpg",
-      "defaultSortWeight": 11,
+      "defaultSortWeight": 12,
       "lastCommit": "2024-10-28T18:26:05+01:00"
     },
     {
@@ -18456,7 +18456,7 @@
       "id": "LukasKlose/MMM-Speedway",
       "maintainer": "LukasKlose",
       "maintainerURL": "https://github.com/LukasKlose",
-      "description": "Display the tables of the Polish Speedway Leagues (PGE Ekstraliga, I. Liga \u017bu\u017clowa , II. Liga \u017bu\u017clowa).",
+      "description": "Display the tables of the Polish Speedway Leagues (PGE Ekstraliga, I. Liga Żużlowa , II. Liga Żużlowa).",
       "issues": true,
       "stars": 0,
       "defaultSortWeight": 16,
@@ -18478,7 +18478,7 @@
         "music"
       ],
       "image": "screenshots-miniature_bar.jpg",
-      "defaultSortWeight": 6,
+      "defaultSortWeight": 5,
       "lastCommit": "2025-06-06T23:19:35+02:00"
     },
     {
@@ -18556,7 +18556,7 @@
         "scheduler"
       ],
       "image": ".github-example-screenshot.jpg",
-      "defaultSortWeight": 17,
+      "defaultSortWeight": 18,
       "lastCommit": "2023-11-29T14:05:33-05:00"
     },
     {
@@ -18853,7 +18853,7 @@
       "stars": 0,
       "license": "MIT",
       "image": "Scrennshot.jpg",
-      "defaultSortWeight": 7,
+      "defaultSortWeight": 6,
       "lastCommit": "2024-09-10T10:11:43+02:00"
     },
     {
@@ -19061,7 +19061,7 @@
     },
     {
       "name": "MMM-Tabulator",
-      "category": "Development / Core MagicMirror\u00b2",
+      "category": "Development / Core MagicMirror²",
       "url": "https://github.com/E3V3A/MMM-Tabulator",
       "id": "E3V3A/MMM-Tabulator",
       "maintainer": "E3V3A",
@@ -19211,7 +19211,7 @@
       "id": "doctorfree/MMM-TelegramCommands",
       "maintainer": "doctorfree",
       "maintainerURL": "https://github.com/doctorfree",
-      "description": "Creates and manages Telegram commands to control a MagicMirror\u00b2 via the MirrorCommandLine tools. MMM-TelegramCommands requires the installation and configuration of the <a target=\"_blank\" href=\"https://github.com/MMRIZE/MMM-TelegramBot\">MMM-TelegramBot</a> module and the <a target=\"_blank\" href=\"https://gitlab.com/doctorfree/MirrorCommandLine\">MirrorCommandLine</a> suite of command line utilites for the MagicMirror\u00b2.",
+      "description": "Creates and manages Telegram commands to control a MagicMirror² via the MirrorCommandLine tools. MMM-TelegramCommands requires the installation and configuration of the <a target=\"_blank\" href=\"https://github.com/MMRIZE/MMM-TelegramBot\">MMM-TelegramBot</a> module and the <a target=\"_blank\" href=\"https://gitlab.com/doctorfree/MirrorCommandLine\">MirrorCommandLine</a> suite of command line utilites for the MagicMirror².",
       "issues": true,
       "stars": 4,
       "license": "MIT",
@@ -19238,7 +19238,7 @@
         "temperature",
         "sensor"
       ],
-      "defaultSortWeight": 15,
+      "defaultSortWeight": 14,
       "lastCommit": "2017-04-13T02:10:05+02:00"
     },
     {
@@ -19289,12 +19289,12 @@
     },
     {
       "name": "MMM-Template",
-      "category": "Development / Core MagicMirror\u00b2",
+      "category": "Development / Core MagicMirror²",
       "url": "https://github.com/Dennis-Rosenbaum/MMM-Template",
       "id": "Dennis-Rosenbaum/MMM-Template",
       "maintainer": "Dennis-Rosenbaum",
       "maintainerURL": "https://github.com/Dennis-Rosenbaum",
-      "description": "A template for creating new MagicMirror\u00b2 modules.",
+      "description": "A template for creating new MagicMirror² modules.",
       "issues": true,
       "stars": 8,
       "license": "MIT",
@@ -19322,7 +19322,7 @@
         "tessie"
       ],
       "image": "doc-screenshot.jpg",
-      "defaultSortWeight": 22,
+      "defaultSortWeight": 24,
       "lastCommit": "2024-05-07T12:45:14+01:00"
     },
     {
@@ -19337,7 +19337,7 @@
       "stars": 3,
       "license": "ISC",
       "image": "images-MMM-Tesla3.jpg",
-      "defaultSortWeight": 14,
+      "defaultSortWeight": 13,
       "lastCommit": "2025-09-04T21:26:01-04:00"
     },
     {
@@ -19417,7 +19417,7 @@
       "issues": true,
       "stars": 1,
       "license": "MIT",
-      "defaultSortWeight": 12,
+      "defaultSortWeight": 11,
       "lastCommit": "2020-02-10T13:59:01+01:00"
     },
     {
@@ -19612,7 +19612,7 @@
         "public transport"
       ],
       "image": "images-screenshot.jpg",
-      "defaultSortWeight": 8,
+      "defaultSortWeight": 7,
       "lastCommit": "2024-04-18T14:42:48+02:00"
     },
     {
@@ -19677,7 +19677,7 @@
       "stars": 4,
       "license": "MIT",
       "image": "screenshots-route.jpg",
-      "defaultSortWeight": 9,
+      "defaultSortWeight": 8,
       "lastCommit": "2025-01-07T11:31:31+01:00"
     },
     {
@@ -19758,7 +19758,7 @@
       ],
       "image": "examples-ShellyPlugs-shellies.jpg",
       "defaultSortWeight": 5,
-      "lastCommit": "2025-08-06T22:04:58+02:00"
+      "lastCommit": "2025-08-08T11:17:19-05:00"
     },
     {
       "name": "MMM-Toulouse-Transports",
@@ -19856,7 +19856,7 @@
       "stars": 2,
       "license": "MIT",
       "image": "screenshot.jpg",
-      "defaultSortWeight": 16,
+      "defaultSortWeight": 15,
       "lastCommit": "2019-02-07T10:43:09+01:00"
     },
     {
@@ -20154,7 +20154,7 @@
       "issues": true,
       "stars": 9,
       "license": "MIT",
-      "defaultSortWeight": 14,
+      "defaultSortWeight": 13,
       "lastCommit": "2017-01-30T16:55:39-05:00"
     },
     {
@@ -20277,7 +20277,7 @@
         "trains"
       ],
       "image": "images-Current_version.jpg",
-      "defaultSortWeight": 16,
+      "defaultSortWeight": 18,
       "lastCommit": "2025-03-01T20:54:53Z"
     },
     {
@@ -20341,7 +20341,7 @@
         "monitoring"
       ],
       "image": "example.jpg",
-      "defaultSortWeight": 12,
+      "defaultSortWeight": 11,
       "lastCommit": "2025-09-06T23:52:02+01:00"
     },
     {
@@ -20539,16 +20539,16 @@
       "id": "Xkhi/MMM-Vasttrafik-PublicTransport",
       "maintainer": "Xkhi",
       "maintainerURL": "https://github.com/Xkhi",
-      "description": "Display public transport operated by V\u00e4sttrafik for western part of Sweden, including Gothenburg. This version is updated to support multi-filtering and Vasttrafik's API version 4.",
+      "description": "Display public transport operated by Västtrafik for western part of Sweden, including Gothenburg. This version is updated to support multi-filtering and Vasttrafik's API version 4.",
       "issues": true,
       "stars": 1,
       "tags": [
         "public transport",
-        "v\u00e4sttrafik"
+        "västtrafik"
       ],
       "license": "MIT",
       "image": "docs-screenshot.jpg",
-      "defaultSortWeight": 12,
+      "defaultSortWeight": 11,
       "lastCommit": "2024-10-03T08:11:32+02:00"
     },
     {
@@ -20567,7 +20567,7 @@
         "module\""
       ],
       "license": "MIT",
-      "defaultSortWeight": 14,
+      "defaultSortWeight": 13,
       "lastCommit": "2021-02-03T18:20:55+01:00"
     },
     {
@@ -20641,7 +20641,7 @@
     },
     {
       "name": "MMM-ViewNotifications",
-      "category": "Development / Core MagicMirror\u00b2",
+      "category": "Development / Core MagicMirror²",
       "url": "https://github.com/glitch452/MMM-ViewNotifications",
       "id": "glitch452/MMM-ViewNotifications",
       "maintainer": "glitch452",
@@ -20666,7 +20666,7 @@
       "stars": 2,
       "license": "MIT",
       "image": "MMM-VigiCrues_screenshot1.jpg",
-      "defaultSortWeight": 11,
+      "defaultSortWeight": 10,
       "lastCommit": "2022-06-26T21:42:46+02:00"
     },
     {
@@ -20683,7 +20683,7 @@
       "tags": [
         "vigilance",
         "weather phenomena",
-        "m\u00e9t\u00e9o france",
+        "météo france",
         "france",
         "risks",
         "storm",
@@ -20708,7 +20708,7 @@
       "hasGithubIssues": false,
       "license": "MIT",
       "image": "images-MMM-Vindsiden.jpg",
-      "defaultSortWeight": 14,
+      "defaultSortWeight": 13,
       "lastCommit": "2016-11-05T17:09:09+01:00"
     },
     {
@@ -20718,7 +20718,7 @@
       "id": "fewieden/MMM-VocabularyTrainer",
       "maintainer": "fewieden",
       "maintainerURL": "https://github.com/fewieden",
-      "description": "Learn new languages on your MagicMirror\u00b2.",
+      "description": "Learn new languages on your MagicMirror².",
       "issues": true,
       "stars": 5,
       "license": "MIT",
@@ -20758,7 +20758,7 @@
       "issues": true,
       "stars": 18,
       "license": "ISC",
-      "defaultSortWeight": 15,
+      "defaultSortWeight": 14,
       "lastCommit": "2019-03-05T22:24:16-05:00"
     },
     {
@@ -20799,7 +20799,7 @@
       "id": "Anonym-tsk/MMM-Volume",
       "maintainer": "Anonym-tsk",
       "maintainerURL": "https://github.com/Anonym-tsk",
-      "description": "Control volume of MagicMirror\u00b2.",
+      "description": "Control volume of MagicMirror².",
       "issues": true,
       "stars": 17,
       "license": "MIT",
@@ -20927,7 +20927,7 @@
       "id": "mvlbarcelos/WallberryTheme",
       "maintainer": "mvlbarcelos",
       "maintainerURL": "https://github.com/mvlbarcelos",
-      "description": "Re-themes MagicMirror\u00b2 to look like a beautiful digital photo wall display. It adds a new font, styles, redesigned clock and weather displays, and rotating background image pulled from unsplash.com.",
+      "description": "Re-themes MagicMirror² to look like a beautiful digital photo wall display. It adds a new font, styles, redesigned clock and weather displays, and rotating background image pulled from unsplash.com.",
       "issues": true,
       "stars": 1,
       "hasGithubIssues": false,
@@ -20971,13 +20971,13 @@
       "id": "mercredo/MMM-WasteCollectionWuerzburg",
       "maintainer": "mercredo",
       "maintainerURL": "https://github.com/mercredo",
-      "description": "Keep track of W\u00fcrzburg (and surrounding areas) waste collection dates so you know when to put your garbage out.",
+      "description": "Keep track of Würzburg (and surrounding areas) waste collection dates so you know when to put your garbage out.",
       "issues": true,
       "stars": 2,
       "license": "MIT",
       "tags": [
         "wuerzburg",
-        "w\u00fcrzburg",
+        "würzburg",
         "disposal",
         "waste",
         "garbage",
@@ -21093,7 +21093,7 @@
         "openweathermap"
       ],
       "image": "images-MMM-WeatherAlerts-default_example.jpg",
-      "defaultSortWeight": 11,
+      "defaultSortWeight": 10,
       "lastCommit": "2024-05-06T18:53:28-04:00"
     },
     {
@@ -21301,8 +21301,8 @@
         "webuntis"
       ],
       "image": "screenshot.jpg",
-      "defaultSortWeight": 7,
-      "lastCommit": "2025-01-24T19:18:12+01:00"
+      "defaultSortWeight": 2,
+      "lastCommit": "2025-10-01T17:43:51Z"
     },
     {
       "name": "MMM-WebView",
@@ -21336,7 +21336,7 @@
         "vw"
       ],
       "image": "git-normal_screenshot.jpg",
-      "defaultSortWeight": 5,
+      "defaultSortWeight": 4,
       "lastCommit": "2025-01-29T13:02:15+01:00"
     },
     {
@@ -21452,7 +21452,7 @@
         "presence"
       ],
       "image": "whoshome.jpg",
-      "defaultSortWeight": 5,
+      "defaultSortWeight": 4,
       "lastCommit": "2024-10-07T08:34:44+03:00"
     },
     {
@@ -21485,7 +21485,7 @@
         "vienna",
         "wien",
         "public transport",
-        "\u00f6pnv"
+        "öpnv"
       ],
       "image": ".github-example.jpg",
       "defaultSortWeight": 14,
@@ -21553,7 +21553,7 @@
         "washington dc"
       ],
       "image": "MMM-WMATA-screenshot.jpg",
-      "defaultSortWeight": 6,
+      "defaultSortWeight": 8,
       "lastCommit": "2024-11-29T00:37:44+01:00"
     },
     {
@@ -21698,7 +21698,7 @@
         "rgb",
         "neopixels"
       ],
-      "defaultSortWeight": 9,
+      "defaultSortWeight": 8,
       "lastCommit": "2024-10-15T20:36:15+02:00"
     },
     {
@@ -21819,7 +21819,7 @@
       "stars": 0,
       "license": "MIT",
       "image": "image.jpg",
-      "defaultSortWeight": 10,
+      "defaultSortWeight": 9,
       "lastCommit": "2025-08-31T15:14:40-07:00"
     },
     {
@@ -21884,10 +21884,10 @@
       "id": "jdonge/MMM-yijv",
       "maintainer": "jdonge",
       "maintainerURL": "https://github.com/jdonge",
-      "description": "Instead of default compliments with classical poems, just supports Chinese. \u968f\u673a\u4ea7\u751f\u4e00\u53e5\u53e4\u8bd7\u8bcd\u3002.",
+      "description": "Instead of default compliments with classical poems, just supports Chinese. 随机产生一句古诗词。.",
       "issues": true,
       "stars": 3,
-      "defaultSortWeight": 13,
+      "defaultSortWeight": 12,
       "lastCommit": "2020-04-11T16:03:58+08:00"
     },
     {
@@ -21915,7 +21915,7 @@
       "description": "Integrate with YoLink Sensors.",
       "issues": true,
       "stars": 0,
-      "defaultSortWeight": 11,
+      "defaultSortWeight": 10,
       "lastCommit": "2025-08-04T20:00:37-03:00"
     },
     {
@@ -21943,7 +21943,7 @@
       "id": "eckonator/MMM-YouLess2",
       "maintainer": "eckonator",
       "maintainerURL": "https://github.com/eckonator",
-      "description": "This module reads from a YouLess energy meter in your network to display a gauge of realtime energy usage information. It\u00b4s a optimized fork from QNimbus first module.",
+      "description": "This module reads from a YouLess energy meter in your network to display a gauge of realtime energy usage information. It´s a optimized fork from QNimbus first module.",
       "issues": true,
       "stars": 3,
       "license": "MIT",
@@ -22012,7 +22012,7 @@
       "id": "Yr/MMM-YrNow",
       "maintainer": "Yr",
       "maintainerURL": "https://github.com/Yr",
-      "description": "The official Yr Nowcast module for MagicMirror\u00b2, which displays data from <a target=\"_blank\" href=\"https://www.yr.no\">Yr</a>. Nowcast data is only available for some Norwegian locations covered by the Norwegian weather radars. Yr is a weather service from the Norwegian Broadcasting Corporation and the Norwegian Meteorological Institute.",
+      "description": "The official Yr Nowcast module for MagicMirror², which displays data from <a target=\"_blank\" href=\"https://www.yr.no\">Yr</a>. Nowcast data is only available for some Norwegian locations covered by the Norwegian weather radars. Yr is a weather service from the Norwegian Broadcasting Corporation and the Norwegian Meteorological Institute.",
       "issues": true,
       "stars": 23,
       "defaultSortWeight": 14,
@@ -22044,7 +22044,7 @@
       "stars": 4,
       "license": "MIT",
       "image": "img-preshow.jpg",
-      "defaultSortWeight": 16,
+      "defaultSortWeight": 15,
       "lastCommit": "2024-04-13T18:14:48+02:00"
     },
     {
