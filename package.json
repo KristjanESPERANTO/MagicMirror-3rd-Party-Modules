@@ -46,7 +46,7 @@
     "lint:fix": "eslint --fix && prettier . --write .",
     "prepare": "husky",
     "test": "node --run lint && node --run test:unit && node --run test:spelling",
-    "test:unit": "node --test scripts/shared/__tests__/**/*.test.js",
+    "test:unit": "node --test scripts/shared/__tests__/**/*.test.js && node --test scripts/check-modules/compare/__tests__/**/*.test.js",
     "test:spelling": "cspell .",
     "leaveMenu": "echo 'Leaving menu...'"
   },

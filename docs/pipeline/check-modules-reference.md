@@ -151,10 +151,10 @@ The comparison harness lives under `scripts/check-modules/compare/` and is exerc
 - Uses shared logging utilities; artifacts are collated under the run directory with a `plan.json` descriptor.
 - Snapshot-based tests guard the harness itself.
 
-### Open follow-ups
+### Recent updates & open follow-ups
 
-- Add README/HTML artifact comparisons to the diff output.
-- Define thresholds that downgrade certain differences to warnings instead of hard failures.
+- ✅ README/HTML artifact comparisons now surface alongside the JSON diffs (Oct 2025).
+- ✅ Warning thresholds downgrade small stat deltas to non-blocking warnings (Oct 2025).
 - Consider partial rule subsets to speed up ad-hoc debugging runs.
 - Explore storing golden artifacts now that the Python fallback has been retired.
 

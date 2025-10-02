@@ -95,9 +95,8 @@ Routine reminders for keeping the written guidance in sync with the code:
 
 Immediate action items:
 
-1. Expand the comparison harness diff coverage (README/HTML, stats thresholds) per the fixture plan follow-ups.
-2. Prioritize P4.x registry metadata work now that parity is secured (define categories/severities for existing checks).
-3. Decide on the long-term diff strategy (e.g. golden artifacts) now that the Python fallback is gone.
+1. Prioritize P4.x registry metadata work now that parity is secured (define categories/severities for existing checks).
+2. Decide on the long-term diff strategy (e.g. golden artifacts) now that the Python fallback is gone.
 
 ---
 

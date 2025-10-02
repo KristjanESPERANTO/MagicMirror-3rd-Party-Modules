@@ -20,9 +20,41 @@ const MAX_BUFFER_BYTES = 20 * 1024 * 1024;
 const {access, copyFile, mkdir, writeFile} = fsPromises;
 const execAsync = promisify(exec);
 const PIPELINE_ARTIFACTS = [
-  {id: "modules.stage.5.json", path: "fixtures/data/modules.stage.5.json"},
-  {id: "modules.json", path: "fixtures/data/modules.json"},
-  {id: "stats.json", path: "fixtures/data/stats.json"}
+  {
+    id: "modules.stage.5.json",
+    paths: [
+      "fixtures/data/modules.stage.5.json",
+      "website/data/modules.stage.5.json"
+    ]
+  },
+  {
+    id: "modules.json",
+    paths: [
+      "fixtures/data/modules.json",
+      "website/data/modules.json"
+    ]
+  },
+  {
+    id: "stats.json",
+    paths: [
+      "fixtures/data/stats.json",
+      "website/data/stats.json"
+    ]
+  },
+  {
+    id: "result.md",
+    paths: [
+      "fixtures/data/result.md",
+      "website/result.md"
+    ]
+  },
+  {
+    id: "result.html",
+    paths: [
+      "fixtures/data/result.html",
+      "website/result.html"
+    ]
+  }
 ];
 
 function resolvePath (candidate, fallback) {
@@ -117,22 +149,43 @@ async function copyPipelineArtifacts (stepDir, artifacts) {
   const missing = [];
 
   for (const artifact of artifacts) {
-    const source = path.join(PROJECT_ROOT, artifact.path);
+    const candidatePaths = (Array.isArray(artifact.paths)
+      ? artifact.paths
+      : [artifact.path]).filter((entry) => typeof entry === "string" && entry.length > 0);
     const target = path.join(artifactDir, artifact.id);
-    try {
-      await copyFile(source, target);
-      captured.push({
-        id: artifact.id,
-        source: artifact.path,
-        relativePath: path.relative(stepDir, target)
-      });
-    } catch (error) {
-      const message = error instanceof Error ? error.message : String(error);
+
+    let copied = false;
+    let lastError = null;
+    let selectedSource = null;
+
+    for (const candidate of candidatePaths) {
+      const absoluteSource = path.join(PROJECT_ROOT, candidate);
+
+      try {
+        await copyFile(absoluteSource, target);
+        captured.push({
+          id: artifact.id,
+          source: candidate,
+          relativePath: path.relative(stepDir, target)
+        });
+        copied = true;
+        selectedSource = candidate;
+        break;
+      } catch (error) {
+        lastError = error;
+      }
+    }
+
+    if (!copied) {
+      const message = lastError instanceof Error ? lastError.message : String(lastError ?? "Unknown error");
       missing.push({
         id: artifact.id,
-        source: artifact.path,
+        sources: candidatePaths,
         error: message
       });
+    } else if (candidatePaths.length > 1 && selectedSource) {
+      // When multiple candidates were provided, note the resolved origin in stdout for traceability.
+      console.log(`[compare] Captured ${artifact.id} from ${selectedSource}`);
     }
   }
 
