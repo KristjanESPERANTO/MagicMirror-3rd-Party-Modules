@@ -559,22 +559,10 @@ async function main() {
     await processModules();
   } catch (error) {
     const message = error instanceof Error ? error.message : String(error);
-    const stack = error instanceof Error ? error.stack : undefined;
     logger.error("Stage 'get-modules' failed");
     logger.error(message);
-    if (stack) {
-      logger.error(stack);
-    }
     process.exit(1);
   }
 }
 
-(async () => {
-  try {
-    await main();
-  } catch (error) {
-    console.error("Fatal error in get-modules IIFE:");
-    console.error(error);
-    process.exit(1);
-  }
-})();
+await main();
