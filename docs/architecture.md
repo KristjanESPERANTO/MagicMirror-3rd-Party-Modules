@@ -46,6 +46,7 @@ flowchart LR
 - Stage contracts are codified via the bundled schemas stored under `dist/schemas/` (sources live in `pipeline/schemas/src/`).
 - Cross-cutting utilities (HTTP, Git, filesystem, rate limiting) now live in `scripts/shared/` and are reused by every TypeScript stage, including the deep-analysis step.
 - The orchestrator CLI runs the declarative stage graph and supports `--only/--skip`, retries, and shared logging.
+- The comparison harness (`scripts/check-modules/compare/`) captures README/HTML alongside JSON outputs and applies warning thresholds before highlighting differences between the legacy and TypeScript runs.
 
 ### Legacy workflow snapshot (pre-September 2025)
 
@@ -105,6 +106,6 @@ flowchart LR
 
 ## How this document stays fresh
 
-- Update the diagrams whenever the stage graph (`pipeline/stage-graph.json`) changes.
-- Add timing metrics and optional branches once structured logging (task **P3.3**) lands.
-- When the TypeScript orchestrator ships, replace the “Target state” diagram with the actual implementation details and mark the roadmap tasks as complete.
+- Update the diagrams whenever the stage graph (`pipeline/stage-graph.json`) or comparison harness outputs change.
+- Fold in structured logging timelines, diff gating, and other resiliency milestones (tasks **P3.3** and beyond) as they land.
+- Cross-link to companion docs (`pipeline/check-modules-reference.md`, `pipeline-refactor-roadmap.md`) whenever new guardrails or fixtures ship, so contributors can trace updates end to end.

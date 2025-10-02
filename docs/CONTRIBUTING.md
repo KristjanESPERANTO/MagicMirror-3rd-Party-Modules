@@ -12,21 +12,27 @@ npm install
 
 You can run each stage individually or rely on the helper commands registered in `package.json`:
 
-| Command                           | Purpose                                                                         |
-| --------------------------------- | ------------------------------------------------------------------------------- |
-| `node --run createModuleList`     | Stage 1 – derive the baseline list from the wiki.                               |
-| `node --run updateRepositoryData` | Stage 2 – enrich the list with repository metadata (stars, topics, etc.).       |
-| `node --run getModules`           | Stage 3 – clone the repos locally for deeper inspection.                        |
-| `node --run expandModuleList`     | Stage 4 – parse `package.json`, pick screenshots, and compute derived metadata. |
-| `node --run checkModulesJs`       | Stage 5a – JavaScript checks against the cloned repositories.                   |
-| `node --run checkModules`         | Stage 5b – Deep TypeScript checks to surface README and packaging issues.       |
-| `node --run all`                  | Convenience wrapper that executes the full chain in order.                      |
+| Stage | Command                           | Purpose                                                                         |
+| ----- | --------------------------------- | ------------------------------------------------------------------------------- |
+| 1     | `node --run createModuleList`     | Derive the baseline list from the wiki.                                         |
+| 2     | `node --run updateRepositoryData` | Enrich the list with repository metadata (stars, topics, etc.).                 |
+| 3     | `node --run getModules`           | Clone the repositories locally for deeper inspection.                           |
+| 4     | `node --run expandModuleList`     | Parse `package.json`, pick screenshots, and compute derived metadata.           |
+| 5     | `node --run checkModulesJs`       | Run the JavaScript-based checks against the cloned repositories.                |
+| 6     | `node --run checkModules`         | Run the deep TypeScript analysis that emits README/package insights and stats.  |
+| —     | `node --run all`                  | Convenience wrapper that executes the full chain in order via the orchestrator. |
 
-Heavy stages (`getModules`, `checkModules`) download hundreds of repositories and can take more than 10 minutes. When iterating on faster tasks (Stage 1–2, Stage 4), feel free to skip the expensive steps.
+Heavy stages (`getModules`, `checkModules`) download hundreds of repositories and can take more than 10 minutes. When iterating on faster tasks (Stages 1–2 or 4), feel free to skip the expensive steps or rely on `--only` to target specific stages.
 
 ### Orchestrator CLI for partial runs
 
-The new orchestrator CLI bundles the stage graph, structured logging, and DX helpers like `list`, `describe`, `logs`, and `doctor`. It lets you target subsets of stages (`--only=checks`) or inspect pipeline status without running everything. Check the [orchestrator CLI reference](pipeline/orchestrator-cli-reference.md) for usage examples, command options, and troubleshooting tips.
+The orchestrator CLI (`node --run pipeline` or `node scripts/orchestrator/index.js`) bundles the stage graph, structured logging, and DX helpers like `list`, `describe`, `logs`, and `doctor`. Use it to:
+
+- Execute the full pipeline with `node scripts/orchestrator/index.js run full-refresh`.
+- Target subsets of stages (for example, `node scripts/orchestrator/index.js run --only=check-modules`).
+- Inspect the available stages with `list`/`describe` or review artifacts via `logs`.
+
+Check the [orchestrator CLI reference](pipeline/orchestrator-cli-reference.md) for detailed usage examples, command options, and troubleshooting tips.
 
 ### Stage details
 
@@ -46,11 +52,11 @@ Clones every repository locally. Expect long runtimes (>10 minutes) and signifi
 
 Scans each cloned repository to extract data from `package.json`, collect screenshots, and compute derived metadata. Images only appear in the website if the module declares a compatible license.
 
-#### Stage 5a – `check_modules_js.js`
+#### Stage 5 – `check_modules_js.js`
 
 Runs JavaScript-based checks (naming conventions, minified files, etc.) against the cloned repositories to surface quick wins for maintainers.
 
-#### Stage 5b – `check-modules/index.ts`
+#### Stage 6 – `check-modules/index.ts`
 
 Runs the deep repository analysis in TypeScript, parsing README files, inspecting packaging hygiene, shelling out to ESLint/`npm-check-updates`, and producing the markdown summary alongside `modules.json`, `modules.min.json`, and `stats.json`.
 
@@ -148,6 +154,16 @@ npm run test:unit
 ```
 
 These tests verify core functionality like logging, rate limiting, and HTTP client behavior. When adding new utilities or modifying existing ones, update the tests in `scripts/shared/__tests__/`.
+
+### Comparison harness
+
+Run the comparison harness when you need to diff the curated fixtures across two implementations:
+
+```bash
+npm run checkModules:compare
+```
+
+By default the command executes the TypeScript pipeline once; pass `--legacy "<command>"` to compare an alternate runner. The harness captures JSON, Markdown, and HTML artifacts, applies warning thresholds for small stat deltas, and writes the reports to `.pipeline-runs/compare/<run-id>/`.
 
 ### Linting and formatting
 
