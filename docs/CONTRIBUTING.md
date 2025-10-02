@@ -131,6 +131,43 @@ docker run --rm -p 8080:8080 ghcr.io/magicmirrororg/magicmirror-3rd-party-module
 
 Then open <http://localhost:8080> in a browser.
 
+## Testing
+
+Run all tests with:
+
+```bash
+npm test
+```
+
+### Unit tests
+
+The shared utilities in `scripts/shared/` have unit tests using Node.js's built-in test runner. Run them with:
+
+```bash
+npm run test:unit
+```
+
+These tests verify core functionality like logging, rate limiting, and HTTP client behavior. When adding new utilities or modifying existing ones, update the tests in `scripts/shared/__tests__/`.
+
+### Linting and formatting
+
+The project enforces code quality through ESLint and Prettier:
+
+```bash
+npm run lint        # Check all files
+npm run lint:fix    # Auto-fix issues
+```
+
+TypeScript files are now included in ESLint checks via `typescript-eslint` v8+. The configuration is in `eslint.config.js` using the modern flat config format.
+
+### Spelling
+
+Spelling is checked with `cspell`:
+
+```bash
+npm run test:spelling
+```
+
 ## Helpful references
 
 - [`docs/pipeline-refactor-roadmap.md`](pipeline-refactor-roadmap.md) – modernization milestones and upcoming tasks.

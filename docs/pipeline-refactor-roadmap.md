@@ -29,7 +29,7 @@ This document captures the long-term improvements we want to implement in the mo
 | P2.1 | Extract shared utilities (HTTP, Git, FS, logging, rate-limiter) into a reusable Node/TS module ✅ Completed Sep 2025                                                           | none         | M      |
 | P2.2 | Port `get_modules.py` to TypeScript, reusing the shared utilities ✅ Completed Sep 2025 (Python fallback removed)                                                              | P2.1         | L      |
 | P2.3 | Port `check_modules.py` logic incrementally (start with fast checks, then optional heavy tasks) ✅ Completed Oct 2025 (TS stage now fully TypeScript; Python fallback removed) | P2.1         | XL     |
-| P2.4 | Extend ESLint config to cover TypeScript files (via `typescript-eslint` v8+) and add unit tests for shared utilities                                                           | P2.1         | M      |
+| P2.4 | Extend ESLint config to cover TypeScript files (via `typescript-eslint` v8+) and add unit tests for shared utilities ✅ Completed Oct 2025                                     | P2.1         | M      |
 | P2.5 | Centralize `package.json` ingestion so data is parsed once and shared across stages                                                                                            | P2.1         | M      |
 
 ### 3. Robustness & Performance Safety Nets
@@ -95,10 +95,9 @@ Routine reminders for keeping the written guidance in sync with the code:
 
 Immediate action items:
 
-1. Kick off P2.4: land TypeScript build/lint tooling across the new stages and wire them into CI.
-2. Expand the comparison harness diff coverage (README/HTML, stats thresholds) per the fixture plan follow-ups.
-3. Prioritize P4.x registry metadata work now that parity is secured (define categories/severities for existing checks).
-4. Decide on the long-term diff strategy (e.g. golden artifacts) now that the Python fallback is gone.
+1. Expand the comparison harness diff coverage (README/HTML, stats thresholds) per the fixture plan follow-ups.
+2. Prioritize P4.x registry metadata work now that parity is secured (define categories/severities for existing checks).
+3. Decide on the long-term diff strategy (e.g. golden artifacts) now that the Python fallback is gone.
 
 ---
 
