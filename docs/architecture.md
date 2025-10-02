@@ -22,12 +22,12 @@ The production pipeline is orchestrated via `node scripts/orchestrator/index.js 
 ```mermaid
 flowchart LR
   orchestrator[["Node orchestrator CLI (stage-graph.json)"]]
-  orchestrator --> create{{"Create module list - Node.js"}}
-  orchestrator --> update{{"Update repository metadata - Node.js"}}
-  orchestrator --> fetch{{"Fetch module repos - TypeScript"}}
-  orchestrator --> enrich{{"Enrich with package metadata - Node.js"}}
-  orchestrator --> checkjs{{"Static checks - Node.js"}}
-  orchestrator --> checkts{{"Deep analysis - TypeScript"}}
+  orchestrator --> create{{"Create module list<br>Node.js"}}
+  orchestrator --> update{{"Update repository metadata<br>Node.js"}}
+  orchestrator --> fetch{{"Fetch module repos<br>TypeScript"}}
+  orchestrator --> enrich{{"Enrich with package metadata<br>Node.js"}}
+  orchestrator --> checkjs{{"Static checks<br>Node.js"}}
+  orchestrator --> checkts{{"Deep analysis<br>TypeScript"}}
 
   create --> stage1["modules.stage.1.json"]
   stage1 --> update
@@ -51,16 +51,16 @@ flowchart LR
 
 ```mermaid
 flowchart LR
-  wiki[("MagicMirror wiki table")] --> createLegacy{{"Create module list - Node.js"}}
+  wiki[("MagicMirror wiki table")] --> createLegacy{{"Create module list<br>Node.js"}}
   createLegacy --> stage1Legacy["modules.stage.1.json"]
-  stage1Legacy --> updateLegacy{{"Update repository metadata - Node.js"}}
-  updateLegacy -- "modules.stage.2.json" --> getLegacy{{"Fetch module repos - Python"}}
+  stage1Legacy --> updateLegacy{{"Update repository metadata<br>Node.js"}}
+  updateLegacy -- "modules.stage.2.json" --> getLegacy{{"Fetch module repos<br>Python"}}
   updateLegacy <-.-> cacheLegacy[("gitHubData.json")]
-  getLegacy -- "modules.stage.3.json" --> expandLegacy{{"Enrich with package metadata - Node.js"}}
+  getLegacy -- "modules.stage.3.json" --> expandLegacy{{"Enrich with package metadata<br>Node.js"}}
   getLegacy --> clonesLegacy[("modules/, modules_temp/")]
-  expandLegacy -- "modules.stage.4.json" --> checkjsLegacy{{"Static checks - Node.js"}}
+  expandLegacy -- "modules.stage.4.json" --> checkjsLegacy{{"Static checks<br>Node.js"}}
   expandLegacy --> imagesLegacy[("website/images/")]
-  checkjsLegacy -- "modules.stage.5.json" --> checkLegacy{{"Deep analysis - Python"}}
+  checkjsLegacy -- "modules.stage.5.json" --> checkLegacy{{"Deep analysis<br>Python"}}
   checkLegacy --> outputsLegacy[("modules.json, modules.min.json, stats.json, result.md")]
 ```
 
@@ -74,14 +74,14 @@ The roadmap contemplates a TypeScript-first pipeline driven by a declarative sta
 
 ```mermaid
 flowchart LR
-  orchestrator[[Node orchestrator CLI - reads stage-graph.json]]
-  orchestrator --> createTS{{Create module list - TypeScript}}
-  orchestrator --> repoDataTS{{Update repository data - TypeScript}}
-  orchestrator --> fetchTS{{Fetch module repos - TypeScript w/ Git helper}}
-  orchestrator --> enrichTS{{Enrich manifests - TypeScript}}
-  orchestrator --> checksJS{{Rule registry - TypeScript}}
-  orchestrator --> publishTS{{Publish & report - TypeScript}}
-  subgraph Shared services  - P2.1
+  orchestrator[[Node orchestrator CLI<br>reads stage-graph.json]]
+  orchestrator --> createTS{{Create module list<br>TypeScript}}
+  orchestrator --> repoDataTS{{Update repository data<br>TypeScript}}
+  orchestrator --> fetchTS{{Fetch module repos<br>TypeScript w/ Git helper}}
+  orchestrator --> enrichTS{{Enrich manifests<br>TypeScript}}
+  orchestrator --> checksJS{{Rule registry<br>TypeScript}}
+  orchestrator --> publishTS{{Publish & report<br>TypeScript}}
+  subgraph Shared services
     http[(HTTP client)]
     git[(Git wrapper)]
     fs[(FS + cache)]
@@ -93,7 +93,7 @@ flowchart LR
   repoDataTS -.uses.-> http
   publishTS -.uses.-> schema
   enrichTS -.uses.-> fs
-  publishTS -.produces.-> public[(modules.json, stats.json, website/)]
+  publishTS -.produces.-> public[(modules.json,<br>stats.json,<br>website/)]
 ```
 
 ### Advantages we unlock
