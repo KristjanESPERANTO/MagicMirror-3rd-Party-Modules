@@ -177,7 +177,7 @@ const TEXT_RULES = [
     description: "Replace it with `²`."
   },
   {
-    pattern: 'require("request")',
+    pattern: "require(\"request\")",
     category: "Deprecated",
     description:
       "Replace it with built-in fetch ([documentation](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch); [example module with fetch implemented](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/node_helper.js))."
@@ -189,7 +189,7 @@ const TEXT_RULES = [
       "Replace it with built-in fetch ([documentation](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch); [example module with fetch implemented](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/node_helper.js))."
   },
   {
-    pattern: 'require("request-promise")',
+    pattern: "require(\"request-promise\")",
     category: "Deprecated",
     description:
       "Replace it with built-in fetch ([documentation](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch); [example module with fetch implemented](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/node_helper.js))."
@@ -201,15 +201,15 @@ const TEXT_RULES = [
       "Replace it with built-in fetch ([documentation](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch); [example module with fetch implemented](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/node_helper.js))."
   },
   {
-    pattern: 'require("native-request")',
+    pattern: "require(\"native-request\")",
     category: "Deprecated",
     description:
       "Replace it with built-in fetch ([documentation](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch); [example module with fetch implemented](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/node_helper.js))."
   },
   {
-    pattern: 'require("http")',
+    pattern: "require(\"http\")",
     category: "Recommendation",
-    description: 'Replace "http" by "node:http".'
+    description: "Replace \"http\" by \"node:http\"."
   },
   {
     pattern: "require('http')",
@@ -217,9 +217,9 @@ const TEXT_RULES = [
     description: "Replace 'http' by 'node:http'."
   },
   {
-    pattern: 'require("https")',
+    pattern: "require(\"https\")",
     category: "Recommendation",
-    description: 'Replace "https" by "node:https".'
+    description: "Replace \"https\" by \"node:https\"."
   },
   {
     pattern: "require('https')",
@@ -233,13 +233,13 @@ const TEXT_RULES = [
       "Replace it with built-in fetch ([documentation](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch); [example module with fetch implemented](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/node_helper.js))."
   },
   {
-    pattern: '"node-fetch"',
+    pattern: "\"node-fetch\"",
     category: "Recommendation",
     description:
       "Replace it with built-in fetch ([documentation](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch); [example module with fetch implemented](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/node_helper.js))."
   },
   {
-    pattern: 'require("fetch")',
+    pattern: "require(\"fetch\")",
     category: "Recommendation",
     description:
       "Replace it with built-in fetch ([documentation](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch); [example module with fetch implemented](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/node_helper.js))."
@@ -326,7 +326,7 @@ const TEXT_RULES = [
   {
     pattern: "jshint",
     category: "Recommendation",
-    description: 'Replace "jshint" by "eslint".'
+    description: "Replace \"jshint\" by \"eslint\"."
   },
   {
     pattern: "getYear()",
@@ -388,7 +388,7 @@ const TEXT_RULES = [
 
 const PACKAGE_JSON_RULES = [
   {
-    pattern: '"electron-rebuild"',
+    pattern: "\"electron-rebuild\"",
     category: "Deprecated",
     description: "Replace it with `@electron/rebuild`"
   },
@@ -398,7 +398,7 @@ const PACKAGE_JSON_RULES = [
     description: "Replace it with modern ESLint configuration."
   },
   {
-    pattern: '"eslint-plugin-json"',
+    pattern: "\"eslint-plugin-json\"",
     category: "Recommendation",
     description: "Replace it by `@eslint/json`."
   },
@@ -408,7 +408,7 @@ const PACKAGE_JSON_RULES = [
     description: "Replace it by `@eslint/json`."
   },
   {
-    pattern: '"grunt"',
+    pattern: "\"grunt\"",
     category: "Deprecated",
     description:
       "Grunt is practically unmaintained. Move on to something better."
@@ -419,7 +419,7 @@ const PACKAGE_JSON_RULES = [
     description: "Since husky v9 you may not need this anymore."
   },
   {
-    pattern: '"needle"',
+    pattern: "\"needle\"",
     category: "Recommendation",
     description:
       "Replace it with built-in fetch ([documentation](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch); [example module with fetch implemented](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/node_helper.js))."
@@ -438,12 +438,12 @@ const PACKAGE_JSON_RULES = [
 
 const PACKAGE_LOCK_RULES = [
   {
-    pattern: '"lockfileVersion": 1',
+    pattern: "\"lockfileVersion\": 1",
     category: "Deprecated",
     description: "Run `npm update` to update to lockfileVersion 3."
   },
   {
-    pattern: '"lockfileVersion": 2',
+    pattern: "\"lockfileVersion\": 2",
     category: "Deprecated",
     description: "Run `npm update` to update to lockfileVersion 3."
   }
@@ -653,7 +653,7 @@ async function runEslintCheck(moduleDir) {
           }
         }
         return issues;
-      } catch (parseError) {
+      } catch (_parseError) {
         logger.warn(
           `ESLint check failed in ${moduleDir}: ${error instanceof Error ? error.message : error}`
         );

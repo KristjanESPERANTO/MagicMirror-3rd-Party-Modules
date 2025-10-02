@@ -126,10 +126,10 @@ const logger = createLogger({ name: "get-modules" });
 const rateLimiter =
   cliOptions.urlRate && cliOptions.urlRate > 0
     ? createRateLimiter({
-        tokensPerInterval: cliOptions.urlRate,
-        intervalMs: 1000,
-        maxTokens: cliOptions.urlRate
-      })
+      tokensPerInterval: cliOptions.urlRate,
+      intervalMs: 1000,
+      maxTokens: cliOptions.urlRate
+    })
     : null;
 const httpClient = createHttpClient(rateLimiter ? { rateLimiter } : {});
 
