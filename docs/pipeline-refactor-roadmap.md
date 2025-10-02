@@ -81,7 +81,7 @@ These are the guiding habits we should keep front-of-mind while the modernizatio
 
 1. **Keep the shared context fresh**: Maintain the updated architecture diagrams so ongoing work on the orchestrator and TypeScript stages stays aligned.
 2. **Lean on the shared utilities**: Continue building new functionality on the consolidated HTTP/Git/FS/rate-limiter toolkit established in P2.1 to avoid regressions.
-3. **Keep parity guardrails active**: The [P2.3 rollout plan](pipeline/p2.3-rollout-plan.md) is complete; continue running the comparison harness to monitor the TypeScript stage while we iterate on new checks.
+3. **Keep parity guardrails active**: The [check modules reference](pipeline/check-modules-reference.md) consolidates the fixtures, rule inventory, and harness follow-ups—review it periodically while we iterate on new checks.
 4. **Add tests alongside migrations** to prevent regressions and make future refactors safer.
 
 ### Recurring documentation tasks
@@ -93,7 +93,7 @@ Routine reminders for keeping the written guidance in sync with the code:
 
 ## Next Concrete Steps
 
-Immediate actions that move the roadmap forward:
+Immediate action items:
 
 1. Kick off P2.4: land TypeScript build/lint tooling across the new stages and wire them into CI.
 2. Expand the comparison harness diff coverage (README/HTML, stats thresholds) per the fixture plan follow-ups.
