@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "2025-10-01T21:00:14.761Z",
+  "lastUpdate": "2025-10-02T15:48:38.710Z",
   "modules": [
     {
       "name": "MMM-01ZM",
@@ -255,13 +255,14 @@
     },
     {
       "name": "MMM-AlexaControl",
-      "category": "Voice Control",
+      "category": "Outdated Modules",
       "url": "https://github.com/JosefJantzen/MMM-AlexaControl",
       "id": "JosefJantzen/MMM-AlexaControl",
       "maintainer": "JosefJantzen",
       "maintainerURL": "https://github.com/JosefJantzen",
       "description": "The MMM-AlexaControl module allows you to control your Mirror with Alexa (every device that support Wemos devices). You can turn it on and off, change the page and send notifications to other modules.",
-      "issues": []
+      "issues": [],
+      "outdated": "Abandoned. No longer works. Repo has been archived at 2025-07-15."
     },
     {
       "name": "MMM-AlexaOnOff",

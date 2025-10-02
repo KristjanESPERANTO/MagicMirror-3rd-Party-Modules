@@ -421,13 +421,14 @@
     },
     {
       "name": "MMM-AlexaControl",
-      "category": "Voice Control",
+      "category": "Outdated Modules",
       "url": "https://github.com/JosefJantzen/MMM-AlexaControl",
       "id": "JosefJantzen/MMM-AlexaControl",
       "maintainer": "JosefJantzen",
       "maintainerURL": "https://github.com/JosefJantzen",
       "description": "The MMM-AlexaControl module allows you to control your Mirror with Alexa (every device that support Wemos devices). You can turn it on and off, change the page and send notifications to other modules.",
       "issues": [],
+      "outdated": "Abandoned. No longer works. Repo has been archived at 2025-07-15.",
       "stars": 49,
       "isArchived": true,
       "license": "MIT",
@@ -6188,7 +6189,7 @@
       "issues": [
         "There are no keywords in 'package.json'. We would use them as tags on the module list page."
       ],
-      "stars": 5,
+      "stars": 7,
       "license": "MIT",
       "image": "doc-screenshot-MMM-GConnect-Up.jpg"
     },
@@ -6387,7 +6388,7 @@
         "There is no `package.json`. We need this file to gather information about the module for the module list page.",
         "No image found."
       ],
-      "stars": 45,
+      "stars": 46,
       "license": "MIT"
     },
     {
@@ -7997,7 +7998,7 @@
         "Issue: The license in the package.json (ISC) doesn't match the license file (MIT).",
         "No image found."
       ],
-      "stars": 4,
+      "stars": 5,
       "license": "MIT"
     },
     {
