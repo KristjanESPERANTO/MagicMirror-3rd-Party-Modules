@@ -6,9 +6,9 @@ Exercises the `npm-deprecated-check` integration by declaring dependencies known
 
 ## Expected Findings
 
-| Rule ID | Trigger file | Notes |
-| ------- | ------------ | ----- |
-| deprecation_check | `package.json` | Contains `request` and `request-promise`, which npm marks as deprecated. |
+| Rule / Heuristic | Trigger file | Notes |
+| ---------------- | ------------ | ----- |
+| `dependency-deprecation-helper` | `package.json` | Contains `request` and `request-promise`, which npm marks as deprecated. |
 
 ## Upstream Source
 

@@ -358,7 +358,7 @@
       "sideEffects": [
         {
           "type": "process",
-          "description": "Invokes Git, npm, npm-check-updates, eslint, and custom Python helpers inside each module clone."
+          "description": "Invokes Git, npm, npm-check-updates, eslint, and custom helper scripts inside each module clone."
         },
         {
           "type": "network",

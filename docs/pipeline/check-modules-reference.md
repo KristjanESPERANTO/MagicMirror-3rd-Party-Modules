@@ -6,9 +6,9 @@ This page consolidates the material that previously lived in the P2.3 rollout do
 
 ## Status snapshot
 
-- ✅ TypeScript implementation is the default Stage 5 runner; the Python fallback remains available behind `--checks=legacy` for comparison runs only.
-- ✅ Comparison harness (`npm run checkModules:compare`) executes both implementations, produces diff artifacts, and runs in CI via `check-modules-compare.yaml`.
-- 🔄 Follow-ups tracked here: extend harness diff coverage (README/HTML artifacts) and define warning/failure thresholds before we retire the legacy stage entirely.
+- ✅ TypeScript implementation is the default Stage 5 runner.
+- ✅ Comparison harness (`npm run checkModules:compare`) can execute multiple commands, capture artifacts, and (when two runs complete) produce diffs for analysis.
+- 🔄 Follow-ups tracked here: extend harness diff coverage (README/HTML artifacts) and define warning/failure thresholds ahead of diff gating in CI.
 
 ## Rule inventory
 
@@ -79,8 +79,8 @@ These are the rule IDs currently implemented by the TypeScript checker. Keep thi
 - `detect-jquery-local-copy`: warns when a local `jquery.js` copy is bundled.
 - `detect-missing-update-section`: ensures README files include `## Update`.
 - `detect-missing-install-section`: ensures README files include `## Install`.
-- `deprecation_check`: runs `npm-deprecated-check` and aggregates results.
-- `eslint_checks`: executes ESLint with the curated configuration to produce findings.
+- `dependency-deprecation-helper`: runs `npm-deprecated-check` and aggregates results.
+- `eslint-helper`: executes ESLint with the curated configuration to produce findings.
 
 ## Fixture coverage
 
@@ -103,8 +103,8 @@ The curated fixture repositories live in `fixtures/modules/`. Keep this table in
 | `synthetic-lockfile`                | Synthetic       | Legacy lockfile versions                  | `lock-deprecated-v1`, `lock-deprecated-v2`                                                                                                                                                                                                                             | Ready  | Located under `fixtures/modules/synthetic-lockfile`.                               |
 | `synthetic-readme-heuristics`       | Synthetic       | README structure + node_modules detection | `detect-missing-install-section`, `detect-missing-update-section`, `detect-node_modules-dir`                                                                                                                                                                           | Ready  | Located under `fixtures/modules/synthetic-readme-heuristics`.                      |
 | `synthetic-jquery-local`            | Synthetic       | Local jQuery copy                         | `detect-jquery-local-copy`                                                                                                                                                                                                                                             | Ready  | Located under `fixtures/modules/synthetic-jquery-local`.                           |
-| `synthetic-eslint-helper`           | Synthetic       | ESLint integration                        | `eslint_checks`                                                                                                                                                                                                                                                        | Ready  | Located under `fixtures/modules/synthetic-eslint-helper`.                          |
-| `synthetic-deprecation-helper`      | Synthetic       | npm deprecated packages via helper        | `deprecation_check`                                                                                                                                                                                                                                                    | Ready  | Located under `fixtures/modules/synthetic-deprecation-helper`.                     |
+| `synthetic-eslint-helper`           | Synthetic       | ESLint integration                        | `eslint-helper`                                                                                                                                                                                                                                                        | Ready  | Located under `fixtures/modules/synthetic-eslint-helper`.                          |
+| `synthetic-deprecation-helper`      | Synthetic       | npm deprecated packages via helper        | `dependency-deprecation-helper`                                                                                                                                                                                                                                        | Ready  | Located under `fixtures/modules/synthetic-deprecation-helper`.                     |
 
 ### Coverage matrix
 
@@ -131,23 +131,23 @@ The comparison harness lives under `scripts/check-modules/compare/` and is exerc
 
 ### Goals
 
-- Execute legacy (`--checks=legacy`) and TypeScript implementations against the same curated dataset.
-- Normalize and diff Stage 5 outputs, surfacing rule-level differences and aggregate stats.
+- Execute one or two configured commands against the curated dataset.
+- Normalize and diff Stage 5 outputs, surfacing rule-level differences and aggregate stats when two runs are available.
 - Emit machine-readable (`diff.json`) and Markdown (`diff.md`) reports for CI artifacts.
 
 ### Flow
 
 1. Prepare a temporary workspace with the curated fixtures.
-2. Run the legacy stage via the orchestrator, capturing Stage 5 outputs.
-3. Run the TypeScript stage (default) in a separate directory.
+2. Run the first configured command (labelled `legacy` by default) and capture Stage 5 outputs.
+3. Run the second command (`ts` by default) if provided.
 4. Normalize artifacts (sorted keys, trimmed timestamps).
-5. Run diff logic to produce JSON + Markdown summaries.
+5. Run diff logic to produce JSON + Markdown summaries when two runs succeed.
 6. Exit non-zero when differences are detected or an execution step fails.
 
 ### Implementation notes
 
 - CLI entry point: `node scripts/check-modules/compare/index.js`.
-- Supports overrides via `--fixtures`, `--legacy`, `--ts`, and `--output` flags.
+- Supports overrides via `--fixtures`, `--legacy`, `--ts`, and `--output` flags (the `--legacy` command defaults to `skip`).
 - Uses shared logging utilities; artifacts are collated under the run directory with a `plan.json` descriptor.
 - Snapshot-based tests guard the harness itself.
 
@@ -156,6 +156,7 @@ The comparison harness lives under `scripts/check-modules/compare/` and is exerc
 - Add README/HTML artifact comparisons to the diff output.
 - Define thresholds that downgrade certain differences to warnings instead of hard failures.
 - Consider partial rule subsets to speed up ad-hoc debugging runs.
+- Explore storing golden artifacts now that the Python fallback has been retired.
 
 ## Housekeeping
 

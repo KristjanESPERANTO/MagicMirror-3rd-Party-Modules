@@ -3,7 +3,6 @@
 /modules_/*
 /modules_temp/*
 /node_modules/*
-/scripts/__pycache__/*
 .eslintcache
 .idea
 .vscode/*

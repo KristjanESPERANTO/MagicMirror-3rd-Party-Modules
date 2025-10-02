@@ -6,10 +6,7 @@ Welcome! This document bundles the day-to-day tasks contributors perform when wo
 
 ```bash
 npm install
-python3 -m venv .venv && source .venv/bin/activate  # optional but recommended for Python scripts
 ```
-
-The Node and Python scripts live side by side today. The roadmap tracks our plan to consolidate runtimes, but for now please ensure both toolchains are available.
 
 ## Running the pipeline
 
@@ -22,7 +19,7 @@ You can run each stage individually or rely on the helper commands registered in
 | `node --run getModules`           | Stage 3 – clone the repos locally for deeper inspection.                        |
 | `node --run expandModuleList`     | Stage 4 – parse `package.json`, pick screenshots, and compute derived metadata. |
 | `node --run checkModulesJs`       | Stage 5a – JavaScript checks against the cloned repositories.                   |
-| `node --run checkModules`         | Stage 5b – Python checks to surface README and packaging issues.                |
+| `node --run checkModules`         | Stage 5b – Deep TypeScript checks to surface README and packaging issues.       |
 | `node --run all`                  | Convenience wrapper that executes the full chain in order.                      |
 
 Heavy stages (`getModules`, `checkModules`) download hundreds of repositories and can take more than 10 minutes. When iterating on faster tasks (Stage 1–2, Stage 4), feel free to skip the expensive steps.
@@ -55,9 +52,7 @@ Runs JavaScript-based checks (naming conventions, minified files, etc.) against 
 
 #### Stage 5b – `check-modules/index.ts`
 
-Runs the deep repository analysis in TypeScript, mirroring the legacy Python behavior while sharing utilities with the rest of the pipeline. It parses README files, inspects packaging hygiene, shells out to ESLint/`npm-check-updates`, and produces the markdown summary alongside `modules.json`, `modules.min.json`, and `stats.json`.
-
-> Legacy fallback: the historical Python implementation (`scripts/check_modules.py`) remains available for parity comparisons. Invoke it via `pipeline run --only=check-modules --checks=legacy` when you need to diff outputs against the TypeScript stage.
+Runs the deep repository analysis in TypeScript, parsing README files, inspecting packaging hygiene, shelling out to ESLint/`npm-check-updates`, and producing the markdown summary alongside `modules.json`, `modules.min.json`, and `stats.json`.
 
 #### `validate_release_artifacts.js`
 
@@ -117,7 +112,7 @@ The bundled files live in `dist/schemas/`. They ship with the repository so `nod
 
 ## Prerequisites & installation
 
-1. Install [Node.js](https://nodejs.org). Python is optional unless you plan to run the legacy comparison harness.
+1. Install [Node.js](https://nodejs.org).
 2. Clone the repository:
    ```bash
    git clone https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules
