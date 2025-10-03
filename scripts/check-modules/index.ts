@@ -366,7 +366,11 @@ async function runEslintCheck(moduleDir) {
   }
 }
 
-async function applyDependencyHelpers({ moduleDir, issues }) {
+async function applyDependencyHelpers({ moduleDir, issues, hasPackageJson }) {
+  if (!hasPackageJson) {
+    return;
+  }
+
   const packageJsonPath = path.join(moduleDir, "package.json");
   if (!(await pathExists(packageJsonPath))) {
     return;
@@ -404,6 +408,17 @@ async function applyDependencyHelpers({ moduleDir, issues }) {
 }
 
 async function analyzeModule({ module, moduleDir, issues }) {
+  const packageInfo = module.packageJson ?? null;
+  const packageSummary =
+    packageInfo && packageInfo.status === "parsed"
+      ? packageInfo.summary ?? {}
+      : null;
+  const hasParsedPackageJson = packageSummary != null;
+  const packageRawContent =
+    packageInfo && packageInfo.status === "parsed" && typeof packageInfo.raw === "string"
+      ? packageInfo.raw
+      : null;
+
   const entries = await collectEntries(moduleDir);
   const allPathsString = entries.map((entry) => entry.fullPath).join(" ");
 
@@ -452,7 +467,14 @@ async function analyzeModule({ module, moduleDir, issues }) {
       continue;
     }
 
-    const content = await readTextSafely(fullPath);
+    const isPackageJson = fileName === "package.json";
+    let content = null;
+    if (isPackageJson && packageRawContent) {
+      content = packageRawContent;
+    } else {
+      content = await readTextSafely(fullPath);
+    }
+
     if (content == null) {
       continue;
     }
@@ -484,7 +506,7 @@ async function analyzeModule({ module, moduleDir, issues }) {
       }
     }
 
-    if (fileName === "package.json") {
+    if (isPackageJson) {
       for (const rule of PACKAGE_JSON_RULES) {
         const match = findMatchingPattern(rule, content);
         if (match) {
@@ -493,7 +515,7 @@ async function analyzeModule({ module, moduleDir, issues }) {
       }
     }
 
-    if (fileName.toLowerCase().includes("stylelint")) {
+  if (fileName.toLowerCase().includes("stylelint")) {
       if (content.includes("prettier/prettier")) {
         addIssue(
           issues,
@@ -606,35 +628,47 @@ async function analyzeModule({ module, moduleDir, issues }) {
       "Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/eslint.md))."
     );
   } else {
-    const packageJsonPath = path.join(moduleDir, "package.json");
-    if (await pathExists(packageJsonPath)) {
-      try {
-        const packageContent = await readFile(packageJsonPath, "utf8");
-        const packageJson = JSON.parse(packageContent);
-        if (
-          !packageJson.dependencies?.eslint &&
-          !packageJson.devDependencies?.eslint
-        ) {
-          addIssue(
-            issues,
-            "Recommendation: ESLint is not in the dependencies or devDependencies. It is recommended to add it to one of them."
-          );
-        }
-        const scripts = packageJson.scripts ?? {};
-        if (!scripts.lint) {
-          addIssue(
-            issues,
-            "Recommendation: No lint script found in package.json. It is recommended to add one."
-          );
-        } else if (!scripts.lint.includes("eslint")) {
-          addIssue(
-            issues,
-            "Recommendation: The lint script in package.json does not contain `eslint`. It is recommended to add it."
-          );
-        }
-      } catch (error) {
-        logger.warn(
-          `Failed to parse package.json for ${module.name}: ${error instanceof Error ? error.message : error}`
+    if (packageSummary) {
+      const packageDependencies =
+        typeof packageSummary.dependencies === "object" &&
+        packageSummary.dependencies
+          ? packageSummary.dependencies
+          : {};
+      const packageDevDependencies =
+        typeof packageSummary.devDependencies === "object" &&
+        packageSummary.devDependencies
+          ? packageSummary.devDependencies
+          : {};
+
+      const hasEslintDependency = Boolean(
+        (typeof packageDependencies.eslint === "string" &&
+          packageDependencies.eslint.length > 0) ||
+          (typeof packageDevDependencies.eslint === "string" &&
+            packageDevDependencies.eslint.length > 0)
+      );
+
+      if (!hasEslintDependency) {
+        addIssue(
+          issues,
+          "Recommendation: ESLint is not in the dependencies or devDependencies. It is recommended to add it to one of them."
+        );
+      }
+
+      const lintScript =
+        typeof packageSummary.scripts?.lint === "string" &&
+        packageSummary.scripts.lint.length > 0
+          ? packageSummary.scripts.lint
+          : null;
+
+      if (!lintScript) {
+        addIssue(
+          issues,
+          "Recommendation: No lint script found in package.json. It is recommended to add one."
+        );
+      } else if (!lintScript.includes("eslint")) {
+        addIssue(
+          issues,
+          "Recommendation: The lint script in package.json does not contain `eslint`. It is recommended to add it."
         );
       }
     }
@@ -660,7 +694,11 @@ async function analyzeModule({ module, moduleDir, issues }) {
     module.defaultSortWeight -= 1;
   }
 
-  await applyDependencyHelpers({ moduleDir, issues });
+  await applyDependencyHelpers({
+    moduleDir,
+    issues,
+    hasPackageJson: hasParsedPackageJson
+  });
 }
 
 function applySortAdjustments(module, issuesCount) {
@@ -856,7 +894,20 @@ async function main() {
     `${stats.moduleCounter} modules analyzed. For results see file result.md.`
   );
 
-  await writeOutputs({ data: stageData, stats, summaries: issueSummaries });
+  const sanitizedData = {
+    ...stageData,
+    modules: Array.isArray(stageData.modules)
+      ? stageData.modules.map((entry) => {
+        if (entry && typeof entry === "object") {
+          const { packageJson: _packageJson, ...rest } = entry;
+          return rest;
+        }
+        return entry;
+      })
+      : stageData.modules
+  };
+
+  await writeOutputs({ data: sanitizedData, stats, summaries: issueSummaries });
 }
 
 main().catch((error) => {

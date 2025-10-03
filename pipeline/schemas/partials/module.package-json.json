@@ -1,0 +1,89 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Module Package Manifest",
+  "type": "object",
+  "properties": {
+    "packageJson": {
+      "type": "object",
+      "required": ["status"],
+      "properties": {
+        "status": {
+          "type": "string",
+          "enum": ["parsed", "missing", "error"]
+        },
+        "path": {
+          "type": "string",
+          "minLength": 1
+        },
+        "raw": {
+          "type": "string"
+        },
+        "summary": {
+          "type": "object",
+          "properties": {
+            "name": { "type": "string" },
+            "version": { "type": "string" },
+            "description": { "type": "string" },
+            "license": { "type": "string" },
+            "type": { "type": "string" },
+            "keywords": {
+              "type": "array",
+              "items": { "type": "string" }
+            },
+            "scripts": {
+              "type": "object",
+              "patternProperties": {
+                ".*": { "type": "string" }
+              },
+              "additionalProperties": false
+            },
+            "dependencies": {
+              "type": "object",
+              "patternProperties": {
+                ".*": { "type": "string" }
+              },
+              "additionalProperties": false
+            },
+            "devDependencies": {
+              "type": "object",
+              "patternProperties": {
+                ".*": { "type": "string" }
+              },
+              "additionalProperties": false
+            },
+            "peerDependencies": {
+              "type": "object",
+              "patternProperties": {
+                ".*": { "type": "string" }
+              },
+              "additionalProperties": false
+            },
+            "optionalDependencies": {
+              "type": "object",
+              "patternProperties": {
+                ".*": { "type": "string" }
+              },
+              "additionalProperties": false
+            },
+            "engines": {
+              "type": "object",
+              "patternProperties": {
+                ".*": { "type": "string" }
+              },
+              "additionalProperties": false
+            }
+          },
+          "additionalProperties": true
+        },
+        "warnings": {
+          "type": "array",
+          "items": { "type": "string" }
+        },
+        "error": {
+          "type": "string"
+        }
+      },
+      "additionalProperties": false
+    }
+  }
+}

@@ -22,7 +22,7 @@ This document captures the long-term improvements we want to implement in the mo
 | P1.5 | Final artifact schemas & validation — rollout completed and documented (see contributor guide & release notes) ✅ Completed Sep 2025                                             | P1.3         | M      |
 | P1.6 | Consolidate shared schema definitions (shared `$defs` / generator) to keep stage contracts in sync ✅ Completed Sep 2025                                                         | P1.3         | S      |
 
-### 2. Runtime & Codebase Consolidation
+### 2. Runtime & Codebase Consolidation - ✅ Completed Oct 2025
 
 | Task | Description                                                                                                                                                                    | Dependencies | Effort |
 | ---- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ------------ | ------ |
@@ -30,7 +30,7 @@ This document captures the long-term improvements we want to implement in the mo
 | P2.2 | Port `get_modules.py` to TypeScript, reusing the shared utilities ✅ Completed Sep 2025 (Python fallback removed)                                                              | P2.1         | L      |
 | P2.3 | Port `check_modules.py` logic incrementally (start with fast checks, then optional heavy tasks) ✅ Completed Oct 2025 (TS stage now fully TypeScript; Python fallback removed) | P2.1         | XL     |
 | P2.4 | Extend ESLint config to cover TypeScript files (via `typescript-eslint` v8+) and add unit tests for shared utilities ✅ Completed Oct 2025                                     | P2.1         | M      |
-| P2.5 | Centralize `package.json` ingestion so data is parsed once and shared across stages                                                                                            | P2.1         | M      |
+| P2.5 | Centralize `package.json` ingestion so data is parsed once and shared across stages ✅ Completed Oct 2025                                                                      | P2.1         | M      |
 
 ### 3. Robustness & Performance Safety Nets
 
@@ -91,14 +91,14 @@ These are the guiding habits we should keep front-of-mind while the modernizatio
 
 Routine reminders for keeping the written guidance in sync with the code:
 
-- Update `docs/architecture.md` as TypeScript stages replace Python counterparts (P2.2, P2.3) and whenever shared utilities (P2.1) materially change the architecture overview.
+- Update `docs/architecture.md` whenever stage runtimes or shared utilities shift (for example, when Node scripts move to TypeScript or shared helpers gain new capabilities).
 - Align updates in `docs/CONTRIBUTING.md` with each orchestrator milestone so local workflows stay in sync.
 
 ## Next Concrete Steps
 
 Immediate action items:
 
-1. Decide on the long-term diff strategy (e.g. golden artifacts) now that the Python fallback is gone.
+1. Implement the repository-hosted golden artifact strategy: produce deterministic outputs, neutralize volatile fields, and add a CI comparison step (supports P4.3).
 2. Extend the rule registry to cover every pipeline check stage before layering new features (P4.11).
 3. Implement the check-group configuration file so runs can toggle `fast`, `deep`, and optional integrations (P4.2).
 4. Build the golden regression fixtures for check outputs to protect future refactors (P4.3).

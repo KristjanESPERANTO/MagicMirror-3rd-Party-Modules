@@ -11,6 +11,22 @@
       "issues": [],
       "stars": 37,
       "license": "MIT",
+      "packageJson": {
+        "status": "parsed",
+        "path": "./modules/MMM-AirQuality-----CFenner/package.json",
+        "raw": "{\n  \"name\": \"MMM-AirQuality\",\n  \"license\": \"MIT\",\n  \"keywords\": [\"aqi\", \"air-quality\"]\n}",
+        "summary": {
+          "license": "MIT",
+          "keywords": [
+            "aqi",
+            "air-quality"
+          ],
+          "dependencies": {
+            "node-fetch": "^3.0.0"
+          }
+        },
+        "warnings": []
+      },
       "tags": [
         "aqi",
         "air-quality"
@@ -32,6 +48,25 @@
       "outdated": "Abandoned. No updates since years. But may still work.",
       "stars": 47,
       "license": "GPL-3.0",
+      "packageJson": {
+        "status": "parsed",
+        "path": "./modules/MMM-Admin-Interface-----ItayXD/package.json",
+        "raw": "{\n  \"name\": \"MMM-Admin-Interface\",\n  \"license\": \"GPL-3.0\",\n  \"keywords\": [\"Magic\", \"Mirror\", \"Module\"]\n}",
+        "summary": {
+          "license": "GPL-3.0",
+          "keywords": [
+            "magic",
+            "mirror",
+            "module"
+          ],
+          "scripts": {
+            "start": "node server.js"
+          }
+        },
+        "warnings": [
+          "keywords should not contain duplicates"
+        ]
+      },
       "tags": [
         "\"magic",
         "mirror\"",
@@ -51,7 +86,22 @@
         "No image found."
       ],
       "stars": 2,
-      "license": "MIT"
+      "license": "MIT",
+      "packageJson": {
+        "status": "parsed",
+        "path": "./modules/MMM-AC-aseag-----j-hiller/package.json",
+        "raw": "{\n  \"name\": \"MMM-AC-aseag\",\n  \"license\": \"MIT\",\n  \"keywords\": []\n}",
+        "summary": {
+          "license": "MIT",
+          "scripts": {
+            "lint": "eslint ."
+          },
+          "devDependencies": {
+            "eslint": "^9.0.0"
+          }
+        },
+        "warnings": []
+      }
     },
     {
       "name": "MMM-AccuWeatherForecastDeluxe",
@@ -64,6 +114,24 @@
       "issues": [],
       "stars": 7,
       "license": "MIT",
+      "packageJson": {
+        "status": "parsed",
+        "path": "./modules/MMM-AccuWeatherForecastDeluxe-----maxbethge/package.json",
+        "raw": "{\n  \"name\": \"MMM-AccuWeatherForecastDeluxe\",\n  \"license\": \"MIT\"\n}",
+        "summary": {
+          "license": "MIT",
+          "scripts": {
+            "start": "node server.js"
+          },
+          "keywords": [
+            "weather"
+          ],
+          "dependencies": {
+            "dayjs": "^1.11.0"
+          }
+        },
+        "warnings": []
+      },
       "tags": [
         "weather"
       ],
@@ -80,6 +148,30 @@
       "issues": [],
       "stars": 4,
       "license": "MIT",
+      "packageJson": {
+        "status": "parsed",
+        "path": "./modules/MMM-01ZM-----rubinho101/package.json",
+        "raw": "{\n  \"name\": \"MMM-01ZM\",\n  \"license\": \"MIT\",\n  \"keywords\": [\"xiaomi\", \"temperature\", \"humidity\"]\n}",
+        "summary": {
+          "license": "MIT",
+          "keywords": [
+            "xiaomi",
+            "temperature",
+            "humidity"
+          ],
+          "scripts": {
+            "start": "node server.js",
+            "lint": "eslint ."
+          },
+          "dependencies": {
+            "axios": "^1.6.0"
+          },
+          "devDependencies": {
+            "eslint": "^9.0.0"
+          }
+        },
+        "warnings": []
+      },
       "tags": [
         "xiaomi",
         "temperature",
@@ -105,6 +197,27 @@
       ],
       "stars": 1,
       "license": "AGPL-3.0",
+      "packageJson": {
+        "status": "parsed",
+        "path": "./modules/MMM-Actual-----trumpetx/package.json",
+        "raw": "{\n  \"name\": \"MMM-Actual\",\n  \"license\": \"AGPL3\",\n  \"scripts\": {\"lint\": \"eslint .\"}\n}",
+        "summary": {
+          "license": "AGPL3",
+          "scripts": {
+            "lint": "eslint ."
+          },
+          "devDependencies": {
+            "eslint": "^9.0.0"
+          },
+          "keywords": [
+            "finance",
+            "budget"
+          ]
+        },
+        "warnings": [
+          "license should be a valid SPDX license expression"
+        ]
+      },
       "tags": [
         "actual",
         "finance"
@@ -123,7 +236,12 @@
         "No image found."
       ],
       "stars": 0,
-      "license": "GPL-3.0"
+      "license": "GPL-3.0",
+      "packageJson": {
+        "status": "missing",
+        "path": "./modules/MMM-AddressBook-----Unclearogre/package.json",
+        "warnings": []
+      }
     }
   ]
 }

@@ -98,6 +98,12 @@ function buildStage4Entry (stage2Module, info) {
     ? clone(info.issuesStage4)
     : clone(stage2Module.issues ?? []);
 
+  if (info.packageJson) {
+    entry.packageJson = clone(info.packageJson);
+  } else {
+    entry.packageJson = {status: "missing", warnings: []};
+  }
+
   if (Array.isArray(info.tags) && info.tags.length > 0) {
     entry.tags = clone(info.tags);
   } else {

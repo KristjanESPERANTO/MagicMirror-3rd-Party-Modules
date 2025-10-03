@@ -13,7 +13,8 @@
           { "$ref": "../partials/module.core.json" },
           { "$ref": "../partials/module.issues-array.json" },
           { "$ref": "../partials/module.repo-metadata.json" },
-          { "$ref": "../partials/module.media.base.json" }
+          { "$ref": "../partials/module.media.base.json" },
+          { "$ref": "../partials/module.package-json.json" }
         ],
         "properties": {
           "name": { "$ref": "../partials/module.core.json#/properties/name" },
@@ -57,6 +58,9 @@
           },
           "keywords": {
             "$ref": "../partials/module.sorting.json#/properties/keywords"
+          },
+          "packageJson": {
+            "$ref": "../partials/module.package-json.json#/properties/packageJson"
           }
         },
         "additionalProperties": false

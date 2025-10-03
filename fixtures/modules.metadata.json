@@ -8,7 +8,27 @@
       "issuesStage4": [],
       "issuesFinal": true,
       "defaultSortWeight": 4,
-      "lastCommit": "2024-07-17T16:08:35+02:00"
+      "lastCommit": "2024-07-17T16:08:35+02:00",
+      "packageJson": {
+        "status": "parsed",
+        "path": "./modules/MMM-01ZM-----rubinho101/package.json",
+        "raw": "{\n  \"name\": \"MMM-01ZM\",\n  \"license\": \"MIT\",\n  \"keywords\": [\"xiaomi\", \"temperature\", \"humidity\"]\n}",
+        "summary": {
+          "license": "MIT",
+          "keywords": ["xiaomi", "temperature", "humidity"],
+          "scripts": {
+            "start": "node server.js",
+            "lint": "eslint ."
+          },
+          "dependencies": {
+            "axios": "^1.6.0"
+          },
+          "devDependencies": {
+            "eslint": "^9.0.0"
+          }
+        },
+        "warnings": []
+      }
     },
     "j-hiller/MMM-AC-aseag": {
       "stars": 2,
@@ -21,7 +41,22 @@
       ],
       "issuesFinal": true,
       "defaultSortWeight": 13,
-      "lastCommit": "2022-07-14T23:06:51+02:00"
+      "lastCommit": "2022-07-14T23:06:51+02:00",
+      "packageJson": {
+        "status": "parsed",
+        "path": "./modules/MMM-AC-aseag-----j-hiller/package.json",
+        "raw": "{\n  \"name\": \"MMM-AC-aseag\",\n  \"license\": \"MIT\",\n  \"keywords\": []\n}",
+        "summary": {
+          "license": "MIT",
+          "scripts": {
+            "lint": "eslint ."
+          },
+          "devDependencies": {
+            "eslint": "^9.0.0"
+          }
+        },
+        "warnings": []
+      }
     },
     "maxbethge/MMM-AccuWeatherForecastDeluxe": {
       "stars": 7,
@@ -31,7 +66,23 @@
       "issuesStage4": [],
       "issuesFinal": true,
       "defaultSortWeight": 7,
-      "lastCommit": "2025-09-10T10:46:47-07:00"
+      "lastCommit": "2025-09-10T10:46:47-07:00",
+      "packageJson": {
+        "status": "parsed",
+        "path": "./modules/MMM-AccuWeatherForecastDeluxe-----maxbethge/package.json",
+        "raw": "{\n  \"name\": \"MMM-AccuWeatherForecastDeluxe\",\n  \"license\": \"MIT\"\n}",
+        "summary": {
+          "license": "MIT",
+          "scripts": {
+            "start": "node server.js"
+          },
+          "keywords": ["weather"],
+          "dependencies": {
+            "dayjs": "^1.11.0"
+          }
+        },
+        "warnings": []
+      }
     },
     "trumpetx/MMM-Actual": {
       "stars": 1,
@@ -45,7 +96,23 @@
       ],
       "issuesFinal": true,
       "defaultSortWeight": 11,
-      "lastCommit": "2025-05-01T07:33:34-05:00"
+      "lastCommit": "2025-05-01T07:33:34-05:00",
+      "packageJson": {
+        "status": "parsed",
+        "path": "./modules/MMM-Actual-----trumpetx/package.json",
+        "raw": "{\n  \"name\": \"MMM-Actual\",\n  \"license\": \"AGPL3\",\n  \"scripts\": {\"lint\": \"eslint .\"}\n}",
+        "summary": {
+          "license": "AGPL3",
+          "scripts": {
+            "lint": "eslint ."
+          },
+          "devDependencies": {
+            "eslint": "^9.0.0"
+          },
+          "keywords": ["finance", "budget"]
+        },
+        "warnings": ["license should be a valid SPDX license expression"]
+      }
     },
     "Unclearogre/MMM-AddressBook": {
       "stars": 0,
@@ -58,7 +125,12 @@
       ],
       "issuesFinal": true,
       "defaultSortWeight": 8,
-      "lastCommit": "2025-08-07T09:26:17-07:00"
+      "lastCommit": "2025-08-07T09:26:17-07:00",
+      "packageJson": {
+        "status": "missing",
+        "path": "./modules/MMM-AddressBook-----Unclearogre/package.json",
+        "warnings": []
+      }
     },
     "ItayXD/MMM-Admin-Interface": {
       "stars": 47,
@@ -72,7 +144,20 @@
       "issuesFinal": false,
       "outdated": "Abandoned. No updates since years. But may still work.",
       "defaultSortWeight": 901,
-      "lastCommit": "2018-07-08T01:07:24+03:00"
+      "lastCommit": "2018-07-08T01:07:24+03:00",
+      "packageJson": {
+        "status": "parsed",
+        "path": "./modules/MMM-Admin-Interface-----ItayXD/package.json",
+        "raw": "{\n  \"name\": \"MMM-Admin-Interface\",\n  \"license\": \"GPL-3.0\",\n  \"keywords\": [\"Magic\", \"Mirror\", \"Module\"]\n}",
+        "summary": {
+          "license": "GPL-3.0",
+          "keywords": ["magic", "mirror", "module"],
+          "scripts": {
+            "start": "node server.js"
+          }
+        },
+        "warnings": ["keywords should not contain duplicates"]
+      }
     },
     "CFenner/MMM-AirQuality": {
       "stars": 37,
@@ -82,7 +167,20 @@
       "issuesStage4": [],
       "issuesFinal": true,
       "defaultSortWeight": 10,
-      "lastCommit": "2025-05-18T02:41:28Z"
+      "lastCommit": "2025-05-18T02:41:28Z",
+      "packageJson": {
+        "status": "parsed",
+        "path": "./modules/MMM-AirQuality-----CFenner/package.json",
+        "raw": "{\n  \"name\": \"MMM-AirQuality\",\n  \"license\": \"MIT\",\n  \"keywords\": [\"aqi\", \"air-quality\"]\n}",
+        "summary": {
+          "license": "MIT",
+          "keywords": ["aqi", "air-quality"],
+          "dependencies": {
+            "node-fetch": "^3.0.0"
+          }
+        },
+        "warnings": []
+      }
     }
   }
 }
