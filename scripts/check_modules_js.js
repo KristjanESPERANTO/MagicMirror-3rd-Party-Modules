@@ -1,5 +1,10 @@
 import fs from "node:fs";
+import {getRuleById} from "./check-modules/rule-registry.js";
 import {validateStageData} from "./lib/schemaValidator.js";
+
+const LEGACY_MAIN_JS_RULE_ID = "legacy-main-js-mismatch";
+const legacyMainJsRule = getRuleById(LEGACY_MAIN_JS_RULE_ID);
+const legacyMainJsMessage = legacyMainJsRule?.description ?? "Repository name and main js file name is not the same.";
 // Disabled: import {isMinified} from "./utils.js";
 
 fs.readFile("./website/data/modules.stage.4.json", "utf8", (err, data) => {
@@ -25,7 +30,7 @@ fs.readFile("./website/data/modules.stage.4.json", "utf8", (err, data) => {
        */
 
     } else if (module.name !== "mmpm") {
-      module.issues.push("Repository name and main js file name is not the same.");
+      module.issues.push(legacyMainJsMessage);
     }
   });
 

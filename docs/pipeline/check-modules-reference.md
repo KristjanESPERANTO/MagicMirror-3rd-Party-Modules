@@ -73,6 +73,12 @@ These are the rule IDs currently implemented by the TypeScript checker. Keep thi
 | lock-deprecated-v1 | `"lockfileVersion": 1` | Deprecated | Encourage upgrade to v3. |
 | lock-deprecated-v2 | `"lockfileVersion": 2` | Deprecated | Encourage upgrade to v3. |
 
+### Legacy stage rules
+
+| Rule ID                 | Category       | Stage              | Notes                                              |
+| ----------------------- | -------------- | ------------------ | -------------------------------------------------- |
+| legacy-main-js-mismatch | Recommendation | `check-modules-js` | Repository name / main JS filename mismatch guard. |
+
 ### File system heuristics & helpers
 
 - `detect-node_modules-dir`: flags first-level `node_modules` directories under module root.
