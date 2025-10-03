@@ -3,7 +3,9 @@
   "$id": "https://magicmirror.builders/schemas/modules.json",
   "title": "Modules Listing",
   "type": "object",
-  "required": ["modules"],
+  "required": [
+    "modules"
+  ],
   "properties": {
     "modules": {
       "type": "array",
@@ -60,7 +62,9 @@
           {
             "$schema": "http://json-schema.org/draft-07/schema#",
             "type": "object",
-            "required": ["issues"],
+            "required": [
+              "issues"
+            ],
             "properties": {
               "issues": {
                 "type": "boolean"
@@ -122,7 +126,10 @@
           {
             "$schema": "http://json-schema.org/draft-07/schema#",
             "type": "object",
-            "required": ["defaultSortWeight", "lastCommit"],
+            "required": [
+              "defaultSortWeight",
+              "lastCommit"
+            ],
             "properties": {
               "defaultSortWeight": {
                 "type": "integer"

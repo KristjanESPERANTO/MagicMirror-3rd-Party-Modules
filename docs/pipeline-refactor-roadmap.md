@@ -98,10 +98,9 @@ Routine reminders for keeping the written guidance in sync with the code:
 
 Immediate action items:
 
-1. Implement the repository-hosted golden artifact strategy: produce deterministic outputs, neutralize volatile fields, and add a CI comparison step (supports P4.3).
-2. Extend the rule registry to cover every pipeline check stage before layering new features (P4.11).
-3. Implement the check-group configuration file so runs can toggle `fast`, `deep`, and optional integrations (P4.2).
-4. Build the golden regression fixtures for check outputs to protect future refactors (P4.3).
+1. Extend the rule registry to cover every pipeline check stage before layering new features (P4.11).
+2. Implement the check-group configuration file so runs can toggle `fast`, `deep`, and optional integrations (P4.2).
+3. Build the golden regression fixtures for check outputs to protect future refactors (P4.3).
 
 ---
 

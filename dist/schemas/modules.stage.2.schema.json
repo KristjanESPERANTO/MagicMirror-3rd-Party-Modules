@@ -55,7 +55,9 @@
       {
         "$schema": "http://json-schema.org/draft-07/schema#",
         "type": "object",
-        "required": ["issues"],
+        "required": [
+          "issues"
+        ],
         "properties": {
           "issues": {
             "type": "array",

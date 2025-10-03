@@ -22,6 +22,10 @@ jobs:
           cache: npm
       - name: Install dependencies
         run: npm ci
+      - name: Validate fixtures
+        run: npm run test:fixtures
+      - name: Verify golden artifacts
+        run: npm run golden:check
       - name: Check spelling
         run: node --run test:spelling
       - name: Check linting
