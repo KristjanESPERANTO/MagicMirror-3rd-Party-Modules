@@ -11,7 +11,7 @@ This document captures the long-term improvements we want to implement in the mo
 
 ## Workstreams
 
-### 1. Pipeline Architecture & Orchestration
+### 1. Pipeline Architecture & Orchestration - ✅ Completed
 
 | Task | Description                                                                                                                                                                      | Dependencies | Effort |
 | ---- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | ------ |
@@ -47,7 +47,7 @@ This document captures the long-term improvements we want to implement in the mo
 
 | Task  | Description                                                                                                                                                                     | Dependencies | Effort |
 | ----- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | ------ |
-| P4.1  | Split checks into a registry with metadata (category, severity, auto-fixable)                                                                                                   | P2.3         | M      |
+| P4.1  | Split checks into a registry with metadata (category, severity, auto-fixable) ✅ Completed Oct 2025                                                                             | P2.3         | M      |
 | P4.2  | Add configuration file to toggle check groups (`fast`, `deep`, optional ESLint/ncu)                                                                                             | P4.1         | S      |
 | P4.3  | Create sample dataset + regression tests for check outputs (golden files), reusing the curated fixtures where possible                                                          | P4.1         | M      |
 | P4.4  | Provide CLI progress UI and Markdown summary per run                                                                                                                            | P1.2         | S      |
@@ -57,6 +57,9 @@ This document captures the long-term improvements we want to implement in the mo
 | P4.8  | Flag modules with multi-year inactivity that are not marked `outdated` and nudge maintainers to review status                                                                   | P4.1         | M      |
 | P4.9  | Inspect Dependabot configs for schedule scope (monthly cadence, production-only) and suggest adjustments                                                                        | P4.1         | M      |
 | P4.10 | Evaluate migrating the `ntl` task menu into a `pipeline` subcommand (interactive launcher built on the orchestrator CLI) _(low priority)_                                       | P1.2         | S      |
+| P4.11 | Extend the rule registry to cover every pipeline check stage (legacy JS script + future additions)                                                                              | P4.1         | L      |
+| P4.R1 | Audit every rule in the registry for relevance and clarity                                                                                                                      | P4.11        | S      |
+| P4.R2 | Audit every recommendation in the registry for relevance and consistency                                                                                                        | P4.11        | S      |
 
 ### 5. Documentation & Collaboration
 
@@ -95,8 +98,10 @@ Routine reminders for keeping the written guidance in sync with the code:
 
 Immediate action items:
 
-1. Prioritize P4.x registry metadata work now that parity is secured (define categories/severities for existing checks).
-2. Decide on the long-term diff strategy (e.g. golden artifacts) now that the Python fallback is gone.
+1. Decide on the long-term diff strategy (e.g. golden artifacts) now that the Python fallback is gone.
+2. Extend the rule registry to cover every pipeline check stage before layering new features (P4.11).
+3. Implement the check-group configuration file so runs can toggle `fast`, `deep`, and optional integrations (P4.2).
+4. Build the golden regression fixtures for check outputs to protect future refactors (P4.3).
 
 ---
 

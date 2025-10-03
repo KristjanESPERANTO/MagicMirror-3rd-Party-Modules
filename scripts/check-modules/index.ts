@@ -16,6 +16,11 @@ import {
   validateStageData,
   validateStageFile
 } from "../lib/schemaValidator.js";
+import {
+  PACKAGE_JSON_RULES,
+  PACKAGE_LOCK_RULES,
+  TEXT_RULES
+} from "./rule-registry.js";
 
 const execFileAsync = promisify(execFile);
 
@@ -74,8 +79,21 @@ function addIssue(issues, message) {
   }
 }
 
-function formatRuleIssue(rule, fileName) {
-  return `${rule.category}: Found \`${rule.pattern}\` in file \`${fileName}\`: ${rule.description}`;
+function formatRuleIssue(rule, fileName, matchedPattern) {
+  const pattern =
+    matchedPattern ??
+    rule?.primaryPattern ??
+    (Array.isArray(rule?.patterns) && rule.patterns.length > 0
+      ? rule.patterns[0]
+      : rule?.pattern ?? "unknown pattern");
+  return `${rule.category}: Found \`${pattern}\` in file \`${fileName}\`: ${rule.description}`;
+}
+
+function findMatchingPattern(rule, content) {
+  if (!rule || !Array.isArray(rule.patterns)) {
+    return null;
+  }
+  return rule.patterns.find((pattern) => content.includes(pattern)) ?? null;
 }
 
 function normalizeIssuesInput(issues) {
@@ -128,326 +146,6 @@ async function getLastCommitDate(module, moduleDir) {
     );
   }
 }
-
-const TEXT_RULES = [
-  {
-    pattern: "new Buffer(",
-    category: "Deprecated",
-    description:
-      "This is deprecated. Please update. [See here for more information](https://nodejs.org/api/buffer.html)."
-  },
-  {
-    pattern: "fs.F_OK",
-    category: "Deprecated",
-    description: "Replace it with `fs.constants.F_OK`."
-  },
-  {
-    pattern: "fs.R_OK",
-    category: "Deprecated",
-    description: "Replace it with `fs.constants.R_OK`."
-  },
-  {
-    pattern: "fs.W_OK",
-    category: "Deprecated",
-    description: "Replace it with `fs.constants.W_OK`."
-  },
-  {
-    pattern: "fs.X_OK",
-    category: "Deprecated",
-    description: "Replace it with `fs.constants.X_OK`."
-  },
-  {
-    pattern: "Magic Mirror",
-    category: "Typo",
-    description: "Replace it with `MagicMirror²`."
-  },
-  {
-    pattern: "MagicMirror2",
-    category: "Typo",
-    description: "Replace it with `MagicMirror²`."
-  },
-  {
-    pattern: "[MagicMirror]",
-    category: "Typo",
-    description: "Replace it with `[MagicMirror²]`."
-  },
-  {
-    pattern: "<sub>2</sub>",
-    category: "Typo",
-    description: "Replace it with `²`."
-  },
-  {
-    pattern: "require(\"request\")",
-    category: "Deprecated",
-    description:
-      "Replace it with built-in fetch ([documentation](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch); [example module with fetch implemented](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/node_helper.js))."
-  },
-  {
-    pattern: "require('request')",
-    category: "Deprecated",
-    description:
-      "Replace it with built-in fetch ([documentation](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch); [example module with fetch implemented](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/node_helper.js))."
-  },
-  {
-    pattern: "require(\"request-promise\")",
-    category: "Deprecated",
-    description:
-      "Replace it with built-in fetch ([documentation](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch); [example module with fetch implemented](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/node_helper.js))."
-  },
-  {
-    pattern: "require('request-promise')",
-    category: "Deprecated",
-    description:
-      "Replace it with built-in fetch ([documentation](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch); [example module with fetch implemented](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/node_helper.js))."
-  },
-  {
-    pattern: "require(\"native-request\")",
-    category: "Deprecated",
-    description:
-      "Replace it with built-in fetch ([documentation](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch); [example module with fetch implemented](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/node_helper.js))."
-  },
-  {
-    pattern: "require(\"http\")",
-    category: "Recommendation",
-    description: "Replace \"http\" by \"node:http\"."
-  },
-  {
-    pattern: "require('http')",
-    category: "Recommendation",
-    description: "Replace 'http' by 'node:http'."
-  },
-  {
-    pattern: "require(\"https\")",
-    category: "Recommendation",
-    description: "Replace \"https\" by \"node:https\"."
-  },
-  {
-    pattern: "require('https')",
-    category: "Recommendation",
-    description: "Replace 'https' by 'node:https'."
-  },
-  {
-    pattern: "'node-fetch'",
-    category: "Recommendation",
-    description:
-      "Replace it with built-in fetch ([documentation](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch); [example module with fetch implemented](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/node_helper.js))."
-  },
-  {
-    pattern: "\"node-fetch\"",
-    category: "Recommendation",
-    description:
-      "Replace it with built-in fetch ([documentation](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch); [example module with fetch implemented](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/node_helper.js))."
-  },
-  {
-    pattern: "require(\"fetch\")",
-    category: "Recommendation",
-    description:
-      "Replace it with built-in fetch ([documentation](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch); [example module with fetch implemented](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/node_helper.js))."
-  },
-  {
-    pattern: "require('fetch')",
-    category: "Recommendation",
-    description:
-      "Replace it with built-in fetch ([documentation](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch); [example module with fetch implemented](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/node_helper.js))."
-  },
-  {
-    pattern: "axios",
-    category: "Recommendation",
-    description:
-      "Replace it with built-in fetch ([documentation](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch); [example module with fetch implemented](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/node_helper.js))."
-  },
-  {
-    pattern: "omxplayer",
-    category: "Deprecated",
-    description: "Try to replace it with `mplayer` or `vlc`."
-  },
-  {
-    pattern: "XMLHttpRequest",
-    category: "Recommendation",
-    description:
-      "Replace it with built-in fetch ([documentation](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch); [example module with fetch implemented](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/node_helper.js))."
-  },
-  {
-    pattern: "uses: actions/checkout@v2",
-    category: "Recommendation",
-    description: "Replace it with v5."
-  },
-  {
-    pattern: "uses: actions/checkout@v3",
-    category: "Recommendation",
-    description: "Replace it with v5."
-  },
-  {
-    pattern: "uses: actions/checkout@v4",
-    category: "Recommendation",
-    description: "Replace it with v5."
-  },
-  {
-    pattern: "uses: actions/setup-node@v3",
-    category: "Recommendation",
-    description: "Replace it with v5."
-  },
-  {
-    pattern: "uses: actions/setup-node@v4",
-    category: "Recommendation",
-    description: "Replace it with v5."
-  },
-  {
-    pattern: "node-version: [14",
-    category: "Deprecated",
-    description: "Update to current version."
-  },
-  {
-    pattern: "node-version: 16",
-    category: "Deprecated",
-    description: "Update to current version."
-  },
-  {
-    pattern: "node-version: [16",
-    category: "Deprecated",
-    description: "Update to current version."
-  },
-  {
-    pattern: "node-version: 18",
-    category: "Deprecated",
-    description: "Update to current version."
-  },
-  {
-    pattern: "node-version: [18",
-    category: "Deprecated",
-    description: "Update to current version."
-  },
-  {
-    pattern: "npm run",
-    category: "Recommendation",
-    description:
-      "Replace it with `node --run`. This is a more modern way to run scripts, without the need for npm."
-  },
-  {
-    pattern: "jshint",
-    category: "Recommendation",
-    description: "Replace \"jshint\" by \"eslint\"."
-  },
-  {
-    pattern: "getYear()",
-    category: "Deprecated",
-    description: "Replace `getYear()` by `getFullYear()`."
-  },
-  {
-    pattern: "MichMich/MagicMirror",
-    category: "Outdated",
-    description: "Replace it by `MagicMirrorOrg/MagicMirror`."
-  },
-  {
-    pattern: "/_/husky.sh",
-    category: "Outdated",
-    description: "Since husky v9 you may not need this anymore."
-  },
-  {
-    pattern: "npm install electron-rebuild",
-    category: "Deprecated",
-    description: "Replace it with `@electron/rebuild`"
-  },
-  {
-    pattern: "api.openweathermap.org/data/2.5",
-    category: "Deprecated",
-    description:
-      "OpenWeather API 2.5 is deprecated since June 2024. Please update to 3.0."
-  },
-  {
-    pattern: "https://cdnjs.cloudflare.com",
-    category: "Recommendation",
-    description:
-      "It looks like a package is loaded via CDN. It would be better if the package were installed locally via npm."
-  },
-  {
-    pattern: "https://cdn.jsdelivr.net",
-    category: "Recommendation",
-    description:
-      "It looks like a package is loaded via CDN. It would be better if the package were installed locally via npm."
-  },
-  {
-    pattern: "eslint .",
-    category: "Recommendation",
-    description:
-      "The period at the end of the command is not necessary since v9. It is recommended to remove it."
-  },
-  {
-    pattern: "eslint --fix .",
-    category: "Recommendation",
-    description:
-      "The period at the end of the command is not necessary since v9. It is recommended to remove it."
-  },
-  {
-    pattern: "git checkout",
-    category: "Recommendation",
-    description:
-      "Replace it with `git switch`. It's not a drop-in replacement, so make sure to check the documentation."
-  }
-];
-
-const PACKAGE_JSON_RULES = [
-  {
-    pattern: "\"electron-rebuild\"",
-    category: "Deprecated",
-    description: "Replace it with `@electron/rebuild`"
-  },
-  {
-    pattern: "eslint-config-airbnb",
-    category: "Deprecated",
-    description: "Replace it with modern ESLint configuration."
-  },
-  {
-    pattern: "\"eslint-plugin-json\"",
-    category: "Recommendation",
-    description: "Replace it by `@eslint/json`."
-  },
-  {
-    pattern: "eslint-plugin-jsonc",
-    category: "Recommendation",
-    description: "Replace it by `@eslint/json`."
-  },
-  {
-    pattern: "\"grunt\"",
-    category: "Deprecated",
-    description:
-      "Grunt is practically unmaintained. Move on to something better."
-  },
-  {
-    pattern: "husky install",
-    category: "Outdated",
-    description: "Since husky v9 you may not need this anymore."
-  },
-  {
-    pattern: "\"needle\"",
-    category: "Recommendation",
-    description:
-      "Replace it with built-in fetch ([documentation](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch); [example module with fetch implemented](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/node_helper.js))."
-  },
-  {
-    pattern: "rollup-plugin-banner",
-    category: "Deprecated",
-    description: "Replace it with built-in banner."
-  },
-  {
-    pattern: "stylelint-config-prettier",
-    category: "Deprecated",
-    description: "Update `stylelint` and remove `stylelint-config-prettier`."
-  }
-];
-
-const PACKAGE_LOCK_RULES = [
-  {
-    pattern: "\"lockfileVersion\": 1",
-    category: "Deprecated",
-    description: "Run `npm update` to update to lockfileVersion 3."
-  },
-  {
-    pattern: "\"lockfileVersion\": 2",
-    category: "Deprecated",
-    description: "Run `npm update` to update to lockfileVersion 3."
-  }
-];
 
 const README_MODULES_FALSE_POSITIVES = new Set([
   "MMM-pages",
@@ -742,8 +440,9 @@ async function analyzeModule({ module, moduleDir, issues }) {
         continue;
       }
       for (const rule of PACKAGE_LOCK_RULES) {
-        if (content.includes(rule.pattern)) {
-          addIssue(issues, formatRuleIssue(rule, fileName));
+        const match = findMatchingPattern(rule, content);
+        if (match) {
+          addIssue(issues, formatRuleIssue(rule, fileName, match));
         }
       }
       continue;
@@ -779,15 +478,17 @@ async function analyzeModule({ module, moduleDir, issues }) {
     }
 
     for (const rule of TEXT_RULES) {
-      if (content.includes(rule.pattern)) {
-        addIssue(issues, formatRuleIssue(rule, fileName));
+      const match = findMatchingPattern(rule, content);
+      if (match) {
+        addIssue(issues, formatRuleIssue(rule, fileName, match));
       }
     }
 
     if (fileName === "package.json") {
       for (const rule of PACKAGE_JSON_RULES) {
-        if (content.includes(rule.pattern)) {
-          addIssue(issues, formatRuleIssue(rule, fileName));
+        const match = findMatchingPattern(rule, content);
+        if (match) {
+          addIssue(issues, formatRuleIssue(rule, fileName, match));
         }
       }
     }
