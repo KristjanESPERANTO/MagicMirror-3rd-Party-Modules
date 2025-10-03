@@ -11,7 +11,7 @@ This document captures the long-term improvements we want to implement in the mo
 
 ## Workstreams
 
-### 1. Pipeline Architecture & Orchestration
+### 1. Pipeline Architecture & Orchestration - ✅ Completed
 
 | Task | Description                                                                                                                                                                      | Dependencies | Effort |
 | ---- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | ------ |
@@ -22,15 +22,15 @@ This document captures the long-term improvements we want to implement in the mo
 | P1.5 | Final artifact schemas & validation — rollout completed and documented (see contributor guide & release notes) ✅ Completed Sep 2025                                             | P1.3         | M      |
 | P1.6 | Consolidate shared schema definitions (shared `$defs` / generator) to keep stage contracts in sync ✅ Completed Sep 2025                                                         | P1.3         | S      |
 
-### 2. Runtime & Codebase Consolidation
+### 2. Runtime & Codebase Consolidation - ✅ Completed Oct 2025
 
-| Task | Description                                                                                                                                                                          | Dependencies | Effort |
-| ---- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ------------ | ------ |
-| P2.1 | Extract shared utilities (HTTP, Git, FS, logging, rate-limiter) into a reusable Node/TS module ✅ Completed Sep 2025                                                                 | none         | M      |
-| P2.2 | Port `get_modules.py` to TypeScript, reusing the shared utilities ✅ Completed Sep 2025 (Python fallback removed)                                                                    | P2.1         | L      |
-| P2.3 | Port `check_modules.py` logic incrementally (start with fast checks, then optional heavy tasks) ✅ Completed Oct 2025 (TS stage default, Python fallback kept via `--checks=legacy`) | P2.1         | XL     |
-| P2.4 | Enable TypeScript build tooling (tsconfig, lint) and cover new modules with tests                                                                                                    | P2.1         | M      |
-| P2.5 | Centralize `package.json` ingestion so data is parsed once and shared across stages                                                                                                  | P2.1         | M      |
+| Task | Description                                                                                                                                                                    | Dependencies | Effort |
+| ---- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ------------ | ------ |
+| P2.1 | Extract shared utilities (HTTP, Git, FS, logging, rate-limiter) into a reusable Node/TS module ✅ Completed Sep 2025                                                           | none         | M      |
+| P2.2 | Port `get_modules.py` to TypeScript, reusing the shared utilities ✅ Completed Sep 2025 (Python fallback removed)                                                              | P2.1         | L      |
+| P2.3 | Port `check_modules.py` logic incrementally (start with fast checks, then optional heavy tasks) ✅ Completed Oct 2025 (TS stage now fully TypeScript; Python fallback removed) | P2.1         | XL     |
+| P2.4 | Extend ESLint config to cover TypeScript files (via `typescript-eslint` v8+) and add unit tests for shared utilities ✅ Completed Oct 2025                                     | P2.1         | M      |
+| P2.5 | Centralize `package.json` ingestion so data is parsed once and shared across stages ✅ Completed Oct 2025                                                                      | P2.1         | M      |
 
 ### 3. Robustness & Performance Safety Nets
 
@@ -47,7 +47,7 @@ This document captures the long-term improvements we want to implement in the mo
 
 | Task  | Description                                                                                                                                                                     | Dependencies | Effort |
 | ----- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | ------ |
-| P4.1  | Split checks into a registry with metadata (category, severity, auto-fixable)                                                                                                   | P2.3         | M      |
+| P4.1  | Split checks into a registry with metadata (category, severity, auto-fixable) ✅ Completed Oct 2025                                                                             | P2.3         | M      |
 | P4.2  | Add configuration file to toggle check groups (`fast`, `deep`, optional ESLint/ncu)                                                                                             | P4.1         | S      |
 | P4.3  | Create sample dataset + regression tests for check outputs (golden files), reusing the curated fixtures where possible                                                          | P4.1         | M      |
 | P4.4  | Provide CLI progress UI and Markdown summary per run                                                                                                                            | P1.2         | S      |
@@ -57,6 +57,9 @@ This document captures the long-term improvements we want to implement in the mo
 | P4.8  | Flag modules with multi-year inactivity that are not marked `outdated` and nudge maintainers to review status                                                                   | P4.1         | M      |
 | P4.9  | Inspect Dependabot configs for schedule scope (monthly cadence, production-only) and suggest adjustments                                                                        | P4.1         | M      |
 | P4.10 | Evaluate migrating the `ntl` task menu into a `pipeline` subcommand (interactive launcher built on the orchestrator CLI) _(low priority)_                                       | P1.2         | S      |
+| P4.11 | Extend the rule registry to cover every pipeline check stage (legacy JS script + future additions)                                                                              | P4.1         | L      |
+| P4.R1 | Audit every rule in the registry for relevance and clarity                                                                                                                      | P4.11        | S      |
+| P4.R2 | Audit every recommendation in the registry for relevance and consistency                                                                                                        | P4.11        | S      |
 
 ### 5. Documentation & Collaboration
 
@@ -81,23 +84,24 @@ These are the guiding habits we should keep front-of-mind while the modernizatio
 
 1. **Keep the shared context fresh**: Maintain the updated architecture diagrams so ongoing work on the orchestrator and TypeScript stages stays aligned.
 2. **Lean on the shared utilities**: Continue building new functionality on the consolidated HTTP/Git/FS/rate-limiter toolkit established in P2.1 to avoid regressions.
-3. **Keep parity guardrails active**: The [P2.3 rollout plan](pipeline/p2.3-rollout-plan.md) is complete; continue running the comparison harness to monitor the TypeScript stage while we iterate on new checks.
+3. **Keep parity guardrails active**: The [check modules reference](pipeline/check-modules-reference.md) consolidates the fixtures, rule inventory, and harness follow-ups—review it periodically while we iterate on new checks.
 4. **Add tests alongside migrations** to prevent regressions and make future refactors safer.
 
 ### Recurring documentation tasks
 
 Routine reminders for keeping the written guidance in sync with the code:
 
-- Update `docs/architecture.md` as TypeScript stages replace Python counterparts (P2.2, P2.3) and whenever shared utilities (P2.1) materially change the architecture overview.
+- Update `docs/architecture.md` whenever stage runtimes or shared utilities shift (for example, when Node scripts move to TypeScript or shared helpers gain new capabilities).
 - Align updates in `docs/CONTRIBUTING.md` with each orchestrator milestone so local workflows stay in sync.
 
 ## Next Concrete Steps
 
-Immediate actions that move the roadmap forward:
+Immediate action items:
 
-1. Kick off P2.4: land TypeScript build/lint tooling across the new stages and wire them into CI.
-2. Expand the comparison harness diff coverage (README/HTML, stats thresholds) per the fixture plan follow-ups.
-3. Prioritize P4.x registry metadata work now that parity is secured (define categories/severities for existing checks).
+1. Implement the repository-hosted golden artifact strategy: produce deterministic outputs, neutralize volatile fields, and add a CI comparison step (supports P4.3).
+2. Extend the rule registry to cover every pipeline check stage before layering new features (P4.11).
+3. Implement the check-group configuration file so runs can toggle `fast`, `deep`, and optional integrations (P4.2).
+4. Build the golden regression fixtures for check outputs to protect future refactors (P4.3).
 
 ---
 

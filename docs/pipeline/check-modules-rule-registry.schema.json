@@ -2,7 +2,7 @@
   "$schema": "http://json-schema.org/draft-07/schema#",
   "title": "Check Modules Rule Registry",
   "type": "object",
-  "description": "Schema describing the rule registry consumed by the TypeScript check-modules stage (P2.3).",
+  "description": "Schema describing the rule registry consumed by the Stage 5 check-modules implementation.",
   "additionalProperties": false,
   "properties": {
     "schemaVersion": {

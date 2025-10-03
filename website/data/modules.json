@@ -438,13 +438,14 @@
     },
     {
       "name": "MMM-AlexaControl",
-      "category": "Voice Control",
+      "category": "Outdated Modules",
       "url": "https://github.com/JosefJantzen/MMM-AlexaControl",
       "id": "JosefJantzen/MMM-AlexaControl",
       "maintainer": "JosefJantzen",
       "maintainerURL": "https://github.com/JosefJantzen",
       "description": "The MMM-AlexaControl module allows you to control your Mirror with Alexa (every device that support Wemos devices). You can turn it on and off, change the page and send notifications to other modules.",
-      "issues": true,
+      "issues": false,
+      "outdated": "Abandoned. No longer works. Repo has been archived at 2025-07-15.",
       "stars": 49,
       "isArchived": true,
       "license": "MIT",
@@ -454,7 +455,7 @@
         "fauxmo"
       ],
       "image": "public-AlexaLogoGrey.jpg",
-      "defaultSortWeight": 809,
+      "defaultSortWeight": 900,
       "lastCommit": "2025-07-15T15:01:29+02:00"
     },
     {
@@ -919,7 +920,7 @@
       "license": "ISC",
       "image": "img-demo.jpg",
       "defaultSortWeight": 10,
-      "lastCommit": "2024-10-22T19:41:55+01:00"
+      "lastCommit": "2025-10-02T20:05:03+01:00"
     },
     {
       "name": "MMM-AuthenticatedUptimeKuma",
@@ -1130,7 +1131,7 @@
       "issues": true,
       "stars": 2,
       "license": "NOASSERTION",
-      "defaultSortWeight": 16,
+      "defaultSortWeight": 15,
       "lastCommit": "2022-09-15T22:47:06+02:00"
     },
     {
@@ -1266,7 +1267,7 @@
       "issues": true,
       "stars": 0,
       "license": "MIT",
-      "defaultSortWeight": 15,
+      "defaultSortWeight": 14,
       "lastCommit": "2025-02-21T21:31:51-06:00"
     },
     {
@@ -1799,7 +1800,7 @@
       "issues": true,
       "stars": 7,
       "license": "NOASSERTION",
-      "defaultSortWeight": 14,
+      "defaultSortWeight": 13,
       "lastCommit": "2021-04-12T17:23:56+02:00"
     },
     {
@@ -1812,6 +1813,10 @@
       "description": "Dynamic compliments leveraging Google Tasks.",
       "issues": true,
       "stars": 6,
+      "tags": [
+        "tasks",
+        "buller"
+      ],
       "license": "MIT",
       "image": "MMM-Buller-1.0.jpg",
       "defaultSortWeight": 13,
@@ -2552,7 +2557,7 @@
         "movie"
       ],
       "image": "example_1.jpg",
-      "defaultSortWeight": 6,
+      "defaultSortWeight": 5,
       "lastCommit": "2025-06-15T01:59:38+02:00"
     },
     {
@@ -3225,7 +3230,7 @@
       "issues": true,
       "stars": 0,
       "license": "NOASSERTION",
-      "defaultSortWeight": 12,
+      "defaultSortWeight": 11,
       "lastCommit": "2024-12-29T19:03:35+01:00"
     },
     {
@@ -3492,7 +3497,7 @@
         "entertainement"
       ],
       "image": "screenshot.jpg",
-      "defaultSortWeight": 10,
+      "defaultSortWeight": 9,
       "lastCommit": "2025-03-09T18:39:23+01:00"
     },
     {
@@ -3950,6 +3955,11 @@
       "issues": true,
       "stars": 10,
       "license": "MIT",
+      "tags": [
+        "dht22",
+        "temperature",
+        "humidity"
+      ],
       "defaultSortWeight": 13,
       "lastCommit": "2017-02-16T06:58:29+01:00"
     },
@@ -5113,7 +5123,7 @@
       "tags": [
         "facial recognition"
       ],
-      "defaultSortWeight": 16,
+      "defaultSortWeight": 15,
       "lastCommit": "2023-09-04T13:18:18+01:00"
     },
     {
@@ -6281,7 +6291,7 @@
       "maintainerURL": "https://github.com/tderflinger",
       "description": "Display sports data from your Garmin Connect(tm) account.",
       "issues": true,
-      "stars": 5,
+      "stars": 7,
       "license": "MIT",
       "image": "doc-screenshot-MMM-GConnect-Up.jpg",
       "defaultSortWeight": 19,
@@ -6474,7 +6484,7 @@
       "maintainerURL": "https://github.com/Eunanibus",
       "description": "Displays a rotating globe constructed of Hexadecimal shapes specifically formatted to look great on a MagicMirror.",
       "issues": true,
-      "stars": 45,
+      "stars": 46,
       "license": "MIT",
       "defaultSortWeight": 13,
       "lastCommit": "2020-09-15T14:01:40-07:00"
@@ -6863,6 +6873,15 @@
       "issues": true,
       "stars": 4,
       "license": "MIT",
+      "tags": [
+        "gpio",
+        "input",
+        "output",
+        "pigpio-client",
+        "buttons",
+        "pir",
+        "pwm"
+      ],
       "defaultSortWeight": 13,
       "lastCommit": "2024-01-16T21:54:37+01:00"
     },
@@ -8082,7 +8101,7 @@
       "maintainerURL": "https://github.com/mathew-fleisch",
       "description": "A simple way to cycle through a list of iframe sources. Example shows live video sources from YouTube and other webcam sources.",
       "issues": true,
-      "stars": 4,
+      "stars": 5,
       "license": "MIT",
       "defaultSortWeight": 11,
       "lastCommit": "2025-01-04T11:03:29-08:00"
@@ -8178,7 +8197,7 @@
         "media"
       ],
       "image": ".github-animate.jpg",
-      "defaultSortWeight": 11,
+      "defaultSortWeight": 10,
       "lastCommit": "2025-03-29T20:41:44-07:00"
     },
     {
@@ -8689,7 +8708,7 @@
         "shares"
       ],
       "image": "docs-example.jpg",
-      "defaultSortWeight": 6,
+      "defaultSortWeight": 5,
       "lastCommit": "2024-06-04T15:32:59+02:00"
     },
     {
@@ -8894,7 +8913,7 @@
         "table"
       ],
       "image": "example1.jpg",
-      "defaultSortWeight": 13,
+      "defaultSortWeight": 12,
       "lastCommit": "2025-09-17T10:05:33+02:00"
     },
     {
@@ -9187,7 +9206,7 @@
         "bandcamp",
         "pandora"
       ],
-      "defaultSortWeight": 8,
+      "defaultSortWeight": 7,
       "lastCommit": "2024-10-18T15:49:25+02:00"
     },
     {
@@ -9562,6 +9581,10 @@
       "issues": true,
       "stars": 4,
       "license": "MIT",
+      "tags": [
+        "events",
+        "local"
+      ],
       "image": "img-LocalEvents_ScreenShot.jpg",
       "defaultSortWeight": 11,
       "lastCommit": "2023-01-16T14:15:17-06:00"
@@ -11033,7 +11056,7 @@
       "issues": true,
       "stars": 1,
       "hasGithubIssues": false,
-      "defaultSortWeight": 17,
+      "defaultSortWeight": 16,
       "lastCommit": "2019-12-14T21:46:27+11:00"
     },
     {
@@ -11081,7 +11104,7 @@
       ],
       "image": "assets-MMPM-UI-Homepage.jpg",
       "defaultSortWeight": -1,
-      "lastCommit": "2025-09-21T22:20:26-04:00"
+      "lastCommit": "2025-10-02T17:20:18-04:00"
     },
     {
       "name": "MMM-mmpm",
@@ -12059,7 +12082,7 @@
       "stars": 9,
       "license": "MIT",
       "image": "screenshot.jpg",
-      "defaultSortWeight": 5,
+      "defaultSortWeight": 6,
       "lastCommit": "2024-12-30T17:53:54+01:00"
     },
     {
@@ -12922,7 +12945,7 @@
         "movies"
       ],
       "image": "img-screenshot1.jpg",
-      "defaultSortWeight": 7,
+      "defaultSortWeight": 6,
       "lastCommit": "2025-08-31T19:11:38+02:00"
     },
     {
@@ -13849,7 +13872,7 @@
         "olympic games"
       ],
       "image": ".github-countries.jpg",
-      "defaultSortWeight": 16,
+      "defaultSortWeight": 15,
       "lastCommit": "2024-07-28T16:21:52+02:00"
     },
     {
@@ -14003,7 +14026,7 @@
         "spotify connect"
       ],
       "image": ".github-content-banner-social.jpg",
-      "defaultSortWeight": 8,
+      "defaultSortWeight": 7,
       "lastCommit": "2025-09-23T20:22:48-03:00"
     },
     {
@@ -15095,7 +15118,7 @@
       "issues": true,
       "stars": 0,
       "defaultSortWeight": 9,
-      "lastCommit": "2025-10-01T16:35:26-04:00"
+      "lastCommit": "2025-10-02T08:24:17-04:00"
     },
     {
       "name": "MMM-Planetarium",
@@ -15529,7 +15552,7 @@
       "issues": true,
       "stars": 2,
       "license": "NOASSERTION",
-      "defaultSortWeight": 8,
+      "defaultSortWeight": 7,
       "lastCommit": "2025-08-13T13:01:47+02:00"
     },
     {
@@ -15641,7 +15664,7 @@
       "issues": true,
       "stars": 0,
       "license": "NOASSERTION",
-      "defaultSortWeight": 11,
+      "defaultSortWeight": 10,
       "lastCommit": "2025-03-11T21:28:12-04:00"
     },
     {
@@ -16037,7 +16060,7 @@
         "clouds"
       ],
       "image": "img-example.jpg",
-      "defaultSortWeight": 8,
+      "defaultSortWeight": 7,
       "lastCommit": "2024-08-28T20:10:53+02:00"
     },
     {
@@ -16381,7 +16404,7 @@
       "maintainer": "Jopyth",
       "maintainerURL": "https://github.com/Jopyth",
       "description": "Cleanly shutdown or reboot your mirror, install and configure modules, and turn your monitor on and off from a simple web page, i.e. from your smartphone.",
-      "issues": false,
+      "issues": true,
       "stars": 555,
       "license": "MIT",
       "tags": [
@@ -16389,7 +16412,7 @@
         "control"
       ],
       "image": "img-main_screenshot.jpg",
-      "defaultSortWeight": -27,
+      "defaultSortWeight": -26,
       "lastCommit": "2025-10-01T20:13:28+02:00"
     },
     {
@@ -17759,7 +17782,7 @@
       "issues": true,
       "stars": 0,
       "license": "NOASSERTION",
-      "defaultSortWeight": 11,
+      "defaultSortWeight": 10,
       "lastCommit": "2025-07-31T17:17:14+05:30"
     },
     {
@@ -18289,7 +18312,7 @@
       "issues": true,
       "stars": 1,
       "license": "NOASSERTION",
-      "defaultSortWeight": 10,
+      "defaultSortWeight": 9,
       "lastCommit": "2025-04-16T07:53:02+01:00"
     },
     {
@@ -19150,7 +19173,7 @@
         "diesel",
         "tanken"
       ],
-      "defaultSortWeight": 8,
+      "defaultSortWeight": 7,
       "lastCommit": "2025-04-12T22:21:44+02:00"
     },
     {
@@ -21215,6 +21238,11 @@
       "issues": true,
       "stars": 0,
       "license": "MIT",
+      "tags": [
+        "weather",
+        "hourly",
+        "by day"
+      ],
       "image": "images-WeatherHourlyByDay.jpg",
       "defaultSortWeight": 7,
       "lastCommit": "2022-10-06T14:08:58-05:00"

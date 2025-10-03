@@ -34,7 +34,7 @@ Each fixture directory contains:
 2. Prefer synthetic fixtures when the real module is unstable or likely to change upstream.
 3. When mirroring a real module, record the upstream commit SHA in `FIXTURE.md` and remove unnecessary git history by running `git checkout --orphan fixture && git commit -am "fixture"`.
 4. Ensure every rule listed in the registry has at least one fixture (baseline or synthetic) that will trigger it. Record a short explanation in `FIXTURE.md` so future updates know the expected findings.
-5. When adding a new fixture, update `docs/pipeline/p2.3-fixture-selection.md` with the coverage matrix and, if needed, regenerate the curated dataset under `fixtures/data/`.
+5. When adding a new fixture, update `docs/pipeline/check-modules-reference.md` with the coverage matrix and, if needed, regenerate the curated dataset under `fixtures/data/`.
 
 ## Next steps
 

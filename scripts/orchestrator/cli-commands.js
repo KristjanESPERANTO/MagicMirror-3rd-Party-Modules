@@ -123,13 +123,6 @@ function buildDoctorCommandHandler ({minNodeMajorVersion, execFileAsync}) {
       details: nodeResult.details
     });
 
-    const pythonResult = await checkCommandAvailability(execFileAsync, "python3", ["--version"]);
-    printCheckResult({
-      label: "python3 available",
-      status: pythonResult.status,
-      details: pythonResult.details
-    });
-
     const gitResult = await checkCommandAvailability(execFileAsync, "git", ["--version"]);
     printCheckResult({
       label: "git available",
@@ -137,7 +130,7 @@ function buildDoctorCommandHandler ({minNodeMajorVersion, execFileAsync}) {
       details: gitResult.details
     });
 
-    const hasFailure = [nodeResult, pythonResult, gitResult].some((result) => result.status === "fail");
+    const hasFailure = [nodeResult, gitResult].some((result) => result.status === "fail");
 
     if (hasFailure) {
       console.log("\nOne or more checks failed. Please address the issues above.");

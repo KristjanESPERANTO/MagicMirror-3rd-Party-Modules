@@ -7,6 +7,7 @@ import json from "@eslint/json";
 import markdown from "@eslint/markdown";
 import packageJson from "eslint-plugin-package-json";
 import stylistic from "@stylistic/eslint-plugin";
+import tseslint from "typescript-eslint";
 
 export default defineConfig([
   {
@@ -77,6 +78,28 @@ export default defineConfig([
       "prefer-named-capture-group": "off",
       "require-atomic-updates": "off",
       "sort-keys": "off"
+    }
+  },
+  {
+    files: ["**/*.ts"],
+    languageOptions: {
+      ecmaVersion: "latest",
+      globals: {
+        ...globals.node
+      },
+      parser: tseslint.parser,
+      parserOptions: {
+        projectService: true
+      }
+    },
+    plugins: {
+      "@typescript-eslint": tseslint.plugin,
+      "@stylistic": stylistic
+    },
+    rules: {
+      ...tseslint.configs.recommended.rules,
+      ...tseslint.configs.stylistic.rules,
+      "@typescript-eslint/no-explicit-any": "warn"
     }
   },
   {files: ["**/*.json"], ignores: ["package.json", "package-lock.json"], plugins: {json}, extends: ["json/recommended"], language: "json/json"},

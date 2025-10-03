@@ -1,4 +1,8 @@
-FROM nikolaik/python-nodejs:latest AS builder
+FROM node:24-slim AS builder
+
+RUN apt-get update \
+	&& apt-get install -y --no-install-recommends git ca-certificates \
+	&& rm -rf /var/lib/apt/lists/*
 
 WORKDIR /workspace
 
@@ -10,7 +14,6 @@ set -e
 git config --global --add safe.directory /workspace
 git log -1
 export GITHUB_TOKEN="${GITHUB_TOKEN}"
-pip install requests
 npm clean-install
 node --run all
 EOF

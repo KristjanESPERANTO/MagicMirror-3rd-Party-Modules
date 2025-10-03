@@ -12,7 +12,7 @@ Task **P1.2** delivered a lightweight Node.js command-line interface that reads 
 - Persist run metadata (planned, skipped, succeeded, failed) to `.pipeline-runs/` so partial runs stay auditable.
 - Offer composable filters (`--only`, `--skip`, future `--from`/`--to`) that unlock partial runs without duplicating scripts (supports P1.4).
 - Surface consistent pre/post hooks (e.g. schema validation, cleanup) and failure handling across all stages.
-- Keep Python stages runnable by invoking the existing scripts until they are ported (ties into P2.x workstream).
+- Run every pipeline stage through the Node.js toolchain, including the TypeScript implementation of Stage 5.
 
 ## Stakeholders
 
@@ -33,7 +33,7 @@ Task **P1.2** delivered a lightweight Node.js command-line interface that reads 
    - `pipeline describe <stage|pipeline>` — print detailed metadata for inspection.
    - `pipeline run <pipelineId>` — execute stages sequentially (default: `full-refresh`).
    - `pipeline logs [runId|--latest]` — inspect structured run metadata saved to `.pipeline-runs/`.
-   - `pipeline doctor` — check external prerequisites (Node/Python versions, Git availability, required env vars).
+     - `pipeline doctor` — check external prerequisites (Node.js version, Git availability, required env vars).
 
 2. **Execution Engine** — Core runtime that:
    - Loads the stage graph via `loadStageGraph` and resolves an execution plan with `buildExecutionPlan`.
@@ -41,10 +41,8 @@ Task **P1.2** delivered a lightweight Node.js command-line interface that reads 
    - Runs stages strictly sequentially (no parallel execution), prepares the environment, logs start/end, and invokes the configured command.
    - Captures exit codes, stdout/stderr, and wraps failures with actionable messages before persisting result metadata.
 
-3. **Stage Runner Abstraction** — Normalizes execution for different runtimes:
-   - Node stages run via `node <script>`.
-     - TypeScript stages run via `node --disable-warning=ExperimentalWarning <script.ts>`, leveraging the shared utility toolkit without a separate build step on Node.js 24+.
-   - Remaining Python stages run via `python3 <script.py>` using the system interpreter (no enforced virtualenv) with `PYTHONPATH` adjustments as needed until they are migrated.
+3. **Stage Runner Abstraction** — Normalizes execution for the Node runtime:
+   - All stages run via `node <script>`. The TypeScript implementation of Stage 5 (`scripts/check-modules/index.ts`) executes directly on Node.js 24+ without a separate build step, reusing the shared utility toolkit.
 
 4. **State & Artifacts** — Maintains an execution ledger (`.pipeline-runs/<timestamp>_<pipeline>.json`) with start/end timestamps, per-stage status (`succeeded`, `skipped`, `failed`, `pending`), durations, filters, and failure metadata, enabling future resume functionality and local auditing even when stages are filtered out.
 
@@ -91,4 +89,3 @@ The original exploration surfaced a few ideas that remain on the backlog:
 
 - Stage runner resolves script paths from the graph and executes them raw (no refactor needed initially).
 - Shared helper for environment preparation (e.g. ensuring `modules_temp` rotation) remains a follow-up task and can live under `scripts/lib/pipeline/` when extracted.
-- Python environment detection: check `python3 --version` upfront; optional configuration to point at a virtualenv.

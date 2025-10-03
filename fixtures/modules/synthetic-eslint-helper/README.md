@@ -1,3 +1,3 @@
 # ESLint Helper Fixture
 
-Running the legacy `eslint_checks` helper against this repository will surface the expected lint violations for parity comparisons.
+Running the Stage 5 ESLint helper against this repository surfaces the expected lint violations for regression testing.

@@ -300,13 +300,14 @@
     },
     {
       "name": "MMM-AlexaControl",
-      "category": "Voice Control",
+      "category": "Outdated Modules",
       "url": "https://github.com/JosefJantzen/MMM-AlexaControl",
       "id": "JosefJantzen/MMM-AlexaControl",
       "maintainer": "JosefJantzen",
       "maintainerURL": "https://github.com/JosefJantzen",
       "description": "The MMM-AlexaControl module allows you to control your Mirror with Alexa (every device that support Wemos devices). You can turn it on and off, change the page and send notifications to other modules.",
       "issues": [],
+      "outdated": "Abandoned. No longer works. Repo has been archived at 2025-07-15.",
       "stars": 49,
       "isArchived": true,
       "license": "MIT"
@@ -4437,7 +4438,7 @@
       "maintainerURL": "https://github.com/tderflinger",
       "description": "Display sports data from your Garmin Connect(tm) account.",
       "issues": [],
-      "stars": 5,
+      "stars": 7,
       "license": "MIT"
     },
     {
@@ -4580,7 +4581,7 @@
       "maintainerURL": "https://github.com/Eunanibus",
       "description": "Displays a rotating globe constructed of Hexadecimal shapes specifically formatted to look great on a MagicMirror.",
       "issues": [],
-      "stars": 45,
+      "stars": 46,
       "license": "MIT"
     },
     {
@@ -5753,7 +5754,7 @@
       "maintainerURL": "https://github.com/mathew-fleisch",
       "description": "A simple way to cycle through a list of iframe sources. Example shows live video sources from YouTube and other webcam sources.",
       "issues": [],
-      "stars": 4,
+      "stars": 5,
       "license": "MIT"
     },
     {

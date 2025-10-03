@@ -1,3 +1,4 @@
+import {buildDiffMarkdown} from "./diff-markdown.js";
 import fsPromises from "node:fs/promises";
 import path from "node:path";
 
@@ -7,6 +8,22 @@ export const DIFF_OUTPUT_FILES = {
   json: "diff.json",
   markdown: "diff.md"
 };
+
+const DEFAULT_NUMERIC_WARNING_TOLERANCE = 0;
+const STATS_NUMERIC_WARNING_TOLERANCE = {
+  modulesWithImageCounter: 1,
+  modulesWithIssuesCounter: 1,
+  issueCounter: 3
+};
+
+const DEFAULT_MAP_WARNING_TOLERANCE = 0;
+const STATS_MAP_WARNING_TOLERANCE = {
+  repositoryHoster: 1,
+  maintainer: 1
+};
+
+const MAX_TEXT_DIFF_PREVIEW = 20;
+const LAST_UPDATE_REGEX = /^last update:/iu;
 
 function findArtifact (runResult, artifactId) {
   const artifacts = runResult?.capturedArtifacts ?? [];
@@ -26,6 +43,24 @@ async function loadJsonArtifact (runDirectory, runResult, artifactId) {
     const file = await readFile(absolutePath, "utf8");
     const parsed = JSON.parse(file);
     return {status: "ok", path: absolutePath, data: parsed};
+  } catch (error) {
+    const message = error instanceof Error ? error.message : String(error);
+    return {status: "error", reason: `Failed to read '${artifactId}' for ${runResult.label}: ${message}`};
+  }
+}
+
+async function loadTextArtifact (runDirectory, runResult, artifactId) {
+  const artifact = findArtifact(runResult, artifactId);
+  if (!artifact) {
+    return {status: "missing", reason: `Artifact '${artifactId}' was not captured for ${runResult?.label ?? "unknown"}.`};
+  }
+
+  const stepDir = path.join(runDirectory, runResult.label ?? "");
+  const absolutePath = path.join(stepDir, artifact.relativePath);
+
+  try {
+    const file = await readFile(absolutePath, "utf8");
+    return {status: "ok", path: absolutePath, data: file};
   } catch (error) {
     const message = error instanceof Error ? error.message : String(error);
     return {status: "error", reason: `Failed to read '${artifactId}' for ${runResult.label}: ${message}`};
@@ -107,165 +142,222 @@ function diffStage5Modules (legacyData, tsData) {
     legacyOnly,
     tsOnly,
     issueDifferences,
-    hasDifferences: legacyOnly.length > 0 || tsOnly.length > 0 || issueDifferences.length > 0
+    hasDifferences: legacyOnly.length > 0 || tsOnly.length > 0 || issueDifferences.length > 0,
+    hasWarnings: false
   };
 }
 
-function diffCountMap (legacyMap, tsMap) {
+function diffCountMap (legacyMap, tsMap, tolerance = 0) {
   const legacyEntries = legacyMap && typeof legacyMap === "object" ? legacyMap : {};
   const tsEntries = tsMap && typeof tsMap === "object" ? tsMap : {};
 
   const keys = new Set([...Object.keys(legacyEntries), ...Object.keys(tsEntries)]);
   const differences = [];
+  const warnings = [];
 
   for (const key of keys) {
-    const legacyValue = legacyEntries[key] ?? 0;
-    const tsValue = tsEntries[key] ?? 0;
-    if (legacyValue !== tsValue) {
-      differences.push({key, legacyValue, tsValue});
+    const legacyRaw = legacyEntries[key] ?? 0;
+    const tsRaw = tsEntries[key] ?? 0;
+
+    const legacyValue = typeof legacyRaw === "number" ? legacyRaw : Number(legacyRaw);
+    const tsValue = typeof tsRaw === "number" ? tsRaw : Number(tsRaw);
+
+    const valuesAreNumeric = !Number.isNaN(legacyValue) && !Number.isNaN(tsValue);
+
+    if (!valuesAreNumeric) {
+      if (legacyRaw !== tsRaw) {
+        differences.push({key, legacyValue: legacyRaw, tsValue: tsRaw, delta: null, tolerance});
+      }
+    } else if (legacyValue !== tsValue) {
+      const delta = tsValue - legacyValue;
+      const entry = {key, legacyValue, tsValue, delta, tolerance};
+      if (Math.abs(delta) <= tolerance) {
+        warnings.push(entry);
+      } else {
+        differences.push(entry);
+      }
     }
   }
 
   return {
     differences,
-    hasDifferences: differences.length > 0
+    warnings,
+    hasDifferences: differences.length > 0,
+    hasWarnings: warnings.length > 0
   };
+}
+
+function classifyNumericDifference (key, legacyValueRaw, tsValueRaw) {
+  const legacyValue = typeof legacyValueRaw === "number" ? legacyValueRaw : Number(legacyValueRaw ?? 0);
+  const tsValue = typeof tsValueRaw === "number" ? tsValueRaw : Number(tsValueRaw ?? 0);
+
+  if (!Number.isFinite(legacyValue) || !Number.isFinite(tsValue)) {
+    if (legacyValueRaw === tsValueRaw) {
+      return {severity: null};
+    }
+
+    return {
+      severity: "difference",
+      entry: {
+        key,
+        legacyValue: legacyValueRaw ?? null,
+        tsValue: tsValueRaw ?? null,
+        delta: null,
+        tolerance: DEFAULT_NUMERIC_WARNING_TOLERANCE
+      }
+    };
+  }
+
+  if (legacyValue === tsValue) {
+    return {severity: null};
+  }
+
+  const tolerance = STATS_NUMERIC_WARNING_TOLERANCE[key] ?? DEFAULT_NUMERIC_WARNING_TOLERANCE;
+  const delta = tsValue - legacyValue;
+  const entry = {key, legacyValue, tsValue, delta, tolerance};
+
+  if (Math.abs(delta) <= tolerance) {
+    return {severity: "warning", entry};
+  }
+
+  return {severity: "difference", entry};
+}
+
+function isPlainObject (value) {
+  return Boolean(value) && typeof value === "object" && !Array.isArray(value);
 }
 
 function diffStats (legacyStats, tsStats) {
   if (!legacyStats || !tsStats) {
-    return {hasDifferences: true, numericDifferences: [], mapDifferences: [], missing: true};
+    return {hasDifferences: true, hasWarnings: false, numeric: {differences: [], warnings: []}, maps: {differences: [], warnings: []}, missing: true};
   }
 
   const ignoredKeys = new Set(["lastUpdate"]);
   const numericDifferences = [];
+  const numericWarnings = [];
   const mapDifferences = [];
+  const mapWarnings = [];
 
-  for (const [key, legacyValue] of Object.entries(legacyStats)) {
+  const legacyEntries = typeof legacyStats === "object" && legacyStats !== null ? legacyStats : {};
+  const tsEntries = typeof tsStats === "object" && tsStats !== null ? tsStats : {};
+  const keys = new Set([...Object.keys(legacyEntries), ...Object.keys(tsEntries)]);
+
+  for (const key of keys) {
     if (!ignoredKeys.has(key)) {
-      const tsValue = tsStats[key];
+      const legacyValue = legacyEntries[key];
+      const tsValue = tsEntries[key];
+      const isMapValue = isPlainObject(legacyValue) || isPlainObject(tsValue);
 
-      if (typeof legacyValue === "number" || typeof legacyValue === "string") {
-        if (legacyValue !== tsValue) {
-          numericDifferences.push({key, legacyValue, tsValue});
+      if (isMapValue) {
+        const tolerance = STATS_MAP_WARNING_TOLERANCE[key] ?? DEFAULT_MAP_WARNING_TOLERANCE;
+        const diff = diffCountMap(legacyValue ?? {}, tsValue ?? {}, tolerance);
+        if (diff.hasDifferences) {
+          mapDifferences.push({key, differences: diff.differences});
         }
-      } else if (legacyValue && typeof legacyValue === "object" && !Array.isArray(legacyValue)) {
-        const mapDiff = diffCountMap(legacyValue, tsValue ?? {});
-        if (mapDiff.hasDifferences) {
-          mapDifferences.push({key, differences: mapDiff.differences});
+        if (diff.hasWarnings) {
+          mapWarnings.push({key, warnings: diff.warnings});
+        }
+      } else {
+        const classification = classifyNumericDifference(key, legacyValue, tsValue);
+        if (classification.severity === "difference" && classification.entry) {
+          numericDifferences.push(classification.entry);
+        } else if (classification.severity === "warning" && classification.entry) {
+          numericWarnings.push(classification.entry);
         }
       }
-    }
-  }
-
-  for (const [key, tsValue] of Object.entries(tsStats)) {
-    const isIgnored = ignoredKeys.has(key);
-    const legacyHasKey = typeof legacyStats === "object" && legacyStats !== null && Object.hasOwn(legacyStats, key);
-    if (!isIgnored && !legacyHasKey) {
-      numericDifferences.push({key, legacyValue: null, tsValue});
     }
   }
 
   return {
-    numericDifferences,
-    mapDifferences,
-    hasDifferences: numericDifferences.length > 0 || mapDifferences.length > 0
+    numeric: {
+      differences: numericDifferences,
+      warnings: numericWarnings
+    },
+    maps: {
+      differences: mapDifferences,
+      warnings: mapWarnings
+    },
+    hasDifferences: numericDifferences.length > 0 || mapDifferences.length > 0,
+    hasWarnings: numericWarnings.length > 0 || mapWarnings.length > 0,
+    missing: false
   };
 }
 
-function buildDiffMarkdown ({stage5, stats}) {
-  const lines = ["# check-modules comparison diff", ""];
+function normalizeNewlines (content) {
+  return (content ?? "").replace(/\r\n/gu, "\n").replace(/\r/gu, "\n");
+}
 
-  if (!stage5 || !stats) {
-    lines.push("Comparison did not run due to missing data.");
-    return lines.join("\n");
+function normalizeMarkdownReport (content) {
+  const normalized = normalizeNewlines(content);
+  const lines = normalized
+    .split("\n")
+    .map((line) => line.trimEnd())
+    .filter((line) => !LAST_UPDATE_REGEX.test(line.trim()));
+
+  return lines.join("\n").trim();
+}
+
+function normalizeHtmlReport (content) {
+  return normalizeNewlines(content).trim();
+}
+
+function summarizeLineDifferences (legacyText, tsText, limit = MAX_TEXT_DIFF_PREVIEW) {
+  const legacyLines = legacyText.split("\n");
+  const tsLines = tsText.split("\n");
+  const maxLines = Math.max(legacyLines.length, tsLines.length);
+  const differences = [];
+
+  for (let index = 0; index < maxLines; index += 1) {
+    const legacyLine = legacyLines[index] ?? null;
+    const tsLine = tsLines[index] ?? null;
+
+    if (legacyLine !== tsLine) {
+      differences.push({
+        line: index + 1,
+        legacy: legacyLine,
+        ts: tsLine
+      });
+
+      if (differences.length >= limit) {
+        break;
+      }
+    }
   }
 
-  if (stage5.hasDifferences || stats.hasDifferences) {
-    lines.push("⚠️ Differences detected between legacy and TypeScript artifacts.");
-  } else {
-    lines.push("✅ Legacy and TypeScript outputs match for evaluated artifacts.");
+  return differences;
+}
+
+function diffTextReport (legacyText, tsText, normalizer) {
+  const legacyNormalized = normalizer(legacyText ?? "");
+  const tsNormalized = normalizer(tsText ?? "");
+
+  if (legacyNormalized === tsNormalized) {
+    return {
+      hasDifferences: false,
+      hasWarnings: false,
+      differences: [],
+      warnings: []
+    };
   }
 
-  lines.push("");
-  lines.push("## Stage 5 modules");
+  return {
+    hasDifferences: true,
+    hasWarnings: false,
+    differences: summarizeLineDifferences(legacyNormalized, tsNormalized),
+    warnings: []
+  };
+}
 
-  if (stage5.hasDifferences) {
-    if (stage5.legacyOnly.length > 0) {
-      lines.push("### Modules only in legacy output");
-      for (const module of stage5.legacyOnly) {
-        lines.push(`- ${module.name} (${module.id})`);
-      }
-      lines.push("");
-    }
+function diffReports ({markdownLegacy, markdownTs, htmlLegacy, htmlTs}) {
+  const markdown = diffTextReport(markdownLegacy, markdownTs, normalizeMarkdownReport);
+  const html = diffTextReport(htmlLegacy, htmlTs, normalizeHtmlReport);
 
-    if (stage5.tsOnly.length > 0) {
-      lines.push("### Modules only in TypeScript output");
-      for (const module of stage5.tsOnly) {
-        lines.push(`- ${module.name} (${module.id})`);
-      }
-      lines.push("");
-    }
-
-    if (stage5.issueDifferences.length > 0) {
-      lines.push("### Issue differences");
-      for (const diff of stage5.issueDifferences) {
-        lines.push(`- ${diff.name} (${diff.id})`);
-        if (diff.removedIssues.length > 0) {
-          lines.push("  - Removed issues:");
-          for (const issue of diff.removedIssues) {
-            lines.push(`    - ${issue}`);
-          }
-        }
-        if (diff.addedIssues.length > 0) {
-          lines.push("  - Added issues:");
-          for (const issue of diff.addedIssues) {
-            lines.push(`    + ${issue}`);
-          }
-        }
-      }
-      lines.push("");
-    }
-
-    if (stage5.legacyOnly.length === 0 && stage5.tsOnly.length === 0 && stage5.issueDifferences.length === 0) {
-      lines.push("No module-level differences found after normalization.");
-      lines.push("");
-    }
-  } else {
-    lines.push("No module-level differences found.");
-  }
-
-  lines.push("## Stats");
-
-  if (stats.hasDifferences) {
-    if (stats.numericDifferences.length > 0) {
-      lines.push("### Numeric differences");
-      for (const diff of stats.numericDifferences) {
-        lines.push(`- ${diff.key}: legacy=${diff.legacyValue ?? "∅"}, ts=${diff.tsValue ?? "∅"}`);
-      }
-      lines.push("");
-    }
-
-    if (stats.mapDifferences.length > 0) {
-      lines.push("### Map differences");
-      for (const mapDiff of stats.mapDifferences) {
-        lines.push(`- ${mapDiff.key}`);
-        for (const entry of mapDiff.differences) {
-          lines.push(`  - ${entry.key}: legacy=${entry.legacyValue}, ts=${entry.tsValue}`);
-        }
-      }
-      lines.push("");
-    }
-
-    if (stats.numericDifferences.length === 0 && stats.mapDifferences.length === 0) {
-      lines.push("No stat differences detected after normalization.");
-      lines.push("");
-    }
-  } else {
-    lines.push("Stats match after ignoring timestamp fields.");
-  }
-
-  return lines.join("\n");
+  return {
+    markdown,
+    html,
+    hasDifferences: markdown.hasDifferences || html.hasDifferences,
+    hasWarnings: markdown.hasWarnings || html.hasWarnings
+  };
 }
 
 export async function performDiff ({runDirectory, results}) {
@@ -306,15 +398,43 @@ export async function performDiff ({runDirectory, results}) {
     return {status: "error", reason: reasons.join(" ")};
   }
 
+  const markdownLegacy = await loadTextArtifact(runDirectory, legacyRun, "result.md");
+  const markdownTs = await loadTextArtifact(runDirectory, tsRun, "result.md");
+
+  if (markdownLegacy.status !== "ok" || markdownTs.status !== "ok") {
+    const reasons = [markdownLegacy, markdownTs]
+      .filter((item) => item.status !== "ok")
+      .map((item) => item.reason ?? "Unknown report artifact error.");
+    return {status: "error", reason: reasons.join(" ")};
+  }
+
+  const htmlLegacy = await loadTextArtifact(runDirectory, legacyRun, "result.html");
+  const htmlTs = await loadTextArtifact(runDirectory, tsRun, "result.html");
+
+  if (htmlLegacy.status !== "ok" || htmlTs.status !== "ok") {
+    const reasons = [htmlLegacy, htmlTs]
+      .filter((item) => item.status !== "ok")
+      .map((item) => item.reason ?? "Unknown report artifact error.");
+    return {status: "error", reason: reasons.join(" ")};
+  }
+
   const stage5Diff = diffStage5Modules(stage5Legacy.data, stage5Ts.data);
   const statsDiff = diffStats(statsLegacy.data, statsTs.data);
+  const reportsDiff = diffReports({
+    markdownLegacy: markdownLegacy.data,
+    markdownTs: markdownTs.data,
+    htmlLegacy: htmlLegacy.data,
+    htmlTs: htmlTs.data
+  });
 
   const summary = {
     stage5: stage5Diff,
-    stats: statsDiff
+    stats: statsDiff,
+    reports: reportsDiff
   };
 
-  const hasDifferences = stage5Diff.hasDifferences || statsDiff.hasDifferences;
+  const hasDifferences = Boolean(stage5Diff.hasDifferences || statsDiff.hasDifferences || reportsDiff.hasDifferences);
+  const hasWarnings = Boolean(stage5Diff.hasWarnings || statsDiff.hasWarnings || reportsDiff.hasWarnings);
 
   const diffJsonPath = path.join(runDirectory, DIFF_OUTPUT_FILES.json);
   const diffMarkdownPath = path.join(runDirectory, DIFF_OUTPUT_FILES.markdown);
@@ -324,14 +444,31 @@ export async function performDiff ({runDirectory, results}) {
 
   if (hasDifferences) {
     console.warn("[compare] Differences detected between legacy and TypeScript outputs.");
+  } else if (hasWarnings) {
+    console.warn("[compare] Outputs match within configured thresholds; review warnings for context.");
   } else {
     console.log("[compare] No differences detected between legacy and TypeScript outputs.");
   }
 
+  let status = "matched";
+  if (hasDifferences) {
+    status = "differences";
+  } else if (hasWarnings) {
+    status = "warnings";
+  }
+
   return {
-    status: hasDifferences ? "differences" : "matched",
+    status,
     summary,
     summaryPath: diffJsonPath,
     markdownPath: diffMarkdownPath
   };
 }
+
+export {
+  diffStage5Modules,
+  diffStats,
+  diffReports,
+  normalizeMarkdownReport as normalizeMarkdownForDiff,
+  summarizeLineDifferences
+};

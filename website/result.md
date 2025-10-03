@@ -1,6 +1,6 @@
 # Result of the module analysis
 
-Last update: 2025-10-01T23:26:54+02:00
+Last update: 2025-10-03T13:43:21+02:00
 
 ## General notes
 
@@ -13,8 +13,8 @@ Last update: 2025-10-01T23:26:54+02:00
 |:---------------------|:--------:|
 | modules analyzed     |   1300   |
 | maintainers          |    745   |
-| modules with issues  |   1298   |
-| issues               |  12371   |
+| modules with issues  |   1299   |
+| issues               |  12342   |
 | modules at github    |   1287   |
 | modules at gitlab    |     12   |
 | modules at bitbucket |      1   |
@@ -155,8 +155,8 @@ Last update: 2025-10-01T23:26:54+02:00
 
 ### [MMM-affluences by kahllenny](https://github.com/kahllenny/MMM-affluences)
 
-1. Recommendation: Found `npm run` in file `package.json`: Replace it with `node --run`. This is a more modern way to run scripts, without the need for npm.
-2. Recommendation: Found `eslint .` in file `package.json`: The period at the end of the command is not necessary since v9. It is recommended to remove it.
+1. Recommendation: Found `npm run` in file `package.json`: Prefer `node --run` over invoking npm run directly.
+2. Recommendation: Found `eslint .` in file `package.json`: Drop the trailing '.' when invoking ESLint v9 or newer.
 3. Recommendation: There is no CHANGELOG file. It is recommended to add one ([example CHANGELOG file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CHANGELOG.md)).
 4. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
 5. Recommendation: There is no dependabot configuration file. It is recommended to add one ([example dependabot file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/.github/dependabot.yaml)).
@@ -164,9 +164,9 @@ Last update: 2025-10-01T23:26:54+02:00
 
 ### [MMM-Afvalwijzer by gertperdZA](https://github.com/gertperdZA/MMM-Afvalwijzer)
 
-1. Recommendation: Found `npm run` in file `package.json`: Replace it with `node --run`. This is a more modern way to run scripts, without the need for npm.
-2. Recommendation: Found `eslint .` in file `package.json`: The period at the end of the command is not necessary since v9. It is recommended to remove it.
-3. Recommendation: Found `npm run` in file `README.md`: Replace it with `node --run`. This is a more modern way to run scripts, without the need for npm.
+1. Recommendation: Found `npm run` in file `package.json`: Prefer `node --run` over invoking npm run directly.
+2. Recommendation: Found `eslint .` in file `package.json`: Drop the trailing '.' when invoking ESLint v9 or newer.
+3. Recommendation: Found `npm run` in file `README.md`: Prefer `node --run` over invoking npm run directly.
 4. Recommendation: The README seems not to have an update section (like `## Update`). Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Update-Instructions)).
 5. Recommendation: There is no CHANGELOG file. It is recommended to add one ([example CHANGELOG file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CHANGELOG.md)).
 6. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
@@ -177,7 +177,7 @@ Last update: 2025-10-01T23:26:54+02:00
 
 1. There is no `package.json`. We need this file to gather information about the module for the module list page.
 2. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
-3. Recommendation: Found `require("https")` in file `node_helper.js`: Replace "https" by "node:https".
+3. Recommendation: Found `require("https")` in file `node_helper.js`: Replace `https` with the scoped import `node:https`.
 4. Typo: Found `[MagicMirror]` in file `README.md`: Replace it with `[MagicMirror²]`.
 5. Outdated: Found `MichMich/MagicMirror` in file `README.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
 6. Recommendation: The README seems not to have an update section (like `## Update`). Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Update-Instructions)).
@@ -194,11 +194,11 @@ Last update: 2025-10-01T23:26:54+02:00
 1. `package.json` issue: No repository field.
 2. There are no keywords in 'package.json'. We would use them as tags on the module list page.
 3. No image found.
-4. Recommendation: Found `jshint` in file `Gruntfile.js`: Replace "jshint" by "eslint".
+4. Recommendation: Found `jshint` in file `Gruntfile.js`: Suggest migrating from JSHint to ESLint.
 5. Typo: Found `Magic Mirror` in file `MMM-AirbarHelper.js`: Replace it with `MagicMirror²`.
 6. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
 7. Deprecated: Found `"lockfileVersion": 1` in file `package-lock.json`: Run `npm update` to update to lockfileVersion 3.
-8. Deprecated: Found `"grunt"` in file `package.json`: Grunt is practically unmaintained. Move on to something better.
+8. Deprecated: Found `"grunt"` in file `package.json`: Grunt is effectively unmaintained. Move on to something modern.
 9. Outdated: Found `MichMich/MagicMirror` in file `README.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
 10. Recommendation: The README seems not to have an update section (like `## Update`). Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Update-Instructions)).
 11. Recommendation: The README seems not to have an install section (like `## Installation`). Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Installation-Instructions)).
@@ -248,15 +248,15 @@ Last update: 2025-10-01T23:26:54+02:00
 
 ### [MMM-AirQuality by CFenner](https://github.com/CFenner/MMM-AirQuality)
 
-1. Recommendation: Found `https://cdnjs.cloudflare.com` in file `MMM-AirQuality.js`: It looks like a package is loaded via CDN. It would be better if the package were installed locally via npm.
-2. Recommendation: Found `npm run` in file `package.json`: Replace it with `node --run`. This is a more modern way to run scripts, without the need for npm.
+1. Recommendation: Found `https://cdnjs.cloudflare.com` in file `MMM-AirQuality.js`: Prefer bundling dependencies via npm instead of CDN references.
+2. Recommendation: Found `npm run` in file `package.json`: Prefer `node --run` over invoking npm run directly.
 3. Typo: Found `[MagicMirror]` in file `README.md`: Replace it with `[MagicMirror²]`.
 4. Recommendation: The README seems not to have an update section (like `## Update`). Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Update-Instructions)).
 5. Recommendation: The README seems not to have an install section (like `## Installation`). Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Installation-Instructions)).
-6. Recommendation: Found `uses: actions/checkout@v4` in file `validation.yml`: Replace it with v5.
-7. Recommendation: Found `uses: actions/setup-node@v4` in file `validation.yml`: Replace it with v5.
-8. Deprecated: Found `node-version: 18` in file `validation.yml`: Update to current version.
-9. Recommendation: Found `npm run` in file `validation.yml`: Replace it with `node --run`. This is a more modern way to run scripts, without the need for npm.
+6. Recommendation: Found `uses: actions/checkout@v4` in file `validation.yml`: Upgrade workflows to use actions/checkout@v5.
+7. Recommendation: Found `uses: actions/setup-node@v4` in file `validation.yml`: Upgrade workflows to use actions/setup-node@v5.
+8. Deprecated: Found `node-version: 18` in file `validation.yml`: Update CI workflows to target a supported Node.js LTS release.
+9. Recommendation: Found `npm run` in file `validation.yml`: Prefer `node --run` over invoking npm run directly.
 10. Recommendation: There is no CHANGELOG file. It is recommended to add one ([example CHANGELOG file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CHANGELOG.md)).
 11. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
 12. Recommendation: There is no dependabot configuration file. It is recommended to add one ([example dependabot file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/.github/dependabot.yaml)).
@@ -280,12 +280,12 @@ Last update: 2025-10-01T23:26:54+02:00
 
 ### [MMM-AlarmClock by fewieden](https://github.com/fewieden/MMM-AlarmClock)
 
-1. Recommendation: Found `npm run` in file `.travis.yml`: Replace it with `node --run`. This is a more modern way to run scripts, without the need for npm.
+1. Recommendation: Found `npm run` in file `.travis.yml`: Prefer `node --run` over invoking npm run directly.
 2. Outdated: Found `MichMich/MagicMirror` in file `MMM-AlarmClock.js`: Replace it by `MagicMirrorOrg/MagicMirror`.
 3. Deprecated: Found `"lockfileVersion": 1` in file `package-lock.json`: Run `npm update` to update to lockfileVersion 3.
 4. Typo: Found `MagicMirror2` in file `package.json`: Replace it with `MagicMirror²`.
-5. Recommendation: Found `eslint .` in file `package.json`: The period at the end of the command is not necessary since v9. It is recommended to remove it.
-6. Recommendation: Found `npm run` in file `README.md`: Replace it with `node --run`. This is a more modern way to run scripts, without the need for npm.
+5. Recommendation: Found `eslint .` in file `package.json`: Drop the trailing '.' when invoking ESLint v9 or newer.
+6. Recommendation: Found `npm run` in file `README.md`: Prefer `node --run` over invoking npm run directly.
 7. Outdated: Found `MichMich/MagicMirror` in file `README.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
 8. Recommendation: The README seems not to have an update section (like `## Update`). Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Update-Instructions)).
 9. Recommendation: The README seems to have a config example without a trailing comma. Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Config-Instructions)).
@@ -321,27 +321,13 @@ Last update: 2025-10-01T23:26:54+02:00
 15. Recommendation: There is no dependabot configuration file. It is recommended to add one ([example dependabot file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/.github/dependabot.yaml)).
 16. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/eslint.md)).
 
-### [MMM-AlexaControl by JosefJantzen](https://github.com/JosefJantzen/MMM-AlexaControl)
-
-1. Module is archived, but not marked as outdated in the official module list.
-2. Typo: Found `Magic Mirror` in file `MMM-AlexaControl.js`: Replace it with `MagicMirror²`.
-3. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
-4. Deprecated: Found `"lockfileVersion": 1` in file `package-lock.json`: Run `npm update` to update to lockfileVersion 3.
-5. Outdated: Found `MichMich/MagicMirror` in file `README.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
-6. Recommendation: The README seems not to have an update section (like `## Update`). Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Update-Instructions)).
-7. Recommendation: The README seems to have a config example without a trailing comma. Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Config-Instructions)).
-8. Recommendation: The README seems to have incorrect clone instructions. Please check the URL.
-9. Recommendation: There is no CHANGELOG file. It is recommended to add one ([example CHANGELOG file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CHANGELOG.md)).
-10. Recommendation: There is no dependabot configuration file. It is recommended to add one ([example dependabot file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/.github/dependabot.yaml)).
-11. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/eslint.md)).
-
 ### [MMM-AlexaOnOff by shbatm](https://github.com/shbatm/MMM-AlexaOnOff)
 
 1. No image found.
 2. Typo: Found `Magic Mirror` in file `MMM-AlexaOnOff.js`: Replace it with `MagicMirror²`.
-3. Recommendation: Found `jshint` in file `MMM-AlexaOnOff.js`: Replace "jshint" by "eslint".
+3. Recommendation: Found `jshint` in file `MMM-AlexaOnOff.js`: Suggest migrating from JSHint to ESLint.
 4. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
-5. Recommendation: Found `jshint` in file `node_helper.js`: Replace "jshint" by "eslint".
+5. Recommendation: Found `jshint` in file `node_helper.js`: Suggest migrating from JSHint to ESLint.
 6. Typo: Found `Magic Mirror` in file `README.md`: Replace it with `MagicMirror²`.
 7. Outdated: Found `MichMich/MagicMirror` in file `README.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
 8. Recommendation: The README seems not to have an update section (like `## Update`). Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Update-Instructions)).
@@ -422,7 +408,7 @@ Last update: 2025-10-01T23:26:54+02:00
 
 ### [MMM-AnyList by codetheweb](https://github.com/codetheweb/MMM-AnyList)
 
-1. There are no specific keywords in 'package.json'. We would use them as tags on the module list page. Add a few meaningful terms to the keywords in the package.json. Not just “magicmirror” or “module”.
+1. There are no keywords in 'package.json'. We would use them as tags on the module list page.
 2. Deprecated: Found `"lockfileVersion": 2` in file `package-lock.json`: Run `npm update` to update to lockfileVersion 3.
 3. Typo: Found `Magic Mirror` in file `package.json`: Replace it with `MagicMirror²`.
 4. Typo: Found `Magic Mirror` in file `README.md`: Replace it with `MagicMirror²`.
@@ -518,7 +504,7 @@ Last update: 2025-10-01T23:26:54+02:00
 
 ### [MMM-ApothekenNotdienst by KristjanESPERANTO](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst)
 
-1. Recommendation: Found `uses: actions/setup-node@v4` in file `automated-tests.yaml`: Replace it with v5.
+1. Recommendation: Found `uses: actions/setup-node@v4` in file `automated-tests.yaml`: Upgrade workflows to use actions/setup-node@v5.
 2. Information: There are updates for 8 dependencie(s):
    - @eslint/css               ^0.11.0  →  ^0.11.1
    - @eslint/js                ^9.34.0  →  ^9.36.0
@@ -627,8 +613,8 @@ Last update: 2025-10-01T23:26:54+02:00
 2. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
 3. Deprecated: Found `"lockfileVersion": 2` in file `package-lock.json`: Run `npm update` to update to lockfileVersion 3.
 4. Typo: Found `Magic Mirror` in file `package.json`: Replace it with `MagicMirror²`.
-5. Recommendation: Found `eslint --fix .` in file `package.json`: The period at the end of the command is not necessary since v9. It is recommended to remove it.
-6. Recommendation: Found `npm run` in file `README.md`: Replace it with `node --run`. This is a more modern way to run scripts, without the need for npm.
+5. Recommendation: Found `eslint --fix .` in file `package.json`: Drop the trailing '.' when invoking ESLint v9 or newer.
+6. Recommendation: Found `npm run` in file `README.md`: Prefer `node --run` over invoking npm run directly.
 7. Outdated: Found `MichMich/MagicMirror` in file `README.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
 8. Recommendation: The README seems not to have an update section (like `## Update`). Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Update-Instructions)).
 9. Recommendation: The README seems to have a modules array (Found `modules: [`). This is usually not necessary. Please remove it if it is not needed ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Config-Instructions)).
@@ -641,8 +627,8 @@ Last update: 2025-10-01T23:26:54+02:00
 ### [MMM-AuroraWatchUK by AndyHazz](https://github.com/AndyHazz/MMM-AuroraWatchUK)
 
 1. `package.json` issue: No repository field.
-2. There are no specific keywords in 'package.json'. We would use them as tags on the module list page. Add a few meaningful terms to the keywords in the package.json. Not just “magicmirror” or “module”.
-3. Deprecated: Found `api.openweathermap.org/data/2.5` in file `MMM-AuroraWatchUK.js`: OpenWeather API 2.5 is deprecated since June 2024. Please update to 3.0.
+2. There are no keywords in 'package.json'. We would use them as tags on the module list page.
+3. Deprecated: Found `api.openweathermap.org/data/2.5` in file `MMM-AuroraWatchUK.js`: OpenWeather API 2.5 is deprecated - upgrade integrations to v3.
 4. Recommendation: Found `axios` in file `node_helper.js`: Replace it with built-in fetch ([documentation](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch); [example module with fetch implemented](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/node_helper.js)).
 5. Recommendation: Found `axios` in file `package.json`: Replace it with built-in fetch ([documentation](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch); [example module with fetch implemented](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/node_helper.js)).
 6. Outdated: Found `MichMich/MagicMirror` in file `README.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
@@ -719,7 +705,7 @@ Last update: 2025-10-01T23:26:54+02:00
 4. Typo: Found `Magic Mirror` in file `MMM-Avinor.js`: Replace it with `MagicMirror²`.
 5. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
 6. Deprecated: Found `require("request")` in file `node_helper.js`: Replace it with built-in fetch ([documentation](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch); [example module with fetch implemented](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/node_helper.js)).
-7. Deprecated: Found `"grunt"` in file `package.json`: Grunt is practically unmaintained. Move on to something better.
+7. Deprecated: Found `"grunt"` in file `package.json`: Grunt is effectively unmaintained. Move on to something modern.
 8. Typo: Found `Magic Mirror` in file `readme.md`: Replace it with `MagicMirror²`.
 9. Outdated: Found `MichMich/MagicMirror` in file `readme.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
 10. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
@@ -736,7 +722,7 @@ Last update: 2025-10-01T23:26:54+02:00
 
 ### [MMM-BackgroundSlideshow by darickc](https://github.com/darickc/MMM-BackgroundSlideshow)
 
-1. Deprecated: Found `omxplayer` in file `node_helper.js`: Try to replace it with `mplayer` or `vlc`.
+1. Deprecated: Found `omxplayer` in file `node_helper.js`: Replace OMXPlayer usage with maintained alternatives such as mplayer or VLC.
 2. Recommendation: There is no CHANGELOG file. It is recommended to add one ([example CHANGELOG file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CHANGELOG.md)).
 3. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
 4. Recommendation: There is no dependabot configuration file. It is recommended to add one ([example dependabot file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/.github/dependabot.yaml)).
@@ -787,18 +773,17 @@ Last update: 2025-10-01T23:26:54+02:00
 1. `package.json` issue: No repository field.
 2. `package.json` issue: No license field.
 3. There are no keywords in 'package.json'. We would use them as tags on the module list page.
-4. No compatible or wrong license field in 'package.json' or LICENSE file. Without that, we can't use an image.
-5. Deprecated: Found `require('request')` in file `node_helper.js`: Replace it with built-in fetch ([documentation](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch); [example module with fetch implemented](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/node_helper.js)).
-6. Recommendation: Found `require('https')` in file `node_helper.js`: Replace 'https' by 'node:https'.
-7. Recommendation: Found `XMLHttpRequest` in file `node_helper.js`: Replace it with built-in fetch ([documentation](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch); [example module with fetch implemented](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/node_helper.js)).
-8. Deprecated: Found `"lockfileVersion": 1` in file `package-lock.json`: Run `npm update` to update to lockfileVersion 3.
-9. Typo: Found `[MagicMirror]` in file `README.md`: Replace it with `[MagicMirror²]`.
-10. Outdated: Found `MichMich/MagicMirror` in file `README.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
-11. Recommendation: The README seems not to have an update section (like `## Update`). Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Update-Instructions)).
-12. Recommendation: There is no CHANGELOG file. It is recommended to add one ([example CHANGELOG file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CHANGELOG.md)).
-13. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
-14. Recommendation: There is no dependabot configuration file. It is recommended to add one ([example dependabot file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/.github/dependabot.yaml)).
-15. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/eslint.md)).
+4. Deprecated: Found `require('request')` in file `node_helper.js`: Replace it with built-in fetch ([documentation](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch); [example module with fetch implemented](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/node_helper.js)).
+5. Recommendation: Found `require('https')` in file `node_helper.js`: Replace `https` with the scoped import `node:https`.
+6. Recommendation: Found `XMLHttpRequest` in file `node_helper.js`: Replace it with built-in fetch ([documentation](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch); [example module with fetch implemented](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/node_helper.js)).
+7. Deprecated: Found `"lockfileVersion": 1` in file `package-lock.json`: Run `npm update` to update to lockfileVersion 3.
+8. Typo: Found `[MagicMirror]` in file `README.md`: Replace it with `[MagicMirror²]`.
+9. Outdated: Found `MichMich/MagicMirror` in file `README.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
+10. Recommendation: The README seems not to have an update section (like `## Update`). Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Update-Instructions)).
+11. Recommendation: There is no CHANGELOG file. It is recommended to add one ([example CHANGELOG file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CHANGELOG.md)).
+12. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
+13. Recommendation: There is no dependabot configuration file. It is recommended to add one ([example dependabot file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/.github/dependabot.yaml)).
+14. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/eslint.md)).
 
 ### [MMM-Beestat by vincep5](https://github.com/vincep5/MMM-Beestat)
 
@@ -869,7 +854,7 @@ Last update: 2025-10-01T23:26:54+02:00
 
 ### [MMM-Biathlon by 2hdlockness](https://github.com/2hdlockness/MMM-Biathlon)
 
-1. Recommendation: Found `https://cdn.jsdelivr.net` in file `MMM-Biathlon.js`: It looks like a package is loaded via CDN. It would be better if the package were installed locally via npm.
+1. Recommendation: Found `https://cdn.jsdelivr.net` in file `MMM-Biathlon.js`: Prefer bundling dependencies via npm instead of CDN references.
 2. Recommendation: There is no CHANGELOG file. It is recommended to add one ([example CHANGELOG file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CHANGELOG.md)).
 3. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
 4. Recommendation: There is no dependabot configuration file. It is recommended to add one ([example dependabot file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/.github/dependabot.yaml)).
@@ -896,18 +881,17 @@ Last update: 2025-10-01T23:26:54+02:00
 2. No image found.
 3. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
 4. Recommendation: Found `'node-fetch'` in file `node_helper.js`: Replace it with built-in fetch ([documentation](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch); [example module with fetch implemented](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/node_helper.js)).
-5. Recommendation: Found `"node-fetch"` in file `node_helper.js`: Replace it with built-in fetch ([documentation](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch); [example module with fetch implemented](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/node_helper.js)).
-6. Recommendation: Found `"node-fetch"` in file `package.json`: Replace it with built-in fetch ([documentation](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch); [example module with fetch implemented](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/node_helper.js)).
-7. Typo: Found `[MagicMirror]` in file `README.md`: Replace it with `[MagicMirror²]`.
-8. Outdated: Found `MichMich/MagicMirror` in file `README.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
-9. Recommendation: The README seems not to have an update section (like `## Update`). Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Update-Instructions)).
-10. Recommendation: The README seems to have a modules array (Found `modules: [`). This is usually not necessary. Please remove it if it is not needed ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Config-Instructions)).
-11. Recommendation: The README seems to have a config example without a trailing comma. Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Config-Instructions)).
-12. Recommendation: The README seems to have incorrect clone instructions. Please check the URL.
-13. Recommendation: There is no CHANGELOG file. It is recommended to add one ([example CHANGELOG file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CHANGELOG.md)).
-14. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
-15. Recommendation: There is no dependabot configuration file. It is recommended to add one ([example dependabot file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/.github/dependabot.yaml)).
-16. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/eslint.md)).
+5. Recommendation: Found `"node-fetch"` in file `package.json`: Replace it with built-in fetch ([documentation](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch); [example module with fetch implemented](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/node_helper.js)).
+6. Typo: Found `[MagicMirror]` in file `README.md`: Replace it with `[MagicMirror²]`.
+7. Outdated: Found `MichMich/MagicMirror` in file `README.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
+8. Recommendation: The README seems not to have an update section (like `## Update`). Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Update-Instructions)).
+9. Recommendation: The README seems to have a modules array (Found `modules: [`). This is usually not necessary. Please remove it if it is not needed ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Config-Instructions)).
+10. Recommendation: The README seems to have a config example without a trailing comma. Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Config-Instructions)).
+11. Recommendation: The README seems to have incorrect clone instructions. Please check the URL.
+12. Recommendation: There is no CHANGELOG file. It is recommended to add one ([example CHANGELOG file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CHANGELOG.md)).
+13. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
+14. Recommendation: There is no dependabot configuration file. It is recommended to add one ([example dependabot file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/.github/dependabot.yaml)).
+15. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/eslint.md)).
 
 ### [MMM-Binance by brssaricicek](https://github.com/brssaricicek/MMM-Binance)
 
@@ -1086,10 +1070,10 @@ Last update: 2025-10-01T23:26:54+02:00
 ### [MMM-BluetoothDevices by timodejong95](https://github.com/timodejong95/MMM-BluetoothDevices)
 
 1. Deprecated: Found `"lockfileVersion": 1` in file `package-lock.json`: Run `npm update` to update to lockfileVersion 3.
-2. Deprecated: Found `eslint-config-airbnb` in file `package.json`: Replace it with modern ESLint configuration.
+2. Deprecated: Found `eslint-config-airbnb` in file `package.json`: Replace the preset with a maintained ESLint configuration.
 3. Recommendation: The README seems not to have an update section (like `## Update`). Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Update-Instructions)).
 4. Recommendation: The README seems to have a config example without a trailing comma. Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Config-Instructions)).
-5. Recommendation: Found `uses: actions/checkout@v2` in file `nodejs.yml`: Replace it with v5.
+5. Recommendation: Found `uses: actions/checkout@v2` in file `nodejs.yml`: Upgrade workflows to use actions/checkout@v5.
 6. Warning: No LICENSE file ([example LICENSE file](https://github.com/KristjanESPERANTO/MMM-WebSpeechTTS/blob/main/LICENSE.md)).
 7. Recommendation: There is no CHANGELOG file. It is recommended to add one ([example CHANGELOG file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CHANGELOG.md)).
 8. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
@@ -1154,8 +1138,8 @@ Last update: 2025-10-01T23:26:54+02:00
 
 ### [MMM-BoschSmartHome by jalibu](https://github.com/jalibu/MMM-BoschSmartHome)
 
-1. Recommendation: Found `npm run` in file `package.json`: Replace it with `node --run`. This is a more modern way to run scripts, without the need for npm.
-2. Recommendation: Found `npm run` in file `README.md`: Replace it with `node --run`. This is a more modern way to run scripts, without the need for npm.
+1. Recommendation: Found `npm run` in file `package.json`: Prefer `node --run` over invoking npm run directly.
+2. Recommendation: Found `npm run` in file `README.md`: Prefer `node --run` over invoking npm run directly.
 3. Recommendation: There is no CHANGELOG file. It is recommended to add one ([example CHANGELOG file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CHANGELOG.md)).
 4. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
 5. Recommendation: There is no dependabot configuration file. It is recommended to add one ([example dependabot file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/.github/dependabot.yaml)).
@@ -1222,9 +1206,9 @@ Last update: 2025-10-01T23:26:54+02:00
 
 ### [MMM-Bring by werthdavid](https://github.com/werthdavid/MMM-Bring)
 
-1. Recommendation: Found `require("https")` in file `BringClient.js`: Replace "https" by "node:https".
+1. Recommendation: Found `require("https")` in file `BringClient.js`: Replace `https` with the scoped import `node:https`.
 2. Recommendation: Found `axios` in file `BringClient.js`: Replace it with built-in fetch ([documentation](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch); [example module with fetch implemented](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/node_helper.js)).
-3. Recommendation: Found `jshint` in file `MMM-Bring.js`: Replace "jshint" by "eslint".
+3. Recommendation: Found `jshint` in file `MMM-Bring.js`: Suggest migrating from JSHint to ESLint.
 4. Deprecated: Found `"lockfileVersion": 1` in file `package-lock.json`: Run `npm update` to update to lockfileVersion 3.
 5. Recommendation: Found `axios` in file `package.json`: Replace it with built-in fetch ([documentation](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch); [example module with fetch implemented](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/node_helper.js)).
 6. Outdated: Found `MichMich/MagicMirror` in file `README.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
@@ -1251,12 +1235,12 @@ Last update: 2025-10-01T23:26:54+02:00
 
 ### [MMM-Bubi by balassy](https://github.com/balassy/MMM-Bubi)
 
-1. Recommendation: Found `jshint` in file `Gruntfile.js`: Replace "jshint" by "eslint".
+1. Recommendation: Found `jshint` in file `Gruntfile.js`: Suggest migrating from JSHint to ESLint.
 2. Typo: Found `Magic Mirror` in file `MMM-Bubi.js`: Replace it with `MagicMirror²`.
 3. Recommendation: Found `XMLHttpRequest` in file `MMM-Bubi.js`: Replace it with built-in fetch ([documentation](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch); [example module with fetch implemented](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/node_helper.js)).
 4. Deprecated: Found `"lockfileVersion": 1` in file `package-lock.json`: Run `npm update` to update to lockfileVersion 3.
-5. Deprecated: Found `eslint-config-airbnb` in file `package.json`: Replace it with modern ESLint configuration.
-6. Deprecated: Found `"grunt"` in file `package.json`: Grunt is practically unmaintained. Move on to something better.
+5. Deprecated: Found `eslint-config-airbnb` in file `package.json`: Replace the preset with a maintained ESLint configuration.
+6. Deprecated: Found `"grunt"` in file `package.json`: Grunt is effectively unmaintained. Move on to something modern.
 7. Outdated: Found `MichMich/MagicMirror` in file `README.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
 8. Recommendation: The README seems not to have an update section (like `## Update`). Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Update-Instructions)).
 9. Recommendation: The README seems not to have an install section (like `## Installation`). Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Installation-Instructions)).
@@ -1270,20 +1254,19 @@ Last update: 2025-10-01T23:26:54+02:00
 1. `package.json` issue: No repository field.
 2. There are no keywords in 'package.json'. We would use them as tags on the module list page.
 3. Issue: The license in the package.json (ISC) doesn't match the license file (NOASSERTION).
-4. No compatible or wrong license field in 'package.json' or LICENSE file. Without that, we can't use an image.
-5. Typo: Found `Magic Mirror` in file `MMM-Buienradar.js`: Replace it with `MagicMirror²`.
-6. Outdated: Found `MichMich/MagicMirror` in file `README.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
-7. Recommendation: The README seems not to have an update section (like `## Update`). Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Update-Instructions)).
-8. Recommendation: The README seems to have a modules array (Found `modules: [`). This is usually not necessary. Please remove it if it is not needed ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Config-Instructions)).
-9. Recommendation: The README seems to have a config example without a trailing comma. Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Config-Instructions)).
-10. Recommendation: There is no CHANGELOG file. It is recommended to add one ([example CHANGELOG file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CHANGELOG.md)).
-11. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
-12. Recommendation: There is no dependabot configuration file. It is recommended to add one ([example dependabot file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/.github/dependabot.yaml)).
-13. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/eslint.md)).
+4. Typo: Found `Magic Mirror` in file `MMM-Buienradar.js`: Replace it with `MagicMirror²`.
+5. Outdated: Found `MichMich/MagicMirror` in file `README.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
+6. Recommendation: The README seems not to have an update section (like `## Update`). Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Update-Instructions)).
+7. Recommendation: The README seems to have a modules array (Found `modules: [`). This is usually not necessary. Please remove it if it is not needed ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Config-Instructions)).
+8. Recommendation: The README seems to have a config example without a trailing comma. Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Config-Instructions)).
+9. Recommendation: There is no CHANGELOG file. It is recommended to add one ([example CHANGELOG file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CHANGELOG.md)).
+10. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
+11. Recommendation: There is no dependabot configuration file. It is recommended to add one ([example dependabot file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/.github/dependabot.yaml)).
+12. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/eslint.md)).
 
 ### [MMM-Buller by da4throux](https://github.com/da4throux/MMM-Buller)
 
-1. An error occurred while getting information from 'package.json': Error: Invalid version: "1.0"
+1. `package.json` issue: Invalid version: "1.0"
 2. Typo: Found `Magic Mirror` in file `MMM-Buller.js`: Replace it with `MagicMirror²`.
 3. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
 4. Outdated: Found `MichMich/MagicMirror` in file `node_helper.js`: Replace it by `MagicMirrorOrg/MagicMirror`.
@@ -1304,15 +1287,15 @@ Last update: 2025-10-01T23:26:54+02:00
 4. Recommendation: Found `"node-fetch"` in file `node_helper.js`: Replace it with built-in fetch ([documentation](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch); [example module with fetch implemented](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/node_helper.js)).
 5. Deprecated: Found `"lockfileVersion": 2` in file `package-lock.json`: Run `npm update` to update to lockfileVersion 3.
 6. Recommendation: Found `"node-fetch"` in file `package.json`: Replace it with built-in fetch ([documentation](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch); [example module with fetch implemented](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/node_helper.js)).
-7. Recommendation: Found `npm run` in file `package.json`: Replace it with `node --run`. This is a more modern way to run scripts, without the need for npm.
+7. Recommendation: Found `npm run` in file `package.json`: Prefer `node --run` over invoking npm run directly.
 8. Outdated: Found `MichMich/MagicMirror` in file `README.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
 9. Recommendation: The README seems not to have an update section (like `## Update`). Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Update-Instructions)).
 10. Recommendation: The README seems to have a modules array (Found `modules: [`). This is usually not necessary. Please remove it if it is not needed ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Config-Instructions)).
 11. Recommendation: The README seems to have a config example without a trailing comma. Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Config-Instructions)).
-12. Recommendation: Found `uses: actions/checkout@v3` in file `node.js.yml`: Replace it with v5.
-13. Recommendation: Found `uses: actions/setup-node@v3` in file `node.js.yml`: Replace it with v5.
-14. Deprecated: Found `node-version: [14` in file `node.js.yml`: Update to current version.
-15. Recommendation: Found `npm run` in file `node.js.yml`: Replace it with `node --run`. This is a more modern way to run scripts, without the need for npm.
+12. Recommendation: Found `uses: actions/checkout@v3` in file `node.js.yml`: Upgrade workflows to use actions/checkout@v5.
+13. Recommendation: Found `uses: actions/setup-node@v3` in file `node.js.yml`: Upgrade workflows to use actions/setup-node@v5.
+14. Deprecated: Found `node-version: [14` in file `node.js.yml`: Update CI workflows to target a supported Node.js LTS release.
+15. Recommendation: Found `npm run` in file `node.js.yml`: Prefer `node --run` over invoking npm run directly.
 16. Outdated: Found `MichMich/MagicMirror` in file `node.js.yml`: Replace it by `MagicMirrorOrg/MagicMirror`.
 17. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
 18. Recommendation: There is no dependabot configuration file. It is recommended to add one ([example dependabot file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/.github/dependabot.yaml)).
@@ -1344,7 +1327,7 @@ Last update: 2025-10-01T23:26:54+02:00
 1. No image found.
 2. Typo: Found `Magic Mirror` in file `MMM-Button.js`: Replace it with `MagicMirror²`.
 3. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
-4. Deprecated: Found `"electron-rebuild"` in file `package.json`: Replace it with `@electron/rebuild`
+4. Deprecated: Found `"electron-rebuild"` in file `package.json`: Use `@electron/rebuild` instead.
 5. Typo: Found `[MagicMirror]` in file `README.md`: Replace it with `[MagicMirror²]`.
 6. Outdated: Found `MichMich/MagicMirror` in file `README.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
 7. Recommendation: The README seems not to have an update section (like `## Update`). Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Update-Instructions)).
@@ -1376,7 +1359,7 @@ Last update: 2025-10-01T23:26:54+02:00
 
 ### [MMM-CalDAV by MMRIZE](https://github.com/MMRIZE/MMM-CalDAV)
 
-1. Recommendation: Found `eslint .` in file `package.json`: The period at the end of the command is not necessary since v9. It is recommended to remove it.
+1. Recommendation: Found `eslint .` in file `package.json`: Drop the trailing '.' when invoking ESLint v9 or newer.
 2. Recommendation: There is no CHANGELOG file. It is recommended to add one ([example CHANGELOG file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CHANGELOG.md)).
 3. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
 4. Recommendation: There is no dependabot configuration file. It is recommended to add one ([example dependabot file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/.github/dependabot.yaml)).
@@ -1387,14 +1370,14 @@ Last update: 2025-10-01T23:26:54+02:00
 1. `package.json` issue: No repository field.
 2. There are no keywords in 'package.json'. We would use them as tags on the module list page.
 3. Issues are not enabled in the GitHub repository. So users cannot report bugs. Please enable issues in your repo.
-4. Recommendation: Found `jshint` in file `Gruntfile.js`: Replace "jshint" by "eslint".
+4. Recommendation: Found `jshint` in file `Gruntfile.js`: Suggest migrating from JSHint to ESLint.
 5. Typo: Found `Magic Mirror` in file `MMM-CalDAV-Tasks.js`: Replace it with `MagicMirror²`.
-6. Recommendation: Found `https://cdnjs.cloudflare.com` in file `MMM-CalDAV-Tasks.js`: It looks like a package is loaded via CDN. It would be better if the package were installed locally via npm.
+6. Recommendation: Found `https://cdnjs.cloudflare.com` in file `MMM-CalDAV-Tasks.js`: Prefer bundling dependencies via npm instead of CDN references.
 7. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
 8. Deprecated: Found `"lockfileVersion": 2` in file `package-lock.json`: Run `npm update` to update to lockfileVersion 3.
-9. Deprecated: Found `"grunt"` in file `package.json`: Grunt is practically unmaintained. Move on to something better.
+9. Deprecated: Found `"grunt"` in file `package.json`: Grunt is effectively unmaintained. Move on to something modern.
 10. Typo: Found `Magic Mirror` in file `README.md`: Replace it with `MagicMirror²`.
-11. Recommendation: Found `npm run` in file `README.md`: Replace it with `node --run`. This is a more modern way to run scripts, without the need for npm.
+11. Recommendation: Found `npm run` in file `README.md`: Prefer `node --run` over invoking npm run directly.
 12. Outdated: Found `MichMich/MagicMirror` in file `README.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
 13. Recommendation: The README seems to have a modules array (Found `modules: [`). This is usually not necessary. Please remove it if it is not needed ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Config-Instructions)).
 14. Recommendation: The README seems to have a config example without a trailing comma. Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Config-Instructions)).
@@ -1404,13 +1387,14 @@ Last update: 2025-10-01T23:26:54+02:00
 
 ### [MMM-CalendarExt2 by MMM-CalendarExt2](https://github.com/MMM-CalendarExt2/MMM-CalendarExt2)
 
-1. Recommendation: Found `uses: actions/setup-node@v4` in file `automated-tests.yaml`: Replace it with v5.
-2. Information: There are updates for 5 dependencie(s):
-   - @eslint/js                ^9.35.0  →  ^9.36.0
-   - @stylistic/eslint-plugin   ^5.3.1  →   ^5.4.0
-   - eslint                    ^9.35.0  →  ^9.36.0
-   - globals                   ^16.3.0  →  ^16.4.0
-   - lint-staged               ^16.1.6  →  ^16.2.3
+1. Recommendation: Found `uses: actions/setup-node@v4` in file `automated-tests.yaml`: Upgrade workflows to use actions/setup-node@v5.
+2. Information: There are updates for 6 dependencie(s):
+   - @eslint/js                 ^9.35.0  →   ^9.36.0
+   - @stylistic/eslint-plugin    ^5.3.1  →    ^5.4.0
+   - eslint                     ^9.35.0  →   ^9.36.0
+   - globals                    ^16.3.0  →   ^16.4.0
+   - lint-staged                ^16.1.6  →   ^16.2.3
+   - stylelint                 ^16.24.0  →  ^16.25.0
 
 ### [MMM-CalendarExt3 by MMRIZE](https://github.com/MMRIZE/MMM-CalendarExt3)
 
@@ -1484,7 +1468,7 @@ Last update: 2025-10-01T23:26:54+02:00
 ### [MMM-CalendarTodayTomorrow by qunu](https://github.com/qunu/MMM-CalendarTodayTomorrow)
 
 1. There is no `package.json`. We need this file to gather information about the module for the module list page.
-2. Recommendation: Found `require("https")` in file `calendarfetcher.js`: Replace "https" by "node:https".
+2. Recommendation: Found `require("https")` in file `calendarfetcher.js`: Replace `https` with the scoped import `node:https`.
 3. Recommendation: Found `"node-fetch"` in file `calendarfetcher.js`: Replace it with built-in fetch ([documentation](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch); [example module with fetch implemented](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/node_helper.js)).
 4. Outdated: Found `MichMich/MagicMirror` in file `MMM-CalendarTodayTomorrow.js`: Replace it by `MagicMirrorOrg/MagicMirror`.
 5. Recommendation: The README seems not to have an update section (like `## Update`). Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Update-Instructions)).
@@ -1594,7 +1578,7 @@ Last update: 2025-10-01T23:26:54+02:00
 
 1. Typo: Found `Magic Mirror` in file `MMM-CanadianPublicWeatherAlerts.js`: Replace it with `MagicMirror²`.
 2. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
-3. Recommendation: Found `require('https')` in file `node_helper.js`: Replace 'https' by 'node:https'.
+3. Recommendation: Found `require('https')` in file `node_helper.js`: Replace `https` with the scoped import `node:https`.
 4. Typo: Found `[MagicMirror]` in file `README.md`: Replace it with `[MagicMirror²]`.
 5. Outdated: Found `MichMich/MagicMirror` in file `README.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
 6. Recommendation: The README seems not to have an update section (like `## Update`). Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Update-Instructions)).
@@ -1605,7 +1589,7 @@ Last update: 2025-10-01T23:26:54+02:00
 
 ### [MMM-Canteen by KristjanESPERANTO](https://github.com/KristjanESPERANTO/MMM-Canteen)
 
-1. Recommendation: Found `uses: actions/setup-node@v4` in file `automated-tests.yaml`: Replace it with v5.
+1. Recommendation: Found `uses: actions/setup-node@v4` in file `automated-tests.yaml`: Upgrade workflows to use actions/setup-node@v5.
 2. Information: There are updates for 8 dependencie(s):
    - @eslint/css               ^0.10.0  →  ^0.11.1
    - @eslint/js                ^9.33.0  →  ^9.36.0
@@ -1636,7 +1620,7 @@ Last update: 2025-10-01T23:26:54+02:00
 ### [MMM-CardDavBirthdaysProvider by ulrichwisser](https://github.com/ulrichwisser/MMM-CardDavBirthdaysProvider)
 
 1. Recommendation: The README seems not to have an update section (like `## Update`). Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Update-Instructions)).
-2. Recommendation: Found `npm run` in file `tasks.json`: Replace it with `node --run`. This is a more modern way to run scripts, without the need for npm.
+2. Recommendation: Found `npm run` in file `tasks.json`: Prefer `node --run` over invoking npm run directly.
 3. Recommendation: There is no CHANGELOG file. It is recommended to add one ([example CHANGELOG file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CHANGELOG.md)).
 4. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
 5. Recommendation: There is no dependabot configuration file. It is recommended to add one ([example dependabot file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/.github/dependabot.yaml)).
@@ -1644,7 +1628,7 @@ Last update: 2025-10-01T23:26:54+02:00
 
 ### [MMM-Carousel by shbatm](https://github.com/shbatm/MMM-Carousel)
 
-1. Recommendation: Found `uses: actions/setup-node@v4` in file `automated-tests.yaml`: Replace it with v5.
+1. Recommendation: Found `uses: actions/setup-node@v4` in file `automated-tests.yaml`: Upgrade workflows to use actions/setup-node@v5.
 2. Information: There are updates for 7 dependencie(s):
    - @eslint/css               ^0.11.0  →  ^0.11.1
    - @eslint/js                ^9.34.0  →  ^9.36.0
@@ -1672,7 +1656,7 @@ Last update: 2025-10-01T23:26:54+02:00
 ### [MMM-Celtic-OnThisDay by gitgitaway](https://github.com/gitgitaway/MMM-Celtic-OnThisDay)
 
 1. `package.json` issue: No repository field.
-2. Recommendation: Found `require("https")` in file `node_helper.js`: Replace "https" by "node:https".
+2. Recommendation: Found `require("https")` in file `node_helper.js`: Replace `https` with the scoped import `node:https`.
 3. Recommendation: Found `"node-fetch"` in file `node_helper.js`: Replace it with built-in fetch ([documentation](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch); [example module with fetch implemented](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/node_helper.js)).
 4. Deprecated: Found `"lockfileVersion": 2` in file `package-lock.json`: Run `npm update` to update to lockfileVersion 3.
 5. Recommendation: Found `"node-fetch"` in file `package.json`: Replace it with built-in fetch ([documentation](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch); [example module with fetch implemented](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/node_helper.js)).
@@ -1687,7 +1671,7 @@ Last update: 2025-10-01T23:26:54+02:00
 ### [MMM-ChameleonWeather by ChrisF1976](https://github.com/ChrisF1976/MMM-ChameleonWeather)
 
 1. Recommendation: Found `axios` in file `node_helper.js`: Replace it with built-in fetch ([documentation](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch); [example module with fetch implemented](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/node_helper.js)).
-2. Deprecated: Found `api.openweathermap.org/data/2.5` in file `node_helper.js`: OpenWeather API 2.5 is deprecated since June 2024. Please update to 3.0.
+2. Deprecated: Found `api.openweathermap.org/data/2.5` in file `node_helper.js`: OpenWeather API 2.5 is deprecated - upgrade integrations to v3.
 3. Recommendation: The README seems not to have an update section (like `## Update`). Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Update-Instructions)).
 4. Recommendation: There is no CHANGELOG file. It is recommended to add one ([example CHANGELOG file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CHANGELOG.md)).
 5. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
@@ -1721,11 +1705,11 @@ Last update: 2025-10-01T23:26:54+02:00
 
 1. `package.json` issue: No repository field.
 2. There are no keywords in 'package.json'. We would use them as tags on the module list page.
-3. Recommendation: Found `jshint` in file `Gruntfile.js`: Replace "jshint" by "eslint".
+3. Recommendation: Found `jshint` in file `Gruntfile.js`: Suggest migrating from JSHint to ESLint.
 4. Typo: Found `Magic Mirror` in file `MMM-Chess-Daily.js`: Replace it with `MagicMirror²`.
 5. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
 6. Deprecated: Found `"lockfileVersion": 1` in file `package-lock.json`: Run `npm update` to update to lockfileVersion 3.
-7. Deprecated: Found `"grunt"` in file `package.json`: Grunt is practically unmaintained. Move on to something better.
+7. Deprecated: Found `"grunt"` in file `package.json`: Grunt is effectively unmaintained. Move on to something modern.
 8. Outdated: Found `MichMich/MagicMirror` in file `README.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
 9. Recommendation: The README seems not to have an update section (like `## Update`). Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Update-Instructions)).
 10. Recommendation: The README seems not to have an install section (like `## Installation`). Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Installation-Instructions)).
@@ -1737,10 +1721,10 @@ Last update: 2025-10-01T23:26:54+02:00
 
 ### [MMM-Chores by PierreGode](https://github.com/PierreGode/MMM-Chores)
 
-1. Recommendation: Found `https://cdn.jsdelivr.net` in file `MMM-Chores.js`: It looks like a package is loaded via CDN. It would be better if the package were installed locally via npm.
-2. Recommendation: Found `require("https")` in file `node_helper.js`: Replace "https" by "node:https".
+1. Recommendation: Found `https://cdn.jsdelivr.net` in file `MMM-Chores.js`: Prefer bundling dependencies via npm instead of CDN references.
+2. Recommendation: Found `require("https")` in file `node_helper.js`: Replace `https` with the scoped import `node:https`.
 3. Recommendation: Found `"node-fetch"` in file `node_helper.js`: Replace it with built-in fetch ([documentation](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch); [example module with fetch implemented](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/node_helper.js)).
-4. Recommendation: Found `https://cdn.jsdelivr.net` in file `admin.html`: It looks like a package is loaded via CDN. It would be better if the package were installed locally via npm.
+4. Recommendation: Found `https://cdn.jsdelivr.net` in file `admin.html`: Prefer bundling dependencies via npm instead of CDN references.
 5. Recommendation: There is no CHANGELOG file. It is recommended to add one ([example CHANGELOG file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CHANGELOG.md)).
 6. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
 7. Recommendation: There is no dependabot configuration file. It is recommended to add one ([example dependabot file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/.github/dependabot.yaml)).
@@ -1766,12 +1750,12 @@ Last update: 2025-10-01T23:26:54+02:00
 
 1. `package.json` issue: No repository field.
 2. There are no keywords in 'package.json'. We would use them as tags on the module list page.
-3. Recommendation: Found `jshint` in file `Gruntfile.js`: Replace "jshint" by "eslint".
+3. Recommendation: Found `jshint` in file `Gruntfile.js`: Suggest migrating from JSHint to ESLint.
 4. Typo: Found `Magic Mirror` in file `MMM-Chuck-Norris.js`: Replace it with `MagicMirror²`.
 5. Recommendation: Found `XMLHttpRequest` in file `MMM-Chuck-Norris.js`: Replace it with built-in fetch ([documentation](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch); [example module with fetch implemented](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/node_helper.js)).
 6. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
 7. Typo: Found `Magic Mirror` in file `package.json`: Replace it with `MagicMirror²`.
-8. Deprecated: Found `"grunt"` in file `package.json`: Grunt is practically unmaintained. Move on to something better.
+8. Deprecated: Found `"grunt"` in file `package.json`: Grunt is effectively unmaintained. Move on to something modern.
 9. Typo: Found `Magic Mirror` in file `README.md`: Replace it with `MagicMirror²`.
 10. Outdated: Found `MichMich/MagicMirror` in file `README.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
 11. Recommendation: The README seems not to have an update section (like `## Update`). Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Update-Instructions)).
@@ -1783,18 +1767,17 @@ Last update: 2025-10-01T23:26:54+02:00
 ### [MMM-Cinestar-FDW by LukasWestholt](https://github.com/LukasWestholt/MMM-Cinestar-FDW)
 
 1. Repository name and main js file name is not the same.
-2. Recommendation: Found `npm run` in file `package.json`: Replace it with `node --run`. This is a more modern way to run scripts, without the need for npm.
-3. Recommendation: Found `eslint .` in file `package.json`: The period at the end of the command is not necessary since v9. It is recommended to remove it.
-4. Recommendation: Found `eslint --fix .` in file `package.json`: The period at the end of the command is not necessary since v9. It is recommended to remove it.
-5. Recommendation: Found `npm run` in file `README.md`: Replace it with `node --run`. This is a more modern way to run scripts, without the need for npm.
-6. Recommendation: There is no dependabot configuration file. It is recommended to add one ([example dependabot file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/.github/dependabot.yaml)).
-7. Recommendation: The ESLint configuration file `eslint.config.mjs` does not contain `defineConfig`. It is recommended to use it.
+2. Recommendation: Found `npm run` in file `package.json`: Prefer `node --run` over invoking npm run directly.
+3. Recommendation: Found `eslint .` in file `package.json`: Drop the trailing '.' when invoking ESLint v9 or newer.
+4. Recommendation: Found `npm run` in file `README.md`: Prefer `node --run` over invoking npm run directly.
+5. Recommendation: There is no dependabot configuration file. It is recommended to add one ([example dependabot file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/.github/dependabot.yaml)).
+6. Recommendation: The ESLint configuration file `eslint.config.mjs` does not contain `defineConfig`. It is recommended to use it.
 
 ### [MMM-CivitAI by Andoramb](https://github.com/Andoramb/MMM-CivitAI)
 
 1. `package.json` issue: No description
 2. `package.json` issue: No repository field.
-3. There are no specific keywords in 'package.json'. We would use them as tags on the module list page. Add a few meaningful terms to the keywords in the package.json. Not just “magicmirror” or “module”.
+3. There are no keywords in 'package.json'. We would use them as tags on the module list page.
 4. Recommendation: Found `XMLHttpRequest` in file `MMM-CivitAI.js`: Replace it with built-in fetch ([documentation](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch); [example module with fetch implemented](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/node_helper.js)).
 5. Recommendation: The README seems not to have an update section (like `## Update`). Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Update-Instructions)).
 6. Warning: No LICENSE file ([example LICENSE file](https://github.com/KristjanESPERANTO/MMM-WebSpeechTTS/blob/main/LICENSE.md)).
@@ -1809,7 +1792,7 @@ Last update: 2025-10-01T23:26:54+02:00
 2. Typo: Found `Magic Mirror` in file `MMM-Clash-Royale.js`: Replace it with `MagicMirror²`.
 3. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
 4. Deprecated: Found `require('request')` in file `node_helper.js`: Replace it with built-in fetch ([documentation](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch); [example module with fetch implemented](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/node_helper.js)).
-5. Recommendation: Found `jshint` in file `node_helper.js`: Replace "jshint" by "eslint".
+5. Recommendation: Found `jshint` in file `node_helper.js`: Suggest migrating from JSHint to ESLint.
 6. Recommendation: The README seems not to have a config example. Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Config-Instructions)).
 7. Recommendation: There is no CHANGELOG file. It is recommended to add one ([example CHANGELOG file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CHANGELOG.md)).
 8. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
@@ -1956,9 +1939,9 @@ Last update: 2025-10-01T23:26:54+02:00
 
 ### [MMM-CommandToNotification by Tom-Hirschberger](https://github.com/Tom-Hirschberger/MMM-CommandToNotification)
 
-1. Recommendation: Found `npm run` in file `package.json`: Replace it with `node --run`. This is a more modern way to run scripts, without the need for npm.
-2. Recommendation: Found `eslint .` in file `package.json`: The period at the end of the command is not necessary since v9. It is recommended to remove it.
-3. Recommendation: Found `npm run` in file `README.md`: Replace it with `node --run`. This is a more modern way to run scripts, without the need for npm.
+1. Recommendation: Found `npm run` in file `package.json`: Prefer `node --run` over invoking npm run directly.
+2. Recommendation: Found `eslint .` in file `package.json`: Drop the trailing '.' when invoking ESLint v9 or newer.
+3. Recommendation: Found `npm run` in file `README.md`: Prefer `node --run` over invoking npm run directly.
 4. Recommendation: There is no CHANGELOG file. It is recommended to add one ([example CHANGELOG file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CHANGELOG.md)).
 5. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
 6. Recommendation: There is no dependabot configuration file. It is recommended to add one ([example dependabot file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/.github/dependabot.yaml)).
@@ -1993,7 +1976,7 @@ Last update: 2025-10-01T23:26:54+02:00
 4. Recommendation: The README seems not to have an update section (like `## Update`). Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Update-Instructions)).
 5. Recommendation: The README seems to have a config example without a trailing comma. Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Config-Instructions)).
 6. Recommendation: The README seems not to have clone instructions.
-7. Recommendation: Found `uses: actions/checkout@v2` in file `format-code.yml`: Replace it with v5.
+7. Recommendation: Found `uses: actions/checkout@v2` in file `format-code.yml`: Upgrade workflows to use actions/checkout@v5.
 8. Recommendation: There is no CHANGELOG file. It is recommended to add one ([example CHANGELOG file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CHANGELOG.md)).
 9. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
 10. Recommendation: There is no dependabot configuration file. It is recommended to add one ([example dependabot file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/.github/dependabot.yaml)).
@@ -2024,7 +2007,7 @@ Last update: 2025-10-01T23:26:54+02:00
 7. Recommendation: The README seems not to have an install section (like `## Installation`). Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Installation-Instructions)).
 8. Recommendation: The README seems not to have a config example. Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Config-Instructions)).
 9. Recommendation: The README seems not to have clone instructions.
-10. Recommendation: Found `require('https')` in file `node_helper.js`: Replace 'https' by 'node:https'.
+10. Recommendation: Found `require('https')` in file `node_helper.js`: Replace `https` with the scoped import `node:https`.
 11. Warning: No LICENSE file ([example LICENSE file](https://github.com/KristjanESPERANTO/MMM-WebSpeechTTS/blob/main/LICENSE.md)).
 12. Recommendation: There is no CHANGELOG file. It is recommended to add one ([example CHANGELOG file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CHANGELOG.md)).
 13. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
@@ -2075,9 +2058,9 @@ Last update: 2025-10-01T23:26:54+02:00
 
 ### [MMM-CoupleDays by wiesty](https://github.com/wiesty/MMM-CoupleDays)
 
-1. Recommendation: Found `npm run` in file `package.json`: Replace it with `node --run`. This is a more modern way to run scripts, without the need for npm.
-2. Recommendation: Found `eslint .` in file `package.json`: The period at the end of the command is not necessary since v9. It is recommended to remove it.
-3. Recommendation: Found `npm run` in file `README.md`: Replace it with `node --run`. This is a more modern way to run scripts, without the need for npm.
+1. Recommendation: Found `npm run` in file `package.json`: Prefer `node --run` over invoking npm run directly.
+2. Recommendation: Found `eslint .` in file `package.json`: Drop the trailing '.' when invoking ESLint v9 or newer.
+3. Recommendation: Found `npm run` in file `README.md`: Prefer `node --run` over invoking npm run directly.
 4. Recommendation: The README seems not to have an update section (like `## Update`). Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Update-Instructions)).
 5. Recommendation: There is no CHANGELOG file. It is recommended to add one ([example CHANGELOG file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CHANGELOG.md)).
 6. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
@@ -2152,7 +2135,7 @@ Last update: 2025-10-01T23:26:54+02:00
 
 1. There is no `package.json`. We need this file to gather information about the module for the module list page.
 2. Recommendation: Found `XMLHttpRequest` in file `MMM-cryptocurrency.js`: Replace it with built-in fetch ([documentation](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch); [example module with fetch implemented](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/node_helper.js)).
-3. Recommendation: Found `require("https")` in file `node_helper.js`: Replace "https" by "node:https".
+3. Recommendation: Found `require("https")` in file `node_helper.js`: Replace `https` with the scoped import `node:https`.
 4. Outdated: Found `MichMich/MagicMirror` in file `README.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
 5. Recommendation: The README seems not to have an update section (like `## Update`). Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Update-Instructions)).
 6. Recommendation: The README seems to have a config example without a trailing comma. Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Config-Instructions)).
@@ -2166,16 +2149,15 @@ Last update: 2025-10-01T23:26:54+02:00
 1. `package.json` issue: No repository field.
 2. `package.json` issue: No license field.
 3. There are no keywords in 'package.json'. We would use them as tags on the module list page.
-4. No compatible or wrong license field in 'package.json' or LICENSE file. Without that, we can't use an image.
-5. Recommendation: Found `XMLHttpRequest` in file `MMM-CryptoPortfolio.js`: Replace it with built-in fetch ([documentation](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch); [example module with fetch implemented](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/node_helper.js)).
-6. Recommendation: Found `"node-fetch"` in file `node_helper.js`: Replace it with built-in fetch ([documentation](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch); [example module with fetch implemented](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/node_helper.js)).
-7. Recommendation: Found `"node-fetch"` in file `package.json`: Replace it with built-in fetch ([documentation](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch); [example module with fetch implemented](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/node_helper.js)).
-8. Recommendation: The README seems not to have an update section (like `## Update`). Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Update-Instructions)).
-9. Recommendation: The README seems to have a config example without a trailing comma. Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Config-Instructions)).
-10. Recommendation: There is no CHANGELOG file. It is recommended to add one ([example CHANGELOG file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CHANGELOG.md)).
-11. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
-12. Recommendation: There is no dependabot configuration file. It is recommended to add one ([example dependabot file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/.github/dependabot.yaml)).
-13. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/eslint.md)).
+4. Recommendation: Found `XMLHttpRequest` in file `MMM-CryptoPortfolio.js`: Replace it with built-in fetch ([documentation](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch); [example module with fetch implemented](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/node_helper.js)).
+5. Recommendation: Found `"node-fetch"` in file `node_helper.js`: Replace it with built-in fetch ([documentation](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch); [example module with fetch implemented](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/node_helper.js)).
+6. Recommendation: Found `"node-fetch"` in file `package.json`: Replace it with built-in fetch ([documentation](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch); [example module with fetch implemented](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/node_helper.js)).
+7. Recommendation: The README seems not to have an update section (like `## Update`). Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Update-Instructions)).
+8. Recommendation: The README seems to have a config example without a trailing comma. Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Config-Instructions)).
+9. Recommendation: There is no CHANGELOG file. It is recommended to add one ([example CHANGELOG file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CHANGELOG.md)).
+10. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
+11. Recommendation: There is no dependabot configuration file. It is recommended to add one ([example dependabot file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/.github/dependabot.yaml)).
+12. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/eslint.md)).
 
 ### [MMM-CTA by NateDee](https://github.com/NateDee/MMM-CTA)
 
@@ -2280,8 +2262,8 @@ Last update: 2025-10-01T23:26:54+02:00
 
 ### [MMM-CustomText by dathbe](https://github.com/dathbe/MMM-CustomText)
 
-1. Recommendation: Found `uses: actions/checkout@v4` in file `automated-tests.yaml`: Replace it with v5.
-2. Recommendation: Found `uses: actions/setup-node@v4` in file `automated-tests.yaml`: Replace it with v5.
+1. Recommendation: Found `uses: actions/checkout@v4` in file `automated-tests.yaml`: Upgrade workflows to use actions/checkout@v5.
+2. Recommendation: Found `uses: actions/setup-node@v4` in file `automated-tests.yaml`: Upgrade workflows to use actions/setup-node@v5.
 3. Information: There are updates for 4 dependencie(s):
    - @eslint/js                ^9.30.1  →  ^9.36.0
    - @stylistic/eslint-plugin   ^5.1.0  →   ^5.4.0
@@ -2327,8 +2309,8 @@ Last update: 2025-10-01T23:26:54+02:00
 
 1. `package.json` issue: No repository field.
 2. There are no keywords in 'package.json'. We would use them as tags on the module list page.
-3. Recommendation: Found `https://cdn.jsdelivr.net` in file `index.html`: It looks like a package is loaded via CDN. It would be better if the package were installed locally via npm.
-4. Recommendation: Found `https://cdn.jsdelivr.net` in file `MMM-D2L.js`: It looks like a package is loaded via CDN. It would be better if the package were installed locally via npm.
+3. Recommendation: Found `https://cdn.jsdelivr.net` in file `index.html`: Prefer bundling dependencies via npm instead of CDN references.
+4. Recommendation: Found `https://cdn.jsdelivr.net` in file `MMM-D2L.js`: Prefer bundling dependencies via npm instead of CDN references.
 5. Recommendation: Found `XMLHttpRequest` in file `node_helper.js`: Replace it with built-in fetch ([documentation](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch); [example module with fetch implemented](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/node_helper.js)).
 6. Deprecated: Found `"lockfileVersion": 2` in file `package-lock.json`: Run `npm update` to update to lockfileVersion 3.
 7. Typo: Found `MagicMirror2` in file `package.json`: Replace it with `MagicMirror²`.
@@ -2342,32 +2324,31 @@ Last update: 2025-10-01T23:26:54+02:00
 
 ### [MMM-Dad-Jokes by brucetony](https://github.com/brucetony/MMM-Dad-Jokes)
 
-1. Recommendation: Found `npm run` in file `package.json`: Replace it with `node --run`. This is a more modern way to run scripts, without the need for npm.
-2. Recommendation: Found `eslint .` in file `package.json`: The period at the end of the command is not necessary since v9. It is recommended to remove it.
-3. Recommendation: Found `eslint --fix .` in file `package.json`: The period at the end of the command is not necessary since v9. It is recommended to remove it.
-4. Recommendation: Found `"eslint-plugin-json"` in file `package.json`: Replace it by `@eslint/json`.
-5. Recommendation: The README seems not to have an update section (like `## Update`). Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Update-Instructions)).
-6. Recommendation: The README seems to have a modules array (Found `modules: [`). This is usually not necessary. Please remove it if it is not needed ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Config-Instructions)).
-7. Recommendation: The README seems to have a config example without a trailing comma. Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Config-Instructions)).
-8. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
-9. Recommendation: There is no dependabot configuration file. It is recommended to add one ([example dependabot file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/.github/dependabot.yaml)).
-10. Recommendation: The ESLint configuration file `eslint.config.mjs` does not contain `defineConfig`. It is recommended to use it.
+1. Recommendation: Found `npm run` in file `package.json`: Prefer `node --run` over invoking npm run directly.
+2. Recommendation: Found `eslint .` in file `package.json`: Drop the trailing '.' when invoking ESLint v9 or newer.
+3. Recommendation: Found `"eslint-plugin-json"` in file `package.json`: Suggest adopting `@eslint/json` for JSON linting.
+4. Recommendation: The README seems not to have an update section (like `## Update`). Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Update-Instructions)).
+5. Recommendation: The README seems to have a modules array (Found `modules: [`). This is usually not necessary. Please remove it if it is not needed ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Config-Instructions)).
+6. Recommendation: The README seems to have a config example without a trailing comma. Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Config-Instructions)).
+7. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
+8. Recommendation: There is no dependabot configuration file. It is recommended to add one ([example dependabot file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/.github/dependabot.yaml)).
+9. Recommendation: The ESLint configuration file `eslint.config.mjs` does not contain `defineConfig`. It is recommended to use it.
 
 ### [MMM-DagelijksWoord by wctimmer](https://github.com/wctimmer/MMM-DagelijksWoord)
 
 1. There are no keywords in 'package.json'. We would use them as tags on the module list page.
 2. Typo: Found `Magic Mirror` in file `MMM-DagelijksWoord.js`: Replace it with `MagicMirror²`.
 3. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
-4. Recommendation: Found `require("https")` in file `node_helper.js`: Replace "https" by "node:https".
+4. Recommendation: Found `require("https")` in file `node_helper.js`: Replace `https` with the scoped import `node:https`.
 5. Deprecated: Found `"lockfileVersion": 2` in file `package-lock.json`: Run `npm update` to update to lockfileVersion 3.
 6. Typo: Found `[MagicMirror]` in file `README.md`: Replace it with `[MagicMirror²]`.
 7. Outdated: Found `MichMich/MagicMirror` in file `README.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
 8. Recommendation: The README seems not to have an update section (like `## Update`). Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Update-Instructions)).
 9. Recommendation: The README seems to have a modules array (Found `modules: [`). This is usually not necessary. Please remove it if it is not needed ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Config-Instructions)).
 10. Recommendation: The README seems to have a config example without a trailing comma. Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Config-Instructions)).
-11. Recommendation: Found `uses: actions/checkout@v3` in file `lint.yml`: Replace it with v5.
-12. Recommendation: Found `uses: actions/setup-node@v3` in file `lint.yml`: Replace it with v5.
-13. Recommendation: Found `npm run` in file `lint.yml`: Replace it with `node --run`. This is a more modern way to run scripts, without the need for npm.
+11. Recommendation: Found `uses: actions/checkout@v3` in file `lint.yml`: Upgrade workflows to use actions/checkout@v5.
+12. Recommendation: Found `uses: actions/setup-node@v3` in file `lint.yml`: Upgrade workflows to use actions/setup-node@v5.
+13. Recommendation: Found `npm run` in file `lint.yml`: Prefer `node --run` over invoking npm run directly.
 14. Recommendation: There is no CHANGELOG file. It is recommended to add one ([example CHANGELOG file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CHANGELOG.md)).
 15. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
 16. Recommendation: There is no dependabot configuration file. It is recommended to add one ([example dependabot file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/.github/dependabot.yaml)).
@@ -2470,7 +2451,7 @@ Last update: 2025-10-01T23:26:54+02:00
 2. There are no keywords in 'package.json'. We would use them as tags on the module list page.
 3. Typo: Found `Magic Mirror` in file `MMM-DailyPokemon.js`: Replace it with `MagicMirror²`.
 4. Recommendation: Found `XMLHttpRequest` in file `MMM-DailyPokemon.js`: Replace it with built-in fetch ([documentation](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch); [example module with fetch implemented](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/node_helper.js)).
-5. Deprecated: Found `"grunt"` in file `package.json`: Grunt is practically unmaintained. Move on to something better.
+5. Deprecated: Found `"grunt"` in file `package.json`: Grunt is effectively unmaintained. Move on to something modern.
 6. Outdated: Found `MichMich/MagicMirror` in file `README.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
 7. Recommendation: The README seems not to have an update section (like `## Update`). Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Update-Instructions)).
 8. Recommendation: The README seems not to have an install section (like `## Installation`). Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Installation-Instructions)).
@@ -2483,7 +2464,7 @@ Last update: 2025-10-01T23:26:54+02:00
 ### [MMM-DailyPower by oemel09](https://github.com/oemel09/MMM-DailyPower)
 
 1. There is no `package.json`. We need this file to gather information about the module for the module list page.
-2. Recommendation: Found `require('https')` in file `node_helper.js`: Replace 'https' by 'node:https'.
+2. Recommendation: Found `require('https')` in file `node_helper.js`: Replace `https` with the scoped import `node:https`.
 3. Typo: Found `[MagicMirror]` in file `README.md`: Replace it with `[MagicMirror²]`.
 4. Outdated: Found `MichMich/MagicMirror` in file `README.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
 5. Recommendation: The README seems not to have an update section (like `## Update`). Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Update-Instructions)).
@@ -2529,7 +2510,7 @@ Last update: 2025-10-01T23:26:54+02:00
 1. There is no `package.json`. We need this file to gather information about the module for the module list page.
 2. No image found.
 3. Recommendation: Module name doesn't follow the recommended pattern (it doesn't start with `MMM-`). Consider renaming your module.
-4. Recommendation: Found `require('https')` in file `node_helper.js`: Replace 'https' by 'node:https'.
+4. Recommendation: Found `require('https')` in file `node_helper.js`: Replace `https` with the scoped import `node:https`.
 5. Outdated: Found `MichMich/MagicMirror` in file `README.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
 6. Recommendation: The README seems not to have an update section (like `## Update`). Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Update-Instructions)).
 7. Recommendation: The README seems not to have clone instructions.
@@ -2589,7 +2570,7 @@ Last update: 2025-10-01T23:26:54+02:00
 2. Issues are not enabled in the GitHub repository. So users cannot report bugs. Please enable issues in your repo.
 3. Typo: Found `Magic Mirror` in file `MMM-DCMetroTimes.js`: Replace it with `MagicMirror²`.
 4. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
-5. Recommendation: Found `require('https')` in file `node_helper.js`: Replace 'https' by 'node:https'.
+5. Recommendation: Found `require('https')` in file `node_helper.js`: Replace `https` with the scoped import `node:https`.
 6. Typo: Found `Magic Mirror` in file `README.md`: Replace it with `MagicMirror²`.
 7. Typo: Found `[MagicMirror]` in file `README.md`: Replace it with `[MagicMirror²]`.
 8. Outdated: Found `MichMich/MagicMirror` in file `README.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
@@ -2598,7 +2579,7 @@ Last update: 2025-10-01T23:26:54+02:00
 11. Recommendation: The README seems to have a modules array (Found `modules: [`). This is usually not necessary. Please remove it if it is not needed ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Config-Instructions)).
 12. Recommendation: The README seems to have a config example without a trailing comma. Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Config-Instructions)).
 13. Recommendation: The README seems not to have clone instructions.
-14. Recommendation: Found `require('https')` in file `getStationCodes.js`: Replace 'https' by 'node:https'.
+14. Recommendation: Found `require('https')` in file `getStationCodes.js`: Replace `https` with the scoped import `node:https`.
 15. Recommendation: There is no CHANGELOG file. It is recommended to add one ([example CHANGELOG file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CHANGELOG.md)).
 16. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
 17. Recommendation: There is no dependabot configuration file. It is recommended to add one ([example dependabot file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/.github/dependabot.yaml)).
@@ -2609,14 +2590,14 @@ Last update: 2025-10-01T23:26:54+02:00
 1. There is no `package.json`. We need this file to gather information about the module for the module list page.
 2. Typo: Found `Magic Mirror` in file `MMM-DCMetroTrainTimes.js`: Replace it with `MagicMirror²`.
 3. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
-4. Recommendation: Found `require('https')` in file `node_helper.js`: Replace 'https' by 'node:https'.
+4. Recommendation: Found `require('https')` in file `node_helper.js`: Replace `https` with the scoped import `node:https`.
 5. Typo: Found `Magic Mirror` in file `README.md`: Replace it with `MagicMirror²`.
 6. Recommendation: The README seems not to have an update section (like `## Update`). Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Update-Instructions)).
 7. Recommendation: The README seems not to have an install section (like `## Installation`). Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Installation-Instructions)).
 8. Recommendation: The README seems to have a modules array (Found `modules: [`). This is usually not necessary. Please remove it if it is not needed ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Config-Instructions)).
 9. Recommendation: The README seems to have a config example without a trailing comma. Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Config-Instructions)).
 10. Recommendation: The README seems not to have clone instructions.
-11. Recommendation: Found `require('https')` in file `getStationCodes.js`: Replace 'https' by 'node:https'.
+11. Recommendation: Found `require('https')` in file `getStationCodes.js`: Replace `https` with the scoped import `node:https`.
 12. Recommendation: There is no CHANGELOG file. It is recommended to add one ([example CHANGELOG file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CHANGELOG.md)).
 13. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
 14. Recommendation: There is no dependabot configuration file. It is recommended to add one ([example dependabot file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/.github/dependabot.yaml)).
@@ -2653,7 +2634,7 @@ Last update: 2025-10-01T23:26:54+02:00
 ### [MMM-DenHaag-TrashCalendar by cokceken](https://github.com/cokceken/MMM-DenHaag-TrashCalendar)
 
 1. `package.json` issue: No repository field.
-2. There are no specific keywords in 'package.json'. We would use them as tags on the module list page. Add a few meaningful terms to the keywords in the package.json. Not just “magicmirror” or “module”.
+2. There are no keywords in 'package.json'. We would use them as tags on the module list page.
 3. Repository name and main js file name is not the same.
 4. Deprecated: Found `require('request')` in file `node_helper.js`: Replace it with built-in fetch ([documentation](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch); [example module with fetch implemented](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/node_helper.js)).
 5. Typo: Found `MagicMirror2` in file `package.json`: Replace it with `MagicMirror²`.
@@ -2693,7 +2674,7 @@ Last update: 2025-10-01T23:26:54+02:00
 
 ### [MMM-dht22 by nebulx29](https://github.com/nebulx29/MMM-dht22)
 
-1. An error occurred while getting information from 'package.json': Error: Invalid version: "0.1"
+1. `package.json` issue: Invalid version: "0.1"
 2. No image found.
 3. Typo: Found `Magic Mirror` in file `MMM-dht22.js`: Replace it with `MagicMirror²`.
 4. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
@@ -2708,7 +2689,7 @@ Last update: 2025-10-01T23:26:54+02:00
 
 ### [MMM-DHT22 by J0n4e](https://github.com/J0n4e/MMM-DHT22)
 
-1. Recommendation: Found `https://cdnjs.cloudflare.com` in file `MMM-DHT22.css`: It looks like a package is loaded via CDN. It would be better if the package were installed locally via npm.
+1. Recommendation: Found `https://cdnjs.cloudflare.com` in file `MMM-DHT22.css`: Prefer bundling dependencies via npm instead of CDN references.
 2. Recommendation: The README seems not to have an update section (like `## Update`). Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Update-Instructions)).
 3. Recommendation: The README seems to have a modules array (Found `modules: [`). This is usually not necessary. Please remove it if it is not needed ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Config-Instructions)).
 4. Recommendation: The README seems to have a config example without a trailing comma. Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Config-Instructions)).
@@ -2732,12 +2713,12 @@ Last update: 2025-10-01T23:26:54+02:00
 
 ### [MMM-DigitalAlarmClock by justjim1220](https://github.com/justjim1220/MMM-DigitalAlarmClock)
 
-1. Recommendation: Found `jshint` in file `MMM-DigitalAlarmClock.js`: Replace "jshint" by "eslint".
+1. Recommendation: Found `jshint` in file `MMM-DigitalAlarmClock.js`: Suggest migrating from JSHint to ESLint.
 2. Outdated: Found `MichMich/MagicMirror` in file `MMM-DigitalAlarmClock.js`: Replace it by `MagicMirrorOrg/MagicMirror`.
 3. Deprecated: Found `"lockfileVersion": 1` in file `package-lock.json`: Run `npm update` to update to lockfileVersion 3.
 4. Typo: Found `MagicMirror2` in file `package.json`: Replace it with `MagicMirror²`.
-5. Recommendation: Found `eslint .` in file `package.json`: The period at the end of the command is not necessary since v9. It is recommended to remove it.
-6. Deprecated: Found `eslint-config-airbnb` in file `package.json`: Replace it with modern ESLint configuration.
+5. Recommendation: Found `eslint .` in file `package.json`: Drop the trailing '.' when invoking ESLint v9 or newer.
+6. Deprecated: Found `eslint-config-airbnb` in file `package.json`: Replace the preset with a maintained ESLint configuration.
 7. Recommendation: The README seems not to have an update section (like `## Update`). Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Update-Instructions)).
 8. Recommendation: The README seems to have a modules array (Found `modules: [`). This is usually not necessary. Please remove it if it is not needed ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Config-Instructions)).
 9. Recommendation: There is no CHANGELOG file. It is recommended to add one ([example CHANGELOG file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CHANGELOG.md)).
@@ -2792,7 +2773,7 @@ Last update: 2025-10-01T23:26:54+02:00
 1. There is no `package.json`. We need this file to gather information about the module for the module list page.
 2. No image found.
 3. Typo: Found `Magic Mirror` in file `MMM-DockerVisualizer.js`: Replace it with `MagicMirror²`.
-4. Recommendation: Found `require('http')` in file `node_helper.js`: Replace 'http' by 'node:http'.
+4. Recommendation: Found `require('http')` in file `node_helper.js`: Replace `http` with the scoped import `node:http`.
 5. Outdated: Found `MichMich/MagicMirror` in file `README.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
 6. Recommendation: The README seems not to have an update section (like `## Update`). Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Update-Instructions)).
 7. Recommendation: The README seems to have a config example without a trailing comma. Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Config-Instructions)).
@@ -2820,7 +2801,7 @@ Last update: 2025-10-01T23:26:54+02:00
 
 1. `package.json` issue: No repository field.
 2. There are no keywords in 'package.json'. We would use them as tags on the module list page.
-3. Recommendation: Found `https://cdnjs.cloudflare.com` in file `MMM-DoomsdayClock.js`: It looks like a package is loaded via CDN. It would be better if the package were installed locally via npm.
+3. Recommendation: Found `https://cdnjs.cloudflare.com` in file `MMM-DoomsdayClock.js`: Prefer bundling dependencies via npm instead of CDN references.
 4. Recommendation: Found `"node-fetch"` in file `node_helper.js`: Replace it with built-in fetch ([documentation](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch); [example module with fetch implemented](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/node_helper.js)).
 5. Recommendation: Found `"node-fetch"` in file `package.json`: Replace it with built-in fetch ([documentation](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch); [example module with fetch implemented](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/node_helper.js)).
 6. Recommendation: The README seems not to have an install section (like `## Installation`). Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Installation-Instructions)).
@@ -2832,7 +2813,7 @@ Last update: 2025-10-01T23:26:54+02:00
 ### [MMM-Dorba-Trails by drventure](https://github.com/drventure/MMM-Dorba-Trails)
 
 1. `package.json` issue: No repository field.
-2. There are no specific keywords in 'package.json'. We would use them as tags on the module list page. Add a few meaningful terms to the keywords in the package.json. Not just “magicmirror” or “module”.
+2. There are no keywords in 'package.json'. We would use them as tags on the module list page.
 3. Issue: The license in the package.json (ISC) doesn't match the license file (MIT).
 4. Deprecated: Found `"lockfileVersion": 2` in file `package-lock.json`: Run `npm update` to update to lockfileVersion 3.
 5. Outdated: Found `MichMich/MagicMirror` in file `README.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
@@ -2870,8 +2851,8 @@ Last update: 2025-10-01T23:26:54+02:00
 
 ### [MMM-duolingo-streak by thomaspich](https://github.com/thomaspich/MMM-duolingo-streak)
 
-1. Recommendation: Found `npm run` in file `package.json`: Replace it with `node --run`. This is a more modern way to run scripts, without the need for npm.
-2. Recommendation: Found `eslint .` in file `package.json`: The period at the end of the command is not necessary since v9. It is recommended to remove it.
+1. Recommendation: Found `npm run` in file `package.json`: Prefer `node --run` over invoking npm run directly.
+2. Recommendation: Found `eslint .` in file `package.json`: Drop the trailing '.' when invoking ESLint v9 or newer.
 3. Recommendation: The README seems not to have an update section (like `## Update`). Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Update-Instructions)).
 4. Recommendation: The README seems not to have an install section (like `## Installation`). Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Installation-Instructions)).
 5. Recommendation: The README seems to have a config example without a trailing comma. Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Config-Instructions)).
@@ -2883,10 +2864,10 @@ Last update: 2025-10-01T23:26:54+02:00
 
 ### [MMM-DVB by skastenholz](https://github.com/skastenholz/MMM-DVB)
 
-1. Recommendation: Found `jshint` in file `Gruntfile.js`: Replace "jshint" by "eslint".
+1. Recommendation: Found `jshint` in file `Gruntfile.js`: Suggest migrating from JSHint to ESLint.
 2. Recommendation: Found `axios` in file `package.json`: Replace it with built-in fetch ([documentation](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch); [example module with fetch implemented](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/node_helper.js)).
-3. Recommendation: Found `jshint` in file `package.json`: Replace "jshint" by "eslint".
-4. Deprecated: Found `"grunt"` in file `package.json`: Grunt is practically unmaintained. Move on to something better.
+3. Recommendation: Found `jshint` in file `package.json`: Suggest migrating from JSHint to ESLint.
+4. Deprecated: Found `"grunt"` in file `package.json`: Grunt is effectively unmaintained. Move on to something modern.
 5. Outdated: Found `MichMich/MagicMirror` in file `README.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
 6. Recommendation: The README seems not to have an update section (like `## Update`). Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Update-Instructions)).
 7. Recommendation: The README seems to have a config example without a trailing comma. Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Config-Instructions)).
@@ -2964,24 +2945,24 @@ Last update: 2025-10-01T23:26:54+02:00
 
 ### [MMM-DynamicWeather by scottcl88](https://github.com/scottcl88/MMM-DynamicWeather)
 
-1. Deprecated: Found `getYear()` in file `MMM-DynamicWeather.js`: Replace `getYear()` by `getFullYear()`.
-2. Deprecated: Found `api.openweathermap.org/data/2.5` in file `MMM-DynamicWeather.js`: OpenWeather API 2.5 is deprecated since June 2024. Please update to 3.0.
+1. Deprecated: Found `getYear()` in file `MMM-DynamicWeather.js`: Replace `getYear()` with `getFullYear()`.
+2. Deprecated: Found `api.openweathermap.org/data/2.5` in file `MMM-DynamicWeather.js`: OpenWeather API 2.5 is deprecated - upgrade integrations to v3.
 3. Typo: Found `Magic Mirror` in file `MMM-DynamicWeather.ts`: Replace it with `MagicMirror²`.
-4. Deprecated: Found `getYear()` in file `MMM-DynamicWeather.ts`: Replace `getYear()` by `getFullYear()`.
-5. Deprecated: Found `api.openweathermap.org/data/2.5` in file `MMM-DynamicWeather.ts`: OpenWeather API 2.5 is deprecated since June 2024. Please update to 3.0.
+4. Deprecated: Found `getYear()` in file `MMM-DynamicWeather.ts`: Replace `getYear()` with `getFullYear()`.
+5. Deprecated: Found `api.openweathermap.org/data/2.5` in file `MMM-DynamicWeather.ts`: OpenWeather API 2.5 is deprecated - upgrade integrations to v3.
 6. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
-7. Recommendation: Found `require('https')` in file `node_helper.js`: Replace 'https' by 'node:https'.
+7. Recommendation: Found `require('https')` in file `node_helper.js`: Replace `https` with the scoped import `node:https`.
 8. Found directory `node_modules`. This shouldn't be uploaded. Add `node_modules/`to `.gitignore`.
 9. Typo: Found `Magic Mirror` in file `README.md`: Replace it with `MagicMirror²`.
-10. Recommendation: Found `uses: actions/checkout@v2` in file `codeql-analysis.yml`: Replace it with v5.
+10. Recommendation: Found `uses: actions/checkout@v2` in file `codeql-analysis.yml`: Upgrade workflows to use actions/checkout@v5.
 11. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
 12. Recommendation: There is no dependabot configuration file. It is recommended to add one ([example dependabot file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/.github/dependabot.yaml)).
 13. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/eslint.md)).
 
 ### [MMM-EarthquakeAlerts by dathbe](https://github.com/dathbe/MMM-EarthquakeAlerts)
 
-1. Recommendation: Found `uses: actions/checkout@v4` in file `automated-tests.yaml`: Replace it with v5.
-2. Recommendation: Found `uses: actions/setup-node@v4` in file `automated-tests.yaml`: Replace it with v5.
+1. Recommendation: Found `uses: actions/checkout@v4` in file `automated-tests.yaml`: Upgrade workflows to use actions/checkout@v5.
+2. Recommendation: Found `uses: actions/setup-node@v4` in file `automated-tests.yaml`: Upgrade workflows to use actions/setup-node@v5.
 3. Information: There are updates for 4 dependencie(s):
    - @eslint/js                ^9.32.0  →  ^9.36.0
    - @stylistic/eslint-plugin   ^5.2.2  →   ^5.4.0
@@ -3015,17 +2996,17 @@ Last update: 2025-10-01T23:26:54+02:00
 ### [MMM-Ecobee by parnic](https://github.com/parnic/MMM-Ecobee)
 
 1. Typo: Found `Magic Mirror` in file `MMM-Ecobee.js`: Replace it with `MagicMirror²`.
-2. Recommendation: Found `require("https")` in file `node_helper.js`: Replace "https" by "node:https".
+2. Recommendation: Found `require("https")` in file `node_helper.js`: Replace `https` with the scoped import `node:https`.
 3. Typo: Found `MagicMirror2` in file `package.json`: Replace it with `MagicMirror²`.
 4. Typo: Found `Magic Mirror` in file `README.md`: Replace it with `MagicMirror²`.
 5. Outdated: Found `MichMich/MagicMirror` in file `README.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
 6. Recommendation: The README seems not to have an update section (like `## Update`). Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Update-Instructions)).
 7. Recommendation: The README seems to have a config example without a trailing comma. Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Config-Instructions)).
 8. Recommendation: The README seems not to have clone instructions.
-9. Recommendation: Found `uses: actions/checkout@v3` in file `nodejs.yml`: Replace it with v5.
-10. Recommendation: Found `uses: actions/setup-node@v3` in file `nodejs.yml`: Replace it with v5.
-11. Deprecated: Found `node-version: [18` in file `nodejs.yml`: Update to current version.
-12. Recommendation: Found `npm run` in file `nodejs.yml`: Replace it with `node --run`. This is a more modern way to run scripts, without the need for npm.
+9. Recommendation: Found `uses: actions/checkout@v3` in file `nodejs.yml`: Upgrade workflows to use actions/checkout@v5.
+10. Recommendation: Found `uses: actions/setup-node@v3` in file `nodejs.yml`: Upgrade workflows to use actions/setup-node@v5.
+11. Deprecated: Found `node-version: [18` in file `nodejs.yml`: Update CI workflows to target a supported Node.js LTS release.
+12. Recommendation: Found `npm run` in file `nodejs.yml`: Prefer `node --run` over invoking npm run directly.
 13. Recommendation: There is no CHANGELOG file. It is recommended to add one ([example CHANGELOG file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CHANGELOG.md)).
 14. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
 15. Recommendation: There is no dependabot configuration file. It is recommended to add one ([example dependabot file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/.github/dependabot.yaml)).
@@ -3063,8 +3044,8 @@ Last update: 2025-10-01T23:26:54+02:00
 
 1. Deprecated: Found `"lockfileVersion": 1` in file `package-lock.json`: Run `npm update` to update to lockfileVersion 3.
 2. Typo: Found `MagicMirror2` in file `package.json`: Replace it with `MagicMirror²`.
-3. Recommendation: Found `npm run` in file `package.json`: Replace it with `node --run`. This is a more modern way to run scripts, without the need for npm.
-4. Deprecated: Found `rollup-plugin-banner` in file `package.json`: Replace it with built-in banner.
+3. Recommendation: Found `npm run` in file `package.json`: Prefer `node --run` over invoking npm run directly.
+4. Deprecated: Found `rollup-plugin-banner` in file `package.json`: Use Rollup's built-in banner support.
 5. Recommendation: The README seems not to have an update section (like `## Update`). Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Update-Instructions)).
 6. Recommendation: The README seems not to have a config example. Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Config-Instructions)).
 7. Recommendation: The README seems to have incorrect clone instructions. Please check the URL.
@@ -3077,10 +3058,10 @@ Last update: 2025-10-01T23:26:54+02:00
 ### [MMM-EFA-departures by sourceforge807](https://github.com/sourceforge807/MMM-EFA-departures)
 
 1. No image found.
-2. Recommendation: Found `jshint` in file `classie.js`: Replace "jshint" by "eslint".
+2. Recommendation: Found `jshint` in file `classie.js`: Suggest migrating from JSHint to ESLint.
 3. Typo: Found `Magic Mirror` in file `MMM-EFA-departures.js`: Replace it with `MagicMirror²`.
 4. Deprecated: Found `require('request')` in file `node_helper.js`: Replace it with built-in fetch ([documentation](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch); [example module with fetch implemented](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/node_helper.js)).
-5. Recommendation: Found `npm run` in file `README.md`: Replace it with `node --run`. This is a more modern way to run scripts, without the need for npm.
+5. Recommendation: Found `npm run` in file `README.md`: Prefer `node --run` over invoking npm run directly.
 6. Outdated: Found `MichMich/MagicMirror` in file `README.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
 7. Recommendation: The README seems to have a config example without a trailing comma. Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Config-Instructions)).
 8. Recommendation: There is no CHANGELOG file. It is recommended to add one ([example CHANGELOG file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CHANGELOG.md)).
@@ -3093,7 +3074,7 @@ Last update: 2025-10-01T23:26:54+02:00
 1. There is no `package.json`. We need this file to gather information about the module for the module list page.
 2. Recommendation: Found `XMLHttpRequest` in file `MMM-ELMPrayerTime.js`: Replace it with built-in fetch ([documentation](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch); [example module with fetch implemented](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/node_helper.js)).
 3. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
-4. Deprecated: Found `omxplayer` in file `node_helper.js`: Try to replace it with `mplayer` or `vlc`.
+4. Deprecated: Found `omxplayer` in file `node_helper.js`: Replace OMXPlayer usage with maintained alternatives such as mplayer or VLC.
 5. Outdated: Found `MichMich/MagicMirror` in file `README.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
 6. Recommendation: The README seems not to have an update section (like `## Update`). Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Update-Instructions)).
 7. Recommendation: The README seems to have a modules array (Found `modules: [`). This is usually not necessary. Please remove it if it is not needed ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Config-Instructions)).
@@ -3107,9 +3088,9 @@ Last update: 2025-10-01T23:26:54+02:00
 1. Typo: Found `Magic Mirror` in file `MMM-Elvira.js`: Replace it with `MagicMirror²`.
 2. Deprecated: Found `require('request')` in file `node_helper.js`: Replace it with built-in fetch ([documentation](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch); [example module with fetch implemented](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/node_helper.js)).
 3. Deprecated: Found `"lockfileVersion": 2` in file `package-lock.json`: Run `npm update` to update to lockfileVersion 3.
-4. Recommendation: Found `npm run` in file `package.json`: Replace it with `node --run`. This is a more modern way to run scripts, without the need for npm.
-5. Deprecated: Found `eslint-config-airbnb` in file `package.json`: Replace it with modern ESLint configuration.
-6. Recommendation: Found `npm run` in file `README.md`: Replace it with `node --run`. This is a more modern way to run scripts, without the need for npm.
+4. Recommendation: Found `npm run` in file `package.json`: Prefer `node --run` over invoking npm run directly.
+5. Deprecated: Found `eslint-config-airbnb` in file `package.json`: Replace the preset with a maintained ESLint configuration.
+6. Recommendation: Found `npm run` in file `README.md`: Prefer `node --run` over invoking npm run directly.
 7. Outdated: Found `MichMich/MagicMirror` in file `README.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
 8. Recommendation: The README seems not to have an update section (like `## Update`). Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Update-Instructions)).
 9. Recommendation: The README seems not to have an install section (like `## Installation`). Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Installation-Instructions)).
@@ -3122,9 +3103,9 @@ Last update: 2025-10-01T23:26:54+02:00
 ### [MMM-EmbedURL by Tom-Hirschberger](https://github.com/Tom-Hirschberger/MMM-EmbedURL)
 
 1. Recommendation: Found `prettier/prettier` in file `.stylelintrc.json`: Config would be cleaner using 'stylelint-prettier/recommended'. [See here](https://github.com/prettier/stylelint-prettier).
-2. Recommendation: Found `npm run` in file `package.json`: Replace it with `node --run`. This is a more modern way to run scripts, without the need for npm.
-3. Recommendation: Found `eslint .` in file `package.json`: The period at the end of the command is not necessary since v9. It is recommended to remove it.
-4. Recommendation: Found `npm run` in file `README.md`: Replace it with `node --run`. This is a more modern way to run scripts, without the need for npm.
+2. Recommendation: Found `npm run` in file `package.json`: Prefer `node --run` over invoking npm run directly.
+3. Recommendation: Found `eslint .` in file `package.json`: Drop the trailing '.' when invoking ESLint v9 or newer.
+4. Recommendation: Found `npm run` in file `README.md`: Prefer `node --run` over invoking npm run directly.
 5. Recommendation: The README seems not to have an update section (like `## Update`). Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Update-Instructions)).
 6. Recommendation: The README seems not to have an install section (like `## Installation`). Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Installation-Instructions)).
 7. Recommendation: There is no CHANGELOG file. It is recommended to add one ([example CHANGELOG file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CHANGELOG.md)).
@@ -3178,7 +3159,7 @@ Last update: 2025-10-01T23:26:54+02:00
 
 ### [MMM-EMTValencia by raulbalanza](https://github.com/raulbalanza/MMM-EMTValencia)
 
-1. Recommendation: Found `require('http')` in file `node_helper.js`: Replace 'http' by 'node:http'.
+1. Recommendation: Found `require('http')` in file `node_helper.js`: Replace `http` with the scoped import `node:http`.
 2. Typo: Found `[MagicMirror]` in file `README.md`: Replace it with `[MagicMirror²]`.
 3. Outdated: Found `MichMich/MagicMirror` in file `README.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
 4. Recommendation: The README seems not to have an update section (like `## Update`). Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Update-Instructions)).
@@ -3204,7 +3185,7 @@ Last update: 2025-10-01T23:26:54+02:00
 1. There is no `package.json`. We need this file to gather information about the module for the module list page.
 2. Typo: Found `Magic Mirror` in file `MMM-EnphaseSolar.js`: Replace it with `MagicMirror²`.
 3. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
-4. Recommendation: Found `require('https')` in file `node_helper.js`: Replace 'https' by 'node:https'.
+4. Recommendation: Found `require('https')` in file `node_helper.js`: Replace `https` with the scoped import `node:https`.
 5. Typo: Found `[MagicMirror]` in file `README.md`: Replace it with `[MagicMirror²]`.
 6. Outdated: Found `MichMich/MagicMirror` in file `README.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
 7. Recommendation: The README seems not to have an update section (like `## Update`). Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Update-Instructions)).
@@ -3218,8 +3199,8 @@ Last update: 2025-10-01T23:26:54+02:00
 
 ### [MMM-Entur-tavle by Arve](https://github.com/Arve/MMM-Entur-tavle)
 
-1. Recommendation: Found `eslint .` in file `package.json`: The period at the end of the command is not necessary since v9. It is recommended to remove it.
-2. Recommendation: Found `npm run` in file `README.md`: Replace it with `node --run`. This is a more modern way to run scripts, without the need for npm.
+1. Recommendation: Found `eslint .` in file `package.json`: Drop the trailing '.' when invoking ESLint v9 or newer.
+2. Recommendation: Found `npm run` in file `README.md`: Prefer `node --run` over invoking npm run directly.
 3. Recommendation: The README seems not to have an update section (like `## Update`). Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Update-Instructions)).
 4. Recommendation: There is no CHANGELOG file. It is recommended to add one ([example CHANGELOG file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CHANGELOG.md)).
 5. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
@@ -3238,7 +3219,7 @@ Last update: 2025-10-01T23:26:54+02:00
 2. Issue: The license in the package.json (ISC) doesn't match the license file (MIT).
 3. Recommendation: Found `"node-fetch"` in file `node_helper.js`: Replace it with built-in fetch ([documentation](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch); [example module with fetch implemented](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/node_helper.js)).
 4. Recommendation: Found `"node-fetch"` in file `package.json`: Replace it with built-in fetch ([documentation](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch); [example module with fetch implemented](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/node_helper.js)).
-5. Recommendation: Found `eslint .` in file `package.json`: The period at the end of the command is not necessary since v9. It is recommended to remove it.
+5. Recommendation: Found `eslint .` in file `package.json`: Drop the trailing '.' when invoking ESLint v9 or newer.
 6. Recommendation: There is no CHANGELOG file. It is recommended to add one ([example CHANGELOG file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CHANGELOG.md)).
 7. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
 8. Recommendation: There is no dependabot configuration file. It is recommended to add one ([example dependabot file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/.github/dependabot.yaml)).
@@ -3248,7 +3229,7 @@ Last update: 2025-10-01T23:26:54+02:00
 
 1. `package.json` issue: No description
 2. `package.json` issue: No repository field.
-3. There are no specific keywords in 'package.json'. We would use them as tags on the module list page. Add a few meaningful terms to the keywords in the package.json. Not just “magicmirror” or “module”.
+3. There are no keywords in 'package.json'. We would use them as tags on the module list page.
 4. Issue: The license in the package.json (ISC) doesn't match the license file (MIT).
 5. No image found.
 6. Recommendation: Found `axios` in file `node_helper.js`: Replace it with built-in fetch ([documentation](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch); [example module with fetch implemented](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/node_helper.js)).
@@ -3296,7 +3277,7 @@ Last update: 2025-10-01T23:26:54+02:00
 2. Typo: Found `Magic Mirror` in file `MMM-Ethos.js`: Replace it with `MagicMirror²`.
 3. Recommendation: Found `XMLHttpRequest` in file `MMM-Ethos.js`: Replace it with built-in fetch ([documentation](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch); [example module with fetch implemented](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/node_helper.js)).
 4. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
-5. Deprecated: Found `"grunt"` in file `package.json`: Grunt is practically unmaintained. Move on to something better.
+5. Deprecated: Found `"grunt"` in file `package.json`: Grunt is effectively unmaintained. Move on to something modern.
 6. Outdated: Found `MichMich/MagicMirror` in file `README.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
 7. Recommendation: The README seems not to have an update section (like `## Update`). Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Update-Instructions)).
 8. Recommendation: The README seems to have a modules array (Found `modules: [`). This is usually not necessary. Please remove it if it is not needed ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Config-Instructions)).
@@ -3312,7 +3293,7 @@ Last update: 2025-10-01T23:26:54+02:00
 2. There are no keywords in 'package.json'. We would use them as tags on the module list page.
 3. Typo: Found `Magic Mirror` in file `MMM-EUElectricityPrice.js`: Replace it with `MagicMirror²`.
 4. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
-5. Recommendation: Found `require('https')` in file `node_helper.js`: Replace 'https' by 'node:https'.
+5. Recommendation: Found `require('https')` in file `node_helper.js`: Replace `https` with the scoped import `node:https`.
 6. Typo: Found `Magic Mirror` in file `README.md`: Replace it with `MagicMirror²`.
 7. Recommendation: The README seems not to have an update section (like `## Update`). Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Update-Instructions)).
 8. Warning: No LICENSE file ([example LICENSE file](https://github.com/KristjanESPERANTO/MMM-WebSpeechTTS/blob/main/LICENSE.md)).
@@ -3417,8 +3398,8 @@ Last update: 2025-10-01T23:26:54+02:00
 2. Typo: Found `Magic Mirror` in file `MMM-Face-Reco-DNN.js`: Replace it with `MagicMirror²`.
 3. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
 4. Deprecated: Found `"lockfileVersion": 2` in file `package-lock.json`: Run `npm update` to update to lockfileVersion 3.
-5. Recommendation: Found `eslint .` in file `package.json`: The period at the end of the command is not necessary since v9. It is recommended to remove it.
-6. Recommendation: Found `npm run` in file `README.md`: Replace it with `node --run`. This is a more modern way to run scripts, without the need for npm.
+5. Recommendation: Found `eslint .` in file `package.json`: Drop the trailing '.' when invoking ESLint v9 or newer.
+6. Recommendation: Found `npm run` in file `README.md`: Prefer `node --run` over invoking npm run directly.
 7. Recommendation: The README seems not to have an update section (like `## Update`). Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Update-Instructions)).
 8. Typo: Found `Magic Mirror` in file `recognition.py`: Replace it with `MagicMirror²`.
 9. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
@@ -3442,21 +3423,20 @@ Last update: 2025-10-01T23:26:54+02:00
 ### [MMM-Faces by njwilliams](https://github.com/njwilliams/MMM-Faces)
 
 1. Issue: The license in the package.json (MIT) doesn't match the license file (NOASSERTION).
-2. No compatible or wrong license field in 'package.json' or LICENSE file. Without that, we can't use an image.
-3. Typo: Found `Magic Mirror` in file `MMM-Faces.js`: Replace it with `MagicMirror²`.
-4. Typo: Found `Magic Mirror` in file `package.json`: Replace it with `MagicMirror²`.
-5. Typo: Found `Magic Mirror` in file `README.md`: Replace it with `MagicMirror²`.
-6. Typo: Found `[MagicMirror]` in file `README.md`: Replace it with `[MagicMirror²]`.
-7. Outdated: Found `MichMich/MagicMirror` in file `README.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
-8. Recommendation: The README seems not to have an update section (like `## Update`). Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Update-Instructions)).
-9. Recommendation: The README seems not to have an install section (like `## Installation`). Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Installation-Instructions)).
-10. Recommendation: The README seems not to have a config example. Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Config-Instructions)).
-11. Recommendation: Found `https://cdnjs.cloudflare.com` in file `index.html`: It looks like a package is loaded via CDN. It would be better if the package were installed locally via npm.
-12. Recommendation: Found `https://cdn.jsdelivr.net` in file `index.html`: It looks like a package is loaded via CDN. It would be better if the package were installed locally via npm.
-13. Recommendation: There is no CHANGELOG file. It is recommended to add one ([example CHANGELOG file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CHANGELOG.md)).
-14. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
-15. Recommendation: There is no dependabot configuration file. It is recommended to add one ([example dependabot file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/.github/dependabot.yaml)).
-16. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/eslint.md)).
+2. Typo: Found `Magic Mirror` in file `MMM-Faces.js`: Replace it with `MagicMirror²`.
+3. Typo: Found `Magic Mirror` in file `package.json`: Replace it with `MagicMirror²`.
+4. Typo: Found `Magic Mirror` in file `README.md`: Replace it with `MagicMirror²`.
+5. Typo: Found `[MagicMirror]` in file `README.md`: Replace it with `[MagicMirror²]`.
+6. Outdated: Found `MichMich/MagicMirror` in file `README.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
+7. Recommendation: The README seems not to have an update section (like `## Update`). Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Update-Instructions)).
+8. Recommendation: The README seems not to have an install section (like `## Installation`). Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Installation-Instructions)).
+9. Recommendation: The README seems not to have a config example. Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Config-Instructions)).
+10. Recommendation: Found `https://cdnjs.cloudflare.com` in file `index.html`: Prefer bundling dependencies via npm instead of CDN references.
+11. Recommendation: Found `https://cdn.jsdelivr.net` in file `index.html`: Prefer bundling dependencies via npm instead of CDN references.
+12. Recommendation: There is no CHANGELOG file. It is recommended to add one ([example CHANGELOG file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CHANGELOG.md)).
+13. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
+14. Recommendation: There is no dependabot configuration file. It is recommended to add one ([example dependabot file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/.github/dependabot.yaml)).
+15. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/eslint.md)).
 
 ### [MMM-Facial-Recognition by JonasGoebel](https://github.com/JonasGoebel/MMM-Facial-Recognition)
 
@@ -3514,7 +3494,7 @@ Last update: 2025-10-01T23:26:54+02:00
 4. Outdated: Found `MichMich/MagicMirror` in file `README.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
 5. Recommendation: The README seems not to have an update section (like `## Update`). Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Update-Instructions)).
 6. Outdated: Found `MichMich/MagicMirror` in file `base.html`: Replace it by `MagicMirrorOrg/MagicMirror`.
-7. Recommendation: Found `https://cdnjs.cloudflare.com` in file `base.html`: It looks like a package is loaded via CDN. It would be better if the package were installed locally via npm.
+7. Recommendation: Found `https://cdnjs.cloudflare.com` in file `base.html`: Prefer bundling dependencies via npm instead of CDN references.
 8. Recommendation: There is no CHANGELOG file. It is recommended to add one ([example CHANGELOG file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CHANGELOG.md)).
 9. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
 10. Recommendation: There is no dependabot configuration file. It is recommended to add one ([example dependabot file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/.github/dependabot.yaml)).
@@ -3615,8 +3595,8 @@ Last update: 2025-10-01T23:26:54+02:00
 1. Recommendation: Found `axios` in file `dataFetcher.js`: Replace it with built-in fetch ([documentation](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch); [example module with fetch implemented](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/node_helper.js)).
 2. Deprecated: Found `"lockfileVersion": 2` in file `package-lock.json`: Run `npm update` to update to lockfileVersion 3.
 3. Recommendation: Found `axios` in file `package.json`: Replace it with built-in fetch ([documentation](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch); [example module with fetch implemented](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/node_helper.js)).
-4. Recommendation: Found `npm run` in file `package.json`: Replace it with `node --run`. This is a more modern way to run scripts, without the need for npm.
-5. Recommendation: Found `eslint .` in file `package.json`: The period at the end of the command is not necessary since v9. It is recommended to remove it.
+4. Recommendation: Found `npm run` in file `package.json`: Prefer `node --run` over invoking npm run directly.
+5. Recommendation: Found `eslint .` in file `package.json`: Drop the trailing '.' when invoking ESLint v9 or newer.
 6. Outdated: Found `MichMich/MagicMirror` in file `README.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
 7. Recommendation: The README seems not to have an update section (like `## Update`). Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Update-Instructions)).
 8. Recommendation: There is no CHANGELOG file. It is recommended to add one ([example CHANGELOG file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CHANGELOG.md)).
@@ -3659,7 +3639,7 @@ Last update: 2025-10-01T23:26:54+02:00
 1. There is no `package.json`. We need this file to gather information about the module for the module list page.
 2. No image found.
 3. Typo: Found `Magic Mirror` in file `gifFetcher.js`: Replace it with `MagicMirror²`.
-4. Recommendation: Found `require("https")` in file `gifFetcher.js`: Replace "https" by "node:https".
+4. Recommendation: Found `require("https")` in file `gifFetcher.js`: Replace `https` with the scoped import `node:https`.
 5. Typo: Found `Magic Mirror` in file `MMM-FF-tenor-gif.js`: Replace it with `MagicMirror²`.
 6. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
 7. Outdated: Found `MichMich/MagicMirror` in file `README.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
@@ -3675,7 +3655,7 @@ Last update: 2025-10-01T23:26:54+02:00
 
 1. There is no `package.json`. We need this file to gather information about the module for the module list page.
 2. Typo: Found `Magic Mirror` in file `comicFetcher.js`: Replace it with `MagicMirror²`.
-3. Recommendation: Found `require("https")` in file `comicFetcher.js`: Replace "https" by "node:https".
+3. Recommendation: Found `require("https")` in file `comicFetcher.js`: Replace `https` with the scoped import `node:https`.
 4. Typo: Found `Magic Mirror` in file `MMM-FF-XKCD.js`: Replace it with `MagicMirror²`.
 5. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
 6. Typo: Found `Magic Mirror` in file `persistenceService.js`: Replace it with `MagicMirror²`.
@@ -3732,7 +3712,7 @@ Last update: 2025-10-01T23:26:54+02:00
 ### [MMM-Fireworks by ChrisF1976](https://github.com/ChrisF1976/MMM-Fireworks)
 
 1. There is no `package.json`. We need this file to gather information about the module for the module list page.
-2. Recommendation: Found `https://cdnjs.cloudflare.com` in file `MMM-Fireworks.js`: It looks like a package is loaded via CDN. It would be better if the package were installed locally via npm.
+2. Recommendation: Found `https://cdnjs.cloudflare.com` in file `MMM-Fireworks.js`: Prefer bundling dependencies via npm instead of CDN references.
 3. Recommendation: There is no CHANGELOG file. It is recommended to add one ([example CHANGELOG file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CHANGELOG.md)).
 4. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
 5. Recommendation: There is no dependabot configuration file. It is recommended to add one ([example dependabot file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/.github/dependabot.yaml)).
@@ -3771,7 +3751,7 @@ Last update: 2025-10-01T23:26:54+02:00
 
 1. `package.json` issue: No description
 2. `package.json` issue: No repository field.
-3. There are no specific keywords in 'package.json'. We would use them as tags on the module list page. Add a few meaningful terms to the keywords in the package.json. Not just “magicmirror” or “module”.
+3. There are no keywords in 'package.json'. We would use them as tags on the module list page.
 4. Issue: The license in the package.json (ISC) doesn't match the license file (MIT).
 5. Repository name and main js file name is not the same.
 6. Deprecated: Found `require('request')` in file `node_helper.js`: Replace it with built-in fetch ([documentation](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch); [example module with fetch implemented](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/node_helper.js)).
@@ -3791,7 +3771,7 @@ Last update: 2025-10-01T23:26:54+02:00
 4. There are no keywords in 'package.json'. We would use them as tags on the module list page.
 5. No image found.
 6. Typo: Found `[MagicMirror]` in file `README.md`: Replace it with `[MagicMirror²]`.
-7. Recommendation: Found `npm run` in file `README.md`: Replace it with `node --run`. This is a more modern way to run scripts, without the need for npm.
+7. Recommendation: Found `npm run` in file `README.md`: Prefer `node --run` over invoking npm run directly.
 8. Recommendation: The README seems not to have an update section (like `## Update`). Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Update-Instructions)).
 9. Recommendation: The README seems to have incorrect clone instructions. Please check the URL.
 10. Recommendation: There is no CHANGELOG file. It is recommended to add one ([example CHANGELOG file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CHANGELOG.md)).
@@ -3828,7 +3808,7 @@ Last update: 2025-10-01T23:26:54+02:00
 
 ### [MMM-Flights by khassel](https://gitlab.com/khassel/MMM-Flights)
 
-1. Recommendation: Found `https://cdn.jsdelivr.net` in file `MMM-Flights.js`: It looks like a package is loaded via CDN. It would be better if the package were installed locally via npm.
+1. Recommendation: Found `https://cdn.jsdelivr.net` in file `MMM-Flights.js`: Prefer bundling dependencies via npm instead of CDN references.
 2. Recommendation: The README seems to have a modules array (Found `modules: [`). This is usually not necessary. Please remove it if it is not needed ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Config-Instructions)).
 3. Recommendation: There is no CHANGELOG file. It is recommended to add one ([example CHANGELOG file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CHANGELOG.md)).
 4. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
@@ -3850,13 +3830,13 @@ Last update: 2025-10-01T23:26:54+02:00
 
 1. There are no keywords in 'package.json'. We would use them as tags on the module list page.
 2. Deprecated: Found `"lockfileVersion": 1` in file `package-lock.json`: Run `npm update` to update to lockfileVersion 3.
-3. Recommendation: Found `npm run` in file `package.json`: Replace it with `node --run`. This is a more modern way to run scripts, without the need for npm.
+3. Recommendation: Found `npm run` in file `package.json`: Prefer `node --run` over invoking npm run directly.
 4. Outdated: Found `MichMich/MagicMirror` in file `README.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
 5. Recommendation: The README seems not to have an update section (like `## Update`). Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Update-Instructions)).
 6. Recommendation: The README seems not to have an install section (like `## Installation`). Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Installation-Instructions)).
 7. Recommendation: The README seems to have a modules array (Found `modules: [`). This is usually not necessary. Please remove it if it is not needed ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Config-Instructions)).
 8. Recommendation: The README seems to have a config example without a trailing comma. Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Config-Instructions)).
-9. Recommendation: Found `uses: actions/checkout@v2` in file `codeql-analysis.yml`: Replace it with v5.
+9. Recommendation: Found `uses: actions/checkout@v2` in file `codeql-analysis.yml`: Upgrade workflows to use actions/checkout@v5.
 10. Recommendation: Found `git checkout` in file `codeql-analysis.yml`: Replace it with `git switch`. It's not a drop-in replacement, so make sure to check the documentation.
 11. Recommendation: There is no CHANGELOG file. It is recommended to add one ([example CHANGELOG file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CHANGELOG.md)).
 12. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
@@ -3915,7 +3895,7 @@ Last update: 2025-10-01T23:26:54+02:00
 2. Recommendation: Found `XMLHttpRequest` in file `MMM-Formula1.js`: Replace it with built-in fetch ([documentation](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch); [example module with fetch implemented](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/node_helper.js)).
 3. Recommendation: Found `axios` in file `node_helper.js`: Replace it with built-in fetch ([documentation](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch); [example module with fetch implemented](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/node_helper.js)).
 4. Recommendation: Found `axios` in file `package.json`: Replace it with built-in fetch ([documentation](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch); [example module with fetch implemented](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/node_helper.js)).
-5. Recommendation: Found `npm run` in file `package.json`: Replace it with `node --run`. This is a more modern way to run scripts, without the need for npm.
+5. Recommendation: Found `npm run` in file `package.json`: Prefer `node --run` over invoking npm run directly.
 6. Recommendation: The README seems to have a modules array (Found `modules: [`). This is usually not necessary. Please remove it if it is not needed ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Config-Instructions)).
 7. Recommendation: The README seems to have a config example without a trailing comma. Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Config-Instructions)).
 8. Recommendation: There is no CHANGELOG file. It is recommended to add one ([example CHANGELOG file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CHANGELOG.md)).
@@ -3942,9 +3922,9 @@ Last update: 2025-10-01T23:26:54+02:00
 
 1. Recommendation: Found `axios` in file `node_helper.js`: Replace it with built-in fetch ([documentation](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch); [example module with fetch implemented](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/node_helper.js)).
 2. Recommendation: Found `axios` in file `package.json`: Replace it with built-in fetch ([documentation](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch); [example module with fetch implemented](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/node_helper.js)).
-3. Recommendation: Found `npm run` in file `package.json`: Replace it with `node --run`. This is a more modern way to run scripts, without the need for npm.
-4. Recommendation: Found `eslint .` in file `package.json`: The period at the end of the command is not necessary since v9. It is recommended to remove it.
-5. Recommendation: Found `npm run` in file `README.md`: Replace it with `node --run`. This is a more modern way to run scripts, without the need for npm.
+3. Recommendation: Found `npm run` in file `package.json`: Prefer `node --run` over invoking npm run directly.
+4. Recommendation: Found `eslint .` in file `package.json`: Drop the trailing '.' when invoking ESLint v9 or newer.
+5. Recommendation: Found `npm run` in file `README.md`: Prefer `node --run` over invoking npm run directly.
 6. Recommendation: There is no CHANGELOG file. It is recommended to add one ([example CHANGELOG file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CHANGELOG.md)).
 7. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
 8. Recommendation: There is no dependabot configuration file. It is recommended to add one ([example dependabot file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/.github/dependabot.yaml)).
@@ -3967,7 +3947,7 @@ Last update: 2025-10-01T23:26:54+02:00
 
 ### [MMM-Forum by KristjanESPERANTO](https://github.com/KristjanESPERANTO/MMM-Forum)
 
-1. Recommendation: Found `uses: actions/setup-node@v4` in file `automated-tests.yaml`: Replace it with v5.
+1. Recommendation: Found `uses: actions/setup-node@v4` in file `automated-tests.yaml`: Upgrade workflows to use actions/setup-node@v5.
 2. Information: There are updates for 10 dependencie(s):
    - @eslint/css                ^0.10.0  →   ^0.11.1
    - @eslint/js                 ^9.33.0  →   ^9.36.0
@@ -3998,7 +3978,7 @@ Last update: 2025-10-01T23:26:54+02:00
 3. Typo: Found `Magic Mirror` in file `MMM-FreeBox-Monitor.js`: Replace it with `MagicMirror²`.
 4. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
 5. Typo: Found `Magic Mirror` in file `package.json`: Replace it with `MagicMirror²`.
-6. Recommendation: Found `jshint` in file `progressbar.js`: Replace "jshint" by "eslint".
+6. Recommendation: Found `jshint` in file `progressbar.js`: Suggest migrating from JSHint to ESLint.
 7. Typo: Found `Magic Mirror` in file `README.md`: Replace it with `MagicMirror²`.
 8. Outdated: Found `MichMich/MagicMirror` in file `README.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
 9. Recommendation: The README seems not to have an update section (like `## Update`). Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Update-Instructions)).
@@ -4157,8 +4137,8 @@ Last update: 2025-10-01T23:26:54+02:00
 3. Deprecated: Found `"lockfileVersion": 1` in file `package-lock.json`: Run `npm update` to update to lockfileVersion 3.
 4. Typo: Found `MagicMirror2` in file `package.json`: Replace it with `MagicMirror²`.
 5. Recommendation: Found `"node-fetch"` in file `package.json`: Replace it with built-in fetch ([documentation](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch); [example module with fetch implemented](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/node_helper.js)).
-6. Recommendation: Found `eslint .` in file `package.json`: The period at the end of the command is not necessary since v9. It is recommended to remove it.
-7. Recommendation: Found `npm run` in file `README.md`: Replace it with `node --run`. This is a more modern way to run scripts, without the need for npm.
+6. Recommendation: Found `eslint .` in file `package.json`: Drop the trailing '.' when invoking ESLint v9 or newer.
+7. Recommendation: Found `npm run` in file `README.md`: Prefer `node --run` over invoking npm run directly.
 8. Outdated: Found `MichMich/MagicMirror` in file `README.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
 9. Recommendation: The README seems not to have an update section (like `## Update`). Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Update-Instructions)).
 10. Recommendation: The README seems to have a config example without a trailing comma. Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Config-Instructions)).
@@ -4171,9 +4151,9 @@ Last update: 2025-10-01T23:26:54+02:00
 17. Recommendation: Found `'node-fetch'` in file `spritpreisrechner.js`: Replace it with built-in fetch ([documentation](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch); [example module with fetch implemented](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/node_helper.js)).
 18. Recommendation: Found `'node-fetch'` in file `tankerkoenig.js`: Replace it with built-in fetch ([documentation](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch); [example module with fetch implemented](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/node_helper.js)).
 19. Outdated: Found `MichMich/MagicMirror` in file `tankerkoenig.js`: Replace it by `MagicMirrorOrg/MagicMirror`.
-20. Recommendation: Found `uses: actions/checkout@v2` in file `build.yml`: Replace it with v5.
-21. Deprecated: Found `node-version: 16` in file `build.yml`: Update to current version.
-22. Recommendation: Found `npm run` in file `build.yml`: Replace it with `node --run`. This is a more modern way to run scripts, without the need for npm.
+20. Recommendation: Found `uses: actions/checkout@v2` in file `build.yml`: Upgrade workflows to use actions/checkout@v5.
+21. Deprecated: Found `node-version: 16` in file `build.yml`: Update CI workflows to target a supported Node.js LTS release.
+22. Recommendation: Found `npm run` in file `build.yml`: Prefer `node --run` over invoking npm run directly.
 23. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
 24. Recommendation: There is no dependabot configuration file. It is recommended to add one ([example dependabot file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/.github/dependabot.yaml)).
 25. Recommendation: Replace eslintrc by new flat config.
@@ -4198,9 +4178,9 @@ Last update: 2025-10-01T23:26:54+02:00
 1. Typo: Found `Magic Mirror` in file `MMM-Futar.js`: Replace it with `MagicMirror²`.
 2. Deprecated: Found `require('request')` in file `node_helper.js`: Replace it with built-in fetch ([documentation](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch); [example module with fetch implemented](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/node_helper.js)).
 3. Deprecated: Found `"lockfileVersion": 2` in file `package-lock.json`: Run `npm update` to update to lockfileVersion 3.
-4. Recommendation: Found `npm run` in file `package.json`: Replace it with `node --run`. This is a more modern way to run scripts, without the need for npm.
-5. Deprecated: Found `eslint-config-airbnb` in file `package.json`: Replace it with modern ESLint configuration.
-6. Recommendation: Found `npm run` in file `README.md`: Replace it with `node --run`. This is a more modern way to run scripts, without the need for npm.
+4. Recommendation: Found `npm run` in file `package.json`: Prefer `node --run` over invoking npm run directly.
+5. Deprecated: Found `eslint-config-airbnb` in file `package.json`: Replace the preset with a maintained ESLint configuration.
+6. Recommendation: Found `npm run` in file `README.md`: Prefer `node --run` over invoking npm run directly.
 7. Outdated: Found `MichMich/MagicMirror` in file `README.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
 8. Recommendation: The README seems not to have an update section (like `## Update`). Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Update-Instructions)).
 9. Recommendation: The README seems not to have an install section (like `## Installation`). Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Installation-Instructions)).
@@ -4212,9 +4192,9 @@ Last update: 2025-10-01T23:26:54+02:00
 
 ### [MMM-GameOfLife by raywo](https://github.com/raywo/MMM-GameOfLife)
 
-1. Recommendation: Found `jshint` in file `.gitignore`: Replace "jshint" by "eslint".
-2. Recommendation: Found `npm run` in file `.travis.yml`: Replace it with `node --run`. This is a more modern way to run scripts, without the need for npm.
-3. Recommendation: Found `https://cdnjs.cloudflare.com` in file `MMM-GameOfLife.js`: It looks like a package is loaded via CDN. It would be better if the package were installed locally via npm.
+1. Recommendation: Found `jshint` in file `.gitignore`: Suggest migrating from JSHint to ESLint.
+2. Recommendation: Found `npm run` in file `.travis.yml`: Prefer `node --run` over invoking npm run directly.
+3. Recommendation: Found `https://cdnjs.cloudflare.com` in file `MMM-GameOfLife.js`: Prefer bundling dependencies via npm instead of CDN references.
 4. Typo: Found `Magic Mirror` in file `README.md`: Replace it with `MagicMirror²`.
 5. Typo: Found `MagicMirror2` in file `README.md`: Replace it with `MagicMirror²`.
 6. Outdated: Found `MichMich/MagicMirror` in file `README.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
@@ -4279,11 +4259,11 @@ Last update: 2025-10-01T23:26:54+02:00
 8. Deprecated: Found `new Buffer(` in file `tcx-ls`: This is deprecated. Please update. [See here for more information](https://nodejs.org/api/buffer.html).
 9. Deprecated: Found `fs.F_OK` in file `tcx-ls`: Replace it with `fs.constants.F_OK`.
 10. Deprecated: Found `fs.X_OK` in file `tcx-ls`: Replace it with `fs.constants.X_OK`.
-11. Recommendation: Found `require('http')` in file `tcx-ls`: Replace 'http' by 'node:http'.
+11. Recommendation: Found `require('http')` in file `tcx-ls`: Replace `http` with the scoped import `node:http`.
 12. Deprecated: Found `new Buffer(` in file `tcx-ls-arm`: This is deprecated. Please update. [See here for more information](https://nodejs.org/api/buffer.html).
 13. Deprecated: Found `fs.F_OK` in file `tcx-ls-arm`: Replace it with `fs.constants.F_OK`.
 14. Deprecated: Found `fs.X_OK` in file `tcx-ls-arm`: Replace it with `fs.constants.X_OK`.
-15. Recommendation: Found `require('http')` in file `tcx-ls-arm`: Replace 'http' by 'node:http'.
+15. Recommendation: Found `require('http')` in file `tcx-ls-arm`: Replace `http` with the scoped import `node:http`.
 16. Recommendation: There is no CHANGELOG file. It is recommended to add one ([example CHANGELOG file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CHANGELOG.md)).
 17. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
 18. Recommendation: There is no dependabot configuration file. It is recommended to add one ([example dependabot file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/.github/dependabot.yaml)).
@@ -4339,12 +4319,12 @@ Last update: 2025-10-01T23:26:54+02:00
 2. Typo: Found `Magic Mirror` in file `MMM-Gestures.js`: Replace it with `MagicMirror²`.
 3. Deprecated: Found `"lockfileVersion": 2` in file `package-lock.json`: Run `npm update` to update to lockfileVersion 3.
 4. Typo: Found `Magic Mirror` in file `package.json`: Replace it with `MagicMirror²`.
-5. Deprecated: Found `npm install electron-rebuild` in file `postinstall`: Replace it with `@electron/rebuild`
+5. Deprecated: Found `npm install electron-rebuild` in file `postinstall`: Install `@electron/rebuild` instead of the deprecated package.
 6. Typo: Found `Magic Mirror` in file `README.MD`: Replace it with `MagicMirror²`.
 7. Typo: Found `[MagicMirror]` in file `README.MD`: Replace it with `[MagicMirror²]`.
 8. Outdated: Found `MichMich/MagicMirror` in file `README.MD`: Replace it by `MagicMirrorOrg/MagicMirror`.
 9. Typo: Found `Magic Mirror` in file `MagicMirror2.ino`: Replace it with `MagicMirror²`.
-10. Recommendation: Found `uses: actions/checkout@v3` in file `codeql.yml`: Replace it with v5.
+10. Recommendation: Found `uses: actions/checkout@v3` in file `codeql.yml`: Upgrade workflows to use actions/checkout@v5.
 11. Warning: No LICENSE file ([example LICENSE file](https://github.com/KristjanESPERANTO/MMM-WebSpeechTTS/blob/main/LICENSE.md)).
 12. Recommendation: There is no CHANGELOG file. It is recommended to add one ([example CHANGELOG file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CHANGELOG.md)).
 13. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
@@ -4372,7 +4352,7 @@ Last update: 2025-10-01T23:26:54+02:00
 4. Deprecated: Found `"lockfileVersion": 1` in file `package-lock.json`: Run `npm update` to update to lockfileVersion 3.
 5. Typo: Found `MagicMirror2` in file `package.json`: Replace it with `MagicMirror²`.
 6. Recommendation: Found `axios` in file `package.json`: Replace it with built-in fetch ([documentation](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch); [example module with fetch implemented](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/node_helper.js)).
-7. Recommendation: Found `eslint --fix .` in file `package.json`: The period at the end of the command is not necessary since v9. It is recommended to remove it.
+7. Recommendation: Found `eslint --fix .` in file `package.json`: Drop the trailing '.' when invoking ESLint v9 or newer.
 8. Typo: Found `Magic Mirror` in file `README.md`: Replace it with `MagicMirror²`.
 9. Outdated: Found `MichMich/MagicMirror` in file `README.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
 10. Recommendation: The README seems not to have an update section (like `## Update`). Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Update-Instructions)).
@@ -4467,8 +4447,8 @@ Last update: 2025-10-01T23:26:54+02:00
 ### [MMM-GmailFeed by shaneapowell](https://github.com/shaneapowell/MMM-GmailFeed)
 
 1. Deprecated: Found `"lockfileVersion": 2` in file `package-lock.json`: Run `npm update` to update to lockfileVersion 3.
-2. Recommendation: Found `npm run` in file `package.json`: Replace it with `node --run`. This is a more modern way to run scripts, without the need for npm.
-3. Recommendation: Found `eslint .` in file `package.json`: The period at the end of the command is not necessary since v9. It is recommended to remove it.
+2. Recommendation: Found `npm run` in file `package.json`: Prefer `node --run` over invoking npm run directly.
+3. Recommendation: Found `eslint .` in file `package.json`: Drop the trailing '.' when invoking ESLint v9 or newer.
 4. Recommendation: The README seems not to have an update section (like `## Update`). Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Update-Instructions)).
 5. Recommendation: The README seems to have a config example without a trailing comma. Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Config-Instructions)).
 6. Recommendation: There is no CHANGELOG file. It is recommended to add one ([example CHANGELOG file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CHANGELOG.md)).
@@ -4480,7 +4460,7 @@ Last update: 2025-10-01T23:26:54+02:00
 
 1. `package.json` issue: No description
 2. `package.json` issue: No repository field.
-3. There are no specific keywords in 'package.json'. We would use them as tags on the module list page. Add a few meaningful terms to the keywords in the package.json. Not just “magicmirror” or “module”.
+3. There are no keywords in 'package.json'. We would use them as tags on the module list page.
 4. Issue: The license in the package.json (ISC) doesn't match the license file (MIT).
 5. Recommendation: There is no CHANGELOG file. It is recommended to add one ([example CHANGELOG file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CHANGELOG.md)).
 6. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
@@ -4522,10 +4502,10 @@ Last update: 2025-10-01T23:26:54+02:00
 
 1. There are no keywords in 'package.json'. We would use them as tags on the module list page.
 2. Deprecated: Found `"lockfileVersion": 1` in file `package-lock.json`: Run `npm update` to update to lockfileVersion 3.
-3. Recommendation: Found `npm run` in file `README.md`: Replace it with `node --run`. This is a more modern way to run scripts, without the need for npm.
+3. Recommendation: Found `npm run` in file `README.md`: Prefer `node --run` over invoking npm run directly.
 4. Recommendation: The README seems not to have an update section (like `## Update`). Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Update-Instructions)).
 5. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
-6. Recommendation: Found `npm run` in file `tasks.json`: Replace it with `node --run`. This is a more modern way to run scripts, without the need for npm.
+6. Recommendation: Found `npm run` in file `tasks.json`: Prefer `node --run` over invoking npm run directly.
 7. Recommendation: There is no CHANGELOG file. It is recommended to add one ([example CHANGELOG file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CHANGELOG.md)).
 8. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
 9. Recommendation: There is no dependabot configuration file. It is recommended to add one ([example dependabot file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/.github/dependabot.yaml)).
@@ -4535,7 +4515,7 @@ Last update: 2025-10-01T23:26:54+02:00
 
 1. Typo: Found `Magic Mirror` in file `MMM-GoogleCalendar.js`: Replace it with `MagicMirror²`.
 2. Deprecated: Found `"lockfileVersion": 2` in file `package-lock.json`: Run `npm update` to update to lockfileVersion 3.
-3. Recommendation: Found `eslint .` in file `package.json`: The period at the end of the command is not necessary since v9. It is recommended to remove it.
+3. Recommendation: Found `eslint .` in file `package.json`: Drop the trailing '.' when invoking ESLint v9 or newer.
 4. Recommendation: The README seems not to have an update section (like `## Update`). Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Update-Instructions)).
 5. Recommendation: There is no CHANGELOG file. It is recommended to add one ([example CHANGELOG file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CHANGELOG.md)).
 6. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
@@ -4564,7 +4544,7 @@ Last update: 2025-10-01T23:26:54+02:00
 7. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
 8. Typo: Found `Magic Mirror` in file `package.json`: Replace it with `MagicMirror²`.
 9. Recommendation: Found `axios` in file `package.json`: Replace it with built-in fetch ([documentation](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch); [example module with fetch implemented](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/node_helper.js)).
-10. Deprecated: Found `eslint-config-airbnb` in file `package.json`: Replace it with modern ESLint configuration.
+10. Deprecated: Found `eslint-config-airbnb` in file `package.json`: Replace the preset with a maintained ESLint configuration.
 11. Typo: Found `Magic Mirror` in file `README.md`: Replace it with `MagicMirror²`.
 12. Outdated: Found `MichMich/MagicMirror` in file `README.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
 13. Recommendation: The README seems not to have an update section (like `## Update`). Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Update-Instructions)).
@@ -4575,8 +4555,8 @@ Last update: 2025-10-01T23:26:54+02:00
 ### [MMM-GoogleDriveSlideShow by clegallic](https://github.com/clegallic/MMM-GoogleDriveSlideShow)
 
 1. There are no keywords in 'package.json'. We would use them as tags on the module list page.
-2. Recommendation: Found `require("https")` in file `node_helper.js`: Replace "https" by "node:https".
-3. Recommendation: Found `npm run` in file `README.md`: Replace it with `node --run`. This is a more modern way to run scripts, without the need for npm.
+2. Recommendation: Found `require("https")` in file `node_helper.js`: Replace `https` with the scoped import `node:https`.
+3. Recommendation: Found `npm run` in file `README.md`: Prefer `node --run` over invoking npm run directly.
 4. Recommendation: The README seems not to have an install section (like `## Installation`). Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Installation-Instructions)).
 5. Recommendation: The README seems to have a modules array (Found `modules: [`). This is usually not necessary. Please remove it if it is not needed ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Config-Instructions)).
 6. Recommendation: The README seems to have a config example without a trailing comma. Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Config-Instructions)).
@@ -4601,10 +4581,10 @@ Last update: 2025-10-01T23:26:54+02:00
 
 1. There are no keywords in 'package.json'. We would use them as tags on the module list page.
 2. No image found.
-3. Recommendation: Found `jshint` in file `Gruntfile.js`: Replace "jshint" by "eslint".
+3. Recommendation: Found `jshint` in file `Gruntfile.js`: Suggest migrating from JSHint to ESLint.
 4. Typo: Found `Magic Mirror` in file `MMM-GoogleKeep.js`: Replace it with `MagicMirror²`.
 5. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
-6. Deprecated: Found `"grunt"` in file `package.json`: Grunt is practically unmaintained. Move on to something better.
+6. Deprecated: Found `"grunt"` in file `package.json`: Grunt is effectively unmaintained. Move on to something modern.
 7. Typo: Found `Magic Mirror` in file `README.md`: Replace it with `MagicMirror²`.
 8. Outdated: Found `MichMich/MagicMirror` in file `README.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
 9. Recommendation: The README seems not to have an update section (like `## Update`). Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Update-Instructions)).
@@ -4655,13 +4635,13 @@ Last update: 2025-10-01T23:26:54+02:00
 1. Recommendation: Found `XMLHttpRequest` in file `error_to_string.js`: Replace it with built-in fetch ([documentation](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch); [example module with fetch implemented](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/node_helper.js)).
 2. Recommendation: Found `axios` in file `GPhotos.js`: Replace it with built-in fetch ([documentation](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch); [example module with fetch implemented](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/node_helper.js)).
 3. Typo: Found `Magic Mirror` in file `INSTALL.md`: Replace it with `MagicMirror²`.
-4. Recommendation: Found `npm run` in file `INSTALL.md`: Replace it with `node --run`. This is a more modern way to run scripts, without the need for npm.
+4. Recommendation: Found `npm run` in file `INSTALL.md`: Prefer `node --run` over invoking npm run directly.
 5. Recommendation: Found `axios` in file `package.json`: Replace it with built-in fetch ([documentation](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch); [example module with fetch implemented](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/node_helper.js)).
-6. Recommendation: Found `eslint .` in file `package.json`: The period at the end of the command is not necessary since v9. It is recommended to remove it.
+6. Recommendation: Found `eslint .` in file `package.json`: Drop the trailing '.' when invoking ESLint v9 or newer.
 7. Recommendation: The README seems not to have an update section (like `## Update`). Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Update-Instructions)).
 8. Recommendation: The README seems not to have clone instructions.
-9. Recommendation: Found `uses: actions/checkout@v4` in file `lint.yml`: Replace it with v5.
-10. Recommendation: Found `uses: actions/setup-node@v4` in file `lint.yml`: Replace it with v5.
+9. Recommendation: Found `uses: actions/checkout@v4` in file `lint.yml`: Upgrade workflows to use actions/checkout@v5.
+10. Recommendation: Found `uses: actions/setup-node@v4` in file `lint.yml`: Upgrade workflows to use actions/setup-node@v5.
 11. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
 12. Recommendation: There is no dependabot configuration file. It is recommended to add one ([example dependabot file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/.github/dependabot.yaml)).
 13. Recommendation: No lint script found in package.json. It is recommended to add one.
@@ -4680,18 +4660,18 @@ Last update: 2025-10-01T23:26:54+02:00
 
 1. Repository name and main js file name is not the same.
 2. Typo: Found `Magic Mirror` in file `CONTRIBUTING.md`: Replace it with `MagicMirror²`.
-3. Recommendation: Found `npm run` in file `CONTRIBUTING.md`: Replace it with `node --run`. This is a more modern way to run scripts, without the need for npm.
-4. Recommendation: Found `npm run` in file `package.json`: Replace it with `node --run`. This is a more modern way to run scripts, without the need for npm.
-5. Outdated: Found `husky install` in file `package.json`: Since husky v9 you may not need this anymore.
+3. Recommendation: Found `npm run` in file `CONTRIBUTING.md`: Prefer `node --run` over invoking npm run directly.
+4. Recommendation: Found `npm run` in file `package.json`: Prefer `node --run` over invoking npm run directly.
+5. Outdated: Found `husky install` in file `package.json`: Husky v9 no longer needs manual install scripts.
 6. Outdated: Found `MichMich/MagicMirror` in file `README.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
 7. Recommendation: The README seems not to have an update section (like `## Update`). Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Update-Instructions)).
 8. Recommendation: The README seems to have a modules array (Found `modules: [`). This is usually not necessary. Please remove it if it is not needed ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Config-Instructions)).
 9. Recommendation: Found `axios` in file `node_helper.ts`: Replace it with built-in fetch ([documentation](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch); [example module with fetch implemented](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/node_helper.js)).
 10. Recommendation: Found `axios` in file `GoogleTaskService.ts`: Replace it with built-in fetch ([documentation](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch); [example module with fetch implemented](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/node_helper.js)).
-11. Recommendation: Found `uses: actions/checkout@v4` in file `node.yml`: Replace it with v5.
-12. Recommendation: Found `uses: actions/setup-node@v4` in file `node.yml`: Replace it with v5.
-13. Deprecated: Found `node-version: [18` in file `node.yml`: Update to current version.
-14. Recommendation: Found `npm run` in file `node.yml`: Replace it with `node --run`. This is a more modern way to run scripts, without the need for npm.
+11. Recommendation: Found `uses: actions/checkout@v4` in file `node.yml`: Upgrade workflows to use actions/checkout@v5.
+12. Recommendation: Found `uses: actions/setup-node@v4` in file `node.yml`: Upgrade workflows to use actions/setup-node@v5.
+13. Deprecated: Found `node-version: [18` in file `node.yml`: Update CI workflows to target a supported Node.js LTS release.
+14. Recommendation: Found `npm run` in file `node.yml`: Prefer `node --run` over invoking npm run directly.
 15. Outdated: Found `MichMich/MagicMirror` in file `node.yml`: Replace it by `MagicMirrorOrg/MagicMirror`.
 16. Recommendation: There is no CHANGELOG file. It is recommended to add one ([example CHANGELOG file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CHANGELOG.md)).
 17. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
@@ -4719,7 +4699,7 @@ Last update: 2025-10-01T23:26:54+02:00
 
 ### [MMM-GPIO-HANDLER by Sjohn21](https://github.com/Sjohn21/MMM-GPIO-HANDLER)
 
-1. An error occurred while getting information from 'package.json': Error: Invalid version: "0.1"
+1. `package.json` issue: Invalid version: "0.1"
 2. No image found.
 3. Typo: Found `Magic Mirror` in file `MMM-GPIO-HANDLER.js`: Replace it with `MagicMirror²`.
 4. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
@@ -4737,7 +4717,7 @@ Last update: 2025-10-01T23:26:54+02:00
 ### [MMM-GPIO-Notifications by Tom-Hirschberger](https://github.com/Tom-Hirschberger/MMM-GPIO-Notifications)
 
 1. Typo: Found `[MagicMirror]` in file `README.md`: Replace it with `[MagicMirror²]`.
-2. Recommendation: Found `npm run` in file `README.md`: Replace it with `node --run`. This is a more modern way to run scripts, without the need for npm.
+2. Recommendation: Found `npm run` in file `README.md`: Prefer `node --run` over invoking npm run directly.
 3. Outdated: Found `MichMich/MagicMirror` in file `README.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
 4. Recommendation: The README seems not to have an update section (like `## Update`). Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Update-Instructions)).
 5. Recommendation: There is no CHANGELOG file. It is recommended to add one ([example CHANGELOG file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CHANGELOG.md)).
@@ -4786,8 +4766,8 @@ Last update: 2025-10-01T23:26:54+02:00
 
 1. Issues are not enabled in the GitHub repository. So users cannot report bugs. Please enable issues in your repo.
 2. Repository name and main js file name is not the same.
-3. Recommendation: Found `npm run` in file `package.json`: Replace it with `node --run`. This is a more modern way to run scripts, without the need for npm.
-4. Recommendation: Found `eslint .` in file `package.json`: The period at the end of the command is not necessary since v9. It is recommended to remove it.
+3. Recommendation: Found `npm run` in file `package.json`: Prefer `node --run` over invoking npm run directly.
+4. Recommendation: Found `eslint .` in file `package.json`: Drop the trailing '.' when invoking ESLint v9 or newer.
 5. Recommendation: The README seems to have incorrect clone instructions. Please check the URL.
 6. Recommendation: There is no CHANGELOG file. It is recommended to add one ([example CHANGELOG file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CHANGELOG.md)).
 7. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
@@ -4858,7 +4838,7 @@ Last update: 2025-10-01T23:26:54+02:00
 2. There are no keywords in 'package.json'. We would use them as tags on the module list page.
 3. Issue: The license in the package.json (ISC) doesn't match the license file (MIT).
 4. Typo: Found `Magic Mirror` in file `MMM-HabiticaStats.js`: Replace it with `MagicMirror²`.
-5. Recommendation: Found `npm run` in file `README.md`: Replace it with `node --run`. This is a more modern way to run scripts, without the need for npm.
+5. Recommendation: Found `npm run` in file `README.md`: Prefer `node --run` over invoking npm run directly.
 6. Outdated: Found `MichMich/MagicMirror` in file `README.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
 7. Recommendation: The README seems not to have an update section (like `## Update`). Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Update-Instructions)).
 8. Recommendation: The README seems to have a modules array (Found `modules: [`). This is usually not necessary. Please remove it if it is not needed ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Config-Instructions)).
@@ -4899,11 +4879,11 @@ Last update: 2025-10-01T23:26:54+02:00
 
 1. `package.json` issue: No repository field.
 2. Issues are not enabled in the GitHub repository. So users cannot report bugs. Please enable issues in your repo.
-3. Recommendation: Found `npm run` in file `.travis.yml`: Replace it with `node --run`. This is a more modern way to run scripts, without the need for npm.
+3. Recommendation: Found `npm run` in file `.travis.yml`: Prefer `node --run` over invoking npm run directly.
 4. Recommendation: Found `XMLHttpRequest` in file `MMM-handball-netz.js`: Replace it with built-in fetch ([documentation](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch); [example module with fetch implemented](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/node_helper.js)).
-5. Recommendation: Found `jshint` in file `MMM-handball-netz.js`: Replace "jshint" by "eslint".
+5. Recommendation: Found `jshint` in file `MMM-handball-netz.js`: Suggest migrating from JSHint to ESLint.
 6. Recommendation: Found `axios` in file `node_helper.js`: Replace it with built-in fetch ([documentation](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch); [example module with fetch implemented](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/node_helper.js)).
-7. Recommendation: Found `jshint` in file `node_helper.js`: Replace "jshint" by "eslint".
+7. Recommendation: Found `jshint` in file `node_helper.js`: Suggest migrating from JSHint to ESLint.
 8. Typo: Found `MagicMirror2` in file `package.json`: Replace it with `MagicMirror²`.
 9. Recommendation: Found `axios` in file `package.json`: Replace it with built-in fetch ([documentation](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch); [example module with fetch implemented](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/node_helper.js)).
 10. Recommendation: Found `axios` in file `README.md`: Replace it with built-in fetch ([documentation](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch); [example module with fetch implemented](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/node_helper.js)).
@@ -4927,12 +4907,12 @@ Last update: 2025-10-01T23:26:54+02:00
 1. `package.json` issue: No repository field.
 2. `package.json` issue: No license field.
 3. There are no keywords in 'package.json'. We would use them as tags on the module list page.
-4. Recommendation: Found `npm run` in file `.travis.yml`: Replace it with `node --run`. This is a more modern way to run scripts, without the need for npm.
+4. Recommendation: Found `npm run` in file `.travis.yml`: Prefer `node --run` over invoking npm run directly.
 5. Typo: Found `Magic Mirror` in file `MMM-HappyHours.css`: Replace it with `MagicMirror²`.
 6. Typo: Found `Magic Mirror` in file `MMM-HappyHours.js`: Replace it with `MagicMirror²`.
 7. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
 8. Deprecated: Found `require('request')` in file `node_helper.js`: Replace it with built-in fetch ([documentation](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch); [example module with fetch implemented](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/node_helper.js)).
-9. Deprecated: Found `"grunt"` in file `package.json`: Grunt is practically unmaintained. Move on to something better.
+9. Deprecated: Found `"grunt"` in file `package.json`: Grunt is effectively unmaintained. Move on to something modern.
 10. Typo: Found `Magic Mirror` in file `README.md`: Replace it with `MagicMirror²`.
 11. Typo: Found `[MagicMirror]` in file `README.md`: Replace it with `[MagicMirror²]`.
 12. Outdated: Found `MichMich/MagicMirror` in file `README.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
@@ -4974,9 +4954,9 @@ Last update: 2025-10-01T23:26:54+02:00
 
 1. `package.json` issue: No repository field.
 2. There are no keywords in 'package.json'. We would use them as tags on the module list page.
-3. Recommendation: Found `require('http')` in file `node_helper.js`: Replace 'http' by 'node:http'.
-4. Recommendation: Found `require('https')` in file `node_helper.js`: Replace 'https' by 'node:https'.
-5. Recommendation: Found `npm run` in file `package.json`: Replace it with `node --run`. This is a more modern way to run scripts, without the need for npm.
+3. Recommendation: Found `require('http')` in file `node_helper.js`: Replace `http` with the scoped import `node:http`.
+4. Recommendation: Found `require('https')` in file `node_helper.js`: Replace `https` with the scoped import `node:https`.
+5. Recommendation: Found `npm run` in file `package.json`: Prefer `node --run` over invoking npm run directly.
 6. Recommendation: The README seems not to have an update section (like `## Update`). Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Update-Instructions)).
 7. Recommendation: The README seems to have a modules array (Found `modules: [`). This is usually not necessary. Please remove it if it is not needed ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Config-Instructions)).
 8. Recommendation: There is no CHANGELOG file. It is recommended to add one ([example CHANGELOG file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CHANGELOG.md)).
@@ -4990,7 +4970,7 @@ Last update: 2025-10-01T23:26:54+02:00
 2. There are no keywords in 'package.json'. We would use them as tags on the module list page.
 3. Typo: Found `Magic Mirror` in file `MMM-Helium-Wallet.js`: Replace it with `MagicMirror²`.
 4. Typo: Found `Magic Mirror` in file `package.json`: Replace it with `MagicMirror²`.
-5. Deprecated: Found `"grunt"` in file `package.json`: Grunt is practically unmaintained. Move on to something better.
+5. Deprecated: Found `"grunt"` in file `package.json`: Grunt is effectively unmaintained. Move on to something modern.
 6. Outdated: Found `MichMich/MagicMirror` in file `README.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
 7. Recommendation: The README seems not to have an update section (like `## Update`). Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Update-Instructions)).
 8. Recommendation: The README seems not to have an install section (like `## Installation`). Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Installation-Instructions)).
@@ -5080,7 +5060,7 @@ Last update: 2025-10-01T23:26:54+02:00
 1. There is no `package.json`. We need this file to gather information about the module for the module list page.
 2. No image found.
 3. Repository name and main js file name is not the same.
-4. Recommendation: Found `npm run` in file `hive.sh`: Replace it with `node --run`. This is a more modern way to run scripts, without the need for npm.
+4. Recommendation: Found `npm run` in file `hive.sh`: Prefer `node --run` over invoking npm run directly.
 5. Recommendation: The README seems not to have an update section (like `## Update`). Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Update-Instructions)).
 6. Recommendation: The README seems not to have an install section (like `## Installation`). Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Installation-Instructions)).
 7. Recommendation: The README seems not to have a config example. Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Config-Instructions)).
@@ -5188,9 +5168,9 @@ Last update: 2025-10-01T23:26:54+02:00
 
 ### [MMM-HomeAssistant by ambarusa](https://github.com/ambarusa/MMM-HomeAssistant)
 
-1. Recommendation: Found `npm run` in file `package.json`: Replace it with `node --run`. This is a more modern way to run scripts, without the need for npm.
-2. Recommendation: Found `eslint .` in file `package.json`: The period at the end of the command is not necessary since v9. It is recommended to remove it.
-3. Recommendation: Found `npm run` in file `README.md`: Replace it with `node --run`. This is a more modern way to run scripts, without the need for npm.
+1. Recommendation: Found `npm run` in file `package.json`: Prefer `node --run` over invoking npm run directly.
+2. Recommendation: Found `eslint .` in file `package.json`: Drop the trailing '.' when invoking ESLint v9 or newer.
+3. Recommendation: Found `npm run` in file `README.md`: Prefer `node --run` over invoking npm run directly.
 4. Recommendation: There is no CHANGELOG file. It is recommended to add one ([example CHANGELOG file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CHANGELOG.md)).
 5. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
 6. Recommendation: There is no dependabot configuration file. It is recommended to add one ([example dependabot file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/.github/dependabot.yaml)).
@@ -5257,10 +5237,10 @@ Last update: 2025-10-01T23:26:54+02:00
 ### [MMM-HomeAssistantDisplay by wonderslug](https://github.com/wonderslug/MMM-HomeAssistantDisplay)
 
 1. Outdated: Found `MichMich/MagicMirror` in file `Dockerfile.dev`: Replace it by `MagicMirrorOrg/MagicMirror`.
-2. Recommendation: Found `jshint` in file `Gruntfile.js`: Replace "jshint" by "eslint".
+2. Recommendation: Found `jshint` in file `Gruntfile.js`: Suggest migrating from JSHint to ESLint.
 3. Typo: Found `Magic Mirror` in file `MMM-HomeAssistantDisplay.js`: Replace it with `MagicMirror²`.
 4. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
-5. Deprecated: Found `"grunt"` in file `package.json`: Grunt is practically unmaintained. Move on to something better.
+5. Deprecated: Found `"grunt"` in file `package.json`: Grunt is effectively unmaintained. Move on to something modern.
 6. Typo: Found `Magic Mirror` in file `README.md`: Replace it with `MagicMirror²`.
 7. Recommendation: The README seems not to have an update section (like `## Update`). Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Update-Instructions)).
 8. Recommendation: The README seems not to have an install section (like `## Installation`). Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Installation-Instructions)).
@@ -5284,7 +5264,7 @@ Last update: 2025-10-01T23:26:54+02:00
 
 ### [MMM-HomeConnect by djerik](https://github.com/djerik/MMM-HomeConnect)
 
-1. There are no specific keywords in 'package.json'. We would use them as tags on the module list page. Add a few meaningful terms to the keywords in the package.json. Not just “magicmirror” or “module”.
+1. There are no keywords in 'package.json'. We would use them as tags on the module list page.
 2. Typo: Found `Magic Mirror` in file `package.json`: Replace it with `MagicMirror²`.
 3. Typo: Found `Magic Mirror` in file `README.md`: Replace it with `MagicMirror²`.
 4. Outdated: Found `MichMich/MagicMirror` in file `README.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
@@ -5368,11 +5348,11 @@ Last update: 2025-10-01T23:26:54+02:00
 
 1. There are no keywords in 'package.json'. We would use them as tags on the module list page.
 2. No image found.
-3. Recommendation: Found `jshint` in file `Gruntfile.js`: Replace "jshint" by "eslint".
+3. Recommendation: Found `jshint` in file `Gruntfile.js`: Suggest migrating from JSHint to ESLint.
 4. Typo: Found `Magic Mirror` in file `MMM-Hover.js`: Replace it with `MagicMirror²`.
 5. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
-6. Deprecated: Found `"electron-rebuild"` in file `package.json`: Replace it with `@electron/rebuild`
-7. Deprecated: Found `"grunt"` in file `package.json`: Grunt is practically unmaintained. Move on to something better.
+6. Deprecated: Found `"electron-rebuild"` in file `package.json`: Use `@electron/rebuild` instead.
+7. Deprecated: Found `"grunt"` in file `package.json`: Grunt is effectively unmaintained. Move on to something modern.
 8. Typo: Found `[MagicMirror]` in file `README.md`: Replace it with `[MagicMirror²]`.
 9. Outdated: Found `MichMich/MagicMirror` in file `README.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
 10. Recommendation: The README seems not to have an update section (like `## Update`). Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Update-Instructions)).
@@ -5455,7 +5435,7 @@ Last update: 2025-10-01T23:26:54+02:00
 
 ### [MMM-HueControl by DreamyChloe](https://github.com/DreamyChloe/MMM-HueControl)
 
-1. Recommendation: Found `eslint .` in file `package.json`: The period at the end of the command is not necessary since v9. It is recommended to remove it.
+1. Recommendation: Found `eslint .` in file `package.json`: Drop the trailing '.' when invoking ESLint v9 or newer.
 2. Recommendation: There is no CHANGELOG file. It is recommended to add one ([example CHANGELOG file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CHANGELOG.md)).
 3. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
 4. Recommendation: There is no dependabot configuration file. It is recommended to add one ([example dependabot file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/.github/dependabot.yaml)).
@@ -5528,7 +5508,7 @@ Last update: 2025-10-01T23:26:54+02:00
 
 ### [MMM-iCal-ToDo by nixnuex](https://github.com/nixnuex/MMM-iCal-ToDo)
 
-1. There are no specific keywords in 'package.json'. We would use them as tags on the module list page. Add a few meaningful terms to the keywords in the package.json. Not just “magicmirror” or “module”.
+1. There are no keywords in 'package.json'. We would use them as tags on the module list page.
 2. Typo: Found `Magic Mirror` in file `MMM-iCal-ToDo.js`: Replace it with `MagicMirror²`.
 3. Outdated: Found `MichMich/MagicMirror` in file `MMM-iCal-ToDo.js`: Replace it by `MagicMirrorOrg/MagicMirror`.
 4. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
@@ -5572,9 +5552,9 @@ Last update: 2025-10-01T23:26:54+02:00
 
 1. Repository name and main js file name is not the same.
 2. Recommendation: Found `axios` in file `package.json`: Replace it with built-in fetch ([documentation](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch); [example module with fetch implemented](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/node_helper.js)).
-3. Recommendation: Found `npm run` in file `package.json`: Replace it with `node --run`. This is a more modern way to run scripts, without the need for npm.
+3. Recommendation: Found `npm run` in file `package.json`: Prefer `node --run` over invoking npm run directly.
 4. Typo: Found `MagicMirror2` in file `README.md`: Replace it with `MagicMirror²`.
-5. Recommendation: Found `npm run` in file `README.md`: Replace it with `node --run`. This is a more modern way to run scripts, without the need for npm.
+5. Recommendation: Found `npm run` in file `README.md`: Prefer `node --run` over invoking npm run directly.
 6. Recommendation: The README seems not to have an update section (like `## Update`). Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Update-Instructions)).
 7. Recommendation: The README seems not to have an install section (like `## Installation`). Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Installation-Instructions)).
 8. Recommendation: The README seems not to have clone instructions.
@@ -5586,9 +5566,9 @@ Last update: 2025-10-01T23:26:54+02:00
 14. Typo: Found `Magic Mirror` in file `module.js`: Replace it with `MagicMirror²`.
 15. Recommendation: Found `axios` in file `axios_v0.16.x.js`: Replace it with built-in fetch ([documentation](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch); [example module with fetch implemented](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/node_helper.js)).
 16. Recommendation: Found `XMLHttpRequest` in file `axios_v0.16.x.js`: Replace it with built-in fetch ([documentation](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch); [example module with fetch implemented](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/node_helper.js)).
-17. Recommendation: Found `uses: actions/checkout@v3` in file `mm2-idf.js.yml`: Replace it with v5.
-18. Recommendation: Found `uses: actions/setup-node@v3` in file `mm2-idf.js.yml`: Replace it with v5.
-19. Deprecated: Found `node-version: [18` in file `mm2-idf.js.yml`: Update to current version.
+17. Recommendation: Found `uses: actions/checkout@v3` in file `mm2-idf.js.yml`: Upgrade workflows to use actions/checkout@v5.
+18. Recommendation: Found `uses: actions/setup-node@v3` in file `mm2-idf.js.yml`: Upgrade workflows to use actions/setup-node@v5.
+19. Deprecated: Found `node-version: [18` in file `mm2-idf.js.yml`: Update CI workflows to target a supported Node.js LTS release.
 20. Recommendation: There is no CHANGELOG file. It is recommended to add one ([example CHANGELOG file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CHANGELOG.md)).
 21. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
 22. Recommendation: There is no dependabot configuration file. It is recommended to add one ([example dependabot file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/.github/dependabot.yaml)).
@@ -5674,7 +5654,7 @@ Last update: 2025-10-01T23:26:54+02:00
 
 ### [MMM-iHaveBeenThere by basti0001](https://github.com/basti0001/MMM-iHaveBeenThere)
 
-1. Recommendation: Found `npm run` in file `package.json`: Replace it with `node --run`. This is a more modern way to run scripts, without the need for npm.
+1. Recommendation: Found `npm run` in file `package.json`: Prefer `node --run` over invoking npm run directly.
 2. Recommendation: The README seems not to have an update section (like `## Update`). Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Update-Instructions)).
 3. Recommendation: There is no CHANGELOG file. It is recommended to add one ([example CHANGELOG file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CHANGELOG.md)).
 4. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
@@ -5728,15 +5708,14 @@ Last update: 2025-10-01T23:26:54+02:00
 
 1. Issues are not enabled in the GitHub repository. So users cannot report bugs. Please enable issues in your repo.
 2. Recommendation: Found `prettier/prettier` in file `.stylelintrc.json`: Config would be cleaner using 'stylelint-prettier/recommended'. [See here](https://github.com/prettier/stylelint-prettier).
-3. Recommendation: Found `npm run` in file `package.json`: Replace it with `node --run`. This is a more modern way to run scripts, without the need for npm.
-4. Recommendation: Found `eslint .` in file `package.json`: The period at the end of the command is not necessary since v9. It is recommended to remove it.
-5. Recommendation: Found `eslint --fix .` in file `package.json`: The period at the end of the command is not necessary since v9. It is recommended to remove it.
-6. Recommendation: Found `"eslint-plugin-json"` in file `package.json`: Replace it by `@eslint/json`.
-7. Outdated: Found `MichMich/MagicMirror` in file `README.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
-8. Recommendation: The README seems not to have an update section (like `## Update`). Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Update-Instructions)).
-9. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
-10. Recommendation: There is no dependabot configuration file. It is recommended to add one ([example dependabot file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/.github/dependabot.yaml)).
-11. Recommendation: Replace eslintrc by new flat config.
+3. Recommendation: Found `npm run` in file `package.json`: Prefer `node --run` over invoking npm run directly.
+4. Recommendation: Found `eslint .` in file `package.json`: Drop the trailing '.' when invoking ESLint v9 or newer.
+5. Recommendation: Found `"eslint-plugin-json"` in file `package.json`: Suggest adopting `@eslint/json` for JSON linting.
+6. Outdated: Found `MichMich/MagicMirror` in file `README.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
+7. Recommendation: The README seems not to have an update section (like `## Update`). Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Update-Instructions)).
+8. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
+9. Recommendation: There is no dependabot configuration file. It is recommended to add one ([example dependabot file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/.github/dependabot.yaml)).
+10. Recommendation: Replace eslintrc by new flat config.
 
 ### [MMM-imhdsk by Adman](https://github.com/Adman/MMM-imhdsk)
 
@@ -5774,7 +5753,7 @@ Last update: 2025-10-01T23:26:54+02:00
 
 1. Recommendation: Found `axios` in file `immichApi.js`: Replace it with built-in fetch ([documentation](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch); [example module with fetch implemented](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/node_helper.js)).
 2. Recommendation: Found `axios` in file `package.json`: Replace it with built-in fetch ([documentation](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch); [example module with fetch implemented](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/node_helper.js)).
-3. Recommendation: Found `eslint .` in file `package.json`: The period at the end of the command is not necessary since v9. It is recommended to remove it.
+3. Recommendation: Found `eslint .` in file `package.json`: Drop the trailing '.' when invoking ESLint v9 or newer.
 4. Recommendation: The README seems not to have an update section (like `## Update`). Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Update-Instructions)).
 5. Recommendation: The README seems to have a config example without a trailing comma. Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Config-Instructions)).
 6. Recommendation: There is no CHANGELOG file. It is recommended to add one ([example CHANGELOG file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CHANGELOG.md)).
@@ -5875,12 +5854,12 @@ Last update: 2025-10-01T23:26:54+02:00
 ### [MMM-IntelliCenter by parnic](https://github.com/parnic/MMM-IntelliCenter)
 
 1. There are no keywords in 'package.json'. We would use them as tags on the module list page.
-2. Recommendation: Found `eslint .` in file `package.json`: The period at the end of the command is not necessary since v9. It is recommended to remove it.
+2. Recommendation: Found `eslint .` in file `package.json`: Drop the trailing '.' when invoking ESLint v9 or newer.
 3. Recommendation: The README seems not to have an update section (like `## Update`). Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Update-Instructions)).
-4. Recommendation: Found `uses: actions/checkout@v4` in file `nodejs.yml`: Replace it with v5.
-5. Recommendation: Found `uses: actions/setup-node@v4` in file `nodejs.yml`: Replace it with v5.
-6. Deprecated: Found `node-version: [18` in file `nodejs.yml`: Update to current version.
-7. Recommendation: Found `npm run` in file `nodejs.yml`: Replace it with `node --run`. This is a more modern way to run scripts, without the need for npm.
+4. Recommendation: Found `uses: actions/checkout@v4` in file `nodejs.yml`: Upgrade workflows to use actions/checkout@v5.
+5. Recommendation: Found `uses: actions/setup-node@v4` in file `nodejs.yml`: Upgrade workflows to use actions/setup-node@v5.
+6. Deprecated: Found `node-version: [18` in file `nodejs.yml`: Update CI workflows to target a supported Node.js LTS release.
+7. Recommendation: Found `npm run` in file `nodejs.yml`: Prefer `node --run` over invoking npm run directly.
 8. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
 9. Recommendation: There is no dependabot configuration file. It is recommended to add one ([example dependabot file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/.github/dependabot.yaml)).
 10. Recommendation: The ESLint configuration file `eslint.config.mjs` does not contain `defineConfig`. It is recommended to use it.
@@ -5901,8 +5880,8 @@ Last update: 2025-10-01T23:26:54+02:00
 
 1. Issues are not enabled in the GitHub repository. So users cannot report bugs. Please enable issues in your repo.
 2. Recommendation: Module name doesn't follow the recommended pattern (it doesn't start with `MMM-`). Consider renaming your module.
-3. Recommendation: Found `npm run` in file `package.json`: Replace it with `node --run`. This is a more modern way to run scripts, without the need for npm.
-4. Recommendation: Found `eslint .` in file `package.json`: The period at the end of the command is not necessary since v9. It is recommended to remove it.
+3. Recommendation: Found `npm run` in file `package.json`: Prefer `node --run` over invoking npm run directly.
+4. Recommendation: Found `eslint .` in file `package.json`: Drop the trailing '.' when invoking ESLint v9 or newer.
 5. Recommendation: The README seems not to have an update section (like `## Update`). Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Update-Instructions)).
 6. Recommendation: The README seems to have a modules array (Found `modules: [`). This is usually not necessary. Please remove it if it is not needed ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Config-Instructions)).
 7. Recommendation: There is no CHANGELOG file. It is recommended to add one ([example CHANGELOG file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CHANGELOG.md)).
@@ -5915,8 +5894,8 @@ Last update: 2025-10-01T23:26:54+02:00
 1. No image found.
 2. Typo: Found `Magic Mirror` in file `MMM-ioBroker.js`: Replace it with `MagicMirror²`.
 3. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
-4. Recommendation: Found `require('http')` in file `node_helper.js`: Replace 'http' by 'node:http'.
-5. Recommendation: Found `require('https')` in file `node_helper.js`: Replace 'https' by 'node:https'.
+4. Recommendation: Found `require('http')` in file `node_helper.js`: Replace `http` with the scoped import `node:http`.
+5. Recommendation: Found `require('https')` in file `node_helper.js`: Replace `https` with the scoped import `node:https`.
 6. Typo: Found `Magic Mirror` in file `package.json`: Replace it with `MagicMirror²`.
 7. Typo: Found `[MagicMirror]` in file `README.md`: Replace it with `[MagicMirror²]`.
 8. Outdated: Found `MichMich/MagicMirror` in file `README.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
@@ -5932,13 +5911,13 @@ Last update: 2025-10-01T23:26:54+02:00
 2. `package.json` issue: No repository field.
 3. `package.json` issue: No license field.
 4. There are no keywords in 'package.json'. We would use them as tags on the module list page.
-5. Recommendation: Found `https://cdnjs.cloudflare.com` in file `MMM-IOTStatus.js`: It looks like a package is loaded via CDN. It would be better if the package were installed locally via npm.
-6. Recommendation: Found `eslint .` in file `package.json`: The period at the end of the command is not necessary since v9. It is recommended to remove it.
+5. Recommendation: Found `https://cdnjs.cloudflare.com` in file `MMM-IOTStatus.js`: Prefer bundling dependencies via npm instead of CDN references.
+6. Recommendation: Found `eslint .` in file `package.json`: Drop the trailing '.' when invoking ESLint v9 or newer.
 7. Typo: Found `[MagicMirror]` in file `README.md`: Replace it with `[MagicMirror²]`.
 8. Outdated: Found `MichMich/MagicMirror` in file `README.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
 9. Recommendation: The README seems not to have an update section (like `## Update`). Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Update-Instructions)).
 10. Recommendation: The README seems to have a config example without a trailing comma. Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Config-Instructions)).
-11. Recommendation: Found `npm run` in file `config.yml`: Replace it with `node --run`. This is a more modern way to run scripts, without the need for npm.
+11. Recommendation: Found `npm run` in file `config.yml`: Prefer `node --run` over invoking npm run directly.
 12. Recommendation: There is no CHANGELOG file. It is recommended to add one ([example CHANGELOG file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CHANGELOG.md)).
 13. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
 14. Recommendation: There is no dependabot configuration file. It is recommended to add one ([example dependabot file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/.github/dependabot.yaml)).
@@ -5950,14 +5929,14 @@ Last update: 2025-10-01T23:26:54+02:00
 2. Outdated: Found `MichMich/MagicMirror` in file `node_helper.js`: Replace it by `MagicMirrorOrg/MagicMirror`.
 3. Deprecated: Found `"lockfileVersion": 1` in file `package-lock.json`: Run `npm update` to update to lockfileVersion 3.
 4. Typo: Found `MagicMirror2` in file `package.json`: Replace it with `MagicMirror²`.
-5. Recommendation: Found `eslint .` in file `package.json`: The period at the end of the command is not necessary since v9. It is recommended to remove it.
-6. Recommendation: Found `npm run` in file `README.md`: Replace it with `node --run`. This is a more modern way to run scripts, without the need for npm.
+5. Recommendation: Found `eslint .` in file `package.json`: Drop the trailing '.' when invoking ESLint v9 or newer.
+6. Recommendation: Found `npm run` in file `README.md`: Prefer `node --run` over invoking npm run directly.
 7. Outdated: Found `MichMich/MagicMirror` in file `README.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
 8. Recommendation: The README seems not to have an update section (like `## Update`). Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Update-Instructions)).
 9. Recommendation: The README seems to have a config example without a trailing comma. Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Config-Instructions)).
 10. Recommendation: The README seems not to have clone instructions.
-11. Recommendation: Found `uses: actions/checkout@v2` in file `build.yml`: Replace it with v5.
-12. Recommendation: Found `npm run` in file `build.yml`: Replace it with `node --run`. This is a more modern way to run scripts, without the need for npm.
+11. Recommendation: Found `uses: actions/checkout@v2` in file `build.yml`: Upgrade workflows to use actions/checkout@v5.
+12. Recommendation: Found `npm run` in file `build.yml`: Prefer `node --run` over invoking npm run directly.
 13. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
 14. Recommendation: There is no dependabot configuration file. It is recommended to add one ([example dependabot file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/.github/dependabot.yaml)).
 15. Recommendation: Replace eslintrc by new flat config.
@@ -5966,7 +5945,7 @@ Last update: 2025-10-01T23:26:54+02:00
 
 1. There is no `package.json`. We need this file to gather information about the module for the module list page.
 2. No image found.
-3. Recommendation: Found `require('http')` in file `foscam.js`: Replace 'http' by 'node:http'.
+3. Recommendation: Found `require('http')` in file `foscam.js`: Replace `http` with the scoped import `node:http`.
 4. Deprecated: Found `require('request')` in file `node_helper.js`: Replace it with built-in fetch ([documentation](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch); [example module with fetch implemented](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/node_helper.js)).
 5. Recommendation: The README seems not to have an update section (like `## Update`). Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Update-Instructions)).
 6. Recommendation: The README seems not to have an install section (like `## Installation`). Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Installation-Instructions)).
@@ -5994,7 +5973,7 @@ Last update: 2025-10-01T23:26:54+02:00
 
 1. There is no `package.json`. We need this file to gather information about the module for the module list page.
 2. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
-3. Recommendation: Found `require("https")` in file `node_helper.js`: Replace "https" by "node:https".
+3. Recommendation: Found `require("https")` in file `node_helper.js`: Replace `https` with the scoped import `node:https`.
 4. Typo: Found `[MagicMirror]` in file `README.md`: Replace it with `[MagicMirror²]`.
 5. Outdated: Found `MichMich/MagicMirror` in file `README.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
 6. Recommendation: The README seems not to have an update section (like `## Update`). Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Update-Instructions)).
@@ -6021,10 +6000,10 @@ Last update: 2025-10-01T23:26:54+02:00
 
 1. `package.json` issue: No repository field.
 2. Recommendation: Found `axios` in file `COMPLETION_SUMMARY.md`: Replace it with built-in fetch ([documentation](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch); [example module with fetch implemented](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/node_helper.js)).
-3. Recommendation: Found `require('http')` in file `icon-utils.js`: Replace 'http' by 'node:http'.
-4. Recommendation: Found `require('https')` in file `icon-utils.js`: Replace 'https' by 'node:https'.
+3. Recommendation: Found `require('http')` in file `icon-utils.js`: Replace `http` with the scoped import `node:http`.
+4. Recommendation: Found `require('https')` in file `icon-utils.js`: Replace `https` with the scoped import `node:https`.
 5. Recommendation: Found `axios` in file `IMPLEMENTATION_SUMMARY.md`: Replace it with built-in fetch ([documentation](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch); [example module with fetch implemented](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/node_helper.js)).
-6. Recommendation: Found `require("https")` in file `node_helper.js`: Replace "https" by "node:https".
+6. Recommendation: Found `require("https")` in file `node_helper.js`: Replace `https` with the scoped import `node:https`.
 7. Recommendation: Found `axios` in file `node_helper.js`: Replace it with built-in fetch ([documentation](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch); [example module with fetch implemented](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/node_helper.js)).
 8. Recommendation: Found `axios` in file `package.json`: Replace it with built-in fetch ([documentation](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch); [example module with fetch implemented](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/node_helper.js)).
 9. Recommendation: Found `axios` in file `quick-test.js`: Replace it with built-in fetch ([documentation](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch); [example module with fetch implemented](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/node_helper.js)).
@@ -6052,7 +6031,7 @@ Last update: 2025-10-01T23:26:54+02:00
 
 ### [MMM-ISS-Live by KristjanESPERANTO](https://github.com/KristjanESPERANTO/MMM-ISS-Live)
 
-1. Recommendation: Found `uses: actions/setup-node@v4` in file `automated-tests.yaml`: Replace it with v5.
+1. Recommendation: Found `uses: actions/setup-node@v4` in file `automated-tests.yaml`: Upgrade workflows to use actions/setup-node@v5.
 2. Information: There are updates for 8 dependencie(s):
    - @eslint/js                ^9.34.0  →  ^9.36.0
    - @eslint/json              ^0.13.1  →  ^0.13.2
@@ -6065,7 +6044,7 @@ Last update: 2025-10-01T23:26:54+02:00
 
 ### [MMM-ISS-Map by khassel](https://gitlab.com/khassel/MMM-ISS-Map)
 
-1. Recommendation: Found `https://cdn.jsdelivr.net` in file `MMM-ISS-Map.js`: It looks like a package is loaded via CDN. It would be better if the package were installed locally via npm.
+1. Recommendation: Found `https://cdn.jsdelivr.net` in file `MMM-ISS-Map.js`: Prefer bundling dependencies via npm instead of CDN references.
 2. Recommendation: The README seems to have a modules array (Found `modules: [`). This is usually not necessary. Please remove it if it is not needed ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Config-Instructions)).
 3. Recommendation: There is no CHANGELOG file. It is recommended to add one ([example CHANGELOG file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CHANGELOG.md)).
 4. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
@@ -6076,9 +6055,9 @@ Last update: 2025-10-01T23:26:54+02:00
 
 1. There are no keywords in 'package.json'. We would use them as tags on the module list page.
 2. Typo: Found `Magic Mirror` in file `MMM-ISY.js`: Replace it with `MagicMirror²`.
-3. Recommendation: Found `jshint` in file `MMM-ISY.js`: Replace "jshint" by "eslint".
+3. Recommendation: Found `jshint` in file `MMM-ISY.js`: Suggest migrating from JSHint to ESLint.
 4. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
-5. Recommendation: Found `jshint` in file `node_helper.js`: Replace "jshint" by "eslint".
+5. Recommendation: Found `jshint` in file `node_helper.js`: Suggest migrating from JSHint to ESLint.
 6. Outdated: Found `MichMich/MagicMirror` in file `README.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
 7. Recommendation: The README seems not to have an update section (like `## Update`). Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Update-Instructions)).
 8. Recommendation: The README seems to have a modules array (Found `modules: [`). This is usually not necessary. Please remove it if it is not needed ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Config-Instructions)).
@@ -6119,23 +6098,22 @@ Last update: 2025-10-01T23:26:54+02:00
 
 ### [MMM-Jast by jalibu](https://github.com/jalibu/MMM-Jast)
 
-1. Recommendation: Found `npm run` in file `package.json`: Replace it with `node --run`. This is a more modern way to run scripts, without the need for npm.
-2. Recommendation: Found `eslint .` in file `package.json`: The period at the end of the command is not necessary since v9. It is recommended to remove it.
-3. Recommendation: Found `eslint --fix .` in file `package.json`: The period at the end of the command is not necessary since v9. It is recommended to remove it.
-4. Deprecated: Found `rollup-plugin-banner` in file `package.json`: Replace it with built-in banner.
-5. Recommendation: Found `npm run` in file `README.md`: Replace it with `node --run`. This is a more modern way to run scripts, without the need for npm.
-6. Recommendation: The README seems not to have an update section (like `## Update`). Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Update-Instructions)).
-7. Recommendation: There is no CHANGELOG file. It is recommended to add one ([example CHANGELOG file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CHANGELOG.md)).
-8. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
-9. Recommendation: There is no dependabot configuration file. It is recommended to add one ([example dependabot file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/.github/dependabot.yaml)).
-10. Recommendation: Replace eslintrc by new flat config.
+1. Recommendation: Found `npm run` in file `package.json`: Prefer `node --run` over invoking npm run directly.
+2. Recommendation: Found `eslint .` in file `package.json`: Drop the trailing '.' when invoking ESLint v9 or newer.
+3. Deprecated: Found `rollup-plugin-banner` in file `package.json`: Use Rollup's built-in banner support.
+4. Recommendation: Found `npm run` in file `README.md`: Prefer `node --run` over invoking npm run directly.
+5. Recommendation: The README seems not to have an update section (like `## Update`). Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Update-Instructions)).
+6. Recommendation: There is no CHANGELOG file. It is recommended to add one ([example CHANGELOG file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CHANGELOG.md)).
+7. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
+8. Recommendation: There is no dependabot configuration file. It is recommended to add one ([example dependabot file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/.github/dependabot.yaml)).
+9. Recommendation: Replace eslintrc by new flat config.
 
 ### [MMM-Jeedom by prysme01](https://github.com/prysme01/MMM-Jeedom)
 
 1. There is no `package.json`. We need this file to gather information about the module for the module list page.
 2. Recommendation: Found `XMLHttpRequest` in file `MMM-Jeedom.js`: Replace it with built-in fetch ([documentation](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch); [example module with fetch implemented](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/node_helper.js)).
-3. Recommendation: Found `require('http')` in file `node_helper.js`: Replace 'http' by 'node:http'.
-4. Recommendation: Found `require('https')` in file `node_helper.js`: Replace 'https' by 'node:https'.
+3. Recommendation: Found `require('http')` in file `node_helper.js`: Replace `http` with the scoped import `node:http`.
+4. Recommendation: Found `require('https')` in file `node_helper.js`: Replace `https` with the scoped import `node:https`.
 5. Typo: Found `Magic Mirror` in file `README.md`: Replace it with `MagicMirror²`.
 6. Recommendation: The README seems not to have an update section (like `## Update`). Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Update-Instructions)).
 7. Recommendation: The README seems not to have an install section (like `## Installation`). Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Installation-Instructions)).
@@ -6202,11 +6180,11 @@ Last update: 2025-10-01T23:26:54+02:00
 
 1. `package.json` issue: No repository field.
 2. There are no keywords in 'package.json'. We would use them as tags on the module list page.
-3. Recommendation: Found `jshint` in file `Gruntfile.js`: Replace "jshint" by "eslint".
+3. Recommendation: Found `jshint` in file `Gruntfile.js`: Suggest migrating from JSHint to ESLint.
 4. Typo: Found `Magic Mirror` in file `MMM-JNV.js`: Replace it with `MagicMirror²`.
 5. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
-6. Recommendation: Found `require("https")` in file `node_helper.js`: Replace "https" by "node:https".
-7. Deprecated: Found `"grunt"` in file `package.json`: Grunt is practically unmaintained. Move on to something better.
+6. Recommendation: Found `require("https")` in file `node_helper.js`: Replace `https` with the scoped import `node:https`.
+7. Deprecated: Found `"grunt"` in file `package.json`: Grunt is effectively unmaintained. Move on to something modern.
 8. Outdated: Found `MichMich/MagicMirror` in file `README.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
 9. Recommendation: The README seems not to have an update section (like `## Update`). Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Update-Instructions)).
 10. Recommendation: The README seems not to have an install section (like `## Installation`). Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Installation-Instructions)).
@@ -6250,7 +6228,7 @@ Last update: 2025-10-01T23:26:54+02:00
 ### [MMM-json by DanielHabenicht](https://github.com/DanielHabenicht/MMM-json)
 
 1. There are no keywords in 'package.json'. We would use them as tags on the module list page.
-2. Recommendation: Found `npm run` in file `.gitpod.yml`: Replace it with `node --run`. This is a more modern way to run scripts, without the need for npm.
+2. Recommendation: Found `npm run` in file `.gitpod.yml`: Prefer `node --run` over invoking npm run directly.
 3. Outdated: Found `MichMich/MagicMirror` in file `.gitpod.yml`: Replace it by `MagicMirrorOrg/MagicMirror`.
 4. Typo: Found `Magic Mirror` in file `MMM-json.js`: Replace it with `MagicMirror²`.
 5. Recommendation: Found `"node-fetch"` in file `node_helper.js`: Replace it with built-in fetch ([documentation](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch); [example module with fetch implemented](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/node_helper.js)).
@@ -6264,10 +6242,10 @@ Last update: 2025-10-01T23:26:54+02:00
 13. Typo: Found `Magic Mirror` in file `configuration.md`: Replace it with `MagicMirror²`.
 14. Typo: Found `[MagicMirror]` in file `index.md`: Replace it with `[MagicMirror²]`.
 15. Outdated: Found `MichMich/MagicMirror` in file `index.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
-16. Recommendation: Found `uses: actions/checkout@v2` in file `docs.yml`: Replace it with v5.
-17. Recommendation: Found `uses: actions/checkout@v2` in file `pr.yml`: Replace it with v5.
-18. Recommendation: Found `uses: actions/checkout@v2` in file `release.yml`: Replace it with v5.
-19. Recommendation: Found `npm run` in file `release.yml`: Replace it with `node --run`. This is a more modern way to run scripts, without the need for npm.
+16. Recommendation: Found `uses: actions/checkout@v2` in file `docs.yml`: Upgrade workflows to use actions/checkout@v5.
+17. Recommendation: Found `uses: actions/checkout@v2` in file `pr.yml`: Upgrade workflows to use actions/checkout@v5.
+18. Recommendation: Found `uses: actions/checkout@v2` in file `release.yml`: Upgrade workflows to use actions/checkout@v5.
+19. Recommendation: Found `npm run` in file `release.yml`: Prefer `node --run` over invoking npm run directly.
 20. Recommendation: There is no CHANGELOG file. It is recommended to add one ([example CHANGELOG file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CHANGELOG.md)).
 21. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
 22. Recommendation: There is no dependabot configuration file. It is recommended to add one ([example dependabot file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/.github/dependabot.yaml)).
@@ -6289,8 +6267,8 @@ Last update: 2025-10-01T23:26:54+02:00
 1. Typo: Found `Magic Mirror` in file `MMM-JSONStatusChecker.js`: Replace it with `MagicMirror²`.
 2. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
 3. Deprecated: Found `require('request')` in file `node_helper.js`: Replace it with built-in fetch ([documentation](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch); [example module with fetch implemented](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/node_helper.js)).
-4. Recommendation: Found `jshint` in file `node_helper.js`: Replace "jshint" by "eslint".
-5. Recommendation: Found `npm run` in file `package.json`: Replace it with `node --run`. This is a more modern way to run scripts, without the need for npm.
+4. Recommendation: Found `jshint` in file `node_helper.js`: Suggest migrating from JSHint to ESLint.
+5. Recommendation: Found `npm run` in file `package.json`: Prefer `node --run` over invoking npm run directly.
 6. Outdated: Found `MichMich/MagicMirror` in file `README.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
 7. Recommendation: The README seems not to have an update section (like `## Update`). Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Update-Instructions)).
 8. Recommendation: The README seems to have a modules array (Found `modules: [`). This is usually not necessary. Please remove it if it is not needed ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Config-Instructions)).
@@ -6302,19 +6280,18 @@ Last update: 2025-10-01T23:26:54+02:00
 ### [MMM-JsonTable by timdows](https://github.com/timdows/MMM-JsonTable)
 
 1. Deprecated: Found `"lockfileVersion": 2` in file `package-lock.json`: Run `npm update` to update to lockfileVersion 3.
-2. Recommendation: Found `npm run` in file `package.json`: Replace it with `node --run`. This is a more modern way to run scripts, without the need for npm.
-3. Recommendation: Found `eslint .` in file `package.json`: The period at the end of the command is not necessary since v9. It is recommended to remove it.
-4. Recommendation: Found `eslint --fix .` in file `package.json`: The period at the end of the command is not necessary since v9. It is recommended to remove it.
-5. Recommendation: Found `eslint-plugin-jsonc` in file `package.json`: Replace it by `@eslint/json`.
-6. Recommendation: Found `npm run` in file `README.md`: Replace it with `node --run`. This is a more modern way to run scripts, without the need for npm.
-7. Recommendation: The README seems not to have an update section (like `## Update`). Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Update-Instructions)).
-8. Recommendation: Found `uses: actions/checkout@v4` in file `runtest.yml`: Replace it with v5.
-9. Recommendation: Found `uses: actions/setup-node@v4` in file `runtest.yml`: Replace it with v5.
-10. Deprecated: Found `node-version: [18` in file `runtest.yml`: Update to current version.
-11. Recommendation: Found `npm run` in file `runtest.yml`: Replace it with `node --run`. This is a more modern way to run scripts, without the need for npm.
-12. Recommendation: There is no CHANGELOG file. It is recommended to add one ([example CHANGELOG file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CHANGELOG.md)).
-13. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
-14. Recommendation: The ESLint configuration file `eslint.config.mjs` does not contain `defineConfig`. It is recommended to use it.
+2. Recommendation: Found `npm run` in file `package.json`: Prefer `node --run` over invoking npm run directly.
+3. Recommendation: Found `eslint .` in file `package.json`: Drop the trailing '.' when invoking ESLint v9 or newer.
+4. Recommendation: Found `"eslint-plugin-jsonc"` in file `package.json`: Suggest adopting `@eslint/json` for JSON linting.
+5. Recommendation: Found `npm run` in file `README.md`: Prefer `node --run` over invoking npm run directly.
+6. Recommendation: The README seems not to have an update section (like `## Update`). Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Update-Instructions)).
+7. Recommendation: Found `uses: actions/checkout@v4` in file `runtest.yml`: Upgrade workflows to use actions/checkout@v5.
+8. Recommendation: Found `uses: actions/setup-node@v4` in file `runtest.yml`: Upgrade workflows to use actions/setup-node@v5.
+9. Deprecated: Found `node-version: [18` in file `runtest.yml`: Update CI workflows to target a supported Node.js LTS release.
+10. Recommendation: Found `npm run` in file `runtest.yml`: Prefer `node --run` over invoking npm run directly.
+11. Recommendation: There is no CHANGELOG file. It is recommended to add one ([example CHANGELOG file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CHANGELOG.md)).
+12. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
+13. Recommendation: The ESLint configuration file `eslint.config.mjs` does not contain `defineConfig`. It is recommended to use it.
 
 ### [MMM-JsonValue by c-klinger](https://github.com/c-klinger/MMM-JsonValue)
 
@@ -6333,7 +6310,7 @@ Last update: 2025-10-01T23:26:54+02:00
 
 ### [MMM-JukeBox by gitgitaway](https://github.com/gitgitaway/MMM-JukeBox)
 
-1. Recommendation: Found `eslint .` in file `package.json`: The period at the end of the command is not necessary since v9. It is recommended to remove it.
+1. Recommendation: Found `eslint .` in file `package.json`: Drop the trailing '.' when invoking ESLint v9 or newer.
 2. Recommendation: The README seems not to have an update section (like `## Update`). Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Update-Instructions)).
 3. Warning: No LICENSE file ([example LICENSE file](https://github.com/KristjanESPERANTO/MMM-WebSpeechTTS/blob/main/LICENSE.md)).
 4. Recommendation: There is no CHANGELOG file. It is recommended to add one ([example CHANGELOG file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CHANGELOG.md)).
@@ -6346,13 +6323,13 @@ Last update: 2025-10-01T23:26:54+02:00
 1. `package.json` issue: No repository field.
 2. There are no keywords in 'package.json'. We would use them as tags on the module list page.
 3. Issue: The license in the package.json (MIT) doesn't match the license file (GPL-3.0).
-4. Recommendation: Found `jshint` in file `Gruntfile.js`: Replace "jshint" by "eslint".
+4. Recommendation: Found `jshint` in file `Gruntfile.js`: Suggest migrating from JSHint to ESLint.
 5. Typo: Found `Magic Mirror` in file `MMM-JustForTodayMeditation.js`: Replace it with `MagicMirror²`.
 6. Recommendation: Found `XMLHttpRequest` in file `MMM-JustForTodayMeditation.js`: Replace it with built-in fetch ([documentation](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch); [example module with fetch implemented](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/node_helper.js)).
 7. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
 8. Deprecated: Found `require("request")` in file `node_helper.js`: Replace it with built-in fetch ([documentation](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch); [example module with fetch implemented](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/node_helper.js)).
 9. Deprecated: Found `"lockfileVersion": 1` in file `package-lock.json`: Run `npm update` to update to lockfileVersion 3.
-10. Deprecated: Found `"grunt"` in file `package.json`: Grunt is practically unmaintained. Move on to something better.
+10. Deprecated: Found `"grunt"` in file `package.json`: Grunt is effectively unmaintained. Move on to something modern.
 11. Typo: Found `Magic Mirror` in file `README.md`: Replace it with `MagicMirror²`.
 12. Outdated: Found `MichMich/MagicMirror` in file `README.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
 13. Recommendation: The README seems not to have an update section (like `## Update`). Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Update-Instructions)).
@@ -6392,7 +6369,7 @@ Last update: 2025-10-01T23:26:54+02:00
 
 ### [MMM-KeyBindings by shbatm](https://github.com/shbatm/MMM-KeyBindings)
 
-1. Recommendation: Found `uses: actions/setup-node@v4` in file `automated-tests.yaml`: Replace it with v5.
+1. Recommendation: Found `uses: actions/setup-node@v4` in file `automated-tests.yaml`: Upgrade workflows to use actions/setup-node@v5.
 2. Information: There are updates for 6 dependencie(s):
    - @eslint/js                ^9.34.0  →  ^9.36.0
    - @eslint/markdown           ^7.2.0  →   ^7.3.0
@@ -6405,7 +6382,7 @@ Last update: 2025-10-01T23:26:54+02:00
 
 1. There are no keywords in 'package.json'. We would use them as tags on the module list page.
 2. Recommendation: Found `XMLHttpRequest` in file `MMM-Keyboard.js`: Replace it with built-in fetch ([documentation](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch); [example module with fetch implemented](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/node_helper.js)).
-3. Recommendation: Found `jshint` in file `MMM-Keyboard.js`: Replace "jshint" by "eslint".
+3. Recommendation: Found `jshint` in file `MMM-Keyboard.js`: Suggest migrating from JSHint to ESLint.
 4. Outdated: Found `MichMich/MagicMirror` in file `README.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
 5. Recommendation: There is no CHANGELOG file. It is recommended to add one ([example CHANGELOG file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CHANGELOG.md)).
 6. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
@@ -6450,7 +6427,7 @@ Last update: 2025-10-01T23:26:54+02:00
 ### [MMM-kudos by thomo](https://github.com/thomo/MMM-kudos)
 
 1. Typo: Found `Magic Mirror` in file `MMM-kudos.js`: Replace it with `MagicMirror²`.
-2. Recommendation: Found `eslint .` in file `package.json`: The period at the end of the command is not necessary since v9. It is recommended to remove it.
+2. Recommendation: Found `eslint .` in file `package.json`: Drop the trailing '.' when invoking ESLint v9 or newer.
 3. Recommendation: The README seems not to have an update section (like `## Update`). Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Update-Instructions)).
 4. Recommendation: The README seems not to have clone instructions.
 5. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
@@ -6473,8 +6450,8 @@ Last update: 2025-10-01T23:26:54+02:00
 
 1. Recommendation: Found `"node-fetch"` in file `node_helper.js`: Replace it with built-in fetch ([documentation](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch); [example module with fetch implemented](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/node_helper.js)).
 2. Recommendation: Found `"node-fetch"` in file `package.json`: Replace it with built-in fetch ([documentation](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch); [example module with fetch implemented](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/node_helper.js)).
-3. Recommendation: Found `npm run` in file `package.json`: Replace it with `node --run`. This is a more modern way to run scripts, without the need for npm.
-4. Recommendation: Found `eslint .` in file `package.json`: The period at the end of the command is not necessary since v9. It is recommended to remove it.
+3. Recommendation: Found `npm run` in file `package.json`: Prefer `node --run` over invoking npm run directly.
+4. Recommendation: Found `eslint .` in file `package.json`: Drop the trailing '.' when invoking ESLint v9 or newer.
 5. Recommendation: There is no CHANGELOG file. It is recommended to add one ([example CHANGELOG file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CHANGELOG.md)).
 6. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
 7. Recommendation: There is no dependabot configuration file. It is recommended to add one ([example dependabot file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/.github/dependabot.yaml)).
@@ -6483,7 +6460,7 @@ Last update: 2025-10-01T23:26:54+02:00
 ### [MMM-LAMetro by pbuabthong](https://github.com/pbuabthong/MMM-LAMetro)
 
 1. `package.json` issue: No repository field.
-2. Recommendation: Found `jshint` in file `.gitignore`: Replace "jshint" by "eslint".
+2. Recommendation: Found `jshint` in file `.gitignore`: Suggest migrating from JSHint to ESLint.
 3. Typo: Found `Magic Mirror` in file `MMM-LAMetro.js`: Replace it with `MagicMirror²`.
 4. Deprecated: Found `require('request')` in file `node_helper.js`: Replace it with built-in fetch ([documentation](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch); [example module with fetch implemented](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/node_helper.js)).
 5. Deprecated: Found `require('request')` in file `pt_helper.js`: Replace it with built-in fetch ([documentation](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch); [example module with fetch implemented](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/node_helper.js)).
@@ -6501,14 +6478,13 @@ Last update: 2025-10-01T23:26:54+02:00
 ### [MMM-Lastfm by RineshRamadhin](https://github.com/RineshRamadhin/MMM-Lastfm)
 
 1. `package.json` issue: No license field.
-2. No compatible or wrong license field in 'package.json' or LICENSE file. Without that, we can't use an image.
-3. Outdated: Found `MichMich/MagicMirror` in file `README.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
-4. Recommendation: The README seems not to have an update section (like `## Update`). Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Update-Instructions)).
-5. Recommendation: Found `uses: actions/checkout@v3` in file `codeql-analysis.yml`: Replace it with v5.
-6. Recommendation: There is no CHANGELOG file. It is recommended to add one ([example CHANGELOG file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CHANGELOG.md)).
-7. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
-8. Recommendation: There is no dependabot configuration file. It is recommended to add one ([example dependabot file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/.github/dependabot.yaml)).
-9. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/eslint.md)).
+2. Outdated: Found `MichMich/MagicMirror` in file `README.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
+3. Recommendation: The README seems not to have an update section (like `## Update`). Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Update-Instructions)).
+4. Recommendation: Found `uses: actions/checkout@v3` in file `codeql-analysis.yml`: Upgrade workflows to use actions/checkout@v5.
+5. Recommendation: There is no CHANGELOG file. It is recommended to add one ([example CHANGELOG file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CHANGELOG.md)).
+6. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
+7. Recommendation: There is no dependabot configuration file. It is recommended to add one ([example dependabot file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/.github/dependabot.yaml)).
+8. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/eslint.md)).
 
 ### [MMM-LCDControl by Txukie](https://github.com/Txukie/MMM-LCDControl)
 
@@ -6614,36 +6590,36 @@ Last update: 2025-10-01T23:26:54+02:00
 
 1. Repository name and main js file name is not the same.
 2. Recommendation: Found `prettier/prettier` in file `.stylelintrc.json`: Config would be cleaner using 'stylelint-prettier/recommended'. [See here](https://github.com/prettier/stylelint-prettier).
-3. Recommendation: Found `npm run` in file `package.json`: Replace it with `node --run`. This is a more modern way to run scripts, without the need for npm.
-4. Recommendation: Found `eslint .` in file `package.json`: The period at the end of the command is not necessary since v9. It is recommended to remove it.
-5. Recommendation: Found `npm run` in file `README.md`: Replace it with `node --run`. This is a more modern way to run scripts, without the need for npm.
+3. Recommendation: Found `npm run` in file `package.json`: Prefer `node --run` over invoking npm run directly.
+4. Recommendation: Found `eslint .` in file `package.json`: Drop the trailing '.' when invoking ESLint v9 or newer.
+5. Recommendation: Found `npm run` in file `README.md`: Prefer `node --run` over invoking npm run directly.
 6. Recommendation: The README seems not to have an update section (like `## Update`). Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Update-Instructions)).
-7. Recommendation: Found `npm run` in file `utils.js`: Replace it with `node --run`. This is a more modern way to run scripts, without the need for npm.
-8. Recommendation: Found `uses: actions/checkout@v4` in file `build.yml`: Replace it with v5.
-9. Recommendation: Found `uses: actions/setup-node@v4` in file `build.yml`: Replace it with v5.
-10. Recommendation: Found `npm run` in file `build.yml`: Replace it with `node --run`. This is a more modern way to run scripts, without the need for npm.
-11. Recommendation: Found `uses: actions/checkout@v4` in file `css.yml`: Replace it with v5.
-12. Recommendation: Found `uses: actions/setup-node@v4` in file `css.yml`: Replace it with v5.
-13. Recommendation: Found `npm run` in file `css.yml`: Replace it with `node --run`. This is a more modern way to run scripts, without the need for npm.
-14. Recommendation: Found `uses: actions/checkout@v4` in file `dependency-review.yml`: Replace it with v5.
-15. Recommendation: Found `uses: actions/checkout@v4` in file `esbuild.yml`: Replace it with v5.
-16. Recommendation: Found `uses: actions/setup-node@v4` in file `esbuild.yml`: Replace it with v5.
-17. Recommendation: Found `uses: actions/checkout@v4` in file `eslint.yml`: Replace it with v5.
-18. Recommendation: Found `uses: actions/setup-node@v4` in file `eslint.yml`: Replace it with v5.
-19. Recommendation: Found `npm run` in file `eslint.yml`: Replace it with `node --run`. This is a more modern way to run scripts, without the need for npm.
-20. Recommendation: Found `uses: actions/checkout@v4` in file `markdown.yml`: Replace it with v5.
-21. Recommendation: Found `uses: actions/setup-node@v4` in file `markdown.yml`: Replace it with v5.
-22. Recommendation: Found `npm run` in file `markdown.yml`: Replace it with `node --run`. This is a more modern way to run scripts, without the need for npm.
-23. Recommendation: Found `uses: actions/checkout@v4` in file `windowsMaster.yml`: Replace it with v5.
-24. Recommendation: Found `uses: actions/setup-node@v4` in file `windowsMaster.yml`: Replace it with v5.
-25. Recommendation: Found `npm run` in file `windowsMaster.yml`: Replace it with `node --run`. This is a more modern way to run scripts, without the need for npm.
+7. Recommendation: Found `npm run` in file `utils.js`: Prefer `node --run` over invoking npm run directly.
+8. Recommendation: Found `uses: actions/checkout@v4` in file `build.yml`: Upgrade workflows to use actions/checkout@v5.
+9. Recommendation: Found `uses: actions/setup-node@v4` in file `build.yml`: Upgrade workflows to use actions/setup-node@v5.
+10. Recommendation: Found `npm run` in file `build.yml`: Prefer `node --run` over invoking npm run directly.
+11. Recommendation: Found `uses: actions/checkout@v4` in file `css.yml`: Upgrade workflows to use actions/checkout@v5.
+12. Recommendation: Found `uses: actions/setup-node@v4` in file `css.yml`: Upgrade workflows to use actions/setup-node@v5.
+13. Recommendation: Found `npm run` in file `css.yml`: Prefer `node --run` over invoking npm run directly.
+14. Recommendation: Found `uses: actions/checkout@v4` in file `dependency-review.yml`: Upgrade workflows to use actions/checkout@v5.
+15. Recommendation: Found `uses: actions/checkout@v4` in file `esbuild.yml`: Upgrade workflows to use actions/checkout@v5.
+16. Recommendation: Found `uses: actions/setup-node@v4` in file `esbuild.yml`: Upgrade workflows to use actions/setup-node@v5.
+17. Recommendation: Found `uses: actions/checkout@v4` in file `eslint.yml`: Upgrade workflows to use actions/checkout@v5.
+18. Recommendation: Found `uses: actions/setup-node@v4` in file `eslint.yml`: Upgrade workflows to use actions/setup-node@v5.
+19. Recommendation: Found `npm run` in file `eslint.yml`: Prefer `node --run` over invoking npm run directly.
+20. Recommendation: Found `uses: actions/checkout@v4` in file `markdown.yml`: Upgrade workflows to use actions/checkout@v5.
+21. Recommendation: Found `uses: actions/setup-node@v4` in file `markdown.yml`: Upgrade workflows to use actions/setup-node@v5.
+22. Recommendation: Found `npm run` in file `markdown.yml`: Prefer `node --run` over invoking npm run directly.
+23. Recommendation: Found `uses: actions/checkout@v4` in file `windowsMaster.yml`: Upgrade workflows to use actions/checkout@v5.
+24. Recommendation: Found `uses: actions/setup-node@v4` in file `windowsMaster.yml`: Upgrade workflows to use actions/setup-node@v5.
+25. Recommendation: Found `npm run` in file `windowsMaster.yml`: Prefer `node --run` over invoking npm run directly.
 26. Recommendation: There is no CHANGELOG file. It is recommended to add one ([example CHANGELOG file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CHANGELOG.md)).
 27. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
 
 ### [MMM-LINQConnectCalendar by dathbe](https://github.com/dathbe/MMM-LINQConnectCalendar)
 
-1. Recommendation: Found `uses: actions/checkout@v4` in file `automated-tests.yaml`: Replace it with v5.
-2. Recommendation: Found `uses: actions/setup-node@v4` in file `automated-tests.yaml`: Replace it with v5.
+1. Recommendation: Found `uses: actions/checkout@v4` in file `automated-tests.yaml`: Upgrade workflows to use actions/checkout@v5.
+2. Recommendation: Found `uses: actions/setup-node@v4` in file `automated-tests.yaml`: Upgrade workflows to use actions/setup-node@v5.
 3. Information: There are updates for 4 dependencie(s):
    - @eslint/js                ^9.32.0  →  ^9.36.0
    - @stylistic/eslint-plugin   ^5.2.3  →   ^5.4.0
@@ -6665,7 +6641,7 @@ Last update: 2025-10-01T23:26:54+02:00
 
 ### [MMM-LittleBockFermentationLog by SBrendan](https://github.com/SBrendan/MMM-LittleBockFermentationLog)
 
-1. Recommendation: Found `https://cdnjs.cloudflare.com` in file `MMM-LittleBockFermentationLog.js`: It looks like a package is loaded via CDN. It would be better if the package were installed locally via npm.
+1. Recommendation: Found `https://cdnjs.cloudflare.com` in file `MMM-LittleBockFermentationLog.js`: Prefer bundling dependencies via npm instead of CDN references.
 2. Found directory `node_modules`. This shouldn't be uploaded. Add `node_modules/`to `.gitignore`.
 3. Outdated: Found `MichMich/MagicMirror` in file `README.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
 4. Recommendation: The README seems not to have an update section (like `## Update`). Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Update-Instructions)).
@@ -6678,8 +6654,8 @@ Last update: 2025-10-01T23:26:54+02:00
 
 1. There are no keywords in 'package.json'. We would use them as tags on the module list page.
 2. Recommendation: Found `axios` in file `MMM-Live-Stream-TV.js`: Replace it with built-in fetch ([documentation](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch); [example module with fetch implemented](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/node_helper.js)).
-3. Recommendation: Found `https://cdnjs.cloudflare.com` in file `MMM-Live-Stream-TV.js`: It looks like a package is loaded via CDN. It would be better if the package were installed locally via npm.
-4. Recommendation: Found `https://cdn.jsdelivr.net` in file `MMM-Live-Stream-TV.js`: It looks like a package is loaded via CDN. It would be better if the package were installed locally via npm.
+3. Recommendation: Found `https://cdnjs.cloudflare.com` in file `MMM-Live-Stream-TV.js`: Prefer bundling dependencies via npm instead of CDN references.
+4. Recommendation: Found `https://cdn.jsdelivr.net` in file `MMM-Live-Stream-TV.js`: Prefer bundling dependencies via npm instead of CDN references.
 5. Found directory `node_modules`. This shouldn't be uploaded. Add `node_modules/`to `.gitignore`.
 6. Deprecated: Found `"lockfileVersion": 1` in file `package-lock.json`: Run `npm update` to update to lockfileVersion 3.
 7. Typo: Found `Magic Mirror` in file `package.json`: Replace it with `MagicMirror²`.
@@ -6713,10 +6689,10 @@ Last update: 2025-10-01T23:26:54+02:00
 
 1. `package.json` issue: No repository field.
 2. Repository name and main js file name is not the same.
-3. Recommendation: Found `npm run` in file `package.json`: Replace it with `node --run`. This is a more modern way to run scripts, without the need for npm.
-4. Recommendation: Found `eslint .` in file `package.json`: The period at the end of the command is not necessary since v9. It is recommended to remove it.
+3. Recommendation: Found `npm run` in file `package.json`: Prefer `node --run` over invoking npm run directly.
+4. Recommendation: Found `eslint .` in file `package.json`: Drop the trailing '.' when invoking ESLint v9 or newer.
 5. Typo: Found `MagicMirror2` in file `README.md`: Replace it with `MagicMirror²`.
-6. Recommendation: Found `npm run` in file `README.md`: Replace it with `node --run`. This is a more modern way to run scripts, without the need for npm.
+6. Recommendation: Found `npm run` in file `README.md`: Prefer `node --run` over invoking npm run directly.
 7. Recommendation: The README seems not to have an update section (like `## Update`). Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Update-Instructions)).
 8. Recommendation: The README seems not to have a config example. Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Config-Instructions)).
 9. Recommendation: The README seems not to have clone instructions.
@@ -6724,10 +6700,10 @@ Last update: 2025-10-01T23:26:54+02:00
 11. Typo: Found `Magic Mirror` in file `helper_impl.ts`: Replace it with `MagicMirror²`.
 12. Typo: Found `Magic Mirror` in file `helper.ts`: Replace it with `MagicMirror²`.
 13. Typo: Found `Magic Mirror` in file `module.ts`: Replace it with `MagicMirror²`.
-14. Recommendation: Found `uses: actions/checkout@v3` in file `ci.yml`: Replace it with v5.
-15. Recommendation: Found `uses: actions/setup-node@v3` in file `ci.yml`: Replace it with v5.
-16. Deprecated: Found `node-version: [18` in file `ci.yml`: Update to current version.
-17. Recommendation: Found `npm run` in file `ci.yml`: Replace it with `node --run`. This is a more modern way to run scripts, without the need for npm.
+14. Recommendation: Found `uses: actions/checkout@v3` in file `ci.yml`: Upgrade workflows to use actions/checkout@v5.
+15. Recommendation: Found `uses: actions/setup-node@v3` in file `ci.yml`: Upgrade workflows to use actions/setup-node@v5.
+16. Deprecated: Found `node-version: [18` in file `ci.yml`: Update CI workflows to target a supported Node.js LTS release.
+17. Recommendation: Found `npm run` in file `ci.yml`: Prefer `node --run` over invoking npm run directly.
 18. Recommendation: There is no CHANGELOG file. It is recommended to add one ([example CHANGELOG file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CHANGELOG.md)).
 19. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
 20. Recommendation: There is no dependabot configuration file. It is recommended to add one ([example dependabot file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/.github/dependabot.yaml)).
@@ -6748,15 +6724,15 @@ Last update: 2025-10-01T23:26:54+02:00
 
 ### [MMM-Local-Starlink-Status-Graph by jboucly](https://github.com/jboucly/MMM-Local-Starlink-Status-Graph)
 
-1. Recommendation: Found `https://cdn.jsdelivr.net` in file `MMM-Local-Starlink-Status-Graph.js`: It looks like a package is loaded via CDN. It would be better if the package were installed locally via npm.
+1. Recommendation: Found `https://cdn.jsdelivr.net` in file `MMM-Local-Starlink-Status-Graph.js`: Prefer bundling dependencies via npm instead of CDN references.
 2. Typo: Found `MagicMirror2` in file `README.md`: Replace it with `MagicMirror²`.
-3. Recommendation: Found `npm run` in file `README.md`: Replace it with `node --run`. This is a more modern way to run scripts, without the need for npm.
+3. Recommendation: Found `npm run` in file `README.md`: Prefer `node --run` over invoking npm run directly.
 4. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
 5. Recommendation: There is no dependabot configuration file. It is recommended to add one ([example dependabot file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/.github/dependabot.yaml)).
 
 ### [MMM-LocalEvents by dwoolridge](https://github.com/dwoolridge/MMM-LocalEvents)
 
-1. An error occurred while getting information from 'package.json': Error: Invalid version: "1.0"
+1. `package.json` issue: Invalid version: "1.0"
 2. Recommendation: Found `XMLHttpRequest` in file `eventprovider.js`: Replace it with built-in fetch ([documentation](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch); [example module with fetch implemented](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/node_helper.js)).
 3. Recommendation: Found `axios` in file `node_helper.js`: Replace it with built-in fetch ([documentation](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch); [example module with fetch implemented](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/node_helper.js)).
 4. Recommendation: The README seems not to have an update section (like `## Update`). Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Update-Instructions)).
@@ -6857,10 +6833,10 @@ Last update: 2025-10-01T23:26:54+02:00
 
 1. `package.json` issue: No repository field.
 2. There are no keywords in 'package.json'. We would use them as tags on the module list page.
-3. Recommendation: Found `jshint` in file `Gruntfile.js`: Replace "jshint" by "eslint".
+3. Recommendation: Found `jshint` in file `Gruntfile.js`: Suggest migrating from JSHint to ESLint.
 4. Typo: Found `Magic Mirror` in file `MMM-Looko2-aq.js`: Replace it with `MagicMirror²`.
 5. Recommendation: Found `XMLHttpRequest` in file `MMM-Looko2-aq.js`: Replace it with built-in fetch ([documentation](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch); [example module with fetch implemented](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/node_helper.js)).
-6. Deprecated: Found `"grunt"` in file `package.json`: Grunt is practically unmaintained. Move on to something better.
+6. Deprecated: Found `"grunt"` in file `package.json`: Grunt is effectively unmaintained. Move on to something modern.
 7. Outdated: Found `MichMich/MagicMirror` in file `README.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
 8. Recommendation: The README seems not to have an update section (like `## Update`). Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Update-Instructions)).
 9. Recommendation: The README seems not to have an install section (like `## Installation`). Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Installation-Instructions)).
@@ -6873,8 +6849,8 @@ Last update: 2025-10-01T23:26:54+02:00
 
 ### [MMM-Losung by Dobherrmann](https://github.com/Dobherrmann/MMM-Losung)
 
-1. There are no specific keywords in 'package.json'. We would use them as tags on the module list page. Add a few meaningful terms to the keywords in the package.json. Not just “magicmirror” or “module”.
-2. Deprecated: Found `getYear()` in file `MMM-Losung.js`: Replace `getYear()` by `getFullYear()`.
+1. There are no keywords in 'package.json'. We would use them as tags on the module list page.
+2. Deprecated: Found `getYear()` in file `MMM-Losung.js`: Replace `getYear()` with `getFullYear()`.
 3. Recommendation: Found `'node-fetch'` in file `node_helper.js`: Replace it with built-in fetch ([documentation](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch); [example module with fetch implemented](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/node_helper.js)).
 4. Recommendation: Found `"node-fetch"` in file `package.json`: Replace it with built-in fetch ([documentation](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch); [example module with fetch implemented](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/node_helper.js)).
 5. Outdated: Found `MichMich/MagicMirror` in file `package.json`: Replace it by `MagicMirrorOrg/MagicMirror`.
@@ -6896,7 +6872,7 @@ Last update: 2025-10-01T23:26:54+02:00
 5. Recommendation: The README seems not to have an install section (like `## Installation`). Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Installation-Instructions)).
 6. Recommendation: The README seems to have a modules array (Found `modules: [`). This is usually not necessary. Please remove it if it is not needed ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Config-Instructions)).
 7. Recommendation: The README seems to have a config example without a trailing comma. Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Config-Instructions)).
-8. Recommendation: Found `uses: actions/checkout@v2` in file `codeql-analysis.yml`: Replace it with v5.
+8. Recommendation: Found `uses: actions/checkout@v2` in file `codeql-analysis.yml`: Upgrade workflows to use actions/checkout@v5.
 9. Recommendation: Found `git checkout` in file `codeql-analysis.yml`: Replace it with `git switch`. It's not a drop-in replacement, so make sure to check the documentation.
 10. Recommendation: There is no CHANGELOG file. It is recommended to add one ([example CHANGELOG file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CHANGELOG.md)).
 11. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
@@ -6925,15 +6901,15 @@ Last update: 2025-10-01T23:26:54+02:00
 ### [MMM-Loxone by idoodler](https://github.com/idoodler/MMM-Loxone)
 
 1. There are no keywords in 'package.json'. We would use them as tags on the module list page.
-2. Recommendation: Found `jshint` in file `Gruntfile.js`: Replace "jshint" by "eslint".
+2. Recommendation: Found `jshint` in file `Gruntfile.js`: Suggest migrating from JSHint to ESLint.
 3. Deprecated: Found `"lockfileVersion": 1` in file `package-lock.json`: Run `npm update` to update to lockfileVersion 3.
-4. Deprecated: Found `"grunt"` in file `package.json`: Grunt is practically unmaintained. Move on to something better.
+4. Deprecated: Found `"grunt"` in file `package.json`: Grunt is effectively unmaintained. Move on to something modern.
 5. Outdated: Found `MichMich/MagicMirror` in file `README.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
 6. Recommendation: The README seems to have a modules array (Found `modules: [`). This is usually not necessary. Please remove it if it is not needed ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Config-Instructions)).
 7. Recommendation: The README seems to have a config example without a trailing comma. Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Config-Instructions)).
 8. Recommendation: Found local copy of `jquery.min.js`. Instead of a local copy, it would be better to add jQuery to the dependencies in `package.json`.
 9. Outdated: Local jQuery file `jquery.min.js` seems to be outdated. jQuery v3.7 or higher is recommended.
-10. Recommendation: Found `jshint` in file `q.js`: Replace "jshint" by "eslint".
+10. Recommendation: Found `jshint` in file `q.js`: Suggest migrating from JSHint to ESLint.
 11. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
 12. Recommendation: There is no dependabot configuration file. It is recommended to add one ([example dependabot file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/.github/dependabot.yaml)).
 13. Recommendation: Replace eslintrc by new flat config.
@@ -6953,7 +6929,7 @@ Last update: 2025-10-01T23:26:54+02:00
 
 ### [MMM-LunarDate by MMRIZE](https://github.com/MMRIZE/MMM-LunarDate)
 
-1. Deprecated: Found `getYear()` in file `node_helper.js`: Replace `getYear()` by `getFullYear()`.
+1. Deprecated: Found `getYear()` in file `node_helper.js`: Replace `getYear()` with `getFullYear()`.
 2. Typo: Found `[MagicMirror]` in file `README.md`: Replace it with `[MagicMirror²]`.
 3. Recommendation: There is no CHANGELOG file. It is recommended to add one ([example CHANGELOG file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CHANGELOG.md)).
 4. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
@@ -6995,12 +6971,12 @@ Last update: 2025-10-01T23:26:54+02:00
 ### [MMM-MacAddressScan by doctorfree](https://github.com/doctorfree/MMM-MacAddressScan)
 
 1. Outdated: Found `MichMich/MagicMirror` in file `.travis.yml`: Replace it by `MagicMirrorOrg/MagicMirror`.
-2. Recommendation: Found `jshint` in file `gruntfile.js`: Replace "jshint" by "eslint".
+2. Recommendation: Found `jshint` in file `gruntfile.js`: Suggest migrating from JSHint to ESLint.
 3. Typo: Found `Magic Mirror` in file `MMM-MacAddressScan.js`: Replace it with `MagicMirror²`.
 4. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
-5. Recommendation: Found `jshint` in file `node_helper.js`: Replace "jshint" by "eslint".
-6. Recommendation: Found `jshint` in file `package.json`: Replace "jshint" by "eslint".
-7. Deprecated: Found `"grunt"` in file `package.json`: Grunt is practically unmaintained. Move on to something better.
+5. Recommendation: Found `jshint` in file `node_helper.js`: Suggest migrating from JSHint to ESLint.
+6. Recommendation: Found `jshint` in file `package.json`: Suggest migrating from JSHint to ESLint.
+7. Deprecated: Found `"grunt"` in file `package.json`: Grunt is effectively unmaintained. Move on to something modern.
 8. Recommendation: The README seems to have incorrect clone instructions. Please check the URL.
 9. Recommendation: There is no CHANGELOG file. It is recommended to add one ([example CHANGELOG file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CHANGELOG.md)).
 10. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
@@ -7009,11 +6985,11 @@ Last update: 2025-10-01T23:26:54+02:00
 
 ### [MMM-MagicDraw by ivlovric](https://github.com/ivlovric/MMM-MagicDraw)
 
-1. Recommendation: Found `npm run` in file `package.json`: Replace it with `node --run`. This is a more modern way to run scripts, without the need for npm.
-2. Recommendation: Found `eslint .` in file `package.json`: The period at the end of the command is not necessary since v9. It is recommended to remove it.
+1. Recommendation: Found `npm run` in file `package.json`: Prefer `node --run` over invoking npm run directly.
+2. Recommendation: Found `eslint .` in file `package.json`: Drop the trailing '.' when invoking ESLint v9 or newer.
 3. Typo: Found `Magic Mirror` in file `README.md`: Replace it with `MagicMirror²`.
 4. Typo: Found `MagicMirror2` in file `README.md`: Replace it with `MagicMirror²`.
-5. Recommendation: Found `npm run` in file `README.md`: Replace it with `node --run`. This is a more modern way to run scripts, without the need for npm.
+5. Recommendation: Found `npm run` in file `README.md`: Prefer `node --run` over invoking npm run directly.
 6. Outdated: Found `MichMich/MagicMirror` in file `README.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
 7. Recommendation: The README seems not to have a config example. Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Config-Instructions)).
 8. Recommendation: There is no CHANGELOG file. It is recommended to add one ([example CHANGELOG file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CHANGELOG.md)).
@@ -7042,9 +7018,9 @@ Last update: 2025-10-01T23:26:54+02:00
 
 ### [MMM-MagicMover by Lavve](https://github.com/Lavve/MMM-MagicMover)
 
-1. Recommendation: Found `npm run` in file `package.json`: Replace it with `node --run`. This is a more modern way to run scripts, without the need for npm.
-2. Recommendation: Found `eslint .` in file `package.json`: The period at the end of the command is not necessary since v9. It is recommended to remove it.
-3. Recommendation: Found `npm run` in file `README.md`: Replace it with `node --run`. This is a more modern way to run scripts, without the need for npm.
+1. Recommendation: Found `npm run` in file `package.json`: Prefer `node --run` over invoking npm run directly.
+2. Recommendation: Found `eslint .` in file `package.json`: Drop the trailing '.' when invoking ESLint v9 or newer.
+3. Recommendation: Found `npm run` in file `README.md`: Prefer `node --run` over invoking npm run directly.
 4. Recommendation: The README seems not to have an update section (like `## Update`). Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Update-Instructions)).
 5. Recommendation: There is no CHANGELOG file. It is recommended to add one ([example CHANGELOG file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CHANGELOG.md)).
 6. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
@@ -7053,10 +7029,10 @@ Last update: 2025-10-01T23:26:54+02:00
 
 ### [MMM-MagicReplicator by ivlovric](https://github.com/ivlovric/MMM-MagicReplicator)
 
-1. Recommendation: Found `jshint` in file `Gruntfile.js`: Replace "jshint" by "eslint".
+1. Recommendation: Found `jshint` in file `Gruntfile.js`: Suggest migrating from JSHint to ESLint.
 2. Typo: Found `Magic Mirror` in file `MMM-MagicReplicator.js`: Replace it with `MagicMirror²`.
 3. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
-4. Deprecated: Found `"grunt"` in file `package.json`: Grunt is practically unmaintained. Move on to something better.
+4. Deprecated: Found `"grunt"` in file `package.json`: Grunt is effectively unmaintained. Move on to something modern.
 5. Typo: Found `MagicMirror2` in file `README.md`: Replace it with `MagicMirror²`.
 6. Recommendation: The README seems to have a modules array (Found `modules: [`). This is usually not necessary. Please remove it if it is not needed ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Config-Instructions)).
 7. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
@@ -7070,7 +7046,7 @@ Last update: 2025-10-01T23:26:54+02:00
 3. Issue: The license in the package.json (ISC) doesn't match the license file (MIT).
 4. No image found.
 5. Deprecated: Found `require('request')` in file `node_helper.js`: Replace it with built-in fetch ([documentation](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch); [example module with fetch implemented](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/node_helper.js)).
-6. Recommendation: Found `https://cdn.jsdelivr.net` in file `node_helper.js`: It looks like a package is loaded via CDN. It would be better if the package were installed locally via npm.
+6. Recommendation: Found `https://cdn.jsdelivr.net` in file `node_helper.js`: Prefer bundling dependencies via npm instead of CDN references.
 7. Outdated: Found `MichMich/MagicMirror` in file `package.json`: Replace it by `MagicMirrorOrg/MagicMirror`.
 8. Outdated: Found `MichMich/MagicMirror` in file `README.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
 9. Recommendation: The README seems not to have an update section (like `## Update`). Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Update-Instructions)).
@@ -7125,7 +7101,7 @@ Last update: 2025-10-01T23:26:54+02:00
 
 1. `package.json` issue: No description
 2. `package.json` issue: No repository field.
-3. There are no specific keywords in 'package.json'. We would use them as tags on the module list page. Add a few meaningful terms to the keywords in the package.json. Not just “magicmirror” or “module”.
+3. There are no keywords in 'package.json'. We would use them as tags on the module list page.
 4. Issue: The license in the package.json (ISC) doesn't match the license file (MIT).
 5. No image found.
 6. Recommendation: Found `axios` in file `axios.min.js`: Replace it with built-in fetch ([documentation](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch); [example module with fetch implemented](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/node_helper.js)).
@@ -7174,7 +7150,7 @@ Last update: 2025-10-01T23:26:54+02:00
 2. There are no keywords in 'package.json'. We would use them as tags on the module list page.
 3. Typo: Found `Magic Mirror` in file `MMM-Mattermost.js`: Replace it with `MagicMirror²`.
 4. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
-5. Deprecated: Found `"grunt"` in file `package.json`: Grunt is practically unmaintained. Move on to something better.
+5. Deprecated: Found `"grunt"` in file `package.json`: Grunt is effectively unmaintained. Move on to something modern.
 6. Typo: Found `[MagicMirror]` in file `README.md`: Replace it with `[MagicMirror²]`.
 7. Outdated: Found `MichMich/MagicMirror` in file `README.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
 8. Recommendation: The README seems not to have an update section (like `## Update`). Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Update-Instructions)).
@@ -7213,31 +7189,31 @@ Last update: 2025-10-01T23:26:54+02:00
 
 1. There is no `package.json`. We need this file to gather information about the module for the module list page.
 2. Recommendation: Found `XMLHttpRequest` in file `MMM-MD.js`: Replace it with built-in fetch ([documentation](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch); [example module with fetch implemented](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/node_helper.js)).
-3. Recommendation: Found `https://cdnjs.cloudflare.com` in file `MMM-MD.js`: It looks like a package is loaded via CDN. It would be better if the package were installed locally via npm.
-4. Recommendation: Found `jshint` in file `bower.json`: Replace "jshint" by "eslint".
+3. Recommendation: Found `https://cdnjs.cloudflare.com` in file `MMM-MD.js`: Prefer bundling dependencies via npm instead of CDN references.
+4. Recommendation: Found `jshint` in file `bower.json`: Suggest migrating from JSHint to ESLint.
 5. Recommendation: Found `git checkout` in file `CONTRIBUTING.md`: Replace it with `git switch`. It's not a drop-in replacement, so make sure to check the documentation.
 6. Deprecated: Found `"lockfileVersion": 1` in file `package-lock.json`: Run `npm update` to update to lockfileVersion 3.
-7. Recommendation: Found `jshint` in file `package.json`: Replace "jshint" by "eslint".
-8. Deprecated: Found `"grunt"` in file `package.json`: Grunt is practically unmaintained. Move on to something better.
-9. Recommendation: Found `https://cdnjs.cloudflare.com` in file `README.md`: It looks like a package is loaded via CDN. It would be better if the package were installed locally via npm.
+7. Recommendation: Found `jshint` in file `package.json`: Suggest migrating from JSHint to ESLint.
+8. Deprecated: Found `"grunt"` in file `package.json`: Grunt is effectively unmaintained. Move on to something modern.
+9. Recommendation: Found `https://cdnjs.cloudflare.com` in file `README.md`: Prefer bundling dependencies via npm instead of CDN references.
 10. Recommendation: Found `git checkout` in file `README.md`: Replace it with `git switch`. It's not a drop-in replacement, so make sure to check the documentation.
-11. Recommendation: Found `jshint` in file `helpers.js`: Replace "jshint" by "eslint".
-12. Recommendation: Found `jshint` in file `showdown.js`: Replace "jshint" by "eslint".
-13. Recommendation: Found `jshint` in file `showdown.js.map`: Replace "jshint" by "eslint".
+11. Recommendation: Found `jshint` in file `helpers.js`: Suggest migrating from JSHint to ESLint.
+12. Recommendation: Found `jshint` in file `showdown.js`: Suggest migrating from JSHint to ESLint.
+13. Recommendation: Found `jshint` in file `showdown.js.map`: Suggest migrating from JSHint to ESLint.
 14. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
 15. Recommendation: There is no dependabot configuration file. It is recommended to add one ([example dependabot file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/.github/dependabot.yaml)).
 16. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/eslint.md)).
 
 ### [MMM-MealieMenu by zanix](https://github.com/zanix/MMM-MealieMenu)
 
-1. Recommendation: Found `npm run` in file `package.json`: Replace it with `node --run`. This is a more modern way to run scripts, without the need for npm.
-2. Recommendation: Found `npm run` in file `CONTRIBUTING.md`: Replace it with `node --run`. This is a more modern way to run scripts, without the need for npm.
-3. Recommendation: Found `npm run` in file `PULL_REQUEST_TEMPLATE.md`: Replace it with `node --run`. This is a more modern way to run scripts, without the need for npm.
-4. Recommendation: Found `uses: actions/setup-node@v4` in file `automated-tests.yaml`: Replace it with v5.
-5. Recommendation: Found `npm run` in file `automated-tests.yaml`: Replace it with `node --run`. This is a more modern way to run scripts, without the need for npm.
-6. Recommendation: Found `uses: actions/setup-node@v4` in file `release.yaml`: Replace it with v5.
-7. Recommendation: Found `npm run` in file `release.yaml`: Replace it with `node --run`. This is a more modern way to run scripts, without the need for npm.
-8. Recommendation: Found `npm run` in file `bug_report.md`: Replace it with `node --run`. This is a more modern way to run scripts, without the need for npm.
+1. Recommendation: Found `npm run` in file `package.json`: Prefer `node --run` over invoking npm run directly.
+2. Recommendation: Found `npm run` in file `CONTRIBUTING.md`: Prefer `node --run` over invoking npm run directly.
+3. Recommendation: Found `npm run` in file `PULL_REQUEST_TEMPLATE.md`: Prefer `node --run` over invoking npm run directly.
+4. Recommendation: Found `uses: actions/setup-node@v4` in file `automated-tests.yaml`: Upgrade workflows to use actions/setup-node@v5.
+5. Recommendation: Found `npm run` in file `automated-tests.yaml`: Prefer `node --run` over invoking npm run directly.
+6. Recommendation: Found `uses: actions/setup-node@v4` in file `release.yaml`: Upgrade workflows to use actions/setup-node@v5.
+7. Recommendation: Found `npm run` in file `release.yaml`: Prefer `node --run` over invoking npm run directly.
+8. Recommendation: Found `npm run` in file `bug_report.md`: Prefer `node --run` over invoking npm run directly.
 9. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
 10. Recommendation: The ESLint configuration file `eslint.config.mjs` does not contain `defineConfig`. It is recommended to use it.
 
@@ -7388,14 +7364,14 @@ Last update: 2025-10-01T23:26:54+02:00
 ### [MMM-MicrosoftToDo by thobach](https://github.com/thobach/MMM-MicrosoftToDo)
 
 1. Deprecated: Found `"lockfileVersion": 2` in file `package-lock.json`: Run `npm update` to update to lockfileVersion 3.
-2. Recommendation: Found `npm run` in file `package.json`: Replace it with `node --run`. This is a more modern way to run scripts, without the need for npm.
+2. Recommendation: Found `npm run` in file `package.json`: Prefer `node --run` over invoking npm run directly.
 3. Outdated: Found `MichMich/MagicMirror` in file `package.json`: Replace it by `MagicMirrorOrg/MagicMirror`.
 4. Typo: Found `Magic Mirror` in file `README.MD`: Replace it with `MagicMirror²`.
 5. Typo: Found `[MagicMirror]` in file `README.MD`: Replace it with `[MagicMirror²]`.
 6. Outdated: Found `MichMich/MagicMirror` in file `README.MD`: Replace it by `MagicMirrorOrg/MagicMirror`.
-7. Recommendation: Found `uses: actions/checkout@v3` in file `codeql.yml`: Replace it with v5.
-8. Recommendation: Found `uses: actions/checkout@v2` in file `node.js.yml`: Replace it with v5.
-9. Recommendation: Found `npm run` in file `node.js.yml`: Replace it with `node --run`. This is a more modern way to run scripts, without the need for npm.
+7. Recommendation: Found `uses: actions/checkout@v3` in file `codeql.yml`: Upgrade workflows to use actions/checkout@v5.
+8. Recommendation: Found `uses: actions/checkout@v2` in file `node.js.yml`: Upgrade workflows to use actions/checkout@v5.
+9. Recommendation: Found `npm run` in file `node.js.yml`: Prefer `node --run` over invoking npm run directly.
 10. Outdated: Found `MichMich/MagicMirror` in file `node.js.yml`: Replace it by `MagicMirrorOrg/MagicMirror`.
 11. Recommendation: There is no CHANGELOG file. It is recommended to add one ([example CHANGELOG file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CHANGELOG.md)).
 12. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
@@ -7416,13 +7392,13 @@ Last update: 2025-10-01T23:26:54+02:00
 
 ### [MMM-MinecraftStatus by ralberth](https://github.com/ralberth/MMM-MinecraftStatus)
 
-1. Recommendation: Found `jshint` in file `Gruntfile.js`: Replace "jshint" by "eslint".
+1. Recommendation: Found `jshint` in file `Gruntfile.js`: Suggest migrating from JSHint to ESLint.
 2. Typo: Found `Magic Mirror` in file `MMM-MinecraftStatus.js`: Replace it with `MagicMirror²`.
 3. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
-4. Recommendation: Found `jshint` in file `node_helper.js`: Replace "jshint" by "eslint".
+4. Recommendation: Found `jshint` in file `node_helper.js`: Suggest migrating from JSHint to ESLint.
 5. Deprecated: Found `"lockfileVersion": 1` in file `package-lock.json`: Run `npm update` to update to lockfileVersion 3.
-6. Deprecated: Found `"electron-rebuild"` in file `package.json`: Replace it with `@electron/rebuild`
-7. Deprecated: Found `"grunt"` in file `package.json`: Grunt is practically unmaintained. Move on to something better.
+6. Deprecated: Found `"electron-rebuild"` in file `package.json`: Use `@electron/rebuild` instead.
+7. Deprecated: Found `"grunt"` in file `package.json`: Grunt is effectively unmaintained. Move on to something modern.
 8. Recommendation: The README seems not to have an update section (like `## Update`). Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Update-Instructions)).
 9. Recommendation: The README seems to have a modules array (Found `modules: [`). This is usually not necessary. Please remove it if it is not needed ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Config-Instructions)).
 10. Recommendation: The README seems to have a config example without a trailing comma. Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Config-Instructions)).
@@ -7445,7 +7421,7 @@ Last update: 2025-10-01T23:26:54+02:00
 1. There are duplicates in the keywords in your package.json: Alexa
 2. No image found.
 3. Typo: Found `Magic Mirror` in file `MMM-MirrorMirrorOnTheWall.js`: Replace it with `MagicMirror²`.
-4. Recommendation: Found `https://cdnjs.cloudflare.com` in file `MMM-MirrorMirrorOnTheWall.js`: It looks like a package is loaded via CDN. It would be better if the package were installed locally via npm.
+4. Recommendation: Found `https://cdnjs.cloudflare.com` in file `MMM-MirrorMirrorOnTheWall.js`: Prefer bundling dependencies via npm instead of CDN references.
 5. Typo: Found `Magic Mirror` in file `package.json`: Replace it with `MagicMirror²`.
 6. Typo: Found `Magic Mirror` in file `README.md`: Replace it with `MagicMirror²`.
 7. Typo: Found `[MagicMirror]` in file `README.md`: Replace it with `[MagicMirror²]`.
@@ -7527,7 +7503,7 @@ Last update: 2025-10-01T23:26:54+02:00
 4. Recommendation: The README seems not to have an update section (like `## Update`). Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Update-Instructions)).
 5. Recommendation: The README seems not to have a config example. Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Config-Instructions)).
 6. Recommendation: The README seems not to have clone instructions.
-7. Recommendation: Found `uses: actions/checkout@v2` in file `main.yml`: Replace it with v5.
+7. Recommendation: Found `uses: actions/checkout@v2` in file `main.yml`: Upgrade workflows to use actions/checkout@v5.
 8. Recommendation: There is no CHANGELOG file. It is recommended to add one ([example CHANGELOG file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CHANGELOG.md)).
 9. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
 10. Recommendation: There is no dependabot configuration file. It is recommended to add one ([example dependabot file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/.github/dependabot.yaml)).
@@ -7539,7 +7515,7 @@ Last update: 2025-10-01T23:26:54+02:00
 2. Issues are not enabled in the GitHub repository. So users cannot report bugs. Please enable issues in your repo.
 3. Recommendation: Module name doesn't follow the recommended pattern (it doesn't start with `MMM-`). Consider renaming your module.
 4. Typo: Found `Magic Mirror` in file `mm-tkl-timetable.js`: Replace it with `MagicMirror²`.
-5. Recommendation: Found `require('https')` in file `node_helper.js`: Replace 'https' by 'node:https'.
+5. Recommendation: Found `require('https')` in file `node_helper.js`: Replace `https` with the scoped import `node:https`.
 6. Typo: Found `[MagicMirror]` in file `README.md`: Replace it with `[MagicMirror²]`.
 7. Recommendation: The README seems not to have an update section (like `## Update`). Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Update-Instructions)).
 8. Recommendation: The README seems not to have an install section (like `## Installation`). Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Installation-Instructions)).
@@ -7580,14 +7556,14 @@ Last update: 2025-10-01T23:26:54+02:00
 7. Deprecated: Found `"lockfileVersion": 2` in file `package-lock.json`: Run `npm update` to update to lockfileVersion 3.
 8. Typo: Found `Magic Mirror` in file `package.json`: Replace it with `MagicMirror²`.
 9. Recommendation: Found `axios` in file `package.json`: Replace it with built-in fetch ([documentation](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch); [example module with fetch implemented](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/node_helper.js)).
-10. Recommendation: Found `eslint .` in file `package.json`: The period at the end of the command is not necessary since v9. It is recommended to remove it.
-11. Outdated: Found `husky install` in file `package.json`: Since husky v9 you may not need this anymore.
+10. Recommendation: Found `eslint .` in file `package.json`: Drop the trailing '.' when invoking ESLint v9 or newer.
+11. Outdated: Found `husky install` in file `package.json`: Husky v9 no longer needs manual install scripts.
 12. Typo: Found `Magic Mirror` in file `README.md`: Replace it with `MagicMirror²`.
-13. Recommendation: Found `npm run` in file `README.md`: Replace it with `node --run`. This is a more modern way to run scripts, without the need for npm.
+13. Recommendation: Found `npm run` in file `README.md`: Prefer `node --run` over invoking npm run directly.
 14. Recommendation: The README seems not to have an update section (like `## Update`). Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Update-Instructions)).
 15. Recommendation: The README seems to have a modules array (Found `modules: [`). This is usually not necessary. Please remove it if it is not needed ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Config-Instructions)).
-16. Recommendation: Found `npm run` in file `run-docker.sh`: Replace it with `node --run`. This is a more modern way to run scripts, without the need for npm.
-17. Outdated: Found `/_/husky.sh` in file `pre-commit`: Since husky v9 you may not need this anymore.
+16. Recommendation: Found `npm run` in file `run-docker.sh`: Prefer `node --run` over invoking npm run directly.
+17. Outdated: Found `/_/husky.sh` in file `pre-commit`: Modern Husky setups do not require sourcing husky.sh.
 18. Warning: No LICENSE file ([example LICENSE file](https://github.com/KristjanESPERANTO/MMM-WebSpeechTTS/blob/main/LICENSE.md)).
 19. Recommendation: There is no CHANGELOG file. It is recommended to add one ([example CHANGELOG file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CHANGELOG.md)).
 20. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
@@ -7598,17 +7574,17 @@ Last update: 2025-10-01T23:26:54+02:00
 
 1. Repository name and main js file name is not the same.
 2. Recommendation: Module name doesn't follow the recommended pattern (it doesn't start with `MMM-`). Consider renaming your module.
-3. Recommendation: Found `npm run` in file `CONTRIBUTING`: Replace it with `node --run`. This is a more modern way to run scripts, without the need for npm.
+3. Recommendation: Found `npm run` in file `CONTRIBUTING`: Prefer `node --run` over invoking npm run directly.
 4. Typo: Found `Magic Mirror` in file `MMM-CTA.js`: Replace it with `MagicMirror²`.
 5. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
 6. Typo: Found `Magic Mirror` in file `package.json`: Replace it with `MagicMirror²`.
-7. Recommendation: Found `eslint .` in file `package.json`: The period at the end of the command is not necessary since v9. It is recommended to remove it.
-8. Recommendation: Found `npm run` in file `README.md`: Replace it with `node --run`. This is a more modern way to run scripts, without the need for npm.
+7. Recommendation: Found `eslint .` in file `package.json`: Drop the trailing '.' when invoking ESLint v9 or newer.
+8. Recommendation: Found `npm run` in file `README.md`: Prefer `node --run` over invoking npm run directly.
 9. Outdated: Found `MichMich/MagicMirror` in file `README.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
 10. Recommendation: The README seems not to have an update section (like `## Update`). Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Update-Instructions)).
 11. Recommendation: The README seems to have a modules array (Found `modules: [`). This is usually not necessary. Please remove it if it is not needed ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Config-Instructions)).
 12. Recommendation: The README seems to have incorrect clone instructions. Please check the URL.
-13. Recommendation: Found `npm run` in file `qc-check.yml`: Replace it with `node --run`. This is a more modern way to run scripts, without the need for npm.
+13. Recommendation: Found `npm run` in file `qc-check.yml`: Prefer `node --run` over invoking npm run directly.
 14. Recommendation: There is no CHANGELOG file. It is recommended to add one ([example CHANGELOG file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CHANGELOG.md)).
 15. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
 16. Recommendation: The ESLint configuration file `eslint.config.mjs` does not contain `defineConfig`. It is recommended to use it.
@@ -7652,7 +7628,7 @@ Last update: 2025-10-01T23:26:54+02:00
 2. Recommendation: Module name doesn't follow the recommended pattern (it doesn't start with `MMM-`). Consider renaming your module.
 3. Deprecated: Found `"lockfileVersion": 1` in file `package-lock.json`: Run `npm update` to update to lockfileVersion 3.
 4. Typo: Found `Magic Mirror` in file `package.json`: Replace it with `MagicMirror²`.
-5. Deprecated: Found `"electron-rebuild"` in file `package.json`: Replace it with `@electron/rebuild`
+5. Deprecated: Found `"electron-rebuild"` in file `package.json`: Use `@electron/rebuild` instead.
 6. Recommendation: The README seems not to have an update section (like `## Update`). Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Update-Instructions)).
 7. Recommendation: The README seems to have a config example without a trailing comma. Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Config-Instructions)).
 8. Recommendation: There is no CHANGELOG file. It is recommended to add one ([example CHANGELOG file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CHANGELOG.md)).
@@ -7710,7 +7686,7 @@ Last update: 2025-10-01T23:26:54+02:00
 ### [mmm-nordic-electrical-spot-prices by cSharpBastard](https://github.com/cSharpBastard/mmm-nordic-electrical-spot-prices)
 
 1. Recommendation: Module name doesn't follow the recommended pattern (it doesn't start with `MMM-`). Consider renaming your module.
-2. Recommendation: Found `jshint` in file `canvasjs.min.js`: Replace "jshint" by "eslint".
+2. Recommendation: Found `jshint` in file `canvasjs.min.js`: Suggest migrating from JSHint to ESLint.
 3. Deprecated: Found `require('request')` in file `node_helper.js`: Replace it with built-in fetch ([documentation](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch); [example module with fetch implemented](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/node_helper.js)).
 4. Deprecated: Found `"lockfileVersion": 2` in file `package-lock.json`: Run `npm update` to update to lockfileVersion 3.
 5. Typo: Found `Magic Mirror` in file `package.json`: Replace it with `MagicMirror²`.
@@ -7748,7 +7724,7 @@ Last update: 2025-10-01T23:26:54+02:00
 5. Typo: Found `Magic Mirror` in file `MMM-Pins.js`: Replace it with `MagicMirror²`.
 6. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
 7. Deprecated: Found `"lockfileVersion": 1` in file `package-lock.json`: Run `npm update` to update to lockfileVersion 3.
-8. Deprecated: Found `"electron-rebuild"` in file `package.json`: Replace it with `@electron/rebuild`
+8. Deprecated: Found `"electron-rebuild"` in file `package.json`: Use `@electron/rebuild` instead.
 9. Typo: Found `[MagicMirror]` in file `README.md`: Replace it with `[MagicMirror²]`.
 10. Outdated: Found `MichMich/MagicMirror` in file `README.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
 11. Recommendation: The README seems not to have an update section (like `## Update`). Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Update-Instructions)).
@@ -7763,7 +7739,7 @@ Last update: 2025-10-01T23:26:54+02:00
 
 1. `package.json` issue: No repository field.
 2. `package.json` issue: license should be a valid SPDX license expression
-3. There are no specific keywords in 'package.json'. We would use them as tags on the module list page. Add a few meaningful terms to the keywords in the package.json. Not just “magicmirror” or “module”.
+3. There are no keywords in 'package.json'. We would use them as tags on the module list page.
 4. No compatible or wrong license field in 'package.json' or LICENSE file. Without that, we can't use an image.
 5. Repository name and main js file name is not the same.
 6. Recommendation: Module name doesn't follow the recommended pattern (it doesn't start with `MMM-`). Consider renaming your module.
@@ -7784,7 +7760,7 @@ Last update: 2025-10-01T23:26:54+02:00
 6. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
 7. Deprecated: Found `require('request')` in file `node_helper.js`: Replace it with built-in fetch ([documentation](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch); [example module with fetch implemented](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/node_helper.js)).
 8. Deprecated: Found `"lockfileVersion": 1` in file `package-lock.json`: Run `npm update` to update to lockfileVersion 3.
-9. Recommendation: Found `npm run` in file `package.json`: Replace it with `node --run`. This is a more modern way to run scripts, without the need for npm.
+9. Recommendation: Found `npm run` in file `package.json`: Prefer `node --run` over invoking npm run directly.
 10. Typo: Found `Magic Mirror` in file `README.md`: Replace it with `MagicMirror²`.
 11. Outdated: Found `MichMich/MagicMirror` in file `README.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
 12. Recommendation: The README seems not to have an update section (like `## Update`). Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Update-Instructions)).
@@ -7838,21 +7814,20 @@ Last update: 2025-10-01T23:26:54+02:00
 ### [mmm-uvindex by rsperezn](https://bitbucket.org/rsperezn/mmm-uvindex)
 
 1. There is no `package.json`. We need this file to gather information about the module for the module list page.
-2. Issues are not enabled in the GitHub repository. So users cannot report bugs. Please enable issues in your repo.
-3. Repository name and main js file name is not the same.
-4. Recommendation: Module name doesn't follow the recommended pattern (it doesn't start with `MMM-`). Consider renaming your module.
-5. Typo: Found `Magic Mirror` in file `MMM-UVIndex.js`: Replace it with `MagicMirror²`.
-6. Recommendation: Found `XMLHttpRequest` in file `MMM-UVIndex.js`: Replace it with built-in fetch ([documentation](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch); [example module with fetch implemented](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/node_helper.js)).
-7. Recommendation: The README seems not to have an update section (like `## Update`). Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Update-Instructions)).
-8. Recommendation: The README seems not to have an install section (like `## Installation`). Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Installation-Instructions)).
-9. Recommendation: The README seems to have a modules array (Found `modules: [`). This is usually not necessary. Please remove it if it is not needed ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Config-Instructions)).
-10. Recommendation: The README seems to have a config example without a trailing comma. Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Config-Instructions)).
-11. Recommendation: The README seems to have incorrect clone instructions. Please check the URL.
-12. Warning: No LICENSE file ([example LICENSE file](https://github.com/KristjanESPERANTO/MMM-WebSpeechTTS/blob/main/LICENSE.md)).
-13. Recommendation: There is no CHANGELOG file. It is recommended to add one ([example CHANGELOG file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CHANGELOG.md)).
-14. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
-15. Recommendation: There is no dependabot configuration file. It is recommended to add one ([example dependabot file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/.github/dependabot.yaml)).
-16. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/eslint.md)).
+2. Repository name and main js file name is not the same.
+3. Recommendation: Module name doesn't follow the recommended pattern (it doesn't start with `MMM-`). Consider renaming your module.
+4. Typo: Found `Magic Mirror` in file `MMM-UVIndex.js`: Replace it with `MagicMirror²`.
+5. Recommendation: Found `XMLHttpRequest` in file `MMM-UVIndex.js`: Replace it with built-in fetch ([documentation](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch); [example module with fetch implemented](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/node_helper.js)).
+6. Recommendation: The README seems not to have an update section (like `## Update`). Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Update-Instructions)).
+7. Recommendation: The README seems not to have an install section (like `## Installation`). Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Installation-Instructions)).
+8. Recommendation: The README seems to have a modules array (Found `modules: [`). This is usually not necessary. Please remove it if it is not needed ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Config-Instructions)).
+9. Recommendation: The README seems to have a config example without a trailing comma. Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Config-Instructions)).
+10. Recommendation: The README seems to have incorrect clone instructions. Please check the URL.
+11. Warning: No LICENSE file ([example LICENSE file](https://github.com/KristjanESPERANTO/MMM-WebSpeechTTS/blob/main/LICENSE.md)).
+12. Recommendation: There is no CHANGELOG file. It is recommended to add one ([example CHANGELOG file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CHANGELOG.md)).
+13. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
+14. Recommendation: There is no dependabot configuration file. It is recommended to add one ([example dependabot file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/.github/dependabot.yaml)).
+15. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/eslint.md)).
 
 ### [mmm-weatherchart by paphko](https://github.com/paphko/mmm-weatherchart)
 
@@ -7860,7 +7835,7 @@ Last update: 2025-10-01T23:26:54+02:00
 2. Issue: The license in the package.json (ISC) doesn't match the license file (MIT).
 3. Recommendation: Module name doesn't follow the recommended pattern (it doesn't start with `MMM-`). Consider renaming your module.
 4. Deprecated: Found `require('request')` in file `node_helper.js`: Replace it with built-in fetch ([documentation](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch); [example module with fetch implemented](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/node_helper.js)).
-5. Recommendation: Found `require('https')` in file `node_helper.js`: Replace 'https' by 'node:https'.
+5. Recommendation: Found `require('https')` in file `node_helper.js`: Replace `https` with the scoped import `node:https`.
 6. Deprecated: Found `"lockfileVersion": 1` in file `package-lock.json`: Run `npm update` to update to lockfileVersion 3.
 7. Typo: Found `MagicMirror2` in file `package.json`: Replace it with `MagicMirror²`.
 8. Typo: Found `Magic Mirror` in file `README.md`: Replace it with `MagicMirror²`.
@@ -7895,9 +7870,9 @@ Last update: 2025-10-01T23:26:54+02:00
 3. Recommendation: The README seems not to have a config example. Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Config-Instructions)).
 4. Recommendation: The README seems not to have clone instructions.
 5. Recommendation: Found `axios` in file `bun.lockb`: Replace it with built-in fetch ([documentation](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch); [example module with fetch implemented](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/node_helper.js)).
-6. Recommendation: Found `uses: actions/checkout@v4` in file `workflow.yaml`: Replace it with v5.
-7. Recommendation: Found `uses: actions/setup-node@v4` in file `workflow.yaml`: Replace it with v5.
-8. Recommendation: Found `npm run` in file `workflow.yaml`: Replace it with `node --run`. This is a more modern way to run scripts, without the need for npm.
+6. Recommendation: Found `uses: actions/checkout@v4` in file `workflow.yaml`: Upgrade workflows to use actions/checkout@v5.
+7. Recommendation: Found `uses: actions/setup-node@v4` in file `workflow.yaml`: Upgrade workflows to use actions/setup-node@v5.
+8. Recommendation: Found `npm run` in file `workflow.yaml`: Prefer `node --run` over invoking npm run directly.
 9. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
 10. Recommendation: There is no dependabot configuration file. It is recommended to add one ([example dependabot file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/.github/dependabot.yaml)).
 11. Recommendation: Replace eslintrc by new flat config.
@@ -7916,7 +7891,7 @@ Last update: 2025-10-01T23:26:54+02:00
 ### [MMM-ModInstall by khassel](https://gitlab.com/khassel/MMM-ModInstall)
 
 1. There is no `package.json`. We need this file to gather information about the module for the module list page.
-2. Recommendation: Found `require('https')` in file `node_helper.js`: Replace 'https' by 'node:https'.
+2. Recommendation: Found `require('https')` in file `node_helper.js`: Replace `https` with the scoped import `node:https`.
 3. Recommendation: The README seems to have a modules array (Found `modules: [`). This is usually not necessary. Please remove it if it is not needed ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Config-Instructions)).
 4. Recommendation: There is no CHANGELOG file. It is recommended to add one ([example CHANGELOG file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CHANGELOG.md)).
 5. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
@@ -7968,11 +7943,11 @@ Last update: 2025-10-01T23:26:54+02:00
 
 1. Typo: Found `Magic Mirror` in file `MMM-ModuleScheduler.js`: Replace it with `MagicMirror²`.
 2. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
-3. Recommendation: Found `npm run` in file `package.json`: Replace it with `node --run`. This is a more modern way to run scripts, without the need for npm.
+3. Recommendation: Found `npm run` in file `package.json`: Prefer `node --run` over invoking npm run directly.
 4. Typo: Found `Magic Mirror` in file `README.md`: Replace it with `MagicMirror²`.
 5. Outdated: Found `MichMich/MagicMirror` in file `README.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
-6. Recommendation: Found `uses: actions/checkout@v2` in file `node.js.yml`: Replace it with v5.
-7. Recommendation: Found `npm run` in file `node.js.yml`: Replace it with `node --run`. This is a more modern way to run scripts, without the need for npm.
+6. Recommendation: Found `uses: actions/checkout@v2` in file `node.js.yml`: Upgrade workflows to use actions/checkout@v5.
+7. Recommendation: Found `npm run` in file `node.js.yml`: Prefer `node --run` over invoking npm run directly.
 8. Outdated: Found `MichMich/MagicMirror` in file `node.js.yml`: Replace it by `MagicMirrorOrg/MagicMirror`.
 9. Recommendation: There is no CHANGELOG file. It is recommended to add one ([example CHANGELOG file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CHANGELOG.md)).
 10. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
@@ -7994,17 +7969,17 @@ Last update: 2025-10-01T23:26:54+02:00
 ### [MMM-ModuleToggleButton by balassy](https://github.com/balassy/MMM-ModuleToggleButton)
 
 1. No image found.
-2. Recommendation: Found `npm run` in file `package.json`: Replace it with `node --run`. This is a more modern way to run scripts, without the need for npm.
-3. Deprecated: Found `eslint-config-airbnb` in file `package.json`: Replace it with modern ESLint configuration.
-4. Recommendation: Found `npm run` in file `README.md`: Replace it with `node --run`. This is a more modern way to run scripts, without the need for npm.
+2. Recommendation: Found `npm run` in file `package.json`: Prefer `node --run` over invoking npm run directly.
+3. Deprecated: Found `eslint-config-airbnb` in file `package.json`: Replace the preset with a maintained ESLint configuration.
+4. Recommendation: Found `npm run` in file `README.md`: Prefer `node --run` over invoking npm run directly.
 5. Outdated: Found `MichMich/MagicMirror` in file `README.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
 6. Recommendation: The README seems not to have an update section (like `## Update`). Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Update-Instructions)).
 7. Recommendation: The README seems not to have an install section (like `## Installation`). Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Installation-Instructions)).
 8. Recommendation: The README seems to have a modules array (Found `modules: [`). This is usually not necessary. Please remove it if it is not needed ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Config-Instructions)).
 9. Recommendation: The README seems to have a config example without a trailing comma. Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Config-Instructions)).
-10. Recommendation: Found `uses: actions/checkout@v4` in file `build.yml`: Replace it with v5.
-11. Recommendation: Found `uses: actions/setup-node@v4` in file `build.yml`: Replace it with v5.
-12. Recommendation: Found `npm run` in file `build.yml`: Replace it with `node --run`. This is a more modern way to run scripts, without the need for npm.
+10. Recommendation: Found `uses: actions/checkout@v4` in file `build.yml`: Upgrade workflows to use actions/checkout@v5.
+11. Recommendation: Found `uses: actions/setup-node@v4` in file `build.yml`: Upgrade workflows to use actions/setup-node@v5.
+12. Recommendation: Found `npm run` in file `build.yml`: Prefer `node --run` over invoking npm run directly.
 13. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
 14. Recommendation: There is no dependabot configuration file. It is recommended to add one ([example dependabot file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/.github/dependabot.yaml)).
 15. Recommendation: Replace eslintrc by new flat config.
@@ -8039,10 +8014,10 @@ Last update: 2025-10-01T23:26:54+02:00
 
 ### [MMM-moonraker by btastic](https://github.com/btastic/MMM-moonraker)
 
-1. Recommendation: Found `jshint` in file `Gruntfile.js`: Replace "jshint" by "eslint".
+1. Recommendation: Found `jshint` in file `Gruntfile.js`: Suggest migrating from JSHint to ESLint.
 2. Typo: Found `Magic Mirror` in file `MMM-moonraker.js`: Replace it with `MagicMirror²`.
 3. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
-4. Deprecated: Found `"grunt"` in file `package.json`: Grunt is practically unmaintained. Move on to something better.
+4. Deprecated: Found `"grunt"` in file `package.json`: Grunt is effectively unmaintained. Move on to something modern.
 5. Outdated: Found `MichMich/MagicMirror` in file `README.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
 6. Recommendation: The README seems not to have an update section (like `## Update`). Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Update-Instructions)).
 7. Recommendation: The README seems to have a modules array (Found `modules: [`). This is usually not necessary. Please remove it if it is not needed ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Config-Instructions)).
@@ -8079,9 +8054,9 @@ Last update: 2025-10-01T23:26:54+02:00
 1. `package.json` issue: No repository field.
 2. There are no keywords in 'package.json'. We would use them as tags on the module list page.
 3. No image found.
-4. Recommendation: Found `jshint` in file `Gruntfile.js`: Replace "jshint" by "eslint".
+4. Recommendation: Found `jshint` in file `Gruntfile.js`: Suggest migrating from JSHint to ESLint.
 5. Typo: Found `Magic Mirror` in file `MMM-Motion-Camera.js`: Replace it with `MagicMirror²`.
-6. Deprecated: Found `"grunt"` in file `package.json`: Grunt is practically unmaintained. Move on to something better.
+6. Deprecated: Found `"grunt"` in file `package.json`: Grunt is effectively unmaintained. Move on to something modern.
 7. Outdated: Found `MichMich/MagicMirror` in file `README.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
 8. Recommendation: The README seems not to have an update section (like `## Update`). Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Update-Instructions)).
 9. Recommendation: The README seems not to have an install section (like `## Installation`). Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Installation-Instructions)).
@@ -8138,13 +8113,13 @@ Last update: 2025-10-01T23:26:54+02:00
 
 ### [MMM-MovieInfo by fewieden](https://github.com/fewieden/MMM-MovieInfo)
 
-1. Recommendation: Found `npm run` in file `.travis.yml`: Replace it with `node --run`. This is a more modern way to run scripts, without the need for npm.
+1. Recommendation: Found `npm run` in file `.travis.yml`: Prefer `node --run` over invoking npm run directly.
 2. Typo: Found `Magic Mirror` in file `MMM-MovieInfo.js`: Replace it with `MagicMirror²`.
 3. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
 4. Deprecated: Found `require('request')` in file `node_helper.js`: Replace it with built-in fetch ([documentation](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch); [example module with fetch implemented](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/node_helper.js)).
 5. Typo: Found `MagicMirror2` in file `package.json`: Replace it with `MagicMirror²`.
-6. Recommendation: Found `eslint .` in file `package.json`: The period at the end of the command is not necessary since v9. It is recommended to remove it.
-7. Deprecated: Found `eslint-config-airbnb` in file `package.json`: Replace it with modern ESLint configuration.
+6. Recommendation: Found `eslint .` in file `package.json`: Drop the trailing '.' when invoking ESLint v9 or newer.
+7. Deprecated: Found `eslint-config-airbnb` in file `package.json`: Replace the preset with a maintained ESLint configuration.
 8. Outdated: Found `MichMich/MagicMirror` in file `README.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
 9. Recommendation: The README seems not to have an update section (like `## Update`). Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Update-Instructions)).
 10. Recommendation: The README seems to have a config example without a trailing comma. Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Config-Instructions)).
@@ -8207,7 +8182,7 @@ Last update: 2025-10-01T23:26:54+02:00
 1. No image found.
 2. Typo: Found `Magic Mirror` in file `MMM-MPR121.js`: Replace it with `MagicMirror²`.
 3. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
-4. Deprecated: Found `"electron-rebuild"` in file `package.json`: Replace it with `@electron/rebuild`
+4. Deprecated: Found `"electron-rebuild"` in file `package.json`: Use `@electron/rebuild` instead.
 5. Typo: Found `Magic Mirror` in file `README.md`: Replace it with `MagicMirror²`.
 6. Outdated: Found `MichMich/MagicMirror` in file `README.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
 7. Recommendation: The README seems not to have an update section (like `## Update`). Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Update-Instructions)).
@@ -8323,7 +8298,7 @@ Last update: 2025-10-01T23:26:54+02:00
 ### [MMM-MTA-BusAlerts by avianto](https://github.com/avianto/MMM-MTA-BusAlerts)
 
 1. Recommendation: Found `git checkout` in file `CONTRIBUTING.md`: Replace it with `git switch`. It's not a drop-in replacement, so make sure to check the documentation.
-2. Recommendation: Found `npm run` in file `package.json`: Replace it with `node --run`. This is a more modern way to run scripts, without the need for npm.
+2. Recommendation: Found `npm run` in file `package.json`: Prefer `node --run` over invoking npm run directly.
 3. Recommendation: There is no dependabot configuration file. It is recommended to add one ([example dependabot file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/.github/dependabot.yaml)).
 4. Information: There are updates for 4 dependencie(s):
    - @eslint/js                ^9.28.0  →  ^9.36.0
@@ -8336,11 +8311,11 @@ Last update: 2025-10-01T23:26:54+02:00
 1. `package.json` issue: No repository field.
 2. There are no keywords in 'package.json'. We would use them as tags on the module list page.
 3. No image found.
-4. Recommendation: Found `jshint` in file `Gruntfile.js`: Replace "jshint" by "eslint".
+4. Recommendation: Found `jshint` in file `Gruntfile.js`: Suggest migrating from JSHint to ESLint.
 5. Typo: Found `Magic Mirror` in file `MMM-MTA-NextBus.js`: Replace it with `MagicMirror²`.
 6. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
-7. Recommendation: Found `require('http')` in file `node_helper.js`: Replace 'http' by 'node:http'.
-8. Deprecated: Found `"grunt"` in file `package.json`: Grunt is practically unmaintained. Move on to something better.
+7. Recommendation: Found `require('http')` in file `node_helper.js`: Replace `http` with the scoped import `node:http`.
+8. Deprecated: Found `"grunt"` in file `package.json`: Grunt is effectively unmaintained. Move on to something modern.
 9. Outdated: Found `MichMich/MagicMirror` in file `README.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
 10. Recommendation: The README seems not to have an update section (like `## Update`). Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Update-Instructions)).
 11. Recommendation: The README seems to have a modules array (Found `modules: [`). This is usually not necessary. Please remove it if it is not needed ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Config-Instructions)).
@@ -8353,7 +8328,7 @@ Last update: 2025-10-01T23:26:54+02:00
 ### [MMM-MTA-SubwayAlerts by avianto](https://github.com/avianto/MMM-MTA-SubwayAlerts)
 
 1. Recommendation: Found `git checkout` in file `CONTRIBUTING.md`: Replace it with `git switch`. It's not a drop-in replacement, so make sure to check the documentation.
-2. Recommendation: Found `npm run` in file `package.json`: Replace it with `node --run`. This is a more modern way to run scripts, without the need for npm.
+2. Recommendation: Found `npm run` in file `package.json`: Prefer `node --run` over invoking npm run directly.
 3. Recommendation: There is no dependabot configuration file. It is recommended to add one ([example dependabot file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/.github/dependabot.yaml)).
 4. Information: There are updates for 4 dependencie(s):
    - @eslint/js                ^9.28.0  →  ^9.36.0
@@ -8395,7 +8370,7 @@ Last update: 2025-10-01T23:26:54+02:00
 ### [MMM-MusicButler by jrettsch](https://github.com/jrettsch/MMM-MusicButler)
 
 1. There is no `package.json`. We need this file to gather information about the module for the module list page.
-2. Recommendation: Found `require("fetch")` in file `MMM-MusicButlerFetcher.js`: Replace it with built-in fetch ([documentation](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch); [example module with fetch implemented](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/node_helper.js)).
+2. Recommendation: Found `require("fetch")` in file `MMM-MusicButlerFetcher.js`: Use the global fetch API instead of requiring a shim.
 3. Outdated: Found `MichMich/MagicMirror` in file `README.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
 4. Recommendation: The README seems not to have an update section (like `## Update`). Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Update-Instructions)).
 5. Recommendation: There is no CHANGELOG file. It is recommended to add one ([example CHANGELOG file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CHANGELOG.md)).
@@ -8418,13 +8393,13 @@ Last update: 2025-10-01T23:26:54+02:00
 ### [MMM-MVG by KoblerS](https://github.com/KoblerS/MMM-MVG)
 
 1. `package.json` issue: No description
-2. Recommendation: Found `jshint` in file `Gruntfile.js`: Replace "jshint" by "eslint".
+2. Recommendation: Found `jshint` in file `Gruntfile.js`: Suggest migrating from JSHint to ESLint.
 3. Typo: Found `Magic Mirror` in file `MMM-MVG.js`: Replace it with `MagicMirror²`.
 4. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
 5. Recommendation: Found `XMLHttpRequest` in file `node_helper.js`: Replace it with built-in fetch ([documentation](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch); [example module with fetch implemented](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/node_helper.js)).
 6. Recommendation: The README seems not to have an update section (like `## Update`). Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Update-Instructions)).
-7. Recommendation: Found `uses: actions/checkout@v4` in file `branch-push.yaml`: Replace it with v5.
-8. Recommendation: Found `uses: actions/checkout@v4` in file `release-published.yaml`: Replace it with v5.
+7. Recommendation: Found `uses: actions/checkout@v4` in file `branch-push.yaml`: Upgrade workflows to use actions/checkout@v5.
+8. Recommendation: Found `uses: actions/checkout@v4` in file `release-published.yaml`: Upgrade workflows to use actions/checkout@v5.
 9. Recommendation: There is no CHANGELOG file. It is recommended to add one ([example CHANGELOG file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CHANGELOG.md)).
 10. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
 11. Recommendation: There is no dependabot configuration file. It is recommended to add one ([example dependabot file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/.github/dependabot.yaml)).
@@ -8455,7 +8430,7 @@ Last update: 2025-10-01T23:26:54+02:00
 1. There is no `package.json`. We need this file to gather information about the module for the module list page.
 2. Issues are not enabled in the GitHub repository. So users cannot report bugs. Please enable issues in your repo.
 3. No image found.
-4. Recommendation: Found `require("https")` in file `calendarfetcher.js`: Replace "https" by "node:https".
+4. Recommendation: Found `require("https")` in file `calendarfetcher.js`: Replace `https` with the scoped import `node:https`.
 5. Recommendation: The README seems not to have an update section (like `## Update`). Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Update-Instructions)).
 6. Recommendation: The README seems to have a modules array (Found `modules: [`). This is usually not necessary. Please remove it if it is not needed ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Config-Instructions)).
 7. Deprecated: Found `require('request')` in file `node-ical.js`: Replace it with built-in fetch ([documentation](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch); [example module with fetch implemented](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/node_helper.js)).
@@ -8466,12 +8441,12 @@ Last update: 2025-10-01T23:26:54+02:00
 
 ### [MMM-MyCommute by qistoph](https://github.com/qistoph/MMM-MyCommute)
 
-1. Recommendation: Found `jshint` in file `Gruntfile.js`: Replace "jshint" by "eslint".
+1. Recommendation: Found `jshint` in file `Gruntfile.js`: Suggest migrating from JSHint to ESLint.
 2. Typo: Found `Magic Mirror` in file `MMM-MyCommute.js`: Replace it with `MagicMirror²`.
 3. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
 4. Deprecated: Found `require("request")` in file `node_helper.js`: Replace it with built-in fetch ([documentation](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch); [example module with fetch implemented](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/node_helper.js)).
 5. Deprecated: Found `"lockfileVersion": 1` in file `package-lock.json`: Run `npm update` to update to lockfileVersion 3.
-6. Deprecated: Found `"grunt"` in file `package.json`: Grunt is practically unmaintained. Move on to something better.
+6. Deprecated: Found `"grunt"` in file `package.json`: Grunt is effectively unmaintained. Move on to something modern.
 7. Typo: Found `MagicMirror2` in file `README.md`: Replace it with `MagicMirror²`.
 8. Typo: Found `[MagicMirror]` in file `README.md`: Replace it with `[MagicMirror²]`.
 9. Outdated: Found `MichMich/MagicMirror` in file `README.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
@@ -8532,7 +8507,7 @@ Last update: 2025-10-01T23:26:54+02:00
 3. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
 4. Deprecated: Found `"lockfileVersion": 1` in file `package-lock.json`: Run `npm update` to update to lockfileVersion 3.
 5. Typo: Found `MagicMirror2` in file `package.json`: Replace it with `MagicMirror²`.
-6. Deprecated: Found `"electron-rebuild"` in file `package.json`: Replace it with `@electron/rebuild`
+6. Deprecated: Found `"electron-rebuild"` in file `package.json`: Use `@electron/rebuild` instead.
 7. Typo: Found `Magic Mirror` in file `README.md`: Replace it with `MagicMirror²`.
 8. Recommendation: The README seems not to have an update section (like `## Update`). Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Update-Instructions)).
 9. Recommendation: The README seems not to have an install section (like `## Installation`). Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Installation-Instructions)).
@@ -8559,15 +8534,16 @@ Last update: 2025-10-01T23:26:54+02:00
 
 ### [MMM-MyPrayerTimes by htilburgs](https://github.com/htilburgs/MMM-MyPrayerTimes)
 
-1. An error occurred while getting information from 'package.json': Error: Invalid version: "1.1"
-2. Recommendation: There is no CHANGELOG file. It is recommended to add one ([example CHANGELOG file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CHANGELOG.md)).
-3. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
-4. Recommendation: There is no dependabot configuration file. It is recommended to add one ([example dependabot file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/.github/dependabot.yaml)).
-5. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/eslint.md)).
+1. `package.json` issue: Invalid version: "1.1"
+2. There are no keywords in 'package.json'. We would use them as tags on the module list page.
+3. Recommendation: There is no CHANGELOG file. It is recommended to add one ([example CHANGELOG file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CHANGELOG.md)).
+4. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
+5. Recommendation: There is no dependabot configuration file. It is recommended to add one ([example dependabot file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/.github/dependabot.yaml)).
+6. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/eslint.md)).
 
 ### [MMM-MyScoreboard by dathbe](https://github.com/dathbe/MMM-MyScoreboard)
 
-1. Recommendation: Found `uses: actions/setup-node@v4` in file `automated-tests.yaml`: Replace it with v5.
+1. Recommendation: Found `uses: actions/setup-node@v4` in file `automated-tests.yaml`: Upgrade workflows to use actions/setup-node@v5.
 
 ### [MMM-MySenseHat by framboise-pi](https://github.com/framboise-pi/MMM-MySenseHat)
 
@@ -8578,7 +8554,7 @@ Last update: 2025-10-01T23:26:54+02:00
 5. Deprecated: Found `require('request')` in file `node_helper.js`: Replace it with built-in fetch ([documentation](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch); [example module with fetch implemented](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/node_helper.js)).
 6. Deprecated: Found `"lockfileVersion": 1` in file `package-lock.json`: Run `npm update` to update to lockfileVersion 3.
 7. Typo: Found `MagicMirror2` in file `package.json`: Replace it with `MagicMirror²`.
-8. Deprecated: Found `"electron-rebuild"` in file `package.json`: Replace it with `@electron/rebuild`
+8. Deprecated: Found `"electron-rebuild"` in file `package.json`: Use `@electron/rebuild` instead.
 9. Typo: Found `Magic Mirror` in file `README.md`: Replace it with `MagicMirror²`.
 10. Recommendation: The README seems not to have an update section (like `## Update`). Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Update-Instructions)).
 11. Recommendation: The README seems not to have an install section (like `## Installation`). Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Installation-Instructions)).
@@ -8599,10 +8575,10 @@ Last update: 2025-10-01T23:26:54+02:00
 
 1. Typo: Found `Magic Mirror` in file `MMM-MysqlQuery.js`: Replace it with `MagicMirror²`.
 2. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
-3. Recommendation: Found `jshint` in file `node_helper.js`: Replace "jshint" by "eslint".
+3. Recommendation: Found `jshint` in file `node_helper.js`: Suggest migrating from JSHint to ESLint.
 4. Deprecated: Found `"lockfileVersion": 2` in file `package-lock.json`: Run `npm update` to update to lockfileVersion 3.
-5. Deprecated: Found `"electron-rebuild"` in file `package.json`: Replace it with `@electron/rebuild`
-6. Deprecated: Found `"grunt"` in file `package.json`: Grunt is practically unmaintained. Move on to something better.
+5. Deprecated: Found `"electron-rebuild"` in file `package.json`: Use `@electron/rebuild` instead.
+6. Deprecated: Found `"grunt"` in file `package.json`: Grunt is effectively unmaintained. Move on to something modern.
 7. Recommendation: The README seems not to have an update section (like `## Update`). Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Update-Instructions)).
 8. Recommendation: The README seems to have a modules array (Found `modules: [`). This is usually not necessary. Please remove it if it is not needed ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Config-Instructions)).
 9. Recommendation: There is no CHANGELOG file. It is recommended to add one ([example CHANGELOG file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CHANGELOG.md)).
@@ -8612,8 +8588,8 @@ Last update: 2025-10-01T23:26:54+02:00
 
 ### [MMM-MyStandings by dathbe](https://github.com/dathbe/MMM-MyStandings)
 
-1. Recommendation: Found `uses: actions/checkout@v4` in file `automated-tests.yaml`: Replace it with v5.
-2. Recommendation: Found `uses: actions/setup-node@v4` in file `automated-tests.yaml`: Replace it with v5.
+1. Recommendation: Found `uses: actions/checkout@v4` in file `automated-tests.yaml`: Upgrade workflows to use actions/checkout@v5.
+2. Recommendation: Found `uses: actions/setup-node@v4` in file `automated-tests.yaml`: Upgrade workflows to use actions/setup-node@v5.
 3. Information: There are updates for 4 dependencie(s):
    - @eslint/js                ^9.31.0  →  ^9.36.0
    - @stylistic/eslint-plugin   ^5.2.0  →   ^5.4.0
@@ -8677,8 +8653,8 @@ Last update: 2025-10-01T23:26:54+02:00
 
 ### [MMM-MyTeams-LeagueTable by gitgitaway](https://github.com/gitgitaway/MMM-MyTeams-LeagueTable)
 
-1. Recommendation: Found `require("http")` in file `node_helper.js`: Replace "http" by "node:http".
-2. Recommendation: Found `require("https")` in file `node_helper.js`: Replace "https" by "node:https".
+1. Recommendation: Found `require("http")` in file `node_helper.js`: Replace `http` with the scoped import `node:http`.
+2. Recommendation: Found `require("https")` in file `node_helper.js`: Replace `https` with the scoped import `node:https`.
 3. Recommendation: The README seems not to have an update section (like `## Update`). Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Update-Instructions)).
 4. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
 5. Recommendation: There is no dependabot configuration file. It is recommended to add one ([example dependabot file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/.github/dependabot.yaml)).
@@ -8709,7 +8685,7 @@ Last update: 2025-10-01T23:26:54+02:00
 
 1. `package.json` issue: No description
 2. `package.json` issue: No repository field.
-3. There are no specific keywords in 'package.json'. We would use them as tags on the module list page. Add a few meaningful terms to the keywords in the package.json. Not just “magicmirror” or “module”.
+3. There are no keywords in 'package.json'. We would use them as tags on the module list page.
 4. Deprecated: Found `require("request")` in file `node_helper.js`: Replace it with built-in fetch ([documentation](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch); [example module with fetch implemented](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/node_helper.js)).
 5. Recommendation: The README seems not to have an update section (like `## Update`). Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Update-Instructions)).
 6. Recommendation: The README seems to have a config example without a trailing comma. Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Config-Instructions)).
@@ -8868,7 +8844,7 @@ Last update: 2025-10-01T23:26:54+02:00
 
 1. There are no keywords in 'package.json'. We would use them as tags on the module list page.
 2. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
-3. Deprecated: Found `npm install electron-rebuild` in file `postinstall`: Replace it with `@electron/rebuild`
+3. Deprecated: Found `npm install electron-rebuild` in file `postinstall`: Install `@electron/rebuild` instead of the deprecated package.
 4. Recommendation: The README seems not to have an update section (like `## Update`). Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Update-Instructions)).
 5. Recommendation: There is no CHANGELOG file. It is recommended to add one ([example CHANGELOG file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CHANGELOG.md)).
 6. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
@@ -8969,15 +8945,15 @@ Last update: 2025-10-01T23:26:54+02:00
 ### [MMM-Netatmo by CFenner](https://github.com/CFenner/MMM-Netatmo)
 
 1. Repository name and main js file name is not the same.
-2. Recommendation: Found `npm run` in file `package.json`: Replace it with `node --run`. This is a more modern way to run scripts, without the need for npm.
+2. Recommendation: Found `npm run` in file `package.json`: Prefer `node --run` over invoking npm run directly.
 3. Recommendation: The README seems not to have an update section (like `## Update`). Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Update-Instructions)).
 4. Recommendation: The README seems to have a config example without a trailing comma. Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Config-Instructions)).
-5. Recommendation: Found `npm run` in file `README.md`: Replace it with `node --run`. This is a more modern way to run scripts, without the need for npm.
+5. Recommendation: Found `npm run` in file `README.md`: Prefer `node --run` over invoking npm run directly.
 6. Recommendation: Found `git checkout` in file `README.md`: Replace it with `git switch`. It's not a drop-in replacement, so make sure to check the documentation.
-7. Recommendation: Found `uses: actions/checkout@v4` in file `validation.yml`: Replace it with v5.
-8. Recommendation: Found `uses: actions/setup-node@v4` in file `validation.yml`: Replace it with v5.
-9. Deprecated: Found `node-version: 18` in file `validation.yml`: Update to current version.
-10. Recommendation: Found `npm run` in file `validation.yml`: Replace it with `node --run`. This is a more modern way to run scripts, without the need for npm.
+7. Recommendation: Found `uses: actions/checkout@v4` in file `validation.yml`: Upgrade workflows to use actions/checkout@v5.
+8. Recommendation: Found `uses: actions/setup-node@v4` in file `validation.yml`: Upgrade workflows to use actions/setup-node@v5.
+9. Deprecated: Found `node-version: 18` in file `validation.yml`: Update CI workflows to target a supported Node.js LTS release.
+10. Recommendation: Found `npm run` in file `validation.yml`: Prefer `node --run` over invoking npm run directly.
 11. Recommendation: There is no CHANGELOG file. It is recommended to add one ([example CHANGELOG file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CHANGELOG.md)).
 12. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
 13. Recommendation: There is no dependabot configuration file. It is recommended to add one ([example dependabot file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/.github/dependabot.yaml)).
@@ -8989,7 +8965,7 @@ Last update: 2025-10-01T23:26:54+02:00
 1. Typo: Found `Magic Mirror` in file `MMM-Netatmo-Presence.js`: Replace it with `MagicMirror²`.
 2. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
 3. Deprecated: Found `require('request')` in file `node_helper.js`: Replace it with built-in fetch ([documentation](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch); [example module with fetch implemented](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/node_helper.js)).
-4. Recommendation: Found `require("https")` in file `node_helper.js`: Replace "https" by "node:https".
+4. Recommendation: Found `require("https")` in file `node_helper.js`: Replace `https` with the scoped import `node:https`.
 5. Typo: Found `Magic Mirror` in file `package.json`: Replace it with `MagicMirror²`.
 6. Typo: Found `Magic Mirror` in file `README.md`: Replace it with `MagicMirror²`.
 7. Typo: Found `[MagicMirror]` in file `README.md`: Replace it with `[MagicMirror²]`.
@@ -9030,12 +9006,12 @@ Last update: 2025-10-01T23:26:54+02:00
 
 1. Issues are not enabled in the GitHub repository. So users cannot report bugs. Please enable issues in your repo.
 2. Outdated: Found `MichMich/MagicMirror` in file `.travis.yml`: Replace it by `MagicMirrorOrg/MagicMirror`.
-3. Recommendation: Found `jshint` in file `gruntfile.js`: Replace "jshint" by "eslint".
+3. Recommendation: Found `jshint` in file `gruntfile.js`: Suggest migrating from JSHint to ESLint.
 4. Typo: Found `Magic Mirror` in file `MMM-NetworkScanner.js`: Replace it with `MagicMirror²`.
 5. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
-6. Recommendation: Found `jshint` in file `node_helper.js`: Replace "jshint" by "eslint".
-7. Recommendation: Found `jshint` in file `package.json`: Replace "jshint" by "eslint".
-8. Deprecated: Found `"grunt"` in file `package.json`: Grunt is practically unmaintained. Move on to something better.
+6. Recommendation: Found `jshint` in file `node_helper.js`: Suggest migrating from JSHint to ESLint.
+7. Recommendation: Found `jshint` in file `package.json`: Suggest migrating from JSHint to ESLint.
+8. Deprecated: Found `"grunt"` in file `package.json`: Grunt is effectively unmaintained. Move on to something modern.
 9. Recommendation: There is no CHANGELOG file. It is recommended to add one ([example CHANGELOG file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CHANGELOG.md)).
 10. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
 11. Recommendation: There is no dependabot configuration file. It is recommended to add one ([example dependabot file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/.github/dependabot.yaml)).
@@ -9083,23 +9059,22 @@ Last update: 2025-10-01T23:26:54+02:00
 
 1. Recommendation: The README seems not to have an update section (like `## Update`). Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Update-Instructions)).
 2. Recommendation: The README seems not to have an install section (like `## Installation`). Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Installation-Instructions)).
-3. Recommendation: Found `uses: actions/checkout@v3` in file `review.yml`: Replace it with v5.
-4. Recommendation: Found `uses: actions/checkout@v4` in file `review.yml`: Replace it with v5.
-5. Recommendation: There is no CHANGELOG file. It is recommended to add one ([example CHANGELOG file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CHANGELOG.md)).
-6. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
-7. Recommendation: There is no dependabot configuration file. It is recommended to add one ([example dependabot file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/.github/dependabot.yaml)).
-8. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/eslint.md)).
+3. Recommendation: Found `uses: actions/checkout@v3` in file `review.yml`: Upgrade workflows to use actions/checkout@v5.
+4. Recommendation: There is no CHANGELOG file. It is recommended to add one ([example CHANGELOG file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CHANGELOG.md)).
+5. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
+6. Recommendation: There is no dependabot configuration file. It is recommended to add one ([example dependabot file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/.github/dependabot.yaml)).
+7. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/eslint.md)).
 
 ### [next-train-transilien by trizome](https://github.com/trizome/next-train-transilien)
 
 1. `package.json` issue: No repository field.
 2. There are no keywords in 'package.json'. We would use them as tags on the module list page.
 3. Recommendation: Module name doesn't follow the recommended pattern (it doesn't start with `MMM-`). Consider renaming your module.
-4. Recommendation: Found `jshint` in file `Gruntfile.js`: Replace "jshint" by "eslint".
+4. Recommendation: Found `jshint` in file `Gruntfile.js`: Suggest migrating from JSHint to ESLint.
 5. Typo: Found `Magic Mirror` in file `next-train-transilien.js`: Replace it with `MagicMirror²`.
 6. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
 7. Deprecated: Found `"lockfileVersion": 1` in file `package-lock.json`: Run `npm update` to update to lockfileVersion 3.
-8. Deprecated: Found `"grunt"` in file `package.json`: Grunt is practically unmaintained. Move on to something better.
+8. Deprecated: Found `"grunt"` in file `package.json`: Grunt is effectively unmaintained. Move on to something modern.
 9. Outdated: Found `MichMich/MagicMirror` in file `README.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
 10. Recommendation: The README seems not to have an update section (like `## Update`). Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Update-Instructions)).
 11. Recommendation: The README seems not to have an install section (like `## Installation`). Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Installation-Instructions)).
@@ -9126,7 +9101,7 @@ Last update: 2025-10-01T23:26:54+02:00
 
 ### [MMM-Nextcloud by schlomm](https://github.com/schlomm/MMM-Nextcloud)
 
-1. Recommendation: Found `require("https")` in file `node_helper.js`: Replace "https" by "node:https".
+1. Recommendation: Found `require("https")` in file `node_helper.js`: Replace `https` with the scoped import `node:https`.
 2. Recommendation: The README seems not to have an update section (like `## Update`). Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Update-Instructions)).
 3. Recommendation: The README seems not to have an install section (like `## Installation`). Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Installation-Instructions)).
 4. Recommendation: The README seems to have a config example without a trailing comma. Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Config-Instructions)).
@@ -9139,7 +9114,7 @@ Last update: 2025-10-01T23:26:54+02:00
 
 1. `package.json` issue: No repository field.
 2. There are no keywords in 'package.json'. We would use them as tags on the module list page.
-3. Deprecated: Found `"grunt"` in file `package.json`: Grunt is practically unmaintained. Move on to something better.
+3. Deprecated: Found `"grunt"` in file `package.json`: Grunt is effectively unmaintained. Move on to something modern.
 4. Outdated: Found `MichMich/MagicMirror` in file `README.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
 5. Recommendation: The README seems not to have an update section (like `## Update`). Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Update-Instructions)).
 6. Recommendation: The README seems to have a modules array (Found `modules: [`). This is usually not necessary. Please remove it if it is not needed ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Config-Instructions)).
@@ -9158,7 +9133,7 @@ Last update: 2025-10-01T23:26:54+02:00
 4. There are no keywords in 'package.json'. We would use them as tags on the module list page.
 5. Repository name and main js file name is not the same.
 6. Typo: Found `Magic Mirror` in file `NextTrains.js`: Replace it with `MagicMirror²`.
-7. Recommendation: Found `require('https')` in file `node_helper.js`: Replace 'https' by 'node:https'.
+7. Recommendation: Found `require('https')` in file `node_helper.js`: Replace `https` with the scoped import `node:https`.
 8. Deprecated: Found `"lockfileVersion": 2` in file `package-lock.json`: Run `npm update` to update to lockfileVersion 3.
 9. Outdated: Found `MichMich/MagicMirror` in file `README.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
 10. Recommendation: The README seems not to have an update section (like `## Update`). Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Update-Instructions)).
@@ -9190,14 +9165,14 @@ Last update: 2025-10-01T23:26:54+02:00
 4. Deprecated: Found `"lockfileVersion": 1` in file `package-lock.json`: Run `npm update` to update to lockfileVersion 3.
 5. Typo: Found `MagicMirror2` in file `package.json`: Replace it with `MagicMirror²`.
 6. Recommendation: Found `"node-fetch"` in file `package.json`: Replace it with built-in fetch ([documentation](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch); [example module with fetch implemented](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/node_helper.js)).
-7. Recommendation: Found `eslint .` in file `package.json`: The period at the end of the command is not necessary since v9. It is recommended to remove it.
-8. Recommendation: Found `npm run` in file `README.md`: Replace it with `node --run`. This is a more modern way to run scripts, without the need for npm.
+7. Recommendation: Found `eslint .` in file `package.json`: Drop the trailing '.' when invoking ESLint v9 or newer.
+8. Recommendation: Found `npm run` in file `README.md`: Prefer `node --run` over invoking npm run directly.
 9. Outdated: Found `MichMich/MagicMirror` in file `README.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
 10. Recommendation: The README seems not to have an update section (like `## Update`). Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Update-Instructions)).
 11. Recommendation: The README seems to have a config example without a trailing comma. Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Config-Instructions)).
 12. Recommendation: The README seems not to have clone instructions.
-13. Recommendation: Found `uses: actions/checkout@v2` in file `build.yml`: Replace it with v5.
-14. Recommendation: Found `npm run` in file `build.yml`: Replace it with `node --run`. This is a more modern way to run scripts, without the need for npm.
+13. Recommendation: Found `uses: actions/checkout@v2` in file `build.yml`: Upgrade workflows to use actions/checkout@v5.
+14. Recommendation: Found `npm run` in file `build.yml`: Prefer `node --run` over invoking npm run directly.
 15. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
 16. Recommendation: There is no dependabot configuration file. It is recommended to add one ([example dependabot file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/.github/dependabot.yaml)).
 17. Recommendation: Replace eslintrc by new flat config.
@@ -9206,7 +9181,7 @@ Last update: 2025-10-01T23:26:54+02:00
 
 1. `package.json` issue: No description
 2. `package.json` issue: No repository field.
-3. There are no specific keywords in 'package.json'. We would use them as tags on the module list page. Add a few meaningful terms to the keywords in the package.json. Not just “magicmirror” or “module”.
+3. There are no keywords in 'package.json'. We would use them as tags on the module list page.
 4. Issue: The license in the package.json (ISC) doesn't match the license file (MIT).
 5. No image found.
 6. Recommendation: Found `"node-fetch"` in file `node_helper.js`: Replace it with built-in fetch ([documentation](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch); [example module with fetch implemented](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/node_helper.js)).
@@ -9219,18 +9194,18 @@ Last update: 2025-10-01T23:26:54+02:00
 
 ### [MMM-NHL by parnic](https://github.com/parnic/MMM-NHL)
 
-1. Recommendation: Found `eslint .` in file `package.json`: The period at the end of the command is not necessary since v9. It is recommended to remove it.
-2. Recommendation: Found `npm run` in file `README.md`: Replace it with `node --run`. This is a more modern way to run scripts, without the need for npm.
-3. Recommendation: Found `uses: actions/checkout@v4` in file `automated-tests.yml`: Replace it with v5.
-4. Recommendation: Found `uses: actions/setup-node@v4` in file `automated-tests.yml`: Replace it with v5.
-5. Recommendation: Found `npm run` in file `automated-tests.yml`: Replace it with `node --run`. This is a more modern way to run scripts, without the need for npm.
+1. Recommendation: Found `eslint .` in file `package.json`: Drop the trailing '.' when invoking ESLint v9 or newer.
+2. Recommendation: Found `npm run` in file `README.md`: Prefer `node --run` over invoking npm run directly.
+3. Recommendation: Found `uses: actions/checkout@v4` in file `automated-tests.yml`: Upgrade workflows to use actions/checkout@v5.
+4. Recommendation: Found `uses: actions/setup-node@v4` in file `automated-tests.yml`: Upgrade workflows to use actions/setup-node@v5.
+5. Recommendation: Found `npm run` in file `automated-tests.yml`: Prefer `node --run` over invoking npm run directly.
 6. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
 7. Recommendation: There is no dependabot configuration file. It is recommended to add one ([example dependabot file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/.github/dependabot.yaml)).
 8. Recommendation: The ESLint configuration file `eslint.config.mjs` does not contain `defineConfig`. It is recommended to use it.
 
 ### [MMM-Nightscout by bureus](https://github.com/bureus/MMM-Nightscout)
 
-1. There are no specific keywords in 'package.json'. We would use them as tags on the module list page. Add a few meaningful terms to the keywords in the package.json. Not just “magicmirror” or “module”.
+1. There are no keywords in 'package.json'. We would use them as tags on the module list page.
 2. Deprecated: Found `require("request-promise")` in file `node_helper.js`: Replace it with built-in fetch ([documentation](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch); [example module with fetch implemented](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/node_helper.js)).
 3. Typo: Found `Magic Mirror` in file `package.json`: Replace it with `MagicMirror²`.
 4. Typo: Found `Magic Mirror` in file `README.md`: Replace it with `MagicMirror²`.
@@ -9244,10 +9219,10 @@ Last update: 2025-10-01T23:26:54+02:00
 
 ### [MMM-NINA by jalibu](https://github.com/jalibu/MMM-NINA)
 
-1. Recommendation: Found `npm run` in file `package.json`: Replace it with `node --run`. This is a more modern way to run scripts, without the need for npm.
-2. Recommendation: Found `eslint .` in file `package.json`: The period at the end of the command is not necessary since v9. It is recommended to remove it.
-3. Deprecated: Found `rollup-plugin-banner` in file `package.json`: Replace it with built-in banner.
-4. Recommendation: Found `npm run` in file `README.md`: Replace it with `node --run`. This is a more modern way to run scripts, without the need for npm.
+1. Recommendation: Found `npm run` in file `package.json`: Prefer `node --run` over invoking npm run directly.
+2. Recommendation: Found `eslint .` in file `package.json`: Drop the trailing '.' when invoking ESLint v9 or newer.
+3. Deprecated: Found `rollup-plugin-banner` in file `package.json`: Use Rollup's built-in banner support.
+4. Recommendation: Found `npm run` in file `README.md`: Prefer `node --run` over invoking npm run directly.
 5. Recommendation: The README seems not to have an update section (like `## Update`). Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Update-Instructions)).
 6. Recommendation: The README seems to have a config example without a trailing comma. Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Config-Instructions)).
 7. Recommendation: There is no CHANGELOG file. It is recommended to add one ([example CHANGELOG file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CHANGELOG.md)).
@@ -9319,11 +9294,11 @@ Last update: 2025-10-01T23:26:54+02:00
 
 ### [MMM-NOAAAlerts by mmtsweng](https://github.com/mmtsweng/MMM-NOAAAlerts)
 
-1. There are no specific keywords in 'package.json'. We would use them as tags on the module list page. Add a few meaningful terms to the keywords in the package.json. Not just “magicmirror” or “module”.
+1. There are no keywords in 'package.json'. We would use them as tags on the module list page.
 2. Issue: The license in the package.json (ISC) doesn't match the license file (GPL-3.0).
 3. No image found.
 4. Typo: Found `Magic Mirror` in file `MMM-NOAAAlerts.js`: Replace it with `MagicMirror²`.
-5. Recommendation: Found `require("https")` in file `node_helper.js`: Replace "https" by "node:https".
+5. Recommendation: Found `require("https")` in file `node_helper.js`: Replace `https` with the scoped import `node:https`.
 6. Deprecated: Found `"lockfileVersion": 2` in file `package-lock.json`: Run `npm update` to update to lockfileVersion 3.
 7. Typo: Found `Magic Mirror` in file `package.json`: Replace it with `MagicMirror²`.
 8. Typo: Found `Magic Mirror` in file `README.md`: Replace it with `MagicMirror²`.
@@ -9470,7 +9445,7 @@ Last update: 2025-10-01T23:26:54+02:00
 
 1. Recommendation: Found `axios` in file `node_helper.js`: Replace it with built-in fetch ([documentation](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch); [example module with fetch implemented](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/node_helper.js)).
 2. Recommendation: Found `axios` in file `package.json`: Replace it with built-in fetch ([documentation](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch); [example module with fetch implemented](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/node_helper.js)).
-3. Recommendation: Found `eslint .` in file `package.json`: The period at the end of the command is not necessary since v9. It is recommended to remove it.
+3. Recommendation: Found `eslint .` in file `package.json`: Drop the trailing '.' when invoking ESLint v9 or newer.
 4. Recommendation: Found `axios` in file `README.md`: Replace it with built-in fetch ([documentation](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch); [example module with fetch implemented](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/node_helper.js)).
 5. Outdated: Found `MichMich/MagicMirror` in file `README.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
 6. Recommendation: The README seems not to have an update section (like `## Update`). Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Update-Instructions)).
@@ -9546,9 +9521,9 @@ Last update: 2025-10-01T23:26:54+02:00
 
 1. There are no keywords in 'package.json'. We would use them as tags on the module list page.
 2. Repository name and main js file name is not the same.
-3. Recommendation: Found `jshint` in file `Gruntfile.js`: Replace "jshint" by "eslint".
+3. Recommendation: Found `jshint` in file `Gruntfile.js`: Suggest migrating from JSHint to ESLint.
 4. Deprecated: Found `"lockfileVersion": 2` in file `package-lock.json`: Run `npm update` to update to lockfileVersion 3.
-5. Deprecated: Found `"grunt"` in file `package.json`: Grunt is practically unmaintained. Move on to something better.
+5. Deprecated: Found `"grunt"` in file `package.json`: Grunt is effectively unmaintained. Move on to something modern.
 6. Outdated: Found `MichMich/MagicMirror` in file `README.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
 7. Recommendation: The README seems to have a modules array (Found `modules: [`). This is usually not necessary. Please remove it if it is not needed ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Config-Instructions)).
 8. Recommendation: The README seems to have a config example without a trailing comma. Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Config-Instructions)).
@@ -9565,12 +9540,12 @@ Last update: 2025-10-01T23:26:54+02:00
 3. Recommendation: The README seems not to have an update section (like `## Update`). Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Update-Instructions)).
 4. Recommendation: The README seems not to have an install section (like `## Installation`). Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Installation-Instructions)).
 5. Recommendation: The README seems to have incorrect clone instructions. Please check the URL.
-6. Recommendation: Found `uses: actions/checkout@v2` in file `codeql-analysis.yml`: Replace it with v5.
-7. Recommendation: Found `uses: actions/checkout@v2` in file `lint.yml`: Replace it with v5.
-8. Recommendation: Found `uses: actions/checkout@v2` in file `npm-publish-github-packages.yml`: Replace it with v5.
-9. Deprecated: Found `node-version: 16` in file `npm-publish-github-packages.yml`: Update to current version.
-10. Recommendation: Found `uses: actions/checkout@v2` in file `npm-publish.yml`: Replace it with v5.
-11. Deprecated: Found `node-version: 16` in file `npm-publish.yml`: Update to current version.
+6. Recommendation: Found `uses: actions/checkout@v2` in file `codeql-analysis.yml`: Upgrade workflows to use actions/checkout@v5.
+7. Recommendation: Found `uses: actions/checkout@v2` in file `lint.yml`: Upgrade workflows to use actions/checkout@v5.
+8. Recommendation: Found `uses: actions/checkout@v2` in file `npm-publish-github-packages.yml`: Upgrade workflows to use actions/checkout@v5.
+9. Deprecated: Found `node-version: 16` in file `npm-publish-github-packages.yml`: Update CI workflows to target a supported Node.js LTS release.
+10. Recommendation: Found `uses: actions/checkout@v2` in file `npm-publish.yml`: Upgrade workflows to use actions/checkout@v5.
+11. Deprecated: Found `node-version: 16` in file `npm-publish.yml`: Update CI workflows to target a supported Node.js LTS release.
 12. Recommendation: There is no CHANGELOG file. It is recommended to add one ([example CHANGELOG file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CHANGELOG.md)).
 13. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
 14. Recommendation: There is no dependabot configuration file. It is recommended to add one ([example dependabot file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/.github/dependabot.yaml)).
@@ -9582,10 +9557,10 @@ Last update: 2025-10-01T23:26:54+02:00
 2. There are no keywords in 'package.json'. We would use them as tags on the module list page.
 3. No image found.
 4. Outdated: Found `MichMich/MagicMirror` in file `create_module.sh`: Replace it by `MagicMirrorOrg/MagicMirror`.
-5. Recommendation: Found `jshint` in file `Gruntfile.js`: Replace "jshint" by "eslint".
+5. Recommendation: Found `jshint` in file `Gruntfile.js`: Suggest migrating from JSHint to ESLint.
 6. Typo: Found `Magic Mirror` in file `MMM-ObjectBlocks.js`: Replace it with `MagicMirror²`.
 7. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
-8. Deprecated: Found `"grunt"` in file `package.json`: Grunt is practically unmaintained. Move on to something better.
+8. Deprecated: Found `"grunt"` in file `package.json`: Grunt is effectively unmaintained. Move on to something modern.
 9. Typo: Found `Magic Mirror` in file `README.md`: Replace it with `MagicMirror²`.
 10. Recommendation: The README seems not to have an update section (like `## Update`). Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Update-Instructions)).
 11. Recommendation: The README seems to have a config example without a trailing comma. Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Config-Instructions)).
@@ -9610,7 +9585,7 @@ Last update: 2025-10-01T23:26:54+02:00
 1. There are no keywords in 'package.json'. We would use them as tags on the module list page.
 2. Recommendation: Module name doesn't follow the recommended pattern (it doesn't start with `MMM-`). Consider renaming your module.
 3. Typo: Found `Magic Mirror` in file `octomirror-module.js`: Replace it with `MagicMirror²`.
-4. Recommendation: Found `jshint` in file `octomirror-module.js`: Replace "jshint" by "eslint".
+4. Recommendation: Found `jshint` in file `octomirror-module.js`: Suggest migrating from JSHint to ESLint.
 5. Deprecated: Found `"lockfileVersion": 1` in file `package-lock.json`: Run `npm update` to update to lockfileVersion 3.
 6. Typo: Found `Magic Mirror` in file `package.json`: Replace it with `MagicMirror²`.
 7. Recommendation: Found `XMLHttpRequest` in file `packed_client.js`: Replace it with built-in fetch ([documentation](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch); [example module with fetch implemented](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/node_helper.js)).
@@ -9649,11 +9624,11 @@ Last update: 2025-10-01T23:26:54+02:00
 
 ### [MMM-octoprint by btastic](https://github.com/btastic/MMM-octoprint)
 
-1. Recommendation: Found `jshint` in file `Gruntfile.js`: Replace "jshint" by "eslint".
+1. Recommendation: Found `jshint` in file `Gruntfile.js`: Suggest migrating from JSHint to ESLint.
 2. Typo: Found `Magic Mirror` in file `MMM-octoprint.js`: Replace it with `MagicMirror²`.
 3. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
-4. Recommendation: Found `require("fetch")` in file `node_helper.js`: Replace it with built-in fetch ([documentation](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch); [example module with fetch implemented](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/node_helper.js)).
-5. Deprecated: Found `"grunt"` in file `package.json`: Grunt is practically unmaintained. Move on to something better.
+4. Recommendation: Found `require("fetch")` in file `node_helper.js`: Use the global fetch API instead of requiring a shim.
+5. Deprecated: Found `"grunt"` in file `package.json`: Grunt is effectively unmaintained. Move on to something modern.
 6. Outdated: Found `MichMich/MagicMirror` in file `README.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
 7. Recommendation: The README seems not to have an update section (like `## Update`). Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Update-Instructions)).
 8. Recommendation: The README seems to have a modules array (Found `modules: [`). This is usually not necessary. Please remove it if it is not needed ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Config-Instructions)).
@@ -9678,9 +9653,9 @@ Last update: 2025-10-01T23:26:54+02:00
 
 1. Deprecated: Found `"lockfileVersion": 1` in file `package-lock.json`: Run `npm update` to update to lockfileVersion 3.
 2. Typo: Found `MagicMirror2` in file `package.json`: Replace it with `MagicMirror²`.
-3. Recommendation: Found `npm run` in file `package.json`: Replace it with `node --run`. This is a more modern way to run scripts, without the need for npm.
-4. Deprecated: Found `rollup-plugin-banner` in file `package.json`: Replace it with built-in banner.
-5. Recommendation: Found `npm run` in file `README.md`: Replace it with `node --run`. This is a more modern way to run scripts, without the need for npm.
+3. Recommendation: Found `npm run` in file `package.json`: Prefer `node --run` over invoking npm run directly.
+4. Deprecated: Found `rollup-plugin-banner` in file `package.json`: Use Rollup's built-in banner support.
+5. Recommendation: Found `npm run` in file `README.md`: Prefer `node --run` over invoking npm run directly.
 6. Recommendation: The README seems not to have an update section (like `## Update`). Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Update-Instructions)).
 7. Recommendation: The README seems to have a modules array (Found `modules: [`). This is usually not necessary. Please remove it if it is not needed ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Config-Instructions)).
 8. Recommendation: The README seems to have incorrect clone instructions. Please check the URL.
@@ -9718,20 +9693,19 @@ Last update: 2025-10-01T23:26:54+02:00
 
 1. Deprecated: Found `"lockfileVersion": 1` in file `package-lock.json`: Run `npm update` to update to lockfileVersion 3.
 2. Recommendation: Found `"node-fetch"` in file `package.json`: Replace it with built-in fetch ([documentation](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch); [example module with fetch implemented](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/node_helper.js)).
-3. Recommendation: Found `eslint .` in file `package.json`: The period at the end of the command is not necessary since v9. It is recommended to remove it.
-4. Recommendation: Found `eslint --fix .` in file `package.json`: The period at the end of the command is not necessary since v9. It is recommended to remove it.
-5. Recommendation: Found `npm run` in file `README.md`: Replace it with `node --run`. This is a more modern way to run scripts, without the need for npm.
-6. Outdated: Found `MichMich/MagicMirror` in file `README.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
-7. Recommendation: The README seems not to have an update section (like `## Update`). Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Update-Instructions)).
-8. Recommendation: The README seems to have a config example without a trailing comma. Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Config-Instructions)).
-9. Recommendation: The README seems not to have clone instructions.
-10. Recommendation: Found `'node-fetch'` in file `bloomberg.js`: Replace it with built-in fetch ([documentation](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch); [example module with fetch implemented](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/node_helper.js)).
-11. Recommendation: Found `'node-fetch'` in file `nbc.js`: Replace it with built-in fetch ([documentation](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch); [example module with fetch implemented](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/node_helper.js)).
-12. Recommendation: Found `uses: actions/checkout@v2` in file `build.yml`: Replace it with v5.
-13. Recommendation: Found `npm run` in file `build.yml`: Replace it with `node --run`. This is a more modern way to run scripts, without the need for npm.
-14. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
-15. Recommendation: There is no dependabot configuration file. It is recommended to add one ([example dependabot file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/.github/dependabot.yaml)).
-16. Recommendation: Replace eslintrc by new flat config.
+3. Recommendation: Found `eslint .` in file `package.json`: Drop the trailing '.' when invoking ESLint v9 or newer.
+4. Recommendation: Found `npm run` in file `README.md`: Prefer `node --run` over invoking npm run directly.
+5. Outdated: Found `MichMich/MagicMirror` in file `README.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
+6. Recommendation: The README seems not to have an update section (like `## Update`). Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Update-Instructions)).
+7. Recommendation: The README seems to have a config example without a trailing comma. Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Config-Instructions)).
+8. Recommendation: The README seems not to have clone instructions.
+9. Recommendation: Found `'node-fetch'` in file `bloomberg.js`: Replace it with built-in fetch ([documentation](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch); [example module with fetch implemented](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/node_helper.js)).
+10. Recommendation: Found `'node-fetch'` in file `nbc.js`: Replace it with built-in fetch ([documentation](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch); [example module with fetch implemented](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/node_helper.js)).
+11. Recommendation: Found `uses: actions/checkout@v2` in file `build.yml`: Upgrade workflows to use actions/checkout@v5.
+12. Recommendation: Found `npm run` in file `build.yml`: Prefer `node --run` over invoking npm run directly.
+13. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
+14. Recommendation: There is no dependabot configuration file. It is recommended to add one ([example dependabot file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/.github/dependabot.yaml)).
+15. Recommendation: Replace eslintrc by new flat config.
 
 ### [MMM-OneBusAway by jugler](https://github.com/jugler/MMM-OneBusAway)
 
@@ -9748,7 +9722,7 @@ Last update: 2025-10-01T23:26:54+02:00
 
 ### [MMM-OneCallWeather by KristjanESPERANTO](https://github.com/KristjanESPERANTO/MMM-OneCallWeather)
 
-1. Recommendation: Found `uses: actions/setup-node@v4` in file `automated-tests.yaml`: Replace it with v5.
+1. Recommendation: Found `uses: actions/setup-node@v4` in file `automated-tests.yaml`: Upgrade workflows to use actions/setup-node@v5.
 2. Information: There are updates for 9 dependencie(s):
    - @eslint/css               ^0.10.0  →  ^0.11.1
    - @eslint/js                ^9.33.0  →  ^9.36.0
@@ -9764,18 +9738,18 @@ Last update: 2025-10-01T23:26:54+02:00
 
 1. Recommendation: Found `XMLHttpRequest` in file `error_to_string.js`: Replace it with built-in fetch ([documentation](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch); [example module with fetch implemented](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/node_helper.js)).
 2. Typo: Found `Magic Mirror` in file `INSTALL.md`: Replace it with `MagicMirror²`.
-3. Recommendation: Found `npm run` in file `INSTALL.md`: Replace it with `node --run`. This is a more modern way to run scripts, without the need for npm.
-4. Recommendation: Found `eslint .` in file `package.json`: The period at the end of the command is not necessary since v9. It is recommended to remove it.
-5. Deprecated: Found `rollup-plugin-banner` in file `package.json`: Replace it with built-in banner.
+3. Recommendation: Found `npm run` in file `INSTALL.md`: Prefer `node --run` over invoking npm run directly.
+4. Recommendation: Found `eslint .` in file `package.json`: Drop the trailing '.' when invoking ESLint v9 or newer.
+5. Deprecated: Found `rollup-plugin-banner` in file `package.json`: Use Rollup's built-in banner support.
 6. Recommendation: The README seems not to have an update section (like `## Update`). Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Update-Instructions)).
 7. Recommendation: The README seems not to have clone instructions.
 8. Recommendation: Found `XMLHttpRequest` in file `error_to_string.ts`: Replace it with built-in fetch ([documentation](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch); [example module with fetch implemented](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/node_helper.js)).
 9. Deprecated: Found `new Buffer(` in file `OneDrivePhotos.js`: This is deprecated. Please update. [See here for more information](https://nodejs.org/api/buffer.html).
-10. Recommendation: Found `require("http")` in file `OneDrivePhotos.js`: Replace "http" by "node:http".
-11. Recommendation: Found `require("https")` in file `OneDrivePhotos.js`: Replace "https" by "node:https".
-12. Recommendation: Found `uses: actions/checkout@v4` in file `pr.yml`: Replace it with v5.
-13. Recommendation: Found `uses: actions/setup-node@v4` in file `pr.yml`: Replace it with v5.
-14. Recommendation: Found `npm run` in file `pr.yml`: Replace it with `node --run`. This is a more modern way to run scripts, without the need for npm.
+10. Recommendation: Found `require("http")` in file `OneDrivePhotos.js`: Replace `http` with the scoped import `node:http`.
+11. Recommendation: Found `require("https")` in file `OneDrivePhotos.js`: Replace `https` with the scoped import `node:https`.
+12. Recommendation: Found `uses: actions/checkout@v4` in file `pr.yml`: Upgrade workflows to use actions/checkout@v5.
+13. Recommendation: Found `uses: actions/setup-node@v4` in file `pr.yml`: Upgrade workflows to use actions/setup-node@v5.
+14. Recommendation: Found `npm run` in file `pr.yml`: Prefer `node --run` over invoking npm run directly.
 15. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
 16. Recommendation: There is no dependabot configuration file. It is recommended to add one ([example dependabot file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/.github/dependabot.yaml)).
 
@@ -9783,14 +9757,14 @@ Last update: 2025-10-01T23:26:54+02:00
 
 1. `package.json` issue: No repository field.
 2. There are no keywords in 'package.json'. We would use them as tags on the module list page.
-3. Recommendation: Found `jshint` in file `Gruntfile.js`: Replace "jshint" by "eslint".
+3. Recommendation: Found `jshint` in file `Gruntfile.js`: Suggest migrating from JSHint to ESLint.
 4. Typo: Found `Magic Mirror` in file `MMM-OneTouchReveal.js`: Replace it with `MagicMirror²`.
 5. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
 6. Deprecated: Found `require('request')` in file `node_helper.js`: Replace it with built-in fetch ([documentation](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch); [example module with fetch implemented](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/node_helper.js)).
 7. Recommendation: Found `axios` in file `node_helper.js`: Replace it with built-in fetch ([documentation](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch); [example module with fetch implemented](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/node_helper.js)).
 8. Deprecated: Found `"lockfileVersion": 1` in file `package-lock.json`: Run `npm update` to update to lockfileVersion 3.
 9. Recommendation: Found `axios` in file `package.json`: Replace it with built-in fetch ([documentation](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch); [example module with fetch implemented](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/node_helper.js)).
-10. Deprecated: Found `"grunt"` in file `package.json`: Grunt is practically unmaintained. Move on to something better.
+10. Deprecated: Found `"grunt"` in file `package.json`: Grunt is effectively unmaintained. Move on to something modern.
 11. Recommendation: The README seems not to have an update section (like `## Update`). Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Update-Instructions)).
 12. Recommendation: The README seems to have a modules array (Found `modules: [`). This is usually not necessary. Please remove it if it is not needed ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Config-Instructions)).
 13. Recommendation: The README seems to have a config example without a trailing comma. Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Config-Instructions)).
@@ -9835,9 +9809,9 @@ Last update: 2025-10-01T23:26:54+02:00
 ### [MMM-OnScreenMenu by shbatm](https://github.com/shbatm/MMM-OnScreenMenu)
 
 1. Typo: Found `Magic Mirror` in file `MMM-OnScreenMenu.js`: Replace it with `MagicMirror²`.
-2. Recommendation: Found `jshint` in file `MMM-OnScreenMenu.js`: Replace "jshint" by "eslint".
+2. Recommendation: Found `jshint` in file `MMM-OnScreenMenu.js`: Suggest migrating from JSHint to ESLint.
 3. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
-4. Recommendation: Found `jshint` in file `node_helper.js`: Replace "jshint" by "eslint".
+4. Recommendation: Found `jshint` in file `node_helper.js`: Suggest migrating from JSHint to ESLint.
 5. Outdated: Found `MichMich/MagicMirror` in file `README.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
 6. Recommendation: The README seems not to have an update section (like `## Update`). Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Update-Instructions)).
 7. Recommendation: The README seems to have a modules array (Found `modules: [`). This is usually not necessary. Please remove it if it is not needed ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Config-Instructions)).
@@ -9850,15 +9824,14 @@ Last update: 2025-10-01T23:26:54+02:00
 1. Recommendation: Found `"node-fetch"` in file `package.json`: Replace it with built-in fetch ([documentation](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch); [example module with fetch implemented](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/node_helper.js)).
 2. Recommendation: The README seems not to have an update section (like `## Update`). Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Update-Instructions)).
 3. Recommendation: The README seems not to have an install section (like `## Installation`). Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Installation-Instructions)).
-4. Recommendation: Found `eslint .` in file `package.json`: The period at the end of the command is not necessary since v9. It is recommended to remove it.
-5. Typo: Found `Magic Mirror` in file `App.tsx`: Replace it with `MagicMirror²`.
-6. Deprecated: Found `new Buffer(` in file `vibrant.worker.js.map`: This is deprecated. Please update. [See here for more information](https://nodejs.org/api/buffer.html).
-7. Deprecated: Found `new Buffer(` in file `vibrant.worker.min.js`: This is deprecated. Please update. [See here for more information](https://nodejs.org/api/buffer.html).
-8. Recommendation: Found `"node-fetch"` in file `SpotifyFetcher.js`: Replace it with built-in fetch ([documentation](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch); [example module with fetch implemented](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/node_helper.js)).
-9. Recommendation: There is no CHANGELOG file. It is recommended to add one ([example CHANGELOG file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CHANGELOG.md)).
-10. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
-11. Recommendation: ESLint is not in the dependencies or devDependencies. It is recommended to add it to one of them.
-12. Recommendation: No lint script found in package.json. It is recommended to add one.
+4. Typo: Found `Magic Mirror` in file `App.tsx`: Replace it with `MagicMirror²`.
+5. Deprecated: Found `new Buffer(` in file `vibrant.worker.js.map`: This is deprecated. Please update. [See here for more information](https://nodejs.org/api/buffer.html).
+6. Deprecated: Found `new Buffer(` in file `vibrant.worker.min.js`: This is deprecated. Please update. [See here for more information](https://nodejs.org/api/buffer.html).
+7. Recommendation: Found `"node-fetch"` in file `SpotifyFetcher.js`: Replace it with built-in fetch ([documentation](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch); [example module with fetch implemented](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/node_helper.js)).
+8. Recommendation: There is no CHANGELOG file. It is recommended to add one ([example CHANGELOG file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CHANGELOG.md)).
+9. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
+10. Recommendation: ESLint is not in the dependencies or devDependencies. It is recommended to add it to one of them.
+11. Recommendation: No lint script found in package.json. It is recommended to add one.
 
 ### [MMM-OnSpotifyDude by mezderman](https://github.com/mezderman/MMM-OnSpotifyDude)
 
@@ -9878,9 +9851,9 @@ Last update: 2025-10-01T23:26:54+02:00
 
 1. Outdated: Found `MichMich/MagicMirror` in file `README.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
 2. Recommendation: The README seems to have a modules array (Found `modules: [`). This is usually not necessary. Please remove it if it is not needed ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Config-Instructions)).
-3. Recommendation: Found `uses: actions/checkout@v4` in file `ci.yml`: Replace it with v5.
-4. Recommendation: Found `uses: actions/setup-node@v3` in file `ci.yml`: Replace it with v5.
-5. Recommendation: Found `npm run` in file `ci.yml`: Replace it with `node --run`. This is a more modern way to run scripts, without the need for npm.
+3. Recommendation: Found `uses: actions/checkout@v4` in file `ci.yml`: Upgrade workflows to use actions/checkout@v5.
+4. Recommendation: Found `uses: actions/setup-node@v3` in file `ci.yml`: Upgrade workflows to use actions/setup-node@v5.
+5. Recommendation: Found `npm run` in file `ci.yml`: Prefer `node --run` over invoking npm run directly.
 6. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
 7. Recommendation: There is no dependabot configuration file. It is recommended to add one ([example dependabot file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/.github/dependabot.yaml)).
 8. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/eslint.md)).
@@ -9947,11 +9920,11 @@ Last update: 2025-10-01T23:26:54+02:00
 
 ### [MMM-OpenSprinkler by johnny-co](https://github.com/johnny-co/MMM-OpenSprinkler)
 
-1. An error occurred while getting information from 'package.json': SyntaxError: Unexpected token ']', ..."dule",
+1. An error occurred while getting information from 'package.json': Unexpected token ']', ..."dule",
   ],
   "aut"... is not valid JSON
 2. Typo: Found `Magic Mirror` in file `MMM-OpenSprinkler.js`: Replace it with `MagicMirror²`.
-3. Recommendation: Found `https://cdnjs.cloudflare.com` in file `MMM-OpenSprinkler.js`: It looks like a package is loaded via CDN. It would be better if the package were installed locally via npm.
+3. Recommendation: Found `https://cdnjs.cloudflare.com` in file `MMM-OpenSprinkler.js`: Prefer bundling dependencies via npm instead of CDN references.
 4. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
 5. Deprecated: Found `require('request')` in file `node_helper.js`: Replace it with built-in fetch ([documentation](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch); [example module with fetch implemented](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/node_helper.js)).
 6. Typo: Found `MagicMirror2` in file `package.json`: Replace it with `MagicMirror²`.
@@ -9986,7 +9959,7 @@ Last update: 2025-10-01T23:26:54+02:00
 2. Typo: Found `[MagicMirror]` in file `README.MD`: Replace it with `[MagicMirror²]`.
 3. Outdated: Found `MichMich/MagicMirror` in file `README.MD`: Replace it by `MagicMirrorOrg/MagicMirror`.
 4. Typo: Found `Magic Mirror` in file `weather.html`: Replace it with `MagicMirror²`.
-5. Recommendation: Found `https://cdnjs.cloudflare.com` in file `weather.html`: It looks like a package is loaded via CDN. It would be better if the package were installed locally via npm.
+5. Recommendation: Found `https://cdnjs.cloudflare.com` in file `weather.html`: Prefer bundling dependencies via npm instead of CDN references.
 6. Warning: No LICENSE file ([example LICENSE file](https://github.com/KristjanESPERANTO/MMM-WebSpeechTTS/blob/main/LICENSE.md)).
 7. Recommendation: There is no CHANGELOG file. It is recommended to add one ([example CHANGELOG file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CHANGELOG.md)).
 8. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
@@ -10043,11 +10016,11 @@ Last update: 2025-10-01T23:26:54+02:00
 
 1. `package.json` issue: No repository field.
 2. There are no keywords in 'package.json'. We would use them as tags on the module list page.
-3. Recommendation: Found `jshint` in file `Gruntfile.js`: Replace "jshint" by "eslint".
+3. Recommendation: Found `jshint` in file `Gruntfile.js`: Suggest migrating from JSHint to ESLint.
 4. Typo: Found `Magic Mirror` in file `MMM-Oura.js`: Replace it with `MagicMirror²`.
 5. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
 6. Deprecated: Found `"lockfileVersion": 1` in file `package-lock.json`: Run `npm update` to update to lockfileVersion 3.
-7. Deprecated: Found `"grunt"` in file `package.json`: Grunt is practically unmaintained. Move on to something better.
+7. Deprecated: Found `"grunt"` in file `package.json`: Grunt is effectively unmaintained. Move on to something modern.
 8. Outdated: Found `MichMich/MagicMirror` in file `README.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
 9. Recommendation: The README seems not to have an update section (like `## Update`). Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Update-Instructions)).
 10. Recommendation: The README seems to have a modules array (Found `modules: [`). This is usually not necessary. Please remove it if it is not needed ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Config-Instructions)).
@@ -10059,8 +10032,8 @@ Last update: 2025-10-01T23:26:54+02:00
 ### [MMM-Oura2 by themox](https://github.com/themox/MMM-Oura2)
 
 1. There is no `package.json`. We need this file to gather information about the module for the module list page.
-2. Recommendation: Found `https://cdnjs.cloudflare.com` in file `MMM-Oura2.js`: It looks like a package is loaded via CDN. It would be better if the package were installed locally via npm.
-3. Recommendation: Found `https://cdnjs.cloudflare.com` in file `oura.js`: It looks like a package is loaded via CDN. It would be better if the package were installed locally via npm.
+2. Recommendation: Found `https://cdnjs.cloudflare.com` in file `MMM-Oura2.js`: Prefer bundling dependencies via npm instead of CDN references.
+3. Recommendation: Found `https://cdnjs.cloudflare.com` in file `oura.js`: Prefer bundling dependencies via npm instead of CDN references.
 4. Outdated: Found `MichMich/MagicMirror` in file `README.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
 5. Recommendation: The README seems not to have an update section (like `## Update`). Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Update-Instructions)).
 6. Recommendation: The README seems to have a modules array (Found `modules: [`). This is usually not necessary. Please remove it if it is not needed ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Config-Instructions)).
@@ -10100,8 +10073,8 @@ Last update: 2025-10-01T23:26:54+02:00
 
 ### [MMM-page-indicator by edward-shen](https://github.com/edward-shen/MMM-page-indicator)
 
-1. Recommendation: Found `uses: actions/checkout@v4` in file `automated-tests.yaml`: Replace it with v5.
-2. Recommendation: Found `uses: actions/setup-node@v4` in file `automated-tests.yaml`: Replace it with v5.
+1. Recommendation: Found `uses: actions/checkout@v4` in file `automated-tests.yaml`: Upgrade workflows to use actions/checkout@v5.
+2. Recommendation: Found `uses: actions/setup-node@v4` in file `automated-tests.yaml`: Upgrade workflows to use actions/setup-node@v5.
 3. Recommendation: There is no dependabot configuration file. It is recommended to add one ([example dependabot file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/.github/dependabot.yaml)).
 4. Information: There are updates for 11 dependencie(s):
    - @eslint/css                ^0.9.0  →  ^0.11.1
@@ -10157,19 +10130,19 @@ Last update: 2025-10-01T23:26:54+02:00
 
 ### [MMM-pages by sdetweil](https://github.com/sdetweil/MMM-pages)
 
-1. Recommendation: Found `npm run` in file `package.json`: Replace it with `node --run`. This is a more modern way to run scripts, without the need for npm.
-2. Recommendation: Found `eslint .` in file `package.json`: The period at the end of the command is not necessary since v9. It is recommended to remove it.
-3. Recommendation: Found `npm run` in file `README.md`: Replace it with `node --run`. This is a more modern way to run scripts, without the need for npm.
-4. Recommendation: Found `uses: actions/checkout@v4` in file `automated-tests.yaml`: Replace it with v5.
-5. Recommendation: Found `uses: actions/setup-node@v4` in file `automated-tests.yaml`: Replace it with v5.
-6. Recommendation: Found `npm run` in file `automated-tests.yaml`: Replace it with `node --run`. This is a more modern way to run scripts, without the need for npm.
+1. Recommendation: Found `npm run` in file `package.json`: Prefer `node --run` over invoking npm run directly.
+2. Recommendation: Found `eslint .` in file `package.json`: Drop the trailing '.' when invoking ESLint v9 or newer.
+3. Recommendation: Found `npm run` in file `README.md`: Prefer `node --run` over invoking npm run directly.
+4. Recommendation: Found `uses: actions/checkout@v4` in file `automated-tests.yaml`: Upgrade workflows to use actions/checkout@v5.
+5. Recommendation: Found `uses: actions/setup-node@v4` in file `automated-tests.yaml`: Upgrade workflows to use actions/setup-node@v5.
+6. Recommendation: Found `npm run` in file `automated-tests.yaml`: Prefer `node --run` over invoking npm run directly.
 7. Recommendation: There is no CHANGELOG file. It is recommended to add one ([example CHANGELOG file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CHANGELOG.md)).
 8. Recommendation: There is no dependabot configuration file. It is recommended to add one ([example dependabot file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/.github/dependabot.yaml)).
 9. Recommendation: The ESLint configuration file `eslint.config.mjs` does not contain `defineConfig`. It is recommended to use it.
 
 ### [MMM-pages by edward-shen](https://github.com/edward-shen/MMM-pages)
 
-1. Recommendation: Found `uses: actions/setup-node@v4` in file `automated-tests.yaml`: Replace it with v5.
+1. Recommendation: Found `uses: actions/setup-node@v4` in file `automated-tests.yaml`: Upgrade workflows to use actions/setup-node@v5.
 2. Information: There are updates for 5 dependencie(s):
    - @eslint/js                ^9.34.0  →  ^9.36.0
    - @eslint/markdown           ^7.2.0  →   ^7.3.0
@@ -10262,7 +10235,7 @@ Last update: 2025-10-01T23:26:54+02:00
 1. There is no `package.json`. We need this file to gather information about the module for the module list page.
 2. Issues are not enabled in the GitHub repository. So users cannot report bugs. Please enable issues in your repo.
 3. No image found.
-4. Recommendation: Found `https://cdn.jsdelivr.net` in file `MMM-ParticleStatus.js`: It looks like a package is loaded via CDN. It would be better if the package were installed locally via npm.
+4. Recommendation: Found `https://cdn.jsdelivr.net` in file `MMM-ParticleStatus.js`: Prefer bundling dependencies via npm instead of CDN references.
 5. Typo: Found `Magic Mirror` in file `README.md`: Replace it with `MagicMirror²`.
 6. Typo: Found `[MagicMirror]` in file `README.md`: Replace it with `[MagicMirror²]`.
 7. Outdated: Found `MichMich/MagicMirror` in file `README.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
@@ -10278,7 +10251,7 @@ Last update: 2025-10-01T23:26:54+02:00
 2. `package.json` issue: No repository field.
 3. There are no keywords in 'package.json'. We would use them as tags on the module list page.
 4. Issue: The license in the package.json (ISC) doesn't match the license file (MIT).
-5. Recommendation: Found `jshint` in file `.gitignore`: Replace "jshint" by "eslint".
+5. Recommendation: Found `jshint` in file `.gitignore`: Suggest migrating from JSHint to ESLint.
 6. Typo: Found `Magic Mirror` in file `MMM-PasadenaTransit.js`: Replace it with `MagicMirror²`.
 7. Deprecated: Found `require('request')` in file `node_helper.js`: Replace it with built-in fetch ([documentation](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch); [example module with fetch implemented](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/node_helper.js)).
 8. Deprecated: Found `require('request')` in file `pt_helper.js`: Replace it with built-in fetch ([documentation](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch); [example module with fetch implemented](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/node_helper.js)).
@@ -10295,7 +10268,7 @@ Last update: 2025-10-01T23:26:54+02:00
 ### [MMM-pathtime by Comf0rTS1997](https://github.com/Comf0rTS1997/MMM-pathtime)
 
 1. There is no `package.json`. We need this file to gather information about the module for the module list page.
-2. Recommendation: Found `require("https")` in file `node_helper.js`: Replace "https" by "node:https".
+2. Recommendation: Found `require("https")` in file `node_helper.js`: Replace `https` with the scoped import `node:https`.
 3. Typo: Found `Magic Mirror` in file `README.md`: Replace it with `MagicMirror²`.
 4. Recommendation: The README seems not to have an update section (like `## Update`). Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Update-Instructions)).
 5. Recommendation: There is no CHANGELOG file. It is recommended to add one ([example CHANGELOG file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CHANGELOG.md)).
@@ -10317,9 +10290,9 @@ Last update: 2025-10-01T23:26:54+02:00
 ### [MMM-PDFSlideshow by ChrisF1976](https://github.com/ChrisF1976/MMM-PDFSlideshow)
 
 1. There is no `package.json`. We need this file to gather information about the module for the module list page.
-2. Recommendation: Found `https://cdnjs.cloudflare.com` in file `MMM-PDFSlideshow.js`: It looks like a package is loaded via CDN. It would be better if the package were installed locally via npm.
-3. Recommendation: Found `require("http")` in file `node_helper.js`: Replace "http" by "node:http".
-4. Recommendation: Found `require("https")` in file `node_helper.js`: Replace "https" by "node:https".
+2. Recommendation: Found `https://cdnjs.cloudflare.com` in file `MMM-PDFSlideshow.js`: Prefer bundling dependencies via npm instead of CDN references.
+3. Recommendation: Found `require("http")` in file `node_helper.js`: Replace `http` with the scoped import `node:http`.
+4. Recommendation: Found `require("https")` in file `node_helper.js`: Replace `https` with the scoped import `node:https`.
 5. Recommendation: The README seems not to have an update section (like `## Update`). Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Update-Instructions)).
 6. Recommendation: The README seems to have a config example without a trailing comma. Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Config-Instructions)).
 7. Recommendation: There is no CHANGELOG file. It is recommended to add one ([example CHANGELOG file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CHANGELOG.md)).
@@ -10388,13 +10361,13 @@ Last update: 2025-10-01T23:26:54+02:00
 3. No image found.
 4. Repository name and main js file name is not the same.
 5. Typo: Found `Magic Mirror` in file `MMM-PersonalConfig.js`: Replace it with `MagicMirror²`.
-6. Recommendation: Found `npm run` in file `README.md`: Replace it with `node --run`. This is a more modern way to run scripts, without the need for npm.
+6. Recommendation: Found `npm run` in file `README.md`: Prefer `node --run` over invoking npm run directly.
 7. Recommendation: The README seems not to have an update section (like `## Update`). Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Update-Instructions)).
 8. Recommendation: The README seems not to have a config example. Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Config-Instructions)).
 9. Recommendation: The README seems to have incorrect clone instructions. Please check the URL.
 10. Typo: Found `Magic Mirror` in file `config.js.sample`: Replace it with `MagicMirror²`.
 11. Typo: Found `Magic Mirror` in file `custom.css.sample`: Replace it with `MagicMirror²`.
-12. Recommendation: Found `uses: actions/checkout@v2` in file `sync-from-template.yml`: Replace it with v5.
+12. Recommendation: Found `uses: actions/checkout@v2` in file `sync-from-template.yml`: Upgrade workflows to use actions/checkout@v5.
 13. Recommendation: There is no CHANGELOG file. It is recommended to add one ([example CHANGELOG file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CHANGELOG.md)).
 14. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
 15. Recommendation: There is no dependabot configuration file. It is recommended to add one ([example dependabot file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/.github/dependabot.yaml)).
@@ -10414,7 +10387,7 @@ Last update: 2025-10-01T23:26:54+02:00
 
 ### [MMM-PGA by dathbe](https://github.com/dathbe/MMM-PGA)
 
-1. Recommendation: Found `uses: actions/setup-node@v4` in file `automated-tests.yaml`: Replace it with v5.
+1. Recommendation: Found `uses: actions/setup-node@v4` in file `automated-tests.yaml`: Upgrade workflows to use actions/setup-node@v5.
 
 ### [MMM-PhilipsHue by mumblebaj](https://github.com/mumblebaj/MMM-PhilipsHue)
 
@@ -10489,15 +10462,15 @@ Last update: 2025-10-01T23:26:54+02:00
 
 ### [MMM-pihole-stats by sheyabernstein](https://github.com/sheyabernstein/MMM-pihole-stats)
 
-1. Recommendation: Found `require("https")` in file `node_helper.js`: Replace "https" by "node:https".
-2. Recommendation: Found `npm run` in file `package.json`: Replace it with `node --run`. This is a more modern way to run scripts, without the need for npm.
-3. Outdated: Found `husky install` in file `package.json`: Since husky v9 you may not need this anymore.
-4. Recommendation: Found `npm run` in file `README.md`: Replace it with `node --run`. This is a more modern way to run scripts, without the need for npm.
+1. Recommendation: Found `require("https")` in file `node_helper.js`: Replace `https` with the scoped import `node:https`.
+2. Recommendation: Found `npm run` in file `package.json`: Prefer `node --run` over invoking npm run directly.
+3. Outdated: Found `husky install` in file `package.json`: Husky v9 no longer needs manual install scripts.
+4. Recommendation: Found `npm run` in file `README.md`: Prefer `node --run` over invoking npm run directly.
 5. Recommendation: Found `git checkout` in file `README.md`: Replace it with `git switch`. It's not a drop-in replacement, so make sure to check the documentation.
 6. Recommendation: The README seems not to have an update section (like `## Update`). Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Update-Instructions)).
-7. Recommendation: Found `npm run` in file `pre-commit`: Replace it with `node --run`. This is a more modern way to run scripts, without the need for npm.
-8. Recommendation: Found `uses: actions/checkout@v4` in file `lint.yml`: Replace it with v5.
-9. Recommendation: Found `npm run` in file `lint.yml`: Replace it with `node --run`. This is a more modern way to run scripts, without the need for npm.
+7. Recommendation: Found `npm run` in file `pre-commit`: Prefer `node --run` over invoking npm run directly.
+8. Recommendation: Found `uses: actions/checkout@v4` in file `lint.yml`: Upgrade workflows to use actions/checkout@v5.
+9. Recommendation: Found `npm run` in file `lint.yml`: Prefer `node --run` over invoking npm run directly.
 10. Recommendation: There is no CHANGELOG file. It is recommended to add one ([example CHANGELOG file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CHANGELOG.md)).
 11. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
 12. Recommendation: There is no dependabot configuration file. It is recommended to add one ([example dependabot file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/.github/dependabot.yaml)).
@@ -10528,13 +10501,13 @@ Last update: 2025-10-01T23:26:54+02:00
 
 ### [MMM-ping by fewieden](https://github.com/fewieden/MMM-ping)
 
-1. Recommendation: Found `npm run` in file `.travis.yml`: Replace it with `node --run`. This is a more modern way to run scripts, without the need for npm.
+1. Recommendation: Found `npm run` in file `.travis.yml`: Prefer `node --run` over invoking npm run directly.
 2. Outdated: Found `MichMich/MagicMirror` in file `MMM-ping.js`: Replace it by `MagicMirrorOrg/MagicMirror`.
 3. Outdated: Found `MichMich/MagicMirror` in file `node_helper.js`: Replace it by `MagicMirrorOrg/MagicMirror`.
 4. Deprecated: Found `"lockfileVersion": 1` in file `package-lock.json`: Run `npm update` to update to lockfileVersion 3.
 5. Typo: Found `MagicMirror2` in file `package.json`: Replace it with `MagicMirror²`.
-6. Recommendation: Found `eslint .` in file `package.json`: The period at the end of the command is not necessary since v9. It is recommended to remove it.
-7. Recommendation: Found `npm run` in file `README.md`: Replace it with `node --run`. This is a more modern way to run scripts, without the need for npm.
+6. Recommendation: Found `eslint .` in file `package.json`: Drop the trailing '.' when invoking ESLint v9 or newer.
+7. Recommendation: Found `npm run` in file `README.md`: Prefer `node --run` over invoking npm run directly.
 8. Outdated: Found `MichMich/MagicMirror` in file `README.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
 9. Recommendation: The README seems not to have an update section (like `## Update`). Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Update-Instructions)).
 10. Recommendation: The README seems to have a config example without a trailing comma. Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Config-Instructions)).
@@ -10571,21 +10544,21 @@ Last update: 2025-10-01T23:26:54+02:00
 ### [MMM-Pir by Coernel82](https://github.com/Coernel82/MMM-Pir)
 
 1. Repository name and main js file name is not the same.
-2. Recommendation: Found `npm run` in file `package.json`: Replace it with `node --run`. This is a more modern way to run scripts, without the need for npm.
-3. Recommendation: Found `eslint .` in file `package.json`: The period at the end of the command is not necessary since v9. It is recommended to remove it.
-4. Recommendation: Found `npm run` in file `README.md`: Replace it with `node --run`. This is a more modern way to run scripts, without the need for npm.
-5. Recommendation: Found `npm run` in file `update.sh`: Replace it with `node --run`. This is a more modern way to run scripts, without the need for npm.
-6. Recommendation: Found `uses: actions/checkout@v4` in file `build.yml`: Replace it with v5.
-7. Recommendation: Found `uses: actions/setup-node@v4` in file `build.yml`: Replace it with v5.
-8. Recommendation: Found `uses: actions/checkout@v4` in file `dependency-review.yml`: Replace it with v5.
-9. Recommendation: Found `uses: actions/checkout@v4` in file `developBuild.yml`: Replace it with v5.
-10. Recommendation: Found `uses: actions/setup-node@v4` in file `developBuild.yml`: Replace it with v5.
-11. Recommendation: Found `uses: actions/checkout@v4` in file `esbuild.yml`: Replace it with v5.
-12. Recommendation: Found `uses: actions/setup-node@v4` in file `esbuild.yml`: Replace it with v5.
-13. Recommendation: Found `npm run` in file `esbuild.yml`: Replace it with `node --run`. This is a more modern way to run scripts, without the need for npm.
-14. Recommendation: Found `uses: actions/checkout@v4` in file `eslint.yml`: Replace it with v5.
-15. Recommendation: Found `uses: actions/setup-node@v4` in file `eslint.yml`: Replace it with v5.
-16. Recommendation: Found `npm run` in file `eslint.yml`: Replace it with `node --run`. This is a more modern way to run scripts, without the need for npm.
+2. Recommendation: Found `npm run` in file `package.json`: Prefer `node --run` over invoking npm run directly.
+3. Recommendation: Found `eslint .` in file `package.json`: Drop the trailing '.' when invoking ESLint v9 or newer.
+4. Recommendation: Found `npm run` in file `README.md`: Prefer `node --run` over invoking npm run directly.
+5. Recommendation: Found `npm run` in file `update.sh`: Prefer `node --run` over invoking npm run directly.
+6. Recommendation: Found `uses: actions/checkout@v4` in file `build.yml`: Upgrade workflows to use actions/checkout@v5.
+7. Recommendation: Found `uses: actions/setup-node@v4` in file `build.yml`: Upgrade workflows to use actions/setup-node@v5.
+8. Recommendation: Found `uses: actions/checkout@v4` in file `dependency-review.yml`: Upgrade workflows to use actions/checkout@v5.
+9. Recommendation: Found `uses: actions/checkout@v4` in file `developBuild.yml`: Upgrade workflows to use actions/checkout@v5.
+10. Recommendation: Found `uses: actions/setup-node@v4` in file `developBuild.yml`: Upgrade workflows to use actions/setup-node@v5.
+11. Recommendation: Found `uses: actions/checkout@v4` in file `esbuild.yml`: Upgrade workflows to use actions/checkout@v5.
+12. Recommendation: Found `uses: actions/setup-node@v4` in file `esbuild.yml`: Upgrade workflows to use actions/setup-node@v5.
+13. Recommendation: Found `npm run` in file `esbuild.yml`: Prefer `node --run` over invoking npm run directly.
+14. Recommendation: Found `uses: actions/checkout@v4` in file `eslint.yml`: Upgrade workflows to use actions/checkout@v5.
+15. Recommendation: Found `uses: actions/setup-node@v4` in file `eslint.yml`: Upgrade workflows to use actions/setup-node@v5.
+16. Recommendation: Found `npm run` in file `eslint.yml`: Prefer `node --run` over invoking npm run directly.
 17. Recommendation: There is no CHANGELOG file. It is recommended to add one ([example CHANGELOG file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CHANGELOG.md)).
 18. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
 19. Recommendation: The ESLint configuration file `eslint.config.mjs` does not contain `defineConfig`. It is recommended to use it.
@@ -10648,7 +10621,7 @@ Last update: 2025-10-01T23:26:54+02:00
 1. There is no `package.json`. We need this file to gather information about the module for the module list page.
 2. Typo: Found `Magic Mirror` in file `MMM-PlaceInfo.js`: Replace it with `MagicMirror²`.
 3. Recommendation: Found `XMLHttpRequest` in file `MMM-PlaceInfo.js`: Replace it with built-in fetch ([documentation](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch); [example module with fetch implemented](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/node_helper.js)).
-4. Recommendation: Found `https://cdnjs.cloudflare.com` in file `MMM-PlaceInfo.js`: It looks like a package is loaded via CDN. It would be better if the package were installed locally via npm.
+4. Recommendation: Found `https://cdnjs.cloudflare.com` in file `MMM-PlaceInfo.js`: Prefer bundling dependencies via npm instead of CDN references.
 5. Typo: Found `[MagicMirror]` in file `README.md`: Replace it with `[MagicMirror²]`.
 6. Outdated: Found `MichMich/MagicMirror` in file `README.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
 7. Recommendation: The README seems not to have an update section (like `## Update`). Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Update-Instructions)).
@@ -10763,10 +10736,10 @@ Last update: 2025-10-01T23:26:54+02:00
 
 1. No image found.
 2. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
-3. Recommendation: Found `require('http')` in file `node_helper.js`: Replace 'http' by 'node:http'.
-4. Deprecated: Found `"electron-rebuild"` in file `package.json`: Replace it with `@electron/rebuild`
+3. Recommendation: Found `require('http')` in file `node_helper.js`: Replace `http` with the scoped import `node:http`.
+4. Deprecated: Found `"electron-rebuild"` in file `package.json`: Use `@electron/rebuild` instead.
 5. Typo: Found `[MagicMirror]` in file `README.md`: Replace it with `[MagicMirror²]`.
-6. Deprecated: Found `omxplayer` in file `README.md`: Try to replace it with `mplayer` or `vlc`.
+6. Deprecated: Found `omxplayer` in file `README.md`: Replace OMXPlayer usage with maintained alternatives such as mplayer or VLC.
 7. Outdated: Found `MichMich/MagicMirror` in file `README.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
 8. Recommendation: The README seems not to have an update section (like `## Update`). Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Update-Instructions)).
 9. Recommendation: The README seems to have a modules array (Found `modules: [`). This is usually not necessary. Please remove it if it is not needed ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Config-Instructions)).
@@ -10873,7 +10846,7 @@ Last update: 2025-10-01T23:26:54+02:00
 ### [MMM-PostDelivery-Norway by reidarw](https://github.com/reidarw/MMM-PostDelivery-Norway)
 
 1. `package.json` issue: No repository field.
-2. There are no specific keywords in 'package.json'. We would use them as tags on the module list page. Add a few meaningful terms to the keywords in the package.json. Not just “magicmirror” or “module”.
+2. There are no keywords in 'package.json'. We would use them as tags on the module list page.
 3. Typo: Found `Magic Mirror` in file `MMM-PostDelivery-Norway.js`: Replace it with `MagicMirror²`.
 4. Deprecated: Found `require('request')` in file `node_helper.js`: Replace it with built-in fetch ([documentation](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch); [example module with fetch implemented](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/node_helper.js)).
 5. Recommendation: Found `XMLHttpRequest` in file `node_helper.js`: Replace it with built-in fetch ([documentation](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch); [example module with fetch implemented](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/node_helper.js)).
@@ -10888,7 +10861,7 @@ Last update: 2025-10-01T23:26:54+02:00
 
 ### [MMM-Postnord by bureus](https://github.com/bureus/MMM-Postnord)
 
-1. There are no specific keywords in 'package.json'. We would use them as tags on the module list page. Add a few meaningful terms to the keywords in the package.json. Not just “magicmirror” or “module”.
+1. There are no keywords in 'package.json'. We would use them as tags on the module list page.
 2. Typo: Found `Magic Mirror` in file `MMM-Postnord.js`: Replace it with `MagicMirror²`.
 3. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
 4. Deprecated: Found `require("request-promise")` in file `node_helper.js`: Replace it with built-in fetch ([documentation](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch); [example module with fetch implemented](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/node_helper.js)).
@@ -10908,13 +10881,13 @@ Last update: 2025-10-01T23:26:54+02:00
 
 1. `package.json` issue: No repository field.
 2. There are no keywords in 'package.json'. We would use them as tags on the module list page.
-3. Recommendation: Found `jshint` in file `Gruntfile.js`: Replace "jshint" by "eslint".
+3. Recommendation: Found `jshint` in file `Gruntfile.js`: Suggest migrating from JSHint to ESLint.
 4. Typo: Found `Magic Mirror` in file `MMM-Powerwall.js`: Replace it with `MagicMirror²`.
 5. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
 6. Recommendation: Found `'node-fetch'` in file `node_helper.js`: Replace it with built-in fetch ([documentation](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch); [example module with fetch implemented](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/node_helper.js)).
 7. Recommendation: Found `"node-fetch"` in file `package.json`: Replace it with built-in fetch ([documentation](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch); [example module with fetch implemented](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/node_helper.js)).
 8. Recommendation: Found `axios` in file `package.json`: Replace it with built-in fetch ([documentation](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch); [example module with fetch implemented](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/node_helper.js)).
-9. Recommendation: Found `require("https")` in file `powerwall.js`: Replace "https" by "node:https".
+9. Recommendation: Found `require("https")` in file `powerwall.js`: Replace `https` with the scoped import `node:https`.
 10. Recommendation: Found `axios` in file `powerwall.js`: Replace it with built-in fetch ([documentation](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch); [example module with fetch implemented](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/node_helper.js)).
 11. Typo: Found `Magic Mirror` in file `README.md`: Replace it with `MagicMirror²`.
 12. Outdated: Found `MichMich/MagicMirror` in file `README.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
@@ -10932,8 +10905,8 @@ Last update: 2025-10-01T23:26:54+02:00
 
 1. Recommendation: Found `XMLHttpRequest` in file `MMM-PrayerTime.js`: Replace it with built-in fetch ([documentation](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch); [example module with fetch implemented](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/node_helper.js)).
 2. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
-3. Deprecated: Found `omxplayer` in file `node_helper.js`: Try to replace it with `mplayer` or `vlc`.
-4. Deprecated: Found `omxplayer` in file `README.md`: Try to replace it with `mplayer` or `vlc`.
+3. Deprecated: Found `omxplayer` in file `node_helper.js`: Replace OMXPlayer usage with maintained alternatives such as mplayer or VLC.
+4. Deprecated: Found `omxplayer` in file `README.md`: Replace OMXPlayer usage with maintained alternatives such as mplayer or VLC.
 5. Outdated: Found `MichMich/MagicMirror` in file `README.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
 6. Recommendation: The README seems not to have an update section (like `## Update`). Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Update-Instructions)).
 7. Recommendation: The README seems to have a modules array (Found `modules: [`). This is usually not necessary. Please remove it if it is not needed ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Config-Instructions)).
@@ -10960,7 +10933,7 @@ Last update: 2025-10-01T23:26:54+02:00
 
 1. There is no `package.json`. We need this file to gather information about the module for the module list page.
 2. Typo: Found `Magic Mirror` in file `MMM-Pregnancy.js`: Replace it with `MagicMirror²`.
-3. Deprecated: Found `getYear()` in file `MMM-Pregnancy.js`: Replace `getYear()` by `getFullYear()`.
+3. Deprecated: Found `getYear()` in file `MMM-Pregnancy.js`: Replace `getYear()` with `getFullYear()`.
 4. Recommendation: There is no CHANGELOG file. It is recommended to add one ([example CHANGELOG file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CHANGELOG.md)).
 5. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
 6. Recommendation: There is no dependabot configuration file. It is recommended to add one ([example dependabot file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/.github/dependabot.yaml)).
@@ -10968,7 +10941,7 @@ Last update: 2025-10-01T23:26:54+02:00
 
 ### [MMM-PregnancyTracker by gowthamravichandran](https://github.com/gowthamravichandran/MMM-PregnancyTracker)
 
-1. Recommendation: Found `eslint .` in file `package.json`: The period at the end of the command is not necessary since v9. It is recommended to remove it.
+1. Recommendation: Found `eslint .` in file `package.json`: Drop the trailing '.' when invoking ESLint v9 or newer.
 2. Outdated: Found `MichMich/MagicMirror` in file `README.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
 3. Recommendation: The README seems to have a config example without a trailing comma. Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Config-Instructions)).
 4. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
@@ -10979,12 +10952,11 @@ Last update: 2025-10-01T23:26:54+02:00
 1. `package.json` issue: No repository field.
 2. There are no keywords in 'package.json'. We would use them as tags on the module list page.
 3. Issue: The license in the package.json (MIT) doesn't match the license file (NOASSERTION).
-4. No compatible or wrong license field in 'package.json' or LICENSE file. Without that, we can't use an image.
-5. Recommendation: The README seems not to have an update section (like `## Update`). Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Update-Instructions)).
-6. Recommendation: There is no CHANGELOG file. It is recommended to add one ([example CHANGELOG file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CHANGELOG.md)).
-7. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
-8. Recommendation: There is no dependabot configuration file. It is recommended to add one ([example dependabot file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/.github/dependabot.yaml)).
-9. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/eslint.md)).
+4. Recommendation: The README seems not to have an update section (like `## Update`). Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Update-Instructions)).
+5. Recommendation: There is no CHANGELOG file. It is recommended to add one ([example CHANGELOG file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CHANGELOG.md)).
+6. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
+7. Recommendation: There is no dependabot configuration file. It is recommended to add one ([example dependabot file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/.github/dependabot.yaml)).
+8. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/eslint.md)).
 
 ### [MMM-profile by kurtern84](https://github.com/kurtern84/MMM-profile)
 
@@ -11051,18 +11023,18 @@ Last update: 2025-10-01T23:26:54+02:00
 
 1. Repository name and main js file name is not the same.
 2. Typo: Found `Magic Mirror` in file `CONTRIBUTING.md`: Replace it with `MagicMirror²`.
-3. Recommendation: Found `npm run` in file `CONTRIBUTING.md`: Replace it with `node --run`. This is a more modern way to run scripts, without the need for npm.
+3. Recommendation: Found `npm run` in file `CONTRIBUTING.md`: Prefer `node --run` over invoking npm run directly.
 4. Deprecated: Found `"lockfileVersion": 2` in file `package-lock.json`: Run `npm update` to update to lockfileVersion 3.
 5. Recommendation: Found `"node-fetch"` in file `package.json`: Replace it with built-in fetch ([documentation](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch); [example module with fetch implemented](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/node_helper.js)).
-6. Recommendation: Found `npm run` in file `package.json`: Replace it with `node --run`. This is a more modern way to run scripts, without the need for npm.
-7. Outdated: Found `husky install` in file `package.json`: Since husky v9 you may not need this anymore.
+6. Recommendation: Found `npm run` in file `package.json`: Prefer `node --run` over invoking npm run directly.
+7. Outdated: Found `husky install` in file `package.json`: Husky v9 no longer needs manual install scripts.
 8. Recommendation: Found `"node-fetch"` in file `PrometheusService.test.ts`: Replace it with built-in fetch ([documentation](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch); [example module with fetch implemented](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/node_helper.js)).
 9. Recommendation: Found `"node-fetch"` in file `PrometheusService.ts`: Replace it with built-in fetch ([documentation](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch); [example module with fetch implemented](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/node_helper.js)).
-10. Outdated: Found `/_/husky.sh` in file `pre-commit`: Since husky v9 you may not need this anymore.
-11. Recommendation: Found `uses: actions/checkout@v4` in file `node.js.yml`: Replace it with v5.
-12. Recommendation: Found `uses: actions/setup-node@v4` in file `node.js.yml`: Replace it with v5.
-13. Deprecated: Found `node-version: [18` in file `node.js.yml`: Update to current version.
-14. Recommendation: Found `npm run` in file `node.js.yml`: Replace it with `node --run`. This is a more modern way to run scripts, without the need for npm.
+10. Outdated: Found `/_/husky.sh` in file `pre-commit`: Modern Husky setups do not require sourcing husky.sh.
+11. Recommendation: Found `uses: actions/checkout@v4` in file `node.js.yml`: Upgrade workflows to use actions/checkout@v5.
+12. Recommendation: Found `uses: actions/setup-node@v4` in file `node.js.yml`: Upgrade workflows to use actions/setup-node@v5.
+13. Deprecated: Found `node-version: [18` in file `node.js.yml`: Update CI workflows to target a supported Node.js LTS release.
+14. Recommendation: Found `npm run` in file `node.js.yml`: Prefer `node --run` over invoking npm run directly.
 15. Outdated: Found `MichMich/MagicMirror` in file `node.js.yml`: Replace it by `MagicMirrorOrg/MagicMirror`.
 16. Recommendation: There is no CHANGELOG file. It is recommended to add one ([example CHANGELOG file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CHANGELOG.md)).
 17. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
@@ -11072,16 +11044,15 @@ Last update: 2025-10-01T23:26:54+02:00
 ### [MMM-promiedos by matiasmtl](https://github.com/matiasmtl/MMM-promiedos)
 
 1. There is no `package.json`. We need this file to gather information about the module for the module list page.
-2. No compatible or wrong license field in 'package.json' or LICENSE file. Without that, we can't use an image.
-3. Repository name and main js file name is not the same.
-4. Outdated: Found `MichMich/MagicMirror` in file `README.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
-5. Recommendation: The README seems not to have an update section (like `## Update`). Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Update-Instructions)).
-6. Recommendation: The README seems to have a config example without a trailing comma. Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Config-Instructions)).
-7. Recommendation: The README seems to have incorrect clone instructions. Please check the URL.
-8. Recommendation: There is no CHANGELOG file. It is recommended to add one ([example CHANGELOG file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CHANGELOG.md)).
-9. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
-10. Recommendation: There is no dependabot configuration file. It is recommended to add one ([example dependabot file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/.github/dependabot.yaml)).
-11. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/eslint.md)).
+2. Repository name and main js file name is not the same.
+3. Outdated: Found `MichMich/MagicMirror` in file `README.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
+4. Recommendation: The README seems not to have an update section (like `## Update`). Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Update-Instructions)).
+5. Recommendation: The README seems to have a config example without a trailing comma. Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Config-Instructions)).
+6. Recommendation: The README seems to have incorrect clone instructions. Please check the URL.
+7. Recommendation: There is no CHANGELOG file. It is recommended to add one ([example CHANGELOG file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CHANGELOG.md)).
+8. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
+9. Recommendation: There is no dependabot configuration file. It is recommended to add one ([example dependabot file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/.github/dependabot.yaml)).
+10. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/eslint.md)).
 
 ### [MMM-Property-managed by stewartmckee](https://github.com/stewartmckee/MMM-Property-managed)
 
@@ -11089,12 +11060,12 @@ Last update: 2025-10-01T23:26:54+02:00
 2. There are no keywords in 'package.json'. We would use them as tags on the module list page.
 3. No image found.
 4. Repository name and main js file name is not the same.
-5. Recommendation: Found `jshint` in file `Gruntfile.js`: Replace "jshint" by "eslint".
+5. Recommendation: Found `jshint` in file `Gruntfile.js`: Suggest migrating from JSHint to ESLint.
 6. Typo: Found `Magic Mirror` in file `MMM-Property-Managed.js`: Replace it with `MagicMirror²`.
 7. Recommendation: Found `XMLHttpRequest` in file `MMM-Property-Managed.js`: Replace it with built-in fetch ([documentation](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch); [example module with fetch implemented](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/node_helper.js)).
-8. Recommendation: Found `https://cdnjs.cloudflare.com` in file `MMM-Property-Managed.js`: It looks like a package is loaded via CDN. It would be better if the package were installed locally via npm.
+8. Recommendation: Found `https://cdnjs.cloudflare.com` in file `MMM-Property-Managed.js`: Prefer bundling dependencies via npm instead of CDN references.
 9. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
-10. Deprecated: Found `"grunt"` in file `package.json`: Grunt is practically unmaintained. Move on to something better.
+10. Deprecated: Found `"grunt"` in file `package.json`: Grunt is effectively unmaintained. Move on to something modern.
 11. Outdated: Found `MichMich/MagicMirror` in file `README.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
 12. Recommendation: The README seems not to have an update section (like `## Update`). Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Update-Instructions)).
 13. Recommendation: The README seems not to have an install section (like `## Installation`). Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Installation-Instructions)).
@@ -11111,7 +11082,7 @@ Last update: 2025-10-01T23:26:54+02:00
 2. No image found.
 3. Deprecated: Found `"lockfileVersion": 1` in file `package-lock.json`: Run `npm update` to update to lockfileVersion 3.
 4. Typo: Found `Magic Mirror` in file `package.json`: Replace it with `MagicMirror²`.
-5. Deprecated: Found `eslint-config-airbnb` in file `package.json`: Replace it with modern ESLint configuration.
+5. Deprecated: Found `eslint-config-airbnb` in file `package.json`: Replace the preset with a maintained ESLint configuration.
 6. Typo: Found `Magic Mirror` in file `README.md`: Replace it with `MagicMirror²`.
 7. Recommendation: The README seems not to have an update section (like `## Update`). Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Update-Instructions)).
 8. Recommendation: The README seems to have a config example without a trailing comma. Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Config-Instructions)).
@@ -11123,8 +11094,8 @@ Last update: 2025-10-01T23:26:54+02:00
 ### [MMM-PublicTransit by thariq-shanavas](https://github.com/thariq-shanavas/MMM-PublicTransit)
 
 1. Recommendation: Found `"node-fetch"` in file `node_helper.js`: Replace it with built-in fetch ([documentation](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch); [example module with fetch implemented](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/node_helper.js)).
-2. Recommendation: Found `npm run` in file `package.json`: Replace it with `node --run`. This is a more modern way to run scripts, without the need for npm.
-3. Recommendation: Found `eslint .` in file `package.json`: The period at the end of the command is not necessary since v9. It is recommended to remove it.
+2. Recommendation: Found `npm run` in file `package.json`: Prefer `node --run` over invoking npm run directly.
+3. Recommendation: Found `eslint .` in file `package.json`: Drop the trailing '.' when invoking ESLint v9 or newer.
 4. Typo: Found `[MagicMirror]` in file `README.md`: Replace it with `[MagicMirror²]`.
 5. Recommendation: There is no CHANGELOG file. It is recommended to add one ([example CHANGELOG file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CHANGELOG.md)).
 6. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
@@ -11133,7 +11104,7 @@ Last update: 2025-10-01T23:26:54+02:00
 
 ### [MMM-PublicTransportHafas by KristjanESPERANTO](https://github.com/KristjanESPERANTO/MMM-PublicTransportHafas)
 
-1. Recommendation: Found `uses: actions/setup-node@v4` in file `automated-tests.yaml`: Replace it with v5.
+1. Recommendation: Found `uses: actions/setup-node@v4` in file `automated-tests.yaml`: Upgrade workflows to use actions/setup-node@v5.
 2. Information: There are updates for 10 dependencie(s):
    - @eslint/css                  ^0.10.0  →   ^0.11.1
    - @eslint/js                   ^9.34.0  →   ^9.36.0
@@ -11186,8 +11157,8 @@ Last update: 2025-10-01T23:26:54+02:00
 1. Typo: Found `Magic Mirror` in file `MMM-PushBulletNotifications.css`: Replace it with `MagicMirror²`.
 2. Typo: Found `Magic Mirror` in file `MMM-PushBulletNotifications.js`: Replace it with `MagicMirror²`.
 3. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
-4. Recommendation: Found `require('https')` in file `node_helper.js`: Replace 'https' by 'node:https'.
-5. Deprecated: Found `omxplayer` in file `node_helper.js`: Try to replace it with `mplayer` or `vlc`.
+4. Recommendation: Found `require('https')` in file `node_helper.js`: Replace `https` with the scoped import `node:https`.
+5. Deprecated: Found `omxplayer` in file `node_helper.js`: Replace OMXPlayer usage with maintained alternatives such as mplayer or VLC.
 6. Typo: Found `Magic Mirror` in file `README.md`: Replace it with `MagicMirror²`.
 7. Typo: Found `[MagicMirror]` in file `README.md`: Replace it with `[MagicMirror²]`.
 8. Outdated: Found `MichMich/MagicMirror` in file `README.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
@@ -11248,9 +11219,9 @@ Last update: 2025-10-01T23:26:54+02:00
 
 ### [MMM-Quiz by Dennis-Rosenbaum](https://github.com/Dennis-Rosenbaum/MMM-Quiz)
 
-1. Recommendation: Found `npm run` in file `package.json`: Replace it with `node --run`. This is a more modern way to run scripts, without the need for npm.
-2. Recommendation: Found `eslint .` in file `package.json`: The period at the end of the command is not necessary since v9. It is recommended to remove it.
-3. Recommendation: Found `npm run` in file `README.md`: Replace it with `node --run`. This is a more modern way to run scripts, without the need for npm.
+1. Recommendation: Found `npm run` in file `package.json`: Prefer `node --run` over invoking npm run directly.
+2. Recommendation: Found `eslint .` in file `package.json`: Drop the trailing '.' when invoking ESLint v9 or newer.
+3. Recommendation: Found `npm run` in file `README.md`: Prefer `node --run` over invoking npm run directly.
 4. Recommendation: There is no CHANGELOG file. It is recommended to add one ([example CHANGELOG file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CHANGELOG.md)).
 5. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
 6. Recommendation: There is no dependabot configuration file. It is recommended to add one ([example dependabot file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/.github/dependabot.yaml)).
@@ -11301,8 +11272,8 @@ Last update: 2025-10-01T23:26:54+02:00
 ### [MMM-Radarr by gravitykillseverything](https://github.com/gravitykillseverything/MMM-Radarr)
 
 1. There is no `package.json`. We need this file to gather information about the module for the module list page.
-2. Recommendation: Found `require("http")` in file `node_helper.js`: Replace "http" by "node:http".
-3. Recommendation: Found `require("https")` in file `node_helper.js`: Replace "https" by "node:https".
+2. Recommendation: Found `require("http")` in file `node_helper.js`: Replace `http` with the scoped import `node:http`.
+3. Recommendation: Found `require("https")` in file `node_helper.js`: Replace `https` with the scoped import `node:https`.
 4. Recommendation: There is no CHANGELOG file. It is recommended to add one ([example CHANGELOG file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CHANGELOG.md)).
 5. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
 6. Recommendation: There is no dependabot configuration file. It is recommended to add one ([example dependabot file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/.github/dependabot.yaml)).
@@ -11337,16 +11308,15 @@ Last update: 2025-10-01T23:26:54+02:00
 ### [MMM-RAIN-MAP by jalibu](https://github.com/jalibu/MMM-RAIN-MAP)
 
 1. Deprecated: Found `"lockfileVersion": 2` in file `package-lock.json`: Run `npm update` to update to lockfileVersion 3.
-2. Recommendation: Found `npm run` in file `package.json`: Replace it with `node --run`. This is a more modern way to run scripts, without the need for npm.
-3. Recommendation: Found `eslint .` in file `package.json`: The period at the end of the command is not necessary since v9. It is recommended to remove it.
-4. Recommendation: Found `eslint --fix .` in file `package.json`: The period at the end of the command is not necessary since v9. It is recommended to remove it.
-5. Deprecated: Found `rollup-plugin-banner` in file `package.json`: Replace it with built-in banner.
-6. Recommendation: Found `npm run` in file `README.md`: Replace it with `node --run`. This is a more modern way to run scripts, without the need for npm.
-7. Recommendation: The README seems not to have an update section (like `## Update`). Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Update-Instructions)).
-8. Recommendation: There is no CHANGELOG file. It is recommended to add one ([example CHANGELOG file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CHANGELOG.md)).
-9. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
-10. Recommendation: There is no dependabot configuration file. It is recommended to add one ([example dependabot file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/.github/dependabot.yaml)).
-11. Recommendation: The ESLint configuration file `eslint.config.mjs` does not contain `defineConfig`. It is recommended to use it.
+2. Recommendation: Found `npm run` in file `package.json`: Prefer `node --run` over invoking npm run directly.
+3. Recommendation: Found `eslint .` in file `package.json`: Drop the trailing '.' when invoking ESLint v9 or newer.
+4. Deprecated: Found `rollup-plugin-banner` in file `package.json`: Use Rollup's built-in banner support.
+5. Recommendation: Found `npm run` in file `README.md`: Prefer `node --run` over invoking npm run directly.
+6. Recommendation: The README seems not to have an update section (like `## Update`). Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Update-Instructions)).
+7. Recommendation: There is no CHANGELOG file. It is recommended to add one ([example CHANGELOG file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CHANGELOG.md)).
+8. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
+9. Recommendation: There is no dependabot configuration file. It is recommended to add one ([example dependabot file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/.github/dependabot.yaml)).
+10. Recommendation: The ESLint configuration file `eslint.config.mjs` does not contain `defineConfig`. It is recommended to use it.
 
 ### [MMM-RAIN-RADAR by jojoduquartier](https://github.com/jojoduquartier/MMM-RAIN-RADAR)
 
@@ -11383,7 +11353,7 @@ Last update: 2025-10-01T23:26:54+02:00
 5. No image found.
 6. Typo: Found `Magic Mirror` in file `MMM-RainForecast.css`: Replace it with `MagicMirror²`.
 7. Typo: Found `Magic Mirror` in file `MMM-RainForecast.js`: Replace it with `MagicMirror²`.
-8. Recommendation: Found `https://cdnjs.cloudflare.com` in file `MMM-RainForecast.js`: It looks like a package is loaded via CDN. It would be better if the package were installed locally via npm.
+8. Recommendation: Found `https://cdnjs.cloudflare.com` in file `MMM-RainForecast.js`: Prefer bundling dependencies via npm instead of CDN references.
 9. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
 10. Deprecated: Found `"lockfileVersion": 2` in file `package-lock.json`: Run `npm update` to update to lockfileVersion 3.
 11. Typo: Found `[MagicMirror]` in file `README.md`: Replace it with `[MagicMirror²]`.
@@ -11463,7 +11433,7 @@ Last update: 2025-10-01T23:26:54+02:00
 
 1. There is no `package.json`. We need this file to gather information about the module for the module list page.
 2. No image found.
-3. Recommendation: Found `jshint` in file `Gruntfile.js`: Replace "jshint" by "eslint".
+3. Recommendation: Found `jshint` in file `Gruntfile.js`: Suggest migrating from JSHint to ESLint.
 4. Outdated: Found `MichMich/MagicMirror` in file `MMM-RandomYouTubePlayer.js`: Replace it by `MagicMirrorOrg/MagicMirror`.
 5. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
 6. Outdated: Found `MichMich/MagicMirror` in file `README.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
@@ -11477,18 +11447,18 @@ Last update: 2025-10-01T23:26:54+02:00
 ### [MMM-RBB-Weather by nkl-kst](https://github.com/nkl-kst/MMM-RBB-Weather)
 
 1. There are no keywords in 'package.json'. We would use them as tags on the module list page.
-2. Recommendation: Found `npm run` in file `.travis.yml`: Replace it with `node --run`. This is a more modern way to run scripts, without the need for npm.
+2. Recommendation: Found `npm run` in file `.travis.yml`: Prefer `node --run` over invoking npm run directly.
 3. Typo: Found `Magic Mirror` in file `IconMapper.js`: Replace it with `MagicMirror²`.
 4. Typo: Found `Magic Mirror` in file `Logger.js`: Replace it with `MagicMirror²`.
 5. Typo: Found `Magic Mirror` in file `MMM-RBB-Weather.css`: Replace it with `MagicMirror²`.
 6. Typo: Found `Magic Mirror` in file `MMM-RBB-Weather.js`: Replace it with `MagicMirror²`.
 7. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
-8. Recommendation: Found `require('https')` in file `node_helper.js`: Replace 'https' by 'node:https'.
-9. Recommendation: Found `npm run` in file `README.md`: Replace it with `node --run`. This is a more modern way to run scripts, without the need for npm.
+8. Recommendation: Found `require('https')` in file `node_helper.js`: Replace `https` with the scoped import `node:https`.
+9. Recommendation: Found `npm run` in file `README.md`: Prefer `node --run` over invoking npm run directly.
 10. Outdated: Found `MichMich/MagicMirror` in file `README.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
 11. Recommendation: The README seems to have a modules array (Found `modules: [`). This is usually not necessary. Please remove it if it is not needed ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Config-Instructions)).
 12. Recommendation: The README seems to have a config example without a trailing comma. Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Config-Instructions)).
-13. Recommendation: Found `require('https')` in file `EndpointTest.js`: Replace 'https' by 'node:https'.
+13. Recommendation: Found `require('https')` in file `EndpointTest.js`: Replace `https` with the scoped import `node:https`.
 14. Typo: Found `Magic Mirror` in file `MagicMirrorTestEnv.js`: Replace it with `MagicMirror²`.
 15. Outdated: Found `MichMich/MagicMirror` in file `MagicMirrorTestEnv.js`: Replace it by `MagicMirrorOrg/MagicMirror`.
 16. Typo: Found `Magic Mirror` in file `ModuleTest.js`: Replace it with `MagicMirror²`.
@@ -11531,7 +11501,7 @@ Last update: 2025-10-01T23:26:54+02:00
 5. Typo: Found `Magic Mirror` in file `MMM-Recipe.js`: Replace it with `MagicMirror²`.
 6. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
 7. Deprecated: Found `require('request')` in file `node_helper.js`: Replace it with built-in fetch ([documentation](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch); [example module with fetch implemented](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/node_helper.js)).
-8. Recommendation: Found `npm run` in file `nodejs.yml`: Replace it with `node --run`. This is a more modern way to run scripts, without the need for npm.
+8. Recommendation: Found `npm run` in file `nodejs.yml`: Prefer `node --run` over invoking npm run directly.
 9. Typo: Found `MagicMirror2` in file `README.md`: Replace it with `MagicMirror²`.
 10. Recommendation: The README seems not to have an update section (like `## Update`). Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Update-Instructions)).
 11. Recommendation: The README seems not to have an install section (like `## Installation`). Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Installation-Instructions)).
@@ -11567,9 +11537,9 @@ Last update: 2025-10-01T23:26:54+02:00
 6. Deprecated: Found `require('request')` in file `node_helper.js`: Replace it with built-in fetch ([documentation](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch); [example module with fetch implemented](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/node_helper.js)).
 7. Deprecated: Found `"lockfileVersion": 1` in file `package-lock.json`: Run `npm update` to update to lockfileVersion 3.
 8. Typo: Found `Magic Mirror` in file `package.json`: Replace it with `MagicMirror²`.
-9. Recommendation: Found `npm run` in file `package.json`: Replace it with `node --run`. This is a more modern way to run scripts, without the need for npm.
+9. Recommendation: Found `npm run` in file `package.json`: Prefer `node --run` over invoking npm run directly.
 10. Typo: Found `Magic Mirror` in file `README.md`: Replace it with `MagicMirror²`.
-11. Recommendation: Found `npm run` in file `README.md`: Replace it with `node --run`. This is a more modern way to run scripts, without the need for npm.
+11. Recommendation: Found `npm run` in file `README.md`: Prefer `node --run` over invoking npm run directly.
 12. Outdated: Found `MichMich/MagicMirror` in file `README.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
 13. Recommendation: The README seems not to have an update section (like `## Update`). Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Update-Instructions)).
 14. Warning: No LICENSE file ([example LICENSE file](https://github.com/KristjanESPERANTO/MMM-WebSpeechTTS/blob/main/LICENSE.md)).
@@ -11586,7 +11556,7 @@ Last update: 2025-10-01T23:26:54+02:00
 4. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
 5. Recommendation: Found `'node-fetch'` in file `node_helper.js`: Replace it with built-in fetch ([documentation](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch); [example module with fetch implemented](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/node_helper.js)).
 6. Typo: Found `Magic Mirror` in file `package.json`: Replace it with `MagicMirror²`.
-7. Recommendation: Found `npm run` in file `package.json`: Replace it with `node --run`. This is a more modern way to run scripts, without the need for npm.
+7. Recommendation: Found `npm run` in file `package.json`: Prefer `node --run` over invoking npm run directly.
 8. Recommendation: The README seems not to have an update section (like `## Update`). Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Update-Instructions)).
 9. Warning: No LICENSE file ([example LICENSE file](https://github.com/KristjanESPERANTO/MMM-WebSpeechTTS/blob/main/LICENSE.md)).
 10. Recommendation: There is no CHANGELOG file. It is recommended to add one ([example CHANGELOG file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CHANGELOG.md)).
@@ -11659,6 +11629,11 @@ Last update: 2025-10-01T23:26:54+02:00
 8. Recommendation: There is no dependabot configuration file. It is recommended to add one ([example dependabot file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/.github/dependabot.yaml)).
 9. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/eslint.md)).
 
+### [MMM-Remote-Control by Jopyth](https://github.com/Jopyth/MMM-Remote-Control)
+
+1. Information: There are updates for 1 dependencie(s):
+   - swagger-ui-dist  ^5.29.1  →  ^5.29.3
+
 ### [MMM-RemoteCompliments by mitchelltmarino](https://github.com/mitchelltmarino/MMM-RemoteCompliments)
 
 1. There is no `package.json`. We need this file to gather information about the module for the module list page.
@@ -11677,24 +11652,24 @@ Last update: 2025-10-01T23:26:54+02:00
 
 1. Typo: Found `Magic Mirror` in file `MMM-RemoteTemperature.js`: Replace it with `MagicMirror²`.
 2. Deprecated: Found `"lockfileVersion": 1` in file `package-lock.json`: Run `npm update` to update to lockfileVersion 3.
-3. Recommendation: Found `npm run` in file `package.json`: Replace it with `node --run`. This is a more modern way to run scripts, without the need for npm.
-4. Deprecated: Found `eslint-config-airbnb` in file `package.json`: Replace it with modern ESLint configuration.
-5. Recommendation: Found `npm run` in file `README.md`: Replace it with `node --run`. This is a more modern way to run scripts, without the need for npm.
+3. Recommendation: Found `npm run` in file `package.json`: Prefer `node --run` over invoking npm run directly.
+4. Deprecated: Found `eslint-config-airbnb` in file `package.json`: Replace the preset with a maintained ESLint configuration.
+5. Recommendation: Found `npm run` in file `README.md`: Prefer `node --run` over invoking npm run directly.
 6. Outdated: Found `MichMich/MagicMirror` in file `README.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
 7. Recommendation: The README seems not to have an update section (like `## Update`). Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Update-Instructions)).
 8. Recommendation: The README seems not to have an install section (like `## Installation`). Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Installation-Instructions)).
 9. Recommendation: The README seems to have a modules array (Found `modules: [`). This is usually not necessary. Please remove it if it is not needed ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Config-Instructions)).
 10. Recommendation: The README seems to have a config example without a trailing comma. Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Config-Instructions)).
-11. Recommendation: Found `uses: actions/checkout@v2` in file `node.js.yml`: Replace it with v5.
-12. Recommendation: Found `npm run` in file `node.js.yml`: Replace it with `node --run`. This is a more modern way to run scripts, without the need for npm.
+11. Recommendation: Found `uses: actions/checkout@v2` in file `node.js.yml`: Upgrade workflows to use actions/checkout@v5.
+12. Recommendation: Found `npm run` in file `node.js.yml`: Prefer `node --run` over invoking npm run directly.
 13. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
 14. Recommendation: There is no dependabot configuration file. It is recommended to add one ([example dependabot file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/.github/dependabot.yaml)).
 15. Recommendation: Replace eslintrc by new flat config.
 
 ### [MMM-RemoteYoutube by DreamyChloe](https://github.com/DreamyChloe/MMM-RemoteYoutube)
 
-1. Recommendation: Found `npm run` in file `package.json`: Replace it with `node --run`. This is a more modern way to run scripts, without the need for npm.
-2. Recommendation: Found `eslint .` in file `package.json`: The period at the end of the command is not necessary since v9. It is recommended to remove it.
+1. Recommendation: Found `npm run` in file `package.json`: Prefer `node --run` over invoking npm run directly.
+2. Recommendation: Found `eslint .` in file `package.json`: Drop the trailing '.' when invoking ESLint v9 or newer.
 3. Outdated: Found `MichMich/MagicMirror` in file `README.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
 4. Recommendation: There is no CHANGELOG file. It is recommended to add one ([example CHANGELOG file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CHANGELOG.md)).
 5. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
@@ -11777,13 +11752,13 @@ Last update: 2025-10-01T23:26:54+02:00
 
 1. There are no keywords in 'package.json'. We would use them as tags on the module list page.
 2. Typo: Found `Magic Mirror` in file `MMM-RingAlarm.js`: Replace it with `MagicMirror²`.
-3. Recommendation: Found `eslint .` in file `package.json`: The period at the end of the command is not necessary since v9. It is recommended to remove it.
-4. Recommendation: Found `npm run` in file `README.md`: Replace it with `node --run`. This is a more modern way to run scripts, without the need for npm.
+3. Recommendation: Found `eslint .` in file `package.json`: Drop the trailing '.' when invoking ESLint v9 or newer.
+4. Recommendation: Found `npm run` in file `README.md`: Prefer `node --run` over invoking npm run directly.
 5. Outdated: Found `MichMich/MagicMirror` in file `README.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
 6. Recommendation: The README seems not to have an update section (like `## Update`). Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Update-Instructions)).
-7. Recommendation: Found `uses: actions/checkout@v3` in file `nodejs.yml`: Replace it with v5.
-8. Recommendation: Found `uses: actions/setup-node@v3` in file `nodejs.yml`: Replace it with v5.
-9. Recommendation: Found `npm run` in file `nodejs.yml`: Replace it with `node --run`. This is a more modern way to run scripts, without the need for npm.
+7. Recommendation: Found `uses: actions/checkout@v3` in file `nodejs.yml`: Upgrade workflows to use actions/checkout@v5.
+8. Recommendation: Found `uses: actions/setup-node@v3` in file `nodejs.yml`: Upgrade workflows to use actions/setup-node@v5.
+9. Recommendation: Found `npm run` in file `nodejs.yml`: Prefer `node --run` over invoking npm run directly.
 10. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
 11. Recommendation: There is no dependabot configuration file. It is recommended to add one ([example dependabot file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/.github/dependabot.yaml)).
 12. Recommendation: The ESLint configuration file `eslint.config.mjs` does not contain `defineConfig`. It is recommended to use it.
@@ -11792,7 +11767,7 @@ Last update: 2025-10-01T23:26:54+02:00
 
 1. Typo: Found `Magic Mirror` in file `MMM-RMV.js`: Replace it with `MagicMirror²`.
 2. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
-3. Recommendation: Found `require("https")` in file `node_helper.js`: Replace "https" by "node:https".
+3. Recommendation: Found `require("https")` in file `node_helper.js`: Replace `https` with the scoped import `node:https`.
 4. Outdated: Found `MichMich/MagicMirror` in file `README.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
 5. Recommendation: The README seems not to have an update section (like `## Update`). Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Update-Instructions)).
 6. Recommendation: The README seems to have a config example without a trailing comma. Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Config-Instructions)).
@@ -11808,10 +11783,10 @@ Last update: 2025-10-01T23:26:54+02:00
 2. Recommendation: Found `"node-fetch"` in file `node_helper.js`: Replace it with built-in fetch ([documentation](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch); [example module with fetch implemented](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/node_helper.js)).
 3. Deprecated: Found `"lockfileVersion": 2` in file `package-lock.json`: Run `npm update` to update to lockfileVersion 3.
 4. Recommendation: Found `"node-fetch"` in file `package.json`: Replace it with built-in fetch ([documentation](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch); [example module with fetch implemented](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/node_helper.js)).
-5. Recommendation: Found `npm run` in file `package.json`: Replace it with `node --run`. This is a more modern way to run scripts, without the need for npm.
-6. Deprecated: Found `eslint-config-airbnb` in file `package.json`: Replace it with modern ESLint configuration.
-7. Deprecated: Found `rollup-plugin-banner` in file `package.json`: Replace it with built-in banner.
-8. Recommendation: Found `npm run` in file `README.md`: Replace it with `node --run`. This is a more modern way to run scripts, without the need for npm.
+5. Recommendation: Found `npm run` in file `package.json`: Prefer `node --run` over invoking npm run directly.
+6. Deprecated: Found `eslint-config-airbnb` in file `package.json`: Replace the preset with a maintained ESLint configuration.
+7. Deprecated: Found `rollup-plugin-banner` in file `package.json`: Use Rollup's built-in banner support.
+8. Recommendation: Found `npm run` in file `README.md`: Prefer `node --run` over invoking npm run directly.
 9. Recommendation: The README seems not to have an update section (like `## Update`). Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Update-Instructions)).
 10. Recommendation: The README seems to have a config example without a trailing comma. Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Config-Instructions)).
 11. Recommendation: Found `'node-fetch'` in file `rollup.config.js`: Replace it with built-in fetch ([documentation](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch); [example module with fetch implemented](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/node_helper.js)).
@@ -11880,7 +11855,7 @@ Last update: 2025-10-01T23:26:54+02:00
 2. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
 3. Deprecated: Found `"lockfileVersion": 2` in file `package-lock.json`: Run `npm update` to update to lockfileVersion 3.
 4. Typo: Found `Magic Mirror` in file `package.json`: Replace it with `MagicMirror²`.
-5. Recommendation: Found `eslint --fix .` in file `package.json`: The period at the end of the command is not necessary since v9. It is recommended to remove it.
+5. Recommendation: Found `eslint --fix .` in file `package.json`: Drop the trailing '.' when invoking ESLint v9 or newer.
 6. Outdated: Found `MichMich/MagicMirror` in file `README.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
 7. Recommendation: The README seems not to have an update section (like `## Update`). Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Update-Instructions)).
 8. Recommendation: The README seems to have a modules array (Found `modules: [`). This is usually not necessary. Please remove it if it is not needed ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Config-Instructions)).
@@ -11929,9 +11904,9 @@ Last update: 2025-10-01T23:26:54+02:00
 
 1. There are no keywords in 'package.json'. We would use them as tags on the module list page.
 2. No image found.
-3. Recommendation: Found `jshint` in file `Gruntfile.js`: Replace "jshint" by "eslint".
+3. Recommendation: Found `jshint` in file `Gruntfile.js`: Suggest migrating from JSHint to ESLint.
 4. Deprecated: Found `"lockfileVersion": 1` in file `package-lock.json`: Run `npm update` to update to lockfileVersion 3.
-5. Deprecated: Found `"grunt"` in file `package.json`: Grunt is practically unmaintained. Move on to something better.
+5. Deprecated: Found `"grunt"` in file `package.json`: Grunt is effectively unmaintained. Move on to something modern.
 6. Outdated: Found `MichMich/MagicMirror` in file `README.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
 7. Recommendation: The README seems to have a modules array (Found `modules: [`). This is usually not necessary. Please remove it if it is not needed ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Config-Instructions)).
 8. Recommendation: The README seems to have a config example without a trailing comma. Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Config-Instructions)).
@@ -11988,10 +11963,10 @@ Last update: 2025-10-01T23:26:54+02:00
 1. `package.json` issue: No repository field.
 2. There are no keywords in 'package.json'. We would use them as tags on the module list page.
 3. Repository name and main js file name is not the same.
-4. Recommendation: Found `jshint` in file `Gruntfile.js`: Replace "jshint" by "eslint".
+4. Recommendation: Found `jshint` in file `Gruntfile.js`: Suggest migrating from JSHint to ESLint.
 5. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
 6. Deprecated: Found `require('request')` in file `node_helper.js`: Replace it with built-in fetch ([documentation](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch); [example module with fetch implemented](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/node_helper.js)).
-7. Deprecated: Found `"grunt"` in file `package.json`: Grunt is practically unmaintained. Move on to something better.
+7. Deprecated: Found `"grunt"` in file `package.json`: Grunt is effectively unmaintained. Move on to something modern.
 8. Typo: Found `Magic Mirror` in file `README.md`: Replace it with `MagicMirror²`.
 9. Recommendation: The README seems not to have an update section (like `## Update`). Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Update-Instructions)).
 10. Recommendation: The README seems not to have an install section (like `## Installation`). Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Installation-Instructions)).
@@ -12116,7 +12091,7 @@ Last update: 2025-10-01T23:26:54+02:00
 ### [MMM-Scrapey by AndyHazz](https://github.com/AndyHazz/MMM-Scrapey)
 
 1. `package.json` issue: No repository field.
-2. There are no specific keywords in 'package.json'. We would use them as tags on the module list page. Add a few meaningful terms to the keywords in the package.json. Not just “magicmirror” or “module”.
+2. There are no keywords in 'package.json'. We would use them as tags on the module list page.
 3. Recommendation: Found `"node-fetch"` in file `node_helper.js`: Replace it with built-in fetch ([documentation](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch); [example module with fetch implemented](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/node_helper.js)).
 4. Recommendation: Found `"node-fetch"` in file `package.json`: Replace it with built-in fetch ([documentation](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch); [example module with fetch implemented](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/node_helper.js)).
 5. Outdated: Found `MichMich/MagicMirror` in file `README.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
@@ -12139,7 +12114,7 @@ Last update: 2025-10-01T23:26:54+02:00
 
 ### [MMM-Screencast by kevinatown](https://github.com/kevinatown/MMM-Screencast)
 
-1. Recommendation: Found `require('http')` in file `DialServer.js`: Replace 'http' by 'node:http'.
+1. Recommendation: Found `require('http')` in file `DialServer.js`: Replace `http` with the scoped import `node:http`.
 2. Typo: Found `Magic Mirror` in file `MMM-Screencast.js`: Replace it with `MagicMirror²`.
 3. Deprecated: Found `"lockfileVersion": 2` in file `package-lock.json`: Run `npm update` to update to lockfileVersion 3.
 4. Typo: Found `Magic Mirror` in file `package.json`: Replace it with `MagicMirror²`.
@@ -12159,9 +12134,9 @@ Last update: 2025-10-01T23:26:54+02:00
 2. Deprecated: Found `"lockfileVersion": 2` in file `package-lock.json`: Run `npm update` to update to lockfileVersion 3.
 3. Outdated: Found `MichMich/MagicMirror` in file `README.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
 4. Recommendation: The README seems not to have an update section (like `## Update`). Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Update-Instructions)).
-5. Recommendation: Found `uses: actions/checkout@v3` in file `nodejs.yml`: Replace it with v5.
-6. Recommendation: Found `uses: actions/setup-node@v3` in file `nodejs.yml`: Replace it with v5.
-7. Recommendation: Found `npm run` in file `nodejs.yml`: Replace it with `node --run`. This is a more modern way to run scripts, without the need for npm.
+5. Recommendation: Found `uses: actions/checkout@v3` in file `nodejs.yml`: Upgrade workflows to use actions/checkout@v5.
+6. Recommendation: Found `uses: actions/setup-node@v3` in file `nodejs.yml`: Upgrade workflows to use actions/setup-node@v5.
+7. Recommendation: Found `npm run` in file `nodejs.yml`: Prefer `node --run` over invoking npm run directly.
 8. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
 9. Recommendation: There is no dependabot configuration file. It is recommended to add one ([example dependabot file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/.github/dependabot.yaml)).
 10. Recommendation: Replace eslintrc by new flat config.
@@ -12170,7 +12145,7 @@ Last update: 2025-10-01T23:26:54+02:00
 
 1. Typo: Found `Magic Mirror` in file `MMM-ScriptScheduler.js`: Replace it with `MagicMirror²`.
 2. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
-3. Recommendation: Found `jshint` in file `node_helper.js`: Replace "jshint" by "eslint".
+3. Recommendation: Found `jshint` in file `node_helper.js`: Suggest migrating from JSHint to ESLint.
 4. Deprecated: Found `"lockfileVersion": 1` in file `package-lock.json`: Run `npm update` to update to lockfileVersion 3.
 5. Typo: Found `Magic Mirror` in file `README.md`: Replace it with `MagicMirror²`.
 6. Recommendation: The README seems not to have an update section (like `## Update`). Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Update-Instructions)).
@@ -12198,10 +12173,10 @@ Last update: 2025-10-01T23:26:54+02:00
 
 1. `package.json` issue: No repository field.
 2. There are no keywords in 'package.json'. We would use them as tags on the module list page.
-3. Recommendation: Found `jshint` in file `Gruntfile.js`: Replace "jshint" by "eslint".
+3. Recommendation: Found `jshint` in file `Gruntfile.js`: Suggest migrating from JSHint to ESLint.
 4. Typo: Found `Magic Mirror` in file `MMM-SE-Reputation.js`: Replace it with `MagicMirror²`.
 5. Recommendation: Found `XMLHttpRequest` in file `MMM-SE-Reputation.js`: Replace it with built-in fetch ([documentation](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch); [example module with fetch implemented](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/node_helper.js)).
-6. Deprecated: Found `"grunt"` in file `package.json`: Grunt is practically unmaintained. Move on to something better.
+6. Deprecated: Found `"grunt"` in file `package.json`: Grunt is effectively unmaintained. Move on to something modern.
 7. Outdated: Found `MichMich/MagicMirror` in file `README.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
 8. Recommendation: The README seems not to have an update section (like `## Update`). Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Update-Instructions)).
 9. Recommendation: The README seems to have a modules array (Found `modules: [`). This is usually not necessary. Please remove it if it is not needed ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Config-Instructions)).
@@ -12227,7 +12202,7 @@ Last update: 2025-10-01T23:26:54+02:00
 1. There is no `package.json`. We need this file to gather information about the module for the module list page.
 2. Typo: Found `Magic Mirror` in file `MMM-SeawayLockTraffic.js`: Replace it with `MagicMirror²`.
 3. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
-4. Recommendation: Found `require('http')` in file `node_helper.js`: Replace 'http' by 'node:http'.
+4. Recommendation: Found `require('http')` in file `node_helper.js`: Replace `http` with the scoped import `node:http`.
 5. Recommendation: The README seems not to have an update section (like `## Update`). Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Update-Instructions)).
 6. Recommendation: The README seems not to have an install section (like `## Installation`). Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Installation-Instructions)).
 7. Recommendation: The README seems to have incorrect clone instructions. Please check the URL.
@@ -12469,12 +12444,12 @@ Last update: 2025-10-01T23:26:54+02:00
 
 ### [MMM-ShipmentTracking by fewieden](https://github.com/fewieden/MMM-ShipmentTracking)
 
-1. Recommendation: Found `npm run` in file `.travis.yml`: Replace it with `node --run`. This is a more modern way to run scripts, without the need for npm.
+1. Recommendation: Found `npm run` in file `.travis.yml`: Prefer `node --run` over invoking npm run directly.
 2. Typo: Found `Magic Mirror` in file `MMM-ShipmentTracking.js`: Replace it with `MagicMirror²`.
 3. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
 4. Typo: Found `MagicMirror2` in file `package.json`: Replace it with `MagicMirror²`.
-5. Recommendation: Found `eslint .` in file `package.json`: The period at the end of the command is not necessary since v9. It is recommended to remove it.
-6. Deprecated: Found `eslint-config-airbnb` in file `package.json`: Replace it with modern ESLint configuration.
+5. Recommendation: Found `eslint .` in file `package.json`: Drop the trailing '.' when invoking ESLint v9 or newer.
+6. Deprecated: Found `eslint-config-airbnb` in file `package.json`: Replace the preset with a maintained ESLint configuration.
 7. Outdated: Found `MichMich/MagicMirror` in file `README.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
 8. Recommendation: The README seems not to have an update section (like `## Update`). Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Update-Instructions)).
 9. Recommendation: The README seems to have a config example without a trailing comma. Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Config-Instructions)).
@@ -12492,7 +12467,7 @@ Last update: 2025-10-01T23:26:54+02:00
 
 ### [MMM-SHL by bureus](https://github.com/bureus/MMM-SHL)
 
-1. There are no specific keywords in 'package.json'. We would use them as tags on the module list page. Add a few meaningful terms to the keywords in the package.json. Not just “magicmirror” or “module”.
+1. There are no keywords in 'package.json'. We would use them as tags on the module list page.
 2. Deprecated: Found `require("request-promise")` in file `node_helper.js`: Replace it with built-in fetch ([documentation](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch); [example module with fetch implemented](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/node_helper.js)).
 3. Typo: Found `Magic Mirror` in file `package.json`: Replace it with `MagicMirror²`.
 4. Typo: Found `Magic Mirror` in file `README.md`: Replace it with `MagicMirror²`.
@@ -12583,17 +12558,17 @@ Last update: 2025-10-01T23:26:54+02:00
 
 1. Typo: Found `Magic Mirror` in file `MMM-SingleStock.js`: Replace it with `MagicMirror²`.
 2. Recommendation: Found `XMLHttpRequest` in file `MMM-SingleStock.js`: Replace it with built-in fetch ([documentation](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch); [example module with fetch implemented](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/node_helper.js)).
-3. Recommendation: Found `npm run` in file `package.json`: Replace it with `node --run`. This is a more modern way to run scripts, without the need for npm.
-4. Deprecated: Found `eslint-config-airbnb` in file `package.json`: Replace it with modern ESLint configuration.
-5. Recommendation: Found `npm run` in file `README.md`: Replace it with `node --run`. This is a more modern way to run scripts, without the need for npm.
+3. Recommendation: Found `npm run` in file `package.json`: Prefer `node --run` over invoking npm run directly.
+4. Deprecated: Found `eslint-config-airbnb` in file `package.json`: Replace the preset with a maintained ESLint configuration.
+5. Recommendation: Found `npm run` in file `README.md`: Prefer `node --run` over invoking npm run directly.
 6. Outdated: Found `MichMich/MagicMirror` in file `README.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
 7. Recommendation: The README seems not to have an update section (like `## Update`). Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Update-Instructions)).
 8. Recommendation: The README seems not to have an install section (like `## Installation`). Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Installation-Instructions)).
 9. Recommendation: The README seems to have a modules array (Found `modules: [`). This is usually not necessary. Please remove it if it is not needed ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Config-Instructions)).
 10. Recommendation: The README seems to have a config example without a trailing comma. Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Config-Instructions)).
-11. Recommendation: Found `uses: actions/checkout@v4` in file `build.yml`: Replace it with v5.
-12. Recommendation: Found `uses: actions/setup-node@v4` in file `build.yml`: Replace it with v5.
-13. Recommendation: Found `npm run` in file `build.yml`: Replace it with `node --run`. This is a more modern way to run scripts, without the need for npm.
+11. Recommendation: Found `uses: actions/checkout@v4` in file `build.yml`: Upgrade workflows to use actions/checkout@v5.
+12. Recommendation: Found `uses: actions/setup-node@v4` in file `build.yml`: Upgrade workflows to use actions/setup-node@v5.
+13. Recommendation: Found `npm run` in file `build.yml`: Prefer `node --run` over invoking npm run directly.
 14. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
 15. Recommendation: There is no dependabot configuration file. It is recommended to add one ([example dependabot file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/.github/dependabot.yaml)).
 16. Recommendation: Replace eslintrc by new flat config.
@@ -12603,15 +12578,14 @@ Last update: 2025-10-01T23:26:54+02:00
 1. `package.json` issue: No repository field.
 2. There are no keywords in 'package.json'. We would use them as tags on the module list page.
 3. Issue: The license in the package.json (MIT) doesn't match the license file (NOASSERTION).
-4. No compatible or wrong license field in 'package.json' or LICENSE file. Without that, we can't use an image.
-5. Typo: Found `Magic Mirror` in file `package.json`: Replace it with `MagicMirror²`.
-6. Recommendation: The README seems not to have an update section (like `## Update`). Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Update-Instructions)).
-7. Recommendation: The README seems not to have an install section (like `## Installation`). Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Installation-Instructions)).
-8. Recommendation: The README seems to have a config example without a trailing comma. Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Config-Instructions)).
-9. Recommendation: There is no CHANGELOG file. It is recommended to add one ([example CHANGELOG file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CHANGELOG.md)).
-10. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
-11. Recommendation: There is no dependabot configuration file. It is recommended to add one ([example dependabot file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/.github/dependabot.yaml)).
-12. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/eslint.md)).
+4. Typo: Found `Magic Mirror` in file `package.json`: Replace it with `MagicMirror²`.
+5. Recommendation: The README seems not to have an update section (like `## Update`). Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Update-Instructions)).
+6. Recommendation: The README seems not to have an install section (like `## Installation`). Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Installation-Instructions)).
+7. Recommendation: The README seems to have a config example without a trailing comma. Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Config-Instructions)).
+8. Recommendation: There is no CHANGELOG file. It is recommended to add one ([example CHANGELOG file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CHANGELOG.md)).
+9. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
+10. Recommendation: There is no dependabot configuration file. It is recommended to add one ([example dependabot file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/.github/dependabot.yaml)).
+11. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/eslint.md)).
 
 ### [MMM-Skola24 by retroflex](https://github.com/retroflex/MMM-Skola24)
 
@@ -12644,7 +12618,7 @@ Last update: 2025-10-01T23:26:54+02:00
 4. Issue: The license in the package.json (ISC) doesn't match the license file (MIT).
 5. Typo: Found `Magic Mirror` in file `MMM-Skyss.js`: Replace it with `MagicMirror²`.
 6. Recommendation: Found `XMLHttpRequest` in file `MMM-Skyss.js`: Replace it with built-in fetch ([documentation](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch); [example module with fetch implemented](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/node_helper.js)).
-7. Recommendation: Found `require("https")` in file `node_helper.js`: Replace "https" by "node:https".
+7. Recommendation: Found `require("https")` in file `node_helper.js`: Replace `https` with the scoped import `node:https`.
 8. Recommendation: The README seems not to have an update section (like `## Update`). Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Update-Instructions)).
 9. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
 10. Recommendation: There is no dependabot configuration file. It is recommended to add one ([example dependabot file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/.github/dependabot.yaml)).
@@ -12690,18 +12664,18 @@ Last update: 2025-10-01T23:26:54+02:00
 
 ### [MMM-slamfm-playing-now by ngnijland](https://github.com/ngnijland/MMM-slamfm-playing-now)
 
-1. Recommendation: Found `npm run` in file `CONTRIBUTING.md`: Replace it with `node --run`. This is a more modern way to run scripts, without the need for npm.
+1. Recommendation: Found `npm run` in file `CONTRIBUTING.md`: Prefer `node --run` over invoking npm run directly.
 2. Typo: Found `Magic Mirror` in file `MMM-slamfm-playing-now.js`: Replace it with `MagicMirror²`.
-3. Recommendation: Found `require('https')` in file `node_helper.js`: Replace 'https' by 'node:https'.
+3. Recommendation: Found `require('https')` in file `node_helper.js`: Replace `https` with the scoped import `node:https`.
 4. Deprecated: Found `"lockfileVersion": 1` in file `package-lock.json`: Run `npm update` to update to lockfileVersion 3.
-5. Recommendation: Found `eslint .` in file `package.json`: The period at the end of the command is not necessary since v9. It is recommended to remove it.
-6. Deprecated: Found `eslint-config-airbnb` in file `package.json`: Replace it with modern ESLint configuration.
+5. Recommendation: Found `eslint .` in file `package.json`: Drop the trailing '.' when invoking ESLint v9 or newer.
+6. Deprecated: Found `eslint-config-airbnb` in file `package.json`: Replace the preset with a maintained ESLint configuration.
 7. Typo: Found `Magic Mirror` in file `README.md`: Replace it with `MagicMirror²`.
 8. Recommendation: The README seems not to have an update section (like `## Update`). Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Update-Instructions)).
 9. Recommendation: The README seems to have a modules array (Found `modules: [`). This is usually not necessary. Please remove it if it is not needed ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Config-Instructions)).
 10. Recommendation: The README seems to have a config example without a trailing comma. Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Config-Instructions)).
-11. Recommendation: Found `uses: actions/checkout@v2` in file `nodejs.yml`: Replace it with v5.
-12. Recommendation: Found `npm run` in file `nodejs.yml`: Replace it with `node --run`. This is a more modern way to run scripts, without the need for npm.
+11. Recommendation: Found `uses: actions/checkout@v2` in file `nodejs.yml`: Upgrade workflows to use actions/checkout@v5.
+12. Recommendation: Found `npm run` in file `nodejs.yml`: Prefer `node --run` over invoking npm run directly.
 13. Recommendation: There is no CHANGELOG file. It is recommended to add one ([example CHANGELOG file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CHANGELOG.md)).
 14. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
 15. Recommendation: There is no dependabot configuration file. It is recommended to add one ([example dependabot file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/.github/dependabot.yaml)).
@@ -12742,7 +12716,7 @@ Last update: 2025-10-01T23:26:54+02:00
 3. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
 4. Deprecated: Found `require('request-promise')` in file `node_helper.js`: Replace it with built-in fetch ([documentation](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch); [example module with fetch implemented](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/node_helper.js)).
 5. Typo: Found `Magic Mirror` in file `package.json`: Replace it with `MagicMirror²`.
-6. Recommendation: Found `npm run` in file `package.json`: Replace it with `node --run`. This is a more modern way to run scripts, without the need for npm.
+6. Recommendation: Found `npm run` in file `package.json`: Prefer `node --run` over invoking npm run directly.
 7. Recommendation: The README seems not to have an update section (like `## Update`). Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Update-Instructions)).
 8. Recommendation: There is no CHANGELOG file. It is recommended to add one ([example CHANGELOG file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CHANGELOG.md)).
 9. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
@@ -12852,23 +12826,23 @@ Last update: 2025-10-01T23:26:54+02:00
 
 ### [MMM-soccer by fewieden](https://github.com/fewieden/MMM-soccer)
 
-1. Recommendation: Found `npm run` in file `.travis.yml`: Replace it with `node --run`. This is a more modern way to run scripts, without the need for npm.
+1. Recommendation: Found `npm run` in file `.travis.yml`: Prefer `node --run` over invoking npm run directly.
 2. Outdated: Found `MichMich/MagicMirror` in file `MMM-soccer.js`: Replace it by `MagicMirrorOrg/MagicMirror`.
 3. Recommendation: Found `'node-fetch'` in file `node_helper.js`: Replace it with built-in fetch ([documentation](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch); [example module with fetch implemented](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/node_helper.js)).
 4. Outdated: Found `MichMich/MagicMirror` in file `node_helper.js`: Replace it by `MagicMirrorOrg/MagicMirror`.
 5. Deprecated: Found `"lockfileVersion": 1` in file `package-lock.json`: Run `npm update` to update to lockfileVersion 3.
 6. Typo: Found `MagicMirror2` in file `package.json`: Replace it with `MagicMirror²`.
 7. Recommendation: Found `"node-fetch"` in file `package.json`: Replace it with built-in fetch ([documentation](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch); [example module with fetch implemented](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/node_helper.js)).
-8. Recommendation: Found `eslint .` in file `package.json`: The period at the end of the command is not necessary since v9. It is recommended to remove it.
-9. Recommendation: Found `npm run` in file `README.md`: Replace it with `node --run`. This is a more modern way to run scripts, without the need for npm.
+8. Recommendation: Found `eslint .` in file `package.json`: Drop the trailing '.' when invoking ESLint v9 or newer.
+9. Recommendation: Found `npm run` in file `README.md`: Prefer `node --run` over invoking npm run directly.
 10. Outdated: Found `MichMich/MagicMirror` in file `README.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
 11. Recommendation: The README seems not to have an update section (like `## Update`). Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Update-Instructions)).
 12. Recommendation: The README seems to have a config example without a trailing comma. Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Config-Instructions)).
 13. Recommendation: The README seems not to have clone instructions.
-14. Recommendation: Found `uses: actions/checkout@v2` in file `build.yml`: Replace it with v5.
-15. Recommendation: Found `npm run` in file `build.yml`: Replace it with `node --run`. This is a more modern way to run scripts, without the need for npm.
-16. Recommendation: Found `uses: actions/checkout@v2` in file `coverage.yml`: Replace it with v5.
-17. Recommendation: Found `npm run` in file `coverage.yml`: Replace it with `node --run`. This is a more modern way to run scripts, without the need for npm.
+14. Recommendation: Found `uses: actions/checkout@v2` in file `build.yml`: Upgrade workflows to use actions/checkout@v5.
+15. Recommendation: Found `npm run` in file `build.yml`: Prefer `node --run` over invoking npm run directly.
+16. Recommendation: Found `uses: actions/checkout@v2` in file `coverage.yml`: Upgrade workflows to use actions/checkout@v5.
+17. Recommendation: Found `npm run` in file `coverage.yml`: Prefer `node --run` over invoking npm run directly.
 18. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
 19. Recommendation: There is no dependabot configuration file. It is recommended to add one ([example dependabot file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/.github/dependabot.yaml)).
 20. Recommendation: Replace eslintrc by new flat config.
@@ -12876,10 +12850,10 @@ Last update: 2025-10-01T23:26:54+02:00
 ### [MMM-SoccerLiveScore by 0m4r](https://github.com/0m4r/MMM-SoccerLiveScore)
 
 1. Deprecated: Found `"lockfileVersion": 2` in file `package-lock.json`: Run `npm update` to update to lockfileVersion 3.
-2. Recommendation: Found `eslint .` in file `package.json`: The period at the end of the command is not necessary since v9. It is recommended to remove it.
+2. Recommendation: Found `eslint .` in file `package.json`: Drop the trailing '.' when invoking ESLint v9 or newer.
 3. Recommendation: The README seems not to have an update section (like `## Update`). Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Update-Instructions)).
-4. Recommendation: Found `uses: actions/checkout@v4` in file `github-traffic-action_cron-trigger.yml`: Replace it with v5.
-5. Recommendation: Found `uses: actions/checkout@v4` in file `github-traffic-action_manual-trigger.yml`: Replace it with v5.
+4. Recommendation: Found `uses: actions/checkout@v4` in file `github-traffic-action_cron-trigger.yml`: Upgrade workflows to use actions/checkout@v5.
+5. Recommendation: Found `uses: actions/checkout@v4` in file `github-traffic-action_manual-trigger.yml`: Upgrade workflows to use actions/checkout@v5.
 6. Recommendation: There is no CHANGELOG file. It is recommended to add one ([example CHANGELOG file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CHANGELOG.md)).
 7. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
 8. Recommendation: There is no dependabot configuration file. It is recommended to add one ([example dependabot file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/.github/dependabot.yaml)).
@@ -12887,17 +12861,17 @@ Last update: 2025-10-01T23:26:54+02:00
 
 ### [MMM-social-counter by ngnijland](https://github.com/ngnijland/MMM-social-counter)
 
-1. Recommendation: Found `npm run` in file `CONTRIBUTING.md`: Replace it with `node --run`. This is a more modern way to run scripts, without the need for npm.
+1. Recommendation: Found `npm run` in file `CONTRIBUTING.md`: Prefer `node --run` over invoking npm run directly.
 2. Typo: Found `Magic Mirror` in file `MMM-social-counter.js`: Replace it with `MagicMirror²`.
-3. Recommendation: Found `require('https')` in file `node_helper.js`: Replace 'https' by 'node:https'.
+3. Recommendation: Found `require('https')` in file `node_helper.js`: Replace `https` with the scoped import `node:https`.
 4. Deprecated: Found `"lockfileVersion": 1` in file `package-lock.json`: Run `npm update` to update to lockfileVersion 3.
-5. Recommendation: Found `eslint .` in file `package.json`: The period at the end of the command is not necessary since v9. It is recommended to remove it.
-6. Deprecated: Found `eslint-config-airbnb` in file `package.json`: Replace it with modern ESLint configuration.
+5. Recommendation: Found `eslint .` in file `package.json`: Drop the trailing '.' when invoking ESLint v9 or newer.
+6. Deprecated: Found `eslint-config-airbnb` in file `package.json`: Replace the preset with a maintained ESLint configuration.
 7. Recommendation: The README seems not to have an update section (like `## Update`). Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Update-Instructions)).
 8. Recommendation: The README seems to have a modules array (Found `modules: [`). This is usually not necessary. Please remove it if it is not needed ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Config-Instructions)).
 9. Recommendation: The README seems to have a config example without a trailing comma. Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Config-Instructions)).
-10. Recommendation: Found `uses: actions/checkout@v2` in file `nodejs.yml`: Replace it with v5.
-11. Recommendation: Found `npm run` in file `nodejs.yml`: Replace it with `node --run`. This is a more modern way to run scripts, without the need for npm.
+10. Recommendation: Found `uses: actions/checkout@v2` in file `nodejs.yml`: Upgrade workflows to use actions/checkout@v5.
+11. Recommendation: Found `npm run` in file `nodejs.yml`: Prefer `node --run` over invoking npm run directly.
 12. Recommendation: There is no CHANGELOG file. It is recommended to add one ([example CHANGELOG file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CHANGELOG.md)).
 13. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
 14. Recommendation: There is no dependabot configuration file. It is recommended to add one ([example dependabot file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/.github/dependabot.yaml)).
@@ -12948,12 +12922,12 @@ Last update: 2025-10-01T23:26:54+02:00
 
 1. `package.json` issue: No repository field.
 2. There are no keywords in 'package.json'. We would use them as tags on the module list page.
-3. Recommendation: Found `jshint` in file `Gruntfile.js`: Replace "jshint" by "eslint".
+3. Recommendation: Found `jshint` in file `Gruntfile.js`: Suggest migrating from JSHint to ESLint.
 4. Typo: Found `Magic Mirror` in file `MMM-SolarEdge.js`: Replace it with `MagicMirror²`.
 5. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
-6. Recommendation: Found `require("http")` in file `node_helper.js`: Replace "http" by "node:http".
-7. Recommendation: Found `require("https")` in file `node_helper.js`: Replace "https" by "node:https".
-8. Deprecated: Found `"grunt"` in file `package.json`: Grunt is practically unmaintained. Move on to something better.
+6. Recommendation: Found `require("http")` in file `node_helper.js`: Replace `http` with the scoped import `node:http`.
+7. Recommendation: Found `require("https")` in file `node_helper.js`: Replace `https` with the scoped import `node:https`.
+8. Deprecated: Found `"grunt"` in file `package.json`: Grunt is effectively unmaintained. Move on to something modern.
 9. Typo: Found `MagicMirror2` in file `README.md`: Replace it with `MagicMirror²`.
 10. Outdated: Found `MichMich/MagicMirror` in file `README.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
 11. Recommendation: The README seems not to have an update section (like `## Update`). Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Update-Instructions)).
@@ -12992,7 +12966,7 @@ Last update: 2025-10-01T23:26:54+02:00
 
 ### [MMM-Solarman by utzl](https://github.com/utzl/MMM-Solarman)
 
-1. There are no specific keywords in 'package.json'. We would use them as tags on the module list page. Add a few meaningful terms to the keywords in the package.json. Not just “magicmirror” or “module”.
+1. There are no keywords in 'package.json'. We would use them as tags on the module list page.
 2. Typo: Found `Magic Mirror` in file `MMM-Solarman.js`: Replace it with `MagicMirror²`.
 3. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
 4. Deprecated: Found `require("request")` in file `node_helper.js`: Replace it with built-in fetch ([documentation](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch); [example module with fetch implemented](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/node_helper.js)).
@@ -13020,20 +12994,19 @@ Last update: 2025-10-01T23:26:54+02:00
 ### [MMM-SolaxPV by KayosPi](https://github.com/KayosPi/MMM-SolaxPV)
 
 1. There is no `package.json`. We need this file to gather information about the module for the module list page.
-2. No compatible or wrong license field in 'package.json' or LICENSE file. Without that, we can't use an image.
-3. Repository name and main js file name is not the same.
-4. Recommendation: Found `require("https")` in file `node_helper.js`: Replace "https" by "node:https".
-5. Recommendation: The README seems not to have an update section (like `## Update`). Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Update-Instructions)).
-6. Recommendation: The README seems to have a config example without a trailing comma. Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Config-Instructions)).
-7. Recommendation: The README seems to have incorrect clone instructions. Please check the URL.
-8. Recommendation: There is no CHANGELOG file. It is recommended to add one ([example CHANGELOG file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CHANGELOG.md)).
-9. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
-10. Recommendation: There is no dependabot configuration file. It is recommended to add one ([example dependabot file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/.github/dependabot.yaml)).
-11. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/eslint.md)).
+2. Repository name and main js file name is not the same.
+3. Recommendation: Found `require("https")` in file `node_helper.js`: Replace `https` with the scoped import `node:https`.
+4. Recommendation: The README seems not to have an update section (like `## Update`). Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Update-Instructions)).
+5. Recommendation: The README seems to have a config example without a trailing comma. Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Config-Instructions)).
+6. Recommendation: The README seems to have incorrect clone instructions. Please check the URL.
+7. Recommendation: There is no CHANGELOG file. It is recommended to add one ([example CHANGELOG file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CHANGELOG.md)).
+8. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
+9. Recommendation: There is no dependabot configuration file. It is recommended to add one ([example dependabot file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/.github/dependabot.yaml)).
+10. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/eslint.md)).
 
 ### [MMM-Soliscloud by dekinet](https://github.com/dekinet/MMM-Soliscloud)
 
-1. Deprecated: Found `npm install electron-rebuild` in file `postinstall`: Replace it with `@electron/rebuild`
+1. Deprecated: Found `npm install electron-rebuild` in file `postinstall`: Install `@electron/rebuild` instead of the deprecated package.
 2. Recommendation: There is no CHANGELOG file. It is recommended to add one ([example CHANGELOG file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CHANGELOG.md)).
 3. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
 4. Recommendation: There is no dependabot configuration file. It is recommended to add one ([example dependabot file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/.github/dependabot.yaml)).
@@ -13052,8 +13025,8 @@ Last update: 2025-10-01T23:26:54+02:00
 ### [MMM-Sonarr by gravitykillseverything](https://github.com/gravitykillseverything/MMM-Sonarr)
 
 1. There is no `package.json`. We need this file to gather information about the module for the module list page.
-2. Recommendation: Found `require("http")` in file `node_helper.js`: Replace "http" by "node:http".
-3. Recommendation: Found `require("https")` in file `node_helper.js`: Replace "https" by "node:https".
+2. Recommendation: Found `require("http")` in file `node_helper.js`: Replace `http` with the scoped import `node:http`.
+3. Recommendation: Found `require("https")` in file `node_helper.js`: Replace `https` with the scoped import `node:https`.
 4. Recommendation: There is no CHANGELOG file. It is recommended to add one ([example CHANGELOG file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CHANGELOG.md)).
 5. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
 6. Recommendation: There is no dependabot configuration file. It is recommended to add one ([example dependabot file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/.github/dependabot.yaml)).
@@ -13068,10 +13041,10 @@ Last update: 2025-10-01T23:26:54+02:00
 5. Outdated: Found `MichMich/MagicMirror` in file `README.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
 6. Recommendation: The README seems not to have an update section (like `## Update`). Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Update-Instructions)).
 7. Recommendation: The README seems to have a config example without a trailing comma. Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Config-Instructions)).
-8. Recommendation: Found `uses: actions/checkout@v4` in file `validation.yml`: Replace it with v5.
-9. Recommendation: Found `uses: actions/setup-node@v4` in file `validation.yml`: Replace it with v5.
-10. Deprecated: Found `node-version: 18` in file `validation.yml`: Update to current version.
-11. Recommendation: Found `npm run` in file `validation.yml`: Replace it with `node --run`. This is a more modern way to run scripts, without the need for npm.
+8. Recommendation: Found `uses: actions/checkout@v4` in file `validation.yml`: Upgrade workflows to use actions/checkout@v5.
+9. Recommendation: Found `uses: actions/setup-node@v4` in file `validation.yml`: Upgrade workflows to use actions/setup-node@v5.
+10. Deprecated: Found `node-version: 18` in file `validation.yml`: Update CI workflows to target a supported Node.js LTS release.
+11. Recommendation: Found `npm run` in file `validation.yml`: Prefer `node --run` over invoking npm run directly.
 12. Recommendation: There is no CHANGELOG file. It is recommended to add one ([example CHANGELOG file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CHANGELOG.md)).
 13. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
 14. Recommendation: There is no dependabot configuration file. It is recommended to add one ([example dependabot file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/.github/dependabot.yaml)).
@@ -13086,7 +13059,7 @@ Last update: 2025-10-01T23:26:54+02:00
 5. Recommendation: The README seems not to have an install section (like `## Installation`). Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Installation-Instructions)).
 6. Recommendation: The README seems to have a modules array (Found `modules: [`). This is usually not necessary. Please remove it if it is not needed ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Config-Instructions)).
 7. Recommendation: The README seems to have a config example without a trailing comma. Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Config-Instructions)).
-8. Recommendation: Found `uses: actions/checkout@v2` in file `codeql-analysis.yml`: Replace it with v5.
+8. Recommendation: Found `uses: actions/checkout@v2` in file `codeql-analysis.yml`: Upgrade workflows to use actions/checkout@v5.
 9. Recommendation: Found `git checkout` in file `codeql-analysis.yml`: Replace it with `git switch`. It's not a drop-in replacement, so make sure to check the documentation.
 10. Recommendation: There is no CHANGELOG file. It is recommended to add one ([example CHANGELOG file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CHANGELOG.md)).
 11. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
@@ -13164,7 +13137,7 @@ Last update: 2025-10-01T23:26:54+02:00
 1. There is no `package.json`. We need this file to gather information about the module for the module list page.
 2. Typo: Found `Magic Mirror` in file `MMM-SpotifyConnectUI.js`: Replace it with `MagicMirror²`.
 3. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
-4. Recommendation: Found `require('http')` in file `node_helper.js`: Replace 'http' by 'node:http'.
+4. Recommendation: Found `require('http')` in file `node_helper.js`: Replace `http` with the scoped import `node:http`.
 5. Recommendation: The README seems not to have an update section (like `## Update`). Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Update-Instructions)).
 6. Recommendation: The README seems to have a modules array (Found `modules: [`). This is usually not necessary. Please remove it if it is not needed ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Config-Instructions)).
 7. Recommendation: The README seems to have a config example without a trailing comma. Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Config-Instructions)).
@@ -13216,18 +13189,18 @@ Last update: 2025-10-01T23:26:54+02:00
 
 1. Repository name and main js file name is not the same.
 2. Typo: Found `Magic Mirror` in file `CONTRIBUTING.md`: Replace it with `MagicMirror²`.
-3. Recommendation: Found `npm run` in file `CONTRIBUTING.md`: Replace it with `node --run`. This is a more modern way to run scripts, without the need for npm.
+3. Recommendation: Found `npm run` in file `CONTRIBUTING.md`: Prefer `node --run` over invoking npm run directly.
 4. Deprecated: Found `"lockfileVersion": 2` in file `package-lock.json`: Run `npm update` to update to lockfileVersion 3.
 5. Recommendation: Found `"node-fetch"` in file `package.json`: Replace it with built-in fetch ([documentation](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch); [example module with fetch implemented](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/node_helper.js)).
-6. Recommendation: Found `npm run` in file `package.json`: Replace it with `node --run`. This is a more modern way to run scripts, without the need for npm.
-7. Outdated: Found `husky install` in file `package.json`: Since husky v9 you may not need this anymore.
+6. Recommendation: Found `npm run` in file `package.json`: Prefer `node --run` over invoking npm run directly.
+7. Outdated: Found `husky install` in file `package.json`: Husky v9 no longer needs manual install scripts.
 8. Recommendation: Found `"node-fetch"` in file `StatusPageService.test.ts`: Replace it with built-in fetch ([documentation](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch); [example module with fetch implemented](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/node_helper.js)).
 9. Recommendation: Found `"node-fetch"` in file `StatusPageService.ts`: Replace it with built-in fetch ([documentation](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch); [example module with fetch implemented](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/node_helper.js)).
-10. Outdated: Found `/_/husky.sh` in file `pre-commit`: Since husky v9 you may not need this anymore.
-11. Recommendation: Found `uses: actions/checkout@v4` in file `node.js.yml`: Replace it with v5.
-12. Recommendation: Found `uses: actions/setup-node@v4` in file `node.js.yml`: Replace it with v5.
-13. Deprecated: Found `node-version: [18` in file `node.js.yml`: Update to current version.
-14. Recommendation: Found `npm run` in file `node.js.yml`: Replace it with `node --run`. This is a more modern way to run scripts, without the need for npm.
+10. Outdated: Found `/_/husky.sh` in file `pre-commit`: Modern Husky setups do not require sourcing husky.sh.
+11. Recommendation: Found `uses: actions/checkout@v4` in file `node.js.yml`: Upgrade workflows to use actions/checkout@v5.
+12. Recommendation: Found `uses: actions/setup-node@v4` in file `node.js.yml`: Upgrade workflows to use actions/setup-node@v5.
+13. Deprecated: Found `node-version: [18` in file `node.js.yml`: Update CI workflows to target a supported Node.js LTS release.
+14. Recommendation: Found `npm run` in file `node.js.yml`: Prefer `node --run` over invoking npm run directly.
 15. Outdated: Found `MichMich/MagicMirror` in file `node.js.yml`: Replace it by `MagicMirrorOrg/MagicMirror`.
 16. Recommendation: There is no CHANGELOG file. It is recommended to add one ([example CHANGELOG file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CHANGELOG.md)).
 17. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
@@ -13249,8 +13222,8 @@ Last update: 2025-10-01T23:26:54+02:00
 
 ### [MMM-stib2 by bendardenne](https://github.com/bendardenne/MMM-stib2)
 
-1. Recommendation: Found `jshint` in file `Gruntfile.js`: Replace "jshint" by "eslint".
-2. Deprecated: Found `"grunt"` in file `package.json`: Grunt is practically unmaintained. Move on to something better.
+1. Recommendation: Found `jshint` in file `Gruntfile.js`: Suggest migrating from JSHint to ESLint.
+2. Deprecated: Found `"grunt"` in file `package.json`: Grunt is effectively unmaintained. Move on to something modern.
 3. Outdated: Found `MichMich/MagicMirror` in file `README.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
 4. Recommendation: The README seems not to have an update section (like `## Update`). Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Update-Instructions)).
 5. Recommendation: The README seems not to have an install section (like `## Installation`). Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Installation-Instructions)).
@@ -13288,7 +13261,7 @@ Last update: 2025-10-01T23:26:54+02:00
 
 1. Outdated: Found `MichMich/MagicMirror` in file `MMM-StopwatchTimer.css`: Replace it by `MagicMirrorOrg/MagicMirror`.
 2. Outdated: Found `MichMich/MagicMirror` in file `MMM-StopwatchTimer.js`: Replace it by `MagicMirrorOrg/MagicMirror`.
-3. Recommendation: Found `https://cdnjs.cloudflare.com` in file `MMM-StopwatchTimer.js`: It looks like a package is loaded via CDN. It would be better if the package were installed locally via npm.
+3. Recommendation: Found `https://cdnjs.cloudflare.com` in file `MMM-StopwatchTimer.js`: Prefer bundling dependencies via npm instead of CDN references.
 4. Recommendation: The README seems not to have an update section (like `## Update`). Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Update-Instructions)).
 5. Recommendation: The README seems not to have an install section (like `## Installation`). Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Installation-Instructions)).
 6. Recommendation: The README seems to have a modules array (Found `modules: [`). This is usually not necessary. Please remove it if it is not needed ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Config-Instructions)).
@@ -13315,14 +13288,14 @@ Last update: 2025-10-01T23:26:54+02:00
 1. Recommendation: Found `prettier/prettier` in file `.stylelintrc.json`: Config would be cleaner using 'stylelint-prettier/recommended'. [See here](https://github.com/prettier/stylelint-prettier).
 2. Outdated: Found `MichMich/MagicMirror` in file `node_helper.js`: Replace it by `MagicMirrorOrg/MagicMirror`.
 3. Deprecated: Found `"lockfileVersion": 1` in file `package-lock.json`: Run `npm update` to update to lockfileVersion 3.
-4. Recommendation: Found `npm run` in file `package.json`: Replace it with `node --run`. This is a more modern way to run scripts, without the need for npm.
-5. Deprecated: Found `stylelint-config-prettier` in file `package.json`: Update `stylelint` and remove `stylelint-config-prettier`.
+4. Recommendation: Found `npm run` in file `package.json`: Prefer `node --run` over invoking npm run directly.
+5. Deprecated: Found `stylelint-config-prettier` in file `package.json`: Remove `stylelint-config-prettier` in modern Stylelint setups.
 6. Typo: Found `Magic Mirror` in file `README.md`: Replace it with `MagicMirror²`.
 7. Recommendation: The README seems to have a modules array (Found `modules: [`). This is usually not necessary. Please remove it if it is not needed ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Config-Instructions)).
 8. Recommendation: The README seems to have a config example without a trailing comma. Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Config-Instructions)).
 9. Recommendation: Found `XMLHttpRequest` in file `index.html`: Replace it with built-in fetch ([documentation](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch); [example module with fetch implemented](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/node_helper.js)).
-10. Recommendation: Found `uses: actions/checkout@v2` in file `node.js.yml`: Replace it with v5.
-11. Recommendation: Found `npm run` in file `node.js.yml`: Replace it with `node --run`. This is a more modern way to run scripts, without the need for npm.
+10. Recommendation: Found `uses: actions/checkout@v2` in file `node.js.yml`: Upgrade workflows to use actions/checkout@v5.
+11. Recommendation: Found `npm run` in file `node.js.yml`: Prefer `node --run` over invoking npm run directly.
 12. Outdated: Found `MichMich/MagicMirror` in file `node.js.yml`: Replace it by `MagicMirrorOrg/MagicMirror`.
 13. Recommendation: There is no CHANGELOG file. It is recommended to add one ([example CHANGELOG file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CHANGELOG.md)).
 14. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
@@ -13371,12 +13344,12 @@ Last update: 2025-10-01T23:26:54+02:00
 ### [MMM-SugarValue by balharrie](https://github.com/balharrie/MMM-SugarValue)
 
 1. Deprecated: Found `require('request')` in file `node_helper.js`: Replace it with built-in fetch ([documentation](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch); [example module with fetch implemented](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/node_helper.js)).
-2. Recommendation: Found `require('https')` in file `node_helper.js`: Replace 'https' by 'node:https'.
+2. Recommendation: Found `require('https')` in file `node_helper.js`: Replace `https` with the scoped import `node:https`.
 3. Deprecated: Found `"lockfileVersion": 2` in file `package-lock.json`: Run `npm update` to update to lockfileVersion 3.
 4. Typo: Found `Magic Mirror` in file `package.json`: Replace it with `MagicMirror²`.
 5. Typo: Found `MagicMirror2` in file `package.json`: Replace it with `MagicMirror²`.
 6. Typo: Found `Magic Mirror` in file `README.md`: Replace it with `MagicMirror²`.
-7. Recommendation: Found `npm run` in file `README.md`: Replace it with `node --run`. This is a more modern way to run scripts, without the need for npm.
+7. Recommendation: Found `npm run` in file `README.md`: Prefer `node --run` over invoking npm run directly.
 8. Recommendation: The README seems not to have an update section (like `## Update`). Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Update-Instructions)).
 9. Recommendation: The README seems to have a modules array (Found `modules: [`). This is usually not necessary. Please remove it if it is not needed ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Config-Instructions)).
 10. Recommendation: The README seems to have a config example without a trailing comma. Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Config-Instructions)).
@@ -13387,7 +13360,7 @@ Last update: 2025-10-01T23:26:54+02:00
 
 ### [MMM-SunnyPortal by linuxtuxie](https://github.com/linuxtuxie/MMM-SunnyPortal)
 
-1. There are no specific keywords in 'package.json'. We would use them as tags on the module list page. Add a few meaningful terms to the keywords in the package.json. Not just “magicmirror” or “module”.
+1. There are no keywords in 'package.json'. We would use them as tags on the module list page.
 2. Typo: Found `Magic Mirror` in file `MMM-SunnyPortal.js`: Replace it with `MagicMirror²`.
 3. Deprecated: Found `require('request')` in file `node_helper.js`: Replace it with built-in fetch ([documentation](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch); [example module with fetch implemented](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/node_helper.js)).
 4. Typo: Found `[MagicMirror]` in file `Readme.md`: Replace it with `[MagicMirror²]`.
@@ -13410,16 +13383,16 @@ Last update: 2025-10-01T23:26:54+02:00
 2. No image found.
 3. Typo: Found `Magic Mirror` in file `MMM-Swipe.js`: Replace it with `MagicMirror²`.
 4. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
-5. Recommendation: Found `jshint` in file `node_helper.js`: Replace "jshint" by "eslint".
+5. Recommendation: Found `jshint` in file `node_helper.js`: Suggest migrating from JSHint to ESLint.
 6. Typo: Found `Magic Mirror` in file `package.json`: Replace it with `MagicMirror²`.
-7. Deprecated: Found `"electron-rebuild"` in file `package.json`: Replace it with `@electron/rebuild`
+7. Deprecated: Found `"electron-rebuild"` in file `package.json`: Use `@electron/rebuild` instead.
 8. Outdated: Found `MichMich/MagicMirror` in file `README.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
 9. Recommendation: The README seems not to have an update section (like `## Update`). Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Update-Instructions)).
 10. Recommendation: The README seems to have a modules array (Found `modules: [`). This is usually not necessary. Please remove it if it is not needed ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Config-Instructions)).
 11. Recommendation: The README seems to have a config example without a trailing comma. Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Config-Instructions)).
-12. Recommendation: Found `jshint` in file `testingOnOff.js`: Replace "jshint" by "eslint".
-13. Recommendation: Found `jshint` in file `testingOnOff2Sensor.js`: Replace "jshint" by "eslint".
-14. Recommendation: Found `jshint` in file `testingPigpio2sensor.js`: Replace "jshint" by "eslint".
+12. Recommendation: Found `jshint` in file `testingOnOff.js`: Suggest migrating from JSHint to ESLint.
+13. Recommendation: Found `jshint` in file `testingOnOff2Sensor.js`: Suggest migrating from JSHint to ESLint.
+14. Recommendation: Found `jshint` in file `testingPigpio2sensor.js`: Suggest migrating from JSHint to ESLint.
 15. Warning: No LICENSE file ([example LICENSE file](https://github.com/KristjanESPERANTO/MMM-WebSpeechTTS/blob/main/LICENSE.md)).
 16. Recommendation: There is no CHANGELOG file. It is recommended to add one ([example CHANGELOG file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CHANGELOG.md)).
 17. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
@@ -13441,10 +13414,10 @@ Last update: 2025-10-01T23:26:54+02:00
 1. `package.json` issue: No repository field.
 2. There are no keywords in 'package.json'. We would use them as tags on the module list page.
 3. No image found.
-4. Recommendation: Found `jshint` in file `Gruntfile.js`: Replace "jshint" by "eslint".
+4. Recommendation: Found `jshint` in file `Gruntfile.js`: Suggest migrating from JSHint to ESLint.
 5. Typo: Found `Magic Mirror` in file `MMM-SwissCommute.js`: Replace it with `MagicMirror²`.
 6. Recommendation: Found `XMLHttpRequest` in file `MMM-SwissCommute.js`: Replace it with built-in fetch ([documentation](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch); [example module with fetch implemented](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/node_helper.js)).
-7. Deprecated: Found `"grunt"` in file `package.json`: Grunt is practically unmaintained. Move on to something better.
+7. Deprecated: Found `"grunt"` in file `package.json`: Grunt is effectively unmaintained. Move on to something modern.
 8. Outdated: Found `MichMich/MagicMirror` in file `README.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
 9. Recommendation: The README seems not to have an update section (like `## Update`). Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Update-Instructions)).
 10. Recommendation: The README seems not to have an install section (like `## Installation`). Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Installation-Instructions)).
@@ -13483,7 +13456,7 @@ Last update: 2025-10-01T23:26:54+02:00
 2. There are no keywords in 'package.json'. We would use them as tags on the module list page.
 3. Typo: Found `Magic Mirror` in file `MMM-SwissStationboard.js`: Replace it with `MagicMirror²`.
 4. Recommendation: Found `XMLHttpRequest` in file `MMM-SwissStationboard.js`: Replace it with built-in fetch ([documentation](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch); [example module with fetch implemented](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/node_helper.js)).
-5. Deprecated: Found `"grunt"` in file `package.json`: Grunt is practically unmaintained. Move on to something better.
+5. Deprecated: Found `"grunt"` in file `package.json`: Grunt is effectively unmaintained. Move on to something modern.
 6. Outdated: Found `MichMich/MagicMirror` in file `README.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
 7. Recommendation: The README seems not to have an update section (like `## Update`). Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Update-Instructions)).
 8. Recommendation: The README seems to have a modules array (Found `modules: [`). This is usually not necessary. Please remove it if it is not needed ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Config-Instructions)).
@@ -13507,7 +13480,7 @@ Last update: 2025-10-01T23:26:54+02:00
 
 ### [MMM-SynologySurveillance by Tom-Hirschberger](https://github.com/Tom-Hirschberger/MMM-SynologySurveillance)
 
-1. Recommendation: Found `require("https")` in file `MySynoSSClient.js`: Replace "https" by "node:https".
+1. Recommendation: Found `require("https")` in file `MySynoSSClient.js`: Replace `https` with the scoped import `node:https`.
 2. Recommendation: Found `axios` in file `MySynoSSClient.js`: Replace it with built-in fetch ([documentation](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch); [example module with fetch implemented](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/node_helper.js)).
 3. Recommendation: Found `axios` in file `package.json`: Replace it with built-in fetch ([documentation](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch); [example module with fetch implemented](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/node_helper.js)).
 4. Recommendation: The README seems not to have an update section (like `## Update`). Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Update-Instructions)).
@@ -13544,10 +13517,10 @@ Last update: 2025-10-01T23:26:54+02:00
 
 ### [MMM-SystemMonitor by btastic](https://github.com/btastic/MMM-SystemMonitor)
 
-1. Recommendation: Found `jshint` in file `Gruntfile.js`: Replace "jshint" by "eslint".
+1. Recommendation: Found `jshint` in file `Gruntfile.js`: Suggest migrating from JSHint to ESLint.
 2. Typo: Found `Magic Mirror` in file `MMM-SystemMonitor.js`: Replace it with `MagicMirror²`.
 3. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
-4. Deprecated: Found `"grunt"` in file `package.json`: Grunt is practically unmaintained. Move on to something better.
+4. Deprecated: Found `"grunt"` in file `package.json`: Grunt is effectively unmaintained. Move on to something modern.
 5. Outdated: Found `MichMich/MagicMirror` in file `README.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
 6. Recommendation: The README seems not to have an update section (like `## Update`). Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Update-Instructions)).
 7. Recommendation: The README seems to have a modules array (Found `modules: [`). This is usually not necessary. Please remove it if it is not needed ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Config-Instructions)).
@@ -13640,13 +13613,12 @@ Last update: 2025-10-01T23:26:54+02:00
 
 1. `package.json` issue: license should be a valid SPDX license expression
 2. Issue: The license in the package.json (CC BY-NC 4.0) doesn't match the license file (NOASSERTION).
-3. No compatible or wrong license field in 'package.json' or LICENSE file. Without that, we can't use an image.
-4. Outdated: Found `MichMich/MagicMirror` in file `README.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
-5. Recommendation: The README seems not to have an update section (like `## Update`). Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Update-Instructions)).
-6. Recommendation: There is no CHANGELOG file. It is recommended to add one ([example CHANGELOG file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CHANGELOG.md)).
-7. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
-8. Recommendation: There is no dependabot configuration file. It is recommended to add one ([example dependabot file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/.github/dependabot.yaml)).
-9. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/eslint.md)).
+3. Outdated: Found `MichMich/MagicMirror` in file `README.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
+4. Recommendation: The README seems not to have an update section (like `## Update`). Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Update-Instructions)).
+5. Recommendation: There is no CHANGELOG file. It is recommended to add one ([example CHANGELOG file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CHANGELOG.md)).
+6. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
+7. Recommendation: There is no dependabot configuration file. It is recommended to add one ([example dependabot file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/.github/dependabot.yaml)).
+8. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/eslint.md)).
 
 ### [MMM-TautulliActivity by derekn](https://github.com/derekn/MMM-TautulliActivity)
 
@@ -13678,7 +13650,7 @@ Last update: 2025-10-01T23:26:54+02:00
 ### [MMM-TelegramBot by MMRIZE](https://github.com/MMRIZE/MMM-TelegramBot)
 
 1. Typo: Found `Magic Mirror` in file `MMM-TelegramBot.js`: Replace it with `MagicMirror²`.
-2. Recommendation: Found `require('https')` in file `node_helper.js`: Replace 'https' by 'node:https'.
+2. Recommendation: Found `require('https')` in file `node_helper.js`: Replace `https` with the scoped import `node:https`.
 3. Recommendation: The README seems not to have an update section (like `## Update`). Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Update-Instructions)).
 4. Recommendation: The README seems not to have an install section (like `## Installation`). Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Installation-Instructions)).
 5. Recommendation: The README seems not to have a config example. Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Config-Instructions)).
@@ -13691,7 +13663,7 @@ Last update: 2025-10-01T23:26:54+02:00
 ### [MMM-TelegramCommands by doctorfree](https://github.com/doctorfree/MMM-TelegramCommands)
 
 1. No image found.
-2. Recommendation: Found `require('https')` in file `node_helper.js`: Replace 'https' by 'node:https'.
+2. Recommendation: Found `require('https')` in file `node_helper.js`: Replace `https` with the scoped import `node:https`.
 3. Typo: Found `[MagicMirror]` in file `README.md`: Replace it with `[MagicMirror²]`.
 4. Recommendation: The README seems not to have an update section (like `## Update`). Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Update-Instructions)).
 5. Recommendation: The README seems to have a config example without a trailing comma. Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Config-Instructions)).
@@ -13749,7 +13721,7 @@ Last update: 2025-10-01T23:26:54+02:00
 ### [MMM-Tesla by mattdy](https://github.com/mattdy/MMM-Tesla)
 
 1. Typo: Found `Magic Mirror` in file `MMM-Tesla.js`: Replace it with `MagicMirror²`.
-2. Recommendation: Found `https://cdnjs.cloudflare.com` in file `MMM-Tesla.js`: It looks like a package is loaded via CDN. It would be better if the package were installed locally via npm.
+2. Recommendation: Found `https://cdnjs.cloudflare.com` in file `MMM-Tesla.js`: Prefer bundling dependencies via npm instead of CDN references.
 3. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
 4. Deprecated: Found `require("request")` in file `node_helper.js`: Replace it with built-in fetch ([documentation](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch); [example module with fetch implemented](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/node_helper.js)).
 5. Typo: Found `MagicMirror2` in file `package.json`: Replace it with `MagicMirror²`.
@@ -13761,12 +13733,12 @@ Last update: 2025-10-01T23:26:54+02:00
 11. Recommendation: The README seems to have a config example without a trailing comma. Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Config-Instructions)).
 12. Deprecated: Found `require('request')` in file `teslafi.js`: Replace it with built-in fetch ([documentation](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch); [example module with fetch implemented](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/node_helper.js)).
 13. Deprecated: Found `require('request')` in file `tessie.js`: Replace it with built-in fetch ([documentation](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch); [example module with fetch implemented](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/node_helper.js)).
-14. Recommendation: Found `uses: actions/checkout@v4` in file `checkFormat.yml`: Replace it with v5.
-15. Recommendation: Found `uses: actions/setup-node@v4` in file `checkFormat.yml`: Replace it with v5.
-16. Recommendation: Found `npm run` in file `checkFormat.yml`: Replace it with `node --run`. This is a more modern way to run scripts, without the need for npm.
-17. Recommendation: Found `uses: actions/checkout@v4` in file `formatting.yml`: Replace it with v5.
-18. Recommendation: Found `uses: actions/setup-node@v4` in file `formatting.yml`: Replace it with v5.
-19. Recommendation: Found `npm run` in file `formatting.yml`: Replace it with `node --run`. This is a more modern way to run scripts, without the need for npm.
+14. Recommendation: Found `uses: actions/checkout@v4` in file `checkFormat.yml`: Upgrade workflows to use actions/checkout@v5.
+15. Recommendation: Found `uses: actions/setup-node@v4` in file `checkFormat.yml`: Upgrade workflows to use actions/setup-node@v5.
+16. Recommendation: Found `npm run` in file `checkFormat.yml`: Prefer `node --run` over invoking npm run directly.
+17. Recommendation: Found `uses: actions/checkout@v4` in file `formatting.yml`: Upgrade workflows to use actions/checkout@v5.
+18. Recommendation: Found `uses: actions/setup-node@v4` in file `formatting.yml`: Upgrade workflows to use actions/setup-node@v5.
+19. Recommendation: Found `npm run` in file `formatting.yml`: Prefer `node --run` over invoking npm run directly.
 20. Recommendation: There is no CHANGELOG file. It is recommended to add one ([example CHANGELOG file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CHANGELOG.md)).
 21. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
 22. Recommendation: ESLint is not in the dependencies or devDependencies. It is recommended to add it to one of them.
@@ -13806,7 +13778,7 @@ Last update: 2025-10-01T23:26:54+02:00
 1. `package.json` issue: No repository field.
 2. `package.json` issue: No license field.
 3. There are no keywords in 'package.json'. We would use them as tags on the module list page.
-4. Recommendation: Found `https://cdnjs.cloudflare.com` in file `MMM-Teslamate.js`: It looks like a package is loaded via CDN. It would be better if the package were installed locally via npm.
+4. Recommendation: Found `https://cdnjs.cloudflare.com` in file `MMM-Teslamate.js`: Prefer bundling dependencies via npm instead of CDN references.
 5. Deprecated: Found `"lockfileVersion": 2` in file `package-lock.json`: Run `npm update` to update to lockfileVersion 3.
 6. Typo: Found `Magic Mirror` in file `README.md`: Replace it with `MagicMirror²`.
 7. Recommendation: The README seems not to have an update section (like `## Update`). Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Update-Instructions)).
@@ -13821,13 +13793,13 @@ Last update: 2025-10-01T23:26:54+02:00
 2. `package.json` issue: No repository field.
 3. `package.json` issue: No license field.
 4. There are no keywords in 'package.json'. We would use them as tags on the module list page.
-5. Recommendation: Found `https://cdnjs.cloudflare.com` in file `MMM-TeslaStatus.js`: It looks like a package is loaded via CDN. It would be better if the package were installed locally via npm.
-6. Recommendation: Found `eslint .` in file `package.json`: The period at the end of the command is not necessary since v9. It is recommended to remove it.
+5. Recommendation: Found `https://cdnjs.cloudflare.com` in file `MMM-TeslaStatus.js`: Prefer bundling dependencies via npm instead of CDN references.
+6. Recommendation: Found `eslint .` in file `package.json`: Drop the trailing '.' when invoking ESLint v9 or newer.
 7. Typo: Found `[MagicMirror]` in file `README.md`: Replace it with `[MagicMirror²]`.
 8. Outdated: Found `MichMich/MagicMirror` in file `README.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
 9. Recommendation: The README seems not to have an update section (like `## Update`). Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Update-Instructions)).
 10. Recommendation: The README seems to have a config example without a trailing comma. Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Config-Instructions)).
-11. Recommendation: Found `npm run` in file `config.yml`: Replace it with `node --run`. This is a more modern way to run scripts, without the need for npm.
+11. Recommendation: Found `npm run` in file `config.yml`: Prefer `node --run` over invoking npm run directly.
 12. Recommendation: There is no CHANGELOG file. It is recommended to add one ([example CHANGELOG file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CHANGELOG.md)).
 13. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
 14. Recommendation: There is no dependabot configuration file. It is recommended to add one ([example dependabot file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/.github/dependabot.yaml)).
@@ -13836,17 +13808,17 @@ Last update: 2025-10-01T23:26:54+02:00
 ### [MMM-text-clock by ngnijland](https://github.com/ngnijland/MMM-text-clock)
 
 1. There are duplicates in the keywords in your package.json: clock, clock
-2. Recommendation: Found `npm run` in file `CONTRIBUTING.md`: Replace it with `node --run`. This is a more modern way to run scripts, without the need for npm.
+2. Recommendation: Found `npm run` in file `CONTRIBUTING.md`: Prefer `node --run` over invoking npm run directly.
 3. Outdated: Found `MichMich/MagicMirror` in file `CONTRIBUTING.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
 4. Typo: Found `Magic Mirror` in file `MMM-text-clock.js`: Replace it with `MagicMirror²`.
 5. Deprecated: Found `"lockfileVersion": 1` in file `package-lock.json`: Run `npm update` to update to lockfileVersion 3.
-6. Recommendation: Found `eslint .` in file `package.json`: The period at the end of the command is not necessary since v9. It is recommended to remove it.
-7. Deprecated: Found `eslint-config-airbnb` in file `package.json`: Replace it with modern ESLint configuration.
+6. Recommendation: Found `eslint .` in file `package.json`: Drop the trailing '.' when invoking ESLint v9 or newer.
+7. Deprecated: Found `eslint-config-airbnb` in file `package.json`: Replace the preset with a maintained ESLint configuration.
 8. Recommendation: The README seems not to have an update section (like `## Update`). Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Update-Instructions)).
 9. Recommendation: The README seems to have a modules array (Found `modules: [`). This is usually not necessary. Please remove it if it is not needed ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Config-Instructions)).
 10. Recommendation: The README seems to have a config example without a trailing comma. Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Config-Instructions)).
-11. Recommendation: Found `uses: actions/checkout@v2` in file `nodejs.yml`: Replace it with v5.
-12. Recommendation: Found `npm run` in file `nodejs.yml`: Replace it with `node --run`. This is a more modern way to run scripts, without the need for npm.
+11. Recommendation: Found `uses: actions/checkout@v2` in file `nodejs.yml`: Upgrade workflows to use actions/checkout@v5.
+12. Recommendation: Found `npm run` in file `nodejs.yml`: Prefer `node --run` over invoking npm run directly.
 13. Recommendation: There is no CHANGELOG file. It is recommended to add one ([example CHANGELOG file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CHANGELOG.md)).
 14. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
 15. Recommendation: There is no dependabot configuration file. It is recommended to add one ([example dependabot file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/.github/dependabot.yaml)).
@@ -13885,7 +13857,7 @@ Last update: 2025-10-01T23:26:54+02:00
 1. There is no `package.json`. We need this file to gather information about the module for the module list page.
 2. Typo: Found `Magic Mirror` in file `MMM-TFL-Status.js`: Replace it with `MagicMirror²`.
 3. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
-4. Recommendation: Found `require('https')` in file `node_helper.js`: Replace 'https' by 'node:https'.
+4. Recommendation: Found `require('https')` in file `node_helper.js`: Replace `https` with the scoped import `node:https`.
 5. Typo: Found `Magic Mirror` in file `README.md`: Replace it with `MagicMirror²`.
 6. Typo: Found `[MagicMirror]` in file `README.md`: Replace it with `[MagicMirror²]`.
 7. Outdated: Found `MichMich/MagicMirror` in file `README.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
@@ -14009,8 +13981,8 @@ Last update: 2025-10-01T23:26:54+02:00
 1. Typo: Found `Magic Mirror` in file `MMM-tns.js`: Replace it with `MagicMirror²`.
 2. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
 3. Deprecated: Found `require("request")` in file `node_helper.js`: Replace it with built-in fetch ([documentation](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch); [example module with fetch implemented](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/node_helper.js)).
-4. Deprecated: Found `"electron-rebuild"` in file `package.json`: Replace it with `@electron/rebuild`
-5. Deprecated: Found `"grunt"` in file `package.json`: Grunt is practically unmaintained. Move on to something better.
+4. Deprecated: Found `"electron-rebuild"` in file `package.json`: Use `@electron/rebuild` instead.
+5. Deprecated: Found `"grunt"` in file `package.json`: Grunt is effectively unmaintained. Move on to something modern.
 6. Typo: Found `[MagicMirror]` in file `README.md`: Replace it with `[MagicMirror²]`.
 7. Outdated: Found `MichMich/MagicMirror` in file `README.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
 8. Recommendation: The README seems not to have an update section (like `## Update`). Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Update-Instructions)).
@@ -14064,8 +14036,8 @@ Last update: 2025-10-01T23:26:54+02:00
 ### [MMM-TomTomTraffic by bendardenne](https://github.com/bendardenne/MMM-TomTomTraffic)
 
 1. There are no keywords in 'package.json'. We would use them as tags on the module list page.
-2. Recommendation: Found `jshint` in file `Gruntfile.js`: Replace "jshint" by "eslint".
-3. Deprecated: Found `"grunt"` in file `package.json`: Grunt is practically unmaintained. Move on to something better.
+2. Recommendation: Found `jshint` in file `Gruntfile.js`: Suggest migrating from JSHint to ESLint.
+3. Deprecated: Found `"grunt"` in file `package.json`: Grunt is effectively unmaintained. Move on to something modern.
 4. Outdated: Found `MichMich/MagicMirror` in file `README.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
 5. Recommendation: The README seems not to have an update section (like `## Update`). Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Update-Instructions)).
 6. Recommendation: The README seems not to have an install section (like `## Installation`). Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Installation-Instructions)).
@@ -14102,8 +14074,8 @@ Last update: 2025-10-01T23:26:54+02:00
 3. Recommendation: The README seems not to have an update section (like `## Update`). Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Update-Instructions)).
 4. Recommendation: The README seems to have a modules array (Found `modules: [`). This is usually not necessary. Please remove it if it is not needed ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Config-Instructions)).
 5. Recommendation: The README seems to have a config example without a trailing comma. Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Config-Instructions)).
-6. Recommendation: Found `require('http')` in file `ToonAPI.js`: Replace 'http' by 'node:http'.
-7. Recommendation: Found `require('https')` in file `ToonAPI.js`: Replace 'https' by 'node:https'.
+6. Recommendation: Found `require('http')` in file `ToonAPI.js`: Replace `http` with the scoped import `node:http`.
+7. Recommendation: Found `require('https')` in file `ToonAPI.js`: Replace `https` with the scoped import `node:https`.
 8. Warning: No LICENSE file ([example LICENSE file](https://github.com/KristjanESPERANTO/MMM-WebSpeechTTS/blob/main/LICENSE.md)).
 9. Recommendation: There is no CHANGELOG file. It is recommended to add one ([example CHANGELOG file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CHANGELOG.md)).
 10. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
@@ -14206,11 +14178,11 @@ Last update: 2025-10-01T23:26:54+02:00
 1. `package.json` issue: No repository field.
 2. There are no keywords in 'package.json'. We would use them as tags on the module list page.
 3. Outdated: Found `MichMich/MagicMirror` in file `create_module.sh`: Replace it by `MagicMirrorOrg/MagicMirror`.
-4. Recommendation: Found `jshint` in file `Gruntfile.js`: Replace "jshint" by "eslint".
+4. Recommendation: Found `jshint` in file `Gruntfile.js`: Suggest migrating from JSHint to ESLint.
 5. Typo: Found `Magic Mirror` in file `MMM-Trains-Trafikverket.js`: Replace it with `MagicMirror²`.
 6. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
 7. Deprecated: Found `"lockfileVersion": 1` in file `package-lock.json`: Run `npm update` to update to lockfileVersion 3.
-8. Deprecated: Found `"grunt"` in file `package.json`: Grunt is practically unmaintained. Move on to something better.
+8. Deprecated: Found `"grunt"` in file `package.json`: Grunt is effectively unmaintained. Move on to something modern.
 9. Recommendation: The README seems not to have an update section (like `## Update`). Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Update-Instructions)).
 10. Recommendation: The README seems to have a modules array (Found `modules: [`). This is usually not necessary. Please remove it if it is not needed ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Config-Instructions)).
 11. Outdated: Found `MichMich/MagicMirror` in file `README.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
@@ -14222,13 +14194,13 @@ Last update: 2025-10-01T23:26:54+02:00
 
 1. `package.json` issue: No description
 2. `package.json` issue: No repository field.
-3. There are no specific keywords in 'package.json'. We would use them as tags on the module list page. Add a few meaningful terms to the keywords in the package.json. Not just “magicmirror” or “module”.
+3. There are no keywords in 'package.json'. We would use them as tags on the module list page.
 4. Issue: The license in the package.json (ISC) doesn't match the license file (GPL-3.0).
 5. No image found.
 6. Recommendation: Found `axios` in file `node_helper.js`: Replace it with built-in fetch ([documentation](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch); [example module with fetch implemented](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/node_helper.js)).
 7. Recommendation: Found `axios` in file `package.json`: Replace it with built-in fetch ([documentation](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch); [example module with fetch implemented](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/node_helper.js)).
 8. Recommendation: Found `axios` in file `pnpm-lock.yaml`: Replace it with built-in fetch ([documentation](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch); [example module with fetch implemented](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/node_helper.js)).
-9. Recommendation: Found `https://cdn.jsdelivr.net` in file `trains.css`: It looks like a package is loaded via CDN. It would be better if the package were installed locally via npm.
+9. Recommendation: Found `https://cdn.jsdelivr.net` in file `trains.css`: Prefer bundling dependencies via npm instead of CDN references.
 10. Recommendation: There is no CHANGELOG file. It is recommended to add one ([example CHANGELOG file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CHANGELOG.md)).
 11. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
 12. Recommendation: There is no dependabot configuration file. It is recommended to add one ([example dependabot file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/.github/dependabot.yaml)).
@@ -14261,7 +14233,7 @@ Last update: 2025-10-01T23:26:54+02:00
 
 1. There is no `package.json`. We need this file to gather information about the module for the module list page.
 2. Typo: Found `Magic Mirror` in file `MMM-TranslatedMessages.js`: Replace it with `MagicMirror²`.
-3. Recommendation: Found `https://cdn.jsdelivr.net` in file `MMM-TranslatedMessages.js`: It looks like a package is loaded via CDN. It would be better if the package were installed locally via npm.
+3. Recommendation: Found `https://cdn.jsdelivr.net` in file `MMM-TranslatedMessages.js`: Prefer bundling dependencies via npm instead of CDN references.
 4. Typo: Found `Magic Mirror` in file `README.md`: Replace it with `MagicMirror²`.
 5. Recommendation: The README seems not to have an update section (like `## Update`). Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Update-Instructions)).
 6. Recommendation: The README seems to have a modules array (Found `modules: [`). This is usually not necessary. Please remove it if it is not needed ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Config-Instructions)).
@@ -14272,9 +14244,9 @@ Last update: 2025-10-01T23:26:54+02:00
 
 ### [MMM-TranslinkBrisbane by dekinet](https://github.com/dekinet/MMM-TranslinkBrisbane)
 
-1. Recommendation: Found `npm run` in file `package.json`: Replace it with `node --run`. This is a more modern way to run scripts, without the need for npm.
-2. Recommendation: Found `eslint .` in file `package.json`: The period at the end of the command is not necessary since v9. It is recommended to remove it.
-3. Recommendation: Found `npm run` in file `README.md`: Replace it with `node --run`. This is a more modern way to run scripts, without the need for npm.
+1. Recommendation: Found `npm run` in file `package.json`: Prefer `node --run` over invoking npm run directly.
+2. Recommendation: Found `eslint .` in file `package.json`: Drop the trailing '.' when invoking ESLint v9 or newer.
+3. Recommendation: Found `npm run` in file `README.md`: Prefer `node --run` over invoking npm run directly.
 4. Recommendation: The README seems not to have an update section (like `## Update`). Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Update-Instructions)).
 5. Recommendation: There is no CHANGELOG file. It is recommended to add one ([example CHANGELOG file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CHANGELOG.md)).
 6. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
@@ -14336,7 +14308,7 @@ Last update: 2025-10-01T23:26:54+02:00
 
 1. There is no `package.json`. We need this file to gather information about the module for the module list page.
 2. Typo: Found `Magic Mirror` in file `MMM-TRV-WastePlan.js`: Replace it with `MagicMirror²`.
-3. Recommendation: Found `require('https')` in file `node_helper.js`: Replace 'https' by 'node:https'.
+3. Recommendation: Found `require('https')` in file `node_helper.js`: Replace `https` with the scoped import `node:https`.
 4. Typo: Found `MagicMirror2` in file `README.md`: Replace it with `MagicMirror²`.
 5. Outdated: Found `MichMich/MagicMirror` in file `README.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
 6. Recommendation: There is no CHANGELOG file. It is recommended to add one ([example CHANGELOG file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CHANGELOG.md)).
@@ -14347,12 +14319,12 @@ Last update: 2025-10-01T23:26:54+02:00
 ### [MMM-TTS by fewieden](https://github.com/fewieden/MMM-TTS)
 
 1. No image found.
-2. Recommendation: Found `npm run` in file `.travis.yml`: Replace it with `node --run`. This is a more modern way to run scripts, without the need for npm.
+2. Recommendation: Found `npm run` in file `.travis.yml`: Prefer `node --run` over invoking npm run directly.
 3. Typo: Found `Magic Mirror` in file `MMM-TTS.js`: Replace it with `MagicMirror²`.
 4. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
 5. Typo: Found `MagicMirror2` in file `package.json`: Replace it with `MagicMirror²`.
-6. Recommendation: Found `eslint .` in file `package.json`: The period at the end of the command is not necessary since v9. It is recommended to remove it.
-7. Deprecated: Found `eslint-config-airbnb` in file `package.json`: Replace it with modern ESLint configuration.
+6. Recommendation: Found `eslint .` in file `package.json`: Drop the trailing '.' when invoking ESLint v9 or newer.
+7. Deprecated: Found `eslint-config-airbnb` in file `package.json`: Replace the preset with a maintained ESLint configuration.
 8. Outdated: Found `MichMich/MagicMirror` in file `README.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
 9. Recommendation: The README seems not to have an update section (like `## Update`). Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Update-Instructions)).
 10. Recommendation: The README seems to have a config example without a trailing comma. Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Config-Instructions)).
@@ -14493,9 +14465,9 @@ Last update: 2025-10-01T23:26:54+02:00
 1. Typo: Found `Magic Mirror` in file `MMM-Udvaronc.js`: Replace it with `MagicMirror²`.
 2. Deprecated: Found `require('request')` in file `node_helper.js`: Replace it with built-in fetch ([documentation](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch); [example module with fetch implemented](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/node_helper.js)).
 3. Deprecated: Found `"lockfileVersion": 1` in file `package-lock.json`: Run `npm update` to update to lockfileVersion 3.
-4. Recommendation: Found `npm run` in file `package.json`: Replace it with `node --run`. This is a more modern way to run scripts, without the need for npm.
-5. Deprecated: Found `eslint-config-airbnb` in file `package.json`: Replace it with modern ESLint configuration.
-6. Recommendation: Found `npm run` in file `README.md`: Replace it with `node --run`. This is a more modern way to run scripts, without the need for npm.
+4. Recommendation: Found `npm run` in file `package.json`: Prefer `node --run` over invoking npm run directly.
+5. Deprecated: Found `eslint-config-airbnb` in file `package.json`: Replace the preset with a maintained ESLint configuration.
+6. Recommendation: Found `npm run` in file `README.md`: Prefer `node --run` over invoking npm run directly.
 7. Outdated: Found `MichMich/MagicMirror` in file `README.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
 8. Recommendation: The README seems not to have an update section (like `## Update`). Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Update-Instructions)).
 9. Recommendation: The README seems not to have an install section (like `## Installation`). Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Installation-Instructions)).
@@ -14538,7 +14510,7 @@ Last update: 2025-10-01T23:26:54+02:00
 1. Typo: Found `Magic Mirror` in file `MMM-UKMOWeatherWarnings.css`: Replace it with `MagicMirror²`.
 2. Typo: Found `Magic Mirror` in file `MMM-UKMOWeatherWarnings.js`: Replace it with `MagicMirror²`.
 3. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
-4. Recommendation: Found `require("http")` in file `node_helper.js`: Replace "http" by "node:http".
+4. Recommendation: Found `require("http")` in file `node_helper.js`: Replace `http` with the scoped import `node:http`.
 5. Typo: Found `Magic Mirror` in file `package.json`: Replace it with `MagicMirror²`.
 6. Outdated: Found `MichMich/MagicMirror` in file `README.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
 7. Recommendation: The README seems not to have an update section (like `## Update`). Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Update-Instructions)).
@@ -14561,12 +14533,12 @@ Last update: 2025-10-01T23:26:54+02:00
 6. Recommendation: The README seems not to have an install section (like `## Installation`). Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Installation-Instructions)).
 7. Recommendation: The README seems to have a modules array (Found `modules: [`). This is usually not necessary. Please remove it if it is not needed ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Config-Instructions)).
 8. Recommendation: The README seems to have a config example without a trailing comma. Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Config-Instructions)).
-9. Recommendation: Found `uses: actions/checkout@v4` in file `checkFormat.yml`: Replace it with v5.
-10. Recommendation: Found `uses: actions/setup-node@v4` in file `checkFormat.yml`: Replace it with v5.
-11. Recommendation: Found `npm run` in file `checkFormat.yml`: Replace it with `node --run`. This is a more modern way to run scripts, without the need for npm.
-12. Recommendation: Found `uses: actions/checkout@v4` in file `formatting.yml`: Replace it with v5.
-13. Recommendation: Found `uses: actions/setup-node@v4` in file `formatting.yml`: Replace it with v5.
-14. Recommendation: Found `npm run` in file `formatting.yml`: Replace it with `node --run`. This is a more modern way to run scripts, without the need for npm.
+9. Recommendation: Found `uses: actions/checkout@v4` in file `checkFormat.yml`: Upgrade workflows to use actions/checkout@v5.
+10. Recommendation: Found `uses: actions/setup-node@v4` in file `checkFormat.yml`: Upgrade workflows to use actions/setup-node@v5.
+11. Recommendation: Found `npm run` in file `checkFormat.yml`: Prefer `node --run` over invoking npm run directly.
+12. Recommendation: Found `uses: actions/checkout@v4` in file `formatting.yml`: Upgrade workflows to use actions/checkout@v5.
+13. Recommendation: Found `uses: actions/setup-node@v4` in file `formatting.yml`: Upgrade workflows to use actions/setup-node@v5.
+14. Recommendation: Found `npm run` in file `formatting.yml`: Prefer `node --run` over invoking npm run directly.
 15. Recommendation: There is no CHANGELOG file. It is recommended to add one ([example CHANGELOG file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CHANGELOG.md)).
 16. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
 17. Recommendation: There is no dependabot configuration file. It is recommended to add one ([example dependabot file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/.github/dependabot.yaml)).
@@ -14607,10 +14579,10 @@ Last update: 2025-10-01T23:26:54+02:00
 ### [unRAID-MMM by artificialai223](https://github.com/artificialai223/unRAID-MMM)
 
 1. Recommendation: Module name doesn't follow the recommended pattern (it doesn't start with `MMM-`). Consider renaming your module.
-2. Recommendation: Found `require("https")` in file `node_helper.js`: Replace "https" by "node:https".
+2. Recommendation: Found `require("https")` in file `node_helper.js`: Replace `https` with the scoped import `node:https`.
 3. Recommendation: Found `"node-fetch"` in file `node_helper.js`: Replace it with built-in fetch ([documentation](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch); [example module with fetch implemented](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/node_helper.js)).
-4. Recommendation: Found `npm run` in file `package.json`: Replace it with `node --run`. This is a more modern way to run scripts, without the need for npm.
-5. Recommendation: Found `eslint .` in file `package.json`: The period at the end of the command is not necessary since v9. It is recommended to remove it.
+4. Recommendation: Found `npm run` in file `package.json`: Prefer `node --run` over invoking npm run directly.
+5. Recommendation: Found `eslint .` in file `package.json`: Drop the trailing '.' when invoking ESLint v9 or newer.
 6. Recommendation: The README seems not to have an update section (like `## Update`). Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Update-Instructions)).
 7. Recommendation: The README seems not to have an install section (like `## Installation`). Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Installation-Instructions)).
 8. Recommendation: The README seems to have incorrect clone instructions. Please check the URL.
@@ -14658,14 +14630,14 @@ Last update: 2025-10-01T23:26:54+02:00
 
 ### [MMM-uptimekuma by MikeBishop](https://github.com/MikeBishop/MMM-uptimekuma)
 
-1. Recommendation: Found `npm run` in file `.travis.yml`: Replace it with `node --run`. This is a more modern way to run scripts, without the need for npm.
-2. Recommendation: Found `jshint` in file `Gruntfile.js`: Replace "jshint" by "eslint".
+1. Recommendation: Found `npm run` in file `.travis.yml`: Prefer `node --run` over invoking npm run directly.
+2. Recommendation: Found `jshint` in file `Gruntfile.js`: Suggest migrating from JSHint to ESLint.
 3. Typo: Found `Magic Mirror` in file `MMM-uptimekuma.js`: Replace it with `MagicMirror²`.
 4. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
 5. Recommendation: Found `axios` in file `node_helper.js`: Replace it with built-in fetch ([documentation](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch); [example module with fetch implemented](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/node_helper.js)).
 6. Deprecated: Found `"lockfileVersion": 2` in file `package-lock.json`: Run `npm update` to update to lockfileVersion 3.
 7. Recommendation: Found `axios` in file `package.json`: Replace it with built-in fetch ([documentation](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch); [example module with fetch implemented](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/node_helper.js)).
-8. Deprecated: Found `"grunt"` in file `package.json`: Grunt is practically unmaintained. Move on to something better.
+8. Deprecated: Found `"grunt"` in file `package.json`: Grunt is effectively unmaintained. Move on to something modern.
 9. Recommendation: The README seems not to have an update section (like `## Update`). Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Update-Instructions)).
 10. Recommendation: The README seems to have a modules array (Found `modules: [`). This is usually not necessary. Please remove it if it is not needed ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Config-Instructions)).
 11. Recommendation: The README seems to have a config example without a trailing comma. Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Config-Instructions)).
@@ -14677,11 +14649,11 @@ Last update: 2025-10-01T23:26:54+02:00
 ### [MMM-uptimerobot by mrVragec](https://github.com/mrVragec/MMM-uptimerobot)
 
 1. Repository name and main js file name is not the same.
-2. Recommendation: Found `npm run` in file `.travis.yml`: Replace it with `node --run`. This is a more modern way to run scripts, without the need for npm.
-3. Recommendation: Found `jshint` in file `Gruntfile.js`: Replace "jshint" by "eslint".
+2. Recommendation: Found `npm run` in file `.travis.yml`: Prefer `node --run` over invoking npm run directly.
+3. Recommendation: Found `jshint` in file `Gruntfile.js`: Suggest migrating from JSHint to ESLint.
 4. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
 5. Deprecated: Found `require('request')` in file `node_helper.js`: Replace it with built-in fetch ([documentation](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch); [example module with fetch implemented](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/node_helper.js)).
-6. Deprecated: Found `"grunt"` in file `package.json`: Grunt is practically unmaintained. Move on to something better.
+6. Deprecated: Found `"grunt"` in file `package.json`: Grunt is effectively unmaintained. Move on to something modern.
 7. Recommendation: The README seems not to have an update section (like `## Update`). Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Update-Instructions)).
 8. Recommendation: The README seems not to have an install section (like `## Installation`). Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Installation-Instructions)).
 9. Recommendation: The README seems to have a modules array (Found `modules: [`). This is usually not necessary. Please remove it if it is not needed ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Config-Instructions)).
@@ -14736,7 +14708,7 @@ Last update: 2025-10-01T23:26:54+02:00
 
 ### [MMM-VALORANTESPORTS-SCHEDULES by xadamxk](https://github.com/xadamxk/MMM-VALORANTESPORTS-SCHEDULES)
 
-1. Recommendation: Found `require("https")` in file `node_helper.js`: Replace "https" by "node:https".
+1. Recommendation: Found `require("https")` in file `node_helper.js`: Replace `https` with the scoped import `node:https`.
 2. Outdated: Found `MichMich/MagicMirror` in file `readme.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
 3. Warning: No LICENSE file ([example LICENSE file](https://github.com/KristjanESPERANTO/MMM-WebSpeechTTS/blob/main/LICENSE.md)).
 4. Recommendation: There is no CHANGELOG file. It is recommended to add one ([example CHANGELOG file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CHANGELOG.md)).
@@ -14897,7 +14869,7 @@ Last update: 2025-10-01T23:26:54+02:00
 4. Repository name and main js file name is not the same.
 5. Typo: Found `Magic Mirror` in file `MMM-vindsiden.js`: Replace it with `MagicMirror²`.
 6. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
-7. Recommendation: Found `require("http")` in file `node_helper.js`: Replace "http" by "node:http".
+7. Recommendation: Found `require("http")` in file `node_helper.js`: Replace `http` with the scoped import `node:http`.
 8. Recommendation: The README seems not to have an update section (like `## Update`). Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Update-Instructions)).
 9. Recommendation: The README seems to have incorrect clone instructions. Please check the URL.
 10. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
@@ -14906,13 +14878,13 @@ Last update: 2025-10-01T23:26:54+02:00
 
 ### [MMM-VocabularyTrainer by fewieden](https://github.com/fewieden/MMM-VocabularyTrainer)
 
-1. Recommendation: Found `npm run` in file `.travis.yml`: Replace it with `node --run`. This is a more modern way to run scripts, without the need for npm.
+1. Recommendation: Found `npm run` in file `.travis.yml`: Prefer `node --run` over invoking npm run directly.
 2. Outdated: Found `MichMich/MagicMirror` in file `MMM-VocabularyTrainer.js`: Replace it by `MagicMirrorOrg/MagicMirror`.
 3. Outdated: Found `MichMich/MagicMirror` in file `node_helper.js`: Replace it by `MagicMirrorOrg/MagicMirror`.
 4. Typo: Found `MagicMirror2` in file `package.json`: Replace it with `MagicMirror²`.
-5. Recommendation: Found `eslint .` in file `package.json`: The period at the end of the command is not necessary since v9. It is recommended to remove it.
-6. Deprecated: Found `eslint-config-airbnb` in file `package.json`: Replace it with modern ESLint configuration.
-7. Recommendation: Found `npm run` in file `README.md`: Replace it with `node --run`. This is a more modern way to run scripts, without the need for npm.
+5. Recommendation: Found `eslint .` in file `package.json`: Drop the trailing '.' when invoking ESLint v9 or newer.
+6. Deprecated: Found `eslint-config-airbnb` in file `package.json`: Replace the preset with a maintained ESLint configuration.
+7. Recommendation: Found `npm run` in file `README.md`: Prefer `node --run` over invoking npm run directly.
 8. Outdated: Found `MichMich/MagicMirror` in file `README.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
 9. Recommendation: The README seems not to have an update section (like `## Update`). Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Update-Instructions)).
 10. Recommendation: The README seems to have a config example without a trailing comma. Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Config-Instructions)).
@@ -14924,13 +14896,13 @@ Last update: 2025-10-01T23:26:54+02:00
 ### [MMM-voice by fewieden](https://github.com/fewieden/MMM-voice)
 
 1. No image found.
-2. Recommendation: Found `npm run` in file `.travis.yml`: Replace it with `node --run`. This is a more modern way to run scripts, without the need for npm.
+2. Recommendation: Found `npm run` in file `.travis.yml`: Prefer `node --run` over invoking npm run directly.
 3. Outdated: Found `MichMich/MagicMirror` in file `MMM-voice.js`: Replace it by `MagicMirrorOrg/MagicMirror`.
 4. Outdated: Found `MichMich/MagicMirror` in file `node_helper.js`: Replace it by `MagicMirrorOrg/MagicMirror`.
 5. Typo: Found `MagicMirror2` in file `package.json`: Replace it with `MagicMirror²`.
-6. Recommendation: Found `eslint .` in file `package.json`: The period at the end of the command is not necessary since v9. It is recommended to remove it.
-7. Deprecated: Found `eslint-config-airbnb` in file `package.json`: Replace it with modern ESLint configuration.
-8. Recommendation: Found `npm run` in file `README.md`: Replace it with `node --run`. This is a more modern way to run scripts, without the need for npm.
+6. Recommendation: Found `eslint .` in file `package.json`: Drop the trailing '.' when invoking ESLint v9 or newer.
+7. Deprecated: Found `eslint-config-airbnb` in file `package.json`: Replace the preset with a maintained ESLint configuration.
+8. Recommendation: Found `npm run` in file `README.md`: Prefer `node --run` over invoking npm run directly.
 9. Outdated: Found `MichMich/MagicMirror` in file `README.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
 10. Recommendation: The README seems not to have an update section (like `## Update`). Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Update-Instructions)).
 11. Recommendation: The README seems to have a config example without a trailing comma. Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Config-Instructions)).
@@ -15004,15 +14976,15 @@ Last update: 2025-10-01T23:26:54+02:00
 3. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
 4. Deprecated: Found `require("request")` in file `node_helper.js`: Replace it with built-in fetch ([documentation](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch); [example module with fetch implemented](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/node_helper.js)).
 5. Deprecated: Found `"lockfileVersion": 2` in file `package-lock.json`: Run `npm update` to update to lockfileVersion 3.
-6. Deprecated: Found `"grunt"` in file `package.json`: Grunt is practically unmaintained. Move on to something better.
+6. Deprecated: Found `"grunt"` in file `package.json`: Grunt is effectively unmaintained. Move on to something modern.
 7. Typo: Found `Magic Mirror` in file `README.md`: Replace it with `MagicMirror²`.
 8. Outdated: Found `MichMich/MagicMirror` in file `README.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
 9. Recommendation: The README seems not to have an update section (like `## Update`). Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Update-Instructions)).
 10. Recommendation: The README seems to have a config example without a trailing comma. Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Config-Instructions)).
-11. Recommendation: Found `uses: actions/checkout@v3` in file `automated-tests.yaml`: Replace it with v5.
-12. Recommendation: Found `uses: actions/setup-node@v3` in file `automated-tests.yaml`: Replace it with v5.
-13. Deprecated: Found `node-version: [18` in file `automated-tests.yaml`: Update to current version.
-14. Recommendation: Found `npm run` in file `automated-tests.yaml`: Replace it with `node --run`. This is a more modern way to run scripts, without the need for npm.
+11. Recommendation: Found `uses: actions/checkout@v3` in file `automated-tests.yaml`: Upgrade workflows to use actions/checkout@v5.
+12. Recommendation: Found `uses: actions/setup-node@v3` in file `automated-tests.yaml`: Upgrade workflows to use actions/setup-node@v5.
+13. Deprecated: Found `node-version: [18` in file `automated-tests.yaml`: Update CI workflows to target a supported Node.js LTS release.
+14. Recommendation: Found `npm run` in file `automated-tests.yaml`: Prefer `node --run` over invoking npm run directly.
 15. Outdated: Found `MichMich/MagicMirror` in file `automated-tests.yaml`: Replace it by `MagicMirrorOrg/MagicMirror`.
 16. Recommendation: There is no CHANGELOG file. It is recommended to add one ([example CHANGELOG file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CHANGELOG.md)).
 17. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
@@ -15077,9 +15049,9 @@ Last update: 2025-10-01T23:26:54+02:00
 
 1. There are no keywords in 'package.json'. We would use them as tags on the module list page.
 2. No image found.
-3. Recommendation: Found `require("http")` in file `node_helper.js`: Replace "http" by "node:http".
-4. Recommendation: Found `require("https")` in file `node_helper.js`: Replace "https" by "node:https".
-5. Recommendation: Found `require("fetch")` in file `node_helper.js`: Replace it with built-in fetch ([documentation](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch); [example module with fetch implemented](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/node_helper.js)).
+3. Recommendation: Found `require("http")` in file `node_helper.js`: Replace `http` with the scoped import `node:http`.
+4. Recommendation: Found `require("https")` in file `node_helper.js`: Replace `https` with the scoped import `node:https`.
+5. Recommendation: Found `require("fetch")` in file `node_helper.js`: Use the global fetch API instead of requiring a shim.
 6. Deprecated: Found `"lockfileVersion": 2` in file `package-lock.json`: Run `npm update` to update to lockfileVersion 3.
 7. Typo: Found `MagicMirror2` in file `package.json`: Replace it with `MagicMirror²`.
 8. Recommendation: The README seems not to have an update section (like `## Update`). Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Update-Instructions)).
@@ -15215,10 +15187,10 @@ Last update: 2025-10-01T23:26:54+02:00
 
 ### [MMM-WeatherAlerts by gjonesme](https://github.com/gjonesme/MMM-WeatherAlerts)
 
-1. Recommendation: Found `jshint` in file `Gruntfile.js`: Replace "jshint" by "eslint".
+1. Recommendation: Found `jshint` in file `Gruntfile.js`: Suggest migrating from JSHint to ESLint.
 2. Found directory `node_modules`. This shouldn't be uploaded. Add `node_modules/`to `.gitignore`.
 3. Deprecated: Found `"lockfileVersion": 2` in file `package-lock.json`: Run `npm update` to update to lockfileVersion 3.
-4. Deprecated: Found `"grunt"` in file `package.json`: Grunt is practically unmaintained. Move on to something better.
+4. Deprecated: Found `"grunt"` in file `package.json`: Grunt is effectively unmaintained. Move on to something modern.
 5. Recommendation: The README seems not to have an update section (like `## Update`). Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Update-Instructions)).
 6. Recommendation: The README seems not to have an install section (like `## Installation`). Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Installation-Instructions)).
 7. Recommendation: The README seems to have a modules array (Found `modules: [`). This is usually not necessary. Please remove it if it is not needed ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Config-Instructions)).
@@ -15252,7 +15224,7 @@ Last update: 2025-10-01T23:26:54+02:00
 1. There is no `package.json`. We need this file to gather information about the module for the module list page.
 2. No image found.
 3. Typo: Found `Magic Mirror` in file `MMM-WeatherChart.js`: Replace it with `MagicMirror²`.
-4. Recommendation: Found `https://cdn.jsdelivr.net` in file `MMM-WeatherChart.js`: It looks like a package is loaded via CDN. It would be better if the package were installed locally via npm.
+4. Recommendation: Found `https://cdn.jsdelivr.net` in file `MMM-WeatherChart.js`: Prefer bundling dependencies via npm instead of CDN references.
 5. Recommendation: The README seems not to have an update section (like `## Update`). Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Update-Instructions)).
 6. Recommendation: The README seems to have a modules array (Found `modules: [`). This is usually not necessary. Please remove it if it is not needed ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Config-Instructions)).
 7. Recommendation: There is no CHANGELOG file. It is recommended to add one ([example CHANGELOG file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CHANGELOG.md)).
@@ -15300,7 +15272,7 @@ Last update: 2025-10-01T23:26:54+02:00
 
 ### [MMM-WeatherHourlyByDay by dWoolridge](https://github.com/dWoolridge/MMM-WeatherHourlyByDay)
 
-1. An error occurred while getting information from 'package.json': Error: Invalid version: "1.0"
+1. `package.json` issue: Invalid version: "1.0"
 2. Recommendation: The README seems not to have an update section (like `## Update`). Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Update-Instructions)).
 3. Recommendation: The README seems not to have an install section (like `## Installation`). Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Installation-Instructions)).
 4. Recommendation: There is no CHANGELOG file. It is recommended to add one ([example CHANGELOG file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CHANGELOG.md)).
@@ -15350,7 +15322,7 @@ Last update: 2025-10-01T23:26:54+02:00
 
 ### [MMM-WebSpeechTTS by KristjanESPERANTO](https://github.com/KristjanESPERANTO/MMM-WebSpeechTTS)
 
-1. Recommendation: Found `uses: actions/setup-node@v4` in file `automated-tests.yaml`: Replace it with v5.
+1. Recommendation: Found `uses: actions/setup-node@v4` in file `automated-tests.yaml`: Upgrade workflows to use actions/setup-node@v5.
 2. Information: There are updates for 8 dependencie(s):
    - @eslint/js                ^9.33.0  →  ^9.36.0
    - @eslint/json              ^0.13.1  →  ^0.13.2
@@ -15445,11 +15417,11 @@ Last update: 2025-10-01T23:26:54+02:00
 
 1. `package.json` issue: No repository field.
 2. There are no keywords in 'package.json'. We would use them as tags on the module list page.
-3. Recommendation: Found `jshint` in file `Gruntfile.js`: Replace "jshint" by "eslint".
+3. Recommendation: Found `jshint` in file `Gruntfile.js`: Suggest migrating from JSHint to ESLint.
 4. Typo: Found `Magic Mirror` in file `MMM-WH2600.js`: Replace it with `MagicMirror²`.
 5. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
 6. Deprecated: Found `"lockfileVersion": 1` in file `package-lock.json`: Run `npm update` to update to lockfileVersion 3.
-7. Deprecated: Found `"grunt"` in file `package.json`: Grunt is practically unmaintained. Move on to something better.
+7. Deprecated: Found `"grunt"` in file `package.json`: Grunt is effectively unmaintained. Move on to something modern.
 8. Typo: Found `MagicMirror2` in file `README.md`: Replace it with `MagicMirror²`.
 9. Outdated: Found `MichMich/MagicMirror` in file `README.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
 10. Recommendation: The README seems not to have an update section (like `## Update`). Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Update-Instructions)).
@@ -15463,12 +15435,12 @@ Last update: 2025-10-01T23:26:54+02:00
 1. `package.json` issue: No repository field.
 2. There are no keywords in 'package.json'. We would use them as tags on the module list page.
 3. No image found.
-4. Recommendation: Found `jshint` in file `Gruntfile.js`: Replace "jshint" by "eslint".
+4. Recommendation: Found `jshint` in file `Gruntfile.js`: Suggest migrating from JSHint to ESLint.
 5. Typo: Found `Magic Mirror` in file `MMM-WhisperGPT.js`: Replace it with `MagicMirror²`.
 6. Recommendation: Found `axios` in file `node_helper.js`: Replace it with built-in fetch ([documentation](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch); [example module with fetch implemented](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/node_helper.js)).
 7. Deprecated: Found `"lockfileVersion": 2` in file `package-lock.json`: Run `npm update` to update to lockfileVersion 3.
 8. Recommendation: Found `axios` in file `package.json`: Replace it with built-in fetch ([documentation](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch); [example module with fetch implemented](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/node_helper.js)).
-9. Deprecated: Found `"grunt"` in file `package.json`: Grunt is practically unmaintained. Move on to something better.
+9. Deprecated: Found `"grunt"` in file `package.json`: Grunt is effectively unmaintained. Move on to something modern.
 10. Outdated: Found `MichMich/MagicMirror` in file `README.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
 11. Recommendation: The README seems not to have an update section (like `## Update`). Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Update-Instructions)).
 12. Recommendation: The README seems not to have an install section (like `## Installation`). Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Installation-Instructions)).
@@ -15481,7 +15453,7 @@ Last update: 2025-10-01T23:26:54+02:00
 
 ### [MMM-whoshome by yedidiaklein](https://github.com/yedidiaklein/MMM-whoshome)
 
-1. Recommendation: Found `require('https')` in file `node_helper.js`: Replace 'https' by 'node:https'.
+1. Recommendation: Found `require('https')` in file `node_helper.js`: Replace `https` with the scoped import `node:https`.
 2. Recommendation: There is no CHANGELOG file. It is recommended to add one ([example CHANGELOG file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CHANGELOG.md)).
 3. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
 4. Recommendation: There is no dependabot configuration file. It is recommended to add one ([example dependabot file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/.github/dependabot.yaml)).
@@ -15500,13 +15472,13 @@ Last update: 2025-10-01T23:26:54+02:00
 
 ### [MMM-WienerLinien by fewieden](https://github.com/fewieden/MMM-WienerLinien)
 
-1. Recommendation: Found `npm run` in file `.travis.yml`: Replace it with `node --run`. This is a more modern way to run scripts, without the need for npm.
+1. Recommendation: Found `npm run` in file `.travis.yml`: Prefer `node --run` over invoking npm run directly.
 2. Outdated: Found `MichMich/MagicMirror` in file `MMM-WienerLinien.js`: Replace it by `MagicMirrorOrg/MagicMirror`.
 3. Recommendation: Found `'node-fetch'` in file `node_helper.js`: Replace it with built-in fetch ([documentation](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch); [example module with fetch implemented](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/node_helper.js)).
 4. Outdated: Found `MichMich/MagicMirror` in file `node_helper.js`: Replace it by `MagicMirrorOrg/MagicMirror`.
 5. Typo: Found `MagicMirror2` in file `package.json`: Replace it with `MagicMirror²`.
 6. Recommendation: Found `"node-fetch"` in file `package.json`: Replace it with built-in fetch ([documentation](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch); [example module with fetch implemented](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/node_helper.js)).
-7. Recommendation: Found `eslint .` in file `package.json`: The period at the end of the command is not necessary since v9. It is recommended to remove it.
+7. Recommendation: Found `eslint .` in file `package.json`: Drop the trailing '.' when invoking ESLint v9 or newer.
 8. Outdated: Found `MichMich/MagicMirror` in file `README.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
 9. Recommendation: The README seems not to have an update section (like `## Update`). Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Update-Instructions)).
 10. Recommendation: The README seems to have a config example without a trailing comma. Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Config-Instructions)).
@@ -15554,12 +15526,12 @@ Last update: 2025-10-01T23:26:54+02:00
 
 ### [MMM-WMATA by btoconnor](https://github.com/btoconnor/MMM-WMATA)
 
-1. Recommendation: Found `uses: actions/checkout@v4` in file `release.yml`: Replace it with v5.
-2. Recommendation: Found `uses: actions/setup-node@v4` in file `release.yml`: Replace it with v5.
-3. Recommendation: Found `npm run` in file `release.yml`: Replace it with `node --run`. This is a more modern way to run scripts, without the need for npm.
-4. Recommendation: Found `uses: actions/checkout@v4` in file `test.yml`: Replace it with v5.
-5. Recommendation: Found `uses: actions/setup-node@v4` in file `test.yml`: Replace it with v5.
-6. Recommendation: Found `npm run` in file `test.yml`: Replace it with `node --run`. This is a more modern way to run scripts, without the need for npm.
+1. Recommendation: Found `uses: actions/checkout@v4` in file `release.yml`: Upgrade workflows to use actions/checkout@v5.
+2. Recommendation: Found `uses: actions/setup-node@v4` in file `release.yml`: Upgrade workflows to use actions/setup-node@v5.
+3. Recommendation: Found `npm run` in file `release.yml`: Prefer `node --run` over invoking npm run directly.
+4. Recommendation: Found `uses: actions/checkout@v4` in file `test.yml`: Upgrade workflows to use actions/checkout@v5.
+5. Recommendation: Found `uses: actions/setup-node@v4` in file `test.yml`: Upgrade workflows to use actions/setup-node@v5.
+6. Recommendation: Found `npm run` in file `test.yml`: Prefer `node --run` over invoking npm run directly.
 7. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
 8. Recommendation: There is no dependabot configuration file. It is recommended to add one ([example dependabot file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/.github/dependabot.yaml)).
 9. Recommendation: The ESLint configuration file `eslint.config.js` does not contain `defineConfig`. It is recommended to use it.
@@ -15568,9 +15540,9 @@ Last update: 2025-10-01T23:26:54+02:00
 
 1. Deprecated: Found `require("request")` in file `node_helper.js`: Replace it with built-in fetch ([documentation](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch); [example module with fetch implemented](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/node_helper.js)).
 2. Typo: Found `Magic Mirror` in file `package.json`: Replace it with `MagicMirror²`.
-3. Recommendation: Found `npm run` in file `package.json`: Replace it with `node --run`. This is a more modern way to run scripts, without the need for npm.
-4. Recommendation: Found `eslint .` in file `package.json`: The period at the end of the command is not necessary since v9. It is recommended to remove it.
-5. Recommendation: Found `npm run` in file `README.md`: Replace it with `node --run`. This is a more modern way to run scripts, without the need for npm.
+3. Recommendation: Found `npm run` in file `package.json`: Prefer `node --run` over invoking npm run directly.
+4. Recommendation: Found `eslint .` in file `package.json`: Drop the trailing '.' when invoking ESLint v9 or newer.
+5. Recommendation: Found `npm run` in file `README.md`: Prefer `node --run` over invoking npm run directly.
 6. Recommendation: There is no CHANGELOG file. It is recommended to add one ([example CHANGELOG file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CHANGELOG.md)).
 7. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
 8. Recommendation: There is no dependabot configuration file. It is recommended to add one ([example dependabot file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/.github/dependabot.yaml)).
@@ -15610,8 +15582,8 @@ Last update: 2025-10-01T23:26:54+02:00
 
 ### [MMM-WordOfTheDay by jmwyds](https://github.com/jmwyds/MMM-WordOfTheDay)
 
-1. Recommendation: Found `npm run` in file `package.json`: Replace it with `node --run`. This is a more modern way to run scripts, without the need for npm.
-2. Recommendation: Found `eslint .` in file `package.json`: The period at the end of the command is not necessary since v9. It is recommended to remove it.
+1. Recommendation: Found `npm run` in file `package.json`: Prefer `node --run` over invoking npm run directly.
+2. Recommendation: Found `eslint .` in file `package.json`: Drop the trailing '.' when invoking ESLint v9 or newer.
 3. Recommendation: The README seems not to have an update section (like `## Update`). Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Update-Instructions)).
 4. Recommendation: There is no CHANGELOG file. It is recommended to add one ([example CHANGELOG file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CHANGELOG.md)).
 5. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
@@ -15620,7 +15592,7 @@ Last update: 2025-10-01T23:26:54+02:00
 
 ### [MMM-Worldclock by ulrichwisser](https://github.com/ulrichwisser/MMM-Worldclock)
 
-1. Recommendation: Found `https://cdnjs.cloudflare.com` in file `MMM-Worldclock.js`: It looks like a package is loaded via CDN. It would be better if the package were installed locally via npm.
+1. Recommendation: Found `https://cdnjs.cloudflare.com` in file `MMM-Worldclock.js`: Prefer bundling dependencies via npm instead of CDN references.
 2. Warning: No LICENSE file ([example LICENSE file](https://github.com/KristjanESPERANTO/MMM-WebSpeechTTS/blob/main/LICENSE.md)).
 3. Recommendation: There is no CHANGELOG file. It is recommended to add one ([example CHANGELOG file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CHANGELOG.md)).
 4. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
@@ -15821,11 +15793,11 @@ Last update: 2025-10-01T23:26:54+02:00
 
 1. Typo: Found `Magic Mirror` in file `.gitignore`: Replace it with `MagicMirror²`.
 2. Typo: Found `Magic Mirror` in file `MMM-YouLess.js`: Replace it with `MagicMirror²`.
-3. Recommendation: Found `https://cdnjs.cloudflare.com` in file `MMM-YouLess.js`: It looks like a package is loaded via CDN. It would be better if the package were installed locally via npm.
+3. Recommendation: Found `https://cdnjs.cloudflare.com` in file `MMM-YouLess.js`: Prefer bundling dependencies via npm instead of CDN references.
 4. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
 5. Deprecated: Found `require("request")` in file `node_helper.js`: Replace it with built-in fetch ([documentation](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch); [example module with fetch implemented](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/node_helper.js)).
 6. Deprecated: Found `"lockfileVersion": 1` in file `package-lock.json`: Run `npm update` to update to lockfileVersion 3.
-7. Recommendation: Found `npm run` in file `package.json`: Replace it with `node --run`. This is a more modern way to run scripts, without the need for npm.
+7. Recommendation: Found `npm run` in file `package.json`: Prefer `node --run` over invoking npm run directly.
 8. Outdated: Found `MichMich/MagicMirror` in file `README.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
 9. Recommendation: The README seems not to have an update section (like `## Update`). Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Update-Instructions)).
 10. Recommendation: The README seems to have a modules array (Found `modules: [`). This is usually not necessary. Please remove it if it is not needed ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Config-Instructions)).
@@ -15839,7 +15811,7 @@ Last update: 2025-10-01T23:26:54+02:00
 
 1. Typo: Found `Magic Mirror` in file `.gitignore`: Replace it with `MagicMirror²`.
 2. Typo: Found `Magic Mirror` in file `MMM-YouLess2.js`: Replace it with `MagicMirror²`.
-3. Recommendation: Found `https://cdnjs.cloudflare.com` in file `MMM-YouLess2.js`: It looks like a package is loaded via CDN. It would be better if the package were installed locally via npm.
+3. Recommendation: Found `https://cdnjs.cloudflare.com` in file `MMM-YouLess2.js`: Prefer bundling dependencies via npm instead of CDN references.
 4. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
 5. Deprecated: Found `require("request")` in file `node_helper.js`: Replace it with built-in fetch ([documentation](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch); [example module with fetch implemented](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/node_helper.js)).
 6. Deprecated: Found `"lockfileVersion": 1` in file `package-lock.json`: Run `npm update` to update to lockfileVersion 3.
@@ -15871,17 +15843,17 @@ Last update: 2025-10-01T23:26:54+02:00
 ### [MMM-YouTube-Live-Stream by ngnijland](https://github.com/ngnijland/MMM-YouTube-Live-Stream)
 
 1. No image found.
-2. Recommendation: Found `npm run` in file `CONTRIBUTING.md`: Replace it with `node --run`. This is a more modern way to run scripts, without the need for npm.
+2. Recommendation: Found `npm run` in file `CONTRIBUTING.md`: Prefer `node --run` over invoking npm run directly.
 3. Typo: Found `Magic Mirror` in file `MMM-YouTube-Live-Stream.js`: Replace it with `MagicMirror²`.
 4. Deprecated: Found `"lockfileVersion": 2` in file `package-lock.json`: Run `npm update` to update to lockfileVersion 3.
-5. Recommendation: Found `eslint .` in file `package.json`: The period at the end of the command is not necessary since v9. It is recommended to remove it.
-6. Deprecated: Found `eslint-config-airbnb` in file `package.json`: Replace it with modern ESLint configuration.
+5. Recommendation: Found `eslint .` in file `package.json`: Drop the trailing '.' when invoking ESLint v9 or newer.
+6. Deprecated: Found `eslint-config-airbnb` in file `package.json`: Replace the preset with a maintained ESLint configuration.
 7. Typo: Found `Magic Mirror` in file `README.md`: Replace it with `MagicMirror²`.
 8. Recommendation: The README seems not to have an update section (like `## Update`). Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Update-Instructions)).
 9. Recommendation: The README seems to have a modules array (Found `modules: [`). This is usually not necessary. Please remove it if it is not needed ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Config-Instructions)).
 10. Recommendation: The README seems to have a config example without a trailing comma. Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Config-Instructions)).
-11. Recommendation: Found `uses: actions/checkout@v2` in file `nodejs.yml`: Replace it with v5.
-12. Recommendation: Found `npm run` in file `nodejs.yml`: Replace it with `node --run`. This is a more modern way to run scripts, without the need for npm.
+11. Recommendation: Found `uses: actions/checkout@v2` in file `nodejs.yml`: Upgrade workflows to use actions/checkout@v5.
+12. Recommendation: Found `npm run` in file `nodejs.yml`: Prefer `node --run` over invoking npm run directly.
 13. Recommendation: There is no CHANGELOG file. It is recommended to add one ([example CHANGELOG file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CHANGELOG.md)).
 14. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
 15. Recommendation: There is no dependabot configuration file. It is recommended to add one ([example dependabot file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/.github/dependabot.yaml)).
@@ -15935,14 +15907,14 @@ Last update: 2025-10-01T23:26:54+02:00
 
 1. There are no keywords in 'package.json'. We would use them as tags on the module list page.
 2. Recommendation: Found `prettier/prettier` in file `.stylelintrc.json`: Config would be cleaner using 'stylelint-prettier/recommended'. [See here](https://github.com/prettier/stylelint-prettier).
-3. Recommendation: Found `jshint` in file `Gruntfile.js`: Replace "jshint" by "eslint".
+3. Recommendation: Found `jshint` in file `Gruntfile.js`: Suggest migrating from JSHint to ESLint.
 4. Typo: Found `Magic Mirror` in file `MMM-YT-SubCount.js`: Replace it with `MagicMirror²`.
-5. Recommendation: Found `https://cdn.jsdelivr.net` in file `MMM-YT-SubCount.js`: It looks like a package is loaded via CDN. It would be better if the package were installed locally via npm.
+5. Recommendation: Found `https://cdn.jsdelivr.net` in file `MMM-YT-SubCount.js`: Prefer bundling dependencies via npm instead of CDN references.
 6. Typo: Found `Magic Mirror` in file `node_helper.js`: Replace it with `MagicMirror²`.
 7. Recommendation: Found `"node-fetch"` in file `node_helper.js`: Replace it with built-in fetch ([documentation](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch); [example module with fetch implemented](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/node_helper.js)).
 8. Deprecated: Found `"lockfileVersion": 2` in file `package-lock.json`: Run `npm update` to update to lockfileVersion 3.
 9. Recommendation: Found `"node-fetch"` in file `package.json`: Replace it with built-in fetch ([documentation](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch); [example module with fetch implemented](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/node_helper.js)).
-10. Recommendation: Found `npm run` in file `package.json`: Replace it with `node --run`. This is a more modern way to run scripts, without the need for npm.
+10. Recommendation: Found `npm run` in file `package.json`: Prefer `node --run` over invoking npm run directly.
 11. Outdated: Found `MichMich/MagicMirror` in file `README.md`: Replace it by `MagicMirrorOrg/MagicMirror`.
 12. Recommendation: The README seems not to have an update section (like `## Update`). Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Update-Instructions)).
 13. Recommendation: The README seems to have a modules array (Found `modules: [`). This is usually not necessary. Please remove it if it is not needed ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Config-Instructions)).
@@ -15965,7 +15937,7 @@ Last update: 2025-10-01T23:26:54+02:00
 
 1. `package.json` issue: No description
 2. `package.json` issue: No repository field.
-3. There are no specific keywords in 'package.json'. We would use them as tags on the module list page. Add a few meaningful terms to the keywords in the package.json. Not just “magicmirror” or “module”.
+3. There are no keywords in 'package.json'. We would use them as tags on the module list page.
 4. Issues are not enabled in the GitHub repository. So users cannot report bugs. Please enable issues in your repo.
 5. Found directory `node_modules`. This shouldn't be uploaded. Add `node_modules/`to `.gitignore`.
 6. Deprecated: Found `"lockfileVersion": 1` in file `package-lock.json`: Run `npm update` to update to lockfileVersion 3.

@@ -23,7 +23,11 @@ type ModuleEntry = {
 type UrlValidationResult = {
   module: ModuleEntry;
   statusCode: number | null;
+  statusText?: string;
   ok: boolean;
+  usedFallback?: boolean;
+  initialStatusCode?: number | null;
+  responseSnippet?: string;
   error?: string;
 };
 
@@ -46,8 +50,13 @@ const SKIPPED_MODULES_PATH = path.join(
 const MODULES_DIR = path.join(PROJECT_ROOT, "modules");
 const MODULES_TEMP_DIR = path.join(PROJECT_ROOT, "modules_temp");
 
-const DEFAULT_URL_CONCURRENCY = 20;
-const DEFAULT_URL_RATE = 60;
+const DEFAULT_URL_CONCURRENCY = 10;
+const DEFAULT_URL_RATE = 15;
+const URL_VALIDATION_RETRY_COUNT = 5;
+const URL_VALIDATION_RETRY_DELAY_MS = 3000;
+const RESPONSE_SNIPPET_MAX_LENGTH = 512;
+const RESPONSE_SNIPPET_LOG_LENGTH = 200;
+const REDIRECT_STATUS_CODES = new Set([301, 302, 307, 308]);
 
 type CliOptions = {
   limit?: number;
@@ -108,21 +117,53 @@ function parseCliOptions(argv: string[]): CliOptions {
   return {
     limit,
     urlConcurrency: normalizedConcurrency,
-    urlRate: disableRateLimiter
-      ? undefined
-      : (parsedRate ?? Math.max(normalizedConcurrency * 2, DEFAULT_URL_RATE))
+    urlRate: disableRateLimiter ? undefined : (parsedRate ?? DEFAULT_URL_RATE)
   };
 }
 
 const cliOptions = parseCliOptions(process.argv.slice(2));
 const logger = createLogger({ name: "get-modules" });
+
+function logErrorDetails(error: unknown, { scope }: { scope: string }) {
+  if (error instanceof Error) {
+    const stack = error.stack ?? error.message;
+    logger.error(`${scope}: ${error.message}`);
+    if (stack && stack !== error.message) {
+      logger.error(`Stack trace:\n${stack}`);
+    }
+
+    if (error.cause) {
+      const causeMessage = error.cause instanceof Error
+        ? error.cause.stack ?? error.cause.message
+        : String(error.cause);
+      logger.error(`Caused by: ${causeMessage}`);
+    }
+  } else {
+    logger.error(`${scope}: ${String(error)}`);
+  }
+}
+
+function installGlobalErrorHandlers() {
+  process.on("unhandledRejection", (reason) => {
+    logErrorDetails(reason, { scope: "Unhandled promise rejection" });
+    process.exit(1);
+  });
+
+  process.on("uncaughtException", (error) => {
+    logErrorDetails(error, { scope: "Uncaught exception" });
+    process.exit(1);
+  });
+}
+
+installGlobalErrorHandlers();
+
 const rateLimiter =
   cliOptions.urlRate && cliOptions.urlRate > 0
     ? createRateLimiter({
-        tokensPerInterval: cliOptions.urlRate,
-        intervalMs: 1000,
-        maxTokens: cliOptions.urlRate
-      })
+      tokensPerInterval: cliOptions.urlRate,
+      intervalMs: 1000,
+      maxTokens: cliOptions.urlRate
+    })
     : null;
 const httpClient = createHttpClient(rateLimiter ? { rateLimiter } : {});
 
@@ -167,18 +208,118 @@ function extractOwnerFromUrl(url: string): string {
   }
 }
 
+function isSuccessStatus(status: number | null | undefined) {
+  return typeof status === "number" && status >= 200 && status < 300;
+}
+
+function isAllowedRedirect(status: number | null | undefined) {
+  return typeof status === "number" && REDIRECT_STATUS_CODES.has(status);
+}
+
+function formatSnippetForLog(snippet?: string) {
+  if (!snippet) {
+    return "<empty response>";
+  }
+
+  return snippet
+    .replace(/\s+/g, " ")
+    .trim()
+    .slice(0, RESPONSE_SNIPPET_LOG_LENGTH);
+}
+
+async function readSnippet(response: Response) {
+  try {
+    const text = await response.text();
+    if (!text) {
+      return undefined;
+    }
+    return text.slice(0, RESPONSE_SNIPPET_MAX_LENGTH);
+  } catch {
+    return undefined;
+  }
+}
+
+async function fetchFallbackPreview(url: string) {
+  try {
+    const response = await httpClient.request(url, {
+      method: "GET",
+      redirect: "manual",
+      retries: 1,
+      retryDelayMs: URL_VALIDATION_RETRY_DELAY_MS
+    });
+    const snippet = await readSnippet(response);
+    return {
+      statusCode: response.status,
+      statusText: response.statusText,
+      snippet
+    };
+  } catch (error) {
+    const message = error instanceof Error ? error.message : String(error);
+    logger.debug(`Fallback GET failed for ${url}: ${message}`);
+    return undefined;
+  }
+}
+
 async function validateModuleUrl(
   module: ModuleEntry
 ): Promise<UrlValidationResult> {
   try {
-    const response = await httpClient.request(module.url, {
+    const headResponse = await httpClient.request(module.url, {
       method: "HEAD",
-      redirect: "manual"
+      redirect: "manual",
+      retries: URL_VALIDATION_RETRY_COUNT,
+      retryDelayMs: URL_VALIDATION_RETRY_DELAY_MS
     });
+
+    const headSnippet = await readSnippet(headResponse);
+    const headStatus = headResponse.status;
+    const headStatusText = headResponse.statusText;
+
+    if (isSuccessStatus(headStatus) || isAllowedRedirect(headStatus)) {
+      return {
+        module,
+        statusCode: headStatus,
+        statusText: headStatusText,
+        ok: true,
+        responseSnippet: headSnippet
+      };
+    }
+
+    const fallbackPreview = await fetchFallbackPreview(module.url);
+    if (
+      fallbackPreview &&
+      (isSuccessStatus(fallbackPreview.statusCode) ||
+        isAllowedRedirect(fallbackPreview.statusCode))
+    ) {
+      logger.warn(
+        `URL ${module.url} rejected HEAD (${headStatus} ${headStatusText}) but accepted fallback GET (${fallbackPreview.statusCode} ${fallbackPreview.statusText}).`
+      );
+      return {
+        module,
+        statusCode: fallbackPreview.statusCode ?? headStatus,
+        statusText: fallbackPreview.statusText ?? headStatusText,
+        ok: true,
+        usedFallback: true,
+        initialStatusCode: headStatus,
+        responseSnippet: fallbackPreview.snippet ?? headSnippet
+      };
+    }
+
+    const snippet = fallbackPreview?.snippet ?? headSnippet;
+    const finalStatusCode = fallbackPreview?.statusCode ?? headStatus;
+    const finalStatusText = fallbackPreview?.statusText ?? headStatusText;
+
+    logger.warn(
+      `URL ${module.url} failed validation (${finalStatusCode} ${finalStatusText}). Sample: ${formatSnippetForLog(snippet)}`
+    );
+
     return {
       module,
-      statusCode: response.status,
-      ok: response.status === 200 || response.status === 301
+      statusCode: finalStatusCode,
+      statusText: finalStatusText,
+      ok: false,
+      initialStatusCode: headStatus,
+      responseSnippet: snippet
     };
   } catch (error) {
     const message = error instanceof Error ? error.message : String(error);
@@ -186,6 +327,7 @@ async function validateModuleUrl(
     return {
       module,
       statusCode: null,
+      statusText: undefined,
       ok: false,
       error: message
     };
@@ -255,9 +397,18 @@ function ensureIssueArray(module: ModuleEntry) {
 function createSkippedEntry(
   module: ModuleEntry,
   error: string,
-  errorType: string
+  errorType: string,
+  details: {
+    statusCode?: number | null;
+    statusText?: string;
+    responseSnippet?: string;
+    initialStatusCode?: number | null;
+  } = {}
 ) {
   const owner = extractOwnerFromUrl(module.url);
+  const normalizedDetails = Object.fromEntries(
+    Object.entries(details).filter(([, value]) => value !== undefined)
+  );
   return {
     name: module.name,
     url: module.url,
@@ -265,7 +416,8 @@ function createSkippedEntry(
     description:
       typeof module.description === "string" ? module.description : "",
     error,
-    errorType
+    errorType,
+    ...normalizedDetails
   };
 }
 
@@ -359,10 +511,23 @@ async function processModules() {
 
   await ensureDirectory(MODULES_DIR);
 
-  for (const { module, ok, statusCode } of validated) {
+  for (const {
+    module,
+    ok,
+    statusCode,
+    statusText,
+    responseSnippet,
+    usedFallback,
+    initialStatusCode
+  } of validated) {
     if (!ok) {
       skippedModules.push(
-        createSkippedEntry(module, "Invalid repository URL", "invalid_url")
+        createSkippedEntry(module, "Invalid repository URL", "invalid_url", {
+          statusCode,
+          statusText,
+          responseSnippet,
+          initialStatusCode
+        })
       );
       continue;
     }
@@ -374,10 +539,19 @@ async function processModules() {
 
     const moduleCopy: ModuleEntry = { ...module };
 
-    if (statusCode === 301) {
+    if (statusCode && REDIRECT_STATUS_CODES.has(statusCode)) {
       ensureIssueArray(moduleCopy);
       moduleCopy.issues?.push(
-        "The repository URL returns a 301 status code, indicating it has been moved. Please verify the new location and update the module list if necessary."
+        statusCode === 301
+          ? "The repository URL returns a 301 status code, indicating it has been moved. Please verify the new location and update the module list if necessary."
+          : `The repository URL returned a ${statusCode} redirect during validation. Please confirm the final destination and update the module list if necessary.`
+      );
+    }
+
+    if (usedFallback) {
+      ensureIssueArray(moduleCopy);
+      moduleCopy.issues?.push(
+        "HEAD requests to this repository failed but a subsequent GET request succeeded. Please verify the repository URL and server configuration."
       );
     }
 
@@ -418,10 +592,9 @@ async function main() {
     await rotateModulesDirectory();
     await processModules();
   } catch (error) {
-    const message = error instanceof Error ? error.message : String(error);
     logger.error("Stage 'get-modules' failed");
-    logger.error(message);
-    process.exitCode = 1;
+    logErrorDetails(error, { scope: "Fatal error" });
+    process.exit(1);
   }
 }
 
