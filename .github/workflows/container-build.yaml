@@ -24,15 +24,26 @@ jobs:
         uses: actions/checkout@v5
       - name: Build container
         run: |
-          if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
-            # ugly workaround for converting content of $GITHUB_REPOSITORY (= `MagicMirrorOrg/MagicMirror-3rd-Party-Modules`)
-            REPO="$(echo $GITHUB_REPOSITORY | tr '[:upper:]' '[:lower:]')"
-            # regular build
-            PARAMS="--output type=image,\"name=ghcr.io/${REPO}:${{ github.ref_name }}\",push=true"
-          else
-            # only build without pushing the image; still pull the full wiki dataset
-            PARAMS="--output type=image,push=false"
-          fi
+          # ghcr requires lowercase repository names; normalize `MagicMirrorOrg/MagicMirror-3rd-Party-Modules`
+          REPO="$(echo $GITHUB_REPOSITORY | tr '[:upper:]' '[:lower:]')"
+          case "${{ github.event_name }}" in
+            workflow_dispatch)
+              # manual runs should publish a refreshed image tag
+              PARAMS="--output type=image,\"name=ghcr.io/${REPO}:${{ github.ref_name }}\",push=true"
+              ;;
+            schedule)
+              # nightly cron refresh publishes the image used by the website
+              PARAMS="--output type=image,\"name=ghcr.io/${REPO}:${{ github.ref_name }}\",push=true"
+              ;;
+            push)
+              # changes on main publish the branch tag
+              PARAMS="--output type=image,\"name=ghcr.io/${REPO}:${{ github.ref_name }}\",push=true"
+              ;;
+            *)
+              # fallback: build without pushing, but still run full build pipeline
+              PARAMS="--output type=image,push=false"
+              ;;
+          esac
           # registry credentials
           export DOCKER_CONFIG="$(pwd)/container"
           echo "{\"auths\":{\"ghcr.io\":{\"auth\":\"$(echo -n ${{ github.actor }}:${{ secrets.GITHUB_TOKEN }} | base64 -w 0)\"}}}" > $DOCKER_CONFIG/config.json
