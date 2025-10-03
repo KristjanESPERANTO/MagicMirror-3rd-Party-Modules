@@ -123,6 +123,40 @@ function parseCliOptions(argv: string[]): CliOptions {
 
 const cliOptions = parseCliOptions(process.argv.slice(2));
 const logger = createLogger({ name: "get-modules" });
+
+function logErrorDetails(error: unknown, { scope }: { scope: string }) {
+  if (error instanceof Error) {
+    const stack = error.stack ?? error.message;
+    logger.error(`${scope}: ${error.message}`);
+    if (stack && stack !== error.message) {
+      logger.error(`Stack trace:\n${stack}`);
+    }
+
+    if (error.cause) {
+      const causeMessage = error.cause instanceof Error
+        ? error.cause.stack ?? error.cause.message
+        : String(error.cause);
+      logger.error(`Caused by: ${causeMessage}`);
+    }
+  } else {
+    logger.error(`${scope}: ${String(error)}`);
+  }
+}
+
+function installGlobalErrorHandlers() {
+  process.on("unhandledRejection", (reason) => {
+    logErrorDetails(reason, { scope: "Unhandled promise rejection" });
+    process.exit(1);
+  });
+
+  process.on("uncaughtException", (error) => {
+    logErrorDetails(error, { scope: "Uncaught exception" });
+    process.exit(1);
+  });
+}
+
+installGlobalErrorHandlers();
+
 const rateLimiter =
   cliOptions.urlRate && cliOptions.urlRate > 0
     ? createRateLimiter({
@@ -558,9 +592,8 @@ async function main() {
     await rotateModulesDirectory();
     await processModules();
   } catch (error) {
-    const message = error instanceof Error ? error.message : String(error);
     logger.error("Stage 'get-modules' failed");
-    logger.error(message);
+    logErrorDetails(error, { scope: "Fatal error" });
     process.exit(1);
   }
 }
