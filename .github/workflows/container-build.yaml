@@ -16,41 +16,36 @@ jobs:
   build:
     runs-on: ubuntu-latest
     timeout-minutes: 60
-    container:
-      image: moby/buildkit:latest
-      options: --privileged
     steps:
       - name: Checkout code
         uses: actions/checkout@v5
-      - name: Build container
+
+      - name: Derive image coordinates
+        id: meta
         run: |
-          # ghcr requires lowercase repository names; normalize `MagicMirrorOrg/MagicMirror-3rd-Party-Modules`
-          REPO="$(echo $GITHUB_REPOSITORY | tr '[:upper:]' '[:lower:]')"
-          case "${{ github.event_name }}" in
-            workflow_dispatch)
-              # manual runs should publish a refreshed image tag
-              PARAMS="--output type=image,\"name=ghcr.io/${REPO}:${{ github.ref_name }}\",push=true"
-              ;;
-            schedule)
-              # nightly cron refresh publishes the image used by the website
-              PARAMS="--output type=image,\"name=ghcr.io/${REPO}:${{ github.ref_name }}\",push=true"
-              ;;
-            push)
-              # changes on main publish the branch tag
-              PARAMS="--output type=image,\"name=ghcr.io/${REPO}:${{ github.ref_name }}\",push=true"
-              ;;
-            *)
-              # fallback: build without pushing, but still run full build pipeline
-              PARAMS="--output type=image,push=false"
-              ;;
-          esac
-          # registry credentials
-          export DOCKER_CONFIG="$(pwd)/container"
-          echo "{\"auths\":{\"ghcr.io\":{\"auth\":\"$(echo -n ${{ github.actor }}:${{ secrets.GITHUB_TOKEN }} | base64 -w 0)\"}}}" > $DOCKER_CONFIG/config.json
-          # build
-          buildctl-daemonless.sh build \
-            --progress plain \
-            --frontend=dockerfile.v0 \
-            --local context=. \
-            --local dockerfile=container \
-            $PARAMS
+          set -euo pipefail
+          repo="${GITHUB_REPOSITORY,,}"
+          ref="${GITHUB_REF_NAME}"
+          sanitized_ref=$(echo "${ref}" | tr '[:upper:]' '[:lower:]' | sed 's#[^a-z0-9_.-]#-#g')
+          echo "image=ghcr.io/${repo}:${sanitized_ref}" >> "$GITHUB_OUTPUT"
+
+      - name: Set up Docker Buildx
+        uses: docker/setup-buildx-action@v3
+
+      - name: Log in to GitHub Container Registry
+        uses: docker/login-action@v3
+        with:
+          registry: ghcr.io
+          username: ${{ github.actor }}
+          password: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Build and push image
+        uses: docker/build-push-action@v6
+        with:
+          context: .
+          file: container/Dockerfile
+          push: true
+          platforms: linux/amd64
+          build-args: |
+            GITHUB_TOKEN=${{ secrets.GITHUB_TOKEN }}
+          tags: ${{ steps.meta.outputs.image }}
