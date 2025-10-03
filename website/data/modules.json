@@ -1267,7 +1267,7 @@
       "issues": true,
       "stars": 0,
       "license": "MIT",
-      "defaultSortWeight": 15,
+      "defaultSortWeight": 14,
       "lastCommit": "2025-02-21T21:31:51-06:00"
     },
     {
@@ -2553,7 +2553,7 @@
         "movie"
       ],
       "image": "example_1.jpg",
-      "defaultSortWeight": 6,
+      "defaultSortWeight": 5,
       "lastCommit": "2025-06-15T01:59:38+02:00"
     },
     {
@@ -3493,7 +3493,7 @@
         "entertainement"
       ],
       "image": "screenshot.jpg",
-      "defaultSortWeight": 10,
+      "defaultSortWeight": 9,
       "lastCommit": "2025-03-09T18:39:23+01:00"
     },
     {
@@ -8179,7 +8179,7 @@
         "media"
       ],
       "image": ".github-animate.jpg",
-      "defaultSortWeight": 11,
+      "defaultSortWeight": 10,
       "lastCommit": "2025-03-29T20:41:44-07:00"
     },
     {
@@ -8690,7 +8690,7 @@
         "shares"
       ],
       "image": "docs-example.jpg",
-      "defaultSortWeight": 6,
+      "defaultSortWeight": 5,
       "lastCommit": "2024-06-04T15:32:59+02:00"
     },
     {
@@ -8895,7 +8895,7 @@
         "table"
       ],
       "image": "example1.jpg",
-      "defaultSortWeight": 13,
+      "defaultSortWeight": 12,
       "lastCommit": "2025-09-17T10:05:33+02:00"
     },
     {
@@ -12923,7 +12923,7 @@
         "movies"
       ],
       "image": "img-screenshot1.jpg",
-      "defaultSortWeight": 7,
+      "defaultSortWeight": 6,
       "lastCommit": "2025-08-31T19:11:38+02:00"
     },
     {
@@ -13850,7 +13850,7 @@
         "olympic games"
       ],
       "image": ".github-countries.jpg",
-      "defaultSortWeight": 16,
+      "defaultSortWeight": 15,
       "lastCommit": "2024-07-28T16:21:52+02:00"
     },
     {
@@ -16038,7 +16038,7 @@
         "clouds"
       ],
       "image": "img-example.jpg",
-      "defaultSortWeight": 8,
+      "defaultSortWeight": 7,
       "lastCommit": "2024-08-28T20:10:53+02:00"
     },
     {
