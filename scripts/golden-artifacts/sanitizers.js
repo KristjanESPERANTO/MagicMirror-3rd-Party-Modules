@@ -87,6 +87,7 @@ export function sanitizeStats (data) {
   if (Object.hasOwn(sanitized, "lastUpdate")) {
     sanitized.lastUpdate = PLACEHOLDER_TIMESTAMP;
   }
+  delete sanitized.issueCounter;
   return sanitized;
 }
 
