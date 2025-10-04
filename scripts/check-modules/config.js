@@ -103,7 +103,15 @@ function freezeConfig (config) {
 }
 
 export async function loadCheckGroupConfig ({projectRoot} = {}) {
-  const root = projectRoot ? path.resolve(projectRoot) : process.cwd();
+  const overrideRoot = process.env.CHECK_MODULES_CONFIG_ROOT;
+  let root;
+  if (overrideRoot) {
+    root = path.resolve(overrideRoot);
+  } else if (projectRoot) {
+    root = path.resolve(projectRoot);
+  } else {
+    root = process.cwd();
+  }
   const configDir = path.join(root, "scripts", "check-modules");
   const basePath = path.join(configDir, "check-groups.config.json");
   const localPath = path.join(configDir, "check-groups.config.local.json");

@@ -1,5 +1,5 @@
 {
-  "issueCounter": 12342,
+  "issueCounter": 12345,
   "lastUpdate": "1970-01-01T00:00:00.000Z",
   "maintainer": {
     "0lek": 1,
@@ -750,7 +750,7 @@
   },
   "moduleCounter": 1300,
   "modulesWithImageCounter": 925,
-  "modulesWithIssuesCounter": 1299,
+  "modulesWithIssuesCounter": 1300,
   "repositoryHoster": {
     "bitbucket": 1,
     "github": 1287,

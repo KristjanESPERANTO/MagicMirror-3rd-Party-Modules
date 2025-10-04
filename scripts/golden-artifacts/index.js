@@ -1,5 +1,18 @@
 #!/usr/bin/env node
+import {
+  sanitizeFinalModules,
+  sanitizeGitHubData,
+  sanitizeSkippedModules,
+  sanitizeStage1,
+  sanitizeStage2,
+  sanitizeStage3,
+  sanitizeStage4,
+  sanitizeStage5,
+  sanitizeStats,
+  stableStringify
+} from "./sanitizers.js";
 import {fileURLToPath} from "node:url";
+
 import fs from "node:fs";
 import path from "node:path";
 import process from "node:process";
@@ -7,8 +20,6 @@ import process from "node:process";
 const currentFilePath = fileURLToPath(import.meta.url);
 const currentDirPath = path.dirname(currentFilePath);
 const repoRoot = path.resolve(currentDirPath, "..", "..");
-
-const PLACEHOLDER_TIMESTAMP = "1970-01-01T00:00:00.000Z";
 
 const mode = (process.argv[2] ?? "check").toLowerCase();
 if (!["check", "update"].includes(mode)) {
@@ -23,97 +34,6 @@ function readJson (filePath) {
   } catch (error) {
     throw new Error(`Unable to read JSON from ${filePath}: ${error.message}`, {cause: error});
   }
-}
-
-function deepSortObject (value) {
-  if (Array.isArray(value)) {
-    return value.map((item) => deepSortObject(item));
-  }
-
-  if (value && typeof value === "object" && value.constructor === Object) {
-    const sorted = {};
-    for (const key of Object.keys(value).sort()) {
-      sorted[key] = deepSortObject(value[key]);
-    }
-    return sorted;
-  }
-
-  return value;
-}
-
-function compareById (a, b) {
-  const idA = (a?.id ?? a?.name ?? "").toString();
-  const idB = (b?.id ?? b?.name ?? "").toString();
-  return idA.localeCompare(idB, "en", {sensitivity: "base"});
-}
-
-function sanitizeModulesArray (modules = []) {
-  return [...modules]
-    .map((module) => deepSortObject(module))
-    .sort(compareById);
-}
-
-function sanitizeRepositoryArray (repositories = []) {
-  return [...repositories]
-    .map((repo) => deepSortObject(repo))
-    .sort(compareById);
-}
-
-function sanitizeModulesContainer (data) {
-  const sanitized = deepSortObject(data ?? {});
-  if (Array.isArray(data?.modules)) {
-    sanitized.modules = sanitizeModulesArray(data.modules);
-  }
-  if (Object.hasOwn(sanitized, "lastUpdate")) {
-    sanitized.lastUpdate = PLACEHOLDER_TIMESTAMP;
-  }
-  return sanitized;
-}
-
-function sanitizeStage1 (data) {
-  return {
-    lastUpdate: PLACEHOLDER_TIMESTAMP,
-    modules: sanitizeModulesArray(data?.modules ?? [])
-  };
-}
-
-function sanitizeStage2 (modules) {
-  return sanitizeModulesArray(modules);
-}
-
-function sanitizeStage3 (data) {
-  return sanitizeModulesContainer(data);
-}
-
-function sanitizeStage4 (data) {
-  return sanitizeModulesContainer(data);
-}
-
-function sanitizeStage5 (data) {
-  return sanitizeModulesContainer(data);
-}
-
-function sanitizeFinalModules (data) {
-  return sanitizeModulesContainer(data);
-}
-
-function sanitizeStats (data) {
-  const sanitized = deepSortObject(data ?? {});
-  if (Object.hasOwn(sanitized, "lastUpdate")) {
-    sanitized.lastUpdate = PLACEHOLDER_TIMESTAMP;
-  }
-  return sanitized;
-}
-
-function sanitizeGitHubData (data) {
-  return {
-    lastUpdate: PLACEHOLDER_TIMESTAMP,
-    repositories: sanitizeRepositoryArray(data?.repositories ?? [])
-  };
-}
-
-function sanitizeSkippedModules (data) {
-  return sanitizeModulesArray(data ?? []);
 }
 
 const artifacts = [
@@ -172,10 +92,6 @@ const artifacts = [
     sanitize: sanitizeSkippedModules
   }
 ];
-
-function stableStringify (value) {
-  return `${JSON.stringify(value, null, 2)}\n`;
-}
 
 function processArtifact (artifact) {
   const {name, source, target, sanitize} = artifact;

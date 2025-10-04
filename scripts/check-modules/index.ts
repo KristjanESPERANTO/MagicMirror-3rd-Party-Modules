@@ -21,21 +21,54 @@ import {
   PACKAGE_LOCK_RULES,
   TEXT_RULES
 } from "./rule-registry.js";
-import {loadCheckGroupConfig} from "./config.js";
+import { loadCheckGroupConfig } from "./config.js";
 
 const execFileAsync = promisify(execFile);
 
 const currentFile = fileURLToPath(import.meta.url);
 const currentDir = path.dirname(currentFile);
-const PROJECT_ROOT = path.resolve(currentDir, "..", "..");
-const WEBSITE_DIR = path.join(PROJECT_ROOT, "website");
-const DATA_DIR = path.join(WEBSITE_DIR, "data");
-const MODULES_DIR = path.join(PROJECT_ROOT, "modules");
-const RESULT_PATH = path.join(WEBSITE_DIR, "result.md");
-const STAGE5_PATH = path.join(DATA_DIR, "modules.stage.5.json");
-const MODULES_JSON_PATH = path.join(DATA_DIR, "modules.json");
-const MODULES_MIN_PATH = path.join(DATA_DIR, "modules.min.json");
-const STATS_PATH = path.join(DATA_DIR, "stats.json");
+
+const envOverrides = {
+  projectRoot: process.env.CHECK_MODULES_PROJECT_ROOT,
+  websiteDir: process.env.CHECK_MODULES_WEBSITE_DIR,
+  dataDir: process.env.CHECK_MODULES_DATA_DIR,
+  modulesDir: process.env.CHECK_MODULES_MODULES_DIR,
+  resultPath: process.env.CHECK_MODULES_RESULT_PATH,
+  stage5Path: process.env.CHECK_MODULES_STAGE5_PATH,
+  modulesJsonPath: process.env.CHECK_MODULES_MODULES_JSON_PATH,
+  modulesMinPath: process.env.CHECK_MODULES_MODULES_MIN_PATH,
+  statsPath: process.env.CHECK_MODULES_STATS_PATH
+};
+
+const resolvedProjectRoot = envOverrides.projectRoot
+  ? path.resolve(envOverrides.projectRoot)
+  : path.resolve(currentDir, "..", "..");
+const PROJECT_ROOT = resolvedProjectRoot;
+
+const WEBSITE_DIR = envOverrides.websiteDir
+  ? path.resolve(envOverrides.websiteDir)
+  : path.join(PROJECT_ROOT, "website");
+const DATA_DIR = envOverrides.dataDir
+  ? path.resolve(envOverrides.dataDir)
+  : path.join(WEBSITE_DIR, "data");
+const MODULES_DIR = envOverrides.modulesDir
+  ? path.resolve(envOverrides.modulesDir)
+  : path.join(PROJECT_ROOT, "modules");
+const RESULT_PATH = envOverrides.resultPath
+  ? path.resolve(envOverrides.resultPath)
+  : path.join(WEBSITE_DIR, "result.md");
+const STAGE5_PATH = envOverrides.stage5Path
+  ? path.resolve(envOverrides.stage5Path)
+  : path.join(DATA_DIR, "modules.stage.5.json");
+const MODULES_JSON_PATH = envOverrides.modulesJsonPath
+  ? path.resolve(envOverrides.modulesJsonPath)
+  : path.join(DATA_DIR, "modules.json");
+const MODULES_MIN_PATH = envOverrides.modulesMinPath
+  ? path.resolve(envOverrides.modulesMinPath)
+  : path.join(DATA_DIR, "modules.min.json");
+const STATS_PATH = envOverrides.statsPath
+  ? path.resolve(envOverrides.statsPath)
+  : path.join(DATA_DIR, "stats.json");
 
 const baseLogger = createLogger();
 const logger =
