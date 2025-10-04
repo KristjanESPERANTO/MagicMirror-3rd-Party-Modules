@@ -1,6 +1,8 @@
 *.js
 *.ts
 website/data/*.json
+fixtures/golden/*.json
+dist/schemas/*.json
 fixtures/baseline/
 fixtures/data/
 website/fonts/

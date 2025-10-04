@@ -6,6 +6,7 @@ import fs from "node:fs";
 import { access, readdir, readFile, writeFile } from "node:fs/promises";
 import path from "node:path";
 import process from "node:process";
+import readline from "node:readline";
 import { execFile } from "node:child_process";
 import { setMaxListeners } from "node:events";
 import { promisify } from "node:util";
@@ -19,22 +20,69 @@ import {
 import {
   PACKAGE_JSON_RULES,
   PACKAGE_LOCK_RULES,
-  TEXT_RULES
+  TEXT_RULES,
+  getRuleById
 } from "./rule-registry.js";
+import { loadCheckGroupConfig } from "./config.js";
+import { buildRunSummaryMarkdown } from "./run-summary.js";
+import {
+  MISSING_DEPENDENCY_RULE_ID,
+  detectUsedDependencies,
+  extractDeclaredDependencyNames,
+  findMissingDependencies,
+  shouldAnalyzeFileForDependencyUsage
+} from "./dependency-usage.js";
 
 const execFileAsync = promisify(execFile);
 
 const currentFile = fileURLToPath(import.meta.url);
 const currentDir = path.dirname(currentFile);
-const PROJECT_ROOT = path.resolve(currentDir, "..", "..");
-const WEBSITE_DIR = path.join(PROJECT_ROOT, "website");
-const DATA_DIR = path.join(WEBSITE_DIR, "data");
-const MODULES_DIR = path.join(PROJECT_ROOT, "modules");
-const RESULT_PATH = path.join(WEBSITE_DIR, "result.md");
-const STAGE5_PATH = path.join(DATA_DIR, "modules.stage.5.json");
-const MODULES_JSON_PATH = path.join(DATA_DIR, "modules.json");
-const MODULES_MIN_PATH = path.join(DATA_DIR, "modules.min.json");
-const STATS_PATH = path.join(DATA_DIR, "stats.json");
+
+const envOverrides = {
+  projectRoot: process.env.CHECK_MODULES_PROJECT_ROOT,
+  websiteDir: process.env.CHECK_MODULES_WEBSITE_DIR,
+  dataDir: process.env.CHECK_MODULES_DATA_DIR,
+  modulesDir: process.env.CHECK_MODULES_MODULES_DIR,
+  resultPath: process.env.CHECK_MODULES_RESULT_PATH,
+  stage5Path: process.env.CHECK_MODULES_STAGE5_PATH,
+  modulesJsonPath: process.env.CHECK_MODULES_MODULES_JSON_PATH,
+  modulesMinPath: process.env.CHECK_MODULES_MODULES_MIN_PATH,
+  statsPath: process.env.CHECK_MODULES_STATS_PATH,
+  runsDir: process.env.CHECK_MODULES_RUNS_DIR
+};
+
+const resolvedProjectRoot = envOverrides.projectRoot
+  ? path.resolve(envOverrides.projectRoot)
+  : path.resolve(currentDir, "..", "..");
+const PROJECT_ROOT = resolvedProjectRoot;
+
+const WEBSITE_DIR = envOverrides.websiteDir
+  ? path.resolve(envOverrides.websiteDir)
+  : path.join(PROJECT_ROOT, "website");
+const DATA_DIR = envOverrides.dataDir
+  ? path.resolve(envOverrides.dataDir)
+  : path.join(WEBSITE_DIR, "data");
+const MODULES_DIR = envOverrides.modulesDir
+  ? path.resolve(envOverrides.modulesDir)
+  : path.join(PROJECT_ROOT, "modules");
+const RESULT_PATH = envOverrides.resultPath
+  ? path.resolve(envOverrides.resultPath)
+  : path.join(WEBSITE_DIR, "result.md");
+const STAGE5_PATH = envOverrides.stage5Path
+  ? path.resolve(envOverrides.stage5Path)
+  : path.join(DATA_DIR, "modules.stage.5.json");
+const MODULES_JSON_PATH = envOverrides.modulesJsonPath
+  ? path.resolve(envOverrides.modulesJsonPath)
+  : path.join(DATA_DIR, "modules.json");
+const MODULES_MIN_PATH = envOverrides.modulesMinPath
+  ? path.resolve(envOverrides.modulesMinPath)
+  : path.join(DATA_DIR, "modules.min.json");
+const STATS_PATH = envOverrides.statsPath
+  ? path.resolve(envOverrides.statsPath)
+  : path.join(DATA_DIR, "stats.json");
+const RUNS_ROOT = envOverrides.runsDir
+  ? path.resolve(envOverrides.runsDir)
+  : path.join(PROJECT_ROOT, ".pipeline-runs", "check-modules");
 
 const baseLogger = createLogger();
 const logger =
@@ -70,6 +118,177 @@ async function pathExists(targetPath) {
     return true;
   } catch {
     return false;
+  }
+}
+
+const PROGRESS_BAR_WIDTH = 24;
+
+function shouldUseInteractiveProgress(total) {
+  if (total <= 0) {
+    return false;
+  }
+
+  const stream = process.stderr;
+  if (!stream || typeof stream.isTTY !== "boolean" || !stream.isTTY) {
+    return false;
+  }
+
+  const disableFlag = process.env.CHECK_MODULES_DISABLE_PROGRESS;
+  if (disableFlag && disableFlag.trim() === "1") {
+    return false;
+  }
+
+  const override = process.env.CHECK_MODULES_PROGRESS;
+  if (override && override.trim().toLowerCase() === "off") {
+    return false;
+  }
+
+  return true;
+}
+
+function createProgressIndicator(total) {
+  const interactive = shouldUseInteractiveProgress(total);
+  const stream = process.stderr;
+  let lastRendered = "";
+
+  function render(processed) {
+    if (!interactive) {
+      return;
+    }
+
+    const safeProcessed = Math.min(Math.max(processed, 0), total);
+    const percent = total === 0 ? 100 : Math.min(100, Math.floor((safeProcessed / total) * 100));
+    const filledLength = Math.round((percent / 100) * PROGRESS_BAR_WIDTH);
+    const filled = "█".repeat(filledLength);
+    const empty = "░".repeat(Math.max(PROGRESS_BAR_WIDTH - filledLength, 0));
+    const message = `Progress ${safeProcessed}/${total} ${filled}${empty} ${percent}%`;
+
+    if (message === lastRendered) {
+      return;
+    }
+
+    readline.clearLine(stream, 0);
+    readline.cursorTo(stream, 0);
+    stream.write(message);
+    lastRendered = message;
+  }
+
+  return {
+    tick(processed) {
+      render(processed);
+    },
+    complete() {
+      if (!interactive) {
+        return;
+      }
+      render(total);
+      stream.write("\n");
+      lastRendered = "";
+    },
+    isInteractive: interactive
+  };
+}
+
+function formatRunDirectoryId(date) {
+  const pad = (value, size = 2) => String(value).padStart(size, "0");
+  const year = date.getFullYear();
+  const month = pad(date.getMonth() + 1);
+  const day = pad(date.getDate());
+  const hours = pad(date.getHours());
+  const minutes = pad(date.getMinutes());
+  const seconds = pad(date.getSeconds());
+  const milliseconds = pad(date.getMilliseconds(), 3);
+  return `check-modules_${year}${month}${day}_${hours}${minutes}${seconds}${milliseconds}`;
+}
+
+async function prepareRunDirectory(startedAt) {
+  const runDate = startedAt instanceof Date ? startedAt : new Date();
+  await ensureDirectory(RUNS_ROOT);
+
+  const baseId = formatRunDirectoryId(runDate);
+  let runId = baseId;
+  let runDirectory = path.join(RUNS_ROOT, runId);
+  let attempt = 1;
+
+  while (await pathExists(runDirectory)) {
+    const suffix = String(attempt).padStart(2, "0");
+    runId = `${baseId}_${suffix}`;
+    runDirectory = path.join(RUNS_ROOT, runId);
+    attempt += 1;
+  }
+
+  await ensureDirectory(runDirectory);
+
+  return { runId, directory: runDirectory };
+}
+
+function buildArtifactLinks(runDirectory) {
+  if (!runDirectory) {
+    return [];
+  }
+
+  const entries = [
+    { label: "result.md", path: path.relative(runDirectory, RESULT_PATH) },
+    { label: "modules.json", path: path.relative(runDirectory, MODULES_JSON_PATH) },
+    { label: "modules.min.json", path: path.relative(runDirectory, MODULES_MIN_PATH) },
+    { label: "stats.json", path: path.relative(runDirectory, STATS_PATH) },
+    { label: "modules.stage.5.json", path: path.relative(runDirectory, STAGE5_PATH) }
+  ];
+
+  return entries.filter((entry) => typeof entry.path === "string" && entry.path.length > 0);
+}
+
+async function writeRunSummaryFile({
+  runId,
+  runDirectory,
+  startedAt,
+  finishedAt,
+  stats,
+  config,
+  configSources,
+  disabledToggles,
+  issueSummaries
+}) {
+  try {
+    const artifactLinks = buildArtifactLinks(runDirectory);
+    const markdown = buildRunSummaryMarkdown({
+      runId,
+      startedAt,
+      finishedAt,
+      stats,
+      config,
+      configSources,
+      disabledToggles,
+      artifactLinks,
+      issueSummaries
+    });
+
+    const summaryPath = path.join(runDirectory, "summary.md");
+    await writeFile(summaryPath, `${markdown}\n`, "utf8");
+
+    const metadata = {
+      runId,
+      startedAt: new Date(startedAt).toISOString(),
+      finishedAt: new Date(finishedAt).toISOString(),
+      durationMs: Math.max(0, finishedAt.getTime() - startedAt.getTime()),
+      disabledToggles,
+      artifactLinks,
+      totals: {
+        modulesAnalyzed: stats?.moduleCounter ?? 0,
+        modulesWithIssues: stats?.modulesWithIssuesCounter ?? 0,
+        issuesDetected: stats?.issueCounter ?? 0
+      }
+    };
+
+    const metadataPath = path.join(runDirectory, "summary.json");
+    await writeFile(metadataPath, `${JSON.stringify(metadata, null, 2)}\n`, "utf8");
+
+    return summaryPath;
+  } catch (error) {
+    logger.warn(
+      `Unable to persist run summary: ${error instanceof Error ? error.message : String(error)}`
+    );
+    return null;
   }
 }
 
@@ -366,7 +585,17 @@ async function runEslintCheck(moduleDir) {
   }
 }
 
-async function applyDependencyHelpers({ moduleDir, issues, hasPackageJson }) {
+async function applyDependencyHelpers({ moduleDir, issues, hasPackageJson, config }) {
+  if (!config?.groups?.deep) {
+    return;
+  }
+
+  const integrationToggles = config.integrations ?? {};
+  const shouldRunNpmCheckUpdates = integrationToggles.npmCheckUpdates !== false;
+  const shouldRunDeprecatedCheck =
+    integrationToggles.npmDeprecatedCheck !== false;
+  const shouldRunEslint = integrationToggles.eslint !== false;
+
   if (!hasPackageJson) {
     return;
   }
@@ -380,34 +609,40 @@ async function applyDependencyHelpers({ moduleDir, issues, hasPackageJson }) {
     return;
   }
 
-  const upgrades = await runNpmCheckUpdates(moduleDir);
-  if (upgrades.length > 0) {
-    const header = `Information: There are updates for ${upgrades.length} dependencie(s):`;
-    const details = upgrades.map((entry) => `   - ${entry}`).join("\n");
-    addIssue(issues, `${header}\n${details}`);
+  if (shouldRunNpmCheckUpdates) {
+    const upgrades = await runNpmCheckUpdates(moduleDir);
+    if (upgrades.length > 0) {
+      const header = `Information: There are updates for ${upgrades.length} dependencie(s):`;
+      const details = upgrades.map((entry) => `   - ${entry}`).join("\n");
+      addIssue(issues, `${header}\n${details}`);
+    }
   }
 
   if (issues.length >= 3) {
     return;
   }
 
-  const deprecated = await runDeprecatedCheck(moduleDir);
-  if (deprecated) {
-    addIssue(issues, deprecated);
+  if (shouldRunDeprecatedCheck) {
+    const deprecated = await runDeprecatedCheck(moduleDir);
+    if (deprecated) {
+      addIssue(issues, deprecated);
+    }
   }
 
   if (issues.length >= 3) {
     return;
   }
 
-  const eslintIssues = await runEslintCheck(moduleDir);
-  if (eslintIssues.length > 0) {
-    const body = eslintIssues.map((item) => `   - ${item}`).join("\n");
-    addIssue(issues, `ESLint issues:\n${body}`);
+  if (shouldRunEslint) {
+    const eslintIssues = await runEslintCheck(moduleDir);
+    if (eslintIssues.length > 0) {
+      const body = eslintIssues.map((item) => `   - ${item}`).join("\n");
+      addIssue(issues, `ESLint issues:\n${body}`);
+    }
   }
 }
 
-async function analyzeModule({ module, moduleDir, issues }) {
+async function analyzeModule({ module, moduleDir, issues, config }) {
   const packageInfo = module.packageJson ?? null;
   const packageSummary =
     packageInfo && packageInfo.status === "parsed"
@@ -418,15 +653,28 @@ async function analyzeModule({ module, moduleDir, issues }) {
     packageInfo && packageInfo.status === "parsed" && typeof packageInfo.raw === "string"
       ? packageInfo.raw
       : null;
+  const declaredDependencyNames = extractDeclaredDependencyNames(packageSummary);
+  const usedDependencies = new Set();
+
+  const groups = config?.groups ?? {};
+  const runFastChecks = groups.fast !== false;
+  const runDeepChecks = groups.deep !== false;
+
+  if (!runFastChecks && !runDeepChecks) {
+    return;
+  }
 
   const entries = await collectEntries(moduleDir);
-  const allPathsString = entries.map((entry) => entry.fullPath).join(" ");
+  const allPathsString = runDeepChecks
+    ? entries.map((entry) => entry.fullPath).join(" ")
+    : "";
 
   for (const { entry, fullPath } of entries) {
     const relative = path.relative(moduleDir, fullPath);
 
     if (entry.isDirectory()) {
       if (
+        runDeepChecks &&
         entry.name === "node_modules" &&
         countNodeModulesSegments(relative) === 1
       ) {
@@ -450,6 +698,9 @@ async function analyzeModule({ module, moduleDir, issues }) {
     const fileName = entry.name;
 
     if (lowerRelative.includes("package-lock.json")) {
+      if (!runFastChecks) {
+        continue;
+      }
       const content = await readTextSafely(fullPath);
       if (!content) {
         continue;
@@ -469,7 +720,7 @@ async function analyzeModule({ module, moduleDir, issues }) {
 
     const isPackageJson = fileName === "package.json";
     let content = null;
-    if (isPackageJson && packageRawContent) {
+    if (isPackageJson && packageRawContent && runFastChecks) {
       content = packageRawContent;
     } else {
       content = await readTextSafely(fullPath);
@@ -479,7 +730,19 @@ async function analyzeModule({ module, moduleDir, issues }) {
       continue;
     }
 
-    if (fileName === "jquery.js" || fileName === "jquery.min.js") {
+    if (runFastChecks && shouldAnalyzeFileForDependencyUsage(relative)) {
+      const detectedDependencies = detectUsedDependencies(content);
+      if (detectedDependencies.size > 0) {
+        for (const dependencyName of detectedDependencies) {
+          usedDependencies.add(dependencyName);
+        }
+      }
+    }
+
+    if (
+      runDeepChecks &&
+      (fileName === "jquery.js" || fileName === "jquery.min.js")
+    ) {
       addIssue(
         issues,
         `Recommendation: Found local copy of \`${fileName}\`. Instead of a local copy, it would be better to add jQuery to the dependencies in \`package.json\`.`
@@ -499,23 +762,28 @@ async function analyzeModule({ module, moduleDir, issues }) {
       continue;
     }
 
-    for (const rule of TEXT_RULES) {
-      const match = findMatchingPattern(rule, content);
-      if (match) {
-        addIssue(issues, formatRuleIssue(rule, fileName, match));
-      }
-    }
-
-    if (isPackageJson) {
-      for (const rule of PACKAGE_JSON_RULES) {
+    if (runFastChecks) {
+      for (const rule of TEXT_RULES) {
         const match = findMatchingPattern(rule, content);
         if (match) {
           addIssue(issues, formatRuleIssue(rule, fileName, match));
         }
       }
+
+      if (isPackageJson) {
+        for (const rule of PACKAGE_JSON_RULES) {
+          const match = findMatchingPattern(rule, content);
+          if (match) {
+            addIssue(issues, formatRuleIssue(rule, fileName, match));
+          }
+        }
+      }
     }
 
-  if (fileName.toLowerCase().includes("stylelint")) {
+    if (
+      runDeepChecks &&
+      fileName.toLowerCase().includes("stylelint")
+    ) {
       if (content.includes("prettier/prettier")) {
         addIssue(
           issues,
@@ -524,7 +792,11 @@ async function analyzeModule({ module, moduleDir, issues }) {
       }
     }
 
-    if (fileName === "README.md" && path.dirname(fullPath) === moduleDir) {
+    if (
+      runDeepChecks &&
+      fileName === "README.md" &&
+      path.dirname(fullPath) === moduleDir
+    ) {
       if (!content.includes("## Updat")) {
         addIssue(
           issues,
@@ -589,116 +861,139 @@ async function analyzeModule({ module, moduleDir, issues }) {
     }
   }
 
-  if (!allPathsString.includes("LICENSE")) {
-    addIssue(
-      issues,
-      "Warning: No LICENSE file ([example LICENSE file](https://github.com/KristjanESPERANTO/MMM-WebSpeechTTS/blob/main/LICENSE.md))."
-    );
+  if (runFastChecks && usedDependencies.size > 0) {
+    const missingDependencies = findMissingDependencies({
+      usedDependencies,
+      declaredDependencies: declaredDependencyNames
+    });
+
+    if (missingDependencies.length > 0) {
+      const rule = getRuleById(MISSING_DEPENDENCY_RULE_ID);
+      const dependencyList = missingDependencies
+        .map((name) => `\`${name}\``)
+        .join(", ");
+      const plural = missingDependencies.length > 1;
+      const baseMessage = `The module imports ${dependencyList} but does not list ${plural ? "them" : "it"} in package.json.`;
+      const recommendation = `${baseMessage} Add ${plural ? "these dependencies" : "this dependency"} to package.json so they can be installed automatically.`;
+      const messagePrefix = rule?.category ?? "Recommendation";
+      const suffix = rule?.description ? ` ${rule.description}` : "";
+      addIssue(issues, `${messagePrefix}: ${recommendation}${suffix}`.trim());
+    }
   }
 
-  if (!allPathsString.includes("CHANGELOG")) {
-    addIssue(
-      issues,
-      "Recommendation: There is no CHANGELOG file. It is recommended to add one ([example CHANGELOG file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CHANGELOG.md))."
-    );
-  }
-
-  if (!allPathsString.includes("CODE_OF_CONDUCT")) {
-    addIssue(
-      issues,
-      "Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md))."
-    );
-  }
-
-  if (
-    !allPathsString.includes("dependabot.yml") &&
-    !allPathsString.includes("dependabot.yaml")
-  ) {
-    addIssue(
-      issues,
-      "Recommendation: There is no dependabot configuration file. It is recommended to add one ([example dependabot file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/.github/dependabot.yaml))."
-    );
-  }
-
-  if (allPathsString.includes("eslintrc")) {
-    addIssue(issues, "Recommendation: Replace eslintrc by new flat config.");
-  } else if (!allPathsString.includes("eslint.config")) {
-    addIssue(
-      issues,
-      "Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/eslint.md))."
-    );
-  } else {
-    if (packageSummary) {
-      const packageDependencies =
-        typeof packageSummary.dependencies === "object" &&
-        packageSummary.dependencies
-          ? packageSummary.dependencies
-          : {};
-      const packageDevDependencies =
-        typeof packageSummary.devDependencies === "object" &&
-        packageSummary.devDependencies
-          ? packageSummary.devDependencies
-          : {};
-
-      const hasEslintDependency = Boolean(
-        (typeof packageDependencies.eslint === "string" &&
-          packageDependencies.eslint.length > 0) ||
-          (typeof packageDevDependencies.eslint === "string" &&
-            packageDevDependencies.eslint.length > 0)
+  if (runDeepChecks) {
+    if (!allPathsString.includes("LICENSE")) {
+      addIssue(
+        issues,
+        "Warning: No LICENSE file ([example LICENSE file](https://github.com/KristjanESPERANTO/MMM-WebSpeechTTS/blob/main/LICENSE.md))."
       );
+    }
 
-      if (!hasEslintDependency) {
-        addIssue(
-          issues,
-          "Recommendation: ESLint is not in the dependencies or devDependencies. It is recommended to add it to one of them."
+    if (!allPathsString.includes("CHANGELOG")) {
+      addIssue(
+        issues,
+        "Recommendation: There is no CHANGELOG file. It is recommended to add one ([example CHANGELOG file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CHANGELOG.md))."
+      );
+    }
+
+    if (!allPathsString.includes("CODE_OF_CONDUCT")) {
+      addIssue(
+        issues,
+        "Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md))."
+      );
+    }
+
+    if (
+      !allPathsString.includes("dependabot.yml") &&
+      !allPathsString.includes("dependabot.yaml")
+    ) {
+      addIssue(
+        issues,
+        "Recommendation: There is no dependabot configuration file. It is recommended to add one ([example dependabot file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/.github/dependabot.yaml))."
+      );
+    }
+
+    if (allPathsString.includes("eslintrc")) {
+      addIssue(issues, "Recommendation: Replace eslintrc by new flat config.");
+    } else if (!allPathsString.includes("eslint.config")) {
+      addIssue(
+        issues,
+        "Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/eslint.md))."
+      );
+    } else {
+      if (packageSummary) {
+        const packageDependencies =
+          typeof packageSummary.dependencies === "object" &&
+          packageSummary.dependencies
+            ? packageSummary.dependencies
+            : {};
+        const packageDevDependencies =
+          typeof packageSummary.devDependencies === "object" &&
+          packageSummary.devDependencies
+            ? packageSummary.devDependencies
+            : {};
+
+        const hasEslintDependency = Boolean(
+          (typeof packageDependencies.eslint === "string" &&
+            packageDependencies.eslint.length > 0) ||
+            (typeof packageDevDependencies.eslint === "string" &&
+              packageDevDependencies.eslint.length > 0)
         );
+
+        if (!hasEslintDependency) {
+          addIssue(
+            issues,
+            "Recommendation: ESLint is not in the dependencies or devDependencies. It is recommended to add it to one of them."
+          );
+        }
+
+        const lintScript =
+          typeof packageSummary.scripts?.lint === "string" &&
+          packageSummary.scripts.lint.length > 0
+            ? packageSummary.scripts.lint
+            : null;
+
+        if (!lintScript) {
+          addIssue(
+            issues,
+            "Recommendation: No lint script found in package.json. It is recommended to add one."
+          );
+        } else if (!lintScript.includes("eslint")) {
+          addIssue(
+            issues,
+            "Recommendation: The lint script in package.json does not contain `eslint`. It is recommended to add it."
+          );
+        }
       }
 
-      const lintScript =
-        typeof packageSummary.scripts?.lint === "string" &&
-        packageSummary.scripts.lint.length > 0
-          ? packageSummary.scripts.lint
-          : null;
+      let eslintConfigPath = path.join(moduleDir, "eslint.config.js");
+      if (!(await pathExists(eslintConfigPath))) {
+        eslintConfigPath = path.join(moduleDir, "eslint.config.mjs");
+      }
 
-      if (!lintScript) {
-        addIssue(
-          issues,
-          "Recommendation: No lint script found in package.json. It is recommended to add one."
-        );
-      } else if (!lintScript.includes("eslint")) {
-        addIssue(
-          issues,
-          "Recommendation: The lint script in package.json does not contain `eslint`. It is recommended to add it."
-        );
+      if (await pathExists(eslintConfigPath)) {
+        const configContent = await readTextSafely(eslintConfigPath);
+        if (configContent && !configContent.includes("defineConfig")) {
+          addIssue(
+            issues,
+            `Recommendation: The ESLint configuration file \`${path.basename(eslintConfigPath)}\` does not contain \`defineConfig\`. It is recommended to use it.`
+          );
+        }
       }
     }
 
-    let eslintConfigPath = path.join(moduleDir, "eslint.config.js");
-    if (!(await pathExists(eslintConfigPath))) {
-      eslintConfigPath = path.join(moduleDir, "eslint.config.mjs");
+    const branchListing = await getBranchListing(moduleDir);
+    if (!branchListing.includes("master")) {
+      module.defaultSortWeight -= 1;
     }
 
-    if (await pathExists(eslintConfigPath)) {
-      const configContent = await readTextSafely(eslintConfigPath);
-      if (configContent && !configContent.includes("defineConfig")) {
-        addIssue(
-          issues,
-          `Recommendation: The ESLint configuration file \`${path.basename(eslintConfigPath)}\` does not contain \`defineConfig\`. It is recommended to use it.`
-        );
-      }
-    }
+    await applyDependencyHelpers({
+      moduleDir,
+      issues,
+      hasPackageJson: hasParsedPackageJson,
+      config
+    });
   }
-
-  const branchListing = await getBranchListing(moduleDir);
-  if (!branchListing.includes("master")) {
-    module.defaultSortWeight -= 1;
-  }
-
-  await applyDependencyHelpers({
-    moduleDir,
-    issues,
-    hasPackageJson: hasParsedPackageJson
-  });
 }
 
 function applySortAdjustments(module, issuesCount) {
@@ -793,6 +1088,62 @@ async function main() {
 
   logger.info(`Starting analysis for ${totalModules} modules...`);
 
+  const runStartedAt = new Date();
+  let runContext = null;
+  try {
+    runContext = await prepareRunDirectory(runStartedAt);
+  } catch (error) {
+    logger.warn(
+      `Unable to prepare run directory for summaries: ${
+        error instanceof Error ? error.message : String(error)
+      }`
+    );
+  }
+
+  const progress = createProgressIndicator(totalModules);
+
+  const { config: checkGroupConfig, sources: configSources, errors: configErrors } =
+    await loadCheckGroupConfig({projectRoot: PROJECT_ROOT});
+
+  if (Array.isArray(configErrors) && configErrors.length > 0) {
+    for (const entry of configErrors) {
+      const sourceLabel = typeof entry?.path === "string" ? entry.path : entry.kind;
+      const message =
+        entry?.error instanceof Error
+          ? entry.error.message
+          : String(entry?.error ?? "Unknown error");
+      logger.warn(`Failed to load check group config from ${sourceLabel}: ${message}`);
+    }
+  }
+
+  const disabledToggles = [];
+  if (!checkGroupConfig.groups.fast) {
+    disabledToggles.push("fast");
+  }
+  if (!checkGroupConfig.groups.deep) {
+    disabledToggles.push("deep");
+  }
+  if (!checkGroupConfig.integrations.npmCheckUpdates) {
+    disabledToggles.push("npmCheckUpdates");
+  }
+  if (!checkGroupConfig.integrations.npmDeprecatedCheck) {
+    disabledToggles.push("npmDeprecatedCheck");
+  }
+  if (!checkGroupConfig.integrations.eslint) {
+    disabledToggles.push("eslint");
+  }
+
+  if (disabledToggles.length > 0 && typeof logger.info === "function") {
+    logger.info(`Check groups disabled for this run: ${disabledToggles.join(", ")}`);
+  }
+
+  const hasLocalOverrides = Array.isArray(configSources)
+    ? configSources.some((entry) => entry?.kind === "local" && entry.applied)
+    : false;
+  if (hasLocalOverrides && typeof logger.info === "function") {
+    logger.info("Applying overrides from check-groups.config.local.json");
+  }
+
   const stats = {
     moduleCounter: 0,
     modulesWithImageCounter: 0,
@@ -855,7 +1206,12 @@ async function main() {
         );
       }
 
-      await analyzeModule({ module, moduleDir, issues: moduleIssues });
+      await analyzeModule({
+        module,
+        moduleDir,
+        issues: moduleIssues,
+        config: checkGroupConfig
+      });
     }
 
     if (!handledOutdated) {
@@ -881,17 +1237,16 @@ async function main() {
       (stats.maintainer[module.maintainer] ?? 0) + 1;
 
     const processed = index + 1;
-    if (processed === totalModules || processed % 25 === 0) {
+    progress.tick(processed);
+    if (!progress.isInteractive && (processed === totalModules || processed % 25 === 0)) {
       logger.info(`Progress: ${processed}/${totalModules} modules processed`);
     }
   }
 
+  progress.complete();
+
   stats.maintainer = Object.fromEntries(
     Object.entries(stats.maintainer).sort(([, a], [, b]) => b - a)
-  );
-
-  logger.info(
-    `${stats.moduleCounter} modules analyzed. For results see file result.md.`
   );
 
   const sanitizedData = {
@@ -908,6 +1263,32 @@ async function main() {
   };
 
   await writeOutputs({ data: sanitizedData, stats, summaries: issueSummaries });
+
+  const finishedAt = new Date();
+  let summaryPath = null;
+  if (runContext && runContext.directory) {
+    summaryPath = await writeRunSummaryFile({
+      runId: runContext.runId,
+      runDirectory: runContext.directory,
+      startedAt: runStartedAt,
+      finishedAt,
+      stats,
+      config: checkGroupConfig,
+      configSources,
+      disabledToggles,
+      issueSummaries
+    });
+  }
+
+  logger.info(
+    `${stats.moduleCounter} modules analyzed. For results see file result.md.`
+  );
+
+  if (summaryPath) {
+    logger.info(
+      `Run summary saved to ${path.relative(PROJECT_ROOT, summaryPath)}`
+    );
+  }
 }
 
 main().catch((error) => {

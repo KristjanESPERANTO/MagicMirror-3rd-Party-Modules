@@ -1,6 +1,6 @@
 # Check Modules Reference
 
-_Last updated: October 2, 2025_
+_Last updated: October 4, 2025_
 
 This page consolidates the material that previously lived in the P2.3 rollout documents. It should stay up to date as we evolve Stage 5 (`scripts/check-modules/index.ts`), the comparison harness, and the curated fixture set.
 
@@ -8,7 +8,30 @@ This page consolidates the material that previously lived in the P2.3 rollout do
 
 - ✅ TypeScript implementation is the default Stage 5 runner.
 - ✅ Comparison harness (`npm run checkModules:compare`) can execute multiple commands, capture artifacts, and (when two runs complete) produce diffs for analysis.
+- ✅ CLI progress indicator renders live module throughput and emits a per-run Markdown summary under `.pipeline-runs/check-modules/`.
+- ✅ Stage 5 flags modules that import any non built-in dependency without declaring it in their own `package.json` (Node built-ins and the allowlist `express`, `node_helper`, `logger` are ignored).
 - 🔄 Follow-ups tracked here: extend harness diff coverage (README/HTML artifacts) and define warning/failure thresholds ahead of diff gating in CI.
+
+## Check group configuration
+
+The Stage 5 runner reads `scripts/check-modules/check-groups.config.json` to decide which groups execute. All toggles ship enabled; set individual entries to `false` to skip that category. Personal overrides belong in `check-groups.config.local.json` (same directory) so local tweaks stay out of version control.
+
+| Toggle                            | Default | Controls                                                                                                                                          |
+| --------------------------------- | ------- | ------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `groups.fast`                     | `true`  | Registry-backed text and `package.json`/`package-lock.json` pattern scanning.                                                                     |
+| `groups.deep`                     | `true`  | Repository heuristics (README/license/dependabot checks) plus dependency helpers. Disabling this also suppresses the optional integrations below. |
+| `integrations.npmCheckUpdates`    | `true`  | Runs `npm-check-updates` when the helper budget allows.                                                                                           |
+| `integrations.npmDeprecatedCheck` | `true`  | Executes `npm-deprecated-check` to surface deprecated dependencies.                                                                               |
+| `integrations.eslint`             | `true`  | Invokes the curated ESLint configuration on each module clone.                                                                                    |
+
+> The runner logs whenever overrides are applied so CI output records which groups were disabled.
+
+## CLI progress & run summaries
+
+- When the stage runs interactively (TTY), it now renders a single-line progress gauge on `stderr`. Disable it with `CHECK_MODULES_DISABLE_PROGRESS=1` or `CHECK_MODULES_PROGRESS=off` if you prefer the legacy log spam.
+- Every execution writes a Markdown + JSON summary to `.pipeline-runs/check-modules/<run-id>/`. The Markdown combines toggle state, aggregate stats, and the top modules with issues; the JSON mirrors the key metrics for tooling.
+- Artifact links inside the summary resolve relative to the run directory, making it easy to inspect `website/result.md`, `modules.json`, and `stats.json` produced by the run.
+- The harness (`npm run checkModules:compare`) preserves these summaries as well, so comparison batches keep a human-readable trail.
 
 ## Rule inventory
 
@@ -55,16 +78,17 @@ These are the rule IDs currently implemented by the TypeScript checker. Keep thi
 
 ### `package.json` rules
 
-| Rule ID                                  | Pattern                                      | Category       | Notes                             |
-| ---------------------------------------- | -------------------------------------------- | -------------- | --------------------------------- |
-| pkg-deprecated-electron-rebuild          | `"electron-rebuild"`                         | Deprecated     | Use `@electron/rebuild`.          |
-| pkg-deprecated-eslint-config-airbnb      | `eslint-config-airbnb`                       | Deprecated     | Seek modern configuration.        |
-| pkg-recommend-eslint-plugin-json         | `"eslint-plugin-json"`/`eslint-plugin-jsonc` | Recommendation | Suggest `@eslint/json`.           |
-| pkg-deprecated-grunt                     | `"grunt"`                                    | Deprecated     | Tool largely unmaintained.        |
-| pkg-outdated-husky-install               | `husky install`                              | Outdated       | Husky v9 no longer needs it.      |
-| pkg-recommend-needle                     | `"needle"`                                   | Recommendation | Suggest fetch.                    |
-| pkg-deprecated-rollup-banner             | `rollup-plugin-banner`                       | Deprecated     | Replace with built-in banner.     |
-| pkg-deprecated-stylelint-config-prettier | `stylelint-config-prettier`                  | Deprecated     | Remove in newer Stylelint setups. |
+| Rule ID                                  | Pattern                                      | Category       | Notes                                                                                                                                                                         |
+| ---------------------------------------- | -------------------------------------------- | -------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| pkg-deprecated-electron-rebuild          | `"electron-rebuild"`                         | Deprecated     | Use `@electron/rebuild`.                                                                                                                                                      |
+| pkg-deprecated-eslint-config-airbnb      | `eslint-config-airbnb`                       | Deprecated     | Seek modern configuration.                                                                                                                                                    |
+| pkg-recommend-eslint-plugin-json         | `"eslint-plugin-json"`/`eslint-plugin-jsonc` | Recommendation | Suggest `@eslint/json`.                                                                                                                                                       |
+| pkg-deprecated-grunt                     | `"grunt"`                                    | Deprecated     | Tool largely unmaintained.                                                                                                                                                    |
+| pkg-outdated-husky-install               | `husky install`                              | Outdated       | Husky v9 no longer needs it.                                                                                                                                                  |
+| pkg-recommend-needle                     | `"needle"`                                   | Recommendation | Suggest fetch.                                                                                                                                                                |
+| pkg-missing-dependency                   | _n/a (detected via usage scan)_              | Recommendation | Flags modules that import third-party packages without declaring them in `package.json` (built-ins and the default allowlist `express`, `node_helper`, `logger` are ignored). |
+| pkg-deprecated-rollup-banner             | `rollup-plugin-banner`                       | Deprecated     | Replace with built-in banner.                                                                                                                                                 |
+| pkg-deprecated-stylelint-config-prettier | `stylelint-config-prettier`                  | Deprecated     | Remove in newer Stylelint setups.                                                                                                                                             |
 
 ### `package-lock.json` rules
 
@@ -72,6 +96,12 @@ These are the rule IDs currently implemented by the TypeScript checker. Keep thi
 | ------------------ | ---------------------- | ---------- | ------------------------ |
 | lock-deprecated-v1 | `"lockfileVersion": 1` | Deprecated | Encourage upgrade to v3. |
 | lock-deprecated-v2 | `"lockfileVersion": 2` | Deprecated | Encourage upgrade to v3. |
+
+### Legacy stage rules
+
+| Rule ID                 | Category       | Stage              | Notes                                              |
+| ----------------------- | -------------- | ------------------ | -------------------------------------------------- |
+| legacy-main-js-mismatch | Recommendation | `check-modules-js` | Repository name / main JS filename mismatch guard. |
 
 ### File system heuristics & helpers
 

@@ -1,5 +1,5 @@
+import {MISSING_DEPENDENCY_RULE_DEFINITION} from "./missing-dependency-rule.js";
 const RULE_SEVERITIES = Object.freeze(["info", "warning", "error"]);
-
 const RULE_CATEGORY_METADATA = Object.freeze({
   Deprecated: Object.freeze({
     title: "Deprecated usage",
@@ -25,6 +25,12 @@ const RULE_CATEGORY_METADATA = Object.freeze({
   })
 });
 
+const PIPELINE_CHECK_STAGE_IDS = Object.freeze({
+  LEGACY: "check-modules-js",
+  MODERN: "check-modules"
+});
+
+const DEFAULT_STAGE_ID = PIPELINE_CHECK_STAGE_IDS.MODERN;
 function normalizePatterns (rawPatterns, id) {
   if (Array.isArray(rawPatterns)) {
     const normalized = rawPatterns
@@ -54,6 +60,21 @@ function resolveSeverity (definition) {
   return categoryMetadata?.defaultSeverity ?? "info";
 }
 
+function normalizeStages (rawStages, id) {
+  if (Array.isArray(rawStages)) {
+    const normalized = Array.from(new Set(rawStages.filter((stage) => typeof stage === "string" && stage.length > 0)));
+    if (normalized.length > 0) {
+      return Object.freeze(normalized);
+    }
+  }
+
+  if (typeof rawStages === "string" && rawStages.length > 0) {
+    return Object.freeze([rawStages]);
+  }
+
+  throw new Error(`Rule ${id} must declare at least one stage.`);
+}
+
 function createRule (definition) {
   if (!definition?.id) {
     throw new Error("Rule definition missing id.");
@@ -72,6 +93,10 @@ function createRule (definition) {
     definition.id
   );
   const severity = resolveSeverity(definition);
+  const stages = normalizeStages(
+    definition.stages ?? DEFAULT_STAGE_ID,
+    definition.id
+  );
 
   return Object.freeze({
     id: definition.id,
@@ -80,6 +105,7 @@ function createRule (definition) {
     primaryPattern: patterns[0],
     category: definition.category,
     description: definition.description ?? "",
+    stages,
     severity,
     autoFixable: Boolean(definition.autoFixable),
     references: Object.freeze({
@@ -409,32 +435,66 @@ const RULE_DEFINITIONS = [
     patterns: ["\"lockfileVersion\": 2"],
     category: "Deprecated",
     description: "Run `npm update` to update to lockfileVersion 3."
+  },
+  {
+    id: "legacy-main-js-mismatch",
+    scope: "module-structure",
+    stages: [PIPELINE_CHECK_STAGE_IDS.LEGACY],
+    patterns: ["legacy-main-js-mismatch"],
+    category: "Recommendation",
+    description: "Repository name and main js file name is not the same."
   }
 ];
 
+RULE_DEFINITIONS.push(MISSING_DEPENDENCY_RULE_DEFINITION);
+
 const RULE_REGISTRY = Object.freeze(RULE_DEFINITIONS.map(createRule));
 
-const TEXT_RULES = Object.freeze(RULE_REGISTRY.filter((rule) => rule.scope === "text"));
+const RULES_BY_STAGE = (() => {
+  const stageEntries = new Map();
+  for (const rule of RULE_REGISTRY) {
+    for (const stageId of rule.stages) {
+      if (!stageEntries.has(stageId)) {
+        stageEntries.set(stageId, []);
+      }
+      stageEntries.get(stageId).push(rule);
+    }
+  }
 
-const PACKAGE_JSON_RULES = Object.freeze(RULE_REGISTRY.filter((rule) => rule.scope === "package-json"));
+  const frozenEntries = Array.from(stageEntries.entries()).map(([stageId, rules]) => [stageId, Object.freeze(rules.slice())]);
+  return Object.freeze(Object.fromEntries(frozenEntries));
+})();
 
-const PACKAGE_LOCK_RULES = Object.freeze(RULE_REGISTRY.filter((rule) => rule.scope === "package-lock"));
+const EMPTY_RULE_LIST = Object.freeze([]);
 
+const TEXT_RULES = Object.freeze(RULE_REGISTRY.filter((rule) => rule.scope === "text" && rule.stages.includes(DEFAULT_STAGE_ID)));
+
+const PACKAGE_JSON_RULES = Object.freeze(RULE_REGISTRY.filter((rule) => rule.scope === "package-json" && rule.stages.includes(DEFAULT_STAGE_ID)));
+
+const PACKAGE_LOCK_RULES = Object.freeze(RULE_REGISTRY.filter((rule) => rule.scope === "package-lock" && rule.stages.includes(DEFAULT_STAGE_ID)));
 const RULE_INDEX = new Map(RULE_REGISTRY.map((rule) => [rule.id, rule]));
 
 export {
   RULE_CATEGORY_METADATA,
+  RULES_BY_STAGE,
   RULE_REGISTRY,
   RULE_SEVERITIES,
+  PIPELINE_CHECK_STAGE_IDS,
   TEXT_RULES,
   PACKAGE_JSON_RULES,
   PACKAGE_LOCK_RULES
 };
-
 export function getRuleById (ruleId) {
   return RULE_INDEX.get(ruleId) ?? null;
 }
 
 export function getCategoryMetadata (category) {
   return RULE_CATEGORY_METADATA[category] ?? null;
+}
+
+export function getRulesForStage (stageId) {
+  if (typeof stageId !== "string" || stageId.length === 0) {
+    return EMPTY_RULE_LIST;
+  }
+  return RULES_BY_STAGE[stageId] ?? EMPTY_RULE_LIST;
 }

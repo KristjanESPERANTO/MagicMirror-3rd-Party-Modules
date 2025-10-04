@@ -271,7 +271,9 @@ async function updateData () {
             results.push(repositoryData);
           } else {
             console.error("\nError fetching API data:", response.status, response.statusText);
-            maxQueryCount = 0;
+            if (repoType === "github" && response.status === 403) {
+              maxQueryCount = 0;
+            }
             useHistoricalData(previousData, repositoryId, module, results);
           }
         } catch (error) {
@@ -310,6 +312,33 @@ async function updateData () {
   }
 }
 
+function createDefaultRepositoryData ({repositoryId, module}) {
+  if (typeof module.stars !== "number") {
+    module.stars = 0;
+  }
+  if (typeof module.hasGithubIssues !== "boolean") {
+    module.hasGithubIssues = true;
+  }
+  if (typeof module.isArchived !== "boolean") {
+    module.isArchived = false;
+  }
+
+  return {
+    id: repositoryId,
+    gitHubDataLastUpdate: null,
+    gitHubData: {
+      issues: 0,
+      stars: module.stars,
+      license: module.license ?? null,
+      archived: module.isArchived === true,
+      disabled: false,
+      defaultBranch: null,
+      has_issues: module.hasGithubIssues,
+      lastCommit: null
+    }
+  };
+}
+
 function useHistoricalData (previousData, repositoryId, module, results) {
   // Add the existing data without updating it
   const existingRepository = previousData.repositories?.find((repo) => repo.id === repositoryId);
@@ -327,7 +356,11 @@ function useHistoricalData (previousData, repositoryId, module, results) {
       module.license = existingRepository.gitHubData.license;
     }
     results.push(existingRepository);
+    return;
   }
+
+  const fallbackData = createDefaultRepositoryData({repositoryId, module});
+  results.push(fallbackData);
 }
 
 updateData();
