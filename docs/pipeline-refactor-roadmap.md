@@ -22,7 +22,7 @@ This document captures the long-term improvements we want to implement in the mo
 | P1.5 | Final artifact schemas & validation — rollout completed and documented (see contributor guide & release notes) ✅ Completed Sep 2025                                             | P1.3         | M      |
 | P1.6 | Consolidate shared schema definitions (shared `$defs` / generator) to keep stage contracts in sync ✅ Completed Sep 2025                                                         | P1.3         | S      |
 
-### 2. Runtime & Codebase Consolidation - ✅ Completed Oct 2025
+### 2. Runtime & Codebase Consolidation - ✅ Completed
 
 | Task | Description                                                                                                                                                                    | Dependencies | Effort |
 | ---- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ------------ | ------ |
@@ -48,7 +48,7 @@ This document captures the long-term improvements we want to implement in the mo
 | Task  | Description                                                                                                                                                                     | Dependencies | Effort |
 | ----- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | ------ |
 | P4.1  | Split checks into a registry with metadata (category, severity, auto-fixable) ✅ Completed Oct 2025                                                                             | P2.3         | M      |
-| P4.2  | Add configuration file to toggle check groups (`fast`, `deep`, optional ESLint/ncu)                                                                                             | P4.1         | S      |
+| P4.2  | Add configuration file to toggle check groups (`fast`, `deep`, optional ESLint/ncu`) ✅ Completed Oct 2025                                                                      | P4.1         | S      |
 | P4.3  | Create sample dataset + regression tests for check outputs (golden files), reusing the curated fixtures where possible                                                          | P4.1         | M      |
 | P4.4  | Provide CLI progress UI and Markdown summary per run                                                                                                                            | P1.2         | S      |
 | P4.5  | Add rule detecting modules that rely on MagicMirror core dependencies without declaring them ([#78](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/issues/78)) | P4.1         | M      |
@@ -98,8 +98,8 @@ Routine reminders for keeping the written guidance in sync with the code:
 
 Immediate action items:
 
-1. Implement the check-group configuration file so runs can toggle `fast`, `deep`, and optional integrations (P4.2).
-2. Build the golden regression fixtures for check outputs to protect future refactors (P4.3).
+1. Build the golden regression fixtures for check outputs to protect future refactors (P4.3).
+2. Provide the CLI progress UI and Markdown summary per run (P4.4).
 
 ---
 

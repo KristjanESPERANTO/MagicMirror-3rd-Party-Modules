@@ -21,6 +21,7 @@ import {
   PACKAGE_LOCK_RULES,
   TEXT_RULES
 } from "./rule-registry.js";
+import {loadCheckGroupConfig} from "./config.js";
 
 const execFileAsync = promisify(execFile);
 
@@ -366,7 +367,17 @@ async function runEslintCheck(moduleDir) {
   }
 }
 
-async function applyDependencyHelpers({ moduleDir, issues, hasPackageJson }) {
+async function applyDependencyHelpers({ moduleDir, issues, hasPackageJson, config }) {
+  if (!config?.groups?.deep) {
+    return;
+  }
+
+  const integrationToggles = config.integrations ?? {};
+  const shouldRunNpmCheckUpdates = integrationToggles.npmCheckUpdates !== false;
+  const shouldRunDeprecatedCheck =
+    integrationToggles.npmDeprecatedCheck !== false;
+  const shouldRunEslint = integrationToggles.eslint !== false;
+
   if (!hasPackageJson) {
     return;
   }
@@ -380,34 +391,40 @@ async function applyDependencyHelpers({ moduleDir, issues, hasPackageJson }) {
     return;
   }
 
-  const upgrades = await runNpmCheckUpdates(moduleDir);
-  if (upgrades.length > 0) {
-    const header = `Information: There are updates for ${upgrades.length} dependencie(s):`;
-    const details = upgrades.map((entry) => `   - ${entry}`).join("\n");
-    addIssue(issues, `${header}\n${details}`);
+  if (shouldRunNpmCheckUpdates) {
+    const upgrades = await runNpmCheckUpdates(moduleDir);
+    if (upgrades.length > 0) {
+      const header = `Information: There are updates for ${upgrades.length} dependencie(s):`;
+      const details = upgrades.map((entry) => `   - ${entry}`).join("\n");
+      addIssue(issues, `${header}\n${details}`);
+    }
   }
 
   if (issues.length >= 3) {
     return;
   }
 
-  const deprecated = await runDeprecatedCheck(moduleDir);
-  if (deprecated) {
-    addIssue(issues, deprecated);
+  if (shouldRunDeprecatedCheck) {
+    const deprecated = await runDeprecatedCheck(moduleDir);
+    if (deprecated) {
+      addIssue(issues, deprecated);
+    }
   }
 
   if (issues.length >= 3) {
     return;
   }
 
-  const eslintIssues = await runEslintCheck(moduleDir);
-  if (eslintIssues.length > 0) {
-    const body = eslintIssues.map((item) => `   - ${item}`).join("\n");
-    addIssue(issues, `ESLint issues:\n${body}`);
+  if (shouldRunEslint) {
+    const eslintIssues = await runEslintCheck(moduleDir);
+    if (eslintIssues.length > 0) {
+      const body = eslintIssues.map((item) => `   - ${item}`).join("\n");
+      addIssue(issues, `ESLint issues:\n${body}`);
+    }
   }
 }
 
-async function analyzeModule({ module, moduleDir, issues }) {
+async function analyzeModule({ module, moduleDir, issues, config }) {
   const packageInfo = module.packageJson ?? null;
   const packageSummary =
     packageInfo && packageInfo.status === "parsed"
@@ -419,14 +436,25 @@ async function analyzeModule({ module, moduleDir, issues }) {
       ? packageInfo.raw
       : null;
 
+  const groups = config?.groups ?? {};
+  const runFastChecks = groups.fast !== false;
+  const runDeepChecks = groups.deep !== false;
+
+  if (!runFastChecks && !runDeepChecks) {
+    return;
+  }
+
   const entries = await collectEntries(moduleDir);
-  const allPathsString = entries.map((entry) => entry.fullPath).join(" ");
+  const allPathsString = runDeepChecks
+    ? entries.map((entry) => entry.fullPath).join(" ")
+    : "";
 
   for (const { entry, fullPath } of entries) {
     const relative = path.relative(moduleDir, fullPath);
 
     if (entry.isDirectory()) {
       if (
+        runDeepChecks &&
         entry.name === "node_modules" &&
         countNodeModulesSegments(relative) === 1
       ) {
@@ -450,6 +478,9 @@ async function analyzeModule({ module, moduleDir, issues }) {
     const fileName = entry.name;
 
     if (lowerRelative.includes("package-lock.json")) {
+      if (!runFastChecks) {
+        continue;
+      }
       const content = await readTextSafely(fullPath);
       if (!content) {
         continue;
@@ -469,7 +500,7 @@ async function analyzeModule({ module, moduleDir, issues }) {
 
     const isPackageJson = fileName === "package.json";
     let content = null;
-    if (isPackageJson && packageRawContent) {
+    if (isPackageJson && packageRawContent && runFastChecks) {
       content = packageRawContent;
     } else {
       content = await readTextSafely(fullPath);
@@ -479,7 +510,10 @@ async function analyzeModule({ module, moduleDir, issues }) {
       continue;
     }
 
-    if (fileName === "jquery.js" || fileName === "jquery.min.js") {
+    if (
+      runDeepChecks &&
+      (fileName === "jquery.js" || fileName === "jquery.min.js")
+    ) {
       addIssue(
         issues,
         `Recommendation: Found local copy of \`${fileName}\`. Instead of a local copy, it would be better to add jQuery to the dependencies in \`package.json\`.`
@@ -499,23 +533,28 @@ async function analyzeModule({ module, moduleDir, issues }) {
       continue;
     }
 
-    for (const rule of TEXT_RULES) {
-      const match = findMatchingPattern(rule, content);
-      if (match) {
-        addIssue(issues, formatRuleIssue(rule, fileName, match));
-      }
-    }
-
-    if (isPackageJson) {
-      for (const rule of PACKAGE_JSON_RULES) {
+    if (runFastChecks) {
+      for (const rule of TEXT_RULES) {
         const match = findMatchingPattern(rule, content);
         if (match) {
           addIssue(issues, formatRuleIssue(rule, fileName, match));
         }
       }
+
+      if (isPackageJson) {
+        for (const rule of PACKAGE_JSON_RULES) {
+          const match = findMatchingPattern(rule, content);
+          if (match) {
+            addIssue(issues, formatRuleIssue(rule, fileName, match));
+          }
+        }
+      }
     }
 
-  if (fileName.toLowerCase().includes("stylelint")) {
+    if (
+      runDeepChecks &&
+      fileName.toLowerCase().includes("stylelint")
+    ) {
       if (content.includes("prettier/prettier")) {
         addIssue(
           issues,
@@ -524,7 +563,11 @@ async function analyzeModule({ module, moduleDir, issues }) {
       }
     }
 
-    if (fileName === "README.md" && path.dirname(fullPath) === moduleDir) {
+    if (
+      runDeepChecks &&
+      fileName === "README.md" &&
+      path.dirname(fullPath) === moduleDir
+    ) {
       if (!content.includes("## Updat")) {
         addIssue(
           issues,
@@ -589,116 +632,119 @@ async function analyzeModule({ module, moduleDir, issues }) {
     }
   }
 
-  if (!allPathsString.includes("LICENSE")) {
-    addIssue(
-      issues,
-      "Warning: No LICENSE file ([example LICENSE file](https://github.com/KristjanESPERANTO/MMM-WebSpeechTTS/blob/main/LICENSE.md))."
-    );
-  }
-
-  if (!allPathsString.includes("CHANGELOG")) {
-    addIssue(
-      issues,
-      "Recommendation: There is no CHANGELOG file. It is recommended to add one ([example CHANGELOG file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CHANGELOG.md))."
-    );
-  }
-
-  if (!allPathsString.includes("CODE_OF_CONDUCT")) {
-    addIssue(
-      issues,
-      "Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md))."
-    );
-  }
-
-  if (
-    !allPathsString.includes("dependabot.yml") &&
-    !allPathsString.includes("dependabot.yaml")
-  ) {
-    addIssue(
-      issues,
-      "Recommendation: There is no dependabot configuration file. It is recommended to add one ([example dependabot file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/.github/dependabot.yaml))."
-    );
-  }
-
-  if (allPathsString.includes("eslintrc")) {
-    addIssue(issues, "Recommendation: Replace eslintrc by new flat config.");
-  } else if (!allPathsString.includes("eslint.config")) {
-    addIssue(
-      issues,
-      "Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/eslint.md))."
-    );
-  } else {
-    if (packageSummary) {
-      const packageDependencies =
-        typeof packageSummary.dependencies === "object" &&
-        packageSummary.dependencies
-          ? packageSummary.dependencies
-          : {};
-      const packageDevDependencies =
-        typeof packageSummary.devDependencies === "object" &&
-        packageSummary.devDependencies
-          ? packageSummary.devDependencies
-          : {};
-
-      const hasEslintDependency = Boolean(
-        (typeof packageDependencies.eslint === "string" &&
-          packageDependencies.eslint.length > 0) ||
-          (typeof packageDevDependencies.eslint === "string" &&
-            packageDevDependencies.eslint.length > 0)
+  if (runDeepChecks) {
+    if (!allPathsString.includes("LICENSE")) {
+      addIssue(
+        issues,
+        "Warning: No LICENSE file ([example LICENSE file](https://github.com/KristjanESPERANTO/MMM-WebSpeechTTS/blob/main/LICENSE.md))."
       );
+    }
 
-      if (!hasEslintDependency) {
-        addIssue(
-          issues,
-          "Recommendation: ESLint is not in the dependencies or devDependencies. It is recommended to add it to one of them."
+    if (!allPathsString.includes("CHANGELOG")) {
+      addIssue(
+        issues,
+        "Recommendation: There is no CHANGELOG file. It is recommended to add one ([example CHANGELOG file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CHANGELOG.md))."
+      );
+    }
+
+    if (!allPathsString.includes("CODE_OF_CONDUCT")) {
+      addIssue(
+        issues,
+        "Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md))."
+      );
+    }
+
+    if (
+      !allPathsString.includes("dependabot.yml") &&
+      !allPathsString.includes("dependabot.yaml")
+    ) {
+      addIssue(
+        issues,
+        "Recommendation: There is no dependabot configuration file. It is recommended to add one ([example dependabot file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/.github/dependabot.yaml))."
+      );
+    }
+
+    if (allPathsString.includes("eslintrc")) {
+      addIssue(issues, "Recommendation: Replace eslintrc by new flat config.");
+    } else if (!allPathsString.includes("eslint.config")) {
+      addIssue(
+        issues,
+        "Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/eslint.md))."
+      );
+    } else {
+      if (packageSummary) {
+        const packageDependencies =
+          typeof packageSummary.dependencies === "object" &&
+          packageSummary.dependencies
+            ? packageSummary.dependencies
+            : {};
+        const packageDevDependencies =
+          typeof packageSummary.devDependencies === "object" &&
+          packageSummary.devDependencies
+            ? packageSummary.devDependencies
+            : {};
+
+        const hasEslintDependency = Boolean(
+          (typeof packageDependencies.eslint === "string" &&
+            packageDependencies.eslint.length > 0) ||
+            (typeof packageDevDependencies.eslint === "string" &&
+              packageDevDependencies.eslint.length > 0)
         );
+
+        if (!hasEslintDependency) {
+          addIssue(
+            issues,
+            "Recommendation: ESLint is not in the dependencies or devDependencies. It is recommended to add it to one of them."
+          );
+        }
+
+        const lintScript =
+          typeof packageSummary.scripts?.lint === "string" &&
+          packageSummary.scripts.lint.length > 0
+            ? packageSummary.scripts.lint
+            : null;
+
+        if (!lintScript) {
+          addIssue(
+            issues,
+            "Recommendation: No lint script found in package.json. It is recommended to add one."
+          );
+        } else if (!lintScript.includes("eslint")) {
+          addIssue(
+            issues,
+            "Recommendation: The lint script in package.json does not contain `eslint`. It is recommended to add it."
+          );
+        }
       }
 
-      const lintScript =
-        typeof packageSummary.scripts?.lint === "string" &&
-        packageSummary.scripts.lint.length > 0
-          ? packageSummary.scripts.lint
-          : null;
+      let eslintConfigPath = path.join(moduleDir, "eslint.config.js");
+      if (!(await pathExists(eslintConfigPath))) {
+        eslintConfigPath = path.join(moduleDir, "eslint.config.mjs");
+      }
 
-      if (!lintScript) {
-        addIssue(
-          issues,
-          "Recommendation: No lint script found in package.json. It is recommended to add one."
-        );
-      } else if (!lintScript.includes("eslint")) {
-        addIssue(
-          issues,
-          "Recommendation: The lint script in package.json does not contain `eslint`. It is recommended to add it."
-        );
+      if (await pathExists(eslintConfigPath)) {
+        const configContent = await readTextSafely(eslintConfigPath);
+        if (configContent && !configContent.includes("defineConfig")) {
+          addIssue(
+            issues,
+            `Recommendation: The ESLint configuration file \`${path.basename(eslintConfigPath)}\` does not contain \`defineConfig\`. It is recommended to use it.`
+          );
+        }
       }
     }
 
-    let eslintConfigPath = path.join(moduleDir, "eslint.config.js");
-    if (!(await pathExists(eslintConfigPath))) {
-      eslintConfigPath = path.join(moduleDir, "eslint.config.mjs");
+    const branchListing = await getBranchListing(moduleDir);
+    if (!branchListing.includes("master")) {
+      module.defaultSortWeight -= 1;
     }
 
-    if (await pathExists(eslintConfigPath)) {
-      const configContent = await readTextSafely(eslintConfigPath);
-      if (configContent && !configContent.includes("defineConfig")) {
-        addIssue(
-          issues,
-          `Recommendation: The ESLint configuration file \`${path.basename(eslintConfigPath)}\` does not contain \`defineConfig\`. It is recommended to use it.`
-        );
-      }
-    }
+    await applyDependencyHelpers({
+      moduleDir,
+      issues,
+      hasPackageJson: hasParsedPackageJson,
+      config
+    });
   }
-
-  const branchListing = await getBranchListing(moduleDir);
-  if (!branchListing.includes("master")) {
-    module.defaultSortWeight -= 1;
-  }
-
-  await applyDependencyHelpers({
-    moduleDir,
-    issues,
-    hasPackageJson: hasParsedPackageJson
-  });
 }
 
 function applySortAdjustments(module, issuesCount) {
@@ -793,6 +839,48 @@ async function main() {
 
   logger.info(`Starting analysis for ${totalModules} modules...`);
 
+  const { config: checkGroupConfig, sources: configSources, errors: configErrors } =
+    await loadCheckGroupConfig({projectRoot: PROJECT_ROOT});
+
+  if (Array.isArray(configErrors) && configErrors.length > 0) {
+    for (const entry of configErrors) {
+      const sourceLabel = typeof entry?.path === "string" ? entry.path : entry.kind;
+      const message =
+        entry?.error instanceof Error
+          ? entry.error.message
+          : String(entry?.error ?? "Unknown error");
+      logger.warn(`Failed to load check group config from ${sourceLabel}: ${message}`);
+    }
+  }
+
+  const disabledToggles = [];
+  if (!checkGroupConfig.groups.fast) {
+    disabledToggles.push("fast");
+  }
+  if (!checkGroupConfig.groups.deep) {
+    disabledToggles.push("deep");
+  }
+  if (!checkGroupConfig.integrations.npmCheckUpdates) {
+    disabledToggles.push("npmCheckUpdates");
+  }
+  if (!checkGroupConfig.integrations.npmDeprecatedCheck) {
+    disabledToggles.push("npmDeprecatedCheck");
+  }
+  if (!checkGroupConfig.integrations.eslint) {
+    disabledToggles.push("eslint");
+  }
+
+  if (disabledToggles.length > 0 && typeof logger.info === "function") {
+    logger.info(`Check groups disabled for this run: ${disabledToggles.join(", ")}`);
+  }
+
+  const hasLocalOverrides = Array.isArray(configSources)
+    ? configSources.some((entry) => entry?.kind === "local" && entry.applied)
+    : false;
+  if (hasLocalOverrides && typeof logger.info === "function") {
+    logger.info("Applying overrides from check-groups.config.local.json");
+  }
+
   const stats = {
     moduleCounter: 0,
     modulesWithImageCounter: 0,
@@ -855,7 +943,12 @@ async function main() {
         );
       }
 
-      await analyzeModule({ module, moduleDir, issues: moduleIssues });
+      await analyzeModule({
+        module,
+        moduleDir,
+        issues: moduleIssues,
+        config: checkGroupConfig
+      });
     }
 
     if (!handledOutdated) {

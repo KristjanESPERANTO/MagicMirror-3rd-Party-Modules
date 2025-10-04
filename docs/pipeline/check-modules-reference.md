@@ -1,6 +1,6 @@
 # Check Modules Reference
 
-_Last updated: October 2, 2025_
+_Last updated: October 3, 2025_
 
 This page consolidates the material that previously lived in the P2.3 rollout documents. It should stay up to date as we evolve Stage 5 (`scripts/check-modules/index.ts`), the comparison harness, and the curated fixture set.
 
@@ -9,6 +9,20 @@ This page consolidates the material that previously lived in the P2.3 rollout do
 - ✅ TypeScript implementation is the default Stage 5 runner.
 - ✅ Comparison harness (`npm run checkModules:compare`) can execute multiple commands, capture artifacts, and (when two runs complete) produce diffs for analysis.
 - 🔄 Follow-ups tracked here: extend harness diff coverage (README/HTML artifacts) and define warning/failure thresholds ahead of diff gating in CI.
+
+## Check group configuration
+
+The Stage 5 runner reads `scripts/check-modules/check-groups.config.json` to decide which groups execute. All toggles ship enabled; set individual entries to `false` to skip that category. Personal overrides belong in `check-groups.config.local.json` (same directory) so local tweaks stay out of version control.
+
+| Toggle                            | Default | Controls                                                                                                                                          |
+| --------------------------------- | ------- | ------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `groups.fast`                     | `true`  | Registry-backed text and `package.json`/`package-lock.json` pattern scanning.                                                                     |
+| `groups.deep`                     | `true`  | Repository heuristics (README/license/dependabot checks) plus dependency helpers. Disabling this also suppresses the optional integrations below. |
+| `integrations.npmCheckUpdates`    | `true`  | Runs `npm-check-updates` when the helper budget allows.                                                                                           |
+| `integrations.npmDeprecatedCheck` | `true`  | Executes `npm-deprecated-check` to surface deprecated dependencies.                                                                               |
+| `integrations.eslint`             | `true`  | Invokes the curated ESLint configuration on each module clone.                                                                                    |
+
+> The runner logs whenever overrides are applied so CI output records which groups were disabled.
 
 ## Rule inventory
 
