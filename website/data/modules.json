@@ -3512,7 +3512,7 @@
       "stars": 0,
       "license": "MIT",
       "image": "images-screenshot.jpg",
-      "defaultSortWeight": 17,
+      "defaultSortWeight": 18,
       "lastCommit": "2023-10-04T16:11:56+02:00"
     },
     {
@@ -12120,7 +12120,7 @@
         "rugby"
       ],
       "image": "example2.jpg",
-      "defaultSortWeight": 1,
+      "defaultSortWeight": 2,
       "lastCommit": "2025-09-26T10:41:07-07:00"
     },
     {
@@ -15725,7 +15725,7 @@
       "maintainer": "deg0nz",
       "maintainerURL": "https://github.com/deg0nz",
       "description": "Display departures for public transport in Berlin and Brandenburg (Covers VBB Area).",
-      "issues": false,
+      "issues": true,
       "stars": 42,
       "license": "MIT",
       "tags": [
@@ -15734,7 +15734,7 @@
         "brandenburg"
       ],
       "image": "img-MMM-PublicTransport_screenshot.jpg",
-      "defaultSortWeight": -2,
+      "defaultSortWeight": -1,
       "lastCommit": "2025-10-01T07:02:50+02:00"
     },
     {

@@ -1,6 +1,6 @@
 # Result of the module analysis
 
-Last update: 2025-10-03T13:43:21+02:00
+Last update: 2025-10-04T10:10:12+02:00
 
 ## General notes
 
@@ -13,8 +13,8 @@ Last update: 2025-10-03T13:43:21+02:00
 |:---------------------|:--------:|
 | modules analyzed     |   1300   |
 | maintainers          |    745   |
-| modules with issues  |   1299   |
-| issues               |  12342   |
+| modules with issues  |   1300   |
+| issues               |  12345   |
 | modules at github    |   1287   |
 | modules at gitlab    |     12   |
 | modules at bitbucket |      1   |
@@ -401,9 +401,9 @@ Last update: 2025-10-03T13:43:21+02:00
 2. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
 3. Information: There are updates for 5 dependencie(s):
    - @eslint/css       ^0.11.0  →  ^0.11.1
-   - @eslint/js        ^9.34.0  →  ^9.36.0
+   - @eslint/js        ^9.34.0  →  ^9.37.0
    - @eslint/markdown   ^7.2.0  →   ^7.3.0
-   - eslint            ^9.34.0  →  ^9.36.0
+   - eslint            ^9.34.0  →  ^9.37.0
    - globals           ^16.3.0  →  ^16.4.0
 
 ### [MMM-AnyList by codetheweb](https://github.com/codetheweb/MMM-AnyList)
@@ -507,11 +507,11 @@ Last update: 2025-10-03T13:43:21+02:00
 1. Recommendation: Found `uses: actions/setup-node@v4` in file `automated-tests.yaml`: Upgrade workflows to use actions/setup-node@v5.
 2. Information: There are updates for 8 dependencie(s):
    - @eslint/css               ^0.11.0  →  ^0.11.1
-   - @eslint/js                ^9.34.0  →  ^9.36.0
+   - @eslint/js                ^9.34.0  →  ^9.37.0
    - @eslint/markdown           ^7.2.0  →   ^7.3.0
    - @stylistic/eslint-plugin   ^5.2.3  →   ^5.4.0
    - cspell                     ^9.2.0  →   ^9.2.1
-   - eslint                    ^9.34.0  →  ^9.36.0
+   - eslint                    ^9.34.0  →  ^9.37.0
    - globals                   ^16.3.0  →  ^16.4.0
    - lint-staged               ^16.1.5  →  ^16.2.3
 
@@ -1389,9 +1389,9 @@ Last update: 2025-10-03T13:43:21+02:00
 
 1. Recommendation: Found `uses: actions/setup-node@v4` in file `automated-tests.yaml`: Upgrade workflows to use actions/setup-node@v5.
 2. Information: There are updates for 6 dependencie(s):
-   - @eslint/js                 ^9.35.0  →   ^9.36.0
+   - @eslint/js                 ^9.35.0  →   ^9.37.0
    - @stylistic/eslint-plugin    ^5.3.1  →    ^5.4.0
-   - eslint                     ^9.35.0  →   ^9.36.0
+   - eslint                     ^9.35.0  →   ^9.37.0
    - globals                    ^16.3.0  →   ^16.4.0
    - lint-staged                ^16.1.6  →   ^16.2.3
    - stylelint                 ^16.24.0  →  ^16.25.0
@@ -1401,9 +1401,9 @@ Last update: 2025-10-03T13:43:21+02:00
 1. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
 2. Information: There are updates for 5 dependencie(s):
    - @eslint/css       ^0.11.0  →  ^0.11.1
-   - @eslint/js        ^9.34.0  →  ^9.36.0
+   - @eslint/js        ^9.34.0  →  ^9.37.0
    - @eslint/markdown   ^7.2.0  →   ^7.3.0
-   - eslint            ^9.34.0  →  ^9.36.0
+   - eslint            ^9.34.0  →  ^9.37.0
    - globals           ^16.3.0  →  ^16.4.0
 
 ### [MMM-CalendarExt3Agenda by MMRIZE](https://github.com/MMRIZE/MMM-CalendarExt3Agenda)
@@ -1592,11 +1592,11 @@ Last update: 2025-10-03T13:43:21+02:00
 1. Recommendation: Found `uses: actions/setup-node@v4` in file `automated-tests.yaml`: Upgrade workflows to use actions/setup-node@v5.
 2. Information: There are updates for 8 dependencie(s):
    - @eslint/css               ^0.10.0  →  ^0.11.1
-   - @eslint/js                ^9.33.0  →  ^9.36.0
+   - @eslint/js                ^9.33.0  →  ^9.37.0
    - @eslint/markdown           ^7.1.0  →   ^7.3.0
    - @stylistic/eslint-plugin   ^5.2.3  →   ^5.4.0
    - cspell                     ^9.2.0  →   ^9.2.1
-   - eslint                    ^9.33.0  →  ^9.36.0
+   - eslint                    ^9.33.0  →  ^9.37.0
    - globals                   ^16.3.0  →  ^16.4.0
    - lint-staged               ^16.1.5  →  ^16.2.3
 
@@ -1631,10 +1631,10 @@ Last update: 2025-10-03T13:43:21+02:00
 1. Recommendation: Found `uses: actions/setup-node@v4` in file `automated-tests.yaml`: Upgrade workflows to use actions/setup-node@v5.
 2. Information: There are updates for 7 dependencie(s):
    - @eslint/css               ^0.11.0  →  ^0.11.1
-   - @eslint/js                ^9.34.0  →  ^9.36.0
+   - @eslint/js                ^9.34.0  →  ^9.37.0
    - @eslint/markdown           ^7.2.0  →   ^7.3.0
    - @stylistic/eslint-plugin   ^5.2.3  →   ^5.4.0
-   - eslint                    ^9.34.0  →  ^9.36.0
+   - eslint                    ^9.34.0  →  ^9.37.0
    - globals                   ^16.3.0  →  ^16.4.0
    - lint-staged               ^16.1.5  →  ^16.2.3
 
@@ -2265,9 +2265,9 @@ Last update: 2025-10-03T13:43:21+02:00
 1. Recommendation: Found `uses: actions/checkout@v4` in file `automated-tests.yaml`: Upgrade workflows to use actions/checkout@v5.
 2. Recommendation: Found `uses: actions/setup-node@v4` in file `automated-tests.yaml`: Upgrade workflows to use actions/setup-node@v5.
 3. Information: There are updates for 4 dependencie(s):
-   - @eslint/js                ^9.30.1  →  ^9.36.0
+   - @eslint/js                ^9.30.1  →  ^9.37.0
    - @stylistic/eslint-plugin   ^5.1.0  →   ^5.4.0
-   - eslint                    ^9.30.1  →  ^9.36.0
+   - eslint                    ^9.30.1  →  ^9.37.0
    - globals                   ^16.3.0  →  ^16.4.0
 
 ### [MMM-CyanideHappiness by werthdavid](https://github.com/werthdavid/MMM-CyanideHappiness)
@@ -2830,10 +2830,10 @@ Last update: 2025-10-03T13:43:21+02:00
 3. Recommendation: There is no dependabot configuration file. It is recommended to add one ([example dependabot file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/.github/dependabot.yaml)).
 4. Information: There are updates for 6 dependencie(s):
    - @eslint/css       ^0.10.0  →  ^0.11.1
-   - @eslint/js        ^9.31.0  →  ^9.36.0
+   - @eslint/js        ^9.31.0  →  ^9.37.0
    - @eslint/markdown   ^7.0.0  →   ^7.3.0
    - dotenv            ^17.2.0  →  ^17.2.3
-   - eslint            ^9.31.0  →  ^9.36.0
+   - eslint            ^9.31.0  →  ^9.37.0
    - globals           ^16.3.0  →  ^16.4.0
 
 ### [MMM-DublinRTPI by galaktor](https://github.com/galaktor/MMM-DublinRTPI)
@@ -2964,9 +2964,9 @@ Last update: 2025-10-03T13:43:21+02:00
 1. Recommendation: Found `uses: actions/checkout@v4` in file `automated-tests.yaml`: Upgrade workflows to use actions/checkout@v5.
 2. Recommendation: Found `uses: actions/setup-node@v4` in file `automated-tests.yaml`: Upgrade workflows to use actions/setup-node@v5.
 3. Information: There are updates for 4 dependencie(s):
-   - @eslint/js                ^9.32.0  →  ^9.36.0
+   - @eslint/js                ^9.32.0  →  ^9.37.0
    - @stylistic/eslint-plugin   ^5.2.2  →   ^5.4.0
-   - eslint                    ^9.32.0  →  ^9.36.0
+   - eslint                    ^9.32.0  →  ^9.37.0
    - globals                   ^16.3.0  →  ^16.4.0
 
 ### [MMM-EarthquakeMonitor by rcollie](https://github.com/rcollie/MMM-EarthquakeMonitor)
@@ -2986,10 +2986,10 @@ Last update: 2025-10-03T13:43:21+02:00
 
 1. Information: There are updates for 7 dependencie(s):
    - @eslint/css               ^0.11.0  →  ^0.11.1
-   - @eslint/js                ^9.34.0  →  ^9.36.0
+   - @eslint/js                ^9.34.0  →  ^9.37.0
    - @eslint/markdown           ^7.2.0  →   ^7.3.0
    - @stylistic/eslint-plugin   ^5.3.1  →   ^5.4.0
-   - eslint                    ^9.34.0  →  ^9.36.0
+   - eslint                    ^9.34.0  →  ^9.37.0
    - globals                   ^16.3.0  →  ^16.4.0
    - lint-staged               ^16.1.6  →  ^16.2.3
 
@@ -3950,13 +3950,13 @@ Last update: 2025-10-03T13:43:21+02:00
 1. Recommendation: Found `uses: actions/setup-node@v4` in file `automated-tests.yaml`: Upgrade workflows to use actions/setup-node@v5.
 2. Information: There are updates for 10 dependencie(s):
    - @eslint/css                ^0.10.0  →   ^0.11.1
-   - @eslint/js                 ^9.33.0  →   ^9.36.0
+   - @eslint/js                 ^9.33.0  →   ^9.37.0
    - @eslint/json               ^0.13.1  →   ^0.13.2
    - @eslint/markdown            ^7.2.0  →    ^7.3.0
    - @stylistic/eslint-plugin    ^5.2.3  →    ^5.4.0
    - cspell                      ^9.2.0  →    ^9.2.1
    - dayjs                     ^1.11.13  →  ^1.11.18
-   - eslint                     ^9.33.0  →   ^9.36.0
+   - eslint                     ^9.33.0  →   ^9.37.0
    - globals                    ^16.3.0  →   ^16.4.0
    - lint-staged                ^16.1.5  →   ^16.2.3
 
@@ -6033,12 +6033,12 @@ Last update: 2025-10-03T13:43:21+02:00
 
 1. Recommendation: Found `uses: actions/setup-node@v4` in file `automated-tests.yaml`: Upgrade workflows to use actions/setup-node@v5.
 2. Information: There are updates for 8 dependencie(s):
-   - @eslint/js                ^9.34.0  →  ^9.36.0
+   - @eslint/js                ^9.34.0  →  ^9.37.0
    - @eslint/json              ^0.13.1  →  ^0.13.2
    - @eslint/markdown           ^7.2.0  →   ^7.3.0
    - @stylistic/eslint-plugin   ^5.2.3  →   ^5.4.0
    - cspell                     ^9.2.0  →   ^9.2.1
-   - eslint                    ^9.34.0  →  ^9.36.0
+   - eslint                    ^9.34.0  →  ^9.37.0
    - globals                   ^16.3.0  →  ^16.4.0
    - lint-staged               ^16.1.5  →  ^16.2.3
 
@@ -6371,10 +6371,10 @@ Last update: 2025-10-03T13:43:21+02:00
 
 1. Recommendation: Found `uses: actions/setup-node@v4` in file `automated-tests.yaml`: Upgrade workflows to use actions/setup-node@v5.
 2. Information: There are updates for 6 dependencie(s):
-   - @eslint/js                ^9.34.0  →  ^9.36.0
+   - @eslint/js                ^9.34.0  →  ^9.37.0
    - @eslint/markdown           ^7.2.0  →   ^7.3.0
    - @stylistic/eslint-plugin   ^5.3.1  →   ^5.4.0
-   - eslint                    ^9.34.0  →  ^9.36.0
+   - eslint                    ^9.34.0  →  ^9.37.0
    - globals                   ^16.3.0  →  ^16.4.0
    - lint-staged               ^16.1.6  →  ^16.2.3
 
@@ -6621,9 +6621,9 @@ Last update: 2025-10-03T13:43:21+02:00
 1. Recommendation: Found `uses: actions/checkout@v4` in file `automated-tests.yaml`: Upgrade workflows to use actions/checkout@v5.
 2. Recommendation: Found `uses: actions/setup-node@v4` in file `automated-tests.yaml`: Upgrade workflows to use actions/setup-node@v5.
 3. Information: There are updates for 4 dependencie(s):
-   - @eslint/js                ^9.32.0  →  ^9.36.0
+   - @eslint/js                ^9.32.0  →  ^9.37.0
    - @stylistic/eslint-plugin   ^5.2.3  →   ^5.4.0
-   - eslint                    ^9.33.0  →  ^9.36.0
+   - eslint                    ^9.33.0  →  ^9.37.0
    - globals                   ^16.3.0  →  ^16.4.0
 
 ### [MMM-Liquipedia-Matches by buxxi](https://github.com/buxxi/MMM-Liquipedia-Matches)
@@ -6791,10 +6791,10 @@ Last update: 2025-10-03T13:43:21+02:00
 
 1. Recommendation: There is no dependabot configuration file. It is recommended to add one ([example dependabot file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/.github/dependabot.yaml)).
 2. Information: There are updates for 5 dependencie(s):
-   - @eslint/js                ^9.32.0  →  ^9.36.0
+   - @eslint/js                ^9.32.0  →  ^9.37.0
    - @eslint/markdown           ^7.1.0  →   ^7.3.0
    - @stylistic/eslint-plugin   ^5.2.2  →   ^5.4.0
-   - eslint                    ^9.32.0  →  ^9.36.0
+   - eslint                    ^9.32.0  →  ^9.37.0
    - globals                   ^16.3.0  →  ^16.4.0
 
 ### [MMM-loldht22 by cslev](https://github.com/cslev/MMM-loldht22)
@@ -8301,9 +8301,9 @@ Last update: 2025-10-03T13:43:21+02:00
 2. Recommendation: Found `npm run` in file `package.json`: Prefer `node --run` over invoking npm run directly.
 3. Recommendation: There is no dependabot configuration file. It is recommended to add one ([example dependabot file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/.github/dependabot.yaml)).
 4. Information: There are updates for 4 dependencie(s):
-   - @eslint/js                ^9.28.0  →  ^9.36.0
+   - @eslint/js                ^9.28.0  →  ^9.37.0
    - @stylistic/eslint-plugin   ^4.4.0  →   ^5.4.0
-   - eslint                    ^9.28.0  →  ^9.36.0
+   - eslint                    ^9.28.0  →  ^9.37.0
    - globals                   ^16.2.0  →  ^16.4.0
 
 ### [MMM-MTA-NextBus by tie624](https://github.com/tie624/MMM-MTA-NextBus)
@@ -8331,9 +8331,9 @@ Last update: 2025-10-03T13:43:21+02:00
 2. Recommendation: Found `npm run` in file `package.json`: Prefer `node --run` over invoking npm run directly.
 3. Recommendation: There is no dependabot configuration file. It is recommended to add one ([example dependabot file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/.github/dependabot.yaml)).
 4. Information: There are updates for 4 dependencie(s):
-   - @eslint/js                ^9.28.0  →  ^9.36.0
+   - @eslint/js                ^9.28.0  →  ^9.37.0
    - @stylistic/eslint-plugin   ^4.4.0  →   ^5.4.0
-   - eslint                    ^9.28.0  →  ^9.36.0
+   - eslint                    ^9.28.0  →  ^9.37.0
    - globals                   ^16.2.0  →  ^16.4.0
 
 ### [MMM-MTG by crisvdn](https://github.com/crisvdn/MMM-MTG)
@@ -8350,8 +8350,8 @@ Last update: 2025-10-03T13:43:21+02:00
 2. Recommendation: There is no dependabot configuration file. It is recommended to add one ([example dependabot file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/.github/dependabot.yaml)).
 3. Recommendation: No ESLint configuration was found. ESLint is very helpful, it is worth using it even for small projects ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/eslint.md)).
 4. Information: There are updates for 3 dependencie(s):
-   - @eslint/js   ^9.2.0  →  ^9.36.0
-   - eslint       ^9.2.0  →  ^9.36.0
+   - @eslint/js   ^9.2.0  →  ^9.37.0
+   - eslint       ^9.2.0  →  ^9.37.0
    - globals     ^15.2.0  →  ^16.4.0
 
 ### [MMM-mumble by ThePirateWhoSmellsOfSunflowers](https://github.com/ThePirateWhoSmellsOfSunflowers/MMM-mumble)
@@ -8544,6 +8544,9 @@ Last update: 2025-10-03T13:43:21+02:00
 ### [MMM-MyScoreboard by dathbe](https://github.com/dathbe/MMM-MyScoreboard)
 
 1. Recommendation: Found `uses: actions/setup-node@v4` in file `automated-tests.yaml`: Upgrade workflows to use actions/setup-node@v5.
+2. Information: There are updates for 2 dependencie(s):
+   - @eslint/js  ^9.36.0  →  ^9.37.0
+   - eslint      ^9.36.0  →  ^9.37.0
 
 ### [MMM-MySenseHat by framboise-pi](https://github.com/framboise-pi/MMM-MySenseHat)
 
@@ -8591,9 +8594,9 @@ Last update: 2025-10-03T13:43:21+02:00
 1. Recommendation: Found `uses: actions/checkout@v4` in file `automated-tests.yaml`: Upgrade workflows to use actions/checkout@v5.
 2. Recommendation: Found `uses: actions/setup-node@v4` in file `automated-tests.yaml`: Upgrade workflows to use actions/setup-node@v5.
 3. Information: There are updates for 4 dependencie(s):
-   - @eslint/js                ^9.31.0  →  ^9.36.0
+   - @eslint/js                ^9.31.0  →  ^9.37.0
    - @stylistic/eslint-plugin   ^5.2.0  →   ^5.4.0
-   - eslint                    ^9.31.0  →  ^9.36.0
+   - eslint                    ^9.31.0  →  ^9.37.0
    - globals                   ^16.3.0  →  ^16.4.0
 
 ### [MMM-MyStudyLife by ethanpartida](https://github.com/ethanpartida/MMM-MyStudyLife)
@@ -9388,9 +9391,9 @@ Last update: 2025-10-03T13:43:21+02:00
 2. Recommendation: There is no CODE_OF_CONDUCT file. It is recommended to add one ([example CODE_OF_CONDUCT file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CODE_OF_CONDUCT.md)).
 3. Recommendation: There is no dependabot configuration file. It is recommended to add one ([example dependabot file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/.github/dependabot.yaml)).
 4. Information: There are updates for 4 dependencie(s):
-   - @eslint/js        ^9.31.0  →  ^9.36.0
+   - @eslint/js        ^9.31.0  →  ^9.37.0
    - @eslint/markdown   ^7.1.0  →   ^7.3.0
-   - eslint            ^9.31.0  →  ^9.36.0
+   - eslint            ^9.31.0  →  ^9.37.0
    - globals           ^16.3.0  →  ^16.4.0
 
 ### [MMM-Notion by choffmann](https://github.com/choffmann/MMM-Notion)
@@ -9725,12 +9728,12 @@ Last update: 2025-10-03T13:43:21+02:00
 1. Recommendation: Found `uses: actions/setup-node@v4` in file `automated-tests.yaml`: Upgrade workflows to use actions/setup-node@v5.
 2. Information: There are updates for 9 dependencie(s):
    - @eslint/css               ^0.10.0  →  ^0.11.1
-   - @eslint/js                ^9.33.0  →  ^9.36.0
+   - @eslint/js                ^9.33.0  →  ^9.37.0
    - @eslint/json              ^0.13.1  →  ^0.13.2
    - @eslint/markdown           ^7.1.0  →   ^7.3.0
    - @stylistic/eslint-plugin   ^5.2.3  →   ^5.4.0
    - cspell                     ^9.2.0  →   ^9.2.1
-   - eslint                    ^9.33.0  →  ^9.36.0
+   - eslint                    ^9.33.0  →  ^9.37.0
    - globals                   ^16.3.0  →  ^16.4.0
    - lint-staged               ^16.1.5  →  ^16.2.3
 
@@ -9973,10 +9976,10 @@ Last update: 2025-10-03T13:43:21+02:00
 3. Recommendation: There is no dependabot configuration file. It is recommended to add one ([example dependabot file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/.github/dependabot.yaml)).
 4. Information: There are updates for 6 dependencie(s):
    - @eslint/css               ^0.10.0  →  ^0.11.1
-   - @eslint/js                ^9.30.1  →  ^9.36.0
+   - @eslint/js                ^9.30.1  →  ^9.37.0
    - @eslint/markdown           ^7.0.0  →   ^7.3.0
    - @stylistic/eslint-plugin   ^5.1.0  →   ^5.4.0
-   - eslint                    ^9.30.1  →  ^9.36.0
+   - eslint                    ^9.30.1  →  ^9.37.0
    - globals                   ^16.3.0  →  ^16.4.0
 
 ### [MMM-OpenWeatherMapForecast by MarcLandis](https://github.com/MarcLandis/MMM-OpenWeatherMapForecast)
@@ -10078,12 +10081,12 @@ Last update: 2025-10-03T13:43:21+02:00
 3. Recommendation: There is no dependabot configuration file. It is recommended to add one ([example dependabot file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/.github/dependabot.yaml)).
 4. Information: There are updates for 11 dependencie(s):
    - @eslint/css                ^0.9.0  →  ^0.11.1
-   - @eslint/js                ^9.29.0  →  ^9.36.0
+   - @eslint/js                ^9.29.0  →  ^9.37.0
    - @eslint/json              ^0.12.0  →  ^0.13.2
    - @eslint/markdown           ^6.6.0  →   ^7.3.0
    - @stylistic/eslint-plugin   ^5.0.0  →   ^5.4.0
    - cspell                     ^9.1.2  →   ^9.2.1
-   - eslint                    ^9.29.0  →  ^9.36.0
+   - eslint                    ^9.29.0  →  ^9.37.0
    - eslint-plugin-import-x    ^4.16.0  →  ^4.16.1
    - globals                   ^16.2.0  →  ^16.4.0
    - lint-staged               ^16.1.2  →  ^16.2.3
@@ -10144,10 +10147,10 @@ Last update: 2025-10-03T13:43:21+02:00
 
 1. Recommendation: Found `uses: actions/setup-node@v4` in file `automated-tests.yaml`: Upgrade workflows to use actions/setup-node@v5.
 2. Information: There are updates for 5 dependencie(s):
-   - @eslint/js                ^9.34.0  →  ^9.36.0
+   - @eslint/js                ^9.34.0  →  ^9.37.0
    - @eslint/markdown           ^7.2.0  →   ^7.3.0
    - @stylistic/eslint-plugin   ^5.2.3  →   ^5.4.0
-   - eslint                    ^9.34.0  →  ^9.36.0
+   - eslint                    ^9.34.0  →  ^9.37.0
    - globals                   ^16.3.0  →  ^16.4.0
 
 ### [MMM-Pages-Screencast by jboucly](https://github.com/jboucly/MMM-Pages-Screencast)
@@ -10388,6 +10391,9 @@ Last update: 2025-10-03T13:43:21+02:00
 ### [MMM-PGA by dathbe](https://github.com/dathbe/MMM-PGA)
 
 1. Recommendation: Found `uses: actions/setup-node@v4` in file `automated-tests.yaml`: Upgrade workflows to use actions/setup-node@v5.
+2. Information: There are updates for 2 dependencie(s):
+   - @eslint/js  ^9.36.0  →  ^9.37.0
+   - eslint      ^9.36.0  →  ^9.37.0
 
 ### [MMM-PhilipsHue by mumblebaj](https://github.com/mumblebaj/MMM-PhilipsHue)
 
@@ -11102,17 +11108,23 @@ Last update: 2025-10-03T13:43:21+02:00
 7. Recommendation: There is no dependabot configuration file. It is recommended to add one ([example dependabot file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/.github/dependabot.yaml)).
 8. Recommendation: The ESLint configuration file `eslint.config.mjs` does not contain `defineConfig`. It is recommended to use it.
 
+### [MMM-PublicTransportBerlin by deg0nz](https://github.com/deg0nz/MMM-PublicTransportBerlin)
+
+1. Information: There are updates for 2 dependencie(s):
+   - @eslint/js  ^9.36.0  →  ^9.37.0
+   - eslint      ^9.36.0  →  ^9.37.0
+
 ### [MMM-PublicTransportHafas by KristjanESPERANTO](https://github.com/KristjanESPERANTO/MMM-PublicTransportHafas)
 
 1. Recommendation: Found `uses: actions/setup-node@v4` in file `automated-tests.yaml`: Upgrade workflows to use actions/setup-node@v5.
 2. Information: There are updates for 10 dependencie(s):
    - @eslint/css                  ^0.10.0  →   ^0.11.1
-   - @eslint/js                   ^9.34.0  →   ^9.36.0
+   - @eslint/js                   ^9.34.0  →   ^9.37.0
    - @eslint/markdown              ^7.2.0  →    ^7.3.0
    - @stylistic/eslint-plugin      ^5.2.3  →    ^5.4.0
    - cspell                        ^9.2.0  →    ^9.2.1
    - dayjs                       ^1.11.13  →  ^1.11.18
-   - eslint                       ^9.34.0  →   ^9.36.0
+   - eslint                       ^9.34.0  →   ^9.37.0
    - eslint-plugin-package-json   ^0.56.0  →   ^0.56.3
    - globals                      ^16.3.0  →   ^16.4.0
    - lint-staged                  ^16.1.5  →   ^16.2.3
@@ -11631,7 +11643,9 @@ Last update: 2025-10-03T13:43:21+02:00
 
 ### [MMM-Remote-Control by Jopyth](https://github.com/Jopyth/MMM-Remote-Control)
 
-1. Information: There are updates for 1 dependencie(s):
+1. Information: There are updates for 3 dependencie(s):
+   - @eslint/js       ^9.36.0  →  ^9.37.0
+   - eslint           ^9.36.0  →  ^9.37.0
    - swagger-ui-dist  ^5.29.1  →  ^5.29.3
 
 ### [MMM-RemoteCompliments by mitchelltmarino](https://github.com/mitchelltmarino/MMM-RemoteCompliments)
@@ -11933,9 +11947,9 @@ Last update: 2025-10-03T13:43:21+02:00
 1. Recommendation: Found `XMLHttpRequest` in file `jsmpeg.min.js`: Replace it with built-in fetch ([documentation](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch); [example module with fetch implemented](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/node_helper.js)).
 2. Information: There are updates for 5 dependencie(s):
    - @eslint/css       ^0.11.0  →  ^0.11.1
-   - @eslint/js        ^9.35.0  →  ^9.36.0
+   - @eslint/js        ^9.35.0  →  ^9.37.0
    - @eslint/markdown   ^7.2.0  →   ^7.3.0
-   - eslint            ^9.35.0  →  ^9.36.0
+   - eslint            ^9.35.0  →  ^9.37.0
    - globals           ^16.3.0  →  ^16.4.0
 3. ESLint issues:
    - package.json: Line 1, Column 1: Property 'type' is required. (rule: package-json/require-type)
@@ -12403,8 +12417,8 @@ Last update: 2025-10-03T13:43:21+02:00
 
 1. Recommendation: There is no CHANGELOG file. It is recommended to add one ([example CHANGELOG file](https://github.com/KristjanESPERANTO/MMM-ApothekenNotdienst/blob/main/CHANGELOG.md)).
 2. Information: There are updates for 2 dependencie(s):
-   - @eslint/js  ^9.33.0  →  ^9.36.0
-   - eslint      ^9.33.0  →  ^9.36.0
+   - @eslint/js  ^9.33.0  →  ^9.37.0
+   - eslint      ^9.33.0  →  ^9.37.0
 3. ESLint issues:
    - config.sample.js: Line 3, Column 13: Parsing error: Unexpected token : (rule: null)
    - package.json: Line 1, Column 1: Property 'type' is required. (rule: package-json/require-type)
@@ -13549,9 +13563,9 @@ Last update: 2025-10-03T13:43:21+02:00
 1. Issues are not enabled in the GitHub repository. So users cannot report bugs. Please enable issues in your repo.
 2. Information: There are updates for 5 dependencie(s):
    - @eslint/css        ^0.11.0  →   ^0.11.1
-   - @eslint/js         ^9.35.0  →   ^9.36.0
+   - @eslint/js         ^9.35.0  →   ^9.37.0
    - @eslint/markdown    ^7.2.0  →    ^7.3.0
-   - eslint             ^9.35.0  →   ^9.36.0
+   - eslint             ^9.35.0  →   ^9.37.0
    - systeminformation  ^5.27.8  →  ^5.27.10
 
 ### [MMM-Tabulator by E3V3A](https://github.com/E3V3A/MMM-Tabulator)
@@ -15324,12 +15338,12 @@ Last update: 2025-10-03T13:43:21+02:00
 
 1. Recommendation: Found `uses: actions/setup-node@v4` in file `automated-tests.yaml`: Upgrade workflows to use actions/setup-node@v5.
 2. Information: There are updates for 8 dependencie(s):
-   - @eslint/js                ^9.33.0  →  ^9.36.0
+   - @eslint/js                ^9.33.0  →  ^9.37.0
    - @eslint/json              ^0.13.1  →  ^0.13.2
    - @eslint/markdown           ^7.1.0  →   ^7.3.0
    - @stylistic/eslint-plugin   ^5.2.3  →   ^5.4.0
    - cspell                     ^9.2.0  →   ^9.2.1
-   - eslint                    ^9.33.0  →  ^9.36.0
+   - eslint                    ^9.33.0  →  ^9.37.0
    - globals                   ^16.3.0  →  ^16.4.0
    - lint-staged               ^16.1.5  →  ^16.2.3
 
@@ -15337,11 +15351,11 @@ Last update: 2025-10-03T13:43:21+02:00
 
 1. Information: There are updates for 8 dependencie(s):
    - @eslint/css               ^0.11.0  →  ^0.11.1
-   - @eslint/js                ^9.34.0  →  ^9.36.0
+   - @eslint/js                ^9.34.0  →  ^9.37.0
    - @eslint/markdown           ^7.2.0  →   ^7.3.0
    - @stylistic/eslint-plugin   ^5.2.3  →   ^5.4.0
    - cspell                     ^9.2.0  →   ^9.2.1
-   - eslint                    ^9.34.0  →  ^9.36.0
+   - eslint                    ^9.34.0  →  ^9.37.0
    - globals                   ^16.3.0  →  ^16.4.0
    - lint-staged               ^16.1.5  →  ^16.2.3
 2. ESLint issues:
