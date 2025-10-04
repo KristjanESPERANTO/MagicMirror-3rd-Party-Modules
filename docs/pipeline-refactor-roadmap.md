@@ -11,7 +11,7 @@ This document captures the long-term improvements we want to implement in the mo
 
 ## Workstreams
 
-### 1. Pipeline Architecture & Orchestration - ✅ Completed
+### 1. Pipeline Architecture & Orchestration
 
 | Task | Description                                                                                                                                                                      | Dependencies | Effort |
 | ---- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | ------ |
@@ -21,6 +21,7 @@ This document captures the long-term improvements we want to implement in the mo
 | P1.4 | Provide a skip/only mechanism for partial runs (e.g. `--only=checks`) ✅ Completed Sep 2025                                                                                      | P1.2         | S      |
 | P1.5 | Final artifact schemas & validation — rollout completed and documented (see contributor guide & release notes) ✅ Completed Sep 2025                                             | P1.3         | M      |
 | P1.6 | Consolidate shared schema definitions (shared `$defs` / generator) to keep stage contracts in sync ✅ Completed Sep 2025                                                         | P1.3         | S      |
+| P1.7 | Introduce orchestrator-wide progress rendering for every stage _(low priority; build on the Stage 5 indicator via shared progress utility + stage lifecycle events)_             | P1.2         | M      |
 
 ### 2. Runtime & Codebase Consolidation - ✅ Completed
 
@@ -50,7 +51,7 @@ This document captures the long-term improvements we want to implement in the mo
 | P4.1  | Split checks into a registry with metadata (category, severity, auto-fixable) ✅ Completed Oct 2025                                                                             | P2.3         | M      |
 | P4.2  | Add configuration file to toggle check groups (`fast`, `deep`, optional ESLint/ncu`) ✅ Completed Oct 2025                                                                      | P4.1         | S      |
 | P4.3  | Create sample dataset + regression tests for check outputs (golden files), reusing the curated fixtures where possible ✅ Completed Oct 2025                                    | P4.1         | M      |
-| P4.4  | Provide CLI progress UI and Markdown summary per run                                                                                                                            | P1.2         | S      |
+| P4.4  | Provide CLI progress UI and Markdown summary per run ✅ Completed Oct 2025                                                                                                      | P1.2         | S      |
 | P4.5  | Add rule detecting modules that rely on MagicMirror core dependencies without declaring them ([#78](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/issues/78)) | P4.1         | M      |
 | P4.6  | Check README install/update sections for copyable fenced command blocks ([#54](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/issues/54))                      | P4.1         | S      |
 | P4.7  | Recommend `npm ci --omit=dev` when modules expose devDependencies in instructions ([#53](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/issues/53))            | P4.1         | S      |
@@ -98,10 +99,10 @@ Routine reminders for keeping the written guidance in sync with the code:
 
 Immediate action items:
 
-1. Provide the CLI progress UI and Markdown summary per run (P4.4).
-2. Add the dependency-declaration rule for core MagicMirror usage (P4.5).
-3. Audit README install/update sections for copyable fenced command blocks (P4.6).
-4. Recommend `npm ci --omit=dev` when modules list devDependencies in instructions (P4.7).
+1. Add the dependency-declaration rule for core MagicMirror usage (P4.5).
+2. Audit README install/update sections for copyable fenced command blocks (P4.6).
+3. Recommend `npm ci --omit=dev` when modules list devDependencies in instructions (P4.7).
+4. Flag modules with multi-year inactivity that are not marked `outdated` and nudge maintainers to review status (P4.8).
 
 ---
 

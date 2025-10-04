@@ -6,6 +6,7 @@ import fs from "node:fs";
 import { access, readdir, readFile, writeFile } from "node:fs/promises";
 import path from "node:path";
 import process from "node:process";
+import readline from "node:readline";
 import { execFile } from "node:child_process";
 import { setMaxListeners } from "node:events";
 import { promisify } from "node:util";
@@ -22,6 +23,7 @@ import {
   TEXT_RULES
 } from "./rule-registry.js";
 import { loadCheckGroupConfig } from "./config.js";
+import { buildRunSummaryMarkdown } from "./run-summary.js";
 
 const execFileAsync = promisify(execFile);
 
@@ -37,7 +39,8 @@ const envOverrides = {
   stage5Path: process.env.CHECK_MODULES_STAGE5_PATH,
   modulesJsonPath: process.env.CHECK_MODULES_MODULES_JSON_PATH,
   modulesMinPath: process.env.CHECK_MODULES_MODULES_MIN_PATH,
-  statsPath: process.env.CHECK_MODULES_STATS_PATH
+  statsPath: process.env.CHECK_MODULES_STATS_PATH,
+  runsDir: process.env.CHECK_MODULES_RUNS_DIR
 };
 
 const resolvedProjectRoot = envOverrides.projectRoot
@@ -69,6 +72,9 @@ const MODULES_MIN_PATH = envOverrides.modulesMinPath
 const STATS_PATH = envOverrides.statsPath
   ? path.resolve(envOverrides.statsPath)
   : path.join(DATA_DIR, "stats.json");
+const RUNS_ROOT = envOverrides.runsDir
+  ? path.resolve(envOverrides.runsDir)
+  : path.join(PROJECT_ROOT, ".pipeline-runs", "check-modules");
 
 const baseLogger = createLogger();
 const logger =
@@ -104,6 +110,177 @@ async function pathExists(targetPath) {
     return true;
   } catch {
     return false;
+  }
+}
+
+const PROGRESS_BAR_WIDTH = 24;
+
+function shouldUseInteractiveProgress(total) {
+  if (total <= 0) {
+    return false;
+  }
+
+  const stream = process.stderr;
+  if (!stream || typeof stream.isTTY !== "boolean" || !stream.isTTY) {
+    return false;
+  }
+
+  const disableFlag = process.env.CHECK_MODULES_DISABLE_PROGRESS;
+  if (disableFlag && disableFlag.trim() === "1") {
+    return false;
+  }
+
+  const override = process.env.CHECK_MODULES_PROGRESS;
+  if (override && override.trim().toLowerCase() === "off") {
+    return false;
+  }
+
+  return true;
+}
+
+function createProgressIndicator(total) {
+  const interactive = shouldUseInteractiveProgress(total);
+  const stream = process.stderr;
+  let lastRendered = "";
+
+  function render(processed) {
+    if (!interactive) {
+      return;
+    }
+
+    const safeProcessed = Math.min(Math.max(processed, 0), total);
+    const percent = total === 0 ? 100 : Math.min(100, Math.floor((safeProcessed / total) * 100));
+    const filledLength = Math.round((percent / 100) * PROGRESS_BAR_WIDTH);
+    const filled = "█".repeat(filledLength);
+    const empty = "░".repeat(Math.max(PROGRESS_BAR_WIDTH - filledLength, 0));
+    const message = `Progress ${safeProcessed}/${total} ${filled}${empty} ${percent}%`;
+
+    if (message === lastRendered) {
+      return;
+    }
+
+    readline.clearLine(stream, 0);
+    readline.cursorTo(stream, 0);
+    stream.write(message);
+    lastRendered = message;
+  }
+
+  return {
+    tick(processed) {
+      render(processed);
+    },
+    complete() {
+      if (!interactive) {
+        return;
+      }
+      render(total);
+      stream.write("\n");
+      lastRendered = "";
+    },
+    isInteractive: interactive
+  };
+}
+
+function formatRunDirectoryId(date) {
+  const pad = (value, size = 2) => String(value).padStart(size, "0");
+  const year = date.getFullYear();
+  const month = pad(date.getMonth() + 1);
+  const day = pad(date.getDate());
+  const hours = pad(date.getHours());
+  const minutes = pad(date.getMinutes());
+  const seconds = pad(date.getSeconds());
+  const milliseconds = pad(date.getMilliseconds(), 3);
+  return `check-modules_${year}${month}${day}_${hours}${minutes}${seconds}${milliseconds}`;
+}
+
+async function prepareRunDirectory(startedAt) {
+  const runDate = startedAt instanceof Date ? startedAt : new Date();
+  await ensureDirectory(RUNS_ROOT);
+
+  const baseId = formatRunDirectoryId(runDate);
+  let runId = baseId;
+  let runDirectory = path.join(RUNS_ROOT, runId);
+  let attempt = 1;
+
+  while (await pathExists(runDirectory)) {
+    const suffix = String(attempt).padStart(2, "0");
+    runId = `${baseId}_${suffix}`;
+    runDirectory = path.join(RUNS_ROOT, runId);
+    attempt += 1;
+  }
+
+  await ensureDirectory(runDirectory);
+
+  return { runId, directory: runDirectory };
+}
+
+function buildArtifactLinks(runDirectory) {
+  if (!runDirectory) {
+    return [];
+  }
+
+  const entries = [
+    { label: "result.md", path: path.relative(runDirectory, RESULT_PATH) },
+    { label: "modules.json", path: path.relative(runDirectory, MODULES_JSON_PATH) },
+    { label: "modules.min.json", path: path.relative(runDirectory, MODULES_MIN_PATH) },
+    { label: "stats.json", path: path.relative(runDirectory, STATS_PATH) },
+    { label: "modules.stage.5.json", path: path.relative(runDirectory, STAGE5_PATH) }
+  ];
+
+  return entries.filter((entry) => typeof entry.path === "string" && entry.path.length > 0);
+}
+
+async function writeRunSummaryFile({
+  runId,
+  runDirectory,
+  startedAt,
+  finishedAt,
+  stats,
+  config,
+  configSources,
+  disabledToggles,
+  issueSummaries
+}) {
+  try {
+    const artifactLinks = buildArtifactLinks(runDirectory);
+    const markdown = buildRunSummaryMarkdown({
+      runId,
+      startedAt,
+      finishedAt,
+      stats,
+      config,
+      configSources,
+      disabledToggles,
+      artifactLinks,
+      issueSummaries
+    });
+
+    const summaryPath = path.join(runDirectory, "summary.md");
+    await writeFile(summaryPath, `${markdown}\n`, "utf8");
+
+    const metadata = {
+      runId,
+      startedAt: new Date(startedAt).toISOString(),
+      finishedAt: new Date(finishedAt).toISOString(),
+      durationMs: Math.max(0, finishedAt.getTime() - startedAt.getTime()),
+      disabledToggles,
+      artifactLinks,
+      totals: {
+        modulesAnalyzed: stats?.moduleCounter ?? 0,
+        modulesWithIssues: stats?.modulesWithIssuesCounter ?? 0,
+        issuesDetected: stats?.issueCounter ?? 0
+      }
+    };
+
+    const metadataPath = path.join(runDirectory, "summary.json");
+    await writeFile(metadataPath, `${JSON.stringify(metadata, null, 2)}\n`, "utf8");
+
+    return summaryPath;
+  } catch (error) {
+    logger.warn(
+      `Unable to persist run summary: ${error instanceof Error ? error.message : String(error)}`
+    );
+    return null;
   }
 }
 
@@ -872,6 +1049,20 @@ async function main() {
 
   logger.info(`Starting analysis for ${totalModules} modules...`);
 
+  const runStartedAt = new Date();
+  let runContext = null;
+  try {
+    runContext = await prepareRunDirectory(runStartedAt);
+  } catch (error) {
+    logger.warn(
+      `Unable to prepare run directory for summaries: ${
+        error instanceof Error ? error.message : String(error)
+      }`
+    );
+  }
+
+  const progress = createProgressIndicator(totalModules);
+
   const { config: checkGroupConfig, sources: configSources, errors: configErrors } =
     await loadCheckGroupConfig({projectRoot: PROJECT_ROOT});
 
@@ -1007,17 +1198,16 @@ async function main() {
       (stats.maintainer[module.maintainer] ?? 0) + 1;
 
     const processed = index + 1;
-    if (processed === totalModules || processed % 25 === 0) {
+    progress.tick(processed);
+    if (!progress.isInteractive && (processed === totalModules || processed % 25 === 0)) {
       logger.info(`Progress: ${processed}/${totalModules} modules processed`);
     }
   }
 
+  progress.complete();
+
   stats.maintainer = Object.fromEntries(
     Object.entries(stats.maintainer).sort(([, a], [, b]) => b - a)
-  );
-
-  logger.info(
-    `${stats.moduleCounter} modules analyzed. For results see file result.md.`
   );
 
   const sanitizedData = {
@@ -1034,6 +1224,32 @@ async function main() {
   };
 
   await writeOutputs({ data: sanitizedData, stats, summaries: issueSummaries });
+
+  const finishedAt = new Date();
+  let summaryPath = null;
+  if (runContext && runContext.directory) {
+    summaryPath = await writeRunSummaryFile({
+      runId: runContext.runId,
+      runDirectory: runContext.directory,
+      startedAt: runStartedAt,
+      finishedAt,
+      stats,
+      config: checkGroupConfig,
+      configSources,
+      disabledToggles,
+      issueSummaries
+    });
+  }
+
+  logger.info(
+    `${stats.moduleCounter} modules analyzed. For results see file result.md.`
+  );
+
+  if (summaryPath) {
+    logger.info(
+      `Run summary saved to ${path.relative(PROJECT_ROOT, summaryPath)}`
+    );
+  }
 }
 
 main().catch((error) => {
