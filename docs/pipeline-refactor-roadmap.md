@@ -46,21 +46,21 @@ This document captures the long-term improvements we want to implement in the mo
 
 ### 4. Checks & Developer Experience
 
-| Task  | Description                                                                                                                                                                     | Dependencies | Effort |
-| ----- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | ------ |
-| P4.1  | Split checks into a registry with metadata (category, severity, auto-fixable) ✅ Completed Oct 2025                                                                             | P2.3         | M      |
-| P4.2  | Add configuration file to toggle check groups (`fast`, `deep`, optional ESLint/ncu`) ✅ Completed Oct 2025                                                                      | P4.1         | S      |
-| P4.3  | Create sample dataset + regression tests for check outputs (golden files), reusing the curated fixtures where possible ✅ Completed Oct 2025                                    | P4.1         | M      |
-| P4.4  | Provide CLI progress UI and Markdown summary per run ✅ Completed Oct 2025                                                                                                      | P1.2         | S      |
-| P4.5  | Add rule detecting modules that rely on MagicMirror core dependencies without declaring them ([#78](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/issues/78)) | P4.1         | M      |
-| P4.6  | Check README install/update sections for copyable fenced command blocks ([#54](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/issues/54))                      | P4.1         | S      |
-| P4.7  | Recommend `npm ci --omit=dev` when modules expose devDependencies in instructions ([#53](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/issues/53))            | P4.1         | S      |
-| P4.8  | Flag modules with multi-year inactivity that are not marked `outdated` and nudge maintainers to review status                                                                   | P4.1         | M      |
-| P4.9  | Inspect Dependabot configs for schedule scope (quarterly cadence, production-only) and suggest adjustments                                                                      | P4.1         | M      |
-| P4.10 | Evaluate migrating the `ntl` task menu into a `pipeline` subcommand (interactive launcher built on the orchestrator CLI) _(low priority)_                                       | P1.2         | S      |
-| P4.11 | Extend the rule registry to cover every pipeline check stage (legacy JS script + future additions) ✅ Completed Oct 2025                                                        | P4.1         | L      |
-| P4.R1 | Audit every rule in the registry for relevance and clarity                                                                                                                      | P4.11        | S      |
-| P4.R2 | Audit every recommendation in the registry for relevance and consistency                                                                                                        | P4.11        | S      |
+| Task  | Description                                                                                                                                                                                     | Dependencies | Effort |
+| ----- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | ------ |
+| P4.1  | Split checks into a registry with metadata (category, severity, auto-fixable) ✅ Completed Oct 2025                                                                                             | P2.3         | M      |
+| P4.2  | Add configuration file to toggle check groups (`fast`, `deep`, optional ESLint/ncu`) ✅ Completed Oct 2025                                                                                      | P4.1         | S      |
+| P4.3  | Create sample dataset + regression tests for check outputs (golden files), reusing the curated fixtures where possible ✅ Completed Oct 2025                                                    | P4.1         | M      |
+| P4.4  | Provide CLI progress UI and Markdown summary per run ✅ Completed Oct 2025                                                                                                                      | P1.2         | S      |
+| P4.5  | Add rule detecting modules that import third-party dependencies without declaring them ([#78](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/issues/78)) ✅ Completed Oct 2025 | P4.1         | M      |
+| P4.6  | Check README install/update sections for copyable fenced command blocks ([#54](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/issues/54))                                      | P4.1         | S      |
+| P4.7  | Recommend `npm ci --omit=dev` when modules expose devDependencies in instructions ([#53](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/issues/53))                            | P4.1         | S      |
+| P4.8  | Flag modules with multi-year inactivity that are not marked `outdated` and nudge maintainers to review status                                                                                   | P4.1         | M      |
+| P4.9  | Inspect Dependabot configs for schedule scope (quarterly cadence, production-only) and suggest adjustments                                                                                      | P4.1         | M      |
+| P4.10 | Evaluate migrating the `ntl` task menu into a `pipeline` subcommand (interactive launcher built on the orchestrator CLI) _(low priority)_                                                       | P1.2         | S      |
+| P4.11 | Extend the rule registry to cover every pipeline check stage (legacy JS script + future additions) ✅ Completed Oct 2025                                                                        | P4.1         | L      |
+| P4.R1 | Audit every rule in the registry for relevance and clarity                                                                                                                                      | P4.11        | S      |
+| P4.R2 | Audit every recommendation in the registry for relevance and consistency                                                                                                                        | P4.11        | S      |
 
 ### 5. Documentation & Collaboration
 
@@ -99,10 +99,10 @@ Routine reminders for keeping the written guidance in sync with the code:
 
 Immediate action items:
 
-1. Add the dependency-declaration rule for core MagicMirror usage (P4.5).
-2. Audit README install/update sections for copyable fenced command blocks (P4.6).
-3. Recommend `npm ci --omit=dev` when modules list devDependencies in instructions (P4.7).
-4. Flag modules with multi-year inactivity that are not marked `outdated` and nudge maintainers to review status (P4.8).
+1. Audit README install/update sections for copyable fenced command blocks (P4.6).
+2. Recommend `npm ci --omit=dev` when modules list devDependencies in instructions (P4.7).
+3. Flag modules with multi-year inactivity that are not marked `outdated` and nudge maintainers to review status (P4.8).
+4. Inspect Dependabot configs for schedule scope (quarterly cadence, production-only) and suggest adjustments (P4.9).
 
 ---
 

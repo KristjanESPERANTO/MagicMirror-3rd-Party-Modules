@@ -20,10 +20,18 @@ import {
 import {
   PACKAGE_JSON_RULES,
   PACKAGE_LOCK_RULES,
-  TEXT_RULES
+  TEXT_RULES,
+  getRuleById
 } from "./rule-registry.js";
 import { loadCheckGroupConfig } from "./config.js";
 import { buildRunSummaryMarkdown } from "./run-summary.js";
+import {
+  MISSING_DEPENDENCY_RULE_ID,
+  detectUsedDependencies,
+  extractDeclaredDependencyNames,
+  findMissingDependencies,
+  shouldAnalyzeFileForDependencyUsage
+} from "./dependency-usage.js";
 
 const execFileAsync = promisify(execFile);
 
@@ -645,6 +653,8 @@ async function analyzeModule({ module, moduleDir, issues, config }) {
     packageInfo && packageInfo.status === "parsed" && typeof packageInfo.raw === "string"
       ? packageInfo.raw
       : null;
+  const declaredDependencyNames = extractDeclaredDependencyNames(packageSummary);
+  const usedDependencies = new Set();
 
   const groups = config?.groups ?? {};
   const runFastChecks = groups.fast !== false;
@@ -718,6 +728,15 @@ async function analyzeModule({ module, moduleDir, issues, config }) {
 
     if (content == null) {
       continue;
+    }
+
+    if (runFastChecks && shouldAnalyzeFileForDependencyUsage(relative)) {
+      const detectedDependencies = detectUsedDependencies(content);
+      if (detectedDependencies.size > 0) {
+        for (const dependencyName of detectedDependencies) {
+          usedDependencies.add(dependencyName);
+        }
+      }
     }
 
     if (
@@ -839,6 +858,26 @@ async function analyzeModule({ module, moduleDir, issues, config }) {
           "Recommendation: The README seems to have incorrect clone instructions. Please check the URL."
         );
       }
+    }
+  }
+
+  if (runFastChecks && usedDependencies.size > 0) {
+    const missingDependencies = findMissingDependencies({
+      usedDependencies,
+      declaredDependencies: declaredDependencyNames
+    });
+
+    if (missingDependencies.length > 0) {
+      const rule = getRuleById(MISSING_DEPENDENCY_RULE_ID);
+      const dependencyList = missingDependencies
+        .map((name) => `\`${name}\``)
+        .join(", ");
+      const plural = missingDependencies.length > 1;
+      const baseMessage = `The module imports ${dependencyList} but does not list ${plural ? "them" : "it"} in package.json.`;
+      const recommendation = `${baseMessage} Add ${plural ? "these dependencies" : "this dependency"} to package.json so they can be installed automatically.`;
+      const messagePrefix = rule?.category ?? "Recommendation";
+      const suffix = rule?.description ? ` ${rule.description}` : "";
+      addIssue(issues, `${messagePrefix}: ${recommendation}${suffix}`.trim());
     }
   }
 

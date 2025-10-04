@@ -1,5 +1,5 @@
+import {MISSING_DEPENDENCY_RULE_DEFINITION} from "./missing-dependency-rule.js";
 const RULE_SEVERITIES = Object.freeze(["info", "warning", "error"]);
-
 const RULE_CATEGORY_METADATA = Object.freeze({
   Deprecated: Object.freeze({
     title: "Deprecated usage",
@@ -31,7 +31,6 @@ const PIPELINE_CHECK_STAGE_IDS = Object.freeze({
 });
 
 const DEFAULT_STAGE_ID = PIPELINE_CHECK_STAGE_IDS.MODERN;
-
 function normalizePatterns (rawPatterns, id) {
   if (Array.isArray(rawPatterns)) {
     const normalized = rawPatterns
@@ -447,6 +446,8 @@ const RULE_DEFINITIONS = [
   }
 ];
 
+RULE_DEFINITIONS.push(MISSING_DEPENDENCY_RULE_DEFINITION);
+
 const RULE_REGISTRY = Object.freeze(RULE_DEFINITIONS.map(createRule));
 
 const RULES_BY_STAGE = (() => {
@@ -483,7 +484,6 @@ export {
   PACKAGE_JSON_RULES,
   PACKAGE_LOCK_RULES
 };
-
 export function getRuleById (ruleId) {
   return RULE_INDEX.get(ruleId) ?? null;
 }
