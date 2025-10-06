@@ -503,6 +503,7 @@
     "mathew-fleisch": 2,
     "mathewmeconry": 1,
     "matiasmtl": 1,
+    "matskkolstad": 1,
     "matt-thurling": 2,
     "mattdy": 2,
     "matteodanelli": 1,
@@ -747,12 +748,12 @@
     "zuo000": 1,
     "zzhenney": 1
   },
-  "moduleCounter": 1300,
+  "moduleCounter": 1301,
   "modulesWithImageCounter": 926,
-  "modulesWithIssuesCounter": 1299,
+  "modulesWithIssuesCounter": 1300,
   "repositoryHoster": {
     "bitbucket": 1,
-    "github": 1287,
+    "github": 1288,
     "gitlab": 12
   }
 }

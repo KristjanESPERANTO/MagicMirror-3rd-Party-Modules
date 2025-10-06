@@ -6075,6 +6075,15 @@
     },
     {
       "category": "Utility / IoT / 3rd Party / Integration",
+      "description": "Automatically discovers your Sonos groups and shows rich now-playing cards with album art, grouping, and layout controls.",
+      "id": "matskkolstad/MMM-Sonos",
+      "maintainer": "matskkolstad",
+      "maintainerURL": "https://github.com/matskkolstad",
+      "name": "MMM-Sonos",
+      "url": "https://github.com/matskkolstad/MMM-Sonos"
+    },
+    {
+      "category": "Utility / IoT / 3rd Party / Integration",
       "description": "Forked from MMM-Daikin to work with Daikin Airbase controllers (wifi air conditioner controllers used in Australia/New Zealand regions).",
       "id": "matt-thurling/MMM-DaikinAirbase",
       "maintainer": "matt-thurling",

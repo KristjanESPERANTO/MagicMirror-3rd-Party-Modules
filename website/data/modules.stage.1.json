@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "2025-10-04T22:33:28.154Z",
+  "lastUpdate": "2025-10-06T20:35:41.357Z",
   "modules": [
     {
       "name": "MMM-01ZM",
@@ -10891,6 +10891,16 @@
       "maintainer": "tbouron",
       "maintainerURL": "https://github.com/tbouron",
       "description": "Display playing tracks on your Sonos network.",
+      "issues": []
+    },
+    {
+      "name": "MMM-Sonos",
+      "category": "Utility / IoT / 3rd Party / Integration",
+      "url": "https://github.com/matskkolstad/MMM-Sonos",
+      "id": "matskkolstad/MMM-Sonos",
+      "maintainer": "matskkolstad",
+      "maintainerURL": "https://github.com/matskkolstad",
+      "description": "Automatically discovers your Sonos groups and shows rich now-playing cards with album art, grouping, and layout controls.",
       "issues": []
     },
     {

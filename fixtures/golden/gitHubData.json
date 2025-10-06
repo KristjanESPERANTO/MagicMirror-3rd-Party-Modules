@@ -96,7 +96,7 @@
         "license": "MIT",
         "stars": 3
       },
-      "gitHubDataLastUpdate": "2025-10-04T22:33:46.293Z",
+      "gitHubDataLastUpdate": "2025-10-06T06:12:11.895Z",
       "id": "2hdlockness/MMM-Linky"
     },
     {
@@ -1468,7 +1468,7 @@
         "license": null,
         "stars": 4
       },
-      "gitHubDataLastUpdate": "2025-10-04T22:33:45.038Z",
+      "gitHubDataLastUpdate": "2025-10-06T06:12:11.056Z",
       "id": "benjaminflessner/MMM-Trello"
     },
     {
@@ -2887,13 +2887,14 @@
     },
     {
       "gitHubData": {
+        "archived": false,
         "defaultBranch": "master",
         "disabled": false,
         "lastCommit": "2021-05-27T13:07:01.000+00:00",
         "license": null,
         "stars": 2
       },
-      "gitHubDataLastUpdate": "2025-10-04T22:33:33.974Z",
+      "gitHubDataLastUpdate": "2025-10-06T20:35:49.742Z",
       "id": "closingin/mmm-ratp"
     },
     {
@@ -3313,7 +3314,7 @@
         "license": "MIT",
         "stars": 0
       },
-      "gitHubDataLastUpdate": "2025-10-04T22:33:48.926Z",
+      "gitHubDataLastUpdate": "2025-10-06T06:12:13.666Z",
       "id": "cybex-dev/MMM-XDG-OPEN"
     },
     {
@@ -3943,7 +3944,7 @@
         "license": "MIT",
         "stars": 10
       },
-      "gitHubDataLastUpdate": "2025-10-04T22:33:44.012Z",
+      "gitHubDataLastUpdate": "2025-10-06T06:12:10.374Z",
       "id": "dientuki/MMM-SystemInfo"
     },
     {
@@ -3985,7 +3986,7 @@
         "license": "MIT",
         "stars": 1
       },
-      "gitHubDataLastUpdate": "2025-10-04T22:33:50.466Z",
+      "gitHubDataLastUpdate": "2025-10-06T06:12:14.646Z",
       "id": "DimmanT/MMM-yandex-route"
     },
     {
@@ -4074,13 +4075,14 @@
     },
     {
       "gitHubData": {
+        "archived": false,
         "defaultBranch": "main",
         "disabled": false,
         "lastCommit": "2022-08-07T11:24:59.000+00:00",
         "license": null,
         "stars": 1
       },
-      "gitHubDataLastUpdate": "2025-10-04T22:33:38.074Z",
+      "gitHubDataLastUpdate": "2025-10-06T20:35:52.576Z",
       "id": "dnmmrdr1/MMM-NCTtimes"
     },
     {
@@ -4099,13 +4101,14 @@
     },
     {
       "gitHubData": {
+        "archived": false,
         "defaultBranch": "master",
         "disabled": false,
         "lastCommit": "2021-11-10T11:17:46.000-08:00",
         "license": null,
         "stars": 1
       },
-      "gitHubDataLastUpdate": "2025-10-04T22:33:32.438Z",
+      "gitHubDataLastUpdate": "2025-10-06T20:35:48.041Z",
       "id": "doctorfree/MMM-InstagramView"
     },
     {
@@ -4138,13 +4141,14 @@
     },
     {
       "gitHubData": {
+        "archived": false,
         "defaultBranch": "master",
         "disabled": false,
         "lastCommit": "2021-11-09T07:36:17.000-08:00",
         "license": null,
         "stars": 1
       },
-      "gitHubDataLastUpdate": "2025-10-04T22:33:42.578Z",
+      "gitHubDataLastUpdate": "2025-10-06T20:35:56.059Z",
       "id": "doctorfree/MMM-YouTubeWebView"
     },
     {
@@ -5544,7 +5548,7 @@
         "license": "Apache-2.0",
         "stars": 2
       },
-      "gitHubDataLastUpdate": "2025-10-04T22:33:43.501Z",
+      "gitHubDataLastUpdate": "2025-10-06T06:12:10.012Z",
       "id": "git-pesche/MMM-SwissSmartUrbanHeatMap"
     },
     {
@@ -7770,7 +7774,7 @@
         "license": "MIT",
         "stars": 6
       },
-      "gitHubDataLastUpdate": "2025-10-04T22:33:49.849Z",
+      "gitHubDataLastUpdate": "2025-10-06T06:12:14.329Z",
       "id": "jupadin/MMM-XKCD"
     },
     {
@@ -8069,79 +8073,86 @@
     },
     {
       "gitHubData": {
+        "archived": false,
         "defaultBranch": "master",
         "disabled": false,
         "lastCommit": "2025-09-18T23:14:29.000+02:00",
         "license": null,
         "stars": 2
       },
-      "gitHubDataLastUpdate": "2025-10-04T22:33:31.824Z",
+      "gitHubDataLastUpdate": "2025-10-06T20:35:45.918Z",
       "id": "khassel/MMM-Flights"
     },
     {
       "gitHubData": {
+        "archived": false,
         "defaultBranch": "master",
         "disabled": false,
         "lastCommit": "2025-06-18T20:49:30.000+00:00",
         "license": null,
         "stars": 1
       },
-      "gitHubDataLastUpdate": "2025-10-04T22:33:33.053Z",
+      "gitHubDataLastUpdate": "2025-10-06T20:35:48.825Z",
       "id": "khassel/MMM-ISS-Map"
     },
     {
       "gitHubData": {
+        "archived": false,
         "defaultBranch": "master",
         "disabled": false,
         "lastCommit": "2025-09-26T00:39:46.000+02:00",
         "license": null,
         "stars": 1
       },
-      "gitHubDataLastUpdate": "2025-10-04T22:33:37.254Z",
+      "gitHubDataLastUpdate": "2025-10-06T20:35:51.505Z",
       "id": "khassel/MMM-ModInstall"
     },
     {
       "gitHubData": {
+        "archived": false,
         "defaultBranch": "master",
         "disabled": false,
         "lastCommit": "2025-04-07T21:52:07.000+02:00",
         "license": null,
         "stars": 2
       },
-      "gitHubDataLastUpdate": "2025-10-04T22:33:38.687Z",
+      "gitHubDataLastUpdate": "2025-10-06T20:35:53.292Z",
       "id": "khassel/MMM-RepoStats"
     },
     {
       "gitHubData": {
+        "archived": false,
         "defaultBranch": "master",
         "disabled": false,
         "lastCommit": "2025-01-10T22:55:38.000+00:00",
         "license": null,
         "stars": 1
       },
-      "gitHubDataLastUpdate": "2025-10-04T22:33:39.302Z",
+      "gitHubDataLastUpdate": "2025-10-06T20:35:54.009Z",
       "id": "khassel/MMM-Shell-Output"
     },
     {
       "gitHubData": {
+        "archived": false,
         "defaultBranch": "master",
         "disabled": false,
         "lastCommit": "2025-04-18T00:15:23.000+02:00",
         "license": null,
         "stars": 3
       },
-      "gitHubDataLastUpdate": "2025-10-04T22:33:40.349Z",
+      "gitHubDataLastUpdate": "2025-10-06T20:35:54.673Z",
       "id": "khassel/MMM-Universal-Pir"
     },
     {
       "gitHubData": {
+        "archived": false,
         "defaultBranch": "master",
         "disabled": false,
         "lastCommit": "2025-01-10T22:56:22.000+00:00",
         "license": null,
         "stars": 1
       },
-      "gitHubDataLastUpdate": "2025-10-04T22:33:41.246Z",
+      "gitHubDataLastUpdate": "2025-10-06T20:35:55.546Z",
       "id": "khassel/MMM-WeatherBridge"
     },
     {
@@ -8449,7 +8460,7 @@
         "license": "MIT",
         "stars": 1
       },
-      "gitHubDataLastUpdate": "2025-10-04T22:33:48.416Z",
+      "gitHubDataLastUpdate": "2025-10-06T06:12:13.300Z",
       "id": "KristjanESPERANTO/MMM-SystemTemperature"
     },
     {
@@ -8729,7 +8740,7 @@
         "license": "MIT",
         "stars": 0
       },
-      "gitHubDataLastUpdate": "2025-10-04T22:33:42.988Z",
+      "gitHubDataLastUpdate": "2025-10-06T06:12:09.707Z",
       "id": "lbartk/MMM-SwissAlpLakes"
     },
     {
@@ -8827,7 +8838,7 @@
         "license": null,
         "stars": 0
       },
-      "gitHubDataLastUpdate": "2025-10-04T22:33:41.862Z",
+      "gitHubDataLastUpdate": "2025-10-06T06:12:08.843Z",
       "id": "lindsaycole/MMM-YoLink"
     },
     {
@@ -8986,13 +8997,14 @@
     },
     {
       "gitHubData": {
+        "archived": false,
         "defaultBranch": "master",
         "disabled": false,
         "lastCommit": "2021-08-25T21:58:19.000+02:00",
         "license": null,
         "stars": 2
       },
-      "gitHubDataLastUpdate": "2025-10-04T22:33:30.494Z",
+      "gitHubDataLastUpdate": "2025-10-06T20:35:45.101Z",
       "id": "MajorChris1983/MMM-bergfex"
     },
     {
@@ -9316,6 +9328,20 @@
       },
       "gitHubDataLastUpdate": "2025-09-06T03:38:17.515Z",
       "id": "matiasmtl/MMM-promiedos"
+    },
+    {
+      "gitHubData": {
+        "archived": false,
+        "defaultBranch": null,
+        "disabled": false,
+        "has_issues": true,
+        "issues": 0,
+        "lastCommit": null,
+        "license": null,
+        "stars": 0
+      },
+      "gitHubDataLastUpdate": null,
+      "id": "matskkolstad/MMM-Sonos"
     },
     {
       "gitHubData": {
@@ -9874,7 +9900,7 @@
         "license": null,
         "stars": 27
       },
-      "gitHubDataLastUpdate": "2025-10-04T22:33:49.438Z",
+      "gitHubDataLastUpdate": "2025-10-06T06:12:14.045Z",
       "id": "mirko3000/MMM-xiaomi"
     },
     {
@@ -10322,7 +10348,7 @@
         "license": "MIT",
         "stars": 26
       },
-      "gitHubDataLastUpdate": "2025-10-04T22:33:44.427Z",
+      "gitHubDataLastUpdate": "2025-10-06T06:12:10.668Z",
       "id": "MMRIZE/MMM-TelegramBot"
     },
     {
@@ -10728,7 +10754,7 @@
         "license": "MIT",
         "stars": 2
       },
-      "gitHubDataLastUpdate": "2025-10-04T22:33:47.390Z",
+      "gitHubDataLastUpdate": "2025-10-06T06:12:12.561Z",
       "id": "mumblebaj/MMM-NOAA3"
     },
     {
@@ -10812,7 +10838,7 @@
         "license": "MIT",
         "stars": 6
       },
-      "gitHubDataLastUpdate": "2025-10-04T22:33:46.880Z",
+      "gitHubDataLastUpdate": "2025-10-06T06:12:12.213Z",
       "id": "mumblebaj/MMM-WOTD"
     },
     {
@@ -13780,7 +13806,7 @@
         "license": null,
         "stars": 0
       },
-      "gitHubDataLastUpdate": "2025-10-04T22:33:36.331Z",
+      "gitHubDataLastUpdate": "2025-10-06T20:35:50.850Z",
       "id": "rsperezn/mmm-uvindex"
     },
     {
@@ -17280,7 +17306,7 @@
         "license": null,
         "stars": 3
       },
-      "gitHubDataLastUpdate": "2025-10-04T22:33:47.774Z",
+      "gitHubDataLastUpdate": "2025-10-06T06:12:12.872Z",
       "id": "wathmal/MMM-Hevy"
     },
     {
@@ -17630,7 +17656,7 @@
         "license": null,
         "stars": 1
       },
-      "gitHubDataLastUpdate": "2025-10-04T22:33:45.650Z",
+      "gitHubDataLastUpdate": "2025-10-06T06:12:11.416Z",
       "id": "xadamxk/MMM-VALORANTESPORTS-SCHEDULES"
     },
     {

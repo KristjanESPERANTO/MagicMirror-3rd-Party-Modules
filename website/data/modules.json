@@ -2000,7 +2000,7 @@
         "calext3"
       ],
       "image": "screenshot.jpg",
-      "defaultSortWeight": -3,
+      "defaultSortWeight": -2,
       "lastCommit": "2025-10-04T12:37:57+02:00"
     },
     {
@@ -2560,7 +2560,7 @@
       "stars": 4,
       "license": "ISC",
       "image": "image-1.jpg",
-      "defaultSortWeight": 10,
+      "defaultSortWeight": 9,
       "lastCommit": "2025-08-22T10:07:41+02:00"
     },
     {
@@ -2821,7 +2821,7 @@
       "license": "MIT",
       "image": "doc_images-MMM-Config_example_base.jpg",
       "defaultSortWeight": 7,
-      "lastCommit": "2025-10-03T16:26:25-05:00"
+      "lastCommit": "2025-10-06T12:36:54-05:00"
     },
     {
       "name": "MMM-Confucius-say",
@@ -4902,7 +4902,7 @@
       "license": "MIT",
       "image": "barchart.jpg",
       "defaultSortWeight": 12,
-      "lastCommit": "2024-11-05T22:23:30+01:00"
+      "lastCommit": "2025-10-05T20:16:34+02:00"
     },
     {
       "name": "MMM-euro2024",
@@ -8593,7 +8593,7 @@
       "maintainer": "KristjanESPERANTO",
       "maintainerURL": "https://github.com/KristjanESPERANTO",
       "description": "Displays live video from the International Space Station.",
-      "issues": false,
+      "issues": true,
       "stars": 8,
       "license": "MIT",
       "tags": [
@@ -9034,7 +9034,7 @@
       "description": "Use the keyboard to open and close a popupwindow in the MagicMirror². Like lets say using the \"q\" key will open a popupwindow on MagicMirror's webpage. Using the iFrame to display web content.",
       "issues": true,
       "stars": 2,
-      "defaultSortWeight": 14,
+      "defaultSortWeight": 13,
       "lastCommit": "2020-10-28T08:24:26+01:00"
     },
     {
@@ -11599,7 +11599,7 @@
         "mqtt"
       ],
       "image": "doc-MQTT.jpg",
-      "defaultSortWeight": 8,
+      "defaultSortWeight": 7,
       "lastCommit": "2024-07-30T12:48:12+02:00"
     },
     {
@@ -12080,7 +12080,7 @@
       "maintainer": "dathbe",
       "maintainerURL": "https://github.com/dathbe",
       "description": "Display scores for your favorite teams from many major sports.",
-      "issues": true,
+      "issues": false,
       "stars": 19,
       "license": "MIT",
       "tags": [
@@ -12107,8 +12107,8 @@
         "rugby"
       ],
       "image": "example2.jpg",
-      "defaultSortWeight": 2,
-      "lastCommit": "2025-09-26T10:41:07-07:00"
+      "defaultSortWeight": 0,
+      "lastCommit": "2025-10-06T13:21:01-07:00"
     },
     {
       "name": "MMM-MySenseHat",
@@ -13994,7 +13994,7 @@
         "on-screen menu"
       ],
       "image": "img-screenshot.jpg",
-      "defaultSortWeight": 9,
+      "defaultSortWeight": 8,
       "lastCommit": "2018-10-11T20:38:21-05:00"
     },
     {
@@ -14383,7 +14383,7 @@
       ],
       "image": "example.jpg",
       "defaultSortWeight": 9,
-      "lastCommit": "2025-04-01T06:18:12-07:00"
+      "lastCommit": "2025-10-05T10:53:44-05:00"
     },
     {
       "name": "MMM-pages",
@@ -14699,8 +14699,8 @@
         "golf"
       ],
       "image": "images-screenshot-1.jpg",
-      "defaultSortWeight": 2,
-      "lastCommit": "2025-09-26T10:42:38-07:00"
+      "defaultSortWeight": 1,
+      "lastCommit": "2025-10-06T13:41:56-07:00"
     },
     {
       "name": "MMM-PhilipsHue",
@@ -15105,7 +15105,7 @@
       "issues": true,
       "stars": 0,
       "defaultSortWeight": 10,
-      "lastCommit": "2025-10-02T08:24:17-04:00"
+      "lastCommit": "2025-10-06T05:24:35-04:00"
     },
     {
       "name": "MMM-Planetarium",
@@ -16399,7 +16399,7 @@
         "control"
       ],
       "image": "img-main_screenshot.jpg",
-      "defaultSortWeight": -24,
+      "defaultSortWeight": -25,
       "lastCommit": "2025-10-01T20:13:28+02:00"
     },
     {
@@ -18351,6 +18351,27 @@
       "image": "screenshot.jpg",
       "defaultSortWeight": 6,
       "lastCommit": "2025-07-16T14:03:10-04:00"
+    },
+    {
+      "name": "MMM-Sonos",
+      "category": "Utility / IoT / 3rd Party / Integration",
+      "url": "https://github.com/matskkolstad/MMM-Sonos",
+      "id": "matskkolstad/MMM-Sonos",
+      "maintainer": "matskkolstad",
+      "maintainerURL": "https://github.com/matskkolstad",
+      "description": "Automatically discovers your Sonos groups and shows rich now-playing cards with album art, grouping, and layout controls.",
+      "issues": true,
+      "stars": 0,
+      "hasGithubIssues": true,
+      "isArchived": false,
+      "tags": [
+        "sonos",
+        "smart-home",
+        "music"
+      ],
+      "license": "MIT",
+      "defaultSortWeight": 8,
+      "lastCommit": "2025-10-06T14:02:21+02:00"
     },
     {
       "name": "MMM-Sonos",

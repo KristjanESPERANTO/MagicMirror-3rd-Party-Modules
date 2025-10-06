@@ -12886,6 +12886,19 @@
   {
     "name": "MMM-Sonos",
     "category": "Utility / IoT / 3rd Party / Integration",
+    "url": "https://github.com/matskkolstad/MMM-Sonos",
+    "id": "matskkolstad/MMM-Sonos",
+    "maintainer": "matskkolstad",
+    "maintainerURL": "https://github.com/matskkolstad",
+    "description": "Automatically discovers your Sonos groups and shows rich now-playing cards with album art, grouping, and layout controls.",
+    "issues": [],
+    "stars": 0,
+    "hasGithubIssues": true,
+    "isArchived": false
+  },
+  {
+    "name": "MMM-Sonos",
+    "category": "Utility / IoT / 3rd Party / Integration",
     "url": "https://github.com/CFenner/MMM-Sonos",
     "id": "CFenner/MMM-Sonos",
     "maintainer": "CFenner",

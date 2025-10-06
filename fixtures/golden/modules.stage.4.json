@@ -7831,7 +7831,7 @@
       "name": "MMM-MyScoreboard",
       "packageJson": {
         "path": "./modules/MMM-MyScoreboard-----dathbe/package.json",
-        "raw": "{\n  \"name\": \"mmm-myscoreboard\",\n  \"version\": \"4.12.0\",\n  \"type\": \"commonjs\",\n  \"description\": \"A MagicMirror² module to display scores for your favorite teams from many major sports.\",\n  \"repository\": {\n    \"type\": \"git\",\n    \"url\": \"git+https://github.com/dathbe/MMM-MyScoreboard.git\"\n  },\n  \"keywords\": [\n    \"MagicMirror\",\n    \"Module\",\n    \"Sports\",\n    \"Scores\",\n    \"NBA\",\n    \"WNBA\",\n    \"NCAA\",\n    \"NCAAM\",\n    \"NCAAW\",\n    \"Basketball\",\n    \"MLB\",\n    \"Baseball\",\n    \"NFL\",\n    \"NCAAF\",\n    \"CFL\",\n    \"Football\",\n    \"NHL\",\n    \"Hockey\",\n    \"MLS\",\n    \"NWSL\",\n    \"Soccer\",\n    \"Lacrosse\",\n    \"Rugby\"\n  ],\n  \"author\": \"Jeff Clarke\",\n  \"contributors\": [\n    \"Jeff Clarke\",\n    \"dathbe\",\n    \"mikeyounge\"\n  ],  \n  \"scripts\": {\n    \"lint\": \"eslint\",\n    \"lint:fix\": \"eslint --fix\",\n    \"test\": \"node --run lint\"\n  },\n  \"license\": \"MIT\",\n  \"dependencies\": {\n    \"moment-timezone\": \"^0.6.0\"\n  },\n  \"devDependencies\": {\n    \"@eslint/js\": \"^9.36.0\",\n    \"@stylistic/eslint-plugin\": \"^5.4.0\",\n    \"eslint\": \"^9.36.0\",\n    \"globals\": \"^16.4.0\"\n  }\n}\n",
+        "raw": "{\n  \"name\": \"mmm-myscoreboard\",\n  \"version\": \"4.13.0\",\n  \"type\": \"commonjs\",\n  \"description\": \"A MagicMirror² module to display scores for your favorite teams from many major sports.\",\n  \"repository\": {\n    \"type\": \"git\",\n    \"url\": \"git+https://github.com/dathbe/MMM-MyScoreboard.git\"\n  },\n  \"keywords\": [\n    \"MagicMirror\",\n    \"Module\",\n    \"Sports\",\n    \"Scores\",\n    \"NBA\",\n    \"WNBA\",\n    \"NCAA\",\n    \"NCAAM\",\n    \"NCAAW\",\n    \"Basketball\",\n    \"MLB\",\n    \"Baseball\",\n    \"NFL\",\n    \"NCAAF\",\n    \"CFL\",\n    \"Football\",\n    \"NHL\",\n    \"Hockey\",\n    \"MLS\",\n    \"NWSL\",\n    \"Soccer\",\n    \"Lacrosse\",\n    \"Rugby\"\n  ],\n  \"author\": \"Jeff Clarke\",\n  \"contributors\": [\n    \"Jeff Clarke\",\n    \"dathbe\",\n    \"mikeyounge\"\n  ],  \n  \"scripts\": {\n    \"lint\": \"eslint\",\n    \"lint:fix\": \"eslint --fix\",\n    \"test\": \"node --run lint\"\n  },\n  \"license\": \"MIT\",\n  \"dependencies\": {\n    \"moment-timezone\": \"^0.6.0\"\n  },\n  \"devDependencies\": {\n    \"@eslint/js\": \"^9.37.0\",\n    \"@stylistic/eslint-plugin\": \"^5.4.0\",\n    \"eslint\": \"^9.37.0\",\n    \"globals\": \"^16.4.0\"\n  }\n}\n",
         "status": "parsed",
         "summary": {
           "dependencies": {
@@ -7839,9 +7839,9 @@
           },
           "description": "A MagicMirror² module to display scores for your favorite teams from many major sports.",
           "devDependencies": {
-            "@eslint/js": "^9.36.0",
+            "@eslint/js": "^9.37.0",
             "@stylistic/eslint-plugin": "^5.4.0",
-            "eslint": "^9.36.0",
+            "eslint": "^9.37.0",
             "globals": "^16.4.0"
           },
           "keywords": [
@@ -7877,7 +7877,7 @@
             "test": "node --run lint"
           },
           "type": "commonjs",
-          "version": "4.12.0"
+          "version": "4.13.0"
         },
         "warnings": []
       },
@@ -19944,16 +19944,16 @@
       "name": "MMM-EUElectricityPrice",
       "packageJson": {
         "path": "./modules/MMM-EUElectricityPrice-----late4marshmellow/package.json",
-        "raw": "{\n    \"name\": \"mmm-euelectricityprice\",\n    \"version\": \"0.0.1\",\n    \"description\": \"EU Electricity price chart\",\n    \"main\": \"MMM-euelectricityprice.js\",\n    \"author\": \"Janne Kalliola\",\n    \"license\": \"MIT\",\n    \"dependencies\": {\n        \"chart.js\": \"3.9.x\"\n    }\n}\n",
+        "raw": "{\n  \"name\": \"mmm-euelectricityprice\",\n  \"version\": \"1.0.0\",\n  \"description\": \"EU Electricity price chart\",\n  \"main\": \"MMM-EUElectricityPrice.js\",\n  \"author\": \"Janne Kalliola, late4marshmellow\",\n  \"license\": \"MIT\",\n  \"dependencies\": {\n    \"chart.js\": \"^4\"\n  }\n}\n",
         "status": "parsed",
         "summary": {
           "dependencies": {
-            "chart.js": "3.9.x"
+            "chart.js": "^4"
           },
           "description": "EU Electricity price chart",
           "license": "MIT",
           "name": "mmm-euelectricityprice",
-          "version": "0.0.1"
+          "version": "1.0.0"
         },
         "warnings": [
           "No repository field."
@@ -21376,6 +21376,48 @@
         "warnings": []
       },
       "url": "https://github.com/matiasmtl/MMM-promiedos"
+    },
+    {
+      "category": "Utility / IoT / 3rd Party / Integration",
+      "description": "Automatically discovers your Sonos groups and shows rich now-playing cards with album art, grouping, and layout controls.",
+      "hasGithubIssues": true,
+      "id": "matskkolstad/MMM-Sonos",
+      "isArchived": false,
+      "license": "MIT",
+      "maintainer": "matskkolstad",
+      "maintainerURL": "https://github.com/matskkolstad",
+      "name": "MMM-Sonos",
+      "packageJson": {
+        "path": "./modules/MMM-Sonos-----matskkolstad/package.json",
+        "raw": "{\n  \"name\": \"mmm-sonos\",\n  \"version\": \"1.0.0\",\n  \"description\": \"MagicMirror² module that shows what is playing on your Sonos speakers.\",\n  \"main\": \"MMM-Sonos.js\",\n  \"scripts\": {\n    \"start\": \"node node_helper.js\",\n    \"test\": \"echo \\\"Ingen tester er definert\\\"\"\n  },\n  \"keywords\": [\n    \"magicmirror\",\n    \"sonos\",\n    \"smart-home\",\n    \"music\"\n  ],\n  \"author\": \"Mats Kjoshagen Kolstad <matskko@uio.no>\",\n  \"repository\": {\n    \"type\": \"git\",\n    \"url\": \"https://github.com/matskkolstad/MMM-Sonos.git\"\n  },\n  \"bugs\": {\n    \"url\": \"https://github.com/matskkolstad/MMM-Sonos/issues\"\n  },\n  \"homepage\": \"https://github.com/matskkolstad/MMM-Sonos#readme\",\n  \"license\": \"MIT\",\n  \"dependencies\": {\n    \"sonos\": \"^1.14.1\"\n  }\n}\n",
+        "status": "parsed",
+        "summary": {
+          "dependencies": {
+            "sonos": "^1.14.1"
+          },
+          "description": "MagicMirror² module that shows what is playing on your Sonos speakers.",
+          "keywords": [
+            "magicmirror",
+            "sonos",
+            "smart-home",
+            "music"
+          ],
+          "license": "MIT",
+          "name": "mmm-sonos",
+          "scripts": {
+            "start": "node node_helper.js",
+            "test": "echo \"Ingen tester er definert\""
+          },
+          "version": "1.0.0"
+        },
+        "warnings": []
+      },
+      "tags": [
+        "sonos",
+        "smart-home",
+        "music"
+      ],
+      "url": "https://github.com/matskkolstad/MMM-Sonos"
     },
     {
       "category": "Utility / IoT / 3rd Party / Integration",

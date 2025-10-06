@@ -1,11 +1,11 @@
 {
-  "moduleCounter": 1300,
+  "moduleCounter": 1301,
   "modulesWithImageCounter": 926,
-  "modulesWithIssuesCounter": 1299,
-  "issueCounter": 13030,
-  "lastUpdate": "2025-10-05T01:01:52+02:00",
+  "modulesWithIssuesCounter": 1300,
+  "issueCounter": 13032,
+  "lastUpdate": "2025-10-06T23:01:34+02:00",
   "repositoryHoster": {
-    "github": 1287,
+    "github": 1288,
     "gitlab": 12,
     "bitbucket": 1
   },
@@ -664,6 +664,7 @@
     "utzl": 1,
     "KayosPi": 1,
     "poolis": 1,
+    "matskkolstad": 1,
     "LukasKlose": 1,
     "Ruud14": 1,
     "alexandreLavenant": 1,
