@@ -7,6 +7,7 @@ on:
   push:
     branches:
       - "main"
+      - "develop"
 
 permissions:
   contents: read
@@ -16,36 +17,30 @@ jobs:
   build:
     runs-on: ubuntu-latest
     timeout-minutes: 60
+    container:
+      image: moby/buildkit:latest
+      options: --privileged
     steps:
       - name: Checkout code
         uses: actions/checkout@v5
-
-      - name: Derive image coordinates
-        id: meta
+      - name: Build container
         run: |
-          set -euo pipefail
-          repo="${GITHUB_REPOSITORY,,}"
-          ref="${GITHUB_REF_NAME}"
-          sanitized_ref=$(echo "${ref}" | tr '[:upper:]' '[:lower:]' | sed 's#[^a-z0-9_.-]#-#g')
-          echo "image=ghcr.io/${repo}:${sanitized_ref}" >> "$GITHUB_OUTPUT"
-
-      - name: Set up Docker Buildx
-        uses: docker/setup-buildx-action@v3
-
-      - name: Log in to GitHub Container Registry
-        uses: docker/login-action@v3
-        with:
-          registry: ghcr.io
-          username: ${{ github.actor }}
-          password: ${{ secrets.GITHUB_TOKEN }}
-
-      - name: Build and push image
-        uses: docker/build-push-action@v6
-        with:
-          context: .
-          file: container/Dockerfile
-          push: true
-          platforms: linux/amd64
-          build-args: |
-            GITHUB_TOKEN=${{ secrets.GITHUB_TOKEN }}
-          tags: ${{ steps.meta.outputs.image }}
+          if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
+            # ugly workaround for converting content of $GITHUB_REPOSITORY (= `MagicMirrorOrg/MagicMirror-3rd-Party-Modules`)
+            REPO="$(echo $GITHUB_REPOSITORY | tr '[:upper:]' '[:lower:]')"
+            # regular build
+            PARAMS="--output type=image,\"name=ghcr.io/${REPO}:${{ github.ref_name }}\",push=true"
+          else
+            # only build with small wiki list and no image push
+            PARAMS="--output type=image,push=false --opt build-arg:WIKI_FILE=website/test/3rd-Party-Modules.md"
+          fi
+          # registry credentials
+          export DOCKER_CONFIG="$(pwd)/container"
+          echo "{\"auths\":{\"ghcr.io\":{\"auth\":\"$(echo -n ${{ github.actor }}:${{ secrets.GITHUB_TOKEN }} | base64 -w 0)\"}}}" > $DOCKER_CONFIG/config.json
+          # build
+          buildctl-daemonless.sh build \
+            --progress plain \
+            --frontend=dockerfile.v0 \
+            --local context=. \
+            --local dockerfile=container \
+            $PARAMS
