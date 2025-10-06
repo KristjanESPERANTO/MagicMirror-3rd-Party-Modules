@@ -35,6 +35,7 @@ function sanitizeModuleEntry (module) {
   delete sanitized.defaultSortWeight;
   delete sanitized.issues;
   delete sanitized.lastCommit;
+  delete sanitized.stars;
   return sanitized;
 }
 

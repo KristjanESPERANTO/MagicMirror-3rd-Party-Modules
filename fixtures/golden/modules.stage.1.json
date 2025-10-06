@@ -451,6 +451,15 @@
       "url": "https://github.com/AndreaGrandieri/MMM-MD"
     },
     {
+      "category": "Weather",
+      "description": "Displays weather forecast from <a target=\"_blank\" href=\"https://www.yr.no\">Yr</a>. in image form (SVG) Yr is a weather service from the Norwegian Broadcasting Corporation and the Norwegian Meteorological Institute.",
+      "id": "andreakn/MMM-YrMeteogram",
+      "maintainer": "andreakn",
+      "maintainerURL": "https://github.com/andreakn",
+      "name": "MMM-YrMeteogram",
+      "url": "https://github.com/andreakn/MMM-YrMeteogram"
+    },
+    {
       "category": "News / Information",
       "description": "Norwegian electricity prices forecast.",
       "id": "AndreasHagman/MMM-NOKElectricityForecast",
@@ -3081,15 +3090,6 @@
       "maintainerURL": "https://github.com/ethanpartida",
       "name": "MMM-MyStudyLife",
       "url": "https://github.com/ethanpartida/MMM-MyStudyLife"
-    },
-    {
-      "category": "Education",
-      "description": "Cyclically displays Bengali Words and Bengali Pronunciations with English Translations.",
-      "id": "ethanwang4/MMM-Bengali",
-      "maintainer": "ethanwang4",
-      "maintainerURL": "https://github.com/ethanwang4",
-      "name": "MMM-Bengali",
-      "url": "https://github.com/ethanwang4/MMM-Bengali"
     },
     {
       "category": "Entertainment / Misc",
@@ -9098,12 +9098,13 @@
       "url": "https://github.com/SageBrushes/MMM-MyTransitTime"
     },
     {
-      "category": "Voice Control",
+      "category": "Outdated Modules",
       "description": "Amazon Alexa integration with using JavaScript only.",
       "id": "sakirtemel/MMM-alexa",
       "maintainer": "sakirtemel",
       "maintainerURL": "https://github.com/sakirtemel",
       "name": "MMM-alexa",
+      "outdated": "Abandoned. No longer works, no reactions to issues and no updates since years.",
       "url": "https://github.com/sakirtemel/MMM-alexa"
     },
     {
