@@ -376,6 +376,107 @@ const README_TRAILING_COMMA_FALSE_POSITIVES = new Set([
   "MMM-Remote-Control"
 ]);
 
+const README_INSTALL_SECTION_TOKENS = Object.freeze([
+  "install",
+  "installation"
+]);
+const README_UPDATE_SECTION_TOKENS = Object.freeze([
+  "update",
+  "updates",
+  "updating"
+]);
+const README_COMMAND_LANG_ALIASES = new Set([
+  "bash",
+  "sh",
+  "shell",
+  "zsh"
+]);
+const README_COMMAND_LINE_PATTERN = /^(?:\s*(?:#|<!--).*)|(?:\s*(?:\$\s*)?(?:bash|cd|chmod|cp|curl|docker|docker-compose|git|ln|make|mv|node|npm|npx|pnpm|pip|pip3|pm2|python|python3|rm|sudo|tar|unzip|wget|yarn)\b)/u;
+
+function normalizeReadmeHeading(heading) {
+  return heading
+    .trim()
+    .toLowerCase()
+    .replace(/[^a-z0-9\s]/gu, " ")
+    .replace(/\s+/gu, " ")
+    .trim();
+}
+
+function extractReadmeSection(content, tokens) {
+  if (typeof content !== "string" || content.length === 0) {
+    return { found: false, content: "" };
+  }
+
+  const lines = content.split(/\r?\n/u);
+  const normalizedTokens = tokens.map((token) => normalizeReadmeHeading(token)).filter((token) => token.length > 0);
+  let collecting = false;
+  let found = false;
+  const sectionLines = [];
+
+  for (const line of lines) {
+  const headingMatch = line.match(/^#{2,6}\s+(.+?)\s*$/u);
+    if (headingMatch) {
+      if (collecting) {
+        break;
+      }
+
+      const normalizedHeading = normalizeReadmeHeading(headingMatch[1]);
+      if (
+        normalizedTokens.some(
+          (token) => normalizedHeading === token || normalizedHeading.includes(token)
+        )
+      ) {
+        collecting = true;
+        found = true;
+        continue;
+      }
+    }
+
+    if (collecting) {
+      sectionLines.push(line);
+    }
+  }
+
+  return { found, content: sectionLines.join("\n").trim() };
+}
+
+function sectionHasCopyableCommandBlock(sectionContent) {
+  if (typeof sectionContent !== "string" || sectionContent.length === 0) {
+    return false;
+  }
+
+  const codeBlockPattern = /```([^\n]*)\n([\s\S]*?)```/gu;
+  let match;
+
+  while ((match = codeBlockPattern.exec(sectionContent)) !== null) {
+    const language = (match[1] ?? "").trim().toLowerCase();
+    const body = (match[2] ?? "").trim();
+
+    if (body.length === 0) {
+      continue;
+    }
+
+    if (README_COMMAND_LANG_ALIASES.has(language)) {
+      return true;
+    }
+
+    const lines = body
+      .split(/\r?\n/u)
+      .map((line) => line.trim())
+      .filter((line) => line.length > 0);
+
+    if (lines.length === 0) {
+      continue;
+    }
+
+    if (lines.some((line) => README_COMMAND_LINE_PATTERN.test(line))) {
+      return true;
+    }
+  }
+
+  return false;
+}
+
 async function collectEntries(rootDir) {
   const results = [];
   const stack = [rootDir];
@@ -797,17 +898,36 @@ async function analyzeModule({ module, moduleDir, issues, config }) {
       fileName === "README.md" &&
       path.dirname(fullPath) === moduleDir
     ) {
-      if (!content.includes("## Updat")) {
+      const installSection = extractReadmeSection(
+        content,
+        README_INSTALL_SECTION_TOKENS
+      );
+      const updateSection = extractReadmeSection(
+        content,
+        README_UPDATE_SECTION_TOKENS
+      );
+
+      if (!updateSection.found) {
         addIssue(
           issues,
           "Recommendation: The README seems not to have an update section (like `## Update`). Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Update-Instructions))."
         );
+      } else if (!sectionHasCopyableCommandBlock(updateSection.content)) {
+        addIssue(
+          issues,
+          "Recommendation: The README's update section should provide a copyable fenced command block (for example ```bash ...). Please add one so users can update the module quickly ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Update-Instructions))."
+        );
       }
 
-      if (!content.includes("## Install")) {
+      if (!installSection.found) {
         addIssue(
           issues,
           "Recommendation: The README seems not to have an install section (like `## Installation`). Please add one ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Installation-Instructions))."
+        );
+      } else if (!sectionHasCopyableCommandBlock(installSection.content)) {
+        addIssue(
+          issues,
+          "Recommendation: The README's install section should include a copyable fenced command block (for example ```bash ...). Please add one so the module can be installed with a single copy/paste ([basic instructions](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/blob/main/guides/readme_bestpractices.md#Installation-Instructions))."
         );
       }
 

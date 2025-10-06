@@ -53,7 +53,7 @@ This document captures the long-term improvements we want to implement in the mo
 | P4.3  | Create sample dataset + regression tests for check outputs (golden files), reusing the curated fixtures where possible ✅ Completed Oct 2025                                                    | P4.1         | M      |
 | P4.4  | Provide CLI progress UI and Markdown summary per run ✅ Completed Oct 2025                                                                                                                      | P1.2         | S      |
 | P4.5  | Add rule detecting modules that import third-party dependencies without declaring them ([#78](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/issues/78)) ✅ Completed Oct 2025 | P4.1         | M      |
-| P4.6  | Check README install/update sections for copyable fenced command blocks ([#54](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/issues/54))                                      | P4.1         | S      |
+| P4.6  | Check README install/update sections for copyable fenced command blocks ([#54](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/issues/54)) ✅ Completed Oct 2025                | P4.1         | S      |
 | P4.7  | Recommend `npm ci --omit=dev` when modules expose devDependencies in instructions ([#53](https://github.com/MagicMirrorOrg/MagicMirror-3rd-Party-Modules/issues/53))                            | P4.1         | S      |
 | P4.8  | Flag modules with multi-year inactivity that are not marked `outdated` and nudge maintainers to review status                                                                                   | P4.1         | M      |
 | P4.9  | Inspect Dependabot configs for schedule scope (quarterly cadence, production-only) and suggest adjustments                                                                                      | P4.1         | M      |
@@ -99,10 +99,9 @@ Routine reminders for keeping the written guidance in sync with the code:
 
 Immediate action items:
 
-1. Audit README install/update sections for copyable fenced command blocks (P4.6).
-2. Recommend `npm ci --omit=dev` when modules list devDependencies in instructions (P4.7).
-3. Flag modules with multi-year inactivity that are not marked `outdated` and nudge maintainers to review status (P4.8).
-4. Inspect Dependabot configs for schedule scope (quarterly cadence, production-only) and suggest adjustments (P4.9).
+1. Recommend `npm ci --omit=dev` when modules list devDependencies in instructions (P4.7).
+2. Flag modules with multi-year inactivity that are not marked `outdated` and nudge maintainers to review status (P4.8).
+3. Inspect Dependabot configs for schedule scope (quarterly cadence, production-only) and suggest adjustments (P4.9).
 
 ---
 
