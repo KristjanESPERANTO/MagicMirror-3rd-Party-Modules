@@ -277,6 +277,7 @@ function filterBySearchText (searchText) {
 
   removeSelectedMarkingFromTagsAndCards();
 
+  sortData(sortDropdown.value);
   updateModuleCardContainer();
 }
 
@@ -287,6 +288,7 @@ function filterByMaintainer (maintainer) {
 
   removeSelectedMarkingFromTagsAndCards();
 
+  sortData(sortDropdown.value);
   updateModuleCardContainer();
 }
 
@@ -303,6 +305,7 @@ function filterByTag (tag) {
 
   removeSelectedMarkingFromTagsAndCards();
 
+  sortData(sortDropdown.value);
   updateModuleCardContainer();
 
   // Mark the selected tag container
@@ -337,6 +340,7 @@ function addCategoryFilter () {
 
     searchInput.value = "";
     removeSelectedMarkingFromTagsAndCards();
+    sortData(sortDropdown.value);
     updateModuleCardContainer();
   });
 }
@@ -381,6 +385,7 @@ searchInput.addEventListener("input", () => {
       filterBySearchText(searchInput.value);
     } else {
       filteredModuleList = allModules.concat(skippedModules);
+      sortData(sortDropdown.value);
       updateModuleCardContainer();
     }
   }, 180);
